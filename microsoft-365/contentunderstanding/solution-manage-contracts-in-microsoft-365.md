@@ -1,5 +1,5 @@
 ---
-title: 使用解决方案管理Microsoft 365合同
+title: 使用 Microsoft 365 解决方案管理合同
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用 Syntex、SharePoint、SharePoint 列表、Microsoft Teams 和 Power Automate 的 Microsoft 365 解决方案来管理Power Automate。
-ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: d12ccd2d4bc777b05489556f0d96ce9de80954a8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651280"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770813"
 ---
-# <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用解决方案管理Microsoft 365合同
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 解决方案管理合同
 
 本文介绍如何使用组织的 Syntex 和 SharePoint 组件为组织创建Microsoft 365。 它提供了一个框架，可帮助你计划和创建满足你独特业务需求的解决方案。 即使此解决方案不满足您的整体业务需求，也可以将该解决方案的某些部分用于创建自定义合同管理解决方案。
 
@@ -73,6 +73,14 @@ ms.locfileid: "52651280"
 6. 此解决方案的最终结果是业务流程自动部署。 员工可以轻松使用自定义磁贴视图Teams启动和监视文档的审批工作流。 
 
      !["合同"选项卡。](../media/content-understanding/tile-view.png)
+
+### <a name="licensing-requirements"></a>许可要求
+
+此解决方案依赖于以下功能，这些功能均作为 Microsoft 365 企业版 (E1、E3、E5、F3) 或 Business (Basic、Standard 或 高级版) 许可证的一部分提供：
+
+-   Microsoft SharePoint Syntex
+-   Microsoft Teams
+-   Power Automate
 
 ## <a name="create-the-solution"></a>创建解决方案
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242128"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770970"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中适用于 Office 365 的 Microsoft Defender
 
@@ -33,7 +33,33 @@ ms.locfileid: "52242128"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-[https://security.microsoft.com](https://security.microsoft.com) 改进的 [Microsoft 365 安全中心](./overview-security-center.md) 结合了现有 Microsoft 安全门户（包括 Microsoft Defender 安全中心和 Office 365 安全与合规中心）的安全性功能。 此改进的中心有助于安全团队更高效地保护组织免遭威胁侵害。
+## <a name="quick-reference"></a>快速参考
+
+下图和下表列出了安全与合规Office 365中心&安全中心Microsoft 365导航的更改。
+
+> [!div class="mx-imgBorder"]
+> ![移动到位置的图像](../../media/mdo-m3d-security-center.png)
+
+<br>
+
+****
+
+|Office 365 安全与合规中心|Microsoft 365 安全中心|Microsoft 365 合规中心|Exchange 管理中心|
+|---|---|---|---|
+|警报|电子邮件和协作|||
+|分类||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
+|数据丢失防护||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
+|记录管理||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage) ||
+|信息管理政策||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
+|威胁管理|电子邮件和协作|||
+|邮件流|||请参阅[Exchange管理中心](https://admin.exchange.microsoft.com/#/)|
+|数据隐私||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
+|搜索|搜索|||
+|报表|报告|||
+|服务保证|设置|||
+|
+
+<https://security.microsoft.com> 改进的 [Microsoft 365 安全中心](./overview-security-center.md) 结合了现有 Microsoft 安全门户（包括 Microsoft Defender 安全中心和 Office 365 安全与合规中心）的安全性功能。 此改进的中心有助于安全团队更高效地保护组织免遭威胁侵害。
 
 如果你熟悉 Office 365 安全与合规门户 （protection.office.com），本文介绍 Microsoft 365 安全中心中的一些更改和改进。
 
@@ -69,7 +95,7 @@ ms.locfileid: "52242128"
 此外，请查看 **底部的** "相关信息"部分。
 
 > [!IMPORTANT]
-> Microsoft 365 安全门户 （https://security.microsoft.com) ） 将 https://securitycenter.windows.com和 https://protection.office.com。 但是，所看到的内容取决于你的订阅。 例如，如果只有适用于 Office 365 计划 1 或 2 的 Microsoft Defender，作为独立订阅，你将看不到终结点安全与适用于 Office 计划 1 的 Defender 客户不会看到威胁分析等项目。
+> 安全Microsoft 365门户 () 和 <https://security.microsoft.com> <https://securitycenter.windows.com> 中组合了安全功能 <https://protection.office.com> 。 但是，所看到的内容取决于你的订阅。 例如，如果只有适用于 Office 365 计划 1 或 2 的 Microsoft Defender，作为独立订阅，你将看不到终结点安全与适用于 Office 计划 1 的 Defender 客户不会看到威胁分析等项目。
 
 > [!TIP]
 > 所有Exchange Online Protection (EOP) 功能都将包含在安全中心Microsoft 365，因为 EOP 是 Defender for Office 365 的核心元素。
@@ -147,15 +173,15 @@ ms.locfileid: "52242128"
 
 [Microsoft Defender for Office 365文章](/microsoft-365/security/office-365-security/defender-for-office-365)的[“入门”](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started)部分具有如下所示的逻辑早期配置块：
 
-1. 为所有内容的名称配置“anti”。
+1. 使用名称中的"Anti"配置所有内容。
    - 反恶意软件
-   - 防网络钓鱼
+   - 防钓鱼
    - 反垃圾邮件
-2. 为所有内容的名称设置“safe”。
+2. 设置名称中保险箱"值的所有内容。
    - 安全链接
    - 安全附件
-3. 保护工作负载（例如 SharePoint Online、OneDrive 和 Teams）
-4. 通过零时差自动清除进行保护
+3. 保护工作负载（例如 SharePoint联机、OneDrive和Teams) 。
+4. 使用零时差自动清除进行保护。
 
 以及一 [链接](../office-365-security/protect-against-threats.md) 一起跳入，在"第 1 天"进行配置。
 
@@ -181,7 +207,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="在查询面板顶部选中了&quot;使用查询&quot;的&quot;高级搜索&quot;页面（&quot;搜索&quot;下），并运行一个查询来捕获过去 7 天内的 CAPTUREP 操作。":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) 在查询面板顶部选择&quot;查询&quot;下，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。":::
 
 来自此查询的数据将在查询自身下方的结果面板中显示。 结果包括可自定义结果集内的信息，如"DeviceName"、"AccountDisplayName"和"<3>pTime"。 也可以为记录导出结果。 如果您再次需要查询，请选择 **保存** > **“另存为”**，然后将查询添加到查询，共享或社区查询列表中。
 

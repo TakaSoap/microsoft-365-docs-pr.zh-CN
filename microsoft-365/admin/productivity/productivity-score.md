@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 生产力分数如何反映人员和技术体验度量，并与类似规模的组织进行比较。
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779670"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789035"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -118,11 +118,11 @@ Microsoft 致力于保护个人隐私。 此[隐私文件](privacy.md)解释了�
 
 “分数历史记录”显示过去 6 个月每个类别中的分数变化。
 
-**人员体验** 和 **技术体验** 包含这两方面中的类别的主要见解。 可单击每个类别以查看更深入的见解。
+**人员体验** 和 **技术体验** 包含这两方面中的类别的主要见解。 可以选择每个类别以查看更深入的见解。
 
 ## <a name="category-details-pages"></a>类别详细信息页面
 
-每个类别详细信息页面都显示了主要的见解和支持性指标，以及可以采取的推动组织变革的相关调研和行动。 调研可支持每个类别的主要见解的重要性和理论。 有关详细信息，请[阅读 Forrester 报告](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+每个类别详细信息页面都显示了主要的见解和支持性指标，以及可以采取的推动组织变革的相关调研和行动。 调研可支持每个类别的主要见解的重要性和理论。 有关详细信息，请[阅读 Forrester 报告](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb)。
 
 详细信息页面如下：
 - [内容协作-人员体验](content-collaboration.md)

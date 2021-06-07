@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b5a53131733d1c7c539676c1d45abe7eabbe2de7
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: 7d9cff584f35c39544034501c607b7156a0f1bf2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707325"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782917"
 ---
 # <a name="microsoft-365-defender-integration-with-azure-sentinel"></a>Microsoft 365Defender 与 Azure Sentinel 集成
 
@@ -48,7 +48,7 @@ Azure Sentinel (预览版 Microsoft 365 Defender 连接器) 将所有 Microsoft 
 
 ## <a name="next-steps"></a>后续步骤
 
-1. 更好地了解与 Azure [sentinel Microsoft 365 Defender 集成](/azure/sentinel/microsoft-365-defender-sentinel-integration)。
+1. 更深入地了解 Defender Microsoft 365 [Azure Sentinel 集成](/azure/sentinel/microsoft-365-defender-sentinel-integration)。
 2. [连接从 Microsoft 365 Defender 到 Azure Sentinel 的数据](/azure/sentinel/connect-microsoft-365-defender)。
 
 ## <a name="see-also"></a>另请参阅

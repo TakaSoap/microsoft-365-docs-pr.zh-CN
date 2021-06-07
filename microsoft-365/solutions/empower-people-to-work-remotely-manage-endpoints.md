@@ -1,5 +1,5 @@
 ---
-title: 步骤 4. 部署设备、电脑和其他终结点的终结点管理
+title: 步骤 4。为设备、电脑和其他终结点部署终结点管理
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028988"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789097"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4. 部署设备、电脑和其他终结点的终结点管理
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4。为设备、电脑和其他终结点部署终结点管理
 
-使用远程工作者，需要支持越来越多的个人设备。 终结点管理是一种基于策略的安全方法，要求设备在获得对资源的访问权限之前满足特定条件。 Microsoft Endpoint Manager 提供新式管理功能，使你的数据在云中和本地保持安全。 
+使用混合式工作者，需要支持数量不断增多的个人设备。 终结点管理是一种基于策略的安全方法，要求设备在获得对资源的访问权限之前满足特定条件。 Microsoft Endpoint Manager 提供新式管理功能，使你的数据在云中和本地保持安全。 
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 将你可能已了解和正在使用的下列服务结合在一起，提供相关服务和工具用来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
 
@@ -38,7 +38,7 @@ Microsoft Intune 是一种基于云的服务，侧重于 Microsoft 365 所包含
 
 - **MDM：** 针对组织所拥有的设备，可执行完全控制，包括设置、功能和安全性。 设备将在 Intune 中进行“注册”，并在这里接收带有规则和设置的 Intune 策略。 例如，可以设置密码和 PIN 要求、创建 VPN 连接以及设置威胁防护等。
 
-- **MAM：** 远程工作者可能不希望你对他们的个人设备（也称为自带 (BYOD) 设备）拥有完全控制权。 你可以为你的远程工作者提供各种选项，但仍保护你的组织。 例如，如果远程工作者希望拥有对组织资源的完整访问权限，则可以注册其设备。 或者，如果这些用户仅希望访问电子邮件或 Microsoft Teams，则可使用需要多重身份验证 (MFA) 的应用保护策略来使用这些应用。
+- **MAM：** 远程工作者可能不希望你对他们的个人设备（也称为自带 (BYOD) 设备）拥有完全控制权。 可给混合工作者提供选项，同时仍要保护组织。 例如，混合工作者如果希望完全访问你的组织资源，可以注册其设备。 或者，如果这些用户仅希望访问电子邮件或 Microsoft Teams，则可使用需要多重身份验证 (MFA) 的应用保护策略来使用这些应用。
 
 有关详细信息，请参阅此 [Microsoft Intune 概述](/intune/fundamentals/what-is-intune)。
 
@@ -95,4 +95,4 @@ Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它�
 
 [![步骤 5：部署远程工作者生产力应用和服务](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-继续[步骤 5](empower-people-to-work-remotely-teams-productivity-apps.md)，让远程工作者能够使用 Microsoft 365 生产力应用（如 Microsoft Teams）。
+继续执行 [步骤 5](empower-people-to-work-remotely-teams-productivity-apps.md) ，让混合工作者使用 Microsoft Teams 等 Microsoft 365 生产力应用。

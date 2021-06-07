@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Microsoft SharePoint Syntex 中的说明类型。
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 深入了解 Microsoft SharePoint Syntex 中的短语列表、正则表达式和接近度解释类型。
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706547"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770861"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的说明类型
 
@@ -115,6 +115,15 @@ ms.locfileid: "52706547"
 
    ![显示创建说明面板（已应用电子邮件地址模板）的屏幕截图。](../media/content-understanding/create-regular-expression-email.png)
 
+### <a name="limitations"></a>限制
+
+下表显示了当前无法用于正则表达式模式的内联字符选项。 
+
+|选项  |状态  |当前功能  |
+|---------|---------|---------|
+|区分大小写 | 当前不受支持。 | 执行的所有匹配均不区分大小写。  |
+|线条定位标记     | 当前不受支持。 | 无法指定出现匹配时字符串中的特定位置。   |
+
 ## <a name="proximity"></a>邻近度 
 
 邻近度说明类型可帮助模型识别数据（通过定义另一份数据与其的接近程度）。 例如，在模型中，假设已经定义了两个用于标记客户的“*街道地址编号*”和“*电话号码*”的说明。 
@@ -139,7 +148,7 @@ Redmond, WA 98034<br>
 |短语|令牌的数目|说明|
 |--|--|--|
 |`Dog`|1|单个单词，无标点符号或空格。|
-|`RMT33W`|1|记录定位器的编号。 它可能包含数字和字母，但不包含标点符号。|
+|`RMT33W`|1|记录定位器编号。其中可能包含数字和字母，但不包含标点符号。|
 |`425-555-5555`|5|电话号码。 每个标点符号是一个令牌，因此 `425-555-5555` 是 5 个令牌：<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
 |`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 

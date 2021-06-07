@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445752"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782797"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -42,7 +42,7 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 
 **操作系统**
 
-必须使用 64 位版 Windows。 2014 年已终止对 32 位版的用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块的支持。
+必须使用 64 位版本的 Windows。2014 年 10 月份已终止对 32 位版本的用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块的支持。
 
 可以使用下列 Windows 版本：
     
@@ -57,7 +57,7 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 
 - 对于 Azure Active Directory PowerShell for Graph 模块，必须使用 PowerShell 版本 5.1 或以上版本。
 
-- 对于用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。 你无法使用 PowerShell 版本 7。
+- 对于用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。不能使用 PowerShell 版本 7。
        
 >[!Note]
 >这些步骤适合于属于 Microsoft 365 管理员角色成员的用户。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
@@ -101,7 +101,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅的 Azure AD
 
-若要使用帐户名称和密码或者多重身份验证连接到 Microsoft 365 订阅的 Azure Active Directory (Azure AD)，请在 Windows PowerShell 命令提示符中运行这些命令之一。 （无需提升。）
+:若要使用帐户名称和密码或者多重身份验证连接到 Microsoft 365 订阅的 Azure Active Directory (Azure AD)，请在 Windows PowerShell 命令提示符中运行这些命令之一。（不必进行提升。）
 
 | Office 365 云 | 命令 |
 |:-------|:-----|
@@ -130,7 +130,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
 
 这些步骤只需在计算机上执行一次。 但可能需要定期更新软件。
   
-1.  如果您运行的不是 Windows 10，则请安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://www.microsoft.com/Download/details.aspx?id=28177)。
+1.  如果您运行的不是 Windows 10，则请安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)。
     
 2. 请按照以下步骤，安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块：
     
@@ -141,7 +141,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅的 Azure AD
 
-若要使用帐户名称和密码或者多重身份验证连接到 Microsoft 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一。 （无需提升。）
+若要使用帐户名称和密码或者多重身份验证连接到 Microsoft 365 订阅的 Azure AD，请在 Windows PowerShell 命令提示符中运行这些命令之一。（不必进行提升。）
 
 | Office 365 云 | 命令 |
 |:-------|:-----|

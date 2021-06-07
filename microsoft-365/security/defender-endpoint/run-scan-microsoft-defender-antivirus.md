@@ -11,21 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275356"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789167"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>配置并运行按需 Microsoft Defender 防病毒软件扫描
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
 
@@ -40,14 +38,12 @@ ms.locfileid: "52275356"
 > [!IMPORTANT]
 > Microsoft Defender 防病毒执行本地扫描时，在[LocalSystem](/windows/win32/services/localsystem-account)帐户的上下文中运行。 对于网络扫描，它使用设备帐户的上下文。 如果域设备帐户没有访问共享的适当权限，扫描将不起作用。 确保设备具有访问网络共享的权限。
 
-与 [始终启用](configure-real-time-protection-microsoft-defender-antivirus.md)实时保护功能（在打开和关闭文件时以及用户导航到文件夹时查看文件）相结合，快速扫描可帮助针对以系统开头的恶意软件和内核级恶意软件提供强大的覆盖范围。  
+与 [始终打开实时](configure-real-time-protection-microsoft-defender-antivirus.md)保护功能相结合，快速扫描可帮助针对以系统开头的恶意软件和内核级恶意软件提供强大的覆盖范围。 在打开和关闭文件时，以及用户导航到文件夹时，始终启用实时保护会检查文件。 默认情况下，快速扫描在装载的可移动设备（如 USB 驱动器）上运行。 在大多数情况下，快速扫描足以找到实时保护未选取的恶意软件。
 
-在大多数情况下，快速扫描足以找到实时保护未选取的恶意软件。
+当终结点上报告恶意软件威胁时，完全扫描可能很有用。 扫描可确定是否有需要更彻底清理的非活动组件。 但是，Microsoft 通常建议使用快速扫描，而不是完全扫描。 完整扫描可能需要几个小时或几天才能完成，具体取决于需要扫描的数据的数量和类型。 
 
-完全扫描在报告恶意软件威胁的终结点上可能很有用。 扫描可以标识是否有需要更彻底清理的非活动组件。 如果组织正在运行按需扫描，则这是理想情况。
-
-> [!NOTE]
-> 默认情况下，快速扫描在装载的可移动设备（如 USB 驱动器）上运行。
+> [!TIP]
+> 若要详细了解快速扫描和完整扫描之间的差异，请参阅 [快速扫描与完全扫描和自定义扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)。
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>使用Microsoft Endpoint Manager运行扫描
 

@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365警报、报告和调查之间使用标签筛选，以快速识别标记用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943007"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782857"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -51,7 +51,7 @@ ms.locfileid: "51943007"
 若要了解用户标记如何作为策略的一部分来帮助保护高影响的用户帐户，请参阅安全建议[中](security-recommendations-for-priority-accounts.md)优先级帐户Microsoft 365。
 
 > [!NOTE]
-> 如果使用统一安全Microsoft 365，可以在此处设置标记 https://security.microsoft.com/userTags ：。
+> 如果使用统一安全Microsoft 365，可以在此处设置标记 https://security.microsoft.com/securitysettings/userTags ：。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -64,10 +64,11 @@ ms.locfileid: "51943007"
 
   有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
-  **注意**：
-
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  - 用户标记管理由 Tag **Reader** 和 **Tag Manager 角色** 控制。
+  > [!NOTE]
+  >
+  > - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  >
+  > - 用户标记管理由 Tag **Reader** 和 **Tag Manager 角色** 控制。
 
 - 还可以在管理中心内管理和监视Microsoft 365帐户。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
@@ -83,7 +84,7 @@ ms.locfileid: "51943007"
    - **名称**：输入标记的唯一描述性名称。 这是你将看到并使用的值。
    - **说明**：输入标记的可选说明。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 4. 在 **"分配用户"** 页上，执行下列任一步骤：
 
@@ -98,7 +99,7 @@ ms.locfileid: "51943007"
 
    - 单击 **"** 导入&quot;选择一个包含用户或组的电子邮件地址的文本文件。 确保文本文件每行包含一个条目。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 5. 在&quot; **审阅标记&quot;** 页上，查看设置。 可以单击 **特定部分** 中的&quot;编辑&quot;进行更改。
 
@@ -126,7 +127,8 @@ ms.locfileid: "51943007"
 
 ## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>使用安全&中心删除用户标记
 
-**注意**：无法删除内置的 Priority **帐户** 标记。
+> [!NOTE]
+> 无法删除内置的 Priority **帐户** 标记。
 
 1. 在安全与&中心，转到"**威胁** 管理"" \> **用户标记"。**
 

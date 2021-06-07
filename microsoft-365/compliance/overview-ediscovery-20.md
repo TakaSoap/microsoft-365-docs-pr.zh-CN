@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: 了解 Advanced eDiscovery 中的Microsoft 365。 本文概述了 Advanced eDiscovery 中Microsoft 365，这是一种可帮助您管理内部和外部调查的工具。 它还说明使用 Advanced eDiscovery管理法律调查的业务原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16d18d04c0bb45f0a9328dcebae866c16a575812
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860961"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782785"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概述Microsoft 365 Advanced eDiscovery
 
-当前Advanced eDiscovery解决方案Microsoft 365现有 Microsoft 电子数据展示和分析功能。 Advanced eDiscovery提供端到端工作流，以保留、收集、分析、审阅、分析和导出对组织内部和外部调查做出响应的内容。 它帮助法律团队管理整个法定保留通知工作流，与案件有关保管人进行沟通。
+当前Advanced eDiscovery解决方案Microsoft 365现有 Microsoft 电子数据展示和分析功能。 Advanced eDiscovery提供端到端工作流，以保留、收集、分析、审阅和导出对组织内部和外部调查做出响应的内容。 它帮助法律团队管理整个法定保留通知工作流，与案件有关保管人进行沟通。
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery功能
 

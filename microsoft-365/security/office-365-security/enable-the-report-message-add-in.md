@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何为 Web 上、单个用户或整个组织的 Outlook 和 Outlook 启用报告邮件或报告网络钓鱼外接程序。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc54c5b74697ac41a1d4ff0818467dba662b31f5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295815"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782929"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>启用报告邮件或报告钓鱼外接程序
 
@@ -48,7 +48,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 如果您是单个用户，您可以为自己启用这两个外接程序。
 
-如果全局管理员或 Exchange Online 管理员，Exchange 配置为使用 OAuth 身份验证，您可以为组织启用"报告邮件"外接程序和"报告钓鱼邮件"外接程序。 这两个加载项现在都可以通过集中 [部署获得](../../admin/manage/centralized-deployment-of-add-ins.md)。
+如果您是全局管理员或 Exchange Online 管理员，并且 Exchange 配置为使用 OAuth 身份验证，您可以为组织启用"报告邮件"外接程序和"报告网络钓鱼"外接程序。 这两个加载项现在都可以通过集中 [部署获得](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -153,7 +153,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择 **"报告邮件** "外接程序。
 
-3. 在出现的 **"编辑报告** 消息"飞出控件中，根据组织情况查看和编辑设置。 完成后，单击“**保存**”。
+3. 在出现的 **"编辑报告** 消息"飞出控件中，根据组织情况查看和编辑设置。 完成后，请单击“保存”。
 
    ![设置邮件外接程序的外接程序](../../media/EditReportMessageAddIn.png)
 
@@ -227,4 +227,4 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择报告 **网络钓鱼** 外接程序。
 
-3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成后，单击“**保存**”。
+3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成后，请单击“保存”。

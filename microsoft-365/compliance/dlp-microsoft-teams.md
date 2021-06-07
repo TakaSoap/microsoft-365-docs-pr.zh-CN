@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams聊天和频道支持数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583384"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782557"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
@@ -59,15 +59,12 @@ DLP 保护以不同方式应用于Teams实体。
 |---------|---------|---------|
 |单个用户帐户     |1：1/n 聊天         |是         |
 |     |常规聊天         |否         |
-|     |共享频道         |否         |
 |     |私人频道         |是         |
 |安全组/通讯组列表  | 1：1/n 聊天         |是         |
 |     |常规聊天         |否         |
-|     |共享频道         |否      |
 |     |私人频道         |是        |
 |Microsoft 365组    |1：1/n 聊天          |否         |
 |     |常规聊天          |是        |
-|     |共享频道|是 |
 |     |私人频道|否| 
 
 
@@ -141,7 +138,7 @@ DLP 保护以不同方式应用于Teams实体。
     
 6. 然后选择“**下一步**”。
 
-7. 单击“**保存**”。
+7. 单击“保存”。
 
 允许大约 1 小时更改通过数据中心运行并同步到用户帐户。
 <!-- again, why user accounts? -->

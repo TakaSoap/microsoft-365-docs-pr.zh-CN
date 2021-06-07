@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274684"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789264"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>配置计划的快速或完整的 Microsoft Defender 防病毒软件扫描
 
@@ -73,8 +73,8 @@ ms.locfileid: "52274684"
 |应用场景  |推荐的扫描类型  |
 |---------|---------|
 |想要设置定期计划扫描     | 快速扫描 <p>快速扫描检查设备上的过程、内存、配置文件和特定位置。 与 [始终开启的](configure-real-time-protection-microsoft-defender-antivirus.md)实时保护相结合，快速扫描可帮助针对以系统开头的恶意软件和内核级恶意软件提供强大的覆盖范围。 实时保护在打开和关闭文件时以及用户导航到文件夹时检查文件。         |
-|在设备上检测到恶意软件等威胁     | 完全扫描 <p>完全扫描可帮助确定是否有需要更彻底清理的非活动组件。         |
-|想要运行 [按需扫描](run-scan-microsoft-defender-antivirus.md)     | 完全扫描  <p>完全扫描将查看设备磁盘上的所有文件，包括已过时、已存档且每日未访问的文件。      |
+|在单个设备上检测到恶意软件等威胁     | 快速扫描 <p>在大多数情况下，快速扫描将捕获并清理检测到的恶意软件。   |
+|想要运行 [按需扫描](run-scan-microsoft-defender-antivirus.md)     | 快速扫描       |
 | 你想要确保便携式设备（如 USB 驱动器）不包含恶意软件 | 自定义扫描 <p>通过自定义扫描，可以选择特定位置、文件夹或文件，并运行快速扫描。 |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>关于快速和完整扫描，我还需要了解哪些信息？
@@ -103,7 +103,7 @@ ms.locfileid: "52274684"
 |扫描 | 指定用于计划扫描的扫描类型 | 快速扫描 |
 |扫描 | 指定一周中的哪些天运行计划扫描 | 指定运行 () 或从不运行扫描的日。 | 永不 |
 |扫描 | 指定运行计划扫描的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示上午 1 点) 。 | 2 a.m. |
-|根 | 随机化计划任务时间 |在Microsoft Defender 防病毒中，将扫描的开始时间随机化为 0 到 4 小时之间的任意间隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，将扫描随机化为任意间隔加减 30 分钟。 这可在虚拟机或 VDI 部署中非常有用。 | 已启用 |
+|根 | 随机化计划任务时间 |在Microsoft Defender 防病毒中，将扫描的开始时间随机化为 0 到 4 小时之间的任意间隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，将扫描随机化为任意间隔加减 30 分钟。 这可在虚拟机或 VDI 部署中非常有用。 | 启用 |
 
 
 ### <a name="use-powershell-cmdlets-to-schedule-scans"></a>使用 PowerShell cmdlet 计划扫描
@@ -145,7 +145,7 @@ RandomizeScheduleTaskTimes
 
 |位置 | 设置 | 说明 | 如果未 (默认设置)  |
 |:---|:---|:---|:---|
-|扫描 | 仅在计算机打开但没有使用时启动计划扫描 | 计划的扫描将不会运行，除非计算机已打开但没有使用 | 已启用 |
+|扫描 | 仅在计算机打开但没有使用时启动计划扫描 | 计划的扫描将不会运行，除非计算机已打开但没有使用 | 启用 |
 
 ### <a name="use-powershell-cmdlets"></a>使用 PowerShell cmdlet
 
@@ -242,7 +242,7 @@ ScanScheduleQuickScanTime
 
 |位置 | 设置 | 说明 | 如果未 (默认设置) |
 |:---|:---|:---|:---|
-|签名更新 | 在安全智能更新后打开扫描 | 扫描将在下载新保护更新后立即发生 | 已启用 |
+|签名更新 | 在安全智能更新后打开扫描 | 扫描将在下载新保护更新后立即发生 | 启用 |
 
 ## <a name="see-also"></a>另请参阅
 

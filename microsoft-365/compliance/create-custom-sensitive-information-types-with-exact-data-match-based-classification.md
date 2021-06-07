@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769457"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779863"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -377,7 +377,7 @@ ms.locfileid: "52769457"
 > 如果你使用"精确数据匹配"架构和敏感信息类型向导来创建你的架构和模式文件， ***必须*** 此过程的架构。
 
 > [!NOTE]
-> 如果您的组织已在[租户级别（公共预览）设置了Microsoft 365的客户密钥](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，则精确数据匹配将自动使用其加密功能。 这仅适用于商业云中 E5 许可的租户。
+> 如果你的组织为租户级别的Microsoft 365[](customer-key-overview.md)密钥，精确数据匹配将自动使用其加密功能。 这仅适用于商业云中 E5 许可的租户。
 
 #### <a name="prerequisites"></a>先决条件
 

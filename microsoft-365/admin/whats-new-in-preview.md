@@ -21,12 +21,12 @@ description: 管理Microsoft 365中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769064"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779887"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365管理中心的新增功能
 
@@ -49,6 +49,18 @@ ms.locfileid: "52769064"
 - [SharePoint管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
 - [如何检查Windows发布运行状况](/windows/deployment/update/check-release-health)
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365管理中心搜索
+
+我们已向搜索功能添加了几个新类别。
+
+- 现在可以在全局搜索中Microsoft 365管理员角色，并快速查看和管理任何页面中的角色分配。 例如，搜索 **Intune 管理员**。
+
+- 现在，可以通过全局搜索找到简化的安装体验。 这有助于你和团队快速开始使用新功能。 例如，搜索 **将密码设置为永不过期**。
+
+若要了解有关管理中心中的搜索功能，请参阅在管理中心[Microsoft 365搜索](manage/search-in-the-mac.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 

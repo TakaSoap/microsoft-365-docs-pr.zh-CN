@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 了解如何自动Office 365安全与合规中心用户重定向到Microsoft 365中心。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772424"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782833"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>将用户从 Office 365 安全与合规中心重定向到Microsoft 365合规中心
 
@@ -51,7 +51,7 @@ ms.locfileid: "52772424"
 1. 以全局管理员[Microsoft 365](https://compliance.microsoft.com) Azure Active directory 中具有合规性管理员权限的任何帐户登录合规性中心。
 2. 导航到 **设置**  >  **合规中心重定向。**
 3. 将"自动重定向"设置切换为 **"关"。**
-4. 选择 **"禁用** "，在系统提示时共享反馈。
+4. 选择 **"关闭** "，在系统提示时共享反馈。
 
 禁用后，用户将不再被路由到 compliance.microsoft.com 他们将被定向到 Office 365 安全与合规中心 (protection.microsoft.com) 。 全局管理员或合规性管理员可以随时再次启用此设置。
 

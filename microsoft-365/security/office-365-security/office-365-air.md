@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696570"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793156"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for (AIR) 自动调查和响应Office 365
 
@@ -78,8 +78,8 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 AIR 功能包含在[Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)中，但已配置策略和警报。 需要一些帮助？ 按照防止威胁 [中的指南](protect-against-threats.md) 设置或配置以下保护设置：
 
 - [审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md) (应打开) 
-- [反恶意软件策略](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-- [防网络钓鱼钓鱼保护](protect-against-threats.md#part-2---anti-phishing-protection)
+- [反恶意软件保护](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [防网络钓鱼钓鱼保护](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [保险箱链接和保险箱附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
@@ -141,7 +141,7 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 
 下表列出了 Microsoft Defender for Office 365 中的 AIR 即将Office 365。
 
-|项目|更改了哪些方面？|
+|Item|更改了哪些方面？|
 |---|---|
 |**"调查"** 页|更新 **后的调查页面** 更符合你在 [Microsoft Defender for Endpoint 中所看到的内容](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 你将看到一些与新的统一调查视图一致的常规格式和 **样式** 设置更改。 例如，调查图具有更统一的格式。|
 |**"用户"** 选项卡|" **用户"** 选项卡现在是" **邮箱"** 选项卡。有关用户的详细信息列在"邮箱" **选项卡** 上。|

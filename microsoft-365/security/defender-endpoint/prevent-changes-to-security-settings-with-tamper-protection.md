@@ -17,12 +17,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538877"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782809"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -78,8 +78,8 @@ ms.locfileid: "52538877"
 
 | 如何启用防篡改保护  | 对 MAPS 的依赖 (云提供的保护)     |
 |:----|:----|
-| Microsoft Intune  | 否 |
-| Microsoft Endpoint Configuration Manager + 租户附加  |     否  |
+| Microsoft Intune  | 不支持 |
+| Microsoft Endpoint Configuration Manager + 租户附加  |     不支持  |
 | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)Microsoft Defender 安全中心 ()     |     是 |
 | Microsoft 365安全中心 [https://security.microsoft.com](https://security.microsoft.com) ()   |     是  |
 
@@ -257,7 +257,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 - [使用 Intune 管理篡改保护](#manage-tamper-protection-for-your-organization-using-intune)
 - [使用 Configuration Manager 版本 2006 管理篡改保护](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [使用当前处于预览Microsoft Defender 安全中心 (](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center)的) 
+- [使用管理程序管理防Microsoft Defender 安全中心](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) 
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-through-my-group-policy"></a>在 Intune 中配置防篡改保护如何影响我Microsoft Defender 防病毒管理策略？
 
@@ -291,7 +291,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>是否将在更新过程中收到有关篡改保护状态更改的Microsoft Defender 安全中心？
 
-是的。 警报显示在警报 [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **下**。
+是。 警报显示在警报 [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **下**。
 
 安全运营团队还可使用搜寻查询，如以下示例：
 

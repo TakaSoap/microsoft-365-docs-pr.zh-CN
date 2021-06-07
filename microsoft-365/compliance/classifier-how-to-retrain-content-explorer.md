@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在内容资源管理器中向可训练分类器提供反馈。
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918098"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793060"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
@@ -37,7 +37,7 @@ ms.locfileid: "50918098"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 若要访问分类器Microsoft 365合规中心：
 
@@ -96,7 +96,7 @@ ms.locfileid: "50918098"
 
 12. 查看建议的操作，以及分类器重新更新和当前发布的版本预测比较。
 13. 如果对重新发布的结果感到满意，请选择"**重新发布"。**
-14. 如果您对重新设置的结果不满意，可以选择在通信合规性界面中向分类器提供其他反馈，并开始另一个重新设置循环，或者不执行任何操作，在这种情况下将继续使用当前发布的分类器版本。 
+14. 如果您对重新设置的结果不满意，可以选择在内容资源管理器界面中向分类器提供其他反馈，并开始另一个重新设置循环，或者不执行任何操作，在这种情况下将继续使用当前发布的分类器版本。 
 
 ## <a name="details-on-republishing-recommendations"></a>有关重新发布建议的详细信息
 

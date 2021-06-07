@@ -1,7 +1,7 @@
 ---
 title: 转到操作中心以查看并批准自动调查和修正任务
 description: 使用操作中心查看有关自动调查的详细信息并批准挂起的操作
-keywords: 操作中心, 威胁防护, 调查, 警报, 挂起, 自动, 检测
+keywords: 操作中心， 威胁防护， 调查， 警报， 挂起， 自动， 检测
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7bea9a1632e7a9ed9d394c2c411123d0601a9397
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274576"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782977"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -49,7 +49,7 @@ ms.locfileid: "52274576"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender 中的统一操作中心":::
 
-例如： 
+例如: 
 
 - 如果之前使用的是 Office 365 安全&合规 () ，请尝试使用 Microsoft 365 安全中心统一 [https://protection.office.com](https://protection.office.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
 - 如果使用的是安全中心中的操作Microsoft Defender 安全中心 () ，请尝试在安全中心Microsoft 365统一 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。

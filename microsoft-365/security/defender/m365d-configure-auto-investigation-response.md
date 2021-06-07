@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 685c23f4e8daac4f00e0bbd90dcaca9a80703559
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696510"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782953"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中配置自动调查和响应功能
 
@@ -73,8 +73,8 @@ Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风
 
 1. 在安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () ，转到"策略&**规则** \> **威胁策略"。**
 2. 确保已配置以下所有策略。 若要获取帮助和建议，请参阅 [防止威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
-   - [反恶意软件) ](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [防钓鱼) ](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [反恶意软件](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+   - [防钓鱼](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
    - [安全附件](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [安全链接](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [反垃圾邮件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

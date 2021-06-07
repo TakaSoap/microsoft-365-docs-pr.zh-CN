@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/24/2021
+ms.date: ''
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,68 +15,129 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 了解如何在管理中心 (Microsoft Viva learning) Preview Teams预览版。
-ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 860f16bee7d93f2212072c5d738263402704272f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636130"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789227"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>在管理中心 (Microsoft Viva) 预览Teams Microsoft Viva 学习版预览版
 
 > [!NOTE]
 > 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 
 
-管理员Teams Viva Learning (Preview) ，并通过 Teams 管理中心应用权限策略。
+管理员Teams执行某些步骤，才能为租户中的 (用户) Viva Learning) 预览版。 这些步骤因租户的启用情况而异：[*公共*](set-up-teams-admin-center.md#public-preview-tenants)预览版或专用预览版 [ (或 Beta) 。](set-up-teams-admin-center.md#private-preview-tenants)
 
-1. 对于 Viva Learning (Preview) ，您必须先在 Teams 中设置更新策略。 有关详细信息，请参阅公共[Microsoft Teams预览版](/MicrosoftTeams/public-preview-doc-updates)。
+## <a name="public-preview-tenants"></a>公共预览版租户
 
-    1. 登录到管理Teams中心。
+### <a name="administrator-steps-for-public-preview-tenants"></a>公共预览版租户的管理员步骤
 
-    2. 选择 **Teams**  >  **更新策略"。**
+由于 Viva Learning (Preview) 尚未普遍可用，因此需要执行某些步骤才能启用这些功能并设置特定用户或组的权限。 
 
-    3. 选择“**添加**”。 
+1. 为 Viva Learning (Preview) 公共预览功能。
 
-    4. 命名更新策略，添加策略，然后打开显示 **预览功能**。
+    a. 修改Teams策略以启用公共预览版功能。 请参阅[Microsoft Teams预览版](/microsoftteams/public-preview-doc-updates)。
 
-2. 管理员必须通知用户策略更新，以便他们将内部版本移动到公共预览版Teams。 
+    b. 为将执行 Viva Learning (Preview) 策略。 请参阅 [向用户和组分配策略](/microsoftteams/assign-policies-users-and-groups)。
 
-    1. 用户必须选择其个人资料图像>**关于**  >  **公共预览版**。
+2. 修改 Viva Learning (Preview) 策略。
+
+    a. 除非它当前是全局策略的一部分，否则允许应用权限策略中所有的 Microsoft 应用。 请参阅[管理应用程序权限策略Microsoft Teams。](/microsoftteams/teams-app-permission-policies) 
+
+    b. 为将执行 Viva Learning (Preview 测试的用户或组) 策略。 请参阅 [向用户和组分配策略](/microsoftteams/assign-policies-users-and-groups)。
+
+3.  通知将测试 Viva Learning (Preview [) ，以将](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)生成客户端切换到 Teams 公共预览版。
+
+> [!IMPORTANT]
+> 对于公共预览版租户，直到最终产品 (，Viva Learning) Preview Teams不会显示在Teams 管理中心的托管应用中。 但是，启用的公共预览版用户可以在 Teams 应用商店中查找 Viva Learning (Preview) ，一旦设置了正确的策略和权限，就可以使用它。
+
+### <a name="user-steps-for-public-preview-tenants"></a>公共预览版租户的用户步骤
+
+已启用公共预览版测试（通过启用之前描述的策略）的用户需要[](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants)切换到其 Teams 客户端[](/microsoftteams/public-preview-doc-updates#enable-public-preview)。
+
+1. 用户必须选择其个人资料图像>**关于**  >  **公共预览版**。
    
-        ![显示用户配置文件Teams应用程序上的上导航](../media/learning/learning-app-select-profile-teams.png)
+    ![显示用户配置文件Teams应用程序上的上导航](../media/learning/learning-app-select-profile-teams.png)
     
-    2. 用户必须接受 **公共预览** 条款和条件。
+2. 用户必须接受公共预览版条款和条件。
 
-        ![切换到公共预览版](../media/learning/learning-app-switch-to-public-preview.png)
+    ![切换到公共预览版](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. 对于具有限制性策略且需要启用 Viva Learning (Preview) ，请按照下一节中的过程操作。
+3. 用户现在可以在 Teams 应用商店 (Viva Learning) Preview Teams并开始使用它。
 
-## <a name="manage-settings-for-viva-learning-preview"></a>管理 Viva Learning (Preview) 
+## <a name="private-preview-tenants"></a>专用预览版租户
 
-你必须是管理中心Teams管理员才能执行这些任务。
+### <a name="administrator-steps-for-private-preview-or-beta-tenants"></a>专用预览版或 Beta (租户的) 步骤
 
-若要使 Viva Learning (Preview) 组织中用户可以使用，请按照以下步骤操作：
+对于专用预览版租户，无需启用其他策略。 但是，Viva learning (Preview) 必须可供您组织的用户使用。
 
 1. 在管理中心左侧导航Teams，转到"管理Teams  >  **应用"。**
 
    ![管理中心左侧导航Teams显示Teams"管理应用"部分。](../media/learning/learning-app-teams-manage-apps-nav.png)
 
-2. 在" **管理应用"** 页上的搜索框中，键入 *Viva learning*，然后选择 **Viva Learning (Preview)**。
+2. 在"**管理应用"** 页上的搜索框中，键入 *Viva Learning，* 然后选择 **"Viva Learning (Preview) "。**
 
    ![显示搜索框Teams管理中心中的"管理应用"页面。](../media/learning/learning-app-teams-manage-apps-page.png)
 
-3. 在 **Viva 学习 (预览)** 页上：
-
-   1. 在 **"状态**"下 **，** 选择"允许"以打开 Viva Learning (Preview) 。
-
-   2. 在 **"设置"** 选项卡 **上的"应用** 设置"下，转到"Microsoft 365管理中心"[以配置学习内容源](content-sources-365-admin-center.md)。
+3. 在 **"Viva learning (Preview) "** 页上的"状态"下，选择"允许"以打开 Viva Learning (Preview) 。
 
    ![管理中心中的学习Teams"状态"和"应用设置"部分。](../media/learning/learning-app-teams-learning-page.png)
 
-4. 管理应用设置后，转到"权限策略"和"设置策略"，向作为组织参与预览的一部分而应有权访问 Viva Learning (Preview) 的员工授予权限。 
+
+<!---
+The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
+
+1. For Viva Learning (Preview), you must first set the Update policy in Teams. For more information, see [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates).
+
+    1. Sign in to the Teams admin center.
+
+    2. Select **Teams** > **Update policies**.
+
+    3. Select **Add**. 
+
+    4. Name the update policy, add a policy, and turn on **Show preview features**.
+
+2. The admin must notify users of the policy update so that they move their build into the Public Preview for Teams. 
+
+    1. Users must select their profile image > **About** > **Public Preview**.
+   
+        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+    
+    2. Users must accept the **Public preview** terms and conditions.
+
+        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+ 
+3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
+
+## Manage settings for Viva Learning (Preview)
+
+You must be an administrator in the Teams admin center to perform these tasks.
+
+To make Viva Learning (Preview) available for users in your organization, follow these steps:
+
+1. In the left navigation of the Teams admin center, go to **Teams apps** > **Manage apps**.
+
+   ![Left navigation in the Teams admin center showing Teams apps and Manage apps section.](../media/learning/learning-app-teams-manage-apps-nav.png)
+
+2. On the **Manage apps** page, in the search box, type *Viva learning*, and then select **Viva Learning (Preview)**.
+
+   ![Manage apps page in the Teams admin center showing the search box.](../media/learning/learning-app-teams-manage-apps-page.png)
+
+3. On the **Viva Learning (Preview)** page:
+
+   1. Under **Status**, select **Allowed** to turn on Viva Learning (Preview).
+
+   2. On the **Settings** tab, under **App settings**, go to the Microsoft 365 admin center to [configure learning content sources](content-sources-365-admin-center.md).
+
+   ![Learning page in the Teams admin center showing Status and App settings section.](../media/learning/learning-app-teams-learning-page.png)
+
+4. After **Manage app** settings, go to **Permission policies** and **Setup policies** to grant permission to employees who should have access to Viva Learning (Preview) as part of your organization's participation in the preview.
 
 > [!NOTE]
->  如果你的组织在圈 4.0 中作为 Teams TAP100 计划的一部分，你可能需要启用圈 3.0 中的已批准用户才能访问 Viva Learning (Preview) 。 <br><br>作为预览的一部分，Viva Learning (Preview) 在 Ring 3.0 中发布。 如果你的组织在圈 4.0 中，你将看不到管理应用 (预览) **Viva Learning) 预览** 版。 若要测试应用，需要创建自定义应用权限策略，将其设置为"允许所有应用"，并将其分配给圈 3.0 批准用户。 <br><br>   ![TAP-AppsPermission-Plcy 页面显示"允许选择所有应用"。](../media/learning/learning-app-tap-appspermission-plcy.png)
+>  If your organization is in Ring 4.0 as part of Teams TAP100 program, you might need to enable approved users in Ring 3.0 to access Viva Learning (Preview). <br><br>As part of the preview, Viva Learning (Preview) is released in Ring 3.0. If your organization is in Ring 4.0, you won’t see Viva Learning (Preview) on the **Manage apps** page. To test the app, you need to create a custom apps permission policy, set it to **Allow all apps**, and assign it to Ring 3.0 approved users. <br><br>   ![TAP-AppsPermission-Plcy page showing Allow all apps selected.](../media/learning/learning-app-tap-appspermission-plcy.png)
+
+--->
 
 ## <a name="next-step"></a>后续步骤
 

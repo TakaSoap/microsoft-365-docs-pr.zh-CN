@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 了解如何在合规性中心Microsoft 365权限。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 72575fce5f7d43354715c77016a8f444e539887f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7038863c0cbcaf99cf07072445a3b001e7b8ca0b
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772425"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782845"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Microsoft 365中心中的权限
 
@@ -26,7 +26,7 @@ Microsoft 365合规中心最近更新，现在支持直接管理在 Microsoft 36
 
 ![合规性中心Microsoft 365"权限"页](../media/m365-compliance-center-permissions.png)
 
-安全与Microsoft 365中心中的权限基于基于角色的访问控制 (RBAC) 权限模型。 RBAC 与大多数 Microsoft 365 服务使用的权限模型相同，因此如果你熟悉这些服务中的权限结构，那么在 Microsoft 365 合规中心内授予权限将是熟悉的。 切记，在合规性中心内Microsoft 365权限并不涵盖每个服务中所需的所有权限的管理。 你仍然需要在管理中心中管理特定服务的特定权限。 例如，如果需要分配存档、审核和保留策略的权限，则需要在管理中心管理这些Exchange权限。
+安全与Microsoft 365中心中的权限基于基于角色的访问控制 (RBAC) 权限模型。 RBAC 与大多数 Microsoft 365 服务使用的权限模型相同，因此如果你熟悉这些服务中的权限结构，那么在 Microsoft 365 合规中心内授予权限将是熟悉的。 切记，在合规性中心内Microsoft 365权限并不涵盖每个服务中所需的所有权限的管理。 你仍然需要在管理中心中管理特定服务的特定权限。 例如，如果需要分配存档、审核和 MRM 保留策略的权限，则需要在管理中心管理这些Exchange权限。
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>成员、角色和角色组之间的关系
 
@@ -46,7 +46,7 @@ Microsoft 365合规中心最近更新，现在支持直接管理在 Microsoft 36
 
 "合规性中心权限"页的 **"Azure AD** 角色"  >  部分Microsoft 365 **角色** Azure Active Directory角色。 这些角色旨在与组织 IT 组中的工作职能保持一致，从而可以轻松地使人员获得完成其工作所需的所有权限。 通过选择管理员角色并查看角色面板详细信息，可以查看当前分配给每个角色的用户。 若要管理 Azure AD 角色的成员，请选择"在 Azure AD 中管理成员"。 此选项会将你重定向到 Azure 管理门户。
 
-|角色|说明|
+|Role|说明|
 |:---|:----------|
 |**全局管理员**|访问所有 Microsoft 365 服务中的所有管理功能的权限。 只有全局管理员才能分配其他管理员角色。 更多信息，请参阅[全局管理员/公司管理员](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator)。|
 |**合规性数据管理员**|在 Microsoft 365 中跟踪组织的数据，确保数据受到保护，并深入了解任何问题以帮助缓解风险。 有关详细信息，请参阅[合规性数据管理员](/azure/active-directory/roles/permissions-reference#compliance-data-administrator)。|
@@ -55,8 +55,8 @@ Microsoft 365合规中心最近更新，现在支持直接管理在 Microsoft 36
 |**安全信息读取者**|查看和调查对 Microsoft 365 用户、设备和内容的活动威胁，但（不同于安全操作员）他们无权采取措施来进行响应。 有关详细信息，请参阅[安全信息读取者](/azure/active-directory/roles/permissions-reference#security-reader)。|
 |**安全管理员**|通过管理安全策略、查看 Microsoft 365 产品中的安全分析和报告以及及时了解威胁形势来控制组织的总体安全。 有关详细信息，请参阅[安全管理员](/azure/active-directory/roles/permissions-reference#security-administrator)。|
 |**全局读取者**|只读版本的 **全局管理员** 角色。 查看 Microsoft 365 中所有设置和管理信息。 有关详细信息，请参阅 [全局信息读取者](/azure/active-directory/roles/permissions-reference#global-reader)。|
-|**攻击模拟管理员**|创建和管理攻击模拟创建、启动/计划模拟以及审核模拟结果的各个方面。 有关详细信息，请参阅 [攻击模拟管理员](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
-|**攻击负载作者**|创建攻击负载，但不实际启动或计划攻击负载。 有关详细信息，请参阅攻击 [负载作者](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
+|**攻击模拟管理员**|创建和管理 攻击模拟 创建、启动/安排模拟以及审查模拟结果的各个方面。 有关详细信息，请参阅 [攻击模拟管理员](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
+|**攻击有效负载作者**|创建攻击负载，但不真正开始或计划其目标。 有关详细信息，请参阅[攻击有效负载作者](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
 |
 
 ## <a name="add-users-to-a-compliance-role-group"></a>将用户添加到合规性角色组

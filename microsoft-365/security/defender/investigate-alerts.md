@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689009"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782905"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
 
@@ -56,7 +56,7 @@ ms.locfileid: "52689009"
 
 - 严重性
 - 状态
-- 类别
+- Category
 - 检测源
 - 标记
 - 策略
@@ -92,7 +92,7 @@ Microsoft 365Defender 警报可能来自 Microsoft Defender for Endpoint、Micro
 Microsoft Defender for Office 365 | `fa{GUID}` <br> 例如：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender for Endpoint | `da` 或 `ed` 用于自定义检测警报 <br> 
 Microsoft Defender for Identity | `aa{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 
 

@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
-ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.date: 06/04/2021
+ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772013"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789179"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -83,6 +83,21 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 - 集成改进 (云，Microsoft 365 Defender) 。
 <br/>
 <details>
+<summary> 2021 年 5 月 (平台：4.18.2105.4 |引擎：1.1.18200.4) </summary>
+
+&ensp;安全智能更新版本 **：1.341.8.0**  
+&ensp;发布时间 **：2021 年 6 月 4 日**  
+&ensp;平台 **：4.18.2105.4**  
+&ensp;引擎 **：1.1.18200.4**  
+&ensp;支持阶段： **安全和关键更新**
+    
+### <a name="whats-new"></a>最近更新
+- 对行为监视的改进 
+
+### <a name="known-issues"></a>已知问题
+无已知问题  
+<br/>
+</details><details>
 <summary> 2021 年 4 月 (平台：4.18.2104.14 |引擎：1.1.18100.5) </summary>
 
 &ensp;安全智能更新版本 **：1.337.2.0**  
@@ -98,9 +113,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 ### <a name="known-issues"></a>已知问题
 无已知问题  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> 2021 年 3 月 (平台：4.18.2103.7 |引擎：1.1.18000.5) </summary>
 
 &ensp;安全智能更新版本 **：1.335.36.0**  
@@ -118,14 +131,20 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 ### <a name="known-issues"></a>已知问题
 无已知问题  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>旧版本更新：仅技术升级支持
+
+发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 低于本部分中列出的版本，并且仅提供用于技术升级支持的版本。 
+<br/><br/>
+<details>
 <summary> 2021 年 2 月 (平台：4.18.2102.3 |引擎：1.1.17900.7) </summary>
 
 &ensp;安全智能更新版本 **：1.333.7.0**  
 &ensp;已发布 **：2021 年 3 月 9 日**  
 &ensp;平台 **：4.18.2102.3**  
 &ensp;引擎 **：1.1.17900.7**  
-&ensp;支持阶段： **安全和关键更新**
+&ensp;支持阶段 **：仅支持 (升级)**
     
 ### <a name="whats-new"></a>最近更新
 
@@ -135,13 +154,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 ### <a name="known-issues"></a>已知问题
 无已知问题  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>旧版本更新：仅技术升级支持
-
-发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 低于本部分中列出的版本，并且仅提供用于技术升级支持的版本。 
-<br/><br/>
-<details>
+</details><details>
 <summary> 2021 年 1 月 (平台：4.18.2101.9 |引擎：1.1.17800.5) </summary>
 
 &ensp;安全智能更新版本 **：1.327.1854.0**  

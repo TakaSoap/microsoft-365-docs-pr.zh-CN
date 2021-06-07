@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云迁移到德国 microsoft 云 (到德国新数据中心) Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651102"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771197"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -80,7 +80,7 @@ ms.locfileid: "52651102"
 
 **应用时**：在阶段 2 启动之前
 
-如果使用的是 Active Directory 联合身份验证服务 (AD FS) ，请确保在阶段 2 开始之前为 Office 365 全局服务添加信赖方信任之前和之后备份[ADFS](ms-cloud-germany-transition-azure-ad.md)配置。 
+如果使用的是 Active Directory 联合身份验证服务 (AD FS) ，请确保在阶段 2 开始之前为 Office 365 全局服务添加信赖方信任之前和之后备份[ADFS](ms-cloud-germany-transition-add-adfs.md)配置。 
 
 ## <a name="phase-2-azure-ad-migration"></a>阶段 2：Azure AD 迁移
 在此阶段，Azure Active Directory迁移到新的数据中心区域并变为活动状态。 旧的 Azure AD 终结点仍然可用。

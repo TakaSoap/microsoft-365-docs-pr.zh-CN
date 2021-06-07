@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242a4a2f43bd91d75caeaeaa0488f23a5ba4319d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203602"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789047"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件Microsoft 365
 
@@ -89,7 +89,7 @@ ms.locfileid: "51203602"
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复OneDrive for Business
 
-文件还原OneDrive for Business使您可以将整个OneDrive还原到过去 30 天内以前的时间点。 有关详细信息，请参阅[还原OneDrive。](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+文件还原OneDrive for Business使您可以将整个OneDrive还原到过去 30 天内以前的时间点。 有关详细信息，请参阅“还原你的 OneDrive”[](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步骤 6：恢复已删除的电子邮件
 
@@ -128,6 +128,8 @@ ms.locfileid: "51203602"
 - 爱尔兰 [：Garda Sí一一](http://www.garda.ie/)
 
 - 新西兰： [消费者诈骗](http://www.consumeraffairs.govt.nz/scams)
+
+- 瑞士 [国家/地区国家/地区会议](https://www.ncsc.admin.ch/ncsc/de/home.html)
 
 - 英国： [行动欺诈](http://www.actionfraud.police.uk/)
 

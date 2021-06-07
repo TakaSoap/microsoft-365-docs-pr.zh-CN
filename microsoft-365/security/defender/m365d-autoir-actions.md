@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538839"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782989"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -53,7 +53,7 @@ Microsoft 365 Defender 中的威胁防护功能可能会导致某些修正操作
 
 2. 在“导航”窗格中，选择“操作中心”。 
 
-3. 在操作中心中的“挂起”选项卡上，选择列表中的某个项。 将打开其飞出窗格。 下面是一个示例。
+3. 在操作中心的"待定 **"** 选项卡上，选择列表中的项目。 将打开其飞出窗格。 下面是一个示例。
 
    ![批准或拒绝操作](../../media/air-actioncenter-itemselected.png)
 

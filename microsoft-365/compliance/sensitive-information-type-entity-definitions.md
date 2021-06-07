@@ -18,21 +18,21 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 安全 (DLP) 中的数据丢失防护包括 200 多种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
-ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+description: 有 200 种敏感信息类型可供您用于 DLP 策略。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
+ms.openlocfilehash: 4efa411f7cc34b4116cc418e328e5c3f7545f788
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730470"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789215"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
-合规性中心 (DLP) 数据丢失防护包括许多可供 DLP 策略使用的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。 若要了解有关敏感信息类型的信息，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md)
+本文列出了所有敏感信息类型实体定义。 每个定义都显示 DLP 策略查找以检测每种类型。 若要了解有关敏感信息类型的信息，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA 路由号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 9 个数字，可能采用格式化或无格式模式
 
@@ -48,7 +48,7 @@ ms.locfileid: "52730470"
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -96,7 +96,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="argentina-national-identity-dni-number"></a>阿根廷国家/ (DNI) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 带或不带句号的八个数字
 
@@ -111,7 +111,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -145,13 +145,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>阿根廷唯一税务识别密钥 (CUIT/CUIL) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-带破折号的十一个数字
+11 个数字（带短划线）
 
 ### <a name="pattern"></a>模式
 
-带破折号的十一个数字：
+带破折号的 11 个数字：
 - 20、23、24、27、30、33 或 34 中的两个数字
 - 连字符 (-) 
 - 八个数字
@@ -160,7 +160,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -228,9 +228,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="australia-bank-account-number"></a>澳大利亚银行帐号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-具有或不带银行省/市/县分支机构号码的六到十个数字
+具有或不带银行省/市/县分支机构号码的 6 到 10 个数字
 
 ### <a name="pattern"></a>模式
 
@@ -243,7 +243,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -299,7 +299,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Microsoft 云应用安全
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 带可选分隔符的 11 个数字
 
@@ -317,7 +317,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -360,7 +360,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字（带分隔符）
 
@@ -377,7 +377,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -414,7 +414,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="australia-drivers-license-number"></a>澳大利亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个字母和数字
 
@@ -437,7 +437,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -565,7 +565,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="australia-medical-account-number"></a>澳大利亚医疗帐号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10-11 个数字
 
@@ -573,13 +573,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10-11 个数字：
 - 第一个数字范围为 2-6
-- 九个数字是一个检查数字
+- 第九个数字是校验位
 - 第十个数字是问题数字
 - 第十一个数字（可选）是个人号码
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -616,18 +616,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="australia-passport-number"></a>澳大利亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个或九个字母数字字符 
 
 ### <a name="pattern"></a>模式
 
-- 一个字母 (N、E、D、F、A、C、U、X) 后跟 7 个数字或
-- 2 个字母 (PA、PB、PC、PD、PE、PF、PU、PW、PX、PZ) 后跟 7 个数字。
+- 一个字母 (N、E、D、F、A、C、U、X) 后跟七个数字或
+- 两个字母 (PA、PB、PC、PD、PE、PF、PU、PW、PX、PZ) 后跟七个数字。
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -676,7 +676,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="australia-tax-file-number"></a>澳大利亚税务文件编号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八到九个数字
 
@@ -691,7 +691,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -726,7 +726,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="austria-drivers-license-number"></a>奥地利驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字，不带空格和分隔符
   
@@ -736,7 +736,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -898,7 +898,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字母、数字和特殊字符的 24 个字符组合
   
@@ -941,7 +941,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="austria-passport-number"></a>奥地利护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字母后跟一个可选空格和七个数字
   
@@ -1024,7 +1024,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="austria-social-security-number"></a>奥地利社会保险号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字，采用指定格式
   
@@ -1038,7 +1038,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -1096,7 +1096,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="austria-tax-identification-number"></a>奥地利税务标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，带可选连字符和正斜杠
   
@@ -1112,7 +1112,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -1169,7 +1169,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 字符字母数字模式
 
@@ -1190,7 +1190,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -1236,7 +1236,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 身份验证密钥
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"DocumentDb"后跟以下模式中列出的字符和字符串。
 
@@ -1250,7 +1250,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1288,7 +1288,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 数据库连接字符串和 Azure SQL连接字符串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"Server"、"server"或"data source"，后跟以下模式中列出的字符和字符串，包括字符串"cloudapp.azure"。<!--no-hyperlink-->com"或"cloudapp.azure"。<!--no-hyperlink-->net"或"database.windows"。<!--no-hyperlink-->net"，字符串"Password"或"password"或"pwd"。
 
@@ -1310,7 +1310,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1348,7 +1348,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT连接字符串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"HostName"后跟模式中列出的字符和字符串，包括字符串"azure-devices"。<!--no-hyperlink-->net"和"SharedAccessKey"。
 
@@ -1370,7 +1370,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1408,7 +1408,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-publish-setting-password"></a>Azure 发布设置密码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"userpwd="后跟字母数字字符串。
 
@@ -1420,7 +1420,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1459,7 +1459,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis 缓存连接字符串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"redis.cache.windows"。<!--no-hyperlink-->net"，后跟以下模式中列出的字符和字符串，包括字符串"password"或"pwd"。
 
@@ -1476,7 +1476,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1514,7 +1514,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-sas"></a>Azure SAS
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"sig"后跟以下模式中列出的字符和字符串。
 
@@ -1530,7 +1530,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1548,7 +1548,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-service-bus-connection-string"></a>Azure 服务总线连接字符串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"EndPoint"后跟以下模式中列出的字符和字符串，包括字符串"servicebus.windows"。<!--no-hyperlink-->net"和"SharedAccesKey"。
 
@@ -1570,7 +1570,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1608,7 +1608,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-storage-account-key"></a>Azure 存储帐户密钥
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"DefaultEndpointsProtocol"后跟以下模式中列出的字符和字符串，包括字符串"AccountKey"。
 
@@ -1628,7 +1628,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1674,7 +1674,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户密钥) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 86 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
 
@@ -1686,7 +1686,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -1703,7 +1703,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ```
 ## <a name="belgium-drivers-license-number"></a>比利时驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格和分隔符的 10 个数字
   
@@ -1713,7 +1713,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -1875,7 +1875,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="belgium-national-number"></a>比利时国家号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字加上可选的分隔符
 
@@ -1890,7 +1890,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -1979,7 +1979,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="belgium-passport-number"></a>比利时护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟 6 个数字，没有空格或分隔符
   
@@ -2069,7 +2069,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 字符字母数字模式
 
@@ -2089,7 +2089,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 
 ### <a name="definition"></a>定义
@@ -2131,7 +2131,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="brazil-cpf-number"></a>巴西 CPF 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字（包括校验位），可以格式化，也可以非格式化
 
@@ -2151,7 +2151,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -2194,7 +2194,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>CNPJ (巴西法律实体) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 14 个数字（包括注册号、分行号码和校验位），再加上分隔符
 
@@ -2214,7 +2214,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -2267,7 +2267,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="brazil-national-identification-card-rg"></a>巴西国家身份证 (RG) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 Registro Geral (旧格式) ：九个数字
 
@@ -2291,7 +2291,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -2327,7 +2327,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="bulgaria-drivers-license-number"></a>保加利亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -2337,7 +2337,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -2498,7 +2498,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格和分隔符的 10 个数字
   
@@ -2513,7 +2513,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -2591,7 +2591,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="bulgaria-passport-number"></a>保加利亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -2601,7 +2601,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -2665,7 +2665,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="canada-bank-account-number"></a>加拿大银行帐号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7 个或 12 个数字
 
@@ -2682,7 +2682,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -2739,17 +2739,27 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="canada-drivers-license-number"></a>加拿大驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 因省而异
 
 ### <a name="pattern"></a>模式
 
-各种模式，涵盖艾伯塔、 不列颠哥伦比亚、 马尼托巴、 新不伦瑞克、 纽芬兰/拉布拉多、 新斯科舍、 安大略、 爱德华王子岛，魁北克和萨斯喀彻温
+各种模式涵盖：
+- 省/市/市
+- British Columbia
+- 马尼托巴
+- New Brunswick
+- Newfoundland/Labrador
+- Nova Scotia
+- On一
+- Prince Edward Island
+- 因此，该国家/
+- Saskatchewan
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -2957,7 +2967,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="canada-health-service-number"></a>加拿大卫生服务号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
  10 个数字
 
@@ -2967,7 +2977,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -3004,7 +3014,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
       
 ## <a name="canada-passport-number"></a>加拿大护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个小写字母后跟六个数字
 
@@ -3014,7 +3024,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -3072,7 +3082,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="canada-personal-health-identification-number-phin"></a>加拿大个人健康标识号 (PHIN) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字
 
@@ -3082,7 +3092,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -3143,7 +3153,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="canada-social-insurance-number"></a>加拿大社会保险号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字（可选连字符或空格）
 
@@ -3160,13 +3170,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，具有很高的可信度：
 - 函数 Func_canadian_sin 找到与该模式匹配的内容。
-- 至少两个以下任意组合：
+- 至少以下两种模式：
     - 找到 Keyword_sin 中的一个关键字。
     - 找到 Keyword_sin_collaborative 中的一个关键字。
     - 函数 Func_eu_date 找到正确日期格式的日期。
@@ -3227,7 +3237,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="chile-identity-card-number"></a>智利身份证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七到八个数字加上分隔符一个检查数字或字母
 
@@ -3244,7 +3254,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -3312,7 +3322,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="china-resident-identity-card-prc-number"></a>中国居民身份证 (中国) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 18 个数字
 
@@ -3326,7 +3336,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -3370,13 +3380,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="credit-card-number"></a>信用卡号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 14 到 16 个数字，可以格式化或无格式 (dddddd) 且必须通过 Luhn 测试。
 
 ### <a name="pattern"></a>模式
 
-复杂而强大的模式，用于检测全球所有重要品牌的卡，包括 Visa、MasterCard、Discover Card、JCB、American Express、名片和第三者卡。
+检测来自全球所有主要品牌的卡，包括 Visa、MasterCard、Discover Card、JCB、American Express、名片和第三者卡。
 
 ### <a name="checksum"></a>校验和
 
@@ -3672,7 +3682,7 @@ cód. segurança
 
 ## <a name="croatia-drivers-license-number"></a>克罗地亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字，不带空格和分隔符
   
@@ -3682,7 +3692,7 @@ cód. segurança
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -3835,9 +3845,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 
 ## <a name="croatia-identity-card-number"></a>克罗地亚身份证号
-此敏感信息类型实体包含在欧盟国家标识号敏感信息类型中。 它作为独立的敏感信息类型实体提供。
+此实体包含在欧盟国家标识号敏感信息类型中。 它作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字
 
@@ -3847,7 +3857,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -3901,7 +3911,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="croatia-passport-number"></a>克罗地亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -3911,7 +3921,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -3970,7 +3980,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="croatia-personal-identification-oib-number"></a>克罗地亚个人标识 (OIB) 号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
 
@@ -3982,7 +3992,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -4043,7 +4053,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="cyprus-drivers-license-number"></a>塞浦路斯驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格和分隔符的 12 个数字
   
@@ -4053,7 +4063,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -4212,7 +4222,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格和分隔符的 10 个数字
   
@@ -4254,7 +4264,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="cyprus-passport-number"></a>塞浦路斯护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字母后跟 6-8 个数字，无空格或分隔符
   
@@ -4264,7 +4274,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -4344,7 +4354,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 指定模式中的八个数字和一个字母
   
@@ -4415,7 +4425,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="czech-drivers-license-number"></a>捷克驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟六个数字
   
@@ -4430,7 +4440,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -4584,7 +4594,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="czech-passport-number"></a>捷克护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字，不带空格或分隔符
   
@@ -4594,7 +4604,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -4662,7 +4672,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="czech-personal-identity-number"></a>捷克个人标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，带可选正斜杠 (旧格式) 10 个数字，带可选正斜杠 (新格式) 
 
@@ -4680,7 +4690,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -4762,7 +4772,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="denmark-drivers-license-number"></a>丹麦驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字，不带空格和分隔符
   
@@ -4772,7 +4782,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -4924,7 +4934,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="denmark-passport-number"></a>丹麦护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -4934,7 +4944,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -5001,7 +5011,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="denmark-personal-identification-number"></a>丹麦个人标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字，包含连字符
 
@@ -5014,7 +5024,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -5118,7 +5128,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="drug-enforcement-agency-dea-number"></a>管制局 (DEA) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟七个数字
 
@@ -5131,7 +5141,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -5176,7 +5186,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟六个数字
   
@@ -5189,7 +5199,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -5349,7 +5359,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字，不带空格和分隔符
   
@@ -5364,7 +5374,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -5430,7 +5440,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="estonia-passport-number"></a>爱沙尼亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字母后跟七个数字，无空格或分隔符
   
@@ -5440,7 +5450,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -5504,7 +5514,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ## <a name="eu-debit-card-number"></a>欧盟借记卡号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 16 个数字
 
@@ -5514,7 +5524,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -6021,7 +6031,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="finland-drivers-license-number"></a>芬兰驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字，包含连字符
   
@@ -6036,7 +6046,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -6202,7 +6212,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 20 位数字
 
@@ -6216,7 +6226,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -6256,7 +6266,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="finland-national-id"></a>芬兰国家/区 ID
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 六个数字加一个字符，表示一世纪加三个数字加一个检查数字
 
@@ -6270,7 +6280,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -6349,9 +6359,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="finland-passport-number"></a>芬兰护照号码
 
-此敏感信息类型实体在欧盟护照号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
+此实体在欧盟护照号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 九个字母和数字的组合
 
 ### <a name="pattern"></a>模式
@@ -6361,7 +6371,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -6429,9 +6439,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
-此敏感信息类型实体在欧盟驾驶证号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
+此实体在欧盟驾驶证号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个数字
 
@@ -6441,7 +6451,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -6597,7 +6607,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 21 位数字
 
@@ -6614,7 +6624,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -6642,7 +6652,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="france-national-id-card-cni"></a>法国国家/ (CNI) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个数字
 
@@ -6652,7 +6662,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -6688,9 +6698,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
    
 ## <a name="france-passport-number"></a>法国护照号码
-欧盟护照号码敏感信息类型中提供了此敏感信息类型实体。 它作为独立的敏感信息类型实体提供。
+此实体在欧盟护照号码敏感信息类型中可用。 它还作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字和字母
 
@@ -6703,7 +6713,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -6781,7 +6791,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="france-social-security-number-insee"></a>法国社会保险号码 (INSEE) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 15 个数字
 
@@ -6794,7 +6804,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -6859,7 +6869,7 @@ no. d'identite
 
 ## <a name="france-tax-identification-number"></a>法国税务标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位数字
   
@@ -6881,7 +6891,7 @@ no. d'identite
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -6941,7 +6951,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 个字符字母数字模式
 
@@ -6961,7 +6971,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -7002,9 +7012,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="germany-drivers-license-number"></a>德国驾驶证号码
 
-此敏感信息类型实体包含在欧盟驾驶证号码敏感信息类型中。 它作为独立的敏感信息类型实体提供。
+此敏感信息类型实体包含在欧盟驾驶证号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字和字母的组合
 
@@ -7019,7 +7029,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -7192,7 +7202,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="germany-identity-card-number"></a>德国身份证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 自 2010 年 11 月 1 日起：九个字母和数字
 
@@ -7209,7 +7219,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -7248,9 +7258,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="germany-passport-number"></a>德国护照号码
 
-此敏感信息类型实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
+此实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字或字母
 
@@ -7264,7 +7274,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -7328,7 +7338,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="germany-tax-identification-number"></a>德国税务标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字，不带空格和分隔符
   
@@ -7347,7 +7357,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -7408,7 +7418,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个字符字母数字模式
 
@@ -7427,7 +7437,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -7465,9 +7475,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="greece-drivers-license-number"></a>希腊驾驶证号码
 
-此敏感信息类型实体包含在欧盟驾驶证号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
+此实体包含在欧盟驾驶证号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -7477,7 +7487,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -7632,7 +7642,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="greece-national-id-card"></a>希腊国民身份证
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7-8 个字母和数字组合加一个短划线
 
@@ -7650,7 +7660,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -7690,7 +7700,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="greece-passport-number"></a>希腊护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟七个数字，无空格或分隔符
   
@@ -7700,7 +7710,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -7767,19 +7777,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-无空格和分隔符的 11 个数字
+11 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-- 6 个数字作为出生日期 YYMMDD
-- 4 个数字
+- 六个数字作为出生日期 YYMMDD
+- 四位数字
 - 一个检查数字
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -7825,7 +7835,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -7888,7 +7898,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Hk Kong identity card (HKID) number
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 8-9 个字母和数字组合，最后一个字符两边可选择加括号
 
@@ -7901,7 +7911,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -7972,7 +7982,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
    
 ## <a name="hungary-drivers-license-number"></a>匈牙利驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟六个数字
   
@@ -7985,7 +7995,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -8145,7 +8155,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
   
@@ -8153,14 +8163,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 11 个数字：
   
-- 1 个数字对应于性别 (1-男性、2-男性，对于在 1900 之前年龄的男性或具有双重公民关系)  
+- 一个数字，对应性别，1 表示男性，2 表示男性。 对于在 1900 以前生活的人或具有双重公民权的人，也可以申请其他号码。
 - 六个数字，对应于出生日期 (YYMMDD) 
 - 对应于序列号的三个数字
 - 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -8205,7 +8215,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="hungary-passport-number"></a>匈牙利护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟 6 个或 7 个数字，没有空格或分隔符
   
@@ -8215,7 +8225,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -8280,7 +8290,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="hungary-social-security-number-taj"></a>匈牙利社会保险号码 (TAJ) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -8290,7 +8300,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -8347,7 +8357,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字，无空格或分隔符
   
@@ -8361,7 +8371,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -8428,7 +8438,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个字符字母数字模式
 
@@ -8442,7 +8452,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -8487,7 +8497,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="india-permanent-account-number-pan"></a>PAN (印度永久) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个字母或数字
 
@@ -8502,7 +8512,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -8538,7 +8548,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
    
 ## <a name="india-unique-identification-aadhaar-number"></a>印度唯一 (Aadhaar) 号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个数字（包含可选空格或短划线）
 
@@ -8554,7 +8564,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -8592,7 +8602,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份证号码 (KTP) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 16 个数字（包含可选点）
 
@@ -8610,7 +8620,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -8638,7 +8648,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="international-banking-account-number-iban"></a>国际银行帐号 (IBAN) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 国家/地区代码（两个字母）加校验位（两个数字）以及 bban 号码（最多 30 个字符）
 
@@ -8653,11 +8663,70 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 每个国家/地区的格式稍有不同。IBAN 敏感信息类型涵盖这 60 个国家/地区：
 
-ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
+- ad
+- ae
+- al
+- at
+- az
+- ba
+- be
+- bg
+- bh
+- ch
+- cr
+- cy
+- cz
+- de
+- dk
+- do
+- ee
+- es
+- fi
+- fo
+- fr
+- gb
+- ge
+- gi
+- gl
+- gr
+- hr
+- hu
+- ie
+- il
+- is
+- it
+- kw
+- kz
+- lb
+- li
+- lt
+- lu
+- lv
+- mc
+- md
+- me
+- mk
+- mr
+- mt
+- mu
+- nl
+- 否
+- pl
+- pt
+- ro
+- rs
+- sa
+- se
+- si
+- sk
+- sm
+- tn
+- tr
+- vg
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -8681,7 +8750,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>ICD-10-CM (国际) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 Dictionary
 
@@ -8691,7 +8760,7 @@ Dictionary
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -8723,7 +8792,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>ICD-9-CM (国际) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 Dictionary
 
@@ -8733,7 +8802,7 @@ Dictionary
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -8764,7 +8833,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="ip-address"></a>IP 地址
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 #### <a name="ipv4"></a>IPv4：
 处理 IPv4 地址 (格式) 和无格式 (IPv4) 句点的复杂模式
@@ -8776,7 +8845,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -8828,7 +8897,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="ireland-drivers-license-number"></a>爱尔兰驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 六个数字后跟四个字母
   
@@ -8841,7 +8910,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -8994,7 +9063,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="ireland-passport-number"></a>爱尔兰护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母或数字后跟七个数字，无空格或分隔符
   
@@ -9007,7 +9076,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -9077,7 +9146,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 2012 (2012 年 12 月 31) ：
 - 七个数字后跟 1-2 个字母 
@@ -9098,7 +9167,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -9174,7 +9243,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="israel-bank-account-number"></a>以色列银行帐号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位数字
 
@@ -9192,7 +9261,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -9223,7 +9292,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="israel-national-identification-number"></a>以色列国家标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字
 
@@ -9233,7 +9302,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -9278,9 +9347,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="italy-drivers-license-number"></a>意大利驾驶证号码
 
-此敏感信息类型实体包含在欧盟驾驶证号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
+此类型实体包含在欧盟驾驶证号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个字母和数字的组合
 
@@ -9294,7 +9363,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -9455,7 +9524,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 指定模式中字母和数字的 16 个字符组合
   
@@ -9466,13 +9535,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 三个字母，分别对应名字中的第一个、第三个和第四个辅音
 - 两个数字，对应于出生日期的最后一个数字
 - 一个对应于出生日期月份字母的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 为 A，10 月为 R) 
-- 与出生日期对应的两个数字-为了区分性别，将 40 位添加到女士的出生日期
+- 为区分性别，与当月中的一天对应的两个数字，40 个数字将添加到女士的出生日期
 - 四个数字，对应于特定的地区代码，该人的 (国家/地区代码用于国家/地区) 
 - 一个奇偶校验数字
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -9536,7 +9605,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="italy-passport-number"></a>意大利护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母或数字后跟七个数字（没有空格或分隔符）
   
@@ -9625,7 +9694,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 带可选分隔符的 13 个字符字母数字模式
 
@@ -9640,7 +9709,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -9677,7 +9746,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="japan-bank-account-number"></a>日本银行帐号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七个或八个数字
 
@@ -9692,7 +9761,7 @@ bank account number：
 
 校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -9780,7 +9849,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="japan-drivers-license-number"></a>日本驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个数字
 
@@ -9790,7 +9859,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -9857,7 +9926,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位数字
 
@@ -9870,7 +9939,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -9918,7 +9987,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 位数字
 
@@ -9934,7 +10003,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -9976,7 +10045,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
    
 ## <a name="japan-passport-number"></a>日本护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟七个数字
 
@@ -9986,7 +10055,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -10026,7 +10095,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="japan-residence-card-number"></a>日本居民身份证号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个字母和数字
 
@@ -10039,7 +10108,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -10070,7 +10139,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="japan-resident-registration-number"></a>日本居民注册号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
 
@@ -10080,7 +10149,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -10116,7 +10185,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="japan-social-insurance-number-sin"></a>日本社会保险号码 (SIN) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 7-12 个数字 
 
@@ -10130,7 +10199,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -10182,7 +10251,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="latvia-drivers-license-number"></a>拉脱维亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 三个字母后跟六个数字
   
@@ -10195,7 +10264,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -10348,7 +10417,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="latvia-personal-code"></a>拉脱维亚个人代码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字和一个可选连字符
   
@@ -10372,7 +10441,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -10479,7 +10548,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="latvia-passport-number"></a>拉脱维亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母或数字后跟七个数字（没有空格或分隔符）
   
@@ -10492,7 +10561,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -10561,7 +10630,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="lithuania-drivers-license-number"></a>立陶宛驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字，不带空格和分隔符
   
@@ -10571,7 +10640,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -10730,7 +10799,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字，不带空格和分隔符
   
@@ -10745,7 +10814,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -10812,7 +10881,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="lithuania-passport-number"></a>立陶宛护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字或字母，无空格或分隔符
   
@@ -10888,7 +10957,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="luxemburg-drivers-license-number"></a>百度达驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 6 个数字，不带空格和分隔符
   
@@ -10898,7 +10967,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -11056,7 +11125,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 个数字，无空格或分隔符
   
@@ -11125,7 +11194,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="luxemburg-passport-number"></a>百里达护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字或字母，无空格或分隔符
   
@@ -11135,7 +11204,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -11212,7 +11281,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>阿比塞卡 (非自然人的身份证号) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
   
@@ -11231,7 +11300,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -11304,7 +11373,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="malaysia-identification-card-number"></a>马来西亚身份证号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个数字（包含可选连字符）
 
@@ -11320,7 +11389,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -11370,7 +11439,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="malta-drivers-license-number"></a>马耳他驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 指定模式中两个字符和六个数字的组合
   
@@ -11386,7 +11455,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -11545,7 +11614,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七个数字后跟一个字母
   
@@ -11604,7 +11673,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="malta-passport-number"></a>马耳他护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七个数字，不带空格或分隔符
   
@@ -11614,7 +11683,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -11677,7 +11746,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="malta-tax-identification-number"></a>马耳他税务标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 对于马耳他语：
 - 指定模式中的七个数字和一个字母
@@ -11767,9 +11836,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="medicare-beneficiary-identifier-mbi-card"></a>一个 MBI (的) 标识符
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-十二字符字母数字模式
+11 个字符字母数字模式
   
 ### <a name="pattern"></a>模式
 
@@ -11787,7 +11856,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -11826,7 +11895,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="mexico-unique-population-registry-code-curp"></a>墨西哥唯一总体注册表代码 (CURP) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 18 个字符字母数字模式
   
@@ -11842,7 +11911,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -11892,7 +11961,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 包含可选空格的八个或九个数字
 
@@ -11907,7 +11976,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -11954,17 +12023,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="netherlands-drivers-license-number"></a>荷兰驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-10 个数字，不带空格和分隔符
+不带空格和分隔符的 10 个数字
   
 ### <a name="pattern"></a>模式
 
-十个数字
+10 个数字
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -12121,7 +12190,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="netherlands-passport-number"></a>荷兰护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个字母或数字，无空格或分隔符
   
@@ -12195,7 +12264,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格或分隔符
   
@@ -12205,7 +12274,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -12278,7 +12347,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 14 个字符字母数字模式
 
@@ -12296,7 +12365,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12340,7 +12409,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 带可选分隔符的 14 位到 16 位模式
 
@@ -12359,7 +12428,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12402,7 +12471,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个字符字母数字模式
 
@@ -12415,7 +12484,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12517,7 +12586,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个或九个数字（带可选分隔符）
 
@@ -12533,7 +12602,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12571,7 +12640,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="new-zealand-ministry-of-health-number"></a>新西兰卫生服务局号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 三个字母，一 (可选) 和四个数字
 
@@ -12583,7 +12652,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12634,7 +12703,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字
 
@@ -12650,7 +12719,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12688,7 +12757,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
    
 ## <a name="norway-identification-number"></a>挪威标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
 
@@ -12701,7 +12770,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12741,7 +12810,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>菲律宾统一的多用途标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 12 个数字，通过连字符分隔 
 
@@ -12756,7 +12825,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -12785,7 +12854,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="poland-drivers-license-number"></a>波兰驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 14 个数字，包含两个正斜杠
   
@@ -12801,7 +12870,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -12953,7 +13022,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="poland-identity-card"></a>波兰身份证
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 三个字母和六个数字
 
@@ -12963,7 +13032,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -12998,7 +13067,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="poland-national-id-pesel"></a>波兰国家/ (PESEL) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
 
@@ -13010,7 +13079,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -13052,9 +13121,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
    
 ## <a name="poland-passport-number"></a>波兰护照号码
-此敏感信息类型实体包含在欧盟护照号码敏感信息类型中。 它作为独立的敏感信息类型实体提供。
+此敏感信息类型实体包含在欧盟护照号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母和七个数字
 
@@ -13064,7 +13133,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -13147,7 +13216,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 9 位数字或 14 位数字
 
@@ -13162,7 +13231,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -13213,7 +13282,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字，无空格或分隔符
   
@@ -13223,7 +13292,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -13277,7 +13346,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="portugal-citizen-card-number"></a>葡萄牙公民卡号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字
 
@@ -13287,7 +13356,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -13330,7 +13399,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="portugal-drivers-license-number"></a>葡萄牙驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个模式 - 两个字母后跟 5-8 个数字（带特殊字符）
   
@@ -13353,7 +13422,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -13513,7 +13582,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="portugal-passport-number"></a>葡萄牙护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字母后跟 6 个数字，无空格或分隔符
   
@@ -13526,7 +13595,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -13599,7 +13668,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="portugal-tax-identification-number"></a>葡萄牙税务标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字（带可选空格）
   
@@ -13613,7 +13682,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -13667,7 +13736,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="romania-drivers-license-number"></a>罗马尼亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字符后跟八个数字
   
@@ -13679,7 +13748,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -13841,7 +13910,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格和分隔符的 13 个数字
   
@@ -13854,7 +13923,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -13933,7 +14002,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="romania-passport-number"></a>罗马尼亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个或九个数字，不带空格和分隔符
   
@@ -13943,7 +14012,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -14013,7 +14082,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 位数字
 
@@ -14029,7 +14098,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -14075,7 +14144,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九位数
 
@@ -14089,7 +14158,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -14129,7 +14198,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="saudi-arabia-national-id"></a>沙特阿拉伯国家 ID
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字
 
@@ -14139,7 +14208,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -14171,7 +14240,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡国家注册身份证号码 (NRIC) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个字母和数字
 
@@ -14184,7 +14253,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -14225,7 +14294,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="slovakia-drivers-license-number"></a>斯洛伐克驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字符后跟七个数字
   
@@ -14238,7 +14307,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -14398,9 +14467,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-九个或十个数字，包含可选反杠
+九个或 10 个数字，包含可选反杠
   
 ### <a name="pattern"></a>模式
 
@@ -14411,7 +14480,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -14487,7 +14556,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="slovakia-passport-number"></a>斯洛伐克护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个数字或字母后跟七个数字，无空格或分隔符
   
@@ -14497,7 +14566,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -14565,7 +14634,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="slovenia-drivers-license-number"></a>斯洛文尼亚驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，不带空格和分隔符
   
@@ -14575,7 +14644,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -14736,7 +14805,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格或分隔符的 13 个数字
   
@@ -14746,12 +14815,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 - 对应于出生日期的七个数字 (DDMMLLL) 其中"LLL"对应于出生日期的最后三个数字 
 - 两个数字，对应于出生日期"50"
-- 三个数字，分别对应同一天男性的性别和序列号组合 (000-499 和 500-999（对于男性) 
+- 三个数字，对应于同一天的人的性别和序列号的组合。 000-499（男性）和 500-999（针对男性）。
 - 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -14807,7 +14876,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="slovenia-passport-number"></a>斯洛文尼亚护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟七个数字，无空格或分隔符
   
@@ -14821,7 +14890,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -14896,7 +14965,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字，无空格或分隔符
   
@@ -14908,7 +14977,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -14961,7 +15030,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="south-africa-identification-number"></a>南非标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 个数字（可能包含空格）
 
@@ -14976,7 +15045,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -15005,7 +15074,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="south-korea-resident-registration-number"></a>韩国居民注册号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 个数字（包含连字符）
 
@@ -15021,7 +15090,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -15059,7 +15128,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="spain-drivers-license-number"></a>西班牙驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字后跟一个字符
   
@@ -15072,7 +15141,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -15256,7 +15325,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字后跟一个字符
   
@@ -15270,7 +15339,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -15330,7 +15399,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="spain-passport-number"></a>西班牙护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字母和数字的八字符或九字符组合，无空格或分隔符
   
@@ -15420,7 +15489,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ## <a name="spain-social-security-number-ssn"></a>西班牙社会保险号码 (SSN) 
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11-12 个数字
 
@@ -15435,7 +15504,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -15480,7 +15549,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七个或八个数字以及指定模式中的一个或两个字母
   
@@ -15517,7 +15586,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -15584,7 +15653,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="sql-server-connection-string"></a>SQL Server连接字符串
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 字符串"用户 ID"、"用户 ID"、"uid"或"UserId"后跟以下模式中列出的字符和字符串。
 
@@ -15600,7 +15669,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -15635,7 +15704,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
- (请注意，从技术上说，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些) 
+此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。
 
 - 密码或 pwd 后跟 0-2 个空格、一个等号 (=) 、0-2 个空格和一个星号 (*) -OR-
 - 密码或 pwd 后跟：
@@ -15646,7 +15715,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (请注意，从技术上说，此敏感信息类型使用正则表达式（而不是关键字列表）标识这些) 
+此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。
 
 - contoso
 - fabrikam
@@ -15660,13 +15729,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="sweden-drivers-license-number"></a>瑞典驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
-包含连字符的十个数字
+10 个数字，包含连字符
   
 ### <a name="pattern"></a>模式
 
-包含连字符的十个数字：
+10 个数字，包含连字符：
   
 - 六个数字 
 - 连字符
@@ -15674,7 +15743,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -15835,7 +15904,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="sweden-national-id"></a>瑞典国家/身份证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个或 12 个数字和一个可选分隔符
 
@@ -15849,7 +15918,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -15899,7 +15968,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="sweden-passport-number"></a>瑞典护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八个数字
 
@@ -15909,7 +15978,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -15998,7 +16067,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 个数字和指定模式中的符号
   
@@ -16015,7 +16084,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     
 ### <a name="checksum"></a>校验和
 
-是
+支持
   
 ### <a name="definition"></a>定义
 
@@ -16074,7 +16143,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="swift-code"></a>SWIFT 代码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 四个字母后跟 5-31 个字母或数字
 
@@ -16089,7 +16158,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -16153,7 +16222,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位数字
 
@@ -16171,7 +16240,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -16221,7 +16290,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="taiwan-national-identification-number"></a>台湾国家/地区身份证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 一个字母 (英文) 后跟九个数字
 
@@ -16234,7 +16303,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -16281,7 +16350,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="taiwan-passport-number"></a>台湾护照号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 - 生物识别护照号码：九个数字
 - 非生物识别护照号码：九个数字
@@ -16296,7 +16365,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -16329,7 +16398,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>中国台湾居民证书 (ARC/TARC) 号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10 letters and digits
 
@@ -16341,7 +16410,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -16377,7 +16446,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="thai-population-identification-code"></a>泰语总体标识代码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 13 位数字
 
@@ -16389,7 +16458,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -16426,7 +16495,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ## <a name="turkish-national-identification-number"></a>土耳其国家标识号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 11 个数字
 
@@ -16436,7 +16505,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -16471,7 +16540,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="uk-drivers-license-number"></a>英国 driver's license number
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 特定格式的 18 个字母和数字组合
 
@@ -16486,7 +16555,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -16638,7 +16707,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
    
 ## <a name="uk-electoral-roll-number"></a>英国 roll roll number
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 两个字母后跟 1-4 个数字
 
@@ -16648,7 +16717,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -16680,7 +16749,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
    
 ## <a name="uk-national-health-service-number"></a>英国 national health service number
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 10-17 个数字，通过空格分隔 
 
@@ -16695,7 +16764,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-是
+支持
 
 ### <a name="definition"></a>定义
 
@@ -16746,9 +16815,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>英国 NINO 保险号码 (NINO) 
-此敏感信息类型实体包含在欧盟国家标识号敏感信息类型中。 它作为独立的敏感信息类型实体提供。
+此敏感信息类型实体包含在欧盟国家标识号敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 七个字符或九个字符，用空格或短划线分隔
 
@@ -16774,7 +16843,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -16831,7 +16900,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 不带空格和分隔符的 10 个数字
  
@@ -16842,7 +16911,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
   
 ### <a name="checksum"></a>校验和
 
-否
+不支持
   
 ### <a name="definition"></a>定义
 
@@ -16884,7 +16953,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="us-bank-account-number"></a>美国银行帐号
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 6-17 个数字
 
@@ -16894,7 +16963,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -16946,7 +17015,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="us-drivers-license-number"></a>美国驾驶证号码
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 取决于州
 
@@ -16958,7 +17027,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -17098,7 +17167,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>ITIN 中美国个人纳税 (标识号) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，以"9"开头，包含"7"或"8"作为第四个数字，可选格式为空格或短划线
 
@@ -17121,7 +17190,7 @@ unformatted：
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -17176,7 +17245,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="us-social-security-number-ssn"></a>SSN (美国社会保险) 
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字，可能采用格式化或无格式模式
 
@@ -17193,7 +17262,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 
 ### <a name="definition"></a>定义
@@ -17256,7 +17325,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
    
 ## <a name="us--uk-passport-number"></a>美国/英国 passport number
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字
 
@@ -17266,7 +17335,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -17329,7 +17398,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 九个数字
 
@@ -17339,7 +17408,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -17377,7 +17446,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 记录管理
 - Microsoft 云应用安全
 
-### <a name="format"></a>Format
+### <a name="format"></a>格式
 
 八字符字母数字模式
 
@@ -17389,7 +17458,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 

@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788975"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771221"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -119,7 +119,7 @@ ms.locfileid: "52788975"
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>使用安全中心向用户分配预设安全策略
 
-1. 在安全中心，转到电子邮件& **协作** \> **策略&规则** \> **威胁** 策略 \> **模板策略** 部分 \> **预设安全策略**。
+1. 在安全中心，转到电子邮件&**协作** \> **策略&规则** \> **威胁** 策略 \> **预设安全策略。**
 
 2. 在 **"标准保护"** 或 **"严格保护"下，** 单击"**编辑"。**
 

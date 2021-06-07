@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何使用"报告邮件"功能在Outlook中报告误报和漏报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 84a5b697f8a4b46cf79c542485bfafb396328f5c
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625109"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789239"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>在 Outlook 中报告误报和漏报
 
@@ -38,7 +38,10 @@ ms.locfileid: "52625109"
 
 - 为了获得最佳用户提交体验，请使用报告邮件外接程序或报告网络钓鱼外接程序。
 
-- 请注意，此外接程序适用于Outlook平台（Web、iOS、Android 和桌面版）中的加载项。
+  > [!IMPORTANT]
+  > 报告垃圾邮件或网络钓鱼的内置体验Outlook用户提交[策略](./user-submission.md)。 我们建议改为使用报告邮件外接程序或报告网络钓鱼外接程序。
+
+- 报告邮件外接程序和"报告网络钓鱼"外接程序适用于 web、iOS、Android 和桌面 Outlook 的所有平台 (Outlook、iOS、Android 和桌面) 。
 
 - 如果你是拥有多个邮箱Exchange Online管理员，请使用安全与合规&门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
@@ -54,29 +57,23 @@ ms.locfileid: "52625109"
 
 对于收件箱或其他任何电子邮件文件夹中的邮件（垃圾邮件除外），请使用以下方法报告垃圾邮件和网络钓鱼邮件：
 
-1. 单击 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中单击"报告邮件"，然后选择"**垃圾邮件**"或"网络钓鱼 **"。**
+1. 选择 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中选择"报告邮件"，然后选择"**垃圾邮件**"或"网络钓鱼 **"。**
 
-   > [!div class="mx-imgBorder"]
-   > ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
-
-   > [!div class="mx-imgBorder"]
-   > ![报告邮件 - 垃圾邮件和网络钓鱼](../../media/report-message-junk-phishing.png)
+   ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
+   
+   ![报告邮件 - 垃圾邮件和网络钓鱼](../../media/report-message-junk-phishing.png)
 
 2. 选定的邮件将发送给 Microsoft 进行分析，并：
-
    - 如果报告为垃圾邮件，则移动到"垃圾邮件"文件夹。
-
    - 如果报告为网络钓鱼，则将其删除。
 
 ### <a name="report-messages-that-are-not-junk"></a>报告非垃圾邮件
 
-1. 单击 **选定邮件** 右上角的"更多操作"省略号，单击下拉菜单中的"报告邮件"，然后单击"非 **垃圾邮件"。**
+1. 选择 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中选择"报告邮件"，然后选择"非 **垃圾邮件"。**
 
-   > [!div class="mx-imgBorder"]
-   > ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
-
-   > [!div class="mx-imgBorder"]
-   > ![报告邮件 - 非垃圾邮件](../../media/report-message-not-junk.png)
+   ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
+   
+   ![报告邮件 - 非垃圾邮件](../../media/report-message-not-junk.png)
 
 2. 选定的邮件将被发送到 Microsoft 进行分析，并移动到收件箱或其他任何指定的文件夹。
 
@@ -85,5 +82,4 @@ ms.locfileid: "52625109"
 若要查看用户报告给 Microsoft 的邮件，可以使用以下选项：
 
 - 使用管理员提交门户。 有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。
-
 - 创建邮件流规则 (也称为传输规则) 传输规则，以发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看向 Microsoft 报告的用户](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

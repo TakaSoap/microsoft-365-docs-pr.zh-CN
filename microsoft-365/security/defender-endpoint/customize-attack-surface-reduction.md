@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769319"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782869"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -46,8 +46,14 @@ ms.locfileid: "52769319"
 
 你可以选择从攻击面减少规则评估中排除文件和文件夹。 排除后，即使攻击面减少规则检测到文件包含恶意行为，也不会阻止文件运行。
 
+例如，请考虑勒索软件规则：
+
+勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则会出错，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
+
+如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC (IOC) 的"允许列表"功能来取消阻止文件本身。  
+
 > [!WARNING]
-> 这可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
+> 排除或取消阻止文件或文件夹可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
 
 排除应用于允许排除的所有规则。 您可以为资源指定单个文件、文件夹路径或完全限定的域名。 但是，不能将排除限制到特定规则。
 
@@ -57,7 +63,7 @@ ms.locfileid: "52769319"
 如果在检测你认为不应检测到的文件的规则方面遇到问题，请使用审核模式 [测试规则](evaluate-attack-surface-reduction.md)。
 
 | 规则说明 | GUID |
-|:----|:----|:----|
+|:----|:----|
 | 阻止所有Office应用程序创建子进程 | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | 阻止执行可能混淆的脚本 | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | 从宏中阻止 Win32 API Office调用 | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
@@ -115,5 +121,5 @@ ms.locfileid: "52769319"
 
 * [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
 * [启用攻击面减少规则](enable-attack-surface-reduction.md)
-* [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
-* [关于减少攻击面的常见问题解答](attack-surface-reduction.md)
+* [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+* [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

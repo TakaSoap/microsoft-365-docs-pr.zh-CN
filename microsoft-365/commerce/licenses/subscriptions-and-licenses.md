@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 您收到的应用程序和服务取决于您购买Microsoft 365产品，例如Microsoft 365 商业应用版。
 ms.date: 07/01/2020
-ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582724"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779875"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解企业版Microsoft 365订阅和许可证
 
@@ -67,8 +67,6 @@ ms.locfileid: "52582724"
 - [创建共享邮箱](../../admin/email/create-a-shared-mailbox.md)
 - [从共享邮箱删除许可证](../../admin/email/remove-license-from-shared-mailbox.md)
 - [其他所有Exchange Online](/exchange/collaboration-exo/shared-mailboxes)计划的共享Microsoft 365邮箱。
-- [创建和管理会议室邮箱](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [管理设备邮箱](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## <a name="who-can-assign-licenses"></a>Who分配许可证？
 
