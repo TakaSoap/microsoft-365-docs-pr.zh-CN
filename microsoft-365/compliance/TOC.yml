@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: 查看审阅集中的文档
               href: view-documents-in-review-set.md
-            - name: 查询审阅集中的数据
+            - name: 查询和筛选审阅集中的内容
               href: review-set-search.md
             - name: 标记审阅集中的文档
               href: tagging-documents.md
