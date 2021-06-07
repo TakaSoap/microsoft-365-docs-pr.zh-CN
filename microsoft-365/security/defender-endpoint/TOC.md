@@ -288,6 +288,9 @@
 ##### [使用 PowerShell cmdlet 管理 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [使用 Windows Management所 （WMI） 管理 Microsoft Defender 防病毒软件](use-wmi-microsoft-defender-antivirus.md)
 ##### [使用 mpcmdrun.exe 工具管理 Microsoft Defender 防病毒软件](command-line-arguments-microsoft-defender-antivirus.md)
+##### [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
+##### [指定用户是否可以本地修改 Microsoft Defender 防病毒软件策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [指定用户能否查看或与 Microsoft Defender 防病毒软件用户界面进行交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [部署并报告 Microsoft Defender 防病毒软件](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [部署和启用 Microsoft Defender 防病毒软件](deploy-microsoft-defender-antivirus.md)
@@ -480,10 +483,10 @@
 ####### [获取警报相关用户信息](get-alert-related-user-info.md)
 
 ###### [漏洞和安全配置评估]()
-####### [导出评估方法和属性](get-assessmnt-1methods-properties.md)
-####### [导出安全配置评估](get-assessmnt-secure-cfg.md)
-####### [导出软件库存评估](get-assessmnt-software-inventory.md)
-####### [导出软件漏洞评估](get-assessmnt-software-vulnerabilities.md)
+####### [导出评估方法和属性](get-assessment-methods-properties.md)
+####### [导出安全配置评估](get-assessment-secure-config.md)
+####### [导出软件库存评估](get-assessment-software-inventory.md)
+####### [导出软件漏洞评估](get-assessment-software-vulnerabilities.md)
 
 ###### [自动调查]()
 ####### [调查方法和属性](investigation.md)
