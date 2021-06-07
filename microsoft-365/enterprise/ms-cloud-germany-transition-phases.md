@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云迁移到德国 microsoft 云 (到德国新数据中心) Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771197"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796038"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -36,7 +36,7 @@ ms.locfileid: "52771197"
 > [!NOTE]
 > Azure 服务的迁移不是本文档的一部分。 有关该信息，请参阅 Azure [德国的迁移指南](/azure/germany/germany-migration-main)。
 
-|步骤|期限|负责方|说明|
+|步骤|期限|负责方|Description|
 |:--------|:--------|:--------|:--------|
 |Opt-In|工作时间|客户|选择你的组织加入迁移。|
 |预工作|天|客户|完成为迁移准备用户、工作站和网络所需的工作。|
@@ -50,8 +50,7 @@ ms.locfileid: "52771197"
 |Power BI & Dynamics 365|15 天以上|Microsoft|迁移Power BI Dynamics 365 内容。|
 |完成 Azure AD|1-2 天|Microsoft|将租户完全转换到全球。|
 |Clean-Up|1-2 天|客户|清理与德国 Microsoft 云的旧连接，例如 Active Directory 联合身份验证服务 (AD FS) 信赖方信任、Azure AD 连接 和 Office 客户端重新启动。|
-|终结点已禁用|30 天|Microsoft|Azure AD 完成 30 天后，德国 Microsoft 云 Azure AD 服务将停止对已转换组织的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 |
-
+|终结点已禁用|30 天|Microsoft|Azure AD 完成 30 天后，德国 Microsoft 云 Azure AD 服务将停止对已转换组织的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 在链接到德国 Microsoft 云服务Office 365实例中运行 Azure 工作负载的客户稍后将移至最终迁移阶段。 |
 
 阶段及其操作可确保将关键数据和体验迁移到 Office 365 全局服务。 将租户添加到迁移队列后，每个工作负载都将作为在后端服务上执行的一组步骤完成。 某些工作负载可能需要管理员或 (用户) ，或者迁移可能会影响执行和在如何组织迁移中讨论的阶段的 [使用情况？](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -61,7 +60,7 @@ ms.locfileid: "52771197"
 
 适用于：在 Microsoft 云德国 (MCD) 中托管 Office 365 租户的所有客户未经同意Office 365无法迁移 MCD 中托管的 Office 365 租户。
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-----|:-------|
 |**客户任务**：授予迁移许可| 客户同意迁移，以便 Microsoft 获得迁移数据和服务以及安排数据和服务到全局服务实例Office 365的权利。 有两种方法 <ol><li>租户Office 365管理员选择加入 Microsoft 驱动的迁移。 </li><li> 客户在 2020 年 5 月 1 日Office 365 MCD 租户中续订了任何订阅。 Microsoft 每月向这些客户通知迁移时间，等待 30 天，让客户有机会取消迁移，然后直接选择加入。</li></ol> | <ul><li>租户标记为已同意迁移，管理中心将显示确认。 </li><li>Acknowledgment 将张贴到Office 365消息中心。 服务配置从德国 Microsoft 云终结点继续。 </li><li> </li></ul>
 |**租户管理员**：监视邮件|租户管理员必须监视Office 365消息中心，以从此时开始更新迁移阶段状态。|客户可以实时执行必要的任务。
@@ -105,7 +104,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 不会迁移德国 Microsoft 云合作伙伴租户。 云解决方案提供商客户将被迁移到Office 365合作伙伴的新 Office 365 服务租户下的服务。 客户迁移后，合作伙伴只能从 Office 365服务租户管理此客户。
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-------|:-------|
 | 订阅已转移| Microsoft 云德国订阅将迁移到相应的全球Office 365服务订阅。 <ul><li>该Office 365的全局服务服务由 Microsoft (也称为产品/服务 _映射) 。_</li><li> 在Office 365 Microsoft 云德国订阅的 Office 365 全局实例中购买相应的全局服务订阅。</li><li>完成时，将从 Office 365 服务租户中删除德国旧版 Microsoft 云订阅。</li></ul>| <ul><li>更改现有订阅将 (例如，在此阶段不会更改新订阅) 席位计数。</li><li>许可证分配更改将被阻止。</li><li>订阅迁移完成后，Office 365 服务和德国 Microsoft 云订阅都将在 Office 365 Admin 门户中可见，状态为"Microsoft 云德国订阅已取消预配 _"。_ </li><li>依赖德国 Microsoft 云订阅或 SKU GUID 的任何客户流程都将中断，并且需要根据 Office 365 服务产品进行修改。 </li><li>Office 365 服务中的新订阅将在新术语 (monthly/quarterly/year) 中购买，客户将收到 Microsoft 云德国订阅未使用余额的按比例退款。 </li></ul> |
 |重新分配许可证|已分配有德国 Microsoft 云许可证的用户将在全局实例中Office 365许可证。|<ul><li>用户将被重新分配到新服务订阅Office 365许可证。 所有用户的用户许可证将自动分配给新功能。</li><li>由德国 (提供) 计划Office 365的功能数可能大于原始 Microsoft 云德国产品/服务计划中的功能数。 服务中的Office 365许可证将等效分配给类似的 Microsoft 云德国功能 (服务计划) 。 </li></ul> 
@@ -124,7 +123,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 如果您仍在使用 SharePoint 2013 工作流，请限制 SharePoint Online 迁移期间使用 SharePoint 2013 工作流。
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-----|:-------|
 | SharePoint和OneDrive转换 | SharePoint联机和OneDrive for Business在此阶段从德国 Microsoft 云Office 365全球服务。<br><ul><li>保留现有的德国 Microsoft 云 URL (例如 `contoso.sharepoint.de` ，) 。</li><li>保留现有网站。</li><li>由德国 Microsoft 云或 Office 365 全局服务实例中的安全令牌服务 (STS) 颁发的客户端身份验证令牌在转换期间有效。</li></ul>|<ul><li>迁移期间，内容将在两个短暂时段内为只读。 在此期间，预期"你无法编辑内容"横幅在SharePoint。</li><li>不会保留搜索索引，可能需要 10 天才能重建。</li><li>SharePoint联机OneDrive for Business内容在迁移期间将保持只读状态两小段时间。 在此期间，用户将短暂看到"你无法编辑内容"横幅。</li><li>完成 SharePoint Online 迁移后，SharePoint Online 和 OneDrive for Business 内容的搜索结果可能在重建索引时不可用。 在此期间，搜索查询可能不会返回完整结果。 重建索引完成时，依赖搜索索引的功能（如 SharePoint Online News）可能会受到影响。</li><li>SharePoint 2013 工作流将在迁移过程中中断，并且必须在迁移后重新发布。</li></ul>
 |**SPO 管理员**：重新发布SharePoint 2013 工作流| SharePoint Online 管理员在迁移SharePoint重新发布 SharePoint 2013 工作流。|SharePoint 2013 工作流可用。
@@ -136,6 +135,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 - 如果您的组织仍使用 SharePoint 2010 工作流，则它们在 2021 年 12 月 31 日之后将不再工作。 SharePoint 2013 工作流仍受支持，尽管新租户默认从 2020 年 11 月 1 日开始关闭。 迁移到 SharePoint Online 服务后，我们建议你移动到Power Automate或其他支持的解决方案。
  - 其 SharePoint Online 实例尚未迁移的德国 Microsoft 云客户需要留在 SharePoint Online PowerShell 模块/Microsoft.SharePointOnline.CSOM 版本 16.0.20616.12000 或以下。 否则，SharePoint PowerShell 或客户端对象模型连接到联机连接将失败。
 - 在此阶段中，URL 后面的 IP SharePoint将会更改。 转换到 Office 365 全局服务后，保留的租户 URL (例如，和) 的地址将更改为全球 Microsoft 365 URL 和 IP 地址范围 (SharePoint Online 和 `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) ](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)。
+- 尽管SharePoint和OneDrive服务已转换，Office Online 可能无法如期工作。 
 
 > [!NOTE]
 > 如果使用电子数据展示，请确保了解电子 [数据展示迁移体验](ms-cloud-germany-transition-add-scc.md)。
@@ -254,9 +254,9 @@ Microsoft Teams Azure AD 的功能。 虽然 Azure AD 的迁移尚未完成，�
 
 使用 Dynamics 365 的客户需要额外的参与，以独立迁移组织的 Dynamics 组织。
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-------|:-------|
-| Microsoft Dynamics 资源 | 使用 Microsoft Dynamics 的客户将参与 Microsoft 工程或 Microsoft FastTrack，以将 Microsoft Dynamics 365 转换为Office 365全局服务实例。* |<ul><li>迁移后，管理员验证组织。 <</li><li>管理员在必要时修改工作流。 </li><li>管理员会在适当时清除 AdminOnly 模式。</li><li>管理员根据情况从 _沙_ 盒更改组织类型</li><li>通知最终用户新 URL 以访问组织 (实例) 。</li><li>将任何入站连接更新到新的终结点 URL。 </li><li>在转换期间，用户无法使用 Dynamics 服务。 </li><li>用户需要在每个组织迁移后验证组织运行状况和功能。</li></ul>|
+| Microsoft Dynamics 资源 | 使用 Microsoft Dynamics 的客户将参与 Microsoft 工程或 Microsoft FastTrack，以将 Microsoft Dynamics 365 转换为Office 365全局服务实例。* |<ul><li>迁移后，管理员验证组织。 </li><li>管理员在必要时修改工作流。 </li><li>管理员会在适当时清除 AdminOnly 模式。</li><li>管理员根据情况从 _沙_ 盒更改组织类型</li><li>通知最终用户新 URL 以访问组织 (实例) 。</li><li>将任何入站连接更新到新的终结点 URL。 </li><li>在转换期间，用户无法使用 Dynamics 服务。 </li><li>用户需要在每个组织迁移后验证组织运行状况和功能。</li></ul>|
 ||||
 
 \* () Microsoft Dynamics 365 的客户必须按照提供的迁移过程定义，在此迁移方案中采取措施。  (ii) 客户采取操作失败意味着 Microsoft 无法完成迁移。  (iii) 当 Microsoft 因客户的不作为无法完成迁移时，客户的订阅将于 2021 年 10 月 29 日到期。
@@ -265,7 +265,7 @@ Microsoft Teams Azure AD 的功能。 虽然 Azure AD 的迁移尚未完成，�
 
 **适用于：** 使用 Microsoft PBI Power BI (客户) 
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-------|:-------|
 | 迁移Power BI资源 | 使用 Microsoft Power BI (PBI) 的客户将在手动触发现有 PBI 迁移工具以将 Power BI 转换为 Office 365 全球服务实例后，由 Microsoft 工程或 Microsoft FastTrack 参与。\*\* |<ul><li>以下Power BI项目 _将不会_ 转换，并且必须重新创建它们：<</li><li>实时数据集 (，例如流式处理或推送) 。 </li><li>Power BI本地数据网关配置和数据源。 </li><li>基于实时数据集构建的报告在迁移后将不可用，并且需要重新创建。 </li><li>Power BI期间，用户将无法使用这些服务。 服务的不可用时间不应超过 24 小时。</li><li>迁移后，用户需要使用 Power BI 服务重新配置数据源及其本地数据网关。  在执行此操作之前，用户将无法使用这些数据源来针对这些数据源执行计划刷新和/或直接查询。 </li><li>无法迁移容量和高级工作区。 客户需要在迁移之前删除所有容量，在迁移后重新创建它们。 将工作区移回所需的容量。</li></ul>  |
 ||||
@@ -309,7 +309,7 @@ Office 365"德国"地区的租户要求所有用户在租户迁移到达阶段 9
 
 Microsoft Azure租户完成到全球的迁移后（第 9 阶段) ，客户必须按照 Azure 迁移操作手册中所述的步骤转换其[Azure](/azure/germany/germany-migration-main) (工作负载。  
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-------|:-------|
 | 更新用户终结点 | 确保所有用户使用正确的 Microsoft 全球终结点访问服务 |迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。  |
 | 更新 Azure AD 应用程序终结点 | 必须将应用程序的身份验证、Azure Active Directory (Azure AD) Graph 和 MS Graph更新为 Microsoft Worldwide 服务的终结点。 | 迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。 |
@@ -319,7 +319,7 @@ Microsoft Azure租户完成到全球的迁移后（第 9 阶段) ，客户必须
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 **适用于：** 所有客户使用 Azure AD 连接同步标识
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 (步骤)  | Description | 影响 |
 |:-------|:-------|:-------|
 | 更新 Azure AD 连接。 | 完成到 Azure AD 的剪切后，组织将完全Office 365服务，并且不再连接到德国 Microsoft 云。 此时，客户需要确保增量同步过程已完成，此后，在注册表路径 中将字符串值从 3 (Microsoft 云德国) 更改为 `AzureInstance` `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 0。 | 更改 注册表 `AzureInstance` 项 的值。 如果不这样做，将导致在 Microsoft 云德国终结点不再可用后对象无法同步。 |
 |||||

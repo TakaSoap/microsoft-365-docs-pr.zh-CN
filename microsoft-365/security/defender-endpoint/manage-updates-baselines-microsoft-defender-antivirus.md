@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 06/04/2021
-ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789179"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795978"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -80,7 +80,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 我们的所有更新都包含 
 - 性能改进;
 - 可服务性改进;和 
-- 集成改进 (云，Microsoft 365 Defender) 。
+- 集成改进 (云[，Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。
 <br/>
 <details>
 <summary> 2021 年 5 月 (平台：4.18.2105.4 |引擎：1.1.18200.4) </summary>
@@ -92,7 +92,8 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 &ensp;支持阶段： **安全和关键更新**
     
 ### <a name="whats-new"></a>最近更新
-- 对行为监视的改进 
+- 对行为 [监视的改进](client-behavioral-blocking.md) 
+- 修复 [了网络保护](network-protection.md) 通知筛选功能
 
 ### <a name="known-issues"></a>已知问题
 无已知问题  

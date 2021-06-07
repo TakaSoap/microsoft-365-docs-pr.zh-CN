@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: 了解购买 Microsoft 产品或服务时注册号码和审查不足的通知。
 ms.date: 03/17/2021
-ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332218"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795966"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>关于注册号码和审核通知
 
@@ -86,7 +86,7 @@ ms.locfileid: "52332218"
 | **波兰**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 税务标识号<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – 波兰语 (波兰语 Powszechny Elektroniczny 系统 Ewidencji Ludnonyci（用于注册总体身份证的通用电子系统）)  |  |  |  |  |
 | **Russia（俄罗斯）**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – 俄语"Individualiy Nomer Nalogoplatelshika" (的税务标识号)  |  |  |  |  |
 | **沙特阿拉伯** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – 税务标识号 |  |  |  |  |
-| **南非** | TRN – 流量注册号 |  |  |  |  |
+| **南非** | TRN - 税务参考号 |  |  |  |  |
 | **南苏丹** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |  |  |  |  |
 | **Tajikistan（塔吉克斯坦）**  | INN – 税务标识号<br>EIN – 雇主标识号<br>KPP – 这是反映组织注册原因的代码。 |  |  |  |  |
 | **泰国** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – 税务标识号 |  |  |  |  |

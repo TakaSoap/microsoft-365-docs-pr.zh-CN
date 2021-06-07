@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 了解如何在 Microsoft Viva 中搜索主题。
-ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301712"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795990"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
 
@@ -55,8 +55,5 @@ Word、PowerPoint、Outlook 和 Excel 中的搜索结果还将在找到主题答
 - 对于通常搜索"旅行"的用户，在"旅行"上创建一个主题，该主题包含他们希望看到的信息。 请考虑在主题的说明中添加指向 Concur 外部站点的链接。 如果链接改为指向托管在 Microsoft 365 租户上的内部旅行预订网站，你可以将其添加到"固定资源"。
  
 ### <a name="search-results-priority"></a>搜索结果优先级 
- 
-在用户搜索体验中，当用户搜索类似"旅行"的字词时，搜索结果将在 Microsoft 搜索中按以下优先级显示
-1. 已发布或已确认的主题 
-2. 书签
-3. 建议的主题
+
+在用户的搜索体验中，当用户搜索"travel"等字词时，如果书签可用，书签将显示在主题的前面。

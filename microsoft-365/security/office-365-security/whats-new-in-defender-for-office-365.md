@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4bb1450790883deec295f554ddf9614c0f01fe2d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930479"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796062"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -41,6 +41,12 @@ ms.locfileid: "51930479"
 观看[此视频](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)了解更多信息。
 > [!TIP]
 > 还没有 Microsoft Defender for Office 365？ [联系销售人员以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
+
+## <a name="aprilmay-2021"></a>2021 年 4 月/5 月 
+
+- [电子邮件实体页面](mdo-email-entity-page.md)：电子邮件的统一 360 度视图，包含有关威胁、身份验证和检测、触发详细信息以及全新的电子邮件预览体验的丰富信息。
+- [Office 365 API：](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)更新 EmailEvents (RecordType 28) 添加传递操作、原始和最新的传递位置以及更新的检测详细信息。
+- [适用于防御者的威胁Office 365：](/microsoft-365/security/defender/threat-analytics)查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员有关正在进行的活动的广泛报告。 
 
 ## <a name="februarymarch-2021"></a>2021 年 2 月/3 月 
 

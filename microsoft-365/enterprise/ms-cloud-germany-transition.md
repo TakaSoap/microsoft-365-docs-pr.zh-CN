@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346300"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796002"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到Office 365新的德国数据中心区域提供服务
 
@@ -64,7 +64,7 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 此图显示了迁移到新的德国数据中心的十个阶段。
 
-![迁移到新德国数据中心的十个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+:::image type="content" alt-text="迁移到新德国数据中心的十个阶段" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 当你选择加入迁移 [时，这些阶段将开始](./ms-cloud-germany-migration-opt-in.md)。 大多数迁移阶段都是作为后端服务操作执行的，所需的客户交互最少，并且执行后一个阶段。 其他客户引导任务的开始和整体迁移状态将在迁移过程中通过 Microsoft 365 管理中心的消息中心进行通信。 任务示例可能包括客户管理的 DNS 更新、针对混合客户的混合Exchange重新配置或 Azure 迁移。
 
@@ -180,10 +180,10 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 23. Office 网页版
 24. Planner
 25. Sway
-26. Microsoft 365 应用
+26. Microsoft 365 应用版
 27. Outlook Mobile
 28. 企业移动性 + 安全性 (E3) E3 (Azure AD 高级版 P1、Intune 和 Rights Management Service) 
-29. Yammer Enterprise
+29. Yammer 企业版
 30. Microsoft Forms
 31. Power Automate Office 365
 32. Power Virtual Agents Office 365
@@ -201,7 +201,7 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 
 如果你只是 Azure 客户，你现在可以开始 [将](/azure/germany/germany-migration-main) Azure 资源迁移到另一区域。 
 
-如果你有带 Office 365、Dynamics 365 或 Power BI 的 Azure，则必须先按照迁移过程操作，以确保成功迁移 AzureAD，然后再开始自定向 Azure 迁移。 必须在服务关闭之前完成 Azure 迁移，才能使用 AzureAD 维护 Azure 工作负载，Office 365组织。
+如果你有带 Office 365、Dynamics 365 或 Power BI 的 Azure，则必须首先遵循 Office 365 服务的迁移过程，以确保成功迁移 Azure AD，然后才能开始自动定向 Azure 迁移。 完成租户迁移之前，必须完成 Azure 迁移，才能使用 Azure AD 和 azure Office 365维护 Azure 工作负载。 有关 [其他详细信息，](ms-cloud-germany-transition-phases.md) 请参阅德国 Microsoft 云迁移的迁移阶段操作和影响。
 
 **Office 365**
 
@@ -213,7 +213,7 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>我使用的服务Office 365价格会发生变化吗？
 
-是的。 Microsoft 全球&#39;区域的定价 (包括新的数据中心区域) 通常较低。
+是。 Microsoft 全球&#39;区域的定价 (包括新的数据中心区域) 通常较低。
 
 ### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>在订阅迁移过程中，哪些 SKUS 和许可证将应用于我的组织和用户？
 
@@ -303,7 +303,7 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>哪些客户受迁移Azure Active Directory影响？ 
 
-所有 Office365 客户都Azure Active Directory验证和存储 Microsoft 托管服务操作所需的关键服务组件。 
+所有客户Office 365都Azure Active Directory验证和存储 Microsoft 托管服务操作所需的关键服务组件。 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>迁移对Azure Active Directory的影响？
@@ -330,7 +330,7 @@ Microsoft 管理的 IP 范围和 DNS 区域在迁移到全局服务期间进行�
 
 ### <a name="will-outlook-for-ios-and-android-work-after-the-migration"></a>迁移Outlook适用于 iOS 和 Android 的 IOS 和 Android 版本会正常工作吗？ 
 
-是的。 Microsoft 的建议是，所有客户都运行最新可用版本的 Office 客户端，Outlook适用于 iOS 和 Android 客户端的客户端。 迁移到 Office 365 全局服务后，所有 Office 客户端都需要注销并重新登录，才能从全局服务Azure Active Directory新的 Azure Active Directory 访问令牌。 
+是。 Microsoft 的建议是，所有客户都运行最新可用版本的 Office 客户端，Outlook适用于 iOS 和 Android 客户端的客户端。 迁移到 Office 365 全局服务后，所有 Office 客户端都需要注销并重新登录，才能从全局服务Azure Active Directory新的 Azure Active Directory 访问令牌。 
 
 
 
