@@ -380,7 +380,7 @@ ms.locfileid: "51445682"
 7. <span data-ttu-id="5b55d-599">若要导入要添加到策略的用户列表，请选择" **导入** .csv（逗号分隔值）文件。</span><span class="sxs-lookup"><span data-stu-id="5b55d-599">To import a list of users to add to the policies, select **Import** to import a .csv (comma-separated values) file.</span></span> <span data-ttu-id="5b55d-600">该文件必须采用以下格式，并且您必须在文件中列出用户主体名称：</span><span class="sxs-lookup"><span data-stu-id="5b55d-600">The file must be in the following format and you must list the user principal names in the file:</span></span>
 
     ```csv
-    user principal name
+    用户主体名称
     user1@domain.com
     user2@domain.com
     ```
