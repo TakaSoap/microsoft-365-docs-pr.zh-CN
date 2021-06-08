@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635922"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809043"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -39,7 +39,7 @@ ms.locfileid: "52635922"
 
 1. 在管理中心中，转到"设置 \> **组织** 设置"页面，然后选择"组织 **配置文件"** 选项卡。
 
-2. 在"**组织配置文件"** 选项卡上，选择"**组织主题"。**
+2. 在"**组织配置文件"** 选项卡上，选择"**自定义主题"。**
 
 可以使用以下选项卡自定义所有主题。
 
@@ -109,7 +109,7 @@ ms.locfileid: "52635922"
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>我的组织已有一个针对所有员工的主题。 这将如何更改？
 

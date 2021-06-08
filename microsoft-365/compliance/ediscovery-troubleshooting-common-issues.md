@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060987"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809115"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -89,6 +89,20 @@ ms.locfileid: "52060987"
 1. 检查搜索中标识的位置，以确保文件的位置正确无误，并添加到搜索位置。
 
 2. 使用 [Manually request crawling and re-indexing of a site， a library， or a list](/sharepoint/crawl-site-content) 中的过程对网站重新编制索引。
+
+## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>错误/问题：此文件未导出，因为它不再存在。 该文件包含在估计的搜索结果计数中，因为它仍在索引中列出。 文件最终将从索引中删除，并且将来不会引发错误。
+
+运行包括"联机"和"One Drive for Business"SharePoint电子数据展示搜索时可能会看到该错误。 电子数据展示依赖 SPO 索引来标识文件位置。 如果文件已删除，但 SPO 索引尚未更新，则可能会发生此错误。
+
+### <a name="resolution"></a>解决方案 
+打开 SPO 位置并验证此文件是否确实不存在。
+建议的解决方案是手动对网站重新索引，或等到自动后台进程对网站重新索引。
+
+
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>错误/问题：此搜索结果未下载，因为此搜索结果是一个无法自行下载的文件夹或其他项目，将下载文件夹或库内的任何项目。
+
+运行包括"联机"和"One Drive for Business"SharePoint电子数据展示搜索时可能会看到该错误。 这意味着我们将尝试导出索引中报告的项目，但它却变成一个文件夹，因此我们没有导出它。 如错误所述，我们不会导出文件夹项目，但会导出其内容。
+
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>错误/问题：搜索失败，因为未找到收件人
 

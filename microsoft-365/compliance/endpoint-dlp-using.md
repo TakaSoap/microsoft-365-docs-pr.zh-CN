@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259483"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809127"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -70,6 +70,9 @@ ms.locfileid: "52259483"
 > [!IMPORTANT]
 > 不包括可执行文件的路径，而仅包括可执行文件的名称（如 browser.exe）。
 
+### <a name="unallowed-bluetooth-apps"></a>不允许的蓝牙应用
+
+阻止用户通过特定蓝牙应用传输受你的策略保护的文件。
 
 ### <a name="browser-and-domain-restrictions"></a>浏览器和域限制
 限制与策略匹配的敏感文件与不受限制的云服务域共享。
@@ -97,6 +100,11 @@ ms.locfileid: "52259483"
 - 用户只能选择内置理由。
 - 用户只能输入自己的理由。
 
+### <a name="always-audit-file-activity-for-devices"></a>始终审核已载入设备的文件活动
+
+默认情况下，当设备载入后，将自动审核 Office、PDF 和 CSV 文件的活动，并可在活动资源管理器中审阅。 如果希望仅在活动策略中包含载入设备时审核此活动，请关闭此功能。
+
+将始终对已载入设备的文件活动进行审核，无论这些设备是否包括在活动策略中。
 
 ## <a name="tying-dlp-settings-together"></a>将 DLP 设置捆绑在一起
 

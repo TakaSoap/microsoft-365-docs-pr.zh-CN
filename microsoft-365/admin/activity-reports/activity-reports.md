@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530966"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52808995"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -33,7 +33,7 @@ ms.locfileid: "52530966"
   
 可查看最近 7 天、30 天、90 天和 180 天的报表。无法立即获得所有报表周期的数据。在 48 个小时内可获得报表。
   
-观看此视频，了解[概述：你可如何使用报表：
+## <a name="watch-act-on-a-usage-report-in-office-365"></a>监视：对 Office 365 中的使用情况报表进行操作
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -88,52 +88,30 @@ ms.locfileid: "52530966"
 - [Microsoft 浏览器使用状况](browser-usage-report.md) 
   
 - [电子邮件活动](email-activity-ww.md)
-
-- [适用于美国政府的电子邮件活动](email-activity.md)
     
 - [邮箱使用情况](mailbox-usage.md)
     
 - [Office 激活](microsoft-office-activations-ww.md)
 
-- [适用于美国政府的 Office 激活](microsoft-office-activations.md)
-
 - [活动用户](active-users-ww.md)
-
-- [适用于美国政府的活动用户](active-users.md)
   
 - [电子邮件应用使用情况](email-apps-usage-ww.md)
 
-- [适用于美国政府的电子邮件应用使用情况](email-apps-usage.md)
-
 - [表单活动](forms-activity-ww.md)
 
-- [适用于美国政府的表单活动](forms-activity.md)
-
 - [Dynamics 365 Customer Voice 活动](forms-pro-activity-ww.md)
-  
-- [适用于美国政府的 Dynamics 365 Customer Voice 活动](forms-pro-activity.md)
 
 - [Microsoft 365 组](office-365-groups-ww.md)
-
-- [适用于美国政府的 Microsoft 365 组](office-365-groups.md)
   
 - [OneDrive for Business 用户活动](onedrive-for-business-activity-ww.md)
 
-- [适用于美国政府的 OneDrive for Business 的用户活动](onedrive-for-business-activity.md)
-
 - [OneDrive for Business 使用情况](onedrive-for-business-usage-ww.md)
 
-- [适用于美国政府的 OneDrive for Business 的使用情况](onedrive-for-business-usage.md)
-
-- [Microsoft 365 应用版使用情况](microsoft365-apps-usage-ww.md)
+- [Microsoft 365 应用使用情况](microsoft365-apps-usage-ww.md)
   
 - [SharePoint 网站使用情况](sharepoint-site-usage-ww.md)
-
-- [适用于美国政府的 SharePoint 网站的使用情况](sharepoint-site-usage.md)
   
 - [SharePoint 活动](sharepoint-activity-ww.md)
-
-- [适用于美国政府的 SharePoint 的活动](sharepoint-activity.md)
   
 - [Skype for Business Online 活动](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -145,23 +123,13 @@ ms.locfileid: "52530966"
 
 - [Yammer 活动](yammer-activity-report-ww.md)
 
-- [适用于美国政府的 Yammer 的活动](yammer-activity-report.md)
-
 - [Yammer 设备使用情况](yammer-device-usage-report-ww.md)
-
-- [适用于美国政府的 Yammer 设备使用情况](yammer-device-usage-report.md)
 
 - [Yammer 组活动报告](yammer-groups-activity-report-ww.md)
 
-- [适用于美国政府的 Yammer 组活动报表](yammer-groups-activity-report.md)
-
 - [Microsoft Teams 用户活动](microsoft-teams-user-activity-preview.md)
 
-- [美国政府的 Microsoft Teams 用户活动](microsoft-teams-user-activity.md)
-
 - [Microsoft Teams 设备使用情况](microsoft-teams-device-usage-preview.md)
-
-- [美国政府的 Microsoft Teams 设备使用情况](microsoft-teams-device-usage.md)
 
 ## <a name="how-to-view-licensing-information"></a>如何查看许可信息
 
@@ -201,8 +169,6 @@ ms.locfileid: "52530966"
   
 ## <a name="related-content"></a>相关内容
 
-[安全 &amp; 合规中心提供的报告](../../compliance/reports-in-security-and-compliance.md)（文章）
-
-[Microsoft 365 使用情况分析](../usage-analytics/usage-analytics.md)（文章）
-
+[ 安全 &amp; 合规中心提供的报告 ](../../compliance/reports-in-security-and-compliance.md)（文章）\
+[Microsoft 365 使用情况分析](../usage-analytics/usage-analytics.md)（文章）\
 [自定义 Microsoft 365 使用情况分析中的报告](../usage-analytics/customize-reports.md)（文章）

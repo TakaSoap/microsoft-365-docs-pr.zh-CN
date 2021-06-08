@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 详细了解适用于 Android 的适用于由世纪互联运营的 Office 365 的 Microsoft Office 应用以及如何为中国客户下载该应用。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6cabe2e9769f7cebf9d128f78773f8014fd004e2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: HT
+ms.openlocfilehash: af66123ecee91e6c8f5ddd7cd1b441494ce8ca97
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644803"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809019"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>下载由世纪互联运营的 Android 版 Office 365 的 Office 应用
 
@@ -47,7 +47,6 @@ ms.locfileid: "48644803"
 从以下任何中国商店下载适用于 Android 手机的 Office 应用：
 - [百度](https://shouji.baidu.com/software/26842919.html)
 - [小米](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
-- [华为](https://appstore.huawei.com/app/C10888510)
 - [联想](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
 - [腾讯](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)

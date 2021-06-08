@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 设置远程工作的基础结构。
+title: 设置使用 Microsoft 365 实现混合工作的基础结构
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,27 +18,27 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
-description: 逐步设置基础结构层，以便远程工作人员能够安全地访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
+ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246316"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788849"
 ---
-# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>使用 Microsoft 365 设置远程工作的基础结构。
+# <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
-为了保护和优化远程工作者的生产力和协作，需要配置 IT 和云基础结构，以支持远程办公，并提供对组织内部和基于云的信息、工具和资源的访问。 此解决方案逐步部署关键的基础结构层，使员工随时随地高效工作。
+要保护并优化远程工作者的生产力和协作，你需要允许现场和远程工作者轻松、安全地访问组织内本地和基于云的信息、工具以及资源。 此解决方案会逐步完成基础设施关键层的部署，让工作者无论在哪里都能够高效工作。
 
-对于许多组织而言，允许员工在离开办公室时工作非常重要，这有助于：
+混合工作者可在以多个位置中进行现场或远程工作。 对于许多组织而言，允许工作者在传统办公室外工作非常重要，这有助于:
 
+- 聘用和保留不愿意移动位置或需要灵活工作环境的工作者。
+- 减少工作者通勤，让他们有更多时间实现高效工作并在工作外参与减压活动。
 - 节省办公空间。
-- 聘用并留住不愿意调动的员工。
-- 减少员工通勤，让他们有更多的时间来提高工作效率并在工作之外进行减压活动。
 
-Microsoft 365 提供了帮助员工远程工作的功能。
+Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
-![使用 Microsoft 365 为远程员工提供强大帮助](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![使用 Microsoft 365 助力混合工作者](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 >[!Note]
 >如果你第一次使用 Microsoft 365，请参阅 [的](https://www.microsoft.com/microsoft-365)。
@@ -49,11 +49,11 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-为让 IT 专业人员管理现场和基于云的基础结构，提高员工的工作效率，此解决方案提供了以下关键功能：
+对于管理现场和基于云的基础结构以提高混合工作者的生产力的 IT 专业人员，此解决方案提供了以下关键功能:
 
 - 已连接
 
-  远程员工能够随时随地访问： 
+  工作者能够随时随地访问: 
 
   - Microsoft 365 订阅中基于云的服务和数据。 
 
@@ -65,11 +65,11 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 - 托管
 
-  可以使用安全设置、允许的应用以及需要与系统运行状况保持一致的方式，从云中管理远程员工的设备。
+  可以使用安全设置和允许的应用从云中管理混合工作者的设备，并要求其符合系统运行状况。
 
 - 协作高效
 
-  远程员工可采用与本地相媲美的高协作方式实现高效工作，方式如下：
+  混合工作者可以以高度协作的方式和本地一样高效工作，方式如下:
 
   - 通过 Teams 进行的联机会议和聊天会话。 
 
@@ -79,9 +79,9 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
 
-![面向使用 Microsoft 365 的远程工作者的基本基础结构](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![面向使用 Microsoft 365 的混合工作者的基本基础结构](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-若要为远程工作者启用 Microsoft 365 的功能，请使用以下 Microsoft 365 功能。
+要为混合工作者启用 Microsoft 365 的功能，请使用以下 Microsoft 365 功能。
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
@@ -103,13 +103,13 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 有关安全和合规性条件，请参阅[针对远程工作者的部署安全性与合规性](empower-people-to-work-remotely-security-compliance.md)。
 
-<a name="poster"></a>有关此解决方案的两页摘要，请参阅[“为远程工作者助力”文章](../downloads/empower-remote-workers.pdf)。
+<a name="poster"></a> 有关此解决方案的两页摘要，请参阅 [“助力混合工作者”海报](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)。
 
-[![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+[![“助力混合工作者”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 或 [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
+你还可以以 [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) 格式下载海报，并将其打印在信件、法律文件或小报(11 x 17)大小的纸张上。
 
-## <a name="provide-remote-working-for-all-of-your-workers"></a>为所有工作者提供远程工作
+## <a name="provide-hybrid-working-for-all-of-your-workers"></a>为所有工作者提供混合工作
 
 使用以下设备，你可以使所有工作者随时随地保持生产力：
 
@@ -119,15 +119,15 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 ## <a name="next-steps"></a>后续步骤
 
-按照以下步骤保护和优化对组织的服务器和云服务的访问，并尽量提高远程工作者的工作效率。
+按照以下步骤保护并优化对组织的服务器和云服务的访问权限，并最大化混合工作者的生产力。
 
 1. [借助 MFA 提升登录安全性](empower-people-to-work-remotely-secure-sign-in.md)
 2. [提供对本地应用和服务的远程访问权限](empower-people-to-work-remotely-remote-access.md)
 3. [部署安全与合规服务](empower-people-to-work-remotely-security-compliance.md)
 4. [部署设备、电脑和其他终结点的终结点管理](empower-people-to-work-remotely-manage-endpoints.md)
-5. [部署远程工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
-6. [培训远程工作者和处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
+5. [部署混合工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
+6. [培训员工并处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![设置 Microsoft 365 远程办公基础结构的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![设置使用 Microsoft 365 实现混合工作的基础结构的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-若要了解虚构但具代表性的跨国组织如何为远程办公建立其基础设施，请参阅[Contoso 的 COVID-19 响应措施及其为远程和现场工作提供的基础设施](contoso-remote-onsite-work.md)。
+要了解虚构但具代表性的跨国组织如何为混合工作设置其基础设施，请参阅[Contoso 的 COVID-19 响应措施及混合工作的基础设施](contoso-remote-onsite-work.md)。

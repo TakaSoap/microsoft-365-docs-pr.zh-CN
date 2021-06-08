@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332722"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796050"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -48,7 +48,7 @@ ms.locfileid: "52332722"
 
 启用此设置以支持 Office 桌面应用共同创作之前，了解此操作对保存到 Office 文件并读取的标签元数据的更改非常重要。
 
-标签元数据包含标识租户和应用敏感度标签的信息。 此设置更改为 Word、Excel 和 PowerPoint 未加密文件的元数据格式和位置。 加密文件或电子邮件没有标记元数据的更改。
+标签元数据包含标识租户和应用敏感度标签的信息。 此设置所做的更改是 Word、Excel 和 PowerPoint 文件的元数据格式和位置。 你无需对加密文件或电子邮件采取任何操作；加密文件的元数据更改向后兼容，并且电子邮件没有任何变化。 但是，你需要注意加密文件的元数据更改，它们可以自动升级，但不向后兼容。
 
 此更改将影响新标签的文件和已标记的文件。 使用支持共同创作设置的应用和服务时：
 - 对于新标记的文件，仅将新格式和位置用于标签元数据。
