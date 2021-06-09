@@ -12,34 +12,34 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
-ms.openlocfilehash: 81d5fe34383453b187363b13c21ef47844948193
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636178"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841170"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
 
-当组织设置合同管理解决方案时，您需要一个中央位置，利益干系人可在其中审阅和管理合同。 为此，可以使用Microsoft Teams设置Teams通道[](https://docs.microsoft.com/microsoftteams/)，并使用 Teams 中的功能：
+当组织设置合同管理解决方案时，您需要一个中央位置，利益干系人可在其中审阅和管理合同。 为此，可以使用Microsoft Teams设置Teams通道[](/microsoftteams/)，并使用 Teams 中的功能：
 
 - **为利益干系人创建一个位置，以轻松查看需要操作的所有合同。** 例如，在Teams可以在"合同管理"频道中创建"合同"选项卡，成员可以在其中查看需要审批的所有合同的有用图块视图。 还可以配置视图，以便每个"卡"列出你关注的重要数据 (如客户、承包商和费用金额) 。   
 
      !["合同"选项卡。](../media/content-understanding/tile-view.png)
 
-- **为成员提供相互交互并查看重要事件的位置。** 例如，在Teams中，"帖子"选项卡可用于进行对话、获取更新以及查看 (，例如拒绝合同) 。 当发生某些 (如提交审批的新合同) ，"帖子"选项卡不仅可用于声明它，还可用于记录它。 如果成员订阅通知，则每当有更新时，他们将收到通知。 
+- **为成员提供相互交互并查看重要事件的位置。** 例如，在Teams中，"帖子"选项卡可用于进行对话、获取更新以及查看 (，例如拒绝合同) 。 当发生某些 (如提交审批的新合同) ，"帖子"选项卡不仅可用于声明它，还可用于记录它。 如果成员订阅通知，则每当有更新时，他们将收到通知。
 
-     !["帖子"选项卡。](../media/content-understanding/posts.png)</br> 
+     !["帖子"选项卡。](../media/content-understanding/posts.png)
 
-- **为成员提供一个位置来查看批准的合同，了解何时可以提交这些合同进行付款。** In Teams， you can create a <b>For Payment</b> channel that will list all contracts that will need to be submitted to payment. 可以轻松扩展此解决方案，将此信息直接写入第三方财务应用程序， (Dynamics CRM) 。
+- **为成员提供一个位置来查看批准的合同，了解何时可以提交这些合同进行付款。** In Teams， you can create a **For Payment** channel that will list all contracts that will need to be submitted to payment. 可以轻松扩展此解决方案，将此信息直接写入第三方财务应用程序， (Dynamics CRM) 。
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>将SharePoint文档库附加到"合同"选项卡 
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>将SharePoint文档库附加到"合同"选项卡
 
 在 **"合同管理**"频道中创建"合同"选项卡后，需要将SharePoint [文档库附加到该选项卡。](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) 要SharePoint的文档库是上一节中应用SharePoint文档理解模型的文档库。
 
 附加文档SharePoint后，您将能够通过默认列表视图查看任何已分类合同。
 
-   ![列表视图。](../media/content-understanding/list-view.png) 
+   ![列表视图。](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>自定义"合同"选项卡磁贴视图
 
@@ -54,7 +54,7 @@ ms.locfileid: "52636178"
 
 如果要在 Teams 频道中查看或更改视图的 JSON 代码，请在 Teams 频道中，选择视图下拉菜单，然后选择"设置当前视图的格式 **"。**
 
-   ![json 格式。](../media/content-understanding/jason-format.png) 
+   ![json 格式。](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>卡片大小和形状
 
@@ -81,7 +81,6 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
                       }
 ```
 
-
 ## <a name="contract-status"></a>合同状态
 
 以下代码允许你定义每个标题卡的状态。 请注意，"新建 ("、"正在审阅"、"已批准"和"已拒绝) 值将为每个状态值显示不同的颜色代码。   在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，查看定义状态的部分。
@@ -104,10 +103,9 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
               }
 ```
 
-
 ## <a name="extracted-fields"></a>提取的字段
 
-每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和费用) 。   此外，你还希望显示文件由用于标识它的SharePoint分类的时间/日期。 
+每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和费用) 。   此外，你还希望显示文件由用于标识它的SharePoint分类的时间/日期。
 
 在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，以下各节定义了其中每一部分。
 
@@ -159,7 +157,6 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
 },
 ```
 
-
 ### <a name="fee-amount"></a>费用金额
 
 此部分定义"费用金额"在卡上的显示方式，并使用特定合同的值。
@@ -183,8 +180,6 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
                         "txtContent": "[$FeeAmount]"
                       },
 ```
-
-
 
 ### <a name="classification-date"></a>分类日期
 

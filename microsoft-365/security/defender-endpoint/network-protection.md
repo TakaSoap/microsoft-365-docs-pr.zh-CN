@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b6b664d471e238e2feb1e1aedd100c1299fc5bbe
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861141"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844258"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -33,7 +33,7 @@ ms.locfileid: "51861141"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-网络保护有助于减少基于 Internet 的事件对设备的攻击面。 它防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 网络保护扩展[Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)以阻止所有尝试基于域或主机名连接到低信誉源 (的出站 HTTP () ) 。
+网络保护有助于减少基于 Internet 的事件对设备的攻击面。 它防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 网络保护扩展[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)以阻止所有尝试基于域或主机名连接到低信誉源 (的出站 HTTP () ) 。
 
 网络保护在 Windows版本 1709 Windows 10起受支持。 网络保护在其他操作系统上尚不受支持，但 Web 保护支持使用基于 Microsoft Edge 的新Chromium。 若要了解更多信息，请参阅 [Web 保护](web-protection-overview.md)。
 

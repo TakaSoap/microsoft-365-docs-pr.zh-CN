@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 1b769c1b3e4201802ea6150358568bf57894d305
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185799"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844030"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>解决订阅和门户访问问题
 
@@ -65,7 +65,7 @@ ms.locfileid: "51185799"
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>你无权访问门户
 
 如果收到"你无权访问门户"，请注意，Microsoft Defender for Endpoint 是一种安全监视、事件调查和响应产品，因此，对它的访问受到用户的限制和控制。
-有关详细信息，请参阅分配 [**对门户的用户访问权限**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
+有关详细信息，请参阅分配 [**对门户的用户访问权限**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)。
 
 ![未授权访问门户的图像](images/atp-not-authorized-to-access-portal.png)
 

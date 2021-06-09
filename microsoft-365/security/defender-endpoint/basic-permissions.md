@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb5762d2a9e4b62432aba6dacd1033ddc3c7daf2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163667"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844654"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本权限访问门户
 
@@ -47,14 +47,14 @@ ms.locfileid: "51163667"
 - 可读写 (完全访问权限) 
 - 只读访问
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 
 - 安装 Azure PowerShell。 有关详细信息，请参阅如何安装和配置[Azure PowerShell。](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
 
     > [!NOTE]
     > 需要在提升的命令行中运行 PowerShell cmdlet。
 
-- 连接文件Azure Active Directory。 有关详细信息，请参阅[连接-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
+- 连接文件Azure Active Directory。 有关详细信息，请参阅[连接-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
 
 **完全访问权限** <br>
 具有完全访问权限的用户可以登录、查看所有系统信息并解决警报、提交文件进行深入分析以及下载载入程序包。
@@ -79,11 +79,11 @@ ms.locfileid: "51163667"
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-有关详细信息，请参阅使用 Azure Active Directory 添加[或删除Azure Active Directory。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
+有关详细信息，请参阅使用 Azure Active Directory 添加[或删除Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>使用 Azure 门户分配用户访问权限
 
-有关详细信息，请参阅 Assign [administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+有关详细信息，请参阅 Assign [administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
 
 ## <a name="related-topic"></a>相关主题
 

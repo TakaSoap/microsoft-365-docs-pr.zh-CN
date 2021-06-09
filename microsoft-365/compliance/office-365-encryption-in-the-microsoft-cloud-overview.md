@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 本文概述了在 Microsoft 云中用于保护客户数据安全的各种形式的加密。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a351215b7773574d5932b936e30c5d5ca7aa116
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d05c904fc70d02d8694b8f2d3b451fd1d51dc91
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222277"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841290"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft 云中的加密
 
@@ -57,7 +57,7 @@ Microsoft 通过每个新版本的 Windows 操作系统验证云服务中使用�
 - [Azure 中的加密](office-365-azure-encryption.md)
 - [用于加密的 BitLocker 和 Distributed Key Manager (DKM)](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Office 365 服务加密](office-365-service-encryption.md)
-- [Office 365Skype for Business、OneDrive for Business、SharePoint Online 和 Exchange Online](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
+- [Office 365Skype for Business、OneDrive for Business、SharePoint Online 和 Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [传输中的数据的加密](/compliance/assurance/assurance-encryption-in-transit)
 - [客户管理的加密功能](office-365-customer-managed-encryption-features.md)
 - [加密风险和保护](office-365-encryption-risks-and-protections.md)

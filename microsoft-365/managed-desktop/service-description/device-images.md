@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245500"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841278"
 ---
 # <a name="device-images"></a>设备图像
 
@@ -79,13 +79,13 @@ HP 企业就绪映像附带的 HP 商业电脑包括 。用于恢复的 WIM 文�
 
 这些步骤将删除设备上的所有数据，因此在启动之前，你应该备份要保留的任何数据。
 
-1. 使用 WinPE[创建可启动 USB](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)驱动器。
+1. 使用 WinPE[创建可启动 USB](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)驱动器。
 2. 将这些文件从 C： \\ SOURCES 复制到 USB 驱动器：
     - 出厂恢复 WIM 文件 (例如 HP \_ EliteBook \_ 840 \_ G7 \_ 笔记本 \_ 电脑 CR \_ \_ 2004.wim) 
     - 部署。CMD
     - ReCreatePartitions.txt
 3. [将设备启动到 WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) USB 驱动器。
-4. 在命令提示符中， [ 运行 ](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references)Diskpart.exe。
+4. 在命令提示符中， [ 运行 ](/windows-server/administration/windows-commands/diskpart#additional-references)Diskpart.exe。
 5. 在 Diskpart 中，运行 ，然后记下主 `list disk` 存储磁盘 (，磁盘 0) 。
 6. 通过键入 退出 `exit` Diskpart。
 7. 在命令提示符中，运行 ，其中 sys_disk 是刚确定的主存储磁盘的磁盘号，recovery_wim是 的 `deploy.cmd <sys_disk> <recovery_wim>` 文件名。  你之前复制的 WIM 文件。

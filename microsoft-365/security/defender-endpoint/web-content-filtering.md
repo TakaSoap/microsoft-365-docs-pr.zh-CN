@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302060"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822318"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -61,11 +61,11 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 - Windows 10 企业版E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint 独立许可证。 
 - 访问 Microsoft Defender 安全中心 门户 (https://securitycenter.windows.com) 。
-- 运行 Windows 10 周年更新 (版本 1607) 或更高版本使用最新的 MoCAMP 更新。
+- 运行 Windows 10 周年更新 (版本 1607) 或更高版本，包含最新的 Microsoft Defender 反恶意软件引擎更新。
 
 ## <a name="data-handling"></a>数据处理
 
-我们将遵循你选择用作 Microsoft Defender 终结点数据处理设置的 [一部分的任何区域](data-storage-privacy.md)。 您的数据不会离开该区域中的数据中心。 此外，你的数据不会与任何第三方共享，包括我们的数据提供程序。
+数据存储在已选择作为 Microsoft Defender 终结点数据处理设置的[一部分的区域。](data-storage-privacy.md) 您的数据不会离开该区域中的数据中心。 此外，你的数据不会与任何第三方共享，包括我们的数据提供程序。
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
@@ -91,14 +91,10 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 5. 查看摘要并保存策略。 策略刷新可能需要 2 个小时才能应用到所选设备。
 
-> [!TIP]
-> 无需在设备组上选择任何类别即可部署策略。 此操作将创建仅审核策略，以帮助你在创建阻止策略之前了解用户行为。
-
->[!NOTE]
->如果同时删除策略或更改设备组，这可能会导致策略部署延迟。
-
->[!IMPORTANT]
->阻止"未分类"类别可能会导致意外和意外的结果。  
+> [!NOTE]
+> - 无需在设备组上选择任何类别即可部署策略。 此操作将创建仅审核策略，以帮助你在创建阻止策略之前了解用户行为。
+> - 如果同时删除策略或更改设备组，这可能会导致策略部署延迟。
+> - 阻止"未分类"类别可能会导致意外和意外的结果。  
 
 ### <a name="allow-specific-websites"></a>允许特定网站
 
@@ -120,7 +116,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web 内容筛选卡和详细信息
 
-选择 **"> Web 保护"** 以查看包含有关 Web 内容筛选和 Web 威胁防护信息的卡片。 以下卡片提供有关 Web 内容筛选的摘要信息。
+选择 **"**  >  **报告 Web 保护**"以查看包含有关 Web 内容筛选和 Web 威胁防护信息的卡片。 以下卡片提供有关 Web 内容筛选的摘要信息。
 
 ### <a name="web-activity-by-category"></a>按类别分类的 Web 活动
 
@@ -166,9 +162,4 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 - Web 内容筛选报告当前限制为显示前 5000 条记录。 例如，"域"报告最多只显示给定筛选器查询前 5000 个域（如果适用）。 
 
-## <a name="related-topics"></a>相关主题
 
-- [Web 保护功能概述](web-protection-overview.md)
-- [Web 威胁防护功能](web-threat-protection.md)
-- [监视 web 安全性](web-protection-monitoring.md)
-- [响应 web 威胁](web-protection-response.md)

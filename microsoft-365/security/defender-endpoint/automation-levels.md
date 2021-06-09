@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: ba206002415fcd4ae968cc88563136399b78f435
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6d453a8b6e5c4947c0fb03131c539b083227c28a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274770"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844642"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自动调查和修正功能中的自动化级别
 
@@ -52,7 +52,7 @@ ms.locfileid: "52274770"
 |**Semi - 需要批准任何修正** <br/> (也称为半自动化 *)*| 对于这种半自动化级别，任何 *修正操作都需要* 获得批准。 此类待定操作可在操作中心中查看和批准 [，位于](auto-investigation-action-center.md)"挂起 **"选项卡** 上。<br/><br/>*默认情况下，对于在 2020 年 8 月 16 日之前使用 Microsoft Defender for Endpoint 创建的租户（未定义任何设备组）选择此级别的半自动化。*|
 |**Semi - 需要批准核心文件夹修正** <br/> (一种 *半自动化)*  | 借助这种半自动化级别，需要批准对核心文件夹中的文件或可执行文件执行的任何修正操作。 核心文件夹包括操作系统目录，如 **Windows () 。** `\windows\*`<br/><br/>对于位于其他非核心文件夹或非核心文件夹中的文件 (可执行文件，) 操作。 <br/><br/>核心文件夹中文件或可执行文件的挂起操作可以在操作中心中查看和批准，位于"挂起 [](auto-investigation-action-center.md)**"** 选项卡上。 <br/><br/>可以在操作中心中的"历史记录"选项卡上查看对其他文件夹中的文件或可执行 **文件采取的** 操作。 [](auto-investigation-action-center.md) |
 |**Semi - 需要审批非临时文件夹修正** <br/> (一种 *半自动化)*| 借助这种半自动化级别，需要批准对不在临时文件夹中的文件或可执行 *文件执行所需的* 任何修正操作。 <br/><br/>临时文件夹可以包括以下示例： <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>可以自动对临时文件夹中的文件或可执行文件执行修正操作。 <br/><br/>对于不在临时文件夹中的文件或可执行文件的挂起操作，可以在操作中心中的"挂起"选项卡上查看 [](auto-investigation-action-center.md)**和** 批准。<br/><br/>可以在操作中心的"历史记录"选项卡上查看和批准对临时文件夹中的文件或可执行 **文件** 采取的操作 [](auto-investigation-action-center.md)。   |
-|**无自动响应** <br/> (也称为无 *自动化)* | 如果没有自动化，自动调查不会在组织的设备上运行。 因此，自动调查不会执行任何修正操作或挂起任何修正操作。 但是，其他威胁防护功能（如对[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)可能不需要的应用程序的保护）可能有效，具体取决于防病毒和下一代保护功能的配置方式。<br/><br/>***不建议 *使用* "无** 自动化"选项，因为这样可以减少组织设备的安全状况。 [请考虑将自动化级别设置为完全自动化 (或至少半自动化) ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)*。 |
+|**无自动响应** <br/> (也称为无 *自动化)* | 如果没有自动化，自动调查不会在组织的设备上运行。 因此，自动调查不会执行任何修正操作或挂起任何修正操作。 但是，其他威胁防护功能（如对[](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)可能不需要的应用程序的保护）可能有效，具体取决于防病毒和下一代保护功能的配置方式。<br/><br/>***不建议 *使用* "无** 自动化"选项，因为这样可以减少组织设备的安全状况。 [请考虑将自动化级别设置为完全自动化 (或至少半自动化) ](/microsoft-365/security/defender-endpoint/machine-groups)*。 |
 
 ## <a name="important-points-about-automation-levels"></a>有关自动化级别的要点
 
@@ -62,10 +62,10 @@ ms.locfileid: "52274770"
 
 - 如果安全团队已定义具有自动化级别的设备组，则推出的新默认设置不会更改这些设置。 
 
-- 你可以保留默认自动化设置，也可以根据组织需求更改这些设置。 若要更改设置， [请设置自动化级别](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)。
+- 你可以保留默认自动化设置，也可以根据组织需求更改这些设置。 若要更改设置， [请设置自动化级别](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)。
 
 ## <a name="next-steps"></a>后续步骤
 
 - [在 Microsoft Defender for Endpoint 中配置自动调查和修正功能](configure-automated-investigations-remediation.md)
 
-- [访问操作中心](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [访问操作中心](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

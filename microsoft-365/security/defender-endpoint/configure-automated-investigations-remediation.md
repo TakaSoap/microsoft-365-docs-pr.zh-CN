@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bd86458749db4019bb247a3664748b9891965754
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274540"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841326"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274540"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-如果你的组织使用[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) (Defender for Endpoint) ，自动调查和修正功能可以节省你的安全操作团队时间和精力。 [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) 如本 [博客文章所述](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)，这些功能模拟安全分析师调查和修正威胁的理想步骤。 [详细了解自动调查和修正](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations)。 
+如果你的组织使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/) (Defender for Endpoint) ，自动调查和修正功能可以节省你的安全操作团队时间和精力。 [](/microsoft-365/security/defender-endpoint/automated-investigations) 如本 [博客文章所述](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)，这些功能模拟安全分析师调查和修正威胁的理想步骤。 [详细了解自动调查和修正](/microsoft-365/security/defender-endpoint/automated-investigations)。 
 
 若要配置自动调查和修正，
 1. [打开功能](#turn-on-automated-investigation-and-remediation);和 
@@ -56,13 +56,13 @@ ms.locfileid: "52274540"
    - 为设备组指定名称和说明。
    - 在"**自动化级别"列表中**，选择一个级别，例如 **"完全 - 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
-   - 在 **"用户访问"**[选项卡上，Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
+   - 在 **"用户访问"**[选项卡上，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [访问操作中心以查看挂起和已完成的修正操作](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
-- [审阅和批准挂起的操作](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
+- [访问操作中心以查看挂起和已完成的修正操作](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [审阅和批准挂起的操作](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 ## <a name="see-also"></a>另请参阅
 

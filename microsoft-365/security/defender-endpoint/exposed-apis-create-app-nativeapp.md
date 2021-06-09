@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 876dddf7a68b9844dea6a30ff4ebbbe3c2b75b69
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769097"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844536"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>将 Microsoft Defender 用于终结点 API
 
@@ -44,7 +44,7 @@ ms.locfileid: "52769097"
 
 如果不确定需要哪种访问权限，请阅读" [简介"页](apis-intro.md)。
 
-Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 借助这些 API，你可以基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 借助这些 API，你可以基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
 - 创建 AAD 应用程序
@@ -122,7 +122,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 ## <a name="get-an-access-token"></a>获取访问令牌
 
-有关 AAD 令牌详细信息，请参阅 [Azure AD 教程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+有关 AAD 令牌详细信息，请参阅 [Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>使用 C#
 

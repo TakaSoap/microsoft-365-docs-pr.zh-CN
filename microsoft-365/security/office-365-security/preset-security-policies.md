@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771221"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822282"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -105,7 +105,7 @@ ms.locfileid: "52771221"
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365安全中心 <https://security.microsoft.com/> 。 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
+- 在 打开Microsoft 365安全中心 <https://security.microsoft.com> 。 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -119,7 +119,7 @@ ms.locfileid: "52771221"
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>使用安全中心向用户分配预设安全策略
 
-1. 在安全中心，转到电子邮件&**协作** \> **策略&规则** \> **威胁** 策略 \> **预设安全策略。**
+1. 在安全中心，转到电子邮件& **协作** \> **策略&规则** \> **威胁** 策略 \> **模板策略** 部分 \> **预设安全策略**。
 
 2. 在 **"标准保护"** 或 **"严格保护"下，** 单击"**编辑"。**
 

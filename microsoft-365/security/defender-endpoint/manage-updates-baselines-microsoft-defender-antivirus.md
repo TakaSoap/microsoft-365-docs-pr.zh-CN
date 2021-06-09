@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/07/2021
-ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.date: 06/08/2021
+ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809103"
+ms.locfileid: "52822270"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -110,6 +110,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 ### <a name="whats-new"></a>最近更新
 - 其他行为监视逻辑
 - 改进了内核模式键记录器检测
+- 添加了新控件来管理 Microsoft Defender 更新的逐步 [推出过程](updates.md)
 
 ### <a name="known-issues"></a>已知问题
 无已知问题  

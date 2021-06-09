@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c58d7d4192afd0aa13a5ffb0c7f3204b4eaf0315
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934737"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844402"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>配置和管理适用于终结点的 Microsoft Defender 功能
 
@@ -47,7 +47,7 @@ ms.locfileid: "51934737"
 :---|:---
 [配置Microsoft Defender 安全中心设置](preferences-setup.md) | 配置与门户相关的设置，如常规设置、高级功能或启用预览体验。
 [配置攻击面减少功能](configure-attack-surface-reduction.md) | 配置攻击面减少功能，以确保正确应用设置，并设置攻击缓解技术。
-[配置下一代保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 配置下一代保护，以捕获所有类型的新兴威胁。
+[配置下一代保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 配置下一代保护，以捕获所有类型的新兴威胁。
 [配置Microsoft 威胁专家功能](configure-microsoft-threat-experts.md) | 配置和管理来自安全中心的网络安全威胁Microsoft 威胁专家。
-[配置 Microsoft 365 Defender 集成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | 配置与 Defender for Endpoint 集成的其他解决方案。
-[管理和 API 支持](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | 将警报拉取到 SIEM 安全信息和事件 (SIEM) 或使用 API 创建自定义警报。 创建和生成Power BI报告。
+[配置 Microsoft 365 Defender 集成](/microsoft-365/security/defender-endpoint/threat-protection-integration) | 配置与 Defender for Endpoint 集成的其他解决方案。
+[管理和 API 支持](/microsoft-365/security/defender-endpoint/management-apis) | 将警报拉取到 SIEM 安全信息和事件 (SIEM) 或使用 API 创建自定义警报。 创建和生成Power BI报告。

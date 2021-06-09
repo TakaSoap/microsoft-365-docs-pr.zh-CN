@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e653ff84602a5e5546ef9a4c0aca2559b77e43c1
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7c1f768e69fa65c76529e641f095e13fc7ad67c8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683507"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841336"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
 
@@ -52,8 +52,8 @@ Microsoft 365数据丢失防护 | 应实施Microsoft 365数据丢失防护，以
  |
  --- | ---
 BitLocker驱动器加密 | BitLocker驱动器加密用于加密所有系统驱动器。 有关详细信息，请参阅BitLocker[驱动器加密。](/windows/security/information-protection/bitlocker/bitlocker-overview)
-Windows DefenderSystem Guard | 在启动时保护系统的完整性并验证系统完整性是否得到真正维护。 有关详细信息，请参阅Windows Defender [System Guard。]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
-Windows Defender Credential Guard | Windows Defender Credential Guard使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件才能访问它们。 有关详细信息，请参阅Windows Defender [System Guard。]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+Windows DefenderSystem Guard | 在启动时保护系统的完整性并验证系统完整性是否得到真正维护。 有关详细信息，请参阅Windows Defender [System Guard。](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+Windows Defender Credential Guard | Windows Defender Credential Guard使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件才能访问它们。 有关详细信息，请参阅Windows Defender [System Guard。](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 适用于终结点的 Microsoft Defender - 终结点检测和响应 | Microsoft 托管桌面安全操作响应警报，并采取操作以使用终结点检测和响应来修正威胁。 有关详细信息，请参阅 [Microsoft Defender for Endpoint - 终结点检测和响应](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)。
 Microsoft Defender for Endpoint - 威胁专家 | Microsoft 托管桌面目标攻击通知与威胁专家见解和数据集成。 在启用此服务之前，您必须提供额外同意。 有关详细信息，请参阅 [Microsoft Defender for Endpoint - 威胁专家](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
 Microsoft Defender for Endpoint - 威胁和漏洞管理 | 在服务计划中供将来Microsoft 托管桌面必需。 有关详细信息，请参阅 [Microsoft Defender for Endpoint - 威胁和漏洞管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)。
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint - 攻击面减少 | 攻击面减少针对经常�
 Microsoft Defender for Endpoint - Exploit Protection | 通过自动将攻击缓解技术应用于操作系统进程和应用，抵御使用攻击感染设备和传播的恶意软件。 有关详细信息，请参阅适用于终结点 [的 Microsoft Defender - Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)。
 Microsoft Defender for Endpoint - 网络保护 | 网络保护扩展了 Microsoft Defender SmartScreen以阻止所有尝试连接到低信誉源的出站 HTTP 和 HTTPS 流量。 有关详细信息，请参阅 [Microsoft Defender for Endpoint - 网络保护](/windows/security/threat-protection/microsoft-defender-atp/network-protection)。
 Microsoft Defender 防篡改保护 | Windows防篡改保护用于防止更改安全设置，如防病毒保护。 有关详细信息，请参阅 [Microsoft Defender 防篡改保护](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)。
-Microsoft Defender 防病毒基于行为的启发式实时防病毒保护 | 始终在扫描可能无法检测为恶意软件的文件和进程威胁。 有关详细信息，请参阅Microsoft Defender 防病毒[行为、启发式和实时防病毒保护]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。
+Microsoft Defender 防病毒基于行为的启发式实时防病毒保护 | 始终在扫描可能无法检测为恶意软件的文件和进程威胁。 有关详细信息，请参阅Microsoft Defender 防病毒[行为、启发式和实时防病毒保护](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。
 Microsoft Defender 防病毒云提供的保护 | 提供针对新威胁和新兴威胁的动态即时自动化保护。 有关详细信息，请参阅云Microsoft Defender 防病毒[保护。](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 Microsoft Defender"首次看到时阻止" | 在检测到可疑或未知文件时Windows检测并阻止新恶意软件。 有关详细信息，请参阅 [Microsoft Defender 首次看到时阻止](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。
 Microsoft Defender AV 可能不需要的应用程序 | 可能不需要的应用程序用于阻止可能导致计算机运行缓慢、显示意外广告的应用，或者最差情况下安装其他可能意外或不需要的软件的应用。 有关详细信息，请参阅 [Microsoft Defender AV 可能不需要的应用程序](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)。

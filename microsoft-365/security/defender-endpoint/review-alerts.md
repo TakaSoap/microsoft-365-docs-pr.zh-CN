@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b791f2b62cb4a3f8062c80ceeb04ccfa72f704bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054926"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844018"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>查看 Microsoft Defender for Endpoint 中的警报
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相
 
 1. **警报标题** 显示警报的名称，并提醒你哪个警报启动了当前调查，无论你在页面上选择了什么内容。
 2. [**受影响的资产**](#review-affected-assets) 列出了受此警报影响的设备和用户的卡片，可单击这些卡片了解详细信息和操作。
-3. 警报 **情景** 通过树视图显示与警报相关的所有实体。 当你首次登录所选警报的页面时，标题中的警报将是焦点。 警报情景中的实体可展开且可单击，通过允许您在警报页面上下文中立即采取措施来提供其他信息并加快响应速度。 使用警报情景开始调查。 在调查 [Microsoft Defender for Endpoint 中的警报中了解如何](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)操作。
+3. 警报 **情景** 通过树视图显示与警报相关的所有实体。 当你首次登录所选警报的页面时，标题中的警报将是焦点。 警报情景中的实体可展开且可单击，通过允许您在警报页面上下文中立即采取措施来提供其他信息并加快响应速度。 使用警报情景开始调查。 在调查 [Microsoft Defender for Endpoint 中的警报中了解如何](/microsoft-365/security/defender-endpoint/investigate-alerts)操作。
 4. 详细信息 **窗格** 将首先显示所选警报的详细信息，以及与此警报相关的详细信息和操作。 如果在警报情景中选择任何受影响的资产或实体，详细信息窗格将更改为提供所选对象的上下文信息和操作。
 
 记下警报的检测状态。 

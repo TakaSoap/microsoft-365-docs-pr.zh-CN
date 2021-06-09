@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809043"
+ms.locfileid: "52841302"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -82,20 +82,13 @@ ms.locfileid: "52809043"
 
 在 **"徽标"** 页上，您可以添加徽标，并指定用户在选择徽标时将导航到的 URL。
 
-- **默认徽标**：添加指向徽标的 URL 位置。 请确保 URL 使用 HTTPS，并且图像至少为 200 x 30 像素。 默认徽标可以是 JPG、PNG、GIF 或 SVG 格式。
+- **默认徽标**：添加指向徽标的 URL 位置。 确保 URL 使用 HTTPS。 如果要上载徽标，请确保它小于 10kb。 默认徽标可以是 JPG、PNG、GIF 或 SVG 格式。 对于 SVG 图像，它们的大小将调整为垂直调整为 24 像素。 JPG、PNG、GIF 图像将缩放为 200 x 48 像素。
 - **备用徽标**：添加指向徽标的 URL 位置。 应优化备用徽标，以用于Office主题。 与默认徽标的要求相同。
-- **小型默认徽标**：添加指向徽标的 URL 位置。 图像必须至少为 48 x 48 像素。 你可以缩放此图像，以便它适合较小的或移动设备上。
-- **小型备用徽标**：添加指向徽标的 URL 位置。 此图像具有与小型默认徽标相同的要求。
 - **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。
 
 选择“**保存**”以保存所做的更改。
 
 你随时都可以删除徽标。 只需返回到"**徽标"页** 并选择"删除 **"。**
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot： Logos tab showing default theme logo for your organization":::
-
-> [!NOTE]
-> 默认情况下，我们首先显示大多数组织使用的徽标选择。 To see all the logo selections， go to the bottom of the list and select **See advanced options**.
   
 ## <a name="colors-choose-theme-colors"></a>颜色：选择主题颜色
 

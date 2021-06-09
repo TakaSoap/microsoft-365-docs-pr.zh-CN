@@ -19,16 +19,16 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: cc806678bbb5ac19f7c4e035efb52b6ba7d1edb1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274840"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844906"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>访问操作中心以查看修正操作
 
-在自动调查期间和之后，将确定威胁检测的修正操作。 根据特定威胁和为组织配置 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) 如何，将自动执行一些修正操作，而其他一些需要审批。 如果你是组织的安全运营团队的一员，可以在操作中心中查看挂起和已完成的 **修正操作**。 [](manage-auto-investigation.md#remediation-actions) 
+在自动调查期间和之后，将确定威胁检测的修正操作。 根据特定威胁和为组织配置 [Microsoft Defender for Endpoint](/windows/security/threat-protection) 如何，将自动执行一些修正操作，而其他一些需要审批。 如果你是组织的安全运营团队的一员，可以在操作中心中查看挂起和已完成的 **修正操作**。 [](manage-auto-investigation.md#remediation-actions) 
 
 
 **适用于：**
@@ -46,7 +46,7 @@ ms.locfileid: "52274840"
 
 |新的统一操作中心  |以前的操作中心  |
 |---------|---------|
-|在一个位置列出设备和电子邮件的挂起和已完成操作 <br/> (Microsoft [Defender for Endpoint 和](microsoft-defender-endpoint.md) [Microsoft Defender for Office 365) ](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)|列出设备的挂起和已完成操作 <br/>  (Microsoft [Defender for Endpoint) ](microsoft-defender-endpoint.md)   |
+|在一个位置列出设备和电子邮件的挂起和已完成操作 <br/> (Microsoft [Defender for Endpoint 和](microsoft-defender-endpoint.md) [Microsoft Defender for Office 365) ](/microsoft-365/security/office-365-security/office-365-atp)|列出设备的挂起和已完成操作 <br/>  (Microsoft [Defender for Endpoint) ](microsoft-defender-endpoint.md)   |
 |位于：<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |位于：<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | 在安全Microsoft 365，选择"**操作中心"。** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航到安全中心Microsoft 365操作中心"::: | In the Microsoft Defender 安全中心， choose **Automated investigations**  >  **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="从导航到操作中心Microsoft Defender 安全中心":::  |
 
@@ -54,11 +54,11 @@ ms.locfileid: "52274840"
 
 如果您具有适当的权限以及以下一个或多个订阅，可以使用统一操作中心：
 - [适用于终结点的 Defender](microsoft-defender-endpoint.md)
-- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
+- [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) 
 
 > [!TIP]
-> 若要了解更多信息，请参阅 [要求](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)。
+> 若要了解更多信息，请参阅 [要求](/microsoft-365/security/mtp/prerequisites)。
 
 ## <a name="using-the-action-center"></a>使用操作中心
 

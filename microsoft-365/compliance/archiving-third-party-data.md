@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764107"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822149"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -86,7 +86,7 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> TeleMessage 提供的数据连接器。 您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档数据。 有关详细信息，请参阅本部分的分步说明中的先决条件数据类型。<br/><br/><sup>2</sup> 由用户提供的数据连接器。 您必须与 Microsoft 365 一起为组织设置其存档服务，然后才能将数据存档到 Microsoft 365 中。 有关详细信息，请参阅本部分的分步说明中的先决条件数据类型。
+> <sup>1</sup> TeleMessage 提供的数据连接器。 您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档数据。 有关详细信息，请参阅本部分的分步说明中的先决条件数据类型。 TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。 <br/><br/><sup>2</sup> 由用户提供的数据连接器。 您必须与 Microsoft 365 一起为组织设置其存档服务，然后才能将数据存档到 Microsoft 365 中。 有关详细信息，请参阅本部分的分步说明中的先决条件数据类型。
 
 上表中列出的第三方数据 (HR 数据和物理密码数据除外) 导入到用户邮箱中。 支持第三方数据的相应合规性解决方案将应用于存储数据的用户邮箱。
 
@@ -125,6 +125,22 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 ### <a name="insider-risk-management"></a>内部风险管理
 
 预览体验成员风险管理解决方案可以使用来自第三方数据的信号（如选择性 HR[](insider-risk-management.md)数据）来最大程度地降低内部风险，让你可以检测、调查和处理组织中存在风险的活动。 例如，HR 数据连接器导入的数据用作风险指示器，以帮助检测离职的员工数据盗窃。
+
+## <a name="data-connectors-in-the-us-government-cloud"></a>美国政府云中的数据连接器
+
+如前所述，TeleMessage 提供的数据连接器在美国政府云中可用。 下表指示支持每个 TeleMessage 数据连接器的特定政府环境。 有关美国政府云详细信息，请参阅 Microsoft 365[美国政府 。](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
+
+|TeleMessage 数据连接器  |GCC  |GCC 高  |DoD  |
+|:---------|:---------|:---------|:---------|
+|Android 存档器 | 是 | 否 | 否 |
+|AT&T 短信/MMS 网络存档器 | 是 | 否 | 否 |
+|Bell 短信/MMS 网络存档器 | 是 | 否 | 否 |
+|Enterprise数字存档器 | 是 | 否 | 否 |
+|O2 短信 和语音网络存档器 | 是         | 否 | 否 |
+|TELUS 短信 Network Archiver | 是 | 否 | 否 |
+|Verizon 短信/MMS 网络存档器 | 是 | 否 | 否 |
+|WhatsApp 存档程序 | 是 | 否 | 否 |
+|||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>与 Microsoft 合作伙伴合作存档第三方数据
 

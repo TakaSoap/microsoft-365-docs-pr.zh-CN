@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: 24f6bb636c702438be8ca9520c6523031f297410
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683759"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841158"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -31,7 +31,7 @@ ms.locfileid: "52683759"
 
 ## <a name="keyword-dictionary-limits"></a>关键字字典限制
 
-每个租户最多可以创建 50 种基于关键字字典的敏感信息类型。 要了解租户中有多少关键字词典，请使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)中的过程进行连接，以连接到租户并运行此 PowerShell 脚本。
+每个租户最多可以创建 50 种基于关键字字典的敏感信息类型。 要了解租户中有多少关键字词典，请使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)中的过程进行连接，以连接到租户并运行此 PowerShell 脚本。
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"

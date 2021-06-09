@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499936"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844210"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看和组织 Microsoft Defender 终结点事件队列
 
@@ -65,7 +65,7 @@ ms.locfileid: "51499936"
 ## <a name="assigned-to"></a>分配到
 可选择通过选择分配给任何人/分配给你的人来筛选列表。
 
-### <a name="category"></a>类别
+### <a name="category"></a>Category
 根据网络安全终止链所处于的阶段的说明对事件进行分类。 此视图可帮助威胁分析员根据上下文确定要部署的优先级、紧急程度和相应的响应策略。
 
 ### <a name="status"></a>状态
@@ -85,7 +85,7 @@ ms.locfileid: "51499936"
 
 
 ## <a name="see-also"></a>另请参阅
-- [事件队列](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [事件队列](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [管理事件](manage-incidents.md)
 - [调查事件](investigate-incidents.md)
 

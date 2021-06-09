@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6465be53de38872e3eb1d7b70dc3efbb9154aace
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934197"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844870"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -110,11 +110,11 @@ ms.locfileid: "51934197"
 
 错误代码十六进制 | 错误代码 Dec | Error Description | OMA-URI | 可能的原因和疑难解答步骤
 :---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | 修正失败 | 载入 <br> 载出 | **可能的原因：** 载入或载出在错误的 blob 上失败：签名错误或缺少 PreviousOrgIds 字段。 <br><br> **疑难解答步骤：** <br> 在"查看设备事件日志中的代理载入错误"部分检查[事件 ID。](#view-agent-onboarding-errors-in-the-device-event-log) <br><br> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows 10。](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+0x87D1FDE8 | -2016281112 | 修正失败 | 载入 <br> 载出 | **可能的原因：** 载入或载出在错误的 blob 上失败：签名错误或缺少 PreviousOrgIds 字段。 <br><br> **疑难解答步骤：** <br> 在"查看设备事件日志中的代理载入错误"部分检查[事件 ID。](#view-agent-onboarding-errors-in-the-device-event-log) <br><br> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
  | | | | 载入 <br> 载出 <br> SampleSharing | **可能的原因：** Microsoft Defender for Endpoint Policy 注册表项不存在，或者 OMA DM 客户端没有写入它的权限。 <br><br> **疑难解答步骤：** 确保存在以下注册表项： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> 如果不存在，请打开提升的命令并添加密钥。
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **可能的原因：** 尝试通过只读属性修正。 载入失败。 <br><br> **疑难解答步骤：** 查看解决设备上载入 [问题中的疑难解答步骤](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows 10。](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
- | | | | 所有 | **可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。 <br><br> 当前支持的平台：<br> Enterprise、教育以及Professional。<br> 不支持服务器。
- 0x87D101A9 | -2016345687 |SyncML (425) ：请求的命令失败，因为发件人没有足够的访问控制权限 (对收件人) ACL 权限。 | 所有 |  **可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。<br><br> 当前支持的平台：<br>  Enterprise、教育以及Professional。
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **可能的原因：** 尝试通过只读属性修正。 载入失败。 <br><br> **疑难解答步骤：** 查看解决设备上载入 [问题中的疑难解答步骤](#troubleshoot-onboarding-issues-on-the-device)。 <br><br> 检查下表中的 MDM 事件日志或按照诊断 MDM 故障中的说明操作[Windows 10。](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+ | | | | 全部 | **可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。 <br><br> 当前支持的平台：<br> Enterprise、教育以及Professional。<br> 不支持服务器。
+ 0x87D101A9 | -2016345687 |SyncML (425) ：请求的命令失败，因为发件人没有足够的访问控制权限 (对收件人) ACL 权限。 | 全部 |  **可能的原因：** 尝试在不支持的 SKU/平台上部署 Microsoft Defender for Endpoint，尤其是全息 SKU。<br><br> 当前支持的平台：<br>  Enterprise、教育以及Professional。
 
 #### <a name="known-issues-with-non-compliance"></a>不合规的已知问题
 
@@ -313,7 +313,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 - 检查 **事件**  >  **查看器应用程序和服务日志**  >  **操作管理器**，以查看是否有错误。
 
-- 在 **"** 服务"**中，Microsoft Monitoring Agent** 服务器是否在服务器上运行。 例如，
+- 在 **"** 服务"**中，Microsoft Monitoring Agent** 服务器是否在服务器上运行。 例如：
 
     ![服务的图像](images/atp-services.png)
 
@@ -335,7 +335,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 - 在此方案中，SENSE 服务不会自动启动，即使已部署载入包
 
 > [!NOTE]
-> 以下步骤仅在使用 Microsoft Endpoint Configuration Manager 时Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅[Microsoft Defender for Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
+> 以下步骤仅在使用 Microsoft Endpoint Configuration Manager 时Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 
 1. 在应用程序中创建Microsoft Endpoint Configuration Manager。
 

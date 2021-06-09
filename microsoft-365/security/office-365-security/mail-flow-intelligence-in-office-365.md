@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解使用连接器（也称为邮件流智能 (与邮件传递关联的错误) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb52e5865415440b3b2924a3ebcc96a7f8e17e5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44f2272c98f0c011c05cbe728e720f4d3180c09d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203786"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844666"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的邮件流智能
 
@@ -79,9 +79,7 @@ Microsoft 365连接器无法传递邮件时，将生成错误。 本文介绍了
     1. 在 EAC 中，转到"**邮件流** \> **""连接器"。**
 
     2. Select the connector with the **From** value **Office 365** and the **To** value **Your organization's email server** and do one of the following steps：
-
        - 通过单击"删除 **""删除"** ![ 图标删除连接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-
        - 通过单击"编辑 **编辑"** ![ 图标并 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 清除" **打开"来禁用连接器**。
 
   - 将与本地电子邮件环境Microsoft 365接受的域从"内部中继"更改为 **"权威"。**  有关说明，请参阅[管理 Exchange Online 中的接受Exchange Online。](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
@@ -95,13 +93,11 @@ Microsoft 365连接器无法传递邮件时，将生成错误。 本文介绍了
 通常，此错误意味着Microsoft 365已连接到目标电子邮件服务器，但服务器立即响应错误，或不符合连接要求。 错误详细信息将解释此问题。 例如：
 
 - 目标电子邮件服务器响应了"服务不可用"错误，指示服务器无法与 Microsoft 365。
-
 - 连接器配置为需要 TLS，但目标电子邮件服务器不支持 TLS。
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>如何修复错误代码 450 4.4.317？
 
 - 验证本地电子邮件服务器的 TLS 设置和证书，以及连接器上的 TLS 设置。
-
 - 如果错误来自你的合作伙伴组织 (例如，第三方云服务提供商) ，你需要联系你的合作伙伴来修复此问题。
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>错误代码：450 4.4.318 连接突然关闭
@@ -109,17 +105,13 @@ Microsoft 365连接器无法传递邮件时，将生成错误。 本文介绍了
 通常，此错误意味着Microsoft 365本地电子邮件环境通信时遇到困难，因此连接已中断。 导致此错误的可能原因包括：
 
 - 防火墙使用 SMTP 数据包检查规则，这些规则无法正常工作。
-
 - 本地电子邮件服务器无法正常运行 (例如，服务挂起、崩溃或系统资源不足) 从而导致服务器出现问题并关闭与 Microsoft 365 的连接。
-
 - 本地环境和本地环境之间存在网络Microsoft 365。
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>如何修复错误代码 450 4.4.318？
 
 - 了解适用于你的方案，并进行必要的更正。
-
 - 如果问题由本地环境和本地环境之间的网络Microsoft 365，请与网络团队联系以解决问题。
-
 - 如果错误来自你的合作伙伴组织 (例如，第三方云服务提供商) ，你需要联系你的合作伙伴来修复此问题。
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>错误代码：450 4.7.320 证书验证失败
@@ -127,15 +119,12 @@ Microsoft 365连接器无法传递邮件时，将生成错误。 本文介绍了
 通常，此错误意味着Microsoft 365验证目标电子邮件服务器的证书时遇到错误。 错误详细信息将解释此错误。 例如：
 
 - 证书已过期
-
 - 证书主题不匹配
-
 - 证书不再有效
 
 ### <a name="how-do-i-fix-error-code-450-47320"></a>如何修复错误代码 450 4.7.320？
 
 - 修复连接器上的证书或设置，以便可以传递Microsoft 365排队的邮件。
-
 - 如果错误来自你的合作伙伴组织 (例如，第三方云服务提供商) ，你需要联系你的合作伙伴来修复此问题。
 
 ## <a name="other-error-codes"></a>其他错误代码

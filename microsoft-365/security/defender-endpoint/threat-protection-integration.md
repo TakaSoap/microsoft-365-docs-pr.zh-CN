@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce8dbef2f4fb7c3503f04f15148d2071b449b2dc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935529"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844966"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -57,7 +57,7 @@ Microsoft Cloud App Security Microsoft Defender for Endpoint 终结点信号，�
 可疑活动是用户上下文中运行的进程。 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 之间的集成提供了跨活动和标识进行网络安全调查的灵活性。
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender for Office
-[Defender for Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。 
+[Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。 
 
 >[!NOTE]
 > Defender for Office 365显示最近 30 天内的事件数据。 对于警报，Defender for Office 365基于第一次活动时间显示数据。 此后，数据将不再在 Defender for Office 365。
@@ -68,11 +68,11 @@ Microsoft Cloud App Security Microsoft Defender for Endpoint 终结点信号，�
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 借助 Microsoft 365 Defender，Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。 
  
-[详细了解 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+[详细了解 Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
 
 
 ## <a name="related-topics"></a>相关主题
 - [配置集成和其他高级功能](advanced-features.md)
-- [Microsoft 365Defender 概述](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
-- [打开 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365Defender 概述](/microsoft-365/security/defender/microsoft-threat-protection)
+- [打开 Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
 - [使用条件访问保护用户、数据和设备](conditional-access.md)

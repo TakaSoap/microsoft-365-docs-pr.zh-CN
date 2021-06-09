@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f7e71c58396fd4b3ed40ba88aab5c2757ae41a41
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2b7375f04094cdb56b0801adf2c1c0b7a8ab3098
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771077"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844270"
 ---
 # <a name="list-software-inventory-api"></a>列出软件清单 API
 
@@ -99,5 +99,5 @@ GET https://api.securitycenter.microsoft.com/api/Software
 ```
 
 ## <a name="related-topics"></a>相关主题
-- [基于风险的威胁&漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [威胁&漏洞软件清单](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [基于风险的威胁&漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [威胁&漏洞软件清单](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

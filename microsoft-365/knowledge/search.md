@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 了解如何在 Microsoft Viva 中搜索主题。
-ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795990"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844727"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
 
@@ -23,7 +23,7 @@ ms.locfileid: "52795990"
 
 ## <a name="topic-answer"></a>主题答案
 
-在 Microsoft 搜索服务中搜索特定主题 (例如，"Saturn") ，如果主题存在且找到，它将以答案建议格式显示结果。
+在 Microsoft 搜索服务中搜索特定主题 (例如，"Saturn") ，如果主题存在且找到，它将以主题答案建议格式显示结果。
 
 主题答案将显示：
 - 主题名称
@@ -56,4 +56,4 @@ Word、PowerPoint、Outlook 和 Excel 中的搜索结果还将在找到主题答
  
 ### <a name="search-results-priority"></a>搜索结果优先级 
 
-在用户的搜索体验中，当用户搜索"travel"等字词时，如果书签可用，书签将显示在主题的前面。
+在用户的搜索体验中，当用户搜索"travel"等字词时，如果书签可用，则将显示书签来表示主题。

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809115"
+ms.locfileid: "52822234"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -226,7 +226,7 @@ ms.locfileid: "52809115"
 
 1. 请尝试使用另一个客户端/计算机进行下载。
 
-2. 使用 [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch] cmdlet 删除不再需要的旧搜索。
+2. 使用 [Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) cmdlet 删除不再需要的旧搜索。
 
 3. 确保下载到本地驱动器。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903294"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845074"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的事件
 
@@ -92,6 +92,6 @@ Microsoft Defender for Endpoint 将威胁信息聚合到事件中，以便你可
 ![事件详细信息的图像](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>相关主题
-- [事件队列](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [调查 Microsoft Defender for Endpoint 中的事件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [管理 Microsoft Defender 终结点事件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)
+- [事件队列](/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [调查 Microsoft Defender for Endpoint 中的事件](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [管理 Microsoft Defender 终结点事件](/microsoft-365/security/defender-endpoint/manage-incidents)

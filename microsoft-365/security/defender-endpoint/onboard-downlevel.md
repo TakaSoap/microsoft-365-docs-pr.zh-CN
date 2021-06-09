@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7ed7390f67747d176145bb051d8b1633a7146a23
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: d0cb4a3d01c1380f4fd06999c8f81a4054e2fd00
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730806"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844426"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>载入以前版本的 Windows
 
@@ -59,7 +59,7 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 若要启用此集成，需要执行以下步骤： 
 - 为客户端[安装 2017](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)年 1 月Endpoint Protection更新 
 - 将 SCEP 客户端云保护服务成员身份配置为 **高级** 设置
-- 配置网络以允许连接到 Microsoft Defender 防病毒 云。 有关详细信息，请参阅允许[连接到 Microsoft Defender 防病毒 云](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
+- 配置网络以允许连接到 Microsoft Defender 防病毒 云。 有关详细信息，请参阅允许[连接到 Microsoft Defender 防病毒 云](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>安装和配置 Microsoft Monitoring Agent (MMA) 以将传感器数据报告给 Microsoft Defender for Endpoint
 
@@ -90,10 +90,10 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
    - 复制工作区 ID 和工作区密钥
 
 3. 使用 Workspace ID 和 Workspace 密钥选择以下任一安装方法以安装代理：
-    - [使用安装程序 手动安装代理](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。 <br>
+    - [使用安装程序 手动安装代理](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。 <br>
       在"**代理设置选项**"页上 **，连接代理设置为 Azure Log Analytics (OMS)**
-    - [使用命令行 安装代理](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
-    - [使用脚本 配置代理](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
+    - [使用命令行 安装代理](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
+    - [使用脚本 配置代理](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
 
    > [!NOTE]
    > 如果你是美国政府客户，[](gov.md)在"Azure 云"下，如果使用安装向导，或者使用命令行或脚本，则需要选择"Azure 美国政府"，将"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE"参数设置为 1。
@@ -104,8 +104,8 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>配置代理和 Internet 连接设置
  
-- 每个Windows终结点必须能够使用 HTTPS 连接到 Internet。 此连接可以是直接的、使用代理的，也可以通过 [OMS 网关进行](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)。
-- 如果代理或防火墙默认阻止所有流量，并仅允许特定域通过或 HTTPS 扫描 (SSL 检查) 已启用，请确保启用对 Defender [for Endpoint 服务 URL 的访问](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+- 每个Windows终结点必须能够使用 HTTPS 连接到 Internet。 此连接可以是直接的、使用代理的，也可以通过 [OMS 网关进行](/azure/log-analytics/log-analytics-oms-gateway)。
+- 如果代理或防火墙默认阻止所有流量，并仅允许特定域通过或 HTTPS 扫描 (SSL 检查) 已启用，请确保启用对 Defender [for Endpoint 服务 URL 的访问](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 ## <a name="offboard-client-endpoints"></a>载出客户端终结点
 若要卸载，你可以从终结点卸载 MMA 代理或将其从报告分离到 Defender for Endpoint 工作区。 离开代理后，终结点将不再将传感器数据发送到 Defender for Endpoint。 

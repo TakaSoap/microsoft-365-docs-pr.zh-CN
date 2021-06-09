@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687407"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844150"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>解决 Microsoft Defender for Endpoint 实时响应问题
 
@@ -67,7 +67,7 @@ ms.locfileid: "51687407"
 2. 未 (Windows WpnService) 推送通知系统服务。
 
 请参阅以下文章，以完全了解 WpnService 服务行为和要求：
-- [Windows推送通知服务 (WNS) 概述](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise支持 WNS 流量的防火墙和代理配置](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows推送通知服务 (WNS) 概述](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise支持 WNS 流量的防火墙和代理配置](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft 推送通知服务 (MPNS) 公共 IP 范围](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

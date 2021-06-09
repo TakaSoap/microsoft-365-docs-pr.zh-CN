@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259663"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841362"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -61,7 +61,7 @@ Microsoft 托管桌面承担着管理注册的设备及其使用的 Microsoft �
 
 - **更新：** Microsoft 托管桌面可针对 Windows 10 质量和功能更新、驱动程序、固件、反病毒定义和 Microsoft 365 企业应用版更新，设置和管理 [部署组](../service-description/updates.md)的所有方面。 这包括对所有更新的广泛测试和验证，可确保注册的设备始终保持最新状态并最大限度地减少中断，从而将 IT 部门从这种持续的任务中解放出来。
 
-- **应用：** 作为 Microsoft 365 企业版的一部分，Microsoft 可为你提供（和管理）多个关键 Microsoft 应用。 但是你可能还拥有你的企业所需的其他应用。 Microsoft 可帮助通过 FastTrack [计划部署这些应用，而无需对 IT 部门](https://www.microsoft.com/FastTrack) 部署。 此外，Microsoft 的 [保证安全](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) 计划可以帮助解决迁移到最新版本产品时出现的任何应用兼容性问题。 有关详细信息，请参阅 [Microsoft 托管桌面中的应用](../get-ready/apps.md)。
+- **应用：** 作为 Microsoft 365 企业版的一部分，Microsoft 可为你提供（和管理）多个关键 Microsoft 应用。 但是你可能还拥有你的企业所需的其他应用。 Microsoft 可帮助通过 FastTrack [计划部署这些应用，而无需对 IT 部门](https://www.microsoft.com/FastTrack) 部署。 此外，Microsoft 的 [保证安全](/fasttrack/products-and-capabilities#app-assuree) 计划可以帮助解决迁移到最新版本产品时出现的任何应用兼容性问题。 有关详细信息，请参阅 [Microsoft 托管桌面中的应用](../get-ready/apps.md)。
 
 
 ## <a name="device-monitoring"></a>设备监视

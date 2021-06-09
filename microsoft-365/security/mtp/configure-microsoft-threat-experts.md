@@ -14,12 +14,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 38bf768f1a5603fa3da0d7a3acc8f409ed6372de
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 0ccb8482dae94de4a9f43a5ecaf7c701e6dd82a5
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765523"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844786"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>通过 Microsoft 威胁专家 Defender 配置和管理Microsoft 365功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "51765523"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知托管威胁搜寻服务的资格要求。
@@ -47,7 +47,7 @@ ms.locfileid: "51765523"
 
 1. 从导航窗格中，转到设置 >终结点>常规>高级> Microsoft 威胁专家 - 目标 **攻击通知。**
 
-2. 选择 **应用**。
+2. 选择“**应用**”。
 
     ![图像Microsoft 威胁专家设置](../../media/mte/mte-collaboratewithmte.png)
 
@@ -69,13 +69,13 @@ ms.locfileid: "51765523"
 
 - Microsoft 365 Defender 门户 **的事件** 页面
 - Microsoft 365 Defender 门户 **的警报** 仪表板
-- OData 警报 [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) 和 [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [高级搜寻中的 DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) 表
+- OData 警报 [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) 和 [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [高级搜寻中的 DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) 表
 - 如果你选择通过电子邮件将目标攻击通知发送给你的收件箱。 请参阅 [下面的创建电子邮件通知](#create-an-email-notification-rule) 规则。
 
 ### <a name="create-an-email-notification-rule"></a>创建电子邮件通知规则
 
-可以创建规则来发送通知收件人的电子邮件通知。 有关完整详细信息，请参阅  [配置警报通知](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) 以创建、编辑、删除或解决电子邮件通知问题。
+可以创建规则来发送通知收件人的电子邮件通知。 有关完整详细信息，请参阅  [配置警报通知](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) 以创建、编辑、删除或解决电子邮件通知问题。
 
 ## <a name="view-targeted-attack-notifications"></a>查看目标攻击通知
 

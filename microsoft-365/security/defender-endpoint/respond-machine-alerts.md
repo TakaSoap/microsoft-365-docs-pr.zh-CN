@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: aab9c191e590b0717a0f1be62ed88a699d3b5b57
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572389"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844038"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -61,7 +61,7 @@ ms.locfileid: "52572389"
 
 ## <a name="manage-tags"></a>管理标签
 
-添加或管理标记以创建逻辑组附属关系。 设备标记支持网络的正确映射，使您能够附加不同的标记以捕获上下文，并启用动态列表创建作为事件的一部分。
+添加或管理标记以创建逻辑组附属关系。 设备标记支持网络适当映射，可附加不同的标记以捕获上下文，并启用在事件过程中创建动态列表。
 
 有关设备标记详细信息，请参阅创建 [和管理设备标记](machine-tags.md)。
 
@@ -124,7 +124,7 @@ ms.locfileid: "52572389"
 
 >[!IMPORTANT]
 >- 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
->- Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+>- Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 选择"运行 **防病毒扫描**"之一，选择要快速或完整 (运行扫描类型) 在确认扫描之前添加注释。
 
@@ -134,7 +134,7 @@ ms.locfileid: "52572389"
 
 >[!NOTE]
 >使用 Defender for Endpoint 响应操作触发扫描时，Microsoft Defender 防病毒"ScanAvgCPULoadFactor"值仍然适用并限制扫描的 CPU 影响。<br> 如果未配置 ScanAvgCPULoadFactor，则默认值为扫描期间最大 CPU 负载的 50% 的限制。<br>
->有关详细信息，请参阅 [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
+>有关详细信息，请参阅 [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)。
 
 ## <a name="restrict-app-execution"></a>限制应用执行
 
@@ -143,7 +143,7 @@ ms.locfileid: "52572389"
 >[!IMPORTANT]
 > - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
 > - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
-> - 此操作需要满足应用程序Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+> - 此操作需要满足应用程序Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
 为了限制应用程序运行，应用了代码完整性策略，该策略只允许文件在由 Microsoft 颁发的证书签名时运行。 这种限制方法有助于防止攻击者控制受到威胁的设备，并执行进一步恶意活动。
 
@@ -191,7 +191,7 @@ ms.locfileid: "52572389"
 
 你可以咨询 Microsoft 威胁专家，了解有关可能受到威胁的设备或已受到威胁的设备的更多见解。 Microsoft 威胁专家可以直接在内部使用Microsoft Defender 安全中心及时准确的响应。 专家不仅提供有关潜在威胁设备的见解，而且还可以更好地了解复杂的威胁、你收到的目标攻击通知，或者你需要有关警报或你在门户仪表板上看到的威胁情报上下文详细信息。
 
-有关详细信息 [，请参阅咨询 Microsoft 威胁](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
+有关详细信息 [，请参阅咨询 Microsoft 威胁](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
 
 
 ## <a name="check-activity-details-in-action-center"></a>在操作中心检查活动详细信息
@@ -209,4 +209,4 @@ ms.locfileid: "52572389"
 
 ## <a name="related-topic"></a>相关主题
 - [对文件执行响应操作](respond-file-alerts.md)
-- [报告 inaccuracy](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [报告 inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

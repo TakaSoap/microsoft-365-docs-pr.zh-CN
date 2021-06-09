@@ -16,17 +16,17 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: 本文提供了针对全球用户和租户中国用户Microsoft 365性能的指导。
-ms.openlocfilehash: e330e892b584c805bded2228381e74e6a4fa615a
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: f48b552dec72d78e2429aedf6a3834dba6c7590a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615191"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844498"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365中国用户实现全局租户性能优化
 
->[!IMPORTANT]
->本指南特定于使用方案，在此方案中，Microsoft 365中国的企业用户连接到全局企业Microsoft 365 **租户**。 本指南不适用于 **由** 世纪Office 365中的租户。
+> [!IMPORTANT]
+> 本指南特定于使用方案，在此方案中，Microsoft 365中国的企业用户连接到全局企业Microsoft 365 **租户**。 本指南不适用于 **由** 世纪Office 365中的租户。
 
 对于具有全球 Microsoft 365 租户的企业以及中国的公司状态，Microsoft 365中国用户的客户端性能可能会因中国 Telco 的 Internet 体系结构的独特因素而变得复杂。
 
@@ -42,12 +42,12 @@ ms.locfileid: "51615191"
 
 许多具有全球Microsoft 365租户和用户的企业都实施了专用网络，这些专用网络承载了中国办事处地点和世界各地的办公楼地点之间的公司网络流量。 这些企业可以利用此网络基础结构避免跨边界网络拥塞，并优化其Microsoft 365中国服务性能。
 
->[!IMPORTANT]
->与所有专用 WAN 实施一样，您应始终咨询您国家/地区及/或地区的法规要求，以确保网络配置合规。
+> [!IMPORTANT]
+> 与所有专用 WAN 实施一样，您应始终咨询您国家/地区及/或地区的法规要求，以确保网络配置合规。
 
 作为第一步，必须遵循 Network [planning and performance tuning for Microsoft 365 中基准网络指南](./network-planning-and-performance.md)。 主要目标应该是避免在可能的情况下Microsoft 365 Internet 访问全球服务。
 
-- 利用现有专用网络，Microsoft 365中国以外公共 Internet 上的出口位置之间的网络通信。 中国以外的几乎任何位置都将提供明显的好处。 网络管理员可以进一步优化，方法为在具有低延迟互连的区域与 [Microsoft 全球网络相互连接](https://docs.microsoft.com/azure/networking/microsoft-global-network)。 例如，香港特别行政区、日本和韩国。
+- 利用现有专用网络，Microsoft 365中国以外公共 Internet 上的出口位置之间的网络通信。 中国以外的几乎任何位置都将提供明显的好处。 网络管理员可以进一步优化，方法为在具有低延迟互连的区域与 [Microsoft 全球网络相互连接](/azure/networking/microsoft-global-network)。 例如，香港特别行政区、日本和韩国。
 - 将用户设备配置为通过 VPN 连接访问企业网络，以允许Microsoft 365流量传输企业网络的专用链接。 确保 VPN 客户端未配置为使用拆分隧道，或者用户设备配置为忽略流量的拆分Microsoft 365。 有关优化媒体流量和实时Teams VPN 连接的其他信息，请参阅[本部分](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china)。
 - 将网络配置为通过专用Microsoft 365路由所有流量。 如果必须最大限度地减少专用链接上的流量，可以选择仅路由"优化"类别中的终结点，并允许对"允许"和"默认"终结点的请求传输Internet。  这将通过将优化流量限制到对高延迟和数据包丢失最敏感的关键服务来提高性能并最大程度减少带宽消耗。
 - 如果可能，请对实时媒体流通信使用 UDP 而不是 TCP，例如Teams。 UDP 提供比 TCP 更好的实时媒体流性能。
@@ -66,7 +66,7 @@ ms.locfileid: "51615191"
 - 如果Microsoft 365租户已配置音频会议功能，Teams用户可以通过公用电话交换网和 PSTN (加入) 。 有关详细信息，请参阅音频[会议Office 365。](/microsoftteams/audio-conferencing-in-office-365)
 - 如果用户遇到网络性能问题，他们应向 IT 部门报告疑难解答，如果怀疑遇到网络Microsoft 365问题，则上报给 Microsoft 支持部门。 并非所有问题都由跨边界网络性能导致。
 
-## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>优化Microsoft Teams中国用户的会议网络性能  
+## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>优化Microsoft Teams中国用户的会议网络性能
 
 对于具有全球 Microsoft 365 租户并在中国存在的组织，Microsoft 365中国用户的客户端性能可能会因中国 Internet 体系结构的独特因素而变得复杂。 许多公司和学校通过遵循此指南报告了良好结果。 但是，范围仅限于受 IT 网络设置控制的用户网络位置，例如，具有 VPN 连接的办公室位置或家庭/移动终结点。 Microsoft Teams呼叫和会议通常用于外部位置，例如家庭办公室、移动位置、路况和咖啡店。 由于通话和会议依赖于实时媒体流量，因此这些Teams体验对网络拥塞特别敏感。
 
@@ -79,16 +79,14 @@ ms.locfileid: "51615191"
 
 鉴于前面的指南考虑专用网络扩展以避免跨边界网络拥塞，需要考虑如何利用这些网络改进。 组织办公室网络有两个常规选项：
 
-1.  不执行任何新工作。 继续按照之前有关专用网络旁路的指导，以避免跨界拥塞。 Teams媒体流量将像以前一样利用此设置。
-2.  实现拆分/混合模式。 
-
-  - 对标记为优化的所有流量（会议Teams通话实时媒体流量除外）使用以前的指南。
-
-  - 通过Teams Internet 路由会议并呼叫实时媒体流量。 有关标识实时媒体网络流量的具体信息，请参阅以下信息。
+1. 不执行任何新工作。 继续按照之前有关专用网络旁路的指导，以避免跨界拥塞。 Teams媒体流量将像以前一样利用此设置。
+2. 实现拆分/混合模式。
+   - 对标记为优化的所有流量（会议Teams通话实时媒体流量除外）使用以前的指南。
+   - 通过Teams Internet 路由会议并呼叫实时媒体流量。 有关标识实时媒体网络流量的具体信息，请参阅以下信息。
 
 通过Teams Internet 发送实时媒体音频和视频流量（使用更高质量的连接）可节省大量成本，因为通过专用网络发送该流量是免费的，而不是付费。 如果用户还使用 SDWAN 或 VPN 客户端，则可能有类似的其他好处。 一般来说，某些组织可能还希望让更多数据遍历公共 Internet 连接。
 
-相同的选项可能适用于 SDWAN 或 VPN 配置。 例如，用户使用 SDWAN 或 VPN 将 Microsoft 365 流量路由到企业网络，然后利用该网络的专用分机以避免出现跨界拥塞。 现在，可以将用户的 SDWAN 或 VPN 配置为从 VPN 路由Teams会议流量和呼叫实时流量。 此 VPN 配置称为拆分隧道。 有关详细信息[，请参阅 VPN Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel)隧道。
+相同的选项可能适用于 SDWAN 或 VPN 配置。 例如，用户使用 SDWAN 或 VPN 将 Microsoft 365 流量路由到企业网络，然后利用该网络的专用分机以避免出现跨界拥塞。 现在，可以将用户的 SDWAN 或 VPN 配置为从 VPN 路由Teams会议流量和呼叫实时流量。 此 VPN 配置称为拆分隧道。 有关详细信息[，请参阅 VPN Office 365](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel)隧道。
 
 还可以继续将 SDWAN 或 VPN 用于所有Microsoft 365流量，包括Microsoft Teams流量。 Microsoft 没有关于使用 SDWAN 或 VPN 解决方案的建议。
 
@@ -100,9 +98,9 @@ ms.locfileid: "51615191"
 
 ### <a name="identifying-teams-real-time-media-network-traffic"></a>标识Teams实时媒体网络流量
 
-若要配置网络设备或 VPN/SDWAN 设置，只需排除Teams媒体音频和视频流量。 可以在 URL 和 IP 地址范围的官方列表上找到 ID 11 [Office 365流量详细信息](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)。 所有其他网络配置应保持不变。
+若要配置网络设备或 VPN/SDWAN 设置，只需排除Teams媒体音频和视频流量。 可以在 URL 和 IP 地址范围的官方列表上找到 ID 11 [Office 365流量详细信息](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams)。 所有其他网络配置应保持不变。
 
-Microsoft 一直在致力于Microsoft 365网络体系结构和特征范围内改进客户端的用户体验和性能。 访问[Office 365 网络技术Community]( https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)开始或加入对话、查找资源并提交功能请求和建议
+Microsoft 一直在致力于Microsoft 365网络体系结构和特征范围内改进客户端的用户体验和性能。 访问[Office 365 网络技术Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)开始或加入对话、查找资源并提交功能请求和建议
 
 ## <a name="related-topics"></a>相关主题
 

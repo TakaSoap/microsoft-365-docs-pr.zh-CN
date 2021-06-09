@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: d756c738f9f61638a9e7424aa3fdf639f8f02f2a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5a5a81bde283a9eba4d5db77ed7e4c0b7567abc9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185595"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844736"
 ---
 # <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security Defender for Endpoint 概述
 
@@ -38,7 +38,7 @@ ms.locfileid: "51185595"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (云应用安全) 是一个全面的解决方案，让你能够控制和限制对云应用的访问权限，同时强制执行对云中存储数据的合规性要求，从而了解云应用和服务。 有关详细信息，[请参阅云应用安全。](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+Microsoft Cloud App Security (云应用安全) 是一个全面的解决方案，让你能够控制和限制对云应用的访问权限，同时强制执行对云中存储数据的合规性要求，从而了解云应用和服务。 有关详细信息，[请参阅云应用安全。](/cloud-app-security/what-is-cloud-app-security)
 
 >[!NOTE]
 >此功能随 E5 许可证[提供，企业移动性 + 安全性](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)版本 1809 或Windows 10设备上使用。
@@ -58,7 +58,7 @@ Microsoft Cloud App Security (云应用安全) 是一个全面的解决方案，
 
 - 设备上下文 - 云流量日志缺少设备上下文。 Defender for Endpoint 网络活动通过设备上下文报告 (哪些设备访问了云应用) ，因此你能够准确了解 (设备) 网络活动的发生位置，以及执行网络活动的 () 用户。 
 
-有关云发现详细信息，请参阅 [使用发现的应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+有关云发现详细信息，请参阅 [使用发现的应用](/cloud-app-security/discovered-apps)。
 
 ## <a name="related-topic"></a>相关主题
 

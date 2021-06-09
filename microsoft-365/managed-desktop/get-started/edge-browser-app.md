@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 033826a7f82278f6e36b422284a1076cba57d584
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921974"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822246"
 ---
 # <a name="new-microsoft-edge-app"></a>新建Microsoft Edge应用
 
@@ -104,10 +104,10 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 **默认值：** 已禁用
 
-建议不要允许用户在设备上保存密码。
+默认情况下，密码管理器处于禁用状态。 如果你希望启用此功能，请提出支持请求，我们的服务工程师可以在你的环境中启用该设置。 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer模式Microsoft Edge
-Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并且对不依赖 IE 功能或依赖 IE 功能的网站使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎。 [了解更多] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并且对不依赖 IE 功能或依赖 IE 功能的网站使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎。 [了解更多](/DeployEdge/edge-ie-mode) 
 
 Microsoft 托管桌面为Internet Explorer启用设备模式 
 

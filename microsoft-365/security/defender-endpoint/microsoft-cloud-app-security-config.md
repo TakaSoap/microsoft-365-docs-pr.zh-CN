@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f5e2919ae3fcbbb443f6d160c68633ee3427ae5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4f7aca5cb532510d55042c70d04d65f2aa08baa3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187525"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844750"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>在Microsoft Cloud App Security Microsoft Defender for Endpoint 中配置策略
 
@@ -40,7 +40,7 @@ ms.locfileid: "51187525"
 >[!NOTE]
 >此功能将在运行[Windows 10](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上随 企业移动性 + 安全性 一起提供) 。 Windows 10，版本 1803 (OS 内部版本 17134.704，包含[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10、版本 1809 (OS 内部版本 17763.379（具有[KB4489899](https://support.microsoft.com/help/4489899)) 或更高版本 Windows 10 版本）。
 
-> 请参阅[Microsoft Defender for Endpoint integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/mde-integration) for Microsoft Defender for Endpoint with Microsoft Cloud App Security。 
+> 请参阅[Microsoft Defender for Endpoint integration with Microsoft Cloud App Security](/cloud-app-security/mde-integration) for Microsoft Defender for Endpoint with Microsoft Cloud App Security。 
 
 ## <a name="enable-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>启用Microsoft Cloud App Security在 Microsoft Defender for Endpoint 中启用
 
@@ -52,10 +52,10 @@ ms.locfileid: "51187525"
 
 ## <a name="view-the-data-collected"></a>查看收集的数据
 
-若要查看和访问 Microsoft Cloud Apps Security 中的 Microsoft Defender 终结点数据，请参阅调查 云应用安全 中的[设备](https://docs.microsoft.com/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security)。
+若要查看和访问 Microsoft Cloud Apps Security 中的 Microsoft Defender 终结点数据，请参阅调查 云应用安全 中的[设备](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security)。
 
 
-有关云发现详细信息，请参阅 [使用发现的应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+有关云发现详细信息，请参阅 [使用发现的应用](/cloud-app-security/discovered-apps)。
 
 如果你有兴趣尝试使用Microsoft Cloud App Security，请参阅Microsoft Cloud App Security[试用版](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)。
 

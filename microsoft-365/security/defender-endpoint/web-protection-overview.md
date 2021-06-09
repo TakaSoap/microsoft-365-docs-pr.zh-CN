@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688965"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844198"
 ---
 # <a name="web-protection"></a>Web 保护功能
 
@@ -53,7 +53,7 @@ Web 威胁防护包括：
 
 Web 内容筛选包括：
 - 阻止用户访问被阻止类别的网站，无论他们是在内部浏览还是离开
-- 可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，便捷地将各种策略部署到各种 [用户集](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac)
+- 可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，便捷地将各种策略部署到各种 [用户集](/microsoft-365/security/defender-endpoint/rbac)
 - 你可以访问位于相同中心位置的 Web 报告，并查看实际块和 Web 使用情况
 
 ## <a name="in-this-section"></a>本节内容

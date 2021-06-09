@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移电子数据展示迁移步骤。
-ms.openlocfilehash: 16da6e6d1994ae107b62ff1f915454568a35344d
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592129"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844246"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移期间电子数据展示体验的信息
 以下各节提供有关从德国 Microsoft 云 (德国 microsoft 云迁移到新的德国数据中心) Office 365服务时电子数据展示体验的其他信息。
@@ -35,20 +35,22 @@ ms.locfileid: "51592129"
 从阶段 4 开始到阶段 9 完成，电子数据展示搜索将失败或返回已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的 0 个结果。
 
 > [!NOTE]
-> 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例、保留、 [搜索](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)和 [导出](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。 但是，针对 SharePoint Online、OneDrive for Business 和Exchange Online迁移的位置的搜索将返回 0 个结果或产生错误。
+> 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例、保留、 [搜索](/microsoft-365/compliance/manage-legal-investigations)和 [导出](/microsoft-365/compliance/search-for-content)。 但是，针对 SharePoint Online、OneDrive for Business 和Exchange Online迁移的位置的搜索将返回 0 个结果或产生错误。
 
-如果搜索在迁移过程中返回零结果或错误，请对 SharePoint Online 执行以下操作： 
+如果搜索在迁移过程中返回零结果或错误，请对 SharePoint Online 执行以下操作：
+
 - 按照从 SharePoint 或 OneDrive for Business OneDrive 下载文件和文件夹中的说明，直接从 SharePoint Online 或 SharePoint[下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要SharePoint联机管理员权限或只读权限。
 - 如果超出限制，如从 OneDrive 或[SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹中介绍，客户可以按照将 SharePoint 和 Teams 文件与计算机同步中的指导使用 OneDrive for Business 同步[客户端](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)。
 
-- 有关详细信息，请参阅 就地电子数据展示[中的Exchange Server。](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery)
+- 有关详细信息，请参阅 就地电子数据展示[中的Exchange Server。](/Exchange/policy-and-compliance/ediscovery/ediscovery)
 
 
 ## <a name="ediscovery-administration-after-phase-9"></a>第 9 阶段之后电子数据展示管理
 
 **适用于：** 使用电子数据展示的所有客户
 
-在第 9 阶段，将完成移动到新的德国数据中心区域的最后步骤。 在此阶段，将迁移其余的所有服务组件。 在第 9 阶段之后，不再支持使用德国 Microsoft 云 (protection.office.de) 合规中心。 请改为使用新的[安全中心](https://security.microsoft.com/)[或合规中心](https://compliance.microsoft.com/)。 所有数据已迁移到新的管理门户。 
+在第 9 阶段，将完成移动到新的德国数据中心区域的最后步骤。 在此阶段，将迁移其余的所有服务组件。
+在第 9 阶段之后，不再支持使用德国 Microsoft 云 (protection.office.de) 合规中心。 请改为使用新的[安全中心](https://security.microsoft.com/)[或合规中心](https://compliance.microsoft.com/)。 所有数据已迁移到新的管理门户。
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9192662b8d4ed23a5903dddb555f07bf182ab17f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 0d44f59f69c590ecd8d61207de8784af3e32197d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771497"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844882"
 ---
 # <a name="advanced-hunting-using-powershell"></a>通过 PowerShell 高级搜寻
 
@@ -40,7 +40,7 @@ ms.locfileid: "52771497"
 
 在此部分中，我们将共享 PowerShell 示例以检索令牌并使用它运行查询。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 首先需要 [创建应用](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>准备说明
@@ -51,7 +51,7 @@ ms.locfileid: "52771497"
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
->有关详细信息，请参阅 [PowerShell 文档](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>有关详细信息，请参阅 [PowerShell 文档](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>获取令牌
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6529f0badd94d6ca4d95dfbb562a9d352fedb76a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2a442a642a71bd6bf3a52dbf3901c4367c2c10d8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935889"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844990"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>了解威胁分析中的分析员报告
 
@@ -70,7 +70,7 @@ _威胁分析报告的分析员报告部分_
 分析员报告还提供来自 Microsoft Defender 终结点防病毒的检测以及终结点检测和 _响应 (EDR) 功能_。
 
 ### <a name="antivirus-detections"></a>防病毒检测
-这些检测在已打开[Microsoft Defender 防病毒设备上可用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。 当这些检测发生在已载入到 Microsoft Defender for Endpoint 的设备上时，它们还会触发警报，以点亮报告中的图表。
+这些检测在已打开[Microsoft Defender 防病毒设备上可用](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。 当这些检测发生在已载入到 Microsoft Defender for Endpoint 的设备上时，它们还会触发警报，以点亮报告中的图表。
 
 >[!NOTE]
 >除特定于跟踪的威胁的组件或行为外，分析员报告还列出了可标识各种威胁的通用检测。 这些常规检测不会在图表中反映出来。

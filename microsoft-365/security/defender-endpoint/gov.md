@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0276f0464f898d3675e4cc1d6b69185e7e390a87
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 7956c1454cd7bd962eda984cc9d93be9824d7458
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572665"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822101"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -78,8 +78,8 @@ Windows 10版本 1909 ([KB4586819) ](https://support.microsoft.com/help/4586819)
 Windows 10版本 1903 ([KB4586819) ](https://support.microsoft.com/help/4586819) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 10版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10，版本 1709 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![是 ](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147)<br />注意： [已弃用，](/lifecycle/announcements/revised-end-of-service-windows-10-1709)请升级 | ![否](images/svg/check-no.svg)<br />注意：将不受支持
-Windows 10版本 1703 及更早版本 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![否](images/svg/check-no.svg)<br />注意：将不受支持
+Windows 10，版本 1709 | ![不支持](images/svg/check-no.svg)<br />注意：将不受支持 | ![是 ](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147)<br />注意： [已弃用，](/lifecycle/announcements/revised-end-of-service-windows-10-1709)请升级 | ![不支持](images/svg/check-no.svg)<br />注意：将不受支持
+Windows 10版本 1703 及更早版本 | ![不支持](images/svg/check-no.svg)<br />注意：将不受支持 | ![不支持](images/svg/check-no.svg)<br />注意：将不受支持 | ![不支持](images/svg/check-no.svg)<br />注意：将不受支持
 WindowsServer 2019 ([KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -90,8 +90,8 @@ Windows 7 SP1 Enterprise | ![是](images/svg/check-yes.svg) | ![是](images/svg/
 Windows 7 SP1 Pro | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Linux | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 macOS | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Android | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
-iOS | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
+Android | ![不支持](images/svg/check-no.svg) 工程积压工作 | ![不支持](images/svg/check-no.svg) 工程积压工作 | ![不支持](images/svg/check-no.svg) 工程积压工作
+iOS | ![不支持](images/svg/check-no.svg) 工程积压工作 | ![不支持](images/svg/check-no.svg) 工程积压工作 | ![不支持](images/svg/check-no.svg) 工程积压工作
 
 > [!NOTE]
 > 如果指定了修补程序，则必须在设备载入之前部署该修补程序，才能将适用于终结点的 Defender 配置为正确的环境。
@@ -104,7 +104,7 @@ iOS | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/che
 
 操作系统版本 | GCC | GCC 高 | DoD
 :---|:---|:---|:---
-Windows Server 2019 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
+Windows Server 2019 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -162,12 +162,12 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 功能名称 | GCC | GCC 高 | DoD
 :---|:---|:---|:---
 管理和 API：流式处理 API | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Web 内容筛选 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-集成：Azure Sentinel | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) 警报 <br /> ![否](images/svg/check-no.svg) 原始数据&事件：开发中 | ![是](images/svg/check-yes.svg) 警报 <br /> ![否](images/svg/check-no.svg) 原始数据&事件：开发中
-集成：Microsoft Cloud App Security | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-集成：Microsoft 合规性管理器 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-集成：Microsoft Defender for Identity | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-集成：Microsoft Endpoint DLP | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
+Web 内容筛选 | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中
+集成：Azure Sentinel | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) 警报 <br /> ![不支持](images/svg/check-no.svg) 原始数据&事件：开发中 | ![支持](images/svg/check-yes.svg) 警报 <br /> ![不支持](images/svg/check-no.svg) 原始数据&事件：开发中
+集成：Microsoft Cloud App Security | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中
+集成：Microsoft 合规性管理器 | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中
+集成：Microsoft Defender for Identity | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中
+集成：Microsoft Endpoint DLP | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中
 集成：Microsoft Intune | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-集成：Microsoft Power Automate & Azure 逻辑应用 | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-Microsoft 威胁专家 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
+集成：Microsoft Power Automate & Azure 逻辑应用 | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![不支持](images/svg/check-no.svg) 开发中
+Microsoft 威胁专家 | ![不支持](images/svg/check-no.svg) 工程积压工作 | ![不支持](images/svg/check-no.svg) 工程积压工作 | ![不支持](images/svg/check-no.svg) 工程积压工作

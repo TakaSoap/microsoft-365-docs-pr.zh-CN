@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: da88bc2aa0e001d714d4317948e28cdca633d17d
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736356"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822125"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -130,7 +130,7 @@ ms.locfileid: "52736356"
 
     - **对于Teams通信：** 分配单个用户或 [将通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 这个设置适用于一对一或一对多聊天。
     - **对于Teams频道通信：** 将Microsoft Teams要Microsoft 365的特定用户的组分配给通信合规性策略。 如果你将同一用户添加到其他 Microsoft Teams 频道或者 Microsoft 365 组，要确保将这些新频道和组也添加到通信合规性策略中。 如果频道的任何成员是策略中的受监督用户，并且策略中配置了入站方向，那么在频道内发送的所有邮件都需接受审阅，并且可能的策略与 (即使对于未明确监督) 的频道中的用户也一样。 例如，用户 A 是频道的所有者或成员。 用户 B 和用户 C 是同一频道的成员，并且使用与仅监督用户 A 的冒犯性语言策略相匹配的语言。用户 B 和用户 C 为频道内的对话创建策略匹配，即使这些对话未在冒犯性语言策略中直接监督。 Teams包括用户 A 的频道之外的用户 B 和用户 C 之间的对话不会受包含用户 A 的冒犯性语言策略影响。若要在频道的其他成员受到明确监督时排除频道成员监督，请关闭适用通信合规性策略中的入站通信方向设置。
-    - **For Teams chat communications with hybrid email environments**： Communication compliance can monitor chat messages for organizations with an Exchange on-premises deployment or an external email provider that have enabled Microsoft Teams. 您必须为具有要监视本地邮箱或外部邮箱的用户创建通讯组。 创建通信合规性策略时，您将此通讯组分配为策略向导中的监督用户和组选择。
+    - **For Teams chat communications with hybrid email environments**： Communication compliance can monitor chat messages for organizations with an Exchange on-premises deployment or an external email provider that have enabled Microsoft Teams. 您必须为具有要监视本地邮箱或外部邮箱的用户创建通讯组。 创建通信合规性策略时，您将此通讯组分配为策略向导中的监督用户和组选择。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅搜索本地用户的 Teams 聊天[数据](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 - **Exchange电子邮件**：托管在 Exchange Online 或 Microsoft 365 Office 365 订阅中的邮箱均有资格进行邮件扫描。 Exchange合规性策略条件匹配的电子邮件和附件可能需要 24 小时才能处理。 通信合规性支持的附件类型与 [Exchange 邮件流规则内容检查支持的文件类型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
@@ -285,11 +285,11 @@ ms.locfileid: "52736356"
 
 |**Field**|**Required**| **详细信息** |
 |:-----|:-----|:-----|
-|**模板名称** | 是 | 修复过程中将在通知工作流中选择的通知模板的友好名称支持文本字符。 |
-| **发件人地址** | 是 | 一个或多个用户或组的地址，这些用户或组通过策略匹配（从订阅的 Active Directory 选择）向用户发送邮件。 |
-| **抄送和密件抄送地址** | 否 | 要接收策略匹配通知的可选用户或组（从订阅的 Active Directory 中选择）。 |
-| **主题** | 是 | 邮件主题行中显示的信息支持文本字符。 |
-| **邮件正文** | 是 | 邮件正文中显示的信息支持文本或 HTML 值。 |
+|**模板名称** | 支持 | 修复过程中将在通知工作流中选择的通知模板的友好名称支持文本字符。 |
+| **发件人地址** | 支持 | 一个或多个用户或组的地址，这些用户或组通过策略匹配（从订阅的 Active Directory 选择）向用户发送邮件。 |
+| **抄送和密件抄送地址** | 不支持 | 要接收策略匹配通知的可选用户或组（从订阅的 Active Directory 中选择）。 |
+| **主题** | 支持 | 邮件主题行中显示的信息支持文本字符。 |
+| **邮件正文** | 支持 | 邮件正文中显示的信息支持文本或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>通知的 HTML
 
@@ -441,7 +441,7 @@ ms.locfileid: "52736356"
 4. 在 **"Power Automate流**"页上，选择要删除的流。 从 **流控制** 菜单中选择"删除"。
 5. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
-## <a name="reports"></a>报表
+## <a name="reports"></a>报告
 
 新的 **"报告** "仪表板是查看所有通信合规性报告的中央位置。 报告小组件提供对通信合规性活动状态进行总体评估最常用的见解的快速视图。 报表小部件中包含的信息不可导出。 详细报告提供与特定通信合规性领域相关的深入信息，并提供在查看时筛选、分组、排序和导出信息的能力。
 
