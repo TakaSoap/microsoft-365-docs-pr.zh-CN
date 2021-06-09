@@ -17,55 +17,55 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198315"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842058"
 ---
-# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a><span data-ttu-id="31be2-104">使用 PowerShell 的 Microsoft Defender for Endpoint API</span><span class="sxs-lookup"><span data-stu-id="31be2-104">Microsoft Defender for Endpoint APIs using PowerShell</span></span>
+# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a><span data-ttu-id="422dd-104">使用 PowerShell 的 Microsoft Defender for Endpoint API</span><span class="sxs-lookup"><span data-stu-id="422dd-104">Microsoft Defender for Endpoint APIs using PowerShell</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="31be2-105">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="31be2-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="422dd-105">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="422dd-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="31be2-106">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="31be2-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="31be2-107">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="31be2-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="422dd-106">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="422dd-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="422dd-107">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="422dd-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-><span data-ttu-id="31be2-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="31be2-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="31be2-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="31be2-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+><span data-ttu-id="422dd-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="422dd-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="422dd-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="422dd-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-<span data-ttu-id="31be2-110">使用来自 Microsoft Defender for Endpoint 的多个 API 的完整方案。</span><span class="sxs-lookup"><span data-stu-id="31be2-110">Full scenario using multiple APIs from Microsoft Defender for Endpoint.</span></span>
+<span data-ttu-id="422dd-110">使用来自 Microsoft Defender for Endpoint 的多个 API 的完整方案。</span><span class="sxs-lookup"><span data-stu-id="422dd-110">Full scenario using multiple APIs from Microsoft Defender for Endpoint.</span></span>
 
-<span data-ttu-id="31be2-111">在此部分中，我们将 PowerShell 示例共享到</span><span class="sxs-lookup"><span data-stu-id="31be2-111">In this section, we share PowerShell samples to</span></span> 
-- <span data-ttu-id="31be2-112">检索令牌</span><span class="sxs-lookup"><span data-stu-id="31be2-112">Retrieve a token</span></span> 
-- <span data-ttu-id="31be2-113">使用令牌检索 Microsoft Defender for Endpoint 中的最新警报</span><span class="sxs-lookup"><span data-stu-id="31be2-113">Use token to retrieve the latest alerts in Microsoft Defender for Endpoint</span></span>
-- <span data-ttu-id="31be2-114">对于每个警报，如果警报具有中优先级或高优先级，并且仍在处理中，请检查设备已连接到可疑 URL 多少次。</span><span class="sxs-lookup"><span data-stu-id="31be2-114">For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.</span></span>
+<span data-ttu-id="422dd-111">在此部分中，我们将 PowerShell 示例共享到</span><span class="sxs-lookup"><span data-stu-id="422dd-111">In this section, we share PowerShell samples to</span></span> 
+- <span data-ttu-id="422dd-112">检索令牌</span><span class="sxs-lookup"><span data-stu-id="422dd-112">Retrieve a token</span></span> 
+- <span data-ttu-id="422dd-113">使用令牌检索 Microsoft Defender for Endpoint 中的最新警报</span><span class="sxs-lookup"><span data-stu-id="422dd-113">Use token to retrieve the latest alerts in Microsoft Defender for Endpoint</span></span>
+- <span data-ttu-id="422dd-114">对于每个警报，如果警报具有中优先级或高优先级，并且仍在处理中，请检查设备已连接到可疑 URL 多少次。</span><span class="sxs-lookup"><span data-stu-id="422dd-114">For each alert, if the alert has medium or high priority and is still in progress, check how many times the device has connected to suspicious URL.</span></span>
 
-<span data-ttu-id="31be2-115">**先决条件**：首先需要 [创建应用](apis-intro.md)。</span><span class="sxs-lookup"><span data-stu-id="31be2-115">**Prerequisite**: You first need to [create an app](apis-intro.md).</span></span>
+<span data-ttu-id="422dd-115">**先决条件**：首先需要 [创建应用](apis-intro.md)。</span><span class="sxs-lookup"><span data-stu-id="422dd-115">**Prerequisite**: You first need to [create an app](apis-intro.md).</span></span>
 
-## <a name="preparation-instructions"></a><span data-ttu-id="31be2-116">准备说明</span><span class="sxs-lookup"><span data-stu-id="31be2-116">Preparation instructions</span></span>
+## <a name="preparation-instructions"></a><span data-ttu-id="422dd-116">准备说明</span><span class="sxs-lookup"><span data-stu-id="422dd-116">Preparation instructions</span></span>
 
-- <span data-ttu-id="31be2-117">打开一个 PowerShell 窗口。</span><span class="sxs-lookup"><span data-stu-id="31be2-117">Open a PowerShell window.</span></span>
-- <span data-ttu-id="31be2-118">如果策略不允许您运行 PowerShell 命令，可以运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="31be2-118">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
+- <span data-ttu-id="422dd-117">打开一个 PowerShell 窗口。</span><span class="sxs-lookup"><span data-stu-id="422dd-117">Open a PowerShell window.</span></span>
+- <span data-ttu-id="422dd-118">如果策略不允许您运行 PowerShell 命令，可以运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="422dd-118">If your policy does not allow you to run the PowerShell commands, you can run the below command:</span></span>
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-<span data-ttu-id="31be2-119">有关详细信息，请参阅 [PowerShell 文档](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="31be2-119">For more information, see [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
+<span data-ttu-id="422dd-119">有关详细信息，请参阅 [PowerShell 文档](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span><span class="sxs-lookup"><span data-stu-id="422dd-119">For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)</span></span>
 
-## <a name="get-token"></a><span data-ttu-id="31be2-120">获取令牌</span><span class="sxs-lookup"><span data-stu-id="31be2-120">Get token</span></span>
+## <a name="get-token"></a><span data-ttu-id="422dd-120">获取令牌</span><span class="sxs-lookup"><span data-stu-id="422dd-120">Get token</span></span>
 
-<span data-ttu-id="31be2-121">运行以下代码：</span><span class="sxs-lookup"><span data-stu-id="31be2-121">Run the below:</span></span>
+<span data-ttu-id="422dd-121">运行以下代码：</span><span class="sxs-lookup"><span data-stu-id="422dd-121">Run the below:</span></span>
 
-- <span data-ttu-id="31be2-122">$tenantId：要代表其运行查询的租户的 ID (即查询将针对此租户数据运行) </span><span class="sxs-lookup"><span data-stu-id="31be2-122">$tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)</span></span>
-- <span data-ttu-id="31be2-123">$appId：AAD 应用的 ID (应用必须具有 Defender for Endpoint) </span><span class="sxs-lookup"><span data-stu-id="31be2-123">$appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
-- <span data-ttu-id="31be2-124">$appSecret：Azure AD 应用机密</span><span class="sxs-lookup"><span data-stu-id="31be2-124">$appSecret: Secret of your Azure AD app</span></span>
+- <span data-ttu-id="422dd-122">$tenantId：要代表其运行查询的租户的 ID (即查询将针对此租户数据运行) </span><span class="sxs-lookup"><span data-stu-id="422dd-122">$tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)</span></span>
+- <span data-ttu-id="422dd-123">$appId：AAD 应用的 ID (应用必须具有 Defender for Endpoint) </span><span class="sxs-lookup"><span data-stu-id="422dd-123">$appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)</span></span>
+- <span data-ttu-id="422dd-124">$appSecret：Azure AD 应用机密</span><span class="sxs-lookup"><span data-stu-id="422dd-124">$appSecret: Secret of your Azure AD app</span></span>
 
-- <span data-ttu-id="31be2-125">$suspiciousUrl：URL</span><span class="sxs-lookup"><span data-stu-id="31be2-125">$suspiciousUrl: The URL</span></span>
+- <span data-ttu-id="422dd-125">$suspiciousUrl：URL</span><span class="sxs-lookup"><span data-stu-id="422dd-125">$suspiciousUrl: The URL</span></span>
 
 
 ```
@@ -129,7 +129,7 @@ $response
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="31be2-126">另请参阅</span><span class="sxs-lookup"><span data-stu-id="31be2-126">See also</span></span>
-- [<span data-ttu-id="31be2-127">适用于终结点的 Microsoft Defender API</span><span class="sxs-lookup"><span data-stu-id="31be2-127">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="31be2-128">高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="31be2-128">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="31be2-129">通过 Python 高级搜寻</span><span class="sxs-lookup"><span data-stu-id="31be2-129">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
+## <a name="see-also"></a><span data-ttu-id="422dd-126">另请参阅</span><span class="sxs-lookup"><span data-stu-id="422dd-126">See also</span></span>
+- [<span data-ttu-id="422dd-127">适用于终结点的 Microsoft Defender API</span><span class="sxs-lookup"><span data-stu-id="422dd-127">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="422dd-128">高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="422dd-128">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="422dd-129">通过 Python 高级搜寻</span><span class="sxs-lookup"><span data-stu-id="422dd-129">Advanced Hunting using Python</span></span>](run-advanced-query-sample-python.md)
