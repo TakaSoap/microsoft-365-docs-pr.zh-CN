@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 56d4ac95ab49310cc5fc74168158672e7a0d65d1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245692"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843218"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻击面减少常见问题解答 (常见问题) 
 
@@ -44,7 +44,7 @@ ASR 最初是作为 Microsoft Defender 防病毒 版本 1709 Windows 10的主要
 
 ## <a name="is-asr-supported-if-i-have-an-e3-license"></a>如果我有 E3 许可证，是否支持 ASR？
 
-是的。 E3 及Windows Enterprise支持 ASR。 
+是。 E3 及Windows Enterprise支持 ASR。 
 
 ## <a name="which-features-are-supported-with-an-e5-license"></a>E5 许可证支持哪些功能？
 
@@ -127,7 +127,7 @@ ASR 规则排除项支持通配符、路径和环境变量。 若要详细了解
 
 ## <a name="im-making-the-switch-from-a-third-party-security-solution-to-defender-for-endpoint-is-there-an-easy-way-to-export-rules-from-another-security-solution-to-asr"></a>我要将第三方安全解决方案切换到 Defender for Endpoint。 是否有一种将规则从另一个安全解决方案导出到 ASR 的"简单"方法？
 
-在大多数情况下，从 [Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) 建议的基线建议开始比尝试从另一个安全解决方案导入规则更简单、更好。 然后，使用审核模式、监视和分析等工具配置新解决方案以满足您的独特需求。 
+在大多数情况下，从 [Defender for Endpoint](/windows/security/threat-protection) 建议的基线建议开始比尝试从另一个安全解决方案导入规则更简单、更好。 然后，使用审核模式、监视和分析等工具配置新解决方案以满足您的独特需求。 
 
 大多数 ASR 规则的默认配置与 Defender for Endpoint 实时保护相结合，可抵御大量攻击和漏洞。
 
@@ -135,7 +135,7 @@ ASR 规则排除项支持通配符、路径和环境变量。 若要详细了解
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>ASR 是否支持路径中包括系统变量和通配符的文件或文件夹排除项？
 
-是的。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
+是。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>默认情况下，ASR 规则是否涵盖所有应用程序？
 
@@ -159,7 +159,7 @@ ASR 使用Microsoft Defender 防病毒来阻止应用程序。 目前无法将 A
 
 ## <a name="are-the-criteria-used-by-the-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-configurable-by-an-admin"></a>规则使用的条件"除非可执行文件满足普遍程度、年龄或受信任的列表条件，否则阻止可执行文件运行"是否由管理员配置？
 
-否。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
+不正确。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
 
 ## <a name="i-enabled-the-asr-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-after-some-time-i-updated-a-piece-of-software-and-the-rule-is-now-blocking-it-even-though-it-didnt-before-did-something-go-wrong"></a>我启用了 ASR 规则 *，阻止可执行文件运行，除非它们* 符合普遍、年龄或受信任的列表条件。 一段时间之后，我更新了一个软件，规则现在阻止了它，即使以前没有更新过。 出错了？
 
@@ -175,14 +175,14 @@ ASR 使用Microsoft Defender 防病毒来阻止应用程序。 目前无法将 A
 
 ## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>与 LSA 保护一起启用规则"阻止从本地安全Windows中窃取凭据 (lsass.exe) 是一个好主意吗？
 
-如果还启用了 [LSA](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 保护，则启用此规则不会提供额外的保护。 由于规则保护和 LSA 保护的运行方式都相同，因此同时运行这两个保护将非常多余。 但是，有时你可能无法启用 LSA 保护。 在这种情况下，您可以启用此规则，以针对目标恶意软件lsass.exe。
+如果还启用了 [LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 保护，则启用此规则不会提供额外的保护。 由于规则保护和 LSA 保护的运行方式都相同，因此同时运行这两个保护将非常多余。 但是，有时你可能无法启用 LSA 保护。 在这种情况下，您可以启用此规则，以针对目标恶意软件lsass.exe。
 
 ## <a name="see-also"></a>另请参阅
 
 * [攻击面减少概述](attack-surface-reduction.md)
-* [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
+* [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
 * [自定义减少攻击面规则](customize-attack-surface-reduction.md)
 * [启用攻击面减少规则](enable-attack-surface-reduction.md)
-* [Microsoft Defender 与其他防病毒/反恶意软件的兼容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* [Microsoft Defender 与其他防病毒/反恶意软件的兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 

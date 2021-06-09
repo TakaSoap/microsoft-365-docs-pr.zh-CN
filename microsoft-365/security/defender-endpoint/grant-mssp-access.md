@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932747"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843102"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP (托管安全) 访问 (预览) 
 
@@ -41,9 +41,9 @@ ms.locfileid: "51932747"
 
 1. 在 [Defender for](rbac.md) Endpoint 中启用基于角色的访问控制，并与 Active Directory (AD) 连接。
 
-2. 配置 [用于访问请求](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) 和预配的治理访问包。
+2. 配置 [用于访问请求](/azure/active-directory/governance/identity-governance-overview) 和预配的治理访问包。
 
-3. 在 [Microsoft Myaccess 中管理访问请求和审核](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve)。
+3. 在 [Microsoft Myaccess 中管理访问请求和审核](/azure/active-directory/governance/entitlement-management-request-approve)。
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用基于角色的访问控制
 
@@ -92,7 +92,7 @@ ms.locfileid: "51932747"
 
     ![新目录的图像](images/goverance-catalog.png)
 
-    有关详细信息，请参阅创建 [资源目录](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create)。
+    有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
 
 3. **为 MSSP 资源创建访问包客户 AAD：标识治理**
@@ -109,7 +109,7 @@ ms.locfileid: "51932747"
     > [!div class="mx-imgBorder"]
     > ![新访问包的图像](images/new-access-package.png)
 
-    有关详细信息，请参阅 [创建新的访问包](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)。
+    有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
 
 4. **从客户 AAD 提供 MSSP 资源的访问请求链接：标识治理**

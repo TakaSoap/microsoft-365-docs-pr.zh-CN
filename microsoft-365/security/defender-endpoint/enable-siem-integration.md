@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 337eb28b7e4b4a7c57b63ff45fb1cea81db43604
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056444"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842958"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用 SIEM 集成
 
@@ -40,7 +40,7 @@ ms.locfileid: "51056444"
 >- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 >- Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - 激活该设置的用户必须具有在 AAD Azure Active Directory (创建) 。 这是具有以下角色的人： 
 
@@ -83,7 +83,7 @@ ms.locfileid: "51056444"
    > [!NOTE]
    > 你将需要每 90 天生成一个新的刷新令牌。 
 
-6. 按照为 Microsoft Defender for Endpoint 创建 [Azure AD](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) 应用注册的说明操作，并为其分配正确的权限以读取警报。
+6. 按照为 Microsoft Defender for Endpoint 创建 [Azure AD](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) 应用注册的说明操作，并为其分配正确的权限以读取警报。
 
 你现在可以继续配置 SIEM 解决方案，或者通过编程访问连接到检测 REST API。 配置 SIEM 解决方案时，你需要使用令牌，以允许它接收来自Microsoft Defender 安全中心。
 

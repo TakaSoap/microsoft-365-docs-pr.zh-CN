@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706614"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843242"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -75,7 +75,7 @@ Outlook版本和更新：
 
 ### <a name="advanced-ediscovery"></a>高级电子数据展示
 
-- **Advanced eDiscovery集合** 现在支持 [新的集合工具和工作流](/microsoft-365/compliance/collections-overview)。 其他新主题包括[创建草稿集合](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)、[将草稿集合提交到审阅集](/microsoft-365/compliance/commit-draft-collection)[以及集合统计信息和报告](/microsoft-365/compliance/collection-statistics-reports)。
+- **Advanced eDiscovery集合** 现在支持 [新的集合工具和工作流](/microsoft-365/compliance/collections-overview)。 其他新主题包括[创建草稿集合](/microsoft-365/compliance/create-draft-collection)、[将草稿集合提交到审阅集](/microsoft-365/compliance/commit-draft-collection)[以及集合统计信息和报告](/microsoft-365/compliance/collection-statistics-reports)。
 - **将审阅** 集内的文档 [导出到Azure 存储](/microsoft-365/compliance/download-export-jobs)帐户。
 - **Advanced eDiscovery 预测编码模块**。 首先 [查看替换停用](/microsoft-365/compliance/predictive-coding-overview) 的相关性模块的新预测编码功能。
 
@@ -162,29 +162,29 @@ Outlook版本和更新：
 
 在下列主题中添加或更新了内容：
 
-- [内容资源管理器入门](/microsoft-365/compliance/data-classification-content-explorer)
+- [内容浏览器入门](/microsoft-365/compliance/data-classification-content-explorer)
 - [数据分类发行说明](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>数据丢失防护
 
 在下列主题中添加或更新了内容：
 
-- [了解 Endpoint DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [发送电子邮件通知并显示 DLP 策略的策略提示](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [了解Microsoft 365数据丢失防护本地扫描程序](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [数据丢失防护本地扫描程序入门](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [创建 DLP 策略来保护具有 FCI 或其他属性的文档](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [使用端点数据丢失防护](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [终结点数据丢失防护入门](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [了解 Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [发送电子邮件通知并显示 DLP 策略的策略提示](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [了解Microsoft 365数据丢失防护本地扫描程序](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [数据丢失防护本地扫描程序入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [创建 DLP 策略来保护具有 FCI 或其他属性的文档](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [使用端点数据丢失防护](/microsoft-365/compliance/endpoint-dlp-using)
+- [终结点数据丢失防护入门](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>电子数据展示
 
 在下列主题中添加或更新了内容：
 
-- [电子数据展示Microsoft 365中的解密](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [关键字查询和搜索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [停用中的相关性模块Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [使用脚本将用户添加到核心电子数据展示案例中的保留](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [电子数据展示Microsoft 365中的解密](/microsoft-365/compliance/ediscovery-decryption)
+- [关键字查询和搜索条件](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [停用中的相关性模块Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [使用脚本将用户添加到核心电子数据展示案例中的保留](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>加密
 
@@ -192,30 +192,30 @@ Outlook版本和更新：
 
 #### <a name="azure-rights-management-service-rms"></a>Azure 权限管理服务 (RMS) 
 
-- [客户管理的加密功能](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online AD RMS 进行邮件加密](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online)。 对此服务的支持已弃用。 您不再可以在混合环境中使用 AD RMS Exchange使用。 相反，请迁移到 Azure RMS。
+- [客户管理的加密功能](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [Exchange Online AD RMS 进行邮件加密](/microsoft-365/compliance/information-rights-management-in-exchange-online)。 对此服务的支持已弃用。 您不再可以在混合环境中使用 AD RMS Exchange使用。 相反，请迁移到 Azure RMS。
 
 #### <a name="customer-key"></a>客户密钥
 
-- [租户级别Microsoft 365客户密钥](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [安全性和合规性概述](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [租户级别Microsoft 365客户密钥](/microsoft-365/compliance/customer-key-tenant-level)
+- [安全性和合规性概述](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>信息权限管理 (IRM)
 
-- [将信息权限管理 (IRM) 列表或库。](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) 这些国家云不支持此设置：
+- [将信息权限管理 (IRM) 列表或库。](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) 这些国家云不支持此设置：
     - Microsoft Cloud for US Government
     - Microsoft 云德国
     - 由中国Microsoft 365世纪网络运营的 Azure 和) 
-- [将 IRM 配置为使用内部部署 AD RMS 服务器](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 已弃用Exchange环境中对此服务的支持。
+- [将 IRM 配置为使用内部部署 AD RMS 服务器](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server)。 已弃用Exchange环境中对此服务的支持。
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
 在下列主题中添加或更新了内容：
 
-- [了解敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [使用 PowerShell 创建自定义敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [使用基于精确数据匹配的分类创建自定义敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [敏感信息类型属性定义](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [了解敏感信息类型](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [使用 PowerShell 创建自定义敏感信息类型](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [使用基于精确数据匹配的分类创建自定义敏感信息类型](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [敏感信息类型实体定义](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
 ### <a name="sensitivity-labels"></a>敏感度标签

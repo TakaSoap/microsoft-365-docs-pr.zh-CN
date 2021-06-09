@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165437"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843058"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>适用于终结点资源的有用 Microsoft Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "51165437"
 访问有用的资源，例如指向博客的链接和与 Microsoft Defender for Endpoint 相关的其他资源。
 
 ## <a name="endpoint-protection-platform"></a>终结点保护平台
-- [在行业测试中得分最高](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [在行业测试中得分最高](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [从外到外：了解 Defender for Endpoint 下一代保护的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 

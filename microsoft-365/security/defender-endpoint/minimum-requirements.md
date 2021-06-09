@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6607d5029e45c77754a431c87eb61cd281e013c1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: ccff6abcfcd1a2da32a8e1614a2de45afed69aef
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730722"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842994"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -60,7 +60,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 适用于服务器的 Microsoft Defender for Endpoint 需要以下许可选项之一：
 
-- [启用 Azure Defender 的 Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-pricing)
+- [启用 Azure Defender 的 Azure 安全中心](/azure/security-center/security-center-pricing)
 - Microsoft Defender for Endpoint for Server (覆盖的服务器服务器一) 
 
 > [!NOTE]

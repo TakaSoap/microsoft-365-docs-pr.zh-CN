@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d13f13872954978a14454d8f3c0e66970606bd21
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: e7f065c5f42b62885c3c0fde7b402490f86ec2ba
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218773"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843194"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>评估 Microsoft Defender for Endpoint 
 
@@ -48,14 +48,14 @@ ms.locfileid: "51218773"
 - [评估 Exploit Protection](./evaluate-exploit-protection.md)
 - [网络保护功能评估](./evaluate-exploit-protection.md)
 - [受控文件夹访问评估](./evaluate-controlled-folder-access.md)
-- [评估应用程序防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
-- [评估网络防火墙](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
+- [评估应用程序防护](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
+- [评估网络防火墙](/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 
 ## <a name="evaluate-next-generation-protection"></a>评估下一代保护
 
 下一代保护可帮助检测和阻止最新威胁。
 
-- [评估防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
+- [评估防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
 
 ## <a name="see-also"></a>另请参阅
 
