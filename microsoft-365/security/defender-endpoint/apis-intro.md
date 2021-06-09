@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 43c797dc8ee9f431ceda6ddecb0a1eada0e362f5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9d3f4431825193d189f7ea1d73b6a99163cac428
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769649"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843694"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>访问 Microsoft Defender for Endpoint API 
 
@@ -40,7 +40,7 @@ ms.locfileid: "52769649"
 
 
 
-Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将使您能够基于 Defender for Endpoint 功能自动执行工作流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将使您能够基于 Defender for Endpoint 功能自动执行工作流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 观看此视频，快速概览适用于终结点的 API 的 Defender。 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]

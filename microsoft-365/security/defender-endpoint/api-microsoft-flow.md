@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a0718f8e3aba27e6fbfc92a4308278f4c629275f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769697"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843790"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
 
@@ -42,7 +42,7 @@ Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
 ![编辑凭据的图像1](images/api-flow-0.png)
 
 > [!NOTE]
-> 有关高级连接器许可先决条件的更多详细信息，请参阅 Premium [Connectors 的许可](https://docs.microsoft.com/power-automate/triggers-introduction#licensing-for-premium-connectors)。
+> 有关高级连接器许可先决条件的更多详细信息，请参阅 Premium [Connectors 的许可](/power-automate/triggers-introduction#licensing-for-premium-connectors)。
 
 
 ## <a name="usage-example"></a>用法示例

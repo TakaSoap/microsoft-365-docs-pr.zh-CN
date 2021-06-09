@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8b3b864e716957c24893d2097249440b0a90f10a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186097"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841086"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的警报
 
@@ -40,7 +40,7 @@ ms.locfileid: "51186097"
 
 从警报队列中选择警报以转到警报页面。 此视图包含警报标题、受影响的资产、详细信息侧窗格和警报情景。
 
-从警报页面，通过选择警报情景树视图下受影响的资产或任何实体开始调查。 详细信息窗格将自动填充有关所选内容的详细信息。 若要查看可以在此处查看的信息类型，请阅读查看 Microsoft [Defender for Endpoint 中的警报](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/review-alerts)。
+从警报页面，通过选择警报情景树视图下受影响的资产或任何实体开始调查。 详细信息窗格将自动填充有关所选内容的详细信息。 若要查看可以在此处查看的信息类型，请阅读查看 Microsoft [Defender for Endpoint 中的警报](/microsoft-365/security/defender-endpoint/review-alerts)。
 
 ## <a name="investigate-using-the-alert-story"></a>使用警报情景进行调查
 

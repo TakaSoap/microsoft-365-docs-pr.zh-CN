@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint on Linux
+title: Linux 版 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何在 Linux 上安装和使用 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2242d195f4a4ea4b8f0c345d82fa0ad1f947bfa2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730758"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843514"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -140,7 +140,7 @@ ms.locfileid: "52730758"
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
-> 有关更具体的 URL 列表，请参阅 [配置代理和 Internet 连接设置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+> 有关更具体的 URL 列表，请参阅 [配置代理和 Internet 连接设置](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 Defender for Endpoint 可以使用以下发现方法发现代理服务器：
 - 透明代理
@@ -159,7 +159,7 @@ Defender for Endpoint 可以使用以下发现方法发现代理服务器：
 
 Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要在 Linux 上更新 Microsoft Defender for Endpoint，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](linux-updates.md)。
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上配置适用于终结点的 Microsoft Defender
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何配置 Linux 版 Microsoft Defender for Endpoint
 
 有关如何在企业环境中配置产品的指南，可在在 Linux 上设置 [Microsoft Defender for Endpoint 的首选项中提供](linux-preferences.md)。
 

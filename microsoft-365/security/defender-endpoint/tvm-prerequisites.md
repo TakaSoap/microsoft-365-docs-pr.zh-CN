@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0df348e3a5564720468d95d7b23578f9dcad9294
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c0544665ea4e9b1ceafa645a2dcc96a224b0c242
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935181"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843946"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 危险和漏洞管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "51935181"
 > Windows 10版本 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > Windows 10版本 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- 已[载入](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)Microsoft Intune Microsoft Endpoint Configuration Manager，以帮助修正由[](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)安全危险和漏洞管理。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
+- 已[载入](/mem/intune/fundamentals/what-is-intune)Microsoft Intune Microsoft Endpoint Configuration Manager，以帮助修正由[](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)安全危险和漏洞管理。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
     - **注意**：如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。
 - 具有至少一个可在设备页面中查看的安全建议
 - 已标记或标记为共同管理

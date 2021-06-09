@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ca62db922a13ab2cb3226eaf0efb92bfaf8c572b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274888"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843454"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>解决更新合规性中的 Microsoft Defender 防病毒软件报告问题
 
@@ -66,7 +66,7 @@ ms.locfileid: "52274888"
 > - 如果终结点在版本 1607 Windows 10版本运行，Windows 10诊断数据[必须设置为增强级别](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)。
 > - 已满足所有要求 3 天
 
-"你可以将Microsoft Defender 防病毒更新合规性。 你将看到 E3、B、F1、VL 和 Pro状态。 但是，对于 E5 许可证，你需要使用 Microsoft Defender for Endpoint 门户 https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) (。 若要了解有关许可选项的详细信息，请参阅Windows 10许可选项"
+"你可以将Microsoft Defender 防病毒更新合规性。 你将看到 E3、B、F1、VL 和 Pro状态。 但是，对于 E5 许可证，你需要使用适用于终结点的 Microsoft Defender 门户 (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 。 若要了解有关许可选项的详细信息，请参阅Windows 10许可选项"
 
 如果满足上述所有先决条件，您可能需要继续执行下一步以收集诊断信息并将其发送给我们。
 

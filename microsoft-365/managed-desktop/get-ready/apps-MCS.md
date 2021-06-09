@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 7a967f5e4b2678b55ed87f2eaa68590703c55805
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445692"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840882"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 咨询服务
 
@@ -34,7 +34,7 @@ ms.locfileid: "51445692"
 **MCS 将处理以下操作：**
 
 - 检查应用在安全环境中是被禁止Microsoft 托管桌面限制。
-- 测试应用的安装、启动和卸载以确保与 Windows 10。 如果 MCS 发现兼容性问题，他们将向应用保证计划提供该应用进行[](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)修正。
+- 测试应用的安装、启动和卸载以确保与 Windows 10。 如果 MCS 发现兼容性问题，他们将向应用保证计划提供该应用进行[](/fasttrack/products-and-capabilities#app-assure)修正。
 - 将应用打包到规范中，然后使用 Microsoft Intune。
 
 ## <a name="app-delivery-schedule"></a>应用交付计划
@@ -48,13 +48,13 @@ ms.locfileid: "51445692"
 ## <a name="testing-accounts-and-environment"></a>测试帐户和环境
 
 若要让打包团队完成到 Microsoft Intune 的迁移，建议您提供以下特定权限：
- 
--   访问Microsoft Intune程序的应用部署功能，以添加和分配应用 
--   测试组、用户帐户和许可证，使包装程序能够测试应用
+
+- 访问Microsoft Intune程序的应用部署功能，以添加和分配应用
+- 测试组、用户帐户和许可证，使包装程序能够测试应用
 
 MCS 将使用这些权限执行以下操作：
- 
--   确保应用适用于为虚拟机配置的Microsoft 托管桌面
--   将应用上载到Microsoft Intune以部署到用户
+
+- 确保应用适用于为虚拟机配置的Microsoft 托管桌面
+- 将应用上载到Microsoft Intune以部署到用户
 
 如果没有这些权限，MCS 可能会前进，但无法将应用程序上载到您的环境。

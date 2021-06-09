@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4be87e296739020c80babb864c57bc803f10d3e0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769001"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843682"
 ---
 # <a name="list-vulnerabilities"></a>列出漏洞
 
@@ -109,5 +109,5 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [基于风险的威胁&漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [组织中漏洞](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [基于风险的威胁&漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [组织中漏洞](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

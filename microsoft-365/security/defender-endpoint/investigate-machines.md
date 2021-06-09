@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929105"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843574"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -39,7 +39,7 @@ ms.locfileid: "51929105"
 调查特定设备上引发警报的详细信息，以确定与警报或潜在泄露范围相关的其他行为或事件。
 
 > [!NOTE]
-> 作为调查或响应过程的一部分，你可以从设备收集调查包。 操作说明： [从设备收集调查包](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)。
+> 作为调查或响应过程的一部分，你可以从设备收集调查包。 操作说明： [从设备收集调查包](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)。
 
 只要在门户中看到受影响的设备，就可以单击它们，以打开有关该设备的详细报告。 受影响的设备在以下方面进行标识：
 
@@ -109,12 +109,12 @@ ms.locfileid: "51929105"
 时间线还使您能够有选择地深入到给定时段内发生的事件。 你可以查看所选时段内在设备上发生的事件的时间序列。 若要进一步控制视图，可以按事件组进行筛选或自定义列。
 
 >[!NOTE]
-> 若要显示防火墙事件，你需要启用审核策略，请参阅审核 [筛选平台连接](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
+> 若要显示防火墙事件，你需要启用审核策略，请参阅审核 [筛选平台连接](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)。
 >防火墙涵盖以下事件
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) - 防火墙服务已停止
->- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) - 阻止应用程序接受网络上传入的连接
->- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) - 阻止连接
+>- [5025](/windows/security/threat-protection/auditing/event-5025) - 防火墙服务已停止
+>- [5031](/windows/security/threat-protection/auditing/event-5031) - 阻止应用程序接受网络上传入的连接
+>- [5157](/windows/security/threat-protection/auditing/event-5157) - 阻止连接
 
 ![包含事件的设备时间线的图像](images/timeline-device.png)
 

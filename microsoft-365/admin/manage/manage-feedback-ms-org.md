@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657003"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840666"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>为组织管理 Microsoft 反馈
 
@@ -51,7 +51,7 @@ ms.locfileid: "51657003"
 |**Visio**|是|是|是|是|
 |**Yammer**|是|是|是|是|
 
-[有关产品内调查和反馈的一些示例，请参阅此处。](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
+[有关产品内调查和反馈的一些示例，请参阅此处。](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
 **元数据集合**
 
@@ -61,7 +61,7 @@ ms.locfileid: "51657003"
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="屏幕截图：产品内客户研究问题示例":::
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你的设备必须采用最低内部版本号，以使用这些策略。 有关详细信息，请参阅下表。
 

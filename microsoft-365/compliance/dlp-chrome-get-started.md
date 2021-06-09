@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730506"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843826"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -55,7 +55,7 @@ ms.locfileid: "52730506"
 - Microsoft 365 E5 信息保护和治理
 - Microsoft 365 A5 信息保护和治理
 
-有关详细的许可指南，请参阅 [适用于安全性与合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+有关详细的许可指南，请参阅 [适用于安全性与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 - 您的组织必须获得终结点 DLP 的许可
 - 您的设备必须运行 Windows 10 x64 内部版本 1809 或更高版本。
@@ -169,7 +169,7 @@ ms.locfileid: "52730506"
 
 如果不想使用 Microsoft Endpoint Manager，可使用组策略在组织中部署 Microsoft 合规性扩展
 
-1. 设备必须可通过组策略进行管理，并且需要将所有 Chrome ADMX 导入组策略中央存储。 有关详细信息，请参阅 [如何在 Windows 中创建和管理组策略管理模板的中央存储](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
+1. 设备必须可通过组策略进行管理，并且需要将所有 Chrome ADMX 导入组策略中央存储。 有关详细信息，请参阅 [如何在 Windows 中创建和管理组策略管理模板的中央存储](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
 
 2.  使用下面的方法创建 PowerShell 脚本：
 
@@ -276,8 +276,8 @@ ms.locfileid: "52730506"
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Windows 10 设备的装载工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Windows 10 设备的装载工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [已建立 Azure AD 联接的设备](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [已建立 Azure AD 联接的设备](/azure/active-directory/devices/concept-azure-ad-join)
 - [下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

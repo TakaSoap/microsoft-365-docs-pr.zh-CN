@@ -242,6 +242,8 @@
 
 ### [网络设备](network-devices.md)
 
+### [在 Microsoft Defender for Endpoint 中托管防火墙报告](host-firewall-reporting.md)
+
 ### [减少攻击面]()
 #### [减少攻击面概述](overview-attack-surface-reduction.md)
 #### [配置攻击面减少功能](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [获取防病毒和反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [管理 Microsoft Defender 防病毒软件保护更新源](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [管理应下载和应用保护更新的时间日程安排](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [管理 Microsoft Defender 更新的逐步推出过程](updates.md)
+#####  [为 Microsoft Defender 更新配置逐步推出过程](configure-updates.md)
 ##### [管理 Microsoft Defender 防病毒更新并扫描过期的终结点](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -351,6 +355,7 @@
 ##### [控制 USB 设备](control-usb-devices-using-intune.md)
 ##### [可移动存储保护](device-control-removable-storage-protection.md)
 ##### [可移动存储访问控制](device-control-removable-storage-access-control.md)
+##### [设备控制打印机保护](printer-protection.md)
 
 #### [行为阻止和控制]()
 ##### [行为阻止和控制](behavioral-blocking-containment.md)

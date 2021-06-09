@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 466e67bb4649f8cf87e4152a07122d57c5071b79
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185571"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843526"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 威胁专家
 
@@ -41,7 +41,7 @@ Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中�
   
 此托管威胁搜寻服务通过以下两项功能提供专家驱动的见解和数据：目标攻击通知和按需访问专家。
 
-## <a name="before-you-begin"></a>开始之前 
+## <a name="before-you-begin"></a>准备工作 
 > [!NOTE]
 > 在应用于托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队讨论资格要求。
 
@@ -51,7 +51,7 @@ Microsoft 威胁专家是一项托管威胁搜寻服务，可为安全操作中�
 
 联系你的帐户团队或 Microsoft 代表，订阅 Microsoft 威胁专家 **-** 专家按需咨询我们的威胁专家，了解组织面临的相关检测和对手。
 
-有关详细信息[，请参阅配置Microsoft 威胁专家](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin)功能。 
+有关详细信息[，请参阅配置Microsoft 威胁专家](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin)功能。 
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Microsoft 威胁专家 - 目标攻击通知 
 Microsoft 威胁专家 - 目标攻击通知可主动搜寻网络最重要的威胁，包括人为入侵、动手键盘攻击或高级攻击（如网络威胁）。 这些通知将显示为新警报。 托管搜寻服务包括：  

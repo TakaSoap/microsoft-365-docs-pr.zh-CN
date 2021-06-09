@@ -1,5 +1,5 @@
 ---
-title: 数据丢失防护和 Microsoft Teams
+title: 数据丢失保护和 Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,14 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams聊天和频道支持数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782557"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843538"
 ---
-# <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
+# <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失保护和 Microsoft Teams
 
 如果您的组织具有 DLP (数据丢失) ，您可以定义防止用户共享 Microsoft Teams 频道或聊天会话中敏感信息的策略。 下面是此保护的工作原理的一些示例：
 
@@ -46,7 +46,7 @@ Office 365和Microsoft 365 E3包括适用于 SharePoint Online、OneDrive 和 Ex
 
 在聊天中支持 DLP Teams需要 E5。
 
-要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 > [!IMPORTANT]
 > DLP 仅适用于聊天或频道线程中的实际消息。 活动通知（包括短消息预览并基于用户的通知设置显示）不包含在 DLP Teams中。 即使已应用 DLP 策略并删除了邮件本身的敏感信息，预览中显示的邮件部分的任何敏感信息仍将在通知中可见。
@@ -138,7 +138,7 @@ DLP 保护以不同方式应用于Teams实体。
     
 6. 然后选择“**下一步**”。
 
-7. 单击“保存”。
+7. 单击“**保存**”。
 
 允许大约 1 小时更改通过数据中心运行并同步到用户帐户。
 <!-- again, why user accounts? -->

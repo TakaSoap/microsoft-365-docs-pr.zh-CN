@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dccc623bfa6c3f5e8fe4d88ccfafd66d3e53482a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932807"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840894"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -56,13 +56,13 @@ ms.locfileid: "51932807"
 
 设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows 10问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备Windows[注册的信息](https://docs.microsoft.com/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备Windows[注册的信息](/intune/windows-enroll)。
 
 >[!NOTE]
->若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](https://docs.microsoft.com/intune/licenses-assign)。
+>若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](/intune/licenses-assign)。
 
 >[!TIP] 
->若要通过 Intune 优化设备管理， [请将 Intune 连接到 Defender for Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
+>若要通过 Intune 优化设备管理， [请将 Intune 连接到 Defender for Endpoint](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
 
 ## <a name="obtain-required-permissions"></a>获取所需权限
 默认情况下，只有已分配有 Azure AD 上的全局管理员或 Intune 服务管理员角色的用户才能管理和分配载入设备和部署安全基线所需的设备配置文件。
@@ -78,7 +78,7 @@ ms.locfileid: "51932807"
 *Intune 上的设备配置权限*
 
 >[!TIP] 
->若要了解有关在 Intune 上分配权限有关详细信息，[请阅读有关创建自定义角色。](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role)
+>若要了解有关在 Intune 上分配权限有关详细信息，[请阅读有关创建自定义角色。](/intune/create-custom-role#to-create-a-custom-role)
 
 ## <a name="in-this-section"></a>本节内容
 主题 | 说明

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f0fcf101388f9cae08655117caa5380af1242c2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dc3ce994108f902e3119de2f5b175b232b68c891
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769661"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843718"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>适用于终结点 API 的 Microsoft Defender 许可证和使用条款
 
@@ -33,7 +33,7 @@ ms.locfileid: "52769661"
 
 ## <a name="apis"></a>API
 
-Defender for Endpoint API 受 [Microsoft API 许可和使用条款控制](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。
+Defender for Endpoint API 受 [Microsoft API 许可和使用条款控制](/legal/microsoft-apis/terms-of-use)。
 
 ### <a name="throttling-limits"></a>节流限制
 

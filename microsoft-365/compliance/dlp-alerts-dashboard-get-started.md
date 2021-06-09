@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 开始定义和管理数据丢失防护策略的警报。
-ms.openlocfilehash: 7f070dd960cc00ad7899c75117cd2a3fcf679973
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760699"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843862"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>数据丢失防护警报仪表板入门
 
@@ -33,7 +33,7 @@ DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。
 
 如果您是 DLP 警报的新增用户，则应该查看了解数据丢失防护 [警报仪表板](dlp-alerts-dashboard-learn.md)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始之前，请确保你具有必要的先决条件：
 
@@ -43,7 +43,7 @@ DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警报管理仪表板的许可
 
-DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要开始，你应该有资格使用 Office 365 DLP Exchange Online SharePoint Online 和 OneDrive for Business。 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
+DLP 的所有符合条件的租户Office 365 DLP 警报管理仪表板。 若要开始，你应该有资格使用 Office 365 DLP Exchange Online SharePoint Online 和 OneDrive for Business。 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
 
 使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams终结点[DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中Teams终结点 DLP 策略警报和 DLP 策略警报。
 

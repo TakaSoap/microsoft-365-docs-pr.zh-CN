@@ -14,18 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934929"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840990"
 ---
 # <a name="threat-protection"></a>威胁防护
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。 Defender for Endpoint 可保护终结点免受网络威胁，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
+[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。 Defender for Endpoint 可保护终结点免受网络威胁，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
 
 > [!TIP]
-> 使用户可以轻松访问云服务和本地应用程序，并启用所有设备的新式管理功能。 有关详细信息，请参阅保护 [远程工作人员](https://docs.microsoft.com/enterprise-mobility-security/remote-work/)。 
+> 使用户可以轻松访问云服务和本地应用程序，并启用所有设备的新式管理功能。 有关详细信息，请参阅保护 [远程工作人员](/enterprise-mobility-security/remote-work/)。 
 
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
@@ -67,24 +67,24 @@ ms.locfileid: "51934929"
 攻击面减少功能集在堆栈中提供第一道防线。 通过确保正确设置配置设置并应用攻击缓解技术，这些功能集可抵御攻击和利用。
 
 - [基于硬件的隔离](overview-hardware-based-isolation.md)
-- [应用程序控制](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [设备控制](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [设备控制](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [漏洞保护](exploit-protection.md)
 - [网络保护](network-protection.md)[、Web 保护](web-protection-overview.md)
 - [受控文件夹访问](controlled-folders.md)
-- [网络防火墙](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [网络防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [攻击面减少规则](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[下一代保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[下一代保护](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 为了进一步强化网络的安全外围，Microsoft Defender for Endpoint 使用旨在捕获所有类型的新兴威胁的下一代保护。
 
-- [行为监视](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
-- [基于云的保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [机器学习](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [URL 保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
-- [自动沙盒服务](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [行为监视](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [机器学习](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [URL 保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [自动沙盒服务](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
@@ -93,7 +93,7 @@ ms.locfileid: "51934929"
 
 - [警告](alerts-queue.md)
 - [历史终结点数据](investigate-machines.md#timeline)
-- [响应业务流程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+- [响应业务流程](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [取证集合](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [威胁智能](threat-indicator-concepts.md)
 - [高级爆炸和分析服务](respond-file-alerts.md#deep-analysis)
@@ -139,5 +139,5 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
  借助 Microsoft 365 Defender，Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。

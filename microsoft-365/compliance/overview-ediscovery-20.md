@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解 Advanced eDiscovery 中的Microsoft 365。 本文概述了 Advanced eDiscovery 中Microsoft 365，这是一种可帮助您管理内部和外部调查的工具。 它还说明使用 Advanced eDiscovery管理法律调查的业务原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782785"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840834"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概述Microsoft 365 Advanced eDiscovery
 
@@ -105,7 +105,7 @@ Advanced eDiscovery EDRM Microsoft 365电子数据展示过程的内置工作流
 
   - Microsoft 365 教育版A5 或 Office 365 教育版 A5 订阅
 
-   如果你没有现有 Microsoft 365 E5 计划，并且想要尝试Advanced eDiscovery，可以将[Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 Microsoft 365 E5。 [](https://www.microsoft.com/microsoft-365/enterprise)
+   如果你没有现有 Microsoft 365 E5 计划，并且想要尝试Advanced eDiscovery，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 Microsoft 365 E5。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 - **每用户许可：** 若要在高级电子数据展示案例中将用户添加为保管人，必须为该用户分配以下许可证之一，具体取决于你的组织订阅：
 
@@ -113,7 +113,7 @@ Advanced eDiscovery EDRM Microsoft 365电子数据展示过程的内置工作流
 
   - Office 365：必须为用户分配 Office 365 E5 Office 365 教育版 A5 许可证。
 
-   若要了解如何分配许可证，请参阅 [向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+   若要了解如何分配许可证，请参阅 [向用户分配许可证](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 > [!NOTE]
 > 用户只需要 E5 或 A5 许可证 (或相应的附加许可证) 作为保管人添加到 Advanced eDiscovery 案例。 使用 Advanced eDiscovery 管理事例和审查事例数据的 IT 管理员、电子数据展示管理员、律师、律师或律师不需要 E5、A5 或附加许可证。

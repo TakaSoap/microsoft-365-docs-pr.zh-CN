@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893303"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843442"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -93,7 +93,7 @@ ms.locfileid: "51893303"
 
 
 ## <a name="monitor-device-configuration"></a>监视设备配置
-可以按照 [载入问题疑难解答] ( (中的不同验证步骤来验证脚本是否成功完成以及 https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) 代理是否正在运行。
+你可以按照 [载入问题疑难解答] ( (/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) 中的不同验证步骤来验证脚本是否成功完成且代理正在运行。
 
 也可以直接在门户上或使用不同的部署工具进行监视。
 

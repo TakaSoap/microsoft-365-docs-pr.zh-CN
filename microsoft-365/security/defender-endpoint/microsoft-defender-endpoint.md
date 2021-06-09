@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935925"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843550"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -89,7 +89,7 @@ Defender for Endpoint 使用内置于 Windows 10 和 Microsoft 强大的云服�
 
 <a name="ngp"></a>
 
-**[下一代保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[下一代保护](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 为了进一步强化网络的安全外围，Microsoft Defender for Endpoint 使用旨在捕获所有类型的新兴威胁的下一代保护。
 
 <a name="edr"></a>
@@ -134,7 +134,7 @@ Defender for Endpoint 直接与各种 Microsoft 解决方案集成，包括：
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
 借助 Microsoft 365 Defender，Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
 
 

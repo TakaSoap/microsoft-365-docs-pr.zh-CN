@@ -24,20 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 阻止以前的员工登录并阻止访问Microsoft 365服务。
-ms.openlocfilehash: 84852e9bccb1d4370db07492baf7ccaed7f6db3d
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698900"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840846"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止对 Microsoft 365 服务的访问
 
 如果需要立即阻止用户的登录访问，应重置其密码。 在此步骤中，强制注销用户Microsoft 365。
 
 > [!NOTE]
-> 你需要是全局管理员才能启动其他管理员的注销。 对于非管理员用户，可以使用用户管理员或支持管理员用户执行此操作。
-> 了解有关管理员角色关于 <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles">管理员角色的更多信息</a>
+> 你需要是全局管理员才能启动其他管理员的注销。 对于非管理员用户，可以使用用户管理员或支持管理员用户执行此操作。 [详细了解管理员角色](about-admin-roles.md)
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择用户名旁边的框，然后选择重置 **密码**。

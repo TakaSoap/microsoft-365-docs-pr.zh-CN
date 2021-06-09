@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合规性扩展可扩展对 Google Chrome 浏览器文件活动和保护操作的监视和控制
-ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730482"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843802"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合规性扩展
 
@@ -63,5 +63,5 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [内部风险管理](insider-risk-management.md)

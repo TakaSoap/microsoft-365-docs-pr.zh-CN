@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934065"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840906"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>使用安全修复危险和漏洞管理
 
@@ -46,7 +46,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 
 **注意**：如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。
 
-有关详细信息 [，请参阅使用 Intune 修正由 Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) 标识的漏洞。
+有关详细信息 [，请参阅使用 Intune 修正由 Microsoft Defender for Endpoint](/intune/atp-manage-vulnerabilities) 标识的漏洞。
 
 ### <a name="remediation-request-steps"></a>修正请求步骤
 
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 
 6. 转到" [**修正"**](tvm-remediation.md) 页以查看修正请求的状态。
 
-如果你想要检查票证在 Intune 中的显示方式，请参阅使用 [Intune](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) 修正由 Microsoft Defender for Endpoint 标识的漏洞，了解详细信息。
+如果你想要检查票证在 Intune 中的显示方式，请参阅使用 [Intune](/intune/atp-manage-vulnerabilities) 修正由 Microsoft Defender for Endpoint 标识的漏洞，了解详细信息。
 
 >[!NOTE]
 >如果你的请求涉及修正超过 10，000 台设备，我们只能发送 10，000 台设备以修正 Intune。

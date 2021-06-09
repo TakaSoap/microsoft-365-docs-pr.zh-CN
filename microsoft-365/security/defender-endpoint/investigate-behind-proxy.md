@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904042"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841050"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -94,4 +94,4 @@ DeviceNetworkEvents
 
 
 ## <a name="related-topics"></a>相关主题
-- [通过 GP 应用网络保护 - 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [通过 GP 应用网络保护 - 策略 CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何查看和配置全局设置 (阻止以下 URL"列表和保护 Office 365 应用) for 保险箱 Links in Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 623b1bcd670f42c7c6b49c06cacfa31cb8adfd49
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 4e77373657d3167ca8f5bafa544923ab3a2320ce
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792988"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821979"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中配置保险箱链接的全局Office 365
 
@@ -47,11 +47,11 @@ ms.locfileid: "52792988"
 
 您可以在 保险箱 Microsoft 365 安全中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置全局 Microsoft 365 链接Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Microsoft Defender for Office 365 加载项订阅的组织) 。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 没有内置或默认 保险箱 链接策略，因此您需要创建至少一个 保险箱 链接策略，以便"阻止以下 **URL"** 列表处于活动状态。 有关说明，请参阅在[Microsoft Defender 保险箱设置链接策略Office 365。](set-up-safe-links-policies.md)
 
-- 在 <https://security.microsoft.com/> 打开安全中心。 若要直接转到"链接 **保险箱，** 请使用 <https://security.microsoft.com/safelinksv2> 。
+- 在 <https://security.microsoft.com> 打开安全中心。 若要直接转到"链接 **保险箱，** 请使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52792988"
 
 3. 配置一个或多个条目，如"阻止以下 URL"列表的条目 [语法中所述](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
-   完成后，单击“**保存**”。
+   完成时，请单击“保存”。
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>在 PowerShell 中配置"阻止以下 URL"列表
 
@@ -131,7 +131,7 @@ ms.locfileid: "52792988"
 
    - **不允许用户在 Office 365** 应用中单击到原始 URL：验证切换是否位于右侧，以防止用户单击到受支持的 Office 365 应用中的原始阻止 ![ URL：打开。 ](../../media/scc-toggle-on.png)
 
-   完成后，单击“**保存**”。
+   完成时，请单击“保存”。
 
 ### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>在 PowerShell 保险箱为 Office 365 应用配置链接保护
 

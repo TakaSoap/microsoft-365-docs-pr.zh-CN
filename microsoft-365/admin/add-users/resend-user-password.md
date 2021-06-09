@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 了解如何重置密码并将电子邮件发送给新的Microsoft 365用户。
-ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 916ac2f92f8cd6a7236525c733d4b5061368b0ef
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244040"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840858"
 ---
 # <a name="resend-a-users-password---admin-help"></a>重新发送用户密码 - 管理员帮助
 
@@ -33,13 +33,13 @@ ms.locfileid: "52244040"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](/microsoft-365/business-video/admin-center-overview)
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
 ## <a name="resend-user-password"></a>重新发送用户密码
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 

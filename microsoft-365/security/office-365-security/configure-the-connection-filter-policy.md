@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP Exchange Online Protection (配置) 以允许或阻止来自电子邮件服务器的电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c8cbbc70a4844e11bf85003215d2798a57a7ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792976"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821957"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -51,7 +51,7 @@ ms.locfileid: "52792976"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 <https://security.microsoft.com/> 打开安全中心。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
+- 在 <https://security.microsoft.com> 打开安全中心。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52792976"
 
 ## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>使用安全中心修改默认连接筛选器策略
 
-1. 在安全中心，转到"电子邮件&**协作** 策略 \> **&规则** \> **威胁策略** \> **策略**"部分" \> **反垃圾邮件"。**
+1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
 
 2. 在" **反垃圾邮件策略** "页上，单击 (，从 **) 选择"** 连接筛选器策略""默认策略"。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52792976"
 
    - **"** 说明"部分：单击 **"编辑名称和说明"。** 在出现的 **"编辑名称和说明** "飞出控件中，在"说明"框中输入可选 **描述** 性文本。
 
-     完成后，单击“**保存**”。
+     完成时，请单击“保存”。
 
    - **"连接筛选"部分**：单击 **"编辑连接筛选器策略"。** 在出现的"飞出"中，配置以下设置：
 
@@ -93,7 +93,7 @@ ms.locfileid: "52792976"
 
        根据需要重复执行此步骤（次数不限）。 若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
-     若要添加 IP 地址或地址范围，请在框中单击并键入 itclick **添加添加** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择"允许的 **IP** 地址"中的条目，然后单击" **删除""删除** ![ ](../../media/scc-remove-icon.png) "。 完成后，单击“**保存**”。
+     若要添加 IP 地址或地址范围，请在框中单击并键入 itclick **添加添加** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择"允许的 **IP** 地址"中的条目，然后单击" **删除""删除** ![ ](../../media/scc-remove-icon.png) "。 完成时，请单击“保存”。
 
    - **始终阻止来自以下 IP 地址或地址范围的邮件**：这是 IP 阻止列表。 在框中输入单个 IP、IP 范围或 CIDR IP，如前面"始终允许来自以下 **IP** 地址或地址范围的邮件"设置中所述。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52792976"
 
 ## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>使用安全中心查看默认连接筛选器策略
 
-1. 在安全中心，转到"电子邮件&**协作** 策略 \> **&规则** \> **威胁策略** \> **策略**"部分" \> **反垃圾邮件"。**
+1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
 
 2. 在 **"反垃圾邮件策略"** 页上，策略列表中将显示以下属性：
 

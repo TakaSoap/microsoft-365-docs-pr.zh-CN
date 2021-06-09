@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934485"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843502"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -106,7 +106,7 @@ ms.locfileid: "51934485"
 
     ![向导Microsoft Endpoint Configuration Manager的图像8](images/configmgr-membership-rules.png)
 
-9. 选择“**下一步**”。
+9. 选择“下一步”。
 
     ![Microsoft Endpoint Configuration Manager向导9 的图像](images/configmgr-confirm.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "51934485"
 
 9. 从上面的步骤 4 导航到已下载文件的位置。
 
-10. 点击 **“下一步”**。
+10. 单击“**下一步**”。
 11. 使用"无"或"所有文件类型 (**相应的示例配置代理) 。** 
 
     ![配置设置的图像1](images/configmgr-config-settings.png)
@@ -234,9 +234,9 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
     在某些行业或某些选择的企业中，客户可能对如何配置防病毒有特定需求。
 
   
-    [快速扫描与完全扫描和自定义扫描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [快速扫描与完全扫描和自定义扫描](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    有关详细信息，请参阅配置[Windows 安全中心框架](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    有关详细信息，请参阅配置[Windows 安全中心框架](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![下一代保护窗格的图像2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -324,7 +324,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 
     ![攻击面减少规则报告屏幕截图2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-有关 [更多详细信息，请参阅优化 ASR 规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   部署和检测。  
+有关 [更多详细信息，请参阅优化 ASR 规则](/microsoft-365/security/defender-endpoint/configure-machines-asr)   部署和检测。  
 
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>在审核模式下设置网络保护规则：

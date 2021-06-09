@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c028289a58247075c33e85d6d6f3797b3ddad7b4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297184"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841002"
 ---
 # <a name="example-of-an-identity-based-attack"></a>基于身份的攻击示例
 
@@ -40,17 +40,17 @@ Microsoft Defender for Identity 可以帮助检测恶意尝试来破坏你组织
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>分析 Microsoft Defender 中针对标识的攻击
 
-Microsoft 365 Defender 允许分析员按事件页面的"警报"选项卡上的检测源筛选警报。 在下面的示例中，将检测源筛选为 Defender **for Identity**。 
+Microsoft 365Defender 允许分析员按事件页面的"**警报**"选项卡上的检测源筛选警报。 在下面的示例中，将检测源筛选为 Defender **for Identity**。 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="筛选 Defender for Identity 的检测源的示例":::
 
-选择 **可疑的哈希攻击警报** 将转到 Microsoft Cloud App Security 中显示更多详细信息的页面。 通过选择"了解有关此警报类型"以阅读攻击描述以及修正建议，你始终可以了解有关警报或[](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002)攻击的更多信息。
+选择 **可疑的哈希攻击警报** 将转到显示Microsoft Cloud App Security详细信息的页面。 通过选择"了解有关此警报类型"以阅读攻击描述以及修正建议，你始终可以了解有关警报或[](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002)攻击的更多信息。
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="可疑的哈希攻击警报示例"::: 
 
 ## <a name="investigating-the-same-attack-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的相同攻击
 
-或者，分析员可以使用 Defender for Endpoint 了解有关终结点上活动更多信息。 从事件队列中选择事件，然后选择" **警报"** 选项卡。在这里，他们还可以识别检测源。 标记为 EDR 的检测源表示终结点检测和响应，即终结点的 Defender。 分析员从此处选择 EDR 检测到的警报。
+或者，分析员可以使用 Defender for Endpoint 了解有关终结点上活动更多信息。 从事件队列中选择事件，然后选择" **警报"** 选项卡。在这里，他们还可以识别检测源。 标记为"终结点"的EDR表示终结点检测和响应，即 Endpoint 的 Defender。 从此处，分析员选择由用户检测到EDR。
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Defender for Endpoint 中的终结点检测和响应示例"::: 
 
@@ -70,13 +70,13 @@ Microsoft Defender for Endpoint 可以检测许多恶意文件和脚本。 但�
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="警报检测时开始的示例"::: 
 
-必须了解并区分常见活动，如 Windows 更新连接、Windows 受信任软件激活流量、与 Microsoft 站点的其他常见连接、第三方 Internet 活动、Microsoft Endpoint Configuration Manager 活动和其他恶意活动与可疑活动。 实现此目的的一个方法就是使用时间线筛选器。 有许多筛选器可在筛选掉分析员不想查看的一切内容时突出显示特定活动。 
+了解并区分常见活动（如 Windows 更新连接、Windows 受信任的软件激活通信、与 Microsoft 站点的其他常见连接、第三方 Internet 活动、Microsoft Endpoint Configuration Manager 活动和其他恶意活动与可疑活动）非常重要。 实现此目的的一个方法就是使用时间线筛选器。 有许多筛选器可在筛选掉分析员不想查看的一切内容时突出显示特定活动。 
 
-在下图中，分析员经过筛选，以便仅查看网络和处理事件。 这样，分析员就可以看到围绕记事本与 IP 地址建立连接的事件的网络连接和进程，我们还在进程树中可以看到这一点。 
+在下图中，分析员经过筛选，以便仅查看网络和处理事件。 这允许分析师查看围绕事件（记事本 IP 地址建立连接）的网络连接和进程，我们在进程树中也可以看到这一点。 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="如何使用记事本建立恶意出站连接的示例"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="如何使用 记事本进行恶意出站连接的示例"::: 
 
-在此特定事件，记事本用于建立恶意出站连接。 但是，攻击者通常只会iexplorer.exe来建立连接来下载恶意负载，因为通常iexplorer.exe进程被视为常规 Web 浏览器活动。
+在此特定事件记事本，该邮件用于建立恶意出站连接。 但是，攻击者通常只会iexplorer.exe来建立连接来下载恶意负载，因为通常iexplorer.exe进程被视为常规 Web 浏览器活动。
 
 时间线中要查找的另一项是 PowerShell 用于出站连接。 分析员会通过命令（如 后跟托管恶意文件的网站的出站连接）查找成功的 PowerShell `IEX (New-Object Net.Webclient)` 连接。 
 

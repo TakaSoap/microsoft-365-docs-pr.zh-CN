@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65c5161f110e95008f2dc56aa3a2d17266ac1cb1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d68f879fe8fd9379b286c106ed9229895f91b9a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933345"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841100"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -60,9 +60,9 @@ DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 - 默认值
 - 自定义警报
 
-默认敏感信息类型包括诸如银行帐号、社会保险号或国家/市/市/区号等信息。 有关详细信息，请参阅 [敏感信息类型查找什么](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
+默认敏感信息类型包括诸如银行帐号、社会保险号或国家/市/市/区号等信息。 有关详细信息，请参阅 [敏感信息类型查找什么](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
 
-自定义类型是您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)。
+自定义类型是您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](/office365/securitycompliance/create-a-custom-sensitive-information-type)。
 
 在设备上创建或编辑文件时，Windows Defender for Endpoint 会扫描内容，以评估其中是否包含敏感信息。
 
@@ -87,9 +87,9 @@ DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 ## <a name="log-analytics"></a>Log Analytics
 
-Azure Log [Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview)中也提供基于 Defender for Endpoint 的数据发现，你可以在这里对原始数据执行复杂的查询。
+Azure Log [Analytics](/azure/log-analytics/log-analytics-overview)中也提供基于 Defender for Endpoint 的数据发现，你可以在这里对原始数据执行复杂的查询。
 
-有关 Azure 信息保护分析详细信息，请参阅 [Azure 信息保护的中央报告](https://docs.microsoft.com/azure/information-protection/reports-aip)。
+有关 Azure 信息保护分析详细信息，请参阅 [Azure 信息保护的中央报告](/azure/information-protection/reports-aip)。
 
 在 Azure 门户中打开 Azure Log Analytics，然后打开标准 (或经典查询) 。
 

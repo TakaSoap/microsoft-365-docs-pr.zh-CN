@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935001"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843430"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
 
@@ -37,10 +37,10 @@ ms.locfileid: "51935001"
 
 有关使用 Defender for Endpoint CSP 有关详细信息，请参阅 [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF 文件](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不会成功应用。 
 
-有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用移动设备载入Microsoft Intune
 
@@ -48,7 +48,7 @@ ms.locfileid: "51935001"
 
 请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。 
 
-按照 [Intune 中的说明操作](https://docs.microsoft.com/intune/advanced-threat-protection)。
+按照 [Intune 中的说明操作](/intune/advanced-threat-protection)。
 
 有关使用 Defender for Endpoint CSP 有关详细信息，请参阅 [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF 文件](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "51935001"
       日期类型：String<br/>
       值：[复制并粘贴 WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding 文件的内容中的值]
 
-有关策略设置Microsoft Intune，请参阅 Windows 10[中的策略Microsoft Intune。](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+有关策略设置Microsoft Intune，请参阅 Windows 10[中的策略Microsoft Intune。](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 
 
 > [!NOTE]

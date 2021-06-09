@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903774"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843970"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903774"
 
 本节指导您完成正确实现条件访问需要执行的所有步骤。
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 >[!WARNING]
 >需要注意的是，此方案不支持已注册 Azure AD 的设备。</br>
 >仅支持 Intune 注册的设备。
@@ -44,9 +44,9 @@ ms.locfileid: "51903774"
 你需要确保你的所有设备都注册到 Intune 中。 可以使用以下任一选项在 Intune 中注册设备：
 
 
-- IT 管理员：若要详细了解如何启用自动注册，请参阅Windows[注册](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- 最终用户：若要详细了解如何在 Intune 中注册 Windows 10 设备，请参阅在[Intune 中Windows 10设备](https://docs.microsoft.com/intune/quickstart-enroll-windows-device)
-- 最终用户替代：若要详细了解如何加入 Azure AD 域，请参阅如何：规划 [Azure AD 加入实现](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)。
+- IT 管理员：若要详细了解如何启用自动注册，请参阅Windows[注册](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- 最终用户：若要详细了解如何在 Intune 中注册 Windows 10 设备，请参阅在[Intune 中Windows 10设备](/intune/quickstart-enroll-windows-device)
+- 最终用户替代：若要详细了解如何加入 Azure AD 域，请参阅如何：规划 [Azure AD 加入实现](/azure/active-directory/devices/azureadjoin-plan)。
 
 
 
@@ -79,7 +79,7 @@ ms.locfileid: "51903774"
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择 **设备合规性**  >  **Microsoft Defender ATP。**
 3. 将 **连接 Windows 10.0.15063+** 设备Microsoft Defender 高级威胁防护设置为 **"打开"。**
-4. 单击“保存”。
+4. 单击“**保存**”。
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步骤 3：在 Intune 中创建合规性策略
@@ -114,6 +114,6 @@ ms.locfileid: "51903774"
 
 6. 选择 **"启用策略**"，然后选择" **创建** "保存更改。
 
-有关详细信息，请参阅在 [Intune](https://docs.microsoft.com/intune/advanced-threat-protection)中通过条件访问强制 Microsoft Defender for Endpoint 的合规性。
+有关详细信息，请参阅在 [Intune](/intune/advanced-threat-protection)中通过条件访问强制 Microsoft Defender for Endpoint 的合规性。
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

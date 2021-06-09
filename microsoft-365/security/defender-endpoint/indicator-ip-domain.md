@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198479"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841062"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>创建 IP 和 URL/域指示器 
 
@@ -47,13 +47,13 @@ Defender for Endpoint 可以通过适用于 Microsoft 浏览器的 Windows Defen
 > [!NOTE]
 > 不支持无Inter-Domain IP (CIDR) 表示法。 
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 在创建 IPS、URL 或域的指示器之前，了解以下先决条件非常重要：
 - URL/IP 允许和阻止依赖于 Defender for Endpoint 组件网络保护在阻止模式下启用。 有关网络保护和配置说明详细信息，请参阅启用 [网络保护](enable-network-protection.md)。
 - 反恶意软件客户端版本必须为 4.18.1906.x 或更高版本。 
 - 在 Windows 10 版本 1709 或更高版本的计算机中受支持。 
 - 确保自定义 **网络指示器在** 高级Microsoft Defender 安全中心 > 设置 >**中启用**。 有关详细信息，请参阅高级 [功能](advanced-features.md)。
-- 有关 iOS 上的指示器支持，请参阅 [配置自定义指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
+- 有关 iOS 上的指示器支持，请参阅 [配置自定义指示器](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)。
 
 
 > [!IMPORTANT]

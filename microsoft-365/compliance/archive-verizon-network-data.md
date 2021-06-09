@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器，以从 短信 中的 Verizon 网络导入和存档 Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 22647a244878242789aa0a3e671747f113ccea1b
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: c72f17c21439827cf0c00e32a427eb1d6fd0c20c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077319"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821387"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>设置连接器以存档 Verizon 网络数据
 
@@ -41,7 +41,7 @@ ms.locfileid: "52077319"
 
    除了使用"用户的电子邮件地址"属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来实现自定义映射。 此映射文件包含您Microsoft 365的移动电话号码和相应的电子邮件地址。 如果同时启用自动用户映射和自定义映射，连接器首先会针对每个 Verizon 项查看自定义映射文件。 如果找不到与Microsoft 365移动电话号码对应的有效用户，连接器将使用其尝试导入的项目的电子邮件地址属性中的值。 如果连接器在自定义映射文件或 Verizon Microsoft 365电子邮件地址属性中找不到有效的邮件用户，该项目将不会导入。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
 存档 Verizon 网络数据所需的一些实现步骤位于 Microsoft 365 且必须先完成，然后才能在合规中心创建连接器。
 
@@ -54,6 +54,8 @@ ms.locfileid: "52077319"
 - 员工必须在 Verizon 移动网络上拥有公司拥有和负责企业的移动电话。 在 BYOD Microsoft 365中存档消息不适用于员工拥有的设备或自带设备 (BYOD) 设备。
 
 - 必须为创建 Verizon 网络连接器的用户分配邮箱导入导出Exchange Online。 在安全与合规中心的"数据连接器"页中添加Microsoft 365是必需的。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+
+- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此未涵盖在 Microsoft 365 合规性和数据保护承诺中。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="create-a-verizon-network-connector"></a>创建 Verizon 网络连接器
 
