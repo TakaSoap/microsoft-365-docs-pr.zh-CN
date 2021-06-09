@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892837"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845626"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 客户服务
 
@@ -40,15 +40,15 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 - 查找常见问题的解决方案
 - 向 Microsoft 支持团队提交支持案例
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 了解有权打开支持案例的特定角色很重要。
 
 至少必须具有服务支持管理员 **或支持管理员** 角色。
 
 
-有关哪些角色具有权限详细信息，请参阅安全 [管理员权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 包含操作的角色 `microsoft.office365.supportTickets/allEntities/allTasks` 可以提交案例。
+有关哪些角色具有权限详细信息，请参阅安全 [管理员权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 包含操作的角色 `microsoft.office365.supportTickets/allEntities/allTasks` 可以提交案例。
 
-有关管理员角色的常规信息，请参阅关于 [管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
+有关管理员角色的常规信息，请参阅关于 [管理员角色](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 
 
 ## <a name="access-the-widget"></a>访问小组件

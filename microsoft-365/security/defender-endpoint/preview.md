@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4612fbb2005145feae7bbcf9309c1ec9559a5a0d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 6c77762de4dbd70922eb5623f801837bf6454ec7
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636066"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842358"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 
@@ -44,7 +44,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 了解 Defender for Endpoint 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。
 
 >[!TIP]
->在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+>在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。
 

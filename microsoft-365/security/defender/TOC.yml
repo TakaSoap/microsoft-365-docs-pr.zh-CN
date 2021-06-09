@@ -6,17 +6,17 @@
       items:
         - name: 什么是 Microsoft 365 Defender？
           href: microsoft-365-defender.md
-        - name: Microsoft 365 安全中心
+        - name: Microsoft 365Defender 概述
           href: overview-security-center.md
         - name: Microsoft 365 Defender 的新增功能
           href: whats-new.md
-        - name: Microsoft 365 安全中心中的 Defender for Endpoint
+        - name: Microsoft 365 Defender 中的 Defender for Endpoint
           href: microsoft-365-security-center-mde.md
-        - name: Microsoft 365 安全中心中的 Defender for Office 365
+        - name: defender for Office 365 in Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: 将 Defender for Endpoint 重定向到 Microsoft 365 安全中心
+        - name: 将 Defender for Endpoint 重定向到 Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: 将 Defender for Office 365 重定向到 Microsoft 365 安全中心
+        - name: 将Office 365安全与合规中心重定向到 Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365Defender 与 Azure Sentinel 集成
           href: microsoft-365-defender-integration-with-azure-sentinel.md
@@ -123,7 +123,7 @@
                     - name: 标识
                       href: first-incident-path-identity.md
             - name: 事件响应手册
-              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+              href: /security/compass/incident-response-playbooks
             - name: 电子邮件通知
               href: get-incident-notifications.md
         - name: 威胁分析
@@ -321,11 +321,11 @@
                 - name: 流式处理 API
                   items:
                     - name: Microsoft 365流式处理 API
-                      href: ../defender-endpoint/raw-data-export.md
-                    - name: 将高级搜寻事件流式处理到 Azure 事件中心
-                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                      href: streaming-api.md
+                    - name: 将高级搜寻事件流式传输至 Azure 事件中心
+                      href: streaming-api-event-hub.md
                     - name: 将高级搜寻事件流式传输至存储账户
-                      href: ../defender-endpoint/raw-data-export-storage.md
+                      href: streaming-api-storage.md
                 - name: 高级搜寻 API
                   href: api-advanced-hunting.md
                 - name: 事件 API

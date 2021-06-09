@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346386"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842862"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -97,7 +97,7 @@ ms.locfileid: "52346386"
 
 可以通过命令行完成重要任务，如控制产品设置和触发按需扫描：
 
-|Group        |应用场景                                   |Command                                                                           |
+|Group        |应用场景                                   |命令                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |配置|打开/关闭实时保护           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |配置|打开/关闭云保护               |`mdatp config cloud --value [enabled/disabled]`                                   |
@@ -114,12 +114,12 @@ ms.locfileid: "52346386"
 |诊断  |生成诊断日志                   |`mdatp diagnostic create --path [directory]`                                      |
 |健康       |检查产品的运行状况                 |`mdatp health`                                                                    |
 |健康       |检查spefic产品属性       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|Protection   |扫描路径                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|Protection   |执行快速扫描                            |`mdatp scan quick`                                                                |
-|Protection   |执行完全扫描                             |`mdatp scan full`                                                                 |
-|Protection   |取消正在进行的按需扫描           |`mdatp scan cancel`                                                               |
-|Protection   |请求安全智能更新     |`mdatp definitions update`                                                        |
-|EDR          |将组标记添加到设备。 EDR标记用于管理设备组。 有关详细信息，请访问 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|保护   |扫描路径                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
+|保护   |执行快速扫描                            |`mdatp scan quick`                                                                |
+|保护   |执行完全扫描                             |`mdatp scan full`                                                                 |
+|保护   |取消正在进行的按需扫描           |`mdatp scan cancel`                                                               |
+|保护   |请求安全智能更新     |`mdatp definitions update`                                                        |
+|EDR          |将组标记添加到设备。 EDR标记用于管理设备组。 有关详细信息，请访问 /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |从设备中删除组标记               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |添加组 ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 

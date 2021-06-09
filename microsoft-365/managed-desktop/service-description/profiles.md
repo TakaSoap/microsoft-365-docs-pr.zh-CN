@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e6b0c96d4e145a2e5df7c7555e262aefe891e483
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 5b5421d2b4001b813d3bcc1e804cae7fb05d0fa7
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689992"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841998"
 ---
 # <a name="device-profiles"></a>设备配置文件
 
@@ -44,18 +44,23 @@ ms.locfileid: "51689992"
 
 下表总结了设备配置文件配置的每个设置的设置及其默认值。  (在后台，这些设置使用 OMA-URIs.Microsoft Endpoint Manager.) 
 
-| 功能 | 敏感数据 | Power User | 标准 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|------------------------|-----------------------|
-| **阻止外部存储**                                                                                                                               | 是                       | 是                   | 否                   |
-| **[云块级别](https://docs.microsoft.com/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)** | 高                      | 高                  | 高                 |
-| **禁用 Microsoft 帐户**                                                                                                                           | 是                       | 是                   | 否                   |
-| **禁用个人OneDrive**                                                                                                                            | 是                       | 是                   | 否                   |
-| **切换到安全桌面进行提升**                                                                                                               | 否                        | 是                   | 否                   |
-| **适用于终结点设备标记的 Microsoft Defender**                                                                                                           | M365Managed-SensitiveData | M365Managed-PowerUser | M365Managed-Standard |
-| **设备上管理员？**                                                                                                                                 | 否                        | 是                   | 否                   |
-| **Autopilot 配置文件**                                                                                                                                     | MMD Standard               | MMD Power User         | MMD Standard          |
-| **AppLocker**                                                                                                                                            | 是                       | 否                    | 否                   |
-| **阻止公共存储**                                                                                                                                   | 是                       | 是                   | 否                   |
+<br>
+
+****
+
+|功能|敏感数据|Power User|标准|
+|---|:---:|:---:|:---:|
+|**阻止外部存储**|是|是|否|
+|**[云块级别](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|高|高|高|
+|**禁用 Microsoft 帐户**|是|是|否|
+|**禁用个人OneDrive**|是|是|否|
+|**切换到安全桌面进行提升**|否|是|否|
+|**适用于终结点设备标记的 Microsoft Defender**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
+|**设备上管理员？**|否|是|否|
+|**Autopilot 配置文件**|MMD Standard|MMD Power User|MMD Standard|
+|**AppLocker**|是|否|否|
+|**阻止公共存储**|是|是|否|
+|
 
 每个设备配置文件也涉及以下项：
 

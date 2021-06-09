@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571004"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841974"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -37,7 +37,7 @@ ms.locfileid: "51571004"
 
 * [Windows 安全中心应用](#windows-security-app)
 * [Microsoft Intune](#intune)
-* [移动设备管理 (MDM)](#mobile-device-management-mdm)
+* [移动设备管理 (MDM) ](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [组策略](#group-policy)
 * [PowerShell](#powershell)
@@ -49,7 +49,7 @@ ms.locfileid: "51571004"
 * Microsoft Defender 防病毒 **配置列表的本地管理员合并行为**
 * System Center Endpoint Protection **允许用户添加排除和替代**
 
-有关禁用本地列表合并的信息，请参阅阻止或 [允许用户在本地修改 Microsoft Defender AV 策略设置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
+有关禁用本地列表合并的信息，请参阅阻止或 [允许用户在本地修改 Microsoft Defender AV 策略设置](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
 
 ## <a name="windows-security-app"></a>Windows 安全中心应用
 
@@ -85,7 +85,7 @@ ms.locfileid: "51571004"
 
 ## <a name="mobile-device-management-mdm"></a>移动设备管理 (MDM)
 
-使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
+使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 

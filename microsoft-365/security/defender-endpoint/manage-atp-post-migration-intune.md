@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: d8396c352e593f9922b11e23119f7d9718eaf752
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a8c5f5e04c629eb82a7e6f63f92d61030c544de4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934221"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841903"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 管理 Microsoft Defender for Endpoint
 
@@ -37,14 +37,14 @@ ms.locfileid: "51934221"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-建议使用[Microsoft Endpoint Manager](https://docs.microsoft.com/mem)，其中包括 Microsoft Intune (Intune) 来管理组织对也称为终结点 (的设备的威胁防护) 。 [详细了解Endpoint Manager。](https://docs.microsoft.com/mem/endpoint-manager-overview)
+建议使用[Microsoft Endpoint Manager](/mem)，其中包括 Microsoft Intune (Intune) 来管理组织对也称为终结点 (的设备的威胁防护) 。 [详细了解Endpoint Manager。](/mem/endpoint-manager-overview)
 
 本文介绍了如何在 Intune 中查找适用于终结点的 Microsoft Defender 设置，并列出了可以执行的各种任务。
 
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>在 Intune 中查找适用于终结点的 Microsoft Defender 设置
 
 > [!IMPORTANT]
-> 你必须是 Intune 中的全局管理员或服务管理员才能配置本文中所述的设置。 若要了解更多信息，请参阅 **[Intune (管理员) 。](https://docs.microsoft.com/mem/intune/fundamentals/users-add#types-of-administrators)**
+> 你必须是 Intune 中的全局管理员或服务管理员才能配置本文中所述的设置。 若要了解更多信息，请参阅 **[Intune (管理员) 。](/mem/intune/fundamentals/users-add#types-of-administrators)**
 
 1. 转到 Azure 门户 [https://portal.azure.com](https://portal.azure.com) () 并登录。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51934221"
 4. 选择现有配置文件，或新建一个配置文件。
 
 > [!TIP]
-> 需要帮助? 请参阅 **[将 Microsoft Defender for Endpoint 与 Intune 一同使用](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。  
+> 需要帮助? 请参阅 **[将 Microsoft Defender for Endpoint 与 Intune 一同使用](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。  
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 配置 Microsoft Defender for Endpoint
 
@@ -63,21 +63,21 @@ ms.locfileid: "51934221"
 
 |任务  |了解详细信息的资源  |
 |---------|---------|
-|**使用 Intune 管理** 组织设备，以保护这些设备和存储于这些设备的数据     |[使用 Microsoft Intune 保护设备](https://docs.microsoft.com/mem/intune/protect/device-protect)         |
-|**将 Microsoft Defender for Endpoint 与 Intune** 集成为移动威胁防护解决方案 <br/>*(Android 设备以及运行 Windows 10 或更高版本的设备)*   |[在 Intune 中通过条件访问强制 Microsoft Defender for Endpoint 合规性](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)         |
-|**使用条件访问** 控制可以连接到电子邮件和公司资源的设备和应用 |[在 Microsoft Defender for Endpoint 中配置条件访问](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-conditional-access) |
-|**使用Microsoft Defender 防病毒配置** 服务提供程序和策略 CSP ([配置)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) |[设备限制：Microsoft Defender 防病毒](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)<br/><br/>[策略 CSP - Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)  | 
-|**如有必要，请为用户指定Microsoft Defender 防病毒** <br/><br/>*通常，你无需应用排除项。Microsoft Defender 防病毒包括许多基于已知操作系统行为和典型管理文件（如在企业管理、数据库管理和其他企业方案中使用的文件）的自动排除项。* |[病毒扫描建议Enterprise当前支持版本的病毒扫描的计算机Windows](https://support.microsoft.com/help/822158/virus-scanning-recommendations-for-enterprise-computers)<br/><br/>[设备限制：Microsoft Defender 防病毒设备Windows 10排除项](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions) <br/><br/>[在 Microsoft Defender 防病毒 或 2019 Windows Server 2016排除项](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus)|
-|**配置攻击面减少规则** ，以针对经常被攻击者滥用的软件行为<br/><br/>*在审核模式下配置攻击面减少规则 [，](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/audit-windows-defender)最初 (至少一周，最多两) 。可以使用"获取Power BI ([模板](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules)) 状态，然后在准备就绪后将这些规则设置为活动模式。* |[Microsoft Defender for Endpoint 中的审核模式 ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/audit-windows-defender)<br/><br/>[终结点保护：攻击面减少](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json#attack-surface-reduction)<br/><br/>[详细了解攻击面减少规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)<br/><br/>[Tech Community博客文章：验证攻击面减少规则 - 第 1 部分](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) |
-|**配置网络筛选** 以阻止从任何应用到 IP 地址或信誉较低的域的出站连接  <br/><br/>*网络筛选也称为网络 [保护](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection)。*<br/><br/>*确保Windows 10安装了最新的 [反恶意软件平台](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)更新。*|[终结点保护：网络筛选](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)<br/><br/>[在事件查看器中查看Windows保护事件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection#review-network-protection-events-in-windows-event-viewer) |
-|**配置受控文件夹访问权限** 以防范勒索软件 <br/><br/>*[受控文件夹访问权限](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。*  |[终结点保护：受控文件夹访问权限](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[在 Intune 中启用受控文件夹访问权限](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)  |
-|**配置 Exploit Protection** 以保护组织设备免受使用攻击传播和感染其他设备的恶意软件的攻击 <br/><br/> *[Exploit Protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection) 也称为攻击防护。* |[终结点保护：Microsoft Defender 攻击防护](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/>[在 Intune 中启用 Exploit Protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune) |
-|**配置Microsoft Defender SmartScreen** 以抵御 Internet 上的恶意站点和文件。 <br/><br/> *Microsoft Edge应安装在组织的设备上。若要保护 Google Chrome 和 FireFox 浏览器，请配置 Exploit Protection。*  |[Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <br/><br/>[设备限制：Microsoft Defender SmartScreen](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen)<br/><br/>[用于管理 Intune 中的 SmartScreen 的策略设置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)  |
-|**配置Microsoft Defender 防火墙** 阻止未经授权的网络流量流入或流出组织设备  |[终结点保护：Microsoft Defender 防火墙](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Microsoft Defender 防火墙高级安全性](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) |
-|**配置加密BitLocker，** 以保护组织中运行加密Windows |[终结点保护：Windows加密](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#windows-encryption)<br/><br/>[BitLocker设备Windows 10配置](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) |
-|**配置 Microsoft Defender Credential Guard** 以防止凭据盗窃攻击 |有关 Windows 10、Windows Server 2016 和 Windows Server 2019 的信息，请参阅[Endpoint protection： Microsoft Defender Credential Guard](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <br/><br/>对于 Windows 7 SP1、Windows Server 2008 R2 SP1、Windows 8.1 和 Windows Server 2012 R2，请参阅缓解哈希传递 (PtH) 攻击和其他凭据盗窃（版本 1 和[2）](https://www.microsoft.com/download/details.aspx?id=36036)  |
-|**配置 Microsoft Defender 应用程序控制** 以选择在组织设备上审核还是信任应用 <br/><br/>*Microsoft Defender 应用程序控制也称为 [AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)。*|[使用 Microsoft Defender 应用程序控制策略部署Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)<br/><br/>[终结点保护：Microsoft Defender 应用程序控制](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control)<br/><br/>[AppLocker 云解决方案提供商](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|
-|**配置设备控制和 USB 外围设备访问** ，以帮助防止未经授权的外围设备中的威胁损害你的设备 |[使用 Microsoft Defender for Endpoint 和 Intune 控制 USB 设备和其他可移动媒体](https://docs.microsoft.com/windows/security/threat-protection/device-control/control-usb-devices-using-intune)  |
+|**使用 Intune 管理** 组织设备，以保护这些设备和存储于这些设备的数据     |[使用 Microsoft Intune 保护设备](/mem/intune/protect/device-protect)         |
+|**将 Microsoft Defender for Endpoint 与 Intune** 集成为移动威胁防护解决方案 <br/>*(Android 设备以及运行 Windows 10 或更高版本的设备)*   |[在 Intune 中通过条件访问强制 Microsoft Defender for Endpoint 合规性](/mem/intune/protect/advanced-threat-protection)         |
+|**使用条件访问** 控制可以连接到电子邮件和公司资源的设备和应用 |[在 Microsoft Defender for Endpoint 中配置条件访问](/microsoft-365/security/defender-endpoint/configure-conditional-access) |
+|**使用Microsoft Defender 防病毒配置** 服务提供程序和策略 CSP ([配置)](/windows/client-management/mdm/policy-configuration-service-provider) |[设备限制：Microsoft Defender 防病毒](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)<br/><br/>[策略 CSP - Microsoft Defender for Endpoint](/windows/client-management/mdm/policy-csp-defender)  | 
+|**如有必要，请为用户指定Microsoft Defender 防病毒** <br/><br/>*通常，你无需应用排除项。Microsoft Defender 防病毒包括许多基于已知操作系统行为和典型管理文件（如在企业管理、数据库管理和其他企业方案中使用的文件）的自动排除项。* |[病毒扫描建议Enterprise当前支持版本的病毒扫描的计算机Windows](https://support.microsoft.com/help/822158/virus-scanning-recommendations-for-enterprise-computers)<br/><br/>[设备限制：Microsoft Defender 防病毒设备Windows 10排除项](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions) <br/><br/>[在 Microsoft Defender 防病毒 或 2019 Windows Server 2016排除项](/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus)|
+|**配置攻击面减少规则** ，以针对经常被攻击者滥用的软件行为<br/><br/>*在审核模式下配置攻击面减少规则 [，](/microsoft-365/security/defender-endpoint/audit-windows-defender)最初 (至少一周，最多两) 。可以使用"获取Power BI ([模板](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Attack%20Surface%20Reduction%20rules)) 状态，然后在准备就绪后将这些规则设置为活动模式。* |[Microsoft Defender for Endpoint 中的审核模式 ](/microsoft-365/security/defender-endpoint/audit-windows-defender)<br/><br/>[终结点保护：攻击面减少](/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json#attack-surface-reduction)<br/><br/>[详细了解攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction)<br/><br/>[Tech Community博客文章：验证攻击面减少规则 - 第 1 部分](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) |
+|**配置网络筛选** 以阻止从任何应用到 IP 地址或信誉较低的域的出站连接  <br/><br/>*网络筛选也称为网络 [保护](/microsoft-365/security/defender-endpoint/network-protection)。*<br/><br/>*确保Windows 10安装了最新的 [反恶意软件平台](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)更新。*|[终结点保护：网络筛选](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)<br/><br/>[在事件查看器中查看Windows保护事件](/microsoft-365/security/defender-endpoint/evaluate-network-protection#review-network-protection-events-in-windows-event-viewer) |
+|**配置受控文件夹访问权限** 以防范勒索软件 <br/><br/>*[受控文件夹访问权限](/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。*  |[终结点保护：受控文件夹访问权限](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/>[在 Intune 中启用受控文件夹访问权限](/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)  |
+|**配置 Exploit Protection** 以保护组织设备免受使用攻击传播和感染其他设备的恶意软件的攻击 <br/><br/> *[Exploit Protection](/microsoft-365/security/defender-endpoint/exploit-protection) 也称为攻击防护。* |[终结点保护：Microsoft Defender 攻击防护](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/>[在 Intune 中启用 Exploit Protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune) |
+|**配置Microsoft Defender SmartScreen** 以抵御 Internet 上的恶意站点和文件。 <br/><br/> *Microsoft Edge应安装在组织的设备上。若要保护 Google Chrome 和 FireFox 浏览器，请配置 Exploit Protection。*  |[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <br/><br/>[设备限制：Microsoft Defender SmartScreen](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen)<br/><br/>[用于管理 Intune 中的 SmartScreen 的策略设置](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)  |
+|**配置Microsoft Defender 防火墙** 阻止未经授权的网络流量流入或流出组织设备  |[终结点保护：Microsoft Defender 防火墙](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Microsoft Defender 防火墙高级安全性](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) |
+|**配置加密BitLocker，** 以保护组织中运行加密Windows |[终结点保护：Windows加密](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption)<br/><br/>[BitLocker设备Windows 10配置](/windows/security/information-protection/bitlocker/bitlocker-overview) |
+|**配置 Microsoft Defender Credential Guard** 以防止凭据盗窃攻击 |有关 Windows 10、Windows Server 2016 和 Windows Server 2019 的信息，请参阅[Endpoint protection： Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <br/><br/>对于 Windows 7 SP1、Windows Server 2008 R2 SP1、Windows 8.1 和 Windows Server 2012 R2，请参阅缓解哈希传递 (PtH) 攻击和其他凭据盗窃（版本 1 和[2）](https://www.microsoft.com/download/details.aspx?id=36036)  |
+|**配置 Microsoft Defender 应用程序控制** 以选择在组织设备上审核还是信任应用 <br/><br/>*Microsoft Defender 应用程序控制也称为 [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)。*|[使用 Microsoft Defender 应用程序控制策略部署Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)<br/><br/>[终结点保护：Microsoft Defender 应用程序控制](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control)<br/><br/>[AppLocker 云解决方案提供商](/windows/client-management/mdm/applocker-csp)|
+|**配置设备控制和 USB 外围设备访问** ，以帮助防止未经授权的外围设备中的威胁损害你的设备 |[使用 Microsoft Defender for Endpoint 和 Intune 控制 USB 设备和其他可移动媒体](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)  |
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>配置Microsoft Defender 安全中心
 
@@ -85,12 +85,12 @@ ms.locfileid: "51934221"
 
 还可以配置最终用户是否可以在网站中查看这些功能Microsoft Defender 安全中心。
 
-- [概述Microsoft Defender 安全中心](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+- [概述Microsoft Defender 安全中心](/microsoft-365/security/defender-endpoint/use)
 
-- [终结点保护：Microsoft Defender 安全中心](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [终结点保护：Microsoft Defender 安全中心](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## <a name="next-steps"></a>后续步骤
 
-- [大致了解危险和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [大致了解危险和漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [访问 Microsoft Defender 安全中心安全操作仪表板](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [访问 Microsoft Defender 安全中心安全操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

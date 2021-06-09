@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259411"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842766"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -75,7 +75,7 @@ ms.locfileid: "52259411"
     >[!NOTE]
     >只能向已分配给 RBAC 角色的 Azure AD 用户组授予访问权限。
 
-6. 单击“**关闭**”。 将应用配置更改。
+6. 单击“关闭”。 将应用配置更改。
 
 ## <a name="manage-device-groups"></a>管理设备组
 
@@ -111,4 +111,4 @@ ms.locfileid: "52259411"
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
 - [创建和管理设备标签](machine-tags.md)
-- [使用租户 API 获取租户设备Graph列表](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [使用租户 API 获取租户设备Graph列表](/graph/api/device-list-memberof)

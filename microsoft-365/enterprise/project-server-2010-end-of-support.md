@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: 对 Server 2010 的支持Project 2021 年 4 月 13 日结束。 使用本文作为指南升级到本地 Project Online或更高版本的 Project Server。
-ms.openlocfilehash: 807c09bff0cb6331b872474acc22f8d2c622a6c6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927368"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842226"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 支持终止路线图
 
@@ -161,7 +161,7 @@ Project Server 2010 和 Project Server 2019 之间的体系结构差异会阻止
 
    - 升级过程不仅会将 Project Server 2010 数据转换为 Project Server 2013 格式，而且还会将四个 Project Server 2010 数据库合并为一个 Project Web App 数据库。
 
-   - 与SharePoint版本相比，Project Server 2013 和 Project Server 2013 都更改为基于声明的身份验证。 如果使用的是经典身份验证，则需要在升级时考虑这一点。 有关详细信息，请参阅[在 SharePoint 2013 中从经典模式身份验证迁移到基于声明的身份验证]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)。
+   - 与SharePoint版本相比，Project Server 2013 和 Project Server 2013 都更改为基于声明的身份验证。 如果使用的是经典身份验证，则需要在升级时考虑这一点。 有关详细信息，请参阅[在 SharePoint 2013 中从经典模式身份验证迁移到基于声明的身份验证]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)。
 
 关键资源：
 

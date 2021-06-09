@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929045"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845638"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -38,7 +38,7 @@ ms.locfileid: "51929045"
 
 ## <a name="overview"></a>概述
 
-如今的威胁形势被无文件恶意软件所溢出[](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能，如行为阻止和抑制，包含在[Defender for Endpoint 中](https://docs.microsoft.com/windows/security)。 
+如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能，如行为阻止和抑制，包含在[Defender for Endpoint 中](/windows/security)。 
 
 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。 
 
@@ -46,11 +46,11 @@ ms.locfileid: "51929045"
 
 行为阻止和包含功能适用于 Defender for Endpoint 的多个组件和功能，可立即停止攻击并阻止攻击的进行。
 
-- [下一代](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止已开始运行的威胁。
+- [下一代](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止已开始运行的威胁。
 
-- [终结点检测和响应 (EDR) ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
+- [终结点检测和响应 (EDR) ](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
 
-- [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 Microsoft 365 [Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)的一个组件，用于处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
+- [Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 Microsoft 365 [Defender](/microsoft-365/security/defender/microsoft-threat-protection)的一个组件，用于处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "51929045"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在电子邮件中Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) 信息警报。  (攻击面减少规则默认情况下未启用;在 Microsoft Defender 安全中心.) 
+- **客户端上策略驱动的 [攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在电子邮件中Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) 信息警报。  (攻击面减少规则默认情况下未启用;在 Microsoft Defender 安全中心.) 
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。)  
 
@@ -120,7 +120,7 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [详细了解适用于终结点的 Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [详细了解适用于终结点的 Defender](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [配置攻击面减少规则](attack-surface-reduction.md)
 
@@ -128,4 +128,4 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 - [查看最近的全球威胁活动](https://www.microsoft.com/wdsi/threats)
 
-- [获取 Defender Microsoft 365概述](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [获取 Defender Microsoft 365概述](/microsoft-365/security/defender/microsoft-threat-protection)

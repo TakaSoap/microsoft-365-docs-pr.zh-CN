@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200277"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845566"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问权限保护重要文件夹
 
@@ -39,7 +39,7 @@ ms.locfileid: "51200277"
 受控文件夹访问权限有助于保护你有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限通过针对已知受信任应用列表检查应用来保护你的数据。 在 Windows Server 2019 和 Windows 10 客户端上受支持，可针对托管设备) 使用 Windows 安全中心 应用、Microsoft Endpoint Configuration Manager 或 Intune (打开受控文件夹) 。 
 
 > [!NOTE]
-> 脚本引擎不受信任，你无法允许它们访问受控的受保护文件夹。  例如，即使允许使用证书和文件指示器，PowerShell 也不受受控文件夹访问权限 [信任](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)。 
+> 脚本引擎不受信任，你无法允许它们访问受控的受保护文件夹。  例如，即使允许使用证书和文件指示器，PowerShell 也不受受控文件夹访问权限 [信任](/microsoft-365/security/defender-endpoint/indicator-certificates)。 
 
 受控文件夹访问权限最适用于 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，它为你提供有关受控文件夹访问权限事件的详细报告，并作为常用的警报调查方案的一 [部分进行阻止](investigate-alerts.md)。
 
@@ -65,8 +65,8 @@ ms.locfileid: "51200277"
 可以使用审核 [模式评估](audit-windows-defender.md) 受控文件夹访问权限启用后对组织的影响。 您还可以访问 Windows Defender Test ground[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认功能是否正常工作并查看其工作方式。
 
 受控文件夹访问权限支持以下版本的 Windows：
-- [Windows 10版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)及更高版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)及更高版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windows默认保护系统文件夹
 
@@ -87,13 +87,13 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 
 ## <a name="requirements-for-controlled-folder-access"></a>受控文件夹访问权限的要求
 
-受控文件夹访问权限需要启用Microsoft Defender 防病毒[实时保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+受控文件夹访问权限需要启用Microsoft Defender 防病毒[实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>查看文件夹中的受控文件夹Microsoft Defender 安全中心
 
 Defender for Endpoint 提供事件的详细报告和阻止，作为警报调查方案的 [一部分](investigate-alerts.md)。
 
-可以使用高级搜寻查询 Microsoft Defender 的终结点 [数据](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 如果你使用的是审核[模式](audit-windows-defender.md)，可以使用高级搜寻查看受控文件夹[](advanced-hunting-overview.md)访问权限设置在启用后将如何影响你的环境。
+可以使用高级搜寻查询 Microsoft Defender 的终结点 [数据](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 如果你使用的是审核[模式](audit-windows-defender.md)，可以使用高级搜寻查看受控文件夹[](advanced-hunting-overview.md)访问权限设置在启用后将如何影响你的环境。
 
 示例查询：
 

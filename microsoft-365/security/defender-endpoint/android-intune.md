@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f14d79d98bfffda675cd71b96068b179f30f059e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1935533ad924b7589bdfee6f3119fb667fb60b73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934629"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841506"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51934629"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-了解如何在已注册的设备上在 Android Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅  [注册设备](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)。
+了解如何在已注册的设备上在 Android Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅  [注册设备](/mem/intune/user-help/enroll-device-android-company-portal)。
 
 > [!NOTE]
 > **Android 上的 Defender for Endpoint 现已在 [Google Play 上可用](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
@@ -60,7 +60,7 @@ ms.locfileid: "51934629"
    - **Publisher** Microsoft。
    - **作为 Defender** for https://play.google.com/store/apps/details?id=com.microsoft.scmx Endpoint (的应用商店 URL Google Play 应用商店 URL)  
 
-   其他字段是可选的。 选择“**下一步**”。
+   其他字段是可选的。 选择“下一步”。
 
    ![管理中心Microsoft Endpoint Manager应用信息的图像](images/mda-addappinfo.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "51934629"
 
 Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
-有关 Intune 支持的注册选项的详细信息，请参阅 [注册选项](https://docs.microsoft.com/mem/intune/enrollment/android-enroll)。
+有关 Intune 支持的注册选项的详细信息，请参阅 [注册选项](/mem/intune/enrollment/android-enroll)。
 
 **目前，支持部署具有工作配置文件和公司所有完全托管用户设备注册的个人拥有设备。**
 

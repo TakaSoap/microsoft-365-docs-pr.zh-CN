@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164677"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845446"
 ---
 # <a name="create-indicators-based-on-certificates"></a>创建基于证书的指示器
 
@@ -42,11 +42,11 @@ ms.locfileid: "51164677"
 - 阻止在整个组织中使用特定的已签名应用程序。 通过创建用于阻止应用程序证书的指示器，Windows Defender AV 将阻止文件执行 (并修正) 自动调查和修正的行为相同。
 
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 
 在创建证书指示器之前，了解以下要求很重要：
 
-- 如果你的组织使用基于云的保护Windows Defender 防病毒启用基于云的保护，则此功能可用。 有关详细信息，请参阅 [管理基于云的保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果你的组织使用基于云的保护Windows Defender 防病毒启用基于云的保护，则此功能可用。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
 - 在 Windows 10 版本 1703 或更高版本、Windows 2016 和 2019 的计算机中受支持。
 - 病毒和威胁防护定义必须最新的。

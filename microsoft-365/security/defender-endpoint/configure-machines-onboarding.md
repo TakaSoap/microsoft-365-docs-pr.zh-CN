@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0d5a13b0c33516209bd2d18361a1de6ab9245c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7798f3b6bd2f99d48a8fa85ecf088023f4629b7b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932937"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841564"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>获取载入到 Microsoft Defender for Endpoint 的设备
 
@@ -69,7 +69,7 @@ Defender for Endpoint 为载入设备提供了几个[Windows 10选项](onboard-c
 - 选择 **"创建设备配置文件"将 ATP 传感器** 配置为从预定义的设备配置文件开始。
 - 从头开始创建设备配置文件。
 
-有关详细信息，请阅读 [有关使用 Intune 设备](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)配置文件将设备载入 Defender for Endpoint 的信息。
+有关详细信息，请阅读 [有关使用 Intune 设备](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)配置文件将设备载入 Defender for Endpoint 的信息。
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解如何在 Microsoft 365 合规中心中设置和使用连接器，以从 PostgreSQL 上的 Cisco Jabber 导入数据并Microsoft 365。
-ms.openlocfilehash: 47cd3c7e9d3717426fbcf43bf1b0df16bbe2cf80
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 06ec56b3b28b28b82554048ec788114a0e5cb389
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51767073"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842742"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data-preview"></a>设置连接器以在 PostgreSQL 数据上存档 Cisco Jabber， (预览) 
 
@@ -42,11 +42,11 @@ ms.locfileid: "51767073"
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换的项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 PostgreSQL 上名为 **Cisco Jabber** 的收件箱文件夹中的子文件夹是在用户邮箱中创建的，并且项目会导入到该文件夹中。 连接器使用 *Email* 属性的值实现此操作。 每个 Jabber 项目都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 为 Microsoft 连接器创建 Merge1 帐户。 若要进行此操作，请联系["用户支持人员"。](https://www.veritas.com/content/support/en_US) 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须将在步骤 1 (中的 PostgreSQL 连接器上创建 Cisco Jabber 并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在合规性中心的"数据连接器"页上添加 **连接器，Microsoft 365** 此角色。 默认情况下，此角色不会分配给角色组Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须将在步骤 1 (中的 PostgreSQL 连接器上创建 Cisco Jabber 并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在合规性中心的"数据连接器"页上添加 **连接器，Microsoft 365** 此角色。 默认情况下，此角色不会分配给角色组Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-postgresql-connector"></a>步骤 1：在 PostgreSQL 连接器上设置 Cisco Jabber
 

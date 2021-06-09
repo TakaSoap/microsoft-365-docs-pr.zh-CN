@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 32defdf459ec65ba0fd268a5a7c84851e9014efa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 21a80abd36fd8e7e33f0ccf9b145d409119205ec
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934041"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842646"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -44,8 +44,8 @@ Microsoft 365 Defender 是一款统一的漏洞前和漏洞后企业防御套件
 
 
 <center><h2>Microsoft 365Defender 服务</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender for Endpoint</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Microsoft Defender for Office 365</b></center></a></td>
+<table><tr><td><center><b><a href="/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender for Endpoint</b></center></a></td>
+<td><center><b><a href="/office365/securitycompliance/office-365-atp"><b>Microsoft Defender for Office 365</b></center></a></td>
 <td><center><b><a href="/azure-advanced-threat-protection/"><b>Microsoft Defender for Identity</b></a></center></td>
 <td><center><b><a href="/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
 </tr>
@@ -92,11 +92,11 @@ Microsoft 365Defender 跨产品功能包括：
 - **跨产品威胁搜寻** - 安全团队可以利用其独特的组织知识，通过针对各种保护产品收集的原始数据创建自己的自定义查询来搜寻泄露的迹象。 Microsoft 365Defender 提供对终结点和 Microsoft Defender 之间 30 天的历史原始信号和警报数据的基于查询的访问，Office 365数据。 
 
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 Microsoft 365必须先满足 Defender 许可要求，然后才能在安全中心Microsoft 365服务[，security.microsoft.com。](https://security.microsoft.com) 有关详细信息，请阅读：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 365 Defender](m365d-enable.md)
 
 
 ## <a name="see-also"></a>另请参阅
-- [跨组织部署威胁防护Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)
+- [跨组织部署威胁防护Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)

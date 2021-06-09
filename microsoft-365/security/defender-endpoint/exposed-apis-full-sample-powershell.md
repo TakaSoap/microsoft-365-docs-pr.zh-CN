@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198315"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842058"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>使用 PowerShell 的 Microsoft Defender for Endpoint API
 
@@ -55,7 +55,7 @@ ms.locfileid: "51198315"
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-有关详细信息，请参阅 [PowerShell 文档](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+有关详细信息，请参阅 [PowerShell 文档](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>获取令牌
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f3442528f6d9239219f0b4638f75758a055717de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935253"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842634"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -46,7 +46,7 @@ ms.locfileid: "51935253"
 尽管 Defender for Endpoint 支持载入各种终结点和工具，但本文并未涵盖它们。 有关使用其他受支持的部署工具和方法进行常规载入的信息，请参阅 [载入概述](onboarding.md)。
 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)是统一多个服务的解决方案平台。 它包括[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)基于云的设备管理。
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)是统一多个服务的解决方案平台。 它包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)基于云的设备管理。
 
 
 本主题指导用户：
@@ -76,10 +76,10 @@ ms.locfileid: "51935253"
 
 -   [安全中心](https://securitycenter.windows.com/)
 
--   [Intune 安全基线](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
+-   [Intune 安全基线](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 有关此Microsoft Endpoint Manager，请查看以下资源：
-- [Microsoft Endpoint Manager页面](https://docs.microsoft.com/mem/)
+- [Microsoft Endpoint Manager页面](/mem/)
 - [有关 Intune 和 ConfigMgr 聚合的博客文章](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [MEM 简介视频](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -89,7 +89,7 @@ ms.locfileid: "51935253"
 
 >[!NOTE]
 >Intune 使用 Azure Active Directory (Azure AD) 组来管理设备和用户。 作为 Intune 管理员，你可以设置组以满足你的组织需求。<br>
-有关详细信息，请参阅添加 [组以组织用户和设备](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)。
+有关详细信息，请参阅添加 [组以组织用户和设备](/mem/intune/fundamentals/groups-add)。
 
 ### <a name="create-a-group"></a>创建群组
 
@@ -152,7 +152,7 @@ ms.locfileid: "51935253"
     > ![Microsoft Endpoint Manager门户 6 的图像](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > 在此实例中，已自动填充，因为 Defender for Endpoint 已与 Intune 集成。 有关集成详细信息，请参阅在 Intune 中启用[Microsoft Defender for Endpoint。](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
+    > 在此实例中，已自动填充，因为 Defender for Endpoint 已与 Intune 集成。 有关集成详细信息，请参阅在 Intune 中启用[Microsoft Defender for Endpoint。](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
     > 
     > 下图是当 Microsoft Defender for Endpoint 未与 Intune 集成时你将看到的示例：
     >
@@ -323,7 +323,7 @@ ms.locfileid: "51935253"
 
 分配配置策略后，需要一些时间应用。
 
-有关计时的信息，请参阅 [Intune 配置信息](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
+有关计时的信息，请参阅 [Intune 配置信息](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 若要确认配置策略已应用于测试设备，请针对每个配置策略执行以下过程。
 

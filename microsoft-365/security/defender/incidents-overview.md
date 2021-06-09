@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539019"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842022"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -185,5 +185,5 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
   - [执行事件](investigate-incidents.md)调查。
 
-- 请参阅 [这些事件响应手册，](https://docs.microsoft.com/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。
+- 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。
 

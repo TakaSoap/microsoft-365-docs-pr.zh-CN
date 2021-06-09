@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939654"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845410"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高级搜寻主动搜寻威胁
 
@@ -54,7 +54,7 @@ ms.locfileid: "51939654"
 
 | 学习目标 | 说明 | 资源 |
 |--|--|--|
-| **了解语言** | 高级搜寻基于 [Kusto 查询语言](https://docs.microsoft.com/azure/kusto/query/)，支持相同的语法和运算符。 通过运行第一个查询开始学习查询语言。 | [查询语言概述](advanced-hunting-query-language.md) |
+| **了解语言** | 高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)，支持相同的语法和运算符。 通过运行第一个查询开始学习查询语言。 | [查询语言概述](advanced-hunting-query-language.md) |
 | **了解如何使用查询结果** | 了解图表以及查看或导出结果的各种方法。 了解如何快速调整查询并向下钻取以获取更丰富的信息。 | [处理查询结果](advanced-hunting-query-results.md) |
 | **了解架构** | 更好地大致了解架构及其列中的表。 了解在构造查询时在何处查找数据。 | [架构参考](advanced-hunting-schema-reference.md) |
 | **使用预定义查询** | 浏览涵盖不同威胁搜寻方案的预定义查询集合。 | [共享查询](advanced-hunting-shared-queries.md) |

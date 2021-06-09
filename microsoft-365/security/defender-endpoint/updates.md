@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809223"
+ms.locfileid: "52841758"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>管理 Microsoft Defender 更新的逐步推出过程
 
@@ -56,7 +56,7 @@ ms.locfileid: "52809223"
 
 1. 第一版向 Beta 渠道订阅者发布。
 2. 在验证、反馈和修复后，我们以限制方式开始逐步推出过程，并首先预览频道订阅者。
-3. 然后，我们继续向全球其余总体发布更新，从 10% 到 100% 向外扩展。
+3. 然后，我们向全球其余总体发布更新，从 10% 到 100% 向外扩展。
 
 我们的工程师持续监视影响并上报任何问题，以根据需要创建修补程序。
 
@@ -79,7 +79,7 @@ ms.locfileid: "52809223"
 
 以下更新频道可用：
 
-| 频道名称  | Description  | 应用程序  |
+| 频道名称  | 说明  | 应用程序  |
 |-|-|-|
 | Beta 渠道 - 预发布  | 在其他人之前测试更新  | 设置为此频道的设备将是第一个接收新每月更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 仅在测试环境中使用。  |
 | 当前频道（预览）  | 在逐步发布 **期间提前获取** 当前频道更新  | 在逐步发布周期中，将最早向设置为此频道的设备提供更新。 建议用于预生产/验证环境。  |
@@ -91,7 +91,7 @@ ms.locfileid: "52809223"
 
 你可以将计算机分配给更新通道，以定义计算机接收每日定义更新的节奏。
   
-| 频道名称  | Description  | 应用程序  |
+| 频道名称  | 说明  | 应用程序  |
 |-|-|-|
 | 当前频道 (分步)   | 在逐步发布期间获取当前频道更新  | 设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。  |
 | Current Channel (Broad)  | 在逐步发布结束时获取更新  | 设备将在逐步发布周期后提供更新。 最适合仅接收有限更新的数据中心计算机。 注意：此设置适用于所有 Defender 更新。  |

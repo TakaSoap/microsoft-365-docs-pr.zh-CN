@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d5e48f1e4f6bc2cfaa836d90e24f2ce8ba3f2114
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246461"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845326"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -47,7 +47,7 @@ ms.locfileid: "52246461"
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在设备上启动会话之前，请确保满足以下要求：
 
@@ -55,11 +55,11 @@ ms.locfileid: "52246461"
 设备必须运行以下版本之一Windows
 
   - **Windows 10**
-    - [版本 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本  
-    - [版本 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5 ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    - [版本 1803 (RS 4) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [版本 1709 (RS 3) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本  
+    - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
   - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384) 版本) 更高版本 
@@ -172,7 +172,7 @@ ms.locfileid: "52246461"
 
 ## <a name="use-live-response-commands"></a>使用实时响应命令
 
-控制台中可以使用的命令遵循与命令类似的Windows[原则](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
+控制台中可以使用的命令遵循与命令类似的Windows[原则](/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
 
 高级命令提供了一组更可靠的操作，允许你执行更强大的操作，如下载和上载文件、在设备上运行脚本，以及对实体执行修正操作。
 
@@ -197,7 +197,7 @@ ms.locfileid: "52246461"
 下面是一些示例：
 
 
-|Command  |功能  |
+|命令  |功能  |
 |---------|---------|
 |`getfile "C:\windows\some_file.exe" &`     |开始在后台下载名为 *some_file.exe* 的文件。         |
 |`fg 1234`     |将命令 ID 为 *1234* 的下载返回到前台。         |

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 01e14be20cee2b8644ebe5d1d1212f921a2fb9b5
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769193"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841518"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>按计算机和软件列出漏洞
 
@@ -120,5 +120,5 @@ GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnera
 
 ## <a name="see-also"></a>另请参阅
 
-- [基于风险危险和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [组织中漏洞](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [基于风险危险和漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [组织中漏洞](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

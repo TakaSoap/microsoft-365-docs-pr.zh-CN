@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245272"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842250"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -40,10 +40,10 @@ ms.locfileid: "52245272"
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>在 iOS 上通过 Defender for Endpoint 进行条件访问  
 iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 启用基于设备风险评分强制执行设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
-若要详细了解如何使用 iOS 上的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
+若要详细了解如何使用 iOS 上的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](/mem/intune/protect/advanced-threat-protection)
 
-> [!NOTE]
-> **Microsoft Defender for Endpoint on iOS 的越狱检测目前处于预览阶段**。 如果检测到设备被 Microsoft Defender for Endpoint 越狱，则高风险警报将报告给安全中心，如果根据设备风险评分设置条件访问，则设备将阻止其访问公司数据。
+### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的越狱检测
+Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备。 如果检测到设备已越狱，则高风险警报将报告给安全中心，如果根据设备风险评分设置条件访问，则设备将阻止其访问公司数据。
 
 ## <a name="web-protection-and-vpn"></a>Web 保护和 VPN
 
@@ -71,7 +71,7 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
 若要防止在已越狱的 iOS 设备上访问公司数据，我们建议在 Intune 上设置以下合规性策略。
 
 > [!NOTE]
-> 目前，iOS 上的 Microsoft Defender for Endpoint 的越狱检测处于预览阶段。 建议设置此策略作为抵御越狱情形的额外防御层。
+> 越狱检测是 Microsoft Defender for Endpoint 在 iOS 上提供的一项功能。 但是，我们建议你设置此策略作为抵御越狱情形的额外防御层。
 
 按照以下步骤创建针对已越狱设备的合规性策略。
 
@@ -96,7 +96,7 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
 
 ## <a name="configure-custom-indicators"></a>配置自定义指示器
 
-通过 iOS 上的 Defender for Endpoint，管理员还可以在 iOS 设备上配置自定义指示器。 若要详细了解如何配置自定义指示器，请参阅管理 [指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)。
+通过 iOS 上的 Defender for Endpoint，管理员还可以在 iOS 设备上配置自定义指示器。 若要详细了解如何配置自定义指示器，请参阅管理 [指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 > [!NOTE]
 > iOS 上的 Defender for Endpoint 仅支持为 IP 地址和 URL/域创建自定义指示器。
@@ -105,8 +105,3 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
 
 网络钓鱼网站会模拟可信赖的网站，以获取你的个人或财务信息。 如果要 [报告可能是网络钓鱼](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) 网站的网站，请访问提供有关网络保护的反馈页面。
 
-## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>安装 Microsoft Defender for Endpoint 时 iOS 上的电池消耗问题
-
-应用的电池使用情况由 Apple 根据大量因素（包括 CPU 和网络使用情况）计算。 Microsoft Defender for Endpoint 在后台使用本地/环回 VPN 来检查任何恶意网站或连接的 Web 流量。 来自任何应用的网络数据包都经过此检查，这会导致 Microsoft Defender for Endpoint 的电池使用情况计算不准确。 这会给用户留下假印象。 Microsoft Defender for Endpoint 的实际电池消耗低于设备上"电池设置页面上显示的内容。 这是基于在 Microsoft Defender for Endpoint 应用上执行的测试，以了解电池消耗。
-
-此外，使用的 VPN 是本地 VPN，与传统 VPN 不同，网络流量不会在设备外部发送。

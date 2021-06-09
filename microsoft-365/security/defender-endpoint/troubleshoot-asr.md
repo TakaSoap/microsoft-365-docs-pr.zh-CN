@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c5c76553ff3f0b32def5fbafbf2c8f010e49eeb2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935217"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845413"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -58,9 +58,9 @@ ms.locfileid: "51935217"
 
 - 终结点运行Windows 10 企业版版本 1709 (也称为 Fall Creators Update) 。
 
-- 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [使用任何其他防病毒应用将导致 Microsoft Defender AV 自行禁用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [使用任何其他防病毒应用将导致 Microsoft Defender AV 自行禁用](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
-- [实时保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
+- [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 
 - 审核模式未启用。 使用组策略将规则设置为已禁用 (值 **：0**) 启用攻击 [面减少规则中所述](enable-attack-surface-reduction.md)。
 
@@ -126,4 +126,4 @@ ms.locfileid: "51935217"
 
 - [启用攻击面减少规则](enable-attack-surface-reduction.md)
 
-- [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
+- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)

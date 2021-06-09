@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在致电支持Microsoft 365查看服务运行状况，以查看是否有活动服务中断。
-ms.openlocfilehash: e0ab4eaa1f7a96168839a4abef2f0f254a21d0ad
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 28ec578fa0f2321c459284519be62e6e8448b4a5
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644628"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842034"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -41,31 +41,30 @@ ms.locfileid: "51644628"
 
 如果无法登录管理中心，可以使用服务状态页面检查阻止登录租户的已知[](https://status.office365.com)问题。  此外，在 Twitter 上的 [@MSFT365status注册](https://twitter.com/MSFT365Status) 以关注我们，以查看有关特定事件的信息。
 
-  
-### <a name="how-to-check-service-health"></a>如何查看服务运行状况
+## <a name="how-to-check-service-health"></a>如何查看服务运行状况
 
 1. 转到 管理Microsoft 365中心 ， [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) 然后使用管理员帐户登录。
 
     > [!NOTE]
     > 分配了全局管理员或服务支持管理员角色的用户可以查看服务运行状况。 若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。 有关可以查看服务运行状况的角色详细信息，请参阅关于 [管理员角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)。
-  
+
 2. 如果未使用新的管理中心，请在主页上，选择右上角的"试用新的管理中心"切换。
 
 3. 若要查看服务运行状况，请在管理中心中，转到"运行状况服务运行状况"，或选择"主页"仪表板上的"服务  >  运行状况 **"卡**。  仪表板卡片指示是否有活动服务问题，以及指向详细"服务运行状况" **页面** 的链接。
-  
+
 4. 在 **"服务运行状况** "页上，每个云服务的运行状况以表格格式显示。
 
    ![View of current issues in service health](../media/service-health-all-services.png)
 
-" **所有服务** " (默认视图) 显示所有服务及其当前运行状况。 图标和" **状态"** 列指示每个服务的状态。 
+" **所有服务** " (默认视图) 显示所有服务及其当前运行状况。 图标和" **状态"** 列指示每个服务的状态。
 
-若要筛选视图以筛选当前遇到事件的服务，请选择页面顶部的"事件"选项卡。 选择 **"公告"** 选项卡将只显示当前已发布公告的服务。 
+若要筛选视图以筛选当前遇到事件的服务，请选择页面顶部的"事件"选项卡。 选择 **"公告"** 选项卡将只显示当前已发布公告的服务。
 
 " **历史记录** "选项卡显示已解决的事件和公告的历史记录。
 
 如果您遇到 Microsoft 365 服务问题，并且未在"服务运行状况"页上看到该问题，请通过选择"报告问题"并完成简短表单来告诉我们该问题。  我们将查看来自其他组织的个人数据和报告，以查看问题是如何普遍出现，以及问题是否源自于我们的服务。 如果是这样，我们将在"服务运行状况"页上将其添加为新事件或公告，可在其中跟踪其解决方案。 如果你在大约 30 分钟内未在列表中看到它，请考虑联系支持部门以解决该问题。
 
-若要自定义在仪表板上显示哪些服务的视图，请选择"首选项""自定义视图"，并清除要从服务运行状况仪表板视图中筛选  >  出的服务的复选框。 确保选中了要监视的每个服务的复选框。    
+若要自定义在仪表板上显示哪些服务的视图，请选择"首选项""自定义视图"，并清除要从服务运行状况仪表板视图中筛选  >  出的服务的复选框。 确保选中了要监视的每个服务的复选框。
 
 若要注册影响活动事件的租户和状态更改的新事件的电子邮件通知，请选择"首选项""电子邮件"，单击"在电子邮件中向我发送服务热度通知"，然后  >  指定： 
 
@@ -77,12 +76,12 @@ ms.locfileid: "51644628"
 > 每个管理员都可以设置其首选项，并且每个管理员帐户具有两个电子邮件地址的上述限制。
 
 > [!TIP]
-> 您还可以使用移动设备上的[Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216)管理应用查看服务运行状况，这是使用推送通知保持最新状态很好的方法。 
-  
+> 您还可以使用移动设备上的[Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216)管理应用查看服务运行状况，这是使用推送通知保持最新状态很好的方法。
+
 ### <a name="view-details-of-posted-service-health"></a>查看已发布服务的运行状况详细信息
 
 在 **"所有服务** "视图中，选择服务状态将打开公告或事件的摘要视图。
-  
+
 [![显示服务公告的屏幕截图 ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 公告或事件摘要提供以下信息：
@@ -101,7 +100,7 @@ ms.locfileid: "51644628"
 ### <a name="translate-service-health-details"></a>翻译服务运行状况详细信息
 
 服务运行状况说明是实时发布的，因此这些说明不会自动翻译成你的语言，并且服务事件的详细信息仅以英语形式提供。若要翻译这些说明，请遵循以下步骤：
-  
+
 1. 转到[翻译工具](https://www.bing.com/translator/)。
 
 2. 在" **服务运行状况**"页上，选择一个事件或公告。在" **显示详细信息**"下，复制关于该问题的文本。
@@ -111,10 +110,10 @@ ms.locfileid: "51644628"
 ### <a name="definitions"></a>定义
 
 大多数情况下，服务显示为正常，没有进一步的信息。 服务出现问题时，该问题会标识为公告或事件，并显示当前状态。
-  
+
 > [!TIP]
 > 服务运行状况中不会显示计划内维护事件。 可以通过" **消息中心**"随时了解最新消息，从而跟踪计划内维护事件。 筛选出分类为"更改计划"的消息，了解发生更改的时间、其影响以及如何做好相应准备。 有关详细信息[，请参阅 Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)中的消息中心。
-  
+
 ### <a name="incidents-and-advisories"></a>事件和公告
 
 | Icon | 说明 |
@@ -139,19 +138,21 @@ ms.locfileid: "51644628"
 ### <a name="history"></a>历史记录
 
 服务运行状况允许你查看当前运行状况，并查看过去 30 天内影响租户的任何服务公告和事件的历史记录。 若要查看所有服务的过去运行状况，请选择问题 **详细信息** 页面上的"查看历史记录"。
-  
+
 ![Show link to health history](../media/service-health-view-history.png)
-  
+
 显示在选定时间范围内发布的所有服务运行状况消息的列表，如下所示：
-  
+
 ![View service health history](../media/service-health-history.png)
-  
+
 展开任意行以查看有关问题的更多详细信息。
-  
+
 有关我们对正常运行时间的承诺详细信息，请参阅 Transparent [operations from Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。
 
 ## <a name="related-topics"></a>相关主题
 
-[管理中心Microsoft 365报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
-[消息中心首选项](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
-[如何在管理中心Windows发布运行状况](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+[管理中心Microsoft 365报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+
+[消息中心首选项](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
+
+[如何在管理中心Windows发布运行状况](/windows/deployment/update/check-release-health)

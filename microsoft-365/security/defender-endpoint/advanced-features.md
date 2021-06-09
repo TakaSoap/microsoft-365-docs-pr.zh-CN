@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246364"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845470"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -167,7 +167,7 @@ ms.locfileid: "52246364"
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
 
-若要在威胁情报Office 365上下文设备集成，你需要在安全与合规中心仪表板中启用 Defender for Endpoint &设置。 有关详细信息，请参阅威胁 [调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
+若要在威胁情报Office 365上下文设备集成，你需要在安全与合规中心仪表板中启用 Defender for Endpoint &设置。 有关详细信息，请参阅威胁 [调查和响应](/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威胁专家 - 目标攻击通知
 
@@ -212,7 +212,7 @@ ms.locfileid: "52246364"
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune连接
 
-Defender for Endpoint 可以[](https://docs.microsoft.com/intune/what-is-intune)与 Microsoft Intune[集成，以启用基于设备风险的条件访问](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 当你 [启用此功能时](configure-conditional-access.md)，你将能够与 Intune 共享 Defender for Endpoint 设备信息，从而增强策略实施。
+Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集成，以启用基于设备风险的条件访问](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 当你 [启用此功能时](configure-conditional-access.md)，你将能够与 Intune 共享 Defender for Endpoint 设备信息，从而增强策略实施。
 
 > [!IMPORTANT]
 > 你需要在 Intune 和 Defender for Endpoint 上启用集成才能使用此功能。 有关特定步骤详细信息，请参阅在 [Defender for Endpoint 中配置条件访问](configure-conditional-access.md)。
@@ -220,7 +220,7 @@ Defender for Endpoint 可以[](https://docs.microsoft.com/intune/what-is-intune)
 此功能仅在具有以下功能时可用：
 
 - 适用于 E5 企业移动性 + 安全性 E3或 Windows E5 (或 Microsoft 365 企业版 的许可) 
-- 一个Microsoft Intune环境，与已加入 Azure AD Windows 10 [Intune 托管的设备](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
+- 一个Microsoft Intune环境，与已加入 Azure AD Windows 10 [Intune 托管的设备](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 
 ### <a name="conditional-access-policy"></a>条件访问策略
@@ -228,7 +228,7 @@ Defender for Endpoint 可以[](https://docs.microsoft.com/intune/what-is-intune)
 启用 Intune 集成后，Intune 将自动创建经典条件访问 (CA) 策略。 此经典 CA 策略是设置到 Intune 的状态报告的先决条件。 不应删除它。
 
 > [!NOTE]
-> Intune 创建的经典 CA 策略与用于配置[](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)终结点的新式条件访问策略不同。
+> Intune 创建的经典 CA 策略与用于配置[](/azure/active-directory/conditional-access/overview/)终结点的新式条件访问策略不同。
 
 
 ## <a name="device-discovery"></a>设备发现

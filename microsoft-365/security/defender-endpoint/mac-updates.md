@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 6447aa4182846020312e9be870c5548d9415ac71
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684203"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842826"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -48,7 +48,7 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 
 ## <a name="use-msupdate"></a>使用 msupdate
 
-MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理员设计，以便他们可以更精确地控制何时应用更新。 有关如何使用此工具的说明，请参阅 Update Office for Mac [by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)。
+MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理员设计，以便他们可以更精确地控制何时应用更新。 有关如何使用此工具的说明，请参阅 Update Office for Mac [by using msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)。
 
 在 MAU 中，macOS 上的 Microsoft Defender for Endpoint 的应用程序标识符是 *WDAV00*。 若要在 macOS 上下载并安装 Microsoft Defender for Endpoint 的最新更新，请从"终端"窗口执行以下命令：
 
@@ -125,7 +125,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 | **域** | `com.microsoft.autoupdate2` |
 | **键** | EnableCheckForUpdatesButton |
 | **数据类型** | Boolean |
-| **可能的值** | 为 (默认值)  <br/> False |
+| **可能的值** | 为 (默认值)  <br/> 错误 |
 
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
@@ -149,7 +149,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 | **域** | `com.microsoft.autoupdate2` |
 | **键** | SendAllTelemetryEnabled |
 | **数据类型** | Boolean |
-| **可能的值** | 为 (默认值)  <br/> False |
+| **可能的值** | 为 (默认值)  <br/> 错误 |
 
 
 ## <a name="example-configuration-profile"></a>配置文件示例
@@ -256,4 +256,4 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 ## <a name="resources"></a>资源
 
-- [msupdate 参考](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [msupdate 参考](/deployoffice/mac/update-office-for-mac-using-msupdate)

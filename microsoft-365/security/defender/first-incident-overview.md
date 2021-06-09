@@ -1,6 +1,6 @@
 ---
 title: 第一个事件响应简介
-description: 在 Microsoft 365 Defender 中响应第一个事件的基础知识。
+description: 在 Defender 中响应第一个事件的Microsoft 365基础知识。
 keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6e65a12f42b9f5f75c1a19cb9c4a261c94feaf31
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297172"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841710"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>第一个事件响应简介
 
@@ -38,7 +38,7 @@ ms.locfileid: "52297172"
 
 组织的事件响应策略决定了其处理破坏性不断增加的安全事件和混乱的能力。 采取预防性措施很重要，但快速采取行动以控制、抑制和从检测到的事件中恢复的能力可以最大限度地减少损失和业务损失。
 
-此事件响应演练演示了作为安全运营团队的一部分，如何在 Microsoft 365 Defender 中执行大部分关键事件响应步骤。 步骤如下：
+此事件响应演练演示了作为安全运营团队的一部分，如何在 Microsoft 365 Defender 中执行主要事件响应步骤。 步骤如下：
 
 - 准备安全状态
 - 对于每个事件：
@@ -52,13 +52,13 @@ Microsoft 365 Defender 中的事件是分析和事件响应的逻辑起点。 �
 
 ## <a name="next-step"></a>后续步骤
 
-[![准备组织和 Microsoft 365 租户](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![准备你的组织和Microsoft 365租户](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
-请确保你的组织和 Microsoft 365 租户 [已准备好处理事件](first-incident-prepare.md)。
+请确保你的组织和租户Microsoft 365[事件处理做好准备](first-incident-prepare.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-Microsoft 365 Defender 的事件响应指南：
+适用于 defender 的事件Microsoft 365指南：
 
 - [事件概述](incidents-overview.md)
 - [调查事件](investigate-incidents.md)
@@ -69,6 +69,6 @@ Microsoft 365 Defender 的事件响应指南：
 - [钓鱼电子邮件](first-incident-path-phishing.md)
 - [基于身份的攻击](first-incident-path-identity.md)
 
-[详细的事件响应手册](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+[详细的事件响应手册](/security/compass/incident-response-playbooks)
 
 

@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以了解在 EOP 服务中配置邮件流和Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ad80c4176c1b8b1c47b6b9ecafd34b4ca301f3f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 9636025796aee1ba2027edff38a16f131974134f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623413"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842490"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的邮件流
 
@@ -39,7 +39,7 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 [使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) 介绍基于目录的边缘阻止功能，该功能允许您在服务网络外围拒绝针对无效收件人的邮件。
 
-[View or Edit Managed Domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)介绍了如何管理与 EOP 服务相关的域。
+[View or edit accepted domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 介绍如何管理与 EOP 服务关联的域。
 
 如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请通过 为 Exchange Online 中的子域[启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
@@ -47,7 +47,7 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) 介绍如何在邮件路由到 EOP 之前的服务或设备时配置连接器。
 
-在 EOP 保护内部部署 Exchange 邮箱的混合环境中，您需要在本地 Exchange 中配置邮件流规则 (也称为传输规则) ，以转换 EOP 垃圾邮件筛选裁定，以便垃圾邮件规则可以将邮件移动到"垃圾邮件"文件夹。 有关详细信息，请参阅 [配置 EOP 以将垃圾邮件发送到混合环境中垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。 如果您不想将邮件移动到每个用户的"垃圾邮件"文件夹，您可以选择其他操作，通过编辑反垃圾邮件策略 (也称为内容筛选器策略) 。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+在 EOP 保护本地 Exchange 邮箱的混合环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。 如果您不想将邮件移动到每个用户的"垃圾邮件"文件夹，您可以选择其他操作，通过编辑反垃圾邮件策略 (也称为内容筛选器策略) 。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="verify-mail-flow"></a>验证邮件流
 

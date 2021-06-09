@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何在本地配置Exchange Server使用混合新式验证 (HMA) ，以为您提供更安全的用户身份验证和授权。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694445"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841626"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -183,12 +183,12 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 如果您是使用 TCP 443 Exchange本地客户，请绕过以下 IP 地址范围的流量处理：
 
-```
+```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-适用于 iOS 和 Android 的 Outlook 应用旨在作为在移动设备上体验 Microsoft 365 或 Office 365 的最佳方法，通过使用 Microsoft 服务 来帮助查找、计划和确定日常工作和工作的优先级。 有关详细信息，请参阅使用适用于[iOS](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)和 Android Outlook混合新式验证。
+适用于 iOS 和 Android 的 Outlook 应用旨在作为在移动设备上体验 Microsoft 365 或 Office 365 的最佳方法，通过使用 Microsoft 服务 来帮助查找、计划和确定日常工作和工作的优先级。 有关详细信息，请参阅使用适用于[iOS](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)和 Android Outlook混合新式验证。
 
 ## <a name="related-topics"></a>相关主题
 

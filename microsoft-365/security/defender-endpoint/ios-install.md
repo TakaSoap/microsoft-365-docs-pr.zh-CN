@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624701"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842278"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ ms.locfileid: "52624701"
 - 确保为用户完成了 iOS 注册。 用户需要分配有 Defender for Endpoint 许可证才能在 iOS 上使用 Defender for Endpoint。 有关如何 [分配许可证的说明，](/azure/active-directory/users-groups-roles/licensing-groups-assign) 请参阅向用户分配许可证。
 
 > [!NOTE]
-> iOS 上的 Microsoft Defender for Endpoint 现已在 [Apple App Store 中提供](https://aka.ms/mdatpiosappstore)。
+> iOS 上的 Microsoft Defender for Endpoint 在 [Apple App Store 中提供](https://aka.ms/mdatpiosappstore)。
 
 ## <a name="deployment-steps"></a>部署步骤
 
@@ -78,9 +78,6 @@ ms.locfileid: "52624701"
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>VPN 配置文件的自动载入 (简化的载入) 
 
-> [!NOTE]
-> VPN 配置文件的自动载入目前处于预览阶段，在商业发行之前，本部分中提到的步骤可能会进行重大修改。
-
 管理员可以配置 VPN 配置文件的自动设置。 这将自动设置 Defender for Endpoint VPN 配置文件，无需用户在载入时这样做。 请注意，VPN 用于提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 
 1. 在 [Microsoft Endpoint Manager 管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到 **"设备**  ->  **配置文件""**  ->  **创建配置文件"。**
@@ -107,7 +104,7 @@ ms.locfileid: "52624701"
 
     ![自动生成的智能手机说明的屏幕截图](images/41627a709700c324849bf7e13510c516.png)
 
-2. 点击 Defender for Endpoint 应用图标并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
+2. 点击 MSDefender (Defender for Endpoint 应用) 并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
 
 3. 成功载入后，设备将开始显示在设备列表中的Microsoft Defender 安全中心。
 
@@ -133,7 +130,7 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 1. 在 *"创建应用配置策略"* 页中，提供以下信息：
     - Policy Name
     - 平台：选择 iOS/iPadOS
-    - 目标应用：**从Microsoft Defender ATP** 选择目标应用
+    - 目标应用：从 **列表中选择 Microsoft Defender** 终结点
 
     > [!div class="mx-imgBorder"]
     > ![管理Microsoft Endpoint Manager 5 的图像](images/ios-deploy-5.png)

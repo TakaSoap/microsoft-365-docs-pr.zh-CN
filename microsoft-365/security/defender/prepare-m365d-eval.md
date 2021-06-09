@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7ebb7074b0e06eda96d21142044bd8b9997e094b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935613"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841650"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>准备 Microsoft 365 Defender 试用实验室或试点环境
 
@@ -45,8 +45,8 @@ ms.locfileid: "51935613"
 
 准备工作是任何成功部署的关键。 本部分将指导你完成为 Defender 部署准备创建试用实验室或试验环境时需要考虑Microsoft 365内容。
 
-## <a name="prerequisites"></a>必备条件
-了解许可、硬件和软件要求以及其他配置设置，以预配和使用 Microsoft 365 Defender。 请参阅适用于 Microsoft 365 [Defender、Microsoft](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites)Defender [for Endpoint、Microsoft](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) [Defender for Office 365、Microsoft](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) [Defender for Identity、Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)的最低[要求](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)。
+## <a name="prerequisites"></a>先决条件
+了解许可、硬件和软件要求以及其他配置设置，以预配和使用 Microsoft 365 Defender。 请参阅适用于 Microsoft 365 [Defender、Microsoft](/microsoft-365/security/defender/prerequisites)Defender [for Endpoint、Microsoft](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) [Defender for Office 365、Microsoft](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) [Defender for Identity、Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites)的最低[要求](/azure-advanced-threat-protection/atp-prerequisites)。
 
 ## <a name="stakeholders-and-sign-off"></a>利益干系人与签署
 确定项目所涉及的所有利益干系人，以及可能需要签署、审阅或随时了解情况（无论是评估还是运行试验项目）的利益干系人。
@@ -62,7 +62,7 @@ ms.locfileid: "51935613"
 
 -   I = 已通知此项目
 
-| 名称                 | 角色                                                                                                                                                                                                          | Action |
+| 名称                 | Role                                                                                                                                                                                                          | 操作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **CISO (** 首席) 一名执行代表，他作为新技术部署 *的组织内部发起人。*                                                  | SO     |
 | 输入名称和电子邮件 | **网络防御运营中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*       | SO     |
@@ -85,10 +85,10 @@ ms.locfileid: "51935613"
 4. 导航到 **Express 设置**。
 ![Express 设置 页面的图像](../../media/mtp-eval-4.png) <br>
 
-5. 输入全局管理员凭据。 点击 **“下一步”**。
+5. 输入全局管理员凭据。 单击“**下一步**”。
 ![要连接 Azure AD 页面的图像，应在其中输入全局管理员凭据](../../media/mtp-eval-5.png) <br>
 
-6. 输入 Active Directory 域服务企业管理员凭据。 点击 **“下一步”**。
+6. 输入 Active Directory 域服务企业管理员凭据。 单击“**下一步**”。
 ![要连接 AD DS 页面的图像，应在其中输入凭据](../../media/mtp-eval-6.png) <br>
 
 7. 单击 **"安装** "以确认配置。

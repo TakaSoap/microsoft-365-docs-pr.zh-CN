@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9218ad447f926f0086801036277323e7c1efb4c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: bbb3e5dfe94d5efb026e21a4cbd94fac45f36594
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770555"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845218"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>通过软件 ID 获取缺失的 KB
 
@@ -102,5 +102,5 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmi
 
 ## <a name="related-topics"></a>相关主题
 
-- [基于风险的威胁&漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [威胁&漏洞软件清单](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [基于风险的威胁&漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [威胁&漏洞软件清单](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

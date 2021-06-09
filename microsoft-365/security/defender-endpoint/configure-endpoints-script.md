@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933909"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842166"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -58,7 +58,7 @@ ms.locfileid: "51933909"
     1. 单击 **下载程序包** 并保存.zip文件。
 
   
-2.  将配置包的内容解压缩到你想要载入 (的位置，例如桌面) 。 你应该有一个名为 *WindowsDefenderATPOnboardingScript.cmd 的文件*。
+2.  将配置包的内容解压缩到你想要载入 (的位置，例如桌面) 。 你应该有一个名为 *WindowsDefenderATPLocalOnboardingScript.cmd 的文件*。
 
 3.  在设备上打开提升的命令行提示符并运行脚本：
 
@@ -68,7 +68,7 @@ ms.locfileid: "51933909"
 
         ![指向"以管理员模式运行"的"窗口开始"菜单](images/run-as-admin.png)
 
-4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  按 **Enter 键** 或单击"确定 **"。**
 

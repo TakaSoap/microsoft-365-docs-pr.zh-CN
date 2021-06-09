@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651268"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842778"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -163,7 +163,7 @@ ms.locfileid: "52651268"
 
 ## <a name="1010031"></a>101.00.31
 
-- 为 [Intune 用户改进了产品载入体验](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- 为 [Intune 用户改进了产品载入体验](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - 防病毒 [排除项现在支持通配符](mac-exclusions.md#supported-exclusion-types)
 - 添加了从 macOS 上下文菜单触发防病毒扫描的能力。 现在，你可以右键单击查找器中的文件或文件夹，然后选择使用 **Microsoft Defender for Endpoint 扫描**
 - 安装程序现在明确不允许就地产品降级。 如果需要降级，请先卸载现有版本并重新配置设备

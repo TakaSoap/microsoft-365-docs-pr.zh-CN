@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470889"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842238"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -68,7 +68,7 @@ Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试�
 
 
 > [!NOTE]
-> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止[为文件定义排除Microsoft Defender 防病毒。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) 当指示器处于被动模式Microsoft Defender 防病毒不支持指示器。 
+> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止[为文件定义排除Microsoft Defender 防病毒。](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) 当指示器处于被动模式Microsoft Defender 防病毒不支持指示器。 
 
 
 ## <a name="related-topics"></a>相关主题

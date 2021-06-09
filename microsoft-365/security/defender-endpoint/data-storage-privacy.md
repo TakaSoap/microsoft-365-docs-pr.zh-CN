@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2279045093ebfac4a7eb4544a3e0c137c08c9c0c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0258b2cdbff4a8b20be42e508863985c7402f609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935385"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845506"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -56,7 +56,7 @@ Microsoft 不会将你的数据用于广告。
 ## <a name="data-protection-and-encryption"></a>数据保护和加密
 Defender for Endpoint 服务利用基于安全基础结构的Microsoft Azure技术。 
 
-我们的服务需要处理与数据保护相关的各个方面。 加密是最关键之一，它包括静态数据加密、进行中的加密和密钥保管库的密钥管理。 有关 Defender for Endpoint 服务使用的其他技术详细信息，请参阅 [Azure 加密概述](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)。 
+我们的服务需要处理与数据保护相关的各个方面。 加密是最关键之一，它包括静态数据加密、进行中的加密和密钥保管库的密钥管理。 有关 Defender for Endpoint 服务使用的其他技术详细信息，请参阅 [Azure 加密概述](/azure/security/security-azure-encryption-overview)。 
 
 在所有方案中，至少使用 256 位 [AES 加密对数据进行](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 加密。
 
@@ -86,7 +86,7 @@ Defender for Endpoint 在Microsoft Azure、英国或美国的数据中心运行�
 
 
 ## <a name="is-data-shared-with-other-customers"></a>数据是否与其他客户共享？
-否。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
+不正确。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 将存储我的数据多久？ 什么是 Microsoft 的数据保留策略？
 **在服务载入时**<br>

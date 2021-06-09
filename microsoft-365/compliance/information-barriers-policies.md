@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928012"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842718"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "50928012"
 |  (根据需要) [编辑段或策略](information-barriers-edit-segments-policies.md) | - 编辑线段<br/>- 编辑或删除策略<br/>- 重新运行策略应用程序<br/>- 查看策略状态 |
 |  (根据需要) [疑难解答](information-barriers-troubleshooting.md)| - 在未如期运行时采取措施|
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 除了所需的 [许可证和权限](information-barriers.md#required-licenses-and-permissions)之外，请确保满足以下要求：
 
@@ -76,7 +76,7 @@ ms.locfileid: "50928012"
 
 - 管理员同意 Microsoft Teams 中的信息屏障 - 如果符合您的 IBM 策略，他们可以从组 (（即基于组) 的 Teams 频道）中删除非 IBM 合规性用户。 此配置有助于确保组织符合策略和法规。 使用以下过程使信息屏障策略能够按照预期在Microsoft Teams。
 
-   1. 先决条件：从 Install Azure PowerShell[安装Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+   1. 先决条件：从 Install Azure PowerShell[安装Azure PowerShell](/powershell/azure/install-az-ps)。
 
    1. 运行以下 PowerShell cmdlet：
 
@@ -93,7 +93,7 @@ ms.locfileid: "50928012"
    1. 在"**请求的权限"** 对话框中，查看信息，然后选择"接受 **"。** 应用程序请求的权限如下所示。
       
       > [!div class="mx-imgBorder"]
-      > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+      > ![图像](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
 
 满足所有先决条件后，继续下一节。
@@ -257,7 +257,7 @@ ms.locfileid: "50928012"
 
 | 查看此信息 | 采取此操作 |
 |:---------------|:----------|
-| 用户帐户 | 将 **Get-InformationBarrierRecipientStatus** cmdlet 与 Identity 参数一同使用。 <p> 语法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p> 示例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 此 cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。|
+| 用户帐户 | 将 **Get-InformationBarrierRecipientStatus** cmdlet 与 Identity 参数一同使用。 <p> 语法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p> 例如：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 此 cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。|
 | 分段 | 使用 **Get-OrganizationSegment** cmdlet。<p> 语法： `Get-OrganizationSegment` <p> 此 cmdlet 将显示为组织定义的所有分段的列表。 |
 | 信息屏障策略 | 使用 **Get-InformationBarrierPolicy** cmdlet。 <p> 语法： `Get-InformationBarrierPolicy` <p> 此 cmdlet 将显示已定义的信息屏障策略及其状态的列表。 |
 | 最新信息屏障策略应用程序 | 使用 **Get-InformationBarrierPoliciesApplicationStatus** cmdlet。 <p> 语法： `Get-InformationBarrierPoliciesApplicationStatus`<p> 此 cmdlet 将显示有关策略应用程序已完成、失败还是正在进行的信息。 |

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 3346f6b4d05eb514bf680f87eb8452d9fd4bab38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445192"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841986"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 托管桌面服务说明
 
@@ -27,7 +27,7 @@ Microsoft 托管桌面服务为用户提供安全的新式体验，并总是提�
 - 配置设备
 - 根据 Microsoft 最佳实践，保证用户和设备安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和基于虚拟化的安全功能
 - 设备安全监控和修正服务
-- 应用兼容性，通过 [保证](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)
+- 应用兼容性，通过 [保证](/fasttrack/products-and-capabilities#app-assure)
 - Windows 10 和 Microsoft 365 企业应用版的更新管理
 - 设备和应用使用情况的分析数据
 - 面向用户的 IT 支持
