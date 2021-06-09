@@ -326,7 +326,7 @@
             - name: 设置合规性功能
               href: ../business/set-up-compliance.md
         - name: 安全评分
-          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: GDPR 合规性指南
           href: security-and-compliance/gdpr-compliance.md
     - name: 管理设备和应用数据
