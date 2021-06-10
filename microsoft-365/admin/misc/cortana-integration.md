@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或学校帐户的用户可以在满足企业Microsoft 365安全承诺Office 365 Cortana 体验。
-ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e4b934a8991837637869074d43df89e70b09924d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635794"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866615"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -89,19 +89,17 @@ Cortana 在 Teams 移动应用和 Microsoft Teams 显示设备上提供语音帮
 
 **管理员控制**
 
-默认情况下，将为租户启用 Cortana 语音协助。 管理员可以控制租户中的哪些人可以通过 TeamsCortanaPolicy Teams策略 (Cortana 语音) 。 可以在用户帐户级别或租户级别设置此策略。 管理员还可以在此策略控件内使用 CortanaVoiceInvocationMode 字段来确定 Cortana 是已禁用、仅通过一键调用启用，还是启用了唤醒词调用 (还适用于支持它的设备，如 Microsoft Teams display) 。 请注意，美国英语版 Microsoft 365 企业版 用户的初始版本时，Teams 移动应用将不支持唤醒词激活，但将来会受支持。
+默认情况下，将为租户启用 Cortana 语音协助。 管理员可以控制租户中的哪些人可以通过 TeamsCortanaPolicy Teams策略 (Cortana 语音) 。 可以在用户帐户级别或租户级别设置此策略。 管理员还可以在此策略控件内使用 CortanaVoiceInvocationMode 字段来确定 Cortana 是已禁用、仅通过一键调用启用，还是启用了唤醒词调用 (还适用于支持它的设备，如 Microsoft Teams display) 。 
 
 **用户控件**
 
-单个用户可以单击麦克风按钮，在Teams应用中试用 Cortana 语音帮助。 他们只需说 Microsoft Teams &#8220;Cortana.&#8221; 他们还可以控制 Teams 中的 Cortana 是否通过 Teams 移动应用或 Microsoft Teams 屏幕中的设置为设备启用 Cortana 语音帮助： 
+单个用户可以单击麦克风按钮，在Teams应用中试用 Cortana 语音帮助。 他们只需说&#8220;Cortana.&#8221;，就可以在Microsoft Teams设备上试用 Cortana 语音帮助。他们还可以控制 Cortana 是否响应唤醒词调用。 
 
-1. 打开Teams移动应用，或转到 (屏幕) 环境Microsoft Teams屏幕。
+1.  打开Teams移动版
+2.  转到设置
+3.  选择 Cortana
+4.  切换语音激活切换
 
-2. 在Teams移动应用中，转到 **"设置"。** 在屏幕Microsoft Teams，选择用户头像，然后选择"设置"。 如果 Cortana 已启用，&#8220;Cortana，请转到设置.&#8221;
-
-3. 选择 **Cortana**。
-
-4. 将切换开关移到 **开** 或 **关**，具体取决于你是否希望 Cortana 在设备上获得语音帮助。
 
 [详细了解 Cortana 语音帮助Teams](/microsoftteams/cortana-in-teams)
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a6271c1bd3714cfdffc606b7ada9b027e394216d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845638"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866723"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -46,11 +46,11 @@ ms.locfileid: "52845638"
 
 行为阻止和包含功能适用于 Defender for Endpoint 的多个组件和功能，可立即停止攻击并阻止攻击的进行。
 
-- [下一代](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止已开始运行的威胁。
+- [下一代](microsoft-defender-antivirus-in-windows-10.md) (防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止已开始运行的威胁。
 
-- [终结点检测和响应 (EDR) ](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
+- [终结点检测和响应 (EDR) ](overview-endpoint-detection-response.md)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
 
-- [Defender for Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 Microsoft 365 [Defender](/microsoft-365/security/defender/microsoft-threat-protection)的一个组件，用于处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
+- [Defender for Endpoint](overview-endpoint-detection-response.md)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 Microsoft 365 [Defender](../defender/microsoft-365-defender.md)的一个组件，用于处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。 
 
@@ -60,7 +60,7 @@ ms.locfileid: "52845638"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在电子邮件中Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) 信息警报。  (攻击面减少规则默认情况下未启用;在 Microsoft Defender 安全中心.) 
+- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在电子邮件中Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) 信息警报。  (攻击面减少规则默认情况下未启用;在 Microsoft Defender 安全中心.) 
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。)  
 
@@ -93,6 +93,7 @@ ms.locfileid: "52845638"
 如在热门威胁中所述： [基于 AI](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)驱动行为的阻止会停止其跟踪中的攻击，针对全球 100 个组织的凭据盗窃攻击已由行为阻止和封闭功能停止。 包含恶意文档的 Spear-phishing 电子邮件已发送到目标组织。 如果收件人打开了附件，相关远程文档可以在用户设备上执行代码并加载 Lokibot 恶意软件（该恶意软件会生成凭据、被盗数据被窃取，并等待命令和控制服务器提供进一步的说明）。 
 
 Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两个点捕获并停止了攻击者的技术：
+
 - 第一个保护层检测到攻击行为。 云中的设备学习分类器正确地将威胁标识为 并立即指示客户端设备阻止攻击。
 - 第二个保护层，帮助阻止攻击通过第一层、检测到进程正在停靠、停止该进程并删除了相应文件 (如 Lokibot) 。 
 
@@ -120,7 +121,7 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 ## <a name="next-steps"></a>后续步骤
 
-- [详细了解适用于终结点的 Defender](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [详细了解适用于终结点的 Defender](overview-endpoint-detection-response.md)
 
 - [配置攻击面减少规则](attack-surface-reduction.md)
 
@@ -128,4 +129,4 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 - [查看最近的全球威胁活动](https://www.microsoft.com/wdsi/threats)
 
-- [获取 Defender Microsoft 365概述](/microsoft-365/security/defender/microsoft-threat-protection)
+- [获取 Defender Microsoft 365概述](../defender/microsoft-365-defender.md)

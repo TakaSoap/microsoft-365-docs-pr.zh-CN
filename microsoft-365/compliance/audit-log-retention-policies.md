@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687355"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822137"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -77,7 +77,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
    5. **期限**：保留符合策略条件的审核日志的时间。
 
-   6. **优先级**：此值确定处理组织中的审核日志保留策略的顺序。 该值越大，表示优先级越高。 例如，优先级值为 **5** 的策略将优先于优先级值为 **0** 的策略。 如前文所述，任何自定义审核日志保留策略都优先于组织的默认策略。
+   6. **优先级**：此值确定处理组织中的审核日志保留策略的顺序。 该值越小，表示优先级越高。 有效优先级为 **1** 到 **10000** 之间的数值。 值 **1** 优先级最高，值为 **10000** 则优先级最低。 例如，如果策略的值为 **5**，则优先于值为 **10** 的策略。 如前文所述，任何自定义审核日志保留策略都优先于组织的默认策略。
 
 5. 单击“**保存**”以创建新的审核日志保留策略。
 
