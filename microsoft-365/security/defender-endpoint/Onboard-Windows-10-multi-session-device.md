@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841842"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861175"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虚拟桌面中载入 Windows 10 多会话设备 
 6 分钟阅读 
@@ -148,3 +148,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 许可注意事项：使用 Windows 10 企业版 多会话时，根据你的要求，你可以选择让所有用户通过 Microsoft Defender 针对终结点 (（针对每个用户) 、Windows Enterprise E5、Microsoft 365 安全或 Microsoft 365 E5）获得许可，或者通过 Azure Defender 许可 VM。
 有关 Microsoft Defender 终结点的许可要求，可位于： [许可要求](minimum-requirements.md#licensing-requirements)。
+
+#### <a name="related-links"></a>相关链接
+
+[使用 PowerShell 添加 Microsoft Defender 排除项](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)

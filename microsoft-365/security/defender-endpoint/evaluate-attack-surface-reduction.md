@@ -1,5 +1,5 @@
 ---
-title: 评估减少攻击面规则
+title: 评估攻击面减少规则
 description: 了解攻击面减少如何使用自定义演示工具阻止和阻止攻击。
 keywords: 攻击面减少， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， 评估， 测试， 演示
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771317"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861211"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>评估减少攻击面规则
+# <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,6 +41,9 @@ ms.locfileid: "52771317"
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+> [!WARNING]
+> 在客户端上启用攻击服务Windows Server 2016可能会导致意外结果并影响服务器性能。 建议不要启用攻击面减少规则或将攻击面减少规则部署到不受支持的平台。
 
 了解如何通过启用审核模式直接在你的组织中测试功能来评估攻击面减少规则。
 
@@ -90,4 +93,4 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 * [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
 * [使用审核模式评估Windows Defender](audit-windows-defender.md)
-* [关于减少攻击面的常见问题解答](attack-surface-reduction.md)
+* [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

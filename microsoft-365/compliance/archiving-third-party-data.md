@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822149"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861199"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -77,6 +77,7 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 |[Verizon 网络 <sup>1</sup>](archive-verizon-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[网页 <sup>2</sup>](archive-webpagecapture-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[WeChat <sup>1</sup>](archive-wechat-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Facebook <sup>2</sup>中的工作区](archive-workplacefromfacebook-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
@@ -139,6 +140,7 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 |O2 短信 和语音网络存档器 | 是         | 否 | 否 |
 |TELUS 短信 Network Archiver | 是 | 否 | 否 |
 |Verizon 短信/MMS 网络存档器 | 是 | 否 | 否 |
+|WeChat Archiver | 是 | 否 | 否 |
 |WhatsApp 存档程序 | 是 | 否 | 否 |
 |||||
 
