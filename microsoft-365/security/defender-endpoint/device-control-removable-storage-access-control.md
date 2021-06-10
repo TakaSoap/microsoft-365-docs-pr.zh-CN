@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841182"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861715"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -42,13 +42,17 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
 在存储客户端版本 **4.18.2103.3** 或更高版本的 Windows 10 设备上部署可移动访问控制。
-1. **4.18.2104 或** 更高版本：添加 SerialNumberId、VID_PID、基于文件路径的 GPO 支持
+1. **4.18.2104 或更高版本**：添加 SerialNumberId、VID_PID、基于 filepath 的 GPO 支持、ComputerSid
 
 2. **4.18.2105** 或更高版本：添加对 HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId 的通配符支持、特定计算机上特定用户的组合、可删除的 SSD (SanDisk 极性 SSD) /USB 附加 SCSI (UAS) 支持
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 接口":::
 
+   > [!NOTE]
+   > 任何Windows 安全中心组件都不需要处于活动状态，您可以运行"可移动存储访问控制"，而不受Windows 安全中心状态。
+
 ## <a name="policy-properties"></a>策略属性
+
 
 可以使用以下属性创建可移动存储组：
 
@@ -87,6 +91,8 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
     - MatchAny：DescriptorIdList 下的属性将为 **Or** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 上，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系统就会执行强制操作。
 
+
+
 以下是访问控制策略属性：
 
 **属性名称：PolicyRuleId**
@@ -124,6 +130,14 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
     - AuditDenied：定义拒绝访问时的通知和事件;必须配合拒绝 **条目** 一起工作。
 
 当同一媒体存在冲突类型时，系统将应用策略中的第一个冲突类型。 冲突类型的一个示例是 **"允许"和**"**拒绝"。**
+
+**属性名称：Sid**
+
+1. 说明：定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。
+
+**属性名称：ComputerSid**
+
+1. 说明：定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，一个条目不带任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。
 
 **属性名称：Options**
 

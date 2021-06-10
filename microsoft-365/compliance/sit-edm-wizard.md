@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 学习如何使用精确数据匹配和敏感信息类型向导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878000"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861655"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>使用精确数据匹配架构和敏感信息类型向导
 
@@ -42,7 +42,7 @@ ms.locfileid: "52878000"
 
 1. 通过 EDM [工作流程概览](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) 熟悉使用 EDM 创建自定义敏感信息类型的步骤。
 
-2. 执行以 .csv [.tsv 格式保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
+2. 执行 [以 .csv 格式保存敏感数据](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) 一节中的步骤。
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>使用精确数据匹配架构和敏感信息类型模式向导
 

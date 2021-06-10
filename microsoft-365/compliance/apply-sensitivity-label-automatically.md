@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769289"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866735"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -60,7 +60,8 @@ ms.locfileid: "52769289"
     
     特定于 SharePoint 和 OneDrive 的自动标记：
     - 支持 Word、PowerPoint 和 Excel 的 Office 檔案。支持 Open XML 格式（如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（如 .doc 和 .xls）。
-        - 创建自动标签策略之前或之后，这些文件可自动标记。 请注意，如果文件是打开的会话的一部分（文件已打开），则不能自动标记它们。
+        - 创建自动标签策略之前或之后，这些文件可自动标记。 如果文件是打开的会话的一部分（文件已打开），则不能自动标记它们。
+        - 目前不支持列表项的附件，且不会自动标记。
     - 租户中每天最多自动标记 25,000 个文件。
     - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。
@@ -189,7 +190,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 

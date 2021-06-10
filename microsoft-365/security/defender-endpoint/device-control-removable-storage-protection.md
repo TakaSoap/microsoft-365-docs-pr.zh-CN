@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 55171429d3ea447de32eb7e2ec12b8b2c3542e95
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538383"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861703"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint 设备控制可移动存储保护
 
@@ -35,7 +35,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储保护可防止用户
 
 **功能** - 根据各种设备属性阻止安装（包括或不排除）。
 
-**说明**
+**Windows 10支持详细信息**
 - 在计算机级别应用：同一策略适用于任何登录的用户。
 - 支持 MEM 和 GPO。
 - 支持的'[设备属性](#device-properties)'，如所列。
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储保护可防止用户
 
 **支持的平台**- Windows 10
 
-**说明**
+**macOS 支持详细信息**
 - 在计算机级别应用：相同的策略适用于任何登录的用户
 - 有关 macOS 特定的信息，请参阅 [macOS 的设备控件](mac-device-control-overview.md)。
  
@@ -55,7 +55,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储保护可防止用户
 - *审核* 基于各种设备属性对可移动存储的读取、写入或执行访问（带排除或不排除）。
 - *阻止* 读取或写入或执行访问（带排除或不排除） - 允许基于各种设备属性的特定设备。
 
-**说明**
+**Windows 10支持详细信息**
 - 在计算机或用户或两者中应用 – 仅允许对特定计算机上特定可移动存储执行读/写/执行访问的特定人员。
 - 支持 MEM OMA-URI 和 GPO。
 - 支持的'[设备属性](#device-properties)'，如所列。
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储保护可防止用户
 
 **支持的平台**- Windows 10
 
-**说明**
+**macOS 支持详细信息**
 - 在计算机级别应用：同一策略适用于任何登录的用户。
 - 有关 macOS 特定的信息，请参阅 [macOS 的设备控件](mac-device-control-overview.md)。
  
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储保护可防止用户
 
 **功能**- 拒绝对可移植设备Windows [](/windows-hardware/drivers/portable/)读取或写入访问，例如：平板电脑、iPhone。
 
-**说明**
+**描述**
 - 在计算机或用户或两者中应用。
 - 支持 MEM OMA-URI 和 GPO。
 

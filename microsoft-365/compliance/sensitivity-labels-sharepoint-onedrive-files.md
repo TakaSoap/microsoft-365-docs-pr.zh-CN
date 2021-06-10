@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以启用 Word、Excel 和 PowerPoint 中的敏感度SharePoint OneDrive。
-ms.openlocfilehash: 695084443ee10de87f091d358b63fad079e03093
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: d4c0f9b4c280394dd63820320ba7ca30e349c361
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861511"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878036"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-为 Office 和 SharePoint 中的OneDrive启用敏感度标签，以便用户可以在 web Office 应用敏感度标签。 [](sensitivity-labels.md) 启用此功能后，用户将看到功能区上的"敏感度"按钮，以便他们可以应用标签，并查看状态栏上任何应用的标签名称。
+在 SharePoint 和 SharePoint [](sensitivity-labels-office-apps.md#office-file-types-supported) OneDrive 中为受支持的 Office 文件启用内置标签，以便用户可以在 Office 网页[](sensitivity-labels.md)中应用敏感度标签。 启用此功能后，用户将看到功能区上的"敏感度"按钮，以便他们可以应用标签，并查看状态栏上任何应用的标签名称。
 
-启用此功能还SharePoint OneDrive处理已使用敏感度标签加密的文件的内容。 标签可应用于Office或桌面Office应用，并上传或保存在SharePoint OneDrive。 在启用此功能之前，这些服务无法处理加密文件，这意味着共同授权、电子数据展示、数据丢失防护、搜索和其他协作功能对这些文件不起作用。
+启用此功能还会导致SharePoint OneDrive处理已使用敏感度标签加密的 Office 文件的内容。 标签可应用于Office或桌面Office应用，并上传或保存在SharePoint OneDrive。 在启用此功能之前，这些服务无法处理加密文件，这意味着共同授权、电子数据展示、数据丢失防护、搜索和其他协作功能对这些文件不起作用。
 
 为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签后，对于敏感度标签为新的和已更改的文件（使用基于云的密钥 (应用加密，并且不使用双密钥加密) ： [](double-key-encryption.md)
 
