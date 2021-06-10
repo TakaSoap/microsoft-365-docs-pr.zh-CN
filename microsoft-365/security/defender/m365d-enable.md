@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3d7564b5d509190c8c8e799c541bb0ca583097f1
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3f05cc8c9b2509f8c95b802f56905e2859221cd2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636226"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861595"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ Microsoft 365Defender 将在 Microsoft Defender for Endpoint 所使用的相同�
 选择 **安全中心** 中的"需要帮助Microsoft 365联系 Microsoft 支持人员，以Microsoft 365其他数据中心位置预配 Defender。
 
 > [!NOTE]
-> Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动设置。 Microsoft 365Defender 将自动在相同的欧盟数据中心为已预配 Defender for Endpoint 的客户进行预配。
+> 过去，Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动预配。 Microsoft 365Defender 将自动在同一欧盟数据中心为过去以此方式预配终结点的客户的 Defender 进行预配。
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 

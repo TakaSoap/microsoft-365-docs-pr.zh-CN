@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 39f8367c34e98c5e9dd11e9716f08e6c9e7fd9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935121"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877832"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -79,9 +79,9 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
+| **键** | deviceControl |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **备注** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 
 设备控制策略可用于：
 
@@ -99,9 +99,9 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
+| **键** | navigationTarget |
 | **数据类型** | String |
-| **备注** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
+| **Comments** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
 
 ### <a name="allow-or-block-removable-devices"></a>允许或阻止可移动设备
 
@@ -113,9 +113,9 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
+| **键** | removableMediaPolicy |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **备注** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 
 该策略的这一部分是分层的，允许实现最大灵活性并涵盖各种用例。 顶级是供应商，由供应商 ID 标识。 对于每个供应商，都有由产品 ID 标识的产品。 最后，对于每个产品，都有表示特定设备的序列号。
 
@@ -146,7 +146,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
+| **键** | enforcementLevel |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block |
 
@@ -171,7 +171,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 无 <br/> 阅读 <br/> 写入 <br/> execute |
 
@@ -186,7 +186,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | 供应商 |
+| **键** | 供应商 |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个供应商，你可以为来自该供应商的设备指定所需的权限级别。
@@ -194,7 +194,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -203,7 +203,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | products |
+| **键** | products |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个产品，您可以为该产品指定所需的权限级别。
@@ -211,7 +211,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -222,7 +222,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
+| **键** | serialNumbers |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个序列号，您可以指定所需的权限级别。
@@ -230,7 +230,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -330,7 +330,7 @@ macOS 的设备控件具有以下先决条件：
 
 ```
 DeviceEvents 
-    | where ActionType == "UsbDriveMount" or ActionType == "UsbDriveUnmount" or ActionType == "UsbDriveDriveLetterChanged"
+    | where ActionType == "UsbDriveMounted" or ActionType == "UsbDriveUnmounted" or ActionType == "UsbDriveDriveLetterChanged"
     | where DeviceId == "<device ID>"
 ```
 

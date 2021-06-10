@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4be87e296739020c80babb864c57bc803f10d3e0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 6def1b64430ad70dc4b4898ba2b914288826873e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843682"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861487"
 ---
 # <a name="list-vulnerabilities"></a>列出漏洞
 
@@ -39,7 +39,7 @@ ms.locfileid: "52843682"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-检索影响组织的所有漏洞的列表。
+检索所有漏洞的列表。
 
 ## <a name="permissions"></a>权限
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md) 了解详细信息。

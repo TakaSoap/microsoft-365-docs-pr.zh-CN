@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793156"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877880"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for (AIR) 自动调查和响应Office 365
 
@@ -46,7 +46,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 - AIR [的整体流](#the-overall-flow-of-air);
 - [如何获取 AIR](#how-to-get-air);和
 - [配置或使用](#required-permissions-to-use-air-capabilities)AIR 功能所需的权限。
-- 即将对安全中心所做的更改
+- 即将对 Defender 门户Microsoft 365的更改
 
 本文还包括用于 [了解更多信息](#next-steps)的以下步骤 和资源。
 
@@ -89,7 +89,11 @@ AIR 功能包含在[Microsoft Defender for Office 365](defender-for-office-365.m
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>哪些警报策略会触发自动调查？
 
-Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](../../compliance/alert-policies.md#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365安全中心中的严重性以及如何生成这些警报：
+Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](../../compliance/alert-policies.md#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365 Defender 门户中的严重性以及如何生成它们：
+
+<br>
+
+****
 
 |通知|严重性|警报的生成方式|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 
 权限通过某些角色授予，如下表中所述的角色：
 
+<br>
+
+****
+
 |任务|需要 (角色) 角色|
 |---|---|
 |设置 AIR 功能|下列角色之一： <ul><li>全局管理员</li><li>安全管理员</li></ul> <p> 可以在安全与合规[中心Azure Active Directory分配](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)&[角色](permissions-in-the-security-and-compliance-center.md)。|
 |启动自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|在安全与合规[中心Azure Active Directory分配](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)以下角色&[之一](permissions-in-the-security-and-compliance-center.md)： <ul><li>全局管理员</li><li>安全管理员</li><li>安全操作员</li><li>安全读取者 <br> --- 和 --- </li><li>搜索和 (此角色仅在安全与合规& [分配](permissions-in-the-security-and-compliance-center.md)。 您可能必须在那里创建新角色组，并添加搜索和清除角色到该新角色组。</li></ul>|
+|
 
 ## <a name="required-licenses"></a>所需的许可证
 
@@ -121,16 +130,16 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 - 组织的安全运营团队 (包括安全读者以及具有"搜索和清除"角色) 
 - 最终用户
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>即将在安全中心内进行更改
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>你的 Defender 门户即将Microsoft 365更改
 
-如果你已在 Microsoft Defender 中为 Office 365 使用 AIR 功能，你将在改进的 Microsoft 365 安全中心[看到一些更改](../defender/overview-security-center.md)。
+如果你已在 Microsoft Defender 中为 Office 365 使用 AIR 功能，你将在改进的 Microsoft 365 Defender 门户[中](../defender/overview-security-center.md)看到一些更改。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心":::
 
-新的和改进的安全中心将[MICROSOFT Defender](defender-for-office-365.md) for Office 365 和 Microsoft Defender for Endpoint 中的 AIR 功能[汇集在一起](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。
+新的和改进的 Microsoft 365 Defender 门户将 Microsoft Defender for [Office 365](defender-for-office-365.md)和 Microsoft Defender for Endpoint 中的[AIR 功能汇集在一起](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。
 
 > [!TIP]
-> 新Microsoft 365安全 <https://security.microsoft.com> () 以下中心：
+> 新 Microsoft 365 Microsoft 365 Defender <https://security.microsoft.com> () 替换了以下中心：
 >
 > - Office 365安全&合规中心 <https://protection.office.com> () 
 > - <https://securitycenter.windows.com>Microsoft Defender 安全中心 () 
@@ -140,6 +149,10 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 ### <a name="what-to-expect"></a>预期结果
 
 下表列出了 Microsoft Defender for Office 365 中的 AIR 即将Office 365。
+
+<br>
+
+****
 
 |Item|更改了哪些方面？|
 |---|---|

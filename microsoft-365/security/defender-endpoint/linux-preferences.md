@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346374"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861547"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -57,9 +57,9 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | antivirusEngine |
+| **键** | antivirusEngine |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **备注** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 |||
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
@@ -68,7 +68,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | enableRealTimeProtection |
+| **键** | enableRealTimeProtection |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 |||
@@ -84,10 +84,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | passiveMode |
+| **键** | passiveMode |
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
-| **备注** | 适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。 |
+| **Comments** | 适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。 |
 |||
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
@@ -96,10 +96,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | exclusionsMergePolicy |
+| **键** | exclusionsMergePolicy |
 | **数据类型** | String |
 | **可能的值** | 合并 (默认)  <br/> admin_only |
-| **备注** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
+| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
 |||
 
 #### <a name="scan-exclusions"></a>扫描排除项
@@ -109,9 +109,9 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | 排除项 |
+| **键** | 排除项 |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **备注** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 |||
 
 **排除类型**
@@ -120,7 +120,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | $type |
+| **键** | $type |
 | **数据类型** | String |
 | **可能的值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 |||
@@ -131,22 +131,22 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | path |
+| **键** | path |
 | **数据类型** | String |
 | **可能的值** | 有效路径 |
-| **备注** | 仅在 *排除$type**时适用* |
+| **Comments** | 仅在 *排除$type**时适用* |
 |||
 
 **文件 (目录的路径)**
 
-指示 path *属性* 是否引用文件或目录。 
+指示 path *属性* 是否引用文件或目录。
 
 |||
 |:---|:---|
-| **Key** | isDirectory |
+| **键** | isDirectory |
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
-| **备注** | 仅在 *排除$type**时适用* |
+| **Comments** | 仅在 *排除$type**时适用* |
 |||
 
 **从扫描中排除的文件扩展名**
@@ -155,10 +155,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | extension |
+| **键** | extension |
 | **数据类型** | String |
 | **可能的值** | 有效的文件扩展名 |
-| **备注** | 仅在 *排除**$type FileExtension 时适用* |
+| **Comments** | 仅在 *排除**$type FileExtension 时适用* |
 |||
 
 **从扫描中排除的进程**
@@ -167,10 +167,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | name |
+| **键** | name |
 | **数据类型** | String |
 | **可能的值** | 任何字符串 |
-| **备注** | 仅在 *排除**$type FileName 时适用* |
+| **Comments** | 仅在 *排除**$type FileName 时适用* |
 |||
 
 #### <a name="allowed-threats"></a>允许的威胁
@@ -179,7 +179,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | allowedThreats |
+| **键** | allowedThreats |
 | **数据类型** | 字符串数组 |
 |||
 
@@ -189,10 +189,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | disallowedThreatActions |
+| **键** | disallowedThreatActions |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 允许 (限制用户允许威胁)  <br/> restore (限制用户从隔离网站还原)  |
-| **备注** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
+| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
 |||
 
 #### <a name="threat-type-settings"></a>威胁类型设置
@@ -201,9 +201,9 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | threatTypeSettings |
+| **键** | threatTypeSettings |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **备注** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 |||
 
 **威胁类型**
@@ -212,7 +212,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | 注册表项 |
+| **键** | 注册表项 |
 | **数据类型** | String |
 | **可能的值** | potentially_unwanted_application <br/> archive_bomb |
 |||
@@ -227,7 +227,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | 值 |
+| **键** | 值 |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block <br/> off |
 |||
@@ -238,10 +238,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | threatTypeSettingsMergePolicy |
+| **键** | threatTypeSettingsMergePolicy |
 | **数据类型** | String |
 | **可能的值** | 合并 (默认)  <br/> admin_only |
-| **备注** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
+| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
 |||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
@@ -250,10 +250,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | scanResultsRetentionDays |
+| **键** | scanResultsRetentionDays |
 | **数据类型** | String |
 | **可能的值** | 90 (默认值) 。 允许的值从 1 天到 180 天。 |
-| **备注** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
+| **Comments** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
 |||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>防病毒扫描历史记录中的最大项目数
@@ -262,10 +262,10 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | scanHistoryMaximumItems |
+| **键** | scanHistoryMaximumItems |
 | **数据类型** | String |
 | **可能的值** | 10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。 |
-| **备注** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
+| **Comments** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
 |||
 
 ### <a name="cloud-delivered-protection-preferences"></a>云提供的保护首选项
@@ -274,9 +274,9 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | cloudService |
+| **键** | cloudService |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **备注** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 |||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云提供的保护
@@ -285,7 +285,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | enabled |
+| **键** | enabled |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 |||
@@ -296,7 +296,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | diagnosticLevel |
+| **键** | diagnosticLevel |
 | **数据类型** | String |
 | **可能的值** | 可选 (默认)  <br/> 必需 |
 |||
@@ -311,7 +311,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | automaticSampleSubmissionConsent |
+| **键** | automaticSampleSubmissionConsent |
 | **数据类型** | String |
 | **可能的值** | 无 <br/> 安全 (默认)  <br/> all |
 |||
@@ -322,7 +322,7 @@ ms.locfileid: "52346374"
 
 |||
 |:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
+| **键** | automaticDefinitionUpdateEnabled |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 |||
@@ -397,7 +397,7 @@ ms.locfileid: "52346374"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -444,7 +444,7 @@ python -m json.tool mdatp_managed.json
 如果 JSON 格式良好，则上述命令会输出回终端，并返回 的退出代码 `0` 。 否则，将显示描述该问题的错误，并且该命令将返回 的退出代码 `1` 。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>验证文件mdatp_managed.js是否正常工作
-若要验证 /etc/opt/microsoft/mdatp/managed/mdatp_managed.json 是否正常工作，应在这些设置旁边看到"[托管]"：  
+若要验证 /etc/opt/microsoft/mdatp/managed/mdatp_managed.json 是否正常工作，应在这些设置旁边看到"[托管]"：
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

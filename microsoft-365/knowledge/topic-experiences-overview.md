@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866687"
+ms.locfileid: "52877808"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
@@ -70,7 +70,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 知识管理员可选择对租户中所有 SharePoint 网站进行主题爬网，或仅选择特定内容。
 
-请参阅 [主题发现和库化](./topic-experiences-discovery-curation.md)。
+有关详细信息，请参阅 [主题发现和库化](./topic-experiences-discovery-curation.md)。
 
 ## <a name="roles"></a>角色
 
@@ -90,15 +90,15 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 主题管理在组织 **主题中心的"** 管理主题" *页中完成*。 主题中心在设置过程中创建，并充当组织的知识中心。 
 
-尽管所有许可用户都可以在主题中心查看他们连接的主题，但只有具有管理主题权限 (知识管理员) 才能查看和使用"管理主题 **"页。**
+虽然所有许可用户都可以在主题中心查看他们连接的主题，但只有具有管理主题权限 (知识经理) 才能查看和使用"管理主题 **"页。**
 
 知识经理可以：
 
 - 确认或删除在租户中发现的主题。
 - 根据需要手动创建新主题（例如，如果提供的信息不够充分，无法通过 AI 发现）。
-- 编辑现有主题页面。<br/>
+- 编辑现有主题页面。
 
-有关详细信息，请参阅主题 [中心中的管理主题](manage-topics.md)。  
+有关详细信息，请参阅主题 [中心 中的管理主题](manage-topics.md)。  
 
 ## <a name="admin-controls"></a>管理员控件
 

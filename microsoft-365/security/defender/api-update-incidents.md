@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730854"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861499"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -84,7 +84,7 @@ Content-Type | String | application/json. **必需**。
 assignedTo | string | 事件的所有者。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 确定 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
-标记 | 字符串列表 | 事件标记列表。
+tags | 字符串列表 | 事件标记列表。
 comment | string | 要添加到事件的注释。
 
 ## <a name="response"></a>响应

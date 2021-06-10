@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界创建逻辑边界，以控制电子数据展示管理员可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706602"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878024"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>设置电子数据展示调查的合规性边界
 
@@ -92,6 +92,9 @@ ms.locfileid: "52706602"
 虽然更多用户属性可用，尤其是Exchange，但上面列出的属性是当前唯一受 OneDrive。
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步骤 2：向 Microsoft 支持人员提出将用户属性同步到帐户OneDrive请求
+
+> [!IMPORTANT]
+> 不再需要此步骤。 从 2021 年 6 月开始，邮箱筛选器将应用于OneDrive for Business。 用于将属性同步到OneDrive的支持请求将被拒绝，因为不再需要此请求。 本文将在近期内更新。
 
 下一步是向 Microsoft 支持部门提交请求，以将步骤 1 中选择的 Azure AD 属性同步到OneDrive帐户。 发生此同步后， (属性及其值) 步骤 1 中选择的值将映射到名为 的隐藏托管属性 `ComplianceAttribute` 。 您可以使用此属性在步骤 4 中为OneDrive创建搜索权限筛选器。
   
@@ -293,7 +296,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜索权限筛选器未应用于 Exchange 公用文件夹。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 如果邮箱已取消授权或软删除，Azure AD 属性将不再同步到邮箱。 如果在删除邮箱时将邮箱置于保留状态，则保留在邮箱中的内容仍受合规性边界或搜索权限筛选器的限制，此限制基于上次在删除邮箱之前同步 Azure AD 属性的时间。 
 
@@ -309,7 +312,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 建议不要将排除筛选器 (例如，在基于内容的合规性) 搜索 `-not()` 权限筛选器中使用。 如果未对具有最近更新的属性的内容编制索引，则使用排除筛选器可能会获得意外结果。 
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **Who使用 cmdlet 和 (cmdlet 创建 (New-ComplianceSecurityFilterSet-ComplianceSecurityFilter权限筛选器) ？**
   

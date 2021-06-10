@@ -1,6 +1,6 @@
 ---
 title: 电子邮件保护的顺序和优先级
-keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Defender for Identity
+keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， Microsoft 365 Defender 门户， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (中的保护) ，以及保护策略中的优先级值如何确定应用的策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539007"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877844"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
@@ -45,7 +45,7 @@ ms.locfileid: "52539007"
 
   ****
 
-  |优先级|电子邮件保护|类别|管理位置|
+  |优先级|电子邮件保护|Category|管理位置|
   |---|---|---|---|
   |1|恶意软件|CAT：MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
   |2|网络钓鱼|CAT：PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|

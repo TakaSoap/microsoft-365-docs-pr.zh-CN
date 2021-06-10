@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908170"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861679"
 ---
 # <a name="privacy-and-personal-data"></a>隐私和个人数据
 
@@ -109,10 +109,8 @@ Microsoft Defender for Endpoint 数据存储在几个不同的区域。 因此�
 以多种方式Microsoft 托管桌面对内部数据存储的直接访问：
 
 - 它需要工程领导级审批。
-- 它同时受到审核和时间限制。
-- 它需要使用高度安全且受限制的工作站。
+- 它是有限制和审核的。
 - 所有数据在存储时都进行加密。
-- 没有长期访问权限。
 - 访问Microsoft 托管桌面管理门户需要高度安全且受限制的工作站。
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>以合规方式处理个人数据

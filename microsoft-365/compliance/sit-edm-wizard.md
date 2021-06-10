@@ -6,10 +6,10 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 学习如何使用精确数据匹配和敏感信息类型向导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2081de887e09794350222dac3527bb3ff932837a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
-ms.translationtype: HT
+ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699141"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878000"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>使用精确数据匹配架构和敏感信息类型向导
 
-[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建您的架构和敏感信息类型（规则包）文件，以帮助简化过程。
+[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (规则包) 文件来帮助简化此过程。
 
 > [!NOTE]
 > 精确数据匹配架构和敏感信息类型向导仅用于 World Wide 和 GCC。
@@ -42,7 +42,7 @@ ms.locfileid: "49699141"
 
 1. 通过 EDM [工作流程概览](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) 熟悉使用 EDM 创建自定义敏感信息类型的步骤。
 
-2. 执行 [以 .csv 格式保存敏感数据](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) 一节中的步骤。
+2. 执行以 .csv [.tsv 格式保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>使用精确数据匹配架构和敏感信息类型模式向导
 
@@ -54,7 +54,7 @@ ms.locfileid: "49699141"
 
 3. 填入相应的 **名称** 和 **说明**。
 
-4. 如果愿意，选择 **为所有架构字段忽略分隔符和标点符号**。 若要了解配置 EDM 忽略分隔符方面的详细信息，请参阅 [使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
+4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要了解有关将 EDM 配置为忽略大小写或分隔符的信息，请参阅使用基于 [EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
 
 5. 在 **架构字段 #1** 中填入所需值，并按需要添加新字段。 
 
@@ -77,7 +77,7 @@ ms.locfileid: "49699141"
 
 13. 选择所需的 **可信度和字符邻近度**。  此操作将设定整个 EDM 敏感信息类型的默认值。
 
-13. 若要为 EDM 敏感信息类型创建其他模式，请选择 **创建模式**。
+13. 如果要 **为** EDM 敏感信息类型创建其他模式，请选择"创建模式"。
 
 14. 选择 **下一步** 并填写 **名称** 和 **面向管理员的说明**。
 
@@ -88,6 +88,23 @@ ms.locfileid: "49699141"
 > [!IMPORTANT]
 > 若要删除已经关联某一 EDM 敏感信息类型的架构，必须先删除此 EDM 敏感信息类型，然后才能删除架构。
 
-## <a name="post-steps"></a>后续步骤
+## <a name="post-creation-steps"></a>创建后的步骤
 
 使用此向导创建 EDM 架构和模式（规则包）文件后，还必须执行 [第二部分：哈希和上传敏感数据](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) 中的步骤，才能使用此 EDM 自定义敏感信息类型。
+
+确认敏感信息表已正确上载后，可以测试其是否正常工作。
+
+1. 打开 **合规中心**  >  **数据分类**  >  **敏感信息类型**。
+2. 从列表中选择 EDM SIT，然后在飞 **出窗格中** 选择"测试"。 
+3. Upload包含要检测的数据的项，例如创建一个包含敏感信息表中的部分数据的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含带和不带这些分隔符的示例。
+4. 上传并扫描文件后，检查 EDM SIT 的匹配项。
+5. 如果 **SIT** 中的 Test 函数检测到匹配项，请检查它未进行修整或提取不正确。 例如，通过仅提取它应检测的完整字符串的子字符串，或仅选取多词字符串中的第一个单词，或在提取中添加额外的符号或字符。 有关 [正则表达式语言参考，](/dotnet/standard/base-types/regular-expression-language-quick-reference) 请参阅正则表达式语言 - 快速参考。 
+
+### <a name="troubleshooting"></a>疑难解答
+
+如果找不到任何匹配项，请尝试执行以下操作：
+- 使用使用 [EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)工具上传敏感数据的指南中介绍的命令确认你的敏感数据已正确上载。
+- 检查在项中输入的示例是否存在于敏感信息表中，以及忽略的分隔符是否正确。
+- **测试** 在每个模式中配置主元素时所使用的 SIT。 这将确认 SIT 能够匹配项中的示例。 
+  -  如果为 EDM 类型中的主元素选择的 SIT 在项中找不到匹配项或找到的匹配项数低于预期，请检查它是否支持存在于内容中的分隔符和分隔符。 请务必在架构中包括定义的忽略分隔符。 
+  -  如果 **Test** 函数完全检测不到任何内容，请检查所选的 SIT 是否包含其他关键字或其他验证的要求。 有关内置 SIT，请参阅敏感信息类型 [实体](sensitive-information-type-entity-definitions.md) 定义，以验证匹配每种类型的最低要求。

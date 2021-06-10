@@ -17,12 +17,12 @@ ms.collection:
 description: '详细了解 EOP Exchange Online Protection (中的默认设置) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624045"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861523"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下，安全Office 365
 
@@ -58,7 +58,7 @@ Microsoft 365邮箱的组织Exchange Online EOP Exchange Online Protection (保�
 有关这些替代项详细信息，请参阅创建 [安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 > [!NOTE]
-> 我们正在弃用 EOP 反垃圾邮件策略中的高可信度网络钓鱼电子邮件裁定的"将邮件移动到垃圾邮件文件夹"操作。 对高可信度网络钓鱼邮件使用此操作的反垃圾邮件策略将转换为隔离 **邮件**。 高 **可信度网络钓鱼** 邮件的"将邮件重定向到电子邮件地址"操作不受影响。
+> 我们已在 EOP 反垃圾邮件策略中针对高可信度网络钓鱼电子邮件裁定弃用"将邮件移动到垃圾邮件文件夹"操作。 对高可信度网络钓鱼邮件使用此操作的反垃圾邮件策略将转换为隔离 **邮件**。 高 **可信度网络钓鱼** 邮件的"将邮件重定向到电子邮件地址"操作不受影响。
 
 默认情况下，"安全"不是可以打开或关闭的设置，而是我们的筛选开箱即用来将潜在危险或不需要的邮件从邮箱中排除的方式。 应隔离恶意软件和高可信度网络钓鱼邮件。 只有管理员才能管理被隔离为恶意软件或高可信度网络钓鱼的邮件，并且他们还可以从该邮件向 Microsoft 报告误报。 有关详细信息，请参阅在 EOP 中以管理员角色管理隔离 [的邮件和文件](manage-quarantined-messages-and-files.md)
 

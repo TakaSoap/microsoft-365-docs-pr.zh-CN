@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822318"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861691"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -61,7 +61,9 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 - Windows 10 企业版E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint 独立许可证。 
 - 访问 Microsoft Defender 安全中心 门户 (https://securitycenter.windows.com) 。
-- 运行 Windows 10 周年更新 (版本 1607) 或更高版本，包含最新的 Microsoft Defender 反恶意软件引擎更新。
+- 运行 Windows 10 周年更新 (版本 1607) 或更高版本使用最新的 MoCAMP 更新。
+- Windows DefenderSmartScreen 和网络保护已启用。
+
 
 ## <a name="data-handling"></a>数据处理
 
@@ -162,4 +164,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 - Web 内容筛选报告当前限制为显示前 5000 条记录。 例如，"域"报告最多只显示给定筛选器查询前 5000 个域（如果适用）。 
 
+
+
+- [Web 保护功能概述](web-protection-overview.md)
+- [Web 威胁防护功能](web-threat-protection.md)
+- [监视 web 安全性](web-protection-monitoring.md)
+- [响应 web 威胁](web-protection-response.md)
+- [网络保护的要求](web-content-filtering.md)
 

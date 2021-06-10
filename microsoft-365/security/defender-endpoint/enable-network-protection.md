@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841770"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861667"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -43,7 +43,7 @@ ms.locfileid: "52841770"
 
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
 
-3. 在嵌套菜单中导航到 **SOFTWARE**  >  **Policies**  >  **Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
+3. 在嵌套菜单中导航到 **SOFTWARE**  >  **Microsoft**  >  **Windows Defender Windows Defender** Exploit  >  **Guard**  >  **网络保护**
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
 
@@ -120,7 +120,7 @@ ms.locfileid: "52841770"
 
 1. 选择 **"开始** " **并键入 regedit** 以 **打开注册表编辑器**。
 
-2. 导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
+2. 导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. 选择 **EnableNetworkProtection** 并确认值：
    * 0=Off
