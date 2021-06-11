@@ -336,6 +336,8 @@
                       href: api-list-incidents.md
                     - name: 更新事件
                       href: api-update-incidents.md
+                    - name: 获取事件
+                      href: api-get-incident.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
