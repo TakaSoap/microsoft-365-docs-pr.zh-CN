@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: 3c41e52803c78cc687134c6c68899466236ceca3
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331906"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888345"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -105,4 +105,5 @@ ms.locfileid: "52331906"
 
 [通过发票、信用卡或银行帐户支付](pay-for-your-subscription.md)（文章） \
 [管理付款方式](manage-payment-methods.md)（文章） \
+[Microsoft 365 商业版（墨西哥）的帐单信息](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) （文章）\
 [Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)（文章）

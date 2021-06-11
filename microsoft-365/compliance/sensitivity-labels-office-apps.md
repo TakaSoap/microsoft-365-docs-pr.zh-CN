@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da3d971a1ef55d343ac1b61e6457981022c4c92
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6e22ca460acf96151ff54e3b2bbbe03ad1a97a27
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770372"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888393"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -61,7 +61,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | 审阅中 |
+|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | 即将推出 |
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 推出时间：16.0.13628 及以上 | 是的 <sup>\*</sup>                                                        |
