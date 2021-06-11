@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何查看报告的消息，并为用户提供反馈。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 9e6969b6dee38135ee2d1d41bbcdb2561943d1fe
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893724"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878708"
 ---
 # <a name="admin-review-for-reported-messages"></a>管理员审阅报告邮件
 
@@ -39,11 +39,13 @@ ms.locfileid: "52893724"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com/> 。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
+
+- 在 打开Microsoft 365安全中心 <https://security.microsoft.com/> 。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
-  - 组织管理或安全管理员在[Microsoft 365 Defender 门户中](permissions-microsoft-365-security-center.md)。
+  - 组织管理或安全中心[Microsoft 365管理员](permissions-microsoft-365-security-center.md)。
   - 中的组织[Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
+
 
 - 你还需要访问 PowerShell Exchange Online权限。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online，请参阅下列主题：
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
