@@ -11,20 +11,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/25/2020
+ms.date: 06/10/2021
 description: 了解如何通过 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能来加快检测和解决遭到入侵的用户帐户的过程。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934689"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904136"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>通过自动调查和响应处理遭到入侵的用户帐户
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -71,7 +69,7 @@ ms.locfileid: "51934689"
 
 有几个选项可以导航到受限用户列表。 例如，在安全与&中心，可以转到"威胁管理"" \> **审阅受限** \> **用户"。** 以下过程介绍使用 **警报** 仪表板的导航，这是查看可能触发的各种警报的一个好方法。
 
-1. 转到 <https://protection.office.com> 并登录。
+1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。
 
 2. 在导航窗格中，选择 **警报** \> **仪表板**。
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 295987ad28675b4381e266539846563240c0a528
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: fcf2310929937d1dacfc9c101d3e14414bad262b
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866651"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903740"
 ---
 # <a name="client-behavioral-blocking"></a>客户端阻止
 
@@ -46,7 +46,7 @@ ms.locfileid: "52866651"
 
 [Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)检测设备上可疑行为、恶意代码、无文件攻击和内存中攻击等。 当检测到可疑行为时，Microsoft Defender 防病毒监控这些可疑行为并将其进程树发送到云保护服务。 机器学习在毫秒内区分恶意应用程序和良好行为，并分类每个项目。 在几乎实时中，只要发现项目是恶意项目，就会在设备上被阻止。 
 
-只要检测到可疑行为，就会生成[警报](alerts-queue.md)，并且该警报 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。
+只要检测到可疑行为，就会生成警报[](alerts-queue.md)，并且该警报Microsoft 365以前 ([Defender](microsoft-defender-security-center.md) [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () ) 。
 
 客户端行为阻止非常有效，因为它不仅有助于防止攻击启动，还有助于阻止已开始执行的攻击。 此外， [通过反馈循环](feedback-loop-blocking.md) (行为阻止和) 功能，可以阻止组织中其他设备的攻击。
 

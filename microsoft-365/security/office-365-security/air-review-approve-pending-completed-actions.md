@@ -18,13 +18,13 @@ ms.collection:
 description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能中的修正操作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878768"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904124"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
@@ -52,16 +52,16 @@ ms.locfileid: "52878768"
    - 选择 **"批准** "以启动挂起的操作。
    - 选择 **"** 拒绝"以防止执行挂起的操作。
 
-## <a name="undo-one-remediation-action"></a>撤消一个修正操作
+## <a name="change-or-undo-one-remediation-action"></a>更改或撤消一个修正操作
 
 1. 转到操作中心 <https://security.microsoft.com/action-center> () 并登录。
-2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
+2. 在 **"历史记录** "选项卡上，选择要更改或撤消的操作。
 3. 在屏幕右侧窗格中，选择"撤消 **"。**
 
-## <a name="undo-multiple-remediation-actions"></a>撤消多个修正操作
+## <a name="change-or-undo-multiple-remediation-actions"></a>更改或撤消多个修正操作
 
 1. 转到操作中心 <https://security.microsoft.com/action-center> () 并登录。
-2. 在 **"历史记录** "选项卡上，选择要撤消的操作。 确保选择操作类型相同的项目。 将打开一个飞出窗格。
+2. 在 **"历史记录** "选项卡上，选择要更改或撤消的操作。 确保选择操作类型相同的项目。 将打开一个飞出窗格。
 3. 在飞出窗格中，选择"撤消"。
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离中删除文件

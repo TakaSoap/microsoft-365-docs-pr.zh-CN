@@ -18,129 +18,76 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务时有关服务的其他设备信息。
-ms.openlocfilehash: 27426a26befab85bf62a0a143861e447dd722724
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: cdb3278e1d96b2ebdced122ab53db716c3195d8c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861296"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903867"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
-连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 AAD 关系。 
+连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 Azure AD 关系。 
 
-## <a name="frequently-asked-questions"></a>常见问题
-
-**如何判断我的组织是否受到影响？**
-
-管理员应检查 `https://portal.microsoftazure.de` 以确定他们是否有已注册或已加入 Azure AD 的设备。 如果你的组织已注册设备，你将受到影响。
-
-**对用户有什么影响？**
-
-完成迁移阶段 [10](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) 且 Microsoft 云德国终结点已禁用后，已注册设备的用户将无法再登录。  
-
-在组织与德国 Microsoft 云断开连接之前，请确保你的所有设备已注册到全球终结点。
-  
-**我的用户何时重新注册其设备？**
-
-阶段 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) 完成后仅注销和重新注册设备，这一点对于成功至关重要。 你必须在阶段 10 启动之前完成重新注册，否则你可能会失去对设备的访问权限。
-
-**如何在迁移后还原设备状态？**
-
-对于在 Azure AD Windows公司拥有的设备，管理员将能够通过远程触发的工作流管理这些设备的迁移，这些工作流将取消注册旧设备状态。
-  
-对于所有其他设备，包括在 Azure AD Windows个人设备，最终用户必须手动执行这些步骤。 对于加入 Azure AD 的设备，用户需要具有本地管理员帐户才能注销然后重新注册其设备。
-
-请参阅下面的有关如何成功还原设备状态的详细说明。 
- 
-**我如何知道我的所有设备都注册到公共云中？**
-
-若要检查你的设备是否已在公有云中注册，你应该将设备列表从 Azure AD 门户导出并下载到 Excel 电子表格。 然后，使用 _registeredTime_ 列 (从 [德国 Microsoft](ms-cloud-germany-transition.md#how-is-the-migration-organized) 云迁移) 注册的设备。
-
-## <a name="additional-considerations"></a>其他注意事项
-迁移租户后，设备注册将停用，并且无法启用或禁用。 
-
-如果未使用 Intune，请登录到你的订阅并运行此命令以重新激活选项：
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-**重要提示：** 商业迁移后将启用 Intune 服务主体，这意味着激活 Azure AD 设备注册。 如果在迁移之前阻止了 Azure AD 设备注册，则必须使用 PowerShell 禁用 Intune 服务主体，以再次禁用 Azure AD 门户的 Azure AD 设备注册。 可以使用 PowerShell for Azure Active Directory 模块中的此命令禁用 Intune Graph主体。
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-
-
-## <a name="azure-ad-join"></a>加入 Azure AD
-这适用于Windows 10设备。 
-
-如果设备已加入 Azure AD，则必须从 Azure AD 断开连接，然后重新连接。 
+## <a name="azure-ad-joined-windows-10-devices"></a>加入 Azure AD Windows 10设备
+如果Windows 10已加入 Azure AD，则它必须与 Azure AD 断开连接，并且必须再次连接。 
 
 [![Azure AD 设备Re-Join Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后重新加入该设备。 如果没有管理员权限，则用户需要此计算机上本地管理员帐户的凭据。 
-
-
-管理员可以按照以下配置路径在设备上创建本地管理员帐户：
-
-*设置 >帐户>其他帐户>凭据未知> Microsoft 帐户添加用户*
+如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后通过三个步骤重新加入该设备。 
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>步骤 1：确定设备是否加入 Azure ID
-1.  使用用户电子邮件和密码登录。
-2.  转到"设置 >访问>或学校帐户"。 
-3.  在列表中查找已连接到 **的用户...的 Azure AD**。 
-4.  如果已连接的用户存在，请继续执行步骤 2。 如果没有，则无需执行其他操作。
+1.  使用你的工作帐户登录。
+2.  转到帐户 **设置**  >    >  **访问工作或学校**。 
+3.  在列表中查找连接到 **[...]的帐户s Azure AD**. 
+4.  如果存在已连接的帐户，请继续执行步骤 2。 
 ### <a name="step-2-disconnect-the-device-from-azure-ad"></a>步骤 2：断开设备与 Azure AD 连接
-1.  点击 **已连接** 的工作或学校帐户上的"断开连接"。 
+1.  单击 **已连接** 的工作或学校帐户上的"断开连接"。 
 2.  确认断开连接两次。 
 3.  输入本地管理员用户名和密码。 设备已断开连接。
 4.  重新启动设备。
 ### <a name="step-3-join-the-device-to-azure-ad"></a>步骤 3：将设备加入 Azure AD
-1.  用户使用本地管理员的凭据登录
-2.  转到 **"设置"，** 然后转到 **"帐户"，****然后访问工作或学校**
-3.  点击 **连接**
-4.  **重要** 提示：点击 **加入 Azure AD**
-5.  输入用户的电子邮件地址和密码。 设备已连接
-6.  重新启动设备 
-7.  使用电子邮件地址和密码进行签名
+1.  使用本地管理员的凭据登录。
+2.  转到帐户 **设置**  >    >  **访问工作或学校**。
+3.  单击“**连接**”。
+4.  **重要** 提示：单击 **加入 Azure AD**。
+5.  输入工作帐户的电子邮件地址和密码。 设备已连接。
+6.  重新启动设备。
+7.  使用你的工作帐户的电子邮件地址和密码登录。
 
-## <a name="azure-ad-registered-company-owned"></a>Azure AD 注册 (公司拥有) 
+如果用户不是设备的管理员，Azure AD 全局管理员可以按照此配置路径在设备上创建本地管理员帐户，并取消加入设备：
 
-若要确定 Windows 10是否已注册 Azure AD，请对设备运行以下命令：
+*设置 >帐户>其他帐户>凭据未知> Microsoft 帐户添加用户*
 
-```console
-%SystemRoot%\system32\dsregcmd.exe /status
-```
+对于重新加入，此步骤中可以使用来自组织的任何工作帐户的凭据。 
 
-如果设备已注册 Azure AD，你将看到以下输出：
+请考虑用于加入设备的工作帐户将自动提升为设备的管理员。
+组织中的其他任何工作帐户都可以登录到设备，但没有管理员权限。
 
-```console
-+----------------------------------------------------------------------+
-| User State                                                           |
-+----------------------------------------------------------------------+
-           WorkplaceJoined : YES
-          WamDefaultSet : NO
-          WamDefaultAuthority : organizations
-```
+## <a name="azure-ad-registered-workplace-joined-windows-10-devices"></a>Azure AD 注册 (工作区) Windows 10设备
+如果Windows 10已注册 Azure AD，需要从 Azure AD 断开连接，然后重新连接。
 
-若要删除设备上现有的 Azure AD 注册帐户，请执行以下操作：
+[![Azure AD 设备Re-Registration Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
-- 若要删除设备上已注册 Azure AD 的帐户，请使用 CleanupWPJ，可从此处下载的工具[：CleanupWPJ.zip。 ](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip)
+### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>步骤 1：确定设备是否注册了 Azure ID
+1.  使用你的用户登录。
+2.  转到帐户 **设置**  >    >  **访问工作或学校**。 
+3.  在列表中发现你的工作帐户并检查它是否 **连接到 [...]'s Azure AD**.
 
-- 提取 ZIP 文件并运行 **WPJCleanup.cmd**。 此工具将基于设备上文件的版本Windows正确的可执行文件。
+    如果你的工作帐户在列表中，但没有连接到 Azure AD，请继续执行步骤 2。
 
-- 通过使用组策略等机制，管理员可以在设备上登录的任何用户的上下文中运行命令。
+    否则，你的设备是加入 Azure AD 的设备，你必须参考加入[Azure AD Windows 10设备](#azure-ad-joined-windows-10-devices)。
 
-若要禁用 Web 帐户管理器提示在 Azure AD 中注册设备，请添加以下注册表值： 
-
-- 位置：HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
-- 类型：DWORD (32 位) 
-- 名称：BlockAADWorkplaceJoin
-- 值数据：1
-
-存在此注册表值应阻止工作区加入，并阻止用户看到加入设备的提示。
+### <a name="step-2-disconnect-the-device-from-azure-ad"></a>步骤 2：断开设备与 Azure AD 连接
+1.  单击你的工作帐户。 将显示" *信息"* 和" *断开连接"* 按钮。
+2.  单击 **断开连接**。 
+3.  通过单击"是"确认从设备删除 **帐户**。
+### <a name="step-3-connect-the-device-to-azure-ad"></a>步骤 3：连接设备连接到 Azure AD
+1.  单击“**连接**”。
+2.  输入你的工作帐户的电子邮件地址，然后单击下一 **步**。
+3.  输入工作帐户的密码，然后单击"**登录"。**
+4.  通过单击"完成 **"确认**。 你的工作帐户将再次列出。
 
 ## <a name="android"></a>Android
 
@@ -195,6 +142,29 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>步骤 3：如有必要从个别应用注销
 
 用户可以转到单个应用，Outlook、Teams和OneDrive，并从这些应用中删除帐户。
+
+## <a name="frequently-asked-questions"></a>常见问题
+
+**如何判断我的组织是否受到影响？**
+
+管理员应检查 `https://portal.microsoftazure.de` 以确定他们是否有已注册 Azure AD 或加入 Azure AD 的设备。 如果你的组织已注册 Azure AD 或加入 Azure AD 的设备，则你的组织必须遵循此页面上的说明。
+
+**我的用户何时重新注册其设备？**
+
+阶段 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) 完成后仅注销和重新注册设备，这一点对于成功至关重要。 你必须在阶段 10 启动之前完成重新注册，否则你可能会失去对设备的访问权限。
+
+**我如何知道我的所有设备都注册到公共云中？**
+
+若要检查你的设备是否已在公有云中注册，你应该将设备列表从 Azure AD 门户导出并下载到 Excel 电子表格。 然后，使用 _registeredTime_ 列 (在组织通过迁移过程的第 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)阶段) 注册的设备。
+
+## <a name="additional-considerations"></a>其他注意事项
+
+> [!IMPORTANT]
+> Intune 服务主体将在迁移过程的第 [3](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer)阶段之后启用，这意味着将激活 Azure AD 设备注册。 如果在迁移之前阻止了 Azure AD 设备注册，则必须使用 PowerShell 禁用 Intune 服务主体，以再次禁用 Azure AD 门户的 Azure AD 设备注册。 可以使用 PowerShell for Azure Active Directory 模块中的此命令禁用 Intune Graph主体。
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ## <a name="more-information"></a>详细信息
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f157a03d9a56aa0bbca695a27be57391e6b92360
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866627"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903848"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
@@ -95,7 +95,7 @@ Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/
 
 此外，当触发某些攻击面减少规则时，将生成警报。
 
-通知和生成的任何警报都可以在 Microsoft Defender 安全中心 () 中Microsoft 365 [https://securitycenter.windows.com](https://securitycenter.windows.com) 安全 [https://security.microsoft.com](https://security.microsoft.com) () 。
+通知和生成的任何警报都可以在 Microsoft 365 Defender 门户中 ()  (以前称为 Microsoft Defender 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 。 [](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高级搜寻和攻击面减少事件
 
@@ -114,13 +114,13 @@ Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender [for Endpoint](microsoft-defender-endpoint.md)中提供的监视、分析和工作流，以及 Microsoft 365[安全中心 中的报告和配置功能](/microsoft-365/security/defender/overview-security-center)。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
+尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender [for Endpoint](microsoft-defender-endpoint.md)中提供的监视、分析和工作流，以及 Microsoft 365 [Defender 中的报告和配置功能](/microsoft-365/security/defender/overview-security-center)。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>查看攻击中攻击面减少Microsoft Defender 安全中心
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看 defender 门户中的攻击Microsoft 365减少事件
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
-可以使用高级搜寻查询 Defender 的终结点 [数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
+可以使用高级搜寻 在 Microsoft 365 [Defender](microsoft-defender-security-center.md)中查询 Defender 中的[终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
 
 下面是一个示例查询：
 
@@ -134,9 +134,13 @@ DeviceEvents
 你可以查看攻击Windows日志以查看攻击面减少规则生成的事件：
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
+
 2. 在"开始"菜单中 *输入单词"事件* 查看器"，以Windows事件查看器"。
+
 3. 在 **"操作"** 下，**选择"导入自定义视图..."。**
+
 4. 选择从 *cfa-events.xml* 文件的位置创建的文件。 或者，[直接复制 XML。](event-views.md)
+
 5. 选择“**确定**”。
 
 您可以创建一个自定义视图，该视图筛选事件以只显示下列事件，所有这些事件均与受控文件夹访问权限相关：
@@ -501,7 +505,7 @@ GUID：`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 该规则倾向于谨慎阻止勒索软件。
 
 > [!NOTE]
-> 必须 [启用云保护才能](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 使用此规则。
+> 必须 [启用云保护才能](enable-cloud-protection-microsoft-defender-antivirus.md) 使用此规则。
 
 此规则是在：
 
@@ -516,9 +520,4 @@ Configuration Manager 名称： `Use advanced protection against ransomware`
 
 GUID：`c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>另请参阅
 
-- [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.md)
-- [启用攻击面减少规则](enable-attack-surface-reduction.md)
-- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
-- [防病毒Microsoft Defender 防病毒/反恶意软件解决方案的兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

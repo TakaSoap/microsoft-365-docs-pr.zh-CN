@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274768"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904040"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 诊断数据
 
@@ -43,9 +43,9 @@ ms.locfileid: "52274768"
 
     a. 打开" **开始"** 菜单。
 
-    b. 类型 **cmd**。 右键单击命令 **提示符，** 然后单击 **以管理员角色运行**。
+    b. 类型 **cmd**。 右键单击命令 **提示符** ，然后选择以 **管理员角色运行**。
 
-    c. 输入管理员凭据或批准提示。
+    c. 指定管理员凭据或批准提示。
 
 2. 导航到 Microsoft Defender 目录。 默认情况下，此操作为 `C:\Program Files\Windows Defender`。
 

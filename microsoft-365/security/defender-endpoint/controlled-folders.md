@@ -11,18 +11,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845566"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904052"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问权限保护重要文件夹
 
@@ -89,9 +89,9 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 
 受控文件夹访问权限需要启用Microsoft Defender 防病毒[实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>查看文件夹中的受控文件夹Microsoft Defender 安全中心
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>在 Defender 门户中查看受控Microsoft 365访问事件
 
-Defender for Endpoint 提供事件的详细报告和阻止，作为警报调查方案的 [一部分](investigate-alerts.md)。
+Defender for Endpoint 提供事件的详细报告和阻止，作为在[](investigate-alerts.md)Microsoft 365 Defender 门户中警报调查方案的一部分。  (请参阅 Microsoft [Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).) 
 
 可以使用高级搜寻查询 Microsoft Defender 的终结点 [数据](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 如果你使用的是审核[模式](audit-windows-defender.md)，可以使用高级搜寻查看受控文件夹[](advanced-hunting-overview.md)访问权限设置在启用后将如何影响你的环境。
 
@@ -135,8 +135,4 @@ DeviceEvents
 > [!NOTE]
 > [Windows默认保护](#windows-system-folders-are-protected-by-default)系统文件夹，并且无法从列表中删除它们。
 
-## <a name="see-also"></a>另请参阅
 
-- [受控文件夹访问评估](evaluate-controlled-folder-access.md)
-- [自定义受控文件夹访问](customize-controlled-folders.md)
-- [保护更多文件夹](customize-controlled-folders.md#protect-additional-folders)

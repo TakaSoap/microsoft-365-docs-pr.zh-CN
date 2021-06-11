@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933585"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903824"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for Endpoint 中的误报/漏报
 
@@ -41,7 +41,7 @@ ms.locfileid: "51933585"
 
 ![Defender for Endpoint 中的误报和负值定义](images/false-positives-overview.png)
 
-幸运的是，可以采取措施来解决并减少此类问题。 如果在邮件中看到误报/负Microsoft Defender 安全中心，安全操作可以通过以下[](../defender/microsoft-365-security-center-mde.md)过程采取一些措施解决这些问题：
+幸运的是，可以采取措施来解决并减少此类问题。 如果你在[以前的 Microsoft 365 Defender](microsoft-defender-security-center.md) (中看到误报/负Microsoft Defender 安全中心) ，你的安全操作可以通过以下过程采取一些步骤来解决这些误报/负数：
 
 1.  [查看警报并进行分类](#part-1-review-and-classify-alerts) 
 2.  [查看已采取的修正操作](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ ms.locfileid: "51933585"
 
 在分类或抑制警报之前，请确定警报是准确、误报还是恶意。
 
-1. 转到 [https://securitycenter.windows.com](https://securitycenter.windows.com) "Microsoft Defender 安全中心 () 并登录。
+1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 在导航窗格中，选择"**警报队列"。**
 
@@ -82,9 +82,9 @@ ms.locfileid: "51933585"
 
 ### <a name="classify-an-alert"></a>对警报进行分类
 
-警报在警报中可分类为误报或Microsoft Defender 安全中心。 对警报进行分类有助于训练 Microsoft Defender for Endpoint，以便随着时间的推移，你将看到更多真实警报和更少的假警报。
+可以在 Defender 中将警报分类为误报Microsoft 365误报。 对警报进行分类有助于训练 Microsoft Defender for Endpoint，以便随着时间的推移，你将看到更多真实警报和更少的假警报。
 
-1. 转到 [https://securitycenter.windows.com](https://securitycenter.windows.com) "Microsoft Defender 安全中心 () 并登录。
+1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 选择 **"警报队列**"，然后选择警报。
 
@@ -97,9 +97,9 @@ ms.locfileid: "51933585"
 
 ### <a name="suppress-an-alert"></a>抑制警报
 
-如果您具有误报或为真误报的警报，但是对于不重要的事件，可以在事件记录中禁止这些Microsoft Defender 安全中心。 抑制警报有助于减少安全操作仪表板中的噪音。 
+如果你的警报是误报或真正的误报，但对于不重要的事件，可以在 Microsoft 365 Defender 中抑制这些警报。 抑制警报有助于减少安全操作仪表板中的噪音。 
 
-1. 转到 [https://securitycenter.windows.com](https://securitycenter.windows.com) "Microsoft Defender 安全中心 () 并登录。
+1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 在导航窗格中，选择 **警报队列**。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51933585"
 
 ### <a name="review-completed-actions"></a>查看已完成的操作
 
-1. 转到操作中心 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 并登录。 
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。 
 
 2. 选择 **"历史记录** "选项卡以查看已采取的操作列表。  
 
@@ -143,7 +143,7 @@ ms.locfileid: "51933585"
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>从操作中心还原隔离文件
 
-1. 转到操作中心 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 并登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。 
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
@@ -151,7 +151,7 @@ ms.locfileid: "51933585"
 
 ### <a name="undo-multiple-actions-at-one-time"></a>一次撤消多个操作
 
-1. 转到操作中心 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 并登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。 
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
@@ -162,7 +162,7 @@ ms.locfileid: "51933585"
 > [!div class="mx-imgBorder"]
 > ![隔离](images/autoir-quarantine-file-1.png)
 
-1. 转到操作中心 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 并登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。 
 
 2. 在" **历史记录"** 选项卡上，选择操作类型为"隔离 **文件"的文件**。
 
@@ -184,15 +184,12 @@ ms.locfileid: "51933585"
     "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
     ```
 
-    > [!NOTE]
-    > 在某些情况下 **，ThreatName 可能** 显示为： `EUS:Win32/
-CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在此设备上隔离的所有自定义阻止文件。
-
     > [!IMPORTANT]
+    > 在某些情况下 **，ThreatName 可能** 显示为 `EUS:Win32/
+      CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在此设备上隔离的所有自定义阻止文件。
     > 作为潜在网络威胁隔离的文件可能无法恢复。 如果用户尝试在隔离后还原文件，则该文件可能无法访问。 这是因为系统不再具有访问该文件的网络凭据。 通常，这是临时登录到系统或共享文件夹且访问令牌过期的结果。
 
 3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。** 
-
 
 ## <a name="part-3-review-or-define-exclusions"></a>第 3 部分：查看或定义排除项
 
@@ -212,7 +209,7 @@ CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在
 通常，你无需为自定义项定义Microsoft Defender 防病毒。 请确保谨慎定义排除项，并且只包含导致误报的文件、文件夹、进程和进程打开的文件。 此外，请确保定期查看定义的排除项。 我们建议使用[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)定义或编辑防病毒排除项;但是，可以使用其他方法，如组策略 ([](/azure/active-directory-domain-services/manage-group-policy)管理[Microsoft Defender for Endpoint](manage-atp-post-migration.md)) 。
 
 > [!TIP]
-> 是否需要有关防病毒排除的帮助？ 请参阅[配置并验证扫描Microsoft Defender 防病毒排除项](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。
+> 是否需要有关防病毒排除的帮助？ 请参阅[配置并验证扫描Microsoft Defender 防病毒排除项](configure-exclusions-microsoft-defender-antivirus.md)。
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>使用Microsoft Endpoint Manager管理现有策略 (的防病毒) 
 
@@ -250,7 +247,7 @@ CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在
 
 [尤其是](/microsoft-365/security/defender-endpoint/manage-indicators) (泄露指示器或 IoCs) 使安全运营团队能够定义实体的检测、防护和排除。 例如，可以在 Microsoft Defender for Endpoint 的扫描和修正操作中指定要省略的某些文件。 或者，指示器可用于对某些文件、IP 地址或 URL 生成警报。
 
-若要将实体指定为 Microsoft Defender for Endpoint 的排除项，请为这些实体创建"允许"指示器。 Microsoft Defender for Endpoint 中的此类"允许"[](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)指示器适用于下一代[](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)保护、终结点检测和响应以及自动调查[&修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
+若要将实体指定为 Microsoft Defender for Endpoint 的排除项，请为这些实体创建"允许"指示器。 Microsoft Defender for Endpoint 中的此类"允许"[](microsoft-defender-antivirus-in-windows-10.md)指示器适用于下一代[](overview-endpoint-detection-response.md)保护、终结点检测和响应以及自动调查[&修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 "允许"指示器可用于：
 
@@ -279,14 +276,15 @@ CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在
 - 反恶意软件客户端版本为 4.18.1906.x 或更高版本 
 - 设备正在运行Windows 10版本 1709 或更高版本 
 
-自定义网络指示器已打开，请参阅高级Microsoft Defender 安全中心 ([高级) ](/microsoft-365/security/defender-endpoint/advanced-features)   
+自定义网络指示器在 Microsoft 365 [Defender 中打开](microsoft-defender-security-center.md)。 若要了解更多信息，请参阅 [高级功能](/microsoft-365/security/defender-endpoint/advanced-features)。
 
 #### <a name="indicators-for-application-certificates"></a>应用程序证书指示器 
 
 为 [应用程序证书创建"允许](/microsoft-365/security/defender-endpoint/indicator-certificates)"指示器时，它有助于防止组织使用的应用程序（如内部开发的应用程序）被阻止。 `.CER` 或 `.PEM` 文件扩展名。   
 
 创建应用程序证书指示器之前，请确保满足以下要求：
-- Microsoft Defender 防病毒启用了基于云的保护 (请参阅管理[基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)) 
+
+- Microsoft Defender 防病毒启用了基于云的保护 (请参阅管理[基于云的保护](deploy-manage-report-microsoft-defender-antivirus.md)) 
 - 反恶意软件客户端版本为 4.18.1901.x 或更高版本 
 - 设备正在运行Windows 10版本 1703 或更高版本;Windows Server 2016;或 Windows Server 2019 
 - 病毒和威胁防护定义是最新的  
@@ -444,7 +442,7 @@ PUA (可能不需要) 是一类软件，可能会导致设备运行缓慢、显�
 
 如果已执行本文中所有步骤，但仍需要帮助，请联系技术支持人员。
 
-1. 转到 [https://securitycenter.windows.com](https://securitycenter.windows.com) "Microsoft Defender 安全中心 () 并登录。
+1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 在右上角，选择问号 **" (？) "，** 然后选择 **"Microsoft 支持"。**
 
@@ -454,4 +452,4 @@ PUA (可能不需要) 是一类软件，可能会导致设备运行缓慢、显�
 
 [管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 
-[Microsoft Defender 安全中心概述](/microsoft-365/security/defender-endpoint/use) 
+[Microsoft 365 Defender 门户概述](/microsoft-365/security/defender-endpoint/use) 
