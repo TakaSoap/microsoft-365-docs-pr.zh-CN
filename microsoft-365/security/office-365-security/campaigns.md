@@ -19,12 +19,12 @@ ms.collection:
 description: 了解 Microsoft Defender for Office 365 中的市场活动Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779435"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879128"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的市场活动视图
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779435"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如，Microsoft 365 E5 或具有 Defender for Office 365 计划 2 附加设备) 。 活动安全中心Microsoft 365查看服务中的网络钓鱼攻击并进行分类。 Campaign Views 可以帮助你：
+市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如，Microsoft 365 E5 或具有 Defender for Office 365 计划 2 附加设备) 。 Defender 门户中的Microsoft 365视图标识和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
 
 - 高效调查和应对钓鱼攻击。
 - 更好地了解攻击范围。
@@ -54,11 +54,11 @@ Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反�
 
 活动可能是短期的，或者可能跨越几天、几周或几个月的活动和无效时段。 可能会针对你的特定组织启动市场活动，或者你的组织可能是跨多个公司进行更大活动的一部分。
 
-## <a name="campaign-views-in-the-security-center"></a>安全中心中的市场活动视图
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的市场活动视图
 
-Campaign Views is available in the [Microsoft 365 security center](https://security.microsoft.com) at Email & **collaboration** \> **Campaigns，** or directly at <https://security.microsoft.com/campaigns> .
+Campaign Views is available in the Microsoft 365 Defender portal () <https://security.microsoft.com> at Email & **collaboration** \> **Campaigns，** or directly at <https://security.microsoft.com/campaigns> .
 
-![Microsoft 365中心中的市场活动概述](../../media/campaigns-overview.png)
+![Microsoft 365 Defender 门户中的市场活动概述](../../media/campaigns-overview.png)
 
 还可以从：
 
@@ -67,7 +67,7 @@ Campaign Views is available in the [Microsoft 365 security center](https://secur
 - **电子邮件&协作** \>**资源管理器** \>**视图** \>**钓鱼邮件** \>**"市场活动"** 选项卡
 - **电子邮件&协作** \>**资源管理器** \>**视图** \>**恶意软件** \>**"市场活动"** 选项卡
 
-若要访问市场活动视图，你需要是安全中心内组织管理、安全管理员或 **安全** 读者角色组的成员。 有关详细信息，请参阅安全与合规Microsoft 365[中的权限Microsoft 365安全中心。](permissions-microsoft-365-security-center.md)
+若要访问市场活动视图，你需要是 Defender 门户中组织管理、安全管理员或安全读者角色Microsoft 365的成员。  有关详细信息，请参阅 Defender 门户[中Microsoft 365权限](permissions-microsoft-365-security-center.md)。
 
 ## <a name="campaigns-overview"></a>市场活动概述
 

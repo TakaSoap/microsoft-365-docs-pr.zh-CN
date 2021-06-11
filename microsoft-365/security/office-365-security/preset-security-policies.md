@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822282"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879008"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -105,7 +105,7 @@ ms.locfileid: "52822282"
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365安全中心 <https://security.microsoft.com> 。 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
+- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com> 。 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -117,9 +117,9 @@ ms.locfileid: "52822282"
 
   **注意**：将用户添加到 Azure Active Directory 管理中心中的相应 Microsoft 365 角色会为用户提供对 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>使用安全中心向用户分配预设安全策略
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender 门户向用户分配预设安全策略
 
-1. 在安全中心，转到电子邮件& **协作** \> **策略&规则** \> **威胁** 策略 \> **模板策略** 部分 \> **预设安全策略**。
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **Rules** \> **Threat Policies** \> **Templated policies** section Preset Security \> **Policies**.
 
 2. 在 **"标准保护"** 或 **"严格保护"下，** 单击"**编辑"。**
 
@@ -144,9 +144,9 @@ ms.locfileid: "52822282"
 
 5. 在"**查看并确认更改"** 页上，验证您的选择，然后单击"确认 **"。**
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>使用安全中心修改预设安全策略的分配
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>使用 Microsoft 365 Defender 门户修改预设安全策略的分配
 
-修改标准保护或严格保护安全策略分配的步骤与最初向用户分配预设安全策略[时的步骤相同](#use-the-security-center-to-assign-preset-security-policies-to-users)。
+修改标准保护或严格保护安全策略分配的步骤与最初向用户分配预设安全策略[时的步骤相同](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)。
 
 若要禁用 **标准保护** 或 **严格** 保护安全策略，同时仍保留现有条件和例外，将开关滑动到 **禁用切换** ![ 关闭 ](../../media/scc-toggle-off.png) 。 若要启用策略，将切换开关滑动到 **启用切换** ![ 打开 ](../../media/scc-toggle-on.png) 。
 

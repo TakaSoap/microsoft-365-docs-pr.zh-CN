@@ -20,12 +20,12 @@ ms.custom:
 description: 本主题将指导你完成对影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684167"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879212"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -42,9 +42,9 @@ ms.locfileid: "52684167"
 
 Office 365安全分数根据常规活动和安全设置分析组织的安全性，并分配分数。 首先记下当前分数。 调整一些租户范围的设置将增加你的分数。 目标不是获得最大分数，而是注意保护环境的机会，这些机会不会对用户的工作效率产生负面影响。 请参阅 [Microsoft 安全分数](../defender/microsoft-secure-score.md)。
 
-## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>优化安全中心Microsoft 365策略
+## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>优化 Microsoft 365 Defender 门户中的威胁管理策略
 
-安全Microsoft 365包括用于保护环境的功能。 它还包括可用于监视和采取措施的报告和仪表板。 某些区域具有默认策略配置。 某些区域不包括默认策略或规则。 访问威胁管理下的这些策略，以调整威胁管理设置，以创建更安全的环境。
+Microsoft 365 Defender 门户包含可保护你的环境的功能。 它还包括可用于监视和采取措施的报告和仪表板。 某些区域具有默认策略配置。 某些区域不包括默认策略或规则。 访问威胁管理下的这些策略，以调整威胁管理设置，以创建更安全的环境。
 
 <br>
 
@@ -57,7 +57,7 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 |**保险箱Microsoft Defender for Office 365**|否|在"附件"保险箱主页上，单击"**全局设置**"并启用此设置： <ul><li>**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365**</li></ul> <p> 使用保险箱创建"附件"策略： <ul><li> **阻止**：选择 **"阻止** "作为未知恶意软件响应。</li><li>**启用重定向**：选中此框并输入电子邮件地址，例如管理员或隔离帐户。</li><li>**如果恶意软件扫描附件出现时间过或出现错误，请** 应用上述选择：选中此框。</li><li>**_应用于_*： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息[：保险箱附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)设置保险箱[附件策略](set-up-safe-attachments-policies.md)|
 |**保险箱Microsoft Defender for Office 365**|是|在"链接"保险箱，单击"**全局设置"：** <ul><li>**Use 保险箱 Links in： Office 365 applications**： Verify this setting is turned on.</li><li>**Do not track when users click 保险箱 Links**： Turn this setting off to track user clicks.</li></ul> <p> 使用保险箱创建链接策略： <ul><li>**选择邮件中未知潜在恶意 URL 的操作**：验证此设置为 **"打开"。**</li><li>**Select the action for unknown or potentially malicious urls within Microsoft Teams**： Verify this setting is **On**.</li><li>**对指向文件的可疑链接应用实时 URL** 扫描：选中此框。</li><li>**等待 URL 扫描完成，然后再传递消息**：选中此框。</li><li>**Apply 保险箱 Links to email messages sent within the organization**： Check this box</li><li>**不允许用户单击到原始 URL：** 选中此框。</li><li>**应用于**： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息：[设置保险箱链接策略。](set-up-safe-links-policies.md)|
 |**反垃圾邮件 (邮件筛选)**|是| 监视内容：垃圾邮件过多 — 选择"自定义"设置并编辑"默认垃圾邮件筛选器"策略。 详细信息[：Microsoft 365电子邮件反垃圾邮件保护。](anti-spam-protection.md)|
-|***电子邮件身份验证***|是|电子邮件身份验证使用域名系统 (DNS) 向电子邮件添加有关电子邮件发件人的可验证信息。 Microsoft 365为默认域设置电子邮件 (onmicrosoft.com) ，Microsoft 365管理员也可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法： <ul><li>发件人策略框架 (SPF) 。</li><ul><li>有关设置，请参阅在 Microsoft 365[中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>域密钥标识的邮件 (DKIM) 。</li><ul><li>请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。</li><li>配置 DKIM 后，在安全中心启用它。</li></ul><li>基于域的邮件身份验证、报告和一致性 (DMARC) 。</li><ul><li>对于 DMARC[设置 使用 DMARC 验证电子邮件Microsoft 365。](use-dmarc-to-validate-email.md)</li></ul></ul>|
+|***电子邮件身份验证***|是|电子邮件身份验证使用域名系统 (DNS) 向电子邮件添加有关电子邮件发件人的可验证信息。 Microsoft 365为默认域设置电子邮件 (onmicrosoft.com) ，Microsoft 365管理员也可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法： <ul><li>发件人策略框架 (SPF) 。</li><ul><li>有关设置，请参阅在 Microsoft 365[中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>域密钥标识的邮件 (DKIM) 。</li><ul><li>请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。</li><li>配置 DKIM 后，在 defender 门户中Microsoft 365 DKIM。</li></ul><li>基于域的邮件身份验证、报告和一致性 (DMARC) 。</li><ul><li>对于 DMARC[设置 使用 DMARC 验证电子邮件Microsoft 365。](use-dmarc-to-validate-email.md)</li></ul></ul>|
 |
 
 > [!NOTE]
@@ -73,16 +73,16 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 
 |仪表板|说明|
 |---|---|
-|[威胁管理仪表板](security-dashboard.md)|在安全中心的"威胁管理"部分，使用此仪表板查看已处理的威胁，并作为向业务决策者报告已执行的威胁调查和响应功能以确保业务安全的方便工具。|
-|[威胁资源管理器（或实时检测）](threat-explorer.md)|这同样位于 **安全中心的"** 威胁管理"部分。 如果你正在调查或遇到对租户的攻击，请使用资源管理器 (或实时检测) 分析威胁。 资源管理器 (实时检测报告) 显示一段时间的攻击量，并且你可以按威胁系列、攻击者基础结构等分析此数据。 您还可以为"事件"列表标记任何可疑电子邮件。|
-|报表 — 仪表板|在安全 **中心的**"报告"部分，查看 SharePoint Online Exchange Online报告。 还可以从"查看Azure Active Directory (") 访问 Azure AD) 、用户活动报告和 Azure AD 审核日志 Azure AD **帐户。**|
+|[威胁管理仪表板](security-dashboard.md)|在Microsoft 365 Defender 门户的威胁管理部分中，使用此仪表板查看已处理的威胁，并作为向业务决策者报告已执行的威胁调查和响应功能以确保业务安全的方便工具。|
+|[威胁资源管理器（或实时检测）](threat-explorer.md)|这同样位于 Defender **门户威胁Microsoft 365** 部分中。 如果你正在调查或遇到对租户的攻击，请使用资源管理器 (或实时检测) 分析威胁。 资源管理器 (实时检测报告) 显示一段时间的攻击量，并且你可以按威胁系列、攻击者基础结构等分析此数据。 您还可以为"事件"列表标记任何可疑电子邮件。|
+|报表 — 仪表板|在 Defender **门户** 的"Microsoft 365"部分中，查看 SharePoint Online Exchange Online报告。 还可以从"查看Azure Active Directory (") 访问 Azure AD) 、用户活动报告和 Azure AD 审核日志 Azure AD **帐户。**|
 |
 
-![安全中心仪表板](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Microsoft 365Defender 门户仪表板](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>配置Exchange Online租户范围内的其他设置
 
-安全中心中还包括安全中心Exchange安全和保护的许多控件。 无需在这两处配置它们。 下面是一些建议的其他设置。
+下面是一些建议的其他设置。
 
 <br>
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843514"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893736"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -101,7 +101,9 @@ ms.locfileid: "52843514"
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅在 Linux 上解决 Microsoft Defender for Endpoint 的安装问题中的"确保守护程序具有[可执行权限"。](/microsoft-365/security/defender-endpoint/linux-support-install)
 
-- 内存：1 GB
+- 核心：最少 2 个，首选 4 个
+
+- 内存：最小 1 GB，首选 4 GB
 
     > [!NOTE]
     > 请确保 /var 中具有可用磁盘空间。

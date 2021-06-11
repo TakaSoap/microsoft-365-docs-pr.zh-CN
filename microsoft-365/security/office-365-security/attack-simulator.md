@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解如何使用攻击模拟器在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624821"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878672"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻击模拟器
 
@@ -37,9 +37,9 @@ ms.locfileid: "52624821"
 
 > [!NOTE]
 >
-> 攻击模拟器（如本文中所述）现在是只读的，已替换为安全中心中电子邮件&**协作** 节点中的攻击 [Microsoft 365培训](https://security.microsoft.com)。 有关详细信息，请参阅使用攻击 [模拟培训入门](attack-simulation-training-get-started.md)。
+> 攻击模拟器（如本文中所述）现在是只读的，已替换为位于 的Microsoft 365 Defender 门户中电子邮件 **& 协作** 节点中的攻击模拟培训 <https://security.microsoft.com> 。 有关详细信息，请参阅使用攻击 [模拟培训入门](attack-simulation-training-get-started.md)。
 >
-> 已禁用从此版本的攻击模拟器启动新模拟的能力。 但是，您仍然可以访问自 2021 年 1 月 24 日起最多 90 天的报告。
+> 已禁用从此版本的攻击模拟器启动新模拟的能力。 但是，您仍可以访问报告，直到 2021 年 4 月 24 日。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -133,7 +133,7 @@ ms.locfileid: "52624821"
 
    - **主题**： **电子邮件** 的主题字段。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 6. 在 **"撰写电子邮件** "步骤中，创建电子邮件的邮件正文。 You can use the **Email** tab (a rich HTML editor) or the **Source** tab (raw HTML code) .
 
@@ -143,7 +143,7 @@ ms.locfileid: "52624821"
 
    - `${loginserverurl}` 插入上 **一步中的网络钓鱼登录服务器 URL** 值。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 7. 在"**确认"** 步骤中，单击"完成 **"。**
 
@@ -166,7 +166,7 @@ ms.locfileid: "52624821"
    > [!div class="mx-imgBorder"]
    > ![网络钓鱼起始页](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 4. 在 **"目标收件人"** 步骤中，执行下列步骤之一：
 
@@ -174,7 +174,7 @@ ms.locfileid: "52624821"
 
    - 单击 **"** 导入 **"，** 然后单击"文件导入"，以 (CSV) 或电子邮件地址的行分隔文件导入逗号分隔值。 每行必须包含收件人的电子邮件地址。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 5. 在" **配置电子邮件详细信息** "步骤中，配置以下设置：
 
@@ -215,7 +215,7 @@ ms.locfileid: "52624821"
 
    - **主题**： **电子邮件** 的主题字段。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 6. 在 **"撰写电子邮件** "步骤中，创建电子邮件的邮件正文。 如果在"开始"步骤 **中** 选择了模板，则消息正文已配置，但您可以对其进行自定义。 You can use the **Email** tab (a rich HTML editor) or the **Source** tab (raw HTML code) .
 
@@ -230,7 +230,7 @@ ms.locfileid: "52624821"
    > [!div class="mx-imgBorder"]
    > ![撰写电子邮件正文](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 7. 在" **确认"** 步骤中，单击 **"完成** "以启动市场活动。 网络钓鱼邮件将传递到目标收件人。
 
@@ -269,7 +269,7 @@ ms.locfileid: "52624821"
 
    - 单击 **"** 导入 **"，** 然后单击"文件导入"，以 (CSV) 或电子邮件地址的行分隔文件导入逗号分隔值。 每行必须包含收件人的电子邮件地址。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 5. 在 **"选择攻击设置"** 步骤中，根据市场活动类型选择要执行哪些操作：
 
@@ -281,7 +281,7 @@ ms.locfileid: "52624821"
 
    - **密码攻击**：在 **密码 () 攻击框中输入** 一个密码。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
 6. 在" **确认"** 步骤中，单击 **"完成** "以启动市场活动。 指定的密码将尝试用于指定的用户。
 

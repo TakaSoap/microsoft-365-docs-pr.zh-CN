@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 719bd2b86cae1c6a951cb34408ecb9d2b8da699a
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696582"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879200"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -56,9 +56,9 @@ ms.locfileid: "52696582"
 
 - 关闭自定义邮箱中邮件的 URL 扫描。 使用 [Defender for Office 365](set-up-safe-links-policies.md)中的"设置保险箱链接策略"创建一个 保险箱 链接策略，并设置"关闭"以选择邮件中未知 **潜在恶意 URL 的操作**。
 
-- 创建反恶意软件策略以关闭恶意软件零时差自动清除。 请参阅 [使用安全&合规中心创建反恶意软件](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies)策略，将 **"恶意软件零时差自动清除**"设置为 **"关闭"。**
+- 创建反恶意软件策略以关闭恶意软件零时差自动清除。 请参阅 [使用安全&合规中心创建反恶意软件](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)策略，将 **"恶意软件零时差自动清除**"设置为 **"关闭"。**
 
-- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼) ZAP 邮件进行零时差自动清除。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) 中心创建反垃圾邮件策略并清除 **垃圾邮件** **ZAP** 和钓鱼邮件 **ZAP** 的打开复选框。
+- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼) ZAP 邮件进行零时差自动清除。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) 中心创建反垃圾邮件策略并清除 **垃圾邮件** **ZAP** 和钓鱼邮件 **ZAP** 的打开复选框。
 
 - 禁用自定义邮箱中的垃圾邮件规则。 使用[配置邮箱上的垃圾邮件Exchange Online禁用](configure-junk-email-settings-on-exo-mailboxes.md)垃圾邮件规则。 禁用后，EOP 无法根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 

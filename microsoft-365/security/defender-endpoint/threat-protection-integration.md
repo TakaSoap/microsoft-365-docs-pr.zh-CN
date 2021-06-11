@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844966"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878564"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -66,9 +66,9 @@ Microsoft Cloud App Security Microsoft Defender for Endpoint 终结点信号，�
 通过Skype for Business集成，分析人员可以通过门户中的简单按钮与可能受到威胁的用户或设备所有者进行通信。
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-借助 Microsoft 365 Defender，Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。 
+借助 Microsoft 365 Defender、Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案，形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。 
  
-[详细了解 Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
+[详细了解 Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>相关主题

@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365警报、报告和调查之间使用标签筛选，以快速识别标记用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 1fb948d63f7bc42839d6fae8a2138d4ad48d81f6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782857"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879164"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -40,33 +40,30 @@ ms.locfileid: "52782857"
 
 向用户应用系统标记或自定义标记后，可以在警报、报告和调查中使用这些标记作为筛选器：
 
-- [安全与合规中心&警报](alerts.md)
+- [警告](alerts.md)
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
 - 对于优先级帐户，可以在 EAC [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Exchange管理中心 (优先级帐户) 。
 
-本文介绍如何在安全与合规中心内配置&标记。 安全与合规中心& cmdlet 用于管理用户标记。
+本文介绍了如何在 defender 门户中配置Microsoft 365标记。 Defender 门户中没有任何 cmdlet Microsoft 365管理用户标记。
 
 若要了解用户标记如何作为策略的一部分来帮助保护高影响的用户帐户，请参阅安全建议[中](security-recommendations-for-priority-accounts.md)优先级帐户Microsoft 365。
 
-> [!NOTE]
-> 如果使用统一安全Microsoft 365，可以在此处设置标记 https://security.microsoft.com/securitysettings/userTags ：。
-
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **用户标记"** 页，请打开 <https://protection.office.com/userTags> 。
+- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com/> 。 若要直接转到" **用户标记"** 页，请打开 <https://security.microsoft.com/securitysettings/userTags> 。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 你需要在 defender 门户中Microsoft 365权限，然后才能执行本文中的过程：
   - 若要创建、修改和删除用户标记，您必须是组织管理或安全 **管理员****角色组** 的成员。
   - 若要从现有用户标记中添加和删除成员，你需要是组织管理、**安全** 管理员或 **安全** 操作员角色组的成员
   - 对于用户标记的只读访问，你需要是全局读取 **者** 或安全 **读者角色组** 的成员。
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 Defender 门户[中Microsoft 365权限](permissions-in-the-security-and-compliance-center.md)。
 
   > [!NOTE]
   >
-  > - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - 用户标记管理由 Tag **Reader** 和 **Tag Manager 角色** 控制。
 
@@ -74,62 +71,71 @@ ms.locfileid: "52782857"
 
 - 有关保护管理员帐户 (特权 _帐户_) ，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
 
-## <a name="use-the-security--compliance-center-to-create-user-tags"></a>使用安全&中心创建用户标记
+## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>使用 Microsoft 365 Defender 门户创建用户标记
 
-1. 在安全与&中心，转到"**威胁** 管理"" \> **用户标记"。**
+1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
-2. 在打开 **的"用户标记**"页上，单击"**创建标记"。**
+2. 在"**用户标记"** 页上，单击" ![ 创建标记图标 ](../../media/m365-cc-sc-create-icon.png) **""创建标记"。**
 
-3. " **创建标记** "向导将在新的飞出控件中打开。在" **定义标记"** 页上，配置以下设置：
-   - **名称**：输入标记的唯一描述性名称。 这是你将看到并使用的值。
+3. " **创建标记** "向导将在新的飞出控件中打开。 在" **定义标记"** 页上，配置以下设置：
+   - **名称**：输入标记的唯一描述性名称。 这是你将看到并使用的值。 请注意，创建标记后无法重命名它。
    - **说明**：输入标记的可选说明。
 
    完成后，单击“**下一步**”。
 
-4. 在 **"分配用户"** 页上，执行下列任一步骤：
-
-   - 单击 **"添加用户"。** 在出现的"飞出"中，执行以下任一步骤以添加单个用户或组：
+4. 在 **"分配成员** "页上，执行下列任一步骤：
+   - 单击 ![ "添加成员"图标 ](../../media/m365-cc-sc-create-icon.png) **"添加成员"。** 在出现的"飞出"中，执行以下任一步骤以添加单个用户或组：
      - 在框中单击并滚动浏览列表以选择用户或组。
      - 在框中单击并开始键入以筛选列表并选择用户或组。
      - 若要添加其他值，请单击框中的空白区域。
-     - 若要从框中删除单个条目，请单击框中用户或 ![ 组的" ](../../media/scc-remove-icon.png) 删除"图标。
-     - 若要从框下方的列表中删除现有条目，请单击" **删除** ![ "图标删除 ](../../media/scc-remove-icon.png) 条目。
+     - 若要删除单个条目，请单击 ![删除条目图标](../../media/m365-cc-sc-remove-selection-icon.png) 框中的条目旁边。
+     - 若要删除所有条目，请单击框下方的"所选 nn 用户和 nn 组"项上的" ![ ](../../media/m365-cc-sc-remove-selection-icon.png) 删除条目图标"。 
 
      完成后，单击“**添加**”。
 
-   - 单击 **"** 导入&quot;选择一个包含用户或组的电子邮件地址的文本文件。 确保文本文件每行包含一个条目。
+     返回到" **分配成员** "页，您还可以通过单击条目旁边的"删除 ![ "图标 ](../../media/m365-cc-sc-delete-icon.png) 来删除条目。
+
+   - 单击 **"** 导入"选择一个包含用户或组的电子邮件地址的文本文件。 确保文本文件每行包含一个条目。
 
    完成后，单击“**下一步**”。
 
-5. 在&quot; **审阅标记&quot;** 页上，查看设置。 可以单击 **特定部分** 中的&quot;编辑&quot;进行更改。
+5. 在出现的 **"审阅标记** "页上，查看设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
-   完成后，单击&quot;提交 **&quot;。**
+   完成后，单击"提交 **"，** 然后单击"完成 **"。**
 
-## <a name=&quot;use-the-security--compliance-center-to-view-user-tags&quot;></a>使用安全&中心查看用户标记
+## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>使用 Microsoft 365 Defender 门户查看用户标记
 
-1. 在安全与&中心，转到&quot;**威胁** 管理&quot;&quot; \> **用户标记&quot;。**
+1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
-2. 在打开 **的&quot;** 用户标记&quot;页上，选择要查看的用户标记 (不要单击复选框") "。
+2. 在 **"用户标记** "页上，用户标记列表中将显示以下属性：
 
-3. 在出现的只读详细信息飞出中，查看设置。
+   - **Tag**：用户标记的名称。 请注意，这包括内置的 **优先级帐户** 系统标记。
+   - **应用于**：成员数
+   - **上次修改时间**
+   - **创建于**
 
-   完成后，单击“关闭”。
+3. 当您通过单击该名称选择用户标记时，详细信息将显示在一个 flyout 中。
 
-## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>使用安全&中心修改用户标记
+## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>使用 Microsoft 365 Defender 门户修改用户标记
 
-1. 在安全与&中心，转到"**威胁** 管理"" \> **用户标记"。**
+1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
-2. 在打开 **的"用户标记**"页上，选择要查看的用户标记，然后单击"编辑 **标记"。**
+2. 在"**用户标记**"页上，从列表中选择用户标记，然后单击"编辑 ![ 标记图标"" ](../../media/m365-cc-sc-edit-icon.png) **编辑标记"。**
 
-3. 策略向导将在"编辑"标记 **飞** 出中打开。单击 **"下** 一步"查看和修改设置。
+3. 在出现的详细信息飞出控件中，提供相同的向导和设置，如本文前面使用[Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-user-tags)门户创建用户标记部分所述。
 
-   完成后，单击"提交 **"。**
+   **注意**：
 
-## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>使用安全&中心删除用户标记
+   - " **定义标记** "页对内置 **Priority** 帐户系统标记不可用，因此无法重命名此标记或更改说明。
+   - 不能重命名自定义标记，但可以更改说明。
+
+## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>使用 Microsoft 365 Defender 门户删除用户标记
 
 > [!NOTE]
-> 无法删除内置的 Priority **帐户** 标记。
+> 无法删除内置的 **优先级帐户系统** 标记。
 
-1. 在安全与&中心，转到"**威胁** 管理"" \> **用户标记"。**
+1. 在 Microsoft 365 Defender 门户中，转到设置 \> **电子邮件&协作** \> **用户标记。**
 
-2. 在打开 **的"用户** 标记"页上，选择要删除的用户标记，单击"删除标记"，然后在出现的警告中选择"是，删除"。 
+2. 在"**用户标记**"页上，从列表中选择用户标记，然后单击"删除 ![ 标记图标"" ](../../media/m365-cc-sc-delete-icon.png) **删除标记"。**
+
+3. 阅读出现的确认对话框中的警告，然后单击"是 **，删除"。**

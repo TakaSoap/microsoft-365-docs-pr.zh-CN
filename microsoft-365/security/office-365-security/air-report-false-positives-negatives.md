@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275080"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878876"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自动调查和响应功能中报告误报/负面影响
 
@@ -68,17 +68,21 @@ ms.locfileid: "52275080"
 
 借助威胁资源管理器，安全运营团队可以查找受操作影响的电子邮件，并可能撤消该操作。
 
-|应用场景|撤消选项|了解详细信息|
+<br>
+
+****
+
+|应用场景|撤消选项|了解更多|
 |---|---|---|
-|电子邮件已路由到用户的"垃圾邮件"文件夹|- 将邮件移动到用户的"已删除邮件"文件夹<br/>- 将邮件移动到用户的收件箱<br/>- 删除邮件|[查找并调查在邮件中传递的恶意Office 365](investigate-malicious-email-that-was-delivered.md)|
-|已隔离电子邮件或文件|- 释放电子邮件或文件<br/>- 删除电子邮件或文件|[以管理员角色管理隔离邮件](manage-quarantined-messages-and-files.md)|
+|电子邮件已路由到用户的"垃圾邮件"文件夹|<ul><li>将邮件移动到用户的"已删除邮件"文件夹</li><li>将邮件移动到用户的收件箱</li><li>删除邮件</li></ul>|[查找并调查在邮件中传递的恶意Office 365](investigate-malicious-email-that-was-delivered.md)|
+|已隔离电子邮件或文件|<ul><li>释放电子邮件或文件</li><li> 删除电子邮件或文件</li></ul>|[以管理员角色管理隔离邮件](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>撤消操作中心中的操作
 
 在操作中心，你可以看到已采取的修正操作并可能撤消该操作。
 
-1. 转到安全Microsoft 365中心 <https://security.microsoft.com> () 。
+1. 转到 Defender Microsoft 365门户 <https://security.microsoft.com> () 。
 2. 在导航窗格中，选择操作 **中心**。
 3. 选择 **"历史记录** "选项卡以查看已完成操作的列表。
 4. 选择一个项目。 将打开其飞出窗格。

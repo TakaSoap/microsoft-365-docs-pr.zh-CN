@@ -19,12 +19,12 @@ ms.collection:
 description: 什么是适用于 EOP Exchange Online Protection (和 Defender) 安全设置Office 365最佳实践？ 标准保护的当前建议是什么？ 如果要更加严格，应该使用什么？ 如果你还使用 Defender for Office 365？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f00e1e2356839e70acafb0f98a5424a1311082e7
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793216"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878984"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>用于配置 EOP 和 Defender for Office 365 安全性的建议设置
 
@@ -44,7 +44,7 @@ ms.locfileid: "52793216"
 > [!NOTE]
 > 需要在邮箱上启用垃圾邮件规则，以便筛选正常工作。 默认情况下会启用此功能，但如果筛选似乎未正常工作，应检查它。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-本文介绍了默认设置以及建议的标准和严格设置，以帮助保护用户。 这些表包含安全中心和 PowerShell Microsoft 365 PowerShell (Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中的设置，适用于Exchange Online邮箱) 。
+本文介绍了默认设置以及建议的标准和严格设置，以帮助保护用户。 这些表包含 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中的设置，或适用于没有 Exchange Online 邮箱的组织的独立 Exchange Online Protection PowerShell) 。
 
 > [!TIP]
 > PowerShell Office 365高级威胁防护建议配置分析器 (ORCA) 模块可帮助你 (管理员) 查找这些设置的当前值。 具体来说 **，Get-ORCAReport** cmdlet 可生成对反垃圾邮件、防钓鱼和其他邮件安全设置的评估。 可以在 下载 ORCA 模块 <https://www.powershellgallery.com/packages/ORCA/> 。
@@ -61,7 +61,7 @@ ms.locfileid: "52793216"
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**垃圾邮件** 检测操作 <p> _SpamAction_|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
 |**高可信度垃圾邮件** 检测操作 <p> _HighConfidenceSpamAction_|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
@@ -90,7 +90,7 @@ ms.locfileid: "52793216"
 
 ****
 
-|安全功能名称|Comment|
+|安全功能名称|评论|
 |---|---|
 |**指向远程站点的图像链接 (** _IncreaseScoreWithImageLinks)_||
 |**URL 中的数字 IP** 地址 (_IncreaseScoreWithNumericIps)_||
@@ -119,7 +119,7 @@ ms.locfileid: "52793216"
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**设置外部邮件限制** <p> _RecipientLimitExternalPerHour_|0|500|400|默认值 0 表示使用服务默认值。|
 |**设置内部邮件限制** <p> _RecipientLimitInternalPerHour_|0|1000|800|默认值 0 表示使用服务默认值。|
@@ -136,13 +136,13 @@ ms.locfileid: "52793216"
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
-|**当邮件被隔离为恶意软件时通知收件人** <p> _Action_|不支持 <p> _DeleteMessage_|不支持 <p> _DeleteMessage_|不支持 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只有管理员才能释放。|
+|**当邮件被隔离为恶意软件时通知收件人** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只有管理员才能释放。|
 |**启用常见附件筛选器** <p> _EnableFileFilter_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此设置根据文件类型隔离包含可执行附件的邮件，而不考虑附件内容。|
 |**启用恶意软件的零时差自动清除** <p> _ZapEnabled_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**将邮件隔离为恶意软件时通知内部发件人** <p> _EnableInternalSenderNotifications_|已禁用 <p> `$false`|已禁用 <p> `$false`|已禁用 <p> `$false`||
-|**当邮件被隔离为恶意软件时通知外部发件人** <p> _EnableExternalSenderNotifications_|已禁用 <p> `$false`|已禁用 <p> `$false`|已禁用 <p> `$false`||
+|**将邮件隔离为恶意软件时通知内部发件人** <p> _EnableInternalSenderNotifications_|禁用 <p> `$false`|禁用 <p> `$false`|禁用 <p> `$false`||
+|**当邮件被隔离为恶意软件时通知外部发件人** <p> _EnableExternalSenderNotifications_|禁用 <p> `$false`|禁用 <p> `$false`|禁用 <p> `$false`||
 |
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP 防钓鱼策略设置
@@ -153,7 +153,7 @@ ms.locfileid: "52793216"
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**启用欺骗智能** <p> _EnableSpoofIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
 |**如果电子邮件被检测为欺骗邮件** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
@@ -187,7 +187,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |受保护的用户 (发件人 **) ：使用户能够保护** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|关闭 <p> `$false` <p> 无|打开 <p> `$true` <p> \<list of users\>|打开 <p> `$true` <p> \<list of users\>|根据组织的不同，我们建议在 (角色) 用户。 在内部，受保护的发件人可能是 CEO、CFO 和其他高级领导。 从外部来说，受保护的发件人可以包含会员或你的委员会。|
 |受保护的用户 **：如果邮件被检测为模拟用户** <p> _TargetedUserProtectionAction_|**不应用任何操作** <p> `NoAction`|**隔离邮件** <p> `Quarantine`|**隔离邮件** <p> `Quarantine`||
@@ -211,7 +211,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**启用欺骗智能** <p> _EnableSpoofIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
 |**如果电子邮件被检测为欺骗邮件** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
@@ -227,7 +227,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**网络钓鱼电子邮件阈值** <p> _PhishThresholdLevel_|**1 - 标准** <p> `1`|**2 - 主动** <p> `2`|**3 - 更主动** <p> `3`||
 |
@@ -246,7 +246,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**在保险箱应用中使用Office 365链接** <p> _EnableSafeLinksForO365Clients_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|使用保险箱 iOS 和 Android Office 365 应用支持 (移动) 链接。 有关详细信息，请参阅保险箱[应用的链接Office 365设置](safe-links.md#safe-links-settings-for-office-365-apps)。|
 |**不跟踪用户在应用中单击受保护链接Office 365时间** <p> _TrackClicks_|开 <p> `$false`|关 <p> `$true`|关闭 <p> `$true`|关闭此设置 (_将 TrackClicks_ 设置为) 在受支持的应用中跟踪Office 365 `$true` 单击。|
@@ -266,7 +266,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**选择邮件中未知潜在恶意 URL 的操作** <p> _IsEnabled_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
 |**选择针对网站内未知或潜在恶意 URL Microsoft Teams** <p> _EnableSafeLinksForTeams_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
@@ -291,7 +291,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365** <p> _EnableATPForSPOTeamsODB_|打开 <p> `$true`|打开 <p> `$true`||
 |**打开 保险箱 客户端Office文档** <p> _EnableSafeDocs_|打开 <p> `$true`|打开 <p> `$true`|此设置仅适用于许可证Microsoft 365 E5 Microsoft 365 E5 安全性许可证。 有关详细信息，请参阅 microsoft [Defender 保险箱中的文档Office 365。](safe-docs.md)|
@@ -311,7 +311,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ****
 
-|安全功能名称|默认值|标准|Strict|Comment|
+|安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**保险箱附件未知恶意软件响应** <p> _Action_|阻止 <p> `Block`|阻止 <p> `Block`|阻止 <p> `Block`||
 |**检测时重定向附件** ： **启用重定向** <p> _重定向_ <p> _RedirectAddress_|关闭，未指定电子邮件地址。 <p> `$true` <p> 无|打开，并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|打开，并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|

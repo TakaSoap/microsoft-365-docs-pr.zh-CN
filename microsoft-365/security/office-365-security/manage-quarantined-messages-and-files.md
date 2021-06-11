@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP 管理中心中查看和管理所有用户Exchange Online Protection () 。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b484cc3a8462115b5151b34ba93ba0c041e16b4
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822294"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878888"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -41,11 +41,11 @@ ms.locfileid: "52822294"
 
 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中查看、下载和删除隔离Microsoft Teams。
 
-在安全中心或 PowerShell 中查看Microsoft 365隔离的邮件，或在 PowerShell (Exchange Online PowerShell 中查看Microsoft 365邮箱位于 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+在 Defender 门户中或在 PowerShell Microsoft 365 PowerShell 中查看和管理隔离邮件 (Exchange Online，Microsoft 365邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开安全中心，请转到 <https://security.microsoft.com> 。 若要直接打开“隔离”页，请转到 <https://security.microsoft.com/quarantine>。
+- 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com> 。 若要直接打开“隔离”页，请转到 <https://security.microsoft.com/quarantine>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -68,11 +68,11 @@ ms.locfileid: "52822294"
 
   当邮件从隔离区过期时，你无法恢复它。
 
-## <a name="use-the-security-center-to-manage-quarantined-email-messages"></a>使用安全中心管理隔离的电子邮件
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>使用 Microsoft 365 Defender 门户管理隔离的电子邮件
 
 ### <a name="view-quarantined-email"></a>查看隔离电子邮件
 
-1. 在安全中心，转到电子邮件 **&查看** \> **隔离** \> **。**
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **""查看** 隔离 \> **"。**
 
 2. 在" **隔离** "页面上，验证" **隔离** 视图"是否设置为默认值 **电子邮件**。
 
@@ -195,7 +195,7 @@ ms.locfileid: "52822294"
 
 完成后，单击“关闭”。
 
-## <a name="use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365"></a>使用安全中心在 Defender for Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>使用 Microsoft 365 Defender 门户管理 Defender for Office 365
 
 > [!NOTE]
 > 本部分中隔离文件的过程仅适用于 Microsoft Defender for Office 365计划 1 和计划 2 订阅者。
@@ -204,7 +204,7 @@ ms.locfileid: "52822294"
 
 ### <a name="view-quarantined-files"></a>查看隔离文件
 
-1. 在安全中心，转到电子邮件 **&查看** \> **隔离** \> **。**
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **""查看** 隔离 \> **"。**
 
 2. 在" **隔离"** 页面上，将" **隔离的视图** "更改为值 **文件**。 可以通过单击可用列标题对字段进行排序。
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5、P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539091"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878456"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -34,12 +34,17 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 ## <a name="reach-the-email-entity-page"></a>访问电子邮件实体页面
 
-通过现有安全&安全 (protection.office.com) 或Microsoft 365安全 (security.microsoft.com) ，你可以查看和使用电子邮件实体页面。
+通过现有安全&中心或新的 Microsoft 365 Defender 门户，你可以查看和使用电子邮件实体页面。
+
+<br>
+
+****
 
 |居中|URL|导航|
 |---|---|---|
-|安全与合规 |protection.office.com|威胁管理 \> 资源管理器|
-|Microsoft 365 安全中心 |security.microsoft.com|电子邮件&协作 \> 资源管理器|
+|安全与合规中心|<https://protection.office.com>|威胁管理 \> 资源管理器|
+|Microsoft 365Defender 门户|<https://security.microsoft.com>|电子邮件&协作 \> 资源管理器|
+|
 
 在威胁资源管理器中，选择要调查的电子邮件的主题。 该邮件的电子邮件飞出顶部将显示一个金色条。 此新页面邀请显示"尝试使用包含丰富数据的新电子邮件实体页面..."。 选择以查看新页面。
 
@@ -89,17 +94,20 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 ### <a name="detonation-details"></a>触发详细信息
 
-这些详细信息特定于电子邮件附件和 URL。
+这些详细信息特定于电子邮件附件和 URL。 用户可以通过进入资源管理器，将检测技术筛选器集应用于文件触发或 URL 触发来查看这些详细信息。 针对文件触发筛选的电子邮件将包含具有触发详细信息的恶意文件，并且筛选出 URL 的电子邮件包含恶意 URL 及其触发详细信息。
 
-用户可以看到其邮箱中发现的已知恶意附件或超链接的丰富触发详细信息，包括触发链、触发摘要、屏幕截图和观察行为详细信息，帮助客户了解附件或 URL 为何被视为恶意并触发。
+用户会看到其电子邮件中发现的已知恶意附件或 URL 的丰富触发详细信息，这些附件或 URL 已针对其特定租户触发。 它将包含触发链、触发摘要、屏幕截图和观察行为详细信息，帮助客户了解附件或 URL 被视为恶意并触发的原因。
 
-- *触发链*：单个文件或 URL 触发可以触发多个爆炸。 爆炸链跟踪触发路径，包括导致裁定的原始恶意文件或 URL，以及受爆炸影响的其他所有文件或 URL。 这些 URL 或附加的文件可能不会直接存在于电子邮件中，但包含该分析对于确定发现文件或 URL 是恶意文件的原因非常重要。
-- *触发摘要*：这提供有关以下信息：
-  - 触发时间范围。
-  - 附加的文件或 URL 裁定。
-  - 与文件 (、URL、IP 或域) 相关信息，这些实体是触发期间检查的其他实体。
-- *触发屏幕截图*：这显示 () 期间拍摄屏幕截图。
-- *触发详细信息*：这些是触发期间发生的每个过程的确切行为详细信息。
+1. *触发链*。 单个文件或 URL 触发可以触发多个爆炸。 爆炸链跟踪触发路径，包括导致裁定的原始恶意文件或 URL，以及受爆炸影响的其他所有文件或 URL。 这些 URL 或附加的文件可能不会直接存在于电子邮件中，但包含该分析对于确定发现文件或 URL 是恶意文件的原因非常重要。  
+    > [!NOTE]
+    > 如果发现链接到顶级项目的任何实体都未发现问题或触发，这可能只显示顶级项目。
+
+1. 触发摘要提供触发的基本摘要，如分析时间、发生爆炸的时间、操作系统和应用程序、发生爆炸的操作系统和应用程序、文件大小和裁定原因。
+1. *屏幕截图* 显示触发期间捕获的屏幕截图。 触发期间可以有多个屏幕截图。 不会捕获任何屏幕截图
+    - 容器类型文件，.zip或.rar。
+    - 如果 URL 打开为直接下载文件的链接。 但是，你将在触发链中看到下载的文件。
+1. 行为 *详细信息* 是一个导出，用于显示行为详细信息，如触发期间发生的确切事件，以及包含在触发期间发现的 URL、IP、域和文件的可观测项 (它们可能是有问题的或不良的) 。 请注意，可能没有以下行为详细信息：
+    - 容器文件.zip或.rar保存其他文件的容器文件。
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="触发摘要的屏幕截图，显示在标题 *Deep Analysis*下显示链、摘要、爆炸详细信息和屏幕截图。":::
 

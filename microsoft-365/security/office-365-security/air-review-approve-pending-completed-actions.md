@@ -19,16 +19,21 @@ description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275068"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878768"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
+**适用对象**
+- [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可能包括：
+
 - 阻止 URL (单击时) 
 - 软删除电子邮件或群集
 - 隔离电子邮件或电子邮件附件
@@ -36,13 +41,9 @@ ms.locfileid: "52275068"
 
 除非安全运营团队批准这些修正操作，否则不会执行这些修正操作。 我们建议尽快审阅和批准任何挂起的操作，以便自动调查及时完成。 在某些情况下，您可以撤消修正操作。
 
-**适用对象**
-- [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 ## <a name="approve-or-reject-pending-actions"></a>批准 (或拒绝) 挂起的操作
 
-1. 转到安全Microsoft 365中心 <https://security.microsoft.com> () 登录。
+1. 转到"Microsoft 365 Defender <https://security.microsoft.com> () 并登录。
 2. 在导航窗格中，选择操作 **中心**。
 3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
 4. 选择列表项。 将打开其飞出窗格。 

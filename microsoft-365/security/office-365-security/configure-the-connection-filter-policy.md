@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP Exchange Online Protection (配置) 以允许或阻止来自电子邮件服务器的电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 416fbd73d8412cf8697577df19f2fd2893b4ce96
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821957"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878816"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -44,14 +44,14 @@ ms.locfileid: "52821957"
 
 - **保险箱列表**：安全 *列表是* Microsoft 数据中心中的动态允许列表，无需客户配置。 Microsoft 从订阅到各种第三方列表标识这些受信任的电子邮件源。 启用或禁用安全列表的使用;无法配置安全列表上的源电子邮件服务器。 对来自安全列表上的电子邮件服务器的传入邮件跳过垃圾邮件筛选。
 
-本文介绍如何在 Microsoft 365 安全中心或 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置默认连接筛选器策略，Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。 有关 EOP 如何使用连接筛选是组织整体反垃圾邮件设置的一部分，请参阅 [反垃圾邮件保护](anti-spam-protection.md)。
+本文介绍如何在 Microsoft 365 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置默认连接筛选器策略;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。 有关 EOP 如何使用连接筛选是组织整体反垃圾邮件设置的一部分，请参阅 [反垃圾邮件保护](anti-spam-protection.md)。
 
 > [!NOTE]
 > IP 允许列表、安全列表和 IP 阻止列表是允许或阻止组织中电子邮件的总体策略的一部分。 有关详细信息，请参阅创建[安全发件人列表和](create-safe-sender-lists-in-office-365.md)[创建阻止的发件人列表](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 <https://security.microsoft.com> 打开安全中心。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
+- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com> 。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -72,9 +72,9 @@ ms.locfileid: "52821957"
 
 - IP 允许列表和 IP 阻止列表最多支持 1273 个条目，其中条目是单个 IP 地址、IP 地址范围或无类别域际路由 (CIDR) IP。
 
-## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>使用安全中心修改默认连接筛选器策略
+## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>使用 Microsoft 365 Defender 门户修改默认连接筛选器策略
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略& \> **规则** \> **威胁策略** \> **策略**"部分 \> **"反垃圾邮件"。**
 
 2. 在" **反垃圾邮件策略** "页上，单击 (，从 **) 选择"** 连接筛选器策略""默认策略"。
 
@@ -103,9 +103,9 @@ ms.locfileid: "52821957"
 
 4. 返回策略详细信息浮出控件，单击“**关闭**”。
 
-## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>使用安全中心查看默认连接筛选器策略
+## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>使用 Microsoft 365 Defender 门户查看默认连接筛选器策略
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略& \> **规则** \> **威胁策略** \> **策略**"部分 \> **"反垃圾邮件"。**
 
 2. 在 **"反垃圾邮件策略"** 页上，策略列表中将显示以下属性：
 
@@ -152,7 +152,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 若要验证是否成功修改了默认连接筛选器策略，请执行下列任一步骤：
 
-- 在安全中心，单击策略 **名称，** 从列表中转到"电子邮件 & 协作策略 & 规则威胁策略策略"部分"反垃圾邮件"选择"连接筛选器策略 (默认 \>  \>  \>  \>  \> **) "，** 然后验证设置。
+- 在 Microsoft 365 Defender 门户中，通过单击策略名称从列表中选择"电子邮件 **&** 协作策略 & 规则威胁策略策略"部分"反垃圾邮件"选择"连接筛选器策略 (默认 \>  \>  \>  \>  \> **) "，** 然后验证设置。
 
 - 在 Exchange Online PowerShell 或独立 EOP PowerShell 中，运行以下命令并验证设置：
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何设置 Microsoft Viva 主题
-ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930217"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893760"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置 Microsoft Viva 主题
 
@@ -60,8 +60,10 @@ ms.locfileid: "51930217"
 
 ## <a name="set-up-topics"></a>设置主题
 
-设置主题
+> [!Note]
+> 首次启用主题发现时，可能需要两周才能在"管理主题"视图中显示所有建议的主题。 主题发现将在新内容或内容更新时继续。 在 Viva 主题评估新信息时，组织中的建议主题数量通常有波动。
 
+设置主题
 1. 在管理 [Microsoft 365，](https://admin.microsoft.com)选择"**设置**"，然后查看"**文件和内容"** 部分。
 2. 在"**文件和内容"** 部分，单击连接 **人员了解知识"。**
 
@@ -143,8 +145,6 @@ ms.locfileid: "51930217"
 12. 你将返回到你的连接 **人员到知识** 页面。 在此页面中，可选择 **管理**，对配置设置进行任何更改。 
 
     ![设置应用](../media/ksetup7.png)    
-
-请注意，首次启用主题发现时，所有建议的主题最多可能需要两周时间才能显示在"管理主题"视图中。 主题发现将在新内容或内容更新时继续。 在 Viva 主题评估新信息时，组织中的建议主题数量通常有波动。
 
 ## <a name="manage-topic-experiences"></a>管理主题体验
 

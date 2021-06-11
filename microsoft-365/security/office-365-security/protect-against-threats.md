@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c32026ab4f33a68b1f63cb000807671839f6bad
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821279"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878324"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -278,7 +278,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 > 当你完成配置时，使用这些链接开始工作负载调查：
 >
 >- [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
->- [使用安全中心在 Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
+>- [使用 Microsoft 365 Defender 门户管理 Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到恶意文件需采取的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [在 Microsoft 365 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
 

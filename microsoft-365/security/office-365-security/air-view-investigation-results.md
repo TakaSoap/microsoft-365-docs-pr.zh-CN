@@ -19,12 +19,12 @@ description: 在自动调查期间Microsoft 365，可以查看结果和关键发
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275044"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878420"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自动调查的详细信息和Microsoft 365
 
@@ -32,17 +32,21 @@ ms.locfileid: "52275044"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-当[Microsoft](office-365-air.md) Defender for [Office 365](defender-for-office-365.md)自动调查时，有关该调查的详细信息可在自动调查过程中和之后提供。 如果您具有必要的权限，可以在安全中心内查看Microsoft 365详细信息。 调查详细信息为您提供了最新状态以及批准任何挂起操作的能力。
+当[Microsoft](office-365-air.md) Defender for [Office 365](defender-for-office-365.md)自动调查时，有关该调查的详细信息可在自动调查过程中和之后提供。 如果你有必要的权限，可以在 Defender 门户中查看Microsoft 365详细信息。 调查详细信息为您提供了最新状态以及批准任何挂起操作的能力。
 
 > [!TIP]
-> 查看安全中心内新的统一Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
+> 查看 defender 门户中新的统一调查Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page)。
 
 ## <a name="investigation-status"></a>调查状态
 
 调查状态指示分析和操作的进度。 在调查运行时，状态会发生变化，以指示是否已发现威胁，以及是否已批准操作。
 
+<br>
+
+****
+
 |状态|说明|
-|:---|:---|
+|---|---|
 |**即将开始**|已触发调查并等待开始运行。|
 |**正在运行**|调查过程已开始，正在进行中。 当挂起的操作得到批准时 [，也会发生](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) 此状态。|
 |**未找到威胁**|调查已完成，未 (用户帐户、电子邮件、URL 或文件) 威胁。 <p> **提示**：如果怀疑某些内容 (漏报（如漏报) ，可以使用威胁资源管理器 [采取措施](threat-explorer.md)。|
@@ -58,7 +62,7 @@ ms.locfileid: "52275044"
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 
-1. 转到安全Microsoft 365中心 <https://security.microsoft.com> () 登录。
+1. 转到"Microsoft 365 Defender <https://security.microsoft.com> () 并登录。
 2. 在导航窗格中，选择操作 **中心**。
 3. 在"挂起 **"或** " **历史记录"** 选项卡上，选择一个操作。 将打开其飞出窗格。
 4. 在飞出窗格中，选择"打开 **调查页面"。** 
@@ -68,10 +72,10 @@ ms.locfileid: "52275044"
 
 某些类型的警报会触发自动调查Microsoft 365。 若要了解更多信息，请参阅 [触发自动调查的警报策略](office-365-air.md#which-alert-policies-trigger-automated-investigations)。
 
-1. 转到安全Microsoft 365中心 <https://security.microsoft.com> () 登录。
+1. 转到"Microsoft 365 Defender <https://security.microsoft.com> () 并登录。
 2. 在导航窗格中，选择操作 **中心**。
 3. 在"挂起 **"或** " **历史记录"** 选项卡上，选择一个操作。 将打开其飞出窗格。
-4. 在飞出窗格中，选择"打开 **调查页面"。** 
+4. 在飞出窗格中，选择"打开 **调查页面"。**
 5. 选择 **"警报"** 选项卡以查看与该调查关联的所有警报的列表。
 6. 选择列表中的某个项以打开其飞出窗格。 可以在那里查看有关警报详细信息。
 

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/04/2021
+ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 3ee37d7220527c9032b630e02258c684b6c860b3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789167"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878798"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>配置并运行按需 Microsoft Defender 防病毒软件扫描
 
@@ -29,28 +29,22 @@ ms.locfileid: "52789167"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以在个别终结点上运行按需扫描。 这些扫描将立即启动，并且你可以定义扫描的参数，如位置或类型。
+可以在个别终结点上运行按需扫描。 这些扫描将立即启动，并且你可以定义扫描的参数，如位置或类型。 运行扫描时，可以从以下三种类型中选择：快速扫描、完全扫描和自定义扫描。 在大多数情况下，请使用快速扫描。 快速扫描将查找所有可能注册为从系统启动的恶意软件的位置，例如注册表项和已知Windows文件夹。 
 
-## <a name="quick-scan-versus-full-scan"></a>快速扫描与完全扫描
-
-快速扫描将查找所有可能注册为从系统启动的恶意软件的位置，例如注册表项和已知Windows文件夹。
+与始终启用实时保护相结合，可在打开和关闭文件时以及用户导航到文件夹时查看文件，快速扫描可帮助提供强大的保护，防止因系统和内核级别恶意软件而启动的恶意软件。 在大多数情况下，快速扫描已足够，是计划扫描或按需扫描的推荐选项。  [详细了解扫描类型](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)。
 
 > [!IMPORTANT]
 > Microsoft Defender 防病毒执行本地扫描时，在[LocalSystem](/windows/win32/services/localsystem-account)帐户的上下文中运行。 对于网络扫描，它使用设备帐户的上下文。 如果域设备帐户没有访问共享的适当权限，扫描将不起作用。 确保设备具有访问网络共享的权限。
 
-与 [始终打开实时](configure-real-time-protection-microsoft-defender-antivirus.md)保护功能相结合，快速扫描可帮助针对以系统开头的恶意软件和内核级恶意软件提供强大的覆盖范围。 在打开和关闭文件时，以及用户导航到文件夹时，始终启用实时保护会检查文件。 默认情况下，快速扫描在装载的可移动设备（如 USB 驱动器）上运行。 在大多数情况下，快速扫描足以找到实时保护未选取的恶意软件。
-
-当终结点上报告恶意软件威胁时，完全扫描可能很有用。 扫描可确定是否有需要更彻底清理的非活动组件。 但是，Microsoft 通常建议使用快速扫描，而不是完全扫描。 完整扫描可能需要几个小时或几天才能完成，具体取决于需要扫描的数据的数量和类型。 
-
-> [!TIP]
-> 若要详细了解快速扫描和完整扫描之间的差异，请参阅 [快速扫描与完全扫描和自定义扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)。
-
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>使用Microsoft Endpoint Manager运行扫描
 
 1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
+
 2. 选择 **终结点安全**  >  **防病毒**。
+
 3. 在选项卡列表中，选择 **"Windows 10不正常的终结点"。**
-4. 从所提供的操作列表中，选择 **快速扫描** 或 **完全扫描**。
+
+4. 从所提供的操作列表中，选择"快速扫描" (推荐) "**完全扫描"。**
 
 [![IMAGE ](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
@@ -70,8 +64,10 @@ mpcmdrun.exe -scan -scantype 1
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>使用 Microsoft Intune 运行扫描
 
 1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
-2. 从边栏中， **选择">所有设备"，** 然后选择要扫描的设备。
-3. 选择 **...更多**。 从选项中，选择 **"快速扫描"或**"**完全扫描"。**
+
+2. 从边栏中，**选择"设备**  >  **""** 所有设备"，然后选择你想要扫描的设备。
+
+3. 选择 **...更多**。 从选项中，选择快速 **扫描** (推荐) 或 **完全扫描**。
 
 ## <a name="use-the-windows-security-app-to-run-a-scan"></a>使用Windows 安全中心运行扫描
 
@@ -93,8 +89,3 @@ Start-MpScan
 
 有关允许哪些参数的信息，请参阅Windows Defender [WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="related-articles"></a>相关文章
-
-- [配置 Microsoft Defender 防病毒软件扫描选项](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 95471f444117e1a44abe8de76c95cda52d5f7930
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3629df6dd88176f66ec6e0f1eeedb78771cc36ec
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842598"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879224"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 in Microsoft 365 Defender
 
@@ -78,7 +78,7 @@ ms.locfileid: "52842598"
 |领域|更改说明|
 |---|---|
 |[电子邮件实体页面](../office-365-security/mdo-email-entity-page.md)|本 **将** 分散在不同页或视图中的所有电子邮件信息。 调查电子邮件中的威胁和趋势是 *集中*。 可在同一电子邮件页面上访问邮件头信息和电子邮件预览，以及其他有用的电子邮件相关信息。 同样，可在同一页面的选项卡上找到恶意文件附件或 URL 的阻止状态。 电子邮件实体页面使管理员和安全运营团队能够快速了解电子邮件威胁及其状态，然后快速确定处理情况。|
-|[调查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|将 [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) 和 [Defender for Endpoint](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。|
+|[调查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|将 [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) 和 [Defender for Endpoint](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。|
 |[警报视图](../../compliance/alert-policies.md)|安全 **与** 合规中心中的"查看警报"Office现在包含指向 Microsoft 365 Defender 的链接。 单击"打开 **警报页面**"链接，Microsoft 365 Defender" 打开。 可以通过单击警报 **中** Office 365 警报来访问通知页面。|
 |[攻击模拟培训](../office-365-security/attack-simulation-training-insights.md)|使用"攻击攻击"培训在组织中运行实际攻击方案。 这些模拟攻击可帮助在真正攻击对组织造成攻击之前对员工进行培训。 攻击攻击培训包括更多选项、增强的报告以及改进的培训课程，有助于更轻松地提供和管理攻击攻击方案和培训方案。|
 |

@@ -10,20 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解安全中心内的攻击Microsoft 365培训如何影响员工，并可以从模拟和培训结果中获得见解。
+description: 管理员可以了解 Defender 门户中的攻击Microsoft 365培训如何影响员工，并可以从模拟和培训结果中获得见解。
 ms.technology: mdo
-ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600003"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878372"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>通过攻击模拟培训获得见解
 
+**适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
+
 在攻击模拟培训中，Microsoft 根据员工经过的模拟和培训结果提供见解。 这些见解将帮助你随时了解员工的威胁准备进度，并推荐下一步，让员工和环境更好地做好应对攻击的准备。
 
-我们正在不断扩展可供你获取的见解。 行为影响和推荐操作目前可用。 若要开始，请前往安全中心 中的攻击[Microsoft 365培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
+我们正在不断扩展可供你获取的见解。 行为影响和推荐操作目前可用。 若要开始，请前往 Microsoft 365 Defender 门户[中的攻击模拟培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>行为对泄露率的影响
 

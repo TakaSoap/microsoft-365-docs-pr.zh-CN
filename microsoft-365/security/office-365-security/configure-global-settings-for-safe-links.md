@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何查看和配置全局设置 (阻止以下 URL"列表和保护 Office 365 应用) for 保险箱 Links in Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e77373657d3167ca8f5bafa544923ab3a2320ce
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5b1bcdaf92412b17b231e3f4849bae8aab72f292
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821979"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878528"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中配置保险箱链接的全局Office 365
 
@@ -45,13 +45,13 @@ ms.locfileid: "52821979"
 - " **阻止以下 URL"** 列表。 此设置适用于任何活动"链接"策略中包含的保险箱用户。 有关详细信息，请参阅[链接链接的"阻止以下 URL"保险箱列表](safe-links.md#block-the-following-urls-list-for-safe-links)
 - 保险箱链接应用Office 365保护。 这些设置适用于组织中获得 Defender for Office 365 许可的所有用户，而不管这些用户是否包含在活动的 保险箱 链接策略中。 有关详细信息，请参阅保险箱[应用的链接Office 365设置](safe-links.md#safe-links-settings-for-office-365-apps)。
 
-您可以在 保险箱 Microsoft 365 安全中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置全局 Microsoft 365 链接Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Microsoft Defender for Office 365 加载项订阅的组织) 。
+可以在 Microsoft 365 Defender 门户或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置全局 保险箱 链接Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Microsoft Defender for Office 365 加载项订阅的组织) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 没有内置或默认 保险箱 链接策略，因此您需要创建至少一个 保险箱 链接策略，以便"阻止以下 **URL"** 列表处于活动状态。 有关说明，请参阅在[Microsoft Defender 保险箱设置链接策略Office 365。](set-up-safe-links-policies.md)
 
-- 在 <https://security.microsoft.com> 打开安全中心。 若要直接转到"链接 **保险箱，** 请使用 <https://security.microsoft.com/safelinksv2> 。
+- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com> 。 若要直接转到"链接 **保险箱，** 请使用 <https://security.microsoft.com/safelinksv2> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -72,11 +72,11 @@ ms.locfileid: "52821979"
 
 - [新功能不断添加到 Microsoft Defender for Office 365。](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365) 添加新功能时，可能需要对现有"链接"策略保险箱调整。
 
-## <a name="configure-the-block-the-following-urls-list-in-the-security-center"></a>在安全中心配置"阻止以下 URL"列表
+## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>在 Defender 门户中配置"阻止Microsoft 365 URL"列表
 
 "**阻止以下 URL"** 列表标识应始终被支持应用中的"链接保险箱阻止的链接。 有关详细信息，请参阅链接[的"阻止以下 URL"保险箱列表](safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. 在安全中心，转到电子邮件&**协作策略** \> **&规则** \> **威胁策略** \> **策略**"部分保险箱 \> **链接"。**
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **保险箱 Links**.
 
 2. 在 **"保险箱"页上**，单击"**全局设置"。** In the **保险箱 Links policy for your organization** fly out that appears， go to the Block the following **URLs** box.
 
@@ -117,11 +117,11 @@ ms.locfileid: "52821979"
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security-center"></a>在保险箱中心为Office 365应用配置链接保护
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>在 保险箱 Defender 门户中Office 365应用配置Microsoft 365链接保护
 
 保险箱适用于应用Office 365的链接保护适用于支持的文档Office桌面、移动和 Web 应用中的文档。 有关详细信息，请参阅保险箱[应用的链接Office 365设置](safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. 在安全中心，转到电子邮件&**协作策略** \> **&规则** \> **威胁策略** \> **策略**"部分保险箱 \> **链接"。**
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **保险箱 Links**.
 
 2. 在 **"保险箱"页上**，单击"**全局设置"。** 在 **保险箱"** 组织的链接策略"飞出部分，配置 设置 中适用于受支持的 Office 365 **应用中的内容的以下** 设置：
 
@@ -157,7 +157,7 @@ Set-AtpPolicyForO365 -TrackClicks $true
 
 若要验证是否成功配置了 保险箱 链接的全局设置 (阻止以下 **URL** 列表和 Office 365 应用保护设置) ，请执行下列任一步骤：
 
-- 在安全中心中，转到电子邮件&协作策略 \> **&规则** 威胁策略"部分 \>  \> 保险箱链接单击"全局设置 \> **"，** \> 然后验证显示在飞出中的设置。
+- 在 Microsoft 365 Defender 门户中，转到电子邮件 **&** 协作策略 & 规则威胁策略 \>  \>  \>  \> **策略部分保险箱链接单击全局设置，** \> 并验证显示在飞出中的设置。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，运行以下命令并验证设置：
 
