@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 数据丢失防护参考资料
-ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572557"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878156"
 ---
 # <a name="data-loss-prevention-reference"></a>数据丢失防护参考
  
@@ -112,7 +112,7 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 如果你选择包括或排除特定 OneDrive 帐户或组，则 DLP 策略可包含不超过 100 个用户帐户或 50 个组作为包含项或排除项。
 
 > [!NOTE]
-> 使用帐户或组界定 OneDrive for Business 策略范围正处于公开预览状态。 在此阶段，你可以将用户帐户和组作为 DLP 策略的一部分包括或排除。 不支持将包含项和排除项作为同一策略的一部分。
+> OneDrive用户帐户或组的业务策略范围的详细信息是公共预览版。 
   
 ### <a name="rules"></a>Rules
 
@@ -542,7 +542,7 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
  
 ## <a name="permissions"></a>权限
 
-创建 DLP 策略的合规性团队成员需要具有对安全 &amp; 合规中心的访问权限。 默认情况下，租户管理员将有权访问此位置，并可授予合规部主管和其他人访问安全 &amp; 合规中心的权限，而不为其提供租户管理员的所有权限。为此，我们建议你：
+默认情况下，全局管理员、安全管理员和合规性管理员将有权访问创建和应用 DLP 策略。 创建 DLP 策略的合规性团队的其他成员需要安全与合规中心 &amp; 的权限。 默认情况下，租户管理员有权访问此位置，并可以授予合规部官员和其他人员对安全与合规中心的访问权限，而不授予租户管理员 &amp; 的所有权限。为此，我们建议您：
   
 1. 在 Microsoft 365 中创建组并向其添加合规部主管。
     

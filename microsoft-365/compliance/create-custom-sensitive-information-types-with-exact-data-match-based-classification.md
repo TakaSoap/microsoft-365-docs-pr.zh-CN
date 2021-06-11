@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff190fa85e631562a07dcecc1f75713ecacdf07e
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822113"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878192"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
 
 
-[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT () 敏感信息类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -93,21 +93,22 @@ ms.locfileid: "52822113"
 
 设置和配置基于 EDM 的分类包括：
 
-1. [保存 .csv 格式的敏感数据](#save-sensitive-data-in-csv-format)
+1. [以 .tsv .csv保存敏感数据](#save-sensitive-data-in-csv-or-tsv-format)
 2. [定义你的敏感信息数据库架构](#define-the-schema-for-your-database-of-sensitive-information)
 3. [设置规则包](#set-up-a-rule-package)
 
 
-#### <a name="save-sensitive-data-in-csv-format"></a>保存 .csv 格式的敏感数据
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
-1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel），然后以 .csv 格式保存文件。 数据文件最多可包括以下内容：
+1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值或以管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
+数据文件最多可包括以下内容：
       - 高达 1 亿行的敏感数据
       - 每个数据源最多 32 列（字段）
       - 最多 5 个列（字段）标记为可搜索
 
-2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
+2. 在数据库或 .tsv .csv构造敏感数据，使第一行包含用于基于 EDM 的分类的字段的名称。 在你的文件中，你可能有字段名称，如"ssn"、"birthdate"、"firstname"、"lastname"。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
 
-3. 注意敏感数据字段的格式。 特别要注意的是，内容中可能包含逗号的字段（比如，包含 “Seattle,WA” 值的街道地址）在用 EDM 工具分析时，可能会被分析为两个单独的字段。 为了避免这种情况，你需要确保在敏感数据表中，用单引号或双引号将这些字段包围在内。 如果带逗号的字段同时也包含空格，你将需要创建一个自定义的敏感信息类型，且它需要匹配对应的格式（例如，一个带有逗号和空格的多词字符串）来确保在扫描文件时该字符串正确匹配。
+3. 注意敏感数据字段的格式。 特别是，如果选择了".csv"格式，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将分析为两个单独的字段。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
@@ -205,7 +206,7 @@ ms.locfileid: "52822113"
 
 1. 按 XML 格式创建一个规则包（采用 Unicode 编码），如下例类似。 （可复制、修改和使用我们的示例。）
 
-      设置规则包时，请确保正确引用 .csv 文件和 **edm.xml** 文件。 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
+      设置规则包时，请确保正确引用 .csv 或 .tsv **edm.xml文件。** 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
       - **RulePack id & ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
 
@@ -385,7 +386,7 @@ ms.locfileid: "52822113"
 - 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
 - 用于上传的计算机上应含有以下内容的目录：
     -  EDMUploadAgent
-    - 我们示例中使用的 csv 格式的敏感项目文件 **PatientRecords**
+    - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中所示
     -  以及输出的哈希和随机混淆值文件
     - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 - 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
@@ -404,7 +405,7 @@ ms.locfileid: "52822113"
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 
 > [!TIP]
-> 或者，可在上传前对 csv 文件运行验证，方法是运行：
+> （可选）您可以通过运行：在.csv对文件或 .tsv 文件运行验证：
 >
 >`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -443,11 +444,12 @@ ms.locfileid: "52822113"
 
 4. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
 
    示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   这会自动将随机生成的随机混淆值添加到哈希，以实现更高的安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
+   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项指定管道分隔的文件。  
+   此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 5. 运行以下命令，检查“上传”状态：
 
@@ -477,7 +479,7 @@ ms.locfileid: "52822113"
    - .EdmHash
    - .EdmSalt
 
-2. 通过安全方式将这些文件复制到计算机，该计算机用于向租户上传敏感项目 csv 文件 (PatientRecords)。
+2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv .tsv 文件 (PatientRecords) 租户。
 
    若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
@@ -508,10 +510,10 @@ ms.locfileid: "52822113"
 
 1. 确定刷新敏感信息数据库的流程和频率（每天或每周）。
 
-2. 将敏感数据重新导出到应用（如 Microsoft Excel），并以 .csv 格式保存文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
+2. 将敏感数据重新导出到应用程序（如 Microsoft Excel）并保存为 .csv .tsv 格式的文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
 
       > [!NOTE]
-      > 如果 .csv 文件的结构（字段名称）未发生更改，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
+      > 如果 .csv 或 .tsv 文件的结构 (字段名) ，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
 
 3. 使用[任务计划程序](/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行[创建哈希并上载敏感数据](#part-2-hash-and-upload-the-sensitive-data)流程中的步骤 2 和 3。 你可以使用多种方法来计划任务：
 
@@ -535,7 +537,7 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
@@ -571,7 +573,7 @@ $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
 \# Assuming Schema file name is same as data store name

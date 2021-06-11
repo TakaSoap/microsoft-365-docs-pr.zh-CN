@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538696"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878240"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -38,6 +38,9 @@ ms.locfileid: "52538696"
 请参阅本主题中的[要注意的潜在验证问题](#potential-validation-issues-to-be-aware-of)。
 
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
+
+> [!NOTE]
+> 如果使用与号字符 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该在字符周围添加一个附加的术语，使其具有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 

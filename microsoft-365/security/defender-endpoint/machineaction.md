@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da3722294957593fc9cb89abfaec13e45106eefc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187378"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878276"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 资源类型
 
@@ -53,6 +53,9 @@ ms.locfileid: "51187378"
 | [运行防病毒扫描](run-av-scan.md)                              | [计算机操作](machineaction.md) | 如果适用，请Windows Defender (AV) 。    |
 | [载出计算机](offboard-machine-api.md)                       | [计算机操作](machineaction.md) | 从 Microsoft Defender [for](machine.md) Endpoint 载出计算机。 |
 | [停止和隔离文件](stop-and-quarantine-file.md)           | [计算机操作](machineaction.md) | 停止执行计算机上的文件并将其删除。        |
+| [运行实时响应](run-live-response.md)                     | [计算机操作](machineaction.md)  | 在设备上运行一系列实时响应命令                       |
+| [获取实时响应结果](get-live-response-result.md) | URL 实体      | 按索引检索特定实时响应命令结果下载链接。 |
+|[取消计算机操作](cancel-machine-action.md)                                | [计算机操作](machineaction.md)  | 取消活动计算机操作。                                            |
 
 <br>
 
@@ -71,6 +74,7 @@ ms.locfileid: "51187378"
 | creationDateTimeUtc | DateTimeOffset | 创建该操作的日期和时间。                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | 上次更新操作状态的日期和时间。                                                                                                                                                     |
 | relatedFileInfo     | 类          | 包含两个属性。 string ```fileIdentifier``` ```fileIdentifierType``` ，Enum，可能的值："Sha1"、"Sha256"和"Md5"。                                                                         |
+
 
 
 ## <a name="json-representation"></a>Json 表示形式

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730926"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888429"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365Defender 事件 API 和事件资源类型
 
@@ -56,6 +56,7 @@ HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `4
 -|-|-
 [列出事件](api-list-incidents.md) | [事件](api-incident.md) 列表 | 获取事件列表。
 [更新事件](api-update-incidents.md) | [事件](api-incident.md) | 更新特定事件。
+[获取事件](api-get-incident.md) | [事件](api-incident.md) | 获取单个事件。
 
 ## <a name="request-body-response-and-examples"></a>请求正文、响应和示例
 

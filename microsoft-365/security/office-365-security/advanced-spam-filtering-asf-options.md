@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解 EOP (中的反) 策略中可用的高级垃圾邮件筛选器Exchange Online Protection (ASF) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12f193ef61205e8568341c774b957ce4a9dd7988
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779418"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878228"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP 中的 (垃圾邮件筛选器) ASF 设置
 
@@ -47,7 +47,7 @@ ms.locfileid: "52779418"
 > - 隔离邮件中是否存在筛选邮件。
 > - 添加到 `X-CustomSpam:` 邮件中的特定 X 标头字段，如本文所述。
 
-以下各节介绍了 Microsoft 365 安全中心、Exchange Online PowerShell 或独立 EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)和[Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) 中的反垃圾邮件策略中可用的 ASF 设置和选项。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+以下各节介绍了在 Microsoft 365 Defender 门户中的反垃圾邮件策略、Exchange Online PowerShell 或独立 EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)和[Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) 中可用的 ASF 设置和选项。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>启用、禁用或测试 ASF 设置
 
@@ -58,7 +58,7 @@ ms.locfileid: "52779418"
 - **测试**：ASF 将相应的 X 标头字段添加到邮件。 邮件会发生什么情况由 Test **模式** (*TestModeAction*) 值：
   - **无**：邮件传递不受 ASF 检测的影响。 邮件仍受 EOP 中其他类型的筛选和规则限制。
   - ***AddXHeader*** (添加默认 X 标头) ：X 标头值 `X-CustomSpam: This message was filtered by the custom spam filter option` 将添加到邮件中。 可以在收件箱规则或邮件流规则（也称为 (传输规则) 邮件传递）中使用此值。
-  - **发送密件** 抄送邮件 (密件抄送) ：将 PowerShell) 中的 *TestModeBccToRecipients* 参数值指定的电子邮件地址 (添加到邮件的"密件抄送"字段中，并将邮件传递给其他密件抄送收件人。 在安全中心，使用分号分隔多个电子邮件地址 (;) 。 在 PowerShell 中，用逗号分隔多个电子邮件地址。
+  - **发送密件** 抄送邮件 (密件抄送) ：将 PowerShell) 中的 *TestModeBccToRecipients* 参数值指定的电子邮件地址 (添加到邮件的"密件抄送"字段中，并将邮件传递给其他密件抄送收件人。 在 Microsoft 365 Defender 门户中，使用分号分隔多个电子邮件地址 (;) 。 在 PowerShell 中，用逗号分隔多个电子邮件地址。
 
   **注意**：
 
