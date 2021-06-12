@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698960"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878048"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -82,3 +82,13 @@ SharePoint 示例：
 - **解决方案**：为 SharePoint 创建20个保留策略，保留期为10年，其中包括100个特定的网站，并为 SharePoint 创建80条保留策略，保留期为4年，其中包括100个特定网站。
     
     由于无需保留所有 SharePoint 网站，因此必须创建指定特定网站的保留策略。 由于一个保留策略不支持超过100个指定网站，因此必须为两个保留期创建多个策略。 这些保留策略中包含的网站数量最多，因此下一个需要保留的新网站需要一个新的保留策略，而不考虑保留期。
+
+## <a name="maximum-number-of-items-for-disposition"></a>每个处置的最大项目数
+
+对于[内容处置](disposition.md)，有一些需要注意的限制:
+
+- 每个保留标签在每个阶段最多 1000000 个等待处置的项
+
+- 处置证明在项被处置后至多七年内可用，此期间每个保留标签最多 1000000 个项。 
+    
+    如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../business-video/get-help-support.md)。

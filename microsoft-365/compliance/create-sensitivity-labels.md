@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244620"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878180"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -181,6 +181,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
 
 对 Windows、macOS、iOS 和 Android 上的 Office 应用使用内置标签时，刷新浏览器时，用户会在 4 个小时内看到新标签，而在 Word、Excel 和 PowerPoint Web 版上，1 小时内就可以看到新标签。但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
+
+> [!NOTE]
+> 其他支持敏感度标签的应用和服务可能会有自己的更新计划，更新频率超过每 24 小时一次，并触发策略更新。 有关详细信息，请参阅它们的文档。 例如，对于 Azure 信息保护统一标签客户端，请参阅 [Azure 信息保护客户端的详细对比](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)中的 **策略更新** 行。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 

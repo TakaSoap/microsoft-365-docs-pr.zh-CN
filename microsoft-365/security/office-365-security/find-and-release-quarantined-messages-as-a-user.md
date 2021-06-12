@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539115"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877868"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -38,11 +38,24 @@ ms.locfileid: "52539115"
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [EOP 的隔离功能](quarantine-email-messages.md)。
 
-作为用户，你可以查看、释放和删除你是收件人的隔离邮件，这些邮件作为垃圾邮件或批量邮件被隔离。 从 2020 年 4 月起，你可以查看或删除你是收件人的被隔离（非高可信度钓鱼邮件）钓鱼邮件。 你可以在“安全与合规中心”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
+作为隔离消息的收件人，你可以作为常规用户对消息所做的事情在下列表格中显示:
+
+<br>
+
+****
+
+|隔离原因：|查看|发布|删除|
+|---|:---:|:---:|:---:|
+|批量邮件|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|垃圾邮件|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|钓鱼(非高可信度钓鱼)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
+|
+
+你可以在“Microsoft 365 Defender 门户”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开安全与合规中心，请转到 <https://protection.office.com>。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
+- 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com>。 若要直接打开“隔离”页，请转到 <https://security.microsoft.com/quarantine>。
 
 - 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -54,7 +67,7 @@ ms.locfileid: "52539115"
 
 ## <a name="view-your-quarantined-messages"></a>查看已隔离邮件
 
-1. 在安全与合规中心内，依次转到“**威胁管理**”\>“**审阅**”\>“**隔离**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**检查**”\>“**隔离**”。
 
 2. 若要对结果进行排序，可以单击可用列标题。 单击“修改列”最多可显示七列。 默认值标有星号 (<sup>\*</sup>)：
 
@@ -89,21 +102,22 @@ ms.locfileid: "52539115"
      - **网络钓鱼**
 
    - **策略类型**：按策略类型筛选邮件：
+     - **反恶意软件策略**
+     - **安全附加策略**(Defender for Office 365)
      - **反网络钓鱼策略**
      - **托管内容筛选器策略**（反垃圾邮件策略）
+     - **传输规则**
+
+     <sup>\*</sup>
 
    若要清除筛选器，请单击“清除”。 若要隐藏筛选器浮出控件，请再次单击“筛选器”。
 
 4. 使用“结果排序依据”（默认为“邮件 ID”按钮）和相应值查找特定邮件。 不支持通配符。 可以按下面的值搜索：
 
    - **邮件 ID**：邮件的全局唯一标识符。 在你选择列表中的邮件后，“详细信息”浮出控件窗格随即显示，其中包含“邮件 ID”值。 管理员可以使用[邮件跟踪](message-trace-scc.md)来查找邮件及其相应“邮件 ID”值。
-
    - **发件人电子邮件地址**：单个发件人的电子邮件地址。
-
    - **策略名称**：使用邮件的完整策略名称。 搜索不区分大小写。
-
    - **收件人电子邮件地址**：单个收件人的电子邮件地址。
-
    - **主题**：使用邮件的整个主题。 搜索不区分大小写。
 
    输入搜索条件后，单击“刷新” ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。
@@ -123,21 +137,13 @@ ms.locfileid: "52539115"
 选择列表中的电子邮件后，可以在“详细信息”浮出控件窗格中看到以下邮件详细信息：
 
 - **邮件 ID**：邮件的全局唯一标识符。
-
 - **发件人地址**
-
 - **接收时间**：收到邮件的日期/时间。
-
 - **主题**
-
 - **隔离原因**：显示邮件是否被标识为“**垃圾邮件**”，“**批量邮件**”或“**钓鱼邮件**”。
-
 - **收件人**：如果邮件有多个收件人，需要单击“预览邮件”或“查看邮件头”，以查看完整的收件人列表。
-
 - **到期时间**：邮件自动从隔离中永久删除的日期/时间。
-
 - **已释放到的位置**：邮件已释放到的所有电子邮件地址（若有）。
-
 - **尚未释放到的位置**：邮件尚未释放到的所有电子邮件地址（若有）。
 
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
@@ -169,7 +175,6 @@ ms.locfileid: "52539115"
 在你选择列表中的多封已隔离邮件（最多 100 封）后，“批量操作”浮出控件窗格随即显示，你可以在其中执行以下操作：
 
 - **释放邮件**：除了无法选择“将邮件释放给特定收件人”之外，可以选择的选项与释放一封邮件时相同，即只能选择“将邮件释放给所有收件人”或“将邮件释放给其他用户”。
-
 - **删除邮件**：当你在显示的警告中单击“是”后，邮件会立即删除，而不会发送给原始收件人。
 
 完成后，单击“关闭”。

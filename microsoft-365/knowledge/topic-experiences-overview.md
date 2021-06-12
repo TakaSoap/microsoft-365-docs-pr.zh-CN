@@ -3,7 +3,7 @@ title: Microsoft Viva 主题概述
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877808"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908314"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
@@ -37,15 +37,36 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 *主题*。 它会编译
 
 ## <a name="how-topics-are-displayed-to-users"></a>如何向用户显示主题
 
-当 SharePoint 新闻和页面上的内容中提及主题时，你将看到其突出显示。 你可以从突出显示中打开主题摘要。 从摘要的标题中打开主题详细信息。 可以自动标识所提及主题，或者已由页面作者通过直接引用将主题添加到页面。 
+通过以下方式向用户显示主题：
 
-   ![主题要点](../media/knowledge-management/saturn.png) 
+- [网页中](topic-experiences-overview.md#topic-highlights)的主题SharePoint突出显示
+- 搜索结果中 [的主题答案](topic-experiences-overview.md#search-results)
+- Office 应用程序中 [的搜索](topic-experiences-overview.md#office-application-search)
+- [主题中心](topic-experiences-overview.md#topic-center) 主页
 
-在 Word、PowerPoint、Outlook 或 Excel（通过搜索框或在上下文菜单中选择"搜索"）使用搜索时，显示的结果也可能显示主题摘要。
+### <a name="topic-highlights"></a>主题要点
+
+当 SharePoint 新闻和页面上的内容中提及主题时，你将看到其突出显示。 你可以从突出显示中打开主题摘要。 打开摘要标题中的主题详细信息以查看整个主题页面。 提及的主题可以自动标识，或者已由页面作者直接引用该主题添加到页面。 
+
+   ![显示主题突出显示的屏幕截图。](../media/knowledge-management/saturn.png) 
+
+### <a name="search-results"></a>搜索结果
+
+当您从 SharePoint[](search.md#topic-answer)起始页进行搜索、在 Office.com 上搜索或在您更改搜索范围以包含整个组织后从 SharePoint 网站进行搜索时，您可以在搜索结果中看到主题答案。 主题答案将显示在结果列表的主题中，并为您提供一组与本主题相关的简短信息。 
+
+   ![显示网站搜索的搜索结果SharePoint屏幕截图。](../media/knowledge-management/site-search-results.png) 
+
+### <a name="office-application-search"></a>Office应用程序搜索
+
+当您在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或选择上下文菜单中的"搜索"）中使用搜索时，主题答案将显示在搜索结果中。
 
    ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
 
    ![显示通过"搜索"上下文菜单在 Word 中搜索的屏幕截图。](../media/knowledge-management/word-search-1.png)
+
+### <a name="topic-center"></a>主题中心
+
+用户可以在主题中心主页上查看其组织中已连接到 [的主题](topic-center-overview.md#home-page)。
 
 ## <a name="knowledge-indexing"></a>知识索引
 

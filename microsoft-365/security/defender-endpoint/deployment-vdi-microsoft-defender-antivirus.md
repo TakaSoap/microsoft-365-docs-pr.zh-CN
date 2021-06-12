@@ -10,22 +10,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275248"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908025"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -175,7 +172,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 如通常一样部署组策略对象。
 
-禁止通知可Microsoft Defender 防病毒扫描或采取修正操作时，Windows 10在操作中心中显示通知。 但是，安全运营团队将在安全中心内看到 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。
+禁止通知可Microsoft Defender 防病毒扫描或采取修正操作时，Windows 10在操作中心中显示通知。 但是，安全操作团队将在 Defender 门户中Microsoft 365[扫描结果](microsoft-defender-security-center.md)。
 
 > [!TIP]
 > 若要在操作中心Windows 10，请执行以下步骤之一：

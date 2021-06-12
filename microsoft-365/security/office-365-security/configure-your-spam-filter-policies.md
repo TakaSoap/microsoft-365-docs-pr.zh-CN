@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2214baa1c205d4e0f634c5a07f4d55522d2ad6b1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822017"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879092"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -37,14 +37,14 @@ ms.locfileid: "52822017"
 
 管理员可以查看、编辑和配置（但不能删除）默认反垃圾邮件策略。 还可以创建应用于组织中特定用户、组或域的自定义反垃圾邮件策略，以实现更细致的控制。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-若要配置反垃圾邮件策略，可以使用 Microsoft 365 安全中心，也可以使用 PowerShell（对于拥有 Exchange Online 邮箱的 Microsoft 365 组织为 Exchange Online PowerShell；对于没有 Exchange Online 邮箱的组织为独立 EOP PowerShell）。
+若要配置反垃圾邮件策略，可以使用 Microsoft 365 Defender 门户，也可以使用 PowerShell（对于拥有 Exchange Online 邮箱的 Microsoft 365 组织为 Exchange Online PowerShell；对于没有 Exchange Online邮箱的组织为独立 EOP PowerShell）。
 
 反垃圾邮件策略的基本要素如下：
 
 - **垃圾邮件筛选策略**：指定根据垃圾邮件筛选裁定执行的操作和通知选项。
 - **垃圾邮件筛选规则**：指定垃圾邮件筛选策略的优先级和收件人筛选器（即对谁应用策略）。
 
-在安全中心内管理反垃圾邮件策略时，这两个要素之间的区别并不明显：
+在 Microsoft 365 Defender 门户中管理反垃圾邮件策略时，这两个要素之间的区别并不明显：
 
 - 在创建反垃圾邮件策略时，实际上是同时创建了垃圾邮件筛选规则和关联的垃圾邮件筛选策略，并对二者使用相同的名称。
 - 如果你修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。 其他所有设置会修改关联的垃圾邮件筛选策略。
@@ -62,7 +62,7 @@ ms.locfileid: "52822017"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 <https://security.microsoft.com> 打开安全中心。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -79,11 +79,11 @@ ms.locfileid: "52822017"
 
 - 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-## <a name="use-the-security-center-to-create-anti-spam-policies"></a>使用安全中心创建反垃圾邮件策略
+## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户创建反垃圾邮件策略
 
-在安全中心内创建自定义反垃圾邮件策略，会同时使用相同的名称创建垃圾邮件筛选规则和关联的垃圾邮件筛选策略。
+在 Microsoft 365 Defender 门户中创建自定义反垃圾邮件策略，会同时使用相同的名称创建垃圾邮件筛选规则和关联的垃圾邮件筛选策略。
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **“反垃圾邮件”策略** 页面上点击 ![“创建图标”](../../media/m365-cc-sc-create-icon.png) **“创建策略”**，然后从下拉列表中选择 **“入站”**。
 
@@ -240,9 +240,9 @@ ms.locfileid: "52822017"
 
 9. 在出现的确认页面上，单击“**完成**”。
 
-## <a name="use-the-security-center-to-view-anti-spam-policies"></a>使用安全中心查看反垃圾邮件策略
+## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户查看反垃圾邮件策略
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **“反垃圾邮件”策略** 页面上，查找以下值之一:
    - “**类型**”值是“**自定义反垃圾邮件策略**”
@@ -257,15 +257,15 @@ ms.locfileid: "52822017"
 
 3. 单击名称选择反垃圾邮件策略时，策略设置会显示在浮出控件中。
 
-## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>使用安全中心修改反垃圾邮件策略
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户修改反垃圾邮件策略
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择反垃圾邮件策略：
    - 你创建的自定义策略，其中“**类型**”列中的值为“**自定义反垃圾邮件策略**”。
    - 名为“**反垃圾邮件入站策略（默认）**”的默认策略。
 
-3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置的详细信息，请参阅本文前面的[使用安全中心创建反垃圾邮件策略](#use-the-security-center-to-create-anti-spam-policies)部分。
+3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置的详细信息，请参阅本文前面的“[使用 Microsoft 365 Defender 门户创建反垃圾邮件策略](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)”部分。
 
    对于默认反垃圾邮件策略，没有“**应用于**”部分（该策略应用于所有人），且无法重命名该策略。
 
@@ -275,7 +275,7 @@ ms.locfileid: "52822017"
 
 无法禁用默认反垃圾邮件策略。
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。
 
@@ -293,14 +293,14 @@ ms.locfileid: "52822017"
 
 默认情况下，反垃圾邮件策略根据创建顺序来获得优先级（新策略的优先级低于旧策略）。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
-若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改安全中心中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
+若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
 
  **注意**：
 
-- 在安全中心，你只能在创建反垃圾邮件策略后更改其优先级。在 PowerShell 中，你可以在创建垃圾邮件筛选规则时覆盖默认优先级（这可能会影响现有规则的优先级）。
+- 在 Microsoft 365 Defender 门户中，你只能在创建反垃圾邮件策略后更改其优先级。在 PowerShell 中，你可以在创建垃圾邮件筛选规则时覆盖默认优先级（这可能会影响现有规则的优先级）。
 - 反垃圾邮件策略将按其显示顺序进行处理（第一个策略的“**优先级**”值为 0）。 默认反垃圾邮件策略的优先级值为“**最低**”，你无法更改此值。
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。
 
@@ -317,7 +317,7 @@ ms.locfileid: "52822017"
 
 如果垃圾邮件筛选裁定隔离了邮件，你可以配置最终用户垃圾邮件通知，让收件人知道向他们发送的邮件发生了什么。 若要详细了解这些通知，请参阅 [ EOP 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择反垃圾邮件策略：
    - 你创建的自定义策略，其中“**类型**”列中的值为“**自定义反垃圾邮件策略**”。
@@ -340,11 +340,11 @@ ms.locfileid: "52822017"
 
 4. 返回策略详细信息浮出控件，单击“**关闭**”。
 
-## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>使用安全中心移除自定义反垃圾邮件策略
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户删除自定义反垃圾邮件策略
 
-在使用安全中心移除自定义的反垃圾邮件策略时，垃圾邮件筛选规则和相应的垃圾邮件筛选策略都将删除。无法删除默认的反垃圾邮件策略。
+当你使用 Microsoft 365 Defender 门户删除自定义反垃圾邮件策略时，垃圾邮件筛选规则和相应的垃圾邮件筛选策略都将被删除。无法删除默认反垃圾邮件策略。
 
-1. 在安全中心，转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“策略”** 部分 \> **“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。 在出现的策略详细信息浮出控件顶部，单击![“更多操作”图标](../../media/m365-cc-sc-more-actions-icon.png)“**更多操作**”\> ![“删除策略”图标](../../media/m365-cc-sc-delete-icon.png)“**删除策略**”。
 
@@ -362,7 +362,7 @@ ms.locfileid: "52822017"
 
 以下反垃圾邮件策略设置仅在 PowerShell 中可配置：
 
-- 默认情况下，_MarkAsSpamBulkMail_ 参数的值为 `On`。 本文前面的“[使用安全中心创建反垃圾邮件策略](#use-the-security-center-to-create-anti-spam-policies)”部分中介绍了此设置的效果。
+- 默认情况下，_MarkAsSpamBulkMail_ 参数的值为 `On`。 本文前面的“[使用 Microsoft 365 Defender 门户创建反垃圾邮件策略](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)”部分中介绍了此设置的效果。
 
 - 以下设置用于最终用户垃圾邮件隔离通知：
   - _DownloadLink_ 参数：显示或隐藏 Outlook 垃圾邮件报告工具的链接。
@@ -378,11 +378,11 @@ ms.locfileid: "52822017"
  **注意**：
 
 - 可以新建垃圾邮件筛选规则，并向它分配未关联的现有垃圾邮件筛选策略。 垃圾邮件筛选规则不能与多个垃圾邮件筛选策略关联。
-- 可以在 PowerShell 中对新垃圾邮件筛选策略配置以下设置（在安全中心内，只有在创建策略后，才能配置这些设置）：
+- 可以在 PowerShell 中对新垃圾邮件筛选策略配置以下设置（在 Microsoft 365 Defender 门户中，只有在创建策略后，才能配置这些设置）：
   - 新建禁用的策略（在 **New-HostedContentFilterRule** cmdlet 上 _Enabled_ 为 `$false`）。
   - 在创建过程中，在 **New-HostedContentFilterRule** cmdlet 上设置策略优先级（_优先级_ _\<Number\>_）。
 
-- 在 PowerShell 中新建的垃圾邮件筛选策略在安全中心内不可见，除非你将策略分配到垃圾邮件筛选规则。
+- 在 PowerShell 中新建的垃圾邮件筛选策略在 Microsoft 365 Defender 门户内不可见，除非你将策略分配到垃圾邮件筛选规则。
 
 #### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>第 1 步：使用 PowerShell 创建垃圾邮件筛选策略
 
@@ -487,7 +487,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 除了以下几项之外，在 PowerShell 中修改垃圾邮件筛选策略时可用的设置，与本文前面的[第 1 步：使用 PowerShell 创建垃圾邮件筛选策略](#step-1-use-powershell-to-create-a-spam-filter-policy)部分中介绍的可用于创建策略的设置相同。
 
 - 只有在 PowerShell 中修改垃圾邮件筛选策略时，才能使用 _MakeDefault_ 开关，它可将指定策略转换为默认策略（应用于所有人，优先级值始终为 **“最低”**，且无法删除）。
-- 无法重命名垃圾邮件筛选策略（**Set-HostedContentFilterPolicy** cmdlet 没有 _Name_ 参数）。 在安全中心内重命名反垃圾邮件策略时，只是在重命名垃圾邮件筛选 _规则_。
+- 无法重命名垃圾邮件筛选策略（**Set-HostedContentFilterPolicy** cmdlet 没有 _Name_ 参数）。 在 Microsoft 365 Defender 门户中重命名反垃圾邮件策略时，只是在重命名垃圾邮件筛选 _规则_。
 
 若要修改垃圾邮件筛选策略，请使用以下语法：
 

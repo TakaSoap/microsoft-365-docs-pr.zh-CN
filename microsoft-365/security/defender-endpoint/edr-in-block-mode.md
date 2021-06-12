@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 86bb27005365b625ee07feaa067c0ac488c3bb4b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302036"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908337"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -62,7 +62,7 @@ EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏�
 > [!IMPORTANT]
 > 在以[阻止模式](#requirements-for-edr-in-block-mode)打开应用前，EDR满足要求。
 
-1. 转到 [https://securitycenter.windows.com](https://securitycenter.windows.com) "Microsoft Defender 安全中心 () 并登录。 
+1. 转到 Microsoft 365 [Defender 门户](microsoft-defender-security-center.md)并登录。 
 
 2. 选择 **设置**  >  **高级功能"。**
 
@@ -86,7 +86,7 @@ EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏�
 > [!IMPORTANT]
 > 若要获取最佳保护值，请确保防病毒解决方案配置为接收定期更新和基本功能，并且已配置排除 [项](configure-exclusions-microsoft-defender-antivirus.md)。 EDR模式中的策略将遵守为阻止模式定义的Microsoft Defender 防病毒。
 
-## <a name="frequently-asked-questions"></a>常见问题解答 
+## <a name="frequently-asked-questions"></a>常见问题 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>我是否需要在阻止EDR打开状态，即使我在设备上Microsoft Defender 防病毒运行？
 

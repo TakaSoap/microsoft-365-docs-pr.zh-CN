@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841302"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908157"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -59,7 +59,7 @@ ms.locfileid: "52841302"
 
 1. 如果以前为组织自定义了主题，请选择"默认主题"并使用保存的自定义项之一，或者选择"**添加主题"。**
 2. 在 **"常规** "页上，可以阻止用户覆盖其主题，并显示用户显示名称。
-3. 选择“**保存**”以保存所做的更改。  
+3. 选择 **保存** 以保存所做的更改。  
 
 > [!IMPORTANT]
 > 默认主题是唯一的，不能重命名，并且适用于组织内部的每个人。 若要删除默认主题，您必须首先删除所有其他主题。
@@ -86,9 +86,12 @@ ms.locfileid: "52841302"
 - **备用徽标**：添加指向徽标的 URL 位置。 应优化备用徽标，以用于Office主题。 与默认徽标的要求相同。
 - **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。
 
-选择“**保存**”以保存所做的更改。
+选择 **保存** 以保存所做的更改。
 
 你随时都可以删除徽标。 只需返回到"**徽标"页** 并选择"删除 **"。**
+
+> [!NOTE]
+> 默认情况下，我们首先显示大多数组织使用的徽标选择。 上载选项仅适用于默认主题，不适用于组主题。
   
 ## <a name="colors-choose-theme-colors"></a>颜色：选择主题颜色
 
@@ -102,7 +105,7 @@ ms.locfileid: "52841302"
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>我的组织已有一个针对所有员工的主题。 这将如何更改？
 

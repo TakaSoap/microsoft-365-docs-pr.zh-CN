@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 现有Office 365客户必须在其国家/地区期限之前提交请求，Microsoft 365服务数据移动到其新地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927308"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908241"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -74,7 +74,7 @@ ms.locfileid: "50927308"
 
 [将核心数据移动到新的数据中心Office 365地理位置](moving-data-to-new-datacenter-geos.md)
 
-[数据移动常见问题解答](data-move-faq.md)
+[数据移动常见问题解答](data-move-faq.yml)
 
 [新的数据中心地理位置Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

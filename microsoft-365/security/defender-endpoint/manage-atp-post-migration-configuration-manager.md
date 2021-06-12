@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 71ad8f52fd9347abdf0146969bb84a19d8883262
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5fde3bfad69a5851dd94b76afb262f8be12d0360
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843054"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908253"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 
@@ -55,9 +55,7 @@ ms.locfileid: "52843054"
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>配置Microsoft Defender 安全中心
 
-如果尚未配置，请配置 Microsoft Defender 安全中心 **(**) 以查看警报、配置威胁防护功能以及查看有关组织整体安全状况 [https://securitycenter.windows.com](https://securitycenter.windows.com) 的详细信息。 
-
-还可以配置最终用户是否可以在网站中查看这些功能Microsoft Defender 安全中心。
+如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能，并查看有关组织整体安全状况的详细信息。 请参阅[Microsoft Defender 安全中心](microsoft-defender-security-center.md)。 还可以配置最终用户是否可以在 defender 门户中查看Microsoft 365功能。
 
 - [概述Microsoft Defender 安全中心](/microsoft-365/security/defender-endpoint/use)
 

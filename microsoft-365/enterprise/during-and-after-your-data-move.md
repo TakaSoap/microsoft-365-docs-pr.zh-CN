@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 数据移动是 Microsoft 将租户的服务和关联数据移动到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c0ea94a80de993d4d1341b8f9b19850d7149583f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625253"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908109"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -122,7 +122,7 @@ Skype for Business移动不再可用。  [Skype for Business Online 将于](/lif
  
 [如何请求数据移动](request-your-data-move.md)
     
-[数据移动常见问题解答](data-move-faq.md)
+[数据移动常见问题解答](data-move-faq.yml)
   
 [新的数据中心地理位置Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
