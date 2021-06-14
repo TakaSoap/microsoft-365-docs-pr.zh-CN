@@ -15,12 +15,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 2c048207d0528856924b348697e1f7c48114e82a
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: ecf809c3fe771e38b6edc758d8f2654c0cb89ca6
+  ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52537279"
+  ms.lasthandoff: 06/10/2021
+  ms.locfileid: "52888333"
 landingContent:
 - title: 管理帐单和付款
   linkLists:
@@ -28,26 +28,28 @@ landingContent:
     links:
     - text: 查看帐单或发票
       url: billing-and-payments/view-your-bill-or-invoice.md
-    - text: 管理付款方式
-      url: billing-and-payments/manage-payment-methods.md
     - text: 了解你的帐单或发票
-      url: billing-and-payments/understand-your-invoice.md
-    - text: 管理计费对象信息
-      url: billing-and-payments/manage-billing-profiles.md
-    - text: 管理计费帐户
-      url: manage-billing-accounts.md
+      url: billing-and-payments/understand-your-invoice2.md
+    - text: 支付订阅费用
+      url: billing-and-payments/pay-for-your-subscription.md
+    - text: 管理支付方式
+      url: billing-and-payments/manage-payment-methods.md
+    - text: 更改帐单邮寄地址
+      url: billing-and-payments/change-your-billing-addresses.md
 - title: 管理许可证
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 购买或删除许可证
+      url: licenses/buy-licenses.md
     - text: 向用户分配许可证
       url: ../admin/manage/assign-licenses-to-users.md
+    - text: 取消分配用户许可证
+      url: ../admin/manage/remove-licenses-from-users.md
     - text: 了解订阅和许可证
       url: licenses/subscriptions-and-licenses.md
-    - text: 购买订阅的许可证
-      url: licenses/buy-licenses.md
-    - text: 从订阅中删除许可证
-      url: ./licenses/buy-licenses.md
+    - text: 下载永久软件和产品许可证密钥
+      url: ../admin/setup/download-software-licenses-csp.md
 - title: 升级、续订或取消
   linkLists:
   - linkListType: how-to-guide
@@ -56,10 +58,10 @@ landingContent:
       url: subscriptions/upgrade-to-different-plan.md
     - text: 续订订阅
       url: subscriptions/renew-your-subscription.md
-    - text: 取消订阅
-      url: subscriptions/cancel-your-subscription.md
     - text: 重新激活订阅
       url: subscriptions/reactivate-your-subscription.md
+    - text: 取消订阅
+      url: subscriptions/cancel-your-subscription.md
     - text: 关闭你的帐户
       url: close-your-account.md
 - title: 试用或购买
@@ -69,8 +71,10 @@ landingContent:
     - text: 试用或购买 Microsoft 365
       url: try-or-buy-microsoft-365.md
     - text: 从免费试用版购买订阅
-      url: ./try-or-buy-microsoft-365.md
+      url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
     - text: 延长试用期
-      url: extend-your-trial.md
+      url: extend-your-trial.md#extend-your-trial
+    - text: 添加存储空间
+      url: add-storage-space.md
     - text: 购买域名
       url: ../admin/get-help-with-domains/buy-a-domain-name.md

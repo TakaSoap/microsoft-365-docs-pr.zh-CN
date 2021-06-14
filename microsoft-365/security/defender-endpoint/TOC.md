@@ -273,7 +273,10 @@
 #### [检测并阻止可能不需要的应用程序](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [为 Microsoft Defender 防病毒检测配置修正](configure-remediation-microsoft-defender-antivirus.md)
-#### [配置计划的快速或完整的 Microsoft Defender 防病毒软件扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [配置 Microsoft Defender 防病毒扫描](schedule-antivirus-scans.md)
+##### [使用组策略安排防病毒扫描](schedule-antivirus-scans-group-policy.md)
+##### [使用 PowerShell 安排防病毒扫描](schedule-antivirus-scans-powershell.md)
+##### [使用 Windows Management Instrumentation (WMI) 安排防病毒扫描](schedule-antivirus-scans-wmi.md)
 #### [在 Microsoft Defender 防病毒程序内使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [与其他安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
 
@@ -468,6 +471,8 @@
 ###### [ 通过应用上下文获得访问权限](exposed-apis-create-app-webapp.md)
 ###### [通过户上下文获得访问权限](exposed-apis-create-app-nativeapp.md)
 ###### [获取合作伙伴应用程序访问权限](exposed-apis-create-app-partners.md)
+
+
 ##### [Microsoft Defender for Endpoint API 架构]()
 ###### [支持的 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 ###### [常见的 REST API 错误代码](common-errors.md)
@@ -520,6 +525,7 @@
 ####### [获取 IP 相关警报](get-ip-related-alerts.md)
 ####### [获取 IP 统计信息](get-ip-statistics.md)
 
+
 ###### [计算机]()
 ####### [计算机方法和属性](machine.md)
 ####### [列出计算机](get-machines.md)
@@ -535,19 +541,23 @@
 ####### [查找缺失的 KBS](get-missing-kbs-machine.md)
 ####### [设置设备值](set-device-value.md)
 
+
 ###### [计算机操作]()
 ####### [计算机操作方法和属性](machineaction.md)
 ####### [列出计算机操作](get-machineactions-collection.md)
 ####### [获取计算机操作](get-machineaction-object.md)
 ####### [收集调查程序包](collect-investigation-package.md)
 ####### [获取调查包 SAS URI](get-package-sas-uri.md)
+####### [获得实时响应结果](get-live-response-result.md)
 ####### [隔离计算机](isolate-machine.md)
 ####### [从隔离释放计算机](unisolate-machine.md)
 ####### [限制应用执行](restrict-code-execution.md)
 ####### [删除应用限制](unrestrict-code-execution.md)
 ####### [运行防病毒扫描](run-av-scan.md)
+####### [运行实时响应](run-live-response.md) 
 ####### [载出计算机](offboard-machine-api.md)
 ####### [停止和隔离文件](stop-and-quarantine-file.md)
+####### [取消计算机操作](cancel-machine-action.md)
 
 ###### [建议]()
 ####### [建议方法和属性](recommendation.md)

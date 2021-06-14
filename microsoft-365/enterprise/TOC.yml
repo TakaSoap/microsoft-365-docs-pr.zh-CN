@@ -265,7 +265,7 @@
         - name: 数据移动期间和数据移动之后
           href: during-and-after-your-data-move.md
         - name: 数据移动常见问题解答
-          href: data-move-faq.md
+          href: data-move-faq.yml
         - name: 客户数据的存储位置
           href: o365-data-locations.md
         - name: 欧盟的数据位置
