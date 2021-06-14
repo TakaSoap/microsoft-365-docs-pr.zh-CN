@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809031"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908049"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -100,4 +100,5 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 
 [分配管理员角色](assign-admin-roles.md)（文章）\
 [Microsoft 365 管理中心中的 Azure AD 角色](azure-ad-roles-in-the-mac.md)（文章）\
-[Exchange Online 管理员角色](about-exchange-online-admin-role.md)（文章）\ [Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)（文章）
+[Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)（文章）\
+[Exchange Online 管理员角色](about-exchange-online-admin-role.md)（文章）

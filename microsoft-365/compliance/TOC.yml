@@ -566,6 +566,8 @@
               href: configure-edge-to-export-search-results.md
             - name: 批量编辑多个内容搜索
               href: bulk-edit-content-searches.md
+            - name: 在审核日志中搜索电子数据展示活动
+              href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: 内容搜索 PowerShell 脚本
           items:
             - name: 使用内容搜索进行目标收集

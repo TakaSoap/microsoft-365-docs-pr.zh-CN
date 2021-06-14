@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594069"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878120"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -38,7 +38,7 @@ ms.locfileid: "52594069"
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>查看内容处置的前提条件
 
-若要管理处置评审并确认已删除记录，必须具有足够的权限，并且必须启用审核。
+若要管理处置评审并确认已删除记录，必须具有足够的权限，并且必须启用审核。 另请注意处置的任何 [限制](retention-limits.md#maximum-number-of-items-for-disposition)。
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
@@ -215,8 +215,6 @@ If you need additional information, visit the helpdesk website (https://support.
 这些项目在 **类型** 列中的 **已处置记录** 里显示。 例如：
 
 ![未经处置评审即被处置的项目](../media/records-disposed2.png)
-
-在“**已处置项目**”选项卡中显示的项目将在处置后最多保留 7 年，在此期间，每条记录的上限为一百万个项目。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](../business-video/get-help-support.md)。
 
 > [!NOTE]
 > 此功能使用 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要允许审核以使其 [启动且可搜索](turn-audit-log-search-on-or-off.md)，以便捕获相应的事件。

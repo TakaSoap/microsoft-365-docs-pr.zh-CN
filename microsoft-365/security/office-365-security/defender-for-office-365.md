@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7570a925f4f24148874eada8a835ae473efaeb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650346"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904112"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "51650346"
 > [!IMPORTANT]
 > 本文适用于拥有 [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 Defender for Office 365 包括：
+Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。Defender for Office 365 包括：
 
 - **[威胁防护策略](#configure-microsoft-defender-for-office-365-policies)**：定义威胁防护策略，为组织设置适当级别的保护。
 
@@ -147,7 +147,7 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>使用 Microsoft Defender for Office 365 功能所需权限
 
-若要访问安全与合规中心中的 Microsoft Defender for Office 365 功能，你必须分配有相应的角色。 下表提供一些示例：
+若要访问安全与合规中心中的 Microsoft Defender for Office 365 功能，你必须分配有相应的角色。下表包含一些示例：
 
 |角色或角色组|了解详细信息的资源|
 |---|---|
@@ -174,7 +174,7 @@ Microsoft Defender for Office 365 包含在特定订阅中，如 Microsoft 365 E
 
 新功能持续添加到 Microsoft Defender for Office 365 中。 若要了解详细信息，请参阅以下资源：
 
-- [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供了正在开发和即将推出的新功能列表。
+- [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365)提供了正在开发和即将推出的新功能列表。
 
 - [Microsoft Defender for Office 365 服务说明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)介绍了 Defender for Office 365 计划的功能和可用性。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730542"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903896"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
@@ -79,6 +79,18 @@ ms.locfileid: "52730542"
 使用保留标签标记为记录的文档示例：
 
 ![标记为记录的文档的详细信息窗格](../media/recordversioning7.png)
+
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>搜索审核日志以查找已声明记录的标签项
+
+审核日志中记录标记以声明项目作为记录的操作。
+
+对于 SharePoint 项目： 
+- 从 **文件和页面活动**，选择 **已更改文件的保留标签**。 此审核事件用于将项目标记为记录、法规记录或标准保留标签。
+
+对于 Exchange 项目：
+- 从 **Exchange 邮箱活动中**，选择 **已标记的消息作为记录**。 此审核事件适用于将项目标记为记录或法规记录的保留标签。
+
+有关搜索这些事件详细信息，请参阅 [安全与合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。
 
 ## <a name="next-steps"></a>后续步骤
 

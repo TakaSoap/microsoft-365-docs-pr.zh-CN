@@ -6,19 +6,19 @@
       items:
         - name: 什么是 Microsoft 365 Defender？
           href: microsoft-365-defender.md
-        - name: Microsoft 365Defender 概述
+        - name: Microsoft 365 Defender 概述
           href: overview-security-center.md
         - name: Microsoft 365 Defender 的新增功能
           href: whats-new.md
         - name: Microsoft 365 Defender 中的 Defender for Endpoint
           href: microsoft-365-security-center-mde.md
-        - name: defender for Office 365 in Microsoft 365 Defender
+        - name: Microsoft 365 Defender 中的 Defender for Office 365
           href: microsoft-365-security-center-mdo.md
         - name: 将 Defender for Endpoint 重定向到 Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: 将Office 365安全与合规中心重定向到 Microsoft 365 Defender
+        - name: 将 Office 365 安全与合规中心重定向到 Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
-        - name: Microsoft 365Defender 与 Azure Sentinel 集成
+        - name: Microsoft 365 Defender 与 Azure Sentinel 的集成
           href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: 预览功能
           href: preview.md
@@ -86,7 +86,7 @@
               href: microsoft-secure-score-whats-new.md
         - name: 保护你的标识
           items:
-            - name: 管理安全警报
+            - name: 管理安全威胁
               href: ../defender-identity/manage-security-alerts.md
     - name: 调查并响应威胁
       items:
@@ -110,11 +110,11 @@
                   href: first-incident-overview.md
                 - name: 准备
                   href: first-incident-prepare.md
-                - name: 步骤 1. 会审和分析
+                - name: 步骤 1. 分类和分析
                   href: first-incident-analyze.md
                 - name: 步骤 2. 修正
                   href: first-incident-remediate.md
-                - name: 步骤 3. 审阅
+                - name: 步骤 3. 审查
                   href: first-incident-post.md
                 - name: 其他事件示例
                   items:
@@ -128,9 +128,9 @@
               href: get-incident-notifications.md
         - name: 威胁分析
           items:
-            - name: 跟踪和应对新出现的威胁
+            - name: 跟踪并响应新出现的威胁
               href: threat-analytics.md
-            - name: 了解分析员报告
+            - name: 了解分析报告
               href: threat-analytics-analyst-reports.md
         - name: 自动调查和响应
           items:
@@ -146,7 +146,7 @@
               href: m365d-autoir-actions.md
             - name: 查看详细信息和结果
               href: m365d-autoir-results.md
-            - name: 解决误报和负面影响
+            - name: 解决误报和漏报
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 高级搜寻
           items:
@@ -318,9 +318,9 @@
               items:
                 - name: 常见的 REST API 错误代码
                   href: api-error-codes.md
-                - name: 流式处理 API
+                - name: Streaming API
                   items:
-                    - name: Microsoft 365流式处理 API
+                    - name: Microsoft 365 Streaming API
                       href: streaming-api.md
                     - name: 将高级搜寻事件流式传输至 Azure 事件中心
                       href: streaming-api-event-hub.md
