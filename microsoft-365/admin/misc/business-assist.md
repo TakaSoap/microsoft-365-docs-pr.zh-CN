@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解 Business Assist 计划及其如何帮助你的组织改进商业Microsoft 365使用情况。
-ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768977"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924583"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业帮助
 
@@ -33,7 +33,7 @@ ms.locfileid: "52768977"
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**快速启动并运行** <br> 与小型企业专家合作，共同Microsoft 365保护业务并赋予其专业外观的功能。 |**为企业中的每个人提供能力** <br> 你的所有员工，不只是 IT 负责人都可以直接转到 Microsoft 专家，以更快地获得持续支持。 |**释放业务潜能** <br> 了解未充分利用的功能，并获取有关从订阅获取更多价值的方法的建议。 |
+|与小型企业专家合作，共同Microsoft 365保护业务并赋予其专业外观的功能。 |你的所有员工，不只是 IT 负责人都可以直接转到 Microsoft 专家，以更快地获得持续支持。 |了解未充分利用的功能，并获取有关从订阅获取更多价值的方法的建议。 |
 |**加快云迁移** <br> 获取有关将当前所有文件 (、存储、文档和通信) 移动到Microsoft 365。 |**轻松访问专家** <br> Our team will pick up the conversation where you left it last. 没有票证可跟踪，没有机器人，无需长时间等待。 |**保持最新状态** <br> 定期检查，帮助你在添加新的服务功能以及公司需求变化时保持最新状态。 |
 | | | |
 

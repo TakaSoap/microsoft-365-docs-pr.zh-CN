@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: 了解允许你管理用户如何从移动设备Office应用和工作文件的保护策略。
-ms.openlocfilehash: a48aa241c9e70cf087da3f1701e859dae7238024
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7602b712f2dfc3ba369fd76979baaaa8d5da5c5c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578379"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925271"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理用户访问移动设备上的 Office 文档的方式
 
@@ -43,10 +43,9 @@ ms.locfileid: "51578379"
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>用于控制用户如何在移动设备上访问 Office 文件的设置
 
 以下设置可用于管理用户访问 Office 工作文件的方式：
-  
-|||
-|:-----|:-----|
+
 |设置  <br/> |说明  <br/> |
+|:-----|:-----|
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置为 **"打开**"，则除了用户名和密码之外，用户还必须提供另一种形式的身份验证，然后才能在移动设备上Office应用。  <br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户在系统提示重新登录之前可以处于空闲状态的时间。  <br/> |

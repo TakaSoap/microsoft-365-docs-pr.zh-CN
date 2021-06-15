@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: 保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 如何保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
+ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635958"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924619"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务计划的 Microsoft 365的十大方法
 
@@ -35,7 +35,7 @@ ms.locfileid: "52635958"
 
 Microsoft 建议你完成下表中列出的适用于你的服务计划的任务。
 
-||任务|Microsoft 365 商业标准版|Microsoft 365 商业高级版|
+|*Number*|任务|Microsoft 365 商业标准版|Microsoft 365 商业高级版|
 |---|---|---|---|
 |1|[设置多重身份验证](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[培训用户](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|

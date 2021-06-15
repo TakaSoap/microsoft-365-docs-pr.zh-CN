@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,13 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: cd222760f3a5cc005c679bf28365237cc70e8950
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: cba7a9d6ed23ac1dc72ef6cbcecfdfc7a0f4c60b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275344"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926279"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题
 
@@ -1204,7 +1204,7 @@ UAC </dt>
 由于Microsoft Defender 防病毒，客户端遇到了此错误。 终结点可能不受保护。 查看错误描述，然后按照下面的相关 <b>用户操作</b> 步骤操作。
 <table>
 <tr>
-<th>Action</th>
+<th>操作</th>
 <th>用户操作</th>
 </tr>
 <tr>
@@ -1352,21 +1352,21 @@ Microsoft Defender 防病毒客户端正常运行。
 <td >
 防病毒客户端运行状况报告。
 <dl>
-<dt>平台版本： &lt;当前 &gt; 平台</dt>版本 引擎
-<dt>版本 &lt; ：反恶意软件引擎 版本 &gt; </dt>网络实时检查引擎版本：
-<dt> &lt; 网络实时 &gt; </dt>检查引擎版本 防病毒
-<dt>签名版本： &lt; 防病毒 &gt; </dt>签名版本 反
-<dt>间谍软件签名版本： &lt; 反间谍软件签名版本 &gt; </dt>网络实时检查
-<dt>签名版本： &lt; 网络实时检查签名 版本 &gt; </dt>RTP 状态：实时保护状态 (
-<dt> &lt; &gt; 已启用或</dt>已禁用) 
-<dt>OA 状态：访问状态 (启用或禁用 &lt; &gt;) </dt> 
-<dt>IOAV 状态 &lt; ：IE 下载和 Outlook 快速附件状态 (启用或禁用 &gt;) </dt>BM 状态：行为监视状态 (
-<dt> &lt; &gt; 已启用或</dt>已禁用) 防病毒签名年龄：防病毒签名年龄 (天
-<dt> &lt; &gt;) </dt>反间谍软件签名时间
-<dt>： &lt; 反spyware signature age (days &gt;) </dt>Last quick scan 
-<dt>age： Last quick scan age (in days &lt; &gt;) </dt>Last full scan 
-<dt>age： Last full scan age (in days &lt; &gt;) </dt> 
-<dt>Antivirus signature creation time: ?&lt;防病毒签名创建时间 &gt; </dt>
+<dt>平台版本： &lt;当前 &gt; 平台</dt>版本 引擎版本
+<dt> &lt; ：反恶意软件引擎 版本 &gt; </dt>网络实时检查引擎版本：网络
+<dt> &lt; &gt; 实时</dt>检查引擎版本 防病毒签名
+<dt>版本 &lt; &gt; </dt>：防病毒签名版本 反
+<dt>间谍软件 &lt; &gt; </dt>签名版本：反间谍软件签名版本 网络实时检查签名
+<dt>版本：网络实时检查签名 &lt; 版本 &gt; </dt>RTP 状态：实时保护状态 (
+<dt> &lt; &gt; 已启用或</dt>禁用) 
+<dt>OA 状态： 访问状态 (已启用或禁用 &lt; &gt;) </dt>IOAV 状态
+<dt> &lt; ：IE 下载和 Outlook 快速附件状态 (已启用或禁用 &gt;) </dt>BM 状态：行为监视状态 (
+<dt> &lt; &gt; 已启用或</dt>禁用) 防病毒签名年龄：防病毒签名年龄 (天
+<dt> &lt; &gt;) </dt>反间谍软件签名年龄：反间谍软件签名年龄 (天
+<dt> &lt; &gt;) </dt>上次快速扫描时间：上次快速扫描时间
+<dt> (天 &lt; &gt;) </dt>上次完全扫描时间：上次完全扫描时间
+<dt> &lt; &gt; (（</dt>以天) 防病毒签名创建时间表示
+<dt>）：？ &lt;防病毒签名创建时间 &gt; </dt>
 <dt>反间谍软件签名创建时间：？ &lt;反间谍软件签名创建时间 上次 &gt; </dt>
 <dt>快速扫描开始时间：？ &lt;上次快速扫描开始时间 &gt; 上次</dt>
 <dt>快速扫描结束时间：？ &lt;上次快速 &gt; </dt>扫描结束时间 上次快速扫描源：上次快速扫描源 (0 = 扫描未

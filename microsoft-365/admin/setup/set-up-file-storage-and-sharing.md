@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站来Microsoft 365和Microsoft 365文件共享。
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635638"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924607"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在文件中设置文件存储和Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "52635638"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365文档存储和管理
 
@@ -56,12 +56,12 @@ ms.locfileid: "52635638"
   
 ![显示产品如何使用Microsoft 365或团队OneDrive的图表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-下面是在将网站和工作组网站一OneDrive存储在每个位置的内容的建议：
+下面是在将网站和工作组网站一OneDrive存储在每个位置的内容的建议：<br/>
+
   
-||||
+|存储位置|它有什么用|在此存储的内容|
 |:-----|:-----|:-----|
-|**存储位置** <br/> |**它有何用途？** <br/> |**在此存储的内容** <br/> |
-|**OneDrive** <br/> |将内容存储在OneDrive就像在计算机上存储文件一样;其他人都无法访问它们。  <br/> 有关详细信息，请参阅[什么是OneDrive for Business？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他工作组成员无需定期协作处理或访问的业务文件。  <br/> |
+|**OneDrive** |将内容存储在OneDrive就像在计算机上存储文件一样;其他人都无法访问它们。<br/> 有关详细信息，请参阅[什么是OneDrive for Business？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他工作组成员无需定期协作处理或访问的业务文件。<br/> |
 |**SharePoint 团队网站** <br/> |协作。 创建 Microsoft 365 组 (例如，在 Microsoft 365 管理中心、Outlook 或在 Microsoft Teams) 中创建团队时，会为该组创建 SharePoint 团队网站。 同样，当你从 SharePoint 主页或从新 SharePoint 管理中心创建新的 SharePoint 团队网站时，它还会创建一个Microsoft 365组。 有关详细信息，请参阅[什么是团队SharePoint？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)和[在 SharePoint Online 创建团队网站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |具有共享所有权的文件。 我们建议为组织的每个工作单元创建单独的工作组网站。 例如，若要将人员文档和财务文档保留为小型团队专用，请创建单独的团队网站。  <br/> |
 
 > [!NOTE]

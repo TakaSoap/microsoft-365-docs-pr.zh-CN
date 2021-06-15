@@ -11,18 +11,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782809"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925931"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -78,8 +78,8 @@ ms.locfileid: "52782809"
 
 | 如何启用防篡改保护  | 对 MAPS 的依赖 (云提供的保护)     |
 |:----|:----|
-| Microsoft Intune  | 不支持 |
-| Microsoft Endpoint Configuration Manager + 租户附加  |     不支持  |
+| Microsoft Intune  | 否 |
+| Microsoft Endpoint Configuration Manager + 租户附加  |     否  |
 | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)Microsoft Defender 安全中心 ()     |     是 |
 | Microsoft 365安全中心 [https://security.microsoft.com](https://security.microsoft.com) ()   |     是  |
 
@@ -243,7 +243,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="will-tamper-protection-have-any-impact-on-third-party-antivirus-registration"></a>篡改保护是否将影响第三方防病毒注册？
 
-否。 第三方防病毒产品将继续在应用程序Windows 安全中心注册。
+不正确。 第三方防病毒产品将继续在应用程序Windows 安全中心注册。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>如果设备Microsoft Defender 防病毒处于活动状态，会发生什么情况？
 
@@ -283,7 +283,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>我是企业客户。 本地管理员能否更改其设备的篡改保护？
 
-否。 本地管理员无法更改或修改篡改保护设置。
+不正确。 本地管理员无法更改或修改篡改保护设置。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>如果我的设备已载入 Microsoft Defender for Endpoint，然后进入板载状态，会发生什么情况？
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: 了解如何实现 ExpressRoute for Office 365，这将提供许多面向 Internet 的 Office 365 路径。
-ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051362"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924935"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 
@@ -103,10 +103,10 @@ ExpressRoute for Office 365 提供了一个指向许多面向 Internet 的 Offic
   
 应检查入站连接，而不管它们是否通过 Internet 或 ExpressRoute 进行连接，以确保尚未引入非对称路由。 在某些情况下，允许服务启动入站Office 365本地终结点可能还需要由其他 Microsoft 和非 Microsoft 服务。 出于其他目的启用 ExpressRoute 路由到这些服务Office 365不会中断其他方案，这一点非常重要。 在许多情况下，客户可能需要对内部网络（如基于源的 NAT）进行特定更改，以确保来自 Microsoft 的入站流在启用 ExpressRoute 后保持对称。
   
-下面是所需详细级别的示例。 在这种情况下，Exchange混合会通过 ExpressRoute 路由到本地系统。
+下面是所需详细级别的示例。 在这种情况下，Exchange混合会通过 ExpressRoute 路由到本地系统。 
 
-|**Connection 属性**|**值**|
-|:-----|:-----|
+|Connection 属性   |值  |
+|----------|-----------|
 |**网络流量方向** <br/> |入站  <br/> |
 |**服务** <br/> |Exchange 混合  <br/> |
 |**公共Office 365终结点 (源)** <br/> |Exchange Online (IP 地址)   <br/> |
@@ -115,15 +115,15 @@ ExpressRoute for Office 365 提供了一个指向许多面向 Internet 的 Offic
 |**此本地终结点将供其他非 (使用Office 365) Microsoft 服务** <br/> |否  <br/> |
 |**Internet 上的用户/系统会使用此本地终结点吗** <br/> |是  <br/> |
 |**通过公共终结点发布的内部系统** <br/> |Exchange Server客户端访问角色 (本地) 192.168.101、192.168.102、192.168.103  <br/> |
-|**公共终结点的 IP 播发** <br/> |**到 Internet**：5.5.0.0/16  <br/> **To ExpressRoute**： 5.5.5.0/24  <br/> |
-|**安全/外围控件** <br/> |**Internet 路径**： DeviceID_002  <br/> **ExpressRoute 路径**： DeviceID_003  <br/> |
-|**高可用性** <br/> |跨 2 个地理位置冗余的活动/活动  <br/> ExpressRoute 电路 - 芝加哥和 Dallas  <br/> |
-|**路径对称控制** <br/> |**方法**：源 NAT  <br/> **Internet 路径**：源 NAT 到 192.168.5.5 的入站连接  <br/> |**ExpressRoute 路径**：到 Dallas) 192.168.1.0 (和 192.168.2.0 (NAT)   <br/> |
+|**公共终结点的 IP 播发** <br/> |**To Internet**： 5.5.0.0/16 **to ExpressRoute**： 5.5.5.0/24  <br/> |
+|**安全/外围控件** <br/> |**Internet 路径**： DeviceID_002  **ExpressRoute 路径**： DeviceID_003  <br/> |
+|**高可用性** <br/> |跨 2 个地理位置冗余/ExpressRoute 电路的活动/活动 - 芝加哥和 Dallas  <br/> |
+|**路径对称控制** <br/> |方法 **：源** NAT **Internet 路径**：到 192.168.5.5 **ExpressRoute** 的源 NAT 入站连接：到芝加哥) 和 192.168.2. (0 (Dallas) 的源 NAT 连接  <br/> |
 
 下面是仅出站服务的示例：
 
 |**Connection 属性**|**值**|
-|:-----|:-----|
+|----------|-----------|
 |**网络流量方向** <br/> |出站  <br/> |
 |**服务** <br/> |SharePoint Online  <br/> |
 |**内部部署终结点 (源)** <br/> |用户工作站  <br/> |
@@ -189,9 +189,10 @@ ExpressRoute for Office 365 提供了一个指向许多面向 Internet 的 Offic
   
 通常，可以在与用户相对接近的一个区域内选择多个"我开会"位置。 填写下表以指导您的决策。
 
-|**在加利福尼亚和纽约计划的 ExpressRoute 会面位置**||
-|:-----|:-----|
+**在加利福尼亚和纽约计划的 ExpressRoute 会面位置**
+
 |位置  <br/> |人员数  <br/> |Microsoft 网络通过 Internet 出口的预期延迟  <br/> |通过 ExpressRoute 对 Microsoft 网络的预期延迟  <br/> |
+|----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10,000  <br/> |~15ms  <br/> |大约 10 毫秒 (通过位于)   <br/> |
 |华盛顿州  <br/> |15,000  <br/> |~20 毫秒  <br/> |通过纽约 (大约 10 毫秒)   <br/> |
 |Dallas  <br/> |5,000  <br/> |~15ms  <br/> |通过纽约 (大约 40 毫秒)   <br/> |
@@ -225,7 +226,7 @@ ExpressRoute for Office 365 提供了一个指向许多面向 Internet 的 Offic
 
 - 确定 ExpressRoute 路由将在你的网络中播发多远，以及客户端选择 Internet 或 ExpressRoute 路径的机制是什么;例如，直接路由或应用程序代理。
 
-- 规划 DNS 记录更改，包括 [发件人策略框架](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 条目。
+- 规划 DNS 记录更改，包括 [发件人策略框架](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 条目。
 
 - 规划 NAT 策略，包括出站和入站源 NAT。
 

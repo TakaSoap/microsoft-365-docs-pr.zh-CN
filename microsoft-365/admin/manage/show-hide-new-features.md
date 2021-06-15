@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 管理中心中的"Office 中的新增功能"，确定当用户在 Windows > 上的 Office 应用 中选择"帮助""Office 应用 新增功能"时要显示或隐藏的 Microsoft 365 功能。 Office
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915023"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924831"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理Office功能显示在新增功能中
 
@@ -60,9 +60,8 @@ ms.locfileid: "50915023"
 
 根据以下计划在页面上显示新功能：
 
-||||
+|频道|日期|采取行动|
 |:-----|:-----|:-----|
-|**频道** <br/> |**Date** <br/> |**采取行动** <br/> |
 |**Current** <br/> |当月 15 日  <br/> |1 - 每月发布前的 3 周 <br/> |
 |**月度企业版** <br/> |当月的第一天  <br/> |在引入新功能的主要版本前两周 |
 |**半年预览Enterprise (预览)** <br/> |9 月 1 日到 3 月 1 日 <br/> | 在引入新功能的主要版本前 2 周|

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 了解如何在计算机中自动安装 32 Office应用Windows 10保持更新。
-ms.openlocfilehash: 868d06fadfef0f55b41131b7fdfbb368b9128405
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 843be426d817da1173769b3b66dc4c054179f0fd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580046"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924219"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>准备Office企业部署Microsoft 365部署客户端
 
@@ -59,14 +59,15 @@ ms.locfileid: "51580046"
     
 - **没有** 任何 2016 Windows Installer (MSI) 独立应用（如 Visio 或 Project）。 Microsoft 365升级到 Office Office 2016 即点即用版本的企业升级，它不能用于 Office 2016 MSI 独立应用。 
     
-下表显示了最终用户/管理员可能需要执行哪些操作，具体取决于其开始状态，才能从 Microsoft 365 商业版管理控制台成功部署 32 位即点即用版本的 Office。
-  
-|**启动 Office 安装状态**|**在安装企业Microsoft 365之前要Office的操作**|**结束状态**|
+下表显示了最终用户/管理员可能需要执行哪些操作，具体取决于其开始状态，才能从 Microsoft 365 商业版管理控制台成功部署 32 位即点即用版本的 Office。<br/>
+
+
+|启动 Office 安装状态|在安装企业Microsoft 365之前要Office的操作|结束状态|
 |:-----|:-----|:-----|
 |未安装任何 Office 套件  <br/> |无  <br/> |Office运行安装 2016 32 位  <br/> |
 |有 32 位即点即用版 Office（2016 或更低版本）且无独立应用  <br/> |无  <br/> |根据需要，升级到了最新的 32 位即点即用版 Office 2016 **\*** <br/> |
 |现有 32 位单击-运行版本的 Office 和 32 位或 64 位独立 Office 应用 (例如，Visio，Project)   <br/> |无  <br/> |独立应用不受影响。 套件升级到 32 位即点即用版 Office 2016  <br/> |
-|有 32 位即点即用版 Office 和任何 32 位/64 位（除 2016）MSI 独立 Office 应用  <br/> |无  <br/> |独立应用不受影响。 套件升级到 32 位即点即用版 Office 2016  <br/> ||||
+|有 32 位即点即用版 Office 和任何 32 位/64 位（除 2016）MSI 独立 Office 应用  <br/> |无  <br/> |独立应用不受影响。 套件升级到 32 位即点即用版 Office 2016  <br/> |
 |有任何 64 位即点即用版 Office  <br/> |卸载 64 位Office应用（如果可以将其替换为 32 位 Office 应用）  <br/> |如果删除了 Office 64 位应用，则安装 32 位即点即用版 Office 2016  <br/> |
 |安装有 MSI Office 2016，有/无独立应用  <br/> |卸载 MSI Office 2016。  <br/> |安装了 32 位即点即用版 Office 2016。不更改独立应用  <br/> |
 |安装有 MSI Office 2013（或更低版本）和/或独立 Office 应用  <br/> |无  <br/> |32 位即点即用版 Office 2016 和预先存在的 MSI Office 安装（和独立应用）并存  <br/> |

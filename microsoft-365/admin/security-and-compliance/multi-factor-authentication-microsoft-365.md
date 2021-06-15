@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: MFA (多重身份验证) 密码（应该很强）和其他验证方法。
-ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635770"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924727"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
 
@@ -61,7 +61,7 @@ ms.locfileid: "52635770"
 |---|---|---|
 |所有Microsoft 365计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
 |Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级版 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户进行 MFA。|小型企业到企业|
-|Microsoft 365 E5 <p> Azure AD 高级版 P2 许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业版|
+|Microsoft 365 E5 <p> Azure AD 高级版 P2 许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业|
 ||||
 
 ### <a name="security-defaults"></a>安全性默认值
@@ -121,7 +121,7 @@ ms.locfileid: "52635770"
 
 - [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [阻止旧身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
 有关详细信息，请参阅此[条件访问概述](/azure/active-directory/conditional-access/overview)。
 
@@ -150,7 +150,7 @@ ms.locfileid: "52635770"
 
 下表显示了通过安全性默认值、条件访问策略和每用户帐户设置启用 MFA 的结果。
 
-||已启用|Disabled|辅助身份验证方法|
+|*项目*|已启用|Disabled|辅助身份验证方法|
 |---|---|---|---|
 |**安全性默认值**|不使用条件访问策略|可以使用条件访问策略|Microsoft Authenticator 应用|
 |**条件访问策略**|如果启用了任何安全默认值，则不能启用安全默认值|如果已禁用所有条件访问策略，则可以启用安全性默认值|由用户在 MFA 注册期间指定|
@@ -176,5 +176,5 @@ ms.locfileid: "52635770"
 
 ## <a name="related-content"></a>相关内容
 
-[打开多因素身份验证](../../business-video/turn-on-mfa.md) (视频) \
+[打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）\
 [打开手机的多重身份验证](../../business-video/set-up-mfa.md)（视频）

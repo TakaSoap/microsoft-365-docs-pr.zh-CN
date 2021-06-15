@@ -1,5 +1,5 @@
 ---
-title: 验证 Windows 10 电脑上的应用保护设置
+title: 验证电脑的应用Windows 10设置
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -26,14 +26,14 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何验证适用于Microsoft 365保护设置是否对用户的移动设备Windows 10生效。
-ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 464a246a0da65dcffeb70946287ce4fa0e67ae7c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579834"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925251"
 ---
-# <a name="validate-device-protection-settings-on-windows-10-pcs"></a>验证电脑Windows 10保护设置
+# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>验证电脑Windows 10保护设置
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>验证Windows 10策略是否设置
 

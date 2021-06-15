@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636262"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925883"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 defender 中事件的Microsoft 365优先级
 
@@ -82,6 +82,23 @@ Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报�
 | 严重性 | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
 | 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |
 |||
+
+## <a name="save-defined-filters-as-urls"></a>将定义的筛选器另存为 URL
+
+在事件队列中配置了有用的筛选器后，您可以为浏览器选项卡的 URL 添加书签，或者将其另存为网页、Word 文档或您所选择的位置上的链接。 这样，只需单击一下即可访问事件队列的关键视图，例如：
+
+- 新事件
+- 高严重性事件
+- 未分配事件
+- 高严重性、未分配事件
+- 分配给我的事件
+- 分配给我以及 Microsoft Defender for Endpoint 的事件
+- 具有特定标记的事件
+- 具有特定威胁类别的事件
+- 具有特定关联威胁的事件
+- 特定主角的事件
+
+编译有用的筛选器视图列表并存储为 URL 后，您可以快速使用它处理队列中的事件并设置事件的优先级，并管理这些事件以用于后续分析。 [](manage-incidents.md)
 
 ## <a name="next-steps"></a>后续步骤
 

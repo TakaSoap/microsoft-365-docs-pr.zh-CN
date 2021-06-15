@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，并保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 2e157737990c7aca6e87a676e90f62f0d40ad372
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 92dce1e8761e53b85df85f2a84f30ab307f63e6d
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580286"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925055"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -81,10 +81,10 @@ ms.locfileid: "51580286"
 ### <a name="settings-that-protect-work-files"></a>用户保护工作文件的设置
 
 如果用户的设备丢失或被盗，以下设置可用于保护工作文件：
-  
-|||
-|:-----|:-----|
+
+
 |设置  <br/> |说明  <br/> |
+|:-----|:-----|
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备不用于你在此处指定的天数，则将自动删除设备上存储的任何工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开"，** 则工作文件的唯一可用保存位置OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人可以读取你的公司数据。  <br/> |
@@ -92,10 +92,10 @@ ms.locfileid: "51580286"
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>用于控制用户如何在移动设备上访问 Office 文件的设置
 
 以下设置可用于管理用户访问 Office 工作文件的方式：
-  
-|||
-|:-----|:-----|
+
+
 |设置  <br/> |说明  <br/> |
+|:-----|:-----|
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置为 **"打开**"，则除了用户名和密码之外，用户还必须提供另一种形式的身份验证，然后才能在移动设备上Office应用。<br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |
 |要求用户在 Office 应用空闲以下时间后重新登录  <br/> |此设置确定用户在系统提示重新登录之前可以处于空闲状态的时间。  <br/> |

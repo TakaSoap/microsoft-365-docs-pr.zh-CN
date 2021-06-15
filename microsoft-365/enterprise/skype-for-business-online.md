@@ -2,7 +2,7 @@
 title: Office 365 中的 Skype for Business Online - 管理员帮助
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: scotv
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: 作为管理员，查找有关设置 Skype for Business Online 部分的帮助，包括你的网络、会议和 IM 以及用户的外部访问。
-ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 64d43b4593de9c23e28bcec1bb5c3ce369ee9b2b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415702"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926339"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 中的 Skype for Business Online - 管理员帮助
 

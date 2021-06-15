@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683123"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924499"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
 
@@ -66,18 +66,17 @@ ms.locfileid: "52683123"
   
 **如果要创建 TXT 记录，请使用这些值：**
     
-|||||
+
+|记录类型<br/> |别名或主机名 <br/> |值 <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**记录类型** <br/> |**别名** 或 **主机名称** <br/> |**值** <br/> |**TTL** <br/> |
 |TXT  <br/> |执行下列操作之一：键入 **@** ，将该字段留空或键入你的域名。  <br/> > [!NOTE]> 此字段对不同的 DNS 主机有不同的要求。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**注意：** 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  <br/> |
    
 **如果您创建 MX 记录，请使用这些值：**
     
-||||||
+|记录类型|别名或主机名|值|优先级|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**记录类型**|**别名** 或 **主机名称**|**值**|**优先级**|**TTL**|
-|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
+|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* **注意：** 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
    
 ### <a name="save-the-record"></a>保存记录
 
@@ -110,13 +109,12 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 1. 在域注册机构网站上查找区域，您可以在其中更改域的名称服务器或使用自定义名称服务器的区域。
     
 2. 创建名称机记录，或编辑现有名称机记录以匹配以下值：
-    
-|||
-|:-----|:-----|
-|首选名称服务器  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|次要名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|第三个名称服务器  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|第四个名称服务器  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - 第一个名称 ns1.bdm.microsoftonline.com
+    - 第二个名称 ns2.bdm.microsoftonline.com
+    - 第三个名称 ns3.bdm.microsoftonline.com
+    - 第四个名称 ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > 最好添加所有四条记录，但如果注册机构仅支持两条，ns1.bdm.microsoftonline.com **和****ns2.bdm.microsoftonline.com。** 
@@ -133,12 +131,10 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 1. 在域注册机构的网站上查找您可以在其中编辑您的域的名称服务器的区域。
     
 2. 创建两个名称服务器记录，或编辑现有名称服务器记录匹配以下值：
+
+   - 第一个名称 ns1.dns.partner.microsoftonline.cn
+   - 第二个名称 ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|首选名称服务器  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|次要名称服务器  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > 应至少使用两个名称机记录。 如果列出了任何其他名称服务器，您可以删除它们，或者将它们更改为 ns3.dns.partner.microsoftonline.cn **ns4.dns.partner.microsoftonline.cn** **。** 
   

@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 63303f9eacd25a8de1c7154ac66c73578bfd495a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688257"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924451"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威胁分析跟踪和响应新出现的威胁 
+# <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>通过威胁分析跟踪和响应新出现的威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

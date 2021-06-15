@@ -7,6 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: normal
+ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
@@ -14,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3fcc79e767edb533a20402a2f92ba4abc7d8386a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 3eb4d01957383efc8df47e9fee6eb6394c80015a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764587"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924379"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题
 
@@ -100,7 +101,7 @@ DisableAntiSpyware | -
 获胜的 GPO | Win10-Workstations
 结果：成功 | 
 **常规** | 
-Action | Update
+操作 | 更新
 **属性** | 
 配置单元 | HKEY_LOCAL_MACHINE
 密钥路径 | SOFTWARE\Policies\Microsoft\Windows Defender

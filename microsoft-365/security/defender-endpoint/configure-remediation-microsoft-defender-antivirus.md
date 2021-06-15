@@ -4,28 +4,26 @@ description: 配置Microsoft Defender 防病毒威胁时应执行哪些操作，
 keywords: 修正， 修复， 删除， 威胁， 隔离， 扫描， 还原
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 45886b94ec5ea11f01bfe23092eef4bd72691554
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9b765d14e31d6c4890aeace41e4fe79bafdd889e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274504"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925571"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>为 Microsoft Defender 防病毒检测配置修正
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **适用于：**
@@ -52,7 +50,7 @@ ms.locfileid: "52274504"
 
 |位置 | 设置 | 说明 | 如果未 (默认设置)  |
 |:---|:---|:---|:---|
-|扫描 | 创建系统还原点 | 在尝试清理或扫描之前，将每天创建一个系统还原点 | 已禁用|
+|扫描 | 创建系统还原点 | 在尝试清理或扫描之前，将每天创建一个系统还原点 | 禁用|
 |扫描 | 打开从扫描历史记录文件夹中删除项目 | 指定项目应在扫描历史记录中保留的天数 | 30 天 |
 |根 | 关闭常规修正 | 你可以指定是Microsoft Defender 防病毒自动修正威胁，还是应询问终结点用户应该怎么办。 | 禁用 (自动修正威胁)  |
 |隔离 | 配置从隔离文件夹删除项目 | 指定在删除项目之前应在隔离中保留的天数 | 90 天 |

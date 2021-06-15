@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Microsoft Defender Office 365保护敏感数据免受网络钓鱼、恶意软件和其他威胁的侵害。
-ms.openlocfilehash: 4b5142efbf4392f017cd9b96f6a9c36ef2000bb7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245136"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924311"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -81,8 +81,8 @@ ms.locfileid: "52245136"
 
 6. 选择“**保存**”。
 
-|设置|在打开文件附件之前Office警告||
-|---|---|---|
+|设置|在打开文件附件之前Office警告|
+|---|---|
 |名称|反勒索软件规则：警告用户|
 |在 中应用此规则。 . .|任何附件 。 . . 文件扩展名匹配 。 . .|
 |指定单词或短语|添加以下文件类型：  <br/> dotm、docm、xlsm、sltm、xla、xlam、xll、pptm、potm、ppam、ppsm、sldm|

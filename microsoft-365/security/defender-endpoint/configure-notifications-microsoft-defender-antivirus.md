@@ -4,24 +4,24 @@ description: 了解如何在终结点上配置和自定义标准Microsoft Defend
 keywords: 通知， defender， 防病毒， 终结点， 管理， 管理员
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
+ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: f885b6d7991e4175cd14be5bbe9e0a7c96b1580f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1e9f733b20b62af7e73a923932057920ff1dc155
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572341"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926234"
 ---
 # <a name="configure-the-notifications-that-appear-on-endpoints"></a>配置终结点上显示的通知
 

@@ -1,5 +1,5 @@
 ---
-title: 管理中心中的 Microsoft 365 报表 - Microsoft Teams 用户活动
+title: Microsoft 365中心报告 - Microsoft Teams活动
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: 了解如何获取Microsoft Teams活动报告，并深入了解Teams活动。
-ms.openlocfilehash: 1f45cd380813a843ad54e6552578941a9741138e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c824a0ce285a085c9ae8b7326647ad4bcdf5f013
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579598"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924263"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理中心中的 Microsoft 365 报表 - Microsoft Teams 用户活动
+# <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Microsoft 365中心报告 - Microsoft Teams活动
 
 "Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 用户活动报表中，可深入了解组织中的 Microsoft Teams 活动。
   
@@ -44,7 +44,7 @@ ms.locfileid: "51579598"
 
 可通过查看" **活动**"和" **用户**"图表，了解 Microsoft Teams 用户活动。<br/>![Microsoft 365报表 - Microsoft Teams活动。](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |1.  <br/> |可查看" **Microsoft Teams 用户活动**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。  <br/> |
 |2.  <br/> |每个报告中的数据通常涵盖过去 24 至 48 小时的数据。  <br/> |

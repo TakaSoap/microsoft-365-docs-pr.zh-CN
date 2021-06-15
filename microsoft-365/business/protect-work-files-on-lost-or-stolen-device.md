@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: 了解企业应用Microsoft 365，以在用户设备丢失或被盗时保护工作文件。
-ms.openlocfilehash: 6b10ce73d3ebe936d3878724783d6076455a3552
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b640642d7f6ed9c83376f4cb2a0cdaa610e8159b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578239"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925291"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>在移动设备丢失或被盗时保护工作文件
 
@@ -40,10 +40,10 @@ ms.locfileid: "51578239"
 ## <a name="settings-that-protect-work-files"></a>用户保护工作文件的设置
 
 如果用户的设备丢失或被盗，以下设置可用于保护工作文件：
-  
-|||
-|:-----|:-----|
+
+
 |设置  <br/> |说明  <br/> |
+|:-----|:-----|
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备不用于你在此处指定的天数，则将自动删除设备上存储的任何工作文件。  <br/> |
 |强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开"，** 则工作文件的唯一可用保存位置OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人可以读取你的公司数据。  <br/> |

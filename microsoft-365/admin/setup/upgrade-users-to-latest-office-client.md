@@ -23,12 +23,13 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何为Microsoft Office升级到Office客户端。
-ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.topic: article
+ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860567"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924691"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将Microsoft 365用户升级至最新的 Office 客户端
 
@@ -93,7 +94,7 @@ Office 2010 年 10 月 13 日终止支持。 Microsoft 将不再提供以下内�
 
  - 购买个人、一次购买Office。 请参阅[Office &amp; 家庭企业](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b)或[Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
-     OR
+     或
 
  - 通过批量许可证Office多个副本。 请参阅比较 [通过批量许可提供的套件](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)。
 

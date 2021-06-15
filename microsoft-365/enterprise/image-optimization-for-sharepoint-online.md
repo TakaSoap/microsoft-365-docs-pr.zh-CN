@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 了解如何使用再现和子画面来提高 SharePoint Online 经典发布网站上的图像性能。
-ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907476"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924571"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint经典发布网站的图像优化
 
@@ -35,9 +35,14 @@ ms.locfileid: "50907476"
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>使用子画面加快图像加载速度
 
-|||
-|:-----|:-----|
-| 图像子画面包含许多较小的图像。 使用 CSS 可以选择复合图像的一部分，以在具有绝对定位的页面的特定部分上显示。 基本上，你可以将单个图像围绕页面移动，而不是加载多个图像，并通过一个小窗口（其中向最终用户显示子画面图像必需的部分）使该图像的一小部分可见。 SharePointOnline 使用子画面在子画面中显示其spcommon.png。  <br/>  此处涵盖的内容：  <br/>  图像压缩  <br/>  图像优化  <br/>  SharePoint图像再现  <br/> |![spcommon 的屏幕截图](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![spcommon 的屏幕截图](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+图像子画面包含许多较小的图像。 使用 CSS 可以选择复合图像的一部分，以在具有绝对定位的页面的特定部分上显示。 基本上，你可以将单个图像围绕页面移动，而不是加载多个图像，并通过一个小窗口（其中向最终用户显示子画面图像必需的部分）使该图像的一小部分可见。 SharePointOnline 使用子画面在子画面和子画面文件中spcommon.png图标。
+
+此处涵盖的内容：
+- 图像压缩
+- 图像优化
+- SharePoint图像再现
    
 这可提高性能，因为只下载一个映像而不是多个映像，然后缓存并重复使用该映像。 即使图像不保持缓存状态，通过具有单个图像而不是多个图像，此方法也会减少对服务器的 HTTP 请求总数，这将减少页面加载时间。 这确实是一种图像绑定形式。 如果图像未频繁更改（例如图标）（如上述示例所示SharePoint非常有用。 您可以使用 Web [Essentials（](https://vswebessentials.com/)一个基于社区的第三方开放源代码项目）轻松地在 Microsoft Visual Studio。 有关详细信息，请参阅[Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)。
   

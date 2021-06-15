@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4d7101899a204d1785d94c2475bcd433b0b99e98
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f0eb20d59f1708bc1e3bd56e56ada40cd7058dca
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245284"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924843"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 托管桌面设备服务
 
@@ -24,13 +24,11 @@ ms.locfileid: "52245284"
 
 Microsoft 将为这些设备提供Microsoft 托管桌面服务。 有关推荐的 Microsoft 托管桌面 程序设备的列表，请筛选Microsoft 托管桌面[购买Windows 10 专业版上的设备](https://www.microsoft.com/windowsforbusiness/view-all-devices)。
 
- | 
- --- | ---
-支持 | 支持代理将回答与设备功能直接相关的问题并诊断设备问题。
-清查 | 在管理门户中跟踪所有Microsoft 托管桌面清单和状态跟踪。
-固件/驱动程序更新 | 默认情况下，Microsoft 托管桌面接收来自更新的固件和驱动程序Windows更新。 并非所有硬件合作伙伴都通过 Windows Update 部署其更新。 未作为自动发布的更新需要例外，并且必须由客户部署。
-附件 | 设备随设备一起提供的设备所涵盖的服务与设备本身相同，但担保条款可能有所不同。 请参阅选择设备时选择的担保条款。 
-设备设置    | 设备将预配置当前版本的 Windows通过云接收其应用和配置。 
+ |服务|说明  
+支持|支持代理将回答与设备功能直接相关的问题并诊断设备问题。
+库存|在管理门户中跟踪所有Microsoft 托管桌面清单和状态跟踪。
+固件/驱动程序更新|默认情况下，Microsoft 托管桌面接收来自更新的固件和驱动程序Windows更新。 并非所有硬件合作伙伴都通过 Windows Update 部署其更新。 未作为自动发布的更新需要例外，并且必须由客户部署。
+附件|设备随设备一起提供的设备所涵盖的服务与设备本身相同，但担保条款可能有所不同。 请参阅选择设备时选择的担保条款。 设备设置|设备将预配置当前版本的 Windows通过云接收其应用和配置。 
 
 有关设备更换、升级和支持条款的信息，请参阅你与设备提供商的协议和担保条款。
 
@@ -43,8 +41,7 @@ Microsoft 将为这些设备提供Microsoft 托管桌面服务。 有关推荐�
 
 Microsoft 不会为这些项目提供服务。
 
- | 
- --- | ---
-个性化 | 无法自定义随服务提供的设备和附件。 所有设备和附件均提供标准品牌、规格和颜色组合。 应用程序部署和策略配置通过 IT 即服务进行处理。
-数据恢复 | 用户和团队数据（包括个性化）存储在OneDrive for Business中，仅缓存数据驻留在本地。 如果有意将数据存储在设备的内部存储系统上，则必须在将设备返回给 Microsoft 之前尝试并完成任何数据恢复。
-设备设置 | 设备将传递到客户地址，客户需要打开和设置设备。
+ |服务|说明  
+个性化|无法自定义随服务提供的设备和附件。 所有设备和附件均提供标准品牌、规格和颜色组合。 应用程序部署和策略配置通过 IT 即服务进行处理。
+数据恢复|用户和团队数据（包括个性化）存储在OneDrive for Business中，仅缓存数据驻留在本地。 如果有意将数据存储在设备的内部存储系统上，则必须在将设备返回给 Microsoft 之前尝试并完成任何数据恢复。
+设备设置|设备将传递到客户地址，客户需要打开和设置设备。

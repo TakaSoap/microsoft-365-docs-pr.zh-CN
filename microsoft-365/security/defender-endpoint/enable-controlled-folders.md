@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861215"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924679"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -50,7 +50,7 @@ ms.locfileid: "52861215"
 * Microsoft Defender 防病毒 **配置列表的本地管理员合并行为**
 * System Center Endpoint Protection **允许用户添加排除和替代**
 
-有关禁用本地列表合并的信息，请参阅阻止或 [允许用户在本地修改 Microsoft Defender AV 策略设置](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
+有关禁用本地列表合并的信息，请参阅阻止或 [允许用户在本地修改 Microsoft Defender AV 策略设置](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)。
 
 ## <a name="windows-security-app"></a>Windows 安全中心应用
 
@@ -73,7 +73,7 @@ ms.locfileid: "52861215"
 
 3. 选择 **平台**，选择 **Windows 10** 和更高版本，然后选择配置文件 **攻击面减少规则**  >  **创建**。
 
-4.  命名策略并添加说明。 选择“下一步”。
+4.  命名策略并添加说明。 选择“**下一步**”。
 
 5.  向下滚动到底部，选择"**启用文件夹** 保护"下拉列表，然后选择"启用 **"。**
 
@@ -92,7 +92,7 @@ ms.locfileid: "52861215"
 
 ## <a name="mobile-device-management-mdm"></a>移动设备管理 (MDM)
 
-使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
+使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 

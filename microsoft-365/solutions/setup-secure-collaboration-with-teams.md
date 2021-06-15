@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在网站中设置安全Teams，以基于数据的敏感度来保护数据。
-ms.openlocfilehash: 12c8bfd2c7c59e1cc4dcf149e394d2c7dc456530
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7a5b8f58cc5e4a23d2d143419f99ecdd87b949c1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539055"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924355"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>设置与 Microsoft 365 和 Microsoft Teams
 
@@ -178,7 +178,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 |:---|:---|
 |![设置和自定义团队培训图标](../media/set-up-customize-team-training.png)<br>**[设置和自定义团队](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint共享和同步培训图标](../media/sharepoint-share-sync-training.png)<br>**[共享和同步](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams上传和查找文件培训图标](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![在团队和频道中协作图标](../media/teams-collaborate-channels-training.png)<br>**[在团队和频道中协作](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![在团队和频道中协作图标](../media/teams-collaborate-channels-training.png)<br>**[在团队和频道中协作](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>插图
 

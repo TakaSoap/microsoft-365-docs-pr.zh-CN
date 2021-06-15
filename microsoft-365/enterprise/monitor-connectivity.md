@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 本文将介绍可用于监视和维护连接的工具Microsoft 365技术。
-ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538803"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924195"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>监视 Microsoft 365 连接性
 
@@ -33,7 +33,7 @@ ms.locfileid: "52538803"
   
 ## <a name="monitoring-microsoft-365-connectivity"></a>监视 Microsoft 365 连接
 
-|||
+|监视类型 |说明 |
 |:-----|:-----|
 |**获取新终结点Microsoft 365通知** <br/> |如果要管理[Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)终结点，那么在发布新终结点时，需要接收通知，可以使用最喜爱的 RSS 阅读器订阅我们的 RSS 源。 下面是如何通过[Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416)订阅，或者你可以通过电子邮件将[RSS 源更新通过电子邮件发送给你](https://go.microsoft.com/fwlink/p/?LinkId=532417)。  <br/> |
 |**使用System Center监视Microsoft 365** <br/> |如果使用的是 Microsoft System Center，可以下载 System Center [Management Pack Office 365](https://www.microsoft.com/download/details.aspx?id=43708)立即开始Microsoft 365监视。 有关更详细的指南，请参阅管理包操作指南。 <br/> |

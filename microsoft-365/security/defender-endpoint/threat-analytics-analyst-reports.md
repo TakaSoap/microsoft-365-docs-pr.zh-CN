@@ -1,7 +1,7 @@
 ---
-title: 了解威胁分析中的分析员报告部分
+title: 了解威胁分析中的分析员报告部分。
 ms.reviewer: ''
-description: 了解每个威胁分析报告的分析师报告部分。 了解它如何提供有关威胁、缓解、检测、高级搜寻查询等的信息。
+description: 威胁分析报告的报告部分如何提供有关威胁、缓解、检测、高级搜寻查询等的信息。
 keywords: 分析员报告， 威胁分析， 检测， 高级搜寻查询， 缓解，
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a442a642a71bd6bf3a52dbf3901c4367c2c10d8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e791249418503ada5d98b74c8ae273664851cc8e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844990"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926435"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics"></a>了解威胁分析中的分析员报告
+# <a name="the-analyst-report-in-threat-analytics"></a>威胁分析中的分析员报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

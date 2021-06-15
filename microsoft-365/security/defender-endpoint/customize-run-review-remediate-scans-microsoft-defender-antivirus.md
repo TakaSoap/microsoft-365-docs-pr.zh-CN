@@ -1,6 +1,6 @@
 ---
-title: 运行和自定义计划扫描和按需扫描
-description: 自定义并启动Microsoft Defender 防病毒终结点上的扫描。
+title: 运行并自定义计划扫描和按需扫描。
+description: 自定义和启动Microsoft Defender 防病毒终结点上的扫描
 keywords: 扫描， 计划， 自定义， 排除， 排除文件， 修正， 扫描结果， 隔离， 删除威胁， 快速扫描， 完全扫描， Microsoft Defender 防病毒
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 31dbfa2ac6d5537f6d42c0bad612be5ef059368d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bce3fe1b6490803cb571a1a8a2387c19cc589114
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275272"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926231"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果
 

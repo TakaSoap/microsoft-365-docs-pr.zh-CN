@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解适用于企业Microsoft 365保护设备安全Windows 10设置。
-ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578219"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925311"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>编辑或创建电脑的设备Windows 10设置
 
@@ -67,10 +67,10 @@ ms.locfileid: "51578219"
 所有设置均默认为" **开启**"状态。可使用以下设置：
   
 有关详细信息，请参阅如何将保护[功能Microsoft 365 高级版映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
-  
-|||
-|:-----|:-----|
+
+
 |设置  <br/> |说明  <br/> |
+|:-----|:-----|
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |
 |使用减少设备攻击面的规则  <br/> |启用此规则后，攻击面减少有助于阻止通常被恶意软件用来感染设备的操作和应用。仅当 Windows Defender 防病毒设置为"开启"时，此设置才可用。请参阅[减少攻击面](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以了解详细信息。  <br/> |

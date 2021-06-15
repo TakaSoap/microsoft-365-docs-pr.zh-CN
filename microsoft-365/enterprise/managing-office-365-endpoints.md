@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 了解如何管理Office 365终结点，以便它们与企业组织网络体系结构一起工作。
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905112"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925859"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -161,7 +161,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 代理服务器验证初始 URL，如上例 serviceA.office.com，此 URL 将包含在Office 365中。 代理服务器请求将该 URL 的 DNS 解析为 IP 地址，并将收到 IP_1。 它不会验证中间的 CNAME 重定向记录。
 
-不建议使用硬编码配置或基于Office 365 FQN 的白名单，Microsoft 也不支持，并且已知会导致客户连接问题。 阻止 CNAME 重定向或错误地解析 Office 365 DNS 条目的 DNS 解决方案可以通过启用了 DNS 递归的 DNS 转发器或通过使用 DNS 根提示来解决。 许多第三方网络外围产品本机使用 Office 365 IP 地址和 URL Web 服务将推荐的终结点白名单Office 365[配置中](microsoft-365-ip-web-service.md)。
+不建议使用硬编码配置或基于间接 FQN Office 365允许列表，Microsoft 也不支持，并且已知会导致客户连接问题。 阻止 CNAME 重定向或错误地解析 Office 365 DNS 条目的 DNS 解决方案可以通过启用了 DNS 递归的 DNS 转发器或通过使用 DNS 根提示来解决。 许多第三方网络外围产品本机集成了推荐的 Office 365 终结点，以使用 Office 365 IP 地址和[URL Web 服务](microsoft-365-ip-web-service.md)在配置中包括允许列表。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么会在 Microsoft 域名中看到 nsatc.net 或 akadns.net 等名称？

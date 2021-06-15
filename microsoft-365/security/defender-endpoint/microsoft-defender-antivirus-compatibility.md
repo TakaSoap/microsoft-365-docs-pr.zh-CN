@@ -7,21 +7,21 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr
-ms.topic: article
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: 072ad4e536f753550462fa80650bef392a147e64
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301748"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926015"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防病毒兼容性
 
@@ -99,7 +99,7 @@ Microsoft Defender 防病毒自动启用，并安装在运行 Windows 10 的终�
 > [!IMPORTANT]
 > 如果你在被动模式下使用 Microsoft Defender 防病毒 或在阻止模式下使用 EDR，请不要关闭实时保护、云保护或有限定期扫描等功能。 
 
-|Protection |活动模式 |被动模式 |块模式下的 EDR |已禁用或卸载 |
+|保护 |活动模式 |被动模式 |块模式下的 EDR |已禁用或卸载 |
 |:---|:---|:---|:---|:---|
 | [实时保护和](configure-real-time-protection-microsoft-defender-antivirus.md)[云保护](enable-cloud-protection-microsoft-defender-antivirus.md) | 是 | 否 <sup> [[3](#fn3)]<sup> | 否 | 否 |
 | [有限定期扫描可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | 否 | 否 | 否 | 是 |

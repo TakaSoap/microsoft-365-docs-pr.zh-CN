@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题安全和隐私
-ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114058"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925487"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主题安全和隐私
 
-主题使用 Microsoft 365 中的现有内容安全功能和管理控件来控制向组织用户显示哪些 AI 生成的内容。 它是 Microsoft 365 安全设置和 (网站、文件和文件夹权限) 主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
+主题使用组织中现有的内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
 
-设置 Topics 不会修改对于组织中内容的现有访问控制。 用户将只能查看有权访问的内容。
+设置主题不会修改组织中对于内容的任何现有访问控制。 用户将只能查看有权访问的内容。
 
 本文介绍了主题从安全角度的工作方式，以及知识管理员和知识管理员控制主题可见性时必须选择的选项。 阅读本文作为规划主题 [的一部分](plan-topic-experiences.md)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "52114058"
 
 主题可以包含 AI 生成的信息以及由主题参与者或知识管理员添加或编辑的信息。
 
-- AI 添加的主题中的信息仅对有权访问源内容的人可见。
+- 主题中由 AI 添加的信息仅对具有对该源内容访问权限的人员可见。
 - 主题参与者或知识管理员手动添加或编辑的文本对可以看到该主题的每个人可见。
 
 主题查看者和参与者可以在主题中心查看已确认和已发布主题的列表，但给定人员可以看到的主题详细信息取决于他们对源材料的权限以及主题是否已手动编辑。
@@ -58,15 +58,19 @@ ms.locfileid: "52114058"
 |页面|页面仅对具有源内容权限的用户可见。|
 |网站|网站仅对具有源内容权限的用户可见。|
 
+## <a name="users-personal-and-private-data"></a>用户的个人数据和私有数据
+
+Viva 主题仅发现您SharePoint网站中的主题。 不包括用户的个人存储，例如OneDrive邮件或邮件。
+
 ## <a name="best-practices"></a>最佳做法
 
-主题根据用户现有的内容权限向用户显示信息。 Microsoft 365 提供了多种方式来确保敏感内容仅限于适当的用户。 除了标准团队或网站权限之外，您还可以使用敏感度标签或数据丢失防护[](../compliance/dlp-learn-about-dlp.md)来限制对内容和访问评审的访问，以[](/azure/active-directory/governance/access-reviews-overview)定期检查用户对敏感信息的访问。 [](../compliance/sensitivity-labels.md)
+主题根据用户现有的内容权限向用户显示信息。 Microsoft 365提供了多种方式来确保敏感内容仅限于适当的用户。 除了标准团队或网站权限之外，您还可以使用敏感度标签或数据丢失防护[](../compliance/dlp-learn-about-dlp.md)来限制对内容和访问评审的访问，以[](/azure/active-directory/governance/access-reviews-overview)定期检查用户对敏感信息的访问。 [](../compliance/sensitivity-labels.md)
 
 建议您使用这些工具来确保在组织内部正确设置内容权限。 然后，主题体验可以为用户提供有用的适当信息。
 
 如果要将主题完全从主题体验中排除，还可以：
 
-- [从主题发现 中排除敏感 SharePoint 网站](topic-experiences-discovery.md#select-sharepoint-topic-sources)。 这些网站的内容不会出现在主题经验中。
+- [从主题发现 SharePoint敏感网站](topic-experiences-discovery.md#select-sharepoint-topic-sources)。 这些网站的内容不会出现在主题经验中。
 
 - [按名称排除主题](topic-experiences-discovery.md#exclude-topics-by-name)。 明确排除的主题将不会出现在主题体验中。
 

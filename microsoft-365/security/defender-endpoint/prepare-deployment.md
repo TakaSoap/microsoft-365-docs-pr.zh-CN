@@ -1,6 +1,6 @@
 ---
 title: 准备 Microsoft Defender 终结点部署
-description: 在部署 Microsoft Defender for Endpoint 时准备利益干系人审批、日程表、环境注意事项和采用顺序
+description: 为部署 Microsoft Defender for Endpoint 准备利益干系人审批、日程表、环境注意事项和采用顺序
 keywords: 部署， 准备， 利益干系人， 时间线， 环境， 终结点， 服务器， 管理， 采用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842430"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925643"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender 终结点部署
 
@@ -60,7 +60,7 @@ ms.locfileid: "52842430"
 
 -   I = 已通知此项目
 
-| 名称                 | Role                                                                                                                                                                                                          | 操作 |
+| 名称                 | 角色                                                                                                                                                                                                          | 操作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **CISO (** 首席) 一名执行代表，他作为新技术部署 *的组织内部发起人。*                                                  | SO     |
 | 输入名称和电子邮件 | **网络防御运营中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*       | SO     |
@@ -105,7 +105,7 @@ Defender for Endpoint 支持两种权限管理方法：
 
 Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访问 Defender for Endpoint。
 
-你可以在此处找到有关权限准则 [的详细信息](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)。
+你可以在此处找到有关权限准则的详细信息：[创建角色并将角色](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)分配给Azure Active Directory组。
 
 以下示例表用于标识环境中的网络防御操作中心结构，该结构将帮助您确定环境所需的 RBAC 结构。
 
@@ -135,5 +135,6 @@ Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访�
 
 ## <a name="next-step"></a>后续步骤
 
-![阶段 2：设置](images/setup.png) <br>[阶段 2：设置](production-deployment.md) |设置 Microsoft Defender for Endpoint 部署
-
+|||
+|:-------|:-----|
+|![阶段 2：设置](images/setup.png) <br>[阶段 2：设置](production-deployment.md) | 设置 Microsoft Defender for Endpoint 部署 |
