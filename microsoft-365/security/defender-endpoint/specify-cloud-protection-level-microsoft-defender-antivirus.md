@@ -7,7 +7,8 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.date: 10/26/2020
@@ -15,82 +16,81 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: f441b1bd444cd70fb5b00dfcb5ebcddadf62b220
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fb4dd3114c411385f1a38cf7b0fd391a1b159b99
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274900"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924463"
 ---
-# <a name="specify-the-cloud-delivered-protection-level"></a><span data-ttu-id="88783-104">指定云传递的保护级别</span><span class="sxs-lookup"><span data-stu-id="88783-104">Specify the cloud-delivered protection level</span></span>
+# <a name="specify-the-cloud-delivered-protection-level"></a><span data-ttu-id="3662b-104">指定云传递的保护级别</span><span class="sxs-lookup"><span data-stu-id="3662b-104">Specify the cloud-delivered protection level</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="88783-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="88783-105">**Applies to:**</span></span>
+<span data-ttu-id="3662b-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="3662b-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="88783-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="88783-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="3662b-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="3662b-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="88783-107">可以使用推荐策略或组策略Microsoft Defender 防病毒云提供的Microsoft Endpoint Manager (保护) 级别。</span><span class="sxs-lookup"><span data-stu-id="88783-107">You can specify your level of cloud-delivered protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="88783-108">云保护不仅仅是对存储在云中的文件的保护。</span><span class="sxs-lookup"><span data-stu-id="88783-108">Cloud protection is not simply protection for files that are stored in the cloud.</span></span> <span data-ttu-id="88783-109">Microsoft Defender 防病毒云服务是一种机制，用于向网络和设备（也称为 (终结点）提供更新) 。</span><span class="sxs-lookup"><span data-stu-id="88783-109">The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints).</span></span> <span data-ttu-id="88783-110">云保护Microsoft Defender 防病毒分布式资源和机器学习，以比传统安全智能更新快得多的速度为终结点提供保护。</span><span class="sxs-lookup"><span data-stu-id="88783-110">Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates.</span></span> <span data-ttu-id="88783-111">Microsoft Intune 和 Microsoft Endpoint Manager 现在是 Microsoft Endpoint Manager[的一Microsoft Endpoint Manager。](/mem/endpoint-manager-overview)</span><span class="sxs-lookup"><span data-stu-id="88783-111">Microsoft Intune and Microsoft Endpoint Manager are now part of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview).</span></span> 
-
-
-## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a><span data-ttu-id="88783-112">使用 Microsoft Endpoint Manager 指定云提供的保护级别</span><span class="sxs-lookup"><span data-stu-id="88783-112">Use Microsoft Endpoint Manager to specify the level of cloud-delivered protection</span></span>
-
-1. <span data-ttu-id="88783-113">转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。</span><span class="sxs-lookup"><span data-stu-id="88783-113">Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.</span></span>
-
-2. <span data-ttu-id="88783-114">选择 **终结点安全**  >  **防病毒**。</span><span class="sxs-lookup"><span data-stu-id="88783-114">Choose **Endpoint security** > **Antivirus**.</span></span>
-
-3. <span data-ttu-id="88783-115">选择防病毒配置文件。</span><span class="sxs-lookup"><span data-stu-id="88783-115">Select an antivirus profile.</span></span> <span data-ttu-id="88783-116"> (如果还没有配置文件，或者要创建新的配置文件，请参阅配置 Microsoft Intune 中的[设备限制设置](/intune/device-restrictions-configure)。</span><span class="sxs-lookup"><span data-stu-id="88783-116">(If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).</span></span>
-
-4. <span data-ttu-id="88783-117">选择 **"属性"。**</span><span class="sxs-lookup"><span data-stu-id="88783-117">Select **Properties**.</span></span> <span data-ttu-id="88783-118">然后，在"配置 **设置"旁边，选择**"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="88783-118">Then, next to **Configuration settings**, choose **Edit**.</span></span>
-
-5. <span data-ttu-id="88783-119">展开 **"云** 保护"，然后在" **云提供的** 保护级别"列表中，选择下列选项之一：</span><span class="sxs-lookup"><span data-stu-id="88783-119">Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:</span></span>
-
-    1. <span data-ttu-id="88783-120">**高**：应用强级别的检测。</span><span class="sxs-lookup"><span data-stu-id="88783-120">**High**: Applies a strong level of detection.</span></span>
-    2. <span data-ttu-id="88783-121">**高加**： **使用高级别** ，并应用其他保护措施 (可能会影响客户端性能) 。</span><span class="sxs-lookup"><span data-stu-id="88783-121">**High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).</span></span>
-    3. <span data-ttu-id="88783-122">**零容** 限：阻止所有未知可执行文件。</span><span class="sxs-lookup"><span data-stu-id="88783-122">**Zero tolerance**: Blocks all unknown executables.</span></span>
-
-6. <span data-ttu-id="88783-123">选择 **"审阅 + 保存"，** 然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="88783-123">Choose **Review + save**, and then choose **Save**.</span></span> 
+<span data-ttu-id="3662b-107">可以使用推荐策略或组策略Microsoft Defender 防病毒云提供的Microsoft Endpoint Manager (保护) 级别。</span><span class="sxs-lookup"><span data-stu-id="3662b-107">You can specify your level of cloud-delivered protection offered by Microsoft Defender Antivirus by using Microsoft Endpoint Manager (recommended) or Group Policy.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="88783-124">需要一些帮助？</span><span class="sxs-lookup"><span data-stu-id="88783-124">Need some help?</span></span> <span data-ttu-id="88783-125">参阅以下资源：</span><span class="sxs-lookup"><span data-stu-id="88783-125">See the following resources:</span></span>
-> - [<span data-ttu-id="88783-126">配置Endpoint Protection</span><span class="sxs-lookup"><span data-stu-id="88783-126">Configure Endpoint Protection</span></span>](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
-> - [<span data-ttu-id="88783-127">在 Intune 中添加终结点保护设置</span><span class="sxs-lookup"><span data-stu-id="88783-127">Add endpoint protection settings in Intune</span></span>](/mem/intune/protect/endpoint-protection-configure)
+> <span data-ttu-id="3662b-108">云保护不仅仅是对存储在云中的文件的保护。</span><span class="sxs-lookup"><span data-stu-id="3662b-108">Cloud protection is not simply protection for files that are stored in the cloud.</span></span> <span data-ttu-id="3662b-109">Microsoft Defender 防病毒云服务是一种机制，用于向网络和设备（也称为 (终结点）提供更新) 。</span><span class="sxs-lookup"><span data-stu-id="3662b-109">The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and devices (also called endpoints).</span></span> <span data-ttu-id="3662b-110">云保护Microsoft Defender 防病毒分布式资源和机器学习，以比传统安全智能更新快得多的速度为终结点提供保护。</span><span class="sxs-lookup"><span data-stu-id="3662b-110">Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates.</span></span> <span data-ttu-id="3662b-111">Microsoft Intune 和 Microsoft Endpoint Manager 现在是 Microsoft Endpoint Manager[的一Microsoft Endpoint Manager。](/mem/endpoint-manager-overview)</span><span class="sxs-lookup"><span data-stu-id="3662b-111">Microsoft Intune and Microsoft Endpoint Manager are now part of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview).</span></span> 
+
+
+## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a><span data-ttu-id="3662b-112">使用 Microsoft Endpoint Manager 指定云提供的保护级别</span><span class="sxs-lookup"><span data-stu-id="3662b-112">Use Microsoft Endpoint Manager to specify the level of cloud-delivered protection</span></span>
+
+1. <span data-ttu-id="3662b-113">转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。</span><span class="sxs-lookup"><span data-stu-id="3662b-113">Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.</span></span>
+
+2. <span data-ttu-id="3662b-114">选择 **终结点安全**  >  **防病毒**。</span><span class="sxs-lookup"><span data-stu-id="3662b-114">Choose **Endpoint security** > **Antivirus**.</span></span>
+
+3. <span data-ttu-id="3662b-115">选择防病毒配置文件。</span><span class="sxs-lookup"><span data-stu-id="3662b-115">Select an antivirus profile.</span></span> <span data-ttu-id="3662b-116"> (如果还没有配置文件，或者要创建新的配置文件，请参阅配置 Microsoft Intune 中的[设备限制设置](/intune/device-restrictions-configure)。</span><span class="sxs-lookup"><span data-stu-id="3662b-116">(If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).</span></span>
+
+4. <span data-ttu-id="3662b-117">选择 **"属性"。**</span><span class="sxs-lookup"><span data-stu-id="3662b-117">Select **Properties**.</span></span> <span data-ttu-id="3662b-118">然后，在"配置 **设置"旁边，选择**"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="3662b-118">Then, next to **Configuration settings**, choose **Edit**.</span></span>
+
+5. <span data-ttu-id="3662b-119">展开 **"云** 保护"，然后在" **云提供的** 保护级别"列表中，选择下列选项之一：</span><span class="sxs-lookup"><span data-stu-id="3662b-119">Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:</span></span>
+
+    1. <span data-ttu-id="3662b-120">**高**：应用强级别的检测。</span><span class="sxs-lookup"><span data-stu-id="3662b-120">**High**: Applies a strong level of detection.</span></span>
+    2. <span data-ttu-id="3662b-121">**高加**： **使用高级别** ，并应用其他保护措施 (可能会影响客户端性能) 。</span><span class="sxs-lookup"><span data-stu-id="3662b-121">**High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).</span></span>
+    3. <span data-ttu-id="3662b-122">**零容** 限：阻止所有未知可执行文件。</span><span class="sxs-lookup"><span data-stu-id="3662b-122">**Zero tolerance**: Blocks all unknown executables.</span></span>
+
+6. <span data-ttu-id="3662b-123">选择 **"审阅 + 保存"，** 然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="3662b-123">Choose **Review + save**, and then choose **Save**.</span></span> 
+
+> [!TIP]
+> <span data-ttu-id="3662b-124">需要一些帮助？</span><span class="sxs-lookup"><span data-stu-id="3662b-124">Need some help?</span></span> <span data-ttu-id="3662b-125">参阅以下资源：</span><span class="sxs-lookup"><span data-stu-id="3662b-125">See the following resources:</span></span>
+> - [<span data-ttu-id="3662b-126">配置Endpoint Protection</span><span class="sxs-lookup"><span data-stu-id="3662b-126">Configure Endpoint Protection</span></span>](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [<span data-ttu-id="3662b-127">在 Intune 中添加终结点保护设置</span><span class="sxs-lookup"><span data-stu-id="3662b-127">Add endpoint protection settings in Intune</span></span>](/mem/intune/protect/endpoint-protection-configure)
   
 
-## <a name="use-group-policy-to-specify-the-level-of-cloud-delivered-protection"></a><span data-ttu-id="88783-128">使用组策略指定云提供的保护级别</span><span class="sxs-lookup"><span data-stu-id="88783-128">Use Group Policy to specify the level of cloud-delivered protection</span></span>
+## <a name="use-group-policy-to-specify-the-level-of-cloud-delivered-protection"></a><span data-ttu-id="3662b-128">使用组策略指定云提供的保护级别</span><span class="sxs-lookup"><span data-stu-id="3662b-128">Use Group Policy to specify the level of cloud-delivered protection</span></span>
 
-1.  <span data-ttu-id="88783-129">在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。</span><span class="sxs-lookup"><span data-stu-id="88783-129">On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).</span></span>
+1.  <span data-ttu-id="3662b-129">在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。</span><span class="sxs-lookup"><span data-stu-id="3662b-129">On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).</span></span>
 
-2. <span data-ttu-id="88783-130">右键单击要配置的组策略对象，然后单击编辑 **。**</span><span class="sxs-lookup"><span data-stu-id="88783-130">Right-click the Group Policy Object you want to configure, and then click **Edit**.</span></span>
+2. <span data-ttu-id="3662b-130">右键单击要配置的组策略对象，然后单击编辑 **。**</span><span class="sxs-lookup"><span data-stu-id="3662b-130">Right-click the Group Policy Object you want to configure, and then click **Edit**.</span></span>
 
-3.  <span data-ttu-id="88783-131">在组 **策略管理编辑器中**，转到计算机 **配置**  >  **管理模板**。</span><span class="sxs-lookup"><span data-stu-id="88783-131">In the **Group Policy Management Editor** go to **Computer Configuration** > **Administrative templates**.</span></span>
+3.  <span data-ttu-id="3662b-131">在组 **策略管理编辑器中**，转到计算机 **配置**  >  **管理模板**。</span><span class="sxs-lookup"><span data-stu-id="3662b-131">In the **Group Policy Management Editor** go to **Computer Configuration** > **Administrative templates**.</span></span>
 
-4.  <span data-ttu-id="88783-132">展开树以Windows   >    >  **MpEngine Microsoft Defender 防病毒组件。**</span><span class="sxs-lookup"><span data-stu-id="88783-132">Expand the tree to **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.</span></span>
+4.  <span data-ttu-id="3662b-132">展开树以Windows   >    >  **MpEngine Microsoft Defender 防病毒组件。**</span><span class="sxs-lookup"><span data-stu-id="3662b-132">Expand the tree to **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.</span></span>
 
-5.  <span data-ttu-id="88783-133">双击选择云 **保护级别** 设置，将其设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="88783-133">Double-click the **Select cloud protection level** setting and set it to **Enabled**.</span></span> <span data-ttu-id="88783-134">选择保护级别：</span><span class="sxs-lookup"><span data-stu-id="88783-134">Select the level of protection:</span></span>
-    - <span data-ttu-id="88783-135">**默认阻止级别** 提供强检测，而不会增加检测合法文件的风险。</span><span class="sxs-lookup"><span data-stu-id="88783-135">**Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.</span></span>
-    - <span data-ttu-id="88783-136">**中等阻止级别** 仅为高可信度检测提供中等</span><span class="sxs-lookup"><span data-stu-id="88783-136">**Moderate blocking level** provides moderate only for high confidence detections</span></span>
-    - <span data-ttu-id="88783-137">**高阻止级别** 可在优化客户端性能 (同时应用强大的检测级别，但也可以为您提供更大的误报) 。</span><span class="sxs-lookup"><span data-stu-id="88783-137">**High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).</span></span>
-    - <span data-ttu-id="88783-138">**高 +** 阻止级别会应用其他保护措施 (可能会影响客户端性能并增加误报的可能性) 。</span><span class="sxs-lookup"><span data-stu-id="88783-138">**High + blocking level** applies additional protection measures (might impact client performance and increase your chance of false positives).</span></span>
-    - <span data-ttu-id="88783-139">**零容限阻止级别** 可阻止所有未知可执行文件。</span><span class="sxs-lookup"><span data-stu-id="88783-139">**Zero tolerance blocking level** blocks all unknown executables.</span></span>
+5.  <span data-ttu-id="3662b-133">双击选择云 **保护级别** 设置，将其设置为 **已启用**。</span><span class="sxs-lookup"><span data-stu-id="3662b-133">Double-click the **Select cloud protection level** setting and set it to **Enabled**.</span></span> <span data-ttu-id="3662b-134">选择保护级别：</span><span class="sxs-lookup"><span data-stu-id="3662b-134">Select the level of protection:</span></span>
+    - <span data-ttu-id="3662b-135">**默认阻止级别** 提供强检测，而不会增加检测合法文件的风险。</span><span class="sxs-lookup"><span data-stu-id="3662b-135">**Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.</span></span>
+    - <span data-ttu-id="3662b-136">**中等阻止级别** 仅为高可信度检测提供中等</span><span class="sxs-lookup"><span data-stu-id="3662b-136">**Moderate blocking level** provides moderate only for high confidence detections</span></span>
+    - <span data-ttu-id="3662b-137">**高阻止级别** 可在优化客户端性能 (同时应用强大的检测级别，但也可以为您提供更大的误报) 。</span><span class="sxs-lookup"><span data-stu-id="3662b-137">**High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).</span></span>
+    - <span data-ttu-id="3662b-138">**高 +** 阻止级别会应用其他保护措施 (可能会影响客户端性能并增加误报的可能性) 。</span><span class="sxs-lookup"><span data-stu-id="3662b-138">**High + blocking level** applies additional protection measures (might impact client performance and increase your chance of false positives).</span></span>
+    - <span data-ttu-id="3662b-139">**零容限阻止级别** 可阻止所有未知可执行文件。</span><span class="sxs-lookup"><span data-stu-id="3662b-139">**Zero tolerance blocking level** blocks all unknown executables.</span></span>
     
     > [!WARNING]
-    > <span data-ttu-id="88783-140">虽然不太可能，但将此开关设置为"高"或"高 **+"** 可能会导致检测到一些合法 (尽管你可选择取消阻止或争议该检测) 。</span><span class="sxs-lookup"><span data-stu-id="88783-140">While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).</span></span>
+    > <span data-ttu-id="3662b-140">虽然不太可能，但将此开关设置为"高"或"高 **+"** 可能会导致检测到一些合法 (尽管你可选择取消阻止或争议该检测) 。</span><span class="sxs-lookup"><span data-stu-id="3662b-140">While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).</span></span>
 
-6. <span data-ttu-id="88783-141">单击“**确定**”。</span><span class="sxs-lookup"><span data-stu-id="88783-141">Click **OK**.</span></span>
+6. <span data-ttu-id="3662b-141">单击“**确定**”。</span><span class="sxs-lookup"><span data-stu-id="3662b-141">Click **OK**.</span></span>
 
-7. <span data-ttu-id="88783-142">部署更新的组策略对象。</span><span class="sxs-lookup"><span data-stu-id="88783-142">Deploy your updated Group Policy Object.</span></span> <span data-ttu-id="88783-143">请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)</span><span class="sxs-lookup"><span data-stu-id="88783-143">See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)</span></span>
+7. <span data-ttu-id="3662b-142">部署更新的组策略对象。</span><span class="sxs-lookup"><span data-stu-id="3662b-142">Deploy your updated Group Policy Object.</span></span> <span data-ttu-id="3662b-143">请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)</span><span class="sxs-lookup"><span data-stu-id="3662b-143">See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)</span></span>
 
 > [!TIP]
-> <span data-ttu-id="88783-144">是否在本地使用组策略对象？</span><span class="sxs-lookup"><span data-stu-id="88783-144">Are you using Group Policy Objects on premises?</span></span> <span data-ttu-id="88783-145">查看它们在云中如何转换。</span><span class="sxs-lookup"><span data-stu-id="88783-145">See how they translate in the cloud.</span></span> <span data-ttu-id="88783-146">[在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。</span><span class="sxs-lookup"><span data-stu-id="88783-146">[Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).</span></span> 
+> <span data-ttu-id="3662b-144">是否在本地使用组策略对象？</span><span class="sxs-lookup"><span data-stu-id="3662b-144">Are you using Group Policy Objects on premises?</span></span> <span data-ttu-id="3662b-145">查看它们在云中如何转换。</span><span class="sxs-lookup"><span data-stu-id="3662b-145">See how they translate in the cloud.</span></span> <span data-ttu-id="3662b-146">[在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。</span><span class="sxs-lookup"><span data-stu-id="3662b-146">[Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).</span></span> 
   
-## <a name="related-articles"></a><span data-ttu-id="88783-147">相关文章</span><span class="sxs-lookup"><span data-stu-id="88783-147">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="3662b-147">相关文章</span><span class="sxs-lookup"><span data-stu-id="3662b-147">Related articles</span></span>
 
-- [<span data-ttu-id="88783-148">Windows 10 中的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="88783-148">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
-- [<span data-ttu-id="88783-149">启用云保护</span><span class="sxs-lookup"><span data-stu-id="88783-149">Enable cloud-delivered protection</span></span>](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="88783-150">如何创建和部署反恶意软件策略：云保护服务</span><span class="sxs-lookup"><span data-stu-id="88783-150">How to create and deploy antimalware policies: Cloud-protection service</span></span>](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [<span data-ttu-id="3662b-148">Windows 10 中的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="3662b-148">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="3662b-149">启用云保护</span><span class="sxs-lookup"><span data-stu-id="3662b-149">Enable cloud-delivered protection</span></span>](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="3662b-150">如何创建和部署反恶意软件策略：云保护服务</span><span class="sxs-lookup"><span data-stu-id="3662b-150">How to create and deploy antimalware policies: Cloud-protection service</span></span>](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

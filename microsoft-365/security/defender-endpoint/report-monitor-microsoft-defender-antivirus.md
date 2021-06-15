@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,40 +16,40 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 5780daaa65a4d83376dd7977e03e88e2d828befc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 91891af35def83f21b3db8c7e8fa4b320bef563c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269578"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926159"
 ---
-# <a name="report-on-microsoft-defender-antivirus"></a><span data-ttu-id="0686a-104">关于 Microsoft Defender 防病毒软件的报告</span><span class="sxs-lookup"><span data-stu-id="0686a-104">Report on Microsoft Defender Antivirus</span></span>
+# <a name="report-on-microsoft-defender-antivirus"></a><span data-ttu-id="fe068-104">关于 Microsoft Defender 防病毒软件的报告</span><span class="sxs-lookup"><span data-stu-id="fe068-104">Report on Microsoft Defender Antivirus</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="0686a-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="0686a-105">**Applies to:**</span></span>
+<span data-ttu-id="fe068-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="fe068-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="0686a-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="0686a-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="fe068-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="fe068-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="0686a-107">Microsoft Defender 防病毒内置于 Windows 10、Windows Server 2019 和 Windows Server 2016。</span><span class="sxs-lookup"><span data-stu-id="0686a-107">Microsoft Defender Antivirus is built into Windows 10, Windows Server 2019, and Windows Server 2016.</span></span> <span data-ttu-id="0686a-108">Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中的下一代保护。</span><span class="sxs-lookup"><span data-stu-id="0686a-108">Microsoft Defender Antivirus is of your next-generation protection in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="0686a-109">下一代保护可帮助保护设备免受电子邮件、应用、云和 Web 中的软件威胁，如病毒、恶意软件和间谍软件。</span><span class="sxs-lookup"><span data-stu-id="0686a-109">Next-generation protection helps protect your devices from software threats like viruses, malware, and spyware across email, apps, the cloud, and the web.</span></span>
+<span data-ttu-id="fe068-107">Microsoft Defender 防病毒内置于 Windows 10、Windows Server 2019 和 Windows Server 2016。</span><span class="sxs-lookup"><span data-stu-id="fe068-107">Microsoft Defender Antivirus is built into Windows 10, Windows Server 2019, and Windows Server 2016.</span></span> <span data-ttu-id="fe068-108">Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中的下一代保护。</span><span class="sxs-lookup"><span data-stu-id="fe068-108">Microsoft Defender Antivirus is of your next-generation protection in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="fe068-109">下一代保护可帮助保护设备免受电子邮件、应用、云和 Web 中的软件威胁，如病毒、恶意软件和间谍软件。</span><span class="sxs-lookup"><span data-stu-id="fe068-109">Next-generation protection helps protect your devices from software threats like viruses, malware, and spyware across email, apps, the cloud, and the web.</span></span>
 
-<span data-ttu-id="0686a-110">使用Microsoft Defender 防病毒，你可以查看保护状态和警报的几个选项。</span><span class="sxs-lookup"><span data-stu-id="0686a-110">With Microsoft Defender Antivirus, you have several options for reviewing protection status and alerts.</span></span> <span data-ttu-id="0686a-111">可以使用此Microsoft Endpoint Manager[监视Microsoft Defender 防病毒](/configmgr/protect/deploy-use/monitor-endpoint-protection)[或创建电子邮件警报](/configmgr/protect/deploy-use/endpoint-configure-alerts)。</span><span class="sxs-lookup"><span data-stu-id="0686a-111">You can use Microsoft Endpoint Manager to [monitor Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](/configmgr/protect/deploy-use/endpoint-configure-alerts).</span></span> <span data-ttu-id="0686a-112">或者，您可以使用 Microsoft Intune 监视[保护](/intune/introduction-intune)。</span><span class="sxs-lookup"><span data-stu-id="0686a-112">Or, you can monitor protection using [Microsoft Intune](/intune/introduction-intune).</span></span>  
+<span data-ttu-id="fe068-110">使用Microsoft Defender 防病毒，你可以查看保护状态和警报的几个选项。</span><span class="sxs-lookup"><span data-stu-id="fe068-110">With Microsoft Defender Antivirus, you have several options for reviewing protection status and alerts.</span></span> <span data-ttu-id="fe068-111">可以使用此Microsoft Endpoint Manager[监视Microsoft Defender 防病毒](/configmgr/protect/deploy-use/monitor-endpoint-protection)[或创建电子邮件警报](/configmgr/protect/deploy-use/endpoint-configure-alerts)。</span><span class="sxs-lookup"><span data-stu-id="fe068-111">You can use Microsoft Endpoint Manager to [monitor Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](/configmgr/protect/deploy-use/endpoint-configure-alerts).</span></span> <span data-ttu-id="fe068-112">或者，您可以使用 Microsoft Intune 监视[保护](/intune/introduction-intune)。</span><span class="sxs-lookup"><span data-stu-id="fe068-112">Or, you can monitor protection using [Microsoft Intune](/intune/introduction-intune).</span></span>  
 
-<span data-ttu-id="0686a-113">Microsoft Operations Management Suite 具有[更新](/windows/deployment/update/update-compliance-get-started)合规性加载项，可报告关键Microsoft Defender 防病毒问题，包括保护更新和实时保护设置。</span><span class="sxs-lookup"><span data-stu-id="0686a-113">Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Microsoft Defender Antivirus issues, including protection updates and real-time protection settings.</span></span>
+<span data-ttu-id="fe068-113">Microsoft Operations Management Suite 具有[更新](/windows/deployment/update/update-compliance-get-started)合规性加载项，可报告关键Microsoft Defender 防病毒问题，包括保护更新和实时保护设置。</span><span class="sxs-lookup"><span data-stu-id="fe068-113">Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Microsoft Defender Antivirus issues, including protection updates and real-time protection settings.</span></span>
 
-<span data-ttu-id="0686a-114">如果你有 SIEM 服务器的第三方安全 (事件) ，还可以使用Windows Defender[事件](/windows/win32/events/windows-events)。</span><span class="sxs-lookup"><span data-stu-id="0686a-114">If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](/windows/win32/events/windows-events).</span></span> 
+<span data-ttu-id="fe068-114">如果你有 SIEM 服务器的第三方安全 (事件) ，还可以使用Windows Defender[事件](/windows/win32/events/windows-events)。</span><span class="sxs-lookup"><span data-stu-id="fe068-114">If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](/windows/win32/events/windows-events).</span></span> 
 
-<span data-ttu-id="0686a-115">Windows 事件由多个安全事件源组成，包括安全帐户管理器 (SAM) 事件 ([增强了 Windows 10，](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)另请参阅安全审核主题) 和 Windows Defender[](/windows/device-security/auditing/security-auditing-overview)[事件](troubleshoot-microsoft-defender-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="0686a-115">Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), also see the [Security auditing](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-microsoft-defender-antivirus.md).</span></span> 
+<span data-ttu-id="fe068-115">Windows 事件由多个安全事件源组成，包括安全帐户管理器 (SAM) 事件 ([增强了 Windows 10，](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)另请参阅安全审核主题) 和 Windows Defender[](/windows/device-security/auditing/security-auditing-overview)[事件](troubleshoot-microsoft-defender-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="fe068-115">Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), also see the [Security auditing](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-microsoft-defender-antivirus.md).</span></span> 
 
-<span data-ttu-id="0686a-116">可以使用事件收集器 集中聚合Windows[事件](/windows/win32/wec/windows-event-collector)。</span><span class="sxs-lookup"><span data-stu-id="0686a-116">These events can be centrally aggregated using the [Windows event collector](/windows/win32/wec/windows-event-collector).</span></span> <span data-ttu-id="0686a-117">通常，SIEM 服务器具有用于Windows事件的连接器，从而使你可以关联 SIEM 服务器中的所有安全事件。</span><span class="sxs-lookup"><span data-stu-id="0686a-117">Often, SIEM servers have connectors for Windows events, allowing you to correlate all security events in your SIEM server.</span></span> 
+<span data-ttu-id="fe068-116">可以使用事件收集器 集中聚合Windows[事件](/windows/win32/wec/windows-event-collector)。</span><span class="sxs-lookup"><span data-stu-id="fe068-116">These events can be centrally aggregated using the [Windows event collector](/windows/win32/wec/windows-event-collector).</span></span> <span data-ttu-id="fe068-117">通常，SIEM 服务器具有用于Windows事件的连接器，从而使你可以关联 SIEM 服务器中的所有安全事件。</span><span class="sxs-lookup"><span data-stu-id="fe068-117">Often, SIEM servers have connectors for Windows events, allowing you to correlate all security events in your SIEM server.</span></span> 
 
-<span data-ttu-id="0686a-118">您还可以使用 [Log Analytics 中的恶意软件评估解决方案监视恶意软件事件](/azure/log-analytics/log-analytics-malware)。</span><span class="sxs-lookup"><span data-stu-id="0686a-118">You can also [monitor malware events using the Malware Assessment solution in Log Analytics](/azure/log-analytics/log-analytics-malware).</span></span>
+<span data-ttu-id="fe068-118">您还可以使用 [Log Analytics 中的恶意软件评估解决方案监视恶意软件事件](/azure/log-analytics/log-analytics-malware)。</span><span class="sxs-lookup"><span data-stu-id="fe068-118">You can also [monitor malware events using the Malware Assessment solution in Log Analytics](/azure/log-analytics/log-analytics-malware).</span></span>
 
-<span data-ttu-id="0686a-119">有关使用 PowerShell、WMI 或 Microsoft Azure 监视或确定状态的信息，请参阅 (部署、管理和报告选项[表) 。 ](deploy-manage-report-microsoft-defender-antivirus.md#ref2)</span><span class="sxs-lookup"><span data-stu-id="0686a-119">For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).</span></span>
+<span data-ttu-id="fe068-119">有关使用 PowerShell、WMI 或 Microsoft Azure 监视或确定状态的信息，请参阅 (部署、管理和报告选项[表) 。 ](deploy-manage-report-microsoft-defender-antivirus.md#ref2)</span><span class="sxs-lookup"><span data-stu-id="fe068-119">For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="0686a-120">相关文章</span><span class="sxs-lookup"><span data-stu-id="0686a-120">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="fe068-120">相关文章</span><span class="sxs-lookup"><span data-stu-id="fe068-120">Related articles</span></span>
 
-- [<span data-ttu-id="0686a-121">Windows 10 中的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="0686a-121">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
-- [<span data-ttu-id="0686a-122">Windows Server 2016 和 2019 上的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="0686a-122">Microsoft Defender Antivirus on Windows Server 2016 and 2019</span></span>](microsoft-defender-antivirus-on-windows-server.md)
-- [<span data-ttu-id="0686a-123">部署Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="0686a-123">Deploy Microsoft Defender Antivirus</span></span>](deploy-manage-report-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="fe068-121">Windows 10 中的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="fe068-121">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="fe068-122">Windows Server 2016 和 2019 上的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="fe068-122">Microsoft Defender Antivirus on Windows Server 2016 and 2019</span></span>](microsoft-defender-antivirus-on-windows-server.md)
+- [<span data-ttu-id="fe068-123">部署Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="fe068-123">Deploy Microsoft Defender Antivirus</span></span>](deploy-manage-report-microsoft-defender-antivirus.md)
