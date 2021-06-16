@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织提供的高级防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8337e25fb6328a2492e2e033e80efcdee8352f6f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: c5810439a7ed3177949d2c0c8a4551f4515ce72c
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878924"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933139"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365
 
@@ -61,7 +61,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com> 。 若要直接转到" **防钓鱼"页面** ，请使用 <https://security.microsoft.com/antiphishing> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到" **防钓鱼"页面** ，请使用 <https://security.microsoft.com/antiphishing> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -296,7 +296,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 默认情况下，基于反网络钓鱼策略在 (较旧策略中创建的顺序，反网络钓鱼策略的优先级低于较旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
-若要更改策略的优先级，请在策略属性中单击"增加优先级"或"减少优先级" (你无法直接修改 Microsoft 365 Defender 门户策略) 。  只有当你有多个策略时，更改策略的优先级才有意义。
+若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
 
  **注意**：
 
@@ -308,9 +308,9 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 2. 在 **"防钓鱼"** 页上，通过单击名称从列表中选择自定义策略。
 
 3. 在出现的策略详细信息浮出控件顶部，你会看到“**提高优先级**”或“**降低优先级**”，具体取决于当前优先级值和自定义策略数量：
-   - 优先级值为 **0** 的防钓鱼 **策略** 仅提供 **"减少优先级"** 选项。
-   - 优先级值最低的防钓鱼策略 (例如 **，3**) 只有"增加 **优先级"** 选项可用。
-   - 如果你有三个或多个防钓鱼策略，则最高优先级值和最低优先级值之间的策略同时具有"增加优先级"和"**减少优先级"** 选项。
+   - 优先级值为 **0** **的策略** 只有"**减少优先级"** 选项可用。
+   - 优先级值最低的策略 (例如 **，3**) 只有"增加优先级 **"** 选项可用。
+   - 如果你有三个或多个策略，则最高优先级值和最低优先级值之间的策略同时具有"增加 **优先级** "和" **减少优先级"** 选项。
 
    单击![“提高优先级”图标](../../media/m365-cc-sc-increase-icon.png)“**提高优先级**”或![“降低优先级”图标](../../media/m365-cc-sc-decrease-icon.png)“**降低优先级**”以更改“**优先级**”值。
 

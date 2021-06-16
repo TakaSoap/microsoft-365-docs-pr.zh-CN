@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710714"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932862"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -263,9 +263,16 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |处置评审 | 否| 是 |
 |最长 7 年的处置证明 | 否 |是，使用处置评审或项目被标记为记录时|
 |审核管理员活动| 是 | 是|
+|审核保留操作| 不支持 | 是的 <sup>\*</sup> |
 |识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
-请注意，可以同时将保留策略和保留标签用作互补的保留方法。例如：
+**脚注：**
+
+<sup>\*</sup> 对于不将内容标记为记录或法规记录的保留标签，审核事件仅限于 SharePoint 中的项应用、更改或删除标签时。 有关保留标签的审核详细信息，请参阅此页上的[审核保留操作](#auditing-retention-actions)部分。
+
+### <a name="combining-retention-policies-and-retention-labels"></a>组合保留策略和保留标签
+
+无需选择仅使用保留策略还是仅使用保留标签。 这两种方法可以一起使用，实际上可以相互补充，以获得更全面的解决方案。 例如：
 
 1. 你创建并配置一个保留策略，以便在自最后一次修改内容起 5 年后自动删除内容，同时你将此策略应用于所有 OneDrive 帐户。
 
@@ -374,9 +381,31 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 由于宽限期内的行为，如果在30天内重新启用该策略或将位置状态更改为开启，策略将在这段时间内恢复，而不会有任何永久性数据丢失。
 
-## <a name="auditing-retention-configuration"></a>审核保留配置
+## <a name="auditing-retention-configuration-and-actions"></a>审核保留配置和操作
 
-[启用审核后](turn-audit-log-search-on-or-off.md)，管理员针对保留政策和保留标签的操作会被保存到审核日志中。 例如，创建、配置或删除保留政策或标签时会创建审核事件。 如需完整的列表，请参阅[保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
+[启用审核](turn-audit-log-search-on-or-off.md)时，管理配置（保留策略和保留标签）和保留操作（仅限保留标签）均支持保留审核事件。
+
+### <a name="auditing-retention-configuration"></a>审核保留配置
+
+创建、重新配置或删除保留策略或标签时，保留策略和保留标签的管理员配置将记录为审核事件。
+
+如需审核时间的完整列表，请参阅[保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
+
+### <a name="auditing-retention-actions"></a>审核保留操作
+
+记录为审核事件的保留操作仅适用于保留标签，不适用于保留策略：
+
+- 在 SharePoint 中的项中应用、更改或删除保留标签时：
+    - 从 **文件和页面活动**，选择 **已更改文件保留标签**。 
+
+- 当 SharePoint 中标记的项标记为记录，并且用户将其解锁或锁定时：
+    - 从 **文件和页面活动**，选择 **已更改记录状态为解锁** 和 **更改记录状态为锁定**。
+
+- 将内容标记为记录或法规记录的保留标签应用于 Exchange 中的项时：
+    - 从 **Exchange 邮箱活动中**，选择 **已标记消息为记录**
+
+- 当 SharePoint 或 Exchange 中标记的项标记为记录或法规记录，并将其永久删除时：
+    - 从 **文件和页面活动**，选择 **已删除标记为记录的文件**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet
 

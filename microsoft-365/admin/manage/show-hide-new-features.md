@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: danbrown
 author: DHB-MSFT
-manager: scotv
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 管理中心中的"Office 中的新增功能"，确定当用户在 Windows > 上的 Office 应用 中选择"帮助""Office 应用 新增功能"时要显示或隐藏的 Microsoft 365 功能。 Office
-ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 395038bebda407771802a61ba5aefc350c7c5cd1
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924831"
+ms.locfileid: "52929475"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理Office功能显示在新增功能中
 

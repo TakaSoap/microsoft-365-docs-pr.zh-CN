@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 406450752085817cb49e3cf08a90c0087af3d94b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879284"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930519"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -294,7 +294,7 @@ ms.locfileid: "52879284"
 
 每个保险箱链接策略都包含一个"不重写以下 **URL"** 列表，您可以使用该列表指定未由"链接"扫描保险箱 URL。 换句话说，该列表允许策略中包含的用户访问指定的 URL，否则，"链接"会保险箱 URL。 可以在不同的链接策略中配置保险箱列表。 策略处理在用户应用第一 (策略后) 可能停止。 因此，只有一个"不重写以下 **URL"** 列表应用于包含多个活动"链接"策略保险箱用户。
 
-若要将条目添加到新列表或现有链接保险箱，请参阅 Create 保险箱 Links [policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies)或 Modify 保险箱[Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
+若要将条目添加到新的或现有的 保险箱 链接策略中的列表，请参阅使用[Microsoft 365 Defender](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)门户创建 保险箱 链接策略或使用 Microsoft 365 Defender 门户修改 保险箱[链接策略](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
 **注意**：
 

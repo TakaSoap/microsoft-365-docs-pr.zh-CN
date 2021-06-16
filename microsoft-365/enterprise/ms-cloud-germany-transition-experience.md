@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解从德国 Microsoft 云 (德国 microsoft 云) 移动到新的德国数据中心Office 365服务的变化。
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591776"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930399"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>迁移到新的德国数据中心Office 365服务后将发生哪些变化
 
@@ -75,6 +75,12 @@ ms.locfileid: "51591776"
 - 邮箱作为后端进程进行迁移。 在转换期间，您组织的用户可能在德国 Microsoft 云或德国区域，并且属于同一全局地址列表中同一 Exchange (组织) 。
 
 - 通过使用其Outlook Web App的 URL 访问服务的用户会看到额外的身份验证提示。 例如，如果用户的邮箱位于 Office 365 服务中，并且用户的 Outlook Web App 连接使用旧版终结点，则用户首先会向 进行身份验证，然后对 `outlook.office.de` `login.microsoftonline.de` 进行身份验证 `login.microsoftonline.com` 。 迁移完成后，用户可以访问新的 URL () ，并且他们只能看到一个预期的 `https://outlook.office365.com` 登录请求。 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+在 SharePoint Online 和 OneDrive for Business 中，可以通过 Outlook。 按"Outlook"按钮后，会创建一个可共享的链接，并推送到Outlook Web App。
+
+完成 SharePoint Online OneDrive for Business Outlook后，SharePoint Online 和 Outlook 共享项目将不再有效。 我们意识到这是一个已知问题。 但是，由于此Outlook功能位于弃用路径中，因此在推出弃用之前，不会计划解决此问题。
 
 ## <a name="office-services"></a>Office服务
 

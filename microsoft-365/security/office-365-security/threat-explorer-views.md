@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解如何使用威胁资源管理器和实时检测报告在安全与合规中心内调查和&威胁。
+description: 了解如何使用威胁资源管理器和实时检测报告来调查和响应 Microsoft 365 Defender 门户中的威胁。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78c03b45063f4bc34b47ab003bcf00d2befab886
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203814"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929610"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -33,9 +33,9 @@ ms.locfileid: "51203814"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![威胁资源管理器](../../media/ThreatExplorerFirstOpened.png)
+![威胁资源管理器](../../media/explorer.png)
 
-[威胁](threat-explorer.md) (和实时检测报告) 是一款功能强大的近实时工具，可帮助安全运营团队在安全与合规中心内调查和&威胁。 Explorer (和实时检测报告) 显示有关 Office 365 中电子邮件和文件中可疑恶意软件和网络钓鱼的信息，以及组织面临的其他安全威胁和风险。
+[威胁](threat-explorer.md) (和实时检测报告) 是一款功能强大的近实时工具，可帮助安全运营团队调查和响应 Microsoft 365 Defender 门户中的威胁。 Explorer (和实时检测报告) 显示有关 Office 365 中电子邮件和文件中可疑恶意软件和网络钓鱼的信息，以及组织面临的其他安全威胁和风险。
 
 - 如果你有[Microsoft Defender for Office 365](defender-for-office-365.md)计划 2，则你有资源管理器。
 - 如果你有 Microsoft Defender for Office 365计划 1，则你有实时检测。
@@ -58,7 +58,7 @@ ms.locfileid: "51203814"
 
 使用 **"视图** "菜单更改显示的信息。 工具提示可帮助您确定要使用哪个视图。
 
-![威胁资源管理器视图菜单](../../media/ThreatExplorerViewMenu.png)
+![威胁资源管理器视图菜单](../../media/all-email.png)
 
 选择视图后，可以应用筛选器并设置查询以执行进一步分析。 以下各节简要概述了资源管理器中提供的各种视图 (或实时检测) 。
 
@@ -66,7 +66,7 @@ ms.locfileid: "51203814"
 
 若要查看此报告，在资源管理器 (或实时检测中，) **查看** \> **电子邮件** \> **恶意软件"。** 此视图显示有关被标识为包含恶意软件的电子邮件的信息。
 
-![查看有关标识为恶意软件的电子邮件的数据](../../media/ExplorerEmailMalwareMenu.png)
+![查看有关标识为恶意软件的电子邮件的数据](../../media/detection-technology.png)
 
 单击 **"** 发件人"打开查看选项列表。 使用此列表按发件人、收件人、发件人域、主题、检测技术、保护状态等查看数据。
 
@@ -82,13 +82,13 @@ ms.locfileid: "51203814"
 
 若要查看此报告，在 Explorer (或实时检测中，) **查看** \> **电子邮件** \> **钓鱼邮件**"。 此视图显示标识为网络钓鱼尝试的电子邮件。
 
-![查看有关标识为网络钓鱼尝试的电子邮件的数据](../../media/ThreatExplorerEmailPhish.png)
+![查看有关标识为网络钓鱼尝试的电子邮件的数据](../../media/phish.png)
 
 单击 **"** 发件人"打开查看选项列表。 使用此列表按发件人、收件人、发件人域、发件人 IP、URL 域、单击裁定等查看数据。
 
 例如，若要了解用户单击标识为网络钓鱼尝试的 URL 时采取的操作，请选择列表中的"单击裁定"，选择一个或多个选项，然后单击"刷新"按钮。
 
-![单击钓鱼报告裁定选项](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![单击钓鱼报告裁定选项](../../media/click-verdict.png)
 
 在图表下方，查看有关特定邮件、URL 单击、URL 和电子邮件来源的更多详细信息。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51203814"
 
 按恶意软件系列、检测技术 (检测恶意软件) ，以及工作负荷 (OneDrive、SharePoint或Teams) 。
 
-![查看有关检测到的恶意软件的数据](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![查看有关检测到的恶意软件的数据](../../media/malware-family.png)
 
 在图表下方，查看有关特定文件的更多详细信息，例如附件文件名、工作负荷、文件大小、上次修改文件的人等。
 

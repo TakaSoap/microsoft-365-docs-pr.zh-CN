@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844870"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929691"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -313,7 +313,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 - 检查 **事件**  >  **查看器应用程序和服务日志**  >  **操作管理器**，以查看是否有错误。
 
-- 在 **"** 服务"**中，Microsoft Monitoring Agent** 服务器是否在服务器上运行。 例如：
+- 在 **"** 服务"**中，Microsoft Monitoring Agent** 服务器是否在服务器上运行。 例如，
 
     ![服务的图像](images/atp-services.png)
 
@@ -334,6 +334,8 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 - 在最终用户执行第一次登录之前，设备已关闭或重新启动
 - 在此方案中，SENSE 服务不会自动启动，即使已部署载入包
 
+<div class="alert"><b>注意：</b>OOBE 后的用户登录不再需要 SENSE 服务启动以下或更新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019（[包含 2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总） </br> Windows 10 2021 年 4 月更新汇总的版本[1909](https://support.microsoft.com/kb/5001396) </br> Windows 10 2021 年 4 月 28 日更新汇总的[2004/20H2 版本](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > 以下步骤仅在使用 Microsoft Endpoint Configuration Manager 时Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 

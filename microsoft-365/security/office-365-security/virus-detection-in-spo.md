@@ -20,12 +20,12 @@ description: 了解 SharePoint Online 如何在用户上载的文件中检测到
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd38b196c106a36fb1a1bfc0a441620b1c5b8ba5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203238"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932826"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft Teams 中的内置病毒防护
 
@@ -68,7 +68,7 @@ Microsoft 365使用常见的病毒检测引擎扫描用户上传到 SharePoint O
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>当同步OneDrive尝试同步受感染的文件时，会发生什么情况？
 
-OneDrive客户端不会下载包含病毒的文件。 同步客户端将显示文件无法同步的通知。
+将恶意文件上传到OneDrive，它将先同步到本地计算机，然后再被标记为恶意软件。 在将同步文件标记为恶意软件后，用户无法再从本地计算机打开同步文件。
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 

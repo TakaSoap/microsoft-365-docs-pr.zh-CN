@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879200"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929871"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -56,21 +56,21 @@ ms.locfileid: "52879200"
 
 - 关闭自定义邮箱中邮件的 URL 扫描。 使用 [Defender for Office 365](set-up-safe-links-policies.md)中的"设置保险箱链接策略"创建一个 保险箱 链接策略，并设置"关闭"以选择邮件中未知 **潜在恶意 URL 的操作**。
 
-- 创建反恶意软件策略以关闭恶意软件零时差自动清除。 请参阅 [使用安全&合规中心创建反恶意软件](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)策略，将 **"恶意软件零时差自动清除**"设置为 **"关闭"。**
+- 创建反恶意软件策略以关闭恶意软件零时差自动清除。 请参阅使用 Microsoft 365 Defender 门户创建 [反垃圾邮件策略](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)，将 **"恶意软件零时差自动清除**"设置为 **"关闭"。**
 
-- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼) ZAP 邮件进行零时差自动清除。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) 中心创建反垃圾邮件策略并清除 **垃圾邮件** **ZAP** 和钓鱼邮件 **ZAP** 的打开复选框。
+- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼) ZAP 邮件进行零时差自动清除。 请参阅 [使用 Microsoft 365 Defender](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)门户创建反垃圾邮件策略并清除 **垃圾邮件** **ZAP** 和 **钓鱼邮件 ZAP** 的打开复选框。
 
 - 禁用自定义邮箱中的垃圾邮件规则。 使用[配置邮箱上的垃圾邮件Exchange Online禁用](configure-junk-email-settings-on-exo-mailboxes.md)垃圾邮件规则。 禁用后，EOP 无法根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
-在验证邮箱满足所有适用的先决条件后，请使用安全 [&](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) 合规性中心配置本文 (提交邮箱) 。
+验证邮箱是否满足所有适用的先决条件后，请执行使用 Microsoft 365 Defender 门户配置用户[提交邮箱中指定的过程](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到用户 **提交页面，** 请使用 <https://protection.office.com/userSubmissionsReportMessage> 。
+- 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission> 。
 
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
 
-  - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+  - **组织管理** 或 **安全管理员** 在 [Microsoft 365 Defender 门户中](permissions-in-the-security-and-compliance-center.md)。
   - **组织管理** 中的 [Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
 
 - 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则当您指定提交邮箱时，将收到如下所示的错误：
@@ -82,9 +82,9 @@ ms.locfileid: "52879200"
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全&合规中心配置用户提交邮箱
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>使用 Microsoft 365 Defender 门户配置用户提交邮箱
 
-1. 在安全与&中心，转到"**威胁管理** \> **策略**"" \> **用户提交"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** User reported \> **message settings** User \> **submissions**.
 
 2. 在出现的 **"用户** 提交"页面中，选择以下选项之一：
 

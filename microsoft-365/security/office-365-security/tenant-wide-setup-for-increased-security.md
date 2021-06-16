@@ -20,12 +20,12 @@ ms.custom:
 description: 本主题将指导你完成对影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879212"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929571"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -63,9 +63,9 @@ Microsoft 365 Defender 门户包含可保护你的环境的功能。 它还包�
 > [!NOTE]
 > 对于 SPF 的非标准部署、混合部署和故障排除：Microsoft 365 如何使用发件人策略框架[ (SPF](how-office-365-uses-spf-to-prevent-spoofing.md)) 防止欺骗。
 
-## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>在安全与合规中心内查看&和报告
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>在 defender 门户中查看Microsoft 365和报告
 
-访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。 有关详细信息，请参阅安全 [与合规中心&报告](../../compliance/reports-in-security-and-compliance.md)。
+访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。 有关详细信息，请参阅 defender 门户[中的Microsoft 365报告](../../compliance/reports-in-security-and-compliance.md)。
 
 <br>
 

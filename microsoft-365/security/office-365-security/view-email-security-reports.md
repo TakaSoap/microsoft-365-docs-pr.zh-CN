@@ -1,5 +1,5 @@
 ---
-title: 查看安全与合规中心内的电子邮件安全报告
+title: 在 defender 门户中查看Microsoft 365安全报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 了解如何查找和使用组织的电子邮件安全报告。 安全与合规中心提供&报告。
+description: 了解如何查找和使用组织的电子邮件安全报告。 电子邮件安全报告在 Microsoft 365 Defender 门户中提供。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bb7570722fcc957ca86d68f6b42ef254578d7bd7
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531005"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930316"
 ---
-# <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 defender 门户中查看Microsoft 365安全报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "52531005"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全与合规中心提供了各种报告[&，](https://protection.office.com)可帮助你查看电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能）如何保护你的组织。 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在安全与合规中心内查看这些报告&"报告仪表板 \> **"。** 若要直接转到"报表"仪表板，请打开 <https://protection.office.com/insightdashboard> 。
+[Microsoft 365 Defender](https://security.microsoft.com)门户中提供了各种报告，可帮助你查看电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能）如何保护你的组织。 如果你拥有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在 Microsoft 365 Defender 门户中查看这些报告，&报告电子邮件& \>  \> **协作报告**。 若要直接转到"报表"仪表板，请打开 <https://security.microsoft.com/emailandcollabreport> 。
 
-![安全与合规中心&仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![报告 Defender 门户Microsoft 365仪表板](../../media/email-collaboration-reports.png)
 
 ## <a name="compromised-users-report"></a>遭到入侵的用户报告
 
@@ -50,7 +50,7 @@ ms.locfileid: "52531005"
 
 聚合视图显示过去 90 天的数据，而详细信息视图显示最近 30 天的数据。
 
-若要查看报告，请打开安全与合规 [&，转到](https://protection.office.com)**报告仪表板** \> 并选择 **泄露的用户**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=CompromisedUsers> 。
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告电子邮件 \> **&协作** 电子邮件 \> **& 协作报告**，然后单击泄露用户下的查看 **详细信息**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/CompromisedUsers> 。
 
 通过单击"筛选器"并选择以下一个或多个值，可以筛选图表和详细信息表：
 
@@ -80,7 +80,7 @@ ms.locfileid: "52531005"
 
 聚合视图允许筛选过去 90 天，而详细信息视图允许筛选 10 天。
 
-若要查看报告，请打开安全与&[中心，](https://protection.office.com)**转到报告** 仪表板 \> ，然后选择加密 **报告**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=EncryptionReport> 。
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告电子邮件 \> **&协作** 电子邮件 \> **&协作** 报告，然后单击加密报告 下的查看 **详细信息**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=EncryptionReport> 。
 
 若要了解有关加密的信息，请参阅电子邮件[加密Microsoft 365。](../../compliance/email-encryption.md)
 
@@ -153,7 +153,7 @@ ms.locfileid: "52531005"
 
  聚合视图筛选器允许 90 天，而详细信息表筛选器仅允许 10 天。
 
-若要查看报告，请打开安全与&中心，转到报告 [仪表板](https://protection.office.com) \> ，然后选择 **电子邮件中的恶意软件检测**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=MalwareDetections> 。
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告 \> **电子邮件&协作** 电子邮件 & \> **协作报告**，然后单击查看电子邮件中检测到的恶意软件 **下的详细信息**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/MalwareDetections> 。
 
 !["报告"仪表板中电子邮件小部件中的恶意软件检测](../../media/malware-detections-widget.png)
 
@@ -191,7 +191,7 @@ ms.locfileid: "52531005"
 
 聚合视图允许筛选 90 天，而详细信息表允许筛选 10 天。
 
-若要查看报告，请打开安全与&中心 **，转到报告**[仪表板](https://protection.office.com) \> ，然后选择垃圾邮件 **检测**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=SpamDetections> 。
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告电子邮件 \> **&协作** 电子邮件 \> **& 协作报告**，然后单击垃圾邮件检测下的查看 **详细信息**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpamDetections> 。
 
 !["报告"仪表板中的"垃圾邮件检测"小组件](../../media/spam-detections-report-widget.png)
 
@@ -255,7 +255,7 @@ ms.locfileid: "52531005"
 
 <sup>\*</sup> 最终，你将能够使用最多 90 天的筛选。
 
-若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> 并选择 **欺骗检测**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=SpoofMailReport> 。
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告电子邮件 \> **&协作** 电子邮件 \> **& 协作报告**，然后单击欺骗检测下的查看 **详细信息**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpoofMailReport> 。
 
 ![报告仪表板中的欺骗检测小组件](../../media/spoof-detections-widget.png)
 
@@ -301,7 +301,7 @@ ms.locfileid: "52531005"
 
 **注意**：如果邮件发送给五个收件人，则我们将邮件计为五个不同的邮件，而不是一封邮件，了解这一点很重要。
 
-若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> ，然后选择 **威胁防护状态**。 若要直接转到报告，请打开以下 URL 之一：
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告电子邮件 \> **&协作** 电子邮件 \> **& 协作报告**，然后单击威胁防护状态下的查看 **详细信息**。 若要直接转到报告，请打开以下 URL 之一：
 
 - Microsoft Defender for Office 365：<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP： <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -479,7 +479,7 @@ ms.locfileid: "52531005"
 
 " **热门恶意软件** "报告显示 [EOP](anti-malware-protection.md)中的反恶意软件保护检测到的各种恶意软件。
 
-若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> ，然后选择 **热门恶意软件**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=TopMalware> 。
+若要查看报告，请打开 [Microsoft 365 Defender](https://security.microsoft.com)门户，转到报告电子邮件 \> **&协作** 电子邮件 \> **&协作报告**，然后单击顶部恶意软件下的查看 **详细信息**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/TopMalware> 。
 
 ![报告仪表板中的热门恶意软件小组件](../../media/top-malware-report-widget.png)
 
@@ -500,35 +500,33 @@ Microsoft Defender for Office 365 中提供了 **URL** 威胁防护报告。 有
 
 ## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 
-用户 **报告** 的邮件报告显示有关用户使用报告邮件外接程序或报告网络钓鱼外接程序报告为垃圾邮件、网络钓鱼尝试或良好邮件 [的电子邮件的信息](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md)
+用户 **报告的邮件** 报告显示有关用户使用报告邮件外接程序或报告网络钓鱼外接程序报告为垃圾邮件、网络钓鱼尝试或良好邮件 [的电子邮件的信息](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md)
 
 每封邮件的详细信息可用，包括传递原因，例如为组织配置的垃圾邮件策略例外或邮件流规则。 若要查看详细信息，请选择用户报告列表中的某个项目，然后查看"摘要"和"详细信息"选项卡 **上** 的信息。 
 
-![The User-Reported Messages report shows messages users labeled as junk， not junk， or phishing attempts.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+!["用户报告的邮件"报告显示用户标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试的邮件。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
-若要查看此报告，在安全与 [&，](https://protection.office.com)请执行下列操作之一：
+若要查看此报告，在 [Microsoft 365 Defender](https://security.microsoft.com)门户中，转到报告电子邮件 \> **&协作** \> **电子邮件&报告** \> **用户报告的邮件**。
 
-- 转到"**威胁管理** \> **""仪表板** \> **""用户报告的邮件"。**
+- 转到报告 \> **电子邮件&协作** \> **电子邮件&报告** \> **用户报告的邮件**。
 
-- 转到"**威胁管理** \> **""** \> **查看用户报告的邮件"。**
-
-![在安全与&中心，选择"威胁管理 \> ""查看 \> 用户报告的邮件"](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![在 Microsoft 365 Defender 门户中，选择报告电子邮件 \> &协作 电子邮件 \> &报告 \> 用户报告的邮件](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
-> 为了使用户报告的消息报告正常工作，必须为用户报告的环境启用Office 365日志记录。 通常是由在 Exchange Online 中分配为审核日志的角色执行。 有关详细信息，请参阅打开[Microsoft 365 审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+> 为了使"用户报告的消息"报告正常工作，必须为用户报告环境启用Office 365日志记录。 通常是由在 Exchange Online 中分配为审核日志的角色执行。 有关详细信息，请参阅打开[Microsoft 365 审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告需要哪些权限？
 
-若要查看和使用本文中所述的报告，你需要是安全与合规中心内以下角色&之一：
+若要查看和使用本文中所述的报告，你需要是 Microsoft 365 Defender 门户中以下角色组之一的成员：
 
 - **组织管理**
 - **安全管理员**
 - **安全读者**
-- **全局读取者**
+- **全局读者**
 
-有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+有关详细信息，请参阅 Defender 门户[中Microsoft 365权限](permissions-in-the-security-and-compliance-center.md)。
 
-**注意**：将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供安全与合规中心中所需的权限&以及安全与合规中心中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+注意：将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 
@@ -538,8 +536,8 @@ Microsoft Defender for Office 365 中提供了 **URL** 威胁防护报告。 有
 
 [EOP 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
 
-[安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
+[Microsoft 365 Defender 门户中的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
 
-[在安全与合规中心内查看&流报告](view-mail-flow-reports.md)
+[在 Defender 门户中查看Microsoft 365流报告](view-mail-flow-reports.md)
 
 [查看 Defender for Office 365](view-reports-for-mdo.md)

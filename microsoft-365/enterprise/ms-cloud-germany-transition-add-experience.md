@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (德国) Office 365迁移后活动。
-ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899360"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930411"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移后活动
 
@@ -53,7 +53,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 从 Microsoft 云德国 AD FS 中删除信赖方信任。 | 完成到 Azure AD 的切分后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要删除对德国 Microsoft 云终结点的信赖方信任。 只有在将 Azure AD 用作标识提供程序 (IdP) 时，客户的应用程序均不指向德国 Microsoft 云终结点，才能完成此操作。 | 联合身份验证组织 | 无。 |
+| 从 Microsoft 云德国 AD FS 中删除信赖方信任。 | 完成到 Azure AD 的切分后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要删除对德国 Microsoft 云终结点的信赖方信任。 只有在将 Azure AD 用作标识提供程序 (IdP) 时，客户的应用程序均不指向德国 Microsoft 云终结点，才能完成此操作。 | 联合身份验证组织 | 
 ||||
 
 <!--
@@ -68,16 +68,12 @@ The following table provides an overview about which endpoints will replace the 
 | 如果原始请求未获得批准，则需要再次请求迁移前 30 天内加入 Azure AD 组的请求。 | 如果迁移前的最后 30 天内未批准这些请求，最终用户客户将需要使用访问面板再次提交加入 Azure AD 组的请求。 |  作为最终用户： <ol><li>导航到 ["访问"面板](https://account.activedirectory.windowsazure.com/r#/joinGroups)。</li><li>查找在迁移前 30 天内等待其成员身份审批的 Azure AD 组。</li><li>再次请求加入 Azure AD 组。</li></ol> 在迁移前 30 天内加入活动组的请求无法获得批准，除非迁移后再次请求。 |
 ||||
 
-<!--
-    Question from ckinder
-    The following paragraph is not clear
--->
 ## <a name="custom-dns-updates"></a>自定义 DNS 更新
 **适用于：**  管理自己的 DNS 区域的所有客户
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:------|:-------|:-------|
-| 更新本地 DNS 服务以Office 365服务终结点。 | 指向德国 Microsoft 云的客户托管 DNS 条目需要更新为指向 Office 365 全局服务终结点。 | 如果不这样做，可能会导致服务或软件客户端失败。 |
+| 更新本地 DNS 服务以Office 365服务终结点。 | 指向德国 Microsoft 云的客户托管 DNS 条目需要更新为指向 Office 365 全局服务终结点。 请参阅管理[中心中的Microsoft 365，](https://admin.microsoft.com/Adminportal/Home#/Domains)并应用 DNS 配置中的更改。 | 如果不这样做，可能会导致服务或软件客户端失败。 |
 ||||
 
 ## <a name="third-party-services"></a>第三方服务
@@ -87,19 +83,3 @@ The following table provides an overview about which endpoints will replace the 
 |:-------|:-------|:-------|
 | 更新合作伙伴和第三方服务，Office 365终结点。 | <ul><li>指向德国的第三方服务和合作伙伴Office 365更新为指向 Office 365 服务终结点。 示例：重新注册应用程序库应用版本（如果可用）以与供应商和合作伙伴一致。 </li><li>将利用 api 的所有自定义Graph从 指向 `graph.microsoft.de` `graph.microsoft.com` 。 如果利用，还需要更新终结点已更改的其他 API。 </li><li>更改所有非第一方企业应用程序以重定向到全球终结点。 </li></ul>| 必需操作。 如果不这样做，可能会导致服务或软件客户端失败。 |
 ||||
-
-## <a name="sharepoint-online"></a>SharePoint Online
-**适用于：** 使用 SharePoint 2013 工作流的客户
-
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| 重新发布SharePoint 2013 工作流。 | 在迁移前工作中，我们减少了 2013 SharePoint的数量。 迁移完成后，客户可以重新发布工作流。 | 这是一项必需操作。 如果不这样做，可能会导致用户混淆和技术支持呼叫。 |
-| 通过网站共享Outlook | 租户直接转换SharePoint联机OneDrive for Business Outlook共享项目不再有效。 |<ul><li>在 SharePoint Online 和 OneDrive for Business 中，可以通过 Outlook。 按"Outlook"按钮后，会创建一个可共享的链接，并推送到Outlook Web App。</li><li>租户转换后，这种共享方法将不起作用。 我们意识到这是一个已知问题。 但是，由于此Outlook功能位于弃用路径中，因此在推出弃用之前，不会计划解决此问题。 </li></ul>|
-||||
-
-## <a name="exchange-online"></a>Exchange Online
-**适用于：** 使用混合部署配置Exchange客户
-
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| 重新运行混合配置向导 (HCW) 针对 Office 365 服务。 | 现有 HCW 配置旨在支持德国 Microsoft 云。 完成本地Exchange迁移后，我们将本地配置与德国 Microsoft 云分离。 |<ul><li>必需操作。 如果不这样做，可能会导致服务或软件客户端失败。 在Exchange邮箱迁移开始前 (5 天或 5 天以上) ，通知客户端应停止并删除其邮箱的任何载入或载出移动。  如果没有，他们将在移动请求中看到错误。 </li><li>完成Exchange迁移后，通知客户端他们可以恢复载入和载出移动。 <br> 在将 Exchange 从德国 Microsoft 云迁移到德国期间，运行 **Test-MigrationServerAvailabiilty（PowerShell** cmdlet）Office 365服务可能无法运行。 但是，迁移完成后它将正常工作。 </li><li>如果客户端在迁移邮箱后遇到凭据或授权问题，则用户可以通过运行 或通过使用 Exchange 控制面板 (ECP) 来在迁移终结点中重新输入其本地管理员 `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` 凭据。 </li></ul>|

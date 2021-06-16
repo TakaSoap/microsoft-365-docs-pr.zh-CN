@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933321"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930363"
 ---
 # <a name="resources"></a>资源
 
@@ -31,6 +31,7 @@ ms.locfileid: "51933321"
 
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +70,7 @@ ms.locfileid: "51933321"
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -77,7 +79,8 @@ ms.locfileid: "51933321"
 
 如果在安装过程中发生错误，安装程序将只报告常规故障。
 
-详细日志将保存到 `/var/log/microsoft/mdatp_install.log` 。 如果在安装过程中遇到问题，请将此文件发送给我们，以便我们可以帮助诊断原因。
+详细日志将保存到 `/var/log/microsoft/mdatp/install.log` 。
+如果在安装过程中遇到问题，请将此文件发送给我们，以便我们可以帮助诊断原因。
 
 ## <a name="uninstall"></a>卸载
 
@@ -101,10 +104,10 @@ ms.locfileid: "51933321"
 
 下表列出了一些最常见方案的命令。 从 `mdatp help` 终端运行以查看受支持命令的完整列表。
 
-|Group                 |应用场景                                                |Command                                                                |
+|组                 |应用场景                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |配置         |打开/关闭实时保护                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|配置         |打开/关闭行为监视                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|配置         |打开/关闭行为监视                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |配置         |打开/关闭云保护                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |配置         |打开/关闭产品诊断                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |配置         |打开/关闭自动提交示例                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
@@ -123,11 +126,11 @@ ms.locfileid: "51933321"
 |诊断           |更改日志级别                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
 |诊断           |生成诊断日志                                |`mdatp diagnostic create --path [directory]`                           |
 |健康                |检查产品的运行状况                              |`mdatp health`                                                         |
-|Protection            |扫描路径                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|Protection            |执行快速扫描                                         |`mdatp scan quick`                                                     |
-|Protection            |执行完全扫描                                          |`mdatp scan full`                                                      |
-|Protection            |取消正在进行的按需扫描                        |`mdatp scan cancel`                                                    |
-|Protection            |请求安全智能更新                  |`mdatp definitions update`                                             |
+|保护            |扫描路径                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
+|保护            |执行快速扫描                                         |`mdatp scan quick`                                                     |
+|保护            |执行完全扫描                                          |`mdatp scan full`                                                      |
+|保护            |取消正在进行的按需扫描                        |`mdatp scan cancel`                                                    |
+|保护            |请求安全智能更新                  |`mdatp definitions update`                                             |
 |保护历史记录    |打印完整保护历史记录                       |`mdatp threat list`                                                    |
 |保护历史记录    |获取威胁详细信息                                      |`mdatp threat get --id [threat-id]`                                    |
 |隔离管理 |列出所有隔离的文件                              |`mdatp threat quarantine list`                                         |

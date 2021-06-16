@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：Office 365 GCC高和 DoD 具有其他网络安全要求
 hideEdit: true
-ms.openlocfilehash: 4817edfcea638324e26eb855d1ea33936be1bfb4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687877"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926555"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High和DOD的额外网络安全要求。
 
@@ -42,20 +42,20 @@ GCC计划使用联合身份或混合共存的高和 DOD 客户可能需要 Micro
 若要允许服务与本地终结点通信，你必须向工程团队发送Office 365更改的电子邮件。
 
 > [!WARNING]
-> 由于需要安全 **与** 合规控制和部署管道，所有请求的 SLA 都为三周，无法加快。  这包括初始载入网络请求，以及迁移到服务后的任何更改。  请确保你的网络团队知道此时间线，并包括在你的规划周期中。
+> 由于需要安全 **与** 合规控制和部署管道，所有请求的 SLA 都为三周，无法加快。  这包括初始载入网络请求，以及迁移到服务后的任何更改。  确保你的网络团队知道此时间线，并包括在你的规划周期中。
 
-请发送电子邮件到[Office 365 政府版"网络白名单](mailto:o365gwlt@microsoft.com)"，并包含以下信息：
+使用以下信息[Office 365 政府版 Allow-List](mailto:o365gwlt@microsoft.com)电子邮件发送到请求：
 
-* **To**： [Office 365 政府版 Network Whitelist](mailto:o365gwlt@microsoft.com)
+* **To**： [Office 365 政府版 Allow-List Requests](mailto:o365gwlt@microsoft.com)
 * **From**：租户管理员 - 发送电子邮件 **必须与** 租户中的全局管理员联系人匹配
-* **电子邮件主题**：Office 365 GCC高网络请求 - contoso.onmicrosoft.us (将其替换为租户名称) 
+* **电子邮件主题**：Office 365 GCC高网络请求 - contoso.onmicrosoft.us (替换为租户名称) 
 
 邮件正文应包含以下数据：
 
-* 你的Microsoft Online Services租户 (，例如 contoso.onmicrosoft.com fabrikam.onmicrosoft.us) 
+* 你的Microsoft Online Services租户名称 (例如，contoso.onmicrosoft.com、fabrikam.onmicrosoft.us) 
 * 与 Microsoft 通信的电子邮件通讯组列表，用于与网络更改和/或跟踪无效子网相关的后续通信
 * 指示是否计划Microsoft Teams内部部署实现混合共存
-* 联合身份系统可从外部访问的 URL (例如 CIDR 表示法中的 sts.contoso.com) 和 IP 地址范围 (例如 10.1.1.0/28) 
+* 联合身份系统可从外部访问的 URL (例如，sts.contoso.com) CIDR 表示法中的 (IP 地址范围。 10.1.1.0/28) 
 * CIDR 表示法中的本地 PKI 证书吊销列表 URL 和 IP 地址范围
 * 使用 CIDR 表示法Exchange Server本地部署的可从外部访问的 URL 和 IP 地址范围
 * 使用 CIDR 表示法Skype for Business本地部署的可从外部访问的 URL 和 IP 地址范围
@@ -63,7 +63,7 @@ GCC计划使用联合身份或混合共存的高和 DOD 客户可能需要 Micro
 出于安全性和合规性原因，请牢记对请求的以下限制：
 
 * 每个租户有四个子网限制
-* 子网必须用 CIDR 表示法 (例如 10.1.1.0/28) 
+* 子网必须用 CIDR 表示法 (例如，10.1.1.0/28) 
 * 子网范围不能大于/24
 * 我们 **不允许** 请求允许访问商业云服务 (商业Office 365 Google G-Suite、Amazon Web Services 等) 
 

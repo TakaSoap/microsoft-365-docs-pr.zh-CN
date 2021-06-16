@@ -17,29 +17,27 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593497"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930303"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
-如果你正在考虑从非 Microsoft 终结点保护切换到 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) ，你的位置正确。 使用本文作为指南。
+如果你正在考虑从非 Microsoft 终结点保护解决方案切换到 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) ，你的位置正确。 使用本文作为指南。
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="迁移到 Defender for Endpoint 的概述":::
 
-当你切换到 Defender for Endpoint 时，你首先在活动模式下运行非 Microsoft 解决方案，在被动模式下为终结点配置 Defender，载入到适用于终结点的 Defender，将 Defender for Endpoint 设置为活动模式，然后删除非 Microsoft 解决方案。
-
-> [!TIP]
-> - 如果你当前正在使用 McAfee Endpoint Security (McAfee) ，请参阅从 [McAfee 迁移到 Defender for Endpoint](mcafee-to-microsoft-defender-migration.md)。
-> - 如果你当前正在使用 Symantec Endpoint Protection (Symantec) ，请参阅从[Symantec](symantec-to-microsoft-defender-endpoint-migration.md)迁移到 Defender for Endpoint 。
+当你切换到 Defender for Endpoint 时，你首先在活动模式下运行非 Microsoft 解决方案。 然后，在被动模式下为终结点配置 Defender，然后将设备载入到 Defender for Endpoint。 接下来，将终结点的 Defender 设置为活动模式。 最后，删除非 Microsoft 解决方案。
 
 ## <a name="the-migration-process"></a>迁移过程
 

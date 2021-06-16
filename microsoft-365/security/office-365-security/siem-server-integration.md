@@ -18,12 +18,12 @@ ms.custom:
 description: 大致了解 SIEM 安全信息和事件 (SIEM) 与 Microsoft 365 云服务和应用程序集成
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599943"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929787"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM 安全信息和事件 (SIEM) 与 Microsoft 365 服务和应用程序的服务器集成
 
@@ -69,7 +69,7 @@ SIEM 服务器可以从各种服务和应用程序Microsoft 365数据。 下表�
 
 在配置 SIEM 服务器集成之前，请确保审核日志记录已打开。
 
-- 对于 SharePoint Online、OneDrive for Business 和 Azure Active Directory，审核日志记录在安全与合规&[启用](../../compliance/turn-audit-log-search-on-or-off.md)。
+- For SharePoint Online， OneDrive for Business， and Azure Active Directory， audit [logging is turned in the Microsoft 365 Defender portal](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - 有关Exchange Online，请参阅[管理邮箱审核](../../compliance/enable-mailbox-auditing.md)。
 

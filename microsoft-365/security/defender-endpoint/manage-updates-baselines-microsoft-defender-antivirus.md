@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
-ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
-ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
+ms.date: 06/14/2021
+ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52862143"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929439"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -31,17 +31,13 @@ ms.locfileid: "52862143"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-有两种类型的更新与使Microsoft Defender 防病毒保持最新有关：
+保持Microsoft Defender 防病毒保持最新状态对于确保你的设备具有抵御新的恶意软件和攻击技术所需的最新技术和功能至关重要。 确保更新防病毒保护，即使Microsoft Defender 防病毒处于被动[模式。](microsoft-defender-antivirus-compatibility.md) 有两种类型的更新与使Microsoft Defender 防病毒保持最新有关：
 
 - 安全智能更新
 - 产品更新
 
-> [!IMPORTANT]
-> 保持Microsoft Defender 防病毒保持最新状态对于确保你的设备具有抵御新的恶意软件和攻击技术所需的最新技术和功能至关重要。
-> 
-> 确保更新防病毒保护，即使Microsoft Defender 防病毒处于被动[模式。](./microsoft-defender-antivirus-compatibility.md)
-> 
-> To see the most current engine， platform， and signature date， visit the [Security intelligence updates for Microsoft Defender 防病毒 other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> [!TIP]
+> To see the most current engine， platform， and signature date， visit the [Security intelligence updates for Microsoft Defender 防病毒 other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>安全智能更新
 
@@ -81,7 +77,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 - 性能改进;
 - 可服务性改进;和 
 - 集成改进 (云[，Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。
-<br/>
+<br/><br/>
 <details>
 <summary> 2021 年 5 月 (平台：4.18.2105.4 |引擎：1.1.18200.4) </summary>
 

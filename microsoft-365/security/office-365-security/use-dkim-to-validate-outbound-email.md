@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538263"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929896"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -213,18 +213,16 @@ TTL:                3600
 
 1. 使用工作或学校帐户[登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 根据所使用的门户转到 [protection.office.com](https://protection.office.com) 或 [security.microsoft.com](https://security.microsoft.com)，然后按照以下路径操作。
+2. 转到 [security.microsoft.com](https://security.microsoft.com) 并按照以下路径操作。
 
-|protection.office.com  |security.microsoft.com  |
-|---------|---------|
-| “威胁管理”>“策略”>“其他策略”>“DKIM”     | “电子邮件和协作”>“策略和规则”>“威胁策略”>“其他策略”>“DKIM”        | 
+3. 转到 **“电子邮件和协作”>“策略和规则”>“威胁策略”>“DKIM”**。
 
-3. 选择要对其启用 DKIM 的域，然后对“**对此域的邮件进行 DKIM 签名**”选择“**启用**”。为每个自定义域重复执行这一步。
+4. 选择要对其启用 DKIM 的域，然后对“**对此域的邮件进行 DKIM 签名**”选择“**启用**”。为每个自定义域重复执行这一步。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 为自定义域启用 DKIM 签名
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="“此域未保存 DKIM 密钥。”错误。":::
+>:::image type="content" source="../../media/dkim.png" alt-text="“此域未保存 DKIM 密钥。”错误。":::
 > 如果你首次配置 DKIM，并看到错误“此域未保存 DKIM 密钥。” 请完成下面步骤 2 中的命令（例如，*Set-DkimSigningConfig -Identity contoso.com -Enabled $true*），以查看密钥。
 
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。

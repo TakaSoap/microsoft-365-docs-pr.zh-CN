@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796062"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929547"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -89,7 +89,7 @@ ms.locfileid: "52796062"
   - 高级 NOT 筛选器 (包括不包含、不包含等高级筛选) 
   - 具体时间筛选器 (天、小时、每小时) 
 
-- " **事件"** 小部件现在是"操作 **中心"小部件** 。  (若要查看安全小组件，在安全&合规中心，转到威胁管理审阅 \> .)  (Microsoft Defender for Office 365 计划 2) 
+- " **事件"** 小部件现在是"操作 **中心"小部件** 。  (若要查看安全小组件，在 Microsoft 365 Defender 门户中，转到电子邮件 **& collaboration** \> **Review**.)  (Microsoft Defender for Office 365 Plan 2) 
 
 - [保险箱预览Microsoft 365 (](safe-docs.md)**中的)**
 

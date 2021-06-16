@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878048"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908097"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -37,7 +37,7 @@ ms.locfileid: "52878048"
 
 在此 10,000 个策略限制内，每个工作负载的最大保留策略数也有一些限制:
 
-- Exchange Online （任何配置）：1,800
+- Exchange Online（任何配置）：1800
 - SharePoint 或 OneDrive：（自动包含所有网站）：13
 - SharePoint 或 OneDrive（包含或排除的特定位置）：2,600
 
@@ -49,10 +49,16 @@ ms.locfileid: "52878048"
 
 每个保留策略的最大项目数：
 
-  - 1000个邮箱（用户邮箱或组邮箱）
-  - 1,000 个 Microsoft 365 组
-  - 1000 个用户的 Teams 私人聊天
-  - 100 个网站（OneDrive 或 SharePoint）
+- Exchange 邮箱：1000
+- Microsoft 365 组：1000
+- Teams 频道消息：1000
+- Teams 聊天：1000
+- Yammer 社区消息：1000
+- Yammer 用户消息：1000
+- SharePoint 网站：100
+- OneDrive 帐户：100
+
+Skype for Business 仅限于特定用户，且每个策略支持的数量上限是 1000。
 
 因为这些限制针对每个策略，因此如果你需要使用会导致超过这些数字的特定包含或排除，则可以创建具有相同保留设置的额外策略。 请参阅下一节，了解为此理由使用多重保留策略的一些 [场景示例和解决方案](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers)。
 
@@ -91,4 +97,4 @@ SharePoint 示例：
 
 - 处置证明在项被处置后至多七年内可用，此期间每个保留标签最多 1000000 个项。 
     
-    如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../business-video/get-help-support.md)。
+如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../business-video/get-help-support.md)。

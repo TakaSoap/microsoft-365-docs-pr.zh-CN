@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809175"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929727"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -40,17 +40,17 @@ ms.locfileid: "52809175"
 
 在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
 
-安全与合规中心中的租户&/阻止列表提供了一种手动覆盖Microsoft 365裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 可以指定以下类型的替代：
+通过 Defender 门户中的租户Microsoft 365阻止列表，你可以手动替代Microsoft 365筛选裁定。 租户允许/阻止列表在邮件流期间和用户单击时使用。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
 - 允许或阻止欺骗发件人。 如果替代欺骗智能见解中的允许或阻止裁定[](learn-about-spoof-intelligence.md)，欺骗发件人将成为仅出现在租户允许/阻止列表中的"欺骗"选项卡上的手动允许或阻止条目。 在欺骗智能检测到欺骗性发件人之前，还可以在此处手动创建允许或阻止欺骗发件人的允许或阻止条目。
 
-本文介绍如何在安全& 合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，这些组织的邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到租户 **允许/阻止列表** 页面，请使用 <https://protection.office.com/tenantAllowBlockList> 。
+- 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到租户 **允许/阻止列表页面** ，请使用 <https://security.microsoft.com/tenantAllowBlockList> 。
 
 - 使用文件的 SHA256 哈希值指定文件。 若要在命令提示符中查找文件的 SHA256 哈希Windows，在命令提示符中运行以下命令：
 
@@ -90,9 +90,9 @@ ms.locfileid: "52809175"
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-## <a name="use-the-security--compliance-center-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>使用安全&中心在租户允许/阻止列表中创建阻止 URL 条目
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户在租户允许/阻止列表中创建阻止 URL 条目
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
+1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&"策略**""威胁策略 \>  \> **""租户允许/阻止列表"。**
 
 2. 在" **租户允许/阻止列表** "页上，验证 **"URL"** 选项卡是否被选中，然后单击"阻止 **"**
 
@@ -112,9 +112,9 @@ ms.locfileid: "52809175"
 
 4. 完成后，单击“**添加**”。
 
-## <a name="use-the-security--compliance-center-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>使用安全&中心在租户允许/阻止列表中创建阻止文件条目
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户在租户允许/阻止列表中创建阻止文件条目
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
 
 2. 在"**租户允许/阻止列表"** 页上，选择"**文件"** 选项卡，然后单击"阻止 **"。**
 
@@ -134,7 +134,7 @@ ms.locfileid: "52809175"
 
 4. 完成后，单击“**添加**”。
 
-## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>使用安全&中心在租户允许/阻止列表中创建允许或阻止欺骗发件人条目
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户在租户允许/阻止列表中创建允许或阻止欺骗发件人条目
 
 **注意**：
 
@@ -142,7 +142,7 @@ ms.locfileid: "52809175"
 - 为域对配置允许或阻止条目时，来自该域对的邮件将不再显示在欺骗智能见解中。
 - 欺骗性发件人的条目永不过期。
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
 
 2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"** 选项卡，然后单击"添加 **"。**
 
@@ -158,9 +158,9 @@ ms.locfileid: "52809175"
 
 4. 完成后，单击“**添加**”。
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>使用安全&中心查看租户允许/阻止列表中的条目
+## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户查看租户允许/阻止列表中的条目
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
 
 2. 选择您想要的选项卡。 可用的列取决于所选的选项卡：
 
@@ -220,9 +220,9 @@ ms.locfileid: "52809175"
 
    完成后，单击"应用 **"。** 若要清除现有筛选器，请单击 **"筛选器"，** 在出现的"筛选器"飞出中，单击"清除 **筛选器"。**
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>使用安全&中心修改租户允许/阻止列表中的条目
+## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户修改租户允许/阻止列表中的条目
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要修改的条目类型的选项卡：
    - **URL**
@@ -248,9 +248,9 @@ ms.locfileid: "52809175"
 
 4. 完成时，请单击“保存”。
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全&中心从租户允许/阻止列表中删除条目
+## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户从租户允许/阻止列表中删除条目
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
+1. 在 Microsoft 365 Defender 门户中，转到"**威胁** 管理""策略 \>  \> **租户允许/阻止列表"。**
 
 2. 选择包含要删除的条目类型的选项卡：
    - **URL**

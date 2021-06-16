@@ -18,12 +18,12 @@ description: 管理员和最终用户可以了解如何发送电子邮件， (�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624021"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929763"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交到 Microsoft 进行分析
 
@@ -35,7 +35,7 @@ ms.locfileid: "52624021"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用安全与合规中心&提交门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用 Microsoft 365 Defender 门户中的提交门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 如果组织的用户在收件箱中收到垃圾邮件 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，可能很令人沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 

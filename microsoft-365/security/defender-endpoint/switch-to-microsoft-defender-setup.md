@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 82c734d8a394be048f9be862be114fae7f90e6b3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594045"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930471"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切换到 Microsoft Defender for Endpoint - 阶段 2：设置
 
@@ -93,14 +95,15 @@ ms.locfileid: "52594045"
 1. 作为终结点或设备的本地管理员，打开Windows PowerShell。
 
 2. 运行以下 PowerShell cmdlet： <br/>   
+
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-   > [!NOTE]
-   > 在运行 PS 的任务序列内使用 DISM 命令时，需要以下cmd.exe路径。
-   > 示例：<br/>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   在运行 PS 的任务序列内使用 DISM 命令时，需要以下cmd.exe路径。
+   示例：<br/>
+   
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. 若要验证Microsoft Defender 防病毒运行，请使用以下 PowerShell cmdlet： <br/>
    `Get-Service -Name windefend`
@@ -113,6 +116,7 @@ ms.locfileid: "52594045"
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. 编辑 (或创建) **ForcePassiveMode** 的 DWORD 条目，并指定以下设置：
+
    - 将 DWORD 的值设置为 **1。**
    - 在 **"基本**"下，**选择"十六进制"。**
 

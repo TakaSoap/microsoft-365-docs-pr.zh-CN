@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: bf01f6ae93b424543a6a509f89961a1b7a0c9ad7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841662"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930255"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
@@ -116,7 +116,10 @@ ms.locfileid: "52841662"
 7. 确定需要马上查看网站的用户，并输入其信息到"免受波形影响的用户 **"** 字段中。 这些用户被从波形中排除，并且不会在启动之前、期间或之后重定向。
 
     > [!NOTE]
-    > 最多可以添加 50 个不同的用户或安全组。 当需要超过 50 个人才能在波形开始启动之前访问门户时，请使用安全组。
+    > 最多 50 个不同的用户或安全组可用于整个启动。 每次启动相互独立，因此如果你计划在另一个门户上启动，则你最多可以使用 50 个用户/安全组进行该启动。 此外，您每波可以使用最多 20 个不同的用户或安全组。 
+
+>门户启动计划程序支持安全组和启用邮件的安全组。 
+
 
 8. 确认门户启动详细信息，然后选择 **计划**。 计划启动后，对 SharePoint 门户主页的任何更改都需要在门户启动恢复之前收到正常的诊断结果。
 

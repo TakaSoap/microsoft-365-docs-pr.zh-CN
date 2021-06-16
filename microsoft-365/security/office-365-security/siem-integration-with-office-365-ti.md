@@ -19,12 +19,12 @@ description: 将组织的 SIEM 服务器与 Microsoft Defender 集成，Office 3
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca8f86c831df16568ae569e7b21c7e0a33475948
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203207"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929775"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM 与 Microsoft Defender for Office 365
 
@@ -67,7 +67,7 @@ SIEM 服务器或其他类似的系统轮询 **audit.general** 工作负载以�
 |
 
 > [!IMPORTANT]
-> 你必须是全局管理员或分配有安全与合规中心的安全&角色，才能设置 SIEM 与 Microsoft Defender Office 365。
+> 你必须是全局管理员或分配有安全管理员角色的 Microsoft 365 Defender 门户，才能设置 SIEM 与 Microsoft Defender Office 365。
 >
 > 必须为审核环境启用Microsoft 365日志记录。 若要获取有关此内容的帮助，请参阅打开 [审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 

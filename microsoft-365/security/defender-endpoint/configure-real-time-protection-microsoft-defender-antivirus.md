@@ -4,28 +4,25 @@ description: 启用和Microsoft Defender 防病毒实时保护功能，如行为
 keywords: 防病毒， 实时保护， rtp， 机器学习， 行为监视， 启发
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.date: 12/16/2019
-ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1e39e42b79a2a767473c4473434da249a0d07228
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 313646c69417082583b27bcfbab540131043ce76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275128"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926663"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **适用于：**
@@ -42,7 +39,7 @@ ms.locfileid: "52275128"
 
 启用和配置始终启用保护：
 
-1. 打开 **"本地组策略编辑器"。** 为此，请执行以下操作：  
+1. 打开 **"本地组策略编辑器"。** 为此，请执行以下操作:  
 
     1. 在任务栏Windows 10框中，键入 **gpedit**。
     
@@ -52,20 +49,20 @@ ms.locfileid: "52275128"
 
 2. 在本地组策略 **编辑器** 的左窗格中，将树展开到计算机配置管理  >    >  **模板 Windows 组件**  >  **Microsoft Defender 防病毒**。 
 
-3. 配置Microsoft Defender 防病毒反恶意软件服务策略设置。 为此，请执行以下操作：  
+3. 配置Microsoft Defender 防病毒反恶意软件服务策略设置。 为此，请执行以下操作:  
 
     1. 在Microsoft Defender 防病毒 **详细信息**"窗格中，双击下表中指定的策略设置：
 
        | 设置 | 说明 | 默认设置 |
        |-----------------------------|------------------------|-------------------------------|
        | 允许反恶意软件服务以普通优先级启动 | 你可以降低 Microsoft Defender 防病毒 引擎的优先级，在希望尽可能精简启动过程的轻型部署中，这可能很有用。 这可能会影响对终结点的保护。 | 已启用
-       | 允许反恶意软件服务始终运行 | 如果已禁用保护更新，你可以将Microsoft Defender 防病毒仍运行。 这将降低终结点上的保护。 | 已禁用 |
+       | 允许反恶意软件服务始终运行 | 如果已禁用保护更新，你可以将Microsoft Defender 防病毒仍运行。 这将降低终结点上的保护。 | 禁用 |
     
     1. 配置相应设置，然后单击"确定 **"。**
     
     1. 对表中的每个设置重复上述步骤。
 
-4. 配置Microsoft Defender 防病毒实时保护策略设置。 为此，请执行以下操作：
+4. 配置Microsoft Defender 防病毒实时保护策略设置。 为此，请执行以下操作:
 
     1. 在 **"Microsoft Defender 防病毒** 详细信息"窗格中，双击"**实时保护"。** 或者，**在左Microsoft Defender 防病毒** 树中，单击"**实时保护"。**
     
@@ -90,7 +87,7 @@ ms.locfileid: "52275128"
     
     1. 对表中的每个设置重复上述步骤。
 
-5. 配置Microsoft Defender 防病毒扫描策略设置。 为此，请执行以下操作：  
+5. 配置Microsoft Defender 防病毒扫描策略设置。 为此，请执行以下操作:  
 
     1. 从左 **Microsoft Defender 防病毒** 树中，单击"扫描 **"。**
     

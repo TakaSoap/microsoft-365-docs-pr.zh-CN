@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ccb0d4cf168bbb4d3c1575c1e6611829909d0817
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275404"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926519"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender 防病毒应用中Windows 安全中心
 
@@ -109,10 +109,10 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 |排除类型  |定义者  |发生的情况  |
 |---------|---------|---------|
-|**文件** |位置 <br/>示例：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
-|**Folder**    |位置 <br/>示例：`c:\test\sample`       |指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。         |
-|**文件类型**   |文件扩展名 <br/>示例：`.test` |设备上任意位置 `.test` 具有扩展名的所有文件都将被用户跳过Microsoft Defender 防病毒。         |
-|**进程**     |可执行文件路径 <br>示例：`c:\test\process.exe`         |特定进程以及该流程打开的任何文件都将被用户跳过Microsoft Defender 防病毒。         |
+|**文件** |位置 <br/>例如：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
+|**Folder**    |位置 <br/>例如：`c:\test\sample`       |指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。         |
+|**文件类型**   |文件扩展名 <br/>例如：`.test` |设备上任意位置 `.test` 具有扩展名的所有文件都将被用户跳过Microsoft Defender 防病毒。         |
+|**进程**     |可执行文件路径 <br>例如：`c:\test\process.exe`         |特定进程以及该流程打开的任何文件都将被用户跳过Microsoft Defender 防病毒。         |
 
 若要了解详细信息，请参阅以下资源：
 - [根据文件扩展名和文件夹位置配置和验证排除项](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 

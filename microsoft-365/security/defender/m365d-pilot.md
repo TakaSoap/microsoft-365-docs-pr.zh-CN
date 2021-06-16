@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3219b329c53c32e02cd29acdd41a48cd93b2e8bb
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934425"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930507"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>运行你的试点 Microsoft 365 Defender 项目 
 
@@ -42,7 +42,7 @@ ms.locfileid: "51934425"
 ![运行 Defender Microsoft 365的阶段](../../media/pilotphases.png)
 
 
-运行试点有助于有效地确定采用 Defender Microsoft 365的好处。 在生产Microsoft 365启用 defender 并启动用例之前，最好先计划确定要为试点项目完成的任务并设置成功条件。 
+运行试点有助于有效地确定采用 defender Microsoft 365的好处。 在生产Microsoft 365启用 defender 并启动用例之前，最好先计划确定要为试点项目完成的任务并设置成功条件。 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用此试点手册
