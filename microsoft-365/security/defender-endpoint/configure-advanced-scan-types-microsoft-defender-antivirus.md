@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683807"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964893"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>配置 Microsoft Defender 防病毒软件扫描选项
 
@@ -31,14 +31,11 @@ ms.locfileid: "52683807"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>使用Microsoft Intune配置扫描选项
 
-参阅以下资源： 
-
-- [配置设备限制Microsoft Intune](/intune/device-restrictions-configure) 
-- [Microsoft Defender 防病毒 Intune 中Windows 10设备限制设置](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+有关详细信息，[请参阅在](/intune/device-restrictions-configure)Intune 中Microsoft Intune配置Microsoft Defender 防病毒[设备限制Windows 10设置](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)。 
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>使用Microsoft Endpoint Manager配置扫描选项
 
-请参阅 [如何创建和部署反恶意软件策略：扫描设置](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。
+有关配置当前分支Microsoft Endpoint Manager (的详细信息，) 如何创建[和部署反恶意软件策略：扫描设置](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>使用组策略配置扫描选项
 
@@ -50,6 +47,7 @@ ms.locfileid: "52683807"
 
 4. 展开树以 **Windows** 组件Microsoft Defender 防病毒，然后选择一个位置 (请参阅本文中的设置  >  和) 。 [](#settings-and-locations)
 
+
 5. 编辑策略对象。 
 
 6. 单击 **"确定**"，然后对任何其他设置重复上述操作。
@@ -58,24 +56,26 @@ ms.locfileid: "52683807"
 
 | 策略项和位置 | 如果未 (默认设置)  | 类的 PowerShell `Set-MpPreference` 参数或 WMI `MSFT_MpPreference` 属性 |
 |---|---|---|
-| 电子邮件扫描 <p> **扫描**  > **打开电子邮件扫描**<p>请参阅 [本文中的电子邮件](#email-scanning-limitations) (限制)  | 已禁用 | `-DisableEmailScanning` |
-|扫描 [重新分析点](/windows/win32/fileio/reparse-points) <p> **扫描**  > **打开重新分析点扫描** | 已禁用 | 不可用 <p>请参阅 [重新分析点](/windows/win32/fileio/reparse-points)  |
-| 扫描映射的网络驱动器 <p> **扫描**  > **在映射的网络驱动器上运行完全扫描** | 已禁用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| 电子邮件扫描 <p> **扫描**  > **打开电子邮件扫描**<p>请参阅 [本文中的电子邮件](#email-scanning-limitations) (限制)  | 禁用 | `-DisableEmailScanning` |
+|扫描 [重新分析点](/windows/win32/fileio/reparse-points) <p> **扫描**  > **打开重新分析点扫描** | 禁用 | 不可用 <p>请参阅 [重新分析点](/windows/win32/fileio/reparse-points)  |
+| 扫描映射的网络驱动器 <p> **扫描**  > **在映射的网络驱动器上运行完全扫描** | 禁用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
 | 扫描存档 (，如.zip或.rar文件) 。  <p> **扫描**  > **扫描存档文件** | 已启用 | `-DisableArchiveScanning` <p>扩展 [名排除列表](configure-extension-file-exclusions-microsoft-defender-antivirus.md) 将优先于此设置。|
-| 扫描网络文件 <p> **扫描**  > **扫描网络文件** | 已禁用 | `-DisableScanningNetworkFiles` |
+| 扫描网络文件 <p> **扫描**  > **扫描网络文件** | 禁用 | `-DisableScanningNetworkFiles` |
 | 扫描打包的可执行文件 <p> **扫描**  > **扫描打包的可执行文件** | 已启用 | 不可用 |
-| 仅在完全扫描期间扫描可移动驱动器 <p> **扫描**  > **扫描可移动驱动器** | 已禁用 | `-DisableRemovableDriveScanning` |
+| 仅在完全扫描期间扫描可移动驱动器 <p> **扫描**  > **扫描可移动驱动器** | 禁用 | `-DisableRemovableDriveScanning` |
 | 指定要扫描的存档文件夹中的子文件夹级别 <p>**扫描**  > **指定扫描存档文件的最大深度** | 0 | 不可用 |
 | 指定最大 CPU 负载 (以扫描) 的百分比表示。 <p> **扫描**  > **指定扫描期间 CPU 使用率的最大百分比** | 50 |  `-ScanAvgCPULoadFactor` <p>**注意**：最大 CPU 负载不是硬性限制，但指导扫描引擎平均不超过最大值。 手动运行扫描将忽略此设置，并且运行时没有任何 CPU 限制。 |
 | 指定应 (存档) 的最大大小（以 KB 为单位）。 <p> **扫描**  > **指定要扫描的存档文件的最大大小** | 无限制 | 不可用 <p>默认值 0 没有限制 |
-| 为计划扫描配置低 CPU 优先级 <p> **扫描**  > **为计划扫描配置低 CPU 优先级** | 已禁用 | 不可用 |
+| 为计划扫描配置低 CPU 优先级 <p> **扫描**  > **为计划扫描配置低 CPU 优先级** | 禁用 | 不可用 |
+
  
 > [!NOTE]
 > 如果启用实时保护，则先扫描文件，然后再访问和执行文件。 扫描范围包括所有文件，包括装载的可移动媒体（如 USB 驱动器）上的文件。 如果执行扫描的设备已打开实时保护或访问保护，则扫描还将包括网络共享。
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>使用 PowerShell 配置扫描选项
 
-参阅以下资源：
+
+若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一起使用，请参阅
 
 - [使用 PowerShell cmdlet Microsoft Defender 防病毒管理配置](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender cmdlet](/powershell/module/defender/)
@@ -99,7 +99,13 @@ Outlook 2003 或 (其中存档类型设置为非 unicode) 的 PST 文件也会�
 - 电子邮件主题
 - 附件名称
 
+
+## <a name="scanning-mapped-network-drives"></a>扫描映射的网络驱动器
+
+在任何操作系统上，仅扫描在系统级别映射的网络驱动器。 不扫描用户级别映射的网络驱动器。 用户级别的映射网络驱动器是用户手动使用自己的凭据在会话中映射的驱动器。
+
 ## <a name="see-also"></a>另请参阅
+
 
 - [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [配置并运行按需 Microsoft Defender 防病毒软件扫描](run-scan-microsoft-defender-antivirus.md)

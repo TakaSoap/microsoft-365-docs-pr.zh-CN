@@ -16,19 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
-description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版。
+search.appverid: GEA150
+description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业版应用。
 ms.date: 08/07/2020
-ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583444"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950043"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 
-Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
+Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版Microsoft 365 商业高级版或Microsoft 365 商业版应用试用 30 天。
 
 > [!NOTE]
 > 注册免费试用版时，必须使用信用卡。 在免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
@@ -43,13 +43,13 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
-你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业应用版。
+你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业版应用。
 
 1. 转到<a href="https://www.aka.ms/office365signup" target="_blank">"Microsoft 365产品"网站</a>。
 2. 选择要注册的计划，例如"Microsoft 365 商业标准版"，**向下滚动** 页面，然后选择"免费试用 **1 个月"。**
@@ -62,7 +62,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 如果你想要在试用结束之前购买订阅，请使用以下步骤：
 
-1. 在"Microsoft 365管理中心"中，转到 **"帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">""你的产品"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. 在 **"你的产品"** 页面上，找到要购买的订阅。
 3. 在"**许可证"** 部分，选择"**购买订阅"。**
 4. 选择订阅的每月承诺或年度承诺，然后选择"签出 **"。**
@@ -83,13 +83,13 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ## <a name="cancel-your-free-trial-subscription"></a>取消免费试用版订阅
 
-如果你决定在免费试用期结束之前取消试用订阅，请转到Microsoft 365中心并关闭[定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的月结束时自动过期，并且你的信用卡 \' 不会收费。
+如果你决定在免费试用期结束之前取消试用订阅，请转到Microsoft 365 管理中心并关闭[定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的月结束时自动过期，并且你的信用卡 \' 不会收费。
 
 ## <a name="try-a-different-subscription"></a>尝试其他订阅
 
-如果你已拥有适用于Microsoft 365订阅，可以使用 Microsoft 365管理中心试用其他订阅。
+如果你已有适用于Microsoft 365订阅，可以使用 Microsoft 365 管理中心尝试其他订阅。
 
-通过管理中心添加订阅Microsoft 365，新订阅将关联到与现有 (命名空间) 同一组织。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
+当你通过 Microsoft 365 管理中心 添加订阅时，新订阅与与现有 (命名空间) 同一组织。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. 在 **"购买服务** "页上，可以看到可供组织使用的计划。 选择Microsoft 365尝试的计划。
@@ -101,7 +101,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ## <a name="buy-a-different-subscription"></a>购买其他订阅
 
-如果你已有适用于Microsoft 365订阅，可以通过管理中心Microsoft 365为组织购买其他订阅。
+如果你已有适用于Microsoft 365订阅，可以浏览Microsoft 365 管理中心为组织购买其他订阅。
 
 通过管理中心购买另一个订阅时，新订阅将 (现有订阅) 域名空间。 这使在订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
 

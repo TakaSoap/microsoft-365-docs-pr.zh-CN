@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925643"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964592"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender 终结点部署
 
@@ -95,7 +95,7 @@ Microsoft 建议使用最小特权的概念。 Defender for Endpoint 利用内�
 | 基础结构管理员 |       |                             |           |
 | 业务所有者/利益干系人   |       |                             |           |
 
-Microsoft[建议使用Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)管理角色，为具有目录权限的用户提供额外的审核、控制和访问评审。
+Microsoft[建议使用特权标识管理](/azure/active-directory/active-directory-privileged-identity-management-configure)管理角色，为具有目录权限的用户提供额外的审核、控制和访问评审。
 
 Defender for Endpoint 支持两种权限管理方法：
 
@@ -126,8 +126,8 @@ Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访�
 
 | 组件                               | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 采用顺序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| 终结点检测&响应 (EDR)      | Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|TVM &威胁 (漏洞管理) |威胁&漏洞管理是 Microsoft Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括： <br> - 实时终结点检测和响应 (EDR) 与终结点漏洞相关的见解 <br> - 事件调查期间有价值的设备漏洞上下文 <br> - 通过 Microsoft Microsoft Intune 的内置修正System Center Configuration Manager <br> [了解详细信息](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845)。| 2 |
+| 终结点检测&响应 (EDR)      | Defender for Endpoint 终结点检测和响应 功能提供接近实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
+|TVM &威胁 (漏洞管理) |威胁&漏洞管理是 Microsoft Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括： <br> - 与终结点终结点检测和响应 (EDR) 相关的实时见解 <br> - 事件调查期间有价值的设备漏洞上下文 <br> - 通过 Microsoft Microsoft Intune 的内置修正System Center Configuration Manager <br> [了解详细信息](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845)。| 2 |
 | NGP (下一代)         | Microsoft Defender 防病毒是内置反恶意软件解决方案，可为台式机、便携计算机和服务器提供下一代保护。 Microsoft Defender 防病毒包括以下功能： <br> -云提供的保护，用于即时检测和阻止新出现的威胁。 在机器学习和 Intelligent Security Graph 功能的基础上，Microsoft Defender 防病毒的下一代技术包括云提供的保护功能。   <br> - 始终使用高级文件和进程行为监视以及其他启发式扫描 (也称为"实时保护") 。 <br> - 基于机器学习、人工和自动大数据分析以及深度威胁防御研究进行专用保护更新。 <br> [了解详细信息](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 | 攻击面减少 (ASR)           | Microsoft Defender for Endpoint 中的攻击面减少功能可帮助保护组织的设备和应用程序免受新的和新出现的威胁。 <br> [了解更多信息。](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                    |
 | AIR &自动 (修正)   | Microsoft Defender for Endpoint 使用自动调查显著减少需要单独调查的警报数量。 自动调查功能利用各种检查算法和分析人员 (例如) 手册）来检查警报并立即采取修正措施来解决违规问题。 这将极大地减少警报量，使安全操作专家能够专注于更复杂的威胁和其他高价值计划。 <br>[了解更多信息。](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | 不适用      |
@@ -135,6 +135,7 @@ Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访�
 
 ## <a name="next-step"></a>后续步骤
 
-|||
-|:-------|:-----|
-|![阶段 2：设置](images/setup.png) <br>[阶段 2：设置](production-deployment.md) | 设置 Microsoft Defender for Endpoint 部署 |
+
+![阶段 2：设置](images/setup.png) <br>[阶段 2：设置](production-deployment.md) 
+ 
+设置 Microsoft Defender for Endpoint 部署 

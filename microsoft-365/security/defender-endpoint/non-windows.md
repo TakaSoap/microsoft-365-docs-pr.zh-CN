@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957499"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964784"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>适用于非 Windows 平台的 Microsoft Defender for Endpoint
 
@@ -43,15 +43,30 @@ Microsoft 一直在向 macOS、Linux、Android 和很快的 iOS 扩展 Windows �
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 
 
-macOS 上的 Microsoft Defender for Endpoint 为三个最新发布的 macOS (EDR) 防病毒和终结点检测和响应功能。 客户可以通过 Microsoft Endpoint Manager 和 Jamf 部署和管理解决方案。 与 macOS Microsoft Office一样，Microsoft 自动更新用于管理 Mac 上的 Microsoft Defender for Endpoint 更新。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+macOS 上的 Microsoft Defender for Endpoint 为三终结点检测和响应 (EDR) 最新版本的 macOS 提供防病毒和防病毒功能。 客户可以通过 Microsoft Endpoint Manager 和 Jamf 部署和管理解决方案。 与 macOS Microsoft Office一样，Microsoft 自动更新用于管理 Mac 上的 Microsoft Defender for Endpoint 更新。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 若要详细了解如何开始使用，请访问 macOS 上的 Defender for Endpoint [文档](microsoft-defender-endpoint-mac.md)。
 
-## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux
+>[!NOTE]
+>macOS 终结点当前不支持以下功能：
+>- 数据丢失防护
+>- 实时响应
+>- SIEM
+
+
+## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
 Linux 上的 Microsoft Defender for Endpoint 为 Linux (提供) AV 功能。 这包括配置和管理代理、启动扫描和管理威胁的完整命令行体验。 我们支持六个最常见的 Linux Server 分发的最新版本：RHEL 7.2+、CentOS Linux 7.2+、Ubuntu 16 LTS 或更高版本 LTS、SLES 12+、Debian 9+和 Oracle Linux 7.2。 可以使用部署和配置 Linux 上的 Microsoft Defender for Endpoint、Ansible 或现有的 Linux 配置管理工具进行部署和配置。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
 
 若要详细了解如何开始使用，请访问 Linux 上的 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-linux.md)。
+
+>[!NOTE]
+>Linux 终结点当前不支持以下功能：
+>- 数据丢失防护
+>- 实时响应
+>- SIEM
+
+
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
@@ -69,7 +84,7 @@ iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高
 
 符合条件的许可用户可以在最多五台并发设备上使用 Microsoft Defender for Endpoint。 Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (购买) 。
 
-客户可以通过独立 Microsoft Defender for Endpoint 许可证（作为 Microsoft 365 A5/E5 或 Microsoft 365 安全中心）在 macOS 上获取 Microsoft Defender for Endpoint。
+客户可以通过独立 Microsoft Defender for Endpoint 许可证（作为 Microsoft 365 A5/E5 的一部分）或 Microsoft 365 MacOS 上的 Microsoft Defender for Endpoint。
 
 上述产品/服务中包含了 Android 和 iOS 上最近宣布的适用于终结点的 Microsoft Defender 功能，这些功能是适用于合格许可用户的五个合格设备的一部分。
 

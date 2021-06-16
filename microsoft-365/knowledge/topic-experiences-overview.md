@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908314"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950019"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
-Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，将知识带到他们日常使用的 Microsoft 365 应用中，从 SharePoint 新式页面、Microsoft 搜索和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始。
+Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，将知识带到他们日常使用的 Microsoft 365 应用中，从 SharePoint 新式页面、Microsoft 搜索 和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始。
 
 <br/>
 
@@ -103,7 +103,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 - 知识经理：在主题生命周期中指导主题的用户。 知识管理员使用主题中心中的"管理主题"页确认 AI 建议的主题、删除不再相关的主题，以及编辑现有主题或创建新主题，并且这些主题是唯一有权访问它的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva Topics 管理设置为用户分配知识经理权限。 
 
-- 知识管理员：管理员设置 Viva 主题，并通过管理中心中的管理员Microsoft 365管理主题。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
+- 知识管理员：管理员设置 Viva 主题，并通过管理中心中的管理员Microsoft 365 管理中心。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
 
 有关详细信息，请参阅 [Viva 主题角色](topic-experiences-roles.md)。
 
@@ -123,7 +123,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 ## <a name="admin-controls"></a>管理员控件
 
-管理中心中的Microsoft 365控件允许你管理 Viva 主题。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
+管理中心中的Microsoft 365 管理中心允许你管理 Viva 主题。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
 
 - 控制允许你组织中的哪些用户查看 SharePoint 新式页面或 SharePoint 搜索结果中的主题。
 - 控制将爬网哪些 SharePoint 网站以识别主题。
@@ -142,10 +142,8 @@ AI 将持续工作，以便随环境变化提供建议，以改进主题。
 
 系统可能会询问你允许其查看日常工作主题的用户该主题是否有用。 系统会查看这些回复，使用回复来改进主题要点，并可帮助确定主题摘要和主题详细信息中显示的内容。
 
-此外，具有适当权限的用户可以标记与主题相关的项目（例如 Yammer 对话）并将其添加到特定主题。 
-
 有关详细信息，请参阅 [主题发现和库化](./topic-experiences-discovery-curation.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Microsoft 搜索查找 Viva 主题中的主题](./search.md)
+[使用Microsoft 搜索在 Viva 主题中查找主题](./search.md)

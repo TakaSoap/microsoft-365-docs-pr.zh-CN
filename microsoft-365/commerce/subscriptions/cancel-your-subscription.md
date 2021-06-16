@@ -19,17 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929451"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950079"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
 > [!IMPORTANT]
-> 本文仅适用于 Microsoft 365 商业版订阅。 如果你有 Microsoft 365 家庭版或个人版，请参阅 [取消 Microsoft 365 订阅](https://support.microsoft.com/zh-CN/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b)。
+> 本文仅适用于 Microsoft 365 商业版订阅。 如果你有 Microsoft 365 家庭版或个人版，请参阅 [取消 Microsoft 365 订阅](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)。
 
 *资格：* 如果分配给用户的许可证少于 25 个，则你可以随时在 Microsoft 365 管理中心在线取消 Microsoft 365 商业版试用或付费订阅。 如果向用户分配的许可证超过 25 个，请将其缩小到 25 个以下，或 [致电支持人员取消订阅](../../business-video/get-help-support.md)。
 

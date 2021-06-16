@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788411"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964881"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -143,7 +143,7 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
   - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
   - 对于 via 标记，请确认 DKIM 签名中的域或 **MAIL FROM** 地址 (或是") "地址中域的子域。
 
-有关详细信息，请参阅在[Outlook.com Outlook识别可疑邮件](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+有关详细信息，请参阅在[Outlook.com](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)和 Outlook 网页版
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的独占Office 365
 
@@ -209,10 +209,14 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
   - 显示异常字符的提示：发件人地址包含异常字符集 (例如，数学符号和文本，或者大写和小写字母) 在受保护的发件人或域中。
 
   > [!IMPORTANT]
+  > 即使模拟安全提示已关闭，也建议您使用邮件流规则 (也称为传输规则) 将以下邮件头添加到邮件：
   >
-  > 即使关闭模拟安全提示，也建议您使用邮件流规则 (也称为传输规则) 来添加名为 **X-MS-Exchange-EnableFirstContactSafetyTip** 的邮件头，并启用值。  如果安全提示收到发件人发送的邮件，或者他们经常不接收发件人发送的邮件，则邮件收件人会通知收件人。 此功能添加了一层额外的安全保护，防止潜在的模拟攻击。
+  > - 标头名称 **：X-MS-Exchange-EnableFirstContactSafetyTip**
+  > - 标头值： **启用**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="用于对多个安全提示进行模拟保护的文本。":::
+  > 如果安全提示收到发件人发送的邮件，或者他们经常不接收发件人发送的邮件，则邮件收件人会通知收件人。 此功能添加了一层额外的安全保护，防止潜在的模拟攻击。
+  >
+  > ![用于对多个安全提示进行模拟保护的文本。](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - **邮箱智能**：启用或禁用 ai (AI) ，该智能智能功能可确定具有常用联系人的用户电子邮件模式。 此设置可帮助 AI 区分来自合法发件人和模拟发件人的邮件。
 

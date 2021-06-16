@@ -15,21 +15,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
-ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/15/2021
+ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538059"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950127"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定义排除时要避免的常见错误
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-你可以为不希望扫描的项目定义Microsoft Defender 防病毒列表。 此类排除项目可能包含使设备易受攻击的威胁。 
-
-本文介绍定义排除项时应避免的一些常见错误。 
+你可以为不希望扫描的项目定义Microsoft Defender 防病毒列表。 此类排除项目可能包含使设备易受攻击的威胁。 本文介绍定义排除项时应避免的一些常见错误。 
 
 定义排除列表之前，请参阅推荐[排除项。](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
@@ -231,7 +227,9 @@ ms.locfileid: "52538059"
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -272,9 +270,3 @@ Microsoft Defender 防病毒服务使用 LocalSystem 帐户在系统上下文中
 
 请参阅 [在文件名和文件夹路径](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 或扩展名排除列表中使用通配符，了解如何在排除列表中使用通配符。
 
-## <a name="related-articles"></a>相关文章
-
-- [配置并验证扫描中的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)
-- [根据文件扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [在 Microsoft Defender 防病毒 服务器上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)

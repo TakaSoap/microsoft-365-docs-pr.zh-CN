@@ -21,35 +21,35 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用设置指南加速Microsoft 365或Office 365或配置。
-ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d2e4f29a3f6d484c8586194258c3157bc73fb9e1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454143"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964616"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服务的设置指南
 
-Microsoft 365和Office 365设置指南会提供针对规划和部署租户、应用和服务而定制的指南和资源。 这些指南的创建方式与[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) Microsoft 365专家在个人交互中共享的最佳方案相同，可供 Microsoft 365 中心内的所有管理员使用。 它们提供有关产品设置、启用安全功能、部署协作工具以及提供脚本以加快高级部署的信息。
+Microsoft 365和Office 365设置指南会提供针对规划和部署租户、应用和服务而定制的指南和资源。 这些指南的创建方式与载入专家Microsoft 365 FastTrack在个人[](https://www.microsoft.com/fasttrack/microsoft-365)交互中共享的最佳方案相同，并且可供 Microsoft 365 管理中心 内的所有管理员使用。 它们提供有关产品设置、启用安全功能、部署协作工具以及提供脚本以加快高级部署的信息。
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>如何访问管理中心中的Microsoft 365指南
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>如何访问安装程序指南Microsoft 365 管理中心
 
-可通过管理中心中的"设置指南"[页](https://aka.ms/setupguidance)访问Microsoft 365指南。 你可以跟踪进度状态，并且可以选择随时返回以完成指南。 若要访问" **设置指南"页** ：
+安装程序指南可从安装程序指南[页中访问](https://aka.ms/setupguidance)Microsoft 365 管理中心。 你可以跟踪进度状态，并且可以选择随时返回以完成指南。 若要访问" **设置指南"页** ：
 
-1. 在Microsoft 365 [管理中心中](https://admin.microsoft.com/)，转到 **主页**。
+1. 在Microsoft 365 管理中心 [中](https://admin.microsoft.com/)，转到 **主页**。
 
 2. 查找 **培训&指南** 卡。 
 
-   ![&管理中心的培训Microsoft 365指南卡](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![&中的培训指南Microsoft 365 管理中心](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
 3. 选择 **"自定义设置指南"。**
 
-   ![管理中心中"安装指南"Microsoft 365屏幕截图](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   !["安装指南"页的屏幕截图Microsoft 365 管理中心](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->需要租户管理员权限才能访问Microsoft 365中心。
+>需要租户管理员权限才能访问Microsoft 365 管理中心。
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>设置指南在管理中心Microsoft 365工作？
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>安装程序指南如何工作在Microsoft 365 管理中心？
 
 每个指南都为您提供了分步说明、资源、文章，并根据需要提供了可用于更改配置的脚本。 这些指南为您提供了反映小型和大型组织的特定需求的选择。 此外，该指南还包括针对新管理员和有经验的管理员的帮助。
 
@@ -98,9 +98,9 @@ Microsoft Edge已经过全新构建，可让你获得世界一流的兼容性和
 
 ### <a name="microsoft-search-setup-guide"></a>Microsoft 搜索设置指南
 
-Microsoft 搜索可帮助你的组织找到完成他们正在处理的工作所需的内容。 无论是搜索人员、文件、组织结构图、网站或常见问题解答，组织都可以在整个工作日使用 Microsoft 搜索获取答案。
+Microsoft 搜索帮助组织找到完成所处理操作所需的操作。 无论组织是搜索人员、文件、组织结构图、网站或常见问题解答，组织都可以Microsoft 搜索工作之一来获取答案。
 
-[Microsoft 搜索设置指南](https://aka.ms/MicrosoftSearchSetup)可帮助你配置 Microsoft 搜索，是希望将其试点到一组用户，还是将其向组织中的每个人推出。你将分配搜索管理员和搜索编辑器，然后使用答案和其他选项为用户自定义搜索体验，例如将 必应 扩展添加到 Chrome 或将 必应 设置为默认搜索引擎。
+Microsoft 搜索[设置](https://aka.ms/MicrosoftSearchSetup)指南可帮助你配置Microsoft 搜索是向一组用户试用还是向组织中的每个人推出它。你将分配搜索管理员和搜索编辑器，然后使用答案和其他选项为用户自定义搜索体验，例如将 必应 扩展添加到 Chrome 或将 必应 设置为默认搜索引擎。
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 共同管理设置指南
 
@@ -157,7 +157,7 @@ Microsoft 搜索可帮助你的组织找到完成他们正在处理的工作所�
 
 Microsoft Exchange OnlineEOP (EOP) 是一种基于云的电子邮件筛选服务，用于防范垃圾邮件和恶意软件，具有保护您的组织免受邮件策略违规攻击的功能。 
 
-使用[Exchange Online Protection](https://aka.ms/EOPguidance)设置指南设置 EOP，方法为选择三种部署方案中的哪一种是内部部署邮箱、混合 (混合本地邮箱和云) 邮箱，还是适合组织的所有云邮箱。 &mdash; &mdash; 本指南提供了用于设置和查看用户许可、在 Microsoft 365 & 管理中心分配权限，以及配置安全与合规中心中的组织的反恶意软件和垃圾邮件策略的信息和资源。 
+使用[Exchange Online Protection](https://aka.ms/EOPguidance)设置指南设置 EOP，方法为选择三种部署方案中的哪一种是内部部署邮箱、混合 (混合本地邮箱和云) 邮箱，还是适合组织的所有云邮箱。 &mdash; &mdash; 本指南提供了用于设置和查看用户许可、在 Microsoft 365 管理中心 中分配权限，以及配置安全与合规中心中的组织的反恶意软件和垃圾邮件策略 &的信息和资源。 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender for Office 365 顾问
 
@@ -215,10 +215,5 @@ SharePoint[设置](https://aka.ms/spoguidance)指南可帮助你设置 SharePoin
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>使用 Configuration Manager Microsoft 365 应用版和更新策略
 
-对于使用 Configuration Manager 的组织，可以使用与[Configuration Manager](https://aka.ms/oppinstall)顾问一起部署和更新 Microsoft 365 应用版 来生成一个脚本，该脚本将使用 FastTrack 工程师建议的最佳方案自动配置 Microsoft 365 应用版 部署。 使用本指南构建部署组、自定义 Office 应用和功能、配置动态或精简安装，然后运行脚本以创建面向部署所需的应用程序、自动部署规则和设备集合。 
+对于使用 Configuration Manager 的组织，可以使用使用[Configuration Manager](https://aka.ms/oppinstall)顾问部署和更新 Microsoft 365 应用版 来生成一个脚本，该脚本将使用 FastTrack 工程师建议的最佳方案自动配置 Microsoft 365 应用版 部署。 使用本指南构建部署组、自定义 Office 应用和功能、配置动态或精简安装，然后运行脚本以创建面向部署所需的应用程序、自动部署规则和设备集合。 
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>将第三方云应用与 Azure AD 集成
-
-通过将第三方应用与 Azure AD Azure Active Directory (集成，改进用户体验并提供额外的) 。 借助此端到端体验，可以直接从此向导执行大部分配置。 在适当的时候，我们会将你重定向到相应的配置页面。
-
-使用 [集成第三方云应用](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) 向导将第三方云应用与 Azure AD 集成。
