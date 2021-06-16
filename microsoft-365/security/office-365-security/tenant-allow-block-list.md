@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929727"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933151"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -92,44 +92,36 @@ ms.locfileid: "52929727"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户在租户允许/阻止列表中创建阻止 URL 条目
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&"策略**""威胁策略 \>  \> **""租户允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在" **租户允许/阻止列表** "页上，验证 **"URL"** 选项卡是否被选中，然后单击"阻止 **"**
+2. 在"**租户允许/阻止列表**"页上，验证 **"URL"** 选项卡已选中，然后单击"阻止 ![ "图标"阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
 
 3. 在 **出现的"阻止 URL"** 飞出中，配置以下设置：
-
-   - **添加要阻止的 URL：** 每行输入一个 URL，最多输入 20 个。 有关 URL 条目的语法的详细信息，请参阅本文稍后介绍的租户 [允许/阻止列表的 URL](#url-syntax-for-the-tenant-allowblock-list) 语法部分。
-
+   - **添加包含通配符的 URL：** 每行输入一个 URL，最多输入 20 个 URL。 有关 URL 条目的语法的详细信息，请参阅本文稍后介绍的租户 [允许/阻止列表的 URL](#url-syntax-for-the-tenant-allowblock-list) 语法部分。
    - **永不过期**：执行下列步骤之一：
-
-     - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
        或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
-
    - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户在租户允许/阻止列表中创建阻止文件条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表"** 页上，选择"**文件"** 选项卡，然后单击"阻止 **"。**
+2. 在"**租户允许/阻止列表"** 页上，选择"**文件**"选项卡，然后单击"阻止 ![ 图标阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
 
-3. 在 **"添加文件以阻止** 出现的飞出"中，配置以下设置：
-
+3. 在出现的 **"阻止文件** "飞出中，配置以下设置：
    - **添加文件哈希**：每行输入一个 SHA256 哈希值，最多 20 个。
-
    - **永不过期**：执行下列步骤之一：
-
-     - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
      或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
-
    - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
@@ -142,42 +134,37 @@ ms.locfileid: "52929727"
 - 为域对配置允许或阻止条目时，来自该域对的邮件将不再显示在欺骗智能见解中。
 - 欺骗性发件人的条目永不过期。
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"** 选项卡，然后单击"添加 **"。**
+2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"选项卡**，然后单击"阻止图标""添加 ![ ](../../media/m365-cc-sc-create-icon.png) **"。**
 
 3. 在出现的 **"添加新域对** "飞出中，配置以下设置：
-
    - **使用通配符添加新域对**：每行输入一个域对，最多输入 20 个域对。 有关欺骗性发件人条目的语法的详细信息，请参阅本文稍后的租户允许 [/](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) 阻止列表部分中的欺骗性发件人条目的域对语法。
-
    - **欺骗类型**：选择下列值之一：
      - **内部**：欺骗性发件人位于组织所属的域中， ([接受的) 。](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **外部**：欺骗性发件人位于外部域中。
-
    - **操作**：选择 **"允许"** 或"**阻止"。**
 
 4. 完成后，单击“**添加**”。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户查看租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择您想要的选项卡。 可用的列取决于所选的选项卡：
 
    - **URL：**
      - **值**：URL。
      - **操作**：值 **Block**。
-     - **上次更新日期**
-     - **到期日期**
-     - **注意**
-
+     - **上次更新**
+     - **删除 on**
+     - **备注**
    - **Files**
      - **值**：文件哈希。
      - **操作**：值 **Block**。
-     - **上次更新日期**
-     - **到期日期**
-     - **注意**
-
+     - **上次更新**
+     - **删除 on**
+     - **备注**
    - **网络钓鱼**
      - **欺骗用户**
      - **发送基础结构**
@@ -190,10 +177,9 @@ ms.locfileid: "52929727"
 
    - **URL**：可以按操作 对结果 **进行分组**。
    - **文件**：可以按操作 对结果 **进行分组**。
-   - **BCL 绕过的** 发件人域 **：** 此选项卡上未提供组。
    - **欺骗：** 你可以按操作或欺骗 **类型****对结果进行分组**。
 
-   单击 **"搜索**"，输入值的全部或一部分，然后按 Enter 查找特定值。 完成后，单击"清除搜索 **""** ![ 清除搜索图标 ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) "。
+   单击 **"搜索**"，输入值的全部或一部分，然后按 Enter 查找特定值。 完成后，单击"清除搜索 ![ "图标" ](../../media/m365-cc-sc-close-icon.png) **清除搜索"。**
 
    单击 **"筛选** "筛选结果。 显示在"筛选器 **"飞出** 控件中的可用值取决于所选的选项卡：
 
@@ -201,19 +187,12 @@ ms.locfileid: "52929727"
      - **Action**
      - **永不过期**
      - **上次更新日期**
-     - **到期日期**
-
+     - **删除 on**
    - **Files**
      - **Action**
      - **永不过期**
-     - **上次更新日期**
-     - **到期日期**
-
-   - **用于 BCL 绕过的发件人域**
-     - **永不过期**
-     - **上次更新日期**
-     - **到期日期**
-
+     - **上次更新**
+     - **删除 on**
    - **网络钓鱼**
      - **Action**
      - **欺骗类型**
@@ -222,43 +201,34 @@ ms.locfileid: "52929727"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户修改租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要修改的条目类型的选项卡：
    - **URL**
    - **Files**
-   - **用于 BCL 绕过的发件人域**
    - **网络钓鱼**
 
-3. 选择要修改的条目，然后单击"编辑 **编辑"** ![ 图标 ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。 可以在出现的飞出控件中修改的值取决于您在上一步中所选的选项卡：
-
+3. 选择要修改的条目，然后单击"编辑 ![ "图标"编辑 ](../../media/m365-cc-sc-edit-icon.png) **"。** 可以在出现的飞出控件中修改的值取决于您在上一步中所选的选项卡：
    - **URL**
      - **永不过期** 和/或到期日期。
      - **可选注释**
-
    - **Files**
      - **永不过期** 和/或到期日期。
      - **可选注释**
-
-   - **用于 BCL 绕过的发件人域**
-     - **永不过期** 和/或到期日期。
-
    - **网络钓鱼**
      - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
-
 4. 完成时，请单击“保存”。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>使用 Microsoft 365 Defender 门户从租户允许/阻止列表中删除条目
 
-1. 在 Microsoft 365 Defender 门户中，转到"**威胁** 管理""策略 \>  \> **租户允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要删除的条目类型的选项卡：
    - **URL**
    - **Files**
-   - **用于 BCL 绕过的发件人域**
    - **网络钓鱼**
 
-3. 选择要删除的条目，然后单击"删除 **删除图标** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) "。
+3. 选择要删除的条目，然后单击"删除" ![ 图标"删除 ](../../media/m365-cc-sc-delete-icon.png) **"。**
 
 4. 在出现的警告对话框中，单击"删除 **"。**
 
@@ -662,7 +632,7 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-欺骗性发件人条目的最大数量为 1000。 
+欺骗性发件人条目的最大数量为 1000。
 
 添加域对仅允许或阻止欺骗用户 *和发送* 基础结构的组合。 它不允许来自任何来源的欺骗用户的电子邮件，也不允许来自任何欺骗用户的发送基础结构源的电子邮件。 
 

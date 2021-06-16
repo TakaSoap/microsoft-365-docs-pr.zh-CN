@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929547"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932814"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -42,13 +42,13 @@ ms.locfileid: "52929547"
 > [!TIP]
 > 还没有 Microsoft Defender for Office 365？ [联系销售人员以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
 
-## <a name="aprilmay-2021"></a>2021 年 4 月/5 月 
+## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 
 - [电子邮件实体页面](mdo-email-entity-page.md)：电子邮件的统一 360 度视图，包含有关威胁、身份验证和检测、触发详细信息以及全新的电子邮件预览体验的丰富信息。
 - [Office 365 API：](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)更新 EmailEvents (RecordType 28) 添加传递操作、原始和最新的传递位置以及更新的检测详细信息。
-- [适用于防御者的威胁Office 365：](/microsoft-365/security/defender/threat-analytics)查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员有关正在进行的活动的广泛报告。 
+- [适用于防御者的威胁Office 365：](/microsoft-365/security/defender/threat-analytics)查看活动威胁参与者、热门技术和攻击面，以及 Microsoft 研究人员有关正在进行的活动的广泛报告。
 
-## <a name="februarymarch-2021"></a>2021 年 2 月/3 月 
+## <a name="februarymarch-2021"></a>2021 年 2 月/3 月
 
 - 警报 ID 集成 (在搜寻体验中使用警报 ID Alert-Explorer导航 [) 搜索](threat-explorer.md)
 - 将搜寻体验中记录的导出限制从 9990 提高至 200，000 [](threat-explorer.md)
@@ -89,7 +89,7 @@ ms.locfileid: "52929547"
   - 高级 NOT 筛选器 (包括不包含、不包含等高级筛选) 
   - 具体时间筛选器 (天、小时、每小时) 
 
-- " **事件"** 小部件现在是"操作 **中心"小部件** 。  (若要查看安全小组件，在 Microsoft 365 Defender 门户中，转到电子邮件 **& collaboration** \> **Review**.)  (Microsoft Defender for Office 365 Plan 2) 
+- " **事件"** 小部件现在是"操作 **中心"小部件** 。  (若要在安全与合规中心内查看安全&小组件，请转到威胁管理 \> **审阅**.)  (Microsoft Defender for Office 365 计划 2) 
 
 - [保险箱预览Microsoft 365 (](safe-docs.md)**中的)**
 

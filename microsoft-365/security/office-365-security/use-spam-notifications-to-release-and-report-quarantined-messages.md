@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解 EOP 邮箱中隔离邮件的最终用户Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 71f2a33ad83f94895c396f92c18753bfca7f2905
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929883"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933163"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用用户垃圾邮件通知释放并报告隔离邮件
 
@@ -51,16 +51,11 @@ ms.locfileid: "52929883"
 最终用户垃圾邮件通知包含每个隔离邮件的以下信息：
 
 - **发件人**：已隔离邮件的发送名称和电子邮件地址。
-
 - **主题**：隔离邮件的主题行文本。
-
 - **日期**：隔离邮件 (日期和时间) UTC 格式。
-
 - **阻止发件人**：单击此链接将发件人添加到邮箱上的阻止发件人列表中。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
-
-- **释放**：对于 (网络钓鱼) ，你可以在此处释放邮件，而无需进入隔离 defender Microsoft 365 门户。
-
-- Review **：** Click this link to go to Quarantine in the Microsoft 365 Defender portal， where you can (depending on why the message was quarantined) view， release， delete or report your quarantined messages. 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
+- **释放**：对于 (网络钓鱼) 邮件，你可以在此处释放邮件，而无需进入隔离 Microsoft 365 Defender 门户。 
+- 查看：单击此链接可转到Microsoft 365 Defender 门户中的"隔离"，你可以在那里 (查看、释放、删除或报告隔离邮件) 隔离邮件的原因。 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
 
 ![示例最终用户垃圾邮件通知](../../media/end-user-spam-notification.png)
 
