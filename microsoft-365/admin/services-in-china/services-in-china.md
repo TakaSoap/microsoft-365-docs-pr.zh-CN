@@ -24,7 +24,7 @@ description: 了解更多关于由世纪互联运营的，旨在满足中国对�
 monikerRange: o365-21vianet
 ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
 ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2021
 ms.locfileid: "52924715"
@@ -53,7 +53,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
   
 ## <a name="office-365-suite"></a>Office 365 套件
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |自定义域  <br/> |管理员可以创建和/或使用通过中国特定的域提供商注册的自定义域。 如果没有自定义域名，则可以从域名注册机构处[如何购买域名](../get-help-with-domains/buy-a-domain-name.md)。 如果已经拥有一个域名，[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果使用Office 365 SharePoint Online服务创建公共网站，中国 Internet 合规政策要求获得 Internet 内容提供商（ICP）编号。  **注意：** 自定义域名中的不允许的词不能进行自动验证。           |
 |订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 商业版支持人员](../../business-video/get-help-support.md)。  <br/> |
@@ -72,7 +72,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |通过电子邮件与组织外部的某人共享文档、库或网站  <br/> |该功能是可用的，但默认情况下是关闭的，因为使用该功能可能会使共享的文件在国家/地区之外受到访问。 管理员确实能够将其打开，但会收到一条警告消息，表明它可以使共享文件在你所在的国家/地区之外获得访问。 试图与组织以外的人共享的用户也将收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。  <br/> |
 |Access Services  <br/> |支持 Access 2013，但可能不支持添加新 Access 应用，因为将在 Office 365 和 SharePoint Online 中停用此功能。 从 2017 年 6 月起，将停止在 Office 365 和 SharePoint Online 中创建新的基于 Access 的 Web 应用和 Access Web 数据库，并于 2018 年 4月停止任何仍存在的 Web 应用和 Web 数据库。 此外，不支持 Access 2010 功能，并且尝试使用 Access 2010 数据库将导致错误并可能造成数据丢失。  <br/> |
@@ -91,7 +91,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
   
 ## <a name="outlook-web-app"></a>Outlook Web App
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |Blackberry 商务云服务 (BBCS)  <br/> |不可用，但您可以使用 Exchange ActiveSync 设备或 Research in Motion（RIM，BlackBerry 无线电子邮件解决方案）中的服务运行 Blackberry Enterprise Server (BES)。  <br/> |
 |信息权限管理  <br/> |即将推出。  <br/> |
@@ -167,7 +167,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
 > [!IMPORTANT]
 >  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是一款基于 Web 且免费的工具，可帮助在内部部署组织和 Office 365 之间配置混合部署，或完全迁移到 Office 365。 该工具会询问您一些简单的问题，然后根据您的回答，创建一个自定义检查表，其中包含配置混合部署的说明。 强烈建议使用部署助理来配置混合部署。 > 对于不希望升级或添加 Exchange 2013 CU5 服务器的组织，Exchange 2013 SP1 组织可以在其内部组织和 Exchange Online 组织之间配置共享日历免费/繁忙共享。 如果要配置此混合部署功能，请参阅[使用世纪互联运营的 Office 365 配置 Exchange 混合部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |共存和闲/忙共享|目前还不支持在两个或者多个本地 Exchange 组织之间共享日历闲/忙信息，或者在两个由世纪互联运营的 Office 365 租户之间共享日历闲/忙信息。该功能即将推出！ | 
 |日历共享|Exchange 2013 SP1 及更高版本支持与其他内部 Exchange 或 Exchange Online 组织手动配置互联网日历共享。 有关手动配置此功能的详细信息，请参见[启用 Internet 日历发布](/exchange/enable-internet-calendar-publishing-exchange-2013-help)。 | 
@@ -177,7 +177,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
    
 ## <a name="office"></a>Office
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |从“**文件**\>**打开**”中打开 Office 应用程序… 按钮  <br/> |可用。即将推出漫游时执行此操作的功能。  <br/> |
 |使用 Microsoft 账户登录时保存到 OneDrive for Business  <br/> |为了将数据保存在本国家/地区境内，当使用 Microsoft 账户登录 Office 时，将无法将文档保存到组织站点 (OneDrive for Business)。  <br/> |
@@ -185,13 +185,13 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
    
 ## <a name="office-client"></a>Office 客户端
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |管理账号（从 Office 客户端内部）  <br/> |该功能以及其他类似的旨在进入Office 365门户的功能，目前都指向全球的Office 365门户，不能用世纪互联运营的Office 365账号登录。 这是一个已知且正在修复中的问题。 同时，可以使用该 URL https://portal.partner.microsoftonline.cn/登录账户，并从那里管理设置。 有关更多信息，请参阅 [世纪互联运营的Office 365企业账户的Microsoft 365应用管理](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |插入和播放联机视频  <br/> |不可用。  <br/> |
 |研究窗格集成到必应的服务  <br/> |不可用。  <br/> |
@@ -209,7 +209,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
    
 ## <a name="skype-for-business"></a>Skype for Business
 
-|函数|供应情况|
+|函数|可用性|
 |:-----|:-----|
 |为 Skype for Business 提供支持的域提供商  <br/> |需要向支持SRV记录的中文域名提供商注册域名。 有关如何注册域名的更多信息，请参阅 [查找域名注册商或DNS托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> |
 |拨入式会议（为无法使用计算机的用户添加电话拨入到会议的功能）。  <br/> |你可能会看到 Skype for Business 和 Skype for Business 管理中心中针对拨入式会议和提供商的选项，但这些功能尚不可用。这些功能即将推出。  <br/> |
@@ -236,6 +236,6 @@ GDPR 授予个人（或数据主体）与处理个人数据相关的某些权限
 
 ## <a name="related-content"></a>相关内容
 
-[试用或购买Microsoft 365商业版订阅 (](../../commerce/try-or-buy-microsoft-365.md)文章) \
-[针对由世纪Office 365运营的 (](parity-between-azure-information-protection.md) Azure 信息保护) \
+[试用或购买 Microsoft 365 商业版订阅](../../commerce/try-or-buy-microsoft-365.md)（文章）
+[适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持](parity-between-azure-information-protection.md)（文章）
 [查看帐单或获取发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）

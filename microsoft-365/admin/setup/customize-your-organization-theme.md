@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908157"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998796"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -82,16 +82,13 @@ ms.locfileid: "52908157"
 
 在 **"徽标"** 页上，您可以添加徽标，并指定用户在选择徽标时将导航到的 URL。
 
-- **默认徽标**：添加指向徽标的 URL 位置。 确保 URL 使用 HTTPS。 如果要上载徽标，请确保它小于 10kb。 默认徽标可以是 JPG、PNG、GIF 或 SVG 格式。 对于 SVG 图像，它们的大小将调整为垂直调整为 24 像素。 JPG、PNG、GIF 图像将缩放为 200 x 48 像素。
+- **默认徽标**：添加指向徽标的 URL 位置。 确保 URL 使用 HTTPS。 添加允许匿名访问且不需要身份验证的 HTTPS 图像 URL。 对于默认主题，还可以选择上传小于 10kb 的徽标图像。 默认徽标可以是 JPG、PNG、GIF 或 SVG 格式。 对于 SVG 图像，它们的大小将调整为垂直调整为 24 像素。 JPG、PNG、GIF 图像将缩放为 200 x 48 像素。 徽标纵横比将始终保留。
 - **备用徽标**：添加指向徽标的 URL 位置。 应优化备用徽标，以用于Office主题。 与默认徽标的要求相同。
 - **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。
 
 选择 **保存** 以保存所做的更改。
 
 你随时都可以删除徽标。 只需返回到"**徽标"页** 并选择"删除 **"。**
-
-> [!NOTE]
-> 默认情况下，我们首先显示大多数组织使用的徽标选择。 上载选项仅适用于默认主题，不适用于组主题。
   
 ## <a name="colors-choose-theme-colors"></a>颜色：选择主题颜色
 
@@ -105,7 +102,7 @@ ms.locfileid: "52908157"
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>我的组织已有一个针对所有员工的主题。 这将如何更改？
 
@@ -140,7 +137,7 @@ ms.locfileid: "52908157"
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>为什么我每次上载徽标 URL 时都会收到错误消息。  
 
-请确保你使用的徽标指定为可公开地址 URL。 请按照以下步骤将徽标[上传到 Azure Blob](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)存储或 Office 365 内容分发网络 Online SharePoint[应用](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
+请确保你使用的徽标指定为可公开地址 URL。 请按照以下步骤将徽标上传到[Azure Blob](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)存储空间或 Office 365 内容交付网络 Online [SharePoint服务器](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>为什么我收到消息"不满足最小颜色对比率 4.5：1"？
 

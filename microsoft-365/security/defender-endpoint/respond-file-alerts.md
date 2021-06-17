@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844066"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998784"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -82,7 +82,7 @@ ms.locfileid: "52844066"
 
 1. 选择要停止和隔离的文件。 可以从以下任一视图中选择文件，或使用"搜索"框：
 
-   - **警报** - 单击"项目"时间线中的"说明"或"详细信息"中的相应链接
+   - **警报** - 单击警报情景时间线中的"说明"或"详细信息"中的相应链接
    - **搜索框** - **从下拉菜单** 中选择"文件"，然后输入文件名
 
    > [!NOTE]
@@ -128,14 +128,14 @@ ms.locfileid: "52844066"
 
 2. 输入以下命令，然后按 **Enter：**
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> 在某些情况下 **，ThreatName** 可能显示为：EUS：Win32/CustomEnterpriseBlock！cl。
->
-> Defender for Endpoint 将还原最近 30 天内在此设备上隔离的所有自定义阻止文件。
+   > [!NOTE]
+   > 在某些情况下 **，ThreatName** 可能显示为：EUS：Win32/CustomEnterpriseBlock！cl。
+   >
+   > Defender for Endpoint 将还原最近 30 天内在此设备上隔离的所有自定义阻止文件。
 
 > [!IMPORTANT]
 > 作为潜在网络威胁隔离的文件可能无法恢复。 如果用户尝试在隔离后还原文件，则该文件可能无法访问。 这是因为系统不再具有访问该文件的网络凭据。 通常，这是临时登录到系统或共享文件夹且访问令牌过期的结果。
@@ -234,15 +234,13 @@ ms.locfileid: "52844066"
 > [!NOTE]
 > 由于 Microsoft 安全中心门户中的后端处理流，文件提交和 Defender for Endpoint 中深入分析功能的可用性之间最多存在 10 分钟的延迟。
 
-收集示例后，Defender for Endpoint 在安全环境中运行文件。 然后，它创建观测到的行为和相关项目的详细报告，例如设备上丢弃的文件、与 IP 的通信以及注册表修改。
-
 ### <a name="submit-files-for-deep-analysis"></a>提交文件进行深入分析
 
 1. 选择要提交进行深入分析的文件。 可以从以下任一视图中选择或搜索文件：
 
-    - 警报 - 从"项目"时间线中的" **说明** " **或"详细信息** "中选择文件链接
+    - **警报** - 从"警报情景"时间线 **中的"说明** "或 **"** 详细信息"中选择文件链接
     - **设备列表**- 从"组织中设备"**部分的说明或** 详细信息 **中选择文件** 链接
-    - 搜索框 - **从下拉菜单** 中选择"文件"，然后输入文件名
+    - **搜索框** - **从下拉菜单** 中选择"文件"，然后输入文件名
 
 2. 在文件 **视图的"** 深入分析"选项卡中，选择"提交 **"。**
 
@@ -251,7 +249,7 @@ ms.locfileid: "52844066"
    > [!NOTE]
    > 仅支持 PE _文件，包括__.exe和.dll_ 文件。
 
-将显示一个进度栏，并提供有关分析的不同阶段的信息。 然后，您可以在分析完成时查看报告。
+   将显示一个进度栏，并提供有关分析的不同阶段的信息。 然后，您可以在分析完成时查看报告。
 
 > [!NOTE]
 > 根据设备可用性，示例收集时间可能会有所不同。 示例集合有 3 小时超时。 如果当时没有联机设备报告，该集合Windows 10将中止操作。 你可以重新提交文件进行深入分析，获取文件的新数据。
@@ -277,11 +275,14 @@ ms.locfileid: "52844066"
 如果在尝试提交文件时遇到问题，请尝试以下每个疑难解答步骤。
 
 1. 确保该文件是 PE 文件。 PE 文件 _通常具有.exe_ 或.dll可执行 _(_ 或应用程序的扩展) 。
+
 2. 确保服务具有对文件的访问权限，它仍然存在，并且尚未损坏或修改。
+
 3. 稍等一会，然后再次尝试提交文件。 队列可能已满，或者出现临时连接或通信错误。
+
 4. 如果未配置示例集合策略，则默认行为是允许示例集合。 如果已配置，请验证策略设置是否允许示例收集，然后再重新提交文件。 配置示例集合后，请检查以下注册表值：
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -291,6 +292,7 @@ ms.locfileid: "52844066"
     ```
 
 1. 通过组策略更改组织单位。 有关详细信息，请参阅使用 [组策略配置](configure-endpoints-gp.md)。
+
 1. 如果这些步骤无法解决问题，请与联系[winatp@microsoft.com。](mailto:winatp@microsoft.com)
 
 ## <a name="related-topics"></a>相关主题

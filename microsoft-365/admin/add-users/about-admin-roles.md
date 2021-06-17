@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908049"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964568"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -77,7 +77,7 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 |Office 应用管理员    |   为需要执行以下操作的用户分配 Office 应用管理员角色： <br> - 使用 Office 云策略服务为 Office 创建和管理基于云的策略 <br> - 创建和管理服务请求 <br> - 管理用户在 Office 应用中看到的新增内容   <br> - 监视服务运行状况  |
 |密码管理员  |   将密码管理员角色分配给需要为非管理员和密码管理员重置密码的用户。   |
 |消息中心读取者 |   为需要执行以下操作的用户分配支持管理员角色： <br> - 监视消息中心通知 <br> - 获取消息中心发布和更新的每周电子邮件摘要 <br> - 共享消息中心帖子 <br> - 对 Azure AD 服务（如用户和组）具有只读访问权限|
-|Power 平台管理员 |   为需要执行以下操作的用户分配支持管理员角色： <br> -管理 PowerApps, Microsoft Flow 和数据丢失防护的所有管理功能 <br> - 创建和管理服务请求 <br> - 监视服务运行状况  |
+|Power 平台管理员 |   为需要执行以下操作的用户分配支持管理员角色： <br> - 管理Power Apps、Power Automate 和数据丢失防护的所有管理功能 <br> - 创建和管理服务请求 <br> - 监视服务运行状况  |
 |报表读取者 |   为需要执行以下操作的用户分配支持管理员角色： <br> - 在 Microsoft 365 管理中心查看使用数据和活动报告 <br> - 访问 Power BI 采用内容包 <br> - 访问 Azure AD 的登录报告和活动 <br> - 查看由 Microsoft Graph 报告 API 返回的数据|
 |服务支持管理员   |   将服务支持管理员角色作为附加角色分配给管理员或用户，他们除了要负责管理员的常规工作外，还需要做以下工作： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子 <br> - 监视服务运行状况   |
 |SharePoint 管理员    |   为需要访问和管理 SharePoint Online 管理中心的用户分配 SharePoint 管理员角色。 <br><br>SharePoint 管理员还可以： <br> - 创建和删除网站 <br> - 管理网站集和全局 SharePoint 设置   |

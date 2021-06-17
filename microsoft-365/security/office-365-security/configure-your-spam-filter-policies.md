@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879092"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950091"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -307,7 +307,7 @@ ms.locfileid: "52879092"
 3. 在出现的策略详细信息浮出控件顶部，你会看到“**提高优先级**”或“**降低优先级**”，具体取决于当前优先级值和自定义策略数量：
    - “**优先级**”值为 **0** 的反垃圾邮件策略只有“**降低优先级**”选项可用。
    - 具有最低“**优先级**”值（例如 **3**）的反垃圾邮件策略只有“**提高优先级**”选项可用。
-   - 如果你有三个或更多反垃圾邮件策略，则最高和最低优先级值之间的策略有“**提高优先级**”和“**降低优先级**”选项可用。
+   - 如果你有三个或更多反垃圾邮件策略，则最高和最低优先级值之间的策略同时有“**提高优先级**”和“**降低优先级**”两个选项可用。
 
    单击![“提高优先级”图标](../../media/m365-cc-sc-increase-icon.png)“**提高优先级**”或![“降低优先级”图标](../../media/m365-cc-sc-decrease-icon.png)“**降低优先级**”以更改“**优先级**”值。
 

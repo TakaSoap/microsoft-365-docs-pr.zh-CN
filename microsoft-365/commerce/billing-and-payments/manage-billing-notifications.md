@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 了解如何管理接收帐单通知电子邮件和发票附件的人。
 ms.date: 03/17/2021
-ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888357"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998760"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帐单通知和发票附件
 
@@ -43,7 +43,7 @@ ms.locfileid: "52888357"
 
 计费通知电子邮件以组织的首选语言发送。 若要更改首选语言，请使用以下步骤。
 
-1. 在管理Microsoft 365，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">""帐单通知"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. 在"**帐单通知设置"** 部分，选择"**编辑通知设置"。**
 3. 在"**帐单通知设置"****窗格中，在**"首选语言"下，选择想要使用的语言，然后选择"保存 **"。**
 
@@ -88,9 +88,6 @@ ms.locfileid: "52888357"
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>以电子邮件附件接收组织的发票
 
-> [!NOTE]
-> 帐单管理员还可以执行本部分中的步骤。
-
 在准备好新发票时，你可以将组织的发票副本作为 PDF 文件附加到发票通知电子邮件中。 使用以下步骤接收作为附件的发票。
 
 1. 在管理中心中，转到“**账单**”  >  “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
@@ -130,6 +127,6 @@ ms.locfileid: "52888357"
 ## <a name="related-content"></a>相关内容
 
 [查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
-[有关墨西哥Microsoft 365企业](/microsoft-365/commerce/billing-and-payments/mexico-billing-info)帐单 (文章) \
+[Microsoft 365 商业版（墨西哥）的帐单信息](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) （文章）\
 [了解适用于企业Microsoft 365的](understand-your-invoice2.md)帐单 (发票) \
 [在本文介绍的同时添加用户 (](../../admin/add-users/add-users.md) 分配) 
