@@ -164,6 +164,8 @@
                   href: advanced-hunting-query-emails-devices.md
                 - name: 查寻勒索软件
                   href: advanced-hunting-find-ransomware.md
+                - name: 高级搜寻示例
+                  href: advanced-hunting-example.md
                 - name: 从 Defender for Endpoint 的过渡
                   href: advanced-hunting-migrate-from-mde.md
             - name: 处理查询结果
