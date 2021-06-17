@@ -1,6 +1,5 @@
 ---
-title: Microsoft Viva 主题中的主题中心概述
-description: 了解 Microsoft Viva 主题中的主题中心。
+title: 主题中心概述Microsoft Viva Topics
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,38 +13,39 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+description: 了解本主题中的主题Microsoft Viva Topics。
+ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583588"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984924"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a><span data-ttu-id="092f4-103">Microsoft Viva 主题中的主题中心概述</span><span class="sxs-lookup"><span data-stu-id="092f4-103">Topic center overview in Microsoft Viva Topics</span></span>
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a><span data-ttu-id="ed2e1-103">主题中心概述Microsoft Viva Topics</span><span class="sxs-lookup"><span data-stu-id="ed2e1-103">Topic center overview in Microsoft Viva Topics</span></span>
 
-<span data-ttu-id="092f4-104">在 Microsoft Viva 主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。</span><span class="sxs-lookup"><span data-stu-id="092f4-104">In Microsoft Viva Topics, the topic center is a modern SharePoint site that serves as a center of knowledge for your organization.</span></span> <span data-ttu-id="092f4-105">在管理中心的[Viva 主题设置过程中](set-up-topic-experiences.md)Microsoft 365创建。</span><span class="sxs-lookup"><span data-stu-id="092f4-105">It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="ed2e1-104">在Microsoft Viva Topics中，主题中心是一个SharePoint网站，可用作组织的一个知识中心。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-104">In Microsoft Viva Topics, the topic center is a modern SharePoint site that serves as a center of knowledge for your organization.</span></span> <span data-ttu-id="ed2e1-105">它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-105">It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="092f4-106">主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。</span><span class="sxs-lookup"><span data-stu-id="092f4-106">The topic center has a default home page with the **Topics** web part where all licensed users can see the topics to which they have a connection.</span></span> 
+<span data-ttu-id="ed2e1-106">主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-106">The topic center has a default home page with the **Topics** web part where all licensed users can see the topics to which they have a connection.</span></span> 
 
-<span data-ttu-id="092f4-107">虽然所有可以查看主题的许可用户都将有权访问主题中心，但知识管理人员也可通过"管理主题"页 **管理** 主题。</span><span class="sxs-lookup"><span data-stu-id="092f4-107">While all licensed users who can view topics will have access to the topic center, knowledge managers can also manage topics through the **Manage topics** page.</span></span> <span data-ttu-id="092f4-108">" **管理主题** "选项卡将仅显示给具有"管理主题"权限的用户。</span><span class="sxs-lookup"><span data-stu-id="092f4-108">The **Manage topics** tab will only display to users who have the Manage topics permissions.</span></span> 
+<span data-ttu-id="ed2e1-107">虽然所有可以查看主题的许可用户都将有权访问主题中心，但知识管理人员也可通过"管理主题"页 **管理** 主题。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-107">While all licensed users who can view topics will have access to the topic center, knowledge managers can also manage topics through the **Manage topics** page.</span></span> <span data-ttu-id="ed2e1-108">" **管理主题** "选项卡将仅显示给具有"管理主题"权限的用户。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-108">The **Manage topics** tab will only display to users who have the Manage topics permissions.</span></span> 
 
-## <a name="where-is-my-topic-center"></a><span data-ttu-id="092f4-109">我的主题中心在哪里</span><span class="sxs-lookup"><span data-stu-id="092f4-109">Where is my topic center</span></span>
+## <a name="where-is-my-topic-center"></a><span data-ttu-id="ed2e1-109">我的主题中心在哪里</span><span class="sxs-lookup"><span data-stu-id="ed2e1-109">Where is my topic center</span></span>
 
-<span data-ttu-id="092f4-110">主题中心在 Viva 主题设置期间创建。</span><span class="sxs-lookup"><span data-stu-id="092f4-110">The topic center is created during Viva Topics setup.</span></span> <span data-ttu-id="092f4-111">设置完成后，管理员可以在主题中心管理页面上[找到 URL。](./topic-experiences-administration.md#to-access-topics-management-settings)</span><span class="sxs-lookup"><span data-stu-id="092f4-111">After setup completes, an admin can find the URL on the [Topic center management page](./topic-experiences-administration.md#to-access-topics-management-settings).</span></span>
+<span data-ttu-id="ed2e1-110">主题中心在 Viva 主题设置期间创建。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-110">The topic center is created during Viva Topics setup.</span></span> <span data-ttu-id="ed2e1-111">设置完成后，管理员可以在主题中心管理页面上[找到 URL。](./topic-experiences-administration.md#to-access-topics-management-settings)</span><span class="sxs-lookup"><span data-stu-id="ed2e1-111">After setup completes, an admin can find the URL on the [Topic center management page](./topic-experiences-administration.md#to-access-topics-management-settings).</span></span>
 
 
-1. <span data-ttu-id="092f4-112">在管理Microsoft 365，选择"设置"，然后选择"**组织设置"。**</span><span class="sxs-lookup"><span data-stu-id="092f4-112">In the Microsoft 365 admin center, select **Settings**, and then select **Org settings**.</span></span>
-2. <span data-ttu-id="092f4-113">在"**服务"** 选项卡上，选择"**主题体验"。**</span><span class="sxs-lookup"><span data-stu-id="092f4-113">On the **Services** tab, select **Topic Experiences**.</span></span>
+1. <span data-ttu-id="ed2e1-112">In the Microsoft 365 管理中心， select **设置**， and then select **Org settings**.</span><span class="sxs-lookup"><span data-stu-id="ed2e1-112">In the Microsoft 365 admin center, select **Settings**, and then select **Org settings**.</span></span>
+2. <span data-ttu-id="ed2e1-113">在"**服务"** 选项卡上，选择"**主题体验"。**</span><span class="sxs-lookup"><span data-stu-id="ed2e1-113">On the **Services** tab, select **Topic Experiences**.</span></span>
 
     ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
 
-3. <span data-ttu-id="092f4-115">选择" **主题中心"** 选项卡。在 **"网站地址** "下是指向主题中心的链接。</span><span class="sxs-lookup"><span data-stu-id="092f4-115">Select the **Topic center** tab. Under **Site address** is a link to your topic center.</span></span>
+3. <span data-ttu-id="ed2e1-115">选择" **主题中心"** 选项卡。在 **"网站地址** "下是指向主题中心的链接。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-115">Select the **Topic center** tab. Under **Site address** is a link to your topic center.</span></span>
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
 
 
-## <a name="home-page"></a><span data-ttu-id="092f4-117">主页</span><span class="sxs-lookup"><span data-stu-id="092f4-117">Home page</span></span>
+## <a name="home-page"></a><span data-ttu-id="ed2e1-117">主页</span><span class="sxs-lookup"><span data-stu-id="ed2e1-117">Home page</span></span>
 
 </br>
 
@@ -54,43 +54,43 @@ ms.locfileid: "52583588"
 </br>
 
 
-<span data-ttu-id="092f4-118">在主题中心主页上，可以看到组织中已建立连接的主题。</span><span class="sxs-lookup"><span data-stu-id="092f4-118">On the topic center home page, you can see the topics in your organization to which you have a connection.</span></span>
+<span data-ttu-id="ed2e1-118">在主题中心主页上，可以看到组织中已建立连接的主题。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-118">On the topic center home page, you can see the topics in your organization to which you have a connection.</span></span>
 
-- <span data-ttu-id="092f4-119">建议的连接 - 你将看到"我们已在这些主题中列出你 **"下列出的主题。我们做对了吗？**</span><span class="sxs-lookup"><span data-stu-id="092f4-119">Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?**</span></span> <span data-ttu-id="092f4-120">在这些主题中，你通过 AI 建议了与主题的连接。</span><span class="sxs-lookup"><span data-stu-id="092f4-120">These are topics in which your connection to the topic has been suggested through AI.</span></span> <span data-ttu-id="092f4-121">例如，您可能是相关文件或网站的作者。</span><span class="sxs-lookup"><span data-stu-id="092f4-121">For example, you might be an author of a related file or site.</span></span> <span data-ttu-id="092f4-122">系统要求你确认你应作为主题的相关人员继续列出。</span><span class="sxs-lookup"><span data-stu-id="092f4-122">You are asked to confirm that you should stay listed as a related person for the topic.</span></span>
+- <span data-ttu-id="ed2e1-119">建议的连接 - 你将看到"我们已在这些主题中列出你 **"下列出的主题。我们做对了吗？**</span><span class="sxs-lookup"><span data-stu-id="ed2e1-119">Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?**</span></span> <span data-ttu-id="ed2e1-120">在这些主题中，你通过 AI 建议了与主题的连接。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-120">These are topics in which your connection to the topic has been suggested through AI.</span></span> <span data-ttu-id="ed2e1-121">例如，您可能是相关文件或网站的作者。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-121">For example, you might be an author of a related file or site.</span></span> <span data-ttu-id="ed2e1-122">系统要求你确认你应作为主题的相关人员继续列出。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-122">You are asked to confirm that you should stay listed as a related person for the topic.</span></span>
 
    ![建议的连接](../media/knowledge-management/my-topics.png) 
  
-- <span data-ttu-id="092f4-124">已确认连接 - 这些是你固定在主题页面上或已确认与主题的建议连接的主题。</span><span class="sxs-lookup"><span data-stu-id="092f4-124">Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic.</span></span> <span data-ttu-id="092f4-125">当您确认建议的连接时，主题将从建议移至已确认部分。</span><span class="sxs-lookup"><span data-stu-id="092f4-125">Topics will move from the suggested to confirmed section when you confirm a suggested connection.</span></span>
+- <span data-ttu-id="ed2e1-124">已确认连接 - 这些是你固定在主题页面上或已确认与主题的建议连接的主题。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-124">Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic.</span></span> <span data-ttu-id="ed2e1-125">当您确认建议的连接时，主题将从建议移至已确认部分。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-125">Topics will move from the suggested to confirmed section when you confirm a suggested connection.</span></span>
  
    ![已确认主题](../media/knowledge-management/my-topics-confirmed.png) 
 
-<span data-ttu-id="092f4-127">一旦用户确认其与主题的连接，用户就可以对主题页面进行编辑以修改其连接。</span><span class="sxs-lookup"><span data-stu-id="092f4-127">Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection.</span></span> <span data-ttu-id="092f4-128">例如，他们可以提供有关其与主题的连接的详细信息。</span><span class="sxs-lookup"><span data-stu-id="092f4-128">For example, they can provide more information about their connection to the topic.</span></span>
+<span data-ttu-id="ed2e1-127">一旦用户确认其与主题的连接，用户就可以对主题页面进行编辑以修改其连接。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-127">Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection.</span></span> <span data-ttu-id="ed2e1-128">例如，他们可以提供有关其与主题的连接的详细信息。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-128">For example, they can provide more information about their connection to the topic.</span></span>
 
 
-## <a name="manage-topics-page"></a><span data-ttu-id="092f4-129">"管理主题"页</span><span class="sxs-lookup"><span data-stu-id="092f4-129">Manage topics page</span></span>
+## <a name="manage-topics-page"></a><span data-ttu-id="ed2e1-129">"管理主题"页</span><span class="sxs-lookup"><span data-stu-id="ed2e1-129">Manage topics page</span></span>
 
-<span data-ttu-id="092f4-130">若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。</span><span class="sxs-lookup"><span data-stu-id="092f4-130">To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role.</span></span> <span data-ttu-id="092f4-131">管理员可在知识管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过管理中心Microsoft 365用户[](topic-experiences-knowledge-rules.md)。</span><span class="sxs-lookup"><span data-stu-id="092f4-131">Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="ed2e1-130">若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-130">To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role.</span></span> <span data-ttu-id="ed2e1-131">管理员可在[Viva](set-up-topic-experiences.md)主题设置期间向用户分配这些权限，或者管理员随后可以通过用户[](topic-experiences-knowledge-rules.md)策略添加Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-131">Your admin can assign these permissions to users during [Viva Topics setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="092f4-132">在 **"管理主题** "页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。</span><span class="sxs-lookup"><span data-stu-id="092f4-132">On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations.</span></span> <span data-ttu-id="092f4-133">每个主题将显示主题的发现日期。</span><span class="sxs-lookup"><span data-stu-id="092f4-133">Each topic will show the date the topic was discovered.</span></span> <span data-ttu-id="092f4-134">分配了管理主题权限的用户可以查看未确认的主题，并选择：</span><span class="sxs-lookup"><span data-stu-id="092f4-134">A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:</span></span>
+<span data-ttu-id="ed2e1-132">在 **"管理主题** "页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-132">On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations.</span></span> <span data-ttu-id="ed2e1-133">每个主题将显示主题的发现日期。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-133">Each topic will show the date the topic was discovered.</span></span> <span data-ttu-id="ed2e1-134">分配了管理主题权限的用户可以查看未确认的主题，并选择：</span><span class="sxs-lookup"><span data-stu-id="ed2e1-134">A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:</span></span>
 
-- <span data-ttu-id="092f4-135">确认主题：向用户指示 AI 建议的主题已经过人工保护者验证。</span><span class="sxs-lookup"><span data-stu-id="092f4-135">Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human curator.</span></span>
+- <span data-ttu-id="ed2e1-135">确认主题：向用户指示 AI 建议的主题已经过人工保护者验证。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-135">Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human curator.</span></span>
 
-- <span data-ttu-id="092f4-136">发布主题：编辑主题信息以提高最初确定的主题的质量，并突出显示给具有主题查看访问权限的所有用户。</span><span class="sxs-lookup"><span data-stu-id="092f4-136">Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and highlights the topic to all users who have view access to topics.</span></span>
+- <span data-ttu-id="ed2e1-136">发布主题：编辑主题信息以提高最初确定的主题的质量，并突出显示给具有主题查看访问权限的所有用户。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-136">Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and highlights the topic to all users who have view access to topics.</span></span>
  
-- <span data-ttu-id="092f4-137">删除主题：使最终用户无法发现该主题。</span><span class="sxs-lookup"><span data-stu-id="092f4-137">Remove the topic: Makes the topic undiscoverable to end users.</span></span> <span data-ttu-id="092f4-138">该主题将移至" **已删除** "选项卡，稍后可以确认（如果需要）。</span><span class="sxs-lookup"><span data-stu-id="092f4-138">The topic is moved to the **Removed** tab and can be confirmed later if needed.</span></span> 
+- <span data-ttu-id="ed2e1-137">删除主题：使最终用户无法发现该主题。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-137">Remove the topic: Makes the topic undiscoverable to end users.</span></span> <span data-ttu-id="ed2e1-138">该主题将移至" **已删除** "选项卡，稍后可以确认（如果需要）。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-138">The topic is moved to the **Removed** tab and can be confirmed later if needed.</span></span> 
 
-<span data-ttu-id="092f4-139">若要详细了解如何管理"管理主题" **页上的主题，** 请参阅管理 [主题](manage-topics.md)。</span><span class="sxs-lookup"><span data-stu-id="092f4-139">For more information about how to manage topics on the **Manage topics** page, see [Manage topics](manage-topics.md).</span></span>
+<span data-ttu-id="ed2e1-139">若要详细了解如何管理"管理主题" **页上的主题，** 请参阅管理 [主题](manage-topics.md)。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-139">For more information about how to manage topics on the **Manage topics** page, see [Manage topics](manage-topics.md).</span></span>
 
-## <a name="create-or-edit-a-topic"></a><span data-ttu-id="092f4-140">创建或编辑主题</span><span class="sxs-lookup"><span data-stu-id="092f4-140">Create or edit a topic</span></span>
+## <a name="create-or-edit-a-topic"></a><span data-ttu-id="ed2e1-140">创建或编辑主题</span><span class="sxs-lookup"><span data-stu-id="ed2e1-140">Create or edit a topic</span></span>
 
-<span data-ttu-id="092f4-141">如果您具有"创建和编辑主题"权限，您可以：</span><span class="sxs-lookup"><span data-stu-id="092f4-141">If you have Create and edit topics permissions, you can:</span></span>
+<span data-ttu-id="ed2e1-141">如果您具有"创建和编辑主题"权限，您可以：</span><span class="sxs-lookup"><span data-stu-id="ed2e1-141">If you have Create and edit topics permissions, you can:</span></span>
 
-- <span data-ttu-id="092f4-142">[编辑现有主题](edit-a-topic.md)：您可以更改通过发现创建的现有主题页面。</span><span class="sxs-lookup"><span data-stu-id="092f4-142">[Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.</span></span>
+- <span data-ttu-id="ed2e1-142">[编辑现有主题](edit-a-topic.md)：您可以更改通过发现创建的现有主题页面。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-142">[Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.</span></span>
 
-- <span data-ttu-id="092f4-143">[创建新主题](create-a-topic.md)：你可以为发现时找不到的主题或 AI 工具找不到足够证据来创建主题。</span><span class="sxs-lookup"><span data-stu-id="092f4-143">[Create new topics](create-a-topic.md): You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.</span></span>
+- <span data-ttu-id="ed2e1-143">[创建新主题](create-a-topic.md)：你可以为发现时找不到的主题或 AI 工具找不到足够证据来创建主题。</span><span class="sxs-lookup"><span data-stu-id="ed2e1-143">[Create new topics](create-a-topic.md): You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="092f4-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="092f4-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ed2e1-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ed2e1-144">See also</span></span>
 
-[<span data-ttu-id="092f4-145">在主题中心管理主题</span><span class="sxs-lookup"><span data-stu-id="092f4-145">Manage topics in the topic center</span></span>](manage-topics.md)
+[<span data-ttu-id="ed2e1-145">在主题中心管理主题</span><span class="sxs-lookup"><span data-stu-id="ed2e1-145">Manage topics in the topic center</span></span>](manage-topics.md)
 
