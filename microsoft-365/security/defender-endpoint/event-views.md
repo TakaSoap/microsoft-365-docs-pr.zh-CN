@@ -1,5 +1,5 @@
 ---
-title: 查看攻击面减少规则
+title: 查看攻击面减少活动
 description: 导入自定义视图以查看攻击面减少事件。
 keywords: 事件视图， 攻击防护， 审核， 审查， 事件
 search.product: eADQiWindows 10XVcnh
@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769313"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985443"
 ---
-# <a name="view-attack-surface-reduction-events"></a>查看攻击面减少规则
+# <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ ms.locfileid: "52769313"
 
 本文列出了所有事件及其关联的功能或设置，并介绍如何创建自定义视图以筛选到特定事件。
 
-获取事件和块的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)。
+获取事件、阻止和警告的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint。](microsoft-defender-endpoint.md)
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自定义视图查看攻击面减少功能
 
@@ -54,11 +55,12 @@ ms.locfileid: "52769313"
     - 攻击面减少事件自定义视图 *：asr-events.xml*
     - 网络/保护事件自定义视图 *：np-events.xml*
 
-2. 在 **"开始"菜单中** 键入事件查看器，然后打开 **事件查看器**。
+2. 在 **事件查看器** 中键入"开始"菜单，然后打开 **事件查看器**。
 
 3. 选择 **操作**  >  **导入自定义视图...**
 
-    ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画](images/events-import.gif)
 
 4. 导航到您为您想要的自定义视图提取 XML 文件的位置并选择它。
 
@@ -68,19 +70,18 @@ ms.locfileid: "52769313"
 
 ### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **"开始**"菜单中键入事件查看器，然后Windows **事件查看器。**
+1. 在 **事件查看器** 中键入"开始"菜单，然后Windows **事件查看器。**
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
-    ![在事件查看器窗口中突出显示"创建自定义视图"选项的动画](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![在事件查看器窗口中突出显示"创建自定义视图"选项的动画](images/events-create.gif)
 
-3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“是”。
+3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“**是**”。
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“确定”。 为筛选器指定名称。
-
-6. 它将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -145,7 +146,7 @@ ms.locfileid: "52769313"
 2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
-   ![使用事件查看器显示动画](/windows/security/threat-protection/images/event-viewer)
+   ![使用事件查看器显示动画](images/event-viewer.gif)
 
 功能 | 提供程序/源 | 事件 ID | 说明
 :-|:-|:-:|:-

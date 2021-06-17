@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5ca147c9e69168b2f15aa69bba8728567b782fa9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772073"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984456"
 ---
 # <a name="machine-resource-type"></a>计算机资源类型
 
@@ -55,6 +55,7 @@ ms.locfileid: "52772073"
 [通过标记查找计算机](find-machines-by-tag.md) | [计算机](machine.md) 集合 | 按标记 查找 [计算机](machine-tags.md)。
 [查找缺失的 KBS](get-missing-kbs-machine.md) | KB 集合 | 获取与计算机 ID 关联的缺失的 KB 列表
 [设置设备值](set-device-value.md)| [计算机](machine.md) 集合 | 设置 [设备 的值](tvm-assign-device-value.md)。
+[更新计算机](update-machine-method.md) |[计算机](machine.md) 集合 | 获取计算机的更新状态。
 
 ## <a name="properties"></a>属性
 
@@ -75,7 +76,7 @@ rbacGroupName | String | 计算机组名称。
 riskScore | Nullable Enum | 由 Microsoft Defender 终结点评估的风险评分。 可能的值包括："None"、"Informational"、"Low"、"Medium"和"High"。
 exposureScore | Nullable Enum | [由](tvm-exposure-score.md) Microsoft Defender for Endpoint 评估的曝光评分。 可能的值包括："None"、"Low"、"Medium"和"High"。
 aadDeviceId | Nullable 表示形式 Guid | 当计算机已 (AAD [时](machine.md) ，AAD 设备 ID) 。
-machineTags | String collection | 计算机 [标记](machine.md) 集。
+machineTags | 字符串集合 | 计算机 [标记](machine.md) 集。
 exposureLevel | Nullable Enum | 由 Microsoft Defender for Endpoint 评估的曝光级别。 可能的值包括："None"、"Low"、"Medium"和"High"。
 deviceValue | Nullable Enum | [设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。
 ipAddresses | IpAddress 集合 | ***IpAddress 对象*** 集。 请参阅[获取计算机 API。](get-machines.md)

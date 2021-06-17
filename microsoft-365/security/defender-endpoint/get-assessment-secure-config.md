@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe6a4604852965bdcc563ac0e410ca165bc5a088
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789334"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984852"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>导出每个设备的安全配置评估
 
@@ -34,8 +34,6 @@ ms.locfileid: "52789334"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
->
 >
 基于每个设备返回所有配置及其状态。
 
@@ -43,7 +41,7 @@ ms.locfileid: "52789334"
 
 - [导出安全配置评估 **OData：API**](#1-export-secure-configuration-assessment-odata)按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
+- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 

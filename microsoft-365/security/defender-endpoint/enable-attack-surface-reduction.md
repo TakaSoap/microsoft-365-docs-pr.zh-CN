@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: 5bdb7ed46bdf01d4fb6075f310b98dcdb98a5a7f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771917"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984792"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -54,7 +54,7 @@ ms.locfileid: "52771917"
 > [!IMPORTANT]
 > 目前，在 MEM 中配置 ASR 规则时，三个 ASR 规则不支持Microsoft Endpoint Manager (模式) 。 若要了解更多信息，请参阅 [不支持警告模式的情况](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-强烈建议将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的[Microsoft Defender](microsoft-defender-endpoint.md)中提供的高级监视和报告功能。 但是，如果您有不包含高级监视和报告功能的另一个许可证（如 Windows Professional 或 Windows E3），您可以在触发 AS (R 规则时在每个终结点生成的事件（如事件转发) ）上开发自己的监视和报告工具。
+强烈建议将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的[Microsoft Defender](microsoft-defender-endpoint.md)中提供的高级监视和报告功能。 但是，如果您具有不包含高级监视和报告功能的另一个许可证（如 Windows Professional 或 Windows E3），您可以在触发 ASR 规则时在每个终结点生成的事件（例如，事件转发 () ）上开发自己的监视和报告工具。
 
 > [!TIP]
 > 若要了解有关许可Windows，请参阅 Windows 10 [Licensing and](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
@@ -62,7 +62,7 @@ ms.locfileid: "52771917"
 可以使用以下任一方法启用攻击面减少规则：
 
 - [Microsoft Intune](#intune)
-- [移动设备管理 (MDM)](#mdm)
+- [移动设备管理 (MDM) ](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [组策略](#group-policy)
 - [PowerShell](#powershell)
@@ -137,7 +137,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI 配置](images/mem05-add-row-oma-uri.png)
 
-6. 单击“保存”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
+6. 单击“**保存**”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
 
    - 单击 **"选择范围标记"，** 选择作用域 (可选) ，然后单击"下一步 **"。**
    - 或单击" **下一步"**
@@ -172,9 +172,9 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 >[!NOTE]
 > 冲突处理：
-> 
+>
 > 如果为设备分配了两个不同的 ASR 策略，则处理冲突的方式为分配了不同状态的规则，没有实施冲突管理，因此会出现错误。
-> 
+>
 > 非冲突规则不会生成错误，并且规则将正确应用。 结果是应用第一个规则，后续的非冲突规则将合并到该策略中。
 
 ## <a name="mdm"></a>MDM
@@ -251,7 +251,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 > [!WARNING]
 > 如果使用 Intune、Configuration Manager 或其他企业级管理平台管理计算机和设备，则管理软件将在启动时覆盖任何冲突的 PowerShell 设置。 若要允许用户使用 PowerShell 定义值，请使用管理平台中规则的"用户定义"选项。
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 键入以下 cmdlet：
 
@@ -315,4 +315,4 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 - [评估攻击面减少](evaluate-attack-surface-reduction.md)
 
-- [关于减少攻击面的常见问题解答](attack-surface-reduction.md)
+- [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

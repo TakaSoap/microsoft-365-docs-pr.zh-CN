@@ -19,25 +19,26 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: b6fb9bb327816b7e166a443a0d07932d30421a19
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6b3c88f23d3ceffbca588c80b05266d12147ca39
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771689"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985020"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻击面减少功能概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-你的攻击面是组织易受网络威胁和攻击的所有位置。 Defender for Endpoint 包括多项功能，可帮助减少攻击面。 观看以下视频，详细了解攻击面减少。<p>
+攻击面是组织易受网络威胁和攻击的所有位置。 Defender for Endpoint 包括多项功能，可帮助减少攻击面。 观看以下视频，详细了解攻击面减少。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
@@ -47,7 +48,7 @@ ms.locfileid: "52771689"
 
 | 文章 | 说明 |
 |:---|:---|
-| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 此外，将容器隔离用于Microsoft Edge帮助防范恶意网站。 |
+| [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
 | [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件（ (要求Microsoft Defender 防病毒)  |
 | [网络保护](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |

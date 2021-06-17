@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903848"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984984"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
@@ -37,11 +37,11 @@ ms.locfileid: "52903848"
 
 攻击面减少规则针对某些软件行为，例如：
 
-- 启动尝试下载或运行文件的可执行文件和脚本;
-- 运行混淆的或可疑的脚本;和
-- 执行应用在正常日常工作期间通常不会启动的行为。
+- 启动尝试下载或运行文件的可执行文件和脚本
+- 运行混淆的或可疑的脚本
+- 执行应用在正常日常工作期间通常不会启动的行为
 
-此类软件行为有时在合法应用程序中可见;但是，这些行为通常被视为有风险，因为它们通常被攻击者通过恶意软件滥用。 攻击面减少规则可以限制风险行为，并有助于保证组织安全。
+此类软件行为有时在合法应用程序中可见。 但是，这些行为通常被视为有风险，因为它们通常被攻击者通过恶意软件滥用。 攻击面减少规则可以限制基于软件的风险行为，并有助于确保组织安全。
 
 有关配置攻击面减少规则的信息，请参阅启用 [攻击面减少规则](enable-attack-surface-reduction.md)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "52903848"
 
 ## <a name="audit-mode-for-evaluation"></a>评估审核模式
 
-使用 [审核模式](audit-windows-defender.md) 评估攻击面减少规则启用后对组织的影响。 首先在审核模式下运行所有规则，以便了解它们如何影响业务线应用程序。 许多业务线应用程序都是以有限的安全问题编写，它们执行任务的方式可能类似于恶意软件。 通过监视审核数据 [并添加](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) 必要应用程序的排除项，你可以部署攻击面减少规则，而不会降低工作效率。
+使用 [审核模式](audit-windows-defender.md) 评估攻击面减少规则在启用后对组织的影响。 首先在审核模式下运行所有规则，以便了解它们如何影响业务线应用程序。 许多业务线应用程序都是以有限的安全问题编写，它们执行任务的方式可能类似于恶意软件。 通过监视审核数据 [并添加](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) 必要应用程序的排除项，你可以部署攻击面减少规则，而不会降低工作效率。
 
 ## <a name="warn-mode-for-users"></a>用户警告模式
 
@@ -67,7 +67,7 @@ ms.locfileid: "52903848"
 
 运行以下版本的警告的设备上支持警告Windows：
 
-- [Windows 10版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)或更高版本
+- [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)或更高版本
 - [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)或更高版本
 
 Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
@@ -95,7 +95,7 @@ Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/
 
 此外，当触发某些攻击面减少规则时，将生成警报。
 
-通知和生成的任何警报都可以在 Microsoft 365 Defender 门户中 ()  (以前称为 Microsoft Defender 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 。 [](microsoft-defender-security-center.md)
+通知和生成的任何通知都可以在 Microsoft 365 Defender 门户 ()  (以前称为 Microsoft Defender 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 。 [](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高级搜寻和攻击面减少事件
 
@@ -114,13 +114,18 @@ Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender [for Endpoint](microsoft-defender-endpoint.md)中提供的监视、分析和工作流，以及 Microsoft 365 [Defender 中的报告和配置功能](/microsoft-365/security/defender/overview-security-center)。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
+尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 仅在 E5 中提供的高级Windows包括：
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看 defender 门户中的攻击Microsoft 365减少事件
+- Defender for Endpoint 中提供的监视、 [分析和工作流](microsoft-defender-endpoint.md)
+- 中的报告和配置[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
+
+这些高级功能不适用于 Windows Professional 或 Windows E3 许可证。 但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
+
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>查看攻击门户中的攻击Microsoft 365 Defender事件
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
-可以使用高级搜寻 在 Microsoft 365 [Defender](microsoft-defender-security-center.md)中查询 Defender 中的[终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
+可以使用高级搜寻查询 defender 的终结点[Microsoft 365 Defender](microsoft-defender-security-center.md)中的[终结点数据](advanced-hunting-query-language.md)。 如果你运行的是审核 [模式](audit-windows-defender.md)，可以使用高级搜寻了解攻击面减少规则可能会如何影响你的环境。
 
 下面是一个示例查询：
 
@@ -135,7 +140,7 @@ DeviceEvents
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
 
-2. 在"开始"菜单中 *输入单词"事件* 查看器"，以Windows事件查看器"。
+2. 在事件查看器 *中* 输入"开始"菜单事件查看器Windows事件查看器。
 
 3. 在 **"操作"** 下，**选择"导入自定义视图..."。**
 
@@ -183,15 +188,15 @@ DeviceEvents
 
 此规则阻止应用程序将易受攻击的已签名驱动程序写入磁盘。 具有获取内核访问权限的足够权限的本地应用程序可能会利用通配符、易受攻击的已签名 \-  \- 驱动程序。 易受攻击的已签名驱动程序使攻击者能够禁用或规避安全解决方案，最终导致系统泄露。
 
-此规则不会阻止加载系统中已存在的驱动程序。
+阻止 **滥用被攻击的易受** 攻击的已签名驱动程序规则不会阻止加载系统中已存在的驱动程序。
 
 >[!NOTE]
 >
-> 可以使用 [MEM OMA-URI 的 MEM OMA-URI](enable-attack-surface-reduction.md#mem) 自定义规则过程信息配置此规则。
+> 你可以为 [MEM OMA-URI 自定义规则过程信息使用此 MEM OMA-URI](enable-attack-surface-reduction.md#mem) 配置此规则。
 >
-> 此规则也可使用 [PowerShell 进行配置](enable-attack-surface-reduction.md#powershell)。
+> 您还可以使用 [PowerShell](enable-attack-surface-reduction.md#powershell)配置此规则。
 >
-> 您可以使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
+> 若要检查驱动程序，请使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 此规则在支持 ASR 的所有版本中均受支持;即：
 
@@ -212,7 +217,7 @@ GUID：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 此规则是在：
 
-- [Windows 10，版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
@@ -226,7 +231,7 @@ GUID：`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 此规则阻止Office创建子进程。 Office应用程序包括 Word、Excel、PowerPoint、OneNote 和 Access。
 
-创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程，例如生成命令提示符或使用 PowerShell 配置注册表设置。
+创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
 
 此规则是在：
 
@@ -243,7 +248,7 @@ GUID：`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>阻止从本地安全Windows窃取凭据
 
-此规则通过锁定 LSASS 服务中的本地安全机构子系统服务 (凭据) 。
+此规则通过锁定 LSASS 应用程序的本地安全颁发机构子系统服务 (凭据) 。
 
 LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows 10通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 的程序的兼容性问题。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
 
@@ -296,7 +301,7 @@ GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 - 可执行文件 (，如 .exe、.dll 或 .scr) 
 
-启动不受信任的或未知的可执行文件可能会存在风险，因为最初可能不明确这些文件是否恶意。
+启动不受信任的或未知的可执行文件可能会带来风险，因为最初可能不明确这些文件是否恶意。
 
 > [!IMPORTANT]
 > 必须 [启用云保护才能](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 使用此规则。
@@ -360,7 +365,7 @@ GUID：`D3E037E1-3EB8-44C8-A917-57927947596D`
 
 此规则Office Word、Excel 和 PowerPoint 等应用阻止恶意代码写入磁盘，从而阻止其创建潜在恶意可执行内容。
 
-滥用作为Office的恶意软件可能会尝试Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
+滥用作为Office的恶意软件可能会尝试破坏Office，将恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
 此规则是在：
 
@@ -400,17 +405,17 @@ GUID：`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
-此规则阻止Outlook子进程，同时仍允许合法Outlook进程。
+此规则阻止 Outlook 创建子进程，同时仍允许合法的 Outlook 功能。
 
-此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
+此规则可防止社会工程攻击，并防止利用代码滥用 Outlook 中的漏洞。 它还可抵御 [Outlook](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) 规则和表单攻击，攻击者可以在用户凭据遭到泄露时使用这些漏洞。
 
 > [!NOTE]
-> 此规则阻止 DLP 策略提示和工具提示Outlook。 此规则仅适用于 Outlook Outlook.com。 
+> 此规则阻止 Outlook 中的 DLP 策略提示和工具提示。 此规则仅适用于 Outlook 和 Outlook.com。
 
 此规则是在：
 
-- [Windows 10，版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名称： `Process creation from Office communication products (beta)`
@@ -430,8 +435,8 @@ GUID：`26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 此规则是在：
 
-- [Windows 10，版本 1903](/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows服务器 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows 10 版本 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune 名称：不可用
 
@@ -444,12 +449,12 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过 Microsoft [Endpoint Configuration Manager](/configmgr) 管理不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 此规则是在：
 
-- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10 版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名称： `Process creation from PSExec and WMI commands`
@@ -464,8 +469,8 @@ GUID：`d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 此规则是在：
 
-- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10 版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -475,16 +480,16 @@ Configuration Manager 名称： `Block untrusted and unsigned processes that run
 
 GUID：`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>阻止从宏Office Win32 API 调用
+### <a name="block-win32-api-calls-from-office-macros"></a>阻止从 Office 宏调用 Win32 API
 
 此规则阻止 VBA 宏调用 Win32 API。
 
-OfficeVBA 启用 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
+Office VBA 支持 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
 
 此规则是在：
 
-- [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10 版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -509,8 +514,8 @@ GUID：`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 此规则是在：
 
-- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10 版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -519,5 +524,3 @@ Intune 名称： `Advanced ransomware protection`
 Configuration Manager 名称： `Use advanced protection against ransomware`
 
 GUID：`c1db55ab-c21a-4637-bb3f-a12568109d35`
-
-

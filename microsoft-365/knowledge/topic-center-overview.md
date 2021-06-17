@@ -1,6 +1,5 @@
 ---
-title: Microsoft Viva 主题中的主题中心概述
-description: 了解 Microsoft Viva 主题中的主题中心。
+title: 主题中心概述Microsoft Viva Topics
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -14,16 +13,17 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+description: 了解本主题中的主题Microsoft Viva Topics。
+ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583588"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984924"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主题中的主题中心概述
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题中心概述Microsoft Viva Topics
 
-在 Microsoft Viva 主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 在管理中心的[Viva 主题设置过程中](set-up-topic-experiences.md)Microsoft 365创建。
+在Microsoft Viva Topics中，主题中心是一个SharePoint网站，可用作组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
 
 主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。 
 
@@ -34,7 +34,7 @@ ms.locfileid: "52583588"
 主题中心在 Viva 主题设置期间创建。 设置完成后，管理员可以在主题中心管理页面上[找到 URL。](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. 在管理Microsoft 365，选择"设置"，然后选择"**组织设置"。**
+1. In the Microsoft 365 管理中心， select **设置**， and then select **Org settings**.
 2. 在"**服务"** 选项卡上，选择"**主题体验"。**
 
     ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
@@ -69,7 +69,7 @@ ms.locfileid: "52583588"
 
 ## <a name="manage-topics-page"></a>"管理主题"页
 
-若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在知识管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过管理中心Microsoft 365用户[](topic-experiences-knowledge-rules.md)。
+若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在[Viva](set-up-topic-experiences.md)主题设置期间向用户分配这些权限，或者管理员随后可以通过用户[](topic-experiences-knowledge-rules.md)策略添加Microsoft 365 管理中心。
 
 在 **"管理主题** "页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。 每个主题将显示主题的发现日期。 分配了管理主题权限的用户可以查看未确认的主题，并选择：
 

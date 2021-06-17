@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932862"
+ms.locfileid: "52950055"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -268,7 +268,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 **脚注：**
 
-<sup>\*</sup> 对于不将内容标记为记录或法规记录的保留标签，审核事件仅限于 SharePoint 中的项应用、更改或删除标签时。 有关保留标签的审核详细信息，请参阅此页上的[审核保留操作](#auditing-retention-actions)部分。
+<sup>\*</sup> 对于不将内容标记为记录或法规记录的保留标签，审核事件仅限于 SharePoint 中的项或OneDrive 应用、更改或删除标签时。 有关保留标签的审核详细信息，请参阅此页上的[审核保留操作](#auditing-retention-actions)部分。
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>组合保留策略和保留标签
 
@@ -395,7 +395,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 记录为审核事件的保留操作仅适用于保留标签，不适用于保留策略：
 
-- 在 SharePoint 中的项中应用、更改或删除保留标签时：
+- 在 SharePoint 或 OneDrive 的项中应用、更改或删除保留标签时：
     - 从 **文件和页面活动**，选择 **已更改文件保留标签**。 
 
 - 当 SharePoint 中标记的项标记为记录，并且用户将其解锁或锁定时：
@@ -404,7 +404,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 - 将内容标记为记录或法规记录的保留标签应用于 Exchange 中的项时：
     - 从 **Exchange 邮箱活动中**，选择 **已标记消息为记录**
 
-- 当 SharePoint 或 Exchange 中标记的项标记为记录或法规记录，并将其永久删除时：
+- 当 SharePoint，OneDrive 或 Exchange 中标记的项标记为记录或法规记录，并将其永久删除时：
     - 从 **文件和页面活动**，选择 **已删除标记为记录的文件**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet

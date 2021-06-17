@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3a65fb6d5d3e5c6e68e100aa3ea2b4cf896dc281
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789333"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984840"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -34,14 +34,12 @@ ms.locfileid: "52789333"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
->
 >
 不同的 API 调用用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
 
 - [导出软件清单评估 **OData**](#1-export-software-inventory-assessment-odata) API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
+- [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 

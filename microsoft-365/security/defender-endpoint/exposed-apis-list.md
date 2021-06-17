@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 61c7c8022ed89a4d10e5737e2dcdf92a4375bedd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770405"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984996"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>支持的 Microsoft Defender for Endpoint API
 
@@ -62,7 +62,7 @@ ms.locfileid: "52770405"
 :---|:---
 [高级搜寻](run-advanced-query-api.md) | 从 API 运行查询。
 [警报方法和属性](alerts.md) | 运行 API 调用，如 \- 获取警报、创建警报、更新警报等。
-[导出每个设备的评估方法和属性](get-assessmnt-1methods-properties.md) | 运行 API 调用，如 \- 导出安全配置评估、导出软件清单评估和导出软件漏洞评估。
+[导出每个设备的评估方法和属性](get-assessment-methods-properties.md) | 运行 API 调用以按设备收集漏洞评估，例如：导出安全配置评估、导出软件清单评估、导出软件漏洞评估和增量导出软件 \- 漏洞评估。
 [自动调查方法和属性](investigation.md) | 运行 API 调用，如 \- 获取调查集合。
 [获取域相关警报](get-domain-related-alerts.md) | 运行 API 调用，如 \- 获取与域相关的设备、域统计信息等。
 [文件方法和属性](files.md) | 运行 API 调用，如 \- 获取文件信息、文件相关警报、文件相关设备和文件统计信息。

@@ -14,17 +14,16 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861211"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984720"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -33,7 +32,7 @@ ms.locfileid: "52861211"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-攻击面减少规则有助于防止恶意软件通常用来危害设备或网络的操作。 攻击面减少规则有助于关闭恶意软件和勒索软件使用的许多常见入口点。 
+攻击面减少规则有助于防止恶意软件通常用来危害设备或网络的操作。 攻击面减少规则有助于关闭恶意软件和勒索软件使用的许多常见入口点。
 
 为运行以下任一版本和版本的设备设置攻击面减少Windows：
 
@@ -43,9 +42,9 @@ ms.locfileid: "52861211"
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
-> 在客户端上启用攻击服务Windows Server 2016可能会导致意外结果并影响服务器性能。 建议不要启用攻击面减少规则或将攻击面减少规则部署到不受支持的平台。
+> 在客户端上启用攻击Windows Server 2016规则可能会导致意外结果，并影响服务器性能。 建议不要启用攻击面减少规则或将攻击面减少规则部署到不受支持的平台。
 
-了解如何通过启用审核模式直接在你的组织中测试功能来评估攻击面减少规则。
+了解如何通过启用审核模式直接在你的组织中测试[](audit-windows-defender.md)功能来评估攻击面减少规则。
 
 > [!TIP]
 > 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认功能是否正常工作并查看其工作方式。
@@ -91,6 +90,6 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 ## <a name="see-also"></a>另请参阅
 
-* [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
-* [使用审核模式评估Windows Defender](audit-windows-defender.md)
-* [关于攻击面减少的常见问题解答](attack-surface-reduction.md)
+- [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
+- [使用审核模式评估Windows Defender](audit-windows-defender.md)
+- [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

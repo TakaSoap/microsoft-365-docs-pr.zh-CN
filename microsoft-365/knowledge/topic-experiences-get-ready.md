@@ -1,6 +1,6 @@
 ---
-title: 使环境准备好使用 Microsoft Viva 主题
-description: 准备好环境，以便使用 Microsoft Viva 主题尽可能为用户提供内容。
+title: 使环境准备好进行Microsoft Viva Topics
+description: 准备好你的环境，以便你可以为用户提供尽可能多的内容，Microsoft Viva Topics。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917388"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984876"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>使环境准备好使用 Microsoft Viva 主题
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>使环境准备好进行Microsoft Viva Topics
 
 为了充分利用 Viva 主题，您希望包含尽可能多的主题发现内容，以便为用户提供一组丰富的主题。 但是，哪些内容应该用于主题发现？ 如何在保持控制的同时最大化已编制索引的内容？ 范围内的内容越多，人工智能可以发现的见解就越好。 本文将指导你完成规划步骤，以确保包含适当的内容，并且具有合适的人员和资源来为用户提供良好的体验。
 
 若要规划 Viva 主题，您需要：
 
-![迁移、连接、现代化、安全并确定载入知识管理的步骤](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![迁移、连接、现代化、安全，并确定载入 Viva 主题的步骤。](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [将内容迁移到SharePoint](#1-migrate-content-to-microsoft-365)
     - 主题索引仅包括网站SharePoint内容。
       - 如果可能，请从外部源将SharePoint内容迁移到 SharePoint Online 中。
       - 确定内容源的优先级，这些内容源具有很高的引文知识的可能性。
-      - 强调知识管理的好处，鼓励用户将内容从OneDrive移动到SharePoint网站。
+      - 强调 Viva 主题的好处，鼓励用户将内容从 OneDrive 移动到SharePoint网站。
 
 2. [连接信息到 Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - 将来，外部内容可以进入知识图表并可用。
@@ -73,7 +73,7 @@ ms.locfileid: "50917388"
 
 如果无法迁移某些内容，请将其与 Microsoft Graph：
 
-- 请考虑实现[Graph连接器。](/microsoftsearch/connectors-overview) 通过使用连接器，可以将外部内容索引到 Microsoft Graph，然后用户可以通过 Microsoft 搜索发现它。
+- 请考虑实现[Graph连接器。](/microsoftsearch/connectors-overview) 通过使用连接器，可以将外部内容索引到 Microsoft Graph，然后用户可以通过连接器Microsoft 搜索。
 - 未来的开发将外部数据引入 Viva 主题。
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. SharePoint页面
@@ -104,7 +104,7 @@ ms.locfileid: "50917388"
 
 除了权限之外，还可以控制可通过主题发现内容的范围。 您始终可以控制所编制索引的索引。
 
-管理员可以在管理中心Microsoft 365索引。 设置知识管理 [时](set-up-topic-experiences.md)，您可以：
+管理员可以在管理中心Microsoft 365 管理索引。 设置 [Viva 主题时](set-up-topic-experiences.md)，您可以：
 
 - 允许所有 SharePoint 站点上的发现，或指定要包含或排除的站点作为主题源。
 - 具有敏感条款时，还可按名称排除主题。 例如，无论用户的权限如何，如果有敏感项目的名称，都不希望出现突出显示或卡片，则可以排除该项目名称。
@@ -128,9 +128,9 @@ ms.locfileid: "50917388"
 | 设置 Viva 主题 | 拥有主题的管理和质量 | 基于他们的专业知识为主题做贡献。 |
 | 确保强制实施安全性和合规性标准并了解许可协议。| 执行主题管理任务，如创建、编辑、删除和拒绝主题。 支持主题参与者执行其任务。 | 在主题页面上组织信息和内容，包括将哪些人员和资源固定到该主题。 |
 
-好友动态和卡片将在用户工作上下文中显示，例如，当用户浏览 SharePoint 中的新式页面时。 您可以控制主题的最终用户体验。
+用户将在工作环境中显示突出显示和卡片，例如，当用户在 SharePoint 中浏览新式页面时。 您可以控制主题的最终用户体验。
 
-- Who主题？ 主题可见性在管理中心Microsoft 365配置。 选择要允许查看主题的组：
+- Who主题？ 主题可见性在中心Microsoft 365 管理配置。 选择要允许查看主题的组：
   - 组织中的每个人。 "每个人"不包括来宾，它是目录中的所有内部用户
   - 仅所选人员或安全 (此选项在您仍然推出 Viva 主题时) 。 如果希望来宾查看主题，将需要使用"所选人员或安全组"选项，并授予他们许可证。
   - 没有人。

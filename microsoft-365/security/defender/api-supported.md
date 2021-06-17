@@ -1,7 +1,7 @@
 ---
 title: 支持的 Microsoft 365 Defender API
 description: 支持的 Microsoft 365 Defender API
-keywords: Microsoft 365Defender， API， api
+keywords: Microsoft 365 Defender、API、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730938"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985080"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>支持的 Microsoft 365 Defender API 
 
@@ -43,7 +43,7 @@ ms.locfileid: "52730938"
 -|-
 [高级搜寻 API](api-advanced-hunting.md) | 运行高级搜寻查询。
 [事件 API](api-incident.md) | 列出和更新事件以及其他实际任务。
-[流式 API](../defender-endpoint/raw-data-export.md) (预览)  | 在单个数据流中发生时发送实时事件和警报。
+[流式 API](streaming-api.md) (预览)  | 在单个数据流中发生时发送实时事件和警报。
 
 ### <a name="endpoint-uris"></a>终结点 URI
 
@@ -59,8 +59,8 @@ ms.locfileid: "52730938"
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365Defender API 概述](api-overview.md)
-- [访问 Microsoft 365 Defender API](api-access.md)
-- [流式处理 API](../defender-endpoint/raw-data-export.md)
+- [Microsoft 365 DefenderAPI 概述](api-overview.md)
+- [访问Microsoft 365 Defender API](api-access.md)
+- [Streaming API](../defender-endpoint/raw-data-export.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：与从德国 Microsoft 云迁移相关的云解决方案提供商的其他信息。
-ms.openlocfilehash: 7a7c377d8e0b72a0179ff28a93018f88d22a5325
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52931043"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984912"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>云解决方案提供商的其他信息
 
@@ -37,6 +37,6 @@ ms.locfileid: "52931043"
 
 ## <a name="missing-subscriptions-in-azure"></a>Azure 中缺少订阅
 
-完成 [订阅和许可证 (阶段 3) ， ](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) 云解决方案提供商将无法访问 Azure 订阅。
+完成 [订阅和许可证 (阶段 3) ， ](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer) 云解决方案提供商将无法访问 Azure 订阅。
 
 若要恢复访问权限，请按照以下步骤 [提升访问权限，以管理所有 Azure 订阅和管理组](/azure/role-based-access-control/elevate-access-global-admin)。

@@ -14,16 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782869"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985416"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +38,7 @@ ms.locfileid: "52782869"
 了解如何通过排除文件和文件夹或向用户计算机上[](#exclude-files-and-folders)显示的通知警报添加自定义文本[](#customize-the-notification)来自定义攻击面减少规则。
 
 你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
+
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
@@ -48,7 +50,7 @@ ms.locfileid: "52782869"
 
 例如，请考虑勒索软件规则：
 
-勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则会出错，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
+勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则错误应谨慎处理，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
 
 如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC (IOC) 的"允许列表"功能来取消阻止文件本身。  
 
@@ -97,7 +99,7 @@ ms.locfileid: "52782869"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -119,7 +121,7 @@ ms.locfileid: "52782869"
 
 ## <a name="related-topics"></a>相关主题
 
-* [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
-* [启用攻击面减少规则](enable-attack-surface-reduction.md)
-* [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
-* [关于攻击面减少的常见问题解答](attack-surface-reduction.md)
+- [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
+- [启用攻击面减少规则](enable-attack-surface-reduction.md)
+- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+- [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

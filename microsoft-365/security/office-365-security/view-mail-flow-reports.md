@@ -19,12 +19,12 @@ description: 管理员可以了解安全与合规中心的"报告"仪表板中&�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245668"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985500"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全与合规中心的"报告"仪表板中&邮件流报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "52245668"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-除了安全与合规中心内"邮件流"仪表板中[](mail-flow-insights-v2.md)提供的邮件流报告之外，"报告"仪表板中还提供了各种其他邮件流报告，以帮助您监视 Microsoft 365 组织。 &
+除了安全 & 合规中心的邮件流仪表板中提供[](mail-flow-insights-v2.md)的邮件流报告之外，报告仪表板中还提供了各种其他邮件流报告，以帮助您监视 Microsoft 365 组织。
 
 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在安全与合规中心内查看这些报告 [&"报告仪表板](https://protection.office.com) \> **"。** 若要直接转到"报表"仪表板，请打开 <https://protection.office.com/insightdashboard> 。
 
@@ -95,29 +95,29 @@ ms.locfileid: "52245668"
 
 若要返回到报告报表视图，请单击"查看 **报告"。**
 
-## <a name="exchange-transport-rule-report"></a>Exchange传输规则报告
+## <a name="exchange-transport-rule-report"></a>Exchange 传输规则报告
 
-**"Exchange传输** 规则"报告显示邮件流规则对 (传入和传出邮件) 传输规则的影响。
+**Exchange 传输规则报告显示** 邮件流规则对组织中 (传输规则) 传入和传出邮件的影响。
 
-若要查看报告，请打开安全与 [](https://protection.office.com)合规&，**转到报告** 仪表板 \> ，然后选择"Exchange **规则"。** 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
+若要查看报告，请打开安全与合规 [&，转到](https://protection.office.com)**报告仪表板** \> ，然后选择 **Exchange 传输规则**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![Exchange仪表板中的"传输规则"小组件](../../media/transport-rule-report-widget.png)
+![报告仪表板中的 Exchange 传输规则小组件](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>传输规则Exchange报告视图
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange 传输规则报告的报告视图
 
 以下图表可用于报表视图：
 
-- **查看数据者：Exchange传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
+- **查看数据者：Exchange 传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
 
-- **查看数据者：Exchange传输规则** \>**按以下值进行** 分解：严重性：此图表显示高严重性和中等严重性和 **低严重性邮件的数量**。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅邮件[流规则操作Exchange Online。](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **查看数据者：Exchange 传输规则** \>**按以下值进行** 分解：严重性：此图表显示高严重性和中等严重性和 **低严重性邮件的数量**。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅 Mail [flow rule actions in Exchange Online。](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **查看数据者：DLP Exchange传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) rules. 您可以通过选择以下选项来进一步优化图表：
+- **查看数据者：DLP Exchange 传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) rules. 您可以通过选择以下选项来进一步优化图表：
 
   - **显示数据：所有 DLP 传输规则**
   - **显示针对：遭到入侵的用户的数据**
   - **显示数据：检测到美国爱国者法案的内容量较低**
 
-- **查看数据者：DLP Exchange传输规则** \>**Break down by： Direction**： This view shows the number of **High severity** and **Medium severity**， and Low **severity messages** that were affected by DLP transport rules. 您可以通过选择以下选项来进一步优化图表：
+- **查看数据者：DLP Exchange 传输规则** \>**Break down by： Direction**： This view shows the number of **High severity** and **Medium severity**， and Low **severity messages** that were affected by DLP transport rules. 您可以通过选择以下选项来进一步优化图表：
 
   - **显示数据：所有 DLP 传输规则**
   - **显示针对：遭到入侵的用户的数据**
@@ -129,13 +129,13 @@ ms.locfileid: "52245668"
 - 方向值
 - 严重性值
 
-![传输规则Exchange中的报告视图](../../media/transport-rule-report-report-view.png)
+![Exchange 传输规则报告中的报告视图](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>传输规则报告的详细信息Exchange视图
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange 传输规则报告的详细信息表视图
 
 如果单击 **"查看详细信息表**"，显示的信息取决于您所查看的图表：
 
-- **查看数据者：Exchange传输规则**：
+- **查看数据者：Exchange 传输规则**：
 
   - **Date**
   - **传输规则**
@@ -145,7 +145,7 @@ ms.locfileid: "52245668"
   - **严重性**
   - **方向**
 
-- **查看数据者：DLP Exchange传输规则**：
+- **查看数据者：DLP Exchange 传输规则**：
 
   - **Date**
   - **DLP 策略**
@@ -166,7 +166,7 @@ ms.locfileid: "52245668"
 
 ## <a name="forwarding-report"></a>转发报告
 
-转发 **报告显示** 组织自动将邮件从邮箱转发到Exchange Online域。 转发的邮件可能会带来安全或合规性风险，并可能指示帐户遭到入侵。
+转发 **报告显示** 您的组织自动将邮件从 Exchange Online 邮箱转发到外部域。 转发的邮件可能会带来安全或合规性风险，并可能指示帐户遭到入侵。
 
 若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> ，然后选择 **转发报告**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -450,7 +450,7 @@ If you click **Choose a category for more details**， you can select from the f
 
   ![已发送和已接收电子邮件报告中的方向视图](../../media/sent-and-received-email-report-direction-view.png)
 
-- **向下钻取** \>**恶意软件 (反恶意软件) ：** 此选择将你带至电子邮件 [报告中的恶意软件检测](view-email-security-reports.md#malware-detections-in-email-report)。
+- **向下钻取** \>**恶意软件 (反恶意软件) ：** 此选择将你带至 [恶意软件检测报告](view-email-security-reports.md#malware-detections-report)。
 
 - **向下钻取** \>**垃圾邮件检测) ：** 此选择将您带至 [垃圾邮件检测报告](view-email-security-reports.md#spam-detections-report)。
 
@@ -545,7 +545,7 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 - **组织管理**
 - **安全管理员**
 - **安全读者**
-- **全局读取者**
+- **全局读者**
 
 有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 

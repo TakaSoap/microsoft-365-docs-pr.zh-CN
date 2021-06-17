@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950019"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984900"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
@@ -39,14 +39,14 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 *主题*。 它会编译
 
 通过以下方式向用户显示主题：
 
-- [网页中](topic-experiences-overview.md#topic-highlights)的主题SharePoint突出显示
+- [在页面SharePoint](topic-experiences-overview.md#sharepoint-highlights)突出显示的主题
 - 搜索结果中 [的主题答案](topic-experiences-overview.md#search-results)
 - Office 应用程序中 [的搜索](topic-experiences-overview.md#office-application-search)
 - [主题中心](topic-experiences-overview.md#topic-center) 主页
 
-### <a name="topic-highlights"></a>主题要点
+### <a name="sharepoint-highlights"></a>SharePoint突出显示
 
-当 SharePoint 新闻和页面上的内容中提及主题时，你将看到其突出显示。 你可以从突出显示中打开主题摘要。 打开摘要标题中的主题详细信息以查看整个主题页面。 提及的主题可以自动标识，或者已由页面作者直接引用该主题添加到页面。 
+当 SharePoint 新闻和页面上的内容中提及主题时，你将看到其突出显示。 你可以从突出显示中打开主题摘要。 打开摘要标题中的主题详细信息以查看整个主题页面。 提及的主题可以自动标识，也可以由页面作者直接引用。 
 
    ![显示主题突出显示的屏幕截图。](../media/knowledge-management/saturn.png) 
 
