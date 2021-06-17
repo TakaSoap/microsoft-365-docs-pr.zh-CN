@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在安全与合规中心内创建警报策略Office 365 Microsoft 365监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 2fe23f3e6d6889c3fc80b94be6a07095e06d3d68
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950115"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964724"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心警报策略
 
@@ -285,11 +285,11 @@ To see which category a default alert policy is assigned to， see the table in 
 
   - 执行警报所跟踪的活动次数。 此数字可能与"查看警报"页上列出的相关警报的实际数量不匹配，因为可能触发了更多警报。
 
-  - 指向活动列表的链接，其中包含触发警报的每个活动的项目。 此列表的每个条目都标识活动何时发生、实际操作的名称 (如"FileDeleted") 、执行活动的用户、对象 (（如文件、电子数据展示案例或邮箱) ，执行活动）的用户以及用户计算机的 IP 地址。 对于与恶意软件相关的警报，此链接指向邮件列表。
+  - 指向活动列表的链接，其中包含触发警报的每个活动的项目。 此列表的每个条目都标识活动发生的时间、实际操作的名称 (如"FileDeleted") 、执行活动的用户、对象 (（如文件、电子数据展示案例或执行活动的邮箱) ）以及用户计算机的 IP 地址。 对于与恶意软件相关的警报，此链接指向邮件列表。
 
   - 名称 (和) 警报策略的名称。
 
-- **禁止电子邮件通知。** 你可以关闭 (或禁止) 从警报的飞出页面发送电子邮件通知。 当您禁止电子邮件通知时，Microsoft 不会在符合警报策略条件的活动或事件时发送通知。 但是，当用户执行的活动与警报策略的条件匹配时，将触发警报。 您还可以通过编辑警报策略来关闭电子邮件通知。
+- **禁止电子邮件通知。** 你可以关闭 (或禁止) 从警报的飞出页面发送电子邮件通知。 当您禁止电子邮件通知时，当发生与警报策略条件匹配的活动或事件时，Microsoft 不会发送通知。 但是，当用户执行的活动与警报策略的条件匹配时，将触发警报。 您还可以通过编辑警报策略来关闭电子邮件通知。
 
 - **解决警报。** 可以在警报的飞出页面上将警报标记为已解决 (将警报的状态设置为"已解决) "。  除非您更改筛选器，否则已解决的警报不会显示在" **查看警报"** 页上。
 
