@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926519"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007438"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender 防病毒应用中Windows 安全中心
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -36,7 +33,7 @@ ms.locfileid: "52926519"
 设置以前属于 Windows Defender 客户端和主 Windows 设置 的客户端已组合并移动到新应用，该应用默认作为 Windows 10 版本 1703 的一部分安装。
 
 > [!IMPORTANT]
-> 禁用 Windows 安全中心 中心服务不会禁用Microsoft Defender 防病毒或[Windows Defender 防火墙。](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) 当安装第三方防病毒或防火墙产品并保持最新时，将自动禁用这些功能。
+> 禁用 Windows 安全中心 中心服务不会禁用Microsoft Defender 防病毒或[Windows Defender防火墙。](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) 当安装第三方防病毒或防火墙产品并保持最新时，将自动禁用这些功能。
 >
 > 如果禁用 Windows 安全中心 中心服务，或将其关联的组策略设置配置为阻止其启动或运行，Windows 安全中心 应用可能会显示有关设备上安装的任何防病毒或防火墙产品的过时或不准确信息。
 > 如果具有Microsoft Defender 防病毒或过时的第三方防病毒程序，或者卸载之前可能安装的任何第三方防病毒产品，它也可能阻止用户自行启用。
@@ -48,7 +45,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>查看应用程序应用中的病毒和威胁Windows 安全中心设置
 
-![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="病毒和威胁防护应用中Windows 安全中心设置":::
 
 1. 通过Windows 安全中心任务栏中的防护图标或搜索 Defender 的"开始"菜单打开"开始 **"菜单。**
 
@@ -69,7 +66,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>查看安全智能更新版本，并下载 Windows 安全中心 应用中的最新更新
 
-![安全智能版本号信息](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="安全智能版本号":::
 
 1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
@@ -109,10 +106,10 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 |排除类型  |定义者  |发生的情况  |
 |---------|---------|---------|
-|**文件** |位置 <br/>例如：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
-|**Folder**    |位置 <br/>例如：`c:\test\sample`       |指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。         |
-|**文件类型**   |文件扩展名 <br/>例如：`.test` |设备上任意位置 `.test` 具有扩展名的所有文件都将被用户跳过Microsoft Defender 防病毒。         |
-|**进程**     |可执行文件路径 <br>例如：`c:\test\process.exe`         |特定进程以及该流程打开的任何文件都将被用户跳过Microsoft Defender 防病毒。         |
+|**文件** |位置 <br/>示例：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
+|**Folder**    |位置 <br/>示例：`c:\test\sample`       |指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。         |
+|**文件类型**   |文件扩展名 <br/>示例：`.test` |设备上任意位置 `.test` 具有扩展名的所有文件都将被用户跳过Microsoft Defender 防病毒。         |
+|**进程**     |可执行文件路径 <br>示例：`c:\test\process.exe`         |特定进程以及该流程打开的任何文件都将被用户跳过Microsoft Defender 防病毒。         |
 
 若要了解详细信息，请参阅以下资源：
 - [根据文件扩展名和文件夹位置配置和验证排除项](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 

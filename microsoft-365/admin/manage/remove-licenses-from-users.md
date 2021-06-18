@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 用于取消分配产品许可证的方法取决于是取消分配特定用户许可证还是从特定产品分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: f7624432590a5731b57c45c25e7e7dc458a5b8f5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f79ffecc22fe4531076ccacd83c25e44b81052a6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623585"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006969"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
@@ -76,19 +76,19 @@ ms.locfileid: "52623585"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -100,33 +100,33 @@ ms.locfileid: "52623585"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 2. 选择要取消分配许可证的用户姓名旁边的圆圈。
-3. 在顶部选择三个点（更多操作），然后选择“**管理产品许可证**”。
-4. 在“**管理产品许可证**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
-5. 在"替换现有产品"窗格的底部，选中"从所选用户删除所有产品许可证"复选框，然后选择"替换"" \> **关闭"。**
+3. 在顶部，选择管理 **产品许可证**。
+4. 在"**管理产品许可证"** 窗格中，选择"**取消分配所有**  >  **保存更改"。**
+5. 在窗格底部，选择"完成 **"。**  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>删除用户许可证时，用户数据会发生什么情况？
 
 - 从用户删除许可证后，Exchange帐户关联的联机数据将进行 30 天。 30 天宽限期后，数据将被删除且无法恢复。
-- 保存OneDrive for Business的文件不会删除，除非用户已从管理中心Microsoft 365 Active Directory 同步删除。 有关详细信息，请参阅OneDrive[和删除](/onedrive/retention-and-deletion)。
+- 保存OneDrive for Business的文件不会删除，除非用户已从 active Directory Microsoft 365 管理中心或 Active Directory 同步中删除。 有关详细信息，请参阅OneDrive[和删除](/onedrive/retention-and-deletion)。
 - 删除许可证后，用户邮箱将不再可用电子数据展示工具（如内容搜索或Advanced eDiscovery。 有关详细信息，请参阅 Content Search in Microsoft 365 中的"搜索断开连接或已取消[许可的Microsoft 365。](../../compliance/content-search.md)
-- 如果你有一个Enterprise订阅，Office 365 企业版 E3，Exchange Online使用非活动邮箱保留已删除用户帐户的[邮箱数据](../../compliance/inactive-mailboxes-in-office-365.md)。 有关详细信息，请参阅 Create [and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md)。
+- 如果你有一个Enterprise订阅，Office 365 Enterprise E3，Exchange Online使用非活动邮箱保留已删除用户帐户的[邮箱数据](../../compliance/inactive-mailboxes-in-office-365.md)。 有关详细信息，请参阅 Create [and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md)。
 - 若要了解如何在删除用户的许可证后阻止Microsoft 365访问数据，以及如何在以后获取数据访问权限，请参阅删除[以前的员工](../add-users/remove-former-employee.md)。
 - 如果你删除用户的许可证，并且他们仍然安装了Office，则当他们使用 Office 应用时，[](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)他们会看到"未授权的产品"和Office错误。
 

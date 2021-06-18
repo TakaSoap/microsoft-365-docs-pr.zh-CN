@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635386"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007161"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
@@ -60,7 +60,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 - **协作** &ndash;了解组织中人员如何使用 OneDrive 和 SharePoint 来存储文档和相互协作，以及这些趋势如何逐渐变化。 还可以查看在内部或外部共享的文档数，以及所有者和其他协作者SharePoint使用的 SharePoint 或 OneDrive 帐户数。
 
-- **存储** &ndash;使用此报告可跟踪邮箱、OneDrive和SharePoint存储。
+- **存储空间** &ndash;使用此报告可跟踪邮箱、OneDrive和SharePoint存储。
 
 - **移动性** &ndash;跟踪用户用于连接到电子邮件、Teams、Skype 或 Yammer 的客户端Yammer。
 
@@ -68,7 +68,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 激活和许可证页提供有关激活Microsoft 365报告;即，有多少用户已下载并激活Office应用以及你的组织已分配的许可证数。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
 
-- **激活** &ndash;跟踪服务 (，例如Microsoft 365 企业应用版、Project和Visio) 激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用此部分中的报告来查看用户已安装在应用中Office设备。 请注意，若要激活计划，用户必须安装应用，然后使用其帐户登录。
+- **激活** &ndash;跟踪服务 (，例如Microsoft 365 企业版应用、Project和Visio) 激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用此部分中的报告来查看用户已安装在应用中Office设备。 请注意，若要激活计划，用户必须安装应用，然后使用其帐户登录。
 
 - **许可** &ndash; 此报告包含许可证类型的概述、分配了每种许可证类型的用户数以及每月的许可证分配分布。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
 
@@ -105,7 +105,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>如何获取与此仪表板关联的 pbit 文件？
 
-你可以从 Microsoft 下载中心访问 pbit [文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。
+你可以从 Microsoft 下载中心访问 pbit [文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Who仪表板和报表吗？
 
@@ -129,7 +129,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>模板应用中的数据与使用情况报告中的数据如何不同？
 
-在模板应用中看到的基础数据与你在管理中心的活动报告中Microsoft 365数据。 主要区别是管理中心数据可用于过去 7/30/90/180 天，而模板应用每月显示数据最多 12 个月。
+在模板应用中看到的基础数据与你在活动报告中看到的数据Microsoft 365 管理中心。 主要区别是管理中心数据可用于过去 7/30/90/180 天，而模板应用每月显示数据最多 12 个月。
 
 此外，模板应用中的用户级别详细信息仅适用于分配了产品许可证并执行了活动的用户的上一个完整月。
 

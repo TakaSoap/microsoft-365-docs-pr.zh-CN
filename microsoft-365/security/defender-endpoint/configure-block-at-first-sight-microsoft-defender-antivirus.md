@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274948"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964695"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274948"
 此文章解释了名为“首次看到时阻止”的防病毒/防恶意软件功能，并介绍了如何为组织启用“首次看到时阻止”功能。 
 
 > [!TIP]
-> 此文章适合的读者为管理组织安全设置的企业管理员和 IT 专业人员。 如果你不是企业管理员或 IT 专业人员，但你对“首次看到时阻止”有疑问的话，请参阅[不是企业管理员或 IT 专业人员？](#not-an-enterprise-admin-or-it-pro)。
+> 此文章适合的读者为管理组织安全设置的企业管理员和 IT 专业人员。 如果你不是企业管理员或 IT 专业人员，但你对“首次看到时阻止”有疑问，请参阅[不是企业管理员或 IT 专业人员？](#not-an-enterprise-admin-or-it-pro)部分。
 
 ## <a name="what-is-block-at-first-sight"></a>什么是“首次看到时阻止”？
 
@@ -55,7 +52,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 ![Microsoft Defender AV 引擎列表](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> 若要了解更多，请参阅此博客：[了解 Microsoft Defender for Endpoint 下一代保护的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
+> 若要了解更多信息，请参阅[（博客）了解 Microsoft Defender for Endpoint 下一代保护的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>关于“首次看到时阻止”的一些须知
 
@@ -149,7 +146,9 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
 ## <a name="validate-block-at-first-sight-is-working"></a>验证“首次看到时阻止”是否正常工作
 
-你可以按照[验证网络和云之间的连接](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)中所述的步骤来验证该功能是否正常工作。
+若要验证该功能是否正常工作，请下载[“首次看到时阻止”示例文件](https://demo.wd.microsoft.com/Page/BAFS)。 若要下载该文件，你需要在 Azure AD 中拥有分配有安全管理员或全局管理员角色的帐户。
+
+若要验证该功能是否正常工作，请按照[验证网络和云之间的连接](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)中的指导进行操作。 
 
 ## <a name="turn-off-block-at-first-sight"></a>关闭“首次看到时阻止”
 

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275368"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007620"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
@@ -47,7 +47,7 @@ ms.locfileid: "52275368"
 Get-MpThreatDetection
 ```
 
-![PowerShell cmdlet 和输出的屏幕截图](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell cmdlet 和输出的屏幕截图":::
 
 你可以指定 `-ThreatID` 将输出限制为只显示特定威胁的检测。
 
@@ -57,7 +57,7 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-![PowerShell 屏幕截图](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 代码":::
 
 请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender/) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。
 

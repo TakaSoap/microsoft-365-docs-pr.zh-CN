@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 你必须是商业版订阅的管理员，才能获得管理员帮助，或在线或电话Microsoft 365 商业高级版。
-ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
-ms.translationtype: MT
+description: 你必须是企业订阅的管理员，才能在 Microsoft 365 商业高级版中获取管理员帮助或在线/电话支持。
+ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635898"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984744"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -258,6 +258,6 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 ## <a name="related-content"></a>相关内容
 
-[查找文档和培训](find-help-answers.md) (文章) \
-[Employee quick setup (](employee-quick-setup.md) article) \
-[设置Microsoft 365 商业高级版视频](setup-overview.md) (概述) 
+[查找文档和培训](find-help-answers.md)（文章）\
+[员工快速设置](employee-quick-setup.md)（文章）\
+[Microsoft 365 商业高级版设置概述](setup-overview.md)（视频）

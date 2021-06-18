@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998796"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006909"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -70,7 +70,7 @@ ms.locfileid: "52998796"
 
 你最多可以创建四个其他组主题。
 
-1. 在 **"常规** "页上，输入主题的名称。
+1. 在 **"常规** "页上，输入新主题的名称。
 
 2. 在 **"** 组"下，你最多可以选择 5 Microsoft 365查看你的组主题的组，而不是使用默认主题。 您还可以阻止用户覆盖其主题和显示用户显示名称。
 

@@ -1,6 +1,6 @@
 ---
 title: 使用篡改保护保护安全设置
-ms.reviewer: shwjha, hayhov
+ms.reviewer: pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: 使用防篡改保护防止恶意应用更改重要安全设置。
 keywords: 恶意软件， defender， 防病毒， 防篡改保护
@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 05/17/2021
-ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.date: 06/17/2021
+ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925931"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007413"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -80,8 +80,8 @@ ms.locfileid: "52925931"
 |:----|:----|
 | Microsoft Intune  | 否 |
 | Microsoft Endpoint Configuration Manager + 租户附加  |     否  |
-| [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)Microsoft Defender 安全中心 ()     |     是 |
-| Microsoft 365安全中心 [https://security.microsoft.com](https://security.microsoft.com) ()   |     是  |
+| [https://securitycenter.windows.com](https://securitycenter.windows.com)Microsoft Defender 安全中心 ()     |     是的。 |
+| Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()   |     是的。  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>使用管理程序管理组织的防篡改Microsoft Defender 安全中心
 
@@ -100,6 +100,7 @@ ms.locfileid: "52925931"
 - 您必须具有适当的 [权限](/microsoft-365/security/defender-endpoint/assign-portal-access)，例如全局管理员、安全管理员或安全操作。
 
 - 你的Windows设备必须运行以下版本之一Windows：
+
    - Windows 10
    - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
    - Windows服务器版本[1803](/windows/release-health/status-windows-10-1803)或更高版本
@@ -147,6 +148,7 @@ ms.locfileid: "52925931"
 2. 选择 **"设备**  >  **配置文件"。**
 
 3. 创建包含以下设置的配置文件：
+
     - **平台：Windows 10及更高版本**
     - **配置文件类型：终结点保护**
     - **类别：Microsoft Defender 安全中心**
@@ -154,17 +156,19 @@ ms.locfileid: "52925931"
 
 4. 将配置文件分配给一个或多个组。
 
-### <a name="are-you-using-windows-os-1709-1803-or-1809"></a>是否使用 Windows OS 1709、1803 或 1809？
+### <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>是使用Windows Server 2016 1709、1803 Windows 1809 版本？
 
-如果你使用的是 Windows 10 OS [1709、1803](/windows/release-health/status-windows-10-1709)或[1809，](/windows/release-health/status-windows-10-1809-and-windows-server-2019)你将看不到 Windows 安全中心保护。 [](/windows/release-health/status-windows-10-1803) 相反，您可以使用 PowerShell 确定是否已启用防篡改保护。
-
-#### <a name="use-powershell-to-determine-whether-tamper-protection-is-turned-on"></a>使用 PowerShell 确定是否启用防篡改保护
+如果你使用的是 Windows Server 2016，Windows 10版本 1709、1803 或[1809，](/windows/release-health/status-windows-10-1809-and-windows-server-2019)则将不会在 Windows 安全中心 应用中看到篡改保护。 相反，您可以使用 PowerShell 确定是否已启用防篡改保护。 
+   
+在Windows Server 2016上，设置在启用防篡改保护时，应用不会准确反映实时保护的状态。
+   
+#### <a name="use-powershell-to-determine-whether-tamper-protection-andor-real-time-protection-are-turned-on"></a>使用 PowerShell 确定是否启用篡改保护和/或实时保护
 
 1. 打开Windows PowerShell应用。
 
 2. 使用 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet。
 
-3. 在结果列表中，查找 `IsTamperProtected` 。  (值为 *true* 表示已启用防篡改) 
+3. 在结果列表中，查找 `IsTamperProtected` 。  (true *的值表示* 已启用防篡改保护。) 在结果列表中查找 `RealTimeProtectionEnabled` 。  (值为 true 表示已启用防篡改) 
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>使用 Configuration Manager 版本 2006 管理组织的篡改保护
 
@@ -219,15 +223,11 @@ ms.locfileid: "52925931"
 
 ![Microsoft Defender 安全中心](images/tamperattemptalert.png)
 
-使用 Microsoft Defender [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) [for](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Endpoint 中的终结点检测和响应以及高级搜寻功能，安全运营团队可以调查和处理此类尝试。
+使用[终结点检测和响应](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)和[](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)Microsoft Defender for Endpoint 中的高级搜寻功能，你的安全运营团队可以调查和处理此类尝试。
 
 ## <a name="review-your-security-recommendations"></a>查看安全建议
 
-防篡改保护与 [威胁&漏洞管理功能](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) 集成在一起。 [安全建议](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) 包括确保打开防篡改保护。 例如，您可以搜索 *篡改*，如下图所示：
-
-![篡改保护会导致安全建议](/images/securityrecs-tamperprotect.jpg)
-
-在结果中，可以选择" **打开防** 篡改保护"了解更多信息并打开它。
+防篡改保护与 [威胁&漏洞管理功能](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) 集成在一起。 [安全建议](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) 包括确保打开防篡改保护。 例如，可以搜索防 *篡改*。 在结果中，可以选择" **打开防** 篡改保护"了解更多信息并打开它。
 
 ![打开防篡改保护](images/tamperprotectsecurityrecos.png)
 

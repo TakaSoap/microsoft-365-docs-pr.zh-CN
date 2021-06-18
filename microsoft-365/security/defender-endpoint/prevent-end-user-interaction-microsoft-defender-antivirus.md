@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274912"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007656"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与用户界面Microsoft Defender 防病毒交互
 
@@ -40,18 +40,18 @@ ms.locfileid: "52274912"
 
 将设置设置为"**已启用"：**
 
-![无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows 安全中心防护图标以及病毒和威胁防护部分":::
 
 将设置设置为"已 **禁用"** 或未配置：
 
-![显示防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分的内容屏幕截图":::
 
 >[!NOTE]
 >隐藏界面还会阻止Microsoft Defender 防病毒在终结点上显示通知。 Microsoft Defender for Endpoint 通知仍将显示。 还可以单独 [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 
 在早期版本的 Windows 10 中，该设置将隐藏Windows Defender客户端接口。 如果用户尝试打开它，他们将收到一条警告，指出"你的系统管理员已限制对此应用的访问"。
 
-![在早于 1703 Windows 10无头模式时显示警告消息](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="在早于 1703 Windows 10无头模式时显示警告消息":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>使用组策略向用户隐藏 Microsoft Defender AV 界面
 

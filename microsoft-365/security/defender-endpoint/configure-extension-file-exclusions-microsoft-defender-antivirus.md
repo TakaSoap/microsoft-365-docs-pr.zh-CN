@@ -14,23 +14,21 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 386e4499fec30bf1c564c1e0dc81cb8aaa5912a5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924275"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007511"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根据文件扩展名和文件夹位置配置和验证排除项
-
-
 
 **适用于：**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括终结点检测和响应[ (EDR) 、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻击面减少[ (ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction)规则和受控文件夹[访问权限。](/microsoft-365/security/defender-endpoint/controlled-folders) 使用本文中所述的方法排除的文件仍可以触发EDR检测。 若要广泛排除文件，请将它们添加到 Microsoft Defender for Endpoint [自定义指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
+> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括[终结点检测和响应 (EDR) 、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻击面减少 ([ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction)规则和受控文件夹[访问权限](/microsoft-365/security/defender-endpoint/controlled-folders)。 使用本文中所述的方法排除的文件仍可以触发EDR检测。 若要广泛排除文件，请将它们添加到 Microsoft Defender for Endpoint [自定义指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 ## <a name="exclusion-lists"></a>排除列表
 
@@ -310,7 +308,7 @@ Get-MpPreference
 
 在下面的示例中，突出显示了列表中包含的 `ExclusionExtension` 项：
 
-![PowerShell 输出Get-MpPreference排除列表以及其他首选项](images/defender/wdav-powershell-get-exclusions-all.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference 的 PowerShell 输出":::
 
 有关详细信息，请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender cmdlet](/powershell/module/defender/)。
 
@@ -326,7 +324,7 @@ $WDAVprefs.ExclusionPath
 
 在下面的示例中，列表将拆分为每次使用 cmdlet 时的新 `Add-MpPreference` 行：
 
-![仅显示排除列表中的条目的 PowerShell 输出](images/defender/wdav-powershell-get-exclusions-variable.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="仅显示排除列表中的条目的 PowerShell 输出":::
 
 有关详细信息，请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender cmdlet](/powershell/module/defender/)。
 

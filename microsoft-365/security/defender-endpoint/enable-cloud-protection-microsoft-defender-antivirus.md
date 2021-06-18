@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924703"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007174"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>打开云传递保护
 
@@ -146,7 +146,7 @@ SubmitSamplesConsent
 
 2. 选择病毒&**威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后选择病毒防护威胁防护 **&标签：**
 
-    ![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="病毒防护威胁&屏幕截图":::
 
 3. 确认 **基于云的保护和****自动提交示例** 已切换到 **开**。
 

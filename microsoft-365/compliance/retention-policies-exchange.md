@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861127"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985428"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
@@ -34,7 +34,7 @@ ms.locfileid: "52861127"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
-可通过使用保留策略和保留标签来保留和删除以下 Exchange 项目：带有任何附件的邮件（包括草稿）、具有结束日期的任务和注释。 
+可通过使用保留策略和保留标签来保留和删除来自用户邮箱和共享邮箱的以下以下 Exchange 项目：带有任何附件的邮件（包括已收到的邮件、草稿、已发送的邮件）、具有结束日期的任务和注释。 
 
 保留策略支持具有结束日期的日历项目，但保留标签不支持。
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635970"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006921"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
-作为组织的管理员，你负责为组织内部用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了加强组织对密码攻击的防护的建议。
+作为组织的管理员，你负责为组织中的用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了帮助组织更安全地抵御密码攻击的建议。
   
 要决定 Microsoft 365 密码在你组织中过期的频率，请参阅[设置 Microsoft 365 的密码过期策略](../manage/set-password-expiration-policy.md)。
 
@@ -112,7 +112,7 @@ ms.locfileid: "52635970"
   
 ### <a name="ban-common-passwords"></a>禁用常见密码
 
-创建密码时，应对用户采用的最重要的密码要求是禁用常见密码，以使你的组织更不容易受到蛮力密码攻击。 常见的用户密码包括 **abdcefg**、**password** 和 **monkey**。
+创建密码时，应对用户采用的最重要的密码要求是禁用常见密码，以使你的组织更不容易受到蛮力密码攻击。 常见用户密码包括：**abdcefg**、**password** 和 **monkey**。
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>指导用户不要在任何其他位置重复使用组织密码
 
@@ -131,6 +131,8 @@ ms.locfileid: "52635970"
 ## <a name="next-steps"></a>后续步骤
 
 希望了解有关管理密码的详细信息？ 下面是一些推荐阅读：
+
+- [Microsoft 密码指南](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008)（强大的 Web 密码是否有用？）
 

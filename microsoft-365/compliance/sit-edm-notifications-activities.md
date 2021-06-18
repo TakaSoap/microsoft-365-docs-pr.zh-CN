@@ -1,5 +1,5 @@
 ---
-title: 创建精确数据匹配活动通知（预览）
+title: 创建精确数据匹配活动通知
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何为精确数据匹配活动创建通知（预览）。
+description: 了解如何为精确数据匹配活动创建通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919358"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007557"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>创建精确数据匹配活动通知（预览）
+# <a name="create-notifications-for-exact-data-match-activities"></a>创建精确数据匹配活动通知
 
 当 [使用精确数据匹配 (EDM) 创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 时，在 [审核日志](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) 中会创建大量活动。 可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell cmdlet 创建通知，让你了能这些活动何时开始：
 
@@ -33,9 +33,6 @@ ms.locfileid: "50919358"
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
-
-> [!NOTE]
-> 创建 EDM 活动通知的功能仅可用于 World Wide 和 GCC 云。
 
 ## <a name="pre-requisites"></a>先决条件
 
