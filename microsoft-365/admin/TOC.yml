@@ -255,7 +255,7 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: 将用户升级到最新应用
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: 在 Microsoft 365 管理中心测试和部署 Microsoft 365 应用
+        - name: 集成应用
           href: manage/test-and-deploy-microsoft-365-apps.md
         - name: 外接程序的集中式部署
           items:
