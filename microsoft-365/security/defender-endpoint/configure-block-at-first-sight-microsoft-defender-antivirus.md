@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964695"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007390"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -82,7 +82,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
    - **云扫描文件的时长拓展**：50
    - **在提交示例之前提示用户**：在不提示的情况下发送所有数据
 
-   ![Intune config](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 配置首次看到时阻止":::
 
 4. 保存设置。
 
@@ -136,7 +136,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
 2. 选择“**病毒和威胁防护**”，然后在“**病毒和威胁防护设置**”下选择“**管理设置**”。
 
-   ![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows 安全应用中病毒和威胁防护设置标签的屏幕截图":::
 
 3. 确认 **云端保护** 和 **自动提交样本** 已开启。
 
