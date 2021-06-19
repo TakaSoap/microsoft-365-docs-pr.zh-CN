@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 Defender 门户中查看电子邮件安全报告
+title: 查看电子邮件安全报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 了解如何查找和使用组织的电子邮件安全报告。 Microsoft 365 Defender 门户中提供了电子邮件安全报告。
+description: 管理员可以了解如何查找和使用 Microsoft 365 Defender 门户中提供的电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d46aec8601d19234eed8682955ffef27b7e9b467
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985158"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022896"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 门户中查看电子邮件安全报告
 
@@ -56,20 +56,20 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 聚合视图显示过去 90 天的数据，而详细信息视图显示最近 30 天的数据。
 
-若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在 **"遭到入侵的用户"上**，单击 **"查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/CompromisedUsers> 。
+若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在"**电子邮件&协作报告**"页上，找到 **"遭到** 入侵的用户"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/CompromisedUsers> 。
 
-单击"**查看详细信息**"后，可以通过单击"筛选器"，在出现的飞出视图中选择以下一个或多个值来筛选图表和详细信息表：
+在"**遭到入侵** 的用户"页上，可以同时筛选图表和详细信息表，方法是单击"筛选器"，在出现的标注中选择以下一个或多个值：
 
 - **DATE (UTC)**： **Start date** and **End date**.
 - **活动**：
   - **可疑**：用户帐户已发送可疑电子邮件，并且存在被限制发送电子邮件的风险。
   - **受限**：由于高度可疑的模式，已限制用户帐户发送电子邮件。
 
-完成筛选后，单击"应用 **"** 或"取消 **"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 !["泄露的用户"报告中的报告视图](../../media/compromised-users-report-activity-view.png)
 
-在图表下面的表中，可以看到以下详细信息：
+在图表下面的详细信息表中，可以看到以下详细信息：
 
 - **创建时间**
 - **用户 ID**
@@ -79,34 +79,25 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 **Exchange 传输规则** 报告显示邮件流规则对组织中 (传输规则) 传入和传出邮件的影响。
 
-若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在 **"Exchange 传输规则"上**，单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/ETRRuleReport> 。
+若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在"**电子邮件&协作报告**"页上，找到 **"Exchange 传输** 规则"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/ETRRuleReport> 。
 
 !["电子邮件和协作报告"页面上的"Exchange 传输&小组件](../../media/transport-rule-report-widget.png)
 
-单击" **查看详细信息"** 后，以下图表和数据可用：
+在 **"Exchange 传输规则报告** "页上，以下各节介绍了可用的图表和数据。
 
-- **按 Exchange 传输规则查看数据** \>**按方向划分** 的图表细分：此图显示受邮件流规则影响的入站和出站邮件的数量。
+### <a name="chart-breakdown-by-direction"></a>按方向细分图表
 
-- **按 Exchange 传输规则查看数据** \>**按严重性分类** 的图表：此图表显示高严重性、中等严重性和 **低严重性邮件的数量**。  将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅 Mail [flow rule actions in Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+![Exchange 传输规则报告中 Exchange 传输规则的方向视图](../../media/transport-rule-report-etr-direction-view.png)
 
-- **按 DLP Exchange 传输规则查看数据** \>**按方向划分** 的图表细分：此图显示受DLP和邮件流规则中的数据丢失防护 (入站) 邮件的数量。
+如果选择" **按方向细分图表"，** 则以下图表可用：
 
-- **按 DLP Exchange 传输规则查看数据** \>**按严重性分类** 的图表：此视图显示受 DLP 邮件流规则影响的高严重性、中等严重性和低严重性邮件的数量。 
+- **按 Exchange 传输规则查看数据**：受邮件流规则影响的入站和出站邮件的数量。
+- **按 DLP Exchange 传输规则查看数据**：受DLP 和邮件流规则中的数据丢失防护 () 邮件的数量。
 
-对于 **"按 Exchange 传输规则** 查看数据"选项，下图下方的详细信息表中显示了以下信息：
-
-- **Date**
-- **传输规则**
-- **主题**
-- **发件人地址**
-- **收件人地址**
-- **严重性**
-- **方向**
-
-对于 **"按 DLP Exchange 传输规则** 查看数据"选项，下图下方的详细信息表中显示了以下信息：
+下图下的详细信息表中显示了以下信息：
 
 - **Date**
-- **DLP 策略**
+- **DLP 策略** (**仅通过 DLP Exchange 传输规则** 查看) 
 - **传输规则**
 - **主题**
 - **发件人地址**
@@ -116,25 +107,59 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
-- **开始日期和****结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **方向**： **出站** 和 **入站**
 - **严重性：****高严重性**、**中等严重性** 和 **低严重性**
 
-![Exchange 传输规则报告中的报告视图](../../media/transport-rule-report-report-view.png)
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
+
+### <a name="chart-breakdown-by-severity"></a>按严重性分类的图表
+
+![Exchange 传输规则报告中 Exchange 传输规则的严重性视图](../../media/transport-rule-report-etr-severity-view.png)
+
+如果选择" **按严重性划分图表细分"，** 则以下图表可用：
+
+- **按 Exchange 传输规则查看数据**：高严重性、中等严重性和 **低严重性邮件的数量**。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅 Mail [flow rule actions in Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+
+- **按 DLP Exchange 传输规则** 查看数据：受 DLP邮件流规则影响的高严重性、中等严重性和低严重性邮件的数量。 
+
+下图下的详细信息表中显示了以下信息：
+
+- **Date**
+- **DLP 策略** (**仅通过 DLP Exchange 传输规则** 查看) 
+- **传输规则**
+- **主题**
+- **发件人地址**
+- **收件人地址**
+- **严重性**
+- **方向**
+
+通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
+
+- **UTC (UTC)****开始日期和****结束日期**
+- **方向**： **出站** 和 **入站**
+- **严重性：****高严重性**、**中等严重性** 和 **低严重性**
+
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
+
+## <a name="forwarding-report"></a>转发报告
+
+> [!NOTE]
+> 转发 **报告现已** 在 EAC 中提供。 有关详细信息，请参阅新 [EAC 中的自动转发邮件报告](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)。
 
 ## <a name="mailflow-status-report"></a>邮件流状态报告
 
 **邮件流状态** 报告是一个智能报告，它显示有关传入和传出电子邮件、垃圾邮件检测、恶意软件、标识为"良好"的电子邮件的信息，以及边缘上允许或阻止的电子邮件的信息。 这是包含边缘保护信息的唯一报告，它显示了在 Exchange Online Protection (EOP) 允许进入服务之前阻止的电子邮件数。 必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为五个不同的邮件，而不是一封邮件。
 
-若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在 **"邮件流状态摘要"上，** 单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/mailflowStatusReport> 。
+若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在"**电子邮件&协作报告**"页上，找到 **"邮件流状态摘要**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
 !["电子邮件和协作报告"页上的"邮件流&摘要"小组件](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>邮件流状态报告的类型视图
 
-打开报表时，默认情况下 **会选中** "类型"选项卡。 默认情况下，此视图包含一个图表和一个使用以下筛选器配置的数据表：
+打开报表时，默认情况下 **会选中** "类型"选项卡。 默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
 
-- **日期**：最近 7 天。
+- **UTC (日期)** 最近 7 天。
 - **邮件方向**：
   - **入站**
   - **出站**
@@ -152,7 +177,7 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 可以通过单击"筛选器 **"或单击** 图表图例中的值来更改这些筛选器。
 
-该数据表包含以下信息：
+下图下的详细信息表中显示了以下信息：
 
 - **方向**
 - **类型**
@@ -183,9 +208,9 @@ If you click **Choose a category for more details**， you can select from the f
 
 图表按 Direction **值** 组织。
 
-可以通过单击"筛选器 **"或单击** 图表图例中的值来更改这些筛选器。 使用"类型" **视图中的** 相同筛选器。
+可以通过单击"筛选器"来更改这些 **筛选器**。 使用"类型" **视图中的** 相同筛选器。
 
-该数据表包含"类型"视图中 **的相同** 信息。
+详细信息表包含"类型"视图中 **的相同** 信息。
 
 " **选择类别"了解更多详细信息** 可用的选择和行为与"类型 **"视图相同** 。
 
@@ -201,19 +226,18 @@ If you click **Choose a category for more details**， you can select from the f
 
 漏 **斗** 视图显示 Microsoft 的电子邮件威胁防护功能如何筛选组织中传入和传出的电子邮件。 它提供有关总电子邮件计数以及配置的威胁防护功能（包括边缘保护、反恶意软件、反网络钓鱼、反垃圾邮件和反欺骗）如何影响此计数的详细信息。
 
-如果单击" **漏斗"** 选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的数据表：
+如果单击" **漏斗"** 选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
 
 - **日期**：最近 7 天。
 
 - **方向**：
-
   - **入站**
   - **出站**
   - **组织内部**：此计数用于租户内发送的邮件;即，发件人 abc@domain.com 收件人的邮件 xyz@domain.com (入站和出站邮件分开计算) 。
 
-聚合视图和数据表视图允许筛选 90 天。
+聚合视图和详细信息表视图允许筛选 90 天。
 
-如果单击 **"筛选器**"，可以同时筛选图表和数据表。
+可以通过单击"筛选器"来更改这些 **筛选器**。 使用"类型" **视图中的** 相同筛选器。
 
 此图表显示按以下方式组织的电子邮件计数：
 
@@ -231,7 +255,7 @@ If you click **Choose a category for more details**， you can select from the f
 
 若要查看由 EOP 或 Defender 单独筛选的电子邮件Office 365，请单击图表图例中的值。
 
-该数据表包含以下信息，按降序日期顺序显示：
+详细信息表包含以下信息，按降序日期顺序显示：
 
 - **Date**
 - **电子邮件总数**
@@ -253,7 +277,7 @@ If you click **Choose a category for more details**， you can select from the f
   - **URL 触发**：按链接策略保险箱的邮件。
 - 传递后保护和 **ZAP (ATP) 或 ZAP (EOP) ：** 零时差自动清除 (ZAP) 恶意软件、垃圾邮件和网络钓鱼。
 
-如果在数据表中选择一行，则电子邮件计数的进一步细分将显示在该飞出区中。
+如果在详细信息表中选择一行，则电子邮件计数的进一步细分将显示在该飞出内容中。
 
 #### <a name="export-from-funnel-view"></a>从漏斗视图导出
 
@@ -272,19 +296,18 @@ If you click **Choose a category for more details**， you can select from the f
 
 " **技术"** 视图类似于漏 **斗视图** ，提供有关配置的威胁防护功能的更具体的详细信息。 从图中，你可以看到如何在威胁防护的不同阶段对邮件进行分类。
 
-如果单击" **技术视图** "选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的数据表：
+如果单击" **技术视图** "选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
 
 - **日期**：最近 7 天。
 
 - **方向**：
-
   - **入站**
   - **出站**
   - **组织内部**：此计数用于租户内的邮件，即 发件人 abc@domain.com 发送到收件人的邮件 xyz@domain.com (与入站和出站邮件分开计数) 
 
-聚合视图和数据表视图允许筛选 90 天。
+聚合视图和详细信息表视图允许筛选 90 天。
 
-如果单击 **"筛选器**"，可以同时筛选图表和数据表。
+可以通过单击"筛选器"来更改这些 **筛选器**。 使用"类型" **视图中的** 相同筛选器。
 
 此图显示按以下类别组织的邮件：
 
@@ -301,9 +324,9 @@ If you click **Choose a category for more details**， you can select from the f
 
 将鼠标悬停在图表中的类别上时，可以看到该类别中的消息数。
 
-该数据表包含以下信息，按降序日期顺序显示：
+详细信息表包含以下信息，按降序日期顺序显示：
 
-- **Date**
+- **Date (UTC)**
 - **电子邮件总数**
 - **已筛选边缘**
 - **规则邮件**：由于邮件流规则而筛选 (也称为传输规则) 。
@@ -317,7 +340,7 @@ If you click **Choose a category for more details**， you can select from the f
 
 <sup>\*</sup>Defender for Office 365
 
-如果在数据表中选择一行，则电子邮件计数的进一步细分将显示在该飞出区中。
+如果在详细信息表中选择一行，则电子邮件计数的进一步细分将显示在该飞出内容中。
 
 #### <a name="export-from-tech-view"></a>"从技术导出"视图
 
@@ -338,13 +361,13 @@ If you click **Choose a category for more details**， you can select from the f
 
 聚合视图筛选器允许 90 天，而详细信息表筛选器仅允许 10 天。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在 **电子邮件中检测到的恶意软件上**，单击 **查看详细信息**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/MalwareDetections> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"电子邮件中** 检测到的恶意软件"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/MalwareDetections> 。
 
 ![电子邮件小部件中的恶意软件检测（位于"电子邮件&协作报告"页面上）](../../media/malware-detections-widget.png)
 
-单击" **查看详细信息"** 后，可以通过单击"筛选器"并选择以下选项来筛选图表 **和详细信息表** ：
+在"**恶意软件检测报告**"页上，可以通过单击"筛选器"并选择下列值之一来筛选图表和详细信息表：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **方向**：**入站****和出站**
 
 ![电子邮件报告中的恶意软件检测中的报告视图](../../media/malware-detections-report-view.png)
@@ -366,7 +389,7 @@ Defender **for** Office 365 中的邮件延迟报告包含有关组织中遇到�
 ## <a name="spam-detections-report"></a>垃圾邮件检测报告
 
 > [!NOTE]
-> 垃圾邮件 **检测报告将于** 2021 年 6 月 30 日消失。 威胁防护状态报告中提供了 [相同的信息](#threat-protection-status-report)。
+> 垃圾邮件 **检测报告** 最终将消失。 威胁防护状态报告中提供了 [相同的信息](#threat-protection-status-report)。
 
 ## <a name="spoof-detections-report"></a>欺骗检测报告
 
@@ -379,15 +402,23 @@ Defender **for** Office 365 中的邮件延迟报告包含有关组织中遇到�
 
 <sup>\*</sup> 最终，你将能够使用最多 90 天的筛选。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在 **"欺骗检测"上**，单击 **"查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpoofMailReportV2> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"欺骗检测**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpoofMailReportV2> 。
 
 !["电子邮件和协作报告"页面上&欺骗检测小组件](../../media/spoof-detections-widget.png)
 
+该图表显示以下信息：
+
+- **Pass**
+- **失败**
+- **SoftPass**
+- **无**
+- **其他**
+
 当您将鼠标悬停在 (中) 的数据点时，可以看到检测到的欺骗邮件的个个和原因。
 
-单击"**查看详细信息**"后，可以通过单击"筛选器"并选择以下一个或多个值来筛选图表和详细信息表：
+在"**欺骗邮件报告**"页上，可以通过单击"筛选器"并选择以下一个或多个值来筛选图表和详细信息表：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **结果**：
   - **Pass**
   - **失败**
@@ -398,7 +429,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![电子邮件门户中的欺骗邮件Microsoft 365 Defender页面](../../media/spoof-detections-report-page.png)
 
-在图表下面的表中，可以看到以下详细信息：
+在图表下面的详细信息表中，可以看到以下详细信息：
 
 - **Date**
 - **欺骗用户**
@@ -413,6 +444,35 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 有关复合身份验证结果代码详细信息，请参阅邮件中的[反垃圾邮件Microsoft 365。](anti-spam-message-headers.md)
 
+## <a name="submissions-report"></a>提交报告
+
+提交 **报告显示** 有关管理员已报告给 Microsoft 进行分析的项目的信息。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"提交"，** 然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/adminSubmissionReport> 。 若要转到管理 [门户中的管理员Microsoft 365 Defender，请单击](admin-submission.md)**"转到提交"。**
+
+!["电子邮件和协作报告"&"提交"小组件](../../media/submissions-report-widget.png)
+
+该图表显示以下信息：
+
+- **Pending**
+- **已完成**
+
+在 **"提交"** 页上，可以通过单击"筛选器"并选择以下一个或多个值来筛选图表和详细信息表：
+
+- **报告的日期****：开始时间和****结束时间**
+- **提交类型**：**电子邮件****、URL** 或 **文件**
+- **提交 ID**
+- **网络消息 ID**
+- **Sender**
+- **名称**
+- **提交者**
+- **提交原因**：**非垃圾邮件**、**网络钓鱼****、** 恶意软件或 **垃圾邮件**
+- **重新扫描状态**： **挂起** 或 **已完成**
+
+图形下方的详细信息表显示相同的信息，并且具有相同的组或自定义列选项与电子邮件和协作提交中的提交进行分析选项卡& \> **选项**。 有关详细信息，请参阅查看向 [Microsoft 提交的管理员](admin-submission.md#view-admin-submissions-to-microsoft)。
+
+![Microsoft 365 Defender门户中的提交Microsoft 365 Defender页](../../media/submissions-report-page.png)
+
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
 威胁 **防护状态报告** 在 EOP 和 Defender for Office 365;但是，报告包含不同的数据。 例如，EOP 客户可以查看有关电子邮件中检测到的恶意软件的信息，但不能查看有关 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件检测到的恶意[文件的信息](mdo-for-spo-odb-and-teams.md)。
@@ -421,14 +481,14 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 **注意**：如果邮件发送给五个收件人，则我们将邮件计为五个不同的邮件，而不是一封邮件，了解这一点很重要。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在 **"威胁防护状态"上**，单击 **"查看详细信息"。** 若要直接转到报告，请打开以下 URL 之一：
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"威胁防护状态**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开以下 URL 之一：
 
 - Defender for Office 365：<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP： <https://security.microsoft.com/reports/TPSAggregateReport>
 
 !["电子邮件和协作报告"页面上的威胁&小组件](../../media/threat-protection-status-report-widget.png)
 
-默认情况下，单击"查看 **详细信息"后**，图表将显示过去 7 天的数据。 如果单击 **"筛选**"，可以选择 90 天的日期范围 (试用版订阅可能限制为 30) 。 详细信息表允许筛选 30 天。
+默认情况下，图表显示过去 7 天的数据。 如果单击"**威胁****防护状态报告**"页上的"筛选"，可以选择 90 天的日期范围 (试用版订阅可能限制为 30) 。 详细信息表允许筛选 30 天。
 
 以下各节介绍了可用的视图。
 
@@ -446,7 +506,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测**：**电子邮件恶意软件****、电子邮件钓鱼** 邮件或 **内容恶意软件**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
@@ -493,7 +553,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **方向**
@@ -534,7 +594,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **方向**
@@ -572,7 +632,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **方向**
@@ -613,7 +673,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **方向**
@@ -636,14 +696,14 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 在图表下面的详细信息表中，提供了以下信息：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **位置**
 - **检测者**
 - **恶意软件名称**
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测****：反恶意软件引擎** 或 **文件触发**
 
 配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
@@ -677,7 +737,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
-- **Date**： **开始日期** 和 **结束日期**
+- **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **方向**
@@ -695,13 +755,13 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 " **热门恶意软件** "报告显示 [EOP](anti-malware-protection.md)中的反恶意软件保护检测到的各种恶意软件。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在 **"热门恶意软件"** 上，单击 **"查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/TopMalware> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"热门恶意软件**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/TopMalware> 。
 
 !["电子邮件和协作报告"页面上&恶意软件小组件](../../media/top-malware-report-widget.png)
 
 当您将鼠标悬停在饼图中的一个浮点上时，可以看到某种恶意软件的名称，以及检测到具有该恶意软件的邮件数。
 
-单击" **查看详细信息"** 后，报表页上将显示饼图的较大版本。图表下面的详细信息表显示以下信息：
+在" **热门恶意软件报告** "页上，报表页上将显示饼图的较大版本。图表下面的详细信息表显示以下信息：
 
 - **热门恶意软件**
 - **Count**
@@ -721,11 +781,11 @@ Microsoft Defender for Office 365 中提供了 **URL** 威胁防护报告。 有
 
 用户 **报告的邮件** 报告显示有关用户使用报告邮件外接程序或报告网络钓鱼外接程序报告为垃圾邮件、网络钓鱼尝试或良好邮件 [的电子邮件的信息](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md)
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & collaboration** Email & \> **reports** User \> **reported messages**. 在 **"用户报告的邮件"上**，单击 **"查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/userSubmissionReport> 。 若要转到管理 [门户中的管理员Microsoft 365 Defender，请单击](admin-submission.md)**"转到提交"。**
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"用户报告的邮件**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/userSubmissionReport> 。 若要转到管理 [门户中的管理员Microsoft 365 Defender，请单击](admin-submission.md)**"转到提交"。**
 
 !["电子邮件和协作报告"页上&"用户报告的邮件"小组件](../../media/user-reported-messages-widget.png)
 
-单击"**查看详细信息**"后，可以通过单击"筛选器"，在出现的飞出视图中选择以下一个或多个值来筛选图表和详细信息表：
+在"**用户报告的消息**"页上，可以通过单击"筛选器"，在出现的飞出中选择以下一个或多个值来筛选图表和详细信息表：
 
 - **报告的日期****：开始时间和****结束时间**
 - **报告者**
@@ -752,7 +812,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![用户报告的邮件报告](../../media/user-reported-messages-report.png)
 
-在图表下面的表中，可以看到以下详细信息：
+在图表下面的详细信息表中，可以看到以下详细信息：
 
 - **电子邮件主题**
 - **报告者**

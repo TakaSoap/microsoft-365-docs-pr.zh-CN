@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ee075f34087d28fc9326d408622d05f363bba768
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782977"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022580"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -41,19 +41,19 @@ ms.locfileid: "52782977"
 - 查看审核日志已批准修正操作的内容。
 - 查看已完成的修正操作。
 
-由于操作中心提供了一个全面Microsoft 365 Defender 工作视图，因此安全运营团队可以更高效地操作。
+由于操作中心提供了有关工作Microsoft 365 Defender视图，因此安全运营团队可以更高效地操作。
 
 ## <a name="the-unified-action-center"></a>统一操作中心
 
 统一操作中心 () 一个位置列出设备、电子邮件&协作内容和标识的挂起和 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 已完成的修正操作。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender 中的统一操作中心":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心Microsoft 365 Defender":::
 
-例如: 
+例如： 
 
-- 如果之前使用的是 Office 365 安全&合规 () ，请尝试使用 Microsoft 365 安全中心统一 [https://protection.office.com](https://protection.office.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
-- 如果使用的是安全中心中的操作Microsoft Defender 安全中心 () ，请尝试在安全中心Microsoft 365统一 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
-- 如果你已在使用安全Microsoft 365中心 () ，你将在操作中心 [https://security.microsoft.com](https://security.microsoft.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+- 如果之前使用的是 Office 365 安全&合规 () ，请尝试在 Microsoft 365 Defender [https://protection.office.com](https://protection.office.com) 门户 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+- 如果使用的是 Microsoft Defender 安全中心 () 中的操作中心，请尝试在 Microsoft 365 Defender [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) 门户 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+- 如果你已在使用 Microsoft 365 Defender 门户 () ，你将在操作中心 ([https://security.microsoft.com](https://security.microsoft.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 。
 
 统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365。 它定义所有修正操作的共同语言，并提供统一的调查体验。 安全运营团队具有"单窗格"体验，可查看和管理修正操作。  
 
@@ -126,8 +126,8 @@ ms.locfileid: "52782977"
 
 |修正操作 |所需角色和权限 |
 |--|----|
-|Microsoft Defender for Endpoint 修正 (设备)  |**在 Azure** AD Azure Active Directory (或)  () Microsoft 365 管理中心 () [https://portal.azure.com](https://portal.azure.com) [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- 或 ---<br/>**在 Microsoft** Defender for Endpoint 中分配的活动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure AD 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [使用 Microsoft Defender for Endpoint (创建和管理基于角色的访问控制) ](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365修正 (Office内容和电子邮件)   |**在 Azure** AD () 或 Microsoft 365 [https://portal.azure.com](https://portal.azure.com) 管理中心 () [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- 和 --- <br/>**在安全与** 合规中心&分配搜索和清除 [https://protection.office.com](https://protection.office.com) ()  <br/><br/>**重要** 提示：如果你仅在Office 365 安全& 合规中心 () 中分配了安全管理员角色，你将无法访问操作中心或 [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender 功能。 你必须在 Azure AD **或管理** 中心分配安全Microsoft 365角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure AD 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint 修正 (设备)  |**在 Azure** AD Azure Active Directory (或)  () 中分配 [https://portal.azure.com](https://portal.azure.com) Microsoft 365 管理中心 () [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- 或 ---<br/>**在 Microsoft** Defender for Endpoint 中分配的活动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure AD 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [使用 Microsoft Defender for Endpoint (创建和管理基于角色的访问控制) ](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365修正 (Office内容和电子邮件)   |**在 Azure** AD () 或 Microsoft 365 管理中心 () [https://portal.azure.com](https://portal.azure.com) [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- 和 --- <br/>**在安全与** 合规中心&分配搜索和清除 [https://protection.office.com](https://protection.office.com) ()  <br/><br/>**重要** 提示：如果你仅在Office 365 安全与合规中心 (&) 中分配了安全管理员角色，你将无法访问操作中心或 Microsoft 365 Defender [https://protection.office.com](https://protection.office.com) 功能。 你必须在 Azure AD **中分配** 安全管理员角色或Microsoft 365 管理中心。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure AD 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > 在 Azure  AD 中分配了全局管理员角色的用户可以批准或拒绝操作中心中任何挂起的操作。 但是，最佳做法是，贵组织应限制分配了全局管理员 **角色的人的数量** 。 我们建议对操作中心权限使用上表中列出的安全管理员、**活动** 修正操作和搜索和清除角色。

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea05d37ebcd0953dd109f524775a55cf8d6b3683
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984960"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022866"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>导出每个设备的软件漏洞评估
 
@@ -39,16 +39,16 @@ ms.locfileid: "52984960"
 
 不同的 API 调用用于获取不同类型的数据。 由于数据量可能非常大，因此有两种方法可以检索数据：
 
-1. [导出软件漏洞评估 OData](#1-export-software-vulnerabilities-assessment-odata)  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合使用少于 _100 K_ 设备的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+1. [导出软件漏洞评估 **JSON 响应**](#1-export-software-vulnerabilities-assessment-json-response)  API 将提取组织的所有数据作为 Json 响应。 此方法最适合使用少于 _100 K_ 设备的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-2. [通过文件导出软件漏洞评估](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 多台设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
+2. [通过文件导出软件 **漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 多台设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
 
    - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
    - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-3. [Delta 导出软件漏洞评估 OData](#3-delta-export-software-vulnerabilities-assessment-odata)  返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。
-API 按照 OData 协议提取组织数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 <br><br> 与完整软件漏洞评估 (OData) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 OData API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？" <br><br> 由于针对软件漏洞的 Delta 导出 OData API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
+3. [Delta 导出软件漏洞评估 **JSON 响应**](#3-delta-export-software-vulnerabilities-assessment-json-response)  返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。
+API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 <br><br> 与完整的"软件漏洞评估 (JSON 响应) "不同（用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？" <br><br> 由于针对软件漏洞的 Delta 导出 JSON 响应 API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
 
 使用 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
@@ -56,17 +56,17 @@ API 按照 OData 协议提取组织数据作为 Json 响应。 响应将分页�
 >
 > 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
 
-## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. 导出 OData (软件) 
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. 导出 JSON 响应 (软件漏洞) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法说明
 
 此 API 响应包含每个设备已安装软件的所有数据。 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CVEID 每个唯一组合的条目的表。
 
-#### <a name="limitations"></a>限制
+#### <a name="111-limitations"></a>1.1.1 限制
 
->- 最大页面大小为 200，000。
->
->- 此 API 的速率限制是每分钟 30 个调用和每小时 1000 个调用。
+- 最大页面大小为 200，000。
+
+- 此 API 的速率限制是每分钟 30 个调用和每小时 1000 个调用。
 
 ### <a name="12-permissions"></a>1.2 权限
 
@@ -89,15 +89,16 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top – 要返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 
 
 ### <a name="15-properties"></a>1.5 属性
->
+
 >[!Note]
 >
->- 每条记录大约包含 1KB 的数据。 在选择正确的 pageSize 参数时，您应当考虑到这一点。
+>- 每条记录大约包含 1 KB 的数据。 在选择正确的 pageSize 参数时，您应当考虑到这一点。
 >
 >- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
 >
 >- 下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
->
+
+<br/>
 
 属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
@@ -335,17 +336,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-odata"></a>3. OData (Delta 导出软件) 
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Delta 导出软件漏洞评估 (JSON 响应) 
 
 ### <a name="31-api-method-description"></a>3.1 API 方法说明
 
-返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 按照 OData 协议提取组织数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整软件漏洞评估 (OData) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 OData API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
+返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 JSON 响应 API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
 
 >[!NOTE]
 >
->强烈建议你至少每周使用一次通过设备 API 调用评估的完整导出软件漏洞，此额外的导出软件漏洞会通过设备 (delta) API 调用一周中的所有其他日期进行更改。  与其他评估 OData API 不同，"增量导出"不是完全导出。 增量导出仅包括所选日期与当前日期之间发生的更改 ("delta"API 调用) 。
+>强烈建议你至少每周使用一次通过设备 API 调用评估的完整导出软件漏洞，此额外的导出软件漏洞会通过设备 (delta) API 调用一周中的所有其他日期进行更改。  与其他评估 JSON 响应 API 不同，"增量导出"不是完全导出。 增量导出仅包括所选日期与当前日期之间发生的更改 ("delta"API 调用) 。
 
-#### <a name="limitations"></a>限制
+#### <a name="311-limitations"></a>3.1.1 限制
 
 - 最大页面大小为 200，000。
 
@@ -379,10 +380,10 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 每个返回的记录都包含设备 OData API 评估的完整导出软件漏洞的所有数据，以及两个附加字段  _**：EventTimestamp**_ 和 _**Status**_。
 
 >[!NOTE]
->-响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，因此请仅使用记录列。
+>- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，因此请仅使用记录列。
 >
->-下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
-<br>
+>- 下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
+<br><br/>
 
 属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
@@ -411,12 +412,12 @@ VulnerabilitySeverityLevel | string | 根据 CVSS 分数和受威胁环境影响
 #### <a name="clarifications"></a>说明
 
 - 如果软件从版本 1.0 更新到版本 2.0，并且这两个版本都向 CVE-A 公开，您将收到 2 个单独的事件：  
-   a. 修复 – 1.0 版上的 CVE-A 已修复  
-   b. 新增 - 2.0 版上的 CVE-A 已添加
+   1. 修复 – 1.0 版上的 CVE-A 已修复  
+   1. 新增 - 2.0 版上的 CVE-A 已添加
 
 - 如果特定漏洞 (例如，CVE-A) 在 (特定时间首次看到，例如，) 年 1 月 10 日针对 1.0 版软件，而该软件在几天之后更新到版本 2.0（也向同一 CVE-A 公开）时，您将收到以下两个分开的事件：  
-   a. Fixed – CVE-X，FirstSeenTimestamp January 10，version 1，0。  
-   b. 新增 – CVE-X、FirstSeenTimestamp 1 月 10 日版本 2.0。
+   1. Fixed – CVE-X，FirstSeenTimestamp January 10，version 1，0。  
+   1. 新增 – CVE-X、FirstSeenTimestamp 1 月 10 日版本 2.0。
 
 ### <a name="36-examples"></a>3.6 示例
 

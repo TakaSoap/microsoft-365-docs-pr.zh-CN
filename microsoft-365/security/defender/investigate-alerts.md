@@ -1,5 +1,5 @@
 ---
-title: 调查 Microsoft 365 Defender 中的警报
+title: 调查警报Microsoft 365 Defender
 description: 调查跨设备、用户和邮箱看到的警报。
 keywords: 事件， 警报， 调查， 分析， 响应， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782905"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022660"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "52782905"
 
 警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供事件线索。
 
-在 Microsoft 365 Defender 中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
+在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 安全中心 (security.microsoft.com) 时，你可以从事件&警报>警报["进入警报](https://security.microsoft.com)队列。
+警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 Defender (**>** security.microsoft.com) 时，你可以从事件&警报和警报 [警报。](https://security.microsoft.com)
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警报队列示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警报队列示例":::
 
-来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报显示在此处。
+来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender 警报显示在此处。
 
-默认情况下，安全中心中的警报队列Microsoft 365最近 30 天的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
@@ -56,7 +56,7 @@ ms.locfileid: "52782905"
 
 - 严重性
 - 状态
-- Category
+- 类别
 - 检测源
 - 标记
 - 策略
@@ -66,7 +66,7 @@ ms.locfileid: "52782905"
 
 若要查看主警报页面，请选择警报的名称。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="安全中心内警报Microsoft 365示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例":::
 
 您还可以从"管理 **警报"窗格中** 选择"打开主警报 **页面"** 操作。
 
@@ -75,12 +75,12 @@ ms.locfileid: "52782905"
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="安全中心内警报Microsoft 365示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例":::
 
 在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
-Microsoft 365Defender 警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security 等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
 > - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。<br>
@@ -89,18 +89,16 @@ Microsoft 365Defender 警报可能来自 Microsoft Defender for Endpoint、Micro
 
 警报源 | Prepended 字符 
 :---|:---
-Microsoft Defender for Office 365 | `fa{GUID}` <br> 例如：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender for Office 365 | `fa{GUID}` <br> 示例：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender for Endpoint | `da` 或 `ed` 用于自定义检测警报 <br> 
-Microsoft Defender for Identity | `aa{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
-
-
+Microsoft Defender for Identity | `aa{GUID}` <br> 示例：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> 示例：`ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 ### <a name="analyze-affected-assets"></a>分析受影响的资产
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"在操作中心 **中** 查看"以查看安全中心内操作中心的Microsoft 365选项卡。 
+还可以选择"**在** 操作中心中查看"以查看操作中心的"历史记录"**选项卡，Microsoft 365 Defender** 门户。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -143,7 +141,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="安全中心内警报Microsoft 365示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="事件门户中警报Microsoft 365 Defender示例":::
 
 其他操作的列表取决于警报的类型。
 
@@ -151,7 +149,7 @@ Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`ca123a456b-c789-1d2e-12f
 
 分析完警报并可以解决后，请转到警报的"管理警报"窗格，将其状态标记为"已解决"，并分类为 **"False** 警报"或"**真警报"。**  对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
 
-对警报进行分类并指定它们的决定有助于Microsoft 365 Defender，以提供更多真实警报和更少的假警报。
+对警报进行分类并指定它们的决定有助于调整Microsoft 365 Defender，以便提供更多真实警报和更少的假警报。
 
 ## <a name="next-steps"></a>后续步骤
 

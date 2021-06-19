@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender 中的事件
-description: 调查在安全中心内跨设备、用户和邮箱Microsoft 365的事件。
+title: 事件Microsoft 365 Defender
+description: 调查在 Microsoft 365 Defender 门户中跨设备、用户和邮箱Microsoft 365 Defender事件。
 keywords: 事件， 警报， 调查， 分析， 响应， 相关， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842022"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022766"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
+# <a name="incidents-in-microsoft-365-defender"></a>事件Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,15 +40,15 @@ ms.locfileid: "52842022"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-Microsoft 365 Defender 中的事件是关联警报和关联数据的集合，这些警报和关联数据是攻击案例的一部分。 
+事件Microsoft 365 Defender是关联警报和关联数据的集合，这些警报和关联数据是攻击事件的一部分。 
 
 Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建警报。 个别警报提供有关已完成或持续攻击的有价值的线索。 但是，攻击通常对不同类型的实体（如设备、用户和邮箱）使用各种技术。 结果是租户中多个实体收到多个警报。 
 
-由于将各个警报分组在一起以深入了解攻击可能非常困难且耗时，Microsoft 365 Defender 会自动将警报及其相关信息聚合到事件中。
+由于将各个警报分组在一起以深入了解攻击可能非常困难且耗时，Microsoft 365 Defender自动将警报及其相关信息聚合到事件中。
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Defender Microsoft 365将实体中的事件关联到事件":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="如何将Microsoft 365 Defender事件与事件关联":::
 
-观看此有关 Microsoft 365 Defender 中事件的简短 (4 分钟) 。
+观看此简短事件概述，Microsoft 365 Defender (4 分钟内) 。
 
 <br>
 
@@ -64,15 +64,15 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 如果[启用](m365d-enable.md)，Microsoft 365 Defender[可以通过自动化和](m365d-autoir.md)人工智能自动调查和解决警报。 还可以执行其他修正步骤来解决攻击。 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>安全中心内Microsoft 365和警报
+## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的事件和警报
 
-在快速启动 Microsoft 365安全中心&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 >  & (security.microsoft.com) 时，你可以管理事件Microsoft 365 Defender警报) 。 [](https://security.microsoft.com) 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="安全中心内Microsoft 365页面":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件门户中的Microsoft 365 Defender页面":::
 
 选择事件名称将显示事件摘要，并提供对包含其他信息的选项卡的访问权限。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="安全中心内事件的&quot;摘要&quot;Microsoft 365示例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="事件门户中事件的&quot;摘要&quot;Microsoft 365 Defender示例":::
 
 事件的其他选项卡包括：
 
@@ -104,13 +104,13 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
   显示警报与组织中受影响资产的连接的图。
 
-下面是事件及其数据与安全中心内事件选项卡Microsoft 365关系。
+下面是事件及其数据与事件门户中事件选项卡Microsoft 365 Defender关系。
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="事件及其数据与安全中心内事件选项卡Microsoft 365关系":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="事件及其数据与事件门户中事件选项卡Microsoft 365 Defender关系":::
 
-## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Microsoft 365 Defender 的事件响应工作流示例
+## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>事件响应工作流示例Microsoft 365 Defender
 
-下面是响应安全中心内Microsoft 365事件Microsoft 365工作流。
+下面是一个工作流示例，用于通过 Microsoft 365 门户Microsoft 365 Defender事件。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="事件的事件响应工作流示例Microsoft 365":::
 
@@ -121,15 +121,15 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 1. 对于每个事件，开始 [攻击和警报调查和分析](investigate-incidents.md)：
  
-   a. 查看事件的摘要，了解事件的范围和严重性以及受影响实体 ("摘要"选项卡) 。 
+   1. 查看事件的摘要，了解事件的范围和严重性以及受影响实体 ("摘要"选项卡) 。 
 
-   b. 开始分析警报，了解警报的来源、范围和严重性 (**警报** 选项卡) 。
+   1. 开始分析警报，了解警报的来源、范围和严重性 (**警报** 选项卡) 。
 
-   c. 根据需要，在"设备、用户"和"邮箱"选项卡上 (受影响的设备、用户和) 。  
+   1. 根据需要，在"设备、用户"和"邮箱"选项卡上 (受影响的设备、用户和) 。  
 
-   d. 查看 Microsoft 365 Defender 如何 [自动解决某些](m365d-autoir.md)警报 **("调查**"选项卡) 。
+   1. 请参阅Microsoft 365 Defender"调查 ["](m365d-autoir.md)选项卡 (自动 **解决某些**) 。
    
-   e. 根据需要，使用事件数据集中的信息获取"证据和 (**响应** "选项卡) 。
+   1. 根据需要，使用事件数据集中的信息获取"证据和 (**响应** "选项卡) 。
 
 2. 在分析之后或分析过程中，执行抑制，以减少攻击和安全威胁的任何额外影响。
 
@@ -144,11 +144,11 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 如果你是安全分析的新增人员，请参阅第一[](incidents-overview.md)个事件响应简介，了解其他信息并逐步查看示例事件。
 
-## <a name="example-security-operations-for-microsoft-365-defender"></a>Microsoft 365 Defender 的安全操作示例
+## <a name="example-security-operations-for-microsoft-365-defender"></a>示例安全操作Microsoft 365 Defender
 
-下面是适用于 defender 的安全操作Microsoft 365示例。
+下面是一个安全操作示例Microsoft 365 Defender。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Microsoft 365 Defender 的安全操作示例":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="安全操作示例Microsoft 365 Defender":::
 
 日常任务可能包括：
 
@@ -173,11 +173,11 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 **如果你是安全分析和** 事件响应的新增人员：
 
-- 请参阅[响应你的](first-incident-overview.md)第一个事件演练，获取有关 Microsoft 365 安全中心中分析、修正和事后评审的典型流程的引导教程，并查看攻击示例。
+- 请参阅[响应你的](first-incident-overview.md)第一个事件演练，获取有关 Microsoft 365 Defender 门户中分析、修正和事后评审的典型流程的引导教程，并查看攻击示例。
 
 **如果你有安全分析和** 事件响应的经验：
 
-- 从安全中心的事件 **页面开始Microsoft 365** 队列。 在这里，你可以:
+- 从事件门户的"事件 **"页面开始** Microsoft 365 Defender队列。 在这里，你可以:
 
   - 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 
 

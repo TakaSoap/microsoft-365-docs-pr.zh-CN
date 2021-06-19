@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984840"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022878"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -37,7 +37,7 @@ ms.locfileid: "52984840"
 >
 不同的 API 调用用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
 
-- [导出软件清单评估 **OData**](#1-export-software-inventory-assessment-odata) API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+- [导出软件清单评估 **JSON 响应**](#1-export-software-inventory-assessment-json-response) API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
 - [通过文件导出 **软件清单评估**](#2-export-software-inventory-assessment-via-files)  此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
 
@@ -51,7 +51,7 @@ ms.locfileid: "52984840"
 >
 > 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
 
-## <a name="1-export-software-inventory-assessment-odata"></a>1. 导出 OData (软件清单) 
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. 导出 JSON 响应 (软件清单) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法说明
 
@@ -88,11 +88,13 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-每条记录大约包含 0.5KB 的数据。 在选择正确的 pageSize 参数时，您应当考虑到这一点。
-
->-下表中定义的属性按字母顺序按属性 ID 列出。 运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
+>- 每条记录大约包含 0.5KB 的数据。 在选择正确的 pageSize 参数时，您应当考虑到这一点。
 >
->-响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
+>- 下表中定义的属性按字母顺序按属性 ID 列出。 运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
+>
+>- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
+
+<br/>
 
 属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
@@ -246,12 +248,14 @@ GET /api/machines/SoftwareInventoryExport
 
 >[!Note]
 >
->- 文件是 gzip 压缩文件& Json 格式。
+>- 文件是 gzip 压缩文件& JSON 格式。
 >
 >- 下载 URL 的有效期仅为 3 小时。 否则，可以使用 参数。
 >
->_ 为了最大数据下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
->
+>- 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
+
+<br/><br/>
+
 属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
 导出文件 | 数组 \[ 字符串\] | 保存组织当前快照的文件的下载 URL 列表 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]

@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904112"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022350"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -122,13 +122,7 @@ Microsoft Defender for Office 365 包括高级 [报告仪表板](view-reports-fo
 实时更新报告，为你提供最新见解。 这些报告还提供建议并向你提醒即将面临的威胁。 预定义的报告包括以下内容：
 
 - [威胁资源管理器（或实时检测）](threat-explorer.md)
-
 - [威胁防护状态报告](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Defender for Office 365 文件类型报告](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Defender for Office 365 邮件处置报告](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - …及更多精彩内容。
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威胁调查和响应功能

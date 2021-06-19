@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何将敏感度标签应用于 SharePoint Syntex 中的模型。
-ms.openlocfilehash: 799ab3fa0fcdc9af9d227428056d2cd7abeaf539
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ddfd6ffe11e8e01e32b6e1b5ddf65763e4ae381
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706688"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022410"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中向模型应用保留标签
 
 可以轻松将 [敏感度标签](../compliance/sensitivity-labels.md) 应用于 Microsoft SharePoint Syntex 中的文档理解模型。 此功能尚不可用于表单处理模型。
 
-通过敏感度标签，可以将加密、共享和条件访问策略应用于模型所识别的文档。 例如，你希望模型不仅识别任何包含上传到文档库的银行账号或信用卡号码的财务文档，而且将 *加密* 敏感度标签应用于这些文档，以限制可以访问其内容的人员和其使用方式。
+通过敏感度标签，可以将加密、共享和条件访问策略应用于模型所识别的文档。 例如，你希望模型不仅识别任何包含上传到文档库的银行账号或信用卡号码的财务文档，而且将 *加密* 敏感度标签应用于这些文档，以限制可以访问其内容的人员和其使用方式。 Syntex 模型遵循 [标签顺序](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) 规则，也不会覆盖用户手动应用于文件的现有标签。 
 
 可以通过模型主页上的模型设置将预先存在的敏感度标签应用于模型。 标签必须已经发布，可以在模型设置中进行选择。
 

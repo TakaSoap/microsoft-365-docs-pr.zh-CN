@@ -1,6 +1,6 @@
 ---
-title: 确定 defender 中事件的Microsoft 365优先级
-description: 了解如何在 Defender 中筛选事件队列中Microsoft 365事件
+title: 确定事件优先级Microsoft 365 Defender
+description: 了解如何筛选来自事件队列中的事件Microsoft 365 Defender
 keywords: 事件， 队列， 概述， 设备， 标识， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,31 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925883"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022729"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 defender 中事件的Microsoft 365优先级
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365在 Defender 在整个产品套件中具有的端到端可见性Microsoft 365，Defender 还会触发有关仅可标识为恶意活动的唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
+Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在产品的整个套件中具有的端到端可见性Microsoft 365 Defender仅可以标识为恶意的活动触发唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
 
 **事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。 
 
-在快速启动 Microsoft 365 **>** 安全中心&事件 (security.microsoft.com) ，你可以进入 [事件队列。](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365 Defender 门户&事件>事件和事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
 " **最近的事件和警报** "部分显示过去 24 小时内收到的警报数和创建的事件数的图。
 
-默认情况下，安全中心内的事件Microsoft 365显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
+默认情况下，事件门户中的事件Microsoft 365 Defender显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
 
 事件队列具有可自定义 (选择"选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
 

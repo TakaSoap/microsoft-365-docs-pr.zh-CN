@@ -1,6 +1,6 @@
 ---
 title: 导出每个设备的评估方法和属性
-description: 提供有关拉取"危险和漏洞管理"数据的 API 的信息。 不同的 API 调用用于获取不同类型的数据。 通常，每个 API 调用都包含组织中设备的必要数据。 由于数据量可能很大，因此有两种方法可以检索数据
+description: 提供有关拉取"危险和漏洞管理"数据的 API 的信息。 不同的 API 调用用于获取不同类型的数据。 通常，每个 API 调用都包含组织中设备的必要数据。
 keywords: api， api， 导出评估， 按设备评估， 每计算机评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 按计算机进行漏洞报告，
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ace9f55b0b083faaeeb620700a43a1216c4451c2
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 3e5a91a33a4207daa30f1054f03655c846d297ec
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984864"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022434"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>导出每个设备的评估方法和属性
 
@@ -54,7 +54,7 @@ ms.locfileid: "52984864"
 
 对于每个方法，都有不同的 API 调用，用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
 
-- **OData**  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+- **JSON 响应**  API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
 - **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
 
@@ -62,7 +62,7 @@ ms.locfileid: "52984864"
 
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-使用 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _JSON_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. 导出安全配置评估
 
@@ -72,10 +72,10 @@ ms.locfileid: "52984864"
 
 方法 | 数据类型 | 说明
 :---|:---|:---
-导出 **OData (安全)** | 按设备集合的安全配置。 请参阅 [：1.2 OData (属性) ](#12-properties-odata) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
-导出通过文件 **(安全配置)** | 按设备集合的安全配置。 请参阅 [：1.2 OData (属性) ](#12-properties-odata) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+导出安全配置评估 **(JSON 响应)** | 按设备集合的安全配置。 请参阅 [：1.2 JSON (1.2 属性) ](#12-properties-json-response) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+导出通过文件 **(安全配置)** | 按设备集合的安全配置。 请参阅 [：1.3 属性 (文件) ](#13-properties-via-files) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-### <a name="12-properties-odata"></a>1.2 OData (属性) 
+### <a name="12-properties-json-response"></a>1.2 JSON (1.2 属性) 
 
 属性 (ID)  | 数据类型 | 说明
 :---|:---|:---
@@ -109,10 +109,10 @@ GeneratedTime | string | 导出的生成时间。
 
 方法 | 数据类型 | 说明
 :---|:---|:---
-导出 **OData (软件清单)** | 按设备集合列出软件清单。 请参阅 [：2.2 OData (2.2) ](#22-properties-odata) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+导出 **JSON 响应 (软件清单)** | 按设备集合列出软件清单。 请参阅 [：2.2 JSON (2.2 属性) ](#22-properties-json-response) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
 通过文件库 **导出 (清单)** | 按设备文件列出软件清单。 请参阅 [：2.3 属性 (文件) ](#23-properties-via-files) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-### <a name="22-properties-odata"></a>2.2 OData (2.2) 
+### <a name="22-properties-json-response"></a>2.2 JSON (2.2 属性) 
 
 属性 (ID)  | 数据类型 | 说明
 :---|:---|:---
@@ -146,11 +146,11 @@ GeneratedTime | string | 导出的生成时间。
 
 方法 | 数据类型 | 说明
 :---|:---|:---
-将软件漏洞评估导出 **(OData)** | 调查集合，请参阅 [：3.2 属性 (OData) ](#32-properties-odata) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+导出 **JSON 响应 (软件漏洞)** | 调查集合请参阅 [：3.2 JSON 响应 (3.2) ](#32-properties-json-response) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
 导出通过文件 (**软件漏洞评估)** | 调查实体 请参阅 [：3.3 通过文件 (的属性) ](#33-properties-via-files) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
-**OData** (增量 **导出软件**)  | 调查集合，请参阅 [：3.4 Properties Delta export OData) ](#34-properties-delta-export-odata) | 返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。 <br><br> API 按照 OData 协议提取组织数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整软件漏洞评估 (OData) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 OData API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"  <br><br> 由于针对软件漏洞的 Delta 导出 OData API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
+**Delta 导出** 软件漏洞评估 **(JSON 响应)** | 调查集合请参阅 [：3.4 Properties Delta export (JSON response) ](#34-properties-delta-export-json-response) | 返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。 <br><br> API 拉取你组织的数据作为 JSON 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 OData API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"  <br><br> 由于针对软件漏洞的 Delta 导出 OData API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
 
-### <a name="32-properties-odata"></a>3.2 OData (属性) 
+### <a name="32-properties-json-response"></a>3.2 JSON (3.2 属性) 
 
 属性 (ID)  | 数据类型 | 说明
 :---|:---|:---
@@ -181,7 +181,7 @@ VulnerabilitySeverityLevel | string | 根据 CVSS 分数和受威胁环境影响
 导出文件 | 数组 \[ 字符串\]  | 保存组织当前快照的文件的下载 URL 列表。
 GeneratedTime | string | 导出的生成时间。
 
-### <a name="34-properties-delta-export-odata"></a>3.4 属性 (增量导出 OData) 
+### <a name="34-properties-delta-export-json-response"></a>3.4 delta (JSON 响应列表的属性) 
 
 属性 (ID)  | 数据类型 | 说明
 :---|:---|:---
