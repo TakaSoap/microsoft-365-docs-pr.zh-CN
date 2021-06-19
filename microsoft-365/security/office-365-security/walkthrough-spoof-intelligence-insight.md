@@ -19,12 +19,12 @@ description: 管理员可以了解如何使用欺骗智能策略和欺骗智能�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793204"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029293"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人
 
@@ -67,7 +67,7 @@ ms.locfileid: "52793204"
 - 可以在反网络钓鱼策略中启用、禁用和配置欺骗智能设置。 有关基于订阅的说明，请参阅下列主题之一：
 
   - [在 EOP 中配置防钓鱼策略](configure-anti-phishing-policies-eop.md)。
-  - [在 Microsoft Defender 中为用户配置Office 365。](configure-atp-anti-phishing-policies.md)
+  - [在 Microsoft Defender 中为用户配置Office 365。](configure-mdo-anti-phishing-policies.md)
 
 - 有关建议的欺骗智能设置，请参阅 [EOP 防钓鱼策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
 
@@ -184,7 +184,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 1. 在安全与&中心，转到"**威胁管理仪表板** \> **"。**
 
-2. 在 **"Insights"** 行中，查找以下项目之一：
+2. 在 **Insights** 行中，查找下列项目之一：
 
    - **过去七天内** 可能欺骗的域：此见解表明在默认情况下 (已启用欺骗智能) 。
    - **启用欺骗** 保护：此见解表明已禁用欺骗智能，单击该见解将允许你启用欺骗智能。

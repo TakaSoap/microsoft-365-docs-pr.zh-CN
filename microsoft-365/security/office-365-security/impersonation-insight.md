@@ -19,12 +19,12 @@ description: 管理员可以了解模拟见解的工作原理。 他们可以快
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029011"
+ms.locfileid: "53029665"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365 中的模拟见解
 
@@ -53,7 +53,6 @@ ms.locfileid: "53029011"
 - 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到"反网络钓鱼"页面上的模拟 **见解** ，请使用 <https://security.microsoft.com/antiphishing> 。 若要直接转到模拟 **见解页面** ，请使用 <https://security.microsoft.com/impersonationinsight> 。
 
 - 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
-
   - **组织管理**
   - **安全管理员**
   - **安全读者**
@@ -63,7 +62,7 @@ ms.locfileid: "53029011"
 
   **注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-- 在 Microsoft Defender for Office 365 中的防钓鱼策略中启用和配置Office 365。 默认情况下不启用模拟保护。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)。
+- 在 Microsoft Defender for Office 365 中的防钓鱼策略中启用和配置Office 365。 默认情况下不启用模拟保护。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>在模拟门户中打开模拟Microsoft 365 Defender见解
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (中的保护) ，以及保护策略中的优先级值如何确定应用的策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877844"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029281"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
@@ -45,14 +45,14 @@ ms.locfileid: "52877844"
 
   ****
 
-  |优先级|电子邮件保护|Category|管理位置|
+  |优先级|电子邮件保护|类别|管理位置|
   |---|---|---|---|
   |1|恶意软件|CAT：MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
   |2|网络钓鱼|CAT：PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |3|高可信度垃圾邮件|CAT：HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |4 |网络钓鱼|CAT：SPOOF|[EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
   |7 |垃圾邮件|CAT：SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |8 |批量邮件|CAT：BULK|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |

@@ -16,12 +16,12 @@ description: 查看和调查恶意软件钓鱼尝试。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028534"
+ms.locfileid: "53029881"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>使用 Microsoft Defender for Office 365 中的威胁资源管理器进行电子邮件Office 365
 
@@ -32,58 +32,55 @@ ms.locfileid: "53028534"
 - [启动自动调查和响应](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> 这是威胁资源管理器 (**资源管理器) 、** 电子邮件安全、资源管理器和实时检测基础知识的 **3** 篇文章系列中的一部分 **(如** 工具之间的差异以及操作它们所需的权限) 。 本系列中的其他两篇文章是威胁资源管理器和威胁[](threat-hunting-in-threat-explorer.md)资源管理器中的威胁搜寻和[实时检测基础知识](real-time-detections.md)。 
+> 这是威胁资源管理器 (**资源管理器) 、** 电子邮件安全、资源管理器和实时检测基础知识的 **3** 篇文章系列中的一部分 **(如** 工具之间的差异以及操作它们所需的权限) 。 本系列中的其他两篇文章是威胁资源管理器和威胁[](threat-hunting-in-threat-explorer.md)资源管理器中的威胁搜寻和[实时检测基础知识](real-time-detections.md)。
 
-本文介绍如何查看和调查电子邮件中检测到的恶意软件和网络钓鱼Microsoft 365安全功能。 
+本文介绍如何查看和调查电子邮件中检测到的恶意软件和网络钓鱼Microsoft 365安全功能。
 
-**适用对象**
+**适用于：**
 
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="view-malware-detected-in-email"></a>查看电子邮件中检测到的恶意软件
 
-若要查看在电子邮件中检测到的恶意软件Microsoft 365技术排序，请使用 Explorer >[](threat-explorer-views.md#email--malware)的"电子邮件 (恶意软件"视图或实时检测) 。 恶意软件是默认视图，因此一旦打开资源管理器，可能会选择它。
+若要查看在电子邮件中检测到的恶意软件Microsoft 365技术排序，请使用 Explorer >[](threat-explorer-views.md#email--malware)的"电子邮件 (恶意软件"视图或实时检测) 。 恶意软件是默认视图，因此一旦打开资源管理器，可能会选中它。
 
-1. 在Microsoft 365 Defender门户 () ，选择"电子邮件&协作资源管理器 (或实时检测 <https://security.microsoft.com>  \> ) 。   (此示例使用 Explorer.) 如果你位于聚合门户中，Microsoft 365 Defender滚动 ("电子邮件& https://security.microsoft.com/) **协作**  >  **资源管理器"。**
+1. 在Microsoft 365 Defender门户 <https://security.microsoft.com> () ，选择"电子邮件&**协作** 资源管理器 (\> 或 **实时检测";** 此示例使用 Explorer) 。
 
    从此处，从"视图"开始，选择一个特定的时间范围来调查 (如果需要) ，并按资源管理器演练来聚焦 [筛选器](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)。
 
-2. 在"**视图"** 菜单中，选择"**电子邮件"** 下的"**恶意软件"。**
+2. 在 **"查看** "下拉列表中，验证 **是否选择了** \> **"电子邮件恶意软件** "。
 
-3. 单击 **"发件人**"，然后选择"**基本** \> **检测技术"。**
+3. 单击 **"发件人**"，然后在 **下拉列表** 中选择 \> "基本检测技术"。
 
-   
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="恶意软件检测技术":::
 
    你的检测技术现在用作报告的筛选器。
 
-4. 选择一个选项。 然后选择" **刷新"** 按钮以应用该筛选器。
+4. 选择一个选项，然后单击 **"刷新"** 以应用 (不刷新浏览器窗口) 。
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="选定的检测技术"::: 
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="选定的检测技术":::
 
-   报告将刷新，以使用所选的技术选项显示电子邮件中检测到的恶意软件的结果。 在这里，你可以进行进一步分析。 
+   报告将刷新，以使用所选的技术选项显示电子邮件中检测到的恶意软件的结果。 在这里，你可以进行进一步分析。
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>查看网络钓鱼 URL 并单击裁定数据
 
 您可以通过电子邮件中的 URL 查看网络钓鱼尝试，包括允许、阻止和覆盖的 URL 列表。 若要标识单击的[URL，保险箱链接](safe-links.md)。 请确保为单击保险箱和单击[](set-up-safe-links-policies.md)裁定的日志记录设置"链接"策略保险箱链接" 。
 
-若要查看邮件中的网络钓鱼 URL 并单击网络钓鱼邮件中的 URL，请使用资源管理器的电子邮件[  >  ](threat-explorer-views.md#email--phish)网络钓鱼视图或实时检测。
+1. 在Microsoft 365 Defender门户 <https://security.microsoft.com> () ，选择"电子邮件&**协作** 资源管理器 (\> 或 **实时检测";** 此示例使用 Explorer) 。
 
-1. 在Microsoft 365 Defender门户 () ，选择"电子邮件&协作资源管理器 (或实时检测 <https://security.microsoft.com>  \> ) 。   (此示例使用 Explorer.) 
-
-2. 在"**视图"** 菜单中，选择"**电子邮件钓鱼** \> **邮件"。**
+2. 在"**查看"** 下拉列表中，选择"**电子邮件钓鱼** \> **邮件"。**
 
    > [!div class="mx-imgBorder"]
    > ![网络钓鱼上下文中资源管理器的"查看"菜单](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. 单击 **"发件人**"，然后选择 **"URL""** \> **单击裁定"。**
+3. 单击 **"发件人**"，然后在下拉列表中选择 **"URL""** \> 单击裁定"。
 
-4. 选择一个或多个选项，如"阻止"和"阻止 **覆盖**"，然后选择与应用该筛选器的选项位于同一行上的"刷新"按钮。  (请勿刷新浏览器窗口。) 
+4. 在出现的选项中，选择一个或多个选项（如"阻止"和"阻止覆盖"，然后单击"刷新 (不刷新浏览器窗口) 。 
 
     :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL 和单击裁定":::
 
-   报告将刷新，以在报告下的"URL"选项卡上显示两个不同的 URL 表：
+   报告将刷新以显示报告下的"URL" **选项卡上的** 两个不同的 URL 表：
 
    - **顶部 URL** 是筛选到的邮件中的 URL，每个 URL 的电子邮件传递操作计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法 URL。 攻击者在邮件中混合了好 URL 和坏 URL，以尝试传递这些 URL，但它们会使恶意链接看起来更有趣。 URL 表按总电子邮件计数排序，但隐藏此列以简化视图。
 

@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解钓鱼邮件在电子邮件中Microsoft 365的原因和方式，以及在将来如何防止更多网络钓鱼邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537843"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029341"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
@@ -44,7 +44,7 @@ ms.locfileid: "52537843"
 
 - [保险箱Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
-- [Microsoft Defender for Office 365 中的防钓鱼策略](configure-atp-anti-phishing-policies.md)。 请注意，你可以暂时将策略中的高级网络钓鱼阈值从 **"标准**"提高为 **"主动**"、更 **主动** 或 **最具有攻击性**。
+- [Microsoft Defender for Office 365 中的防钓鱼策略](configure-mdo-anti-phishing-policies.md)。 请注意，你可以暂时将策略中的高级网络钓鱼阈值从 **"标准**"提高为 **"主动**"、更 **主动** 或 **最具有攻击性**。
 
 验证这些 Defender Office 365功能是否打开。
 
@@ -66,7 +66,7 @@ ms.locfileid: "52537843"
 
 - 来自欺骗 (发件人的电子邮件与邮件来源不匹配) 在 Defender for Office 365 中分类为网络钓鱼。 有时欺骗是恶意的，有时用户不希望隔离来自特定欺骗发件人的邮件。 若要最大程度地降低对用户的影响，请定期查看[](learn-about-spoof-intelligence.md)欺骗智能见解、租户允许[/](tenant-allow-block-list.md)阻止列表中的"欺骗"选项卡和欺骗[检测报告](view-email-security-reports.md#spoof-detections-report)。 查看允许和阻止的欺骗发件人并进行必要的替代后，你可以确信地将反网络钓鱼策略中的欺骗智能配置为隔离可疑[](set-up-anti-phishing-policies.md#spoof-settings)邮件，而不是将它们发送到用户的"垃圾邮件"文件夹。
 
-- 你可以对 Microsoft Defender for (中的模拟域或) 重复上述Office 365。 模拟报告位于威胁 **管理仪表板** \>  \> **见解下**。
+- 你可以对 Microsoft Defender for (中的模拟域或) 重复上述Office 365。 模拟报告位于威胁管理仪表板 \>  \> Insights。
 
 - 定期检查威胁 [防护状态报告](view-reports-for-mdo.md#threat-protection-status-report)。
 

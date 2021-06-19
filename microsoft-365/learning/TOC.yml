@@ -1,14 +1,14 @@
-- name: 'Microsoft Viva Learning (Preview) '
+- name: Microsoft Viva Learning（预览版）
   href: index.md
-- name: 'Viva Learning (Preview) '
+- name: Viva Learning 入门（预览版）
   items:
-    - name: 'Viva Learning (Preview) '
+    - name: Viva Learning（预览版）概述
       href: overview-viva-learning.md
 - name: 设置和管理
   items:
-    - name: 在管理中心Teams设置
+    - name: 在 Teams 管理中心中设置
       href: set-up-teams-admin-center.md
     - name: 配置学习内容源
       href: content-sources-365-admin-center.md
-    - name: 将SharePoint配置为内容源
+    - name: 将 SharePoint 配置为内容源
       href: configure-sharepoint-content-source.md

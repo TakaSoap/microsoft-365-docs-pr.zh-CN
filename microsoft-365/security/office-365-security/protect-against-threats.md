@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878324"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029605"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -139,11 +139,12 @@ ms.locfileid: "52878324"
        - **如果邮箱智能检测到模拟** 用户：选择"将邮件移动到收件人的垃圾邮件文件夹" ("标准) "或"隔离 (<sup>\*</sup> 严格) "。  
        - **如果邮件被检测** 为欺骗邮件：选择"将邮件移动到收件人的垃圾邮件文件夹" (标准) 或"隔离 (严格) "。 
      - **安全提示&** 指示器部分：配置以下设置：
+       - **显示第一个联系人安全提示：** 选择 (打开) 。
        - **显示用户模拟安全提示：** <sup>\*</sup> 选择 (启用) 。
        - **显示域模拟安全提示：** <sup>\*</sup> 选择 (启用) 。
        - **显示用户模拟异常字符安全提示：** 选择 <sup>\*</sup> (打开) 。
        - **显示 (？)** 欺骗的未经身份验证的发件人：选择 (打开) 。
-       - **显示"via"标记**：如果 (此设置) ，请选择"打开"。
+       - **显示"via"标记**：选择 (打开) 。
 
      完成时，请单击“保存”。
 
@@ -151,7 +152,7 @@ ms.locfileid: "52878324"
 
 4. 单击 **"保存"，** 然后单击" **关闭"**
 
-有关配置防钓鱼策略的详细说明，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略和在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-atp-anti-phishing-policies.md)
+有关配置防钓鱼策略的详细说明，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略和在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>第 3 部分 - EOP 中的反垃圾邮件保护
 
@@ -278,7 +279,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 > 当你完成配置时，使用这些链接开始工作负载调查：
 >
 >- [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
->- [使用 Microsoft 365 Defender 门户管理 Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+>- [使用 Microsoft 365 Defender 门户在 Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到恶意文件需采取的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [在 Microsoft 365 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
 

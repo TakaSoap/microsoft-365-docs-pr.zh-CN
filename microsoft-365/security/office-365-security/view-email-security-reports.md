@@ -19,12 +19,12 @@ description: 管理员可以了解如何查找和使用 Microsoft 365 Defender �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022896"
+ms.locfileid: "53029530"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 门户中查看电子邮件安全报告
 
@@ -157,7 +157,9 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>邮件流状态报告的类型视图
 
-打开报表时，默认情况下 **会选中** "类型"选项卡。 默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
+![邮件流状态报告中的类型视图](../../media/mail-flow-status-report-type-view.png)
+
+在" **邮件流状态报告** "页上， **默认情况下选择** "类型"选项卡。 默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
 
 - **UTC (日期)** 最近 7 天。
 - **邮件方向**：
@@ -175,7 +177,7 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 图表按 Type **值组织** 。
 
-可以通过单击"筛选器 **"或单击** 图表图例中的值来更改这些筛选器。
+可以通过单击"筛选器"来更改这些 **筛选器**。
 
 下图下的详细信息表中显示了以下信息：
 
@@ -200,9 +202,9 @@ If you click **Choose a category for more details**， you can select from the f
 
 每个导出.csv文件限制为 150，000 行。 如果当天的数据包含超过 150，000 行，则创建多个.csv文件。
 
-![邮件流状态报告中的类型视图](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>邮件流状态报告的方向视图
+
+![邮件流状态报告中的方向视图](../../media/mail-flow-status-report-direction-view.png)
 
 如果单击" **方向"** 选项卡，则使用"类型"视图中 **的相同** 默认筛选器。
 
@@ -220,11 +222,11 @@ If you click **Choose a category for more details**， you can select from the f
 
 每个导出.csv文件限制为 150，000 行。 如果当天的数据包含超过 150，000 行，则创建多个.csv文件。
 
-![邮件流状态报告中的方向视图](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>邮件流状态报告的漏斗视图
 
 漏 **斗** 视图显示 Microsoft 的电子邮件威胁防护功能如何筛选组织中传入和传出的电子邮件。 它提供有关总电子邮件计数以及配置的威胁防护功能（包括边缘保护、反恶意软件、反网络钓鱼、反垃圾邮件和反欺骗）如何影响此计数的详细信息。
+
+![邮件流状态报告中的漏斗视图](../../media/mail-flow-status-report-funnel-view.png)
 
 如果单击" **漏斗"** 选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
 
@@ -289,8 +291,6 @@ If you click **Choose a category for more details**， you can select from the f
 在 **"日期**"下，选择一个范围，然后单击"应用 **"。** 当前筛选器的数据将导出到.csv文件中。
 
 每个导出.csv文件限制为 150，000 行。 如果数据包含的行数超过 150，000，.csv文件。
-
-![邮件流状态报告中的漏斗视图](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>邮件流状态报告的技术视图
 
@@ -460,14 +460,23 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 在 **"提交"** 页上，可以通过单击"筛选器"并选择以下一个或多个值来筛选图表和详细信息表：
 
 - **报告的日期****：开始时间和****结束时间**
-- **提交类型**：**电子邮件****、URL** 或 **文件**
+- **提交类型**：
+  - **电子邮件**
+  - **URL**
+  - **文件**
 - **提交 ID**
 - **网络消息 ID**
 - **Sender**
 - **名称**
 - **提交者**
-- **提交原因**：**非垃圾邮件**、**网络钓鱼****、** 恶意软件或 **垃圾邮件**
-- **重新扫描状态**： **挂起** 或 **已完成**
+- **提交原因**：
+  - **非垃圾邮件**
+  - **网络钓鱼**
+  - **恶意软件**
+  - **垃圾邮件**
+- **重新扫描状态**：
+  - **Pending**
+  - **已完成**
 
 图形下方的详细信息表显示相同的信息，并且具有相同的组或自定义列选项与电子邮件和协作提交中的提交进行分析选项卡& \> **选项**。 有关详细信息，请参阅查看向 [Microsoft 提交的管理员](admin-submission.md#view-admin-submissions-to-microsoft)。
 
@@ -772,7 +781,7 @@ If you click **Filter**， you can specify a date range with **Start date** and 
 
 ## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
-Microsoft Defender for Office 365 中提供了 **URL** 威胁防护报告。 有关详细信息，请参阅 [URL 威胁防护报告](view-reports-for-mdo.md#url-threat-protection-report)。
+URL **威胁防护报告** 仅适用于 Microsoft Defender for Office 365。 有关详细信息，请参阅 [URL 威胁防护报告](view-reports-for-mdo.md#url-threat-protection-report)。
 
 ## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 

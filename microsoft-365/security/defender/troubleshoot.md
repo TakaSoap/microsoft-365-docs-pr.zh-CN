@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 7891d61de7581a896a6599004eae91a4e47e1581
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028448"
+ms.locfileid: "53029941"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>解决Microsoft 365 Defender服务问题
 
@@ -56,5 +56,3 @@ ms.locfileid: "53028448"
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>如何为文件/URL 创建异常？
 
 误报是一种文件或 URL，被检测为恶意文件，但不是威胁。 你可以创建指示器并定义排除项以取消阻止并允许某些文件/URL。 请参阅在 Defender for Endpoint 中解决 [误报/负数](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives)。
-
-

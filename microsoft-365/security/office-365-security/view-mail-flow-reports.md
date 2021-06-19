@@ -19,12 +19,12 @@ description: 管理员可以了解安全与合规中心的"报告"仪表板中&�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985500"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029434"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全与合规中心的"报告"仪表板中&邮件流报告
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985500"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> 本主题中介绍的大多数报告都位于 Exchange 管理中心或 EAC () 。 有关详细信息，请参阅新 [Exchange 管理中心中的邮件流报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。 [Exchange 传输规则报告](view-email-security-reports.md#exchange-transport-rule-report)在 Microsoft 365 Defender 门户中提供。
 
 除了安全 & 合规中心的邮件流仪表板中提供[](mail-flow-insights-v2.md)的邮件流报告之外，报告仪表板中还提供了各种其他邮件流报告，以帮助您监视 Microsoft 365 组织。
 
@@ -166,7 +169,7 @@ ms.locfileid: "52985500"
 
 ## <a name="forwarding-report"></a>转发报告
 
-转发 **报告显示** 您的组织自动将邮件从 Exchange Online 邮箱转发到外部域。 转发的邮件可能会带来安全或合规性风险，并可能指示帐户遭到入侵。
+转发 **报告显示** 组织自动将邮件从邮箱转发到Exchange Online域。 转发的邮件可能会带来安全或合规性风险，并可能指示帐户遭到入侵。
 
 若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> ，然后选择 **转发报告**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -421,7 +424,9 @@ If you click **Choose a category for more details**， you can select from the f
 
 ## <a name="sent-and-received-email-report"></a>已发送和已接收电子邮件报告
 
-" **已发送和** 已接收电子邮件"报告是一个智能报告，它显示有关传入和传出电子邮件的信息，包括垃圾邮件检测、恶意软件和标识为"良好"的电子邮件。 此报告与邮件流状态报告[](#mailflow-status-report)之间的区别在于：此报告不包含有关被边缘保护阻止的邮件的数据。必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为一封邮件。
+" **已发送和** 已接收电子邮件"报告是一个智能报告，它显示有关传入和传出电子邮件的信息，包括垃圾邮件检测、恶意软件和标识为"良好"的电子邮件。 此报告与邮件流状态报告[](#mailflow-status-report)之间的区别在于：此报告不包含有关被边缘保护阻止的邮件的数据。
+
+**注意**：必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为一封邮件。
 
 聚合视图和报告的详细视图允许筛选 90 天。
 

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964881"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029365"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -62,7 +62,7 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
 
 - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
 
-- [在 Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)
+- [在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 本文的其余部分介绍了 EOP 和 Defender for Office 365 中的防钓鱼策略中的设置。
 
@@ -131,9 +131,6 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 - 启用未经身份验证的发件人问号 **(？) 符号？：** 当启用此设置时，如果邮件未通过 SPF 或 DKIM 检查，并且邮件未通过 DMARC 或复合身份验证，则发件人的照片中会添加问号。 [](email-validation-and-authentication.md#composite-authentication) 关闭此设置后，不会将问号添加到发件人的照片中。
 
 - 启用 **"via"标记？：** 当启用此设置时，如果发件人地址 (电子邮件客户端中显示的邮件发件人) 中的域不同于 DKIM 签名或 MAIL FROM 地址中的域，则通过标记 <sup>\*</sup> (chris@contoso.com <u>via</u> fabrikam.com) 将添加到"发件人"框中。 有关这些地址详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
-
-> [!NOTE]
-> 目前 **，"启用""通过"标记** ？设置并非在所有组织中都可用。 如果您没有"启用""通过"标记？设置，则问号和通过标记都受组织中"启用未经身份验证的发件人问号 **(？) ？"设置** 控制。
 
 若要防止向来自特定发件人的邮件添加问号或通过标记，可以使用以下选项：
 

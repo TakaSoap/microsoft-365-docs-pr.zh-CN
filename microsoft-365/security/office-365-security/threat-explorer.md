@@ -19,12 +19,12 @@ description: 使用安全中心中的资源管理器Microsoft 365实时检测，
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12fb7f757912a8f1c87a57c386c6f698d777752a
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930291"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029581"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -513,12 +513,12 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
    > [!div class="mx-imgBorder"]
    > ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
 
-报告将刷新以显示有关组织中人员报告为网络钓鱼尝试的电子邮件的数据。 可以使用此信息进行进一步分析，如有必要，在 Microsoft Defender 中调整反网络钓鱼策略[，Office 365。](configure-atp-anti-phishing-policies.md)
+报告将刷新以显示有关组织中人员报告为网络钓鱼尝试的电子邮件的数据。 可以使用此信息进行进一步分析，如有必要，在 Microsoft Defender 中调整反网络钓鱼策略[，Office 365。](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="start-automated-investigation-and-response"></a>启动自动调查和响应
 
 > [!NOTE]
-> Microsoft Defender for *Office 365 Plan 2* and *Office 365 E5 中提供了自动调查和响应功能*。
+> Microsoft Defender for *Office 365 计划 2* 和 Office 365 E5 *中提供了自动调查和响应Office 365 E5。*
 
 [自动调查和响应](automated-investigation-response-office.md) 可以节省安全运营团队在调查和缓解网络攻击上花费的时间和精力。 除了配置可触发安全手册的警报之外，还可以从资源管理器中的视图启动自动调查和响应过程。 有关详细信息，请参阅 [示例：安全管理员从资源管理器触发调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
@@ -530,25 +530,25 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [大致了解威胁资源管理器中的 (和实时检测) ](threat-explorer-views.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 365 Defender 中的自动调查和响应](../defender/m365d-autoir.md)
+- [自动调查和响应Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-你必须拥有[Microsoft Defender Office 365](defender-for-office-365.md)使用资源管理器或实时检测。
+必须具有适用于 [Office 365](defender-for-office-365.md) 的 Microsoft Defender，以使用资源管理器或实时检测。
 
-- 资源管理器包含在计划 2 Office 365 Defender 中。
-- 实时检测报告包含在计划 1 的 Defender Office 365中。
-- 计划为应受 Defender for Office 365 保护的所有用户分配Office 365。 资源管理器和实时检测显示许可用户的检测数据。
+- 资源管理器包含在 Defender for Office 365 计划 2 中。
+- 实时检测报告包含在 Defender for Office 365 计划 1 中。
+- 计划为应受 Office 365 Defender 保护的所有用户分配许可证。 资源管理器和实时检测显示许可用户的检测数据。
 
 若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如授予安全管理员或安全读者的权限。
 
 - 对于安全&合规中心，必须分配以下角色之一：
 
   - 组织管理
-  - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
+  - 安全 (可以在 Azure Active Directory 管理中心管理中心 <https://aad.portal.azure.com> () 
   - 安全读取者
 
-- For Exchange Online， you must have one of the following roles assigned in either the Exchange admin center <https://admin.protection.outlook.com/ecp/> () or Exchange Online [PowerShell：](/powershell/exchange/exchange-online-powershell)
+- 对于 Exchange Online，必须在 Exchange 管理中心或 <https://admin.protection.outlook.com/ecp/> Exchange Online PowerShell () 分配以下 [角色之一](/powershell/exchange/exchange-online-powershell)：
 
   - 组织管理
   - 仅查看组织管理
@@ -562,10 +562,10 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测之间的差异
 
-- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Defender for Office 365计划 2 中可用。
+- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Office 365 计划 2 的 Defender 中可用。
 - 实时检测报告允许你实时查看检测。 威胁资源管理器也这样做，但它还提供了给定攻击的其他详细信息。
 - " *所有电子邮件* "视图在威胁资源管理器中可用，但在实时检测报告中不可用。
-- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅[Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅 [Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>其他文章
 
