@@ -1,6 +1,6 @@
 ---
-title: 解决 Microsoft 365 Defender 服务问题
-description: 查找已知解决方案和解决方法Microsoft 365 Defender 问题
+title: 解决Microsoft 365 Defender服务问题
+description: 查找已知问题的解决方案Microsoft 365 Defender解决方法
 keywords: 疑Microsoft 365 Defender， 疑难解答， Microsoft Defender for Identity， 问题， 加载项， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81da6c6ef46798ac656e7d5f0f374bf2c722583d
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782737"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028448"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>解决 Microsoft 365 Defender 服务问题
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>解决Microsoft 365 Defender服务问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,15 +35,15 @@ ms.locfileid: "52782737"
 **适用于：**
 - Microsoft 365 Defender
 
-本部分解决使用 Defender 服务时可能出现的Microsoft 365问题。
+本节解决使用服务时可能出现的Microsoft 365 Defender问题。
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a>我看不到Microsoft 365 Defender 内容
+## <a name="i-dont-see-microsoft-365-defender-content"></a>我看不到Microsoft 365 Defender内容
 
 如果在门户中看不到导航窗格上的功能，如事件、操作中心或搜寻，则需要验证租户是否具有相应的许可证。
 
 有关详细信息，请参阅[先决条件](prerequisites.md)。
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender 标识警报未显示在 Microsoft 365 Defender 事件中
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender 标识警报未显示在事件Microsoft 365 Defender中
 
 如果你的环境中已部署 Microsoft Defender for Identity，但没有在 Microsoft 365 Defender 事件中看到 Defender for Identity 警报，则需要确保已启用 Microsoft Cloud App Security 和 Defender for Identity 集成。
 
@@ -51,7 +51,7 @@ ms.locfileid: "52782737"
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>用于打开服务的设置页在哪里？
 
-若要打开 Microsoft 365 Defender，设置安全中心中的导航Microsoft 365访问。 只有拥有必备权限和许可证 时，此 [导航项才可见](m365d-enable.md#check-license-eligibility-and-required-permissions)。
+若要打开Microsoft 365 Defender，设置安全中心中的导航窗格中Microsoft 365权限。 只有拥有必备权限和许可证 时，此 [导航项才可见](m365d-enable.md#check-license-eligibility-and-required-permissions)。
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>如何为文件/URL 创建异常？
 

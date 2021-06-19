@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022729"
+ms.locfileid: "53028507"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -98,7 +98,7 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 - 具有特定关联威胁的事件
 - 特定主角的事件
 
-编译有用的筛选器视图列表并存储为 URL 后，您可以快速使用它处理队列中的事件并设置事件的优先级，并管理这些事件以用于后续分析。 [](manage-incidents.md)
+编译有用的筛选器视图列表并存储为 URL 后，就可以使用它来快速处理队列中的事件并设置其优先级，并管理这些事件以用于后续分配和分析。 [](manage-incidents.md)
 
 ## <a name="next-steps"></a>后续步骤
 

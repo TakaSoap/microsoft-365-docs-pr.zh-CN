@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903824"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028846"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for Endpoint 中的误报/漏报
 
@@ -41,7 +41,7 @@ ms.locfileid: "52903824"
 
 ![Defender for Endpoint 中的误报和负值定义](images/false-positives-overview.png)
 
-幸运的是，可以采取措施来解决并减少此类问题。 如果你在[以前的 Microsoft 365 Defender](microsoft-defender-security-center.md) (中看到误报/负Microsoft Defender 安全中心) ，你的安全操作可以通过以下过程采取一些步骤来解决这些误报/负数：
+幸运的是，可以采取措施来解决并减少此类问题。 如果在以前的 Microsoft 365 Defender (中看到误报/负Microsoft Defender 安全中心) ，则安全操作可以通过以下过程采取一些措施来解决这些误报/负数： [](microsoft-defender-security-center.md)
 
 1.  [查看警报并进行分类](#part-1-review-and-classify-alerts) 
 2.  [查看已采取的修正操作](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ ms.locfileid: "52903824"
 
 在分类或抑制警报之前，请确定警报是准确、误报还是恶意。
 
-1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 在导航窗格中，选择"**警报队列"。**
 
@@ -82,9 +82,9 @@ ms.locfileid: "52903824"
 
 ### <a name="classify-an-alert"></a>对警报进行分类
 
-可以在 Defender 中将警报分类为误报Microsoft 365误报。 对警报进行分类有助于训练 Microsoft Defender for Endpoint，以便随着时间的推移，你将看到更多真实警报和更少的假警报。
+警报在警报中可分类为误报Microsoft 365 Defender。 对警报进行分类有助于训练 Microsoft Defender for Endpoint，以便随着时间的推移，你将看到更多真实警报和更少的假警报。
 
-1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 选择 **"警报队列**"，然后选择警报。
 
@@ -97,9 +97,9 @@ ms.locfileid: "52903824"
 
 ### <a name="suppress-an-alert"></a>抑制警报
 
-如果你的警报是误报或真正的误报，但对于不重要的事件，可以在 Microsoft 365 Defender 中抑制这些警报。 抑制警报有助于减少安全操作仪表板中的噪音。 
+如果您具有误报或为真误报的警报，但是对于不重要的事件，可以在非Microsoft 365 Defender。 抑制警报有助于减少安全操作仪表板中的噪音。 
 
-1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
 2. 在导航窗格中，选择 **警报队列**。
 
@@ -247,7 +247,7 @@ ms.locfileid: "52903824"
 
 [尤其是](/microsoft-365/security/defender-endpoint/manage-indicators) (泄露指示器或 IoCs) 使安全运营团队能够定义实体的检测、防护和排除。 例如，可以在 Microsoft Defender for Endpoint 的扫描和修正操作中指定要省略的某些文件。 或者，指示器可用于对某些文件、IP 地址或 URL 生成警报。
 
-若要将实体指定为 Microsoft Defender for Endpoint 的排除项，请为这些实体创建"允许"指示器。 Microsoft Defender for Endpoint 中的此类"允许"[](microsoft-defender-antivirus-in-windows-10.md)指示器适用于下一代[](overview-endpoint-detection-response.md)保护、终结点检测和响应以及自动调查[&修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
+若要将实体指定为 Microsoft Defender for Endpoint 的排除项，请为这些实体创建"允许"指示器。 Microsoft Defender for Endpoint 中的此类"允许"[](microsoft-defender-antivirus-in-windows-10.md)指示器适用于下一代保护、终结点检测和响应[和自动](overview-endpoint-detection-response.md)调查[&修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 "允许"指示器可用于：
 
@@ -276,7 +276,7 @@ ms.locfileid: "52903824"
 - 反恶意软件客户端版本为 4.18.1906.x 或更高版本 
 - 设备正在运行Windows 10版本 1709 或更高版本 
 
-自定义网络指示器在 Microsoft 365 [Defender 中打开](microsoft-defender-security-center.md)。 若要了解更多信息，请参阅 [高级功能](/microsoft-365/security/defender-endpoint/advanced-features)。
+自定义网络指示器在 Microsoft 365 Defender 中[打开](microsoft-defender-security-center.md)。 若要了解更多信息，请参阅 [高级功能](/microsoft-365/security/defender-endpoint/advanced-features)。
 
 #### <a name="indicators-for-application-certificates"></a>应用程序证书指示器 
 
@@ -438,11 +438,11 @@ PUA (可能不需要) 是一类软件，可能会导致设备运行缓慢、显�
 > [!IMPORTANT]
 > 我们建议使用 *完全自动化* 进行自动调查和修正。 不要因为误报而关闭这些功能。 相反， [使用"允许"指示器定义](#indicators-for-microsoft-defender-for-endpoint)例外，并保留自动调查和修正集以自动采取适当操作。 遵循 [本指南](automation-levels.md#levels-of-automation) 有助于减少安全操作团队必须处理的警报数。 
 
-## <a name="still-need-help"></a>是否仍需要帮助？
+## <a name="still-need-help"></a>仍然需要帮助？
 
 如果已执行本文中所有步骤，但仍需要帮助，请联系技术支持人员。
 
-1. 转到"Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
+1. 转到 [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defender () 并登录。
 
 2. 在右上角，选择问号 **" (？) "，** 然后选择 **"Microsoft 支持"。**
 
@@ -452,4 +452,4 @@ PUA (可能不需要) 是一类软件，可能会导致设备运行缓慢、显�
 
 [管理 Microsoft Defender for Endpoint](manage-atp-post-migration.md)
 
-[Microsoft 365 Defender 门户概述](/microsoft-365/security/defender-endpoint/use) 
+[Microsoft 365 Defender门户概述](/microsoft-365/security/defender-endpoint/use) 

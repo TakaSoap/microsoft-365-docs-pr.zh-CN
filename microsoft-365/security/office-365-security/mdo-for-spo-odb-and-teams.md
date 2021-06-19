@@ -23,12 +23,12 @@ ms.custom:
 description: 了解适用于 Office 365 Online、SharePoint、OneDrive for Business 和 Microsoft Teams 中的文件的 Microsoft Defender。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7aa375020ce05ca1d484bb7ed18b8cf7a6e7d04e
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 67bd2a0952ac630888b07eaf05d365736a0472ea
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932838"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028831"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
@@ -67,6 +67,7 @@ SharePoint联机管理员可以阻止用户下载恶意文件。 有关说明，
 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件标识为恶意的文件将显示在[Microsoft Defender for Office 365](view-reports-for-mdo.md)的报告和资源管理器 (以及实时检测) [中](threat-explorer.md)。
 
 自 2018 年 5 月起，当 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 识别为恶意文件时，该文件也可隔离。 有关详细信息，请参阅在 Defender for [Office 365 中管理隔离Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+
 
 ## <a name="keep-these-points-in-mind"></a>请记住以下几点
 

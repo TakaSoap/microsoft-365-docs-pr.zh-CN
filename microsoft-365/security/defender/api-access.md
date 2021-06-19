@@ -1,5 +1,5 @@
 ---
-title: 访问 Microsoft 365 Defender API
+title: 访问Microsoft 365 Defender API
 description: 了解如何访问 Microsoft 365 Defender API
 keywords: access， api， 应用程序上下文， 用户上下文， aad 应用程序， 访问令牌
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1fbba132e664f4773496eac7123a0a408db5b3bd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055573"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028795"
 ---
-# <a name="access-the-microsoft-365-defender-apis"></a>访问 Microsoft 365 Defender API
+# <a name="access-the-microsoft-365-defender-apis"></a>访问Microsoft 365 Defender API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51055573"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作。 这些 API 可帮助你自动执行工作流，并充分利用Microsoft 365 Defender 的功能。
+Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作。 这些 API 可帮助您自动化工作流，并充分利用Microsoft 365 Defender功能。
 
 通常，你将需要执行以下步骤来使用 API：
 
@@ -61,7 +61,7 @@ Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作�
 4. 使用应用程序及其密钥获取安全令牌。
 5. 使用令牌访问 Microsoft 365 Defender API。
 
-有关详细信息，请参阅创建 **[应用以在没有用户的情况下Microsoft 365 Defender。](api-create-app-web.md)**
+有关详细信息，请参阅创建 **[应用以在没有用户Microsoft 365 Defender访问应用](api-create-app-web.md)**。
 
 ## <a name="user-context"></a>用户上下文
 
@@ -72,7 +72,7 @@ Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作�
 3. 使用应用程序的用户凭据获取安全令牌。
 4. 使用令牌访问 Microsoft 365 Defender API。
 
-有关详细信息，请参阅创建 **[应用以代表Microsoft 365访问](api-create-app-user-context.md)** Defender API。
+有关详细信息，请参阅创建 **[应用以代表Microsoft 365 Defender](api-create-app-user-context.md)** 访问 API。
 
 ## <a name="partner-context"></a>合作伙伴上下文
 
@@ -84,11 +84,11 @@ Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作�
 4. 使用基于客户的租户 ID 的用户凭据获取安全令牌。
 5. 使用令牌访问 Microsoft 365 Defender API。
 
-有关详细信息，请参阅 **[创建具有](api-partner-access.md)** 对 Defender API 的合作伙伴访问权限Microsoft 365应用。
+有关详细信息，请参阅 **[创建具有合作伙伴访问应用程序 API Microsoft 365 Defender应用](api-partner-access.md)**。
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365Defender API 概述](api-overview.md)
+- [Microsoft 365 DefenderAPI 概述](api-overview.md)
 - [用户登录和 API 访问的 OAuth 2.0 授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [创建访问这些 API 的"Hello world"Microsoft 365应用程序](api-hello-world.md)

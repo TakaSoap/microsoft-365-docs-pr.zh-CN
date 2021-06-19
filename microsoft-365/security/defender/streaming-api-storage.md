@@ -1,6 +1,6 @@
 ---
-title: 将Microsoft 365 Defender 事件流式传输存储帐户
-description: 了解如何配置 Microsoft 365 Defender 以将高级搜寻事件流式传输存储帐户。
+title: 将Microsoft 365 Defender事件流式传输存储空间帐户
+description: 了解如何配置 Microsoft 365 Defender以将高级搜寻事件流式传输存储空间帐户。
 keywords: 原始数据导出， 流式 API， API， 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4e706bbb2246bd0629db721373ffcd4164d123d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa61e2fd0591d375a17bad6e166a76c1ca40862e
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772429"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028871"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置 Microsoft 365 Defender 以将高级搜寻事件流式传输存储帐户
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置Microsoft 365 Defender将高级搜寻事件流式传输存储空间帐户
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,13 +36,13 @@ ms.locfileid: "52772429"
 
 ## <a name="before-you-begin"></a>开始之前：
 
-1. 在[租户存储](/azure/storage/common/storage-account-overview)帐户。
+1. 在[租户存储空间](/azure/storage/common/storage-account-overview)帐户。
 
 2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>**资源>注册到 Microsoft.Insights。**
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流：
 
-1. 以 * [Microsoft 365](https://security.microsoft.com) **_** 或 _* 安全管理员 ** 登录 Defender _安全中心_。
+1. 以 * [Microsoft 365 Defender](https://security.microsoft.com) **_** 或 _* 安全管理员 **登录 _安全_ 中心。
 
 2. 转到"[数据导出设置"页Microsoft Defender 安全中心。](https://security.microsoft.com/settings/mtp_settings/raw_data_export)
 
@@ -50,15 +50,15 @@ ms.locfileid: "52772429"
 
 4. 选择新设置的名称。
 
-5. Choose **Forward events to Azure 存储**.
+5. Choose **Forward events to Azure 存储空间**.
 
-6. 键入你的 **存储帐户资源 ID。** 若要获取你的 存储 帐户资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户 > 属性选项卡上的 存储 帐户页面>复制 存储 帐户资源 ID 下 **的文本**：
+6. 键入你的 **存储空间帐户资源 ID。** 若要获取你的 存储空间 帐户资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户 > 属性选项卡上的 存储空间 帐户页面>复制 存储空间 帐户资源 **ID 下的文本**：
 
    ![事件中心资源 ID1 的图像](../defender-endpoint/images/storage-account-resource-id.png)
 
 7. 选择要流式传输的事件，然后单击"保存 **"。**
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>帐户内事件存储架构：
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>帐户内事件存储空间架构：
 
 - 将针对每种事件类型创建 blob 容器： 
 
@@ -79,7 +79,7 @@ ms.locfileid: "52772429"
 
 - 每行都包含事件名称、Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
 
-- 有关 Defender 事件的架构Microsoft 365，请参阅[高级搜寻概述](../defender/advanced-hunting-overview.md)。
+- 有关事件架构Microsoft 365 Defender，请参阅高级[搜寻概述](../defender/advanced-hunting-overview.md)。
 
 
 ## <a name="data-types-mapping"></a>数据类型映射
@@ -102,6 +102,6 @@ ms.locfileid: "52772429"
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](../defender/advanced-hunting-overview.md)
-- [Microsoft 365Defender 流式处理 API](streaming-api.md)
-- [将Microsoft 365 Defender 事件流式传输至 Azure 存储帐户](streaming-api-storage.md)
-- [Azure 存储帐户文档](/azure/storage/common/storage-account-overview)
+- [Microsoft 365 Defender流式处理 API](streaming-api.md)
+- [将Microsoft 365 Defender流式处理到 Azure 存储帐户](streaming-api-storage.md)
+- [Azure 存储空间帐户文档](/azure/storage/common/storage-account-overview)

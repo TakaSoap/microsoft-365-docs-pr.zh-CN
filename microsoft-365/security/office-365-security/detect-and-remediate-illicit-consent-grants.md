@@ -18,12 +18,12 @@ description: 了解如何识别和修正非法同意授权攻击Microsoft Office
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538299"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028915"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测和修正非法同意授予
 
@@ -50,7 +50,7 @@ ms.locfileid: "52538299"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此攻击的迹象的步骤
 
-1. 在 **打开安全&合规中心** <https://protection.office.com> 。
+1. 在 **打开 Microsoft 365 Defender** <https://security.microsoft.com> 门户。
 
 2. 导航到 **"搜索"，** 然后选择"**审核日志搜索"。**
 
@@ -143,7 +143,7 @@ ms.locfileid: "52538299"
 
 ## <a name="determine-the-scope-of-the-attack"></a>确定攻击范围
 
-完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在 **安全审核日志中心** 搜索&[搜索。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在 **搜索审核日志搜索**[Microsoft 365 Defender。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
 > [在攻击](../../compliance/enable-mailbox-auditing.md)[之前，必须为](../../compliance/turn-audit-log-search-on-or-off.md)管理员和用户启用邮箱审核和活动审核才能获取此信息。

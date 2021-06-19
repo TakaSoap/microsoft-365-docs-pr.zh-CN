@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (中的欺骗智能) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280743e87ce6039f456cec0b89bff57a31d75691
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 94dc1e438f913c1103154afb8803ef4cf89f64af
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877820"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028807"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺骗智能见解
 
@@ -53,13 +53,16 @@ ms.locfileid: "52877820"
   - 发件人位于一个邮件列表 (也称为讨论列表) ，邮件列表将原始发件人的电子邮件中继到邮件列表上的所有参与者。
   - 外部公司代表另一家公司发送电子邮件 (例如自动报告或软件即服务公司) 。
 
-您可以使用 Microsoft 365  Defender 门户中的欺骗智能见解，快速识别从未通过 SPF、DKIM 或 DMARC 检查) 的域中合法向您发送未经身份验证的电子邮件 (邮件的欺骗性发件人，并手动允许这些发件人。
+
+您可以使用 Microsoft 365 Defender门户中的欺骗智能见解，从未通过 SPF、DKIM 或 DMARC 检查) 的域中快速识别合法向您发送未经身份验证的电子邮件 (邮件的欺骗性发件人，并手动允许这些发件人。
+
 
 通过允许已知发件人从已知位置发送欺骗邮件，你可以减少误报 (标记为错误) 。 通过监视允许的欺骗发件人，你可以提供额外的安全层，以防止不安全的邮件到达你的组织。
 
 同样，你可以查看欺骗智能允许的欺骗性发件人，并手动阻止这些发件人获得欺骗智能见解。
 
-本文的其余部分介绍如何在 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中为邮箱在 Exchange Online 中的 Microsoft 365 组织使用欺骗智能Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文的其余部分介绍如何在 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织使用欺骗智能见解，Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+
 
 > [!NOTE]
 >
@@ -71,7 +74,7 @@ ms.locfileid: "52877820"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com/> 。 若要直接转到" **防钓鱼"页面** ，请使用 <https://security.microsoft.com/antiphishing> 。 若要直接转到欺骗 **智能见解** 页面，请使用 <https://security.microsoft.com/spoofintelligence> 。
+- 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到" **防钓鱼"页面** ，请使用 <https://security.microsoft.com/antiphishing> 。 若要直接转到欺骗 **智能见解** 页面，请使用 <https://security.microsoft.com/spoofintelligence> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -90,9 +93,9 @@ ms.locfileid: "52877820"
 
 - 有关建议的欺骗智能设置，请参阅 [EOP 防钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
-## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在 defender 门户中打开Microsoft 365智能见解
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在企业门户中打开Microsoft 365 Defender见解
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **policies** section \> **Anti-phishing**.
 
 2. 在 **"反网络钓鱼"** 页面上，欺骗智能见解如下所示：
 

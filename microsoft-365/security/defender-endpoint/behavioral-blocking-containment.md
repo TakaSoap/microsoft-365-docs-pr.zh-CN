@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: f2de1f6bf35f4454ed6ab286c0bc8004a0d6301b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904064"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028819"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -48,7 +48,7 @@ ms.locfileid: "52904064"
 
 - [终结点检测和响应 (EDR) ](overview-endpoint-detection-response.md)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 Microsoft 365 [Defender](../defender/microsoft-365-defender.md)的一个组件，用于处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
+- [Defender for Endpoint](overview-endpoint-detection-response.md)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 事件[、Microsoft 365 Defender](../defender/microsoft-365-defender.md)Defender 处理和关联这些信号、引发检测警报以及连接事件中的相关警报的组件。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。 
 
@@ -58,13 +58,13 @@ ms.locfileid: "52904064"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft 365 Defender () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在 defender 中配置[Microsoft 365策略](microsoft-defender-security-center.md)。
+- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在事件Microsoft 365 Defender () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在策略中[配置Microsoft 365 Defender。](microsoft-defender-security-center.md)
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。)  
 
 - **[反馈循环阻止 (](feedback-loop-blocking.md)** 也称为快速保护) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。)  
 
-- **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下未启用;在 Defender.Microsoft 365 中打开)  
+- **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下未启用;在 Microsoft 365 Defender.)  
 
 随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
@@ -95,9 +95,9 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 - 第一个保护层检测到攻击行为。 云中的设备学习分类器正确地将威胁标识为 并立即指示客户端设备阻止攻击。
 - 第二个保护层，帮助阻止攻击通过第一层、检测到进程正在停靠、停止该进程并删除了相应文件 (如 Lokibot) 。 
 
-在检测到并停止攻击时，警报（如"初始访问警报）"被触发并出现在以前的 Microsoft 365 [Defender](microsoft-defender-security-center.md) (中Microsoft Defender 安全中心) ：
+在检测到并停止攻击时，警报（如"初始访问警报）"会触发并出现在 Microsoft 365 Defender[门户](microsoft-defender-security-center.md)中 (以前Microsoft Defender 安全中心) ：
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Microsoft 365 Defender 门户中的初始访问警报":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Microsoft 365 Defender门户中的初始Microsoft 365 Defender警报":::
 
 此示例演示云中基于行为的设备学习模型如何添加抵御攻击的新保护层，即使它们开始运行。
 
@@ -127,4 +127,4 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 - [查看最近的全球威胁活动](https://www.microsoft.com/wdsi/threats)
 
-- [获取 Defender Microsoft 365概述](../defender/microsoft-365-defender.md)
+- [大致了解Microsoft 365 Defender](../defender/microsoft-365-defender.md)

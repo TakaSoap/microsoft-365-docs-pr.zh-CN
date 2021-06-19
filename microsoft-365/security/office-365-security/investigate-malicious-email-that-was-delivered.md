@@ -20,12 +20,12 @@ description: 了解如何使用威胁调查和响应功能查找和调查恶意�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933369"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028843"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>调查在邮件中传递的恶意Office 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "51933369"
 > [!NOTE]
 > 跳转到此处的修正 [文章](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 请确保满足以下要求：
 
@@ -51,7 +51,7 @@ ms.locfileid: "51933369"
 
 - 您的组织为反垃圾邮件、反恶意软件、防钓鱼等定义了策略。 请参阅[防止威胁Office 365。](protect-against-threats.md)
 
-- 你是全局管理员，或者你在安全与合规中心分配了安全管理员或&清除角色。 请参阅 [安全与合规&中的权限](permissions-in-the-security-and-compliance-center.md)。 对于一些操作，还必须分配有新的 Preview 角色。
+- 你是全局管理员，或者你已分配有安全管理员或搜索和清除Microsoft 365 Defender。 请参阅[中的权限Microsoft 365 Defender。](permissions-in-the-security-and-compliance-center.md) 对于一些操作，还必须分配有新的 Preview 角色。
 
 ### <a name="preview-role-permissions"></a>预览角色权限
 
@@ -67,10 +67,10 @@ ms.locfileid: "51933369"
 |
 
 > [!NOTE]
-> *预览* 是一个角色，而不是角色组;必须将 Preview 角色添加到现有角色组中，Office 365 (角色 <https://protection.office.com>) 。 转到 **"权限"，** 然后编辑现有角色组或添加分配了 **预览** 角色的新角色组。
-> 全局管理员角色分配有 Microsoft 365 管理中心 () ，安全管理员和安全读者角色在安全& <https://admin.microsoft.com> 合规中心 <https://protection.office.com> () 。 若要详细了解角色和权限，请参阅 [安全与合规&中的权限](permissions-in-the-security-and-compliance-center.md)。
+> *预览* 是一个角色，而不是角色组;必须将 Preview 角色添加到现有角色组中，Office 365 (角色 <https://security.microsoft.com>) 。 转到 **"权限"，** 然后编辑现有角色组或添加分配了 **预览** 角色的新角色组。
+> 全局管理员角色分配有Microsoft 365 管理中心 () ，安全管理员和安全读者角色分配在 <https://admin.microsoft.com> <https://security.microsoft.com> Microsoft 365 Defender () 。 若要了解有关角色和权限的更多信息，请参阅 Microsoft 365 Defender 中[的权限](permissions-in-the-security-and-compliance-center.md)。
 
-我们知道预览和下载电子邮件是敏感活动，因此为这些活动启用了审核功能。 管理员在电子邮件上执行这些活动后，会生成相同的审核日志，可在 Office 365 安全与合规中心 & <https://protection.office.com> () 。 转到"**搜索**  >  **审核日志搜索"，** 并筛选"搜索"部分中的管理员名称。 筛选出的结果将显示活动 **AdminMailAccess**。 选择一行以查看有关预览或下载的电子邮件的详细信息部分的详细信息。
+我们知道预览和下载电子邮件是敏感活动，因此为这些活动启用了审核功能。 管理员在电子邮件上执行这些活动后，会针对相同的内容生成审核日志，并且可在 <https://security.microsoft.com> Office 365 Microsoft 365 Defender () 。 转到"**搜索**  >  **审核日志搜索"，** 并筛选"搜索"部分中的管理员名称。 筛选出的结果将显示活动 **AdminMailAccess**。 选择一行以查看有关预览或下载的电子邮件的详细信息部分的详细信息。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>查找已送达的可疑电子邮件
 
@@ -79,13 +79,11 @@ ms.locfileid: "51933369"
 > [!NOTE]
 > 资源管理器中的默认搜索当前不包括"已删除"项目。  这适用于所有视图，例如恶意软件或网络钓鱼视图。 若要包含 Zapped 项目，你需要添加 **一个"** 传递"操作集，以包含 **"由 ZAP 删除"。** 如果包括所有选项，你将看到所有传递操作结果，包括"已删除的项目"。
 
-1. **导航到威胁资源管理器**：转到 ，然后使用工作 <https://protection.office.com> 或学校帐户登录Office 365。 这会将你带去安全&中心。
+1. **导航到威胁资源管理器**：转到 ，然后使用工作 <https://security.microsoft.com> 或学校帐户登录Office 365。 此操作将Microsoft 365 Defender。
 
-2. 在左侧导航快速启动中，选择"**威胁管理资源管理器** \> **"。**
+2. 在左侧导航快速启动中，选择"电子邮件 **&协作** \> **资源管理器"。**
 
-    ![具有"传递操作"和"传递位置"字段的资源管理器。](../../media/ThreatExFields.PNG)
-
-    你可能会注意到新的" **特殊操作"** 列。 此功能旨在告知管理员处理电子邮件的结果。 可以在 **与** 传递操作和传递位置相同的位置访问特殊 **操作列**。  特殊操作可能在威胁资源管理器的电子邮件时间线结束时更新，这是一项旨在为管理员提供更好的搜寻体验的新功能。
+      你可能会注意到新的" **特殊操作"** 列。 此功能旨在告知管理员处理电子邮件的结果。 可以在 **与** 传递操作和传递位置相同的位置访问特殊 **操作列**。  特殊操作可能在威胁资源管理器的电子邮件时间线结束时更新，这是一项旨在为管理员提供更好的搜寻体验的新功能。
 
 3. **威胁资源管理器中的视图**：在"视图 **"** 菜单中，选择"**所有电子邮件"。**
 

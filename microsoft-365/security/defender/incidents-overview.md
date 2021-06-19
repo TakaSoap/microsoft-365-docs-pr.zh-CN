@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022766"
+ms.locfileid: "53028519"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>事件Microsoft 365 Defender
 
@@ -144,9 +144,11 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 如果你是安全分析的新增人员，请参阅第一[](incidents-overview.md)个事件响应简介，了解其他信息并逐步查看示例事件。
 
+有关跨 Microsoft 产品的事件响应详细信息，请参阅 [本文](/security/compass/incident-response-overview)。
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>示例安全操作Microsoft 365 Defender
 
-下面是一个安全操作示例Microsoft 365 Defender。
+下面是使用 SecOps (安全) 示例Microsoft 365 Defender。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="安全操作示例Microsoft 365 Defender":::
 
@@ -169,11 +171,19 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 每日、每月、季度和年度任务可用于更新或优化流程、策略和安全配置。
 
+### <a name="secops-resources-across-microsoft-products"></a>跨 Microsoft 产品的 SecOps 资源
+
+有关 Microsoft 产品中 SecOps 详细信息，请参阅以下资源：
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [最佳做法](/security/compass/security-operations)
+- [视频和幻灯片](/security/compass/security-operations-videos-and-decks)
+
 ## <a name="next-steps"></a>后续步骤
 
 **如果你是安全分析和** 事件响应的新增人员：
 
-- 请参阅[响应你的](first-incident-overview.md)第一个事件演练，获取有关 Microsoft 365 Defender 门户中分析、修正和事后评审的典型流程的引导教程，并查看攻击示例。
+- 请参阅[响应你的第](first-incident-overview.md)一个事件演练，获取有关示例攻击的 Microsoft 365 Defender 门户中分析、修正和事后评审的典型流程的引导教程。
 
 **如果你有安全分析和** 事件响应的经验：
 
@@ -181,7 +191,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
   - 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 
 
-  - [管理事件](manage-incidents.md)，其中包括重命名、分配、分类以及根据事件管理工作流添加标记和注释。
+  - [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。
 
   - [执行事件](investigate-incidents.md)调查。
 
