@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694397"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028975"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -163,20 +163,6 @@ ms.locfileid: "52694397"
     - Android：尚不支持
 
 此预览的已知限制：
-
-- 此功能仍在向租户推出。 如果用户访问网站时，具有所选身份验证上下文的条件访问策略未生效，可使用 PowerShell 确认配置正确且满足所有先决条件。 您需要从网站中删除敏感度标签，然后通过使用当前 [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)中的 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet，为身份验证上下文配置网站。 如果此方法有效，请再等待几天，然后再次尝试应用敏感度标签。
-    
-    使用 PowerShell 测试身份验证上下文：
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
-    ```
-    
-    若要删除身份验证上下文，以便可以尝试再次应用敏感度标签：
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
-    ```
 
 - 对于 OneDrive 同步应用，仅 OneDrive 支持，其他网站不支持。
 
@@ -429,13 +415,19 @@ ms.locfileid: "52694397"
 
 如果有人将文档上传到受敏感度标签保护的网站上，且该文档的敏感度标签的[优先级](sensitivity-labels.md#label-priority-order-matters)比该网站应用的敏感度标签高，则不会阻止此操作。 例如，你向 SharePoint 网站应用了“**常规**”标签，并且有人向此网站上传了一个标记为“**机密**”的文档。 对于优先级更低的内容来说，具有更高优先级的敏感度标签会识别敏感度高于此内容的内容，因此该情况可能会带来安全隐患。
 
-虽然此操作未被阻止，但它经过审核，并会自动生成一封面向上传文档的人员和网站管理员的电子邮件。 因此，可识别存在这种标签优先级不一致情况的用户和管理员，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。
+虽然未阻止该操作，但其已经过审核，并默认自动生成一封发往上传文档人员和网站管理员的电子邮件。 因此，可识别存在这种标签优先级不一致情况的用户和管理员，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。
 
 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不会出现安全问题。 例如，标有“**常规**”的文档上传到标有“**机密**”的网站上。 在这种情况中，不生成审核事件和电子邮件。
 
 要搜索此事件的审核日志，请从“**文件和页面活动**”类别中查找“**检测到文档敏感度不匹配**”。
 
 自动生成的电子邮件具有主题“**检测到不兼容的敏感度标签**”，该电子邮件将说明标记不匹配，并提供指向已上传文档和网站的链接。 此外，它还包含说明用户可以如何更改敏感度标签的文档链接。 目前，无法禁用或自定义这些自动发送的电子邮件。
+
+要阻止此自动生成的电子邮件，请使用以下来自 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 中的 PowerShell 命令：
+
+```PowerShell
+Set-SPOTenant -BlockSendLabelMismatchEmail $True
+```
 
 当有人向网站或组添加敏感度标签或从中删除敏感度标签时，也会审核这些活动，但不会自动生成电子邮件。
 

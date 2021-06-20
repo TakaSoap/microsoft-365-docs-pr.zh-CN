@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f680cfb30de5b6904e5fa489cca368550195b4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203674"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028771"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -33,7 +33,7 @@ ms.locfileid: "51203674"
 **适用对象**
 
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
-- 
+
  **摘要：** 在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。 
    
 使用本文中的说明，这对 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解决方案，创建包含四个不同类型的 SharePoint Online 团队网站的开发/测试环境。在标题为 **SharePoint 和 OneDrive for Business** 的主题 10 详细介绍了这些网站。
@@ -46,7 +46,7 @@ ms.locfileid: "51203674"
 
 此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建标签。
 
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。如需帮助，请参阅 [在何处登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在“**Microsoft Office 主页**”标签页中，单击“**管理**”磁贴。
 
@@ -374,7 +374,7 @@ ms.locfileid: "51203674"
 
 接下来，通过执行以下步骤，使用新作用域内策略以及保护和权限的子标签来配置 Azure 信息保护：
 
-1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。有关帮助信息，请参阅 [在何处登录 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在浏览器的单独选项卡中，转到 Azure 门户 (<https://portal.azure.com>)。
 
