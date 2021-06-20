@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984804"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028999"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -369,3 +369,17 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="tips-to-increase-labeling-reach"></a>提高标记覆盖范围的提示
+
+尽管自动标记是对组织拥有的 Office 文件进行分类、标记和保护的最有效方法之一，但请检查是否可以使用任何其他方法对其进行补充，以提高标记覆盖范围：
+
+- 使用 [Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)时：
+    
+    - 对于本地数据存储（如网络共享和 SharePoint Server 库）中的文件：使用[扫描程序](/azure/information-protection/deploy-aip-scanner)发现这些文件中的敏感信息并相应地对其进行标记。 如果计划将这些文件迁移或上传到 Microsoft 365 中的 SharePoint，请使用扫描程序标记文件，然后再将它们移到云中。
+    
+    - 如果在使用敏感度标签之前使用了另一种标签解决方案：使用 PowerShell 和[高级设置重复使用这些解决方案中的标签](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions)。
+
+- 在为用户提供要应用哪些敏感度标签的培训后，鼓励[手动标记](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。 当你确信用户知道要应用哪个标签时，请考虑将默认标签和强制标签配置为[策略设置](sensitivity-labels.md#what-label-policies-can-do)。 
+
+此外，请考虑在 SharePoint 中[默认将新文件标记为敏感](/sharepoint/sensitive-by-default)，以防止来宾访问新添加的文件，直到至少有一项 DLP 策略扫描文件内容。
