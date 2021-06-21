@@ -453,10 +453,10 @@
 ### [管理和 API]()
 #### [管理和 API 概述](management-apis.md)
 #### [API 发行说明](api-release-notes.md)
-#### [Microsoft Defender for Endpoint API]()
+#### [Microsoft Defender for Endpoint API]()
 ##### [入门]()
 ###### [Microsoft Defender for Endpoint API 许可和条款](api-terms-of-use.md)
-###### [访问 Microsoft Defender for Endpoint API](apis-intro.md)
+###### [访问 Microsoft Defender for Endpoint API](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [ 通过应用上下文获得访问权限](exposed-apis-create-app-webapp.md)
 ###### [通过户上下文获得访问权限](exposed-apis-create-app-nativeapp.md)
@@ -530,6 +530,8 @@
 ####### [通过标记查找计算机](find-machines-by-tag.md)
 ####### [查找缺失的 KBS](get-missing-kbs-machine.md)
 ####### [设置设备值](set-device-value.md)
+####### [更新计算机](update-machine-method.md)
+
 
 
 ###### [计算机操作]()
@@ -640,7 +642,7 @@
 #### [成为 Microsoft Defender for Endpoint 合作伙伴](get-started-partner-integration.md)
 
 ### [集成]()
-#### [Microsoft Defender for Endpoint 集成](threat-protection-integration.md)
+#### [Microsoft Defender for Endpoint 集成](threat-protection-integration.md)
 #### [通过条件访问保护用户、数据和设备](conditional-access.md)
 #### [Microsoft Cloud App Security 集成概述](microsoft-cloud-app-security-integration.md)
 

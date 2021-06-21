@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934389"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029617"
 ---
 # <a name="top-scoring-in-industry-tests"></a>在行业测试中得分最高
 
@@ -39,11 +39,11 @@ Microsoft 365 Defender 将 [Microsoft Defender for Endpoint](https://www.microso
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE：演示了实际检测、响应和对高级攻击的保护
 
-MITRE 的测试方法核心就是模拟实际攻击，以便了解解决方案是否可以充分检测攻击并作出响应。 尽管测试专注于终结点检测和响应，但 MITRE 的模拟 APT29 攻击跨越多个攻击域，打造了除了终结点保护之外，支持防御的机会。 Microsoft 使用 Microsoft 365 Defender 扩展了防御者在终结点之外的可见性。
+MITRE 的测试方法核心就是模拟实际攻击，以便了解解决方案是否可以充分检测攻击并作出响应。 尽管测试专注于终结点检测和响应，但 MITRE 的模拟 APT29 攻击跨越多个攻击域，提供除终结点保护以外支持防御程序的机会。 Microsoft 使用 Microsoft 365 Defender 扩展了防御程序在终结点之外的可见性。
 
 - 基于 ATT&CK 的 Microsoft 365 Defender 评估 - 2020 年 5 月：[领先的实际检测](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender 针对攻击链阶段提供接近 100% 的覆盖范围。 它可对攻击者活动提供直接的可见性。 这种可见性极大地减少了安全操作中心和依赖于特定配置更改的供应商解决方案的手工工作。 Microsoft 365 Defender 的可见性差距也最小，减少了攻击者不被发现的操作能力。
+ Microsoft 365 Defender 针对攻击链阶段提供接近 100% 的覆盖范围。 它可对攻击者活动提供直接的可见性。 这种可见性极大地减少了安全操作中心和依赖于特定配置更改的供应商解决方案的手工工作。 Microsoft 365 Defender 的可见性差距也最小，减少了攻击者不被发现的操作能力。
 
 ## <a name="next-generation-protection"></a>新一代保护
 
@@ -79,7 +79,7 @@ AV-TEST 产品审查和认证报告测试以下三个类别：防护、性能和
 
 - 2020 年商业安全测试（3 月 - 6 月）：[实际防护等级 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
-- 2019 年商业安全测试（8 月 - 11 月）：[实际防护等级 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- 2019 年商业安全测试（8 月 - 11 月）：[实际防护等级 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
 
 - 2019 年商业安全测试（3 月 - 6 月）：[实际防护等级 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -89,7 +89,7 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 
 - 企业终结点保护（2020 年 10 月 - 12 月）：[AAA 奖](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**最新**</sup>
 
-    Microsoft 的新一代保护产品阻止了所有公共和定向攻击。 Microsoft Defender 防病毒取得如此出色的成绩，是因为它可以阻止恶意 URL、处理漏洞利用以及正确分类合法应用程序和网站。
+    Microsoft 的下一代保护产品已阻止所有公共和目标攻击。Microsoft Defender 防病毒能够阻止恶意 URL、处理攻击以及正确分类合法的应用程序和网站，已取得良好效果。
 
 - 企业终结点保护（2020 年 7 月 - 9 月）：[AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 

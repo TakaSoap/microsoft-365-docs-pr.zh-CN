@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022350"
+ms.locfileid: "53029869"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -96,9 +96,9 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 
-借助 Microsoft Defender for Office 365，你组织的安全团队可以在安全与合规中心内定义策略（依次转到 <https://protection.office.com> \> “**威胁管理**”\>“**策略**”），从而配置保护。
+借助 Microsoft Defender for Office 365，组织的安全团队可以通过在 Microsoft 365 Defender 门户中定义策略来配置保护（转到 <https://security.microsoft.com> \>“**电子邮件和协作**”\>“**策略和规则**”）。
 
-观看[此视频](https://www.youtube.com/watch?v=vivvTmWJ_3c)了解更多信息。 
+观看[此视频](https://www.youtube.com/watch?v=vivvTmWJ_3c)了解更多信息。
 
 > [!TIP]
 > 有关可定义的策略的快速列表，请参阅[威胁防护](protect-against-threats.md)。
@@ -113,11 +113,11 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 - **[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)**：当用户协作和共享文件时，可通过识别和阻止工作组网站和文档库中的恶意文件来保护你的组织。 若要了解详细信息，请参阅[开启适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)。
 
-- **[Defender for Office 365 中的防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**：检测模拟用户和内部或自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-atp-anti-phishing-policies.md)。
+- **[Defender for Office 365 中的防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**：检测模拟用户和内部或自定义域的尝试。 它应用机器学习模型和高级模仿检测算法，防止钓鱼攻击。 若要了解详细信息，请参阅[在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-mdo-anti-phishing-policies.md)。
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>查看 Microsoft Defender for Office 365 报告
 
-Microsoft Defender for Office 365 包括高级 [报告仪表板](view-reports-for-mdo.md) 以监视你的 Defender for Office 365 性能。 可在安全与合规中心的“**报告**”\>“**仪表板**”处访问该内容。
+Microsoft Defender for Office 365 包括 [报告](view-reports-for-mdo.md) 以监视 Defender for Office 365。 你可以在 Microsoft 365 Defender 门户中通过“**报告**”\>“**电子邮件和协作**”\>“**电子邮件和协作报告**”，或直接通过 <https://security.microsoft.com/securityreports> 来访问报告。
 
 实时更新报告，为你提供最新见解。 这些报告还提供建议并向你提醒即将面临的威胁。 预定义的报告包括以下内容：
 
@@ -141,16 +141,19 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>使用 Microsoft Defender for Office 365 功能所需权限
 
-若要访问安全与合规中心中的 Microsoft Defender for Office 365 功能，你必须分配有相应的角色。下表包含一些示例：
+要访问 Microsoft Defender for Office 365 功能，你必须分配有适当的角色。下表包含了一些示例：
+
+<br>
+
+****
 
 |角色或角色组|了解详细信息的资源|
 |---|---|
-|全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)|
-|安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|搜索和清除（仅在安全与合规中心内分配此权限）|[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
-
-有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+|全局管理员（组织管理）|你可以在 Azure Active Directory 或 Microsoft 365 Defender 门户中分配此角色。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。|
+|安全管理员|你可以在 Azure Active Directory 或 Microsoft 365 Defender 门户中分配此角色。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。|
+|Exchange Online 中的组织管理。|[Exchange Online 中的权限](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|搜索和清除|此角色仅在 Microsoft 365 Defender 门户或 Microsoft 365 合规中心内可用。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)，以及 [Microsoft 365 合规中心中的权限](../../compliance/microsoft-365-compliance-center-permissions.md)。|
+|||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>获取 Microsoft Defender for Office 365
 
@@ -176,4 +179,4 @@ Microsoft Defender for Office 365 包含在特定订阅中，如 Microsoft 365 E
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-- [Microsoft 365 Defender 中的自动调查和响应 (AIR)](../defender/m365d-autoir.md) 1
+- [Microsoft 365 Defender 中的自动调查和响应 (AIR)](../defender/m365d-autoir.md)

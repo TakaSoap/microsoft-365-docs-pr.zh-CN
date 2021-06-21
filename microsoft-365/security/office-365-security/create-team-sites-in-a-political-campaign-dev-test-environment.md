@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028771"
+ms.locfileid: "53029893"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -34,8 +34,8 @@ ms.locfileid: "53028771"
 
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
- **摘要：** 在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。 
-   
+ **摘要：** 在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
+
 使用本文中的说明，这对 [Microsoft 针对政治宣传活动、非营利组织和其他敏捷性组织的安全指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解决方案，创建包含四个不同类型的 SharePoint Online 团队网站的开发/测试环境。在标题为 **SharePoint 和 OneDrive for Business** 的主题 10 详细介绍了这些网站。
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>第 1 阶段：创建政治宣传活动开发/测试环境
@@ -46,43 +46,46 @@ ms.locfileid: "53028771"
 
 此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建标签。
 
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。如需帮助，请参阅 [在何处登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户凭据登录 Microsoft 365 管理中心（<https://admin.microsoft.com>）。 如需帮助，请参阅 [在何处登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 在“**Microsoft Office 主页**”标签页中，单击“**管理**”磁贴。
+2. 在开始操作的 **主页** 页面中，单击“**全部显示**”。 在显示的 **管理中心** 部分中，单击“**合规性**”。
 
-3. 在浏览器的新“**Microsoft 365 管理中心**”标签页中，单击 **“管理中心”>“安全和合规性”**。
+3. 在 Microsoft 365 合规中心的 **主页** 页面上，转到“**解决方案**”部分 \>“**信息保护**”。 要直接转到“**信息保护**”页面，请使用 <https://compliance.microsoft.com//informationprotection>。
 
-4. 在浏览器的新“**主页 -安全和合规性**”标签页中，单击“**分类”>“标签**”。
+4. 在“**信息保护**”页上，验证是否已选择“**标签**”标记，然后单击“![创建标签图标](../../media/m365-cc-sc-create-icon.png)”“**创建标签**”。
 
-5. 在“**开始”>“标签**”窗格中，单击“**创建标签**”。
+5. 将打开 **新敏感度标签** 向导。 在 **名称和说明** 步骤中，输入以下值：
+   - **名称**：类型 **内部**。
+   - **显示名称**
+   - **面向用户的说明**
 
-6. 在“命名标签”窗格中，键入 **Internal**，然后单击“下一步”。
+   完成后，单击“**下一步**”。
 
-7. 在“标签设置”窗格中，单击“下一步”。
+6. 在“标签设置”窗格中，单击“下一步”。
 
-8. 在“查看设置”窗格中，单击“创建此标签”，然后单击“关闭”。
+7. 在“查看设置”窗格中，单击“创建此标签”，然后单击“关闭”。
 
-9. 对以下标签重复步骤 5-8：
+8. 对以下标签重复步骤 5-8：
 
    - Private
    - 敏感
    - 高度机密
 
-10. 在“开始”>“标签”窗格中，单击“发布标签”。
+9. 在“开始”>“标签”窗格中，单击“发布标签”。
 
-11. 在“选择要发布的标签”窗格中，单击“选择要发布的标签”。
+10. 在“选择要发布的标签”窗格中，单击“选择要发布的标签”。
 
-12. 在“选择标签”窗格中，单击“添加”并选择全部四个标签。
+11. 在“选择标签”窗格中，单击“添加”并选择全部四个标签。
 
-13. 单击“完成”。
+12. 单击“完成”。
 
-14. 在“选择要发布的标签”窗格中，单击“下一步”。
+13. 在“选择要发布的标签”窗格中，单击“下一步”。
 
-15. 在“选择位置”窗格中，单击“下一步”。
+14. 在“选择位置”窗格中，单击“下一步”。
 
-16. 在“命名策略”窗格中，在“名称”中键入 **Campaign**，然后单击“下一步”。
+15. 在“命名策略”窗格中，在“名称”中键入 **Campaign**，然后单击“下一步”。
 
-17. 在“查看设置”窗格中，单击“发布标签”，然后单击“关闭”。
+16. 在“查看设置”窗格中，单击“发布标签”，然后单击“关闭”。
 
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>第 3 阶段：创建 SharePoint Online 团队网站
 
@@ -374,7 +377,7 @@ ms.locfileid: "53028771"
 
 接下来，通过执行以下步骤，使用新作用域内策略以及保护和权限的子标签来配置 Azure 信息保护：
 
-1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。有关帮助信息，请参阅 [在何处登录 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在浏览器的单独选项卡中，转到 Azure 门户 (<https://portal.azure.com>)。
 
