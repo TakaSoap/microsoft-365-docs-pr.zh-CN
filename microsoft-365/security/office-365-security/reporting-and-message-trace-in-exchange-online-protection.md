@@ -15,12 +15,12 @@ ms.custom:
 description: 本文将介绍适用于 EOP 管理员的 Microsoft Exchange Online Protection (报告和) 工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841434"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054376"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -35,30 +35,17 @@ ms.locfileid: "52841434"
 
 ## <a name="usage-reports"></a>使用率报告
 
-**Microsoft 365组活动**：查看有关已创建Microsoft 365组数的信息。
+- **Microsoft 365组活动**：查看有关已创建Microsoft 365组数的信息。 有关详细信息，请参阅管理Microsoft 365中的报告[- Microsoft 365组](../../admin/activity-reports/office-365-groups.md)。
+- **电子邮件** 活动：查看有关整个组织中以及特定用户发送、接收和阅读的邮件数的信息。 有关详细信息，请参阅Microsoft 365中心[中的报表 - 电子邮件活动](../../admin/activity-reports/email-activity.md)。
+- **电子邮件应用** 使用情况：查看有关使用的电子邮件应用的信息。 这包括每个应用的连接总数，以及连接Outlook版本。 有关详细信息，请参阅Microsoft 365中心[中的报告 - 电子邮件应用使用情况](../../admin/activity-reports/email-apps-usage.md)。
+- **邮箱使用情况**：查看有关已使用的存储、配额消耗、项目计数以及邮箱发送 (读取活动) 活动的信息。 有关详细信息，请参阅管理[Microsoft 365报告 - 邮箱使用情况](../../admin/activity-reports/mailbox-usage.md)。
 
-**电子邮件活动**：查看有关整个组织中以及特定用户发送、接收和阅读的邮件数的信息。
-
-**电子邮件应用** 使用情况：查看有关使用的电子邮件应用的信息。 这包括每个应用的连接总数，以及连接Outlook版本。
-
-**邮箱使用情况**：查看有关已使用的存储、配额消耗、项目计数以及邮箱发送 (读取活动) 活动的信息。
-
-有关详细信息，请参阅下列资源：
-
-- [Microsoft 365管理中心中的报告 - Microsoft 365组](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365管理中心中的报表 - 电子邮件活动](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365管理中心中的报告 - 电子邮件应用使用情况](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365管理中心中的报告 - 邮箱使用情况](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>安全&管理中心中的Microsoft 365合规性报告
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的安全报告
 
 这些增强的报告为 EOP 管理员提供了交互式报告体验，其中包括摘要信息，以及深入了解更多详细信息的能力。
 
-**Defender for Office 365：** View information about 保险箱 Links and 保险箱 Attachments that are part of Microsoft Defender for Office 365.
-
-**EOP：** 查看有关您组织的恶意软件检测、欺骗邮件、垃圾邮件检测和邮件流的信息。
-
-[查看 Defender for Office 365](view-reports-for-mdo.md)
+- **Defender for Office 365：** View information about 保险箱 Links and 保险箱 Attachments that are part of Microsoft Defender for Office 365. 有关详细信息，请参阅查看 Office 365[门户中的报告Microsoft 365 Defender Defender。](view-reports-for-mdo.md)
+- **EOP：** 查看有关您组织的恶意软件检测、欺骗邮件、垃圾邮件检测和邮件流的信息。 有关详细信息，请参阅在电子邮件门户中[查看Microsoft 365 Defender报告](view-email-security-reports.md)。
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft 自定义报告Graph
 
@@ -70,7 +57,7 @@ ms.locfileid: "52841434"
 
 您可以使用此信息有效回答用户的问题、解决邮件流问题、验证策略更改，以及减少联系技术支持寻求帮助的需要。
 
-请参阅 [安全与合规中心&邮件跟踪](message-trace-scc.md)。
+请参阅[邮件门户中的Microsoft 365 Defender跟踪](message-trace-scc.md)。
 
 ## <a name="audit-logging"></a>审核日志记录
 
@@ -79,6 +66,8 @@ ms.locfileid: "52841434"
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>报告和邮件跟踪数据的可用性与延迟
 
 下表描述了 EOP 报告和邮件跟踪数据何时可用以及可用多长时间。
+
+<br>
 
 ****
 

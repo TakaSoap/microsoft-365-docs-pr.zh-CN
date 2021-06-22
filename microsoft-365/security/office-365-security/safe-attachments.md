@@ -20,12 +20,12 @@ ms.collection:
 description: 管理员可以了解 Microsoft Defender for 保险箱 中的"附件"Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625001"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054394"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "52625001"
 保险箱附件扫描发生在你的附件数据所在的Microsoft 365区域。 有关数据中心地理位置的信息，请参阅 [你的数据位于何处？](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> 以下功能位于安全与合规中心内保险箱附件策略的&设置中。 但是，这些设置在全局启用或禁用，并且不需要保险箱附件策略：
+> 以下功能位于"附件"门户中"附件保险箱全局Microsoft 365 Defender设置中。 但是，这些设置在全局启用或禁用，并且不需要保险箱附件策略：
 >
 > - [保险箱、SharePoint 和 OneDrive 的附件Microsoft Teams。](mdo-for-spo-odb-and-teams.md)
 > - [Microsoft 365 E5 中的安全文档](safe-docs.md)
@@ -75,8 +75,8 @@ ms.locfileid: "52625001"
   |---|---|---|
   |**关闭**|附件不会通过"附件"扫描保险箱恶意软件。 EOP 中的反恶意软件保护 [仍可扫描邮件是否包含恶意软件](anti-malware-protection.md)。|关闭所选收件人的扫描。 <p> 防止在路由内部邮件时出现不必要的延迟。 <p> **建议大多数用户不要使用此选项。只应使用此选项为仅接收来自保险箱发件人的邮件的收件人关闭附件扫描。**|
   |**监视器**|传递带有附件的邮件，然后跟踪检测到的恶意软件发生的情况。 <p> 由于附件扫描，安全邮件保险箱延迟。|查看组织中检测到的恶意软件的去向。|
-  |**阻止**|阻止传递包含检测到的恶意软件附件的邮件。 <p> 邮件 [被隔离，](manage-quarantined-messages-and-files.md) 其中只有管理员 (最终用户才能) 、释放或删除邮件。 <p> 自动阻止邮件和附件的未来实例。 <p> 由于附件扫描，安全邮件保险箱延迟。|保护组织免受使用相同的恶意软件附件的重复攻击。 <p> 这是默认值，以及 Standard 和 Strict 预设安全策略 [中的建议值](preset-security-policies.md)。|
-  |**Replace**|删除检测到的恶意软件附件。 <p> 通知收件人附件已删除。 <p>  邮件 [被隔离，](manage-quarantined-messages-and-files.md) 其中只有管理员 (最终用户才能) 、释放或删除邮件。 <p> 由于附件扫描，安全邮件保险箱延迟。|提高收件人的可见性，即附件因检测到的恶意软件而被删除。|
+  |**阻止**|阻止传递包含检测到的恶意软件附件的邮件。 <p> 邮件被 [隔离，](manage-quarantined-messages-and-files.md) 其中只有管理员 (用户) 审阅、释放或删除邮件。 <p> 自动阻止邮件和附件的未来实例。 <p> 由于附件扫描，安全邮件保险箱延迟。|保护组织免受使用相同的恶意软件附件的重复攻击。 <p> 这是默认值，以及 Standard 和 Strict 预设安全策略 [中的建议值](preset-security-policies.md)。|
+  |**Replace**|删除检测到的恶意软件附件。 <p> 通知收件人附件已删除。 <p>  邮件被 [隔离，](manage-quarantined-messages-and-files.md) 其中只有管理员 (用户) 审阅、释放或删除邮件。 <p> 由于附件扫描，安全邮件保险箱延迟。|提高收件人的可见性，即附件因检测到的恶意软件而被删除。|
   |**动态传递**|立即传递邮件，但使用占位符替换附件，保险箱附件扫描完成。 <p> 有关详细信息，请参阅本文稍后介绍保险箱[中的](#dynamic-delivery-in-safe-attachments-policies)动态传递策略部分。|避免邮件延迟，同时保护收件人免受恶意文件的攻击。 <p> 允许收件人在扫描进行时以安全模式预览附件。|
   |
 
@@ -104,11 +104,11 @@ ms.locfileid: "52625001"
 
 附件策略中的保险箱传递操作旨在消除任何可能由附件扫描导致保险箱延迟。 电子邮件正文通过每个附件的占位符传递给收件人。 占位符将一直保留，直到发现附件是安全的，然后附件可以打开或下载。
 
-如果发现附件是恶意附件，则隔离邮件。 只有管理员 (最终用户) ，才能查看、释放或删除由附件扫描隔离保险箱的邮件。 有关详细信息，请参阅 [以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
+如果发现附件是恶意附件，则隔离邮件。 只有管理员 (用户) ，才能查看、释放或删除由附件扫描隔离保险箱的邮件。 有关详细信息，请参阅 [以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
 
 大多数 PDF 和Office文档都可以在安全模式下预览，同时保险箱附件扫描正在进行中。 如果附件与动态传递预览程序不兼容，收件人将看到附件的占位符，直到保险箱附件扫描完成。
 
-如果使用的是移动设备，并且 PDF 未在移动设备上的动态传递预览器中呈现，请尝试使用移动浏览器在 Outlook 网页版中打开 (以前称为 Outlook Web App) 。
+如果您使用的是移动设备，并且 PDF 未在移动设备上的动态传递预览器中呈现，请尝试使用移动浏览器在 Outlook 网页版 (中打开邮件Outlook Web App) 以前称为 Outlook Web App) 。
 
 下面是动态传递和转发邮件的一些注意事项：
 

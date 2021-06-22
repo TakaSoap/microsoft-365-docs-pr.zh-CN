@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 获取基于硬件的最新隔离。 防止当前和新出现的攻击（如攻击或恶意链接）干扰员工工作效率和企业安全。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488307"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055270"
 ---
 # <a name="application-guard-for-office-for-admins"></a>适用于管理员Office应用程序防护
 
@@ -29,7 +29,7 @@ ms.locfileid: "51488307"
 
 Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助于防止不受信任的文件访问受信任资源，确保企业不受新的和新出现的攻击。 本文将指导管理员设置设备，以预览适用于Office。 它提供有关在设备上启用应用程序防护的系统要求Office安装步骤的信息。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 ### <a name="minimum-hardware-requirements"></a>最低硬件要求
 
@@ -83,7 +83,7 @@ Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助�
 
 此步骤确保识别并解决问题所需的数据已到达 Microsoft。 请按照以下步骤在设备上启用Windows诊断：
 
-1. 从 **设置** 菜单打开"开始"菜单。
+1. 从 **设置** 打开"开始"菜单。
 
    ![“开始”菜单](../../media/ag05-diagnostic.png)
 
@@ -120,13 +120,12 @@ Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助�
 ## <a name="configure-application-guard-for-office"></a>配置应用程序防护Office
 
 Office支持以下策略，以便你可以配置应用程序防护的Office。 可以通过组策略或云策略服务配置Office[策略](/DeployOffice/overview-office-cloud-policy-service)。
-请参阅 User **Configuration \\ Administrative Templates Microsoft Office \\ 2016 Security 设置 \\ Application \\ \\ Guard** 中的组策略设置，查看管理员设置的配置。
 
 
 > [!NOTE]
 > 配置这些策略可以针对在应用程序防护中打开的文件禁用某些Office。
 
-|策略|说明|
+|Policy|说明|
 |---|---|
 |请勿将应用程序防护用于Office|启用此策略将强制 Word、Excel 和 PowerPoint 使用受保护的视图隔离容器，而不是应用程序防护Office。 此策略可用于暂时禁用应用程序防护，Office当存在问题而将其保留为启用状态Microsoft Edge。|
 |配置应用程序防护Office容器预创建|此策略确定是否预先创建了用于Office应用程序防护容器（用于隔离不受信任的文件）以提高运行时性能。 如果启用此设置，可以指定继续预创建容器的天数，或让 Office 内置启发式预创建容器。
@@ -234,6 +233,9 @@ Microsoft Defender for Endpoint 是一个安全平台，旨在帮助企业网络
 ## <a name="known-issues"></a>已知问题
 
 * 选择 (`http` 或 `https`) Web 链接不会打开浏览器。
-* 目前不支持将 RTF 格式 (RTF) 应用程序防护Office打开的文档中的内容或图像。
-* 不受支持的文件类型保护策略的默认设置是阻止打开信息权限管理 、IRM (、CSV 或 HTML) 不受信任的文件类型。
+* 复制粘贴保护策略的默认设置是启用仅对文本的剪贴板访问。
+* 不受支持的文件类型保护策略的默认设置是阻止打开经过加密或设置了信息权限管理或 IRM (不受) 文件类型。 这包括具有使用加密Microsoft 信息保护或高度机密 (敏感度标签) 。
+* 目前不支持 CSV 和 HTML 文件。
+* 应用程序保护Office当前无法与 NTFS 压缩卷一起运行。 如果看到错误"ERROR_VIRTUAL_DISK_LIMITATION"，请尝试解压缩卷。
 * 更新 .NET 可能会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请[通过接收错误消息尝试打开沙盒Windows Defender 应用程序防护Windows沙盒。](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
+* 请参阅[常见问题 - Microsoft Defender 应用程序防护了解详细信息。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

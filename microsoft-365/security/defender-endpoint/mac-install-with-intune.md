@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aeffdaff39c2f10dfa5164764bff38e99c00010
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684215"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054316"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -52,10 +52,10 @@ ms.locfileid: "52684215"
 | 步骤 | 示例文件名 | BundleIdentifier |
 |-|-|-|
 | [下载载入程序包](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [批准适用于终结点的 Microsoft Defender 的系统扩展](#approve-system-extensions) | MDATP_SysExt.xml | 无 |
-| [批准适用于终结点的 Microsoft Defender 内核扩展](#download-the-onboarding-package) | MDATP_KExt.xml | 无 |
+| [批准适用于终结点的 Microsoft Defender 的系统扩展](#approve-system-extensions) | MDATP_SysExt.xml | 不适用 |
+| [批准适用于终结点的 Microsoft Defender 内核扩展](#download-the-onboarding-package) | MDATP_KExt.xml | 不适用 |
 | [授予对 Microsoft Defender for Endpoint 的完全磁盘访问权限](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [网络扩展策略](#network-filter) | MDATP_NetExt.xml | 无 |
+| [网络扩展策略](#network-filter) | MDATP_NetExt.xml | 不适用 |
 | [配置 Microsoft AutoUpdate (MAU) ](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender for Endpoint 配置设置](mac-preferences.md#intune-profile-1)<br/><br/> **注意：** 如果计划运行适用于 macOS 的第三方 AV，请设置为 `passiveMode` `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [配置 Microsoft Defender for Endpoint 和 MS AutoUpdate (MAU) 通知](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 或 com.microsoft.wdav.tray |
@@ -101,18 +101,18 @@ ms.locfileid: "52684215"
     > [!div class="mx-imgBorder"]
     > ![自定义配置文件创建](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. 为配置文件选择一个名称，例如"MDATP macOS 载入"。 单击“**下一步**”。
+1. 为配置文件选择一个名称，例如"适用于 macOS 的 MDE 载入"。 点击 **“下一步”**。
 
     > [!div class="mx-imgBorder"]
     > ![自定义配置文件 - 名称](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. 为配置文件名称选择一个名称，例如"MDATP macOS 载入"。
+1. 为配置文件名称选择一个名称，例如"适用于 macOS 的 MDE 载入"。
 1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入程序包中提取的配置文件文件"作为配置文件。
 
     > [!div class="mx-imgBorder"]
     > ![从文件导入自定义配置文件的配置](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. 单击“**下一步**”。
+1. 点击 **“下一步”**。
 1. 在"分配"选项卡上 **分配** 设备。单击"下一 **步"。**
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 
 从我们的 GitHub [存储库中下载](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [**fulldisk.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)
 
-按照上面有关 [载入 blob](#onboarding-blob)的说明操作，使用"MDATP Full Disk Access"作为配置文件名称，并下载 **fulldisk.mobileconfig** 作为配置文件名称。
+按照上面有关 [载入 blob](#onboarding-blob) 的说明操作，使用"MDE 完全磁盘访问"作为配置文件名称，将已下载 **的 fulldisk.mobileconfig** 用作配置文件名称。
 
 ### <a name="network-filter"></a>网络筛选器
 
@@ -180,7 +180,7 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 
 从我们的 GitHub 存储库中下载 [**netfilter.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) [](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-按照上面有关 [载入 blob](#onboarding-blob)的说明操作，使用"MDATP网络筛选器"作为配置文件名称，将下载的 **netfilter.mobileconfig** 用作配置文件名称。
+按照上面有关 [载入 blob](#onboarding-blob) 的说明操作，使用"MDE 网络筛选器"作为配置文件名称，将下载的 **netfilter.mobileconfig** 用作配置文件名称。
 
 ### <a name="notifications"></a>通知
 
@@ -188,7 +188,7 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 
 从我们的 GitHub[存储库中下载 notif.mobileconfig。](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)
 
-按照上面有关 [载入 blob](#onboarding-blob)的说明操作，使用"MDATP网络筛选器"作为配置文件名称，并下载 **notif.mobileconfig** 作为配置文件名称。
+按照上面有关 [载入 blob](#onboarding-blob) 的说明操作，使用"MDE 通知"作为配置文件名称，并下载 **notif.mobileconfig** 作为配置文件名称。
 
 ### <a name="view-status"></a>查看状态
 

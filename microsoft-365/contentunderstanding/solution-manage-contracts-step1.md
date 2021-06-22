@@ -1,5 +1,5 @@
 ---
-title: 步骤 1. 使用 SharePoint Syntex 标识协定文件并提取数据
+title: 步骤 1. 使用SharePoint Syntex标识合同文件并提取数据
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: 了解如何使用 SharePoint Syntex 来识别合约文件，并使用 Microsoft 365 提取数据。
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 了解如何使用SharePoint Syntex解决方案识别合同文件并提取Microsoft 365数据。
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636202"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054496"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用 SharePoint Syntex 标识协定文件并提取数据
+# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用SharePoint Syntex标识合同文件并提取数据
 
-贵组织需要一种方法从您收到的许多文件中标识所有合同文档并对这些文档进行分类。 您还需要能够快速查看每个识别为 (合同文件中的几个关键元素，例如，Client、Contract 和 Fee  *amount*) 。  为此，可以使用[Syntex](index.md) SharePoint文档理解模型，并应用到文档库。
+贵组织需要一种方法从您收到的许多文件中标识所有合同文档并对这些文档进行分类。 您还需要能够快速查看每个识别为 (合同文件中的几个关键元素，例如，Client、Contract 和 Fee  *amount*) 。  为此，可以使用SharePoint Syntex文档理解[](index.md)模型，并应用到文档库。
 
 ## <a name="overview-of-the-process"></a>过程概述
 
@@ -29,7 +29,7 @@ ms.locfileid: "52636202"
 
 1. 首先，您需要查找至少五个示例文件，您可以使用这些文件对模型进行"训练"，以搜索特定于您尝试识别合同内容类型 (的特征) 。 
 
-2. 使用 SharePoint Syntex，创建新的文档理解模型。 使用示例文件，需要 [创建分类器](create-a-classifier.md)。 通过使用示例文件对分类器进行培训，可以指导它搜索特定于公司合同内容的特征。 例如，[创建一个"说明"，](create-a-classifier.md#create-an-explanation)搜索您的合同（如服务协议、协议条款和补偿）中的特定 *字符串*。  甚至可以对说明进行培训，以在文档的特定节中查找这些字符串，或查找位于其他字符串旁边的字符串。 如果您认为已使用分类器所需的信息对分类器进行培训，您可以对示例文件集测试模型，以查看其效率。 测试后，如果需要，可以选择更改说明，使其更高效。 
+2. 使用SharePoint Syntex，创建新的文档理解模型。 使用示例文件，需要 [创建分类器](create-a-classifier.md)。 通过使用示例文件对分类器进行培训，可以指导它搜索特定于公司合同内容的特征。 例如，[创建一个"说明"，](create-a-classifier.md#create-an-explanation)搜索您的合同（如服务协议、协议条款和补偿）中的特定 *字符串*。  甚至可以对说明进行培训，以在文档的特定节中查找这些字符串，或查找位于其他字符串旁边的字符串。 如果您认为已使用分类器所需的信息对分类器进行培训，您可以对示例文件集测试模型，以查看其效率。 测试后，如果需要，可以选择更改说明，使其更高效。 
 
 3. 在你的模型中，可以创建 [提取程序](create-an-extractor.md) 以从每个合约中提取特定部分的数据。 例如，对于每个合同，您最关心的信息是客户是谁、承包商的名称和总成本。
 
@@ -37,7 +37,7 @@ ms.locfileid: "52636202"
 
    ![文档库中的协定](../media/content-understanding/doc-lib-solution.png)
 
-5. 如果你对合同有保留要求，则还可使用模型应用保留标签，防止在[](apply-a-retention-label-to-a-model.md)指定的时段内删除合同。
+5. 如果您有合同保留或安全要求，您还可以使用模型应用保留标签或敏感度标签，以防止在指定的时段[](apply-a-retention-label-to-a-model.md)内删除合同或[](apply-a-sensitivity-label-to-a-model.md)限制可以访问合同的人。
 
 ## <a name="steps-to-create-and-train-your-model"></a>创建和训练模型的步骤
 
@@ -198,6 +198,11 @@ ms.locfileid: "52636202"
 6. 在 **"模型>合约**"页上的"具有此模型的库"部分，你将看到列出的SharePoint URL。
 
     ![显示"具有此模型的库"部分合同主页的屏幕截图。](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. 在 **设置**  >  **库设置下**：
+
+   - 添加名为"状态 **"的列** 并选择 **"选项** "作为列类型。
+   - 应用 **In review、Approved** 和 **Rejected** 值。 
 
 将模型应用到文档库后，您可以开始将文档上载到网站并查看结果。
 

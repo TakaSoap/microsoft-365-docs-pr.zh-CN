@@ -12,17 +12,17 @@ ms.collection: m365solution-managecontracts m365solution-overview
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: 了解如何使用 Syntex、SharePoint、SharePoint 列表、Microsoft Teams 和 Power Automate 的 Microsoft 365 解决方案来管理Power Automate。
-ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: 了解如何使用 Microsoft 365、SharePoint Syntex、SharePoint 列表、Microsoft Teams 和 Power Automate 解决方案管理Power Automate。
+ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843766"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054764"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 解决方案管理合同
 
-本文介绍如何使用组织的 Syntex 和 SharePoint 组件为组织创建Microsoft 365。 它提供了一个框架，可帮助你计划和创建满足你独特业务需求的解决方案。 即使此解决方案不满足您的整体业务需求，也可以将该解决方案的某些部分用于创建自定义合同管理解决方案。
+本文介绍如何使用 SharePoint Syntex 和 Microsoft 365 的组件为组织创建合同Microsoft 365。 它提供了一个框架，可帮助你计划和创建满足你独特业务需求的解决方案。 即使此解决方案不满足您的整体业务需求，也可以将该解决方案的某些部分用于创建自定义合同管理解决方案。
 
 *此内容集记录由 Microsoft 365使用 Microsoft 新式工作解决方案策略团队开发的解决方案。*
 
@@ -40,11 +40,11 @@ ms.locfileid: "52843766"
 
 ## <a name="overview-of-the-solution"></a>解决方案概述
 
-  ![使用 Syntex、SharePoint 列表、SharePoint 列表、Teams 和 Power Automate 的解决方案关系图。](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![使用列表、列表SharePoint Syntex列表SharePoint列表Teams解决方案Power Automate。](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 此合同管理解决方案指南包括以下四个Microsoft 365：
 
-- **Microsoft SharePoint Syntex：** 创建模型以标识和分类合约文件，然后从中提取相应的数据。
+- **Microsoft SharePoint Syntex：** 创建模型以标识和分类合同文件，然后从中提取适当的数据。
 
 - **Microsoft SharePoint列表**：使用新式列表SharePoint格式以业务友好格式显示合同。
 
@@ -56,7 +56,7 @@ ms.locfileid: "52843766"
 
   ![显示工作流的解决方案图表，该工作流用于上载文档、提取数据、通知利益干系人以及批准或拒绝合同。](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. 将文档上载到SharePoint库中。 A SharePoint Syntex document understanding model has been applied to the document library. 它检查每个文件，以查看是否与经过训练要查找的"合同"内容类型匹配。 如果找到匹配项，它会将文件分类为"协定"，并更新文档的内容类型。
+1. 将文档上载到SharePoint库中。 一SharePoint Syntex文档理解模型已应用于文档库。 它检查每个文件，以查看是否与经过训练要查找的"合同"内容类型匹配。 如果找到匹配项，它会将文件分类为"协定"，并更新文档的内容类型。
 
 2. 模型还会从利益干系人感兴趣的每个合同文件中提取特定数据，如客户、承包商 *和费用金额*。  
 
@@ -86,6 +86,6 @@ ms.locfileid: "52843766"
 
 以下各节将详细介绍如何配置合同管理解决方案。 它分为三个步骤：
 
-- [步骤 1.使用 SharePoint Syntex 标识协定文件并提取数据](solution-manage-contracts-step1.md)
+- [步骤 1.使用SharePoint Syntex标识合同文件并提取数据](solution-manage-contracts-step1.md)
 - [步骤 2.使用Microsoft Teams创建合同管理通道](solution-manage-contracts-step2.md)
 - [步骤 3.使用 Power Automate 创建处理合同的流程](solution-manage-contracts-step3.md)

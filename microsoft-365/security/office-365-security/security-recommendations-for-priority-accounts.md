@@ -20,12 +20,12 @@ ms.collection:
 description: 管理员可以了解如何提升安全设置，并使用报告、警报和调查，以在组织中Microsoft 365帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632217"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055252"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>针对企业中的优先级帐户的安全Microsoft 365
 
@@ -36,6 +36,8 @@ ms.locfileid: "51632217"
 Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这些功能可为优先帐户提供额外的安全层。 本文介绍这些功能及其使用方法。
 
 ![图标表单中的安全建议摘要](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,7 +63,7 @@ Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这
 
 - 您可以使用[Exchange Online](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)中的身份验证[](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)策略和客户端访问规则来阻止或允许特定用户使用基本身份验证和旧版身份验证协议，如 POP3、IMAP4 和经过身份验证的 SMTP。
 
-- 可以在单个邮箱上禁用 POP3 和 IMAP4 访问。 您可以在组织一级禁用已验证的 SMTP，并启用它到仍然需要它的特定邮箱上。 有关说明，请参阅以下主题：
+- 可以在单个邮箱上禁用 POP3 和 IMAP4 访问。 您可以在组织一级禁用已验证的 SMTP，并启用它到仍然需要它的特定邮箱上。 有关说明，请参阅以下文章：
   - [为用户启用或禁用 POP3 或 IMAP4 访问](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [启用或禁用 SMTP AUTH (身份验证的客户端 SMTP) ](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
@@ -77,7 +79,7 @@ Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这
 
 预设安全策略是一个方便且集中的位置，用于将我们建议的严格策略设置应用于 EOP 和 Defender for Office 365。 有关详细信息，请参阅[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)。
 
-有关严格策略设置与默认策略和标准策略设置之间如何不同的详细信息，请参阅 EOP 和 Microsoft Defender 的推荐设置[Office 365安全](recommended-settings-for-eop-and-office365.md)。
+有关严格策略设置与默认策略和标准策略设置之间如何不同的详细信息，请参阅[EOP](recommended-settings-for-eop-and-office365.md)和 Microsoft Defender 的推荐设置Office 365安全。
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>将用户标记应用于优先级帐户
 
@@ -85,7 +87,7 @@ Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这
 
 **优先级帐户** 是一种内置用户标记 (称为系统标记) ，可用于标识涉及优先帐户的事件和警报。 有关优先级帐户 **详细信息，** 请参阅管理和 [监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
-还可以创建自定义标记以进一步标识和分类优先级帐户。 有关详细信息，请参阅用户 [标记](user-tags.md)。 请注意，可以在与自定义 **用户 (** 相同的界面) 系统标记的优先级帐户。
+还可以创建自定义标记以进一步标识和分类优先级帐户。 有关详细信息，请参阅用户 [标记](user-tags.md)。 可以在与自定义 **用户 (** 相同的) 管理系统标记的优先级帐户。
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>监视警报、报告和检测中的优先级帐户
 
@@ -97,8 +99,8 @@ Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这
 
 |功能|说明|
 |---|---|
-|警报|受影响用户的用户标记在安全与合规中心的"查看警报"页上可见&筛选器。 有关详细信息，请参阅 [查看警报](../../compliance/alert-policies.md#viewing-alerts)。|
-|威胁资源管理器 <p> 实时检测|在威胁资源管理器 **(** microsoft Defender for Office 365 计划 2) 或实时检测 **(** Microsoft Defender for Office 365 计划 1) 中，用户标记显示在"电子邮件"网格视图和"电子邮件详细信息"飞出控件中。 用户标记还可作为可筛选属性使用。 有关详细信息，请参阅威胁  [资源管理器中的标记](threat-explorer.md#tags-in-threat-explorer)。|
+|警报|受影响用户的用户标记在门户的警报页面上可见并Microsoft 365 Defender筛选器。  有关详细信息，请参阅 [查看警报](../../compliance/alert-policies.md#viewing-alerts)。|
+|资源管理器 <p> 实时检测|在 **资源管理器** (Defender for Office 365 计划 2) 或实时检测 **(** Defender for Office 365 计划 1) 中，用户标记显示在"电子邮件"网格视图和"电子邮件详细信息"飞出控件中。 用户标记还可作为可筛选属性使用。 有关详细信息，请参阅资源管理器  [中的标记](threat-explorer.md#tags-in-threat-explorer)。|
 |市场活动视图|用户标记是 Microsoft Defender for Office 365 计划 2 的"市场活动视图"中的许多可筛选属性之一。 有关详细信息，请参阅 Campaign [Views](campaigns.md)。|
 |威胁防护状态报告|在威胁防护状态报告中的几乎所有视图和详细信息表中，你可以按优先级帐户 **筛选结果**。 有关详细信息，请参阅威胁 [防护状态报告](view-email-security-reports.md#threat-protection-status-report)。|
 |优先级帐户的电子邮件问题报告|EAC Exchange 管理中心 (**中的**"优先级帐户的电子邮件问题) 包含有关优先级帐户的未送达和延迟 **邮件的信息**。 有关详细信息，请参阅优先级 [帐户的电子邮件问题报告](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
@@ -119,7 +121,7 @@ Microsoft 365提供了以下资源来帮助通知贵组织的用户：
 |概念|资源|说明|
 |---|---|---|
 |Microsoft 365|[可自定义的学习路径](/office365/customlearning/)|这些资源可帮助您将针对组织用户的培训整合在一起。|
-|Microsoft 365 安全中心|[学习模块：使用内置智能安全保护组织，Microsoft 365](/learn/modules/security-with-microsoft-365)|本模块使您能够描述Microsoft 365功能如何协同工作，并阐明这些安全功能的好处。|
+|Microsoft 365 安全中心|[Learning模块：使用内置的智能安全保护组织，Microsoft 365](/learn/modules/security-with-microsoft-365)|本模块使您能够描述Microsoft 365功能如何协同工作，并阐明这些安全功能的好处。|
 |多重身份验证|[两步验证：什么是附加验证页面？](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|本文帮助最终用户了解什么是多重身份验证以及为什么在组织中使用的多重身份验证。|
 |攻击模拟培训|[开始使用攻击模拟培训](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365 计划 2 中的攻击模拟培训允许管理员配置、启动和跟踪针对特定用户组的模拟网络钓鱼攻击。|
 

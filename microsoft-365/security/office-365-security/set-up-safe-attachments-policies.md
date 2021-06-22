@@ -18,12 +18,12 @@ description: 了解如何定义附件保险箱保护你的组织免受电子邮�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e96babff19ea981b953d35929813b1e08c000e32
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203831"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054335"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置附件策略Office 365
 
@@ -40,14 +40,14 @@ ms.locfileid: "51203831"
 
 附件策略没有内置或默认保险箱。 若要保险箱电子邮件附件的附件扫描，您需要创建一个或多个保险箱附件策略，如本文所述。
 
-您可以在安全保险箱 &合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置附件Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Defender for Office 365 加载项订阅的组织) 。
+可以在 保险箱 Microsoft 365 Defender 门户中或在 PowerShell (Exchange Online PowerShell 中为在 Microsoft 365 中拥有邮箱的合格 Exchange Online 组织配置附件Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Defender for Office 365 加载项订阅的组织) 。
 
 "附件"策略保险箱元素包括：
 
 - 安全附件策略：指定未知恶意软件检测的操作、是否将带恶意软件附件的邮件发送到指定的电子邮件地址，以及是否传递保险箱附件扫描无法完成时传递邮件。
 - **安全附件规则**：指定策略应用于 (的优先级和收件人) 。
 
-在安全与合规中心内管理"附件保险箱策略时，这两个元素&不明显：
+当你在邮件门户中管理"附件"保险箱时，这两个元素Microsoft 365 Defender不明显：
 
 - 创建附件保险箱策略时，实际上是同时使用同一名称创建安全附件规则和相关的安全附件策略。
 - 修改附件保险箱时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改安全附件规则。 所有其他设置修改关联的安全附件策略。
@@ -60,45 +60,57 @@ ms.locfileid: "51203831"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到"附件 **保险箱，** 请使用 <https://protection.office.com/safeattachmentv2> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到"附件 **保险箱，** 请使用 <https://security.microsoft.com/safeattachmentv2> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需获得权限，然后才能执行本文中的过程：
-  - 若要创建、修改和删除 保险箱 附件策略，您需要是安全 & 合规中心内组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。  
-  - 若要对附件策略保险箱只读访问权限，你需要是安全与合规中心内全局读者或安全读者角色&的成员。 
+- 您需具有权限，然后才能执行本文中的过程：
+  - 若要创建、修改和删除 保险箱 附件策略，您需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。 
+  - 若要对附件策略保险箱只读访问权限，你需要是该门户中全局读取者或安全读者角色Microsoft 365 Defender的成员。 
 
-  有关详细信息，请参阅安全与[合规&中的权限](permissions-in-the-security-and-compliance-center.md)和[Exchange Online。](/exchange/permissions-exo/permissions-exo)
+  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关我们针对附件策略保险箱设置，请参阅保险箱[附件设置。](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
 - 最多允许应用新策略或更新策略 30 分钟。
 
-## <a name="use-the-security--compliance-center-to-create-safe-attachments-policies"></a>使用安全&中心创建附件保险箱策略
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies"></a>使用Microsoft 365 Defender门户创建保险箱附件策略
 
-在安全保险箱合规中心创建自定义附件策略&使用相同的名称同时创建安全附件规则和相关的安全附件策略。
+在 保险箱 门户中创建自定义附件Microsoft 365 Defender会同时使用同一名称创建安全附件规则和相关的安全附件策略。
 
-1. 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。**
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
 
-2. 在 **"保险箱"页上**，单击"创建 **"。**
+2. 在 **"保险箱"页上**，单击" ![ 创建"图标" ](../../media/m365-cc-sc-create-icon.png) **创建"。**
 
-3. "**新建保险箱附件"策略** 向导将打开。 在" **命名策略"** 页上，配置以下设置：
-
+3. 将打开策略向导。 在" **命名策略"** 页上，配置以下设置：
    - **名称**：输入策略的唯一描述性名称。
-
    - **说明**：输入策略的可选说明。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
-4. 在 **设置** 页上，配置以下设置：
+4. 在 **出现的"用户** 和域"页上，标识策略应用于以下收件人 (内部) ：
+   - **用户**：你的组织内指定的邮箱、邮件用户或邮件联系人。
+   - **组**：你的组织内指定的通讯组、启用邮件的安全组或 Microsoft 365 组。
+   - **域**：你的组织内指定的 [接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)中的所有收件人。
+
+   单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
+
+   对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
+
+   同一个条件的多个值使用 OR 逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件使用 AND 逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
+
+   - **排除这些用户、组和域**：若要为策略应用于的内部收件人添加例外（收件人例外），请选择此选项并配置例外。 设置和行为与条件完全相同。
+
+   完成后，单击“**下一步**”。
+
+5. 在“**设置**”页上，配置下列设置：
 
    - **保险箱附件未知恶意软件响应**：选择下列值之一：
-
      - **关闭**：通常，不建议使用此值。
      - **监视器**
      - **Block**：这是默认值，以及 Standard 和 Strict 预设安全策略 [中的建议值](preset-security-policies.md)。
@@ -107,107 +119,91 @@ ms.locfileid: "51203831"
 
      这些值在附件策略[保险箱中进行了介绍](safe-attachments.md#safe-attachments-policy-settings)。
 
-   - 将附件发送到以下电子邮件地址：对于操作值 **Block** **、Monitor** 或 **Replace**，可以选择"启用重定向"，将包含恶意软件附件的邮件发送到指定的内部或外部电子邮件地址，以便进行分析和调查。
+   - 重定向带检测到的附件的邮件：如果选择"启用重定向"，可以在"将包含阻止、监视或替换附件的邮件发送到指定电子邮件地址"框中指定电子邮件地址，以发送包含恶意软件附件的邮件，以便进行分析和调查。 
 
      对于"标准"和"严格"策略设置，建议启用重定向。 有关详细信息，请参阅附件[保险箱设置](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)。
 
-   - 如果附件的 **恶意软件** 扫描次数或出现错误，则应用上述选择：即使 **保险箱** 附件扫描无法完成，保险箱 附件未知恶意软件响应也对邮件执行指定的操作。 如果选择此选项，请始终选择"已启用 **重定向"。** 否则，邮件可能会丢失。
+   - 如果 **扫描无法完成 (** 超时或错误) ，则应用 保险箱 附件检测响应：即使 **保险箱** 附件扫描无法完成，保险箱 附件未知恶意软件响应也将会对邮件执行该操作。 如果选择此选项，请始终选择" **启用重定向** "，并指定电子邮件地址以发送包含恶意软件附件的邮件。 否则，邮件可能会丢失。
 
-   完成后，单击“下一步”。
+   完成后，单击“**下一步**”。
 
-5. 在 **出现的"应用于** "页上，标识策略应用于的内部收件人。
+6. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
-   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
+   完成后，单击"提交 **"。**
 
-   单击 **"添加条件"。** In the dropdown that appears， select a condition under **Applied if**：
+7. 在出现的确认页面上，单击“**完成**”。
 
-   - **收件人为**：指定您的组织中的一个或多个邮箱、邮件用户或邮件联系人。
-   - **收件人是 ：指定** 组织中一个或多个组的成员。
-   - **收件人域是**：指定你的组织中配置的一个或多个接受的域中的收件人。
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>使用 Microsoft 365 Defender 门户查看保险箱附件策略
 
-   选择条件后，将显示相应的下拉列表，其中显示其中 **任何** 一个框。
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
 
-   - 在框中单击并滚动要选择的值列表。
-   - 在框中单击并开始键入以筛选列表并选择一个值。
-   - 若要添加其他值，请单击框中的空白区域。
-   - 若要删除单个条目，请单击值 **上的"** ![ 删除 ](../../media/scc-remove-icon.png) ""删除"图标。
-   - 若要删除整个条件，请单击条件 ![ 上的"删除 ](../../media/scc-remove-icon.png) ""删除"图标。
+2. 在 **"保险箱"** 页上，策略列表中将显示以下属性：
+   - **名称**
+   - **状态**
+   - **优先级**
 
-   若要添加其他条件，请单击" **添加条件** "，然后选择"应用的条件 **"下的其余值**。
+3. 当您通过单击该名称选择策略时，策略设置将显示在一个飞出内容中。
 
-   若要添加例外，请单击" **添加条件"，** 然后选择"例外条件 **"下的例外**。 设置和行为与条件完全相同。
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>使用Microsoft 365 Defender门户修改保险箱附件策略
 
-   完成后，单击“下一步”。
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
 
-6. 在出现的 **"查看设置** "页上，查看设置。 可以单击每个 **设置** 上的"编辑"来修改它。
+2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
-   完成后，单击"完成 **"。**
-
-## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>使用安全&中心查看附件保险箱策略
-
-1. 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。**
-
-2. On the **保险箱 Attachments** page， select a policy from the list and click on it (don't select the check box) .
-
-   策略详细信息以飞出方式显示
-
-## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>使用安全&合规中心修改保险箱附件策略
-
-1. 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。**
-
-2. On the **保险箱 Attachments** page， select a policy from the list and click on it (don't select the check box) .
-
-3. 在出现的策略详细信息飞出中，单击"编辑 **策略"。**
-
-在飞出中显示可用的设置与使用安全与合规中心创建附件&[部分中保险箱的设置相同](#use-the-security--compliance-center-to-create-safe-attachments-policies)。
+3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文前面使用 Microsoft 365 Defender 门户创建保险箱[附件](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies)策略部分。  
 
 若要启用或禁用策略或设置策略优先级顺序，请参阅以下部分。
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>启用或禁用保险箱附件策略
 
-1. 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。**
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
 
-2. 请注意"状态" **列中** 的值：
+2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
-   - 将切换开关向左移动 ![关闭策略](../../media/scc-toggle-off.png) 禁用策略。
+3. 在出现的策略详细信息浮出控件顶部，你将看到以下值之一：
+   - **策略关闭**：若要打开策略，请单击![“打开”图标](../../media/m365-cc-sc-turn-on-off-icon.png)“**打开**”。
+   - **策略打开**：若要关闭策略，请单击![“关闭”图标](../../media/m365-cc-sc-turn-on-off-icon.png)“**关闭**”。
 
-   - 将切换开关向右移动 ![打开策略](../../media/scc-toggle-on.png) 启用策略。
+4. 在出现的确认对话框中，单击“**打开**”或“**关闭**”。
+
+5. 单击策略详细信息浮出控件中的“**关闭**”。
+
+返回主策略页面，策略的“**状态**”值将为“**打开**”或“**关闭**”。
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>设置"附件保险箱的优先级
 
-默认情况下，保险箱附件策略的优先级基于它们在 (中的创建顺序，因此其优先级低于较旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+默认情况下，保险箱附件策略的优先级基于它们在新策略中创建的顺序 (较旧策略的优先级低) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
 有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
 保险箱附件策略按其处理顺序显示 (优先级值为 0 的附件) 。 
 
-**注意**：在安全&合规中心内，只能在创建附件策略保险箱更改策略的优先级。 在 PowerShell 中，您可以在创建可影响现有规则优先级的安全附件规则 (默认优先级。) 。
+**注意**：在Microsoft 365 Defender门户中，只能在创建附件保险箱更改策略的优先级。 在 PowerShell 中，您可以在创建可影响现有规则优先级的安全附件规则 (默认优先级。) 。
 
-若要更改策略优先级，请在列表中上移或下移策略（无法直接在安全与合规中心内修改 **“优先级”** 数字）。
+若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
 
-1. 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。**
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
 
-2. On the **保险箱 Attachments** page， select a policy from the list and click on it (don't select the check box) .
+2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
-3. 在出现的策略详细信息飞出中，单击可用的优先级按钮。
+3. 在出现的策略详细信息飞出的顶部，你将看到"根据当前优先级值和策略数增加优先级"或"减少优先级"：
+   - 优先级值为 **0** **的策略** 只有"**减少优先级"** 选项可用。
+   - 优先级值最低的策略 (例如 **，3**) 只有"增加优先级 **"** 选项可用。
+   - 如果你有三个或多个策略，则最高优先级值和最低优先级值之间的策略同时具有"增加 **优先级** "和" **减少优先级"** 选项。
 
-   - 优先级保险箱 **0** 的"附件"策略仅提供"**减少优先级"** 按钮。
+   单击![“提高优先级”图标](../../media/m365-cc-sc-increase-icon.png)“**提高优先级**”或![“降低优先级”图标](../../media/m365-cc-sc-decrease-icon.png)“**降低优先级**”以更改“**优先级**”值。
 
-   - "保险箱优先级"值最低的"附件"策略 (例如 **，3**) "增加 **优先级"按钮** 可用。
+4. 完成后，单击策略详细信息浮出控件中的“**关闭**”。
 
-   - 如果您有三个或多个"附件"保险箱，则优先级最高的值和最低优先级值之间的策略将同时具有"增加优先级"和"**减少优先级"** 按钮。
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>使用 Microsoft 365 Defender 门户删除保险箱附件策略
 
-4. 单击 **"增加优先级** " **或"减少优先级** "可更改 **"优先级"** 值。
+1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
 
-5. 完成后，单击“关闭”。
+2. On the **保险箱 Attachments** page， select a custom policy from the list by clicking on the name of the policy.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>使用安全&合规中心删除保险箱附件策略
+3. 在出现的策略详细信息浮出控件顶部，单击![“更多操作”图标](../../media/m365-cc-sc-more-actions-icon.png)“**更多操作**”\> ![“删除策略”图标](../../media/m365-cc-sc-delete-icon.png)“**删除策略**”。
 
-1. 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。**
-
-2. On the **保险箱 Attachments** page， select a policy from the list and click on it (don't select the check box) .
-
-3. 在随即出现的策略详细信息飞出中，单击"删除 **策略**"，然后在出现的警告对话框中单击"是"。
+4. 在出现的确认对话框中，单击“**是**”。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置保险箱附件策略
 
@@ -230,11 +226,11 @@ ms.locfileid: "51203831"
 
 - 可以创建新的安全附件规则，并为其分配现有的未关联的安全附件策略。 安全附件规则不能与多个安全附件策略关联。
 
-- 可以在 PowerShell 中的新安全附件策略上配置以下设置，这些设置在安全与合规&中心不可用，除非创建策略：
+- 可以在 PowerShell 中的新安全附件策略上配置以下设置，这些设置在 Microsoft 365 Defender门户中不可用，直到创建策略之后：
   - 在 `$false` **New-SafeAttachmentRule** cmdlet (上创建禁用的新策略) 。
   - 在 _\<Number\>_ **New-SafeAttachmentRule** cmdlet (设置策略) 优先级) 。
 
-- 在 PowerShell 中新建的安全附件策略在安全与合规中心&，除非将策略分配给安全附件规则。
+- 在 PowerShell 中新建的安全附件策略在 Microsoft 365 Defender中不可见，除非将策略分配给安全附件规则。
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>步骤 1：使用 PowerShell 创建安全附件策略
 
@@ -333,7 +329,7 @@ Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>使用 PowerShell 修改安全附件策略
 
-如果 **Set-SafeAttachmentPolicy** cmdlet 没有 _Name_ 参数，则 (PowerShell 中的安全附件策略) 。 在安全保险箱中心重命名"附件"&，只需重命名安全附件 _规则_。
+如果 **Set-SafeAttachmentPolicy** cmdlet 没有 _Name_ 参数，则 (PowerShell 中的安全附件策略) 。 当你在 保险箱 门户中重命名Microsoft 365 Defender附件策略时，你仅重命名安全附件 _规则_。
 
 否则，创建安全附件策略时可用的设置相同，如本文前面步骤 [1：使用 PowerShell](#step-1-use-powershell-to-create-a-safe-attachment-policy) 创建安全附件策略部分所述。
 
@@ -385,7 +381,7 @@ Enable-SafeAttachmentRule -Identity "Marketing Department"
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a>使用 PowerShell 设置安全附件规则的优先级
 
-可以设置的规则最高优先级值是 0。 可以设置的最小优先级值取决于规则的数量。 例如，如果有五个规则，则可以使用的优先级值为 0 到 4。 更改现有规则的优先级可对其他规则产生级联效应。 例如，假设有五个自定义规则（优先级从 0 到 4）。如果你将某个规则的优先级更改为 2，那么优先级为 2 的现有规则会变成优先级 3，优先级为 3 的现有规则会变成优先级 4。
+可以设置的规则最高优先级值是 0。可以设置的最小优先级值取决于规则的数量。例如，如果有五个规则，则可以使用的优先级值为 0 到 4。更改现有规则的优先级可对其他规则产生级联效应。例如，假设有五个自定义规则（优先级为 0 到 4），如果将某个规则的优先级更改为 2，则优先级为 2 的现有规则将更改为优先级 3，优先级为 3 的规则将更改为优先级 4。
 
 若要在 PowerShell 中设置安全附件规则的优先级，请使用以下语法：
 
@@ -393,7 +389,7 @@ Enable-SafeAttachmentRule -Identity "Marketing Department"
 Set-SafeAttachmentRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-下面的示例将名为“Marketing Department”的规则的优先级设置为 2。 优先级小于或等于 2 的所有现有规则的优先级都递减 1（即优先级数字都递增 1）。
+此示例将名为"Marketing Department"规则的优先级设置为 2：具有小于或等于 2 优先级的所有现有规则的编号将递减 1（它们的优先级编号均递增 1）。
 
 ```PowerShell
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
@@ -443,7 +439,7 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 若要验证您是否已成功创建、修改或删除附件保险箱，请执行下列任一步骤：
 
-- 在安全与&中心，转到"**威胁管理** \> **策略** \> **ATP 保险箱附件"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
+- In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**. 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请通过单击名称从列表中选择策略，然后查看飞出中的详细信息。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
 
@@ -455,4 +451,4 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-若要验证附件保险箱扫描邮件，请检查可用的 Defender，查看Office 365报告。 有关详细信息，请参阅查看[Defender for Office 365](view-reports-for-mdo.md)报告和在安全与合规&[使用资源管理器](threat-explorer.md)。
+若要验证附件保险箱扫描邮件，请检查可用的 Defender，查看Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender[门户中的使用资源管理器](threat-explorer.md)。

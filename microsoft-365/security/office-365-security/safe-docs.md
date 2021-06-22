@@ -16,12 +16,12 @@ ms.collection:
 description: 了解保险箱文档Microsoft 365 E5或Microsoft 365 E5 安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644748"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054437"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -38,11 +38,11 @@ ms.locfileid: "51644748"
 
 - 保险箱文档在以前称为Microsoft 365 企业应用版 (2004 或Office 365 专业增强版) 版本中受支持。
 
-- 安全与合规中心的打开网址为 <https://protection.office.com>。 若要直接转到 **ATP 保险箱附件"页**，请打开 <https://protection.office.com/safeattachmentv2> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到"附件 **保险箱，** 请使用 <https://security.microsoft.com/safeattachmentv2> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 在 Exchange Online 网站中 **分配** 权限，才能执行本文中的步骤：
+- 您需要在Exchange Online中的权限，然后才能执行本文中的过程：
   - 若要保险箱文档设置，您必须是组织管理或 **安全管理员角色组** 的成员。 
   - 若要对文档保险箱只读访问权限，您需要是全局读者或安全读者 **角色组的成员**。 
 
@@ -60,19 +60,19 @@ ms.locfileid: "51644748"
 
 通常，保险箱文档发送的文件不会在 Defender 中保留超过分析 (，通常不超过 24 小时) 。
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全&合规中心配置保险箱文档
+## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>使用Microsoft 365 Defender配置文档保险箱文档
 
-1. 在安全&中心，转到威胁管理 \> **策略** \> **ATP 保险箱附件**"，然后单击"全局 **设置"。**
+1. 打开Microsoft 365 Defender门户，然后转到电子邮件&**协作** 策略& \> **威胁** 策略 \>  \> **策略**"部分保险箱 \> **附件"。**
 
-2. 在出现的 **"全局** 设置"飞出中，配置以下设置：
+2. 在 **"保险箱"页上**，单击"**全局设置"。**
 
+3. 在出现的 **"全局** 设置"飞出中，配置以下设置：
    - **打开保险箱客户端Office** 文档：将切换开关向右移动，以打开功能： ![ 打开 ](../../media/scc-toggle-on.png) 。
-
-   - 即使 **保险箱 文档** 将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议将此选项保持关闭状态 (将开关保留为左侧："关闭 ![) "。 ](../../media/scc-toggle-off.png)
+   - 即使 **保险箱** 文档将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议将此选项保持关闭状态 (将开关保留为左侧："关闭 ![) "。 ](../../media/scc-toggle-off.png)
 
    完成后，单击“**保存**”。
 
-   ![保险箱在"附件"页上选择"全局"保险箱文档设置。](../../media/safe-docs.png)
+   ![保险箱在"附件"页上选择"全局"保险箱文档设置。](../../media/safe-docs-global-settings.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 配置保险箱文档
 
@@ -95,15 +95,15 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>载入 Microsoft Defender for Endpoint Service 以启用审核功能
 
-若要部署 Microsoft Defender for Endpoint，你需要完成部署的各个阶段。 载入后，可以在安全与合规中心&审核功能。
+若要部署 Microsoft Defender for Endpoint，你需要完成部署的各个阶段。 载入后，可以在企业门户中配置Microsoft 365 Defender功能。
 
-若要了解更多信息，请参阅 [载入到 Microsoft Defender for Endpoint 服务](/microsoft-365/security/defender-endpoint/onboarding)。 如果你需要其他帮助，请参阅疑难解答 [Microsoft Defender 终结点载入问题](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)。
+若要了解更多信息，请参阅 [载入到 Microsoft Defender for Endpoint 服务](/microsoft-365/security/defender-endpoint/onboarding)。 如果你需要其他帮助，请参阅解决 [Microsoft Defender 终结点载入问题](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)。
 
 ### <a name="how-do-i-know-this-worked"></a>我如何知道这有效？
 
 若要验证是否已启用和配置保险箱文档，请执行下列任一步骤：
 
-- 在安全 & 合规中心，转到"威胁管理策略 \>  \> **ATP 保险箱** 附件"，单击"全局设置"，然后验证"为 Office 客户端启用 保险箱 文档"和"允许用户通过受保护的视图"单击，即使 保险箱 文档将该文件标识为恶意设置。
+- 在 Microsoft 365 Defender 门户中，转到电子邮件 **& 协作** 策略 & 规则 威胁策略策略部分 保险箱 附件全局设置，并验证启用 Office 客户端的 保险箱 文档和允许用户通过受保护的视图单击，即使 保险箱 文档将该文件标识为恶意设置 \>  \>  \>  \>  \> **。** 
 
 - 在 PowerShell 中Exchange Online以下命令并验证属性值：
 

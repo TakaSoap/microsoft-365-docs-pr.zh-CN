@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
-ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841170"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054755"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
 
@@ -31,30 +31,31 @@ ms.locfileid: "52841170"
 
      !["帖子"选项卡。](../media/content-understanding/posts.png)
 
-- **为成员提供一个位置来查看批准的合同，了解何时可以提交这些合同进行付款。** In Teams， you can create a **For Payment** channel that will list all contracts that will need to be submitted to payment. 可以轻松扩展此解决方案，将此信息直接写入第三方财务应用程序， (Dynamics CRM) 。
+- **为成员提供一个位置来查看批准的合同，了解何时可以提交这些合同进行付款。** 在SharePoint中，你需要创建一个"付款"列表，并包括"客户端、承包商"和"费用"金额的列，选择"单行 **文本**"作为列类型。  你需要将"付款"列表添加为"合同管理"Teams中的"付款"选项卡，这类似于你将对"合同"选项卡 [执行哪些操作](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab)。"**付款**"选项卡将列出需要提交付款的所有合同。 可以轻松扩展此解决方案，将此信息直接写入第三方财务应用程序， (Dynamics CRM) 。 
+
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>将SharePoint文档库附加到"合同"选项卡
 
-在 **"合同管理**"频道中创建"合同"选项卡后，需要将SharePoint [文档库附加到该选项卡。](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) 要SharePoint的文档库是上一节中应用SharePoint文档理解模型的文档库。
+在 **"合同管理**"频道中创建"合同"选项卡后，需要将SharePoint [文档库附加到该选项卡。](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) 要SharePoint的文档库是上一节中SharePoint Syntex文档理解模型所应用到的文档库。
 
 附加文档SharePoint后，您将能够通过默认列表视图查看任何已分类合同。
 
-   ![列表视图。](../media/content-understanding/list-view.png)
+   ![列表库SharePoint视图。](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>自定义"合同"选项卡磁贴视图
 
 > [!NOTE]
 > 本节引用合同管理解决方案资产存储库中包含的ContractTileFormatting.js[ on](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 文件中包含的代码 [示例](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)。
 
-虽然Teams可以在磁贴视图中查看你的合同，但你可能希望对其进行自定义以查看想要在合同卡中可见的合同数据。 例如，对于" **合同** "选项卡，成员在合同卡上查看客户、承包商和费用金额非常重要。 所有这些字段都是通过应用到文档库的SharePoint提取自每个协定的。 你还希望能够针对每个状态将磁贴标题栏更改为不同的颜色，以便成员可以轻松查看合同在审批过程中的情况。 例如，所有批准的合同都将有一个蓝色标题栏。
+虽然Teams可以在磁贴视图中查看你的合同，但你可能希望对其进行自定义以查看想要在合同卡中可见的合同数据。 例如，对于" **合同** "选项卡，成员在合同卡上查看客户、承包商和费用金额非常重要。 所有这些字段都是通过应用到文档库SharePoint Syntex模型从每个协定中提取的。 你还希望能够针对每个状态将磁贴标题栏更改为不同的颜色，以便成员可以轻松查看合同在审批过程中的情况。 例如，所有批准的合同都将有一个蓝色标题栏。
 
-   ![列表视图。](../media/content-understanding/tile.png)
+   ![库的SharePoint视图。](../media/content-understanding/tile.png)
 
 你使用的自定义磁贴视图要求你更改用于设置当前磁贴视图格式的 JSON 文件。 你可以参考 JSON 文件，该文件用于通过查看 onContractTileFormatting.js[ 创建卡片](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 视图。 在下列部分中，你将看到代码的特定部分，这些代码适用于合同卡中的功能。
 
 如果要在 Teams 频道中查看或更改视图的 JSON 代码，请在 Teams 频道中，选择视图下拉菜单，然后选择"设置当前视图的格式 **"。**
 
-   ![json 格式。](../media/content-understanding/jason-format.png)
+   ![频道中 json 格式的Teams屏幕截图。](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>卡片大小和形状
 
@@ -105,7 +106,7 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
 
 ## <a name="extracted-fields"></a>提取的字段
 
-每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和费用) 。   此外，你还希望显示文件由用于标识它的SharePoint分类的时间/日期。
+每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和费用) 。   此外，还希望显示文件由用于标识文件的 SharePoint Syntex分类的时间/日期。
 
 在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，以下各节定义了其中每一部分。
 

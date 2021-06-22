@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 了解如何管理接收帐单通知电子邮件和发票附件的人。
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998760"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054585"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帐单通知和发票附件
 
@@ -37,9 +37,6 @@ ms.locfileid: "52998760"
 你必须是全局管理员才能执行本文中所述的步骤。 计费管理员可以进行其中一些更改，如以下部分所述。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="change-the-language-you-receive-email-in"></a>更改接收电子邮件的语言
-
-> [!NOTE]
-> 帐单管理员还可以执行本部分中的步骤。
 
 计费通知电子邮件以组织的首选语言发送。 若要更改首选语言，请使用以下步骤。
 
@@ -87,6 +84,9 @@ ms.locfileid: "52998760"
 3. 在右侧窗格中，键入想要使用的电子邮件地址，然后选择"保存 **"。**
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>以电子邮件附件接收组织的发票
+
+> [!NOTE]
+> 帐单管理员还可以执行本部分中的步骤。
 
 在准备好新发票时，你可以将组织的发票副本作为 PDF 文件附加到发票通知电子邮件中。 使用以下步骤接收作为附件的发票。
 

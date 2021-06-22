@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861199"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054773"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -35,7 +35,7 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 
 ## <a name="third-party-data-connectors"></a>第三方数据连接器
 
-下表列出了安全与合规中心内可用的第三Microsoft 365连接器。 该表还汇总了在导入并存档到 Microsoft 365 后可应用于第三方数据的合规性Microsoft 365。 请参阅 [下一节](#overview-of-compliance-solutions-that-support-third-party-data) ，详细了解每个合规性解决方案及其如何受益于第三方数据。
+下表列出了该连接器中可用的第三方数据Microsoft 365 合规中心。 该表还汇总了在导入并存档到 Microsoft 365 后可应用于第三方数据的合规性Microsoft 365。 请参阅 [下一节](#overview-of-compliance-solutions-that-support-third-party-data) ，详细了解每个合规性解决方案及其如何受益于第三方数据。
 
 > [!TIP]
 > 单击"第 **三方数据** "列中的链接，转到有关为第三方数据列创建连接器的数据类型。
@@ -69,8 +69,11 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[信号 <sup>1</sup>](archive-signal-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Skype for Business <sup>2</sup>](archive-skypeforbusiness-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Slack 电子数据展示 <sup>2</sup>](archive-slack-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[百年 <sup>2</sup>](archive-symphony-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[中国 <sup>1</sup>](archive-telegram-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[TELUS 网络 <sup>1</sup>](archive-telus-network-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[文本分隔符 <sup>2</sup>](archive-text-delimited-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
@@ -134,12 +137,12 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 |TeleMessage 数据连接器  |GCC  |GCC 高  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android 存档器 | 是 | 否 | 否 |
-|AT&T 短信/MMS 网络存档器 | 是 | 否 | 否 |
-|Bell 短信/MMS 网络存档器 | 是 | 否 | 否 |
+|AT&T SMS/MMS 网络存档器 | 是 | 否 | 否 |
+|Bell SMS/MMS 网络存档器 | 是 | 否 | 否 |
 |Enterprise数字存档器 | 是 | 否 | 否 |
-|O2 短信 和语音网络存档器 | 是         | 否 | 否 |
-|TELUS 短信 Network Archiver | 是 | 否 | 否 |
-|Verizon 短信/MMS 网络存档器 | 是 | 否 | 否 |
+|O2 SMS 和语音网络存档器 | 是         | 否 | 否 |
+|TELUS SMS 网络存档器 | 是 | 否 | 否 |
+|Verizon SMS/MMS 网络存档器 | 是 | 否 | 否 |
 |WeChat Archiver | 是 | 否 | 否 |
 |WhatsApp 存档程序 | 是 | 否 | 否 |
 |||||

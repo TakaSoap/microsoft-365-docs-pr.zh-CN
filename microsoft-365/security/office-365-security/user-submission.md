@@ -1,5 +1,5 @@
 ---
-title: 用户提交策略
+title: 用户报告的邮件设置
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052983"
+ms.locfileid: "53055120"
 ---
-# <a name="user-submissions-policy"></a>用户提交策略
+# <a name="user-reported-message-settings"></a>用户报告的邮件设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052983"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在Microsoft 365邮箱Exchange Online，您可以指定一个邮箱来接收用户报告为恶意或不恶意的邮件。 当用户使用各种报告选项提交邮件时，您可以使用此邮箱拦截仅 (发送到自定义邮箱的邮件) 或接收 (发送到自定义邮箱和 Microsoft) 的邮件的副本。 此功能适用于以下邮件报告选项：
+在Microsoft 365邮箱Exchange Online，您可以指定一个邮箱来接收用户报告为恶意或不恶意的邮件。 当用户使用各种报告选项报告邮件时，您可以使用此邮箱截取仅 (发送到自定义邮箱的邮件) 或接收发送到自定义邮箱 (Microsoft) 的邮件的副本。 此功能适用于以下邮件报告选项：
 
 - [报告邮件外接程序](enable-the-report-message-add-in.md)
 - [报告网络钓鱼外接程序](enable-the-report-phish-add-in.md)
 - [第三方报告工具](#third-party-reporting-tools)
 
-将用户报告的邮件发送到自定义邮箱，而不是直接发送给 Microsoft，使管理员能够使用管理员提交选择性地将邮件手动 [报告给](admin-submission.md)Microsoft。
+将用户报告的邮件发送到自定义邮箱，而不是直接发送给 Microsoft，使管理员能够使用管理员提交选择性地将邮件手动 [报告给](admin-submission.md)Microsoft。 这些设置以前称为用户提交策略。
 
   > [!NOTE]
-  > 如果报告功能中[已](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)禁用Outlook 网页版，则在此处启用用户提交将替代该设置，并使用户能够在Outlook 网页版中报告邮件。
+  > 如果在[邮件中禁用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)了报告Outlook 网页版，则在此处启用用户报告的邮件将替代该设置，并使用户能够在邮件中Outlook 网页版邮件。
 
 ## <a name="custom-mailbox-prerequisites"></a>自定义邮箱先决条件
 

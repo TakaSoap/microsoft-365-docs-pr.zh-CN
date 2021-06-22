@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 设置并使用 Microsoft 365 合规中心中的连接器，在 Microsoft 365 中导入和存档微信Microsoft 365。
-ms.openlocfilehash: 3ee858cd09c1b6c7bd29dc5e2162753df9f5544a
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: 在邮箱中设置并使用连接器Microsoft 365 合规中心在 Microsoft 365 中导入和存档 WeChat 数据。
+ms.openlocfilehash: e610b58421c2d84402010c9a5d5ad33ec6da5b04
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861620"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054617"
 ---
-# <a name="set-up-a-connector-to-archive-wechat-data-preview"></a>设置连接器以存档 WeChat 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-wechat-data"></a>设置连接器以存档 WeChat 数据
 
-使用 Microsoft 365 合规中心中的 TeleMessage 连接器导入和存档 WeChat 和 WeCom 呼叫、聊天、附件、文件和已撤回的消息。 设置和配置连接器后，它将连接到您组织的 TeleMessage 帐户，并且使用 TeleMessage WeChat 存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
+使用电子邮件中的 TeleMessage 连接器Microsoft 365 合规中心和存档 WeChat 和 WeCom 呼叫、聊天、附件、文件和已撤回的消息。 设置和配置连接器后，它将连接到您组织的 TeleMessage 帐户，并且使用 TeleMessage WeChat 存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
 
 将 WeChat 存档连接器数据存储在用户邮箱中后，您可以将 Microsoft 365 合规性功能（如诉讼保留、电子数据展示、In-Place 存档、审核、通信合规性和 Microsoft 365 保留策略）应用于 WeChat 通信数据。 例如，您可以使用内容搜索搜索 WeChat 通信，或将包含 WeChat 存档连接器数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用 WeChat 存档器连接器在 Microsoft 365 导入和存档数据可帮助组织遵守公司管理法规和法规策略。
 
@@ -35,7 +35,7 @@ ms.locfileid: "52861620"
 
 2. 实时将组织的 WeChat 数据复制到 TeleMessage 网站。
 
-3. 在 Microsoft 365 合规中心创建的微信存档连接器每天连接到 TeleMessage 网站，将过去 24 小时内的电子邮件转移到 Microsoft 云中的安全 Azure 存储 区域。
+3. 在 Microsoft 365 合规中心 创建的 WeChat 存档连接器每天连接到 TeleMessage 站点，将过去 24 小时内的电子邮件转移到 Microsoft 云中的安全 Azure 存储 区域。
 
 4. 连接器将移动通信项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建名为 WeChat Archiver 的新文件夹，并且项目将导入到该文件夹中。 连接器使用"用户的电子邮件地址" *属性的值进行映射* 。 每个电子邮件都包含此属性，该属性填充了电子邮件每个参与者的电子邮件地址。 除了使用"用户的电子邮件地址"属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，针对每个电子邮件项目。 如果找不到与用户Microsoft 365用户对应的有效邮件，连接器将使用电子邮件项目的"用户的电子邮件地址"属性。 如果连接器在自定义映射文件或Microsoft 365项的电子邮件地址属性中找不到有效的邮件用户，则不导入该项目。 
 
@@ -49,13 +49,13 @@ ms.locfileid: "52861620"
 
 - 你需要在组织中用户的移动电话上安装并激活该应用。 WeCom 应用允许用户与其他 WeChat 和 WeCom 用户进行通信和聊天。
 
-- 必须为在合规性中心内创建 WeChat 存档Microsoft 365的用户分配邮箱导入导出Exchange Online。 这是在合规中心的"数据连接器 **"页中添加** 连接器所必需。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为在服务器中创建 WeChat 存档Microsoft 365 合规中心分配邮箱导入导出角色Exchange Online。 这是在合规中心的"数据连接器 **"页中添加** 连接器所必需。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此未涵盖在 Microsoft 365 合规性和数据保护承诺中。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="create-a-wechat-archiver-connector"></a>创建 WeChat 存档器连接器
 
-按照本节中的步骤在安全与合规中心内Microsoft 365 WeChat 存档器连接器。 连接器使用您提供的信息连接到 TeleMessage 站点，将 WeChat 通信数据传输至 Microsoft 365 中的相应用户邮箱。
+按照本节中的步骤操作，在 Microsoft 365 合规中心 中创建 WeChat 存档Microsoft 365 合规中心。 连接器使用您提供的信息连接到 TeleMessage 站点，将 WeChat 通信数据传输至 Microsoft 365 中的相应用户邮箱。
 
 1. 转到 ， <https://compliance.microsoft.com> 然后单击"**数据连接器**  >  **WeChat Archiver"。**
 

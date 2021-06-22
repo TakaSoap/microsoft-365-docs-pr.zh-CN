@@ -13,23 +13,23 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place电子数据展示和 In-Place 保留 (以及 Exchange Online 中的相应 PowerShell cmdlet) 将于 2020 年上半年停用。 v1.0 Search-Mailbox cmdlet 和 Advanced eDiscovery 1.0 也在同一时间内停用。
-ms.openlocfilehash: c5f1ddb4c817ebc316c2e2efdba9a4bc605eb5a2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842658"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055073"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 
 > [!IMPORTANT]
-> Microsoft 一直在评估公众健康情况，并且我们了解这对我们的客户的影响。 我们希望成为强大的合作伙伴和负责的全球公民。 为了减轻你面临的众多负担之一，我们将将本文中所述的旧式电子数据展示工具的计划停用延迟三个月。 **更新后的停用日期将在下面反映出来。**
+> 本文中介绍的旧版电子数据展示工具的功能已从 Microsoft 365服务中删除，或者仍可用，但不再受支持。 任何仍然可用的功能都可能会被删除，无需另行通知。 如果仍在使用这些旧工具中的任一种，请考虑迁移到 Microsoft 365 合规中心 中的电子数据展示工具或本文中所述的替代方法之一。
 
-多年来，Microsoft 提供了电子数据展示工具，让你可以搜索、预览和导出电子邮件Exchange Online。 但是，这些工具不再提供在其他 Microsoft 365 服务（如 SharePoint Online 和 Microsoft 365 组）中搜索非 Exchange 内容的有效方式。 为解决这一问题，Microsoft 提供了其他电子数据展示工具，可帮助你搜索各种Microsoft 365内容。 我们一直在致力于将最新且强大的电子数据展示功能纳入Microsoft 365[中心](https://compliance.microsoft.com)。 这使组织可以响应跨多个服务（包括 Exchange Online）对内容的法律、内部和其他Microsoft 365请求。
+多年来，Microsoft 提供了电子数据展示工具，让你可以搜索、预览和导出电子邮件Exchange Online。 但是，这些工具不再提供在其他 Microsoft 365 服务（如 SharePoint Online 和 Microsoft 365 组）中搜索非 Exchange 内容的有效方式。 为解决这一问题，Microsoft 提供了其他电子数据展示工具，可帮助你搜索各种Microsoft 365内容。 我们一直在努力将最新且强大的电子数据展示功能纳入[Microsoft 365 合规中心。](https://compliance.microsoft.com) 这使组织可以响应跨多个服务（包括 Exchange Online）对内容的法律、内部和其他Microsoft 365请求。
 
-由于 Microsoft 365 合规中心中新增和改进了电子数据展示功能，我们将停用以下与搜索 Exchange Online 和 Microsoft 365 中的电子邮件内容相关的电子数据展示相关特性和功能：
+由于 Microsoft 365 合规中心 中新增和改进了电子数据展示功能，我们将停用以下与搜索 Exchange Online 和 Microsoft 365 中的电子邮件内容相关的电子数据展示相关特性和功能：
 
-- [就地电子数据展示](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)管理[中心内](/exchange/security-and-compliance/create-or-remove-in-place-holds)设置Exchange就地保留。
+- [管理中心](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)中的就地电子数据展示[](/exchange/security-and-compliance/create-or-remove-in-place-holds)和Exchange保留。
 
 - 支持 In-Place 电子数据展示和 In-Place 保留的 Exchange Online PowerShell cmdlet (统称为 **-MailboxSearch* cmdlet) 。 这包括以下 cmdlet：
 
@@ -67,7 +67,7 @@ ms.locfileid: "52842658"
 
 根据 2017 年 7 月 1 日的原始通知，Exchange EAC () 中的 In-Place 电子数据展示 & 保留功能即将停用。 EAC In-Place电子数据展示&保留"页面允许搜索、保留和导出来自 Exchange Online。 In-Place电子数据展示还让您将搜索结果复制到发现邮箱，以便您或其他电子数据展示管理员能够查看内容，使其可用于法律、法规和公共请求。
 
-由于除将搜索结果复制到发现邮箱) 之外，所有这些功能现在均可用于 Microsoft 365 合规中心 (中的内容搜索、电子数据展示和[Advanced eDiscovery](./microsoft-365-compliance-center.md)工具，这些功能、可靠性和对各种 Microsoft 365 服务) 的支持已改进，我们建议您尽快开始使用这些工具。 ( 为了帮助你转换到这些其他电子数据展示工具，下表列出了可以使用的工具，而不是In-Place电子数据展示In-Place保留。
+由于除将搜索结果复制到发现邮箱) 之外的所有功能现在都可用于 Microsoft 365 合规中心 (中的内容搜索、电子数据展示和[Advanced eDiscovery](./microsoft-365-compliance-center.md)工具，这些功能具有改进的功能、可靠性和对各种 Microsoft 365 服务) 的支持，因此我们建议您尽快开始使用这些工具。 ( 为了帮助你转换到这些其他电子数据展示工具，下表列出了可以使用的工具，而不是In-Place电子数据展示In-Place保留。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
 
@@ -100,7 +100,7 @@ ms.locfileid: "52842658"
 <tbody>
 <tr class="odd">
 <td>出于法律目的搜索、导出和保留</td>
-<td>Microsoft 365合规中心中的核心电子数据展示事例 </td>
+<td>服务中的核心电子数据展示Microsoft 365 合规中心 </td>
 <td><p>使用核心电子数据展示事例的功能为电子数据展示和保留In-Place奇偶校验In-Place奇偶校验。 其中包括：</p>
 <ul>
 <li>
@@ -115,7 +115,7 @@ ms.locfileid: "52842658"
 </tr>
 <tr class="even">
 <td>保留出于保留目的</td>
-<td>Microsoft 365合规中心中的保留策略</td>
+<td>策略中的保留Microsoft 365 合规中心</td>
 <td><p>可以使用保留策略来保留内容，如果需要，可以在保留期到期后将其删除。 其他功能包括：</p>
 <ul>
 <li>
@@ -141,7 +141,7 @@ ms.locfileid: "52842658"
 <tr class=even>
   <td>将邮件从一个邮箱复制到另一个邮箱</td>
   <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">向邮箱分配权限</a></td>
-  <td>若要向某人授予访问其他用户的电子邮件的权限 (例如当员工离开您的组织，并且您需要向其他人授予对前员工的电子邮件) 的访问权限时，我们建议您为此人分配访问前员工邮箱的权限。 因此，只需为用户分配访问源邮箱的权限，而不是将邮箱项目复制到其他用户邮箱或共享邮箱。</td>
+  <td>若要向某人授予访问其他用户的电子邮件的权限 (例如当员工离开您的组织，并且您需要向其他人授予对前员工的电子邮件) 的访问权限时，我们建议您为此人分配访问前员工邮箱的权限。 因此，只需为用户分配访问源邮箱所需的权限，而不是将邮箱项目复制到其他用户邮箱或共享邮箱。</td>
   
   </tr>
 <tr class="odd">
@@ -160,17 +160,17 @@ ms.locfileid: "52842658"
 
 **如何控制电子数据展示 (可以使用新工具) 搜索哪些内容位置，例如邮箱或网站？**
 
-合规性Microsoft 365中心还使用合规性边界来控制电子[](set-up-compliance-boundaries.md)数据展示管理员可搜索的内容位置。 合规性边界在政府实体中非常有用，这些实体需要位于机构边界内，或者需要遵守地理边界的跨国公司。
+该[Microsoft 365 合规中心还使用](set-up-compliance-boundaries.md)合规性边界来控制电子数据展示管理员可以搜索的内容位置。 合规性边界在政府实体中非常有用，这些实体需要位于机构边界内，或者需要遵守地理边界的跨国公司。
 
-**如何将当前搜索和保留移动到Microsoft 365中心？**
+**如何将当前搜索和保留移动到Microsoft 365 合规中心？**
 
-通过使用 PowerShell，In-Place EAC 迁移电子数据展示搜索和保留。 有关说明，请参阅[将搜索和保留从 EAC 迁移到Microsoft 365中心](./migrate-legacy-ediscovery-searches-and-holds.md)。
+通过使用 PowerShell，In-Place EAC 迁移电子数据展示搜索和保留。 有关说明，请参阅[将搜索和保留从 EAC 迁移到Microsoft 365 合规中心。](./migrate-legacy-ediscovery-searches-and-holds.md)
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch cmdlet
 
 根据 2017 年 7 月 1 日 Exchange 管理中心中宣布的原始通知，In-Place 电子数据展示 & 保留功能以及相应的 **\* -MailboxSearch** cmdlet 将停用。 这些 cmdlet 使用户能够针对法律、法规和公共请求搜索、保留和导出邮箱内容。
 
-由于这些功能现在在 Microsoft 365 合规中心和[<span class="underline">Office 365</span>](./microsoft-365-compliance-center.md) & 安全与合规中心 PowerShell 中可用，具有改进的性能和可伸缩性，因此您应该使用这些改进的 cmdlet。 这些 cmdlet 包括[<span class="underline">-ComplianceCase、-ComplianceSearch、-CaseHoldPolicy、-CaseHoldRule \* </span>](/powershell/module/exchange/get-compliancecase)和[<span class="underline"> \* -ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction)。 [<span class="underline"> \* </span>](/powershell/module/exchange/get-compliancesearch) [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdrule)
+由于这些功能现在在 Microsoft 365 合规中心 和[<span class="underline">Office 365</span>](./microsoft-365-compliance-center.md)安全& 合规中心 PowerShell 中可用，具有改进的性能和可伸缩性，因此您应该使用这些改进的 cmdlet。 这些 cmdlet 包括[<span class="underline">-ComplianceCase、-ComplianceSearch、-CaseHoldPolicy、-CaseHoldRule \* </span>](/powershell/module/exchange/get-compliancecase)和[<span class="underline"> \* -ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction)。 [<span class="underline"> \* </span>](/powershell/module/exchange/get-compliancesearch) [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline"> \* </span>](/powershell/module/exchange/get-caseholdrule)
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
 
@@ -207,9 +207,9 @@ ms.locfileid: "52842658"
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>ComplianceSearch 和 ComplianceSearchAction cmdlet 协同工作，以帮助您搜索和导出内容。 可以使用<strong>New-、Get-</strong>和<strong>Start-ComplianceSearch</strong> <strong></strong>cmdlet 创建新的搜索并查看搜索估计值。 然后，您可以使用 <strong>New-ComplianceSearchAction</strong> cmdlet 导出搜索结果。 你仍必须使用此合规性中心中的核心电子数据展示Microsoft 365将搜索结果下载到本地计算机。</p>
+<td><p>ComplianceSearch 和 ComplianceSearchAction cmdlet 协同工作，以帮助您搜索和导出内容。 可以使用<strong>New-、Get-</strong>和<strong>Start-ComplianceSearch</strong> <strong></strong>cmdlet 创建新的搜索并查看搜索估计值。 然后，您可以使用 <strong>New-ComplianceSearchAction</strong> cmdlet 导出搜索结果。 你仍必须使用此服务中的核心电子数据展示Microsoft 365 合规中心将搜索结果下载到本地计算机。</p>
 <p>
-<p><strong>注意：</strong>如果您使用这些 cmdlet 创建与核心电子数据展示案例不关联的搜索，这些搜索将位于 Microsoft 365 合规中心的内容搜索页面上。 <strong></strong></p></td>
+<p><strong>注意：</strong>如果您使用这些 cmdlet 创建与核心电子数据展示案例不关联的搜索，则这些搜索将位于"内容"搜索页面上Microsoft 365 合规中心。 <strong></strong></p></td>
 </tr>
 <tr class="even">
 <td>保留邮箱中的内容</td>
@@ -217,7 +217,7 @@ ms.locfileid: "52842658"
 <p><a href="/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>合规性Microsoft 365中的保留项必须与 ComplianceCase 相关联。 首先，创建合规性案例，然后创建 CaseHoldPolicy 和 CaseHoldRule。</p>
+<td><p>Microsoft 365 合规中心中的保留项必须与 ComplianceCase 相关联。 首先，创建合规性案例，然后创建 CaseHoldPolicy 和 CaseHoldRule。</p>
 <p><strong>注意：</strong> 创建 CaseHoldPolicy 而不创建 CaseHoldRule 将使保留不可操作，直到创建 CaseHoldRule 并关联到 CaseHoldPolicy。 有关详细信息，请参阅 cmdlet 文档。</p></td>
 </tr>
 <tr class="odd">
@@ -241,9 +241,9 @@ ms.locfileid: "52842658"
 
 [<span class="underline">Microsoft Graph API</span>](https://developer.microsoft.com/en-us/graph)提供了多种用于提取数据的方法，用于进行分析和其他用途，这些方法比使用 **\* -MailboxSearch** cmdlet 具有更多的弹性和可伸缩性。
 
-**如何将我的搜索和保留迁移到Microsoft 365中心？**
+**如何迁移我的搜索和保留到Microsoft 365 合规中心？**
 
-通过使用 PowerShell 脚本，In-Place电子数据展示搜索和保留Exchange从管理中心迁移。 有关详细信息，请参阅将[旧版电子数据展示搜索和保留](migrate-legacy-eDiscovery-searches-and-holds.md)迁移到Microsoft 365中心。
+通过使用 PowerShell 脚本，In-Place电子数据展示搜索和保留Exchange从管理中心迁移。 有关详细信息，请参阅将[旧版电子数据展示搜索和保留迁移到Microsoft 365 合规中心。](migrate-legacy-eDiscovery-searches-and-holds.md)
 
 **停用 cmdlet 后，我是否仍能够删除或检索搜索？**
 
@@ -285,12 +285,12 @@ PowerShell 中的 **Search-Mailbox** cmdlet Exchange Online从 2018 年开始在
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>ComplianceSearch 和 ComplianceSearchAction cmdlet 协同工作，以帮助您搜索和导出内容。 可以使用<strong>New-、Get-</strong>和<strong>Start-ComplianceSearch</strong> <strong></strong>cmdlet 创建新的搜索并查看搜索估计值。 然后，可以使用 <strong>New-ComplianceSearchAction -Export</strong> 命令导出搜索结果。 你仍必须使用此合规性中心中的核心电子数据展示Microsoft 365将搜索结果下载到本地计算机。</p></p>
+<td><p>ComplianceSearch 和 ComplianceSearchAction cmdlet 协同工作，以帮助您搜索和导出内容。 可以使用<strong>New-、Get-</strong>和<strong>Start-ComplianceSearch</strong> <strong></strong>cmdlet 创建新的搜索并查看搜索估计值。 然后，可以使用 <strong>New-ComplianceSearchAction -Export</strong> 命令导出搜索结果。 你仍必须使用此服务中的核心电子数据展示Microsoft 365 合规中心将搜索结果下载到本地计算机。</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>从邮箱中删除批量电子邮件</td>
-<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">设置邮箱的存档和删除策略</span></a></p>
+<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes"><span class="underline">设置邮箱的存档和删除策略</span></a></p>
 <p></p></td>
 <td><p>管理员可以创建存档和删除策略，该策略会自动将项目移动到用户的存档邮箱，并自动从邮箱中删除项目。</p>
 </td>
@@ -341,7 +341,7 @@ Exchange Web 服务 API 中的这些操作由 Exchange 管理中心中的 In-Pla
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v1.0
 
-Advanced eDiscovery v1.0 版本（即核心电子数据展示Advanced eDiscovery切换到 Advanced eDiscovery）中可用的版本）即将停用。  其功能已由 Advanced eDiscovery[合规](./ediscovery.md)中心中的Microsoft 365解决方案取代。
+Advanced eDiscovery v1.0 版本（即核心电子数据展示Advanced eDiscovery切换到 Advanced eDiscovery）中可用的版本）即将停用。  其功能已替换为 Advanced eDiscovery[中的](./ediscovery.md)新Microsoft 365 合规中心。
 
 若要确定您的组织是否正在使用 Advanced eDiscovery v1.0：
 
@@ -359,7 +359,7 @@ Microsoft 365 (中新的 Advanced eDiscovery 解决方案（也称为 *Advanced 
 
 2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击 **显示所有**，然后单击" **电子数据展示>高级**。
 
-目前，我们建议您开始将电子数据展示工作流转换为新的Advanced eDiscovery功能。 如果需要，您可以通过导出内容Advanced eDiscovery存储内容来存档 1.0 事例。 尽管你仍然能够在 2020 年 12 月 31 Advanced eDiscovery访问 Advanced eDiscovery v1.0，但 Microsoft 支持不会在 2020 年 10 月 1 日之后提供支持。 有关详细信息，请参阅以下日程表。
+目前，我们建议您开始将电子数据展示工作流转换为新的Advanced eDiscovery功能。 如有必要，您可以通过导出内容并脱机存储Advanced eDiscovery 1.0 事例进行存档。 尽管你仍然能够在 2020 年 12 月 31 Advanced eDiscovery访问 Advanced eDiscovery v1.0，但 Microsoft 支持不会在 2020 年 10 月 1 日之后提供支持。 有关详细信息，请参阅以下日程表。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
 
@@ -381,4 +381,4 @@ Microsoft 365 (中新的 Advanced eDiscovery 解决方案（也称为 *Advanced 
 
 ### <a name="alternative-tools"></a>替代工具
 
-Advanced eDiscovery[合规中心](./overview-ediscovery-20.md)Microsoft 365解决方案。
+Advanced eDiscovery[中的](./overview-ediscovery-20.md)Microsoft 365 合规中心。
