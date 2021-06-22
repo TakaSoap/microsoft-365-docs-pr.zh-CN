@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964797"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062031"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -91,7 +91,8 @@ ms.locfileid: "52964797"
 
 5. 完成后，单击"提交 **"** 按钮。
 
-   ![新 URL 提交示例](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![新 URL 提交示例](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
@@ -105,7 +106,8 @@ ms.locfileid: "52964797"
 
 4. 完成后，单击"提交 **"** 按钮。
 
-   ![新电子邮件提交示例](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![新电子邮件提交示例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
 
@@ -119,7 +121,8 @@ ms.locfileid: "52964797"
 
 4. 完成后，单击"提交 **"** 按钮。
 
-   ![新附件提交示例](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![新附件提交示例](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>查看向 Microsoft 提交的管理员
 
@@ -157,7 +160,8 @@ ms.locfileid: "52964797"
 
      完成后，单击"应用 **"。**
 
-     ![管理员提交的新筛选器选项](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![管理员提交的新筛选器选项](../../media/admin-submission-filters.png)
 
    - 若要对条目进行分组，请单击 **"分组** "，然后从下拉列表中选择下列值之一：
      - **无**
@@ -170,7 +174,7 @@ ms.locfileid: "52964797"
 
 ### <a name="admin-submission-rescan-details"></a>管理员提交重新扫描详细信息
 
-在管理员提交中提交的邮件会重新扫描，并且结果显示在提交详细信息飞出中：
+在管理员提交中提交的邮件会进行审阅，并且结果会显示在提交详细信息飞出中：
 
 - 发件人的电子邮件身份验证是否在发送时验证失败。
 - 任何可能影响或覆盖邮件裁定的策略信息。
@@ -214,7 +218,8 @@ ms.locfileid: "52964797"
 
      完成后，单击"应用 **"。**
 
-    ![用户提交的新筛选器选项](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![用户提交的新筛选器选项](../../media/admin-submission-reported-messages.png)
 
    - 若要对条目进行分组，请单击 **"分组** "，然后从下拉列表中选择下列值之一：
      - **无**
@@ -245,4 +250,5 @@ ms.locfileid: "52964797"
 - **报告垃圾邮件**
 - **触发调查**
 
-!["操作"按钮上的"新建选项"](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> !["操作"按钮上的"新建选项"](../../media/admin-submission-main-action-button.png)

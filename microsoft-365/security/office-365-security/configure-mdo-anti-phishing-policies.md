@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织提供的高级防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054551"
+ms.locfileid: "53061889"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365
 
@@ -230,7 +230,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
        - **隔离邮件**
 
    - **安全&：** 配置以下设置：
-     - 显示第一个联系人 **安全提示：** 此 安全提示 无需创建邮件流规则 (也称为传输规则) ，该规则将名为 **X-MS-Exchange-EnableFirstContactSafetyTip** 的标头与值 **Enable** to messages 相加。
+     - **显示第一安全提示** 联系人：有关详细信息，请参阅第一个 [联系人安全提示。](set-up-anti-phishing-policies.md#first-contact-safety-tip)
      - **显示用户模拟安全提示：** 只有在上一页上选择了"**允许用户保护"** 时，此设置才可用。
      - **显示域模拟安全提示：** 只有在上一页上选择了"启用要保护的域"时 **，此设置才** 可用。
      - **显示用户模拟异常字符安全提示** 只有在上一页上选择了"允许用户保护域"或"启用要保护的域"时 **，此设置才** 可用。

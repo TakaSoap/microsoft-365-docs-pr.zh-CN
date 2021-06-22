@@ -1,6 +1,6 @@
 ---
 title: 设备发现概述
-description: 了解如何在 Microsoft 365 Defender 中利用终结点发现查找网络中非托管设备
+description: 了解如何利用终结点发现Microsoft 365 Defender查找网络中非托管设备
 keywords: 设备发现， 发现， 被动， 主动， 网络， 可见性， 服务器， 工作站， 载入， 非托管设备
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636238"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062213"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -35,7 +35,6 @@ ms.locfileid: "52636238"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 保护环境需要清点网络中设备。 但是，网络中映射设备的成本通常很高、具有挑战性且耗时。 
 

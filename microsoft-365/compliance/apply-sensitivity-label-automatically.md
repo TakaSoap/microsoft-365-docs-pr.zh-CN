@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028999"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061896"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -74,7 +74,7 @@ ms.locfileid: "53028999"
     - 如果你拥有已应用 IRM 加密的 Exchange 邮件流规则或数据丢失防护 (DLP) 策略：当内容由这些规则或策略和自动标记策略标识时，将应用该标签。 如果该标签已应用加密，则将忽略 Exchange 邮件流规则或 DLP 策略中的 IRM 设置。 但是，如果该标签未应用加密，则除了标签之外，还会应用邮件流规则或 DLP 策略中的 IRM 设置。
     - 如果存在匹配项，则具有 IRM 加密但没有标签的电子邮件将通过自动标记替换为具有加密设置的标签。
     - 与自动标记条件匹配时，将标记传入电子邮件：
-        - 即将推出：如果已将标签配置为[加密](encryption-sensitivity-labels.md)，则不会应用该加密。
+        - 如果已将标签配置为[加密](encryption-sensitivity-labels.md)，则不会应用该加密。
         - 如果标签配置为应用[动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，请注意，这可能会影响组织外部人员的姓名。
     - 如果标签应用了加密，则[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是发送电子邮件的人。 目前无法为自动加密的所有传入电子邮件设置权限管理器所有者。
     
@@ -190,7 +190,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 

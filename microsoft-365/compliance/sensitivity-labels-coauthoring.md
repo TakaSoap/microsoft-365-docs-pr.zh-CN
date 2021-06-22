@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796050"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062192"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 此功能暂处于预览阶段，可能会发生变更。 
->
-> 在测试租户中（而不是生产租户）中启用此功能，原因：
-> - 此功能将更改标记元数据，并非所有平台上的所有应用当前都支持此更改
-> - 启用此功能后，无法自己禁用此功能
+> 此功能暂处于预览阶段，可能会发生变更。
 
 启用此设置以支持 Office 桌面应用的 [共同创作](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) ，以便当通过 [敏感度标签](sensitivity-labels.md)标记和加密文档时，多个用户可以同时编辑这些文档。
 
@@ -37,7 +33,7 @@ ms.locfileid: "52796050"
 
 此外，启用此功能可实现 [和](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 的文件都支持自动保存和自动保存功能。
 
-若要阅读发布公告，请参阅文章《宣布 [Microsoft 信息保护加密文档共同创作》并标记](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)。
+若要阅读初始发布公告，请参阅博客文章 [《发布 Microsoft 信息保护加密文档和标签更新的共同创作功能》](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)。
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>敏感度标签的元数据更改
 
@@ -76,15 +72,13 @@ ms.locfileid: "52796050"
 
 启用此功能前，请确保了解以下先决条件。
 
-- 必须为此预览使用测试租户。
-
 - 只有全局管理员才能启用此功能。
 
 - 必须为租户启用 [SharePoint 和 OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) 敏感度标签。 如果尚未启用此功能，则当选择为具有敏感度标签的文件启用共同创作的设置时，将自动启用此功能。
 
 - 适用于企业的 Microsoft 365 应用：
-    - **Windows**：预览： [频道（预览）](https://office.com/insider)
-    - **macOS**：预览： [当前频道（预览）](https://office.com/insider)
+    - **Windows**： 最低版本 2105： 6 月 18 日
+    - **macOS**： 最低版本 16.50
     - **iOS**：尚不支持
     - **Android**：尚不支持
 
@@ -142,34 +136,26 @@ ms.locfileid: "52796050"
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>如何为具有敏感度标签的文件启用共同创作
 
 > [!CAUTION]
-> 打开此设置是一种单向操作。此功能在预览版中，仅在非生产环境中进行测试，且仅在阅读和理解该页面上记录的任何元数据更改、先决条件、限制和任何已知问题文件后才能进行测试。
+> 打开此设置是一种单向操作。虽然预览版中有此功能，但是最好在阅读和理解该页面上记录的元数据更改、先决条件、限制和已知问题后再启用它。
 
-在预览期间，必须使用特定 URL 访问 Microsoft 365 合规中心中的此设置。
+1. 以租户的全局管理员身份登录 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 
-1. 使用以下链接，以测试租户的全局管理员角色登录 Microsoft 365 合规中心：
+2. 在导航窗格中，选择 **设置** > **共同创作带有敏感文件的文件**。
+
+2. 在 **共同创作带有敏感标签的文件(预览)** 页面上，阅读摘要说明、先决条件、预期内容以及在启用此设置后无法关闭此设置的警告。
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    此链接将直接进入租户设置，为具有敏感度标签 **创建共同**。
-
-    > [!IMPORTANT]
-    > 在继续之前，请检查是否登录到了对用户没有影响的测试租户： 
-    >
-    > 在合规中心右上方选择带帐户缩写的圆圈，然后确认租户名称是否显示预期测试租户。
-    
-2. 阅读摘要说明、先决条件、预期内容以及打开此设置后无法关闭此设置的警告。 然后选择 **针对具有敏感度标签的文件启用共同创作**， **应用**：
+    然后选择 **针对具有敏感度标签的文件启用共同创作**， **应用**：
     
     ![为具有敏感度标签的文件启用共同创作的选项](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. 请等待 24 小时，让此设置复制整个环境，然后再测试此新功能进行共同创作。
+3. 请等待 24 小时，让此设置在整个环境中复制，然后再用这个新功能进行共同创作。
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>如果需要禁用此功能，请联系支持人员
 
 > [!IMPORTANT]
 > 如果需要禁用此功能，请注意标签信息可能会丢失。
 
-为具有租户的敏感度标签的文件启用共同创作后，无法自己禁用此设置。 因此，在启用此设置之前，必须检查并了解先决条件、结果和限制，这一点至关重要。 这也是建议使用测试租户（而不是生产租户）测试此功能的原因。
+为具有租户的敏感度标签的文件启用共同创作后，无法自己禁用此设置。 因此，在启用此设置之前，必须检查并了解先决条件、结果和限制，这一点至关重要。
 
 ![显示针对敏感度标签开启共同创作的选项](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 

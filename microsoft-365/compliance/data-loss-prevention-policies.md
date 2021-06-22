@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 数据丢失防护参考资料
-ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5c01b6419a9af100cfaedccbd5a9c4923ca3e42f
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878156"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061791"
 ---
 # <a name="data-loss-prevention-reference"></a>数据丢失防护参考
  
@@ -110,9 +110,6 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 如果你选择包含或排除特定 SharePoint 网站，则 DLP 策略可包含不超过 100 个此类包含项和排除项。 尽管存在此限制，你可应用组织范围策略或位置整体策略来超出此限制。
 
 如果你选择包括或排除特定 OneDrive 帐户或组，则 DLP 策略可包含不超过 100 个用户帐户或 50 个组作为包含项或排除项。
-
-> [!NOTE]
-> OneDrive用户帐户或组的业务策略范围的详细信息是公共预览版。 
   
 ### <a name="rules"></a>Rules
 

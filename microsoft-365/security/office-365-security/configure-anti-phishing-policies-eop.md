@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Exchange Online Protection (EOP) 组织中可用的反网络钓鱼策略，Exchange Online邮箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054567"
+ms.locfileid: "53062224"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反网络钓鱼策略
 
@@ -126,11 +126,14 @@ ms.locfileid: "53054567"
      - **将邮件移动到收件人的"垃圾邮件"文件夹**
      - **隔离邮件**
 
-   - **安全提示&：** 仅在上一页上选择了"启用欺骗智能"时 **，此设置才** 可用：
-     - 针对欺骗的未经身份验证的发件人显示 **(？) ：** 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或复合身份验证，则向 Outlook 的发件人照片框中添加问 [号。](email-validation-and-authentication.md#composite-authentication)
-     - **显示"via"标记**：如果 (chris@contoso.com 或 MAIL **FROM** 地址中的域 fabrikam.com) ，则通过 fabrikam.com) 将 via 标记添加到"收件人"地址。
+   - **安全提示&指示器**：
+     - **显示第一安全提示** 联系人：有关详细信息，请参阅第一个 [联系人安全提示。](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+     - **为欺骗** 的未经身份验证的发件人显示 (？) ：如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 <sup>\*</sup> DMARC或复合身份验证，则向 Outlook 的发件人照片框中添加问号。 [](email-validation-and-authentication.md#composite-authentication)
+     - **显示"via"标记**：如果通过 (chris@contoso.com 通过 fabrikam.com) 将 via 标记添加到"收件人"地址（如果它不同于 DKIM 签名或 <sup>\*</sup> MAIL **FROM** 地址中的域）。
 
      若要打开某个设置，请选中该复选框。 若要将其关闭，请清除该复选框。
+
+     <sup>\*</sup> 只有在上一页上选择了" **启用** 欺骗智能"时，此设置才可用。 有关详细信息，请参阅未经 [身份验证的发件人](set-up-anti-phishing-policies.md#unauthenticated-sender)。
 
    完成后，单击“**下一步**”。
 

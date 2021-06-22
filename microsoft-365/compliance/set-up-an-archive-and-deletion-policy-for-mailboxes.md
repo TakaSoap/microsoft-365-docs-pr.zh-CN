@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何在存档和删除策略Microsoft 365自动将项目移动到用户的存档邮箱。
-ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919528"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062167"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -276,7 +276,7 @@ ms.locfileid: "50919528"
 
 4. 可以重新运行步骤 2 中的命令，以验证分配给默认邮箱计划的保留策略已更改。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 如何计算保留时间？ 邮箱项目的保留时间从传递日期或项目创建日期开始计算，例如未发送但由用户创建的草稿邮件。 When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. 具有存档标记的项目标记有移动日期。 
 
@@ -294,6 +294,6 @@ ms.locfileid: "50919528"
     |从不删除  <br/> |此标记可防止保留策略删除项目。  <br/> |内置  <br/> |个人;用户可以应用此标记。  <br/> |
     |个人 1 年后移动到存档  <br/> |1 年后将项目移动到存档邮箱。  <br/> |内置  <br/> |个人;用户可以应用此标记。  <br/> |
 
-    > <sup>\*</sup>用户可以使用 Outlook 和 Outlook 网页版 (（以前称为 Outlook Web App) ）中的"恢复已删除邮件"工具在已删除项目的保留期（默认情况下为 Exchange Online 中的 14 天）中恢复已删除项目。 管理员可以使用Windows PowerShell将已删除项目的保留期最长增加至 30 天。 有关详细信息，请参阅[：Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)和 Change the [deleted item retention period for a mailbox in Exchange Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>用户可以使用 Outlook 和 Outlook 网页版 (（以前称为 Outlook Web App) ）中的"恢复已删除邮件"工具在已删除项目的保留期（默认情况下为 Exchange Online 中的 14 天）内恢复已删除项目。 管理员可以使用Windows PowerShell将已删除项目的保留期最长增加至 30 天。 有关详细信息，请参阅[：Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)和 Change the [deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - 使用 **"可恢复的项目 14 天** 移动到存档"保留标记有助于释放用户主邮箱中"可恢复的项目"文件夹中的存储空间。 当用户的邮箱处于保留状态时，这非常有用，这意味着不会永久删除用户邮箱。 如果不将项目移动到存档邮箱，则可能会达到主邮箱中"可恢复的项目"文件夹的存储配额。 有关此情况以及如何避免此情况的信息，请参阅增加保留邮箱的可恢复 [邮件配额](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

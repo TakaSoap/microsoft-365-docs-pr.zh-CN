@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866663"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062250"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -47,6 +47,13 @@ ms.locfileid: "52866663"
 > ```
 
 ## <a name="june-2021"></a>2021 年 6 月
+
+- [设备发现](device-discovery.md) <br> 帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。 使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。 然后，你可以载入发现的设备，以减少与网络中具有非托管终结点相关的风险。
+
+   > [!IMPORTANT]
+   > 从 2021 年 7 月 19 日开始，标准发现将成为所有客户的默认模式。 你可以选择通过设置页保留基本模式。 
+
+
 - [现在，设备](/microsoft-365/security/defender-endpoint/machine-groups) 组定义可以包括每个条件的多个值。 你可以将多个标记、设备名称和域设置为单个设备组的定义。
 
 ## <a name="march-2021"></a>2021 年 3 月
@@ -105,7 +112,7 @@ ms.locfileid: "52866663"
 - [API 资源管理器](api-explorer.md)<br> 通过 API 资源管理器，可以轻松构造和执行 API 查询、测试和发送任何可用 Microsoft Defender 终结点 API 终结点的请求。
 
 
-## <a name="september-2019"></a>2019 年 9 月
+## <a name="september-2019"></a>2019年九月
 
 - [使用 Intune 的防篡改保护设置](prevent-changes-to-security-settings-with-tamper-protection.md)<br/>现在，你可以打开或 (Intune) Intune Microsoft 365 Device Management Portal 中的组织 (防篡改) 。
 

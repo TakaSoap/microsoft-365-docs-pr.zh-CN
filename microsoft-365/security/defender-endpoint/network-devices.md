@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862063"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062146"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -34,11 +34,6 @@ ms.locfileid: "51862063"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **扫描和管理网络设备目前处于公共预览阶段**<br>
-> 此预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。 某些功能可能不受支持，或者可能具有受限功能。
-> 有关详细信息，请参阅适用于终结点预览[功能的 Microsoft Defender。](preview.md)
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -103,7 +98,7 @@ ms.locfileid: "51862063"
     > [!NOTE]
     > 并非所有 URL 都指定在 Defender for Endpoint 记录允许的数据收集列表中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 若要配置评估作业，需要以下用户权限选项： **在安全中心中管理安全设置**。 可以通过访问角色 来设置  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 

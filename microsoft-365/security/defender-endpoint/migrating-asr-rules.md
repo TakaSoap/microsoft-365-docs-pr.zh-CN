@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933777"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062159"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>从第三方 HIPS 迁移到 ASR 规则
 
@@ -148,6 +148,6 @@ ms.locfileid: "51933777"
 
 另请参阅
 
-- [关于减少攻击面的常见问题解答](attack-surface-reduction-faq.md)
+- [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
 - [启用攻击面减少规则](enable-attack-surface-reduction.md)
-- [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
+- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)

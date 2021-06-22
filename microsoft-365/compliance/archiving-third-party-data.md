@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054773"
+ms.locfileid: "53061729"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -143,7 +143,6 @@ Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体�
 |O2 SMS 和语音网络存档器 | 是         | 否 | 否 |
 |TELUS SMS 网络存档器 | 是 | 否 | 否 |
 |Verizon SMS/MMS 网络存档器 | 是 | 否 | 否 |
-|WeChat Archiver | 是 | 否 | 否 |
 |WhatsApp 存档程序 | 是 | 否 | 否 |
 |||||
 
