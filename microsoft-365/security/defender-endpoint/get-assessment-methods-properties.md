@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3e5a91a33a4207daa30f1054f03655c846d297ec
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 12a77441f283ed693eae31fff36a7197ff6f0506
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022434"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053235"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>导出每个设备的评估方法和属性
 
@@ -56,7 +56,7 @@ ms.locfileid: "53022434"
 
 - **JSON 响应**  API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
+- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53022434"
 方法 | 数据类型 | 说明
 :---|:---|:---
 导出安全配置评估 **(JSON 响应)** | 按设备集合的安全配置。 请参阅 [：1.2 JSON (1.2 属性) ](#12-properties-json-response) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
-导出通过文件 **(安全配置)** | 按设备集合的安全配置。 请参阅 [：1.3 属性 (文件) ](#13-properties-via-files) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+导出通过文件 **(安全配置)** | 按设备集合的安全配置。 请参阅 [：1.3 属性 (文件) ](#13-properties-via-files) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 ### <a name="12-properties-json-response"></a>1.2 JSON (1.2 属性) 
 
@@ -110,7 +110,7 @@ GeneratedTime | string | 导出的生成时间。
 方法 | 数据类型 | 说明
 :---|:---|:---
 导出 **JSON 响应 (软件清单)** | 按设备集合列出软件清单。 请参阅 [：2.2 JSON (2.2 属性) ](#22-properties-json-response) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
-通过文件库 **导出 (清单)** | 按设备文件列出软件清单。 请参阅 [：2.3 属性 (文件) ](#23-properties-via-files) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+通过文件库 **导出 (清单)** | 按设备文件列出软件清单。 请参阅 [：2.3 属性 (文件) ](#23-properties-via-files) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 ### <a name="22-properties-json-response"></a>2.2 JSON (2.2 属性) 
 
@@ -147,8 +147,8 @@ GeneratedTime | string | 导出的生成时间。
 方法 | 数据类型 | 说明
 :---|:---|:---
 导出 **JSON 响应 (软件漏洞)** | 调查集合请参阅 [：3.2 JSON 响应 (3.2) ](#32-properties-json-response) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 将提取组织的所有数据作为 JSON 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
-导出通过文件 (**软件漏洞评估)** | 调查实体 请参阅 [：3.3 通过文件 (的属性) ](#33-properties-via-files) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，你可以从以下Azure 存储空间下载所有数据：1。  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
-**Delta 导出** 软件漏洞评估 **(JSON 响应)** | 调查集合请参阅 [：3.4 Properties Delta export (JSON response) ](#34-properties-delta-export-json-response) | 返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。 <br><br> API 拉取你组织的数据作为 JSON 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 OData API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"  <br><br> 由于针对软件漏洞的 Delta 导出 OData API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
+导出通过文件 (**软件漏洞评估)** | 调查实体 请参阅 [：3.3 通过文件 (的属性) ](#33-properties-via-files) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+**Delta 导出** 软件漏洞评估 **(JSON 响应)** | 调查集合请参阅 [：3.4 Properties Delta export (JSON response) ](#34-properties-delta-export-json-response) | 返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。 <br><br> API 拉取你组织的数据作为 JSON 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"  <br><br> 由于对软件漏洞的 Delta 导出 API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
 
 ### <a name="32-properties-json-response"></a>3.2 JSON (3.2 属性) 
 

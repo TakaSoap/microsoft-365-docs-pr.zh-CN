@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 87fb5c62b520168a686cc0b95a321becdd4656ba
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022866"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052959"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>导出每个设备的软件漏洞评估
 
@@ -41,16 +41,16 @@ ms.locfileid: "53022866"
 
 1. [导出软件漏洞评估 **JSON 响应**](#1-export-software-vulnerabilities-assessment-json-response)  API 将提取组织的所有数据作为 Json 响应。 此方法最适合使用少于 _100 K_ 设备的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-2. [通过文件导出软件 **漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 多台设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储空间。 通过此 API，可以从以下Azure 存储空间下载所有数据：
+2. [通过文件导出软件 **漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 多台设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
 
    - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
    - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 3. [Delta 导出软件漏洞评估 **JSON 响应**](#3-delta-export-software-vulnerabilities-assessment-json-response)  返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。
-API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 <br><br> 与完整的"软件漏洞评估 (JSON 响应) "不同（用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 OData API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？" <br><br> 由于针对软件漏洞的 Delta 导出 JSON 响应 API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
+API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 <br><br> 与完整的"软件漏洞评估 (JSON 响应) "不同（用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用用于仅提取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？" <br><br> 由于针对软件漏洞的 Delta 导出 JSON 响应 API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
 
-使用 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _Json_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!Note]
 >
@@ -377,7 +377,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5 属性
 
-每个返回的记录都包含设备 OData API 评估的完整导出软件漏洞的所有数据，以及两个附加字段  _**：EventTimestamp**_ 和 _**Status**_。
+每个返回的记录都包含设备 API 评估的完整导出软件漏洞的所有数据，以及两个附加字段  _**：EventTimestamp**_ 和 _**Status**_。
 
 >[!NOTE]
 >- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，因此请仅使用记录列。

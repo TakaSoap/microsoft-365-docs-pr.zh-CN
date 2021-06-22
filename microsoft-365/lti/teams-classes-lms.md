@@ -1,5 +1,5 @@
 ---
-title: 使用Microsoft Teams管理系统中的课程
+title: 将Microsoft Teams类与管理
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,20 +12,20 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 在Microsoft Teams管理系统中集成课程
-ms.openlocfilehash: 18d33225dd57932af20421c6b3b5dc4fe3b397b8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: 在 Microsoft Teams 管理系统中集成Learning类
+ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327703"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053247"
 ---
-# <a name="use-microsoft-teams-classes-in-your-learning-management-system"></a>使用Microsoft Teams管理系统中的课程
+# <a name="use-microsoft-teams-classes-with-blackboard"></a>将Microsoft Teams类与管理
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-Microsoft Teams课堂团队是学习工具互操作性 (LTI) 应用，可帮助教师和学生轻松地在学习管理系统 (LMS) 和 Teams 之间导航。 用户可以直接从 LMS 中访问与其课程关联的课堂团队。
+Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮助教师和学生轻松地在 Learning Management System (LMS) 和 Teams 之间导航。 用户可以直接从 LMS 中访问与其课程关联的课堂团队。
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>在租户中批准Microsoft Azure应用程序
 
@@ -37,7 +37,7 @@ Microsoft Teams课堂团队是学习工具互操作性 (LTI) 应用，可帮助�
 
 2. 根据以下示例重定向 Microsoft Identity Platform Admin Consent 终结点：
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > 将 {tenant} 替换为组织的 Microsoft 租户 ID。

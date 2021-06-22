@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245956"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053151"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -65,7 +65,7 @@ ms.locfileid: "52245956"
  默认情况下， 在 Windows 10 版本 1809 或更高版本上运行的所有已载入设备正在捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (标头) 、UDP (标头) 、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>在标准发现中，使用哪些协议进行主动探测？
- 当设备配置为运行标准发现时，会使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL
+ 当设备配置为运行标准发现时，会使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>如何排除使用标准发现对目标进行探测？
  如果网络上有些设备不应主动探测器，则还可以定义排除项列表以防止它们被扫描。 配置在设备发现设置页中提供。
@@ -89,6 +89,7 @@ ms.locfileid: "52245956"
  安全建议和仪表板小部件适用于网络中稳定的设备;不包括临时设备、来宾设备和其他。 该想法是在持久性设备上推荐，这也意味着组织的总体安全分数。
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>我能否载入找到的非托管设备？
- 是的。 网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。 
+ 是。 网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。 
 
-
+## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>我已注意到非托管设备运行状况状态始终为"活动"，为什么？
+在设备清单的标准保留期内，非托管设备运行状况临时为"活动"状态，无论其实际状态如何。

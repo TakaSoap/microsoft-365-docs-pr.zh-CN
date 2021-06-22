@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f9a4b7679a33d6722336ee5412e4992389ba915f
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ec3887cd37ddb412df3ae78300c1f9e9c60ecc
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694409"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053043"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -53,7 +53,7 @@ ms.locfileid: "52694409"
 
 你还需要与受信任的合作伙伴公司通信 (将邮箱移动到其) ，以获取其Microsoft 365 ID。 此租户 ID 用于"组织关系" `DomainName` 字段。
 
-若要获取订阅的租户 ID，请登录到 Microsoft 365 管理中心，然后转到 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 单击"租户 ID"属性的复制图标，将其复制到剪贴板。
+若要获取订阅的租户 ID，请登录到 Microsoft 365 管理中心 并转到 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 单击"租户 ID"属性的复制图标，将其复制到剪贴板。
 
 下面是此过程的工作方式。
 
@@ -122,6 +122,7 @@ ms.locfileid: "52694409"
 6. 脚本将暂停，并要求你接受或同意Exchange创建的任何邮箱迁移应用程序。 下面是一个示例。
 
     ```powershell
+    PS C:\PowerShell\> # Note: the below User.Invite.All permission is optional, and will only be used to retrieve access token to send invitation email to source tenant
     PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureResourceLocation "Brazil Southeast" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
@@ -134,7 +135,7 @@ ms.locfileid: "52694409"
     Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              dsad938432-dd8e-s9034-bf9a-83984293n43
     Auditing setup successfully for Cross-TenantMovesVault
     Exchange application given access to KeyVault Cross-TenantMovesVault
-    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - Directory.ReadWrite.All. Exchange - Mailbox.Migration
+    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - User.Invite.All. Exchange - Mailbox.Migration
     Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
     https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
     Admin consent URI for contoso.onmicrosoft.com tenant admin is -
@@ -175,7 +176,7 @@ ms.locfileid: "52694409"
    > [!NOTE]
    > 如果未收到此电子邮件或找不到此电子邮件，则为目标租户管理员提供了直接 URL，可提供给你接受邀请。 目标租户管理员的远程 PowerShell 会话脚本中的 URL 应包含。
 
-3. 在 Microsoft 365 管理中心或远程 PowerShell 会话中，创建一个或多个启用邮件的安全组，以控制目标租户允许的邮箱列表，以将 (从源租户移动到目标租户的) 。 无需提前填充此组，但必须至少提供一个组，以运行脚本 (步骤) 。 不支持嵌套组。 
+3. 在 Microsoft 365 管理中心 或远程 PowerShell 会话中，创建一个或多个启用邮件的安全组，以控制目标租户允许的邮箱列表，以将 (从源租户) 移动到目标租户。 无需提前填充此组，但必须至少提供一个组，以运行脚本 (步骤) 。 不支持嵌套组。 
 
 4. 从SetupCrossTenantRelationshipForResourceTenant.ps1存储库下载源租户设置的 GitHub 脚本 [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ：。 
 
@@ -577,7 +578,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **源租户和目标租户能否使用相同的域名？**  
 
-否。 源和目标租户域名必须是唯一的。 例如，域的源 contoso.com 和目标域 fourthcoffee.com。
+不正确。 源和目标租户域名必须是唯一的。 例如，域的源 contoso.com 和目标域 fourthcoffee.com。
 
 **共享邮箱是否移动且仍正常工作？**
 
@@ -716,7 +717,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    | 信息屏障                              |
    | 适用于 Office 365 的信息保护 - 高级版   |
    | 适用于 Office 365 的信息保护 - 标准版  |
-   | MyAnalytics 的见解                           |
+   | Insights MyAnalytics                           |
    | Microsoft 365高级审核                   |
    | Microsoft Bookings                                |
    | Microsoft 商业中心                         |

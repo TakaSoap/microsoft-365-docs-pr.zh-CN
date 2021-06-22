@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: a8d047845b986029d393816982e6bede3db71485
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: d4988eee419a38497d4fa35cdb3e2f7fec103688
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861559"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052923"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
->*[Microsoft 365 安全与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 此功能为预览版，尚未提供给所有客户。
+> 此功能暂处于预览阶段，可能会发生变更。
 
 本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Yammer 的信息。
 

@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以启用 Word、Excel 和 PowerPoint 中的敏感度SharePoint OneDrive。
-ms.openlocfilehash: d4c0f9b4c280394dd63820320ba7ca30e349c361
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: e123dbd523bdaa648ee66b6ef56ee071b917fd86
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878036"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052971"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-在 SharePoint 和 SharePoint [](sensitivity-labels-office-apps.md#office-file-types-supported) OneDrive 中为受支持的 Office 文件启用内置标签，以便用户可以在 Office 网页[](sensitivity-labels.md)中应用敏感度标签。 启用此功能后，用户将看到功能区上的"敏感度"按钮，以便他们可以应用标签，并查看状态栏上任何应用的标签名称。
+在 Office 和 SharePoint[](sensitivity-labels-office-apps.md#office-file-types-supported)中启用OneDrive标签，以便用户可以在 Office 网页版 中应用敏感度Office 网页版。 [](sensitivity-labels.md) 启用此功能后，用户将看到功能区上的"敏感度"按钮，以便他们可以应用标签，并查看状态栏上任何应用的标签名称。
 
-启用此功能还会导致SharePoint OneDrive处理已使用敏感度标签加密的 Office 文件的内容。 标签可应用于Office或桌面Office应用，并上传或保存在SharePoint OneDrive。 在启用此功能之前，这些服务无法处理加密文件，这意味着共同授权、电子数据展示、数据丢失防护、搜索和其他协作功能对这些文件不起作用。
+启用此功能还会导致SharePoint OneDrive处理已使用敏感度标签加密的 Office 文件的内容。 标签可应用于桌面Office 网页版桌面Office，并上传或保存SharePoint OneDrive。 在启用此功能之前，这些服务无法处理加密文件，这意味着共同授权、电子数据展示、数据丢失防护、搜索和其他协作功能对这些文件不起作用。
 
 为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签后，对于敏感度标签为新的和已更改的文件（使用基于云的密钥 (应用加密，并且不使用双密钥加密) ： [](double-key-encryption.md)
 
@@ -40,7 +40,7 @@ ms.locfileid: "52878036"
 
 - 当用户将已标记和加密的文件上传到SharePoint或OneDrive时，他们必须至少具有对这些文件的查看权限。 例如，他们可以打开文件外部SharePoint。 如果没有此最低使用权限，则上传成功，但服务无法识别标签，无法处理文件内容。
 
-- 使用 Office Word、 (、Excel、PowerPoint) Web Office，打开和编辑具有应用加密的敏感度标签的文件。 强制执行通过加密分配的权限。 还可以为 [这些文档使用自动](apply-sensitivity-label-automatically.md) 标记。
+- 使用 Office 网页版 (Word、Excel、PowerPoint) 打开和编辑Office敏感度标签应用加密的文件。 强制执行通过加密分配的权限。 还可以为 [这些文档使用自动](apply-sensitivity-label-automatically.md) 标记。
 
 - 外部用户可以使用来宾帐户访问标记为加密的文档。 有关详细信息，请参阅 [支持外部用户和标记的内容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
 
@@ -64,11 +64,11 @@ ms.locfileid: "52878036"
 
 如果当前使用 SharePoint 信息权限管理 (IRM) 保护 SharePoint 中的文档，请务必选中此页上的 SharePoint 信息权限管理[ (IRM) ](#sharepoint-information-rights-management-irm-and-sensitivity-labels)和敏感度标签部分。 
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 这些新功能仅适用于 [敏感度](sensitivity-labels.md) 标签。 如果当前具有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便你可以为上传的新文件启用这些功能。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。
 
-使用 Windows 上的 OneDrive 同步应用版本 19.002.0121.0008 或更高版本，以及 Mac 上的版本 19.002.0107.0008 或更高版本。 这两个版本均于 2019 年 1 月 28 日发布，当前已发布至所有圈。 有关详细信息，请参阅OneDrive[发行说明](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 Office 和 SharePoint OneDrive 中为 Office 文件启用敏感度标签后，将提示运行较旧版本的同步应用的用户进行更新。
+在 Windows 上使用 OneDrive 同步 应用版本 19.002.0121.0008 或更高版本，在 Mac 上使用版本 19.002.0107.0008 或更高版本。 这两个版本均于 2019 年 1 月 28 日发布，当前已发布至所有圈。 有关详细信息，请参阅OneDrive[发行说明](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 Office 和 SharePoint OneDrive 中为 Office 文件启用敏感度标签后，将提示运行较旧版本的同步应用的用户进行更新。
 
 ## <a name="limitations"></a>限制
 
@@ -78,7 +78,7 @@ ms.locfileid: "52878036"
 
 - SharePoint和 OneDrive不会自动将敏感度标签应用于已使用 Azure 信息保护标签加密的现有文件。 相反，为了让这些功能在启用 Office 和 OneDrive 中的Office标签后SharePoint，请完成以下任务：
     
-    1. 确保你已[将 Azure 信息](/azure/information-protection/configure-policy-migrate-labels)保护标签迁移到敏感度标签，然后从[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)Microsoft 365发布它们。
+    1. 请确保你已[将 Azure 信息](/azure/information-protection/configure-policy-migrate-labels)保护标签迁移到敏感度标签，并[发布](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)它们Microsoft 365 合规中心。
     2. 下载带标签的文件，然后将它们上传到原始位置，SharePoint或OneDrive。
 
 - SharePoint OneDrive应用加密的标签具有以下任一加密配置时，无法处理[加密文件](encryption-sensitivity-labels.md#configure-encryption-settings)：
@@ -86,11 +86,11 @@ ms.locfileid: "52878036"
     - **将内容的访问权限设置为** 一个值，则对内容 **从不**。
     - **选择了双** 加密技术。
     
-    对于具有其中任何加密配置的标签，标签不会在 Web Office中显示。 此外，新功能不能用于已具有这些加密设置的已标记文档。 例如，这些文档不会在搜索结果中返回，即使它们已更新。
+    对于具有这些加密配置中的任一配置的标签，这些标签不会向用户Office 网页版。 此外，新功能不能用于已具有这些加密设置的已标记文档。 例如，这些文档不会在搜索结果中返回，即使它们已更新。
 
 - 出于性能原因，当您将文档上载或保存到 SharePoint并且文件标签不应用加密时，文档库中的"敏感度"列可能需要一段时间才能显示标签名称。 如果你使用依赖于此列中的标签名称的脚本或自动化，则此延迟的因素。
 
-- 在下列"另存为"方案中，用户打开加密文档可能会遇到延迟：使用 Office 桌面版时，用户为具有应用加密的敏感度标签的文档选择"另存为"。 用户选择SharePoint或OneDrive位置，然后立即尝试在 Web Office打开该文档。 如果该服务仍在处理加密，用户将看到一条消息，指出必须在其桌面应用中打开文档。 如果用户在几分钟后重试，文档将在 Web Office中成功打开。 
+- 在下列"另存为"方案中，用户打开加密文档可能会遇到延迟：使用 Office 桌面版时，用户为具有应用加密的敏感度标签的文档选择"另存为"。 用户选择SharePoint或OneDrive位置，然后立即尝试在 Office 网页版 中打开该文档。 如果该服务仍在处理加密，用户将看到一条消息，指出必须在其桌面应用中打开文档。 如果用户在几分钟后重试，文档将在 Office 网页版。 
 
 - 对于加密文档，不支持打印。
 
@@ -101,13 +101,11 @@ ms.locfileid: "52878036"
     > [!NOTE]
     > 现在预览版支持共同创作。 有关详细信息，请参阅启用 [使用敏感度标签加密的文件共同创作](sensitivity-labels-coauthoring.md)。
 
-- 如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，用户可能无法将更改保存到其"OneDrive 同步"文件夹中。 此方案适用于使用加密标记的文件，以及标签从未对应用加密的标签应用加密的标签更改时。 用户看到一 [个红色圆圈，显示白色十字](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)形图标错误，并要求他们将新更改另存为单独的副本。 相反，他们可以关闭并重新打开该文件，或使用Office Web 应用程序。
+- 如果管理员更改已应用于下载到用户同步客户端的文件的已发布标签的设置，用户可能无法将更改保存到其"OneDrive 同步"文件夹中。 此方案适用于使用加密标记的文件，以及标签从未对应用加密的标签应用加密的标签更改时。 用户看到一 [个红色圆圈，显示白色十字](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)形图标错误，并要求他们将新更改另存为单独的副本。 相反，他们可以关闭并重新打开该文件，或使用Office 网页版。
 
-- 如果将已标记的文档上载到 SharePoint 或 OneDrive并且标签使用服务主体名称中的帐户应用了加密，则该文档不能从 Office 网页中打开。 示例方案包括Microsoft Cloud App Security和通过电子邮件发送Teams文件。
+- 用户在脱机或进入睡眠模式后，无需使用 Office 网页版，而是将桌面和移动应用用于 Word、Excel 或 PowerPoint。 对于这些用户，当他们恢复 Office 应用 会话并尝试保存更改时，他们会看到上载失败消息，其中包括保存副本而不是保存原始文件的选项。 
 
-- 用户在脱机或进入睡眠模式后可能会遇到保存问题，而不是将 Office 用于 Web，而是使用 Word、Excel 或 PowerPoint 的桌面和移动应用程序。 对于这些用户，当他们恢复 Office 应用 会话并尝试保存更改时，他们会看到上载失败消息，其中包括保存副本而不是保存原始文件的选项。 
-
-- 无法以下列方式加密的文档在 Web Office中打开：
+- 无法以下列方式加密的文档在Office 网页版：
     - 使用本地密钥的加密 (保留您自己的密钥"或 HYOK) 
     - 使用双密钥加密 [应用的加密](double-key-encryption.md)
     - 独立于标签应用的加密，例如，通过直接应用权限管理保护模板。
@@ -120,13 +118,13 @@ ms.locfileid: "52878036"
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>如何为用户启用敏感度SharePoint OneDrive (选择加入) 
 
-可以使用合规性中心或 PowerShell Microsoft 365新功能。 与更改和更改的所有租户SharePoint OneDrive，更改需要大约 15 分钟才能生效。
+可以通过使用 Microsoft 365 合规中心 或 PowerShell 启用新功能。 与更改和更改的所有租户SharePoint OneDrive，更改需要大约 15 分钟才能生效。
 
 ### <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>使用合规中心启用敏感度标签支持
 
 此选项是启用 SharePoint 和 OneDrive 敏感度标签的最简单方法，但你必须以租户的全局管理员登录。
 
-1. 以全局管理员 [Microsoft 365](https://compliance.microsoft.com/)登录到合规性中心，并 **导航到"** 解决方案""  >  **信息保护"**
+1. 以全局管理员 [Microsoft 365 合规中心](https://compliance.microsoft.com/)登录网站，并导航 **到"解决方案**""  >  **信息保护"**
     
     如果看不到此选项，请先选择“**全部显示**”。 
 
@@ -185,7 +183,7 @@ ms.locfileid: "52878036"
 
 在将敏感度标签与 SharePoint 和 OneDrive 一同使用时，请记住，在发布新的敏感度标签或更新现有敏感度标签时，需要留出复制时间。 这对应用加密的新标签尤为重要。
 
-例如：创建并发布应用加密的新敏感度标签，它很快就会显示在用户的桌面应用中。 用户将此标签应用于文档，然后将它上载到SharePoint或OneDrive。 如果尚未为服务完成标签复制，则上载时不会将新功能应用于该文档。 因此，不会在搜索或电子数据展示中返回文档，并且无法通过 Web Office打开文档。  
+例如：创建并发布应用加密的新敏感度标签，它很快就会显示在用户的桌面应用中。 用户将此标签应用于文档，然后将它上载到SharePoint或OneDrive。 如果尚未为服务完成标签复制，则上载时不会将新功能应用于该文档。 因此，不会在搜索或电子数据展示中返回文档，并且文档无法通过 Office 网页版。  
 
 以下更改在一小时内复制：新的和已删除的敏感度标签，以及包含策略中哪些标签的敏感度标签策略设置。
 
@@ -203,9 +201,9 @@ ms.locfileid: "52878036"
 
 - 如果上传的文件带有应用加密的敏感度标签，SharePoint 将不能处理这些文件的内容，因此这些文件不支持共同授权、电子数据展示、DLP 和搜索。
 
-- 如果使用 Web Office标记文件，将强制执行该标签的任何加密设置。 对于这些文件，支持共同授权、电子数据展示、DLP 和搜索。
+- 如果使用密码对文件Office 网页版，将强制执行该标签的任何加密设置。 对于这些文件，支持共同授权、电子数据展示、DLP 和搜索。
 
-- 如果下载使用 Office 网页标签的文件，将保留标签，并强制执行标签中任何加密设置，而不是 IRM 限制设置。
+- 如果下载使用 Office 网页版 标记的文件，将保留该标签，并强制执行该标签的任何加密设置，而不是 IRM 限制设置。
 
 - 如果您下载Office敏感度标签加密的 IRM 或 PDF 文件，则应用 IRM 设置。
 

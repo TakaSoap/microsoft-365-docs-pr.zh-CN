@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933079"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052983"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -42,7 +42,7 @@ ms.locfileid: "52933079"
 将用户报告的邮件发送到自定义邮箱，而不是直接发送给 Microsoft，使管理员能够使用管理员提交选择性地将邮件手动 [报告给](admin-submission.md)Microsoft。
 
   > [!NOTE]
-  > 如果在 Web[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)上的 Outlook中禁用报告，则在此处启用用户提交将替代该设置，并使用户能够在 web 上的 Outlook 中报告邮件。
+  > 如果报告功能中[已](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)禁用Outlook 网页版，则在此处启用用户提交将替代该设置，并使用户能够在Outlook 网页版中报告邮件。
 
 ## <a name="custom-mailbox-prerequisites"></a>自定义邮箱先决条件
 
@@ -68,7 +68,7 @@ ms.locfileid: "52933079"
 
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
 
-  - **组织管理** 或 **安全管理员** 在 [Microsoft 365 Defender 门户中](permissions-in-the-security-and-compliance-center.md)。
+  - **组织管理** 或 **安全管理员**[。Microsoft 365 Defender门户](permissions-in-the-security-and-compliance-center.md)。
   - **组织管理** 中的 [Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
 
 - 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则当您指定提交邮箱时，将收到如下所示的错误：
@@ -80,13 +80,13 @@ ms.locfileid: "52933079"
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>使用 Microsoft 365 Defender 门户配置用户提交邮箱
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>使用Microsoft 365 Defender门户配置用户提交邮箱
 
 1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** \> **Others** section User \> **reported message settings** User \> **submissions**.
 
 2. 在"**用户提交"** 页上，您看到的内容 **由"Microsoft Outlook报告消息**"按钮设置是"关闭"还是"**开"确定**：
 
-   - **Microsoft Outlook"报告消息"按钮** \>**打开** ![切换：如果使用报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页中的内置报告，请 ](../../media/scc-toggle-on.png) 选择此选项，然后配置以下设置：
+   - **Microsoft Outlook"报告消息"按钮** \>**打开** ![切换：如果使用报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页版 中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-on.png) 以下设置：
      - **将报告的邮件发送到**：选择下列选项之一：
        - **Microsoft：** 所有报告的邮件都转到 Microsoft (时，不会使用用户提交) 。
        - **Microsoft 和我的组织的邮箱**：在出现的框中，输入现有邮箱Exchange Online电子邮件地址。 不允许通讯组。 用户提交将同时转到 Microsoft 进行分析，并转到自定义邮箱，供管理员或安全运营团队进行分析。
@@ -107,7 +107,7 @@ ms.locfileid: "52933079"
          - **从不报告邮件**
 
           > [!CAUTION]
-          > 如果已使用 Outlook 网页邮箱策略禁用[Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)网页中的垃圾邮件报告，但配置了之前的任何设置以向 Microsoft 报告邮件，则用户将可以使用报告邮件外接程序或报告网络钓鱼外接程序向 Outlook 网页中的 Microsoft 报告邮件。
+          > 如果已使用 Outlook 网页版 邮箱策略禁用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)中的垃圾邮件报告，但配置了之前的任何设置以向 Microsoft 报告邮件，则用户将能够使用报告邮件外接程序或报告网络钓鱼外接程序在 Outlook 网页版 中向 Microsoft 报告邮件。
 
      - **用户报告体验部分**
        - **"报告** 前"选项卡：在"标题"和"邮件"正文框中，输入用户在使用报告邮件外接程序或报告网络钓鱼外接程序报告邮件之前看到的描述性文本。 您可以使用变量 %type% 将提交类型 (垃圾邮件、网络钓鱼等) 。
@@ -117,14 +117,16 @@ ms.locfileid: "52933079"
 
           > 你的电子邮件将像现在一样提交到 Microsoft 进行分析。 某些电子邮件可能包含个人或敏感信息。
 
-   - **Microsoft Outlook"报告消息"按钮** \>**关闭** ![关闭：如果使用第三方报告工具而不是报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-off.png) 以下设置：
+   - **Microsoft Outlook"报告消息"按钮** \>**关闭** ![关闭：如果使用第三方报告工具而不是报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页版 中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-off.png) 以下设置：
      - 选择 **"使用此自定义邮箱接收用户报告的提交"。** 在出现的框中，输入可以接收电子邮件Exchange Online邮箱的电子邮件地址。
 
    完成后，单击"确认 **"。** 若要清除这些值，请单击"还原 **"**
 
 ## <a name="third-party-reporting-tools"></a>第三方报告工具
 
-可以将第三方邮件报告工具配置为将报告的邮件发送到自定义邮箱。 唯一的要求是原始邮件作为附件包含在发送到自定义邮箱的邮件中 (而不只是将原始邮件转发到自定义邮箱) 。
+可以将第三方邮件报告工具配置为将报告的邮件发送到自定义邮箱。 为此，将"Microsoft Outlook **报告邮件**"按钮设置设置为 **"** 关闭"，将"我的组织的邮箱"设置为Office 365邮箱。
+
+唯一的要求是原始邮件作为 包含。EML 或 。MSG (未) 发送到自定义邮箱的邮件中的附件 (不要只将原始邮件转发到自定义邮箱) 。
 
 下一节将介绍邮件格式要求。 格式是可选的，但如果它不符合规定格式，报告将始终作为网络钓鱼提交。
 

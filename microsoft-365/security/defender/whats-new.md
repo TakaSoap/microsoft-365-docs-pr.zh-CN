@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 的新增功能
-description: 列出 Microsoft 365 Defender 中的新特性和功能
+description: 列出新特性和功能Microsoft 365 Defender
 keywords: what's new in Microsoft 365 Defender， ga， generally available， capabilities， available， new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c974701b83fbb6dbcac1cc597578a97144b2b482
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845590"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053019"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "52845590"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-在最新版本的 (Defender) 通用版本Microsoft 365提供以下功能。
+以下功能在最新版本的 (GA) 中通常Microsoft 365 Defender。
 
 RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中：
 ```http
@@ -40,10 +40,10 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ```
 
 ## <a name="april-2021"></a>2021 年 4 月
-- 改进Microsoft 365安全中心 <br> 改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
+- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
 
-- [Microsoft 365Defender 威胁分析报告](threat-analytics.md)<br>
- 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解 Defender 解决方案阻止Microsoft 365攻击尝试，采取预防措施来降低进一步曝光的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
+- [Microsoft 365 Defender威胁分析报告](threat-analytics.md)<br>
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关应用程序涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
