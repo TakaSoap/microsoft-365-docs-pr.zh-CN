@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769411"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053067"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -116,7 +116,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留策略
 
 > [!NOTE]
-> Yammer 的保留策略推出预览版。 如果你还没有看到 Yammer 的新位置，请几周后重试。
+> Yammer 的保留策略处于预览状态。
 >
 > 若要使用此功能，Yammer 网络必须为[“本机模式”](/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
 
@@ -127,8 +127,6 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 3. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。 
     
     你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
-    
-    请勿选择 **使用高级保留设置** ，因为这并不支持 Yammer 位置。 
 
 4. 有关 **选择位置** 的页面，请选择 **“让我选择特定位置”**。 然后切换到 Yammer 的一个或两个位置：**Yammer 社区消息** 和 **Yammer 用户消息**。
     
