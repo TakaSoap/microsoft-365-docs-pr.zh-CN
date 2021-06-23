@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md
             - name: MS SQL 上的 Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
-            - name: Oracle 上的 Cisco Jabber（预览版）
+            - name: Oracle 上的 Cisco Jabber
               href: archive-ciscojabberonoracle-data.md
-            - name: PostgreSQL 上的 Cisco Jabber（预览版）
+            - name: PostgreSQL 上的 Cisco Jabber
               href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype for Business(预览版)
+              href: archive-skypeforbusiness-data.md
             - name: 可宽延时间电子数据展示
               href: archive-slack-data.md
             - name: Symphony
@@ -429,8 +431,6 @@
               href: archive-text-delimited-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
-            - name: 网页
-              href: archive-webpagecapture-data.md
             - name: 网页
               href: archive-webpagecapture-data.md
             - name: Workplace from Facebook
@@ -455,11 +455,15 @@
               href: archive-enterprise-number-data.md
             - name: O2 网络
               href: archive-o2-network-data.md
+            - name: 信号(预览版)
+              href: archive-signal-archiver-data.md
+            - name: Telegram(预览版)
+              href: archive-telegram-archiver-data.md
             - name: TELUS 网络
               href: archive-telus-network-data.md
             - name: Verizon 网络
               href: archive-verizon-network-data.md
-            - name: 微信 （预览）
+            - name: 微信
               href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
