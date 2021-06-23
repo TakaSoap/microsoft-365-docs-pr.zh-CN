@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: 了解如何为单个用户或整个Outlook Web Outlook启用报告网络钓鱼外接程序。
-ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+description: 了解如何为单个用户或整个组织启用 Outlook Outlook 网页版 报告网络钓鱼外接程序。
+ms.openlocfilehash: 44113237274d37aabeda954354182fe4da5aa970
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625385"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083412"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>启用“报告网络钓鱼”加载项
 
@@ -29,9 +29,9 @@ ms.locfileid: "52625385"
 
 
 > [!NOTE]
-> 如果你是拥有 Microsoft 365 邮箱Exchange Online组织的管理员，建议使用安全与合规中心中的&门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有邮箱的 Microsoft 365 组织的管理员Exchange Online，我们建议你使用 Microsoft 365 Defender 门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
-通过 Web Outlook 和 Outlook 的"报告邮件"和"报告钓鱼外接程序" (以前称为 Outlook Web App) ，用户可以轻松地将误报 (错误电子邮件报告为错误) 或漏报 (允许) 至 Microsoft 及其关联公司进行分析。
+Outlook 和 Outlook 网页版 (的"报告邮件"和"报告网络钓鱼"外接程序（以前称为 Outlook Web App) ）使用户能够轻松地将误报 (错误电子邮件报告为错误) 或漏报 (允许) 向 Microsoft 及其关联公司进行分析。
 
 Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例如，假设用户正在使用报告网络钓鱼外接程序报告许多邮件。 此信息在安全仪表板 [和其他](security-dashboard.md) 报告中显示。 组织的安全团队可以使用此信息指示可能需要更新反网络钓鱼策略。
 
@@ -43,7 +43,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 如果您是全局管理员或 Exchange Online管理员，Exchange配置为使用 OAuth 身份验证，您可以为组织启用报告网络钓鱼[外接程序](#get-and-enable-the-report-phishing-add-in-for-your-organization)。 报告网络钓鱼Add-In现在可以通过集中部署 [获得](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 - 报告网络钓鱼外接程序适用于大多数Microsoft 365订阅和以下产品：
 
@@ -61,7 +61,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 - 对于组织安装，组织需要配置为使用 OAuth 身份验证。 有关详细信息，请参阅确定加载项的集中部署 [是否适用于你的组织](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-- 管理员需为全局管理员角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 管理员需为全局管理员角色组的成员。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
 ## <a name="get-the-report-phishing-add-in-for-yourself"></a>为自己获取报告网络钓鱼外接程序
 
@@ -79,20 +79,20 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
   ![报告电子邮件的网络钓鱼外接程序Outlook](../../media/Outlook-ReportPhishing.png)
 
-- 在Outlook中，图标如下所示：
+- 在Outlook 网页版中，图标如下所示：
 
-  ![Outlook Web 报告钓鱼外接程序图标](../../media/OWA-ReportPhishing.png)
+  ![Outlook 网页版报告网络钓鱼外接程序图标](../../media/OWA-ReportPhishing.png)
 
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>为组织获取并启用报告网络钓鱼外接程序
 
 > [!NOTE]
 > 外接程序可能需要 12 个小时才能显示在组织中。
 
-1. In the Microsoft 365 admin center， go to the go to the **设置** \> **Add-ins** page at ， If you don't <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> see the **Add-in** Page， go to the **设置** \> **Integrated apps** \> **Add-ins** link on the top of the Integrated **apps** page.
+1. 在 Microsoft 365 管理中心 中，转到 **"设置** 加载项"页面，如果看不到"加载项"页面，请转到"集成应用"页面顶部的 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **"设置** \>  \> 集成应用加载项"链接。
 
 2. 选择 **页面顶部的"** 部署外接程序"，然后选择"下一步 **"。**
 
-   ![管理中心中的"服务和外接程序Microsoft 365页面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![外接程序页中的"服务和外接程序Microsoft 365 管理中心](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. 在出现的 **"部署新的外接程序"** 飞出中，查看信息，然后单击"下一步 **"。**
 
@@ -132,17 +132,17 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
   ![报告电子邮件的网络钓鱼外接程序Outlook](../../media/Outlook-ReportPhishing.png)
 
-- 在Outlook中，图标如下所示：
+- 在Outlook 网页版中，图标如下所示：
 
   ![Outlook Web 报告钓鱼外接程序图标上显示](../../media/OWA-ReportPhishing.png)
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>查看或编辑报告网络钓鱼外接程序的设置
 
-1. In the Microsoft 365 admin center， go to the go to the **设置** \> **Add-ins** page at ， If you don't <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> see the **Add-in** Page， go to the **设置** \> **Integrated apps** \> **Add-ins** link on the top of the Integrated **apps** page.
+1. 在 Microsoft 365 管理中心 中，转到 **"设置** 加载项"页面，如果看不到"加载项"页面，请转到"集成应用"页面顶部的 \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **"设置** \>  \> 集成应用加载项"链接。
 
 2. 查找并选择报告 **网络钓鱼** 外接程序。
 
-3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成时，请单击“保存”。
+3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成后，单击“**保存**”。
 
 ## <a name="view-and-review-reported-messages"></a>查看和查看报告的邮件
 

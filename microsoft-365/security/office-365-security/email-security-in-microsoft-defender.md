@@ -16,12 +16,12 @@ description: 查看和调查恶意软件钓鱼尝试。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebe76536c5ed309ca16777e85c5cdf919d0fb5c
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029881"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082992"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>使用 Microsoft Defender for Office 365 中的威胁资源管理器进行电子邮件Office 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "53029881"
 
 ## <a name="view-malware-detected-in-email"></a>查看电子邮件中检测到的恶意软件
 
-若要查看在电子邮件中检测到的恶意软件Microsoft 365技术排序，请使用 Explorer >[](threat-explorer-views.md#email--malware)的"电子邮件 (恶意软件"视图或实时检测) 。 恶意软件是默认视图，因此一旦打开资源管理器，可能会选中它。
+若要查看在电子邮件中检测到的恶意软件Microsoft 365技术排序，请使用资源管理器中的"电子邮件恶意软件 [**\>**](threat-explorer-views.md#email--malware)" (或实时检测) 。 恶意软件是默认视图，因此一旦打开资源管理器，可能会选中它。
 
 1. 在Microsoft 365 Defender门户 <https://security.microsoft.com> () ，选择"电子邮件&**协作** 资源管理器 (\> 或 **实时检测";** 此示例使用 Explorer) 。
 

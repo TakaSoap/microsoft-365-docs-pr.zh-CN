@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理员权限登录到 Microsoft 365 管理中心在云中设置组织，并管理用户和管理订阅。
-ms.openlocfilehash: eff0ab72ef3e4634e7a83d1af825bc42d11686af
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949983"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083049"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -37,7 +37,7 @@ ms.locfileid: "52949983"
 
 **如果你是使用者或具有 Microsoft 365 家庭版计划，则没有管理中心。** 如需设置 Microsoft 365，请前往 [在电脑或 Mac 上下载并安装或重新安装 Microsoft 365 或 Office 2019](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。
 
-可使用管理中心在云中设置组织，还可用它来管理用户和订阅等等。 在本文中，学习如何访问管理中心并了解可用的功能和设置。
+可以使用管理中心在云中设置您的组织、添加用户、管理域和许可证证或执行更多操作。在本文中，了解如何进入管理中心，并了解可用的功能和设置。若要了解详细信息，请参阅管理中心。
 
 观看有关管理中心的简短视频。 <br><br>
 
@@ -57,7 +57,7 @@ ms.locfileid: "52949983"
 
 可在管理中心的左侧导航中找到以下功能和设置。 在[管理员帮助](../../business-video/admin-center-overview.md)中详细了解管理员任务。
   
-|**菜单**|**它有何用途？**|
+| 菜单 | 它有何用途？ |
 |-----|-----|
 |**主页** <br/> |这是管理中心内的登陆页面。 你将看到在何处管理用户、帐单、服务运行状况和报表。  <br/> |
 |**用户** <br/> |创建和管理你组织中的用户，如员工或学生。 你还可设置其权限级别或重置其密码。  <br/> |

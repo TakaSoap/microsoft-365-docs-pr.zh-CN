@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029233"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083100"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -66,10 +66,8 @@ EOP (，即Microsoft 365 Microsoft Defender for Office 365) 的组织包含可�
 Microsoft Defender for Office 365 包含其他更高级的反网络钓鱼功能：
 
 - **Microsoft Defender for Office 365** 中的反网络钓鱼策略：为特定邮件发件人和发件人域配置模拟保护设置、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)。 有关 EOP 中的反网络钓鱼策略与 Defender for Office 365 中的反网络钓鱼策略之间的差异详细信息，请参阅 Microsoft 365 中的反网络钓鱼[策略](set-up-anti-phishing-policies.md)。
-
 - **市场活动视图**：机器学习和其他启发式技术可标识和分析针对整个服务和组织的协调网络钓鱼攻击所涉及的邮件。 有关详细信息，请参阅[Microsoft Defender for Office 365 中的市场活动视图](campaigns.md)。
-
-- **攻击模拟器**：管理员可以创建假的网络钓鱼邮件，并将其作为教育工具发送给内部用户。 有关详细信息，请参阅 Microsoft Defender for Office 365 中[的攻击模拟器](attack-simulator.md)。
+- **攻击模拟培训**：管理员可以创建假的网络钓鱼邮件，并将其作为教育工具发送给内部用户。 有关详细信息，请参阅 [模拟网络钓鱼攻击](attack-simulation-training.md)。
 
 ## <a name="other-anti-phishing-resources"></a>其他防钓鱼资源
 

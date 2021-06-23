@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625409"
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083640"
 title: 隔离邮件常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,14 +82,14 @@ sections:
   - question: >
       能否一次释放或报告多个隔离邮件？
     answer: >
-      在安全&合规中心，一次最多可以选择并释放 100 条消息。
+      在 Microsoft 365 Defender 门户中，一次可以选择并释放最多 100 条消息。
 
 
       管理员可以使用 Exchange Online PowerShell 或独立 EOP PowerShell 中的[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)和[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlet 批量查找和释放隔离邮件，并批量报告误报。
   - question: >
       搜索隔离邮件时是否支持通配符？ 能否搜索特定域的隔离邮件？
     answer: >-
-      安全与合规中心不支持&通配符。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
+      通配符在应用程序门户中不受Microsoft 365 Defender支持。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
 
 
       例如，将以下 PowerShell 代码复制到记事本，.ps1文件另存为 (，例如C:\Data\QuarantineRelease.ps1) 。

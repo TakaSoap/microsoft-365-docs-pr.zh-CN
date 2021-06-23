@@ -19,12 +19,12 @@ ms.collection:
 description: 什么是适用于 EOP Exchange Online Protection (和 Defender) 安全设置Office 365最佳实践？ 标准保护的当前建议是什么？ 如果要更加严格，应该使用什么？ 如果你还使用 Defender for Office 365？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 031dd6ffe05c700b65fb56da90a49ed194c17321
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 67d1b133e0d0ac7e622ed0bfdbfd17214608d77a
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029509"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083544"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>用于配置 EOP 和 Defender for Office 365 安全性的建议设置
 
@@ -63,24 +63,34 @@ ms.locfileid: "53029509"
 
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
+|**批量电子邮件阈值&垃圾邮件属性**||||
+|**批量电子邮件阈值** <p> _BulkThreshold_|7 |6 |4 |有关详细信息，请参阅 [批量投诉级别 (BCL) EOP](bulk-complaint-level-values.md)。|
+|_MarkAsSpamBulkMail_|`On`|`On`|`On`|此设置仅在 PowerShell 中可用。|
+|**增加垃圾邮件得分** 设置|关闭|关闭|关闭|所有这些设置都是 ASF 高级垃圾邮件筛选器 (部分) 。 有关详细信息，请参阅本文 [中的反垃圾邮件策略中的 ASF](#asf-settings-in-anti-spam-policies) 设置部分。|
+|**标记为垃圾邮件** 设置|关闭|关闭|关闭|这些设置中的大多数都是 ASF 的一部分。 有关详细信息，请参阅本文 [中的反垃圾邮件策略中的 ASF](#asf-settings-in-anti-spam-policies) 设置部分。|
+|**包含特定语言** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**关闭** <p> `$false` <p> 空白|**关闭** <p> `$false` <p> 空白|**关闭** <p> `$false` <p> 空白|我们对此设置没有具体的建议。 您可以基于业务需求阻止特定语言的邮件。|
+|**来自以下国家/地区** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**关闭** <p> `$false` <p> 空白|**关闭** <p> `$false` <p> 空白|**关闭** <p> `$false` <p> 空白|我们对此设置没有具体的建议。 您可以根据业务需求阻止来自特定国家/地区的邮件。|
+| _TestModeAction_ (测试) |**无**|**无**|**无**|此设置是 ASF 的一部分。 有关详细信息，请参阅本文 [中的反垃圾邮件策略中的 ASF](#asf-settings-in-anti-spam-policies) 设置部分。|
+|**Actions**|||||
 |**垃圾邮件** 检测操作 <p> _SpamAction_|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
 |**高可信度垃圾邮件** 检测操作 <p> _HighConfidenceSpamAction_|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
 |**网络钓鱼检测** 操作 <p> _PhishSpamAction_|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
 |**高可信度网络钓鱼** 检测操作 <p> _HighConfidencePhishAction_|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
 |**批量** 检测操作 <p> _BulkSpamAction_|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到"垃圾邮件"文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
-|**批量电子邮件阈值** <p> _BulkThreshold_|7 |6 |4 |有关详细信息，请参阅 [批量投诉级别 (BCL) EOP](bulk-complaint-level-values.md)。|
-|_MarkAsSpamBulkMail_|打开|打开|打开|此设置仅在 PowerShell 中可用。|
 |**将垃圾邮件在隔离中保留此天数** <p> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
-|**启用垃圾邮件安全提示** <p> _InlineSafetyTipsEnabled_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
+|**启用垃圾邮件安全提示** <p> _InlineSafetyTipsEnabled_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|为网络钓鱼邮件启用零时 (ZAP) 清除 <p> _PhishZapEnabled_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|为垃圾邮件启用 ZAP <p> _SpamZapEnabled_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**启用最终用户垃圾邮件通知**   选中此复选框以启用此策略的最终用户垃圾邮件通知。 <p> _EnableEndUserSpamNotifications_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**每两天发送一次最终用户 (垃圾邮件)** <p> _EndUserSpamNotificationFrequency_|3 天|3 天|3 天||
+|**允许&阻止列表**|||||
 |允许的发件人 <p> _AllowedSenders_|无|无|无||
 |允许的发件人域 <p> _AllowedSenderDomains_|无|无|无|将域添加到允许的发件人列表不是一个好主意。 攻击者可以向您发送其他将被筛选掉的电子邮件。 <p> 使用 [欺骗智能见解](learn-about-spoof-intelligence.md) 和租户 [允许/](tenant-allow-block-list.md) 阻止列表查看在组织的电子邮件域中欺骗发件人电子邮件地址或外部域中欺骗发件人电子邮件地址的所有发件人。|
 |阻止发件人 <p> _BlockedSenders_|无|无|无||
 |阻止的发件人域 <p> _BlockedSenderDomains_|无|无|无||
-|**启用最终用户垃圾邮件通知**   选中此复选框以启用此策略的最终用户垃圾邮件通知。 <p> _EnableEndUserSpamNotifications_|已禁用 <p> `$false`|已启用 <p> `$true`|已启用 <p> `$true`||
-|**每两天发送一次最终用户 (垃圾邮件)** <p> _EndUserSpamNotificationFrequency_|3 天|3 天|3 天||
-|为网络钓鱼邮件启用零时 (ZAP) 清除 <p> _PhishZapEnabled_|已启用 <p> `$true`|已启用 <p> `$true`|已启用 <p> `$true`||
-|为垃圾邮件启用 ZAP <p> _SpamZapEnabled_|已启用 <p> `$true`|已启用 <p> `$true`|已启用 <p> `$true`||
 |
+
+#### <a name="asf-settings-in-anti-spam-policies"></a>反垃圾邮件策略中的 ASF 设置
 
 反垃圾邮件策略中 (ASF) 很多高级垃圾邮件筛选器设置，这些设置正在被弃用。 有关这些功能的折旧时间线详细信息将在本文之外进行介绍。
 
@@ -107,6 +117,7 @@ ms.locfileid: "53029509"
 |**SPF 记录** ：MarkAsSpamSpfRecordHardFail (硬 _失败_) ||
 |**发件人 ID 筛选硬失败 (** _MarkAsSpamFromAddressAuthFail_) ||
 |**退 (** _MarkAsSpamNdrBackscatter)_||
+| _TestModeAction_ (测试) |对于支持"测试为操作"的 ASF 设置，可以将测试模式操作配置为"无"、添加默认 **X 标头** 文本或"发送 **Bcc** `None` (、或 `AddXHeader` `BccMessage`) "。 有关详细信息，请参阅启用 [、禁用或测试 ASF 设置](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings)。|
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 出站垃圾邮件策略设置
@@ -126,6 +137,8 @@ ms.locfileid: "53029509"
 |**设置每日邮件限制** <p> _RecipientLimitPerDay_|0|1000|800|默认值 0 表示使用服务默认值。|
 |**对达到邮件限制的用户施加的限制** <p> _ActionWhenThresholdReached_|**限制用户于第二天之前发送邮件** <p> `BlockUserForToday`|**限制用户发送邮件** <p> `BlockUser`|**限制用户发送邮件** <p> `BlockUser`||
 |**自动转发规则** <p> _AutoForwardingMode_|**自动 - 系统控制** <p> `Automatic`|**自动 - 系统控制** <p> `Automatic`|**自动 - 系统控制** <p> `Automatic`|
+|**向这些用户和组发送超过这些限制的出站邮件的副本** <p> _BccSuspiciousOutboundMail_ <p> _BccSuspiciousOutboundAdditionalRecipients_|未选定 <p> `$false` <p> 空白|未选定 <p> `$false` <p> 空白|未选定 <p> `$false` <p> 空白|我们对此设置没有具体的建议。 <p> 此设置仅适用于默认出站垃圾邮件策略。 它不能用于您创建的自定义出站垃圾邮件策略。|
+|**如果发件人因发送出站垃圾邮件被阻止，则通知这些用户和组** <p> _NotifyOutboundSpam_ <p> _NotifyOutboundSpamRecipients_|未选定 <p> `$false` <p> 空白|未选定 <p> `$false` <p> 空白|未选定 <p> `$false` <p> 空白|名为"[](../../compliance/alert-policies.md)限制发送电子邮件的用户"的默认警报策略已在用户因超出策略限制被阻止时向 **TenantAdmins** (全局管理员 **)** 组的成员发送电子邮件通知。 **强烈建议使用警报** 策略，而不是出站垃圾邮件策略中的此设置来通知管理员和其他用户。 有关说明，请参阅 [验证受限用户的警报设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。|
 |
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反恶意软件策略设置
@@ -138,11 +151,27 @@ ms.locfileid: "53029509"
 
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
-|**当邮件被隔离为恶意软件时通知收件人** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只有管理员才能释放。|
-|**启用常见附件筛选器** <p> _EnableFileFilter_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此设置根据文件类型隔离包含可执行附件的邮件，而不考虑附件内容。|
-|**启用恶意软件的零时差自动清除** <p> _ZapEnabled_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**将邮件隔离为恶意软件时通知内部发件人** <p> _EnableInternalSenderNotifications_|禁用 <p> `$false`|禁用 <p> `$false`|禁用 <p> `$false`||
-|**当邮件被隔离为恶意软件时通知外部发件人** <p> _EnableExternalSenderNotifications_|禁用 <p> `$false`|禁用 <p> `$false`|禁用 <p> `$false`||
+|**保护设置**|||||
+|**启用常见附件筛选器** <p> _EnableFileFilter_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`|此设置根据文件类型隔离包含可执行附件的邮件，而不考虑附件内容。|
+|**启用恶意软件的零时差自动清除** <p> _ZapEnabled_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**收件人通知**|||||
+|**当邮件被隔离为恶意软件时通知收件人** <p> _Action_|未选定 <p> _DeleteMessage_|未选定 <p> _DeleteMessage_|未选定 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只有管理员才能释放。|
+|**发件人通知**|||||
+|**将邮件隔离为恶意软件时通知内部发件人** <p> _EnableInternalSenderNotifications_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`||
+|**当邮件被隔离为恶意软件时通知外部发件人** <p> _EnableExternalSenderNotifications_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`||
+|**管理员通知**|||||
+|**通知管理员有关来自内部发件人的未送达邮件** <p> _EnableInternalSenderAdminNotifications_ <p> _InternalSenderAdminAddress_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`|我们对此设置没有具体的建议。|
+|**通知管理员来自外部发件人的未送达邮件** <p> _EnableExternalSenderAdminNotifications_ <p> _ExternalSenderAdminAddress_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`|我们对此设置没有具体的建议。|
+|**自定义通知**||||我们对于这些设置没有具体的建议。|
+|**使用自定义通知文本** <p> _CustomNotifications_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`||
+|**From name** <p> _CustomFromName_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**发件人地址** <p> _CustomFromAddress_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**自定义来自内部发件人的邮件的通知**||||只有在选择"将邮件隔离 **为恶意软件时** 通知内部发件人"或"通知管理员有关来自内部发件人的未送达邮件"时，才 **使用** 这些设置。|
+|**主题** <p> _CustomInternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**Message** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**自定义来自外部发件人的邮件的通知**||||只有在选择"将邮件隔离为恶意软件时通知外部发件人"或"通知管理员有关来自外部发件人的未送达邮件"时，才使用这些设置。|
+|**主题** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**Message** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP 防钓鱼策略设置
@@ -155,10 +184,13 @@ ms.locfileid: "53029509"
 
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
-|**启用欺骗智能** <p> _EnableSpoofIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**如果电子邮件被检测为欺骗邮件** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
-|**显示 () 欺骗的未经身份验证的发件人的发件人身份** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md)。|
-|**显示"via"标记** <p> _EnableViaTag_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|如果 via 标记 (chris@contoso.com 通过 fabrikam.com) 添加到"收件人"地址（如果它不同于 DKIM 签名或 **MAIL FROM** 地址中的域）。 <p> 如果此设置不可用，则问号和通过标记都受组织中"针对未经身份验证的发件人的欺骗 **(？)** 显示"设置控制。|
+|**网络钓鱼阈值&保护**|||||
+|**启用欺骗智能** <p> _EnableSpoofIntelligence_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**Actions**|||||
+|**如果邮件被检测为欺骗邮件** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
+|**显示第一个联系人安全提示** <p> _EnableFirstContactSafetyTips_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`|有关详细信息，请参阅 First [contact 安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。|
+|**显示 () 欺骗的未经身份验证的发件人的发件人身份** <p> _EnableUnauthenticatedSender_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅未经 [身份验证的发件人](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
+|**显示"via"标记** <p> _EnableViaTag_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`|如果 via 标记 (chris@contoso.com 通过 fabrikam.com) 添加到"收件人"地址（如果它不同于 DKIM 签名或 **MAIL FROM** 地址中的域）。 <p> 有关详细信息，请参阅未经 [身份验证的发件人](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender for Office 365 安全
@@ -177,47 +209,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 ### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略Office 365
 
-如前文所述，EOP 客户会获得基本的防钓鱼功能，但 microsoft Defender for Office 365 包括更多功能和控制，以帮助防止、检测和修正攻击。 若要创建和配置这些策略，请参阅在 Defender for [Office 365 中配置防钓鱼Office 365。](configure-mdo-anti-phishing-policies.md)
-
-#### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的模拟Office 365
-
-有关这些设置详细信息，请参阅 Microsoft Defender for Office 365 中的防钓鱼[策略中的模拟Office 365。](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 若要配置这些设置，请参阅在 Defender for [Office 365 中配置防钓鱼Office 365。](configure-mdo-anti-phishing-policies.md)
-
-<br>
-
-****
-
-|安全功能名称|默认值|标准|Strict|评论|
-|---|:---:|:---:|:---:|---|
-|受保护的用户 (发件人 **) ：使用户能够保护** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|关闭 <p> `$false` <p> 无|打开 <p> `$true` <p> \<list of users\>|打开 <p> `$true` <p> \<list of users\>|根据组织的不同，我们建议在 (角色) 用户。 在内部，受保护的发件人可能是 CEO、CFO 和其他高级领导。 从外部来说，受保护的发件人可以包含会员或你的委员会。|
-|受保护的用户 **：如果邮件被检测为模拟用户** <p> _TargetedUserProtectionAction_|**不应用任何操作** <p> `NoAction`|**隔离邮件** <p> `Quarantine`|**隔离邮件** <p> `Quarantine`||
-|受保护的域： **包括我拥有域** <p> _EnableOrganizationDomainsProtection_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|受保护的域： **包括自定义域** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|关闭 <p> `$false` <p> 无|打开 <p> `$true` <p> \<list of domains\>|打开 <p> `$true` <p> \<list of domains\>|根据你的组织，我们建议 (您) 但您经常交互的发件人域中添加域。|
-|受保护的域 **：如果邮件被检测为模拟域** <p> _TargetedDomainProtectionAction_|**不应用任何操作** <p> `NoAction`|**隔离邮件** <p> `Quarantine`|**隔离邮件** <p> `Quarantine`||
-|**添加受信任的发件人和域** <p> _ExcludedSenders_ <p> _ExcludedDomains_|无|无|无|根据您的组织，我们建议添加被错误地标识为模拟尝试的发件人或域。|
-|**启用邮箱智能** <p> _EnableMailboxIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**启用模拟保护的智能** <p> _EnableMailboxIntelligenceProtection_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此设置允许通过邮箱智能对模拟检测执行指定的操作。|
-|**如果邮箱智能检测到并模拟用户** <p> _MailboxIntelligenceProtectionAction_|**不应用任何操作** <p> `NoAction`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`||
-|**显示用户模拟安全提示** <p> _EnableSimilarUsersSafetyTips_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**显示域模拟安全提示** <p> _EnableSimilarDomainsSafetyTips_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**显示用户模拟异常字符安全提示** <p> _EnableUnusualCharactersSafetyTips_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|
-
-#### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的欺骗Office 365
-
-请注意，这些设置与 EOP 中的反垃圾邮件 [策略设置中的设置相同](#eop-anti-spam-policy-settings)。
-
-<br>
-
-****
-
-|安全功能名称|默认值|标准|Strict|评论|
-|---|:---:|:---:|:---:|---|
-|**启用欺骗智能** <p> _EnableSpoofIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**如果电子邮件被检测为欺骗邮件** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
-|**显示 () 欺骗的未经身份验证的发件人的发件人身份** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md)。|
-|**显示"via"标记** <p> _EnableViaTag_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|如果 via 标记 (chris@contoso.com 通过 fabrikam.com) 添加到"收件人"地址（如果它不同于 DKIM 签名或 **MAIL FROM** 地址中的域）。 <p> 如果此设置不可用，则问号和通过标记都受组织中"针对未经身份验证的发件人的欺骗 **(？)** 显示"设置控制。|
-|
+如前文所述，EOP 客户会获得基本的防钓鱼功能，Office 365 Defender for Office 365更多的功能和控制，以帮助防止、检测和修正攻击。 若要创建和配置这些策略，请参阅在 Defender for [Office 365 中配置防钓鱼Office 365。](configure-mdo-anti-phishing-policies.md)
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级Office 365
 
@@ -230,6 +222,95 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**网络钓鱼电子邮件阈值** <p> _PhishThresholdLevel_|**1 - 标准** <p> `1`|**2 - 主动** <p> `2`|**3 - 更主动** <p> `3`||
+|
+
+#### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的模拟Office 365
+
+有关这些设置详细信息，请参阅 Microsoft Defender for Office 365 中的防钓鱼[策略中的模拟Office 365。](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 若要配置这些设置，请参阅在 Defender for [Office 365 中配置防钓鱼Office 365。](configure-mdo-anti-phishing-policies.md)
+
+<br>
+
+****
+
+|安全功能名称|默认值|标准|Strict|评论|
+|---|:---:|:---:|:---:|---|
+|**网络钓鱼阈值&保护**|||||
+|**使用户能够保护 (** 的用户保护) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|未选定 <p> `$false` <p> 无|已选中 <p> `$true` <p> \<list of users\>|已选中 <p> `$true` <p> \<list of users\>|我们建议在主要角色 (用户) 邮件发件人。 在内部，受保护的发件人可能是 CEO、CFO 和其他高级领导。 从外部来说，受保护的发件人可以包含会员或你的委员会。|
+|**启用域以保护 (** 的域保护) |未选定|已选中|已选中||
+|**包含我拥有域** <p> _EnableOrganizationDomainsProtection_|关闭 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**包括自定义域** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|关闭 <p> `$false` <p> 无|已选中 <p> `$true` <p> \<list of domains\>|已选中 <p> `$true` <p> \<list of domains\>|我们建议在 (但) 但经常交互的发件人域中添加域。|
+|**添加受信任的发件人和域** <p> _ExcludedSenders_ <p> _ExcludedDomains_|无|无|无|根据您的组织，我们建议添加被错误地标识为模拟尝试的发件人或域。|
+|**启用邮箱智能** <p> _EnableMailboxIntelligence_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**启用模拟保护的智能** <p> _EnableMailboxIntelligenceProtection_|关闭 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`|此设置允许通过邮箱智能对模拟检测执行指定的操作。|
+|**Actions**|||||
+|**如果邮件被检测为模拟用户** <p> _TargetedUserProtectionAction_|**不应用任何操作** <p> `NoAction`|**隔离邮件** <p> `Quarantine`|**隔离邮件** <p> `Quarantine`||
+|**如果邮件被检测为模拟域** <p> _TargetedDomainProtectionAction_|**不应用任何操作** <p> `NoAction`|**隔离邮件** <p> `Quarantine`|**隔离邮件** <p> `Quarantine`||
+|**如果邮箱智能检测到并模拟用户** <p> _MailboxIntelligenceProtectionAction_|**不应用任何操作** <p> `NoAction`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`||
+|**显示用户模拟安全提示** <p> _EnableSimilarUsersSafetyTips_|关闭 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**显示域模拟安全提示** <p> _EnableSimilarDomainsSafetyTips_|关闭 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**显示用户模拟异常字符安全提示** <p> _EnableUnusualCharactersSafetyTips_|关闭 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|
+
+#### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的 EOP 防钓鱼策略Office 365
+
+这些设置与 EOP 中的反垃圾邮件 [策略设置中的设置相同](#eop-anti-spam-policy-settings)。
+
+欺骗设置相互关联，但"显示第一 **个联系人安全提示** 设置不依赖于欺骗设置。
+
+<br>
+
+****
+
+|安全功能名称|默认值|标准|Strict|评论|
+|---|:---:|:---:|:---:|---|
+|**网络钓鱼阈值&保护**|||||
+|**启用欺骗智能** <p> _EnableSpoofIntelligence_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**Actions**|||||
+|**如果邮件被检测为欺骗邮件** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
+|**显示第一个联系人安全提示** <p> _EnableFirstContactSafetyTips_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`|有关详细信息，请参阅 First [contact 安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。|
+|**显示 () 欺骗的未经身份验证的发件人的发件人身份** <p> _EnableUnauthenticatedSender_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅未经 [身份验证的发件人](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
+|**显示"via"标记** <p> _EnableViaTag_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`|如果 via 标记 (chris@contoso.com 通过 fabrikam.com) 添加到"收件人"地址（如果它不同于 DKIM 签名或 **MAIL FROM** 地址中的域）。 <p> 有关详细信息，请参阅未经 [身份验证的发件人](set-up-anti-phishing-policies.md#unauthenticated-sender)。|
+|
+
+### <a name="safe-attachments-settings"></a>保险箱附件设置
+
+保险箱Microsoft Defender for Office 365 中的附件包括与"附件"策略保险箱没有任何关系的全局设置，以及特定于每个"保险箱策略"的设置。 有关详细信息，请参阅 defender 中的保险箱[附件Office 365。](safe-attachments.md)
+
+#### <a name="global-settings-for-safe-attachments"></a>附件的全局保险箱设置
+
+若要配置这些设置，请参阅在[](turn-on-mdo-for-spo-odb-and-teams.md)保险箱 中打开 SharePoint、OneDrive 和 Microsoft Teams 保险箱[文档](safe-docs.md)Microsoft 365 E5。
+
+在 PowerShell 中，对这些设置使用 [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet。
+
+<br>
+
+****
+
+|安全功能名称|默认值|标准|Strict|评论|
+|---|:---:|:---:|:---:|---|
+|**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365** <p> _EnableATPForSPOTeamsODB_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
+|**打开 保险箱 客户端Office文档** <p> _EnableSafeDocs_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此功能仅对许可证Microsoft 365 E5或Microsoft 365 E5 安全性有意义。 有关详细信息，请参阅 microsoft [Defender 保险箱中的文档Office 365。](safe-docs.md)|
+|**允许用户单击"受保护的视图"，即使保险箱文件被标识为恶意文件** <p> _AllowSafeDocsOpen_|关闭 <p> `$false`|关闭 <p> `$false`|关闭 <p> `$false`|此设置与文档保险箱相关。|
+|
+
+#### <a name="safe-attachments-policy-settings"></a>保险箱附件策略设置
+
+若要配置这些设置，请参阅在 Defender [for 保险箱 中设置附件Office 365。](set-up-safe-attachments-policies.md)
+
+在 PowerShell 中，将 [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlet 用于这些设置。
+
+> [!NOTE]
+> 如前面所述，附件策略保险箱默认策略。 "默认"列中的值是新建的"附件保险箱中的默认值。
+
+<br>
+
+****
+
+|安全功能名称|默认值|标准|Strict|评论|
+|---|:---:|:---:|:---:|---|
+|**保险箱附件未知恶意软件响应** <p> _Action_|**关闭** <p> `Block`|**阻止** <p> `Block`|**阻止** <p> `Block`||
+|**重定向包含检测到的附件的附件** ： **启用重定向** <p> _重定向_ <p> _RedirectAddress_|未选中，并且未指定电子邮件地址。 <p> `$true` <p> 无|选中并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|选中并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|
+|**如果扫描保险箱超时或错误，请应用附件检测 (响应)** <p> _ActionOnError_|已选中 <p> `$true`|已选中 <p> `$true`|已选中 <p> `$true`||
 |
 
 ### <a name="safe-links-settings"></a>保险箱链接设置
@@ -248,6 +329,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
+|**阻止以下 URL** <p> _ExcludedUrls_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`|我们对此设置没有具体的建议。 <p> 有关详细信息，请参阅链接[的"阻止以下 URL"保险箱列表](safe-links.md#block-the-following-urls-list-for-safe-links)。
 |**在保险箱应用中使用Office 365链接** <p> _EnableSafeLinksForO365Clients_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|使用保险箱 iOS 和 Android Office 365 应用支持 (移动) 链接。 有关详细信息，请参阅保险箱[应用的链接Office 365设置](safe-links.md#safe-links-settings-for-office-365-apps)。|
 |**不跟踪用户在应用中单击受保护链接Office 365时间** <p> _TrackClicks_|开 <p> `$false`|关 <p> `$true`|关闭 <p> `$true`|关闭此设置 (_将 TrackClicks_ 设置为) 在受支持的应用中跟踪Office 365 `$true` 单击。|
 |**不允许用户在应用中单击以访问Office 365 URL** <p> _AllowClickThrough_|打开 <p> `$false`|打开 <p> `$false`|打开 <p> `$false`|打开此设置 (将 _AllowClickThrough_ 设置为) 阻止在受支持的应用中单击到 `$false` Office 365 URL。|
@@ -268,54 +350,18 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
-|**选择邮件中未知潜在恶意 URL 的操作** <p> _IsEnabled_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**选择针对网站内未知或潜在恶意 URL Microsoft Teams** <p> _EnableSafeLinksForTeams_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**对指向文件的可疑链接应用实时 URL 扫描** <p> _ScanUrls_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**等待 URL 扫描完成，然后再传递邮件** <p> _DeliverMessageAfterScan_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**Apply 保险箱 Links to email messages sent within the organization** <p> _EnableForInternalSenders_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
-|**不跟踪用户单击** <p> _DoNotTrackUserClicks_|关闭 <p> `$false`|关闭 <p> `$false`|关闭 <p> `$false`|关闭此设置后 (_DoNotTrackUserClicks_ 设置为) `$false` 用户单击。|
-|**不允许用户单击至初始 URL** <p> _DoNotAllowClickThrough_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|打开此设置 (_DoNotAllowClickThrough_ 设置为) `$true` 阻止单击访问原始 URL。|
-|
-
-### <a name="safe-attachments-settings"></a>保险箱附件设置
-
-保险箱Microsoft Defender for Office 365 中的附件包括与"附件"策略保险箱没有任何关系的全局设置，以及特定于每个"保险箱策略"的设置。 有关详细信息，请参阅 defender 中的保险箱[附件Office 365。](safe-attachments.md)
-
-#### <a name="global-settings-for-safe-attachments"></a>附件的全局保险箱设置
-
-若要配置这些设置，请参阅在[](turn-on-mdo-for-spo-odb-and-teams.md)保险箱 中打开 SharePoint、OneDrive 和 Microsoft Teams 保险箱[文档](safe-docs.md)Microsoft 365 E5。
-
-在 PowerShell 中，对这些设置使用 [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) cmdlet。
-
-<br>
-
-****
-
-|安全功能名称|默认值|标准|Strict|评论|
-|---|:---:|:---:|:---:|---|
-|**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365** <p> _EnableATPForSPOTeamsODB_|打开 <p> `$true`|打开 <p> `$true`||
-|**打开 保险箱 客户端Office文档** <p> _EnableSafeDocs_|打开 <p> `$true`|打开 <p> `$true`|此设置仅适用于许可证Microsoft 365 E5 Microsoft 365 E5 安全性许可证。 有关详细信息，请参阅 microsoft [Defender 保险箱中的文档Office 365。](safe-docs.md)|
-|**允许用户单击"受保护的视图"，即使保险箱文件被标识为恶意文件** <p> _AllowSafeDocsOpen_|关闭 <p> `$false`|关闭 <p> `$false`|此设置与文档保险箱相关。|
-|
-
-#### <a name="safe-attachments-policy-settings"></a>保险箱附件策略设置
-
-若要配置这些设置，请参阅在 Defender [for 保险箱 中设置附件Office 365。](set-up-safe-attachments-policies.md)
-
-在 PowerShell 中，将 [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlet 用于这些设置。
-
-> [!NOTE]
-> 如前面所述，附件策略保险箱默认策略。 "默认"列中的值是新建的"附件保险箱中的默认值。
-
-<br>
-
-****
-
-|安全功能名称|默认值|标准|Strict|评论|
-|---|:---:|:---:|:---:|---|
-|**保险箱附件未知恶意软件响应** <p> _Action_|阻止 <p> `Block`|阻止 <p> `Block`|阻止 <p> `Block`||
-|**检测时重定向附件** ： **启用重定向** <p> _重定向_ <p> _RedirectAddress_|关闭，未指定电子邮件地址。 <p> `$true` <p> 无|打开，并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|打开，并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|
-|**如果恶意软件扫描附件出现时间过或出现错误，则应用上述选择。** <p> _ActionOnError_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
+|**保护设置**|||||
+|**选择邮件中未知潜在恶意 URL 的操作** <p> _IsEnabled_|**关闭** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`||
+|**选择针对网站内未知或潜在恶意 URL Microsoft Teams** <p> _EnableSafeLinksForTeams_|**关闭** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|自 2020 年 3 月起，此功能为预览版，仅对 Microsoft Teams Technology Adoption Program (成员可用或) 。|
+|**对指向文件的可疑链接应用实时 URL 扫描** <p> _ScanUrls_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**等待 URL 扫描完成，然后再传递邮件** <p> _DeliverMessageAfterScan_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**Apply 保险箱 Links to email messages sent within the organization** <p> _EnableForInternalSenders_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`||
+|**不跟踪用户单击** <p> _DoNotTrackUserClicks_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`|关闭此设置后 (_DoNotTrackUserClicks_ 设置为) `$false` 用户单击。|
+|**不允许用户单击访问原始 URL** <p> _DoNotAllowClickThrough_|未选定 <p> `$false`|已选中 <p> `$true`|已选中 <p> `$true`|打开此设置 (_DoNotAllowClickThrough_ 设置为) `$true` 阻止单击访问原始 URL。|
+|**在通知和警告页面上显示组织品牌** <p> _EnableOrganizationBranding_|未选定 <p> `$false`|未选定 <p> `$false`|未选定 <p> `$false`|我们对此设置没有具体的建议。 <p> 在启用此设置之前，需要按照自定义组织的 Microsoft 365[主题](../../admin/setup/customize-your-organization-theme.md)中的说明上载公司徽标。|
+|**不重写以下 URL** <p> _DoNotRewriteUrls_|未选定 <p> `$false`|未选定 <p> `$true`|未选定 <p> `$true`|我们对此设置没有具体的建议。 有关详细信息，请参阅链接策略中的"不重写[保险箱 URL"列表](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)。|
+|**通知**|||||
+|**如何通知用户？**|**使用默认通知文本**|**使用默认通知文本**|**使用默认通知文本**|我们对此设置没有具体的建议。 <p> You can select **Use custom notification text (** _CustomNotificationText_) to enter customized notification text to use. You can also select **Use Microsoft 翻译工具 for automatic localization** (_UseTranslatedNotificationText_) to translate the custom notification text into the user's language.
 |
 
 ## <a name="related-articles"></a>相关文章

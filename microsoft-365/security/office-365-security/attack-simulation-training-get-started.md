@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解如何使用攻击模拟培训在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 182d3d3c1d3b7c0c43caa8a809e993933707af00
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878780"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082896"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>开始使用攻击模拟培训
 
@@ -40,21 +40,21 @@ ms.locfileid: "52878780"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com> 。 攻击模拟培训位于电子邮件和 **协作** \> **攻击模拟培训中**。 若要直接转到攻击模拟培训，请打开 <https://security.microsoft.com/attacksimulator> 。
+- 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com>。 攻击模拟培训位于电子邮件和 **协作** \> **攻击模拟培训中**。 若要直接转到攻击模拟培训，请打开 <https://security.microsoft.com/attacksimulator> 。
 
 - 有关跨不同订阅提供攻击模拟培训Microsoft 365，请参阅 Microsoft Defender for Office 365 [service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- 您需在安全与合规&或Azure Active Directory分配权限，然后才能执行本文中的过程。 具体来说，你需要是组织管理、安全 **管理员** 或以下角色之一的成员： 
+- 您需在 Microsoft 365 Defender 门户或 Azure Active Directory 分配权限，然后才能执行本文中的过程。 具体来说，你需要是组织管理、安全 **管理员** 或以下角色之一的成员： 
   - **攻击模拟器管理员**：创建和管理攻击模拟活动的所有方面。
   - **攻击模拟器有效负载作者**：创建管理员稍后可以启动的攻击负载。
 
-  有关详细信息，请参阅安全[与合规中心&权限或](permissions-in-the-security-and-compliance-center.md)[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  有关详细信息，请参阅管理门户[中的权限Microsoft 365 Defender或](permissions-microsoft-365-security-center.md)[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 - 没有用于攻击模拟培训的相应 PowerShell cmdlet。
 
 - 攻击模拟和培训相关的数据与其他客户数据存储在一起，Microsoft 365服务。 有关详细信息，请参阅[Microsoft 365位置](../../enterprise/o365-data-locations.md)。 攻击模拟可用于以下区域：NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN 和 EUR。
 
-- 自 2021 年 6 月 15 日起，攻击模拟培训在 GCC。 如果你的组织拥有 Office 365 G5 GCC 或 Microsoft Defender for Office 365 (计划 2) 政府版，可以使用 Microsoft 365 Defender 门户中的攻击模拟培训在你的组织中运行实际的攻击方案，如本文所述。 攻击模拟培训尚未在高GCC DoD 环境中提供。
+- 自 2021 年 6 月 15 日起，攻击模拟培训在 GCC。 如果你的组织拥有 Office 365 G5 GCC 或 Microsoft Defender for Office 365 (计划 2) 政府版，可以使用 Microsoft 365 Defender 门户中的攻击模拟培训在组织中运行实际攻击方案，如本文所述。 攻击模拟培训尚未在高GCC DoD 环境中提供。
 
 > [!NOTE]
 > 攻击模拟培训将一部分功能作为试用版向 E3 客户提供。 试用版包含使用凭据获取有效负载的能力，以及选择"ISA 网络钓鱼"或"批量市场网络钓鱼"培训体验的能力。 E3 试用版产品/服务中没有任何其他功能。

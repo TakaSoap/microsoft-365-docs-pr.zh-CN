@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: d3acf24d12b72a92af4246afdf11f67e01c45b2c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4275339e048a4197590c91c5904733ce99b22f9f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022495"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083436"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在部署中配置自动调查和Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风
 
 电子邮件中的安全设置Office 365保护电子邮件和内容。 若要查看或更改这些设置，请按照防止 [威胁中的指南操作](../office-365-security/protect-against-threats.md)。
 
-1. 在Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () ，转到策略 **&规则** \> **威胁策略"**。
+1. 在Microsoft 365 Defender门户 <https://security.microsoft.com> () ，转到策略 **&规则** \> **威胁策略"**。
 
 2. 确保已配置以下所有策略。 若要获取帮助和建议，请参阅 [防止威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
    - [反恶意软件](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -82,9 +82,9 @@ Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风
    - [安全链接](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [反垃圾邮件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. 请确保[Microsoft Defender for Office 365 for SharePoint、OneDrive](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)和 Microsoft Teams 已打开。
+3. 请确保[保险箱、SharePoint OneDrive](../office-365-security/mdo-for-spo-odb-and-teams.md)和Microsoft Teams附件。
 
-4. 确保 [电子邮件保护的零时差自动](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 清除有效。
+4. 确保["零时差"自动清除 (ZAP) 中Exchange Online](../office-365-security/zero-hour-auto-purge.md)有效。
 
 5.  (可选步骤。) 查看Office 365[策略中的](../../compliance/alert-policies.md) [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) Microsoft 365 合规中心 () 。 多个默认警报策略都属于威胁管理类别。 其中一些警报可以触发自动调查和响应。 若要了解更多信息，请参阅默认 [警报策略](../../compliance/alert-policies.md#default-alert-policies)。
 

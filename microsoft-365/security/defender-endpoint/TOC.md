@@ -241,7 +241,7 @@
 #### [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
 #### [启用攻击面减少规则](enable-attack-surface-reduction.md)
 #### [自定义减少攻击面规则](customize-attack-surface-reduction.md)
-#### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.md)
+#### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.yml)
 #### [查看攻击面减少活动](event-views.md)
 #### [为攻击面减少使用审核模式](audit-windows-defender.md)
 

@@ -18,12 +18,12 @@ description: 了解如何识别和修正非法同意授权攻击Microsoft 365。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029857"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083004"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测和修正非法同意授予
 
@@ -50,9 +50,9 @@ ms.locfileid: "53029857"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此攻击的迹象的步骤
 
-1. 打开 **Microsoft 365 Defender门户**， <https://security.microsoft.com> 然后选择"审核 **"。**
+1. 打开 **Microsoft 365 Defender门户**， <https://security.microsoft.com> 然后选择审核。 或者，若要直接转到审核 **页面** ，请使用 <https://security.microsoft.com/auditlogsearch> 。
 
-2. 在打开 **的"** 审核"页上，验证"搜索 **"选项卡是否** 被选中，然后配置以下设置：
+2. 在" **审核** "页上，验证"搜索 **"** 选项卡是否被选中，然后配置以下设置：
    - **日期和时间范围**
    - **活动**：验证 **是否选择了"显示所有活动** 的结果"。
 
@@ -137,7 +137,7 @@ ms.locfileid: "53029857"
 
 ## <a name="determine-the-scope-of-the-attack"></a>确定攻击范围
 
-完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在 **搜索审核日志搜索**[Microsoft 365 Defender。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在门户 中 **审核日志** 搜索Microsoft 365 Defender [搜索](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 
 > [!IMPORTANT]
 > [在攻击](../../compliance/enable-mailbox-auditing.md)[之前，必须为](../../compliance/turn-audit-log-search-on-or-off.md)管理员和用户启用邮箱审核和活动审核才能获取此信息。

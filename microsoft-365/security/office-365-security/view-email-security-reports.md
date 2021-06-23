@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何查找和使用 Microsoft 365 Defender 门户中提供的电子邮件安全报告。
+description: 管理员可以了解如何查找和使用电子邮件门户中提供的电子邮件Microsoft 365 Defender报告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029530"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083520"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 门户中查看电子邮件安全报告
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029530"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Microsoft 365 中的电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能）如何保护 <https://security.microsoft.com> 你的组织。 如果你拥有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在 Microsoft 365 Defender 门户中查看这些报告，方式为：查看报告电子邮件&协作 电子邮件& \>  \> **协作报告**。 若要直接转到"电子邮件& **协作报告"** 页，请打开 <https://security.microsoft.com/emailandcollabreport> 。
+Microsoft 365 Defender 门户中提供了各种报告，可帮助你查看电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能 <https://security.microsoft.com> ）如何保护你的组织。 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在 Microsoft 365 Defender 门户中查看这些报告，& \> **电子邮件**& \> **协作报告**。 若要直接转到"电子邮件& **协作报告"** 页，请打开 <https://security.microsoft.com/emailandcollabreport> 。
 
-![Microsoft 365 Defender 门户中的"电子邮件&协作报告"页面](../../media/email-collaboration-reports.png)
+![电子邮件&门户中的"电子邮件Microsoft 365 Defender报告"页](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
-> "电子邮件和协作报告 **"&一些报告** 需要 Microsoft Defender for Office 365。 有关这些报告的信息，请参阅在 [Microsoft 365](view-reports-for-mdo.md)Defender 门户中查看适用于 Office 365 的 Defender 报告。
+> 电子邮件和协作报告页面上 **的一些&需要** Microsoft Defender 进行Office 365。 有关这些报告的信息，请参阅查看 Office 365[门户中的 Microsoft 365 Defender 报告](view-reports-for-mdo.md)。
 >
-> 与邮件流相关的报告现在位于 Exchange 管理中心 (EAC) 。 有关这些报告详细信息，请参阅新 Exchange 管理中心 [中的邮件流报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> 与邮件流相关的报告现在位于 EAC Exchange管理 () 。 有关这些报告详细信息，请参阅新邮件管理中心Exchange[报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="compromised-users-report"></a>遭到入侵的用户报告
 
 > [!NOTE]
-> 此报告适用于具有 Exchange Online 邮箱的 Microsoft 365 组织。 它不适用于独立 Exchange Online Protection (EOP) 组织。
+> 此报告适用于Microsoft 365邮箱Exchange Online报告。 它不适用于独立 EOP Exchange Online Protection (EOP) 组织。
 
 "**遭到入侵的用户**"报告显示过去 7 天内标记为"可疑"或"受限"的用户帐户数量。 其中任一状态的帐户存在问题，甚至受到威胁。 通过频繁使用，可以使用报告来发现可疑或受限帐户的峰值甚至趋势。 有关遭到入侵的用户详细信息，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 聚合视图显示过去 90 天的数据，而详细信息视图显示最近 30 天的数据。
 
-若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在"**电子邮件&协作报告**"页上，找到 **"遭到** 入侵的用户"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/CompromisedUsers> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"遭到** 入侵的用户"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/CompromisedUsers> 。
 
 在"**遭到入侵** 的用户"页上，可以同时筛选图表和详细信息表，方法是单击"筛选器"，在出现的标注中选择以下一个或多个值：
 
@@ -75,29 +75,29 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 - **用户 ID**
 - **Action**
 
-## <a name="exchange-transport-rule-report"></a>Exchange 传输规则报告
+## <a name="exchange-transport-rule-report"></a>Exchange传输规则报告
 
-**Exchange 传输规则** 报告显示邮件流规则对组织中 (传输规则) 传入和传出邮件的影响。
+**"Exchange传输** 规则"报告显示邮件流规则对 (传入和传出邮件) 传输规则的影响。
 
-若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在"**电子邮件&协作报告**"页上，找到 **"Exchange 传输** 规则"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/ETRRuleReport> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，Exchange **传输规则"，** 然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/ETRRuleReport> 。
 
-!["电子邮件和协作报告"页面上的"Exchange 传输&小组件](../../media/transport-rule-report-widget.png)
+![Exchange"电子邮件和协作报告"页上&传输规则小组件](../../media/transport-rule-report-widget.png)
 
-在 **"Exchange 传输规则报告** "页上，以下各节介绍了可用的图表和数据。
+在 **"Exchange** 规则报告"页上，以下各节介绍了可用的图表和数据。
 
 ### <a name="chart-breakdown-by-direction"></a>按方向细分图表
 
-![Exchange 传输规则报告中 Exchange 传输规则的方向视图](../../media/transport-rule-report-etr-direction-view.png)
+![传输规则Exchange中传输规则Exchange视图](../../media/transport-rule-report-etr-direction-view.png)
 
 如果选择" **按方向细分图表"，** 则以下图表可用：
 
-- **按 Exchange 传输规则查看数据**：受邮件流规则影响的入站和出站邮件的数量。
-- **按 DLP Exchange 传输规则查看数据**：受DLP 和邮件流规则中的数据丢失防护 () 邮件的数量。
+- **按以下传输Exchange** 查看数据：受邮件流规则影响的入站和出站邮件的数量。
+- **按 DLP 或** Exchange规则查看数据：受 DLP和邮件流规则中数据丢失防护 (入站) 出站邮件的数量。
 
 下图下的详细信息表中显示了以下信息：
 
 - **Date**
-- **DLP 策略** (**仅通过 DLP Exchange 传输规则** 查看) 
+- **DLP 策略** (**仅通过 DLP Exchange传输规则查看**) 
 - **传输规则**
 - **主题**
 - **发件人地址**
@@ -115,18 +115,18 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 ### <a name="chart-breakdown-by-severity"></a>按严重性分类的图表
 
-![Exchange 传输规则报告中 Exchange 传输规则的严重性视图](../../media/transport-rule-report-etr-severity-view.png)
+![Exchange传输规则报告中Exchange规则的严重性视图](../../media/transport-rule-report-etr-severity-view.png)
 
 如果选择" **按严重性划分图表细分"，** 则以下图表可用：
 
-- **按 Exchange 传输规则查看数据**：高严重性、中等严重性和 **低严重性邮件的数量**。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅 Mail [flow rule actions in Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **按以下传输Exchange** 查看数据：高严重性、中等严重性和 **低严重性邮件** 的数量。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅邮件[流规则操作Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **按 DLP Exchange 传输规则** 查看数据：受 DLP邮件流规则影响的高严重性、中等严重性和低严重性邮件的数量。 
+- **按 DLP 查看数据Exchange** 传输规则：受 DLP 邮件流规则影响的高严重性、中等严重性和低严重性邮件的数量。 
 
 下图下的详细信息表中显示了以下信息：
 
 - **Date**
-- **DLP 策略** (**仅通过 DLP Exchange 传输规则** 查看) 
+- **DLP 策略** (**仅通过 DLP Exchange传输规则查看**) 
 - **传输规则**
 - **主题**
 - **发件人地址**
@@ -149,9 +149,9 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你了解 Micro
 
 ## <a name="mailflow-status-report"></a>邮件流状态报告
 
-**邮件流状态** 报告是一个智能报告，它显示有关传入和传出电子邮件、垃圾邮件检测、恶意软件、标识为"良好"的电子邮件的信息，以及边缘上允许或阻止的电子邮件的信息。 这是包含边缘保护信息的唯一报告，它显示了在 Exchange Online Protection (EOP) 允许进入服务之前阻止的电子邮件数。 必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为五个不同的邮件，而不是一封邮件。
+**邮件流状态** 报告是一个智能报告，它显示有关传入和传出电子邮件、垃圾邮件检测、恶意软件、标识为"良好"的电子邮件的信息，以及边缘上允许或阻止的电子邮件的信息。 这是包含边缘保护信息的唯一报告，它只显示 EOP Exchange Online Protection (允许进入服务进行评估之前阻止的电子邮件) 。 必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为五个不同的邮件，而不是一封邮件。
 
-若要查看 Microsoft 365 Defender 门户中的报告，请转到报告电子邮件 \> **&协作** \> **电子邮件&报告**。 在"**电子邮件&协作报告**"页上，找到 **"邮件流状态摘要**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/mailflowStatusReport> 。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"邮件流状态摘要**"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/mailflowStatusReport> 。
 
 !["电子邮件和协作报告"页上的"邮件流&摘要"小组件](../../media/mail-flow-status-report-widget.png)
 
@@ -848,9 +848,9 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **安全读者**
 - **全局读者**
 
-有关详细信息，请参阅应用程序[门户中Microsoft 365 Defender权限](permissions-in-the-security-and-compliance-center.md)。
+有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 

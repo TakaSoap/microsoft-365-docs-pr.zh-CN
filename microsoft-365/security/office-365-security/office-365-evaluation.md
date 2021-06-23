@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab0f05c45afa6a4ad66c9fc1bf58e69505632171
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624989"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083664"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
@@ -37,10 +37,10 @@ ms.locfileid: "52624989"
 
 [Microsoft Defender for Office 365](defender-for-office-365.md)评估体验旨在消除设备和环境配置的复杂性，以便你可以专注于评估 Microsoft Defender for Office 365。 使用评估模式，可以评估发送到Exchange Online的所有邮件，而无需将 MX 记录指向 Microsoft。 此功能仅适用于电子邮件保护，Office Word、SharePoint 或 Teams。
 
-如果你还没有支持 Microsoft Defender for Office 365 的许可证，你可以启动为期[30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)天的免费评估，并测试 Office 365 安全&合规中心 (中的功能 https://protection.office.com/homepage) 。 你可以轻松完成快速设置，并在必要时轻松将其关闭。
+如果你还没有支持 Microsoft Defender for Office 365 的许可证，可以开始为期[30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)天的免费评估，并测试 Microsoft 365 Defender 门户中的功能 <https://security.microsoft.com> 。 你可以轻松完成快速设置，并在必要时轻松将其关闭。
 
 > [!NOTE]
-> 如果你在统一的 Microsoft 365 安全门户 (security.microsoft.com) 可以在此处启动 Defender for Office 365 评估：Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies。
+> 如果你正在 Microsoft 365 Defender 门户 () 中，可以在此处启动 Defender for Office 365 评估： <https://security.microsoft.com> **电子邮件 & Collaboration** Policies \> **& Rules** \> **Threat Policies** \> **Others** 部分 \> **评估模式**。
 
 ## <a name="how-the-evaluation-works"></a>评估的工作原理
 
@@ -50,9 +50,9 @@ ms.locfileid: "52624989"
 
 作为设置的一部分，评估模式还配置 [连接器的增强筛选](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来提高筛选准确度，否则当邮件通过 Defender for Office 365 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还可以提高 EOP 策略Exchange Online Protection (EOP) 反垃圾邮件和防钓鱼策略的筛选准确度。
 
-为连接器启用的增强筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分的 MDO 策略设置是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建传输规则来绕过所有 EOP 筛选，将"垃圾邮件可信度" (SCL) 设置为 -1。 有关详细信息，请参阅使用 [EAC 创建设置邮件 SCL 的邮件](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   流规则。
+增强的连接器筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分设置的 MDO 策略是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建邮件流规则 (也称为传输规则) 来绕过所有 EOP 筛选，将邮件的垃圾邮件可信度 (SCL) 设置为 -1。 有关详细信息[，请参阅](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)使用邮件流规则 (SCL) 邮件中的Exchange Online   级别。
 
-设置评估模式后，你每天将更新一个报告，其中最多包含 90 天的数据，用于量化实施策略时可能阻止的邮件 (例如删除、发送到垃圾邮件、隔离) 。 针对所有 Defender 生成针对 Office 365 和 EOP 检测的报告。 它们根据检测技术聚合 (例如，模拟) 并可以按时间范围进行筛选。 此外，还可以按需创建邮件报告，以创建自定义透视表，或者使用威胁资源管理器深入探究邮件。
+设置评估模式后，你每天将更新一个报告，其中最多包含 90 天的数据，用于量化实施策略时可能阻止的邮件 (例如删除、发送到垃圾邮件、隔离) 。 针对所有 Defender 生成针对 Office 365 和 EOP 检测的报告。 它们根据检测技术聚合 (例如，模拟) 并可以按时间范围进行筛选。 此外，还可以按需创建邮件报告，以使用资源管理器创建自定义透视表或深入探究邮件。
 
 借助简化的设置体验，你可以专注于：
 
@@ -63,7 +63,7 @@ ms.locfileid: "52624989"
 
 ## <a name="before-you-begin"></a>准备工作
 
-### <a name="licensing"></a>许可
+### <a name="licensing"></a>授权
 
 若要访问评估，你将需要满足许可要求。 以下任一许可证都可用：
 
@@ -78,7 +78,7 @@ ms.locfileid: "52624989"
 
 若要获取 Microsoft Defender for Office 365 试用版许可证，你需要具有帐单管理员角色 **或****全局管理员角色**。 向具有全局管理员角色的人请求权限。 [了解订阅和许可证](../../commerce/licenses/subscriptions-and-licenses.md)
 
-获得适当角色后，建议的路径是，通过进入"帐单""购买服务"，在 Microsoft 365 管理中心获取适用于 Office 365 (计划 2) 的 Microsoft Defender > 试用许可证。 试用版包含 25 个许可证的 30 天免费试用版。 [获取 Microsoft Defender for Office 365 (计划 2) ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)试用版。
+获得适当角色后，建议的路径是，通过进入"帐单""购买服务"，获取 Microsoft 365 管理中心 中适用于 Office 365 (计划 2) 的 Microsoft Defender >试用许可证。 试用版包含 25 个许可证的 30 天免费试用版。 [获取 Microsoft Defender for Office 365 (计划 2) ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)试用版。
 
 你将有一个 30 天窗口，其评估用于监视并报告高级威胁。 如果你想要完整的 Defender for Office 365功能，还可以选择购买付费订阅。
 
@@ -141,11 +141,11 @@ URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当�
 
 ## <a name="get-started-with-the-evaluation"></a>评估入门
 
-从三个访问Office 365安全与合规Office 365中心& Microsoft Defender (https://protection.office.com/homepage) 评估设置卡：
+从以下三个Office 365访问点中的 Microsoft 365 Defender 门户 () Microsoft Defender <https://security.microsoft.com>) 评估设置卡：
 
-- 威胁管理>仪表板
-- 威胁管理>策略
-- 仪表板>报表
+- **终结点** \>**漏洞管理** \>**仪表板** <https://security.microsoft.com/tvm_dashboard> () 
+- **电子邮件&协作** \>**策略&规则** \>**威胁策略 ()** <https://security.microsoft.com/threatpolicy>
+- **报告** \>**电子邮件&协作** \>**电子邮件&协作报告 ()** <https://security.microsoft.com/emailandcollabreport>
 
 ## <a name="setting-up-the-evaluation"></a>设置评估
 
@@ -159,9 +159,9 @@ URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当�
 
 你的 Microsoft Defender for Office 365评估报告每天生成一次。 可能需要 24 小时才能填充数据。
 
-### <a name="exchange-rules-optional"></a>Exchange规则 (可选) 
+### <a name="exchange-mail-flow-rules-optional"></a>Exchange邮件流规则 (可选) 
 
-如果您已有网关，启用评估模式将激活连接器的增强筛选。 这将通过更改传入发件人 IP 地址提高筛选准确度。 这可能会更改筛选裁定，如果不绕过筛选Exchange Online Protection可能会改变某些邮件的可传递性。 在这种情况下，您可能需要暂时绕过筛选来分析影响。 若要绕过，请导航到 Exchange 管理中心，并创建 SCL -1 策略 (如果你还没有 SCL -1) 。 有关规则组件及其工作方式的详细信息，请参阅 mail flow rules (transport rules) in Exchange Online。
+如果已有网关，启用评估模式将激活连接器的增强筛选。 此功能通过更改传入发件人 IP 地址提高筛选准确度。 此功能可能会更改筛选裁定，如果不绕过筛选，Exchange Online Protection某些邮件的可传递性。 在这种情况下，您可能需要暂时绕过筛选来分析影响。 若要绕过筛选，请打开 Exchange 管理中心 (EAC) ，并创建一个邮件流规则，如果还没有邮件，则邮件的 SCL (为 <https://admin.exchange.microsoft.com> -1) 。 有关说明，请参阅使用[邮件流规则将](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)邮件的垃圾邮件可信度设置为 (中的) SCL Exchange Online。
 
 ## <a name="evaluate-capabilities"></a>评估功能
 

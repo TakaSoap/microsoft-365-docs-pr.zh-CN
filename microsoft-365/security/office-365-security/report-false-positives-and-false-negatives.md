@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何使用"报告邮件"功能在Outlook中报告误报和漏报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 84a5b697f8a4b46cf79c542485bfafb396328f5c
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 458e7d16e2614e7bac3a0aac5a4310e6353ab569
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789239"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082920"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>在 Outlook 中报告误报和漏报
 
@@ -30,20 +30,20 @@ ms.locfileid: "52789239"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是拥有 Microsoft 365 邮箱Exchange Online组织的管理员，建议使用安全与合规中心中的&门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有邮箱的 Microsoft 365 组织的管理员Exchange Online，我们建议你使用 Microsoft 365 Defender 页面。  有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 在 Microsoft 365 组织中，邮箱位于 Exchange Online 或本地邮箱使用混合新式身份验证，你可以提交误报 (被阻止或发送到垃圾邮件文件夹) 的误报 (以及传递到) 至 Exchange Online Protection (EOP) 的不需要的电子邮件或网络钓鱼。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 - 为了获得最佳用户提交体验，请使用报告邮件外接程序或报告网络钓鱼外接程序。
 
   > [!IMPORTANT]
   > 报告垃圾邮件或网络钓鱼的内置体验Outlook用户提交[策略](./user-submission.md)。 我们建议改为使用报告邮件外接程序或报告网络钓鱼外接程序。
 
-- 报告邮件外接程序和"报告网络钓鱼"外接程序适用于 web、iOS、Android 和桌面 Outlook 的所有平台 (Outlook、iOS、Android 和桌面) 。
+- 报告邮件外接程序和 Report Phishing 外接程序适用于 Outlook、iOS、Android 和桌面 (Outlook 网页版平台中的) 。
 
-- 如果你是拥有多个邮箱Exchange Online管理员，请使用安全与合规&门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+- 如果你是拥有邮箱的组织的管理员，Exchange Online门户中的提交Microsoft 365 Defender门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 - 您可以配置为直接向 Microsoft 和/或您指定的邮箱发送邮件。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "52789239"
 1. 选择 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中选择"报告邮件"，然后选择"**垃圾邮件**"或"网络钓鱼 **"。**
 
    ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
-   
+
    ![报告邮件 - 垃圾邮件和网络钓鱼](../../media/report-message-junk-phishing.png)
 
 2. 选定的邮件将发送给 Microsoft 进行分析，并：
@@ -72,7 +72,7 @@ ms.locfileid: "52789239"
 1. 选择 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中选择"报告邮件"，然后选择"非 **垃圾邮件"。**
 
    ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
-   
+
    ![报告邮件 - 非垃圾邮件](../../media/report-message-not-junk.png)
 
 2. 选定的邮件将被发送到 Microsoft 进行分析，并移动到收件箱或其他任何指定的文件夹。
@@ -81,5 +81,5 @@ ms.locfileid: "52789239"
 
 若要查看用户报告给 Microsoft 的邮件，可以使用以下选项：
 
-- 使用管理员提交门户。 有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。
+- 使用 **应用门户** 中的Microsoft 365 Defender页面。 有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。
 - 创建邮件流规则 (也称为传输规则) 传输规则，以发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看向 Microsoft 报告的用户](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

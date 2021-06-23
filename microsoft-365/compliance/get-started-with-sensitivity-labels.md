@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 550a1a84df88340de14caff08284ef6a8cadc9e9
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b5e6c8d6d2972b6aa050e3805c51327a6cf1058c
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022482"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055083"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -90,7 +90,7 @@ ms.locfileid: "53022482"
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |将敏感度标签扩展到 Power BI：启用此功能后，可以在 Power BI 中应用和查看标签，并在数据保存在服务之外时保护数据。|[如何在 Power BI 中应用敏感度标签](/power-bi/admin/service-security-sensitivity-label-overview)|
-|监视和了解在我的组织中如何使用灵敏度标签|[了解你的数据 - 数据分类概述](data-classification-overview.md) <br /><br /> [数据分类入门](data-classification-overview.md)|
+|监视和了解在我的组织中如何使用灵敏度标签|[了解数据分类](data-classification-overview.md)|
 |将灵敏度标签扩展到第三方应用和服务|[Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
 |在 Azure Blob 存储、Azure 文件存储、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中跨内容扩展敏感性标签|[在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label) |
 

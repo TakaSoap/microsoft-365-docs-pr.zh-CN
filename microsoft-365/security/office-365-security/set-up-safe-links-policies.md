@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for 保险箱 中查看、创建、修改和删除保险箱链接策略和全局 保险箱 链接Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933115"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082752"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置链接策略Office 365
 
@@ -46,14 +46,14 @@ ms.locfileid: "52933115"
 >
 > 管理员应考虑链接的不同配置保险箱设置。 可用选项之一是在"链接"中包括保险箱信息。 此功能使 *安全运营团队* 能够调查潜在用户泄露、采取纠正措施并限制代价高昂的泄露。
 
-可以在 保险箱 Defender Microsoft 365或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置链接Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Microsoft Defender for Office 365 加载项订阅的组织) 。
+您可以在 保险箱 门户中或在 PowerShell (Exchange Online Microsoft 365 Defender PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置 Microsoft 365 链接Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱，但使用 Microsoft Defender for Office 365 加载项订阅的组织) 。
 
 链接策略的基本保险箱包括：
 
 - 安全链接策略：打开 保险箱 链接保护，启用实时 URL 扫描，指定是否在传递邮件之前等待实时扫描完成，启用内部邮件扫描，指定是否跟踪用户单击 URL，并指定是否允许用户单击原始 URL。
 - **安全链接规则**：指定策略应用于 (的优先级和收件人) 。
 
-当你在 defender 门户中管理链接保险箱，这两个元素Microsoft 365并不明显：
+当你在网站门户中管理链接保险箱时，这两个元素Microsoft 365 Defender明显：
 
 - 创建链接保险箱策略时，实际上是同时对两者使用相同的名称创建安全链接规则和相关安全链接策略。
 - 修改邮件保险箱策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改安全链接规则。 所有其他设置修改关联的安全链接策略。
@@ -68,14 +68,14 @@ ms.locfileid: "52933115"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您需获得权限，然后才能执行本文中的过程：
-  - 若要创建、修改和删除 保险箱 链接策略，你需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。  
+  - 若要创建、修改和删除 保险箱 链接策略，您需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。 
   - 若要对链接策略保险箱只读访问权限，您需要是全局读者或安全读者 **角色组的成员**。 
 
-  有关详细信息，请参阅 Microsoft 365 Defender 门户[中的权限](permissions-in-the-security-and-compliance-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
+  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   >
-  > - 将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   . - **Exchange Online** 中的"仅查看组织管理"[](/Exchange/permissions-exo/permissions-exo#role-groups)角色组还授予对该功能的只读访问权限。
 
 - 有关推荐的链接策略保险箱，请参阅保险箱[链接策略设置。](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
@@ -86,7 +86,7 @@ ms.locfileid: "52933115"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>使用 Microsoft 365 Defender 门户创建保险箱链接策略
 
-在 保险箱 Defender 门户中创建自定义Microsoft 365链接策略会同时创建安全链接规则和相关的安全链接策略，对二者使用相同的名称。
+在 保险箱 门户中创建自定义链接Microsoft 365 Defender将同时创建安全链接规则和相关的安全链接策略，对二者使用相同的名称。
 
 1. 在 Microsoft 365 Defender 门户中，转到"策略&**规则**""威胁策略策略"部分 \>  \> 保险箱 \> **链接"。**
 
@@ -139,7 +139,7 @@ ms.locfileid: "52933115"
 6. 在 **出现的"** 通知"页上，为"如何通知用户？"选择下列值 **之一**：
    - **使用默认通知文本**
    - **使用自定义通知文本**：如果选择此值，将显示以下设置：
-     - **使用 Microsoft 翻译工具进行自动本地化**
+     - **使用Microsoft 翻译工具进行自动本地化**
      - **自定义通知文本**：在此框中输入自定义通知文本。
 
    完成后，单击“**下一步**”。
@@ -167,7 +167,7 @@ ms.locfileid: "52933115"
 
 2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。
 
-3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文前面的使用 Microsoft 365 Defender 门户[创建保险箱链接](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)策略部分。  
+3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文前面的使用 Microsoft 365 Defender[门户创建保险箱链接](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)策略部分。  
 
 若要启用或禁用策略或设置策略优先级顺序，请参阅以下部分。
 
@@ -195,7 +195,7 @@ ms.locfileid: "52933115"
 
 **注意**：
 
-- 在 Microsoft 365 Defender 门户中，你只能在创建后更改保险箱链接策略的优先级。 在 PowerShell 中，您可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则或规则) 。
+- 在Microsoft 365 Defender门户中，只能在创建"链接保险箱策略的优先级。 在 PowerShell 中，您可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则或规则) 。
 - 保险箱按照链接策略的显示顺序处理 (优先级值为 0 时) 。  有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
 1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **保险箱 Links**.
@@ -240,11 +240,11 @@ ms.locfileid: "52933115"
 >
 > - 你可以创建新的安全链接规则，并为其分配现有的未关联的安全链接策略。 安全链接规则不能与多个安全链接策略关联。
 >
-> - 可以在 PowerShell 中的新安全链接策略上配置以下设置，这些设置在 Microsoft 365 Defender 门户中不可用，除非创建策略：
+> - 可以在 PowerShell 中的新安全链接策略上配置以下设置，这些设置在 Microsoft 365 Defender创建策略之前在 Microsoft 365 Defender 门户中不可用：
 >   - 在 `$false` **New-SafeLinksRule** cmdlet (上创建禁用的新策略) 。
 >   - 在 _\<Number\>_ **New-SafeLinksRule** cmdlet cmdlet (中) 策略的优先级) 。
 >
-> - 在将策略分配给安全链接规则之前，在 PowerShell 中新建的安全链接策略Microsoft 365 Defender 门户中不可见。
+> - 在 PowerShell 中新建的安全链接策略在 Microsoft 365 Defender门户中不可见，除非将策略分配给安全链接规则。
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>步骤 1：使用 PowerShell 创建安全链接策略
 
@@ -353,7 +353,7 @@ Get-SafeLinksRule -Identity "Contoso Executives"
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>使用 PowerShell 修改安全链接策略
 
-如果 **Set-SafeLinksPolicy** cmdlet 没有 Name 参数，则 (在 PowerShell 中重命名安全链接) 。 当你在 defender 保险箱中重命名Microsoft 365链接策略时，你仅重命名安全链接 _规则_。
+如果 **Set-SafeLinksPolicy** cmdlet 没有 Name 参数，则 (在 PowerShell 中重命名安全链接) 。 当你在 保险箱 门户中重命名Microsoft 365 Defender链接策略时，你仅重命名安全链接 _规则_。
 
 在 PowerShell 中修改安全链接策略的唯一额外注意事项是 _DoNotRewriteUrls_ 参数的可用语法 ("不重写以下 [URL"](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) 列表) ：
 
@@ -465,13 +465,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 有关语法和参数的详细信息，请参阅 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
-若要验证保险箱是否正在扫描邮件，请查看可用的 Microsoft Defender Office 365报告。 有关详细信息，请参阅查看[Defender for Office 365](view-reports-for-mdo.md)报告和使用 Microsoft 365 [Defender 门户中的资源管理器](threat-explorer.md)。
+若要验证保险箱是否正在扫描邮件，请查看可用的 Microsoft Defender Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender[门户中的使用资源管理器](threat-explorer.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
 若要验证是否成功创建、修改或删除了链接保险箱，请执行下列任一步骤：
 
-- 在 Microsoft 365 Defender 门户中，转到"策略 **"&"** 威胁策略保险箱 \>  \> **链接"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
+- In the Microsoft 365 Defender portal， go to **Policies & rules** Threat policies \> **保险箱** \> **Links**. 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
 

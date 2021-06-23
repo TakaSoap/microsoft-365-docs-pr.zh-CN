@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Microsoft Teams 管理系统中集成Learning类
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053247"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083239"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>将Microsoft Teams类与管理
 
@@ -63,8 +63,6 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 3. 选择 **"注册 LTI1.3/优势工具"。**
 
 4. 输入提供的第一个客户端 ID (或 Microsoft) ，**然后选择提交。**
-
-   ![LTI 注册工具，使用字段输入客户端 ID](../media/lti-media/register-tool.png)
 
 5. 查看预填充的设置，并确保工具状态标记为已批准。
 

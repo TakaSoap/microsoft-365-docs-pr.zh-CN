@@ -18,12 +18,12 @@ ms.collection:
 description: 了解威胁跟踪器，包括新的值得注意的跟踪器，可帮助组织随时掌握安全问题。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d7585df980fca322a3bc5ce28f2ef2f7f53284e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 0a5db47ccd3e1686b6b49174cb9b3c24256b8cbd
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929993"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083040"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -50,10 +50,10 @@ ms.locfileid: "52929993"
 
 跟踪器只是使用 Microsoft Defender for Office 365计划[2 获得的许多功能中的一部分](office-365-ti.md)。 威胁跟踪器包括 [笔记跟踪](#noteworthy-trackers)器、 [趋势跟踪器](#trending-trackers)、 [跟踪](#tracked-queries)查询和 [保存的查询](#saved-queries)。
 
-若要查看和使用你组织的威胁跟踪器，请转到 Microsoft 365 Defender 门户 () 并选择电子邮件& <https://security.microsoft.com> **协作** \> **威胁跟踪程序**。
+若要查看和使用组织的威胁跟踪器，请转到 Microsoft 365 Defender 门户 () 并选择电子邮件& <https://security.microsoft.com> **协作** \> **威胁跟踪程序**。
 
 > [!NOTE]
-> 若要使用威胁跟踪器，你必须是全局管理员、安全管理员或安全读者。 请参阅[Defender 门户Microsoft 365中的权限](permissions-in-the-security-and-compliance-center.md)。
+> 若要使用威胁跟踪器，你必须是全局管理员、安全管理员或安全读者。 请参阅[网站门户Microsoft 365 Defender权限](permissions-microsoft-365-security-center.md)。
 
 ### <a name="noteworthy-trackers"></a>值得注意的跟踪器
 
@@ -89,13 +89,13 @@ ms.locfileid: "52929993"
 
 请记住，你始终可以通过单击右下角的"反馈"按钮Microsoft 365此功能或其他安全功能的反馈。 
 
-![Microsoft 365Defender 门户](../../media/microsoft-365-defender-portal.png)
+![Microsoft 365 Defender门户](../../media/microsoft-365-defender-portal.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>跟踪器和 Microsoft Defender for Office 365
 
 借助我们值得注意的威胁，我们重点介绍了附件 检测到的高级保险箱[威胁](safe-attachments.md)。 如果你是 E5 Office 365 企业版，并且你未将 Microsoft Defender 用于[Office 365，](defender-for-office-365.md)你应该是 - 它包含在你的订阅中。 Defender for Office 365提供价值，即使你有其他安全工具使用你的服务筛选电子邮件Office 365流。 但是，反[垃圾邮件和保险箱](safe-links.md)链接功能在主要电子邮件安全解决方案通过邮件Office 365。
 
-![Microsoft Defender for Office 365 defender Microsoft 365中的应用](../../media/policies.png)
+![Microsoft Defender for Office 365门户中的Microsoft 365 Defender Defender](../../media/policies.png)
 
 在当今的威胁威胁中，仅运行传统的反恶意软件扫描意味着你未受到充分保护，无法抵御攻击。 如今更复杂的攻击者使用常用的工具创建新的、模糊的或延迟的攻击，传统基于签名的反恶意软件引擎无法识别这些攻击。 "保险箱 附件"功能会接收电子邮件附件，在虚拟环境中触发附件，以确定它们是安全附件还是恶意附件。 此触发过程在虚拟计算机环境中打开每个文件，然后监视打开文件后会发生什么情况。 无论是 PDF、压缩文件还是 Office 文档，恶意代码都可以隐藏在文件中，仅在攻击者在计算机上打开它时激活。 通过触发和分析电子邮件流中的文件，defender for Office 365 功能将基于行为、文件信誉和大量启发式规则找到这些威胁。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52929993"
 
 - 如果你的组织还没有这些威胁Office 365和响应功能，请参阅我们如何获得威胁Office 365和响应[功能？。](office-365-ti.md)
 
-- 确保安全团队分配了正确的角色和权限。 你必须是全局管理员，或者必须在 Defender 门户中分配安全管理员或Microsoft 365清除角色。 请参阅[Defender 门户Microsoft 365中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 确保安全团队分配了正确的角色和权限。 您必须是全局管理员，或者必须在安全门户中分配安全管理员或搜索Microsoft 365 Defender角色。 请参阅[网站门户Microsoft 365 Defender权限](permissions-microsoft-365-security-center.md)。
 
 - 观察新的跟踪器显示在你的Microsoft 365环境中。 如果可用，你将在此处找到跟踪 [器](https://https://security.microsoft.com/)。 转到电子邮件 **&协作** \> **威胁跟踪程序**。
 

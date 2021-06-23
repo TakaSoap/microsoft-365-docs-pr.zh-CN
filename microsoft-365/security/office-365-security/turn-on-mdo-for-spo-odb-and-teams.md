@@ -20,12 +20,12 @@ description: 管理员可以了解如何为 保险箱、OneDrive 和 Microsoft T
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933007"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083088"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>为 SharePoint、OneDrive 和 Microsoft Teams 启用安全附件
 
@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams�
 
 - 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到"附件 **保险箱"页**，请打开 <https://security.microsoft.com/safeattachmentv2> 。
 
-- 若要为 SharePoint、OneDrive 和 Microsoft Teams 启用 保险箱 附件，你需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员。  有关详细信息，请参阅 Defender 门户[中Microsoft 365权限](permissions-in-the-security-and-compliance-center.md)。
+- 若要为 SharePoint、OneDrive 和 Microsoft Teams 启用 保险箱 附件，你需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员。   有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
 - 若要SharePoint Online PowerShell 阻止用户下载恶意文件，你需要是 Azure AD 中全局管理员[](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)或 SharePoint[管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)角色的成员。
 
@@ -51,9 +51,9 @@ Microsoft Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams�
 
 - 设置最多允许 30 分钟生效。
 
-## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>步骤 1：使用 Microsoft 365 Defender 门户为 保险箱、SharePoint 和 OneDrive 启用Microsoft Teams
+## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>步骤 1：使用Microsoft 365 Defender门户打开保险箱、SharePoint和OneDrive附件Microsoft Teams
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略 **"&"** 威胁策略 \>  \> 策略"部分保险箱 \> **附件"。**
+1. 在Microsoft 365 Defender门户中，转到"附件"&**策略"** \>  \> 中的"策略保险箱 \> **策略"部分**。
 
 2. 在 **"保险箱"页上**，单击"**全局设置"。**
 
@@ -61,7 +61,7 @@ Microsoft Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams�
 
    将"打开 **Office 365 for SharePoint、OneDrive** 和 Microsoft Teams 的 Defender"切换开关移动到"打开"右""打开"以打开 ![ SharePoint、OneDrive 和 Microsoft Teams 的 ](../../media/scc-toggle-on.png) 保险箱 附件。
 
-   完成时，请单击“保存”。
+   完成后，单击“**保存**”。
 
 ### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 为保险箱、SharePoint、OneDrive和Microsoft Teams
 
@@ -94,9 +94,9 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>步骤 3 (推荐) 使用 Microsoft 365 Defender 门户为检测到的文件创建警报策略
 
-你可以创建一个警报策略，当 保险箱 附件SharePoint、OneDrive和Microsoft Teams检测到恶意文件时Microsoft Teams通知你和其他管理员。 若要了解有关警报的信息，请参阅在 defender 门户Microsoft 365[活动警报](../../compliance/create-activity-alerts.md)。
+你可以创建一个警报策略，当 保险箱 附件SharePoint、OneDrive和Microsoft Teams检测到恶意文件时Microsoft Teams通知你和其他管理员。 若要了解有关警报的信息，请参阅在活动门户Microsoft 365 Defender[警报](../../compliance/create-activity-alerts.md)。
 
-1. 在 defender Microsoft 365门户中，转到策略 **&规则** \> **警报策略** 或打开 <https://security.microsoft.com/alertpolicies> 。
+1. 在 Microsoft 365 Defender门户中，转到策略 **&警报策略** \> **或** 打开 <https://security.microsoft.com/alertpolicies> 。
 
 2. 在"**警报策略"** 页上，单击"**新建警报策略"。**
 
@@ -142,7 +142,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - 若要验证是否成功为 保险箱、SharePoint、OneDrive 和 Microsoft Teams 启用Microsoft Teams，请执行下列任一步骤：
 
-  - 在 Microsoft 365 Defender 门户中，转到策略 **& 规则** 威胁策略部分 保险箱 附件，选择全局设置，并验证启用 \>  \> Office 365 \> for  **SharePoint、OneDrive** 和 Microsoft Teams 设置的 Defender 的值。
+  - 在 Microsoft 365 Defender 门户中，转到策略 **& 规则** 威胁策略部分 保险箱 附件，选择全局设置，并验证启用 \>  \> Office 365 \> for  **SharePoint、OneDrive** 和 Microsoft Teams 的 Defender 设置的值。
 
   - 在 Exchange Online PowerShell 中，运行以下命令来验证属性设置：
 
@@ -161,8 +161,8 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
   有关语法和参数的详细信息，请参阅 [Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)。
 
 - 若要验证是否成功为检测到的文件配置了警报策略，请使用以下任一步骤：
-  - 在 Microsoft 365 Defender 门户中，转到策略 **&** \> **规则 警报策略** 选择警报策略， \> 并验证设置。
-  - 在Microsoft 365 Defender 门户 PowerShell 中，将 替换为警报策略的名称 \<AlertPolicyName\> ，运行以下命令并验证属性值：
+  - 在 Microsoft 365 Defender门户中，转到"策略 **"&"** 警报策略"选择 \>  \> 警报策略，然后验证设置。
+  - 在Microsoft 365 Defender PowerShell 中，将 替换为警报策略的名称 \<AlertPolicyName\> ，运行以下命令并验证属性值：
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

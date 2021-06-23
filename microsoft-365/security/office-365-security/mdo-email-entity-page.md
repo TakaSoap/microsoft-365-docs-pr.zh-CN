@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 E5、P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+description: Microsoft Defender for Office 365 E5 P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
+ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878456"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083258"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -34,26 +34,16 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 ## <a name="reach-the-email-entity-page"></a>访问电子邮件实体页面
 
-通过现有安全&中心或新的 Microsoft 365 Defender 门户，你可以查看和使用电子邮件实体页面。
+电子邮件实体页面在 Microsoft 365 defender 门户中 <https://security.microsoft.com> () ，&**协作** \> **资源管理器。** 或者，若要直接转到资源管理器 **页面** ，请使用 <https://security.microsoft.com/threatexplorer> 。
 
-<br>
+在 **资源管理器** 中，选择要调查的电子邮件的主题。 该邮件的电子邮件飞出顶部将显示一个金色条。 此新页面邀请显示"尝试使用包含丰富数据的新电子邮件实体页面..."。 选择以查看新页面。
 
-****
-
-|居中|URL|导航|
-|---|---|---|
-|安全与合规中心|<https://protection.office.com>|威胁管理 \> 资源管理器|
-|Microsoft 365Defender 门户|<https://security.microsoft.com>|电子邮件&协作 \> 资源管理器|
-|
-
-在威胁资源管理器中，选择要调查的电子邮件的主题。 该邮件的电子邮件飞出顶部将显示一个金色条。 此新页面邀请显示"尝试使用包含丰富数据的新电子邮件实体页面..."。 选择以查看新页面。
-
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="你将看到一个金色横幅，标题为&quot;*尝试使用包含丰富数据的新电子邮件实体页面*&quot;，以导航到新体验。":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="你将看到一个金色横幅，标题为&quot;*尝试使用包含丰富数据的新电子邮件实体页面*&quot;以导航到新体验。":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="此电子邮件实体页面的图形重点介绍您将看到的标题。请注意，电子邮件头显示在此处。":::
 
 > [!NOTE]
-> 查看和使用此页面所需的权限与查看威胁资源管理器的权限相同。 管理员必须是全局管理员或全局读者或安全管理员或安全读者的成员。
+> 查看和使用此页面所需的权限与查看资源管理器 **的权限相同**。 管理员必须是全局管理员或全局读者、安全管理员或安全读者的成员。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
 ## <a name="read-the-email-entity-page"></a>读取电子邮件实体页面
 
@@ -63,7 +53,7 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
     :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="突出显示左侧的电子邮件实体页面的图形。此处包含有关邮件传递的标题和事实。":::
 
-2. 右上角是可通过电子邮件采取的操作。 通过资源管理器执行的任何操作也将通过电子邮件实体页面提供。
+2. 右上角是可通过电子邮件采取的操作。 通过资源管理器执行的任何 **操作** 也将通过电子邮件实体页面提供。
 
     :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="此时突出显示 *right* 侧的电子邮件实体页面的图形。此处包含&quot;电子邮件预览&quot;和&quot;转到隔离&quot;等操作。":::
 
@@ -75,7 +65,7 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 实体页面顶部的选项卡将允许您高效地调查电子邮件。
 
-1. **时间线**：根据威胁资源管理器时间线 (电子邮件时间线视图) 电子邮件上发生的传递后事件的原始传递。 对于没有传递后操作的电子邮件，视图在日程表视图中显示原始传递行。 "零时差自动清除" (ZAP) 、修正、URL 单击、等源中的事件（如系统、管理员和用户）在此处显示，按发生顺序显示。
+1. **时间线**：每个资源管理器时间线 (电子邮件时间线视图) 电子邮件上发生的传递后事件的原始传递。 对于没有传递后操作的电子邮件，视图在日程表视图中显示原始传递行。 "零时差自动清除" (ZAP) 、修正、URL 单击、等源中的事件（如系统、管理员和用户）在此处显示，按发生顺序显示。
 2. **分析**：分析显示可帮助管理员深入分析电子邮件的字段。 对于管理员需要了解有关检测、发件人/收件人和电子邮件身份验证详细信息的详细信息的情况，他们应当使用"分析"选项卡。此页上的"相关实体"下也提供了附件和 URL 的链接。 此处对附件和已识别的威胁进行编号，单击将直接进入"附件"和"URL"页面。 此选项卡还具有"查看邮件头"选项 *，用于显示电子邮件头*。 为清楚起见，管理员可以将电子邮件头中的详细信息与主面板上的信息并排比较。
 3. **附件**：这将检查电子邮件中的附件，以及附件上找到的其他详细信息。 当前显示的附件数限制为 10 个。 请注意，发现恶意附件的触发详细信息也在此处显示。
 4. **URL：** 此选项卡列出了电子邮件中的 URL，并包含有关 URL 的其他详细信息。 目前，URL 的数量限制为 10 个，但这 10 个已优先显示 *恶意 URL。* 优先顺序可节省时间和猜测工作。 此处还将显示被发现为恶意并触发的 URL。
@@ -87,10 +77,10 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>云邮箱的电子邮件预览
 
-如果邮件仍存在于云中，管理员可以预览云邮箱中的电子邮件。 如果管理员、 (或用户) 或 ZAP (对) 执行软删除操作，电子邮件将不再存在于云位置。 在这种情况下，管理员将无法预览这些特定邮件。 已丢弃或传递失败的电子邮件从未实际进入邮箱。 因此，管理员也将无法预览这些电子邮件。
+如果邮件仍存在于云中，管理员可以预览云邮箱中的电子邮件。 如果管理员、 (或用户) 或 ZAP (对) 执行软删除操作，电子邮件将不再存在于云位置。 在这种情况下，管理员将无法预览这些特定邮件。 已丢弃或传递失败的电子邮件永远不会进入邮箱。 因此，管理员也将无法预览这些电子邮件。
 
 > [!WARNING]
-> 预览电子邮件需要一个称为 ***Preview** _ 的特殊角色，才能分配给管理员。 可以通过访问 _ *Permissions & roles** > Email & **collaboration roles** in security.microsoft.com 或 **permissions** in *protection.office.com* 添加 *此角色*。 将 ***Preview*** 角色添加到任何角色组，或添加允许组织中管理员在威胁资源管理器中工作的角色组的副本。
+> 预览电子邮件需要一个称为预览的特殊 **角色**。 可以将此角色添加到 Microsoft 365 Defender 门户中，如 & 门户中的电子邮件Microsoft 365 Defender[协作角色中所述](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)。 你可能需要在那里创建一个新的"电子邮件&协作"角色组，将 **"** 预览"角色添加到该新角色组，或将 **"** 预览"角色添加到角色组，该角色组允许贵组织的管理员在资源管理器中 **工作**。
 
 ### <a name="detonation-details"></a>触发详细信息
 
@@ -99,6 +89,7 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 用户会看到其电子邮件中发现的已知恶意附件或 URL 的丰富触发详细信息，这些附件或 URL 已针对其特定租户触发。 它将包含触发链、触发摘要、屏幕截图和观察行为详细信息，帮助客户了解附件或 URL 被视为恶意并触发的原因。
 
 1. *触发链*。 单个文件或 URL 触发可以触发多个爆炸。 爆炸链跟踪触发路径，包括导致裁定的原始恶意文件或 URL，以及受爆炸影响的其他所有文件或 URL。 这些 URL 或附加的文件可能不会直接存在于电子邮件中，但包含该分析对于确定发现文件或 URL 是恶意文件的原因非常重要。  
+
     > [!NOTE]
     > 如果发现链接到顶级项目的任何实体都未发现问题或触发，这可能只显示顶级项目。
 
@@ -119,7 +110,7 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 *电子邮件详细信息*：深入了解"分析"选项卡中提供的电子邮件 *所需的* 详细信息。
 
-- *Exchange传输规则 (ETR* 或邮件流规则) ：这些规则适用于传输层的邮件，并优先于网络钓鱼和垃圾邮件裁定。 只能在管理中心内创建和修改Exchange，但如果任何 ETR 适用于邮件，则此处将显示 ETR 名称和 GUID。 用于跟踪的有用信息。
+- Exchange传输规则 (也称为邮件流规则或 *ETR) ：* 这些规则适用于传输层的邮件，并优先于网络钓鱼和垃圾邮件裁定。 只能在管理中心内创建和修改Exchange，但如果任何 ETR 适用于邮件，则此处将显示 ETR 名称和 GUID。 用于跟踪的有用信息。
 
 - 系统 *覆盖：这是* 根据威胁和检测技术要求覆盖系统 (给定的传递位置来对邮件的传递位置进行) 。
 

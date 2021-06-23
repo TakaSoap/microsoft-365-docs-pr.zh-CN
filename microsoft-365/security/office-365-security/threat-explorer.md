@@ -19,12 +19,12 @@ description: 使用安全中心中的资源管理器Microsoft 365实时检测，
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029581"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083220"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -534,21 +534,21 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-必须具有适用于 [Office 365](defender-for-office-365.md) 的 Microsoft Defender，以使用资源管理器或实时检测。
+你必须拥有[Microsoft Defender Office 365](defender-for-office-365.md)使用资源管理器或实时检测。
 
-- 资源管理器包含在 Defender for Office 365 计划 2 中。
-- 实时检测报告包含在 Defender for Office 365 计划 1 中。
-- 计划为应受 Office 365 Defender 保护的所有用户分配许可证。 资源管理器和实时检测显示许可用户的检测数据。
+- 资源管理器包含在计划 2 Office 365 Defender 中。
+- 实时检测报告包含在计划 1 的 Defender Office 365中。
+- 计划为应受 Defender for Office 365 保护的所有用户分配Office 365。 资源管理器和实时检测显示许可用户的检测数据。
 
 若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如授予安全管理员或安全读者的权限。
 
 - 对于安全&合规中心，必须分配以下角色之一：
 
   - 组织管理
-  - 安全 (可以在 Azure Active Directory 管理中心管理中心 <https://aad.portal.azure.com> () 
+  - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
   - 安全读取者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心或 <https://admin.protection.outlook.com/ecp/> Exchange Online PowerShell () 分配以下 [角色之一](/powershell/exchange/exchange-online-powershell)：
+- For Exchange Online， you must have one of the following roles assigned in either the Exchange admin center <https://admin.protection.outlook.com/ecp/> () or Exchange Online [PowerShell：](/powershell/exchange/exchange-online-powershell)
 
   - 组织管理
   - 仅查看组织管理
@@ -557,15 +557,15 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 若要详细了解角色和权限，请参阅以下资源：
 
-- [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
+- [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)
 - [Exchange Online 中的功能权限](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测之间的差异
 
-- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Office 365 计划 2 的 Defender 中可用。
+- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Defender for Office 365计划 2 中可用。
 - 实时检测报告允许你实时查看检测。 威胁资源管理器也这样做，但它还提供了给定攻击的其他详细信息。
 - " *所有电子邮件* "视图在威胁资源管理器中可用，但在实时检测报告中不可用。
-- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅 [Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅[Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>其他文章
 

@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 使用威胁资源管理器或 Microsoft 365 Defender 门户中的实时检测来有效调查和响应威胁。
+description: 使用威胁资源管理器或 Microsoft 365 Defender中的实时检测来有效调查和响应威胁。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930080"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083556"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 威胁资源管理器中的威胁搜寻
 
@@ -42,7 +42,7 @@ ms.locfileid: "52930080"
 
 如果你的组织拥有适用于 Office 365 的 [Microsoft Defender，](defender-for-office-365.md)并且你拥有 [](#required-licenses-and-permissions)权限，可以使用 **资源管理器** 或实时检测来检测和修正威胁。 
 
-In the **Microsoft 365 Defender portal，** go to **Email & collaboration**， and then choose **Explorer**.
+在 Microsoft 365 Defender **门户中**，转到"电子邮件 **&协作"，** 然后选择"资源管理器 **"。**
 
 <br>
 
@@ -68,7 +68,7 @@ In the **Microsoft 365 Defender portal，** go to **Email & collaboration**， a
 
 Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理器 *(（* 也称为计划 2 中的 *资源管理器) 搜寻* 工具）的子集。 在本系列文章中，大多数示例都是使用完整的威胁资源管理器创建的。 管理员应在实时检测中测试任何步骤，以查看其应用位置。
 
-若要打开资源管理器工具，请转到Microsoft 365 **Defender 门户** 电子邮件  >  **&协作**  >  **资源管理器"。** 默认情况下，你将进入"恶意软件 **"页面，** 但使用"视图"下拉列表熟悉你的选项。 如果你搜寻网络钓鱼，或进入威胁活动，请选择这些视图。
+若要打开资源管理器工具，请转到Microsoft 365 Defender  >  **电子邮件&资源管理器**  >  **"。** 默认情况下，你将进入"恶意软件 **"页面，** 但使用"视图"下拉列表熟悉你的选项。 如果你搜寻网络钓鱼，或进入威胁活动，请选择这些视图。
 
 > [!div class="mx-imgBorder"]
 > ![威胁资源管理器中的视图下拉列表](../../media/view-drop-down.png)
@@ -267,11 +267,11 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 
 若要详细了解角色和权限，请参阅以下资源：
 
-- [Microsoft 365 Defender 门户中的权限](permissions-in-the-security-and-compliance-center.md)
+- [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)
 - [Exchange Online 中的功能权限](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md) 
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams](mdo-for-spo-odb-and-teams.md) 

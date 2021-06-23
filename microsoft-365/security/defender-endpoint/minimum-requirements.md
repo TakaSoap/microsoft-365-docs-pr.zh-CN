@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccff6abcfcd1a2da32a8e1614a2de45afed69aef
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 52fa73774933ba90e8ca92dd1b337f983f5446c5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842994"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082908"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -39,7 +39,7 @@ ms.locfileid: "52842994"
 
 > [!TIP]
 > - 了解 Defender for Endpoint： Defender [for Endpoint Tech](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)Community 中的最新增强功能。
-> - Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读 [：MITRE ATT 中的见解&基于 CK 的评估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
+> - Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读[：Insights MITRE ATT&基于 CK 的评估。](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 ## <a name="licensing-requirements"></a>许可要求
 
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 - Windows 10 企业版E5
 - Windows 10 教育版 A5
 - Microsoft 365 E5 (M365 E5) 包括 Windows 10 企业版 E5
-- Microsoft 365A5 (M365 A5) 
+- Microsoft 365 A5 (M365 A5) 
 - Microsoft 365 E5 安全性
 - Microsoft 365 A5 安全性
 - Microsoft Defender for Endpoint
@@ -214,7 +214,7 @@ Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并
 
 如果你的组织通过组策略Microsoft Defender 防病毒方法关闭已载入的设备，则必须从该组策略中排除已载入的设备。
 
-如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
+如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
 
 > [!NOTE]
 > 常规组策略不适用于防篡改保护，当防篡改保护打开Microsoft Defender 防病毒将忽略对组设置所做的更改。

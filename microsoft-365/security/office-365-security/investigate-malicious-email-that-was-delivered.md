@@ -20,12 +20,12 @@ description: 了解如何使用威胁调查和响应功能查找和调查恶意�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029787"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083352"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>调查在邮件中传递的恶意Microsoft 365
 
@@ -51,7 +51,7 @@ ms.locfileid: "53029787"
 
 - 您的组织为反垃圾邮件、反恶意软件、防钓鱼等定义了策略。 请参阅[防止威胁Office 365。](protect-against-threats.md)
 
-- 你是全局管理员，或者你已分配有安全管理员或搜索和清除角色，Microsoft 365 Defender角色。 有关详细信息，请参阅应用程序[门户中Microsoft 365 Defender权限](permissions-microsoft-365-security-center.md)。 对于一些操作，还必须分配有"预览"角色。
+- 你是全局管理员，或者你已分配有安全管理员或搜索和清除角色，Microsoft 365 Defender角色。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。 对于一些操作，还必须分配有"预览"角色。
 
 ### <a name="preview-role-permissions"></a>预览角色权限
 
@@ -73,7 +73,7 @@ ms.locfileid: "53029787"
 >
 > 全局管理员角色分配有Microsoft 365 管理中心 () ，安全管理员和安全读者角色分配在 <https://admin.microsoft.com> <https://security.microsoft.com> Microsoft 365 Defender () 。 若要了解有关角色和权限的信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)。
 
-我们知道预览和下载电子邮件是敏感活动，因此为这些活动启用了审核功能。 管理员在电子邮件上执行这些活动后，会生成相同的审核日志，可在 Office 365 安全与合规中心 & <https://protection.office.com> () 。 转到"**搜索**  >  **审核日志搜索"，** 并筛选"搜索"部分中的管理员名称。 筛选出的结果将显示活动 **AdminMailAccess**。 选择一行以查看有关预览或下载的电子邮件的详细信息部分的详细信息。
+我们知道预览和下载电子邮件是敏感活动，因此为这些活动启用了审核功能。 管理员在电子邮件上执行这些活动后，将针对相同内容生成审核日志，并可在 Microsoft 365 Defender 门户 <https://security.microsoft.com> () 。 转到"**审核** \> **搜索"** 选项卡，在"用户"框中筛选管理员名称。 筛选出的结果将显示活动 **AdminMailAccess**。 选择一行以查看有关预览或下载的电子邮件的详细信息部分的详细信息。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>查找已送达的可疑电子邮件
 

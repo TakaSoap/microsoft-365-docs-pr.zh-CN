@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解向 Microsoft 报告好坏消息和文件以进行分析的不同方法。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b062c9529364e9fe26133fd1c039affcb8b7011
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a89ea8a41a31c9544284566fade0e603d48af759
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689069"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082812"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>向 Microsoft 报告邮件和文件
 
@@ -42,14 +42,14 @@ ms.locfileid: "52689069"
 |方法|说明|
 |---|---|
 |[使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft](admin-submission.md)|对于拥有邮箱的组织中管理员Exchange Online报告 (在独立 EOP) 。|
-|[启用报告邮件或报告钓鱼外接程序](enable-the-report-message-add-in.md)|适用于Outlook web Outlook上 (以前称为"Outlook Web App) "的 Outlook Web App) 。 <p> 根据你的订阅，用户通过外接程序报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) (AIR) [结果](air-view-investigation-results.md)、用户报告的邮件报告以及威胁资源管理器中[提供。](threat-explorer-views.md#email--submissions) [](view-email-security-reports.md#user-reported-messages-report) <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
+|[启用报告邮件或报告钓鱼外接程序](enable-the-report-message-add-in.md)|适用于Outlook和Outlook 网页版 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户通过外接程序报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) (AIR) [结果](air-view-investigation-results.md)、用户报告的邮件报告以及[资源管理器](threat-explorer-views.md#email--submissions)中提供。 [](view-email-security-reports.md#user-reported-messages-report) <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
 |[在 Outlook 中报告误报和漏报](report-false-positives-and-false-negatives.md)|提交误报 (阻止或发送到垃圾邮件文件夹) 的误报 (以及使用"报告邮件"功能传递到收件箱) Exchange Online Protection (EOP) 的误报或钓鱼邮件。|
 |[手动将邮件提交到 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|将附加邮件手动发送到特定 Microsoft 电子邮件地址，以发送垃圾邮件，而不是垃圾邮件和网络钓鱼。|
 |[使用邮件流规则查看用户向 Microsoft 报告的内容](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|了解如何创建邮件流规则 (也称为传输规则) 在用户向 Microsoft 报告邮件进行分析时通知您。|
 |[将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全智能 网站提交附件和其他文件。|
 |
 
-如果垃圾邮件或网络钓鱼邮件被隔离而不是传递，则用户可以从安全与合规中心中的隔离门户& Microsoft。 有关详细信息，请参阅[Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)。
+如果垃圾邮件或网络钓鱼邮件被隔离而不是传递，则用户可以在邮件门户中将邮件从隔离Microsoft 365 Defender Microsoft。 有关详细信息，请参阅[Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)。
 
 > [!NOTE]
 > 提交到 Microsoft 的数据位于北美数据中心Office 365合规性边界。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。
