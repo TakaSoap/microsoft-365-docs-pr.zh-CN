@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for 保险箱 中查看、创建、修改和删除保险箱链接策略和全局 保险箱 链接Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082752"
+ms.locfileid: "53096764"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置链接策略Office 365
 
@@ -53,7 +53,7 @@ ms.locfileid: "53082752"
 - 安全链接策略：打开 保险箱 链接保护，启用实时 URL 扫描，指定是否在传递邮件之前等待实时扫描完成，启用内部邮件扫描，指定是否跟踪用户单击 URL，并指定是否允许用户单击原始 URL。
 - **安全链接规则**：指定策略应用于 (的优先级和收件人) 。
 
-当你在网站门户中管理链接保险箱时，这两个元素Microsoft 365 Defender明显：
+当你在网站门户中管理链接保险箱，这两个元素Microsoft 365 Defender明显：
 
 - 创建链接保险箱策略时，实际上是同时对两者使用相同的名称创建安全链接规则和相关安全链接策略。
 - 修改邮件保险箱策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改安全链接规则。 所有其他设置修改关联的安全链接策略。
@@ -110,7 +110,7 @@ ms.locfileid: "53082752"
 
    同一个条件的多个值使用 OR 逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件使用 AND 逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
-   - **排除这些用户、组和域**：若要为策略应用于的内部收件人添加例外（收件人例外），请选择此选项并配置例外。 设置和行为与条件完全相同。
+   - 排除 **这些** 用户、组和域：若要为策略应用于 (收件人例外的内部收件人添加) ，请选择此选项并配置例外。 设置和行为与条件完全相同。
 
    完成后，单击“**下一步**”。
 
@@ -138,7 +138,7 @@ ms.locfileid: "53082752"
 
 6. 在 **出现的"** 通知"页上，为"如何通知用户？"选择下列值 **之一**：
    - **使用默认通知文本**
-   - **使用自定义通知文本**：如果选择此值，将显示以下设置：
+   - **使用自定义通知文本**：如果选择此值 (长度不能超过 200 个字符) ，将显示以下设置：
      - **使用Microsoft 翻译工具进行自动本地化**
      - **自定义通知文本**：在此框中输入自定义通知文本。
 

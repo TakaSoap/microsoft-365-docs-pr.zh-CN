@@ -2,7 +2,7 @@
 title: 使用威胁分析跟踪和响应新出现的威胁
 ms.reviewer: ''
 description: 了解新出现的威胁和攻击技术以及如何阻止它们。 评估其对组织的影响，并评估组织的恢复能力。
-keywords: 威胁分析， 风险评估， Microsoft 365 Defender， M365D， 缓解状态， 安全配置， 适用于 Office 365 的 Microsoft Defender， Office 365 威胁分析的 Microsoft Defender， MDO 威胁分析， 集成的 MDE 和 MDO 威胁分析数据， 威胁分析数据集成， 集成的 Microsoft 365 Defender 威胁分析
+keywords: 威胁分析， 风险评估， Microsoft 365 Defender， M365D， 缓解状态， 安全配置， Microsoft Defender for Office 365， Microsoft Defender for Office 365 威胁分析， MDO 威胁分析， 集成 MDE 和 MDO 威胁分析数据， 威胁分析数据集成， 集成 Microsoft 365 Defender 威胁分析
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b87d1963b8ffa3751c13cea532c8d6436f69fbb9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501211"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096826"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威胁分析跟踪和响应新出现的威胁 
 
@@ -116,6 +116,24 @@ _威胁分析报告的概述部分_
 - **安全配置** 状态 — 显示安全设置错误的设备数量。 应用建议的安全设置以帮助缓解威胁。 如果设备已 **应用** 所有跟踪 _设置，则_ 被视为安全设备。
 - **漏洞修补状态** 显示易受攻击的设备的数量。 应用安全更新或修补程序以解决威胁利用的漏洞。
 
+#### <a name="view-reports-per-threat-tags"></a>查看每个威胁标记的报告
+你可以根据特定威胁标记或报告类型来筛选威胁报告列表 (相关) 报告。 
+- **威胁** 标记 — 帮助你根据特定威胁类别查看最相关的报告。 例如，所有与勒索软件相关的报告。
+- **报告** 类型 — 帮助您根据特定报告类型查看最相关的报告。 例如，涵盖工具和技术的所有报告。 
+- **筛选器**- 帮助你高效地查看威胁报告列表，并基于特定威胁标记或报告类型筛选视图。 例如，查看与勒索软件类别相关的所有威胁报告或包含漏洞的威胁报告。
+
+##### <a name="how-does-it-work"></a>它的工作原理
+Microsoft 威胁智能团队向每个威胁报告添加了威胁标记：
+- 现在，有四个威胁标记可用：
+  - 勒索软件
+  - 网络钓鱼
+  - 漏洞
+  - 活动组
+- 威胁标记在威胁分析页面顶部显示，每个标记下具有可用报告数量的计数器。
+    ![威胁标记](../../media/threat-analytics/ta-threattags-mtp.png)
+- 该列表也可以按威胁标记排序：   ![ 列表](../../media/threat-analytics//ta-taglist-mtp.png)
+- 筛选器可用于每个威胁标记和报告类型：   ![ 筛选器](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析员报告：从 Microsoft 安全研究人员获取专家见解
 在" **分析员报告** "部分，通读详细的专家撰写。 大多数报告都提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的策略和技术、详细的建议列表和强大的 [威胁](advanced-hunting-overview.md) 搜寻指南。
 
@@ -165,9 +183,9 @@ _威胁分析报告的缓解部分_
 ## <a name="additional-report-details-and-limitations"></a>其他报告详细信息和限制
 >[!NOTE]
 >作为统一安全体验的一部分，威胁分析现在不仅适用于 Microsoft Defender for Endpoint，还适用于适用于 Office E5 许可证持有者的 Microsoft Defender。
->如果你未使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，还可以在 Microsoft Defender 安全中心 门户中查看报告详细信息 (，而无需 Microsoft Defender for Office 数据)  (适用于终结点) 。 
+>如果你未使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，则还可以在 Microsoft Defender 安全中心 门户中查看报告详细信息 (，而无需 Microsoft Defender for Office data)  (Microsoft Defender for Endpoint) 。 
 
-若要访问威胁分析报告，你需要某些角色和权限。 有关详细信息[，请参阅 Microsoft 365 Defender 基于角色的访问控制中的](custom-roles.md)自定义角色。
+若要访问威胁分析报告，你需要某些角色和权限。 有关详细信息[，请参阅基于角色的访问控制中的Microsoft 365 Defender](custom-roles.md)角色。
   - 若要查看警报、事件或受影响的资产数据，你需要拥有对 microsoft Defender for Office 或 Microsoft Defender for Endpoint 警报数据的权限，或同时拥有这两者的权限。
   - 若要查看阻止的电子邮件尝试，你需要拥有 Microsoft Defender 的权限，才能Office数据。 
   - 若要查看缓解，你需要拥有在 Microsoft Defender for Endpoint 危险和漏洞管理数据的权限。

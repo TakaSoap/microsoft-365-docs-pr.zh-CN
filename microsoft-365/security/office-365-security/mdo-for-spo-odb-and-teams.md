@@ -23,12 +23,12 @@ ms.custom:
 description: 了解适用于 Office 365 Online、SharePoint、OneDrive for Business 和 Microsoft Teams 中的文件的 Microsoft Defender。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67bd2a0952ac630888b07eaf05d365736a0472ea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 5a0c9721c4d8fc2087e0dbbce19305060344430c
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028831"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096740"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
@@ -38,7 +38,7 @@ ms.locfileid: "53028831"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-保险箱适用于 Office 365 的[Microsoft Defender](whats-new-in-defender-for-office-365.md) SharePoint、OneDrive 和 Microsoft Teams 的附件为已由 Microsoft 365 中的常见病毒检测引擎在上载时扫描的文件提供了一层额外的[保护](virus-detection-in-spo.md)。 保险箱SharePoint、OneDrive 和 Microsoft Teams 的附件可帮助检测和阻止在团队网站和文档库中标识为恶意的现有文件。
+保险箱[Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md)中的 SharePoint、OneDrive 和 Microsoft Teams 的附件为已由 Microsoft 365 中的常见病毒检测引擎异步[扫描的文件提供了一层额外的保护](virus-detection-in-spo.md)。 保险箱SharePoint、OneDrive 和 Microsoft Teams 的附件可帮助检测和阻止在团队网站和文档库中标识为恶意的现有文件。
 
 保险箱默认情况下，SharePoint、OneDrive 和 Microsoft Teams 的附件不会启用。 若要打开它，请参阅打开保险箱[附件SharePoint、OneDrive和Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
@@ -67,7 +67,6 @@ SharePoint联机管理员可以阻止用户下载恶意文件。 有关说明，
 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件标识为恶意的文件将显示在[Microsoft Defender for Office 365](view-reports-for-mdo.md)的报告和资源管理器 (以及实时检测) [中](threat-explorer.md)。
 
 自 2018 年 5 月起，当 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 识别为恶意文件时，该文件也可隔离。 有关详细信息，请参阅在 Defender for [Office 365 中管理隔离Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
-
 
 ## <a name="keep-these-points-in-mind"></a>请记住以下几点
 

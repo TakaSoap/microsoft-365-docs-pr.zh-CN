@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028783"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096728"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
@@ -296,9 +296,11 @@ GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件
 
-此规则阻止启动以下文件类型，除非它们符合普遍或年龄条件，或者它们位于受信任的列表或排除列表中：
+此规则阻止可执行文件（.exe、.dll 或 .scr）启动，除非满足以下任一条件：
 
-- 可执行文件 (，如 .exe、.dll 或 .scr) 
+- 普遍：可执行文件在 1，000 多个终结点上找到
+- 年龄：可执行文件在 24 小时之前发布
+- 位置：可执行文件包含在受信任的列表或排除列表中
 
 启动不受信任的或未知的可执行文件可能会带来风险，因为最初可能不明确这些文件是否恶意。
 
@@ -404,17 +406,17 @@ GUID：`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
-此规则阻止 Outlook 创建子进程，同时仍允许合法的 Outlook 功能。
+此规则阻止Outlook子进程，同时仍允许合法Outlook进程。
 
-此规则可防止社会工程攻击，并防止利用代码滥用 Outlook 中的漏洞。 它还可抵御 [Outlook](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) 规则和表单攻击，攻击者可以在用户凭据遭到泄露时使用这些漏洞。
+此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
 
 > [!NOTE]
-> 此规则阻止 Outlook 中的 DLP 策略提示和工具提示。 此规则仅适用于 Outlook 和 Outlook.com。
+> 此规则阻止 DLP 策略提示和工具提示Outlook。 此规则仅适用于 Outlook Outlook.com。
 
 此规则是在：
 
 - [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名称： `Process creation from Office communication products (beta)`
@@ -434,8 +436,8 @@ GUID：`26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 此规则是在：
 
-- [Windows 10 版本 1903](/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows 10，版本 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows服务器 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune 名称：不可用
 
@@ -448,12 +450,12 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过 Microsoft [Endpoint Configuration Manager](/configmgr) 管理不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 此规则是在：
 
-- [Windows 10 版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune 名称： `Process creation from PSExec and WMI commands`
@@ -468,8 +470,8 @@ GUID：`d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 此规则是在：
 
-- [Windows 10 版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -479,16 +481,16 @@ Configuration Manager 名称： `Block untrusted and unsigned processes that run
 
 GUID：`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>阻止从 Office 宏调用 Win32 API
+### <a name="block-win32-api-calls-from-office-macros"></a>阻止从宏Office Win32 API 调用
 
 此规则阻止 VBA 宏调用 Win32 API。
 
-Office VBA 支持 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
+OfficeVBA 启用 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
 
 此规则是在：
 
-- [Windows 10 版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -513,8 +515,8 @@ GUID：`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 此规则是在：
 
-- [Windows 10 版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server 版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 

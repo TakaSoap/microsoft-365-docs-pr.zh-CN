@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083532"
+ms.locfileid: "53096152"
 ---
 # <a name="user-reported-message-settings"></a>用户报告的邮件设置
 
@@ -134,24 +134,19 @@ ms.locfileid: "53083532"
 
 若要正确标识原始附加的邮件，发送到自定义邮箱的邮件需要特定格式。 如果邮件不使用此格式，则原始附加的邮件始终标识为网络钓鱼提交。
 
-为了正确标识原始附加的邮件，发送到自定义邮箱的邮件需要使用以下语法来表示"主题 (信封标题) ：
+如果要指定原始附加邮件的报告原因，则发送到自定义邮箱 (的邮件不修改附件) 需要从主题 (信封标题) 中的下列前缀之一开始：
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1|或垃圾邮件：
+- 2|或非垃圾邮件
+- 3|或网络钓鱼
 
-其中 SafetyAPIAction 是以下整数值之一：
+例如：
 
-- 1：垃圾邮件
-- 2：非垃圾邮件
-- 3：网络钓鱼
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-此示例使用下列值：
+- 根据主题，这两条消息都报告为"非垃圾邮件"。
+- 其余部分将被忽略。
 
-- 邮件被报告为网络钓鱼。
-- 网络消息 ID 为 49871234-6dc6-43e8-abcd-08d797f20abe。
-- 发件人 IP 为 167.220.232.101。
-- The From address is test@contoso.com.
-- 邮件的主题行是"测试网络钓鱼提交"
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 不遵循此格式的邮件将不会在提交门户中正确显示。

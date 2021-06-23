@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5cd60915699cd2adb42e575c25912f5f164a5b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055129"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096781"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -141,9 +141,11 @@ EOP 和 Defender for Office 365 中的反网络钓鱼策略中提供了以下欺
 "**显示第一安全提示** 联系人"设置在 EOP 和 Defender 中可用于 Office 365 组织，并且不依赖于欺骗智能或模拟保护设置。 以下安全提示向收件人显示该邮件：
 
 - 他们第一次从发件人收到邮件时
-- 如果他们不经常收到来自发件人的邮件。
+- 他们通常不会收到来自发件人的邮件。
 
-![用于对多个安全提示进行模拟保护的文本。](../../media/safety-tip-first-contact-multiple-recipients.png)
+![对于具有安全提示的邮件，第一个联系人联系人。](../../media/safety-tip-first-contact-one-recipient.png)
+
+![具有安全提示的邮件的第一个联系人联系人。](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 此功能添加了一层额外的安全保护，防止潜在的模拟攻击，因此我们建议您将其打开。
 

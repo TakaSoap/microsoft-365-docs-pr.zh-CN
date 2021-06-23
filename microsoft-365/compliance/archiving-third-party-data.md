@@ -22,77 +22,141 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061729"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096164"
 ---
-# <a name="archive-third-party-data"></a>存档第三方数据
+# <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
 Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入和存档到 Microsoft 365 组织中。 使用数据连接器在 Microsoft 365 中导入和存档第三方数据的一个主要好处是，您可以在导入数据后将各种 Microsoft 365 合规性解决方案应用于这些数据。 这有助于确保组织的非 Microsoft 数据符合影响组织的法规和标准。
 
 ## <a name="third-party-data-connectors"></a>第三方数据连接器
 
-下表列出了该连接器中可用的第三方数据Microsoft 365 合规中心。 该表还汇总了在导入并存档到 Microsoft 365 后可应用于第三方数据的合规性Microsoft 365。 请参阅 [下一节](#overview-of-compliance-solutions-that-support-third-party-data) ，详细了解每个合规性解决方案及其如何受益于第三方数据。
+The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 还与以下合作伙伴合作，在 Microsoft 365 合规中心 中提供更多第三方数据Microsoft 365 合规中心。 贵组织与这些合作伙伴合作，在存档服务中创建相应的数据Microsoft 365 合规中心。
 
-> [!TIP]
-> 单击"第 **三方数据** "列中的链接，转到有关为第三方数据列创建连接器的数据类型。
+- [百里达](#veritas-data-connectors)
+
+- [TeleMessage](#telemessage-data-connectors)
+
+- [17a-4 LLC](#17a-4-data-connectors)
+
+- [CellTrust](#celltrust-data-connectors)
+
+以下各节中列出的第三方数据 (除用于 Microsoft 365 预览体验成员风险管理解决方案) 的 HR 数据和物理密码数据外）将导入到用户邮箱中。 支持Microsoft 365数据的合规性解决方案将应用于存储数据的用户邮箱。
+
+### <a name="microsoft-data-connectors"></a>Microsoft 数据连接器
+
+下表列出了本机第三方数据连接器，这些连接器可用于Microsoft 365 合规中心。 该表还汇总了在导入并存档第三方数据之后可应用Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
+
+单击"第 **三方数据** "列中的链接，转到有关为第三方数据列创建连接器的数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[AT&T 网络 <sup>1</sup>](archive-att-network-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Bloomberg 消息](archive-bloomberg-message-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[MS 2 上的 Cisco Jabber SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Oracle <sup>2</sup>上的 Cisco Jabber](archive-ciscojabberonoracle-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[PostgreSQL <sup>2</sup>上的 Cisco Jabber](archive-ciscojabberonpostgresql-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[EML <sup>2</sup>](archive-eml-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[Enterprise数字<sup>1</sup>](archive-enterprise-number-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[FX 连接<sup>2</sup>](archive-fxconnect-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[人力资源 (人力资源) ](import-hr-data.md) ||||||![复选标记](../media/checkmark.png)
 |[ICE 聊天](archive-icechat-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Jive <sup>2</sup>](archive-jive-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[领英](archive-linkedin-data.md)   |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[MS SQL 数据库<sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[O2 网络 <sup>1</sup>](archive-o2-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[物理保护](import-physical-badging-data.md) ||||||![复选标记](../media/checkmark.png)|
-|[透视 <sup>表 2</sup>](archive-pivot-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[信号 <sup>1</sup>](archive-signal-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Skype for Business <sup>2</sup>](archive-skypeforbusiness-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Slack 电子数据展示 <sup>2</sup>](archive-slack-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[百年 <sup>2</sup>](archive-symphony-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[中国 <sup>1</sup>](archive-telegram-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[TELUS 网络 <sup>1</sup>](archive-telus-network-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[文本分隔符 <sup>2</sup>](archive-text-delimited-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[Verizon 网络 <sup>1</sup>](archive-verizon-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[网页 <sup>2</sup>](archive-webpagecapture-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[WeChat <sup>1</sup>](archive-wechat-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[Facebook <sup>2</sup>中的工作区](archive-workplacefromfacebook-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[XIP <sup>2</sup>](archive-xip-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
-|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
-|[缩放会议 <sup>2</sup>](archive-zoommeetings-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 ||||||||
 
-> [!NOTE]
-> <sup>1</sup> TeleMessage 提供的数据连接器。 您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档数据。 有关详细信息，请参阅本部分的分步说明中的先决条件数据类型。 TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。 <br/><br/><sup>2</sup> 由用户提供的数据连接器。 您必须与 Microsoft 365 一起为组织设置其存档服务，然后才能将数据存档到 Microsoft 365 中。 有关详细信息，请参阅本部分的分步说明中的先决条件数据类型。
+### <a name="veritas-data-connectors"></a>Veritas 数据连接器
 
-上表中列出的第三方数据 (HR 数据和物理密码数据除外) 导入到用户邮箱中。 支持第三方数据的相应合规性解决方案将应用于存储数据的用户邮箱。
+本节中的表列出了与它合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
+
+在您将第三方数据存档到 Microsoft 365 中之前，您必须与 Microsoft 365 一起为组织设置名为 *Merge1* (的存档服务) 服务。 有关详细信息，请单击"第三方数据"列中的链接，以转到有关创建该连接器的数据类型。
+
+|第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust](archive-celltrust-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[MS SQL 上的 Cisco Jabber](archive-ciscojabberonmssql-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Oracle 上的 Cisco Jabber](archive-ciscojabberonoracle-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[PostgreSQL 上的 Cisco Jabber](archive-ciscojabberonpostgresql-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[EML](archive-eml-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[FX 连接](archive-fxconnect-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[MS SQL 数据库](archive-mssqldatabaseimporter-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[透视](archive-pivot-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Reuters Dealing](archive-reutersdealing-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Salesforce Chatter](archive-salesforcechatter-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[ServiceNow](archive-servicenow-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[可宽延时间电子数据展示](archive-slack-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Symphony](archive-symphony-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[文本分隔](archive-text-delimited-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[Webex Teams](archive-webexteams-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[网页](archive-webpagecapture-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[XIP](archive-xip-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[XSLT/XML](archive-xslt-xml-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|||
+|[Yieldbroker](archive-yieldbroker-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Zoom 会议](archive-zoommeetings-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+||||||||
+
+### <a name="telemessage-data-connectors"></a>TeleMessage 数据连接器
+
+本节中的表列出了与 TeleMessage 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
+
+您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，以转到有关创建该连接器的数据类型。
+
+TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文中的美国政府云数据连接器部分。
+
+|第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android ](archive-android-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[AT&T 网络 ](archive-att-network-archiver-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Bell Network ](archive-bell-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[EnterpriseNumber](archive-enterprise-number-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[O2 网络 ](archive-o2-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[TELUS 网络 ](archive-telus-network-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Verizon 网络 ](archive-verizon-network-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[微信 ](archive-wechat-data.md)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[WhatsApp ](archive-whatsapp-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+||||||||
+
+### <a name="17a-4-data-connectors"></a>17a-4 数据连接器
+
+本节中的表列出了与 17a-4 LLC 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
+
+在您将第三方数据存档到 Microsoft 365 中之前，您必须与 (一起为组织设置名为 *DataParser*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，以转到有关创建该连接器的数据类型。
+
+|第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Bloomberg ](archive-17a-4-bloomberg-data.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Cisco Jabber ](archive-17a-4-cisco-jabber-data.md)   |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Cisco Webex ](archive-17a-4-webex-teams-data.md)   |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[FactSet ](archive-17a-4-factset-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Fuze ](archive-17a-4-fuze-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[FX 连接](archive-17a-4-fxconnect-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[ICE 聊天](archive-17a-4-ice-im-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[InvestEdge ](archive-17a-4-investedge-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[LivePerson 对话云 ](archive-17a-4-liveperson-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Quip ](archive-17a-4-quip-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[ServiceNow ](archive-17a-4-servicenow-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[Slack ](archive-17a-4-slack-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[百年 ](archive-17a-4-symphony-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[缩放 ](archive-17a-4-zoom-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+||||||||
+
+### <a name="celltrust-data-connectors"></a>CellTrust 数据连接器
+
+本节中的表列出了与 CellTrust 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
+
+您必须使用 CellTrust 为组织设置 (*CellTrust SL2*) 存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，转到创建 CellTrust SL2 连接器的分步说明。
+
+|第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+||||||||
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支持第三方数据的合规性解决方案概述
 

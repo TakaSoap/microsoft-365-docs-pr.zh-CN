@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053019"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096812"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -38,6 +38,8 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>2021 年 6 月
+- 威胁分析[Microsoft 365 Defender中的威胁标记](threat-analytics.md) <br> 威胁标记可帮助你专注于特定威胁类别并查看最相关的报告。 
 
 ## <a name="april-2021"></a>2021 年 4 月
 - Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
@@ -75,4 +77,4 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ## <a name="march-2019"></a>2019 年 3 月
 - 高级搜寻 <br> 各种搜寻功能的登陆页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
 - [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 衡量组织的安全状态，较高的数字表示采取更多改进措施。 按照安全功能分数建议可保护你的组织免遭威胁。 
-- [报告](overview-security-center.md) <br>  功能一系列卡片，涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。
+- [报表](overview-security-center.md) <br>  功能一系列卡片，涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。
