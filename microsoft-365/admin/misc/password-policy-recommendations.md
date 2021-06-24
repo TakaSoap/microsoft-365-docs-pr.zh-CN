@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
-ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006921"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096620"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
@@ -58,7 +58,7 @@ ms.locfileid: "53006921"
 
 加强密码系统安全的首要目标是密码多样性。 你需要你的密码策略包含多个不同且很难猜出的密码。 下面是可帮助你的组织尽可能保障安全的一些建议。
   
-- 保持至少 8 个字符长度的要求（更长不一定更好）
+- 保持 8 个字符的最小长度要求
 
 - 不设定字符构成要求。 例如，\*&amp;(^%$
 
@@ -131,6 +131,8 @@ ms.locfileid: "53006921"
 ## <a name="next-steps"></a>后续步骤
 
 希望了解有关管理密码的详细信息？ 下面是一些推荐阅读：
+
+- [忘记密码，无密码](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Microsoft 密码指南](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
