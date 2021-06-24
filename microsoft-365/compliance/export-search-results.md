@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 将搜索结果从 Microsoft 365 中心的内容搜索导出到本地计算机。 电子邮件结果导出为 PST 文件。 来自SharePoint和OneDrive for Business的内容作为本机文档Office导出。
+description: 将搜索内容搜索中的搜索结果导出Microsoft 365 合规中心本地计算机。 电子邮件结果导出为 PST 文件。 来自SharePoint和OneDrive for Business的内容作为本机文档Office导出。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: d3ae14fc0ac31e50d579668c7fafba5390c5b8fc
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653531"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114760"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -49,7 +49,7 @@ ms.locfileid: "52653531"
 
   - Microsoft Edge <sup>2</sup>
   
-    OR
+    或
 
   - Microsoft Internet Explorer 10及更高版本
   
@@ -90,7 +90,7 @@ ms.locfileid: "52653531"
 
 第一步是要准备用于导出的搜索结果。 当你准备结果时，它们上传到 Microsoft 提供的Azure 存储 Microsoft 云中的位置。 邮箱和网站中的内容以每小时 2 GB 的最大速率上载。
   
-1. 在Microsoft 365中心，选择要导出结果的内容搜索。
+1. 在Microsoft 365 合规中心中，选择要导出结果的内容搜索。
   
 2. 在弹出 **页** 底部的"操作"菜单上，单击"**导出结果"。**
 
@@ -133,6 +133,8 @@ ms.locfileid: "52653531"
    2. 选中 **"包括文件SharePoint复选框** 导出文档的所有SharePoint版本。 此选项仅在搜索的内容源包括网站或网站SharePoint OneDrive for Business显示。
   
    3. Select the **Export files in a compressed (zipped) folder.仅包含单个邮件SharePoint文档** 复选框，以将搜索结果导出到压缩文件夹。 此选项仅在选择将项目导出为Exchange邮件时，以及搜索结果包括单个SharePoint或OneDrive显示。 此选项主要用于在导出项目时处理文件路径Windows 260 个字符的限制。 请参阅详细信息部分中的"导出项目的 [文件名](#more-information) "。
+   > [!IMPORTANT]
+   > 将文件导出到压缩 (压缩) 将增加导出时间。
   
 6. 单击 **"导出** "开始导出过程。 搜索结果准备下载，这意味着它们从原始内容位置收集，然后上传到 Microsoft 云中的Azure 存储位置。 这可能需要几分钟。
 
@@ -142,7 +144,7 @@ ms.locfileid: "52653531"
 
 下一步是将搜索结果从本地Azure 存储下载到本地计算机。
   
-1. 在合规性 **中心的"** 内容搜索"Microsoft 365，选择"导出 **"** 选项卡
+1. 在页面 **的"** 内容搜索"Microsoft 365 合规中心，选择"导出 **"** 选项卡
   
    您可能必须 **单击"刷新** "来更新导出作业的列表，以便它显示您创建的导出作业。 导出作业的名称与相应的搜索同名，_Export搜索名称后面。
   

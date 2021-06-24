@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: 使用合规性中心Microsoft 365内容搜索执行目标集合，该集合可搜索特定邮箱或网站文件夹中的项目。
-ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: 使用网站集中的内容Microsoft 365 合规中心执行目标集合，该集合可搜索特定邮箱或网站文件夹中的项目。
+ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311890"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114748"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>对目标集合使用内容搜索
 
-Microsoft 365合规中心的内容搜索工具未在 UI 中直接搜索 Exchange 邮箱中的特定文件夹，也不直接SharePoint OneDrive for Business文件夹。 但是，通过在实际搜索查询语法中为电子邮件指定文件夹 ID 属性 (或为网站指定路径 (DocumentLink *)* 属性，可以搜索特定文件夹（称为目标集合) ）。 当您确信对案例或特权项目做出响应的项目位于特定邮箱或网站文件夹中时，使用内容搜索执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 () 和 OneDrive for Business 网站上文件夹的 DocumentLink SharePoint 路径。 然后，可以在搜索查询中使用该文件夹 ID 或路径返回文件夹中的项目。
+内容搜索工具Microsoft 365 合规中心 UI 中直接搜索 Exchange 邮箱或 SharePoint 中的特定文件夹，OneDrive for Business网站。 但是，通过在实际搜索查询语法中为电子邮件指定文件夹 ID 属性 (或为网站指定路径 (DocumentLink *)* 属性，可以搜索特定文件夹（称为目标集合) ）。 当您确信对案例或特权项目做出响应的项目位于特定邮箱或网站文件夹中时，使用内容搜索执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 () 和 OneDrive for Business 网站上文件夹的 DocumentLink SharePoint 路径。 然后，可以在搜索查询中使用该文件夹 ID 或路径返回文件夹中的项目。
 
 > [!NOTE]
 > 若要返回位于网站或 SharePoint OneDrive for Business 文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性不会返回某些媒体文件。
@@ -216,17 +216,19 @@ Microsoft 365合规中心的内容搜索工具未在 UI 中直接搜索 Exchange
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步骤 2：使用文件夹 ID 或文档链接执行目标集合
 
-运行脚本以收集特定用户的文件夹 ID 或文档链接列表后，下一步是转到 Microsoft 365 合规中心并创建新的内容搜索以搜索特定文件夹。 您将在"内容搜索"关键字框 (中配置的搜索查询中使用 `folderid:<folderid>` `documentlink:<path>` 或 property：value 对;如果使用 **New-ComplianceSearch** cmdlet) ，您将使用 or property：value 对作为 *ContentMatchQuery* 参数的值。 您可以将 或  `folderid`  `documentlink` 属性与其他搜索参数或搜索条件组合使用。 如果查询中仅包含 或 属性，  `folderid`  `documentlink` 搜索将返回指定文件夹中的所有项目。
+运行脚本收集特定用户的文件夹 ID 或文档链接列表后，下一步转到 Microsoft 365 合规中心 并创建新的内容搜索以搜索特定文件夹。 您将在"内容搜索"关键字框 (中配置的搜索查询中使用 `folderid:<folderid>` `documentlink:<path>` 或 property：value 对;如果使用 **New-ComplianceSearch** cmdlet) ，您将使用 or property：value 对作为 *ContentMatchQuery* 参数的值。 您可以将 或  `folderid`  `documentlink` 属性与其他搜索参数或搜索条件组合使用。 如果查询中仅包含 或 属性，  `folderid`  `documentlink` 搜索将返回指定文件夹中的所有项目。
 
 1. 转到 ，然后使用在步骤 1 中用于运行脚本的帐户 <https://compliance.microsoft.com> 和凭据登录。
 
 2. 在合规中心的左窗格中，单击"显示 **所有**  >  **内容搜索**"，然后单击"新建 **搜索"。**
 
-3. 在 **"关键字"** 框中，粘贴由脚本在步骤 1 中返回的 `folderid:<folderid>` 或  `documentlink:<path>` 值。
+3. 在 **"关键字"** 框中，粘贴由脚本在步骤 1 中返回的 `folderid:<folderid>` 或  `documentlink:<path>/*` 值。
 
     例如，以下屏幕截图中的查询将在用户的"可恢复的项目"文件夹的"清除"子文件夹中搜索任何项目 ("清除"子文件夹的属性值显示在步骤 1) `folderid` 中的屏幕截图中：
 
     ![将 folderid 或 documentlink 粘贴到搜索查询的关键字框中](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > documentlink 搜索需要使用尾随  `asterisk '/*'` 。  
 
 4. 在 **"位置"** 下，**选择"特定位置**"，然后单击"修改 **"。**
 
@@ -259,13 +261,13 @@ Microsoft 365合规中心的内容搜索工具未在 UI 中直接搜索 Exchange
 - 本示例搜索网站文件夹 (以及标题中包含) NDA"的文档的任何子文件夹。
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - 本示例在网站文件夹中搜索 (文件夹，并搜索) 范围内更改的文档的任何子文件夹。
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
 ## <a name="more-information"></a>更多信息
