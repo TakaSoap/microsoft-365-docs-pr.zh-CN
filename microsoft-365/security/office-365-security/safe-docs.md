@@ -16,12 +16,12 @@ ms.collection:
 description: 了解保险箱文档Microsoft 365 E5或Microsoft 365 E5 安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054437"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108603"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -62,7 +62,7 @@ ms.locfileid: "53054437"
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>使用Microsoft 365 Defender配置文档保险箱文档
 
-1. 打开Microsoft 365 Defender门户，然后转到电子邮件&**协作** 策略& \> **威胁** 策略 \>  \> **策略**"部分保险箱 \> **附件"。**
+1. 打开Microsoft 365 Defender门户，然后转到电子邮件&协作策略 \> **&规则** 威胁策略"页面"策略"部分保险箱 \>  \>  \> **附件"。**
 
 2. 在 **"保险箱"页上**，单击"**全局设置"。**
 
@@ -70,7 +70,7 @@ ms.locfileid: "53054437"
    - **打开保险箱客户端Office** 文档：将切换开关向右移动，以打开功能： ![ 打开 ](../../media/scc-toggle-on.png) 。
    - 即使 **保险箱** 文档将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议将此选项保持关闭状态 (将开关保留为左侧："关闭 ![) "。 ](../../media/scc-toggle-off.png)
 
-   完成后，单击“**保存**”。
+   完成时，请单击“保存”。
 
    ![保险箱在"附件"页上选择"全局"保险箱文档设置。](../../media/safe-docs-global-settings.png)
 
@@ -103,7 +103,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 若要验证是否已启用和配置保险箱文档，请执行下列任一步骤：
 
-- 在 Microsoft 365 Defender 门户中，转到电子邮件 **& 协作** 策略 & 规则 威胁策略策略部分 保险箱 附件全局设置，并验证启用 Office 客户端的 保险箱 文档和允许用户通过受保护的视图单击，即使 保险箱 文档将该文件标识为恶意设置 \>  \>  \>  \>  \> **。** 
+- 在 Microsoft 365 Defender 门户中，转到电子邮件 **& 协作** 策略 & 规则威胁策略页面策略部分 保险箱 附件全局设置，并验证启用 Office 客户端的 保险箱 文档和允许用户通过受保护的视图单击，即使 \>  \>  \>  \>  \> **保险箱 文档** 将该文件标识为恶意设置。
 
 - 在 PowerShell 中Exchange Online以下命令并验证属性值：
 

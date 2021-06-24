@@ -19,12 +19,12 @@ description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 8fc01ab0dd5178032ea7b101f5361c25bb10bbea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028927"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108531"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
@@ -38,7 +38,6 @@ ms.locfileid: "53028927"
 
 除非安全运营团队批准这些修正操作，否则不会执行这些修正操作。 我们建议尽快审阅和批准任何挂起的操作，以便自动调查及时完成。 在某些情况下，你可以重新思考提交的操作。  在采取任何操作之前，你需要&清除角色的一部分。
 
-
 ## <a name="approve-or-reject-pending-actions"></a>批准 (或拒绝) 挂起的操作
 有四种不同的方法可查找和执行自动调查操作：
 
@@ -48,22 +47,25 @@ ms.locfileid: "53028927"
 - [调查和修正调查队列](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>事件队列
-1. 转到安全[Microsoft 365并](https://security.microsoft.com)登录。
+
+1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
 2. 在导航窗格中，选择"事件 **&事件>警报"。**
 3. 选择事件名称以打开其摘要页面。
 4. 选择" **证据和响应"** 选项卡。
 5. 选择列表项。 其侧窗格将打开。
 6. 在侧窗格中，执行批准或拒绝操作。
 
-## <a name="investigation-queue"></a>调查队列 
-1. 转到安全[Microsoft 365并](https://security.microsoft.com)登录。
-2. 从警报/事件页面导航。 
-3. 在"调查"页上，转到" **挂起的操作"** 选项卡。 
-4. 选择列表项。 其侧窗格将打开。  
+## <a name="investigation-queue"></a>调查队列
+
+1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
+2. 从警报/事件页面导航。
+3. 在"调查"页上，转到" **挂起的操作"** 选项卡。
+4. 选择列表项。 其侧窗格将打开。
 5. 在侧窗格中，执行批准或拒绝操作。
 
 ## <a name="action-center"></a>操作中心
-1. 转到安全[Microsoft 365并](https://security.microsoft.com)登录。
+
+1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
 2. 在导航窗格中，选择操作 **中心**。
 3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
@@ -71,33 +73,37 @@ ms.locfileid: "53028927"
    - 选择 **"** 拒绝"以防止执行挂起的操作。
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>调查和修正调查队列
-1. 转到安全[Microsoft 365并](https://security.microsoft.com)登录。
-2. 打开待定调查。 
+
+1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 并登录。
+2. 打开待定调查。
 3. 在"调查"页上，转到" **挂起的操作"** 选项卡。
-4. 选择列表项。 其侧窗格将打开。  
+4. 选择列表项。 其侧窗格将打开。
 5. 在侧窗格中，执行批准或拒绝操作。
 
 ## <a name="change-or-undo-one-remediation-action"></a>更改或撤消一个修正操作
 
 有两种不同的方法可以重新考虑提交的操作：
-   - 通过统 [一操作中心](https://security.microsoft.com/action-center)。
-   - 但是[，Office操作中心](https://security.microsoft.com/threatincidents)。
-   
+
+- 通过统 [一操作中心](https://security.microsoft.com/action-center)。
+- 但是[，Office操作中心](https://security.microsoft.com/threatincidents)。
+
 ## <a name="change-or-undo-through-the-unified-action-center"></a>通过统一操作中心更改或撤消
+
 1. 转到统 [一操作中心](https://security.microsoft.com/action-center) 并登录。
 2. 在 **"历史记录** "选项卡上，选择要更改或撤消的操作。
-3. 在屏幕右侧窗格中，选择相应的操作 (移动到 **收件箱**、移动到垃圾邮件、移动到已删除项目、**软删除"或硬删除) 。  
+3. 在屏幕右侧窗格中，选择相应的操作 (移动到 **收件箱**、移动到垃圾邮件、移动到已删除项目、软删除或硬删除) 。   
 
- ## <a name="change-or-undo-through-the-office-action-center"></a>通过操作中心Office或撤消 
+## <a name="change-or-undo-through-the-office-action-center"></a>通过操作中心Office或撤消
+
 1. 转到Office[中心并](https://security.microsoft.com/threatincidents)登录。
 2. 选择适当的修正。
-3. 在侧窗格中，单击邮件提交条目并等待列表加载。 
-4. 等待顶部的"操作"按钮启用并选择"操作"按钮以更改操作类型。 
+3. 在侧窗格中，单击邮件提交条目并等待列表加载。
+4. 等待顶部的"操作"按钮启用并选择"操作"按钮以更改操作类型。
 5. 这将创建相应的操作。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用威胁资源管理器](threat-explorer.md) 
+- [使用威胁资源管理器](threat-explorer.md)
 - [管理员/手动操作](remediate-malicious-email-delivered-office-365.md)
 - [如何在自动调查和响应功能中报告误报/负面影响](air-report-false-positives-negatives.md)
 

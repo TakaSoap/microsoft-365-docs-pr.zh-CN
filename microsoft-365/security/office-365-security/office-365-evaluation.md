@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083664"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108327"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "53083664"
 如果你还没有支持 Microsoft Defender for Office 365 的许可证，可以开始为期[30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)天的免费评估，并测试 Microsoft 365 Defender 门户中的功能 <https://security.microsoft.com> 。 你可以轻松完成快速设置，并在必要时轻松将其关闭。
 
 > [!NOTE]
-> 如果你正在 Microsoft 365 Defender 门户 () 中，可以在此处启动 Defender for Office 365 评估： <https://security.microsoft.com> **电子邮件 & Collaboration** Policies \> **& Rules** \> **Threat Policies** \> **Others** 部分 \> **评估模式**。
+> 如果你正在 Microsoft 365 Defender 门户 () 中，可以在此处启动 <https://security.microsoft.com> Defender for Office 365 评估 **：Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Others** section Evaluation \> **mode**。
 
 ## <a name="how-the-evaluation-works"></a>评估的工作原理
 

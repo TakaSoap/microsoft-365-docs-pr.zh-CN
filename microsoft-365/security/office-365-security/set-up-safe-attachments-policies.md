@@ -18,12 +18,12 @@ description: 了解如何定义附件保险箱保护你的组织免受电子邮�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054335"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108219"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置附件策略Office 365
 
@@ -83,7 +83,7 @@ ms.locfileid: "53054335"
 
 在 保险箱 门户中创建自定义附件Microsoft 365 Defender会同时使用同一名称创建安全附件规则和相关的安全附件策略。
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
+1. 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。**
 
 2. 在 **"保险箱"页上**，单击" ![ 创建"图标" ](../../media/m365-cc-sc-create-icon.png) **创建"。**
 
@@ -125,17 +125,17 @@ ms.locfileid: "53054335"
 
    - 如果 **扫描无法完成 (** 超时或错误) ，则应用 保险箱 附件检测响应：即使 **保险箱** 附件扫描无法完成，保险箱 附件未知恶意软件响应也将会对邮件执行该操作。 如果选择此选项，请始终选择" **启用重定向** "，并指定电子邮件地址以发送包含恶意软件附件的邮件。 否则，邮件可能会丢失。
 
-   完成后，单击“**下一步**”。
+   完成后，请单击“**下一步**”。
 
 6. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
-   完成后，单击"提交 **"。**
+   完成后，请单击“**提交**”。
 
 7. 在出现的确认页面上，单击“**完成**”。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>使用 Microsoft 365 Defender 门户查看保险箱附件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
+1. 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。**
 
 2. 在 **"保险箱"** 页上，策略列表中将显示以下属性：
    - **名称**
@@ -146,7 +146,7 @@ ms.locfileid: "53054335"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>使用Microsoft 365 Defender门户修改保险箱附件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
+1. 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。**
 
 2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
@@ -156,7 +156,7 @@ ms.locfileid: "53054335"
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>启用或禁用保险箱附件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
+1. 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。**
 
 2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
@@ -182,7 +182,7 @@ ms.locfileid: "53054335"
 
 若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
+1. 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。**
 
 2. On the **保险箱 Attachments** page， select a policy from the list by clicking on the name.
 
@@ -197,7 +197,7 @@ ms.locfileid: "53054335"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>使用 Microsoft 365 Defender 门户删除保险箱附件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**.
+1. 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。**
 
 2. On the **保险箱 Attachments** page， select a custom policy from the list by clicking on the name of the policy.
 
@@ -439,7 +439,7 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 若要验证您是否已成功创建、修改或删除附件保险箱，请执行下列任一步骤：
 
-- In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Policies** section \> **保险箱 Attachments**. 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请通过单击名称从列表中选择策略，然后查看飞出中的详细信息。
+- 在 Microsoft 365 Defender 门户中，转到电子邮件&**协作** 策略 \> **&规则** \> **威胁策略**"页面"策略"部分保险箱 \>  \> **附件"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请通过单击名称从列表中选择策略，然后查看飞出中的详细信息。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
 

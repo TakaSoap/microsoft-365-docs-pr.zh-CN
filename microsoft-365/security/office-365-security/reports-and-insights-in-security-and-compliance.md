@@ -19,12 +19,12 @@ description: 了解安全与合规中心提供的智能报告和见解&，以及
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4af84c058eb3d9d7112f6102d39b209c34148d0e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054506"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108615"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -55,7 +55,7 @@ ms.locfileid: "53054506"
 
 |信息类型|如何到达那里|在何处了解更多信息|
 |---|---|---|
-|**Microsoft 365 Defender报告** (所有)  <p> 顶级见解和建议，以及指向Microsoft 365 Defender报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、Defender for Office 365 报告等|在安全与&中心，转到报告  >  **电子邮件&协作**  >  **[电子邮件&协作报告](https://security.microsoft.com/emailandcollabreport)**|[监视和查看安全Microsoft 365报告](../defender/overview-security-center.md)|
+|**安全&合规中心报告** (全部)  <p> 顶级见解和建议，以及指向安全与&报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、Defender for Office 365 报告等|在安全与&中心，转到"报告 **仪表板** \> **"**|[安全与合规中心中的报告](../../compliance/reports-in-security-and-compliance.md)|
 |**数据丢失防护** <p> 数据丢失防护策略匹配、误报和覆盖以及用于创建或编辑策略的链接|在安全&合规中心，转到 **"数据丢失防护** \> **策略"**|[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)|
 |**数据管理** <p> 有关如何应用标签、分类为记录的标签、标签趋势等方面的信息|在安全与&中心，转到 **"信息治理仪表板** \> **"**|[查看数据管理报告](../../compliance/view-the-data-governance-reports.md)|
 |**威胁管理 (** 也称为安全仪表板)  <p> 威胁检测、恶意软件趋势、主要目标用户、有关已发送和已接收电子邮件的详细信息等|在安全与&中心，转到 **漏洞管理** \> **仪表板**|[查看 Defender for Office 365](view-reports-for-mdo.md)|

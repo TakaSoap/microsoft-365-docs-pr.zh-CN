@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: 默认情况下，邮箱审核日志记录在邮箱Microsoft 365 (也称为默认邮箱审核或默认启用邮箱审核) 。 这意味着邮箱所有者、代理人和管理员执行的某些操作会自动记录在邮箱 审核日志 中，您可以在其中搜索对邮箱执行的活动。
-ms.openlocfilehash: c77e96adfee40027beb653c9e725141fc8d7a8fe
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866639"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108087"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -64,7 +64,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|邮箱类型|受支持|
+|邮箱类型|支持|
 |---|:---:|
 |用户邮箱|![复选标记](../media/checkmark.png)|
 |共享邮箱|![复选标记](../media/checkmark.png)|
@@ -116,12 +116,12 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**MoveToDeletedItems**|已删除邮件，并已将其移动到“已删除邮件”文件夹。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|标记为记录的项目被软删除， ("可恢复的项目"文件夹) 。 标记为记录的项目无法永久删除， ("可恢复的项目"文件夹中) 。|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|
 |**RemoveFolderPermissions**|尽管此值被接受为邮箱操作，但它已包含在 **UpdateFolderPermissions** 操作中，并且未单独审核。 换句话说，请勿使用此值。||||
-|**SearchQueryInitiated**|**注意**：此值仅适用于 E5 或 E5 合规性附加订阅用户。 有关详细信息，请参阅在 Microsoft 365[中设置高级Microsoft 365。](set-up-advanced-audit.md) <p> 用户使用 Outlook (Windows、Mac、iOS、Android 或 Outlook 网页版) 或邮件Windows 10搜索邮箱中的项目。|||![复选标记](../media/checkmark.png)|
+|**SearchQueryInitiated**|**注意**：此值仅适用于 E5 或 E5 合规性附加订阅用户。 有关详细信息，请参阅在 Microsoft 365[中设置高级Microsoft 365。](set-up-advanced-audit.md) <p> 用户使用 Outlook (Windows、Mac、iOS、Android 或 Outlook 网页版) 或邮件应用程序Windows 10搜索邮箱中的项目。|||![复选标记](../media/checkmark.png)|
 |**Send**|**注意**：此值仅适用于 E5 或 E5 合规性附加订阅用户。 有关详细信息，请参阅在 Microsoft 365[中设置高级Microsoft 365。](set-up-advanced-audit.md) <p> 用户发送电子邮件、答复电子邮件或转发电子邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>||![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|已使用“发送方式”权限发送邮件。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用“代表发送”权限发送邮件。 这表示另一个用户代表邮箱所有者发送了邮件。 邮件将向收件人说明发送此邮件时使用的身份及实际发送者。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|已永久删除或已从“已删除邮件”文件夹中删除邮件。 软删除的项目将移动到"可恢复的项目"文件夹。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|已更改邮件或其属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
+|**更新**|已更改邮件或邮件的任何属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|日历委派已分配给邮箱。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|![复选标记](../media/checkmark.png)<sup>\*</sup>||![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|其他保留标签应用于邮件项目 (一个项目只能分配有一个保留标签) 。|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|
 |**UpdateFolderPermissions**|文件夹权限已更改。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
@@ -151,7 +151,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|已使用“发送方式”权限发送邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用“代表发送”权限发送邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|已永久删除或已从“已删除邮件”文件夹中删除邮件。 软删除的项目将移动到"可恢复的项目"文件夹。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|已更改邮件或其属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
+|**更新**|已更改邮件或邮件的任何属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>验证是否针对每种登录类型记录默认邮箱操作
@@ -331,7 +331,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 值 **True** 表示将绕过用户的邮箱审核日志记录。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 尽管默认情况下会为所有组织启用邮箱审核日志记录，但只有具有 E5 许可证的用户才能在安全 & 合规中心或通过 Office 365 管理活动 [API](/office/office-365-management-api/office-365-management-activity-api-reference)在 审核日志 搜索中返回邮箱 [审核日志](search-the-audit-log-in-security-and-compliance.md)**事件**。
 

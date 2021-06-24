@@ -1,5 +1,5 @@
 ---
-title: 安全与合规中心&警报
+title: Microsoft 365 Defender门户中的警报
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,18 +17,18 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解如何使用安全与合规中心Office 365警报功能&和管理警报，包括管理高级警报。
+description: 了解如何使用 Microsoft 365 Defender 门户中的警报功能查看和管理警报，包括管理高级警报。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc1bfbd1fc1f21035edf34ad743755b0f51018b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44009ac90dddf9a8f901fdcc5d46496e4bc78338
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203275"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108279"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a>安全与合规中心&警报
+# <a name="alerts-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender门户中的警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,33 +36,19 @@ ms.locfileid: "51203275"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-使用安全与合规中心&警报功能查看和管理组织的警报，包括管理高级警报作为Microsoft Cloud App Security[概述的一部分](/cloud-app-security/what-is-cloud-app-security)。
+使用 Microsoft 365 Defender 门户中的警报功能查看和管理组织的警报，包括管理高级警报作为Microsoft Cloud App Security[的一部分](/cloud-app-security/what-is-cloud-app-security)。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>如何访问警报功能
 
-警报位于安全与&中心。 下面将了解如何访问页面。
+警报在 Microsoft 365 Defender 门户 <https://security.microsoft.com> () 。 下面将了解如何访问页面：
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>直接转到安全与&中心
-
-1. 转到 <https://protection.office.com>。
-
-2. 使用工作或学校帐户进行登录。
-
-3. 在左窗格中，单击 **"通知** "以查看警报功能。
-
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>使用应用启动器&安全与合规中心
-
-1. 使用工作或学校帐户进行登录。
-
-2. 单击左上角的应用启动器，然后单击安全& **合规性**。
-
-   找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。
-
-3. 在左窗格中，单击 **"通知** "以查看警报功能。
+在 Microsoft 365 Defender **门户中**，转到 **警报**。 或者，若要直接转到 **警报** 页面，请使用 <https://security.microsoft.com/alerts> 。
 
 ## <a name="alerts-features"></a>通知功能
 
-下表介绍了安全与合规中心中的警报下&工具。
+下表介绍了在应用程序门户 **中的警报下** Microsoft 365 Defender工具。
+
+<br>
 
 ****
 

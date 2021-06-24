@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: 了解如何通过 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能来加快检测和解决遭到入侵的用户帐户的过程。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904136"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108569"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>通过自动调查和响应处理遭到入侵的用户帐户
 
@@ -37,9 +37,7 @@ ms.locfileid: "52904136"
 利用受损的用户安全手册，组织的安全团队可以：
 
 - 加快检测遭到入侵的用户帐户;
-
 - 在帐户泄露时限制泄露范围;和
-
 - 更有效地响应受损用户。
 
 ## <a name="compromised-user-alerts"></a>遭到入侵的用户警报
@@ -67,21 +65,17 @@ ms.locfileid: "52904136"
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和调查受限用户
 
-有几个选项可以导航到受限用户列表。 例如，在安全与&中心，可以转到"威胁管理"" \> **审阅受限** \> **用户"。** 以下过程介绍使用 **警报** 仪表板的导航，这是查看可能触发的各种警报的一个好方法。
+有几个选项可以导航到受限用户列表。 例如，在 Microsoft 365 Defender门户中，可以转到"电子邮件&**协作** \> **""** 审阅受限 \> **用户"。** 以下过程介绍使用 **警报** 仪表板的导航，这是查看可能触发的各种警报的一个好方法。
 
-1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。
+1. 打开Microsoft 365 Defender门户 <https://security.microsoft.com> () 转到"事件&**警报** \> **"。** 或者，若要直接转到 **警报** 页面，请使用 <https://security.microsoft.com/alerts> 。
 
-2. 在导航窗格中，选择 **警报** \> **仪表板**。
+2. 在" **通知"** 页上，按时间段筛选结果，并筛选名为"用户 **限制发送电子邮件"的策略**。
 
-3. 在"**其他警报"小** 组件中，选择"**受限用户"。**
+   ![已针对受限用户Microsoft 365 Defender通知门户中的"通知"页](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![其他警报小组件](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. If you select the entry by clicking on the name， a **User restricted from sending email** page opens with additional details for you to review. 在"**管理警报**"按钮旁边，可以单击"更多选项"图标"更多选项"，然后选择"查看受限用户详细信息"转到"受限用户"页面，可在其中释放 ![ ](../../media/m365-cc-sc-more-actions-icon.png) [受限用户](removing-user-from-restricted-users-portal-after-spam.md)。  
 
-   这将打开受限用户的列表。
-
-   ![网站中的受限Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. 在列表中选择用户帐户以查看详细信息并采取措施，例如 [释放受限制的用户](removing-user-from-restricted-users-portal-after-spam.md)。
+   ![被限制从警报中心发送电子邮件的用户页面](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>查看有关自动调查的详细信息
 

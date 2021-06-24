@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何使用配置分析器查找和修复低于"标准保护"和"严格保护"预设安全策略的安全策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 01a9b3a2b01a3cfc95a3911f75907cbe0ef9d58f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878660"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108423"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器
 
@@ -34,7 +34,7 @@ ms.locfileid: "52878660"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender 门户中的配置分析器提供了一个中心位置，用于查找和修复安全策略，其中设置位于预设安全策略中的"标准保护"和"严格保护配置文件"[设置下方](preset-security-policies.md)。
+Microsoft 365 Defender门户中的配置分析器提供了一个中心位置，用于查找和修复安全策略，其中设置位于预设安全策略中的"标准保护"和"严格保护配置文件"[设置下方](preset-security-policies.md)。
 
 配置分析器分析以下类型的策略：
 
@@ -57,25 +57,25 @@ Microsoft 365 Defender 门户中的配置分析器提供了一个中心位置，
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com> 。 若要直接转到配置 **分析器页面** ，请使用 <https://security.microsoft.com/configurationAnalyzer> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到配置 **分析器页面** ，请使用 <https://security.microsoft.com/configurationAnalyzer> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 你需要在 defender 门户中Microsoft 365权限，然后才能执行本文中的过程：
+- 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
   - 若要使用 **配置分析器** 并更新安全策略，您必须是组织管理或安全 **管理员角色****组** 的成员。
   - 若要对配置分析器进行只读访问，你需要是全局读取 **者** 或安全读者 **角色组的成员** 。
 
-  有关详细信息，请参阅 Defender 门户[中Microsoft 365权限](permissions-microsoft-365-security-center.md)。
+  有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >  
-  > - 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender 门户中所需的权限，以及针对Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender _门户中_ 所需的权限，以及用户对 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>使用 Microsoft 365 Defender 门户中的配置分析器
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>使用配置门户中的Microsoft 365 Defender器
 
-In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** \>  \> **Templated policies section** Configuration \> **analyzer**.
+In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Templated policies section** Configuration \> **analyzer**.
 
 " **配置分析器** "页有两个主要选项卡：
 

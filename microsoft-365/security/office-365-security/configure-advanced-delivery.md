@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 819f78883aa75fbbdded2e47c1bb85945f080233
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879104"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108399"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -62,20 +62,20 @@ ms.locfileid: "52879104"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 在 打开Microsoft 365 Defender 门户 <https://security.microsoft.com> 。 若要直接转到高级传递 **页面，** 请打开 <https://security.microsoft.com/advanceddelivery> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到高级传递 **页面，** 请打开 <https://security.microsoft.com/advanceddelivery> 。
 
 - 您需获得权限，然后才能执行本文中的过程：
-  - 若要在高级传递策略中创建、修改或删除配置的设置，你需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组** 的成员。   
+  - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组的成员**。   
   - 若要对高级传递策略进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅 Microsoft 365 Defender 门户[中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
+  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
-  > 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender 门户中所需的权限，以及针对Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender _门户中_ 所需的权限，以及用户对 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender 门户在高级传递策略中配置 SecOps 邮箱
+## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender门户在高级传递策略中配置 SecOps 邮箱
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** \>  \>  section \> **Advanced delivery**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** threat \> **policies** page \> **Rules** section \> **Advanced delivery**.
 
 2. 在" **高级传递"** 页上，确认 **"SecOps** 邮箱"选项卡已选中，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**
@@ -93,9 +93,9 @@ ms.locfileid: "52879104"
 
 您配置的 SecOps 邮箱条目显示在 **SecOps** 邮箱选项卡上。若要进行更改，请单击选项卡 ![ 上的" ](../../media/m365-cc-sc-edit-icon.png) 编辑"图标"编辑"。
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender 门户在高级传递策略中配置第三方网络钓鱼模拟
+## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用Microsoft 365 Defender门户在高级传递策略中配置第三方网络钓鱼模拟
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **rules** \>  \>  section \> **Advanced delivery**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** threat \> **policies** page \> **Rules** section \> **Advanced delivery**.
 
 2. 在" **高级传递"** 页上，选择" **网络钓鱼模拟** "选项卡，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**

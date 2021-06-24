@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用数据丢失防护策略和工具Microsoft 365敏感信息，并浏览 DLP 生命周期。
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244608"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108255"
 ---
 # <a name="learn-about-data-loss-prevention"></a>了解终结点数据丢失防护
 
@@ -56,14 +56,14 @@ Microsoft 365DLP 策略是监视用户对其余敏感项目、传输中的敏感
 
 DLP 实现通常遵循以下主要阶段。
 
-- [规划 DLP](#plan-for-dlp)
+- [DLP 计划](#plan-for-dlp)
 - [准备 DLP](#prepare-for-dlp)
 - [在生产中部署策略](#deploy-your-policies-in-production)
 
 
 <!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
-### <a name="plan-for-dlp"></a>规划 DLP
+### <a name="plan-for-dlp"></a>DLP 计划
 
 Microsoft 365DLP 监视和保护对于用户每天使用的应用程序是本机的。 这有助于保护组织的敏感项目免受风险活动的影响，即使用户未习惯数据丢失防护的思路和做法。 如果您的组织和用户对数据丢失防护做法没有了解，则采用 DLP 可能需要更改业务流程，并且您的用户会进行文化转变。 但是，通过适当的规划、测试和调整，DLP 策略将保护敏感项目，同时最大限度地减少任何潜在的业务流程中断。
 
@@ -87,7 +87,7 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 - Exchange Online电子邮件
 - SharePoint Online 站点
-- OneDrive 帐户
+- OneDrive 账户
 - Teams 聊天和通道消息
 - Microsoft Cloud App Security
 - Windows 10 设备
@@ -121,7 +121,9 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>启用控制并调整策略
 
-策略满足所有目标后，将其打开。 继续监视策略应用程序的结果并根据需要进行调整。 一般情况下，策略在打开后大约一小时生效。 <!--查看位置特定详细信息 SLA 的 LINK TO 主题-- >
+策略满足所有目标后，将其打开。 继续监视策略应用程序的结果并根据需要进行调整。 一般情况下，策略在打开后大约一小时生效。 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## <a name="dlp-policy-configuration-overview"></a>DLP 策略配置概述
 
@@ -189,7 +191,7 @@ DLP 报告大量信息，Microsoft 365监视、策略匹配和操作以及用户
 > [!div class="mx-imgBorder"]
 > ![事件信息](../media/Event-info-1.png)
 
-### <a name="reports"></a>报表
+### <a name="reports"></a>报告
 
 [DLP 报告](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention)显示了一段时间的广泛趋势，并提供了以下具体见解：
 

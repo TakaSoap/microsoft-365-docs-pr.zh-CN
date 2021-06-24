@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for 保险箱 中查看、创建、修改和删除保险箱链接策略和全局 保险箱 链接Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 8d42051d2ca4f26758cbe7334d427f3f93178f97
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096764"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108207"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置链接策略Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "53096764"
 
   > [!NOTE]
   >
-  > - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   . - **Exchange Online** 中的"仅查看组织管理"[](/Exchange/permissions-exo/permissions-exo#role-groups)角色组还授予对该功能的只读访问权限。
 
 - 有关推荐的链接策略保险箱，请参阅保险箱[链接策略设置。](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
@@ -134,7 +134,7 @@ ms.locfileid: "53096764"
 
    有关"标准"和"严格"策略设置的建议值，请参阅保险箱[链接策略设置"](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
-   完成后，单击“**下一步**”。
+   完成后，请单击“**下一步**”。
 
 6. 在 **出现的"** 通知"页上，为"如何通知用户？"选择下列值 **之一**：
    - **使用默认通知文本**
@@ -142,11 +142,11 @@ ms.locfileid: "53096764"
      - **使用Microsoft 翻译工具进行自动本地化**
      - **自定义通知文本**：在此框中输入自定义通知文本。
 
-   完成后，单击“**下一步**”。
+   完成后，请单击“**下一步**”。
 
 7. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
-   完成后，单击"提交 **"。**
+   完成后，请单击“**提交**”。
 
 8. 在出现的确认页面上，单击“**完成**”。
 
@@ -173,7 +173,7 @@ ms.locfileid: "53096764"
 
 ### <a name="enable-or-disable-safe-links-policies"></a>启用或禁用保险箱链接策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **保险箱 Links**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **保险箱 Links**.
 
 2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。
 
@@ -198,7 +198,7 @@ ms.locfileid: "53096764"
 - 在Microsoft 365 Defender门户中，只能在创建"链接保险箱策略的优先级。 在 PowerShell 中，您可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则或规则) 。
 - 保险箱按照链接策略的显示顺序处理 (优先级值为 0 时) 。  有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **保险箱 Links**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **保险箱 Links**.
 
 2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。
 
@@ -213,7 +213,7 @@ ms.locfileid: "53096764"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>使用 Microsoft 365 Defender 门户删除保险箱链接策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** \> **Policies** section \> **保险箱 Links**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **保险箱 Links**.
 
 2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。 在出现的策略详细信息浮出控件顶部，单击![“更多操作”图标](../../media/m365-cc-sc-more-actions-icon.png)“**更多操作**”\> ![“删除策略”图标](../../media/m365-cc-sc-delete-icon.png)“**删除策略**”。
 

@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083484"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108291"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -115,11 +115,11 @@ ms.locfileid: "53083484"
 
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：将用户添加到 Azure Active Directory 角色Microsoft 365 管理中心为用户提供了对 Microsoft 365 中其他功能所需的权限。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  **注意**：将用户添加到 Azure Active Directory 角色Microsoft 365 管理中心为用户提供了对 Microsoft 365 中其他功能所需的权限。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender门户向用户分配预设安全策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Policies & \> **Rules** \> **Threat Policies** \> **Templated policies** section Preset Security \> **Policies**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Templated policies** section Preset Security \> **Policies**.
 
 2. 在 **"标准保护"** 或 **"严格保护"下，** 单击"**编辑"。**
 
@@ -140,7 +140,7 @@ ms.locfileid: "53083484"
 
    设置和行为与适用于页面 **的 EOP 保护完全相同** 。
 
-   完成后，单击“**下一步**”。
+   完成后，请单击“**下一步**”。
 
 5. 在"**查看并确认更改"** 页上，验证您的选择，然后单击"确认 **"。**
 

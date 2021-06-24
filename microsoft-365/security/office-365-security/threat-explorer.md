@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 使用安全中心中的资源管理器Microsoft 365实时检测，以有效地调查和响应威胁。
+description: 使用浏览器门户中的资源管理器和实时检测Microsoft 365 Defender调查和响应威胁。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083220"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108543"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
