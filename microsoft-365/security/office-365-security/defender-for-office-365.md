@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 66afaa56efa93faef3fcc6ff8346df24681a0a50
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029869"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083016"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -81,7 +81,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 |Microsoft Defender for Office 365 计划 1|Microsoft Defender for Office 365 计划 2|
 |---|---|
-|配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保护中的防钓鱼](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 计划 1 功能 <br>--- + ---<br> 自动化、调查、补救措施和教育功能：<ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟器](attack-simulator.md)</li><li>[市场活动视图](campaigns.md)</li></ul>|
+|配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保护中的防钓鱼](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 计划 1 功能 <br>--- + ---<br> 自动化、调查、补救措施和教育功能：<ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟培训](attack-simulation-training.md)</li><li>[市场活动视图](campaigns.md)</li></ul>|
 |
 
 - Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5 中包含 Microsoft Defender for Office 365 计划 2。
@@ -96,7 +96,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 
-借助 Microsoft Defender for Office 365，组织的安全团队可以通过在 Microsoft 365 Defender 门户中定义策略来配置保护（转到 <https://security.microsoft.com> \>“**电子邮件和协作**”\>“**策略和规则**”）。
+借助 Microsoft Defender for Office 365，组织的安全团队可以通过在 Microsoft 365 Defender 门户中定义策略来配置保护（转到  <https://security.microsoft.com>\>**电子邮件和协作**\>**策略和规则**\>**威胁策略**）。
 
 观看[此视频](https://www.youtube.com/watch?v=vivvTmWJ_3c)了解更多信息。
 
@@ -133,7 +133,7 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 
 - **[威胁资源管理器（或实时检测）](threat-explorer.md)** 也称为“资源管理器”，它是一种实时报表，可用于识别和分析最近的威胁。 可配置资源管理器显示自定义期间的数据。
 
-- **[攻击仿真程序](attack-simulator.md)** 使你能够在组织中运行现实的攻击方案以确定漏洞。 可仿真当前类型的攻击，包括鱼叉式网络钓鱼凭据收集和附件攻击、密码喷射攻击和暴力密码攻击。
+- **[攻击仿真程序](attack-simulation-training.md)** 使你能够在组织中运行现实的攻击方案以确定漏洞。 可仿真当前类型的攻击，包括鱼叉式网络钓鱼凭据收集和附件攻击、密码喷射攻击和暴力密码攻击。
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>节省自动调查和响应的时间
 
@@ -178,5 +178,4 @@ Microsoft Defender for Office 365 包含在特定订阅中，如 Microsoft 365 E
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 - [Microsoft 365 Defender 中的自动调查和响应 (AIR)](../defender/m365d-autoir.md)

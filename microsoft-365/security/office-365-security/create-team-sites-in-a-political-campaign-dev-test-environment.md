@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 80c975cd181f326fc2766c6ebfbd0d7f8a5164f2
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029893"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108147"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -46,7 +46,7 @@ ms.locfileid: "53029893"
 
 此阶段将针对 SharePoint Online 团队网站文档文件夹的不同安全级别创建标签。
 
-1. 如有需要，请使用试用订阅的全局管理员帐户凭据登录 Microsoft 365 管理中心（<https://admin.microsoft.com>）。 如需帮助，请参阅 [在何处登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如有需要，请使用试用订阅的全局管理员帐户凭据登录 Microsoft 365 管理中心（<https://admin.microsoft.com>）。如需帮助，请参阅[在何处登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在开始操作的 **主页** 页面中，单击“**全部显示**”。 在显示的 **管理中心** 部分中，单击“**合规性**”。
 
@@ -377,7 +377,7 @@ ms.locfileid: "53029893"
 
 接下来，通过执行以下步骤，使用新作用域内策略以及保护和权限的子标签来配置 Azure 信息保护：
 
-1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全管理员或公司管理员角色的帐户登录到管理中心。有关帮助信息，请参阅 [在何处登录 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在浏览器的单独选项卡中，转到 Azure 门户 (<https://portal.azure.com>)。
 
