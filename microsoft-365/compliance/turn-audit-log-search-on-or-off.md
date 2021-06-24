@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: 如何打开或关闭安全与合规中心Microsoft 365审核日志搜索功能，以启用或禁用管理员搜索审核日志。
-ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 如何打开或关闭审核日志搜索功能Microsoft 365 合规中心启用或禁用管理员搜索审核日志。
+ms.openlocfilehash: 7c55443eda9a99ff4ef153d8564fd9ac43fcc549
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706657"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105304"
 ---
 # <a name="turn-auditing-on-or-off"></a>打开或关闭审核
 
@@ -39,7 +39,7 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
 - 必须分配有"审核日志"角色Exchange Online在组织中启用或Microsoft 365审核。 默认情况下，此角色分配给管理中心中"权限"页上的"合规性管理"和"组织Exchange组。 Microsoft 365中的全局管理员是组织中组织管理角色Exchange Online。 
 
     > [!NOTE]
-    > 用户必须分配有权限Exchange Online才能启用或关闭审核。 如果在安全与合规中心的"权限"页上为用户分配"审核&"角色，他们将不能启用或关闭审核。 这是因为基础 cmdlet 是一个Exchange Online PowerShell cmdlet。 
+    > 用户必须分配有权限Exchange Online才能启用或关闭审核。 如果在安全与合规中心的"权限"页上为用户分配"审核&"角色，他们将不能启用或关闭审核。 这是因为基础 cmdlet 是一个Exchange Online PowerShell cmdlet。
 
 - 有关搜索安全与合规中心的分步审核日志，请参阅在安全审核日志[搜索&搜索。](search-the-audit-log-in-security-and-compliance.md) 有关管理活动 API Microsoft 365，请参阅 Microsoft 365 管理[API 入门](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
@@ -59,7 +59,7 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
 
 1. 转到 <https://compliance.microsoft.com> 并登录。
 
-2. 在合规性中心的左侧导航Microsoft 365，单击"全部 **显示**"，然后单击"审核 **"。**
+2. 在页面的左侧导航窗格中Microsoft 365 合规中心"**全部显示**"，然后单击"审核 **"。**
 
    如果未为组织启用审核，则会显示横幅，提示你开始录制用户和管理员活动。
 
@@ -103,6 +103,6 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
 
       `False` _UnifiedAuditLogIngestionEnabled_ 属性的值指示审核已关闭。
 
-    - 转到合规性 **中心** 中的Microsoft 365页面。
+    - 转到 **"审核**"页Microsoft 365 合规中心。
 
       如果未为组织启用审核，则会显示横幅，提示你开始录制用户和管理员活动。

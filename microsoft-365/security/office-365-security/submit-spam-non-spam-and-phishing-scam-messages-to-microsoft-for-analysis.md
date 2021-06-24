@@ -18,12 +18,12 @@ description: 管理员和最终用户可以了解如何发送电子邮件， (�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929763"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105544"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交到 Microsoft 进行分析
 
@@ -35,7 +35,7 @@ ms.locfileid: "52929763"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用 Microsoft 365 Defender 门户中的提交门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用"提交"页面，Microsoft 365 Defender门户。  有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 如果组织的用户在收件箱中收到垃圾邮件 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，可能很令人沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
@@ -47,7 +47,7 @@ ms.locfileid: "52929763"
 ## <a name="submit-false-negatives-to-microsoft"></a>向 Microsoft 提交漏报
 
 > [!TIP]
-> Outlook 和 Outlook (网页用户（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
+> Outlook 和 Outlook 网页版 (中以前称为 Outlook Web App) 的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
 
 如果您收到通过垃圾邮件筛选且应被标识为垃圾邮件或网络钓鱼的邮件，您可以将该邮件提交到 Microsoft 垃圾邮件分析团队和 Microsoft 网络钓鱼分析团队（如果适用）。 如果邮件符合分类条件，分析员将查看邮件并将其添加到服务范围的筛选器。
 
@@ -72,7 +72,7 @@ ms.locfileid: "52929763"
 ## <a name="submit-false-positives-to-microsoft"></a>向 Microsoft 提交误报
 
 > [!TIP]
-> Outlook 和 Outlook 网页 (（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告误报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
+> Outlook 和 Outlook 网页版 中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告误报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
 
 如果邮件被错误地标识为垃圾邮件，你可以将邮件提交给 Microsoft 垃圾邮件分析团队。 分析员将评估邮件， (根据分析结果) 可以调整服务范围的筛选器以允许邮件通过。
 

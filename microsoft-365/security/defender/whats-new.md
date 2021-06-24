@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096812"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105400"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -38,8 +38,12 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>2021 年 6 月
-- 威胁分析[Microsoft 365 Defender中的威胁标记](threat-analytics.md) <br> 威胁标记可帮助你专注于特定威胁类别并查看最相关的报告。 
+
+## <a name="may-2021"></a>2021 年 5 月
+
+- [门户中的新警报Microsoft 365 Defender页](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> 提供针对攻击的上下文的增强信息。 你可以看到其他触发的警报导致了当前警报，以及攻击中涉及的所有受影响的实体和活动，包括文件、用户和邮箱。 有关详细信息 [，请参阅](/microsoft-365/security/defender/investigate-alerts) 调查警报。
+- [事件和警报趋势图Microsoft 365 Defender门户](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> 确定单个事件是否具有多个警报，或者您的组织是否受到多个不同事件的攻击。 有关详细信息 [，请参阅确定](/microsoft-365/security/defender/incident-queue) 事件的优先级。
+
 
 ## <a name="april-2021"></a>2021 年 4 月
 - Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。

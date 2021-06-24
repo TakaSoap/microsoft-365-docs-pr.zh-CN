@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083676"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105388"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -95,7 +95,7 @@ ms.locfileid: "53083676"
 
 3. 在打开的策略详细信息飞出控件中，单击" **编辑保护设置"，** 然后配置以下设置：
    - **保护设置** 部分：
-     - 选择 **"启用常用附件筛选器** "以打开常用附件筛选器。 单击 **"自定义文件类型** "以添加更多文件类型。
+     - **启用常用附件筛选器**：选择 (启用) 。 单击 **"自定义文件类型** "以添加更多文件类型。
      - **启用恶意软件的零时差自动清除**：验证此设置是否被选中。 有关恶意软件的 ZAP 详细信息，请参阅恶意软件的零时 ([ZAP](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)) 清除。
    - **通知** 部分：验证是否未选择任何通知设置。
 
@@ -251,7 +251,7 @@ ms.locfileid: "53083676"
 2. 在 **"保险箱"** 页上，单击"全局设置"，然后在出现的飞出页面上配置以下设置：
    - **设置支持的应用部分中的内容Office 365应用**：
      - **Use 保险箱 Links in Office 365 apps**： Verify this setting is turned on (Toggle on ![ ](../../media/scc-toggle-on.png)) .
-     - **Do not track when users click protected links in Office 365 apps**： Turn this setting off (Toggle off ![ ](../../media/scc-toggle-off.png)) 
+     - **Do not track when users click protected links in Office 365 apps**： Turn this setting off (Toggle off ![ ](../../media/scc-toggle-off.png)) .
      - **请勿让用户单击浏览** 到 Office 365 应用中的原始 URL：验证此设置是否 ("切换 ![ ](../../media/scc-toggle-on.png) ") 。
 
    完成后，单击"保存 **"**

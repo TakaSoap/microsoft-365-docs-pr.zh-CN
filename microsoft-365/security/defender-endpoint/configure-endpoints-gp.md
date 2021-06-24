@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841830"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105682"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
@@ -119,9 +119,9 @@ ms.locfileid: "52841830"
 
 所有策略都位于 下 `Computer Configuration\Policies\Administrative Templates` 。
 
-**策略位置：\Windows** Components\Windows Defender SmartScreen*
+**策略位置：\Windows** Components\Windows Defender ATP
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例集合"
 
@@ -129,7 +129,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 配置对可能不需要的应用程序的检测 | 已启用、阻止
 
@@ -137,7 +137,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 加入 Microsoft MAPS | 已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -146,7 +146,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 关闭实时保护|禁用
 打开行为监视|已启用
@@ -155,11 +155,11 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 <br/>
 
-**策略位置：\Windows** Components\Microsoft Defender AntivirusScan
+**策略位置：\Windows** Components\Microsoft Defender 防病毒\Scan
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -184,7 +184,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 配置受控文件夹访问权限| 已启用，审核模式
 

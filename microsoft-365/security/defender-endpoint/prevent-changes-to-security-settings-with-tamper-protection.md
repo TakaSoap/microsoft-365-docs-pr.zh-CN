@@ -16,13 +16,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 06/17/2021
-ms.openlocfilehash: 7050a1588b71ac106d5364f29c76d379072e9511
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.date: 06/23/2021
+ms.openlocfilehash: 2e0724900de30629292cdcdc055d3ad3a1867b20
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007413"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105412"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -37,7 +37,7 @@ ms.locfileid: "53007413"
 - Windows服务器版本 1803 或更高版本
 - Windows Server 2016
 
-## <a name="overview"></a>概述
+## <a name="overview"></a>概览
 
 在某些类型的网络攻击期间，不良参与者会尝试在你的计算机上禁用安全功能，如防病毒保护。 不良操作者希望禁用安全功能，以便更轻松地访问数据、安装恶意软件，或者以其他方式利用你的数据、标识和设备。 防篡改保护有助于防止这些类型的事件发生。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53007413"
 
 ### <a name="how-it-works"></a>运作方式
 
-防篡改保护实质上Microsoft Defender 防病毒锁定和阻止通过应用和方法更改安全设置，例如：
+篡改保护实质上Microsoft Defender 防病毒其安全的默认值，并阻止通过应用和方法更改安全设置，例如：
 
 - 在注册表编辑器中配置Windows设备
 - 通过 PowerShell cmdlet 更改设置
@@ -72,16 +72,16 @@ ms.locfileid: "53007413"
 | 查看安全建议 | [查看安全建议](#review-your-security-recommendations) |
 | 查看常见问题解答和常见问题 (列表)  | [浏览常见问题解答](#view-information-about-tampering-attempts) |
 
-根据用于启用防篡改保护的方法或管理工具，MAPS 和云提供的 (可能) 。 
+根据用于启用篡改保护的方法或管理工具，可能依赖于云提供的保护。 
 
 下表提供了有关方法、工具和依赖项的详细信息。
 
-| 如何启用防篡改保护  | 对 MAPS 的依赖 (云提供的保护)     |
+| 如何启用防篡改保护  | 依赖云提供的保护 (MAPS)     |
 |:----|:----|
 | Microsoft Intune  | 否 |
 | Microsoft Endpoint Configuration Manager + 租户附加  |     否  |
-| [https://securitycenter.windows.com](https://securitycenter.windows.com)Microsoft Defender 安全中心 ()     |     是的。 |
-| Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()   |     是的。  |
+| [https://securitycenter.windows.com](https://securitycenter.windows.com)Microsoft Defender 安全中心 ()     |     是 |
+| Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()   |     是  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>使用管理程序管理组织的防篡改Microsoft Defender 安全中心
 
@@ -89,7 +89,7 @@ ms.locfileid: "53007413"
 
 - 目前，新部署中用于管理Microsoft Defender 安全中心保护的选项默认处于打开状态。 对于现有部署，可选择性地使用防篡改保护，并计划在近期选择默认方法。  (要选择加入，请选择"Microsoft Defender 安全中心"设置"  >  **高级** 功能  >  **篡改** 保护")  
 
-- 当你使用 Microsoft Defender 安全中心管理篡改保护时，你不需要使用 Intune 或租户附加方法。
+- 使用 Microsoft Defender 安全中心管理篡改保护时，不需要使用 Intune 或租户附加方法。
 
 - 在 Microsoft Defender 安全中心 中管理防篡改保护时，该设置将应用于租户范围，从而影响运行 Windows 10、Windows Server 2016 或 Windows Server 2019 的所有设备。 若要微调防篡改 (例如在某些设备上对防篡改保护，但其他设备) ，请使用[Intune](#manage-tamper-protection-for-your-organization-using-intune)或具有租户附加的[Configuration Manager。](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 
@@ -168,7 +168,7 @@ ms.locfileid: "53007413"
 
 2. 使用 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet。
 
-3. 在结果列表中，查找 `IsTamperProtected` 。  (true *的值表示* 已启用防篡改保护。) 在结果列表中查找 `RealTimeProtectionEnabled` 。  (值为 true 表示已启用防篡改) 
+3. 在结果列表中，查找 或 `IsTamperProtected` `RealTimeProtectionEnabled` 。  (值为 *true* 表示已启用防篡改) 
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>使用 Configuration Manager 版本 2006 管理组织的篡改保护
 
@@ -181,7 +181,8 @@ ms.locfileid: "53007413"
 
 1. 设置租户附加。 若要了解更多信息，请参阅Microsoft Endpoint Manager[附加：设备同步和设备操作](/mem/configmgr/tenant-attach/device-sync-actions)。
 
-2. In the [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431)go to **Endpoint security**  >  **Antivirus**， and then choose **+ Create Policy**.<br/> 
+2. In the [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431)go to **Endpoint security**  >  **Antivirus**， and then choose **+ Create Policy**. 
+
    - 在"**平台"** 列表中，选择"Windows 10 **Windows Server (ConfigMgr) "。**  
    - 在"**配置文件"** 列表中 **，Windows 安全中心预览 (体验) 。** <br/>
 
@@ -223,7 +224,7 @@ ms.locfileid: "53007413"
 
 ![Microsoft Defender 安全中心](images/tamperattemptalert.png)
 
-使用[终结点检测和响应](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)和[](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)Microsoft Defender for Endpoint 中的高级搜寻功能，你的安全运营团队可以调查和处理此类尝试。
+使用 Microsoft Defender [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) [for](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) Endpoint 中的终结点检测和响应以及高级搜寻功能，安全运营团队可以调查和处理此类尝试。
 
 ## <a name="review-your-security-recommendations"></a>查看安全建议
 
@@ -243,7 +244,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="will-tamper-protection-have-any-impact-on-third-party-antivirus-registration"></a>篡改保护是否将影响第三方防病毒注册？
 
-不正确。 第三方防病毒产品将继续在应用程序Windows 安全中心注册。
+否。 第三方防病毒产品将继续在应用程序Windows 安全中心注册。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>如果设备Microsoft Defender 防病毒处于活动状态，会发生什么情况？
 
@@ -283,7 +284,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>我是企业客户。 本地管理员能否更改其设备的篡改保护？
 
-不正确。 本地管理员无法更改或修改篡改保护设置。
+否。 本地管理员无法更改或修改篡改保护设置。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>如果我的设备已载入 Microsoft Defender for Endpoint，然后进入板载状态，会发生什么情况？
 

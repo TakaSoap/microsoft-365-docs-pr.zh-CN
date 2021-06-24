@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841783"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105568"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -349,6 +349,21 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
         ```bash
         mdatp threat list
         ```
+
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>通过模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
+
+若要测试适用于 Linux EDR的功能，请按照以下步骤在 Linux 服务器上模拟检测并调查这种情况。 
+
+1.  验证已载入的 Linux 服务器是否Microsoft Defender 安全中心。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。 
+
+2.  将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
+
+3.  几分钟后，应在测试中引发Microsoft Defender 安全中心。
+
+4.  查看警报详细信息、计算机时间线，并执行典型的调查步骤。
+
+
+
 
 ## <a name="installer-script"></a>安装程序脚本
 

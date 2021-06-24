@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929439"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105328"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -76,7 +76,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 我们的所有更新都包含 
 - 性能改进;
 - 可服务性改进;和 
-- 集成改进 (云[，Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)) 。
+- 云 (集成[改进](/microsoft-365/security/defender/microsoft-365-defender)Microsoft 365 Defender) 。
 <br/><br/>
 <details>
 <summary> 2021 年 5 月 (平台：4.18.2105.4 |引擎：1.1.18200.4) </summary>
@@ -105,6 +105,8 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 ### <a name="whats-new"></a>最近更新
 - 其他行为监视逻辑
 - 改进了内核模式键记录器检测
+- 添加了新控件来管理 Microsoft Defender 更新的逐步 [推出过程](manage-gradual-rollout.md)
+
 
 ### <a name="known-issues"></a>已知问题
 无已知问题  

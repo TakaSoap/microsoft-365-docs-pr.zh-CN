@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840666"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105292"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>为组织管理 Microsoft 反馈
 
-作为 Microsoft 365 管理员，现在有几种策略可帮助您管理用户在使用 Microsoft 365 应用程序时的反馈收集和客户参与体验。 你可以针对每个策略在组织中创建和使用现有 Azure Active directory 组。 通过这些管理，你可以控制组织中不同部门向 Microsoft 发送反馈的方式。 Microsoft 会审核客户提交的所有反馈，并使用此反馈改进产品。 将反馈体验保持 **打开** 可让你查看用户关于他们使用的 Microsoft 产品的意见。 我们从你的用户收集的反馈将很快在管理中心Microsoft 365提供。
+作为 Microsoft 365 管理员，现在有几种策略可帮助您管理用户在使用 Microsoft 365 应用程序时的反馈收集和客户参与体验。 你可以针对每个策略在组织中创建和使用现有 Azure Active directory 组。 通过这些管理，你可以控制组织中不同部门向 Microsoft 发送反馈的方式。 Microsoft 会审核客户提交的所有反馈，并使用此反馈改进产品。 将反馈体验保持 **打开** 可让你查看用户关于他们使用的 Microsoft 产品的意见。 我们从你的用户收集的反馈将很快在 Microsoft 365 管理中心。
 
 若要了解有关反馈类型以及 Microsoft 如何使用用户反馈的信息，请参阅 [了解组织的 Microsoft 反馈](../misc/feedback-user-control.md)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "52840666"
 
 ## <a name="configure-policies"></a>配置策略
 
-1. 转到 [https://config.office.com](https://config.office.com) ，然后以具有全局管理员权限的用户登录。
+1. 转到 [https://config.office.com](https://config.office.com) 并登录。
 1. 选择 **"自定义**"，然后选择 **"策略管理"。**
 1. 选择 **创建**。
 1. 输入 **名称和****说明**。

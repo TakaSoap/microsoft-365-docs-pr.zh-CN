@@ -20,12 +20,12 @@ ms.custom:
 description: 本主题将指导你完成对影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b1bb3f9bf6507e41d8b927137a9ab9ea8803637c
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929571"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105520"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -42,30 +42,30 @@ ms.locfileid: "52929571"
 
 Office 365安全分数根据常规活动和安全设置分析组织的安全性，并分配分数。 首先记下当前分数。 调整一些租户范围的设置将增加你的分数。 目标不是获得最大分数，而是注意保护环境的机会，这些机会不会对用户的工作效率产生负面影响。 请参阅 [Microsoft 安全分数](../defender/microsoft-secure-score.md)。
 
-## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>优化 Microsoft 365 Defender 门户中的威胁管理策略
+## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>优化威胁管理门户中Microsoft 365 Defender策略
 
-Microsoft 365 Defender 门户包含可保护你的环境的功能。 它还包括可用于监视和采取措施的报告和仪表板。 某些区域具有默认策略配置。 某些区域不包括默认策略或规则。 访问威胁管理下的这些策略，以调整威胁管理设置，以创建更安全的环境。
+Microsoft 365 Defender门户包含用于保护环境的功能。 它还包括可用于监视和采取措施的报告和仪表板。 某些区域具有默认策略配置。 某些区域不包括默认策略或规则。 访问电子邮件和协作策略 **&** 策略&策略"下的这些策略，以调整 \>  \> 威胁管理设置，实现更安全的环境。
 
 <br>
 
 ****
 
-|领域|包括默认策略|建议|
+|领域|默认策略？|建议|
 |---|---|---|
-|**防钓鱼**|是|<ul><li>模拟保护 - 如果你有适用于 Office 365 的 Defender 和自定义域，请配置默认防钓鱼策略中的模拟保护设置，以保护最有价值用户的电子邮件帐户（如 CEO）并保护你的域。 详细信息：[反网络钓鱼策略中的模拟设置和](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)[模拟见解](impersonation-insight.md)</li><li>欺骗智能 — 审查正在欺骗你的域的发件人。 阻止或允许这些发件人。 详细信息 [：EOP 中的欺骗智能](learn-about-spoof-intelligence.md) 见解 [和管理租户允许/阻止列表](tenant-allow-block-list.md)。</li></ul>|
-|**反恶意软件引擎**|是|编辑默认策略： <ul><li>选择 **"启用常用附件筛选器"**</li></ul> <p> 您还可以创建自定义恶意软件筛选器策略，并应用于组织中指定的用户、组或域。 <p> 详细信息： <ul><li>[反恶意软件保护](anti-malware-protection.md)</li><li>[配置反恶意软件策略](configure-anti-malware-policies.md)</li></ul>|
-|**保险箱Microsoft Defender for Office 365**|否|在"附件"保险箱主页上，单击"**全局设置**"并启用此设置： <ul><li>**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365**</li></ul> <p> 使用保险箱创建"附件"策略： <ul><li> **阻止**：选择 **"阻止** "作为未知恶意软件响应。</li><li>**启用重定向**：选中此框并输入电子邮件地址，例如管理员或隔离帐户。</li><li>**如果恶意软件扫描附件出现时间过或出现错误，请** 应用上述选择：选中此框。</li><li>**_应用于_*： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息[：保险箱附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)设置保险箱[附件策略](set-up-safe-attachments-policies.md)|
-|**保险箱Microsoft Defender for Office 365**|是|在"链接"保险箱，单击"**全局设置"：** <ul><li>**Use 保险箱 Links in： Office 365 applications**： Verify this setting is turned on.</li><li>**Do not track when users click 保险箱 Links**： Turn this setting off to track user clicks.</li></ul> <p> 使用保险箱创建链接策略： <ul><li>**选择邮件中未知潜在恶意 URL 的操作**：验证此设置为 **"打开"。**</li><li>**Select the action for unknown or potentially malicious urls within Microsoft Teams**： Verify this setting is **On**.</li><li>**对指向文件的可疑链接应用实时 URL** 扫描：选中此框。</li><li>**等待 URL 扫描完成，然后再传递消息**：选中此框。</li><li>**Apply 保险箱 Links to email messages sent within the organization**： Check this box</li><li>**不允许用户单击到原始 URL：** 选中此框。</li><li>**应用于**： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息：[设置保险箱链接策略。](set-up-safe-links-policies.md)|
-|**反垃圾邮件 (邮件筛选)**|是| 监视内容：垃圾邮件过多 — 选择"自定义"设置并编辑"默认垃圾邮件筛选器"策略。 详细信息[：Microsoft 365电子邮件反垃圾邮件保护。](anti-spam-protection.md)|
-|***电子邮件身份验证***|是|电子邮件身份验证使用域名系统 (DNS) 向电子邮件添加有关电子邮件发件人的可验证信息。 Microsoft 365为默认域设置电子邮件 (onmicrosoft.com) ，Microsoft 365管理员也可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法： <ul><li>发件人策略框架 (SPF) 。</li><ul><li>有关设置，请参阅在 Microsoft 365[中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>域密钥标识的邮件 (DKIM) 。</li><ul><li>请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。</li><li>配置 DKIM 后，在 defender 门户中Microsoft 365 DKIM。</li></ul><li>基于域的邮件身份验证、报告和一致性 (DMARC) 。</li><ul><li>对于 DMARC[设置 使用 DMARC 验证电子邮件Microsoft 365。](use-dmarc-to-validate-email.md)</li></ul></ul>|
+|**防钓鱼**|是|配置默认的防钓鱼策略，如下所述：[在 EOP](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)和 Defender 中配置防钓鱼保护设置Office 365。 <p> 详细信息： <ul><li>[邮件中的防钓鱼Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [模拟见解](impersonation-insight.md)</li><li>[EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)</li><li>[管理租户允许/阻止列表](tenant-allow-block-list.md)。</li></ul>|
+|**反恶意软件引擎**|是|配置默认反恶意软件策略，如下所述：在 [EOP 中配置反恶意软件保护设置](protect-against-threats.md#part-1---anti-malware-protection-in-eop)。 <p> 详细信息： <ul><li>[反恶意软件保护](anti-malware-protection.md)</li><li>[建议的反恶意软件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[配置反恶意软件策略](configure-anti-malware-policies.md)</li></ul>|
+|**Defender for Office 365 中的安全文档**|否|配置"附件"保险箱全局设置，并创建保险箱"附件"策略，如下所述：在 Microsoft Defender 中配置保险箱[附件设置Office 365。](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365) <p> 详细信息： <ul><li>[建议保险箱附件设置](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[保险箱Microsoft Defender for Office 365](safe-attachments.md)</li><li>[设置安全附件策略](set-up-safe-attachments-policies.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Microsoft 365 E5 中的安全文档](safe-docs.md)</li></ul>|
+|**保险箱Microsoft Defender for Office 365**|否|配置链接的全局设置保险箱创建一个保险箱链接策略，如下所述：在 Microsoft Defender 中为 Office 365 配置[保险箱 链接设置](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)。 <p> 详细信息： <ul><li>[推荐保险箱链接设置](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[设置安全链接策略](set-up-safe-links-policies.md)</li><li>[保险箱Microsoft Defender for Office 365](safe-links.md)</li><li>[在 Microsoft Defender 中配置保险箱链接的全局Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
+|**反垃圾邮件 (邮件筛选)**|是|配置默认反垃圾邮件策略，如下所述：在[EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop)中配置反垃圾邮件保护设置 <p> 详细信息： <ul><li>[建议的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[EOP 中的反垃圾邮件保护](anti-spam-protection.md)</li><li>[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)</li></ul>|
+|***电子邮件身份验证***|是|电子邮件身份验证使用 DNS 记录向电子邮件中添加有关邮件源和发件人的可验证信息。 Microsoft 365自动为默认域配置电子邮件 (onmicrosoft.com) ，Microsoft 365管理员还可以为自定义域配置电子邮件身份验证。 使用三种身份验证方法： <ul><li>发件人策略框架 (SPF) 。</li><ul><li>有关设置，请参阅在 Microsoft 365[中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>域密钥标识的邮件 (DKIM) 。</li><ul><li>请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。</li><li>配置 DKIM 后，在 Microsoft 365 Defender 门户中启用它。</li></ul><li>基于域的邮件身份验证、报告和一致性 (DMARC) 。</li><ul><li>对于 DMARC[设置 使用 DMARC 验证电子邮件Microsoft 365。](use-dmarc-to-validate-email.md)</li></ul></ul>|
 |
 
 > [!NOTE]
 > 对于 SPF 的非标准部署、混合部署和故障排除：Microsoft 365 如何使用发件人策略框架[ (SPF](how-office-365-uses-spf-to-prevent-spoofing.md)) 防止欺骗。
 
-## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>在 defender 门户中查看Microsoft 365和报告
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>在仪表板门户中查看Microsoft 365 Defender报表
 
-访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。 有关详细信息，请参阅 defender 门户[中的Microsoft 365报告](../../compliance/reports-in-security-and-compliance.md)。
+访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。
 
 <br>
 
@@ -73,12 +73,11 @@ Microsoft 365 Defender 门户包含可保护你的环境的功能。 它还包�
 
 |仪表板|说明|
 |---|---|
-|[威胁管理仪表板](security-dashboard.md)|在Microsoft 365 Defender 门户的威胁管理部分中，使用此仪表板查看已处理的威胁，并作为向业务决策者报告已执行的威胁调查和响应功能以确保业务安全的方便工具。|
-|[威胁资源管理器（或实时检测）](threat-explorer.md)|这同样位于 Defender **门户威胁Microsoft 365** 部分中。 如果你正在调查或遇到对租户的攻击，请使用资源管理器 (或实时检测) 分析威胁。 资源管理器 (实时检测报告) 显示一段时间的攻击量，并且你可以按威胁系列、攻击者基础结构等分析此数据。 您还可以为"事件"列表标记任何可疑电子邮件。|
-|报表 — 仪表板|在 Defender **门户** 的"Microsoft 365"部分中，查看 SharePoint Online Exchange Online报告。 还可以从"查看Azure Active Directory (") 访问 Azure AD) 、用户活动报告和 Azure AD 审核日志 Azure AD **帐户。**|
+|电子邮件安全报告|这些报告在Exchange Online Protection。 有关详细信息，请参阅在电子邮件门户中[查看Microsoft 365 Defender报告](view-email-security-reports.md)。|
+|Defender for Office 365 报告|报告仅在 Defender for Office 365。 有关详细信息，请参阅查看 Office 365[门户中的报告Microsoft 365 Defender Defender。](view-reports-for-mdo.md)|
+|邮件流报告和见解|这些报告和见解位于 EAC Exchange管理 (中心) 。 有关详细信息，请参阅邮件[流报告和](/exchange/monitoring/mail-flow-reports/mail-flow-reports)[邮件流见解](/exchange/monitoring/mail-flow-insights/mail-flow-insights)。|
+|[威胁资源管理器（或实时检测）](threat-explorer.md)|如果你正在调查或遇到对租户的攻击，请使用资源管理器 (或实时检测) 分析威胁。 资源管理器 (实时检测报告) 显示一段时间的攻击量，并且你可以按威胁系列、攻击者基础结构等分析此数据。 您还可以为"事件"列表标记任何可疑电子邮件。|
 |
-
-![Microsoft 365Defender 门户仪表板](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>配置Exchange Online租户范围内的其他设置
 
@@ -88,10 +87,10 @@ Microsoft 365 Defender 门户包含可保护你的环境的功能。 它还包�
 
 ****
 
-|领域|包括默认策略|建议|
-|---|---|---|
-|**邮件Flow (** 规则，也称为传输规则) |否|添加邮件流规则，通过阻止可执行文件类型和包含宏的文件类型Office反勒索软件。 有关详细信息，请参阅 Use [mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <p> 请参阅以下其他主题： <ul><li>[防范勒索软件](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[恶意软件和勒索软件保护Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[从 Office 365 中的勒索软件Office 365](recover-from-ransomware.md)</li></ul> <p> 创建邮件流规则以防止电子邮件自动转发到外部域。 有关详细信息，请参阅使用安全分数缓解客户端 [外部转发规则](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。 <p> 详细信息：[邮件流规则 (传输规则) Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**启用新式验证**|否|新式验证是使用多重身份验证和 MFA (的先决条件) 。 建议使用 MFA 来保护对云资源（包括电子邮件）的访问。 <p> 请参阅以下主题： <ul><li>[在 Exchange Online 中启用或禁用新式身份验证](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business联机：为租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> 默认情况下，为 Office 2016 客户端、SharePoint Online 和 OneDrive for Business 启用新式OneDrive for Business。 <p> 详细信息：[新式验证如何适用于 Office 2013 和 Office 2016 客户端应用](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
+|领域|建议|
+|---|---|
+|**邮件流规则** (也称为传输规则) |添加邮件流规则，通过阻止可执行文件类型和包含宏的文件类型Office反勒索软件。 有关详细信息，请参阅 Use [mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <p> 请参阅以下其他主题： <ul><li>[防范勒索软件](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[恶意软件和勒索软件保护Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[从 Office 365 中的勒索软件Office 365](recover-from-ransomware.md)</li></ul> <p> 创建邮件流规则以防止电子邮件自动转发到外部域。 有关详细信息，请参阅使用安全分数缓解客户端 [外部转发规则](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。 <p> 详细信息：[邮件流规则 (传输规则) Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**新式验证**|新式验证是使用多重身份验证和 MFA (的先决条件) 。 建议使用 MFA 来保护对云资源（包括电子邮件）的访问。 <p> 请参阅以下主题： <ul><li>[在 Exchange Online 中启用或禁用新式身份验证](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business联机：为租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> 默认情况下，为 Office 2016 客户端、SharePoint Online 和 OneDrive for Business 启用新式OneDrive for Business。 <p> 详细信息：[新式验证如何适用于 Office 2013 和 Office 2016 客户端应用](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>在管理中心中配置租户SharePoint策略
@@ -132,12 +131,11 @@ SharePoint管理中心OneDrive for Business管理中心包含相同的设置。 
 同时，使用下列方法之一为 SharePoint Online 和 OneDrive for Business：
 
 - 使用 PowerShell，请参阅 [阻止在 ADAL ](/mem/intune/protect/app-modern-authentication-block)应用中不使用新式 () 。
-
 - 在管理中心SharePoint"设备访问"页面"控制不使用新式验证的应用的访问"中对此进行配置。 选择"阻止"。
 
 ## <a name="get-started-with-cloud-app-security-or-office-365-cloud-app-security"></a>开始云应用安全或Office 365 云应用安全
 
-使用Office 365 云应用安全评估风险，对可疑活动发出警报，并自动采取措施。 需要Office 365 E5 计划。
+使用Office 365 云应用安全评估风险，对可疑活动发出警报，并自动采取措施。 需要Office 365 E5计划。
 
 或者，Microsoft Cloud App Security在授予访问权限后获取更深层次的可见性、全面的控件以及针对所有云应用程序（包括云应用程序）Office 365。
 
