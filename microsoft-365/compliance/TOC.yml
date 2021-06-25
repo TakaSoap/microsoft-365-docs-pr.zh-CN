@@ -160,10 +160,10 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: 针对由敏感度标签加密的文档启用共同创作（预览版）
+          href: sensitivity-labels-coauthoring.md
         - name: 管理 Office 应用中的敏感度标签
           href: sensitivity-labels-office-apps.md
-        - name: 针对由敏感度标签加密的文档启用共同创造（预览版）
-          href: sensitivity-labels-coauthoring.md
     - name: 加密
       items:
         - name: 了解加密
@@ -445,15 +445,15 @@
               href: archive-zoommeetings-data.md
         - name: TeleMessage 数据连接器
           items:
-            - name: Android
+            - name: Android 存档器
               href: archive-android-archiver-data.md
-            - name: AT&T 网络
+            - name: AT&T 短信/彩信网络存档程序
               href: archive-att-network-archiver-data.md
-            - name: Bell 网络
+            - name: 铃声短信/彩信网络存档程序
               href: archive-bell-network-data.md
-            - name: 企业编号
+            - name: 企业编号存档器
               href: archive-enterprise-number-data.md
-            - name: O2 网络
+            - name: O2 Telefonica 短信和语音网络存档程序
               href: archive-o2-network-data.md
             - name: 信号(预览版)
               href: archive-signal-archiver-data.md
@@ -461,12 +461,50 @@
               href: archive-telegram-archiver-data.md
             - name: TELUS 网络
               href: archive-telus-network-data.md
-            - name: Verizon 网络
+            - name: Verizon 短信/彩信网络存档程序
               href: archive-verizon-network-data.md
-            - name: 微信
+            - name: 微信存档器
               href: archive-wechat-data.md
-            - name: WhatsApp
+            - name: WhatsApp 存档器
               href: archive-whatsapp-data.md
+        - name: 17a-4 数据连接器
+          items:
+            - name: BlackBerry DataParser（预览版）
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser（预览版）
+              href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser（预览版）
+              href: archive-17a-4-cisco-jabber-data.md
+            - name: Cisco Webex DataParser（预览版）
+              href: archive-17a-4-webex-teams-data.md
+            - name: FactSet DataParser（预览版）
+              href: archive-17a-4-factset-data.md
+            - name: Fuze DataParser（预览版）
+              href: archive-17a-4-fuze-data.md
+            - name: FX Connect DataParser（预览版）
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser（预览版）
+              href: archive-17a-4-ice-im-data.md
+            - name: InvestEdge DataParser（预览版）
+              href: archive-17a-4-investedge-data.md
+            - name: LivePerson 对话云 DataParser（预览版）
+              href: archive-17a-4-liveperson-data.md
+            - name: Quip DataParser（预览版）
+              href: archive-17a-4-quip-data.md
+            - name: Refinitiv Eikon Messenger DataParser（预览版）
+              href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser（预览版）
+              href: archive-17a-4-servicenow-data.md
+            - name: Slack DataParser（预览版）
+              href: archive-17a-4-slack-data.md
+            - name: Symphomy DataParser（预览版）
+              href: archive-17a-4-symphony-data.md
+            - name: Zoom DataParser（预览版）
+              href: archive-17a-4-zoom-data.md
+        - name: CellTrust 连接器
+          items:
+            - name: CellTrust SL2（预览版）
+              href: archive-data-from-celltrustsl2.md
         - name: 与合作伙伴联系以存档第三方数据
           href: work-with-partner-to-archive-third-party-data.md
         - name: 搜索第三方数据

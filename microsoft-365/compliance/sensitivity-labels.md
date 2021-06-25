@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878072"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114772"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -186,7 +186,7 @@ ms.locfileid: "52878072"
     
     考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 最好不要选择应用加密的标签作为文档的默认标签。 例如，许多组织需要向外部用户发送并与其共享文档，这些用户可能不具有支持加密的应用，或者他们可能未使用可以获得授权的帐户。 有关此方案的详细信息，请参阅[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
-- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 管理员可以阅读活动资源管理器或网站中的 [更改](data-classification-activity-explorer.md)。
+- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 对于 Office 应用，当使用内置标签时，每个应用会话都会触发该理由提示，而当使用 Azure 信息保护的统一标签客户端时，每个文件则都会触发。 管理员可以阅读活动资源管理器或网站中的 [更改](data-classification-activity-explorer.md)。
 
     ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
 

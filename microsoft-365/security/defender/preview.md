@@ -1,5 +1,5 @@
 ---
-title: 预览 Microsoft 365 Defender 中的功能
+title: 预览 Microsoft 365 Defender
 description: 了解 Microsoft 365 安全中心的新功能
 keywords: 预览, 新, m365 安全中心, 安全, 365, 功能
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730518"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125394"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365Defender 预览功能
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender预览功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,15 +37,15 @@ ms.locfileid: "52730518"
 **适用于：**
 - Microsoft 365 Defender
 
-该Microsoft 365 Defender 服务会不断更新，以包含新功能增强功能和功能。
+该Microsoft 365 Defender服务会不断更新，以包含新功能增强功能和功能。
 
-了解 Microsoft 365 Defender 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。
+了解 Microsoft 365 Defender 预览版本中的新功能，并首先通过打开预览体验来试用即将推出的功能。
 
 有关已普遍提供的新功能详细信息，请参阅 Microsoft 365 Defender[中的新增功能](whats-new.md)。
 
 ## <a name="required-permissions"></a>所需权限
 
-分配了以下 Azure AD Azure Active Directory (角色) 可以启用Microsoft 365 Defender 预览版功能：
+分配了以下 Azure AD Azure Active Directory (角色) 帐户可以启用Microsoft 365 Defender预览功能：
 
 - 全局管理员
 - 安全管理员
@@ -68,8 +68,9 @@ ms.locfileid: "52730518"
 
 当前预览版中提供以下功能和增强功能：
 
-- **[流式 API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender 支持将高级搜寻提供的所有事件流式处理到事件中心和/或 Azure 存储帐户。
-- **[Microsoft 365 Defender API](api-overview.md)** - 使用顶级 Microsoft 365 Defender API，你可以根据共享事件和高级搜寻表自动执行工作流。 
+- **[查看每个威胁标记的报告](threat-analytics.md#view-reports-per-threat-tags)** - 威胁标记可帮助你专注于特定威胁类别并查看最相关的报告。
+- **[流式 API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender支持将高级搜寻提供的所有事件流式处理到事件中心和/或 Azure 存储帐户。
+- **[Microsoft 365 Defender API](api-overview.md)** - 顶级Microsoft 365 Defender API 将使您能够基于共享事件和高级搜寻表自动执行工作流。 
 - **[在高级搜寻中采取措施](advanced-hunting-take-action.md)** - 快速包含威胁或解决你在高级搜寻中 [发现的攻击资产](advanced-hunting-overview.md)。
 - **[门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - 直接在安全中心获取有关高级搜寻架构表的信息。 除了表和列说明之外，此参考还包括受支持的事件类型 (`ActionType` 查询) 查询的值。
 - **[DeviceFromIP ()](advanced-hunting-devicefromip-function.md)** 函数 - 获取有关在给定时间范围内分配了特定 IP 地址的设备的信息。

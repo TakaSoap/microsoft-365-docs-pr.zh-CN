@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: 了解如何使用管理中心中的"Microsoft 365报告"仪表板Microsoft 365 Microsoft 浏览器使用情况报告。
-ms.openlocfilehash: f655a3951dc58ddd5089c8034db64af3840ebf7d
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+description: 了解如何使用 Microsoft 365 中的"报告"仪表板获取 Microsoft 浏览器Microsoft 365 管理中心。
+ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50606211"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125407"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理中心中的报告 - Microsoft 浏览器使用情况
 
@@ -36,6 +36,16 @@ ms.locfileid: "50606211"
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
 2. 在仪表板主页上，单击 Microsoft浏览器使用卡上的"查看更多"按钮。
+
+## <a name="how-to-notify-users-to-upgrade-their-browser"></a>如何通知用户升级其浏览器
+
+![Microsoft 浏览器使用情况报告操作流](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
+
+全局管理员可以选择使用 Edge 旧版不支持的 ( (上的 Microsoft 365) 服务向用户Internet Explorer (，Internet Explorer (即将不受支持) 。 此目标消息通知用户，这些浏览器支持即将结束，并链接到包含有关 Microsoft Edge 的信息以及切换浏览器需要遵循的简单步骤的支持文章。 
+
+您可以在报告页上找到此功能。 创建邮件后，会以指定的频率通知用户，直到 2021 年 8 月 17 日。 你随时可以关闭此功能以停止向用户发送通知。 若要再次开始发送通知，请重新启用该功能。
+
+有关详细信息，请参阅Microsoft Edge[帮助&学习](https://support.microsoft.com/microsoft-edge)。
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>解释 Microsoft 浏览器使用情况报告
 
