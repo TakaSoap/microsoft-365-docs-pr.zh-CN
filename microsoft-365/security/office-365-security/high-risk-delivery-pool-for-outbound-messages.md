@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何使用传递池来保护数据中心中电子邮件Microsoft 365信誉。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599907"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137711"
 ---
 # <a name="outbound-delivery-pools"></a>出站传递池
 
@@ -61,3 +61,24 @@ NDR 中出现激增的可能原因包括：
 - 未授权电子邮件服务器。
 
 所有这些问题都可能导致服务正在处理的 NDR 数量突然增加。 在许多情况下，这些 NDR 似乎为其他电子邮件服务器和服务的垃圾邮件 (也称为退 _[) 。](backscatter-messages-and-eop.md)_
+
+
+### <a name="relay-pool"></a>中继池
+
+在某些情况下，通过 Microsoft 365 转发或中继的邮件会使用特殊的中继池发送，因为目标不应Microsoft 365实际发件人。 隔离此电子邮件通信很重要，因为存在用于自动转发或中继电子邮件从 Microsoft 365 的合法和无效Microsoft 365。 与高风险传送池类似，单独的 IP 地址池用于中继邮件。 此地址池不会发布，因为它可能会经常更改，并且不是已发布的 SPF 记录的一Microsoft 365。
+
+Microsoft 365需要验证原始发件人是否合法，以便我们可以放心地传递转发的邮件。
+
+转发/中继邮件应满足以下条件之一，以避免使用中继池：
+
+- 出站发件人位于接受 [域中](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+- 当邮件发送到邮件时，SPF Microsoft 365。
+- 当邮件发送到发件人域时，发件人域上的 DKIM 通过Microsoft 365。
+ 
+通过查看出站服务器 IP (中继池将位于 40.95.0.0/16 范围) ，或者通过查看出站服务器名称 (将在名称) 中显示"rly"，可以判断邮件是通过中继池发送的。
+
+在我们可以验证发件人的情况下，我们使用发件人重写方案 (SRS) 来帮助收件人电子邮件系统知道转发的邮件来自受信任的来源。 您可以阅读有关工作原理和操作方法的更多信息，以帮助确保发送域在发件人重写方案 ([SRS](/office365/troubleshoot/antispam/sender-rewriting-scheme)) 中通过Office 365。
+
+若要使 DKIM 正常工作，请确保为发送域启用 DKIM。 例如，fabrikam.com 是 contoso.com 的一部分，在组织的接受域中定义。 如果邮件发件人 sender@fabrikam.com，需要为邮件发件人启用 DKIM fabrikam.com。 可以在使用 DKIM 验证从自定义域发送的出站电子邮件中阅读如何[启用。](use-dkim-to-validate-outbound-email.md)
+
+若要添加自定义域，请按照将域添加到域[Microsoft 365。](../../admin/setup/add-domain.md)

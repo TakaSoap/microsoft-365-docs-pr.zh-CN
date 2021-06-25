@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何在 Microsoft Viva 主题中管理主题可见性。
-ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107659"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137747"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中管理主题可见性
 
-你可以管理一组可在管理中心内查看主题突出显示、主题卡片和主题Microsoft 365[的用户](https://admin.microsoft.com)。 您必须是全局管理员或SharePoint才能执行这些任务。
+你可以管理哪些人可以看到主题突出显示、主题卡片和主题中心中的[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint组管理员才能执行这些任务。
 
-## <a name="to-access-topics-management-settings"></a>若要访问主题管理设置：
+## <a name="to-access-topics-management-settings"></a>要访问主题管理设置，请执行以下操作：
 
-1. 在管理Microsoft 365，单击"设置"，**然后单击"****组织设置"。**
+1. 在"Microsoft 365 管理中心中，单击"设置"，**然后单击"****组织设置"。**
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
     ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 

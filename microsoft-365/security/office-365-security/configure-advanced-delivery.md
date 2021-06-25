@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 819f78883aa75fbbdded2e47c1bb85945f080233
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 01d35c1f0c7abc7b6ce34fc9c2ec4d5fd5b228ae
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108399"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137735"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -64,8 +64,10 @@ ms.locfileid: "53108399"
 
 - 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到高级传递 **页面，** 请打开 <https://security.microsoft.com/advanceddelivery> 。
 
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+
 - 您需获得权限，然后才能执行本文中的过程：
-  - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组的成员**。   
+  - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组的成员**。 
   - 若要对高级传递策略进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
   有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
@@ -122,8 +124,286 @@ ms.locfileid: "53108399"
 
 除了高级传递策略可以帮助你的两种方案之外，还有其他一些方案可能需要绕过筛选：
 
-- **第三方筛选器**：如果你的域的 MX记录没有指向Office 365 (邮件将路由到其他位置) ，默认情况下，安全 [](secure-by-default.md)*不可用*。
-
-  若要绕过 Microsoft 筛选已由第三方筛选评估的邮件，请使用邮件流规则 (传输规则) 。 有关详细信息，请参阅使用[邮件流规则设置邮件中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
+- **第三方筛选器**：如果你的域的 MX记录没有指向Office 365 (邮件将路由到其他位置) ，默认情况下，安全 [](secure-by-default.md)*不可用*。 如果要添加保护，则需要启用连接器的增强筛选 (也称为跳过 *列表) 。* 有关详细信息，请参阅[使用第三](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)方云服务管理邮件流Exchange Online。 如果您不希望增强连接器筛选，请使用邮件流规则 (也称为传输规则) ，以绕过 Microsoft 筛选已由第三方筛选评估的邮件。 有关详细信息，请参阅使用[邮件流规则设置邮件中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - 正在审查 **的** 误报：你可能希望暂时允许 Microsoft 通过管理员提交仍在分析的某些邮件，以报告被 [](admin-submission.md)错误地标记为对 Microsoft (误报错误的已知) 。 与所有替代一样， **_我们强烈建议这些_** 允许是临时的。
+
+## <a name="exchange-online-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Exchange Online高级传递策略中 SecOps 邮箱的 PowerShell 过程
+
+在 Exchange Online PowerShell 中，高级传递策略中 SecOps 邮箱的基本元素为：
+
+- **SecOps 覆盖策略**：由 **\* -SecOpsOverridePolicy** cmdlet 控制。
+- **SecOps 重写规则**：由 **\* -SecOpsOverrideRule** cmdlet 控制。
+
+此行为具有以下结果：
+
+- 首先创建策略，然后创建标识规则所适用的策略的规则。
+- 从 PowerShell 中删除策略时，也会删除相应的规则。
+- 从 PowerShell 中删除规则时，不会删除相应的策略。 需要手动删除相应的策略。
+
+### <a name="use-powershell-to-configure-secops-mailboxes"></a>使用 PowerShell 配置 SecOps 邮箱
+
+在 PowerShell 的高级传递策略中配置 SecOps 邮箱的过程包含两个步骤：
+
+1. 创建 SecOps 覆盖策略。
+2. 创建 SecOps 替代规则，该规则指定应用该规则的策略。
+
+#### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>步骤 1：使用 PowerShell 创建 SecOps 覆盖策略
+
+若要创建 SecOps 覆盖策略，请使用以下语法：
+
+```powershell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
+```
+
+**注意**：无论您指定的 Name 值如何，策略名称都将为 SecOpsOverridePolicy，因此您可能还使用该值。
+
+本示例将创建 SecOps 邮箱策略。
+
+```powershell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+```
+
+有关语法和参数的详细信息，请参阅[New-SecOpsOverridePolicy。](/powershell/module/exchange/new-secopsoverridepolicy)
+
+#### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>步骤 2：使用 PowerShell 创建 SecOps 替代规则
+
+此示例使用指定的设置创建 SecOps 邮箱规则。
+
+```powershell
+New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
+```
+
+**注意**：**无论指定 Name 值如何，规则名称将为 SecOpsOverrideRule，其中是唯一的 GUID 值 \<GUID\> (例如 \<GUID\> ，6fed4b63-3563-495d-a481-b24a311f8329) 。
+
+有关语法和参数的详细信息，请参阅 [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule)。
+
+### <a name="use-powershell-to-view-the-secops-override-policy"></a>使用 PowerShell 查看 SecOps 替代策略
+
+此示例返回有关唯一一个 SecOps 邮箱策略的详细信息。
+
+```powershell
+Get-SecOpsOverridePolicy
+```
+
+有关语法和参数的详细信息，请参阅 [Get-SecOpsOverridePolicy](/powershell/module/exchange/get-secopsoverridepolicy)。
+
+### <a name="use-powershell-to-view-secops-override-rules"></a>使用 PowerShell 查看 SecOps 替代规则
+
+此示例返回有关 SecOps 重写规则的详细信息。
+
+```powershell
+Get-SecOpsOverrideRule
+```
+
+尽管上一个命令只应返回一个规则，但结果中也可能包含任何挂起删除的规则。
+
+本示例标识一个规则 (规则) 无效的规则。
+
+```powershell
+Get-SecOpsOverrideRule | Format-Table Name,Mode
+```
+
+确定无效规则后，可以使用 **Remove-SecOpsOverrideRule** cmdlet 删除这些规则，如本文稍后 [所述](#use-powershell-to-remove-secops-override-rules)。
+
+有关语法和参数的详细信息，请参阅 [Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+
+### <a name="use-powershell-to-modify-the-secops-override-policy"></a>使用 PowerShell 修改 SecOps 覆盖策略
+
+若要修改 SecOps 覆盖策略，请使用以下语法：
+
+```powershell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
+```
+
+此示例将 secops2@contoso.com SecOps 覆盖策略。
+
+```powershell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
+```
+
+**注意**：如果存在关联的有效 SecOps 替代规则，则规则中的电子邮件地址也将更新。
+
+有关语法和参数的详细信息，请参阅 [Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy)。
+
+### <a name="use-powershell-to-modify-a-secops-override-rule"></a>使用 PowerShell 修改 SecOps 替代规则
+
+**Set-SecOpsOverrideRule** cmdlet 不会修改 SecOps 替代规则中的电子邮件地址。 若要修改 SecOps 替代规则中的电子邮件地址，请使用 **Set-SecOpsOverridePolicy** cmdlet。
+
+有关语法和参数的详细信息，请参阅 [Set-SecOpsOverrideRule](/powershell/module/exchange/set-secopsoverriderule)。
+
+### <a name="use-powershell-to-remove-the-secops-override-policy"></a>使用 PowerShell 删除 SecOps 覆盖策略
+
+本示例删除 SecOps 邮箱策略和相应的规则。
+
+```powershell
+Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
+```
+
+有关语法和参数的详细信息，请参阅 [Remove-SecOpsOverridePolicy](/powershell/module/exchange/remove-secopsoverridepolicy)。
+
+### <a name="use-powershell-to-remove-secops-override-rules"></a>使用 PowerShell 删除 SecOps 替代规则
+
+若要删除 SecOps 替代规则，请使用以下语法：
+
+```powershell
+Remove-SecOpsOverrideRule -Identity <RuleIdentity>
+```
+
+本示例删除指定的 SecOps 重写规则。
+
+```powershell
+Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b24a311f8329
+```
+
+有关语法和参数的详细信息，请参阅 [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule)。
+
+## <a name="exchange-online-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Exchange Online高级传递策略中第三方网络钓鱼模拟的 PowerShell 过程
+
+在 Exchange Online PowerShell 中，高级传递策略中第三方网络钓鱼模拟的基本元素为：
+
+- **网络钓鱼模拟替代策略**：由 **\* -PhishSimOverridePolicy** cmdlet 控制。
+- **网络钓鱼模拟替代规则**：由 **\* -PhishSimOverrideRule** cmdlet 控制。
+
+此行为具有以下结果：
+
+- 首先创建策略，然后创建标识规则所适用的策略的规则。
+- 您可以分别修改策略和规则中的设置。
+- 从 PowerShell 中删除策略时，也会删除相应的规则。
+- 从 PowerShell 中删除规则时，不会删除相应的策略。 需要手动删除相应的策略。
+
+### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>使用 PowerShell 配置第三方网络钓鱼模拟
+
+在 PowerShell 的高级传递策略中配置第三方网络钓鱼模拟的过程包括两个步骤：
+
+1. 创建网络钓鱼模拟替代策略。
+2. 创建网络钓鱼模拟替代规则，该规则指定应用该规则的策略。
+
+#### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>步骤 1：使用 PowerShell 创建网络钓鱼模拟覆盖策略
+
+此示例创建网络钓鱼模拟替代策略。
+
+```powershell
+New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
+```
+
+**注意**：无论指定 Name 值如何，策略名称将为 PhishSimOverridePolicy，因此您可能还使用该值。
+
+有关语法和参数的详细信息，请参阅 [New-PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy)。
+
+#### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>步骤 2：使用 PowerShell 创建网络钓鱼模拟替代规则
+
+使用以下语法:
+
+```powershell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+```
+
+无论您指定的 Name 值如何，规则名称都是 PhishSimOverrideRule，其中是唯一的 GUID 值 (例如 \<GUID\> \<GUID\> ，a0eae53e-d755-4a42-9320-b9c6b55c5011) 。
+
+有效的 IP 地址条目是下列值之一：
+
+- 单个 IP：例如，192.168.1.1。
+- IP 范围：例如，192.168.0.1-192.168.0.254。
+- CIDR IP：例如，192.168.0.1/25。
+
+此示例使用指定的设置创建网络钓鱼模拟替代规则。
+
+```powershell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+```
+
+有关语法和参数的详细信息，请参阅 [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule)。
+
+### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>使用 PowerShell 查看网络钓鱼模拟替代策略
+
+此示例返回有关唯一网络钓鱼模拟替代策略的详细信息。
+
+```powershell
+Get-PhishSimOverridePolicy
+```
+
+有关语法和参数的详细信息，请参阅 [Get-PhishSimOverridePolicy](/powershell/module/exchange/get-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>使用 PowerShell 查看网络钓鱼模拟替代规则
+
+此示例返回有关网络钓鱼模拟替代规则的详细信息。
+
+```powershell
+Get-PhishSimOverrideRule
+```
+
+尽管上一个命令只应返回一个规则，但结果中也可能包含任何挂起删除的规则。
+
+本示例标识一个规则 (规则) 无效的规则。
+
+```powershell
+Get-PhishSimOverrideRule | Format-Table Name,Mode
+```
+
+确定无效规则后，可以使用 **Remove-PhisSimOverrideRule** cmdlet 删除这些规则，如本文稍后 [所述](#use-powershell-to-remove-phishing-simulation-override-rules)。
+
+有关语法和参数的详细信息，请参阅 [Get-PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule)。
+
+### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>使用 PowerShell 修改网络钓鱼模拟替代策略
+
+若要修改网络钓鱼模拟替代策略，请使用以下语法：
+
+```powershell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
+```
+
+此示例禁用网络钓鱼模拟替代策略。
+
+```powershell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
+```
+
+有关语法和参数的详细信息，请参阅 [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>使用 PowerShell 修改网络钓鱼模拟替代规则
+
+若要修改网络钓鱼模拟替代规则，请使用以下语法：
+
+```powershell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
+```
+
+此示例使用下列设置修改指定的网络钓鱼模拟替代规则：
+
+- 添加域条目 blueyonderairlines.com。
+- 删除 IP 地址条目 192.168.1.55。
+
+请注意，这些更改不会影响现有条目。
+
+```powershell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 -AddSenderDomainIs blueyonderairlines.com -RemoveSenderIpRanges 192.168.1.55
+```
+
+有关语法和参数的详细信息，请参阅 [Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule)。
+
+### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>使用 PowerShell 删除网络钓鱼模拟替代策略
+
+此示例删除网络钓鱼模拟覆盖策略和相应的规则。
+
+```powershell
+Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
+```
+
+有关语法和参数的详细信息，请参阅 [Remove-PhishSimOverridePolicy](/powershell/module/exchange/remove-phishsimoverridepolicy)。
+
+### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>使用 PowerShell 删除网络钓鱼模拟替代规则
+
+若要删除网络钓鱼模拟替代规则，请使用以下语法：
+
+```powershell
+Remove-PhishSimOverrideRule -Identity <RuleIdentity>
+```
+
+此示例删除指定的网络钓鱼模拟替代规则。
+
+```powershell
+Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011
+```
+
+有关语法和参数的详细信息，请参阅 [Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule)。

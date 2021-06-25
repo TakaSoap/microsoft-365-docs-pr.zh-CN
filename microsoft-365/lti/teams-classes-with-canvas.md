@@ -13,19 +13,19 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 1a16d6a4f5e0cfbb592c335163bb4e33fd3c1301
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821869"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137675"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-Microsoft Teams课程是学习工具互操作性 (LTI) 应用，可帮助教师和学生轻松地在学习管理系统 (LMS) 和 Teams 之间导航。 用户可以直接从 LMS 中访问与其课程关联的课堂团队。
+Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮助教师和学生轻松地在 Learning Management System (LMS) 和 Teams 之间导航。 用户可以直接从 LMS 中访问与其课程关联的课堂团队。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理员
 
@@ -37,22 +37,22 @@ Microsoft Teams课程是学习工具互操作性 (LTI) 应用，可帮助教师�
 
 3. 在管理员导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。 
 
-4. 输入你的 Microsoft 租户名称和登录属性。 
-
-   login 属性将用于将 Canvas 用户与用户Azure Active Directory关联。 
-
-5. 选择 **"完成设置** 更新"。
-
-6. 若要批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用的访问权限，请选择"授予 **租户访问权限"** 链接。 你将被重定向到 Microsoft 标识平台管理员同意终结点。
-
-   ![权限](media/permissions.png)
-
-7. 选择 **接受**。
- 
-8. 通过打开Microsoft Teams启用同步。
+4. 通过Microsoft Teams启用"同步"。
 
    ![teams-sync](media/teams-sync.png)
 
+5. 输入你的 Microsoft 租户名称和登录属性。 
+
+   login 属性将用于将 Canvas 用户与用户Azure Active Directory关联。 
+
+6. 选择 **"完成设置** 更新"。
+
+7. 若要批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用的访问权限，请选择"授予 **租户访问权限"** 链接。 你将被重定向到 Microsoft 标识平台管理员同意终结点。
+
+   ![权限](media/permissions.png)
+
+8. 选择 **接受**。
+ 
 ## <a name="canvas-admin"></a>Canvas 管理
 
 设置 Microsoft Teams LTI 1.3 集成。
@@ -75,6 +75,6 @@ Microsoft Teams课程是学习工具互操作性 (LTI) 应用，可帮助教师�
    
    你会注意到客户端 ID 的Microsoft Teams LTI 应用名称，用于确认。 
 
-5. 选择“**安装**”。
+5. 选择“安装”。
 
    the Microsoft Teams classes LTI app will be added to the list of external apps.

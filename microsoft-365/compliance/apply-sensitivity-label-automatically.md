@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061896"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137771"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -140,6 +140,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 同样与配置 DLP 策略时类似的是，你可以选择某项条件是必须删除所有敏感信息类型还是只删除其中一种。 要使条件更灵活或更复杂，可添加[组并在组之间使用逻辑运算符](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
+> [!NOTE]
+> 基于自定义敏感信息类型的自动标签策略仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容。 
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
 此选项目前处于预览阶段。 如果使用此选项，请确保你已在租户中发布至少一个其他针对自动标记和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)配置的敏感度标签。
@@ -190,7 +193,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 
@@ -215,7 +218,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     - 当自动标记策略运行时，该文件不得由其他进程或用户打开。 签出以供进行编辑的文件属于此类别。
 
 - 如果计划使用[自定义敏感信息类型](sensitive-information-type-learn-about.md)，而不是内置敏感度类型： 
-    - 自定义敏感性信息类型在保存自定义敏感性信息类型之后，会对添加到 SharePoint 或 OneDrive 的内容进行评估。 
+    - 自定义敏感性信息类型仅适用于执行自定义敏感性信息类型后在 SharePoint 或 OneDrive 中添加或修改的内容。 
     - 若要测试新的自定义敏感信息类型，请在创建自动标记策略前创建它们，然后创建新文档（其中包含用于测试的示例数据）。
 
 - 你可以为自动标记策略选择一个或多个[已创建和发布](create-sensitivity-labels.md)（至少向一个用户发布）的敏感度标签。 对于这些标签：

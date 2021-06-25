@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: c30be0888a2c92a23c4e5f323235eba671c5ab1d
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096164"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137714"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
@@ -143,6 +143,7 @@ TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中�
 |[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[ServiceNow ](archive-17a-4-servicenow-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[Slack ](archive-17a-4-slack-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
+|[SQL](archive-17a-4-sql-database-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[百年 ](archive-17a-4-symphony-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |[缩放 ](archive-17a-4-zoom-data.md)    |![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 ||||||||
@@ -201,13 +202,13 @@ TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中�
 |TeleMessage 数据连接器  |GCC  |GCC 高  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android 存档器 | 是 | 否 | 否 |
-|AT&T SMS/MMS 网络存档器 | 是 | 否 | 否 |
-|Bell SMS/MMS 网络存档器 | 是 | 否 | 否 |
-|Enterprise数字存档器 | 是 | 否 | 否 |
+|AT&T 短信/彩信网络存档程序 | 是 | 否 | 否 |
+|铃声短信/彩信网络存档程序 | 是 | 否 | 否 |
+|企业编号存档器 | 是 | 否 | 否 |
 |O2 SMS 和语音网络存档器 | 是         | 否 | 否 |
 |TELUS SMS 网络存档器 | 是 | 否 | 否 |
-|Verizon SMS/MMS 网络存档器 | 是 | 否 | 否 |
-|WhatsApp 存档程序 | 是 | 否 | 否 |
+|Verizon 短信/彩信网络存档程序 | 是 | 否 | 否 |
+|WhatsApp 存档器 | 是 | 否 | 否 |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>与 Microsoft 合作伙伴合作存档第三方数据

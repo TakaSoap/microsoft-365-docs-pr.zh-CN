@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108231"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137759"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -104,7 +104,7 @@ ms.locfileid: "53108231"
 
    同一个条件的多个值使用 OR 逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件使用 AND 逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
-   - **排除这些用户、组和域**：若要为策略应用于的内部收件人添加例外（收件人例外），请选择此选项并配置例外。 设置和行为与条件完全相同。
+   - **排除这些用户、组和域**: 若要为策略应用于的内部收件人添加例外 (收件人例外)，请选择此选项并配置例外。 设置和行为与条件完全相同。
 
    完成后，单击“**下一步**”。
 
@@ -203,7 +203,7 @@ ms.locfileid: "53108231"
    >
    > 在将域添加到允许的域列表之前，请慎重考虑。 有关详细信息，请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)
    >
-   > 切勿将你自己的[接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)或公共域（例如 microsoft.com 或 office.com）添加到允许的域列表中。 如果允许这些域绕过垃圾邮件筛选，则允许攻击者轻松地向你的组织发送电子邮件。
+   > 切勿将你自己的[接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)或公共域（例如 microsoft.com 或 office.com）添加到允许的域列表中。 如果允许这些域名绕过垃圾邮件过滤，攻击者则可以很容易地将欺骗这些可信域名的消息发送到组织。
    >
    > 通过将域添加到阻止的域列表来手动阻止域并不危险，但这会增加你的管理工作量。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
    >
