@@ -2,8 +2,8 @@
 title: 适用于合规性管理器的 Microsoft 合规性配置分析器
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性配置分析器快速启动并运行 Microsoft 合规性管理器。
-ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244632"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148958"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>适用于合规性管理器的 Microsoft 合规性配置 (预览版) 
 
@@ -101,19 +101,19 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  国家或地区 | 
   | :------------- | :------------: |
-  | 1 | 亚太地区 |
-  | 2 | 澳大利亚 |
-  | 3 | 加拿大 |
+  | 1  | 亚太地区 |
+  | 2  | 澳大利亚 |
+  | 3  | 加拿大 |
   | 4  | 欧洲 (（不包括法国) /中东/非洲） |
   | 5  | 法国 |
   | 6  | 印度 |
   | 7  | 日本 |
   | 8  | 韩国 |
   | 9  | 北美 (加拿大)  |
-  | 10   | 南美洲 |
-  | 11 | 南非 |
+  | 10  | 南美洲 |
+  | 11  | 南非 |
   | 12  | Switzerland（瑞士） |
-  | 13 | 阿拉伯联合酋长国 |
+  | 13  | 阿拉伯联合酋长国 |
   | 14  | 英国 |
 
 
@@ -153,7 +153,7 @@ MCCA 根据合规性管理器中建议的改进操作评估当前配置。 本�
 
 **具有"改进"状态的项目**
 
-选择改进操作右侧"改进"标签旁边的下拉列表。 你将看到有关当前设置以及建议改进操作的快速摘要和详细信息。 摘要包括指向合规性管理器的直接链接、Microsoft 365中心中的适用解决方案和相关文档。
+选择改进操作右侧"改进"标签旁边的下拉列表。 你将看到有关当前设置以及建议改进操作的快速摘要和详细信息。 摘要包括合规性管理器的直接链接、Microsoft 365 合规中心适用的解决方案和相关文档。
 
 单击"合规性管理器"链接，可查看该解决方案中所有尚未实施的改进措施的筛选视图。 你可以从其中查看可达到的分数，以提升合规性分数、适用的评估[](compliance-score-calculation.md)以及适用的法规和认证。
 

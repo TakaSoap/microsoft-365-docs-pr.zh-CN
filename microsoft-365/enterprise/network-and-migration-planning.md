@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 本文包含一些链接，这些链接指向有关网络规划、测试和迁移到 Office 365。
-ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923584"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149102"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
@@ -103,8 +103,6 @@ ms.locfileid: "50923584"
 - [Office 365 服务中的 IPv6 支持](ipv6-support.md)
     
 - [Office 365 网络连接原则](./microsoft-365-network-connectivity-principles.md)
-    
-- [Office 365视频网络常见问题解答 (常见问题) ](office-365-video-networking-faq.md)
     
 - [有关连接到 Office 365 服务的网络设备的计划](plan-for-network-devices.md)
     

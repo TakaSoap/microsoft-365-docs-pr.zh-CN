@@ -2,8 +2,8 @@
 title: Microsoft 合规性管理器中的新增功能
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52465456"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149018"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
@@ -48,4 +48,4 @@ ms.locfileid: "52465456"
 
 ### <a name="active-and-inactive-templates"></a>活动模板和无效模板
 
-每个评估页面和评估模板页面都有一个激活的模板计数器。 此计数器显示根据许可协议使用多少个符合条件的模板。 查看 [模板类型：包含和高级、处于活动状态和处于非活动状态](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 以了解更多信息。
+每个评估页面和评估模板页面都有一个激活的模板计数器。 此计数器显示根据许可协议使用多少个符合条件的模板。 查看 [模板可用性和许可](compliance-manager-templates.md#template-availability-and-licensing) 以了解更多信息。

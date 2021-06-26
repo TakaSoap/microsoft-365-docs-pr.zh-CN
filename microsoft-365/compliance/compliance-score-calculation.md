@@ -2,8 +2,8 @@
 title: 合规性分数计算
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 合规性管理器如何根据为应对风险和改进合规性状态而采取的操作计算个性化分数。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052110"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149162"
 ---
 # <a name="compliance-score-calculation"></a>合规性分数计算
 
@@ -114,9 +114,9 @@ ms.locfileid: "51052110"
 |:-----|:-----|
 | 预防性强制 | 27 |
 | 预防自主型 | 9  |
-| 检测强制 | 3 |
-| 检测随意 | 1 |
-| 纠正强制型 | 3 |
-| 更正随意 | 1 |
+| 检测强制 | 3  |
+| 检测随意 | 1  |
+| 纠正强制型 | 3  |
+| 更正随意 | 1  |
   
 ![合规性管理器操作点值](../media/compliance-score-action-scoring.png "合规性管理器操作点值")

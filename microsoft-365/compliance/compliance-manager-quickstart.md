@@ -2,8 +2,8 @@
 title: Microsoft 合规性管理器快速入门指南
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合规性管理器快速入门指南帮助你了解、设置和使用合规性管理器。
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906024"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149042"
 ---
 # <a name="compliance-manager-quickstart"></a>合规性管理器快速入门
 
@@ -31,7 +31,7 @@ ms.locfileid: "50906024"
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>首次访问：了解合规性管理器
 
-合规性管理器位于 Microsoft 365合规中心 https://compliance.microsoft.com 。 开始使用合规性管理器之前，组织的全局管理员需要[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)设置用户权限并分配角色。
+合规性管理器位于 的 Microsoft 365 合规中心 https://compliance.microsoft.com 中。 开始使用合规性管理器之前，组织的全局管理员需要[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)设置用户权限并分配角色。
 
 首次访问合规性管理器时，你将看到组织的合规性分数。 合规性管理器已在根据数据保护Microsoft 365评估当前环境。 开始熟悉合规性管理器的最好办法就是了解它显示的内容、它的关键元素以及如何自定义仪表板。
 
@@ -63,8 +63,8 @@ ms.locfileid: "50906024"
 
 您还可以设置所有或部分改进操作自动化测试。 请访问以下链接，了解合规性管理器中的更高级功能：
 
-- [通过添加自己的控制措施和改进操作来扩展合规性管理器评估](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [创建自己的自定义评估](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [通过添加自己的控制措施和改进操作来扩展合规性管理器模板](compliance-manager-templates.md#extend-an-assessment-template)
+- [创建自己的自定义模板](compliance-manager-templates.md#create-an-assessment-template)
 - [修改现有模板以添加或删除控件和操作](compliance-manager-templates.md#modify-a-template)
 - [设置改进操作自动化测试](compliance-manager-setup.md#set-up-automated-testing)
 - [将改进操作重新分配给其他用户](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

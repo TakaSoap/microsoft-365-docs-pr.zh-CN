@@ -2,8 +2,8 @@
 title: Microsoft 合规性管理器入门
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570554"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148898"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -32,13 +32,13 @@ ms.locfileid: "51570554"
 
 合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国 政府社区云 (GCC) 中等、GCC 高和国防部 (DoD) 客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 组织的Microsoft 365管理员可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
 
 ## <a name="sign-in"></a>登录
 
-1. 转到合规性 [Microsoft 365，](https://compliance.microsoft.com/)**然后使用你的** Microsoft 365 全局管理员帐户登录。
+1. 转到 ["Microsoft 365 合规中心"，](https://compliance.microsoft.com/)**然后使用全局** Microsoft 365帐户登录。
 2. 选择 **左侧导航** 窗格中的"合规性管理器"。 你将到达合规性管理器 [仪表板](#understand-the-compliance-manager-dashboard)。
 
 访问合规性管理器的直接链接是 [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) 。
@@ -80,7 +80,7 @@ ms.locfileid: "51570554"
 
 若要在 Azure AD 中分配角色和设置权限，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给具有Azure Active Directory。
 
-具有 Azure AD 标识的用户（没有 Office 365 或 Microsoft 365 订阅）将无法访问 Microsoft 365 合规中心中的合规性管理器。 若要在访问合规性管理器方面寻求帮助 [，请联系](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
+具有 Azure AD 标识的用户Office 365或Microsoft 365订阅的用户将无法在 Microsoft 365 合规中心 中访问合规性Microsoft 365 合规中心。 若要在访问合规性管理器方面寻求帮助 [，请联系](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
 
 ### <a name="role-types"></a>角色类型
 
@@ -97,7 +97,7 @@ ms.locfileid: "51570554"
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>设置自动测试和用户历史记录
 
-合规性中心中的合规性Microsoft 365设置允许您启用和禁用改进操作自动测试。 这些设置还允许您管理与改进操作关联的用户数据，包括将改进操作重新分配给其他用户的能力。  只有具有全局管理员或合规性管理器管理员角色的人才能访问合规性管理器设置。
+合规性管理器设置Microsoft 365 合规中心启用和禁用改进操作自动测试。 这些设置还允许您管理与改进操作关联的用户数据，包括将改进操作重新分配给其他用户的能力。  只有具有全局管理员或合规性管理器管理员角色的人才能访问合规性管理器设置。
 
 > [!NOTE]
 > 自动测试功能不适用于高GCC DoD 环境中的客户，因为这些环境中没有安全功能分数。 GCC高和 DoD 客户需要手动实施和测试其改进操作。
@@ -112,7 +112,7 @@ ms.locfileid: "51570554"
 
 #### <a name="to-manage-your-automated-testing-settings"></a>若要管理自动测试设置：
 
-1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select **设置** on the left navigation from anywhere in the [Microsoft 365 合规中心](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -134,7 +134,7 @@ ms.locfileid: "51570554"
 
 **若要查找用户历史记录设置，请执行以下操作：**
 
-1. Select 设置 on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select 设置 on the left navigation from anywhere in the [Microsoft 365 合规中心](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -152,7 +152,7 @@ ms.locfileid: "51570554"
 
 **按照以下步骤按用户导出报告：**
 
-1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select **设置** on the left navigation from anywhere in the [Microsoft 365 合规中心](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -170,7 +170,7 @@ ms.locfileid: "51570554"
 
 **按照以下步骤将改进操作重新分配给其他用户：**
 
-1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select **设置** on the left navigation from anywhere in the [Microsoft 365 合规中心](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -197,7 +197,7 @@ ms.locfileid: "51570554"
 
 若要删除用户的历史记录，请按照以下步骤操作：
 
-1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select **设置** on the left navigation from anywhere in the [Microsoft 365 合规中心](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -322,7 +322,7 @@ ms.locfileid: "51570554"
 
 评估页面列出了你 [为](compliance-manager-assessments.md) 组织设置的所有评估。 合规性分数分母由所有跟踪评估确定。 当你添加更多评估时，你将看到改进操作页上列出了更多改进操作，并且合规性分数分母增加。
 
-页面 **顶部附近的** 已激活模板计数器显示在可供组织使用的模板总数中当前使用的活动评估模板的数量。 有关详细信息 [，请参阅](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 模板类型。
+页面 **顶部附近的** 已激活模板计数器显示在可供组织使用的模板总数中当前使用的活动评估模板的数量。 有关详细信息 [，请参阅模板](compliance-manager-templates.md#template-availability-and-licensing) 可用性和许可。
 
 "评估"页汇总了有关每个评估的关键信息：
 
@@ -357,7 +357,7 @@ ms.locfileid: "51570554"
 
 模板是用于在合规性管理器中创建评估的框架， 评估模板页面将显示模板和关键详细信息的列表。 该列表包括合规性管理器提供的模板，以及组织已修改或创建的任何模板。 你可以应用筛选器以根据认证、产品范围、国家/地区、行业以及创建者来查找模板。
 
-页面 **顶部附近的** 已激活模板计数器显示在可供组织使用的模板总数中当前使用的活动评估模板的数量。 有关详细信息 [，请参阅](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 模板类型。
+页面 **顶部附近的** 已激活模板计数器显示在可供组织使用的模板总数中当前使用的活动评估模板的数量。 有关详细信息 [，请参阅模板](compliance-manager-templates.md#template-availability-and-licensing) 可用性和许可。
 
 Select a template from its row to bring up its details page， which contains a description of the template and further information about certification， scope， and controls details. 在此页中，可以选择相应的按钮来创建评估、将模板数据导出到Excel，或修改模板。
 
