@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 0daad53e1f6a84f0399c3bfcfb48b92db547f64b
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657617"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149006"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -56,6 +56,7 @@ Microsoft SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解如何开始计划使用 SharePoint Syntex。 |[采用 SharePoint Syntex：入门](./adoption-getstarted.md)| 
+|请参阅示例方案，了解如何在组织中使用 SharePoint Syntex |[Microsoft SharePoint Syntex 的应用场景和用例](./adoption-scenarios.md)| 
 |了解如何使用 SharePoint Syntex 来自动化文档流程 |[使用 Microsoft 365 解决方案管理合同](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex

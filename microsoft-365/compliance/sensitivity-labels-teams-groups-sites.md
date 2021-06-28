@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096752"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149186"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -141,6 +141,8 @@ ms.locfileid: "53096752"
 并非所有应用程序都支持身份验证上下文。如果应用程序不受支持的用户连接到为身份验证上下文配置的网站，则他们会看到访问被拒绝的消息，或者被提示进行身份验证但被拒绝。当前支持身份验证上下文的应用程序有:
 
 - Web 的 Office，其中包括 Web 的 Outlook
+
+- 适用于 Windows 和 macOS 的 Microsoft Teams（不包括 Teams Web 应用）
 
 - Microsoft Planner
 
