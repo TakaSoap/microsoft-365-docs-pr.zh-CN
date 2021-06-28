@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984792"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169600"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -35,7 +35,9 @@ ms.locfileid: "52984792"
 
 [攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。
 
-**要求** 你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
+## <a name="requirements"></a>要求
+
+你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
@@ -62,7 +64,7 @@ ms.locfileid: "52984792"
 可以使用以下任一方法启用攻击面减少规则：
 
 - [Microsoft Intune](#intune)
-- [移动设备管理 (MDM) ](#mdm)
+- [移动设备管理 (MDM)](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [组策略](#group-policy)
 - [PowerShell](#powershell)
@@ -121,7 +123,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 基本属性](images/mem03-1-basics.png)
 
-4. 单击“**下一步**”。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
+4. 单击 **下一个**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 配置设置](images/mem04-2-configuration-settings.png)
@@ -162,7 +164,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 适用性规则](images/mem07-5-applicability-rules.png)
 
-10. 单击“**下一步**”。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
+10. 单击 **下一个**。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
 
     > [!div class="mx-imgBorder"]
     > ![MEM 审阅和创建](images/mem08-6-review-create.png)

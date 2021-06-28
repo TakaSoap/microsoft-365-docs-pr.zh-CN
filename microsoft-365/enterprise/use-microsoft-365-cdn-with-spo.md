@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 了解如何使用 Office 365 内容分发网络 (CDN) 来加快你的 SharePoint Online 资产的交付。
-ms.openlocfilehash: 6819f627d3590cd2739b36cb1bc303f197d6aaa5
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: e6cce93be0e8d893d68ae8bcdb15fde325a2cb59
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570401"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169552"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -898,7 +898,7 @@ spo cdn set --type Public --enabled false
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> 通常，不应将 URL 直接硬编码到资源CDN。 但是，如果需要，你可以手动为公用源中的资产构建 URL。 有关详细信息，请参阅[Hardcoding CDN URL for public assets](use-microsoft-365-cdn-with-spo.md)。
+> 通常，不应将 URL 直接硬编码到资源CDN。 但是，如果需要，你可以手动为公用源中的资产构建 URL。 有关详细信息，请参阅[Hardcoding CDN URL for public assets](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets)。
 
 若要了解如何验证资产是否正在从 CDN 中提供，请参阅疑难解答中的如何确认 CDN[正在](use-microsoft-365-cdn-with-spo.md#CDNConfirm)为资产[Office 365 CDN。](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
@@ -975,7 +975,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 需要注意的是，SharePoint Online 不支持私有源中的资产的项目级权限。 例如，对于位于 的文件，在 满足以下条件的情况下，用户 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` 具有对文件的有效访问权限：
 
-|用户  |Permissions  |有效访问  |
+|用户  |权限  |有效访问  |
 |---------|---------|---------|
 |用户 1     |有权访问 folder1         |可以从image1.jpg访问CDN         |
 |用户 2     |无法访问 folder1         |无法从image1.jpg访问CDN         |

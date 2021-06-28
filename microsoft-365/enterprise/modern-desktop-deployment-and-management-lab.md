@@ -1,5 +1,5 @@
 ---
-title: Windows 10和Office 365部署实验室工具包
+title: Windows 10 和 Office 365 部署实验室工具包
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770669"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169564"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10和Office 365部署实验室工具包
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署实验室工具包
 
 Windows 10和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
 
@@ -48,16 +48,18 @@ Windows 10和 Office 365 部署实验室工具包旨在帮助你规划、测试�
 
   - Microsoft 365 E5
   - Microsoft 365 企业应用版
-  - Office 365使用 EMS 企业移动性 + 安全性 (E5) 
+  - Office 365 E5 EMS 企业移动性 + 安全性 (中) 
 
 ## <a name="step-by-step-labs"></a>分步实验室
 
 详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>计划和准备基础结构 
+
 - 桌面分析 
 - 云管理网关&云分发点 
-- 租户附加、共同管理和切换工作负载 
+- 新增内容！ 租户附加和共同管理
+- 新增内容！ 终结点分析 
 - 远程访问 (VPN) 
 
 ### <a name="prepare-configuration"></a>准备配置   
@@ -91,6 +93,7 @@ Windows 10和 Office 365 部署实验室工具包旨在帮助你规划、测试�
 - Enterprise托管部署Microsoft Intune  
 - LOB 部署和管理与Microsoft Intune
 - 部署Microsoft Teams
+- 新增内容！ 工作分配筛选器  
 
 ### <a name="deploy-windows-virtual-desktop"></a>部署Windows虚拟桌面  
 
