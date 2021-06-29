@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: c71ba6628ed858311db3d58c144295ff617679dc
-  ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+  ms.openlocfilehash: 053a20e65859fedbd91c9357ccdbd98bdb5109b3
+  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/06/2021
-  ms.locfileid: "52789203"
+  ms.lasthandoff: 06/29/2021
+  ms.locfileid: "53177389"
 landingContent:
 - title: 基础解决方案指南
   linkLists:
@@ -33,6 +33,8 @@ landingContent:
       url: deploy-threat-protection.md
     - text: 为数据隐私法规部署信息保护
       url: information-protection-deploy.md
+    - text: Microsoft 365 小型企业版和活动版
+      url: ../campaigns/index.md
 - title: 体系结构插图和设计原则
   linkLists:
   - linkListType: architecture
@@ -41,46 +43,50 @@ landingContent:
       url: cloud-architecture-models.md
     - text: Microsoft 365 生产力插图
       url: productivity-illustrations.md
-    - text: Teams 体系结构海报
-      url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: 设计原则
       url: design-principles.md
-- title: 工作负载资源
+    - text: 用户信息图
+      url: infographics-for-users.md
+    - text: 体系结构图标和模板
+      url: architecture-icons-templates.md
+- title: 管理和迁移解决方案指南
   linkLists:
-  - linkListType: reference
+  - linkListType: how-to-guide
     links:
-    - text: Contoso 案例研究
-      url: contoso-case-study-solutions.md
-  - linkListType: tutorial
-    links:
-    - text: 测试实验室指南
-      url: test-lab-guides-overview-solutions.md
+    - text: 租户管理
+      url: tenant-management-overview.md
+    - text: 删除前员工
+      url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 将文件共享迁移到 Microsoft 365
+      url: /sharepointmigration/mm-get-started.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 - title: 团队合作和协作解决方案指南
   linkLists:
   - linkListType: deploy
     links:
     - text: 计划和部署 Teams 语音解决方案
       url: deploy-voice.md
+    - text: 为业务管理合同
+      url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
   - linkListType: overview
     links:
+    - text: 智能 Intranet
+      url: /sharepoint/intelligent-internet-overview.md
     - text: 协作管理
       url: collaboration-governance-overview.md
     - text: 文件协作
       url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: 智能见解
-      url: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: OneDrive 企业指南
+    - text: 适用于企业的 OneDrive 指南
       url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: 安全性和合规性指南
+- title: 合规性解决方案指南
   linkLists:
   - linkListType: deploy
     links:
-    - text: 安全团队为支持在家办公需完成的首要任务
-      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: 面向业务决策者 (BDM) 的 Microsoft 365 安全
-      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-    - text: Microsoft Defender for Endpoint
-      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 内部风险解决方案
+      url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 审核解决方案
+      url: ../compliance/auditing-solutions-overview.md
+    - text: Microsoft 365 高级电子数据展示
+      url: ../compliance/overview-ediscovery-20.md
   - linkListType: reference
     links:
     - text: ISO - 建议行动计划
@@ -91,6 +97,44 @@ landingContent:
       url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: GDPR - 建议的行动计划
       url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: 安全性解决方案指南
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 安全团队为支持在家办公需完成的首要任务
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 面向业务决策者 (BDM) 的 Microsoft 365 安全
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: 标识和设备访问配置
+      url: ../security/office-365-security/microsoft-365-policies-configurations.md
+    - text: 部署 Microsoft Defender for Endpoint
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+    - text: 评估 Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: 优先帐户安全建议
+      url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+    - text: 评估 Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: 解决 Microsoft Defender for Endpoint 中的误报/漏报
+      url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+  - linkListType: how-to-guide
+    links:
+    - text: 从 Symantec 迁移到 Microsoft Defender for Endpoint
+      url: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
+    - text: 从 McAfee 迁移到 Microsoft Defender for Endpoint
+      url: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
+    - text: 从非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
+      url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+- title: 工作负载资源
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Contoso 案例研究
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: 测试实验室指南
+      url: test-lab-guides-overview-solutions.md
 - title: 行业特定的指南
   linkLists:
   - linkListType: overview
