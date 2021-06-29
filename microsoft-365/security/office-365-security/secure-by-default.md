@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: ''
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 description: '详细了解 EOP Exchange Online Protection (中的默认设置) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861523"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177641"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下，安全Office 365
 
@@ -75,7 +75,7 @@ Microsoft 365邮箱的组织Exchange Online EOP Exchange Online Protection (保�
 ## <a name="exceptions"></a>例外
 
 > [!NOTE]
-> 2021 年 7 月，默认将安全扩展到Exchange传输规则 (传输规则) 。 如果使用邮件流规则允许第三方网络钓鱼模拟或未经筛选地传递至安全操作邮箱，则最终需要消除这些规则，并切换到使用高级传递策略（如果该功能可供你 [](configure-advanced-delivery.md)_使用）。_
+> 2021 年 8 月，默认将安全扩展到Exchange传输规则 (传输规则) 。 如果使用邮件流规则允许第三方网络钓鱼模拟或未经筛选地传递至安全操作邮箱，则最终需要消除这些规则，并切换到使用高级传递策略（如果该功能可供你 [](configure-advanced-delivery.md)_使用）。_
 
 允许高可信度网络钓鱼邮件绕过筛选的唯一替代是邮件流规则。 若要使用邮件流规则绕过筛选，请参阅使用邮件流[规则设置邮件中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 

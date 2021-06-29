@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 阻止以前的员工登录并阻止访问Microsoft 365服务。
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061825"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177113"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止对 Microsoft 365 服务的访问
 
@@ -65,7 +65,7 @@ ms.locfileid: "53061825"
 
 如果你有电子邮件作为你的 Microsoft 365订阅的一部分，请登录到 Exchange 管理中心，并按照以下步骤阻止以前的员工访问他们的电子邮件。
   
-1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
+1. 转到 <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
-3. 双击用户，然后转到" **邮箱功能"** 页。 在 **"移动设备"** 下，选择"禁用 **Exchange ActiveSync"** 和"**禁用适用于设备的 OWA"，** 当系统提示时，对两者回答"是"。 
-4. 在 **"电子邮件连接"** 下 **，选择"禁用****"，在系统提示** 时回答"是"。
+3. 双击用户，然后转到"电子邮件应用"**下的"** 管理电子邮件 **应用设置"。** 关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
+4. 选择“保存”。

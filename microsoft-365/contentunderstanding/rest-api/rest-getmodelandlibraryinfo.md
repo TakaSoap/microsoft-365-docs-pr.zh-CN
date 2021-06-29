@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 获取有关模型及应用该模型的库的信息。
-ms.openlocfilehash: 6cd61364ed3b360ef235aaba21a2735002fe481e
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904166"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177065"
 ---
 # <a name="get-model-and-library-information"></a>获取模型和库信息
 
@@ -25,13 +25,13 @@ ms.locfileid: "52904166"
 ## <a name="http-request"></a>HTTP 请求
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI 参数
 
 | 名称 | 位置 | 必需 | 类型 | 说明 |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|查询|True|GUID|模型文件的唯一 ID。|
 
 ## <a name="request-headers"></a>请求标头
@@ -41,22 +41,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |Accept|application/json;odata=verbose|
 
 
-## <a name="request-body"></a>请求正文
-
-| Name | 必需 | 类型 | 说明 |
-|--------|-------|--------|------------|
-|ModelUniqueId|是|字符串|模型文件的唯一 ID。|
-|TargetSiteUrl|是|字符串|目标库网站的完整 URL。|
-|TargetWebServerRelativeUrl|是|字符串|目标库的 Web 的服务器相应的 URL。|
-|TargetLibraryServerRelativeUrl|是|字符串|目标库的服务器相应的 URL。|
-|TargetLibraryRemoved|是|int|指示目标库是否被删除的标记。|
-
 ## <a name="response"></a>响应
 
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
 |200 OK| |成功|
-|201 已创建| |请注意，由于此 API 支持将模型应用到多个库，因此即使将模型应用于其中一个库失败，也可能会返回 201。 <br>检查响应正文，了解模型是否已成功应用于所有指定的库。 请参阅[请求正文](rest-getmodelandlibraryinfo.md#request-body)了解详细信息。|
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +56,7 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 #### <a name="sample-request"></a>示例请求
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 #### <a name="sample-response"></a>示例响应
 
@@ -130,7 +119,7 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
             "ViewOption": "NewViewAsDefault"
         }
     ]
-}```
+}
 ```
 
 ## <a name="see-also"></a>另请参阅

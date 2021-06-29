@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169600"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177617"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -37,6 +37,8 @@ ms.locfileid: "53169600"
 
 ## <a name="requirements"></a>要求
 
+跨多个版本的攻击Windows功能
+
 你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
@@ -44,7 +46,13 @@ ms.locfileid: "53169600"
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-尽管攻击面减少规则不需要使用 Windows [E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender [for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)中提供的监视、分析和工作流，以及 Microsoft 365[安全中心 中的报告和配置功能](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
+若要使用攻击面减少规则的整个功能集，你需要：
+
+- Windows Defender 防病毒作为主 AV (实时保护) 
+- [某些规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 要求 (云传递保护) 
+- Windows 10 企业版E5 或 E3 许可证或 Microsoft 365 商业版许可证
+
+尽管攻击面减少规则不需要[Windows E5](/windows/deployment/deploy-enterprise-licenses)许可证，但使用 Windows E5 许可证，你可以获得高级管理功能，包括适用于终结点的 Defender 中提供的监视、分析和工作流，以及 Microsoft 365 安全中心的报告和配置功能。 这些高级功能不适用于 E3 许可证，但你仍可以使用事件查看器查看攻击面减少规则事件。
 
 每个 ASR 规则包含四个设置之一：
 

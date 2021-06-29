@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 设置基本移动性和安全性，通过执行远程擦除设备等操作保护和管理用户的移动设备。
-ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634288"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177269"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>设置基本移动性和安全性
 
 内置的基本移动性和安全性 Microsoft 365可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。
 
-有问题？ 有关帮助解决常见问题的常见问题解答，请参阅 Basic [Mobility and Security Frequently-asked questions (FAQ) ](frequently-asked-questions.md)。 请注意，不能使用委派管理员帐户管理基本移动性和安全性。 有关详细信息，请参阅合作伙伴 [：提供委派管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
+有问题？ 有关帮助解决常见问题的常见问题解答，请参阅 Basic [Mobility and Security Frequently-asked questions (FAQ) ](frequently-asked-questions.yml)。 请注意，不能使用委派管理员帐户管理基本移动性和安全性。 有关详细信息，请参阅合作伙伴 [：提供委派管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
 
 设备管理是安全与合规&的一部分，因此你需要前往开始基本移动性和安全性设置。
 
@@ -49,7 +49,7 @@ ms.locfileid: "52634288"
 
 如果你没有与自定义域关联的自定义域Microsoft 365或者如果你未管理 Windows设备，可以跳过此部分。 否则，您需要在 DNS 主机上添加域的 DNS 记录。 如果已添加记录，作为设置域的一Microsoft 365，则一切都已设置。 添加记录后，Microsoft 365组织中使用使用自定义域的电子邮件地址登录其 Windows 设备的用户将被重定向以注册基本移动性和安全性。
 
-需要帮助设置记录？ 查找你的域注册机构，然后选择注册机构名称以转到添加 DNS 记录以连接你的域中提供的有关创建 DNS 记录的分 [步帮助](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 使用这些说明创建在不使用[Azure AD Windows简化注册中所述的](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)CNAME 高级版。
+需要帮助设置记录？ 查找你的域注册机构，然后选择注册机构名称以转到添加 DNS 记录以连接你的域中提供的有关创建 DNS 记录的分 [步帮助](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 使用这些说明创建简化注册过程中描述的 CNAME [Windows无需Azure AD Premium。](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
 
 添加两条 CNAME 记录后，返回到安全与&中心，然后转到数据丢失防护 设备管理以完成下一  >     步。
 

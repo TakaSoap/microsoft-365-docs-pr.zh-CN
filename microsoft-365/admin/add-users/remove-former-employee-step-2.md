@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何保存以前员工的邮箱内容。
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244167"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177485"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>步骤 2 - 保存以前员工的邮箱的内容
 
@@ -45,4 +45,4 @@ ms.locfileid: "52244167"
 
     **OR**
 
-2. 将前员工的电子邮件地址添加到你的 Outlook Web 应用版本，然后将数据导出到 .pst 文件。 可以根据需要将数据导入到其他电子邮件帐户。 请查看步骤[6 - 向另一名员工授予OneDrive和Outlook数据的访问权限](remove-former-employee-step-6.md)。
+2. 将前员工的电子邮件地址添加到桌面版的 Outlook，然后将数据导出到 .pst 文件。 可以根据需要将数据导入到其他电子邮件帐户。 请查看步骤[6 - 向另一名员工授予OneDrive和Outlook数据的访问权限](remove-former-employee-step-6.md)。

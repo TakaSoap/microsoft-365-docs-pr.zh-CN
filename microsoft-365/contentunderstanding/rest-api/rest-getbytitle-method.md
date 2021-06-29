@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 和模型标题获取或更新 SharePoint Syntex 文档理解模型的信息。
-ms.openlocfilehash: a6fbe9ba9d3f5240c7b775613f97b83bfa2caa50
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904172"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177125"
 ---
 # <a name="getbytitle"></a>GetByTitle
 
@@ -25,13 +25,13 @@ ms.locfileid: "52904172"
 ## <a name="http-request"></a>HTTP 请求
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 此方法也可用于删除模型。
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI 参数
@@ -65,12 +65,12 @@ DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
 #### <a name="sample-request"></a>示例请求
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>示例响应
 
-**状态代码：** 204
+**状态代码：** 200
 
 ```HTTP
 {
@@ -109,7 +109,7 @@ GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
 ##### <a name="sample-request"></a>示例请求
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>另请参阅

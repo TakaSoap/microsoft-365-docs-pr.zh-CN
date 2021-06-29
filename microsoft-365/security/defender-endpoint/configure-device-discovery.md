@@ -1,6 +1,6 @@
 ---
 title: 配置设备发现
-description: 了解如何使用基本或标准发现在 Microsoft 365 Defender 中配置设备发现
+description: 了解如何使用基本或标准发现Microsoft 365 Defender设备发现
 keywords: 基本， 标准， 配置终结点发现， 设备发现
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0d722b4f4bef5b4d178edc5f2142c887690d4c63
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e1efeff77657e04223b21d639a0a09287f3707cc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765247"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177581"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -53,7 +53,7 @@ ms.locfileid: "51765247"
 1.  导航到 **设置 >设备发现 "**。
 2.  选择要在载入的设备上使用的发现模式。 
 3.  如果你已选择使用标准发现，请通过指定设备标记来选择用于活动探测的设备：所有设备或子集。
-4. 单击“保存”。
+4. 单击“**保存**”。
 
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>在标准发现中排除设备的活动探测器
@@ -101,7 +101,24 @@ ms.locfileid: "51765247"
 6. 确认要更改。 
 
 
+## <a name="explore-devices-in-the-network"></a>浏览网络中设备
 
+可以使用以下高级搜寻查询获取有关网络列表中描述的每个网络名称的更多上下文。 该查询列出了最近 7 天内连接到特定网络的所有已载入设备。
+
+
+
+```kusto
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| where ConnectedNetworks  != ""
+| extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
+| mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
+| extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
+| where NetworkName == "<your network name here>"
+
+
+```
 
 ## <a name="see-also"></a>另请参阅
 - [设备发现概述](device-discovery.md)

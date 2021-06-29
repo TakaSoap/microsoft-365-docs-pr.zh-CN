@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169576"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177629"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
@@ -52,7 +52,7 @@ ms.locfileid: "53169576"
 
 在建议详细信息窗格中，检查用户影响以确定设备可接受在阻止模式下启用规则的新策略的百分比，而不会对工作效率产生不利影响。
 
-有关 [支持](enable-attack-surface-reduction.md#requirements) 的操作系统的信息，请参阅"启用攻击面减少规则"文章中的要求。
+有关 [支持](enable-attack-surface-reduction.md#requirements) 的操作系统和其他要求信息的信息，请参阅"启用攻击面减少规则"文章中的要求。
 
 ## <a name="audit-mode-for-evaluation"></a>评估审核模式
 

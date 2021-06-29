@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6d2770dec270e2d1c1b9750387a0f07f82b357f9
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055238"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177089"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -42,7 +42,11 @@ ms.locfileid: "53055238"
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
+
+有关 [支持](enable-attack-surface-reduction.md#requirements) 的操作系统和其他要求信息的信息，请参阅"启用攻击面减少规则"文章中的要求。
 
 ## <a name="exclude-files-and-folders"></a>排除文件和文件夹
 
@@ -66,21 +70,22 @@ ms.locfileid: "53055238"
 
 | 规则说明 | GUID |
 |:----|:----|
+| 阻止滥用被攻击的易受攻击的已签名驱动程序 | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
+| 阻止 Adobe Reader 创建子进程 | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
 | 阻止所有Office应用程序创建子进程 | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
-| 阻止执行可能混淆的脚本 | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| 从宏中阻止 Win32 API Office调用 | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
-| 阻止Office应用程序创建可执行内容 | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| 阻止Office代码注入其他进程 | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
-| 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| 阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | 阻止来自电子邮件客户端和 Webmail 的可执行内容 | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | 阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| 使用高级防护抵御勒索软件 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
-| 阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
+| 阻止执行可能混淆的脚本 | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| 阻止Office应用程序创建可执行内容 | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| 阻止Office代码注入其他进程 | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| 阻止Office应用程序创建子进程 | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| 通过 WMI 事件订阅阻止持久性 | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | 阻止源自 PSExec 和 WMI 命令的进程创建 | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | 阻止从 USB 运行的不受信任的和未签名的进程 | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| 阻止Office应用程序创建子进程 | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| 阻止 Adobe Reader 创建子进程 | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| 通过 WMI 事件订阅阻止持久性 | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
+| 从宏中阻止 Win32 API Office调用 | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| 使用高级防护抵御勒索软件 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 有关 [每个规则的详细信息](attack-surface-reduction.md) ，请参阅攻击面减少主题。
 

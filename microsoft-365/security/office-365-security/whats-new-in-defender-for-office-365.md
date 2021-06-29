@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0a9eb63ed4508ff875324cf6fb0b4a8ad59cb29f
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062207"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177524"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -62,7 +62,6 @@ ms.locfileid: "53062207"
 - 将搜寻体验中记录的导出限制从 9990 提高至 200，000 [](threat-explorer.md)
 - 扩展 Explorer (和实时检测) 试用租户的数据保留和搜索限制从之前的 7 天 (个限制) 到 30 [天](threat-explorer.md)
 - Explorer (中称为 **模拟** 域和模拟用户的新搜寻透视表和实时) 搜索针对受保护的用户或域的模拟攻击。 有关详细信息，请参阅 [详细信息](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Microsoft Defender for Office 365 计划 1 或计划 2) 
-- 当收件人安全提示发件人发送的电子邮件或不经常收到发件人发送的电子邮件时，新建的第一个联系人联系人。 有关此设置以及如何使用邮件流规则配置此设置Exchange也称为 (传输规则) ，请参阅 First [contact 安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -75,6 +74,7 @@ ms.locfileid: "53062207"
 
 ## <a name="septemberoctober-2020"></a>2020 年 9 月/10 月
 
+- 当收件人安全提示发件人发送的电子邮件或不经常收到发件人发送的电子邮件时，新建的第一个联系人联系人。 有关此设置以及如何使用邮件流规则配置此设置Exchange也称为 (传输规则) ，请参阅 First [contact 安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)。
 - [使用配置分析器检查策略](configuration-analyzer-for-security-policies.md)
 - 威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器[ (](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) Defender for Office 365 信息，威胁资源管理器[ (](threat-explorer.md)电子邮件被租户/用户策略)  (Defender for Office 365 计划 2) 
 - 在威胁资源管理器中显示 URL[威胁 (恶意软件](threat-explorer.md#threats-in-urls)、网络钓鱼、垃圾邮件或无)  (Defender for Office 365 计划 2) 
@@ -112,7 +112,7 @@ ms.locfileid: "53062207"
 
 - [查看 Microsoft](address-compromised-users-quickly.md) Defender for (**计划** 2)  (预览版中Office 365泄露的新用户检测和响应) 
 
-## <a name="september-2019"></a>2019年九月
+## <a name="september-2019"></a>2019 年 9 月
 
 - [使用 Microsoft](automated-investigation-response-office.md) Defender for (计划 2 Office 365的自动调查和响应) 
 

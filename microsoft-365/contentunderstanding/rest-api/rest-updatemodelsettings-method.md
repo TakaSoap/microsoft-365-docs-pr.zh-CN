@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 更新 SharePoint Syntex 文档理解模型的可用模型设置。
-ms.openlocfilehash: f24fc8428adbf22ded2ca6d7a49cabc84b385770
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: cd288812044f3b02839c3c11c321947bd02cccaa
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904167"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177161"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 
@@ -25,12 +25,14 @@ ms.locfileid: "52904167"
 ## <a name="http-request"></a>HTTP 请求
 
 ```HTTP
-POST /_api/machinelearning/models/updatemodelsettings HTTP/1.1
+POST /_api/machinelearning/models/getbytitle('{modelFileName}')/updatemodelsettings HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI 参数
 
-无
+|名称 |位置 |必需|类型|说明|
+|-----|---|--------|----|-----------|
+|modelFileName|查询|True|string|Syntex 模型文件的名称。|
 
 ## <a name="request-headers"></a>请求标头
 
