@@ -19,12 +19,12 @@ description: 使用浏览器门户中的资源管理器和实时检测Microsoft 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3dc8c205d5edfe455884d64030c7a6070762adb
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108543"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195029"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -56,7 +56,7 @@ ms.locfileid: "53108543"
 
 ## <a name="improvements-to-threat-hunting-experience"></a>威胁搜寻体验改进
 
-### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>在预览版资源管理器中引入 MDO 警报的警报 ID/ (实时) 
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>在预览版中引入适用于 Office 365 警报的 Defender 警报 ID/实时 (检测) 
 
 今天，如果你从警报导航到威胁资源管理器，它将在资源管理器中打开筛选的视图，其中按警报策略 ID (策略 ID 筛选的视图是警报策略设置的唯一标识符) 。
 我们正在通过引入警报 ID (在威胁资源管理器和实时检测中查看) 下方的警报 ID 示例，以便查看与特定警报相关的邮件以及电子邮件数量，从而使此集成更具相关性。 您还可以查看邮件是否属于警报，以及从该邮件导航到特定警报。

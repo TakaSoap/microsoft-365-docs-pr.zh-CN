@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137771"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169612"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -89,6 +89,7 @@ ms.locfileid: "53137771"
 |按位置限制|否 |是 |
 |条件：可训练分类器|是 |否 |
 |条件：电子邮件的共享选项和其他选项|否 |是 |
+|条件：异常|否 |是（仅限电子邮件） |
 |建议、策略工具提示和用户重写|是 |否 |
 |模拟模式|否 |是 |
 |根据条件检查 Exchange 附件|否 | 是|
@@ -297,7 +298,17 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     - 附件受密码保护
     - 无法扫描任何电子邮件附件的内容
     - 任何电子邮件附件的内容均未完成扫描
-
+    - 标题与模式匹配
+    - 主题与模式匹配
+    - 收件人地址包含字词
+    - 收件人地址与模式匹配
+    - 发件人地址与模式匹配
+    - 发件人域为
+    - 收件人所在组为
+    - 发件人为
+    
+    可以为上述每个条件指定例外。
+    
 8. 根据先前的选择，你现在有机会使用条件和例外来创建新规则。
     
     敏感信息类型的配置选项与为 Office 应用自动标记所选的选项相同。 如果需要详细信息，请参阅[配置标签的敏感信息类型](#configuring-sensitive-info-types-for-a-label)。

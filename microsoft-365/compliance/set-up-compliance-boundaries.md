@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界创建逻辑边界，以控制电子数据展示管理员可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022338"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194705"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>设置电子数据展示调查的合规性边界
 
@@ -205,7 +205,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
    为了简化概念 **，Region** 参数控制用于搜索 SharePoint 和 OneDrive 中的内容的数据中心。 这不适用于搜索网站中的内容Exchange Exchange内容搜索不受数据中心的地理位置限制。 此外，相同的 **Region** 参数值可能还指示通过导出的数据中心。 这通常是控制跨地理平台移动数据所必需的。
 
 > [!NOTE]
-> 如果您使用的是 Advanced eDiscovery，**则 Region** 参数不控制导出数据的区域。 数据从组织的主数据中心导出。 此外，搜索 SharePoint 和 OneDrive 中的内容不受数据中心的地理位置限制。 搜索所有数据中心。 有关解决方案Advanced eDiscovery，请参阅 Advanced eDiscovery[中的](overview-ediscovery-20.md)Microsoft 365。
+> 如果您使用的是 Advanced eDiscovery，**则 Region** 参数不控制导出数据的区域。 从组织的中心位置导出数据。 此外，搜索 SharePoint 和 OneDrive 中的内容不受数据中心的地理位置限制。 搜索所有数据中心。 有关解决方案Advanced eDiscovery，请参阅 Advanced eDiscovery[中的](overview-ediscovery-20.md)Microsoft 365。
 
 下面是为合规性边界创建搜索权限筛选器时使用 **Region** 参数的示例。 这假定 Fourth Coffee 子公司位于北美，Coho Winery 位于欧洲。 
   
@@ -225,7 +225,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 - 在搜索 SharePoint 和 OneDrive 中的内容时 **，Region** 参数将搜索引导到电子数据展示管理员将在其中执行电子数据展示调查的主位置或附属位置。 如果电子数据展示SharePoint搜索OneDrive搜索权限筛选器中指定的区域之外的所有网站，则不返回任何搜索结果。
 
-- 导出搜索结果时，所有内容位置 (包括 Exchange、Skype for Business、SharePoint、OneDrive 以及可以使用内容搜索工具) 搜索的其他服务中的内容将上载到数据中心中由 **Region** 参数指定的 Azure 存储空间 位置。 这可帮助组织通过不允许跨受控边界导出内容来保持合规性。 如果在搜索权限筛选器中未指定任何区域，内容将上载到组织的主数据中心。
+- 从核心电子数据展示导出搜索结果时，来自所有内容位置 (包括 Exchange、Skype for Business、SharePoint、OneDrive 以及可以使用内容搜索工具) 搜索的其他服务的内容将上载到数据中心中由 **Region** 参数指定的 Azure 存储 位置。 这可帮助组织通过不允许跨受控边界导出内容来保持合规性。 如果在搜索权限筛选器中未指定任何区域，内容将上载到组织的主数据中心。
+
+  从网站Advanced eDiscovery时，你无法通过使用 Region 参数控制内容 **上载** 位置。 内容将上载到Azure 存储中心位置数据中心内的数据位置。 有关基于中心位置的地理位置列表，请参阅Microsoft 365[地理位置电子数据展示配置。](../enterprise/multi-geo-ediscovery-configuration.md)
 
 - 您可以编辑现有的搜索权限筛选器，以通过运行以下命令添加或更改区域：
 
@@ -269,19 +271,19 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 如果为用户实现了合规性边界和搜索权限筛选器，则建议您不要删除用户的邮箱，而不要删除其OneDrive帐户。 换句话说，如果您删除用户的邮箱，则还应删除用户的 OneDrive 帐户，因为 mailbox_RecipientFilter 用于强制执行 OneDrive 的搜索权限筛选器。
 
-- 合规性边界和搜索权限筛选器取决于在 Exchange、OneDrive 和 SharePoint 中的内容上标记的属性，以及此标记内容的后续索引。
+- 合规性边界和搜索权限筛选器取决于对 Exchange、OneDrive 和 SharePoint 中的内容标记的属性以及此标记内容的后续索引。
 
 - 建议不要将排除筛选器 (例如，在基于内容的合规性) 搜索 `-not()` 权限筛选器中使用。 如果未对具有最近更新的属性的内容编制索引，则使用排除筛选器可能会获得意外结果。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**谁可以使用 (cmdlet 和 New-ComplianceSecurityFilter cmdlet Set-ComplianceSecurityFilter和管理) ？**
+**Who使用 cmdlet 和 (cmdlet 创建 (New-ComplianceSecurityFilterSet-ComplianceSecurityFilter权限筛选器) ？**
   
-若要创建、查看和修改搜索权限筛选器，您必须是 Microsoft 365 合规中心中组织管理角色组的成员。
+若要创建、查看和修改搜索权限筛选器，您必须是组织中组织管理角色组Microsoft 365 合规中心。
   
 **如果将电子数据展示管理员分配给跨多个机构的多个角色组，如何搜索一个机构或另一个机构中的内容？**
   
-电子数据展示管理员可以将参数添加到其搜索查询中，以将搜索限制到特定机构。 例如，如果组织已指定 **CustomAttribute10** 属性来区分机构，他们可以将以下内容追加到搜索查询中，以搜索特定机构中的邮箱和 OneDrive 帐户  `CustomAttribute10:<value>` ：。
+电子数据展示管理员可以将参数添加到其搜索查询中，以将搜索限制到特定机构。 例如，如果组织已指定 **CustomAttribute10** 属性来区分机构，他们可以将以下内容追加到搜索查询中，以搜索特定机构中的邮箱和 OneDrive 帐户 `CustomAttribute10:<value>` ：。
   
 **如果用作搜索权限筛选器中的合规性属性的值发生更改，会发生什么情况？**
   
@@ -289,16 +291,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
   
 **电子数据展示管理员能否从两个单独的合规性边界查看内容？**
   
-可以，在搜索 Exchange 邮箱时，可以通过将电子数据展示管理员添加到对两个机构都可见的角色组来完成此操作。 但是，在搜索 SharePoint 网站和 OneDrive 帐户时，只有在机构位于同一区域或地理位置时，电子数据展示管理员才能搜索不同合规性边界内的内容。 **注意：** 此网站限制不适用于高级电子数据展示，因为搜索 SharePoint 和 OneDrive 中的内容不受地理位置限制。
+可以，通过将电子数据展示管理员添加到对两个Exchange都可见的角色组来搜索邮箱时，可以完成此操作。 但是，SharePoint网站和OneDrive帐户时，电子数据展示管理员只有在机构位于同一区域或地理位置时，才能搜索不同合规性边界中的内容。 **注意：** 此网站限制不适用于Advanced eDiscovery因为搜索 SharePoint 和 OneDrive 中的内容不受地理位置限制。
   
-**搜索权限筛选器是否适用于电子数据展示案例保留、Microsoft 365 保留策略或 DLP？**
+**搜索权限筛选器是否适用于电子数据展示案例保留、Microsoft 365保留策略或 DLP？**
   
 否，此时不会。
   
-**如果指定一个控制内容导出位置的区域，但该区域中没有 SharePoint 组织，我能否仍搜索 SharePoint？**
+**如果指定一个控制内容导出位置的区域，但该区域中SharePoint组织，我能否仍搜索SharePoint？**
   
 如果搜索权限筛选器中指定的区域在你的组织中不存在，将搜索默认区域。
   
 **可以在组织中创建的搜索权限筛选器的最大数量是什么？**
   
-对可以在组织中创建的搜索权限筛选器的数量没有限制。 但是，当搜索权限筛选器超过 100 个时，搜索性能将受到影响。 若要尽可能减少组织中搜索权限筛选器的数量，请创建尽可能将 Exchange、SharePoint 和 OneDrive 的规则合并到单个搜索权限筛选器中的筛选器。
+对可以在组织中创建的搜索权限筛选器的数量没有限制。 但是，当搜索权限筛选器超过 100 个时，搜索性能将受到影响。 若要尽可能减少组织中搜索权限筛选器的数量，请创建尽可能将 Exchange、SharePoint 和 OneDrive 规则合并到单个搜索权限筛选器中的筛选器。

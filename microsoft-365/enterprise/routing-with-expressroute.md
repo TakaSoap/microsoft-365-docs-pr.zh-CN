@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 本文介绍 Azure ExpressRoute 路由要求、电路和路由域，以用于Office 365。
-ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687165"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194789"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
 
@@ -85,14 +85,6 @@ Office 365前端服务器均可在 Internet 和 ExpressRoute 上访问。 当两
 
 当你使用 Microsoft 对等路由域配置对等关系并经过批准进行适当访问时，你将能够看到通过 ExpressRoute 提供的所有 PaaS 和 SaaS 服务。 专为 Office 365 ExpressRoute 而设计的服务可以使用[BGP](./bgp-communities-in-expressroute.md)社区或路由[筛选器进行管理](/azure/expressroute/how-to-routefilter-portal)。
   
-其他应用程序（如视频Office 365）是一个Office 365应用程序;但是，Office 365视频由三个不同的组件组成：门户、流式传输服务和内容交付网络。 门户位于 SharePoint Online 中，流式服务位于 Azure 媒体服务 中，内容交付网络位于 Azure CDN。 下表概述了这些组件。
-
-|**组件**|**基础应用程序**|**包含在 SharePoint Online BGP Community？**|**使用**|
-|:-----|:-----|:-----|:-----|
-|Office 365视频门户  <br/> |SharePoint Online  <br/> |是  <br/> |配置、上载  <br/> |
-|Office 365视频流服务  <br/> |Azure 媒体服务  <br/> |否  <br/> |流式传输服务，在视频无法通过视频流CDN  <br/> |
-|Office 365视频内容传送网络  <br/> |Azure CDN  <br/> |否  <br/> |视频下载/流式传输的主要来源。 [详细了解如何Office 365网络。](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e)  <br/> |
-
 使用 Microsoft 对等Office 365的每个功能按应用程序类型和 FQDN [Office 365终结点](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)一文列出。 使用表中 FQDN 的原因是允许客户使用 PAC 文件或其他代理配置管理流量，请参阅我们的管理 OFFICE 365 终结点（例如 PAC[文件）](./managing-office-365-endpoints.md)的指南。
   
 在某些情况下，我们使用了通配符域，其中一个或多个子 FQDN 的播发方式与更高级别的通配符域不同。 当通配符表示所有播发到 ExpressRoute 和 Internet 的服务器长列表，而仅向 Internet 播发一小部分目标或反向播发目标时，通常会发生这种情况。 请参阅下面的表以了解区别。

@@ -13,12 +13,12 @@ localization_priority: Normal
 description: 通过 Microsoft Defender for Office 365 中的威胁筛选堆栈跟踪传入Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683291"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194801"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的威胁防护步骤
 
@@ -51,7 +51,7 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 发件人智能中的功能对于捕获垃圾邮件、批量、模拟和未经授权的欺骗邮件至关重要，还会成为网络钓鱼检测的因素。 这些功能中的大多数是可单独配置的。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="MDO 中的筛选阶段 2 是发件人智能。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender for Office 365筛选的第 2 阶段是发件人智能。":::
 
 1. **帐户具有** 异常行为且与泄露一致时，会引发帐户泄露检测触发器和警报。 在某些情况下，在组织的安全运营团队解决问题之前，用户帐户将被阻止并阻止发送任何进一步的电子邮件。
 
@@ -133,7 +133,7 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 最终图表 (图表的所有部分一样，) 随着产品的增长和开发 *而发生变化*。 为此页面添加 **书签，并使用** 你在底部找到的反馈选项（如果需要在更新后询问）。 对于记录，这是按顺序排列的所有阶段的堆栈：
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO 中筛选的所有阶段的顺序为 1 到 4。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender 中筛选的所有阶段Office 365顺序为 1 到 4。":::
 
 ## <a name="more-information"></a>更多信息
 

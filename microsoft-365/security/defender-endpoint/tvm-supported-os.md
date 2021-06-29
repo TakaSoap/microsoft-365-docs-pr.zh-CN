@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821969"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194681"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -48,19 +48,19 @@ ms.locfileid: "52821969"
 
 支持的操作系统或平台 | 操作系统漏洞 | 软件产品漏洞 | 操作系统配置评估 | 安全控制配置评估 | 软件产品配置评估
 :---|:---|:---|:---|:---|:---
-Windows 7 | 支持 | 不支持 | 不支持 | 不支持 | 不支持
+Windows 7 | 是 | 不支持 | 不支持 | 不支持 | 不支持
 Windows 8.1 | 是 | 是 | 是 | 是| 是
-Windows 10，版本 1607-1703 | 支持  | 不支持 | 不支持 | 不支持 | 不支持
+Windows 10，版本 1607-1703 | 是  | 不支持 | 不支持 | 不支持 | 不支持
 Windows 10版本 1709 或更高版本 | 是 | 是 | 是 | 是 | 是
 Windows Server 2008 R2 | 是 | 是 | 是 | 是 | 是
 Windows Server 2012 R2 | 是 | 是 | 是 | 是 | 是
 Windows Server 2016 | 是 | 是 | 是 | 是 | 是
 Windows Server 2019 | 是 | 是 | 是 | 是 | 是
-macOS 10.14 "Mojave"及以上 | 是 | 是 | 是 (预览)  | 是 (预览)  | 是 (预览) 
-Red Hat Enterprise Linux 7.2 或更高版本 (**预览**)  (请参阅下面的"重要 \* ")  | 是 | 是 | 是 | 是 | 是
-CentOS 7.2 或更高版本 **(预览)** | 是 | 是 | 是 | 是 | 是
-Ubuntu 16.04 LTS 或更高版本 LTS **(预览)** | 是 | 是 | 是 | 是 | 是
-Oracle Linux 7.2 或更高版本 **(预览)** | 是 | 是 | 是 | 是 | 是
+macOS 10.14 "Mojave"及以上 | 是 | 是 | 是 | 是 | 是 
+Red Hat Enterprise Linux 7.2 或更高版本 (请参阅下面的"重要 \* ")  | 是 | 是 | 是 | 是 | 是
+CentOS 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
+Ubuntu 16.04 LTS 或更高版本 LTS | 是 | 是 | 是 | 是 | 是
+Oracle Linux 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux："作为 Microsoft Defender for Endpoint 服务的一部分提供和显示的漏洞数据可从 Red Hat， Inc. 以原始形式"AS IS"提供给你，并且可能不是最新的。 Red Hat 安全数据 API 中可访问的数据由 Creative Commons Attribution 4.0 国际许可证授权。 使用此数据的风险由你承担。 Microsoft 及其第三方供应商不承担任何责任以及其他间接损害和默示担保，包括针对特定目的的不侵权、适用性和适用性的默示担保。 © 2020 Red Hat。 保留所有权利。 © 2020 Microsoft。 保留所有权利。"

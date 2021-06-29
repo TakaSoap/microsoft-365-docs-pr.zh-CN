@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 本文汇总了 Microsoft 如何在云服务（如 Microsoft 365）中强制执行租户Microsoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923072"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194645"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>租户隔离Microsoft 365
 
@@ -48,7 +48,6 @@ ms.locfileid: "50923072"
 - [Azure Active Directory 中的隔离和访问控制](microsoft-365-isolation-in-azure-active-directory.md)
 - [Office Graph 和 Delve 中的租户隔离](microsoft-365-isolation-in-graph-and-delve.md)
 - [Microsoft 365 搜索中的租户隔离](microsoft-365-isolation-in-microsoft-365-search.md)
-- [Office 365 视频中的租户隔离](microsoft-365-isolation-in-microsoft-365-video.md)
 - [资源限制](/compliance/assurance/assurance-resource-limits)
 - [监视和测试租户边界](/compliance/assurance/assurance-monitoring-and-testing)
 - [Microsoft 365 中的隔离和访问控制](microsoft-365-isolation-in-microsoft-365.md)

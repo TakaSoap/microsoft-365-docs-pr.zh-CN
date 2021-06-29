@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108327"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194777"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
@@ -50,7 +50,7 @@ ms.locfileid: "53108327"
 
 作为设置的一部分，评估模式还配置 [连接器的增强筛选](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来提高筛选准确度，否则当邮件通过 Defender for Office 365 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还可以提高 EOP 策略Exchange Online Protection (EOP) 反垃圾邮件和防钓鱼策略的筛选准确度。
 
-增强的连接器筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分设置的 MDO 策略是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建邮件流规则 (也称为传输规则) 来绕过所有 EOP 筛选，将邮件的垃圾邮件可信度 (SCL) 设置为 -1。 有关详细信息[，请参阅](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)使用邮件流规则 (SCL) 邮件中的Exchange Online   级别。
+增强的连接器筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;在Office 365中设置的 Defender for Office 365 策略是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建邮件流规则 (也称为传输规则) 来绕过所有 EOP 筛选，将邮件的垃圾邮件可信度 (SCL) 设置为 -1。 有关详细信息[，请参阅](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)使用邮件流规则 (SCL) 邮件中的Exchange Online   级别。
 
 设置评估模式后，你每天将更新一个报告，其中最多包含 90 天的数据，用于量化实施策略时可能阻止的邮件 (例如删除、发送到垃圾邮件、隔离) 。 针对所有 Defender 生成针对 Office 365 和 EOP 检测的报告。 它们根据检测技术聚合 (例如，模拟) 并可以按时间范围进行筛选。 此外，还可以按需创建邮件报告，以使用资源管理器创建自定义透视表或深入探究邮件。
 
@@ -63,7 +63,7 @@ ms.locfileid: "53108327"
 
 ## <a name="before-you-begin"></a>准备工作
 
-### <a name="licensing"></a>授权
+### <a name="licensing"></a>许可
 
 若要访问评估，你将需要满足许可要求。 以下任一许可证都可用：
 

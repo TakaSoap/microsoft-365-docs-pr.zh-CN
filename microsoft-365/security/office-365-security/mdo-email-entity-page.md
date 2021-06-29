@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 (MDO) 电子邮件实体页面
+title: Microsoft Defender for Office 365电子邮件实体页面
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5 P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083258"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194983"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -30,11 +30,11 @@ ms.locfileid: "53083258"
 - [使用电子邮件实体页面选项卡](#use-email-entity-page-tabs)
 - [电子邮件实体页面的新增内容](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员具有使用"电子邮件"实体页面的 360 度 **电子邮件视图**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上的信息。](threat-explorer-views.md)
+Microsoft Defender for Office 365 E5 管理员和适用于 Office P1 和 P2 的 Defender 管理员使用"电子邮件"实体页面 360 度 **查看电子邮件**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上的信息。](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>访问电子邮件实体页面
 
-电子邮件实体页面在 Microsoft 365 defender 门户中 <https://security.microsoft.com> () ，&**协作** \> **资源管理器。** 或者，若要直接转到资源管理器 **页面** ，请使用 <https://security.microsoft.com/threatexplorer> 。
+电子邮件实体页面位于"电子邮件Microsoft 365 Defender" () "& <https://security.microsoft.com>  \> **资源管理器"** 中。 或者，若要直接转到资源管理器 **页面** ，请使用 <https://security.microsoft.com/threatexplorer> 。
 
 在 **资源管理器** 中，选择要调查的电子邮件的主题。 该邮件的电子邮件飞出顶部将显示一个金色条。 此新页面邀请显示"尝试使用包含丰富数据的新电子邮件实体页面..."。 选择以查看新页面。
 

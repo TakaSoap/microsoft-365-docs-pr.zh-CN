@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f9d56b7e72befb8acddf6d9f810a7ba5cec1083
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b82b6993ce9ed5a3f0f3e6e13e8a260a185c9730
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694361"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194969"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查问题并查找 iOS 上 Microsoft Defender for Endpoint 上的常见问题解答
 
@@ -58,7 +58,7 @@ ms.locfileid: "52694361"
 > [!NOTE]
 > 禁用 VPN 后，Web 保护将不可用。 若要重新启用 Web 保护，请在设备上打开 Microsoft Defender for Endpoint 应用，然后单击或点击"启动 **VPN"。**
 
-## <a name="issues-with-multiple-vpn-profiles"></a>多个 VPN 配置文件的问题
+## <a name="co-existence-with-multiple-vpn-profiles"></a>与多个 VPN 配置文件共存
 
 Apple iOS 不支持多个 **设备范围的** VPN 同时处于活动状态。 虽然设备上可以存在多个 VPN 配置文件，但一次只能有一个 VPN 处于活动状态。
 
@@ -74,7 +74,11 @@ Microsoft Defender for Endpoint VPN 可以与配置为每应用或"个人"的其
 
 ## <a name="data-usage"></a>数据使用情况
 
-Microsoft Defender for Endpoint 使用本地/环回 VPN 检查任何恶意网站或连接的 Web 流量。 由于此原因，Microsoft Defender 终结点数据使用情况可能不准确。 Microsoft Defender for Endpoint 的实际数据使用量并不明显，并且小于设备上"数据设置上显示的数据使用量。
+Microsoft Defender for Endpoint 使用本地/环回 VPN 检查任何恶意网站或连接的 Web 流量。 由于此原因，Microsoft Defender 终结点数据使用情况可能不准确。 我们还观察到，如果设备仅在移动电话网络上，服务提供商报告的数据使用量将非常接近实际使用量，而在 设置 应用中，Apple 显示的实际使用量大约是实际使用量的 1.5 倍到 2 倍。
+
+我们还与其他 VPN 服务有类似的观察结果，并且已经向 Apple 报告了这一点。
+
+此外，使用后端服务更新 Microsoft Defender for Endpoint 以提供更好的保护至关重要。 但是，我们正在优化 Microsoft Defender for Endpoint 的数据使用情况。
 
 ## <a name="report-unsafe-site"></a>报告不安全网站
 

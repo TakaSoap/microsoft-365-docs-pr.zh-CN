@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053067"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169588"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -116,7 +116,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留策略
 
 > [!NOTE]
-> Yammer 的保留策略处于预览状态。
+> Yammer 的保留策略处于预览状态，当前不会在由于保留策略而删除消息时通知用户。
 >
 > 若要使用此功能，Yammer 网络必须为[“本机模式”](/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
 

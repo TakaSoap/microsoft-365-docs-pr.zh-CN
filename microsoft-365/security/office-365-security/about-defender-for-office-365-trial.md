@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解 Microsoft Defender for Office 365
-ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768742"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195005"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
@@ -49,13 +49,13 @@ Defender for Office 365试用版的可用时间为 90 天，并且可针对所�
 
 默认情况下，这些策略的范围为组织中所有用户，但管理员可以在设置期间或之后自定义策略，以便它们仅适用于特定用户。
 
-在设置过程中，MDO (MDO P2 或等效) 还会为整个组织设置 MDO 响应功能。 无需策略范围。
+在设置期间，Office 365 Defender (P2 的 Defender Office 365 或等效) 也会为整个组织设置。 无需策略范围。
 
-## <a name="licensing"></a>授权
+## <a name="licensing"></a>许可
 
 作为试用设置的一部分，Office 365 Defender 许可证将自动应用于组织。 许可证在前 90 天内免费。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 若要开始或结束试用版，你需要是 Azure Active Directory 中的全局管理员或安全管理员角色的成员。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -65,7 +65,7 @@ Defender for Office 365试用版的可用时间为 90 天，并且可针对所�
 
 管理员可通过访问"试用"卡片随时禁用 <> 。
 
-## <a name="availability"></a>供应情况
+## <a name="availability"></a>可用性
 
 Defender for Office 365 试用版将逐步向满足特定条件的现有客户推出 (包括地理位置) 以及其订阅中或作为加载项) 不包含现有 Defender for Office 365 计划 1 或计划 2 许可证 (的客户。
 
@@ -98,7 +98,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [Defender for Office 365 中的实时报告](view-reports-for-mdo.md)
 - [威胁跟踪器 - 新增的和值得注意的威胁](threat-trackers.md)
-- 与[Microsoft 365 Defender 集成](../defender/microsoft-365-defender.md)
+- 与[Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ### <a name="response-and-remediation"></a>响应和修正
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105568"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195017"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -92,7 +92,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    或者，如果你想要在所选设备上探索新功能，你可能希望将适用于 Linux 的 MDE 部署到 *预览体验成员-快频道* ：
+    或者，如果你想要在所选设备上探索新功能，你可能想要在 Linux 上将 Microsoft Defender for Endpoint 部署到预览 *体验成员-快频道* ：
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -120,7 +120,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    例如，如果你运行的是 SLES 12，并且想要从专业渠道部署适用于 Linux的 MDE：
+    例如，如果你运行的是 SLES 12，并且想要从 *Prod* 渠道在 Linux 上部署 Microsoft Defender for Endpoint：
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -400,13 +400,13 @@ Options:
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
 
-1. 卸载适用于 Linux 的 MDE 的"Insiders-Fast channel"版本。
+1. 在 Linux 上卸载 Defender for Endpoint 的"Insiders-Fast channel"版本。
 
     ``
     sudo yum remove mdatp
     ``
 
-1. 禁用适用于 Linux 的 MDE Insiders-Fast存储库  ``
+1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库  ``
     sudo yum repolist
     ``
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842250"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194945"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -65,6 +65,26 @@ Microsoft Defender for Endpoint 能够检测已越狱的非托管和托管设备
 
 Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然设备上可以存在多个 VPN 配置文件，但一次只能有一个 VPN 处于活动状态。
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>在 MAM 应用保护策略中配置 Microsoft Defender (终结点) 
+
+Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略 (APP（也称为 iOS/iPadOS 上的 MAM) MAM）中的威胁信号。 借助此功能，也可使用 Microsoft Defender for Endpoint 保护从注销的设备访问公司数据。
+
+使用 Microsoft Defender for Endpoint 设置应用保护策略的步骤如下所示：
+
+1. 设置从你的 Microsoft Endpoint Manager 到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 中，转到"设置) "下的"跨平台) "或"终结点安全 Microsoft Defender  >    >  **for**   >  **Endpoint** ("下的"适用于终结点的 Microsoft Defender (租户管理连接器和令牌"，然后打开适用于 iOS 的应用保护策略 设置 下的切换。
+1. 选择“保存”。 应看到"**连接状态**"现在设置为"**已启用"。**
+1. 创建应用保护策略：完成 Microsoft Defender for Endpoint 连接器设置后，导航到策略 (下的应用应用保护策略) 以创建新策略或更新  >  现有策略。
+1. 选择组织为策略 **所需的** 平台、应用、数据保护、访问要求设置。
+1. 在 **"条件启动**  >  **设备条件**"下，你将找到设置 **"允许的最大设备威胁级别"。** 这将需要配置为低、中、高或安全。 可用操作为"阻止 **访问"或**"**擦除数据"。** 在此设置生效之前，你可能会看到一个信息对话框，确保你已设置连接器。 如果连接器已设置，可以忽略此对话框。
+1. 完成分配并保存策略。
+
+有关 MAM 或应用保护策略的更多详细信息，请参阅 [iOS 应用保护策略设置](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)。
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>为 MAM 或注销的设备上部署 Microsoft Defender for Endpoint
+
+iOS 上的 Microsoft Defender for Endpoint 支持应用保护策略方案，并且适用于 Apple 应用商店。
+
+最终用户应直接从 Apple 应用商店安装应用的最新版本。
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>针对越狱设备配置合规性策略
 
@@ -86,12 +106,12 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
     > [!div class="mx-imgBorder"]
     > ![策略设置](images/ios-jb-settings.png)
 
-4. 在"*针对不相容性* 的操作"部分，根据你的要求选择操作，然后选择"下一 **步"。**
+4. 在"**针对不相容性** 的操作"部分，根据你的要求选择操作，然后选择"下一 **步"。**
 
     > [!div class="mx-imgBorder"]
     > ![策略操作](images/ios-jb-actions.png)
 
-5. 在 *"分配*"部分，选择要为此策略包含的用户组，然后选择"下一步 **"。**
+5. 在 **"分配**"部分，选择要为此策略包含的用户组，然后选择"下一步 **"。**
 6. 在"**审阅+创建**"部分，验证输入的所有信息是否正确，然后选择"创建 **"。**
 
 ## <a name="configure-custom-indicators"></a>配置自定义指示器

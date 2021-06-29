@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246012"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194741"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>针对 ATP ASR 规则报告 Microsoft Defender 并排除故障
 
@@ -42,7 +42,7 @@ ms.locfileid: "52246012"
 
 Microsoft Defender for Endpoint 的最强大功能之一是高级搜寻。 如果你不熟悉高级搜寻，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
-高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览从所有计算机收集的最多 30 天的已捕获 (原始)  (EDR) 数据。 通过高级搜寻，你可以主动检查事件以查找有趣的指示器和实体。 灵活访问数据有助于不受约束地搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览从你的设备中收集的最多 30 天的捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件以查找有趣的指示器和实体。 灵活访问数据有助于不受约束地搜寻已知威胁和潜在威胁。
 
 通过高级搜寻，可以提取 ASR 规则信息、创建报告，并获取有关给定 ASR 规则审核或阻止事件的上下文的深入信息。
 
@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法
 
 ### <a name="querying-which-rules-are-active"></a>查询哪些规则处于活动状态
 确定 ASR 规则是否已启用的最简单方法之一是，通过 PowerShell cmdlet Get-MpPreference。
-下面是一个示例：
+示例如下：
 
 :::image type="content" source="images/getmpreferencescriptnew.png" alt-text="get mppreference 脚本":::
 
