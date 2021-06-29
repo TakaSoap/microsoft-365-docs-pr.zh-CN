@@ -11,67 +11,56 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 获取有关模型及应用该模型的库的信息。
-ms.openlocfilehash: 6cd61364ed3b360ef235aaba21a2735002fe481e
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904166"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177065"
 ---
-# <a name="get-model-and-library-information"></a><span data-ttu-id="a5f1e-103">获取模型和库信息</span><span class="sxs-lookup"><span data-stu-id="a5f1e-103">Get model and library information</span></span>
+# <a name="get-model-and-library-information"></a><span data-ttu-id="d9b72-103">获取模型和库信息</span><span class="sxs-lookup"><span data-stu-id="d9b72-103">Get model and library information</span></span>
 
-<span data-ttu-id="a5f1e-104">获取有关模型及应用该模型的库的信息（请参阅[示例](rest-getmodelandlibraryinfo.md#examples)）。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-104">Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo.md#examples)).</span></span>
+<span data-ttu-id="d9b72-104">获取有关模型及应用该模型的库的信息（请参阅[示例](rest-getmodelandlibraryinfo.md#examples)）。</span><span class="sxs-lookup"><span data-stu-id="d9b72-104">Gets information about a model and the library where it has been applied (see [example](rest-getmodelandlibraryinfo.md#examples)).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="a5f1e-105">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a5f1e-105">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d9b72-105">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d9b72-105">HTTP request</span></span>
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
-## <a name="uri-parameters"></a><span data-ttu-id="a5f1e-106">URI 参数</span><span class="sxs-lookup"><span data-stu-id="a5f1e-106">URI parameters</span></span>
+## <a name="uri-parameters"></a><span data-ttu-id="d9b72-106">URI 参数</span><span class="sxs-lookup"><span data-stu-id="d9b72-106">URI parameters</span></span>
 
-| <span data-ttu-id="a5f1e-107">名称</span><span class="sxs-lookup"><span data-stu-id="a5f1e-107">Name</span></span> | <span data-ttu-id="a5f1e-108">位置</span><span class="sxs-lookup"><span data-stu-id="a5f1e-108">In</span></span> | <span data-ttu-id="a5f1e-109">必需</span><span class="sxs-lookup"><span data-stu-id="a5f1e-109">Required</span></span> | <span data-ttu-id="a5f1e-110">类型</span><span class="sxs-lookup"><span data-stu-id="a5f1e-110">Type</span></span> | <span data-ttu-id="a5f1e-111">说明</span><span class="sxs-lookup"><span data-stu-id="a5f1e-111">Description</span></span> |
-|--------|-------|--------|------------|
-|<span data-ttu-id="a5f1e-112">ModelUniqueId</span><span class="sxs-lookup"><span data-stu-id="a5f1e-112">ModelUniqueId</span></span>|<span data-ttu-id="a5f1e-113">查询</span><span class="sxs-lookup"><span data-stu-id="a5f1e-113">query</span></span>|<span data-ttu-id="a5f1e-114">True</span><span class="sxs-lookup"><span data-stu-id="a5f1e-114">True</span></span>|<span data-ttu-id="a5f1e-115">GUID</span><span class="sxs-lookup"><span data-stu-id="a5f1e-115">GUID</span></span>|<span data-ttu-id="a5f1e-116">模型文件的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-116">The unique id of the model file.</span></span>|
+| <span data-ttu-id="d9b72-107">名称</span><span class="sxs-lookup"><span data-stu-id="d9b72-107">Name</span></span> | <span data-ttu-id="d9b72-108">位置</span><span class="sxs-lookup"><span data-stu-id="d9b72-108">In</span></span> | <span data-ttu-id="d9b72-109">必需</span><span class="sxs-lookup"><span data-stu-id="d9b72-109">Required</span></span> | <span data-ttu-id="d9b72-110">类型</span><span class="sxs-lookup"><span data-stu-id="d9b72-110">Type</span></span> | <span data-ttu-id="d9b72-111">说明</span><span class="sxs-lookup"><span data-stu-id="d9b72-111">Description</span></span> |
+|--------|-------|--------|------------|-----------|
+|<span data-ttu-id="d9b72-112">ModelUniqueId</span><span class="sxs-lookup"><span data-stu-id="d9b72-112">ModelUniqueId</span></span>|<span data-ttu-id="d9b72-113">查询</span><span class="sxs-lookup"><span data-stu-id="d9b72-113">query</span></span>|<span data-ttu-id="d9b72-114">True</span><span class="sxs-lookup"><span data-stu-id="d9b72-114">True</span></span>|<span data-ttu-id="d9b72-115">GUID</span><span class="sxs-lookup"><span data-stu-id="d9b72-115">GUID</span></span>|<span data-ttu-id="d9b72-116">模型文件的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="d9b72-116">The unique id of the model file.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="a5f1e-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a5f1e-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d9b72-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d9b72-117">Request headers</span></span>
 
-| <span data-ttu-id="a5f1e-118">标头</span><span class="sxs-lookup"><span data-stu-id="a5f1e-118">Header</span></span> | <span data-ttu-id="a5f1e-119">值</span><span class="sxs-lookup"><span data-stu-id="a5f1e-119">Value</span></span> |
+| <span data-ttu-id="d9b72-118">标头</span><span class="sxs-lookup"><span data-stu-id="d9b72-118">Header</span></span> | <span data-ttu-id="d9b72-119">值</span><span class="sxs-lookup"><span data-stu-id="d9b72-119">Value</span></span> |
 |--------|-------|
-|<span data-ttu-id="a5f1e-120">Accept</span><span class="sxs-lookup"><span data-stu-id="a5f1e-120">Accept</span></span>|<span data-ttu-id="a5f1e-121">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="a5f1e-121">application/json;odata=verbose</span></span>|
+|<span data-ttu-id="d9b72-120">Accept</span><span class="sxs-lookup"><span data-stu-id="d9b72-120">Accept</span></span>|<span data-ttu-id="d9b72-121">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="d9b72-121">application/json;odata=verbose</span></span>|
 
 
-## <a name="request-body"></a><span data-ttu-id="a5f1e-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="a5f1e-122">Request body</span></span>
+## <a name="response"></a><span data-ttu-id="d9b72-122">响应</span><span class="sxs-lookup"><span data-stu-id="d9b72-122">Response</span></span>
 
-| <span data-ttu-id="a5f1e-123">Name</span><span class="sxs-lookup"><span data-stu-id="a5f1e-123">Name</span></span> | <span data-ttu-id="a5f1e-124">必需</span><span class="sxs-lookup"><span data-stu-id="a5f1e-124">Required</span></span> | <span data-ttu-id="a5f1e-125">类型</span><span class="sxs-lookup"><span data-stu-id="a5f1e-125">Type</span></span> | <span data-ttu-id="a5f1e-126">说明</span><span class="sxs-lookup"><span data-stu-id="a5f1e-126">Description</span></span> |
-|--------|-------|--------|------------|
-|<span data-ttu-id="a5f1e-127">ModelUniqueId</span><span class="sxs-lookup"><span data-stu-id="a5f1e-127">ModelUniqueId</span></span>|<span data-ttu-id="a5f1e-128">是</span><span class="sxs-lookup"><span data-stu-id="a5f1e-128">yes</span></span>|<span data-ttu-id="a5f1e-129">字符串</span><span class="sxs-lookup"><span data-stu-id="a5f1e-129">string</span></span>|<span data-ttu-id="a5f1e-130">模型文件的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-130">The unique ID of the model file.</span></span>|
-|<span data-ttu-id="a5f1e-131">TargetSiteUrl</span><span class="sxs-lookup"><span data-stu-id="a5f1e-131">TargetSiteUrl</span></span>|<span data-ttu-id="a5f1e-132">是</span><span class="sxs-lookup"><span data-stu-id="a5f1e-132">yes</span></span>|<span data-ttu-id="a5f1e-133">字符串</span><span class="sxs-lookup"><span data-stu-id="a5f1e-133">string</span></span>|<span data-ttu-id="a5f1e-134">目标库网站的完整 URL。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-134">The full URL of the target library site.</span></span>|
-|<span data-ttu-id="a5f1e-135">TargetWebServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="a5f1e-135">TargetWebServerRelativeUrl</span></span>|<span data-ttu-id="a5f1e-136">是</span><span class="sxs-lookup"><span data-stu-id="a5f1e-136">yes</span></span>|<span data-ttu-id="a5f1e-137">字符串</span><span class="sxs-lookup"><span data-stu-id="a5f1e-137">string</span></span>|<span data-ttu-id="a5f1e-138">目标库的 Web 的服务器相应的 URL。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-138">The server relative URL of the web for the target library.</span></span>|
-|<span data-ttu-id="a5f1e-139">TargetLibraryServerRelativeUrl</span><span class="sxs-lookup"><span data-stu-id="a5f1e-139">TargetLibraryServerRelativeUrl</span></span>|<span data-ttu-id="a5f1e-140">是</span><span class="sxs-lookup"><span data-stu-id="a5f1e-140">yes</span></span>|<span data-ttu-id="a5f1e-141">字符串</span><span class="sxs-lookup"><span data-stu-id="a5f1e-141">string</span></span>|<span data-ttu-id="a5f1e-142">目标库的服务器相应的 URL。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-142">The server relative URL of the target library.</span></span>|
-|<span data-ttu-id="a5f1e-143">TargetLibraryRemoved</span><span class="sxs-lookup"><span data-stu-id="a5f1e-143">TargetLibraryRemoved</span></span>|<span data-ttu-id="a5f1e-144">是</span><span class="sxs-lookup"><span data-stu-id="a5f1e-144">yes</span></span>|<span data-ttu-id="a5f1e-145">int</span><span class="sxs-lookup"><span data-stu-id="a5f1e-145">int</span></span>|<span data-ttu-id="a5f1e-146">指示目标库是否被删除的标记。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-146">The flag that indicates if the target library has been removed or not.</span></span>|
-
-## <a name="response"></a><span data-ttu-id="a5f1e-147">响应</span><span class="sxs-lookup"><span data-stu-id="a5f1e-147">Response</span></span>
-
-| <span data-ttu-id="a5f1e-148">名称</span><span class="sxs-lookup"><span data-stu-id="a5f1e-148">Name</span></span>   | <span data-ttu-id="a5f1e-149">类型</span><span class="sxs-lookup"><span data-stu-id="a5f1e-149">Type</span></span>  | <span data-ttu-id="a5f1e-150">说明</span><span class="sxs-lookup"><span data-stu-id="a5f1e-150">Description</span></span>|
+| <span data-ttu-id="d9b72-123">名称</span><span class="sxs-lookup"><span data-stu-id="d9b72-123">Name</span></span>   | <span data-ttu-id="d9b72-124">类型</span><span class="sxs-lookup"><span data-stu-id="d9b72-124">Type</span></span>  | <span data-ttu-id="d9b72-125">说明</span><span class="sxs-lookup"><span data-stu-id="d9b72-125">Description</span></span>|
 |--------|-------|------------|
-|<span data-ttu-id="a5f1e-151">200 OK</span><span class="sxs-lookup"><span data-stu-id="a5f1e-151">200 OK</span></span>| |<span data-ttu-id="a5f1e-152">成功</span><span class="sxs-lookup"><span data-stu-id="a5f1e-152">Success</span></span>|
-|<span data-ttu-id="a5f1e-153">201 已创建</span><span class="sxs-lookup"><span data-stu-id="a5f1e-153">201 Created</span></span>| |<span data-ttu-id="a5f1e-154">请注意，由于此 API 支持将模型应用到多个库，因此即使将模型应用于其中一个库失败，也可能会返回 201。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-154">Note that because this API supports applying model to multiple libraries, a 201 could be returned even if there's a failure applying the model to one of the libraries.</span></span> <br><span data-ttu-id="a5f1e-155">检查响应正文，了解模型是否已成功应用于所有指定的库。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-155">Check the response body to understand if the model has been successfully applied to all the specified libraries.</span></span> <span data-ttu-id="a5f1e-156">请参阅[请求正文](rest-getmodelandlibraryinfo.md#request-body)了解详细信息。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-156">See [Request body](rest-getmodelandlibraryinfo.md#request-body) for details.</span></span>|
+|<span data-ttu-id="d9b72-126">200 OK</span><span class="sxs-lookup"><span data-stu-id="d9b72-126">200 OK</span></span>| |<span data-ttu-id="d9b72-127">成功</span><span class="sxs-lookup"><span data-stu-id="d9b72-127">Success</span></span>|
 
-## <a name="examples"></a><span data-ttu-id="a5f1e-157">示例</span><span class="sxs-lookup"><span data-stu-id="a5f1e-157">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d9b72-128">示例</span><span class="sxs-lookup"><span data-stu-id="d9b72-128">Examples</span></span>
 
-### <a name="get-information-about-the-contracts-model-and-primed-document-library-in-the-repository-site"></a><span data-ttu-id="a5f1e-158">在存储库网站获取有关合同模型和主要文档库的信息</span><span class="sxs-lookup"><span data-stu-id="a5f1e-158">Get information about the contracts model and primed document library in the repository site</span></span>
+### <a name="get-information-about-the-contracts-model-and-primed-document-library-in-the-repository-site"></a><span data-ttu-id="d9b72-129">在存储库网站获取有关合同模型和主要文档库的信息</span><span class="sxs-lookup"><span data-stu-id="d9b72-129">Get information about the contracts model and primed document library in the repository site</span></span>
 
-<span data-ttu-id="a5f1e-159">此示例中，Contoso 合同文档理解模型的 ID 为 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="a5f1e-159">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
+<span data-ttu-id="d9b72-130">此示例中，Contoso 合同文档理解模型的 ID 为 `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`。</span><span class="sxs-lookup"><span data-stu-id="d9b72-130">In this sample, the ID of the Contoso Contract document understanding model is `7645e69d-21fb-4a24-a17a-9bdfa7cb63dc`.</span></span>
 
-#### <a name="sample-request"></a><span data-ttu-id="a5f1e-160">示例请求</span><span class="sxs-lookup"><span data-stu-id="a5f1e-160">Sample request</span></span>
+#### <a name="sample-request"></a><span data-ttu-id="d9b72-131">示例请求</span><span class="sxs-lookup"><span data-stu-id="d9b72-131">Sample request</span></span>
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
-#### <a name="sample-response"></a><span data-ttu-id="a5f1e-161">示例响应</span><span class="sxs-lookup"><span data-stu-id="a5f1e-161">Sample response</span></span>
+#### <a name="sample-response"></a><span data-ttu-id="d9b72-132">示例响应</span><span class="sxs-lookup"><span data-stu-id="d9b72-132">Sample response</span></span>
 
-<span data-ttu-id="a5f1e-162">**状态代码：** 200</span><span class="sxs-lookup"><span data-stu-id="a5f1e-162">**Status code:** 200</span></span>
+<span data-ttu-id="d9b72-133">**状态代码：** 200</span><span class="sxs-lookup"><span data-stu-id="d9b72-133">**Status code:** 200</span></span>
 
 ```JSON
 {
@@ -130,9 +119,9 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
             "ViewOption": "NewViewAsDefault"
         }
     ]
-}```
+}
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a5f1e-163">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a5f1e-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d9b72-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d9b72-134">See also</span></span>
 
-[<span data-ttu-id="a5f1e-164">Syntex 文档理解模型 REST API</span><span class="sxs-lookup"><span data-stu-id="a5f1e-164">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
+[<span data-ttu-id="d9b72-135">Syntex 文档理解模型 REST API</span><span class="sxs-lookup"><span data-stu-id="d9b72-135">Syntex document understanding model REST API</span></span>](syntex-model-rest-api.md)
