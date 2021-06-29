@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 适用于小型企业（包括小型公司、惯例和政治活动）的 Microsoft 365 商业高级版安全和协作建议。
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245024"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177461"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>面向小型企业和活动的Microsoft 365
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>面向小型企业和活动的Microsoft 365
 
 如有 Microsoft 365 商业高级版，则此库中的指南是设置安全并开始安全协作的最快方法。 在当今世界，保持数据和通信安全是优先事项，特别是对于医疗和法律实践、政治活动和许多其他小型企业。 该解决方案提供了一系列建议，旨在帮助保护你和你的数据。 无论何种企业类型，此库包括有关设置和使用此推荐环境的帮助。
 
 
-![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 此配置包括以下用于保护业务生产力、协作、文件存储、电子邮件、设备和身份的指南：
 
@@ -50,8 +49,7 @@ ms.locfileid: "52245024"
 |安全地存储和共享文件 | 共享来自 Microsoft Teams、OneDrive、SharePoint 和 Microsoft Stream 的文件和视频，并保护敏感数据。| [共享文件和视频](share-files-and-videos.md) |
 |托管的 Windows 10 设备 |为关键员工使用管理设备，并确保设备的安全。 | [设置托管设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 商业高级版推荐的安全配置
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 商业高级版推荐的安全配置
 
 此 Microsoft 365 商业高级版推荐的安全配置允许：
 
@@ -71,8 +69,7 @@ ms.locfileid: "52245024"
 
 有关所含内容的详细信息，请参阅 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)。
 
-<a name="get-started"></a>入门
---------------------------
+## <a name="get-started"></a>入门
 
 请按照以下步骤开始操作：
 
@@ -80,8 +77,7 @@ ms.locfileid: "52245024"
 - 任何企业： [用户如何使用 Microsoft 365](m365-campaigns-users.md)
 - 任何企业： [设置 Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-business"></a>适合你的业务的解决方案
---------------------------
+## <a name="solutions-for-your-business"></a>适合你的业务的解决方案
 
 在设置安全的 Microsoft 365 环境后，可使用以下解决方案开始工作：
 

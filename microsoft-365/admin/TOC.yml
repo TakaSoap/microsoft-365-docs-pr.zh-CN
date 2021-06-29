@@ -393,7 +393,7 @@
             - name: 隐私和安全
               href: basic-mobility-security/privacy-and-security.md
             - name: 常见问题解答
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: 擦除移动设备
               href: basic-mobility-security/wipe-mobile-device.md
             - name: 关闭基本移动性和安全性
