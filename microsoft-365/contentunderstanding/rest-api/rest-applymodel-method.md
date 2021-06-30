@@ -1,5 +1,5 @@
 ---
-title: 应用模型
+title: 批处理应用模型
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: 使用 REST API 将文档理解模型应用于一个或多个库。
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+description: 使用 REST API 将文档理解模型应用至一个或多个库。
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904206"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177257"
 ---
-# <a name="apply-model"></a>应用模型
+# <a name="batch-apply-model"></a>批处理应用模型
 
 将经过培训的文档理解模型应用（或同步）到一个或多个库（请参阅 [示例](rest-applymodel-method.md#examples)）。
 
@@ -44,18 +44,45 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 | Name | 必需 | 类型 | 说明 |
 |--------|-------|--------|------------|
+|_metadata|是|字符串|在 SPO 上设置对象元。 始终使用值：{"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}。|
+|出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 集合，其中每个集合均指定了模型和目标文档库。|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Name | 必需 | 类型 | 说明 |
+|--------|-------|--------|------------|
 |ModelUniqueId|是|字符串|模型文件的唯一 ID。|
-TargetSiteUrl|是|字符串|目标库网站的完整 URL。|
-TargetWebServerRelativeUrl|是|字符串|目标库的 Web 的服务器相应的 URL。|
-TargetLibraryServerRelativeUrl|是|字符串|目标库的服务器相应的 URL。|
-ViewOption|否|string|指定是否将新模型视图设置为库默认值。|
+|TargetSiteUrl|是|字符串|目标库网站的完整 URL。|
+|TargetWebServerRelativeUrl|是|字符串|目标库的 Web 的服务器相应的 URL。|
+|TargetLibraryServerRelativeUrl|是|字符串|目标库的服务器相应的 URL。|
+|ViewOption|否|string|指定是否将新模型视图设置为库默认值。|
 
 ## <a name="response"></a>响应
 
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
-|200 OK| |成功|
-|201 已创建| |请注意，由于此 API 支持将模型应用到多个库，因此即使将模型应用于其中一个库失败，也可能会返回 201。 <br>检查响应正文，了解模型是否已成功应用于所有指定的库。 请参阅[请求正文](rest-applymodel-method.md#request-body)了解详细信息。|
+|201 已创建||这是一个自定义 API，用于支持将模型应用至多个文档库。 如果部分成功，仍可返回已创建的 201，调用方需要检查响应正文，以了解模型是否已成功应用至文档库。|
+
+## <a name="response-body"></a>响应正文
+| 名称   | 类型  | 说明|
+|--------|-------|------------|
+|TotalSuccesses|int|成功应用至文档库的模型的总数。|
+|TotalFailures|int|未能应用至文档库的模型的总数。|
+|详细信息|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，其中每个集合均指定了将模型应用至文档库的详细结果。|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| 名称   | 类型  | 说明|
+|--------|-------|------------|
+|StatusCode|int|HTTP 状态代码。|
+|ErrorMessage|string|将模型应用到文档库时会显示错误内容的错误消息。|
+|出版物|MachineLearningPublicationEntityData|它指定了模型信息和目标文档库。| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| 名称 | 类型 | 说明 |
+|--------|--------|------------|
+|ModelUniqueId|字符串|模型文件的唯一 ID。|
+|TargetSiteUrl|字符串|目标库网站的完整 URL。|
+|TargetWebServerRelativeUrl|字符串|目标库的 Web 的服务器相应的 URL。|
+|TargetLibraryServerRelativeUrl|字符串|目标库的服务器相应的 URL。|
 
 ## <a name="examples"></a>示例
 
@@ -89,7 +116,7 @@ ViewOption|否|string|指定是否将新模型视图设置为库默认值。|
 
 在响应中，TotalFailures 和 TotalSuccesses 指应用于指定库的模型的失败和成功次数。
 
-**状态代码：** 200
+**状态代码：** 201
 
 ```JSON
 {
@@ -103,7 +130,7 @@ ViewOption|否|string|指定是否将新模型视图设置为库默认值。|
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,
