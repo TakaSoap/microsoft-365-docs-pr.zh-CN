@@ -9,28 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 61b84b3c7b6550a8ce426a3e41630a0d3e269c41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f9d478412d2a1aac6f3e701aca59fcf74ceacce6
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921950"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203204"
 ---
-# <a name="enable-enterprise-state-roaming"></a><span data-ttu-id="f78bf-103">启用企业状态漫游</span><span class="sxs-lookup"><span data-stu-id="f78bf-103">Enable Enterprise State Roaming</span></span>
+# <a name="enable-enterprise-state-roaming"></a><span data-ttu-id="24376-103">启用企业状态漫游</span><span class="sxs-lookup"><span data-stu-id="24376-103">Enable Enterprise State Roaming</span></span>
 
-<span data-ttu-id="f78bf-104">为了获得最佳体验，Microsoft 托管桌面启用Enterprise[状态](/azure/active-directory/devices/enterprise-state-roaming-overview)漫游，以便用户可以安全地将用户和应用程序设置数据同步到云。</span><span class="sxs-lookup"><span data-stu-id="f78bf-104">For the best experience with Microsoft Managed Desktop, enable [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), which lets users securely synchronize user and application settings data to the cloud.</span></span> <span data-ttu-id="f78bf-105">这意味着无论登录哪个设备，Windows具有相同的体验。</span><span class="sxs-lookup"><span data-stu-id="f78bf-105">This means they'll have the same experience no matter which Windows device they sign into.</span></span> <span data-ttu-id="f78bf-106">例如，如果你将其其中一个Microsoft 托管桌面设备替换为新设备，则其外观和行为与最后一个设备完全相同。</span><span class="sxs-lookup"><span data-stu-id="f78bf-106">For example, if you replace one of their Microsoft Managed Desktop devices with a new one, it will look and behave exactly the same as the last one.</span></span>
+<span data-ttu-id="24376-104">[Enterprise状态漫游](/azure/active-directory/devices/enterprise-state-roaming-overview)允许用户将用户和应用程序设置数据安全地同步到云。</span><span class="sxs-lookup"><span data-stu-id="24376-104">[Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) lets users securely synchronize user and application settings data to the cloud.</span></span> <span data-ttu-id="24376-105">这意味着无论登录哪个设备，Windows具有相同的体验。</span><span class="sxs-lookup"><span data-stu-id="24376-105">This means they'll have the same experience no matter which Windows device they sign into.</span></span> <span data-ttu-id="24376-106">例如，如果你将其其中一个Microsoft 托管桌面设备替换为新设备，则其外观和行为与最后一个设备完全相同。</span><span class="sxs-lookup"><span data-stu-id="24376-106">For example, if you replace one of their Microsoft Managed Desktop devices with a new one, it will look and behave exactly the same as the last one.</span></span> <span data-ttu-id="24376-107">Enterprise状态漫游是一项可选的 Microsoft 托管桌面 服务功能，你可以为用户配置该功能，并且不会作为自定义服务的一Microsoft 托管桌面。</span><span class="sxs-lookup"><span data-stu-id="24376-107">Enterprise State Roaming is an optional feature for the Microsoft Managed Desktop service that you can configure for your users and isn't included or managed as part of Microsoft Managed Desktop.</span></span>
 
-<span data-ttu-id="f78bf-107">若要启用Enterprise状态漫游，请按照在 Azure Active Directory 中启用Enterprise[状态](/azure/active-directory/devices/enterprise-state-roaming-enable)漫游"中的步骤操作，然后返回到本文档。</span><span class="sxs-lookup"><span data-stu-id="f78bf-107">To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable), and then return to this documentation.</span></span>
+<span data-ttu-id="24376-108">若要启用Enterprise状态漫游，请按照启用Enterprise[状态漫游中的](/azure/active-directory/devices/enterprise-state-roaming-enable)步骤Azure Active Directory。</span><span class="sxs-lookup"><span data-stu-id="24376-108">To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).</span></span>
 
-<span data-ttu-id="f78bf-108">如果你对状态漫游有任何Enterprise，请联系管理员[支持](../working-with-managed-desktop/admin-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f78bf-108">If you have any difficulty with Enterprise State Roaming, contact Admin [support](../working-with-managed-desktop/admin-support.md).</span></span>
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="24376-109">开始使用 Microsoft 托管桌面</span><span class="sxs-lookup"><span data-stu-id="24376-109">Steps to get started with Microsoft Managed Desktop</span></span>
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="f78bf-109">开始使用 Microsoft 托管桌面</span><span class="sxs-lookup"><span data-stu-id="f78bf-109">Steps to get started with Microsoft Managed Desktop</span></span>
-
-1. [<span data-ttu-id="f78bf-110">在管理门户中添加和验证管理员联系人</span><span class="sxs-lookup"><span data-stu-id="f78bf-110">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
-2. [<span data-ttu-id="f78bf-111">调整条件访问</span><span class="sxs-lookup"><span data-stu-id="f78bf-111">Adjust conditional access</span></span>](conditional-access.md)
-3. [<span data-ttu-id="f78bf-112">分配许可证</span><span class="sxs-lookup"><span data-stu-id="f78bf-112">Assign licenses</span></span>](assign-licenses.md)
-4. [<span data-ttu-id="f78bf-113">部署 Intune 公司门户</span><span class="sxs-lookup"><span data-stu-id="f78bf-113">Deploy Intune Company Portal</span></span>](company-portal.md)
-5. <span data-ttu-id="f78bf-114">本主题Enterprise启用 (状态漫游) </span><span class="sxs-lookup"><span data-stu-id="f78bf-114">Enable Enterprise State Roaming (this topic)</span></span>
-6. [<span data-ttu-id="f78bf-115">设置设备</span><span class="sxs-lookup"><span data-stu-id="f78bf-115">Set up devices</span></span>](set-up-devices.md)
-7. [<span data-ttu-id="f78bf-116">让用户做好使用设备的准备</span><span class="sxs-lookup"><span data-stu-id="f78bf-116">Get your users ready to use devices</span></span>](get-started-devices.md)
-8. [<span data-ttu-id="f78bf-117">部署应用</span><span class="sxs-lookup"><span data-stu-id="f78bf-117">Deploy apps</span></span>](deploy-apps.md)
+1. [<span data-ttu-id="24376-110">在管理门户中添加和验证管理员联系人</span><span class="sxs-lookup"><span data-stu-id="24376-110">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="24376-111">调整条件访问</span><span class="sxs-lookup"><span data-stu-id="24376-111">Adjust conditional access</span></span>](conditional-access.md)
+3. [<span data-ttu-id="24376-112">分配许可证</span><span class="sxs-lookup"><span data-stu-id="24376-112">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="24376-113">部署 Intune 公司门户</span><span class="sxs-lookup"><span data-stu-id="24376-113">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. <span data-ttu-id="24376-114">本主题Enterprise启用 (状态漫游) </span><span class="sxs-lookup"><span data-stu-id="24376-114">Enable Enterprise State Roaming (this topic)</span></span>
+6. [<span data-ttu-id="24376-115">设置设备</span><span class="sxs-lookup"><span data-stu-id="24376-115">Set up devices</span></span>](set-up-devices.md)
+7. [<span data-ttu-id="24376-116">让用户做好使用设备的准备</span><span class="sxs-lookup"><span data-stu-id="24376-116">Get your users ready to use devices</span></span>](get-started-devices.md)
+8. [<span data-ttu-id="24376-117">部署应用</span><span class="sxs-lookup"><span data-stu-id="24376-117">Deploy apps</span></span>](deploy-apps.md)
