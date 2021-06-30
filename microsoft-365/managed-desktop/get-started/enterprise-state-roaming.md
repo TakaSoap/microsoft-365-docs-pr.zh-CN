@@ -9,20 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 61b84b3c7b6550a8ce426a3e41630a0d3e269c41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f9d478412d2a1aac6f3e701aca59fcf74ceacce6
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921950"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203204"
 ---
 # <a name="enable-enterprise-state-roaming"></a>启用企业状态漫游
 
-为了获得最佳体验，Microsoft 托管桌面启用Enterprise[状态](/azure/active-directory/devices/enterprise-state-roaming-overview)漫游，以便用户可以安全地将用户和应用程序设置数据同步到云。 这意味着无论登录哪个设备，Windows具有相同的体验。 例如，如果你将其其中一个Microsoft 托管桌面设备替换为新设备，则其外观和行为与最后一个设备完全相同。
+[Enterprise状态漫游](/azure/active-directory/devices/enterprise-state-roaming-overview)允许用户将用户和应用程序设置数据安全地同步到云。 这意味着无论登录哪个设备，Windows具有相同的体验。 例如，如果你将其其中一个Microsoft 托管桌面设备替换为新设备，则其外观和行为与最后一个设备完全相同。 Enterprise状态漫游是一项可选的 Microsoft 托管桌面 服务功能，你可以为用户配置该功能，并且不会作为自定义服务的一Microsoft 托管桌面。
 
-若要启用Enterprise状态漫游，请按照在 Azure Active Directory 中启用Enterprise[状态](/azure/active-directory/devices/enterprise-state-roaming-enable)漫游"中的步骤操作，然后返回到本文档。
-
-如果你对状态漫游有任何Enterprise，请联系管理员[支持](../working-with-managed-desktop/admin-support.md)。
+若要启用Enterprise状态漫游，请按照启用Enterprise[状态漫游中的](/azure/active-directory/devices/enterprise-state-roaming-enable)步骤Azure Active Directory。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 

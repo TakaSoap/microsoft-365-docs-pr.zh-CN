@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: eecb635972be85e1a1a4f95c2786f209ee249745
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062031"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203276"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -55,8 +55,7 @@ ms.locfileid: "53062031"
 
 - 若要向 Microsoft 提交邮件和文件，你需要是以下角色组之一的成员：
   - **组织管理** 或 **安全读者** Microsoft 365 Defender [门户](permissions-microsoft-365-security-center.md)。
-  - **组织管理** 中的 [Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
-
+  
     请注意，查看自定义邮箱的用户提交需要此角色组的 [成员身份，如](#view-user-submissions-to-microsoft) 本文稍后所述。
 
 - 有关用户如何向 Microsoft 提交邮件和文件的信息，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。
@@ -142,7 +141,7 @@ ms.locfileid: "53062031"
      - **传递/阻止原因**
      - **提交 ID**
      - **网络消息 ID/对象 ID**
-     - **方向**
+     - **Direction**
      - **发件人 IP**
      - **BCL (批量)**
      - **目标**
@@ -165,9 +164,9 @@ ms.locfileid: "53062031"
 
    - 若要对条目进行分组，请单击 **"分组** "，然后从下拉列表中选择下列值之一：
      - **无**
-     - **类型**
+     - **Type**
      - **原因**
-     - **状态**
+     - **Status**
      - **重新扫描结果**
 
    - 若要导出条目，请单击"导出 **"。** 在出现的对话框中，保存.csv文件。

@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137759"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203288"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -149,7 +149,7 @@ ms.locfileid: "53137759"
 
      |操作|垃圾邮件|高<br>置信<br>垃圾邮件 (spam)|网络钓鱼|高<br>置信<br>仿冒|批量邮件|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**将邮件移动到“垃圾邮件”文件夹**：邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|
+     |**将邮件移动到“垃圾邮件”文件夹**：邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)<sup>\*</sup>|
      |**添加 X 标头**：向邮件头添加 X 标头，并将邮件递送到邮箱。 <p> 稍后将在 **“添加此 X 标头文本”** 框中，输入 X 标头字段名称（而不是值）。 <p> 对于 **“垃圾邮件”** 和 **“高可信度垃圾邮件”** 裁定，邮件移动到“垃圾邮件”文件夹。<sup>1、2</sup>|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)<sup>\*</sup>|
      |**在主题行前面追加文本**：向邮件的主题行开头添加文本。 邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1、2</sup> <p> 稍后将在 **“在主题行前面添加此文本作为前缀”** 框中输入文本。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
      |**将邮件重定向到电子邮件地址**：将邮件发送给其他收件人，而不是目标收件人。 <p> 稍后将在 **“重定向到此电子邮件地址”** 框中指定收件人。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
@@ -182,7 +182,7 @@ ms.locfileid: "53137759"
 
    - **重定向到此电子邮件地址**：只有当你选择 **“将邮件重定向到电子邮件地址”** 作为垃圾邮件筛选裁定对应的操作时，此框才会显示且必须选中。 输入要将邮件递送到的电子邮件地址。 可以输入多个值，用分号 (;) 分隔。
 
-   - **启用安全提示**：安全提示默认处于启用状态，但你可以通过清除该复选框来禁用它们。 若要详细了解安全提示，请参阅[电子邮件安全提示](safety-tips-in-office-365.md)。
+   - **启用安全提示**：安全提示默认处于启用状态，但你可以通过清除该复选框来禁用它们。
 
    - **启用零时差自动清除 (ZAP)**：ZAP 检测已递送到 Exchange Online 邮箱的邮件，并对邮件执行操作。 有关详细信息，请参阅[零时差自动清除 - 抵御垃圾邮件和恶意软件](zero-hour-auto-purge.md)。
 

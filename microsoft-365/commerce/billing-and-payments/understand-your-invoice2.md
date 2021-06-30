@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 解释你的企业帐单或发票Microsoft 365、帐单和付款信息，以及如何更改采购订单编号。
 ms.date: 05/04/2021
-ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 07d8b9fe88849b693388adf4d98813073764676d
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888369"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203144"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
 
@@ -129,7 +129,7 @@ ms.locfileid: "52888369"
 ## <a name="related-content"></a>相关内容
 
 [了解如何查找和查看帐单或](view-your-bill-or-invoice.md) 发票 (文章) \
-[有关墨西哥Microsoft 365企业](/microsoft-365/commerce/billing-and-payments/mexico-billing-info)帐单 (文章) \
+[Microsoft 365 商业版（墨西哥）的帐单信息](mexico-billing-info.md) （文章）\
 [更改帐单邮寄地址](change-your-billing-addresses.md) (文章) \
 [更改组织地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md) ， (文章) \
 [支付商业Microsoft 365订阅费用](pay-for-your-subscription.md) (文章) \

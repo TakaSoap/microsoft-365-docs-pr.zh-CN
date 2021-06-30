@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解在关闭或删除受调查案例支持的调查Advanced eDiscovery法律案件时会发生什么情况。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657632"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194622"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>关闭或删除Advanced eDiscovery案例
 
@@ -36,7 +36,7 @@ ms.locfileid: "52657632"
 
 - 关闭案例仅关闭与该案例相关联的保留。 如果其他保留位于内容位置 (如诉讼保留、核心电子数据展示保留或其他 Advanced eDiscovery 案例的保留) 仍将保留这些保留。
 
-- 该案例仍在安全与合规中心的"电子数据展示"Microsoft 365列出。 将保留已关闭案例的详细信息、保留、搜索和成员。
+- 该案例仍在"电子数据展示"页面上Microsoft 365 合规中心。 将保留已关闭案例的详细信息、保留、搜索和成员。
 
 - 可以在案例关闭后对其进行编辑。 例如，您可以添加或删除成员、创建搜索、导出搜索结果以及准备搜索结果以在 Advanced eDiscovery。 活动事例和已关闭事例的主要区别在于当事例关闭时，保留已关闭。
 
@@ -46,13 +46,13 @@ ms.locfileid: "52657632"
 
 2. 在" **设置** 选项卡上，**"案例信息**"下， 点击 **选择**。
 
-3. 在"案例信息"飞出页面底部，单击 **" (...") "** 更多选项"，然后单击"**关闭案例"。**
+   ![访问事件案例的"案例信息"Advanced eDiscovery页面](..\media\AeDSelectCaseInformation.png) 
 
-   !["更多选项"菜单中用于关闭事件Advanced eDiscovery选项](..\Media\CloseAdvancedeDiscoveryCase.png)
+3. 在"案例 **信息"飞** 出页的底部，单击"**操作**"，然后单击"**关闭案例"。**
 
    完成结束过程可能需要多达 60 分钟。
 
-## <a name="reopen-a-closed-case&quot;></a>重新打开已关闭的案例
+## <a name="reopen-a-closed-case"></a>重新打开已关闭的案例
 
 当重新打开Advanced eDiscovery案例时，关闭案例时已就位的任何保留不会自动恢复。 重新打开案例后，你必须转到保留选项卡并打开以前的保留。  要打开保留，请选择它以显示弹出页面，然后将 **状态** 开关设置为 **“开”**。
 
@@ -60,17 +60,15 @@ ms.locfileid: "52657632"
 
 1. 在 **高级电子数据展示** 页面上，选择要关闭的案件。
 
-2. 在&quot; **设置** 选项卡上，**&quot;案例信息**&quot;下， 点击 **选择**。
+2. 在 **设置** 选项卡上的 **案例信息** 下，点击 **选择**。
 
-3. 在&quot;案例信息&quot;飞出页面底部，单击&quot; (**...") "** 更多 **选项**"，然后单击"**重新打开案例"。**
-
-   !["更多选项"菜单中用于重新打开Advanced eDiscovery选项](..\Media\ReopenAdvancedeDiscoveryCase.png)
+3. 在"案例 **信息"飞** 出页底部，单击"**操作**"，然后单击"**重新打开案例"。**
 
    可能需要 60 分钟才能完成重新打开过程。
 
 ## <a name="delete-a-case"></a>删除案例
 
-可以删除活动用例和已关闭Advanced eDiscovery案例。 删除案例时，与该案例关联的所有组件（例如保管人列表、通信、搜索、审阅集和导出作业）都将被删除。 从合规中心内"Advanced eDiscovery"页面上Microsoft 365事例列表。 无法恢复或重新打开已删除的案例。
+可以删除活动用例和已关闭Advanced eDiscovery案例。 删除案例时，与该案例关联的所有组件（例如保管人列表、通信、搜索、审阅集和导出作业）都将被删除。 该事例已从文档页面的 **Advanced eDiscovery事例列表中** Microsoft 365 合规中心。 无法恢复或重新打开已删除的案例。
 
 > [!NOTE]
 > 在数据泄漏方案中，删除审阅集内项目的唯一方法就是删除Advanced eDiscovery案例。 其他"搜索和清除"方法不会从审阅集中删除项目。
@@ -91,6 +89,5 @@ ms.locfileid: "52657632"
 
 2. 在" **设置** 选项卡上，**"案例信息**"下， 点击 **选择**。
 
-3. 在"案例信息"飞出页底部，单击 **" (...")****更多选项**"，然后单击"删除 **大小写"。**
+3. 在"案例信息"飞出页的底部，单击"**操作**"，然后单击"**删除大小写"。**
 
-   !["更多选项"菜单中用于删除Advanced eDiscovery选项](..\Media\DeleteAdvancedeDiscoveryCase.png)

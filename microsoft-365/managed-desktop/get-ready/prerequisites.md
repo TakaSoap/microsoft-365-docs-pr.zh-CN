@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e4469d8abcfa8308c64e2efa7f7dc4f0156e5718
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 31077b3ffbddb78ecac8841c22c77fa75f6e2c32
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957523"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203084"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的系统必备
 
@@ -27,9 +27,9 @@ ms.locfileid: "51957523"
 
 领域 | 先决条件详细信息
 --- | ---
-授权 |Microsoft 托管桌面需要Microsoft 365 E3 Microsoft Defender for Endpoint 许可证 (或) 分配给你的用户的等效许可证。<br>有关特定服务计划的详细信息，请参阅本主题 [中有关](#more-about-licenses) 许可证的详细信息。<br>有关可用许可证详细信息，请参阅Microsoft 365[许可。](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
+许可 |Microsoft 托管桌面需要Microsoft 365 E3 Microsoft Defender for Endpoint 许可证 (或) 分配给你的用户的等效许可证。<br>有关特定服务计划的详细信息，请参阅本主题 [中有关](#more-about-licenses) 许可证的详细信息。<br>有关可用许可证详细信息，请参阅Microsoft 365[许可。](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
 连接 |  所有Microsoft 托管桌面设备都需要从企业网络连接到多个 Microsoft 服务终结点。<br><br>有关所需 IP 和 URL 的完整列表，请参阅网络 [配置](../get-ready/network.md)。 
-Azure Active Directory |    Azure Active Directory (Azure AD) 必须是所有用户帐户的颁发机构，或者必须使用最新支持的 Azure AD 连接 从本地 Active Directory 同步用户帐户。<br><br>[Enterprise用户必须](/azure/active-directory/devices/enterprise-state-roaming-overview)启用状态Microsoft 托管桌面漫游。<br><br>有关详细信息，请参阅[Azure AD 连接。](/azure/active-directory/hybrid/whatis-azure-ad-connect)<br><br>有关受支持的 Azure AD 连接版本，请参阅[Azure AD 连接：版本发布历史记录](/azure/active-directory/hybrid/reference-connect-version-history)。
+Azure Active Directory |    Azure Active Directory (Azure AD) 必须是所有用户帐户的颁发机构，或者必须使用最新支持的 Azure AD 连接 从本地 Active Directory 同步用户帐户。<br><br>有关详细信息，请参阅[Azure AD 连接。](/azure/active-directory/hybrid/whatis-azure-ad-connect)<br><br>有关受支持的 Azure AD 连接版本，请参阅[Azure AD 连接：版本发布历史记录](/azure/active-directory/hybrid/reference-connect-version-history)。
 身份验证 |    如果 Azure AD 不是用户帐户的主身份验证源，则必须在 Azure AD 连接：<br>- 密码哈希同步<br>- 传递身份验证<br>- 外部标识提供程序 (包括 Windows 服务器 ADFS 和非 Microsoft IDP) 配置为满足 Azure AD 集成要求。 有关详细信息 [，](https://www.microsoft.com/download/details.aspx?id=56843) 请参阅指南。 <br><br>使用 Azure AD 设置身份验证选项连接，还推荐密码写回。 有关详细信息，请参阅密码 [写回](/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>如果实施了外部标识提供程序，则必须验证解决方案：<br>- 满足 Azure AD 集成要求<br>- 支持 Azure AD 条件访问，允许Microsoft 托管桌面配置设备合规性策略<br>- 启用设备注册和使用Microsoft 365服务或功能所需的服务或Microsoft 托管桌面 <br><br>有关使用 Azure AD 的身份验证选项的详细信息，请参阅[Azure AD 连接用户登录选项](/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
 Microsoft 365 | OneDrive for Business用户必须启用Microsoft 托管桌面。<br><br>尽管无需注册Microsoft 托管桌面，但我们强烈建议将以下服务迁移到云：<br>- 电子邮件：迁移到基于云的邮箱、Exchange联机，或在本地使用 Exchange Online Hybrid Exchange 2013 或更高版本进行配置。<br>- 文件和文件夹：迁移到 OneDrive for Business 或 SharePoint Online。<br>- 联机协作工具：迁移到Teams。
 设备管理 | Microsoft 托管桌面设备需要使用 Microsoft Intune。 Intune 必须设置为移动设备管理机构。<br><br>有关详细信息，[请参阅Microsoft Intune。](https://www.microsoft.com/cloud-platform/microsoft-intune) 

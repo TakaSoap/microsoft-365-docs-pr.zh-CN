@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 6b74c36707b9fe1fdbe00eb7058554b54ec95755
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169612"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194765"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -142,7 +142,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 同样与配置 DLP 策略时类似的是，你可以选择某项条件是必须删除所有敏感信息类型还是只删除其中一种。 要使条件更灵活或更复杂，可添加[组并在组之间使用逻辑运算符](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
 > [!NOTE]
-> 基于自定义敏感信息类型的自动标签策略仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容。 
+> 基于自定义敏感信息类型的自动标签策略仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容;而不适用于现有的内容。 
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
@@ -219,7 +219,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     - 当自动标记策略运行时，该文件不得由其他进程或用户打开。 签出以供进行编辑的文件属于此类别。
 
 - 如果计划使用[自定义敏感信息类型](sensitive-information-type-learn-about.md)，而不是内置敏感度类型： 
-    - 自定义敏感性信息类型仅适用于执行自定义敏感性信息类型后在 SharePoint 或 OneDrive 中添加或修改的内容。 
+    - 自定义敏感性信息类型仅适用于执行自定义敏感性信息类型后在 SharePoint 或 OneDrive 中添加或修改的内容。
     - 若要测试新的自定义敏感信息类型，请在创建自动标记策略前创建它们，然后创建新文档（其中包含用于测试的示例数据）。
 
 - 你可以为自动标记策略选择一个或多个[已创建和发布](create-sensitivity-labels.md)（至少向一个用户发布）的敏感度标签。 对于这些标签：

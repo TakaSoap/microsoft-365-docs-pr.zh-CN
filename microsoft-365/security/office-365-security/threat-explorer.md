@@ -19,12 +19,12 @@ description: 使用浏览器门户中的资源管理器和实时检测Microsoft 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195029"
+ms.locfileid: "53203252"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -56,7 +56,8 @@ ms.locfileid: "53195029"
 
 ## <a name="improvements-to-threat-hunting-experience"></a>威胁搜寻体验改进
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>在预览版中引入适用于 Office 365 警报的 Defender 警报 ID/实时 (检测) 
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>适用于浏览器/实时Office 365内警报的 Defender 警报 ID 简介
 
 今天，如果你从警报导航到威胁资源管理器，它将在资源管理器中打开筛选的视图，其中按警报策略 ID (策略 ID 筛选的视图是警报策略设置的唯一标识符) 。
 我们正在通过引入警报 ID (在威胁资源管理器和实时检测中查看) 下方的警报 ID 示例，以便查看与特定警报相关的邮件以及电子邮件数量，从而使此集成更具相关性。 您还可以查看邮件是否属于警报，以及从该邮件导航到特定警报。
@@ -69,12 +70,12 @@ ms.locfileid: "53195029"
 > [!div class="mx-imgBorder"]
 > ![详细信息中的警报 ID 飞出](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>扩展 Explorer (和实时检测) 预览版中试用版租户的数据保留和搜索限制从 7 天 (30) 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>扩展 Explorer (和实时检测) 试用租户的数据保留和搜索限制从 7 天扩展到 30 天
 
 作为此更改的一部分，你将能够在威胁资源管理器中搜索并筛选 30 天内的电子邮件数据 (这一点比针对 Office P1 和 P2 试用租户的 Defender 前 7 天) 增加了。
 这不会影响 P1 和 P2/E5 客户的任何生产租户，这已具有 30 天的数据保留和搜索功能。
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新了威胁资源管理器预览版中导出 (限制) 
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>更新了威胁资源管理器的记录导出限制
 
 作为此更新的一部分，可以从威胁资源管理器导出的电子邮件记录的行数从 9990 增加到 200，000 条记录。 当前可以导出的列集将保持不变，但行数将自当前限制开始增加。
 

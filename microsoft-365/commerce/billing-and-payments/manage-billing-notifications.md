@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 了解如何管理接收帐单通知电子邮件和发票附件的人。
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054585"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203240"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帐单通知和发票附件
 
@@ -127,6 +127,6 @@ ms.locfileid: "53054585"
 ## <a name="related-content"></a>相关内容
 
 [查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
-[Microsoft 365 商业版（墨西哥）的帐单信息](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) （文章）\
+[Microsoft 365 商业版（墨西哥）的帐单信息](mexico-billing-info.md) （文章）\
 [了解适用于企业Microsoft 365的](understand-your-invoice2.md)帐单 (发票) \
 [在本文介绍的同时添加用户 (](../../admin/add-users/add-users.md) 分配) 
