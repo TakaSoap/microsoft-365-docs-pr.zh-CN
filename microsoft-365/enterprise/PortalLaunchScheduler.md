@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930255"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229547"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
 门户是 Intranet 上高流量的 SharePoint 通信网站，在几周内拥有 10，000 到 100，000 多个查看者的网站。 使用门户启动计划程序启动门户，以确保用户在访问新的门户时具有流畅的SharePoint体验。
 <br>
 <br>
-门户启动计划程序旨在帮助你遵循分阶段推出方法，方法是分批对查看者进行批处理，并管理新门户的 URL 重定向。 在每个波的启动过程中，你可以收集用户反馈、监视门户性能，并暂停启动以解决问题，然后再继续下一波。 详细了解如何在 SharePoint 中[规划门户SharePoint。](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)
+门户启动计划程序旨在帮助你遵循分阶段推出方法，方法是分批对查看者进行批处理，并管理新门户的 URL 重定向。 在每个波的启动过程中，你可以收集用户反馈、监视门户性能，并暂停启动以解决问题，然后再继续下一波。 详细了解如何在 SharePoint 中[规划门户SharePoint。](/microsoft-365/Enterprise/Planportallaunchroll-out)
 
 **有两种类型的重定向：**
 
@@ -127,7 +127,7 @@ ms.locfileid: "52930255"
 
 如果计划启动拥有 100，000 多个用户的门户，请按照下面列出的步骤提交支持请求。 确保包含所有请求的信息。
 
-**请按以下步骤操作：**
+**请按照下列步骤操作：**
 
 1. 转到 <https://admin.microsoft.com>。
 2. 确保使用的是新的管理中心预览版

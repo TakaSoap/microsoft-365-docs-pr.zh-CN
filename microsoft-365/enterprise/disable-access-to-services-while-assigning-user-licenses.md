@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 了解如何使用 PowerShell for Microsoft 365 同时向用户帐户分配许可证和禁用特定服务Microsoft 365。
-ms.openlocfilehash: 7486968f6f4822047a1697ee1e05129277fd11a8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ca5becb8709eeab7b5c535747ac93d36fefa0da8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929428"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228899"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>在分配用户Microsoft 365禁用对服务的访问权限
 
@@ -34,7 +34,7 @@ Microsoft 365订阅随单个服务的服务计划一起提供。 Microsoft 365�
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
-  
+
 
 接下来，使用此命令列出租户的许可证计划。
 
@@ -47,7 +47,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 接下来，编译要启用的服务列表。 有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 对于下面的命令块，填写用户帐户的用户主体名称、SKU 部件号以及启用和删除说明性文本和字符的服务计划 \< and > 列表。 然后，在 PowerShell 命令提示符下运行生成的命令。
-  
+
 ```powershell
 $userUPN="<user account UPN>"
 $skuPart="<SKU part number>"
@@ -70,7 +70,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 接下来，运行此命令以查看当前订阅：
-  
+
 ```powershell
 Get-MsolAccountSku
 ```
@@ -80,30 +80,30 @@ Get-MsolAccountSku
 >
 
 在命令的  `Get-MsolAccountSku` 显示中：
-  
+
 - **AccountSkuId** 是您的组织的订阅，格式 \<OrganizationName> \<Subscription> 为 ： 。 \<OrganizationName>是当你在组织中注册时提供Microsoft 365，并且对于你的组织是唯一的。 \<Subscription>该值用于特定订阅。 例如，对于 litwareinc：ENTERPRISEPACK，组织名称为 litwareinc，订阅名称为 ENTERPRISEPACK (Office 365 企业版 E3) 。
-    
+
 - **ActiveUnits** 是已购买订阅的许可证数。
-    
+
 - **WarningUnits** 是订阅中尚未续订且将在 30 天宽限期后过期的许可证数量。
-    
+
 - **ConsumedUnits** 是已分配给订阅用户的许可证数。
-    
-请注意包含要许可的用户Microsoft 365订阅的 AccountSkuId。 此外，请确保有足够的许可证来分配从 **ActiveUnits** (**ConsumedUnits ) 。**
-  
+
+请注意包含要许可的用户Microsoft 365订阅的 AccountSkuId。 此外，请确保有足够的许可证来分配从 **ActiveUnits** (**ConsumedUnits) 。**
+
 接下来，运行此命令以查看有关所有Microsoft 365中可用的服务计划的详细信息：
-  
+
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
 通过显示此命令，确定在向用户分配许可证时要禁用的服务计划。
-  
+
 以下是服务计划及其相应服务Microsoft 365列表。
 
-下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。 
-  
-|**服务计划**|**说明**|
+下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。
+
+|**服务计划**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -114,15 +114,15 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 计划 2  <br/> |
-   
+
 有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
-   
+
 现在，您具有要禁用的 AccountSkuId 和服务计划，您可以为单个用户或多个用户分配许可证。
-  
+
 ### <a name="for-a-single-user"></a>对于单个用户
 
 对于单个用户，请填写用户帐户的用户主体名称、AccountSkuId 以及禁用和删除说明文本和字符的服务 \< and > 计划列表。 然后，在 PowerShell 命令提示符下运行生成的命令。
-  
+
 ```powershell
 $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
@@ -134,7 +134,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 ```
 
 下面是针对 contoso：ENTERPRISEPACK 许可证的名为 belindan@contoso.com 的帐户的示例命令块，要禁用的服务计划包括 RMS_S_ENTERPRISE、SWAY、INTUNE_O365 和 YAMMER_ENTERPRISE：
-  
+
 ```powershell
 $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
@@ -148,7 +148,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 ### <a name="for-multiple-users"></a>对于多个用户
 
 若要为多个用户执行此管理任务，请创建包含 UserPrincipalName 和 UsageLocation (CSV) 文本文件的逗号分隔值。 下面是一个示例：
-  
+
 ```powershell
 UserPrincipalName,UsageLocation
 ClaudeL@contoso.onmicrosoft.com,FR
@@ -157,7 +157,7 @@ ShawnM@contoso.onmicrosoft.com,US
 ```
 
 接下来，填写输入和输出 CSV 文件的位置、帐户 SKU ID 和要禁用的服务计划列表，然后在 PowerShell 命令提示符处运行生成的命令。
-  
+
 ```powershell
 $inFileName="<path and file name of the input CSV file that contains the users, example: C:\admin\Users2License.CSV>"
 $outFileName="<path and file name of the output CSV file that records the results, example: C:\admin\Users2License-Done.CSV>"
@@ -177,19 +177,19 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 ```
 
 此 PowerShell 命令块：
-  
+
 - 显示每个用户的用户主体名称。
-    
+
 - 向每个用户分配自定义许可证。
-    
+
 - 创建包含已处理的所有用户的 CSV 文件，并显示其许可证状态。
-    
+
 ## <a name="see-also"></a>另请参阅
 
 [使用 PowerShell Microsoft 365访问服务](disable-access-to-services-with-microsoft-365-powershell.md)
-  
+
 [使用 PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)
-  
+
 [使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-  
+
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)

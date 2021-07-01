@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245932"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230051"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备
 
@@ -22,13 +22,13 @@ ms.locfileid: "52245932"
 
 Microsoft 托管桌面定期评估要包含在服务中的设备。 本文列出了当前支持的特定设备。 有关设备要求的更一般声明，请参阅 [设备要求](device-requirements.md)。
 
-有关文档Microsoft 托管桌面，请参阅Microsoft 托管桌面[文档和资源](../index.yml)。 
+有关文档Microsoft 托管桌面，请参阅Microsoft 托管桌面[文档和资源](../index.yml)。
 
 [选择并验证新设备](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且必须满足或超过列出的 RAM、处理器系列和磁盘空间规格。 
+若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且必须满足或超过列出的 RAM、处理器系列和磁盘空间规格。
 
 此处设备的链接仅供参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中，*存档日期* 是这些模型在服务生命周期中Microsoft 托管桌面的日期;在此日期之后载入的任何此类设备将不会收到来自以下用户的完整三年支持Microsoft 托管桌面。 存档的设备也列在存档Microsoft 托管桌面[中](archived-device-list.md)。 *停用日期* 是系统不再支持此Microsoft 托管桌面的日期。 在此日期，此模型的所有注册设备都将从Microsoft 托管桌面中删除，无论设备何时注册。
 
@@ -79,9 +79,9 @@ Microsoft 托管桌面定期评估要包含在服务中的设备。 本文列出
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | 无 | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 1 月 15 日 | 2025 年 1 月 15 日 |
 
-此外，设备还必须满足以下条件：     
+此外，设备还必须满足以下条件：
 
-- 如果特定 SKU 在设备要求中列出，请确保在订购时使用它。 这样做可确保设备符合Microsoft 托管桌面要求。 
+- 如果特定 SKU 在设备要求中列出，请确保在订购时使用它。 这样做可确保设备符合Microsoft 托管桌面要求。
 - 尚未完成首次Windows体验。
 - 使用设备Microsoft 托管桌面[注册功能向用户](../get-started/register-devices-self.md)注册
 

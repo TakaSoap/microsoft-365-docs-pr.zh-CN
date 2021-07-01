@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203288"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228659"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -140,7 +140,7 @@ ms.locfileid: "53203288"
 
      下表介绍了可以根据垃圾邮件筛选裁定而执行的操作。
 
-     - 复选标记 ( ![复选标记](../../media/checkmark.png)）表示操作可以执行（并不是所有操作都适用于所有裁定）。
+     - 复选标记 ( ![复选标记](../../media/checkmark.png) ）表示操作可以执行（并不是所有操作都适用于所有裁定）。
      - 复选标记后面的星号 (<sup>\*</sup>) 表示垃圾邮件筛选裁定对应的默认操作。
 
      <br>

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245332"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228995"
 ---
 # <a name="device-inventory-report"></a>设备清点报告
 
@@ -43,6 +43,6 @@ ms.locfileid: "52245332"
 - TPM 版本
 - 启用安全启动
 - 主磁盘类型
-- 总物理内存 
+- 总物理内存
 
-![显示设备列表和相关详细信息的设备视图。 选中活动、注册状态筛选器顶部附近的复选框。 上面是一个搜索框。 位于顶部的选项卡，用于注册新设备、刷新视图、导出错误和导出数据。 ](../../media/mmd-devices-view.png)
+![显示设备列表和相关详细信息的设备视图。 选中活动、注册状态筛选器顶部附近的复选框。 上面是一个搜索框。 位于顶部的选项卡，用于注册新设备、刷新视图、导出错误和导出数据。](../../media/mmd-devices-view.png)

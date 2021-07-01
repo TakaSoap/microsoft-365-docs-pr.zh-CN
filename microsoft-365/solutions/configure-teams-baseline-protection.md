@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: ec8c2a1a5c4480ffd36b77fe9e9accc91214c6a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bf95c26a9bf724aaddae8321022ecdfceae82d1a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538203"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229055"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -38,9 +38,9 @@ ms.locfileid: "52538203"
 
 |选项|信息|
 |:------|:-----------|
-|适用于 SPO、OneDrive 和 Teams 的安全附件|[安全附件](../security/office-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint、OneDrive 和 Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
+|适用于 SPO、OneDrive 和 Teams 的安全附件|[安全附件](../security/office-365-security/safe-attachments.md) <p> [Defender for Office 365 - SharePoint、OneDrive 和 Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
 |安全文档|[Microsoft Defender for Office 365 中的安全文档](../security/office-365-security/safe-docs.md)|
-|适用于 Teams 的安全链接|[Teams 中 Office 365 安全链接](../security/office-365-security/safe-links.md)<br>[安全链接](../security/office-365-security/safe-links.md)|
+|适用于 Teams 的安全链接|[Teams 中 Office 365 安全链接](../security/office-365-security/safe-links.md) <p> [安全链接](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>团队来宾共享
 

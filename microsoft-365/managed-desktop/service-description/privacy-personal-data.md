@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177473"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229595"
 ---
 # <a name="overview"></a>概述
 
@@ -68,16 +68,16 @@ Microsoft 托管桌面 使用的标识数据由 Azure Active Directory (Azure AD
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intune收集、处理数据并共享数据Microsoft 托管桌面以支持业务运营和服务。 有关 [在 Intune 中](/mem/intune/protect/privacy-data-collect) 收集的数据详细信息，请参阅 Intune 中的数据收集。 
 
-有关数据位置Microsoft Intune，请参阅存储客户Microsoft 365[的位置](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)。 Intune 遵守管理员为客户数据选择的存储位置。
+有关数据位置Microsoft Intune，请参阅存储客户Microsoft 365[的位置](/microsoft-365/enterprise/o365-data-locations)。 Intune 遵守管理员为客户数据选择的存储位置。
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
-Microsoft Defender for Endpoint 收集并存储设备上注册的设备Microsoft 托管桌面管理、跟踪和报告目的。 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据和设备详细信息 (例如设备标识符、设备名称和操作系统版本) 。 有关 [适用于 Endpoint 的](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) Microsoft Defender 数据收集和存储位置详细信息，请参阅 Microsoft Defender for Endpoint 数据存储和隐私。 
+Microsoft Defender for Endpoint 收集并存储设备上注册的设备Microsoft 托管桌面管理、跟踪和报告目的。 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据和设备详细信息 (例如设备标识符、设备名称和操作系统版本) 。 有关 [适用于 Endpoint 的](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) Microsoft Defender 数据收集和存储位置详细信息，请参阅 Microsoft Defender for Endpoint 数据存储和隐私。 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版 
-Microsoft 365 企业应用版收集并共享Microsoft 托管桌面，以确保这些应用是最新版本，且基于由 Microsoft 托管桌面 管理的预定义更新频道。 有关[你的数据收集和存储位置Microsoft 365 应用版](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect)请参阅 Microsoft Defender for Endpoint 数据存储和隐私。
+Microsoft 365 企业应用版收集并共享Microsoft 托管桌面，以确保这些应用是最新版本，且基于由 Microsoft 托管桌面 管理的预定义更新频道。 有关[你的数据收集和存储位置Microsoft 365 应用版](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)请参阅 Microsoft Defender for Endpoint 数据存储和隐私。
 
 ## <a name="major-data-change-notification"></a>主要数据更改通知
-Microsoft 托管桌面遵循服务通信框架中概述的变更控制流程。 我们通过邮件Microsoft 365和Microsoft 托管桌面管理员门户通知客户安全事件和服务的主要更改。 对收集的数据类型和存储位置的更改被视为重大更改。 我们将至少提前 30 天通知此更改，这是有关Microsoft 365的标准做法。 有关详细信息，请参阅服务 [更改和通信](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)。
+Microsoft 托管桌面遵循服务通信框架中概述的变更控制流程。 我们通过邮件Microsoft 365和Microsoft 托管桌面管理员门户通知客户安全事件和服务的主要更改。 对收集的数据类型和存储位置的更改被视为重大更改。 我们将至少提前 30 天通知此更改，这是有关Microsoft 365的标准做法。 有关详细信息，请参阅服务 [更改和通信](/microsoft-365/managed-desktop/service-description/servicechanges)。
 
 ## <a name="compliance"></a>合规性
 Microsoft 托管桌面已经过外部审核，并获得了一套全面的合规性产品/服务。 有关详细信息，请参阅Microsoft 托管桌面[合规性](/microsoft-365/managed-desktop/intro/compliance)。 可在 Microsoft 服务信任门户下载审核[](https://aka.ms/stp)报告，该门户是 Microsoft Enterprise Online Services 的中央存储库。  (Microsoft 托管桌面"监控和管理"类别下列出了这些文档中的"报告"。)  

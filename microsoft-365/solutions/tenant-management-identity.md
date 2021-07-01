@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 为租户部署正确的标识Microsoft 365并强制执行强用户登录。
-ms.openlocfilehash: 57e84b38715c4fbe29f9aa362e363663b0401f91
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c6b098cf73ef56327448413381d5621dfd4d2b59
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052358"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229067"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 3. 企业租户Microsoft 365的标识
 
@@ -39,7 +39,7 @@ ms.locfileid: "51052358"
 ||||||
 
 以下是仅云标识的基本组件。
- 
+
 ![仅云标识的基本组件](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 在此图中，本地和远程用户使用其租户的 Azure AD 租户中的帐户Microsoft 365登录。
@@ -54,9 +54,8 @@ ms.locfileid: "51052358"
 
 混合标识模型和目录同步是采用混合标识的企业客户最常用的选择，具体取决于业务需求和技术Microsoft 365。 目录同步允许你管理 AD DS 中的标识，并且用户帐户、组和联系人的所有更新都同步到 Microsoft 365 租户。
 
->[!Note]
->首次同步 AD DS 用户帐户时，不会自动为其分配 Microsoft 365 许可证，并且无法访问 Microsoft 365 服务，如电子邮件。 您必须先为其分配使用位置。 然后，通过组成员身份单独或动态地向这些用户帐户分配许可证。
->
+> [!NOTE]
+> 首次同步 AD DS 用户帐户时，不会自动为其分配 Microsoft 365 许可证，并且无法访问 Microsoft 365 服务，如电子邮件。 您必须先为其分配使用位置。 然后，通过组成员身份单独或动态地向这些用户帐户分配许可证。
 
 下面是使用混合标识模型时两种类型的身份验证。
 
@@ -72,12 +71,12 @@ ms.locfileid: "51052358"
 
 若要提高用户登录的安全性，请使用下表中的特性和功能。
 
-| 功能 | 说明 | 详细信息 | 许可要求 |
+| 功能 | 说明 | 更多信息 | 许可要求 |
 |:-------|:-----|:-----|:-----|:-----|
 | Windows Hello 企业版 | 在设备上登录时，使用强双因素身份验证Windows密码。 这两个因素是一种与设备和生物识别或 PIN 相关联的新型用户凭据。 | [Windows Hello 企业版概述](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 或 E5 |
 | Azure AD 密码保护 | 检测并阻止已知的弱密码及其变体，还可以阻止特定于您的组织的其他弱术语。 | [配置 Azure AD 密码保护](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 或 E5 |
 | 使用多重身份验证 (MFA) | MFA 要求用户登录需要除用户帐户密码之外的其他验证，例如使用智能手机应用进行验证或发送到智能手机的短信。 有关 [用户](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) 如何设置 MFA 的说明，请参阅此视频。 | [适用于企业的 Microsoft 365 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 或 E5 |
-| 标识和设备访问配置 | 设置策略，其中包括建议的先决条件功能及其设置，以及条件访问、Intune 和 Azure AD Identity Protection 策略，这些策略确定是否应授予给定访问请求以及应在哪些条件下授予。  | [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 或 E5 |
+| 标识和设备访问配置 | 设置策略，其中包括建议的先决条件功能及其设置，以及条件访问、Intune 和 Azure AD Identity Protection 策略，这些策略确定是否应授予给定访问请求以及应在哪些条件下授予。  | [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 或 E5 |
 | Azure AD Identity Protection | 防止凭据泄露，攻击者可确定用户帐户名和密码，以访问组织的云服务和数据。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5或Microsoft 365 E3 Identity &威胁防护加载项的加载项 |
 |  |  |  |
 
@@ -98,13 +97,13 @@ ms.locfileid: "51052358"
 
 - 使用 DirSync 服务器和 Azure AD 租户与 Azure AD 租户同步的 AD DS 连接。
 - AD DS 用户帐户和 AD DS 林中其他对象的副本。
-- 一组条件访问策略，用于基于用户帐户强制实施安全用户登录和访问。 
+- 一组条件访问策略，用于基于用户帐户强制实施安全用户登录和访问。
 
 ## <a name="ongoing-maintenance-for-identity"></a>持续维护标识
 
 您可能需要持续：
 
-- 添加或修改用户帐户和组。 对于仅云标识，使用 Azure AD 工具（如管理中心或 PowerShell）Microsoft 365基于云的用户和组。 对于混合标识，使用 AD DS 工具维护本地用户和组。
+- 添加或修改用户帐户和组。 对于仅云标识，使用 Azure AD 工具（如 Microsoft 365 管理中心 或 PowerShell）维护基于云的用户和组。 对于混合标识，使用 AD DS 工具维护本地用户和组。
 - 添加或修改标识和设备访问配置，以强制实施登录安全要求。
 
 ## <a name="next-step"></a>后续步骤

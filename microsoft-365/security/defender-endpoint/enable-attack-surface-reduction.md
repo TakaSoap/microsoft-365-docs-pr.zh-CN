@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177617"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229139"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -49,7 +49,7 @@ ms.locfileid: "53177617"
 若要使用攻击面减少规则的整个功能集，你需要：
 
 - Windows Defender 防病毒作为主 AV (实时保护) 
-- [某些规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 要求 (云传递保护) 
+- [某些规则](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 要求 (云传递保护) 
 - Windows 10 企业版E5 或 E3 许可证或 Microsoft 365 商业版许可证
 
 尽管攻击面减少规则不需要[Windows E5](/windows/deployment/deploy-enterprise-licenses)许可证，但使用 Windows E5 许可证，你可以获得高级管理功能，包括适用于终结点的 Defender 中提供的监视、分析和工作流，以及 Microsoft 365 安全中心的报告和配置功能。 这些高级功能不适用于 E3 许可证，但你仍可以使用事件查看器查看攻击面减少规则事件。

@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织提供的高级防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a948604f11064f2c1fefcc441adc4a9792ac918
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 71baf947c5834e2eb4b8ef62af69da77ea5bd090
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108435"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230039"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365
 
@@ -125,8 +125,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
      > [!NOTE]
      >
-     > - 在每个防钓鱼策略中，最多可指定 60 个受保护 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。
-     >
+     > - 在每个防钓鱼策略中，最多可指定 350 个受保护 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。
      > - 如果发件人和收件人之前通过电子邮件进行通信，则用户模拟保护不起作用。 如果发件人和收件人从未通过电子邮件进行通信，则邮件将被标识为模拟尝试。
 
      - **允许用户保护**：默认值为 off， (未) 。 若要打开它，请选中该复选框，然后单击"管理 (**nn")  (显示**) "链接。
@@ -242,7 +241,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
      若要打开某个设置，请选中该复选框。 若要将其关闭，请清除该复选框。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 7. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
@@ -346,7 +345,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 1. 创建防钓鱼策略。
 2. 创建指定该规则所适用的防钓鱼策略的防钓鱼规则。
 
- **注意**：
+ **注意**:
 
 - 你可以创建新的防钓鱼规则，并为其分配现有的未关联的反网络钓鱼策略。 反网络钓鱼规则不能与多个防钓鱼策略关联。
 - 可以在 PowerShell 中对新的防钓鱼策略配置以下设置，这些设置在 Microsoft 365 Defender 门户中不可用，除非创建策略：

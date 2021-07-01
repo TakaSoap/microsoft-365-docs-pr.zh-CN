@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935661"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229475"
 ---
 # <a name="device-profile-page"></a>设备配置文件页
 
@@ -81,7 +81,7 @@ ms.locfileid: "51935661"
 * **运行防病毒扫描**- Windows Defender 防病毒定义并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
 * **收集调查包** - 收集有关设备的信息。 调查完成后，可以下载它。
 * **启动实时响应会话** - 在设备上加载远程 Shell 进行 [深入安全调查](/microsoft-365/security/defender-endpoint/live-response)。
-* **启动自动调查** - [自动调查和修正威胁](../office-365-security/office-365-air.md)。 尽管你可以手动触发自动调查以从此页运行，但某些警报策略[](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies)会自行触发自动调查。
+* **启动自动调查** - [自动调查和修正威胁](../office-365-security/office-365-air.md)。 尽管你可以手动触发自动调查以从此页运行，但某些警报策略[](../../compliance/alert-policies.md#default-alert-policies)会自行触发自动调查。
 * **操作中心** - 显示有关当前正在运行的任何响应操作的信息。
 
 ## <a name="tabs-section"></a>“选项卡”部分
@@ -180,7 +180,7 @@ ms.locfileid: "51935661"
 
 ## <a name="related-topics"></a>相关主题
 
-* [Microsoft 365Defender 概述](microsoft-365-defender.md)
+* [Microsoft 365 Defender概述](microsoft-365-defender.md)
 * [打开 Microsoft 365 Defender](m365d-enable.md)
 * [使用实时响应调查设备上的实体](../defender-endpoint/live-response.md)
 * [自动调查和响应 (AIR) 中Office 365](../office-365-security/office-365-air.md)

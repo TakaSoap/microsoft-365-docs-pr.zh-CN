@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 了解如何使用合规性分数和合规性管理器提高对个人数据的保护级别。
-ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918566"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229295"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合规性管理器管理改进操作
 
@@ -30,19 +30,18 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
 
 本文提供有关出于数据隐私目的使用此工具的指南。
 
->[!Note]
->来自合规性管理器的建议不应解释为合规性保证。 由你根据法规环境评估和验证客户控制措施的有效性。 这些服务受联机服务条款中的 [条款和条件限制](https://go.microsoft.com/fwlink/?linkid=2108910)。 另请参阅[Microsoft 365安全性和合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> 来自合规性管理器的建议不应解释为合规性保证。 由你根据法规环境评估和验证客户控制措施的有效性。 这些服务受联机服务条款中的 [条款和条件限制](https://go.microsoft.com/fwlink/?linkid=2108910)。 另请参阅[Microsoft 365安全性和合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>合规性管理器入门
 
 #### <a name="what-is-compliance-manager"></a>什么是合规性管理器
 
-[合规性管理器](../compliance/compliance-manager.md)是 Microsoft 365 中心中基于工作流的风险评估工具，用于管理与 Microsoft 云服务相关的法规合规性活动。 作为 Azure AD Microsoft 365 或 Azure Active Directory (订阅的一) ，合规性管理器可帮助你在 Microsoft 云服务的共享责任模型中管理法规合规性。
+[合规性管理器](../compliance/compliance-manager.md)是 Microsoft 365 合规中心 中基于工作流的风险评估工具，用于管理与 Microsoft 云服务相关的法规合规性活动。 作为 Azure AD Microsoft 365 或 Azure Active Directory (订阅的一) ，合规性管理器可帮助你在 Microsoft 云服务的共享责任模型中管理法规合规性。
 
 **准备使用评估**
 
-合规性管理器提供预建模板，用于构建[](../compliance/compliance-manager-assessments.md)符合数据隐私相关法规（如 GDPR 和 HIPAA/HITECH）的评估。 这些模板具有内置的控制映射，可帮助你采取改进措施，满足法规的要求。 每项评估都提供有关特定于目标服务的每个法规调用的控制措施的信息，这些信息由你管理的控制措施和 Microsoft 管理的控制措施细分。 
+合规性管理器提供预建模板，用于构建[](../compliance/compliance-manager-assessments.md)符合数据隐私相关法规（如 GDPR 和 HIPAA/HITECH）的评估。 这些模板具有内置的控制映射，可帮助你采取改进措施，满足法规的要求。 每项评估都提供有关特定于目标服务的每个法规调用的控制措施的信息，这些信息由你管理的控制措施和 Microsoft 管理的控制措施细分。
 
 使用预建模板可帮助你快速开始使用风险评估。 随着你更加熟练地使用合规性管理器，可以通过添加自己的控制措施和改进操作来自定义预建模板，也可以创建自己的自定义评估以满足组织的需求。
 
@@ -59,7 +58,7 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
 - [首次访问：熟悉合规性管理器](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - 使用合规性管理器仪表板
     - 了解合规性分数
-    - 了解改进操作
+    - Learning改进操作
     - 了解评估和模板
 - [加速：配置合规性管理器以管理合规性活动](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - 生成和管理你的第一个评估

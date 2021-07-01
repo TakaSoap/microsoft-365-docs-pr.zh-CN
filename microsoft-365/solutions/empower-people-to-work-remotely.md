@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788849"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229367"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -40,9 +40,8 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 ![使用 Microsoft 365 助力混合工作者](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
->[!Note]
->如果你第一次使用 Microsoft 365，请参阅 [的](https://www.microsoft.com/microsoft-365)。
->
+> [!NOTE]
+> 如果你第一次使用 Microsoft 365，请参阅 [的](https://www.microsoft.com/microsoft-365)。
 
 观看此视频以简要了解部署流程。
 <br>
@@ -53,9 +52,9 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 - 已连接
 
-  工作者能够随时随地访问: 
+  工作者能够随时随地访问:
 
-  - Microsoft 365 订阅中基于云的服务和数据。 
+  - Microsoft 365 订阅中基于云的服务和数据。
 
   - 组织资源，例如由本地应用程序数据中心提供的资源。
 
@@ -71,11 +70,11 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
   混合工作者可以以高度协作的方式和本地一样高效工作，方式如下:
 
-  - 通过 Teams 进行的联机会议和聊天会话。 
+  - 通过 Teams 进行的联机会议和聊天会话。
 
   - 基于云的文件存储的共享工作区，可通过 SharePoint 和 OneDrive 实现全球可访问性和实时协作。
 
-  - 用于划分工作并完成任务的共享任务和工作流。 
+  - 用于划分工作并完成任务的共享任务和工作流。
 
 为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
 
@@ -86,15 +85,15 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
 | 通过安全性默认设置强制执行 MFA   | 通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。   | Microsoft 365 E3 或 E5 |
-| 通过条件访问强制执行 MFA| 要求基于使用条件访问策略的登录的属性进行 MFA。    | Microsoft 365 E3 或 E5 | 
-| 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） | 
+| 通过条件访问强制执行 MFA| 要求基于使用条件访问策略的登录的属性进行 MFA。    | Microsoft 365 E3 或 E5 |
+| 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
 | 自助服务密码重置 (SSPR)    | 允许用户重置或解锁其密码或帐户。  | Microsoft 365 E3 或 E5 |
 | Azure AD 应用程序代理    | 为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。   | 需要单独的付费 Azure 订阅 |
 | 配置点到站点 VPN   | 通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。   | 需要单独的付费 Azure 订阅 |
 | Windows 虚拟桌面   | 支持只能将其个人和非托管设备与在 Azure 中运行的虚拟桌面配合使用的远程工作者。 | 需要单独的付费 Azure 订阅 |
-| 远程桌面服务 (RDS) | 允许员工通过 Intranet 连接到基于 Windows 的计算机。 | Microsoft 365 E3 或 E5 | 
+| 远程桌面服务 (RDS) | 允许员工通过 Intranet 连接到基于 Windows 的计算机。 | Microsoft 365 E3 或 E5 |
 | 远程桌面服务网关   | 加密通信，防止 RDS 主机直接向 Internet 公开。 | 需要单独的 Windows Server 许可证 |
-| Microsoft Intune | 管理设备和应用程序。   | Microsoft 365 E3 或 E5 | 
+| Microsoft Intune | 管理设备和应用程序。   | Microsoft 365 E3 或 E5 |
 | 内容和功能， | 管理设备上的软件安装、更新和设置 | 需要单独的 Configuration Manager 许可证 |
 | 桌面分析 | 确定你的 Windows 客户端的更新准备情况。   | 需要单独的 Configuration Manager 许可证 |
 | Windows Autopilot | 设置和预配置新的 Windows 10 设备，以便高效使用。   | Microsoft 365 E3 或 E5 |

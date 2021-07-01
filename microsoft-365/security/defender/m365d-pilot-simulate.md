@@ -1,7 +1,7 @@
 ---
-title: 运行 Microsoft 365 Defender 攻击模拟
-description: 为 Defender 试点Microsoft 365攻击模拟，查看其展开方式并快速修正。
-keywords: Microsoft 365Defender 试点攻击模拟， 运行 Microsoft 365 Defender 试点攻击模拟， 模拟 Microsoft 365 Defender 中的攻击， Microsoft 365 Defender 试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+title: 运行攻击Microsoft 365 Defender模拟
+description: 为试点Microsoft 365 Defender攻击模拟，以查看其展开方式并快速修复。
+keywords: Microsoft 365 Defender试点攻击模拟，运行 Microsoft 365 Defender 试点攻击模拟，模拟 Microsoft 365 Defender、 Microsoft 365 Defender 试点项目中的攻击、网络安全、高级永久性威胁、企业安全、设备、设备、标识、用户、数据、应用程序、事件、自动调查和修正、高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18dc8158ef3c806e5dac5a01778adebc6eecc1ce
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934473"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230015"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>运行 Microsoft 365 Defender 攻击模拟
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>运行攻击Microsoft 365 Defender模拟
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934473"
 
 你当前处于攻击模拟阶段。
 
-准备试点环境后，可以测试 defender 事件Microsoft 365自动调查和修正功能了。 我们将帮助你模拟复杂的攻击，该攻击利用高级技术在检测中隐藏。 该攻击枚举域控制器上打开 (SMB) 会话，并检索用户设备的最新 IP 地址。 此类攻击通常不包括在被攻击的设备上丢弃的文件，它们仅出现在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行，此类行为允许他们规避检测并保留在设备上。
+准备试点环境后，可以测试事件管理Microsoft 365 Defender自动调查和修正功能。 我们将帮助你模拟复杂的攻击，该攻击利用高级技术在检测中隐藏。 该攻击枚举域控制器上打开 (SMB) 会话，并检索用户设备的最新 IP 地址。 此类攻击通常不包括在被攻击的设备上丢弃的文件，它们仅出现在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行，此类行为允许他们规避检测并保留在设备上。
 
 在此模拟中，我们的示例方案从 PowerShell 脚本开始。 用户可能会被欺骗运行脚本。 或者，脚本可能从远程连接从以前受感染的设备（尝试在网络中进行后向移动的攻击者）从远程连接运行到另一台计算机。 检测这些脚本可能很困难，因为管理员通常还远程运行脚本以执行各种管理活动。
 
@@ -54,7 +54,7 @@ ms.locfileid: "51934473"
 
 由于已在准备阶段配置了试点环境，因此请确保有两个设备用于此方案：测试设备和域控制器。
 
-1. 验证租户是否[已启用 Microsoft 365 Defender。](m365d-enable.md#confirm-that-the-service-is-on)
+1. 验证租户是否[已启用Microsoft 365 Defender。](m365d-enable.md#confirm-that-the-service-is-on)
 
 2. 验证测试域控制器配置：
 
@@ -134,7 +134,7 @@ To see the Automated Incident and Response feature in action， keep the notepad
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>将攻击作为单个事件进行调查
 
-Microsoft 365Defender 将分析关联，并将不同产品的相关警报和调查聚合到一个事件实体中。 通过执行此操作，Microsoft 365 Defender 显示更广泛的攻击案例，让 SOC 分析师可以了解和响应复杂的威胁。
+Microsoft 365 Defender分析关联，并将不同产品的相关警报和调查聚合到一个事件实体中。 通过执行此操作，Microsoft 365 Defender更广泛的攻击案例，让 SOC 分析师可以了解和响应复杂的威胁。
 
 此模拟期间生成的警报与同一威胁相关联，因此，自动聚合为单个事件。
 
@@ -158,14 +158,14 @@ Microsoft 365Defender 将分析关联，并将不同产品的相关警报和调�
 
    ![单击"管理事件"位置的屏幕截图](../../media/mtp/fig5a.png)
 
-   ![可在管理事件面板上标记事件、将其分配给自己并添加注释的字段的屏幕截图 ](../../media/mtp/fig5b.png)
+   ![可在管理事件面板上标记事件、将其分配给自己并添加注释的字段的屏幕截图](../../media/mtp/fig5b.png)
 
 ### <a name="review-generated-alerts"></a>查看生成的警报
 
 让我们看一下模拟攻击期间生成的一些警报。
 
 > [!NOTE]
-> 我们将仅演练模拟攻击期间生成的一些警报。 根据测试设备上Windows的 Microsoft 365 Defender 产品的版本，你可能会看到更多警报以略有不同的顺序显示。
+> 我们将仅演练模拟攻击期间生成的一些警报。 根据测试设备上Windows的 Microsoft 365 Defender 版本，你可能会看到按略有不同的顺序显示更多警报。
 
 ![生成的警报的屏幕截图](../../media/mtp/fig6.png)
 
@@ -420,7 +420,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
    对于此试点，你可能希望将此规则限制为生产环境中的测试设备的子集。
 
-6. 选择 **创建**。 然后，从 **导航面板中选择** "自定义检测规则"。
+6. 选择“创建”。 然后，从 **导航面板中选择** "自定义检测规则"。
 
    ![菜单中的"自定义检测规则"选项的屏幕截图](../../media/mtp/fig27a.png)
 
@@ -432,20 +432,20 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他高级搜寻演练练习
 
-若要详细了解高级搜寻，以下 Web 广播将演练 Microsoft 365 Defender 中高级搜寻的功能，以创建跨支柱查询、透视实体并创建自定义检测和修正操作。
+若要详细了解高级搜寻，以下 Web 广播将演练 Microsoft 365 Defender 中高级搜寻的功能，以创建跨支柱查询、透视实体以及创建自定义检测和修正操作。
 
 > [!NOTE]
 > 请准备好自己的GitHub帐户，以在试点测试实验室环境中运行搜寻查询。
 
-|标题|说明|下载 MP4|观看 YouTube|CSL 文件使用|
+|Title|说明|下载 MP4|观看 YouTube|CSL 文件使用|
 |---|---|---|---|---|
-|第 1 节：KQL 基础知识|我们将介绍 Microsoft 365 Defender 中高级搜寻功能的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[第 1 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|第 1 节：KQL 基础知识|我们将介绍企业高级搜寻功能的基础知识Microsoft 365 Defender。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[第 1 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |第 2 集：加入|我们将继续了解高级搜寻数据以及如何将表联接在一起。 了解内部、外部、唯一和半联接，以及默认 Kusto innerunique 联接的细微差别。|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[第 2 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |第 3 部分：汇总、透视和可视化数据|既然我们可以筛选、操作和联接数据，现在可以开始汇总、量化、透视和可视化了。 在此剧集，我们将介绍汇总运算符和一些可在高级搜寻架构中深入其他表时执行的计算。 我们将数据集转换为可帮助改善分析的图表。|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[第 3 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|第 4 集：让我们搜寻！ 将 KQL 应用于事件跟踪|跟踪某些攻击者活动的时间！ 在此剧集，我们将使用对 Microsoft 365 Defender 中的 KQL 和高级搜寻的改进了解来跟踪攻击。 了解字段中用于跟踪攻击者活动的一些提示和技巧，包括网络安全的 APC 以及如何将它们应用到事件响应。|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[第 4 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|第 4 集：让我们搜寻！ 将 KQL 应用于事件跟踪|跟踪某些攻击者活动的时间！ 在此剧集中，我们将使用对 KQL 和 Microsoft 365 Defender高级搜寻的改进了解来跟踪攻击。 了解字段中用于跟踪攻击者活动的一些提示和技巧，包括网络安全的 APC 以及如何将它们应用到事件响应。|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[第 4 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>后续步骤
 
-|![结束和摘要阶段](../../media/mtp/close.png) <br>[结束和摘要阶段](m365d-pilot-close.md)|分析你的 Microsoft 365 Defender 试点结果，将其展示给利益干系人，然后执行下一步。
+|![结束和摘要阶段](../../media/mtp/close.png) <br>[结束和摘要阶段](m365d-pilot-close.md)|分析你的Microsoft 365 Defender结果，将其展示给利益干系人，然后执行下一步。
 |:-----|:-----|

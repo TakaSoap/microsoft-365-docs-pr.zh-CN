@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确定数据隐私法规、相关方案、准备情况以及用户环境中Microsoft 365类型。
-ms.openlocfilehash: 6801f0af70e08d2b4efdc9e27f1cb1f1d636b821
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e41dccea3569573d45b2e07e8ab7f122c44b311
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929164"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229307"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>使用数据隐私风险评估数据隐私Microsoft 365
 
-在实施任何相关改进操作（包括那些可以通过新功能Microsoft 365操作）之前，评估组织要承担的数据隐私法规和风险是一个关键的第一步。 
+在实施任何相关改进操作（包括那些可以通过新功能Microsoft 365操作）之前，评估组织要承担的数据隐私法规和风险是一个关键的第一步。
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>可能适用的数据隐私法规
 
@@ -34,9 +34,9 @@ ms.locfileid: "50929164"
 
 ### <a name="gdpr"></a>GDPR
 
-GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、存储、处理和共享与欧盟 (欧盟) 居民的已确定身份或可识别的自然人相关的任何个人数据。 
+GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、存储、处理和共享与欧盟 (欧盟) 居民的已确定身份或可识别的自然人相关的任何个人数据。
 
-根据 GDPR 第 4 条： 
+根据 GDPR 第 4 条：
 
 - "个人数据"是指与已识别或可识别的自然人 ("数据主体"相关的) ;可识别的自然人是可直接或间接识别的自然人，尤其是通过引用姓名、标识号、位置数据、在线标识符等标识符，或特定于该自然人的性、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 
@@ -48,15 +48,15 @@ GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、
 
 其他重要的数据隐私法规还指定了个人数据处理要求。
 
-在美国，其中包括加州消费者保护法案 ([CCPA](/compliance/regulatory/ccpa-faq)) 、HIPAA-HITECH (美国医疗保健隐私法案) 和 Gl) BA (2016 年。 其他特定于州的规定也就地或正在开发中。 
+在美国，其中包括加州消费者保护法案 ([CCPA](/compliance/regulatory/ccpa-faq)) 、HIPAA-HITECH (美国医疗保健隐私法案) 和 Gl) BA (2016 年。 其他特定于州的规定也就地或正在开发中。
 
 世界各地的其他示例包括德国的国家 GDPR 实施法案 (BDSG) 、巴西数据保护法案 (LGPD) 等。
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>与技术控制Microsoft 365的法规映射
 
-许多与数据隐私相关的法规具有重叠要求，因此在开发任何技术控制方案之前，您应了解它们所遵守的法规。 
+许多与数据隐私相关的法规具有重叠要求，因此在开发任何技术控制方案之前，您应了解它们所遵守的法规。
 
-为了稍后在此总体解决方案文章中进行参考，此表提供了数据隐私法规采样摘录。 
+为了稍后在此总体解决方案文章中进行参考，此表提供了数据隐私法规采样摘录。
 
 | 法规 | 文章/部分 | 摘录 | 适用的技术控制类别 |
 |:-------|:-----|:-------|:-------|
@@ -78,37 +78,35 @@ GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、
 |  | 1798.105 (d)  |  (1798.105 (c)  <br> 如果企业或服务提供商需要维护消费者的个人信息，则不应要求企业或服务提供商遵守消费者删除消费者个人信息的请求，以便： (参考当前法规，获取其他信息) 。 | 发现和响应 |
 |||||
 
->[!Important]
->这不是一个详尽的列表。 有关 [所](../compliance/compliance-manager.md) 引用部分对所列技术控制类别的适用性的进一步信息，请参阅合规性管理器或法律或合规性顾问。
->
+> [!IMPORTANT]
+> 这不是一个详尽的列表。 有关 [所](../compliance/compliance-manager.md) 引用部分对所列技术控制类别的适用性的进一步信息，请参阅合规性管理器或法律或合规性顾问。
 
 ## <a name="knowing-your-data"></a>了解数据
 
 无论你遵守什么法规，组织内外的不同用户数据类型与系统交互都是影响整体个人数据保护策略的重要因素，但需遵守适用于组织的行业和政府法规。 这包括存储个人数据的位置、存储类型、存储量以及收集的情况。
- 
+
 ![了解你的数据：它的类型、数据量以及收集数据的情况](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
-### <a name="data-portability"></a>数据可移植性 
+### <a name="data-portability"></a>数据可移植性
 
 随着数据的处理、优化和其他版本的派生，数据也会随着时间的推移而移动。 初始快照永远不够用。 需要有一个持续的过程来了解你的数据。 对于处理大量个人数据的大型组织来说，这是最大的挑战之一。 不解决"知道数据"问题的组织最终可能会面临非常高的风险，并可能获得监管机构的罚款。
 
 ![数据生命周期](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
- 
+
 ### <a name="where-the-personal-data-is"></a>个人数据位于何处
 
 要解决数据隐私法规，不能依赖于你认为个人数据可能存在于何处的一般概念，无论是现在还是将来。 数据隐私法规要求组织证明他们持续知道个人数据位于何处。 因此，必须获取所有数据源的初始快照，以可能存储个人信息，包括 Microsoft 365 环境，并建立持续监视和检测机制。
 
-如果尚未评估与数据隐私法规相关的总体准备和风险，请使用以下 3 步框架开始。 
+如果尚未评估与数据隐私法规相关的总体准备和风险，请使用以下 3 步框架开始。
 
 ![评估与数据隐私法规相关的总体准备和风险的步骤](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
->[!Note]
->本文及其内容并不代表法律咨询服务。 它只是提供一些基本指南和指向可能在评估的早期阶段提供帮助的工具的链接。
->
- 
-## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>步骤 1：从基础上了解组织的个人数据方案 
+> [!NOTE]
+> 本文及其内容并不代表法律咨询服务。 它只是提供一些基本指南和指向可能在评估的早期阶段提供帮助的工具的链接。
 
-您需要根据数据隐私风险当前管理的类型、存储位置、对数据实施哪些保护性控制、如何管理其生命周期以及谁有权访问数据隐私风险来衡量数据隐私风险。 
+## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>步骤 1：从基础上了解组织的个人数据方案
+
+您需要根据数据隐私风险当前管理的类型、存储位置、对数据实施哪些保护性控制、如何管理其生命周期以及谁有权访问数据隐私风险来衡量数据隐私风险。
 
 首先，清点环境中存在的个人数据类型Microsoft 365很重要。 使用以下类别：
 
@@ -120,7 +118,7 @@ GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、
 
 ![个人数据的类型](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-大部分受数据隐私条例保护的个人数据通常收集并存储在数据Microsoft 365。 来自面向消费者的 Web 或移动应用程序的任何个人数据都需要从此类应用程序导出到 Microsoft 365，以便受到 Microsoft 365 内的数据隐私审查。 
+大部分受数据隐私条例保护的个人数据通常收集并存储在数据Microsoft 365。 来自面向消费者的 Web 或移动应用程序的任何个人数据都需要从此类应用程序导出到 Microsoft 365，以便受到 Microsoft 365 内的数据隐私审查。
 
 与 Web 应用程序和 CRM 系统相比，Microsoft 365中数据隐私的曝光可能更加有限，此解决方案无法解决此问题。
 
@@ -136,21 +134,20 @@ GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>执行日常业务功能所需的员工数据
 
-组织本质上需要收集有关员工的数据以用于电子标识和 HR 目的，但需遵守其员工协议中同意的信息。 只要某人为公司工作，这通常就不是问题。 组织可能希望建立机制以防止恶意参与者泄露或泄露员工个人数据。 
+组织本质上需要收集有关员工的数据以用于电子标识和 HR 目的，但需遵守其员工协议中同意的信息。 只要某人为公司工作，这通常就不是问题。 组织可能希望建立机制以防止恶意参与者泄露或泄露员工个人数据。
 
-如果某人离开公司，组织通常会制定流程、过程以及保留和删除计划，用于删除用户帐户、停用邮箱和个人驱动器，以及更改人力资源系统等中的员工状态。 对于涉及诉讼的情况，法律调查的员工或其他方可能出于有效理由来获取有关存储在组织系统中个人数据的信息。 在某些情况下，该方可能会请求删除或匿名处理此类数据。 
+如果某人离开公司，组织通常会制定流程、过程以及保留和删除计划，用于删除用户帐户、停用邮箱和个人驱动器，以及更改人力资源系统等中的员工状态。 对于涉及诉讼的情况，法律调查的员工或其他方可能出于有效理由来获取有关存储在组织系统中个人数据的信息。 在某些情况下，该方可能会请求删除或匿名处理此类数据。
 
-为了满足此类需求，组织应制定相应的流程和过程，以满足促进此类请求的预防性、检测性和修正性需求，并请注意，有关员工的一些信息可能合理视为对业务连续性至关重要。 例如，个人创作文件或执行函数的信息。 
+为了满足此类需求，组织应制定相应的流程和过程，以满足促进此类请求的预防性、检测性和修正性需求，并请注意，有关员工的一些信息可能合理视为对业务连续性至关重要。 例如，个人创作文件或执行函数的信息。
 
->[!Note]
->有关调查并修正数据中个人数据Microsoft 365，请参阅监视器[和回复文章](information-protection-deploy-monitor-respond.md)。 你可能还需要使用自动分类和保护方案，以确保个人数据在组织内部受到控制，以及防止它在恶意参与者情况下离开组织。 有关详细信息 [，请参阅保护](information-protection-deploy-protect-information.md) 信息文章。
->
- 
+> [!NOTE]
+> 有关调查并修正数据中个人数据Microsoft 365，请参阅监视器[和回复文章](information-protection-deploy-monitor-respond.md)。 你可能还需要使用自动分类和保护方案，以确保个人数据在组织内部受到控制，以及防止它在恶意参与者情况下离开组织。 有关详细信息 [，请参阅保护](information-protection-deploy-protect-information.md) 信息文章。
+
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>组织在 B2B 方案中拥有的业务客户数据
 
-收集 B2B 信息也是一项挑战，因为贵组织可能需要在其各种系统中保留客户名称和交易的记录，以便业务连续性，同时保护该信息，防止意外或恶意泄漏。 与员工数据一样，组织必须制定相关策略、过程和技术控制来保护此类数据，以及根据定义的保留和删除计划对这些数据进行期限设置。 
+收集 B2B 信息也是一项挑战，因为贵组织可能需要在其各种系统中保留客户名称和交易的记录，以便业务连续性，同时保护该信息，防止意外或恶意泄漏。 与员工数据一样，组织必须制定相关策略、过程和技术控制来保护此类数据，以及根据定义的保留和删除计划对这些数据进行期限设置。
 
-通常，与外部客户、合作伙伴和组织有业务往来的其他实体之间的合同将具有处理此类数据的语言，包括实体与组织建立关系期间和之后的保护、保留和删除。 
+通常，与外部客户、合作伙伴和组织有业务往来的其他实体之间的合同将具有处理此类数据的语言，包括实体与组织建立关系期间和之后的保护、保留和删除。
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>组织具有的有关向组织在 B2C 方案中管理的在线服务提供信息的消费者的数据
 
@@ -175,7 +172,7 @@ GDPR 是数据隐私条例中最已知和被引用的法规，它规定收集、
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>步骤 2：评估你遵守数据隐私法规的准备情况
 
-尽管特定于 GDPR，免费 [Microsoft GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) 评估工具中的问题为了解整体数据隐私准备情况提供了良好的开端。 
+尽管特定于 GDPR，免费 [Microsoft GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) 评估工具中的问题为了解整体数据隐私准备情况提供了良好的开端。
 
 受其他数据隐私法规（如美国 CCPA 或巴西 LGPD）限制的组织也可从此工具的就绪清单（由于与 GDPR 重叠的规定）中获益。
 
@@ -188,20 +185,20 @@ GDPR 评估包含以下部分：
 | 风险缓解和信息安全 | <ol><li>你是否使用工具扫描非结构化数据？ </li><li>所有服务器是否都是最新的，您是否利用防火墙来保护它们？ </li><li>是否运行服务器的定期备份？ </li><li>是否主动监视数据泄露？ </li><li>是否对处于其余和传输中的数据进行加密？ </li></ol>|
 | 策略管理 | <ol><li>如何管理 BINDING Corporate Rules (BCR) ？ </li><li>你是否跟踪数据许可？ </li><li> 在 1 到 5（完全涵盖）范围中，您的合同是否涵盖数据分类和处理要求？ </li><li>是否拥有并定期测试事件响应计划？ </li><li>使用什么策略管理访问？ </li></ol>|
 |||
- 
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>步骤 3：确定在安全环境中发生的Microsoft 365类型。 
 
-此步骤涉及标识受特定法规控制的特定敏感信息类型，以及这些敏感信息类型在Microsoft 365出现。 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>步骤 3：确定在安全环境中发生的Microsoft 365类型。
 
-在包含个人的环境中查找内容可能是一项非常强大的任务，以前涉及结合使用合规性搜索、电子数据展示、Advanced eDiscovery、DLP 和审核。 
+此步骤涉及标识受特定法规控制的特定敏感信息类型，以及这些敏感信息类型在Microsoft 365出现。
+
+在包含个人的环境中查找内容可能是一项非常强大的任务，以前涉及结合使用合规性搜索、电子数据展示、Advanced eDiscovery、DLP 和审核。
 
 借助 Microsoft合规性管理中心中的新数据分类解决方案，使用内容资源管理器功能变得更加简单，[](../compliance/data-classification-content-explorer.md)该功能适用于内置或自定义敏感信息类型，包括与个人数据相关的类型。
- 
+
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
 Microsoft 合规性管理中心预加载了 100 多种敏感信息类型，其中大多数与标识和定位个人数据相关。 这些内置敏感信息类型有助于根据正则表达式 (正则表达式) 或函数定义的模式，标识和保护信用卡号、银行帐号、护照号等。 若要了解详细信息，请参阅[敏感信息类型查找的内容](../compliance/sensitive-information-type-entity-definitions.md)。
 
-如果需要标识和保护特定于组织或区域类型的敏感项目（如员工标识的自定义格式，或内置敏感信息类型未涵盖的其他个人信息），可以使用以下方法创建自定义敏感信息类型： 
+如果需要标识和保护特定于组织或区域类型的敏感项目（如员工标识的自定义格式，或内置敏感信息类型未涵盖的其他个人信息），可以使用以下方法创建自定义敏感信息类型：
 
 - PowerShell
 - 具有精确数据匹配的自定义规则 (EDM) 
@@ -220,10 +217,10 @@ Microsoft 合规性管理中心预加载了 100 多种敏感信息类型，其�
 ### <a name="content-explorer"></a>内容资源管理器
 
 确定环境中出现敏感项目的重要工具是合规性管理中心内的新内容Microsoft 365资源管理器。 [](../compliance/data-classification-content-explorer.md) 这是一个自动工具，用于对整个 Microsoft 365 订阅进行初始和持续扫描，以发现敏感信息类型出现并显示结果。
- 
+
 利用新的内容资源管理器工具，您可以使用内置敏感信息类型或自定义类型快速识别环境中敏感项目的位置。 这可能涉及到建立一个流程，并分配有定期调查敏感项目存在和位置的责任。
 
-除了本文中重点介绍的其他步骤外，这还提供了一个起点，用于确定通过计划的项目配置和监视来保护的敏感Microsoft 365风险、准备情况以及位置。 
+除了本文中重点介绍的其他步骤外，这还提供了一个起点，用于确定通过计划的项目配置和监视来保护的敏感Microsoft 365风险、准备情况以及位置。
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>标识环境中个人数据的其他方法
 

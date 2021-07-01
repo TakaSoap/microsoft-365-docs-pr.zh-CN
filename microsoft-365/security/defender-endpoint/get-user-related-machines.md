@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 230af2311c52437e01cdb28d823236347cf34b8f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ead0558bfff90c29ec8717fbb39876afda5c42af
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769889"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229451"
 ---
 # <a name="get-user-related-machines-api"></a>获取与用户相关的计算机 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "52769889"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -41,33 +41,34 @@ ms.locfileid: "52769889"
 ## <a name="api-description"></a>API 说明
 检索与给定用户 ID 相关的设备的集合。
 
-
 ## <a name="limitations"></a>限制
-1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
+此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型 |权限|权限显示名称
 :---|:---|:---
-应用程序 |   Machine.Read.All |  "读取所有计算机配置文件"
-应用程序 |   Machine.ReadWrite.All | "读取和写入所有计算机信息"
+应用程序 |Machine.Read.All|"读取所有计算机配置文件"
+应用程序 |Machine.ReadWrite.All |"读取和写入所有计算机信息"
 委派（工作或学校帐户） | Machine.Read | "读取计算机信息"
 委派（工作或学校帐户） | Machine.ReadWrite | "读取和写入计算机信息"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md) ) 
->- 响应将仅包括用户可以基于设备组设置访问的设备。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
+>
+> - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)) 
+> - 响应将仅包括用户可以基于设备组设置访问的设备。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/users/{id}/machines
 ```
 
 **ID 不是完整的 UPN，而只是用户名。 (，若要检索供用户 user1@contoso.com /api/users/user1/machines)**
-
 
 ## <a name="request-headers"></a>请求标头
 
@@ -75,17 +76,17 @@ GET /api/users/{id}/machines
 :---|:---|:---
 Authorization | String | Bearer {token}。 **必需**。
 
-
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功且用户存在 - 200 正常[](machine.md)，正文中包含计算机实体列表。 如果用户不存在 - 404 未找到。
 
+如果成功且用户存在 - 200 正常[](machine.md)，正文中包含计算机实体列表。 如果用户不存在 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 

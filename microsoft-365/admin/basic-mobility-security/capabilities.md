@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可以帮助您保护和管理移动设备。
-ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706174"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228275"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本移动性和安全性的功能
 
@@ -47,12 +47,12 @@ ms.locfileid: "52706174"
 
 <sup>1</sup>RT Windows 8.1的访问控制仅限于Exchange ActiveSync。
 
-<sup>2</sup>Windows 10访问控制需要包含 Azure AD 高级版且设备需要加入到 Azure Active Directory。
+<sup>2</sup>Windows 10访问控制需要订阅，其中包含Azure AD Premium设备需要加入到 Azure Active Directory。
 
 <sup>3</sup>2020 年 6 月之后，超过 9 的 Android 版本无法管理密码设置，但 Samsung Knox 设备上除外。
 
->[!NOTE]
->已注册较早操作系统版本的设备仍可以继续运行，尽管这些功能可能会在不另行通知的情况下更改。
+> [!NOTE]
+> 已注册较早操作系统版本的设备仍可以继续运行，尽管这些功能可能会在不另行通知的情况下更改。
 
 如果组织成员使用的移动设备不受基本移动性和安全性支持，你可能希望阻止 Exchange ActiveSync 应用访问这些设备的 Microsoft 365 电子邮件，以帮助使组织的数据更安全。 有关阻止访问Exchange ActiveSync，请参阅基本移动性和安全性中的管理[设备访问设置](manage-device-access-settings.md)。
 
@@ -60,15 +60,16 @@ ms.locfileid: "52706174"
 
 下表中支持的不同类型的移动设备的应用提示用户注册基本移动性和安全性，其中存在适用于用户设备且用户之前尚未注册该设备的新移动设备管理策略。 如果用户的设备不符合策略，则根据策略的设置方式，可能会阻止用户访问这些应用中的 Microsoft 365 资源，或者他们可能具有访问权限，但 Microsoft 365 报告违反策略。
 
-|**产品**|**iOS 10.0 或更高版本**|**Android 5.0 或更高版本**|
+|**Product**|**iOS 10.0 或更高版本**|**Android 5.0 或更高版本**|
 |:-----|:-----|:-----|
 |**Exchange Exchange ActiveSync** 内置电子邮件和第三方应用（如 TouchDown）使用 Exchange ActiveSync 14.1 或更高版本。 |邮件 |电子邮件 |
 |**Office**  和  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**在手机和平板电脑上**：<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **仅在电话上：** <br/> Office Mobile |
 
->[!NOTE]
-- >对 iOS 10.0 及更高版本的支持包括iPhone和iPad设备。
-- >基本安全性和移动性不支持管理 BlackBerry 操作系统设备。 使用 BlackBerry 商业云服务 (BBCS) 管理 BlackBerry 操作系统设备。 运行 Android 操作系统的 Blackberry 设备作为标准 Android 设备受到支持
-- >如果用户使用移动浏览器访问 Microsoft 365 SharePoint 网站、Office Online 中的文档或 Outlook Web App 中的电子邮件，将不会提示用户注册，也不会被阻止或报告违反策略。
+> [!NOTE]
+>
+> - 对 iOS 10.0 及更高版本的支持包括iPhone和iPad设备。
+> - 基本安全性和移动性不支持管理 BlackBerry 操作系统设备。 使用 BlackBerry 商业云服务 (BBCS) 管理 BlackBerry 操作系统设备。 运行 Android 操作系统的 Blackberry 设备作为标准 Android 设备受到支持
+> - 如果用户使用移动浏览器访问 Microsoft 365 SharePoint 网站、Office Online 中的文档或 Outlook Web App 中的电子邮件，将不会提示用户注册，也不会被阻止或报告违反策略。
 
 下图显示了当具有新设备的用户登录支持具有基本移动性和安全性的访问控制的应用时会发生什么情况。 阻止用户访问应用中Microsoft 365资源，直到用户注册其设备。
 
@@ -79,7 +80,7 @@ ms.locfileid: "52706174"
 
 ## <a name="policy-settings-for-mobile-devices"></a>移动设备的策略设置
 
-如果创建策略来阻止访问，但某些设置已打开，则当用户使用[Microsoft 365](capabilities.md)电子邮件和文档的访问控制中列出的受支持应用时，将阻止用户访问 Microsoft 365 资源。 
+如果创建策略来阻止访问，但某些设置已打开，则当用户使用[Microsoft 365](capabilities.md)电子邮件和文档的访问控制中列出的受支持应用时，将阻止用户访问 Microsoft 365 资源。
 
 以下部分包含可阻止用户访问Microsoft 365资源的设置：
 
@@ -89,7 +90,7 @@ ms.locfileid: "52706174"
 
 - 已越狱
 
-- 托管电子邮件配置文件  
+- 托管电子邮件配置文件
 
 例如，下图显示了当已注册设备的用户不符合适用于其设备的移动设备管理策略中的安全设置时会发生什么情况。 用户登录支持具有基本移动性和安全性的访问控制的应用。 在设备符合Microsoft 365要求之前，将阻止他们访问应用中的 Microsoft 365 资源。
 
@@ -116,15 +117,15 @@ ms.locfileid: "52706174"
 |:-----|:-----|:-----|:-----|
 |要求对设备<sup>1 进行数据加密</sup> |否|是|是|
 
-<sup>1</sup>使用 Samsung Knox，还可以要求对存储卡进行加密。 
+<sup>1</sup>使用 Samsung Knox，还可以要求对存储卡进行加密。
 
-## <a name="jail-broken-setting"></a>已越狱设置 
+## <a name="jail-broken-setting"></a>已越狱设置
 
 |**设置名称**|**iOS 7.1 及更高版本**|**Android 5 及更高版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |设备无法越狱或具有 root 权限 |是|是|是|
 
-## <a name="managed-email-profile-option"></a>托管电子邮件配置文件选项 
+## <a name="managed-email-profile-option"></a>托管电子邮件配置文件选项
 
 以下选项可以阻止用户使用手动创建的电子邮件Microsoft 365访问他们的电子邮件。 iOS 设备上的用户必须先删除手动创建的电子邮件配置文件，然后才能访问电子邮件。 删除配置文件后，将在设备上自动创建一个新配置文件。 有关最终用户如何合规的说明，请参阅已找到现有 [电子邮件帐户](/intune-user-help/existing-company-email-account-found)。
 
@@ -205,8 +206,8 @@ ms.locfileid: "52706174"
 
 - 记住密码历史记录并阻止重复使用
 
->[!NOTE]
->以下设置管理密码仅控制本地Windows帐户。 Windows域或用户提供的Azure Active Directory帐户不受这些设置的影响。
+> [!NOTE]
+> 以下设置管理密码仅控制本地Windows帐户。 Windows域或用户提供的Azure Active Directory帐户不受这些设置的影响。
 
 ### <a name="system-settings"></a>系统设置
 

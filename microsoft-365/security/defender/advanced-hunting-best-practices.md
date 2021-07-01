@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 中的高级搜寻查询最佳实践
+title: 高级搜寻查询最佳实践Microsoft 365 Defender
 description: 了解如何使用高级搜寻构建快速、高效且无错误的威胁搜寻查询
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， 避免超时， 命令行， 进程 ID， 优化， 最佳做法， 分析， 加入， 总结
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952688"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228371"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -50,7 +50,7 @@ ms.locfileid: "51952688"
     ```kusto
     DeviceEvents
     | where Timestamp > ago(1d)
-    | where ActionType == "UsbDriveMount" 
+    | where ActionType == "UsbDriveMount"
     | where DeviceName == "user-desktop.domain.com"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
@@ -66,12 +66,12 @@ ms.locfileid: "51952688"
 ## <a name="optimize-the-join-operator"></a>优化 `join` 运算符
 联接 [运算符](/azure/data-explorer/kusto/query/joinoperator) 通过匹配指定列中的值来合并两个表中的行。 应用这些提示以优化使用此运算符的查询。
 
-- **左侧较小的表**- 运算符将联接语句左侧的表中的记录与右侧 `join` 记录相匹配。 通过使较小的表位于左侧，需要匹配的记录就更少，从而加快了查询速度。 
+- **左侧较小的表**- 运算符将联接语句左侧的表中的记录与右侧 `join` 记录相匹配。 通过使较小的表位于左侧，需要匹配的记录就更少，从而加快了查询速度。
 
     在下表中，在通过帐户 SID 加入之前，我们将左表缩小为仅覆盖三台特定 `DeviceLogonEvents` `IdentityLogonEvents` 设备。
- 
+
     ```kusto
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where DeviceName in ("device-1.domain.com", "device-2.domain.com", "device-3.domain.com")
     | where ActionType == "LogonFailed"
     | join
@@ -89,19 +89,19 @@ ms.locfileid: "51952688"
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 
     为了应对此限制，我们应用 [了内部](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) 联接风格，具体操作是指定在左侧表中显示所有行，其右侧具有 `kind=inner` 匹配值：
-    
+
     ```kusto
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 - **从时间窗口** 加入记录 — 调查安全事件时，分析员会查找大约在同一时间段发生的相关事件。 在使用时应用相同方法还通过减少要检查的记录数 `join` 来提高性能。
-    
+
     下面的查询在接收恶意文件后 30 分钟内检查登录事件：
 
     ```kusto
@@ -110,10 +110,10 @@ ms.locfileid: "51952688"
     | where ThreatTypes has "Malware"
     | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
     | join (
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where Timestamp > ago(7d)
     | project LogonTime = Timestamp, AccountName, DeviceName
-    ) on AccountName 
+    ) on AccountName
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
 - **对双方应用** 时间筛选器 - 即使您未调查特定时间窗口，对左侧和右侧表应用时间筛选器可以减少要检查的记录数并 `join` 提高性能。 下面的查询适用于 `Timestamp > ago(1h)` 这两个表，以便它仅联接过去一小时内的记录：
@@ -122,8 +122,8 @@ ms.locfileid: "51952688"
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
-    ```  
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
+    ```
 
 - **使用性能提示**— 将提示与 运算符一同使用，以指示后端在运行资源 `join` 密集型操作时分配负载。 [详细了解加入提示](/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
@@ -132,19 +132,19 @@ ms.locfileid: "51952688"
     ```kusto
     IdentityInfo
     | where JobTitle == "CONSULTANT"
-    | join hint.shufflekey = AccountObjectId 
+    | join hint.shufflekey = AccountObjectId
     (IdentityDirectoryEvents
         | where Application == "Active Directory"
         | where ActionType == "Private data retrieval")
-    on AccountObjectId 
+    on AccountObjectId
     ```
-    
+
     当 **[左表](/azure/data-explorer/kusto/query/broadcastjoin)** 较小且最多包含 100，000 (且右表非常大时，广播) 会有所帮助。 例如，下面的查询尝试将具有特定主题的一些电子邮件与表中包含链接的所有邮件 `EmailUrlInfo` 加入：
 
     ```kusto
-    EmailEvents 
+    EmailEvents
     | where Subject in ("Warning: Update your credentials now", "Action required: Update your credentials now")
-    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId 
+    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>优化 `summarize` 运算符
@@ -153,25 +153,25 @@ summarize [运算符](/azure/data-explorer/kusto/query/summarizeoperator) 聚合
 - **查找不同的** 值 - 通常，使用 `summarize` 查找可能重复的不同的值。 使用它来聚合没有重复值的列是不必要的。
 
     虽然单个电子邮件可以是多个事件的一部分，但以下示例并非有效使用，因为单个电子邮件的网络邮件 `summarize` ID 始终带有唯一的发件人地址。
- 
+
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by NetworkMessageId, SenderFromAddress   
+    | summarize by NetworkMessageId, SenderFromAddress
     ```
     运算符可以轻松替换为 ，从而在消耗更少 `summarize` `project` 资源时产生可能相同的结果：
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | project NetworkMessageId, SenderFromAddress   
+    | project NetworkMessageId, SenderFromAddress
     ```
     以下示例使用效率更高，因为发件人地址向同一收件人地址发送电子邮件可能有多个 `summarize` 不同实例。 此类组合不同，并且可能具有重复项。
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by SenderFromAddress, RecipientEmailAddress   
+    | summarize by SenderFromAddress, RecipientEmailAddress
     ```
 
 - **收缩查询**— 虽然最好在具有重复值的列中使用，但相同的列也可以具有高基数或大量 `summarize` 唯一值。  与 运算符一样，还可以将收缩提示与 一起应用，以分配处理负载，并可能改进在高基数列 `join` [](/azure/data-explorer/kusto/query/shufflequery) `summarize` 上操作时的性能。
@@ -179,7 +179,7 @@ summarize [运算符](/azure/data-explorer/kusto/query/summarizeoperator) 聚合
     下面的查询用于计算不同的收件人电子邮件地址，这些地址可以在数十万大型 `summarize` 组织中运行。 为了提高性能，它包含了 `hint.shufflekey` ：
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
@@ -210,7 +210,7 @@ InitiatingProcessCreationTime, InitiatingProcessFileName
 若要围绕命令行创建更持久的查询，请应用以下做法：
 
 - 通过匹配 (字段（而不是筛选命令行本身）psexec.exe) 标识已知进程，例如net.exe或) 。 
-- 使用 parse_command_line () [函数分析命令行部分](/azure/data-explorer/kusto/query/parse-command-line) 
+- 使用 parse_command_line () [函数分析命令行部分](/azure/data-explorer/kusto/query/parse-command-line)
 - 查询命令行参数时，请勿按特定顺序查找多个不相关参数的完全匹配。 而是使用正则表达式或使用多个单独的 Contains 运算符。
 - 使用不区分大小写的匹配项。 例如，使用 `=~` 、 `in~` 和 `contains` ，而不是 、 和 `==` `in` `contains_cs` 。
 - 若要缓解命令行混淆技术，请考虑删除引号、将逗号替换为空格，以及将多个连续空格替换为单个空格。 有一些更复杂的模糊处理技术需要其他方法，但这些调整可帮助解决常见问题。
@@ -225,47 +225,47 @@ DeviceProcessEvents
 
 // Better query - filters on file name, does case-insensitive matches
 DeviceProcessEvents
-| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc"
 
 // Best query also ignores quotes
 DeviceProcessEvents
 | where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
-| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc"
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>从外部源中输入数据
 若要将长列表或大型表合并到查询中，请使用 [externaldata](/azure/data-explorer/kusto/query/externaldata-operator) 运算符从指定的 URI 引入数据。 可以从 TXT、CSV、JSON 或其他格式 [的文件获取数据](/azure/data-explorer/ingestion-supported-formats)。 以下示例演示如何利用 MalwareBazaar 文件提供的恶意软件 SHA-256 哈希的广泛列表 (abuse.ch) 检查电子邮件上的附件：
 
 ```kusto
-let abuse_sha256 = (externaldata(sha256_hash: string )
+let abuse_sha256 = (externaldata(sha256_hash: string)
 [@"https://bazaar.abuse.ch/export/txt/sha256/recent/"]
 with (format="txt"))
 | where sha256_hash !startswith "#"
 | project sha256_hash;
 abuse_sha256
-| join (EmailAttachmentInfo 
-| where Timestamp > ago(1d) 
+| join (EmailAttachmentInfo
+| where Timestamp > ago(1d)
 ) on $left.sha256_hash == $right.SHA256
 | project Timestamp,SenderFromAddress,RecipientEmailAddress,FileName,FileType,
 SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### <a name="parse-strings"></a>分析字符串
-可以使用多种函数高效处理需要分析或转换的字符串。 
+可以使用多种函数高效处理需要分析或转换的字符串。
 
 | String | 函数 | 用法示例 |
 |--|--|--|
-| 命令行 | [parse_command_line () ](/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 | 
+| 命令行 | [parse_command_line () ](/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 |
 | Paths | [parse_path () ](/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |
 | 版本号 | [parse_version () ](/azure/data-explorer/kusto/query/parse-versionfunction) | 解构一个版本号，每个节最多包含四个部分，最多八个字符。 使用分析的数据比较版本使用期。 |
 | IPv4 地址 | [parse_ipv4 () ](/azure/data-explorer/kusto/query/parse-ipv4function) | 将 IPv4 地址转换为长整型。 若要比较 IPv4 地址而不转换它们，请使用 [ipv4_compare () ](/azure/data-explorer/kusto/query/ipv4-comparefunction)。 |
 | IPv6 地址 | [parse_ipv6 () ](/azure/data-explorer/kusto/query/parse-ipv6function)  | 将 IPv4 或 IPv6 地址转换为规范 IPv6 表示法。 若要比较 IPv6 地址，请使用 [ipv6_compare () ](/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
 
-若要了解所有受支持的分析函数，请阅读 [Kusto 字符串函数](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
+若要了解所有受支持的分析函数，请阅读 [Kusto 字符串函数](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](/azure/data-explorer/kusto/query/)

@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683399"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228815"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -122,7 +122,7 @@ ms.locfileid: "52683399"
 
 在敏感度标签中的非托管设备设置仅影响 SharePoint 访问。 如果要将非托管设备的控制范围扩展到 SharePoint 之外，可以改为 [为组织安装的所有应用和服务创建 Azure Active Directory 条件访问策略](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device)。 若要专门为 [Microsoft 365 服务](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) 配置此策略，请在“**云应用或操作**”下选择“**Office 365**”云应用。
 
-![Azure Active Directory 条件访问策略中 Office 365 云应用的屏幕截图](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Azure Active Directory 条件访问策略中 Office 365 云应用的屏幕截图](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
 使用影响所有 Microsoft 365 服务的策略可以为用户提供更好的安全性和更好的体验。 例如，当仅阻止访问 SharePoint 中非托管设备时，用户可以使用非托管设备访问团队中的聊天，但当用户尝试访问“**文件**”选项卡时将失去访问权限。使用 Office 365 云应用有助于避免 [服务依赖项](/azure/active-directory/conditional-access/service-dependencies) 的问题。
 

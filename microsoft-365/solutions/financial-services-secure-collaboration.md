@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 1e6aa7f25e536c1a66bd7713efa167691b81785e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 64f0968dac4dd33b7333455a48d491f89b555524
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114036"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229379"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -196,7 +196,7 @@ Microsoft 最近推出了 Microsoft 365 Defender 解决方案，该解决方案�
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 为了对抗网络威胁，Intelligent Security Graph 使用高级分析链接来自 Microsoft 及其合作伙伴的威胁情报和安全信号。 Microsoft 大规模地运营全局服务，收集数万亿在栈中提供强大保护层的安全信号。 机器学习模型对此情报进行评估，信号和威胁见解在我们的产品和服务中广泛共享。 这使我们能够快速检测和响应威胁，并为客户提供可操作的警报和信息，以便进行补救。 我们的机器学习模型使用新的见解进行持续训练和更新，帮助我们构建更安全的产品并提供更主动的安全性。
 
-[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
+[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个统一的终结点安全平台，可用于预防性保护、入侵后检测，以及自动调查和响应。 Defender for Endpoint 提供了内置功能，可在企业终结点上发现和保护敏感数据。
 
@@ -224,7 +224,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 - 保留期到期时发生的情况（删除文档、启动处置评审或不执行任何操作）
 -  什么触发了保留期开始（创建日期、上次修改日期、标记日期或事件），并将文档或电子邮件标记为记录（这意味着不能编辑或删除）
 
-然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](../compliance/content-search.md?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
+然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](../compliance/content-search.md)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
  
 **证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
 
@@ -268,7 +268,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 
 最后，这些条例要求组织建立策略，并在银行服务、销售或贸易中涉及的角色之间实施信息屏障，以避免与分析人员交换信息和通信。
 
-[信息屏障](../compliance/information-barriers.md?view=o365-worldwide)提供了在 Office 365 环境中建立信息隔离墙的能力，允许合规性管理员或其他授权的管理员定义允许或阻止 Teams 中的用户组之间通信的策略。 信息屏障对特定操作执行检查以防止未经授权的通信。 在内部团队从事合并/收购或敏感交易，或处理必须严格限制的敏感内部信息的情况下，信息屏障也会限制通信。
+[信息屏障](../compliance/information-barriers.md)提供了在 Office 365 环境中建立信息隔离墙的能力，允许合规性管理员或其他授权的管理员定义允许或阻止 Teams 中的用户组之间通信的策略。 信息屏障对特定操作执行检查以防止未经授权的通信。 在内部团队从事合并/收购或敏感交易，或处理必须严格限制的敏感内部信息的情况下，信息屏障也会限制通信。
 
 Microsoft 365 中的信息屏障支持 Teams 中的对话和文件。 他们可以阻止以下类型的通信相关操作，以帮助遵守 FINRA 法规：
 
@@ -319,7 +319,7 @@ Microsoft 365 最近启动了一个内部风险管理解决方案，它将 Micro
 
 例如，Microsoft 365 中的内部风险管理可将来自用户 Windows 10 桌面版的信号关联起来（例如，将文件复制到 USB 驱动器，或通过电子邮件发送个人电子邮件帐户，其中包括 Office 365 电子邮件、SharePoint Online、Microsoft Teams 或 OneDrive for Business 等联机服务中的活动），以识别数据泄漏模式。 它还可以将这些活动与离开组织的员工关联起来，这是一种常见的数据泄漏模式。 它可监控一段时间内的多个活动和行为。 当常见模式出现时，它会发出警报，帮助调查人员专注于主要活动，以高可信度验证是否违反了策略。 内部风险管理可以对调查人员的数据进行伪匿名化处理，以帮助满足数据隐私规定，同时还可以提供帮助他们有效开展调查的关键活动。 它允许调查人员将关键活动数据打包并安全地发送给 HR 和法律部门，遵循常见的升级工作流程，以对出现的案例实施补救行动。
 
-Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。 有关 Microsoft 365 中预览体验计划风险管理的详细信息，请参阅 [Microsoft 365 中预览体验计划风险管理的新式风险痛点和工作流](../compliance/insider-risk-management.md?view=o365-worldwide)。
+Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。 有关 Microsoft 365 中预览体验计划风险管理的详细信息，请参阅 [Microsoft 365 中预览体验计划风险管理的新式风险痛点和工作流](../compliance/insider-risk-management.md)。
 
 ![在小隔间里的呼叫中心工作人员一边看屏幕一边打字。](../media/clo17-call-center-006.jpg)
  

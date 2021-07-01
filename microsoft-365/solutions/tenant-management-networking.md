@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 优化对租户Microsoft 365访问。
-ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407188"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229175"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 2. 适用于企业租户Microsoft 365最佳网络
 
@@ -31,7 +31,7 @@ Microsoft 365企业版包括云生产力应用（如 Teams 和 Exchange Online�
 
 - 优化本地用户与 Microsoft 全球网络最近位置之间的路径。
 - 为使用远程访问 VPN 解决方案的远程用户优化对 Microsoft 全球网络的访问。
-- 使用 Network Insights 设计办公地点的网络外围。
+- 使用网络Insights设计办公地点的网络外围。
 - 优化对托管在具有 SharePoint 网站的特定Office 365 CDN。
 - 将代理和网络边缘设备配置为绕过Microsoft 365终结点列表对受信任流量的处理，并随着更改自动更新列表。
 
@@ -94,7 +94,7 @@ Microsoft 365企业版包括云生产力应用（如 Teams 和 Exchange Online�
 
 有关更多信息和指导，请参阅[使用 VPN 拆分隧道为远程用户优化 Office 365 连接](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
-## <a name="using-network-insights-preview"></a>使用 Network Insights (预览) 
+## <a name="using-network-insights-preview"></a>使用网络Insights (预览) 
 
 网络见解是从 Microsoft 365 租户收集的性能指标，可帮助你为办公室位置设计网络外围。 每个见解提供有关本地用户访问租户的每个地理位置的指定问题的性能特征实时详细信息。
 
@@ -112,10 +112,10 @@ Microsoft 365企业版包括云生产力应用（如 Teams 和 Exchange Online�
 - [从前端SharePoint下载速度](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [中国用户最佳网络出口](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->管理中心中的网络见解、性能建议Microsoft 365目前处于预览状态。 它仅适用于Microsoft 365预览计划注册的租户。
+> [!IMPORTANT]
+> Microsoft 365 管理中心中的网络见解、性能建议和评估当前处于预览状态。 它仅适用于Microsoft 365预览计划注册的租户。
 
-有关详细信息，请参阅 Microsoft 365 [Network Insights](../enterprise/office-365-network-mac-perf-insights.md)。
+有关详细信息，请参阅网络[Microsoft 365 Insights。](../enterprise/office-365-network-mac-perf-insights.md)
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePoint性能Office 365 CDN
 
@@ -152,7 +152,7 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）
 - 如何通过添加到所有分支机构的 Internet 连接并消除网络发夹，为本地用户优化网络性能。
 - 如何为基于客户端的 PAC 文件和网络设备和服务实现自动受信任终结点列表，包括最适合企业网络 (服务的持续) 。
 - 如何支持远程工作者访问本地资源。
-- 如何使用 Network Insights
+- 如何使用网络Insights
 - 如何部署Office 365 CDN。
 
 下面是具有最佳网络的企业组织及其租户的示例。

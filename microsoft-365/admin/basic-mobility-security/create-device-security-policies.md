@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性创建保护组织信息的设备策略。
-ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706318"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228251"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本移动性和安全性中创建设备安全策略
 
@@ -39,14 +39,14 @@ ms.locfileid: "52706318"
 - 若要在安全中心创建和部署基本移动Microsoft 365，你需要是全局Microsoft 365管理员。有关详细信息，请参阅[安全与合规中心&权限](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 - 在部署策略之前，请让组织了解在基本移动性和安全性中注册设备的潜在影响。 根据策略设置方式，可能会阻止不相容的设备访问 Microsoft 365 和数据，包括注册的设备上已安装的应用程序、照片和个人信息，并且可删除数据。
 
->[!NOTE]
->在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则Exchange ActiveSync在 Exchange 管理中心中创建的移动设备邮箱策略和设备访问规则。 在基本移动性和安全性中注册设备后Microsoft 365 商业标准版，Exchange ActiveSync应用于该设备的任何移动设备邮箱策略或设备访问规则将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync[中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> [!NOTE]
+> 在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则Exchange ActiveSync在 Exchange 管理中心中创建的移动设备邮箱策略和设备访问规则。 在基本移动性和安全性中注册设备后Microsoft 365 商业标准版，Exchange ActiveSync应用于该设备的任何移动设备邮箱策略或设备访问规则将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync[中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步骤 1：创建设备策略并部署到测试组
 
 在启动之前，请确保已激活并设置基本移动性和安全性。 有关说明，请参阅[Overview of Basic Mobility and Security。](overview.md)
 
-1. 在浏览器中，键入 [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
+1. 在浏览器中，键入 <https://protection.office.com/devicev2> 。
 
 2. 选择“**创建策略**”。
 

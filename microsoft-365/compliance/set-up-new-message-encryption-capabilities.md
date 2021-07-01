@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解新的 Office 365 邮件加密功能，可与组织内部和外部的人员实现受保护的电子邮件通信。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876301"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228575"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 
@@ -39,13 +39,13 @@ ms.locfileid: "51876301"
 
 对于最符合条件的计划，也会自动激活 Azure RMS，因此你可能也不需要在此方面执行任何操作。 有关详细信息，请参阅[激活 Azure 权限管理](/azure/information-protection/activate-service)。
 
->[!IMPORTANT]
->如果通过 Exchange Online 使用 Active Directory 权限管理服务 (AD RMS)，则需要先[迁移到 Azure 信息保护](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，然后才能使用全新的 OME 功能。 OME 与 AD RMS 不兼容。  
+> [!IMPORTANT]
+> 如果通过 Exchange Online 使用 Active Directory 权限管理服务 (AD RMS)，则需要先[迁移到 Azure 信息保护](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，然后才能使用全新的 OME 功能。 OME 与 AD RMS 不兼容。
 
 有关详细信息，请参阅：
 
 - [使用新的 OME 功能需要什么订阅？](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-)检查你的订阅计划是否包含 Azure 信息保护 (包括 Azure RMS 功能)。
-- [Azure 信息保护](https://azure.microsoft.com/services/information-protection/)获取有关购买符合条件的订阅的信息。  
+- [Azure 信息保护](https://azure.microsoft.com/services/information-protection/)获取有关购买符合条件的订阅的信息。
 
 ### <a name="manually-activating-azure-rights-management"></a>请手动激活 Azure 权限管理
 
@@ -63,7 +63,7 @@ ms.locfileid: "51876301"
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>在 Exchange Online PowerShell 中验证新的 OME 配置
 
 可验证 Microsoft 365 租户是否已正确配置，以使用 [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) 中的新 OME 功能。
-  
+
 1. 使用 Microsoft 365 租户中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 运行 Get-IRMConfiguration cmdlet。
@@ -74,7 +74,7 @@ ms.locfileid: "51876301"
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
-     ```  
+     ```
 
    **示例**：
 
@@ -114,11 +114,11 @@ ms.locfileid: "51876301"
 
 如果有之前配置的用于在组织中对电子邮件进行加密的邮件流规则，则需要更新现有规则，以使用新的 OME 功能。对于新部署，需要创建新的邮件流规则。
 
->[!IMPORTANT]
->如果不更新现有的邮件流规则，你的用户将继续收到使用之前的 HTML 附件格式的加密邮件，而不是新的无缝 OME 体验。
+> [!IMPORTANT]
+> 如果不更新现有的邮件流规则，你的用户将继续收到使用之前的 HTML 附件格式的加密邮件，而不是新的无缝 OME 体验。
 
 邮件流规则确定应在哪些条件下对电子邮件进行加密，以及删除该加密的条件。 为规则设置操作时, 任何匹配规则条件的邮件都会在发送时进行加密。
-  
+
 有关创建 OME 邮件流规则的步骤，请参阅[定义邮件流规则以在 Office 365 中加密电子邮件](define-mail-flow-rules-to-encrypt-email.md)。
 
 若要更新现有规则以使用新的 OME 功能，请执行以下操作：

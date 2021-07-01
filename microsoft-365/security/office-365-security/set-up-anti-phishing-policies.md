@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096781"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229103"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -85,7 +85,7 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下策略Off
   - **域**：域中配置的一个或多个 [接受](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Microsoft 365。
 
   - **排除这些用户、组和域**：策略的例外。 设置和行为与条件完全相同：
-    - **用户**
+    - **Users**
     - **组**
     - **域**
 
@@ -175,7 +175,7 @@ EOP 和 Defender for Office 365 中的反网络钓鱼策略中提供了以下欺
 
   > [!NOTE]
   >
-  > - 在每个防钓鱼策略中，最多可指定 60 个受保护 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。 因此，无论向收件人应用多少策略，每个收件人 (发件人电子邮件地址) 用户的最大数量为 60。 有关策略优先级以及策略处理如何在应用第一个策略后停止的信息，请参阅电子邮件保护的顺序 [和优先级](how-policies-and-protections-are-combined.md)。
+  > - 在每个防钓鱼策略中，最多可指定 350 个受保护 (发件人电子邮件地址) 。 不能在多个策略中指定同一受保护的用户。 因此，无论向收件人应用多少策略，每个收件人 (发件人电子邮件地址) 用户的最大数量为 350。 有关策略优先级以及策略处理如何在应用第一个策略后停止的信息，请参阅电子邮件保护的顺序 [和优先级](how-policies-and-protections-are-combined.md)。
   > - 如果发件人和收件人之前通过电子邮件进行通信，则用户模拟保护不起作用。 如果发件人和收件人从未通过电子邮件进行通信，则邮件将被标识为模拟尝试。
 
   默认情况下，不会将发件人电子邮件地址配置为在"用户"中用于保护的 **模拟保护**。 因此，默认情况下，在默认策略或自定义策略中，模拟保护不会覆盖发件人电子邮件地址。

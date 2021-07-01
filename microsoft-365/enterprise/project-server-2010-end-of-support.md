@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: 对 Server 2010 的支持Project 2021 年 4 月 13 日结束。 使用本文作为指南升级到本地 Project Online或更高版本的 Project Server。
-ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842226"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229751"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 支持终止路线图
 
@@ -84,11 +84,11 @@ ProjectServer 2010 将于 **2021** 年 4 月 13 日停止提供支持。 此日�
 
 同样，如果要从 2010 Project Professional迁移，可以迁移到 2019 (Project Professional或 Project Professional 2016) 。 同样，如果可能，请移动到最新版本。 如果使用 Project Professional 连接到 Project Server，请确保迁移到与使用的 Project Server 版本连接的 Project Professional 版本。
 
-Project Professional 2010 用户还可以迁移到 Project Online 桌面客户端，这是 Project Professional 2019 的基于订阅的版本。 它包含在计划 3 Project计划 5 Project订阅中。
+Project Professional 2010 用户还可以迁移到 Project Online 桌面客户端，这是 Project Professional 2019 的基于订阅的版本。 它包含在订阅Project 计划 3 Project 计划 5订阅中。
 
 #### <a name="move-to-an-online-solution"></a>移动到联机解决方案
 
-您还可以从 Project Professional 2010 或 Project Standard 2010 迁移到Project订阅的在线解决方案。 Project计划 3 和计划 5 Project Online和最新的云产品/服务Project [Web 的一部分](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)。 这两者都提供了值得探究的新功能和优点。
+您还可以从 Project Professional 2010 或 Project Standard 2010 迁移到Project订阅的在线解决方案。 Project 计划 3计划 5 Project Online和最新的云产品/服务Project[适用于 Web。](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1) 这两者都提供了值得探究的新功能和优点。
 
 有关功能和许可证详细信息，请参阅Microsoft Project[服务说明](/office365/servicedescriptions/project-online-service-description/project-online-service-description)。
 
@@ -157,11 +157,11 @@ Project Server 2010 和 Project Server 2019 之间的体系结构差异会阻止
 
 - [Project Server 2013](/project/what-s-new-in-project-server-2013-upgrade)升级的新增功能涵盖了此版本的重要更改，包括：
 
-   - 没有到 Project Server 2013 的就地升级。 数据库附加方法是从 Project Server 2010 升级到 Project Server 2013 的唯一受支持方法。
+  - 没有到 Project Server 2013 的就地升级。 数据库附加方法是从 Project Server 2010 升级到 Project Server 2013 的唯一受支持方法。
 
-   - 升级过程不仅会将 Project Server 2010 数据转换为 Project Server 2013 格式，而且还会将四个 Project Server 2010 数据库合并为一个 Project Web App 数据库。
+  - 升级过程不仅会将 Project Server 2010 数据转换为 Project Server 2013 格式，而且还会将四个 Project Server 2010 数据库合并为一个 Project Web App 数据库。
 
-   - 与SharePoint版本相比，Project Server 2013 和 Project Server 2013 都更改为基于声明的身份验证。 如果使用的是经典身份验证，则需要在升级时考虑这一点。 有关详细信息，请参阅[在 SharePoint 2013 中从经典模式身份验证迁移到基于声明的身份验证]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)。
+  - 与SharePoint版本相比，Project Server 2013 和 Project Server 2013 都更改为基于声明的身份验证。 如果使用的是经典身份验证，则需要在升级时考虑这一点。 有关详细信息，请参阅[在 SharePoint 2013 中从经典模式身份验证迁移到基于声明的身份验证](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)。
 
 关键资源：
 
@@ -213,9 +213,9 @@ Project Server 2010 和 Project Server 2019 之间的体系结构差异会阻止
 
 - [有关 Project Server 2019 升级的需知内容](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>了解升级到此版本的重要更改，其中包括：
 
-   - 升级过程将您的数据从 Project Server 2016 数据库迁移到 SharePoint Server 2019 内容数据库。  ProjectServer 2019 将不再在 Project Server 场中创建自己的 SharePoint Server 数据库。
+  - 升级过程将您的数据从 Project Server 2016 数据库迁移到 SharePoint Server 2019 内容数据库。  ProjectServer 2019 将不再在 Project Server 场中创建自己的 SharePoint Server 数据库。
 
-   - 升级后，请注意升级过程中的几个Project Web App。  有关详细信息，请参阅[What's new in Project Server 2019。](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)
+  - 升级后，请注意升级过程中的几个Project Web App。  有关详细信息，请参阅[What's new in Project Server 2019。](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)
 
 **其他资源**：
 

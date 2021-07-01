@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b6c2c9fe82486030814e89a0ff655d8f631064e4
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 577eea6e678b6a5d60e5bb8f2fbaaae25d239577
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062277"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230063"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf 中设置 macOS 上的 Microsoft Defender for Endpoint Pro
 
@@ -63,7 +63,7 @@ ms.locfileid: "53062277"
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>步骤 1：获取适用于终结点的 Microsoft Defender 载入程序包
 
-1. In [Microsoft Defender 安全中心，](https://securitycenter.microsoft.com )navigate to **设置 > Onboarding**. 
+1. In [Microsoft Defender 安全中心，](https://securitycenter.microsoft.com)navigate to **设置 > Onboarding**.
 
 2. 选择 macOS 作为操作系统，选择移动设备管理/Microsoft Intune作为部署方法。
 
@@ -82,7 +82,7 @@ ms.locfileid: "53062277"
 
    ![WindowsDefenderATPOnboarding 文件的图像](images/plist-onboarding-file.png)
 
- 
+
 2. 在 Jamf Pro仪表板中，选择"新建 **"。**
 
     ![创建新 Jamf 仪表板Pro的图像](images/jamf-pro-configure-profile.png)
@@ -100,7 +100,7 @@ ms.locfileid: "53062277"
 
     ![配置应用和自定义设置的图像](images/jamfpro-mac-profile.png)
 
-5. Select **Upload File (PLIST file)** then in Preference **Domain** enter： `com.microsoft.wdav.atp` . 
+5. Select **Upload File (PLIST file)** then in Preference **Domain** enter： `com.microsoft.wdav.atp` .
 
     ![jamfpro plist 上载文件的图像](images/jamfpro-plist-upload.png)
 
@@ -110,7 +110,7 @@ ms.locfileid: "53062277"
 
     ![载入文件的图像](images/jamfpro-plist-file-onboard.png)
 
-7. 选择 **"Upload"。** 
+7. 选择 **"Upload"。**
 
     ![上传 plist 文件的图像](images/jamfpro-upload-plist.png)
 
@@ -122,7 +122,7 @@ ms.locfileid: "53062277"
 
     ![目标计算机的图像](images/jamfpro-target-computer.png)
 
-    ![目标图像](images/jamfpro-targets.png) 
+    ![目标图像](images/jamfpro-targets.png)
 
 10. 选择“**保存**”。
 
@@ -337,7 +337,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 4. 输入以下详细信息：
 
     **常规**
-    
+
     - 名称：MDATP MDAV 配置设置
     - 说明：\<blank\>
     - 类别：默认 (无) 
@@ -377,7 +377,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     >![配置设置 intune 文件上载的图像](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. 选择“**保存**”。 
+11. 选择“**保存**”。
 
     ![配置设置的图像 保存映像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -391,7 +391,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置作用域的图像](images/9fc17529e5577eefd773c658ec576a7d.png)
 
-14. 选择 **Contoso 的机器组**。 
+14. 选择 **Contoso 的机器组**。
 
 15. 选择 **"添加"，** 然后选择"**保存"。**
 
@@ -410,8 +410,8 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 1. 在 Jamf Pro仪表板中，选择 **"计算机**"，然后选择"**配置文件"。**
 
 2. 单击 **"新建**"，然后为"选项"输入以下 **详细信息**：
-    
-    - 常规 **选项卡**： 
+
+    - 常规 **选项卡**：
         - **名称**：MDATP MDAV 通知设置
         - **说明**：macOS 10.15 (加泰罗尼亚语) 或更高版本
         - **类别**： *默认 (无)*
@@ -443,12 +443,12 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置范围添加的图像](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
-4. 选择 **Contoso 的机器组**。 
+4. 选择 **Contoso 的机器组**。
 
 5. 选择 **"添加"，** 然后选择"**保存"。**
-    
+
     ![配置设置的图像 contoso 计算机 grp 保存](images/09a275e321268e5e3ac0c0865d3e2db5.png)
-    
+
     ![配置设置添加保存的图像](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
 6. 选择“完成”。 你将看到新的 **配置配置文件**。
@@ -479,14 +479,14 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
 2. 将其另存为 `MDATP_MDAV_MAU_settings.plist` 。
 
-3. 在 Jamf Pro仪表板中，选择"**常规"。** 
+3. 在 Jamf Pro仪表板中，选择"**常规"。**
 
     ![配置设置常规映像的图像](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
 4. 输入以下详细信息：
 
-    **常规** 
-    
+    **常规**
+
     - 名称：MDATP MDAV MAU 设置
     - 说明：适用于 macOS 的 MDATP 的 Microsoft AutoUpdate 设置
     - 类别：默认 (无) 
@@ -499,7 +499,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
 6. Select **Upload File (PLIST file)**.
 
-    ![配置设置 plist 的图像](images/1213872db5833aa8be535da57653219f.png)  
+    ![配置设置 plist 的图像](images/1213872db5833aa8be535da57653219f.png)
 
 7. 在 **"首选项域**"中输入 `com.microsoft.autoupdate2` ：，然后选择 **"Upload PLIST 文件"。**
 
@@ -523,11 +523,11 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     ![配置设置 saveimg 的图像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
 12. 选择" **范围"** 选项卡。
-   
+
      ![配置设置作用域tab的图像](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. 选择“**添加**”。
-    
+13. 选择“添加”。
+
     ![配置设置 addimg1 的图像](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
     ![配置设置 addimg2 的图像](images/38c67ee1905c4747c3b26c8eba57726b.png)
@@ -535,7 +535,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     ![配置设置 addimg3 的图像](images/321ba245f14743c1d5d51c15e99deecc.png)
 
 14. 选择“完成”。
-    
+
     ![配置设置完成映像的图像](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
 ## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>步骤 6：向 Microsoft Defender for Endpoint 授予完全磁盘访问权限
@@ -544,11 +544,11 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置配置文件的图像](images/264493cd01e62c7085659d6fdc26dc91.png)
 
-2. 选择 **+ 新建**。 
+2. 选择 **+ 新建**。
 
 3. 输入以下详细信息：
 
-    **常规** 
+    **常规**
     - 名称：MDATP MDAV - 授予对 EDR 和 AV 的完全磁盘访问权限
     - 说明：在 macOS 加泰罗尼亚语或更高版本上，新的隐私首选项策略控制
     - 类别：无
@@ -613,18 +613,18 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 addimage 的图像](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-14. Select **Computer Groups** > under Group Name **>** select **Contoso's MachineGroup**. 
+14. Select **Computer Groups** > under Group Name **>** select **Contoso's MachineGroup**.
 
     ![配置设置 contoso machinegrp 的图像](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. 选择“**添加**”。 
+15. 选择“添加”。
 
-16. 选择“**保存**”。 
-    
+16. 选择“**保存**”。
+
 17. 选择“完成”。
-    
+
     ![配置设置的图像](images/809cef630281b64b8f07f20913b0039b.png)
-    
+
     ![配置设置 donimg2 的图像](images/6c8b406ee224335a8c65d06953dc756e.png)
 
 或者，你可以下载[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)并将其上载到 JAMF 配置文件，如使用 Jamf 配置部署自定义[配置文件Pro|方法 2：Upload配置文件为 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
@@ -640,8 +640,8 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
 2. 输入以下详细信息：
 
-    **常规** 
-    
+    **常规**
+
     - 名称：MDATP MDAV 内核扩展
     - 说明：kext (MDATP 内核) 
     - 类别：无
@@ -654,7 +654,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![批准的内核扩展的配置设置的图像](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-   
+
 4. 在 **"已批准内核扩展"** 中 输入以下详细信息：
 
     - 显示名称：Microsoft Corp.
@@ -693,7 +693,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 2. 输入以下详细信息：
 
     **常规**
-    
+
     - 名称：MDATP MDAV 系统扩展
     - 说明：MDATP 系统扩展
     - 类别：无
@@ -747,7 +747,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
 2. 单击 **"新建**"，然后为"选项"输入以下 **详细信息**：
 
-    - 常规 **选项卡**： 
+    - 常规 **选项卡**：
         - **名称**：Microsoft Defender ATP 网络扩展
         - **说明**：macOS 10.15 (加泰罗尼亚语) 或更高版本
         - **类别**： *默认 (无)*
@@ -812,7 +812,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 compmgmt 的图像](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
 
-5. 在 **"程序包"** 中，选择 **"+ 新建"。** 
+5. 在 **"程序包"** 中，选择 **"+ 新建"。**
     ![包含鸟描述的图片自动生成程序包新建](images/57aa4d21e2ccc65466bf284701d4e961.png)
 
 6. 在 **"新建程序包"** 中 输入以下详细信息：
@@ -825,25 +825,25 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     ![配置设置常规选项卡的图像](images/21de3658bf58b1b767a17358a3f06341.png)
 
     打开 文件，并指向 `wdav.pkg` 或 `wdav_MDM_Contoso_200329.pkg` 。
-    
+
     ![自动生成的计算机屏幕描述的屏幕截图](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
 7. 选择 **“打开”**。 将显示 **名称设置为** **Microsoft Defender 高级威胁防护，Microsoft Defender 防病毒。**
 
     **清单文件** 不是必需的。 Microsoft Defender for Endpoint 在无清单文件的情况下工作。
-    
+
     **选项选项卡**<br> 保留默认值。
 
     **"限制"选项卡**<br> 保留默认值。
-    
+
      ![配置设置限制选项卡的图像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
-   
-8. 选择“**保存**”。 程序包将上载到 Jamf Pro。 
+
+8. 选择“**保存**”。 程序包将上载到 Jamf Pro。
 
    ![配置设置包 upl jamf pro 的图像](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
    可能需要几分钟时间，程序包才能可用于部署。
-   
+
    ![配置设置包 upl 的图像](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
 9. 导航到" **策略"** 页。
@@ -859,17 +859,17 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     - 显示名称：MDATP 载入 Contoso 200329 v100.86.92 或更高版本
 
-    ![配置设置mdatponboard的图像 ](images/625ba6d19e8597f05e4907298a454d28.png)
+    ![配置设置mdatponboard的图像](images/625ba6d19e8597f05e4907298a454d28.png)
 
-12. 选择 **"定期签入"。** 
-    
+12. 选择 **"定期签入"。**
+
     ![配置设置重复签入的图像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-  
-13. 选择“**保存**”。 
- 
+
+13. 选择“**保存**”。
+
 14. 选择 **">配置"。**
- 
+
     ![配置设置包配置的图像](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
 15. 选择 **Microsoft** Defender 高级威胁防护旁边的添加按钮 **Microsoft Defender 防病毒。**
@@ -880,7 +880,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置的图像avimg](images/9d6e5386e652e00715ff348af72671c6.png)
 
-17. 选择" **范围"** 选项卡。  
+17. 选择" **范围"** 选项卡。
 
     ![配置设置 scptab 的图像](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
@@ -889,18 +889,18 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     ![配置设置 tgtcomp 的图像](images/6eda18a64a660fa149575454e54e7156.png)
 
     **Scope**
-    
-    选择“**添加**”。
-    
+
+    选择“添加”。
+
     ![配置设置 ad1img 的图像](images/1c08d097829863778d562c10c5f92b67.png)
 
     ![配置设置 ad2img 的图像](images/216253cbfb6ae738b9f13496b9c799fd.png)
 
     **自助服务**
-    
+
     ![配置设置自服务的图像](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-19. 选择“完成”。 
+19. 选择“完成”。
 
     ![配置设置 do1img 的图像](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 

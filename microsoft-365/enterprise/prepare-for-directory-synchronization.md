@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备通过使用目录Microsoft 365设置用户，以及使用此方法的长期好处。
-ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259555"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229763"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 
@@ -180,7 +180,7 @@ Active Directory 旨在允许贵组织的最终用户使用 **sAMAccountName** �
 
 您可能需要添加备用 UPN 后缀，以将用户的公司凭据与Microsoft 365关联。 UPN 后缀是 @ 字符右侧的 UPN 的一部分。 用于单一登录的 UPN 可能包含字母、数字、句点、短划线和下划线，但不包含任何其他类型的字符。
 
-若要详细了解如何将备用 UPN 后缀添加到 Active Directory，请参阅准备 [目录同步]( https://go.microsoft.com/fwlink/p/?LinkId=525430)。
+若要详细了解如何将备用 UPN 后缀添加到 Active Directory，请参阅准备 [目录同步](https://go.microsoft.com/fwlink/p/?LinkId=525430)。
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. 将 AD DS UPN 与 MICROSOFT 365 UPN 匹配
 

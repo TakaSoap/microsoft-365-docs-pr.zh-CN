@@ -156,7 +156,7 @@
 > - [尼泊尔](../support/nepal.md)
 > - [荷兰](../support/netherlands.md)
 > - [新喀里多尼亚](../support/new-caledonia.md)
-> - [新西兰 ](../support/new-zealand.md)
+> - [新西兰](../support/new-zealand.md)
 > - [尼加拉瓜](../support/nicaragua.md)
 > - [纽埃](../support/niue.md)
 > - [尼日尔](../support/niger.md)

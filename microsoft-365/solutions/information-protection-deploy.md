@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 针对数据隐私Microsoft 365如 GDPR 和加州消费者隐私法案 (CCPA) （包括 Microsoft Teams、SharePoint 和电子邮件）配置信息保护。
-ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100767"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229199"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护与Microsoft 365
 
@@ -32,16 +32,16 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 
 ![什么是数据隐私法规的信息保护](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-此外，还提供了有关数据隐私Microsoft 365、设备和威胁防护控件的使用的其他信息。 
+此外，还提供了有关数据隐私Microsoft 365、设备和威胁防护控件的使用的其他信息。
 
 这些Microsoft 365功能可帮助您满足保护信息的条件。
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| 合规性管理器 | 管理法规合规性活动，获取当前合规性配置的整体分数，并查找改进建议。 这是一个基于工作流的风险评估工具，位于Microsoft 365中心。 | Microsoft 365 E3 和 E5 |
-| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 | 
+| 合规性管理器 | 管理法规合规性活动，获取当前合规性配置的整体分数，并查找改进建议。 这是工作流中基于工作流的风险评估Microsoft 365 合规中心。 | Microsoft 365 E3 和 E5 |
+| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 |
 | 敏感度标签 | 对组织的数据进行分类和保护，而不会妨碍用户的工作效率及其协作能力。 将具有各种保护级别的标签放在电子邮件、文件或网站上。 | Microsoft 365 E3 和 E5 |
-| 数据丢失防护 (DLP) | 检测、警告和阻止在内部和外部共享包含个人信息的数据存在风险、无意或不当共享。 | Microsoft 365 E3 和 E5 | 
+| 数据丢失防护 (DLP) | 检测、警告和阻止在内部和外部共享包含个人信息的数据存在风险、无意或不当共享。 | Microsoft 365 E3 和 E5 |
 | 数据保留标签和策略 | 实施信息治理控制。 这些可能包括确定保留数据 (例如与符合组织策略或数据) 的客户相关的个人数据。 | Microsoft 365 E3 和 E5 |
 | 电子邮件加密 | 通过发送和接收组织内外人员之间的加密电子邮件来保护个人数据。 | Microsoft 365 E3 和 E5 |
 ||||
@@ -49,17 +49,16 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 ## <a name="organization-of-the-guidance-in-this-solution"></a>此解决方案中指南的组织
 
 为了帮助你了解Microsoft 365隐私相关法规的可用工具，本指南分为多个部分。
- 
+
 ![实施数据隐私法规信息保护的步骤](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 这些部分分别对应于此解决方案中的一篇单独的文章。
 
->[!Note]
->如果你已熟悉数据隐私义务，并且正在针对现有计划执行，你可能希望专注于防止、保护、保留和调查指南。
+> [!NOTE]
+> 如果你已熟悉数据隐私义务，并且正在针对现有计划执行，你可能希望专注于防止、保护、保留和调查指南。
 
->[!Important]
->遵循本指南并不一定符合任何数据隐私法规，尤其是考虑在功能上下文之外需要执行的步骤数。 你有责任确保合规性，并咨询法律和合规性团队，或者向专门负责合规性的第三方寻求指导和建议。
->
+> [!IMPORTANT]
+> 遵循本指南并不一定符合任何数据隐私法规，尤其是考虑在功能上下文之外需要执行的步骤数。 你有责任确保合规性，并咨询法律和合规性团队，或者向专门负责合规性的第三方寻求指导和建议。
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>计划：评估数据隐私风险并识别敏感项目
 
@@ -69,7 +68,7 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>跟踪：运行风险评估并检查合规性分数
 
-合规性管理器（Microsoft 365合规中心提供）内置功能，可跟踪和管理整体改进操作，以及适用于你的多个数据隐私法规的相关改进操作。
+合规性管理器（Microsoft 365 合规中心中提供）内置功能，可跟踪和管理整体改进操作，以及适用于你的多个数据隐私法规的相关改进操作。
 
 可以使用特定于每个法规的内置评估模板，可在其中跟踪选定每个评估模板的行动项，并查看特定法规控制措施，以及将其与特定行动关联。
 
@@ -77,11 +76,11 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 
 ## <a name="prevent-protect-personal-data"></a>防止：保护个人数据
 
-Microsoft 365提供可用于帮助遵守数据隐私法规的标识、设备和威胁防护功能。 
+Microsoft 365提供可用于帮助遵守数据隐私法规的标识、设备和威胁防护功能。
 
 有关详细信息，请参阅对数据隐私法规使用标识 [、设备和威胁防护](information-protection-deploy-identity-device-threat.md)。
 
-本文简要介绍了在这些方面通常要求的数据隐私法规，并提供了相关 Microsoft 365 解决方案列表，并提供了可帮助您满足任何实施要求的更多信息的链接。 
+本文简要介绍了在这些方面通常要求的数据隐私法规，并提供了相关 Microsoft 365 解决方案列表，并提供了可帮助您满足任何实施要求的更多信息的链接。
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私条例保护的信息
 
@@ -101,7 +100,7 @@ Microsoft 365提供可用于帮助遵守数据隐私法规的标识、设备和�
 
 ## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>调查：监视、调查和响应数据隐私事件
 
-在Microsoft 365相关功能时，可以使用一些功能来帮助你监视、调查和响应组织的数据隐私事件。 
+在Microsoft 365相关功能时，可以使用一些功能来帮助你监视、调查和响应组织的数据隐私事件。
 
 拥有使用这些功能的流程、过程和其他文档对于证明监管机构的合规性非常重要。
 

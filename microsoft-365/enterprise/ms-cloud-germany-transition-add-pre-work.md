@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务前工作。
-ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b7a43789aaa61c03e254275fbf7cc945670ccc2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844282"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229811"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移前活动
 
@@ -122,8 +122,8 @@ Office 365"德国"地区的租户要求所有用户在租户迁移到达阶段 9
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 通知外部合作伙伴即将过渡到 Office 365 服务。 |  客户必须通知已启用共享日历和可用性地址空间配置的合作伙伴 (允许与用户共享忙/闲Office 365) 。 完成迁移后，需要[Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)全球终结点Exchange Online配置。 | 如果不这样做，可能会导致客户迁移的稍后阶段出现服务或客户端故障。 |
-| 通知用户所需的 IMAP4/POP3/SMTP 客户端更改。 | 对于客户端协议 IMAP4、POP3 和 SMTP，具有 Microsoft 云德国终结点的设备连接的用户需要手动更新其客户端设备以切换到 Exchange Online[服务器名称](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)。 | 向这些协议的用户预传达此依赖关系，并确保他们在此迁移期间Outlook使用移动Outlook或 Web 上登录。 迁移用户邮箱时，更新客户端终结点失败将导致德国 Microsoft 云的客户端连接失败。 |
+| 通知外部合作伙伴即将过渡到 Office 365 服务。 |  客户必须通知已启用共享日历和可用性地址空间配置的合作伙伴 (允许与用户共享忙/闲Office 365) 。 完成迁移后，需要[Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)全球终结点Exchange Online配置。 | 如果不这样做，可能会导致客户迁移的稍后阶段出现服务或客户端故障。 |
+| 通知用户所需的 IMAP4/POP3/SMTP 客户端更改。 | 对于客户端协议 IMAP4、POP3 和 SMTP，具有 Microsoft 云德国终结点的设备连接的用户需要手动更新其客户端设备以切换到 Exchange Online[服务器名称](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes)。 | 向这些协议的用户预传达此依赖关系，并确保他们在此迁移期间Outlook或Outlook 网页版移动设备。 迁移用户邮箱时，更新客户端终结点失败将导致德国 Microsoft 云的客户端连接失败。 |
 ||||
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Online混合客户
@@ -139,7 +139,7 @@ Exchange Online作为此转换的一部分，混合管理员 (**HCW**) 多次执
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 使用德国设置重新Office 365 HCW <br><br> <i>在收到消息中心通知你的租户迁移已开始Office 365 1 (后，你可以立即启动) 。</i>| 在第 5 阶段之前卸载并重新运行 HCW (17.0.5378.0 或更高版本) 将确保本地配置已准备好与德国 Microsoft 云用户和迁移到 Office 365 Germany 区域的用户一起发送和接收邮件。 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) <p><li> In the HCW， for the list box below **My Office 365 organization is hosted by**， select Office 365 **Germany.** | 如果未能在阶段 5 [Exchange 迁移] 开始之前完成此任务，可能会导致本地部署与部署之间路由邮件的 EXCHANGE NDR Office 365。
-| 保留共享邮箱设置 | 某些混合客户使用命令将云用户邮箱转换为"共享Exchange Online邮箱。 此云邮箱配置将写入邮箱和本地 Exchange Online 目录，但是，它不会通过 AAD 连接 同步回客户的 Active Directory。 结果是邮箱 RemoteRecipientType 和 RemoteDisplayType 值的 Active Directory 表示形式不同，在将邮箱Exchange Online为共享时存在差异。 <br><br> 客户负责确保使用 、或 正确预配所有共享 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` 邮箱 `Set-RemoteMailbox -Shared` 。  请参阅此参考，了解如何 [在混合环境中转换用户邮箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)。| 在阶段 5 [Exchange Online 迁移] 之前未能完成此任务可能会导致共享邮箱的 NDDR 转换回未授权的邮箱，并丢失受影响邮箱的共享访问权限。 [在 Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)混合部署中运行目录同步后，共享邮箱意外转换为用户邮箱，其中概述了在迁移完成之前不Exchange Online此操作的影响。
+| 保留共享邮箱设置 | 某些混合客户使用命令将云用户邮箱转换为"共享Exchange Online邮箱。 此云邮箱配置将写入邮箱和本地 Exchange Online 目录，但是，它不会通过 AAD 连接 同步回客户的 Active Directory。 结果是邮箱 RemoteRecipientType 和 RemoteDisplayType 值的 Active Directory 表示形式不同，在将邮箱Exchange Online为共享时存在差异。 <br><br> 客户负责确保使用 、或 正确预配所有共享 `New-RemoteMailbox -Shared` `Enable-RemoteMailbox -Shared` 邮箱 `Set-RemoteMailbox -Shared` 。  请参阅此参考，了解如何 [在混合环境中转换用户邮箱](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)。| 在阶段 5 [Exchange Online 迁移] 之前未能完成此任务可能会导致共享邮箱的 NDDR 转换回未授权的邮箱，并丢失受影响邮箱的共享访问权限。 [在 Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)混合部署中运行目录同步后，共享邮箱意外转换为用户邮箱，其中概述了在迁移完成之前不Exchange Online此操作的影响。
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
@@ -162,7 +162,7 @@ Exchange Online作为此转换的一部分，混合管理员 (**HCW**) 多次执
 **适用于：** 使用 MDM 解决方案的第三方移动设备 () 客户<br>
 **应用时**：阶段 5 之前的任何时间
 
-| 步骤 (步骤)  | 说明 | 适用于 | 影响 |
+| 步骤 (步骤)  | 说明 | 适用对象 | 影响 |
 |:-------|:-----|:-------|:-------|
 | 准备最终用户和管理培训，以便用户删除其帐户，然后重新将其帐户Outlook iOS 和 Android。 | 使用Outlook德国 Microsoft 云中邮箱配置的 Microsoft iOS 和 Android 帐户可能需要删除并再次添加到 Outlook 才能正确同步新的 Office 365 服务配置。 | 适用于 iOS Outlook Android 客户的 Microsoft 解决方案 | Outlook为德国 Microsoft 云配置的新邮箱可能不会选取新的 Office 365 服务配置，从而导致其他用户体验的错误和性能下降。 如果迁移后登录或同步邮件时出现问题，建议 IT 管理员提供文档，以主动指示用户删除帐户，并将其添加到 Microsoft Outlook for iOS 和 Android。 |
 | 确定迁移后是否要求任何重新配置。 | 移动设备管理 (MDM) 解决方案可能面向 `outlook.de` 终结点。 在此到 Office 365 服务的转换中，客户端配置文件应更新为 Office 365 服务 `outlook.office365.com` URL。 | Exchange Online和 MDM 客户 | 当终结点可访问时，客户端可能会继续运行，但如果 Microsoft 云德国终结点不再可用，客户端将 `outlook.de` 失败。 |
@@ -232,7 +232,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 

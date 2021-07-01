@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583108"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229535"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划 Microsoft Viva 主题
 
@@ -36,13 +36,15 @@ ms.locfileid: "52583108"
 
 ## <a name="requirements"></a>要求
 
-您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问 Microsoft 365中心并设置主题。
+您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
 
 将使用主题的所有用户都需要主题 **体验** 许可证。 "设置 Microsoft Viva 主题"中介绍了 [分配许可证的内容](set-up-topic-experiences.md)。
 
 ## <a name="topic-discovery"></a>主题发现
 
-主题发现设置指定将哪些 SharePoint 网站用作主题源。 可以选择包含所有 SharePoint 网站、特定网站列表或无网站。 我们建议您选择所有网站，以便主题体验可以发现大量适合用户的主题。
+主题发现设置指定将哪些 SharePoint 网站用作主题源。 这包括经典网站和新式网站，以及与组Microsoft Teams Microsoft 365网站。 OneDrive网站。
+
+可以选择包含所有 SharePoint 网站、特定网站列表或无网站。 我们建议您选择所有网站，以便主题体验可以发现大量适合用户的主题。
 
 当设置好主题后，可从下列选项中进行选择：
 
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>管理
 
-在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 的名称。 可以在设置过程中同时设置名称和 URL，也可以稍后在 (管理中心中更改) URL Microsoft 365 URL。 只能有一个主题中心。
+在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 的名称。 可以在设置过程中同时设置名称和 URL，也可以稍后在 (中更改 url) URL Microsoft 365 管理中心。 只能有一个主题中心。
 
 ## <a name="setup-checklist"></a>设置清单
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云迁移到德国 microsoft 云 (到德国新数据中心) Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930447"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229823"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -134,7 +134,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 - 如果您的组织仍使用 SharePoint 2010 工作流，则它们在 2021 年 12 月 31 日之后将不再工作。 SharePoint 2013 工作流仍受支持，尽管新租户默认从 2020 年 11 月 1 日开始关闭。 迁移到 SharePoint Online 服务后，我们建议你移动到Power Automate或其他支持的解决方案。
  - 其 SharePoint Online 实例尚未迁移的德国 Microsoft 云客户需要留在 SharePoint Online PowerShell 模块/Microsoft.SharePointOnline.CSOM 版本 16.0.20616.12000 或以下。 否则，SharePoint PowerShell 或客户端对象模型连接到联机连接将失败。
-- 在此阶段中，URL 后面的 IP SharePoint将会更改。 转换到 Office 365 全局服务后，保留的租户 URL (例如，和) 的地址将更改为全球 Microsoft 365 URL 和 IP 地址范围 (SharePoint Online 和 `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) ](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)。
+- 在此阶段中，URL 后面的 IP SharePoint将会更改。 转换到 Office 365 全局服务后，保留的租户 URL (例如，和) 的地址将更改为全球 Microsoft 365 URL 和 IP 地址范围 (SharePoint Online 和 `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) ](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)。
 - 尽管SharePoint和OneDrive服务已转换，Office Online 可能无法如期工作。 
 
 > [!NOTE]
@@ -231,7 +231,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 - 在服务转换到 Skype for Business 之间，用户将无法登录Office 365，除非客户 DNS 条目已完成。
 - 联系人和现有会议将继续Skype for Business会议。
 
-当为域配置虚域Skype for Business，必须更新 DNS 条目。 请参阅管理[中心中的Microsoft 365，](https://admin.microsoft.com/Adminportal/Home#/Domains)并应用 DNS 配置中的更改。 
+当为域配置虚域Skype for Business，必须更新 DNS 条目。 请参阅域中[的域Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal/Home#/Domains)并应用 DNS 配置中的更改。 
 
 如果迁移阶段 9 Skype for Business必须连接到 Skype for Business Online，请使用以下 PowerShell 代码进行连接：
 

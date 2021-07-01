@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint 设备控件可移动存储空间访问控制
+title: Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 description: 有关 Microsoft Defender for Endpoint 的演练
 keywords: 可移动存储媒体
 search.product: eADQiWindows 10XVcnh
@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028399"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229571"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储空间访问控制
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使你能够执行以下任务：
+Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能够执行以下任务：
 - 审核，允许或阻止对可移动存储进行读取、写入或执行访问（带排除或不排除）
 
 |Privilege |权限  |
@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
-在存储空间 **4.18.2103.3** Windows 10或更高版本的设备上部署可移动访问控制。
+在存储 **4.18.2103.3** 或更高版本的 Windows 10 设备上部署可移动访问控制。
 
 - **4.18.2104 或更高版本**：添加 SerialNumberId、VID_PID、基于 filepath 的 GPO 支持、ComputerSid
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 接口":::
 
 > [!NOTE]
-> 任何Windows 安全中心组件都不需要处于活动状态，您可以运行可移动存储空间访问控制，而不受Windows 安全中心状态。
+> 任何Windows 安全中心组件都不需要处于活动状态，您可以运行"可移动存储访问控制"，而不受Windows 安全中心状态。
 
 ## <a name="policy-properties"></a>策略属性
 
@@ -172,15 +172,15 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
   - 6：写入和执行
   - 7：读取、写入和执行
 
-## <a name="common-removable-storage-access-control-scenarios"></a>常见的可移动存储空间访问控制方案
+## <a name="common-removable-storage-access-control-scenarios"></a>常见的可移动存储访问控制方案
 
-为了帮助你熟悉 Microsoft Defender for Endpoint Removable 存储空间访问控制，我们将一些常见方案放在一起，以便你可以遵循。
+为了帮助你熟悉 Microsoft Defender for Endpoint Removable 存储访问控制，我们将一些常见方案放在一起供你遵循。
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>方案 1：阻止对全部 USB 执行写入和执行访问，但允许特定批准的 USB
 
 1. 创建组
 
-    1. 组 1：任何可移动存储和 CD/DVD。 可移动存储和 CD/DVD 的一个示例是：示例 Any [Removable 存储空间 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file中的组 **9b28fae8-72f7-4267-a1a5-685f747a7146。**
+    1. 组 1：任何可移动存储和 CD/DVD。 可移动存储和 CD/DVD 的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file中的组 **9b28fae8-72f7-4267-a1a5-685f747a7146。**
     
     2. 组 2：基于设备属性批准的 USB。 此用例的一个示例是：示例已批准 [USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件中的实例 ID – 组 **65fa649a-a111-4912-9294-fb6337a25038。**
 
@@ -197,7 +197,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
 
 1. 创建组
 
-    1. 组 1：任何可移动存储和 CD/DVD。 此用例的一个示例是：示例 Any [Removable 存储空间 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件中 Group **9b28fae8-72f7-4267-a1a5-685f747a7146。**
+    1. 组 1：任何可移动存储和 CD/DVD。 此用例的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file中的 Group **9b28fae8-72f7-4267-a1a5-685f747a7146。**
     
     2. 组 2：基于设备属性（例如，供应商 ID/产品 ID、友好名称 – 组 **65fa649a-a111-4912-9294-fb6337a25038）** 的未批准 USB Group.xml文件中未批准的 [USB。](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 
 
@@ -212,11 +212,11 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>通过组策略部署和管理策略
 
-通过"存储空间访问控制"功能，可以通过组策略将策略应用于用户或设备，或同时应用于两者。
+通过"存储访问控制"功能，可以通过组策略将策略应用于用户或设备，或同时应用于两者。
 
 ### <a name="licensing"></a>授权
 
-在开始使用"可移动存储空间访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储空间访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
+在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
 ### <a name="deploying-policy-via-group-policy"></a>通过组策略部署策略
 
@@ -242,11 +242,11 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>通过 Intune OMA-URI 部署和管理策略
 
-通过可移动存储空间访问控制功能，你可以将策略通过 OMA-URI 应用到用户或设备，或同时应用到两者。
+通过可移动存储访问控制功能，你可以将策略通过 OMA-URI 应用到用户或设备，或同时应用到两者。
 
 ### <a name="licensing"></a>授权
 
-在开始使用"可移动存储空间访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储空间访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
+在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
 ### <a name="permission"></a>权限
 
@@ -291,9 +291,9 @@ Microsoft Defender for Endpoint 设备控制可移动存储空间访问控制使
 
 此功能 (Microsoft Endpoint Manager 管理中心 (> 设备 > 配置文件 > 创建配置文件 https://endpoint.microsoft.com/) > 平台：Windows 10 及更高版本 & 配置文件：设备控制) 尚不可用。 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 存储空间设备控件可移动访问控件数据
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 存储设备控件可移动访问控件数据
 
-安全Microsoft 365门户显示受设备控件可移动控件和访问控制存储空间存储。 若要访问Microsoft 365安全性，您必须具有以下订阅：
+安全Microsoft 365门户显示受设备控件可移动控件和访问控制存储的可移动存储。 若要访问Microsoft 365安全性，您必须具有以下订阅：
 
 - Microsoft 365 E5 报告
 
@@ -328,7 +328,7 @@ DeviceEvents
 
 **为什么策略不起作用？**
 
-最常见的原因是不需要反 [恶意软件客户端版本](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)。
+最常见的原因是不需要反 [恶意软件客户端版本](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)。
 
 另一个原因是 XML 文件格式不正确，例如，未对 XML 文件中"&"字符使用正确的 markdown 格式，或者文本编辑器可能在文件的开头添加字节顺序标记 (BOM) 0xEF 0xBB 0xBF，这会导致 XML 分析不起作用。 一个简单的解决方案是下载示例文件 [， ("](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)**原始**"，**然后选择"另** 存为) 然后更新。
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性是基本移动Microsoft 365的一部分。
-ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904260"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228263"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>在"基本移动性和安全性"或"Intune"之间选择
 
@@ -35,7 +35,7 @@ ms.locfileid: "50904260"
 
 | 计划 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 应用|是|否|
+|Microsoft 365 应用版|是|否|
 |Microsoft 365 商业基础版|是|否|
 |Microsoft 365 商业标准版|是|否|
 |Office 365 E1 |是|否|
@@ -52,17 +52,17 @@ ms.locfileid: "50904260"
 |Enterprise移动性&安全性 E3 |否|是|
 |企业移动性 + 安全性 E5 |否|是|
 
->[!NOTE]
->如果已在使用基本移动性和安全性，你无法开始使用Microsoft Intune。
+> [!NOTE]
+> 如果已在使用基本移动性和安全性，你无法开始使用Microsoft Intune。
 
- 有关详细信息，请参阅[Microsoft 365和Office 365平台服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 
+ 有关详细信息，请参阅[Microsoft 365和Office 365平台服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。
 
 ## <a name="differences-in-capabilities"></a>功能差异
 
 Microsoft Intune和内置的基本移动性和安全性都为您提供了管理组织中移动设备的能力，但功能上存在一些关键差异，如下表所述。
 
->[!NOTE]
->可以在同一 Microsoft 365 商业标准版 组织中使用 Intune 和基本移动性和安全性来管理用户及其移动设备，方法为先设置 *基本* 移动性和安全性，然后添加Microsoft Intune。 这允许你选择"基本移动性和安全性"或功能更丰富的 Intune 解决方案。 分配 Intune 许可证以启用 Intune 功能。
+> [!NOTE]
+> 可以在同一 Microsoft 365 商业标准版 组织中使用 Intune 和基本移动性和安全性来管理用户及其移动设备，方法为先设置 *基本* 移动性和安全性，然后添加Microsoft Intune。 这允许你选择"基本移动性和安全性"或功能更丰富的 Intune 解决方案。 分配 Intune 许可证以启用 Intune 功能。
 
 | 功能区域 | 功能突出显示 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Microsoft Intune和内置的基本移动性和安全性都为您提供了管理�
 |AutoPilot (零触摸注册)  |注册大量企业拥有的设备，同时简化用户设置。 |否|是|
 |||
 
-除了上表中列出的功能之外，基本移动性和安全性以及 Intune 还包括一组通过 Internet 向设备发送命令的远程操作。 例如，你可以从员工设备中删除 Office 数据，同时将个人数据留在 (停用) 、从员工的设备 (擦除) 中删除 Office 应用，或将设备重置为出厂设置 (完全擦除) 。 
+除了上表中列出的功能之外，基本移动性和安全性以及 Intune 还包括一组通过 Internet 向设备发送命令的远程操作。 例如，你可以从员工设备中删除 Office 数据，同时将个人数据留在 (停用) 、从员工的设备 (擦除) 中删除 Office 应用，或将设备重置为出厂设置 (完全擦除) 。
 
 基本移动和安全远程操作包括停用、擦除和完全擦除。 有关基本移动和安全操作的信息，请参阅 [基本移动性和安全性的功能](capabilities.md)。
 

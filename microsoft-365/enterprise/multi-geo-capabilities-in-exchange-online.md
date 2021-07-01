@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解邮箱中的多地理位置Exchange Online，如功能限制和邮箱放置。
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694301"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229799"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -59,4 +59,4 @@ Exchange Online 将 **PreferredDataLocation** 属性从 Azure AD 同步到 Excha
 
 - 多地理位置组织支持公用文件夹。 但是，公用文件夹必须保留在中心地理位置。 无法将公用文件夹移动到卫星地理位置。
 
-- 在多地理位置环境中，不支持跨地理位置邮箱审核。 例如，如果为某用户分配了访问其他地理位置的共享邮箱的权限，此用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。 有关详细信息，请参阅[管理邮箱审核](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)。
+- 在多地理位置环境中，不支持跨地理位置邮箱审核。 例如，如果为某用户分配了访问其他地理位置的共享邮箱的权限，此用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。 有关详细信息，请参阅[管理邮箱审核](../compliance/enable-mailbox-auditing.md)。
