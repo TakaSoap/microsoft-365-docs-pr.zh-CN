@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何通过以下方法使用保留标签来管理 SharePoint 中的文档的生命周期：使用元数据对内容进行分类、自动应用标签，以及使用基于事件的保留来开始保留期。
-ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3bc2d6f5baa2f11e7905ccf98e16145fef24d64d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034211"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227599"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留标签管理存储在 SharePoint 中的文档的生命周期
 
@@ -58,7 +58,7 @@ ms.locfileid: "51034211"
 
 可以使用 [内容类型中心](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b)创建和发布 *内容类型*， 也可以使用网站预配工具（例如 [PnP 预配框架](/sharepoint/dev/solution-guidance/pnp-provisioning-framework)或[网站设计 JSON 架构](/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type)）创建和发布内容类型。
 
-每个产品都有一个专用的 SharePoint 网站，其中包含一个文档库，并且已启用正确的内容类型。 所有文档都存储在此文档库中。
+每个产品都有一个专用的 SharePoint 网站，其中包含一个文档库，并且已启用正确的内容类型。所有文档都存储在此文档库中。
 
 [![产品文档库](../media/SPRetention3.png)](../media/SPRetention3.png#lightbox)
 
@@ -121,19 +121,19 @@ ms.locfileid: "51034211"
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>创建保留标签时创建事件类型
 
 1. 在“创建保留标签向导”的“**定义保留设置**”页面上， 在“**启动保留期，基于：**”后，选择“**创建新事件类型**”：
-    
+
     ![“为产品规范标签新建事件类型”对话框](../media/SPRetention6.png)
 
 3. 在“**命名事件类型**”页面上，输入“**产品停产**” 和可选说明。 然后选择 “**下一步**”、“**提交**”和“**完成**”。
 
 4. 返回到“**定义保留设置**”页面，对于“**启动保留期，基于：**”一项，请使用下拉框选择所创建的“**产品停产**”事件类型。
-    
-    以下是产品规范保留标签的设置的示例： 
-    
+
+    以下是产品规范保留标签的设置的示例：
+
    ![新产品规范标签的设置](../media/SPRetention7.png)
 
-6. 选择“**创建标签**”，然后当你在下一页上看到发布标签、自动应用标签或仅保存标签的选项时，请选择“**仅保存标签**”，然后选择“**完成**”。 
-    
+6. 选择“**创建标签**”，然后当你在下一页上看到发布标签、自动应用标签或仅保存标签的选项时，请选择“**仅保存标签**”，然后选择“**完成**”。
+
     > [!TIP]
     > 有关更详细的步骤，请参阅[创建保留期基于事件的标签](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event)。
 
@@ -188,9 +188,9 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 1. 在“**托管属性**”筛选器框中，键入 **_RefinableString00_**，然后选择绿色箭头。
 
-2. 在结果列表中，选择 **RefinableString00** 链接，然后向下滚动到“**到已爬网属性的映射**”部分。  
+2. 在结果列表中，选择 **RefinableString00** 链接，然后向下滚动到“**到已爬网属性的映射**”部分。
 
-3. 选择“**添加映射**”，然后将 **_ows\_Doc\_x0020\_Type_*_ 键入至_“**已爬网属性选择**”窗口的“* 搜索已爬网属性名称**”框中。 选择“**查找**”。  
+3. 选择“**添加映射**”，然后将 **_ows\_Doc\_x0020\_Type_*_ 键入至_“**已爬网属性选择**”窗口的“* 搜索已爬网属性名称**”框中。 选择“**查找**”。
 
 4. 在结果列表中，选择“**ows\_Doc\_x0020\_Type**”，然后选择“**确定**”。
 
@@ -222,19 +222,19 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 2. 在“创建自动标记策略向导”中，在“**命名你的自动标记策略**”页面上，输入一个名称，如“**自动应用产品规范标签**”和可选说明。 然后选择“**下一步**”。
 
 3. 在“**选择要向其应用此标签的内容类型**”页面上，选择“**将标签应用于包含特定字词或短语或者属性的内容**”，然后选择“**下一步**”。
-    
+
    [![选择应用标签至含有指定单词、短语或属性的内容](../media/SPRetention17.png)](../media/SPRetention17.png#lightbox)
-    
+
    这个选项让我们提供与我们在上一节中测试的查询相同的 KQL 搜索查询。 此查询返回状态为“*终稿*”的所有产品规范文档。 在自动应用标签策略中使用此相同查询时，产品规范保留标签将自动应用于与该其匹配的所有文档。
 
 4. 在“**将标签应用于与此查询匹配的内容”** 页面上，键入 “**RefinableString00:"Product Specification" AND RefinableString01:Final**”，然后选择“**下一步**”。
 
    ![在“关键字查询编辑器”框中指定查询](../media/SPRetention19.png)
 
-5. 在“**选择位置以应用策略**”页面上，选择要应用策略的内容位置。 对于此方案，我们将策略仅应用于 SharePoint 位置，因为所有生产文档都存储在 SharePoint 文档库中。 切换 **Exchange 电子邮件**、**OneDrive 帐户** 和 **Microsoft 365 组** 的状态为“**关闭**”。 在你选择“**下一步**”之前，请确保将 SharePoint 网站的状态切换为“**开启**”： 
-    
+5. 在“**选择位置以应用策略**”页面上，选择要应用策略的内容位置。 对于此方案，我们将策略仅应用于 SharePoint 位置，因为所有生产文档都存储在 SharePoint 文档库中。 切换 **Exchange 电子邮件**、**OneDrive 帐户** 和 **Microsoft 365 组** 的状态为“**关闭**”。 在你选择“**下一步**”之前，请确保将 SharePoint 网站的状态切换为“**开启**”：
+
     ![选择自动应用标签的指定网站](../media/SPRetentionSPlocations.png)
-    
+
    > [!TIP]
    > 可以选择“**选择网站**”并添加特定 SharePoint 网站的 URL，而不是将策略应用于所有 SharePoint 网站。
 
@@ -247,9 +247,9 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
     ![自动应用标签的设置](../media/SPRetention18.png)
 
 9. 选择“**提交**”以创建自动应用标签策略。
-    
-   >[!NOTE]
-   >最多需要 7 天时间才能将产品规范标签自动应用到与 KQL 搜索查询匹配的所有文档。
+
+   > [!NOTE]
+   > 最多需要 7 天时间才能将产品规范标签自动应用到与 KQL 搜索查询匹配的所有文档。
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>验证保留标签是否已自动应用
 
@@ -287,7 +287,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 - **URI**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **标头**：键 = Content-Type，值 = application/atom+xml
 - **正文**：
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
@@ -324,10 +324,10 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ![事件详情](../media/SPRetention29.png)
 
-但一段时间后，“事件状态”将显示已处理 SharePoint 网站和 SharePoint 文档。  
+但一段时间后，“事件状态”将显示已处理 SharePoint 网站和 SharePoint 文档。
 
 ![事件详情显示文档已处理。](../media/SPRetention31.png)
- 
+
 它显示根据 *旋转小组件产品停产* 事件的事件日期，已触发应用于旋转小组件产品文档的标签的保留期。 假设你通过配置一天的保留期在测试环境中实施了该方案，则可以在创建事件后的几天内转到产品文档的文档库，并验证该文档是否已被删除（在运行 SharePoint 中的删除作业之后）。
 
 ### <a name="more-about-asset-ids"></a>有关资产 ID 的详细信息

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何为 Endpoint DLP 配置设备代理和 Internet 连接设置。
-ms.openlocfilehash: f2a62b5c7913b6f41c414310a97ab5f072f59642
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 801f3cf4f2215002fb80f7c4d68c2f5b83f5d04d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538611"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226703"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>为 Endpoint DLP 配置设备代理和 Internet 连接设置
 
@@ -42,8 +42,8 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 > 如果在网络拓扑中使用透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中 Defender for Endpoint URL 排除的更多信息，请参阅[在代理服务器中启用对 Defender for Endpoint 云服务 URL 的访问](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)。
 
 - 手动静态代理配置：
-    - 基于注册表的配置
-    - 使用 netsh 命令配置的 WinHTTP – 仅适用于稳定拓扑中的桌面（例如：同一代理后面的公司网络中的桌面）
+  - 基于注册表的配置
+  - 使用 netsh 命令配置的 WinHTTP – 仅适用于稳定拓扑中的桌面（例如：同一代理后面的公司网络中的桌面）
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基于注册表的静态代理手动配置代理服务器
 
@@ -53,21 +53,21 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 1. 打开 **“管理模板” > “Windows 组件” > “数据收集和预览版本” > “为连接的用户体验和遥测服务配置经验证的代理用法”**
 
-2. 将其设置为“**已启用**”，然后选择 **禁止使用经验证的代理**： 
+2. 将其设置为“**已启用**”，然后选择 **禁止使用经验证的代理**：
 
-![组策略设置 1 的图像](../media/atp-gpo-proxy1.png)
- 
+   ![组策略设置 1 的图像](../media/atp-gpo-proxy1.png)
+
 3. 打开 **“管理模板” > “Windows 组件” > “数据收集和预览版” > “配置连接的用户体验和遥测”**：
 
- 配置代理
+   配置代理
 
-![组策略设置 2 的图像](../media/atp-gpo-proxy2.png)
+   ![组策略设置 2 的图像](../media/atp-gpo-proxy2.png)
 
-策略将注册表项 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 下的两个注册表值 `TelemetryProxyServer` 设置为 REG\u SZ，`DisableEnterpriseAuthProxy` 设置为 REG\u DWORD。
+   策略将注册表项 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 下的两个注册表值 `TelemetryProxyServer` 设置为 REG\u SZ，`DisableEnterpriseAuthProxy` 设置为 REG\u DWORD。
 
-注册表值 TelemetryProxyServer 的格式为：\<server name or ip\>\<port\>。 例如：**10.0.0.6:8080**
+   注册表值 TelemetryProxyServer 的格式为：\<server name or ip\>\<port\>。 例如：**10.0.0.6:8080**
 
-此注册表值 `DisableEnterpriseAuthProxy` 应当设置为 1。
+   此注册表值 `DisableEnterpriseAuthProxy` 应当设置为 1。
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>使用“netsh”命令手动配置代理服务器
 
@@ -78,19 +78,19 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 1. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”
-    1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
-2.  输入以下命令，再按 **Enter**：
+    2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-    `netsh winhttp set proxy <proxy>:<port>`
+2. 输入以下命令，再按 **Enter**：
 
-    例如：**netsh winhttp set proxy 10.0.0.6:8080**
+   `netsh winhttp set proxy <proxy>:<port>`
+
+   例如：**netsh winhttp set proxy 10.0.0.6:8080**
 
 3. 要重置 winhttp 代理，请输入以下命令并按 **Enter** 键：
 
-     `netsh winhttp reset proxy`
+   `netsh winhttp reset proxy`
 
 若要了解详细信息。，请参见 [Netsh 命令语法、上下文和格式](/windows-server/networking/technologies/netsh/netsh-contexts)。
-
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>在代理服务器中启用对端点 DLP 云服务 URL 的访问
 
@@ -110,33 +110,39 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 3. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”。
     1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
-4.  输入以下命令，再按 **Enter**：
-    
-`HardDrivePath\MDATPClientAnalyzer.cmd`
+4. 输入以下命令，再按 **Enter**：
 
-例如，用下载 MDATPClientAnalyzer 工具的路径替换 *HardDrivePath*
-    
-**C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd**
+   `HardDrivePath\MDATPClientAnalyzer.cmd`
 
+   例如，用下载 MDATPClientAnalyzer 工具的路径替换 *HardDrivePath*
 
-5.  在 _HardDrivePath* 中使用的文件夹中提取由工具创建的 **MDATPClientAnalyzerResult.zip** _ 文件。
+   **C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd**
 
-6.  打开 **MDATPClientAnalyzerResult.txt** 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。  该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它将结果打印到每个可能用于与 Defender for Endpoint 服务进行通信的 URL 的 **MDATPClientAnalyzerResult.txt** 文件中。 例如：
+5. 在 _HardDrivePath* 中使用的文件夹中提取由工具创建的 **MDATPClientAnalyzerResult.zip** _ 文件。
 
-    **测试 URL：https://xxx.microsoft.com/xxx</br>1 - 默认代理：成功 (200) </br>2 - 代理自动发现 (WPAD)：成功 (200) </br> 3 - 禁用代理：成功 (200) </br> 4 - 命名代理：不存在 </br> 5 - 命令行代理：不存在**</br>
+6. 打开 **MDATPClientAnalyzerResult.txt** 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。  该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它将结果打印到每个可能用于与 Defender for Endpoint 服务进行通信的 URL 的 **MDATPClientAnalyzerResult.txt** 文件中。 例如：
 
+   ```DOS
+   Testing URL: https://xxx.microsoft.com/xxx
+   1 - Default proxy: Succeeded (200)
+   2 - Proxy auto discovery (WPAD): Succeeded (200)
+   3 - Proxy disabled: Succeeded (200)
+   4 - Named proxy: Doesn't exist
+   5 - Command-line proxy: Doesn't exist
+   ```
 
-如果至少有一个连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法与测试的 URL 正确通信。 
+如果至少有一个连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法与测试的 URL 正确通信。
 
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后可以使用[启用对端点 DLP 云服务 URL 的访问](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)中所示的表中的 URL。 你将使用的 URL 将取决于载入过程中选择的区域。
-[!NOTE]Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
 
-[!NOTE] 在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到 direct。
-相关主题 • 载入 Windows 10 设备 • Microsoft Endpoint DLP 登录问题疑难解答
-
-
-
-
+> [!NOTE]
+>
+> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
+>
+> 在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到 direct。相关主题：
+>
+> - 载入 Windows 10 设备
+> - Microsoft Endpoint DLP 登录问题疑难解答
 
 ## <a name="see-also"></a>另请参阅
 

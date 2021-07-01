@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理员权限登录到 Microsoft 365 管理中心在云中设置组织，并管理用户和管理订阅。
-ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7ad483ccfe21ac38edc7db735bccee49b937b6b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083049"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228347"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 

@@ -1,5 +1,5 @@
 ---
-title: 步骤 2. 提供对本地应用和服务的远程访问权限。
+title: 步骤 2：提供对本地应用和服务的远程访问权限
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: 9fea86bb9c564a37a519d2c7e0ef2e2fd0a59470
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029130"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229427"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2. 提供对本地应用和服务的远程访问权限。
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2：提供对本地应用和服务的远程访问权限
 
-如果你的组织使用远程访问 VPN 解决方案（通常通过网络边缘上的 VPN 服务器以及在用户的设备上安装的 VPN 客户端），你的用户可以使用远程访问 VPN 连接来访问本地应用和服务器。 但是，你可能需要优化与 Microsoft 365 基于云的服务的通信。
+如果你的组织使用远程访问 VPN 解决方案权限（通常通过网络边缘上的 VPN 服务器以及在用户的设备上安装的 VPN 客户端），你的用户可以使用远程访问 VPN 连接来访问本地应用和服务器。但是，你可能需要优化与 Microsoft 365 基于云的服务的通信。
 
 如果你的用户未使用 VPN 解决方案，你可以使用 Azure Active Directory (Azure AD) 应用程序代理和 Azure 点到站点 (P2S) VPN 来提供访问权限，具体取决于你的所有应用是否均基于 Web。
 
@@ -51,7 +51,7 @@ ms.locfileid: "52029130"
 
 ![来自无隧道的 VPN 客户端的网络流量](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面向远离 VPN 客户端物理位置的 Microsoft 网络入口点的转发。 此间接路径会增加网络流量的延迟并降低整体性能。 
+Microsoft 365 通信必须通过你的组织获取间接路由，该路由可以转发到远离 VPN 客户端物理位置的 Microsoft 网络入口点。此间接路径会增加网络流量的延迟，并降低整体性能。
 
 借助拆分隧道，你可以将 VPN 客户端配置为排除通过 VPN 连接发送到组织网络的特定类型的通信。
 
@@ -67,7 +67,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>在所有应用均为 Web 应用且你具有混合标识的情况下部署远程访问
 
-如果远程工作者没有使用传统的 VPN 客户端，而且你的本地用户帐户和组与 Azure AD 同步，那么你可使用 Azure AD 应用程序代理为本地服务器上托管的基于 Web 的应用程序实现安全的远程访问。 基于 Web 的应用程序包括 SharePoint Server 网站、Outlook Web Access 服务器或其他任何基于 Web 的业务线应用程序。 
+如果远程工作者没有使用传统的 VPN 客户端，而且你的本地用户帐户和组与 Azure AD 同步，则可以使用 Azure AD 应用程序代理为本地服务器上托管的基于 Web 的应用程序提供安全的远程访问。基于 Web 的应用程序包括 SharePoint Server 网站、Outlook Web 访问服务器或任何其他基于 Web 的业务线应用程序。
 
 下面是 Azure AD 应用程序代理的组件。
 
@@ -75,35 +75,32 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 有关详细信息，请参阅此 [Azure AD 应用程序代理概述](/azure/active-directory/manage-apps/application-proxy)。
 
->[!Note]
->Microsoft 365 订阅中不包含 Azure AD 应用程序代理。 你必须使用单独的 Azure 订阅来进行付费。
->
+> [!NOTE]
+> Microsoft 365 订阅中不包含 Azure AD 应用程序代理。 你必须使用单独的 Azure 订阅来进行付费。
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>在并非所有应用均为 Web 应用的情况下部署远程访问
 
 如果远程工作者没有使用传统的 VPN 客户端，而且你有应用未基于 Web，那么你可使用 Azure 点到站点 (P2S) VPN。
 
-P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组织网络的安全连接。 
+P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组织网络的安全连接。
 
 ![Azure P2S VPN 的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 有关详细信息，请参阅此 [P2S VPN 概述](/azure/vpn-gateway/point-to-site-about)。
 
->[!Note]
->Microsoft 365 订阅中不包含 Azure P2S VPN。 你必须使用单独的 Azure 订阅来进行付费。
->
+> [!NOTE]
+> Microsoft 365 订阅中不包含 Azure P2S VPN。 你必须使用单独的 Azure 订阅来进行付费。
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虚拟桌面，以便为使用个人设备的远程工作者提供远程访问权限 
+## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虚拟桌面，以便为使用个人设备的远程工作者提供远程访问权限
 
-要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 中的 Windows 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。 虚拟电脑可以像连接到组织网络的电脑一样操作。
+要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 中的 Windows 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。虚拟电脑可以像连接到组织网络的电脑一样操作。
 
 ![Azure Windows 虚拟桌面的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-有关详细信息，请参阅此 [Windows 虚拟桌面概述](/azure/virtual-desktop/overview)。 
+有关详细信息，请参阅此 [Windows 虚拟桌面概述](/azure/virtual-desktop/overview)。
 
->[!Note]
+> [!NOTE]
 >Microsoft 365 订阅中不包含 Windows 虚拟桌面。 你必须使用单独的 Azure 订阅来进行付费。
->
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用远程桌面服务网关保护你的远程桌面服务连接
 

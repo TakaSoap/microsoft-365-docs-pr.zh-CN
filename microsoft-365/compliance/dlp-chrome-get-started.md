@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843826"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226955"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -84,11 +84,11 @@ ms.locfileid: "52843826"
 4. [使用组策略部署](#deploy-using-group-policy)
 5. [测试扩展](#test-the-extension)
 6. [使用警报管理仪表板查看 Chrome DLP 警报](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [在活动资源管理器中查看 Chrome DLP 数据](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [在活动资源管理器中查看 Chrome DLP 数据](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### <a name="prepare-infrastructure"></a>准备基础结构
 
-如果要向所有受监视 Windows 10 设备推出 Microsoft 合规性扩展，应从不允许的应用列表中删除 Google Chrome。 有关详细信息，请参阅 [不允许的浏览器](endpoint-dlp-using.md#unallowed-browsers)。 如果只向少数设备推出，则可在不允许的浏览器列表中保留 Chrome。 对于已安装 Microsoft 合规性扩展的计算机，Microsoft 合规性扩展将绕过不允许应用列表的限制。  
+如果要向所有受监视 Windows 10 设备推出 Microsoft 合规性扩展，应从不允许的应用列表中删除 Google Chrome。 有关详细信息，请参阅 [不允许的浏览器](endpoint-dlp-using.md#unallowed-browsers)。 如果只向少数设备推出，则可在不允许的浏览器列表中保留 Chrome。 对于已安装 Microsoft 合规性扩展的计算机，Microsoft 合规性扩展将绕过不允许应用列表的限制。
 
 ### <a name="prepare-your-devices"></a>准备设备
 
@@ -99,13 +99,13 @@ ms.locfileid: "52843826"
 
 ### <a name="basic-setup-single-machine-selfhost"></a>基本设置单机自托管
 
-这是推荐采用的方法。 
+这是推荐采用的方法。
 
-1. 登录到要安装 Microsoft 合规性扩展的 Windows 10 计算机，并以管理员身份运行此 PowerShell 脚本。 
+1. 登录到要安装 Microsoft 合规性扩展的 Windows 10 计算机，并以管理员身份运行此 PowerShell 脚本。
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.  导航到“[Microsoft 合规性扩展 - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
 
@@ -158,7 +158,7 @@ ms.locfileid: "52843826"
 7.  选择“**添加**”。
 
 8.  输入以下策略信息。
-    
+
     OMA-URI： `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     数据类型`String`<br/>
     值：`<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -221,34 +221,32 @@ ms.locfileid: "52843826"
 
 ### <a name="test-the-extension"></a>测试扩展
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>上传到云服务，或通过不允许的浏览器云出口访问  
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>上传到云服务，或通过不允许的浏览器云出口访问
 
 1. 创建或获取敏感项目，并尝试将文件上传到组织受限服务域之一。 敏感数据必须与我们的一个内置 [敏感信息类型](sensitive-information-type-entity-definitions.md) 或组织的敏感信息类型之一相匹配。 应从正在测试的设备上收到 DLP toast 通知，说明当文件打开时不允许此操作。
 
-#### <a name="testing-other-dlp-scenarios-in-chrome"></a>在 Chrome 中测试其他 DLP 方案 
+#### <a name="testing-other-dlp-scenarios-in-chrome"></a>在 Chrome 中测试其他 DLP 方案
 
 因为已从不允许的浏览器/应用列表中删除 Chrome，现可测试以下方案，以确认行为符合组织要求：
 
 - 使用剪贴板将敏感项的数据复制到另一个文档
-    - 若要测试，请在 Chrome 浏览器中打开要防止复制到剪贴板操作的文件，然后尝试复制该文件的数据。
-    - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
+  - 若要测试，请在 Chrome 浏览器中打开要防止复制到剪贴板操作的文件，然后尝试复制该文件的数据。
+  - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
 - 打印文档
-    - 若要测试，请在 Chrome 浏览器中打开防止打印操作的文件，然后尝试打印该文件。
-    - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
+  - 若要测试，请在 Chrome 浏览器中打开防止打印操作的文件，然后尝试打印该文件。
+  - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
 - 复制到 USB 可移动媒体
-    - 若要测试，请尝试将文件保存到可移动媒体存储器。
-    - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
+  - 若要测试，请尝试将文件保存到可移动媒体存储器。
+  - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
 - 复制到网络共享
-    - 若要测试，请尝试将文件保存到网络共享。
-    - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
-
+  - 若要测试，请尝试将文件保存到网络共享。
+  - 预期结果：DLP toast 通知，显示打开文件时不允许此操作。
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>使用警报管理仪表板查看 Chrome DLP 警报
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com) 内打开“**数据丢失防护**”页面，然后选择“**警报**”。
 
 2. 请参阅 [如何配置和查看 DLP 策略警报](dlp-configure-view-alerts-policies.md) 中的过程，以查看你的终结点 DLP 策略警报。
-
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>在活动资源管理器中查看 Chrome DLP 数据
 
@@ -265,6 +263,7 @@ ms.locfileid: "52843826"
 2. 不支持并必须禁用 Incognito 模式。
 
 ## <a name="next-steps"></a>后续步骤
+
 现在，你已载入设备，并且可以在“活动资源管理器”中查看活动数据，那么就可以继续下一步，在其中创建保护敏感项目的 DLP 策略。
 
 - [使用端点数据丢失防护](endpoint-dlp-using.md)

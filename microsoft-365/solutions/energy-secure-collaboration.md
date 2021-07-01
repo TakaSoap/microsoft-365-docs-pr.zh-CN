@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 可帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efc9476d2c766aab325977dfe717290ff6c8fb8d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916114"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229319"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 ![使用云的各种行业的全局视图的图示比拟](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ ms.locfileid: "50916114"
 - Azure 和 Azure 政府版均被授予 FedRAMP 高 P-ATO（临时授权运营），后者代表最高级别的 FedRAMP 授权。 
 
 有关 Microsoft 云服务和 FedRAMP 的详细信息，请参阅以下资源：
-- [Microsoft FedRAMP 概述](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
+- [Microsoft FedRAMP 概述](/compliance/regulatory/offering-FedRAMP)
 - [Office 365 FedRAMP 报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 
@@ -90,7 +90,7 @@ Microsoft Teams 可让能源行业受益的另一个示例是，当现场服务�
 - 不需要或不使用的 Microsoft Teams 数量剧增
 - 过度保留组织不再需要的数据
 
-管理员可为 Office 365 组指定过期期限（以天为单位），如 90 天、180 天或 365 天。 如果由 Office 365 组提供支持的服务在过期期限内处于非活动状态，则将通知组所有者，并且如果不采取任何措施，则将删除 Office 365 组及其所有相关服务（包括 Microsoft Teams）。 
+管理员可以为 Office 365 组指定过期期限（以天为单位，例如 90 天、180 天或 365 天）。如果 Office 365 组支持的服务在到期期间处于非活动状态，则会通知组所有者，如果未采取任何操作，则将删除 Office 365 组及其所有相关服务（包括 Microsoft Teams）。 
 
 在 Microsoft Team 中过度保留数据会给组织带来诉讼风险，建议使用到期策略来保护组织。 Microsoft 365 结合了内置的保留标签和策略，帮助确保组织仅保留满足法规遵从义务所需的数据。
 
@@ -161,7 +161,7 @@ Microsoft 365 允许通过一组强大的功能来识别并保护组织内的敏
 ## <a name="govern-data-by-effectively-managing-records"></a>通过高效地管理记录来管理数据
 法规要求许多组织根据托管的公司保留计划来管理重要组织文档的保留。 如果数据保留时间不足（过早删除），组织将面临法规遵从性风险；如果过度保留数据（保留时间过长），则组织将面临法律风险。 高效的记录管理策略有助于确保按照预先确定的保留期（用于将组织的风险降至最低）来保留组织文档。 在集中管理的组织记录保留计划中规定保留期，它们基于每种文档类型的特性、有关保留特定数据类型的法规遵从性要求，以及组织定义的策略。 
 
-在组织文档中准确分配记录保留期可能需要一个精细的过程，它将为各个文档单独分配保留期。 能源行业组织拥有大量文档，再加上在许多情况下，保留期可能由组织事件（如合同到期或员工离开组织）触发，这使得大规模应用记录保留策略对许多组织而言都极具挑战性。
+在组织文档中准确分配记录保留期可能需要一个精细的过程，它将为各个文档单独分配保留期。能源行业组织拥有大量文档，再加上在许多情况下，保留期可能由组织事件（如合同到期或员工离开组织）触发，这使得大规模应用记录保留策略对许多组织而言都极具挑战性。
 
 Microsoft 365 提供了用于定义保留标签和策略的功能，可轻松实现记录管理要求。 记录管理员定义保留标签，它代表了传统保留计划中的一个“记录类型”。 保留标签包含定义以下内容的设置：
 - 记录保留的时间
@@ -192,7 +192,7 @@ Microsoft 365 提供可基于策略和审阅者来审核监督策略审查活动
 ### <a name="communication-compliance"></a>通信合规性
 随着各种通信渠道可供员工使用，组织日益需要有效的解决方案来监控或监督能源交易市场等受监管行业的通信。 最近推出的内置于 Microsoft 365 的通信合规性解决方案可帮助组织克服常见挑战，例如不断增加的通信渠道和消息量，以及可能因违反策略而受到罚款的风险。
 
-通信合规性解决方案可监控多个通信渠道，并使用计算机学习模型识别潜在的策略冲突，包括 Office 365 电子邮件、Microsoft Teams、Skype for Business Online、Facebook、Twitter 和 Bloomberg 即时消息。 通信合规性解决方案有助于合规性团队高效地审查消息是否潜在违反了：
+通信合规性解决方案可监控多个通信渠道，并使用计算机学习模型识别潜在的策略冲突，包括 Office 365 电子邮件、Microsoft Teams、Skype for Business Online、Facebook、Twitter 和 Bloomberg 即时消息。通信合规性解决方案有助于合规性团队高效地审查消息是否潜在违反了：
 - 公司政策，例如可接受的使用、道德标准和公司特定政策 
 - 敏感或高度敏感的业务披露，例如有关敏感项目的未经授权通信，如即将进行的收购、合并、收益披露、重组或领导团队变更
 - 法规遵从性要求，例如与组织按照 FERC 能源市场法规开展的业务或交易类型有关的员工通信
