@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ef6d1cf23d6cca58f4226696bc63c1dea5816cc1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822482"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226211"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>训练预测编码模型 (预览) 
 
@@ -29,11 +29,11 @@ ms.locfileid: "52822482"
 
 ## <a name="before-you-train-a-model"></a>在训练模型之前
 
-- 在培训轮中，根据文档中内容的相关性将项目标记为"相关"或"不相关"。 不要将决策基于元数据字段中的值。 例如，对于电子邮件或Teams对话，不要根据邮件参与者做出标签决定。 
+- 在培训轮中，根据文档中内容的相关性将项目标记为"相关"或"不相关"。 不要将决策基于元数据字段中的值。 例如，对于电子邮件或Teams对话，不要根据邮件参与者做出标签决定。
 
 ## <a name="train-a-model-for-the-first-time"></a>首次训练模型
 
-1. 在"Microsoft 365合规中心"中，打开Advanced eDiscovery案例，然后选择"**审阅集"** 选项卡。
+1. In the Microsoft 365 合规中心， open an Advanced eDiscovery case and then select the **Review sets** tab.
 
 2. 打开审阅集，然后单击分析 **管理** 预测  >  **编码 (预览) 。**
 
@@ -63,10 +63,10 @@ ms.locfileid: "52822482"
 
 - 根据你在培训集内标记 40 个项目时如何，模型会从你的标签中学习并更新自身，以变得更准确。
 
-- 然后，模型将处理整个审阅集内的每一项，并分配一个介于 0 和 **1** 之间（不相关的 () 和 **1 (相关的) ）。**  
+- 然后，模型将处理整个审阅集内的每一项，并分配一个介于 0 和 **1** 之间（不相关的 () 和 **1 (相关的) ）。**
 
 - 模型为在培训轮中标记的控件集的 10 个项目分配预测分数。 模型会将这 10 个项目的预测分数与在培训轮中分配给该项目的实际标签进行比较。 基于此比较，模型标识了 (控件集混淆矩阵) 评估模型预测性能的分类方法：
-  
+
   |          |模型预测项目相关 |模型预测项目不相关 |
   |:---------|:---------|:---------|
   |**审阅者标签项（如相关）**| True positive| 误报 |

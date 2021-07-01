@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114100"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226679"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -34,7 +34,7 @@ ms.locfileid: "52114100"
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 
-Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。 
+Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。
 
 |活动 |说明  | 可审核/可限制|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 |创建项|当用户创建项目时，检测该项目| 可审核|
 |重命名项|当用户重命名一个项目时，检测该项目| 可审核|
 
- ## <a name="monitored-files"></a>受监视的文件
+## <a name="monitored-files"></a>受监视的文件
 
 终结点 DLP 支持监视以下文件类型：
 
@@ -66,10 +66,10 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - .cs 文件
 - .h 文件
 - .java 文件
- 
+
 默认情况下，即使没有匹配的策略，终结点 DLP 也会审核这些文件类型的活动。 如果只想从策略匹配项中监视数据，你可以关闭终结点 DLP 全局设置中的 **始终为设备审核文件活动**。 如果此设置已打开，则即使设备不是任何策略的目标，也始终会审核任何 Word、PowerPoint、Excel、PDF 和 .csv 文件上的活动。
 
-终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。 
+终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。
 
 ## <a name="whats-different-in-endpoint-dlp"></a>终结点 DLP 中的区别
 
@@ -153,8 +153,8 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 现在，你已了解有关终结点 DLP 的内容，接下来要学习：
 
-1) [Microsoft 终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
-2) [使用 Microsoft 终结点数据丢失防护](endpoint-dlp-using.md)
+1. [Microsoft 终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
+2. [使用 Microsoft 终结点数据丢失防护](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>另请参阅
 

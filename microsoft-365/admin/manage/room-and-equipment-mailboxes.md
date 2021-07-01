@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915166"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227927"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 
@@ -88,7 +88,7 @@ ms.locfileid: "50915166"
 6. 如果进行了更改，请选择“**保存**”，然后“**关闭**”。
 
 > [!Note]
-> 为确保会议室和设备邮箱安全，请阻止登录这些邮箱。 有关详细信息，请参阅 [阻止登录共享邮箱帐户](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account)。
+> 为确保会议室和设备邮箱安全，请阻止登录这些邮箱。 有关详细信息，请参阅 [阻止登录共享邮箱帐户](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account)。
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>关于会议室和设备邮箱的常见问题
 

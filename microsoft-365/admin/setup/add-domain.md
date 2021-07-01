@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365管理中心将域添加到管理中心。
-ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365 管理中心将域添加到域中。
+ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635674"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227831"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -80,8 +80,6 @@ ms.locfileid: "52635674"
 7. 如果选择自己添加 *DNS* 记录，请选择"下一步"，你将看到一个包含要添加到注册机构网站以设置域的所有记录的页面。 
 
     如果门户无法识别你的注册机构，你可以[按照以下常规说明操作。](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
-    
-    查看[主机特定说明](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)列表，以找到你的主机并按照步骤添加所需的全部记录。 
     
     如果不知道你的域的 DNS 托管提供商或域注册机构，请参阅[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。
     
@@ -136,7 +134,6 @@ ms.locfileid: "52635674"
 
 ## <a name="related-content"></a>相关内容
 
-[域常见问题 (](domains-faq.yml) 文章) \
+[域常见问题解答](domains-faq.yml)（文章）\
 [什么是域？](../get-help-with-domains/what-is-a-domain.md) （文章）\
 [购买域名，Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)文章) \
-[设置域设置](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (文章) 

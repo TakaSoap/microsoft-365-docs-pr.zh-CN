@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将 dlp 策略用于非 Microsoft 云应用。
-ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149150"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226835"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft 云应用数据丢失防护策略 (预览) 
 
@@ -59,8 +59,8 @@ ms.locfileid: "53149150"
 
 将云应用连接到 云应用安全 后，Microsoft 365创建 DLP 策略。
 
->[!NOTE]
->此外，还可使用 Microsoft Cloud App Security Microsoft 云应用创建 DLP 策略。 但是，建议使用 Microsoft 365 Microsoft 云应用创建和管理 DLP 策略。
+> [!NOTE]
+> 此外，还可使用 Microsoft Cloud App Security Microsoft 云应用创建 DLP 策略。 但是，建议使用 Microsoft 365 Microsoft 云应用创建和管理 DLP 策略。
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>创建对非 Microsoft 云应用的 DLP 策略
 
@@ -81,12 +81,12 @@ ms.locfileid: "53149150"
 
 ![限制第三方应用](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
->[注意]应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 当为非 Microsoft 应用创建 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。
+> [注意]应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 当为非 Microsoft 应用创建 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。
 
-有关创建和配置 DLP 策略的信息，请参阅创建 [测试和调整 DLP 策略](./create-test-tune-dlp-policy.md?view=o365-worldwide)。
+有关创建和配置 DLP 策略的信息，请参阅创建 [测试和调整 DLP 策略](./create-test-tune-dlp-policy.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建测试和调整 DLP 策略](./create-test-tune-dlp-policy.md?view=o365-worldwide)
-- [开始使用默认 DLP 策略](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
-- [从模板创建 DLP 策略](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)
+- [创建测试和调整 DLP 策略](./create-test-tune-dlp-policy.md)
+- [开始使用默认 DLP 策略](./get-started-with-the-default-dlp-policy.md)
+- [从模板创建 DLP 策略](./create-a-dlp-policy-from-a-template.md)

@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置本机连接器，以将 Twitter 数据导入和存档到Microsoft 365。 在将数据导入Microsoft 365，您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
-ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 0a0ebb18cb39b7dd7416f2d03dcb5b4d21332c9b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619908"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227051"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
-本文包含部署连接器的分步过程，该连接器使用 Office 365 导入服务将数据从组织的 Twitter 帐户导入到 Microsoft 365。 有关此过程的简要概述和部署 Twitter 连接器所需的先决条件列表，请参阅设置连接器以存档 Twitter [数据 ](archive-twitter-data-with-sample-connector.md)。 
+本文包含部署连接器的分步过程，该连接器使用 Office 365 导入服务将数据从组织的 Twitter 帐户导入到 Microsoft 365。 有关此过程的简要概述和部署 Twitter 连接器所需的先决条件列表，请参阅设置连接器以存档 Twitter [数据 ](archive-twitter-data-with-sample-connector.md)。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
@@ -42,7 +42,7 @@ ms.locfileid: "49619908"
 
 4. 注册应用程序。 在 **"重定向 URI** (可选) "下，选择"应用程序类型"下拉列表中的 **"Web"，** 然后在框中键入 `https://portal.azure.com` URI。
 
-   ![重定向 https://portal.azure.com URI 的类型 ](../media/TCimage04.png)
+   ![重定向 https://portal.azure.com URI 的类型](../media/TCimage04.png)
 
 5. 复制 **应用程序 (客户端) ID (** Directory) **ID，** 并将其保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
 
@@ -52,7 +52,7 @@ ms.locfileid: "49619908"
 
    ![创建新的客户端密码](../media/TCimage06.png)
 
-7. 创建新密码。 在说明框中，键入密码，然后选择过期期限。 
+7. 创建新密码。 在说明框中，键入密码，然后选择过期期限。
 
    ![键入密码并选择过期期限](../media/TCimage08.png)
 
@@ -72,15 +72,15 @@ ms.locfileid: "49619908"
    ![单击"创建资源和类型存储帐户"](../media/FBCimage12.png)
 
     - **订阅：** 选择要将 Twitter 连接器 Web 服务部署到的 Azure 订阅。
-    
+
     - **资源组：** 选择或创建新的资源组。 资源组是存储 Azure 解决方案相关资源的容器。
 
     - **位置：** 选择一个位置。
 
     - **Web 应用名称：** 为连接器 Web 应用提供唯一的名称。 名称长度必须在 3 到 18 个字符之间。 此名称用于创建 Azure 应用服务 URL;例如，如果你提供 **twitterconnector** 的 Web 应用名称，则 Azure 应用服务 URL **将** twitterconnector.azurewebsites.net。
-    
+
     - **tenantId：** 在步骤 1 Microsoft 365 Azure Active Directory 中创建 Facebook 连接器应用后复制的组织租户 ID。
-    
+
    - **APISecretKey：** 你可以键入任何值作为密码。 这用于访问步骤 5 中的连接器 Web 应用。
 
 3. 部署成功后，页面将类似于以下屏幕截图：
@@ -93,7 +93,7 @@ ms.locfileid: "49619908"
 
    ![转到 https://developer.twitter.com 并登录](../media/TCimage25-5.png)
 2. 单击 **"创建应用"。**
-   
+
    ![转到应用页面以创建应用](../media/TCimage26.png)
 
 3. 在 **"应用程序详细信息**"下，添加有关应用程序的信息。
@@ -101,11 +101,11 @@ ms.locfileid: "49619908"
    ![输入有关应用的信息](../media/TCimage27.png)
 
 4. 在 Twitter 开发人员仪表板上，选择你刚刚创建的应用， **然后单击详细信息**。
-   
+
    ![复制并保存应用 ID](../media/TCimage28.png)
 
 5. 在" **密钥和令牌** "选项卡上的"使用者 **API** 密钥"下，复制 API 密钥和 API 密钥，并将其保存到文本文件或其他存储位置。 然后单击 **"创建** "以生成访问令牌和访问令牌密码，然后将这些密钥复制到文本文件或其他存储位置。
-   
+
    ![复制并保存到 API 密钥](../media/TCimage29.png)
 
    然后单击 **"创建** "以生成访问令牌和访问令牌密码，然后将这些密钥复制到文本文件或其他存储位置。
@@ -121,14 +121,14 @@ ms.locfileid: "49619908"
 8. 执行以下任务：
 
    - 选中复选框以允许连接器应用登录 Twitter。
-   
+
    - 采用以下格式添加 OAuth 重定向 **Uri：/Views/TwitterOAuth， \<connectorserviceuri>** 其中 *connectorserviceuri* 的值为组织的 Azure 应用服务 URL;例如， https://twitterconnector.azurewebsites.net/Views/TwitterOAuth 。
 
     ![允许连接器应用登录 Twitter 并添加 OAuth 重定向 Uri](../media/TCimage32.png)
 
 Twitter 开发人员应用现在可供使用。
 
-## <a name="step-4-configure-the-connector-web-app"></a>步骤 4：配置连接器 Web 应用 
+## <a name="step-4-configure-the-connector-web-app"></a>步骤 4：配置连接器 Web 应用
 
 1. 转到 https:// \<AzureAppResourceName> .azurewebsites.net (，其中 **AzureAppResourceName** 是你在步骤 4) 中命名的 Azure 应用资源的名称。 例如，如果名称为 **twitterconnector**，请转到 https://twitterconnector.azurewebsites.net 。 应用程序的主页类似于以下屏幕截图：
 
@@ -142,23 +142,23 @@ Twitter 开发人员应用现在可供使用。
 
    ![使用租户 ID 和 API 密钥登录](../media/TCimage35.png)
 
-4. 输入以下配置设置 
+4. 输入以下配置设置
 
    - **Twitter Api 密钥：** 你在步骤 3 中创建的 Twitter 应用程序的 API 密钥。
-   
+
    - **Twitter Api 密钥：** 你在步骤 3 中创建的 Twitter 应用程序的 API 密钥。
-   
+
    - **Twitter 访问令牌：** 在步骤 3 中创建的访问令牌。
-   
+
    - **Twitter 访问令牌密码：** 在步骤 3 中创建的访问令牌密码。
-   
+
    - **AAD 应用程序 ID：** 在步骤 1 中创建Azure Active Directory应用程序的应用程序 ID
-   
+
    - **AAD 应用程序密码：** 在步骤 1 中创建的 APISecretKey 密码的值。
 
 5. 单击 **"保存** "以保存连接器设置。
 
-## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在合规性中心Microsoft 365 Twitter 连接器
+## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在 Microsoft 365 合规中心
 
 1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com) 然后单击左侧 **导航中的** "数据连接器"。
 
@@ -173,11 +173,11 @@ Twitter 开发人员应用现在可供使用。
    ![输入连接器应用凭据](../media/TCimage38.png)
 
     - 在 **"名称** &quot;框中，键入连接器的名称，例如 Twitter **帮助处理**。
-    
+
     - 在&quot; **连接器 URL&quot;** 框中，键入或粘贴 Azure 应用服务 URL;例如 `https://twitterconnector.azurewebsites.net` 。
-    
+
     - 在 **&quot;密码** &quot;框中，键入或粘贴在步骤 2 中创建的 APISecretKey 的值。
-    
+
     - 在 **&quot;Azure 应用 ID&quot;** 框中，键入或粘贴 Azure 应用程序应用 ID (也称为&quot;客户端 *ID")* 在步骤 1 中获取的值。
 
 6. 成功验证连接后，单击"下一 **步"。**

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9d9c439704b6837cec086b390cde9c480d2d69ba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860393"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227279"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>了解通信合规性Microsoft 365
 
@@ -103,7 +103,7 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 
 - **主动智能警报**：针对需要立即关注的策略匹配进行报警，包括按问题严重性对待定项目进行排序的新仪表板，以及发送到指定审阅者的新增自动电子邮件通知。
 - **交互式仪表板**：新的仪表板可显示策略匹配项、待定和已解决的行动以及按照用户和策略展示的趋势分析。
-- **审核支持**：可以轻松地从合规性中心导出策略和Microsoft 365活动的完整日志，以帮助支持审核审核请求。
+- **审核支持**：可以轻松地从审核中心导出策略和审阅活动的完整Microsoft 365 合规中心以帮助支持审核审核请求。
 
 ## <a name="integration-with-microsoft-365-services"></a>与 Microsoft 365 服务集成
 
@@ -129,8 +129,8 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 
 在此工作流步骤中，确定合规性要求并配置适用的通信合规性策略。 策略模板是一种很好的方法，不仅可以快速配置新的合规性策略，还能根据需求变化快速修改和更新策略。 例如，在为组织中所有用户配置策略之前，可能需要快速测试针对一小组用户的攻击性语言和反干扰通信的策略。
 
->[!Important]
->默认状态下，全局管理员没有对通信合规性功能的访问权限。 若要启用通信合规性功能的权限，请参阅 [使通信合规性在你的组织中可用](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
+> [!IMPORTANT]
+> 默认状态下，全局管理员没有对通信合规性功能的访问权限。 若要启用通信合规性功能的权限，请参阅 [使通信合规性在你的组织中可用](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
 
 你可以从 Microsoft 365 合规中心的以下策略模板中选择：
 
@@ -142,7 +142,7 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 
 ### <a name="investigate"></a>调查
 
-在此步骤中，你将进一步深入了解检测到的与通信合规性策略相匹配的问题。 此步骤包括以下可在合规性中心Microsoft 365操作：
+在此步骤中，你将进一步深入了解检测到的与通信合规性策略相匹配的问题。 此步骤包括以下可用于以下Microsoft 365 合规中心：
 
 - **警报**：当邮件与策略条件匹配时，将自动生成警报。 对于每个警报，你可以看到状态、严重性、检测到的时间，以及是否分配了Advanced eDiscovery及其状态。 新警报显示在通信合规性主页和警报页面上，并按严重性顺序列出。
 - **问题管理**：对于每个警报，你可以采取调查操作来帮助修正邮件中发现的问题。

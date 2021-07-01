@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或学校帐户的用户可以Cortana符合Microsoft 365安全承诺Office 365体验。
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054591"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227891"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana Microsoft 365
 
@@ -39,7 +39,7 @@ Cortana，你的个人生产力助手，可提供由 AI 提供的体验，以节
 
 - 与其他 Office 365 服务一Cortana，企业服务符合联机服务条款[ (OST ](https://www.microsoft.com/licensing/product-licensing/products)) 中相同的企业级隐私、安全性和合规性承诺。
 
-- 新的Microsoft 365体验（如"简介电子邮件"和"播放我的电子邮件"）将Cortana企业服务，并完全遵守这些承诺。 这些功能目前可用于全球 (多租户) 。 有关查找使用位置的信息，请访问查看 [帐户的其他属性值](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)。
+- 新的Microsoft 365体验（如"简介电子邮件"和"播放我的电子邮件"）将Cortana企业服务，并完全遵守这些承诺。 这些功能目前可用于全球 (多租户) 。 有关查找使用位置的信息，请访问查看 [帐户的其他属性值](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts)。
 
 - 现有消费者体验（包括 Windows 10 (版本 1909 及更早) 中的 Cortana）受[Microsoft 服务](https://www.microsoft.com/licensing/product-licensing/products)协议和[Microsoft](https://privacy.microsoft.com/privacystatement)隐私声明的约束 (请参阅) 下面的"适用于消费者的现有服务"部分。 这些条款还将控制Cortana使用者凭据登录时提供给用户的企业服务。
 

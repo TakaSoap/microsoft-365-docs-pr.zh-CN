@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页提供了安全与合规中心中的链接和Office 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198055"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226247"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
@@ -32,7 +32,7 @@ ms.locfileid: "51198055"
 
 引导自己了解信息保护海报中Office 365功能。 
   
-[为数据隐私法规部署信息保护与Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[为数据隐私法规部署信息保护与Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>步骤 2：检查安全分数
 

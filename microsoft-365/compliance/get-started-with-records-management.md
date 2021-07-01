@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244340"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226571"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -30,14 +30,14 @@ ms.locfileid: "52244340"
 
 准备好开始使用 Microsoft 365 中的记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？使用以下指南来入门：
 
-1. **了解记录管理解决方案** 以及在将文档和电子邮件声明为记录时允许或阻止的操作：[了解记录管理](records-management.md)。 
+1. **了解记录管理解决方案** 以及在将文档和电子邮件声明为记录时允许或阻止的操作：[了解记录管理](records-management.md)。
 
 2. **了解保留标签和保留机制的工作原理**（针对 SharePoint 和 Exchange），因为保留标签将用于声明记录：[了解保留策略和保留标签](retention.md)
 
-3. 通过 [导入现有计划](file-plan-manager.md#import-retention-labels-into-your-file-plan )（如果有）或 [创建用于声明记录的新保留标签](declare-records.md)来 **创建有关保留设置和操作的文件计划**。
+3. 通过 [导入现有计划](file-plan-manager.md#import-retention-labels-into-your-file-plan)（如果有）或 [创建用于声明记录的新保留标签](declare-records.md)来 **创建有关保留设置和操作的文件计划**。
 
-4. **发布并应用保留标签**。 保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中： 
-    
+4. **发布并应用保留标签**。 保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中：
+
     - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
     - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
 
@@ -49,9 +49,9 @@ ms.locfileid: "52244340"
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 
-负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。为了授予该有限管理权限，建议将用户添加至授予所有与记录管理相关的功能的权限的 **记录管理** 管理员角色组，其中包括 [处置审查和验证](disposition.md)。 
+负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。为了授予该有限管理权限，建议将用户添加至授予所有与记录管理相关的功能的权限的 **记录管理** 管理员角色组，其中包括 [处置审查和验证](disposition.md)。
 
-对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。 
+对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。
 
 有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 

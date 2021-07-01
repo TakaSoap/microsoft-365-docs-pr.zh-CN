@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 0ee3fdf19552ee80737f6758e655d297228c469e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445650"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226547"
 ---
 # <a name="insider-risk-management-alerts"></a>内部风险管理警报
 
@@ -32,14 +32,14 @@ ms.locfileid: "51445650"
 - **需要检查的警报** 总数：列出了需要审阅和会审的警报总数，包括按警报严重性分类。
 - **打开过去 30** 天的警报：过去 30 天内由策略匹配创建的警报总数，按高、中和低警报严重性级别排序。
 - **解决警报的平均时间**：有用的警报统计信息摘要：
-    - 解决高严重性警报的平均时间，以小时、天或月列出。
-    - 解决中等严重性警报的平均时间，以小时、天或月列出。
-    - 解决低严重性警报的平均时间，以小时、天或月列出。
+  - 解决高严重性警报的平均时间，以小时、天或月列出。
+  - 解决中等严重性警报的平均时间，以小时、天或月列出。
+  - 解决低严重性警报的平均时间，以小时、天或月列出。
 
 ![内部风险管理警报仪表板](../media/insider-risk-alerts-dashboard.png)
 
->[!NOTE]
->预览体验计划风险管理使用内置警报限制来帮助保护和优化风险调查和审阅体验。 此限制可以防止可能导致策略警报过载的问题，例如配置不当的数据连接器或 DLP 策略。 因此，为用户显示新的警报可能会存在延迟。
+> [!NOTE]
+> 预览体验计划风险管理使用内置警报限制来帮助保护和优化风险调查和审阅体验。 此限制可以防止可能导致策略警报过载的问题，例如配置不当的数据连接器或 DLP 策略。 因此，为用户显示新的警报可能会存在延迟。
 
 ## <a name="alert-status-and-severity"></a>警报状态和严重性
 
@@ -75,7 +75,7 @@ ms.locfileid: "51445650"
 
 若要对内部风险警报进行会审，请完成以下步骤：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在 **警报详细信息窗格中**，你可以查看以下选项卡并会审警报：
     - **摘要：** 此选项卡包含有关警报的常规信息，并允许你确认警报并创建新案例或允许你消除警报。 它包括警报的当前状态和警报风险严重性级别，列为 *高*、*中或**低*。 如果警报未分类，严重性级别可能会随着时间的推移增加或减小。
@@ -91,8 +91,8 @@ ms.locfileid: "51445650"
 
 ## <a name="activity-explorer-preview"></a>活动资源管理器 (预览) 
 
->[!NOTE]
->在组织中提供此功能后，活动资源管理器可用于具有触发事件的用户的警报管理区域。
+> [!NOTE]
+> 在组织中提供此功能后，活动资源管理器可用于具有触发事件的用户的警报管理区域。
 
 活动资源管理器为风险研究人员和分析员提供了一个全面的分析工具，该工具提供有关警报的详细信息。 使用活动资源管理器，审阅者可以快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。 若要筛选活动资源管理器上的警报，请选择"筛选器"控件。 可以按警报的详细信息窗格中列出的一个或多个属性筛选通知。 活动资源管理器还支持可自定义的列，以帮助研究人员和分析师将仪表板集中在他们最重要的信息上。
 
@@ -100,7 +100,7 @@ ms.locfileid: "51445650"
 
 若要使用 **活动资源管理器**，请完成以下步骤：
 
-1. 在"Microsoft 365合规中心"中，转到 **"内部风险管理**"并选择 **"警报"** 选项卡。
+1. In the Microsoft 365 合规中心， go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在警报 **详细信息窗格中，选择** 打开 **展开的视图**。
 4. 在所选警报的页面上，选择" **活动资源管理器"** 选项卡。
@@ -113,7 +113,7 @@ ms.locfileid: "51445650"
 
 在审核和会审警报时，您可以创建一个新案例以进一步调查风险活动。 若要为警报创建案例，请按照以下步骤操作：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要确认的警报并创建一个新案例。
 3. 在警报 **详细信息窗格中，选择****操作**  >  **确认警报&创建案例**。
 4. 在" **确认警报并创建内部** 风险案例"对话框中，输入案例名称，选择要添加为参与者的用户，并根据需要添加注释。 注释会自动作为案例注释添加到案例。

@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理内容资源管理器
 description: 了解企业内部风险管理内容资源管理器Microsoft 365
-keywords: Microsoft 365、内部风险管理、风险管理、合规性
+keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 44a17471f1e2ba92d0099f62b95dec8d0e56a224
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 3ff3c652d5446167ac3c2bf78a2405c21929ea11
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957489"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226463"
 ---
 # <a name="insider-risk-management-content-explorer"></a>内部风险管理内容资源管理器
 
@@ -29,8 +29,8 @@ ms.locfileid: "51957489"
 
 如果内容包含信息权限管理权限，则为复制的内容维护这些权限，并且分配有预览体验成员风险管理研究人员角色的用户将需要这些权限和权限（如果他们需要打开和查看文件）。 出于管理目的，每个文件和邮件都会在内部风险管理案例中自动分配一个唯一的文件 ID。 与设备指示器活动关联的文档不包含在内容资源管理器中。
 
->[!Note]
->内容资源管理器包括与文件相关的Microsoft Office活动。 网站级别活动（例如SharePoint网站时或网站权限更改时）不会包含在内容资源管理器中。
+> [!NOTE]
+> 内容资源管理器包括与文件相关的Microsoft Office活动。 网站级别活动（例如SharePoint网站时或网站权限更改时）不会包含在内容资源管理器中。
 
 ## <a name="column-options"></a>列选项
 
@@ -38,7 +38,7 @@ ms.locfileid: "51957489"
 
 若要为内容队列添加或删除列标题，请使用"编辑列"控件，并从以下列选项中进行选择。 这些列映射到内容资源管理器中支持的常见、电子邮件和文档属性条件，并列在本文的稍后部分列出。
 
-| **列选项** | **说明** |
+| **列选项** | **Description** |
 |:------------------|:----------------|
 | **Author** | 作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其通过电子邮件发送给其他人，然后将该文档上载到SharePoint，则该文档仍将保留原始作者。 |
 | **Bcc** | 可用于电子邮件，即"Bcc 邮件"字段中的用户。 |
@@ -70,8 +70,8 @@ ms.locfileid: "51957489"
 | **敏感信息类型** | 内容中标识的敏感信息类型。 |
 | **敏感度标签** | 应用于内容的敏感度标签。 |
 | **Sent** | 发件人发送电子邮件的日期。 此字段与"已发送电子邮件"属性相同。 |
-| **大小** | 对于电子邮件和文档而言，是项目的大小（以字节为单位）。 |
-| **主题** | 电子邮件主题行中的文本。 |
+| **Size** | 对于电子邮件和文档而言，是项目的大小（以字节为单位）。 |
+| **Subject** | 电子邮件主题行中的文本。 |
 | **主题/标题** | 对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如前所述，Title 属性是在文档中指定的Microsoft Office元数据。 您可以键入多个主题/标题的名称，用逗号分隔。 通过 OR 运算符在逻辑上连接两个或多个值。 |
 | **主题列表** | 为分析计算的主题列表。 |
 | **Title** | 文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。 |
@@ -83,7 +83,7 @@ ms.locfileid: "51957489"
 
 ### <a name="common-filters"></a>常见筛选器
 
-| **Filter** | **说明** |
+| **Filter** | **Description** |
 |:---------------------|:----------------|
 | **Date (UTC)** | 对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档，是上次修改文档的日期。 |
 | **发件人/作者** | 对于电子邮件而言，是指发送邮件的人。 对于文档，指作者 *字段中引用Office* 文档。 你可以键入多个名称，用逗号分隔。 |
@@ -92,7 +92,7 @@ ms.locfileid: "51957489"
 
 ### <a name="email-filters"></a>电子邮件筛选器
 
-| **Filter** | **说明** |
+| **Filter** | **Description** |
 |:---------------------|:----------------|
 | **Bcc** | 电子邮件的"Bcc"字段。 |
 | **Cc** | 电子邮件的"抄送"字段。 |
@@ -111,7 +111,7 @@ ms.locfileid: "51957489"
 
 ## <a name="document-filters"></a>文档筛选器
 
-| **Filters** | **说明** |
+| **Filters** | **Description** |
 |:---------------------|:----------------|
 | **合规性标签** | Office 365 中应用的合规性Office 365。 |
 | **使用 UTC (创建)** | 文件或电子邮件的创建日期和时间。 日期和时间使用协调世界时 (UTC) 。 |

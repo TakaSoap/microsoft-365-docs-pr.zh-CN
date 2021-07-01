@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: 默认情况下，邮箱审核日志记录在邮箱Microsoft 365 (也称为默认邮箱审核或默认启用邮箱审核) 。 这意味着邮箱所有者、代理人和管理员执行的某些操作会自动记录在邮箱 审核日志 中，您可以在其中搜索对邮箱执行的活动。
-ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108087"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226775"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -92,7 +92,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 下表描述了用户邮箱和共享邮箱的邮箱审核日志记录中可用的邮箱操作。
 
-- 复选标记 ( ![复选标记](../media/checkmark.png)) 指示可以针对登录类型记录邮箱操作， (并非所有操作都可用于所有登录类型) 。
+- 复选标记 (![复选标记](../media/checkmark.png)) 指示可以针对登录类型记录邮箱操作， (并非所有操作都可用于所有登录类型) 。
 - 在选中 () 默认情况下会记录登录类型的邮箱操作后，使用星号 <sup>\*</sup> 。
 - 请记住，对邮箱具有完全访问权限的管理员将被视为代理。
 
@@ -105,7 +105,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**AddFolderPermissions**|尽管此值被接受为邮箱操作，但它已包含在 **UpdateFolderPermissions** 操作中，并且未单独审核。 换句话说，请勿使用此值。||||
 |**ApplyRecord**|项目标记为记录。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**复制**|已将某个邮件复制到另一个文件夹。|![复选标记](../media/checkmark.png)|||
-|**创建**|在邮箱邮箱的"日历、联系人、便笺"或"任务"文件夹中创建了 (例如，会创建一个新的会议) 。 不会审核邮件的创建、发送或接收。 也不会审核邮箱文件夹的创建。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)|
+|**Create**|在邮箱邮箱的"日历、联系人、便笺"或"任务"文件夹中创建了 (例如，会创建一个新的会议) 。 不会审核邮件的创建、发送或接收。 也不会审核邮箱文件夹的创建。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)|
 |**FolderBind**|已访问某个邮箱文件夹。 管理员或代理人打开邮箱时也会记录此操作。 <br/><br/> **注意**：合并由代理执行的文件夹绑定操作审核记录。 在 24 小时内为单个文件夹访问生成一个审核记录。|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||
 |**HardDelete**|已将某个邮件从"已恢复邮件"文件夹中清除。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|用户登录到其邮箱。|||![复选标记](../media/checkmark.png)|
@@ -121,7 +121,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendAs**|已使用“发送方式”权限发送邮件。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用“代表发送”权限发送邮件。 这表示另一个用户代表邮箱所有者发送了邮件。 邮件将向收件人说明发送此邮件时使用的身份及实际发送者。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|已永久删除或已从“已删除邮件”文件夹中删除邮件。 软删除的项目将移动到"可恢复的项目"文件夹。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|已更改邮件或邮件的任何属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
+|**Update**|已更改邮件或邮件的任何属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|日历委派已分配给邮箱。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|![复选标记](../media/checkmark.png)<sup>\*</sup>||![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|其他保留标签应用于邮件项目 (一个项目只能分配有一个保留标签) 。|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|
 |**UpdateFolderPermissions**|文件夹权限已更改。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
@@ -145,13 +145,13 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 |邮箱操作|说明|管理员|委派用户|所有者|
 |---|---|:---:|:---:|:---:|
-|**创建**|创建日历项目。 不会审核邮件的创建、发送或接收。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
+|**Create**|创建日历项目。 不会审核邮件的创建、发送或接收。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|已将某个邮件从"已恢复邮件"文件夹中清除。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|已删除邮件，并已将其移动到“已删除邮件”文件夹。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|已使用“发送方式”权限发送邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|已使用“代表发送”权限发送邮件。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|已永久删除或已从“已删除邮件”文件夹中删除邮件。 软删除的项目将移动到"可恢复的项目"文件夹。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
-|**更新**|已更改邮件或邮件的任何属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
+|**Update**|已更改邮件或邮件的任何属性。|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|![复选标记](../media/checkmark.png)<sup>\*</sup>|
 |
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>验证是否针对每种登录类型记录默认邮箱操作

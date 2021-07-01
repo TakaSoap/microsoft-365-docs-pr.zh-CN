@@ -22,16 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可以使用电子数据展示搜索工具在 Microsoft 365 中搜索的电子邮件和Microsoft 365。
-ms.openlocfilehash: 1e6612d658ff2fbcbee36b64dab9d352663f75b2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: bb87125b8cb4091121c6a389bcba8d69be7cc71e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866699"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226355"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>电子数据展示的关键字查询和搜索条件
 
-本主题介绍您可以在 Exchange Online 中的电子邮件项目和 Microsoft Teams 聊天对话中搜索的电子邮件和文档属性，以及使用 Microsoft 365 合规中心中的电子数据展示搜索工具存储在 SharePoint 和 OneDrive for Business 网站上的文档。 这包括内容搜索、核心电子数据展示Advanced eDiscovery (电子数据展示搜索 *Advanced eDiscovery称为集合*) 。 您还可以使用安全与合规中心 PowerShell 中的 **\* -ComplianceSearch** cmdlet &搜索这些属性。 本主题还介绍了：
+本主题介绍您可以在 Exchange Online 中的电子邮件项目和 Microsoft Teams 聊天对话中搜索的电子邮件和文档属性，以及使用 Microsoft 365 合规中心 中的电子数据展示搜索工具存储在 SharePoint 和 OneDrive for Business 网站上的文档。 这包括内容搜索、核心电子数据展示Advanced eDiscovery (电子数据展示搜索 *Advanced eDiscovery称为集合*) 。 您还可以使用安全与合规中心 PowerShell 中的 **\* -ComplianceSearch** cmdlet &搜索这些属性。 本主题还介绍了：
   
 - 使用布尔搜索运算符、搜索条件和其他搜索查询技术优化搜索结果。
 
@@ -48,11 +48,11 @@ ms.locfileid: "52866699"
 - [在集合中创建草稿Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> 电子数据展示在 Microsoft 365 合规中心进行搜索，安全与合规中心 PowerShell 中的相应 **\* -ComplianceSearch** cmd & let 使用关键字查询语言 (KQL) 。 有关更多详细信息，请参阅关键字 [查询语言语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
+> 电子数据展示搜索Microsoft 365 合规中心安全与合规中心 PowerShell 中的相应 **\* -ComplianceSearch** cmd & let 使用关键字查询语言 (KQL) 。 有关更多详细信息，请参阅关键字 [查询语言语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
   
 ## <a name="searchable-email-properties"></a>可搜索的电子邮件属性
 
-下表列出了可以使用 Microsoft 365 合规中心中的电子数据展示搜索工具或 **New-ComplianceSearch** 或 **Set-ComplianceSearch** cmdlet 搜索的电子邮件属性。 该表包含每个属性的  _property：value_ 语法示例，以及示例返回的搜索结果的说明。 可以在电子  `property:value` 数据展示搜索的关键字框中键入这些对。 
+下表列出了可以使用 Microsoft 365 合规中心 中的电子数据展示搜索工具或 **New-ComplianceSearch** 或 **Set-ComplianceSearch** cmdlet 搜索的电子邮件属性。 该表包含每个属性的  _property：value_ 语法示例，以及示例返回的搜索结果的说明。 可以在电子  `property:value` 数据展示搜索的关键字框中键入这些对。 
 
 > [!NOTE]
 > 在搜索电子邮件属性时，无法搜索指定属性为空或为空的项目。 例如，使用 **subject：""** 的 *property：value* 对搜索主题行为空的电子邮件将返回零结果。 这同样适用于搜索网站和联系人属性的情况。
@@ -61,7 +61,7 @@ ms.locfileid: "52866699"
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |含有名称为 annualreport.ppt 的附件的邮件。 第二个示例使用通配符 ( * ) 返回附件文件名中带单词"annual"的邮件。 第三个示例返回文件扩展名为 pptx 的所有附件。|
 |Bcc|电子邮件的"Bcc"字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例都返回"密件抄送"字段中包含"Pilar Pinilla"的邮件。|
-|Category| 搜索类别。 用户可以通过使用 Web 上的 Outlook 或 Outlook 定义 (以前称为Outlook Web App) 。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
+|Category| 搜索类别。 用户可以通过使用以前称为Outlook或Outlook 网页版 (自定义类别Outlook Web App) 。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
 |抄送|电子邮件的"抄送"字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在这两个示例中，在"抄送"字段中指定了 Pilar Pinilla 的邮件。|
 |Folderid|文件夹 ID (特定) 文件夹的 GUID。 如果使用此属性，请确保搜索指定文件夹所在的邮箱。 将仅搜索指定的文件夹。 不会搜索文件夹中的任何子文件夹。 若要搜索子文件夹，您需要对要搜索的子文件夹使用 Folderid 属性。  <br/> 有关搜索 Folderid 属性和使用脚本获取特定邮箱的文件夹 ID 的信息，请参阅对目标集合使用内容 [搜索](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一个示例返回指定邮箱文件夹中的所有项目。 第二个示例返回指定邮箱文件夹中由用户发送或接收的所有 garthf@contoso.com。|
 |发件人|电子邮件的发件人。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|由指定用户或指定域发送的邮件。|
@@ -113,9 +113,9 @@ ms.locfileid: "52866699"
 |ModifiedBy|上次更改项目的人员。 请务必使用用户的 显示名称 此属性。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
 |路径|网站 (或) 网站中特定网站SharePoint URL OneDrive for Business路径。<br/><br/>若要仅返回指定网站中的项目，您必须将尾随添加到 URL 的 `/` 末尾;例如， `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> 若要返回在 path 属性中指定的网站文件夹中的项目，您必须添加到 URL 的 `/*` 末尾;例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **注意：** 使用 属性搜索OneDrive不会在搜索结果中返回媒体文件，如 `Path` .png、.tiff 或 .wav 文件。 在搜索查询中使用不同的网站属性来搜索文件夹中的OneDrive文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定网站中OneDrive for Business项。 第二个示例返回指定网站 (中的文档和网站) 文件名中包含"机密"一词的文件夹。|
 |SharedWithUsersOWSUser|已与指定用户共享并显示在用户网站中"我共享"页上OneDrive for Business的文档。 这些是组织中其他人已与指定用户显式共享的文档。 导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档从与指定用户共享文档的用户的原始内容位置导出。 有关详细信息，请参阅搜索 [在组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都返回已与 Garth Fort 显式共享且显示在 Garth  Fort 的 OneDrive for Business 页面上的所有内部文档。|
-|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户OneDrive for Business网站中的项目。 第二个示例返回所有团队网站中的项目。|
+|网站|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户OneDrive for Business网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
-|标题|文档的标题。 Title 属性是在文档中指定的Microsoft Office元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
+|Title|文档的标题。 Title 属性是在文档中指定的Microsoft Office元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
 
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
@@ -144,14 +144,14 @@ ms.locfileid: "52866699"
 |OfficeLocation|Office **或** Office **中的** 值。|
 |OtherAddress|Other **address** 属性的值。|
 |Surname|Last **name** 属性中的名称。|
-|标题|Job title 属性 **中** 的标题。|
+|Title|Job title 属性 **中** 的标题。|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
 
-您可以使用 Microsoft 365 合规中心中的电子数据展示搜索工具搜索存储在 SharePoint 和 OneDrive for Business 网站上文档中的敏感数据，如信用卡号或社会保险号。 为此，可以在关键字查询 (敏感信息) 属性和名称或 `SensitiveType` ID。 例如，查询 `SensitiveType:"Credit Card Number"` 返回包含信用卡号的文档。 查询  `SensitiveType:"U.S. Social Security Number (SSN)"` 返回包含美国社会保险号的文档。
+您可以使用 Microsoft 365 合规中心 中的电子数据展示搜索工具搜索存储在 SharePoint 和 OneDrive for Business 网站上文档中的敏感数据，例如信用卡号或社会保险号。 为此，可以在关键字查询 (敏感信息) 属性和名称或 `SensitiveType` ID。 例如，查询 `SensitiveType:"Credit Card Number"` 返回包含信用卡号的文档。 查询  `SensitiveType:"U.S. Social Security Number (SSN)"` 返回包含美国社会保险号的文档。
 
-To see a list of the sensitive information types that you can search for， go to **Data classifications** \> **Sensitive info types** in the Microsoft 365 compliance center. 或者，您可以使用安全与合规中心 PowerShell & **Get-DlpSensitiveInformationType** cmdlet 来显示敏感信息类型列表。
+To see a list of the sensitive information types that you can search for， go to **Data classifications** \> **Sensitive info types** in the Microsoft 365 合规中心. 或者，您可以使用安全与合规中心 PowerShell & **Get-DlpSensitiveInformationType** cmdlet 来显示敏感信息类型列表。
   
 有关使用 属性创建查询的信息，请参阅创建查询 `SensitiveType` [以查找网站上存储的敏感数据](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
 
@@ -189,7 +189,7 @@ To see a list of the sensitive information types that you can search for， go t
 |\>=|property\>=value|表示正在搜索的属性大于等于指定的值。<sup>1</sup>|
 |..|property：value1..value2|表示正在搜索的属性大于等于 value1，小于等于 value2。<sup>1</sup>|
 |"  "|"fair value"  <br/> subject:"Quarterly Financials"|使用双引号 (" ") 搜索关键字和搜索查询中的确切短语  `property:value` 或术语。|
-|\*|cat\*  <br/> subject:set\*|前缀 (也称为前缀匹配) ，其中通配符 ( * ) 位于关键字或查询中单词的 `property:value` 末尾。 在前缀搜索中，搜索将返回包含字词后跟零个或多个字符的字词的结果。 例如，返回文档标题中包含单词 `title:set*` "set"、"setup"和"setting" (以及其他以"set") 开始的文档。  <br/><br/> **注意：** 只能使用前缀搜索;例如 **，cat \* *_ 或 _* set \* *_。后缀 (_* \* cat** ) ， (**c t \*) ，** 不支持 cat (**\* 子 \*** 字符串) 搜索。<br/><br/>此外，添加一个 ( \。 ) 前缀搜索将更改返回的结果。 这是因为句点被视为一个结束词。 例如，搜索 cat **\* *_ 并搜索 _* cat。 \*** 将返回不同的结果。 建议不要将一个时间段用于前缀搜索。 |
+|\*|cat\*  <br/> subject:set\*|前缀 (也称为前缀匹配) ，其中通配符 ( * ) 位于关键字或查询中单词的 `property:value` 末尾。 在前缀搜索中，搜索将返回包含字词后跟零个或多个字符的字词的结果。 例如，返回文档标题中包含单词 `title:set*` "set"、"setup"和"setting" (以及其他以"set") 开始的文档。  <br/><br/> **注意：** 只能使用前缀搜索;例如 **，cat \* *_ 或 _* set \* *_。后缀 (_* \* cat**) ， (**c t t \*) ，** 不支持 (**\* cat \***) 搜索。<br/><br/>此外，添加一个 ( \。 ) 前缀搜索将更改返回的结果。 这是因为句点被视为一个结束词。 例如，搜索 cat **\* *_ 并搜索 _* cat。 \*** 将返回不同的结果。 建议不要将一个时间段用于前缀搜索。 |
 |(  )| (fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|括号将布尔短语、 `property:value` 项目和关键字结合到一起。例如，  `(quarterly financials)` 返回包含单词"quarterly"和"financials"的项目。  |
 |||||
    
@@ -216,7 +216,7 @@ To see a list of the sensitive information types that you can search for， go t
 
 在同一搜索中同时搜索邮箱和网站时，使用通用属性创建一个条件。 下表列出了在添加条件时可使用的可用属性。
   
-| 条件 | 说明 |
+| Condition | 说明 |
 |:-----|:-----|
 |日期|对于电子邮件而言，是指收件人收到邮件的日期，或发件人发送邮件的日期。 对于文档，是上次修改文档的日期。|
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
@@ -229,7 +229,7 @@ To see a list of the sensitive information types that you can search for， go t
 
 搜索邮箱或公用文件夹时使用邮件属性创建条件。 下表列出了可以用于条件的电子邮件属性。 这些属性是之前描述的电子邮件属性的子集。 为了方便起见，将重复这些说明。
   
-| 条件 | 说明 |
+| Condition | 说明 |
 |:-----|:-----|
 |邮件类型| 要搜索的邮件类型。 此属性与“Kind”电子邮件属性相同。 可能的值：  <br/><br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams  <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|
 |参与者|电子邮件中的"所有人员"字段。 这些字段为 From、To、Cc 和 Bcc。|
@@ -246,10 +246,10 @@ To see a list of the sensitive information types that you can search for， go t
 
 在网站和网站中搜索文档时，使用文档属性SharePoint OneDrive for Business条件。 下表列出了可以用于条件的文档属性。 这些属性是之前描述的网站属性的子集。 为了方便起见，将重复这些说明。
   
-| 条件 | 说明 |
+| Condition | 说明 |
 |:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其通过电子邮件发送给其他人，然后将该文档上载到SharePoint，则该文档仍将保留原始作者。|
-|标题|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。|
+|Title|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。|
 |Created|创建文档的日期。|
 |上次修改时间|上次修改文档的日期。|
 |文件类型|文件的扩展名;例如，docx、one、pptx 或 xlsx。 此属性与 FileExtension 网站属性相同。 <br/><br/> **注意：** 如果在搜索查询中包括使用 **"等于** "或" **等于** "任意运算符的"文件类型"条件，则不能将通配符 ( * ) 包括在文件类型) 末尾以返回文件类型的所有版本，以使用前缀搜索 (。 如果这样做，通配符将被忽略。 例如，如果包含 条件 `Equals any of doc*` ，将仅返回扩展 `.doc` 名 为 的文件。 不会返回扩展名 为 `.docx` 的文件。 若要返回文件类型的所有版本，在关键字查询中使用 *property：value* 对;例如， `filetype:doc*` 。|
@@ -285,11 +285,11 @@ To see a list of the sensitive information types that you can search for， go t
   
 - 可通过使用 **AND** 运算符在逻辑上将条件连接至关键字查询（在关键字框中指定）。 这意味着，项目必须满足关键字查询和要在结果中包括的条件。 这就是条件如何帮助缩小结果范围的原理。
   
-- 如果将两个或多个唯一条件添加到搜索查询 (指定不同属性的条件，) AND 运算符在逻辑上 **连接这些条件** 。 这意味着仅返回满足所有条件（除了任何关键字查询以外）的项目。
+- 如果将两个或多个唯一性条件（指定不同属性的条件）添加到搜索查询中，这些条件将在逻辑上使用 **AND** 运算符来连接。 这意味着仅返回满足所有条件（除了任何关键字查询以外）的项目。
   
 - 如果您对相同属性添加多个条件，则使用 **OR** 运算符在逻辑上对这些条件进行连接。 这意味着将返回满足关键字查询以及任何一个条件的项。 因此，相同条件的组通过 **OR** 运算符彼此相连，然后唯一性条件集通过 **AND** 运算符彼此相连。 
   
-- 如果添加多个值 (用逗号或分号分隔) 一个条件，则这些值由 **OR** 运算符连接。 这意味着如果这些项包含条件中指定的任何属性值，则返回这些项。 
+- 如果向单个条件中添加多个值（用逗号或分号分隔），这些值将通过 **OR** 运算符来连接。 这意味着如果这些项包含条件中指定的任何属性值，则返回这些项。 
   
 - 使用关键字框和条件创建的搜索查询将显示在"搜索"页上所选搜索的详细信息窗格中。  在查询中，表示法右侧的所有  `(c:c)` 内容都指示添加到查询的条件。
   

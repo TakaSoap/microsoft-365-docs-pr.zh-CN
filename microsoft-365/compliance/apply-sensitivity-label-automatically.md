@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 6b74c36707b9fe1fdbe00eb7058554b54ec95755
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194765"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227527"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -44,20 +44,20 @@ ms.locfileid: "53194765"
 
 有两种不同的方法可以自动将敏感度标签应用于 Microsoft 365 中的内容：
 
-- **用户编辑文档或撰写（以及答复或转发）电子邮件时的客户端标记**：使用为 Office 应用（Word、Excel、PowerPoint 和 Outlook）的自动标记配置的标签。 
-    
-    此方法支持向用户推荐标签，并自动应用标签。 但在这两种情况下，用户都可以决定接受还是拒绝标签，以帮助确保正确标记内容。 此客户端标记的文档延迟最少，因为即使在保存文档之前也可以应用标签。 但是，并非所有客户端应用都支持自动标记。 Azure 信息保护统一标记客户端和[某些 Office 版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)支持此功能。 
-    
+- **用户编辑文档或撰写（以及答复或转发）电子邮件时的客户端标记**：使用为 Office 应用（Word、Excel、PowerPoint 和 Outlook）的自动标记配置的标签。
+
+    此方法支持向用户推荐标签，并自动应用标签。 但在这两种情况下，用户都可以决定接受还是拒绝标签，以帮助确保正确标记内容。 此客户端标记的文档延迟最少，因为即使在保存文档之前也可以应用标签。 但是，并非所有客户端应用都支持自动标记。 Azure 信息保护统一标记客户端和[某些 Office 版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)支持此功能。
+
     有关配置说明，请参阅此页面上的[如何配置 Office 应用的自动标签](#how-to-configure-auto-labeling-for-office-apps)。
 
-- **当内容已保存（在 SharePoint 或 OneDrive 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略。 
-    
+- **当内容已保存（在 SharePoint 或 OneDrive 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略。
+
     你可能还听过该方法的另外一种称呼方式，即自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。对于 Exchange，它不包含静态电子邮件（邮箱）。
-    
+
     由于此标记是由服务而不是应用程序应用的，因此无需担心用户拥有的应用和版本。 因此，可立即在整个组织中使用此功能，并且适合大规模标记。 自动标记策略不支持推荐的标记，因为用户不与标记过程交互。 相反，管理员将在模拟模式下运行策略，以便在实际应用标签前，帮助确保正确标记内容。
-    
+
     有关配置说明，请参阅此页面上的[如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
-    
+
     特定于 SharePoint 和 OneDrive 的自动标记：
     - 支持 Word、PowerPoint 和 Excel 的 Office 檔案。支持 Open XML 格式（如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（如 .doc 和 .xls）。
         - 创建自动标签策略之前或之后，这些文件可自动标记。 如果文件是打开的会话的一部分（文件已打开），则不能自动标记它们。
@@ -77,7 +77,7 @@ ms.locfileid: "53194765"
         - 如果已将标签配置为[加密](encryption-sensitivity-labels.md)，则不会应用该加密。
         - 如果标签配置为应用[动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)，请注意，这可能会影响组织外部人员的姓名。
     - 如果标签应用了加密，则[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是发送电子邮件的人。 目前无法为自动加密的所有传入电子邮件设置权限管理器所有者。
-    
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>将 Office 应用的自动标记与自动标记策略进行比较
 
@@ -115,7 +115,7 @@ ms.locfileid: "53194765"
 
 Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用中的自动标签。 对于 Office 应用中的内置标记，此功能[在不同应用程序中有不同的可用性阶段](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-[创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置。 请确保为标签的范围选择了 **“文件和电子邮件”**： 
+[创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置。 请确保为标签的范围选择了 **“文件和电子邮件”**：
 
 ![文件和电子邮件的敏感度标签范围选项](../media/filesandemails-scope-options-sensitivity-label.png)
 
@@ -142,7 +142,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 同样与配置 DLP 策略时类似的是，你可以选择某项条件是必须删除所有敏感信息类型还是只删除其中一种。 要使条件更灵活或更复杂，可添加[组并在组之间使用逻辑运算符](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
 > [!NOTE]
-> 基于自定义敏感信息类型的自动标签策略仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容;而不适用于现有的内容。 
+> 基于自定义敏感信息类型的自动标签策略仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容;而不适用于现有的内容。
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
@@ -194,7 +194,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 
@@ -206,7 +206,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略
 
-在配置自动标记策略前，请确保你了解这些先决条件。 
+在配置自动标记策略前，请确保你了解这些先决条件。
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自动标记策略的先决条件
 
@@ -218,7 +218,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     - 你已[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
     - 当自动标记策略运行时，该文件不得由其他进程或用户打开。 签出以供进行编辑的文件属于此类别。
 
-- 如果计划使用[自定义敏感信息类型](sensitive-information-type-learn-about.md)，而不是内置敏感度类型： 
+- 如果计划使用[自定义敏感信息类型](sensitive-information-type-learn-about.md)，而不是内置敏感度类型：
     - 自定义敏感性信息类型仅适用于执行自定义敏感性信息类型后在 SharePoint 或 OneDrive 中添加或修改的内容。
     - 若要测试新的自定义敏感信息类型，请在创建自动标记策略前创建它们，然后创建新文档（其中包含用于测试的示例数据）。
 
@@ -254,42 +254,42 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 ### <a name="creating-an-auto-labeling-policy"></a>创建自动标记策略
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到敏感度标签：
-    
+
     - **解决方案** > **信息保护**
-    
+
     如果看不到此选项，请先选择“**全部显示**”。
 
 2. 选择“**自动标记**”选项卡：
-    
+
     ![“自动标记”选项卡](../media/auto-labeling-tab.png)
-    
+
     > [!NOTE]
     > 如果看不到“**自动标记**”选项卡，则此功能当前在你的区域中不可用。
 
 3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略向导”：
-    
-    ![用于实现自动标记的“新建策略向导” ](../media/auto-labeling-wizard.png)
+
+    ![用于实现自动标记的“新建策略向导”](../media/auto-labeling-wizard.png)
 
 4. 对于“**选择要将此标签应用于的信息**”页面：选择其中一个模板，如“**财务**”或“**隐私**”。 可使用“**显示选项**”下拉列表来优化搜索。 或者，如果模板无法满足你的要求，请选择“**自定义策略**”。 选择“**下一步**”。
 
 5. 对于“**为自动标记策略命名**”页面：提供唯一的名称，并选择性地提供描述，以帮助识别自动应用的标签、位置和条件（用于标识要标记的内容）。
 
 6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 网站和 OneDrive 的位置。 然后选择“**下一步**”。
-    
-    ![选择位置页面自动标记向导 ](../media/locations-auto-labeling-wizard.png)
-    
+
+    ![选择位置页面自动标记向导](../media/locations-auto-labeling-wizard.png)
+
     必须指定单独的 SharePoint 网站和 OneDrive 帐户。 对于 OneDrive，用户的 OneDrive 帐户的 URL 采用以下格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-    
+
     例如，对于 contoso 租户中用户名为“rsimone”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-    
+
     要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果需要针对每个位置使用不同的规则，请选择“**高级规则**”。 然后选择“**下一步**”。
-    
+
     这些规则使用包含敏感信息类型和共享选项的条件：
     - 对于敏感信息类型，你可以选择内置和自定义敏感信息类型。
     - 对于共享选项，你可以选择“**仅与组织内部人员共享**”或“**与组织外部人员共享**”。
-    
+
     如果你的唯一位置是 **Exchange**，或者如果你选择“**高级规则**”，则还可以选择其他条件：
     - 发件人 IP 地址为
     - 收件人域为
@@ -306,19 +306,19 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     - 发件人域为
     - 收件人所在组为
     - 发件人为
-    
+
     可以为上述每个条件指定例外。
-    
+
 8. 根据先前的选择，你现在有机会使用条件和例外来创建新规则。
-    
+
     敏感信息类型的配置选项与为 Office 应用自动标记所选的选项相同。 如果需要详细信息，请参阅[配置标签的敏感信息类型](#configuring-sensitive-info-types-for-a-label)。
-    
+
     定义所需的所有规则并确认其状态为“开启”后，请选择“**下一步**”，以继续选择要自动应用的标签。
 
 11. 对于“**选择要自动应用的标签**”页面：选择“**+ 选择标签**”，从“**选择敏感度标签**”窗格中选择一个标签，然后选择“**下一步**”。
 
-12. 对于“**决定是立即还是以后测试策略**”页面：如果现在已准备好运行自动标记策略，请在模拟模式中选择“**在模拟模式下运行策略**”。 否则，请选择“**保持策略关闭**”。 选择“**下一步**”： 
-    
+12. 对于“**决定是立即还是以后测试策略**”页面：如果现在已准备好运行自动标记策略，请在模拟模式中选择“**在模拟模式下运行策略**”。 否则，请选择“**保持策略关闭**”。 选择“**下一步**”：
+
     ![测试策略自动标记向导](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. 对于“摘要”页：审阅自动标记策略的配置，并进行所需的任何更改，然后完成向导。
@@ -330,9 +330,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 - 对于“**禁用**”部分中的策略，选择“**编辑策略**”按钮。
 
 - 对于“**模拟**”部分中的策略，从以下任一选项卡中，选择页面顶部的“**编辑** 策略”选项：
-    
+
     ![启用自动标记策略选项](../media/auto-labeling-edit.png)
-    
+
     如果你已准备好运行策略而不进行模拟，请选择“**启用策略**”选项。
 
 自动策略将持续运行，直至删除。 例如，新建和已修改的文档将包含在当前的策略设置中。
@@ -350,12 +350,12 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 在 PowerShell 中运行命令之前，必须先[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-若要创建新的自动标记策略： 
+若要创建新的自动标记策略：
 
 ```powershell
 New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
-此命令将为你指定的 SharePoint 网站创建一个自动标记策略。 对于 OneDrive 位置，请改为使用 *OneDriveLocation* 参数。 
+此命令将为你指定的 SharePoint 网站创建一个自动标记策略。 对于 OneDrive 位置，请改为使用 *OneDriveLocation* 参数。
 
 若要将其他网站添加到现有的自动标记策略中：
 
@@ -389,11 +389,11 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 尽管自动标记是对组织拥有的 Office 文件进行分类、标记和保护的最有效方法之一，但请检查是否可以使用任何其他方法对其进行补充，以提高标记覆盖范围：
 
 - 使用 [Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)时：
-    
+
     - 对于本地数据存储（如网络共享和 SharePoint Server 库）中的文件：使用[扫描程序](/azure/information-protection/deploy-aip-scanner)发现这些文件中的敏感信息并相应地对其进行标记。 如果计划将这些文件迁移或上传到 Microsoft 365 中的 SharePoint，请使用扫描程序标记文件，然后再将它们移到云中。
-    
+
     - 如果在使用敏感度标签之前使用了另一种标签解决方案：使用 PowerShell 和[高级设置重复使用这些解决方案中的标签](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions)。
 
-- 在为用户提供要应用哪些敏感度标签的培训后，鼓励[手动标记](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。 当你确信用户知道要应用哪个标签时，请考虑将默认标签和强制标签配置为[策略设置](sensitivity-labels.md#what-label-policies-can-do)。 
+- 在为用户提供要应用哪些敏感度标签的培训后，鼓励[手动标记](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。 当你确信用户知道要应用哪个标签时，请考虑将默认标签和强制标签配置为[策略设置](sensitivity-labels.md#what-label-policies-can-do)。
 
 此外，请考虑在 SharePoint 中[默认将新文件标记为敏感](/sharepoint/sensitive-by-default)，以防止来宾访问新添加的文件，直到至少有一项 DLP 策略扫描文件内容。

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 了解 dlp 策略条件和例外
-ms.openlocfilehash: 54c66f36e6a4b59147461ad154a4012f62bda77f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 4fd61e0f288ef0dfd34af1d2f4dde3dbfef9cee9
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114388"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226931"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP 策略条件、例外和操作
 
@@ -29,10 +29,10 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 - 条件定义要包含内容
 - 异常定义要排除哪些内容。
 - 操作定义因条件或例外而发生的情况
- 
+
 大多数条件和例外都有一个支持一个或多个值的属性。 例如，如果将 DLP 策略应用于Exchange，则"**发件人是"** 条件需要邮件的发件人。 一些条件有两个属性。 例如，“**邮件头包含以下任何词语**”条件需要一个属性来指定邮件头字段，需要第二个属性来指定要在头字段中查找的文本。 某些条件或例外没有任何属性。 例如 **，"附件受密码保护"** 条件只是查找邮件中受密码保护的附件。
 
-操作通常需要其他属性。 例如，当 DLP 策略规则重定向邮件时，需要指定邮件重定向到何处。 
+操作通常需要其他属性。 例如，当 DLP 策略规则重定向邮件时，需要指定邮件重定向到何处。
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
 
 ## <a name="conditions-and-exceptions-for-dlp-policies"></a>DLP 策略的条件和例外
@@ -54,7 +54,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |发件人为 |condition： *From* <br/> exception： *ExceptIfFrom*      |Addresses |     由组织中指定的邮箱、邮件用户、邮件联系人或Microsoft 365组发送的邮件。|
 |发件人 IP 地址为     |condition： *SenderIPRanges*<br/> 例外 *：ExceptIfSenderIPRanges*         |  IPAddressRanges       | 发件人的 IP 地址匹配指定的 IP 地址或位于指定的 IP 地址范围内的邮件。       |
 |发件人地址包含词语   | condition： *FromAddressContainsWords* <br/> exception： *ExceptIfFromAddressContainsWords*        |   Words      |   发件人电子邮件地址中包含指定词语的邮件。|
-| 发件人地址匹配模式    | condition： *FromAddressMatchesPatterns* <br/> exception： *ExceptFromAddressMatchesPatterns*       |      模式   |  发件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。  |
+| 发件人地址与模式匹配    | condition： *FromAddressMatchesPatterns* <br/> exception： *ExceptFromAddressMatchesPatterns*       |      模式   |  发件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。  |
 |发件人域为  |  condition： *SenderDomainIs* <br/> 例外 *：ExceptIfSenderDomainIs*       |DomainName         |     发件人的电子邮件地址域与指定值匹配的邮件。 如果您需要查找包含指定域 (例如，域) 的任何子域的发件人域，请使用与 **(** *FromAddressMatchesPatterns*) 条件匹配的发件人地址，并使用语法"' \. domain \. com$"指定域。    |
 |发件人作用域    | condition： *FromScope* <br/> exception： *ExceptIfFromScope*    | UserScopeFrom    |    由内部或外部发件人发送的邮件。    |
 |发件人的指定属性包括以下任何词语|condition： *SenderADAttributeContainsWords* <br/> 例外 *：ExceptIfSenderADAttributeContainsWords*|首要属性： `ADAttribute` <p> 第二个属性： `Words`|发件人的指定的 Active Directory 属性包含任意的指定词语的邮件。|
@@ -66,8 +66,8 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |---------|---------|---------|---------|
 |收件人为|  condition： *SentTo* <br/> exception： *ExceptIfSentTo* | Addresses | 其中一个收件人是组织中指定的邮箱、邮件用户或邮件联系人的邮件。 收件人可以在邮件的"**收件人****"、"抄** 送"**或"密件** 抄送"字段中。|
 |收件人域为|   condition： *RecipientDomainIs* <br/> exception： *ExceptIfRecipientDomainIs* |   DomainName |    收件人电子邮件地址的域与指定值匹配的邮件。|
-|收件人地址包含词语|  condition： *AnyOfRecipientAddressContainsWords* <br/> exception： *ExceptIfAnyOfRecipientAddressContainsWords*|  Words|  收件人电子邮件地址中包含指定词语的邮件。 <br/>**注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
-|收件人地址匹配模式| condition： *AnyOfRecipientAddressMatchesPatterns* <br/> exception： *ExceptIfAnyOfRecipientAddressMatchesPatterns*| 模式    |收件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。 <br/> **注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
+|收件人地址包含字词|  condition： *AnyOfRecipientAddressContainsWords* <br/> exception： *ExceptIfAnyOfRecipientAddressContainsWords*|  Words|  收件人电子邮件地址中包含指定词语的邮件。 <br/>**注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
+|收件人地址与模式匹配| condition： *AnyOfRecipientAddressMatchesPatterns* <br/> exception： *ExceptIfAnyOfRecipientAddressMatchesPatterns*| 模式    |收件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。 <br/> **注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
 |发送到的| condition： *SentToMemberOf* <br/> exception： *ExceptIfSentToMemberOf*|  Addresses|  包含收件人的邮件，这些收件人是指定通讯组、已启用邮件的安全组或Microsoft 365组的成员。 组可以在邮件的"**收件人****"、"** 抄送"**或"密** 件抄送"字段中。|
 
 ### <a name="message-subject-or-body"></a>邮件主题或正文
@@ -75,7 +75,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |**DLP 中的条件或例外** | **powerShell 中的条件/Microsoft 365参数** |**属性类型**| **说明**|
 |---------|---------|---------|---------|
 |主题包含字词或短语| condition： *SubjectContainsWords* <br/> exception： *ExceptIf SubjectContainsWords*| Words   |在" Subject "字段中包含指定词语的邮件。|
-|主题匹配模式|condition： *SubjectMatchesPatterns* <br/> exception： *ExceptIf SubjectMatchesPatterns*|模式   |Subject 字段包含匹配指定正则表达式的文本模式的邮件。|
+|主题与模式匹配|condition： *SubjectMatchesPatterns* <br/> exception： *ExceptIf SubjectMatchesPatterns*|模式   |Subject 字段包含匹配指定正则表达式的文本模式的邮件。|
 |内容包含|  condition： *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*| SensitiveInformationTypes|  包含由 DLP 策略中的数据丢失防护定义的敏感信息 () 文档。|
 | 主题或正文匹配模式    | condition： *SubjectOrBodyMatchesPatterns* <br/> exception： *ExceptIfSubjectOrBodyMatchesPatterns*    | 模式    | 主题字段或邮件正文包含匹配指定正则表达式的文本模式的邮件。    |
 | 主题或正文包含字词    | condition： *SubjectOrBodyContainsWords* <br/> exception： *ExceptIfSubjectOrBodyContainsWords*    | Words    | 主题字段或邮件正文中具有指定词语的邮件    |
@@ -101,7 +101,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |**DLP 中的条件或例外**| **powerShell 中的条件/Microsoft 365参数**| **属性类型**|  **说明**|
 |---------|---------|---------|---------|
 |标头包含单词或短语|condition： *HeaderContainsWords* <br/> exception： *ExceptIfHeaderContainsWords*|  哈希表  |包含指定头字段的邮件，以及该头字段的值包含指定的单词。|
-|标头与模式匹配|   condition： *HeaderMatchesPatterns* <br/> exception： *ExceptIfHeaderMatchesPatterns*|    哈希表  |包含指定头字段以及该头字段的值的邮件包含指定的正则表达式。|
+|标题与模式匹配|   condition： *HeaderMatchesPatterns* <br/> exception： *ExceptIfHeaderMatchesPatterns*|    哈希表  |包含指定头字段以及该头字段的值的邮件包含指定的正则表达式。|
 
 ### <a name="message-properties"></a>邮件属性
 
@@ -126,7 +126,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |将邮件转发给发件人的经理进行审批| 适度|第一个属性 *：ModerateMessageByManager*</br> Second 属性 *：Boolean*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法 @{ModerateMessageByManager = <$true \| $false>;|
 |将邮件转发给特定审批者进行审批| 适度|第一个属性 *：ModerateMessageByUser*</br>次要属性：*Addresses*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法：@{ ModerateMessageByUser = @ ("emailaddress1"，"emailaddress2",..."emailaddressN") }|
 |添加收件人|AddRecipients|第一个属性 *：Field*</br>次要属性：*Addresses*| 将一个或多个收件人添加到邮件的"收件人/抄送/密件抄送"字段中。 此参数使用语法：@{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
-|将发件人的经理添加为收件人|AddRecipients | 第一个属性 *：AddedManagerAction*</br>Second 属性 *：Field* | 将发件人的经理添加到邮件中作为指定收件人类型 ( To 、 Cc 、 Bcc )，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用语法：@{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
-Prepend subject    |PrependSubject    |String    |将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。    
-|应用 HTML 免责声明    |ApplyHtmlDisclaimer    |第一个属性 *：Text*</br>Second 属性 *：Location*</br>第三个属性 *：回退操作*    |将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <Append \| Prepend>;FallbackAction = <\| Wrap Ignore \| Reject> }
+|将发件人的经理添加为收件人|AddRecipients | 第一个属性 *：AddedManagerAction*</br>Second 属性 *：Field* | 将发件人的经理添加到邮件中作为指定收件人类型 (To、Cc、Bcc)，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用语法：@{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|
+Prepend subject    |PrependSubject    |String    |将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。|
+|应用 HTML 免责声明    |ApplyHtmlDisclaimer    |第一个属性 *：Text*</br>Second 属性 *：Location*</br>第三个属性 *：回退操作*    |将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <Append \| Prepend>;FallbackAction = <\| Wrap Ignore \| Reject> }|
 |删除Office 365 邮件加密和权限保护    | RemoveRMSTemplate | 不适用| 删除Office 365应用于电子邮件的加密|

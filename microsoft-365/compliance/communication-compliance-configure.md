@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821375"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227339"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -50,15 +50,15 @@ ms.locfileid: "52821375"
 
 通信合规性策略中包括的用户必须获得以上许可证之一。
 
->[!IMPORTANT]
->Office 365 高级合规版已不再作为独立订阅销售。 当前订阅到期后，客户应过渡到以上订阅之一，其中包含了相同的或其它合规性功能。
+> [!IMPORTANT]
+> Office 365 高级合规版已不再作为独立订阅销售。 当前订阅到期后，客户应过渡到以上订阅之一，其中包含了相同的或其它合规性功能。
 
 如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1（必选）：启用通信合规性权限
 
->[!Important]
->默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。 配置角色组之后，可能需要长达 30 分钟时间将角色组权限应用到整个组织的已分配用户。
+> [!IMPORTANT]
+> 默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。 配置角色组之后，可能需要长达 30 分钟时间将角色组权限应用到整个组织的已分配用户。
 
 共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要在 Microsoft 365 合规中心中将 **通信合规性** 作为菜单选项提供并继续执行这些配置步骤，必须将你分配给 *通信符合性* 或 *通信符合性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
 
@@ -130,7 +130,7 @@ ms.locfileid: "52821375"
 |:-----|:-----|:-----|
 |受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365动态成员身份的组 |
 | 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
-  
+
 在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
 
 如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅搜索本地用户的 Teams 聊天[数据](search-cloud-based-mailboxes-for-on-premises-users.md)。
@@ -154,11 +154,11 @@ ms.locfileid: "52821375"
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
-    ForEach ($M in $Mbx) 
+    ForEach ($M in $Mbx)
     {
       Write-Host "Adding" $M.DisplayName
       Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
-      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded
       $i++
     }
     Write-Host $i "Mailboxes added to supervisory review distribution group."
@@ -179,14 +179,14 @@ ms.locfileid: "52821375"
 - [配置适用于 Microsoft 365 本机模式的 Yammer 网络](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>步骤 5（必需）：创建通信合规性策略
-  
->[!Important]
->不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
 
-1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
+> [!IMPORTANT]
+> 不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
+
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 <https://compliance.microsoft.com>。
 
 2. 在 Microsoft 365 合规中心中，选择“**通信合规性**”。
-  
+
 3. 选择“**策略**”选项卡。
 
 4. 选择“**创建策略**”从模板创建和配置新策略，或创建和配置自定义策略。
@@ -201,8 +201,8 @@ ms.locfileid: "52821375"
 
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
-    >[!NOTE]
-    >如果要启用光学字符识别 [ (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
+    > [!NOTE]
+    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
 
     如果选择使用策略向导创建自定义策略，将需要：
 

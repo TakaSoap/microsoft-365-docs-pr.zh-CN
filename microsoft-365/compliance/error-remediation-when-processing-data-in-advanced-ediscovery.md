@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何使用错误修正来更正Advanced eDiscovery可能会阻止正确处理内容的数据问题。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906980"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226655"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 
@@ -32,8 +32,8 @@ ms.locfileid: "50906980"
 
 ## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>创建错误修正会话以修正包含处理错误的文件
 
->[!NOTE]
->如果错误修正向导在下列过程中随时关闭，则可以通过在"视图"下拉菜单中选择"修正"，从"处理"选项卡返回到错误修正会话。 
+> [!NOTE]
+> 如果错误修正向导在下列过程中随时关闭，则可以通过在"视图"下拉菜单中选择"修正"，从"处理"选项卡返回到错误修正会话。 
 
 1. 在"**查看** Advanced eDiscovery"菜单中的"处理"选项卡上，选择"视图"下拉菜单中的"错误"，然后在"范围"下拉菜单中选择审阅集或整个案例。  此部分显示案例中的所有错误或特定审阅集中的错误。
 
@@ -51,13 +51,13 @@ ms.locfileid: "50906980"
 
     ![下载文件](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. 如果要下载文件，请指定 **下载目标路径**。 这是本地计算机上将要下载文件的父文件夹路径。  默认路径 %USERPROFILE%\Downloads\errors 指向登录用户的下载文件夹。 如果需要，可以更改此路径。 如果更改了该路径，建议您使用本地文件路径以获得最佳性能。 请勿使用远程网络路径。 例如，可以使用路径 **C：\Remediation**。 
+5. 如果要下载文件，请指定 **下载目标路径**。 这是本地计算机上将要下载文件的父文件夹路径。  默认路径 %USERPROFILE%\Downloads\errors 指向登录用户的下载文件夹。 如果需要，可以更改此路径。 如果更改了该路径，建议您使用本地文件路径以获得最佳性能。 请勿使用远程网络路径。 例如，可以使用路径 **C：\Remediation**。
 
    父文件夹的路径将自动添加到 AzCopy (**作为 /Dest** 参数的值) 。
 
-6. 通过单击 **复制到剪贴板** 复制预定义的命令。 打开命令Windows，粘贴 AzCopy 命令，然后按 **Enter。**  
+6. 通过单击 **复制到剪贴板** 复制预定义的命令。 打开命令Windows，粘贴 AzCopy 命令，然后按 **Enter。**
 
-    ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![准备错误修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > 必须使用 AzCopy v8.1 成功使用"下载文件"页上 **提供** 的命令。 还必须使用 AzCopy v8.1 上载步骤 10 中的文件。 若要安装此版本的 AzCopy，请参阅 Windows 上的[使用 AzCopy v8.1 传输Windows。](/previous-versions/azure/storage/storage-use-azcopy) 如果提供的 AzCopy 命令失败，请参阅疑难解答[AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)。
@@ -97,7 +97,7 @@ ms.locfileid: "50906980"
 
 11. 运行 AzCopy 命令后，单击"**下一步： 处理文件"。**
 
-    处理完成后，你可以转到查看集并查看修正的文件。 
+    处理完成后，你可以转到查看集并查看修正的文件。
 
 ## <a name="remediating-errors-in-container-files"></a>修正容器文件的错误
 
@@ -109,7 +109,7 @@ ms.locfileid: "50906980"
 
 ## <a name="what-happens-when-files-are-remediated"></a>修正文件时会发生什么情况
 
-上载修正后的文件时，将保留原始元数据，以下字段除外： 
+上载修正后的文件时，将保留原始元数据，以下字段除外：
 
 - ExtractedTextSize
 - HasText

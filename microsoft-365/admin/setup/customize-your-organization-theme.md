@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006909"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227775"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -41,13 +41,13 @@ ms.locfileid: "53006909"
 
 2. 在"**组织配置文件"** 选项卡上，选择"**自定义主题"。**
 
-可以使用以下选项卡自定义所有主题。
+可以使用以下选项卡自定义所有组织主题。
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[常规](#general-modify-a-theme) <br/> |修改主题名称，并分配最多五个组 (（如果适用) ）。  <br/> |
-|[徽标](#logos-specify-your-theme-logos) <br/> |添加主题徽标，包括Office主题和移动选项。  <br/> |
-|[Colors](#colors-choose-theme-colors) <br/> |通过指定导航栏、强调文字、文本和图标颜色自定义配色方案。 <br/> |
+|[徽标](#logos-specify-your-theme-logos) <br/> |添加组织徽标，包括深色主题的备用徽标。  <br/> |
+|[Colors](#colors-choose-theme-colors) <br/> |通过指定导航栏、强调文字和图标颜色自定义配色方案。 <br/> |
 
 ## <a name="general-modify-a-theme"></a>常规：修改主题
 
@@ -64,7 +64,7 @@ ms.locfileid: "53006909"
 > [!IMPORTANT]
 > 默认主题是唯一的，不能重命名，并且适用于组织内部的每个人。 若要删除默认主题，您必须首先删除所有其他主题。
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot： General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot： General tab showing the default theme for your organization":::
 
 ### <a name="create-a-group-theme"></a>创建组主题
 
@@ -76,7 +76,7 @@ ms.locfileid: "53006909"
 
 3. 选择“**保存**”。
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot： General tab showing the default theme for a group of users in your organization":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot： General tab showing the default theme for a group of users in your organization":::
 
 ## <a name="logos-specify-your-theme-logos"></a>徽标：指定主题徽标
 
@@ -84,9 +84,11 @@ ms.locfileid: "53006909"
 
 - **默认徽标**：添加指向徽标的 URL 位置。 确保 URL 使用 HTTPS。 添加允许匿名访问且不需要身份验证的 HTTPS 图像 URL。 对于默认主题，还可以选择上传小于 10kb 的徽标图像。 默认徽标可以是 JPG、PNG、GIF 或 SVG 格式。 对于 SVG 图像，它们的大小将调整为垂直调整为 24 像素。 JPG、PNG、GIF 图像将缩放为 200 x 48 像素。 徽标纵横比将始终保留。
 - **备用徽标**：添加指向徽标的 URL 位置。 应优化备用徽标，以用于Office主题。 与默认徽标的要求相同。
-- **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。
+- **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。 如果未选择徽标的 URL 位置，它将默认为Office主页。
 
 选择 **保存** 以保存所做的更改。
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot： Logos tab showing the logo options":::
 
 你随时都可以删除徽标。 只需返回到"**徽标"页** 并选择"删除 **"。**
   
@@ -98,9 +100,8 @@ ms.locfileid: "53006909"
 - **文本和图标颜色**：选择要用于顶部导航栏上的文本和图标的颜色。
 - **主题色**：选择一个在白色或浅色背景上显示良好的颜色。 主题色用于为在白色或浅色背景上显示的链接和按钮设置颜色。 例如，主题色用于为用户收件箱及其 Office.com 门户页面上的元素设置颜色。
 - **重置颜色**：选择此链接将颜色重置为默认颜色。
-- **应该使用哪种徽标？：** 选择默认徽标或您自己创建的其他徽标。
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -137,7 +138,7 @@ ms.locfileid: "53006909"
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>为什么我每次上载徽标 URL 时都会收到错误消息。  
 
-请确保你使用的徽标指定为可公开地址 URL。 请按照以下步骤将徽标上传到[Azure Blob](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)存储空间或 Office 365 内容交付网络 Online [SharePoint服务器](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
+请确保你使用的徽标指定为可公开地址 URL。 请按照以下步骤将徽标[上传到 Azure Blob](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)存储或 Office 365 内容分发网络 Online SharePoint[应用](../../enterprise/use-microsoft-365-cdn-with-spo.md)。
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>为什么我收到消息"不满足最小颜色对比率 4.5：1"？
 

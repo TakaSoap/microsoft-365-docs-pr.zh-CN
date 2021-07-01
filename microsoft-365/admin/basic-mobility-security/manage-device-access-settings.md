@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可以帮助您保护和管理移动设备。
-ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 24eeb1dfccef3d30e577b15ecb9d2fda4d902cdc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876944"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228155"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>在基本移动性和安全性中管理设备访问设置
 
@@ -33,10 +33,10 @@ ms.locfileid: "49876944"
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. 在浏览器中，键入  [https://protection.office.com](https://protection.office.com/) ：。    
+2. 在浏览器中，键入  [https://protection.office.com](https://protection.office.com/) ：。
 
-    >[!IMPORTANT]
-    >如果这是您第一次使用基本移动性和安全性进行Microsoft 365 商业标准版激活它[：Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 激活后，使用安全与合规Office 365[管理&设备](https://protection.office.com/)。
+    > [!IMPORTANT]
+    > 如果这是您第一次使用基本移动性和安全性进行Microsoft 365 商业标准版激活它[：Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 激活后，使用安全与合规Office 365[管理&设备](https://protection.office.com/)。
 
 3. 转到"数据丢失防护> **设备管理**   >  **设备策略"，** 然后选择" **管理组织范围内的设备访问设置"。**
 

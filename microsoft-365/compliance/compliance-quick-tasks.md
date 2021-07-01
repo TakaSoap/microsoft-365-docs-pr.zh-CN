@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 了解将帮助您快速开始使用 Microsoft 365 中Microsoft 365。
-ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113388"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227255"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
@@ -30,7 +30,7 @@ ms.locfileid: "52113388"
 
 ## <a name="task-1-configure-compliance-permissions"></a>任务 1：配置合规性权限
 
-管理组织中有权访问安全与合规中心Microsoft 365查看内容和执行管理任务非常重要。 Microsoft 365提供特定于合规性和使用合规性中心中包含的工具的管理Microsoft 365角色。
+管理组织中哪些人员有权访问 Microsoft 365 合规中心查看内容和执行管理任务非常重要。 Microsoft 365提供特定于合规性和使用应用程序中包含的工具的管理Microsoft 365 合规中心。
 
 首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施合规性解决方案之前，需要确保向合规性数据管理员和合规性管理员管理员角色分配适当的人员Microsoft 365。  你还需要将用户分配给全局Azure Active Directory角色，以查看合规性管理器中的数据。
 
@@ -44,10 +44,10 @@ ms.locfileid: "52113388"
 
 有关合规性管理器的分步指南，请参阅合规性管理器 [入门](compliance-manager-setup.md)。
 
->[!IMPORTANT]
->大多数组织都紧密集成了安全性和合规性。 组织解决基本安全、威胁防护、标识和访问管理方面的问题非常重要，这有助于提供针对安全性和合规性的深层防御方法。
+> [!IMPORTANT]
+> 大多数组织都紧密集成了安全性和合规性。 组织解决基本安全、威胁防护、标识和访问管理方面的问题非常重要，这有助于提供针对安全性和合规性的深层防御方法。
 >
->检查Microsoft 365[安全](../security/defender/microsoft-secure-score.md)中心的安全Microsoft 365，并完成以下文章中概述的任务：
+> 检查Microsoft 365[安全](../security/defender/microsoft-secure-score.md)中心的安全Microsoft 365，并完成以下文章中概述的任务：
 >
 > - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/office-365-security/security-roadmap.md)
 > - [支持在家工作的安全团队的 12 大任务](../security/top-security-tasks-for-remote-work.md)
@@ -56,7 +56,7 @@ ms.locfileid: "52113388"
 
 现在，你已确定组织的当前状态以及谁可以管理合规性功能，下一步是确保你拥有数据以执行合规性调查并生成组织中网络和用户活动的报告。 启用审核也是本文稍后介绍的合规性解决方案的重要先决条件。
 
-由组织提供的审核日志是一个有价值的工具，有助于将合规性要求与解决方案相匹配，从而帮助您管理和监视需要改进的合规性领域。 审核日志记录必须先启用，然后才能记录活动，然后才能搜索审核日志。 启用后，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。
+Insights提供审核日志是一个有价值的工具，有助于将合规性要求与解决方案相匹配，从而帮助您管理和监视需要改进的合规性领域。 审核日志记录必须先启用，然后才能记录活动，然后才能搜索审核日志。 启用后，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。
 
 有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 

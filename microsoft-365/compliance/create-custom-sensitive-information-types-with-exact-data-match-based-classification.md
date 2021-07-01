@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964652"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227123"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -385,15 +385,15 @@ ms.locfileid: "52964652"
 - 向 **EDM\_DataUploaders** 安全组中添加一个 Microsoft 365 工作或学校帐户
 - 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
 - 用于上传的计算机上应含有以下内容的目录：
-    -  EDMUploadAgent
-    - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中所示
-    -  以及输出的哈希和随机混淆值文件
-    - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
+  - EDMUploadAgent
+  - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中所示
+  - 输出哈希和 salt 文件
+  - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 - 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
+1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](/office365/admin/email/create-edit-or-delete-a-security-group)，名为 **EDM\_DataUploaders**。
 
 2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
@@ -401,18 +401,17 @@ ms.locfileid: "52964652"
 
 此计算机必须对你的 Microsoft 365 租户拥有直接访问权限。
 
->[!NOTE]
+> [!NOTE]
+>
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
-
-> [!TIP]
+>
 > （可选）您可以通过运行：在.csv对文件或 .tsv 文件运行验证：
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->有关 EdmUploadAgent.exe 支持的所有参数的详细信息，请运行
+> 有关 EdmUploadAgent.exe 支持的所有参数的详细信息，请运行
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>按订阅类型链接到 EDM 上传代理
 

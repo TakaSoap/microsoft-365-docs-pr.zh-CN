@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用内置的"基本移动性和安全性"从已注册的设备中删除信息。
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706138"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228143"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本移动性和安全性中擦除移动设备
 
@@ -45,7 +45,7 @@ ms.locfileid: "52706138"
 
 ## <a name="wipe-a-mobile-device"></a>擦除移动设备
 
-1. 转到管理 [Microsoft 365中心](../../admin/admin-overview/about-the-admin-center.md)。
+1. 转到 ["Microsoft 365 管理中心"。](../../admin/admin-overview/about-the-admin-center.md)
 
 2. 在搜索字段中键入"移动设备管理"，然后从结果列表中选择"移动设备管理"。
 
@@ -86,5 +86,6 @@ ms.locfileid: "52706138"
 |Microsoft 365受 Intune 应用保护策略保护，则擦除应用数据。 不会删除这些应用。 对于不受移动应用程序管理保护的设备 (MAM) 策略，Outlook OneDrive不会删除缓存数据。<br/>**注意** 要应用 Intune 应用保护策略，你必须拥有 Intune 许可证。|是|是|
 |不再强制执行基本移动性和安全性应用于设备的策略设置;用户可以更改设置。|是|是|
 |将删除由基本移动性和安全性创建的电子邮件配置文件，并删除设备上缓存的电子邮件。|是|不适用|
->[!NOTE]
->公司门户应用在适用于 iOS 的应用商店和适用于 Android 设备的 Play 应用商店中提供。
+
+> [!NOTE]
+> 公司门户应用在适用于 iOS 的应用商店和适用于 Android 设备的 Play 应用商店中提供。

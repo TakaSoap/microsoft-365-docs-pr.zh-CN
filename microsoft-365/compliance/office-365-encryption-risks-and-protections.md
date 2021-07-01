@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: 本文将介绍保护风险Office 365加密技术。
-ms.openlocfilehash: 00b00f599f440d3ce3ccb78c3cada09cb3b67cf2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6bb0e705095b4f31c730a21921985131785dc3f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927792"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226259"
 ---
 # <a name="encryption-risks-and-protections"></a>加密风险和保护
 
@@ -35,7 +35,7 @@ Microsoft 遵循一种控制和合规性框架，重点关注针对 Microsoft 36
 
 | 加密技术 | 服务 | 密钥管理 | 风险方案 | 值 |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BitLocker | Exchange Online、SharePoint Online 和 Skype for Business | Microsoft | 磁盘或服务器被盗或回收不当。 | BitLocker提供了一种故障安全方法，防止由于服务器/磁盘服务器上被盗或错误回收的硬件 (丢失) 。 |
+| BitLocker | Exchange Online、SharePoint Online 和 Skype for Business | Microsoft | 磁盘或服务器被盗或回收不当。 | BitLocker 提供了一种故障安全方法，用于防止由于服务器/磁盘服务器上被盗或错误回收的硬件 (丢失) 。 |
 | 服务加密 | SharePoint联机、Skype for Business和OneDrive for Business;Exchange Online (路线图)  | Microsoft | 内部或外部黑客尝试以 blob 访问单个文件/数据。 | 如果不访问密钥，将无法解密加密数据。 有助于降低黑客访问数据的风险。 |
 | 客户密钥 | SharePoint联机、OneDrive for Business、Exchange Online 和 Skype for Business | 客户 | N/A (此功能设计为合规性功能;不能作为任何风险的缓解。)  | 帮助客户履行内部法规和合规性义务，以及离开服务并撤销 Microsoft 对数据的访问权限的能力 |
 | 客户端和客户端Microsoft 365 TLS | Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Teams 和 Yammer | Microsoft，客户 | 中间人攻击或其他攻击，通过 Internet 点击Microsoft 365和客户端计算机之间的数据流。 | 此实现为 Microsoft 和客户都提供了价值，并确保数据完整性，因为它Microsoft 365客户端之间流动。 |
@@ -64,7 +64,7 @@ Microsoft 遵循一种控制和合规性框架，重点关注针对 Microsoft 36
 |  | SharePoint Online | 支持 [加密模式 2，](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))这是更新和增强的 RMS 加密实现。 它支持 RSA 2048 签名和加密，SHA-256 用于签名。 | [由 Microsoft](/azure/information-protection/plan-implement-tenant-key)管理，这是默认设置;或 <br> <br> 客户管理，这是 Microsoft 管理的密钥的替代项。 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，无需额外付费。 有关详细信息，请参阅 [实现自带密钥](/azure/information-protection/plan-implement-tenant-key)。 在此配置中，nCipher HSM 用于保护密钥。 有关详细信息，请参阅[nCipher HSM 和 Azure RMS。](https://www.thales-esecurity.com/msrms/cloud) | 是 |
 | S/MIME | Exchange Online | 加密消息语法 Standard 1.5 (PKCS #7)  | 取决于部署的由客户管理的公钥基础结构。 密钥管理由客户执行，Microsoft 从无法访问用于签名和解密的私钥。 | 是，当配置为使用 3DES 或 AES256 加密传出邮件时 |
 | Office 365 邮件加密 | Exchange Online | 与 Azure RMS (加密模式 [2](./technical-reference-details-about-encryption.md) - RSA 2048 用于签名和加密，SHA-256 用于签名)  | 使用 Azure 信息保护作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。 | 是 |
-| 合作伙伴组织的 SMTP TLS | Exchange Online | 带 AES 256 的 TLS 1.2 | Exchange Online (outlook.office.com) TLS 证书是 2048 位 SHA-256，其 RSA 加密证书由 DigiCert 云服务 CA-1 颁发。 <br> <br> Exchange Online TLS 根证书是 2048 位 SHA-1，其 RSA 加密证书由[GlobalSign Root CA - R1 颁发](./exchange-online-uses-tls-to-secure-email-connections.md?view=o365-worldwide#tls-certificate-information-for-exchange-online)。 <br> <br> 请注意，出于安全考虑，我们的证书会时而更改。 | 是，使用 256 位密码强度的 TLS 1.2 时 |
+| 合作伙伴组织的 SMTP TLS | Exchange Online | 带 AES 256 的 TLS 1.2 | Exchange Online (outlook.office.com) TLS 证书是 2048 位 SHA-256，其 RSA 加密证书由 DigiCert 云服务 CA-1 颁发。 <br> <br> Exchange Online TLS 根证书是 2048 位 SHA-1，其 RSA 加密证书由[GlobalSign Root CA - R1 颁发](./exchange-online-uses-tls-to-secure-email-connections.md#tls-certificate-information-for-exchange-online)。 <br> <br> 请注意，出于安全考虑，我们的证书会时而更改。 | 是，使用 256 位密码强度的 TLS 1.2 时 |
 
 *\*此表中引用的 TLS 证书用于美国数据中心;非美国数据中心还使用 2048 位 SHA256RSA 证书。*
 
@@ -88,6 +88,6 @@ Microsoft 遵循一种控制和合规性框架，重点关注针对 Microsoft 36
 |  | SharePoint Online | 支持 [加密模式 2，](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))这是更新和增强的 RMS 加密实现。 它支持 RSA 2048 签名和加密，SHA-256 用于签名中的哈希。 | [由 Microsoft](/azure/information-protection/plan-implement-tenant-key)管理，这是默认设置;或 <br> <br> 客户管理的 (也称为 BYOK) ，它是 Microsoft 托管密钥的替代方法。 具有 IT 托管的 Azure 订阅的组织可以使用 BYOK 并记录其使用情况，无需额外付费。 有关详细信息，请参阅 [实现自带密钥](/azure/information-protection/plan-implement-tenant-key)。 <br> <br> 在 BYOK 方案中，nCipher HSM 用于保护密钥。 有关详细信息，请参阅[nCipher HSM 和 Azure RMS。](https://www.thales-esecurity.com/msrms/cloud) | 是 |
 | S/MIME | Exchange Online | 加密消息语法 Standard 1.5 (PKCS #7)  | 取决于部署的公钥基础结构。 | 是，当配置为使用 3DES 或 AES-256 加密传出邮件时。 |
 | Office 365 邮件加密 | Exchange Online | 与 Azure RMS (加密模式 [2](./technical-reference-details-about-encryption.md) - RSA 2048 用于签名和加密，SHA-256 用于签名和加密)  | 使用 Azure RMS 作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。 <br> <br> 如果使用 Microsoft Azure RMS 来获取密钥，则使用加密模式 2。 如果您使用 Active Directory (AD) RMS 获取这些密钥，则可以使用加密模式 1，也可以使用加密模式 2。 使用的方法取决于您的本地 AD RMS 部署。 加密模式 1 是原始的 AD RMS 加密实现。 它支持 RSA 1024 签名和加密，并支持 SHA-1 签名。 除了使用 HSM 的 BYOK 配置之外，所有当前版本的 RMS 仍支持此模式。 | 是 |
-| 合作伙伴组织的 SMTP TLS | Exchange Online | 带 AES 256 的 TLS 1.2 | Exchange Online (outlook.office.com) TLS 证书是 2048 位 SHA-256，其 RSA 加密证书由 DigiCert 云服务 CA-1 颁发。 <br> <br> Exchange Online TLS 根证书是 2048 位 SHA-1，其 RSA 加密证书由[GlobalSign Root CA - R1 颁发](./exchange-online-uses-tls-to-secure-email-connections.md?view=o365-worldwide#tls-certificate-information-for-exchange-online)。 <br> <br> 请注意，出于安全考虑，我们的证书会时而更改。 | 是，使用 256 位密码强度的 TLS 1.2 时 |
+| 合作伙伴组织的 SMTP TLS | Exchange Online | 带 AES 256 的 TLS 1.2 | Exchange Online (outlook.office.com) TLS 证书是 2048 位 SHA-256，其 RSA 加密证书由 DigiCert 云服务 CA-1 颁发。 <br> <br> Exchange Online TLS 根证书是 2048 位 SHA-1，其 RSA 加密证书由[GlobalSign Root CA - R1 颁发](./exchange-online-uses-tls-to-secure-email-connections.md#tls-certificate-information-for-exchange-online)。 <br> <br> 请注意，出于安全考虑，我们的证书会时而更改。 | 是，使用 256 位密码强度的 TLS 1.2 时 |
 
 *\*此表中引用的 TLS 证书用于美国数据中心;非美国数据中心还使用 2048 位 SHA256RSA 证书。*

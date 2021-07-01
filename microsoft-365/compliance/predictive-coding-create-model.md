@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 了解如何在 Advanced eDiscovery 中创建预测编码Advanced eDiscovery。 这是使用 Advanced eDiscovery 中的机器学习功能来帮助你在审阅集内标识相关和非相关内容的第一步。
-ms.openlocfilehash: 7724062848d8d757fbfd3a7870853d6f2c409d84
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822487"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226223"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>创建预测编码模型 (预览) 
 
@@ -37,7 +37,7 @@ ms.locfileid: "52822487"
 
 ## <a name="create-a-model"></a>创建模型
 
-1. 在"Microsoft 365合规中心"中，打开Advanced eDiscovery案例，然后选择"**审阅集"** 选项卡。
+1. In the Microsoft 365 合规中心， open an Advanced eDiscovery case and then select the **Review sets** tab.
 
 2. 打开审阅集，然后单击分析 **管理** 预测  >  **编码 (预览) 。**
 

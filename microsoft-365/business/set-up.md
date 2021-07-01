@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解适用于用户Microsoft 365 商业高级版步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624381"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227631"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
 
@@ -64,12 +64,12 @@ ms.locfileid: "52624381"
 4. 在“**添加域**”步骤中，输入要使用的域名（如 contoso.com）。
 
     > [!IMPORTANT]
-    > 如果你在注册期间购买了域，则此处不会看到“**添加域**”步骤。 转到“[添加用户](#add-users-and-assign-licenses)”。
+    > 如果您在注册期间购买了域，您将不会在此处看到 **添加域** 步骤。 转至 [添加用户](#add-users-and-assign-licenses)。
 
     !["个性化您的登录"页面的屏幕截图。](../media/adddomain.png)
 
     
-4. 按照向导中的步骤，在验证您是否拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果你知道域主机，另请参阅[主机特定说明](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
+4. 按照向导中的步骤，在验证您是否拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果您知道您的域主机，另请参阅[将域添加到 Microsoft 365](/microsoft-365/admin/setup/add-domain)。
 
     如果你的托管服务提供商是 GoDaddy 或启用了 [domain connect](/office365/admin/get-help-with-domains/domain-connect) 的其他主机，则此过程很简单，系统会自动要求你登录并让 Microsoft 代表你进行身份验证。
 
@@ -87,7 +87,7 @@ ms.locfileid: "52624381"
 
 1. 如果你Microsoft 365 商业高级版订阅的现有用户 (，例如，如果你已使用 Azure AD 连接) ，则你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
 
-2. 在你添加用户后，还将显示与添加的新用户共享凭据的选项。 可以选择打印、通过电子邮件发送或下载凭据。
+2. 添加用户之后，还将显示与添加的新用户共享凭据的选项。可以选择打印、通过电子邮件发送或下载凭据。
 
 ### <a name="connect-your-domain"></a>连接你的域
 
@@ -99,7 +99,7 @@ ms.locfileid: "52624381"
 1. 安装向导通常将检测你的注册机构，并提供更新注册机构网站上 NS 记录分步说明的链接。 如果没有，请更改[名称服务器以设置Microsoft 365注册机构的名称](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
     - 如果你有现有的 DNS 记录（例如现有网站），但你的 DNS 主机已启用 [domain connect](/office365/admin/get-help-with-domains/domain-connect)，请选择“**为我添加记录**”。 在“**选择联机服务**”页面上，接受所有默认设置，选择“**下一步**”，然后在DNS 主机页面上选择“**授权**”。
-    - 如果你具有用于其他 DNS 主机的现有 DNS 记录（未启用 domain connect），则需要管理自己的 DNS 记录以确保现有服务保持连接状态。 有关详细信息，请参阅[域基础知识](/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果具有具有其他 DNS 主机的现有 DNS 记录（未对域连接启用），需要管理自己的 DNS 记录以确保现有服务保持连接。有关详细信息，请参阅[域基础知识](/office365/admin/get-help-with-domains/dns-basics)。
 
         !["激活记录"页。](../media/activaterecords.png)
 
@@ -135,4 +135,4 @@ ms.locfileid: "52624381"
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365企业培训视频 (](../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频](../business-video/index.yml)(链接页面)

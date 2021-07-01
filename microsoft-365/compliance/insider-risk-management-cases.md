@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理案例
 description: 了解企业内部风险管理Microsoft 365
-keywords: Microsoft 365、内部风险管理、风险管理、合规性
+keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939250"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226523"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -142,8 +142,8 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ### <a name="activity-explorer-preview"></a>活动资源管理器 (预览) 
 
->[!IMPORTANT]
->在组织中提供此功能后，"活动资源管理器"选项卡可用于具有触发事件的用户案例管理区域。
+> [!IMPORTANT]
+> 在组织中提供此功能后，"活动资源管理器"选项卡可用于具有触发事件的用户案例管理区域。
 
 " **活动资源管理器** "选项卡允许风险分析师和研究人员查看与风险警报相关的活动详细信息。 例如，作为案例管理措施的一部分，研究人员和分析师可能需要查看与案例相关的所有风险活动，了解更多详细信息。 使用 **活动资源管理器**，审阅者可以快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。
 
@@ -165,7 +165,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 向案例添加注释：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到 **"内部风险管理**"并选择"**案例"** 选项卡。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择" **案例备注"** 选项卡。
 3. 选择 **"添加大小写注释"。**
 4. 在" **添加大小写注释** "对话框中，键入适用于该案例的注释。 Select **Save** to add the note to the case or select **Cancel** close without saving the note to the case.
@@ -182,7 +182,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 向案例添加参与者：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到 **"内部风险管理**"并选择"**案例"** 选项卡。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择"参与者 **"** 选项卡。
 3. 选择 **"添加参与者"。**
 4. 在 **"添加参与者** "对话框中，开始键入要添加的用户的名称，然后从建议的用户列表中选择该用户。 此列表从租户订阅Azure Active Directory生成。
@@ -200,7 +200,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 若要向分配给案例的用户发送通知，请执行以下操作：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到 **"内部风险管理**"并选择"**案例"** 选项卡。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例 **操作** 工具栏上的"发送电子邮件通知"按钮。
 3. 在 **"发送电子邮件通知"对话框中** ，选择" **选择** 通知模板"下拉列表控件以选择通知的通知模板。 此选择会预填充通知上的其他字段。
 4. 查看通知字段并在适当时进行更新。 此处输入的值将替代模板上的值。
@@ -212,13 +212,13 @@ Select an alert from the queue to display the **Alert detail** page.
 
 将案例上报给用户调查：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到 **"内部风险管理**"并选择"**案例"** 选项卡。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例操作工具栏上的"上报进行调查"按钮。
 3. 在" **上报进行调查** "对话框中，输入新用户调查的名称。 如果需要，请输入关于案例的注释， **然后选择升级**。
 4. 查看通知字段并在适当时进行更新。 此处输入的值将替代模板上的值。
 5. 选择 **"** 确认"以创建用户调查案例，或选择" **取消** "关闭对话框，而不创建新的用户调查案例。
 
-将内部风险管理案例提升为新用户调查案例后，可以在安全与合规中心内电子数据展示高级区域中查看Microsoft 365  >  案例。
+将内部风险管理案例升级为新用户调查案例后，可以在管理中心电子数据展示高级区域中查看  >  Microsoft 365 合规中心。
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>使用适用于Power Automate流运行自动任务
 
@@ -256,7 +256,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 要解决这种情况，需要：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到 **"内部风险管理**"并选择"**案例"** 选项卡。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例操作工具栏上的"解决大小写"按钮。
 3. 在" **解决案例** "对话框中 **，选择"** 解析为"下拉列表控件以选择案例的解析分类。 选项为 **"安全"****或"已确认的策略违反"。**
 4. 在" **解决案例** "对话框中，在"已采取操作的文本"字段中输入解析 **分类** 的原因。

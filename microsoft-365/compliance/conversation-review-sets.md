@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解对话中的对话重建功能Advanced eDiscovery (对话线程) ，以重新构建、查看和导出 Microsoft Teams 和 Yammer 对话。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 12887ba8dd74c3dab445dcc76e155e274a371539
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9848280a7d6dbcbd6128fff06f150c8458f09701
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838301"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227183"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>对话线程Advanced eDiscovery
 
@@ -44,7 +44,7 @@ ms.locfileid: "50838301"
 
 下面是帮助您开始使用对话重建的一些定义。
 
-- **邮件：** 表示对话中最小的单元。 邮件的大小、结构和元数据可能会有所不同。 
+- **邮件：** 表示对话中最小的单元。 邮件的大小、结构和元数据可能会有所不同。
 
 - **对话：** 表示一个或多个邮件的分组。 跨不同的应用程序，对话可能以不同方式表示。 在某些应用程序中，有一个显式操作会导致答复现有邮件。 对话是此用户操作显式形成的。 例如，下面是当前频道对话的屏幕截图Microsoft Teams。
 
@@ -63,15 +63,15 @@ ms.locfileid: "50838301"
 将对话中的项目添加到审阅集时，可以使用线程对话选项从包含与集合的搜索条件匹配的项目的对话中收集上下文消息。 选择线程对话选项后，可能会发生以下情况：
 
   ![对话检索](../media/messagesandconversations.png)
-  
+
 1. 使用关键字和日期范围查询，搜索返回了邮件 *3 的命中*。 此消息属于大型对话的一部分，如 *CRC1 所示*。
-  
+
 2. 当你将数据添加到审阅集并启用对话检索选项时，Advanced eDiscovery返回并收集 *CRC1* 中的其他项目。
-  
+
 3. 将项目添加到审阅集后，你可以查看来自 *CRC1* 的所有单个邮件。
 
 若要启用线程对话选项，请参阅 [将草稿集合提交到审阅集](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set)。
-  
+
 ## <a name="step-3-review-and-export-threaded-conversations"></a>步骤 3：查看和导出线程对话
 
 处理内容并添加到审阅集后，您可以开始查看审阅集内的数据。 根据内容是添加到标准审阅集还是对话审阅集，审阅功能会有所不同。
@@ -84,7 +84,7 @@ ms.locfileid: "50838301"
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>查看对话审阅集内的对话
 
-在对话审阅集内，将各个消息进行线程处理，并呈现为对话。 这样，你可以查看和导出上下文对话。 
+在对话审阅集内，将各个消息进行线程处理，并呈现为对话。 这样，你可以查看和导出上下文对话。
 
   ![对话审阅集](../media/ConversationRSOptions.PNG)
 
@@ -96,10 +96,10 @@ ms.locfileid: "50838301"
 
 - **按对话分组：** 将同一对话中的邮件分组在一起，以帮助用户简化和加快审阅过程。
 
-- **摘要视图：** 显示线程对话。 在此视图中，您可以查看整个对话，还可以访问每封邮件的元数据。  
-  
+- **摘要视图：** 显示线程对话。 在此视图中，您可以查看整个对话，还可以访问每封邮件的元数据。
+
    - 查看单个邮件的元数据
-   
+
    - 下载单个邮件
 
 - **文本视图：** 提供整个对话的提取文本。
@@ -116,33 +116,25 @@ ms.locfileid: "50838301"
 
 ![导出对话选项](../media/export.png)
 
-a. 元数据选项
+1. 元数据选项：
+   - **加载文件：** 每个单独的邮件、电子邮件和文档都包含元数据。 对话中每条消息有一行。
+   - **标记：** 来自审阅过程的标记包含在元数据文件中。 对话中的邮件共享相同的标记。
 
-   - **加载文件：** 每个单独的邮件、电子邮件和文档都包含元数据。 对话中每条消息有一行。 
-
-   - **标记：** 来自审阅过程的标记包含在元数据文件中。 对话中的邮件共享相同的标记。 
-
-b. 对话选项
-  
-   - **对话文件：** 导出对话文件时，批注视图将转换为 PDF 文件并下载到导出文件夹。 一个对话文件中的消息指向同一对话文件的 PDF 版本。  
-  
+2. 对话选项：
+   - **对话文件：** 导出对话文件时，批注视图将转换为 PDF 文件并下载到导出文件夹。 一个对话文件中的消息指向同一对话文件的 PDF 版本。
    - **单个聊天消息：** 导出单个邮件时，对话中每个唯一的邮件都导出为独立项目。 以与邮箱中相同的格式导出文件。 对于特定对话，您将收到多个 .msg 文件。
 
-     >[!NOTE]
+     > [!NOTE]
      > 如果对会话文件应用了批注，这些批注将不会传输到各个邮件。
 
-c. 其他选项
-
+3. 其他选项：
    - **生成所有导出内容的文本文件：** 为从审阅集导出的每个对话生成一个文本文件。
-
    - **将导出的内容替换为修订的 PDF：** 如果在审阅过程中生成修订的对话文件，则这些文件在导出过程中可用。 可以通过不选择此选项) 来决定是仅导出本机文件 (，还是将本机文件替换为已修订版本的本机文件 (，方法为选择此选项) （导出为 PDF 文件）。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 若要详细了解如何查看 Advanced eDiscovery中的情况数据，请参阅以下文章：
 
 - [查看案例数据](view-documents-in-review-set.md)
-
 - [分析事例数据](analyzing-data-in-review-set.md)
-
 - [导出事例数据](exporting-data-ediscover20.md)

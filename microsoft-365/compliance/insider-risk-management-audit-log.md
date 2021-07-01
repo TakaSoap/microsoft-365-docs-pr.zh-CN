@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理审核日志
 description: 了解企业内部风险管理审核日志Microsoft 365
-keywords: Microsoft 365、内部风险管理、风险管理、合规性
+keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820267"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226499"
 ---
 # <a name="insider-risk-management-audit-log"></a>内部风险管理审核日志
 
@@ -38,8 +38,8 @@ ms.locfileid: "50820267"
 
 若要查看和导出数据，审核日志内部风险管理或内部风险管理审核 *员* 角色组。  若要详细了解内部风险管理角色组，请参阅内部风险管理入门步骤 [1：启用权限](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)。
 
->[!NOTE]
->内部风险管理审核日志与组织无关，它们Microsoft 365 审核日志独立审核系统并捕获有关单独活动的信息。 禁用Microsoft 365审核不会影响内部风险管理中的活动审核。
+> [!NOTE]
+> 内部风险管理审核日志与组织无关，它们Microsoft 365 审核日志独立审核系统并捕获有关单独活动的信息。 禁用Microsoft 365审核不会影响内部风险管理中的活动审核。
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>查看内部风险中心审核日志
 

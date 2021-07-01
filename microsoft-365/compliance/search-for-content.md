@@ -12,59 +12,59 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: 使用安全 & 合规中心中的内容搜索电子数据展示工具快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档，以及 Skype for Business 中的即时消息对话。
-ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: 使用安全 & 合规中心中的内容搜索电子数据展示工具快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。
+ms.openlocfilehash: a70c234331d1329fb80f32fb81762391a862d487
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333682"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226055"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>使用内容搜索工具搜索内容
 
-使用安全与合规中心的内容搜索工具&在 Exchange 邮箱、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话中快速查找电子邮件。 可以使用内容搜索工具在协作工具（如 Microsoft Teams 和 Microsoft 365 组）中搜索电子邮件、文档和即时消息对话。
-  
+使用安全 & 合规中心中的内容搜索工具快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。 您可以使用内容搜索工具在协作工具（如组和组）中搜索电子邮件、文档Microsoft Teams Microsoft 365对话。
+
 ## <a name="search-for-content"></a>搜索内容
 
 第一步是开始使用内容搜索工具选择要搜索的内容位置，并配置关键字查询以搜索特定项目。 或者，您可以将查询留空并返回目标位置的所有项目。
-  
+
 - [创建和运行](content-search.md) 内容搜索
 
 - 内容搜索服务 [功能参考] (content-search-reference.md) 
 
-- [生成搜索查询并使用条件](keyword-queries-and-search-conditions.md) 来缩小搜索范围 
+- [生成搜索查询并使用条件](keyword-queries-and-search-conditions.md) 来缩小搜索范围
 
-- [配置搜索权限筛选](permissions-filtering-for-content-search.md) ，以便电子数据展示管理员只能搜索组织中邮箱或网站的子集 
+- [配置搜索权限筛选](permissions-filtering-for-content-search.md) ，以便电子数据展示管理员只能搜索组织中邮箱或网站的子集
 
-- [运行 ID 列表搜索](csv-file-for-an-id-list-content-search.md) 以搜索特定电子邮件 
+- [运行 ID 列表搜索](csv-file-for-an-id-list-content-search.md) 以搜索特定电子邮件
 
-- [在 ](search-cloud-based-mailboxes-for-on-premises-users.md) Microsoft 365 中为本地用户搜索基于云的邮箱
+- [在基于云的邮箱中搜索](search-cloud-based-mailboxes-for-on-premises-users.md)本地Microsoft 365
 
 - [查看搜索结果](view-keyword-statistics-for-content-search.md) 的关键字统计信息，然后在必要时优化查询
 
-- [搜索组织已导入](use-content-search-to-search-third-party-data-that-was-imported.md) 到 Microsoft 365 的第三方数据
+- [搜索组织已导入](use-content-search-to-search-third-party-data-that-was-imported.md)到数据的第三方Microsoft 365
 
 - [批量编辑](bulk-edit-content-searches.md) 多个搜索的查询和内容位置
 
 - [重试内容搜索](retry-failed-content-search.md) 以解决内容位置错误
 
-- [保留"Bcc"](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) 收件人，以便可以搜索他们 
+- [保留"Bcc"](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) 收件人，以便可以搜索他们
 
 ## <a name="perform-actions-on-content-you-find"></a>对找到的内容执行操作
 
 运行搜索并在必要时进行优化后，下一步是对搜索返回的结果执行一些操作。 您可以将结果导出并下载到本地计算机，或在组织受到电子邮件攻击的情况下，可以从用户邮箱中删除搜索结果。
-  
-- [导出内容搜索的结果，](export-search-results.md) 并下载到本地计算机 
+
+- [导出内容搜索的结果，](export-search-results.md) 并下载到本地计算机
 
 - [搜索并删除电子邮件](search-for-and-delete-messages-in-your-organization.md) ，例如包含病毒、危险附件或网络钓鱼邮件的邮件
 
-- [导出有关](export-a-content-search-report.md) 内容搜索结果的报告，而不导出实际结果 
+- [导出有关](export-a-content-search-report.md) 内容搜索结果的报告，而不导出实际结果
 
 ## <a name="learn-more-about-content-search"></a>详细了解内容搜索
 
-内容搜索易于使用，但它也是一个强大的工具。 在后台，会进行很多操作。 你越了解它并了解它的行为及其限制，你越成功地使用它以满足组织的搜索和调查需求。 了解如何：
-  
-- [Exchange 和 SharePoint](partially-indexed-items-in-content-search.md) 中的部分索引项，以及如何在导出和下载搜索结果时包含或排除它们
+内容搜索易于使用，但它也是一个强大的工具。 在后台，会进行很多操作。 你越了解它并了解它的行为及其限制，你越成功地使用它以满足组织的搜索和调查需求。 了解以下信息：
+
+- [网站和网站](partially-indexed-items-in-content-search.md)中的部分Exchange索引SharePoint以及如何在导出和下载搜索结果时包含或排除这些项
 
 - [调查部分索引](investigating-partially-indexed-items-in-ediscovery.md) 项并确定组织对这些项目的曝光
 
@@ -77,11 +77,11 @@ ms.locfileid: "52333682"
 ## <a name="use-scripts-for-advanced-scenarios"></a>将脚本用于高级方案
 
 有时，您必须执行更高级、更复杂且重复的内容搜索任务。 在这些情况下，在安全与合规中心内使用 PowerShell 命令&快捷。 为了帮助简化这一过程，我们创建了多个安全与合规& PowerShell 脚本，以帮助你完成与内容搜索相关的复杂任务。
-  
+
 - [当您确信对](use-content-search-for-targeted-collections.md) 案例做出响应 (位于该文件夹中时，搜索特定邮箱和网站文件夹) *目标集合"
 
-- [搜索邮箱和 OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) 位置，查找用户列表 
+- [搜索邮箱OneDrive搜索](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)用户列表的位置
 
-- [创建、报告并删除多个搜索](create-report-on-and-delete-multiple-content-searches.md) ，以快速高效地标识和剔除搜索数据 
+- [创建、报告并删除多个搜索](create-report-on-and-delete-multiple-content-searches.md) ，以快速高效地标识和剔除搜索数据
 
 - [克隆内容搜索](clone-a-content-search.md) 并快速比较在同一内容位置运行的不同关键字搜索查询的结果;或使用脚本节省时间，而无需在创建新搜索时重新输入大量内容位置

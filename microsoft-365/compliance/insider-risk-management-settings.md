@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理设置
 description: 了解企业内部风险管理Microsoft 365
-keywords: Microsoft 365、内部风险管理、风险管理、合规性
+keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1dd61570a0695124fdd675241535dec7d288a627
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624689"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226379"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -70,8 +70,8 @@ ms.locfileid: "52624689"
 
 若要定义在所有内部风险策略中启用的内部风险策略指示器，请导航到"内部风险设置指示器"，然后选择一个或多个  >  策略指示器。 在策略向导中创建或编辑内部风险策略时，无法单独配置在"指示器设置"页上选择的指示器。
 
->[!NOTE]
->新手动添加的用户可能需要几个小时才能显示在"用户"仪表板 **中**。 这些用户过去 90 天的活动可能需要最多 24 小时才能显示。 若要查看手动添加的用户的活动，请选择"用户"仪表板上的用户，然后打开详细信息窗格上的"用户活动"选项卡。
+> [!NOTE]
+> 新手动添加的用户可能需要几个小时才能显示在"用户"仪表板 **中**。 过去 90 天内这些用户的活动可能需要多达 24 小时才能显示。 若要查看手动添加的用户的活动，请选择"用户"仪表板上的用户，然后打开详细信息窗格上的"用户活动"选项卡。
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>启用设备指示器和载入设备
 <a name="OnboardDevices"> </a>
@@ -199,8 +199,8 @@ ms.locfileid: "52624689"
 
 例如，如果你为此设置选择"新建"、"正在进行"和"已解决"，则当生成 Microsoft Defender for Endpoint 警报且状态为 *"* 新建"时，会为存在内部风险的用户导入初始警报活动。  当 Defender for Endpoint 会审状态更改为"正在进行"时，会为存在内部风险的用户导入此警报的第二个活动。 当设置"已解决"的最终 Defender终结点会审状态时，会为存在内部风险的用户导入此警报的第三个活动。 此功能允许调查人员跟踪 Defender for Endpoint 警报进度并选择其调查所需的可见性级别。
 
->[!IMPORTANT]
->你需要在你的组织中配置 Microsoft Defender for Endpoint，在 Defender 安全中心中启用适用于终结点的 Defender 以实现内部风险管理集成，以导入安全违反警报。 有关为终结点配置 Defender 进行内部风险管理集成的信息，请参阅在 [Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+> [!IMPORTANT]
+> 需要在你的组织中配置 Microsoft Defender for Endpoint，并且启用 Defender for Endpoint 以实现在 Defender 安全中心中的预览体验计划风险管理集成，以导入安全冲突警报。 若要详细了解如何配置 Defender for Endpoint，实现预览体验计划风险管理集成，请参阅 [在Defender for Endpoint中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="domains-preview"></a>预览 (域) 
 
@@ -237,7 +237,7 @@ ms.locfileid: "52624689"
 
 针对安全与合规警报架构的内部风险管理警报导出&和值：
 
-| **Alert 参数** | **说明** |
+| **Alert 参数** | **Description** |
 |:------------------|:----------------|
 | AlertType | 警报的类型为 *"自定义"。*  |
 | AlertId | 警报的 GUID。 内部风险管理警报是可变的。 当警报状态更改时，将生成一个同一 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
@@ -257,7 +257,7 @@ ms.locfileid: "52624689"
 - Id
 - RecordType
 - CreationTime
-- Operation
+- 操作
 - OrganizationId
 - UserType
 - UserKey
@@ -272,46 +272,46 @@ ms.locfileid: "52624689"
 
 ### <a name="create-a-priority-user-group"></a>创建优先级用户组
 
-若要创建新的优先级用户组，你将在安全与合规中心的预览体验成员风险管理解决方案Microsoft 365控件。 若要创建优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
+若要创建新的优先级用户组，你将使用预览体验成员风险管理解决方案中的设置Microsoft 365 合规中心。  若要创建优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
 
 完成以下步骤以创建优先级用户组：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
 2. 选择" **优先级用户组"** 选项卡
 3. 在" **优先级用户组"** 选项卡上，选择" **创建优先级用户组** "以启动组创建向导。
 4. 在" **定义组"** 页上，填写以下字段：
     - **名称 (必) ：** 输入优先级用户组的友好名称。 完成向导后，你无法更改优先级用户组的名称。
     - **说明 (可选) ：** 输入优先级用户组的说明。
-5. 选择 **"下一** 步"继续。
+5. 选择“**下一步**”以继续。
 6. 在 **"选择成员**"页上，选择"选择要搜索的成员"，然后选择组中包含哪些已启用邮件的用户帐户，或选中"全选"复选框以将组织中所有用户添加到组中。 选择 **"添加** "继续，或 **选择"取消** "以关闭而不向组添加任何用户。
-7. 选择 **"下一** 步"继续。
+7. 选择“**下一步**”以继续。
 8. 在 **"审阅** "页上，查看为优先级用户组选择的设置。 选择 **"** 编辑"更改任何组值，或选择 **"提交** "创建并激活优先级用户组。
 9. 在确认页上，选择" **完成** "退出向导。
 
 ### <a name="update-a-priority-user-group"></a>更新优先级用户组
 
-若要更新现有优先级用户组，你将使用安全与合规中心的预览体验成员风险管理解决方案Microsoft 365控件。 若要更新优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
+若要更新现有优先级用户组，你将使用预览体验成员风险管理解决方案中的设置Microsoft 365 合规中心。  若要更新优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
 
 完成以下步骤以编辑优先级用户组：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
 2. 选择" **优先级用户组"** 选项卡
 3. 选择要编辑的优先级用户组，然后选择"编辑 **组"。**
-4. 在" **定义组"** 页上，根据需要更新"说明"字段。 无法更新优先级用户组的名称。 选择 **"下一** 步"继续。
-5. 在" **选择成员** "页上，使用"选择成员"控件将 **新成员添加到** 组中。 若要从组中删除用户，请选择要删除的用户旁边的"X"。 选择 **"下一** 步"继续。
+4. 在" **定义组"** 页上，根据需要更新"说明"字段。 无法更新优先级用户组的名称。 选择“**下一步**”以继续。
+5. 在" **选择成员** "页上，使用"选择成员"控件将 **新成员添加到** 组中。 若要从组中删除用户，请选择要删除的用户旁边的"X"。 选择“**下一步**”以继续。
 6. 在 **"审阅** "页上，查看为优先级用户组选择的更新设置。 选择 **"** 编辑"以更改任何组值，或 **选择"** 提交"以更新优先级用户组。
 7. 在确认页上，选择" **完成** "退出向导。
 
 ### <a name="delete-a-priority-user-group"></a>删除优先级用户组
 
-若要删除现有优先级用户组，你将使用安全与合规中心内内部风险管理解决方案Microsoft 365控件。 若要删除优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
+若要删除现有优先级用户组，你将使用"管理中心"中"预览体验成员风险管理"解决方案中的Microsoft 365 合规中心。 若要删除优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
 
->[!IMPORTANT]
->删除优先级用户组会将其从分配到的任何活动策略中删除。 如果删除分配给活动策略的优先级用户组，该策略将不包含任何范围内用户，并且实际上处于空闲状态，并且不会创建警报。
+> [!IMPORTANT]
+> 删除优先级用户组会将其从分配到的任何活动策略中删除。 如果删除分配给活动策略的优先级用户组，该策略将不包含任何范围内用户，并且实际上处于空闲状态，并且不会创建警报。
 
 完成以下步骤以删除优先级用户组：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
 2. 选择" **优先级用户组"** 选项卡
 3. 选择要编辑的优先级用户组， **然后从仪表板** 菜单中选择"删除"。
 4. 在" **删除** "对话框中，选择 **"** 是"删除优先级用户组，或选择" **取消** "返回到仪表板。
@@ -330,16 +330,16 @@ ms.locfileid: "52624689"
 
 ### <a name="configure-priority-physical-assets"></a>配置优先物理资产
 
-若要配置优先物理资产，您需要配置物理保护连接器，并使用安全与合规中心内内部风险管理解决方案中的Microsoft 365控件。 若要配置优先物理资产，您必须是 Insider Risk *Management* 或 *Insider Risk Management Admin 角色组的成员*。
+若要配置优先物理资产，需要配置物理保护连接器，并使用预览体验成员风险管理解决方案中的设置Microsoft 365 合规中心。  若要配置优先物理资产，您必须是 Insider Risk *Management* 或 *Insider Risk Management Admin 角色组的成员*。
 
 完成以下步骤以配置优先物理资产：
 
 1. 按照内部风险管理入门一文中的内部 [风险管理配置](insider-risk-management-configure.md) 步骤操作。 在步骤 3 中，确保配置物理保护连接器。
 
-    >[!IMPORTANT]
-    >若要内部风险管理策略使用与离开和终止用户相关的信号数据，并将该数据与物理控制和访问平台的事件数据关联，还必须配置 Microsoft 365 HR 连接器。 如果在未启用 Microsoft 365 HR 连接器的情况下启用物理保护连接器，内部风险管理策略将仅处理组织中用户的物理访问活动的事件。
+    > [!IMPORTANT]
+    > 若要内部风险管理策略使用与离开和终止用户相关的信号数据，并将该数据与物理控制和访问平台的事件数据关联，还必须配置 Microsoft 365 HR 连接器。 如果在未启用 Microsoft 365 HR 连接器的情况下启用物理保护连接器，内部风险管理策略将仅处理组织中用户的物理访问活动的事件。
 
-2. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部风险管理**"，然后选择"**内部风险** 设置""  >  **优先物理资产"。**
+2. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings** Priority  >  **physical assets**.
 3. 在"优先级物理资产"页上，您可以手动添加要监视的物理资产 ID，以检查物理保护连接器导入的资产事件，也可以导入由物理保护连接器导入的所有物理资产 ID 的 .csv 文件：一个) 若要手动添加物理资产 ID，请选择"添加优先物理资产"，输入物理资产 ID，然后选择"添加"。   输入其他物理资产 ID，然后选择" **添加优先级物理** 资产"以保存输入的所有资产。
     b) 若要从文件添加物理资产.csv，请选择"导入优先 **物理资产"。** 从文件资源管理器对话框中，选择要导入.csv文件，然后选择"打开 **"。** 文件的物理资产.csv添加到列表中。
 4. 导航到"策略 **指示器"** 选项卡设置。
@@ -348,14 +348,14 @@ ms.locfileid: "52624689"
 
 ### <a name="delete-a-priority-physical-asset"></a>删除优先级物理资产
 
-若要删除现有优先级物理资产，你将使用安全与合规中心内内部风险管理解决方案Microsoft 365控制。 若要删除优先级物理资产，您必须是 Insider Risk Management 或 Insider Risk Management Admin 角色组的成员。
+若要删除现有优先级物理资产，你将使用预览体验成员风险管理解决方案中的设置Microsoft 365 合规中心。 若要删除优先级物理资产，您必须是 Insider Risk Management 或 Insider Risk Management Admin 角色组的成员。
 
->[!IMPORTANT]
->删除优先级物理资产会将其从之前包含到的任何活动策略的检查中取消。 不删除由与优先级物理资产关联的活动生成的警报。
+> [!IMPORTANT]
+> 删除优先级物理资产会将其从之前包含到的任何活动策略的检查中取消。 不删除由与优先级物理资产关联的活动生成的警报。
 
 完成以下步骤以删除优先物理资产：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部风险管理**"，然后选择"**内部风险** 设置""  >  **优先物理资产"。**
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings** Priority  >  **physical assets**.
 2. 在" **优先级物理资产** "页上，选择要删除的资产。
 3. 在 **操作** 菜单上选择"删除"以删除资产。
 
@@ -379,22 +379,22 @@ ms.locfileid: "52624689"
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>从内部Power Automate模板创建一个流
 
-若要从建议的内部风险管理模板创建 Power Automate 流，你将使用 Microsoft 365 合规中心的预览体验成员风险管理解决方案中的设置控件，或在直接在事例或用户仪表板中操作时自动控制中的"管理 **Power Automate** 流"选项。  
+若要从建议的内部风险管理模板创建 Power Automate 流，你将使用 Microsoft 365 合规中心 中预览体验成员风险管理解决方案中的设置控件，或在直接在案例或用户仪表板中操作时自动执行控件中的"管理 **Power Automate** 流"**选项。**  
 
 若要在Power Automate区域创建管理流，您必须是 *Insider Risk Management* 或 Insider Risk Management *Admin* 角色组的成员。 若要使用"Power Automate流"选项创建Power Automate流，您必须至少是一个内部风险管理角色组的成员。
 
 完成以下步骤以从建议的Power Automate内风险管理模板创建一个流：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com/)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com/)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate流**"页上，从页面上的"预览体验成员风险管理模板"部分选择建议模板。
-3. 该流列出流所需的嵌入连接，并记录连接状态是否可用。 如果需要，请更新任何未显示为可用的连接。 选择"**继续"。**
+3. 该流列出流所需的嵌入连接，并记录连接状态是否可用。 如果需要，请更新任何未显示为可用的连接。 选择 **继续**。
 4. 默认情况下，推荐流预配置了建议的内部风险管理Microsoft 365完成流的分配任务所需的服务数据字段。 如果需要，使用"显示高级选项"控件并配置流组件的可用属性来自定义流组件。
 5. 如果需要，通过选择"新建步骤"按钮将任何其他步骤 **添加到** 流中。 在大多数情况下，建议的默认模板不需要这样做。
 6. 选择 **"保存草稿** "以保存流以进一步配置，或选择" **保存** "以完成流的配置。
 7. 选择 **"** 关闭"返回到 **"Power Automate"** 页面。 新模板将在"我的流"选项卡上作为流列出，当为创建流程的用户处理内部风险管理案例时，该控件将自动从"自动"下拉列表控件中提供。
 
->[!IMPORTANT]
->如果组织中其他用户需要访问流，则必须共享该流。
+> [!IMPORTANT]
+> 如果组织中其他用户需要访问流，则必须共享该流。
 
 ![内部风险管理功能自动化流程](../media/insider-risk-settings-power-automate-flows.png)
 
@@ -419,13 +419,13 @@ ms.locfileid: "52624689"
 
 ### <a name="share-a-power-automate-flow"></a>共享Power Automate流
 
-默认情况下，Power Automate创建的流仅对该用户可用。 若要使其他内部风险管理用户能够访问和使用流，该流必须由流创建者共享。 若要共享流，当直接在"事例"或"用户"仪表板页面中操作时，将使用 Microsoft 365 合规中心的预览体验成员风险管理解决方案中的设置控件或"自动执行"控件中的"管理 **Power Automate** 流 **"选项。**  共享流后，已共享流的每个人都可以在"案例"和"用户"仪表板的"自动化"控件下拉列表中 **访问该流**。 
+默认情况下，Power Automate创建的流仅对该用户可用。 若要使其他内部风险管理用户能够访问和使用流，该流必须由流创建者共享。 若要共享流，当直接在"事例"或"用户"仪表板页面中操作时，你将使用 Microsoft 365 合规中心 中的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流 **"选项。** 共享流后，已共享流的每个人都可以在"案例"和"用户"仪表板的"自动化"控件下拉列表中 **访问该流**。 
 
 若要在Power Automate共享管理流，您必须是 *Insider Risk Management* 或 Insider Risk Management *Admin* 角色组的成员。 若要通过"Power Automate Power Automate流"选项共享管理流，您必须至少是一个内部风险管理角色组的成员。
 
 完成以下步骤以共享Power Automate流：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate流**"页上，选择"**我的** 流"或"**团队流"** 选项卡。
 3. 选择要共享的流 **，然后从** "流选项"菜单中选择"共享"。
 4. 在"流共享"页上，输入要添加为流所有者的用户或组的名称。
@@ -433,26 +433,26 @@ ms.locfileid: "52624689"
 
 ### <a name="edit-a-power-automate-flow"></a>编辑Power Automate流
 
-若要编辑流，当你直接在事例或用户仪表板中操作时，你将使用 Microsoft 365 合规中心的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流"**选项**。 
+若要编辑流，当直接在事例或用户仪表板中操作时，你将使用 Microsoft 365 合规中心 中的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流"**选项**。
 
 若要编辑Power Automate区域中的流，您必须是 *Insider Risk Management* 或 Insider Risk Management *Admin* 角色组的成员。 若要使用Power Automate流"选项编辑Power Automate流，您必须至少是一个内部风险管理角色组的成员。
 
 完成以下步骤以编辑Power Automate流：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate** 流"页上，选择要编辑的流，然后从"流控制"菜单中选择"编辑"。
 3. 选择省略 **号设置** 更改流组件设置或省略号"删除"  >    >  以删除流组件。
 4. 选择 **"保存****"，** 然后选择"关闭"以完成流的编辑。
 
 ### <a name="delete-a-power-automate-flow"></a>删除Power Automate流
 
-若要删除流，你将在直接在事例或用户仪表板中操作时，使用 Microsoft 365 合规中心的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流"**选项**。  删除流时，会将其作为所有用户的选项删除。
+若要删除流，当直接在事例或用户仪表板中操作时，你将使用 Microsoft 365 合规中心 中的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流"**选项**。 删除流时，会将其作为所有用户的选项删除。
 
 若要删除Power Automate区域中的流，您必须是 *Insider Risk Management* 或 Insider Risk Management *Admin* 角色组的成员。 若要删除Power Automate管理Power Automate流"选项的流，您必须至少是一个内部风险管理角色组的成员。
 
 完成以下步骤以删除Power Automate流：
 
-1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate** 流"页上，选择要删除的流，然后从"流控制 **"菜单中选择**"删除"。
 3. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
@@ -470,7 +470,7 @@ ms.locfileid: "52624689"
 
 启用Microsoft Teams案例支持快速且易于配置。 若要启用Microsoft Teams内部风险管理，请完成以下步骤：
 
-1. 在 ["Microsoft 365合规中心](https://compliance.microsoft.com)"中，转到 **"内部风险管理**  >  **""内部风险设置"。**
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** Insider risk  >  **settings**.
 2. 选择 **"Microsoft Teams"** 选项卡。
 3. 启用Microsoft Teams风险管理的集成。
 4. 选择 **"保存** "以配置并退出。
@@ -485,7 +485,7 @@ ms.locfileid: "52624689"
 
 若要为案例创建团队，你将在直接处理现有案例时使用"创建 Microsoft 团队"控件。 完成以下步骤以创建新团队：
 
-1. 在 ["Microsoft 365合规中心](https://compliance.microsoft.com)"中，转到 **"内部风险管理** 案例"  >  并选择现有案例。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management**  >  **Cases** and select an existing case.
 2. 在"案例操作"菜单上，选择"**创建 Microsoft 团队"。**
 3. 在"**团队名称**"字段中，输入新团队Microsoft Teams名称。
 4. 选择 **"创建 Microsoft 团队"，** 然后选择"关闭 **"。**
@@ -494,7 +494,7 @@ ms.locfileid: "52624689"
 
 ## <a name="analytics-preview"></a>分析（预览版）
 
-通过内部风险分析，你可以对组织中潜在的内部风险进行评估，而无需配置任何内部风险策略。 此评估可帮助你的组织确定潜在的用户风险领域，并帮助确定你可能考虑配置的内部风险管理策略的类型和范围。 分析扫描为组织提供了以下优势：
+通过预览体验计划风险分析，无需配置任何预览体验计划风险策略，即可对组织中潜在的预览体验成员风险进行评估。 此评估可以帮助组织确定用户风险更高的潜在领域，并可帮助确定可能考虑配置的预览体验计划风险管理策略的类型和范围。 分析扫描为组织提供了以下优势：
 
 - 易于配置：若要开始使用分析扫描，可选择"在分析建议提示时运行扫描"，或转到"预览体验成员风险设置">"分析"选项卡并启用分析。
 - 最低隐私要求：扫描结果和见解作为匿名用户活动返回，审阅者无法识别各个用户名。
@@ -516,7 +516,7 @@ ms.locfileid: "52624689"
 若要启用内部风险分析，你必须是内部风险管理、内部风险管理管理员或全局Microsoft 365组的成员。
 完成以下步骤以启用内部风险分析：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management**.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management**.
 2. 在 **"内部** 风险管理概述"选项卡上的"扫描 **组织卡中的** 内部风险"中选择" **运行扫描** "。这将为组织启用分析扫描。 还可以导航到"内部风险设置""分析"，并启用"扫描租户的用户活动"以识别潜在内部风险，从而在组织中  >  **启用扫描**。
 3. 在" **分析详细信息"** 窗格中，选择" **运行扫描** "开始组织的扫描。 分析扫描结果最多可能需要 24 小时，才能将见解作为报告提供进行审阅。
 
@@ -546,6 +546,6 @@ ms.locfileid: "52624689"
 
 完成以下步骤以关闭内部风险分析：
 
-1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management**.
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management**.
 2. 选择 **"内部风险设置**  >  **""分析"** 页面。
 3. 在 **"分析"** 页上，关闭" **扫描租户的用户活动"，以确定潜在的内部风险**。

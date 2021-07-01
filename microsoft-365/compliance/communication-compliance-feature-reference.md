@@ -18,30 +18,30 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822125"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227371"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
 ## <a name="policies"></a>策略
 
->[!Important]
->不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
+> [!IMPORTANT]
+> 不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
 
-你可以在 Microsoft 365 合规中心为 Microsoft 365 组织创建通信合规性策略。 通信合规性策略定义组织中需要审阅哪些通信和用户，定义通信必须满足的自定义条件，并指定应进行审阅的用户。 分配了通信合规性 *管理员* 角色的用户可以设置策略，分配了此角色的任何人都可以访问通信合规性页面和 Microsoft 365全局设置。 如果需要，可以将策略修改历史记录导出到 .csv (逗号分隔值) 文件中，该文件还包括挂起审阅的警报、升级的项目和已解决项目的状态。 策略无法重命名，并且可在不再需要时删除。
+你可以在 Microsoft 365 合规中心为 Microsoft 365 组织创建通信合规性策略。 通信合规性策略定义组织中需要审阅哪些通信和用户，定义通信必须满足的自定义条件，并指定应进行审阅的用户。 分配了通信合规性 *管理员* 角色的用户可以设置策略，分配了此角色的任何人都可以访问"通信合规性"页和Microsoft 365 合规中心。 如果需要，可以将策略修改历史记录导出到 .csv (逗号分隔值) 文件中，该文件还包括挂起审阅的警报、升级的项目和已解决项目的状态。 策略无法重命名，并且可在不再需要时删除。
 
->[!NOTE]
->无法在安全与合规&中心为订阅创建的Office 365策略迁移到Microsoft 365。 如果要从 Office 365 订阅迁移到 Microsoft 365 订阅，则需要创建新的通信合规性策略来替换现有监督策略。
+> [!NOTE]
+> 无法在安全与合规&中心为订阅创建的Office 365策略迁移到Microsoft 365。 如果要从 Office 365 订阅迁移到 Microsoft 365 订阅，则需要创建新的通信合规性策略来替换现有监督策略。
 
 ## <a name="policy-templates"></a>策略模板
 
 策略模板是预定义的策略设置，可用于快速创建策略以解决常见的合规性方案。 其中每个模板在条件和范围上都有差异，并且所有模板都使用相同的扫描信号类型。 可以从以下策略模板中选择：
 
-|**区域**|**策略模板**|**详细信息**|
+|**区域**|**策略模板**|**Details**|
 |:-----|:-----|:-----|
 | **冒犯性语言和反冒犯性语言** | 监视冒犯性语言的通信 | - 位置：Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向：入站、出站、内部 <br> - 审阅百分比：100% <br> - 条件：冒犯性语言分类器 |
 | **敏感信息** | 监视敏感信息的通信 | - 位置：Exchange Online、Microsoft Teams、Yammer、Skype for Business <br> - 方向：入站、出站、内部 <br> - 审阅百分比：10% <br> - 条件：敏感信息、开箱用内容模式和类型、自定义词典选项、大于 1 MB 的附件 |
@@ -67,10 +67,10 @@ ms.locfileid: "52822125"
 
 若要恢复策略，请导航到"策略 **"页，** 选择一个策略，然后从操作工具栏中选择" **恢复** 策略"。 在 **"恢复策略** "窗格中，通过选择"恢复"确认要恢复 **策略**。 在某些情况下，可能需要 24 小时才能恢复策略。 恢复策略后，将创建与策略匹配的邮件警报，并可用于调查、审阅和修正。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
->[!Important]
->默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。
+> [!IMPORTANT]
+> 默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。
 
 共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要在 Microsoft 365 合规中心中将 **通信合规性** 作为菜单选项提供并继续执行这些配置步骤，必须将你分配给 *通信符合性* 或 *通信符合性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
 
@@ -88,7 +88,7 @@ ms.locfileid: "52822125"
 
 ### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>对于使用原始权限和角色组的组织
 
-新的角色组结构取代了用于通信合规性的初始角色组结构。 对于已使用通信合规性的组织，需要分配有监管审核管理员角色，才能开始在 Microsoft 365 合规中心中通信合规性。 此外，您必须为具有监管审核管理员、案例管理、合规性管理员和审阅角色的审阅者创建新角色组，以调查和修正具有策略匹配项的邮件。 实质上，所有管理员和审阅者都在同一个角色组中，并且每个人都具有相同的访问和管理权限。 随着通信合规性的最新更新，您应计划从以前的角色组结构迁移到新的角色组结构。 对以前的角色组结构的支持将逐步淘汰。
+新的角色组结构取代了用于通信合规性的初始角色组结构。 对于已使用通信合规性的组织，需要分配有监管审核管理员角色，才能开始了解组织中通信Microsoft 365 合规中心。 此外，您必须为具有监管审核管理员、案例管理、合规性管理员和审阅角色的审阅者创建新角色组，以调查和修正具有策略匹配项的邮件。 实质上，所有管理员和审阅者都在同一个角色组中，并且每个人都具有相同的访问和管理权限。 随着通信合规性的最新更新，您应计划从以前的角色组结构迁移到新的角色组结构。 对以前的角色组结构的支持将逐步淘汰。
 
 为了帮助规划迁移，请考虑以下示例。 目前组织中有三种类型的用户，即 IT 管理员、会审和审阅者。 这三种类型的用户位于以前的角色组结构中，并且都是分配了以下角色的单个角色组的所有成员：
 
@@ -107,8 +107,8 @@ ms.locfileid: "52822125"
 
 在开始使用通信合规性之前，必须确定需要审查谁的通信。 在策略中，用户的电子邮件地址可以标记需要接受监管的人员或组。 这些组的一些示例包括Microsoft 365组Exchange通讯组列表、Yammer社区以及Microsoft Teams频道。 你也可以设置特定的排除组或排除组列表，将特定的用户或组排除在审查范围外。 有关通信合规性策略中支持的组类型详细信息，请参阅 [通信合规性入门](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)。
 
->[!IMPORTANT]
->通信合规性策略涵盖的用户必须具有 Microsoft 365 E5 合规 许可证、Office 365 企业版 高级合规性加载项的 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的 E5 Enterprise，并且想要尝试通信合规性，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
+> [!IMPORTANT]
+> 通信合规性策略涵盖的用户必须具有 Microsoft 365 E5 合规 许可证、Office 365 企业版 高级合规性加载项的 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的 E5 Enterprise，并且想要尝试通信合规性，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
 
 ## <a name="reviewers"></a>审阅者
 
@@ -140,7 +140,7 @@ ms.locfileid: "52822125"
 
     - **For Skype for Business Online chat communications**： Assign individual users or assign a distribution [group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. 这个设置适用于一对一或一对多聊天。
 
-- 第三方源：你可以扫描通信，以搜索从 Instant [Bloomberg、Slack、Zoom、短信](archive-slack-data.md)等第三方源[](archive-instant-bloomberg-data.md)导入 Microsoft 365 组织中[](archive-zoommeetings-data.md)邮箱的数据。 有关通信合规性支持的连接器的完整列表，请参阅存档 [第三方数据](archiving-third-party-data.md)。
+- **第三方源**：你可以扫描通信，以搜索从 Instant [Bloomberg、Slack、Zoom、SMS](archive-instant-bloomberg-data.md)等第三方源导入 Microsoft 365 [](archive-slack-data.md)组织中 [](archive-zoommeetings-data.md)邮箱的数据。 有关通信合规性支持的连接器的完整列表，请参阅存档 [第三方数据](archiving-third-party-data.md)。
 
     必须先为组织配置第三方Microsoft 365，然后才能将连接器分配到通信合规性策略。 通信 **合规性策略** 向导的"第三方源"部分仅显示当前配置的第三方连接器。
 
@@ -150,7 +150,7 @@ ms.locfileid: "52822125"
 
 可以选择"所有用户 **"或在** 通信合规性策略中定义特定用户。 选择 **所有用户** 会将策略应用到所有用户和用户作为成员的所有组。 选择特定用户会将策略应用到特定用户和特定用户作为成员的所有组。
 
-### <a name="direction"></a>Direction
+### <a name="direction"></a>方向
 
 默认情况下，将显示 **Direction 为** 条件，并且无法删除。 单独或一起选择策略中的通信方向设置：
 
@@ -199,8 +199,8 @@ ms.locfileid: "52822125"
 
 内置可训练和全局分类器并未提供这些领域的术语或图像的详尽列表。 此外，语言和文化标准会不断改变，因此，Microsoft 保留自行决定更新分类器的权利。 虽然分类器可帮助组织监视这些方面，但分类器并不适合提供组织监视或处理此类语言或图像的唯一方式。 你的组织（而非 Microsoft）仍负责与监视、扫描和阻止这些领域的语言和图像相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
 
->[!NOTE]
->使用分类器的策略将检查和评估字数为 6 或更大值的邮件。 在使用分类器的策略中，不评估包含少于 6 个单词的邮件。 若要识别包含不当内容的较短邮件并采取措施，我们建议在监控此类内容的通信合规性策略中包含自定义关键字词典。
+> [!NOTE]
+> 使用分类器的策略将检查和评估字数为 6 或更大值的邮件。 在使用分类器的策略中，不评估包含少于 6 个单词的邮件。 若要识别包含不当内容的较短邮件并采取措施，我们建议在监控此类内容的通信合规性策略中包含自定义关键字词典。
 
 有关可训练分类器在Microsoft 365的信息，请参阅可[训练分类器入门](classifier-get-started-with.md)。
 
@@ -218,8 +218,8 @@ ms.locfileid: "52822125"
 - .tiff (标记图像文件格式) 
 - .pdf (可移植文档格式) 
 
->[!NOTE]
->目前，仅电子邮件.pdf嵌入和附加图像进行扫描和提取。
+> [!NOTE]
+> 目前，仅电子邮件.pdf嵌入和附加图像进行扫描和提取。
 
 在查看启用 OCR 的策略的挂起警报时，标识并匹配策略条件的图像将显示为关联警报的子项。 可以查看原始图像，以在原始邮件的上下文中评估标识的文本。 检测到的图像最多可能需要 48 小时才能与警报一起提供。
 
@@ -229,7 +229,7 @@ ms.locfileid: "52822125"
 为策略选择的条件适用于来自组织中电子邮件和第三方源的通信， (Instant Bloomberg) 。
 
 下表对每种条件进行进一步说明。
-  
+
 |**Condition**|**如何使用此条件**|
 |:-----|:-----|
 | **内容与这些分类器中的任意一个匹配** | 当邮件中包含或排除任何分类器时，应用于策略。 某些分类器在租户中预定义，自定义分类器必须单独配置，然后才能用于此条件。 策略中只能将一个分类器定义为条件。 有关配置分类器的详细信息，请参阅了解可训练分类器 ([预览) 。 ](classifier-learn-about.md) |
@@ -242,24 +242,26 @@ ms.locfileid: "52822125"
 | **附件是其中任一文件类型**  <br><br> **附件不是这些文件类型** | 若要监督包含或排除特定类型的附件的通信，请输入文件扩展名 (如.exe或.pdf) 。 如果要包含或排除多个文件扩展名，请在单独的行中输入这些扩展名。 只有一个附件扩展名才能应用策略。|
 | **邮件大小大于**  <br><br> **邮件大小不大于** | 若要根据特定大小查看邮件，请使用这些条件指定邮件在经过审阅之前可以达到的最大或最小大小。 例如，如果指定邮件大小大于 \> **1.0 MB，** 则所有大于 1.01 MB 的邮件都需接受审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
 | **附件大于**  <br><br> **附件大小不超过** | 若要根据邮件附件的大小检查邮件，请指定邮件及其附件受审阅之前附件可以达到的最大或最小大小。 例如，如果指定 **Attachment 大于** \> **2.0 MB，** 则所有附件为 2.01 MB 及更大的邮件都需接受审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
-   
+
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>将字词和短语与电子邮件或附件匹配
 <a name="Matchwords"> </a>
 
 每个输入和用逗号分隔的单词将单独应用 (只有一个单词适用于策略条件才能应用于电子邮件或附件) 。 例如，让我们使用条件"邮件包含以下任何词语"，关键字"银行"、"机密"和"内部交易"之间用逗号 (，机密，"预览体验成员交易") 分隔。 该策略适用于包含字词"银行"、"机密"或短语"insider trading"的任何邮件。 只有出现其中一个字词或短语，才能应用此策略条件。 邮件或附件中的单词必须与输入内容完全匹配。
 
->[!IMPORTANT]
->导入自定义词典文件时，必须使用回车符和单独的行分隔每个单词或短语。 <br> 例如： <br><br>
->*一个* <br>
->*confidential* <br>
->*预览体验成员交易*
+> [!IMPORTANT]
+>
+> 导入自定义词典文件时，必须使用回车符和单独的行分隔每个单词或短语。 例如：
+>
+> *一个* <br>
+> *confidential* <br>
+> *预览体验成员交易*
 
 若要扫描电子邮件和附件中的相同关键字，请创建一个数据丢失防护[](create-test-tune-dlp-policy.md)策略，该策略包含自定义[](create-a-keyword-dictionary.md)关键字词典，用于查找想要在邮件中扫描的术语。 此策略配置标识电子邮件或电子邮件附件中 **已定义的关键字** 。 使用标准条件策略设置 (*Message* 包含其中任何词语，并且 *Attachment* 包含以下任何词语) 来标识邮件和附件中的术语，需要术语同时存在于邮件和附件中。
-  
+
 #### <a name="enter-multiple-conditions"></a>输入多个条件
 
 如果输入多个条件，Microsoft 365条件一起确定何时将通信合规性策略应用于通信项目。 设置多个条件时，必须满足所有条件才能应用策略，除非输入例外。 例如，您需要一个在邮件包含单词"trade"且大于 2 MB 时应用的策略。 但是，如果邮件还包含单词"Contoso financial approved by Contoso financial"，则不应应用该策略。 本示例中，将按如下方式定义三个条件：
-  
+
 - **邮件包含以下任何词语**，关键字为"trade"
 - **邮件大小大于 ，** 值为 2 MB
 - **邮件不包含这些单词，** 关键字为"由 Contoso 财务团队批准"
@@ -283,13 +285,13 @@ ms.locfileid: "52822125"
 
 通知模板是自定义电子邮件模板，可以在其中定义通信合规性设置区域中的以下 **邮件** 字段：
 
-|**Field**|**Required**| **详细信息** |
+|**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
-|**模板名称** | 支持 | 修复过程中将在通知工作流中选择的通知模板的友好名称支持文本字符。 |
-| **发件人地址** | 支持 | 一个或多个用户或组的地址，这些用户或组通过策略匹配（从订阅的 Active Directory 选择）向用户发送邮件。 |
-| **抄送和密件抄送地址** | 不支持 | 要接收策略匹配通知的可选用户或组（从订阅的 Active Directory 中选择）。 |
-| **主题** | 支持 | 邮件主题行中显示的信息支持文本字符。 |
-| **邮件正文** | 支持 | 邮件正文中显示的信息支持文本或 HTML 值。 |
+|**模板名称** | 是 | 修复过程中将在通知工作流中选择的通知模板的友好名称支持文本字符。 |
+| **发件人地址** | 是 | 一个或多个用户或组的地址，这些用户或组通过策略匹配（从订阅的 Active Directory 选择）向用户发送邮件。 |
+| **抄送和密件抄送地址** | 否 | 要接收策略匹配通知的可选用户或组（从订阅的 Active Directory 中选择）。 |
+| **Subject** | 是 | 邮件主题行中显示的信息支持文本字符。 |
+| **邮件正文** | 是 | 邮件正文中显示的信息支持文本或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>通知的 HTML
 
@@ -308,14 +310,14 @@ ms.locfileid: "52822125"
 </html>
 ```
 
->[!NOTE]
->通信合规性通知模板中的 HTML href 属性实现当前仅支持单引号，而不支持 URL 引用的双引号。
+> [!NOTE]
+> 通信合规性通知模板中的 HTML href 属性实现当前仅支持单引号，而不支持 URL 引用的双引号。
 
 ## <a name="filters"></a>筛选器
 
 通信合规性筛选器允许你筛选和排序警报消息，以便更快地调查和修正操作。 筛选在每个策略的 **"** 挂起" **和"** 已解决"选项卡上可用。 若要将筛选器或筛选器集另存为保存的筛选器查询，必须将一个或多个值配置为筛选器选择。 下表概述了筛选器详细信息：
 
-|**Filter**|**详细信息**|
+|**Filter**|**Details**|
 |:-----|:-----|
 | **Date** | 组织中用户发送或接收邮件的日期。 若要筛选一天，请选择一个日期范围，从希望结果的日期开始，到第二天结束。 例如，如果要筛选 9/20/2020 的结果，请选择筛选日期范围 9/20/2020-9/21/2020。|
 | **文件类** | 基于邮件类型（邮件或附件）*的邮件**类*。 |
@@ -325,7 +327,7 @@ ms.locfileid: "52822125"
 | **收件人** | 邮件发送到的用户。 |
 | **Sender** | 发送消息的人。 |
 | **发件人域** | 发送邮件的域。 |
-| **大小** | 邮件的大小（以 KB 为单位）。 |
+| **Size** | 邮件的大小（以 KB 为单位）。 |
 | **主题/标题** | 消息主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，可以是 *Questionable* *、Compliant* 或 *Non-compliant*。 |
 | **Language** | 邮件中检测到的文本语言。 邮件根据大多数邮件文本的语言进行分类。 例如，对于同时包含德语和意大利语文本的邮件，但大多数文本为德语，该邮件被归类为德语 (DE) 。 支持以下语言：简体中文 (-ZH) 、英语 (EN) 、法语 (FR) 、德语 (DE) 、意大利语 (IT) 、日语 (JP) 、葡萄牙语 (PT) 和西班牙语 (ES) 。 例如，若要筛选分类为德语和意大利语的邮件，请在"语言 (搜索框中输入"DE，IT") 2 位数字的语言代码。 若要查看检测到的邮件语言分类，请选择一封邮件，选择"查看邮件详细信息"，然后滚动到 EmailDetectedLanguage 字段。 |
@@ -344,8 +346,8 @@ ms.locfileid: "52822125"
 | 阈值 | 4 个活动 |
 | Window | 60 分钟 |
 
->[!Note]
->活动的警报策略阈值触发器设置支持通信合规性策略的最小值为 3 或更高。
+> [!NOTE]
+> 活动的警报策略阈值触发器设置支持通信合规性策略的最小值为 3 或更高。
 
 可以在安全与合规中心的警报策略页面上更改针对活动数、活动的时间段和警报策略中特定用户的触发器&默认设置。 
 
@@ -355,7 +357,7 @@ ms.locfileid: "52822125"
 
 1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
-2. 在"Microsoft 365合规中心"中，转到"**策略"。**
+2. 在"Microsoft 365 合规中心中，转到"**策略"。**
 
 3. 选择 **Office 365** 策略"页上的"警报策略"页面，打开"Office 365安全与合规 **&"页面**。
 
@@ -373,17 +375,17 @@ ms.locfileid: "52822125"
 
 具有包含Microsoft 365合规性的订阅的客户无需额外的 Power Automate 许可证，就可使用建议的默认通信合规性Power Automate模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果您选择使用这些模板中的高级 Power Automate 功能、使用 Microsoft 365 合规性连接器创建自定义模板或使用 Microsoft 365 中其他合规性领域的 Power Automate 模板，您可能需要其他 Power Automate 许可证。
 
->[!IMPORTANT]
->在测试流时是否收到有关其他许可证验证Power Automate提示？ 您的组织可能尚未收到此预览功能的服务更新。 更新正在部署中，具有 Microsoft 365 订阅（包括通信合规性）的所有组织都应具有到 2020 年 10 月 30 日从推荐的 Power Automate 模板创建的流的许可证支持。
+> [!IMPORTANT]
+> 在测试流时是否收到有关其他许可证验证Power Automate提示？ 您的组织可能尚未收到此预览功能的服务更新。 更新正在部署中，具有 Microsoft 365 订阅（包括通信合规性）的所有组织都应具有到 2020 年 10 月 30 日从推荐的 Power Automate 模板创建的流的许可证支持。
 
 ![通信合规性Power Automate](../media/communication-compliance-power-automate.png)
 
 以下Power Automate模板提供给客户，以支持通信合规性警报的流程自动化：
 
 - **当用户具有通信合规性警报** 时通知经理：当用户具有通信合规性警报时，某些组织可能需要立即发送管理通知。 配置和选择此流后，会向案例用户的经理发送一封电子邮件，包含有关所有警报的以下信息：
-    - 警报的适用策略
-    - 警报的日期/时间
-    - 警报的严重性级别
+  - 警报的适用策略
+  - 警报的日期/时间
+  - 警报的严重性级别
 
 ### <a name="create-a-power-automate-flow"></a>创建Power Automate流
 
@@ -391,7 +393,7 @@ ms.locfileid: "52822125"
 
 完成以下步骤以创建Power Automate模板的流：
 
-1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
+1. In the Microsoft 365 合规中心， go to **Communication compliance**  >  **Policies** and select the policy with the alert you want review.
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
 3. Select **Power Automate** from the alert action menu.
 4. 在 **"Power Automate"** 页上，从页面上的"通信合规性模板 **"部分选择** 默认模板。
@@ -408,7 +410,7 @@ ms.locfileid: "52822125"
 若要共享Power Automate流，您必须至少是一个通信合规性角色组的成员。
 完成以下步骤以共享Power Automate流：
 
-1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
+1. In the Microsoft 365 合规中心， go to **Communication compliance**  >  **Policies** and select the policy with the alert you want review.
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
 3. Select **Power Automate** from the alert action menu.
 4. 在 **"Power Automate流**"页上，选择"**我的** 流"或"**团队流"** 选项卡。
@@ -422,7 +424,7 @@ ms.locfileid: "52822125"
 
 完成以下步骤以编辑Power Automate流：
 
-1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
+1. In the Microsoft 365 合规中心， go to **Communication compliance**  >  **Policies** and select the policy with the alert you want review.
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
 3. Select **Power Automate** from the alert action menu.
 4. 在 **"Power Automate流"** 页上，选择要编辑的流。 从 **流控制** 菜单中选择"编辑"。
@@ -435,13 +437,13 @@ ms.locfileid: "52822125"
 
 完成以下步骤以删除Power Automate流：
 
-1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
+1. In the Microsoft 365 合规中心， go to **Communication compliance**  >  **Policies** and select the policy with the alert you want review.
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
 3. Select **Power Automate** from the alert action menu.
 4. 在 **"Power Automate流**"页上，选择要删除的流。 从 **流控制** 菜单中选择"删除"。
 5. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
-## <a name="reports"></a>报告
+## <a name="reports"></a>报表
 
 新的 **"报告** "仪表板是查看所有通信合规性报告的中央位置。 报告小组件提供对通信合规性活动状态进行总体评估最常用的见解的快速视图。 报表小部件中包含的信息不可导出。 详细报告提供与特定通信合规性领域相关的深入信息，并提供在查看时筛选、分组、排序和导出信息的能力。
 
@@ -466,7 +468,7 @@ ms.locfileid: "52822125"
     - 待审阅的项目
     - 已通知用户
     - 已创建案例
-    
+
     使用 *"* 导出"选项创建.csv报告详细信息的报表文件。
 - **每个位置的项目和操作** 详细报告：查看和导出每个位置的匹配项目和Microsoft 365操作。 包括有关工作负荷平台如何与以下平台关联的信息：
 
@@ -510,25 +512,25 @@ ms.locfileid: "52822125"
 
 在某些情况下，您必须向法规或合规性审核员提供相关信息，以证明监督用户活动和通信。 此信息可能是与已定义的组织策略相关联的所有活动的摘要，或者通信合规性策略发生更改时。 通信合规性策略具有内置的审核跟踪，可完全准备内部或外部审核。 通信策略会捕获每个创建、编辑和删除操作的详细审核历史记录，以提供监管程序的证明。
 
->[!Important]
->必须先为组织启用审核，然后才能记录通信合规性事件。 若要启用审核，请参阅[启用审核日志。](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 当活动触发在 Microsoft 365 审核日志 捕获的事件时，可能需要 48 小时才能在通信合规性策略中查看这些事件。
+> [!IMPORTANT]
+> 必须先为组织启用审核，然后才能记录通信合规性事件。 若要启用审核，请参阅[启用审核日志。](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 当活动触发在 Microsoft 365 审核日志 捕获的事件时，可能需要 48 小时才能在通信合规性策略中查看这些事件。
 
 若要查看通信合规性策略更新活动，请在任何策略的主页上选择"导出策略更新"控件。 必须分配有全局管理员或 *通信合规性管理员* 角色才能导出更新活动。 此操作将生成包含以下信息.csv审核文件：
 
-|**Field**|**详细信息**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | 在策略中执行更新活动的日期。 |
 | **UserIds** | 在策略中执行更新活动的用户。 |
-| **操作** | 对策略执行的更新操作。 |
+| **Operations** | 对策略执行的更新操作。 |
 | **AuditData** | 此字段是所有策略更新活动的主数据源。 所有更新活动都记录和用逗号分隔符分隔。 |
 
 若要查看策略的通信合规性审阅活动，请选择特定策略的"概述"页上的"导出审阅活动"控件。 必须分配有全局管理员或 *通信合规性管理员* 角色才能导出审阅活动。 此操作将生成包含以下信息.csv审核文件：
 
-|**Field**|**详细信息**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | 在策略中执行审阅活动的日期。 |
 | **UserIds** | 在策略中执行审阅活动的用户。 |
-| **操作** | 对策略执行的审阅操作。 |
+| **Operations** | 对策略执行的审阅操作。 |
 | **AuditData** | 此字段是所有策略审阅活动的主数据源。 所有审阅活动都由逗号分隔符进行记录和分隔。 |
 
 您还可以在统一部署中或审核日志 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。 若要了解有关保留策略审核日志，请参阅管理审核日志 [保留策略](audit-log-retention-policies.md)。
@@ -548,7 +550,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 此示例返回与当前通信合规性策略匹配的活动：
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
 通信合规性策略匹配项存储在每个策略的监督邮箱中。 在某些情况下，可能需要检查监督邮箱的大小，以确保未接近当前 50 GB 的限制。 如果达到邮箱限制，则不捕获策略匹配项，并且您需要创建一个使用相同设置 (的新策略) 以继续捕获相同活动的匹配项。
@@ -559,7 +561,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 2. 在 PowerShell 中运行以下命令：
 
     ```PowerShell
-    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)
     {
        "<Name of your communication compliance policy>: " + $p.Name
        Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize

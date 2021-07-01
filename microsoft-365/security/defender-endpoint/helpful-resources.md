@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5e92cd8b15a744301755dcd17633616e3061292c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843058"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225971"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>适用于终结点资源的有用 Microsoft Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "52843058"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 访问有用的资源，例如指向博客的链接和与 Microsoft Defender for Endpoint 相关的其他资源。
 
@@ -57,7 +57,7 @@ ms.locfileid: "52843058"
 
 - [黄金小时重做 - 定义成功安全操作的指标](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/The-Golden-Hour-remake-Defining-metrics-for-a-successful/ba-p/782014)
 
-- [Defender for Endpoint Evaluation lab 现已在公共预览版中提供   ](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271)
+- [Defender for Endpoint Evaluation lab 现已在公共预览版中提供](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271)
 
 - [自动化如何为安全团队带来价值](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 

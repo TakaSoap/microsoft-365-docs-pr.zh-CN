@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408173"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226907"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>双密钥加密Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "51408173"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>组织何时应采用 DKE
 
-双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对你的大多数数据使用其他解决方案，例如 Microsoft 信息保护（包含 Microsoft 托管的密钥）或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用功能最强大的Office 365服务;不能与 DKE 加密内容一同使用的服务。 例如：
+双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对你的大多数数据使用其他解决方案，例如Microsoft 信息保护 Microsoft 托管密钥或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用功能最强大的Office 365服务;不能与 DKE 加密内容一同使用的服务。 例如：
 
 - 需要查看附件的传输规则，包括反恶意软件和垃圾邮件
 - Microsoft Delve
@@ -45,7 +45,7 @@ ms.locfileid: "51408173"
 
 任何未通过 MIP SDK 与 DKE 集成的外部应用程序或服务将无法对加密数据执行操作。
 
-Microsoft 信息保护 SDK 1.7+ 支持双密钥加密;与 SDK 集成的应用程序将能够通过足够的权限和集成来了解此数据。
+sdk Microsoft 信息保护 1.7+ 支持双密钥加密;与 SDK 集成的应用程序将能够通过足够的权限和集成来了解此数据。
 
 我们建议组织使用 Microsoft 信息保护功能 (分类和标记) 保护大部分敏感数据，并仅将 DKE 用于任务关键型数据。 双密钥加密与高度管控行业（如金融服务和医疗保健）中的敏感数据相关。
 
@@ -79,7 +79,7 @@ DKE 敏感度标签通过桌面应用中的敏感度功能区提供给Office最�
 
 1. 部署 DKE 服务，如本文所述。
 
-2. 使用双密钥加密创建标签。 导航到合规性中心Microsoft 365[信息](https://compliance.microsoft.com)保护，然后使用双密钥加密创建新标签。 请参阅 [使用敏感度标签应用加密来限制对内容的访问](./encryption-sensitivity-labels.md)。
+2. 使用双密钥加密创建标签。 导航到密码下的信息[Microsoft 365 合规中心](https://compliance.microsoft.com)使用双密钥加密创建新标签。 请参阅 [使用敏感度标签应用加密来限制对内容的访问](./encryption-sensitivity-labels.md)。
 
 3. 使用双密钥加密标签。 通过从"敏感度"功能区中选择"双密钥加密"标签来保护Microsoft Office。
 
@@ -183,7 +183,7 @@ Microsoft 在数据库存储库中提供 DKE GitHub文件。 克隆存储库以�
 
 - **角色授权**。 允许组织根据 Active Directory 组授予对密钥的访问权限，并需要 Web 服务可以查询 LDAP。
 
-**使用电子邮件授权设置 DKE 的关键访问设置**
+##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>使用电子邮件授权设置 DKE 的关键访问设置
 
 1. 打开 **"appsettings.js"** 文件并找到 `AuthorizedEmailAddress` 设置。
 
@@ -205,7 +205,7 @@ Microsoft 在数据库存储库中提供 DKE GitHub文件。 克隆存储库以�
 
    ![显示appsettings.js方法的 on 文件](../media/dke-email-accesssetting.png)
 
-**使用角色授权设置 DKE 的关键访问设置**
+##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>使用角色授权设置 DKE 的关键访问设置
 
 1. 打开 **"appsettings.js"** 文件并找到 `AuthorizedRoles` 设置。
 
@@ -231,7 +231,7 @@ Microsoft 在数据库存储库中提供 DKE GitHub文件。 克隆存储库以�
 
 DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
-**为 DKE 配置租户和密钥设置**
+##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>为 DKE 配置租户和密钥设置
 
 1. 打开 **appsettings.json** 文件。
 
@@ -242,6 +242,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > 如果要启用对密钥存储的外部 B2B 访问，还需要包含这些外部租户作为有效颁发者列表的一部分。
 
@@ -263,7 +264,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 生成密钥：
 
-1. 从"Windows"菜单中，运行 OpenSSL 命令提示符。
+1. 从Windows "开始"菜单，运行 OpenSSL 命令提示符。
 
 2. 更改为要保存测试密钥的文件夹。 通过完成此任务中的步骤创建的文件存储在同一文件夹中。
 
@@ -370,7 +371,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 对于试点部署，可以在 Azure 中部署并立即开始。
 
-**创建 Azure Web App 实例以托管 DKE 部署**
+#### <a name="to-create-an-azure-web-app-instance-to-host-your-dke-deployment"></a>创建 Azure Web App 实例以托管 DKE 部署
 
 若要发布密钥存储，需要创建 Azure 应用服务实例来托管 DKE 部署。 接下来，将生成的密钥发布到 Azure。
 
@@ -530,18 +531,18 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     4. 选择 **顶部的** "保存"保存更改。
 
-    5. 重复这些步骤，但这次将客户端 ID 定义为 `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 此值为 Azure 信息保护统一标记客户端 ID。 
+    5. 重复这些步骤，但这次将客户端 ID 定义为 `c00e9d32-3c8d-4a7d-832b-029040e7db99` 。 此值为 Azure 信息保护统一标记客户端 ID。
 
 现在已注册 DKE 服务。 通过使用 [DKE 继续创建标签](#create-sensitivity-labels-using-dke)。
 
 ## <a name="create-sensitivity-labels-using-dke"></a>使用 DKE 创建敏感度标签
 
-在Microsoft 365中心中，创建新的敏感度标签，并像否则一样应用加密。 选择 **"使用双密钥加密** "，然后输入密钥的终结点 URL。
+在Microsoft 365 合规中心中，创建一个新的敏感度标签，并像否则一样应用加密。 选择 **"使用双密钥加密** "，然后输入密钥的终结点 URL。
 
 例如：
 
 > [!div class="mx-imgBorder"]
-> ![选择安全与合规中心中的"使用Microsoft 365密钥加密"](../media/dke-use-dke.png)
+> ![Select Use Double Key Encryption in the Microsoft 365 合规中心](../media/dke-use-dke.png)
 
 你添加的任何 DKE 标签都将开始在最新版本的 Microsoft 365 企业应用版 中显示。
 

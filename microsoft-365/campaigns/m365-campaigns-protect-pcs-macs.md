@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 BYOD 保护非托管或自带设备 (BYOD) Microsoft 365。
-ms.openlocfilehash: 430f5446f86c26cb1f0fd1c7f34613cddec473b2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398249"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227495"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保护非托管的 Windows 10 电脑和 Mac
 
@@ -54,7 +54,7 @@ ms.locfileid: "51398249"
 
 设备加密适用于各种Windows，并且有助于通过加密数据来保护数据。 如果打开设备加密，则只有经过授权的个人才能访问你的设备和数据。 有关 [说明，请参阅打开设备](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 加密。
 
- 如果设备加密在你的设备上不可用，你可以改为打开标准BitLocker[加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)。  (BitLocker在 Windows 10 家庭版.)  
+ 如果设备加密在你的设备上不可用，你可以改为打开标准 [BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 加密。  (BitLocker 在 Windows 10 家庭版 版本上)  
 
 **使用安全保护Windows 安全中心**<p>
 如果你已Windows 10，你将使用最新防病毒Windows 安全中心。 首次启动Windows 10时，Windows 安全中心通过扫描恶意软件、恶意软件 (、病毒和安全威胁) 并主动帮助保护电脑。 Windows 安全中心实时保护扫描你在电脑上下载或运行的所有内容。
@@ -72,7 +72,7 @@ Windows 更新网站会自动下载 Windows 安全的更新，以帮助保护电
 磁盘加密在设备丢失或被盗时保护数据。 FileVault 全磁盘加密有助于防止对启动磁盘上的信息进行未经授权的访问。 有关 [说明，请参阅使用 FileVault](https://support.apple.com/HT204837) 加密 Mac 上的启动磁盘。
 
 **保护 Mac 免受恶意软件的攻击**<p>
-Microsoft 建议在 Mac 上安装和使用可靠的防病毒软件。 有关选项列表，请参阅以下文章 [：Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
+Microsoft 建议在 Mac 上安装和使用可靠的防病毒软件。 有关选项列表，请参阅以下文章 [：Best Mac antivirus 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
 
 您还可以通过使用仅来自可靠来源的软件来降低恶意软件的风险。 安全与&首选项中的设置允许你指定安装在 Mac 上的软件源。 有关详细信息，请参阅保护 [Mac 免受恶意软件的攻击](https://support.apple.com/kb/PH25087)。
 

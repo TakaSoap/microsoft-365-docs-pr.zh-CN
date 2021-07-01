@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Configuration Manager 在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: ac05581ce33e94859dbd67848197878595d5ed0f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: d2db35e50d31a0a19076965da6dcecf9cfeef826
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893293"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226893"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "51893293"
 2. 在导航窗格中，选择 **"设置**  >  **载入**  >  **"。**
 
 3. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
- 
+
 4. 选择 **"下载程序包**"，然后保存.zip文件。
 
 5. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOnboardingScript.cmd 的文件*。
@@ -47,12 +47,12 @@ ms.locfileid: "51893293"
 > [!NOTE]
 > Microsoft 365终结点数据丢失防护不支持在[OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)的"开箱即用体验" (载入) 阶段。 确保用户在运行完安装或升级Windows OOBE。
 
->[!TIP]
+> [!TIP]
 > 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)设备运行检测测试。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
 > 如果由于挂起的 OOBE (或其他任何原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
-> 
+>
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
 有关详细信息，请参阅[Configure Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
@@ -61,8 +61,8 @@ ms.locfileid: "51893293"
 
 对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft Defender 安全中心 提交文件进行深入分析时是否可以从设备收集示例。
 
->[!NOTE]
->这些配置设置通常通过 Configuration Manager 完成。 
+> [!NOTE]
+> 这些配置设置通常通过 Configuration Manager 完成。
 
 可以在 Configuration Manager 中为配置项设置合规性规则，以更改设备上的示例共享设置。
 
@@ -112,7 +112,7 @@ Value: 0 or 1
 
 **攻击面减少** 将所有可用规则配置为审核。
 
->[!NOTE]
+> [!NOTE]
 > 阻止这些活动可能会中断合法的业务流程。 最佳方法是设置要审核的所有内容，确定哪些内容可安全打开，然后在没有误报检测的终结点上启用这些设置。
 
 **网络保护**
@@ -147,7 +147,7 @@ Value: 0 or 1
 3. 选择Windows 10操作系统。
 
 4. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
-    
+
 5. 选择 **"下载程序包**"，然后保存.zip文件。
 
 6. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
@@ -162,7 +162,7 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>监视设备配置
 
-如果你正在使用当前分支Microsoft Endpoint Configuration Manager，请使用 Configuration Manager 控制台中的内置 Microsoft Defender for Endpoint 仪表板。 有关详细信息，请参阅 Microsoft Defender 高级威胁防护[- Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+如果你正在使用当前分支Microsoft Endpoint Configuration Manager，请使用 Configuration Manager 控制台中的内置 Microsoft Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Microsoft Defender 高级威胁防护 - 监视](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
 如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
 
@@ -180,7 +180,7 @@ Value: 0 or 1
 
 4. 查看"完成统计信息"和 **"内容** 状态" **下的状态指示器**。
 
-    如果设备部署失败 (错误、不满足要求或失败状态) ，你可能需要对设备进行故障排除。  有关详细信息，请参阅载入Microsoft Defender 高级威胁防护[疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+    如果设备部署失败 (错误、不满足要求或失败状态) ，你可能需要对设备进行故障排除。  有关详细信息，请参阅 Microsoft [Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
     ![显示成功部署（无错误）的 Configuration Manager](../media/sccm-deployment.png)
 
@@ -207,4 +207,4 @@ Value: “1”
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [载入Microsoft Defender 高级威胁防护疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 高级搜寻架构中的数据表
+title: 高级搜寻架构Microsoft 365 Defender表
 description: 了解高级搜寻架构中的表，以了解可运行威胁搜寻查询的数据
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 数据
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470576"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225984"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -48,9 +48,9 @@ ms.locfileid: "52470576"
 - **示例** 查询 - 具有表利用方式的示例查询。
 
 ### <a name="access-the-schema-reference"></a>访问架构引用
-若要快速访问架构引用，请选择架构表示中表名称旁边的"查看引用"操作。 还可以选择" **架构引用** "来搜索表。   
+若要快速访问架构引用，请选择架构表示中表名称旁边的"查看引用"操作。 还可以选择" **架构引用** "来搜索表。
 
-![显示如何访问门户内架构参考的图像 ](../../media/mtp-ah/ah-reference.png) 
+![显示如何访问门户内架构参考的图像](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>了解架构表
 以下引用列出了架构中的所有表。 每个表名称链接到描述该表的列名称的页面。 表和列名称还将在安全中心列出，作为高级搜寻屏幕上的架构表示的一部分。

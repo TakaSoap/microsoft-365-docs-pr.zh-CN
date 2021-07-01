@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: 了解如何将流量路由到 Microsoft 外部托管的现有公共网站（如果已设置 Microsoft 管理自定义域的 DNS 记录）。
-ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572133"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228119"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 记录以便利用当前的托管提供商继续托管网站
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572133"
   
  **如果 Microsoft 管理 DNS 记录**，若要将流量路由到在 Microsoft 外部托管的现有公共网站，在将域添加到 Microsoft 后，请执行下列操作： 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新管理中心Microsoft 365 DNS 记录
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 dns 记录Microsoft 365 管理中心
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 1. 在"**域**"页面上，选择域，然后选择 **"DNS 记录"。**
@@ -65,6 +65,6 @@ ms.locfileid: "52572133"
     
 最后，请执行下列操作：
   
-[将域的 NS 记录更新](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 为指向 Microsoft。 
+[将域的 NS 记录更新](../setup/add-domain.md) 为指向 Microsoft。 
   
 当 NS 记录更新为指向 Microsoft 时，域已全部设置。 电子邮件将路由到 Microsoft，并且发送到你的网站地址的流量将继续转到你的当前网站主机。

@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的客户密钥的可用性密钥。
-ms.openlocfilehash: 4f4dfdff0aa1c7ebe6dd1266c82c6fd290913a3e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345090"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227075"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>了解客户密钥的可用性密钥
 
@@ -155,8 +155,8 @@ Microsoft 365仅在特定情况下触发可用性密钥。 这些情况因服务
 
        - 在这种情况下，可用性密钥将仅用于系统操作，不用于用户操作，用户请求将失败，并且用户会收到错误消息。
 
->[!IMPORTANT]
->Microsoft 365代码始终具有有效的登录令牌，用于通过客户数据进行推断以提供增值云服务。 因此，在删除可用性密钥之前，它可用作 Exchange Online 和 Skype for Business 启动的操作（或内部操作，如搜索索引创建或移动邮箱）的回退。 这适用于对 Azure 密钥保管库的暂时性错误和访问被拒绝请求。
+> [!IMPORTANT]
+> Microsoft 365代码始终具有有效的登录令牌，用于通过客户数据进行推断以提供增值云服务。 因此，在删除可用性密钥之前，它可用作 Exchange Online 和 Skype for Business 启动的操作（或内部操作，如搜索索引创建或移动邮箱）的回退。 这适用于对 Azure 密钥保管库的暂时性错误和访问被拒绝请求。
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint Online、OneDrive for Business 和 Teams 文件的触发器
 

@@ -21,12 +21,12 @@ search.appverid:
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536126"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227471"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -100,10 +100,10 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Power AutomateRPA | CFQ7TTC0KXG6  |
 | Power BI Premium (独立)  | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project计划 1 | CFQ7TTC0KXND |
-| Project计划 3 | CFQ7TTC0KXNC |
-| Visio计划 1 | CFQ7TTC0KXN9 |
-| Visio计划 2 | CFQ7TTC0KXN8 |
+| Project 计划 1 | CFQ7TTC0KXND |
+| Project 计划 3 | CFQ7TTC0KXNC |
+| Visio 计划 1 | CFQ7TTC0KXN9 |
+| Visio 计划 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
 
@@ -150,7 +150,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ### <a name="solution"></a>解决方案
 
-升级到 TLS 1.2： [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+升级到 TLS 1.2： (/mem/configmgr/core/plan-design/security/enable-tls-1-2) 
 
 <!--
 ## Uninstall the MSCommerce module

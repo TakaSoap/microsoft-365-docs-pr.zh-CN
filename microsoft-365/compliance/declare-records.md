@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903896"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226991"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
@@ -36,7 +36,7 @@ ms.locfileid: "52903896"
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>如何显示将内容标记为合规性记录的选项
 
->[!NOTE] 
+> [!NOTE]
 > 以下过程是可审核的操作，在审核日志的 [保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)部分中，记录 **为保留标签启用的合规性记录选项**。
 
 默认情况下，保留标签向导中不显示用于将内容标记为合规性记录的保留标签选项。 如需显示此选项，须首先运行 PowerShell 命令：
@@ -44,13 +44,14 @@ ms.locfileid: "52903896"
 1. [连接到 Office 365 安全与合规中心 Powershell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 运行以下 cmdlet：
-    
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+
     系统不会提示你进行确认，并且设置会立即生效。
 
-如果你想改变保留标签向导中有关查看此选项的设置，可通过运行相同的 cmdlet 和 **false** 值来将其再次隐藏： `Set-RegulatoryComplianceUI -Enabled $false` 
+如果你想改变保留标签向导中有关查看此选项的设置，可通过运行相同的 cmdlet 和 **false** 值来将其再次隐藏： `Set-RegulatoryComplianceUI -Enabled $false`
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>配置保留标签以声明记录
 
@@ -60,7 +61,7 @@ ms.locfileid: "52903896"
 
 ![配置保留标签，将内容标记为记录或合规性](../media/recordversioning6.png)
 
-根据需要，将保留标签应用于 SharePoint 或 OneDrive 文档和 Exchange 电子邮件。 
+根据需要，将保留标签应用于 SharePoint 或 OneDrive 文档和 Exchange 电子邮件。
 
 有关完整说明：
 
@@ -73,7 +74,7 @@ ms.locfileid: "52903896"
 
 当将项目标记为记录或合规性记录的保留标签可供用户在应用程序中应用时：
 
-- 对于 Exchange，任何拥有邮箱写入权限的用户均可应用这些标签。 
+- 对于 Exchange，任何拥有邮箱写入权限的用户均可应用这些标签。
 - 对于 SharePoint 和 OneDrive，默认“成员”组（“参与”权限级别）中的任何用户均可应用这些标签。
 
 使用保留标签标记为记录的文档示例：
@@ -84,7 +85,7 @@ ms.locfileid: "52903896"
 
 审核日志中记录标记以声明项目作为记录的操作。
 
-对于 SharePoint 项目： 
+对于 SharePoint 项目：
 - 从 **文件和页面活动**，选择 **已更改文件的保留标签**。 此审核事件用于将项目标记为记录、法规记录或标准保留标签。
 
 对于 Exchange 项目：
