@@ -1,0 +1,8 @@
+- name: 'M365 Office LTI (Preview) '
+  href: index.md
+- name: '将 Microsoft OneDrive LTI 与 Canvas (Preview) '
+  href: onedrive-lti.md
+- name: '将Microsoft Teams与 Canvas (Preview) '
+  href: teams-classes-with-canvas.md
+- name: '将Microsoft Teams与 Canvas (Preview) '
+  href: teams-meetings-with-canvas.md
