@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d35c1f0c7abc7b6ce34fc9c2ec4d5fd5b228ae
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 053f88da96983b03ad03e75c11a4fa692ac6a850
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137735"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256863"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -91,7 +91,7 @@ ms.locfileid: "53137735"
 
      若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
-4. 完成时，请单击“保存”。
+4. 完成后，单击“**保存**”。
 
 您配置的 SecOps 邮箱条目显示在 **SecOps** 邮箱选项卡上。若要进行更改，请单击选项卡 ![ 上的" ](../../media/m365-cc-sc-edit-icon.png) 编辑"图标"编辑"。
 
@@ -161,7 +161,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<Ema
 本示例将创建 SecOps 邮箱策略。
 
 ```powershell
-New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 ```
 
 有关语法和参数的详细信息，请参阅[New-SecOpsOverridePolicy。](/powershell/module/exchange/new-secopsoverridepolicy)
@@ -293,7 +293,7 @@ New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>步骤 2：使用 PowerShell 创建网络钓鱼模拟替代规则
 
-使用以下语法:
+使用以下语法：
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>

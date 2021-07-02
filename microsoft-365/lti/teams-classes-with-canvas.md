@@ -3,7 +3,7 @@ title: 将Microsoft Teams与 Canvas 一同使用
 ms.author: v-cichur
 author: cichur
 manager: serdars
-ms.reviewer: amitman
+ms.reviewer: sovaish
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 50e4e8ef912a8f19f379bba29b328a5a27358b5c
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137675"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256899"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -32,18 +32,18 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 在内部结构 Canvas 中管理 Microsoft Teams 集成之前，必须让 Microsoft Azure 租户中的机构 Microsoft Office 365 管理员批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用，然后再完成 Canvas 管理员设置。
 
 1. 登录到 Canvas。
- 
+
 2. 选择全局 **导航** 中的"管理员"链接，然后选择您的帐户。
 
-3. 在管理员导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。 
+3. 在管理员导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。
 
 4. 通过Microsoft Teams启用"同步"。
 
    ![teams-sync](media/teams-sync.png)
 
-5. 输入你的 Microsoft 租户名称和登录属性。 
+5. 输入你的 Microsoft 租户名称和登录属性。
 
-   login 属性将用于将 Canvas 用户与用户Azure Active Directory关联。 
+   login 属性将用于将 Canvas 用户与用户Azure Active Directory关联。
 
 6. 选择 **"完成设置** 更新"。
 
@@ -52,7 +52,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
    ![权限](media/permissions.png)
 
 8. 选择 **接受**。
- 
+
 ## <a name="canvas-admin"></a>Canvas 管理
 
 设置 Microsoft Teams LTI 1.3 集成。
@@ -63,8 +63,8 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
 1. 访问 **管理员设置**  >  **应用**。
 
-2. 选择 **+ 应用** 以添加Teams LTI 应用。 
- 
+2. 选择 **+ 应用** 以添加Teams LTI 应用。
+
    ![external-apps](media/external-apps.png)
 
 3. 为 **配置类型选择"** 按客户端 ID"。
@@ -72,8 +72,8 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
    ![添加应用](media/add-app.png)
 
 4. 输入提供的客户端 ID，然后选择"提交 **"。**
-   
-   你会注意到客户端 ID 的Microsoft Teams LTI 应用名称，用于确认。 
+
+   你会注意到客户端 ID 的Microsoft Teams LTI 应用名称，用于确认。
 
 5. 选择“安装”。
 

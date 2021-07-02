@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 有关在表单中处理各种Advanced eDiscovery。
-ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751509"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256299"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>在任务中处理Advanced eDiscovery
 
-*处理* 过程包括文件标识、扩展嵌入文档和附件、文本提取以及图像文件的光学字符识别 (OCR) ) 以及随后对内容编制索引。  
+*处理* 是文件标识、扩展嵌入文档和附件、文本提取以及图像文件的光学字符识别 (OCR) 以及后续索引该内容的过程。  
 
 当您将保管人和非保管人数据源添加到"源"选项卡上的案例时，将处理来自 Microsoft 365 的所有部分索引项，使其完全可搜索。 同样，在将内容添加到来自源和非Microsoft 365的审阅Microsoft 365，也会处理此内容。
 

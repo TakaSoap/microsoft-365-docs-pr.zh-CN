@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解 Advanced eDiscovery 中的Microsoft 365。 本文概述了 Advanced eDiscovery 中Microsoft 365，这是一种可帮助您管理内部和外部调查的工具。 它还说明使用 Advanced eDiscovery管理法律调查的业务原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4fe94aed10a7b9e981e2a9d46e992d5557e35dcb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840834"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256455"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概述Microsoft 365 Advanced eDiscovery
 
@@ -95,7 +95,7 @@ Advanced eDiscovery EDRM Microsoft 365电子数据展示过程的内置工作流
 
 用户Advanced eDiscovery需要相应的组织订阅和每用户许可。
 
-- **组织订阅：** 若要Advanced eDiscovery合规Microsoft 365，你的组织必须具有以下帐户之一：
+- **组织订阅：** 若要访问Advanced eDiscovery中的Microsoft 365 合规中心，您的组织必须具有以下项之一：
 
   - Microsoft 365 E5 或 Office 365 E5 订阅
   
@@ -111,7 +111,7 @@ Advanced eDiscovery EDRM Microsoft 365电子数据展示过程的内置工作流
 
   - Microsoft 365：必须为用户分配Microsoft 365 E5许可证、E5 合规性附加许可证或 E5 电子数据展示和审核加载项许可证。 Microsoft 365 教育版必须为用户分配 A5 许可证。
 
-  - Office 365：必须为用户分配 Office 365 E5 Office 365 教育版 A5 许可证。
+  - Office 365：必须为用户分配Office 365 E5或Office 365 教育版 A5 许可证。
 
    若要了解如何分配许可证，请参阅 [向用户分配许可证](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
@@ -141,3 +141,7 @@ Advanced eDiscovery EDRM Microsoft 365电子数据展示过程的内置工作流
 [下载为 PDF 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
 [下载为Visio文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+
+## <a name="training"></a>培训
+
+针对 Advanced eDiscovery 的基础知识对 IT 管理员、电子数据展示管理员和合规性调查团队进行培训，可帮助组织使用 Microsoft 365 电子数据展示工具更快入门。 Microsoft 365 提供了以下资源来帮助贵组织中这些用户开始使用电子数据展示：描述 Microsoft 365 电子数据[展示和审核Microsoft 365。](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)

@@ -9,48 +9,48 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
-description: 了解Microsoft 365合规中心，包括其中包含哪些内容、如何获取它以及你的下一步。
+description: 了解Microsoft 365 合规中心，包括它包含哪些内容、如何获取它以及你的下一步。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: adaeca7bf04cb062b72a5385b9bed476fb0a51f8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: d36acff4dd74838a0469a37e11a20d678b1b4067
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113518"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256371"
 ---
 # <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规中心
 
-如果你对组织的合规性状态感兴趣，你将喜欢Microsoft 365[合规中心](https://compliance.microsoft.com)。 Microsoft 365 合规中心提供轻松访问管理组织合规性需求所需的数据和工具。
+如果你对组织的合规性状态感兴趣，你将喜欢[Microsoft 365 合规中心。](https://compliance.microsoft.com) Microsoft 365 合规中心提供轻松访问管理组织合规性需求所需的数据和工具。
 
-阅读本文，了解 Microsoft 365合规中心、如何获取、常见问题以及您的[下一步](#next-steps)。 [](#how-do-i-get-the-compliance-center) [](#frequently-asked-questions)
+阅读本文，了解Microsoft 365 合规中心、如何[获取](#how-do-i-get-the-compliance-center)、常见问题以及接下来的[步骤](#next-steps)。 [](#frequently-asked-questions)
 
-[![Microsoft 365合规中心主页](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
+[![Microsoft 365 合规中心主页](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>欢迎使用Microsoft 365合规性
 
-当你第一次Microsoft 365合规性中心时，你收到以下欢迎消息：
+第一次Microsoft 365 合规中心时，你收到以下欢迎消息：
 
-![Microsoft 365合规中心简介](../media/m365-compliance-center-welcome-steps.png)
+![Microsoft 365 合规中心简介](../media/m365-compliance-center-welcome-steps.png)
 
 欢迎横幅为你提供了一些有关入门的指针、接下来的步骤以及一个邀请，让你向我们提供反馈。
 
 ## <a name="card-section"></a>“卡”部分
 
-首次访问 Microsoft 365 合规中心时，主页上的卡片部分会一目了然地显示组织在数据合规性方面的情况、可供组织使用的解决方案以及任何活动警报的摘要。
+首次访问 Microsoft 365 合规中心 时，主页上的卡片部分会一目了然地显示组织在数据合规性方面的情况、可供组织使用的解决方案以及任何活动警报的摘要。
 
 在这里，你可以:
 
 - 查看 **Microsoft 合规性管理器** 卡片，这可引导你找到 [合规性管理器](compliance-manager.md) 解决方案。 合规性管理器有助于简化合规性管理方式。 它计算基于风险的分数，用于衡量完成建议操作的进度，以帮助降低数据保护和监管标准的风险。 它还提供工作流功能和内置控件映射，以帮助您有效地执行改进操作。
 
-    ![合规性管理器卡片Microsoft 365合规中心](../media/m365-compliance-center-compliance-manager-card.png)
+    ![合规性管理器卡片Microsoft 365 合规中心](../media/m365-compliance-center-compliance-manager-card.png)
 
 - 查看新的 **解决方案目录** 卡，该卡片链接到可用于管理端到端 [](microsoft-365-solution-catalog.md)合规性方案的集成解决方案集合。 解决方案的功能和工具可能包括策略、警报、报表等的组合。
 
-    ![合规性中心Microsoft 365目录卡](../media/m365-compliance-center-solution-catalog-card.png)
+    ![解决方案目录卡Microsoft 365 合规中心](../media/m365-compliance-center-solution-catalog-card.png)
 
 - 查看 **活动警报** 卡片，其中包含最活跃警报的摘要，并包含一 [](alert-policies.md)个链接，可在其中查看更详细的信息，如严重性、状态、类别等。
 
-    ![合规中心的活动Microsoft 365卡片](../media/m365-compliance-center-active-alerts-card.png)
+    ![活动警报卡片Microsoft 365 合规中心](../media/m365-compliance-center-active-alerts-card.png)
 
 您还可以使用"添加卡片"功能添加其他卡片，如一张显示组织的云应用合规性卡，另一张显示有关使用共享文件的用户的数据，以及指向[云应用安全](/cloud-app-security/)或其他工具的链接，可在其中浏览数据。
 
@@ -62,29 +62,29 @@ ms.locfileid: "52113518"
 
 |  |  |
 |---------|---------|
-|![Microsoft 365合规中心中的导航](../media/m365-compliance-center-leftnav.png)  | 选择 **"** 主页"返回到Microsoft 365中心主页。 <br><br>访问 **合规性管理器** ，检查合规性分数并开始 [管理组织的](compliance-manager.md) 合规性。 <br><br> 选择" **数据分类** "部分以访问 [可训练分类器](classifier-learn-about.md)、 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)、内容和 [活动](data-classification-activity-explorer.md) 资源管理器。 <br/><br/> 选择 **"数据连接器**["，将连接器](archiving-third-party-data.md)配置为在订阅订阅中导入和存档Microsoft 365数据。 <br><br> 转到 **警报以查看** 和 [解决警报](alert-policies.md) <br/><br/>访问 **报告** 以查看有关标签使用情况 [和保留、DLP](sensitivity-labels.md)[策略匹配](view-the-dlp-reports.md)和替代、共享文件、[](/cloud-app-security/file-filters)使用的第三 [](/cloud-app-security/discovered-apps)方应用等的数据。 <br/><br/> 转到 **"策略** "以设置用于管理数据、管理设备和接收 [警报的策略](../security/office-365-security/alerts.md)。 您还可以访问 [DLP](dlp-learn-about-dlp.md) 和 [保留](retention.md) 策略。<br/><br/> 选择 **"权限**"以管理组织中有权访问 Microsoft 365中心以查看内容和完成任务的用户。 <br/><br/> 使用"解决方案 **"部分** 的链接访问组织的合规性解决方案。 其中包括： <br/><br/> [目录](microsoft-365-solution-catalog.md) <br> 发现、了解并开始使用组织可用的智能合规性和风险管理解决方案。 <br/><br/> [审核](search-the-audit-log-in-security-and-compliance.md) <br> 使用审核日志调查常见的支持和合规性问题。 <br/><br/> [内容搜索](search-for-content.md) <br> 使用内容搜索快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档，以及 Microsoft Teams 和 Skype for Business 中的即时消息对话。 <br/><br/> [通信合规性](communication-compliance.md) <br> 通过自动捕获不适当的邮件、调查可能的策略违反情况并采取措施进行修正，最大程度地降低通信风险。 <br/><br/> [了解数据丢失防护](dlp-learn-about-dlp.md) <br> 检测在整个组织、云和设备上使用和共享敏感内容，并帮助防止意外数据丢失。 <br/><br/> [数据主体请求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> 查找和导出用户的个人数据，以帮助你响应 GDPR 一般数据保护条例 (数据主体) 。 <br/><br/> [电子数据展示](overview-ediscovery-20.md) <br> 展开此部分以使用核心和Advanced eDiscovery，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 <br/><br/> [信息治理](manage-information-governance.md) <br> 使用导入、存储和分类业务关键型数据的功能管理内容生命周期，以便保留所需的内容并删除不需要的内容。 <br/><br/> [信息保护](information-protection.md) <br> 在整个组织生命周期内发现、分类和保护敏感内容和业务关键内容。 <br/><br/> [内部风险管理](insider-risk-management.md) <br> 检测整个组织中存在风险的活动，帮助你快速识别、调查和应对内部风险和威胁。 <br/><br/> [记录管理](records-management.md) <br> 自动执行并简化组织中法规、法律和业务关键记录的保留计划。
+|![导航导航Microsoft 365 合规中心](../media/m365-compliance-center-leftnav.png)  | 选择 **"** 主页"返回到Microsoft 365 合规中心主页。 <br><br>访问 **合规性管理器** ，检查合规性分数并开始 [管理组织的](compliance-manager.md) 合规性。 <br><br> 选择" **数据分类** "部分以访问 [可训练分类器](classifier-learn-about.md)、 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)、内容和 [活动](data-classification-activity-explorer.md) 资源管理器。 <br/><br/> 选择 **"数据连接器**["，将连接器](archiving-third-party-data.md)配置为在订阅订阅中导入和存档Microsoft 365数据。 <br><br> 转到 **警报以查看** 和 [解决警报](alert-policies.md) <br/><br/>访问 **报告** 以查看有关标签使用情况 [和保留、DLP](sensitivity-labels.md)[策略匹配](view-the-dlp-reports.md)和替代、共享文件、[](/cloud-app-security/file-filters)使用的第三 [](/cloud-app-security/discovered-apps)方应用等的数据。 <br/><br/> 转到 **"策略** "以设置用于管理数据、管理设备和接收 [警报的策略](../security/office-365-security/alerts.md)。 您还可以访问 [DLP](dlp-learn-about-dlp.md) 和 [保留](retention.md) 策略。<br/><br/> 选择 **"** 权限"以管理组织中有权访问Microsoft 365 合规中心查看内容和完成任务。 <br/><br/> 使用"解决方案 **"部分** 的链接访问组织的合规性解决方案。 具体包括： <br/><br/> [目录](microsoft-365-solution-catalog.md) <br> 发现、了解并开始使用组织可用的智能合规性和风险管理解决方案。 <br/><br/> [审核](search-the-audit-log-in-security-and-compliance.md) <br> 使用审核日志调查常见的支持和合规性问题。 <br/><br/> [内容搜索](search-for-content.md) <br> 使用内容搜索快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档，以及 Microsoft Teams 和 Skype for Business 中的即时消息对话。 <br/><br/> [通信合规性](communication-compliance.md) <br> 通过自动捕获不适当的邮件、调查可能的策略违反情况并采取措施进行修正，最大程度地降低通信风险。 <br/><br/> [了解数据丢失防护](dlp-learn-about-dlp.md) <br> 检测在整个组织、云和设备上使用和共享敏感内容，并帮助防止意外数据丢失。 <br/><br/> [数据主体请求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> 查找和导出用户的个人数据，以帮助你响应 GDPR 一般数据保护条例 (数据主体) 。 <br/><br/> [电子数据展示](overview-ediscovery-20.md) <br> 展开此部分以使用核心和Advanced eDiscovery，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 <br/><br/> [信息治理](manage-information-governance.md) <br> 使用导入、存储和分类业务关键型数据的功能管理内容生命周期，以便保留所需的内容并删除不需要的内容。 <br/><br/> [信息保护](information-protection.md) <br> 在整个组织生命周期内发现、分类和保护敏感内容和业务关键内容。 <br/><br/> [内部风险管理](insider-risk-management.md) <br> 检测整个组织中存在风险的活动，帮助你快速识别、调查和应对内部风险和威胁。 <br/><br/> [记录管理](records-management.md) <br> 自动执行并简化组织中法规、法律和业务关键记录的保留计划。
 
 ## <a name="how-do-i-get-the-compliance-center"></a>如何获取合规中心？
 
-- 如果你还没有新的合规性Microsoft 365，你很快就会拥有它。 目前Microsoft 365 SKU 客户可以使用 Microsoft 365 合规中心。
+- 如果你还没有新的Microsoft 365 合规中心，你很快就会拥有它。 现在Microsoft 365 合规中心 SKU 客户Microsoft 365该版本。
 
-- 若要访问Microsoft 365中心，全局管理员、合规性管理员或合规性数据管理员转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并登录。
+- 若要访问Microsoft 365 合规中心，全局管理员、合规性管理员或合规性数据管理员转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并登录。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么我会去安全与&中心完成某些任务，例如定义某些策略？**
 
-我们仍在开发Microsoft 365合规中心，并在过去的几个月内添加更多功能和解决方案。 在此期间，必须在安全与合规中心 ([https://protection.office.com](https://protection.office.com)) 完成一些任务。 在这种情况下，将自动定向到可以完成当前任务的位置，例如创建或编辑监督策略。
+我们仍在开发Microsoft 365 合规中心，我们将在过去的几个月内添加更多功能和解决方案。 在此期间，必须在安全与合规中心 ([https://protection.office.com](https://protection.office.com)) 完成一些任务。 在这种情况下，将自动定向到可以完成当前任务的位置，例如创建或编辑监督策略。
 
-**为什么我还没有看到新Microsoft 365合规中心？**
+**为什么我还没有看到新Microsoft 365 合规中心？**
 
 首先，请确保你拥有相应的许可证和权限。 然后，在 登录 [https://compliance.microsoft.com](https://compliance.microsoft.com) 。 如果你尚未看到新的合规中心，你很快就会拥有它。
 
-**我的一些合规性功能在 Microsoft 365中心不可用。我该怎么办？**
+**我的某些合规性功能在 Microsoft 365 合规中心。我该怎么办？**
 
-我们仍在向合规中心Microsoft 365功能。 如果找不到内容（如搜索审核日志，请使用安全与&中心 [https://protection.office.com](https://protection.office.com) () 。 配置将保存在现有安全与合规&中，并自动保存在新Microsoft 365合规中心。
+我们仍在向应用程序添加Microsoft 365 合规中心。 如果找不到内容（如搜索审核日志，请使用安全与&中心 [https://protection.office.com](https://protection.office.com) () 。 配置将保存在现有安全与合规&中，并自动保存在新Microsoft 365 合规中心中。
 
-To go there， in the Microsoft 365 compliance center， in the navigation pane on the left side of the screen， choose **More resources**， and then， under **Office 365 Security & Compliance Center，** choose **Open**.
+To go there， in the Microsoft 365 合规中心， in the navigation pane on the left side of the screen， choose **More resources**， and then， under Office 365 Security & **Compliance Center，** choose **Open**.
 
 ![更多资源](../media/m365-compliance-center-more-resources.png)
 
@@ -100,4 +100,4 @@ To go there， in the Microsoft 365 compliance center， in the navigation pane 
 
 - **了解并创建通信合规性策略** ，以快速识别和修正公司行为准则策略违反行为。 请参阅 Microsoft 365 中的[通信合规性](communication-compliance.md)。
 
-- **请经常Microsoft 365** 合规中心，并确保查看出现的任何警报或潜在风险。 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并登录。
+- **经常Microsoft 365 合规中心** 访问你的电子邮件，并确保查看出现的任何警报或潜在风险。 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并登录。

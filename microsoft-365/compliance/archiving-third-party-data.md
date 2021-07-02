@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: 76df1ffa7afdeeda9a35744e9e4bfffae4576ca9
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243955"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276949"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
@@ -107,7 +107,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 您必须使用 TeleMessage 为组织设置存档服务，然后才能在 Microsoft 365 中存档第三方数据。 有关详细信息，请单击"第三方数据"列中的链接，以转到有关创建该连接器的数据类型。
 
-TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文中的美国政府云数据连接器部分。
+TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中。 有关详细信息，请参阅本文 [中的](#data-connectors-in-the-us-government-cloud) 美国政府云数据连接器部分。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|

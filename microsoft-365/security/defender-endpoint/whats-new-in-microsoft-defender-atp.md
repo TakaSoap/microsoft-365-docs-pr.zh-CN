@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c200d4ac81f12e46b085261c5ece279839255f4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228383"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277009"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -48,15 +48,21 @@ ms.locfileid: "53228383"
 
 ## <a name="june-2021"></a>2021 年 6 月
 
+- [Delta 导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 导出漏洞和安全配置 API 集合 [评估的](get-assessment-methods-properties.md) 新增内容。 <br> 与完整的软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞"或"向组织添加了多少个新漏洞"。
+
+- [导出漏洞和安全配置评估](get-assessment-methods-properties.md) API <br> 添加 API 集合，用于危险和漏洞管理提取数据。 不同的 API 调用用于获取不同类型的数据：安全配置评估、软件清单评估和软件漏洞评估。 每个 API 调用都包含组织中设备的必要数据。
+
+- [修正活动](get-remediation-methods-properties.md) API <br>  添加包含响应的 API 集合，危险和漏洞管理已在租户中创建的修正活动。 响应信息类型包括一个按 ID 的修正活动、所有修正活动以及一个修正活动的公开设备。
+
 - [设备发现](device-discovery.md) <br> 帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。 使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。 然后，你可以载入发现的设备，以减少与网络中具有非托管终结点相关的风险。
 
    > [!IMPORTANT]
    > 从 2021 年 7 月 19 日开始，标准发现将成为所有客户的默认模式。 你可以选择通过设置页保留基本模式。
 
-
 - [现在，设备](/microsoft-365/security/defender-endpoint/machine-groups) 组定义可以包括每个条件的多个值。 你可以将多个标记、设备名称和域设置为单个设备组的定义。
 
 ## <a name="march-2021"></a>2021 年 3 月
+
 - [使用管理程序管理防Microsoft Defender 安全中心](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> 您可以使用称为租户附加 Windows 10 Windows Server 2016 Windows Server 2019 上管理防 *篡改保护设置*。
 
 ## <a name="january-2021"></a>2021 年 1 月
@@ -64,25 +70,27 @@ ms.locfileid: "53228383"
 - [Windows 虚拟桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 现在添加了对虚拟Windows支持。
 
 ## <a name="december-2020"></a>2020 年 12 月
+
 - [iOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 现在增加了对 iOS 的支持。 了解如何在 iOS 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 ## <a name="september-2020"></a>2020 年 9 月
+
 - [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何在 Android 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 - [威胁和漏洞管理 macOS 支持](tvm-supported-os.md)<br> 适用于 macOS 的威胁漏洞管理现在公开预览版，它将持续检测 macOS 设备上存在漏洞，以帮助你通过关注风险确定修复优先级。 有关详细信息，请从[Microsoft Tech Community博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
-
 ## <a name="august-2020"></a>2020 年 8 月
+
 - [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何在 Android 上安装、配置和使用 Microsoft Defender for Endpoint。
 
-
 ## <a name="july-2020"></a>2020 年 7 月
+
 - [创建证书指示器](manage-indicators.md) <br> 创建指示器以允许或阻止证书。
 
 ## <a name="june-2020"></a>2020 年 6 月
+
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 现在增加了对 Linux 的支持。 了解如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 - [评估实验室中的攻击模拟器](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint 已与各种威胁模拟平台合作，让你可以方便地从门户内测试平台的功能。
-
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -104,24 +112,21 @@ ms.locfileid: "53228383"
 
 - [IP 地址、URL/域指示器](manage-indicators.md) <BR> 你现在可以使用自己的威胁情报允许或阻止 URL/域。
 
-
 - [Microsoft 威胁专家 - 专家按需](microsoft-threat-experts.md) <BR> 现在，您可以选择从门户Microsoft 威胁专家咨询相关内容，以帮助你在调查上下文中使用。
 
 - [连接的 Azure AD 应用程序](connected-applications.md)<br> "已连接应用程序"页提供有关连接到组织中 Microsoft Defender for Endpoint 的 Azure AD 应用程序的信息。
 
 - [API 资源管理器](api-explorer.md)<br> 通过 API 资源管理器，可以轻松构造和执行 API 查询、测试和发送任何可用 Microsoft Defender 终结点 API 终结点的请求。
 
-
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [使用 Intune 的防篡改保护设置](prevent-changes-to-security-settings-with-tamper-protection.md)<br/>现在，你可以打开或 (Intune) Intune Microsoft 365 Device Management Portal 中的组织 (防篡改) 。
+- [使用 Intune 的防篡改保护设置](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> 现在，你可以打开或 (Intune) Intune Microsoft 365 Device Management Portal 中的组织 (防篡改) 。
 
-- [实时响应](live-response.md)<BR> 使用远程 Shell 连接即时访问设备。 开展深入调查工作，并立即采取响应操作，以立即包含识别的威胁- 实时。
+- [实时响应](live-response.md) <BR> 使用远程 Shell 连接即时访问设备。 开展深入调查工作，并立即采取响应操作，以立即包含识别的威胁- 实时。
 
 - [评估实验室](evaluation-lab.md) <BR> Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置的复杂性，以便你可以专注于评估平台的功能、运行模拟，并查看防护、检测和修正功能的操作。
 
 - [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> 现在可以载入 Windows Server 2008 R2 SP1。
-
 
 ## <a name="june-2019"></a>2019 年 6 月
 
@@ -133,29 +138,26 @@ ms.locfileid: "53228383"
 
 - [威胁防护报告](threat-protection-reports.md)<BR>威胁防护报告提供有关在组织中生成的警报的高级别信息。
 
-
 - [Microsoft 威胁专家](microsoft-threat-experts.md)<BR> Microsoft 威胁专家是 Microsoft Defender for Endpoint 中新增的托管威胁搜寻服务，可提供主动搜寻、优先顺序和其他上下文和见解，进一步使安全运营中心 (SOC) 可以快速准确地识别和响应威胁。 它提供了 Microsoft 客户可以利用的其他专业技能和光学系统层来增强安全操作功能，这是 Microsoft 365。
 
 - [指示器](ti-indicator.md) <BR> 指示器的 API 现已普遍可用。
 
-
 - [互操作性](partner-applications.md) <BR> Microsoft Defender for Endpoint 支持第三方应用程序，以帮助增强平台的检测、调查和威胁智能功能。
 
-
 ## <a name="april-2019"></a>2019 年 4 月
+
 - [Microsoft 威胁专家目标攻击通知功能](microsoft-threat-experts.md) <BR> Microsoft 威胁专家目标攻击通知警报专为组织定制，可提供尽可能多的信息，从而引起人们注意其网络中的关键威胁，包括时间线、入侵范围和入侵方法。
 
 - [Microsoft Defender for Endpoint API](apis-intro.md) <BR> Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将使您能够基于 Microsoft Defender for Endpoint 功能自动执行工作流创新。
 
-
-
 ## <a name="february-2019"></a>2019 年 2 月
+
 - [事件](view-incidents-queue.md) <BR> 事件是 Microsoft Defender for Endpoint 中的一个新实体，将所有相关警报和相关实体汇集在一起，以讲述更广泛的攻击案例，使分析人员可以更好地了解复杂威胁的可能性。
 
 - [载入以前版本的 Windows](onboard-downlevel.md)<BR> 载入支持的设备Windows，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器。
 
-
 ## <a name="october-2018"></a>2018 年 10 月
+
 - [攻击面减少规则](attack-surface-reduction.md)<BR>所有攻击面减少规则现在在 Windows Server 2019 上受支持。
 
 - [受控文件夹访问](enable-controlled-folders.md)<BR> 现在，Windows Server 2019 支持受控文件夹访问权限。
@@ -222,5 +224,3 @@ ms.locfileid: "53228383"
 Microsoft Defender 防病毒服务之间共享检测状态Microsoft 365与 Microsoft Defender for Endpoint 进行互操作。 有关详细信息，请参阅通过云保护在 Microsoft Defender 防病毒[中使用下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
 
     "首次看到时阻止"现在可以阻止不可移植的可执行 (，例如 JS、VBS 或宏) 可执行文件。 有关详细信息，请参阅启用 [首次看到时阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)。
-
-

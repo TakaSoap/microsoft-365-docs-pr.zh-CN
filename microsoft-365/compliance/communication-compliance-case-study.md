@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b44977252b18c29a5f05a67f4ffbdb7dc85a8188
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227395"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256779"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究 - Contoso 快速配置冒犯性语言策略，用于Microsoft Teams、Exchange Yammer通信
 
@@ -48,7 +48,7 @@ Contoso IT 管理员和合规性专家参加 Microsoft 365 中有关合规性解
 - 合规专家和其他部门的同事 (人力资源、法律等) 需要调查和修正通信合规性警报。
 - 将在通信合规性冒犯性语言策略范围内的用户。
 
-### <a name="licensing"></a>授权
+### <a name="licensing"></a>许可
 
 第一步是确认 Contoso Microsoft 365是否支持通信合规性解决方案。 若要访问和使用通信合规性，Contoso IT 管理员需要验证 Contoso 是否具有以下项之一：
 
@@ -91,7 +91,7 @@ Contoso 决定使用 *Communication Compliance* 角色组向该组分配所有�
 | **通信合规性调查者** | 使用此组向执行通信合规性调查者操作的用户分配权限。 分配到此角色组的用户可以查看消息元数据和内容、升级到其他审阅者、升级到高级 eDiscovery 案例、向用户发送通知、以及解决警报。 |
 | **通信合规性查看者** | 使用此组向管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小组件，并且可以查看所有通信合规性报告。 |
 
-1. Contoso IT 管理员使用全局管理员帐户的凭据登录到 **Office 365 安全**& 合规中心权限页面 [ (https://protection.office.com/permissions)](https://protection.office.com/permissions)并选择链接以查看和管理 Microsoft 365 中的角色。
+1. Contoso IT 管理员使用全局管理员帐户的凭据登录到 **Office 365 安全**& 合规中心权限页面 [ (https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions)并选择链接以查看和管理 Microsoft 365 中的角色。
 2. 在安全 **&合规** 中心中，他们转到"权限"并选择链接以查看和管理 Office 365。
 3. 管理员选择"*通信合规性"* 角色组，然后选择"**编辑角色组"。**
 4. 管理员从左侧导航 **窗格中选择**"选择成员"，然后选择"编辑 **"。**

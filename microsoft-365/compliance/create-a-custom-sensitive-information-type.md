@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227147"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256719"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -182,10 +182,16 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 
 > [!NOTE]
-> Microsoft 365 信息保护可为以下语言提供双字节字符集语言支持（预览）：
+> Microsoft 365信息保护支持双字节字符集语言，
 > - 简体中文
 > - 繁体中文
 > - 韩语
 > - 日语
 >
 >此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
+
+> [!TIP]
+> 若要检测包含中文/日语字符和单个字节字符的模式，或检测包含中文/日语和英语的模式，请定义关键字或正则表达式的两个变体。 例如，若要检测关键字（如"添加的关键字"，请使用关键字的两个变体;一个在日语和英语文本之间带空格，另一个在日语和英语文本之间没有空格。 因此，要添加到 SIT 中的关键字应为"添加的 document"和"添加的 document"。 同样，若要检测短语"オリピック2020"，应该使用两个变量;"オリオリピック 2020"和"オリピック2020"。
+> 在使用双字节连字符或双字节周期创建正则表达式时，请确保转义这两个字符，就像在正则表达式中转义连字符或周期一样。 下面是示例正则表达式，仅供参考：
+    -  (？<！\d)  ([4][0-9] {3} [ \- ？\-\t]*[0-9]{4}
+> 我们建议在关键字列表中使用字符串匹配而不是单词匹配。

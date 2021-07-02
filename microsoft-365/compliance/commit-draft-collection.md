@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建并访问草稿集合后，可以提交到审阅集。 提交草稿集合时，收集的项目将添加到案例的审阅集中。 收集的项目在审阅集内后，可以分析、审阅和导出它们。
-ms.openlocfilehash: e28592e7aac289bfc0cc29d312963fa21d9f8fd4
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838839"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276973"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>将草稿集合提交到审阅集中Advanced eDiscovery
 
@@ -29,7 +29,7 @@ ms.locfileid: "50838839"
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>将草稿集合提交到审阅集中
 
-1. 在Microsoft 365中心，打开"Advanced eDiscovery"案例，然后选择"集合"选项卡以显示该案例的集合列表。 
+1. In the Microsoft 365 合规中心， open the Advanced eDiscovery case， and then select the **Collections** tab to display a list of the collections in the case.
 
    ![一种情况下的集合列表](../media/CommitDraftCollections1.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "50838839"
 
    1. 选择 **"收集项目并添加到审阅集"。**
 
-   2. 决定是否将集合添加到新的审阅 (，该审阅集是在将集合提交到) 或现有审阅集之后创建的。 根据你的决定完成此部分。
+   2. 决定是否将集合添加到新的审阅 (，该审阅集是在提交) 或添加到现有审阅集之后创建的。 根据你的决定完成此部分。
 
    3. 配置其他集合设置：
 
@@ -73,6 +73,8 @@ ms.locfileid: "50838839"
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>提交草稿集合后会发生什么情况
 
 将草稿集合提交到审阅集时，将发生以下情况：
+
+- 如果创建了一个新的审阅集以将集合提交到该审阅集，则创建该审阅集，并显示在案例的" **审阅集"** 选项卡上。 新审阅集的状态为 **"就绪"。** 此状态值表示已创建审阅集;这并不意味着集合已添加到审阅集。 将集合中的项目添加到审阅集的状态显示在"集合" **选项卡** 上。
 
 - 再次运行集合搜索查询。 这意味着复制到审阅集的实际搜索结果可能不同于上次运行集合搜索时返回的估计结果。
 

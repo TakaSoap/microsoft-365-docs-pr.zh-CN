@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227339"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256731"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -76,7 +76,7 @@ ms.locfileid: "53227339"
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>选项 1： 将所有合规用户分配到通信合规性角色组
 
-1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://protection.office.com/permissions](https://protection.office.com/permissions)。
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions)。
 
 2. 在安全 &amp; 合规中心中，转到“**权限**”。 选择链接以查看和管理 Office 365 中的角色。
 
@@ -94,7 +94,7 @@ ms.locfileid: "53227339"
 
 使用此选项将用户分配到特定角色组，以区分组织中不同用户的通信合规性访问和职责。
 
-1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://protection.office.com/permissions](https://protection.office.com/permissions)。
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions)。
 
 2. 在安全 &amp; 合规中心中，转到“**权限**”。 选择链接以查看和管理 Office 365 中的角色。
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器，以将 RingCentral 数据从 Microsoft 365 导入和存档。 通过此连接器，您可以在 Microsoft 365 中存档来自第三方数据源Microsoft 365。 在存档此数据后，可以使用合规性功能（如合法保留、电子数据展示和保留策略）管理第三方数据。
-ms.openlocfilehash: 57c993ce99556677c0161649254b5ab43caace0e
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: b5e98df50b0610c9fb583a8521c7a6d6fdb48e44
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243993"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276853"
 ---
-# <a name="set-up-a-connector-to-archive-ringcentral-data"></a>设置连接器以存档 RingCentral 数据
+# <a name="set-up-a-connector-to-archive-ringcentral-data-preview"></a>设置连接器以存档 RingCentral 数据 (预览) 
 
 使用企业中心中的 Microsoft 365 合规中心，将数据从 RingCentral 平台导入并存档到组织Microsoft 365邮箱。 该[连接器配置为捕获](https://www.veritas.com/insights/merge1/ringcentral)第三方数据源中的项目，并导入这些项以Microsoft 365。 连接器将聊天、附件、任务、笔记和帖子等内容从 RingCentral 转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: 将审阅集内的文档导出到Azure 存储帐户，然后使用Azure 存储资源管理器将文档下载到本地计算机。
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574702"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256503"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>将审阅集内的文档导出到Azure 存储帐户
 
@@ -41,7 +41,7 @@ ms.locfileid: "51574702"
 
 第一步是创建导出作业以将文档从审阅集导出。 有关所有导出选项的详细说明，请参阅从 [审阅集导出文档](export-documents-from-review-set.md)。 以下过程将突出显示用于将文档导出到组织的 Azure 存储 帐户的设置。
 
-1. 在Microsoft 365合规中心，打开Advanced eDiscovery案例，选择"审阅集"选项卡，然后选择要导出的审阅集。
+1. 在Microsoft 365 合规中心中，打开Advanced eDiscovery"案例，选择"审阅集"选项卡，然后选择要导出的审阅集。
 
 2. 在审阅集内，单击"操作 **导出**  >  **"。**
 
@@ -115,7 +115,7 @@ ms.locfileid: "51574702"
 > [!NOTE]
 > 可以选择要下载和查看的特定Azure 存储资源管理器导出作业，而不是下载整个导出作业。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 导出作业文件夹包含以下项目。 导出文件夹中的实际项目由创建导出作业时配置的导出选项确定。 有关这些选项的详细信息，请参阅从审阅 [集导出文档](export-documents-from-review-set.md)。
 

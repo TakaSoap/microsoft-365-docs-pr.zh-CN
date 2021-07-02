@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841278"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276925"
 ---
 # <a name="device-images"></a>设备图像
 
@@ -25,7 +25,7 @@ ms.locfileid: "52841278"
 无论你是 [订购新](#new-devices) 设备 [还是重复使用现有](#existing-devices) 设备，你都有若干选项来确保设备上的图像满足我们的 [设备要求](device-requirements.md#check-hardware-requirements)。
 
 ## <a name="new-devices"></a>新设备
-当你从批准的制造商订购新设备时[](device-requirements.md#minimum-requirements)，请按照以下步骤操作，以确保它们随正确的映像和软件配置Microsoft 托管桌面设备。
+当你从批准的制造商订购新设备时[](device-requirements.md#minimum-requirements)，请按照以下步骤操作，以确保它们随正确的映像和软件配置Microsoft 托管桌面设备。 每当计划首次在服务中注册特定设备型号时，都应该测试一个示例以确保它将提供你期望的用户体验。 有关详细信息，请参阅验证 [新设备](/microsoft-365/managed-desktop/get-started/validate-device)。
 
 ### <a name="dell"></a>Dell
 直接与 Dell 销售代表合作，他们将确保由 Microsoft 托管桌面 批准的映像适用于你的订单的设备。 有关 Dell 设备、映像和订购流程的更多问题，请与 MMD_at_dell@dell.com。

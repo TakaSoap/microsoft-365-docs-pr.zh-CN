@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730528"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256911"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -43,7 +43,7 @@ ms.locfileid: "52730528"
 - 通过使用文件详细信息页面中的"添加指示器"按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
@@ -80,10 +80,13 @@ ms.locfileid: "52730528"
 
 >[!IMPORTANT]
 >- 通常，文件块将在几分钟内强制执行和删除，但可能需要 30 分钟以上的时间。
->- 如果存在冲突的文件指示器策略，则应用更安全的策略的强制策略。 例如，如果两种哈希类型都定义了相同的文件，则 SHA-256 文件哈希指示器策略优先于 MD5 文件哈希指示器策略。
->- 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 EnableFileHashComputation 可能会影响设备性能。
->    - 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
->    - 有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)
+> 
+>- 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义同一个文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。 
+>   在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。 
+>   
+>- 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
+>
+>   有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>策略冲突处理  
 
@@ -101,9 +104,9 @@ ms.locfileid: "52730528"
 
 - Else **Allow** (AppLocker 策略Windows Defender应用程序控制&，任何 IoC 规则都不适用于它) 
 
-如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，它将在 MD5 文件哈希 IoC 策略中获胜。
+如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，则策略将超过 MD5 文件哈希 IoC 策略。
 
-请注意，危险和漏洞管理阻止易受攻击的应用程序功能使用文件 IoC 进行强制执行，并且将遵循上述冲突处理顺序。
+威胁漏洞管理阻止易受攻击的应用程序功能使用文件 IoC 进行强制执行，并遵循上述冲突处理顺序。
 
 ### <a name="examples"></a>示例
 

@@ -19,13 +19,13 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: 了解如何查看和批准或拒绝用户针对企业版订阅Microsoft 365请求。
-ms.date: 08/07/2020
-ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/07/2021
+ms.openlocfilehash: 23258d21ebb413c56323aa4dab25cee60baf2be0
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535670"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256803"
 ---
 # <a name="manage-license-requests"></a>管理许可证请求
 

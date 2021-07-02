@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 在订阅中添加Microsoft 365存储。 通过额外的文件存储，可以在 SharePoint Online 和 OneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635854"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256815"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为订阅添加存储空间
 
@@ -36,7 +36,7 @@ ms.locfileid: "52635854"
 > [!NOTE]
 > 如果你通过批量许可或云解决方案提供商购买了订阅，你无法直接从 **microsoft Office 365 额外文件存储空间** 你的组织购买订阅。 请联系你的代表或合作伙伴寻求帮助。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你必须是全局管理员SharePoint管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
@@ -87,8 +87,10 @@ Office 365 额外文件存储空间可以用于以下订阅：
 - Office 365 企业版 E3
 - Office 365 企业版 E4
 - Office 365 企业版 E5
-- Office计划 1 SharePoint Web
-- Office计划 2 的 web SharePoint
+- Office 365 A3 (教职员工) 
+- Office 365 A5 (教职员工) 
+- Office 网页版计划 SharePoint 1
+- Office 网页版计划 SharePoint 2
 - SharePoint Online 计划 1
 - SharePoint Online 计划 2
 - Microsoft 365 商业基础版

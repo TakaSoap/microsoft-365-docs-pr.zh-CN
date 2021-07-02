@@ -18,16 +18,16 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: 本文包含管理员有关使用 Microsoft 365 导入服务将 PST 文件导入到Office 365常见问题的解答。
-  ms.openlocfilehash: 27fa3b93b53a497fcff63524b04f427049bac412
-  ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+  ms.openlocfilehash: 4340285e6c7cff857e3f3de771ec6e67d4ce010c
+  ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/28/2021
-  ms.locfileid: "52090625"
+  ms.lasthandoff: 07/02/2021
+  ms.locfileid: "53276937"
 title: 有关导入 PST 文件的常见问题解答
 summary: "**本文适用于管理员。是否要将 PST 文件导入到您自己的邮箱？请参阅 [从 .pst 文件](https://go.microsoft.com/fwlink/p/?LinkID=785075)导入电子邮件Outlook联系人和日历**\n\n以下是一些有关使用 Office 365 导入服务将 PST 文件批量导入到Microsoft 365常见问题。 若要详细了解如何导入 PST 文件，请参阅[将 PST](./importing-pst-files-to-office-365.md)文件导入到Office 365。\n  \n## <a name=\"using-network-upload-to-import-pst-files\"></a>使用网络上传导入 PST 文件\n\n有关分步说明，请参阅使用网络上传将[PST 文件导入Office 365。](use-network-upload-to-import-pst-files.md)\n"
 sections:
-- name: 常规
+- name: 概要
   questions:
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
@@ -57,7 +57,7 @@ sections:
   - question: >
       PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？
     answer: >
-      是。 导入过程中不会更改任何原始邮件元数据。
+      可以。 导入过程中不会更改任何原始邮件元数据。
   - question: >
       Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?
     answer: >
@@ -74,12 +74,9 @@ sections:
       是否可以使用网络上传将 PST 文件导入 Exchange Online 中的公用文件夹？
     answer: >
       否，无法将 PST 文件导入公用文件夹。
-
-
-      ## <a name="using-drive-shipping-to-import-pst-files"></a>使用驱动器寄送导入 PST 文件
-
-
-      有关分步说明，请参阅使用驱动器寄送将[PST 文件导入Office 365。](use-drive-shipping-to-import-pst-files-to-office-365.md)
+  - question: >
+      创建网络上传导入作业时，是否有屏幕分辨率要求？
+    answer: "如果本地计算机的屏幕分辨率设置为 1366 x 768，则创建导入作业时可能会出问题。 如果是这种情况，建议您将屏幕分辨率更改为其他设置，然后创建新的导入作业。 我们正在努力解决此问题。     \n\n\n\n## <a name=\"using-drive-shipping-to-import-pst-files\"></a>使用驱动器寄送导入 PST 文件\n\n有关分步说明，请参阅使用驱动器寄送将[PST 文件导入Office 365。](use-drive-shipping-to-import-pst-files-to-office-365.md)\n"
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
     answer: "必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。\n  \n此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：\n  \n- 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。\n    \n    或\n    \n- 必须是你组织中的全局管理员。\n    \n> [!TIP]\n> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 \n  \n"
@@ -127,7 +124,7 @@ sections:
   - question: >
       PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？
     answer: >
-      是。 导入过程中不会更改原始邮件的元数据
+      可以。 导入过程中不会更改原始邮件的元数据
   - question: >
       Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?
     answer: >
@@ -163,7 +160,11 @@ sections:
   - question: >
       Can I use a custom courier shipping service, such as FedEx Custom Shipping, to ship my hard drive to Microsoft?
     answer: >
-      是的。
+      可以。
   - question: >
       If I have to ship my hard drive to another country, is there anything I need to do?
-    answer: The hard drive that you ship to Microsoft might have to cross international borders. 如果是，你有责任确保硬盘及其包含的数据是根据适用法律导入和/或导出的。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+    answer: >
+      The hard drive that you ship to Microsoft might have to cross international borders. 如果是，你有责任确保硬盘及其包含的数据是根据适用法律导入和/或导出的。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+  - question: >
+      创建驱动器寄送的导入作业时，是否有屏幕分辨率要求？
+    answer: 如果本地计算机的屏幕分辨率设置为 1366 x 768，则创建导入作业时可能会出问题。 如果是这种情况，建议您将屏幕分辨率更改为其他设置，然后创建新的导入作业。 我们正在努力解决此问题。

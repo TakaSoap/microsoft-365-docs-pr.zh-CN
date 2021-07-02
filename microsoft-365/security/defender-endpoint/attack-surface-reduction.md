@@ -1,5 +1,5 @@
 ---
-title: 使用攻击面减少规则防止恶意软件感染
+title: 使用攻击面减少规则来避免感染恶意软件
 description: 攻击面减少规则有助于防止攻击使用应用和脚本感染带恶意软件的设备。
 keywords: 攻击面减少规则， asr， hips， 主机入侵防护系统， 防护规则， 反攻击， 攻击， 感染防护， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177629"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276985"
 ---
-# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
+# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则来避免感染恶意软件
 
 **适用于：**
 
@@ -183,7 +183,6 @@ DeviceEvents
 |[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支持|[Windows 10版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
-|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>阻止滥用被攻击的易受攻击的已签名驱动程序
 
@@ -199,7 +198,7 @@ DeviceEvents
 >
 > 若要检查驱动程序，请使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
-此规则在支持 ASR 的所有版本中均受支持;即：
+支持的操作系统：
 
 - [Windows 10 专业版版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - [Windows 10 企业版版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
@@ -216,7 +215,7 @@ GUID：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 通过社交工程或攻击，恶意软件可以下载和启动有效负载，并退出 Adobe Reader。 通过阻止 Adobe Reader 生成子进程，尝试将其用作矢量的恶意软件可防止传播。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ GUID：`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard
 > [!NOTE]
 > 在某些应用中，该代码枚举所有正在运行的进程，并尝试以详尽的权限打开它们。 此规则拒绝应用的进程打开操作，将详细信息记录到安全事件日志中。 此规则会产生大量噪音。 如果你的应用仅枚举 LSASS，但在功能方面没有实际影响，则无需将其添加到排除列表。 此事件日志条目本身不一定表示恶意威胁。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ GUID：`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 - 可执行文件 (，如 .exe、.dll 或 .scr) 
 - 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js文件) 
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 >
 > 可以使用文件夹路径或完全限定的资源 (指定单个文件或文件夹) 但无法指定适用于哪些规则或排除项。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ GUID：`01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 脚本模糊处理是恶意软件作者和合法应用程序都用于隐藏知识产权或缩短脚本加载次数的常见技术。 恶意软件作者还使用模糊处理使恶意代码更难阅读，这可防止人员和安全软件进行严格的审查。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ GUID：`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
 
 虽然不常见，但业务线应用程序有时会使用脚本下载和启动安装程序。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ GUID：`D3E037E1-3EB8-44C8-A917-57927947596D`
 
 滥用作为Office的恶意软件可能会尝试破坏Office，将恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ GUID：`3B576869-A4EC-4529-8536-B80A7769E899`
 
 此规则适用于 Word、Excel 和 PowerPoint。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ GUID：`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 > [!NOTE]
 > 此规则阻止 DLP 策略提示和工具提示Outlook。 此规则仅适用于 Outlook Outlook.com。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ GUID：`26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 无文件威胁采用各种策略来保持隐藏，以避免在文件系统中可见，并获得定期执行控制。 某些威胁可能会滥用 WMI 存储库和事件模型来保持隐藏状态。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows服务器 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 > [!WARNING]
 > 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager管理](/configmgr)不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID：`d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，.exe、.dll或 .scr) 
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ GUID：`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 OfficeVBA 启用 Win32 API 调用。 恶意软件可能会滥用此功能，例如调用 [Win32 API 以启动恶意 shellcode，](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) 而无需将任何内容直接写入磁盘。 大多数组织不依赖于在日常运行中调用 Win32 API 的功能，即使它们以其他方式使用宏。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -515,7 +514,7 @@ GUID：`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 > [!NOTE]
 > 必须 [启用云保护才能](enable-cloud-protection-microsoft-defender-antivirus.md) 使用此规则。
 
-此规则是在：
+支持的操作系统：
 
 - [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)

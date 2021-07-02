@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893736"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256887"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -43,7 +43,7 @@ ms.locfileid: "52893736"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 - 访问 Microsoft Defender 安全中心 门户
 - 使用系统 [系统管理器的](https://systemd.io/) Linux 分发
@@ -70,7 +70,8 @@ ms.locfileid: "52893736"
   - 第三方管理工具：
     - [使用配置管理工具进行部署](linux-install-with-puppet.md)
     - [使用可配置管理工具进行部署](linux-install-with-ansible.md)
-
+    - [使用部署配置管理工具进行部署](linux-deploy-defender-for-endpoint-with-chef.md)
+    
 如果遇到任何安装失败，请参阅 Linux 上的 Microsoft Defender for Endpoint 中的安装 [失败疑难解答](linux-support-install.md)。
 
 

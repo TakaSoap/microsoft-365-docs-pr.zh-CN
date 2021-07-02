@@ -1,5 +1,5 @@
 ---
-title: 电子数据展示
+title: Microsoft 365 电子数据展示解决方案
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,86 +7,173 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- m365-security-compliance
+- m365solution-aed
+- m365initiative-compliance
+- m365solution-overview
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 提供了许多不同的电子数据展示工具，可用于搜索和保留在不同位置找到的内容，如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组、Microsoft Teams 和 Skype for Business 对话。
-ms.openlocfilehash: a7f8a4a7de6c03d37ffa7ac1c66113da63a13775
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Microsoft 365 提供了三种电子数据展示工具，可用于搜索和导出在不同位置找到的内容，如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组、Microsoft Teams 和 Skype for Business 对话。 核心电子数据展示Advanced eDiscovery提供了许多其他功能，可帮助你管理调查。
+ms.openlocfilehash: dc332e1a399588e4a1e969af45da6cff92008461
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925578"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256337"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 中的电子数据Microsoft 365
 
-电子发现（亦称为"电子数据展示"）是用于识别和传递可用作法律案件证据的电子信息的过程。 您可以使用 Microsoft 365 中的电子数据展示工具搜索 Exchange Online 邮箱、Microsoft 365 组、Microsoft Teams、SharePoint Online 和 OneDrive for Business 网站以及 Skype for Business 对话以及 Yammer 团队中的内容。 您可以使用内容搜索工具在同一电子数据展示搜索中搜索邮箱和网站。 您可以使用核心电子数据展示事例来标识、保留和导出在邮箱和网站中发现的内容。 如果你的组织拥有 Office 365 E5 或 Microsoft 365 E5 订阅 (或相关的 E5 附加订阅) ，可以使用 Microsoft 365 中的 Advanced eDiscovery 解决方案进一步管理保管人和分析内容。
-  
-Microsoft 365提供了以下电子数据展示工具：
-  
-- [内容搜索](#content-search)
+电子发现（亦称为"电子数据展示"）是用于识别和传递可用作法律案件证据的电子信息的过程。 您可以使用 Microsoft 365 中的电子数据展示工具搜索 Exchange Online、OneDrive for Business、SharePoint Online、Microsoft Teams、Microsoft 365 组和 Yammer 团队中的内容。 可以在相同的电子数据展示搜索中搜索邮箱和网站，然后导出搜索结果。 您可以使用核心电子数据展示事例来标识、保留和导出在邮箱和网站中发现的内容。 如果你的组织拥有 Office 365 E5 或 Microsoft 365 E5 订阅 (或相关的 E5 附加订阅) ，可以使用 Microsoft 365 中功能丰富的 Advanced eDiscovery 解决方案进一步管理保管人和分析内容。
 
-- [核心电子数据展示](#core-ediscovery)
+## <a name="ediscovery-solutions"></a>电子数据展示解决方案
 
-- [高级电子数据展示](#advanced-ediscovery)
+Microsoft 365提供三种电子数据展示解决方案：内容搜索、核心电子数据展示Advanced eDiscovery。
 
-## <a name="content-search"></a>内容搜索
+![电子数据展示Microsoft 365的主要功能](..\media\m365-ediscovery-solution-graphic.png)
 
-下表包含指向将帮助您使用内容搜索工具的文章的链接。
-  
-|**文章**|**说明**|
-|:-----|:-----|
-|[运行搜索](content-search.md) <br/> |了解如何使用内容搜索工具在单个搜索中搜索组织中邮箱、公用文件夹、Microsoft 365 组、Microsoft Teams、SharePoint Online 网站、One Drive for Business 位置和 Skype for Business 对话。  <br/> |
-|[关键字查询和搜索条件](keyword-queries-and-search-conditions.md) <br/> |了解可用于搜索组织中邮箱和网站内容的电子邮件和文件属性以及搜索条件。  <br/> |
-|[查看搜索结果的关键字统计信息](view-keyword-statistics-for-content-search.md) <br/> |了解如何使用搜索统计信息来显示和比较一个或多个内容搜索的统计信息，以及如何配置新的和现有的搜索以返回搜索查询中每个关键字的统计信息。  <br/> |
-|[导出搜索结果](export-search-results.md) <br/> |了解如何导出内容搜索的结果。  <br/> |
-|[配置内容搜索的权限筛选](permissions-filtering-for-content-search.md) <br/> |了解如何使用权限筛选让电子数据展示管理员仅搜索组织中邮箱和网站的子集。  <br/> |
-|[导出搜索报告](export-a-content-search-report.md) <br/> |了解如何下载导出报告，而无需导出实际搜索结果。  <br/> |
-|[内容搜索限制](limits-for-content-search.md) <br/> |了解内容搜索工具的限制，例如一次可以运行的最大搜索数。  <br/> |
-|[内容搜索中的未索引项](partially-indexed-items-in-content-search.md) <br/> |了解在运行搜索时Exchange SharePoint估计搜索结果统计信息中可以包含的未索引项目。 还可以在导出搜索结果时包括未索引的项目。  <br/> |
-|[搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md) <br/> |了解如何使用内容搜索在组织的所有邮箱中搜索和删除电子邮件。  这可以帮助你查找和删除可能有害的或高风险的电子邮件。  <br/> |
-|[在邮箱和OneDrive帐户搜索用户列表](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |了解如何使用脚本在邮箱和 One Drive for Business 站点中搜索一组用户。 请参阅[创建所有](/onedrive/list-onedrive-urls)OneDrive位置的列表，了解创建和运行内容搜索时如何快速生成可用于源内容位置的电子邮件地址列表的步骤。  <br/> |
-|[对目标集合使用内容搜索](use-content-search-for-targeted-collections.md) <br/> |了解如何使用本文中的 Windows PowerShell 脚本使用内容搜索执行目标集合。 目标集合意味着你想要搜索特定文件夹，因为你确信响应案例的项 (或特权) 位于该文件夹中。 使用本文中的脚本获取要搜索的特定邮箱或网站文件夹的文件夹 ID 或路径。  <br/> |
-|||
-  
-## <a name="core-ediscovery"></a>核心电子数据展示
+- **内容搜索**。 使用内容搜索工具跨数据源搜索Microsoft 365内容，然后将搜索结果导出到本地计算机。
 
-下表包含帮助您使用核心电子数据展示事例的主题链接。 您可以使用核心电子数据展示事例添加可以访问事例、将电子数据展示保留到与事例相关的内容位置、搜索内容以及从事例导出搜索结果电子数据展示管理员。
-  
-|**文章**|**说明**|
-|:-----|:-----|
-|[核心电子数据展示入门](get-started-core-ediscovery.md) |了解如何分配电子数据展示权限和创建核心电子数据展示事例。 本主题还提供了核心电子数据展示工作流的概述。<br/> |
-|[分配电子数据展示权限](assign-ediscovery-permissions.md)|了解如何向用户分配权限，以便他们可以搜索内容、将内容位置放在保留状态，以及执行核心电子数据展示案例中与电子数据展示相关的其他任务。|
-|[设置核心电子数据展示的合规性边界](set-up-compliance-boundaries.md)|了解如何使用合规性边界在控制电子数据展示管理员可搜索的内容位置的组织中创建逻辑边界。|
-|[创建电子数据展示保留](create-ediscovery-holds.md)|了解如何创建与核心电子数据展示案例关联的电子数据展示保留项，以保留与正在调查的案例相关的内容。|
-|[在案例中搜索内容](search-for-content-in-core-ediscovery.md)|了解如何搜索与案例相关的内容。 您可以快速创建搜索以搜索保留的内容位置。|
-|[从案例导出内容](export-content-in-core-ediscovery.md)|了解如何从核心电子数据展示案例导出和下载内容。|
-|[关闭、重新打开和删除案例](close-reopen-delete-core-ediscovery-cases.md)|了解如何管理核心电子数据展示案例的生命周期。|
-|||
-  
-## <a name="advanced-ediscovery"></a>高级电子数据展示
+- **核心电子数据展示**。 核心电子数据展示基于内容搜索的基本搜索和导出功能构建，使您可以创建电子数据展示事例和只能访问其成员案例电子数据展示管理员。 核心电子数据展示允许您将搜索和导出与案例关联，并允许将电子数据展示保留到与案例相关的内容位置。
 
-Advanced eDiscovery *v2.0 Microsoft 365 (中也称为 Advanced eDiscovery v2.0*) 基于 Microsoft 365 中的现有电子数据展示和分析功能。 此电子数据展示解决方案提供端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 它还允许法律团队管理保管人和整个法定保留通知工作流，以与案例所涉及的保管人进行通信。
+- **Advanced eDiscovery**。 The Advanced eDiscovery tool builds on the existing case management， preservation， search， and export capabilities in Core eDiscovery. Advanced eDiscovery提供了端到端工作流，用于标识、保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 它允许法律团队管理保管人和法定保留通知工作流，以与案例所涉及的保管人进行通信。 当可以筛选、搜索和标记内容以从进一步审阅中剔除非相关内容时，它允许您从实时服务收集和复制数据到审阅集中，以便工作流能够识别并关注最相关的内容。 Advanced eDiscovery分析模型和基于机器学习的预测编码模型，以进一步缩小调查范围，将调查范围缩小到最相关的内容。
 
-|**文章**|**说明**|
-|:-----|:-----|
-|[高级电子数据展示概述](overview-ediscovery-20.md)|本文介绍了Advanced eDiscovery，概述了使用此工具的业务理由，介绍了 Advanced eDiscovery 体系结构，并简要概述了 Advanced eDiscovery 的内置工作流。|
-|[设置高级电子数据展示](get-started-with-advanced-ediscovery.md)|了解如何开始使用 Advanced eDiscovery，包括所需的许可和必要的电子数据展示权限。|
-|[创建和管理案例](create-and-manage-advanced-ediscoveryv2-case.md)|本文演示了如何创建Advanced eDiscovery案例，并提供了工作流Advanced eDiscovery演练。|
-|[管理保管人](managing-custodians.md)|了解如何在托管服务中Advanced eDiscovery。 本主题链接到将保管人添加到案例的分步说明、管理案例的保管人，以及查看 Microsoft 365 中的保管人活动（通过搜索审核日志）。|
-|[管理保管人通信](managing-custodian-communications.md)|了解如何在 Advanced eDiscovery 中管理法定保留通知Advanced eDiscovery。 这包括创建和自动执行通知工作流，以及用户确认保留通知方式。
-|[管理处理错误](processing-data-for-case.md)|了解高级索引，以及如何修正来自内容位置（如 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户）的内容中的索引错误。 您可以批量修正错误，然后将修正后的文件上载到审阅集，或修正审阅集内的单个处理错误。|
-|[收集事例数据](collecting-data-for-ediscovery.md)|了解如何在内容位置搜索内容，然后将相关案例数据添加到审阅集。 将内容复制到审阅集时，数据会从原始内容位置复制到 Microsoft 提供Azure 存储位置。 这将为审阅过程提供一组静态文档。|
-|[管理审阅集](managing-review-sets.md)|了解如何查看审阅集内案例数据。 这包括查看、查询、筛选和标记审阅集内的文档。
-|[分析审阅集内的数据](analyzing-data-in-review-set.md)|了解如何对审阅集内的文档运行分析。 运行分析的结果包括近重复检测、电子邮件线程和主题标识。|
-|[导出事例数据](exporting-data-ediscover20.md)|了解如何从案例导出数据进行外部审阅。|
-|||
+## <a name="comparison-of-key-capabilities"></a>比较关键功能
+
+下表比较了内容搜索、核心电子数据展示和搜索服务中Advanced eDiscovery。
+
+|功能|内容搜索|核心电子数据展示|高级电子数据展示|
+|:------|:-------------|:-------------|:-------------|
+|搜索内容|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|关键字查询和搜索条件|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|搜索统计信息|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|导出搜索结果|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|基于角色的权限|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|案例管理||![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|将内容位置法定保留||![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|保管人管理|||![支持](../media/check-mark.png)|
+|法定保留通知|||![支持](../media/check-mark.png)|
+|高级索引|||![支持](../media/check-mark.png)|
+|错误修复|||![支持](../media/check-mark.png)|
+|审阅集|||![支持](../media/check-mark.png)|
+|支持云附件SharePoint版本|||![支持](../media/check-mark.png)|
+|光学字符识别|||![支持](../media/check-mark.png)|
+|对话线程|||![支持](../media/check-mark.png)|
+|集合数据和报告|||![支持](../media/check-mark.png)|
+|查看集筛选|||![支持](../media/check-mark.png)|
+|标记|||![支持](../media/check-mark.png)|
+|分析|||![支持](../media/check-mark.png)|
+|预测编码模型|||![支持](../media/check-mark.png)|
+|计算的文档元数据|||![支持](../media/check-mark.png)|
+|长时间运行的作业的透明度|||![支持](../media/check-mark.png)|
+|导出到客户拥有Azure 存储位置|||![支持](../media/check-mark.png)|
+|||||
+
+以下是每个电子数据展示功能的说明。
+
+- **搜索内容**。 搜索存储在 Exchange 邮箱、One Drive for Business 帐户、SharePoint 网站、Microsoft Teams、Microsoft 365 组和 Yammer Teams 中Yammer Teams。 这包括其他应用程序生成的内容Microsoft 365在邮箱和网站中存储数据的应用程序。
+
+- **关键字查询和搜索条件**。 创建 KQL 关键字搜索查询以搜索与查询条件匹配的内容。 还可以包括条件来缩小搜索范围。
+
+- **搜索统计信息**。 运行搜索后，您可以查看估计搜索结果的统计信息，如符合搜索条件的项目数量和总大小。 其他统计信息包括包含搜索结果的顶部内容位置以及与搜索查询的不同部分匹配的项目数。
+
+- **导出搜索结果**。 通过两步过程将搜索结果导出到组织中本地计算机。 导出搜索结果时，项目会从项目的原始内容位置Microsoft 365 Microsoft 提供Azure 存储位置。 然后，您可以将这些项目下载到本地计算机。
+
+- **基于角色的权限**。 使用基于角色 (RBAC) 权限来控制不同用户可以执行哪些电子数据展示相关任务。 用户可以使用内置与电子数据展示相关的角色组，也可以创建自定义角色组来分配特定的电子数据展示权限。
+
+- **案例管理**。 核心电子数据展示和Advanced eDiscovery电子数据展示事例使你可以将特定搜索和导出与特定调查关联。 您还可以向案例分配成员，以控制谁可以访问该案例并查看案例内容。
+
+- **将内容位置放在法定保留状态**。 通过将案件内容位置置于法定保留状态，保留与调查相关的内容。 这使你可以保护电子存储的信息，避免在调查期间 (无意) 或有意删除信息。
+
+- **保管人管理**。 管理在案例（称为保管人 (）中) 被识别为关注人的人员，以及可能未与保管人关联的其他数据源。 向案例添加保管人和非保管人数据源时，可以合法保留这些数据源，使用合法保留通知流程与保管人进行通信，以及搜索保管人和非保管人数据源以收集与案例相关的内容。
+
+- **合法保留通知**。 管理与案例保管人进行通信的过程。 法定保留通知指示保管人保留与案例相关的内容。 你可以跟踪保管人已收到、阅读和确认的通知。 通过 Advanced eDiscovery，您可以在保管人无法确认保留通知时创建和发送初始通知、提醒和上报。
+
+- **高级索引**。 向案例添加查询和非保管人数据源时，相关内容位置在称为高级索引 *)* 的过程中对 (重新编制索引，以便重新处理被视为部分索引的任何内容，使其在您收集数据以便进行调查时完全可搜索。
+
+- **错误修正**。 使用称为错误修正 的过程修复 *处理错误*。 错误修正允许你纠正数据问题，这些问题Advanced eDiscovery高级索引期间无法正确处理内容。 例如，由于文件被锁定或加密，因此无法处理受密码保护的文件。 使用错误修正，可以下载出错的文件、删除密码保护，然后上载修正后的文件。
+
+- **审阅集**。 将相关的数据添加到审阅集。 审阅集是 Microsoft 提供的安全Azure 存储 Microsoft 云中的位置。 向审阅集添加数据时，收集的项目会从原始内容位置复制到审阅集。 审阅集提供一组静态的已知内容，您可以使用预测编码模型搜索、筛选、标记、分析和预测相关性。 还可以跟踪并报告添加到审阅集的内容。
+
+- **支持云附件和SharePoint版本**。 将内容添加到审阅集时，可以选择包括云附件或链接文件。 这意味着云附件或链接文件的目标文件将添加到审阅集。 还可以选择将文档的所有版本SharePoint审阅集。
+
+- **光学字符识别 (OCR)**。 将内容添加到审阅集时，OCR 功能会从图像中提取文本，并包括图像文本以及已添加到审阅集的内容。 这样，您可以在查询审阅集内容时搜索图像文本。
+
+- **对话线程**。 在将来自Teams对话Yammer聊天消息添加到审阅集时，您可以选择收集整个对话线程。 这意味着包含与集合条件匹配的项目的整个聊天对话将添加到审阅集。 这允许你在来回对话的上下文中查看聊天项目。
+
+- **集合统计信息和报告**。 创建草稿集合或将集合提交到审阅集后，可以查看检索到的项目的丰富统计信息集，如包含最符合搜索条件的项目的内容位置和搜索查询返回的项目数。 还可以预览结果的子集。 此外，这包括从父项中提取并作为单独的项目添加到审阅集的子项目数。
+
+- **查看"设置筛选"。** 将内容添加到审阅集后，可以应用筛选器来仅显示与筛选条件匹配的项目集。 然后，您可以将筛选器集另存为查询，从而快速重新应用保存的筛选器。 查看集筛选和保存的查询可帮助您将内容快速剔除到与调查最相关的项目。
+
+- **标记**。 标记还可以帮助您剔除非相关内容并确定最相关的内容。 当专家、律师或其他用户审阅审阅集内容时，可以使用标签来捕获他们有关内容的意见。 例如，如果意图是剔除不必要的内容，用户可以使用标记（如"无响应"）标记文档。 审阅和标记内容后，可创建审阅集查询以排除标记为"无响应"的任何内容。 此过程从电子数据展示工作流的后续步骤中消除无响应的内容。
+
+- **分析**。 Advanced eDiscovery提供了用于分析审阅集文档的工具，以帮助您以一致的方式组织文档并减少要审阅的文档量。 *近重复检测* 将文本相似文档分组在一起，以帮助你提高审阅过程的效率。 *电子邮件线程* 标识提供电子邮件线程中对话的完整上下文的特定电子邮件。 *主题* 功能尝试分析审阅集文档中讨论的主题，并将主题分配给文档，以便查看具有相关主题的文档。 这些分析功能可帮助提高审阅流程的效率，以便审阅者可以审阅所收集文档的一小部分。
+
+- **预测编码模型**。 使用预测编码模型，将大量案例内容减少并剔除到一组相关项目，您可以将这些项目作为优先级进行审阅。 这是通过创建和培训自己的预测编码模型来完成的，这些模型可帮助您确定审阅集内最相关项目的优先级。 系统使用培训将预测分数应用于审阅集内的每一项。 这样，你可以根据预测分数筛选项目，这允许你首先查看最相关的 (或不相关的) 项。
+
+- **计算的文档元数据**。 许多Advanced eDiscovery高级索引、对话线程、分析和预测编码等功能都添加了元数据属性，用于查看集文档。 此元数据包含与执行特定功能的函数有关的信息。 查看文档时，可以筛选元数据属性以显示符合筛选条件的文档。 导出审阅集文档后，此元数据可以导入到第三方审阅应用程序中。
+
+- **长时间运行的作业的透明度**。 Advanced eDiscovery中的作业通常是由用户操作触发的长时间运行的过程，例如向案例添加保管人、向审阅集添加内容、运行分析和培训预测编码模型。 如果需要将问题上报给 MS 支持人员，可以跟踪这些作业的状态并获取支持信息。
+
+- **导出到客户拥有Azure 存储位置**。 从审阅集导出文档时，可以选择将它们导出到Azure 存储管理的帐户。 此外，Advanced eDiscovery自定义导出的数据。 这包括导出已保存到 PDF 文件的文件元数据、本机文件、文本文件、标记和修订文档。
+
+## <a name="ediscovery-subscription-comparison"></a>电子数据展示订阅比较
+
+以下各节显示了内容搜索、核心电子数据展示和搜索服务的最低Advanced eDiscovery。 支持核心电子数据展示的订阅还支持内容搜索。 支持此Advanced eDiscovery还支持内容搜索和核心电子数据展示。
+
+### <a name="content-search"></a>内容搜索
+
+- Microsoft 365E1 订阅
+- Microsoft 365G1 订阅
+- Office 365 教育版 A1 订阅
+
+### <a name="core-ediscovery"></a>核心电子数据展示
+
+- Microsoft 365 E3订阅
+- Microsoft 365 G3订阅
+- Microsoft 365 教育版A3 或 Office 365 教育版 A3 订阅
+
+### <a name="advanced-ediscovery"></a>高级电子数据展示
+
+- Microsoft 365 E5 或 Office 365 E5 订阅
+- 具有 E5 合规性附加设备的 Microsoft 365 E3 订阅
+- Microsoft 365 E3 E5 电子数据展示和审核加载项进行订阅
+- Microsoft 365G5 订阅
+- Microsoft 365具有 G5 合规性加载项的 G5 订阅
+- Microsoft 365使用 G5 电子数据展示和审核加载项的 G5 订阅
+- Microsoft 365 教育版A5 或 Office 365 教育版 A5 订阅
+
+## <a name="get-started-with-ediscovery"></a>电子数据展示入门
+
+请参阅以下文章，帮助你了解更多信息并开始使用 Microsoft 365 中的电子数据展示解决方案。
+
+### <a name="content-search"></a>内容搜索
+
+- [使用内容搜索搜索内容](search-for-content.md)
+
+- [创建搜索](content-search.md)
+
+### <a name="core-ediscovery"></a>核心电子数据展示
+
+- [核心电子数据展示入门](get-started-core-ediscovery.md)
+
+### <a name="advanced-ediscovery"></a>高级电子数据展示
+
+- [高级电子数据展示概述](overview-ediscovery-20.md)
+
+- [设置高级电子数据展示](get-started-with-advanced-ediscovery.md)
+
+- [创建和管理Advanced eDiscovery案例](create-and-manage-advanced-ediscoveryv2-case.md)
 
 ## <a name="ediscovery-roadmap"></a>电子数据展示路线图
 
 若要了解哪些电子数据展示功能已启动、正在推出或正在开发中，请参阅Microsoft 365[路线图](https://aka.ms/eDiscoRoadMap)。
+
+## <a name="training"></a>培训
+
+就内容搜索、核心电子数据展示和 Advanced eDiscovery 的基础知识对 IT 管理员、电子数据展示管理员和合规性调查团队进行培训，可帮助组织更快速地开始使用 Microsoft 365 电子数据展示工具。 Microsoft 365 提供了以下资源来帮助贵组织中这些用户开始使用电子数据展示：描述 Microsoft 365 电子数据[展示和审核Microsoft 365。](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)

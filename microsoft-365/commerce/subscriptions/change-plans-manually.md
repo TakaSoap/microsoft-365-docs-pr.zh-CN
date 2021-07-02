@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 通过购买新订阅并确保两个订阅都列出且处于活动状态，手动更改订阅。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536102"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256767"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -48,7 +48,7 @@ ms.locfileid: "52536102"
 
 **已购买？** 如果你已有想要将用户移动到的订阅，请跳过此步骤并转到本主题中的步骤 [3：检查](#step-3-check-your-new-subscription-and-licenses) 新订阅和许可证。
 
-OR
+或
 
 **购买新订阅和许可证：** 按照购买另 [一Microsoft 365商业版订阅中的步骤](../try-or-buy-microsoft-365.md)购买新订阅。
 
@@ -79,6 +79,8 @@ OR
 当前订阅的许可证将在以后删除;你稍后将仅支付新用户许可证。
 
 ## <a name="step-4-reassign-licenses"></a>步骤 4：重新分配许可证
+
+当您从 Office 365 计划升级到 Microsoft 365 计划时，您必须更改所有用户的许可证分配。 手动更改计划时，不会自动分配许可证。
 
 ### <a name="reassign-a-license-for-one-user"></a>为一个用户重新分配许可证
 

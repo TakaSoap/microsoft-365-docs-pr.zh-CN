@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
-ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: def9fbe201e158f1e071a67caeaf29ed26732f97
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635722"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256839"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -38,29 +38,29 @@ ms.locfileid: "52635722"
 
 ::: moniker range="o365-worldwide"
 
-1. 在"Microsoft 365管理中心"中，转到"**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到"设置 **域** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">"</a> 页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到"设置 **域** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">"</a> 页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
 
 ::: moniker-end
     
 2. 在"**域**"页面上，选择你的域，然后选择"**开始设置"。** 你将返回域设置向导，查看需要添加的特定值。
     
-3. 在"**验证域"** 页上，选择"**改为添加 TXT 记录"，** 然后选择"下一 **步"。**
+3. 在"**域验证"** 页上，**选择"将 TXT** 记录添加到域的 DNS 记录"，然后选择"继续 **"。**
     
 4. 复制显示的 **TXT** 值。 它如下所示 **：MS=msXXXXXXXX**。 
     
-5. 转到" [在任何 DNS](create-dns-records-at-any-dns-hosting-provider.md)托管提供商处创建 DNS 记录"，然后从注册机构列表中选择 DNS 主机以查看分步说明。
+5. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
     
 6. 按照在 DNS 主机上 (TXT 记录或 MX 记录) 的步骤操作，然后重新在Microsoft 365。
 
@@ -70,36 +70,36 @@ ms.locfileid: "52635722"
 
 ::: moniker range="o365-worldwide"
 
-1. 在"Microsoft 365管理中心"中，转到"**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到"设置 **域** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">"</a> 页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到"设置 **域** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">"</a> 页面。
+1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
 
 ::: moniker-end
     
-2. 在" **域**"页面上，选择你的域。 
+2. 在" **域**"页面上，选择你的域。
     
-3. " **所需的 DNS 设置**"下将显示要添加的 DNS 记录。
+3. 选择 **"管理 DNS"，** 选择 **"更多选项**  >  **""添加你自己的 DNS"，** 然后选择"继续"以查看要添加的 DNS 记录。 
     
     更改 DNS 主机时，需要保持此信息可用，以便复制粘贴这些值。
     
     页面上列出的 DNS 记录组取决于" **域用途**"下列出的选项。
     
-4. 转到"在任何 DNS 托管提供商处创建 [DNS](create-dns-records-at-any-dns-hosting-provider.md)记录"，然后从注册机构列表中选择 DNS 主机，以查看有关在 DNS 主机网站上添加记录的分步说明。
-    
+4. 转到 ["添加 DNS 记录"以连接域](create-dns-records-at-any-dns-hosting-provider.md)，然后按照步骤在 DNS 主机的网站上添加记录。
+
 5. 按照在您的 DNS 主机上创建记录的步骤执行操作。
 
 ## <a name="related-content"></a>相关内容
 
-[域常见问题 (](../setup/domains-faq.yml) 文章) \
-[查找并修复在添加域](find-and-fix-issues.md) 或 DNS 记录后 (文章) \
+[域常见问题解答](../setup/domains-faq.yml)（文章）\
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
 [管理域](index.yml)（链接页）

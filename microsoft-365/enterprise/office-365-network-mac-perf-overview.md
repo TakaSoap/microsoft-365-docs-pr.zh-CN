@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365管理中心中的网络连接
+title: Microsoft 365 管理 中心中的网络连接
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: Microsoft 365管理中心中的网络连接概述
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Microsoft 365 管理 中心中的网络连接概述
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470618"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276997"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365管理中心中的网络连接
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 中心中的网络连接
 
-管理Microsoft 365中心现在包括从 Microsoft 365 租户收集的聚合网络连接指标，并且仅可供租户中的管理用户查看。
+现在Microsoft 365 管理中心包含从 Microsoft 365 租户收集的聚合网络连接指标，并且仅可供租户中的管理用户查看。
 
 > [!div class="mx-imgBorder"]
 > ![网络连接测试工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**网络评估和****网络见解** 显示在Microsoft 365管理中心中的 **"运行状况"|网络连接 。**
+**网络评估和****网络见解** 显示在Microsoft 365 管理中心中的运行状况 **|网络连接 。**
 
 > [!div class="mx-imgBorder"]
 > !["网络性能"页](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -37,7 +37,7 @@ ms.locfileid: "52470618"
 >[!NOTE]
 >管理中心中的网络连接支持 WW 商业德国的租户，GCC中等、GCC高、DoD 或中国。
 
-首次导航到网络性能页面时，必须配置位置，才能查看全局网络性能地图、范围为整个租户的网络评估、远程工作与现场工作的用户百分比，以及要针对和/或进一步调查的当前问题列表。 从概述窗格中，可以向下钻取以查看特定网络性能指标和按位置的问题。 有关详细信息，请参阅管理中心[中的Microsoft 365概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+首次导航到网络性能页面时，必须配置位置，才能查看全局网络性能地图、范围为整个租户的网络评估、远程工作与现场工作的用户百分比，以及要针对和/或进一步调查的当前问题列表。 从概述窗格中，可以向下钻取以查看特定网络性能指标和按位置的问题。 有关详细信息，请参阅网络中心[中的网络Microsoft 365 管理概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 系统可能会要求你代表你的组织加入此功能的公共预览版。 接受通常会立即发生，之后你将看到网络连接页面。
 
@@ -75,7 +75,10 @@ Windows必须在计算机上同意位置服务。 可以通过运行应用并 **
 
 如果已使用 LAN 子网信息添加测试报告，则测试报告将链接到该位置，否则它们只显示在城市位置。
 
-完成测试报告后，测量示例和办公地点应开始显示 2-3 分钟。 有关详细信息，请参阅Microsoft 365[网络连接测试 (预览) 。 ](office-365-network-mac-perf-onboarding-tool.md)
+完成测试报告后，测量示例和办公地点应开始显示 2-3 分钟。 有关详细信息，请参阅Microsoft 365[网络连接测试](office-365-network-mac-perf-onboarding-tool.md)。
+
+> [!NOTE]
+> 将办公位置添加到 Microsoft 365 中的网络连接时，Microsoft 365 管理中心为 LAN 子网提供 IPv4 或 IPv6 地址。 EgressIP 地址必须使用 IPv4。
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此信息？
 
@@ -86,7 +89,7 @@ Windows必须在计算机上同意位置服务。 可以通过运行应用并 **
 具有多个办公地点和普通网络外围体系结构的复杂企业可以在初次载入 Microsoft 365 或修正使用增长时发现的网络性能问题时，从此信息中获益。 对于使用网络连接的小型企业Microsoft 365或已具有简单直接网络连接的企业，通常不需要这样做。 拥有 500 多个用户和多个办公地点的企业预期受益最大。
 
 >[!IMPORTANT]
->Microsoft 365 管理中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
+>Microsoft 365 管理 中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise网络连接挑战
 
@@ -97,15 +100,15 @@ Windows必须在计算机上同意位置服务。 可以通过运行应用并 **
 
 ## <a name="how-we-can-solve-these-challenges"></a>如何解决这些问题
 
-企业可以通过遵循连接原则，以及使用管理中心网络连接Office 365[](./microsoft-365-network-connectivity-principles.md)一般用户体验Microsoft 365环境安全。 在大多数情况下，遵循这些一般原则将对最终用户延迟、服务可靠性和服务整体性能产生显著Microsoft 365。
+企业可以通过遵循连接原则，以及使用 Office 365[中心](./microsoft-365-network-connectivity-principles.md)网络连接功能Microsoft 365 管理用户体验和安全环境。 在大多数情况下，遵循这些一般原则将对最终用户延迟、服务可靠性和服务整体性能产生显著Microsoft 365。
 
 有时要求 Microsoft 调查大型企业Microsoft 365网络性能问题，这些问题通常具有与客户的网络外围基础结构相关的根本原因。 当找到客户网络外围问题的常见根本原因时，我们将寻找识别该问题的简单测试指标。 具有标识特定问题的测量阈值的测试非常有价值，因为我们可以在任何位置测试相同的度量，判断该根本原因是否存在并与管理员共享作为网络见解。
 
 某些网络见解只会指示需要进一步调查的问题。 我们有足够的测试来显示用于纠正根本原因的特定修正操作的网络见解被列为推荐 **操作**。 这些建议基于显示超出预先确定阈值的值实时指标，比常规最佳做法建议更有价值，因为它们特定于你的环境，并且将在做出建议更改后显示实际改进。
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的网络连接概述
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 中心中的网络连接概述
 
-Microsoft 具有来自多个桌面Office Web 客户端的现有网络度量，这些客户端支持 Microsoft 365。 这些度量现在用于提供网络体系结构设计见解和网络评估，这些见解显示在 Microsoft 365 管理中心的网络连接页面中。 
+Microsoft 具有来自多个桌面Office Web 客户端的现有网络度量，这些客户端支持 Microsoft 365。 这些测量现在用于提供网络体系结构设计见解和网络评估，这些见解显示在 Microsoft 365 管理 中心的网络连接页面中。 
 
 默认情况下，与网络测量相关的近似位置信息标识客户端设备所在的城市。 每个位置的网络评估都显示颜色，每个位置的用户相对数量由圆形的大小表示。
 
@@ -186,7 +189,7 @@ The details tab on the office location page shows the specific measurement resul
    1. **地址** (要求) ：办公室的物理地址
    1. **Latitude** (可选) ：从必应地图查找中填充的地址（如果为空）
    1. **经度** (可选) ：从必应地图查找中填充的地址（如果为空）
-   1. IP 地址范围 **1-5** (可选) ：对于每个范围，输入电路名称后跟有效 IPv4 或 IPv6 CIDR 地址的空格分隔列表。 这些值用于区分使用同一 LAN 子网 IP 地址的多个办公室位置。 出口 IP 地址范围都必须是 /24 网络大小，输入中不包含 /24。
+   1. **Egress IP 地址范围 1-5** (可选) ：对于每个范围，输入电路名称后跟有效 IPv4 或 IPv6 CIDR 地址的空格分隔列表。 这些值用于区分使用同一 LAN 子网 IP 地址的多个办公室位置。 EgressIP 地址范围都必须是 /24 网络大小，输入中不包含 /24。
    1. **LanIps** (以下) ：列出此办公地点使用的 LAN 子网范围。 LAN 子网 ID 需要包含 CIDR 网络大小，其中网络大小可以介于 /8 和 /29 之间。 可以使用逗号或分号分隔多个 LAN 子网范围。
    
 1. 添加办公地点并保存文件后，单击"浏览"按钮Upload **字段** 旁边的"浏览"按钮，然后选择保存的 CSV 文件。 
@@ -220,7 +223,7 @@ Internet 出口位置是网络流量退出企业网络并连接到 Internet 的�
 
 ### <a name="what-license-is-needed-for-this-capability"></a>此功能需要哪些许可证？
 
-需要提供对管理中心Microsoft 365许可证。
+您需要提供对应用程序的访问权限的Microsoft 365 管理中心。
 
 ## <a name="related-topics"></a>相关主题
 
