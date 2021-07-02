@@ -66,7 +66,7 @@
 #### [macOS 上的 Microsoft Defender for Endpoint]()
 ##### [macOS 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-mac.md)
 ##### [新增功能](mac-whatsnew.md)
- 
+
 ##### [部署]()
 ###### [基于 Microsoft Intune 的部署](mac-install-with-intune.md)
 ###### [基于 JAMF 专业版的部署]()
@@ -75,11 +75,11 @@
 ####### [设置设备组](mac-jamfpro-device-groups.md)
 ####### [设置策略](mac-jamfpro-policies.md)
 ####### [注册设备](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [ 使用不同的移动设备管理(MDM)系统进行部署](mac-install-with-other-mdm.md)
 ###### [手动部署](mac-install-manually.md)
 ##### [更新](mac-updates.md)
- 
+
 ##### [配置]()
 ###### [配置和验证排除](mac-exclusions.md)
 ###### [设置首选项](mac-preferences.md)
@@ -89,14 +89,14 @@
 ####### [JAMF 示例](mac-device-control-jamf.md)
 ####### [Intune 示例](mac-device-control-intune.md)
 ###### [定期扫描](mac-schedule-scan.md)
- 
+
 ##### [疑难解答]()
 ###### [解决安装问题](mac-support-install.md)
 ###### [解决性能问题](mac-support-perf.md)
 ###### [解决云连接问题](troubleshoot-cloud-connect-mdemac.md)
 ###### [解决核心扩展问题](mac-support-kext.md)
 ###### [解决许可证问题](mac-support-license.md)
- 
+
 ##### [隐私](mac-privacy.md)
 ##### [资源](mac-resources.md)
 
@@ -104,10 +104,10 @@
 #### [iOS 上的 Microsoft Defender for Endpoint]()
 ##### [iOS 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-ios.md)
 ##### [新增功能](ios-whatsnew.md)
- 
+
 ##### [部署]()
 ###### [通过 Intune 在 iOS 上部署 Microsoft Defender for Endpoint](ios-install.md)
- 
+
 ##### [配置]()
 ###### [配置 iOS 功能](ios-configure-features.md)
 
@@ -115,8 +115,8 @@
 ###### [常见问题和疑难解答](ios-troubleshoot.md)
 
 ##### [隐私](ios-privacy.md)
- 
- 
+
+
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Microsoft Defender for Endpoint for Linux 概述](microsoft-defender-endpoint-linux.md)
 ##### [新增功能](linux-whatsnew.md)
@@ -127,7 +127,7 @@
 ###### [通过 Chef 在 Linux 上部署 Defender for Endpoint](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [更新](linux-updates.md)
- 
+
 ##### [配置]()
 ###### [配置和验证排除](linux-exclusions.md)
 ###### [静态代理配置](linux-static-proxy-configuration.md)
@@ -136,29 +136,29 @@
 ###### [使用 Microsoft Defender for Endpoint on Linux 定期扫描](linux-schedule-scan-atp.md)
 ###### [计划更新 Microsoft Defender for Endpoint （Linux）](linux-update-MDE-Linux.md)
 
- 
+
 ##### [疑难解答]()
 ###### [解决安装问题](linux-support-install.md)
 ###### [调查代理运行状况问题](health-status.md)
 ###### [解决云连接问题](linux-support-connectivity.md)
 ###### [解决性能问题](linux-support-perf.md)
 ###### [解决事件遗漏问题](linux-support-events.md)
- 
+
 ##### [隐私](linux-privacy.md)
 ##### [资源](linux-resources.md)
- 
+
 #### [Android 上的 Microsoft Defender for Endpoint]()
 ##### [Android 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-android.md)
- 
+
 ##### [部署]()
 ###### [使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint](android-intune.md)
- 
+
 ##### [配置]()
 ###### [在 Android 功能上配置 Microsoft Defender for Endpoint](android-configure.md)
- 
+
 ##### [隐私]()
 ###### [Android 上的 Microsoft Defender for Endpoint - 隐私信息](android-privacy.md)
- 
+
 ##### [疑难解答]()
 ###### [解决问题](android-support-signin.md)
 
@@ -321,13 +321,13 @@
 ##### [启用漏洞保护](enable-exploit-protection.md)
 ##### [自定义漏洞保护](customize-exploit-protection.md)
 ##### [导入、导出和部署 Exploit Protection 配置](import-export-exploit-protection-emet-xml.md)
-##### [漏洞保护参考](exploit-protection-reference.md )
+##### [漏洞保护参考](exploit-protection-reference.md)
 
 #### [网络保护功能]()
 ##### [保护你的网络](network-protection.md)
 ##### [网络保护功能评估](evaluate-network-protection.md)
 ##### [启用网络保护功能](enable-network-protection.md)
- 
+
 #### [Web 保护功能]()
 ##### [Web 保护功能概述](web-protection-overview.md)
 ##### [Web 威胁防护功能]()
@@ -335,7 +335,7 @@
 ###### [监视 web 安全性](web-protection-monitoring.md)
 ###### [响应 web 威胁](web-protection-response.md)
 ##### [Web 内容筛选](web-content-filtering.md)
- 
+
 #### [受控文件夹访问]()
 ##### [保护文件夹](controlled-folders.md)
 ##### [受控文件夹访问评估](evaluate-controlled-folder-access.md)
@@ -371,7 +371,7 @@
 ##### [查看和组织事件队列](view-incidents-queue.md)
 ##### [管理事件](manage-incidents.md)
 ##### [调查事件](investigate-incidents.md)
- 
+
 #### [警报队列]()
 ##### [查看和组织警报队列](alerts-queue.md)
 ##### [查看警报](review-alerts.md)
@@ -383,12 +383,12 @@
 ##### [调查域](investigate-domain.md)
 ###### [调查正向代理背后发生的连接事件](investigate-behind-proxy.md)
 ##### [调查用户帐户](investigate-user.md)
- 
+
 #### [设备列表]()
 ##### [查看和组织设备列表](machines-view-overview.md)
 ##### [设备日程表事件标记](device-timeline-event-flag.md)
 ##### [管理设备组和标签](machine-tags.md)
- 
+
 #### [执行响应操作]()
 ##### [在设备上执行响应操作]()
 ###### [设备上的响应操作](respond-machine-alerts.md)
@@ -547,7 +547,7 @@
 ####### [限制应用执行](restrict-code-execution.md)
 ####### [删除应用限制](unrestrict-code-execution.md)
 ####### [运行防病毒扫描](run-av-scan.md)
-####### [运行实时响应](run-live-response.md) 
+####### [运行实时响应](run-live-response.md)
 ####### [载出计算机](offboard-machine-api.md)
 ####### [停止和隔离文件](stop-and-quarantine-file.md)
 ####### [取消计算机操作](cancel-machine-action.md)
@@ -661,7 +661,7 @@
 ##### [非活跃设备](fix-unhealthy-sensors.md#inactive-devices)
 ##### [配置错误的设备](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [使用事件查看器查看计算机上的传感器事件和错误](event-error-codes.md)
-  
+
 #### [Microsoft Defender for Endpoint 服务疑难解答]()
 ##### [服务疑难解答](troubleshoot-mdatp.md)
 ##### [检查服务运行状况](service-status.md)
@@ -669,8 +669,8 @@
 
 #### [实时响应问题疑难解答](troubleshoot-live-response.md)
 
-#### [使用 LiveAnalyzer 收集支持日志 ](troubleshoot-collect-support-log.md)
- 
+#### [使用 LiveAnalyzer 收集支持日志](troubleshoot-collect-support-log.md)
+
 #### [解决攻击面减少问题]()
 ##### [网络保护](troubleshoot-np.md)
 ##### [攻击面减少规则](troubleshoot-asr.md)
@@ -678,4 +678,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
-# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
+# [Defender for Identity](/defender-for-identity/)
