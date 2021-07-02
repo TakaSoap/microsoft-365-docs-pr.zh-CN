@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 83f1be417b706fdb66b1df71ba351ce16d5ad485
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034243"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226619"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -60,7 +60,7 @@ ms.locfileid: "51034243"
   
 ![图 2 （共 2 张图）：事件类型、标签、事件和资产 ID 的关系图](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. 为不同类型的内容创建保留标签，然后将其与事件类型相关联。 例如，不同类型的产品文件和记录的保留标签与“产品生存期”事件类型相关联，因为必须将这些记录自产品生存期结束起保留 10 年。
+1. 为不同类型的内容创建保留标签，然后将它们与事件类型相关联。例如，不同类型的产品文件和记录的保留标签与名为“产品生命周期”的事件类型相关联，因为必须将这些记录自产品生命周期结束起保留 10 年。
     
 2. 用户（通常是记录管理人员）将这些保留标签应用于内容，并（对 SharePoint 和 OneDrive 中的文档）为每一项输入资产 ID。 在此示例中，资产 ID 是组织使用的产品名称或代码。 然后，每个产品的记录都分配有一个保留标签，且每个记录都有包含资产 ID 的属性。 上图表示组织中所有产品记录的 **全部内容**，且每一项都有记录所属产品的资产 ID。 
     
@@ -72,11 +72,11 @@ ms.locfileid: "51034243"
     
    - 事件发生日期。此日期用作保留期的开始日期。该日期可以是当前日期、过去日期或未来日期。
 
-4. 在你创建事件后，相应事件日期就会同步到符合以下条件的所有内容：具有相应事件类型的保留标签，且包含指定的资产 ID 或关键字。 与任何保留标签一样，这种同步最长可能需要七天才能完成。 在上图中，所有用红色圈起来的项的保留期都是由此事件触发的。 换言之，当此产品的生存期结束时，相应事件就会触发此产品的记录的保留期。
+4. 创建事件后，该事件日期将同步到具有该事件类型保留标签且包含指定资产 ID 或关键字的所有内容。与任何保留标签一样，此同步可能需要长达七天的时间。在上图中，红色圈出的所有项目的保留期均由此事件触发。换言之，当此产品的生命周期结束时，该事件将触发该产品记录的保留期。
 
 请务必注意，如果你没有为事件指定资产 ID 或关键字，那么对于具有相应事件类型的保留标签的 **所有内容**，保留期都是由事件触发的。 也就是说，在上图中，所有内容将开始被保留。 这可能并非如你所愿。
 
-最后，请注意，每个保留标签都有自己的保留设置。 在此示例中，它们全都指定保留 10 年，但事件也可触发保留期不同的各个保留标签。
+最后，请记住，每个保留标签都有自己的保留设置。在此示例中，它们都指定了 10 年，但事件可能会触发保留标签，其中每个标签的保留期都不同。
   
 ## <a name="how-to-set-up-event-driven-retention"></a>如何设置事件驱动保留
 
@@ -125,7 +125,7 @@ ms.locfileid: "51034243"
 
 ### <a name="step-4-enter-an-asset-id"></a>第 4 步：输入资产 ID
 
-将基于事件的标签应用于内容后，可为每一项输入资产 ID。 例如，组织可能使用：
+在基于事件的标签应用于内容后，可以输入每个项目的资产 ID。例如，组织可能会使用：
   
 - 产品代码：可用于仅保留特定产品的内容。
     
@@ -153,17 +153,19 @@ ms.locfileid: "51034243"
 
 或者，如果需要为具有不同事件类型的多个保留标签创建事件，请选择“**选择现有标签**”选项。 然后，选择想要与此事件相关联的事件类型所配置的标签。
 
-### <a name="step-7-enter-keywords-or-an-asset-id"></a>第 7 步：输入关键字或资产 ID
+### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>步骤 7：对于 Exchange 输入关键字或查询，对于 SharePoint 和 OneDrive 输入资产 ID
 
-现在通过指定 SharePoint 和 OneDrive 内容的资产 ID 或指定 Exchange 内容的关键字，缩小内容的范围。 对于资产 ID，仅具有指定 *属性:值* 对的内容才会执行保留。 如果未输入资产 ID，具有该事件类型标签的所有内容都将应用相同的保留日期。
+现在缩小内容的范围。 对于 Exchange 内容，可通过指定关键字或查询来执行此操作。 对于 SharePoint 和 OneDrive 内容，可通过指定资产 ID 来执行此操作。
 
-例如：如果使用的是资产 ID 属性，请在下方所示的资产 ID 框中输入 `ComplianceAssetID:<value>`。
-  
+对于 Exchange 项目，使用关键字或采用关键字查询语言 (KQL) 的查询。 有关查询语法的详细信息，请参阅[关键字查询语言 (KQL) 语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。 有关可用于 Exchange 的可搜索属性的详细信息，请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+
+对于资产 ID，仅对具有指定 *属性:值* 对的内容执行保留。 例如，如果使用的是资产 ID 属性，请在框中对下图所示的资产 ID 输入 `ComplianceAssetID:<value>`。
+
+如果未输入资产 ID，具有该事件类型标签的所有内容都将应用相同的保留日期。
+
 组织可能已经对与此事件类型相关的文档应用了其他属性和 ID。 例如，如果需要检测特定产品记录，ID 可能为自定义属性 ProductID 和值“XYZ”的组合。 在此情况下，需在下图所示的资产 ID 框中输入 `ProductID:XYZ`。
-  
-对于 Exchange 项目，请使用关键字。 你可以通过使用 AND、OR 和 NOT 等搜索运算符来使用查询。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
-  
-最后，选择事件发生日期；此日期用作保留期的开始日期。 创建事件后，相应事件日期就会同步到所有具有相应事件类型的保留标签、资产 ID 和关键字的内容。 与任何保留标签一样，这种同步最长可能需要七天才能完成。
+
+最后，选择事件发生的日期；此日期用作保留期的开始日期。创建事件后，该事件日期将同步到具有该事件类型、资产 ID 和关键字或查询的保留标签的所有内容。与任何保留标签一样，此同步可能需要长达七天的时间。
   
 ![“事件设置”页](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
@@ -280,7 +282,7 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 |参数|说明|注释|
 |--- |--- |--- |
 |<d:Name></d:Name>|为事件提供唯一的名称，|不能包含尾随空格或以下字符：% * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|输入事件类型名称（或 Guid），|示例：“雇佣终止”。 事件类型必须与保留标签相关联。|
+|<d:EventType></d:EventType>|输入事件类型名称（或 Guid），|示例：“雇佣终止”。事件类型必须与保留标签相关联。|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|输入“ComplianceAssetId:” + 员工 ID|示例："ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|事件日期和时间|格式：yyyy-MM-ddTHH:mm:ssZ，示例：2018-12-01T00:00:00Z
 |
