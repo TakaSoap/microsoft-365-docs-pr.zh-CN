@@ -114,7 +114,7 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: 为精确数据匹配活动创建通知（预览）
           href: sit-edm-notifications-activities.md
-        - name: 创建自定义敏感信息类型 - 合规中心
+        - name: 自定义敏感信息类型入门 - 合规中心
           href: create-a-custom-sensitive-information-type.md
         - name: 创建自定义敏感信息类型 - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
