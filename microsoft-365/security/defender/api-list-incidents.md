@@ -1,6 +1,6 @@
 ---
-title: 在 defender 中列出Microsoft 365 API
-description: 了解如何在 defender 中列出Microsoft 365 API
+title: 列出事件 API Microsoft 365 Defender
+description: 了解如何在事件列表中列出事件 API Microsoft 365 Defender
 keywords: 列表， 事件， 事件， api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730878"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287827"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>在 defender 中列出Microsoft 365 API
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>列出事件 API Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,6 @@ ms.locfileid: "52730878"
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
-
 
 ## <a name="api-description"></a>API 说明
 
@@ -61,8 +60,8 @@ API 支持以下 **OData** 运算符：
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-应用程序 | Incident.Read.All | 读取所有事件
-应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
+Application | Incident.Read.All | 读取所有事件
+Application | Incident.ReadWrite.All | 读取和写入所有事件
 委派（工作或学校帐户） | Incident.Read | 读取事件
 委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
 
@@ -82,7 +81,7 @@ GET /api/incidents
 
 名称 | 类型 | 说明
 -|-|-
-Authorization | String | Bearer {token}。 **Required**
+Authorization | 字符串 | Bearer {token}。 **Required**
 
 
 ## <a name="request-body"></a>请求正文
@@ -158,7 +157,7 @@ entities | 已标识为给定警报的一部分或与给定警报相关的所有
 
 字段名 | 说明 | 示例值
 -|-|-
-entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | 用户
+entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | User
 sha1 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件名 | Detector.UnitTests.dll
@@ -186,19 +185,19 @@ securityGroupId | 如果 entityType 为  *SecurityGroup，则可用*。 | 301c47
 securityGroupName | 如果 entityType 为  *SecurityGroup，则可用*。 | 网络配置运算符
 registryHive | 如果 entityType 为  *Registry ，则可用*。 | HKEY \_ 本地 \_ 计算机 |
 registryKey | 如果 entityType 为  *Registry ，则可用*。 | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | 如果 entityType 为  *Registry ，则可用*。 | String
+registryValueType | 如果 entityType 为  *Registry ，则可用*。 | 字符串
 registryValue | 如果 entityType 为  *Registry ，则可用*。 | 31-00-00-00
 deviceId | 与实体相关的设备的 ID（如果有）。 | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-**响应**
+### <a name="response"></a>响应
 
 ```json
 {
@@ -724,7 +723,7 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>相关文章
 
-- [访问 Microsoft 365 Defender API](api-access.md)
+- [访问Microsoft 365 Defender API](api-access.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)
 - [事件概述](incidents-overview.md)

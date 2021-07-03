@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用 Microsoft 365、SharePoint Syntex、SharePoint 列表、Microsoft Teams 和 Power Automate 解决方案管理Power Automate。
-ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054764"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287313"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 解决方案管理合同
 
-本文介绍如何使用 SharePoint Syntex 和 Microsoft 365 的组件为组织创建合同Microsoft 365。 它提供了一个框架，可帮助你计划和创建满足你独特业务需求的解决方案。 即使此解决方案不满足您的整体业务需求，也可以将该解决方案的某些部分用于创建自定义合同管理解决方案。
+本文介绍如何使用 SharePoint Syntex 和 Microsoft 365 的组件为组织创建合同Microsoft 365。 它提供了一个框架，可帮助你计划和创建满足你独特业务需求的解决方案。 即使此解决方案讨论合同管理，也可以调整它以创建其他文档管理解决方案，如工作单或发票。
 
 *此内容集记录由 Microsoft 365使用 Microsoft 新式工作解决方案策略团队开发的解决方案。*
 
@@ -65,10 +65,10 @@ ms.locfileid: "53054764"
       ![合同示例。](../media/content-understanding/contract.png)
 
 3. 在Microsoft Teams中，所有利益干系人都是安全Teams通道的成员，其中文档库中的所有合同都可以看到批准或拒绝。 通过使用Teams功能，当需要审阅新合同时，将通知所有利益干系人。
- 
-4. 通过使用Power Automate，合同将经过审批流程在 Teams 通道中移动。 当成员批准合同时，合同状态更改为批准，通过 Teams 帖子通知所有成员，并创建一个行项目以显示合同已准备好付款。 此过程可以扩展为直接写入第三方财务应用程序进行支付。
 
-5.  当成员拒绝合同时，状态将更改为"已拒绝"，并且将通过一条帖子通知所有成员Teams通知。
+4. 通过使用Power Automate，合同将经过审批流程在 Teams 通道中移动。 当成员批准合同时，合同状态更改为已批准，通过 Teams 帖子通知所有成员，并创建一个行项目以显示合同已准备好付款。 此过程可以扩展为直接写入第三方财务应用程序进行支付。
+
+5. 当成员拒绝合同时，状态将更改为"已拒绝"，并且将通过一条帖子通知所有成员Teams通知。
 
 6. 此解决方案的最终结果是业务流程自动部署。 员工可以轻松使用自定义磁贴视图Teams启动和监视文档的审批工作流。 
 
@@ -78,9 +78,9 @@ ms.locfileid: "53054764"
 
 此解决方案依赖于以下功能，这些功能均作为 Microsoft 365 企业版 (E1、E3、E5、F3) 或 Business (Basic、Standard 或 高级版) 许可证的一部分提供：
 
--   Microsoft SharePoint Syntex
--   Microsoft Teams
--   Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## <a name="create-the-solution"></a>创建解决方案
 

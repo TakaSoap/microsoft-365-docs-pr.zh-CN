@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 661ca9e227e8583bb6b601792e178c1c366132cb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841158"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256707"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -174,10 +174,16 @@ Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 > [!NOTE]
-> Microsoft 365 信息保护可为以下语言提供双字节字符集语言支持（预览）：
+> Microsoft 365 信息保护支持双字节字符集语言，用于:
 > - 简体中文
 > - 繁体中文
 > - 韩语
 > - 日语
 >
 >此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
+
+> [!TIP]
+> 若要检测含有中文/日文字符和单字节字符的模式，或检测含有中文/日文和英文的模式，则需要定义两个变体的关键词或词组。 例如，若要检测像“机密的文件”这样的关键词，则要使用该关键词的两个变体; 一个是在日语和英语文本之间有空格，另一个是在日语和英语文本之间没有空格。 因此，在 SIT 中要添加的关键词应该是“机密的 文档”和“机密的文档”。 同样，若要检测短语 "東京オリンピック2020"，则应该使用两个变体;“東京オリンピック 2020”和“東京オリンピック2020”。
+> 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。 此处有一个示例的 regex 供参考:
+    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> 建议在关键词列表中使用字符串匹配而不是单词匹配。

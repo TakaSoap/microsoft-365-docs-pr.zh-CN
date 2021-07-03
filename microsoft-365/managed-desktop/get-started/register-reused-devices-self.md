@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893271"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286905"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -75,13 +75,13 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 - 确保你有一个域凭据参数，该参数有权在设备上远程执行。
 - 确保防火墙Windows访问 WMI。 为此，请执行以下步骤：
 
-    1. 打开Windows Defender 防火墙 **控制面板**，然后 **通过""按钮选择"允许应用或Windows Defender 防火墙"。**
-    
+    1. 打开 **"Windows Defender防火墙**"控制面板，然后选择"允许应用或功能通过Windows Defender **防火墙"。**
+
     2. 在 **列表中Windows Management Instrumentation (WMI**) ，同时启用 **"** 专用"和"公用"，然后选择"确定 **"。**
 
-1.  使用管理权限打开 PowerShell 提示符。
+1. 使用管理权限打开 PowerShell 提示符。
 
-2.  运行 *以下任* 一脚本：
+2. 运行 *以下任* 一脚本：
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -94,7 +94,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. 访问可能有设备条目的任何目录。 从所有目录中删除每台设备的条目，包括Windows Server Active Directory 域服务和Azure Active Directory。 请注意，删除可能需要几个小时才能完全完成。
+3. 访问可能有设备条目的任何目录。 从所有目录中删除每台设备的条目，Windows Server Active Directory域服务和Azure Active Directory。 请注意，删除可能需要几个小时才能完全完成。
 
 4. 访问管理服务，其中可能有设备条目。 从所有管理服务中删除每台设备的条目，包括 Microsoft Endpoint Configuration Manager、Microsoft Intune 和 Windows Autopilot。 请注意，删除可能需要几个小时才能完全完成。
 
@@ -102,9 +102,9 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 #### <a name="manual-powershell-script-method"></a>手动 PowerShell 脚本方法
 
-1.  使用管理权限打开 PowerShell 提示符。
-2.  运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  运行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+1. 使用管理权限打开 PowerShell 提示符。
+2. 运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. 运行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [合并哈希数据。](#merge-hash-data)
 
 #### <a name="flash-drive-method"></a>Flash drive 方法
@@ -120,10 +120,8 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 9. 删除 USB 驱动器，然后通过运行来关闭设备 `shutdown -s -t 0`
 10. [合并哈希数据。](#merge-hash-data)
 
->[!IMPORTANT]
->完成注册之前，请勿再次打开要注册的设备。 
-
-
+> [!IMPORTANT]
+> 完成注册之前，请勿再次打开要注册的设备。 
 
 ### <a name="merge-hash-data"></a>合并哈希数据
 
@@ -135,16 +133,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 将哈希数据合并到一个 CSV 文件中后，现在可以继续 [注册设备](#register-devices-by-using-the-admin-portal)。
 
-
 ## <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
 在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 请按以下步骤操作：
 
@@ -187,12 +182,3 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 > 在将设备交还给用户之前，请确保你已获取并应用了 [该用户的适当许可证](../get-ready/prerequisites.md) 。
 
 如果应用了所有许可证，你可以让用户准备好[](get-started-devices.md)使用设备，然后你的用户可以启动设备并继续Windows设置体验。
-
-
-
-
-
-
-
-
-

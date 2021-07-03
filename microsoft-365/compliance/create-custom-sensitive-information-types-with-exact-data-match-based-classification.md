@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc1d3f08ab55f496ae7c6a12f35b71fa5b384688
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 17b9d9b1f551c62e42b2f5291f4d1fba8622f1ae
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256695"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287037"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
-
-
 
 [自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT () 敏感信息类型：
 
@@ -51,14 +49,14 @@ ms.locfileid: "53256695"
 基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如[数据丢失防护策略](dlp-learn-about-dlp.md)或[Microsoft Cloud App Security 文件策略](/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
-> Microsoft 365信息保护支持双字节字符集语言，
+> Microsoft 365 信息保护支持双字节字符集语言，用于:
+>
 > - 简体中文
 > - 繁体中文
 > - 韩语
 > - 日语
-> 
+>
 > 此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
-
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -73,21 +71,19 @@ ms.locfileid: "53256695"
 
 ## <a name="portal-links-for-your-subscription"></a>订阅门户链接
 
-
-|门户  |全球/GCC  |GCC-High  |DOD  |
-|---------|---------|---------|---------|
-|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
-|Microsoft 365 安全中心     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
-|Microsoft 365 合规中心     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
-
+|门户|全球/GCC|GCC-High|DOD|
+|---|---|---|---|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Microsoft 365 安全中心|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 合规中心|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概览
 
-|阶段  |所需项  |
-|---------|---------|
-|[第 1 部分：设置基于 EDM 的分类](#part-1-set-up-edm-based-classification)<br/><br/>（根据需要）<br/>- [编辑数据库架构](#editing-the-schema-for-edm-based-classification) <br/>- [删除架构](#removing-the-schema-for-edm-based-classification) |- 敏感数据的读取权限<br/>- XML 格式的数据库架构（提供了示例）<br/>- XML 格式的规则包（提供了示例）<br/>- 安全与合规中心的管理员权限（使用 PowerShell） |
-|[第 2 部分：为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>（根据需要）<br/>[刷新数据](#refreshing-your-sensitive-information-database) |- 自定义安全组和用户帐户<br/>- 使用 EDM 上载代理对计算机进行本地管理员访问<br/>- 敏感数据的读取权限<br/>- 刷新数据的流程和计划|
-|[第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- 具有 DLP 的 Microsoft 365 订阅<br/>- 已启用基于 EDM 的分类功能 |
+|阶段|所需项|
+|---|---|
+|[第 1 部分：设置基于 EDM 的分类](#part-1-set-up-edm-based-classification)<br/><br/>（根据需要）<br/>- [编辑数据库架构](#editing-the-schema-for-edm-based-classification) <br/>- [删除架构](#removing-the-schema-for-edm-based-classification)|- 敏感数据的读取权限<br/>- XML 格式的数据库架构（提供了示例）<br/>- XML 格式的规则包（提供了示例）<br/>- 安全与合规中心的管理员权限（使用 PowerShell）|
+|[第 2 部分：为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>（根据需要）<br/>[刷新数据](#refreshing-your-sensitive-information-database)|- 自定义安全组和用户帐户<br/>- 使用 EDM 上载代理对计算机进行本地管理员访问<br/>- 敏感数据的读取权限<br/>- 刷新数据的流程和计划|
+|[第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- 具有 DLP 的 Microsoft 365 订阅<br/>- 已启用基于 EDM 的分类功能|
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：设置基于 EDM 的分类
 
@@ -97,14 +93,13 @@ ms.locfileid: "53256695"
 2. [定义你的敏感信息数据库架构](#define-the-schema-for-your-database-of-sensitive-information)
 3. [设置规则包](#set-up-a-rule-package)
 
-
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
 1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值或以管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
 数据文件最多可包括以下内容：
-      - 高达 1 亿行的敏感数据
-      - 每个数据源最多 32 列（字段）
-      - 最多 5 个列（字段）标记为可搜索
+   - 高达 1 亿行的敏感数据
+   - 每个数据源最多 32 列（字段）
+   - 最多 5 个列（字段）标记为可搜索
 
 2. 在数据库或 .tsv .csv构造敏感数据，使第一行包含用于基于 EDM 的分类的字段的名称。 在你的文件中，你可能有字段名称，如"ssn"、"birthdate"、"firstname"、"lastname"。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
 
@@ -117,7 +112,7 @@ ms.locfileid: "53256695"
 > [!NOTE]
 > 精确数据匹配架构和敏感信息类型向导仅用于 World Wide 和 GCC。
 
-1. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml** 并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
+1. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml** 并对其进行配置，确保对于数据库中的每一列，都有一行使用语法：
 
       `\<Field name="" searchable=""/\>`.
 
@@ -146,11 +141,12 @@ ms.locfileid: "53256695"
 
 ##### <a name="configurable-match-using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>使用 caseInsensitive 和 ignoredDelimiters 字段的可配置匹配项
 
-以上 XML 示例使用了 `caseInsensitive` 和 `ignoredDelimiters` 字段。 
+以上 XML 示例使用了 `caseInsensitive` 和 `ignoredDelimiters` 字段。
 
 当在架构定义中包括 ***caseInsensitive** _ 字段并将其设置为值 `true` 时，EDM 不会根据 `PatientID` 字段的大小写差异排除项目。 因此，EDM 会将 `PatientID` _ *FOO-1234** 和 **fOo-1234** 视为完全相同。
 
 如果包括带支持字符和 ***ignoredDelimiters** _ 字段，EDM 将忽略 `PatientID` 中的这些字符。 因此，EDM 会将 `PatientID` _ *FOO-1234** 和 `PatientID` **FOO#1234** 视为完全相同。 `ignoredDelimiters` 标志支持任何非字母数字字符，以下是一些示例：
+
 - \.
 - \-
 - \/
@@ -166,20 +162,21 @@ ms.locfileid: "53256695"
 - \}
 - \\
 - \~
-- \; 
+- \;
 
 `ignoredDelimiters` 标志不支持：
+
 - 字符 0-9
 - A-Z
 - a-z
 - \"
 - \,
 
-在此示例中，如果同时使用 `caseInsensitive` 和 `ignoredDelimiters`，EDM 会将 **FOO-1234** 和 **fOo#1234** 视为完全相同，并将项目归类为患者记录敏感信息类型。 
+在此示例中，如果同时使用 `caseInsensitive` 和 `ignoredDelimiters`，EDM 会将 **FOO-1234** 和 **fOo#1234** 视为完全相同，并将项目归类为患者记录敏感信息类型。
 
-4. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
+1. 连接安全&安全与合规中心 PowerShell 中的过程，连接安全与合规& [PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
-5. 要上传数据库架构，请逐一运行下列 cmdlet：
+2. 要上传数据库架构，请逐一运行下列 cmdlet：
 
       ```powershell
       $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
@@ -208,13 +205,13 @@ ms.locfileid: "53256695"
 
       设置规则包时，请确保正确引用 .csv 或 .tsv **edm.xml文件。** 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
-      - **RulePack id & ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
+      - **RulePack id & ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) 生成 GUID。
 
       - **数据存储**：此字段指定要使用的 EDM 查找数据存储。 提供已配置的 EDM 架构的数据源名称。
 
       - **idMatch**：此字段指向 EDM 的主要元素。
         - 匹配：指定要在精确查找中使用的字段。 在数据存储的 EDM 架构中提供可搜索的字段名称。
-        - 分类：此字段指定触发 EDM 查找的敏感类型匹配。 可提供现有内建或自定义敏感信息类型的名称或 GUID。 请注意，与所提供敏感信息类型相匹配的任何字符串将进行哈希处理，并与敏感信息表中的每个条目相比较。 为避免导致性能问题，如果将自定义敏感信息类型用作 EDM 中的分类元素，请通过添加辅助关键词或在自定义分类敏感信息类型定义中包含格式的方法，避免使用与较大百分比内容（如“任何数字”或“任何五个字母的单词”）相匹配的类型。 
+        - 分类：此字段指定触发 EDM 查找的敏感类型匹配。 可提供现有内建或自定义敏感信息类型的名称或 GUID。 请注意，与所提供敏感信息类型相匹配的任何字符串将进行哈希处理，并与敏感信息表中的每个条目相比较。 为避免导致性能问题，如果将自定义敏感信息类型用作 EDM 中的分类元素，请通过添加辅助关键词或在自定义分类敏感信息类型定义中包含格式的方法，避免使用与较大百分比内容（如“任何数字”或“任何五个字母的单词”）相匹配的类型。
 
       - **匹配：** 此字段指向邻近 idMatch 找到的其他证据。
         - 匹配：在数据存储的 EDM 架构中提供任何字段名称。
@@ -302,7 +299,7 @@ ms.locfileid: "53256695"
 
 > [!NOTE]
 > 为 EDMSchema 更新新增内容可能需要10-60 分钟。 更新必须完成，然后才能执行使用这些新增操作的步骤。
- 
+
 导入带有 EDM 敏感信息类型的规则包并导入敏感数据表后，可以使用合规中心的 EDM 向导中的 **测试** 功能测试新创建的类型。 有关使用此功能的说明，请参阅[使用精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>编辑基于 EDM 的分类的架构
@@ -431,28 +428,34 @@ ms.locfileid: "53256695"
    > [!TIP]
    > 要获取受支持命令参数的列表，请运行无代理参数。例如“EdmUploadAgent.exe”。
 
-2. 授权 “EDM 上传代理”，打开命令提示符窗口（以管理员身份），切换到 **C:\EDM\Data** 目录，然后运行以下命令：
+3. 授权 “EDM 上传代理”，打开命令提示符窗口（以管理员身份），切换到 **C:\EDM\Data** 目录，然后运行以下命令：
 
    `EdmUploadAgent.exe /Authorize`
 
-3. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
+4. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
 
    可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
 
-   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   ```dos
+   EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+   ```
 
-4. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
+5. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
+   ```dos
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   ```
 
    示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项指定管道分隔的文件。  
+   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项指定管道分隔的文件。
    此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
-5. 运行以下命令，检查“上传”状态：
+6. 运行以下命令，检查“上传”状态：
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
+   ```
 
    示例：**EdmUploadAgent/GetSession/DataStoreName PatientRecords**
 
@@ -464,17 +467,24 @@ ms.locfileid: "53256695"
 
 可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+```dos
+EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+````
 
 1. 在命令提示符窗口中运行以下命令：
 
-   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   ```
 
    例如：
 
-   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   ```
 
    如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
+
    - .EdmHash
    - .EdmSalt
 
@@ -482,22 +492,29 @@ ms.locfileid: "53256695"
 
    若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
-   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
+   ```
 
    例如：
 
-   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+   ```
 
    若要验证是否已上传敏感数据，请在“命令提示符”窗口中运行以下命令：
 
-   `EdmUploadAgent.exe /GetDataStore`
+   ```dos
+   EdmUploadAgent.exe /GetDataStore
+   ```
 
    你将看到数据存储区列表以及上次更新时间。
 
    如果要查看所有数据上载到特定存储的信息，请在 Windows 命令提示符下运行以下命令：
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
+   ```
 
    继续设置[刷新敏感信息数据库](#refreshing-your-sensitive-information-database)的流程和计划。
 
@@ -516,11 +533,11 @@ ms.locfileid: "53256695"
 
 3. 使用[任务计划程序](/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行[创建哈希并上载敏感数据](#part-2-hash-and-upload-the-sensitive-data)流程中的步骤 2 和 3。 你可以使用多种方法来计划任务：
 
-      | 方法             | 需执行的操作 |
-      | ---------------------- | ---------------- |
-      | Windows PowerShell     | 请参阅本文中的[计划任务](/powershell/module/scheduledtasks/?view=win10-ps)文档和[示例 PowerShell 脚本](#example-powershell-script-for-task-scheduler) |
-      | 任务计划程序 API     | 请参阅[任务计划程序](/windows/desktop/TaskSchd/using-the-task-scheduler)文档                                                                                                                                                                                                                                                                                |
-      | Windows 用户界面 | 在 Windows 中单击“**开始**”，然后键入 Task Scheduler。 然后，在结果列表中，右键单击“**任务计划程序**”，然后选择“**以管理员身份运行**”。                                                                                                                                                                                                                                                                           |
+   |方法|需执行的操作|
+   |---|---|
+   |Windows PowerShell|请参阅本文中的[计划任务](/powershell/module/scheduledtasks/)文档和[示例 PowerShell 脚本](#example-powershell-script-for-task-scheduler)|
+   |任务计划程序 API|请参阅[任务计划程序](/windows/desktop/TaskSchd/using-the-task-scheduler)文档|
+   |Windows 用户界面|在 Windows 中单击“**开始**”，然后键入 Task Scheduler。 然后，在结果列表中，右键单击“**任务计划程序**”，然后选择“**以管理员身份运行**”。|
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>任务计划程序的示例 PowerShell 脚本
 
@@ -599,7 +616,6 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
-
 ```
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用
@@ -637,7 +653,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
       ![内容包含敏感信息类型](../media/edm-dlp-newrule-conditions.png)
 
-11. 搜索你在设置规则包时创建的敏感信息类型，然后选择“**+ 添加**”。  
+11. 搜索你在设置规则包时创建的敏感信息类型，然后选择“**+ 添加**”。
     然后选择“**完成**”。
 
 12. 完成为规则选择相关选项，例如“**用户通知**”、“**用户覆盖**”、“**事件报告**”等，然后选择“**保存**”。

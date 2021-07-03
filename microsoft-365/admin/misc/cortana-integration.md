@@ -19,19 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或学校帐户的用户可以Cortana符合Microsoft 365安全承诺Office 365体验。
-ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6887032e62d397659dc73475418f52b0c1246a2f
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227891"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286689"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana Microsoft 365
 
 Cortana，你的个人生产力助手，可提供由 AI 提供的体验，以节省时间并关注最重要的事项。 Cortana 旨在提供可安全处理 Office 365 数据（如电子邮件、文件、聊天等）和原因的功能，以节省时间、提高效率并提高用户的工作效率。
 
-使用有效的工作或学校帐户登录时，用户可以通过 Microsoft 365 体验中的 Cortana 获得基于云的协助服务，这些服务符合 Office 365 的企业级隐私、安全性和合规性承诺 ("Cortana **企业** 服务") 。 
-
+使用有效的工作或学校帐户登录时，用户可以通过 Microsoft 365 体验中的 Cortana 获得基于云的协助服务，这些服务符合 Office 365 的企业级隐私、安全性和合规性承诺 ("Cortana **企业** 服务") 。
 
 - **Cortana** 包括 Windows 10 (版本 2004 和更高版本) 中的 Cortana、适用于 iOS 和 Android 的 Outlook、适用于 iOS 和 Android 的 Microsoft Teams 移动应用以及 Microsoft Teams [显示](/microsoftteams/devices/teams-displays)。
 
@@ -88,19 +87,18 @@ Cortana Windows 10 版本 2004 及更高版本中的版本满足 Cortana 企业�
 
 Cortana Teams移动应用和 Microsoft Teams Microsoft Teams 显示设备中提供语音帮助，Microsoft 365 企业版 用户能够使用自然语音简化通信、协作和与会议相关的任务。 用户可以通过 Cortana选择 Teams 移动应用右上角的麦克风按钮，或在屏幕&#8220;Cortana&#8221;说"Microsoft Teams"来Microsoft Teams语音。 为了快速与团队进行自由联系，用户可以说一些查询，例如 &#8220;呼叫 Megan&#8221; 或 &#8220;向下一场会议发送消息&#8221;。 用户还可以说，&#8220;加入下一&#8221;会议并使用语音协助来共享文件、查看其日历等。 这些语音协助体验使用完全遵守 Office 365 隐私、安全性和合规性承诺的 Cortana 企业级服务提供，如联机服务条款[ (OST ](https://www.microsoft.com/licensing/product-licensing/products)) 所反映。
 
-**管理员控制**
+#### <a name="admin-control"></a>管理员控制
 
 Cortana为租户启用语音协助。 管理员可以控制租户中哪些人Cortana TeamsCortanaPolicy Teams策略 (使用语音) 。 可以在用户帐户级别或租户级别设置此策略。 管理员还可在此策略控件内使用 CortanaVoiceInvocationMode 字段来确定是禁用 Cortana、仅通过一键调用启用，还是使用唤醒词调用启用 (以及适用于支持它的设备（如 Microsoft Teams display) ）。 
 
-**用户控件**
+#### <a name="user-control"></a>用户控件
 
 单个用户可以通过单击Cortana在Teams移动应用中尝试使用语音帮助。 他们只需Cortana Microsoft Teams.&#8221;，就可以在 Microsoft Teams &#8220;Cortana 设备上尝试使用语音帮助。他们还可以控制 Cortana 是否响应唤醒词调用。 
 
-1.  打开Teams移动版
-2.  转到设置
-3.  选择Cortana
-4.  切换语音激活切换
-
+1. 打开Teams移动版
+2. 转到设置
+3. 选择Cortana
+4. 切换语音激活切换
 
 [详细了解如何Cortana语音Teams](/microsoftteams/cortana-in-teams)
 
@@ -123,7 +121,6 @@ Cortana为租户启用语音协助。 管理员可以控制租户中哪些人Cor
 "播放我的电子邮件 (通过 Outlook 移动) 进行连接是一种语音驱动的无双手体验，用户可在重点收件箱中收听新邮件，并通过手机上的扬声器、耳机或已连接的音频设备更改其一天。 用户可以要求Cortana朗读最近的电子邮件，并要求用户Cortana标志、存档、删除和跳过邮件等操作。 此功能对于在上下班、多任务或往返时跟进电子邮件尤其有用。 当用户在"播放Cortana"中与用户交谈时，语音音频请求会直接转到Cortana服务。 在云中处理用户电子邮件的文本到语音Office 365。 在此期间，不会Office 365用户移动设备上处理任何数据，并且不会保存任何电子邮件数据。 根据 Microsoft [Online Services](https://www.microsoft.com/licensing/product-licensing/products)条款中的数据保护条款， ("标记为已读"、"下一步"、"标志"等 ) 的语音命令脚本可能会保留。
 
 Cortana电子邮件受保护时，系统将会发出调用，在阅读邮件前短暂暂停，以便为用户提供足够的时间来暂停播放或跳到下一封邮件。 与专用电话呼叫类似，用户在可能听到机密信息的位置发起播放时应谨慎。 在这些情况下，建议组织的员工在适当的环境中使用"在移动电话中播放我的电子邮件"Outlook耳机。
-
 
 ### <a name="how-to-opt-out-of-play-my-emails"></a>如何选择退出"播放我的电子邮件"
 
@@ -183,10 +180,8 @@ Cortana发送包含你所做的任务和承诺的个性化简介电子邮件，�
 
 对于受 Microsoft 服务协议[和](https://go.microsoft.com/fwlink/p/?LinkId=2109174) [Microsoft](https://privacy.microsoft.com/privacystatement)隐私声明约束的服务，Microsoft 是数据控制者。 作为数据控制者，Microsoft 根据 Microsoft 隐私声明使用数据来改进 [产品和服务](https://privacy.microsoft.com/privacystatement)。
 
-
 ## <a name="related-content"></a>相关内容
 
 [Cortana文章Teams (](/microsoftteams/cortana-in-teams)语音) \
 [配置Cortana Windows 10 (](/windows/configuration/cortana-at-work/cortana-at-work-overview)中的) \
 [使用"从电子邮件播放我的电子邮件"Cortana？](https://support.microsoft.com/help/4558256)
-

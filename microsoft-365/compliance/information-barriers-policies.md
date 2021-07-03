@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842718"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286029"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -38,8 +38,8 @@ ms.locfileid: "52842718"
 - 用户帐户属性 在 Azure Active Directory（或 Exchange Online）中定义。 这些属性可能包括部门、职务、位置、团队名称和其他职务资料详细信息。 
 - 分段是使用所选用户帐户属性在安全与合规&定义 **的用户集**。 （请参阅 [支持的属性列表](information-barriers-attributes.md)。）
 - 信息屏障策略决定了通信限制或限制。 定义信息屏障策略时，可以从以下两种策略中选择：
-    - "阻止"策略阻止一个段与另一个段通信。
-    - "允许"策略允许一个段仅与某些其他段通信。
+  - "阻止"策略阻止一个段与另一个段通信。
+  - "允许"策略允许一个段仅与某些其他段通信。
 - 策略应用 之前应先定义所有信息屏障策略。全部定义之后，则已准备好在组织中应用这些策略。
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概览
@@ -53,7 +53,7 @@ ms.locfileid: "52842718"
 |  (根据需要) [编辑段或策略](information-barriers-edit-segments-policies.md) | - 编辑线段<br/>- 编辑或删除策略<br/>- 重新运行策略应用程序<br/>- 查看策略状态 |
 |  (根据需要) [疑难解答](information-barriers-troubleshooting.md)| - 在未如期运行时采取措施|
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 除了所需的 [许可证和权限](information-barriers.md#required-licenses-and-permissions)之外，请确保满足以下要求：
 
@@ -71,8 +71,8 @@ ms.locfileid: "52842718"
 - 无通讯簿策略 - 在定义和应用信息屏障策略之前，请确保没有Exchange通讯簿策略。 信息屏障基于通讯簿策略，但两种类型的策略不兼容。 如果您具有此类策略，请确保首先 [删除通讯簿](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 策略。 启用信息屏障策略并启用分层通讯簿后，未包含在信息屏障段中的所有用户都将看到 Exchange 通讯簿。 [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)
 
 - PowerShell - 目前，使用 PowerShell cmdlet 在 Office 365 安全&中心定义和管理信息屏障策略。 尽管本文提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 您还需要该Azure PowerShell模块。
-    - [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [安装Azure PowerShell模块](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [安装Azure PowerShell模块](/powershell/azure/install-az-ps)
 
 - 管理员同意 Microsoft Teams 中的信息屏障 - 如果符合您的 IBM 策略，他们可以从组 (（即基于组) 的 Teams 频道）中删除非 IBM 合规性用户。 此配置有助于确保组织符合策略和法规。 使用以下过程使信息屏障策略能够按照预期在Microsoft Teams。
 
@@ -91,10 +91,9 @@ ms.locfileid: "52842718"
    1. 系统提示时，使用工作或学校帐户登录Office 365。
 
    1. 在"**请求的权限"** 对话框中，查看信息，然后选择"接受 **"。** 应用程序请求的权限如下所示。
-      
+
       > [!div class="mx-imgBorder"]
       > ![图像](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 满足所有先决条件后，继续下一节。
 
@@ -257,7 +256,7 @@ ms.locfileid: "52842718"
 
 | 查看此信息 | 采取此操作 |
 |:---------------|:----------|
-| 用户帐户 | 将 **Get-InformationBarrierRecipientStatus** cmdlet 与 Identity 参数一同使用。 <p> 语法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p> 例如：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 此 cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。|
+| 用户帐户 | 将 **Get-InformationBarrierRecipientStatus** cmdlet 与 Identity 参数一同使用。 <p> 语法： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p> 示例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 此 cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。|
 | 分段 | 使用 **Get-OrganizationSegment** cmdlet。<p> 语法： `Get-OrganizationSegment` <p> 此 cmdlet 将显示为组织定义的所有分段的列表。 |
 | 信息屏障策略 | 使用 **Get-InformationBarrierPolicy** cmdlet。 <p> 语法： `Get-InformationBarrierPolicy` <p> 此 cmdlet 将显示已定义的信息屏障策略及其状态的列表。 |
 | 最新信息屏障策略应用程序 | 使用 **Get-InformationBarrierPoliciesApplicationStatus** cmdlet。 <p> 语法： `Get-InformationBarrierPoliciesApplicationStatus`<p> 此 cmdlet 将显示有关策略应用程序已完成、失败还是正在进行的信息。 |
@@ -285,7 +284,7 @@ Contoso 有五个部门：人力资源、销售、市场营销、研究和制造
 | 用户群 | 可以沟通 | 不可以沟通 |
 |:----------|:--------------|:-----------------|
 | 人力资源 | 所有人 | （无限制） |
-| 销售 | 人力资源、市场营销、制造 | 研究 |
+| 销售 | 人力资源、市场营销、制造 | 信息检索 |
 | 市场营销 | 所有人 | （无限制） |
 | 研究 | 人力资源、市场营销、制造 | 销售 |
 | 制造 | HR、Marketing | 除 HR 或 Marketing 外的任何人员 |
@@ -316,7 +315,7 @@ Contoso 将使用 Azure Active Directory 中的 Department 属性定义分段，
 
 Contoso 定义三个策略，如下表所述：
 
-| 策略 | 策略定义 |
+| Policy | 策略定义 |
 |:---------|:--------------------|
 | **策略1：防止销售与研究部门沟通** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 此示例中，信息屏障策略称为 *销售-研究*。 此策略处于活动状态并已应用时，它将帮助防止销售部门中的用户与研究部门中的用户沟通。 此策略是单向策略;它不会阻止 Research 与销售部门通信。 因此，需要策略 2。 |
 | **策略 2：阻止研究与销售部门沟通** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此例中，信息屏障策略称为 *研究-销售*。 此策略处于活动状态并已应用时，它将帮助防止研究部门中的用户与销售部门中的用户沟通。 |

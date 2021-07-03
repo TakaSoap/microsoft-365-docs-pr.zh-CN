@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
-ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: fdd219e4fc99e2388acb5b19eacb2fc470041f79
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635818"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286725"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -85,9 +85,10 @@ ms.locfileid: "52635818"
 
 Set-MsolPasswordPolicy cmdlet 将更新指定域或租户的密码策略。需要两个设置：第一个用于指示密码在必须更改之前的有效时长，第二个用于指示在用户收到第一封显示其密码即将过期的通知时将触发的密码过期日期之前的剩余天数。
 
-若要了解如何更新特定域或租户的密码策略，请参阅 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。
+若要了解如何更新特定域或租户的密码策略，请参阅 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy)。
 
 ## <a name="related-content"></a>相关内容
 
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
+
 [重置密码](../add-users/reset-passwords.md)（文章）

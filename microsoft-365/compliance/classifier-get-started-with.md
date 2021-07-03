@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 一Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
-ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918176"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286629"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>可训练的分类器入门
 
@@ -46,7 +46,7 @@ ms.locfileid: "50918176"
 
 分类器是Microsoft 365 E5 E5 合规性功能。 你必须拥有其中一个订阅，以使用这些订阅。
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>权限
 
 若要访问 UI 中的分类器：： 
 
@@ -108,7 +108,7 @@ ms.locfileid: "50918176"
    > [!TIP]
    > 如果为种子数据创建新的站点和文件夹，请至少允许一小时对位置编制索引，然后再创建使用该种子数据的可训练分类器。
 
-3. 使用合规性管理员Microsoft 365安全管理员角色访问权限登录到合规性中心，然后打开Microsoft 365 **中心** 或Microsoft 365 **安全中心**  >  **数据分类。**
+3. 登录以使用Microsoft 365 合规中心管理员或安全管理员角色访问权限登录，然后打开Microsoft 365 合规中心或Microsoft 365 **安全中心**  >  **数据分类"**。
 
 4. 选择" **可训练分类器"** 选项卡。
 

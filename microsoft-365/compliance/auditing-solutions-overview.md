@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d4a753a640b98125bc6ad02bd6043f28336e29b7
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538495"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256755"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -165,4 +165,4 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
 ## <a name="training"></a>培训
 
-在基本审核和高级审核中培训安全运营团队、IT 管理员和合规调查团队，可帮助组织更快开始使用审核来帮助完成调查。 Microsoft 365 提供了以下资源来帮助你组织中这些用户开始进行审核： [描述Microsoft 365中的审核功能](/learn/modules/describe-audit-capabilities-microsoft-365)。
+在“基本审核”和“高级审核”的基础上培训安全运营团队、IT 管理员和合规调查团队，可帮助组织更快开始使用审核来帮助完成调查。 Microsoft 365 提供了以下资源来帮助组织中这些用户开始进行审核: [描述 Microsoft 365 的 eDiscovery 和审核功能](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)。

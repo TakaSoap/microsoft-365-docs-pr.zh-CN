@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何启用 Microsoft 365只需几步，Windows 10加入本地 Active-Directory 的设备。
-ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636078"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287687"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>允许加入域Windows 10设备由用户Microsoft 365 商业高级版
 
-如果您的组织使用 Windows Server Active Directory 本地，您可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保留对需要本地身份验证的本地资源的访问权限。
+如果你的组织在本地Windows Server Active Directory，你可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。
 若要设置此保护，你可以实现加入 **混合 Azure AD 的设备**。 这些设备已加入到本地 Active Directory 和 Azure Active Directory。
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>观看：配置混合Azure Active Directory加入
@@ -42,7 +42,7 @@ ms.locfileid: "52636078"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 将用户与 Azure AD 同步到 Azure AD 连接。
 - 完成 Azure AD 连接组织单位 (OU) 同步。
@@ -109,13 +109,13 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 如果你看不到使用默认 Azure **AD** 凭据启用自动 MDM 注册的策略，这可能是因为你未为 Windows 10 版本 1803 或更高版本安装 ADMX。 若要解决此问题，请按照以下步骤操作 (注意：最新的 MDM.admx 是向后兼容的) ：
 
-1.  下载[：2020 年 10 月更新 (.admx) 2020 Windows 10 20H2 ](https://www.microsoft.com/download/102157) (管理模板) 。
-2.  在域控制器上安装程序包。
-3.  根据管理模板版本导航到文件夹 **：C：\Program Files (x86) \Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**。
-4.  将上述 **路径中的"策略** 定义"文件夹重命名为 **PolicyDefinitions**。
-5.  将 **PolicyDefinitions** 文件夹复制到 SYSVOL 共享，默认位于 **C：\Windows\SYSVOL\domain\Policies。** 
-    -   如果计划将中央策略存储用于整个域，请在那里添加 PolicyDefinitions 的内容。
-6.  如果您具有多个域控制器，请等待 SYSVOL 复制，以便策略可用。 此过程还适用于管理模板的任何未来版本。
+1. 下载[：2020 年 10 月更新 (.admx) 2020 Windows 10 20H2 ](https://www.microsoft.com/download/102157) (管理模板) 。
+2. 在域控制器上安装程序包。
+3. 根据管理模板版本导航到文件夹 **：C：\Program Files (x86) \Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**。
+4. 将上述 **路径中的"策略** 定义"文件夹重命名为 **PolicyDefinitions**。
+5. 将 **PolicyDefinitions** 文件夹复制到 SYSVOL 共享，默认位于 **C：\Windows\SYSVOL\domain\Policies。**
+   - 如果计划将中央策略存储用于整个域，请在那里添加 PolicyDefinitions 的内容。
+6. 如果您具有多个域控制器，请等待 SYSVOL 复制，以便策略可用。 此过程还适用于管理模板的任何未来版本。
 
 此时，你应该可以看到"使用默认 **Azure AD** 凭据启用自动 MDM 注册"策略可用。
 

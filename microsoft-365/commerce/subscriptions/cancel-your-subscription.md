@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: d327a09eba06e9a2bbc92959b6048649b41b72fe
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950079"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256791"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -82,7 +82,7 @@ ms.locfileid: "52950079"
 
 如果在期限结束之前取消订阅，订阅状态将直接进入禁用状态。 在大多数国家和地区，大多数订阅的禁用状态会持续 90 天。 订阅处于禁用状态时，管理员仍然可以访问和备份其组织的数据，但我们建议管理员在取消订阅之前[备份其数据](back-up-data-before-switching-plans.md)，尤其是在该订阅是其唯一订阅的情况下。 管理员也可以在订阅处于禁用状态时重新激活订阅。
 
-90 天后，订阅将进入已删除状态。 将会在取消订阅的 90 天之后、180 天之前删除遗留的任何数据。 在取消订阅达到已删除状态之前，无法删除已取消订阅的付款方式。
+90 天后，订阅进入已删除状态。 将会在取消订阅的 90 天之后、180 天之前删除遗留的任何数据。 在取消订阅达到已删除状态之前，无法删除已取消订阅的付款方式。
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>取消订阅对你和你的用户的影响。
   

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861499"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287815"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -51,11 +51,11 @@ ms.locfileid: "52861499"
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅访问[Microsoft 365 Defender API。](api-access.md)
+若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅访问Microsoft 365 Defender [API。](api-access.md)
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
+Application | Incident.ReadWrite.All | 读取和写入所有事件
 委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
 
 > [!NOTE]
@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 名称 | 类型 | 说明
 -|-|-
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -84,7 +84,7 @@ Content-Type | String | application/json. **必需**。
 assignedTo | string | 事件的所有者。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 确定 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
-tags | 字符串列表 | 事件标记列表。
+标记 | 字符串列表 | 事件标记列表。
 comment | string | 要添加到事件的注释。
 
 ## <a name="response"></a>响应
@@ -127,7 +127,7 @@ comment | string | 要添加到事件的注释。
 
 ## <a name="related-articles"></a>相关文章
 
-- [访问 Microsoft 365 Defender API](api-access.md)
+- [访问Microsoft 365 Defender API](api-access.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)
 - [事件 API](api-incident.md)

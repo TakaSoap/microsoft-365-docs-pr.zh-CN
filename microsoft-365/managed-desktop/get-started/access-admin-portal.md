@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2facd506497cbdab42f2d8b051fbd50f82432927
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770597"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286869"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
@@ -61,12 +61,12 @@ ms.locfileid: "52770597"
 ### <a name="assigning-built-in-roles-to-user"></a>向用户分配内置角色
 
 为了轻松管理内置角色，每个自定义角色都有一个安全组，名称为"新式工作区角色 _-_ 角色名称" (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
-1.  转到Microsoft Endpoint Manager门户。
-2.  选择 **左侧** 的"组"。
-3.  搜索 **"现代工作区角色**"，然后选择与要分配的角色关联的组。 
-4.  选择 **左侧** 的"成员"，然后在命令 **栏上选择"+** 添加成员"。
-5.  输入要添加的人的电子邮件。 如果他们是来宾，必须先邀请他们，然后才能分配组。
-6.  选择 **底部的** "选择"。
+1. 转到Microsoft Endpoint Manager门户。
+2. 选择 **左侧** 的"组"。
+3. 搜索 **"现代工作区角色**"，然后选择与要分配的角色关联的组。 
+4. 选择 **左侧** 的"成员"，然后在命令 **栏上选择"+** 添加成员"。
+5. 输入要添加的人的电子邮件。 如果他们是来宾，必须先邀请他们，然后才能分配组。
+6. 选择 **底部的** "选择"。
 
 > [!NOTE]
 > 当前不支持嵌套角色分配组。 
@@ -74,6 +74,7 @@ ms.locfileid: "52770597"
 ### <a name="assigning-built-in-roles-to-groups"></a>向组分配内置角色
 
 如果需要将一个或多个内置角色分配给现有组，请按照以下步骤操作：
+
 1. 转到["portal.azure.com"。](https://portal.azure.com/)
 2. 搜索并打开 **Enterprise应用程序**。
 3. 将"**应用程序类型"** 筛选器更改为 _"Microsoft 应用程序"，_ 然后选择"应用 **"。**

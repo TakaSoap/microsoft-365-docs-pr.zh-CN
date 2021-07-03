@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: fa1d88271593f0278266004d4a170a807e1cbc32
-ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
+ms.openlocfilehash: be5df165ee64a890fbf762e81668420d5d3c88de
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53222678"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287145"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -230,7 +230,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 
 若要确定存储在用户的 OneDrive 帐户或 SharePoint 中的 Microsoft Teams 会议记录，请为 **关键字查询编辑器** 指定以下内容：
 
-``` 
+```
 ProgID:Media AND ProgID:Meeting
 ```
 

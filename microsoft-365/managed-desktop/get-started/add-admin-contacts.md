@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984696"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286917"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -26,12 +26,13 @@ ms.locfileid: "52984696"
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory管理Microsoft 托管桌面的访问权限
 
 Microsoft 托管桌面管理门户要求访问该门户的用户具有以下 AD Azure Active Directory (角色) 之一：
+
 - 全局管理员
 - Intune 服务管理员
 - 全局读取者
 - 服务支持管理员
 
-全局管理员必须是在组织中注册Microsoft 托管桌面。 这五个角色在管理门户中具有相同的访问权限，可以启动和查看任务。 有关在 Azure AD 中分配这些角色的信息，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
+全局管理员必须是在组织中注册Microsoft 托管桌面。 这五个角色在管理门户中具有相同的访问权限，可以启动和查看任务。 有关在 Azure AD 中分配这些角色的信息，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="admin-contact-areas-of-focus"></a>管理员重点关注的联系人区域
 
@@ -47,21 +48,21 @@ IT 技术支持 | 如果支持人员在支持区域外将用户票证Microsoft �
 
 **无论为这些联系人选择谁，都需要有知识和权威来针对您的Microsoft 托管桌面决策。** 当你载入Microsoft 托管桌面环境时，系统将提示你为本地支持人员和安全添加联系人。 
 
-提交支持请求时 [需要管理员联系人](../service-description/support.md)。 你需要有一个管理员联系人来联系支持请求的重点关注区域。 
+提交支持请求时 [需要管理员联系人](../service-description/support.md)。 你需要有一个管理员联系人来联系支持请求的重点关注区域。
 
 **添加管理员联系人**
 
-1.  登录到[Microsoft Endpoint Manager](https://endpoint.microsoft.com)。 
+1. 登录到[Microsoft Endpoint Manager](https://endpoint.microsoft.com)。
 
-2.  在 **"租户管理**"下，**查找**"Microsoft 托管桌面"部分，然后选择"**管理员联系人"。** 
+2. 在 **"租户管理**"下，**查找**"Microsoft 托管桌面"部分，然后选择"**管理员联系人"。**
 
 3. 选择“**添加**”。
 
-4.  选择 **一个焦点区域** ，然后输入联系人的信息。 
+4. 选择 **一个焦点区域** ，然后输入联系人的信息。 
 
     ![焦点区域列表，例如"其他"、"应用"和"安全"](../../media/areaoffocus.png)
 
-5. 对每个焦点区域重复上述步骤。 
+5. 对每个焦点区域重复上述步骤。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 

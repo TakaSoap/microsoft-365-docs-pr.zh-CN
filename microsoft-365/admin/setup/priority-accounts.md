@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 监视发送到或发送自对业务影响较高的帐户的失败和延迟的电子邮件。
-ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535802"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286137"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理和监视优先级帐户
 
@@ -41,11 +41,11 @@ ms.locfileid: "52535802"
 
 本主题 **中所述** 的优先级帐户保护功能仅适用于满足以下要求的组织：
 
-- Microsoft Defender for Office 365 计划 2，包括使用 Office 365 E3、Office 365 E5、Microsoft 365 E5 或 Microsoft 365 E5 安全性。
+- Microsoft Defender for Office 365 计划 2，包括Office 365 E3、Office 365 E5、Microsoft 365 E5或Microsoft 365 E5 安全性。
 
 本主题 **高级版的邮件** Flow监视功能仅适用于满足以下要求的组织：
 
-- 贵组织的许可证计数至少需要为 10，000（来自以下任一产品）或以下产品的组合：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 例如，你的组织可以拥有 3000 Office 365 E3 许可证和 8500 Microsoft 365 E5，符合条件的产品总共可以拥有 11，500 个许可证。
+- 贵组织的许可证数量至少需要为 5，000（来自以下产品之一）或以下产品的组合：Office 365 E3、Microsoft 365 E3、Office 365 E5 Microsoft 365 E5。 例如，你的组织可以具有 3,000 个 Office 365 E3 许可证，2,500 个 Microsoft 365 E5，即总计拥有 5,500 个合格产品许可证。
 - 你的组织需要拥有至少50 个 Exchange Online 月活跃用户。
 
 > [!NOTE]
@@ -57,7 +57,7 @@ ms.locfileid: "52535802"
 
 从设置页面 **添加优先级帐户**。
 
-1. 转到位于 Microsoft 365管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. 转到 上 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Microsoft 365 管理中心。
 
 2. 转到"**设置**  >  **组织知识"，** 然后选择"监视最重要的帐户 **"下的"查看"。**
 
@@ -83,7 +83,7 @@ ms.locfileid: "52535802"
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>从优先级帐户列表中删除用户
 
-1. 转到位于 Microsoft 365管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. 转到 上 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Microsoft 365 管理中心。
 
 2. 转到"**设置**  >  **组织知识"，** 然后选择"监视最重要的帐户 **"下的"查看"。**
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169588"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256527"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -70,13 +70,14 @@ ms.locfileid: "53169588"
 
 2. 选择“**新保留策略**”来开始“创建保留策略向导”，并命名新的保留策略。
 
-3. 在“**选择要应用策略的位置**” 页面上，选择 Teams 的一个或两个位置：“**Teams 频道消息**”和“**Teams 聊天**”。
-
-   请注意，对于 **Teams 频道消息**，将包括来自标准频道的消息，但不包括来自 [专用频道](/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
-
+3. 对于 **选择要应用策略的位置** 页面，请为 Teams 选择任何或所有位置:
+    - **Teams 频道消息**: 来自标准频道聊天和标准频道会议的消息，但不包括来自具有其自己策略位置的 [私人频道](/microsoftteams/private-channels)。
+    - **Teams 聊天**: 来自私人 1:1 聊天、群组聊天和会议聊天的消息。
+    - **Teams 专用频道消息**: 来自私人频道聊天和私人频道会议的消息。 此选项当前以预览版推出，如果未显示，请在几天后重试。
+    
    默认情况下，[所有团队和所有用户](#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“**选择**”和“**排除**” 选项](#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。 但是，在更改默认设置之前，请注意保留策略在配置为包含或排除邮件时删除邮件的下列影响：
     
-    - 对于群组聊天，由于聊天中包含的每个用户邮箱中都保存有邮件副本，因此未分配策略的用户将继续在电子数据展示结果中返回邮件副本。
+    - 对于群组聊天信息和私人频道信息，由于信息的副本保存在每个参加聊天的用户的邮箱中，所以在 eDiscovery 结果中会继续返回未分配策略用户的信息副本。
     - 对于未分配策略的用户，已删除的邮件将返回其 Teams 搜索结果中，但不会显示邮件内容，因为从分配给用户的策略被永久删除。
 
 4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。
@@ -182,11 +183,15 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 电子邮件和 Exchange 公用文件夹的配置信息
 
-通过在邮箱级别应用保留设置，**Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。
+通过在邮箱级别应用保留设置，**Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。 还支持共享邮箱。
 
-有关在配置 Exchange 的保留设置时应包含和排除哪些项目的详细信息，请参阅[保留和删除哪些内容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+将保留设置应用于 **所有收件人** 时，将包括所有 [非活动邮箱](create-and-manage-inactive-mailboxes.md)。 但是，如果更改此默认值并配置 [特定包含或排除](#a-policy-with-specific-inclusions-or-exclusions)，则不支持非活动邮箱，并且不会在这些邮箱中应用或排除保留设置。
 
-请注意，即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Microsoft 365 组** 位置。
+此外，资源邮箱和 Microsoft 365 组邮箱不支持 **所有收件人** 默认设置，也不支持特定包含或排除。 对于 Microsoft 365 群组邮箱，请选择 **Microsoft 365 群组** 位置。
+
+如果确实选择了要包括或排除的收件人，则可以选择通讯组和启用电子邮件的安全组。 在后台，这些组会在配置时自动展开，以选择组内用户的邮箱。 如果这些组的成员身份稍后发生更改，也不会自动更新现有保留策略。
+
+有关在为 Exchange 配置保留设置时包括和排除哪些邮箱项目的详细信息，请参阅[保留和删除哪些内容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 **Exchange 公用文件夹** 位置将保留设置应用于所有公共文件夹，并且不能在文件夹或邮箱级别应用。
 

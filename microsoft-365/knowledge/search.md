@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
-ms.author: chuckedmonson
-author: chucked
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 了解如何在 Microsoft Viva 中搜索主题。
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908061"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287253"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
 
-虽然 Viva 主题用户可以通过主题要点在网站中查找主题SharePoint，但用户也可以通过 Microsoft 搜索找到这些主题。 
+Viva 主题用户可以通过其网站中的主题SharePoint查找主题，也可以通过主题Microsoft 搜索。 
 
 ## <a name="topic-answer"></a>主题答案
 
@@ -41,13 +41,13 @@ Word、PowerPoint、Outlook 和 Excel 中的搜索结果还将在找到主题答
 
 ## <a name="acronyms"></a>首字母缩略词
 
-在 Viva 主题中，可以手动编辑主题，以包含用作备用名称的首字母 *缩写。* 这使仅通过主题首字母缩写词进行搜索的用户可以通过 Microsoft 搜索找到主题答案。
+在 Viva 主题中，可以手动编辑主题，以包含用作备用名称的首字母 *缩写。* 这样一来，仅通过主题首字母缩写词进行搜索的用户可以通过查找Microsoft 搜索。
 
-[首字母缩写词"答案](/microsoftsearch/manage-acronyms) "是 Microsoft 搜索提供的一项功能，独立于 Viva 主题进行管理。
+[首字母缩写词"答案](/microsoftsearch/manage-acronyms)"是一项通过"Microsoft 搜索"功能，它独立于 Viva 主题进行管理。
 
 ## <a name="bookmarks-and-topics"></a>书签和主题
 
-[](/microsoftsearch/manage-bookmarks)书签是一项 Microsoft 搜索功能，可帮助用户通过搜索工具快速查找重要网站和工具 (例如，在 Microsoft 365 租户外部的外部网站上使用旅行预订) 。 它们由搜索管理员在管理中心Microsoft 365创建。 
+[](/microsoftsearch/manage-bookmarks)书签是一项Microsoft 搜索功能，它可以帮助用户通过搜索工具快速查找重要网站和工具 (例如，在 Microsoft 365 租户外部的外部网站上使用旅行预订) 。 它们由搜索管理员在搜索Microsoft 365 管理中心。 
 
 对于要查找有关预订出差信息的用户：
 

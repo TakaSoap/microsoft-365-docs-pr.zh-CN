@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性配置分析器快速启动并运行 Microsoft 合规性管理器。
-ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148958"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287049"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>适用于合规性管理器的 Microsoft 合规性配置 (预览版) 
 
@@ -101,9 +101,9 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
     ```
   | Input |  国家或地区 | 
   | :------------- | :------------: |
-  | 1  | 亚太地区 |
-  | 2  | 澳大利亚 |
-  | 3  | 加拿大 |
+  | 1 | 亚太地区 |
+  | 2 | 澳大利亚 |
+  | 3 | 加拿大 |
   | 4  | 欧洲 (（不包括法国) /中东/非洲） |
   | 5  | 法国 |
   | 6  | 印度 |
@@ -167,4 +167,4 @@ MCCA 根据合规性管理器中建议的改进操作评估当前配置。 本�
 
 有关安装、设置和使用 MCCA 的更多详细信息，请参阅[GitHub](https://github.com/OfficeDev/MCCA#overview) (上的自述GitHub无需) 。
 
-有关此Windows PowerShell，请从如何使用[PowerShell 文档开始](/powershell/scripting/how-to-use-docs?view=powershell-7)。 另请参阅[Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)。
+有关此Windows PowerShell，请从如何使用[PowerShell 文档开始](/powershell/scripting/how-to-use-docs)。 另请参阅[Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell)。

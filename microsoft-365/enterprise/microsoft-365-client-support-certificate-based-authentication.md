@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 本文详细介绍了如何Microsoft 365基于证书的身份验证的客户端应用支持。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904982"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286569"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365客户端应用支持：基于证书的身份验证
 
@@ -46,12 +46,11 @@ ms.locfileid: "50904982"
 
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
->[!NOTE]
->iOS 和 Android 的边缘支持帐户添加流期间基于证书的身份验证。 对通常为 Intranet 网站的网站执行身份验证时，iOS 和 Android 边缘不支持基于证书的身份验证。 <br><br>  在此方案中，用户导航到通常 (Intranet) 网站要求用户通过证书进行身份验证的网站。 这完全不涉及新式验证，也不利用 Microsoft 身份验证库。 这是由于 iOS 的限制：iOS 阻止第三方应用访问存储证书的系统密钥链 (只有 Apple 应用和 [Safari Webview](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) 控制器可以访问系统密钥链) 。 <br><br> 由于 Edge 依赖 [WebKit](https://developer.apple.com/documentation/webkit) 框架来呈现网站，因此 Edge 无法访问系统密钥链，也无法向用户显示证书选择。 遗憾的是，这是由 Apple 的体系结构设计的。
+> [!NOTE]
+> iOS 和 Android 的边缘支持帐户添加流期间基于证书的身份验证。 对通常为 Intranet 网站的网站执行身份验证时，iOS 和 Android 边缘不支持基于证书的身份验证。 <br><br>  在此方案中，用户导航到通常 (Intranet) 网站要求用户通过证书进行身份验证的网站。 这完全不涉及新式验证，也不利用 Microsoft 身份验证库。 这是由于 iOS 的限制：iOS 阻止第三方应用访问存储证书的系统密钥链 (只有 Apple 应用和 [Safari Webview](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) 控制器可以访问系统密钥链) 。 <br><br> 由于 Edge 依赖 [WebKit](https://developer.apple.com/documentation/webkit) 框架来呈现网站，因此 Edge 无法访问系统密钥链，也无法向用户显示证书选择。 遗憾的是，这是由 Apple 的体系结构设计的。
 
 ## <a name="supported-powershell-modules"></a>支持的 PowerShell 模块
 
-- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-

@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用SharePoint Syntex解决方案识别合同文件并提取Microsoft 365数据。
-ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054496"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287349"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用SharePoint Syntex标识合同文件并提取数据
 
@@ -25,7 +25,9 @@ ms.locfileid: "53054496"
 
 ## <a name="overview-of-the-process"></a>过程概述
 
-[文档理解](document-understanding-overview.md) 使用人工智能 (AI) 模型来自动分类文件和提取信息。 从非结构化和半结构化文档提取信息时，文档理解模型也是最佳选择，其中您需要的信息未包含在表或表单（如合同）中。
+[文档理解](document-understanding-overview.md) 使用人工智能 (AI) 模型来自动分类文件和提取信息。 从非结构化和半结构化文档提取信息时，文档理解模型也是最佳选择，其中您需要的信息未包含在表或表单（如合同）中。 
+
+了解模型时，在通过光学字符识别 （OCR） 技术扫描 PDF、图像和 TIFF 文件时，包括当使用示例文件对模型进行训练时，以及针对文档库中的文件运行模型时。
 
 1. 首先，您需要查找至少五个示例文件，您可以使用这些文件对模型进行"训练"，以搜索特定于您尝试识别合同内容类型 (的特征) 。 
 

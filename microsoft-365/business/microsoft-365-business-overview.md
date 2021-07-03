@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商业高级版，这是一种订阅服务，Office应用和抵御网络威胁的高级防护。
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705514"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287619"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商业高级版概述
 
@@ -42,16 +42,16 @@ ms.locfileid: "52705514"
 
 Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”）是为员工数少于 300 人的企业提供的综合订阅服务。 它将你常用的 Office 效率类应用和服务、Microsoft Teams 等协作工具与高级安全和设备管理功能相集成。
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>观看：Microsoft 365 商业高级版
+## <a name="watch-what-is-microsoft-365-business-premium"></a>观看：什么是 Microsoft 365 商业高级版
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../business-video/index.yml)。 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../business-video/index.yml)。
 
 Microsoft 365 商业高级版最多支持 300 个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](../enterprise/index.yml)文档，以了解详细信息。
 
 有关完整的功能列表，请参阅 [Microsoft 365 商业高级版服务说明](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
-  
+
 ## <a name="small-business-security-needs"></a>小型企业安全需求
 
 业务数据可通过多种方式泄漏。 如果你使用已泄漏的凭据来登录，或在不同的设备和应用中查看组织数据，你和你的用户可能会危及组织的安全。 更具体而言，你的组织面临的风险来自：
@@ -73,17 +73,17 @@ Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
 - 实时扫描电子邮件和文档中的链接，以阻止不安全的 (保险箱链接) 。
 
-- 在沙盒环境中执行电子邮件附件的高级分析，以检测新开发的恶意软件 (保险箱附件) 。 
+- 在沙盒环境中执行电子邮件附件的高级分析，以检测新开发的恶意软件 (保险箱附件) 。
 
-- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender 中的反网络钓鱼Office 365智能) 。 
+- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender 中的反网络钓鱼Office 365智能) 。
 
-- 设置高级策略，用于禁用来自不受信任的位置的访问，或绕过受信任的位置（如办公网络）的多重身份验证（包括受信任的 IP 和条件访问的 Azure MFA）。 
+- 设置高级策略，用于禁用来自不受信任的位置的访问，或绕过受信任的位置（如办公网络）的多重身份验证（包括受信任的 IP 和条件访问的 Azure MFA）。
 
 - 在组织的所有 Windows 10 设备上强制执行恶意软件保护，并防止关键系统文件夹中的文件被勒索软件更改 (Windows Defender)
 
 **业务数据保护** 方式为：
 
-- 使用自动检测来帮助防止敏感信息（如社会安全号码或信用卡）泄漏到企业之外（数据丢失防护）。 
+- 使用自动检测来帮助防止敏感信息（如社会安全号码或信用卡）泄漏到企业之外（数据丢失防护）。
 
 - 加密敏感电子邮件，这样就可以与客户或组织外部的其他人安全地沟通。 这可确保只有预期收件人才能阅读邮件（Office 365 邮件加密）。
 

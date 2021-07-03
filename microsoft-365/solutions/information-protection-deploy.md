@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 针对数据隐私Microsoft 365如 GDPR 和加州消费者隐私法案 (CCPA) （包括 Microsoft Teams、SharePoint 和电子邮件）配置信息保护。
-ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229199"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287707"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护与Microsoft 365
 
@@ -33,6 +33,11 @@ Microsoft 365中数据类型的示例包括 Microsoft Teams 中的聊天会话�
 ![什么是数据隐私法规的信息保护](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 此外，还提供了有关数据隐私Microsoft 365、设备和威胁防护控件的使用的其他信息。
+
+观看此视频以简要了解部署流程。
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
 
 这些Microsoft 365功能可帮助您满足保护信息的条件。
 
@@ -105,3 +110,26 @@ Microsoft 365提供可用于帮助遵守数据隐私法规的标识、设备和�
 拥有使用这些功能的流程、过程和其他文档对于证明监管机构的合规性非常重要。
 
 有关详细信息，请参阅 [监视和响应组织中数据隐私事件](information-protection-deploy-monitor-respond.md)。
+
+## <a name="training-for-administrators"></a>管理员培训
+
+Microsoft Learn 中的这些培训模块可帮助你了解对信息保护非常重要的功能。
+
+
+#### <a name="information-protection"></a>信息保护
+
+|培训：|使用 Microsoft 365 保护企业信息|
+|:---|:---|
+|![Teams信息保护培训图标](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<br><br>1 小时 - Learning 路径 - 5 个模块|
+
+> [!div class="nextstepaction"]
+> [开始>](/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>身份和访问控制
+
+|培训：|使用 Azure Active Directory 提供标识和访问保护|
+|:---|:---|
+|![标识和访问培训图标](../media/protect-identity-and-access-with-microsoft-365.svg)|标识和访问学习路径涵盖了最新的身份和访问技术、用于加强身份验证的工具以及组织内有关身份保护的指南。 Microsoft 访问和身份技术使你能够保护组织的身份（无论是本地身份还是在云中），并使用户能够从任何位置安全地工作。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<br><br>2 小时 52 分钟 - Learning 路径 - 6 个模块|
+
+> [!div class="nextstepaction"]
+> [开始>](/learn/modules/m365-identity-overview/introduction/)

@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
-ms.openlocfilehash: 7c7d3ef30d376e14e033243413637cdb51ba548a
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 79298cc570f59bbd4fa48a6ba9e68e8562a519a2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148970"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287301"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
 
@@ -110,7 +110,7 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
 
 在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，以下各节定义了其中每一部分。
 
-### <a name="client"></a>客户端
+### <a name="client"></a>Client
 
 此部分定义"客户端"在卡片上的显示方式，并使用特定合约的值。
 
@@ -140,22 +140,22 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
 
 ```JSON
                         {
-                            "elmType": "div",
-                            "txtContent": "Contractor",
-                            "style": {
-                              "color": "#767676",
-                              "font-size": "12px",
-                              "margin-bottom": "2px"
-                            }
+                          "elmType": "div",
+                          "txtContent": "Contractor",
+                          "style": {
+                            "color": "#767676",
+                            "font-size": "12px",
+                            "margin-bottom": "2px"
+                          }
+                        },
+                        {
+                          "elmType": "div",
+                          "style": {
+                            "margin-bottom": "12px",
+                            "font-size": "14px"
                           },
-                          {
-                            "elmType": "div",
-                            "style": {
-                              "margin-bottom": "12px",
-                              "font-size": "14px"
-                            },
-                            "txtContent": "[$Contractor]"
-                          },
+                          "txtContent": "[$Contractor]"
+                        },
 ```
 
 ### <a name="fee-amount"></a>费用金额

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177569"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286881"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -27,7 +27,7 @@ ms.locfileid: "53177569"
 |Ready     | 完成注册前无需任何操作。        |
 |公告    | 按照工具或本文中的步骤操作，获得注册和用户的最佳体验。 *你可以完成* 注册，但在部署第一台设备之前必须修复这些问题。        |
 |未就绪 | *如果不修复这些问题，注册将失败。* 请按照工具或本文中的步骤进行解析。        |
-|错误 | 你Azure Active Directory (AD) 角色的权限不足，无法运行此检查。 |
+|Error | 你Azure Active Directory (AD) 角色的权限不足，无法运行此检查。 |
 
 > [!NOTE]
 > 此工具报告的结果仅反映设置在运行它的特定时间点的状态。 如果您稍后对 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的策略进行了任何更改，则"就绪"的项目可能会变为"未就绪"。 若要避免与Microsoft 托管桌面问题，请在更改任何策略之前检查本文中描述的特定设置。
@@ -262,14 +262,13 @@ Windows 10 Azure AD 组织的设备必须能够在 Intune 中自动注册。
 
 确保 MDM **用户作用域设置为**"部分"**或"****全部"，** 而不是"**无"。** 如果你选择 **"一些**"，请在注册后返回，然后为组选择"新式 **工作区 -** 所有 Azure AD"组，或选择面向所有用户的Microsoft 托管桌面组。   请参阅[使用 Windows 设置设备注册Microsoft Intune。](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
-
 ### <a name="ad-hoc-subscriptions"></a>临时订阅
 
 建议如何检查设置，如果 (设置为"false"，) 可能会Enterprise状态漫游正常工作。
 
 **公告**
 
-确保 **AllowAdHocSubscriptions** 设置为 **True**。 否则，Enterprise状态漫游可能不起作用。 有关详细信息，请参阅 [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+确保 **AllowAdHocSubscriptions** 设置为 **True**。 否则，Enterprise状态漫游可能不起作用。 有关详细信息，请参阅 [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings)。
 
 
 ### <a name="enterprise-state-roaming"></a>企业状态漫游

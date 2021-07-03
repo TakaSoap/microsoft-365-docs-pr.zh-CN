@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256719"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287535"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -128,12 +128,14 @@ ms.locfileid: "53256719"
 ### <a name="checksum-validator"></a>校验和验证程序
 
 如果需要对正则表达式中的数字运行校验和，可以使用 *校验和验证程序*。 例如，假设你需要为八位数的许可证号码创建 SIT，其中最后一个数字是校验和数字，使用 mod 9 计算进行验证。 你已设置校验和算法，如下所示：
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value ！= digit 8 Account number is invalid
 
 1. 定义具有此正则表达式的主元素：
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. 然后添加校验和验证程序。
 3. 添加用逗号分隔的权重值、检查数字的位置和 Mod 值。 有关 Modulo 操作详细信息，请参阅 [Modulo 操作](https://en.wikipedia.org/wiki/Modulo_operation)。
@@ -145,11 +147,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>日期验证程序
 
-如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。 
+如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。
 
 1. 定义具有此正则表达式的主元素：
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. 然后添加日期验证程序。
 3. 选择日期格式和开始偏移。 由于日期字符串是前六个数字，因此偏移量是 `0` 。
@@ -182,7 +186,7 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 
 > [!NOTE]
-> Microsoft 365信息保护支持双字节字符集语言，
+> Microsoft 365 信息保护支持双字节字符集语言，用于:
 > - 简体中文
 > - 繁体中文
 > - 韩语
@@ -191,7 +195,7 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 >此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 
 > [!TIP]
-> 若要检测包含中文/日语字符和单个字节字符的模式，或检测包含中文/日语和英语的模式，请定义关键字或正则表达式的两个变体。 例如，若要检测关键字（如"添加的关键字"，请使用关键字的两个变体;一个在日语和英语文本之间带空格，另一个在日语和英语文本之间没有空格。 因此，要添加到 SIT 中的关键字应为"添加的 document"和"添加的 document"。 同样，若要检测短语"オリピック2020"，应该使用两个变量;"オリオリピック 2020"和"オリピック2020"。
-> 在使用双字节连字符或双字节周期创建正则表达式时，请确保转义这两个字符，就像在正则表达式中转义连字符或周期一样。 下面是示例正则表达式，仅供参考：
-    -  (？<！\d)  ([4][0-9] {3} [ \- ？\-\t]*[0-9]{4}
-> 我们建议在关键字列表中使用字符串匹配而不是单词匹配。
+> 若要检测含有中文/日文字符和单字节字符的模式，或检测含有中文/日文和英文的模式，则需要定义两个变体的关键词或词组。 例如，若要检测像“机密的文件”这样的关键词，则要使用该关键词的两个变体; 一个是在日语和英语文本之间有空格，另一个是在日语和英语文本之间没有空格。 因此，在 SIT 中要添加的关键词应该是“机密的 文档”和“机密的文档”。 同样，若要检测短语 "東京オリンピック2020"，则应该使用两个变体;“東京オリンピック 2020”和“東京オリンピック2020”。
+> 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。 此处有一个示例的 regex 供参考:
+    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> 建议在关键词列表中使用字符串匹配而不是单词匹配。

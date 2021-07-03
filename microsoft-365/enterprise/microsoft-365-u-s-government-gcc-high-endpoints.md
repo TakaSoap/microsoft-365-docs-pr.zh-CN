@@ -1,5 +1,5 @@
 ---
-title: Office 365美国政府高级GCC终结点
+title: Office 365 美国政府 GCC High 终结点
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,24 +20,29 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 本文将介绍使用美国政府高级计划Office 365客户GCC终结点。
 hideEdit: true
-ms.openlocfilehash: da721d7d0a8965c4dea9bc812df755f19e69ea55
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 2febfec744dfb527dd99b205f3b2b78f5b9af4e7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730158"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286353"
 ---
-# <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365美国政府高级GCC终结点
+# <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 美国政府 GCC High 终结点
 
- *适用于：Office 365 Admin*
+*适用于：Office 365 Admin*
 
-Office 365需要连接到 Internet。 以下终结点应仅适用于使用美国政府高级Office 365计划GCC客户。
+Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美国政府高级Office 365计划GCC客户。
   
- **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md) | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](microsoft-365-germany-endpoints.md)  | [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) | *Office 365 美国政府版 GCC High* |
-  
-|||
-|:-----|:-----|
-|**上次更新时间** ：2021/05/28 - ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：JSON** 格式 [的完整列表](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+ **Office 365** 终结点：全球 (包括 Office 365 [GCC) 由](urls-and-ip-address-ranges.md) \| [21 Vianet](urls-and-ip-address-ranges-21vianet.md) Office 365 Germany Office 365 美国政府 doD Office 365 美国政府 \| [](microsoft-365-germany-endpoints.md) \| [doD](microsoft-365-u-s-government-dod-endpoints.md) \|  GCC 运营的 GCC
+
+<br>
+
+****
+
+|注释|下载|
+|---|---|
+|**上次更新时间：** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：JSON** 格式 [的完整列表](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|
 
  通过 [管理 Office 365 终结点](managing-office-365-endpoints.md) 开始，以了解我们针对使用此数据管理网络连接性的建议。 在每月开始时，以活动前 30 天发布的新 IP 地址和 URL 按需更新终结点数据。 这使尚未自动更新的客户可以在需要新连接前完成其流程。 如果需要解决支持升级、安全事故或其他紧急操作需求，也可在当月更新终结点。 此页下方显示的数据全部基于 REST 的 web 服务生成。 如果正在使用脚本或网络设备访问此数据，应直接转到 [Web 服务](microsoft-365-ip-web-service.md)。
 
@@ -54,9 +59,9 @@ Office 365需要连接到 Internet。 以下终结点应仅适用于使用美国
 - **ER：** 如果终结点 **集通过** 具有路由前缀的 Azure ExpressRoute Office 365是。 包含显示的路由前缀的 BGP 社区与列出的服务区域一致。 当 ER 为 **否** 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定没有为 ER 为 No 的终结点集播发 **路由**。 如果你计划使用 Azure AD 连接，请阅读特殊的注意事项部分[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)，以确保你拥有适当的 Azure AD 连接配置。
 
 - **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
- 
+
 - **端口**：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
- 
+
 [!INCLUDE [Office 365 U.S. Government GCC High endpoints](../includes/office-365-u.s.-government-gcc-high-endpoints.md)]
 
 关于此表的注释：

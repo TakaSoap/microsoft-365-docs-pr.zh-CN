@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105682"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286953"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
@@ -36,28 +36,25 @@ ms.locfileid: "53105682"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
-
 > [!NOTE]
 > 若要使用组策略 (GP) 更新来部署程序包，必须在 Windows Server 2008 R2 或更高版本上。
-> 
+>
 > 对于 Windows Server 2019，您可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
 
 ## <a name="onboard-devices-using-group-policy"></a>使用组策略载入设备
 
 [![显示各种部署路径的 PDF 图像](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。 
-
-
+请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
 1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
- 
+
     1. 在导航窗格中，选择 **"设置**  >  **载入"。**
 
     1. 选择Windows 10操作系统。
-    
+
     1. 在"**部署方法"** 字段中，选择"**组策略"。**
-    
+
     1. 单击 **下载程序包** 并保存.zip文件。
 
 2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *WindowsDefenderATPOnboardingScript.cmd*。
@@ -76,7 +73,7 @@ ms.locfileid: "53105682"
 
 9. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
 
->[!TIP]
+> [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>其他 Defender for Endpoint 配置设置
@@ -85,31 +82,31 @@ ms.locfileid: "53105682"
 可以使用组策略 (GP) 配置设置，如深入分析功能中使用的示例共享的设置。
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
-1.  在 GP 管理设备上，从配置包复制以下文件：
+
+1. 在 GP 管理设备上，从配置包复制以下文件：
 
     - 将 _AtpConfiguration.admx_ 复制到 _\\ C：Windows \\ PolicyDefinitions_
 
     - 将 _AtpConfiguration.adml_ 复制到 _\\ C：Windows \\ PolicyDefinitions \\ en-US_
 
     如果对组策略管理模板使用中央存储 [，](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)请从配置包中复制以下文件：
-    
+
     - 将 _AtpConfiguration.admx_ 复制到 _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ 策略 \\ 策略Definitions_
 
     - 将 _AtpConfiguration.adml_ 复制到 _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ 策略 \\ 策略Definitions \\ en-US_
 
-2.  打开组 [策略管理控制台，](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)右键单击要配置的 GPO， **然后单击编辑**。
+2. 打开组 [策略管理控制台，](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)右键单击要配置的 GPO， **然后单击编辑**。
 
-3.  在组 **策略管理编辑器中**，转到计算机 **配置**。
+3. 在组 **策略管理编辑器中**，转到计算机 **配置**。
 
-4.  单击 **"策略**"，然后单击 **"管理模板"。**
+4. 单击 **"策略**"，然后单击 **"管理模板"。**
 
-5.  单击 **Windows组件**"，然后单击Windows Defender **SmartScreen"。**
+5. 单击 **Windows组件**"，然后单击Windows Defender **SmartScreen"。**
 
-6.  选择从设备启用或禁用示例共享。
+6. 选择从设备启用或禁用示例共享。
 
->[!NOTE]
+> [!NOTE]
 > 如果未设置值，则默认值为启用示例集合。
-
 
 ## <a name="other-recommended-configuration-settings"></a>其他建议的配置设置
 
@@ -121,50 +118,49 @@ ms.locfileid: "53105682"
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-Policy | 设置 
+Policy | Setting
 :---|:---
-Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例集合"
+Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集合"
 
-<br/>
+<br>
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-Policy | 设置 
+Policy | Setting
 :---|:---
 配置对可能不需要的应用程序的检测 | 已启用、阻止
 
-<br/>
+<br>
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-Policy | 设置 
+Policy | Setting
 :---|:---
 加入 Microsoft MAPS | 已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
 
-<br/>
+<br>
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy | 设置 
+Policy | Setting
 :---|:---
 关闭实时保护|禁用
 打开行为监视|已启用
 扫描所有下载的文件和附件|已启用
 监视您的计算机上的文件和程序活动|已启用
 
-<br/>
+<br>
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Scan
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy | 设置 
+Policy | Setting 
 :---|:---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
-
-<br/>
+<br>
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Attack Surface Reduction
 
@@ -182,15 +178,12 @@ Policy | 设置
 
    ![攻击面减少配置的图像](images/asr-guid.png)
 
-
-
-Policy | 设置 
+Policy | Setting
 :---|:---
 配置受控文件夹访问权限| 已启用，审核模式
 
-
-
 ## <a name="offboard-devices-using-group-policy"></a>使用组策略的载出设备
+
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
@@ -201,7 +194,7 @@ Policy | 设置
     1. 在导航窗格中，选择 **"设置**  >  **载"。**
 
     1. 选择Windows 10操作系统。
-    
+
     1. 在"**部署方法"** 字段中，选择"**组策略"。**
 
     1. 单击 **下载程序包** 并保存.zip文件。
@@ -225,11 +218,12 @@ Policy | 设置
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
 
-
 ## <a name="monitor-device-configuration"></a>监视设备配置
+
 借助组策略，无法监视设备上策略的部署。 可以直接在门户上或使用不同的部署工具进行监视。
 
 ## <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
+
 1. 转到["Microsoft Defender 安全中心"。](https://securitycenter.windows.com/)
 2. 单击 **"设备列表"。**
 3. 验证设备是否显示。
@@ -237,8 +231,8 @@ Policy | 设置
 > [!NOTE]
 > 设备可能需要几天时间才能开始在 **"设备"列表上显示**。 这包括将策略分发到设备所花的时间、用户登录之前所花的时间以及终结点开始报告所花的时间。
 
-
 ## <a name="related-topics"></a>相关主题
+
 - [使用Windows 10载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)

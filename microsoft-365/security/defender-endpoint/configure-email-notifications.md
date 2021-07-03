@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933945"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286929"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
@@ -31,7 +31,7 @@ ms.locfileid: "51933945"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 你可以将 Defender for Endpoint 配置为向指定收件人发送电子邮件通知，以接收新警报。 此功能使你能够识别将立即获得通知的一组个人，并可以基于其严重性对警报采取行动。
 
@@ -46,7 +46,6 @@ ms.locfileid: "51933945"
 
 电子邮件通知包括有关警报的基本信息和指向门户的链接，可在其中执行进一步调查。
 
-
 ## <a name="create-rules-for-alert-notifications"></a>创建警报通知规则
 可以创建规则，以确定要发送电子邮件通知的设备以及通知收件人的警报严重性。
 
@@ -60,15 +59,15 @@ ms.locfileid: "51933945"
     - **包含组织** 名称 - 指定电子邮件通知上显示的客户名称。
     - **包含特定于租户的门户链接** - 添加包含租户 ID 的链接，以允许访问特定租户。
     - **包括设备信息** - 在电子邮件警报正文中包含设备名称。
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > 此信息可能由不在你为 Defender for Endpoint 数据选择的地理位置中的收件人邮件服务器进行处理。
 
     - **设备** - 选择是通知收件人有关所有设备上警报 (全局管理员角色) 或所选设备组。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
     - **警报严重性** - 选择警报严重性级别。
 
-4. 点击 **“下一步”**。
-    
+4. 点击“**下一步**”。
+
 5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可添加多个电子邮件地址。
 
 6. 选中"发送测试电子邮件"，检查电子邮件收件人是否 **可接收电子邮件通知**。
@@ -76,12 +75,12 @@ ms.locfileid: "51933945"
 7. 单击 **"保存通知规则"。**
 
 ## <a name="edit-a-notification-rule"></a>编辑通知规则
+
 1. 选择要编辑的通知规则。
 
 2. 更新"常规"和"收件人"选项卡信息。
 
 3. 单击 **"保存通知规则"。**
-
 
 ## <a name="delete-notification-rule"></a>删除通知规则
 
@@ -89,8 +88,8 @@ ms.locfileid: "51933945"
 
 2. 单击“删除”。
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>警报电子邮件通知疑难解答
+
 本节列出了在使用电子邮件通知发出警报时可能遇到的各种问题。
 
 **问题：** 目标收件人报告他们未收到通知。
@@ -102,5 +101,6 @@ ms.locfileid: "51933945"
 3. 检查可能捕获和移动 Defender for Endpoint 电子邮件通知的电子邮件应用程序规则。
 
 ## <a name="related-topics"></a>相关主题
+
 - [更新数据保留设置](data-retention-settings.md)
 - [配置高级功能](advanced-features.md)

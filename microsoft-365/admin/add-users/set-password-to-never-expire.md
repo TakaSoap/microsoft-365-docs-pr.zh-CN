@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 登录你的 Microsoft 365 管理员帐户，使用密码将一些个人用户密码设置为永不Windows PowerShell。
-ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635554"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286257"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>设置单个用户的密码永不过期
 
@@ -35,11 +35,11 @@ ms.locfileid: "52635554"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md) 
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
-Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerShell Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)设置特定用户的密码永不过期。 您还可以使用 [AzureAD](/powershell/module/Azuread) cmdlet 删除永不过期的配置或查看将哪些用户密码设置为永不过期。
+Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerShell Graph](/powershell/azure/active-directory/install-adv2)设置特定用户的密码永不过期。 您还可以使用 [AzureAD](/powershell/module/Azuread) cmdlet 删除永不过期的配置或查看将哪些用户密码设置为永不过期。
 
 本指南适用于其他提供程序，如 Intune 和 Microsoft 365，这些提供程序还依赖 Azure AD 提供标识和目录服务。 密码过期是策略中唯一可以更改的部分。
 
@@ -48,7 +48,7 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何检查密码的过期策略
 
-有关 AzureAD 模块中的 Get-AzureADUser 命令，请参阅参考文章 [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
+有关 AzureAD 模块中的 Get-AzureADUser 命令，请参阅参考文章 [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser)。
 
 运行下列命令之一：
 
@@ -66,7 +66,7 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     }
-    ```  
+    ```
 
 - 若要查看 **所有用户的"密码永不** 过期"设置，请运行以下 cmdlet：
 
@@ -82,7 +82,7 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
-    ```  
+    ```
 
 - 获取当前用户桌面上 CSV 中 PasswordNeverExpires 的所有用户的报告，并ReportPasswordNeverExpires.csv
 
@@ -128,6 +128,6 @@ Run one of the following commands:
 
 ## <a name="related-content"></a>相关内容
 
-[允许用户重置自己的密码， (](../add-users/let-users-reset-passwords.md) 文章) \
-[重置密码 (](../add-users/reset-passwords.md) 文章) \
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
+[重置密码](../add-users/reset-passwords.md)（文章）\
 [为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 
