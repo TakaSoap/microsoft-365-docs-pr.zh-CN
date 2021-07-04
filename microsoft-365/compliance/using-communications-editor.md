@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 在设置内容格式时，使用通信编辑器更改文本和合并字段变量。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769157"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288115"
 ---
 # <a name="use-the-communications-editor"></a>使用通信编辑器
 
@@ -40,11 +40,15 @@ You can use email merge fields by selecting the **Merge field** icons on the top
 
 ### <a name="list-of-merge-field-variables"></a>合并域变量列表
 
-| 字段名                  | 字段详细信息 |
-| :------------------- | :------------------- |
-| 显示名称  | 保管人的名字和姓氏。 | 
-| Acknowledgment 链接 | 用于记录每个保管人确认的自定义链接。|                 |
-| 门户链接     | 保管人合规性门户的自定义链接。|                |
-| 颁发官                   | 指定颁发机构主管的电子邮件地址。|                   |
-| 颁发日期                   | 通知的发布日期为 UTC () 。              |
-|||
+<br>
+
+****
+
+|字段名|字段详细信息|
+|---|---|
+|显示名称|保管人的名字和姓氏。|
+|Acknowledgment 链接|用于记录每个保管人确认的自定义链接。|
+|门户链接|保管人合规性门户的自定义链接。|
+|颁发官|指定颁发机构主管的电子邮件地址。|
+|颁发日期|通知的发布日期为 UTC () 。|
+|

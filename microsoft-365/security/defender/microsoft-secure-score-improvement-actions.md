@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246389"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288451"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
 
@@ -36,9 +35,9 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 为了帮助您更快找到所需的信息，Microsoft 改进操作分为以下组：
 
-* 标识 (Azure Active Directory角色&角色) 
-* Device (For Endpoint 的 Microsoft Defender，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
-* 应用 (电子邮件和云应用，包括Office 365和Microsoft Cloud App Security) 
+- 标识 (Azure Active Directory角色&角色) 
+- Device (For Endpoint 的 Microsoft Defender，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
+- 应用 (电子邮件和云应用，包括Office 365和Microsoft Cloud App Security) 
 
 >[!NOTE]
 >在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
@@ -106,7 +105,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 名为" **概览"的部分** 将告诉您类别、可以抵御的攻击和产品。
 
-**用户** 影响是用户在执行改进操作时将体验到的影响，受影响用户是将受到影响的用户。
+**用户** 影响是用户在执行改进操作时将体验的影响，受影响用户是将受到影响的用户。
 
 ### <a name="implement-the-improvement-action"></a>实施改进操作
 

@@ -20,20 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将了解如何使用 PowerShell for Microsoft 365管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 823c5fdc9af178a2e8ea8f0ca4c63fbfa4673dd8
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916722"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289051"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 用户和组
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-如果你是使用SharePoint或组的大型列表的联机管理员，并且希望使用更简单的方式来管理它们，可以使用 PowerShell 进行Microsoft 365。 
+如果你是使用SharePoint或组的大型列表的联机管理员，并且希望使用更简单的方式来管理它们，可以使用 PowerShell 进行Microsoft 365。
 
-在开始之前，本主题中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[连接 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+在开始之前，本主题中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[连接 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>获取网站、组和用户的列表
 
@@ -115,6 +115,7 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
+
 以后可以使用 cmdlet 更新组属性，如权限 `Set-SPOSiteGroup` 级别。
 
 例如，让我们向 contoso 租赁中的 contosotest 网站集添加具有"仅查看"权限的审核员组：
@@ -131,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 有时必须从某个网站甚至是所有网站删除用户。员工可能从一个部门转移到另一个部门，或离开公司。在 UI 中可以很容易地对一个员工进行这样的操作，但如果是将整个部门从一个网站移动到另一个网站，这并非易事。
 
-但是，通过使用 SharePoint命令行管理程序和 CSV 文件，这非常简单快捷。 在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。 然后使用 CSV 文件从不同的网站删除大量用户。 
+但是，通过使用 SharePoint命令行管理程序和 CSV 文件，这非常简单快捷。 在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。 然后使用 CSV 文件从不同的网站删除大量用户。
 
 我们将使用"Remove-SPOUser"cmdlet 从网站集组中删除单个 Microsoft 365 用户，以便我们可以看到命令语法。 语法如下所示：
 
@@ -142,6 +143,7 @@ $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
+
 例如，让我们从 contoso 租赁的 contosotest 网站集中的网站集审核员组中删除一个为"一名"的"一名"。
 
 ```powershell
@@ -167,7 +169,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 若要向网站添加大量帐户SharePoint授予权限，可以使用 Microsoft 365 管理中心、单个 PowerShell 命令或 PowerShell CSV 文件。 在这些选择中，CSV 文件是自动执行此任务的最快方法。
 
-基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。 你可以轻松地在列表中创建此类Excel，然后导出为 CSV 文件。 然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。 
+基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。 你可以轻松地在列表中创建此类Excel，然后导出为 CSV 文件。 然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。
 
 例如，让我们创建一个 CSV 文件来定义一组网站集、组和权限。 接下来将创建一个 CSV 文件，将用户填充到组中。 最后，要创建并运行一个简单的 Windows PowerShell 脚本，此脚本将创建并填充组。
 
@@ -275,13 +277,13 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 ```
 
 此报告相当简单，你可以添加更多代码以创建更多特定报告或包括更多详细信息的报告。 但是，这应该让你了解如何使用 SharePoint Online 命令行管理程序在 SharePoint Online 环境中管理用户。
-   
+
 ## <a name="see-also"></a>另请参阅
 
-[连接到 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[连接到 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 [使用 PowerShell 管理 SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)

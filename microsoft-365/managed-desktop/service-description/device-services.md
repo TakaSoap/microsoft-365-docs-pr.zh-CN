@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f0eb20d59f1708bc1e3bd56e56ada40cd7058dca
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 6a4321f48ba5b8e012d1a3a4fd67dd4f05566048
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924843"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287899"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 托管桌面设备服务
 
@@ -28,12 +28,13 @@ Microsoft 将为这些设备提供Microsoft 托管桌面服务。 有关推荐�
 支持|支持代理将回答与设备功能直接相关的问题并诊断设备问题。
 库存|在管理门户中跟踪所有Microsoft 托管桌面清单和状态跟踪。
 固件/驱动程序更新|默认情况下，Microsoft 托管桌面接收来自更新的固件和驱动程序Windows更新。 并非所有硬件合作伙伴都通过 Windows Update 部署其更新。 未作为自动发布的更新需要例外，并且必须由客户部署。
-附件|设备随设备一起提供的设备所涵盖的服务与设备本身相同，但担保条款可能有所不同。 请参阅选择设备时选择的担保条款。 设备设置|设备将预配置当前版本的 Windows通过云接收其应用和配置。 
+附件|设备随设备一起提供的设备所涵盖的服务与设备本身相同，但担保条款可能有所不同。 请参阅选择设备时选择的担保条款。 设备设置|设备将预配置当前版本的 Windows通过云接收其应用和配置。
 
 有关设备更换、升级和支持条款的信息，请参阅你与设备提供商的协议和担保条款。
 
 有关 Surface 保证和修复的信息：
-- [Surface for Business 帮助中心](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+
+- [Surface 商用版帮助中心](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [设备的保证、扩展服务计划以及条款和条件](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 

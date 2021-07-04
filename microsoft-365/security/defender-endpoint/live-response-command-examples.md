@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007065"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289327"
 ---
 # <a name="live-response-command-examples"></a>实时响应命令示例
 
@@ -38,8 +38,7 @@ ms.locfileid: "53007065"
 
 根据已授予的角色，可以运行基本或高级实时响应命令。 有关基本命令和高级命令详细信息，请参阅使用实时响应 [调查设备上的实体](live-response.md)。
 
-
-## <a name="analyze"></a>analyze 
+## <a name="analyze"></a>analyze
 
 ```console
 # Analyze the file malware.txt
@@ -110,12 +109,12 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > 无法使用此命令 **从** 实时响应中下载以下文件类型：
 >
-> * [重新分析点文件](/windows/desktop/fileio/reparse-points/)
-> * [稀疏文件](/windows/desktop/fileio/sparse-files/)
-> * 空文件
-> * 虚拟文件或在本地未完全呈现的文件
+> - [重新分析点文件](/windows/desktop/fileio/reparse-points/)
+> - [稀疏文件](/windows/desktop/fileio/sparse-files/)
+> - 空文件
+> - 虚拟文件或在本地未完全呈现的文件
 >
-> PowerShell **支持** 这些 [文件类型](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)。
+> PowerShell **支持** 这些 [文件类型](/powershell/scripting/overview)。
 >
 > 如果遇到在实时响应中使用此命令时遇到问题，请使用 PowerShell 作为备选方法。
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>processes
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > 对于长时间运行的命令（如 **"run"** 或 **"getfile"，** 您可能需要在命令末尾使用""符号在后台 **&** 执行该操作。
 > 这将允许你在使用 **'fg'** 基本命令完成时继续调查计算机并返回到 [后台命令](live-response.md#basic-commands)。
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>undo
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

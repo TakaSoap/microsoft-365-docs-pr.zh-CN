@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解Microsoft 365目录，包括其中包含的内容、如何获取它以及您的下一步。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114420"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288295"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -24,7 +24,7 @@ ms.locfileid: "52114420"
 
 Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮助您管理端到端合规性方案。 解决方案的功能和工具可能包括策略、警报、报表等的组合。
 
-阅读本文，了解 Microsoft 365 合规中心中的新解决方案目录、如何获取、常见问题以及您的下[](#how-do-i-get-this)一[步步骤](#next-steps)。 [](#frequently-asked-questions)
+阅读本文以熟悉 Microsoft 365 合规中心 中的新解决方案目录、如何获取、常见问题以及您的[下一步](#next-steps)。 [](#how-do-i-get-this) [](#frequently-asked-questions)
 
 ## <a name="catalog-organization"></a>目录组织
 
@@ -84,11 +84,11 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 首先，请确保你拥有相应的许可证和权限。 然后，以全局管理员 [https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员的登录名登录。
 
-**解决方案目录页面中列出的某些合规性功能在 Microsoft 365中心不可用。我该怎么办？**
+**解决方案目录页面上列出的某些合规性功能在解决方案目录中Microsoft 365 合规中心。我该怎么办？**
 
-我们始终致力于将新功能添加到 Microsoft 365合规中心和解决方案目录中。 如果在导航区域中找不到特定解决方案，则当解决方案在你的订阅中可用时可以访问它。
+我们一直在致力于将新功能添加到 Microsoft 365 合规中心 和解决方案目录中。 如果在导航区域中找不到特定解决方案，则当解决方案在你的订阅中可用时可以访问它。
 
-如果要查找现有的合规性解决方案，但该解决方案尚未在 Microsoft 365 合规中心提供，则始终可以通过访问 访问现有安全与合规中心 &amp; 中的解决方案 [https://protection.office.com](https://protection.office.com) 。 或者，你可以单击合规性中心左侧导航中的"更多资源"选项卡Microsoft 365选择"Office 365安全与合规中心"卡。  
+如果要查找现有的合规性解决方案，但该解决方案尚未在 Microsoft 365 合规中心中提供，则始终可以通过访问 访问现有安全与合规中心 &amp; 中的解决方案 [https://protection.office.com](https://protection.office.com) 。 或者，你可以单击页面左侧导航栏中的"更多资源"选项卡Microsoft 365 合规中心并选择"Office 365安全与合规中心"卡。  
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -98,7 +98,7 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 - **了解并创建通信合规性策略** ，以快速识别和修正公司行为准则违反策略的行为。 请参阅 [通信合规性](communication-compliance.md)。
 
-- **Microsoft 信息保护**，了解Microsoft 365解决方案如何帮助你发现、分类和保护敏感信息，无论它身在何处或身在何处。
+- **Microsoft 信息保护**，了解Microsoft 365解决方案如何帮助您发现、分类和保护敏感信息（无论它身在何处或出差）。
     - **熟悉并设置Microsoft Cloud App Security。** 请参阅[快速入门：Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security)
     - **分类器入门**。 对内容进行分类，然后标记内容以便进行保护并正确处理内容是信息保护规范的起点。 请参阅[了解可训练分类器 (预览) 。 ](classifier-learn-about.md)
 

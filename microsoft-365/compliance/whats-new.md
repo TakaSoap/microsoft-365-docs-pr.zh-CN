@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228455"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288127"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -201,7 +201,7 @@ Outlook版本和更新：
 - [了解Microsoft 365数据丢失防护本地扫描程序](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [数据丢失防护本地扫描程序入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [创建 DLP 策略来保护具有 FCI 或其他属性的文档](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [使用端点数据丢失防护](/microsoft-365/compliance/endpoint-dlp-using)
+- [使用终结点数据丢失防护](/microsoft-365/compliance/endpoint-dlp-using)
 - [终结点数据丢失防护入门](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>电子数据展示
@@ -242,7 +242,7 @@ Outlook版本和更新：
 - [了解敏感信息类型](/microsoft-365/compliance/sensitive-information-type-learn-about)
 - [使用 PowerShell 创建自定义敏感信息类型](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [使用基于精确数据匹配的分类创建自定义敏感信息类型](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [敏感信息类型实体定义](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [敏感信息类型属性定义](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

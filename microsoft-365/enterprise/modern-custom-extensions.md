@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化自定义扩展的性能。
-ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923049"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288943"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化自定义扩展的性能
 
@@ -55,7 +55,8 @@ ms.locfileid: "50923049"
 - **Total** 显示模块加载和初始化扩展的总时间。 它是扩展在页面上从开始到结束执行所花时间的总相对时间。
 - **模块** 加载显示下载、评估和加载扩展 JavaScript 和 CSS 文件所花时间。 然后，它将启动 Init 进程。
 - **Init** 显示扩展初始化数据所花时间。
-    它是异步调用，init 时间是返回的承诺解析时 onInit 函数的时间计算。
+
+  它是异步调用，init 时间是返回的承诺解析时 onInit 函数的时间计算。
 
 提供此信息是为了帮助设计人员和开发人员解决问题。 此信息应提供给你的设计和开发团队。
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft SharePoint整合采用：入门
-description: 了解如何在组织中使用SharePoint Syntex，以帮助你解决业务问题。
+title: Microsoft SharePoint Syntex采用：入门
+description: 了解如何在组织中使用和实施SharePoint Syntex，以帮助你解决业务问题。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -14,26 +14,26 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698972"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288151"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint整合采用：入门
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex采用：入门
 
-将 Syntex 中提供的智能SharePoint视为具有三个部分：
+将企业提供的智能内容服务SharePoint Syntex三个部分：
 
 - **内容了解：** 创建无代码 AI 模型以对内容进行分类和提取信息，以自动应用元数据进行知识发现和重用。 了解有关内容 [理解的更多信息](document-understanding-overview.md)。
 - **内容处理：** 自动捕获、获取和分类内容，并简化使用 Power Automate 以内容为中心的Power Automate。 详细了解内容 [处理](form-processing-overview.md)。
-- **内容合规性：** 控制和管理内容，以改进与 Microsoft 信息保护的集成的安全性和管理。
+- **内容合规性：** 控制和管理内容，以改进安全性和管理，并集成Microsoft 信息保护。
 
-借助新的 AI 服务和功能，可以使用 Syntex 将内容理解和分类应用直接构建到内容SharePoint流中。 有两种不同的内容理解方式。 使用的模型类型基于文件格式和用例：
+借助新的 AI 服务和功能，你可以直接将内容理解和分类应用构建到内容管理流中，SharePoint Syntex。 有两种不同的内容理解方式。 使用的模型类型基于文件格式和用例：
 
 | 表单处理 | 文档理解 |
 |:-------|:-------|
-| 从文档库创建。 | 在内容中心内创建，属于SharePoint部分。 |
+| 从文档库创建。 | 在内容中心内创建，属于SharePoint Syntex。 |
 | 在 AI 生成器中创建的模型。 | 在本机接口中创建的模型。 |
 | 用于半结构化文件格式。 | 用于非结构化文件格式。 |
 | 可设置的分类器。 | 带可选提取器、可训练分类器。 |
@@ -44,12 +44,12 @@ ms.locfileid: "52698972"
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>确定要优化的试点业务方案
 
-若要准备在SharePoint使用 Syntex，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方构建组织。 下面是一些文档理解方案，可帮助您的组织：
+要准备在SharePoint Syntex中使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方构建组织。 下面是一些文档理解方案，可帮助您的组织：
 
 - **内容处理：** 处理合同、工作声明和其他类似表单的文档。 输入表单，训练模型以了解和映射字段，然后运行表单以自动收集数据。 有关详细信息，请参阅表单 [处理概述](form-processing-overview.md)。
 - **发票分析：** 从发票中拉出相关详细信息，并确保它们符合策略或正在适当处理。
 
-考虑使用 SharePoint 可帮助你的组织的方法：
+考虑一下SharePoint Syntex组织的方式：
 
 - 自动化业务流程
 - 提高搜索准确度
@@ -64,13 +64,13 @@ ms.locfileid: "52698972"
 
 根据影响和实现方便性确定方案优先级。 使初始的重点关注区域具有更高的影响，这些应用场景也可以轻松实现。 取消难以实现的影响较低的方案的优先级。
 
-使用[示例方案和用例来](adoption-scenarios.md)提示你了解如何在组织中SharePoint Syntex。
+使用[示例方案和用例来](adoption-scenarios.md)提示有关如何在组织中使用SharePoint Syntex的想法。
 
 ## <a name="identify-roles--responsibilities"></a>确定角色&职责
 
 确定贵组织中谁将构建和管理模型？ 可能会涉及以下角色：
 
-| SharePoint/知识管理员 | Power Platform 管理员 | 知识经理 | 模型所有者 |
+| SharePoint/知识管理员 | Power 平台管理员 | 知识经理 | 模型所有者 |
 |:-------|:-------|:-------|:-------|
 | AAD 角色| AAD 角色 | AAD 角色 | 支持者 |
 | 配置表单处理 | 配置用于表单处理的常见数据服务环境 | 收集用例 | 收集业务用例 |
@@ -86,7 +86,7 @@ ms.locfileid: "52698972"
 
 ## <a name="strategic-positioning"></a>战略定位
 
-与利益干系人合作，确保他们在使用 Syntex SharePoint一致。 研究和提供以下资源来帮助实现此定位：
+与利益干系人合作，确保他们符合使用 SharePoint Syntex。 研究和提供以下资源来帮助实现此定位：
 
 - 业务成果：
   - 潜在的财务结果
@@ -116,7 +116,7 @@ ms.locfileid: "52698972"
 
 ## <a name="readiness-checklist"></a>准备情况清单
 
-若要准备好实现 SharePoint，你需要：
+若要准备好实现SharePoint Syntex，您需要：
 
 ![内容理解的准备情况](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "52698972"
     - 任何现有内容类型是否适合模型？
     - 元数据将改进哪些现有进程？
 3. 设计
-    - 设计信息体系结构、托管元数据和内容类型的方法
+    - 设计信息体系结构、托管元数据和内容类型的方法。
     - 设计定义、创建、管理过程。
 
 ## <a name="engage-your-organization"></a>参与你的组织
@@ -146,4 +146,4 @@ ms.locfileid: "52698972"
 
 ## <a name="see-also"></a>另请参阅
 
-[用于 Syntex 的方案SharePoint用例](adoption-scenarios.md)
+[应用场景和SharePoint Syntex](adoption-scenarios.md)

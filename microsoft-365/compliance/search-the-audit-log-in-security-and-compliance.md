@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809139"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287499"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
 需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用 Microsoft 365 合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Microsoft 365 中搜索以下类型的[用户和管理员活动](#audited-activities)：
 
 - SharePoint Online 和 OneDrive for Business 中的用户活动
-
 - Exchange Online 中的用户活动（Exchange 邮箱审核日志记录）
-
 - SharePoint Online 中的管理员活动
-
 - Azure Active Directory 中的管理员活动（Microsoft 365 的目录服务）
-
 - Exchange Online 中的管理员活动（Exchange 管理员审核日志记录）
-
 - 安全与合规中心中的电子数据展示活动
-
 - Power BI 中的用户和管理员活动
-
 - Microsoft Teams 中的用户和管理员活动
-
 - Dynamics 365 中的用户和管理员活动
-
 - Yammer 中的用户和管理员活动
-
 - Microsoft Power Automate 中的用户和管理员活动
-
 - Microsoft Stream 中的用户和管理员活动
-
 - Microsoft 工作区分析中的分析员和管理员活动
-
 - Microsoft Power Apps 中的用户和管理员活动
-
 - Microsoft Forms 中的用户和管理员活动
-
 - 使用 SharePoint Online 或 Microsoft Teams 的网站的敏感度标签的用户和管理员活动
-
 - “简介电子邮件” 和 “MyAnalytics” 中的管理活动
 
 ## <a name="requirements-to-search-the-audit-log"></a>搜索审核日志的要求
@@ -73,6 +57,7 @@ ms.locfileid: "52809139"
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   *UnifiedAuditLogestionEnabled* 属性的 `True` 值表明已打开审核日志搜索。 有关详细信息，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
 - 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
@@ -114,8 +99,12 @@ ms.locfileid: "52809139"
 
 - 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Office 365 中不同服务所花费的时间。
 
+  <br>
+
+  ****
+
   |Microsoft 365 服务或功能|30 分钟|24 小时|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender for Office 365 和威胁智能|![复选标记](../media/checkmark.png)||
   |Azure Active Directory（用户登录事件）||![复选标记](../media/checkmark.png)|
   |Azure Active Directory（管理员事件）||![复选标记](../media/checkmark.png)|
@@ -133,9 +122,9 @@ ms.locfileid: "52809139"
   |敏感度标签||![复选标记](../media/checkmark.png)|
   |SharePoint Online 和 OneDrive for Business|![复选标记](../media/checkmark.png)||
   |工作区分析|![复选标记](../media/checkmark.png)||
-  |Yammer||![复选标记](../media/checkmark.png)||
-  |Microsoft Forms|![复选标记](../media/checkmark.png)|
-  ||||
+  |Yammer||![复选标记](../media/checkmark.png)|
+  |Microsoft Forms|![复选标记](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 Microsoft 365 管理中心或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
@@ -617,11 +606,11 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已修改访问请求设置|WebRequestAccessModified|已修改网站上的访问请求设置。|
 |已修改“成员可共享”设置|WebMembersCanShareModified|已修改网站上的“**成员可共享**”设置。|
 |已修改网站集的权限级别|PermissionLevelModified|已更改网站集的权限级别。|
-|已修改网站权限|SitePermissionsModified|网站管理员或所有者（或系统帐户）更改分配给网站上的组的权限级别。 如果从组中删除所有权限，也将记录此活动。 <br/><br/> **注意**：SharePoint Online 中已弃用此操作。 若要查找相关事件，可搜索其他权限相关的活动，例如 **已添加网站集管理员**、**已向 SharePoint 组添加用户或组**、**已允许用户创建组**、**已创建组** 和 **已删除组**。|
+|已修改网站权限|SitePermissionsModified|站点管理员或所有者（或系统帐户）更改分配给站点上组的权限级别。如果从组中删除所有权限，也会记录此活动。 <br/><br/> **注意**：SharePoint Online 中已弃用此操作。 若要查找相关事件，可搜索其他权限相关的活动，例如 **已添加网站集管理员**、**已向 SharePoint 组添加用户或组**、**已允许用户创建组**、**已创建组** 和 **已删除组**。|
 |已删除网站集的权限级别|PermissionLevelRemoved|已删除网站集的权限级别。|
 |已删除网站集管理员|SiteCollectionAdminRemoved|网站集管理员或所有者为网站删除了作为网站集管理员的人员。 当管理员（通过在 SharePoint 管理中心编辑用户配置文件）从用户 OneDrive 帐户的网站集管理员列表中删除自己时，也会记录此活动。  若要在审核日志搜索结果中返回此活动，必须搜索所有活动。|
 |已从 SharePoint 组中删除用户或组|RemovedFromGroup|用户已从 SharePoint 组中删除成员或来宾。 这可能是一项目的性操作，也可能是其他活动（例如取消共享事件）的结果。|
-|已请求网站管理员权限|SiteAdminChangeRequest|用户请求将自己添加为网站集的网站集管理员。 网站集管理员具有网站集和所有子网站的完全控制权限。|
+|已请求网站管理员权限|SiteAdminChangeRequest|用户请求将自己添加为网站集的网站集管理员。网站集管理员具有对网站集和所有子网站的完全控制权限。|
 |已还原共享继承|SharingInheritanceReset|已进行更改，使项目能够从父级继承共享权限。|
 |已更新组|GroupUpdated|网站管理员或所有者为网站更改组设置。这可能包括更改组名、可查看或编辑组成员身份的人员，以及成员身份请求的处理方式。|
 ||||
@@ -642,14 +631,14 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更改豁免用户代理|CustomizeExemptUsers|SharePoint 或全局管理员自定义 SharePoint 管理中心的豁免用户代理列表。可以指定免于接收要索引的整个网页的用户代理。这意味着指定的豁免用户代理遇到 InfoPath 表单时，该表单将作为 XML 文件而非整个网页返回。这可加速索引 InfoPath 表单。|
 |已更改网络访问策略|NetworkAccessPolicyChanged|SharePoint 或全局管理员已通过 SharePoint 管理中心或 SharePoint Online PowerShell 更改基于位置的访问策略（也称为“受信任的网络边界”）。 这类策略基于指定的授权 IP 地址范围控制组织中的用户对 SharePoint 和 OneDrive 资源的访问权限。 有关详细信息，请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问权限](/sharepoint/control-access-based-on-network-location)。|
 |已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
-|已创建“收件人​​”连接|SendToConnectionAdded|SharePoint 或全局管理员在 SharePoint 管理中心中的“记录管理”页上创建新“发送至”连接。 “发送至”连接指定文档存储库或记录中心设置。 创建“收件人”连接时，内容管理器可以将文档提交到指定位置。|
+|已创建“收件人​​”连接|SendToConnectionAdded|SharePoint 或全局管理员在 SharePoint 管理中心的“记录管理”页上创建新的“收件人”连接。“收件人”连接指定文档存储库或记录中心的设置。创建“收件人”连接时，内容管理器可以将文档提交到指定位置。|
 |已创建网站集|SiteCollectionCreated|SharePoint 或全局管理员在 SharePoint Online 组织中创建网站集，或者用户设置其 OneDrive for Business 网站。|
 |已删除孤立中心网站|HubSiteOrphanHubDeleted|SharePoint 或全局管理员已删除孤立中心网站，它是没有任何关联网站的中心网站。 孤立中心可能是由删除原始中心网站引起的。|
 |已删除“收件人”连接|SendToConnectionRemoved|SharePoint 或全局管理员在 SharePoint 管理中心的“记录管理”页上删除“发送至”连接。|
 |已删除网站|SiteDeleted|网站管理员删除网站。|
 |已启用文档预览|PreviewModeEnabledSet|网站管理员为网站启用文档预览。|
 |已启用传统工作流|LegacyWorkflowEnabledSet|网站管理员或所有者将 SharePoint 2013 工作流任务内容类型添加到网站。全局管理员还可以在 SharePoint 管理中心中启用整个组织的工作流。|
-|已启用 Office on Demand|OfficeOnDemandSet|网站管理员启用 Office on Demand，允许用户访问最新版本的 Office 桌面应用程序。 SharePoint 管理中心启用了 Office on Demand，并需要包括全套已安装的 Office 应用程序的 Microsoft 365 订阅。|
+|已启用 Office on Demand|OfficeOnDemandSet|网站管理员启用 Office on Demand，允许用户访问最新版本的 Office 桌面应用程序。SharePoint 管理中心启用了 Office on Demand，并需要包括全套已安装的 Office 应用程序的 Microsoft 365 订阅。|
 |已启用人员搜索的结果来源|PeopleResultsScopeSet|网站管理员为网站创建人员搜索的结果来源。|
 |已启用 RSS 源|NewsFeedEnabledSet|网站管理员或所有者为网站启用 RSS 源。全局管理员还可以在 SharePoint 管理中心为整个组织启用 RSS 源。|
 |已将网站加入到中心网站|HubSiteJoined|网站所有者将其网站与中心网站相关联。|
@@ -689,8 +678,8 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已删除代理邮箱权限|Remove-MailboxPermission|管理员已从用户邮箱删除分配给代理的 FullAccess 权限。 删除 FullAccess 权限后，代理无法打开他人邮箱，也无法访问该邮箱中的任何内容。|
 |已从文件夹中删除权限|RemoveFolderPermissions|已删除文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
 |已发送邮件|发送|邮件已发送、答复或转发。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 有关详细信息，请参阅[高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。|
-|已使用“发送方式”权限发送邮件|SendAs|已使用“发送方式”权限发送邮件。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|
-|已使用“代表发送”权限发送邮件|SendOnBehalf|已使用“代表发送”权限发送邮件。 这表示另一个用户代表邮箱所有者发送了邮件。 邮件将向收件人说明发送此邮件时使用的身份及实际发送者。|
+|已使用“发送方式”权限发送邮件|SendAs|已使用 SendAs 权限发送某个邮件。这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|
+|已使用“代表发送”权限发送邮件|SendOnBehalf|已使用 SendOnBehalf 权限发送消息。这意味着另一个用户代表邮箱所有者发送邮件。该邮件指示代表其发送邮件的收件人以及实际发送邮件的收件人。|
 |已从 Outlook 客户端更新收件箱规则|UpdateInboxRules|有权访问邮箱的邮箱所有者或其他用户在 Outlook 客户端中修改了收件箱规则。|
 |已更新邮件|更新|已更改邮件或其属性。|
 |用户已登录到邮箱|MailboxLogin|用户登录其邮箱。|

@@ -16,12 +16,12 @@ ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f03fab3f296f98b448693c6a5d0886f409201703
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926015"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288475"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防病毒兼容性
 
@@ -79,7 +79,7 @@ Microsoft Defender 防病毒自动启用，并安装在运行 Windows 10 的终�
 - 值：`1`
 
 > [!NOTE]
-> 系统不支持被动Windows Server 2016。 注册表项可用于 Windows Server 版本 1803 或更高版本，或 `ForcePassiveMode` Windows Server 2019，但不能Windows Server 2016。 
+> 系统不支持被动Windows Server 2016。 注册表项可用于 Windows Server 版本 1803 或更高版本，或 `ForceDefenderPassiveMode` Windows Server 2019，但不能Windows Server 2016。 
 
  (<a id="fn2">2</a>) On Windows Server 2016，如果使用的是非 Microsoft 防病毒产品，则不能在被动Microsoft Defender 防病毒或主动模式下运行防病毒。 在这种情况下，手动[禁用/卸载](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016)Microsoft Defender 防病毒，以防止在服务器上安装多个防病毒产品导致的问题。
 
@@ -99,7 +99,7 @@ Microsoft Defender 防病毒自动启用，并安装在运行 Windows 10 的终�
 > [!IMPORTANT]
 > 如果你在被动模式下使用 Microsoft Defender 防病毒 或在阻止模式下使用 EDR，请不要关闭实时保护、云保护或有限定期扫描等功能。 
 
-|保护 |活动模式 |被动模式 |块模式下的 EDR |已禁用或卸载 |
+|Protection |活动模式 |被动模式 |阻止模式下的 EDR |已禁用或卸载 |
 |:---|:---|:---|:---|:---|
 | [实时保护和](configure-real-time-protection-microsoft-defender-antivirus.md)[云保护](enable-cloud-protection-microsoft-defender-antivirus.md) | 是 | 否 <sup> [[3](#fn3)]<sup> | 否 | 否 |
 | [有限定期扫描可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | 否 | 否 | 否 | 是 |

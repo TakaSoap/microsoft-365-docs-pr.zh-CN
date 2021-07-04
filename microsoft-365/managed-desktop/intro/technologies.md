@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203264"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287959"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
 
@@ -28,17 +28,17 @@ Microsoft 365 企业版所有用户都需要Microsoft 托管桌面许可。 有�
 本文总结了必需许可证中包含的Enterprise，并介绍了该服务如何将每个组件与 Microsoft 托管桌面设备。 本文档详细介绍了每个区域的特定角色Microsoft 托管桌面职责。 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 或 E5
+
 | 产品 |信息 |
 --- |--- 
 Microsoft 365 企业应用版 (64 位)  | 这些设备Office以下应用程序：Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、OneNote。<br><br>不包括 64 位完整版本的 Microsoft Project 和 Microsoft Visio。 但是，由于这些应用程序的安装取决于 Microsoft 365 企业应用版 安装，Microsoft 托管桌面 已创建默认的 Microsoft Intune 部署和安全组，然后可以使用它们向许可用户部署这些应用程序。 有关详细信息，请参阅 Install [Microsoft Project or Microsoft Visio on Microsoft 托管桌面 devices](../get-started/project-visio.md)。
 OneDrive |Azure Active Directory当用户首次登录时，会为用户启用单一OneDrive。<br><br>包含"桌面"、"文档"和"图片"文件夹的已知文件夹重定向;启用和配置Microsoft 托管桌面。
-应用商店应用 |    Microsoft Sway Power BI未随设备一起提供。 可从以下网站下载这些Microsoft Store。
-Win32 应用程序 |    Teams未随设备一起提供，但由 Microsoft 打包并Microsoft 托管桌面设备。 Azure 信息保护客户端未随设备一起提供，但你可以打包它进行部署。
-Web 应用程序 |  Yammer、Office浏览器中Delve、Flow、StaffHub、PowerApps 和 Planner 不会随设备一起附带。 用户可以使用浏览器访问这些应用程序的 Web 版本。
-
-
+应用商店应用 | Microsoft Sway Power BI未随设备一起提供。 可从以下网站下载这些Microsoft Store。
+Win32 应用程序 | Teams未随设备一起提供，但由 Microsoft 打包并Microsoft 托管桌面设备。 Azure 信息保护客户端未随设备一起提供，但你可以打包它进行部署。
+Web 应用程序 | Yammer、Office浏览器中Delve、Flow、StaffHub、PowerApps 和 Planner 不会随设备一起附带。 用户可以使用浏览器访问这些应用程序的 Web 版本。
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 企业版带 Microsoft Defender for Endpoint 的 E5 或 E3
+
 建议 IT 管理员配置以下设置。 这些设置不作为自定义设置的一部分包含或Microsoft 托管桌面。
 
 产品  |信息
@@ -47,11 +47,10 @@ Windows Hello 企业版 | 应实现 Windows Hello for Business，以将密码替
 应用程序虚拟化 | 可以使用 Intune Win32 (客户端将 Application Virtualization (App-V) 程序包中。 有关详细信息，请参阅[Application Virtualization。](/windows/application-management/app-v/appv-technical-reference)
 Microsoft 365数据丢失防护 | 应实施Microsoft 365数据丢失防护，以监视对已确定为敏感的项目采取的操作，并帮助防止意外共享这些项目。 有关详细信息，请参阅Microsoft 365[数据丢失防护](../../compliance/endpoint-dlp-learn-about.md)。
 
-
 作为功能的一部分包含和管理的功能Microsoft 托管桌面：
 
 产品 |信息
---- |--- 
+--- |---
 BitLocker 驱动器加密 | BitLocker 驱动器加密用于加密所有系统驱动器。 有关详细信息，请参阅 [BitLocker 驱动器加密](/windows/security/information-protection/bitlocker/bitlocker-overview)。
 Windows DefenderSystem Guard | 在启动时保护系统的完整性并验证系统完整性是否得到真正维护。 有关详细信息，请参阅Windows Defender [System Guard。](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 Windows Defender Credential Guard | Windows DefenderCredential Guard 使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件才能访问它们。 有关详细信息，请参阅Windows Defender [System Guard。](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
@@ -72,8 +71,8 @@ Windows Defender高级安全防火墙 | 基于主机的设备的双向网络流�
 
 ## <a name="enterprise-mobility--security-e5"></a>企业移动性 + 安全性E5
 
-产品 |信息 
+产品 |信息
  --- | ---
-企业移动性 + 安全性 E3<br>Azure Active Directory Premium P2 |    可以使用 mdm 设备的所有企业移动性 + 安全性 E3管理 MDM 设备。 你可以将Azure Active Directory Premium P2作为可选功能与 Microsoft 托管桌面。
-Microsoft Cloud App Security |  可以将此可选功能与 Microsoft 托管桌面。
+企业移动性 + 安全性 E3<br>Azure Active Directory Premium P2 | 可以使用 mdm 设备的所有企业移动性 + 安全性 E3管理 MDM 设备。 你可以将Azure Active Directory Premium P2作为可选功能与 Microsoft 托管桌面。
+Microsoft Cloud App Security | 可以将此可选功能与 Microsoft 托管桌面。
 Azure 信息保护 P2  | 可以将此可选功能与 Microsoft 托管桌面。

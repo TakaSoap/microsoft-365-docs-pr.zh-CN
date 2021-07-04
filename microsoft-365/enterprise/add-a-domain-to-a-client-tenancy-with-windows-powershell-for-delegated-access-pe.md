@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用 PowerShell for Microsoft 365向现有客户租户添加备用域名。
-ms.openlocfilehash: 3bcdb40e2c72e5aac8103b0b55ff6fccfe6a9fcc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5ebbe11da9a93669945e7e3b096ce7afa18b5d3a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229079"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288427"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
@@ -124,9 +124,6 @@ Name                   Status      Authentication
 FQDN of new domain     Verified    Managed
 ```
 
-
 ## <a name="see-also"></a>另请参阅
-
-####
 
 [适用于合作伙伴的帮助](https://go.microsoft.com/fwlink/p/?LinkID=533477)

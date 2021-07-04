@@ -1,5 +1,5 @@
 ---
-title: 预测编码参考
+title: 预测编码引用
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 90c76fade54c109fc02e145a49bbe93d11ad8b79
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822475"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288271"
 ---
 # <a name="predictive-coding-reference-preview"></a>预测编码参考 (预览) 
 
@@ -36,14 +36,18 @@ ms.locfileid: "52822475"
 ## <a name="control-set-confusion-matrix"></a>控件集混淆矩阵
 
 完成培训轮后，模型会为在培训轮中标记的控件集的 10 个项目分配预测分数。 模型会将这 10 个项目的预测分数与在培训轮中分配给该项目的实际标签进行比较。 基于此比较，模型确定以下分类来评估模型预测性能：
-  
-  |          |模型预测项目相关 |模型预测项目不相关 |
-  |:---------|:---------|:---------|
-  |**审阅者标签项（如相关）**| True positive| 误报 |
-  |**审阅者标签项不相关**| 假负 |True negative |
-  ||||
 
-  基于这些比较，模型派生 F 分数、精度和调用指标的值以及每个指标的误差范围。 矩阵中每个混淆类型的数量显示在培训轮的飞出页面上。
+<br>
+
+****
+
+|标签|模型预测项目相关|模型预测项目不相关|
+|---|---|---|
+|**审阅者标签项（如相关）**|True positive|误报|
+|**审阅者标签项不相关**|假负|True negative|
+|
+
+基于这些比较，模型派生 F 分数、精度和调用指标的值以及每个指标的误差范围。 矩阵中每个混淆类型的数量显示在培训轮的飞出页面上。
 
 ## <a name="f-score"></a>F 分数
 

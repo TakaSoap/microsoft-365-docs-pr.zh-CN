@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772385"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289459"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -39,35 +39,37 @@ ms.locfileid: "52772385"
 
 
 ## <a name="api-description"></a>API 说明
-在事件 [顶部](alerts.md) 创建新的 **警报**。
-<br>**创建警报需要 Microsoft Defender for Endpoint** 事件。
-<br>你将需要提供请求中的事件中的 3 个参数：**事件** 时间、计算机 **ID** 和 **报告 ID。** 请参阅下面的示例。
-<br>可以使用高级搜寻 API 或门户中的事件。
-<br>如果同一设备上存在具有相同标题的打开警报，则新创建的警报将合并到该警报中。
-<br>自动调查将在通过 API 创建的警报上自动启动。
 
+在事件 [顶部](alerts.md) 创建新的 **警报**。
+
+- **创建警报需要 Microsoft Defender for Endpoint** 事件。
+- 你将需要提供请求中的事件中的 3 个参数：**事件** 时间、计算机 **ID** 和 **报告 ID。** 请参阅下面的示例。
+- 可以使用高级搜寻 API 或门户中的事件。
+- 如果同一设备上存在具有相同标题的打开警报，则新创建的警报将合并到该警报中。
+- 自动调查将在通过 API 创建的警报上自动启动。
 
 ## <a name="limitations"></a>限制
-1. 此 API 的速率限制是每分钟 15 次调用。
 
+1. 此 API 的速率限制是每分钟 15 次调用。
 
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 |   Alerts.ReadWrite.All |  "读取和写入所有警报"
+Application | Alerts.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
->- 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+>
+> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
@@ -75,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -85,13 +87,13 @@ Content-Type | String | application/json. **必需**。
 属性 | 类型 | 说明
 :---|:---|:---
 eventTime | DateTime (UTC)  | 事件作为字符串的精确时间，从高级搜寻获取。 例如， ```2018-08-03T16:45:21.7115183Z``` **必需**。
-reportId | String | 事件的 reportId，从高级搜寻获取。 **必需**。
-machineId | String | 标识事件的设备 ID。 **必需**。
-severity | String | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
+reportId | 字符串 | 事件的 reportId，从高级搜寻获取。 **必需**。
+machineId | 字符串 | 标识事件的设备 ID。 **必需**。
+severity | 字符串 | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
 title | String | 警报的标题。 **必需**。
-description | String | 警报的说明。 **必需**。
-recommendedAction| String | 建议安全人员在分析警报时采取的操作。 **必需**。
-“类别”| String | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"DefenseMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
+说明 | 字符串 | 警报的说明。 **必需**。
+recommendedAction| 字符串 | 建议安全人员在分析警报时采取的操作。 **必需**。
+“类别”| 字符串 | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"DefenseMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
 
 ## <a name="response"></a>响应
 
@@ -99,7 +101,7 @@ recommendedAction| String | 建议安全人员在分析警报时采取的操作�
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229355"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289735"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -164,7 +164,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 如今，我们发现许多客户 IT 组都是围绕"产品"构建的。 对于本地环境来说，这是逻辑上的，因为每个特定产品都需要专家。 但是，我完全满意地看到，当这些服务移动到云时，我不必Exchange调试 Active Directory 或数据库。 自动化 (哪种云类型) 可删除某些重复的手动作业 (查看工厂) 。 但是，为了理解跨服务交互、影响、业务需求等，这些要求被替换为更复杂的要求。 如果你愿意学习 [，](/learn/)云转换将带来巨大的机遇。 在跳转到技术之前，我经常与客户就管理 IT 技能和团队结构的变化进行交谈。
 
-对于所有SharePoint和开发人员，请停止询问"如何在线执行 XYZ SharePoint？ 对于[Power Automate (](/power-automate/)或Flow) ，它是一个更强大的平台。 使用 [Azure Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0) 为 500 K 项列表创建更好的 UX。 开始使用[Microsoft Graph](https://developer.microsoft.com/graph/)而不是 CSOM。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)包括SharePoint，但世界更多。 我还可以列出许多其他示例。 有一个巨大而出色的企业。 打开门并开始 [探索]()。
+对于所有SharePoint和开发人员，请停止询问"如何在线执行 XYZ SharePoint？ 对于[Power Automate (](/power-automate/)或Flow) ，它是一个更强大的平台。 使用 [Azure Bot Framework](/azure/bot-service/) 为 500 K 项列表创建更好的 UX。 开始使用[Microsoft Graph](https://developer.microsoft.com/graph/)而不是 CSOM。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)包括SharePoint，但世界更多。 我还可以列出许多其他示例。 有一个巨大而出色的企业。 打开门并开始 [探索]()。
 
 另一个常见影响是在合规性方面。 这种跨服务方法似乎使许多合规性策略完全混淆。 我一直看到组织："我需要将所有电子邮件通信记录到电子数据展示系统。" 当电子邮件不再只是电子邮件而是其他服务的窗口时，这真正意味着什么？ Office 365具有全面的合规性[方法](../compliance/index.yml)，但更改人员与流程通常比技术困难得多。
 
@@ -285,7 +285,7 @@ Office 365具有统一[审核日志](../compliance/search-the-audit-log-in-secur
 - [Exchange邮件跟踪](/powershell/module/exchange/get-messagetrace)
 - 上面讨论的威胁/UEBA 系统 (例如，Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender for Endpoint 等) 
 - [Microsoft 信息保护](../compliance/data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
+- [ Microsoft Defender for Endpoint ](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 首先确定安全与合规计划所需的所有日志源非常重要。 另请注意，不同的日志具有不同的在线保留限制。

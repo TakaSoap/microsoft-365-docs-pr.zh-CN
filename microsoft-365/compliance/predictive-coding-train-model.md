@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226211"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288187"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>训练预测编码模型 (预览) 
 
@@ -67,11 +67,15 @@ ms.locfileid: "53226211"
 
 - 模型为在培训轮中标记的控件集的 10 个项目分配预测分数。 模型会将这 10 个项目的预测分数与在培训轮中分配给该项目的实际标签进行比较。 基于此比较，模型标识了 (控件集混淆矩阵) 评估模型预测性能的分类方法：
 
-  |          |模型预测项目相关 |模型预测项目不相关 |
-  |:---------|:---------|:---------|
-  |**审阅者标签项（如相关）**| True positive| 误报 |
-  |**审阅者标签项不相关**| 假负 |True negative |
-  ||||
+  <br>
+
+  ****
+
+  |标签|模型预测项目相关|模型预测项目不相关|
+  |---|---|---|
+  |**审阅者标签项（如相关）**|True positive|误报|
+  |**审阅者标签项不相关**|假负|True negative|
+  |
 
   基于这些比较，模型派生 F 分数、精度和调用指标的值以及每个指标的误差范围。 这些模型性能指标的分数显示在培训轮的飞出页面上。 有关这些指标的说明，请参阅预测 [编码参考](predictive-coding-reference.md)。
 

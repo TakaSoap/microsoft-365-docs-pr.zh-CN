@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 将文档理解模型应用至一个或多个库。
-ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177257"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286533"
 ---
 # <a name="batch-apply-model"></a>批处理应用模型
 
@@ -48,6 +48,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 |出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 集合，其中每个集合均指定了模型和目标文档库。|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Name | 必需 | 类型 | 说明 |
 |--------|-------|--------|------------|
 |ModelUniqueId|是|字符串|模型文件的唯一 ID。|
@@ -60,9 +61,10 @@ POST /_api/machinelearning/publications HTTP/1.1
 
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
-|201 已创建||这是一个自定义 API，用于支持将模型应用至多个文档库。 如果部分成功，仍可返回已创建的 201，调用方需要检查响应正文，以了解模型是否已成功应用至文档库。|
+|201 已创建||这是一个自定义 API，用于支持将模型应用至多个文档库。如果部分成功，仍可返回已创建的 201，调用方需要检查响应正文，以了解模型是否已成功应用至文档库。|
 
 ## <a name="response-body"></a>响应正文
+
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
 |TotalSuccesses|int|成功应用至文档库的模型的总数。|
@@ -70,6 +72,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 |详细信息|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，其中每个集合均指定了将模型应用至文档库的详细结果。|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
 |StatusCode|int|HTTP 状态代码。|
@@ -77,6 +80,7 @@ POST /_api/machinelearning/publications HTTP/1.1
 |出版物|MachineLearningPublicationEntityData|它指定了模型信息和目标文档库。| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名称 | 类型 | 说明 |
 |--------|--------|------------|
 |ModelUniqueId|字符串|模型文件的唯一 ID。|

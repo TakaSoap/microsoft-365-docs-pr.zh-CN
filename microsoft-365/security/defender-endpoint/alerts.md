@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769805"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289675"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -52,14 +52,13 @@ ms.locfileid: "52769805"
 [获取相关计算机](get-alert-related-machine-info.md) | [计算机](machine.md) | [与](machine.md)警报关联的[计算机](alerts.md)。
 [获取相关用户](get-alert-related-user-info.md) | [用户](user.md) | [与](user.md)警报关联的[用户](alerts.md)。
 
-
 ## <a name="properties"></a>属性
 
 属性 |    类型    |    说明
 :---|:---|:---
-id | String | 警报 ID。
+id | 字符串 | 警报 ID。
 title | String | 警报标题。
-description | String | 警报说明。
+说明 | String | 警报说明。
 alertCreationTime | Nullable DateTimeOffset | 创建警报时 (UTC) 日期和时间。
 lastEventTime | Nullable DateTimeOffset | 在同一设备上触发警报的事件的最后一次发生次数。
 firstEventTime | Nullable DateTimeOffset | 在该设备上触发警报的事件的第一次发生。
@@ -73,14 +72,14 @@ severity | 枚举 | 警报的严重性。 可能的值包括："UnSpecified"、"
 状态 | 枚举 | 指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。
 classification | Nullable Enum | 警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。
 确定 | Nullable Enum | 指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。
-“类别”| String | 警报的类别。
-detectionSource | String | 检测源。
-threatFamilyName | String | 威胁系列。
-threatName | String | 威胁名称。
-machineId | String | 与 [警报关联的](machine.md) 计算机实体的 ID。
-computerDnsName | String | [计算机](machine.md) 完全限定的名称。
-aadTenantId | String | 用户Azure Active Directory ID。
-一个 | String | 触发警报的检测器的 ID。
+“类别”| 字符串 | 警报的类别。
+detectionSource | 字符串 | 检测源。
+threatFamilyName | 字符串 | 威胁系列。
+threatName | 字符串 | 威胁名称。
+machineId | 字符串 | 与 [警报关联的](machine.md) 计算机实体的 ID。
+computerDnsName | 字符串 | [计算机](machine.md) 完全限定的名称。
+aadTenantId | 字符串 | 用户Azure Active Directory ID。
+一个 | 字符串 | 触发警报的检测器的 ID。
 comments | 警报注释列表 | Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
 证据 | 警报证据列表 | 与警报相关的证据。 请参阅下面的示例。
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: b21474f3a9e045bf353d62ef6c7c8d4174801a1b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623829"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289195"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>开始进行本地扫描仪的数据丢失防护（预览）
 
@@ -115,7 +115,7 @@ ms.locfileid: "52623829"
 
 2. 请参阅活动 [工具入门](data-classification-activity-explorer.md) 中的过程，以访问和筛选本地扫描仪位置的所有数据。
 
-3. 在合规 [中打开"审核"](https://security.microsoft.com/auditlogsearch)。 在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，或由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 访问 
+3. 在合规 [中打开"审核"](https://security.microsoft.com/auditlogsearch)。 在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，或由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 访问 
 
 
 ## <a name="next-steps"></a>后续步骤

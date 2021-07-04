@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 06/14/2021
+ms.date: 07/02/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 82c734d8a394be048f9be862be114fae7f90e6b3
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a08b84d69a3ef92a5aa23a37f62208c296b3e785
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930471"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289615"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切换到 Microsoft Defender for Endpoint - 阶段 2：设置
 
@@ -63,7 +63,8 @@ ms.locfileid: "52930471"
 |Windows服务器     | 在 Windows 服务器上，你需要重新安装Microsoft Defender 防病毒，并手动设置为被动模式。 以下是原因： <p>在Windows服务器上，安装非 Microsoft 防病毒/反恶意软件时，Microsoft Defender 防病毒无法与非 Microsoft 防病毒解决方案一起运行。 在这种情况下，Microsoft Defender 防病毒禁用或卸载。 <p>若要重新安装或启用Microsoft Defender 防病毒服务器Windows，请执行下列操作： <p>- 仅在必要时，才将 Windows Server ([DisableAntiSpyware](#set-disableantispyware-to-false-on-windows-server)设置为 false) <br/>- [在 Microsoft Defender 防病毒 服务器上重新安装 Windows](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [将Microsoft Defender 防病毒服务器设置为被动Windows模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
 
 
-若要了解有关使用Microsoft Defender 防病毒 Microsoft 防病毒保护状态的详细信息，请参阅Microsoft Defender 防病毒[兼容性。](microsoft-defender-antivirus-compatibility.md)
+> [!TIP]
+> 若要了解有关使用Microsoft Defender 防病毒 Microsoft 防病毒保护状态的详细信息，请参阅Microsoft Defender 防病毒[兼容性。](microsoft-defender-antivirus-compatibility.md)
 
 ### <a name="set-disableantispyware-to-false-on-windows-server"></a>在 Windows 服务器上将 DisableAntiSpyware 设置为 false
 
@@ -115,13 +116,13 @@ ms.locfileid: "52930471"
 1. 打开注册表编辑器，然后导航到 <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. 编辑 (或创建) **ForcePassiveMode** 的 DWORD 条目，并指定以下设置：
+2. 编辑 (或) 名为 **ForceDefenderPassiveMode** 的 DWORD 条目，并指定以下设置：
 
    - 将 DWORD 的值设置为 **1。**
    - 在 **"基本**"下，**选择"十六进制"。**
 
 > [!NOTE]
-> 载入适用于终结点的 Defender 后，可能需要在 Microsoft Defender 防病毒 服务器上将 Windows 模式。
+> 载入适用于终结点的 Defender 后，可能需要在 Microsoft Defender 防病毒 服务器上将 Windows 模式。 若要验证被动模式是否按预期设置，请搜索位于) 的 **Microsoft-Windows-Windows Defender** 操作日志 (中的事件 *5007，* 并确认 `C:\Windows\System32\winevt\Logs` **ForcePassiveMode** 或 **PassiveMode** **注册表** 项已设置为 0x1 。
 
 ### <a name="are-you-using-windows-server-2016"></a>是否正在使用Windows Server 2016？
 
@@ -158,19 +159,19 @@ ms.locfileid: "52930471"
 |操作系统 |排除项 |
 |--|--|
 |Windows 10[版本 1803](/windows/release-health/status-windows-10-1803)或更高版本 (请参阅 Windows 10 release [information) ](/windows/release-health/release-information)<p>Windows 10，版本 1703 或 1709（已安装[KB4493441）](https://support.microsoft.com/help/4493441) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器版本 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<p>  |
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**注意**：监视主机临时文件 6\45 可以是不同的编号子文件夹。 <p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**注意**：监视主机临时文件 6\45 可以是不同的编号子文件夹。 <p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>将现有解决方案添加到列表的排除Microsoft Defender 防病毒
 
 在设置过程的这一步中，将现有解决方案添加到Microsoft Defender 防病毒列表中。 可以从多种方法中选择将排除项添加到Microsoft Defender 防病毒，如下表所列：
 
 |方法 | 需执行的操作|
-|--|--|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是该Microsoft Endpoint Manager。 | 1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<p> 2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件。<p> 3. 在"**管理"下**，选择"**属性"。**<p> 4. 选择 **配置设置：编辑**。<p> 5. 展开 **Microsoft Defender 防病毒，** 然后展开 **"Microsoft Defender 防病毒排除"。**<p> 6. 指定要从扫描中排除的文件和文件夹、扩展Microsoft Defender 防病毒进程。 有关参考，请参阅[Microsoft Defender 防病毒排除项](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。<p> 7. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**  |
-|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) | 1. 使用[Configuration Manager](/mem/configmgr/core/servers/manage/admin-console)控制台，转到"资产和Endpoint Protection反恶意软件策略"，然后选择  >    >  要修改的策略。 <p> 2. 为要从扫描中排除的文件和文件夹、扩展和进程指定排除Microsoft Defender 防病毒设置。 |
-|[组策略对象](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在组策略管理计算机上，打开组 [](https://technet.microsoft.com/library/cc731212.aspx)策略管理控制台，右键单击要配置的组策略对象，**然后选择编辑**。<p> 2. 在组 **策略管理编辑器** 中，转到"**计算机配置"，** 然后选择"**管理模板"。**<p> 3. 展开树以Windows **排除> Microsoft Defender 防病毒 >组件**。<br/>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。<p> 4. 双击" **路径排除项"** 设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，选择"**显示..."。**<br/>- 在"值名称"列下的其自己的 **行中指定每个** 文件夹。<br/>- 如果指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。<p> 5. 选择"**确定"。**<p> 6. 双击扩展 **排除** 项设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，选择"**显示..."。**<br/>- 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。  在 **"值"****列中输入** 0。<p> 7. 选择"**确定"。** |
-|本地组策略对象 |1. 在终结点或设备上，打开"本地组策略编辑器"。 <p>2. 转到计算机 **配置** 管理模板  >    >  **Windows组件**  >  **Microsoft Defender 防病毒**  >  **排除项**。<p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。<p>3. 指定路径和进程排除项。 |
-|注册表项 |1. 导出以下注册表项 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` ：。<p>2. 导入注册表项。 下面是两个示例：<br/>- 本地路径： `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- 网络共享： `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
+|:---|:---|
+| [Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是该Microsoft Endpoint Manager。 | 1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<p> 2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件。<p> 3. 在"**管理"下**，选择"**属性"。**<p> 4. 选择 **配置设置：编辑**。<p> 5. 展开 **Microsoft Defender 防病毒，** 然后展开 **"Microsoft Defender 防病毒排除"。**<p> 6. 指定要从扫描中排除的文件和文件夹、扩展Microsoft Defender 防病毒进程。 有关参考，请参阅[Microsoft Defender 防病毒排除项](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。<p> 7. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**  |
+| [Microsoft Endpoint Configuration Manager](/mem/configmgr/) | 1. 使用[Configuration Manager](/mem/configmgr/core/servers/manage/admin-console)控制台，转到"资产和Endpoint Protection反恶意软件策略"，然后选择  >    >  要修改的策略。 <p> 2. 为要从扫描中排除的文件和文件夹、扩展和进程指定排除Microsoft Defender 防病毒设置。 |
+| [组策略对象](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在组策略管理计算机上，打开组 [](https://technet.microsoft.com/library/cc731212.aspx)策略管理控制台，右键单击要配置的组策略对象，**然后选择编辑**。<p> 2. 在组 **策略管理编辑器** 中，转到"**计算机配置"，** 然后选择"**管理模板"。**<p> 3. 展开树以Windows **排除> Microsoft Defender 防病毒 >组件**。<br/>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。<p> 4. 双击" **路径排除项"** 设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，选择"**显示..."。**<br/>- 在"值名称"列下的其自己的 **行中指定每个** 文件夹。<br/>- 如果指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。<p> 5. 选择"**确定"。**<p> 6. 双击扩展 **排除** 项设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，选择"**显示..."。**<br/>- 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。  在 **"值"****列中输入** 0。<p> 7. 选择"**确定"。** |
+| 本地组策略对象 |1. 在终结点或设备上，打开"本地组策略编辑器"。 <p>2. 转到计算机 **配置** 管理模板  >    >  **Windows组件**  >  **Microsoft Defender 防病毒**  >  **排除项**。<p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。<p>3. 指定路径和进程排除项。 |
+| 注册表项 |1. 导出以下注册表项 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` ：。<p>2. 导入注册表项。 下面是两个示例：<br/>- 本地路径： `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- 网络共享： `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>请记住以下有关排除项的要点
 
@@ -189,10 +190,10 @@ ms.locfileid: "52930471"
 设备组、设备集合和组织单位使安全团队能够高效地管理和分配安全策略。 下表介绍了其中每个组以及如何配置它们。 您的组织可能不会使用所有这三种集合类型。
 
 | 集合类型 | 需执行的操作 |
-|--|--|
-|[设备组](/microsoft-365/security/defender-endpoint/machine-groups) (*以前称为)* 组，可使安全运营团队配置安全性功能，例如自动调查和修正。<p>设备组还可用于分配对这些设备的访问权限，以便安全运营团队可根据需要采取修正操作。 <p>设备组在 Microsoft Defender 安全中心[中创建。](microsoft-defender-security-center.md) |1. 转到 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender 安全中心 () 。<p>2. 在左侧导航窗格中，选择"设置  >  **权限设备**  >  **组"。**  <p>3. 选择 **" + 添加设备组"。**<p>4. 指定设备组的名称和说明。<p>5. 在 **"自动化级别"** 列表中，选择一个选项。  (建议完全 **- 自动** 修正威胁 。) 若要了解有关各种自动化级别的完整信息，请参阅如何 [修正威胁](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)。<p>6. 指定匹配规则的条件以确定属于设备组的设备。 例如，可以选择域、操作系统版本，甚至可以使用 [设备标记](/microsoft-365/security/defender-endpoint/machine-tags)。<p>7. 在" **用户访问** "选项卡上，指定应有权访问设备组中包含的设备的角色。 <p>8. 选择"完成 **"。** |
-|[设备集合](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) 使安全运营团队能够管理应用程序、部署合规性设置或在组织的设备上安装软件更新。<p>设备集合是使用 [Configuration Manager 创建的](/mem/configmgr/)。 |按照创建集合 [中的步骤操作](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create)。 |
-|[组织](/azure/active-directory-domain-services/create-ou) 单位使您能够对用户帐户、服务帐户或计算机帐户等对象进行逻辑分组。 然后，可以将管理员分配给特定的组织单位，并应用组策略以强制执行目标配置设置。<p> 组织单位在域服务[中Azure Active Directory定义](/azure/active-directory-domain-services)。 | 按照在域服务托管域中创建组织Azure Active Directory[中的步骤操作](/azure/active-directory-domain-services/create-ou)。 |
+|:---|:---|
+| [设备组](/microsoft-365/security/defender-endpoint/machine-groups) (*以前称为)* 组，可使安全运营团队配置安全性功能，例如自动调查和修正。<p>设备组还可用于分配对这些设备的访问权限，以便安全运营团队可根据需要采取修正操作。 <p>设备组在 Microsoft Defender 安全中心[中创建。](microsoft-defender-security-center.md) | 1. 转到 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender 安全中心 () 。<p>2. 在左侧导航窗格中，选择"设置  >  **权限设备**  >  **组"。**  <p>3. 选择 **" + 添加设备组"。**<p>4. 指定设备组的名称和说明。<p>5. 在 **"自动化级别"** 列表中，选择一个选项。  (建议完全 **- 自动** 修正威胁 。) 若要了解有关各种自动化级别的完整信息，请参阅如何 [修正威胁](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)。<p>6. 指定匹配规则的条件以确定属于设备组的设备。 例如，可以选择域、操作系统版本，甚至可以使用 [设备标记](/microsoft-365/security/defender-endpoint/machine-tags)。<p>7. 在" **用户访问** "选项卡上，指定应有权访问设备组中包含的设备的角色。 <p>8. 选择"完成 **"。** |
+| [设备集合](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) 使安全运营团队能够管理应用程序、部署合规性设置或在组织的设备上安装软件更新。<p>设备集合是使用 [Configuration Manager 创建的](/mem/configmgr/)。 | 按照创建集合 [中的步骤操作](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create)。 |
+| [组织](/azure/active-directory-domain-services/create-ou) 单位使您能够对用户帐户、服务帐户或计算机帐户等对象进行逻辑分组。 然后，可以将管理员分配给特定的组织单位，并应用组策略以强制执行目标配置设置。<p> 组织单位在域服务[中Azure Active Directory定义](/azure/active-directory-domain-services)。 | 按照在域服务托管域中创建组织Azure Active Directory[中的步骤操作](/azure/active-directory-domain-services/create-ou)。 |
 
 ## <a name="configure-antimalware-policies-and-real-time-protection"></a>配置反恶意软件策略和实时保护
 

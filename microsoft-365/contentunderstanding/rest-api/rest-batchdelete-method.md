@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: 使用 REST API 从一个或多个库中删除应用的文档理解模型。
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177233"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287449"
 ---
 # <a name="batchdelete"></a>批处理删除
 
@@ -47,6 +47,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |出版物|是|MachineLearningPublicationEntityData[]|MachineLearningPublicationEntityData 集合，其中每个集合均指定了模型和目标文档库。|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Name | 必需 | 类型 | 说明 |
 |--------|-------|--------|------------|
 |ModelUniqueId|是|字符串|模型文件的唯一 ID。|
@@ -58,9 +59,10 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
-|200 OK||这是一个自定义 API，用于支持从多文档库中删除模型。 如果部分成功，仍可返回 200 OK，调用方需要检查响应正文，以了解模型是否已成功从文档库中删除。|
+|200 OK||这是一个自定义 API，用于支持从多文档库中删除模型。如果部分成功，仍可返回 200 OK，调用方需要检查响应正文，以了解模型是否已成功从文档库中删除。|
 
 ## <a name="response-body"></a>响应正文
+
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
 |TotalSuccesses|int|从文档库中成功删除的模型的总数。|
@@ -68,6 +70,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |详细信息|MachineLearningPublicationResult[]|MachineLearningPublicationResult 的集合，其中每个集合均指定了从文档库中删除模型的详细结果。|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | 名称   | 类型  | 说明|
 |--------|-------|------------|
 |StatusCode|int|HTTP 状态代码。|
@@ -75,6 +78,7 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
 |出版物|MachineLearningPublicationEntityData|它指定了模型信息和目标文档库。| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | 名称 | 类型 | 说明 |
 |--------|--------|------------|
 |ModelUniqueId|字符串|模型文件的唯一 ID。|
@@ -102,7 +106,6 @@ POST /_api/machinelearning/publications/batchdelete HTTP/1.1
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>示例响应
 

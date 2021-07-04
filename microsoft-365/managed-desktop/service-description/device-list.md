@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230051"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287887"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备
 
@@ -32,9 +32,8 @@ Microsoft 托管桌面定期评估要包含在服务中的设备。 本文列出
 
 此处设备的链接仅供参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中，*存档日期* 是这些模型在服务生命周期中Microsoft 托管桌面的日期;在此日期之后载入的任何此类设备将不会收到来自以下用户的完整三年支持Microsoft 托管桌面。 存档的设备也列在存档Microsoft 托管桌面[中](archived-device-list.md)。 *停用日期* 是系统不再支持此Microsoft 托管桌面的日期。 在此日期，此模型的所有注册设备都将从Microsoft 托管桌面中删除，无论设备何时注册。
 
->[!NOTE]
->设备可随时添加到此表中，但我们将针对影响存档或停用日期的任何更改提供 90 天通知。 最近添加的设备标记为 **\*** 。
-
+> [!NOTE]
+> 设备可随时添加到此表中，但我们将针对影响存档或停用日期的任何更改提供 90 天通知。 最近添加的设备标记为 **\*** 。
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备
 
@@ -85,13 +84,14 @@ Microsoft 托管桌面定期评估要包含在服务中的设备。 本文列出
 - 尚未完成首次Windows体验。
 - 使用设备Microsoft 托管桌面[注册功能向用户](../get-started/register-devices-self.md)注册
 
->[!NOTE]
->具有 2.0 GHz 或更快处理器的设备将为参与这些活动的用户提供更好的体验：
->- 将视频会议与 Teams。 有关详细信息[，请参阅Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app)要求。
->-  将一台设备用于多个不同的工作负载。
->- 使用多个监视器。
+> [!NOTE]
+> 具有 2.0 GHz 或更快处理器的设备将为参与这些活动的用户提供更好的体验：
+>
+> - 将视频会议与 Teams。 有关详细信息[，请参阅Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app)要求。
+> - 将一台设备用于多个不同的工作负载。
+> - 使用多个监视器。
 
-**更多帮助**
+## <a name="more-help"></a>更多帮助
 
 这些资源可以帮助回答你可能对特定设备的问题：
 

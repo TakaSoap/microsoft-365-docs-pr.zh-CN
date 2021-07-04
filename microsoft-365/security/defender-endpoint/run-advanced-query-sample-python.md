@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771435"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289255"
 ---
 # <a name="advanced-hunting-using-python"></a>通过 Python 高级搜寻
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771435"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,14 +40,13 @@ ms.locfileid: "52771435"
 
 在此部分中，我们将共享 Python 示例以检索令牌并使用它运行查询。
 
->**先决条件**：首先需要 [创建应用](apis-intro.md)。
+> **先决条件**：首先需要 [创建应用](apis-intro.md)。
 
 ## <a name="get-token"></a>获取令牌
 
 - 运行以下命令：
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,10 +72,10 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
 其中
+
 - tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户数据运行) 
 - appId：Azure AD 应用的 ID (应用必须具有对适用于终结点应用的 Microsoft Defender 的"运行高级查询") 
 - appSecret：Azure AD 应用机密
@@ -85,7 +84,7 @@ aadToken = jsonResponse["access_token"]
 
  运行以下查询：
 
-```
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,7 +101,6 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
 - schema 包含查询结果的架构
@@ -110,9 +108,9 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>复杂查询
 
-如果要运行复杂查询 (或多行查询) ，请保存文件中查询，而不是上面的示例中的第一行，运行以下命令：
+如果要运行复杂查询 (或多行) ，请保存文件中查询，而不是上面的示例中的第一行，运行以下命令：
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
@@ -124,18 +122,15 @@ queryFile.close()
 
 若要对结果进行访问，可执行下列操作：
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
-
 
 若要以 CSV 格式输出文件格式的查询结果，file1.csv执行下列操作：
 
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -149,14 +144,14 @@ outputFile.close()
 
 若要将查询结果输出为 JSON 格式，file1.js以下操作：
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
-
 ## <a name="related-topic"></a>相关主题
+
 - [适用于终结点的 Microsoft Defender API](apis-intro.md)
 - [高级搜寻 API](run-advanced-query-api.md)
 - [通过 PowerShell 高级搜寻](run-advanced-query-sample-powershell.md)

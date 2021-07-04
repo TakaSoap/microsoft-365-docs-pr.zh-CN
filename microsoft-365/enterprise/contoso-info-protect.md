@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用企业Microsoft 365中的信息保护功能，以确保其数字资产在云中的安全。
-ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bb797fa4f71b699069f8542b8bc7a353a9ee1698
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051492"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288667"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -34,7 +34,7 @@ Contoso 对数据进行了分析，并确定了以下分类级别。
 
 | 1 级：基准 | 2 级：敏感 | 3 级：高度管控 |
 |:-------|:-----|:-----|
-| 数据已加密，并且仅供已通过身份验证的用户使用。<BR> <BR> 为本地和基于云的存储和工作负载中存储的所有数据提供。 数据驻留在服务中以及服务与客户端设备之间传输时加密。 <BR><BR>1 级数据的示例为正常的业务通信（电子邮件）和供管理、销售和支持工作人员使用的文件。 | 1 级再加上强身份验证和数据丢失防护。<BR> <BR> 强身份验证包括 Azure AD 多重 (身份验证) MFA 短信验证。 数据丢失防护可确保敏感或关键信息不会在 Microsoft 云外部传输。<BR><BR>2 级数据的示例包括财务和法律信息，以及新产品的研发数据。 | 2 级再加上最高级别的加密、身份验证和审核。<BR><BR>对静态和云中的数据采用最高级别的加密，遵循区域法规，并结合具有智能卡以及精细审核和警报的 MFA。<BR> <BR>级别 3 数据的示例包括客户和合作伙伴个人信息、产品工程规范和专有制造技术。  |
+| 数据已加密，并且仅供已通过身份验证的用户使用。<BR> <BR> 为本地和基于云的存储和工作负载中存储的所有数据提供。 数据驻留在服务中以及服务与客户端设备之间传输时加密。 <BR><BR>1 级数据的示例为正常的业务通信（电子邮件）和供管理、销售和支持工作人员使用的文件。 | 1 级再加上强身份验证和数据丢失防护。<BR> <BR> 强身份验证包括 Azure AD 多重身份验证 (MFA) 短信验证。 数据丢失防护可确保敏感或关键信息不会在 Microsoft 云外部传输。<BR><BR>2 级数据的示例包括财务和法律信息，以及新产品的研发数据。 | 2 级再加上最高级别的加密、身份验证和审核。<BR><BR>对静态和云中的数据采用最高级别的加密，遵循区域法规，并结合具有智能卡以及精细审核和警报的 MFA。<BR> <BR>级别 3 数据的示例包括客户和合作伙伴个人信息、产品工程规范和专有制造技术。  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso 信息策略
@@ -64,11 +64,11 @@ Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备�
 
    Contoso 为其数据级别创建了敏感度标签，其中包含加密、权限和水印等高度管控标签。
 
-4.  将数据从本地部署SharePoint网站和文件共享移动到其新的SharePoint网站
+4. 将数据从本地部署SharePoint网站和文件共享移动到其新的SharePoint网站
 
     迁移到新的 SharePoint 网站的文件继承了分配给该网站的默认保留标签。
 
-5.  培训员工如何对新文档使用敏感度标签、如何在创建新的 SharePoint 网站时与 Contoso IT 进行交互，以及始终在 SharePoint 网站上存储数字资产
+5. 培训员工如何对新文档使用敏感度标签、如何在创建新的 SharePoint 网站时与 Contoso IT 进行交互，以及始终在 SharePoint 网站上存储数字资产
 
     改变不良的工作人员信息存储习惯通常被视为云信息保护转换中最困难的部分。 Contoso IT 和管理需要让员工始终在云中标记和存储其数字资产，避免使用本地文件共享，并且不使用第三方云存储服务或 USB 驱动器。
 
@@ -76,9 +76,9 @@ Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备�
 
 作为推出 Exchange Online 和 SharePoint 的一SharePoint，Contoso 配置了以下一组条件访问策略，并应用于相应的组：
 
-- [设备策略上的托管和非托管应用程序访问](../security/defender-365-security/identity-access-policies.md)
-- [Exchange Online 访问策略](../security/defender-365-security/secure-email-recommended-policies.md)
-- [SharePoint 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [设备策略上的托管和非托管应用程序访问](../security/office-365-security/identity-access-policies.md)
+- [Exchange Online 访问策略](../security/office-365-security/secure-email-recommended-policies.md)
+- [SharePoint 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)
 
 下面是一组 Contoso 信息保护策略。
 
@@ -117,7 +117,7 @@ Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备�
 
 ## <a name="see-also"></a>另请参阅
 
-[安全性路线图](../security/defender-365-security/security-roadmap.md)
+[安全性路线图](../security/office-365-security/security-roadmap.md)
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 

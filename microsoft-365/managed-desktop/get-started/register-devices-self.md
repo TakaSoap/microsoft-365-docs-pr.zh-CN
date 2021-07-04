@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245608"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289531"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -50,11 +50,10 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 可以在 PowerShell [ 库Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅向[Autopilot](/mem/autopilot/add-devices#device-identification)Windows设备。
 
-1.  使用管理权限打开 PowerShell 提示符。
-2.  运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  运行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  运行 `powershell -ExecutionPolicy restricted` 以防止后续不受限制的脚本运行。
-
+1. 使用管理权限打开 PowerShell 提示符。
+2. 运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. 运行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4. 运行 `powershell -ExecutionPolicy restricted` 以防止后续不受限制的脚本运行。
 
 #### <a name="flash-drive-method"></a>Flash drive 方法
 
@@ -68,9 +67,8 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 8. 运行 `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. 删除 USB 驱动器，然后通过运行来关闭设备 `shutdown -s -t 0`
 
->[!IMPORTANT]
->完成注册之前，请勿再次打开要注册的设备。 
-
+> [!IMPORTANT]
+> 完成注册之前，请勿再次打开要注册的设备。 
 
 ### <a name="merge-hash-data"></a>合并哈希数据
 
@@ -78,16 +76,13 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
 在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 请按以下步骤操作：
 

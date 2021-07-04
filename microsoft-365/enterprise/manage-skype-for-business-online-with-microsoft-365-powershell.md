@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 使用 PowerShell for Microsoft 365 管理 Skype for Business Online 策略、每用户策略和会议设置。
-ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea4858e4ca334cdb0268312e69bef77bc9bbd86
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916676"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288979"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online
 
@@ -29,16 +29,15 @@ Skype for Business Online 管理员负责管理策略。 虽然你可以在 Micr
 
 ## <a name="before-you-start"></a>准备工作
 
-  > [!Note]
-   > Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
-   
-安装 [Teams PowerShell 模块](/microsoftteams/teams-powershell-install)。
+> [!NOTE]
+> Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
 
+安装 [Teams PowerShell 模块](/microsoftteams/teams-powershell-install)。
 
 ## <a name="connect-using-admin-credentials"></a>使用管理员凭据连接
 
 1. 打开 Windows PowerShell 命令提示符窗口并运行以下命令：
-    
+
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
@@ -46,7 +45,6 @@ Skype for Business Online 管理员负责管理策略。 虽然你可以在 Micr
    ```
 
 2. 在 “**Windows PowerShell 凭据请求**”对话框中，键入你的 管理员帐户名和密码，然后选择“**确定**”。
-
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>使用具有多重身份验证的管理员帐户进行连接
 
@@ -64,15 +62,15 @@ Skype for Business Online 管理员负责管理策略。 虽然你可以在 Micr
 4. 在“**登录到你的帐户**”对话框中，按照说明添加身份验证信息（如验证码），然后选择“**验证**”。
 
 有关详细信息，请参阅：
-  
+
 - [使用 PowerShell 管理 Skype for Business Online 策略](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 - [使用 PowerShell 指定每个用户 Skype for Business Online 策略](assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 ## <a name="see-also"></a>另请参阅
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
 
-[Skype for Business PowerShell cmdlet 参考](/powershell/module/skype/?view=skype-ps)
+[Skype for Business PowerShell cmdlet 参考](/powershell/module/skype/)

@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928244"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288511"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>使用基于 SKOS 的格式导入术语集
 
@@ -29,16 +29,16 @@ ms.locfileid: "50928244"
 2. 选择要导入术语集的术语组。
 
 3. 在命令栏中，单击“**导入术语集**”。
- 
-4.  若要下载用作模板的示例文件，请单击 **sample-metadata.ttl** 以获取使用基于 SKOS 的格式的示例文件。
- 
-5.  创建包含了要导入的术语集和术语的导入文件。
 
-6.  在“**文件格式**”下，选择 **SKOS (*.ttl)**。
+4. 若要下载用作模板的示例文件，请单击 **sample-metadata.ttl** 以获取使用基于 SKOS 的格式的示例文件。
 
-7.  单击“**浏览**”，然后导航到添加导入文件的地方。
+5. 创建包含了要导入的术语集和术语的导入文件。
 
-8.  单击 **“导入”**。 在导入完成前，请勿关闭面板。
+6. 在“**文件格式**”下，选择 **SKOS (*.ttl)**。
+
+7. 单击“**浏览**”，然后导航到添加导入文件的地方。
+
+8. 单击 **“导入”**。 在导入完成前，请勿关闭面板。
 
 成功导入文件时，将显示一条成功消息，并且将刷新术语库，以及可以导航到新创建的术语集。
 

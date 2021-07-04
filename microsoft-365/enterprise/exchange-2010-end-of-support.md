@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 已终止支持。 使用此规划路线图准备升级到本地 Exchange Online或更高版本Exchange Server版本。
-ms.openlocfilehash: f3531802283368e533ba6646415d4acc019687bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bbc7fb83537621a47a866bf0ca129a38e21f055e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926990"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289123"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 支持终止路线图
 
@@ -81,17 +81,23 @@ Microsoft 365还首先获取新功能和体验，因此组织可以立即开始�
 ### <a name="how-should-i-migrate-to-microsoft-365"></a>如何迁移到Microsoft 365？
 
 根据您的组织，有一些选项可以Microsoft 365。 首先，需要考虑一些方面，例如：
+
 - 需要移动的席位或邮箱数。
 - 希望迁移持续多久。
 - 在迁移过程中，是否需要在本地安装和部署Microsoft 365无缝集成。
- 
+
 此表显示了迁移选项以及决定使用哪种方法的最重要的因素。
+
+<br>
+
+****
 
 |迁移选项|组织规模|期限|
 |---|---|---|
 |直接转换迁移|少于 150 个席位|一周或更少|
 |最小混合迁移|少于 150 个席位|几周或更久|
 |完全混合迁移|多于 150 个席位|几周或更久|
+|
 
 以下各节概述了这些方法。 有关详细信息，请参阅 [确定迁移路径](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27)。
 
@@ -173,6 +179,10 @@ Microsoft 365还首先获取新功能和体验，因此组织可以立即开始�
 
 Exchange 2016 包含早期版本的 Exchange。 虽然某些功能仅在 Microsoft 365 中可用，但它最匹配 Microsoft 365。 查看你缺少的一些内容：
 
+<br>
+
+****
+
 |Exchange版本|功能|
 |---|---|
 |**Exchange 2013**|简化的体系结构将邮箱、客户端访问、边缘传输 (服务器角色的数量减少为三) |
@@ -183,24 +193,29 @@ Exchange 2016 包含早期版本的 Exchange。 虽然某些功能仅在 Microso
 ||改进了 DLP，并集成了SharePoint|
 ||改进了数据库恢复能力|
 ||联机文档协作|
+|
 
-|注意事项|详细信息|
+<br>
+
+****
+
+|注意事项|更多信息|
 |---|---|
-|支持结束日期|与 Exchange 2010 一样，Exchange版本都有自己的支持结束日期：<br/><br/>Exchange 2013 年 4 月 - 2023 年 4 月<br/>Exchange 2016 年 10 月 - 2025 年 10 月<br/><br/>支持结束日期越早，需要执行另一个迁移越早。 2023 年 4 月比您想象得要近很多！|
-|2013 Exchange 2016 的迁移路径|无论选择 2013 Exchange 2016，从 Exchange 到较新版本的迁移路径都是相同的Exchange 2013 Exchange版本：<br/><br/>将 Exchange 2013 或 2016 安装到现有 Exchange 2010 组织中。<br/>将服务和其他基础结构移动到 Exchange 2013 或 2016。<br/>将邮箱和公用文件夹移动到 Exchange 2013 或 2016 停止使用其余 Exchange 2010 服务器。|
+|支持结束日期|与 Exchange 2010 一样，Exchange版本都有自己的支持结束日期： <p> Exchange 2013 年 4 月 - 2023 年 4 月 <p> Exchange 2016 年 10 月 - 2025 年 10 月 <p> 支持结束日期越早，需要执行另一个迁移越早。 2023 年 4 月比您想象得要近很多！|
+|2013 Exchange 2016 的迁移路径|无论选择 2013 Exchange 2016，从 Exchange 到较新版本的迁移路径都是相同的Exchange 2013 Exchange版本： <p> 将 Exchange 2013 或 2016 安装到现有 Exchange 2010 组织中。 <p> 将服务和其他基础结构移动到 Exchange 2013 或 2016。 <p> 将邮箱和公用文件夹移动到 Exchange 2013 或 2016 停止使用其余 Exchange 2010 服务器。|
 |版本共存|迁移到 Exchange 2013 或 Exchange 2016 时，可以将任一版本安装到现有 Exchange 2010 组织中。 这使您能够在 2013 或 Exchange 2016 Exchange安装一台或多台服务器，并执行迁移。|
-|服务器硬件|服务器硬件要求自 2010 Exchange已更改。 确保你的硬件兼容。 在此处了解有关每个版本的硬件要求更多信息：<br/><br/>[Exchange 2016 系统要求](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)<br/>[Exchange 2013 系统要求](/Exchange/exchange-2013-system-requirements-exchange-2013-help)<br/><br/>随着性能Exchange以及较新服务器中的计算能力和存储容量的提升，您可能需要更少的服务器来支持相同数量的邮箱。|
-|操作系统版本|每个版本支持的最低操作系统版本为：<br/><br/>Exchange 2016 - Windows Server 2012<br/>Exchange 2013 - Windows Server 2008 R2 SP1<br/><br/>有关操作系统支持详细信息，请参阅Exchange[可支持性矩阵。](/exchange/plan-and-deploy/supportability-matrix)|
-|Active Directory 林功能级别|每个版本支持的最低 Active Directory 林功能级别为：<br/><br/>Exchange 2016 - Windows Server 2008 R2 SP1<br/>Exchange 2013 - Windows Server 2003<br/><br/>有关林功能级别支持的信息，请参阅Exchange[可支持性矩阵。](/exchange/plan-and-deploy/supportability-matrix)|
-|Office客户端版本|每个版本的Office支持的最低客户端版本为：<br/><br/>Exchange 2016 - Office 2010 (最新更新) <br/>Exchange 2013 - Office 2007 SP3<br/><br/>有关支持性矩阵Office客户端支持Exchange[详细信息](/exchange/plan-and-deploy/supportability-matrix)。||| 
-
+|服务器硬件|服务器硬件要求自 2010 Exchange已更改。 确保你的硬件兼容。 在此处了解有关每个版本的硬件要求更多信息： <p> [Exchange 2016 系统要求](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Exchange 2013 系统要求](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> 随着性能Exchange以及较新服务器中的计算能力和存储容量的提升，您可能需要更少的服务器来支持相同数量的邮箱。|
+|操作系统版本|每个版本支持的最低操作系统版本为： <p> Exchange 2016 - Windows Server 2012 <p> Exchange 2013 - Windows Server 2008 R2 SP1 <p> 有关操作系统支持详细信息，请参阅Exchange[可支持性矩阵。](/exchange/plan-and-deploy/supportability-matrix)|
+|Active Directory 林功能级别|每个版本支持的最低 Active Directory 林功能级别为： <p> Exchange 2016 - Windows Server 2008 R2 SP1 <p> Exchange 2013 - Windows Server 2003 <p> 有关林功能级别支持的信息，请参阅Exchange[可支持性矩阵。](/exchange/plan-and-deploy/supportability-matrix)|
+|Office客户端版本|每个版本的Office支持的最低客户端版本为： <p> Exchange 2016 - Office 2010 (最新更新)  <p> Exchange 2013 - Office 2007 SP3 <p> 有关支持性矩阵Office客户端支持Exchange[详细信息](/exchange/plan-and-deploy/supportability-matrix)。|
+|
 
 使用以下资源来帮助进行迁移：
 
 - [Exchange部署助理](/exchange/exchange-deployment-assistant)
-- Exchange [2016、2013](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016)的 Active Directory[架构更改](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
-- [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016)Exchange [2013 的系统要求](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
-- [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016)Exchange [2013 年的先决条件](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
+- Exchange [2016、2013](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true)的 Active Directory[架构更改](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
+- [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true)Exchange [2013 的系统要求](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
+- [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true)Exchange [2013 年的先决条件](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 客户端和服务器以及 Windows 7 的选项摘要
 

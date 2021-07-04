@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861547"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289483"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -36,8 +36,8 @@ ms.locfileid: "52861547"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
->[!IMPORTANT]
->本主题包含有关如何在企业环境中为 Linux 上的 Defender for Endpoint 设置首选项的说明。 如果你有兴趣从命令行在设备上配置产品，请参阅 [资源](linux-resources.md#configure-from-the-command-line)。
+> [!IMPORTANT]
+> 本主题包含有关如何在企业环境中为 Linux 上的 Defender for Endpoint 设置首选项的说明。 如果你有兴趣从命令行在设备上配置产品，请参阅 [资源](linux-resources.md#configure-from-the-command-line)。
 
 在企业环境中，Linux 上的 Defender for Endpoint 可通过配置文件进行管理。 此配置文件从你选择的管理工具部署。 企业管理的首选项优先于在设备上本地设置的首选项。 换句话说，企业中的用户不能更改通过此配置文件设置的首选项。
 
@@ -55,169 +55,226 @@ ms.locfileid: "52861547"
 
 配置文件 *的 antivirusEngine* 部分用于管理产品的防病毒组件的首选项。
 
-|||
-|:---|:---|
-| **键** | antivirusEngine |
-| **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|antivirusEngine|
+|**数据类型**|字典 (嵌套首选项) |
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
 确定是否在启用实时 (时扫描) 文件。
 
-|||
-|:---|:---|
-| **键** | enableRealTimeProtection |
-| **数据类型** | Boolean |
-| **可能的值** | true (默认值)  <br/> false |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|enableRealTimeProtection|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认值)  <p> false|
+|
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
 
 确定防病毒引擎是否在被动模式下运行。 在被动模式下：
+
 - 实时保护已关闭。
 - 按需扫描已打开。
 - 自动威胁修正已关闭。
 - 安全智能更新已打开。
 - 状态菜单图标处于隐藏状态。
 
-|||
-|:---|:---|
-| **键** | passiveMode |
-| **数据类型** | Boolean |
-| **可能的值** | false（默认值） <br/> true |
-| **Comments** | 适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|passiveMode|
+|**数据类型**|Boolean|
+|**可能的值**|false（默认值） <p> true|
+|**Comments**|适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。|
+|
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
 
 指定排除项的合并策略。 它可以是管理员定义的排除项和用户定义的排除项 () 管理员定义的排除项 `merge` `admin_only` () 。 此设置可用于限制本地用户定义自己的排除项。
 
-|||
-|:---|:---|
-| **键** | exclusionsMergePolicy |
-| **数据类型** | String |
-| **可能的值** | 合并 (默认)  <br/> admin_only |
-| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|exclusionsMergePolicy|
+|**数据类型**|String|
+|**可能的值**|合并 (默认)  <p> admin_only|
+|**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
+|
 
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
  (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素) 
 
-|||
-|:---|:---|
-| **键** | 排除项 |
-| **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
-|||
+<br>
 
-**排除类型**
+****
+
+|说明|值|
+|---|---|
+|**Key**|排除项|
+|**数据类型**|字典 (嵌套首选项) |
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|
+
+##### <a name="type-of-exclusion"></a>排除类型
 
 指定从扫描中排除的内容的类型。
 
-|||
-|:---|:---|
-| **键** | $type |
-| **数据类型** | String |
-| **可能的值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
-|||
+<br>
 
-**排除内容的路径**
+****
+
+|说明|值|
+|---|---|
+|**Key**|$type|
+|**数据类型**|String|
+|**可能的值**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+|
+
+##### <a name="path-to-excluded-content"></a>排除内容的路径
 
 用于按完整文件路径从扫描中排除内容。
 
-|||
-|:---|:---|
-| **键** | path |
-| **数据类型** | String |
-| **可能的值** | 有效路径 |
-| **Comments** | 仅在 *排除$type**时适用* |
-|||
+<br>
 
-**文件 (目录的路径)**
+****
+
+|说明|值|
+|---|---|
+|**Key**|path|
+|**数据类型**|String|
+|**可能的值**|有效路径|
+|**Comments**|仅在 *排除$type**时适用*|
+|
+
+##### <a name="path-type-file--directory"></a>文件 (目录的路径) 
 
 指示 path *属性* 是否引用文件或目录。
 
-|||
-|:---|:---|
-| **键** | isDirectory |
-| **数据类型** | Boolean |
-| **可能的值** | false（默认值） <br/> true |
-| **Comments** | 仅在 *排除$type**时适用* |
-|||
+<br>
 
-**从扫描中排除的文件扩展名**
+****
+
+|说明|值|
+|---|---|
+|**Key**|isDirectory|
+|**数据类型**|Boolean|
+|**可能的值**|false（默认值） <p> true|
+|**Comments**|仅在 *排除$type**时适用*|
+|
+
+##### <a name="file-extension-excluded-from-the-scan"></a>从扫描中排除的文件扩展名
 
 用于按文件扩展名从扫描中排除内容。
 
-|||
-|:---|:---|
-| **键** | extension |
-| **数据类型** | String |
-| **可能的值** | 有效的文件扩展名 |
-| **Comments** | 仅在 *排除**$type FileExtension 时适用* |
-|||
+<br>
 
-**从扫描中排除的进程**
+****
+
+|说明|值|
+|---|---|
+|**Key**|extension|
+|**数据类型**|String|
+|**可能的值**|有效的文件扩展名|
+|**Comments**|仅在 *排除**$type FileExtension 时适用*|
+|
+
+##### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程*
 
 指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称来指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
 
-|||
-|:---|:---|
-| **键** | name |
-| **数据类型** | String |
-| **可能的值** | 任何字符串 |
-| **Comments** | 仅在 *排除**$type FileName 时适用* |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|name|
+|**数据类型**|String|
+|**可能的值**|任何字符串|
+|**Comments**|仅在 *排除**$type FileName 时适用*|
+|
 
 #### <a name="allowed-threats"></a>允许的威胁
 
 威胁列表 (名称) 产品未阻止但允许运行的威胁列表。
 
-|||
-|:---|:---|
-| **键** | allowedThreats |
-| **数据类型** | 字符串数组 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|allowedThreats|
+|**数据类型**|字符串数组|
+|
 
 #### <a name="disallowed-threat-actions"></a>不允许威胁操作
 
 限制设备的本地用户在检测到威胁时可采取的操作。 此列表中包含的操作不会显示在用户界面中。
 
-|||
-|:---|:---|
-| **键** | disallowedThreatActions |
-| **数据类型** | 字符串数组 |
-| **可能的值** | 允许 (限制用户允许威胁)  <br/> restore (限制用户从隔离网站还原)  |
-| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|disallowedThreatActions|
+|**数据类型**|字符串数组|
+|**可能的值**|允许 (限制用户允许威胁)  <p> restore (限制用户从隔离网站还原) |
+|**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
+|
 
 #### <a name="threat-type-settings"></a>威胁类型设置
 
 防病毒 *引擎中的 threatTypeSettings* 首选项用于控制产品如何处理某些威胁类型。
 
-|||
-|:---|:---|
-| **键** | threatTypeSettings |
-| **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
-|||
+<br>
 
-**威胁类型**
+****
+
+|说明|值|
+|---|---|
+|**Key**|threatTypeSettings|
+|**数据类型**|字典 (嵌套首选项) |
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|
+
+##### <a name="threat-type"></a>威胁类型
 
 配置其行为的威胁类型。
 
-|||
-|:---|:---|
-| **键** | 注册表项 |
-| **数据类型** | String |
-| **可能的值** | potentially_unwanted_application <br/> archive_bomb |
-|||
+<br>
 
-**要采取的措施**
+****
+
+|说明|值|
+|---|---|
+|**Key**|注册表项|
+|**数据类型**|String|
+|**可能的值**|potentially_unwanted_application <p> archive_bomb|
+|
+
+##### <a name="action-to-take"></a>要采取的措施
 
 遇到上一节中指定的类型的威胁时要采取的操作。 可以是：
 
@@ -225,81 +282,109 @@ ms.locfileid: "52861547"
 - **阻止**：设备受到此类型威胁的保护，并且你将在安全控制台中收到通知。
 - **关闭**：设备不受此类型威胁的保护，并且不会记录任何内容。
 
-|||
-|:---|:---|
-| **键** | 值 |
-| **数据类型** | String |
-| **可能的值** | 审核 (默认)  <br/> block <br/> off |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|值|
+|**数据类型**|String|
+|**可能的值**|审核 (默认)  <p> block <p> off|
+|
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
 指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
-|||
-|:---|:---|
-| **键** | threatTypeSettingsMergePolicy |
-| **数据类型** | String |
-| **可能的值** | 合并 (默认)  <br/> admin_only |
-| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|threatTypeSettingsMergePolicy|
+|**数据类型**|String|
+|**可能的值**|合并 (默认)  <p> admin_only|
+|**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
+|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
 
 指定结果在设备的扫描历史记录中保留的天数。 旧扫描结果将从历史记录中删除。 也从磁盘中删除的旧隔离文件。
 
-|||
-|:---|:---|
-| **键** | scanResultsRetentionDays |
-| **数据类型** | String |
-| **可能的值** | 90 (默认值) 。 允许的值从 1 天到 180 天。 |
-| **Comments** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|scanResultsRetentionDays|
+|**数据类型**|String|
+|**可能的值**|90 (默认值) 。 允许的值从 1 天到 180 天。|
+|**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
+|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>防病毒扫描历史记录中的最大项目数
 
 指定在扫描历史记录中保留的最大条目数。 条目包括过去执行的所有按需扫描以及所有防病毒检测。
 
-|||
-|:---|:---|
-| **键** | scanHistoryMaximumItems |
-| **数据类型** | String |
-| **可能的值** | 10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。 |
-| **Comments** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|scanHistoryMaximumItems|
+|**数据类型**|String|
+|**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
+|**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
+|
 
 ### <a name="cloud-delivered-protection-preferences"></a>云提供的保护首选项
 
 配置文件 *中的 cloudService* 条目用于配置产品的云驱动保护功能。
 
-|||
-|:---|:---|
-| **键** | cloudService |
-| **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|cloudService|
+|**数据类型**|字典 (嵌套首选项) |
+|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云提供的保护
 
 确定是否在设备上启用云保护。 若要提高服务的安全性，我们建议保持启用此功能。
 
-|||
-|:---|:---|
-| **键** | enabled |
-| **数据类型** | Boolean |
-| **可能的值** | true (默认值)  <br/> false |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|enabled|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认值)  <p> false|
+|
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
 
 诊断数据用于使 Defender for Endpoint 保持安全和最新，检测、诊断和修复问题，并改进产品。 此设置确定产品发送给 Microsoft 的诊断级别。
 
-|||
-|:---|:---|
-| **键** | diagnosticLevel |
-| **数据类型** | String |
-| **可能的值** | 可选 (默认)  <br/> 必需 |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|diagnosticLevel|
+|**数据类型**|String|
+|**可能的值**|可选 (默认)  <p> 必需|
+|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>启用/禁用自动示例提交
 
@@ -309,23 +394,31 @@ ms.locfileid: "52861547"
 - **保险箱：** 只有不包含个人身份信息的可疑样本 (个人身份) 自动提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
-|||
-|:---|:---|
-| **键** | automaticSampleSubmissionConsent |
-| **数据类型** | String |
-| **可能的值** | 无 <br/> 安全 (默认)  <br/> all |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|automaticSampleSubmissionConsent|
+|**数据类型**|String|
+|**可能的值**|无 <p> 安全 (默认)  <p> all|
+|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
 
 确定是否自动安装安全智能更新：
 
-|||
-|:---|:---|
-| **键** | automaticDefinitionUpdateEnabled |
-| **数据类型** | Boolean |
-| **可能的值** | true (默认值)  <br/> false |
-|||
+<br>
+
+****
+
+|说明|值|
+|---|---|
+|**Key**|automaticDefinitionUpdateEnabled|
+|**数据类型**|Boolean|
+|**可能的值**|true (默认值)  <p> false|
+|
 
 ## <a name="recommended-configuration-profile"></a>建议的配置文件
 
@@ -444,10 +537,12 @@ python -m json.tool mdatp_managed.json
 如果 JSON 格式良好，则上述命令会输出回终端，并返回 的退出代码 `0` 。 否则，将显示描述该问题的错误，并且该命令将返回 的退出代码 `1` 。
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>验证文件mdatp_managed.js是否正常工作
+
 若要验证 /etc/opt/microsoft/mdatp/managed/mdatp_managed.json 是否正常工作，应在这些设置旁边看到"[托管]"：
+
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
-- passice_mode_enabled
+- passive_mode_enabled
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 

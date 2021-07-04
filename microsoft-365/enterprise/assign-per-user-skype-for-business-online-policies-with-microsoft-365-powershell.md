@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 PowerShell Microsoft 365 Online 策略分配每用户Skype for Business设置。
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905400"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288079"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365
 
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 此命令将分配给 Alex 的外部访问策略的名称设置为空值 ($Null) 。 Null 表示"nothing"。 换句话说，没有向 Alex 分配外部访问策略。 未向用户分配外部访问策略时，该用户随后会由全局策略管理。
-  
 
 ## <a name="managing-large-numbers-of-users"></a>管理大量用户
 
-若要管理 1000 (用户数超过 1000) ，您需要使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet 通过脚本块对命令进行批处理。  在之前的示例中，每次执行 cmdlet 时，它必须设置调用，然后等待结果，然后再发送回。  使用脚本块时，这允许远程执行 cmdlet，一旦完成，将数据发送回。 
+若要管理 1000 (用户数超过 1000) ，您需要使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet 通过脚本块对命令进行批处理。  在之前的示例中，每次执行 cmdlet 时，它必须设置调用，然后等待结果，然后再发送回。  使用脚本块时，这允许远程执行 cmdlet，一旦完成，将数据发送回。
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

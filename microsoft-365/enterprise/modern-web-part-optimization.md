@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何使用页面诊断优化 SharePoint Online 新式网站页面中的 Web 部件性能。
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929056"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288895"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
 
 SharePoint Online 新式网站页面包含可能影响整个页面加载时间的 Web 部件。 本文将帮助你了解如何确定页面内的 Web 部件在哪些方面影响了用户感知到的延迟，以及如何修正常见问题。
 
->[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)。
+> [!NOTE]
+> 要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>使用适用于 SharePoint 的页面诊断工具分析 Web 部件
 
 适用于 SharePoint 的页面诊断工具是一款面向新 Microsoft Edge（https://www.microsoft.com/edge) 和 Chrome 浏览器）的浏览器扩展，可用于分析 SharePoint Online 新式门户和经典发布网站页面。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](page-diagnostics-for-spo.md)。
 
->[!NOTE]
->页面诊断工具仅适用于 SharePoint Online，无法在 SharePoint 系统页面上使用。
+> [!NOTE]
+> 页面诊断工具仅适用于 SharePoint Online，无法在 SharePoint 系统页面上使用。
 
 通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网站页面时，可在“_诊断测试_”窗格的“**Web 部件影响页面加载时间**”结果中，查看有关超出基线指标的 Web 部件的信息。
 
@@ -62,10 +62,13 @@ SharePoint Online 新式网站页面包含可能影响整个页面加载时间�
 - **模块** 加载显示下载、评估和加载扩展 JavaScript 和 CSS 文件所花时间。 然后，它将启动 Init 进程。
 - **延迟加载** 显示页面主部分中未显示的 Web 部件的延迟加载时间。 在某些情况下，要呈现的 Web 部件太多，它们排队等待呈现以尽可能缩短页面加载时间。
 - **Init** 显示 Web 部件初始化数据所花时间。
-    它是异步调用，init 时间是返回的承诺解析时 onInit 函数的时间计算。
+
+  它是异步调用，init 时间是返回的承诺解析时 onInit 函数的时间计算。
+
 - **Render** 显示一旦模块加载和 (Init) 用户界面呈现 UI 所花时间。
-    JavaScript 执行时间将 DOM 装载到文档库 (页面) 。
-    异步资源（例如图像）的呈现可能需要额外的时间才能完成。
+
+  JavaScript 执行时间将 DOM 装载到文档库 (页面) 。
+  异步资源（例如图像）的呈现可能需要额外的时间才能完成。
 
 提供此信息是为了帮助设计人员和开发人员解决问题。 此信息应提供给你的设计和开发团队。
 

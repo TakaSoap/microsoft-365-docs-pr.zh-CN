@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: 我们将为 Microsoft Defender for Office 365 发布新的警报策略。 我们还将停用已由新策略替换的两个现有警报策略。
-ms.openlocfilehash: 4a433a5357a524f396935151e2c5895213c6524c
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 5791c909cc9cb94abab5d0dd013d250939fae160
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583312"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289183"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中新的警报策略
 
@@ -56,7 +56,7 @@ Microsoft Defender for Office 365 引入了与传递检测相关的新增和改�
 | **报告为钓鱼的电子邮件异常增加** | A00D8C62-9320-4EEA-A7E5-966B9AC09558 | High| Medium |
 | **管理员提交结果已完成** | AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41 | 低| 信息 |
 | **创建转发/重定向规则** | D59A8FD4-1272-41EE-9408-86F7BCF72479 | 低| 信息 |
-| 电子 **开始或导出"发现"搜索**| 6FDC5710-3998-47F0-AFBB-57CEFD7378AE | 中| 信息 |
+| **电子数据展示搜索已启动或已导出** | 6FDC5710-3998-47F0-AFBB-57CEFD7378A | Meduim | 信息 |
 |||||
 
 ## <a name="when-will-these-changes-happen"></a>这些更改将在何时进行

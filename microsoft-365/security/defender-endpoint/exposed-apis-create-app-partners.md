@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 695dfbec007b259b7daec2346201737d57c4ad30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842142"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289771"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>合作伙伴通过 Microsoft Defender 终结点 API 访问
 
@@ -60,13 +60,13 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 3. 在注册表单中：
 
-    - 为应用程序选择一个名称。
+   - 为应用程序选择一个名称。
 
-    - 支持的帐户类型 - 任何组织目录中的帐户。
+   - 支持的帐户类型 - 任何组织目录中的帐户。
 
-    - 重定向 URI - 类型：Web、URI： https://portal.azure.com
+   - 重定向 URI - 类型：Web、URI： https://portal.azure.com
 
-    ![合作伙伴Microsoft Azure注册的图像](images/atp-api-new-app-partner.png)
+   ![合作伙伴Microsoft Azure注册的图像](images/atp-api-new-app-partner.png)
 
 
 4. 允许应用程序访问 Microsoft Defender for Endpoint，并为其分配完成集成所需的最低权限集。
@@ -94,13 +94,13 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 5. 选择 **"授予同意"**
 
-    - **注意**：每次添加权限时，都必须选择"授予新权限的许可"才能生效。
+   - **注意**：每次添加权限时，都必须选择"授予新权限的许可"才能生效。
 
-    ![授予权限的图像](images/grant-consent.png)
+   ![授予权限的图像](images/grant-consent.png)
 
 6. 向应用程序添加密码。
 
-    - 选择 **"&** 密码"，将说明添加到密码，然后选择"添加 **"。**
+   - 选择 **"&** 密码"，将说明添加到密码，然后选择"添加 **"。**
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
@@ -114,36 +114,36 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 8. 将应用程序添加到客户的租户。
 
-    你需要在打算使用应用程序的每个客户租户中批准你的应用程序。 这是因为应用程序代表你的客户与 Microsoft Defender for Endpoint 应用程序交互。
+   你需要在打算使用应用程序的每个客户租户中批准你的应用程序。 这是因为应用程序代表你的客户与 Microsoft Defender for Endpoint 应用程序交互。
 
-    具有客户 **租户全局管理员** 的用户需要选择同意链接并批准你的应用程序。
+   具有客户 **租户全局管理员** 的用户需要选择同意链接并批准你的应用程序。
 
-    同意链接的形式为：
+   同意链接的形式为：
 
-    ```
-    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
-    ```
+   ```http
+   https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+   ```
 
-    其中，00000000-0000-0000-0000-00000000000000
+   其中，00000000-0000-0000-0000-00000000000000
 
-    单击同意链接后，与客户租户的全局管理员登录并许可应用程序。
+   单击同意链接后，与客户租户的全局管理员登录并许可应用程序。
 
-    ![同意图像](images/app-consent-partner.png)
+   ![同意图像](images/app-consent-partner.png)
 
-    此外，你将需要请求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
+   此外，你将需要请求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
 
-- **完成！** 已成功注册应用程序！ 
+- **完成！** 已成功注册应用程序！
 - 有关令牌获取和验证，请参阅以下示例。
 
-## <a name="get-an-access-token-example"></a>获取访问令牌示例：
+## <a name="get-an-access-token-example"></a>获取访问令牌示例
 
 **注意：** 若要代表客户获取访问令牌，请使用客户的租户 ID 获取以下令牌。
 
-<br>有关 AAD 令牌详细信息，请参阅 [AAD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+有关 AAD 令牌详细信息，请参阅 [AAD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
-```
+```powershell
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
@@ -165,21 +165,21 @@ Out-File -FilePath "./Latest-token.txt" -InputObject $token
 return $token
 ```
 
-### <a name="using-c"></a>使用C#：
+### <a name="using-c"></a>使用 C#
 
->以下代码已使用 Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 进行测试
+> 以下代码已使用 Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 进行测试
 
 - 创建新的控制台应用程序
 - 安装NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - 使用 添加以下内容
 
-    ```
+    ```console
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- 复制/粘贴应用程序中的以下代码 (请不要忘记更新三个 ```tenantId, appId, appSecret``` 变量：) 
+- 复制/粘贴应用程序中的以下代码 (请不要忘记更新三个变量：、和 `tenantId` `appId` `appSecret`) 
 
-    ```
+    ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -192,7 +192,6 @@ return $token
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
-
 
 ### <a name="using-python"></a>使用 Python
 
@@ -209,19 +208,20 @@ return $token
 - 将TENANT_ID设置为想要使用你的应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
 - 运行以下命令：
 
-```
+```curl
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 您将获得以下形式的答案：
 
-```
+```console
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
 ## <a name="validate-the-token"></a>验证令牌
 
 安全检查以确保你获得正确的令牌：
+
 - 将上一步获取的令牌复制/粘贴到 [JWT](https://jwt.ms) 中，以便解码它
 - 验证是否获取具有所需权限的"角色"声明
 - 在下面屏幕截图中，你可以看到从具有 Microsoft Defender for Endpoint 的多个权限的应用程序获取的解码令牌：
@@ -235,8 +235,9 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 - 将你发送到"Bearer {token}"的 Http 请求中的授权标头 (Bearer 是授权方案) 
 - 令牌的过期时间为 1 小时 (你可以使用相同的令牌发送多个请求) 
 
-- 发送请求以使用请求获取警报列表 **C#** 
-    ```
+- 发送请求以使用请求获取警报列表 **C#**
+
+    ```csharp
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
@@ -249,5 +250,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
     ```
 
 ## <a name="see-also"></a>另请参阅
+
 - [支持的 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [代表用户访问 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

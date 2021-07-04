@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226955"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288367"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -107,35 +107,34 @@ ms.locfileid: "53226955"
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.  导航到“[Microsoft 合规性扩展 - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
+2. 导航到“[Microsoft 合规性扩展 - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
 
-3.  按照 Chrome Web Store 页面上的说明安装扩展。
+3. 按照 Chrome Web Store 页面上的说明安装扩展。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 进行部署
 
 使用此设置方法进行组织范围的部署
 
-
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>通过 Microsoft Endpoint Manager 启用所需的注册表项
 
-1.  创建具有以下内容的 PowerShell 脚本：
+1. 创建具有以下内容的 PowerShell 脚本：
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.  登录 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
+2. 登录 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
 
-3.  导航到“**设备**” > “**脚本**”，并选择“**添加**”。
+3. 导航到“**设备**” > “**脚本**”，并选择“**添加**”。
 
-4.  浏览到系统提示时创建的脚本位置。
+4. 浏览到系统提示时创建的脚本位置。
 
-5.  使用以下设置：
+5. 使用以下设置：
     1. 使用登录凭据运行此脚本：是
     1. 执行脚本签名检查：否
     1. 在 64 位 PowerShell 主机中运行脚本：是
 
-6.  选择适当的设备组并应用该策略。
+6. 选择适当的设备组并应用该策略。
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft Endpoint Manager 强制安装步骤
 
@@ -143,27 +142,27 @@ ms.locfileid: "53226955"
 
  引入 ADMX 后，可按照以下步骤为此扩展创建配置文件。
 
-1.  登录 Microsoft Endpoint Manager 管理中心 (https://endpoint.microsoft.com)。
+1. 登录 Microsoft Endpoint Manager 管理中心 (https://endpoint.microsoft.com)。
 
-2.  导航到配置文件。
+2. 导航到配置文件。
 
-3.  选择“**创建配置文件**”。
+3. 选择“**创建配置文件**”。
 
-4.  选择“**Windows 10**”平台。
+4. 选择“**Windows 10**”平台。
 
-5.  选择“**自定义**”配置文件类型。
+5. 选择“**自定义**”配置文件类型。
 
-6.  选择“**设置**”选项卡。
+6. 选择“**设置**”选项卡。
 
-7.  选择“**添加**”。
+7. 选择“**添加**”。
 
-8.  输入以下策略信息。
+8. 输入以下策略信息。
 
     OMA-URI： `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     数据类型`String`<br/>
     值：`<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.  单击“创建”。
+9. 单击“创建”。
 
 ### <a name="deploy-using-group-policy"></a>使用组策略部署
 
@@ -171,25 +170,25 @@ ms.locfileid: "53226955"
 
 1. 设备必须可通过组策略进行管理，并且需要将所有 Chrome ADMX 导入组策略中央存储。 有关详细信息，请参阅 [如何在 Windows 中创建和管理组策略管理模板的中央存储](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
 
-2.  使用下面的方法创建 PowerShell 脚本：
+2. 使用下面的方法创建 PowerShell 脚本：
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.  打开“**组策略管理控制台**”并导航到组织单位 (OU)。
+3. 打开“**组策略管理控制台**”并导航到组织单位 (OU)。
 
-4.  右键单击并选择“**在此域中创建 GPO，并在此处链接它**”。 系统提示时，为此组策略对象 (GPO) 分配一个描述性名称，然后完成创建。
+4. 右键单击并选择“**在此域中创建 GPO，并在此处链接它**”。 系统提示时，为此组策略对象 (GPO) 分配一个描述性名称，然后完成创建。
 
-5.  右键单击“GPO”，然后选择“**编辑**”。
+5. 右键单击“GPO”，然后选择“**编辑**”。
 
-6.  转到“**计算机配置**” > “**首选项**” > **控制面板设置** > “**已计划任务**”。
+6. 转到“**计算机配置**” > “**首选项**” > **控制面板设置** > “**已计划任务**”。
 
-7.  通过右键单击，然后选择“**新建任务**” > “**立即任务（至少为 Windows 7）**”来创建新的立即任务。
+7. 通过右键单击，然后选择“**新建任务**” > “**立即任务（至少为 Windows 7）**”来创建新的立即任务。
 
-8.  命名任务并提供说明。
+8. 命名任务并提供说明。
 
-9.  选择相应的帐户以运行立即任务，例如 NT Authority
+9. 选择相应的帐户以运行立即任务，例如 NT Authority
 
 10. 选择“**以最高权限运行**”。
 
@@ -203,21 +202,21 @@ ms.locfileid: "53226955"
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>将 Chrome 扩展添加到 ForceInstall 列表
 
-1.  在组策略管理编辑器中，导航到“OU”。
+1. 在组策略管理编辑器中，导航到“OU”。
 
-2.  展开以下路径“**计算机/用户配置**” > “**策略**” > “**管理模板**” > “**经典管理模板**” > “**Google**” > “**Google Chrome**” > “**扩展**”。 此路径可能有所不同，具体取决于你的配置。
+2. 展开以下路径“**计算机/用户配置**” > “**策略**” > “**管理模板**” > “**经典管理模板**” > “**Google**” > “**Google Chrome**” > “**扩展**”。 此路径可能有所不同，具体取决于你的配置。
 
-3.  选择“**配置强制安装的扩展列表**”。
+3. 选择“**配置强制安装的扩展列表**”。
 
-4.  右键单击并选择“**编辑**”。
+4. 右键单击并选择“**编辑**”。
 
-5.  选择“**已启用**”。
+5. 选择“**已启用**”。
 
-6.  选择“**显示**”。
+6. 选择“**显示**”。
 
-7.  在“**值**”下添加以下条目：`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. 在“**值**”下添加以下条目：`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.  依次选择“**确定**”和“**应用**”。
+8. 依次选择“**确定**”和“**应用**”。
 
 ### <a name="test-the-extension"></a>测试扩展
 

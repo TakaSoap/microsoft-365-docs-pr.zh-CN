@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: c3928b5814332f2585adc613e1e84cbe5cc883a0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925607"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287971"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 
@@ -153,15 +153,15 @@ Microsoft 托管桌面维护托管[设备的所有](/deployoffice/configure-upda
 
 有许多其他策略Microsoft 托管桌面尚未设置为服务的一部分。 可以使用使用云策略服务Microsoft Intune配置Office[策略](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied)。 若要设置这些策略，请按照以下步骤操作：
 
-1.  登录到管理Microsoft Endpoint Manager中心。
-2.  为 **要>的应用选择Office策略>应用**
-3.  在" **创建策略** 配置"页上，执行以下操作：
+1. 登录到管理Microsoft Endpoint Manager中心。
+2. 为 **要>的应用选择Office策略>应用**
+3. 在" **创建策略** 配置"页上，执行以下操作：
     - 输入名称。
     - 提供可选 (说明) 。
-    - 在 **作业** 中，选择此策略是应用于 Microsoft 365 企业应用版 所有用户，还是仅应用于使用 Web Office匿名访问文档的用户。
+    - 在 **分配** 中，选择此策略是应用于 Microsoft 365 企业应用版 所有用户，还是仅应用于使用 Office 网页版 匿名访问文档的用户。
     - 选择分配给策略配置的基于 AAD 的安全组。 每个策略配置只能分配给一个组，并且只能为每个组分配一个策略配置。
-    - 配置要包含在策略配置中的策略设置。 可以搜索策略设置名称以查找要配置的策略设置。 还可以筛选应用程序、策略是否是建议的安全基线以及策略是否已配置。 平台列指示策略是应用于Microsoft 365 企业应用版设备Windows、Office或全部应用。
-4.  做出选择后，选择"创建 **"。**
+    - 配置要包含在策略配置中的策略设置。 可以搜索策略设置名称以查找要配置的策略设置。 还可以筛选应用程序、策略是否是建议的安全基线以及策略是否已配置。 平台列指示策略是应用于Microsoft 365 企业应用版设备Windows或Office 网页版应用。
+4. 做出选择后，选择"创建 **"。**
 
 > [!NOTE]
 > Office配置策略仅支持基于用户的部署

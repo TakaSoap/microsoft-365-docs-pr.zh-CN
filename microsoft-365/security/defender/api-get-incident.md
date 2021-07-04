@@ -1,6 +1,6 @@
 ---
 title: 获取事件 API
-description: 了解如何使用 Get incidents API 在 Microsoft 365 Defender 中获取单个事件。
+description: 了解如何使用"获取事件"API 在事件Microsoft 365 Defender。
 keywords: api， 图形 api， 受支持的 api， 获取， 文件， 哈希
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c578a353501ac7b38ac541b0200ffaad1d6743e1
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888442"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289603"
 ---
 # <a name="get-incident-information-api"></a>获取事件信息 API
 
@@ -38,27 +38,31 @@ ms.locfileid: "52888442"
 
 
 ## <a name="api-description"></a>API 说明
+
 按 ID 检索特定事件
 
-
 ## <a name="limitations"></a>限制
+
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 
 
-权限类型 |   权限  |   权限显示名称
+权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 |   Incident.Read.All | "读取所有事件"
-应用程序 |   Incident.ReadWrite.All |    "读取和写入所有事件"
+Application | Incident.Read.All | "读取所有事件"
+Application | Incident.ReadWrite.All | "读取和写入所有事件"
 委派（工作或学校帐户） | Incident.Read | "读取事件"
 委派（工作或学校帐户） | Incident.ReadWrite | "读取和写入事件"
 
->[!Note]
+> [!NOTE]
+>
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"
->- 响应将仅包括用户向其中公开的事件
+>
+> - 用户至少需要具有以下角色权限："查看数据"
+> - 响应将仅包括用户向其中公开的事件
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -70,10 +74,10 @@ GET .../api/incidents/{id}
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应

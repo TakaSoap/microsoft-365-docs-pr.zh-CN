@@ -18,107 +18,117 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务时有关服务的其他设备信息。
-ms.openlocfilehash: cdb3278e1d96b2ebdced122ab53db716c3195d8c
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 684af01b2d90f44b2cda1cf050d1e4db70f92915
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903867"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289435"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
-连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 Azure AD 关系。 
+连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 Azure AD 关系。
 
 ## <a name="azure-ad-joined-windows-10-devices"></a>加入 Azure AD Windows 10设备
-如果Windows 10已加入 Azure AD，则它必须与 Azure AD 断开连接，并且必须再次连接。 
+如果Windows 10已加入 Azure AD，则它必须与 Azure AD 断开连接，并且必须再次连接。
 
 [![Azure AD 设备Re-Join Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后通过三个步骤重新加入该设备。 
+如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后通过三个步骤重新加入该设备。
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>步骤 1：确定设备是否加入 Azure ID
-1.  使用你的工作帐户登录。
-2.  转到帐户 **设置**  >    >  **访问工作或学校**。 
-3.  在列表中查找连接到 **[...]的帐户s Azure AD**. 
-4.  如果存在已连接的帐户，请继续执行步骤 2。 
+
+1. 使用你的工作帐户登录。
+2. 转到帐户 **设置**  >    >  **访问工作或学校**。
+3. 在列表中查找连接到 **[...]的帐户s Azure AD**.
+4. 如果存在已连接的帐户，请继续执行步骤 2。
+
 ### <a name="step-2-disconnect-the-device-from-azure-ad"></a>步骤 2：断开设备与 Azure AD 连接
-1.  单击 **已连接** 的工作或学校帐户上的"断开连接"。 
-2.  确认断开连接两次。 
-3.  输入本地管理员用户名和密码。 设备已断开连接。
-4.  重新启动设备。
+
+1. 单击 **已连接** 的工作或学校帐户上的"断开连接"。
+2. 确认断开连接两次。
+3. 输入本地管理员用户名和密码。 设备已断开连接。
+4. 重新启动设备。
+
 ### <a name="step-3-join-the-device-to-azure-ad"></a>步骤 3：将设备加入 Azure AD
-1.  使用本地管理员的凭据登录。
-2.  转到帐户 **设置**  >    >  **访问工作或学校**。
-3.  单击“**连接**”。
-4.  **重要** 提示：单击 **加入 Azure AD**。
-5.  输入工作帐户的电子邮件地址和密码。 设备已连接。
-6.  重新启动设备。
-7.  使用你的工作帐户的电子邮件地址和密码登录。
+
+1. 使用本地管理员的凭据登录。
+2. 转到帐户 **设置**  >    >  **访问工作或学校**。
+3. 单击“**连接**”。
+4. **重要** 提示：单击 **加入 Azure AD**。
+5. 输入工作帐户的电子邮件地址和密码。 设备已连接。
+6. 重新启动设备。
+7. 使用你的工作帐户的电子邮件地址和密码登录。
 
 如果用户不是设备的管理员，Azure AD 全局管理员可以按照此配置路径在设备上创建本地管理员帐户，并取消加入设备：
 
 *设置 >帐户>其他帐户>凭据未知> Microsoft 帐户添加用户*
 
-对于重新加入，此步骤中可以使用来自组织的任何工作帐户的凭据。 
+对于重新加入，此步骤中可以使用来自组织的任何工作帐户的凭据。
 
 请考虑用于加入设备的工作帐户将自动提升为设备的管理员。
 组织中的其他任何工作帐户都可以登录到设备，但没有管理员权限。
 
 ## <a name="azure-ad-registered-workplace-joined-windows-10-devices"></a>Azure AD 注册 (工作区) Windows 10设备
+
 如果Windows 10已注册 Azure AD，需要从 Azure AD 断开连接，然后重新连接。
 
 [![Azure AD 设备Re-Registration Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>步骤 1：确定设备是否注册了 Azure ID
-1.  使用你的用户登录。
-2.  转到帐户 **设置**  >    >  **访问工作或学校**。 
-3.  在列表中发现你的工作帐户并检查它是否 **连接到 [...]'s Azure AD**.
+
+1. 使用你的用户登录。
+2. 转到帐户 **设置**  >    >  **访问工作或学校**。
+3. 在列表中发现你的工作帐户并检查它是否 **连接到 [...]'s Azure AD**.
 
     如果你的工作帐户在列表中，但没有连接到 Azure AD，请继续执行步骤 2。
 
     否则，你的设备是加入 Azure AD 的设备，你必须参考加入[Azure AD Windows 10设备](#azure-ad-joined-windows-10-devices)。
 
 ### <a name="step-2-disconnect-the-device-from-azure-ad"></a>步骤 2：断开设备与 Azure AD 连接
-1.  单击你的工作帐户。 将显示" *信息"* 和" *断开连接"* 按钮。
-2.  单击 **断开连接**。 
-3.  通过单击"是"确认从设备删除 **帐户**。
+
+1. 单击你的工作帐户。 将显示" *信息"* 和" *断开连接"* 按钮。
+2. 单击 **断开连接**。
+3. 通过单击"是"确认从设备删除 **帐户**。
+
 ### <a name="step-3-connect-the-device-to-azure-ad"></a>步骤 3：连接设备连接到 Azure AD
-1.  单击“**连接**”。
-2.  输入你的工作帐户的电子邮件地址，然后单击下一 **步**。
-3.  输入工作帐户的密码，然后单击"**登录"。**
-4.  通过单击"完成 **"确认**。 你的工作帐户将再次列出。
+
+1. 单击“**连接**”。
+2. 输入你的工作帐户的电子邮件地址，然后单击下一 **步**。
+3. 输入工作帐户的密码，然后单击"**登录"。**
+4. 通过单击"完成 **"确认**。 你的工作帐户将再次列出。
 
 ## <a name="android"></a>Android
 
-对于 Android，用户需要注销并重新注册其设备。 这可以通过 Microsoft Authenticator 或 公司门户 应用完成。 
+对于 Android，用户需要注销并重新注册其设备。 这可以通过 Microsoft Authenticator 或 公司门户 应用完成。
 
 - 从Microsoft Authenticator应用，用户可以转到设置 >**注册"。** 在这里，用户可以注销和重新注册其设备。
- 
+
 - 从公司门户，用户可以转到"**设备**"选项卡并删除设备。 此后，使用"配置"公司门户。
- 
+
 - 用户还可以从帐户设置页中删除帐户，然后重新添加工作帐户，从而注销和重新注册。
 
 若要在 Android 上注销和重新注册设备，请运行Microsoft Authenticator应用：
 
-1.  打开 Microsoft Authenticator 应用，**然后转到** 设置 。
-2.  选择 **"设备注册"。**
-3.  通过选择"注销"取消 **注册设备**。
-4.  对于 **设备注册**，请通过键入你的电子邮件地址重新注册设备，**然后选择注册。**
+1. 打开 Microsoft Authenticator 应用，**然后转到** 设置 。
+2. 选择 **"设备注册"。**
+3. 通过选择"注销"取消 **注册设备**。
+4. 对于 **设备注册**，请通过键入你的电子邮件地址重新注册设备，**然后选择注册。**
 
 若要注销 Android 设备并重新注册 Android 设置页面：
 
-1.  打开 **设备设置****转到帐户**。
-2.  选择要重新注册的工作帐户，然后选择"删除 **帐户"。**
-3.  删除帐户后，从"帐户"**页面** 选择"添加帐户>**工作帐户"。**
-4.  对于 **Workplace Join，** 键入你的电子邮件地址，然后选择 **加入** 以完成设备注册。
+1. 打开 **设备设置****转到帐户**。
+2. 选择要重新注册的工作帐户，然后选择"删除 **帐户"。**
+3. 删除帐户后，从"帐户"**页面** 选择"添加帐户>**工作帐户"。**
+4. 对于 **Workplace Join，** 键入你的电子邮件地址，然后选择 **加入** 以完成设备注册。
 
 若要在 Android 上注销并重新注册设备，请公司门户：
 
-1.  启动公司门户并转到 **设备** 选项卡。
-2.  选择设备以查看设备详细信息。
-3.  From theellipses (three dots) menu， select **Remove Device**， and complete the removal by confirming in the dialog.
-4.  你现在应该已注销公司门户应用。 选择 **"登录** "以重新注册设备。
+1. 启动公司门户并转到 **设备** 选项卡。
+2. 选择设备以查看设备详细信息。
+3. From theellipses (three dots) menu， select **Remove Device**， and complete the removal by confirming in the dialog.
+4. 你现在应该已注销公司门户应用。 选择 **"登录** "以重新注册设备。
 
 有关此工作负载的迁移阶段需要执行的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中有关 Azure Active Directory (Azure AD) 的信息。
 
@@ -132,18 +142,18 @@ ms.locfileid: "52903867"
 2. 点击 **设置** 右上角的"页面"图标。 如果未看到"设置"图标，则可能不会使用最新版本的 Microsoft Authenticator。
 3. 点击" **删除帐户"** 按钮。
 4. 点击 **此设备上的所有应用**。
- 
+
 ### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>步骤 2：从应用注销Microsoft Authenticator设备
 
 1. 点击右上角的菜单图标。
 2. 依次 **设置"** 设备 **注册"。**
-4. If your account is shown， tap **Unregister device** and **Continue** in the dialog. 此后应该看不到任何帐户。
- 
+3. If your account is shown， tap **Unregister device** and **Continue** in the dialog. 此后应该看不到任何帐户。
+
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>步骤 3：如有必要从个别应用注销
 
 用户可以转到单个应用，Outlook、Teams和OneDrive，并从这些应用中删除帐户。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **如何判断我的组织是否受到影响？**
 
@@ -166,7 +176,7 @@ ms.locfileid: "52903867"
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 
