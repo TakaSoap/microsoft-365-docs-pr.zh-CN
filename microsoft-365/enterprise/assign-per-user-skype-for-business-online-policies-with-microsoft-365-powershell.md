@@ -14,52 +14,52 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 PowerShell Microsoft 365 Online 策略分配每用户Skype for Business设置。
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905400"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288079"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a><span data-ttu-id="1462a-103">使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="1462a-103">Assign per-user Skype for Business Online policies with PowerShell for Microsoft 365</span></span>
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a><span data-ttu-id="aca2e-103">使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="aca2e-103">Assign per-user Skype for Business Online policies with PowerShell for Microsoft 365</span></span>
 
-<span data-ttu-id="1462a-104">*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* </span><span class="sxs-lookup"><span data-stu-id="1462a-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="aca2e-104">*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* </span><span class="sxs-lookup"><span data-stu-id="aca2e-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="1462a-105">使用 PowerShell for Microsoft 365是使用联机策略分配每用户通信Skype for Business一种有效方法。</span><span class="sxs-lookup"><span data-stu-id="1462a-105">Using PowerShell for Microsoft 365 is an efficient way to assign per-user communication settings with Skype for Business Online policies.</span></span>
+<span data-ttu-id="aca2e-105">使用 PowerShell for Microsoft 365是使用联机策略分配每用户通信Skype for Business一种有效方法。</span><span class="sxs-lookup"><span data-stu-id="aca2e-105">Using PowerShell for Microsoft 365 is an efficient way to assign per-user communication settings with Skype for Business Online policies.</span></span>
   
-## <a name="prepare-to-run-the-powershell-commands"></a><span data-ttu-id="1462a-106">准备运行 PowerShell 命令</span><span class="sxs-lookup"><span data-stu-id="1462a-106">Prepare to run the PowerShell commands</span></span>
+## <a name="prepare-to-run-the-powershell-commands"></a><span data-ttu-id="aca2e-106">准备运行 PowerShell 命令</span><span class="sxs-lookup"><span data-stu-id="aca2e-106">Prepare to run the PowerShell commands</span></span>
 
-<span data-ttu-id="1462a-107">使用这些说明设置以运行命令 (跳过已完成) ：</span><span class="sxs-lookup"><span data-stu-id="1462a-107">Use these instructions to get set up to run the commands (skip the steps you have already completed):</span></span>
+<span data-ttu-id="aca2e-107">使用这些说明设置以运行命令 (跳过已完成) ：</span><span class="sxs-lookup"><span data-stu-id="aca2e-107">Use these instructions to get set up to run the commands (skip the steps you have already completed):</span></span>
   
   > [!Note]
-   > <span data-ttu-id="1462a-108">Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。</span><span class="sxs-lookup"><span data-stu-id="1462a-108">Skype for Business Online Connector is currently part of the latest Teams PowerShell module.</span></span> <span data-ttu-id="1462a-109">如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。</span><span class="sxs-lookup"><span data-stu-id="1462a-109">If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.</span></span>
+   > <span data-ttu-id="aca2e-108">Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。</span><span class="sxs-lookup"><span data-stu-id="aca2e-108">Skype for Business Online Connector is currently part of the latest Teams PowerShell module.</span></span> <span data-ttu-id="aca2e-109">如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。</span><span class="sxs-lookup"><span data-stu-id="aca2e-109">If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.</span></span>
 
-1. <span data-ttu-id="1462a-110">安装 [Teams PowerShell 模块](/microsoftteams/teams-powershell-install)。</span><span class="sxs-lookup"><span data-stu-id="1462a-110">Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).</span></span>
+1. <span data-ttu-id="aca2e-110">安装 [Teams PowerShell 模块](/microsoftteams/teams-powershell-install)。</span><span class="sxs-lookup"><span data-stu-id="aca2e-110">Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).</span></span>
     
-2. <span data-ttu-id="1462a-111">开启 Windows PowerShell 命令提示符并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="1462a-111">Open a Windows PowerShell command prompt and run the following commands:</span></span> 
+2. <span data-ttu-id="aca2e-111">开启 Windows PowerShell 命令提示符并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="aca2e-111">Open a Windows PowerShell command prompt and run the following commands:</span></span> 
     
    ```powershell
    Import-Module MicrosoftTeams
    Connect-MicrosoftTeams
    ```
 
-   <span data-ttu-id="1462a-112">系统提示时，输入 Skype for Business Online 管理员帐户名称和密码。</span><span class="sxs-lookup"><span data-stu-id="1462a-112">When prompted, enter your Skype for Business Online administrator account name and password.</span></span>
+   <span data-ttu-id="aca2e-112">系统提示时，输入 Skype for Business Online 管理员帐户名称和密码。</span><span class="sxs-lookup"><span data-stu-id="aca2e-112">When prompted, enter your Skype for Business Online administrator account name and password.</span></span>
     
-## <a name="updating-external-communication-settings-for-a-user-account"></a><span data-ttu-id="1462a-113">更新用户帐户的外部通信设置</span><span class="sxs-lookup"><span data-stu-id="1462a-113">Updating external communication settings for a user account</span></span>
+## <a name="updating-external-communication-settings-for-a-user-account"></a><span data-ttu-id="aca2e-113">更新用户帐户的外部通信设置</span><span class="sxs-lookup"><span data-stu-id="aca2e-113">Updating external communication settings for a user account</span></span>
 
-<span data-ttu-id="1462a-114">假设您要更改用户帐户的外部通信设置。</span><span class="sxs-lookup"><span data-stu-id="1462a-114">Suppose you want to change external communication settings on a user account.</span></span> <span data-ttu-id="1462a-115">例如，您希望允许 Alex 与联盟用户进行通信 (EnableFederationAccess 等于 True) 但不与 Windows Live 用户 (EnablePublicCloudAccess 等于 False) 。</span><span class="sxs-lookup"><span data-stu-id="1462a-115">For example, you want to allow Alex to communicate with federated users (EnableFederationAccess is equal to True) but not with Windows Live users (EnablePublicCloudAccess equals False).</span></span> <span data-ttu-id="1462a-116">为此，您需要执行两项操作：</span><span class="sxs-lookup"><span data-stu-id="1462a-116">To do that, you need to do two things:</span></span>
+<span data-ttu-id="aca2e-114">假设您要更改用户帐户的外部通信设置。</span><span class="sxs-lookup"><span data-stu-id="aca2e-114">Suppose you want to change external communication settings on a user account.</span></span> <span data-ttu-id="aca2e-115">例如，您希望允许 Alex 与联盟用户进行通信 (EnableFederationAccess 等于 True) 但不与 Windows Live 用户 (EnablePublicCloudAccess 等于 False) 。</span><span class="sxs-lookup"><span data-stu-id="aca2e-115">For example, you want to allow Alex to communicate with federated users (EnableFederationAccess is equal to True) but not with Windows Live users (EnablePublicCloudAccess equals False).</span></span> <span data-ttu-id="aca2e-116">为此，您需要执行两项操作：</span><span class="sxs-lookup"><span data-stu-id="aca2e-116">To do that, you need to do two things:</span></span>
   
-1. <span data-ttu-id="1462a-117">找到符合我们的条件的外部访问策略。</span><span class="sxs-lookup"><span data-stu-id="1462a-117">Find an external access policy that meets our criteria.</span></span>
+1. <span data-ttu-id="aca2e-117">找到符合我们的条件的外部访问策略。</span><span class="sxs-lookup"><span data-stu-id="aca2e-117">Find an external access policy that meets our criteria.</span></span>
     
-2. <span data-ttu-id="1462a-118">将该外部访问策略分配给 Alex。</span><span class="sxs-lookup"><span data-stu-id="1462a-118">Assign that external access policy to Alex.</span></span>
+2. <span data-ttu-id="aca2e-118">将该外部访问策略分配给 Alex。</span><span class="sxs-lookup"><span data-stu-id="aca2e-118">Assign that external access policy to Alex.</span></span>
     
-<span data-ttu-id="1462a-119">如何确定要分配 Alex 的外部访问策略？</span><span class="sxs-lookup"><span data-stu-id="1462a-119">How do you determine which external access policy to assign Alex?</span></span> <span data-ttu-id="1462a-120">以下命令返回在 EnableFederationAccess 设置为 True 且 EnablePublicCloudAccess 设置为 False 时的所有外部访问策略：</span><span class="sxs-lookup"><span data-stu-id="1462a-120">The following command returns all the external access policies where EnableFederationAccess is set to True and EnablePublicCloudAccess is set to False:</span></span>
+<span data-ttu-id="aca2e-119">如何确定要分配 Alex 的外部访问策略？</span><span class="sxs-lookup"><span data-stu-id="aca2e-119">How do you determine which external access policy to assign Alex?</span></span> <span data-ttu-id="aca2e-120">以下命令返回在 EnableFederationAccess 设置为 True 且 EnablePublicCloudAccess 设置为 False 时的所有外部访问策略：</span><span class="sxs-lookup"><span data-stu-id="aca2e-120">The following command returns all the external access policies where EnableFederationAccess is set to True and EnablePublicCloudAccess is set to False:</span></span>
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-<span data-ttu-id="1462a-121">除非已创建 ExternalAccessPolicy 的任何自定义实例，否则该命令将返回一个符合 FederationOnly (条件) 。</span><span class="sxs-lookup"><span data-stu-id="1462a-121">Unless you have created any custom instances of ExternalAccessPolicy, that command returns one policy that meets our criteria (FederationOnly).</span></span> <span data-ttu-id="1462a-122">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="1462a-122">Here is an example:</span></span>
+<span data-ttu-id="aca2e-121">除非已创建 ExternalAccessPolicy 的任何自定义实例，否则该命令将返回一个符合 FederationOnly (条件) 。</span><span class="sxs-lookup"><span data-stu-id="aca2e-121">Unless you have created any custom instances of ExternalAccessPolicy, that command returns one policy that meets our criteria (FederationOnly).</span></span> <span data-ttu-id="aca2e-122">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="aca2e-122">Here is an example:</span></span>
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,42 +71,41 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-<span data-ttu-id="1462a-123">现在，你已了解要分配给 Alex 的策略，可以使用 [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet 分配该策略。</span><span class="sxs-lookup"><span data-stu-id="1462a-123">Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet.</span></span> <span data-ttu-id="1462a-124">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="1462a-124">Here is an example:</span></span>
+<span data-ttu-id="aca2e-123">现在，你已了解要分配给 Alex 的策略，可以使用 [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet 分配该策略。</span><span class="sxs-lookup"><span data-stu-id="aca2e-123">Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet.</span></span> <span data-ttu-id="aca2e-124">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="aca2e-124">Here is an example:</span></span>
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
-<span data-ttu-id="1462a-125">分配策略非常简单：只需指定用户的标识和要分配的策略的名称。</span><span class="sxs-lookup"><span data-stu-id="1462a-125">Assigning a policy is pretty simple: you simply specify the Identity of the user and the name of the policy to be assigned.</span></span> 
+<span data-ttu-id="aca2e-125">分配策略非常简单：只需指定用户的标识和要分配的策略的名称。</span><span class="sxs-lookup"><span data-stu-id="aca2e-125">Assigning a policy is pretty simple: you simply specify the Identity of the user and the name of the policy to be assigned.</span></span> 
   
-<span data-ttu-id="1462a-126">对于策略和策略分配，不限于一次使用一个用户帐户。</span><span class="sxs-lookup"><span data-stu-id="1462a-126">And when it comes to policies and policy assignments, you're not limited to working with user accounts one a time.</span></span> <span data-ttu-id="1462a-127">例如，假设您需要获得可与联盟伙伴和 Windows Live 用户通信的所有用户的列表。</span><span class="sxs-lookup"><span data-stu-id="1462a-127">For example, suppose you need a list of all the users who are allowed to communicate with federated partners and with Windows Live users.</span></span> <span data-ttu-id="1462a-128">我们已经知道，这些用户已分配有外部用户访问策略 FederationAndPICDefault。</span><span class="sxs-lookup"><span data-stu-id="1462a-128">We already know that those users have been assigned the external user access policy FederationAndPICDefault.</span></span> <span data-ttu-id="1462a-129">因为我们知道，您可以通过运行一个简单的命令来显示所有这些用户的列表。</span><span class="sxs-lookup"><span data-stu-id="1462a-129">Because we know that, you can display a list of all those users by running one simple command.</span></span> <span data-ttu-id="1462a-130">命令如下：</span><span class="sxs-lookup"><span data-stu-id="1462a-130">Here is the command:</span></span>
+<span data-ttu-id="aca2e-126">对于策略和策略分配，不限于一次使用一个用户帐户。</span><span class="sxs-lookup"><span data-stu-id="aca2e-126">And when it comes to policies and policy assignments, you're not limited to working with user accounts one a time.</span></span> <span data-ttu-id="aca2e-127">例如，假设您需要获得可与联盟伙伴和 Windows Live 用户通信的所有用户的列表。</span><span class="sxs-lookup"><span data-stu-id="aca2e-127">For example, suppose you need a list of all the users who are allowed to communicate with federated partners and with Windows Live users.</span></span> <span data-ttu-id="aca2e-128">我们已经知道，这些用户已分配有外部用户访问策略 FederationAndPICDefault。</span><span class="sxs-lookup"><span data-stu-id="aca2e-128">We already know that those users have been assigned the external user access policy FederationAndPICDefault.</span></span> <span data-ttu-id="aca2e-129">因为我们知道，您可以通过运行一个简单的命令来显示所有这些用户的列表。</span><span class="sxs-lookup"><span data-stu-id="aca2e-129">Because we know that, you can display a list of all those users by running one simple command.</span></span> <span data-ttu-id="aca2e-130">命令如下：</span><span class="sxs-lookup"><span data-stu-id="aca2e-130">Here is the command:</span></span>
   
 ```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
-<span data-ttu-id="1462a-131">换句话说，向我们显示 ExternalAccessPolicy 属性设置为 FederationAndPICDefault 的所有用户。</span><span class="sxs-lookup"><span data-stu-id="1462a-131">In other words, show us all the users where the ExternalAccessPolicy property is set to FederationAndPICDefault.</span></span> <span data-ttu-id="1462a-132"> (并且，为了限制屏幕上显示的信息量，请使用 Select-Object cmdlet 向我们仅显示每个用户的 显示名称.) </span><span class="sxs-lookup"><span data-stu-id="1462a-132">(And, in order to limit the amount of information that appears onscreen, use the Select-Object cmdlet to display show us only each user's display name.)</span></span> 
+<span data-ttu-id="aca2e-131">换句话说，向我们显示 ExternalAccessPolicy 属性设置为 FederationAndPICDefault 的所有用户。</span><span class="sxs-lookup"><span data-stu-id="aca2e-131">In other words, show us all the users where the ExternalAccessPolicy property is set to FederationAndPICDefault.</span></span> <span data-ttu-id="aca2e-132"> (并且，为了限制屏幕上显示的信息量，请使用 Select-Object cmdlet 向我们仅显示每个用户的 显示名称.) </span><span class="sxs-lookup"><span data-stu-id="aca2e-132">(And, in order to limit the amount of information that appears onscreen, use the Select-Object cmdlet to display show us only each user's display name.)</span></span> 
   
-<span data-ttu-id="1462a-133">若要配置所有用户帐户以使用同一策略，请使用此命令：</span><span class="sxs-lookup"><span data-stu-id="1462a-133">To configure all our user accounts to use that same policy, use this command:</span></span>
+<span data-ttu-id="aca2e-133">若要配置所有用户帐户以使用同一策略，请使用此命令：</span><span class="sxs-lookup"><span data-stu-id="aca2e-133">To configure all our user accounts to use that same policy, use this command:</span></span>
   
 ```powershell
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
-<span data-ttu-id="1462a-134">此命令使用 Get-CsOnlineUser 返回已启用 Lync 的所有用户的集合，然后将所有这些信息发送给 Grant-CsExternalAccessPolicy，该策略将 FederationAndPICDefault 策略分配给集合中的每个用户。</span><span class="sxs-lookup"><span data-stu-id="1462a-134">This command uses Get-CsOnlineUser to return a collection of all the users who have been enabled for Lync, then sends all that information to Grant-CsExternalAccessPolicy, which assigns the FederationAndPICDefault policy to each and every user in the collection.</span></span>
+<span data-ttu-id="aca2e-134">此命令使用 Get-CsOnlineUser 返回已启用 Lync 的所有用户的集合，然后将所有这些信息发送给 Grant-CsExternalAccessPolicy，该策略将 FederationAndPICDefault 策略分配给集合中的每个用户。</span><span class="sxs-lookup"><span data-stu-id="aca2e-134">This command uses Get-CsOnlineUser to return a collection of all the users who have been enabled for Lync, then sends all that information to Grant-CsExternalAccessPolicy, which assigns the FederationAndPICDefault policy to each and every user in the collection.</span></span>
   
-<span data-ttu-id="1462a-135">再如，假设你之前为 Alex 分配了 FederationAndPICDefault 策略，但现在改变了主意，希望他由全局外部访问策略进行管理。</span><span class="sxs-lookup"><span data-stu-id="1462a-135">As an additional example, suppose you've previously assigned Alex the FederationAndPICDefault policy and now you've changed your mind and would like him to be managed by the global external access policy.</span></span> <span data-ttu-id="1462a-136">无法将全局策略显式分配给任何人。</span><span class="sxs-lookup"><span data-stu-id="1462a-136">You can't explicitly assign the global policy to anyone.</span></span> <span data-ttu-id="1462a-137">如果没有为给定用户分配每用户策略，则全局策略将用于该用户。</span><span class="sxs-lookup"><span data-stu-id="1462a-137">Instead, the global policy is used for a given user if no per-user policy is assigned to that user.</span></span> <span data-ttu-id="1462a-138">因此，如果我们希望 Alex 由全局策略管理，则需要取消分配之前分配给他的任何每用户策略。</span><span class="sxs-lookup"><span data-stu-id="1462a-138">Therefore, if we want Alex to be managed by the global policy, you need to  *unassign*  any per-user policy previously assigned to him.</span></span> <span data-ttu-id="1462a-139">下面是一个示例命令：</span><span class="sxs-lookup"><span data-stu-id="1462a-139">Here is an example command:</span></span>
+<span data-ttu-id="aca2e-135">再如，假设你之前为 Alex 分配了 FederationAndPICDefault 策略，但现在改变了主意，希望他由全局外部访问策略进行管理。</span><span class="sxs-lookup"><span data-stu-id="aca2e-135">As an additional example, suppose you've previously assigned Alex the FederationAndPICDefault policy and now you've changed your mind and would like him to be managed by the global external access policy.</span></span> <span data-ttu-id="aca2e-136">无法将全局策略显式分配给任何人。</span><span class="sxs-lookup"><span data-stu-id="aca2e-136">You can't explicitly assign the global policy to anyone.</span></span> <span data-ttu-id="aca2e-137">如果没有为给定用户分配每用户策略，则全局策略将用于该用户。</span><span class="sxs-lookup"><span data-stu-id="aca2e-137">Instead, the global policy is used for a given user if no per-user policy is assigned to that user.</span></span> <span data-ttu-id="aca2e-138">因此，如果我们希望 Alex 由全局策略管理，则需要取消分配之前分配给他的任何每用户策略。</span><span class="sxs-lookup"><span data-stu-id="aca2e-138">Therefore, if we want Alex to be managed by the global policy, you need to  *unassign*  any per-user policy previously assigned to him.</span></span> <span data-ttu-id="aca2e-139">下面是一个示例命令：</span><span class="sxs-lookup"><span data-stu-id="aca2e-139">Here is an example command:</span></span>
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
-<span data-ttu-id="1462a-140">此命令将分配给 Alex 的外部访问策略的名称设置为空值 ($Null) 。</span><span class="sxs-lookup"><span data-stu-id="1462a-140">This command sets the name of the external access policy assigned to Alex to a null value ($Null).</span></span> <span data-ttu-id="1462a-141">Null 表示"nothing"。</span><span class="sxs-lookup"><span data-stu-id="1462a-141">Null means "nothing".</span></span> <span data-ttu-id="1462a-142">换句话说，没有向 Alex 分配外部访问策略。</span><span class="sxs-lookup"><span data-stu-id="1462a-142">In other words, no external access policy is assigned to Alex.</span></span> <span data-ttu-id="1462a-143">未向用户分配外部访问策略时，该用户随后会由全局策略管理。</span><span class="sxs-lookup"><span data-stu-id="1462a-143">When no external access policy is assigned to a user, that user then gets managed by the global policy.</span></span>
-  
+<span data-ttu-id="aca2e-140">此命令将分配给 Alex 的外部访问策略的名称设置为空值 ($Null) 。</span><span class="sxs-lookup"><span data-stu-id="aca2e-140">This command sets the name of the external access policy assigned to Alex to a null value ($Null).</span></span> <span data-ttu-id="aca2e-141">Null 表示"nothing"。</span><span class="sxs-lookup"><span data-stu-id="aca2e-141">Null means "nothing".</span></span> <span data-ttu-id="aca2e-142">换句话说，没有向 Alex 分配外部访问策略。</span><span class="sxs-lookup"><span data-stu-id="aca2e-142">In other words, no external access policy is assigned to Alex.</span></span> <span data-ttu-id="aca2e-143">未向用户分配外部访问策略时，该用户随后会由全局策略管理。</span><span class="sxs-lookup"><span data-stu-id="aca2e-143">When no external access policy is assigned to a user, that user then gets managed by the global policy.</span></span>
 
-## <a name="managing-large-numbers-of-users"></a><span data-ttu-id="1462a-144">管理大量用户</span><span class="sxs-lookup"><span data-stu-id="1462a-144">Managing large numbers of users</span></span>
+## <a name="managing-large-numbers-of-users"></a><span data-ttu-id="aca2e-144">管理大量用户</span><span class="sxs-lookup"><span data-stu-id="aca2e-144">Managing large numbers of users</span></span>
 
-<span data-ttu-id="1462a-145">若要管理 1000 (用户数超过 1000) ，您需要使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet 通过脚本块对命令进行批处理。</span><span class="sxs-lookup"><span data-stu-id="1462a-145">To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) cmdlet.</span></span>  <span data-ttu-id="1462a-146">在之前的示例中，每次执行 cmdlet 时，它必须设置调用，然后等待结果，然后再发送回。</span><span class="sxs-lookup"><span data-stu-id="1462a-146">In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.</span></span>  <span data-ttu-id="1462a-147">使用脚本块时，这允许远程执行 cmdlet，一旦完成，将数据发送回。</span><span class="sxs-lookup"><span data-stu-id="1462a-147">When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back.</span></span> 
+<span data-ttu-id="aca2e-145">若要管理 1000 (用户数超过 1000) ，您需要使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet 通过脚本块对命令进行批处理。</span><span class="sxs-lookup"><span data-stu-id="aca2e-145">To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet.</span></span>  <span data-ttu-id="aca2e-146">在之前的示例中，每次执行 cmdlet 时，它必须设置调用，然后等待结果，然后再发送回。</span><span class="sxs-lookup"><span data-stu-id="aca2e-146">In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.</span></span>  <span data-ttu-id="aca2e-147">使用脚本块时，这允许远程执行 cmdlet，一旦完成，将数据发送回。</span><span class="sxs-lookup"><span data-stu-id="aca2e-147">When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back.</span></span>
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
@@ -133,12 +132,12 @@ $count = 0
 }
 ```
 
-<span data-ttu-id="1462a-148">这将一次查找 500 个没有客户端策略的用户。</span><span class="sxs-lookup"><span data-stu-id="1462a-148">This will find 500 users at a time who do not have a client policy.</span></span> <span data-ttu-id="1462a-149">它将授予他们客户端策略"ClientPolicyNoIMURL"和外部访问策略"FederationAndPicDefault"。</span><span class="sxs-lookup"><span data-stu-id="1462a-149">It will grant them the client policy "ClientPolicyNoIMURL" and the external access policy "FederationAndPicDefault".</span></span> <span data-ttu-id="1462a-150">结果分为 50 个组，然后每批 50 个发送到远程计算机。</span><span class="sxs-lookup"><span data-stu-id="1462a-150">The results are batched into groups of 50 and each batch of 50 is then sent to the remote machine.</span></span>
+<span data-ttu-id="aca2e-148">这将一次查找 500 个没有客户端策略的用户。</span><span class="sxs-lookup"><span data-stu-id="aca2e-148">This will find 500 users at a time who do not have a client policy.</span></span> <span data-ttu-id="aca2e-149">它将授予他们客户端策略"ClientPolicyNoIMURL"和外部访问策略"FederationAndPicDefault"。</span><span class="sxs-lookup"><span data-stu-id="aca2e-149">It will grant them the client policy "ClientPolicyNoIMURL" and the external access policy "FederationAndPicDefault".</span></span> <span data-ttu-id="aca2e-150">结果分为 50 个组，然后每批 50 个发送到远程计算机。</span><span class="sxs-lookup"><span data-stu-id="aca2e-150">The results are batched into groups of 50 and each batch of 50 is then sent to the remote machine.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="1462a-151">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1462a-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aca2e-151">另请参阅</span><span class="sxs-lookup"><span data-stu-id="aca2e-151">See also</span></span>
 
-[<span data-ttu-id="1462a-152">使用 PowerShell 管理 Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="1462a-152">Manage Skype for Business Online with PowerShell</span></span>](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+[<span data-ttu-id="aca2e-152">使用 PowerShell 管理 Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="aca2e-152">Manage Skype for Business Online with PowerShell</span></span>](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="1462a-153">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="1462a-153">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="aca2e-153">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="aca2e-153">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="1462a-154">PowerShell for Microsoft 365 入门</span><span class="sxs-lookup"><span data-stu-id="1462a-154">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="aca2e-154">PowerShell for Microsoft 365 入门</span><span class="sxs-lookup"><span data-stu-id="aca2e-154">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)

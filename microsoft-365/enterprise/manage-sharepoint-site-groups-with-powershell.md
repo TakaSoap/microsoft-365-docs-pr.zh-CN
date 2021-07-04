@@ -20,33 +20,33 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将介绍使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组的过程。
-ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 383536a6ad5ac5742cf1e38081a9be984ce4806b
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909534"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289075"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-powershell"></a><span data-ttu-id="61016-103">使用 PowerShell 管理 SharePoint Online 网站用户组</span><span class="sxs-lookup"><span data-stu-id="61016-103">Manage SharePoint Online site groups with PowerShell</span></span>
+# <a name="manage-sharepoint-online-site-groups-with-powershell"></a><span data-ttu-id="02bab-103">使用 PowerShell 管理 SharePoint Online 网站用户组</span><span class="sxs-lookup"><span data-stu-id="02bab-103">Manage SharePoint Online site groups with PowerShell</span></span>
 
-<span data-ttu-id="61016-104">*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* </span><span class="sxs-lookup"><span data-stu-id="61016-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="02bab-104">*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* </span><span class="sxs-lookup"><span data-stu-id="02bab-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="61016-105">尽管可以使用 Microsoft 365管理中心，但您也可以使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组。</span><span class="sxs-lookup"><span data-stu-id="61016-105">Although you can use the Microsoft 365 admin center, you can also use PowerShell for Microsoft 365 to manage your SharePoint Online site groups.</span></span>
+<span data-ttu-id="02bab-105">尽管您可以使用 Microsoft 365 管理中心，但您也可以使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组。</span><span class="sxs-lookup"><span data-stu-id="02bab-105">Although you can use the Microsoft 365 admin center, you can also use PowerShell for Microsoft 365 to manage your SharePoint Online site groups.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="61016-106">开始之前</span><span class="sxs-lookup"><span data-stu-id="61016-106">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="02bab-106">开始之前</span><span class="sxs-lookup"><span data-stu-id="02bab-106">Before you begin</span></span>
 
-<span data-ttu-id="61016-107">本文中的过程需要您连接到 SharePoint Online。</span><span class="sxs-lookup"><span data-stu-id="61016-107">The procedures in this article require you to connect to SharePoint Online.</span></span> <span data-ttu-id="61016-108">有关说明，请参阅[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。</span><span class="sxs-lookup"><span data-stu-id="61016-108">For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
+<span data-ttu-id="02bab-107">本文中的过程需要您连接到 SharePoint Online。</span><span class="sxs-lookup"><span data-stu-id="02bab-107">The procedures in this article require you to connect to SharePoint Online.</span></span> <span data-ttu-id="02bab-108">有关说明，请参阅[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。</span><span class="sxs-lookup"><span data-stu-id="02bab-108">For instructions, see [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).</span></span>
 
-## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a><span data-ttu-id="61016-109">使用 PowerShell SharePoint Online Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="61016-109">View SharePoint Online with PowerShell for Microsoft 365</span></span>
+## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a><span data-ttu-id="02bab-109">使用 PowerShell SharePoint Online Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="02bab-109">View SharePoint Online with PowerShell for Microsoft 365</span></span>
 
-<span data-ttu-id="61016-110">SharePoint Online 管理中心提供一些易于使用的方法来管理网站组。</span><span class="sxs-lookup"><span data-stu-id="61016-110">The SharePoint Online admin center has some easy-to-use methods for managing site groups.</span></span> <span data-ttu-id="61016-111">例如，假设您要查看网站的组和 `https://litwareinc.sharepoint.com/sites/finance` 组成员。</span><span class="sxs-lookup"><span data-stu-id="61016-111">For example, suppose you want to look at the groups, and the group members, for the `https://litwareinc.sharepoint.com/sites/finance` site.</span></span> <span data-ttu-id="61016-112">下面是您必须执行以下工作：</span><span class="sxs-lookup"><span data-stu-id="61016-112">Here's what you have to do to:</span></span>
+<span data-ttu-id="02bab-110">SharePoint Online 管理中心提供一些易于使用的方法来管理网站组。</span><span class="sxs-lookup"><span data-stu-id="02bab-110">The SharePoint Online admin center has some easy-to-use methods for managing site groups.</span></span> <span data-ttu-id="02bab-111">例如，假设您要查看网站的组和 `https://litwareinc.sharepoint.com/sites/finance` 组成员。</span><span class="sxs-lookup"><span data-stu-id="02bab-111">For example, suppose you want to look at the groups, and the group members, for the `https://litwareinc.sharepoint.com/sites/finance` site.</span></span> <span data-ttu-id="02bab-112">下面是您必须执行以下工作：</span><span class="sxs-lookup"><span data-stu-id="02bab-112">Here's what you have to do to:</span></span>
 
-1. <span data-ttu-id="61016-113">从SharePoint管理中心，单击"**活动站点**"，然后单击网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="61016-113">From the SharePoint admin center, click **Active sites**, and then click the URL of the site.</span></span>
-2. <span data-ttu-id="61016-114">在网站页面上，单击设置位于 (右上角的"网站"图标，) "网站 **权限"。**</span><span class="sxs-lookup"><span data-stu-id="61016-114">On the site page, click the **Settings** icon (located in the upper right-hand corner of the page), and then click **Site permissions**.</span></span>
+1. <span data-ttu-id="02bab-113">从SharePoint管理中心，单击"**活动站点**"，然后单击网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="02bab-113">From the SharePoint admin center, click **Active sites**, and then click the URL of the site.</span></span>
+2. <span data-ttu-id="02bab-114">在网站页面上，单击设置位于 (右上角的"网站"图标，) "网站 **权限"。**</span><span class="sxs-lookup"><span data-stu-id="02bab-114">On the site page, click the **Settings** icon (located in the upper right-hand corner of the page), and then click **Site permissions**.</span></span>
 
-<span data-ttu-id="61016-115">然后对您要查看的下一个网站重复此过程。</span><span class="sxs-lookup"><span data-stu-id="61016-115">And then repeat the process for the next site you want to look at.</span></span>
+<span data-ttu-id="02bab-115">然后对您要查看的下一个网站重复此过程。</span><span class="sxs-lookup"><span data-stu-id="02bab-115">And then repeat the process for the next site you want to look at.</span></span>
 
-<span data-ttu-id="61016-116">若要使用 PowerShell for Microsoft 365获取组列表，可以使用以下命令：</span><span class="sxs-lookup"><span data-stu-id="61016-116">To get a list of the groups with PowerShell for Microsoft 365, you can use the following commands:</span></span>
+<span data-ttu-id="02bab-116">若要使用 PowerShell for Microsoft 365获取组列表，可以使用以下命令：</span><span class="sxs-lookup"><span data-stu-id="02bab-116">To get a list of the groups with PowerShell for Microsoft 365, you can use the following commands:</span></span>
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -59,22 +59,22 @@ foreach ($y in $x)
     }
 ```
 
-<span data-ttu-id="61016-117">在命令行管理程序命令行管理程序命令提示符SharePoint运行此命令集的方法有两种：</span><span class="sxs-lookup"><span data-stu-id="61016-117">There are two ways to run this command set in the SharePoint Online Management Shell command prompt:</span></span>
+<span data-ttu-id="02bab-117">在命令行管理程序命令行管理程序命令提示符SharePoint运行此命令集的方法有两种：</span><span class="sxs-lookup"><span data-stu-id="02bab-117">There are two ways to run this command set in the SharePoint Online Management Shell command prompt:</span></span>
 
-- <span data-ttu-id="61016-118">将命令复制到 记事本 (或其他文本编辑器) ，修改 **$siteURL** 变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。</span><span class="sxs-lookup"><span data-stu-id="61016-118">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, select the commands, and then paste them into the SharePoint Online Management Shell command prompt.</span></span> <span data-ttu-id="61016-119">执行时，PowerShell 将在提示符下 **>>** 停止。</span><span class="sxs-lookup"><span data-stu-id="61016-119">When you do, PowerShell will stop at a **>>** prompt.</span></span> <span data-ttu-id="61016-120">按 Enter 执行 `foreach` 命令。</span><span class="sxs-lookup"><span data-stu-id="61016-120">Press Enter to execute the `foreach` command.</span></span><br/>
-- <span data-ttu-id="61016-121">将命令复制到记事本（或其他文本编辑器），修改 **$siteURL** 变量值，然后在合适的文件夹中使用一个名称和.ps1 扩展名保存该文本文件。</span><span class="sxs-lookup"><span data-stu-id="61016-121">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, and then save this text file with a name and the .ps1 extension in a suitable folder.</span></span> <span data-ttu-id="61016-122">接下来，通过指定脚本的路径和文件名SharePoint命令行管理程序命令提示符运行脚本。</span><span class="sxs-lookup"><span data-stu-id="61016-122">Next, run the script from the SharePoint Online Management Shell command prompt by specifying its path and file name.</span></span> <span data-ttu-id="61016-123">下面是一个示例命令：</span><span class="sxs-lookup"><span data-stu-id="61016-123">Here is an example command:</span></span>
+- <span data-ttu-id="02bab-118">将命令复制到 记事本 (或其他文本编辑器) ，修改 **$siteURL** 变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。</span><span class="sxs-lookup"><span data-stu-id="02bab-118">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, select the commands, and then paste them into the SharePoint Online Management Shell command prompt.</span></span> <span data-ttu-id="02bab-119">执行时，PowerShell 将在提示符下 **>>** 停止。</span><span class="sxs-lookup"><span data-stu-id="02bab-119">When you do, PowerShell will stop at a **>>** prompt.</span></span> <span data-ttu-id="02bab-120">按 Enter 执行 `foreach` 命令。</span><span class="sxs-lookup"><span data-stu-id="02bab-120">Press Enter to execute the `foreach` command.</span></span><br/>
+- <span data-ttu-id="02bab-121">将命令复制到记事本（或其他文本编辑器），修改 **$siteURL** 变量值，然后在合适的文件夹中使用一个名称和.ps1 扩展名保存该文本文件。</span><span class="sxs-lookup"><span data-stu-id="02bab-121">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, and then save this text file with a name and the .ps1 extension in a suitable folder.</span></span> <span data-ttu-id="02bab-122">接下来，通过指定脚本的路径和文件名SharePoint命令行管理程序命令提示符运行脚本。</span><span class="sxs-lookup"><span data-stu-id="02bab-122">Next, run the script from the SharePoint Online Management Shell command prompt by specifying its path and file name.</span></span> <span data-ttu-id="02bab-123">下面是一个示例命令：</span><span class="sxs-lookup"><span data-stu-id="02bab-123">Here is an example command:</span></span>
 
 ```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
 ```
 
-<span data-ttu-id="61016-124">在这两种情况下，应该会看到类似下面的内容：</span><span class="sxs-lookup"><span data-stu-id="61016-124">In both cases, you should see something similar to this:</span></span>
+<span data-ttu-id="02bab-124">在这两种情况下，应该会看到类似下面的内容：</span><span class="sxs-lookup"><span data-stu-id="02bab-124">In both cases, you should see something similar to this:</span></span>
 
 ![SharePoint联机网站组](../media/SPO-site-groups.png)
 
-<span data-ttu-id="61016-126">这些是为网站创建的所有组，以及 `https://litwareinc.sharepoint.com/sites/finance` 分配给这些组的所有用户。</span><span class="sxs-lookup"><span data-stu-id="61016-126">These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups.</span></span> <span data-ttu-id="61016-127">组名为黄色，以帮助你从其成员中辨别组名。</span><span class="sxs-lookup"><span data-stu-id="61016-127">The group names are in yellow to help you separate group names from their members.</span></span>
+<span data-ttu-id="02bab-126">这些是为网站创建的所有组，以及 `https://litwareinc.sharepoint.com/sites/finance` 分配给这些组的所有用户。</span><span class="sxs-lookup"><span data-stu-id="02bab-126">These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups.</span></span> <span data-ttu-id="02bab-127">组名为黄色，以帮助你从其成员中辨别组名。</span><span class="sxs-lookup"><span data-stu-id="02bab-127">The group names are in yellow to help you separate group names from their members.</span></span>
 
-<span data-ttu-id="61016-128">另一个示例是，下面是一个命令集，用于列出所有联机网站的所有组SharePoint成员身份。</span><span class="sxs-lookup"><span data-stu-id="61016-128">As another example, here is a command set that lists the groups, and all the group memberships, for all of your SharePoint Online sites.</span></span>
+<span data-ttu-id="02bab-128">另一个示例是，下面是一个命令集，用于列出所有联机网站的所有组SharePoint成员身份。</span><span class="sxs-lookup"><span data-stu-id="02bab-128">As another example, here is a command set that lists the groups, and all the group memberships, for all of your SharePoint Online sites.</span></span>
 
 ```powershell
 $x = Get-SPOSite
@@ -84,22 +84,22 @@ foreach ($y in $x)
         $z = Get-SPOSiteGroup -Site $y.Url
         foreach ($a in $z)
             {
-                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title 
+                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title
                  Write-Host $b.Title -ForegroundColor "Cyan"
                  $b | Select-Object -ExpandProperty Users
                  Write-Host
             }
     }
 ```
-    
-## <a name="see-also"></a><span data-ttu-id="61016-129">另请参阅</span><span class="sxs-lookup"><span data-stu-id="61016-129">See also</span></span>
 
-[<span data-ttu-id="61016-130">连接到 SharePoint Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="61016-130">Connect to SharePoint Online PowerShell</span></span>](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+## <a name="see-also"></a><span data-ttu-id="02bab-129">另请参阅</span><span class="sxs-lookup"><span data-stu-id="02bab-129">See also</span></span>
 
-[<span data-ttu-id="61016-131">使用 PowerShell 创建 SharePoint Online 网站并添加用户</span><span class="sxs-lookup"><span data-stu-id="61016-131">Create SharePoint Online sites and add users with PowerShell</span></span>](create-sharepoint-sites-and-add-users-with-powershell.md)
+[<span data-ttu-id="02bab-130">连接到 SharePoint Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="02bab-130">Connect to SharePoint Online PowerShell</span></span>](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-[<span data-ttu-id="61016-132">使用 PowerShell 管理 SharePoint Online 用户和组</span><span class="sxs-lookup"><span data-stu-id="61016-132">Manage SharePoint Online users and groups with PowerShell</span></span>](manage-sharepoint-users-and-groups-with-powershell.md)
+[<span data-ttu-id="02bab-131">使用 PowerShell 创建 SharePoint Online 网站并添加用户</span><span class="sxs-lookup"><span data-stu-id="02bab-131">Create SharePoint Online sites and add users with PowerShell</span></span>](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[<span data-ttu-id="61016-133">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="61016-133">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
-[<span data-ttu-id="61016-134">PowerShell for Microsoft 365 入门</span><span class="sxs-lookup"><span data-stu-id="61016-134">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="02bab-132">使用 PowerShell 管理 SharePoint Online 用户和组</span><span class="sxs-lookup"><span data-stu-id="02bab-132">Manage SharePoint Online users and groups with PowerShell</span></span>](manage-sharepoint-users-and-groups-with-powershell.md)
+
+[<span data-ttu-id="02bab-133">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="02bab-133">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+
+[<span data-ttu-id="02bab-134">PowerShell for Microsoft 365 入门</span><span class="sxs-lookup"><span data-stu-id="02bab-134">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
