@@ -1,5 +1,5 @@
 ---
-title: 客户端阻止
+title: 客户端行为阻止
 description: 客户端行为阻止是 Microsoft Defender for Endpoint 中的行为阻止和包含功能的一部分
 keywords: 行为阻止， 快速保护， 客户端行为， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908073"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289927"
 ---
-# <a name="client-behavioral-blocking"></a>客户端阻止
+# <a name="client-behavioral-blocking"></a>客户端行为阻止
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -46,7 +46,7 @@ ms.locfileid: "52908073"
 
 [Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)检测设备上可疑行为、恶意代码、无文件攻击和内存中攻击等。 当检测到可疑行为时，Microsoft Defender 防病毒监控这些可疑行为并将其进程树发送到云保护服务。 机器学习在毫秒内区分恶意应用程序和良好行为，并分类每个项目。 在几乎实时中，只要发现项目是恶意项目，就会在设备上被阻止。 
 
-只要检测到可疑行为，就会生成警报[](alerts-queue.md)，并且该警报Microsoft 365[以前](microsoft-defender-security-center.md) (Defender 门户Microsoft Defender 安全中心) 。
+只要检测到可疑行为，就会生成警报[](alerts-queue.md)，并且该警报Microsoft 365 Defender门户 (之前Microsoft Defender 安全中心) 。 [](microsoft-defender-security-center.md)
 
 客户端行为阻止非常有效，因为它不仅有助于防止攻击启动，还有助于阻止已开始执行的攻击。 此外， [通过反馈循环](feedback-loop-blocking.md) (行为阻止和) 功能，可以阻止组织中其他设备的攻击。
 
@@ -54,26 +54,24 @@ ms.locfileid: "52908073"
 
 基于行为的检测根据[MITRE ATT&CK 矩阵进行命名Enterprise。](https://attack.mitre.org/matrices/enterprise) 命名约定有助于识别观测到恶意行为的攻击阶段：
 
-
-|策略 |   检测威胁名称 |
+|策略 | 检测威胁名称 |
 |----|----|
 |初始访问 | `Behavior:Win32/InitialAccess.*!ml` |
-|执行  | `Behavior:Win32/Execution.*!ml` |
-|持久性    | `Behavior:Win32/Persistence.*!ml` |
-|特权提升   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|防御者    | `Behavior:Win32/DefenseEvasion.*!ml` |
-|凭据访问  | `Behavior:Win32/CredentialAccess.*!ml` |
-|发现  | `Behavior:Win32/Discovery.*!ml` |
+|执行 | `Behavior:Win32/Execution.*!ml` |
+|持久性 | `Behavior:Win32/Persistence.*!ml` |
+|特权提升 | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|防御者 | `Behavior:Win32/DefenseEvasion.*!ml` |
+|凭据访问 | `Behavior:Win32/CredentialAccess.*!ml` |
+|Discovery | `Behavior:Win32/Discovery.*!ml` |
 |横向移动 | `Behavior:Win32/LateralMovement.*!ml` |
-|集合 |   `Behavior:Win32/Collection.*!ml` |
+|集合 | `Behavior:Win32/Collection.*!ml` |
 |命令和控件 | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
 |影响 | `Behavior:Win32/Impact.*!ml` |
-|未分类  | `Behavior:Win32/Generic.*!ml` |
+|未分类 | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > 若要了解有关特定威胁的信息，请参阅最近的 **[全球威胁活动](https://www.microsoft.com/wdsi/threats)**。
-
 
 ## <a name="configuring-client-behavioral-blocking"></a>配置客户端行为阻止
 
@@ -88,4 +86,3 @@ ms.locfileid: "52908073"
 - [减少攻击面](attack-surface-reduction.md)
 
 - [下一代 (](configure-microsoft-defender-antivirus-features.md) 防病毒、反恶意软件和其他威胁防护功能) 
-

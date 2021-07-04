@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4be9116b83c2ee4eec410f3d8d68c289f3c8b9a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15fd70a2a60da7b0541446a98f0094c73c831d51
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925823"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289819"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>部署、管理和报告Microsoft Defender 防病毒
 
@@ -57,7 +57,7 @@ Microsoft Azure|使用 Microsoft Antimalware 配置或 Visual Studio [cmdlet](/a
 
 1. <span id="fn1" />某些功能和特性（尤其是与云保护相关）的可用性因 Microsoft Endpoint Manager (Current Branch) 和 System Center 2012 Configuration Manager 不同。 在此库中，我们侧重于Windows 10、Windows Server 2016和Microsoft Endpoint Manager (Current Branch) 。 有关[描述主要区别的表，请参阅](cloud-protection-microsoft-defender-antivirus.md)Microsoft Defender 防病毒 Microsoft 云提供的保护。 [ (返回到表) ](#ref2)
   
-2.  <span id="fn2" />在Windows 10中，Microsoft Defender 防病毒是一个无需安装或部署其他客户端或服务即可使用的组件。 当卸载第三方防病毒产品或产品过期时，将自动启用 ([产品，Windows Server 2016) 。](microsoft-defender-antivirus-on-windows-server.md) 因此，不需要传统部署。 此处的部署是指确保Microsoft Defender 防病毒组件在终结点或服务器上可用并启用。 [ (返回到表) ](#ref2)
+2. <span id="fn2" />在Windows 10中，Microsoft Defender 防病毒是一个无需安装或部署其他客户端或服务即可使用的组件。 当卸载第三方防病毒产品或产品过期时，将自动启用 ([产品，Windows Server 2016) 。](microsoft-defender-antivirus-on-windows-server.md) 因此，不需要传统部署。 此处的部署是指确保Microsoft Defender 防病毒组件在终结点或服务器上可用并启用。 [ (返回到表) ](#ref2)
 
 3. <span id="fn3" />本库中的配置功能和保护（包括配置产品[和保护更新）Microsoft Defender 防病毒功能部分](configure-notifications-microsoft-defender-antivirus.md)进一步介绍。 [ (返回到表) ](#ref2)
 

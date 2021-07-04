@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 4b34d3ea20716fb2424d9317b8a51c088a5714a6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935349"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289759"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问 
 
@@ -50,10 +50,9 @@ ms.locfileid: "51935349"
 
     这些组将链接到你在安全中心的 Defender for Endpoint Microsoft 365角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
 
-    - 第 1 层分析员 
-    - 第 2 层分析员 
+    - 第 1 层分析员
+    - 第 2 层分析员
     - MSSP 分析员审批者  
-
 
 2. 在安全中心角色和组的 Customer Defender for Endpoint 中为Microsoft 365 Defender 终结点角色创建 Defender。
 
@@ -73,12 +72,10 @@ ms.locfileid: "51935349"
 
     有关详细信息，请参阅使用 [基于角色的访问控制](/windows/security/threat-protection/microsoft-defender-atp/rbac)。
 
-
-
 ## <a name="configure-governance-access-packages"></a>配置治理访问包
 
-1.  **在客户 AAD 中添加 MSSP 作为连接组织：标识治理**
-    
+1. **在客户 AAD 中添加 MSSP 作为连接组织：标识治理**
+
     将 MSSP 添加为连接的组织将允许 MSSP 请求并设置访问权限。 
 
     为此，在客户 AD 租户中，访问标识治理：已连接组织。 添加新组织，然后通过租户 ID 或域搜索 MSSP 分析员租户。 建议为 MSSP 分析员创建单独的 AD 租户。
@@ -87,12 +84,11 @@ ms.locfileid: "51935349"
 
     资源目录是在客户 AD 租户中创建的访问包的逻辑集合。
 
-    为此，在客户 AD 租户中，访问 Identity Governance： Catalogs，并添加新 **目录**。 在我们的示例中，我们将它称为 **MSSP Accesses**。 
+    为此，在客户 AD 租户中，访问 Identity Governance： Catalogs，并添加新 **目录**。 在我们的示例中，我们将它称为 **MSSP Accesses**。
 
     ![新目录的图像](../../media/goverance-catalog.png)
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
-
 
 3. **为 MSSP 资源创建访问包客户 AAD：标识治理**
 
@@ -109,28 +105,27 @@ ms.locfileid: "51935349"
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-
 4. **从客户 AAD 提供 MSSP 资源的访问请求链接：标识治理**
 
     MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求会进入一个队列，等待 **MSSP 分析员审批者审批**。
-
 
     ![访问属性的图像](../../media/access-properties.png)
 
     链接位于每个访问包的概述页面上。
 
-## <a name="manage-access"></a>管理访问权限 
+## <a name="manage-access"></a>管理访问权限
 
 1. 查看和授权客户和/或 MSSP myaccess 中的访问请求。
 
     访问请求在客户 My Access 中由 MSSP 分析员审批者组的成员进行管理。
 
-    为此，请通过使用：访问客户的 myaccess。 `https://myaccess.microsoft.com/@<Customer Domain >` 
+    为此，请通过使用：访问客户的 myaccess。 `https://myaccess.microsoft.com/@<Customer Domain>`
 
-    示例： `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    示例：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-     此时，已预配分析师访问权限，并且每个分析师都应能够访问客户的安全Microsoft 365中心： 
+     此时，已预配分析师访问权限，并且每个分析师都应能够访问客户的安全Microsoft 365中心：
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769236"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289832"
 ---
 # <a name="list-alerts-api"></a>列出警报 API
 
@@ -59,20 +59,22 @@ ms.locfileid: "52769236"
 ## <a name="permissions"></a>权限
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 |   Alert.Read.All |    "读取所有警报"
-应用程序 |   Alert.ReadWrite.All |   "读取和写入所有警报"
+Application | Alert.Read.All | "读取所有警报"
+Application | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
->- 响应将仅包含与用户可以访问的设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
+>
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 响应将仅包含与用户可以访问的设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/alerts
 ```
 
@@ -80,19 +82,19 @@ GET /api/alerts
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 200 OK 和 [警报](alerts.md) 对象列表。
 
+如果成功，此方法在响应正文中返回 200 OK 和 [警报](alerts.md) 对象列表。
 
 ## <a name="example-1---default"></a>示例 1 - 默认值
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -100,13 +102,12 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**响应**
+### <a name="response"></a>响应
 
 下面是一个响应示例。
 
->[!NOTE]
->为简洁起见，可能会截断此处显示的响应列表。 所有警报都将从实际呼叫中返回。
-
+> [!NOTE]
+> 为简洁起见，可能会截断此处显示的响应列表。 所有警报都将从实际呼叫中返回。
 
 ```json
 {
@@ -162,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>示例 2 - 使用相关证据获取 10 个最新警报
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -170,14 +171,12 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**响应**
+### <a name="response"></a>响应
 
 下面是一个响应示例。
 
->[!NOTE]
->为简洁起见，可能会截断此处显示的响应列表。 所有警报都将从实际呼叫中返回。
-
+> [!NOTE]
+> 为简洁起见，可能会截断此处显示的响应列表。 所有警报都将从实际呼叫中返回。
 
 ```json
 {
@@ -314,6 +313,6 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 }
 ```
 
-
 ## <a name="see-also"></a>另请参阅
-- [使用 Microsoft Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)
+
+[使用 Microsoft Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)

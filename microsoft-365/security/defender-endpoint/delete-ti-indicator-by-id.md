@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eaef6b25e2db72149a1a1128899d8a79a38a4c60
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771017"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289915"
 ---
 # <a name="delete-indicator-api"></a>删除指示器 API
 
@@ -39,24 +39,25 @@ ms.locfileid: "52771017"
 
 
 ## <a name="api-description"></a>API 说明
+
 按 ID [删除 Indicator](ti-indicator.md) 实体。
 
-
 ## <a name="limitations"></a>限制
-1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
+此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [入门](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 |   Ti.ReadWrite |  "读取和写入 TI 指示器"
-应用程序 |   Ti.ReadWrite.All |  "读取和写入指示器"
-
+Application | Ti.ReadWrite | "读取和写入 TI 指示器"
+Application | Ti.ReadWrite.All | "读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
@@ -66,19 +67,21 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
+
 如果指示符存在并成功删除 - 204 正常，无内容。
+
 如果未找到具有指定 ID 的 Indicator - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 

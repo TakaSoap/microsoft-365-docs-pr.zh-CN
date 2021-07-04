@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23d9d61644b4c9adad69a5e467e49ca2b1d92413
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843778"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290227"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>使用自定义报告Power BI
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843778"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ ms.locfileid: "52843778"
 
 - 单击 **"获取**  >  **数据空白查询"**
 
-    ![创建空白查询的图像](images/power-bi-create-blank-query.png)
+  ![创建空白查询的图像](images/power-bi-create-blank-query.png)
 
 - 单击 **"高级编辑器"**
 
-    ![打开的高级编辑器的图像](images/power-bi-open-advanced-editor.png)
+  ![打开的高级编辑器的图像](images/power-bi-open-advanced-editor.png)
 
 - 复制以下内容并将其粘贴到编辑器中：
 
 ```
-    let 
+    let
         AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
         HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
@@ -93,7 +93,6 @@ ms.locfileid: "52843778"
         Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
 
     in Table
-
 ```
 
 - 单击 **完成**
@@ -118,7 +117,7 @@ ms.locfileid: "52843778"
 
 ## <a name="connect-power-bi-to-odata-apis"></a>连接 Power BI OData API
 
-- 与上述示例的唯一区别是编辑器内的查询。 
+- 与上述示例的唯一区别是编辑器内的查询。
 
 - 复制以下内容并将其粘贴到编辑器中以拉取 **组织** 的所有计算机操作：
 
@@ -130,22 +129,21 @@ ms.locfileid: "52843778"
         Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
     in
         Source
-
 ```
 
 - 你可以对警报和 **计算机** 执行相同的 **操作**。
-
 - 您还可以将 OData 查询用于查询筛选器，请参阅使用 [OData 查询](exposed-apis-odata-samples.md)
 
-
 ## <a name="power-bi-dashboard-samples-in-github"></a>Power BI仪表板GitHub
+
 有关详细信息，请参阅Power BI[模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>示例报告
+
 查看 Microsoft Defender for Endpoint Power BI报告示例。 有关详细信息，请参阅浏览 [代码示例](/samples/browse/?products=mdatp)。
 
+## <a name="related-topics"></a>相关主题
 
-## <a name="related-topic"></a>相关主题
 - [适用于终结点的 Defender API](apis-intro.md)
 - [高级搜寻 API](run-advanced-query-api.md)
 - [使用 OData 查询](exposed-apis-odata-samples.md)

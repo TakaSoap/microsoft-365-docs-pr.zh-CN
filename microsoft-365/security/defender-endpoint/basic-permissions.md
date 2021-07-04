@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844654"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290181"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本权限访问门户
 
@@ -47,14 +47,14 @@ ms.locfileid: "52844654"
 - 可读写 (完全访问权限) 
 - 只读访问
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 
 - 安装 Azure PowerShell。 有关详细信息，请参阅如何安装和配置[Azure PowerShell。](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
 
     > [!NOTE]
     > 需要在提升的命令行中运行 PowerShell cmdlet。
 
-- 连接文件Azure Active Directory。 有关详细信息，请参阅[连接-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
+- 连接文件Azure Active Directory。 有关详细信息，请参阅[连接-MsolService](/powershell/module/msonline/connect-msolservice)。
 
 **完全访问权限** <br>
 具有完全访问权限的用户可以登录、查看所有系统信息并解决警报、提交文件进行深入分析以及下载载入程序包。

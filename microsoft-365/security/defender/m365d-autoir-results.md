@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022549"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289723"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -102,16 +102,16 @@ ms.locfileid: "53022549"
 > [!NOTE]
 > 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| 选项卡 | 说明 |
+| Tab | 说明 |
 |:--------|:--------|
-| **调查图**   | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
-| **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office应用、Microsoft Cloud App Security和其他Microsoft 365 Defender功能。|
+| **调查图** | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
+| **警告** | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office应用、Microsoft Cloud App Security和其他Microsoft 365 Defender功能。|
 | **设备** | 列出包含在调查中的设备及其修正级别。  (修正级别对应于设备[组 .) ](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **邮箱** |列出受检测到的威胁影响的邮箱。  |
 | **用户**  | 列出受检测到的威胁影响的用户帐户。 |
 | **证据** | 列出由警报或调查引发的证据片段。 包括有关 *(、可疑*、*未知* 或未找到威胁) 和修正状态裁定。 |
-| **Entities**  | 提供有关每个已分析实体的详细信息，包括每个实体类型裁定 (*恶意*、可疑或未找到任何威胁) 。 |
-|**Log**    | 提供触发警报后执行的所有调查操作按时间顺序的详细视图。|
+| **Entities** | 提供有关每个已分析实体的详细信息，包括每个实体类型裁定 (*恶意*、可疑或未找到任何威胁) 。 |
+|**Log** | 提供触发警报后执行的所有调查操作按时间顺序的详细视图。|
 | **挂起的操作历史记录** | 列出需要审批的项目以继续。 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 审批挂起的操作。 |
 
 ## <a name="next-steps"></a>后续步骤

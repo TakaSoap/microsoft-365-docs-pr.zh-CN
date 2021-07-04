@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db745c1b12c64baff5bf2c0a212446ce0f773709
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 80f88b31c1e07d1f40f3f58a1bd21b4a5c58c60b
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166448"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290203"
 ---
 # <a name="batch-update-alerts"></a>批更新通知
 
@@ -37,30 +37,35 @@ ms.locfileid: "51166448"
 
 
 ## <a name="api-description"></a>API 说明
-更新一批现有 [警报的属性](alerts.md)。
-<br>提供 **或不** 更新属性的注释提交。
-<br>可更新的属性包括 `status` ：、 `determination` 和 `classification` `assignedTo` 。
 
+更新一批现有 [警报的属性](alerts.md)。
+
+提供 **或不** 更新属性的注释提交。
+
+可更新的属性包括 `status` ：、 `determination` 和 `classification` `assignedTo` 。
 
 ## <a name="limitations"></a>限制
+
 1. 你可以更新 API 中可用的警报。 有关详细信息 [，请参阅列出](get-alerts.md) 警报。
 2. 此 API 的速率限制是每分钟 10 个调用和每小时 500 个调用。
 
-
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 |   Alerts.ReadWrite.All |  "读取和写入所有警报"
+Application | Alerts.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
->- 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+>
+> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
+
 ```http
 POST /api/alerts/batchUpdate
 ```
@@ -69,31 +74,33 @@ POST /api/alerts/batchUpdate
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
-
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供要更新的警报的 ID 以及要针对这些警报更新的相关字段的值。
-<br>请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 
-<br>为了实现最佳性能，不得添加未变化的现有值。
+
+请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。
+
+为了实现最佳性能，不得添加未变化的现有值。
 
 属性 | 类型 | 说明
 :---|:---|:---
 alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
-状态 | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
+状态 | 字符串 | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
-确定 | String | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
+确定 | 字符串 | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
 注释 | String | 要添加到指定警报的注释。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 200 OK，响应正文为空。
 
+如果成功，此方法返回 200 OK，响应正文为空。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
