@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: 了解安全与合规&中的 DLP 如何与 DLP 和邮件流规则 (管理中心) 传输Exchange规则。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34ddee1c1f0997852b6e59295ab9b630acc3ba3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: a7cd4eaafbd334c8886e0e6aa72d8c0e4c53a81e
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177173"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300048"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>DLP 在合规性中心Microsoft 365管理中心Exchange工作
 
@@ -47,7 +47,7 @@ ms.locfileid: "53177173"
   
 - 邮件流规则Exchange阻止的邮件不会由安全与合规中心中创建的 DLP &扫描。
 
-- DLP 不会扫描在 DLP 之前Exchange邮件流规则或其他任何筛选器隔离的邮件
+- DLP 不会扫描 DLP 之前Exchange邮件流规则或其他任何筛选器隔离的邮件。
     
 - 如果 Exchange 邮件流规则修改邮件的方式会导致邮件与安全 & 合规中心中的 DLP 策略匹配（如添加外部用户），则 DLP 规则将检测此情况并根据需要强制执行该策略。
     

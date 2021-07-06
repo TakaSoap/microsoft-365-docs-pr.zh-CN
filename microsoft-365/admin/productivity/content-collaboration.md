@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 内容协作的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: cca218d15af98925bf61bbb314cfd4d35aa0711a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779730"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300074"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作 – 人员体验
 
@@ -112,7 +112,7 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="显示在用户或用户文件中创建OneDrive SharePoint":::
 
-1. **标头**：好友动态在应用程序或 Microsoft 365 Office 应用程序上创建文件的活动OneDrive SharePoint。
+1. **标头：** 突出显示在应用程序或 Microsoft 365 Office 上创建文件的活动OneDrive SharePoint。
 2. **正文：** 提供有关在网站和网站中创建内容OneDrive SharePoint。
 3. **可视化：** 可视化中的细分表示使用应用在Microsoft Office创建文件和OneDrive SharePoint的程度，如下所示：
       - **OneDrive：** 蓝色 (条) 部分，而条形上的分数表示活动在 Office 应用程序上创建内容OneDrive的百分比，如下所示：
@@ -126,9 +126,11 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 ### <a name="use-of-attachments-in-email"></a>电子邮件中的附件使用
 
+**电子邮件中的附件使用** 了解在电子邮件中附加物理文件（而不是指向云中内容的链接）的用户数，并监视此数量在一段时间的减少。
+
 :::image type="content" source="../../media/emailattachments.png" alt-text="使用电子邮件附件。":::
 
-1. **邮件** 头：好友动态电子邮件中未保存附件或已保存附件OneDrive SharePoint。
+1. **标头：** 突出显示在电子邮件中使用附件而未保存到电子邮件OneDrive SharePoint。
 2. **正文：** 从协作和安全角度提供有关共享联机文件链接的价值的信息。
 3. **可视化：** 可视化的细分旨在表示电子邮件中附加内容的人使用不同模式（而不是在电子邮件或 (文件OneDrive SharePoint;指向联机文件的链接;和电子邮件中嵌入) ：
       - **附加文件：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示电子邮件中使用附件的百分比。
@@ -137,16 +139,13 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
       - **指向联机文件的链接：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示使用附件并将链接附加到电子邮件中的文件的百分比。
         - 数字：过去 28 天内将链接附加到 (保存到OneDrive或SharePoint) 电子邮件中的人数。
         - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或两者的人的数量。
-      - **在电子邮件中嵌入链接：** 蓝色 (条) 部分的颜色，而条形上的分数表示在电子邮件正文中嵌入链接的人的百分比。
-        - Numerator：在电子邮件正文中嵌入指向联机文件的链接 (最近 28 天内OneDrive或SharePoint) 保存到电子邮件中。
-        - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或两者的人的数量。
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
 
 ### <a name="sharing-of-online-files"></a>共享联机文件
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="显示在线共享文件人数的图表。":::
 
-1. **标头**：好友动态外部共享文件的 OneDrive 或 SharePoint 的访问权限的百分比。
+1. **标头：** 突出显示在外部共享文件OneDrive或SharePoint用户有权访问的百分比。
 2. **正文：** 提供有关管理员的信息&#39;更改组织中文件共享设置以启用最适合贵组织的协作级别。
 3. **可视化：** 表示有权访问外部或外部共享OneDrive SharePoint共享文件的程度：
       - **外部：** 蓝色 (条的) 部分和条形上的分数 (numerator/denominator) 表示有权访问 OneDrive 或 SharePoint 且正在外部共享文件的人的百分比。
@@ -161,7 +160,7 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="显示协作最多的文件的图表。":::
 
-1. **标头** 好友动态协作处理 4 个或多个文件OneDrive或SharePoint用户的访问权限的百分比。
+1. **标头：** 突出显示对 4 个或多个文件OneDrive或SharePoint用户的访问权限的百分比。
 2. **正文：** 提供有关用户如何利用联机文件进行更好的协作的信息。
 3. **可视化：** 显示有权访问 OneDrive 或 SharePoint 的SharePoint，基于他们协作处理的文件数。 这通过以下 4 个类别 (，栏的蓝色部分和分数表示有权访问属于该类别的 OneDrive 或 SharePoint 的百分比) ：
       - **无协作：**
@@ -183,7 +182,7 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 :::image type="content" source="../../media/networkperfstrength.png" alt-text="显示 OneDrive 和 SharePoint 的网络性能的图表。":::
 
-1. **标头**：好友动态所有测试的网络连接不佳的设备与 OneDrive 和 SharePoint。 
+1. **标头：** 突出显示所有测试设备中与移动设备和移动设备网络连接不佳OneDrive SharePoint。 
 2. **正文：** 提供有关网络连接性能为什么对协作很重要的信息。 
 3. **可视化：** 显示具有与移动设备和移动设备相关的不同网络连接性能级别的OneDrive SharePoint：
       - **81-100 (最佳) ：** 条形图的深绿色 (颜色) 部分表示性能最佳的设备的百分比。

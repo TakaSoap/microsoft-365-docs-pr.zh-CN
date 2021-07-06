@@ -1,5 +1,5 @@
 ---
-title: '对非 Microsoft 云应用使用数据丢失防护策略 (预览) '
+title: 对非 Microsoft 云应用使用数据丢失防护策略
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将 dlp 策略用于非 Microsoft 云应用。
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300120"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft 云应用数据丢失防护策略 (预览) 
 
@@ -42,6 +42,12 @@ ms.locfileid: "53226835"
 - Microsoft 365 E5
 - Microsoft 365 E5 合规
 - Microsoft 365 E5 安全性
+
+### <a name="permissions"></a>权限
+创建 DLP 策略的用户应是：
+- 全局管理员
+- 合规性管理员
+- 合规性数据管理员
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>准备云应用安全环境
 
@@ -81,7 +87,8 @@ ms.locfileid: "53226835"
 
 ![限制第三方应用](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [注意]应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 当为非 Microsoft 应用创建 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。
+> [!NOTE]
+> 应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 当为非 Microsoft 应用创建 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。
 
 有关创建和配置 DLP 策略的信息，请参阅创建 [测试和调整 DLP 策略](./create-test-tune-dlp-policy.md)。
 

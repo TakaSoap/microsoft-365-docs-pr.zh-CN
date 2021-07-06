@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276925"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300097"
 ---
 # <a name="device-images"></a>设备图像
 
@@ -31,7 +31,7 @@ ms.locfileid: "53276925"
 直接与 Dell 销售代表合作，他们将确保由 Microsoft 托管桌面 批准的映像适用于你的订单的设备。 有关 Dell 设备、映像和订购流程的更多问题，请与 MMD_at_dell@dell.com。
 
 ### <a name="hp"></a>HP 
-从 HP 订购新设备时，请务必使用购买[Windows 10 专业版](https://www.microsoft.com/windowsforbusiness/view-all-devices)业务设备站点 (中每个型号的"其他要求"部分中列出的特定 SKU 来筛选视图以显示 Microsoft 托管桌面 设备) 。
+从 HP 订购新设备时，请务必使用购买[Windows 10 专业版](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter)业务设备站点 (中每个型号的"其他要求"部分中列出的特定 SKU 来筛选视图以显示 Microsoft 托管桌面 设备) 。
 
 如果从 HP 订购的设备已被批准为异常，但当前未[](customizing.md)在"设备列表"页上列出，请务必请求 SKU 以用于你的型号。 我们将与 HP 合作，通过异常请求获取此信息。 对于有关设备和设备订购说明的任何问题，还可使用这些地址直接与 HP 联系：
  
