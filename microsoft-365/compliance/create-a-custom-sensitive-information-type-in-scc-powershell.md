@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: ef63adc5fb4f032b6224e054950f8c40f5e78f5a
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: ab89104804fd1af781ca30ed8893bed60cd29e47
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287607"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322253"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -348,6 +348,86 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
 完成后，RulePack 元素应如下所示。
   
 ![显示 RulePack 元素的 XML 标记](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+
+## <a name="validators"></a>验证程序
+
+Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是它们的列表。 
+
+### <a name="list-of-validators-currently-available"></a>当前可用的验证程序列表
+
+- Func_credit_card
+- Func_ssn
+- Func_unformatted_ssn
+- Func_randomized_formatted_ssn
+- Func_randomized_unformatted_ssn
+- Func_aba_routing
+- Func_south_africa_identification_number
+- Func_brazil_cpf
+- Func_iban
+- Func_brazil_cnpj
+- Func_swedish_national_identifier
+- Func_india_aadhaar
+- Func_uk_nhs_number
+- Func_Turkish_National_Id
+- Func_australian_tax_file_number
+- Func_usa_uk_passport
+- Func_canadian_sin
+- Func_formatted_itin
+- Func_unformatted_itin
+- Func_dea_number_v2
+- Func_dea_number
+- Func_japanese_my_number_personal
+- Func_japanese_my_number_corporate
+
+这让你能够定义自己的正则表达式并验证它们。 若要使用验证程序，请定义你自己的正则表达式，定义正则表达式时，请使用 validator 属性添加您所选择的函数处理器。 定义后，可以在 SIT 中使用此正则表达式。 
+
+在下面的示例中，正则表达式 - Regex_credit_card_AdditionalDelimiters定义为信用卡，然后使用信用卡的校验和函数将 Func_credit_card 用作验证程序进行验证。
+
+```xml
+<Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
+<Entity id="675634eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+<Pattern confidenceLevel="85">
+<IdMatch idRef="Regex_credit_card_AdditionalDelimiters" />
+<Any minMatches="1">
+<Match idRef="Keyword_cc_verification" />
+<Match idRef="Keyword_cc_name" />
+<Match idRef="Func_expiration_date" />
+</Any>
+</Pattern>
+</Entity>
+```
+
+Microsoft 365两个通用验证程序
+
+### <a name="checksum-validator"></a>校验和验证程序
+
+本示例定义员工 ID 的校验和验证程序，以验证 EmployeeID 的正则表达式。
+
+```xml
+<Validators id="EmployeeIDChecksumValidator">
+<Validator type="Checksum">
+<Param name="Weights">2, 2, 2, 2, 2, 1</Param>
+<Param name="Mod">28</Param>
+<Param name="CheckDigit">2</Param> <!-- Check 2nd digit -->
+<Param name="AllowAlphabets">1</Param> <!— 0 if no Alphabets -->
+</Validator>
+</Validators>
+<Regex id="Regex_EmployeeID" validators="ChecksumValidator">(\d{5}[A-Z])</Regex>
+<Entity id="675634eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+<Pattern confidenceLevel="85">
+<IdMatch idRef="Regex_EmployeeID"/>
+</Pattern>
+</Entity>
+```
+
+### <a name="date-validator"></a>日期验证程序
+
+本示例为日期的正则表达式部分定义日期验证程序。
+
+```xml
+<Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
+<Regex id="date_regex_1" validators="date_validator_1">\d{8}</Regex>
+```
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
@@ -356,8 +436,6 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。） 
   
 ## <a name="upload-your-rule-package"></a>上传规则包
-
-
 
 若要上传规则包，请按照以下步骤操作：
   
@@ -460,121 +538,6 @@ Microsoft 365 使用搜索爬网程序对网站内容中的敏感信息进行标
   
 在 Microsoft 365 中，无法手动请求对整个租户进行重新爬网，但可以对网站集、列表或库这样做。请参阅[手动请求对网站、库或列表进行爬网和重新编制索引](/sharepoint/crawl-site-content)。
   
-## <a name="remove-a-custom-sensitive-information-type"></a>删除自定义敏感信息类型
-
-> [!NOTE]
-> 删除自定义敏感信息类型前，请先验证没有 DLP 策略或 Exchange 邮件流规则（亦称为“传输规则”）仍在引用此敏感信息类型。
-
-在合规中心 PowerShell 中，有两种方法可以删除自定义敏感信息类型：
-
-- 删除各个自定义敏感信息类型：使用[修改自定义敏感信息类型](#modify-a-custom-sensitive-information-type)中介绍的方法。导出包含自定义敏感信息类型的自定义规则包，从 XML 文件中删除敏感信息类型，然后将更新的 XML 文件导回现有的自定义规则包。
-
-- 删除自定义规则包及其包含的所有自定义敏感信息类型：本部分介绍了此方法。
-
-1. [连接到合规中心 PowerShell](/powershell/exchange/exchange-online-powershell)
-
-2. 若要删除自定义规则包，请使用 [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) cmdlet：
-
-   ```powershell
-   Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
-   ```
-
-   可使用 Name 值（适用于任何语言）或 `RulePack id` (GUID) 值来标识规则包。
-
-   本示例删除名为“Employee ID Custom Rule Pack”的规则包。
-
-   ```powershell
-   Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-   ```
-
-   有关语法和参数的详细信息，请参阅 [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage)。
-
-3. 若要验证是否已成功删除自定义敏感信息类型，请执行以下任意步骤：
-
-   - 运行 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet，验证规则包不再列出：
-
-     ```powershell
-     Get-DlpSensitiveInformationTypeRulePackage
-     ```
-
-   - 运行 [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet，验证已删除的规则包中的敏感信息类型不再列出：
-
-     ```powershell
-     Get-DlpSensitiveInformationType
-     ```
-
-     对于自定义敏感信息类型，Publisher 属性值将不是 Microsoft Corporation。
-
-   - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet ，验证敏感信息类型是否不再列出：
-
-     ```powershell
-     Get-DlpSensitiveInformationType -Identity "<Name>"
-     ```
-
-## <a name="modify-a-custom-sensitive-information-type"></a>修改自定义敏感信息类型
-
-在合规中心 PowerShell 中，若要修改自定义敏感信息类型，需要执行以下操作：
-
-1. 将包含自定义敏感信息类型的现有规则包导出到 XML 文件（或者，如果已有 XML 文件，则使用它）。
-
-2. 修改导出的 XML 文件中的自定义敏感信息类型。
-
-3. 将更新的 XML 文件导回现有规则包。
-
-若要连接到合规中心 PowerShell，请参阅[连接到合规中心 PowerShell](/powershell/exchange/exchange-online-powershell)。
-
-### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>步骤 1：将现有的规则包导出到 XML 文件
-
-> [!NOTE]
-> 如果有 XML 文件的副本 （例如，只需创建并导入它），可跳到下一步来修改 XML 文件。
-
-1. 如果你还不确定，请运行 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) cmdlet，查找自定义规则包的名称：
-
-   ```powershell
-   Get-DlpSensitiveInformationTypeRulePackage
-   ```
-
-   > [!NOTE]
-   > 包含内置敏感信息类型的内置规则包名为 Microsoft Rule Package。包含你在合规中心 UI 中创建的自定义敏感信息类型的规则包名为 Microsoft.SCCManaged.CustomRulePack。
-
-2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet，将自定义规则包存储到变量：
-
-   ```powershell
-   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
-   ```
-
-   例如，如果规则包的名称是“Employee ID Custom Rule Pack”，请运行以下 cmdlet：
-
-   ```powershell
-   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-   ```
-
-3. 使用 [Set-Content](/powershell/module/microsoft.powershell.management/set-content) cmdlet 将自定义规则包导出到 XML 文件：
-
-   ```powershell
-   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-   ```
-
-   本示例将规则包导出到 C:\My Documents 文件夹中名为 ExportedRulePackage.xml 的文件。
-
-   ```powershell
-   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-   ```
-
-#### <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>步骤 2：修改导出的 XML 文件中的敏感信息类型
-
-本文前面介绍了 XML 文件中的敏感信息类型和文件中的其他元素。
-
-#### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>步骤 3：将更新的 XML 文件导回现有规则包。
-
-若要将更新的 XML 导回现有规则包，请使用 [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) cmdlet：
-
-```powershell
-Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
-```
-
-有关语法和参数的详细信息，请参阅 [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage)。
-
 ## <a name="reference-rule-package-xml-schema-definition"></a>参考：规则包 XML 架构定义
 
 可复制此标记，并将它另存为 XSD 文件，以用来验证规则包 XML 文件。

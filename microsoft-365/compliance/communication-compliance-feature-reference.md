@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8a81c65d65704262230e6eb6245d882b63a18bab
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227371"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322289"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -188,12 +188,13 @@ ms.locfileid: "53227371"
 
 通信合规性内置可训练和全局分类器扫描针对以下类型语言和内容的术语、图像和情绪的通信：
 
-- **威胁**：扫描对人员或属性实施暴力或身体损害的威胁。
-- **针对性的冒犯**：扫描针对有关种族、颜色、种族、国家/地区的人的冒犯性行为。
-- **亵亵**：扫描使大多数人为难的亵亵表达式。
 - **成人图像**：扫描本质上非常明确的图像。
-- **Racy 图像**：扫描本质上是建议但包含的显式内容少于视为成人的图像的图像。
+- **种族 (预览) ：** 扫描明确的语言，与其他社区相比，对英语（美国）/非洲黑色社区尤其敏感。
 - **Gory 图像**：扫描描述暴力和暴力的图像。
+- **亵亵**：扫描使大多数人为难的亵亵表达式。
+- **Racy 图像**：扫描本质上是建议但包含的显式内容少于视为成人的图像的图像。
+- **针对性的冒犯**：扫描针对有关种族、颜色、种族、国家/地区的人的冒犯性行为。
+- **威胁**：扫描对人员或属性实施暴力或身体损害的威胁。
 
 *"成人**"、Racy* 和 *Gory* 图像分类器扫描 .jpeg、.png、.gif 和 .bmp 格式的文件。 图像文件的大小必须小于 4 MB (MB) 并且图像的尺寸必须大于 50x50 像素和大于 50 KB (KB) ，图像才符合评估条件。 图像标识受电子邮件Exchange Online频道和聊天Microsoft Teams支持。
 
@@ -553,7 +554,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-通信合规性策略匹配项存储在每个策略的监督邮箱中。 在某些情况下，可能需要检查监督邮箱的大小，以确保未接近当前 50 GB 的限制。 如果达到邮箱限制，则不捕获策略匹配项，并且您需要创建一个使用相同设置 (的新策略) 以继续捕获相同活动的匹配项。
+通信合规性策略匹配项存储在每个策略的监督邮箱中。 在某些情况下，您可能需要检查监督邮箱的大小，以确保未接近当前 50 GB 的限制。 如果达到邮箱限制，则不捕获策略匹配项，并且您需要创建一个使用相同设置 (的新策略) 以继续捕获相同活动的匹配项。
 
 若要检查策略监督邮箱的大小，请完成以下步骤：
 

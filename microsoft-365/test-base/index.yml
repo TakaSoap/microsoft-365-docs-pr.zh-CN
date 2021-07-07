@@ -1,0 +1,62 @@
+### YamlMime:Landing
+title: 测试基础Microsoft 365文档
+summary: 测试基础Microsoft 365 Azure 服务，可促进应用程序的数据驱动的测试。 受数据和云功能支持，IT 专业人员可以利用全球任何地方的智能测试。 它将帮助你测试应用程序，而无需在设置和维护复杂测试环境时花费的麻烦、时间承诺和费用。 最重要的是，它使你可以访问安全虚拟机上预发布的 Windows 更新， (VM) 和应用程序的世界一流智能。
+metadata:
+  title: M365 文档测试基础
+  description: 测试基础Microsoft 365 Azure 服务，可促进应用程序的数据驱动的测试。 受数据和云功能支持，IT 专业人员可以利用全球任何地方的智能测试。
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: v-zhifufeng
+  ms.author: v-zhifufeng
+  ms.date: 03/29/2021
+  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
+  ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "53322513"
+landingContent:
+- title: 关于测试基础
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是测试基础？
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: 创建测试基本帐户
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: additional-resources
+      url: faq.md
+- title: 入门
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 创建测试基本帐户
+      url: createAccount.md
+    - text: Upload应用程序
+      url: uploadApplication.md
+    - text: Upload二进制文件
+      url: binaries.md
+    - text: 设置测试任务
+      url: testtask.md
+    - text: 选择测试选项
+      url: testoptions.md
+    - text: 查看你的选择
+      url: review.md
+    - text: 测试包指南
+      url: contentguideline.md
+    - text: 内存回归分析
+      url: memory.md
+    - text: CPU 回归分析
+      url: cpu.md
+- title: 获取引用
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 常见问题解答
+      url: faq.md

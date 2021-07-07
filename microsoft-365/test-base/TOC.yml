@@ -1,0 +1,38 @@
+- name: 测试基础文档
+  href: index.yml
+- name: 概述
+  items:
+    - name: 什么是测试基础？
+      href: overview.md
+- name: 快速入门
+  items:
+    - name: 创建测试基本帐户
+      href: createAccount.md
+    - name: 上传程序包
+      href: uploadApplication.md
+    - name: Upload二进制文件&依赖项
+      href: binaries.md
+    - name: 设置测试任务
+      href: testtask.md
+    - name: 设置测试选项
+      href: testoptions.md
+    - name: 审阅
+      href: review.md
+    - name: 程序包指南
+      href: contentguideline.md
+- name: 操作指南
+  items:
+    - name: 服务器应用程序测试
+      href: server.md
+    - name: 功能测试
+      href: functional.md
+    - name: 功能更新验证
+      href: feature.md
+    - name: 内存回归分析
+      href: memory.md
+    - name: CPU 回归分析
+      href: cpu.md
+- name: 参考
+  items:
+    - name: 常见问题解答
+      href: faq.md

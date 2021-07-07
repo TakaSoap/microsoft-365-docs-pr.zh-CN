@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314400"
+ms.locfileid: "53326959"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
@@ -101,7 +101,7 @@ ms.locfileid: "53314400"
 
 4. 单击 **"策略**"，然后单击 **"管理模板"。**
 
-5. 单击 **Windows组件**"，然后单击Windows Defender **SmartScreen"。**
+5. 单击 **Windows组件**"，然后单击Windows Defender **ATP"。**
 
 6. 选择从设备启用或禁用示例共享。
 

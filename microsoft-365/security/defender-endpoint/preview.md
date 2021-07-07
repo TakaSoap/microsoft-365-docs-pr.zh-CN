@@ -18,19 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062136"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322421"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
->[!IMPORTANT]
->预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。 某些功能可能不受支持，或者可能具有受限功能。
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -47,6 +44,19 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 >在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。
+
+ ## <a name="what-you-need-to-know"></a>您需要了解哪些信息
+
+使用公共预览版中的功能时，这些功能：
+
+- 功能可能受限或受限。 例如，此功能可能仅适用于一个平台。
+- 通常先完成功能更改，然后再在 GA (正式) 。
+- 完全受 Microsoft 支持。
+- 可能仅在选定的地理区域或云环境中可用。 例如，此功能可能不存在于政府云中。
+- 预览版中的单个功能可能具有更多用法和支持限制。 如果是这样，此信息通常会记录在功能文档中。
+- 预览版本提供标准支持级别，建议用于生产工作负载。 
+
+
 
 ## <a name="turn-on-preview-features"></a>启用预览功能
 

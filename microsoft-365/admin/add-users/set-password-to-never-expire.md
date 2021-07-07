@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 登录你的 Microsoft 365 管理员帐户，使用密码将一些个人用户密码设置为永不Windows PowerShell。
-ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286257"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326719"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>设置单个用户的密码永不过期
 
@@ -43,8 +43,6 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
 
 本指南适用于其他提供程序，如 Intune 和 Microsoft 365，这些提供程序还依赖 Azure AD 提供标识和目录服务。 密码过期是策略中唯一可以更改的部分。
 
-> [!NOTE]
-> 只能将未通过目录同步同步的用户帐户的密码配置为永不过期。 有关目录同步详细信息，请参阅 连接[AD with Azure AD。](/azure/active-directory/connect/active-directory-aadconnect)
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何检查密码的过期策略
 

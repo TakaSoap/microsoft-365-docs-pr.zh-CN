@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 localization_priority: None
 description: 了解 M365 中的 Learning Tools Interoperability (LTI) Office 应用，以及他们将 Office 应用集成到其 Learning Management System (LMS) 时如何帮助教师。
-ms.openlocfilehash: 4fd7b25b6463eec4f681e3090bb65db8b00351a8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 34956eac57a7e3af44ca1c8cf8ae2714327e3e96
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256672"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322337"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>将 Microsoft 产品与 Learning Management System (LMS) 
 
@@ -78,3 +78,5 @@ Microsoft Teams会议 LTI 应用可帮助管理员将Teams合并到教育机构�
 学习Microsoft Teams LTI 应用可帮助教师和学生在 LMS 和 Teams。 用户可以直接从 LMS 中访问与其课程关联的课堂团队。 你可以找到下面的配置步骤：
 
 - **Teams类 LTI 与 Canvas** [一Microsoft Teams使用 Canvas 类](teams-classes-with-canvas.md)。
+
+- **Teams类 LTI with 使用具有 Microsoft Teams** [Learn 超的类](teams-classes-with-blackboard.md)

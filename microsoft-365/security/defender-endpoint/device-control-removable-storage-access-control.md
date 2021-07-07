@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229571"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327043"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能够执行以下任务：
+
 - 审核，允许或阻止对可移动存储进行读取、写入或执行访问（带排除或不排除）
 
 |Privilege |权限  |
@@ -47,6 +48,8 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 - **4.18.2105** 或更高版本：添加对 HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId 的通配符支持、特定计算机上特定用户的组合、可删除的 SSD (SanDisk 极性 SSD) /USB 附加 SCSI (UAS) 支持
 
+- **4.18.2107 或** 更高版本：添加 Windows 可移植设备 (WPD) 支持 (移动设备（如平板电脑或) 
+
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 接口":::
 
 > [!NOTE]
@@ -62,15 +65,14 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 **属性名称：DescriptorIdList**
 
-1. 说明：列出你想要在组中覆盖的设备属性。
-列出你想要在组中覆盖的设备属性。
+2. 说明：列出你想要在组中覆盖的设备属性。
 有关每个设备属性的详细信息， **请参阅上面的设备** 属性部分。
 
-1. 选项：
-
-    - 主 ID
+3. 选项：
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId：InstancePathId 是一个唯一标识系统中设备的字符串，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0。 末尾的号码 (例如 0&**0**) 表示可用插槽，并且可能会从设备更改为设备。 为获得最佳结果，请结尾使用通配符。 例如，USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -87,7 +89,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 1. 说明：当 DescriptorIDList 中使用多个设备属性时，MatchType 定义关系。
 
-1. 选项：
+2. 选项：
 
     - MatchAll：DescriptorIdList 下的任何属性将为 **And** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 上，系统将检查 USB 是否同时满足这两个值。
     - MatchAny：DescriptorIdList 下的属性将为 **Or** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 上，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系统就会执行强制操作。
@@ -100,9 +102,9 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 **属性名称：IncludedIdList**
 
-2. 说明： (策略) 的组。 如果添加了多个组，该策略将应用于所有这些组的任何媒体。
+1. 说明： (策略) 的组。 如果添加了多个组，该策略将应用于所有这些组的任何媒体。
 
-3. 选项：必须在此实例使用组 ID/GUID。
+2. 选项：必须在此实例使用组 ID/GUID。
 
 以下示例显示 GroupID 的用法：
 
@@ -135,11 +137,11 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 **属性名称：Sid**
 
-说明：定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。
+说明：本地计算机 Sid 或 AD 对象的 Sid 定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。
 
 **属性名称：ComputerSid**
 
-说明：定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，一个条目不带任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。
+说明：本地计算机 Sid 或 AD 对象的 Sid 定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，而一个条目没有任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。
 
 **属性名称：Options**
 
@@ -214,7 +216,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 通过"存储访问控制"功能，可以通过组策略将策略应用于用户或设备，或同时应用于两者。
 
-### <a name="licensing"></a>授权
+### <a name="licensing"></a>许可
 
 在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
@@ -244,7 +246,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 通过可移动存储访问控制功能，你可以将策略通过 OMA-URI 应用到用户或设备，或同时应用到两者。
 
-### <a name="licensing"></a>授权
+### <a name="licensing"></a>许可
 
 在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
@@ -322,6 +324,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="描述可移动存储被阻止的屏幕":::
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
+
 **最大 USB 数量的可移动存储媒体限制是什么？**
 
 我们已验证一个具有 100，000 个媒体的 USB 组 - 大小最高为 7 MB。 该策略在 Intune 和 GPO 中均有效，而未发生性能问题。
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

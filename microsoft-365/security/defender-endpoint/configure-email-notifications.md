@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286929"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327031"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
@@ -66,7 +66,7 @@ ms.locfileid: "53286929"
     - **设备** - 选择是通知收件人有关所有设备上警报 (全局管理员角色) 或所选设备组。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
     - **警报严重性** - 选择警报严重性级别。
 
-4. 点击“**下一步**”。
+4. 单击“**下一步**”。
 
 5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可添加多个电子邮件地址。
 
@@ -104,3 +104,4 @@ ms.locfileid: "53286929"
 
 - [更新数据保留设置](data-retention-settings.md)
 - [配置高级功能](advanced-features.md)
+- [在 Microsoft Defender for Endpoint 中配置漏洞电子邮件通知](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications)
