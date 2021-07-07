@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287499"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300132"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -912,11 +912,11 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已创建批注|CreateComment|表单所有者向测验添加批注或分数。|
-|已创建表单|CreateForm|表单所有者创建一个新表单。|
+|已创建表单|CreateForm|表单所有者创建一个新表单。 <br><br>Property DataMode:string 指示如果属性值等于 DataSync，则当前表单设置为与新的或现有 Excel 工作簿同步。 属性 ExcelWorkbookLink:string 指示当前表单的关联 Excel 工作簿 ID。|
 |已编辑表单|EditForm|表单所有者编辑表单，如创建、删除或编辑问题。 *EditOperation:string* 属性表示编辑操作名称。 可能的操作如下：<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage 包含表单中用户可上传图像的任何位置，例如在查询中或作为背景主题。|
-|已移动表单|MoveForm|表单所有者移动表单。 <br><br>属性 DestinationUserId:string 表示移动表单的人员的用户 ID。 属性 NewFormId:string 是新复制的表单的新 ID。|
+|已移动表单|MoveForm|表单所有者移动表单。 <br><br>属性 DestinationUserId:string 表示移动表单的人员的用户 ID。 属性 NewFormId:string 是新复制的表单的新 ID。 属性 IsDelegateAccess:boolean 指示当前表单移动操作是通过管理员代理页面执行的。|
 |已删除表单|DeleteForm|表单所有者删除表单。 这包括 SoftDelete（使用删除选项并将表单移动到回收站）和 HardDelete（清空回收站）。|
-|已查看表单（设计时）|ViewForm|表单所有者打开现有表单进行编辑。|
+|已查看表单（设计时）|ViewForm|表单所有者打开现有表单进行编辑。 <br><br>属性 AccessDenied:boolean 指示由于权限检查，拒绝了当前表单的访问。 属性 FromSummaryLink:boolean 指示当前请求来自摘要链接页。|
 |已预览表单|PreviewForm|表单所有者使用“预览”功能预览表单。|
 |已导出表单|ExportForm|表单所有者将结果导出到 Excel。 <br><br>属性 ExportFormat:string 表示 Excel 文件是下载还是在线文件。|
 |已允许共享表单以进行复制|AllowShareFormForCopy|表单所有者创建模板链接以便与其他用户共享表单。 当表单所有者通过单击生成模板 URL 时，将记录此事件。|
@@ -935,10 +935,21 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更新表单钓鱼状态|UpdatePhishingStatus|无论是否更改了最终安全状态（例如，表单现为“已关闭”或“已打开”状态），只要内部安全状态的详细信息值发生更改，就会记录此事件。 这意味着可能会在最终安全状态未更改的情况下看到重复的事件。 此事件的可能状态值如下：<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
 |已更新用户钓鱼状态|UpdateUserPhishingStatus|每当用户安全状态值更改时，都会记录此事件。 用户创建由 Microsoft Online 安全团队删除的网络钓鱼表单时，审核记录中的用户状态值为“**确认为钓鱼者**”。 如果管理员取消阻止该用户，则该用户状态的值将设置为“**重置为普通用户**”。|
 |已发送 Forms Pro 邀请|ProInvitation|用户通过单击激活 Pro 试用版。|
-|已更新表单设置|UpdateFormSetting|表单所有者更新表单设置。 <br><br>属性 FormSettingName:string 表示设置的名称和新值。|
+|已更新表单设置|UpdateFormSetting|表单所有者更新一个或多个表单设置。 <br><br>属性 FormSettingName:string 指示已更新敏感设置的名称。 属性 NewFormSettings:string 指示已更新设置的名称和新值。 属性 thankYouMessageContainsLink:boolean 指示更新的 thankyou 消息包含 URL 链接。|
 |已更新用户设置|UpdateUserSetting|表单所有者更新用户设置。 <br><br>属性 UserSettingName:string 表示设置的名称和新值|
 |已列出表单|ListForms|表单所有者正在查看表单列表。 <br><br>属性 ViewType:string 表示表单所有者正在使用的查看视图：“所有表单”、“与我共享”或“组表单”|
 |已提交响应|SubmitResponse|用户提交对表单的响应。 <br><br>属性 IsInternalForm:boolean 表示响应者是否与表单所有者位于同一组织中。|
+|启用任何人都可以响应设置|AllowAnonymousResponse|表单所有者启用允许任何一人响应表单的设置。|
+|已禁用任何人都可响应设置|DisallowAnonymousResponse|表单所有者关闭允许任何一人响应表单的设置。|
+|已启用特定人员可响应设置|EnableSpecificResponse|表单所有者启用该设置，仅允许当前组织中的特定人员或特定组响应表单。|
+|已禁用特定人员可响应设置|DisableSpecificResponse|表单所有者关闭仅允许当前组织中的特定人员或特定组响应表单的设置。|
+|已添加特定响应者|AddSpecificResponder|表单所有者将新用户或组添加到特定响应者列表。|
+|已删除特定响应者|RemoveSpecificResponder|表单所有者从特定响应者列表中删除用户或组。|
+|已禁用协作|DisableCollaboration|表单所有者关闭表单上的协作设置。|
+|已启用 Office 365 工作或学校帐户协作|EnableWorkOrSchoolCollaboration|表单所有者打开设置，允许具有 Office 365 工作或学校帐户的用户查看和编辑表单。|
+|已启用组织中人员协作|EnableSameOrgCollaboration|表单所有者打开设置，允许当前组织中的用户查看和编辑表单。|
+|已启用特定人员协作|EnableSpecificCollaboaration|表单所有者启用设置，仅允许当前组织中的特定人员或特定组查看和编辑表单。|
+|已连接到 Excel 工作簿|ConnectToExcelWorkbook|已将表单连接到 Excel 工作簿。 <br><br>属性 ExcelWorkbookLink:string 指示当前表单的关联 Excel 工作簿 ID。|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>合著者和匿名响应者执行的 Forms 活动

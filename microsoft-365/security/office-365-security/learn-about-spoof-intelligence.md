@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (中的欺骗智能) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0131266d5830988ed23fc11e01323025aa6d50a
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 0f2e1b59b1140b4ee5b187329dac51557ef4df87
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108519"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314376"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺骗智能见解
 
@@ -81,10 +81,9 @@ ms.locfileid: "53108519"
 
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：
-
-  - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  > [!NOTE]
+  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 在 EOP 和 Microsoft Defender for Office 365 中启用和禁用反网络钓鱼策略中的欺骗Office 365。 默认情况下启用欺骗智能。 有关详细信息，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略或在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-mdo-anti-phishing-policies.md)
 
@@ -92,9 +91,9 @@ ms.locfileid: "53108519"
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在企业门户中打开Microsoft 365 Defender见解
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page Tenant \> **Allow/Block Lists**.
 
-2. 在 **"反网络钓鱼"** 页面上，欺骗智能见解如下所示：
+2. 在" **租户允许/阻止列表"** 页上，欺骗智能见解如下所示：
 
    ![反网络钓鱼策略页面上的欺骗智能见解](../../media/m365-sc-spoof-intelligence-insight.png)
 

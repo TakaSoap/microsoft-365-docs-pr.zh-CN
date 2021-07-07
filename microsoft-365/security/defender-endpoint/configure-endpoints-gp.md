@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286953"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314400"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
@@ -118,7 +118,7 @@ ms.locfileid: "53286953"
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-Policy | Setting
+Policy | 设置
 :---|:---
 Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集合"
 
@@ -126,7 +126,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-Policy | Setting
+Policy | 设置
 :---|:---
 配置对可能不需要的应用程序的检测 | 已启用、阻止
 
@@ -134,7 +134,7 @@ Policy | Setting
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-Policy | Setting
+Policy | 设置
 :---|:---
 加入 Microsoft MAPS | 已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -143,7 +143,7 @@ Policy | Setting
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy | Setting
+Policy | 设置
 :---|:---
 关闭实时保护|禁用
 打开行为监视|已启用
@@ -156,7 +156,7 @@ Policy | Setting
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -178,7 +178,7 @@ Policy | Setting
 
    ![攻击面减少配置的图像](images/asr-guid.png)
 
-Policy | Setting
+Policy | 设置
 :---|:---
 配置受控文件夹访问权限| 已启用，审核模式
 
@@ -211,7 +211,7 @@ Policy | Setting
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check-box.
 
-8. 转到"操作 **"选项卡** ，然后单击"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 输入共享文件的文件名和  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* 文件。
+8. 转到"操作 **"选项卡** ，然后单击"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 输入共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 文件的* NetBIOS 路径。
 
 9. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
 

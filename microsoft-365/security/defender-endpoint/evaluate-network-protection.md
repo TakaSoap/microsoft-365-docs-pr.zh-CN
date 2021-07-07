@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
+ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926567"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53309356"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
@@ -40,7 +40,7 @@ ms.locfileid: "52926567"
 
 在审核模式下启用网络保护以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现频繁发生的情况。
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -55,7 +55,7 @@ ms.locfileid: "52926567"
 
 将允许网络连接，并显示测试消息。
 
-![显示"已阻止连接：IT 管理员Windows 安全中心阻止此网络连接的示例通知。 请与 IT 技术支持联系。](/microsoft-365/security/defender-endpoint/images/np-notif)
+![显示"已阻止连接：IT 管理员Windows 安全中心阻止此网络连接的示例通知。 请与 IT 技术支持联系。](images/np-notif.png)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
 

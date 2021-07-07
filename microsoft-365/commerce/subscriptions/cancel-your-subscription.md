@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: d327a09eba06e9a2bbc92959b6048649b41b72fe
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e0b23d785a86102891f24cb16419794773d64356
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256791"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300036"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 

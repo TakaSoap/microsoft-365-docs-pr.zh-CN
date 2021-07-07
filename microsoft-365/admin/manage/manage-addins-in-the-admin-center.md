@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用集中式加载项将加载项部署到组织中用户和组。
-ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636054"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314383"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在管理中心管理加载项
 
@@ -121,6 +121,9 @@ Office加载项有助于个性化设置文档，并简化访问 Web 上信息 (�
 - Web - 当前可用。
     
 这不会阻止管理员使用集中部署从应用商店分配Office加载项。
+
+> [!NOTE] 
+> 加载项（如Visio可视化工具、必应地图 和人员 Graph）仍将显示在功能区中，即使管理员已禁用应用商店。 若要删除这些链接，管理员必须通过组策略对象或 GPO (Store) 。
   
 若要防止用户使用 Microsoft 帐户登录，可以将登录限制为仅使用组织帐户。 有关详细信息，请参阅[Identity， authentication， and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office)。  
 

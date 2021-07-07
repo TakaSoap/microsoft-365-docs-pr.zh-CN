@@ -19,18 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226679"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314412"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
 可以使用 Microsoft 365 数据丢失防护 (DLP) 来监视对确定为敏感的项目执行的操作，并帮助防止意外共享这些项目。 有关 DLP 的更多详细信息，请参阅 [了解数据丢失防护（预览版）](dlp-learn-about-dlp.md)。
 
 **终结点数据丢失防护**（终结点 DLP）可将 DLP 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
+
+> [!TIP]
+> 如果正在查找可移动存储的设备控制，请查看 [Microsoft Defender for Endpoint 设备控制可移动存储访问控制](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control)。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 

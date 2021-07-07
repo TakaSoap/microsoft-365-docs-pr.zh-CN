@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为电子邮件别名）与企业Microsoft 365相关联。 '
-ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572101"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314352"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
   
@@ -46,7 +46,7 @@ ms.locfileid: "52572101"
 
 为此， [你必须具有](../add-users/about-admin-roles.md) 管理员权限。 
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在" **活动用户"** 页上，选择"管理> **和电子邮件"的用户**。 如果用户未分配许可证，则看不到此选项。 
     
@@ -70,7 +70,7 @@ ms.locfileid: "52572101"
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户回复时，"*发送* 者"地址将取决于她Outlook客户端。Outlook Web 上的用户将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用桌面Outlook邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **当用户回复时，"*发送* 者"地址将取决于她Outlook客户端。Outlook 网页版会使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用桌面Outlook邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>您是否收到"找不到与参数名称 EmailAddresses 匹配的参数"？
 
@@ -83,7 +83,7 @@ ms.locfileid: "52572101"
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>轻松地从代理地址发送电子邮件
 
-2021 年 4 月推出一项新功能，允许用户在使用 Web 上的 Outlook轻松发送别名。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
+2021 年 7 月推出一项新功能，允许用户在使用别名时轻松Outlook 网页版。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
   
 ## <a name="related-content"></a>相关内容
 

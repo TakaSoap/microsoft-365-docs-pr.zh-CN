@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933861"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314424"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -35,7 +35,13 @@ ms.locfileid: "51933861"
 为了更好地代表 Microsoft 安全分数的安全状态，我们进行了一些更改。 若要了解计划更改，请参阅 Microsoft 安全分数 [中即将提供哪些功能？](microsoft-secure-score-whats-coming.md)
 
 Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/securescore [中心。](overview-security-center.md)
-    
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>删除与项目相关的改进Microsoft Cloud App Security
+
+- 使用云应用安全检测异常行为。
+
 ## <a name="february-2021"></a>2021 年 2 月
 
 ### <a name="compatibility-with-graph-api"></a>与 Graph API 的兼容性
