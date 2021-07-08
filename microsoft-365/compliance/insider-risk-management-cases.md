@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226523"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326815"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -98,7 +98,7 @@ ms.locfileid: "53226523"
 " **警报"** 选项卡汇总了案例中包含的当前警报。 新警报可能会添加到现有案例，并将在分配时添加到警报队列中。  队列列出了以下警报属性：
 
 - 状态
-- 严重性
+- Severity
 - 检测到的时间
 
 Select an alert from the queue to display the **Alert detail** page.
@@ -106,7 +106,7 @@ Select an alert from the queue to display the **Alert detail** page.
 使用搜索控件搜索特定文本的警报名称，并使用警报筛选器按以下属性对事例进行排序：
 
 - 状态
-- 严重性
+- Severity
 - 检测时间、开始日期和结束日期
 
 使用筛选器控件按多个属性筛选警报，包括：
@@ -147,7 +147,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 " **活动资源管理器** "选项卡允许风险分析师和研究人员查看与风险警报相关的活动详细信息。 例如，作为案例管理措施的一部分，研究人员和分析师可能需要查看与案例相关的所有风险活动，了解更多详细信息。 使用 **活动资源管理器**，审阅者可以快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。
 
-有关活动资源管理器详细信息，请参阅 [预览体验成员风险管理警报](insider-risk-management-alerts.md#activity-explorer-preview) 文章。
+有关活动资源管理器详细信息，请参阅 [预览体验成员风险管理警报](insider-risk-management-activities.md#activity-explorer-preview) 文章。
 
 ### <a name="content-explorer"></a>内容资源管理器
 

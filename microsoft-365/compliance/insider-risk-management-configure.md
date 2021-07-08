@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f9cd78cb41a7cbe5011163d1f5734ff0b3c2261e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256323"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326791"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -251,4 +251,4 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
 
 完成这些步骤以创建首个内部风险管理策略后，你将在大约 24 小时后开始从活动指示器接收警报。 使用本文步骤 4 中的指导或创建新的内部风险策略 中的步骤根据需要配置 [其他策略](insider-risk-management-policies.md#create-a-new-policy)。
 
-若要详细了解如何调查内部风险警报和 **警报仪表板**，请参阅 [预览体验成员风险管理警报](insider-risk-management-alerts.md)。
+若要详细了解如何调查内部风险警报和 **警报仪表板**，请参阅 [预览体验成员风险管理活动](insider-risk-management-activities.md#alert-dashboard)。

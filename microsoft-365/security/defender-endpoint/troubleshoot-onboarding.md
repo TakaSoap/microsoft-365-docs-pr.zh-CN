@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929691"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326899"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -134,7 +134,7 @@ ms.locfileid: "52929691"
 
 频道名称：管理员
 
-ID | 严重性 | 事件描述 | 故障排除步骤
+ID | Severity | 事件描述 | 故障排除步骤
 :---|:---|:---|:---
 1819 | 错误 | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载[1607 年 Windows 10 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
 
@@ -300,6 +300,9 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>在服务器上载入问题疑难解答
 
+>[!NOTE]
+>以下疑难解答指南仅适用于Windows Server 2016或更低级别。
+
 如果在载入服务器时遇到问题，请执行以下验证步骤来解决可能的问题。
 
 - [确保Microsoft Monitoring Agent (MMA) 并配置为向服务报告传感器数据](configure-server-endpoints.md)
@@ -334,7 +337,7 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 - 在最终用户执行第一次登录之前，设备已关闭或重新启动
 - 在此方案中，SENSE 服务不会自动启动，即使已部署载入包
 
-<div class="alert"><b>注意：</b>OOBE 后的用户登录不再需要 SENSE 服务启动以下或更新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019（[包含 2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总） </br> Windows 10 2021 年 4 月更新汇总的版本[1909](https://support.microsoft.com/kb/5001396) </br> Windows 10 2021 年 4 月 28 日更新汇总的[2004/20H2 版本](https://support.microsoft.com/kb/5001391) </div> 
+<div class="alert"><b>注意：</b>OOBE 后的用户登录不再需要 SENSE 服务启动以下或最新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019 及[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总 </br> Windows 10 2021 年 4 月更新汇总的版本[1909](https://support.microsoft.com/kb/5001396) </br> Windows 10 2021 年 4 月 28 日更新汇总的[2004/20H2 版本](https://support.microsoft.com/kb/5001391) </div> 
 <br></br>
 > [!NOTE]
 > 以下步骤仅在使用 Microsoft Endpoint Configuration Manager 时Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。

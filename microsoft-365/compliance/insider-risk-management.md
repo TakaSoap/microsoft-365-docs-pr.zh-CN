@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226343"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326743"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>了解企业内部风险管理Microsoft 365
 
@@ -86,10 +86,10 @@ ms.locfileid: "53226343"
 
 ### <a name="alerts"></a>警报
 
-警报由与策略条件匹配的风险指示器自动生成，并显示在 [警报仪表板中](insider-risk-management-alerts.md)。 此仪表盘可以快速预览需要审查的全部警报、随时间变化的开放警报以及组织的警报统计。 将显示所有策略警报，并显示以下信息，以帮助您快速识别需要操作的现有警报和新警报的状态：
+警报由与策略条件匹配的风险指示器自动生成，并显示在 [警报仪表板中](insider-risk-management-activities.md#alert-dashboard)。 此仪表盘可以快速预览需要审查的全部警报、随时间变化的开放警报以及组织的警报统计。 将显示所有策略警报，并显示以下信息，以帮助您快速识别需要操作的现有警报和新警报的状态：
 
 - 状态
-- 严重性
+- Severity
 - 检测到的时间
 - 情况
 - 案例状态
@@ -106,6 +106,8 @@ ms.locfileid: "53226343"
 
 ### <a name="investigate"></a>调查
 
+使用用户活动报告快速调查所选用户的所有活动[ (预览) 。 ](insider-risk-management-activities.md#user-activity-reports-preview) 这些报告允许贵组织的研究人员在定义的时段内检查特定用户的活动，而无需将其临时或显式分配给内部风险管理策略。 在检查用户的活动后，调查人员可以以恶意方式消除个别活动，与其他调查人员共享或通过电子邮件发送指向报告的链接，或者选择将用户临时或显式分配给内部风险管理策略。
+
 [为](insider-risk-management-cases.md) 需要更深入地查看和调查活动详细信息以及策略匹配情况的情况的警报创建案例。 **案件仪表盘** 提供了所有活动案件、随时间变化的未结案件以及组织的案件统计的全面视图。 审阅者可以按状态、打开事例的日期和上次更新事例的日期快速筛选事例。
 
 在案件仪表盘选中案件即可打开该案件以进行调查和审查。 此步骤是内部风险管理工作流的核心。 此区域将风险活动、策略条件、警报详细信息和用户详细信息合成为审阅者的集成视图。 此领域的主要调查工具包括：
@@ -118,7 +120,7 @@ ms.locfileid: "53226343"
 
 此外，新的审核 [ (预览版) ](insider-risk-management-audit-log.md) 使你可以随时了解对内部风险管理功能采取的操作。 此资源允许独立审阅分配给一个或多个内部风险管理角色组的用户所采取的操作。
 
-### <a name="action"></a>操作
+### <a name="action"></a>Action
 
 调查案例后，审阅者可以快速采取行动来解决该案例，或与组织的其他风险利益干系人协作。 如果用户意外或无意违反策略条件，可以从您可以为组织自定义的通知模板向用户发送简单的提醒通知。 这些通知可以充当简单的提醒，也可以指示用户刷新培训或指南以帮助防止将来存在风险的行为。 有关详细信息，请参阅 [内部风险管理通知模版](insider-risk-management-notices.md)。
 
