@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72aa3f194197140cd86463598a17ab07fbbd647a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926512"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341684"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -40,11 +40,9 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
 
-1. 转到 <https://protection.office.com>。
+1. 转到 <https://compliance.microsoft.com> 并登录。
 
-2. 使用工作或学校帐户进行登录。
-
-3. 在安全与合规中心的左窗格中，单击 **信息管理** \> **存档**。
+2. 在 Microsoft 365 合规中心的左侧窗格中，单击“**信息治理**”，然后单击“**存档**”选项卡。
 
    将显示“存档”页。“存档邮箱”列表示每个用户的存档邮箱已启用还是禁用。
 
@@ -70,28 +68,26 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 还可以使用 Security & Compliance Center 中的 **存档** 页禁用用户的存档邮箱。 禁用存档邮箱后，您可以在禁用后的 30 天内重新将其连接到用户的主邮箱。 在这种情况下，存档邮箱的原始内容都会进行还原。 30 天后，原始存档邮箱的内容就会永久删除且无法恢复。 因此，如果您在禁用存档邮箱 30 天后重新启用此邮箱，则会新建一个存档邮箱。
 
-分配给用户邮箱的默认存档策略会在邮件传递到邮箱之日两年后将其移动到存档邮箱。 如果禁用用户的存档邮箱，将不会对邮箱项目执行任何操作，它们将保留在用户的主邮箱中。
+分配给用户邮箱的默认存档策略会在邮件传递到邮箱两年后将其移动到存档邮箱。如果你禁用用户的存档邮箱，将不会对邮箱项目执行任何操作，它们将保留在用户的主邮箱中。
 
-禁用存档邮箱：
+若要禁用存档邮箱：
 
-1. 转到 <https://protection.office.com>。
+1. 转到 <https://compliance.microsoft.com> 并登录。
 
-2. 使用工作或学校帐户进行登录。
-
-3. 在安全与合规中心的左窗格中，单击 **信息管理** \> **存档**。
+2. 在 Microsoft 365 合规中心的左侧窗格中，单击“**信息治理**”，然后单击“**存档**”选项卡。
 
    将显示“存档”页。“存档邮箱”列表示每个用户的存档邮箱已启用还是禁用。
 
    > [!NOTE]
    > **存档** 页面最多显示500个用户。
 
-4. 在邮箱的列表中，选择要禁用存档邮箱的用户。
+3. 在邮箱的列表中，选择要禁用存档邮箱的用户。
 
-5. 在详细信息窗格中，单击“禁用”。
+4. 在详细信息窗格中，单击“禁用”。
 
    将显示一条警告消息，指出你有 30 天的时间重新启用存档邮箱，30 天后，存档中的所有信息将被永久删除。 
 
-6. 单击“是”以禁用存档邮箱。
+5. 单击“是”以禁用存档邮箱。
 
    可能需要一些时间才会禁用存档邮箱。 禁用后，所选用户的详细信息窗格中将显示 **存档邮箱：已禁用**。 可能需要单击 **刷新** ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。
 
@@ -100,7 +96,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 启用或禁用存档邮箱。
 
-此外, 还可使用 Exchange Online PowerShell 启用存档邮箱。 使用 Windows PowerShell 的主要原因是，可以为贵公司所有用户快速启用存档邮箱。
+可以使用 Exchange Online PowerShell 启用存档邮箱。使用 PowerShell 的主要原因是，可以为你组织中的所有用户快速启用存档邮箱。
 
 第一步是连接到 Exchange Online PowerShell。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -136,7 +132,7 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 ## <a name="more-information"></a>更多信息
 
-- 启用存档邮箱后，用户可以将邮件存储在其存档邮箱中。 用户可以通过使用 Microsoft Outlook 和 Outlook 网页版访问存档邮箱。 通过使用其中任意一个客户端应用程序，用户可以查看存档邮箱中的邮件，并在其主邮箱和存档邮箱之间移动或复制邮件。 用户还可以使用“恢复已删除邮件”工具恢复存档邮箱中“可恢复的项目”文件夹下的已删除邮件。
+- 启用存档邮箱后，用户可以将邮件存储在其存档邮箱中。用户可以使用 Microsoft Outlook 和 Outlook 网页版访问存档邮箱。通过使用其中任意一个客户端应用程序，用户可以查看存档邮箱中的邮件，并在其主邮箱和存档邮箱之间移动或复制邮件。用户还可以使用"恢复已删除邮件"工具恢复存档邮箱中的"可恢复的项目"文件夹中的已删除邮件。
 
   有关支持就地存档的 Outlook 许可证列表, 请参阅 [Exchange 功能的 Outlook 许可证要求](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 

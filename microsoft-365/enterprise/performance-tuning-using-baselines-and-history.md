@@ -3,7 +3,7 @@ title: 使用基线和性能历史记录优化 Office 365 性能
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/31/2017
+ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,30 +23,32 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: 了解如何检查客户端计算机连接的历史记录，以帮助你尽早检测新出现的问题。
-ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339366"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341576"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基线和性能历史记录优化 Office 365 性能
 
 有一些简单的方法可以检查企业与Office 365之间的连接性能，这可让你建立大致的连接基线。 了解客户端计算机连接的性能历史记录可帮助您提前检测新出现的问题、识别和预测问题。
   
-如果您不习惯处理性能问题，本文旨在帮助您考虑一些常见问题，例如您如何知道您看到的问题是性能问题而不是 Office 365 事件？ 如何规划良好的长期性能？ 如何关注性能？ 如果你的团队或客户在使用 Office 365时发现性能缓慢，并且你想知道其中任何一个问题，请继续阅读。
+如果您不习惯处理性能问题，本文旨在帮助您考虑一些常见问题。 您如何知道您看到的问题是性能问题，而不是服务Office 365问题？ 如何规划良好的长期性能？ 如何关注性能？ 如果你的团队或客户在使用 Office 365时发现性能缓慢，并且你想知道其中任何一个问题，请继续阅读。
   
 > [!IMPORTANT]
 > **客户端和客户端之间现在Office 365性能问题？** 按照 performance [troubleshooting plan for Office 365 中概述的步骤操作](performance-troubleshooting-plan.md)。 
     
 ## <a name="something-you-should-know-about-office-365-performance"></a>有关性能的一些Office 365信息
 
-Office 365位于高容量专用 Microsoft 网络内，该网络不仅受自动化监视，还受到真实人员稳定监视。 维护云的一Office 365部分是在可能的情况下进行性能优化和简化。 由于云Office 365客户端必须跨 Internet 进行连接，因此，我们持续努力微调跨云服务Office 365性能。 性能改进从未真正在云中停止过，在保持云正常运行和快速方面累积了许多经验。 如果你遇到从你的位置连接到Office 365性能问题，最好不要从支持案例开始等待。 相反，你应该从"从内到外"开始调查问题。 也就是说，从网络内部开始，并努力解决Office 365。 在向支持人员Office 365案例之前，你可以收集数据，并采取措施来探索并可能解决你的问题。
+Office 365位于由自动化和真实人员监视的高容量专用 Microsoft 网络内。 维护云Office 365部分就是尽可能优化和简化性能。 由于云Office 365客户端必须跨 Internet 连接，因此，我们一直努力微调跨云服务Office 365性能。
+
+性能改进从未真正停止在云中，因此，保持云正常运行和快速的体验也不一样。 如果从你的位置连接到 Office 365时出现性能问题，最好不要从支持案例开始或等待。 相反，你应该从"从内到外"开始调查问题。 也就是说，从网络内部开始，并努力解决Office 365。 在通过支持打开案例之前，可以收集数据，并采取措施来浏览并可能解决该问题。
   
 > [!IMPORTANT]
-> 请注意容量规划和容量Office 365。 在尝试解决性能问题时，该信息将置于曲线的前面。 下面是指向服务说明[Microsoft 365 Office 365的链接](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。 这是一个中心中心，由 Office 365提供的所有服务都有一个链接，可在此处转到其自己的服务说明。 这意味着，如果你需要查看 SharePoint Online 的标准限制，可以单击["SharePoint Online 服务](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)说明"并找到其"SharePoint [Online 限制"部分](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。 
+> 请注意容量规划和容量Office 365。 在尝试解决性能问题时，该信息将置于曲线的前面。 下面是指向服务说明[Microsoft 365 Office 365的链接](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。 这是一个中心中心，由 Office 365提供的所有服务都有一个链接，可在此处转到其自己的服务说明。 这意味着，如果你需要查看 SharePoint Online 的标准限制，可以单击["SharePoint Online 服务](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description)说明"并找到其"SharePoint [Online 限制"部分](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)。
   
-确保你进入疑难解答，了解性能是一种滑动的规模，而不是实现理想化值并永久维护它 (如果你认为这样，那么偶尔执行高带宽任务（如加入大量用户或执行大型数据迁移）将非常压力，因此请规划对性能的影响，然后) 。 你可以并且应该对性能目标有一个粗略的了解，但性能会由许多变量影响，因此，性能会有所不同。 这是性能的性质。 
+请确保在了解性能是一个滑动比例后进行疑难解答。 并非实现理想化值并永久维护它。 有时执行高带宽任务（例如，将大量用户上移或执行大型数据迁移）会非常具有压力，因此请规划对性能的影响。 您应该大致了解性能目标，但许多变量会影响性能，因此性能会有所不同。
   
 性能疑难解答与实现特定目标并无限期地维护这些数字有关，而与改进现有活动（假设存在所有变量）有关。 
   
@@ -54,45 +56,45 @@ Office 365位于高容量专用 Microsoft 网络内，该网络不仅受自动�
 
 首先，需要确保你遇到的情况确实是性能问题，而不是服务事件。 性能问题与服务事件中的服务事件Office 365。 下面将介绍它们分开。
   
-如果Office 365遇到问题，即服务事件。 You will see red or yellow icons under **Current health** in the Microsoft 365 管理中心， you may also notice slow performance on client computers connecting to Office 365. 例如，如果"当前运行状况"报告红色图标，且在Exchange 旁边看到"正在调查"，则您可能还收到来自组织人员（他们抱怨使用 Exchange Online 的客户端邮箱性能不佳）的一组呼叫。 在这种情况下，可以合理地假设你的Exchange Online刚刚成为服务中问题的受害者。 
+当服务本身Office 365时，将发生服务事件。 You may see red or yellow icons under **Current health** in the Microsoft 365 管理中心. 您可能会注意到连接到客户端计算机的Office 365速度很慢。 例如，如果"当前运行状况"报告红色图标，且在Exchange 旁边看到"正在调查"，则您可能也会收到来自组织中抱怨使用客户端邮箱的客户端邮箱速度较慢Exchange Online的呼叫。 在这种情况下，可以合理假设你的Exchange Online是服务问题的受害者。
   
 ![The Office 365 Health dashboard with all workloads showing green， except Exchange， which shows Service Restored.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
-此时，你（Office 365管理员）应检查"当前运行状况"，然后经常查看详细信息和历史记录，以随时了解我们在系统上执行最新的维护。 **已创建** 当前运行状况仪表板，以更新服务更改和问题。 记录到运行状况历史记录（管理员到管理员）的说明和说明可帮助你衡量影响，并持续发布有关正在进行的工作。 
+此时，你（Office 365管理员）应检查当前运行状况，然后经常查看详细信息和历史记录，以及时了解系统维护情况。 **已创建** 当前运行状况仪表板，以更新服务更改和问题。 记录到运行状况历史记录的注释和说明（管理员到管理员）可帮助你衡量并持续发布正在进行的工作。
   
 ![Office 365运行状况仪表板的图片，其中Exchange Online服务已还原以及原因。](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
 性能问题不是服务事件，即使事件会导致性能下降。 性能问题如下所示：
   
-- 无论管理中心是什么当前运行状况报告服务 **，都会出现** 性能问题。 
+- 无论管理中心是什么当前运行状况报告服务 **，都会出现** 性能问题。
     
--  过去是相对无缝的行为需要很长时间才能完成或永远不会完成。 
+-  用于流的行为需要很长时间才能完成或永远不会完成。
     
-- 您也可以复制该问题，或者至少，如果执行正确的一系列步骤，就会发生这种情况。
+- 您也可以复制该问题，或者知道如果您执行正确的一系列步骤，将会发生这种情况。
     
--  如果问题是间歇性的，则仍有一种模式，例如，你知道在上午 10：00 之前，你将有来自无法可靠地访问 Office 365 的用户的呼叫，并且呼叫将在中午时分结束。 
+-  如果问题是间歇性的，则仍可以存在模式。 例如，你知道在 10：00 AM 前，你将从不能始终访问呼叫的用户Office 365。 呼叫将在中午左右结束。
     
-这可能很熟悉;可能太熟悉了。 当你知道这是性能问题后，问题就变成"下一步做什么？" 本文的其余部分将帮助您准确确定这一点。
+此列表可能很熟悉;可能太熟悉了。 一旦意识到这是性能问题，问题就会变成"下一步该怎么办？" 本文的其余部分将帮助您准确确定这一点。
   
 ## <a name="how-to-define-and-test-the-performance-problem"></a>如何定义和测试性能问题
 
-性能问题通常会随着时间的推移而出现，因此定义实际问题可能非常困难。 你需要创建一个很好的问题陈述和问题上下文的好想法，然后需要重复的测试步骤来赢得这一天。 否则，如果没有自己的错误，你可能会丢失。 为什么？ 下面是一些无法提供足够信息的问题语句示例：
+性能问题通常会随着时间的推移而出现，因此定义实际问题可能非常困难。 创建一个能良好理解问题上下文的问题陈述，然后需要重复测试步骤。 下面是一些无法提供足够信息的问题语句示例：
   
 - 从"收件箱"切换到"日历"过去是一个我未注意到的内容，现在它是一个咖啡壶。 能否使其像以前一样工作？
     
 - 将文件上传到 SharePoint Online 需要永久时间。 为什么下午很慢，但在其他任何时间，速度都很快？ 不够快吗？
     
-上面的问题陈述带来了一些较大的挑战。 具体而言，需要处理很多歧义。 例如：
+上面的问题陈述带来了一些较大的挑战。 具体而言，需要处理多的歧义。 例如：
   
 - 不清楚在用于笔记本电脑的收件箱和日历之间如何切换。
     
 - 当用户说"无法快速"时，什么是"快速"？
     
-- "永远"多久？ 是几秒钟还是几分钟，或者用户能否去午餐，在用户回来后将结束 10 分钟？
+- "永远"多久？ 这是否几秒钟？ 或几分钟？ 或者，用户能否午餐，操作将在他们回来后 10 分钟后完成？
     
-所有这一切都不考虑管理员和疑难解答程序无法从类似问题陈述中了解许多详细信息。 例如，当问题开始出现时;用户在家工作，并且仅在家庭网络上看到切换缓慢;用户必须在本地客户端上运行其他几个 RAM 密集型应用程序，或者用户运行的是较旧的操作系统或尚未运行最近更新。
+管理员和疑难解答程序无法从类似此类的一般陈述中了解问题的详细信息。 例如，他们不知道问题何时开始发生。 疑难解答程序可能不知道用户在家工作，并且只会在家庭网络上看到缓慢切换。 或者，用户在本地客户端上运行其他 RAM 密集型应用程序。 管理员可能不知道用户运行的是较旧的操作系统，或者未运行最近的更新。
   
-当用户报告性能问题时，需要收集大量信息。 收集此信息是名为确定问题范围或进行调查的过程的一部分。 以下是可用于收集有关性能问题的信息的基本范围列表。 此列表并不详尽，但可以启动您自己的列表之一： 
+当用户报告性能问题时，需要收集大量信息。 获取和记录信息称为界定问题范围。 下面是可用于收集有关性能问题的信息的基本范围列表。 此列表并不详尽，但可以开始：
   
 - 该问题在什么日期发生，以及一天或一夜的哪一天？
     

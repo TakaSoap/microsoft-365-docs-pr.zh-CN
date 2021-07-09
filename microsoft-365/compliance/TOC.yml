@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: 创建和管理内部风险策略
           href: insider-risk-management-policies.md
-        - name: 调查内部风险警报
-          href: insider-risk-management-alerts.md
+        - name: 调查内部风险活动
+          href: insider-risk-management-activities.md
         - name: 对内部风险案例采取措施
           href: insider-risk-management-cases.md
         - name: 与内部风险审核日志一起查看活动
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: 创建自定义敏感信息类型 - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: 删除自定义敏感信息类型 - PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: 修改自定义敏感信息类型 - PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: 自定义敏感信息类型筛选器参考
+          href: sit-custom-sit-filters.md
         - name: 创建关键字字典
           href: create-a-keyword-dictionary.md
         - name: 修改关键字词典
@@ -915,7 +921,7 @@
         - name: 合规性配置分析器工具
           href: compliance-manager-mcca.md
         - name: 常见问题 (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: 合规性管理器（经典）
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft 服务信任门户

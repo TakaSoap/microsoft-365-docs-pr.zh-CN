@@ -1,5 +1,5 @@
 ---
-title: 在安全与合规中心搜索审核日志
+title: 在Microsoft 365 合规中心中搜索审核日志
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300132"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341648"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -48,11 +48,11 @@ ms.locfileid: "53300132"
 - 使用 SharePoint Online 或 Microsoft Teams 的网站的敏感度标签的用户和管理员活动
 - “简介电子邮件” 和 “MyAnalytics” 中的管理活动
 
-## <a name="requirements-to-search-the-audit-log"></a>搜索审核日志的要求
+## <a name="before-you-search-the-audit-log"></a>在搜索审核日志之前
 
 在开始搜索审核日志之前，请务必阅读以下各项。
 
-- 默认情况下，Microsoft 365 和 Office 365 企业版组织开启审核日志搜索。 这包括具有 E3/G3 或 E5/G5 订阅的组织。 若要验证审核日志搜索是否打开，可以在 Exchange Online PowerShell 中运行以下命令：
+- 默认情况下，Microsoft 365 和 Office 365 企业版组织开启审核日志搜索。 若要验证审核日志搜索是否打开，可以在 Exchange Online PowerShell 中运行以下命令：
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -60,10 +60,10 @@ ms.locfileid: "53300132"
 
   *UnifiedAuditLogestionEnabled* 属性的 `True` 值表明已打开审核日志搜索。 有关详细信息，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
+- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
 
   > [!IMPORTANT]
-  > 如果在安全与合规中心中的“权限”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
+  > 如果在 Microsoft 365 合规中心中的 **“权限”** 页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
 - 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 企业版订阅，具体而言是分配给特定用户的许可证类型。
 
@@ -75,7 +75,7 @@ ms.locfileid: "53300132"
   - 对于分配有任何其他（非E5）Office 365 或 Microsoft 365 许可证的用户，审核记录将保留90天。 有关支持统一审核日志记录的 Office 365 和 Microsoft 365 订阅的列表，请参阅[安全与合规中心服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
     > [!NOTE]
-    > 即使启用了默认启用的邮箱审核，也可能会发现无法在安全与合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
+    > 即使启用了默认启用邮箱审核，也可能会发现无法在 Microsoft 365 合规中心的审核日志搜索中找到某些用户的邮箱审核事件，也无法通过 Office 365 管理活动 API 找到这些事件。 有关详细信息，请参阅[有关邮箱审核日志记录的详细信息](enable-mailbox-auditing.md#more-information)。
 
 - 如果希望为组织关闭审核日志搜索，可以在连接到 Exchange Online 组织的远程 PowerShell 中运行以下命令：
 
@@ -91,7 +91,7 @@ ms.locfileid: "53300132"
 
   有关详细信息，请参阅[关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用安全与合规中心中的“审核日志搜索”页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
+- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用 Microsoft 365 合规中心中的 **“审核日志搜索”** 页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
 
   有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅 [导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
@@ -118,7 +118,7 @@ ms.locfileid: "53300132"
   |Microsoft Teams|![复选标记](../media/checkmark.png)||
   |Power Apps||![复选标记](../media/checkmark.png)|
   |Power BI|![复选标记](../media/checkmark.png)||
-  |安全与合规中心|![复选标记](../media/checkmark.png)||
+  |Microsoft 365 合规中心|![复选标记](../media/checkmark.png)||
   |敏感度标签||![复选标记](../media/checkmark.png)|
   |SharePoint Online 和 OneDrive for Business|![复选标记](../media/checkmark.png)||
   |工作区分析|![复选标记](../media/checkmark.png)||
@@ -132,7 +132,7 @@ ms.locfileid: "53300132"
 
 ## <a name="search-the-audit-log"></a>搜索审核日志
 
-下面介绍在 Office 365 中搜索审核日志的流程。
+下面介绍在 Microsoft 365 中搜索审核日志的流程。
 
 [步骤 1：运行审核日志搜索](#step-1-run-an-audit-log-search)
 
@@ -144,48 +144,42 @@ ms.locfileid: "53300132"
 
 ### <a name="step-1-run-an-audit-log-search"></a>步骤 1：运行审核日志搜索
 
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 <https://compliance.microsoft.com> 并登录。
 
     > [!TIP]
-    > 使用专用浏览会话（而不是常规会话）来访问安全与合规中心，因为它会阻止你使用当前登录时使用的凭据。若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话，只需按 CTRL+SHIFT+P。若要在 Google Chrome（称为隐身窗口）中打开专用浏览会话，请按 CTRL+SHIFT+N。
+    > 使用专用浏览会话（而不是常规会话）来访问 Microsoft 365 合规中心，因为它会阻止你使用当前登录时使用的凭据。若要在 Internet Explorer 或 Microsoft Edge 中打开 InPrivate 浏览会话，只需按 CTRL+SHIFT+P。若要在 Google Chrome中打开专用浏览会话（称为隐身窗口），请按 CTRL+SHIFT+N。
 
-2. 使用工作或学校帐户进行登录。
+2. 在 Microsoft 365 合规中心的左窗格中，单击“**审核**”。
 
-3. 在安全与合规中心的左侧窗格中，单击“**搜索**”，然后单击“**审核日志搜索**”。
+    将显示“**审核**”页。
 
-    此时将显示“**审核日志搜索**”页面。
-
-    ![配置条件，然后单击“搜索”以运行报告](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![配置条件，然后单击“搜索”以运行报告](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
-    > 必须首先打开审核日志记录，然后才能运行审核日志搜索。 如果显示“**开始记录用户和管理员活动**”链接，请单击该链接以打开审核。 如果未看到此链接，则已为你的组织开启审核。
+    > 如果显示“**开始记录用户和管理员活动**”链接，请单击该链接以打开审核。 如果未看到此链接，则已为你的组织开启审核。
 
-4. 配置以下搜索条件：
-
-   1. “**活动**”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“**显示所有活动的结果**”将显示由所选用户或用户组执行的所有活动的结果。
-
-      审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”选项卡可查看每个不同服务中每个活动的描述。
+3. 在“**搜索**”选项卡中，配置以下搜索条件：
 
    1. “**开始日期**”和“**结束日期**”：默认选择了过去七天。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间以本地时间显示。 可指定的最大日期范围为 90 天。 如果所选日期范围超过 90 天，将显示错误。
 
-      > [!TIP]
-      > 如果要使用为期 90 天的最大日期范围，请选择当前时间作为“**开始日期**”。 否则，你将收到说明开始日期早于结束日期的错误消息。 如果你在过去 90 天内打开了审核，则最大日期范围不能从打开审核的日期之前开始。
+    > [!TIP]
+    > 如果要使用为期 90 天的最大日期范围，请选择当前时间作为“**开始日期**”。 否则，你将收到说明开始日期早于结束日期的错误消息。 如果你在过去 90 天内打开了审核，则最大日期范围不能从打开审核的日期之前开始。
 
-   1. “**用户**”：单击此框，然后选择要为其显示搜索结果的一名或多名用户。 由你在此框中所选用户执行的所选活动的审核日志项目将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
+   2. “**活动**”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“**显示所有活动的结果**”将显示由所选用户或用户组执行的所有活动的结果。<br/><br/>审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”选项卡可查看每个不同服务中每个活动的描述。
 
-   1. “**文件、文件夹或网站**”：键入部分或完整的文件或文件夹名称，搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保输入完整的 URL 路径，或者如果输入部分 URL，则请勿包含任何特殊字符或空格。
+   3. “**用户**”：单击此框，然后选择要为其显示搜索结果的一名或多名用户。 由你在此框中所选用户执行的所选活动的审核日志项目将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
 
-      将此框留空以返回组织中所有文件和文件夹的条目。
+   4. “**文件、文件夹或网站**”：键入部分或完整的文件或文件夹名称，搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保输入完整的 URL 路径，或者如果输入部分 URL，则请勿包含任何特殊字符或空格。<br/><br/>将此框留空以返回组织中所有文件和文件夹的条目。
 
-      > [!TIP]
-      >
-      > - 如果要查找与 **网站** 相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，`"https://contoso-my.sharepoint.com/personal*"`。
-      >
-      > - 如果要查找与 **文件** 相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，`"*Customer_Profitability_Sample.csv"`。
+    > [!TIP]
+    >
+    > - 如果要查找与 **网站** 相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，`"https://contoso-my.sharepoint.com/personal*"`。
+    >
+    > - 如果要查找与 **文件** 相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，`"*Customer_Profitability_Sample.csv"`。
 
-5. 单击“**搜索**”以使用搜索条件运行搜索。
+4. 单击“**搜索**”以使用搜索条件运行搜索。
 
-   此时将加载搜索结果，片刻后将显示在“**结果**”下。 完成搜索后会显示找到的结果数。 “**结果**”窗格中最多可显示 5,000 个事件（每次加载 150 个）。 如果超过 5,000 个事件满足搜索条件，则将显示最近的 5,000 个事件。
+   此时将加载搜索结果，片刻后将显示在新页面上。 完成搜索后会显示找到的结果数。 最多可显示 5,000 个事件（每次加载 150 个）。 如果超过 5,000 个事件满足搜索条件，则将显示最近的 5,000 个事件。
 
    ![完成搜索后会显示结果数。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -868,7 +862,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate 活动
 
-可以在审核日志中搜索 Power Automate（以前称为 Microsoft Flow）内的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关 Power Automate 活动审核的信息，请参阅博客[现已在安全与合规中心提供 Microsoft Flow 审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+可以在审核日志中搜索 Power Automate（以前称为 Microsoft Flow）内的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关 Power Automate 活动审核的信息，请参阅博客[现已在 Microsoft 365 合规中心提供 Microsoft Flow 审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 ### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps 活动
 
@@ -1071,7 +1065,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **审核记录在事件发生后的多长时间内可用？**
 
-发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[搜索审核日志的要求](#requirements-to-search-the-audit-log)部分中的表，其中显示了各种服务提供事件审核记录所需的时间。
+发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[搜索审核日志之前](#before-you-search-the-audit-log)部分中的表，其中显示了各种服务提供事件审核记录所需的时间。
 
 **审核记录将保留多长时间？**
 
@@ -1087,7 +1081,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **是否需要在每个要捕获审核日志的服务中单独启用审核？**
 
-在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[搜索审核日志的要求](#requirements-to-search-the-audit-log)部分所述）。
+在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[搜索审核日志之前](#before-you-search-the-audit-log)部分所述）。
 
 **审核服务是否支持记录的重复数据删除？**
 
