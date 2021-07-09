@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 在策略中创建Microsoft 365 合规中心策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: a6f9b7dec1a147b9cd9b00b5516c77aea79437e9
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054683"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341064"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>警报策略Microsoft 365 合规中心
 
@@ -112,13 +112,13 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 
 该表还指明了Office 365 企业版一Office 365美国政府计划所需的计划。 如果您的组织具有除 E1/F1/G1 或 E3/F3/G3 订阅之外的适当附加订阅，则某些默认警报策略可用。
 
-| 默认警报策略 | 说明 | 类别 | Enterprise订阅 |
+| 默认警报策略 | 说明 | Category | Enterprise订阅 |
 |:-----|:-----|:-----|:-----|
 |**检测到潜在恶意 URL 单击**|当用户在组织中单击恶意链接保险箱[链接](../security/office-365-security/safe-links.md)时，生成警报。 当 Microsoft Defender 为 Office 365 标识 URL 裁定更改时，或当用户根据组织的 Microsoft 365 for Business 保险箱 链接策略) 替代 保险箱 链接页面 (时，将触发此事件。 此警报策略具有 **"高** 严重性"设置。 For Defender for Office 365 P2， E5， G5 customers， this alert automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). 有关触发此警报的事件详细信息，请参阅设置链接保险箱[策略](../security/office-365-security/set-up-safe-links-policies.md)。|威胁管理|适用于 P2 附加Office 365订阅的 E5/G5 或 Defender|
-|**管理员提交结果已完成**|当管理员提交完成已 [提交](../security/office-365-security/admin-submission.md) 实体的重新扫描时，生成警报。 每次从管理员提交呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒你查看以前的提交结果[](https://protection.office.com/reportsubmission)、提交用户报告的邮件以获得最新的策略检查和重新扫描裁定，以及帮助你确定你的组织中筛选策略是否具有预期的影响。 此策略具有 **信息** 严重性设置。|威胁管理|E1/F1、E3/F3 或 E5|
+|**管理员提交结果已完成**|当管理员提交完成已 [提交](../security/office-365-security/admin-submission.md) 实体的重新扫描时，生成警报。 每次从管理员提交呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒你查看以前的提交结果[](https://compliance.microsoft.com/reportsubmission)、提交用户报告的邮件以获得最新的策略检查和重新扫描裁定，以及帮助你确定你的组织中筛选策略是否具有预期的影响。 此策略具有 **信息** 严重性设置。|威胁管理|E1/F1、E3/F3 或 E5|
 |**管理员触发的电子邮件手动调查**|当管理员触发来自威胁资源管理器的电子邮件的手动调查时，生成警报。 有关详细信息，请参阅 [示例：安全管理员从威胁资源管理器触发调查](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。 此警报通知您的组织已启动调查。 该警报提供有关触发它的人的信息，并包含指向调查的链接。 此策略具有 **信息** 严重性设置。|威胁管理| 适用于 P2 附加Office 365订阅的 E5/G5 或 Microsoft Defender| 
 |**创建转发/重定向规则**|当组织中有人为邮箱创建收件箱规则以将邮件转发或重定向到其他电子邮件帐户时，生成警报。 此策略仅跟踪使用以前称为 Outlook 网页版 (或 PowerShell Outlook Web App) 或Exchange Online创建的收件箱规则。 此策略具有 **信息** 严重性设置。 有关使用收件箱规则转发和重定向电子邮件Outlook 网页版，请参阅使用 Outlook 网页版 中的规则将邮件[自动转发到另一个帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**启动或导出电子数据展示搜索**|当某人使用安全与合规中心的内容搜索工具时生成警报。 执行以下内容搜索活动时将触发警报： <br/><br/>* 内容搜索已启动<br/>* 导出内容搜索的结果<br/>* 导出内容搜索报告<br/><br/>与电子数据展示案例一起执行以前的内容搜索活动时，也会触发警报。 此策略具有 **信息** 严重性设置。 有关内容搜索活动详细信息，请参阅在搜索中搜索电子数据[审核日志。](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**电子数据展示搜索已启动或已导出**|当某人使用安全与合规中心的内容搜索工具时生成警报。 执行以下内容搜索活动时将触发警报： <br/><br/>* 内容搜索已启动<br/>* 导出内容搜索的结果<br/>* 导出内容搜索报告<br/><br/>与电子数据展示案例一起执行以前的内容搜索活动时，也会触发警报。 此策略具有 **信息** 严重性设置。 有关内容搜索活动详细信息，请参阅在搜索中搜索电子数据[审核日志。](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**提升Exchange权限**|在组织内部为某人分配管理权限时，Exchange Online警报。 例如，将用户添加到组织中"组织管理"角色Exchange Online。 此策略具有 **"低** 严重性"设置。|权限|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**送达后删除了包含恶意软件的电子邮件**|将包含恶意软件的任何邮件传递到您组织的邮箱时生成警报。 如果发生此事件，Microsoft 会使用零时差自动清除 从Exchange Online邮箱[中删除受感染的邮件](../security/office-365-security/zero-hour-auto-purge.md)。 此策略具有 **信息** 严重性设置，并自动触发自动调查和响应 [Office 365。](../security/office-365-security/office-365-air.md)|威胁管理|适用于 P2 附加Office 365订阅的 E5/G5 或 Microsoft Defender|
 |**送达后删除的包含钓鱼 URL 的电子邮件**|将包含网络钓鱼邮件的任何邮件传递到您组织的邮箱时，生成警报。 如果发生此事件，Microsoft 会使用零时差自动清除 从Exchange Online邮箱[中删除受感染的邮件](../security/office-365-security/zero-hour-auto-purge.md)。 此策略具有 **信息** 严重性设置，并自动触发自动调查和响应 [Office 365。](../security/office-365-security/office-365-air.md)|威胁管理|适用于 P2 附加Office 365订阅的 E5/G5 或 Defender|
@@ -224,7 +224,7 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 
 To see which category a default alert policy is assigned to， see the table in [Default alert policies](#default-alert-policies).
 
-|角色|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
+|Role|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |审核日志|||||||
 |案例管理|||||||

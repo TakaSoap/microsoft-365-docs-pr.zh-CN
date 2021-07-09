@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: “**邮箱未找到**”错误意味着用来连接 Outlook 网页版的帐户没有 Exchange Online 许可证。
-ms.openlocfilehash: cb82f917adca8f1fc183fd9516321a524c63eb69
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 54aa196b0b324054d6220d4437a672a3db2a45ec
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635782"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338561"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>在 Outlook 网页版中遇到“邮箱未找到”错误？
 
@@ -31,7 +31,7 @@ ms.locfileid: "52635782"
 
 管理员按照以下步骤操作，可以向帐户分配许可证：
 
-1. 打开“[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)”，转到“**用户**”部分下的“**活动用户**”, 然后选择正在查看错误的用户。
+1. 打开“[Microsoft 365 管理中心](https://admin.microsoft.com/adminportal/home#/homepage)”，转到“**用户**”部分下的“**活动用户**”, 然后选择正在查看错误的用户。
 1. 在打开的用户页面，转到“**许可证和应用**”部分，选择相应的“**位置**”值，然后分配包含 Exchange Online 的许可证（展开许可证以查看其详细信息）。 
 1. 完成后，单击“**保存更改**”。
 

@@ -1,6 +1,6 @@
 ---
 title: 使用本地脚本载入 Windows 10 设备
-description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
+description: 使用本地脚本在设备上部署配置包，以允许将设备载入服务。
 keywords: 使用本地脚本配置设备， 设备管理， 为终结点设备配置 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842166"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339642"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
+# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用Windows 10脚本载入新设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "52842166"
 请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。 
 
 
-1.  打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1.  打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从 Defender 门户Microsoft 365[程序包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
     1. 选择Windows 10操作系统。
 
@@ -66,7 +66,7 @@ ms.locfileid: "52842166"
 
     1.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-        ![指向"以管理员模式运行"的"窗口开始"菜单](images/run-as-admin.png)
+        ![指向"开始"菜单以管理员角色运行"的窗口](images/run-as-admin.png)
 
 4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -79,7 +79,7 @@ ms.locfileid: "52842166"
 > 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint 终结点](run-detection-test.md)运行检测测试。
 
 ## <a name="configure-sample-collection-settings"></a>配置示例集合设置
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft Defender 安全中心 提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
 
 可以使用 *regedit* 或创建并运行 *.reg* 文件，在设备上手动配置示例共享设置。  
 
@@ -105,9 +105,9 @@ Value: 0 or 1
 > [!NOTE]
 > 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
-1. 从以下版本[获取Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >  **载"。**
+    1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  > **""载出"。**
 
     1. 选择Windows 10操作系统。
 
@@ -123,7 +123,7 @@ Value: 0 or 1
 
     1.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-        ![指向"以管理员模式运行"的"窗口开始"菜单](images/run-as-admin.png)
+        ![指向"开始"菜单以管理员角色运行"的窗口](images/run-as-admin.png)
 
 4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -139,9 +139,9 @@ Value: 0 or 1
 也可以直接在门户上或使用不同的部署工具进行监视。
 
 ### <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
-1. 转到Microsoft Defender 安全中心。
+1. 转到Microsoft 365 Defender门户。
 
-2. 单击 **"设备列表"。**
+2. 单击 **"设备清单"。**
 
 3. 验证设备是否显示。
 

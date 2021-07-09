@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place电子数据展示和 In-Place 保留 (以及 Exchange Online 中的相应 PowerShell cmdlet) 将于 2020 年上半年停用。 v1.0 Search-Mailbox cmdlet 和 Advanced eDiscovery 1.0 也在同一时间内停用。
-ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 77a7daf36c86cd302f774e5a4b934148d3dfd5a7
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055073"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340992"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 
@@ -345,9 +345,9 @@ Advanced eDiscovery v1.0 版本（即核心电子数据展示Advanced eDiscovery
 
 若要确定您的组织是否正在使用 Advanced eDiscovery v1.0：
 
-1. 转到安全Office 365[合规&中心](https://protection.office.com)。
+1. 转到 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 
-2. 在安全与合规中心的左侧导航窗格中，&电子数据展示> **电子** 数据展示"，然后打开核心电子数据展示案例。
+2. 在合规中心的左侧导航窗格中，单击"电子数据展示> **核心**"，然后打开核心电子数据展示案例。
 
 3. 如果看到"切换到Advanced eDiscovery"按钮，则单击此按钮将进入即将停用的 1.0 Advanced eDiscovery版本。 在核心电子数据展示中创建和管理事例的能力不会受到影响。 只有在 v1.0 Advanced eDiscovery中通过单击"切换到 ("来添加和分析案例数据Advanced eDiscovery) 停用。
 

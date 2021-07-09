@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149006"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327055"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
-Microsoft SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
+SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 - 使用先进的 AI 和机器教学来丰富人类体验
 - 自动化内容处理
@@ -56,7 +56,8 @@ Microsoft SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解如何开始计划使用 SharePoint Syntex。 |[采用 SharePoint Syntex：入门](./adoption-getstarted.md)| 
-|请参阅示例方案，了解如何在组织中使用 SharePoint Syntex |[Microsoft SharePoint Syntex 的应用场景和用例](./adoption-scenarios.md)| 
+|请参阅示例方案，了解如何在组织中使用 SharePoint Syntex |[SharePoint Syntex 的应用场景和用例](./adoption-scenarios.md)| 
+|设置并运行 SharePoint Syntex 的试用版试点计划 |[运行试用版](./trial-syntex.md)|
 |了解如何使用 SharePoint Syntex 来自动化文档流程 |[使用 Microsoft 365 解决方案管理合同](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
@@ -65,7 +66,7 @@ Microsoft SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|设置和配置 SharePoint Syntex|[设置 Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|设置和配置 SharePoint Syntex|[设置 SharePoint Syntex](./set-up-content-understanding.md)|
 |了解图像标记和如何禁用|[SharePoint Syntex 中的图像标记](./image-tagging.md)|
 
 ## <a name="models"></a>模型
@@ -76,6 +77,7 @@ Microsoft SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 |:-----|:-----|
 |了解如何使用模型|[创建内容中心](./create-a-content-center.md)<br><br>[创建分类器](./create-a-classifier.md)<br><br>[创建提取程序](./create-an-extractor.md)<br><br>[创建表单处理模型](./create-a-form-processing-model.md)<br><br>[说明类型](./explanation-types-overview.md)<br><br>[应用文档理解模型](./apply-a-model.md)<br><br>[通过示例模型了解文档理解模型](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |将保留标签应用于模型|[将保留标签应用于文档理解模型](./apply-a-retention-label-to-a-model.md)|
+|将敏感度标签应用于模型|[将敏感度标签应用于文档理解模型](./apply-a-sensitivity-label-to-a-model.md)|
 |创建提取程序时使用托管元数据服务术语库分类|[创建提取程序时利用术语库分类](./leverage-term-store-taxonomy.md)|
 |了解如何查看有关模型的数据|[模型使用情况分析](./model-usage-analytics.md)|
 |了解如何在培训模型时使用辅助功能模式|[SharePoint 整合辅助功能模式](./accessibility-mode.md)|
@@ -90,4 +92,3 @@ SharePoint Syntex 许可证为用户提供了高级内容服务，这些服务�
 |了解如何将内容类型更一致地用于 SharePoint 库和列表|[将内容类型推送到中心](./push-content-type-to-hub.md)|
 |了解可供使用的术语库报告|[术语库报告](./term-store-analytics.md)|
 
-## <a name="see-also"></a>另请参阅

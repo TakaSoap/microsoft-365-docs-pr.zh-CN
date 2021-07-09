@@ -16,18 +16,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解 Business Assist 计划及其如何帮助你的组织改进商业Microsoft 365使用情况。
-ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924583"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338597"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业帮助
 
 通过小型企业专家提供的专家建议，从你的订阅中取得最大价值。
 
 **Business Assist for Microsoft 365** is designed for businesses with the fewer than 5 users to give you and your employees access the around-the clock to small business specialists as you grow your business， from onboarding to everyday use.
+
+### <a name="watch-business-assist-for-microsoft-365"></a>观看：Business Assist for Microsoft 365
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
 ## <a name="business-assist-services"></a>Business Assist 服务
 
@@ -51,7 +55,7 @@ ms.locfileid: "52924583"
 
 只有符合条件的组织才能看到购买 Business Assist 的选项。 Business Assist 每月每个用户的费用为 5 美元。 下面将说明如何购买 Business Assist。
 
-1. 在管理中心的简化Microsoft 365，转到"订阅 **"选项卡并选择**"**添加产品"。**
+1. In the simplified view of the Microsoft 365 管理中心， go to the **Subscriptions** tab and select **Add products**.
 
 2. 在"购买服务"**页上，选择**"**有关业务协助的详细信息"Microsoft 365** 完成购买。
 

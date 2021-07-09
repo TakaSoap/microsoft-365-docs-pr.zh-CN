@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789047"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341432"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件Microsoft 365
 
@@ -49,7 +49,7 @@ ms.locfileid: "52789047"
 
 如果没有备份，或者备份也受勒索软件影响，可以跳过此步骤。
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>步骤 2：禁用Exchange ActiveSync和OneDrive同步
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>步骤 2：禁用Exchange ActiveSync和OneDrive 同步
 
 此处的关键点就是阻止勒索软件传播数据加密。
 
@@ -63,7 +63,7 @@ ms.locfileid: "52789047"
 
 - [为用户启用或禁用 POP3 或 IMAP4 访问](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停OneDrive有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤 3：从受影响的设备中删除恶意软件
 
@@ -81,7 +81,7 @@ ms.locfileid: "52789047"
 
 完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除文件) 后，可以使用 Windows 10 和 Windows 8.1 中的文件历史记录或 Windows 7 中的系统保护尝试恢复本地文件和文件夹。 [](https://support.microsoft.com/help/17128)
 
-**注意**：
+**注意**:
 
 - 某些勒索软件还会加密或删除备份版本，因此你无法使用文件历史记录或系统保护来还原文件。 如果发生这种情况，你需要在不受勒索软件或软件影响的外部驱动器或OneDrive备份，如下一节中所述。
 
@@ -99,11 +99,11 @@ ms.locfileid: "52789047"
 
 - [在 Outlook for Windows 中恢复已删除项目](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤 7：重新启用Exchange ActiveSync OneDrive同步
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤 7：重新启用Exchange ActiveSync OneDrive 同步
 
-清理计算机和设备并恢复数据后，可以重新启用之前在步骤[2](#step-2-disable-exchange-activesync-and-onedrive-sync)中禁用的 Exchange ActiveSync 和 OneDrive 同步。
+在清理计算机和设备并恢复数据后，可以重新启用Exchange ActiveSync OneDrive 同步之前在步骤 2 中禁用的[Exchange ActiveSync 和 OneDrive 同步。](#step-2-disable-exchange-activesync-and-onedrive-sync)
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步骤 8 (可选) ：OneDrive文件扩展名的同步
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步骤 8 (可选) ：OneDrive 同步文件扩展名阻止访问
 
 恢复后，你可以阻止OneDrive for Business客户端同步受此勒索软件影响的文件类型。 有关详细信息，请参阅 [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
@@ -141,30 +141,30 @@ ms.locfileid: "52789047"
 
 您可以使用多种方法之一报告包含勒索软件的网络钓鱼邮件。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="additional-ransomware-resources"></a>其他勒索软件资源
 
-- [勒索软件](/windows/security/threat-protection/intelligence/ransomware-malware)
+[由人运营的勒索软件概述](/security/compass/human-operated-ransomware)
 
-- [勒索软件响应 - 是否付费？](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+[快速防范勒索软件和勒索软件](/security/compass/protect-against-ransomware)
 
-- [Norsk 使用透明度响应勒索软件攻击](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+[最新Microsoft 安全智能报告 PDF)  ("](https://www.microsoft.com/securityinsights/)勒索软件"搜索) 
+
+**勒索软件：Microsoft 365 Defender****门户中的威胁分析节点** 中的一个持续威胁报告
+
+Microsoft 365保护：
 
 - [勒索软件检测和恢复OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
-
-- [Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/)
-
 - [启用或禁用文件Office宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
 - [用于配置 EOP 和 Defender for Office 365 安全性的建议设置](recommended-settings-for-eop-and-office365.md)
 
-- [有价值的升级：上一代安全Windows 10 2017 年勒索软件爆发的弹性](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+Microsoft 安全团队博客文章：
 
-- [没有 mas，Samas：此勒索软件操作方式是什么？](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [通过了解网络安全风险复原：第 4 部分- (2021 年 5 月) ](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-- [锁定恶意软件，阻止恶意软件](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+  请参阅 **勒索软件** 部分。
 
-- [MSRT 2016 年 7 月：Cerber 勒索软件](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [人为操作的勒索软件攻击：2020 年 3 月 (可阻止的灾难) ](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [勒索软件响应 - 是否付费？ (2019 年 12 月) ](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk 在 2019 年 12 月 (透明响应勒索软件) ](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [有价值的升级：Windows 10新一代的安全性证明可以抵御 2017 年 1 月 2018 年 1 月 (勒索软件爆发) ](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [Cerberus-like Cerber 勒索软件三头](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
-
-- [受 (Da Vinci) 影响的) 勒索软件](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

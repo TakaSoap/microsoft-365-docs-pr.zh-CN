@@ -1,6 +1,6 @@
 ---
 title: 使用 Configuration Manager 载入 Windows 10 设备
-description: 使用 Configuration Manager 在设备上部署配置包，以便它们可以载入服务。
+description: 使用 Configuration Manager 在设备上部署配置包，以便设备载入服务。
 keywords: 使用 sccm 载入设备， 设备管理， 为终结点设备配置 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d7c319e37fb804ee4dac3b6bff402942bbc2fa79
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842190"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339654"
 ---
-# <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
+# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用Windows 10管理器载入新设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,9 +71,9 @@ ms.locfileid: "52842190"
 
 
 
-1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
     
     1. 选择Windows 10操作系统。
 
@@ -102,10 +102,10 @@ ms.locfileid: "52842190"
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft Defender 安全中心 提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
 
 >[!NOTE]
->这些配置设置通常通过 Configuration Manager 完成。 
+>这些配置设置通常通过 Configuration Manager 完成。
 
 可以在 Configuration Manager 中为配置项设置合规性规则，以更改设备上的示例共享设置。
 
@@ -179,9 +179,9 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
-1. 从以下版本[获取Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >   **载"。**
+    1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >   **""载出"。**
 
     1. 选择Windows 10操作系统。
 

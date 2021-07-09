@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 通过购买域名并添加到电子邮件地址 tom@fourthcoffee.com 将电子邮件地址更改为友好电子邮件地址，Microsoft 365。
-ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635518"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341456"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -56,35 +56,37 @@ ms.locfileid: "52635518"
 
 当您将域的电子邮件更改为发送到 Microsoft 365，在设置期间更新域的 MX 记录时，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保你已添加用户，Microsoft 365域中拥有电子邮件的所有人创建邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365一些电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>将电子邮件地址更改为使用管理中心Microsoft 365自定义域
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>将电子邮件地址更改为使用自定义域Microsoft 365 管理中心
 
-必须具有全局管理员帐户才能执行这些步骤。 
+必须是 全局管理员 才能执行这些步骤。
 
 ::: moniker range="o365-worldwide"
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的管理中心。 
-    
+
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的管理中心。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 转到 管理中心 。 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a> 
+1. 转到 管理中心 。 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>
 
-::: moniker-end 
+::: moniker-end
 
-2. 转到"**设置**  >  **域"** 页。 
+2. 转到"**设置**  >  **域"** 页。
 
 3. 在“**域**”页面上，选择“**添加域**”。
-    
-4. 按照相应步骤确认您拥有自己的域和更改您的电子邮件地址。
-    
-将指导你正确设置域中所有Microsoft 365。
+
+4. 按照步骤确认你拥有你的域。 将指导你正确设置域中所有Microsoft 365。
+
+5. 转到"**用户**  >  **""活动用户"。**
+
+6. 选择用户以编辑其用户名，并更改为你刚刚添加的域。
 
 > [!NOTE]
 > 如果未使用 Exchange许可证，则不能使用域从 Microsoft 365 租户发送或接收电子邮件。

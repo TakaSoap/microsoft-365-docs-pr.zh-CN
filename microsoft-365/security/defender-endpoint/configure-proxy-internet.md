@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290083"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338705"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -170,7 +170,7 @@ netsh winhttp reset proxy
 
 1. 有关使用 Microsoft Monitoring Agent (MMA) 的以前操作系统载入到 Defender for Endpoint (中有关详细信息，请参阅在[Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326)上载入以前版本的 Windows 和[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
 
-2. 确保计算机已成功报告到 Microsoft Defender 安全中心 门户。
+2. 确保计算机已成功报告到 Microsoft 365 Defender 门户。
 
 3. 从"C：\Program Files\Microsoft Monitoring Agent\Agent"运行 TestCloudConnection.exe 工具，以验证连接并查看特定工作区所需的 URL。
 
@@ -178,7 +178,7 @@ netsh winhttp reset proxy
 
     ![网站中的管理员Windows PowerShell](images/admin-powershell.png)
 
-. () .ods.opinsights.azure.com、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net URL 终结点中使用的通配符可以替换为 \* \* \* \* 特定的工作区 ID。 工作区 ID 特定于你的环境和工作区，可以在租户门户内的"载入"Microsoft Defender 安全中心部分。
+. () .ods.opinsights.azure.com、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net URL 终结点中使用的通配符可以替换为 \* \* \* \* 特定的工作区 ID。 工作区 ID 特定于你的环境和工作区，可在租户门户内的"载入"Microsoft 365 Defender部分。
 
 .blob.core.windows.net URL 终结点可以替换为测试结果的"防火墙规则 \* ： \* .blob.core.windows.net"部分中显示的 URL。
 

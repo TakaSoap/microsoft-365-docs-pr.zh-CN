@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845578"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339162"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的已连接应用程序
 
@@ -42,7 +42,7 @@ ms.locfileid: "52845578"
 需要按照以下步骤 [操作，](/microsoft-365/security/defender-endpoint/apis-intro) 将 API 与已连接的应用程序一同使用。
  
 ## <a name="access-the-connected-application-page"></a>访问已连接的应用程序页
-从左侧导航菜单中，选择合作伙伴 **& API**  >  **连接的 AAD 应用程序**。
+从左侧导航菜单中，**选择终结点**  >  **合作伙伴和 API**  >  **连接的应用程序**。
 
  
 ## <a name="view-connected-application-details"></a>查看连接的应用程序详细信息

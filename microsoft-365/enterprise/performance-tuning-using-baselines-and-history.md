@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: 了解如何检查客户端计算机连接的历史记录，以帮助你尽早检测新出现的问题。
-ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928140"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339366"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>使用基线和性能历史记录优化 Office 365 性能
 
@@ -54,7 +54,7 @@ Office 365位于高容量专用 Microsoft 网络内，该网络不仅受自动�
 
 首先，需要确保你遇到的情况确实是性能问题，而不是服务事件。 性能问题与服务事件中的服务事件Office 365。 下面将介绍它们分开。
   
-如果Office 365遇到问题，即服务事件。 You will see red or yellow icons under **Current health** in the Microsoft 365 center， you may also notice slow performance on client computers connecting to Office 365. 例如，如果"当前运行状况"报告红色图标，且在Exchange 旁边看到"正在调查"，则您可能还收到来自组织人员（他们抱怨使用 Exchange Online 的客户端邮箱性能不佳）的一组呼叫。 在这种情况下，可以合理地假设你的Exchange Online刚刚成为服务中问题的受害者。 
+如果Office 365遇到问题，即服务事件。 You will see red or yellow icons under **Current health** in the Microsoft 365 管理中心， you may also notice slow performance on client computers connecting to Office 365. 例如，如果"当前运行状况"报告红色图标，且在Exchange 旁边看到"正在调查"，则您可能还收到来自组织人员（他们抱怨使用 Exchange Online 的客户端邮箱性能不佳）的一组呼叫。 在这种情况下，可以合理地假设你的Exchange Online刚刚成为服务中问题的受害者。 
   
 ![The Office 365 Health dashboard with all workloads showing green， except Exchange， which shows Service Restored.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -251,7 +251,7 @@ Office 365位于高容量专用 Microsoft 网络内，该网络不仅受自动�
     
 2. 导航到安装此工具的文件夹 (安装 PsPing) 并测试以下Office 365 URL：
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     

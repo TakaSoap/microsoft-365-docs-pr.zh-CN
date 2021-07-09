@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 4f14f87355181e9b7f6c0b52aa6b122b560c5f23
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096152"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338681"
 ---
 # <a name="user-reported-message-settings"></a>用户报告的邮件设置
 
@@ -69,8 +69,7 @@ ms.locfileid: "53096152"
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
 
   - **组织管理****或安全管理员**（在 Microsoft 365 Defender [门户中）。](permissions-microsoft-365-security-center.md)
-  - **组织管理** 中的 [Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
-
+  
 - 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则当您指定提交邮箱时，将收到如下所示的错误：
 
   > 在域中指定电子邮件地址

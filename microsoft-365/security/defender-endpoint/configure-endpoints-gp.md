@@ -1,6 +1,6 @@
 ---
 title: 通过Windows 10将设备载入 Microsoft Defender for Endpoint
-description: 使用组策略在 Windows 10部署配置包，以便它们可以载入服务。
+description: 使用组策略在 Windows 10部署配置包，以便它们可以载入到服务。
 keywords: 使用组策略配置设备， 设备管理， 为终结点设备配置 Microsoft Defender， 载入适用于终结点设备的 Microsoft Defender， 组策略
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326959"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339618"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用Windows 10载入新设备 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326959"
 
 请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
-1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**   >  **载入"。**
 
     1. 选择Windows 10操作系统。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53326959"
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box.
 
-8. 转到"操作 **"选项卡** ，然后单击" **新建..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 输入共享 *WindowsDefenderATPOnboardingScript.cmd* 文件的文件名和位置。
+8. 转到"操作 **"选项卡** ，然后单击" **新建..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 输入共享  *WindowsDefenderATPOnboardingScript.cmd* 文件的 NetBIOS 路径。
 
 9. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
 
@@ -77,7 +77,7 @@ ms.locfileid: "53326959"
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>其他 Defender for Endpoint 配置设置
-对于每个设备，你可以说明当通过请求提交文件进行深入分析Microsoft Defender 安全中心是否可以从设备收集示例。
+对于每个设备，你可以说明当通过请求提交文件进行深入分析Microsoft 365 Defender是否可以从设备收集示例。
 
 可以使用组策略 (GP) 配置设置，如深入分析功能中使用的示例共享的设置。
 
@@ -189,9 +189,9 @@ Policy | 设置
 > [!NOTE]
 > 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
-1. 从以下版本[获取Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，选择 **"设置**  >  **载"。**
+    1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >  **""载出"。**
 
     1. 选择Windows 10操作系统。
 
@@ -224,8 +224,8 @@ Policy | 设置
 
 ## <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
 
-1. 转到["Microsoft Defender 安全中心"。](https://securitycenter.windows.com/)
-2. 单击 **"设备列表"。**
+1. 转到[Microsoft 365 Defender门户](https://security.microsoft.com/)。
+2. 单击 **"设备清单"。**
 3. 验证设备是否显示。
 
 > [!NOTE]

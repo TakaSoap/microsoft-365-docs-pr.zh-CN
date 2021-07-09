@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器，以在远程传输中导入和存档Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: a779cb312e20fdf5fac0987a33734e7e81ba9c74
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bce1788f2ce08ca8678c5ba29c01e1bec2d1c834
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054827"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339462"
 ---
-# <a name="set-up-a-connector-to-archive-signal-communications-data-preview"></a>设置连接器以存档信号通信数据 (预览) 
+# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>设置连接器以存档信号通信数据
 
 使用邮箱中的 TeleMessage Microsoft 365 合规中心导入和存档信号聊天、附件、文件以及已删除的消息和呼叫。 设置和配置连接器后，它将连接到组织的 TeleMessage 帐户，并且使用 TeleMessage 信号存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
 

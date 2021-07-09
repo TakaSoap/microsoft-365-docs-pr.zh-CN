@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置Advanced eDiscovery，以便你可以开始创建和管理事例。 它还介绍了所需的 Microsoft 订阅和许可。 完成几个快速步骤后，Advanced eDiscovery即可使用。
-ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919739"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341444"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>设置Microsoft 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Advanced eDiscovery中Microsoft 365提供了端到端工作流，以保留、收
 
 完成以下步骤以将用户添加到电子数据展示管理员角色组：
 
-1. 转到 <https://protection.office.com/permissions> ，然后使用组织中管理员帐户的凭据Microsoft 365登录。
+1. 转到 <https://compliance.microsoft.com/permissions> ，然后使用组织中管理员帐户的凭据Microsoft 365登录。
 
 2. 在" **权限"** 页上，选择 **电子数据展示管理员角色** 组。
 

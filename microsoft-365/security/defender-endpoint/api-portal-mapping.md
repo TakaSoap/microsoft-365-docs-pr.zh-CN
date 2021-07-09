@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender 终结点检测 API 字段
-description: 了解检测 API 字段如何映射到Microsoft Defender 安全中心
+description: 了解检测 API 字段如何映射到 Microsoft 365 Defender
 keywords: 检测， 检测字段， 字段， api， 字段， 拉取检测， rest api， 请求， 响应
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f9a0d4ddeee5c1dc49c53e324854cabccc5f79e5
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933633"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339546"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender 终结点检测 API 字段
 
@@ -33,11 +33,11 @@ ms.locfileid: "51933633"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-了解哪些数据字段作为检测 API 的一部分公开，以及如何映射到Microsoft Defender 安全中心。
+了解哪些数据字段作为检测 API 的一部分公开，以及如何映射到Microsoft 365 Defender。
 
 >[!Note]
 >- [适用于终结点警报的](alerts.md) Defender 由一个或多个检测组成。
->- **Microsoft Defender ATP检测** 由设备上发生的可疑事件及其相关的警报 **详细信息组成**。
+>- **Microsoft Defender ATP 检测** 由设备上发生的可疑事件及其相关 **警报详细信息组成** 。
 >- Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>检测 API 字段和门户映射
@@ -52,16 +52,16 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 > | 门户标签   | SIEM 字段名称           | ArcSight 字段      | 示例值                                                                      | 说明                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | name                | Microsoft Defender AV 检测到"Mikatz"高严重性恶意软件 | 可用于每个检测的值。                                                                                                                                               |
-> | 2                | 严重性                  | deviceSeverity      | 高                                                                             | 可用于每个检测的值。                                                                                                                                               |
-> | 3                | 类别                  | deviceEventCategory | 恶意软件                                                               | 可用于每个检测的值。                                                                                                                                               |
+> | 2                | Severity                  | deviceSeverity      | 高                                                                             | 可用于每个检测的值。                                                                                                                                               |
+> | 3                | Category                  | deviceEventCategory | 恶意软件                                                               | 可用于每个检测的值。                                                                                                                                               |
 > | 4                 | 检测源                    | sourceServiceName   | 防病毒                                                                 | Microsoft Defender 防病毒或 Defender for Endpoint。 可用于每个检测的值。                                                                                         |
 > | 5                 | MachineName               | sourceHostName      | desktop-4a5ngd6                                                                           | 可用于每个检测的值。                                                                                                                                               |
 > | 6                 | FileName                  | fileName            | Robocopy.exe                                                                       | 可用于与文件或进程关联的检测。                                                                                                                      |
 > | 7                 | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | 可用于与文件或进程关联的检测。                                                                                                                     |
 > | 8                 | UserDomain                | sourceNtDomain      | CONTOSO                                                                            | 运行活动的用户上下文的域，可用于基于终结点行为的检测的 Defender。                                                           |
 > | 9                 | UserName                  | sourceUserName      | liz.bean                                                                           | 运行活动的用户上下文，可用于基于终结点行为的 Defender 检测。                                                                           |
-> | 10                 | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | 可用于与文件或进程关联的检测。                                                                                                                      |
-> | 11               | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | 可用于 Microsoft Defender AV 检测。                                                                                                                                    |
+> | 10                | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | 可用于与文件或进程关联的检测。                                                                                                                      |
+> | 11                | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | 可用于 Microsoft Defender AV 检测。                                                                                                                                    |
 > | 12                | Md5                       | deviceCustomString5 | db979c04a99b96d370988325bb5a8b21                                                   | 可用于 Microsoft Defender AV 检测。                                                                                                                                    |
 > | 13               | ThreatName                | deviceCustomString1  | HackTool：Win32/M一tz！dha                                                         | 可用于 Microsoft Defender AV 检测。                                                                                                                                    |
 > | 14                | IpAddress                 | sourceAddress       | 218.90.204.141                                                                     | 可用于与网络事件关联的检测。 例如，"与恶意网络目标的通信"。                                                        |
@@ -82,7 +82,7 @@ ArcSight 字段列包含 Defender for Endpoint 字段和 ArcSight 中的内置�
 | | IncidentLinkToWDATP | 无映射 | `https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM` | 可用于每个检测的值。
 > | 内部字段 | LastProcessedTimeUtc      | 无映射          | 2017-05-07T01：56：58.9936648Z                                                       | 事件到达后端的时间。 为检索检测的范围设置请求参数时，可以使用此字段。                         |
 > |                  | 不是架构的一部分    | deviceVendor        |                                                                                    | ArcSight 映射中的静态值 -"Microsoft"。                                                                                                                          |
-> |                  | 不是架构的一部分    | deviceProduct       |                                                                                    | ArcSight 映射中的静态值 -"Microsoft Defender ATP"。                                                                                                               |
+> |                  | 不是架构的一部分    | deviceProduct       |                                                                                    | ArcSight 映射中的静态值 - "Microsoft Defender ATP"。                                                                                                               |
 > |                  | 不是架构的一部分    | deviceVersion       |                                                                                    | ArcSight 映射中的静态值 - "2.0"，用于标识映射版本。                                                                                         
 
 

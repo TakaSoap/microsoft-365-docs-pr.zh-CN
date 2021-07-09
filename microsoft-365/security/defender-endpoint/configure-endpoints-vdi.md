@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843206"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339630"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>在 VDI 设备上载入非永久性虚拟 () 基础结构
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,9 +63,9 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>For Windows 10 or Windows Server 2019
 
-1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
 
-    1.  在导航窗格中，选择 **"设置**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
     1. 选择Windows 10操作系统。
 
@@ -111,11 +111,11 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    
       - 对于每台设备的单个条目： 
     
-        只需检查一个Microsoft Defender 安全中心。
+        仅检查门户中的Microsoft 365 Defender条目。
 
       - 对于每台设备的多个条目： 
        
-        检查查询中的多个Microsoft Defender 安全中心。
+        在门户中检查Microsoft 365 Defender条目。
 
 6. 单击 **导航窗格上的** "设备列表"。
 

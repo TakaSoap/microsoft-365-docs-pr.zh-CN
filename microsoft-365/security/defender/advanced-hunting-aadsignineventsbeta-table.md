@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: edc9a1e40275631752ca1252a16071f4b07f07f9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7fc5e0a37f57928b2ee1318d01e2a10b95a36108
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286326"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341660"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -89,7 +89,6 @@ ms.locfileid: "53286326"
 |`NetworkLocationDetails`|string|登录事件的身份验证处理器的网络位置详细信息|
 |`RequestId`|string|请求的唯一标识符|
 |`ReportId`|string|事件的唯一标识符|
-|
 
 ## <a name="related-articles"></a>相关文章
 

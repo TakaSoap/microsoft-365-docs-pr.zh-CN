@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6786d423d20ec90c12d2ea712003acc787ed599d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d82bffd6eea54256f2c6773f843030a19e27275d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165245"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339354"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>配置托管的安全服务提供商集成
 
@@ -44,7 +44,7 @@ ms.locfileid: "51165245"
 
 该集成将允许 MSSP 执行以下操作：
 
-- 获取对 MSSP 客户门户Microsoft Defender 安全中心的访问权限
+- 获取对 MSSP 客户门户Microsoft 365 Defender的访问权限
 - 获取电子邮件通知和 
 - 使用 SIEM 工具通过安全信息和事件管理 (警报) 警报
 
@@ -57,7 +57,7 @@ MSSP 客户需要授予对 Defender for Endpoint 租户的访问权限，以便 
 通常，需要执行以下配置步骤：
 
 
-- **向 MSSP 授予对 Microsoft Defender 安全中心** <br>
+- **向 MSSP 授予对 Microsoft 365 Defender** <br>
 此操作需要由 MSSP 客户执行。 它向 MSSP 客户授予对 MSSP 客户的 Defender for Endpoint 租户的访问权限。
  
 

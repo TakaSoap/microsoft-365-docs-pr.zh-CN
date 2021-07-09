@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍如何开始使用 Microsoft 365 中的核心电子数据Microsoft 365。 分配电子数据展示权限并创建案例后，可以添加成员、创建电子数据展示保留，然后搜索和导出与调查相关的内容。
-ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311012"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341468"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Microsoft 365 中的核心电子数据展示Microsoft 365
 
@@ -34,19 +34,19 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 核心电子数据展示的许可需要相应的组织订阅和每用户许可。
 
-- **组织订阅：** 若要访问 Microsoft 365 合规中心或 Office 365 安全 & 合规中心中的核心电子数据展示并使用保留和导出功能，你的组织必须具有 Microsoft 365 E3 或 Office 365 E3 订阅或更高版本。
+- **组织订阅：** 若要访问 Microsoft 365 合规中心 或 Office 365 安全 & 合规中心中的核心电子数据展示并使用保留和导出功能，你的组织必须具有 Microsoft 365 E3 或 Office 365 E3 订阅或更高版本。
 
 - **每用户许可：** 若要将电子数据展示保留置于邮箱和网站上，必须为用户分配以下许可证之一，具体取决于您的组织订阅：
 
-  - A Microsoft 365 E3 or Office 365 E3 license or higher
+  - 许可证Microsoft 365 E3或Office 365 E3或更高版本
 
-   OR
+   或
 
-  - Office 365E1 许可证Exchange Online计划 2 或Exchange Online Archiving附加许可证
+  - Office 365 E1计划 2 Exchange Online或附加Exchange Online Archiving许可证创建许可证
 
   AND
 
-  - Office 365具有 SharePoint Online 计划 2 或 OneDrive for Business 2 附加许可证的 E1 许可证
+  - Office 365 E1具有 SharePoint Online 计划 2 或 OneDrive for Business 2 附加许可证的许可证
   
   若要了解如何分配许可证，请参阅 [向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
 
@@ -62,7 +62,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 完成以下步骤以将用户添加到电子数据展示管理员角色组：
 
-1. 转到 [https://protection.office.com/permissions](https://protection.office.com/permissions) ，然后使用组织中管理员帐户的凭据Microsoft 365 Office 365登录。
+1. 转到 <https://compliance.microsoft.com/permissions> ，然后使用组织中管理员帐户的凭据Microsoft 365 Office 365登录。
 
 2. 在" **权限"** 页上，选择 **电子数据展示管理员角色** 组。
 
@@ -100,7 +100,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 1. 转到 ，然后使用已分配有相应电子数据展示权限的用户帐户 [https://compliance.microsoft.com](https://compliance.microsoft.com) 的凭据登录。 组织管理角色组的成员还可以创建核心电子数据展示事例。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365全部显示"，然后单击"电子数据展示>**核心"。**
+2. 在任务窗格的左侧导航 **Microsoft 365 合规中心，单击**"全部显示"，然后单击"电子数据展示>**核心"。**
 
 3. 在"**核心电子数据展示"** 页上，单击"**创建案例"。**
 
@@ -114,7 +114,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 如果在步骤 3 中创建了一个案例，并且你是将使用该案例的唯一人员，则不必执行此步骤。 你可以开始使用该案例创建电子数据展示保留项、搜索内容和导出搜索结果。 如果要向其他用户授予对案例 (或角色) 执行此步骤。
 
-1. 在合规性 **中心中** Microsoft 365"核心电子数据展示"页上，单击要添加成员的情况的名称。
+1. 在 **"核心电子数据** 展示"Microsoft 365 合规中心，单击要添加成员的情况的名称。
 
 2. 在案例主页上，**选择"设置"** 选项卡，然后选择"访问&**权限"。**
 

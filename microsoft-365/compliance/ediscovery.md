@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 提供了三种电子数据展示工具，可用于搜索和导出在不同位置找到的内容，如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组、Microsoft Teams 和 Skype for Business 对话。 核心电子数据展示Advanced eDiscovery提供了许多其他功能，可帮助你管理调查。
-ms.openlocfilehash: dc332e1a399588e4a1e969af45da6cff92008461
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: a62c8a53081a79e4afd98c82bfaca486a6155a6b
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256337"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341708"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 中的电子数据Microsoft 365
 
@@ -56,22 +56,22 @@ Microsoft 365提供三种电子数据展示解决方案：内容搜索、核心�
 |基于角色的权限|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
 |案例管理||![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
 |将内容位置法定保留||![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|保管人管理|||![支持](../media/check-mark.png)|
-|法定保留通知|||![支持](../media/check-mark.png)|
-|高级索引|||![支持](../media/check-mark.png)|
-|错误修复|||![支持](../media/check-mark.png)|
-|审阅集|||![支持](../media/check-mark.png)|
-|支持云附件SharePoint版本|||![支持](../media/check-mark.png)|
-|光学字符识别|||![支持](../media/check-mark.png)|
-|对话线程|||![支持](../media/check-mark.png)|
-|集合数据和报告|||![支持](../media/check-mark.png)|
-|查看集筛选|||![支持](../media/check-mark.png)|
-|标记|||![支持](../media/check-mark.png)|
-|分析|||![支持](../media/check-mark.png)|
-|预测编码模型|||![支持](../media/check-mark.png)|
-|计算的文档元数据|||![支持](../media/check-mark.png)|
-|长时间运行的作业的透明度|||![支持](../media/check-mark.png)|
-|导出到客户拥有Azure 存储位置|||![支持](../media/check-mark.png)|
+|保管人管理|||![受支持](../media/check-mark.png)|
+|法定保留通知|||![受支持](../media/check-mark.png)|
+|高级索引|||![受支持](../media/check-mark.png)|
+|错误修复|||![受支持](../media/check-mark.png)|
+|审阅集|||![受支持](../media/check-mark.png)|
+|支持云附件SharePoint版本|||![受支持](../media/check-mark.png)|
+|光学字符识别|||![受支持](../media/check-mark.png)|
+|对话线程|||![受支持](../media/check-mark.png)|
+|集合数据和报告|||![受支持](../media/check-mark.png)|
+|查看集筛选|||![受支持](../media/check-mark.png)|
+|标记|||![受支持](../media/check-mark.png)|
+|分析|||![受支持](../media/check-mark.png)|
+|预测编码模型|||![受支持](../media/check-mark.png)|
+|计算的文档元数据|||![受支持](../media/check-mark.png)|
+|长时间运行的作业的透明度|||![受支持](../media/check-mark.png)|
+|导出到客户拥有Azure 存储位置|||![受支持](../media/check-mark.png)|
 |||||
 
 以下是每个电子数据展示功能的说明。

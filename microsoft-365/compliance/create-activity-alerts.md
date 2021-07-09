@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在安全与合规中心中添加&活动警报，以便Microsoft 365执行特定活动时发送电子邮件通知
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227159"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341600"
 ---
 # <a name="create-activity-alerts"></a>创建活动通知
 
@@ -46,7 +46,7 @@ ms.locfileid: "53227159"
 
 ## <a name="create-an-activity-alert"></a>创建活动提醒
 
-1. 转到 [https://protection.office.com/managealerts](https://protection.office.com/managealerts)。
+1. 转到 <https://compliance.microsoft.com/managealerts>。
 
 2. 使用工作或学校帐户进行登录。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53227159"
 
 你可以关闭活动提醒，以便不发送电子邮件通知。 关闭活动提醒后，它仍显示在组织的活动提醒列表中，并且您仍可以查看其属性。
 
-1. 转到 转到 [https://protection.office.com/managealerts](https://protection.office.com/managealerts) 。
+1. 转到 <https://compliance.microsoft.com/managealerts>。
 
 2. 使用工作或学校帐户进行登录。
 

@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: aed567e503fb2c615b183c6769c69248c149742a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1dffa40a0c21f5f611492d5a098a98f8aaa726a5
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539043"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326983"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 
@@ -64,7 +64,7 @@ ms.locfileid: "52539043"
 
 可以使用域允许或拒绝列表来指定用户与组织外部人员共享时可以使用的域。
 
-使用允许列表，可以指定贵组织中用户可与组织外人员共享的域名列表。 禁止与他人共享域名。 如果贵组织仅从特定域的列表中与人员进行协作，则可以使用此功能阻止与其他域共享。
+使用允许列表，可以指定贵组织中用户可与组织外人员共享的域名列表。 阻止与其他域共享。 如果贵组织仅从特定域的列表中与人员进行协作，则可以使用此功能阻止与其他域共享。
 
 使用拒绝列表，可以指定贵组织用户无法与组织外人员共享的域名列表。 禁止共享列出的域名。 如果有竞争对手（例如想要阻止其访问组织中的内容的人员），此功能可能非常有用。
 

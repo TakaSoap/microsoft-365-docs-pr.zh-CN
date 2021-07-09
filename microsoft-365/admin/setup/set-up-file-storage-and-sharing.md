@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站来Microsoft 365和Microsoft 365文件共享。
-ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5ab0a192cb5706b6aff6cdeb30fa566de74dd510
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924607"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338657"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在文件中设置文件存储和Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "52924607"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../../business-video/index.yml)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365文档存储和管理
 
@@ -77,7 +77,7 @@ ms.locfileid: "52924607"
   
 下面将说明团队中的每个人如何设置OneDrive共享文件。
 
-1. 转到 Microsoft 365<a href="https://portal.office.com/ " target="_blank">门户</a>，然后使用用户名和密码登录。
+1. 转到<a href="https://admin.mirosoft.com/ " target="_blank">Microsoft 365 管理中心</a>，然后使用用户名和密码登录。
 
 2. 从应用启动器中，选择 **"OneDrive"。**
 
@@ -208,5 +208,5 @@ To see how much storage space you have left in OneDrive， see [Manage your OneD
 ## <a name="related-content"></a>相关内容
 
 [为订阅添加存储空间 (](../../commerce/add-storage-space.md) 文章) \
-[通过视频视频Microsoft 365 商业版 (](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)共享文件和) \
+[使用 Business Microsoft 365 视频 (共享](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)文件和) \
 [自定义团队网站以存储文件和共享](customize-team-site.md) (文章) 

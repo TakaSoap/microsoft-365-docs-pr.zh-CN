@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 管理员可以了解如何在组织中使用共享审核Microsoft 365 审核日志标识与组织外部的用户共享的资源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819292"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341504"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>在审核日志中使用共享审核
 
@@ -96,26 +96,26 @@ ms.locfileid: "44819292"
 
 第一步是搜索审核日志共享事件。 有关 (搜索) 所需的权限审核日志，请参阅Sing the 审核日志 in the Security & [Compliance Center。](search-the-audit-log-in-security-and-compliance.md)
   
-1. 转到 [https://protection.office.com](https://protection.office.com)。
-    
+1. 转到 <https://compliance.microsoft.com>。
+
 2. 使用工作或学校帐户进行登录。
-    
-3. 在安全与合规中心的左侧窗格中，单击“**搜索**”  > “**审核日志搜索**”。
-    
-    此时将显示“**审核日志搜索**”页面。 
-    
+
+3. 在任务窗格的左Microsoft 365 合规中心，单击"审核 **"。**
+
+    将显示“**审核**”页。
+
 4. 在 **"活动**" **下，单击"共享和访问请求活动** "以搜索与共享相关的事件。 
-    
+
     ![在"活动"下，选择"共享和访问请求活动"](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  选择日期和时间范围以查找该时段内发生的共享事件。 
-    
+5. 选择日期和时间范围以查找该时段内发生的共享事件。 
+
 6. 单击 **"** 搜索"运行搜索。 
-    
+
 7. 运行完搜索并显示结果后，单击"**导出** 结果 \> **下载所有结果"。**
-    
+
     选择导出选项后，窗口底部会显示一条消息，提示您打开或保存 CSV 文件。
-    
+
 8. 单击 **"** \> **另存为** "，将 CSV 文件保存到本地计算机上的文件夹中。 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>步骤 2：使用 PowerQuery 编辑器格式化导出审核日志

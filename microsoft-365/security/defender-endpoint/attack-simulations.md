@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 6ecbf98c81b1f68e42f39269809592fb446e6036
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a56167f0025ec42f4fd441886f83026c1bf23d6
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934377"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339529"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender for Endpoint 
 
@@ -37,7 +37,7 @@ ms.locfileid: "51934377"
 
 >[!TIP]
 >- 了解适用于终结点的 Microsoft Defender 中的最新增强功能[：Defender for Endpoint 中的新增功能是什么？。](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
->- Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读 [：MITRE ATT 中的见解&基于 CK 的评估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
+>- Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读[：Insights MITRE ATT&基于 CK 的评估。](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 在将多个设备载入服务之前，你可能想要体验 Defender for Endpoint。 为此，可以在一些测试设备上运行受控攻击模拟。 运行模拟攻击后，你可以查看 Defender for Endpoint 如何显示恶意活动，并探索它如何启用有效的响应。
 
@@ -49,7 +49,7 @@ ms.locfileid: "51934377"
 
 ## <a name="run-a-simulation"></a>运行模拟
 
-1. 在  >  **帮助模拟&** 教程中，选择要模拟的可用攻击方案：
+1. 在 **终结点**  >  **评估&教程**&模拟中，选择要模拟的可用攻击  >  方案：
 
    - **方案 1：文档丢弃后门** - 模拟传递社交工程的诱使文档。 文档启动一个专门设计的后门，该后门为攻击者提供控制。
 

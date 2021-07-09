@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a3be13624c3b3cc9d7be667e28e435c76c513fc3
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289735"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341720"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -273,8 +273,6 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 - **Stream** - (/stream/assign-administrator-user-role) 
 - **信息屏障** - (。/compliance/information-barriers.md) 
 
-对于其余内容，最近在 Docs 中搜索非常好 - <https://docs.microsoft.com/> 。
-
 ### <a name="activity-logs"></a>活动日志
 
 Office 365具有统一[审核日志](../compliance/search-the-audit-log-in-security-and-compliance.md)。 这是一个非常 [详细的日志](/office/office-365-management-api/office-365-management-activity-api-schema)，但不要过多地读取名称。 它可能不包含满足安全性和合规性需求所需的一切内容。 此外，一些客户对高级 [审核真正感兴趣](../compliance/advanced-audit.md)。
@@ -285,7 +283,7 @@ Office 365具有统一[审核日志](../compliance/search-the-audit-log-in-secur
 - [Exchange邮件跟踪](/powershell/module/exchange/get-messagetrace)
 - 上面讨论的威胁/UEBA 系统 (例如，Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender for Endpoint 等) 
 - [Microsoft 信息保护](../compliance/data-classification-activity-explorer.md)
-- [ Microsoft Defender for Endpoint ](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 首先确定安全与合规计划所需的所有日志源非常重要。 另请注意，不同的日志具有不同的在线保留限制。

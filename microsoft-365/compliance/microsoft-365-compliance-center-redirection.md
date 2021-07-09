@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 了解如何自动Office 365安全与合规中心用户重定向到Microsoft 365 合规中心。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 83d6a08d5c189c08c8f7d25daa3af39f28cbf8f1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62fc302f9f065ac7bb0475a6e72dc240a56a1fe1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226271"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339402"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>将用户从 Office 365 安全与合规中心重定向到Microsoft 365 合规中心
 
@@ -35,7 +35,7 @@ ms.locfileid: "53226271"
 用户将自动路由到 Microsoft 365 合规中心 (compliance.microsoft.com) 中的相同合规性解决方案。
 
 > [!NOTE]
-> 对于安全与合规Office 365中包含的其他合规性解决方案，用户将继续在 Microsoft 365 合规中心 或 Office 365 安全与合规中心管理这些解决方案。 这些合规性解决方案的自动重定向即将推出。*
+> 对于安全与合规Office 365中包含的其他合规性解决方案，用户将继续在 Microsoft 365 合规中心 或 Office 365 安全与合规中心管理这些解决方案。 这些合规性解决方案的自动重定向即将推出。
 
 此功能和相关控件不支持自动重定向 Microsoft Defender for Office 365。 若要启用安全功能重定向，请参阅将帐户从[Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) for Office 365重定向到 Microsoft 365 安全中心了解详细信息。
 
@@ -44,7 +44,7 @@ ms.locfileid: "53226271"
 如果无法通过 Microsoft 365 合规中心 门户完成某些操作或无法完成某些操作，可以暂时禁用所有用户的自动重定向。
 
 > [!IMPORTANT]
-> The Microsoft 365 合规中心 is the replacement management portal for compliance solutions currently managed in the Office 365 Security and Compliance center. 所有Microsoft 365合规性解决方案将仅在 Microsoft 365 合规中心 中进行管理。 禁用重定向到Microsoft 365 合规中心应该是一个短期解决方案。*
+> The Microsoft 365 合规中心 is the replacement management portal for compliance solutions currently managed in the Office 365 Security and Compliance center. 所有Microsoft 365合规性解决方案将仅在 Microsoft 365 合规中心 中进行管理。 禁用重定向到Microsoft 365 合规中心应该是一个短期解决方案。
 
 若要切换回Office 365安全与合规 (protection.microsoft.com) ，请完成以下步骤：
 

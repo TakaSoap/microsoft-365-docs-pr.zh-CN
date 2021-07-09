@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921488"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339378"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -90,7 +90,7 @@ ms.locfileid: "50921488"
 1. 输入用户 3 帐户名，输入 CAPTCHA 中的字符，然后选择"下一步 **"。**
 1. 对于 **验证步骤 1，** 选择 **"通过电子邮件发送我的备用电子邮件**"，然后选择"**电子邮件"。** 收到电子邮件时，输入验证码，然后选择"下一 **步"。**
 1. 在 **"返回到你的帐户"中**，输入用户 3 帐户的新密码，然后选择"完成 **"。** 记下已更改的用户 3 帐户密码并将其存储在安全的位置。
-1. 在同一浏览器的独立选项卡中，转到 [https://portal.office.com](https://portal.office.com)，然后使用用户 3 帐户名及其新密码登录。 应该会看到“Microsoft Office 主页”页面。
+1. 在同一浏览器的独立选项卡中，转到 [https://admin.microsoft.com](https://admin.microsoft.com)，然后使用用户 3 帐户名及其新密码登录。 应该会看到“Microsoft Office 主页”页面。
 
 ## <a name="next-step"></a>后续步骤
 

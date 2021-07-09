@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844330"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339234"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -38,7 +38,7 @@ ms.locfileid: "52844330"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过安全中心控制台无缝提供高级攻击检测和Microsoft Defender 安全中心功能。
+Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过安全中心控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。
 
 有关许可和基础结构需要满足的实际指导，请参阅使用 Defender for Endpoint [Windows服务器。](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)
 
@@ -66,14 +66,14 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 通常，您需要执行以下步骤：
 
 1. 满足开始之前部分 **中列出的载入** 要求。
-2. 从 Microsoft Defender 安全中心打开服务器监视。
+2. 从门户打开Microsoft 365 Defender监控。
 3. 安装和配置服务器的 MMA，以将传感器数据报告给 Defender for Endpoint。
 4. 配置和更新System Center Endpoint Protection客户端。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证它是否正确载入到服务。 有关详细信息，请参阅对新载入的 Defender 终结点终结点运行检测 [测试](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>准备工作
+#### <a name="before-you-begin"></a>开始之前
 
 执行以下步骤以满足载入要求：
 
@@ -121,7 +121,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>选项 2：Windows Azure 安全中心载入服务器
 
-1. 在"Microsoft Defender 安全中心导航窗格中，选择 **"设置**  >  **设备管理**  >  **载入"。**
+1. 在"Microsoft 365 Defender"导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
 2. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统。
 
@@ -200,7 +200,7 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的Window
     > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展，以支持[Windows Server 2019 和 Windows Virtual Desktop (WVD) 。 ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows Azure Defender 监视的服务器也将在 Defender for Endpoint 中可用 - Azure Defender 无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。  此外，适用于终结点的 Defender 警报将在 Azure Defender 控制台中提供。
-- 服务器调查 - Azure Defender 客户可以访问Microsoft Defender 安全中心执行详细调查，以发现潜在泄露的范围。
+- 服务器调查 - Azure Defender 客户可以访问Microsoft 365 Defender门户来执行详细调查，以发现潜在泄露的范围。
 
 > [!IMPORTANT]
 > - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲用户和英国用户创建 Defender) 。<br>
@@ -255,7 +255,7 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 
 1. 获取工作区 ID：
 
-   1. 在导航窗格中，选择 **"设置**  >  **载入"。**
+   1. 在"Microsoft 365 Defender"导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
    1. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统并获取工作区 ID：
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939562"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341004"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 
@@ -48,7 +48,7 @@ ms.locfileid: "51939562"
 
   **UnifiedAuditLogestionEnabled** 属性的 `True` 值表明已打开审核日志搜索。
 
-- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能成功运行脚本。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 有关详细信息，请参阅[在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中的“搜索审核日志的要求”部分。
+- 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能成功运行脚本。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 有关详细信息，请参阅[在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)中的“搜索审核日志的要求”部分。
 
 - 完成该脚本可能需要很长时间。 运行所需的时长取决于配置脚本以为其检索审核记录的日期范围和时间间隔大小。 较大的日期范围和较小的间隔将导致运行时间较长。 请参阅步骤 2 中的表格，了解有关日期范围和间隔的信息。
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何设置新的企业电子邮件地址。
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065130"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341540"
 ---
 # <a name="set-up-a-new-business-email-address"></a>设置新的企业电子邮件地址
 
@@ -55,7 +55,7 @@ ms.locfileid: "52065130"
 
 无论将域名用于网站地址还是其他提供商的电子邮件地址，请使用已拥有的域名。 
 
-## <a name="try-it"></a>试一试！
+## <a name="give-it-a-try"></a>试一试！
  
 1. 登录到托管您的域的网站。 单击按钮以手动验证或更新域。 
 1. 自定义电子邮件地址或保留其为 。 

@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029953"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339258"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for Endpoint 中的误报/漏报
 
@@ -141,7 +141,7 @@ ms.locfileid: "53029953"
 
 ### <a name="review-completed-actions"></a>查看已完成的操作
 
-1. 转到操作中心 <https://security.microsoft.com/action-center> () 并登录。
+1. 在门户的左侧导航窗格中，Microsoft 365 Defender操作 **中心"。**
 
 2. 选择 **"历史记录** "选项卡以查看已采取的操作列表。
 
@@ -149,7 +149,7 @@ ms.locfileid: "53029953"
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>从操作中心还原隔离文件
 
-1. 转到操作中心 <https://security.microsoft.com/action-center> () 并登录。
+1. 在门户的左侧导航窗格中，Microsoft 365 Defender操作 **中心"。**
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
@@ -157,7 +157,7 @@ ms.locfileid: "53029953"
 
 ### <a name="undo-multiple-actions-at-one-time"></a>一次撤消多个操作
 
-1. 转到操作中心 <https://security.microsoft.com/action-center> () 并登录。
+1. 在门户的左侧导航窗格中，Microsoft 365 Defender操作 **中心"。**
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
@@ -168,7 +168,7 @@ ms.locfileid: "53029953"
 > [!div class="mx-imgBorder"]
 > ![隔离](images/autoir-quarantine-file-1.png)
 
-1. 转到操作中心 <https://security.microsoft.com/action-center> () 并登录。
+1. 在门户的左侧导航窗格中，Microsoft 365 Defender操作 **中心"。**
 
 2. 在" **历史记录"** 选项卡上，选择操作类型为"隔离 **文件"的文件**。
 
@@ -252,7 +252,7 @@ ms.locfileid: "53029953"
 
 [尤其是](/microsoft-365/security/defender-endpoint/manage-indicators) (泄露指示器或 IoCs) 使安全运营团队能够定义实体的检测、防护和排除。 例如，可以在 Microsoft Defender for Endpoint 的扫描和修正操作中指定要省略的某些文件。 或者，指示器可用于对某些文件、IP 地址或 URL 生成警报。
 
-若要将实体指定为 Microsoft Defender for Endpoint 的排除项，请为这些实体创建"允许"指示器。 Microsoft Defender for Endpoint 中的此类"允许"[](microsoft-defender-antivirus-in-windows-10.md)指示器适用于下一代保护、终结点检测和响应[和自动](overview-endpoint-detection-response.md)调查[&修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
+若要将实体指定为 Microsoft Defender for Endpoint 的排除项，请为这些实体创建"允许"指示器。 Microsoft Defender for Endpoint 中的此类"允许"[](microsoft-defender-antivirus-in-windows-10.md)指示器适用于下一代[](overview-endpoint-detection-response.md)保护、终结点检测和响应以及自动调查[&修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
 "允许"指示器可用于：
 
@@ -344,7 +344,7 @@ ms.locfileid: "53029953"
 
 Microsoft Defender for Endpoint 提供各种选项，包括针对各种特性和功能微调设置的功能。 如果收到大量误报，请务必查看组织的威胁防护设置。 您可能需要进行一些调整以：
 
-- [云保护](#cloud-delivered-protection)
+- [云端保护](#cloud-delivered-protection)
 - [针对可能不需要的应用程序的修正](#remediation-for-potentially-unwanted-applications)
 - [自动调查和修正](#automated-investigation-and-remediation)
 

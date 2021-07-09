@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: 使用安全与合规中心中的批量搜索编辑器快速更改一个或多个内容搜索的查询和内容位置。
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227383"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341028"
 ---
 # <a name="bulk-edit-content-searches"></a>批量编辑内容搜索
 
@@ -32,7 +32,7 @@ ms.locfileid: "53227383"
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>使用批量搜索编辑器更改查询
 
-1. 转到 <https://protection.office.com> ，然后选择"搜索 **内容** \> **搜索"。**
+1. 转到 <https://compliance.microsoft.com> ，然后选择"内容 **搜索"。**
 
 2. 在搜索列表中，选择一个或多个搜索，然后选择批量 **搜索编辑器** ![ 批量搜索编辑器按钮 ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) 。
 

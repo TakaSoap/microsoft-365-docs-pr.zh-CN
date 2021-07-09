@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908337"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339680"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -43,7 +43,7 @@ ms.locfileid: "52908337"
 
 EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏洞管理。 如果组织的安全团队尚未启用，EDR启用[](tvm-security-recommendation.md)阻止模式的安全建议。 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="建议在阻止EDR启用此模式":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="建议在阻止EDR启用此模式":::
 
 > [!NOTE]
 > 若要获取最佳保护，请确保为终结点基线 **[部署 Microsoft Defender。](configure-machines-security-baseline.md)**
@@ -62,14 +62,14 @@ EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏�
 > [!IMPORTANT]
 > 在以[阻止模式](#requirements-for-edr-in-block-mode)打开应用前，EDR满足要求。
 
-1. 转到 Microsoft 365 [Defender 门户](microsoft-defender-security-center.md)并登录。 
+1. 转到 Microsoft 365 Defender[门户](microsoft-defender-security-center.md)并登录。 
 
 2. 选择 **设置**  >  **高级功能"。**
 
 3. 在阻止 **EDR启用" "。**
 
 > [!NOTE]
-> EDR在阻止模式下只能打开Microsoft Defender 安全中心。 不能使用注册表项、Intune 或组策略启用或禁用EDR阻止模式。
+> EDR在阻止模式下的启用状态只能在 Microsoft 365 Defender 门户中打开。 不能使用注册表项、Intune 或组策略启用或禁用EDR阻止模式。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>阻止模式下EDR应用的要求
 
@@ -86,7 +86,7 @@ EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏�
 > [!IMPORTANT]
 > 若要获取最佳保护值，请确保防病毒解决方案配置为接收定期更新和基本功能，并且已配置排除 [项](configure-exclusions-microsoft-defender-antivirus.md)。 EDR模式中的策略将遵守为阻止模式定义的Microsoft Defender 防病毒。
 
-## <a name="frequently-asked-questions"></a>常见问题 
+## <a name="frequently-asked-questions"></a>常见问题解答 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>我是否需要在阻止EDR打开状态，即使我在设备上Microsoft Defender 防病毒运行？
 
@@ -115,8 +115,8 @@ EDR模式运行不会影响在用户设备上运行的第三方防病毒保护�
 
 |方法  |Procedure  |
 |---------|---------|
-| PowerShell     | 1. 选择"开始"菜单，开始键入 `PowerShell` ，然后在Windows PowerShell中打开" 开始"菜单。 <p>2. 键入 `Get-MpComputerStatus` 。 <p>3. 在结果列表中，在 **AMRunningMode** 行中查找下列值之一： <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。        |
-|命令提示符     | 1. 选择"开始"菜单，开始键入 ，然后在Windows `Command Prompt` 打开命令提示符。 <p>2. 键入 `sc query windefend` 。 <p>3. 在结果列表中的 **"状态** "行中，确认服务正在运行。         |
+| PowerShell     | 1. 选择"开始"菜单，开始键入 `PowerShell` ，然后在Windows PowerShell中打开" "。 <p>2. 键入 `Get-MpComputerStatus` 。 <p>3. 在结果列表中，在 **AMRunningMode** 行中查找下列值之一： <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。        |
+|命令提示符     | 1. 选择"开始"菜单，开始键入 ，然后打开Windows `Command Prompt` 命令提示符。 <p>2. 键入 `sc query windefend` 。 <p>3. 在结果列表中的 **"状态** "行中，确认服务正在运行。         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>在阻止模式下禁用EDR需要的时间？
 

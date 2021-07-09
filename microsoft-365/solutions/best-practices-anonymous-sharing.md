@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 7198e2d343f73299bb62ea73863cecd359d90ba2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2c89ca319ba79d6f0463cc6d244c8d91928d6e42
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538227"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327019"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -43,7 +43,7 @@ ms.locfileid: "52538227"
 设置组织中“任何人”链接到期日期
 
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，单击“**共享**”。
+2. 在左侧导航中，展开“**策略**”，然后单击“**共享**”。
 3. 在 **“任何人链接的选择到期和权限”** 下，选中 **“这些链接必须在这些天数内过期”** 复选框。</br>
    ![SharePoint 组织级别的“任何人”链接到期设置的屏幕截图](../media/sharepoint-organization-anyone-link-expiration.png)
 4. 在输入框中键入天数，然后单击“**保存**”。

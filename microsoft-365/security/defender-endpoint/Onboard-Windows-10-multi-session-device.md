@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861175"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339474"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虚拟桌面中载入 Windows 10 多会话设备 
 6 分钟阅读 
@@ -30,7 +30,7 @@ ms.locfileid: "52861175"
 
 Microsoft Defender for Endpoint 支持监视 VDI Windows虚拟桌面会话。 根据组织的需求，你可能需要实现 VDI 或 Windows 虚拟桌面会话，以帮助你的员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
 
- ## <a name="before-you-begin"></a>准备工作
+ ## <a name="before-you-begin"></a>开始之前
 熟悉非永久性 [VDI 的注意事项](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 尽管[Windows](/azure/virtual-desktop/overview)桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，该映像可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
 
 > [!NOTE]
@@ -54,7 +54,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 #### <a name="scenario-1-using-local-group-policy"></a>*方案 1：使用本地组策略*
 此方案要求将脚本放置在黄金映像中，并使用本地组策略在启动过程早期运行。
 
-按照载入非 [永久性虚拟桌面基础结构 VDI 设备 中的说明操作](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。
+按照在 [VDI 设备上载入非永久性虚拟桌面 (中的) 进行操作](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)。
 
 按照每个设备的单个条目的说明进行操作。
 

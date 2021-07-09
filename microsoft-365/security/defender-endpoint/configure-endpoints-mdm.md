@@ -1,6 +1,6 @@
 ---
 title: 使用移动设备管理工具载入 Windows 10 设备
-description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
+description: 使用移动设备管理工具在设备上部署配置包，以便设备载入服务。
 keywords: 使用 mdm 载入设备， 设备管理， 载入 Microsoft Defender for Endpoint 设备， mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f0a0a35d41d56abfcc7975c9e79ff7d537b72f40
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843430"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338573"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
+# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>使用Windows 10管理工具载入新设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "52843430"
 
 有关使用 Defender for Endpoint CSP 有关详细信息，请参阅 [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF 文件](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不会成功应用。 
 
 有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
@@ -70,9 +70,9 @@ ms.locfileid: "52843430"
 > [!NOTE]
 > 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
 
-1. 从以下版本[获取Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
+1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-   1. 在导航窗格中，选择 **"设置**  >  **载"。**
+   1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >  **""载出"。**
 
    1. 选择Windows 10操作系统。
 

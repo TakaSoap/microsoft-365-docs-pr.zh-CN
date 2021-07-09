@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228359"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341016"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -40,7 +40,7 @@ ms.locfileid: "53228359"
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
-必须是[全局管理员](about-admin-roles.md)才能执行这些步骤。
+必须是 [全局管理员](about-admin-roles.md) 才能完成这些步骤。
 
 ## <a name="change-a-users-email-address"></a>更改用户的电子邮件地址
 
@@ -64,7 +64,7 @@ ms.locfileid: "53228359"
 
 1. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
 
-1. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则请通过使用下拉列表来选择新电子邮件别名的域。
+1. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，请使用下拉列表为新电子邮件别名选择域。 [了解如何添加域](../setup/add-domain.md)。
 
 1. 选择“**保存更改**”。
 
@@ -118,7 +118,7 @@ ms.locfileid: "53228359"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 
 ## <a name="related-content"></a>相关内容
 
-[管理员：重置一个或多个用户的密码](reset-passwords.md)（文章）\
-[为用户添加另一个电子邮件地址](../email/add-another-email-alias-for-a-user.md)（文章）\
-[创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）
+[添加域](../setup/add-domain.md)
+[管理员：重置一个或多个用户的密码](reset-passwords.md)
+[为用户添加另一个电子邮件地址](../email/add-another-email-alias-for-a-user.md)
+[创建共享邮箱](../email/create-a-shared-mailbox.md)

@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中配置条件访问
-description: 了解在 Intune、Microsoft Defender 安全中心 和 Azure 中实现条件访问需要执行的步骤
+description: 了解在 Intune、Microsoft 365 Defender 和 Azure 中实现条件访问需要执行的步骤
 keywords: 条件访问， 条件， 访问， 设备风险， 风险级别， 集成， intune 集成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843970"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339510"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -35,7 +35,7 @@ ms.locfileid: "52843970"
 
 本节指导您完成正确实现条件访问需要执行的所有步骤。
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 >[!WARNING]
 >需要注意的是，此方案不支持已注册 Azure AD 的设备。</br>
 >仅支持 Intune 注册的设备。
@@ -50,10 +50,10 @@ ms.locfileid: "52843970"
 
 
 
-在应用、Intune 门户和 Azure AD Microsoft Defender 安全中心需要执行一些步骤。
+在应用、Intune 门户和 Azure AD Microsoft 365 Defender需要执行一些步骤。
 
 请注意访问这些门户和实现条件访问所需的角色：
-- **Microsoft Defender 安全中心**- 你需要使用一个帐户登录门户全局管理员角色启用集成。
+- **Microsoft 365 Defender** - 你需要使用一个帐户登录门户全局管理员角色启用集成。
 - **Intune** - 你需要使用具有管理权限的安全管理员权限登录门户。 
 - **Azure AD 门户** - 你需要以全局管理员、安全管理员或条件访问管理员登录。
 
@@ -62,7 +62,7 @@ ms.locfileid: "52843970"
 > 你将需要一个Microsoft Intune环境，并且 Intune 托管和 Azure AD 已加入Windows 10设备。
 
 执行以下步骤以启用条件访问：
-- 步骤 1：打开Microsoft Intune连接Microsoft Defender 安全中心
+- 步骤 1：打开Microsoft Intune连接Microsoft 365 Defender
 - 步骤 2：在 Intune 中打开 Defender for Endpoint 集成
 - 步骤 3：在 Intune 中创建合规性策略
 - 步骤 4：分配策略 
@@ -70,15 +70,15 @@ ms.locfileid: "52843970"
 
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>步骤 1：打开Microsoft Intune连接
-1. 在导航窗格中，**选择"设置**  >  **高级Microsoft Intune**  >  **连接"。**
+1. 在导航窗格中，**选择"设置**  >    >  **终结点""**  >  **常规高级Microsoft Intune**  >  **连接"。**
 2. 将"Microsoft Intune"设置为 **"打开"。**
 3. 单击 **保存首选项**。
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>步骤 2：在 Intune 中打开 Defender for Endpoint 集成
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择 **设备合规性**  >  **Microsoft Defender ATP。**
-3. 将 **连接 Windows 10.0.15063+** 设备Microsoft Defender 高级威胁防护设置为 **"打开"。**
+1. 登录 [Azure 门户](https://portal.azure.com)。
+2. 选择 **设备合规性**  >  **Microsoft Defender ATP**。
+3. 将 **连接 Windows 10.0.15063+ 设备设置为"打开"。。** 
 4. 单击“**保存**”。
 
 

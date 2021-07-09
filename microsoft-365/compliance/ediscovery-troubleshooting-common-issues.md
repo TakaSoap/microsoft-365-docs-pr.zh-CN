@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822234"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339414"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -49,7 +49,7 @@ ms.locfileid: "52822234"
    "useralias@contoso.com"的输出将类似于以下内容：
 
    > 
-   > |名称|RecipientType|
+   > |Name|RecipientType|
    > |---|---|
    > |别名、用户|MailUser|
    > |别名、用户|用户|
@@ -99,7 +99,7 @@ ms.locfileid: "52822234"
 建议的解决方案是手动对网站重新索引，或等到自动后台进程对网站重新索引。
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>错误/问题：此搜索结果未下载，因为此搜索结果是一个无法自行下载的文件夹或其他项目，将下载文件夹或库内的任何项目。
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>错误/问题：此搜索结果未下载，因为此搜索结果是一个无法自行下载的文件夹或其他项目，将下载文件夹或库内的任何项目。
 
 运行包括"联机"和"One Drive for Business"SharePoint电子数据展示搜索时可能会看到该错误。 这意味着我们将尝试导出索引中报告的项目，但它却变成一个文件夹，因此我们没有导出它。 如错误所述，我们不会导出文件夹项目，但会导出其内容。
 
@@ -122,7 +122,7 @@ ms.locfileid: "52822234"
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>错误/问题：导出搜索结果的速度很慢
 
-在安全与合规中心内从电子数据展示或内容搜索导出搜索结果时，下载时间超过预期。  你可以查看要下载的数据量，并可能提高导出速度。
+从核心电子数据展示或内容搜索中导出搜索结果时Microsoft 365 合规中心下载时间超过预期。  你可以查看要下载的数据量，并可能提高导出速度。
 
 ### <a name="resolution"></a>解决方案
 
@@ -145,6 +145,16 @@ ms.locfileid: "52822234"
 5. 检查位于日志文件的目录中的 trace.日志文件，了解是否有错误。
 
 6. 如果仍有问题，请考虑将返回大量结果的搜索划分为较小的搜索。 例如，您可以使用搜索查询中的日期范围返回一组较小的结果，可以更快地下载结果。
+
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>错误/问题：导出过程未进行或卡住
+
+从核心电子数据展示或内容搜索中导出搜索结果时Microsoft 365 合规中心导出过程未进行或似乎卡住。
+
+### <a name="resolution"></a>解决方案
+
+1. 如有必要，请重新运行搜索。 如果上次运行搜索的时间超过 7 天，您必须重新运行搜索。
+
+2. 重新启动导出。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>错误/问题："发生了 500 (内部) 错误"
 
@@ -222,7 +232,7 @@ ms.locfileid: "52822234"
 
 ### <a name="resolution"></a>解决方案
 
-这是一个客户端问题，为了修正此问题，请尝试以下步骤：
+这是客户端问题。 若要修正它，请按照以下步骤操作：
 
 1. 请尝试使用另一个客户端/计算机进行下载。
 
@@ -234,6 +244,6 @@ ms.locfileid: "52822234"
 
 5. 确保没有任何其他导出内容下载到同一文件夹或任何父文件夹。
 
-6. 如果上述步骤不起作用，则禁用压缩和重复数据删除。
+6. 如果前面的步骤不起作用，则禁用 zipping 和重复数据删除。
 
 7. 如果此操作有效，则问题由本地病毒扫描程序或磁盘问题导致。

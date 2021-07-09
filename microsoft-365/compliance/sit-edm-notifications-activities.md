@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何为精确数据匹配活动创建通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da00c43ae9ba5b129129027df16f49ef80b8757d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 263dc319d7e7d3ee5f12ebe374e8f5bd44c4cc8c
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288163"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341672"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>创建精确数据匹配活动通知
 
-当 [使用精确数据匹配 (EDM) 创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 时，在 [审核日志](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) 中会创建大量活动。 可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet 创建通知，让你了能这些活动何时开始：
+当 [使用精确数据匹配 (EDM) 创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 时，在 [审核日志](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) 中会创建大量活动。 可以使用 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet 创建通知，让你了能这些活动何时开始：
 
 - CreateSchema
 - EditSchema
@@ -44,7 +44,7 @@ ms.locfileid: "53288163"
 
 若要了解有关 DLP 权限的详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-这些订阅中包含基于 EDM 的分类
+这些订阅中包含基于 EDM 的分类:
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -55,19 +55,19 @@ ms.locfileid: "53288163"
 
 ## <a name="configure-notifications-for-edm-activities"></a>配置 EDM 活动通知
 
-1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 
+1. 连接到[安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
-2. 使用想要为其创建通知的活动运行 `New-ProtectionAlert` cmdlet。  例如，如果希望在 **UploadDataCompleted** 操作发生时收到通知，请运行
+2. 使用想要为其创建通知的活动运行 `New-ProtectionAlert` cmdlet。  例如，如果希望在 **UploadDataCompleted** 操作发生时收到通知，请运行:
 
-```powershell
-New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <***address to send  notification to***> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
-```
-
-对于 **UploadDataFailed**，可以运行
-
-```powershell
-New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <***SMTP address to send notification to***> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
-```
+    ```powershell
+    New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
+    ```
+    
+    对于 **UploadDataFailed**，可以运行:
+    
+    ```powershell
+    New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
+    ```
 
 ## <a name="related-articles"></a>相关文章
 

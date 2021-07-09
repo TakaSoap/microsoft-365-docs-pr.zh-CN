@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级审核，以便可以在用户帐户泄露时执行取证调查或调查其他与安全相关的事件。
-ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 825dadee5260a263d005eb3a37f280381f9425a2
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314270"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339222"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "52314270"
 
 ![设置高级审核的工作流](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step1-set-up-advanced-audit-for-users"></a>步骤 1：为用户设置高级审核
+## <a name="step-1-set-up-advanced-audit-for-users"></a>步骤 1：为用户设置高级审核
 
 “高级审核”功能，如记录重要事件（如 MailItemsAccessed 和 Send）功能，需要为用户分配适当的 E5 许可证。 此外，必须为这些用户启用“高级审核”应用程序/服务计划。 要验证“高级审核”应用程序是否已分配给用户，请对每个用户执行以下步骤：
 
@@ -70,7 +70,7 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>步骤 3：设置审核保留策略
 
-除了将 Exchange、SharePoint 和 Azure AD 审核记录保留一年的默认策略外，还可以创建其他 审核日志 保留策略，以满足组织的安全操作、IT 和合规性团队的要求。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
+除了将 Exchange、SharePoint 和 Azure AD 审核记录保留一年的默认策略外，可以创建其他审核日志保留策略以满足组织安全操作、IT 和合规团队的要求。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
 ## <a name="step-4-search-for-crucial-events"></a>步骤 4：搜索关键事件
 

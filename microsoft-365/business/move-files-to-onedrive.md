@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 了解如何只需几个简单的步骤，就可以将个人工作文件和OneDrive for Business公司文件移动到其他位置。
-ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245096"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339302"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>将文件移动到 OneDrive for Business
 
@@ -44,7 +44,7 @@ ms.locfileid: "52245096"
 
 如果用户计算机上包含多个个人文件，应首先将这些文件移动到 OneDrive for Business：
   
-1. 转到 portal.office.com，然后使用用户的 Microsoft 365 企业凭据登录。
+1. 转到 admin.microsoft.com，然后使用用户的 Microsoft 365 企业凭据登录。
 
 2. 单击应用启动器 ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) 并转到 OneDrive。 
     

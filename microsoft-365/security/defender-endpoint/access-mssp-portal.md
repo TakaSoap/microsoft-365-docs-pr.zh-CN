@@ -1,6 +1,6 @@
 ---
-title: 访问 MSSP Microsoft Defender 安全中心门户
-description: 访问 MSSP Microsoft Defender 安全中心门户
+title: 访问 MSSP Microsoft 365 Defender门户
+description: 访问 MSSP Microsoft 365 Defender门户
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97122decede91e8b4f059b3b66999ac12b300172
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8583b28adecd892ec6875faa934fd7ab08e5db11
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164853"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339582"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>访问 MSSP Microsoft Defender 安全中心门户
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>访问 MSSP Microsoft 365 Defender门户
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

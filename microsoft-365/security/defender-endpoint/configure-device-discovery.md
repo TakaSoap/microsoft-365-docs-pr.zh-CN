@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286941"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339522"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -43,8 +43,8 @@ ms.locfileid: "53286941"
 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 - Windows 10 设备仅) 或者通过指定设备的设备标记来选择设备的子集。
 
 > [!IMPORTANT]
-> 对于预览版，你首先需要在预览版中启用预览Microsoft Defender 安全中心。
-> 然后，你可以访问安全中心中的Microsoft 365配置。 非托管设备和安全建议列表将在 Microsoft Defender 安全中心 和 Microsoft 365 安全中心提供，而仪表板磁贴将仅在安全中心Microsoft 365提供。
+> 对于预览版，你首先需要在预览版中启用预览Microsoft 365 Defender。
+> 然后，你可以访问安全中心中的Microsoft 365配置。 非托管设备和安全建议列表将在 Microsoft 365 Defender 和 Microsoft 365 安全中心提供，而仪表板磁贴将仅在 Microsoft 365 安全中心提供。
 
 在安全中心执行Microsoft 365步骤：
 

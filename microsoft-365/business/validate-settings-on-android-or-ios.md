@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 了解如何验证 android Microsoft 365 商业高级版 iOS 设备中的应用保护设置。
-ms.openlocfilehash: a0a4a6e6cff59f66a506929e97c99d361472a68b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43e74b548711550090021c39096b1647cee9e039
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578059"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339322"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>验证 Android 或 iOS 设备上的应用保护设置
 
@@ -42,7 +42,7 @@ ms.locfileid: "51578059"
   
 首先，确保该策略适用于你要验证它的应用。
   
-1. 在管理 [Microsoft 365 商业高级版，](https://portal.office.com)转到"策略 **""** \> **编辑策略"。**
+1. 在管理 [Microsoft 365 商业高级版，](https://admin.microsoft.com)转到"策略 **""** \> **编辑策略"。**
     
 2. 选择 **"Android 应用程序** 策略"作为你在设置时创建的设置，或选择你创建的另一个策略，并验证是否Outlook应用策略。 
     
@@ -131,7 +131,7 @@ ms.locfileid: "51578059"
   
 首先，确保该策略适用于你要验证它的应用。
   
-1. 在管理 [Microsoft 365 商业高级版，](https://portal.office.com)转到"策略 **""** \> **编辑策略"。**
+1. 在管理 [Microsoft 365 商业高级版，](https://admin.microsoft.com)转到"策略 **""** \> **编辑策略"。**
     
 2. 选择 **"iOS** 的应用程序策略"作为你在设置时创建的设置，或你创建的另一个策略，并验证是否强制Outlook例如。 
     

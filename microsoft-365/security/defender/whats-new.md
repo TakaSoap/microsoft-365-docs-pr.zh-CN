@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: af5efb669b1f73b4008ac2c3fae251a4d08511dd
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114727"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340980"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -38,8 +38,10 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>2021 年 6 月
-- 威胁分析[Microsoft 365 Defender中的威胁标记](threat-analytics.md) <br> 威胁标记可帮助你专注于特定威胁类别并查看最相关的报告。 
+
+## <a name="july-2021"></a>2021 年 7 月
+- [Professional服务目录](https://sip.security.microsoft.com/interoperability/professional_services)<br>通过受支持的合作伙伴连接增强平台的检测、调查和威胁智能功能。
+    
 
 ## <a name="may-2021"></a>2021 年 5 月
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Microsoft 365 审核日志 搜索工具帮助解决电子邮件帐户的常见支持问题。
-ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906090"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341042"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜索审核日志调查常见支持问题
 
@@ -49,18 +49,18 @@ ms.locfileid: "50906090"
 
 本节介绍创建和运行搜索审核日志基础知识。 使用这些说明作为本文中每个疑难解答方案的起点。 有关更详细的分步说明， [请参阅搜索](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)审核日志。
 
-1. 转到 [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) ，然后使用你的工作或学校帐户登录。
+1. 转到 <https://compliance.microsoft.com/auditlogsearch>，使用工作或学校帐户登录。
     
-    此时将显示“**审核日志搜索**”页面。 
+    将显示“**审核**”页。 
     
-    ![配置条件，然后选择"搜索"运行搜索](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![配置条件，然后选择"搜索"运行搜索](../media/AuditLogSearchPage1.png)
   
 4. 可以配置以下搜索条件。 本文中的每个疑难解答方案都推荐了有关配置这些字段的特定指南。
     
-    a. **活动：** 选择下拉列表以显示可搜索的活动。 运行搜索后，仅将显示所选活动的审核日志项目。 选择 **"显示所有活动的结果"** 将显示满足其他搜索条件的所有活动的结果。 在某些疑难解答方案中，您还必须将此字段留空。
-    
-    b. **开始日期** 和 **结束日期：** 选择日期和时间范围以显示该时段内发生的事件。 默认情况下选择最近七天。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。
+   a. **开始日期** 和 **结束日期：** 选择日期和时间范围以显示该时段内发生的事件。 默认情况下选择最近七天。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。    
 
+   b. **活动：** 选择下拉列表以显示可搜索的活动。 运行搜索后，仅将显示所选活动的审核日志项目。 选择 **"显示所有活动的结果"** 将显示满足其他搜索条件的所有活动的结果。 在某些疑难解答方案中，您还必须将此字段留空。
+    
     c. **用户：** 单击此框，然后选择一个或多个要显示其搜索结果的用户。 在此框中选择的用户执行的选定活动的审核记录将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
     
     d. **文件、文件夹或网站：** 键入部分或所有文件或文件夹名称，以搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保键入完整 URL 路径，或者如果您只键入 URL 的一部分，则不要包含任何特殊字符或空格。 将此框留空以返回组织中所有文件和文件夹的条目。 此字段在本文的所有疑难解答方案中都保留为空。
@@ -164,7 +164,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ### <a name="recover-deleted-email-items"></a>恢复已删除的电子邮件项目
 
-如果已删除项目的保留期尚未过期，用户可以恢复软删除的项目。 在Exchange Online，默认已删除项目的保留期为 14 天，但管理员可以将此设置增加至最多 30 天。 将用户指向"在 Web 上恢复已删除Outlook[或电子邮件"](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)一文，查看有关恢复已删除项目的说明。
+如果已删除项目的保留期尚未过期，用户可以恢复软删除的项目。 在Exchange Online，默认已删除项目的保留期为 14 天，但管理员可以将此设置增加至最多 30 天。 将用户指向本文[中的"恢复已删除项目或](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)Outlook 网页版，以便获得有关恢复已删除项目的说明。
 
 如前所述，如果已删除项目的保留期尚未过期或邮箱已置于保留状态（在这种情况下，项目将一直保留到保留期到期，则管理员可以恢复硬删除的项目）。 运行内容搜索时，搜索结果中将返回"可恢复的项目"文件夹中的软删除和硬删除项目（如果它们与搜索查询匹配）。 有关运行内容搜索的信息，请参阅内容搜索[Office 365。](content-search.md)
 
@@ -175,7 +175,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 当用户为邮箱创建收件箱规则Exchange Online，相应的审核记录将保存到审核日志。 有关收件箱规则详细信息，请参阅：
 
-- [在 Web Outlook中的收件箱规则](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [在邮件中使用Outlook 网页版](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
 - [使用规则管理Outlook电子邮件](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 下面是如何为此方案配置审核日志搜索查询：

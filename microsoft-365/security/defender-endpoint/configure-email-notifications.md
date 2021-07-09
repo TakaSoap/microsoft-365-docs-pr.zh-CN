@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 2b638742e29d5ca0a8b74adfa6796380114d24a3
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327031"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339498"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
@@ -50,7 +50,7 @@ ms.locfileid: "53327031"
 可以创建规则，以确定要发送电子邮件通知的设备以及通知收件人的警报严重性。
 
 
-1. 在导航窗格中，选择 **"设置**  >  **电子邮件通知"。**
+1. 在导航窗格中，**选择"设置**  >    >  **终结点""**  >  **常规电子邮件通知"。**
 
 2. 单击 **"添加项目"。**
 

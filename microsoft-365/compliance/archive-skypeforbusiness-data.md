@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何在 Microsoft 365 合规中心 中设置和使用连接器，以将数据从 Skype for Business 导入Microsoft 365。
-ms.openlocfilehash: 93128af0c7f305cb2bef55efd5520de77555a222
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054810"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339450"
 ---
-# <a name="set-up-a-connector-to-archive-skype-for-business-data-preview"></a>设置连接器以存档Skype for Business数据 (预览) 
+# <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>设置连接器以存档Skype for Business数据
 
 使用 Microsoft 365 合规中心 中的一个 Skype for Business 连接器，将数据从 Skype for Business 平台导入并存档到组织Microsoft 365邮箱。 该[连接器Skype for Business连接器](https://www.veritas.com/en/au/insights/merge1/skype-for-business)，配置为定期捕获第三方数据源 (中的项目，) 将这些项目导入Microsoft 365。 连接器将用户之间的消息、持久聊天和会议消息等内容从 Skype for Business 转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何在存档和删除策略Microsoft 365自动将项目移动到用户的存档邮箱。
-ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062167"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341636"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -63,11 +63,11 @@ ms.locfileid: "53062167"
 > [!NOTE]
 > 您可以在此过程期间随时启用存档邮箱，只要在此过程完成之前在某些时候启用存档邮箱。 如果未启用存档邮箱，则不会对分配了存档或删除策略的任何项目执行任何操作。
   
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 <https://compliance.microsoft.com>。
 
 2. 使用全局管理员帐户登录。
     
-3. 在安全与&中心，转到"**信息治理""** \> **存档"。**
+3. 在"Microsoft 365 合规中心中，单击"**信息治理"，** 然后单击"存档 **"** 选项卡。
 
     将显示您组织中邮箱的列表，以及启用还是禁用相应的存档邮箱。
 

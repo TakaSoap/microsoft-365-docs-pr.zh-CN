@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322421"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339486"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 
@@ -54,7 +54,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 - 完全受 Microsoft 支持。
 - 可能仅在选定的地理区域或云环境中可用。 例如，此功能可能不存在于政府云中。
 - 预览版中的单个功能可能具有更多用法和支持限制。 如果是这样，此信息通常会记录在功能文档中。
-- 预览版本提供标准支持级别，建议用于生产工作负载。 
+- 预览版本提供标准支持级别，可用于生产环境。 
 
 
 

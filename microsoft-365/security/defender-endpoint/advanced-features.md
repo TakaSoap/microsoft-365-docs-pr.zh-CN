@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845470"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339570"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -81,7 +81,7 @@ ms.locfileid: "52845470"
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修正警报
 
-对于在 Windows 10 版本 1809 上或之后创建的租户，自动调查和修正功能默认配置为解决自动分析结果状态为"未找到威胁"或"已修正"的警报。  如果不希望自动解决警报，需要手动关闭该功能。
+对于在 Windows 10 版本 1809 或之后创建的租户，自动调查和修正功能默认配置为解决自动分析结果状态为"未找到威胁"或"已修正"的警报。  如果不希望自动解决警报，需要手动关闭该功能。
 
 > [!TIP]
 > 对于在此版本之前创建的租户，你需要从高级功能页面手动 [启用](https://securitycenter.windows.com/preferences2/integration) 此功能。
@@ -102,7 +102,7 @@ ms.locfileid: "52845470"
 
 若要打开 **"允许"或"阻止** 文件"：：
 
-1. 在导航窗格中，**选择"设置**  >  **高级功能**  >  **允许或阻止文件"。**
+1. 在导航窗格中，选择"设置  >    >  **终结点常规**  >  **高级功能**  >  **允许或阻止文件"。**
 
 1. 切换开和 **关****之间的设置**。
 
@@ -160,9 +160,9 @@ ms.locfileid: "52845470"
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365威胁智能连接
 
-此功能仅在 E5 或威胁Office 365处于活动状态时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
+此功能仅在你拥有活动Office 365 E5或威胁智能加载项时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
 
-启用此功能后，你将能够将 Microsoft Defender for Office 365 数据合并到 Microsoft Defender 安全中心 中，以便跨 Office 365 邮箱和 Windows 设备进行全面安全调查。
+启用此功能后，你将能够将 Microsoft Defender for Office 365 数据合并到 Microsoft 365 Defender 中，以便跨 Office 365 邮箱和 Windows 设备进行全面安全调查。
 
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
@@ -180,7 +180,7 @@ ms.locfileid: "52845470"
 启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全位置。
 
 > [!NOTE]
-> 在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上，此功能将随 企业移动性 + 安全性 一起) 提供。 Windows 10 版本 1803 (OS 内部版本 17134.704，包含[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10、版本 1809 (OS 内部版本 17763.379（具有[KB4489899](https://support.microsoft.com/help/4489899)) 或更高版本 Windows 10 版本）。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> 在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上，此功能将随 企业移动性 + 安全性 的 E5 许可证一起) 。 Windows 10，版本 1803 (OS 内部版本 17134.704（带[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10 版本 1809 (OS 内部版本 17763.379，KB4489899) 或更高版本 Windows 10）。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) [](https://support.microsoft.com/help/4489899)
 
 ## <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 

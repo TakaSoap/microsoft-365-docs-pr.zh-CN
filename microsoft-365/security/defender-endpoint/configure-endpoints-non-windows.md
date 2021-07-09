@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845454"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339666"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -38,7 +38,7 @@ ms.locfileid: "52845454"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种支持的操作系统和操作系统警报 (操作系统) Microsoft Defender 安全中心更好地保护组织的网络。 
+Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种受支持操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。 
 
 你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关详细信息，请参阅：
 - [Linux 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-linux.md#system-requirements)  
@@ -64,7 +64,7 @@ Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windo
 1. 按照第三方文档将第三方解决方案与 Microsoft Defender for Endpoint 断开连接。
 
 2. 删除 Azure AD 租户中第三方解决方案的权限。
-   1. 登录到 [Azure 门户](https://portal.azure.com)。
+   1. 登录 [Azure 门户](https://portal.azure.com)。
    2. 选择 **Azure Active Directory > Enterprise应用程序"。**
    3. 选择要离开的应用程序。
    4. 选择" **删除"** 按钮。

@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：Active Directory 联合身份验证 (AD FS) Microsoft 云德国迁移的迁移步骤。
-ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165653"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339606"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的 AD FS 迁移步骤
 
 此配置更改需要在阶段 2 启动之前随时应用。
-第 2 阶段完成后，配置更改将正常工作，并且你能够通过 Office 365 全局终结点（如 ）登录 `https://portal.office.com` 。 如果在阶段 2 之前实现配置更改，Office 365 全局终结点将不起作用，但新的信赖方信任仍然是 Active Directory 联合身份验证服务 (AD FS) 配置的一部分。
+第 2 阶段完成后，配置更改将正常工作，并且你能够通过 Office 365 全局终结点（如 ）登录 `https://admin.microsoft.com` 。 如果在阶段 2 之前实现配置更改，Office 365 全局终结点将不起作用，但新的信赖方信任仍然是 Active Directory 联合身份验证服务 (AD FS) 配置的一部分。
 
 将联合身份验证与 Active Directory 联合身份验证服务 (AD FS) 一同使用的客户不应更改在迁移期间用于本地 Active Directory 域服务 (AD DS) 的所有身份验证的颁发者 URI。 更改颁发者 URI 将导致域中用户的身份验证失败。 可以在 AD FS 中直接更改颁发者 URI，或在将域从托管域转换为联合域时更改，反之亦然。 建议不要添加、删除或转换已迁移的 Azure AD 租户中的联合域。 完全完成迁移后，可更改颁发者 URI。
 
@@ -51,9 +51,9 @@ ms.locfileid: "51165653"
 
 4. 在 **"** 添加信赖 **方信任** "向导的"欢迎"页上选择"开始"。
 
-5. 在"**选择数据源"** 页上，选择"导入有关联机发布的信赖方或本地 **网络的数据"。** 联合 **元数据地址 (主机名或 URL**) 的值必须设置为 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 点击 **“下一步”**。
+5. 在"**选择数据源"** 页上，选择"导入有关联机发布的信赖方或本地 **网络的数据"。** 联合 **元数据地址 (主机名或 URL**) 的值必须设置为 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 单击“**下一步**”。
 
-6. 在"**指定显示名称**"页上，键入显示名称 Identity Platform **WorldWide Microsoft Office 365"。** 点击 **“下一步”**。
+6. 在"**指定显示名称**"页上，键入显示名称 Identity Platform **WorldWide Microsoft Office 365"。** 单击“**下一步**”。
 
 7. 如果你使用的是 Windows Server 2012 中的 ADFS，请在向导页面"现在配置多重身份验证？"上，根据你的身份验证要求选择合适的选项。 如果坚持使用默认值，请选择"我目前不想为此信赖方信任配置多重 **身份验证设置"。** 如果需要，可以在以后更改此设置。
 
@@ -136,7 +136,7 @@ ms.locfileid: "51165653"
 
 3. 将新的 DNS 记录或负载平衡器指向新的 AD FS 服务器。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 

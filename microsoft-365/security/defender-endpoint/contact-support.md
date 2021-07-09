@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228719"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339177"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 客户服务
 
@@ -58,9 +58,9 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
     ![选中问号时小组件的图像](images/support-widget.png)
 
-2. 单击需要帮助 **？**  按钮，位于Microsoft Defender 安全中心：
+2. 单击需要帮助 **？**  门户右下角Microsoft 365 Defender按钮：
 
-    !["需要帮助"按钮的图像](images/need-help.png)
+    !["需要帮助"按钮的图像](images/need-help-option.png)
 
 在小组件中，你将获得两个选项：
 
@@ -70,7 +70,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 ## <a name="find-solutions-to-common-problems"></a>查找常见问题的解决方案
 此选项包含可能与您可能询问的问题相关的文章。 只需在搜索框中键入问题，就会显示与搜索相关的文章。
 
-!["需要帮助"小组件的图像](images/Support3.png)
+!["需要帮助"小组件的图像](images/information-on-help-screen.png)
 
 如果建议的文章不够用，可以打开服务请求。
 
@@ -85,7 +85,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 通过单击看起来像耳机的图标可使用此选项。 然后，你将获取以下页面以提交支持案例：
 
-![打开服务请求小组件的图像](images/Support4.png)
+![打开服务请求小组件的图像](images/contact-support-screen.png)
 
 1. 填写你所面临的问题的标题和说明，以及我们可能会联系你的电话号码和电子邮件地址。
 
