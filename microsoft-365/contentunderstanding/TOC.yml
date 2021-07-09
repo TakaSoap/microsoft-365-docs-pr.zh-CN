@@ -46,6 +46,8 @@
       href: adoption-getstarted.md
     - name: 方案和用例
       href: adoption-scenarios.md
+    - name: 运行试用版
+      href: trial-syntex.md
     - name: 在 Microsoft 365 中管理合同
       items:
         - name: 概述
