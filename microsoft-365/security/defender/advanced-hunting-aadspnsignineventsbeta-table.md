@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
+ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583540"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53347903"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -48,27 +48,27 @@ ms.locfileid: "52583540"
 
 
 
-| 列名称     | 数据类型 | 说明   |
-| ----- | ----- | ---- |
-| `Timestamp` | datetime      | 生成记录的日期和时间                                                                                                     |
-| `Application`          | string        | 执行录制的操作的应用程序                                                                                                   |
-| `ApplicationId`        | 字符串        | 应用程序的唯一标识符                                                                                                           |
-| `IsManagedIdentity`    | boolean       | 指示登录是否由托管标识启动                                                                               |
-| `ErrorCode`            | int        | 包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。 |
-| `CorrelationId`        | 字符串        | 登录事件的唯一标识符                                                                                                          |
-| `ServicePrincipalName` | 字符串        | 启动登录的服务主体的名称                                                                                        |
-| `ServicePrincipalId`   | 字符串        | 启动登录的服务主体的唯一标识符                                                                           |
-| `ResourceDisplayName`  | 字符串        | 访问的资源的显示名称                                                                                                           |
-| `ResourceId`           | 字符串        | 访问的资源的唯一标识符                                                                                                      |
-| `ResourceTenantId`     | 字符串        | 访问的资源的租户的唯一标识符                                                                                        |
-| `IPAddress`            | 字符串        | 分配给终结点的 IP 地址，在相关的网络通信期间使用                                                              |
-| `Country`          | 字符串        | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码                                                                |
-| `State`                | 字符串        | 登录发生的位置（如果可用）                                                                                                  |
-| `City`                 | 字符串        | 帐户用户所在的城市                                                                                                          |
-| `Latitude`             | 字符串        | 登录位置的北向南部坐标                                                                                          |
-| `Longitude`            | 字符串        | 登录位置的从西到西坐标                                                                                            |
-| `RequestId`            | 字符串        | 请求的唯一标识符                                                                                                                |
-|`ReportId` | 字符串 | 事件的唯一标识符 | 
+| 列名称 | 数据类型 | 说明 |
+|-----|-----|-----|
+| `Timestamp` | datetime | 生成记录的日期和时间 |
+| `Application` | string | 执行录制的操作的应用程序 |
+| `ApplicationId` | string | 应用程序的唯一标识符 |
+| `IsManagedIdentity`    | boolean       | 指示登录是否由托管标识启动 |
+| `ErrorCode`    | int | 包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。 |
+| `CorrelationId`        | string        | 登录事件的唯一标识符 |
+| `ServicePrincipalName` | string        | 启动登录的服务主体的名称  |
+| `ServicePrincipalId`   | string        | 启动登录的服务主体的唯一标识符  |
+| `ResourceDisplayName`  | string        | 访问的资源的显示名称  |
+| `ResourceId`           | string        | 访问的资源的唯一标识符  |
+| `ResourceTenantId`     | string        | 访问的资源的租户的唯一标识符 |
+| `IPAddress`            | string        | 分配给终结点的 IP 地址，在相关的网络通信期间使用  |
+| `Country`          | string        | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码 |
+| `State`                | string        | 登录发生的位置（如果可用） |
+| `City`                 | string        | 帐户用户所在的城市  |
+| `Latitude`             | string        | 登录位置的北向南部坐标 |
+| `Longitude`            | string        | 登录位置的从西到西坐标 |
+| `RequestId`            | string        | 请求的唯一标识符 |
+|`ReportId` | string | 事件的唯一标识符 |
 
  
 
