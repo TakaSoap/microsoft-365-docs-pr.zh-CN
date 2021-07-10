@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype for Business(预览版)
+            - name: Skype for Business
               href: archive-skypeforbusiness-data.md
             - name: 可宽延时间电子数据展示
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica 短信和语音网络存档程序
               href: archive-o2-network-data.md
-            - name: 信号(预览版)
+            - name: 信号存档程序
               href: archive-signal-archiver-data.md
-            - name: Telegram(预览版)
+            - name: Telegram 存档程序
               href: archive-telegram-archiver-data.md
             - name: TELUS 网络
               href: archive-telus-network-data.md

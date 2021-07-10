@@ -18,30 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9ce161a472366d11b267824c9bd08ceccf285aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 21e44090cf21ac8bba29885a2f97242faf3e2164
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933453"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363963"
 ---
-# <a name="examples-of-device-control-policies-for-jamf"></a><span data-ttu-id="b9c70-104">JAMF 的设备控制策略示例</span><span class="sxs-lookup"><span data-stu-id="b9c70-104">Examples of device control policies for JAMF</span></span>
+# <a name="examples-of-device-control-policies-for-jamf"></a><span data-ttu-id="89803-104">JAMF 的设备控制策略示例</span><span class="sxs-lookup"><span data-stu-id="89803-104">Examples of device control policies for JAMF</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="b9c70-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="b9c70-105">**Applies to:**</span></span>
-- [<span data-ttu-id="b9c70-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="b9c70-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="b9c70-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="b9c70-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="89803-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="89803-105">**Applies to:**</span></span>
+- [<span data-ttu-id="89803-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="89803-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="89803-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="89803-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="b9c70-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="b9c70-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="b9c70-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="b9c70-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="89803-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="89803-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="89803-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="89803-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+<span data-ttu-id="89803-110">本文档包含您可以为你自己的组织自定义的设备控制策略的示例。</span><span class="sxs-lookup"><span data-stu-id="89803-110">This document contains examples of device control policies that you can customize for your own organization.</span></span> <span data-ttu-id="89803-111">如果你使用 JAMF 管理企业中的设备，则这些示例适用。</span><span class="sxs-lookup"><span data-stu-id="89803-111">These examples are applicable if you are using JAMF to manage devices in your enterprise.</span></span>
 
-<span data-ttu-id="b9c70-110">本文档包含您可以为你自己的组织自定义的设备控制策略的示例。</span><span class="sxs-lookup"><span data-stu-id="b9c70-110">This document contains examples of device control policies that you can customize for your own organization.</span></span> <span data-ttu-id="b9c70-111">如果你使用 JAMF 管理企业中的设备，则这些示例适用。</span><span class="sxs-lookup"><span data-stu-id="b9c70-111">These examples are applicable if you are using JAMF to manage devices in your enterprise.</span></span>
+## <a name="restrict-access-to-all-removable-media"></a><span data-ttu-id="89803-112">限制访问所有可移动媒体</span><span class="sxs-lookup"><span data-stu-id="89803-112">Restrict access to all removable media</span></span>
 
-## <a name="restrict-access-to-all-removable-media"></a><span data-ttu-id="b9c70-112">限制访问所有可移动媒体</span><span class="sxs-lookup"><span data-stu-id="b9c70-112">Restrict access to all removable media</span></span>
-
-<span data-ttu-id="b9c70-113">以下示例限制访问所有可移动媒体。</span><span class="sxs-lookup"><span data-stu-id="b9c70-113">The following example restricts access to all removable media.</span></span> <span data-ttu-id="b9c70-114">请注意 `none` 在策略的顶层应用的权限，这意味着将禁止所有文件操作。</span><span class="sxs-lookup"><span data-stu-id="b9c70-114">Note the `none` permission that is applied at the top level of the policy, meaning that all file operations will be prohibited.</span></span>
+<span data-ttu-id="89803-113">以下示例限制访问所有可移动媒体。</span><span class="sxs-lookup"><span data-stu-id="89803-113">The following example restricts access to all removable media.</span></span> <span data-ttu-id="89803-114">请注意 `none` 在策略的顶层应用的权限，这意味着将禁止所有文件操作。</span><span class="sxs-lookup"><span data-stu-id="89803-114">Note the `none` permission that is applied at the top level of the policy, meaning that all file operations will be prohibited.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -64,9 +62,9 @@ ms.locfileid: "51933453"
 </plist>
 ```
 
-## <a name="set-all-removable-media-to-be-read-only"></a><span data-ttu-id="b9c70-115">将所有可移动媒体设置为只读</span><span class="sxs-lookup"><span data-stu-id="b9c70-115">Set all removable media to be read-only</span></span>
+## <a name="set-all-removable-media-to-be-read-only"></a><span data-ttu-id="89803-115">将所有可移动媒体设置为只读</span><span class="sxs-lookup"><span data-stu-id="89803-115">Set all removable media to be read-only</span></span>
 
-<span data-ttu-id="b9c70-116">以下示例将所有可移动媒体配置为只读。</span><span class="sxs-lookup"><span data-stu-id="b9c70-116">The following example configures all removable media to be read-only.</span></span> <span data-ttu-id="b9c70-117">请注意在策略的顶层应用的权限，这意味着将不允许执行所有 `read` 写入和执行操作。</span><span class="sxs-lookup"><span data-stu-id="b9c70-117">Note the `read` permission that is applied at the top level of the policy, meaning that all write and execute operations will be disallowed.</span></span>
+<span data-ttu-id="89803-116">以下示例将所有可移动媒体配置为只读。</span><span class="sxs-lookup"><span data-stu-id="89803-116">The following example configures all removable media to be read-only.</span></span> <span data-ttu-id="89803-117">请注意在策略的顶层应用的权限，这意味着将不允许执行所有 `read` 写入和执行操作。</span><span class="sxs-lookup"><span data-stu-id="89803-117">Note the `read` permission that is applied at the top level of the policy, meaning that all write and execute operations will be disallowed.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -89,9 +87,9 @@ ms.locfileid: "51933453"
 </plist>
 ```
 
-## <a name="disallow-program-execution-from-removable-media"></a><span data-ttu-id="b9c70-118">禁止从可移动媒体执行程序</span><span class="sxs-lookup"><span data-stu-id="b9c70-118">Disallow program execution from removable media</span></span>
+## <a name="disallow-program-execution-from-removable-media"></a><span data-ttu-id="89803-118">禁止从可移动媒体执行程序</span><span class="sxs-lookup"><span data-stu-id="89803-118">Disallow program execution from removable media</span></span>
 
-<span data-ttu-id="b9c70-119">以下示例演示如何禁止从可移动媒体执行程序。</span><span class="sxs-lookup"><span data-stu-id="b9c70-119">The following example shows how program execution from removable media can be disallowed.</span></span> <span data-ttu-id="b9c70-120">记下 `read` `write` 在策略的顶级应用的 和 权限。</span><span class="sxs-lookup"><span data-stu-id="b9c70-120">Note the `read` and `write` permissions that are applied at the top level of the policy.</span></span>
+<span data-ttu-id="89803-119">以下示例演示如何禁止从可移动媒体执行程序。</span><span class="sxs-lookup"><span data-stu-id="89803-119">The following example shows how program execution from removable media can be disallowed.</span></span> <span data-ttu-id="89803-120">记下 `read` `write` 在策略的顶级应用的 和 权限。</span><span class="sxs-lookup"><span data-stu-id="89803-120">Note the `read` and `write` permissions that are applied at the top level of the policy.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -115,9 +113,9 @@ ms.locfileid: "51933453"
 </plist>
 ```
 
-## <a name="restrict-all-devices-from-specific-vendors"></a><span data-ttu-id="b9c70-121">限制来自特定供应商的所有设备</span><span class="sxs-lookup"><span data-stu-id="b9c70-121">Restrict all devices from specific vendors</span></span>
+## <a name="restrict-all-devices-from-specific-vendors"></a><span data-ttu-id="89803-121">限制来自特定供应商的所有设备</span><span class="sxs-lookup"><span data-stu-id="89803-121">Restrict all devices from specific vendors</span></span>
 
-<span data-ttu-id="b9c70-122">以下示例限制来自特定供应商的所有设备， (标识和 `fff0` `4525`) 。</span><span class="sxs-lookup"><span data-stu-id="b9c70-122">The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`).</span></span> <span data-ttu-id="b9c70-123">所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。</span><span class="sxs-lookup"><span data-stu-id="b9c70-123">All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).</span></span>
+<span data-ttu-id="89803-122">以下示例限制来自特定供应商的所有设备， (标识和 `fff0` `4525`) 。</span><span class="sxs-lookup"><span data-stu-id="89803-122">The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`).</span></span> <span data-ttu-id="89803-123">所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。</span><span class="sxs-lookup"><span data-stu-id="89803-123">All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -159,9 +157,9 @@ ms.locfileid: "51933453"
 </plist> 
 ```
 
-## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a><span data-ttu-id="b9c70-124">限制由供应商 ID、产品 ID 和序列号标识的特定设备</span><span class="sxs-lookup"><span data-stu-id="b9c70-124">Restrict specific devices identified by vendor ID, product ID, and serial number</span></span>
+## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a><span data-ttu-id="89803-124">限制由供应商 ID、产品 ID 和序列号标识的特定设备</span><span class="sxs-lookup"><span data-stu-id="89803-124">Restrict specific devices identified by vendor ID, product ID, and serial number</span></span>
 
-<span data-ttu-id="b9c70-125">以下示例限制由供应商 ID、产品 ID 和序列号标识的两个 `fff0` `1000` 特定 `04ZSSMHI2O7WBVOA` 设备 `04ZSSMHI2O7WBVOB` 。</span><span class="sxs-lookup"><span data-stu-id="b9c70-125">The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`.</span></span> <span data-ttu-id="b9c70-126">在策略的所有其他级别，权限包括所有可能的值 (读取、写入和执行) ，这意味着所有其他设备将不受限制。</span><span class="sxs-lookup"><span data-stu-id="b9c70-126">At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.</span></span>
+<span data-ttu-id="89803-125">以下示例限制由供应商 ID、产品 ID 和序列号标识的两个 `fff0` `1000` 特定 `04ZSSMHI2O7WBVOA` 设备 `04ZSSMHI2O7WBVOB` 。</span><span class="sxs-lookup"><span data-stu-id="89803-125">The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`.</span></span> <span data-ttu-id="89803-126">在策略的所有其他级别，权限包括所有可能的值 (读取、写入和执行) ，这意味着所有其他设备将不受限制。</span><span class="sxs-lookup"><span data-stu-id="89803-126">At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -221,6 +219,6 @@ ms.locfileid: "51933453"
 </plist> 
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="b9c70-127">相关主题</span><span class="sxs-lookup"><span data-stu-id="b9c70-127">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="89803-127">相关主题</span><span class="sxs-lookup"><span data-stu-id="89803-127">Related topics</span></span>
 
-- [<span data-ttu-id="b9c70-128">macOS 的设备控制概述</span><span class="sxs-lookup"><span data-stu-id="b9c70-128">Overview of device control for macOS</span></span>](mac-device-control-overview.md)
+- [<span data-ttu-id="89803-128">macOS 的设备控制概述</span><span class="sxs-lookup"><span data-stu-id="89803-128">Overview of device control for macOS</span></span>](mac-device-control-overview.md)
