@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877832"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363975"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -35,38 +35,14 @@ ms.locfileid: "52877832"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 macOS 的设备控件具有以下先决条件：
 
 >[!div class="checklist"]
 > - Microsoft Defender for Endpoint (可以试用) 
-> - 最低操作系统版本：macOS 10.15.4 或更高版本
-> - 最低产品版本：101.24.59
-> - 设备必须使用系统扩展运行 (这是 macOS 11 Big Sur) 。 
-> 
->   可以通过运行以下命令来检查设备是否正在系统扩展上运行，并验证设备是否正在 `endpoint_security_extension` 打印到控制台： 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - 你的设备必须 (`Beta` Microsoft 自动更新) `InsiderFast` 频道中。 有关详细信息，请参阅在 [Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 的更新。
-> 
->   可以使用以下命令检查更新频道： 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    如果上述命令未打印 或 `Beta` `InsiderFast` ，请从终端执行以下命令。 频道更新将在产品下次启动时生效 (安装下一个产品更新时或设备重启时) 。 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅在 [Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 的更新。 
+> - 最低操作系统版本：macOS 11 或更高版本
+> - 最低产品版本：101.34.20
 
 ## <a name="device-control-policy"></a>设备控制策略
 
@@ -79,7 +55,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | deviceControl |
+| **Key** | deviceControl |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 
@@ -99,8 +75,8 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | navigationTarget |
-| **数据类型** | String |
+| **Key** | navigationTarget |
+| **数据类型** | 字符串 |
 | **Comments** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
 
 ### <a name="allow-or-block-removable-devices"></a>允许或阻止可移动设备
@@ -113,7 +89,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 
@@ -143,10 +119,13 @@ macOS 的设备控件具有以下先决条件：
 - `audit` - 在此强制级别下，如果对设备的访问权限受到限制，则向用户显示一条通知，但该设备仍可使用。 此强制级别可用于评估策略的有效性。
 - `block` - 在此强制级别下，用户可以在设备上执行的操作仅限于策略中定义的操作。 此外，会向用户引发通知。 
 
+> [!NOTE] 
+> 默认情况下，强制级别设置为 `audit` 。 
+
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block |
 
@@ -171,7 +150,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 无 <br/> 阅读 <br/> 写入 <br/> execute |
 
@@ -186,7 +165,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | 供应商 |
+| **Key** | 供应商 |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个供应商，你可以为来自该供应商的设备指定所需的权限级别。
@@ -194,7 +173,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -203,7 +182,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | products |
+| **Key** | products |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个产品，您可以为该产品指定所需的权限级别。
@@ -211,7 +190,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -222,7 +201,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | serialNumbers |
+| **Key** | serialNumbers |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个序列号，您可以指定所需的权限级别。
@@ -230,7 +209,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 

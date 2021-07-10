@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何收集 Microsoft 支持案例电子数据展示诊断信息。
-ms.openlocfilehash: 842f8baf770f178df3298bbfa911de26ce946ed0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b2441e0b7af8a82e24a8acca9e000e954e1c8964
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926552"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362590"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集电子数据展示诊断信息
 
@@ -39,7 +39,7 @@ ms.locfileid: "50926552"
 查看生成的文本文件并修订敏感信息后，将其发送给正在处理你的案例的 Microsoft 支持工程师。
 
 > [!NOTE]
-> 您还可以运行本节中的命令，以收集搜索和导出的诊断信息，这些信息在合规性中心的"内容"Microsoft 365页上列出。
+> 您还可以运行本节中的命令，以收集搜索和导出内容搜索页中列出的搜索和导出的诊断Microsoft 365 合规中心。 
 
 ### <a name="collect-information-about-searches"></a>收集有关搜索的信息
 
@@ -67,10 +67,10 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>收集所有案例信息
 
-有时，Microsoft 支持需要哪些信息来调查你的问题并不明显。 在这种情况下，你可以收集核心电子数据展示案例的所有诊断信息。 以下 *命令* 中的核心电子数据展示案例名称与在安全与合规中心的"核心电子数据展示"页上Microsoft 365名称相同。 
+有时，Microsoft 支持需要哪些信息来调查你的问题并不明显。 在这种情况下，你可以收集核心电子数据展示案例的所有诊断信息。 以下 *命令* 中的核心电子数据展示案例名称与显示在"核心电子数据展示"页上的"核心电子数据展示"页上的Microsoft 365 合规中心。
 
 ```powershell
-Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
+Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
 ## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>收集诊断信息Advanced eDiscovery

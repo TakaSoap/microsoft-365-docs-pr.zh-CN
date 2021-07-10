@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive for Business）可以在多地理位置环境中返回结果。
-ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive）可以在多地理位置环境中返回结果。
+ms.openlocfilehash: dfc9e3dd986132810f363ba47ba18eae45666fc7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022326"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362266"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
@@ -30,13 +30,13 @@ ms.locfileid: "53022326"
 
 这些客户端可以返回来自所有地理位置的结果：
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - SharePoint 主页
 - 搜索中心
 - 使用 SharePoint 搜索 API 的自定义搜索应用程序
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 多地理位置环境一旦设置，在 OneDrive 中搜索的用户即可获得来自所有地理位置的结果。
 
@@ -65,9 +65,9 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>功能</strong></th>
-<th align="left"><strong>工作原理</strong></th>
-<th align="left"><strong>解决方法</strong></th>
+<th align="left">功能</th>
+<th align="left">运作方式</th>
+<th align="left">解决方法</th>
 </tr>
 </thead>
 <tbody>
@@ -111,8 +111,8 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>搜索功能</strong></th>
-<th align="left"><strong>注意</strong></th>
+<th align="left">搜索功能</th>
+<th align="left">注释</th>
 </tr>
 </thead>
 <tbody>
@@ -121,8 +121,8 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <td align="left">在多地理位置搜索中不支持仅应用身份验证（来自服务的特权访问）。</td>
 </tr>
 <tr class="even">
-<td align="left">来宾用户</td>
-<td align="left">来宾用户仅获得其搜索的地理位置中的结果。</td>
+<td align="left">来宾</td>
+<td align="left">来宾仅从要搜索的地理位置获取结果。</td>
 </tr>
 </tbody>
 </table>
@@ -253,18 +253,22 @@ MultiGeoSearchStatus - 这是 SharePoint Search API 响应请求返回的属性�
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>扇出到 **所有** 地理位置的示例 GET 请求
 
-https:// \<tenant\> / \_ api/search/query？querytext='sharepoint'&Properties='EnableMultiGeoSearch：true'&ClientType='my \_ client \_ id'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>扇出部分地理位置的示例 GET 请求
 
-https:// \<tenant\> / \_ api/search/query？querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch：true， MultiGeoSearchConfiguration：[{DataLocation \\ ："NAM" \\ ，Endpoint \\ ："https \\ ：//contosoNAM.sharepoint.com" \\ ，SourceId \\ ："B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ，{DataLocation \\ ："CAN" \\ ，Endpoint \\ ："https \\ ：//contosoCAN.sharepoint-df.com"}]'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > MultiGeoSearchConfiguration 属性的地理位置列表中的逗号和冒号前面带有 **反斜杠** 字符。 这是因为 GET 请求使用冒号分隔属性，并使用逗号分隔属性的参数。 如果不使用反斜杠作为转义字符，则 MultiGeoSearchConfiguration 属性会被错误解读。
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>扇出到 **所有** 地理位置的示例 POST 请求
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -289,7 +293,7 @@ https:// \<tenant\> / \_ api/search/query？querytext='site'&ClientType='my_clie
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>扇出到 **部分** 地理位置的示例 POST 请求
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -320,7 +324,7 @@ https:// \<tenant\> / \_ api/search/query？querytext='site'&ClientType='my_clie
 
 以下是扇出到 **所有** 地理位置的示例 CSOM 请求：
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52c4bc8a23bdf89afb1a3f3eae3fe6348fed8009
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927528"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362710"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 多地理位置计划
 
@@ -74,8 +74,6 @@ ms.locfileid: "50927528"
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 
 阅读 [多地理位置环境的用户体验，](multi-geo-user-experience.md) 详细了解最终用户在多地理位置环境中的体验。
-
-要详细了解 Microsoft 365 多地理位置租户中的 Teams 体验，请参阅 [Microsoft 365 OneDrive 和 SharePoint Online 支持多地理位置的租户中的 Teams 体验](/microsoftteams/teams-experience-o365odb-spo-multi-geo)。
 
 若要开始配置 Microsoft 365 多地理位置，请参阅[配置 Microsoft 365 多地理位置](multi-geo-tenant-configuration.md)。
 

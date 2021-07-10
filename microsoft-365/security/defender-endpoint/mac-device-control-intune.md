@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a7521a31b0b31fb95d2729f7068bfc9de5717f01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f52d1e9ea0d3e4c2da2ec413085a0f14efc453c7
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933813"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363799"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune 的设备控制策略示例
 
@@ -34,8 +34,6 @@ ms.locfileid: "51933813"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 本文档包含您可以为你自己的组织自定义的设备控制策略的示例。 如果你使用 Intune 管理企业中的设备，则这些示例适用。
 

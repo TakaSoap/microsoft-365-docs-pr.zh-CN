@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 841f22421ac81ba447dad70a68c4c7bc95605b16
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276901"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363891"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -40,6 +40,7 @@ ms.locfileid: "53276901"
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
+- [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
 - 解决了无法从 macOS 11 上的"大 Sur"菜单 (快速扫描) 
 - 其他 Bug 修复
 

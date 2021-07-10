@@ -123,7 +123,7 @@ ID | 类别 | ER | Addresses | 端口
 148 | 默认值<BR>必填 | 否 | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP：** 443、80
 149 | 默认值<BR>必填 | 否 | `workplaceanalytics.cdn.office.net` | **TCP：** 443、80
 150 | 默认值<BR>可选<BR>**备注：** 阻止这些终结点将影响通过门户访问 Office 365 专业增强版部署和管理功能的能力。 | 否 | `*.officeconfig.msocdn.com` | **TCP：** 443
-152 | 默认值<BR>可选<BR>**备注：** 这些终结点通过“自动”选项卡启用 Office 客户端中的 Office 脚本功能。也可以通过 Office 365 管理门户禁用此功能。 | 否 | `*.microsoftusercontent.com` | **TCP：** 443
+152 | 默认值<BR>可选<BR>**主义：** 这些终结点通过“自动”选项卡启用 Office 客户端中的 Office 脚本功能。也可以通过 Microsoft 365 管理中心禁用此功能。 | 否 | `*.microsoftusercontent.com` | **TCP：** 443
 153 | 默认值<BR>必填 | 否 | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP：** 443
 156 | 默认值<BR>必填 | 否 | `activity.windows.com` | **TCP：** 443
 157 | 默认值<BR>必填 | 否 | `ocsp.int-x3.letsencrypt.org` | **TCP：** 80

@@ -15,16 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
-ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905592"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362314"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
 下文描述了 Microsoft 365 服务在多地理位置环境中的工作方式。
+
+## <a name="administrator-experience"></a>管理员体验
+
+管理[SharePoint中心](https://admin.microsoft.com/sharepoint)左侧导航中具有"地理位置"选项卡，其中具有地理位置地图，可在其中查看和管理地理位置。 使用此页面添加或删除租户的地理位置。
 
 ## <a name="audit-log-search"></a>审核日志搜索
 
@@ -34,7 +38,11 @@ ms.locfileid: "50905592"
 
 BCS、安全存储和应用在每个附属位置都具有单独的实例，因此，SharePoint Online 管理员应从每个附属位置单独管理和配置这些服务。
 
-## <a name="ediscovery"></a>电子数据展示 
+## <a name="compliance-admin-center"></a>合规性管理中心
+
+多地理位置租户有一个中央合规中心：Microsoft 365[合规性管理中心。](https://compliance.microsoft.com/)
+
+## <a name="ediscovery"></a>电子数据展示
 
 默认情况下，电子数据展示管理员或多地理位置租户的管理员将只能在该租户的中心位置执行电子数据展示。 Office 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。 若要针对区域配置合规性安全筛选器，请参阅[配置 Office 365 多地理位置电子数据展示](multi-geo-ediscovery-configuration.md)。
 
@@ -42,7 +50,7 @@ BCS、安全存储和应用在每个附属位置都具有单独的实例，因�
 
 如果更改了用户的 PDL，则会自动转移用户的 Exchange 邮箱。 创建新邮箱时，如果没有为用户的 PDL 设置值，则会将新邮箱预配到用户的 PDL 或中心位置。
 
-## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>信息保护 (IP) 数据丢失防护 (DLP) 策略
+## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>信息保护 (DLP) 策略 (IP) 数据丢失防护
 
 可以在“安全性和合规性”中心内为 OneDrive for Business、SharePoint 和 Exchange 设置 IP DLP 策略，并根据需要将策略的适用范围设置为整个租户或适用的用户。 例如：如果你希望为附属位置中的某个用户选择策略，请选择将策略应用于特定 OneDrive，并输入用户的 OneDrive url。 有关创建 DLP 的一般指南，请参阅[数据丢失防护策略概述](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
@@ -50,21 +58,13 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 在 UI 中，无法为地理位置中的所有用户实施信息保护和数据丢失防护策略，你必须为策略选择适用的帐户，或将策略全局应用于所有帐户。
 
-## <a name="microsoft-flow"></a>Microsoft Flow
-
-为附属位置创建的流程将使用位于租户的默认地理位置中的终结点。  Microsoft Flow 不是多地理位置服务。 
-
 ## <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
 为附属位置创建的 PowerApp 将使用位于租户的中心位置中的终结点。 Microsoft PowerApps 不是多地理位置服务。 
 
-## <a name="onedrive-administrator-experience"></a>OneDrive 管理员体验
+## <a name="power-automate"></a>Power Automate
 
-[OneDrive 管理中心](https://admin.onedrive.com)的左侧导航栏中有一个“地理位置”选项卡，其中包含地理位置地图，你可在其中查看和管理地理位置。使用此页面可添加或删除租户的地理位置。
-
-## <a name="security-and-compliance-admin-center"></a>安全与合规管理中心
-
-还有一个多地理位置租户的中央合规中心：[Microsoft 365 安全与合规中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)。
+为附属位置创建的流程将使用位于租户的默认地理位置中的终结点。  Power Automate不是多地理位置服务。 
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint 存储配额
 
@@ -73,6 +73,10 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 ## <a name="sharing"></a>共享
 
 管理员可以为他们的每个位置设置和管理共享策略。 每个地理位置中的 OneDrive 和 SharePoint 站点将只遵循对应的地理位置特定共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
+
+## <a name="stream"></a>Stream
+
+上传到 Stream 的视频存储在上传OneDrive的视频中。 会议录制存储在每个OneDrive与会者的会议室中。
 
 ## <a name="taxonomy"></a>分类
 
@@ -87,23 +91,6 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 如果你有自定义配置文件属性，建议跨地区使用同一配置文件架构并在所有地理位置或所需的位置填充自定义配置文件属性。 有关如何以编程方式填充用户配置文件数据的指导，请参阅[批量用户配置文件更新 API](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)。
 
 有关附加信息及开发人员指南，请参阅[在多地理位置租户中使用用户配置文件](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)。
-
-## <a name="video-portal"></a>视频门户
-
-在多地理位置租户中，O365 视频门户仅从默认地理位置中获取服务，所有用户都将重定向到该中心门户 url。 因此，将根据你所在的中心位置使用适用于该地区的远程媒体服务 (RMS) ，如下所示。
-
-Stream 当前可在以下地区使用：
-
-- 北美地区（托管在美国） 
-- 欧洲
-- 亚太地区
-
-但是，Stream 尚不支持在以下目前支持 Microsoft 365 视频的地区中使用，因此对于这些本地实例，我们将使用最近的受支持地区中的 RMS。
-
-- 澳大利亚
-- 加拿大
-- 印度
-- 英国
 
 ## <a name="yammer"></a>Yammer
 

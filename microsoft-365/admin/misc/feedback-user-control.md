@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 7b8798847559e84a6ea10079aab010a08d8eaa42
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650051"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363927"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>了解组织的 Microsoft 反馈
 
@@ -84,13 +84,12 @@ Microsoft 使用反馈来改进 Microsoft 产品。 我们以问题、问题、�
 - **附件**   是否包含 (附件 屏幕截图，) 收集为反馈的一部分？  (是/否) 。
 - **TenantId**  如果从租户帐户提交Azure Active Directory，则 TenantId 已关联。
 
-## <a name="data-handling-and-privacy"></a>数据处理和隐私
-
-我们通过确保我们专注于核心数据处理和数据隐私原则来赢得信任。
-我们确保在 Microsoft 管理规则下存储和处理我们收到的反馈，并且只能访问它供批准使用。
-
-我们使用易于使用的工具和明确的选择控制你的隐私。 我们以透明的方式收集和使用数据，因此你可以做出有关要共享哪些数据的明智决定。 我们以强大的安全性和加密保护你委托给我们的数据。 我们尊重当地隐私法，并努力将隐私作为一项人力资源进行法律保护。 我们不会使用您的电子邮件、聊天、文件或其他个人内容来定向广告。 当我们收集数据时，我们会使用它来改善你的体验。 在此处了解有关 Microsoft 的隐私方法 [的更多信息](https://privacy.microsoft.com/)。 了解有关隐私概述 [的更多信息](/compliance/assurance/assurance-privacy)。
-
 ## <a name="how-can-i-see-my-users-feedback"></a>如何查看用户的反馈？
 
-即将推出，我们将将收集的 Microsoft 产品反馈数据分享给你。 We're working on a new experience in the Microsoft 365 admin center that let's you view， delete and export the feedback data for your organization. 这可让你直接了解用户使用产品或产品时Microsoft 365见解。
+为了履行 Microsoft 与客户的法律义务，我们正在致力于在 Microsoft 365 管理中心 中提供一种新体验，使管理员能够查看、删除和导出其组织的反馈数据。 作为其数据控制者职责的一部分，客户拥有所有用户反馈数据，此功能将帮助管理员提供其用户体验与 Microsoft 365 产品的直接透明度，并使用户能够将用户反馈数据作为任何数据主体请求的一部分提供。 全局管理员和合规性数据管理员将可以查看、导出和删除用户反馈。 所有其他管理员和读者将能够查看和导出反馈数据，但不能执行合规性相关任务或查看有关发布反馈 (如用户名、电子邮件或设备名称) 。 若要访问组织的反馈数据，请登录到 Microsoft 365 管理中心并自定义导航以显示运行状况节点。 通过在"运行状况"节点下选择 **"产品反馈** "来访问此体验。
+
+## <a name="data-handling-and-privacy"></a>数据处理和隐私
+
+我们知道，当你使用我们的云服务时，你将委托我们提供你最有价值的资产之一：你的数据。 我们确保在 Microsoft 管理规则下存储和处理我们收到的反馈，并且只能访问它供批准使用。 我们不会使用您的电子邮件、聊天、文件或其他个人内容来定向广告。 当我们收集数据时，我们会使用它来改善你的体验。
+
+若要了解有关我们如何保护你的数据的隐私和机密性，以及如何确保它仅在符合你期望的方式使用的情况下使用，请查看 Microsoft 信任中心的隐私 [原则](https://www.microsoft.com/trust-center/privacy)。

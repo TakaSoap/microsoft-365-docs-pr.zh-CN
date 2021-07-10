@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 08a0b3722bad18b2823b0ba0e5c998d570f3654e
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286029"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362578"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "53286029"
 |  (根据需要) [编辑段或策略](information-barriers-edit-segments-policies.md) | - 编辑线段<br/>- 编辑或删除策略<br/>- 重新运行策略应用程序<br/>- 查看策略状态 |
 |  (根据需要) [疑难解答](information-barriers-troubleshooting.md)| - 在未如期运行时采取措施|
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 除了所需的 [许可证和权限](information-barriers.md#required-licenses-and-permissions)之外，请确保满足以下要求：
 
@@ -83,8 +83,8 @@ ms.locfileid: "53286029"
       ```powershell
       Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
+      if ($sp -eq $null) { New-AzureADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 

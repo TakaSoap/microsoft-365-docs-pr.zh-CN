@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17fc2645f69a0d91c71c91718f321e5932d31bd2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909546"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362758"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -57,6 +57,8 @@ Microsoft 365对于租户中至少具有 250 Microsoft 365 席位且使用多地
 - Exchange Online 计划 1 或计划 2
 - OneDrive for Business 计划 1 或计划 2
 - SharePoint Online 计划 1 或计划 2
+
+如果将许可证分配给用户，但后来又将其删除，Teams聊天数据将排入队列以移回中心位置。 SharePoint和Exchange不移动数据。
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 多地理位置可用性
 

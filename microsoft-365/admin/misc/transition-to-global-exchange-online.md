@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何从德国 Microsoft 云Exchange Online全球 Exchange Online服务
-ms.openlocfilehash: 8de64e30205b07a0c20a8ae4f7cdedbf6cc6824f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93eab2c4e0ab2f841359061ebdca69967d8d7d33
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644851"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363867"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>更新 MX 记录以转换到全局 Exchange Online 服务
 
-1. 登录到管理 [Microsoft 365，](https://admin.microsoft.com)**然后转到"设置**  >  **域"**
+1. 登录到"Microsoft 365 管理中心"，然后转到 [](https://admin.microsoft.com)**"设置**  >  **域"**
 
 2. 状态将显示在每个域的右侧。 如果组织的域指向德国 Microsoft 云Exchange Online，则需要更新 MX 记录。
 

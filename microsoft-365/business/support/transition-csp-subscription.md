@@ -1,6 +1,6 @@
 ---
 title: 转换 Microsoft 365 商业版云解决方案提供商订阅
-description: 了解如何使用 GA 版本将 Microsoft 365 商业版 云解决方案提供商订阅从预览版 (通用) 。
+description: 了解如何在 GA MICROSOFT 365 中将 Microsoft 365 商业版云解决方案提供商订阅从预览版 (通用) 。
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 商业版, Microsoft 365, SMB, 转换云解决方案提供商订阅
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924995"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363811"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>转换 Microsoft 365 商业版云解决方案提供商订阅
 
@@ -36,7 +36,7 @@ ms.locfileid: "52924995"
     ![客户在合作伙伴中心的订阅](../../media/pc_customer_subscriptions_1.png)
     
 3. 在公司的"订阅 **"页面上**，选择"**添加订阅"。**
-4. 在"**新建订阅"** 页面上，选择"**小型企业**"，然后从 **Microsoft 365 商业版** 中选择"新订阅"。
+4. 在"**新建订阅"** 页面上，选择"**小型企业**"，然后从Microsoft 365 **选择"商业** 版"。
 5. 添加许可证号码，然后选择 **下一步: 审查** 以审查订阅，然后选择 **提交**。
 
     ![审查 Microsoft 365 商业版的新订阅](../../media/pc_customer_reviewnewsubscription.png)
@@ -44,20 +44,20 @@ ms.locfileid: "52924995"
     The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. 你下一步将暂停预览订阅。
 
 6. 选择 **Microsoft 365 商业版预览**。
-7. 在 **"Microsoft 365 商业版预览**"页上，选择"已 **暂停**"以暂停预览订阅。
+7. 在 **"Microsoft 365预览版"** 页上，选择"已 **暂停**"以暂停预览订阅。
 
     ![暂停 Microsoft 365 商业版预览订阅](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. 选择 **提交** 进行确认。
 
-    在"**订阅"** 页面上，确认"Microsoft 365 商业版 **预览"** 状态显示"已 **暂停"。**
+    在"**订阅"** 页面上，确认 **"Microsoft 365预览"** 状态显示"已 **暂停"。**
 
     ![确认预览订阅状态为已暂停](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 或者，你也可以验证许可协议。 要实现这一点，请执行下列步骤：
     1. 从公司的 **订阅** 页面上选择 **用户和许可证**。
     2. 在" **用户和许可证"** 页上，选择一个用户。
-    3. 在用户页面上，查看分配 **许可证部分并确认** 它显示 **Microsoft 365 商业版。**
+    3. 在用户页面上，查看分配许可证部分，并确认它显示Microsoft 365 **商业版**。
 
         ![确认 Microsoft 365 商业版许可证已分配给用户](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "52924995"
 |-------|-----------------|--------------|---------------|---------------|
 | **省/市/自治区** | 宽限期之内 | 已过期      | 已禁用      | 已取消设置 |
 | **服务影响**                                                        |
-| **Microsoft 365 商业版管理员门户** | 对功能没有影响 | 对功能没有影响 | 可添加/删除用户、购买订阅。</br> 无法分配/撤销许可证。 | 客户的订阅和所有数据已删除。 管理员可以管理其他付费的订阅。 |
+| **Microsoft 365 管理中心** | 对功能没有影响 | 对功能没有影响 | 可添加/删除用户、购买订阅。</br> 无法分配/撤销许可证。 | 客户的订阅和所有数据已删除。 管理员可以管理其他付费的订阅。 |
 | **Office 应用**                         | 不会影响最终用户 | 不会影响最终用户 | Office 进入功能减少模式。</br> 用户只能查看文件。 | Office 进入功能减少模式。</br> 用户只能查看文件。 |
 | **云服务（SharePoint Online、Exchange Online、Skype、团队等）** | 不会影响最终用户 | 不会影响最终用户 | 最终用户和管理员不能访问云中的数据。 | 客户的订阅和所有数据已删除。 |
 | **EM+S 组件** | 不会影响管理员</br> 不会影响最终用户 | 不会影响管理员</br> 不会影响最终用户 | 不再强制使用功能。</br> 请参阅[订阅到期时的移动设备影响](#mobile-device-impacts-upon-subscription-expiration)和[订阅到期时的 Windows 10 电脑影响](#windows-10-pc-impacts-upon-subscription-expiration)以了解详细信息。 | 不再强制使用功能。</br> 请参阅[订阅到期时的移动设备影响](#mobile-device-impacts-upon-subscription-expiration)和[订阅到期时的 Windows 10 电脑影响](#windows-10-pc-impacts-upon-subscription-expiration)以了解详细信息。 |

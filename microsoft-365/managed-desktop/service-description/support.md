@@ -1,5 +1,5 @@
 ---
-title: 支持Microsoft 托管桌面
+title: 管理支持
 description: 介绍主动和被动事件管理Microsoft 托管桌面。
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925499"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362470"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>支持Microsoft 托管桌面
+# <a name="admin-support"></a>管理支持
 
 Microsoft 将提供主动和被动事件管理。 Microsoft 在管理门户中Microsoft 托管桌面事件。 它们根据严重性 [定义进行分类](../working-with-managed-desktop/admin-support.md#sev)。
 
@@ -38,7 +38,7 @@ Microsoft 托管桌面支持包括：
 - Windows 10 Microsoft Defender for Endpoint
 - 这些Microsoft 365 企业应用版应用：Outlook、Word、PowerPoint、Excel、Skype for Business 客户端Microsoft Teams 
 - 适用于企业的 Microsoft Store 
-- OneDrive for Business客户端 
+- OneDrive客户端 
 
 支持详细信息：
 

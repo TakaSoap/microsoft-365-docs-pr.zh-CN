@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置环境中的 SharePoint、OneDrive 和 Exchange 用户体验。
-ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4e752581f4ca692f9fecc5019f8e34543ebf7067
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749567"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362374"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -40,15 +40,15 @@ SharePoint 中心网站增强了员工的内容发现和参与能力，同时还
 
 ## <a name="office-applications"></a>Office 应用程序
 
-Word、Excel 和 PowerPoint 等 Office 应用会在每个用户登录时，自动为用户检测正确的 OneDrive for Business 地理位置。 用户无需输入 OneDrive 或 SharePoint 网站的地理位置专用 URL。
+Office Word、Excel 和 PowerPoint 等应用程序将自动检测每个用户登录OneDrive的正确地理位置。 用户无需输入 OneDrive 或 SharePoint 网站的地理位置专用 URL。
 
-## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同步客户端
+## <a name="onedrive-sync-app"></a>OneDrive 同步应用
 
-OneDrive for Business 同步客户端（版本 17.3.6943.0625 及更高版本）将自动为用户检测正确的 OneDrive for Business 地理位置。 同步客户端支持包括同步基于组的网站（无论其地理位置如何）的能力。 请注意，多地理位置不支持 Groove 同步客户端。 
+OneDrive 同步应用 (版本 17.3.6943.0625 及更高版本) 将自动检测用户OneDrive正确的地理位置。 同步应用支持包括同步基于组的网站（无论其地理位置如何）的能力。 请注意，多地理位置不支持 Groove 同步客户端。 
 
-## <a name="onedrive-for-business-location"></a>OneDrive for Business 位置
+## <a name="onedrive-location"></a>OneDrive位置
 
-用户将在其首选数据位置预配 OneDrive for Business。如果用户导航到包含不正确的地理位置的 OneDrive URL（例如来自先前地理位置的书签），则会将其自动重定向到相应地理位置的 OneDrive。
+用户将在首选OneDrive预配其数据。 如果用户导航到包含错误地理位置 (的 OneDrive URL（如上一地理位置) 中的书签）时，他们将自动重定向到相应地理位置中的 OneDrive。
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS 和 Android 
 
@@ -62,11 +62,11 @@ OneDrive 移动客户端可感知多地理位置，并显示来自所有地理�
 
 ## <a name="search"></a>搜索
 
-每个地理位置都有其自己的搜索索引和搜索中心。当用户搜索时，查询将发送到所有地理位置，并将返回的结果合并，然后进行排名，以便用户获得统一的结果。用户将获取来自所有地理位置的结果，而不管他们自己的地理位置如何。有关详情，请参阅[配置 OneDrive for Business 多地理位置的搜索](configure-search-for-multi-geo.md)。
+每个地理位置都有自己的搜索索引和搜索中心。 当用户搜索时，查询将发送到所有地理位置，并合并返回的结果，然后进行排名，以便用户获得统一的结果。 用户从所有地理位置获取结果，而不考虑自己的地理位置。 请参阅[配置搜索OneDrive Multi-Geo](configure-search-for-multi-geo.md)了解具体信息。
 
 支持下列搜索客户端：
 
--   OneDrive for Business
+-   OneDrive
 
 -   Delve
 
@@ -78,7 +78,7 @@ OneDrive 移动客户端可感知多地理位置，并显示来自所有地理�
 
 ## <a name="sharepoint-home"></a>SharePoint 主页 
 
-在 SharePoint 多地理位置中，SharePoint 主页托管在用户的驻留位置中，具体取决于 OneDrive for Business 位置。 例如，如果用户在欧洲附属位置中托管 OneDrive，SharePoint 主页将从欧洲呈现。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
+此外SharePoint Multi-Geo你的SharePoint托管在用户驻留的位置，由用户所在的位置OneDrive位置。 例如，如果用户在欧洲附属位置中托管 OneDrive，SharePoint 主页将从欧洲呈现。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
 
 **关注的网站、网站新闻、最近访问的网站、经常访问的网站和推荐网站**
 
@@ -94,11 +94,11 @@ SharePoint 移动客户端可感知多地理位置，并显示来自所有地理
 
 ## <a name="sharing"></a>共享
 
-“人员选取器”体验面向所有用户，无论他们的地理位置如何。 这样，一个用户可以与同一地理位置或租户内其他任何地理位置中的其他用户共享。 来自不同地理位置的内容会显示在用户 OneDrive for Business 的“与我共享的内容”视图中，并且可以通过单一登录体验进行访问，无论托管地理位置如何。
+“人员选取器”体验面向所有用户，无论他们的地理位置如何。 这样，一个用户可以与同一地理位置或租户内其他任何地理位置中的其他用户共享。 来自不同地理位置的内容将在用户的 OneDrive 的"共享我"视图中显示，并且可以使用单一 Sign-On 体验访问，而不管它托管在哪个地理位置。
 
 ## <a name="teams-experience"></a>Teams 体验
 
-团队可感知多地理位置。 用户可看到 OneDrive 文件和最近查看的文件，无论他们的地理位置如何。 “@提及”适用于所有地理位置中的用户。
+Teams是一项多地理位置服务。 用户可看到 OneDrive 文件和最近查看的文件，无论他们的地理位置如何。 “@提及”适用于所有地理位置中的用户。
 
 ## <a name="user-profiles"></a>用户个人资料
 

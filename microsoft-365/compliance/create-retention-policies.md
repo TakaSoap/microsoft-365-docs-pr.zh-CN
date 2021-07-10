@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256527"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362326"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -75,7 +75,7 @@ ms.locfileid: "53256527"
     - **Teams 聊天**: 来自私人 1:1 聊天、群组聊天和会议聊天的消息。
     - **Teams 专用频道消息**: 来自私人频道聊天和私人频道会议的消息。 此选项当前以预览版推出，如果未显示，请在几天后重试。
     
-   默认情况下，[所有团队和所有用户](#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“**选择**”和“**排除**” 选项](#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。 但是，在更改默认设置之前，请注意保留策略在配置为包含或排除邮件时删除邮件的下列影响：
+   默认情况下，[选择所有团队和所有用户](#a-policy-that-applies-to-entire-locations)，但你可以通过选择“**编辑**”选项来优化此设置，以为 [特定包含项或排除项](#a-policy-with-specific-inclusions-or-exclusions) 配置保留策略。 但是，在更改默认设置之前，请注意保留策略在配置为包含或排除邮件时删除邮件的下列影响：
     
     - 对于群组聊天信息和私人频道信息，由于信息的副本保存在每个参加聊天的用户的邮箱中，所以在 eDiscovery 结果中会继续返回未分配策略用户的信息副本。
     - 对于未分配策略的用户，已删除的邮件将返回其 Teams 搜索结果中，但不会显示邮件内容，因为从分配给用户的策略被永久删除。
@@ -94,9 +94,9 @@ ms.locfileid: "53256527"
 
 - 虽然可以选择从上次修改项目时开始保留期的选项，但始终使用 **从项目创建时** 的值。 对于已编辑的邮件，将保存一份带有原始时间戳的原始邮件副本，以标识创建此预编辑邮件的时间，并且该编辑后邮件具有较新的时间戳。
 
-- 为“**Teams 频道消息**”位置选择“**选择团队**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
+- 为 **Teams 频道消息** 位置选择“**编辑**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
 
-- 在选择“**为 Teams 聊天选择用户**”位置时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计，因此请不要选择他们。
+- 在为 Teams 聊天位置选择“**编辑**”时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计，因此请不要选择他们。
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支持团队所需的其他保留策略
@@ -125,17 +125,22 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 2. 选择 **新保留策略** 创建新的保留策略。
 
-3. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。 
+3. 对于 **选择位置以应用策略** 页面，请切换 Yammer 的一个或两个位置：**Yammer 社区邮件**，**Yammer 用户邮件**。
     
-    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
-
-4. 有关 **选择位置** 的页面，请选择 **“让我选择特定位置”**。 然后切换到 Yammer 的一个或两个位置：**Yammer 社区消息** 和 **Yammer 用户消息**。
+    > [!IMPORTANT]
+    > 虽然可以创建仅限于 Yammer 用户邮件的保留策略，但此位置的保留策略可以从 Yammer 应用中删除所有社区成员的社区邮件。
+    > 
+    > 如果选择此选项，并且保留策略将配置为删除用户邮件，请确保你已了解这一含义。 有关详细信息，请参阅 [Yammer 如何使用保留](retention-policies-yammer.md#how-retention-works-with-yammer)。
     
     默认情况下，将选中所有社区和用户，但你可以通过指定要包括或排除的社区和用户来优化此设置。
     
     对于 Yammer 用户消息： 
     - 如果你保留 **“所有”** 默认值，则不包含 Azure B2B 来宾用户。 
-    - 如果使用 **“选择用户”** 并指定其帐户，则可以向外部用户应用保留策略。
+    - 如果为 **包含** 列选择“**编辑**”，则可以向外部用户应用保留策略（如果你知道其帐户）。
+
+4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。 
+    
+    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
 
 5. 完成向导以保存设置。
 
@@ -167,7 +172,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 2. 选择“**新保留策略**”来开始“创建保留策略向导”，并命名新的保留策略。
 
-3. 在“**选择位置**”页面，切换打开或关闭除 Teams 位置之外的任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](#a-policy-with-specific-inclusions-or-exclusions)”。
+3. 在“**选择位置以应用策略**”页面，切换打开或关闭除 Teams 位置之外的任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](#a-policy-with-specific-inclusions-or-exclusions)”。
 
     特定于位置的信息：
     - [交换电子邮件和交换公共文件夹](#configuration-information-for-exchange-email-and-exchange-public-folders)

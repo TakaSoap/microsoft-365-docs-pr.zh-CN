@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 查找有关将OneDrive移动到其他地理位置的信息，包括如何计划站点移动和向用户传达预期。
-ms.openlocfilehash: 59b3fb47fd195967e7af056c7a71fb4e736471d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9e75c8e4102f82d4ab6e0f99ea26e1c0ad8b4bab
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687563"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362242"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>将 OneDrive 站点移动到其他地理位置 
 
@@ -28,7 +28,7 @@ ms.locfileid: "46687563"
 
 服务OneDrive Azure Blob 存储存储内容。 与存储关联的 OneDrive blob 将在目标地理位置可供用户使用的 40 天内OneDrive目标地理位置。 一旦目标 OneDrive可用，将恢复OneDrive访问权限。
 
-在 OneDrive 异地移动窗口期间（约 2-6 小时），用户的 OneDrive 将被设置为只读。用户仍可通过 OneDrive 同步客户端访问其文件或访问其在 SharePoint Online 中的 OneDrive 站点。OneDrive 异地移动完成后，当用户导航到 Microsoft 365 应用启动器中的 OneDrive 时，将被自动连接到他们在目标地理位置中的 OneDrive。同步客户端将自动从新位置开始同步。
+在OneDrive移动窗口 (大约 2-6) 用户的移动OneDrive设置为只读。 用户仍可通过 OneDrive 同步 应用或 OneDrive Online SharePoint文件。 完成OneDrive移动后，当用户导航到 Microsoft 365 应用启动器中的 OneDrive 时，他们将自动连接到目标地理位置的 OneDrive。 同步应用将自动从新位置开始同步。
 
 执行本文中的步骤需要安装 [Microsoft SharePoint Online PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=35588)。
 
@@ -123,8 +123,8 @@ ms.locfileid: "46687563"
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>状态</strong></th>
-<th align="left"><strong>说明</strong></th>
+<th align="left">状态</th>
+<th align="left">说明</th>
 </tr>
 </thead>
 <tbody>
@@ -161,7 +161,7 @@ ms.locfileid: "46687563"
 
 在用户的 OneDrive 被移动到其他地理位置时，OneDrive 用户应会注意到最小的中断。除了在移动期间的简要只读状态以外，一旦移动完成，现有链接和权限即可继续按预期运行。
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="users-onedrive"></a>用户的 OneDrive
 
 进行移动时，用户的OneDrive设置为只读。 移动完成后，当用户导航到 OneDrive 应用启动器或 Web 浏览器时，OneDrive Microsoft 365定向到其新地理位置中的用户。
 
@@ -169,11 +169,11 @@ ms.locfileid: "46687563"
 
 在移动过程中OneDrive内容完成后，有权访问内容的用户将继续具有该内容的访问权限。
 
-### <a name="onedrive-sync-client"></a>OneDrive 同步客户端 
+### <a name="onedrive-sync-app"></a>OneDrive 同步应用 
 
-OneDrive 异地移动完成后，OneDrive 同步客户端将自动检测同步并将其无缝转移到新的 OneDrive 位置。用户无需重新登录或执行任何其他操作。（需要 17.3.6943.0625 版或更高版本同步客户端。）
+一OneDrive 同步异地移动完成后，OneDrive应用将自动检测同步并无缝OneDrive转移到新位置。 用户无需再次登录或执行任何其他操作。   (需要同步应用的版本 17.3.6943.0625 或) 
 
-如果用户在 OneDrive 异地移动进行时更新文件，则同步客户端将告知用户“在移动过程中，文件上传处于待定状态”。
+如果用户在进行异地移动OneDrive更新文件，同步应用将通知他们文件上传在移动进行期间挂起。
 
 ### <a name="sharing-links"></a>共享链接 
 
@@ -193,7 +193,7 @@ OneDrive 异地移动完成后，OneNote win32 客户端和 UWP（通用）应�
 
 在 OneDrive 异地移动完成后，用户将可以访问其在 Teams 应用上的 OneDrive 文件。此外，在异地移动前通过 Teams 聊天从其 OneDrive 中共享的文件将可在移动完成后继续使用。
 
-### <a name="onedrive-for-business-mobile-app-ios"></a>OneDrive for Business 移动应用 (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive移动应用 (iOS)  
 
 在 OneDrive 异地移动完成后，用户需要在 iOS 移动应用上注销并重新登录，以同步到新的 OneDrive 位置。
 

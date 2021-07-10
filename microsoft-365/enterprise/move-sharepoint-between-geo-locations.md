@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何将网站SharePoint多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910926"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362350"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -28,7 +28,7 @@ ms.locfileid: "50910926"
 
 可在地理位置之间移动以下类型的站点：
 
-- Microsoft 365 组连接的站点
+- Microsoft 365与组连接的站点，包括与组关联的Microsoft Teams
 - 没有 Microsoft 365 组关联的新式站点
 - 经典 SharePoint 站点
 - 通信站点
@@ -177,11 +177,11 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 在移动进行时和完成后，有权访问站点的用户将仍然能够继续访问站点。
 
-### <a name="sync-client"></a>同步客户端
+### <a name="sync-app"></a>同步应用
 
-站点移动完成后，同步客户端将自动检测并将同步无缝转移到新站点位置。 用户无需再次登录或进行其他操作。 （需要同步客户端版本 17.3.6943.0625 或更高版本。）
+站点移动完成后，同步应用将自动检测同步并无缝转移到新站点位置。 用户无需再次登录或进行其他操作。  (需要同步应用的版本 17.3.6943.0625 或) 
 
-如果用户在移动进行时更新文件，则同步客户端将告知用户“在移动过程中，文件上传处于待定状态”。
+如果用户在移动进行时更新文件，同步应用将通知他们在移动进行时文件上载挂起。
 
 ### <a name="sharing-links"></a>共享链接
 

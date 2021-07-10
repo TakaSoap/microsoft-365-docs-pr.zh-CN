@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 在策略中创建Microsoft 365 合规中心策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 02b5727f0c844fa6b825b4c0c032ea6c2633d6df
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341064"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363987"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>警报策略Microsoft 365 合规中心
 
@@ -62,6 +62,9 @@ ms.locfileid: "53341064"
 转到 ， <https://compliance.microsoft.com> 然后选择策略  >  **警报**  >  **警报策略**。 或者，你可以直接转到 <https://compliance.microsoft.com/alertpolicies> 。
 
 ![在合规中心内，选择"策略"，在"警报"下，选择"警报策略"以查看和创建警报策略](../media/LaunchAlertPoliciesMCC.png)
+
+> [!NOTE]
+> 您必须分配有"管理View-Only"角色，以查看警报策略Microsoft 365 合规中心。 您必须分配有"管理警报"角色，以创建和编辑警报策略。 有关详细信息，请参阅 [安全与合规中心中的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 警报策略由以下设置和条件组成。
 
@@ -112,7 +115,7 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 
 该表还指明了Office 365 企业版一Office 365美国政府计划所需的计划。 如果您的组织具有除 E1/F1/G1 或 E3/F3/G3 订阅之外的适当附加订阅，则某些默认警报策略可用。
 
-| 默认警报策略 | 说明 | Category | Enterprise订阅 |
+| 默认警报策略 | 说明 | 类别 | Enterprise订阅 |
 |:-----|:-----|:-----|:-----|
 |**检测到潜在恶意 URL 单击**|当用户在组织中单击恶意链接保险箱[链接](../security/office-365-security/safe-links.md)时，生成警报。 当 Microsoft Defender 为 Office 365 标识 URL 裁定更改时，或当用户根据组织的 Microsoft 365 for Business 保险箱 链接策略) 替代 保险箱 链接页面 (时，将触发此事件。 此警报策略具有 **"高** 严重性"设置。 For Defender for Office 365 P2， E5， G5 customers， this alert automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). 有关触发此警报的事件详细信息，请参阅设置链接保险箱[策略](../security/office-365-security/set-up-safe-links-policies.md)。|威胁管理|适用于 P2 附加Office 365订阅的 E5/G5 或 Defender|
 |**管理员提交结果已完成**|当管理员提交完成已 [提交](../security/office-365-security/admin-submission.md) 实体的重新扫描时，生成警报。 每次从管理员提交呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒你查看以前的提交结果[](https://compliance.microsoft.com/reportsubmission)、提交用户报告的邮件以获得最新的策略检查和重新扫描裁定，以及帮助你确定你的组织中筛选策略是否具有预期的影响。 此策略具有 **信息** 严重性设置。|威胁管理|E1/F1、E3/F3 或 E5|
