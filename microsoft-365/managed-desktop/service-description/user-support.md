@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362646"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363763"
 ---
 # <a name="user-support"></a>用户支持
 
@@ -83,7 +83,7 @@ IT 管理员负责以下各项：
 
 ### <a name="elevation-portal"></a>提升门户 
 
-由于Microsoft 托管桌面在标准用户上运行，因此某些任务需要提升权限。  (有关用户帐户控制详细信息，请参阅用户帐户控制[) ](/windows/security/identity-protection/user-account-control/user-account-control-overview)为了使支持人员能够在排查用户问题时执行任务，我们提供对管理员帐户的"[](../working-with-managed-desktop/end-user-support.md#elevation-requests)实时"访问权限。 此密码仅由指定的用户安全访问，每几小时轮换一次。  
+由于Microsoft 托管桌面在标准用户上运行，因此某些任务需要提升权限。 有关用户帐户控制详细信息，请参阅 [用户帐户控制](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 为了使支持人员能够在排查用户问题时执行任务[](../working-with-managed-desktop/end-user-support.md#elevation-requests)，我们提供对管理员帐户的"实时"访问权限。 此密码仅由指定的用户安全访问，每几小时轮换一次。  
 
 若要了解如何设置用户以访问此门户，请参阅启用 [用户支持功能](../get-started/enable-support.md)。
 

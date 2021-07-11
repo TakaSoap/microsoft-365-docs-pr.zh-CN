@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841362"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362613"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -25,7 +25,6 @@ Microsoft 托管桌面是一种基于云的服务，可将 [Microsoft 365 企业
 - 用户设备部署
 - IT 服务管理和运营
 - 安全监视和响应
-- 用户支持
 
 Microsoft 托管桌面提供了一种解决方案，可解决企业及其人员目前面临的多种挑战：
 - 向软件即服务的灵活世界过渡是一个令人望而生畏的过程。

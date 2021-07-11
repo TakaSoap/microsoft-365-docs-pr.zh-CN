@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362314"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363939"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -72,15 +72,15 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 ## <a name="sharing"></a>共享
 
-管理员可以为他们的每个位置设置和管理共享策略。 每个地理位置中的 OneDrive 和 SharePoint 站点将只遵循对应的地理位置特定共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
+管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive中的SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
 
 ## <a name="stream"></a>Stream
 
-上传到 Stream 的视频存储在上传OneDrive的视频中。 会议录制存储在每个OneDrive与会者的会议室中。
+在一对一聊天中上传到 Stream 的视频存储在OneDrive用户的视频中。 会议录制存储在每个OneDrive与会者的会议室中。
 
 ## <a name="taxonomy"></a>分类
 
-我们支持跨地理位置为企业托管的元数据使用统一[分类](/sharepoint/managed-metadata)，并将主分类托管在公司的中心位置中。 我们建议你通过中心位置管理全局分类，并仅向附属位置分类中添加特定于位置的术语。 全局分类术语将同步到附属位置。
+我们支持跨 [地理位置的企业](/sharepoint/managed-metadata) 托管元数据的统一分类，主机托管在公司的中心位置。 我们建议你通过中心位置管理全局分类，并仅向附属位置分类中添加特定于位置的术语。 全局分类术语将同步到附属位置。
 
 有关附加详细信息及开发人员指南，请参阅[管理多地理位置租户中的元数据](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)。
 

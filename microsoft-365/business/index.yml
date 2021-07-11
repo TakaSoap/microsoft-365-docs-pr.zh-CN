@@ -27,10 +27,10 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Microsoft 365 商业高级版中现已提供防病毒管理和通用打印功能。
       url: 'https://aka.ms/M365BPQ1Update'
-    - title: 加入合作伙伴网络研讨会系列
+    - title: 7 月 28 日加入 Microsoft 365 Lighthouse 合作伙伴网络研讨会
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 通过 Microsoft 365 商业高级版托管服务，加快业务增长。
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: 使用 Microsoft 365 Lighthouse 保护和标准化 Microsoft 365 高级客户。
+      url: 'https://aka.ms/m365lighthousewebinar'
 conceptualContent:
   items:
     - title: 什么是 Microsoft 365 商业高级版？
