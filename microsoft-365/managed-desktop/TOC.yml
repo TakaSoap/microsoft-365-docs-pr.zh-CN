@@ -41,8 +41,10 @@
           href: service-description/privacy-personal-data.md
         - name: 更新
           href: service-description/updates.md
-        - name: 支持
+        - name: 管理支持
           href: service-description/support.md
+        - name: 用户支持
+          href: service-description/user-support.md
         - name: 操作和监视
           href: service-description/operations-and-monitoring.md
         - name: 诊断日志
@@ -115,6 +117,8 @@
                   href: get-started/register-devices-partner.md
             - name: 自行注册现有设备
               href: get-started/register-reused-devices-self.md
+        - name: 启用用户支持功能
+          href: get-started/enable-support.md
         - name: 让用户做好使用设备的准备
           href: get-started/get-started-devices.md
         - name: 使用 Autopilot 和注册状态页的首次运行体验
