@@ -174,6 +174,7 @@
 #### [常规]()
 ##### [验证数据存储位置并更新数据保留设置](data-retention-settings.md)
 ##### [配置警报通知](configure-email-notifications.md)
+##### [配置漏洞电子邮件通知](configure-vulnerability-email-notifications.md)
 ##### [配置高级功能](advanced-features.md)
 
 #### [权限]()
