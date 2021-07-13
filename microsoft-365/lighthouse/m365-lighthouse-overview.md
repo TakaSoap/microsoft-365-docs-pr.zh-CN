@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse如何在一个位置保护和管理客户租户。
-ms.openlocfilehash: a8af12e2fecade0b78f95f1d38bda34f7934ccd6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395075"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409028"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概述Microsoft 365 Lighthouse
 
@@ -42,7 +42,7 @@ Microsoft 365 Lighthouse SMB 客户定制的安全配置基线，并跨所有客
 有关云解决方案提供商计划详细信息，请参阅云解决方案提供商[计划概述](/partner-center/csp-overview)。
 
 > [!NOTE]  
-> 类似产品 Azure Lighthouse 通过使用内置于 Azure 平台的全面而稳固的管理工具，帮助服务提供商为 Azure 服务提供托管服务。 若要了解更多信息，请参阅什么是 [Azure Lighthouse？](/azure/lighthouse/overview)   
+> 类似产品 Azure Lighthouse 通过使用内置于 Azure 平台的全面而稳固的管理工具，帮助服务提供商为 Azure 服务提供托管服务。 若要了解更多信息，请参阅 [什么是 Azure Lighthouse？](/azure/lighthouse/overview)   
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse好处
 

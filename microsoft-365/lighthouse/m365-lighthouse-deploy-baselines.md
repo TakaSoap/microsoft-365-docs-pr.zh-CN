@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
-ms.openlocfilehash: 0bda7edec2a200e51e734db64e2b703a027e57bb
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f329993443b4bd3003a3e8460d77f9b73ac10fc6
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395076"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409100"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>部署Microsoft 365 Lighthouse基线 
 
@@ -61,5 +61,5 @@ Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以�
 
 ## <a name="related-content"></a>相关内容
 
-[使用基线部署标准租户配置的](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) 概述 (文章) \
+[使用基线部署标准租户配置的](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) 概述 (文章) \
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) 
