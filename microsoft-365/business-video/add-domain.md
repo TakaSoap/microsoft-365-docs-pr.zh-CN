@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 你的组织可能需要多个域，以便客户可以找到你。 了解如何将另一个域添加到订阅。
-ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 766d0f6c1e3c68a262bc01ba432e042f0d274ce8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706426"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394841"
 ---
 # <a name="add-another-domain"></a>添加其他域
 
@@ -36,7 +37,7 @@ ms.locfileid: "52706426"
 
 ## <a name="try-it"></a>试一试！
 
-1. In the Microsoft 365 admin center， choose **Setup**.
+1. In the Microsoft 365 管理中心， choose **Setup**.
 1. 在 **"设置自定义域"下，选择**"查看 **"。**
 1. 选择 **"管理**"，然后选择"**添加域"。**
 1. 输入要添加的新域名，然后选择"下一步 **"。**

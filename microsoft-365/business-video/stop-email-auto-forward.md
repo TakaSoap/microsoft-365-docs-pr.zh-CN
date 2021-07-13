@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何通过创建邮件流规则来停止自动转发电子邮件，以避免窃取专有信息。
-ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 23b1afa7a851c0b00fb9fca574ca0bb32057ea42
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706470"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394793"
 ---
 # <a name="stop-email-auto-forward"></a>停止电子邮件自动转发
 
@@ -38,7 +39,7 @@ ms.locfileid: "52706470"
 
 ## <a name="try-it"></a>试一试！
 
-1. 从Microsoft 365管理中心，选择"Exchange、邮件流"，在"规则"选项卡上，选择加号并选择"**创建新规则"。** 
+1. From the Microsoft 365 管理中心， select **Exchange**， **mail flow**， and on the **rules** tab， select the plus sign and choose create a **new rule**.
 1. 选择“其他选项”。 命名新规则。
 1. 然后打开下拉以应用此规则 **if**，选择发件人 **，然后****是外部内部**。
 1. 选择 **"组织内部"，** 然后选择"确定 **"。**

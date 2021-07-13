@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: GEA150
-description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业版应用。
+description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950043"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394865"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 
-Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版Microsoft 365 商业高级版或Microsoft 365 商业版应用试用 30 天。
+Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
 
 > [!NOTE]
 > 注册免费试用版时，必须使用信用卡。 在免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
@@ -43,13 +44,13 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
-你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业版应用。
+你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业应用版。
 
 1. 转到<a href="https://www.aka.ms/office365signup" target="_blank">"Microsoft 365产品"网站</a>。
 2. 选择要注册的计划，例如"Microsoft 365 商业标准版"，**向下滚动** 页面，然后选择"免费试用 **1 个月"。**

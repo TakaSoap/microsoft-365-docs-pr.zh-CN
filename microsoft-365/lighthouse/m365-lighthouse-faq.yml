@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
+  f1.keywords: NOCSH
+  ms.author: sharik
+  author: SKjerland
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.prod: microsoft-365-lighthouse
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - AdminSurgePortfolio
+  - M365-Lighthouse
+  search.appverid: MET150
+  description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，请获取有关 (常见问题解答) 常见问题Microsoft 365 Lighthouse。
+  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
+  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "53395010"
+title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
+summary: >
+  > [!NOTE]
+
+  > 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+
+
+  本文包含常见问题解答 (常见问题解答) Microsoft 365 Lighthouse。
+
+
+  如果找不到问题的答案，请留下评论告诉我们，我们会将其添加到本文中。
+sections:
+- name: 已忽略
+  questions:
+  - question: 什么是Microsoft 365 Lighthouse？
+    answer: >
+      Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。  Microsoft 365 Lighthouse SMB 定制的安全配置基线，并跨所有客户环境提供多租户视图，从而简化了租户载入。 有关详细信息，请参阅[概述Microsoft 365 Lighthouse。](m365-lighthouse-overview.md)
+  - question: Microsoft 365 Lighthouse和 Azure Lighthouse 之间有什么区别？
+    answer: >
+      Microsoft 365 Lighthouse侧重于Microsoft 365服务，而不是 Azure 服务。 Azure Lighthouse 内置于 Azure 门户中，并允许 IT 合作伙伴管理 Azure 的多个租户，Microsoft 365 Lighthouse 是一个独立的门户，可帮助 MSP 管理多个Microsoft 365 商业高级版租户。 有关此Microsoft 365 Lighthouse，请参阅[概述Microsoft 365 Lighthouse。](m365-lighthouse-overview.md) 有关 Azure Lighthouse 的信息，请参阅 [什么是 Azure Lighthouse？](/azure/lighthouse/overview)
+  - question: 需要多少Microsoft 365 Lighthouse？
+    answer: >
+      使用预览版管理 Microsoft 365 Lighthouse 服务Microsoft 365 商业高级版连接的设备不会增加任何成本。 Microsoft 365 Lighthouse预览版，适用于为中小型企业提供服务且与客户云解决方案提供商 (CSP) 的 MSP。 请注意，间接提供商当前不受 Microsoft 365 Lighthouse。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 使用解决方案需要满足哪些Microsoft 365 Lighthouse？
+    answer: >
+      有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 如何注册Microsoft 365 Lighthouse？
+    answer: >
+      若要注册Microsoft 365 Lighthouse，你需要向云解决方案提供商计划注册。 我们当前无法支持间接提供商。 有关如何注册的说明，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md) 若要详细了解云解决方案提供商计划，请参阅云解决方案提供商[计划概述](/partner-center/csp-overview)。
+  - question: 我已完成注册，为什么我看不到任何客户租户数据？
+    answer: >
+      客户租户数据最多可能需要 48 小时才能在 Microsoft 365 Lighthouse。 如果载入时间已过 48 小时，请联系我们的支持团队寻求帮助。 完成载入后，需要让他们知道，并提供所有相关的屏幕截图和日志。 有关详细信息，请参阅获取对 Microsoft 365 Lighthouse[的帮助和支持](m365-lighthouse-get-help-and-support.md)。
+  - question: 为什么我会看到某些客户租户的数据，而不是其他租户的数据？
+    answer: >
+      若要使客户租户数据显示在Microsoft 365 Lighthouse中，合作伙伴必须通过合作伙伴中心 (DAP) 委派管理员权限。 有关详细信息，请参阅在合作伙伴 [中心中请求与客户建立经销商关系](/partner-center/request-a-relationship-with-a-customer)。 租户还必须至少拥有一个 Microsoft 365 商业高级版 订阅，并且其租户中拥有的许可用户数少于 500。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 如果你不想在租户中查看某些租户Microsoft 365 Lighthouse？
+    answer: >
+      如果不想在租户中查看某些租户及其Microsoft 365 Lighthouse，可以停用这些租户。 若要停用租户，请按照以下步骤操作：
+
+
+      1. 从 **左侧导航** 窗格中选择"租户"以打开 **"租户"** 页面。
+
+      1. 找到要停用的租户，选择租户名称旁边的三个点，然后选择"**停用租户"。**
+
+      1. 在出现的确认消息中，选择 **"确认** "停用租户。
+          > [!NOTE]
+          > 停用租户后，在停用完成之前，无法对租户采取措施。 停用可能需要 48 小时才能完成。
+
+      若要了解有关租户的更多信息，请参阅Microsoft 365 Lighthouse[租户列表概述](m365-lighthouse-tenant-list-overview.md)。
+  - question: 如果我Microsoft 365 Lighthouse租户拥有除客户租户之外的其他订阅，Microsoft 365 商业高级版？
+    answer: Microsoft 365 Lighthouse管理具有针对其用户Microsoft 365 商业高级版许可证的客户租户。 对于没有商业版许可证的客户租户高级版，Microsoft 365 Lighthouse功能将受到限制。 例如，如果用户缺少包含 Intune 的许可证，该用户的设备、设备符合性状态和威胁状态将不可用;如果用户缺少包含 Azure AD P1 的许可证，该用户的密码和登录管理将不可用。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。

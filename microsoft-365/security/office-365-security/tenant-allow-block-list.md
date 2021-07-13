@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: dbd4694a7442b3898d24304dc78fc95c28c9a905
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985488"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394949"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -40,7 +40,7 @@ ms.locfileid: "52985488"
 
 在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
 
-租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动覆盖筛选裁定Microsoft 365的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 可以指定以下类型的替代：
+租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动覆盖筛选裁定Microsoft 365的方法。 租户允许/阻止列表在传入邮件的邮件流期间 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
@@ -101,7 +101,7 @@ ms.locfileid: "52985488"
    - **永不过期**：执行下列步骤之一：
      - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-       或者
+       或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
    - **可选说明**：输入条目的描述性文本。
@@ -119,7 +119,7 @@ ms.locfileid: "52985488"
    - **永不过期**：执行下列步骤之一：
      - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-     或者
+     或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
    - **可选说明**：输入条目的描述性文本。
@@ -128,7 +128,7 @@ ms.locfileid: "52985488"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>使用Microsoft 365 Defender门户在租户允许/阻止列表中创建允许或阻止欺骗发件人条目
 
-**注意**：
+**注意**:
 
 - 仅 _明确_ 允许或阻止欺骗用户和域对中定义的发送基础结构的组合。
 - 为域对配置允许或阻止条目时，来自该域对的邮件将不再显示在欺骗智能见解中。
@@ -217,7 +217,7 @@ ms.locfileid: "52985488"
      - **可选注释**
    - **网络钓鱼**
      - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
-4. 完成时，请单击“保存”。
+4. 完成后，单击“**保存**”。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>使用Microsoft 365 Defender门户从租户允许/阻止列表中删除条目
 

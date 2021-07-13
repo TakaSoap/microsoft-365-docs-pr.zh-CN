@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 8/10/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用此报告来优化 DLP 策略中组织 (数据丢失) 防护。
-ms.openlocfilehash: 4530e570f0ce593a7d2cb62acc28dfa4e1658df0
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 98f2a95d66860695034fa958969d1c195e9d58be
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114080"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408956"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>开始使用默认 DLP 策略
 
@@ -42,7 +42,7 @@ ms.locfileid: "52114080"
   
 为了帮助保护敏感信息，默认 DLP 策略：
   
-- 检测何时与组织外部人员共享包含至少一个信用卡号的 Exchange、SharePoint 和 OneDrive 中的内容。
+- 检测何时Exchange、SharePoint OneDrive包含至少一个信用卡号的内容与组织外部人员共享。
     
 - 显示策略提示，当用户尝试与组织外部人员共享此敏感信息时，会向用户发送电子邮件通知。 有关这些选项的详细信息，请参阅发送电子邮件 [通知和显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)。
     
@@ -60,7 +60,7 @@ ms.locfileid: "52114080"
   
 如果您想稍后更改这些选项，您随时都可以编辑默认 DLP 策略，请参阅下一节。
   
-![名为"进一步保护共享内容"的小部件的设置](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![设置进一步保护共享内容的小部件](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>编辑默认 DLP 策略
 
@@ -76,7 +76,7 @@ ms.locfileid: "52114080"
   
 此小组件仅在：
   
-- 安全与合规中心或 Exchange 管理中心 &amp; 中没有任何数据丢失防护策略。 此小组件旨在帮助您开始使用 DLP，因此如果您已经拥有 DLP 策略，它不会出现。
+- 安全与合规中心或管理中心内没有数据丢失 &amp; Exchange策略。 此小组件旨在帮助您开始使用 DLP，因此如果您已经拥有 DLP 策略，它不会出现。
     
 - 在过去 30 天内，包含至少一张信用卡的内容已与组织外部的某人共享。
     

@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何使用传递池来保护数据中心中电子邮件Microsoft 365信誉。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137711"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409136"
 ---
 # <a name="outbound-delivery-pools"></a>出站传递池
 
@@ -82,3 +82,6 @@ Microsoft 365需要验证原始发件人是否合法，以便我们可以放心�
 若要使 DKIM 正常工作，请确保为发送域启用 DKIM。 例如，fabrikam.com 是 contoso.com 的一部分，在组织的接受域中定义。 如果邮件发件人 sender@fabrikam.com，需要为邮件发件人启用 DKIM fabrikam.com。 可以在使用 DKIM 验证从自定义域发送的出站电子邮件中阅读如何[启用。](use-dkim-to-validate-outbound-email.md)
 
 若要添加自定义域，请按照将域添加到域[Microsoft 365。](../../admin/setup/add-domain.md)
+
+如果域的 MX 记录指向第三方服务或本地电子邮件服务器，则应该使用增强的 [连接器筛选](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 增强的筛选可确保 SPF 验证对入站邮件正确无误，并避免通过中继池发送电子邮件。
+

@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 835195f0c35ada409ef632b2dbfa1b6de0291351
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339680"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409148"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -68,8 +68,8 @@ EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏�
 
 3. 在阻止 **EDR启用" "。**
 
-> [!NOTE]
-> EDR在阻止模式下的启用状态只能在 Microsoft 365 Defender 门户中打开。 不能使用注册表项、Intune 或组策略启用或禁用EDR阻止模式。
+   > [!NOTE]
+   > EDR在阻止模式下的启用状态只能在 Microsoft 365 Defender 门户中打开。 不能使用注册表项、Intune 或组策略启用或禁用EDR阻止模式。
 
 ## <a name="requirements-for-edr-in-block-mode"></a>阻止模式下EDR应用的要求
 
@@ -77,7 +77,7 @@ EDR模式中的用户还集成了[威胁](next-gen-threat-and-vuln-mgt.md)& 漏�
 |---------|---------|
 |权限 |全局管理员或安全管理员角色在 Azure Active Directory 中[分配](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。 请参阅 [基本权限](basic-permissions.md)。 |
 |操作系统     |以下版本之一： <br/>- Windows 10 (所有)  <br/>- Windows Server 版本 1803 或更高版本 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (仅在Microsoft Defender 防病毒处于活动状态时)      |
-|WindowsE5 注册     |WindowsE5 包含在以下订阅中： <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 Identity &威胁防护产品一起 <br/><br/>请参阅[每个](/microsoft-365/enterprise/microsoft-365-overview#components)[计划的组件和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。       |
+|WindowsE5 注册     |WindowsE5 包含在以下订阅中： <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3加载项Microsoft 365 E5 安全性一起 <br/><br/>请参阅[每个](/microsoft-365/enterprise/microsoft-365-overview#components)[计划的组件和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。       |
 |Microsoft Defender 防病毒  |Microsoft Defender 防病毒在主动模式或被动模式下安装和运行。  (可以一Microsoft Defender 防病毒 Microsoft 防病毒解决方案一起使用。) [确认Microsoft Defender 防病毒处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
 |云端保护 |请确保Microsoft Defender 防病毒配置云保护，以[启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)。 |
 |Microsoft Defender 防病毒反恶意软件客户端 |确保你的客户端是最新的。 使用 PowerShell 以管理员角色运行 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet。 在 **AMProductVersion** 行中，应该会看到 **4.18.2001.10** 或更上方。 |

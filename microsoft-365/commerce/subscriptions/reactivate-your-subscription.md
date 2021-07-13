@@ -18,15 +18,16 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: 如果订阅过期、被禁用或取消，或者如果你在订阅期中间取消，管理员可以重新激活订阅。
 ms.date: 04/07/2021
-ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572509"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394913"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
@@ -65,6 +66,6 @@ ms.locfileid: "52572509"
 
 ## <a name="related-content"></a>相关内容
 
-[试用或购买Microsoft 365商业版订阅 (](../try-or-buy-microsoft-365.md)文章) \
+[试用或购买 Microsoft 365 商业版订阅](../try-or-buy-microsoft-365.md)（文章）
 [续订 Microsoft 365 商业版](renew-your-subscription.md) (文章)\
 [取消订阅 (](cancel-your-subscription.md) 文章) 

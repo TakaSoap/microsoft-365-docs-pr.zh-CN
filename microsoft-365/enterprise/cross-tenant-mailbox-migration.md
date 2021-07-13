@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 018c47076642d4ce51340aed5fcb25c1d25c6b4f
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 471682b6f830609ef4ff9241bdaa515c97ca2d8d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289159"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394901"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "53289159"
 
 本节不包含在目标目录中准备 MailUser 用户对象所需的特定步骤，也不包括提交迁移批处理的示例命令。 有关此信息 [，请参阅准备目标用户对象进行](#prepare-target-user-objects-for-migration) 迁移。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 跨租户邮箱移动功能需要 [Azure Key Vault](/azure/key-vault/basic-concepts) 来建立特定于租户对的 Azure 应用程序，以安全存储和访问用于对邮箱从一个租户迁移到另一个租户进行身份验证和授权迁移的证书/密码，从而删除在租户之间共享证书/密码的任何要求。
 
@@ -99,18 +99,18 @@ ms.locfileid: "53289159"
 
    |参数|值|必需或可选
    |---|---|---|
-   |-TargetTenantDomain|目标租户域，如 fabrikam \. onmicrosoft.com。|必需|
-   |-ResourceTenantDomain|源租户域，如 contoso \. onmicrosoft.com。|必需|
-   |-ResourceTenantAdminEmail|源租户管理员的电子邮件地址。 这是将同意使用从目标管理员发送的邮箱迁移应用程序的源租户管理员。这是将接收应用程序的电子邮件邀请的管理员。|必需|
-   |-ResourceTenantId|源租户组织 ID (GUID) 。|必需|
-   |-SubscriptionId|用于创建资源的 Azure 订阅。|必需|
-   |-ResourceGroup|包含或将包含密钥保管库的 Azure 资源组名称。|必需|
-   |-KeyVaultName|将存储邮箱迁移应用程序证书/密码的 Azure Key Vault 实例。|必需|
-   |-CertificateName|在密钥保管库中生成或搜索证书时证书名称。|必需|
-   |-CertificateSubject|Azure 密钥保管库证书主题名称，例如 CN=contoso_fabrikam。|必需|
-   |-AzureResourceLocation|Azure 资源组和密钥保管库的位置。|必需|
+   |-TargetTenantDomain|目标租户域，如 fabrikam \. onmicrosoft.com。|必填|
+   |-ResourceTenantDomain|源租户域，如 contoso \. onmicrosoft.com。|必填|
+   |-ResourceTenantAdminEmail|源租户管理员的电子邮件地址。 这是将同意使用从目标管理员发送的邮箱迁移应用程序的源租户管理员。这是将接收应用程序的电子邮件邀请的管理员。|必填|
+   |-ResourceTenantId|源租户组织 ID (GUID) 。|必填|
+   |-SubscriptionId|用于创建资源的 Azure 订阅。|必填|
+   |-ResourceGroup|包含或将包含密钥保管库的 Azure 资源组名称。|必填|
+   |-KeyVaultName|将存储邮箱迁移应用程序证书/密码的 Azure Key Vault 实例。|必填|
+   |-CertificateName|在密钥保管库中生成或搜索证书时证书名称。|必填|
+   |-CertificateSubject|Azure 密钥保管库证书主题名称，例如 CN=contoso_fabrikam。|必填|
+   |-AzureResourceLocation|Azure 资源组和密钥保管库的位置。|必填|
    |-ExistingApplicationId|邮件迁移应用程序，如果已创建，将使用该应用程序。|可选|
-   |-AzureAppPermissions|为邮箱迁移应用程序（如 Exchange 或 MSGraph (Exchange）授予移动邮箱所需的权限，MSGraph 用于使用此应用程序向资源租户) 发送同意链接邀请。|必需|
+   |-AzureAppPermissions|为邮箱迁移应用程序（如 Exchange 或 MSGraph (Exchange）授予移动邮箱所需的权限，MSGraph 用于使用此应用程序向资源租户) 发送同意链接邀请。|必填|
    |-UseAppAndCertGeneratedForSendingInvitation|用于使用为迁移创建的应用程序的参数，用于向源租户管理员发送同意链接邀请。如果不存在，这将提示目标管理员的凭据连接到 Azure 邀请管理器，并将邀请作为目标管理员发送。|可选|
    |-KeyVaultAuditStorageAccountName|存储密钥保管库审核日志的存储帐户。|可选|
    |-KeyVaultAuditStorageResourceGroup|包含用于存储密钥保管库审核日志的存储帐户的资源组。|可选|
@@ -295,7 +295,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 迁移的用户必须存在于目标租户中，Exchange Online系统 (MailUsers) 使用特定属性进行标记，以启用跨租户移动。 对于未在目标租户中正确设置的用户，系统移动将失败。 以下部分详细介绍了目标租户的 MailUser 对象要求。
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 必须确保在目标组织中设置以下对象和属性。
 
@@ -304,7 +304,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
    - 目标 MailUser 必须具有源邮箱中的这些属性或分配有新的 User 对象：
       - ExchangeGUID (源到目标邮箱的直接) – 邮箱 GUID 必须匹配。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。
       - ArchiveGUID (源到目标用户) – 存档 GUID 必须匹配。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。  (仅在源邮箱已启用存档) 。
-      - LegacyExchangeDN (流作为 proxyAddress， "x500： <LegacyExchangeDN> ") – LegacyExchangeDN 必须作为 x500： proxyAddress 存在于目标 MailUser 上。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。
+      - LegacyExchangeDN (流作为 proxyAddress， "x500： <LegacyExchangeDN> ") – LegacyExchangeDN 必须作为 x500： proxyAddress 存在于目标 MailUser 上。 此外，还需要将源邮箱的所有 x500 地址复制到目标邮件用户。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。 
       - UserPrincipalName – UPN 将与用户的 NEW 标识或目标公司 (例如，user@northwindtraders.onmicrosoft.com) 。
       - 主 SMTP 地址 – 主 SMTP 地址将与用户的 NEW 公司地址 (例如，user@northwind.com) 。
       - TargetAddress/ExternalEmailAddress – MailUser 将引用托管在源租户中的用户当前邮箱 (例如 user@contoso.onmicrosoft.com) 。 分配此值时，请验证是否还分配了 PrimarySMTPAddress，否则此值将设置会导致移动失败的 PrimarySMTPAddress。
@@ -581,7 +581,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **源租户和目标租户能否使用相同的域名？**
 
-不需要。 源和目标租户域名必须是唯一的。 例如，域的源 contoso.com 和目标域 fourthcoffee.com。
+不正确。 源和目标租户域名必须是唯一的。 例如，域的源 contoso.com 和目标域 fourthcoffee.com。
 
 **共享邮箱是否移动且仍正常工作？**
 

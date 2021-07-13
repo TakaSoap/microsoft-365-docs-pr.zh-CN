@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81b0594044e238f5855c627b2ce80baf8d8cb9c2
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: cb6e12e9b8ae32c13095239fe67012a520eb6e07
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203180"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408968"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -62,6 +62,9 @@ CentOS 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
 Ubuntu 16.04 LTS 或更高版本 LTS | 是 | 是 | 是 | 是 | 是
 Oracle Linux 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
 SUSE Linux Enterprise Server 12 或更高版本 | 是 | 是 | 是 | 是 | 是
+
+>[!NOTE]
+> 某些功能不适用于低级别操作系统，请查看 Microsoft 365 Defender 门户，了解有关受支持的操作系统的更多详细信息。
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux："作为 Microsoft Defender for Endpoint 服务的一部分提供和显示的漏洞数据可从 Red Hat， Inc. 以原始形式"AS IS"提供给你，并且可能不是最新的。 Red Hat 安全数据 API 中可访问的数据由 Creative Commons Attribution 4.0 国际许可证授权。 使用此数据的风险由你承担。 Microsoft 及其第三方供应商不承担任何责任以及其他间接损害和默示担保，包括针对特定目的的不侵权、适用性和适用性的默示担保。 © 2020 Red Hat。 保留所有权利。 © 2020 Microsoft。 保留所有权利。"

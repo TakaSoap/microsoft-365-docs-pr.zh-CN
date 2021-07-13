@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288127"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394937"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -40,6 +40,28 @@ ms.locfileid: "53288127"
 > - [Microsoft 365 Defender 的新增功能](../security/defender/whats-new.md)
 >
 > 请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)，了解Microsoft 365、即将推出、正在开发、已取消或以前发布的新功能。
+
+## <a name="june-2021"></a>2021 年 6 月
+
+### <a name="customer-key"></a>客户密钥
+
+- [使用客户密钥 (](customer-key-overview.md)客户密钥租户级别的服务加密现在加密 Microsoft 信息保护.) 
+
+### <a name="ediscovery"></a>电子数据展示
+
+- [使用新的](review-set-search.md) UX 格式 (查询和筛选审阅集内容，以筛选和搜索审阅集内容) 
+- [在审阅集](tagging-documents.md)内标记文档Advanced eDiscovery (新的标记功能和 UX，以便更快、更轻松地标记审阅集内的文档;包括使用查询和使用筛选器根据项目标记项目来快速查找或排除审阅集项目的新功能) 
+- [为电子数据展示](set-up-compliance-boundaries.md)调查设置合规性 (Microsoft 已取消联系 MS 支持以请求将合规性属性同步到OneDrive的要求;现在，邮箱搜索权限筛选器用于强制实施邮箱搜索权限OneDrive) 
+
+### <a name="sensitivity-labels"></a>敏感度标签
+
+- 敏感度标签策略向导现在支持Outlook标签[](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)和强制标签的特定选项，作为比 (仍受 PowerShell) 支持更简单的配置。
+- 现已[推出 Word、Excel](sensitivity-labels-office-apps.md#dynamic-markings-with-variables )和 PowerPoint web 版
+- 对于[自动标记策略](apply-sensitivity-label-automatically.md)Exchange，如果标签配置为加密，则不应用该加密。 此外Exchange自动标记策略，现在可以配置例外和以下新条件：主题、收件人地址或发件人地址匹配模式;收件人地址包含词语;sender domain is， recipient is a member of;sender 是。
+- 将敏感度标签与团队、组和网站一同使用时，可以将 Set-SPOTenant 与 BlockSendLabelMismatchEmail 参数一同使用，以防止在记录审核事件检测到文档敏感度不匹配时自动生成的电子邮件。  有关详细信息，请参阅审核 [敏感度标签活动](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )。
+- 现在 [，敏感度](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) 标签的身份验证上下文设置已完全推出预览版。 此外，此配置现在受 Microsoft Teams。
+- 为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签后，现在可以在 Office 网页版 中打开由服务原则名称 (（如 Microsoft Cloud App Security) ）标记和加密然后上传到 SharePoint 和[OneDrive 的文件](sensitivity-labels-sharepoint-onedrive-files.md)。
+- [](sensitivity-labels-coauthoring.md)使用版本 2105 时，共同创作和自动保存不再局限于测试租户，现在支持生产：6 月 18 日针对 Windows，版本 16.50+ for macOS。 请注意，此功能仍不受 iOS 和 Android 支持，仍保持预览状态。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -189,7 +211,7 @@ Outlook版本和更新：
 
 在下列主题中添加或更新了内容：
 
-- [内容资源管理器入门](/microsoft-365/compliance/data-classification-content-explorer)
+- [内容浏览器入门](/microsoft-365/compliance/data-classification-content-explorer)
 - [数据分类发行说明](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>数据丢失防护
@@ -269,49 +291,3 @@ Outlook版本和更新：
 
 - 敏感度标签现在支持美国政府租户 (GCC GCC-H) 。
 - macOS [的新](sensitivity-labels-office-apps.md) 自动标记支持。
-
-## <a name="december-2020"></a>2020 年 12 月
-
-### <a name="spotlight-new-content-for-insider-risk-solutions"></a>聚焦：内部风险解决方案的新内容
-
-合规性Microsoft 365团队努力创建"内容解决方案"文档，以提升如何一起使用合规性功能来帮助实现合规性目标。
-
-首先，将内部风险解决方案（通信合规性、内部风险管理、信息屏障和特权访问管理）紧密结合的内容。 以下是您将找到的一个速览：
-
-- [内部风险解决方案的新登陆页面](insider-risk-solution-overview.md)。 包括有关解决方案可以帮助缓解的风险的详细信息、许可要求、部署顺序、体系结构图示、培训资源等。
-- 每个内部风险解决方案的新概述文章。 帮助您了解、规划、部署和管理每个解决方案的文章指南和链接：
-  - [通信合规性](communication-compliance-solution-overview.md)
-  - [内部风险管理](insider-risk-management-solution-overview.md)
-  - [信息屏障](information-barriers-solution-overview.md)
-  - [Privileged Access Management](privileged-access-management-solution-overview.md)
-
-即将推出更多内容解决方案文档！
-
-### <a name="advanced-ediscovery"></a>高级电子数据展示
-
-改进了工作流和功能，用于[将](add-custodians-to-case.md)保管人和非托管数据源[](non-custodial-data-sources.md)添加到Advanced eDiscovery案例。
-
-### <a name="data-connectors"></a>数据连接器
-
-[发布了四个新的开发连接器](archiving-third-party-data.md#third-party-data-connectors)：Redtail Speak、Salesforce Chatter、ServiceNow 和 Yieldbroker。
-
-### <a name="encryption"></a>加密
-
-介绍[租户级别的Microsoft 365客户密钥](customer-key-tenant-level.md)。 使用你提供的密钥，可以在 DEP (创建) 策略并将其分配给租户。 DEP 为以下工作负载加密租户内的数据：
-
-- Teams一 (聊天、群聊、会议聊天和频道对话时显示聊天) 
-- Teams媒体消息 (图像、代码段、视频、wiki 图像) 
-- Teams存储中存储的呼叫和Teams录制
-- Teams聊天通知
-- Teams聊天建议Cortana
-- Teams状态消息
-- 用户和信号Exchange Online
-
-### <a name="records-management"></a>记录管理
-
-记录 [管理管理员角色组](get-started-with-records-management.md#permissions-required-for-records-management) 现在授予所有记录管理功能（包括处置评审）的权限。
-
-### <a name="sensitivity-labels"></a>敏感度标签
-
-- [自动标记 Azure Azure (预览版) 。 ](/azure/purview/create-sensitivity-label) 现在，你可以创建敏感度标签，并自动将敏感度标签应用到 Azure Azure 中的资产，如 Azure Blob 存储中的文件和 Azure 中SQL Server。
-- [要求用户向项目应用标签](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 这一新选项也称为"强制标签"，它要求用户根据特定方案选择和应用敏感度标签。

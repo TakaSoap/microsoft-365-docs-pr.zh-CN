@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843574"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394889"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -58,6 +58,10 @@ ms.locfileid: "52843574"
 - 卡片 (活动警报、已登录用户、安全评估) 
 
 ![设备视图的图像](images/specific-device.png)
+
+> [!NOTE]
+> 由于产品限制，设备配置文件在确定"上次查看"时间范围时不会考虑所有网络证据 (如设备页面上所见，) 。
+> 例如，"设备"页面中的"上次查看时间"值可能会显示较旧的时间范围，即使计算机时间线中提供了最新的警报或数据。
 
 ## <a name="device-details"></a>设备详细信息
 
@@ -184,6 +188,8 @@ ms.locfileid: "52843574"
 **"已登录用户"** 卡片显示过去 30 天内登录的用户数，以及最多且最不频繁的用户。 选择"查看所有用户"链接将打开详细信息窗格，其中显示诸如用户类型、登录类型以及首次看到用户和最后一次看到用户时的信息。 有关详细信息，请参阅调查 [用户实体](investigate-user.md)。
 
 ![用户详细信息窗格的图像](images/logged-on-users.png)
+> [!NOTE]
+> "最常用"用户值仅根据已成功以交互方式登录的用户的证据进行计算。 但是，"所有用户"侧窗格将计算各种用户登录数，以便预期在侧窗格中看到更频繁的用户（假设这些用户可能无法交互）。
 
 ### <a name="security-assessments"></a>安全评估
 
@@ -193,7 +199,7 @@ ms.locfileid: "52843574"
 
 ## <a name="related-topics"></a>相关主题
 
-- [查看和组织 Microsoft Defender 终结点警报队列](alerts-queue.md)
+- [查看并组织 Microsoft Defender for Endpoint 警报队列](alerts-queue.md)
 - [管理 Microsoft Defender for Endpoint 警报](manage-alerts.md)
 - [调查 Microsoft Defender for Endpoint 警报](investigate-alerts.md)
 - [调查与 Defender for Endpoint 警报关联的文件](investigate-files.md)
