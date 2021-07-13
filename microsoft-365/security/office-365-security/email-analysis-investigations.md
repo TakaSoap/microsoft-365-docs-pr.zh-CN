@@ -1,0 +1,100 @@
+---
+title: Microsoft Defender for Office 365 调查的电子邮件分析
+f1.keywords:
+- NOCSH
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: dansimp
+audience: ITPro
+ms.topic: article
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-office365
+keywords: 自动事件响应， 调查， 修正， 威胁防护
+description: 了解调查电子邮件分析在 Microsoft Defender for Office 365 中Office 365。
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d222e1c8b6b5ca9e111b1dbe6b7fb31138a157b2
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53395009"
+---
+# <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a><span data-ttu-id="eb7a2-104">Microsoft Defender for Office 365 调查的电子邮件分析</span><span class="sxs-lookup"><span data-stu-id="eb7a2-104">Email analysis in investigations for Microsoft Defender for Office 365</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+<span data-ttu-id="eb7a2-105">**适用对象**</span><span class="sxs-lookup"><span data-stu-id="eb7a2-105">**Applies to**</span></span>
+- [<span data-ttu-id="eb7a2-106">适用于 Office 365 计划 2 的 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="eb7a2-106">Microsoft Defender for Office 365 plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="eb7a2-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="eb7a2-107">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+
+<span data-ttu-id="eb7a2-108">在警报自动调查期间，Microsoft Defender for Office 365分析原始电子邮件中的威胁，并确定与原始电子邮件相关的其他电子邮件以及可能属于攻击的一部分。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-108">During the automated investigation of alerts, Microsoft Defender for Office 365 analyzes the original email for threats and identifies other emails that are related to the original email and potentially part of an attack.</span></span> <span data-ttu-id="eb7a2-109">此分析非常重要，因为电子邮件攻击很少包含一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-109">This analysis is important because email attacks rarely consist of a single email.</span></span>
+
+<span data-ttu-id="eb7a2-110">自动调查的电子邮件分析使用原始电子邮件中的属性识别电子邮件群集，以查询您的组织发送和接收的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-110">The automated investigation’s email analysis identifies email clusters using attributes from the original email to query for emails sent and received by your organization.</span></span> <span data-ttu-id="eb7a2-111">这类似于安全操作分析师在资源管理器或高级搜寻中搜寻相关电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-111">This is similar to a security operations analyst would hunt for the related emails in Explorer or Advanced Hunting.</span></span> <span data-ttu-id="eb7a2-112">多个查询用于标识匹配的电子邮件，因为攻击者通常会更改电子邮件参数以避免安全检测。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-112">Several queries are used to identify matching emails because attackers typically morph the email parameters to avoid security detection.</span></span> <span data-ttu-id="eb7a2-113">群集分析执行以下检查以确定如何处理调查所涉及的电子邮件：</span><span class="sxs-lookup"><span data-stu-id="eb7a2-113">The clustering analysis performs these checks to determine how to handle emails involved in the investigation:</span></span>
+
+- <span data-ttu-id="eb7a2-114">电子邮件分析使用原始电子邮件中的属性创建 (群集) 电子邮件的查询 - 发件人值 (IP 地址、发送域) 和内容 (主题、群集 ID) ，以便查找相关的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-114">The email analysis creates queries (clusters) of emails using attributes from the original email – sender values (IP address, sending domain) and contents (subject, cluster ID) in order to find emails that are related.</span></span>
+- <span data-ttu-id="eb7a2-115">如果对原始电子邮件的 URL 和文件的分析发现某些是恶意 (，即恶意软件或网络钓鱼) ，则它还将创建包含恶意 URL 或文件的查询或电子邮件群集。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-115">If analysis of the original email’s URLs and files identifies that some are malicious (that is, malware or phish), then it will also create queries or clusters of emails containing the malicious URL or file.</span></span>
+- <span data-ttu-id="eb7a2-116">电子邮件群集分析对与群集中的匹配电子邮件关联的威胁进行计数，以确定电子邮件是恶意的、可疑的还是没有明确的威胁。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-116">Email clustering analysis counts the threats associated with the matching emails in the cluster to determine whether the emails are malicious, suspicious, or have no clear threats.</span></span> <span data-ttu-id="eb7a2-117">如果匹配查询的电子邮件群集具有足够的垃圾邮件、普通网络钓鱼、高可信度网络钓鱼或恶意软件威胁，则电子邮件群集将应用该威胁类型。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-117">If the cluster of emails matching the query has a sufficient amount of spam, normal phish, high confidence phish or malware threats, the email cluster gets that threat type applied to it.</span></span> 
+- <span data-ttu-id="eb7a2-118">电子邮件群集分析还会检查原始电子邮件和电子邮件在电子邮件群集中的最新传递位置，以帮助确定电子邮件是否仍可能需要删除或已修正或阻止。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-118">The email clustering analysis also checks the latest delivery location of the original email and emails in the email clusters to help identify if the emails potentially still need removal or have already been remediated or prevented.</span></span> <span data-ttu-id="eb7a2-119">此分析非常重要，因为攻击者会更改恶意内容以及安全策略和保护，这两个邮箱可能会有所不同。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-119">This analysis is important because attackers morph malicious content plus security policies and protection may vary between mailboxes.</span></span> <span data-ttu-id="eb7a2-120">此功能会导致恶意内容仍位于邮箱中的情况，即使零时差自动保护组织 ZAP 已检测到并删除了一个或多个恶意 (电子邮件) 。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-120">This capability leads to situations where malicious content may still sit in mailboxes, even though one or more malicious emails has been detected and removed by Zero-hour Auto Protection (ZAP).</span></span>
+- <span data-ttu-id="eb7a2-121">如果由于恶意软件、高可信度钓鱼邮件、恶意文件或恶意 URL 威胁而被视为恶意的电子邮件群集，当云邮箱 (收件箱或垃圾邮件文件夹) 时，将获取软删除电子邮件的挂起操作。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-121">Email clusters that are considered malicious due to malware, high confidence phish, malicious files, or malicious URLs threats will get a pending action to soft delete the emails when there are still in the cloud mailbox (inbox or junk folder).</span></span> <span data-ttu-id="eb7a2-122">如果恶意电子邮件或电子邮件群集仅"不在邮箱中" (被阻止、隔离、失败、软删除等 ) 或"本地/外部"，在云邮箱中无，则将不会设置任何待处理的操作来删除它们。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-122">If malicious emails or email clusters are only "Not In Mailbox" (blocked, quarantined, failed, soft deleted, etc.) or "On-premises/External" with none in the cloud mailbox, then no pending action will be set up to remove them.</span></span>
+- <span data-ttu-id="eb7a2-123">如果任何电子邮件群集被确定为恶意群集，则群集标识的威胁将重新应用于调查所涉及的原始电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-123">If any of the email clusters are determined to be malicious, then the threat identified by the cluster will get applied back to the original email involved in the investigation.</span></span> <span data-ttu-id="eb7a2-124">此行为类似于安全操作分析师使用电子邮件搜寻结果根据匹配电子邮件确定原始电子邮件裁定。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-124">This behavior is similar to a security operations analyst using email hunting results to determine the verdict of an original email based on matching emails.</span></span> <span data-ttu-id="eb7a2-125">此结果可确保无论是否检测到原始电子邮件的 URL、文件或源电子邮件指示器，系统都可以识别通过个性化、变形、黑客或其他攻击者技术可能规避检测的恶意电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-125">This result ensures that regardless of whether an original email’s URLs, files, or source email indicators are detected or not, the system can identify malicious emails that are potentially evading detection through personalization, morphing, evasion, or other attacker techniques.</span></span>
+- <span data-ttu-id="eb7a2-126">在用户泄露调查中，会创建其他电子邮件群集，以确定邮箱创建的潜在电子邮件问题。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-126">In the user compromise investigation, additional email clusters are created to identify potential email issues created by the mailbox.</span></span> <span data-ttu-id="eb7a2-127">此过程包括干净电子邮件群集 (来自用户的良好电子邮件、潜在的数据窃取和潜在的命令/控制电子邮件) 、可疑电子邮件群集 (包含垃圾邮件或普通网络钓鱼) 的电子邮件以及包含恶意软件或高可信度网络钓鱼 (的电子邮件) 。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-127">This process includes a clean email cluster (good emails from user, potential data exfiltration, and potential command/control emails), suspicious email clusters (emails containing spam or normal phish) and malicious email clusters (emails containing malware or high confidence phish).</span></span> <span data-ttu-id="eb7a2-128">这些电子邮件群集提供安全操作分析师数据，以确定可能需要通过泄露解决哪些其他问题，以及哪些电子邮件已触发原始警报（例如 (触发用户发送限制的网络钓鱼/垃圾邮件）的可见性) </span><span class="sxs-lookup"><span data-stu-id="eb7a2-128">These email clusters provide security operations analysts data to determine what other problems may need to be addressed from a compromise,and visibility on which emails may have triggered the original alerts (for example, phish/spam that triggered user sending restrictions)</span></span>
+
+<span data-ttu-id="eb7a2-129">通过相似性和恶意实体查询的电子邮件群集分析可确保完全识别并清理电子邮件问题，即使只识别出来自攻击的一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-129">Email clustering analysis via similarity and malicious entity queries ensures that email problems are fully identified and cleaned up, even if only one email from an attack gets identified.</span></span> <span data-ttu-id="eb7a2-130">可以使用电子邮件群集详细信息侧面板视图中的链接在资源管理器或高级搜寻中打开查询，以执行更深入的分析并根据需要更改查询。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-130">You can use links from the email cluster details side panel views to open the queries in Explorer or Advanced Hunting to perform deeper analysis and change the queries if needed.</span></span> <span data-ttu-id="eb7a2-131">如果你发现电子邮件群集的查询范围过窄或过宽，包括无关的电子邮件或电子邮件，此功能 (和修正) 。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-131">This capability enables manual refinement and remediation if you find the email cluster’s queries too narrow or too broad (including unrelated emails).</span></span>
+
+<span data-ttu-id="eb7a2-132">下面是调查电子邮件分析的其他增强功能。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-132">Here are additional enhancements to email analysis in investigations.</span></span>
+
+## <a name="air-investigation-ignores-advanced-delivery-items-secops-mailbox-and-phishedu-messages"></a><span data-ttu-id="eb7a2-133">AIR 调查将忽略 SecOps (和 PhishEDU 邮件中高级) </span><span class="sxs-lookup"><span data-stu-id="eb7a2-133">AIR investigation ignores advanced delivery items (SecOps mailbox and PhishEDU messages)</span></span>
+
+<span data-ttu-id="eb7a2-134">在电子邮件群集分析过程中，所有群集查询将忽略在高级传递策略中设置为安全操作邮箱的安全邮箱。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-134">During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy.</span></span> <span data-ttu-id="eb7a2-135">同样，电子邮件群集查询将忽略高级 (策略) 的邮件中的网络钓鱼模拟邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-135">Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy.</span></span> <span data-ttu-id="eb7a2-136">查询中既不显示 SecOps 值也不显示 PhishEdu 排除值，使群集属性更易于阅读。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-136">Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simpler and easier to read.</span></span> <span data-ttu-id="eb7a2-137">此排除可确保威胁分析过程中忽略威胁智能 (SecOps 邮箱) 和网络钓鱼模拟 (PhishEdu) ，并且不会在任何修正过程中删除。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-137">This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation.</span></span> 
+
+>[!Note]
+><span data-ttu-id="eb7a2-138">从电子邮件群集详细信息打开电子邮件群集以在资源管理器中查看它时，PhishEdu 和 SecOps 邮箱筛选器将在资源管理器中应用，但将不会显示。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-138">When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown.</span></span> <span data-ttu-id="eb7a2-139">如果更改"资源管理器"筛选器、日期或刷新页面中的查询，则 PhishEdu/SecOps 筛选器排除项将被删除，匹配这些筛选器的电子邮件将再次显示。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-139">If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again.</span></span> <span data-ttu-id="eb7a2-140">如果使用浏览器刷新函数刷新"资源管理器"页，将重新加载原始查询筛选器，包括 PhishEdu/SecOps 筛选器，但会删除您进行的任何后续更改。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-140">If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.</span></span>
+>
+
+## <a name="air-updates-pending-email-action-status"></a><span data-ttu-id="eb7a2-141">AIR 更新挂起的电子邮件操作状态</span><span class="sxs-lookup"><span data-stu-id="eb7a2-141">AIR updates pending email action status</span></span>
+
+<span data-ttu-id="eb7a2-142">调查电子邮件分析在调查时计算电子邮件威胁和位置，以创建调查证据和操作。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-142">The investigation email analysis calculates email threats and locations at the time of the investigation to create the investigation evidence and actions.</span></span> <span data-ttu-id="eb7a2-143">当调查之外的操作影响调查所涉及的电子邮件时，此数据可能会过期。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-143">This data can get stale and outdated when actions outside of the investigation affect the emails involved in the investigation.</span></span> <span data-ttu-id="eb7a2-144">例如，安全操作手动搜寻和修正可能会清理调查中包含的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-144">For example, security operations manual hunting and remediation may clean up emails included in an investigation.</span></span> <span data-ttu-id="eb7a2-145">同样，在并行调查或零时差自动保护中批准的删除操作 (ZAP) 自动隔离操作可能已删除电子邮件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-145">Likewise, deletion actions approved in parallel investigations or Zero-hour Auto Protection (ZAP) automatic quarantine actions may have removed emails.</span></span> <span data-ttu-id="eb7a2-146">此外，电子邮件传递后对威胁的延迟检测可能会更改调查的电子邮件查询/群集中包含的威胁数量。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-146">In addition, delayed detections of threats after email delivery may change the number of threats included in the investigation’s email queries/clusters.</span></span> 
+
+<span data-ttu-id="eb7a2-147">为了确保调查操作是最新的，任何具有挂起操作的调查将定期重新运行电子邮件分析查询，以更新电子邮件位置和威胁。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-147">To ensure investigation actions are up to date, any investigation that has pending actions will periodically re-run the email analysis queries to update the email locations and threats.</span></span> 
+
+- <span data-ttu-id="eb7a2-148">当电子邮件群集数据发生更改时，它将更新威胁和最新的传递位置计数。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-148">When the email cluster data changes, it will update the threat and latest delivery location counts.</span></span> 
+- <span data-ttu-id="eb7a2-149">如果邮箱中不再包含挂起操作的电子邮件或电子邮件群集，则挂起的操作将被取消，恶意电子邮件/群集视为已修复。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-149">If emails or email cluster with pending actions no longer are in the mailbox, then the pending action will be canceled, and the malicious email/cluster considered remediated.</span></span>
+- <span data-ttu-id="eb7a2-150">如上所述，修正或取消所有调查的威胁后，调查将转换为修正状态，并解决原始警报。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-150">Once all the investigation’s threats have been remediated or canceled as noted above, then the investigation will transition to a remediated state and the original alert resolved.</span></span>
+
+## <a name="the-display-of-incident-evidence-for-email-and-email-clusters"></a><span data-ttu-id="eb7a2-151">显示电子邮件和电子邮件群集的事件证据</span><span class="sxs-lookup"><span data-stu-id="eb7a2-151">The display of incident evidence for email and email clusters</span></span>
+
+<span data-ttu-id="eb7a2-152">现在，在事件的"证据和响应"选项卡中，基于电子邮件的证据将显示以下信息。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-152">Email-based evidence in the Evidence and Response tab for an incident now displays the following information.</span></span>
+
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="证据和响应中的电子邮件分析信息示例" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+
+<span data-ttu-id="eb7a2-154">从图中的编号标注：</span><span class="sxs-lookup"><span data-stu-id="eb7a2-154">From the numbered callouts in the figure:</span></span>
+
+1. <span data-ttu-id="eb7a2-155">除了操作中心 之外，还可以执行 **修正操作**。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-155">You can perform remediation actions, in addition to the **Action Center**.</span></span>
+2. <span data-ttu-id="eb7a2-156">你可以对具有恶意裁定的电子邮件群集采取修正 **(，但不能** 对可疑) 。 </span><span class="sxs-lookup"><span data-stu-id="eb7a2-156">You can take remediation action for email clusters with a **Malicious** verdict (but not **Suspicious**).</span></span>
+3. <span data-ttu-id="eb7a2-157">对于垃圾邮件裁定，网络钓鱼被拆分为高可信度和普通网络钓鱼。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-157">For the email spam verdict, phishing is split into high confidence and normal phish.</span></span>
+
+   <span data-ttu-id="eb7a2-158">对于恶意裁定，威胁类别为恶意软件、高可信度钓鱼邮件、恶意 URL 和恶意文件。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-158">For a Malicious verdict, the threat categories are malware, high confidence phish, malicious URL, and malicious file.</span></span>
+
+   <span data-ttu-id="eb7a2-159">对于"可疑"裁定，威胁类别为垃圾邮件和普通网络钓鱼。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-159">For a Suspicious verdict, the threat categories are spam and normal phish.</span></span>
+
+4. <span data-ttu-id="eb7a2-160">电子邮件计数依据基于最新的传递位置，包括邮箱（而不是邮箱和本地）中的电子邮件计数器。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-160">The email count by is based the latest delivery location and includes counters for email in mailboxes, not in mailboxes, and on-premises.</span></span>
+5. <span data-ttu-id="eb7a2-161">包括查询的日期和时间，查询可能会针对最新数据进行更新。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-161">Includes the date and time of the query, which might get updated for latest data.</span></span>
+
+<span data-ttu-id="eb7a2-162">对于事件"实体"选项卡中的电子邮件或电子邮件群集，"已阻止"表示邮箱中没有针对此项目的恶意电子邮件 (或群集) 。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-162">For email or email clusters in the **Entities** tab of an incident, **Prevented** means that there was no malicious emails in the mailbox for this item (mail or cluster).</span></span> <span data-ttu-id="eb7a2-163">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-163">Here is an example.</span></span>
+
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="阻止的电子邮件示例" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+
+<span data-ttu-id="eb7a2-165">本示例中，电子邮件是恶意电子邮件，但不在邮箱中。</span><span class="sxs-lookup"><span data-stu-id="eb7a2-165">In this example, the email is malicious but not in a mailbox.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="eb7a2-166">后续步骤</span><span class="sxs-lookup"><span data-stu-id="eb7a2-166">Next steps</span></span>
+
+- [<span data-ttu-id="eb7a2-167">查看挂起或已完成的修正操作</span><span class="sxs-lookup"><span data-stu-id="eb7a2-167">View pending or completed remediation actions</span></span>](air-review-approve-pending-completed-actions.md)
