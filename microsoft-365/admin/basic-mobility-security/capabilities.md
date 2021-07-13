@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本移动性和安全性可以帮助您保护和管理移动设备。
-ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5619ce6a8fa2c705acc6be08e3af8ad6f90a6d99
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228275"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393303"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本移动性和安全性的功能
 
@@ -141,8 +142,8 @@ ms.locfileid: "53228275"
 |阻止云备份 |是|否|否|
 |阻止文档同步 |是|否|否|
 |阻止照片同步  |是|否|否|
-|允许 Google 备份  |无|否|是|
-|允许 Google 帐户自动同步  |无|否|是|
+|允许 Google 备份  |不适用|否|是|
+|允许 Google 帐户自动同步  |不适用|否|是|
 
 ## <a name="system-settings"></a>系统设置
 

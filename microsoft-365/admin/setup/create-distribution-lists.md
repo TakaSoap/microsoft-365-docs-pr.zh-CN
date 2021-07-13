@@ -22,15 +22,16 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: 在管理中心内创建Microsoft 365组或列表，以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
-ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+- AdminTemplateSet
+description: 在通讯组中创建通讯组或Microsoft 365 管理中心以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635662"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393567"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在管理中心Microsoft 365通讯组
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在通讯组中Microsoft 365 管理中心
   
 当您希望向一组人员发送电子邮件而无需键入每个收件人的姓名时，通讯组 (通讯组) 按特定讨论主题 (例如"Marketing") 或按共享需要他们经常通信的常见工作的用户组织。 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
 
@@ -70,12 +71,12 @@ ms.locfileid: "52635662"
     
 6. 若要将用户添加到通讯组列表，请参阅向通讯组添加 [用户或联系人](../email/add-user-or-contact-to-distribution-list.md)。
     
-在"使用联系人组Outlook 2016 Outlook"中的"使用联系人组"中 (之前) 通讯组列表[Outlook。](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+在"使用联系人组Outlook 2016 Outlook 网页版之前 (通讯组列表) 中查看[Outlook。](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
 请查看通讯 [组问题，](/office365/troubleshoot/groups/distribution-list-issues) 帮助解决通讯组列表问题。 
 
 ## <a name="related-content"></a>相关内容
 
 [用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) \
-[在管理中心创建、编辑](../email/create-edit-or-delete-a-security-group.md)或删除Microsoft 365安全 (，) \
+[创建、编辑或删除](../email/create-edit-or-delete-a-security-group.md)安全组，Microsoft 365 管理中心 (文章) \
 [创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）

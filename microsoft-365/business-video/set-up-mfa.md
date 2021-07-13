@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在手机上设置多重身份验证（有时也称为双重身份验证）。
-ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705650"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393471"
 ---
-# <a name="set-up-multi-factor-authentication-on-your-phone"></a>在手机上设置多重身份验证
+# <a name="set-up-multifactor-authentication-on-your-phone"></a>在手机上设置多重身份验证
 
-## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>观看：使用移动设备设置多重身份验证
+## <a name="watch-set-up-multifactor-authentication-with-a-mobile-device"></a>观看：使用移动设备设置多重身份验证
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
-多重身份验证可为你的企业提供更多安全性。 请按照以下步骤进行设置。
+多重身份验证为业务提供了更多的安全性。 请按照以下步骤进行设置。
 
 ## <a name="try-it"></a>试一试！
 

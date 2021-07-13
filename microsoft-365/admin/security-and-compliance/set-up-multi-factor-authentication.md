@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,14 +25,14 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 480e09e42ea53cc78cd738a6e0650feae7a9f8c8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635946"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393615"
 ---
-# <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
+# <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
 根据你对 [Microsoft 365 中的多重身份验证 (MFA) 及其支持的理解](multi-factor-authentication-microsoft-365.md)，可对其进行设置并推广到你的组织。
 
@@ -81,7 +83,7 @@ ms.locfileid: "52635946"
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>为你的组织启用新式验证
 
-对于大多数订阅，新式验证会自动启用，但如果在 2017 年 8 月之前购买了订阅，可能需要启用新式验证才能使用多重身份验证等功能，才能在 Outlook 等 Windows 客户端中正常工作。
+对于大多数订阅，新式验证会自动启用，但如果在 2017 年 8 月之前购买了订阅，可能需要启用新式验证才能使用多重身份验证等功能，以在 Outlook 等 Windows 客户端中正常工作。
 
 
 1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
@@ -105,4 +107,4 @@ ms.locfileid: "52635946"
 ## <a name="related-content"></a>相关内容
 
 [打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）\
-[打开手机的多重身份验证](../../business-video/set-up-mfa.md)（视频）
+[为手机开启多重身份验证](../../business-video/set-up-mfa.md)（视频）

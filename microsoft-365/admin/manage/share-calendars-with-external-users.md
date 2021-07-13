@@ -16,29 +16,30 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: 在管理中心Microsoft 365日历共享，以便用户可以与组织内外的任何人共享其日历。
-ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 在组织中启用日历Microsoft 365 管理中心以便用户可以与组织内外的任何人共享其日历。
+ms.openlocfilehash: 21dbf12ec495f3a22a45d8a23af807ffd34fef72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635806"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392451"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 
 有时，用户必须安排与组织外部人员的会议。 为了简化查找常见会议时间的过程，Microsoft 365使日历可供这些人员使用。 这些用户需要查看组织中用户的忙/闲时间，但没有组织的Microsoft 365帐户。
 
-可以在管理中心为组织中所有用户启用日历Microsoft 365共享。 启用共享后，你的用户可以Outlook Web App组织内外的任何人共享其日历。 组织内部人员可以查看共享日历及其日历。 组织外部的人员将收到可用于查看日历的 URL。 贵组织的用户决定何时共享以及共享多少。
+您可以为组织中所有用户启用日历共享，Microsoft 365 管理中心。 启用共享后，你的用户可以Outlook Web App组织内外的任何人共享其日历。 组织内部人员可以查看共享日历及其日历。 组织外部的人员将收到可用于查看日历的 URL。 贵组织的用户决定何时共享以及共享多少。
 
 > [!NOTE]
 > 如果要与使用 Exchange Server 2013（内部部署解决方案）的组织共享日历，Exchange 管理员需要设置与云的身份验证关系。 这称为联合，必须满足最低软件要求。 有关详细信息，请参阅[共享](/exchange/sharing-exchange-2013-help)。
   
-## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用管理中心启用Microsoft 365共享
+## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>启用日历共享Microsoft 365 管理中心
 
 1. 在管理中心，**转到"设置** \> **组织设置"。**
 
@@ -55,5 +56,5 @@ ms.locfileid: "52635806"
 ## <a name="related-content"></a>相关内容
 
 [打开或关闭网站](/sharepoint/change-external-sharing-site) 外部共享 (文章) \
-[管理中心Microsoft 365视频](../../business-video/admin-center-overview.md) (概述) \
+[视频Microsoft 365 管理中心 (](../../business-video/admin-center-overview.md)概述) \
 [管理电子邮件和日历](../email/index.yml) (链接页) 

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 大致了解邮件Microsoft 365及其在跟踪新功能和已更改的功能以及其他重要通知中的角色。
-ms.openlocfilehash: 803e59c76a116e469a455346b43413b3e68ac8e6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 302ae9aef9669d8eb567680f5d96acf5b0c32009
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286737"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392535"
 ---
 # <a name="message-center"></a>消息中心
 

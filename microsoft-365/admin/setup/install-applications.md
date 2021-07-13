@@ -21,13 +21,14 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: 现在，你已设置Microsoft 365，了解如何在 Mac、PC 或移动设备上Office单个应用程序。
-ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593813"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393519"
 ---
 # <a name="install-office-applications"></a>安装 Office 应用程序
 
@@ -47,7 +48,7 @@ ms.locfileid: "52593813"
 
 ::: moniker range="o365-21vianet"
 
-如果你购买了Azure Active Directory 高级版 (AADP) 计划 1 或计划 2，则符合Microsoft Identity Manager (MIM) 。 若要下载MIM，请转到下载[中心](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
+如果你购买了Azure Active Directory Premium (AADP) 计划 1 或计划 2，则符合Microsoft Identity Manager (MIM) 。 若要下载MIM，请转到下载[中心](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
 
 ::: moniker-end
 

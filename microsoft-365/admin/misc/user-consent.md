@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解用户对应用的同意，以及如何启用它们以允许第三方应用访问用户Microsoft 365信息。
-ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624497"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391227"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户对应用程序中应用Microsoft 365
 
@@ -36,7 +38,6 @@ ms.locfileid: "52624497"
 用户可以仅向其拥有的、访问其 Office 365 信息的应用授予访问权限。 他们无法向应用授予对任何其他用户的信息的访问权限。
 
 ## <a name="turning-user-consent-on-or-off"></a>打开或关闭用户同意
-<a name="__toc379982114"> </a>
 
 下面将了解如何打开或关闭用户对应用的同意。
 
@@ -45,7 +46,6 @@ ms.locfileid: "52624497"
 2. 在" **用户同意应用"页上** ，选择打开或关闭用户同意的选项。
 
 ## <a name="related-content"></a>相关内容 
-<a name="__toc379982114"> </a>
 
 [配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (文章) \
 [管理对应用程序的同意并评估](/azure/active-directory/manage-apps/manage-consent-requests) 同意请求 (文章) 

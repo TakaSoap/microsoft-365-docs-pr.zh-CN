@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 如果要重置自己的管理员密码，请更新管理中心中的管理员电话号码和电子邮件地址。
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624509"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391299"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
@@ -39,7 +41,7 @@ ms.locfileid: "52624509"
 
 使用 **"安全信息** "页更改移动电话号码和备用电子邮件地址。 备用电子邮件地址用于重要通知，例如重置管理员密码 (而不是计算机管理员密码) 。 
   
-1. 浏览到Microsoft 365管理中心。
+1. 浏览到Microsoft 365 管理中心。
 
 2. 在标头中，选择配置文件图标 \> **"我的帐户** \> **安全信息"。**
 

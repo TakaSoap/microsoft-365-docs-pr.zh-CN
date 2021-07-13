@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以启用 Word、Excel 和 PowerPoint 中的敏感度SharePoint OneDrive。
-ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 61b6c366f76c25ab0b35df4314f63491be5ce5e6
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322229"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377225"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -90,6 +90,12 @@ ms.locfileid: "53322229"
     对于具有这些加密配置中的任一配置的标签，这些标签不会向用户Office 网页版。 此外，新功能不能用于已具有这些加密设置的已标记文档。 例如，这些文档不会在搜索结果中返回，即使它们已更新。
 
 - 出于性能原因，当您将文档上载或保存到 SharePoint并且文件标签不应用加密时，文档库中的"敏感度"列可能需要一段时间才能显示标签名称。 如果你使用依赖于此列中的标签名称的脚本或自动化，则此延迟的因素。
+
+- 如果在 SharePoint 中签出文档时文档已[](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)标记，则文档库中的"敏感度"列将不会显示标签名称，直到文档签入并下次在 SharePoint 中打开。
+
+- 如果已标记和加密的文档由使用服务主体名称的应用或服务从 SharePoint 或 OneDrive 下载，然后使用应用不同加密设置的标签再次上载，则上载将失败。 示例方案是Microsoft Cloud App Security将文件上的敏感度标签从 **"** 机密"更改为"高度机密"，或从 **"机密"** 更改为 **"常规"。** 
+    
+    如果应用或服务首先运行 [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet，上传不会失败，如删除已标记文档的加密部分 [所述](#remove-encryption-for-a-labeled-document) 。 或者，在上载之前，将删除原始文件，或者更改文件名。
 
 - 在下列"另存为"方案中，用户打开加密文档可能会遇到延迟：使用 Office 桌面版时，用户为具有应用加密的敏感度标签的文档选择"另存为"。 用户选择SharePoint或OneDrive位置，然后立即尝试在 Office 网页版 中打开该文档。 如果该服务仍在处理加密，用户将看到一条消息，指出必须在其桌面应用中打开文档。 如果用户在几分钟后重试，文档将在 Office 网页版。
 

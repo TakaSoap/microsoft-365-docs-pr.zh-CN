@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: fa9592dccd806ad14e609df073c855170dcb2c76
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326899"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391443"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -136,7 +136,7 @@ ms.locfileid: "53326899"
 
 ID | Severity | 事件描述 | 故障排除步骤
 :---|:---|:---|:---
-1819 | 错误 | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载[1607 年 Windows 10 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
+1819 | Error | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载[1607 年 Windows 10 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>解决设备上载入问题
 
@@ -337,8 +337,10 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 - 在最终用户执行第一次登录之前，设备已关闭或重新启动
 - 在此方案中，SENSE 服务不会自动启动，即使已部署载入包
 
-<div class="alert"><b>注意：</b>OOBE 后的用户登录不再需要 SENSE 服务启动以下或最新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019 及[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总 </br> Windows 10 2021 年 4 月更新汇总的版本[1909](https://support.microsoft.com/kb/5001396) </br> Windows 10 2021 年 4 月 28 日更新汇总的[2004/20H2 版本](https://support.microsoft.com/kb/5001391) </div> 
-<br></br>
+> [!NOTE]
+> OOBE 后的用户登录不再需要 SENSE 服务启动以下或最新的 Windows 版本：Windows 10 版本 1809 或 Windows Server 2019 及[2021](https://support.microsoft.com/kb/5001384)年 4 月 22 日更新汇总。 Windows 10版本 1909 和[2021 年 4 月更新汇总](https://support.microsoft.com/kb/5001396)。 Windows 10 2021 年 4 月 28 日更新汇总发布[版本 2004/20H2。](https://support.microsoft.com/kb/5001391) 
+
+
 > [!NOTE]
 > 以下步骤仅在使用 Microsoft Endpoint Configuration Manager 时Microsoft Endpoint Configuration Manager。 有关使用应用载入的Microsoft Endpoint Configuration Manager，请参阅[Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)。
 

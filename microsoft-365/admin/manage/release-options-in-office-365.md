@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +23,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: 了解如何在管理中心中设置新产品和功能更新的Microsoft 365选项。
-ms.openlocfilehash: 5060e2dc99355d89928ec91c96b7d25e2016c7c4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+description: 了解如何在企业版中设置新产品和功能更新的发布Microsoft 365 管理中心。
+ms.openlocfilehash: ba9c3a71807728e18b612f0b63aff80d04a46a90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593941"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392523"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或定向发布选项
 

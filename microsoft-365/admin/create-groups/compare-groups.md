@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903836"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377177"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -61,6 +61,8 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 通讯组可添加到 Microsoft Teams 中的团队中。
 
+Microsoft 365 组不能是通讯组成员。
+
 ## <a name="security-groups"></a>安全组
 
 [安全组](../email/create-edit-or-delete-a-security-group.md) 用于授予对 Microsoft 365 资源（如 SharePoint）的访问权限。 它们可以简化管理，因为只需管理组，而不是单独将用户添加到每个资源。
@@ -70,6 +72,8 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 可为[ Azure Active Directory 中的动态成员身份配置](/azure/active-directory/users-groups-roles/groups-change-type)安全组，以便根据部门、位置或职衔等用户属性自动添加或删除组成员或设备；或设备属性（如操作系统版本）。
 
 可以将安全组添加到团队中。
+
+Microsoft 365 组不能是安全组成员。
 
 ## <a name="mail-enabled-security-groups"></a>启用邮件的安全组
 

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 将电子邮件作为通讯组列表Microsoft 365以便当成员回复邮件时，邮件看起来好像来自通讯组列表。
-ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c77455b5b990a9c35fc7e47ee81cc9ddef4d0a23
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635710"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392511"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
@@ -40,7 +41,7 @@ ms.locfileid: "52635710"
   
 ## <a name="outlook-on-the-web"></a>Outlook 网页版
 
-1. 打开Outlook"，然后转到收件箱。 
+1. 打开Outlook 网页版并转到收件箱。 
     
 2. 打开发送到通讯组列表的邮件。 
     
@@ -64,6 +65,6 @@ ms.locfileid: "52635710"
 
 ## <a name="related-content"></a>相关内容
 
-[在管理中心创建、编辑](../email/create-edit-or-delete-a-security-group.md)或删除Microsoft 365安全 (，) \
+[创建、编辑或删除](../email/create-edit-or-delete-a-security-group.md)安全组，Microsoft 365 管理中心 (文章) \
 [电子邮件协作](../email/email-collaboration.md) (文章) \
 [向通讯组添加用户或联系人 (](../email/add-user-or-contact-to-distribution-list.md) 文章) 

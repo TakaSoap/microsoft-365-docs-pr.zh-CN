@@ -1,5 +1,5 @@
 ---
-title: 适用于 Microsoft 365 的 Multi-Factor Authentication
+title: 用于身份验证的多重Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,18 +24,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: MFA (多重身份验证) 密码（应该很强）和其他验证方法。
-ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924727"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393639"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
+# <a name="multifactor-authentication-for-microsoft-365"></a>用于身份验证的多重Microsoft 365
 
 密码是验证计算机或联机服务的登录的最常见方法，但它们也是最易受攻击的。 用户可以选择简单密码，并使用相同的密码进行不同计算机和服务的多个登录。
 
-若要为登录提供一个额外的安全级别，必须使用多重身份验证 (MFA) ，它同时使用应强的密码和基于：
+若要为登录提供额外的安全级别，必须使用多重身份验证 (MFA) ，它使用密码（应该很强）和基于：
 
 - 你拥有且不易复制的项，例如智能手机。
 - 你唯一且明显拥有的属性，例如指纹、面部或其他生物识别属性。
@@ -57,11 +58,11 @@ ms.locfileid: "52924727"
 
 这些方法基于你的Microsoft 365计划。
 
-|计划|建议|客户类型|
+|套餐|建议|客户类型|
 |---|---|---|
 |所有Microsoft 365计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
 |Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级版 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户进行 MFA。|小型企业到企业|
-|Microsoft 365 E5 <p> Azure AD 高级版 P2 许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业|
+|Microsoft 365 E5 <p> Azure AD Premium P2许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业版|
 ||||
 
 ### <a name="security-defaults"></a>安全性默认值
@@ -101,7 +102,7 @@ ms.locfileid: "52924727"
 
 - Microsoft 365 商业高级版
 - Microsoft 365 E3 和 E5
-- Azure AD 高级版 P1 和 Azure AD 高级版 P2 许可证
+- Azure AD Premium P1许可证Azure AD Premium P2许可证
 
 对于具有 Microsoft 365 商业高级版 的小型企业，可以通过以下步骤轻松使用条件访问策略：
 
@@ -132,7 +133,7 @@ ms.locfileid: "52924727"
 可以将 Azure AD Identity Protection 和基于风险的条件访问策略与：
 
 - Microsoft 365 E5
-- Azure AD 高级版 P2 许可证
+- Azure AD Premium P2许可证
 
 有关详细信息，请参阅此 [Azure AD 标识保护概述](/azure/active-directory/identity-protection/overview-identity-protection)。
 
@@ -140,7 +141,7 @@ ms.locfileid: "52924727"
 
 你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用其中任何一个，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是 全局管理员角色）执行 MFA。
 
-从管理中心的"活动用户"窗格中为单个用户帐户Microsoft 365 MFA。
+从活动用户窗格中启用单个用户帐户的 MFA Microsoft 365 管理中心。 
 
 !["活动用户"页面上多重身份验证选项的图片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -150,7 +151,7 @@ ms.locfileid: "52924727"
 
 下表显示了通过安全性默认值、条件访问策略和每用户帐户设置启用 MFA 的结果。
 
-|*项目*|已启用|Disabled|辅助身份验证方法|
+|*项*|已启用|Disabled|辅助身份验证方法|
 |---|---|---|---|
 |**安全性默认值**|不使用条件访问策略|可以使用条件访问策略|Microsoft Authenticator 应用|
 |**条件访问策略**|如果启用了任何安全默认值，则不能启用安全默认值|如果已禁用所有条件访问策略，则可以启用安全性默认值|由用户在 MFA 注册期间指定|
@@ -168,7 +169,7 @@ ms.locfileid: "52924727"
 - 启用和禁用安全默认值
 - 配置条件访问策略
 
-在Microsoft 365管理中心，可以配置每用户和服务 MFA 设置。
+在Microsoft 365 管理中心中，可以配置每用户和服务 MFA 设置。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -176,5 +177,5 @@ ms.locfileid: "52924727"
 
 ## <a name="related-content"></a>相关内容
 
-[打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）\
-[打开手机的多重身份验证](../../business-video/set-up-mfa.md)（视频）
+[打开多重身份验证 (](../../business-video/turn-on-mfa.md) 视频) \
+[打开手机和视频视频 (](../../business-video/set-up-mfa.md) 多重) 

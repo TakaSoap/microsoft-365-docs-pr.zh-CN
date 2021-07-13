@@ -11,17 +11,18 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - M365-subscription-management
+ms.custom: AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: “**邮箱未找到**”错误意味着用来连接 Outlook 网页版的帐户没有 Exchange Online 许可证。
-ms.openlocfilehash: 54aa196b0b324054d6220d4437a672a3db2a45ec
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 48e47d279f540693a874c4de2ced535cfbbd753d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338561"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391275"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>在 Outlook 网页版中遇到“邮箱未找到”错误？
 

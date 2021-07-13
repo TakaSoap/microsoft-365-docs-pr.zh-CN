@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: 了解如何使用Microsoft 365 应用版中心中的"Microsoft 365报告"仪表板Microsoft 365使用情况报告。
-ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: 了解如何使用 Microsoft 365 应用版 中的"报表"仪表板Microsoft 365报表报表Microsoft 365 管理中心。
+ms.openlocfilehash: 3147aebc10ff774b8af3ff10f9a76d52a2db87b2
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860745"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377237"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理中心中的报告 - Microsoft 365 应用版使用情况
 
@@ -55,6 +55,6 @@ ms.locfileid: "51860745"
  |4. <br/> |"**平台**"视图显示每个平台的所有应用（如 Windows、Mac、Web 和 Mobile）中的活动用户趋势。 <br/> |
  |5.<br/>|在 **"用户** "图表上，Y 轴表示相应应用的唯一活动用户数。 在 **"平台**   "图表上，Y 轴表示各个平台的唯一用户数。 两个图表上的 X 轴都是应用在给定平台上使用的日期。<br/>|
  6.<br/>|通过选择图例中的项目，可以筛选在图表上看到的系列。 例如，在"用户"图表上，选择"Outlook、Word、Excel、PowerPoint、OneDrive 或 Teams"来仅查看与每一个相关的信息。 更改此选择不会更改它下面的网格表中的信息。|
- |7.<br/>|下表详细显示了每个用户的数据。可在表格中添加或删除列。  <br/><br/>**Username** 是在活动上执行活动的用户Microsoft Apps。<br><br/>**上次激活 (UTC)** 是用户激活其订阅的最近Microsoft 365 应用版日期。<br/><br/>**上次活动 (UTC)** 是用户执行有意活动的最新日期。 要查看指定日期发生的活动，请直接在图表中选择该日期。<br/><br/>其他列标识用户在该应用的该平台上是否处于活动状态， (在Microsoft 365 应用版) 内处于活动状态。 |
+ |7.<br/>|下表详细显示了每个用户的数据。可在表格中添加或删除列。  <br/><br/>**Username** 是在活动上执行活动的用户Microsoft Apps。<br><br/>**上次激活 (UTC)** 是用户在计算机上激活 Microsoft 365 应用版 订阅或登录共享计算机，然后使用其帐户启动应用的最新日期。 <br/><br/>**上次活动 (UTC)** 是用户执行有意活动的最新日期。 要查看指定日期发生的活动，请直接在图表中选择该日期。<br/><br/>其他列标识用户在该应用的该平台上是否处于活动状态， (在Microsoft 365 应用版) 内处于活动状态。 |
  |8.<br/>|选择" **选择列** "图标以在报表中添加或删除列。|
  |9.<br/>|您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  这将导出所有用户的数据，并使您能够执行简单的聚合、排序和筛选以进一步分析。 如果您的用户数少于 100，您可以在报表本身的表中进行排序和筛选。 如果用户数超过 100，则需要导出数据才能进行筛选和排序。|

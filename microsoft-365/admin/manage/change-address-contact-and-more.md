@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 更改组织配置文件，如组织名称、地址、电话、技术联系人和电子邮件。
 ms.date: 03/30/2021
-ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 80f48c001cb4796e60f9ec3cc20c03ac231eccab
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635398"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393687"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>更改组织的地址、技术联系人和其他信息
   
@@ -51,7 +52,7 @@ ms.locfileid: "52635398"
 
 |**Field**  |**说明**  |
 |---------|---------|
-|名称  <br/>   | 此处输入的名称是用户将在以下页面中看到的名称：  <br/>  登录页面：如果用户已经使用其企业或学校电子邮件地址设置了其他 Microsoft 帐户，则他们可能会在登录页面上看到组织名称。这可以帮助用户区分其 工作或学校帐户 和其他帐户，以便他们可以确定在登录时要使用的帐户。  <br/>  组织配置文件链接和页面：指向您所在组织的配置文件的链接会显示组织名称。  <br/>  Yammer：在Yammer中，左侧导航使用组织名称作为家庭导航Yammer的名称。  <br/> OneDrive客户端：组织名称显示在 Windows 上的文件资源管理器和 Mac 上的 Finder、文件路径、OneDrive 活动中心、OneDrive 云图标的工具提示和 OneDrive 设置窗口中。 目前，更新组织名称不会为配置的客户端更新它。 <br/> MS Teams：Teams显示组织名称的组织切换器 <br/>  |
+|名称  <br/>   | 此处输入的名称是用户将在以下页面中看到的名称：  <br/>  登录页面：如果用户已经使用其企业或学校电子邮件地址设置了其他 Microsoft 帐户，则他们可能会在登录页面上看到组织名称。这可以帮助用户区分其 工作或学校帐户 和其他帐户，以便他们可以确定在登录时要使用的帐户。  <br/>  组织配置文件链接和页面：指向您所在组织的配置文件的链接会显示组织名称。  <br/>  Yammer：在Yammer中，左侧导航使用组织名称作为家庭导航Yammer的名称。  <br/> OneDrive 同步客户端：组织名称显示在 Windows 上的文件资源管理器和 Mac 上的 Finder、文件路径、OneDrive 活动中心、OneDrive 云图标的工具提示和 OneDrive 设置窗口中。 目前，更新组织名称不会为配置的客户端更新它。 <br/> MS Teams：Teams显示组织名称的组织切换器 <br/>  |
 |地址、城市、省/自治区/直辖市、邮政编码  <br/>     | 此处输入的地址是你将在帐单上看到的地址，位于"售达"下：帐单上的"售达"地址与配置文件页面上的组织地址相同 (请参阅了解[Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)) 的帐单或发票。  <br/>        |
 |"国家或地区"  <br/>    | 这是公司总部所在的国家或地区。所选的国家或地区将决定你可以使用的服务、你所在国家或地区的税务和支付货币，以及最接近你的数据中心的位置（请参阅 [Microsoft Office 许可限制](https://office.microsoft.com/redir/FX103037529)）。  <br/>注意：选中后，无法更改国家/地区。 如果要更改选定内容，需取消订阅并重新注册。 有关此过程的帮助， [请联系支持人员](../../business-video/get-help-support.md)。        |
 |电话  <br/>     | 这是您的公司主要号码。它通常是您的公司总部的号码。  <br/>        |
@@ -62,7 +63,7 @@ ms.locfileid: "52635398"
 
 作为管理员，你可以更改备用电子邮件地址以重置密码。
 
-1. 转到管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365中心</a>。
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"。</a>
 
 2. 在标头中，选择配置文件图标，然后选择"**查看帐户"。**
 

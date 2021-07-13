@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 61166c78f31a86882ef0e2dc2a79683aea794040
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108291"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383458"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -99,7 +99,9 @@ ms.locfileid: "53108291"
 3. 自定义安全策略
 4. 默认安全策略
 
-换句话说，严格保护策略的设置会覆盖 **标准** 保护策略的设置，这将覆盖自定义策略中的设置，这将覆盖默认策略中的设置。
+换句话说，严格保护策略的设置会覆盖 **标准** 保护策略的设置，这将覆盖自定义策略中的设置，这将覆盖默认策略中的设置。 
+
+例如，如果标准保护中存在一个安全设置，并且管理员为用户启用了标准保护，那么将应用标准保护设置，而不是在自定义策略或默认策略 (中为同一用户) 配置的标准保护设置。  请注意，在将自定义策略应用于组织中其他用户以满足特定需求时，你可能希望仅对部分组织应用标准或严格保护策略。
 
 ## <a name="assign-preset-security-policies-to-users"></a>向用户分配预设安全策略
 
@@ -132,7 +134,7 @@ ms.locfileid: "53108291"
 
    对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
 
-   - 排除 **这些** 用户、组和域：若要为策略应用于 (收件人例外的内部收件人添加) ，请选择此选项并配置例外。 设置和行为与条件完全相同。
+   - **排除这些用户、组和域**: 若要为策略应用于的内部收件人添加例外 (收件人例外)，请选择此选项并配置例外。 设置和行为与条件完全相同。
 
    完成后，单击“**下一步**”。
 
@@ -140,7 +142,7 @@ ms.locfileid: "53108291"
 
    设置和行为与适用于页面 **的 EOP 保护完全相同** 。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 5. 在"**查看并确认更改"** 页上，验证您的选择，然后单击"确认 **"。**
 

@@ -15,16 +15,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用新闻服务为组织启用自定义新闻源，为用户提供行业最新新闻标题和来自组织的信息。
-ms.openlocfilehash: 4282cb71bd5b2847528d651e0ab94b5fe966cedf
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: dedc39d9c82f66d64660f66be8e77ba954246e09
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650025"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392835"
 ---
 # <a name="manage-industry-news"></a>管理行业新闻
 
-若要为用户提供有关你的行业和组织中信息的新闻标题，请使用新闻服务为组织启用自定义新闻源。 还可以启用每日行业更新电子邮件，并管理 必应 主页和 Microsoft Edge 新选项卡页的设置 (Edge 87) 。 
+若要为用户提供有关你的行业和组织中信息的新闻标题，请使用新闻服务为组织启用自定义新闻源。 还可以启用每日行业更新电子邮件，并管理新选项卡必应和Microsoft Edge的设置。 
 
 ## <a name="what-your-users-will-see"></a>你的用户将看到什么
 
@@ -44,7 +44,7 @@ ms.locfileid: "51650025"
 
 作为管理员，你可以控制组织的新闻源设置，包括所选行业和 必应 主页、Microsoft Edge 新选项卡页 (从 Edge 87) 发布开始，以及电子邮件体验。 
 
-1. In the Microsoft 365 admin center， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. 在" **新闻"** 面板中，单击" **常规"** 选项卡。
 
@@ -60,7 +60,7 @@ ms.locfileid: "51650025"
 
 可以将包含相关行业新闻的每日电子邮件更新发送到用户的收件箱。 为用户设置每日电子邮件更新： 
 
-1. In the Microsoft 365 admin center， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. 在" **新闻"** 面板中，单击 **"行业更新"** 选项卡。 
 
@@ -72,7 +72,7 @@ ms.locfileid: "51650025"
 
 你可以自定义必应主页，以包含有关你的行业的新闻。 
 
-1. In the Microsoft 365 admin center， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. 在"**新闻"** 面板中，单击 **"必应主页**"选项卡，然后选择"**在主页必应包含"。** 
 
@@ -81,7 +81,7 @@ ms.locfileid: "51650025"
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge新选项卡页 
 当用户使用有效的工作或学校Microsoft Edge (登录 87) 或更高版本时，他们可以看到专为组织定制的新闻。
 
-1. In the Microsoft 365 admin center， go to **设置**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
+1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. 在"**新闻"** 面板中，Microsoft Edge **新选项卡页"。**
 3. 选择 **"Office 365选项卡页上的"允许显示内容"。** 启用后，用户可以自定义其新选项卡以显示来自Office 365的信息，包括推荐文件和最近使用的文件，以及SharePoint网站和其他信息。
 4. 选择 **"显示新选项卡页上的公司信息和行业新闻"。** 对于选择查看新选项卡上的文章的用户，将显示有关组织和行业的新闻文章。

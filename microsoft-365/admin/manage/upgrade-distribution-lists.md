@@ -1,5 +1,5 @@
 ---
-title: 将通讯组列表Microsoft 365组Outlook
+title: 在 Outlook 中将通讯组列表升级为 Microsoft 365 组
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Microsoft 365 中的Outlook，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: aef797a2bf052fcc84c9220993c2e6706eae5f61
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698936"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391383"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表Microsoft 365组Outlook
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>在 Outlook 中将通讯组列表升级为 Microsoft 365 组
 
 可以将通讯组列表升级到Microsoft 365组Outlook。 这是为组织的通讯组列表提供组组的所有特性Microsoft 365方式。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
@@ -153,7 +155,6 @@ Get-DistributionGroup| Foreach-Object{
 |安全组  <br/> |否  <br/> |
 |动态通讯组列表  <br/> |否  <br/> |
 |已转换为 **RoomLists 的通讯组列表**  <br/> |否  <br/> |
-|**MemberJoinRestriction** 和/或 **MemberDepartRestriction 已关闭的****通讯组列表**  <br/> |否  <br/> |
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>检查哪些 DLL 有资格升级
 
@@ -173,11 +174,11 @@ Get-DistributionGroup| Foreach-Object{
 
 - 例如Outlook：当有人尝试在 Outlook 中通过键入 Microsoft 365 组名称在迁移后发送电子邮件时，收件人将解析为通讯组列表而不是组。 收件人的联系人卡片将是通讯组列表联系人卡片。 这是因为收件人缓存或名称缓存位于Outlook。 电子邮件将成功发送到组，但可能会导致发件人混淆。<br/>可以执行本文中有关自动完成Outlook[重置](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list)缓存的信息，这将修复此问题。
 
-- For Outlook on the web： In case Outlook on the web， the distribution list recipient will still remain in the cache. 你可以按照从自动完成列表中[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)删除建议的名称或电子邮件地址中的步骤刷新缓存以查看组联系人卡片。
+- 例如Outlook 网页版：如果Outlook 网页版，通讯组列表收件人仍将保留在缓存中。 你可以按照从自动完成列表中[](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)删除建议的名称或电子邮件地址中的步骤刷新缓存以查看组联系人卡片。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组的成员是否收到收件箱中的欢迎电子邮件？
 
-否。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
+不正确。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果未升级一个或多个 DLL，将如何？
 

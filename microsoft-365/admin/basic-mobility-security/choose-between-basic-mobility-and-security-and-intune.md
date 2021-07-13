@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: 基本移动性和安全性是基本移动Microsoft 365的一部分。
-ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3404d2aeecd047fecec573bf1d60407ad3659efe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228263"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393291"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>在"基本移动性和安全性"或"Intune"之间选择
 
@@ -33,7 +34,7 @@ ms.locfileid: "53228263"
 
 基本移动性和安全性以及 Intune 均包含在各种计划中，如下表所述。
 
-| 计划 | 基本移动性和安全性 | Microsoft Intune |
+| 套餐 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 应用版|是|否|
 |Microsoft 365 商业基础版|是|否|

@@ -11,20 +11,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: 了解如何使用 Microsoft 365 管理中心中的 Microsoft 365 报告仪表板Microsoft 365活动用户报告，并查看使用的产品许可证数量。
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: 了解如何使用 Microsoft 365 报告仪表板获取活动Microsoft 365 管理中心并了解使用的产品许可证数量。
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924367"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391359"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>评估Microsoft 365活动用户报告
 
@@ -65,4 +67,4 @@ You can view active users in the Office 365 by choosing the **Active users** tab
 
 
 
-如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。 请查看活动报告中的如何 **隐藏用户级别详细信息？** 部分 [Microsoft 365管理中心。](activity-reports.md)  
+如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。 请查看活动报告中的活动报告中的如何隐藏用户 **级别**[Microsoft 365 管理中心。](activity-reports.md)  

@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid: MET150
 description: 了解如何管理Office组织中用户的脚本设置。
-ms.openlocfilehash: e0cb52c4a8f48ff2310c83ffce61e08a0236ed59
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: fea50838cf1089b73a6af5bbf86d490293831085
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572305"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392667"
 ---
 # <a name="manage-office-scripts-settings"></a>管理 Office 脚本设置
 
-[Office脚本](/office/dev/scripts)允许用户通过录制、编辑和运行 Web 上的Excel脚本来自动执行任务。 Office脚本适用于Power Automate，用户通过使用 Excel Online (Business) 连接器对工作簿运行脚本。 Microsoft 365管理员可以从Office管理中心管理Microsoft 365脚本设置。
+[Office脚本](/office/dev/scripts)允许用户通过录制、编辑和运行 Web 上的Excel脚本来自动执行任务。 Office脚本适用于Power Automate，用户通过使用 Excel Online (Business) 连接器对工作簿运行脚本。 Microsoft 365管理员可以从Office管理脚本Microsoft 365 管理中心。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -43,7 +45,7 @@ ms.locfileid: "52572305"
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>管理脚本Office和脚本共享的可用性
 
-1. 在"Microsoft 365管理中心"中，转到 **"设置""** \> **组织设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">""服务"</a>选项卡。
+1. In the Microsoft 365 管理中心， go to the **设置** \> **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services</a> tab.
 
 2. 选择 **Office脚本"。**
 
@@ -94,11 +96,11 @@ ms.locfileid: "52572305"
 
 8. 选择“**保存**”。
 
-    更改脚本设置最多可能需要 48 Office脚本设置才能生效。
+    对 Office 脚本设置的更改最多可能需要 48 小时才能生效。
 
 ## <a name="next-steps"></a>后续步骤
 
-由于 Office 脚本适用于 Power Automate，因此建议您查看现有的数据丢失防护 (DLP) 策略，以确保组织的数据在用户使用 Office 脚本时保持受保护状态。 有关详细信息，请参阅 DLP ([策略) 数据丢失防护](/power-automate/prevent-data-loss)。
+由于 Office 脚本适用于 Power Automate，因此建议您查看现有的数据丢失防护 (DLP) 策略，以确保组织的数据在用户使用 Office 脚本时保持受保护状态。 有关详细信息，请参阅[数据丢失防护 (DLP) 策略](/power-automate/prevent-data-loss)。
 
 ## <a name="related-content"></a>相关内容
 

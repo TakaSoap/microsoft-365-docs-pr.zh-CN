@@ -1,5 +1,5 @@
 ---
-title: 从已加入 Azure AD 的设备访问本地资源Microsoft 365 商业版
+title: 从已加入 Azure AD 的设备访问 Microsoft 365 Business 中的本地资源
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -16,17 +16,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从已加入 Azure Active Directory 设备获取对本地资源（如业务线应用、文件共享和打印机Windows 10的访问权限。
-ms.openlocfilehash: 72b3c5ae538cad24fc12e25717dedccb2fdc9017
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843314"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393451"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>从已加入 Azure AD 的设备访问本地资源，Microsoft 365 商业高级版
 
@@ -57,7 +58,7 @@ ms.locfileid: "52843314"
 
 如果你Windows Azure-AD 加入的设备之前已加入域或工作组中，请考虑以下限制：
 
-- 当设备 Azure AD 加入时，它将创建一个新用户，而无需引用现有配置文件。 必须手动迁移配置文件。 用户配置文件包含收藏夹、本地文件、浏览器设置和"开始"菜单设置等信息。 最佳方法是查找第三方工具，将现有文件和设置映射到新配置文件。
+- 当设备 Azure AD 加入时，它将创建一个新用户，而无需引用现有配置文件。 必须手动迁移配置文件。 用户配置文件包含收藏夹、本地文件、浏览器设置和浏览器"开始"菜单设置。 最佳方法是查找第三方工具，将现有文件和设置映射到新配置文件。
 
 - 如果设备使用组策略对象 (GPO) ，则某些 GPO 在 Intune 中可能[](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (配置服务提供程序) 相当。 运行 [MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520) 以查找现有 GPO 的可比较的 CSP。
 

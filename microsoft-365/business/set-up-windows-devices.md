@@ -22,17 +22,18 @@ ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 为Windows运行 Windows 10 专业版 的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
-ms.openlocfilehash: 7a9c75f6ec14605225d40c103c18e62937e773bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a911414b1a7abef259f4c5fffbdd48e07f9ebfdd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635866"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393351"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为Windows用户设置Microsoft 365 商业高级版设备
 
@@ -46,7 +47,7 @@ ms.locfileid: "52635866"
   
 请参阅 [验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad) 以验证是否具有升级，或确保升级有效。
 
-## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>观看：连接你的电脑Microsoft 365 商业版
+## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>观看：连接电脑Microsoft 365企业
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
@@ -130,4 +131,4 @@ To start using the Microsoft 365 商业高级版 account， go to the Windows **
   
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365企业培训视频 (](../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频](../business-video/index.yml)(链接页面)

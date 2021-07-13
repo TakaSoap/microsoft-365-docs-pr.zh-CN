@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 89182ddc317bfefdf0e82632bbe8ec8f78f81ada
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52808995"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377213"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
-可以轻松查看企业中的用户如何使用 Microsoft 365 服务。例如，可找出使用某项服务较多的用户和达到配额的用户，或是完全不需要 Microsoft 365 许可证的用户。
+可以轻松查看企业中的用户如何使用 Microsoft 365 服务。例如，可找出使用某项服务较多且达到配额的用户，或是完全不需要 Microsoft 365 许可证的用户。报表中不会包含永久许可证模型。 
   
 可查看最近 7 天、30 天、90 天和 180 天的报表。无法立即获得所有报表周期的数据。在 48 个小时内可获得报表。
   
