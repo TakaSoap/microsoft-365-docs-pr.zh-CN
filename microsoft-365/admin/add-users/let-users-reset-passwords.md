@@ -19,18 +19,19 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何设置策略以允许用户使用自助服务密码重置工具重置自己的密码。
-ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634264"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394311"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -42,7 +43,7 @@ ms.locfileid: "52634264"
 
 - 该功能使用 Azure。将在执行下面的步骤时，自动在 Azure 中 **免费** 获得此功能。如果不使用其他 Azure 功能，则不需要支付任何费用即可启用自助密码重置功能。
 
-- **如果你使用的是本地 Active Directory，** 则上述两点不适用。 相反，你可以设置它，**但它需要 Azure AD** 订阅的付费高级版。
+- **如果你使用的是本地 Active Directory，** 则上述两点不适用。 相反，你可以进行设置，**但需要付费订阅** 才能Azure AD Premium 。
 
 本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
 
@@ -75,5 +76,5 @@ ms.locfileid: "52634264"
 ## <a name="related-content"></a>相关内容
 
 [为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
-[将单个用户的密码设置为永不](set-password-to-never-expire.md) 过期， (文章) \
-[Microsoft 365 商业版培训视频 (](../../business-video/index.yml)链接页) 
+[将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
+[Microsoft 365业务培训视频 (](../../business-video/index.yml)链接页) 

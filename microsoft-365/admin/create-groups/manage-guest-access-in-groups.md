@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组、查看来宾用户和使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 41a42a0b4fc76b71892f758519db56f4c1adc897
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635758"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394059"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>管理来宾组中来宾Microsoft 365访问
 
@@ -45,7 +47,7 @@ ms.locfileid: "52635758"
 
 ## <a name="manage-groups-guest-access"></a>管理组来宾访问
 
-如果要在组中启用或禁用来宾访问，可以在管理中心Microsoft 365访问。
+如果要在组中启用或禁用来宾访问，可以在Microsoft 365 管理中心。
 
 1. In the admin center， go to **Show all** \> **设置** \> **Org settings** and on the **Services** tab， select **Microsoft 365 groups**.
   
@@ -53,7 +55,7 @@ ms.locfileid: "52635758"
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>从管理中心Microsoft 365来宾添加到组
 
-如果目录中已存在来宾，你可以从管理中心将来宾Microsoft 365组。  (动态成员身份的[组必须在](/azure/active-directory/enterprise-users/groups-create-rule).Azure Active Directory .) 
+如果目录中已存在来宾，你可以将它们添加到你的Microsoft 365 管理中心。  (动态成员身份的[组必须在](/azure/active-directory/enterprise-users/groups-create-rule).Azure Active Directory .) 
   
 1. 在管理中心，转到组  >  **组** 页面。
   
@@ -70,6 +72,6 @@ ms.locfileid: "52635758"
 ## <a name="related-content"></a>相关内容
 
 [阻止来自特定组的来宾](../../solutions/per-group-guest-access.md) (文章) \
-[管理管理中心中的Microsoft 365成员身份 (](add-or-remove-members-from-groups.md)文章) \
+[管理组成员身份，Microsoft 365 管理中心 (](add-or-remove-members-from-groups.md)文章) \
 [Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) \
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (文章) 

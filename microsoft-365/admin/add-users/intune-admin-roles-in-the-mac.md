@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759902"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394323"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Intune 管理员角色
 
-你的 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。 每个管理员角色都映射到常用的业务功能，并授予这些用户在管理中心执行特定任务的权限。
+你的 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
 Microsoft 365 管理中心可用于管理一些 Microsoft Intune 角色。 然而，这些角色是 Intune 管理中心中可用角色的子集。 是否在查找 Microsoft Intune 的详细角色说明？ 查看 [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
@@ -56,10 +57,8 @@ Microsoft 365 管理中心可用于管理一些 Microsoft Intune 角色。 然�
 
 在合作伙伴将这些角色分配给用户之前，必须先将合作伙伴作为委派管理员添加到你的帐户中。 此过程由授权合作伙伴发起。 合作伙伴将向你发送一封电子邮件，询问你是否要授予其作为委派管理员的权限。有关说明，请参阅[授权或删除合作伙伴关系](../misc/add-partner.md)。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于 Microsoft 365 管理员角色](about-admin-roles.md)
-
-[分配管理员角色](assign-admin-roles.md)
-
-[Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)
+[关于 Microsoft 365 管理员角色](about-admin-roles.md)（文章）\
+[分配管理员角色](assign-admin-roles.md)（文章）\
+[Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)（文章）

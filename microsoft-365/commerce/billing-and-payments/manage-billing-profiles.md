@@ -18,15 +18,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
 ms.date: 04/02/2021
-ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537327"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394625"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
@@ -34,13 +35,13 @@ ms.locfileid: "52537327"
 
 > [!NOTE]
 >
-> 从管理中心购买产品和服务的客户 Microsoft.com 或管理中心的"购买服务"Microsoft 365配置文件。 
+> 计费配置文件不适用于从 Microsoft.com 购买产品和服务的客户或客户在 Microsoft 365 管理中心。 
 
 ## <a name="what-are-billing-profile-roles"></a>什么是计费配置文件角色？
 
 帐单配置文件上的角色具有控制购买以及查看和管理发票的权限。 向跟踪、组织和支付发票的用户分配这些角色。 例如，您组织中采购工作组的成员。
 
-| 角色                         | 说明                                                                      |
+| Role                         | 说明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | 计费配置文件所有者        | 管理计费配置文件的所有内容                                          |
 | 计费配置文件参与者  | 管理计费配置文件中的权限之外的所有内容                        |
@@ -69,11 +70,11 @@ ms.locfileid: "52537327"
 >
 > 只能将计费配置文件角色分配给贵组织的用户。
 
-## <a name="need-help-contact-support"></a>需要帮助? 联系支持人员
+## <a name="need-help-contact-support"></a>需要帮助？ 联系支持人员
 
 如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
 
-如果对管理中心中的帐单配置文件有疑问或Microsoft 365帮助，请联系[支持](../../business-video/get-help-support.md)人员。
+如果你有问题或需要帮助，请联系支持人员Microsoft 365 管理中心[配置文件](../../business-video/get-help-support.md)。
 
 ## <a name="related-content"></a>相关内容
 

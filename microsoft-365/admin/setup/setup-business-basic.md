@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业基础版订阅。
-ms.openlocfilehash: d0ac9835be25377496893d62076a5cdc426f3b9e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f7569645753f292760f32ba932aac7b83c602b72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227735"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393819"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>设置 Microsoft 365 商业基础版
 

@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: '了解如何使用 PowerShell 为组织中所有用户或特定用户启用或禁用待筛选Exchange功能。 '
-ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706103"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393975"
 ---
 # <a name="configure-clutter-for-your-organization"></a>为组织配置待筛选邮件
 
@@ -55,12 +57,12 @@ ms.locfileid: "52706103"
 
 如果使用 PowerShell 批量创建用户，则需要针对每个用户的邮箱运行 [Set-Clutter](/powershell/module/exchange/set-clutter) 来管理待筛选邮件。 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时对 Web 上的用户显示待筛选邮件Outlook开关？
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时对用户显示待筛选邮件打开/关闭Outlook 网页版？
 <a name="bkmk_onoff"> </a>
 
 作为管理员，您可以使用 PowerShell 重新启用待筛选邮件Exchange功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
   
- **如果你将 Web 上的Outlook订阅一Microsoft 365 商业高级版：**
+ **如果你将 Outlook 网页版订阅Microsoft 365 商业高级版：**
   
 - 如果用户当前已启用待筛选邮件功能： 
     

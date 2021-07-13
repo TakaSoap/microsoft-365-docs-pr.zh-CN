@@ -19,15 +19,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: MET150
 description: 在订阅中添加Microsoft 365存储。 通过额外的文件存储，可以在 SharePoint Online 和 OneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: dee7debfbd2b624f3bf82bd573c81e7e1373b31e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 28716c9506f31fd32f821cfff90bd8eaa19e6495
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256815"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394649"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为订阅添加存储空间
 
@@ -36,7 +37,7 @@ ms.locfileid: "53256815"
 > [!NOTE]
 > 如果你通过批量许可或云解决方案提供商购买了订阅，你无法直接从 **microsoft Office 365 额外文件存储空间** 你的组织购买订阅。 请联系你的代表或合作伙伴寻求帮助。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你必须是全局管理员SharePoint管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 

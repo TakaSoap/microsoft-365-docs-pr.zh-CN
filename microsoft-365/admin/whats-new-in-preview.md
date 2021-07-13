@@ -1,5 +1,5 @@
 ---
-title: 管理中心中新增Microsoft 365功能？
+title: 最新功能Microsoft 365 管理中心？
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: 管理Microsoft 365中心 - 了解本月添加的功能。
+description: The Microsoft 365 管理中心 - learn about the features that were added this month.
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841962"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394689"
 ---
-# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365管理中心的新增功能
+# <a name="whats-new-in-the-microsoft-365-admin-center"></a>最新功能Microsoft 365 管理中心
 
 ::: moniker range="o365-21vianet"
 
@@ -37,22 +37,48 @@ ms.locfileid: "52841962"
 
 ::: moniker-end
 
-我们正在不断将新功能添加到 Microsoft 365[管理](../business-video/admin-center-overview.md)中心，修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
+我们正在不断将新功能添加到[Microsoft 365 管理中心，修复](../business-video/admin-center-overview.md)我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
 
 如果你希望了解其他 Microsoft 云服务的新增功能：
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [Exchange管理中心的新增功能](/Exchange/whats-new)
 - [Microsoft Intune 新增功能](/mem/intune/fundamentals/whats-new)
-- [Microsoft 365中心的新增功能](/Office365/SecurityCompliance/whats-new)
+- [最新功能Microsoft 365 合规中心](/Office365/SecurityCompliance/whats-new)
 - [Microsoft 365 Defender 的新增功能](../security/mtp/whats-new.md)
 - [SharePoint管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
 - [如何检查Windows发布运行状况](/windows/deployment/update/check-release-health)
 
+## <a name="july-2021"></a>2021 年 7 月
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 管理中心搜索
+
+现在，可以在搜索服务中搜索Microsoft 365 管理中心。 可以通过社交媒体、行业出版物或其他管理员了解当前事件。 你现在可以转到管理中心，查找有关事件的更多详细信息并了解对组织的影响。 只需在管理中心搜索事件 ID。
+
+:::image type="content" source="../media/incident-id.png" alt-text="Screenshot： Searching for incident ID in the admin center":::
+
+### <a name="support-ticket-insight-for-premier-organizations"></a>支持顶级组织的票证见解
+
+我们添加了两个 **图，称为**"按产品表示的量趋势"和"量趋势"，可直观地了解支持量。
+
+如果组织每月 **的支持** 案例数在增加或减少，"量趋势"选项卡下的绘制图将突出显示趋势。 你可以将鼠标悬停在图形上，检查每个月创建的支持案例数。
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot： Graph that highlights the trend if support cases are increasing or decreasing for your organization month over month":::
+
+" **按产品表示的** 量趋势"图显示了每个月支持案例最高的前 3 种产品。 我们已在表中启用筛选，你现在可以按产品、严重性和日期筛选 **结果**。  
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot： Graph shows the top 3 products of each month with the highest support cases":::
+
+我们还在"查看服务请求"表中添加了 2个新字段，即"严重性"和"关闭日期"，以便你深入了解票证。 
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot： Table that shows support ticket sorting by severity and date.":::
+
+若要在导航窗格中查看这些Microsoft 365 管理中心，请转到左侧导航  >  **窗格中的"支持查看** 服务请求"。
+
 ## <a name="june-2021"></a>2021 年 6 月
 
-### <a name="microsoft-365-admin-center-search"></a>Microsoft 365管理中心搜索
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 管理中心搜索
 
 我们已向搜索功能添加了几个新类别。
 
@@ -60,7 +86,7 @@ ms.locfileid: "52841962"
 
 - 现在，可以通过全局搜索找到简化的安装体验。 这有助于你和团队快速开始使用新功能。 例如，搜索 **将密码设置为永不过期**。
 
-若要了解有关管理中心中的搜索功能，请参阅在管理中心[Microsoft 365搜索](manage/search-in-the-mac.md)。
+若要了解有关管理中心中的搜索功能，请参阅在管理中心[Microsoft 365 管理中心。](manage/search-in-the-mac.md)
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -142,11 +168,11 @@ ms.locfileid: "52841962"
 
 ### <a name="monitor-your-most-important-accounts"></a>监视最重要的帐户
 
-您可以监视和跟踪发送给业务影响较高的用户（如 CEO）的失败或延迟的电子邮件。 通过向管理中心中的优先级帐户列表添加用户来跟踪Microsoft 365帐户。 添加有权访问敏感或高优先级信息的主管人员、领导、经理或其他用户。
+您可以监视和跟踪发送给业务影响较高的用户（如 CEO）的失败或延迟的电子邮件。 通过向优先级帐户列表中添加用户来跟踪优先级Microsoft 365 管理中心。 添加有权访问敏感或高优先级信息的主管人员、领导、经理或其他用户。
 
 优先级帐户仅适用于满足以下两个要求的组织：
 
-- Office 365E3 或 Microsoft 365 E3、Office 365 E5 或 Microsoft 365 E5。
+- Office 365 E3、Microsoft 365 E3、Office 365 E5或Microsoft 365 E5。
 - 至少 10，000 个许可证和至少 50 个每月活动Exchange Online用户。
 
 ![该功能的"设置"页：监视最重要的帐户](../media/MAC-WN-PriorityAccounts.png)
@@ -162,7 +188,7 @@ ms.locfileid: "52841962"
 
 我们已开始为管理中心推出新的搜索体验，我们在等待你试用。 ![搜索框已移动到横幅区域。 Alt+S，从任意页面搜索。](../media/MAC-WN-GlobalSearch.png)
 
-- The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page， not just the Home page. 我们甚至有一个快捷方式 **：Alt+S**。
+- The Search box moved to the header area where it says "Microsoft 365 管理中心" so you now search from any page， not just the Home page. 我们甚至有一个快捷方式 **：Alt+S**。
 - 搜索更智能，可以更快地提供更好的结果。 尝试键入"2fa"以开始。
 - 搜索结果按您可以执行的项目或操作类型进行组织。
   - **用户**：选择用户的名称，你可以直接编辑该用户。 如果选择其名称旁边的三个点 (其他) 菜单，可以重置其密码。 可以按用户显示名称、名字、用户名或主电子邮件地址以及电子邮件别名进行搜索。 但是，若要获取完全匹配项，请按主电子邮件地址或用户名进行搜索。
@@ -207,7 +233,7 @@ ms.locfileid: "52841962"
 - 修复 DKIM 设置问题
 - 诊断 Intune 用户注册错误
 
-我们正在向其他一些管理中心推出你已在 Microsoft 365管理中心内看到的新和改进的支持体验。 Teams管理中心和安全与合规管理中心已拥有这一新体验。 很快 **，Exchange管理** 中心、SharePoint管理中心和 **Office.com** 将随这一新的管理员帮助体验一起更新。
+我们正在向其他一些管理中心推出你已Microsoft 365 管理中心改进的新支持体验。 Teams管理中心和安全与合规管理中心已拥有这一新体验。 很快 **，Exchange管理** 中心、SharePoint管理中心和 **Office.com** 将随这一新的管理员帮助体验一起更新。
 
 ### <a name="manage-changes-with-microsoft-planner"></a>使用 Microsoft Planner 管理更改
 
@@ -269,7 +295,7 @@ ms.locfileid: "52841962"
 
 5 月 12 日，我们宣布发布适用于每月频道Office频道Enterprise频道。 此更新频道在每月的第二个星期二Office一次新的更新功能。
 
-如果你允许用户从门户自行安装Office，你可以为用户选择"每月Enterprise频道"。 为此，请登录到管理Microsoft 365，然后转到显示所有 设置  >   >  **Org 设置**  >  **服务**  >  **Office软件下载设置。** 如果选择每月一 **次 (Monthly Enterprise Channel) ，Office** 的任何新的自助安装都将配置为使用每月频道Enterprise频道。
+如果你允许用户从门户自行安装Office，你可以为用户选择"每月Enterprise频道"。 为此，请登录到 Microsoft 365 管理中心并转到显示所有 设置 Org  >   >  **设置**  >  **服务**  >  **Office软件下载设置。** 如果选择每月一 **次 (Monthly Enterprise Channel) ，Office** 的任何新的自助安装都将配置为使用每月频道Enterprise频道。
 
 结合每月频道Enterprise，我们还正在修改现有更新频道的名称。 例如，每月频道被重命名为当前频道。 新名称将于 2020 年 6 月 9 日生效。
 
@@ -277,7 +303,7 @@ ms.locfileid: "52841962"
 
 ### <a name="new-admin-roles"></a>新的管理员角色
 
-我们已将一些新的Azure Active Directory管理员角色添加到Microsoft 365中心。
+我们已将一些新的Azure Active Directory管理员角色添加到Microsoft 365 管理中心。
 
 - 混合标识管理员角色授予用户管理云预配和身份验证服务的权限。
 - 网络管理员角色允许用户管理网络位置，并查看适用于 Microsoft 365 即服务应用的网络见解。
@@ -302,7 +328,7 @@ ms.locfileid: "52841962"
 ### <a name="docs-training-and-videos-may"></a>5 月提供的文档 (培训) 
 
 - **Microsoft 365** 视频系列中的新增功能：本月，我们将介绍 Teams 管理和安全与合规中心中的新支持体验、Planner 与消息中心的集成以及 Microsoft Teams 中新的 3x3 视频布局。 
-- 管理[Microsoft 365](./index.yml)中心帮助中心页面已更新，可帮助你更快找到所需的内容。 如果你立即查看该页面，我们添加了一张卡片，告知你重要更新和更改。
+- 已[Microsoft 365 管理中心帮助](./index.yml)中心页面，以帮助你更快找到所需的内容。 如果你立即查看该页面，我们添加了一张卡片，告知你重要更新和更改。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -310,7 +336,7 @@ ms.locfileid: "52841962"
 
 [2020 年 4 月](#april-2020)
 
-我们这样做了！ 我们已执行第二步实现统一角色体验，现在可在管理中心管理 Intune Microsoft 365角色。 您还可以利用搜索角色和查看角色权限等功能。 这意味着，无需使用两个单独的工具来管理 Microsoft 365 和 Intune 的角色。 登录管理中心Microsoft 365，你将看到"角色"页面上有两个透视表，一个适用于 Azure AD，另一个适用于 Intune。
+我们这样做了！ 我们针对统一角色体验已执行第二步，你现在可以在 Microsoft 365 管理中心 中管理 Intune 角色。 您还可以利用搜索角色和查看角色权限等功能。 这意味着，无需使用两个单独的工具来管理 Microsoft 365 和 Intune 的角色。 当你登录到 Microsoft 365 管理中心，你将看到"角色"页面上有两个透视表，一个适用于 Azure AD，另一个适用于 Intune。
 
 ![选择 Intune 透视表的角色页面](../media/MAC-WN-IntuneRoles.png)
 
@@ -322,11 +348,11 @@ ms.locfileid: "52841962"
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"需要帮助吗？" 在安全Teams合规&管理中心中启动
 
-现在Teams管理中心、安全中心和合规中心使用相同的"需要帮助？" 管理中心Microsoft 365查找帮助和联系支持人员的功能。 我们收到了管理员的很多反馈，你希望获得相同级别的帮助和支持，并且我们很高兴为你带来帮助和支持。 试一试，并告诉我们你的反馈！
+现在Teams管理中心、安全中心和合规中心使用相同的"需要帮助？" 功能，Microsoft 365 管理中心查找帮助和联系支持人员。 我们收到了管理员的很多反馈，你希望获得相同级别的帮助和支持，并且我们很高兴为你带来帮助和支持。 试一试，并告诉我们你的反馈！
 
 #### <a name="need-chat"></a>需要聊天？
 
-我们的支持代理一直在在家工作，同时在家工作时仍接受客户案例和 Internet 带宽限制可能会影响客户呼叫质量。 为了继续支持你，我们已在管理中心为商业客户启动Microsoft 365支持选项。
+我们的支持代理一直在在家工作，同时在家工作时仍接受客户案例和 Internet 带宽限制可能会影响客户呼叫质量。 为了继续支持你，我们已为 Microsoft 365 管理中心 中的商业客户启动实时聊天Microsoft 365 管理中心。
 
 创建服务请求时，除了电话和电子邮件外，你现在还会看到聊天选项。 选择"聊天"作为首选的通信通道并创建请求。 创建请求后，可以在准备好与 Microsoft 代理聊天时开始聊天。
 
@@ -393,7 +419,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>自定义组织的移动应用SharePoint主题
 
-使用 Microsoft 365 管理中心，你现在可以在适用于 iOS 的 SharePoint 移动应用和适用于 Android 的 SharePoint 中自定义组织的主题。 此功能提供移动 Intranet 应用体验，可方便员工SharePoint Online 进行匹配。 主题自定义包括徽标图像、导航栏颜色、文本和图标颜色以及主题色，便于识别。
+通过使用 Microsoft 365 管理中心，你现在可以在适用于 iOS 的 SharePoint 中自定义组织的主题，SharePoint Android 移动应用中自定义组织的主题。 此功能提供移动 Intranet 应用体验，可方便员工SharePoint Online 进行匹配。 主题自定义包括徽标图像、导航栏颜色、文本和图标颜色以及主题色，便于识别。
 
 ![将管理中心设置映射到移动应用的图表。](../media/MAC-WN-CustThemeSP.png)
 
@@ -429,7 +455,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 > [!TIP]
 > 只要至少是一个组织的记录合作伙伴，就不必执行任何操作来使组织切换程序显示。
 
-1. 在管理Microsoft 365，选择组织名称。
+1. 在"Microsoft 365 管理中心中，选择组织名称。
 ![屏幕捕获：主页顶部显示具有切换器图标的组织配置文件名称。](../media/MAC-Organization-switcher.png)
 
 2. 在组织切换器中，选择要管理的组织。
@@ -442,7 +468,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 本月组区域中的一些更改：
 
 - **按组名称排序**：可以通过选择"组名称"列，按字母顺序对 **组列表** 进行排序。
-- **Restore deleted Microsoft 365 groups**： You don't have to go to the Exchange admin center to restore deleted Microsoft 365 groups. Go to **Microsoft 365 admin center** Groups \>  \> **Deleted groups** \> (select a group from the list) Restore \> **group**. 它将组还原回组 **列表** ，并还原组的电子邮件、对话、笔记本、文件和日历。
+- **Restore deleted Microsoft 365 groups**： You don't have to go to the Exchange admin center to restore deleted Microsoft 365 groups. 转到 **"Microsoft 365 管理中心** \> **组** \> **""** 已删除 ("从"还原"组) \> \> **选择一个组**。 它将组还原回组 **列表** ，并还原组的电子邮件、对话、笔记本、文件和日历。
 
 ### <a name="videos-training-and-docs-february"></a>2 月的视频、培训和文档 (2 月) 
 

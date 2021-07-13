@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
-description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。 了解如何添加用户和分配许可证。
+description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535994"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394095"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 

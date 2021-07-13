@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: caf3935b1ffb36989b2884c6811111531a061098
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635470"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393963"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -104,8 +106,8 @@ ms.locfileid: "52635470"
 
 ## <a name="related-content"></a>相关内容
 
-[关于共享邮箱 (](about-shared-mailboxes.md) 文章) \
+[关于共享邮箱](about-shared-mailboxes.md)（文章）\
 [Create a shared mailbox (](create-a-shared-mailbox.md) article) \
-[配置共享邮箱 (](configure-a-shared-mailbox.md) 文章) \
-[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) \
+[配置共享邮箱](configure-a-shared-mailbox.md)（文章）\
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）\
 [解决共享邮箱相关问题](resolve-issues-with-shared-mailboxes.md)（文章）

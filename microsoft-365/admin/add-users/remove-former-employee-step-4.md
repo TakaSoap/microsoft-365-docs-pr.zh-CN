@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5868ab1622fea68cc3dabb54a3d06208ccaa165
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730194"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394299"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
@@ -41,7 +42,7 @@ ms.locfileid: "52730194"
 
 若要保留以前用户OneDrive文件，请首先向自己授予OneDrive访问权限，然后移动要保留的文件。
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
 2. 选择用户。
 
@@ -128,7 +129,7 @@ ms.locfileid: "52730194"
   
     ![导出Outlook"数据文件"对话框，其中选中了顶部文件夹并选中了"包含子文件夹"](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 选择 **下一步**。
+7. 选择 **“下一步”**。
 
 8. 选择 **"浏览**"选择保存Outlook文件 (.pst) 。 键入  *文件名，* 然后选择" **确定"** 继续。
 
@@ -171,7 +172,7 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 5. 在 **"选项**"下，选择如何处理重复项
 
-6. 选择 **下一步**。
+6. 选择 **“下一步”**。
 
 7. 如果将密码分配给 Outlook.pst (.pst) ，请输入密码，然后选择"确定 **"。**
 

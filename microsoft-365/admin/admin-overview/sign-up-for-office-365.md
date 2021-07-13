@@ -20,17 +20,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
+- AdminTemplateSet
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: 了解你需要了解哪些信息，然后再完成注册Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683099"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394227"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
@@ -125,4 +126,4 @@ ms.locfileid: "52683099"
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)

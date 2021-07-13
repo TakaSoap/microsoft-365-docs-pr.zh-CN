@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 通过Microsoft 365组，可以通过向一组人员提供对共享资源集合的访问权限Microsoft 365跨组织推动团队合作。
-ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 612884306b0b999de48f7168981d9c006335f0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782389"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393735"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -53,7 +54,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 - **Members** - 成员可以访问组内的所有内容，但无法更改组设置。 默认情况下，团队成员可以邀请来宾加入你的组，但你可以 [控制该设置](manage-guest-access-in-groups.md)。
 - **来宾** - 组来宾是组织外部的成员。
 
-只有全局管理员、用户管理员和组管理员可以在管理中心内创建Microsoft 365组。 你不能是委派管理员（例如代表管理员的顾问）。
+只有全局管理员、用户管理员和组管理员才能在用户组中创建和管理Microsoft 365 管理中心。 你不能是委派管理员（例如代表管理员的顾问）。
 
 作为管理员，您可以：
 
@@ -65,7 +66,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 
 如果更希望采用自动化的方式来管理组Microsoft 365，可以使用过期策略以特定时间间隔使组过期。 组所有者将在组到期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅[：Microsoft 365组过期策略](../../solutions/microsoft-365-groups-expiration-policy.md)。
 
-可以从管理中心或[PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)Microsoft 365组。
+可以从组管理组，Microsoft 365 管理中心[PowerShell 管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组。
 
 如果您有很多用户（例如，在大型企业或企业中）中，则您可能有许多用户出于各种目的创建组。 我们强烈建议您查看规划Microsoft 365[组，以](../../solutions/collaboration-governance-overview.md)获得最佳方案。
 
@@ -85,7 +86,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 
 组织可以拥有的默认Microsoft 365数是 500，000。 若要超出默认限制，必须联系 Microsoft 支持部门。 有关组限制Microsoft 365，请参阅Microsoft 365[组 - 管理员帮助](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
-当你拥有Microsoft 365组使用情况的可操作信息时，管理你的组会更有效。 管理Microsoft 365中心有一个报告工具，可用于查看存储用途、你拥有的活动组数以及用户如何使用组。 有关详细信息[Microsoft 365请参阅管理中心中的](../activity-reports/office-365-groups.md)报表。
+当你拥有Microsoft 365组使用情况的可操作信息时，管理你的组会更有效。 The Microsoft 365 管理中心 has a reporting tool that lets you see storage use， how many active groups you have， and how users are using the groups. 有关详细信息[Microsoft 365请参阅管理中心中的](../activity-reports/office-365-groups.md)报表。
 
 ## <a name="sensitivity-labels"></a>敏感度标签
 
@@ -114,7 +115,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 Microsoft 365组使用Azure Active Directory。 你获取的组功能取决于Azure Active Directory订阅，以及分配给组组织者的许可证。
 
 > [!IMPORTANT]
-> 对于所有组功能，如果你有 Azure AD 高级版订阅，则用户可以加入组，无论他们是否分配有 AAD P1 许可证。 不强制执行许可。
+> 对于所有组功能，如果你有Azure AD Premium订阅，则用户可以加入组，无论他们是否分配有 AAD P1 许可证。 不强制执行许可。
 > 我们将定期生成使用情况报告，告知你哪些用户缺少许可证，并且需要为其分配的许可证符合许可要求。 例如，假设用户没有许可证，他们将被添加到强制执行命名策略的组。 报告将标记你需要许可证。
 
 ## <a name="related-content"></a>相关内容

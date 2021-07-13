@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何启用多重身份验证（有时称为双因素身份验证）。
-ms.openlocfilehash: 7d491ac88ab928dea9b5a5316a51151b8df63eab
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: ec9edd8664f35d3731f1f3c90ff2c60e8b2d2e3d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706438"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394781"
 ---
-# <a name="turn-on-multi-factor-authentication"></a>启用多重身份验证
+# <a name="turn-on-multifactor-authentication"></a>启用多重身份验证
 
-## <a name="watch-turn-on-multi-factor-authentication"></a>观看：打开多重身份验证
+## <a name="watch-turn-on-multifactor-authentication"></a>观看：打开多重身份验证
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-多重身份验证意味着你和员工必须提供多种登录 Microsoft 365是保护业务的最简单方法之一。
+多重身份验证意味着你和员工必须提供多种登录方法Microsoft 365这是保护业务的最简单方法之一。
 
 ## <a name="try-it"></a>试一试！
 

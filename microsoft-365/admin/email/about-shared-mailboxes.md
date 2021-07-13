@@ -17,17 +17,18 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，会使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a251967670e19d8f387e3fc4f724a06ef674a2b4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635530"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394035"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -45,7 +46,7 @@ ms.locfileid: "52635530"
 
 - **外部用户：** 不能向企业外部人员授予 (，例如拥有 Gmail 帐户) 访问共享邮箱。 如果你希望这么做，请考虑改为创建 Outlook 组。 若要了解更多信息，请参阅[在Microsoft 365创建一个组](../create-groups/create-groups.md)。
 
-- **与Outlook：** 除了通过浏览器Outlook Web 上的浏览器访问共享邮箱外，您还可以使用 Outlook for iOS 应用或 Outlook for Android 应用。 若要了解更多信息，请参阅[将共享邮箱添加到Outlook移动。](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) 另一个选项是，为共享邮箱创建组。 若要了解详细信息，请参阅[比较组](../create-groups/compare-groups.md)。
+- **与Outlook：** 除了使用浏览器Outlook 网页版访问共享邮箱外，您还可以使用 Outlook for iOS 应用或 Outlook for Android 应用。 若要了解更多信息，请参阅[将共享邮箱添加到Outlook移动。](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) 另一个选项是，为共享邮箱创建组。 若要了解详细信息，请参阅[比较组](../create-groups/compare-groups.md)。
 
 - **加密：** 无法加密从共享邮箱发送的电子邮件。 这是因为共享邮箱没有自己的安全上下文 (用户名/密码) 因此无法为其分配密钥。 如果多个用户是成员，并且他们发送/接收使用自己的密钥加密的电子邮件，则其他成员可能无法阅读电子邮件，其他人可能无法阅读，具体取决于电子邮件已加密的公钥。
 
@@ -68,7 +69,7 @@ ms.locfileid: "52635530"
 ## <a name="related-content"></a>相关内容
 
 [Create a shared mailbox (](create-a-shared-mailbox.md) article) \
-[配置共享邮箱 (](configure-a-shared-mailbox.md) 文章) \
-[将用户邮箱转换为共享邮箱 (](convert-user-mailbox-to-shared-mailbox.md) 文章) \
-[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) \
+[配置共享邮箱](configure-a-shared-mailbox.md)（文章）\
+[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）\
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）\
 [解决共享邮箱相关问题](resolve-issues-with-shared-mailboxes.md)（文章）

@@ -11,7 +11,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取Microsoft 365组报告，了解组及其活动。
-ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939226"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394131"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365管理中心中的报告 - Microsoft 365组
 
@@ -63,11 +65,13 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 |邮件Yammer (中)   <br/> |报告期间在报告组中Yammer的邮件数。  <br/> |
 |邮件Yammer (阅读)   <br/> |报告期间在报告Yammer组中读取的对话数。  <br/> |
 |邮件Yammer (中)   <br/> |报告期间"组"Yammer的消息数。  <br/> |
-|Members  <br/> |组中成员的数量。  <br/> |
+|成员  <br/> |组中成员的数量。  <br/> |
 |外部成员 |组中外部用户的数量。|
 |||
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365](activity-reports.md)管理中心中的报告 (文章) 安全[&](../../compliance/reports-in-security-and-compliance.md)合规中心中的报告 (文章) [Microsoft 365 报告在](../../admin/activity-reports/active-users-ww.md)管理中心 - 活动用户 (文章) 
+[Microsoft 365管理中心中的报表 (](activity-reports.md)文章) \
+[安全与合规中心&报告](../../compliance/reports-in-security-and-compliance.md) (文章) \
+[Microsoft 365中心中的报表 - 活动](../../admin/activity-reports/active-users-ww.md)用户 (文章) 
 

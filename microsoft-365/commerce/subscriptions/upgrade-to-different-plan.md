@@ -17,15 +17,16 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: 升级计划的最简单方法是使用管理中心中的"升级"选项卡。 但是，"升级"选项卡并不总是受支持。
 ms.date: 04/21/2021
-ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624309"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394757"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 

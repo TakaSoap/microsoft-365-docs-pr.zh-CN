@@ -13,25 +13,27 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的"使用率分析"Microsoft 365开始收集租户Power BI。
-ms.openlocfilehash: 4a3110ead76621e93e646577189b7b03d65caf1d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c0e39a307ee75c661e0f91fcbbcfeae3d95c7257
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286065"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394745"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
 Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Community。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要开始使用Microsoft 365分析，你必须先在应用中提供Microsoft 365 管理中心，然后在 Power BI 中启动模板应用。
 

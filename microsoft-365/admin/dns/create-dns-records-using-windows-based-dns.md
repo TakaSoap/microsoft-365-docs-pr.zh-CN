@@ -1,5 +1,5 @@
 ---
-title: 使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
+title: 使用基于 DNS Windows Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -14,40 +14,42 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft 基于 Windows 的 DNS 的其他服务的 DNS 记录。
-ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录Windows Microsoft 的基于 DNS。
+ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706104"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393723"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 DNS Windows Microsoft 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
    
 如果使用基于 Windows 的 DNS 托管自己的 DNS 记录，请遵循本文中的步骤为电子邮件、Skype for Business Online 等设置记录。
   
-若要开始，你需要在基于 [Windows](#find-your-dns-records-in-windows-based-dns) 的 DNS 中查找 DNS 记录，以便可以更新它们。 此外，如果你计划将本地 Active Directory 与 Microsoft 同步，请参阅在本地 [Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)中用作 UPN 的不可路由电子邮件地址。
+To get started， you need to [find your DNS records in Windows based DNS](#find-your-dns-records-in-windows-based-dns) so you can update them. 此外，如果你计划将本地 Active Directory 与 Microsoft 同步，请参阅在本地 [Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)中用作 UPN 的不可路由电子邮件地址。
   
 添加 DNS 记录后遇到邮件流问题或其他问题，请参阅对更改域名或 DNS 记录后的问题 [进行故障排除](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在基于 Windows 的 DNS 中查找 DNS 记录
-<a name="BKMK_find_your_dns_1"></a>转到包含域的 DNS 记录的页面。 如果你在 Windows Server 2008 中工作，请转到开始  >  **运行**。 如果你在 windows 中Windows Server 2012，请按 Windows 键和 **r。** 键入 **dnsmgmnt.msc，** 然后选择"确定 **"。** 在 DNS 管理器中，展开 **\<DNS server name\> \> "前向查找区域"。** 选择域。 现在已准备好创建 DNS 记录。
+<a name="BKMK_find_your_dns_1"></a>转到包含域的 DNS 记录的页面。 If you're working in Windows Server 2008， go to **Start**  >  **Run**. 如果在运行中工作，请按 Windows Server 2012 键Windows **r。** 键入 **dnsmgmnt.msc，** 然后选择"确定 **"。** 在 DNS 管理器中，展开 **\<DNS server name\> \> "前向查找区域"。** 选择域。 现在已准备好创建 DNS 记录。
    
 ## <a name="add-mx-record"></a>添加 MX 记录
 <a name="BKMK_add_MX"> </a>
 
 添加 MX 记录，以便你的域的电子邮件发送到 Microsoft。
 - 您将添加的 MX 记录包括一 ("指向地址"值) 如下所示 \<MX token\> ：.mail.protection.outlook.com，其中 是 \<MX token\> 类似于 MSxxxxxxx 的值。 
-- 从 Microsoft 的"添加 DNS 记录"页的"Exchange Online"部分中的"MX"行中，复制"指向地址"下列出的值。 您将在此任务创建的记录中使用此值。 
-- 在域的"DNS 管理器"页面上，转到 **"操作**""邮件交换器 ( >  **MX) "。** 若要查找域的此页面，请参阅在基于 [Windows 的 DNS](#find-your-dns-records-in-windows-based-dns)中查找 DNS 记录。  
+- 从 Microsoft"添加 DNS 记录Exchange Online"部分"MX"行中，复制"指向地址"下列出的值。 您将在此任务创建的记录中使用此值。 
+- 在域的"DNS 管理器"页面上，转到 **"操作**""邮件交换器 ( >  **MX) "。** 若要查找域的此页面，请参阅在基于 DNS Windows[查找 DNS 记录](#find-your-dns-records-in-windows-based-dns)。  
 - 在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值： 
     - 主机名： 
     - @Address：粘贴你刚刚从 Microsoft 复制的"指向地址"值。  
@@ -76,14 +78,14 @@ ms.locfileid: "52706104"
     - 主机名：sip
     - 类型：CNAME
     - 地址：sipdir.online.lync.com
-- 选择“确定”。
+- 选择“**确定**”。
 
 添加 Skype for Business Online 自动发现 CNAME 记录。  
 - 在域的"DNS 管理器"页面上，转到"操作 \> **""CNAME (CNAME) "。** 在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值：  
     - 主机名：lyncdiscover
     - 类型：CNAME
     - 地址：webdir.online.lync.com
-- 选择“确定”。
+- 选择“**确定**”。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>为 Microsoft 的移动设备管理 (MDM) 添加两条 CNAME 记录
 
@@ -97,7 +99,7 @@ ms.locfileid: "52706104"
 - 主机名：enterpriseregistration
 - 类型：CNAME
 - 地址：enterpriseregistration.windows.net
-- 选择“确定”。 
+- 选择“**确定**”。 
 
 添加 MDM Enterpriseenrollment CNAME 记录。 
 -  在域的"DNS 管理器"页面上，转到"操作 \> **""CNAME (CNAME) "。** 
@@ -105,7 +107,7 @@ ms.locfileid: "52706104"
     - 主机名：enterpriseenrollment
     - 类型：CNAME
     - 地址：enterpriseenrollment-s.manage.microsoft.com
-- 选择“确定”。
+- 选择“**确定**”。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
@@ -119,13 +121,13 @@ ms.locfileid: "52706104"
 - 在域的"DNS 管理器"页面上，转到"TXT (\> **操作) "。** 
 -  在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值。 
  > [!IMPORTANT]
-> 在某些版本的 Windows DNS 管理器中，域可能已被设置，以便创建 txt 记录时，主页名称默认为父域。 在这种情况下，添加 TXT 记录时，将主机名设置为空（没有值），而不是将其设置为 @ 或域名。 
+> 在 DNS 管理器的Windows版本中，域可能已被设置，因此创建 txt 记录时，主页名称默认为父域。 在这种情况下，添加 TXT 记录时，将主机名设置为空（没有值），而不是将其设置为 @ 或域名。 
 
 -  主机类型：@
 -  记录类型：TXT
 -  地址：v=spf1 include：spf.protection.outlook.com -all 
          
--  选择“确定”。
+-  选择“**确定**”。
    
 ## <a name="add-srv-records"></a>添加 SRV 记录
 <a name="BKMK_add_SRV"> </a>
@@ -140,9 +142,9 @@ ms.locfileid: "52706104"
     -  协议：_tls
     -  优先级： 100
     -  权重： 1
-    -  端口： 443
+    -  端口：443
     -  目标 (主机名) ：sipdir.online.lync.com
--  选择“确定”。 
+-  选择“**确定**”。 
 
 
 为 Skype for Business Online 联盟添加 SIP SRV 记录。  
@@ -155,7 +157,7 @@ ms.locfileid: "52706104"
     -  权重： 1
     -  端口： 5061
     -  目标 (主机名) ：sipfed.online.lync.com
--  选择“确定”。 
+-  选择“**确定**”。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>添加记录以验证您拥有该域（如果尚未验证）
 <a name="BKMK_verify"> </a>

@@ -13,17 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: 了解如何在管理中心向组添加成员、从组中删除成员和管理Microsoft 365状态。
-ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 了解如何将成员添加到组、从组中删除成员以及管理组所有者Microsoft 365 管理中心。
+ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635602"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393759"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心Microsoft 365或删除组的成员
 

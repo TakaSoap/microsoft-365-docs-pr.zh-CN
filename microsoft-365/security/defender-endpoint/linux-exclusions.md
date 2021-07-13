@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346410"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393783"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 
@@ -55,7 +55,7 @@ ms.locfileid: "52346410"
 ---|---|---
 文件扩展名 | 扩展名位于设备上任意位置的所有文件 | `.test`
 文件 | 由完整路径标识的特定文件 | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-文件夹 | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
+Folder | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
 流程 | 特定进程 (的完整路径或文件名指定，) 它打开的所有文件 | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
@@ -114,6 +114,18 @@ mdatp exclusion
     Folder exclusion configured successfully
     ```
 
+
+- 添加第二个文件夹的排除项：
+
+    ```bash
+    mdatp exclusion folder add --path /var/log/
+    mdatp exclusion folder add --path /other/folder
+    ```
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+
 - 为包含通配符的文件夹添加排除项：
 
     ```bash
@@ -137,6 +149,17 @@ mdatp exclusion
 
     ```bash
     mdatp exclusion process add --name cat
+    ```
+    ```Output    
+    Process exclusion configured successfully
+    ```
+
+
+- 为第二个进程添加排除项：
+
+    ```bash
+    mdatp exclusion process add --name cat
+    mdatp exclusion process add --name dog
     ```
     ```Output    
     Process exclusion configured successfully

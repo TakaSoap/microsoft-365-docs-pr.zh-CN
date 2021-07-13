@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 1c9cfb1a1dd65dd72f80b0b0e0f76ccd944b81e2
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377177"
+ms.locfileid: "53383434"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -50,6 +50,8 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 可通过移动应用（如 Outlook for iOS 和 Outlook for Android）访问 Microsoft 365 组。
 
 如果[管理员启用了](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
+
+Microsoft 365 组不支持与其他 Microsoft 365 组、通讯组或安全组嵌套。
 
 ## <a name="distribution-groups"></a>通讯组
 
@@ -97,5 +99,8 @@ Microsoft 365 组不能是安全组成员。
 
 ## <a name="related-content"></a>相关内容
 
-[了解 Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)（文章）\
+[了解 Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[在 Outlook 中将通讯组列表升级为 Microsoft 365 组](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

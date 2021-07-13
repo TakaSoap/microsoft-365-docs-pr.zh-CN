@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 发现你可以将 Windows 设备升级到 Windows 10 专业版 以使用更高级的安全性和业务网络功能的方法。
-ms.openlocfilehash: 39a7224ea585f8e1fb5052cb6fbb62329bd15656
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e87a9bc4ebbb4d5437e2174dc9f41c4700346ffd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227507"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394143"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>将Windows设备升级到 Windows 10 专业版
 
@@ -43,7 +44,7 @@ ms.locfileid: "53227507"
 
 ## <a name="upgrade-to-windows-10-pro"></a>升级到 Windows 10 专业版
 
-若要升级到 Windows 10 专业版，有几个选项。 可以：
+若要升级到 Windows 10 专业版，有几个选项。 可执行下列操作：
 
 - 从 Microsoft 软件下载 [网站安装升级](https://go.microsoft.com/fwlink/?LinkID=836951)。
   - 如果你登录的设备与你要更新的设备位于同一台设备上，请选择此选项。

@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635566"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394275"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -122,8 +123,8 @@ ms.locfileid: "52635566"
   
 ## <a name="related-content"></a>相关内容
   
-[允许用户重置自己的密码， (](../add-users/let-users-reset-passwords.md) 文章) \
-[重置密码 (](../add-users/reset-passwords.md) 文章) \
-[将单个用户的密码设置为永不](set-password-to-never-expire.md) 过期， (文章) \
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
+[重置密码](../add-users/reset-passwords.md)（文章）\
+[将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）\
 [为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
-[Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频](../../business-video/index.yml)(链接页面)

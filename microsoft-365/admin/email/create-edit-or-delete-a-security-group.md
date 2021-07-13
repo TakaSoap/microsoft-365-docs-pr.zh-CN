@@ -1,5 +1,5 @@
 ---
-title: 在管理中心内创建、编辑Microsoft 365安全组
+title: 创建、编辑或删除安全Microsoft 365 管理中心
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 525acc45b293563f58bb9aa12c40bec1438cb055
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623997"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393951"
 ---
-# <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在管理中心内创建、编辑Microsoft 365安全组
+# <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>创建、编辑或删除安全Microsoft 365 管理中心
 
 在Microsoft 365 **组**"页上，可以创建用户帐户组，这些用户帐户组可用于在 SharePoint Online 和 CRM Online 中分配相同的权限。 例如，管理员可以创建一个安全组，以向特定用户组授予对 SharePoint 网站的访问权限。 只有全局管理员和"用户管理"管理员拥有创建、编辑或删除安全组的权限；有关管理员角色的详细信息，请参阅[分配管理员角色](../add-users/assign-admin-roles.md)。 
   
@@ -40,7 +42,7 @@ ms.locfileid: "52623997"
 
 ### <a name="add-a-security-group"></a>添加安全组
 
-1. 在"Microsoft 365管理中心"中，转到"组  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">""组"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **Groups**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
   
 2. 在"**组"** 页上，选择 **"添加组"。**
     
@@ -94,7 +96,7 @@ ms.locfileid: "52623997"
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>是否必须使用安全组以确保我的组织的安全？
 
-否。 这只是您可以为组织管理安全性的另外一种方法。 您始终可以单独授予用户权限和网站访问权限。 但是，使用安全组，可以轻松管理更大的用户组。
+不正确。 这只是您可以为组织管理安全性的另外一种方法。 您始终可以单独授予用户权限和网站访问权限。 但是，使用安全组，可以轻松管理更大的用户组。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我能否向安全组发送电子邮件？
 
@@ -102,6 +104,6 @@ ms.locfileid: "52623997"
 
 ## <a name="related-content"></a>相关内容
 
-[在管理中心创建Microsoft 365组 (](../create-groups/create-groups.md)文章) \
+[在本文Microsoft 365 管理中心 (](../create-groups/create-groups.md)创建) \
 [向Microsoft 365解释组 (](../create-groups/explain-groups-knowledge-worker.md)文章) \
-[管理管理中心中的Microsoft 365管理 (](../create-groups/manage-groups.md)文章) 
+[在管理组Microsoft 365 管理中心 (](../create-groups/manage-groups.md)管理) 

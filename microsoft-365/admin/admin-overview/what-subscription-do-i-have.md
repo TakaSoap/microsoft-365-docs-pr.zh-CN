@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: 了解如何通过进入"你的产品"页面来验证你的组织拥有哪些订阅。
 ms.date: 01/21/2021
-ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706294"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394215"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
@@ -41,7 +42,7 @@ ms.locfileid: "52706294"
 
 ## <a name="related-content"></a>相关内容
   
-[订阅和计费 (](../../commerce/index.yml) 链接) \
+[订阅和计费链接](../../commerce/index.yml) (页面) \
 [查看帐单或发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）\
 [支付订阅费用](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
 [更改帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md) (文章) 

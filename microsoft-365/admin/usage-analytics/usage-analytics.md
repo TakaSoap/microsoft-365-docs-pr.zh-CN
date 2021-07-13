@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007161"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394673"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
@@ -60,7 +62,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 - **协作** &ndash;了解组织中人员如何使用 OneDrive 和 SharePoint 来存储文档和相互协作，以及这些趋势如何逐渐变化。 还可以查看在内部或外部共享的文档数，以及所有者和其他协作者SharePoint使用的 SharePoint 或 OneDrive 帐户数。
 
-- **存储空间** &ndash;使用此报告可跟踪邮箱、OneDrive和SharePoint存储。
+- **存储** &ndash;使用此报告可跟踪邮箱、OneDrive和SharePoint存储。
 
 - **移动性** &ndash;跟踪用户用于连接到电子邮件、Teams、Skype 或 Yammer 的客户端Yammer。
 
@@ -68,7 +70,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 激活和许可证页提供有关激活Microsoft 365报告;即，有多少用户已下载并激活Office应用以及你的组织已分配的许可证数。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
 
-- **激活** &ndash;跟踪服务 (，例如Microsoft 365 企业版应用、Project和Visio) 激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用此部分中的报告来查看用户已安装在应用中Office设备。 请注意，若要激活计划，用户必须安装应用，然后使用其帐户登录。
+- **激活** &ndash;跟踪服务 (，例如Microsoft 365 企业应用版、Project和Visio) 激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用此部分中的报告来查看用户已安装在应用中Office设备。 请注意，若要激活计划，用户必须安装应用，然后使用其帐户登录。
 
 - **许可** &ndash; 此报告包含许可证类型的概述、分配了每种许可证类型的用户数以及每月的许可证分配分布。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
 

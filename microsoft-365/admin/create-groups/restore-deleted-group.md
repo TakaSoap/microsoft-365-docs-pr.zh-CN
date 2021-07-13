@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 已删除的组将保留 30 天，您仍可以还原该组。 30 天后，该组及其内容将永久删除。
-ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635734"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394047"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的Microsoft 365组
 
@@ -56,7 +58,7 @@ ms.locfileid: "52635734"
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-如果你是组的所有者，Microsoft 365以下步骤在 Web 上的Outlook中自己还原组：
+如果你是组的所有者，Microsoft 365以下步骤，可以在Outlook 网页版中自己还原组：
 
 1. 在"[已删除的组"页上](https://outlook.office.com/people/group/deleted)**，选择"** 组"节点下的"管理组"选项，然后选择"**已删除"。**
 
@@ -66,7 +68,7 @@ ms.locfileid: "52635734"
 
 # <a name="admin-center"></a>[管理中心](#tab/admin-center)
 
-如果你是全局管理员或组管理员，可以在管理中心还原Microsoft 365组：
+如果您是全局管理员或组管理员，可以在以下网站中还原已删除Microsoft 365 管理中心：
 
 1. 转到[管理中心](https://admin.microsoft.com)。
 2. 展开 **"组**"，然后单击"**已删除组"。**

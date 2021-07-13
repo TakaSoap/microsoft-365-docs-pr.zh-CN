@@ -18,15 +18,16 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: 使用以下步骤购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
 ms.date: 04/07/2021
-ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582700"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394433"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 

@@ -16,21 +16,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: 了解计费帐户及其如何用于管理帐户设置、发票、付款方式和购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535634"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394395"
 ---
 # <a name="understand-billing-accounts"></a>了解计费帐户
 
 注册以试用或购买 Microsoft 产品时，会创建一个计费帐户。 使用计费帐户管理帐户设置、发票、付款方式和购买。 你可以访问多个计费帐户。 例如，你直接Microsoft 365注册，或者你有权访问组织的 企业协议、Microsoft 产品&服务协议或 Microsoft 客户协议。 对于其中每个方案，你将有一个单独的计费帐户。
 
-当前Microsoft 365管理中心支持以下类型的计费帐户：
+当前Microsoft 365 管理中心支持以下类型的计费帐户：
 
 - Microsoft Online Services计划：此计费帐户是在你直接注册订阅时Microsoft 365帐户。
 - Microsoft &服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
@@ -67,14 +68,14 @@ ms.locfileid: "52535634"
 
 ## <a name="understand-access-to-billing-accounts"></a>了解对计费帐户的访问权限
 
-可以通过角色和权限为其他人提供对 Microsoft 365 帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
+可以通过角色和权限为其他人提供对 Microsoft 365 管理中心帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
 
 - **计费帐户所有者** &mdash; 可以分配权限、编辑帐户、签署协议和查看帐户。
 - **计费帐户参与者** &mdash; 可以编辑帐户、签署协议和查看帐户。
 - **计费帐户读者** &mdash; 可查看帐户。
 
 > [!Note]
-> 计费帐户角色仅适用于计费帐户，不适用于管理中心Microsoft 365应用场景。
+> 计费帐户角色仅适用于计费帐户，不适用于其他Microsoft 365 管理中心方案。
 
 ## <a name="related-content"></a>相关内容
 
