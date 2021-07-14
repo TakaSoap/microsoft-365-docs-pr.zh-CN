@@ -22,43 +22,43 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9a9a6381c93e2d252f75710adc206868c0a5546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: adb65c82713464da2df4d473d2fd7a055e0dbeb3
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229907"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415572"
 ---
-# <a name="microsoft-365-defender-integration-with-azure-sentinel"></a><span data-ttu-id="332af-104">Microsoft 365 Defender 与 Azure Sentinel 的集成</span><span class="sxs-lookup"><span data-stu-id="332af-104">Microsoft 365 Defender integration with Azure Sentinel</span></span>
+# <a name="microsoft-365-defender-integration-with-azure-sentinel"></a><span data-ttu-id="207df-104">Microsoft 365 Defender 与 Azure Sentinel 的集成</span><span class="sxs-lookup"><span data-stu-id="207df-104">Microsoft 365 Defender integration with Azure Sentinel</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="332af-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="332af-105">**Applies to:**</span></span>
-- <span data-ttu-id="332af-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="332af-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="207df-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="207df-105">**Applies to:**</span></span>
+- <span data-ttu-id="207df-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="207df-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="332af-107">Azure Sentinel Microsoft 365 Defender 预览版 (连接器) 所有 Microsoft 365 Defender 事件和警报信息发送到 Azure Sentinel，并保持事件同步。</span><span class="sxs-lookup"><span data-stu-id="332af-107">The Microsoft 365 Defender connector for Azure Sentinel (preview) sends all Microsoft 365 Defender incidents and alerts information to Azure Sentinel and keeps the incidents synchronized.</span></span> 
+<span data-ttu-id="207df-107">Azure Sentinel Microsoft 365 Defender 预览版 (连接器) 所有 Microsoft 365 Defender 事件和警报信息发送到 Azure Sentinel，并保持事件同步。</span><span class="sxs-lookup"><span data-stu-id="207df-107">The Microsoft 365 Defender connector for Azure Sentinel (preview) sends all Microsoft 365 Defender incidents and alerts information to Azure Sentinel and keeps the incidents synchronized.</span></span> 
 
-<span data-ttu-id="332af-108">添加连接器后，Microsoft 365 Defender 事件（包括从 Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Office 365 和 Microsoft Cloud App Security 接收的所有关联警报、实体和相关信息）会作为安全信息和事件管理 (SIEM) 数据流式传输至 &mdash; Azure Sentinel，从而为您提供使用 Azure Sentinel 执行会审和事件响应的上下文。 &mdash;</span><span class="sxs-lookup"><span data-stu-id="332af-108">Once you add the connector, Microsoft 365 Defender incidents&mdash;which include all associated alerts, entities, and relevant information received from Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Office 365, and Microsoft Cloud App Security&mdash;are streamed to Azure Sentinel as security information and event management (SIEM) data, providing you with context to perform triage and incident response with Azure Sentinel.</span></span> 
+<span data-ttu-id="207df-108">添加连接器后，Microsoft 365 Defender 事件（包括从 Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Office 365 和 Microsoft Cloud App Security 接收的所有关联警报、实体和相关信息）会作为安全信息和事件管理 (SIEM) 数据流式传输至 &mdash; Azure Sentinel，从而为您提供使用 Azure Sentinel 执行会审和事件响应的上下文。 &mdash;</span><span class="sxs-lookup"><span data-stu-id="207df-108">Once you add the connector, Microsoft 365 Defender incidents&mdash;which include all associated alerts, entities, and relevant information received from Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Office 365, and Microsoft Cloud App Security&mdash;are streamed to Azure Sentinel as security information and event management (SIEM) data, providing you with context to perform triage and incident response with Azure Sentinel.</span></span> 
 
-<span data-ttu-id="332af-109">进入 Azure Sentinel 后，事件将与 Microsoft 365 Defender 保持双向同步，从而可以利用 azure 门户中 Microsoft 365 安全中心和 Azure Sentinel 的优势，以便进行事件调查和响应。</span><span class="sxs-lookup"><span data-stu-id="332af-109">Once in Azure Sentinel, incidents remain bi-directionally synchronized with Microsoft 365 Defender, allowing you to take advantage of the benefits of both the Microsoft 365 security center and Azure Sentinel in the Azure portal for incident investigation and response.</span></span>
+<span data-ttu-id="207df-109">进入 Azure Sentinel 后，事件将与 Microsoft 365 Defender 保持双向同步，从而可以利用 azure 门户中的 Microsoft 365 Defender 门户和 Azure Sentinel 的优势，以便进行事件调查和响应。</span><span class="sxs-lookup"><span data-stu-id="207df-109">Once in Azure Sentinel, incidents remain bi-directionally synchronized with Microsoft 365 Defender, allowing you to take advantage of the benefits of both the Microsoft 365 Defender portal and Azure Sentinel in the Azure portal for incident investigation and response.</span></span>
 
-<span data-ttu-id="332af-110">观看此简短概述 Azure Sentinel 与 Microsoft 365 Defender (集成，) 。</span><span class="sxs-lookup"><span data-stu-id="332af-110">Watch this short overview of Azure Sentinel integration with Microsoft 365 Defender (4 minutes).</span></span>
+<span data-ttu-id="207df-110">观看此简短概述 Azure Sentinel 与 Microsoft 365 Defender (集成，) 。</span><span class="sxs-lookup"><span data-stu-id="207df-110">Watch this short overview of Azure Sentinel integration with Microsoft 365 Defender (4 minutes).</span></span>
 
 <br>
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRo]
 
 
-<span data-ttu-id="332af-111">下面是它的工作原理。</span><span class="sxs-lookup"><span data-stu-id="332af-111">Here's how it works.</span></span>
+<span data-ttu-id="207df-111">下面是它的工作原理。</span><span class="sxs-lookup"><span data-stu-id="207df-111">Here's how it works.</span></span>
 
 :::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="事件数据在 Microsoft 365 Defender 和 Azure Sentinel 之间的流和共享":::
 
-## <a name="next-steps"></a><span data-ttu-id="332af-113">后续步骤</span><span class="sxs-lookup"><span data-stu-id="332af-113">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="207df-113">后续步骤</span><span class="sxs-lookup"><span data-stu-id="207df-113">Next steps</span></span>
 
-1. <span data-ttu-id="332af-114">深入了解与 Azure [Microsoft 365 Defender集成](/azure/sentinel/microsoft-365-defender-sentinel-integration)。</span><span class="sxs-lookup"><span data-stu-id="332af-114">Get a deeper understanding of [Microsoft 365 Defender integration with Azure Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).</span></span>
-2. <span data-ttu-id="332af-115">[连接数据从 Microsoft 365 Defender Azure Sentinel](/azure/sentinel/connect-microsoft-365-defender)。</span><span class="sxs-lookup"><span data-stu-id="332af-115">[Connect data from Microsoft 365 Defender to Azure Sentinel](/azure/sentinel/connect-microsoft-365-defender).</span></span>
+1. <span data-ttu-id="207df-114">深入了解与 Azure [Microsoft 365 Defender集成](/azure/sentinel/microsoft-365-defender-sentinel-integration)。</span><span class="sxs-lookup"><span data-stu-id="207df-114">Get a deeper understanding of [Microsoft 365 Defender integration with Azure Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).</span></span>
+2. <span data-ttu-id="207df-115">[连接数据从 Microsoft 365 Defender Azure Sentinel](/azure/sentinel/connect-microsoft-365-defender)。</span><span class="sxs-lookup"><span data-stu-id="207df-115">[Connect data from Microsoft 365 Defender to Azure Sentinel](/azure/sentinel/connect-microsoft-365-defender).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="332af-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="332af-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="207df-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="207df-116">See also</span></span>
 
-- [<span data-ttu-id="332af-117">事件概述Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="332af-117">Overview of incidents in Microsoft 365 Defender</span></span>](incidents-overview.md)
-- [<span data-ttu-id="332af-118">使用 Azure Sentinel 调查事件</span><span class="sxs-lookup"><span data-stu-id="332af-118">Investigate incidents with Azure Sentinel</span></span>](/azure/sentinel/tutorial-investigate-cases)
+- [<span data-ttu-id="207df-117">事件概述Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="207df-117">Overview of incidents in Microsoft 365 Defender</span></span>](incidents-overview.md)
+- [<span data-ttu-id="207df-118">使用 Azure Sentinel 调查事件</span><span class="sxs-lookup"><span data-stu-id="207df-118">Investigate incidents with Azure Sentinel</span></span>](/azure/sentinel/tutorial-investigate-cases)

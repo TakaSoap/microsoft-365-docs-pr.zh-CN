@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，请获取有关 (常见问题解答) 常见问题Microsoft 365 Lighthouse。
-  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
-  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "53395010"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415526"
 title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
 summary: >
   > [!NOTE]
@@ -49,6 +49,12 @@ sections:
   - question: 使用解决方案需要满足哪些Microsoft 365 Lighthouse？
     answer: >
       有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 哪些国家和地区Microsoft 365 Lighthouse可用？
+    answer: >
+      Microsoft 365 Lighthouse国家/地区均提供Microsoft 365，中国和美国国家/地区除外。 但是，Microsoft 365 Lighthouse 中的功能（如设备管理和威胁管理）依赖于 Microsoft Intune，用户管理依赖于 Azure Active Directory (Azure AD) ，而 Intune 和 Azure AD 可能在某些国家和地区不可用。 有关 Azure AD Microsoft 365 Intune 可用性的完整列表，请参阅[国际可用性](https://www.microsoft.com/microsoft-365/business/international-availability)。
+
+
+      Microsoft 365 Lighthouse国家云中不可用。
   - question: 如何注册Microsoft 365 Lighthouse？
     answer: >
       若要注册Microsoft 365 Lighthouse，你需要向云解决方案提供商计划注册。 我们当前无法支持间接提供商。 有关如何注册的说明，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md) 若要详细了解云解决方案提供商计划，请参阅云解决方案提供商[计划概述](/partner-center/csp-overview)。
