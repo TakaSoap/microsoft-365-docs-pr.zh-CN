@@ -12,16 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 19149c7f53cee537450ac12ce5a346a12d43bd91
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326779"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430503"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 
 在开始使用组织中 [内部](insider-risk-management.md) 风险管理之前，信息技术和合规性管理团队应查看重要的规划活动和注意事项。 全面了解和规划以下方面的部署有助于确保实现和使用内部风险管理功能顺利进行，并且与解决方案的最佳实践一致。
+
+观看下面的视频，了解内部风险管理工作流在确定组织价值、区域性和用户体验优先级时，如何帮助组织预防、检测和包含风险：
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>与组织中的利益干系人合作
 

@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 57db724fe8938d0e258dd1df58fe5016d5e8d2c7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 41ead8bf4532503cb47623f65a82ca36a616091e
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229223"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409160"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -165,7 +165,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
 |按域限制外部共享|关闭|此设置允许你为共享指定允许或阻止的域列表。 如果指定了允许的域，则只能将共享邀请发送到这些域。 如果指定了拒绝的域，则不能将共享邀请发送到这些域。 <p> 此设置会影响组织中的所有 SharePoint 和 OneDrive 网站。|
-|仅允许特定安全组中的用户在外部共享|关闭|如果想要在 SharePoint 和 OneDrive 中限制可与来宾进行共享的人员，则可以通过将共享限制为指定安全组中的人员来实现这一点。 这些设置不会影响通过 Microsoft 365 组或 Teams 进行共享。 尽管只能由指定安全组中的人员来共享文档和文件夹，但通过组或团队邀请的来宾还有权访问关联的网站。 <p> 对于每个指定的组，可以选择可与任何人共享链接的用户。|
+|仅允许特定安全组中的用户在外部共享|关闭|如果想要在 SharePoint 和 OneDrive 中限制可与来宾进行共享的人员，则可以通过将共享限制为指定安全组中的人员来实现这一点。 这些设置不会影响通过 Microsoft 365 组或 Teams 进行共享。 尽管只能由指定安全组中的人员来共享文档和文件夹，但通过组或团队邀请的来宾还有权访问关联的网站。 <p> 对于每个指定的组，可以选择哪些用户可以与"任何人"链接共享。|
 |来宾必须使用发送共享邀请的同一帐户登录|关闭|阻止来宾使用与接收邀请的电子邮件地址不同的地址来兑换网站共享邀请。 <p> [Azure AD B2B 的 SharePoint 和 OneDrive 集成（预览）](/sharepoint/sharepoint-azureb2b-integration-preview)不使用此设置，因为所有来宾都将根据接收邀请的电子邮件地址添加到目录中。 备选电子邮件地址无法用于访问网站。|
 |允许来宾共享不属于他们的项目|打开|设置为“**打开**”时，来宾可以与其他用户或来宾共享不属于他们的项目；设置为“**关闭**”时，则无法执行此操作。 来宾始终可以共享其拥有完全控制权的项目。|
 |使用验证码的人员必须在此天数后重新进行身份验证|关闭|此设置允许你要求使用一次性密码进行身份验证的用户需在一定天数后重新进行身份验证。|

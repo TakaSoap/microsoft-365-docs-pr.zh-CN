@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326743"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430596"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>了解企业内部风险管理Microsoft 365
 
@@ -29,7 +29,13 @@ ms.locfileid: "53326743"
 观看下面的视频，了解内部风险管理如何有助于组织在确定组织价值、文化及用户体验优先级时预防、检测和包含风险：
 <br>
 <br>
+
+**内部风险管理解决方案&开发**：
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**内部风险管理工作流**：
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="modern-risk-pain-points"></a>新式风险难处
 

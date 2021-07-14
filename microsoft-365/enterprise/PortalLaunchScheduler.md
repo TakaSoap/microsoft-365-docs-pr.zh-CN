@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229547"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430416"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
@@ -117,9 +117,8 @@ ms.locfileid: "53229547"
 
     > [!NOTE]
     > 最多 50 个不同的用户或安全组可用于整个启动。 每次启动相互独立，因此如果你计划在另一个门户上启动，则你最多可以使用 50 个用户/安全组进行该启动。 此外，您每波可以使用最多 20 个不同的用户或安全组。 
-
->门户启动计划程序支持安全组和启用邮件的安全组。 
-
+    >
+    > 门户启动计划程序支持安全组和启用邮件的安全组。 
 
 8. 确认门户启动详细信息，然后选择 **计划**。 计划启动后，对 SharePoint 门户主页的任何更改都需要在门户启动恢复之前收到正常的诊断结果。
 
@@ -127,7 +126,14 @@ ms.locfileid: "53229547"
 
 如果计划启动拥有 100，000 多个用户的门户，请按照下面列出的步骤提交支持请求。 确保包含所有请求的信息。
 
-**请按照下列步骤操作：**
+> [!NOTE]
+>
+> - 只有在满足以下要求时，才应执行此过程：
+> - "启动页"已完成。
+> - [已遵循门户](https://aka.ms/portalhealth) 运行状况指南。
+> - 启动日期在 14 天内。
+
+**请按以下步骤操作：**
 
 1. 转到 <https://admin.microsoft.com>。
 2. 确保使用的是新的管理中心预览版
@@ -160,7 +166,7 @@ ms.locfileid: "53229547"
 
 2. 然后，选择 **"删除** "，然后在看到下面的邮件时，选择"再次 **删除** "。
 
-   ![门户启动计划程序工具的图像](../media/portal-launch-delete-2.png)
+   ![询问是否要删除或保留计划启动的提示的图像](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>使用 PowerShell 门户启动计划程序
 

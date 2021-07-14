@@ -20,19 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 088dbd16c3667331843ff934c80f85aa8d3a837f
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125394"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430812"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender预览功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> [!IMPORTANT]
-> 预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。 某些功能可能不受支持，或者可能具有受限功能。
 
 **适用于：**
 - Microsoft 365 Defender
@@ -42,6 +39,19 @@ ms.locfileid: "53125394"
 了解 Microsoft 365 Defender 预览版本中的新功能，并首先通过打开预览体验来试用即将推出的功能。
 
 有关已普遍提供的新功能详细信息，请参阅 Microsoft 365 Defender[中的新增功能](whats-new.md)。
+
+ ## <a name="what-you-need-to-know"></a>您需要了解哪些信息
+
+使用公共预览版中的功能时，这些功能：
+
+- 功能可能受限或受限。 例如，此功能可能仅适用于一个平台。
+- 通常先完成功能更改，然后再在 GA (正式) 。
+- 完全受 Microsoft 支持。
+- 可能仅在选定的地理区域或云环境中可用。 例如，此功能可能不存在于政府云中。
+- 预览版中的单个功能可能具有更多用法和支持限制。 如果是这样，此信息通常会记录在功能文档中。
+- 预览版本提供标准支持级别，可用于生产环境。 
+
+
 
 ## <a name="required-permissions"></a>所需权限
 

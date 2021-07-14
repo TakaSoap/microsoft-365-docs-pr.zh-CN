@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 801d94eb769c6b738a1d4c011b67f8a2a7cf81f1
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327043"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430800"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -39,6 +39,13 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 |GPO 支持    |   是      |
 |基于用户的支持     |   是      |
 |基于计算机的支持    |    是     |
+
+## <a name="licensing"></a>授权
+
+在开始使用"可移动存储访问控制"之前，应[确认Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问并使用可移动存储访问控制，您必须具有以下权限：
+
+- Microsoft 365 E3/策略部署。
+- Microsoft 365 E5报告功能。
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
@@ -216,7 +223,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 通过"存储访问控制"功能，可以通过组策略将策略应用于用户或设备，或同时应用于两者。
 
-### <a name="licensing"></a>许可
+### <a name="licensing"></a>授权
 
 在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
@@ -246,7 +253,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 通过可移动存储访问控制功能，你可以将策略通过 OMA-URI 应用到用户或设备，或同时应用到两者。
 
-### <a name="licensing"></a>许可
+### <a name="licensing"></a>授权
 
 在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
@@ -272,8 +279,6 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
       ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData
 
     - 数据类型：String (XML 文件) 
-    
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING 文件的 xml 数据类型":::
 
 2. 对于每个策略，还要创建 OMA-URI：
 
@@ -287,7 +292,6 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
     - 数据类型：String (XML 文件) 
 
-      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="STRING 文件的 XML 文件的数据类型":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>使用 Intune 用户界面部署和管理策略
 

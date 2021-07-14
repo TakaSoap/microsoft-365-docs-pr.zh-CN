@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 了解Office 365管理员如何将组织的品牌应用于加密电子邮件&加密门户的内容。
-ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 95320e9f268f19cedd993efe4fa0e68fd75af125
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394710"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430728"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>向企业邮件加密加密邮件Microsoft 365组织品牌
 
@@ -153,9 +153,12 @@ ms.locfileid: "51394710"
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>创建Exchange自定义品牌应用于加密电子邮件的自定义邮件流规则
 
+> [!IMPORTANT]
+> 扫描和修改邮件的第三方应用程序可能会阻止正确应用 OME 品牌。
+
 修改默认模板或创建新的品牌模板后，可以创建 Exchange 邮件流规则，以根据特定条件应用自定义品牌。 在下列情况下，此类规则将应用自定义品牌：
 
-- 如果电子邮件是由最终用户使用 web 上的 Outlook 或 Outlook手动加密的，则Outlook Web App
+- 如果电子邮件是由最终用户使用 Outlook 或 Outlook 网页版 手动加密的，则Outlook Web App
 
 - 如果电子邮件由邮件流规则或数据丢失防护策略Exchange自动加密
 
@@ -165,7 +168,7 @@ ms.locfileid: "51394710"
 
 2. 选择" **管理"** 磁贴。
 
-3. In the Microsoft 365 admin center， choose **Admin centers** \> **Exchange**.
+3. In the Microsoft 365 管理中心， choose **Admin centers** \> **Exchange**.
 
 4. 在 EAC 中，**转到"邮件** 流 \> ""规则"，然后选择"**新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **"创建新规则"。** 有关使用 EAC 的信息，请参阅 Exchange[中的管理Exchange Online。](/exchange/exchange-admin-center)
 
