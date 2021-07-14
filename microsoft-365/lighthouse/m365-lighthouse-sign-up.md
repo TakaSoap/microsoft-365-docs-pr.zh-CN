@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，了解如何注册 Microsoft 365 Lighthouse。
-ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409004"
+ms.locfileid: "53415631"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>注册Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "53409004"
 
     若要验证Microsoft 365 Lighthouse已成功添加到租户，Microsoft 365 Lighthouse">"**中**"帐单"下查找Microsoft 365 管理中心。
 
-1. 如果未重定向到网站门户Microsoft 365 Lighthouse，请转到 `https://lighthouse.microsoft.com/` 。
+1. 如果未重定向到网站门户Microsoft 365 Lighthouse，请转到 <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> 。
 
 1. 选择 **"同意&** 继续完成合作伙伴协议修正。
 

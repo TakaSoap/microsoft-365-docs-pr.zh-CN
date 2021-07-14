@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341432"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415547"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件Microsoft 365
 
@@ -143,16 +143,19 @@ ms.locfileid: "53341432"
 
 ## <a name="additional-ransomware-resources"></a>其他勒索软件资源
 
-[由人运营的勒索软件概述](/security/compass/human-operated-ransomware)
+关键行业信息：
 
-[快速防范勒索软件和勒索软件](/security/compass/protect-against-ransomware)
+- [由人运营的勒索软件概述](/security/compass/human-operated-ransomware)
 
-[最新Microsoft 安全智能报告 PDF)  ("](https://www.microsoft.com/securityinsights/)勒索软件"搜索) 
+- [快速防范勒索软件和勒索软件](/security/compass/protect-against-ransomware)
 
-**勒索软件：Microsoft 365 Defender****门户中的威胁分析节点** 中的一个持续威胁报告
+- [最新Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/) (第 22-24 页) 
+
+- **勒索软件：Microsoft 365 Defender** 门户门户的"威胁分析"节点中的 (威胁报告，请参阅这些 [)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
 
 Microsoft 365保护：
 
+- [恶意软件和勒索软件防护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [勒索软件检测和恢复OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [启用或禁用文件Office宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 - [用于配置 EOP 和 Defender for Office 365 安全性的建议设置](recommended-settings-for-eop-and-office365.md)

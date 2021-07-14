@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 内容协作的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: d403f533fd69ee47fb48907f11d4752985daea1a
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300074"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415619"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作 – 人员体验
 
@@ -137,7 +137,7 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
         - 数字：将文件附加到过去 28 天内未保存到电子邮件OneDrive SharePoint用户的数量。
         - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或两者的人的数量。
       - **指向联机文件的链接：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示使用附件并将链接附加到电子邮件中的文件的百分比。
-        - 数字：过去 28 天内将链接附加到 (保存到OneDrive或SharePoint) 电子邮件中的人数。
+        - 数字：过去 28 天内向电子邮件附加联机文件链接的人数。
         - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或两者的人的数量。
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
 

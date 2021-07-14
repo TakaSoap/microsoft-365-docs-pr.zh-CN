@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339234"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415607"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -73,7 +73,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证它是否正确载入到服务。 有关详细信息，请参阅对新载入的 Defender 终结点终结点运行检测 [测试](run-detection-test.md)。
 
-#### <a name="before-you-begin"></a>开始之前
+#### <a name="before-you-begin"></a>准备工作
 
 执行以下步骤以满足载入要求：
 
@@ -222,6 +222,12 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 ## <a name="offboard-windows-servers"></a>载出Windows服务器
 
 可以使用适用于 Windows 10 客户端设备的相同方法Windows Server (SAC) 、Windows Server 2019 和 Windows Server 2019 Core 版本。
+
+- [使用组策略的载出](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [使用 Configuration Manager 的载出设备](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [使用移动设备管理工具离开并监视设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
 
 对于其他Windows版本，有两个选项Windows从服务中离开服务器：
 
