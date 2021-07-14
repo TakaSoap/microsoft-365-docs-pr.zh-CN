@@ -34,6 +34,8 @@
           href: office-365-air.md
         - name: 自动调查和响应的工作原理
           href: automated-investigation-response-office.md
+        - name: 调查中的电子邮件分析
+          href: email-analysis-investigations.md
         - name: 修正操作
           href: air-remediation-actions.md
         - name: 反恶意软件保护
