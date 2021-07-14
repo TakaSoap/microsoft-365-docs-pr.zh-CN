@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: 2d20fa69345f2ff2624252972cb0e017e401f0dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149126"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419579"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合规性管理器中使用评估模板
 
@@ -30,7 +30,7 @@ ms.locfileid: "53149126"
 
 ## <a name="templates-overview"></a>模板概述
 
-模板是在合规性管理器中用于创建评估的控制措施框架。 我们全面的模板集可帮助你的组织遵守管理数据的收集和使用的国家、区域和行业特定要求。 我们按其基础认证或法规的名称引用模板，例如欧盟 GDPR 模板和 ISO/IEC 27701：2019 模板。
+模板是在合规性管理器中用于创建评估的控制措施框架。 我们全面的模板集可帮助你的组织遵守管理数据的收集和使用的国家、区域和行业特定要求。 我们按其基础认证或法规的名称引用模板，例如欧盟 GDPR 模板和 ISO/IEC 27701：2019 模板。 由于合规性经理可用于评估不同类型的产品，因此每个模板有两个版本：一个版本适用于 Microsoft 365，另一个版本可定制为适合你选择的产品。
 
 ## <a name="template-availability-and-licensing"></a>模板可用性和许可
 
@@ -50,7 +50,7 @@ ms.locfileid: "53149126"
 - 从该模板 **创建** 评估后，该模板将被视为活动模板。
 - 如果您的 **组织未将** 模板用于评估，则认为该模板处于非活动状态。
 
-购买高级模板并基于该模板创建评估时，该模板的激活期为一年。 除非你取消购买，否则你的购买将自动续订。
+如果将任何评估链接到已购买的高级模板，该模板将处于活动状态一年。 除非你取消购买，否则你的购买将自动续订。
 
 还可以试用高级模板。 试用版许可证适用于最多 25 个模板，试用期为 30 天。 试用版开始后，模板应在 48 小时内在租户中可用。 试用版可以通过以下代码Microsoft 365 管理中心。
 
@@ -61,6 +61,8 @@ ms.locfileid: "53149126"
 例如，如果计数器显示 2/5，则意味着你的组织已激活 5 个模板中的 2 个模板可供使用。
 
 如果计数器显示 5/2，则表明你的组织超出其限制，需要购买 3 个使用中的高级模板。
+
+Microsoft 365和通用版本的模板具有联合许可，因此可以在多个产品之间使用相同的基础认证。 使用同一模板的任一或两个版本将仅计为一个激活的模板。
 
 有关更多详细信息，请参阅合规性 [管理器许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
@@ -123,7 +125,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 - **actionScore：** 在此必填字段中，为操作提供一个数值分数值。 该值必须是一个从 1 到 99 的全数;不能为 0、null 或空白。 数字越大，其改进合规性状态的价值就越高。 下图演示合规性管理器如何对控件进行评分：
 
-![合规性管理器控制点值](../media/compliance-score-action-scoring.png "合规性管理器控制点值")
+  ![合规性管理器控制点值](../media/compliance-score-action-scoring.png "合规性管理器控制点值")
 
 - **actionDescriptionTitle：** 这是说明的标题，是必需的。 此说明标题允许您在多个模板中执行相同的操作，并在每个模板中显示不同的说明。  此字段可帮助您阐明说明引用的模板。 在大多数情况下，可以在此字段中输入要创建的模板的名称。
 
@@ -160,9 +162,13 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 7. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。
 8. 你将到达新模板的详细信息页面，可在其中 [创建评估](compliance-manager-assessments.md#create-assessments)。
 
-## <a name="extend-an-assessment-template"></a>扩展评估模板
+## <a name="extend-microsoft-365-assessment-templates"></a>扩展Microsoft 365评估模板
 
 合规性管理器提供将你自己的控制措施和改进操作添加到 Microsoft 提供的现有模板的选项。 此过程称为扩展 Microsoft 模板。 扩展模板时，它仍然可以接收 Microsoft 发布的更新，当相关法规或产品策略发生更改时，可能会 (接受评估更新) 。 [](compliance-manager-assessments.md#accept-updates-to-assessments)
+
+请注意，如果您要为除产品外的其他产品设置Microsoft 365，您的流程将有所不同。 若要了解更多信息，请参阅 [扩展通用评估模板](#extend-universal-assessment-templates)。
+
+### <a name="prepare-template-data-and-create-extension"></a>准备模板数据和创建扩展
 
 若要进行准备，您需要组合一个特殊格式的 Excel 电子表格，以导入必要的模板数据。 这些Excel文件遵循上面所述的相同常规格式，但扩展有特殊要求。 请参阅以下其他要点以帮助防止错误：
 
@@ -195,6 +201,12 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 10. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。
 
 11. 你将到达新模板的详细信息页面。 从此处，可以通过选择创建评估 **来创建评估**。 有关指导，请参阅 [生成和管理评估](compliance-manager-assessments.md#create-assessments)。
+
+## <a name="extend-universal-assessment-templates"></a>扩展通用评估模板
+
+还可以扩展模板的通用版本以自定义特定于产品的评估。 当你使用通用模板创建评估并且评估具有独特的产品和认证组合时，你将收到一个特殊的扩展模板。 可对其进行修改以满足你的需求。 有关如何编辑模板的指南，请参阅以下有关修改模板的说明。
+
+编辑通用模板时，可更改模板中所有的内容，但这样做会中断与父模板的继承关系。 这意味着，如果父模板已刷新，它将不再自动接收来自 Microsoft 的更新。
 
 ## <a name="modify-a-template"></a>修改模板
 
@@ -233,7 +245,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 #### <a name="change-an-improvement-actions-name"></a>更改改进操作的名称
 
-如果要更改改进操作的名称，您必须在电子表格中明确指定将现有名称替换为新名称。 请按照下列步骤操作：
+如果要更改改进操作的名称，您必须在电子表格中明确指定将现有名称替换为新名称。 请按以下步骤操作：
 
 1. 在电子表格 **的"** 操作"选项卡中，在 A 列之后向电子表格添加新列。
 2. 在此新列（现在为 B 列）中，放在第 1 行中作为标题 **：oldActionTitle**。
@@ -282,11 +294,11 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 您的模板现在将包含您所做的更改。 使用此修改后模板的任何评估现在将显示挂起的更新，你将需要接受对评估的更新以反映在模板中所做的更改。 详细了解评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)。
 
 > [!NOTE]
-> 如果使用英语语言而非英语的合规性管理器，则你会注意到，导出模板进行自定义时，某些文本以英语Excel。 这些操作的标题 (改进操作和 Microsoft) 都必须是英语，控件必须识别它们。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
+> 如果使用英语语言而非英语的合规性管理器，则你会注意到，导出模板进行自定义时，某些文本以英语Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须英语，控件必须识别。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
 
 ## <a name="export-a-template"></a>导出模板
 
-可以导出Excel模板数据的所有模板文件。 你将需要导出模板才能修改它，因为这将是你在修改过程中编辑Excel上传的模板[文件](#modify-a-template)。
+可以导出Excel模板数据的所有模板文件。 你将需要导出模板才能修改它，因为这将是你在修改过程中编辑Excel上传的模板[文件](#modify-a-template)。 如果要在构造新的自定义模板时使用模板的数据，还可以导出模板作为参考。
 
 若要导出模板，请转到模板详细信息页面并选择"**导出到** Excel按钮。
 

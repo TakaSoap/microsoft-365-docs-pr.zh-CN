@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理 中心中的网络连接概述
-ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276997"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419795"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 中心中的网络连接
 
@@ -78,7 +78,7 @@ Windows必须在计算机上同意位置服务。 可以通过运行应用并 **
 完成测试报告后，测量示例和办公地点应开始显示 2-3 分钟。 有关详细信息，请参阅Microsoft 365[网络连接测试](office-365-network-mac-perf-onboarding-tool.md)。
 
 > [!NOTE]
-> 将办公位置添加到 Microsoft 365 中的网络连接时，Microsoft 365 管理中心为 LAN 子网提供 IPv4 或 IPv6 地址。 EgressIP 地址必须使用 IPv4。
+> 目前，在将办公地点添加到 Microsoft 365 网络连接Microsoft 365 管理中心，只能为 LAN 子网提供 IPv4 地址。 EgressIP 地址必须使用 IPv4。
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此信息？
 
@@ -149,7 +149,7 @@ Microsoft 具有来自多个桌面Office Web 客户端的现有网络度量，�
 - **SharePoint最佳服务** 前端 - 此SharePoint位置的用户应连接到的推荐服务前端门之一
 - **SharePoint次最优** 服务前端 - SharePoint用户已连接到但不推荐使用的服务前端
 - **DNS 递归** 解析程序服务器 - 来自检测到的 DNS 递归解析程序（如果可用）的地理位置 IP Exchange Online (的位置) 
-- **代理服务器** - 检测到的代理服务器的地理位置 IP 数据库中的 (（如果)  
+- **代理服务器** - 检测到的代理服务器的地理位置 IP 数据库中的 (（如果) 
 
 The office location summary page additionally shows the location's network assessment， network assessment history， a comparison of this location's assessment to other customers in the same city， and a list of specific insights and recommendations that you can undertake to improve network performance and reliability.
 
@@ -161,7 +161,6 @@ The details tab on the office location page shows the specific measurement resul
 
 > [!div class="mx-imgBorder"]
 > ![特定于位置的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>与 Microsoft 共享网络评估数据
 
@@ -189,9 +188,9 @@ The details tab on the office location page shows the specific measurement resul
    1. **地址** (要求) ：办公室的物理地址
    1. **Latitude** (可选) ：从必应地图查找中填充的地址（如果为空）
    1. **经度** (可选) ：从必应地图查找中填充的地址（如果为空）
-   1. **Egress IP 地址范围 1-5** (可选) ：对于每个范围，输入电路名称后跟有效 IPv4 或 IPv6 CIDR 地址的空格分隔列表。 这些值用于区分使用同一 LAN 子网 IP 地址的多个办公室位置。 EgressIP 地址范围都必须是 /24 网络大小，输入中不包含 /24。
+   1. **Egress IP 地址范围 1-5** (可选) ：对于每个范围，输入电路名称后跟有效 IPv4 CIDR 地址的空格分隔列表。 这些值用于区分使用同一 LAN 子网 IP 地址的多个办公室位置。 EgressIP 地址范围都必须是 /24 网络大小，输入中不包含 /24。
    1. **LanIps** (以下) ：列出此办公地点使用的 LAN 子网范围。 LAN 子网 ID 需要包含 CIDR 网络大小，其中网络大小可以介于 /8 和 /29 之间。 可以使用逗号或分号分隔多个 LAN 子网范围。
-   
+
 1. 添加办公地点并保存文件后，单击"浏览"按钮Upload **字段** 旁边的"浏览"按钮，然后选择保存的 CSV 文件。 
 
 1. 将自动验证该文件。 如果存在验证错误，则会看到错误消息： _导入文件中存在一些错误。查看错误，更正导入文件，然后重试。_ 单击链接 **打开特定** 字段验证错误列表的错误详细信息。

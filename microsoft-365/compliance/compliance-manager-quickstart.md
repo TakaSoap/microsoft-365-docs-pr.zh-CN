@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合规性管理器快速入门指南帮助你了解、设置和使用合规性管理器。
-ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149042"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419591"
 ---
 # <a name="compliance-manager-quickstart"></a>合规性管理器快速入门
 
@@ -63,7 +63,7 @@ ms.locfileid: "53149042"
 
 您还可以设置所有或部分改进操作自动化测试。 请访问以下链接，了解合规性管理器中的更高级功能：
 
-- [通过添加自己的控制措施和改进操作来扩展合规性管理器模板](compliance-manager-templates.md#extend-an-assessment-template)
+- [通过添加自己的控制措施和改进操作来扩展合规性管理器模板](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
 - [创建自己的自定义模板](compliance-manager-templates.md#create-an-assessment-template)
 - [修改现有模板以添加或删除控件和操作](compliance-manager-templates.md#modify-a-template)
 - [设置改进操作自动化测试](compliance-manager-setup.md#set-up-automated-testing)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 隐私管理中的主题权限请求解决方案可帮助你查找个人数据，并协作查看内容和创建报告。
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378475"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419771"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>管理隐私管理中的主题权限请求 (预览) 
 
@@ -47,7 +47,7 @@ ms.locfileid: "53378475"
 
 ## <a name="create-a-request"></a>创建请求
 
-主题权限管理管理员可以使用隐私管理向导创建请求。 此向导将指导你完成查找有关数据主体的个人数据并满足其请求的过程。
+主题权限管理管理员可以使用隐私管理向导创建请求。 该向导将指导你完成查找有关数据主体的个人数据并满足其请求的过程。
 
 四个主要步骤包括：
 

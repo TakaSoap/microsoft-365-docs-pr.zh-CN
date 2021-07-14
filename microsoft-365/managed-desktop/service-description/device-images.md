@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300097"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419507"
 ---
 # <a name="device-images"></a>设备图像
 
@@ -41,23 +41,7 @@ ms.locfileid: "53300097"
 - 全局：mmd@hp.com
 
 ### <a name="lenovo"></a>联想
-当你从 Lenovo 订购设备以用于Microsoft 托管桌面时，你将需要指示作为订单的一部分包含的特定部件号。 请与 Lenovo 销售代表或 Lenovo 渠道合作伙伴联系，让他们使用符合我们的设备要求的系统创建"特殊报价[模型"。](device-requirements.md#minimum-requirements) 若要包含与 Microsoft 托管桌面 兼容的预加载映像，请让销售代表引用" 系统构建基块部件号 *SBB0Q94938 – MMD Enablement*"。
-
-当前已启用以下产品Microsoft 托管桌面支持：
-
-- L13 Gen 1
-- L13 Gen 1
-- L14 Gen 1 (Intel) 
-- L14 Gen 1 (AMD) 
-- L15 Gen 1 (Intel) 
-- L15 Gen 1 (AMD) 
-- X1 二代
-- X1 Gen 5
-- T14 Gen 1 (Intel) 
-- T14 Gen 1 (AMD) 
-- T15 Gen 1
-- X13 Gen 1 (Intel) 
-
+当你从 Lenovo 订购设备以用于Microsoft 托管桌面时，你将需要指示作为订单的一部分包含的特定部件号。 请与 Lenovo 销售代表或 Lenovo 渠道合作伙伴联系，让他们使用符合我们的设备要求的系统创建"特殊报价[模型"。](device-requirements.md#minimum-requirements) 若要包含与 Microsoft 托管桌面 兼容的预加载映像，请让销售代表引用" 系统构建基块部件号 *SBB0Q94938 – MMD Enablement*"。 与 Lenovo 销售代表或 Lenovo 渠道合作伙伴合作，获得推荐的服务、支持和映像服务。
 
 ### <a name="microsoft"></a>Microsoft
 满足设备要求的所有 Microsoft 设备都提供与设备一Microsoft 托管桌面。 无需执行其他步骤。

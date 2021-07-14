@@ -3,7 +3,7 @@ title: 将 Office 365 内容分发网络 (CDN) 与 SharePoint Online 一同使�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/19/2020
+ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 了解如何使用 Office 365 内容分发网络 (CDN) 来加快你的 SharePoint Online 资产的交付。
-ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289447"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419536"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -37,7 +37,7 @@ ms.locfileid: "53289447"
 
 Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）托管静态资产，并从全局高速网络提供这些资产。 可以添加 **公共** 源、**私有** 源或同时添加这两种源，具体取决于想要托管在 Office 365 CDN 中的内容种类。 有关 [公用源和专用](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) 源之间区别的信息，请参阅选择每个源是公共源还是私有源。
 
-![Office 365 CDN概念图](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN概念图")
+![Office 365 CDN概念图](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN概念图")
 
 如果你已熟悉 CDN 的运行方式，则只需完成几个步骤，为租户Office 365 CDN启用 CDN。 本主题介绍如何。 请继续阅读，了解如何开始托管静态资产。
 
@@ -920,7 +920,7 @@ SharePoint  Online 中的发布功能会自动将存储在公共源中的资产�
 
 下图说明了当用户收到SharePoint包含来自公共源的资产的页面的请求时，工作流。
 
-![工作流图：从Office 365 CDN检索资源](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "工作流：从Office 365 CDN检索资源")
+![工作流图：从Office 365 CDN检索资源](../media/O365-CDN/o365-cdn-public-steps-transparent.png "工作流：从Office 365 CDN检索资源")
 
 > [!TIP]
 > 如果要禁用页面上特定 URL 的自动重写，可以签出页面并添加查询字符串参数 **？NoAutoReWrites=true** 到要禁用的每个链接的末尾。
@@ -956,7 +956,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 下图说明了当用户收到包含SharePoint源中的资产的页面的请求时，工作流。
 
-![工作流图：从Office 365 CDN检索资源](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "工作流：从Office 365 CDN源检索资源")
+![工作流图：从Office 365 CDN检索资源](../media/O365-CDN/o365-cdn-private-steps-transparent.png "工作流：从Office 365 CDN源检索资源")
 
 #### <a name="token-based-authorization-in-private-origins"></a>私有源中基于令牌的授权
 
@@ -975,7 +975,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 需要注意的是，SharePoint Online 不支持私有源中的资产的项目级权限。 例如，对于位于 的文件，在 满足以下条件的情况下，用户 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` 具有对文件的有效访问权限：
 
-|User  |权限  |有效访问  |
+|用户  |权限  |有效访问  |
 |---------|---------|---------|
 |用户 1     |有权访问 folder1         |可以从image1.jpg访问CDN         |
 |用户 2     |无法访问 folder1         |无法从image1.jpg访问CDN         |

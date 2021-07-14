@@ -14,16 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149018"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419519"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
 **本文内容：** 了解合规性管理器中的最近更新。
+
+## <a name="july-2021"></a>2021 年 7 月
+
+我们添加了根据模板的新通用版本为除 Microsoft 365 产品创建评估的功能。 若要了解更多信息，请 [从使用评估模板开始](compliance-manager-templates.md)。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
