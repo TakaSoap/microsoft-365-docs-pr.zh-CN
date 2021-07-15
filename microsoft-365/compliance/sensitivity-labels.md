@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114772"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430788"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -190,7 +190,7 @@ ms.locfileid: "53114772"
 
     ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
 
-- **要求用户将标签应用** 于文档和电子邮件、仅文档和容器。 也称为强制标记，这些选项确保必须先应用标签，用户才能保存文档、发送电子邮件、创建新的组或网站。
+- **要求用户将标签应用** 于文档和电子邮件、仅文档、容器及 Power BI 内容。 也称为强制标记，这些选项确保在用户保存文档、发送电子邮件、创建新的组或网站之前，以及当他们为 Power BI 使用未标记的内容时必须应用标签。
     
     该标签可由用户手动分配，由于您配置的条件或默认分配的条件（如上所述的 "默认标签" 选项）而自动分配。当用户需要分配标签时，Outlook 中显示的示例提示：
 
@@ -199,6 +199,8 @@ ms.locfileid: "53114772"
     有关文档和电子邮件的强制标签的详细信息，请参阅[要求用户应用标签到他们的电子邮件和文档](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。
     
     对于容器，必须在创建组或网站时分配标签。
+    
+    有关 Power BI 强制标签的详细信息，请参阅 [Power BI 的强制标签策略](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)。
     
     考虑使用此选项帮助增加标签的覆盖范围。 但是，如果没有用户培训，此设置也会导致标记不准确。 此外，除非你还设置了相应的默认标签，否则强制标记可能会使你的用户因更频繁地收到提示而感到沮丧。
 

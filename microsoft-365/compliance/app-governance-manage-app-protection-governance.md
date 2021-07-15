@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
-ms.openlocfilehash: bc8c739132de52abb69c15479cd851462e9f6ce7
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 63bd6684bc041c3c82ba6b8ddcc28c2600182b26
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420038"
+ms.locfileid: "53430692"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 
@@ -53,7 +53,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## <a name="a-first-glimpse-at-app-governance"></a>应用治理概览
 
-要查看应用治理仪表板，请转到 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance)。 请注意，若要查看应用治理数据，你的登录帐户必须具有其中一个[管理员角色](app-governance-get-started.md#administrator-roles)。
+要查看应用治理仪表板，请转到 [https://aka.ms/appgovernance](https://aka.ms/appgovernance)。 请注意，若要查看应用治理数据，你的登录帐户必须具有其中一个[管理员角色](app-governance-get-started.md#administrator-roles)。
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成
 
@@ -63,7 +63,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 - Azure AD 提供基础应用元数据和有关登录应用的详细信息。
 - Microsoft Cloud App Security 提供应用风险信息。
 
-通过跨应用治理、Azure AD 和 Microsoft Cloud App Security 共享信息，你可以在一个门户中显示聚合信息，并轻松链接到另一个门户以获取更多信息。 下面是一些示例：
+通过跨应用治理、Azure AD 和 Microsoft Cloud App Security 共享信息，可以在一个门户中显示汇总信息，并轻松链接到另一个门户以获取更多信息。以下是一些示例:
 
 - 应用治理中的应用登录信息：
 

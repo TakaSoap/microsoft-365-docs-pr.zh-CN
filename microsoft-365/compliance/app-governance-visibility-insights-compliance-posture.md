@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 确定你的应用合规性状况。
-ms.openlocfilehash: 3d7cac319c31bac40a3aad2f6b9a4c16303f6a20
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 2fde19e385d4797e04c8f991efa673d33cea3b58
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420027"
+ms.locfileid: "53430668"
 ---
 # <a name="determine-your-app-compliance-posture"></a>确定你的应用合规性状况
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-Microsoft 应用治理允许你从 [Microsoft 365 合规中心](https://compliance.microsoft.com/appgovernance)的应用治理概述页面快速评估第三方应用的合规状况及其对 Microsoft 365 租户中数据的访问。
+Microsoft 应用治理允许你从 [Microsoft 365 合规中心](https://aka.ms/appgovernance)的应用治理概述页面快速评估第三方应用的合规状况及其对 Microsoft 365 租户中数据的访问。
 
 ![Microsoft 365 合规中心内的应用治理概述页面](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

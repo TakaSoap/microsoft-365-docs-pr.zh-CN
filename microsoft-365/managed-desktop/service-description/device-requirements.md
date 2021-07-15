@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245788"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438008"
 ---
 # <a name="device-requirements"></a>设备要求
 
@@ -49,7 +49,9 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 - 64 位版本的 Microsoft 365 企业应用版 
 - 所有适用的设备驱动程序
 
-
+> [!NOTE]
+> Windows 11 在达到常规可用性后，它将是预安装软件的其他选项。
+>
 ### <a name="physical-features"></a>物理功能
 
 设备必须具有以下功能：
@@ -62,7 +64,8 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 有关这些功能以及服务使用的与这些功能相关的技术，请参阅Microsoft 托管桌面[技术](../intro/technologies.md)。
 
 > [!NOTE]
-> ARM处理器不受支持。
+>- ARM处理器不受支持。
+>- Windows 11 具有其他[硬件要求](/windows/whats-new/windows-11-requirements)。
 
 设备应满足或超过以下存储和内存限制：
 
@@ -70,7 +73,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 - 启动驱动器的容量必须至少为 128 GB。
 - 内部设备内存 (RAM) 必须等于或超过 8 GB。
 
-如果设备是在 2020 年 7 月 1 日之后进行，它还应具有 IR 相机和/或指纹读取器，以便支持[Windows Hello。](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
+如果设备是在 2020 年 7 月 1 日之后进行，它还应具有 IR 相机、指纹读取器或两者，[以便](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)支持Windows Hello。
 
 ## <a name="recommended-features"></a>推荐的功能
 

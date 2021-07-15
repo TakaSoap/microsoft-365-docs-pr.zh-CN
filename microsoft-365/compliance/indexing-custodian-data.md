@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将保管人添加到Advanced eDiscovery案例时，任何被视为部分索引的内容将被重新处理，使其完全可搜索。
-ms.openlocfilehash: f510b7e9c0fa2c5c181709c96907610066a4b1cf
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 34855eb168dd10fc500e2e57fe1d57ad81449452
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430500"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437972"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>保管人数据的高级索引
 
-将保管人添加到Advanced eDiscovery案例时，任何被视为部分索引或具有索引错误的内容将被重新编制索引，使其完全可搜索。  此重新编制索引的过程称为 *"高级索引"。* 内容部分编制索引或出现索引错误有很多原因。 这包括图像文件或文件中是否存在图像、不支持的文件类型或文件大小索引限制。 For SharePoint files， Advanced indexing runs only on items are marked as partially indexed or that have indexing errors. 在Exchange中，包含图像附件的电子邮件不会标记为部分索引或带有索引错误。 这意味着，高级索引过程不会对这些文件重新编制索引。
+将保管人添加到Advanced eDiscovery案例时，任何被视为部分索引或具有索引错误的内容将被重新编制索引，使其完全可搜索。  此重新编制索引的过程称为 *"高级索引"。* 内容部分编制索引或出现索引错误有很多原因。 这包括图像文件或文件中是否存在图像、不支持的文件类型或文件大小索引限制。 For SharePoint files， Advanced indexing runs only on items are marked as partially indexed or that have indexing errors. 在Exchange中，包含图像附件的电子邮件不会标记为部分索引或带有索引错误。 这意味着，高级索引过程将不会对这些文件重新编制索引。
 
 若要详细了解处理支持和部分索引项，请参阅：
 

@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 0fc00819947d3d472de9199b0381c6f33de0acd6
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420039"
+ms.locfileid: "53430704"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
-开始使用 Microsoft Cloud App Security 的应用治理功能：
+开始使用 Microsoft Cloud App Security 的应用治理附加产品:
 
-1. 验证你的帐户是否具有适当的许可级别。 应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为下面列出的各种许可证包的一部分存在于你的帐户中。
+1. 验证账户是否有适当的许可级别。应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为下面列出的各种许可证包的一部分存在于帐户中。
 1. 你必须具有下面列出的管理员角色之一才能访问门户中的应用治理页面。
 
 ## <a name="licensing-for-app-governance"></a>应用治理许可

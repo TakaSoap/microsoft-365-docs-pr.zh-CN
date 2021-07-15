@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195017"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438068"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -305,7 +305,12 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     mdatp health --field org_id
     ```
 
-2. 运行 MicrosoftDefenderATPOnboardingLinuxServer.py，请注意，为了运行此命令，你必须 `python` 已安装在设备上：
+2. 运行 MicrosoftDefenderATPOnboardingLinuxServer.py。 
+   
+    >[!NOTE]
+    >若要运行此命令，你必须 `python` 已安装在设备上。 如果运行的是 RHEL 8.x 或 Ubuntu 20.04 或更高版本，则需要使用 Python 3 而不是 Python。
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py

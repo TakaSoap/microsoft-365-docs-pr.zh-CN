@@ -4,11 +4,11 @@
       href: move-from-google-workspace-overview.md
     - name: 注册 Microsoft 365
       href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: 设置 Microsoft 365 进行 Google 迁移
+    - name: 为 Google 迁移设置 Microsoft 365
       href: set-up-microsoft-365-forgoogle.md
     - name: 为 Windows 设备设置安全策略
       href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: 添加 Google Workspace 域
+    - name: 添加 Google 工作区域
       href: add-google-domain.md
     - name: 安装 Office 应用和 Microsoft Teams
       href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
@@ -16,7 +16,7 @@
       href: migrate-email.md
     - name: 将你的域连接到 Microsoft 365
       href: connect-domain-tom365.md
-    - name: 使用 Mover 移动每个人的数据
-      href: mover-migrate-files.md
+    - name: 使用迁移管理器移动每个人的数据
+      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
     - name: 取消 Google Workspace
       href: cancel-google.md

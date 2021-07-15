@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用威胁检测和修正。
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420043"
+ms.locfileid: "53430716"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>开始使用应用威胁检测和修正
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420043"
 
 Microsoft 应用治理会收集基于恶意应用活动的内置应用治理检测方法生成的威胁警报以及你创建的活动应用策略生成的基于策略的警报。
 
-首先从位于 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance) 的应用治理仪表板查看应用警报。
+首先从位于 [https://aka.ms/appgovernance](https://aka.ms/appgovernance) 的应用治理仪表板查看应用警报。
 
 ![Microsoft 365 合规中心内的应用治理概述页面，其中突出显示了“检测和策略警报”部分](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
