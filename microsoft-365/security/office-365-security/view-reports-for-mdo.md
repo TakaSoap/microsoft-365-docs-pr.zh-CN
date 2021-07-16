@@ -20,12 +20,12 @@ description: 管理员可以了解如何查找和使用 Defender for Office 365�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e8bb03202139137adf55c4c10230b1c4e99253ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083508"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454717"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在 Office 365 门户中查看 Defender for Microsoft 365 Defender报告
 
@@ -191,11 +191,24 @@ If you click **Filters**， you can modify the report and the details table by s
 |报告|主题|
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1) |[威胁资源管理器（和实时检测）](threat-explorer.md)|
-|**电子邮件安全** 报告，例如顶级发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。|[在电子邮件门户中查看Microsoft 365 Defender报告](view-email-security-reports.md)|
-|**邮件流报告**，如转发报告、邮件流状态报告以及顶级发件人和收件人报告。|[新管理中心中的Exchange报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**仅 PowerShell 保险箱链接** (URL) 。 此 cmdlet 的输出显示过去七保险箱链接操作的结果。|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|**仅适用于 PowerShell 的 EOP** 和 Microsoft Defender Office 365 (邮件) 。 此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和消息计数的信息。|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**仅适用于 PowerShell 的 EOP** 和 Defender Office 365检测 (报告) 。 此 cmdlet 的输出包含有关电子邮件或文件中恶意文件或 URL、网络钓鱼尝试、模拟和其他潜在威胁的详细信息。|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|不需要 Defender for Office 365|[在电子邮件门户中查看Microsoft 365 Defender报告](view-email-security-reports.md)|
+|EAC 管理中心Exchange中的 (流) |[新管理中心中的Exchange报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|
+
+PowerShell 报告 cmdlet：
+
+<br>
+
+****
+
+|报告|主题|
+|---|---|
+|主要发件人和收件人|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|热门恶意软件|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|邮件通信|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|安全链接|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
+|遭到入侵的用户|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
+|邮件流状态|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Defender for Office 365报告需要哪些权限？
@@ -204,12 +217,12 @@ If you click **Filters**， you can modify the report and the details table by s
 
 - **组织管理**
 - **安全管理员**
-- **安全读者**
-- **全局读者**
+- **安全信息读取者**
+- **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 

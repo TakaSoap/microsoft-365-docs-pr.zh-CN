@@ -1,5 +1,5 @@
 ---
-title: 设备的 Microsoft 安全功能分数
+title: Microsoft 设备安全分数
 description: 你的设备分数显示设备在应用程序、操作系统、网络、帐户和安全控件中的统一安全配置状态。
 keywords: Microsoft 设备安全分数， Microsoft Defender for Endpoint Microsoft 设备安全分数， 安全分数， 配置分数， 危险和漏洞管理， 安全控制， 改进机会， 一段时间的安全配置分数， 安全状况， 基线
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934077"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454768"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>设备的 Microsoft 安全功能分数
+# <a name="microsoft-secure-score-for-devices"></a>Microsoft 设备安全分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,13 +41,13 @@ ms.locfileid: "51934077"
 >[!NOTE]
 > 配置分数现在是 Microsoft 危险和漏洞管理 Microsoft 安全分数的一部分。
 
-你的设备分数显示在危险和漏洞管理[仪表板](tvm-dashboard-insights.md)中Microsoft Defender 安全中心。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映你的设备跨以下类别的安全配置状态：
+你的设备分数显示在 危险和漏洞管理[门户](tvm-dashboard-insights.md)的 Microsoft 365 Defender 仪表板中。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映你的设备跨以下类别的安全配置状态：
 
 - 应用程序
 - 操作系统
 - 网络
 - 帐户
-- 安全控件
+- 安全控制措施
 
 选择类别以转到" [**安全建议"页**](tvm-security-recommendation.md) 并查看相关建议。
 
@@ -57,7 +57,7 @@ ms.locfileid: "51934077"
 
 更改可能需要几个小时才能反映在仪表板中。
 
-1. 在导航窗格中，转到 **"设置**  >  **高级功能"** 
+1. 在导航窗格中，**转到"设置**  >    >  **终结点""常规**  >  **高级功能"** 
 
 2. 向下滚动到 **Microsoft 安全分数**，将设置切换为 **"打开"。**
 
@@ -79,19 +79,21 @@ Microsoft 设备安全分数卡中的数据是不断发现漏洞的过程的产�
 
 通过修正安全建议列表中的问题来改进安全配置。 当你这样做时，你的 Microsoft 设备安全分数会提高，并且你的组织可以更加抵御网络安全威胁和漏洞。
 
-1. 从仪表板中的 Microsoft 设备安全分数危险和漏洞管理，选择其中一个类别。 您将查看与类别相关的建议列表。 它将你访问" [**安全建议"**](tvm-security-recommendation.md) 页。 如果要查看所有安全建议，在进入"安全建议"页面后，清除搜索字段。
+1. 从仪表板中的"Microsoft 设备安全分数"危险和漏洞管理，选择其中一个类别。 您将查看与类别相关的建议列表。 它将你访问" [**安全建议"**](tvm-security-recommendation.md) 页。 如果要查看所有安全建议，在进入"安全建议"页面后，清除搜索字段。
 
 2. 在列表中选择一个项。 该飞出面板将打开，并包含与建议相关的详细信息。 选择 **修正选项**。
 
-   ![安全控制相关的安全建议](images/tvm_security_controls.png)
+   :::image type="content" alt-text="安全控制相关的安全建议。" source="images/security-controls.png":::
 
 3. 阅读说明，了解问题的上下文以及下一步要执行哪些操作。 选择截止日期、添加备注，然后选择"将所有修正 **活动** 数据导出到 CSV"，以便你可以将其附加到电子邮件进行跟踪。
 
 4. **提交请求**。 你将看到一条确认消息，表明已创建修正任务。
-   ![修正任务创建确认](images/tvm_remediation_task_created.png)
+
+   :::image type="content" alt-text="修正任务创建确认。" source="images/remediation-task-created.png":::
 
 5. 保存 CSV 文件。
-   ![保存 csv 文件](images/tvm_save_csv_file.png)
+
+   :::image type="content" alt-text="保存 csv 文件。" source="images/tvm_save_csv_file.png":::
 
 6. 向 IT 管理员发送后续电子邮件，并允许分配修正时间在系统中传播。
 

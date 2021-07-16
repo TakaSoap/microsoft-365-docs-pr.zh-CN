@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: 配置Advanced eDiscovery适用于案例的所有审阅集的审核设置。 这包括用于分析和光学字符识别的设置。
-ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430548"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453893"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>配置搜索和分析Advanced eDiscovery
 
@@ -80,13 +80,13 @@ ms.locfileid: "53430548"
 
 ## <a name="ignore-text"></a>忽略文本
 
-在某些情况下，某些文本会降低分析质量，例如，无论电子邮件内容如何，都会添加到电子邮件中的冗长免责声明。 如果你知道哪些是应忽略的文本，可以通过指定文本字符串以及文本排除分析功能（近似重复、电子邮件线程、主题和相关性）将其从分析中排除。 此外，还 (正则表达式) 正则表达式作为忽略的文本。 
+在某些情况下，某些文本会降低分析质量，例如，无论电子邮件内容如何，都会添加到电子邮件中的冗长免责声明。 如果你知道哪些是应忽略的文本，可以通过指定文本字符串以及文本排除分析功能（近似重复、电子邮件线程、主题和相关性）将其从分析中排除。 此外，还 (正则表达式) 正则表达式作为忽略的文本。
 
 ## <a name="optical-character-recognition-ocr"></a>光学字符识别 (OCR)
 
 打开此设置后，OCR 处理将在图像文件上运行。 OCR 处理在下列情况下运行：
 
-- 将保管 [人和非保管人数据源](non-custodial-data-sources.md) 添加到案例时。 OCR 处理在高级 [索引过程中](indexing-custodian-data.md) 执行。 OCR 仅对在高级索引期间处理的项目运行。 例如，如果在高级索引过程中处理了部分索引或其他索引错误的大型 PDF 文件，则该文件也将应用 OCR。 换句话说，OCR 处理仅发生在高级索引过程中重新编制索引的文件上。 这意味着，在将保管人添加到案例时，某些电子邮件附件不会针对 OCR 进行处理，因为在高级索引过程中不会处理这些文件。 当应用 OCR 图像文件时，这些图像文件的文本将在集合期间进行搜索。
+- 将保管 [人和非保管人数据源](non-custodial-data-sources.md) 添加到案例时。 将 OCR 应用于图像文件时，将在集合期间搜索这些文件中的文本。 OCR 处理在高级 [索引过程中](indexing-custodian-data.md) 执行。 OCR 仅对在高级索引期间处理的项目运行。 例如，如果在高级索引过程中处理了部分索引或其他索引错误的大型 PDF 文件，则该文件也将应用 OCR。 换句话说，OCR 处理仅发生在高级索引过程中重新编制索引的文件上。 这意味着在某些情况下，保管人会添加到案例，但某些电子邮件附件不会针对 OCR 进行处理，因为在高级索引期间不会处理这些文件。
 
 - 当来自其他数据源 (未与保管人关联且添加到非托管数据源中的案例的内容添加到) 审阅集时。
 

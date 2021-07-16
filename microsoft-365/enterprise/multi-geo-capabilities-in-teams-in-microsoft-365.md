@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: 了解Teams多地理位置Microsoft 365工作原理。
-ms.openlocfilehash: 9fe9b289b0ffbef12327c4232b9deb6727b6d718
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362639"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453521"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>多地理位置功能Microsoft Teams
 
@@ -48,7 +48,7 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>频道消息
 
-每个Microsoft 365组都有一 (PDL) 首选数据位置，该位置表示要存储数据的地理位置。 Teams使用与每个团队关联的组的 PDL 来确定在何处存储该团队的频道消息数据。 这包括频道会议内发生的聊天。
+每个Microsoft 365组都有一 (PDL) 首选数据位置，该位置表示要存储数据的地理位置。 Teams使用与每个团队关联的组的 PDL 来确定在何处存储该团队的频道消息数据。 这包括私人频道以及频道会议内发生的聊天。
 
 当用户创建新团队时，该用户的 PDL 将确定分配给该组Microsoft 365 PDL。 组 PDL 确定团队数据的存储位置。 如果该用户的 PDL 稍后发生更改，则组的 PDL 不会更改。
 

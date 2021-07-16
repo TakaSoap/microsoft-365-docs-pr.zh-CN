@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 ServiceNow DataParser 连接器在 Microsoft 365 中导入和存档 ServiceNow 数据。
-ms.openlocfilehash: 992f34864f0de7ddff1f8159e9970157bcffb964
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: a01e075b6cbf400bc3b7dc38950d87443a46f81c
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276961"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454417"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>设置连接器以存档 ServiceNow 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>设置连接器以从 ServiceNow 存档数据
 
 使用 17a-4 LLC 中的[ServiceNow DataParser](https://www.17a-4.com/dataparser/)将数据从 ServiceNow 导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 ServiceNow 连接器，该连接器配置为捕获来自第三方数据源的项目，并导入这些项Microsoft 365。 ServiceNow DataParser 连接器将 ServiceNow 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

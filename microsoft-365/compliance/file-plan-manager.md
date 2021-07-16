@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419759"
+ms.locfileid: "53430626"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -39,8 +39,6 @@ ms.locfileid: "53419759"
 - 文件计划描述符支持每个标签的附加和可选信息。
 
 文件计划可用于所有保留标签，即使未将内容标记为记录也是如此。
-
-![文件计划页面](../media/compliance-file-plan.png)
 
 若要了解什么是保留标签以及如何使用它们，请参阅[了解保留策略和保留标签](retention.md)。
 
@@ -111,9 +109,9 @@ ms.locfileid: "53419759"
 
 ![创建或编辑保留标签时的文件计划描述符](../media/file-plan-descriptors.png)
 
-文件计划描述符列示例视图：
+当为这些可选描述符中的每个描述符选择“**选择**”时，可以选择其中一个现成值，也可以创建自己的值，然后选择它。 例如： 
 
-![文件计划描述符列](../media/file-plan-descriptors-on-labels-tab.png)
+![创建用于预配/引文的新文件计划描述符](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>导出所有保留标签以分析或启用脱机评审
 
@@ -129,9 +127,7 @@ ms.locfileid: "53419759"
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>向文件计划导入保留标签
 
-在文件计划中，可以使用具有特定格式的 .csv 文件批量导入新的保留标签。 导入标签后，可以在 .csv 文件中进行编辑并再次导入文件，从而更轻松地批量编辑现有保留标签。
-
-若要导入新的保留标签和修改现有保留标签，请执行以下操作： 
+在文件计划中，可以使用具有特定格式的 .csv 文件批量导入新的保留标签： 
 
 1. 在“**文件计划**”页面上，单击“**导入**”，以使用“**填写并导入文件计划**” 页面：
 
@@ -186,9 +182,9 @@ ms.locfileid: "53419759"
     
     - 如果验证失败: 备注行号和列名以在导入文件中进行更正。 选择 **关闭**，然后选择 **是** 进行确认。 在文件中更正错误并进行保存，再次选择 **导入** 选项，然后返回步骤 4。
     
-    - 如果验证通过: 可以选择 **上线** 以使保留标签在租户中可用。 或选择页面中的“关闭”图标，并选择 **是** 以确认要关闭向导，此时保留标签在租户中不可用。
+    - 如果验证通过: 可以选择 **上线** 以使保留标签在租户中可用。 或选择页面中的“关闭”图标，然后选择“**是**”以确认要关闭向导，此时保留标签在租户中不可用。
 
-将导入的标签添加到租户后，现在可以将其添加到新的保留标签策略中，或进行自动应用。 可以在“**文件计划**”页上执行以下操作，方法是选择 **+创建标签**，然后选择“**发布标签策略**”或“**自动应用标签**”。
+将导入的标签添加到租户后，现在可以通过发布这些标签或自动应用它们，来使其可供用户使用。 可以从“**标签策略**”选项卡执行这两项操作，然后选择“**发布标签**”或“**自动应用标签**”。
 
 ## <a name="next-steps"></a>后续步骤
 

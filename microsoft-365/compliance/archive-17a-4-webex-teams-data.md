@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Cisco Webex DataParser 连接器在 Microsoft 365 中导入和存档 Cisco Webex 数据。
-ms.openlocfilehash: 055152f2d566f7cfc32dac132a70bbaf63ceb503
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: ca17ffb9313c6c59884d2c7a55d1bc81816acda7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096936"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453953"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-webex-data-preview"></a>设置连接器以存档 Cisco Webex 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>设置连接器以存档 Cisco Webex 数据
 
 使用 17a-4 LLC 中的[Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/)将数据从 Cisco Cisco Webex 平台导入并存档到 Microsoft 365 组织。 DataParser 包括一个 Cisco Webex 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Cisco Webex DataParser 连接器将 Cisco Webex 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

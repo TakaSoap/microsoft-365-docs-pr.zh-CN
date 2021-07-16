@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务时有关服务的其他设备信息。
-ms.openlocfilehash: 684af01b2d90f44b2cda1cf050d1e4db70f92915
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1eb7b18360cefeeb2d5770c3d77e564d5a757a5e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289435"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453563"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
@@ -167,6 +167,10 @@ ms.locfileid: "53289435"
 
 若要检查你的设备是否已在公有云中注册，你应该将设备列表从 Azure AD 门户导出并下载到 Excel 电子表格。 然后，使用 _registeredTime_ 列 (在组织通过迁移过程的第 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)阶段) 注册的设备。
 
+**是否仍需要按照使用基于 DNS 的 DNS 为 Microsoft 创建 DNS 记录Windows [DNS 名称](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)？**
+
+重新注册设备不再需要此 DNS 条目。 
+
 ## <a name="additional-considerations"></a>其他注意事项
 
 > [!IMPORTANT]
@@ -176,7 +180,7 @@ ms.locfileid: "53289435"
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 

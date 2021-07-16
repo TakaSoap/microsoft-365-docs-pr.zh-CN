@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 FactSet DataParser 连接器，以在 Microsoft 365 中导入和存档 FactSet 数据。
-ms.openlocfilehash: 06f4948b28a84a9dca249d08abe6973d44f0a520
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 26beead657618dc3b33a11d8b6202c914a9c49bc
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096374"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454513"
 ---
-# <a name="set-up-a-connector-to-archive-factset-data-preview"></a>设置连接器以存档 FactSet 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-factset-data"></a>设置连接器以存档 FactSet 数据
 
 使用 17a-4 LLC 中的[FactSet DataParser](https://www.17a-4.com/factset-dataparser/)将数据从 FactSet 平台导入并存档到 Microsoft 365 组织中。 DataParser 包括一个 FactSet 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 FactSet DataParser 连接器将 FactSet 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

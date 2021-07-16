@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Zoom DataParser 连接器在 Microsoft 365 中导入和存档 Zoom 数据。
-ms.openlocfilehash: dffececb0719999abf19ea58eab1a52afdb3daea
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 1c70099efa17b5ff6c1c4dfcd71c6bf6790535c8
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096945"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453941"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-data-preview"></a>设置连接器以存档缩放数据 (预览) 
+# <a name="set-up-a-connector-to-archive-zoom-data"></a>设置连接器以存档缩放数据
 
 使用[Zoom DataParser](https://www.17a-4.com/dataparser/) from 17a-4 LLC 将 Zoom 平台的数据导入并存档到组织中用户Microsoft 365邮箱。 DataParser 包括一个缩放连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Zoom DataParser 连接器将 Zoom 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

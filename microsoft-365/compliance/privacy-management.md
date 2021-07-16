@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 隐私管理功能提供用于评估组织存储在 Microsoft 365 中的个人数据的解决方案，并帮助你识别和修正隐私风险。
-ms.openlocfilehash: 4f98a5c867b232e3eca298a163fe4b6b4855f7a9
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378465"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455381"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft 隐私管理 (预览) 
 
@@ -70,7 +70,7 @@ Microsoft 365隐私管理提供了可使你：
 
 隐私管理Microsoft 365通过主题权限请求解决方案处理这些查询。 它提供自动化和工作流功能，帮助你搜索存储在 Microsoft 365 中的主题数据、查看结果、选择适当的文件和生成报告。 同时，你可以安全地与组织的其他专家协作，以完成请求。
 
-请注意，此主题权限请求解决方案提供超出合规性中心中原始数据主体请求 (DSR) 解决方案的功能，并且两者之间没有连接或共享工作流。 旧 DSR 页面将在以后停用。
+请注意，此主题权限请求解决方案提供超出合规性中心中原始数据主体请求 (DSR) 解决方案的功能，并且两者之间没有连接或共享工作流。
 
 若要了解更多信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 用户数据Parser 连接器，以导入和存档 Microsoft 365。
-ms.openlocfilehash: da947c80a296aa4fee8ccabb9bb82eecc1d9b103
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0dce81b5251612bc3c3ddb467c658bd4a32d56f7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096937"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453929"
 ---
-# <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>设置连接器以存档预览版中的 (数据) 
+# <a name="set-up-a-connector-to-archive-data-from-symphony"></a>设置连接器以存档来自"百年"的数据
 
 使用来自 17a-4 LLC 的[一组用户数据Parser，将"](https://www.17a-4.com/Symphony-dataparser/)显示通信数据"导入并存档到组织Microsoft 365邮箱。 DataParser 包括一个配置为捕获第三方数据源中的项目，以及将这些项目导入到第三方数据源的 Microsoft 365。 该百年数据Parser 连接器将百年数据转换为电子邮件格式，然后将这些项目导入到用户邮箱Microsoft 365。
 

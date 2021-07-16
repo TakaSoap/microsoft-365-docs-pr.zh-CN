@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148898"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454013"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -49,32 +49,30 @@ ms.locfileid: "53148898"
 
 ### <a name="where-to-set-permissions"></a>在何处设置权限
 
-拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 可以在安全与合规中心Office 365 Azure AD &设置权限Azure Active Directory (Azure AD) 。
+拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 可以在 Azure AD Microsoft 365 合规中心和 Azure AD Azure Active Directory (中设置) 。
 
 > [!NOTE]
 > 美国政府高级Community (GCC) 和国防部 (DoD) 环境的客户只能在 Azure AD 中为合规性管理器设置用户权限和角色。 有关 Azure AD 说明和角色类型定义，请参阅下文。
 
-若要在安全与合规Office 365中&和分配角色，请按照以下步骤操作：
+若要设置权限并分配角色Microsoft 365 合规中心，请按照以下步骤操作：
 
-1. 转到安全Office 365 [安全&中心，](https://protection.office.com/)然后选择左侧 **导航上的权限**。
+1. 转到 ["Microsoft 365 合规中心](https://compliance.microsoft.com/compliancemanager)**左侧导航** 上选择"权限"。
 
-2. 查找要添加一个或多个用户的角色组，并选中组名称左侧的框。  (请参阅 [下面的角色和相关函数列表](#role-types)。 角色组名称模仿角色名称。) 
+2. 在"**合规中心"** 下拉列表下，选择"**角色"。** 
 
-3. 在该组的飞出窗格中，选择"成员 **"** 标题下的 **"编辑** "。
+3. 查找要添加一个或多个用户的角色组，并选中组名称左侧的框。  (请参阅 [下面的角色和相关函数列表](#role-types)。 角色组名称模仿角色名称。) 
 
-4. 选择 **"选择成员"。** 将显示另一个弹出窗口。
+4. 在该组的飞出窗格中，选择"成员 **"** 标题下的 **"编辑** "。
 
-5. 选择 **+ 添加** 以选择要添加到组的一个或多个用户。
+5. 选择 **"选择成员"。** 将显示另一个弹出窗口。
 
-6. 选中要添加的名称旁边的复选框，然后选择底部的 **"添加** "按钮。
+6. 选择 **+ 添加** 以选择要添加到组的一个或多个用户。
 
-7. 分配完用户后，选择"完成"，然后选择"**保存**"，然后选择"**关闭"。**
+7. 选中要添加的名称旁边的复选框，然后选择底部的 **"添加** "按钮。
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>有关安全Office 365合规&中心
+8. 分配完用户后，选择"完成"，然后选择"**保存**"，然后选择"**关闭"。**
 
-详细了解安全[与合规Office 365&权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
-
-如果您无法访问 Office 365 安全与合规中心，或者您需要访问 Microsoft 服务信任门户中的经典版本的合规性管理器，则服务信任门户中的管理员设置提供了另一种方法来分配角色 ([查看](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)说明) 。 请注意，此类角色的功能更加有限。
+如果需要在 Microsoft 服务信任门户中访问经典版本的合规性管理器，服务信任门户中的管理员设置提供了另一种分配角色 ([查看](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) 说明) 。 请注意，此类角色的功能更加有限。
 
 ##### <a name="more-about-azure-ad"></a>有关 Azure AD 的更多信息
 
@@ -90,8 +88,8 @@ ms.locfileid: "53148898"
 | 用户可以： | 合规性管理器角色 | Azure AD 角色 | 
 | :------------- | :-------------: | :------------: |
 | **读取但不编辑数据**| 合规性管理器读者  | Azure AD 全局读者、安全读者 | 
-| **编辑数据**| 合规性管理器贡献 | 合规性管理员 | 
-| **编辑测试结果**| 合规性管理器评估方 | 合规性管理员 | 
+| **编辑数据**| 合规性管理器贡献 | 合规管理员 | 
+| **编辑测试结果**| 合规性管理器评估方 | 合规管理员 | 
 | **管理评估、模板和租户数据**| 合规性管理器管理 | 合规性管理员、合规性数据管理员、安全管理员  | 
 | **分配用户**| 全局管理员 | 全局管理员 | 
 
@@ -187,7 +185,7 @@ ms.locfileid: "53148898"
 8. 重新分配完成后，你将在飞出窗格中看到确认消息，确认之前用户的所有改进操作已重新分配到新用户。 如果收到重新分配失败通知，请关闭窗口并重试。 若要关闭飞出窗格，请选择"完成 **"。**
 
 新接受者将收到已分配给改进操作的电子邮件。 电子邮件包含指向改进操作的详细信息页面的直接链接。
- 
+
  > [!NOTE]
 > 如果重新分配具有挂起更新的操作，如果在重新分配后接受更新，则指向重新分配电子邮件中的操作的直接链接将中断。 可以通过在接受更新后将操作重新分配给用户来解决此问题。 详细了解改进 [操作的更新](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)。
 
@@ -215,7 +213,7 @@ ms.locfileid: "53148898"
 
 合规性管理器仪表板旨在为您提供当前合规性状况的概览。
 
-![合规性管理器 - 仪表板](../media/compliance-manager-dashboard.png "合规性管理器仪表板")
+:::image type="content" alt-text="合规性管理器 - 仪表板。" source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>整体合规性分数
 
@@ -363,5 +361,5 @@ Select a template from its row to bring up its details page， which contains a 
 
 **了解更多信息：**[了解如何使用评估模板](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 通过设置评估 [自定义合规性管理器](compliance-manager-assessments.md)。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffe7d13ca0943e8927d0d9ce663527fedf880e48
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 83dd2483b93b2f4fe520973ce05346f59baf2f28
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187585"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453549"
 ---
 # <a name="create-and-manage-device-tags"></a>创建和管理设备标签
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187585"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-在设备上添加标记以创建逻辑组附属关系。 设备标记支持网络的正确映射，使您能够附加不同的标记以捕获上下文，并启用动态列表创建作为事件的一部分。 标记可在"设备" **列表视图中用作** 筛选器，或用于对设备进行分组。 有关设备分组详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
+在设备上添加标记，创建逻辑组等同。 设备标记支持网络适当映射，可附加不同的标记以捕获上下文，并启用在事件过程中创建动态列表。 标记可在"设备" **列表视图中用作** 筛选器，或用于对设备进行分组。 有关设备分组详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
 
 可以使用以下方法在设备上添加标记：
 
@@ -43,26 +43,26 @@ ms.locfileid: "51187585"
 > [!NOTE]
 > 将标记添加到设备的时间与标记在设备列表和设备页面中的可用性之间可能有一些延迟。  
 
-若要使用 API 添加设备标记，请参阅[添加或删除设备标记 API。](add-or-remove-machine-tags.md)
+若要使用 API 添加设备标记，请参阅 [添加或删除设备标记 API](add-or-remove-machine-tags.md)。
 
 ## <a name="add-and-manage-device-tags-using-the-portal"></a>使用门户添加和管理设备标记
 
-1. 选择要管理标记的设备。 可以从以下任一视图选择或搜索设备：
+1. 选择要用于管理标签的设备。 可以从以下任一视图选择或搜索设备：
 
    - **安全操作仪表板** - 从具有活动警报的热门设备部分选择设备名称。
    - **警报队列** - 从警报队列中选择设备图标旁边的设备名称。
    - **设备列表** - 从设备列表中选择设备名称。
    - **搜索框** - 从下拉菜单中选择设备，然后输入设备名称。
 
-     您还可以通过文件和 IP 视图访问警报页面。
+     还可通过文件和 IP 视图访问警报页面。
 
-2. 从 **"响应操作** "行中选择"管理标记"。
+2. 从响应操作行中选择 **管理标签**。
 
-    ![管理标记按钮的图像](images/manage-tags.png)
+    :::image type="content" alt-text="管理标记按钮的图像。" source="images/manage-tags-option.png":::
 
 3. 键入 以查找或创建标记
 
-    ![在设备上添加标记的图像1](images/new-tags.png)
+    :::image type="content" alt-text="在设备上添加标记的图像1。" source="images/create-new-tag.png":::
 
 标记将添加到设备视图，并且也会反映在 **"设备"列表** 视图中。 然后，可以使用 **标记** 筛选器查看相关设备列表。
 
@@ -72,7 +72,7 @@ ms.locfileid: "51187585"
 
 您还可以从此视图中删除标记。
 
-![在设备上添加标记的图像2](images/more-manage-tags.png)
+:::image type="content" alt-text="在 device2 上添加标记的图像。" source="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>通过设置注册表项值添加设备标记
 

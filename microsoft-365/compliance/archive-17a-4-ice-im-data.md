@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 ICE 连接 Chat DataParser 连接器，以在聊天连接中导入和存档 ICE Microsoft 365。
-ms.openlocfilehash: 2c9eb6524e4f5e131603b5998d215e0b2d8111d3
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0aac5c701f122eaf99497635281ebc07d835fc2e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097015"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454477"
 ---
-# <a name="set-up-a-connector-to-archive-ice-connect-chat-data-preview"></a>设置连接器以存档 ICE 连接 Chat 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>设置连接器以存档 ICE 连接聊天数据
 
 使用 17a-4 LLC 中的[ICE DataParser](https://www.17a-4.com/ice-dataparser/)将 ICE 连接 Chat 数据导入并存档到组织用户Microsoft 365邮箱。 DataParser 包括一个 ICE 聊天连接器，该连接器配置为捕获来自第三方数据源的项目，并导入这些项Microsoft 365。 ICE DataParser 连接器将 ICE 连接 聊天数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

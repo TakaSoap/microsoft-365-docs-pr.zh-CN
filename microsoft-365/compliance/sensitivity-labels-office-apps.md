@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228587"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430752"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -361,6 +361,8 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支持此配置，也称为强制标签。 有关内置 Office 应用的标签，请参阅此页面中 [功能](#support-for-sensitivity-label-capabilities-in-apps) 部分中有关最低版本的表。
 >
 > 要对文档而不是电子邮件使用强制标签，请参阅下一节中说明如何配置 Outlook 特定选项的指示。
+> 
+> 要对 Power BI 使用强制标签，请参阅 [Power BI 的强制标签策略](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)。
 
 选择 **要求用户将标签应用于其电子邮件和文档** 策略设置后，分配了策略的用户必须在以下情况下选择并应用敏感度标签：
 

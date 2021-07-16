@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 SQL DataParser 连接器在 Microsoft 365 中导入和SQL数据。
-ms.openlocfilehash: 51fd433ad072ba5afe0b314d7b61041728337240
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 67ad3332a05356702df7b0624ee05519ff30bcac
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137663"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454025"
 ---
-# <a name="set-up-a-connector-to-archive-sql-data-preview"></a>设置连接器以存档SQL数据 (预览) 
+# <a name="set-up-a-connector-to-archive-sql-data"></a>设置连接器以存档SQL数据
 
 使用 SQL 17a-4 LLC 中的数据[Parser](https://www.17a-4.com/sql-dataparser/)将 SQL 数据库中的数据导入并存档到 Microsoft 365 组织中。 DataParser 包括一SQL连接器，该连接器配置为捕获第三方数据源中的项目，并导入这些项Microsoft 365。 DataParser SQL连接器会将SQL数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 

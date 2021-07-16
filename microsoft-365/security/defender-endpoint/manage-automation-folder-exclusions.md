@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 37a251acd3b7631cffffaf2eb76bf0f2b4954ee6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185833"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454813"
 ---
 # <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除 
 
@@ -59,7 +59,7 @@ ms.locfileid: "51185833"
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>添加自动化文件夹排除
-1. 在导航窗格中，**选择"设置**  >  **文件夹排除项"。**  
+1. 在导航窗格中，**选择"设置**  >    >  **终结点规则**  >  **自动化文件夹排除项"。**  
 
 2. 单击 **"新建文件夹排除"。**  
 
@@ -69,22 +69,21 @@ ms.locfileid: "51185833"
     - 扩展
     - 文件名
     - 说明
-    
 
-4. 单击“保存”。
+4. 单击“**保存**”。
 
 >[!NOTE]
 > 用于收集或检查已排除文件的 Live Response 命令将失败，并出现错误："已排除文件"。 此外，自动调查将忽略排除的项目。
 
 ## <a name="edit-an-automation-folder-exclusion"></a>编辑自动化文件夹排除 
-1. 在导航窗格中，**选择"设置**  >  **文件夹排除项"。** 
+1. 在导航窗格中，**选择"设置**  >    >  **终结点规则**  >  **自动化文件夹排除项"。** 
 
 2. 单击 **文件夹** 排除上的"编辑"。  
 
 3. 更新规则的详细信息，**然后单击保存。**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>删除自动化文件夹排除 
-1. 在导航窗格中，**选择"设置**  >  **文件夹排除项"。**  
+1. 在导航窗格中，**选择"设置**  >    >  **终结点规则**  >  **自动化文件夹排除项"。**  
 2. 单击 **"删除排除"。** 
 
 

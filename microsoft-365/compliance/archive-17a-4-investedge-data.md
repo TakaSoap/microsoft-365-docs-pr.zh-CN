@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 InvestEdge DataParser 连接器，以在 Microsoft 365 中导入和存档 InvestEdge 数据。
-ms.openlocfilehash: fd384cb25486c4fa072dc17283c5b73e26e514a6
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: b20d9809c4bea113580a62c7a414321ed15da6ad
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097011"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454465"
 ---
-# <a name="set-up-a-connector-to-archive-investedge-data-preview"></a>设置连接器以将 InvestEdge 数据存档 (预览) 
+# <a name="set-up-a-connector-to-archive-investedge-data"></a>设置连接器以存档 InvestEdge 数据
 
 使用 17a-4 LLC 中的[InvestEdge DataParser](https://www.17a-4.com/investedge-dataparser/)将来自 InvestEdge 的数据导入并存档到组织Microsoft 365邮箱。 DataParser 包括一个 InvestEdge 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 InvestEdge DataParser 连接器将 InvestEdge 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

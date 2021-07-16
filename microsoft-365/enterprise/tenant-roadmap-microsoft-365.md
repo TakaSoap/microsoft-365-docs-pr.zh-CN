@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: 设置租户租户的Microsoft 365。
-ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909450"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464029"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>租户的租户Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "50909450"
 
 在确保优化网络以同时针对本地和远程工作人员访问 Microsoft 365 后，下一项重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
 
-### <a name="plan"></a>计划
+### <a name="plan"></a>套餐
 
 若要规划租户实施，请执行：
 
@@ -43,14 +43,14 @@ ms.locfileid: "50909450"
 - [规划客户端应用支持](microsoft-365-client-support-certificate-based-authentication.md)
 - [确定如何使用混合新式验证](hybrid-modern-auth-overview.md)
 - [规划 Office 2007 和 Office 2010 升级](plan-upgrade-previous-versions-office.md)
-- [了解租户隔离](microsoft-365-tenant-isolation-overview.md)
+- [了解租户隔离](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### <a name="deploy"></a>部署
 
 部署租户： 
 
 - 为 [组织添加 DNS](../admin/setup/add-domain.md) 域。
-- 使用[管理中心 中的Microsoft 365指南](setup-guides-for-microsoft-365.md)。
+- 使用[Microsoft 365 管理中心 中的设置指南](setup-guides-for-microsoft-365.md)。
 - 构建标识[基础结构](identity-roadmap-microsoft-365.md)[，并保护用户登录](microsoft-365-secure-sign-in.md)。
 
 ### <a name="move-a-tenants-geographic-locations"></a>移动租户的地理位置
@@ -76,6 +76,6 @@ Microsoft 继续打开新的数据中心地理位置， (地理位置) 服务Mic
 - [交叉租户邮箱迁移](cross-tenant-mailbox-migration.md)
 - [租户到租户迁移](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 使用订阅、许可证、 [帐户和租户开始租户规划](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。

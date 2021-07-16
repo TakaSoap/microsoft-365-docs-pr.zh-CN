@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430704"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438032"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -30,7 +30,7 @@ ms.locfileid: "53430704"
 
 ## <a name="licensing-for-app-governance"></a>应用治理许可
 
-在开始使用应用治理之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用应用治理，你的组织必须拥有以下订阅或加载项之一：
+在开始使用应用治理之前，应该先确认 [Microsoft 365 管理中心 - 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 和任何加载项。 若要访问和使用应用治理，你的组织必须拥有以下订阅或加载项之一：
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -57,7 +57,7 @@ ms.locfileid: "53430704"
 
 ## <a name="administrator-roles"></a>管理员角色
 
-若要查看应用治理页面或管理策略和设置，需要以下管理员角色之一：
+要查看应用治理页面或管理策略和设置，需要以下管理员角色之一：
 
 -  应用程序管理员
 - 云 应用程序管理员
@@ -69,6 +69,9 @@ ms.locfileid: "53430704"
 - 安全管理员
 - 安全操作员
 - 安全信息读取者（只读）
+
+> [!NOTE]
+> 只有全局管理员可以激活应用治理免费试用版。
 
 以下是每个角色的能力。
 

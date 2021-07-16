@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 确定你的应用合规性状况。
-ms.openlocfilehash: 2fde19e385d4797e04c8f991efa673d33cea3b58
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430668"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438020"
 ---
 # <a name="determine-your-app-compliance-posture"></a>确定你的应用合规性状况
 
@@ -54,7 +54,7 @@ Microsoft 应用治理允许你从 [Microsoft 365 合规中心](https://aka.ms/a
 
 - 对于数据和资源访问：
 
-  - 过去 90 天内的应用 API 数据访问
-  - 热门资源过去 90 天内的使用情况
+  - 租户中的应用在当前和前三个日历月内通过 Graph API 访问的数据总计。 （目前仅包括邮件和文件上传和下载使用情况）
+  - 当前和前三个日历月内的数据使用情况，按资源类型细分。 （目前仅包括邮件和文件上传和下载使用情况）
 
   根据此信息，你可以确定对 Microsoft 365 租户中数据的访问是否存在异常峰值。

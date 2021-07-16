@@ -1,0 +1,50 @@
+---
+title: 评估 Microsoft Defender Office 365概述、如何评估、评估步骤
+description: 使用此概述可了解设置 MDO 试点的步骤，包括要求、启用或激活 eval 以及设置试点。
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: v-lsaldanha
+author: lovina-saldanha
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365solution-overview
+- m365solution-evalutatemtp
+ms.topic: conceptual
+ms.technology: m365d
+ms.openlocfilehash: c39f5823d87ab7b7ff7795014925ca7c22231a3f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53457641"
+---
+# <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>启用和试用 Microsoft Defender for Office 365
+
+**适用于：**
+- Microsoft 365 Defender
+
+本文概述了启用和试用 Microsoft Defender for Office 365。 在开始此过程之前，请确保你已查看用于评估项目Microsoft 365 Defender并且你已创建了[](eval-overview.md)Microsoft 365 Defender[评估环境](eval-create-eval-environment.md)。 
+<br>
+
+使用以下步骤启用和试用 Microsoft Defender for Office 365。
+
+![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤](../../media/defender/m365-defender-office-eval-steps.png)
+
+下表介绍了图中的步骤。
+
+| |步骤  |说明  |
+|---------|---------|---------|
+|1|[查看体系结构要求和关键概念](eval-defender-office-365-architecture.md)    | 了解 Defender for Office 体系结构，并确保Exchange Online环境满足体系结构先决条件。       |
+|2|[启用评估环境](eval-defender-office-365-enable-eval.md)     |   按照步骤设置评估环境。      |
+|3|[设置试点 ](eval-defender-office-365-pilot.md)    |    创建试点组、配置保护并熟悉关键功能和仪表板。     |
+||||
+

@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930303"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454741"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
@@ -47,7 +47,7 @@ ms.locfileid: "52930303"
 
 |阶段 |说明 |
 |--|--|
-|[准备迁移](switch-to-microsoft-defender-prepare.md) |在 [" **准备"** 阶段](switch-to-microsoft-defender-prepare.md)： <p>1。更新组织的设备。 <p>2. 获取适用于终结点的 Defender。 <p>3. 规划角色和权限，并授予对Microsoft Defender 安全中心。 <p>4. 配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
+|[准备迁移](switch-to-microsoft-defender-prepare.md) |在 [" **准备"** 阶段](switch-to-microsoft-defender-prepare.md)： <p>1。更新组织的设备。 <p>2. 获取适用于终结点的 Defender。 <p>3. 规划角色和权限，并授予对 Microsoft 365 Defender 门户的访问权限。 <p>4. 配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
 |[设置适用于终结点的 Defender](switch-to-microsoft-defender-setup.md) |在 [设置 **阶段**：](switch-to-microsoft-defender-setup.md) <p>1. 启用/重新安装Microsoft Defender 防病毒。 <p>2. 为终结点配置 Defender。 <p>3. 将 Defender for Endpoint 添加到现有解决方案的排除列表中。 <p>4. 将现有解决方案添加到列表的排除Microsoft Defender 防病毒。 <p>5. 设置设备组、集合和组织单位。 <p>6. 配置反恶意软件策略和实时保护设置。|
 |[载入到适用于终结点的 Defender](switch-to-microsoft-defender-onboard.md) |在 [载入 **阶段**](switch-to-microsoft-defender-onboard.md)： <p>1. 将设备载入到 Defender for Endpoint。 <p>2. 运行检测测试。 <p>3. 确认Microsoft Defender 防病毒被动模式下运行。 <p>4. 获取更新Microsoft Defender 防病毒。 <p>5. 卸载现有的终结点保护解决方案。 <p>6. 确保 Defender for Endpoint 正常工作。 |
 
@@ -68,6 +68,6 @@ ms.locfileid: "52930303"
 
 **想要了解更多信息？请参阅 [Defender for Endpoint](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 - 继续为 [迁移做准备](switch-to-microsoft-defender-prepare.md)。

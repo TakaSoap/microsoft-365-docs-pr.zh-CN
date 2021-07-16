@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Cisco Jabber DataParser 连接器，以在 Microsoft 365 中导入和存档 Cisco Jabber 数据。
-ms.openlocfilehash: b5bf70a00887a6ea802354f51ee5fd65f5351727
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 45f3b59fb4a99d8084b882607b925cf449525cba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096372"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454525"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-jabber-data-preview"></a>设置连接器以存档 Cisco Jabber 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>设置连接器以存档 Cisco Jabber 数据
 
 使用[Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) 17a-4 LLC 将数据从 Cisco Jabber 导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 Cisco Jabber 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Cisco Jabber DataParser 连接器将 Cisco Jabber 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 

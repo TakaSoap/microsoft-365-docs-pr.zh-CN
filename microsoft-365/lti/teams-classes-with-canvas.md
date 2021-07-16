@@ -13,19 +13,24 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 50e4e8ef912a8f19f379bba29b328a5a27358b5c
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256899"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454681"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
-> [!IMPORTANT]
-> 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
-
 Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮助教师和学生轻松地在 Learning Management System (LMS) 和 Teams 之间导航。 用户可以直接从 LMS 中访问与其课程关联的课堂团队。
+
+## <a name="prerequisites-before-deployment"></a>部署前的先决条件
+
+> [!NOTE]
+> 当前的 Class Teams LTI 仅支持将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 在有限范围内同步。 
+> - 你的租户必须在 Canvas 字段与 Microsoft AAD (电子邮件、用户 ID 或 SIS ID) UPN 之间完全匹配。 我们正在努力扩展同步功能的灵活性，但与此同时，Canvas 中与 AAD 中的 UPN 不匹配的任何用户将不会添加到与 Canvas 同步的 Teams 类。 
+> - 只有一个 Microsoft 租户可用于在 Canvas 和 Microsoft 之间映射用户。
+> - 在将 Class Teams LTI 之前，必须关闭 SDS，以避免重复组。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理员
 
@@ -78,3 +83,9 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 5. 选择“安装”。
 
    the Microsoft Teams classes LTI app will be added to the list of external apps.
+   
+## <a name="enabling-the-lti-app-for-canvas-courses"></a>为 Canvas 课程启用 LTI 应用
+
+若要在课程内使用 LTI 应用，Canvas 课程的讲师必须启用集成同步。每个课程必须由讲师启用，以创建相应的团队;没有用于团队创建的全球机制。 这是为了防止创建不需要的团队的预防措施。
+
+请查阅教师文档，[](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas)以针对每个课程启用 LTI 应用并完成集成设置。

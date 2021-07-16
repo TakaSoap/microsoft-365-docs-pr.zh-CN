@@ -15,20 +15,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍服务加密如何与 Microsoft 365 中的客户密钥一Microsoft 365。
-ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9a8558a0cf36f2040614ca3ffb61e7ba9936d40f
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769445"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463957"
 ---
 # <a name="service-encryption-with-customer-key"></a>使用客户密钥执行服务加密
 
-Microsoft 365 DKM 密钥管理器和分布式密钥管理器BitLocker启用基线 (级别) 。 Microsoft 365内容添加了一层加密。 此内容包括来自 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Microsoft Teams。
+Microsoft 365通过 BitLocker 和分布式密钥管理器和 DKM (启用基线、) 。 Microsoft 365内容添加了一层加密。 此内容包括来自 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Microsoft Teams。
 
-## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>服务加密、BitLocker和客户密钥如何协同工作
+## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>服务加密、BitLocker 和客户密钥如何协同工作
 
-你的数据始终在 Microsoft 365 Service 中通过 BitLocker DKM 进行加密。 有关详细信息，请参阅如何Exchange Online[电子邮件密码](exchange-online-secures-email-secrets.md)。 客户密钥提供额外保护，防止未经授权的系统或人员查看数据，并补充BitLocker Microsoft 数据中心中的磁盘加密。 服务加密并不用于阻止 Microsoft 人员访问你的数据。 相反，客户密钥可帮助你履行控制根密钥的法规或合规性义务。 您明确授权 Microsoft 365服务使用您的加密密钥来提供增值云服务，如电子数据展示、反恶意软件、反垃圾邮件、搜索索引等。
+你的数据始终使用 BitLocker 和 DKM 在 Microsoft 365 服务中进行其余加密。 有关详细信息，请参阅如何Exchange Online[电子邮件密码](exchange-online-secures-email-secrets.md)。 客户密钥提供了防止未经授权的系统或人员查看数据的额外保护，并补充了 Microsoft 数据中心中的 BitLocker 磁盘加密。 服务加密并不用于阻止 Microsoft 人员访问你的数据。 相反，客户密钥可帮助你履行控制根密钥的法规或合规性义务。 您明确授权 Microsoft 365服务使用您的加密密钥来提供增值云服务，如电子数据展示、反恶意软件、反垃圾邮件、搜索索引等。
 
 客户密钥基于服务加密构建，可让你提供和控制加密密钥。 Microsoft 365然后使用这些密钥加密你的其余数据，如联机服务条款 ([OST) ](https://www.microsoft.com/licensing/product-licensing/products.aspx)中所述。 客户密钥可帮助您履行合规性义务，因为您可以控制用于加密Microsoft 365解密数据的加密密钥。
   
@@ -36,7 +36,7 @@ Microsoft 365 DKM 密钥管理器和分布式密钥管理器BitLocker启用基�
 
 ## <a name="customer-key-with-hybrid-deployments"></a>混合部署的客户密钥
 
-客户密钥仅加密云中的其余数据。 客户密钥无法保护本地邮箱和文件。 可以使用其他方法加密本地数据，如BitLocker。
+客户密钥仅加密云中的其余数据。 客户密钥无法保护本地邮箱和文件。 可以使用另一种方法（如 BitLocker）加密本地数据。
 
 ## <a name="about-data-encryption-policies"></a>关于数据加密策略
 
@@ -48,7 +48,7 @@ Microsoft 365 DKM 密钥管理器和分布式密钥管理器BitLocker启用基�
 - Teams媒体消息 (图像、代码段、视频消息、音频消息、wiki 图像) 
 - Teams存储中存储的呼叫和Teams录制
 - Teams聊天通知
-- Teams Cortana 提供聊天建议
+- Teams聊天建议Cortana
 - Teams状态消息
 - 用户和信号Exchange Online
 - Exchange Online未通过邮箱 DEP 加密的邮箱
@@ -63,7 +63,7 @@ Microsoft 365 DKM 密钥管理器和分布式密钥管理器BitLocker启用基�
 - SharePoint和OneDrive for Business数据。
 - Microsoft Teams保存在 OneDrive for Business 和 SharePoint Online 中的Teams和一些呼叫和会议录像SharePoint联机 DEP 进行加密。
 - 其他Microsoft 365客户密钥Yammer支持的其他工作负载，例如 Yammer 和 Planner。
-- Teams实时事件和问答&实时事件中的 A。 例如Teams，此方案是唯一一个使用多工作负载 DEP 的客户密钥未加密的方案。
+- Teams实时事件数据。
 
 可以为每个租户创建多个 DEP，但一次只能分配一个 DEP。 分配 DEP 时，加密将自动开始，但需要一段时间才能完成，具体取决于租户的大小。
 

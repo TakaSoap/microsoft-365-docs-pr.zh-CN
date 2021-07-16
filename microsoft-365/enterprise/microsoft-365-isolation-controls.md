@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365隔离控件
+title: Microsoft 365 隔离控制
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,13 +17,13 @@ f1.keywords:
 description: 了解隔离控件在Microsoft 365中如何工作，从而允许服务根据需要进行互操作或保持自治。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 514b12e44d9e81a18b691ebf3196a3d21157e71b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918938"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464062"
 ---
-# <a name="microsoft-365-isolation-controls"></a>Microsoft 365隔离控件 
+# <a name="microsoft-365-isolation-controls"></a>Microsoft 365 隔离控制 
 
 Microsoft 持续致力于确保网站的多租户Microsoft 365支持企业级安全性、机密性、隐私、完整性、本地、国际和可用性[标准](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)。 Microsoft 提供的服务规模和范围使得管理具有大量人工交互Microsoft 365非常困难且非经济。 Microsoft 365服务通过多个全球分布的数据中心提供，每个数据中心都通过几个需要人员触摸或客户内容访问的操作实现高度自动化。 我们的员工使用自动化工具和高度安全的远程访问支持这些服务和数据中心。 
 

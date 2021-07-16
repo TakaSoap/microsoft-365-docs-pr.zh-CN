@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 49bd90d8a082f55622e54976cc8fc78229d8c646
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842766"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453533"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -59,7 +59,7 @@ ms.locfileid: "52842766"
 
 ## <a name="create-a-device-group"></a>创建设备组
 
-1. 在导航窗格中，选择 **"设置**  >  **设备组"。**
+1. 在导航窗格中，**选择"设置**  >    >  **终结点权限设备**  >  **组"。**
 
 2. 单击 **"添加设备组"。**
 

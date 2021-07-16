@@ -1,5 +1,5 @@
 ---
-title: 将Microsoft Teams类与管理学习超集成
+title: 将Microsoft Teams类与具有"Learn 超"的类一同使用
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,13 +12,13 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 将Microsoft Teams类与管理学习超集成
-ms.openlocfilehash: da98fae3fa5d6be2513147be58747512bea99e16
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+description: 将Microsoft Teams类与具有"Learn 超"的类一同使用
+ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314485"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454624"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>将Microsoft Teams类与具有"Learn 超"的类一同使用
 
@@ -27,15 +27,15 @@ ms.locfileid: "53314485"
 你的课程可能包括实时对话、视频会议或异步交互。 可以在一个地方为学生添加文件共享和共同创建体验。 Microsoft Teams超学习课程重新定义了教学的动态性以及有效的学习方式。
 
 > [!IMPORTANT]
-> 确保你已成功在学生信息系统和 SIS (机构电子邮件) `help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student\_Information\_System/SIS\_Planning`
+> 确保你已成功在学生信息系统和 SIS 中设置 ([电子邮件) ](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
->Microsoft Teams类集成依赖 SIS 中的机构电子邮件字段映射到正确的 Microsoft Azure Active Directory 的 AAD (用户主体) 名称 (UPN) 。 如果未设置机构电子邮件，这将默认为现有电子邮件。 建议为每个用户设置此字段，以确保其数据正确同步，并且 Microsoft AAD 和 Microsoft Learn Ultra 之间的电子邮件数据没有冲突。
+>the Microsoft Teams classes integration relies on the institution email field in your SIS to map to the correct Microsoft Azure Active Directory's (AAD) [User Principle Name (UPN) ](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes). 如果未设置机构电子邮件，这将默认为现有电子邮件。 建议为每个用户设置此字段，以确保其数据正确同步，并且 AAD 和用户 Learn 超 之间不存在电子邮件数据冲突。
 >
 > 如果未在 SIS 映射中正确设置此字段，则集成将继续工作，但用户可能不会显示在创建的 Teams 类中，并且可能会发生错误。
 
 ## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>支持机构数据映射 – 机构电子邮件 SIS 字段
 
-作为云提供商集成演变的一部分，在学生信息系统框架集成和公共 REST  API 中，为学生信息系统框架集成和公共 REST API 创建了一个新的机构电子邮件字段，让机构可以有效地在"完成学习"和 Microsoft AAD 之间管理数据同步过程。
+作为云提供商集成演变的一部分，在学生信息系统框架集成和公共 REST  API 中，为学生信息系统框架集成和公共 REST API 创建了一个新的机构电子邮件字段，让机构可以有效地在"完成学习"和 AAD 之间管理数据同步过程。
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>机构电子邮件意味着什么，它支持什么？
 
@@ -59,6 +59,8 @@ ms.locfileid: "53314485"
 该Microsoft Teams课程集成仅适用于 **超课程视图课程**。 你的机构需要完成这些要求以使用它：
 
 - 启用超基本导航后，让用户了解超极学习 SaaS
+
+  ![在课程内启用此功能的示例](media/feature-availability.png)
 
 - 启用 LTI 以用于课程。
 
@@ -157,6 +159,10 @@ ms.locfileid: "53314485"
 > [!NOTE]
 > 将 **{Tenant}** 替换为特定机构Microsoft Azure租户 ID。
 
+你将看到一个权限窗口，说明你正在授予为用户授予访问 Microsoft Teams 的权限。
+
+![Microsoft 和 Microsoft 和 Microsoft 的"权限"窗口](media/permissions1.png)
+
 ### <a name="after-configuring-the-lti-applications"></a>配置 LTI 应用程序后
 
 1. 在管理员 **面板上**，导航到"**工具和** 实用程序"，然后选择 **"Microsoft Teams管理员"。**
@@ -172,3 +178,5 @@ ms.locfileid: "53314485"
    - 如果同意尚未获得批准，请按照所述的步骤生成许可 URL 并将其发送给全局管理员Microsoft 365进行审批。
 
 5. 确认审批后，选择"**重试** 以确认"，然后选择"提交 **"。**
+
+   ![指示您的访问已被阻止的对话框](media/blocked-access.png)

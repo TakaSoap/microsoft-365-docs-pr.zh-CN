@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339666"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454705"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -50,7 +50,7 @@ Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windo
 
    - 对于 macOS 设备，你可以选择通过 Microsoft Defender for Endpoint 或第三方解决方案载入。 有关详细信息，请参阅 Mac 上的[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - 对于其他非Windows设备选择"通过第三Windows **集成载入非非集成设备"。**   
+   - 对于其他非Windows设备，选择"通过 **第三Windows集成载入非集成设备"。**   
     1. 在导航窗格中，选择 **互操作性**  >  **合作伙伴**。 确保列出了第三方解决方案。
     2. 在 **"合作伙伴应用程序**"选项卡中，选择支持非Windows合作伙伴。
     3. 选择 **"打开合作伙伴** 页面"以打开合作伙伴的页面。 按照页面上提供的说明进行操作。

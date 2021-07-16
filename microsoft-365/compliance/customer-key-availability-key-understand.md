@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的客户密钥的可用性密钥。
-ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227075"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463993"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>了解客户密钥的可用性密钥
 
@@ -65,7 +65,7 @@ Microsoft 采用深度防御策略来防止恶意参与者影响存储在 Micros
 
 Microsoft 365是为了防止误用可用性密钥。 应用程序层是可以使用密钥（包括可用性密钥）加密和解密数据的唯一方法。 只有Microsoft 365代码能够解释和遍历加密和解密活动的密钥层次结构。 客户密钥、可用性密钥、其他分层密钥和客户数据的存储位置之间存在逻辑隔离。 此隔离在一个或多个位置受到威胁时降低了数据泄露的风险。 层次结构中的每个层都内置了 24x7 入侵检测功能，以保护存储的数据和机密。
 
-实施访问控制是为了防止对内部系统（包括可用性密钥密钥存储）进行未经授权的访问。 Microsoft 工程师不能直接访问可用性密钥密钥存储。 有关访问控制的其他详细信息，请查看管理[访问控制Microsoft 365。](/Office365/securitycompliance/office-365-administrative-access-controls-overview)
+实施访问控制是为了防止对内部系统（包括可用性密钥密钥存储）进行未经授权的访问。 Microsoft 工程师不能直接访问可用性密钥密钥存储。 有关访问控制的其他详细信息，请查看管理[访问控制Microsoft 365。](/compliance/office-365-administrative-access-controls-overview)
 
 技术控制可防止 Microsoft 人员登录到高度特权的服务帐户，否则攻击者可能会使用这些帐户来模拟Microsoft 服务。 例如，这些控件阻止交互式登录。
 

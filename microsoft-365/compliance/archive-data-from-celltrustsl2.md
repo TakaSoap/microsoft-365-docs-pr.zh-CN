@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 CellTrust SL2 数据连接器来导入和存档移动应用数据。
-ms.openlocfilehash: 0929a92978f9b48d40153b3cc7328e5e05b54fd0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096946"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453966"
 ---
-# <a name="archive-data-from-celltrust-sl2-to-microsoft-365-preview"></a>将数据从 CellTrust SL2 存档到Microsoft 365 (预览) 
+# <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>将数据从 CellTrust SL2 存档到Microsoft 365
 
 CellTrust SL2 捕获移动通信数据，并集成了领先的存档技术，以满足 FINRA、HIPAA、FOIA 和 TCPA 等法规的电子发现要求。 SL2 数据连接器将移动通信项目导入Microsoft 365。 本文介绍使用 CellTrust SL2 数据连接器进行存档Microsoft 365 SL2 与数据库集成的过程。 完成此过程假定你已订阅 CellTrust SL2 服务，并且熟悉 SL2 体系结构。 有关 SL2 的信息，请参阅<www.celltrust.com>。
 
@@ -99,7 +99,7 @@ CellTrust 的 SL2 平台捕获来自多个源的通信数据。 SL2 数据源可
 
 有关与 CellTrust 联系的详细信息，请参阅 [CellTrust 客户支持](https://www.celltrust.com/contact-us/#support) 页，了解有关设置 CellTrust SL2 数据连接器的帮助。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 域管理员可以为域或该域中的任何 US 设置连接器。 如果使用 OU 管理员帐户，则只能为特定 OU 设置连接器。
 

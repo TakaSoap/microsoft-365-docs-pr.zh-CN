@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908706"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454573"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在管理中心Microsoft 365组
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
 创建组[和Microsoft 365组的成员](create-groups.md)后，可以配置组。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
 
-转到位于 Microsoft 365管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
+转到 上 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心。
 
 ## <a name="edit-the-group-name-or-description"></a>编辑组名称或说明
 
@@ -50,11 +50,11 @@ ms.locfileid: "50908706"
 
 4. 选择 **"添加** "添加某人，或单击 **"X"** 删除某人。
 
-5. 单击“**关闭**”。
+5. 单击“关闭”。
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>将对话副本发送到组成员的收件箱
   
-使用管理中心创建组时，默认情况下，用户不会获得发送到其收件箱的组电子邮件和会议邀请的副本。 他们需要转到组以查看对话和会议。 可以在管理中心更改此设置。
+使用管理中心创建组时，默认情况下，用户不会收到发送到收件箱的组电子邮件副本，但用户会获得发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
 
 启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和会议Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
 
@@ -103,7 +103,7 @@ ms.locfileid: "50908706"
   
 ## <a name="related-articles"></a>相关文章
 
-[创建Microsoft 365组](create-groups.md)
+[创建 Microsoft 365 组](create-groups.md)
 
 [管理对 Microsoft 365 组的来宾访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

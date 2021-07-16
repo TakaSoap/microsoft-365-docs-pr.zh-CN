@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解应用策略。
-ms.openlocfilehash: 6d4ff23ca0e09f5e410d32d6ced144afc0c4bb15
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: b5d36d6597de54d7936bc542d37d91d0fac0ba45
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420046"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437960"
 ---
 # <a name="learn-about-app-policies"></a>了解应用策略
 
@@ -29,18 +29,7 @@ Microsoft 应用治理可检测 Microsoft 365 租户中的异常应用行为，�
 
 这些针对应用和用户模式及行为的策略可以防止用户使用不合规或恶意的应用，并限制有风险的应用访问你的租户数据。
 
-以下是对应用策略管理所需的管理员角色的快速回顾。
-
-| 角色 | 读取策略 | 创建、更新或删除策略 |
-|:-------|:-----|:-------|
-| 合规管理员 | ![复选标记](..\media\checkmark.png) | ![复选标记](..\media\checkmark.png) |
-| 合规信息读取者 | ![复选标记](..\media\checkmark.png) |  |
-| 全局管理员 | ![复选标记](..\media\checkmark.png) | ![复选标记](..\media\checkmark.png) |
-| 全局读取者  | ![复选标记](..\media\checkmark.png) |  |
-| 安全管理员 | ![复选标记](..\media\checkmark.png) | ![复选标记](..\media\checkmark.png) |
-| 安全信息读取者  | ![复选标记](..\media\checkmark.png) |  |
-| 安全操作员 | ![复选标记](..\media\checkmark.png) | ![复选标记](..\media\checkmark.png) |
-||||
+有关哪些角色可以修改策略的信息，请参阅 [管理员角色](app-governance-get-started.md#administrator-roles)。
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 
