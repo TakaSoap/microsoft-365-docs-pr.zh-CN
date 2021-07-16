@@ -555,6 +555,44 @@
           href: record-versioning.md
         - name: 法规要求的资源
           href: retention-regulatory-requirements.md
+- name: 管理应用治理
+  items:
+    - name: 保护和治理应用
+      href: app-governance-manage-app-protection-governance.md
+    - name: 开始使用应用治理
+      href: app-governance-get-started.md
+    - name: 提交有关应用治理的反馈
+      href: app-governance-feedback.md
+    - name: 获取可见性和见解
+      items:
+        - name: 了解可见性见解
+          href: app-governance-visibility-insights-overview.md
+        - name: 入门
+          href: app-governance-visibility-insights-get-started.md
+        - name: 查看你的应用
+          href: app-governance-visibility-insights-view-apps.md
+        - name: 确定合规性状况
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: 实现应用策略
+      items:
+        - name: 了解应用策略
+          href: app-governance-app-policies-overview.md
+        - name: 入门
+          href: app-governance-app-policies-get-started.md
+        - name: 创建应用策略
+          href: app-governance-app-policies-create.md
+        - name: 管理应用策略
+          href: app-governance-app-policies-manage.md
+    - name: 检测和修正应用威胁
+      items:
+        - name: 了解检测和修正
+          href: app-governance-detect-remediate-overview.md
+        - name: 入门
+          href: app-governance-detect-remediate-get-started.md
+        - name: 调查异常检测警报
+          href: app-governance-anomaly-detection-alerts.md
+        - name: 修正应用威胁
+          href: app-governance-detect-remediate-detect-threats.md
 - name: 管理电子数据展示
   items:
     - name: Microsoft 365 电子数据展示解决方案

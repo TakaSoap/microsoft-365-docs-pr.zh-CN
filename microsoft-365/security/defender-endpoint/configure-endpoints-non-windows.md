@@ -16,62 +16,62 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339666"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454705"
 ---
-# <a name="onboard-non-windows-devices"></a><span data-ttu-id="cf426-104">载入非 Windows 设备</span><span class="sxs-lookup"><span data-stu-id="cf426-104">Onboard non-Windows devices</span></span>
+# <a name="onboard-non-windows-devices"></a><span data-ttu-id="c074a-104">载入非 Windows 设备</span><span class="sxs-lookup"><span data-stu-id="c074a-104">Onboard non-Windows devices</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="cf426-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="cf426-105">**Applies to:**</span></span>
-- [<span data-ttu-id="cf426-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="cf426-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="cf426-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="cf426-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="c074a-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="c074a-105">**Applies to:**</span></span>
+- [<span data-ttu-id="c074a-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="c074a-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="c074a-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c074a-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-<span data-ttu-id="cf426-108">**平台**</span><span class="sxs-lookup"><span data-stu-id="cf426-108">**Platforms**</span></span>
-- <span data-ttu-id="cf426-109">macOS</span><span class="sxs-lookup"><span data-stu-id="cf426-109">macOS</span></span>
-- <span data-ttu-id="cf426-110">Linux</span><span class="sxs-lookup"><span data-stu-id="cf426-110">Linux</span></span>
+<span data-ttu-id="c074a-108">**平台**</span><span class="sxs-lookup"><span data-stu-id="c074a-108">**Platforms**</span></span>
+- <span data-ttu-id="c074a-109">macOS</span><span class="sxs-lookup"><span data-stu-id="c074a-109">macOS</span></span>
+- <span data-ttu-id="c074a-110">Linux</span><span class="sxs-lookup"><span data-stu-id="c074a-110">Linux</span></span>
 
-><span data-ttu-id="cf426-111">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="cf426-111">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="cf426-112">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="cf426-112">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+><span data-ttu-id="c074a-111">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="c074a-111">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="c074a-112">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="c074a-112">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-<span data-ttu-id="cf426-113">Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。</span><span class="sxs-lookup"><span data-stu-id="cf426-113">Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms.</span></span> <span data-ttu-id="cf426-114">你将能够查看来自各种受支持操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。</span><span class="sxs-lookup"><span data-stu-id="cf426-114">You'll be able to see alerts from various supported operating systems (OS) in Microsoft 365 Defender and better protect your organization's network.</span></span> 
+<span data-ttu-id="c074a-113">Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。</span><span class="sxs-lookup"><span data-stu-id="c074a-113">Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms.</span></span> <span data-ttu-id="c074a-114">你将能够查看来自各种受支持操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。</span><span class="sxs-lookup"><span data-stu-id="c074a-114">You'll be able to see alerts from various supported operating systems (OS) in Microsoft 365 Defender and better protect your organization's network.</span></span> 
 
-<span data-ttu-id="cf426-115">你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。</span><span class="sxs-lookup"><span data-stu-id="cf426-115">You'll need to know the exact Linux distros and macOS versions that are compatible with Defender for Endpoint for the integration to work.</span></span> <span data-ttu-id="cf426-116">有关详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="cf426-116">For more information, see:</span></span>
-- [<span data-ttu-id="cf426-117">Linux 上的 Microsoft Defender for Endpoint 系统要求</span><span class="sxs-lookup"><span data-stu-id="cf426-117">Microsoft Defender for Endpoint on Linux system requirements</span></span>](microsoft-defender-endpoint-linux.md#system-requirements)  
-- <span data-ttu-id="cf426-118">[macOS 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-mac.md#system-requirements)。</span><span class="sxs-lookup"><span data-stu-id="cf426-118">[Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).</span></span>
+<span data-ttu-id="c074a-115">你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。</span><span class="sxs-lookup"><span data-stu-id="c074a-115">You'll need to know the exact Linux distros and macOS versions that are compatible with Defender for Endpoint for the integration to work.</span></span> <span data-ttu-id="c074a-116">有关详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="c074a-116">For more information, see:</span></span>
+- [<span data-ttu-id="c074a-117">Linux 上的 Microsoft Defender for Endpoint 系统要求</span><span class="sxs-lookup"><span data-stu-id="c074a-117">Microsoft Defender for Endpoint on Linux system requirements</span></span>](microsoft-defender-endpoint-linux.md#system-requirements)  
+- <span data-ttu-id="c074a-118">[macOS 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-mac.md#system-requirements)。</span><span class="sxs-lookup"><span data-stu-id="c074a-118">[Microsoft Defender for Endpoint on macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).</span></span>
 
-## <a name="onboarding-non-windows-devices"></a><span data-ttu-id="cf426-119">载入非Windows设备</span><span class="sxs-lookup"><span data-stu-id="cf426-119">Onboarding non-Windows devices</span></span>
-<span data-ttu-id="cf426-120">你需要执行以下步骤来载入非Windows设备：</span><span class="sxs-lookup"><span data-stu-id="cf426-120">You'll need to take the following steps to onboard non-Windows devices:</span></span>
-1. <span data-ttu-id="cf426-121">选择你的首选载入方法：</span><span class="sxs-lookup"><span data-stu-id="cf426-121">Select your preferred method of onboarding:</span></span>
+## <a name="onboarding-non-windows-devices"></a><span data-ttu-id="c074a-119">载入非Windows设备</span><span class="sxs-lookup"><span data-stu-id="c074a-119">Onboarding non-Windows devices</span></span>
+<span data-ttu-id="c074a-120">你需要执行以下步骤来载入非Windows设备：</span><span class="sxs-lookup"><span data-stu-id="c074a-120">You'll need to take the following steps to onboard non-Windows devices:</span></span>
+1. <span data-ttu-id="c074a-121">选择你的首选载入方法：</span><span class="sxs-lookup"><span data-stu-id="c074a-121">Select your preferred method of onboarding:</span></span>
 
-   - <span data-ttu-id="cf426-122">对于 macOS 设备，你可以选择通过 Microsoft Defender for Endpoint 或第三方解决方案载入。</span><span class="sxs-lookup"><span data-stu-id="cf426-122">For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution.</span></span> <span data-ttu-id="cf426-123">有关详细信息，请参阅 Mac 上的[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)</span><span class="sxs-lookup"><span data-stu-id="cf426-123">For more information, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).</span></span>
+   - <span data-ttu-id="c074a-122">对于 macOS 设备，你可以选择通过 Microsoft Defender for Endpoint 或第三方解决方案载入。</span><span class="sxs-lookup"><span data-stu-id="c074a-122">For macOS devices, you can choose to onboard through Microsoft Defender for Endpoint or through a third-party solution.</span></span> <span data-ttu-id="c074a-123">有关详细信息，请参阅 Mac 上的[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)</span><span class="sxs-lookup"><span data-stu-id="c074a-123">For more information, see [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).</span></span>
 
-   - <span data-ttu-id="cf426-124">对于其他非Windows设备选择"通过第三Windows **集成载入非非集成设备"。**</span><span class="sxs-lookup"><span data-stu-id="cf426-124">For other non-Windows devices choose **Onboard non-Windows devices through third-party integration**.</span></span>   
-    1. <span data-ttu-id="cf426-125">在导航窗格中，选择 **互操作性**  >  **合作伙伴**。</span><span class="sxs-lookup"><span data-stu-id="cf426-125">In the navigation pane, select **Interoperability** > **Partners**.</span></span> <span data-ttu-id="cf426-126">确保列出了第三方解决方案。</span><span class="sxs-lookup"><span data-stu-id="cf426-126">Make sure the third-party solution is listed.</span></span>
-    2. <span data-ttu-id="cf426-127">在 **"合作伙伴应用程序**"选项卡中，选择支持非Windows合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="cf426-127">In the **Partner Applications** tab, select the partner that supports your non-Windows devices.</span></span>
-    3. <span data-ttu-id="cf426-128">选择 **"打开合作伙伴** 页面"以打开合作伙伴的页面。</span><span class="sxs-lookup"><span data-stu-id="cf426-128">Select **Open partner page** to open the partner's page.</span></span> <span data-ttu-id="cf426-129">按照页面上提供的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="cf426-129">Follow the instructions provided on the page.</span></span>
-    4. <span data-ttu-id="cf426-130">创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。</span><span class="sxs-lookup"><span data-stu-id="cf426-130">After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application.</span></span> <span data-ttu-id="cf426-131">仔细阅读权限请求，确保它与所需的服务保持一致。</span><span class="sxs-lookup"><span data-stu-id="cf426-131">Read the permission request carefully to make sure that it is aligned with the service that you require.</span></span> 
+   - <span data-ttu-id="c074a-124">对于其他非Windows设备，选择"通过 **第三Windows集成载入非集成设备"。**</span><span class="sxs-lookup"><span data-stu-id="c074a-124">For other non-Windows devices, choose **Onboard non-Windows devices through third-party integration**.</span></span>   
+    1. <span data-ttu-id="c074a-125">在导航窗格中，选择 **互操作性**  >  **合作伙伴**。</span><span class="sxs-lookup"><span data-stu-id="c074a-125">In the navigation pane, select **Interoperability** > **Partners**.</span></span> <span data-ttu-id="c074a-126">确保列出了第三方解决方案。</span><span class="sxs-lookup"><span data-stu-id="c074a-126">Make sure the third-party solution is listed.</span></span>
+    2. <span data-ttu-id="c074a-127">在 **"合作伙伴应用程序**"选项卡中，选择支持非Windows合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="c074a-127">In the **Partner Applications** tab, select the partner that supports your non-Windows devices.</span></span>
+    3. <span data-ttu-id="c074a-128">选择 **"打开合作伙伴** 页面"以打开合作伙伴的页面。</span><span class="sxs-lookup"><span data-stu-id="c074a-128">Select **Open partner page** to open the partner's page.</span></span> <span data-ttu-id="c074a-129">按照页面上提供的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="c074a-129">Follow the instructions provided on the page.</span></span>
+    4. <span data-ttu-id="c074a-130">创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。</span><span class="sxs-lookup"><span data-stu-id="c074a-130">After creating an account or subscribing to the partner solution, you should get to a stage where a tenant Global Admin in your organization is asked to accept a permission request from the partner application.</span></span> <span data-ttu-id="c074a-131">仔细阅读权限请求，确保它与所需的服务保持一致。</span><span class="sxs-lookup"><span data-stu-id="c074a-131">Read the permission request carefully to make sure that it is aligned with the service that you require.</span></span> 
 
         
-2. <span data-ttu-id="cf426-132">按照第三方解决方案的说明运行检测测试。</span><span class="sxs-lookup"><span data-stu-id="cf426-132">Run a detection test by following the instructions of the third-party solution.</span></span>
+2. <span data-ttu-id="c074a-132">按照第三方解决方案的说明运行检测测试。</span><span class="sxs-lookup"><span data-stu-id="c074a-132">Run a detection test by following the instructions of the third-party solution.</span></span>
 
-## <a name="offboard-non-windows-devices"></a><span data-ttu-id="cf426-133">载出非Windows设备</span><span class="sxs-lookup"><span data-stu-id="cf426-133">Offboard non-Windows devices</span></span>
+## <a name="offboard-non-windows-devices"></a><span data-ttu-id="c074a-133">载出非Windows设备</span><span class="sxs-lookup"><span data-stu-id="c074a-133">Offboard non-Windows devices</span></span>
 
-1. <span data-ttu-id="cf426-134">按照第三方文档将第三方解决方案与 Microsoft Defender for Endpoint 断开连接。</span><span class="sxs-lookup"><span data-stu-id="cf426-134">Follow the third-party's documentation to disconnect the third-party solution from Microsoft Defender for Endpoint.</span></span>
+1. <span data-ttu-id="c074a-134">按照第三方文档将第三方解决方案与 Microsoft Defender for Endpoint 断开连接。</span><span class="sxs-lookup"><span data-stu-id="c074a-134">Follow the third-party's documentation to disconnect the third-party solution from Microsoft Defender for Endpoint.</span></span>
 
-2. <span data-ttu-id="cf426-135">删除 Azure AD 租户中第三方解决方案的权限。</span><span class="sxs-lookup"><span data-stu-id="cf426-135">Remove permissions for the third-party solution in your Azure AD tenant.</span></span>
-   1. <span data-ttu-id="cf426-136">登录 [Azure 门户](https://portal.azure.com)。</span><span class="sxs-lookup"><span data-stu-id="cf426-136">Sign in to the [Azure portal](https://portal.azure.com).</span></span>
-   2. <span data-ttu-id="cf426-137">选择 **Azure Active Directory > Enterprise应用程序"。**</span><span class="sxs-lookup"><span data-stu-id="cf426-137">Select **Azure Active Directory > Enterprise Applications**.</span></span>
-   3. <span data-ttu-id="cf426-138">选择要离开的应用程序。</span><span class="sxs-lookup"><span data-stu-id="cf426-138">Select the application you'd like to offboard.</span></span>
-   4. <span data-ttu-id="cf426-139">选择" **删除"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="cf426-139">Select the **Delete** button.</span></span>
+2. <span data-ttu-id="c074a-135">删除 Azure AD 租户中第三方解决方案的权限。</span><span class="sxs-lookup"><span data-stu-id="c074a-135">Remove permissions for the third-party solution in your Azure AD tenant.</span></span>
+   1. <span data-ttu-id="c074a-136">登录 [Azure 门户](https://portal.azure.com)。</span><span class="sxs-lookup"><span data-stu-id="c074a-136">Sign in to the [Azure portal](https://portal.azure.com).</span></span>
+   2. <span data-ttu-id="c074a-137">选择 **Azure Active Directory > Enterprise应用程序"。**</span><span class="sxs-lookup"><span data-stu-id="c074a-137">Select **Azure Active Directory > Enterprise Applications**.</span></span>
+   3. <span data-ttu-id="c074a-138">选择要离开的应用程序。</span><span class="sxs-lookup"><span data-stu-id="c074a-138">Select the application you'd like to offboard.</span></span>
+   4. <span data-ttu-id="c074a-139">选择" **删除"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="c074a-139">Select the **Delete** button.</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="cf426-140">相关主题</span><span class="sxs-lookup"><span data-stu-id="cf426-140">Related topics</span></span>
-- [<span data-ttu-id="cf426-141">载入 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="cf426-141">Onboard Windows 10 devices</span></span>](configure-endpoints.md)
-- [<span data-ttu-id="cf426-142">载入服务器</span><span class="sxs-lookup"><span data-stu-id="cf426-142">Onboard servers</span></span>](configure-server-endpoints.md)
-- [<span data-ttu-id="cf426-143">配置代理和 Internet 连接设置</span><span class="sxs-lookup"><span data-stu-id="cf426-143">Configure proxy and Internet connectivity settings</span></span>](configure-proxy-internet.md)
-- [<span data-ttu-id="cf426-144">Microsoft Defender 终结点载入问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="cf426-144">Troubleshooting Microsoft Defender for Endpoint onboarding issues</span></span>](troubleshoot-onboarding.md)
+## <a name="related-topics"></a><span data-ttu-id="c074a-140">相关主题</span><span class="sxs-lookup"><span data-stu-id="c074a-140">Related topics</span></span>
+- [<span data-ttu-id="c074a-141">载入 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="c074a-141">Onboard Windows 10 devices</span></span>](configure-endpoints.md)
+- [<span data-ttu-id="c074a-142">载入服务器</span><span class="sxs-lookup"><span data-stu-id="c074a-142">Onboard servers</span></span>](configure-server-endpoints.md)
+- [<span data-ttu-id="c074a-143">配置代理和 Internet 连接设置</span><span class="sxs-lookup"><span data-stu-id="c074a-143">Configure proxy and Internet connectivity settings</span></span>](configure-proxy-internet.md)
+- [<span data-ttu-id="c074a-144">Microsoft Defender 终结点载入问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="c074a-144">Troubleshooting Microsoft Defender for Endpoint onboarding issues</span></span>](troubleshoot-onboarding.md)
