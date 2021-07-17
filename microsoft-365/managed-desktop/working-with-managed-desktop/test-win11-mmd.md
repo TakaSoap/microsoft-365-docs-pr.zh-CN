@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53457726"
+ms.locfileid: "53461383"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>预览和测试 Windows 11 Microsoft 托管桌面
 
@@ -24,7 +24,7 @@ ms.locfileid: "53457726"
 
 到目前为止，超过 95% Microsoft 托管桌面设备符合[11](/windows/whats-new/windows-11-requirements)Windows条件。 你可以从应用请求有关设备资格状态Microsoft 托管桌面。 若要提交请求，请按照以下步骤操作：
 
-1. 与服务工程团队Microsoft 托管桌面新服务请求。 如果需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
+1. 与服务工程团队Microsoft 托管桌面新服务请求。 如果你需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
 2. 对字段使用这些值：
     - 标题：Windows 11 设备资格
     - 请求类型：信息请求
@@ -52,7 +52,7 @@ ms.locfileid: "53457726"
 
 在关闭的 11 环境中，业务关键型应用程序Windows最佳候选。 我们可以帮助你根据使用情况和可靠性数据Windows 11 测试的应用的优先级。 若要请求我们的建议，请按照以下步骤操作：
 
-1. 与服务工程团队Microsoft 托管桌面新服务请求。 如果需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
+1. 与服务工程团队Microsoft 托管桌面新服务请求。 如果你需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
 2. 对字段使用这些值：
     - 标题：Windows 11 个测试基准候选项
     - 请求类型：信息请求

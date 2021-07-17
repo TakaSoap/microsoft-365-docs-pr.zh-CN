@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解应用威胁检测和修正。
-ms.openlocfilehash: 26cd8501fdd8bd828357f8adb7d4e90f96e70114
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420041"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438044"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>了解应用威胁检测和修正
 
@@ -42,11 +42,11 @@ ms.locfileid: "53420041"
 
 应用治理、Azure Active Directory (Azure AD) 和 Microsoft Cloud App Security 收集和提供不同的数据集：
 
-- Azure AD 提供基础应用元数据和有关登录应用的详细信息。
 - 应用治理提供有关 API 级别应用活动的详细信息。
+- Azure AD 提供基础应用元数据和有关登录应用的详细信息。
 - Microsoft Cloud App Security 提供应用风险信息。
 
-通过跨应用治理、Azure AD 和 Microsoft Cloud App Security 共享信息，你可以在一个门户中显示聚合信息，并轻松链接到另一个门户以获取更多信息。 下面是一些示例：
+通过跨应用治理、Azure AD 和 Microsoft Cloud App Security 共享信息，可以在一个门户中显示汇总信息，并轻松链接到另一个门户以获取更多信息。以下是一些示例:
 
 - 应用治理中的应用登录信息：
 

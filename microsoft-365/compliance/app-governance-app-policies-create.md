@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建应用策略。
-ms.openlocfilehash: 17417d7fac80f2763edbbaa8dbb2c8be16e47371
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420101"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438056"
 ---
 # <a name="create-app-policies"></a>创建应用策略
 
@@ -30,11 +30,11 @@ ms.locfileid: "53420101"
 - 指定应用治理可以提醒应用行为以进行自动或手动修正的条件。
 - 为组织实施应用合规性策略。
 
-可以从提供的可自定义模板中创建应用策略，也可以创建自己的自定义应用策略。
+可以根据提供的可自定义模板创建应用策略，也可以创建自己的自定义应用策略。
 
-要新建应用策略，请转到 **Microsoft 365 合规中心 > 应用保护与治理 > 概述页面 > 策略**:
+要创建新的应用策略，请转到“**Microsoft 365 合规中心”>“应用治理”>“概述”页面>“策略**”:
 
-- 要使用专为应用使用设计的模板新建应用策略，请选择 **创建应用使用策略** 下的 **创建策略**。
+- 要使用专为应用使用设计的模板新建应用策略，请选择 **创建应用使用策略** 下的“**创建策略**”。
 - 要使用专为应用权限设计的模板新建应用策略，请选择 **创建应用权限策略** 下的 **创建策略**。
 - 要新建应用认证的应用策略或创建自定义策略，请选择 **新建**。
 

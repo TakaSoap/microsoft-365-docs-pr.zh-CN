@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
-ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.date: 07/16/2021
+ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227471"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461359"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -38,7 +38,7 @@ ms.locfileid: "53227471"
 - 查看适用产品的列表，以及自助服务购买是启用还是禁用
 - 查看或修改特定产品的当前设置以启用或禁用它
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 若要使用 **MSCommerce** PowerShell 模块，您需要：
 
@@ -104,7 +104,9 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Project 计划 3 | CFQ7TTC0KXNC |
 | Visio 计划 1 | CFQ7TTC0KXN9 |
 | Visio 计划 2 | CFQ7TTC0KXN8 |
-
+| Windows 365 Enterprise | CFQ7TTC0HTC9 |
+| Windows 365 商业版 | CFQ7TTC0J203 |
+| Windows混合权益的 Windows 365 商业版 | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
 
 查看可供自助购买的产品列表后，可以查看或修改特定产品的设置。
