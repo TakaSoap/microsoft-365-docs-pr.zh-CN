@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e8b5a2cf26c3ba99b528695c3296f7a83d5bc22
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: d3150caceae82be761d71d60373ccc128b59bcd8
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861079"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542714"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用预览体验
 
@@ -36,9 +36,9 @@ ms.locfileid: "51861079"
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，选择 **"设置**  >  **高级功能"。**
+1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **高级功能"。**
 
-    ![设置和预览体验的图像](images/atp-preview-features.png)
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="设置和预览体验图像":::
 
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。

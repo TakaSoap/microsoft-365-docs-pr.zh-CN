@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: c30e65a154e582ee843bcae4fa233f81964aca13
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194957"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542318"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -52,10 +52,10 @@ ms.locfileid: "53194957"
 | 步骤 | 示例文件名 | BundleIdentifier |
 |-|-|-|
 | [下载载入程序包](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [批准适用于终结点的 Microsoft Defender 的系统扩展](#approve-system-extensions) | MDATP_SysExt.xml | 无 |
-| [批准适用于终结点的 Microsoft Defender 内核扩展](#download-the-onboarding-package) | MDATP_KExt.xml | 无 |
+| [批准适用于终结点的 Microsoft Defender 的系统扩展](#approve-system-extensions) | MDATP_SysExt.xml | 不适用 |
+| [批准适用于终结点的 Microsoft Defender 内核扩展](#download-the-onboarding-package) | MDATP_KExt.xml | 不适用 |
 | [授予对 Microsoft Defender for Endpoint 的完全磁盘访问权限](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [网络扩展策略](#network-filter) | MDATP_NetExt.xml | 无 |
+| [网络扩展策略](#network-filter) | MDATP_NetExt.xml | 不适用 |
 | [配置 Microsoft AutoUpdate (MAU) ](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Microsoft Defender for Endpoint 配置设置](mac-preferences.md#intune-profile-1)<br/><br/> **注意：** 如果计划运行适用于 macOS 的第三方 AV，请设置为 `passiveMode` `true` 。 | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [配置 Microsoft Defender for Endpoint 和 MS AutoUpdate (MAU) 通知](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 或 com.microsoft.wdav.tray |
@@ -63,13 +63,13 @@ ms.locfileid: "53194957"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从以下网站下载Microsoft Defender 安全中心：
+从门户下载Microsoft 365 Defender包：
 
-1. In Microsoft Defender 安全中心， go to **设置**  >  **Device Management**  >  **Onboarding**.
+1. 在Microsoft 365 Defender门户中，**转到设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
 2. 将操作系统设置为 **macOS，** 将部署方法设置为 **移动设备管理 /Microsoft Intune**。
 
-    ![载入设置屏幕截图](images/atp-mac-install.png)
+    ![载入设置屏幕截图](images/macos-install-with-intune.png)
 
 3. 选择 **下载载入程序包**。 将其另 _存WindowsDefenderATPOnboardingPackage.zip_ 同一目录。
 
@@ -101,7 +101,7 @@ ms.locfileid: "53194957"
     > [!div class="mx-imgBorder"]
     > ![自定义配置文件创建](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. 为配置文件选择名称，例如"macOS 的 Defender 或终结点载入"。 单击 **下一个**。
+1. 为配置文件选择名称，例如"macOS 的 Defender 或终结点载入"。 单击“**下一步**”。
 
     > [!div class="mx-imgBorder"]
     > ![自定义配置文件 - 名称](images/mdatp-6-systemconfigurationprofiles-2.png)
@@ -112,7 +112,7 @@ ms.locfileid: "53194957"
     > [!div class="mx-imgBorder"]
     > ![从文件导入自定义配置文件的配置](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. 单击 **下一个**。
+1. 单击“**下一步**”。
 1. 在"分配"选项卡上 **分配** 设备。单击"下一 **步"。**
 
     > [!div class="mx-imgBorder"]
@@ -176,7 +176,7 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 
 ### <a name="network-filter"></a>网络筛选器
 
-作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心 门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft 365 Defender 门户。 以下策略允许网络扩展执行此功能。
 
 从我们的 GitHub 存储库中下载 [**netfilter.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) [](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 

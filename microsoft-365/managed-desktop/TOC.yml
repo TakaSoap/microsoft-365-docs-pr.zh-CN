@@ -4,6 +4,8 @@
     - name: 什么是 Microsoft 托管桌面？
       href: intro/index.md
       items:
+        - name: Microsoft 托管桌面和 Windows 11
+          href: intro/win11-overview.md
         - name: 角色和职责
           href: intro/roles-and-responsibilities.md
         - name: Microsoft 托管桌面的技术
@@ -169,5 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: 部署可配置设置
               href: working-with-managed-desktop/config-setting-deploy.md
+        - name: 使用 Microsoft 托管桌面预览和测试 Windows 11
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Microsoft 托管桌面文档更改历史记录
       href: change-history-managed-desktop.md

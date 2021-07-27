@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 9fa03a11a548cfd60e9b9911eb2a87be0af37015
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53277009"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542629"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -62,8 +62,8 @@ ms.locfileid: "53277009"
 - [现在，设备](/microsoft-365/security/defender-endpoint/machine-groups) 组定义可以包括每个条件的多个值。 你可以将多个标记、设备名称和域设置为单个设备组的定义。
 
 ## <a name="march-2021"></a>2021 年 3 月
+- [使用管理程序管理防Microsoft Defender 安全中心](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> 您可以使用称为租户附加 Windows 10 Windows Server 2016 Windows Server 2019 上管理防 *篡改保护设置*。
 
-- [使用管理程序管理防Microsoft Defender 安全中心](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> 您可以使用称为租户附加 Windows 10 Windows Server 2016 Windows Server 2019 上管理防 *篡改保护设置*。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
@@ -200,7 +200,7 @@ ms.locfileid: "53277009"
   - 阻止从 USB 运行的不受信任的和未签名的进程
   - 阻止来自电子邮件客户端和 Webmail 的可执行内容
 
-- [自动调查和修正](automated-investigations.md)<BR> 使用自动调查来调查和修正威胁。
+- [自动调查和修复](automated-investigations.md)<BR> 使用自动调查来调查和修正威胁。
 
     > [!NOTE]
     > 可从 Windows 10 版本 1803 或更高版本获得。

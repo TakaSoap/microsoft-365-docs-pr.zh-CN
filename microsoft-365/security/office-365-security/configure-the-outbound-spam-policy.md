@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP 服务中查看、创建、修改和删除Exchange Online Protection (垃圾邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97b429584371dbe49778163a7f1bbe6f36aea54c
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: a799d0bfb8ebf6ae13fb01b9e34ef4266b0436e9
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108411"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542617"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -91,7 +91,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 在门户中创建自定义出站垃圾邮件Microsoft 365 Defender将同时创建垃圾邮件筛选器规则和相关垃圾邮件筛选器策略，对二者使用相同的名称。
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在"**反垃圾邮件策略"页上**，单击" ![ 创建图标""创建策略"，然后从下拉列表中选择"出 ](../../media/m365-cc-sc-create-icon.png) 站"。
 
@@ -131,7 +131,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
      对于所有操作，在"用户限制发送电子邮件通知策略" (中和现在冗余的"如果发件人因发送出站垃圾邮件设置被阻止，则通知这些用户和组"中指定的收件人) 接收电子邮件通知。
 
      - **限制用户发送邮件，直到第二天**：此为默认值。 将发送电子邮件通知，用户将无法再发送任何邮件，直到第二天，基于 UTC 时间。 管理员无法覆盖此阻止。
-       - 名为"用户 **被限制** 发送电子邮件"的活动提醒会 (通知管理员，并通知管理员在"查看警报"页上) 。
+       - 名为"用户 **被限制** 发送电子邮件"的警报策略 (通过电子邮件发送通知管理员，并通知管理员&警报查看警报 \> ") 。
        - 还会通知策略中"如果发件人因发送出站垃圾邮件而受阻，则通知特定人员"设置中指定的任何收件人。
        - 用户将无法发送其他任何邮件，直到第二天，基于 UTC 时间。 管理员无法覆盖此阻止。
      - 限制用户发送邮件：发送电子邮件通知、将用户添加到 Microsoft 365 Defender 门户中的受限用户，并且用户无法发送电子邮件，除非管理员将用户从受限用户中删除。 <https://security.microsoft.com/restrictedusers> 管理员从列表中删除用户后，该天不会再次限制该用户。 有关说明，请参阅 [在发送垃圾邮件后从受限用户门户删除用户](removing-user-from-restricted-users-portal-after-spam.md)。
@@ -144,7 +144,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
      从"自动转发规则"下拉列表 **中选择下列** 操作之一：
 
-     - **自动 - 系统控制**：允许出站垃圾邮件筛选控制自动外部电子邮件转发。 此值为默认值。
+     - **自动 - 系统控制**：允许出站垃圾邮件筛选控制自动外部电子邮件转发。 此为默认值。
      - **On**：策略不会禁用自动外部电子邮件转发。
      - **关闭**：策略禁用所有自动外部电子邮件转发。
 
@@ -167,7 +167,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
      >
      > - 名为"[](../../compliance/alert-policies.md)限制发送电子邮件的用户"的默认警报策略已在用户因超过"收件人限制"部分的限制而被阻止 **时，向** **TenantAdmins** (全局管理员) 组的成员发送电子邮件通知。  **强烈建议使用警报** 策略，而不是出站垃圾邮件策略中的此设置来通知管理员和其他用户。 有关说明，请参阅 [验证受限用户的警报设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 6. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
@@ -177,7 +177,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>使用Microsoft 365 Defender门户查看出站垃圾邮件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **“反垃圾邮件”策略** 页面上，查找以下值之一:
    - 类型 **值为** " **自定义出站垃圾邮件策略"**
@@ -194,7 +194,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>使用Microsoft 365 Defender门户修改出站垃圾邮件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **"反垃圾邮件策略"** 页上，通过单击名称从列表中选择出站垃圾邮件策略：
    - 您创建的自定义策略，其中"类型"**列中的值为****"自定义出站垃圾邮件策略"。**
@@ -210,7 +210,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 不能禁用默认出站垃圾邮件策略。
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **"反垃圾邮件策略"** 页上，单击名称，从列表中选择"类型"值为"自定义出站垃圾邮件策略"的策略。
 
@@ -235,7 +235,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 - 在Microsoft 365 Defender门户中，只能在创建出站垃圾邮件策略后更改该策略的优先级。 在 PowerShell 中，可以在创建垃圾邮件筛选规则时替代默认优先级（这可能会影响现有规则的优先级）。
 - 出站垃圾邮件策略按照第一个策略的优先级值为) 0 (的显示顺序进行处理。 默认出站垃圾邮件策略的优先级值为 **"** 最低"，你无法更改它。
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **"反垃圾邮件策略"** 页上，通过单击名称从列表中选择"类型"值为"自定义出站垃圾邮件策略"的策略。
 
@@ -252,7 +252,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
 使用自定义Microsoft 365 Defender删除自定义出站垃圾邮件策略时，垃圾邮件筛选器规则及相应的垃圾邮件筛选策略都将被删除。 不能删除默认出站垃圾邮件策略。
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
 2. 在 **"反垃圾邮件策略"** 页上，单击名称，从列表中选择"类型"值为"自定义出站垃圾邮件策略"的策略。 在出现的策略详细信息浮出控件顶部，单击![“更多操作”图标](../../media/m365-cc-sc-more-actions-icon.png)“**更多操作**”\> ![“删除策略”图标](../../media/m365-cc-sc-delete-icon.png)“**删除策略**”。
 
@@ -275,7 +275,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 1. 创建出站垃圾邮件筛选器策略。
 2. 创建出站垃圾邮件筛选器规则，该规则指定该规则适用的出站垃圾邮件筛选器策略。
 
-   **注意**：
+   **注意**:
 
    - 您可以创建一个新的出站垃圾邮件筛选器规则，并为其分配现有的未关联的出站垃圾邮件筛选器策略。 出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略关联。
    - 可以在 PowerShell 中的新出站垃圾邮件筛选器策略上配置以下设置，这些设置在 Microsoft 365 Defender 门户中不可用，除非创建策略：
@@ -494,7 +494,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 ## <a name="for-more-information"></a>详细信息
 
-[从受限用户门户中删除阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
+[从“受限的用户”门户中删除被阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 

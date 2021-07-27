@@ -1,5 +1,5 @@
 ---
-title: 规划 Microsoft Viva 主题
+title: 规划Microsoft Viva主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: 了解如何规划 Microsoft Viva 主题
-ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: 了解如何规划规划Microsoft Viva主题
+ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229535"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542389"
 ---
-# <a name="plan-for-microsoft-viva-topics"></a>规划 Microsoft Viva 主题
+# <a name="plan-for-microsoft-viva-topics"></a>规划Microsoft Viva主题
 
 你可以控制主题在组织中是如何体验的。 针对主题的规划决策可确保向用户显示高质量主题，并且他们具有使用和提供知识所需的正确权限。
 
@@ -30,15 +30,17 @@ ms.locfileid: "53229535"
 - 要向哪些用户授予在主题中心创建或编辑主题的权限
 - 要为主题中心指定什么名称
 
-将尊重数据的安全和隐私，并且主题体验不会向用户授予对无权限文件的额外访问权限。 作为规划过程的一部分，我们还建议您阅读 [Microsoft Viva](topic-experiences-security-privacy.md) 主题安全和隐私。
+将尊重数据的安全和隐私，并且主题体验不会向用户授予对无权限文件的额外访问权限。 作为规划过程的[Microsoft Viva，](topic-experiences-security-privacy.md)我们还建议您阅读主题安全和隐私。
 
-若要了解有关 Viva 主题背后的 AI 技术，请阅读 Microsoft Viva 主题中的 [Alexandria：从大数据到大数据](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)。
+若要详细了解 Viva 主题背后的 AI 技术，请阅读"Microsoft Viva[主题：从大数据到大数据"中的 Alexandria。](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+
+请记住，Viva 主题需要访问用户每天使用的网站和文件。 在测试或开发环境中部署 Viva 主题可能不会产生有用的结果。
 
 ## <a name="requirements"></a>要求
 
 您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
 
-将使用主题的所有用户都需要主题 **体验** 许可证。 "设置 Microsoft Viva 主题"中介绍了 [分配许可证的内容](set-up-topic-experiences.md)。
+将使用主题的所有用户都需要主题 **体验** 许可证。 Set up Microsoft Viva Topics 中介绍了[分配许可证](set-up-topic-experiences.md)。
 
 ## <a name="topic-discovery"></a>主题发现
 

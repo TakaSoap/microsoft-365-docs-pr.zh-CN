@@ -34,32 +34,62 @@
           href: data-privacy.md
         - name: Microsoft 安全门户
           href: portals.md
-    - name: 评估功能
+    - name: 评估和试点
       items:
-        - name: 创建试用实验室
+        - name: 概述
+          href: eval-overview.md
+        - name: 创建 eval 环境
+          href: eval-create-eval-environment.md
+        - name: Defender for Identity
           items:
-            - name: 试用实验室概述
-              href: m365d-evaluation.md
-            - name: 准备
-              href: prepare-m365d-eval.md
-            - name: 设置
-              href: setup-m365deval.md
-            - name: 配置 Microsoft 365 Defender 支柱和载入
-              href: config-m365d-eval.md
-            - name: 生成警报测试
-              href: generate-test-alert.md
-        - name: 在生产中运行试点项目
+            - name: 概述
+              href: eval-defender-identity-overview.md
+            - name: 查看体系结构要求
+              href: eval-defender-identity-architecture.md
+            - name: 启用评估
+              href: eval-defender-identity-enable-eval.md
+            - name: 试点 Defender for Identity
+              href: eval-defender-identity-pilot.md
+        - name: Defender for Office 365
           items:
-            - name: 试点概述
-              href: m365d-pilot.md
-            - name: 计划
-              href: m365d-pilot-plan.md
-            - name: 准备
-              href: prepare-m365d-eval.md
+            - name: 概述
+              href: eval-defender-office-365-overview.md
+            - name: 查看体系结构要求
+              href: eval-defender-office-365-architecture.md
+            - name: 启用评估
+              href: eval-defender-office-365-enable-eval.md
+            - name: 试点 Defender for Office
+              href: eval-defender-office-365-pilot.md
+        - name: Defender for Endpoint
+          items:
+            - name: 概述
+              href: eval-defender-endpoint-overview.md
+            - name: 查看体系结构要求
+              href: eval-defender-endpoint-architecture.md
+            - name: 启用评估
+              href: eval-defender-endpoint-enable-eval.md
+            - name: 试点 Defender for Endpoint
+              href: eval-defender-endpoint-pilot.md
+        - name: Microsoft Cloud App Security
+          items:
+            - name: 概述
+              href: eval-defender-mcas-overview.md
+            - name: 查看体系结构要求
+              href: eval-defender-mcas-architecture.md
+            - name: 启用评估
+              href: eval-defender-mcas-enable-eval.md
+            - name: 试点 Microsoft Cloud App Security
+              href: eval-defender-mcas-pilot.md
+        - name: 调查和响应
+          items:
+            - name: 概述
+              href: eval-defender-investigate-respond.md
             - name: 模拟攻击
-              href: m365d-pilot-simulate.md
-            - name: 结束和汇总
-              href: m365d-pilot-close.md
+              href: eval-defender-investigate-respond-simulate-attack.md
+            - name: 试用功能
+              href: eval-defender-investigate-respond-additional.md
+        - name: 将试用版提升到生产
+          href: eval-defender-promote-to-production.md
     - name: 入门
       items:
         - name: 概述
@@ -269,9 +299,9 @@
     - name: 操作指南
       items:
         - name: 创建试用版实验室或试点环境
-          href: m365d-evaluation.md
+          href: eval-overview.md
         - name: 运行试点行动手册
-          href: m365d-pilot.md
+          href: eval-overview.md
         - name: 打开常见问题
           href: m365d-enable-faq.md
     - name: 参考

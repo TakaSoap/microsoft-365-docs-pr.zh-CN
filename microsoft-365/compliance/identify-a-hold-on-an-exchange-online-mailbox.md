@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何识别可置于邮箱中邮箱的不同类型的Exchange Online Microsoft 365。
-ms.openlocfilehash: 0fdfbd4503a4ddffd2ce2dd97c6af42684aea293
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917532"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578429"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -74,13 +74,13 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 
 下表介绍了在运行 **Get-Mailbox** cmdlet 时，如何根据 *InPlaceHolds* 属性的值标识不同类型的保留。
 
-|保留类型  |示例值  |如何识别保留  |
-|---------|---------|---------|
-|诉讼保留     |    `True`     |     *LitigationHoldEnabled* 属性设置为 时，为邮箱启用诉讼保留 `True` 。    |
-|电子数据展示保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 属性* 包含与安全与合规中心中的电子数据展示案例关联的任何保留的 GUID。 您可以判断这是电子数据展示保留，因为 GUID 以前缀 (表示统一保留 `UniH`) 。      |
-|就地保留     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds* 属性包含邮箱In-Place保留的 GUID。 你可以判断这是一个In-Place保留，因为 GUID 不以前缀开头，或者以前缀 `cld` 开头。     |
-|Microsoft 365应用于邮箱的保留策略     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 属性包含应用于邮箱的任一特定位置保留策略的 GUID。 您可以标识保留策略，因为 GUID 以 `mbx` 或 `skp` 前缀开头。 `skp`前缀指示保留策略应用于Skype for Business邮箱中的会话。    |
-|从组织范围内的保留策略Microsoft 365排除     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果从组织范围的 Microsoft 365 保留策略中排除邮箱，则从中排除邮箱的保留策略的 GUID 将显示在 InPlaceHolds 属性中，并且由前缀标识。 `-mbx`    |
+| 保留类型                                                          | 示例值                                                                                  | 如何识别保留                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 诉讼保留                                                    | `True`                                                                                         | *LitigationHoldEnabled* 属性设置为 时，为邮箱启用诉讼保留 `True` 。                                                                                                                                                                                                                                         |
+| 电子数据展示保留                                                    | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`                                                     | *InPlaceHolds 属性* 包含与安全与合规中心中的电子数据展示案例关联的任何保留的 GUID。 您可以判断这是电子数据展示保留，因为 GUID 以前缀 (表示统一保留 `UniH`) 。                                                                                   |
+| 就地保留                                                      | `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`        | *InPlaceHolds* 属性包含邮箱In-Place保留的 GUID。 你可以判断这是一个In-Place保留，因为 GUID 不以前缀开头，或者以前缀 `cld` 开头。                                                                                                               |
+| Microsoft 365应用于邮箱的保留策略 | `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3` | InPlaceHolds 属性包含应用于邮箱的任一特定位置保留策略的 GUID。 您可以标识保留策略，因为 GUID 以 `mbx` 或 `skp` 前缀开头。 `skp`前缀指示保留策略应用于Skype for Business邮箱中的会话。 |
+| 从组织范围内的保留策略Microsoft 365排除  | `-mbxe9b52bf7ab3b46a286308ecb29624696`                                                         | 如果从组织范围的 Microsoft 365 保留策略中排除邮箱，则从中排除邮箱的保留策略的 GUID 将显示在 InPlaceHolds 属性中，并且由前缀标识。 `-mbx`                                                                                                     |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 如果在运行 **Get-Mailbox** cmdlet 时 *InPlaceHolds* 属性为空，则可能仍有一个或多个组织范围内的保留策略Microsoft 365应用于邮箱。 在 PowerShell Exchange Online运行以下命令，获取组织范围内的保留策略的 GUID Microsoft 365列表。
@@ -94,10 +94,10 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 下表介绍了不同类型的组织范围内的保留，以及如何在运行 **Get-OrganizationConfig** cmdlet 时根据 *InPlaceHolds* 属性中包含的 GUID 标识每种类型。
 
-|保留类型  |示例值  |说明  |
-|---------|---------|---------|
-|Microsoft 365邮箱、Exchange公用文件夹和聊天Exchange应用的保留Teams策略    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Microsoft Teams 中应用于 Exchange 邮箱、Exchange 公用文件夹和 1xN 聊天的组织范围的保留策略由以前缀开头的 GUID `mbx` 标识。 注意 1xN 聊天存储在单个聊天参与者的邮箱中。      |
-|Microsoft 365组和频道Microsoft 365应用的Teams策略     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    应用于组织中组和频道消息Microsoft 365组织范围的保留Microsoft Teams以前缀开头的 GUID `grp` 标识。 注意 频道消息存储在与 Microsoft 团队关联的组邮箱中。     |
+| 保留类型                                                                                                | 示例值                           | 说明                                                                                                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft 365邮箱、Exchange公用文件夹和聊天Exchange应用的保留Teams策略 | `mbx7cfb30345d454ac0a989ab3041051209:2` | Microsoft Teams 中应用于 Exchange 邮箱、Exchange 公用文件夹和 1xN 聊天的组织范围的保留策略由以前缀开头的 GUID `mbx` 标识。 注意 1xN 聊天存储在单个聊天参与者的邮箱中。  |
+| Microsoft 365组和频道Microsoft 365应用的Teams策略                | `grp1a0a132ee8944501a4bb6a452ec31171:3` | 应用于组织中组和频道消息Microsoft 365组织范围的保留Microsoft Teams以前缀开头的 GUID `grp` 标识。 注意 频道消息存储在与 Microsoft 团队关联的组邮箱中。 |
 
 有关应用于保留策略Microsoft Teams，请参阅了解适用于 Microsoft Teams 的[保留Microsoft Teams。](retention-policies-teams.md)
 
@@ -113,11 +113,11 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 下表定义了三种可能的保留操作：
 
-|值  |说明  |
-|---------|---------|
-|**1**     | 指示保留策略配置为删除项目。 策略不保留项目。        |
-|**2**    |    指示保留策略配置为保留项目。 保留期到期后，策略不会删除项目。     |
-|**3**     |   指示保留策略配置为保留项目，然后在保留期到期后删除这些项目。      |
+| 值 | 说明                                                                                                                          |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **1** | 指示保留策略配置为删除项目。 策略不保留项目。                                  |
+| **2** | 指示保留策略配置为保留项目。 保留期到期后，策略不会删除项目。 |
+| **3** | 指示保留策略配置为保留项目，然后在保留期到期后删除这些项目。             |
 
 有关保留操作详细信息，请参阅保留特定时间段 [的内容部分](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) 。
    
@@ -186,7 +186,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 从邮箱中删除任何类型的保留后，将 *应用延迟* 保留。 这意味着保留的实际删除延迟 30 天，以防止数据被永久删除 (从) 清除。 这使管理员有机会搜索或恢复将在删除保留后清除的邮箱项目。 下次托管文件夹助理处理邮箱并检测到已删除保留时，邮箱将设置延迟保留。 具体来说，当托管文件夹助理将下列邮箱属性之一设置为 True 时，将延迟保留应用于 **邮箱**：
 
-- **DelayHoldApplied：** 此属性适用于用户邮箱 (Web) 上使用 Outlook 和 Outlook 生成的电子邮件相关内容。
+- **DelayHoldApplied：** 此属性适用于用户使用存储在 (邮箱中的Outlook和Outlook 网页版) 生成的电子邮件相关内容。
 
 - **DelayReleaseHoldApplied：** 此属性 (适用于由非 Outlook 应用（如 Microsoft Teams、Microsoft Forms 和 Microsoft Yammer) ）生成的基于云的内容Yammer) 存储在用户邮箱中。 由 Microsoft 应用生成的云数据通常存储在用户邮箱的隐藏文件夹中。
 
@@ -234,6 +234,53 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 - 如果 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为 **True，** 并删除邮箱 (或相应的用户帐户) ，则邮箱将成为非活动邮箱。 这是因为如果任一属性设置为 **True，** 则认为邮箱处于保留状态，删除处于保留状态的邮箱会导致邮箱处于非活动状态。 若要删除邮箱，使其不变为非活动邮箱，您必须将两个属性都设置为 **False**。
 
 - 如前文所说明，如果 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为 True ，则认为邮箱将置于无限期保留 **状态**。 但是，这并不意味着保留 *邮箱* 中所有内容。 它取决于设置为每个属性的值。 例如，假设这两个属性都设置为 **True，** 因为保留将从邮箱中删除。 然后，使用 *RemoveDelayReleaseHoldApplied* 参数删除仅应用于Outlook云数据 (延迟保留) 。 下次托管文件夹助理处理邮箱时，将清除Outlook删除的非邮箱项目。 任何Outlook标记为删除的项目将不会清除，因为 DelayHoldApplied 属性仍设置为 **True**。 相反，同样为 true：如果 DelayHoldApplied 设置为 **False** 且 DelayReleaseHoldApplied 设置为 **True，** 则Outlook标记为删除的项将被清除。
+
+## <a name="how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox"></a>如何确认组织范围的保留策略已应用于邮箱
+
+将组织范围的保留策略应用于或删除邮箱时，导出邮箱诊断日志可以帮助您确定 Exchange Online已实际将保留策略应用或删除到邮箱。 若要查看此信息，首先需要使用 Powershell 验证Exchange Online[一些内容](/powershell/exchange/connect-to-exchange-online-powershell)。
+
+### <a name="obtain-the-guids-for-any-retention-policies-explicitly-applied-to-a-mailbox"></a>获取显式应用于邮箱的任何保留策略的 GUID
+
+```powershell
+Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds
+```
+
+### <a name="obtain-the-guids-for-any-organization-wide-retention-policies-appled-to-mailboxes"></a>获取所有组织范围内的保留策略的 GUID（小程序到邮箱）
+
+```powershell
+Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds
+```
+
+### <a name="get-the-mailbox-diagnostics-for-holdtracking"></a>获取 HoldTracking 的邮箱诊断
+
+保留跟踪邮箱诊断日志维护应用于用户邮箱的保留的历史记录。
+
+```powershell
+$ht = Export-MailboxDiagnosticLogs <username> -ComponentName HoldTracking
+$ht.MailboxLog | Convertfrom-Json
+```
+
+### <a name="review-the-results-of-the-mailbox-diagnostics-logs"></a>查看邮箱诊断日志的结果
+
+如果从上一步收集数据，则生成的数据可能如下所示：
+
+> **ed** `  : 0001-01-01T00:00:00.0000000` 
+>  ` : mbx7cfb30345d454ac0a989ab3041051209:1` hid 
+> **ht** `  : 4` 
+> **lsd** ` : 2020-03-23T18:24:37.1884606Z` 
+> **osd**` : 2020-03-23T18:24:37.1884606Z`
+
+使用下表可帮助您了解诊断日志中列出的每个以前的值。
+
+| 值   | 说明 |
+|:------- |:----------- |
+| **ed**  | 指示"结束日期"，即禁用保留策略的日期。 MinValue 表示策略仍分配给邮箱。 |
+| **hid** | 指示保留策略的 GUID。 此值与为分配给邮箱的显式保留策略或组织范围内的保留策略收集的 GUID 相关。|
+| **lsd** | 指示"上次开始日期"，即将保留策略分配给邮箱的日期。|
+| **osd** | 指示原始开始日期，即首次Exchange保留策略信息的日期。 |
+|||
+
+当保留策略不再应用于邮箱时，我们将临时延迟保留用户以防止清除内容。 可以通过运行命令禁用延迟 `Set-Mailbox -RemoveDelayHoldApplied` 保留。
 
 ## <a name="next-steps"></a>后续步骤
 

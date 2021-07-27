@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
-ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985428"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538861"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
@@ -83,7 +83,9 @@ ms.locfileid: "52985428"
 
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
-如果某用户离开组织，且此用户的邮箱包含在保留策略内，那么在此用户的 Microsoft 365 帐户遭到删除后，其邮箱会变成非活动状态。 非活动邮箱的内容仍受在邮箱变成非活动状态之前对邮箱应用的所有保留策略约束，且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
+如果用户离开组织，且该用户邮箱包含在保留策略内，则在删除此用户的 Microsoft 365 帐户后，该邮箱变成非活动邮箱。 非活动邮箱的内容仍受在邮箱变成非活动状态之前对邮箱应用的所有保留策略约束，且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
+
+当由于数据已永久删除或保留期已过期而不再应用保留设置时，Exchange 管理员现在可以 [删除邮箱](delete-an-inactive-mailbox.md)。 在此方案中，不会自动删除非活动邮箱。
 
 ## <a name="configuration-guidance"></a>配置指南
 

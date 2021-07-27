@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13bcbc74fcb9c540c45a6eec7e7e506b6943986a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f3ec3552e10fa0b25c75644c7c37c63afb81902b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841784"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542655"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -41,7 +41,7 @@ ms.locfileid: "52841784"
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建易读 YAML 文件](#create-ansible-yaml-files)
 - [部署](#deployment)
-- [References](#references)
+- [参考](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
@@ -71,13 +71,13 @@ ms.locfileid: "52841784"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从以下网站下载载入Microsoft Defender 安全中心：
+从应用门户下载Microsoft 365 Defender包：
 
-1. In Microsoft Defender 安全中心， go to **设置 > Device Management > Onboarding**.
+1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender 安全中心屏幕截图](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender门户屏幕截图](images/portal-onboarding-linux-2.png)
 
 4. 在命令提示符下，验证您是否具有该文件。 提取存档的内容：
 

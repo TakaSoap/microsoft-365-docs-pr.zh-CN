@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6bf84d00d11bdb948b234d9a9c6f1b4fa7f14461
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c0c3e87644b7666c006f2eaf0632827173f5362f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275392"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542639"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>一起更得心防万一：Microsoft Defender 防病毒软件和 Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "52275392"
 
 - **Microsoft Defender 防病毒保护你的Windows 10设备免受软件威胁**，如病毒、恶意软件和间谍软件。 Microsoft Defender 防病毒完整、持续的保护，内置Windows 10随时可供使用。 [Microsoft Defender 防病毒下一代保护](./microsoft-defender-antivirus-in-windows-10.md)。 
 
-- **Office 365包括反病毒、反垃圾邮件和反恶意软件保护**。 借助 Office 365 订阅，可获取高级电子邮件和日历、Office 应用、1 TB 云存储空间 (OneDrive) ，以及所有设备的高级安全性。 这适用于家庭用户和业务用户。 如果你是企业用户，并且你的组织使用的是 Office 365 E5，则通过 Microsoft Defender Office 365使用 Office 365 抵御[威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
+- **Office 365包括反病毒、反垃圾邮件和反恶意软件保护**。 借助 Office 365 订阅，可获取高级电子邮件和日历、Office 应用、1 TB 云存储空间 (OneDrive) ，以及所有设备的高级安全性。 这适用于家庭用户和业务用户。 如果你是业务用户，并且你的组织正在使用 Office 365 E5，则可以通过 Microsoft Defender 为 Office 365 保护，通过[Office 365。](/microsoft-365/security/office-365-security/protect-against-threats)
 
 - OneDrive包含在 Office 365 中，使您可以联机存储文件和文件夹，并共享 **它们（如果合适**）。 你可以与用户协作 (工作或) ，以及存储在 OneDrive 中的共同OneDrive。 还可以在 PC、手机和平板电脑设备上访问 (设备中的) 。 [管理共享OneDrive。](/OneDrive/manage-sharing)
 
@@ -73,7 +73,7 @@ Microsoft Defender for Office 365集成了 Microsoft Defender for Endpoint 意�
 
     SO
 
-- 启用集成后，安全运营团队可以在 Microsoft Defender 安全中心 () 中查看任何检测到的 URL 或电子邮件的收件人所使用的设备列表，以及这些设备的最近 [https://securitycenter.windows.com](https://securitycenter.windows.com) 警报。
+- 启用集成后，安全运营团队可以在 Microsoft 365 Defender 门户 () 中查看任何检测到的 URL 或电子邮件的收件人所使用的设备列表，以及这些设备的最新 [https://security.microsoft.com](https://security.microsoft.com) 警报。
 
 如果尚未这样做，请集成 Microsoft [Defender for Office 365 Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp)。
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: c9b63a73e755b3df247e5d9bd30f436ae50e294c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339618"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595062"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用Windows 10载入新设备 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53339618"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)。
 
 > [!NOTE]
 > 若要使用组策略 (GP) 更新来部署程序包，必须在 Windows Server 2008 R2 或更高版本上。
@@ -49,6 +49,8 @@ ms.locfileid: "53339618"
 
 1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
 
+1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft 365 Defender：](https://security.microsoft.com/)
+ 
     1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**   >  **载入"。**
 
     1. 选择Windows 10操作系统。
@@ -118,7 +120,7 @@ ms.locfileid: "53339618"
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-Policy | 设置
+策略 | 设置
 :---|:---
 Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集合"
 
@@ -126,7 +128,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-Policy | 设置
+策略 | 设置
 :---|:---
 配置对可能不需要的应用程序的检测 | 已启用、阻止
 
@@ -134,7 +136,7 @@ Policy | 设置
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-Policy | 设置
+策略 | 设置
 :---|:---
 加入 Microsoft MAPS | 已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -143,9 +145,9 @@ Policy | 设置
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy | 设置
+策略 | 设置
 :---|:---
-关闭实时保护|禁用
+关闭实时保护|已禁用
 打开行为监视|已启用
 扫描所有下载的文件和附件|已启用
 监视您的计算机上的文件和程序活动|已启用
@@ -156,7 +158,7 @@ Policy | 设置
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy | 设置 
+策略 | 设置 
 :---|:---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -178,7 +180,7 @@ Policy | 设置
 
    ![攻击面减少配置的图像](images/asr-guid.png)
 
-Policy | 设置
+策略 | 设置
 :---|:---
 配置受控文件夹访问权限| 已启用，审核模式
 
@@ -188,6 +190,7 @@ Policy | 设置
 
 > [!NOTE]
 > 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
+
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 

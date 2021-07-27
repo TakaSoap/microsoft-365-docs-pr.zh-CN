@@ -477,43 +477,43 @@
               href: archive-whatsapp-data.md
         - name: 17a-4 数据连接器
           items:
-            - name: BlackBerry DataParser（预览版）
+            - name: BlackBerry DataParser
               href: archive-17a-4-blackberry-data.md
-            - name: Bloomberg DataParser（预览版）
+            - name: Bloomberg DataParser
               href: archive-17a-4-bloomberg-data.md
-            - name: Cisco Jabber DataParser（预览版）
+            - name: Cisco Jabber DataParser
               href: archive-17a-4-cisco-jabber-data.md
-            - name: Cisco Webex DataParser（预览版）
+            - name: Cisco Webex DataParser
               href: archive-17a-4-webex-teams-data.md
-            - name: FactSet DataParser（预览版）
+            - name: FactSet DataParser
               href: archive-17a-4-factset-data.md
-            - name: Fuze DataParser（预览版）
+            - name: Fuze DataParser
               href: archive-17a-4-fuze-data.md
-            - name: FX Connect DataParser（预览版）
+            - name: FX Connect DataParser
               href: archive-17a-4-fxconnect-data.md
-            - name: ICE DataParser（预览版）
+            - name: ICE DataParser
               href: archive-17a-4-ice-im-data.md
-            - name: InvestEdge DataParser（预览版）
+            - name: InvestEdge DataParser
               href: archive-17a-4-investedge-data.md
-            - name: LivePerson 对话云 DataParser（预览版）
+            - name: LivePerson 对话云 DataParser
               href: archive-17a-4-liveperson-data.md
-            - name: Quip DataParser（预览版）
+            - name: Quip DataParser
               href: archive-17a-4-quip-data.md
-            - name: Refinitiv Eikon Messenger DataParser（预览版）
+            - name: Refinitiv Eikon Messenger DataParser
               href: archive-17a-4-refinitiv-messenger-data.md
-            - name: ServiceNow DataParser（预览版）
+            - name: ServiceNow DataParser
               href: archive-17a-4-servicenow-data.md
-            - name: Slack DataParser（预览版）
+            - name: Slack DataParser
               href: archive-17a-4-slack-data.md
-            - name: SQL DataParser（预览版）
+            - name: SQL DataParser
               href: archive-17a-4-sql-database-data.md
-            - name: Symphomy DataParser（预览版）
+            - name: Symphony DataParser
               href: archive-17a-4-symphony-data.md
-            - name: Zoom DataParser（预览版）
+            - name: Zoom DataParser
               href: archive-17a-4-zoom-data.md
-        - name: CellTrust 连接器
+        - name: CellTrust connectors
           items:
-            - name: CellTrust SL2（预览版）
+            - name: CellTrust SL2
               href: archive-data-from-celltrustsl2.md
         - name: 与合作伙伴联系以存档第三方数据
           href: work-with-partner-to-archive-third-party-data.md
@@ -995,3 +995,5 @@
   href: ../security/index.yml
 - name: Microsoft 365 商业应用版
   href: /office365/admin/admin-home
+- name: 疑难解答
+  href: /office365/troubleshoot/microsoft-365-compliance-welcome

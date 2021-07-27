@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b7a6a3e7f6f705f322ee3eb1c1b561bc01c55d29
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c400cc16f5a5174edee360b6bf7b71a4c3a8cd1f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770885"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542305"
 ---
 # <a name="start-investigation-api"></a>启动调查 API
 
@@ -43,10 +43,8 @@ ms.locfileid: "52770885"
 在设备上启动自动调查。
 <br>有关详细信息 [，请参阅自动](automated-investigations.md) 调查概述。
 
-
 ## <a name="limitations"></a>限制
 1. 此 API 的速率限制是每小时 50 次调用。
-
 
 ## <a name="permissions"></a>权限
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
@@ -64,7 +62,7 @@ ms.locfileid: "52770885"
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/startInvestigation
+POST https://api.security.microsoft.com/api/machines/{id}/startInvestigation
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -93,7 +91,7 @@ Content-Type | string | application/json. **必需**。
 下面是一个请求示例。
 
 ```https
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
 ```
 
 ```json

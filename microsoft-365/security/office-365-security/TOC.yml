@@ -158,8 +158,16 @@
           href: air-custom-reporting.md
         - name: 高级垃圾邮件筛选器 (ASF) 设置
           href: advanced-spam-filtering-asf-options.md
-        - name: 管理租户允许/阻止列表
-          href: tenant-allow-block-list.md
+        - name: 租户允许/阻止列表
+          items:
+            - name: 管理租户允许/阻止列表
+              href: tenant-allow-block-list.md
+            - name: 在租户允许/阻止列表中添加块
+              href: manage-tenant-blocks.md
+            - name: 在租户允许/阻止列表中添加允许
+              href: manage-tenant-allows.md
+            - name: 修改和删除租户允许/阻止列表中的条目
+              href: modify-remove-entries-tenant-allow-block.md
         - name: 安全与合规中心内的消息跟踪
           href: message-trace-scc.md
         - name: 向 Microsoft 报告邮件和文件
@@ -186,7 +194,7 @@
               href: real-time-detections.md
         - name: 使用威胁跟踪器
           href: threat-trackers.md
-        - name: 查看警报
+        - name: 警报策略
           href: ../../compliance/alert-policies.md
         - name: 安全与合规中心内的智能报告和见解
           href: reports-and-insights-in-security-and-compliance.md

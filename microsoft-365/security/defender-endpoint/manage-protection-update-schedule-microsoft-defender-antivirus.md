@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: abb656586d6a7bd779b109fcad3c777016fef980
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1be1cbcb7e5bb1cef670b5c189341be53cf739c4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926051"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542245"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>管理应下载和应用保护更新的时间日程安排
 
@@ -34,9 +34,9 @@ ms.locfileid: "52926051"
 
 Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
 
-可以按：为终结点计划更新： 
+可以按：为终结点计划更新：
 
-- 指定一周中的哪些天检查保护更新 
+- 指定一周中的哪些天检查保护更新
 - 指定检查保护更新的时间间隔
 - 指定检查保护更新的时间
 
@@ -44,9 +44,9 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>使用 Configuration Manager 计划保护更新
 
-1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)   >    >  
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)   >    >  
 
-2.  转到" **安全智能更新"** 部分。
+2. 转到" **安全智能更新"** 部分。
 
 3. 在特定时间检查和下载更新：
       1. 将 **"检查Endpoint Protection安全智能更新..."** 设置为 **"0"。**
@@ -54,25 +54,24 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
       3
 4. 若要持续检查和下载更新，请Endpoint Protection检查安全智能更新...设置为两次更新之间应发生的小时数。
 
-5.  [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
+5. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>使用组策略计划保护更新
 
 > [!IMPORTANT]
 > 默认情况下，Microsoft Defender 防病毒扫描时间前 15 分钟检查更新。 启用这些设置将覆盖该默认设置。
 
-1.  在组策略管理计算机上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，**然后单击编辑。**
+1. 在组策略管理计算机上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，**然后单击编辑。**
 
-3.  在组 **策略管理编辑器中** ，转到计算机 **配置**。
+2. 在组 **策略管理编辑器中** ，转到计算机 **配置**。
 
-4.  单击 **"策略****"，然后单击"管理模板"。**
+3. 单击 **"策略****"，然后单击"管理模板"。**
 
-5.  展开树以 **Windows签名**  >  **Microsoft Defender 防病毒**  >  **更新的组件，** 并配置以下设置：
+4. 展开树以 **Windows签名**  >  **Microsoft Defender 防病毒**  >  **更新的组件，** 并配置以下设置：
 
     1. 双击指定 **一周中的哪些天检查** 安全智能更新设置，将选项设置为 **已启用**。 输入一周中的一天以检查更新。 单击“**确定**”。
     2. 双击指定 **检查安全智能更新的** 间隔设置，将选项设置为 **已启用**。 输入更新之间的小时数。 单击“**确定**”。
     3. 双击指定 **检查安全智能更新** 的时间设置，将选项设置为 **已启用**。 输入应检查更新的时间。 时间基于终结点的本地时间。 单击“**确定**”。
-
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>使用 PowerShell cmdlet 计划保护更新
 
@@ -97,8 +96,8 @@ SignatureUpdateInterval
 ```
 
 有关详细信息和允许的参数，请参阅以下内容：
-- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="related-articles"></a>相关文章
 

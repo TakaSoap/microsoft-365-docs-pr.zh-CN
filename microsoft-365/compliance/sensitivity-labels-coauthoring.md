@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 494e00187be4d19eb54d0226a02103b8fe20cb98
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062192"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461407"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -127,7 +127,7 @@ ms.locfileid: "53062192"
 
 - 用户对于大于 300 MB 的 Word、Excel 和 PowerPoint 文件，不能对 Office 网页版应用任何标签。 对于这些文件，可以使用 Office 桌面应用应用标签，但只有你才能打开文件。
 
-- 当你使用 [敏感标签作为条件](dlp-sensitivity-label-as-condition.md)DLP 策略时，不支持电子邮件的未加密附件。
+- 当前推出：支持 [使用敏感度标签作为条件的 DLP 策略](dlp-sensitivity-label-as-condition.md)，以及电子邮件的未加密附件。
 
 - 由于如 [密码保护](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643)、[共享工作簿](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534)之类的功能或包含 ActiveX 控件的内容，某些文档与敏感度标签不兼容。 在 [Office 中共同创作疑难解答](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7) 中记录了其他原因。 对于这些文档，你将看到一条消息，显示“**上载失败**”，并应选择“**放弃更改**”选项。 在此问题得到解决之前，不要给这些带有此故障消息的文档加上标签。
 

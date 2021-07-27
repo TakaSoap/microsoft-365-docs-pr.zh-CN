@@ -13,18 +13,18 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0f089efedef1e4fb6b146692da3f1a630f2bacac
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4a91bece49c4e1e12e8f0a2d9d2d6f6cf0e2681a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289687"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538885"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
 Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过非公司打印机或未批准的 USB 打印机进行打印。
 
-## <a name="licensing"></a>许可
+## <a name="licensing"></a>授权
 
 在开始使用打印机保护之前，你应该[确认你的Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下权限：
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 - 全局安全管理员
 - 安全管理员
-- 安全读取者
+- 安全信息读取者
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
@@ -138,23 +138,15 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
 安全[Microsoft 365显示](https://security.microsoft.com)上面的设备控制打印机保护策略阻止的打印。
 
-```sql
+```kusto
 DeviceEvents
-
-|where ActionType == 'PrintJobBlocked'
-
+| where ActionType == 'PrintJobBlocked'
 | extend parsed=parse_json(AdditionalFields)
-
 | extend PrintedFile=tostring(parsed.JobOrDocumentName)
-
 | extend PrintPortName=tostring(parsed.PortName)
-
 | extend PrinterName=tostring(parsed.PrinterName)
-
 | extend Policy=tostring(parsed.RestrictionReason) 
-
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName,Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
 | order by Timestamp desc
 ```
 

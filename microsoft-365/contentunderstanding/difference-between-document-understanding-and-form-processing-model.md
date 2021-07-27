@@ -3,7 +3,7 @@ title: 文档理解与表单处理模型之间的差异
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 了解文档理解模型和表单处理模型之间的主要区别。
+ms.openlocfilehash: 929d7f248607b052aa8f41d08a2fbdee7a53fa6f
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706506"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578453"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -55,6 +55,10 @@ ms.locfileid: "52706506"
 表单处理模型在 PowerApps [AI 生成器](/ai-builder/overview)中创建而成，但创建活动是直接从 SharePoint 文档库开始的。 文档库必须启用表单处理模型创建，用户才能为其创建表单处理模型。 管理员可以在内容理解管理员设置中启用表单处理模型创建。 当文件上传到文档库时，表格处理模型会使用 PowerAutomate 流来处理文件。
 
 创建文档理解模型时，将创建一个新的 [SharePoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) 保存到 SharePoint 内容类型库中。 或者如果需要的话，可使用现有的内容类型来定义模型。
+
+创建内容类型并与模型关联后，还可以从 **网站内容类型** 属性面板引用该模型。
+
+!["网站内容类型"面板的屏幕截图，其中显示了突出显示的文档理解模型。](../media/content-understanding/site-content-type-panel.png)
 
 表单处理模型还可创建新 [SharePoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)，并且还存储在 SharePoint 内容类型库中。
 

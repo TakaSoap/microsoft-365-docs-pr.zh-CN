@@ -18,12 +18,12 @@ description: 了解如何定义附件保险箱保护你的组织免受电子邮�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 3ec6dc0d0a74507298810a9ec020a2a4b050c2b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108219"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538969"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置附件策略Office 365
 
@@ -70,7 +70,7 @@ ms.locfileid: "53108219"
 
   有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：
+  **注意**:
 
   - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 可为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
@@ -125,7 +125,7 @@ ms.locfileid: "53108219"
 
    - 如果 **扫描无法完成 (** 超时或错误) ，则应用 保险箱 附件检测响应：即使 **保险箱** 附件扫描无法完成，保险箱 附件未知恶意软件响应也将会对邮件执行该操作。 如果选择此选项，请始终选择" **启用重定向** "，并指定电子邮件地址以发送包含恶意软件附件的邮件。 否则，邮件可能会丢失。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 6. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 
@@ -222,7 +222,7 @@ ms.locfileid: "53108219"
 1. 创建安全附件策略。
 2. 创建安全附件规则，该规则指定应用该规则的安全附件策略。
 
- **注意**：
+ **注意**:
 
 - 可以创建新的安全附件规则，并为其分配现有的未关联的安全附件策略。 安全附件规则不能与多个安全附件策略关联。
 
@@ -237,7 +237,7 @@ ms.locfileid: "53108219"
 若要创建安全附件策略，请使用以下语法：
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
 此示例创建一个名为 Contoso All 的安全附件策略，并具有以下值：
@@ -247,7 +247,7 @@ New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [
 - 如果保险箱附件扫描不可用或遇到错误，请不要传递邮件 (我们未使用 _ActionOnError_ 参数，默认值为 `$true`) 。
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
+New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -RedirectAddress sec-ops@contoso.com
 ```
 
 有关语法和参数的详细信息，请参阅 [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy)。

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845446"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542293"
 ---
 # <a name="create-indicators-based-on-certificates"></a>创建基于证书的指示器
 
@@ -62,18 +62,20 @@ ms.locfileid: "52845446"
 >[!IMPORTANT]
 > 创建和删除证书 IoC 可能需要 3 小时。
 
-1. 在导航窗格中，选择 **"设置**  >  **标记"。**  
+1. 在导航窗格中，选择"设置规则"下 (终结点  >    > 
+ ) 。   
+
 
 2. 选择" **证书"** 选项卡。
 
-3. 选择 **"添加指示器"。**
+3. 选择 **"添加项目"。**
 
 4. 指定以下详细信息：
    - Indicator - 指定实体详细信息并定义指示器的过期时间。
    - 操作 - 指定要采取的操作并提供说明。
    - Scope - 定义计算机组的范围。
 
-5. 查看"摘要"选项卡中的详细信息，然后单击"保存 **"。**
+5. 查看"摘要"选项卡 **中的详细信息**，然后单击"保存 **"。**
 
 ## <a name="related-topics"></a>相关主题
 - [创建指示器](manage-indicators.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca779fc4cc8c40adb25a0e95a9450f59954dc605
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f980c7121a8796f2cf48cc85c401ed499b4b581b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933789"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542281"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用不同的移动设备管理 (MDM) 系统部署 Microsoft Defender for Endpoint
 
@@ -116,7 +116,7 @@ MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Prefe
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
-作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心 门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，Microsoft 365报告此信息。 以下策略允许网络扩展执行此功能。
 
 - 筛选器类型：插件
 - 插件捆绑包标识符： `com.microsoft.wdav`

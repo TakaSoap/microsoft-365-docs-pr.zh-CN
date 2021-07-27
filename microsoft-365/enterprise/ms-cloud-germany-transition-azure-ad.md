@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云Azure Active Directory德国 microsoft 云 (迁移到新的德国数据中心) Office 365服务时的其他详细信息。
-ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362722"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578441"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>有关Azure Active Directory德国 Microsoft 云的迁移的其他详细信息
 
-若要完成从 Azure 德国云到 Azure 公共云的迁移，我们建议在 OpenID 连接 (OIDC) 终结点开始报告商业云终结点时，将应用程序的身份验证终结点、Azure Active Directory (Azure AD) Graph 和 MS Graph 终结点更新为商业云终结点。 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` 
+若要完成从 Azure 德国云到 Azure 公共云的迁移，我们建议在 OpenID 连接 (OIDC) 终结点开始报告商业云终结点时，将应用程序的身份验证终结点、Azure Active Directory (Azure AD) Graph 和 MS Graph 终结点更新为商业云终结点。 `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 
  
 **何时应进行此更改？**
 
@@ -35,7 +35,7 @@ ms.locfileid: "53362722"
  
 更新登录权限有三个先决条件：
 
- - 租户的 OIDC 发现终结点 `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration` 返回 Azure AD 公共云终结点。
+ - 租户的 OIDC 发现终结点 `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration` 返回 Azure AD 公共云终结点。
 
  - 如果为租户设置了联合身份验证，Active Directory 联合身份验证服务 (AD FS) 更新为与 Azure AD Public 同步。 你可以按照说明更新 Azure AD 连接进行此更改的设置。
 
@@ -66,7 +66,7 @@ ms.locfileid: "53362722"
 
 2. 将 Azure AD Graph 终结点更新为 `https://graph.windows.net` 。
 
-3. 将 MS Graph 终结点更新为 `https://graph.microsoft.com` 。
+3. 将 Microsoft Graph 终结点更新为 `https://graph.microsoft.com` 。
 
 4. 将任何德国云终结点 (，如 Exchange Online 和 SharePoint Online) ，应用程序使用它们作为公共云终结点。
 

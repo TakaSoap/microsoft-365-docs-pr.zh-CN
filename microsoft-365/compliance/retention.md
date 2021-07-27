@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 1aca97f12fe75dd74467007f35858c72caa38606
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: eb30e3d553435c76bcf8f7cc1efc0f5524c0b966
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226103"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538933"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -115,6 +115,7 @@ ms.locfileid: "53226103"
 - Exchange 公用文件夹
 - Teams 通道消息
 - Teams 聊天
+- Teams 专用频道消息
 - yammer 社区消息
 - Yammer 用户消息
 
@@ -309,7 +310,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
     
     电子邮件将保留五年，因为此保留操作优先于删除操作。 由于保留操作生效时暂停的删除操作，电子邮件在五年到期时被永久删除。
 
-2. **优选最长的保留期。** 如果内容遵循多个在不同时间段内保留内容的保留设置，内容会一直保留到最长保留期结束。
+2. **优选最长的保留期。** 如果内容遵循多个在不同时间段内保留内容的保留设置，内容将一直保留到该项最长保留期结束。
     
     示例：Marketing SharePoint网站中的文档受两个保留策略的约束。 为所有SharePoint网站配置第一个保留策略，以将项目保留五年。 为特定的SharePoint网站配置第二个保留策略，以将项目保留十年。
     
@@ -335,7 +336,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
         
         由于两个保留策略都已确定范围，因此无法在此级别确定何时永久性删除此文档。
 
-4. **最短删除期优先。** 适用于确定何时从保留策略中删除项目以及从上一级别无法解决结果：在最短保留期结束时永久性删除内容。
+4. **最短删除期优先。** 适用于确定何时从保留策略中删除项目以及从上一级别无法解决结果：在该项最短保留期结束时永久性删除内容。
     
     示例：用户的OneDrive帐户中的文档受两个保留策略的约束。 第一个保留策略的范围包括该用户的OneDrive帐户，并在10年后执行删除操作。 第二个保留策略的范围包括该用户的OneDrive帐户，并且七年后将执行删除操作。
     
@@ -494,7 +495,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
     
 - [配置就地记录管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a)（仅限保留） 
     
-- [使用网站关闭和删除策略](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5)（仅限删除）
+- [使用网站关闭和删除策略](https://support.microsoft.com/zh-CN/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5)（仅限删除）
     
 - [信息管理策略](intro-to-info-mgmt-policies.md)（仅限删除）
      

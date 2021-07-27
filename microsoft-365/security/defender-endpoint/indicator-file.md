@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256911"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542677"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -43,7 +43,7 @@ ms.locfileid: "53256911"
 - 通过使用文件详细信息页面中的"添加指示器"按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
@@ -59,7 +59,8 @@ ms.locfileid: "53256911"
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 
-1. 在导航窗格中，选择 **"设置 >标记"。**
+1. 在导航窗格中，选择"设置 **** 规则"下 (终结点  >    > 
+ ) 。 
 
 2. 选择" **文件哈希"**   选项卡。
 

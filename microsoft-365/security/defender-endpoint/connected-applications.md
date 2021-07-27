@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1595ea8e76eb6b4c929419ea11dba06e6158d30c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339162"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542353"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的已连接应用程序
 
@@ -41,9 +41,7 @@ ms.locfileid: "53339162"
  
 需要按照以下步骤 [操作，](/microsoft-365/security/defender-endpoint/apis-intro) 将 API 与已连接的应用程序一同使用。
  
-## <a name="access-the-connected-application-page"></a>访问已连接的应用程序页
-从左侧导航菜单中，**选择终结点**  >  **合作伙伴和 API**  >  **连接的应用程序**。
-
+从左侧导航菜单中，**选择"已** 连接&终结点 (下"**合作伙伴) >** **API"。**
  
 ## <a name="view-connected-application-details"></a>查看连接的应用程序详细信息
 "已连接应用程序"页提供有关连接到组织中 Microsoft Defender for Endpoint 的 Azure AD 应用程序的信息。 你可以查看已连接应用程序的使用情况：上次查看时间、过去 24 小时内的请求数以及最近 30 天内的请求趋势。

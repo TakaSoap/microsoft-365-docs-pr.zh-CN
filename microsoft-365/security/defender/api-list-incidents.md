@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c83d5994ab93799536796c153dfd878e3e2dd6d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287827"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542701"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>列出事件 API Microsoft 365 Defender
 
@@ -60,8 +60,8 @@ API 支持以下 **OData** 运算符：
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-Application | Incident.Read.All | 读取所有事件
-Application | Incident.ReadWrite.All | 读取和写入所有事件
+应用程序 | Incident.Read.All | 读取所有事件
+应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
 委派（工作或学校帐户） | Incident.Read | 读取事件
 委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
 
@@ -81,7 +81,7 @@ GET /api/incidents
 
 名称 | 类型 | 说明
 -|-|-
-Authorization | 字符串 | Bearer {token}。 **Required**
+Authorization | String | Bearer {token}。 **必需**
 
 
 ## <a name="request-body"></a>请求正文
@@ -106,7 +106,8 @@ lastUpdateTime | 上次在后端更新事件的时间。<br /><br /> 为检索�
 assignedTo | 事件的所有者;如果没有分配 *所有者* ，则为空。 | secop2@contoso.com
 classification | 事件的规范。 属性值为 *：Unknown、FalsePositive、TruePositive*   | 未知
 确定 | 指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other        | NotAvailable
-状态 | 将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。 | 活动
+detectionSource | 指定检测源。 | MCAS
+status | 将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。 | 活动
 severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br /><br />下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
 标记 | 与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。 | \[\]
 comments | 由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。 | \[\]
@@ -126,7 +127,7 @@ firstActivity | 警报首次报告在后端更新活动的时间。| 2020-09-04T
 title | 简要标识可用于每个警报的字符串值。 | 勒索软件活动
 说明 | 描述每个警报的字符串值。 | 用户 Test User2 (testUser2@contoso.com) 操作 99 个文件，其多个扩展名以不常见的扩展 *名 herunterladen 结尾*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
 “类别” | 有关攻击在击杀链上的进度的可视和数值视图。 与 [MITRE ATT&CK™对齐](https://attack.mitre.org/)。 | 影响
-状态 | 将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。 | 新增
+status | 将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。 | 新增
 severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
 investigationId | 此警报触发的自动调查 ID。 | 1234
 investigationState | 有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Failed、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType、SuppressedAlert 。                   | UnsupportedAlertType
@@ -157,7 +158,7 @@ entities | 已标识为给定警报的一部分或与给定警报相关的所有
 
 字段名 | 说明 | 示例值
 -|-|-
-entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | User
+entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | 用户
 sha1 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件名 | Detector.UnitTests.dll
@@ -185,7 +186,7 @@ securityGroupId | 如果 entityType 为  *SecurityGroup，则可用*。 | 301c47
 securityGroupName | 如果 entityType 为  *SecurityGroup，则可用*。 | 网络配置运算符
 registryHive | 如果 entityType 为  *Registry ，则可用*。 | HKEY \_ 本地 \_ 计算机 |
 registryKey | 如果 entityType 为  *Registry ，则可用*。 | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | 如果 entityType 为  *Registry ，则可用*。 | 字符串
+registryValueType | 如果 entityType 为  *Registry ，则可用*。 | String
 registryValue | 如果 entityType 为  *Registry ，则可用*。 | 31-00-00-00
 deviceId | 与实体相关的设备的 ID（如果有）。 | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

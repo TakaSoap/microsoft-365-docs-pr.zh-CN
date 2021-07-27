@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse如何在一个位置保护和管理客户租户。
-ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 5bc5fdce2c1133def04472e04f21e33ff331dd2a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409028"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542377"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概述Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Microsoft 365 Lighthouse SMB 客户定制的安全配置基线，并跨所有客
 
 使用 Microsoft 365 Lighthouse 管理服务和连接Microsoft 365没有任何额外成本。 Microsoft 365 Lighthouse预览版，适用于在 云解决方案提供商 (CSP) 计划中注册的 MSP，以及使用 Microsoft 365 商业高级版 订阅为 SMB 客户服务。
 
-请注意，云解决方案提供商间接提供商当前不受云解决方案提供商Microsoft 365 Lighthouse。 
+支持Microsoft 365 Lighthouse Microsoft 云解决方案提供商渠道合作伙伴使用 Microsoft 365 商业高级版。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商与分销商 (交易) 。 
 
 > [!IMPORTANT] 
 > 若要使用Microsoft 365 Lighthouse，MSP 及其客户租户必须满足以下要求Microsoft 365 Lighthouse[要求](m365-lighthouse-requirements.md)。     
