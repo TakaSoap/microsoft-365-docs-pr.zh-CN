@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 535a729a56c5841eb6591ec34ac934c0446fefbd
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542677"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587695"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -33,7 +33,7 @@ ms.locfileid: "53542677"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
 通过禁止潜在恶意文件或可疑恶意软件，防止攻击在组织中进一步传播。 如果你知道 PE 文件中可能存在恶意 (可执行) ，可以阻止它。 此操作将阻止在组织的设备上读取、写入或执行该操作。
 
@@ -59,8 +59,7 @@ ms.locfileid: "53542677"
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 
-1. 在导航窗格中，选择"设置 **** 规则"下 (终结点  >    > 
- ) 。 
+1. 在导航窗格中，选择"设置 **** 规则"下 (终结点 \>  \> ) 。 
 
 2. 选择" **文件哈希"**   选项卡。
 
@@ -79,30 +78,26 @@ ms.locfileid: "53542677"
 
 由指示器自动阻止的文件不会显示在文件的"操作中心"中，但警报仍显示在警报队列中。
 
->[!IMPORTANT]
+> [!IMPORTANT]
+>
 >- 通常，文件块将在几分钟内强制执行和删除，但可能需要 30 分钟以上的时间。
-> 
->- 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义同一个文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。 
->   在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。 
->   
->- 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
+>
+>- 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义同一个文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。
+>  在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。
+>
+> - 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
 >
 >   有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)
 
-## <a name="policy-conflict-handling"></a>策略冲突处理  
+## <a name="policy-conflict-handling"></a>策略冲突处理
 
 证书和文件 IoC 策略处理冲突将遵循以下顺序：
 
 - 如果应用程序控制和 AppLocker Windows Defender策略不允许该文件，**则阻止**
-
 - 否则，如果文件被排除Microsoft Defender 防病毒，**则允许**
-
 - 否则，如果阻止或警告文件 IoC 阻止或警告文件，则 **阻止/警告**
-
 - 否则，如果允许文件 IoC 策略允许该文件 **，则允许**
-
-- 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**  
-
+- 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**
 - Else **Allow** (AppLocker 策略Windows Defender应用程序控制&，任何 IoC 规则都不适用于它) 
 
 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，则策略将超过 MD5 文件哈希 IoC 策略。
@@ -111,13 +106,13 @@ ms.locfileid: "53542677"
 
 ### <a name="examples"></a>示例
 
-|组件 |组件强制 |文件指示器操作 |结果
-|--|--|--|--|
-|攻击面减少文件路径排除 |允许 |阻止 |阻止
-|攻击面减少规则 |阻止 |允许 |允许
-|Windows Defender 应用程序控制 |允许 |阻止 |允许 |
-|Windows Defender 应用程序控制 |阻止 |允许 |阻止
-|Microsoft Defender 防病毒排除 |允许 |阻止 |允许
+|组件|组件强制|文件指示器操作|结果
+|---|---|---|---|
+|攻击面减少文件路径排除|允许|阻止|阻止
+|攻击面减少规则|阻止|允许|允许
+|Windows Defender 应用程序控制|允许|阻止|允许
+|Windows Defender 应用程序控制|阻止|允许|阻止
+|Microsoft Defender 防病毒排除|允许|阻止|允许
 
 ## <a name="see-also"></a>另请参阅
 

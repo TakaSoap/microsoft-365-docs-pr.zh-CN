@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以将非安全数据源添加到Advanced eDiscovery案例，并保留该数据源。 非索引数据源会重新编制索引，因此将重新处理标记为部分索引的任何内容，使其完全且快速可搜索。
-ms.openlocfilehash: 467f0e1167bfebe21bd3f2bbd52acd81529b8685
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 097b054bdcc1dc37f74f86703ac8d7061b76ebba
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740349"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567256"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>将非安全数据源添加到Advanced eDiscovery案例
 
@@ -43,7 +43,7 @@ ms.locfileid: "49740349"
    - **Exchange** - 单击 **"编辑**"添加邮箱。 键入名称或别名 (在邮箱或通讯组的) 搜索框中键入至少三个字符。 选择要添加为非保管人数据源的邮箱，然后单击"添加 **"。**
 
    > [!NOTE]
-   > 可以使用"SharePoint"Exchange"部分，将与"团队"或"Yammer组关联的网站和邮箱添加为非安全数据源。  必须单独添加与团队或组关联的邮箱Yammer网站。
+   > 可以使用"SharePoint"Exchange"部分，将与"团队"或"Yammer组关联的网站和邮箱添加为非安全数据源。  必须单独添加与团队或组关联的邮箱Yammer网站。<br/><br/> 此外，不支持将根网站 URL (或) 作为SharePoint `https://contoso-my.sharepoint.com/personal/` `https://contoso-my.sharepoint.com/` 数据源添加根网站 URL。 您必须添加特定网站。
 
 4. 添加非安全数据源后，您可以选择是否保留这些位置。 选中或取消 **选中数据源旁边的** "保留"复选框以将其保留。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5e48f1e4f6bc2cfaa836d90e24f2ce8ba3f2114
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7acc625694c9296970f7872e8afa6551c2e0f9d
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845326"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590943"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -32,7 +32,7 @@ ms.locfileid: "52845326"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 实时响应使安全运营团队能够即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够实时执行深入调查工作，并立即采取响应操作，以迅速包含识别的威胁。 
 
@@ -61,7 +61,7 @@ ms.locfileid: "52845326"
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **WindowsServer 2019 - 仅适用于公共预览版**
+  - **Windows Server 2019**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384) 版本) 更高版本 
     - 版本 1809 ([KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818)) 
 
@@ -79,10 +79,6 @@ ms.locfileid: "52845326"
 - **确保设备具有分配给它的自动化修正级别**。<br>
 你至少需要启用给定设备组的最低修正级别。 否则，将无法与该组的成员建立实时响应会话。
 
-    您将收到以下错误：
-
-    ![错误消息的图像](images/live-response-error.png)
-
 - **启用实时响应未签名脚本执行 (** 可选) 。 <br>
 
     >[!WARNING]
@@ -94,7 +90,9 @@ ms.locfileid: "52845326"
     只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。 
 
     > [!IMPORTANT]
-    > 将文件上载到库的选项仅适用于具有相应 RBAC 权限的用户。 对于仅具有委派权限的用户，按钮显示为灰色。
+    > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
+    >  对于仅具有委派权限的用户，按钮显示为灰色。
+    
 
     根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。 
 
@@ -114,9 +112,9 @@ ms.locfileid: "52845326"
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>在设备上启动实时响应会话 
 
-1. 登录到 Microsoft Defender 安全中心。
+1. 登录到 Microsoft 365 Defender 门户。
 
-2. 导航到设备列表页面，然后选择要调查的设备。 设备页面将打开。
+2. 导航到 **终结点>设备清单** ，然后选择要调查的设备。 设备页面将打开。
 
 3. 通过选择"启动实时响应会话 **"启动实时响应会话**。 将显示命令控制台。 在会话连接到设备时等待。
 

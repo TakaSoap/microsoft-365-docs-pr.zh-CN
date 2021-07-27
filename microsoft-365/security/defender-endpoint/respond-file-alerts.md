@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998784"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590775"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -33,7 +33,7 @@ ms.locfileid: "52998784"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)。
 
 通过停止和隔离文件或阻止文件来快速响应检测到的攻击。 对文件采取操作后，可以在操作中心查看活动详细信息。
 
@@ -144,9 +144,31 @@ ms.locfileid: "52998784"
 
 通过 **响应** 操作选择"下载文件"，可以下载包含.zip受密码保护的本地文件。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
 
-默认情况下，你将无法下载隔离的文件。
+默认情况下，您应该能够下载隔离的文件。
 
 ![下载文件操作的图像](images/atp-download-file-action.png)
+
+### <a name="download-quarantined-files"></a>下载隔离文件
+
+已由安全组或Microsoft Defender 防病毒隔离的文件将按照你的示例提交配置以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
+
+位置取决于组织的地理位置设置 (欧盟、英国或美国) 。 每个组织只能收集一次隔离文件。 若要详细了解 Microsoft 数据保护，请通过 服务信任门户了解 https://aka.ms/STP 。
+
+启用此设置可帮助安全团队检查潜在的错误文件，并快速且风险较低地调查事件。 但是，如果你需要关闭此设置，请转到设置  >  **终结点** 高级  >  **功能**  >  **下载隔离** 文件以调整设置。 [详细了解高级功能](advanced-features.md)
+
+#### <a name="backing-up-quarantined-files"></a>备份隔离的文件
+
+系统可能会提示用户在备份隔离文件之前提供显式同意，具体取决于你的 [示例提交配置](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection)。
+
+如果关闭示例提交，此功能将不起作用。 如果将自动提交示例设置为向用户请求权限，则仅收集用户同意发送的示例。
+
+>[!IMPORTANT]
+>下载隔离文件要求：
+>- 你的组织在Microsoft Defender 防病毒模式下使用用户 
+>- 防病毒引擎版本为 1.1.17300.4 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+>- 启用基于云的保护。 请参阅 [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)
+>- 示例提交已打开
+>- 设备具有 Windows 10 版本 1703 或更高版本，或 Windows Server 2016 或 2019
 
 ### <a name="collect-files"></a>收集文件
 
@@ -189,7 +211,7 @@ ms.locfileid: "52998784"
 
 ## <a name="consult-a-threat-expert"></a>咨询威胁专家
 
-有关可能受到威胁的设备或已受到威胁的设备的更多见解，请咨询 Microsoft 威胁专家。 Microsoft 威胁专家直接在内部参与Microsoft Defender 安全中心及时准确的响应。 专家提供有关可能受到威胁的设备的见解，并帮助你了解复杂的威胁和目标攻击通知。 它们还可以提供有关你在门户仪表板上看到的警报或威胁智能上下文的信息。
+有关可能受到威胁的设备或已受到威胁的设备的更多见解，请咨询 Microsoft 威胁专家。 Microsoft 威胁专家门户中直接参与Microsoft 365 Defender，及时准确地做出响应。 专家提供有关可能受到威胁的设备的见解，并帮助你了解复杂的威胁和目标攻击通知。 它们还可以提供有关你在门户仪表板上看到的警报或威胁智能上下文的信息。
 
 有关详细信息 [，请参阅咨询 Microsoft 威胁](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
 

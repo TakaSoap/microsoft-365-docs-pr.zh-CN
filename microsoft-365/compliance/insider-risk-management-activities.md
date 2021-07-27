@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b4b770733b9e62b39a07c8699619ac5f7d692ec5
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 0c94f0559a86eed8975f80b96ec3f0ff66a9d8e1
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327072"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587761"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>调查内部风险管理活动
 
@@ -96,6 +96,18 @@ ms.locfileid: "53327072"
 ## <a name="search-alerts-on-the-alert-dashboard"></a>警报仪表板上的搜索警报
 
 若要搜索特定字词的警报名称，请选择 **搜索** 并键入要搜索的字词。 搜索结果将显示任何包含搜索中定义的单词的策略警报。
+
+## <a name="dismiss-multiple-alerts-preview"></a>在预览版中 (多个) 
+
+这有助于为分析员和研究人员节省会审时间，以立即立即消除多个警报。 "**消除警报**"命令栏选项允许你在仪表板上选择一个或多个具有"需要评审"状态的警报，并快速消除这些警报，就像在会审过程中适当一样。 可以选择一次最多消除 400 个警报。
+
+若要消除内部风险警报，请完成以下步骤：
+
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
+2. 在 **警报仪表板上**，选择 (或 *) 需要审阅* 状态时要消除的警报。
+3. 在警报命令栏上，选择 **消除警报**。
+4. 在 **"消除警报详细信息** "窗格中，你可以查看与所选警报关联的用户和策略详细信息。
+5. 选择 **"消除警报**"将警报解析为恶意警报，或选择"取消"关闭详细信息窗格而不消除警报。
 
 ## <a name="triage-alerts"></a>会审警报
 

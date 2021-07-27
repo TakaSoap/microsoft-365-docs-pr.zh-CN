@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: ef1076fb5b8bfc38090374671998460190faaba9
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: f97edde712287ef72b9196b11651bc5ce3fbe7a2
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893421"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567232"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>访问 Microsoft Defender for Endpoint 社区中心
 
@@ -41,9 +41,8 @@ Defender for Endpoint Community 中心是社区成员可以学习、协作和共
 - 最近更新
 - 威胁智能
 
-
 可通过多种方式访问 Community 中心：
-- 在导航Microsoft Defender 安全中心中，选择"Community **中心"。**  将打开一个新的浏览器选项卡，并让你访问 Defender for Endpoint Tech Community页面。 
+- 在"Microsoft 365 Defender门户"导航窗格中，选择 **"Community中心"。**  将打开一个新的浏览器选项卡，并让你访问 Defender for Endpoint Tech Community页面。 
 - 通过 Microsoft [Defender 终结点技术中心页面访问Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)社区
 
 

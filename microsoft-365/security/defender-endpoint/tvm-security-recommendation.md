@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933729"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567148"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -48,17 +48,17 @@ ms.locfileid: "51933729"
 
 组织的每台设备都基于三个重要因素进行评分，以帮助客户在正确的时间专注于正确的内容。
 
-- **威胁** - 组织设备中的漏洞和攻击的特征和泄露历史记录。 根据这些因素，安全建议显示活动警报的相应链接、正在进行的威胁活动及其相应的威胁分析报告。
+- **威胁**— 组织设备中的漏洞和攻击的特征和泄露历史记录。 根据这些因素，安全建议显示活动警报的相应链接、正在进行的威胁活动及其相应的威胁分析报告。
 
-- **泄露可能性** - 组织的安全状态和抵御威胁的复原能力
+- **泄露** 可能性 - 组织的安全状态和抵御威胁的复原能力
 
-- **业务价值** - 组织的资产、关键流程和知识产权
+- **业务** 价值 - 组织的资产、关键流程和知识产权
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>导航到"安全建议"页
 
 以几种不同方式访问"安全建议"页：
 
-- 威胁漏洞管理导航菜单中[的Microsoft Defender 安全中心](portal-overview.md)
+- 漏洞管理门户中的威胁和Microsoft 365 Defender[菜单](portal-overview.md)
 - 仪表板中危险和漏洞管理[建议](tvm-dashboard-insights.md)
 
 查看以下位置的相关安全建议：
@@ -68,7 +68,7 @@ ms.locfileid: "51933729"
 
 ### <a name="navigation-menu"></a>导航菜单
 
-转到导航危险和漏洞管理，然后选择 **安全建议**。 此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
+转到漏洞 **管理导航菜单**，然后选择"推荐"。  此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
 
 ### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>危险和漏洞管理仪表板中危险和漏洞管理建议
 
@@ -100,7 +100,7 @@ ms.locfileid: "51933729"
 
 选择要调查或处理的安全建议。
 
-![安全建议飞出页的示例。](images/secrec-flyouteolsw.png)
+:::image type="content" alt-text="安全建议飞出页的示例。" source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
 
 从飞出菜单，可以选择以下任一选项：
 

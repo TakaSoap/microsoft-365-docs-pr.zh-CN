@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 820edf268a3062754a4994b6ce6c60c40b9a4312
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932735"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587773"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
@@ -34,7 +34,7 @@ ms.locfileid: "51932735"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) 更高版本的 macOS。
 
@@ -42,7 +42,7 @@ ms.locfileid: "51932735"
 
 ## <a name="jamf"></a>JAMF
 
-### <a name="system-extensions-policy"></a>系统扩展策略
+### <a name="jamf-system-extensions-policy"></a>JAMF 系统扩展策略
 
 若要批准系统扩展，请创建以下有效负载：
 
@@ -69,7 +69,7 @@ ms.locfileid: "51932735"
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
-作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心 门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft 365 Defender 门户。 以下策略允许网络扩展执行此功能。
 
 >[!NOTE]
 >JAMF 没有对内容筛选策略的内置支持，这是启用 MacOS 上的 Microsoft Defender for Endpoint 在设备上安装的网络扩展的先决条件。 此外，JAMF 有时会更改正在部署的策略的内容。
@@ -149,13 +149,13 @@ ms.locfileid: "51932735"
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
-    
+
     验证命令是否输出 `OK` 。
-        
+
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
-    
+
 3. 按照此页面上 [的说明，](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) 使用 JAMF 的内置证书颁发机构创建签名证书。
 
 4. 创建证书并安装到设备后，从终端运行以下命令对文件进行签名：
@@ -163,18 +163,18 @@ ms.locfileid: "51932735"
     ```bash
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
     例如，如果证书名称为 **SigningCertificate，** 并且签名文件将存储在 Documents 中：
-    
+
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
 5. 从 JAMF 门户中，导航到 **"配置文件**"，**然后单击"Upload** 按钮。 在 `com.microsoft.network-extension.signed.mobileconfig` 系统提示您输入文件时选择。
 
 ## <a name="intune"></a>Intune
 
-### <a name="system-extensions-policy"></a>系统扩展策略
+### <a name="intune-system-extensions-policy"></a>Intune 系统扩展策略
 
 批准系统扩展：
 
@@ -195,7 +195,7 @@ ms.locfileid: "51932735"
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>创建和部署自定义配置文件
 
-以下配置文件启用网络扩展，并授予对终结点安全系统扩展的完全磁盘访问权限。 
+以下配置文件启用网络扩展，并授予对终结点安全系统扩展的完全磁盘访问权限。
 
 将以下内容保存到名为 **sysext.xml：**
 
@@ -305,10 +305,10 @@ sysext.xml: OK
 
 部署此自定义配置文件：
 
-1.  在 Intune 中，打开 **"管理**  >  **设备配置"。** 选择 **"管理**  >  **配置文件**  >  **""创建配置文件"。**
+1. 在 Intune 中，打开 **"管理**  >  **设备配置"。** 选择 **"管理**  >  **配置文件**  >  **""创建配置文件"。**
 2. 选择配置文件的名称。 Change **Platform=macOS** and **Profile type=Custom**. 选择"**配置"。**
-3.  打开配置文件， **然后上传** sysext.xml。 此文件是在上一步骤中创建的。
-4.  选择“**确定**”。
+3. 打开配置文件， **然后上传** sysext.xml。 此文件是在上一步骤中创建的。
+4. 选择 **“确定”**。
 
     ![Intune 中的系统扩展屏幕截图](images/mac-system-extension-intune.png)
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 19423b1a52bc02768236e56a73ccefe71cfd7672
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861691"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567076"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -33,8 +33,8 @@ ms.locfileid: "52861691"
 
 > [!IMPORTANT]
 > **Web 内容筛选当前处于公共预览阶段**<br>
-> 此预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。 某些功能可能不受支持，或者可能具有受限功能。
-> 有关详细信息，请参阅适用于终结点预览[功能的 Microsoft Defender。](preview.md)
+> 此预览版未提供服务水平协议，不建议用于生产工作负载。 某些功能可能不受支持，也可能具有受限功能。
+> 有关详细信息，请参阅 [Microsoft Defender for Endpoint 预览功能](preview.md)。
 
 > [!TIP]
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -55,12 +55,12 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 第三方支持的浏览器的阻止体验由网络保护提供，它提供系统级 Toast 以通知用户阻止的连接。 为获得更用户友好的浏览器内体验，请考虑使用Microsoft Edge。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 在尝试此功能之前，请确保满足以下要求：
 
 - Windows 10 企业版E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint 独立许可证。 
-- 访问 Microsoft Defender 安全中心 门户 (https://securitycenter.windows.com) 。
+- 访问 Microsoft 365 Defender 门户 (https://security.microsoft.com) 。
 - 运行 Windows 10 周年更新 (版本 1607) 或更高版本使用最新的 MoCAMP 更新。
 - Windows DefenderSmartScreen 和网络保护已启用。
 
@@ -71,11 +71,11 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
-从左侧导航菜单中，选择"设置  >  **高级**  >  **功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
+从左侧导航菜单中，选择"设置  >    >  **终结点常规**  >  **高级功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
 
 ### <a name="configure-web-content-filtering-policies"></a>配置 Web 内容筛选策略
 
-Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置  >    >  **Web 内容筛选"。**
+Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置"下 (终结点  >    >  **Web** 内容) 。 
 
 使用筛选器查找包含特定阻止类别或应用于特定设备组的策略。
 
@@ -102,7 +102,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 通过创建自定义指示器策略，可以覆盖 Web 内容筛选中阻止的类别以允许单个网站。 当自定义指示器策略应用于有关设备组时，它将取代 Web 内容筛选策略。
 
-1. 通过访问"Microsoft Defender 安全中心 URL/域设置项 **"，** 在加载项  >    >  **中**  >  **创建自定义指示器**。
+1. 通过Microsoft 365 Defender终结点设置 URL/域 **添加项**，在 Microsoft 365 Defender 门户  >    >    >    >  **中创建自定义指示器**。
 
 2. 输入网站的域。
 

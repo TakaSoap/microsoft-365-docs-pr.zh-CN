@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 学习如何以及为什么在 Microsoft SharePoint Syntex 中复制模型。
-ms.openlocfilehash: 501c33b5309ca4af264a361c80fb0409c08c92e3
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 882340198ec17402caa30d9e1e34b4e37b0096a4
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445947"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578465"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中复制模型
 
@@ -48,7 +48,7 @@ ms.locfileid: "51445947"
 
    b. 在“**描述**”下，添加新模型的说明。
 
-   c. (可选)在“**高级设置**”下，选择是否希望关联现有[内容类型](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。
+   c. (可选)在“**高级设置**”下，选择是否希望关联现有 [内容类型](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。
 
 5. 选择“**复制**”。
 

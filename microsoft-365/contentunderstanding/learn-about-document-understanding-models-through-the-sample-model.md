@@ -1,8 +1,9 @@
 ---
 title: 通过示例模型了解文档理解模型
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 通过示例模型了解文档理解模型
-ms.openlocfilehash: f455e1ec854b4f9a6eea3fa6560ae5390892a640
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+description: 通过示例模型了解文档理解模型。
+ms.openlocfilehash: 9d8c4d7d241c9de49c0e6d64cc585edb6b67419b
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976407"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578549"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>通过示例模型了解文档理解模型
 

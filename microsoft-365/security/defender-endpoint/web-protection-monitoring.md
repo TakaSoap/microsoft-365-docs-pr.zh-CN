@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 19ce05acaf4e06a97014cea3ff57d7c3d8cabfe7
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687419"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567064"
 ---
 # <a name="monitor-web-browsing-security"></a>监视 Web 浏览安全性
 
@@ -33,15 +33,15 @@ ms.locfileid: "51687419"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-通过 Web 保护，可以通过"报告"和"Web 保护"下的报表>**组织的 Web** 浏览Microsoft Defender 安全中心。 该报告包含提供 Web 威胁检测统计信息的卡片。
+通过 Web 保护，可以通过报告门户中"报告 web > **Web** 保护"下的报告监视Microsoft 365 Defender安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
 
 - **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示在所选时间段（"最近 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
  
-    ![显示一段时间的 Web 威胁防护检测的卡片图像](images/wtp-blocks-over-time.png)
+  :::image type="content" alt-text="显示一段时间的 Web 威胁防护检测的卡片图像" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Web 威胁防护摘要** - 此卡片显示过去 30 天内的 Web 威胁检测总数，显示不同类型的 Web 威胁的分布情况。 选择切片将打开通过恶意或不需要的网站找到的域列表。
 
-    ![显示 Web 威胁防护摘要的卡片图像](images/wtp-summary.png)
+  :::image type="content" alt-text="显示 Web 威胁防护摘要的卡片图像" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 >[!Note]
 >阻止可能最多需要 12 个小时才能反映在卡或域列表中。

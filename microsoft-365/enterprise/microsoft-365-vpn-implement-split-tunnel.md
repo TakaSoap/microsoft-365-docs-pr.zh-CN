@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2ec4cd8b3730c93a6de30e59087beaff788992dd
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843646"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578585"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843646"
 
 多年来，企业一直使用 VPN 来支持其用户的远程体验。 虽然核心工作负载保持在本地，但通过公司网络上的数据中心路由的远程客户端的 VPN 是供远程用户访问公司资源的主要方法。 为保证这些连接的安全性，企业将沿 VPN 路径构建网络安全解决方案层。 构建此安全是为了保护内部基础结构，并通过将流量重新路由到 VPN，然后通过本地 Internet 外围来保护外部网站的移动浏览。 VPN、网络外围和相关的安全基础结构通常是针对定义的流量进行特意构建和扩展的，通常大多数连接都是从企业网络内部启动的，并且大部分连接都位于内部网络边界之内。
 
-在相当长的一段时间内，只要远程用户的并发规模适中且遍历 VPN 的流量较低，那么所有来自远程用户设备的连接都被路由回本地网络的 VPN 模型（这称为 **强制隧道**）基本上是可持续的。  一些客户甚至在他们的应用从企业外围转移到公共 SaaS 云之后，仍继续将 VPN 强制隧道用作现状， Office 365 就是一个很好的例子。
+在相当长的一段时间内，只要远程用户的并发规模适中且遍历 VPN 的流量较低，那么所有来自远程用户设备的连接都被路由回本地网络的 VPN 模型（这称为 _强制隧道_）基本上是可持续的。  一些客户甚至在他们的应用从企业外围转移到公共 SaaS 云之后，仍继续将 VPN 强制隧道用作现状， Office 365 就是一个很好的例子。
 
 使用强制隧道 VPN 连接到分布式和性能敏感的云应用程序是非优化的，但一些企业为了从安全角度维持状态而接受其负面影响。 下面是此场景的一个示例图：
 
@@ -110,7 +110,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 - 可在服务中提供所需的安全元素，而不是在网络上内联
 - 约占 Office 365 服务流量的 70-80%
 
-有关 Office 365 终结点及其分类和管理方式的详细信息，请参阅[管理 Office 365 终结点](managing-office-365-endpoints.md)一文。
+有关终结点Office 365如何分类和管理它们，请参阅管理Office 365[终结点](managing-office-365-endpoints.md)。
 
 #### <a name="optimize-urls"></a>优化 URL
 
@@ -128,7 +128,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 #### <a name="optimize-ip-address-ranges"></a>优化 IP 地址范围
 
-在编写这些终结点所对应的 IP 范围时，如下所示。 强烈建议你在应用配置时使用脚本（如[](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)此示例[、Office 365 IP](microsoft-365-ip-web-service.md)和 URL Web 服务或[URL/IP](urls-and-ip-address-ranges.md)页面）检查是否有更新，并定期制定策略。
+在写入这些终结点所对应的 IP 地址范围时，如下所示。 强烈建议你在应用配置时使用脚本（如[](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)此示例[、Office 365 IP](microsoft-365-ip-web-service.md)和 URL Web 服务或[URL/IP](urls-and-ip-address-ranges.md)页面）检查是否有更新，并定期制定策略。
 
 ```
 104.146.128.0/17
@@ -141,7 +141,6 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 132.245.0.0/16
 150.171.32.0/22
 150.171.40.0/22
-191.234.140.0/22
 204.79.197.215/32
 23.103.160.0/20
 40.104.0.0/15
@@ -175,7 +174,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ![路由打印输出](../media/vpn-split-tunneling/vpn-route-print.png)
 
-若要在“优化”类别中添加 **所有** 当前 IP 地址范围的路由，可使用以下脚本变体查询 [Office 365 IP 和 URL Web 服务](microsoft-365-ip-web-service.md)，以获取当前优化 IP 子网集合并将其添加到路由表。
+若要在“优化”类别中添加 _所有_ 当前 IP 地址范围的路由，可使用以下脚本变体查询 [Office 365 IP 和 URL Web 服务](microsoft-365-ip-web-service.md)，以获取当前优化 IP 子网集合并将其添加到路由表。
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>示例：将所有优化子网添加到路由表
 
@@ -248,7 +247,7 @@ Skype for Business Online 生成用户名/密码，可用于通过 _围绕 NAT �
 
 - 运行Microsoft 365[连接](https://aka.ms/netonboard)测试，该测试将针对您运行连接测试，包括如上所述的跟踪路由。 我们还将 VPN 测试添加到此工具中，这还应提供其他见解。
 
-- 对于拆分隧道范围内的终结点的简单 tracert，应显示所采用的路径，例如：
+- 指向拆分隧道范围内终结点的简单 **tracert** 应显示使用的路径，例如：
 
   ```powershell
   tracert worldaz.tr.teams.microsoft.com
@@ -276,7 +275,7 @@ Skype for Business Online 生成用户名/密码，可用于通过 _围绕 NAT �
 
 ## <a name="faq"></a>常见问题
 
-Microsoft 安全团队 [发布了一篇文章](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) ，概述了安全专业人员和 IT 人员在当今独特的远程工作场景中实现新式安全控制的关键方法。 此外，下面是有关此主题的一些常见客户问题和解答。
+Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)人员在今天独特的远程工作场景中实现新式安全控制的替代方法（博客文章，概述了安全专业人员和 IT 人员在当今独特的远程工作场景中实现新式安全控制的关键方法）。 此外，下面是有关此主题的一些常见客户问题和解答。
 
 ### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>我如何阻止用户访问我不信任的其他租户（他们可能会泄漏数据）？
 
@@ -304,7 +303,7 @@ Microsoft 安全团队 [发布了一篇文章](https://www.microsoft.com/securit
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>如何防范病毒和恶意软件？
 
-同样，Office 365 为服务自身各层中标记为“优化”的终结点提供了保护，[本文档对此进行了概述](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 如前所述，在服务本身中提供这些安全元素，而不是尝试在可能完全了解协议/流量的设备中这样做会更有效。默认情况下，SharePoint Online[自动扫描文件上传中的](../security/office-365-security/virus-detection-in-spo.md)已知恶意软件
+同样，Office 365 为服务自身各层中标记为“优化”的终结点提供了保护，[本文档对此进行了概述](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 如前所述，在服务本身中提供这些安全元素，而不是尝试在可能完全了解协议/流量的设备中这样做会更有效。 默认情况下，SharePoint Online[自动扫描文件上传中的](../security/office-365-security/virus-detection-in-spo.md)已知恶意软件
 
 对于上面Exchange的终结点，Exchange Online Protection和 Microsoft [](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Defender for [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)可以出色地为服务提供流量安全。
 
@@ -316,7 +315,7 @@ Microsoft 安全团队 [发布了一篇文章](https://www.microsoft.com/securit
 
 然而，即使就地使用这些解决方案，Microsoft 仍强烈建议将标记为“优化”的 Office 365 流量直接发送到服务。
 
-有关允许直接访问 Azure 虚拟网络的指南，请参阅[使用 Azure VPN 网关点到站点进行远程工作](/azure/vpn-gateway/work-remotely-support)一文。
+有关允许直接访问 Azure 虚拟网络的指南，请参阅使用 Azure VPN 网关点 [到站点的远程工作](/azure/vpn-gateway/work-remotely-support)。
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>为什么需要端口 80？ 流量是否明文发送？
 

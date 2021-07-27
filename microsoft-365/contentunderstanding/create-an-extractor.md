@@ -1,8 +1,9 @@
 ---
-title: 创建提取程序
-ms.author: efrene
-author: efrene
+title: 在 Microsoft SharePoint Syntex 中创建提取程序
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: e95df00c2601bccc5041f96c745048adc8dfc91f
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: d448458616d7641152e8179c413d4581d4da00fb
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222787"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578501"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
@@ -47,7 +48,7 @@ ms.locfileid: "51222787"
 
 下一步是在示例培训文件中标记想要提取的实体。
 
-创建提取程序会打开提程序 页面。 此时，将看到示例文件的列表，并在查看器中显示列表中的第一个文件。
+创建提取程序将打开提取程序页。此时，将看到示例文件的列表，并在查看器中显示列表中的第一个文件。
 
 1. 从查看器中，选择要从文件中提取的数据。 例如，如果想要提取“*开始服务日期*”，请突出显示第一个文件中的日期值（*星期一，2019 年 10 月 14 日*）。 然后单击“**保存**”。  在“**标签**”列下，你应该会在“已标记示例”列表中看到从文件显示的值。
 2. 选择“**下一个文件**”可自动保存并打开查看器列表中的下一个文件。 或选择“**保存**”，然后从“**已标记的示例**”列表中中选择另一个文件。
@@ -59,9 +60,10 @@ ms.locfileid: "51222787"
 标记了五个文件后，将显示一条通知横幅，告知你移动到培训。 你可以选择更多标签，更多文档或前进到培训。 
 
 ### <a name="use-find-to-search-your-file"></a>使用“查找”搜索文件
-使用<b>“查找”</b>功能在文档中搜索你要标记的实体。
 
-   ![在文件中查找](../media/content-understanding/find-feature.png) 
+使用 **“查找”** 功能在文档中搜索你要标记的实体。
+
+   ![在文件中查找。](../media/content-understanding/find-feature.png) 
 
 如果要搜索大型文档，或者文档中有多个实体实例，则“查找”功能非常有用。 如果发现多个实例，可以在搜索结果中选择需要的实例，进入查看器中的那个位置对它进行标记。
 
@@ -99,24 +101,24 @@ ms.locfileid: "51222787"
 2. 从说明库中，选择“**日期**”。 可查看所识别的日期的所有变体。
 3. 选择“**添加**”。</br>
 
-    ![说明库](../media/content-understanding/explanation-library.png) 
+    ![说明库。](../media/content-understanding/explanation-library.png) 
 
 4. 在“**创建说明**”页面上，说明库中的“*日期*”信息将自动填充字段。 选择“**保存**”。</br>
 
-    ![日期](../media/content-understanding/date-explanation-library.png) 
+    ![日期。](../media/content-understanding/date-explanation-library.png) 
 
 ## <a name="train-the-model"></a>培训模型 
 
 保存说明开始培训。 如果你的模型具有足够的信息，可以从已标记的示例文件中提取数据，你将看到每个文件都标记了“**匹配**”。  
 
-![匹配](../media/content-understanding/match2.png) 
+![匹配。](../media/content-understanding/match2.png) 
 
 如果说明没有足够的信息来查找你想要提取的数据，则每个文件都将标记 “**不匹配**”。 可单击“**不匹配**”的文件，查看有关为何不匹配的详细信息。
 
 
 ## <a name="add-another-explanation"></a>添加另一个说明
 
-通常不匹配是指我们提供的说明未提供足够的信息来提取服务开始日期值以匹配标记的文件。 可能需要对其进行编辑，或添加其他说明。
+通常不匹配是指我们提供的说明未提供足够的信息来提取服务开始日期值以匹配标记的文件。可能需要对其进行编辑，或添加其他说明。
 
 在我们的示例中，请注意，文本字符串“*开始服务日期*”始终在实际值之前。 若要帮助标识“服务开始日期”，需要创建短语说明。
 
@@ -125,7 +127,7 @@ ms.locfileid: "51222787"
 3. 使用“*服务开始日期*”作为值。
 4. 选择“**保存**”。
 
-    ![前缀字符串](../media/content-understanding/prefix-string.png) 
+    ![前缀字符串。](../media/content-understanding/prefix-string.png) 
 
 ## <a name="train-the-model-again"></a>再次培训模型
 
@@ -140,7 +142,7 @@ ms.locfileid: "51222787"
 1. 在模型主页中，单击“**测试**”选项卡。 这将在未标记的示例文件上运行模型。
 2. 在“**测试文件**”列表中，如果模型能够提取所需的信息，将显示出陈列的示例文件。 使用此信息以帮助确定分类器在文档识别中的有效性。
 
-    ![对文件进行测试](../media/content-understanding/test-filies-extractor.png) 
+    ![对文件进行测试。](../media/content-understanding/test-filies-extractor.png) 
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)

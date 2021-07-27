@@ -1,5 +1,5 @@
 ---
-title: Web 保护功能
+title: Web 保护
 description: 了解 Microsoft Defender for Endpoint 中的 Web 保护及其如何保护你的组织
 keywords: Web 保护， Web 威胁防护， Web 浏览， 安全， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器， 恶意网站
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5f65712fb3d1148d53361b97c75817792bedc198
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844198"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567052"
 ---
-# <a name="web-protection"></a>Web 保护功能
+# <a name="web-protection"></a>Web 保护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "52844198"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Microsoft Defender for Endpoint 中的 Web 保护是一项由 [Web 威胁](web-threat-protection.md) 防护和 Web 内容筛选 [构成的功能](web-content-filtering.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 可以在 Web 保护中查找 Web Microsoft Defender 安全中心，> **Web 保护**。
+Microsoft Defender for Endpoint 中的 Web 保护是一项由 [Web 威胁](web-threat-protection.md) 防护和 Web 内容筛选 [构成的功能](web-content-filtering.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 您可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
 
-![所有 Web 保护卡的图像](images/web-protection.png)
+:::image type="content" alt-text="所有 Web 保护卡的图像" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ## <a name="web-threat-protection"></a>Web 威胁防护功能
 

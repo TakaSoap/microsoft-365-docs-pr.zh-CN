@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: b4ed79359d8d535ec47a287292cedf1d0520711e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689081"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567184"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 危险和漏洞管理
 
@@ -43,7 +43,7 @@ ms.locfileid: "52689081"
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>查找有关零日漏洞的信息
 
-一旦发现零日漏洞，有关该漏洞的信息将通过该漏洞中的以下Microsoft Defender 安全中心。
+一旦发现零日漏洞，相关信息将在 Microsoft 365 Defender 门户中传达。
 
 >[!NOTE]
 > 0 天漏洞功能当前仅适用于Windows产品。
@@ -66,19 +66,19 @@ ms.locfileid: "52689081"
 
 - 如果此漏洞未分配 CVE ID，你将在类似于"TVM-XXXX-XXXX"的内部临时名称下找到它。 分配官方 CVE-ID 后，该名称将更新，但以前的内部名称仍可搜索，并位于侧面板中。
 
-![零日示例，针对"漏洞"页面的 CVE-2020-17087。](images/tvm-zero-day-weakness-name.png)
+:::image type="content" alt-text="零日示例，针对&quot;漏洞&quot;页面的 CVE-2020-17087。" source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>软件清单页
 
 查找带零日标记的软件。 按"零日"标记进行筛选，以仅查看具有零日漏洞的软件。
 
-![软件清单页Windows Server 2016零日示例。](images/tvm-zero-day-software-inventory.png)
+:::image type="content" alt-text="软件清单页Windows Server 2016零日示例。" source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>"软件"页
 
 查找受零日漏洞影响的每个软件的零日标记。
 
-![软件页的零Windows Server 2016日示例。](images/tvm-zero-day-software-page.png)
+:::image type="content" alt-text="软件页的零Windows Server 2016日示例。" source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>"安全建议"页
 
@@ -86,7 +86,7 @@ ms.locfileid: "52689081"
 
 如果有软件具有零日漏洞和其他要解决的漏洞，你将获得有关所有漏洞的一个建议。
 
-![零日示例Windows Server 2016安全建议页中显示的内容。](images/tvm-zero-day-security-recommendation.png)
+:::image type="content" alt-text="零日示例Windows Server 2016安全建议页中显示的内容。" source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>解决零日漏洞
 

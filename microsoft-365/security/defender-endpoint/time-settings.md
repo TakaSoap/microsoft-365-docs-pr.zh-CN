@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender 安全中心时区设置
-description: 使用此处包含的信息配置Microsoft Defender 安全中心时区设置并查看许可证信息。
+title: Microsoft 365 Defender时区设置
+description: 使用此处包含的信息配置Microsoft 365 Defender时区设置并查看许可证信息。
 keywords: 设置， Microsoft Defender， 网络安全威胁智能， 适用于终结点的 Microsoft Defender， 时区， utc， 本地时间， 许可证
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d57d8f8aa361448ccc6c3b39703128a37352111c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932627"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568168"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender 安全中心时区设置
+# <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender时区设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

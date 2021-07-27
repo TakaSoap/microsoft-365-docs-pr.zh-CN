@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9c31d62933ecb34d75e048101891fa7fa7b4256d
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933717"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587689"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>软件清单 - 危险和漏洞管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933717"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 危险和漏洞管理软件清单是组织中具有正式通用平台枚举的已知软件列表 ([CPE) 。 ](https://nvd.nist.gov/products/cpe) 没有正式 CPE 的软件产品没有发布漏洞。 它还包括供应商名称、漏洞数量、威胁和公开设备数量等详细信息。
 
@@ -46,7 +46,7 @@ ms.locfileid: "51933717"
 
 ## <a name="navigate-to-the-software-inventory-page"></a>导航到"软件清单"页
 
-通过在页面的导航 **菜单中从**"危险和漏洞管理"菜单中选择"软件清单"，访问"软件 [Microsoft Defender 安全中心"。](portal-overview.md)
+通过从"软件清单"门户中的"危险和漏洞管理导航"菜单中选择"软件Microsoft 365 Defender[页面](portal-overview.md)。
 
 在"设备"列表的"单个设备"页面中查看 [特定设备上的软件](machines-view-overview.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51933717"
 
 你可以根据软件中发现的缺点、与其关联的威胁以及软件是否已达到支持终止等标记来筛选列表视图。
 
-![软件清单的登陆页面示例。](images/tvm-software-inventory.png)
+:::image type="content" alt-text="软件清单的登陆页面示例。" source="images/tvm-software-inventory.png" lightbox="images/tvm-software-inventory.png":::
 
 选择要调查的软件。 在打开一个飞出面板时，页面上的信息视图会更紧凑。 你可以深入调查并选择"打开软件页"，或者通过选择"报告不准确"来标记 **任何技术不一致情况**。
 
@@ -67,7 +67,7 @@ ms.locfileid: "51933717"
 
 "软件清单"页中& 漏洞管理当前不受威胁威胁支持的软件。 由于它不受支持，因此只有有限的数据可用。 使用"漏洞"部分中的"不可用"选项按不受支持的软件进行筛选。
 
-![不支持的软件筛选器。](images/tvm-unsupported-software-filter.png)
+:::image type="content" alt-text="不支持的软件筛选器。" source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
 
 下面指示软件不受支持：
 
@@ -80,7 +80,7 @@ ms.locfileid: "51933717"
 
 ## <a name="software-inventory-on-devices"></a>设备上的软件清单
 
-从Microsoft Defender 安全中心导航面板中，转到 **["设备"列表](machines-view-overview.md)**。 选择设备名称以打开设备页面 (如 Computer1) ，然后选择"软件清单"选项卡以查看设备上存在的所有已知软件的列表。 选择特定软件项以打开包含详细信息的飞出区。
+从Microsoft 365 Defender门户导航面板中，转到设备 **[清单](machines-view-overview.md)**。 选择设备名称以打开设备页面 (如 Computer1) ，然后选择"软件清单"选项卡以查看设备上存在的所有已知软件的列表。 选择特定软件项以打开包含详细信息的飞出区。
 
 软件可能在设备级别可见，即使软件当前不受设备危险和漏洞管理。 但是，只有有限的数据可用。 你将知道软件是否不受支持，因为它将在"漏洞"列中显示"不可用"。
 
@@ -92,7 +92,7 @@ ms.locfileid: "51933717"
 
 选择一个软件名称以打开该飞出页面，并查找名为"软件证据"的部分。
 
-![软件证据示例Windows 10列表，显示软件证据注册表路径。](images/tvm-software-evidence.png)
+:::image type="content" alt-text="软件证据示例Windows 10列表，显示软件证据注册表路径。" source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>软件页
 
@@ -107,12 +107,12 @@ ms.locfileid: "51933717"
 - 包含供应商信息的侧面板、组织中软件的普遍程度 (包括其安装的设备数量，以及未修补) 的公开设备、是否可用和攻击，以及你的曝光评分。
 - 显示漏洞和错误配置的数量和严重性的数据可视化。 此外，使用公开的设备数的图形。
 - 显示以下信息的选项卡：
-    - 针对所识别的漏洞的相应安全建议。
-    - 发现的漏洞的命名 CVEs。
-    - 安装了软件的设备 (设备名称、域、操作系统等) 。
-    - 软件版本列表 (包括安装版本的设备数、发现的漏洞数以及安装的设备名称) 。
+  - 针对所识别的漏洞的相应安全建议。
+  - 发现的漏洞的命名 CVEs。
+  - 安装了软件的设备 (设备名称、域、操作系统等) 。
+  - 软件版本列表 (包括安装版本的设备数、发现的漏洞数以及安装的设备名称) 。
 
-    ![2017 Visual Studio软件详细信息、漏洞、公开设备等的 2017 软件示例页面。](images/tvm-software-page-example.png)
+    :::image type="content" alt-text="2017 Visual Studio软件详细信息、漏洞、公开设备等的 2017 软件示例页面。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

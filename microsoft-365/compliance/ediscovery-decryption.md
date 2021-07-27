@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解电子Microsoft 365工具如何处理附加到电子邮件并存储在 SharePoint Online 和 OneDrive for Business 中的加密文档。
-ms.openlocfilehash: b87d87b7b0e870d6f396d87dc693fb8f41d5826b
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 9d3bee507d2add2a6ad1dedadf64c47298ecbab6
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51750024"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567304"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>电子数据展示Microsoft 365中的解密
 
@@ -35,7 +35,10 @@ ms.locfileid: "51750024"
 
 ## <a name="supported-encryption-technologies"></a>支持的加密技术
 
-Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的项目。 这些技术是 Azure 权限管理和 Microsoft 信息保护 (特别是敏感度标签) 。 有关 Microsoft 加密技术的信息，[请参阅加密。](encryption.md) 不支持通过第三方加密技术加密的内容。 例如，不支持预览或导出使用非 Microsoft 技术加密的内容。
+Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的项目。 这些技术是 Azure 权限管理，Microsoft 信息保护 (特定敏感度标签) 。 有关 Microsoft 加密技术的信息，[请参阅加密。](encryption.md) 不支持通过第三方加密技术加密的内容。 例如，不支持预览或导出使用非 Microsoft 技术加密的内容。
+
+> [!NOTE]
+> Microsoft 电子数据展示工具不支持解密Office 365 邮件加密 (OME) 加密的电子邮件。
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>支持加密项目的电子数据展示活动
 

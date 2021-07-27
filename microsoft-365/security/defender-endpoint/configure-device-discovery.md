@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 7997a1367126cd22417683b22409e6254204e1bf
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339522"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567124"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -58,7 +58,6 @@ ms.locfileid: "53339522"
 如果网络上有些设备不应主动扫描 (例如，用作另一个安全工具) 的热点的设备，则还可以定义排除项列表以防止它们被扫描。 请注意，仍可使用基本发现模式发现设备。 将被动发现这些设备，但不主动探测器。 
 
 ## <a name="select-networks-to-monitor"></a>选择要监视的网络
-
  Microsoft Defender for Endpoint 分析网络，并确定它是需要监视的公司网络还是可忽略的非公司网络。 通常选择监视公司网络。 但是，可以通过选择监视找到已载入设备的非公司网络来替代此决定。 
 
 可以通过指定要监视的网络来配置设备发现执行位置。 当网络受到监视时，可以在它上执行设备发现。 
@@ -74,7 +73,7 @@ ms.locfileid: "53339522"
 
 - **受监视的网络** - 执行设备发现的网络。
 - **忽略的网络** - 此网络将被忽略，并且不会对它执行设备发现。
-- **All** - 将显示受监视和忽略的网络。
+- **All** - 将显示受监视和忽略的网络。 
 
 ### <a name="configure-the-network-monitor-state"></a>配置网络监视器状态
 
@@ -89,10 +88,9 @@ ms.locfileid: "53339522"
 5. 选择是监视、忽略还是使用初始发现分类。
 
     > [!WARNING]
-    >
-    > - 选择监视未由 Microsoft Defender for Endpoint 标识为企业网络的网络可能会导致设备在企业网络外部发现，因此可能会检测家庭或其他非公司设备。
+    > - 选择监视未由 Microsoft Defender for Endpoint 标识为企业网络的网络可能会导致设备在企业网络外部发现，因此可能会检测家庭或其他非公司设备。 
     > - 选择忽略网络将停止监控和发现该网络中的设备。 已发现的设备不会从清单中删除，但将不再更新，详细信息将一直保留到 Defender for Endpoint 的数据保留期到期。
-    > - 在选择监视非公司网络之前，必须确保你有权这样做。
+    > - 在选择监视非公司网络之前，必须确保你有权这样做。 <br>
 
 6. 确认要更改。 
 

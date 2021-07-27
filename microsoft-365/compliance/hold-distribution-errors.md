@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 解决与核心电子数据展示中应用于保管人和非监管数据源的法律保留相关的错误。
-ms.openlocfilehash: b101bf92c6a304262b3886a4ce0280f427a4a847
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538467"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578513"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>解决电子数据展示保留错误
 
@@ -36,7 +36,7 @@ ms.locfileid: "52538467"
 - 在进一步更新保留策略之前，检查保留策略是否挂起。 运行以下命令或将其保存到 PowerShell 脚本。
 
     ```powershell
-    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    $status = Get-CaseHoldPolicy -Identity <policyname> -DistributionDetail
     if($status.DistributionStatus -ne "Pending"){
         # policy no longer pending
         Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1
@@ -120,7 +120,7 @@ ms.locfileid: "52538467"
 
 - 检查网站 URL 是否发生了更改。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 "建议的做法"部分中有关为多个用户更新保留策略的指南是系统阻止同时更新保留策略的结果。 这意味着，当更新的保留策略应用于新内容位置且保留策略为挂起状态时，其他内容位置无法添加到保留策略。 以下是一些需要记住的以帮助你缓解此问题的一些内容：
   

@@ -1,6 +1,6 @@
 ---
 title: 概述
-description: 了解 TEst 基础
+description: 了解测试基础
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2c8909215fd0cac0b262199d45eec343074de2e6
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 00399cbfaea79b3e1658988272c1bfb1ecbc2b5e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322510"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567004"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>什么是测试基础Microsoft 365？ 
 
@@ -32,7 +32,7 @@ ms.locfileid: "53322510"
 
 这项新服务将帮助 SV 简化测试工作并提高效率。 Enterprise在协作环境中一起从 SV 和 Microsoft 测试中获益，并更放心地确保他们的应用程序能够正常工作。 
 
-### <a name="advantages-test-base-offers-eenterprises-and-their-sv-partners-include"></a>优势 测试基础提供 Eenterprises 及其 SV 合作伙伴包括： 
+### <a name="advantages-test-base-offers-enterprises-and-their-sv-partners-include"></a>优势 测试基础提供企业及其 SV 合作伙伴包括： 
  
   * 更快推出安全更新，以确保设备安全; 
  
@@ -49,7 +49,7 @@ ms.locfileid: "53322510"
 
 1. **概述** 提供详细的分步指南，了解如何通过自助载入门户上传应用程序。 
 
-2. **快速入门** 部分提供有关压缩文件夹结构的格式以及准备测试脚本时需要知道的信息。
+2. **快速入门** 部分，提供有关压缩文件夹结构的格式以及准备测试脚本时需要知道的信息。
 
 3. **操作方法指南提供有关** 如何使用测试基础推断测试结果的详细大纲。
 

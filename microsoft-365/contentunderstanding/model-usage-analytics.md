@@ -1,8 +1,9 @@
 ---
-title: 文档理解模型使用情况分析
-ms.author: efrene
-author: efrene
+title: Microsoft SharePoint Syntex 中的文档理解模型使用情况分析
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 了解如何将保留标签应用于文档理解模型
-ms.openlocfilehash: 92115d8b1985fa84cd72671442aca18f255355de
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+description: 了解如何查找和使用文档理解模型的使用情况分析。
+ms.openlocfilehash: 5eca389519dbab7038ef774d8f096e61017d0155
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080410"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578537"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>文档理解模型使用情况分析
+# <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的文档理解模型使用情况分析
 
 </br>
 
@@ -28,7 +29,7 @@ ms.locfileid: "50080410"
 </br>
 
 
-Microsoft SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有关如何使用内容中心中已发布的模型的详细信息。 内容中心的<b>模型最近 30 天的运行情况</b>部分包括以下图表和列表中提供的 30 天使用情况分析数据汇总：
+SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有关如何使用内容中心中已发布的模型的详细信息。 内容中心的<b>模型最近 30 天的运行情况</b>部分包括以下图表和列表中提供的 30 天使用情况分析数据汇总：
 
 - 按模型分类
 - 按库分类

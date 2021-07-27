@@ -1,8 +1,9 @@
 ---
-title: 创建提取器时利用术语库分类
-ms.author: efrene
-author: efrene
+title: 在 Microsoft SharePoint Syntex 中创建提取程序时利用术语库分类
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 使用 SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
-ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 使用 Microsoft SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
+ms.openlocfilehash: ccc6b7d268a91d1febcbd760e8be560304c0e0d7
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925340"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578573"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>创建提取器时利用术语库分类
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序时利用术语库分类
 
 </br>
 
@@ -44,7 +45,6 @@ ms.locfileid: "50925340"
 若要确保在模型中创建提取器时托管元数据字段可供选择，需要[将其添加为托管元数据网站列](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)。 添加该网站列后，便可以在为模型创建提取器时选择该字段。
 
    ![合同服务](../media/content-understanding/contract-services.png)</br>
-
 
 将模型应用到文档库之后，将文档上传到库中时，当提取器发现任意同义词值（*Design*、*Graphics* 和 *Topography*）时，*创意服务* 列将显示首选术语（*创意*）。
 

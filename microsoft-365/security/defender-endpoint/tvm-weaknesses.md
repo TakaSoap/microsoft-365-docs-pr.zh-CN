@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8039a06dc58c31158f90d39857ffbeba92138d5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 072118551ec64f0b399e27f16d630e89d30342c7
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933069"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567136"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中漏洞 - 危险和漏洞管理
 
@@ -50,12 +50,12 @@ ms.locfileid: "51933069"
 
 以几种不同方式访问"漏洞"页面：
 
-- 从 **导航菜单中** 的危险和漏洞管理选择"漏洞 ["Microsoft Defender 安全中心](portal-overview.md)
+- 从 **[Microsoft 365 Defender** 门户] 菜单中的"漏洞管理"导航菜单中选择"漏洞 (portal-overview.md) 
 - 全局搜索
 
 ### <a name="navigation-menu"></a>导航菜单
 
-转到"危险和漏洞管理菜单并选择 **"漏洞**"以打开 CVEs 列表。
+转到漏洞 **管理导航菜单** ，然后选择 **"漏洞** "以打开 CVEs 列表。
 
 ### <a name="vulnerabilities-in-global-search"></a>全局搜索中的漏洞
 
@@ -101,7 +101,7 @@ ms.locfileid: "51933069"
 
 使用不受支持的软件的 CES 不会提供公开的设备信息。 通过选择"公开设备"部分中的"不可用"选项，按不受支持的软件进行筛选。
 
- ![公开的设备筛选器。](images/tvm-exposed-devices-filter.png)
+:::image type="content" alt-text="公开的设备筛选器。" source="images/tvm-exposed-devices-filter.png":::
 
 ## <a name="view-common-vulnerabilities-and-exposures-cve-entries-in-other-places"></a>查看其他位置的 CVE (项) 漏洞和曝光
 
@@ -112,7 +112,9 @@ ms.locfileid: "51933069"
     ![具有四列的主要易受攻击的软件卡：软件、漏洞、威胁、公开的设备。](images/tvm-top-vulnerable-software500.png)
 
 2. 选择要调查的软件以转到向下钻取页面。
+
 3. 选择" **发现的漏洞"** 选项卡。
+
 4. 选择要调查的漏洞，了解有关漏洞详细信息的详细信息
 
     ![WindowsServer 2019 向下钻取概述。](images/windows-server-drilldown.png)
@@ -121,15 +123,17 @@ ms.locfileid: "51933069"
 
 在设备页面中查看相关漏洞信息。
 
-1. 转到导航Microsoft Defender 安全中心栏，然后选择设备图标。 将 **打开"设备"** 列表页。
-2. 在 **"设备"列表** 页中，选择要调查的设备名称。
+1. 转到导航Microsoft 365 Defender栏，然后选择设备图标。 将 **打开"设备清单** "页。
+
+2. 在 **"设备清单"** 页中，选择要调查的设备名称。
 
     ![包含要调查的选定设备的设备列表。](images/tvm_machinetoinvestigate.png)
 
 3. 设备页面将打开，并包含要调查的设备的详细信息和响应选项。
+
 4. 选择 **"发现的漏洞"。**
 
-    ![包含详细信息和响应选项的设备页面。](images/tvm-discovered-vulnerabilities.png)
+   :::image type="content" alt-text="包含详细信息和响应选项的设备页面。" source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. 选择要调查的漏洞，以打开包含 CVE 详细信息的飞出面板，例如：漏洞描述、威胁见解和检测逻辑。
 
@@ -139,7 +143,7 @@ ms.locfileid: "51933069"
 
 相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 在其 DNS 组件中具有漏洞。 借助此新功能，我们将仅将此 CVE 附加到 Windows Server 2019 设备，这些设备的 OS 中启用了 DNS 功能。
 
-![检测逻辑示例，列出在设备和 KB 上检测到的软件。](images/tvm-cve-detection-logic.png)
+:::image type="content" alt-text="检测逻辑示例，列出在设备和 KB 上检测到的软件。" source="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

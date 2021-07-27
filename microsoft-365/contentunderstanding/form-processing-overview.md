@@ -1,8 +1,9 @@
 ---
-title: 表单处理概述
-ms.author: efrene
-author: efrene
+title: Microsoft SharePoint Syntex 中的表单处理概述
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,21 +12,21 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 了解 Microsoft SharePoint Syntex 中的表单处理
-ms.openlocfilehash: e3cf8298a2db9383e5b88dde737efc84e75c7f19
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: 了解 Microsoft SharePoint Syntex 中的表单处理。
+ms.openlocfilehash: d6cd129c3e52287a45bec6f91ddf8ecbda2af758
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222253"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578561"
 ---
-# <a name="form-processing-overview"></a>表单处理概述
+# <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的表单处理概述
 
  ![AI 生成器](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builder/overview)表单处理在 SharePoint 文档库中创建模型。
 
-可使用 AI 生成器表单处理创建使用机器学习技术标识和提取结构化或半结构化文档（如表单和发票）中的键值对和表格数据的 AI 模型。
+可使用 AI 生成器表单处理来创建 AI 模型，它能够使用机器学习技术识别和提取结构化或半结构化文档（如表单和发票）中的关键值对和表数据。
 
 组织通常从多种来源（如邮件、传真、电子邮件等）接收大量发票。处理这些文档并手动将其输入到数据库中可能需要花费大量时间。 通过使用 AI 提取文档中的文本、键/值对和表格，表单处理可自动执行此过程。 
 

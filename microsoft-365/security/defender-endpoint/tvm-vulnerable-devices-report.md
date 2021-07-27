@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 139b1ae75ff7fe98591f0053a526e8aec5266a5f
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245476"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567107"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻击的设备报告 - 危险和漏洞管理
 
@@ -39,12 +39,12 @@ ms.locfileid: "52245476"
 
 该报告显示包含易受攻击的设备趋势和当前统计信息的图形和条形图。 目标是了解设备曝光的目的和范围。
 
-通过访问易受攻击Microsoft Defender 安全中心报告中>**报告**
+通过访问易受攻击Microsoft 365 Defender报告门户中的>**报告**
 
 有两列：
 
 - 趋势 (随着时间的推移) 。 可以显示过去 30 天、3 个月、6 个月或自定义日期范围。
-- 今天 (最新) 
+- 状态 (当前信息) 
 
 **筛选器**：你可以按漏洞严重性级别、攻击可用性、漏洞年数、操作系统平台、Windows 10版本或设备组筛选数据。
 
@@ -54,31 +54,31 @@ ms.locfileid: "52245476"
 
 根据在该设备上发现的最严重漏洞，每台设备仅计数一次。
 
-![当前设备漏洞严重性级别的一个图，以及一个显示一段时间级别的图表。](images/tvm-report-severity.png)
+:::image type="content" alt-text="当前设备漏洞严重性级别的一个图，以及一个显示一段时间级别的图表。" source="images/tvm-report-severity.png" lightbox="images/tvm-report-severity.png":::
 
 ## <a name="exploit-availability-graphs"></a>攻击可用性图
 
 根据最高级别的已知攻击，每台设备仅计数一次。
 
-![当前设备攻击可用性的一个图和一个显示一段时间可用性的图形。](images/tvm-report-exploit-availability.png)
+:::image type="content" alt-text="当前设备攻击可用性的一个图和一个显示一段时间可用性的图形。" source="images/tvm-report-exploit-availability.png" lightbox="images/tvm-report-exploit-availability.png":::
 
 ## <a name="vulnerability-age-graphs"></a>漏洞年龄图
 
-每台设备仅在最旧的漏洞发布日期下计算一次。 较旧的漏洞被利用的可能性更大。
+每台设备仅在最旧的漏洞发布日期下计算一次。 较早的漏洞遭到利用的机会较高。
 
-![一张当前设备漏洞年数的图形，一张显示随着时间的年数的图形。](images/tvm-report-age.png)
+:::image type="content" alt-text="一张当前设备漏洞年数的图形，一张显示随着时间的年数的图形。" source="images/tvm-report-age.png" lightbox="images/tvm-report-age.png":::
 
 ## <a name="vulnerable-devices-by-operating-system-platform-graphs"></a>操作系统平台图的易受攻击的设备
 
 因软件漏洞而公开的每个操作系统上的设备数量。
 
-![一张按操作系统平台显示当前易受攻击的设备的图形，以及一张显示操作系统平台随着时间的易受攻击的设备的图形。](images/tvm-report-os.png)
+:::image type="content" alt-text="一张按操作系统平台显示当前易受攻击的设备的图形，以及一张显示操作系统平台随着时间的易受攻击的设备的图形。" source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
 ## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>按版本图Windows 10易受攻击的设备
 
 因易受攻击的应用程序或操作系统Windows 10每个版本上的设备数量。
 
-![按版本显示当前易受攻击Windows 10的一个图，以及一个按版本Windows 10易受攻击的设备的图形。](images/tvm-report-version.png)
+![按版本显示当前易受攻击Windows 10的一个图，以及一个按版本Windows 10易受攻击的设备的图形。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"：：：
 
 ## <a name="related-topics"></a>相关主题
 

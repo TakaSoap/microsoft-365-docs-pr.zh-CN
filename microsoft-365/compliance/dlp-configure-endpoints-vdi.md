@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft 365 终结点数据丢失防护服务。
-ms.openlocfilehash: 64d9bfed3d1d5600b5843c697e894577f83527fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226871"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567316"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
 **适用于：**
 - [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
@@ -33,7 +33,7 @@ ms.locfileid: "53226871"
 
 ## <a name="onboard-vdi-devices"></a>载入 VDI 设备
 
-Microsoft 365终结点数据丢失防护支持非永久性 VDI 会话载入。
+Microsoft 365终结点数据丢失防护支持非永久性虚拟桌面基础结构 (VDI) 会话载入。
 
 > [!NOTE]
 > 若要载入非永久性 VDI 会话，VDI 设备必须位于 Windows 10 1809 或更高版本上。

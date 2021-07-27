@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 80f88b31c1e07d1f40f3f58a1bd21b4a5c58c60b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 281149429329f23efd828227e3773060106f2d34
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290203"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590787"
 ---
 # <a name="batch-update-alerts"></a>批更新通知
 
@@ -29,7 +29,7 @@ ms.locfileid: "53290203"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "53290203"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Alerts.ReadWrite.All | "读取和写入所有警报"
+应用程序 | Alerts.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
@@ -72,7 +72,7 @@ POST /api/alerts/batchUpdate
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
 Authorization | 字符串 | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
@@ -87,8 +87,8 @@ Content-Type | String | application/json. **必需**。
 
 属性 | 类型 | 说明
 :---|:---|:---
-alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
-状态 | 字符串 | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
+alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **必需**
+status | 字符串 | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
 确定 | 字符串 | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
