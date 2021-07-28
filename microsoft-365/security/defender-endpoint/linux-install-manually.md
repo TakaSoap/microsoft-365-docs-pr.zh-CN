@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: aa653b7f40be232c345f21ec00f7fadb60a4af0a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454801"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544645"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -165,6 +165,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
+
     例如，如果选择 *"专业频道* "：
 
     ```bash
@@ -211,12 +212,14 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     # list all repositories
     yum repolist
     ```
+
     ```Output
     ...
     packages-microsoft-com-prod               packages-microsoft-com-prod        316
     packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
     ...
     ```
+
     ```bash
     # install the package from the production repository
     sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
@@ -240,7 +243,9 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
     XX | packages-microsoft-com-prod | microsoft-prod | ...
     ...
+
     ```
+
     ```bash
     sudo zypper install packages-microsoft-com-prod:mdatp
     ```
@@ -256,10 +261,12 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     ```bash
     cat /etc/apt/sources.list.d/*
     ```
+
     ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
     deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
     ```
+
     ```bash
     sudo apt -t bionic install mdatp
     ```
@@ -289,11 +296,11 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-
 
 ## <a name="client-configuration"></a>客户端配置
 
@@ -305,12 +312,10 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     mdatp health --field org_id
     ```
 
-2. 运行 MicrosoftDefenderATPOnboardingLinuxServer.py。 
-   
-    >[!NOTE]
-    >若要运行此命令，你必须 `python` 已安装在设备上。 如果运行的是 RHEL 8.x 或 Ubuntu 20.04 或更高版本，则需要使用 Python 3 而不是 Python。
+2. 运行 MicrosoftDefenderATPOnboardingLinuxServer.py。
 
-
+    > [!NOTE]
+    > 若要运行此命令，你必须 `python` 已安装在设备上。 如果运行的是 RHEL 8.x 或 Ubuntu 20.04 或更高版本，则需要使用 Python 3 而不是 Python。
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -330,9 +335,11 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 
     > [!IMPORTANT]
     > 当产品首次启动时，它将下载最新的反恶意软件定义。 根据您的 Internet 连接，这最多可能需要几分钟。 在此期间，上述命令将返回 的值 `false` 。 可以使用以下命令检查定义更新的状态：
+    >
     > ```bash
     > mdatp health --field definitions_status
     > ```
+    >
     > 请注意，完成初始安装后，可能还需要配置代理。 请参阅 [在 Linux 上为终结点配置静态代理发现：安装后配置](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
 
 5. 运行检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
@@ -357,18 +364,15 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 
 ## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>通过模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
 
-若要测试适用于 Linux EDR的功能，请按照以下步骤在 Linux 服务器上模拟检测并调查这种情况。 
+若要测试适用于 Linux EDR的功能，请按照以下步骤在 Linux 服务器上模拟检测并调查这种情况。
 
-1.  验证已载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。 
+1. 验证已载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
 
-2.  将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
+2. 将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
 
-3.  几分钟后，应在运行中引发Microsoft 365 Defender。
+3. 几分钟后，应在运行中引发Microsoft 365 Defender。
 
-4.  查看警报详细信息、计算机时间线，并执行典型的调查步骤。
-
-
-
+4. 查看警报详细信息、计算机时间线，并执行典型的调查步骤。
 
 ## <a name="installer-script"></a>安装程序脚本
 
@@ -407,26 +411,29 @@ Options:
 
 1. 在 Linux 上卸载 Defender for Endpoint 的"Insiders-Fast channel"版本。
 
-    ``
+    ```bash
     sudo yum remove mdatp
-    ``
+    ```
 
-1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库  ``
+1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库
+
+    ```bash
     sudo yum repolist
-    ``
+    ```
 
     > [!NOTE]
     > 输出应显示"packages-microsoft-com-fast-prod"。
 
-    ``
+    ```bash
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
-    ``
-1. 使用"生产通道"重新部署适用于 Linux 的 MDE。
+    ```
 
+1. 使用"生产通道"重新部署适用于 Linux 的 MDE。
 
 ## <a name="uninstallation"></a>卸载
 
 请参阅 [卸载](linux-resources.md#uninstall) ，了解有关如何在 Linux 上从客户端设备中删除 Defender for Endpoint 的详细信息。
 
 ## <a name="see-also"></a>另请参阅
+
 - [调查代理运行状况问题](health-status.md)

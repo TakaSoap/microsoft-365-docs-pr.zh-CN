@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: a73d40e7569f934580b28976b5278b2a972066aa
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339486"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544597"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 
@@ -64,7 +64,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，选择 **"设置**  >  **高级功能**  >  **预览功能"。**
+1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **高级功能**  >  **预览功能"。**
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
 

@@ -1,5 +1,5 @@
 ---
-title: 预览和测试 Windows 11 Microsoft 托管桌面
+title: 使用 Microsoft 托管桌面预览和测试 Windows 11
 description: 如何获取Windows 11
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
-ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
+ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53461383"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544681"
 ---
-# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>预览和测试 Windows 11 Microsoft 托管桌面
+# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>使用 Microsoft 托管桌面预览和测试 Windows 11
 
  如何注册并参与Windows 11 兼容性测试Microsoft 托管桌面计划。 有关通常Windows 11 Microsoft 托管桌面，请参阅 Windows [11 和 Microsoft 托管桌面。](../intro/win11-overview.md) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53461383"
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>将设备添加到 Windows 11 测试组
 
-首先，将设备添加到为测试和评估 (11 而创建的 (Windows **\[ \] 11** Windows 预发布测试) 组。 此组中设备在可用时Windows 11 内部Microsoft 托管桌面配置，并监视其可靠性问题。
+根据请求，我们将创建 (**Modern Workplace - Windows 11** 预发行测试) 设备组，以测试Windows 11。 此组中设备在可用时Windows 11 版本Microsoft 托管桌面配置，并监视其可靠性问题。
 
 你可以选择任何现有设备或新设备进行 Windows 11 测试，但由于预发布版本中缺陷或兼容性问题的风险增加，不应在此组中注册存储设备。 分配至此组时，将删除以前的设备组分配。
 

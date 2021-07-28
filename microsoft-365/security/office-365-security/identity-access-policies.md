@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e82f18b129963b254bf2120d444ce81e4e53e89d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594001"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544501"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -55,7 +55,7 @@ ms.locfileid: "52594001"
 
 为了给你一些时间来完成这些任务，我们建议按此表中列出的顺序实现基准策略。 但是，可随时实施针对敏感和高度管控级别的保护的 MFA 策略。
 
-|保护级别|策略|详细信息|许可|
+|保护级别|策略|详细信息|授权|
 |---|---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5或Microsoft 365 E3 E5 安全附加设备|
 ||[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-multi-factor)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略非常重要。|Microsoft 365 E3 或 E5|
@@ -99,7 +99,7 @@ ms.locfileid: "52594001"
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>基于登录风险要求 MFA
 
-应在要求用户使用 MFA 之前让用户注册 MFA。 如果你有 Microsoft 365 E5、Microsoft 365 E3 E5 安全加载项、Office 365 EMS E5 或单个 Azure AD 高级版 P2 许可证，你可以将 MFA 注册策略与 Azure AD Identity Protection 一同使用，以要求用户注册 MFA。 先决条件 [工作](identity-access-prerequisites.md) 包括使用 MFA 注册所有用户。
+应在要求用户使用 MFA 之前让用户注册 MFA。 如果你有 Microsoft 365 E5、Microsoft 365 E3 E5 安全加载项、Office 365 EMS E5 或单个 Azure AD Premium P2 许可证，你可以将 MFA 注册策略与 Azure AD Identity Protection 一同使用，以要求用户注册 MFA。 先决条件 [工作](identity-access-prerequisites.md) 包括使用 MFA 注册所有用户。
 
 注册用户后，可以使用新的条件访问策略要求 MFA 进行登录。
 
@@ -125,7 +125,7 @@ ms.locfileid: "52594001"
 
 根据目标保护级别应用风险级别设置。
 
-|保护级别|所需的风险级别值|操作|
+|保护级别|所需的风险级别值|Action|
 |---|---|---|
 |基线|高、中|检查两者。|
 |敏感|高、中、低|检查全部三者。|
@@ -134,7 +134,7 @@ ms.locfileid: "52594001"
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|操作|
+|设置|属性|值|Action|
 |---|---|---|---|
 |授予|**Grant access**||Select|
 |||**需要多重身份验证**|支票|
@@ -165,7 +165,7 @@ ms.locfileid: "52594001"
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|操作|
+|设置|属性|值|Action|
 |---|---|---|---|
 |授予|**阻止访问**||Select|
 ||**需要所有已选控件**||Select|
@@ -187,7 +187,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在" **分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Users|包括|**所有用户**|Select|
 |用户风险|**High**||Select|
@@ -195,7 +195,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在"第二 **个工作分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Access|**允许访问**||Select|
 |||**需要更改密码**|支票|
@@ -288,15 +288,80 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关在 Intune 中创建合规性策略的分步指南，请参阅[](/mem/intune/protect/create-compliance-policy)Intune 文档中的在 Microsoft Intune 创建合规性策略。
 
+### <a name="recommended-settings-for-ios"></a>iOS 的建议设置
+
+iOS/iPadOS 支持多种注册方案，其中两种方案作为此框架的一部分进行介绍：
+
+- [个人拥有的设备的设备](/mem/intune/enrollment/ios-enroll) 注册 – 这些设备为个人所有，并用于工作和个人用途。
+- [公司拥有设备的](/mem/intune/enrollment/device-enrollment-program-enroll-ios) 受监督自动设备注册 – 这些设备归公司所有，与单个用户相关联，仅用于工作而不是个人用途。
+
+iOS/iPadOS 安全配置框架分为几个不同的配置方案，为个人拥有和受监督的设备提供指导。
+
+对于个人拥有的设备：
+
+- 基本安全 (级别 1) – Microsoft 建议此配置作为用户访问工作或学校数据的个人设备的最低安全配置。 这是通过强制执行密码策略、设备锁定特征和禁用某些设备功能 (例如，不受信任的证书) 。
+- 增强的安全性 (级别 2) – Microsoft 建议对用户访问敏感或机密信息的设备进行此配置。 此配置支持数据共享控件。 此配置适用于在设备上访问工作或学校数据大多数移动用户。
+- 高 (级别 3) – Microsoft 建议对特定用户或组使用的设备进行此配置 (这些用户或组处理高度敏感数据，其中未经授权的泄露会导致组织组织发生重大) 。 此配置会增强密码策略，禁用某些设备功能，并强制实施其他数据传输限制。
+
+对于受监督的设备：
+
+- 基本安全 (级别 1) – Microsoft 建议此配置作为用户访问工作或学校数据的受监督设备的最低安全配置。 这是通过强制执行密码策略、设备锁定特征和禁用某些设备功能 (例如，不受信任的证书) 。
+- 增强的安全性 (级别 2) – Microsoft 建议对用户访问敏感或机密信息的设备进行此配置。 此配置支持数据共享控件并阻止访问 USB 设备。 此配置适用于在设备上访问工作或学校数据大多数移动用户。
+- 高 (级别 3) – Microsoft 建议对特定用户或组使用的设备进行此配置 (这些用户或组处理高度敏感数据，其中未经授权的泄露会导致组织组织发生重大) 。 此配置提供了更强大的密码策略，禁用了某些设备功能，强制执行了额外的数据传输限制，并且要求通过 Apple 的批量购买计划安装应用。
+
+使用标识和设备 [访问配置中](microsoft-365-policies-configurations.md)概述的原则，基线和敏感保护层与级别 2 增强的安全设置紧密映射。 高度管控保护层紧密映射到级别 3 高安全设置。
+
+|保护级别  |设备策略 |详细信息  |
+|---------|---------|---------|
+|基线     |增强的安全性 (级别 2)          |级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
+|敏感     |增强的安全性 (级别 2)          |级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
+|高度管控     |高安全性 (级别 3)          |级别 3 中强制执行的策略设置包括为级别 1 和级别 2 建议的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 2 更多的控件和更复杂的配置。         |
+
+若要查看每个配置级别的特定设备合规性和设备限制建议，请查看 [iOS/iPadOS 安全配置框架](/mem/intune/enrollment/ios-ipados-configuration-framework)。
+
+### <a name="recommended-settings-for-android"></a>Android 的推荐设置
+
+Android Enterprise 支持多种注册方案，其中两种方案作为此框架的一部分进行介绍：
+
+- [Android Enterprise](/intune/android-work-profile-enroll)工作配置文件 - 此注册模型通常用于个人拥有的设备，其中 IT 希望提供工作与个人数据之间的明确分隔边界。 IT 控制的策略可确保工作数据无法传输到个人配置文件中。
+- [Android Enterprise完全托管](/intune/android-fully-managed-enroll)的设备 – 这些设备归公司所有，与单个用户关联，仅用于工作而不是个人用途。
+
+Android Enterprise安全配置框架分为几个不同的配置方案，为工作配置文件和完全管理的方案提供指导。
+
+对于 Android Enterprise工作配置文件设备：
+
+- 工作配置文件基本 (级别 1) – Microsoft 建议此配置作为用户访问工作或学校数据的个人设备的最低安全配置。 此配置引入了密码要求、分隔工作和个人数据，并验证 Android 设备证明。
+- 工作配置文件高安全性 (级别 3) – Microsoft 建议对特定用户或组使用的设备进行此配置，这些用户或组具有独特高风险 (这些用户处理高度敏感数据，其中未经授权的泄露会导致组织) 发生重大重大损失。 此配置引入了移动威胁防护或 Microsoft Defender for Endpoint，设置了最低 Android 版本，引入了更强大的密码策略，并进一步限制工作和个人分离。
+
+对于 Android Enterprise完全托管的设备：
+
+- 完全托管的基本 (级别 1) – Microsoft 建议此配置为企业设备的最低安全配置。 此配置适用于访问工作或学校数据大多数移动用户。 此配置引入了密码要求、设置最低 Android 版本以及某些设备限制。
+- 完全托管的增强 (级别 2) – Microsoft 建议对用户访问敏感或机密信息的设备进行此配置。 此配置提供了更强大的密码策略，并禁用了用户/帐户功能。
+- 完全托管的高安全性 (级别 3) - Microsoft 建议对特定用户或组使用的设备进行此配置，这些用户或组具有独特高风险 (这些用户处理高度敏感数据，其中未经授权的泄露会导致组织) 发生重大重大损失。 此配置增加了最低 Android 版本，引入了移动威胁防护或 Microsoft Defender for Endpoint，并强制执行其他设备限制。
+
+根据标识和设备访问配置中概述[](microsoft-365-policies-configurations.md)的原则，基线和敏感保护层与个人拥有的设备的第 1 级基本安全性以及完全托管设备的 2 级增强安全设置紧密映射。 高度管控保护层紧密映射到级别 3 高安全设置。
+
+对于 Android Enterprise工作配置文件设备：
+
+|保护级别  |设备策略 |详细信息  |
+|---------|---------|---------|
+|基线     |工作配置文件：基本安全 (级别 1)       |不适用         |
+|敏感     |工作配置文件：基本安全 (级别 1)          |不适用         |
+|基线     |完全托管：增强的安全性 (级别 2)        |级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
+|敏感     |完全托管：增强的安全性 (级别 2)          |级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
+|高度管控     |高安全性 (级别 3)          |级别 3 中强制执行的策略设置包括为级别 1 和级别 2 建议的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 2 更多的控件和更复杂的配置。         |
+
+若要查看每个配置级别的特定设备合规性和设备限制建议，请查看[Android Enterprise安全配置框架](/mem/intune/enrollment/android-configuration-framework)。
+
 ### <a name="recommended-settings-for-windows-10-and-later"></a>建议用于 Windows 10 及更高版本的设置
 
 对于运行策略创建过程的步骤 **2 Windows 10** 合规性设置中配置的运行以下设置的 PC，建议使用以下设置。
 
 有关 **设备运行状况> Windows证明服务评估规则，** 请参阅此表。
 
-|属性|值|操作|
+|属性|值|Action|
 |---|---|---|
-|需要BitLocker|需要|Select|
+|需要 BitLocker|需要|Select|
 |要求在设备上启用安全启动|需要|Select|
 |需要代码完整性|需要|Select|
 |
@@ -307,7 +372,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **系统安全性**，请参阅此表。
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Password|需要密码才能解锁移动设备|需要|Select|
 ||简单密码|阻止|Select|
@@ -329,7 +394,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Microsoft Defender for Endpoint 规则Microsoft Endpoint Manager管理中心|[要求设备处于计算机风险分数或处于计算机风险分数之下](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|Select|
 |
@@ -349,9 +414,9 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 6. 在 **分配** 下，选择 **云应用或操作**。
 
-7. 对于 **"包含**"，选择" **选择>选择**"，然后从"云应用"列表中选择 **所需的** 应用。 例如，选择"Exchange Online"。 完成后 **选择选择** 。
+7. 对于 **"包含**"，选择" **选择>选择**"，然后从"云应用"列表中选择 **所需的** 应用。 例如，选择"Office 365"。 完成后 **选择选择** 。
 
-8. 若要要求兼容电脑 (但不符合手机和平板电脑) ，在"分配"下，选择"设备平台>**条件"。** 为 **"配置"****选择"是"。** 选择 **"选择设备平台****"，Windows****和 macOS"，** 然后选择"完成 **"。**
+8. 若要要求兼容电脑 (但不符合手机和平板电脑) ，在"分配"下，选择"设备平台>**条件"。** 为 **"配置"****选择"是"。** 选择 **"选择设备平台"，****选择"是**"，选择 **"任何设备**"，然后在"排除"下选择 **"iOS** 和 **Android"，** 然后选择"完成 **"。**
 
 9. 在 **"访问控制"下**，选择"**授予"。**
 
@@ -375,7 +440,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 6. 在 **分配** 下，选择 **云应用或操作**。
 
-7. 对于 **"包含**"，选择" **选择>选择**"，然后从"云应用"列表中选择 **所需的** 应用。 例如，选择"Exchange Online"。 完成后 **选择选择** 。
+7. 对于 **"包含**"，选择" **选择>选择**"，然后从"云应用"列表中选择 **所需的** 应用。 例如，选择"Office 365"。 完成后 **选择选择** 。
 
 8. 在 **"访问控制"下**，选择"**授予"。**
 
@@ -386,7 +451,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 > [!NOTE]
 > 在启用此策略之前，请确保你的设备合规。 否则，您可能被锁定，在用户帐户已添加到条件访问排除组之前，将无法更改此策略。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 3：来宾和外部用户策略](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 

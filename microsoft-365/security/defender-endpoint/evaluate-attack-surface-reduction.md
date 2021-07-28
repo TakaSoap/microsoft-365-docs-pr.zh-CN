@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 918523cdf941ae5f5e79f39fff6bcc2214a3e8ca
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: a4de3325e8c9ecdf2982f289f1da0488d4ddf6d3
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595950"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542761"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
 
@@ -30,7 +30,7 @@ ms.locfileid: "53595950"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
+>想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 攻击面减少规则有助于防止恶意软件通常用来危害设备或网络的操作。 攻击面减少规则有助于关闭恶意软件和勒索软件使用的许多常见入口点。
 

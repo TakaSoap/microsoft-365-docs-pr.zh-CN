@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7497d21cc85449ee2141ac1362f82d092f150b4b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683544"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544705"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -99,7 +99,7 @@ ms.locfileid: "52683544"
 
     单击“**下一步**”。
 
-5. 在 **创建内容中心** 页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。
+5. 在 **创建内容中心** 页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。 如果之前从 SharePoint 管理中心创建了内容中心，则该信息将显示在此处，你只需选择“**下一步**”。
 
     1. 对于 **站点名称**，键入要为内容中心站点提供的名称。
     

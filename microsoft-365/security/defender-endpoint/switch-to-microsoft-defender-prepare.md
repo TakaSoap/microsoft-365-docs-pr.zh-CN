@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 56a63c09690e28f0ca4990dcbcbcb6cfff7d5eef
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929499"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544537"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切换到 Microsoft Defender for Endpoint - 阶段 1：准备
 
@@ -46,7 +46,7 @@ ms.locfileid: "52929499"
 
 1. [在组织设备上获取和部署更新](#get-and-deploy-updates-across-your-organizations-devices)
 2. [获取 Defender for Endpoint](#get-microsoft-defender-for-endpoint)。
-3. [授予对 Microsoft Defender 安全中心 的访问权限](#grant-access-to-the-microsoft-defender-security-center)。
+3. [授予对 Microsoft 365 Defender 门户的访问权限](#grant-access-to-the-microsoft-365-defender-portal)。
 4. [配置设备代理和 Internet 连接设置](#configure-device-proxy-and-internet-connectivity-settings)。
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>在组织设备上获取和部署更新
@@ -57,7 +57,7 @@ ms.locfileid: "52929499"
 
 使现有终结点保护解决方案保持最新，并确保组织设备具有最新的安全更新。 
 
-需要帮助? 请参阅解决方案提供商的文档。
+需要帮助？ 请参阅解决方案提供商的文档。
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>确保组织的设备是最新的
 
@@ -83,16 +83,16 @@ ms.locfileid: "52929499"
 
 4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
  
-此时，您已准备好向将使用安全管理策略的安全管理员和安全 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。 
+此时，您已准备好向将使用 Microsoft 365 Defender 门户策略的安全管理员和安全 [https://security.microsoft.com](https://security.microsoft.com) () 。 
 
 > [!NOTE]
-> The Microsoft Defender 安全中心 is sometimesreferred to the Defender for Endpoint portal， and can be accessed at [https://securitycenter.windows.com](https://securitycenter.windows.com) . 
+> 该Microsoft 365 Defender门户有时称为 Defender for Endpoint 门户，可在 上访问 [https://security.microsoft.com](https://security.microsoft.com) 。 
 
-## <a name="grant-access-to-the-microsoft-defender-security-center"></a>向用户授予Microsoft Defender 安全中心
+## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>授予对 Microsoft 365 Defender 门户的访问权限
 
-此 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 访问和配置 Defender for Endpoint 的特性和功能。 若要了解更多信息，请参阅[Microsoft Defender 安全中心 概述](use.md)。
+Microsoft 365 Defender门户 () 访问和配置 [https://security.microsoft.com](https://security.microsoft.com) Defender for Endpoint 的特性和功能。 若要了解更多信息，请参阅门户[Microsoft 365 Defender概述](use.md)。
 
-可以使用 RBAC Microsoft Defender 安全中心基本权限或基于角色的访问控制来授予 (权限) 。 我们建议使用 RBAC，以便可以更精细地控制权限。
+可以使用 RBAC Microsoft 365 Defender基本权限或基于角色的访问控制来授予对 (门户) 。 我们建议使用 RBAC，以便可以更精细地控制权限。
 
 1. 为安全管理员和安全操作员规划角色和权限。 请参阅 [基于角色的访问控制](prepare-deployment.md#role-based-access-control)。
 
@@ -104,7 +104,7 @@ ms.locfileid: "52929499"
     - [高级组策略管理](/microsoft-desktop-optimization-pack/agpm)
     - [Windows管理中心](/windows-server/manage/windows-admin-center/overview)
 
-3. 向用户授予Microsoft Defender 安全中心。  (需要帮助？ 请参阅 [使用 RBAC 管理门户](rbac.md)) 。
+3. 授予对网站Microsoft 365 Defender的访问权限。  (需要帮助？ 请参阅 [使用 RBAC 管理门户](rbac.md)) 。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -113,13 +113,13 @@ ms.locfileid: "52929499"
 | 功能  | 操作系统 | 资源 |
 |:--|:--|:--|
 | [终结点检测和响应](overview-endpoint-detection-response.md) (EDR)  | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803)  | [配置计算机代理和 Internet 连接设置](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
 | EDR  | macOS：<p>11.3.1 (Big Sur) <p>10.15 (加泰罗尼亚语) <p>10.14 (Mojave)    | [macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)  |
 | [Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
 | 防病毒 | macOS：<p>11.3.1 (Big Sur) <p>10.15 (加泰罗尼亚语) <p>10.14 (Mojave)  | [macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections) |
 | 防病毒 | Linux： <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Linux 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-linux.md#network-connections) |
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 **恭喜！** 你已完成切换到 **Defender** for [Endpoint 的"准备"阶段](switch-to-microsoft-defender-migration.md#the-migration-process)！
 

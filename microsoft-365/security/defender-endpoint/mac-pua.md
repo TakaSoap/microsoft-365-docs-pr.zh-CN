@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d32dd96cd506ebf1752e48d2b7c66208b1abc11
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2cbe41bc06362a14b5e657e6385ec87684871340
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934533"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544609"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
@@ -53,8 +53,8 @@ macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。
 可通过以下方法之一配置 macOS 上适用于终结点的 Microsoft Defender 中的 PUA 保护：
 
 - **关闭**：PUA 保护已禁用。
-- **审核**：PUA 文件在产品日志中报告，但不在Microsoft Defender 安全中心。 不会向用户显示任何通知，产品不会采取任何操作。
-- **Block**：PUA 文件在产品日志中和产品日志中Microsoft Defender 安全中心。 用户会收到通知，产品会采取操作。
+- **审核**：PUA 文件在产品日志中报告，但不在Microsoft 365 Defender中。 不会向用户显示任何通知，产品不会采取任何操作。
+- **阻止**：PUA 文件在产品日志和发布门户中Microsoft 365 Defender报告。 用户会收到通知，产品会采取操作。
 
 >[!WARNING]
 >默认情况下，PUA 保护在 **审核模式下配置** 。

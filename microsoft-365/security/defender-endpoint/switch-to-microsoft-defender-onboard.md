@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 8b0065b2d73dd0051c3230e292265676d05498d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289507"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544813"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切换到 Microsoft Defender for Endpoint - 阶段 3：载入
 
@@ -52,13 +52,13 @@ ms.locfileid: "53289507"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>将设备载入到 Microsoft Defender for Endpoint
 
-1. 转到 [https://securitycenter.windows.com](https://securitycenter.windows.com) "Microsoft Defender 安全中心 () 并登录。
+1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
-2. 选择 **设置**  >  **设备管理**  >  **载入"。** 
+2. 选择 **设置**  >  **设备管理**  >  **"下** (**终结点载入**) 。 
 
 3. 在 **"选择操作系统以开始载入过程"列表中** ，选择操作系统。 
 
-4. 在 **"部署方法**"下，选择一个选项。 按照链接和提示载入组织的设备。 需要帮助? 请参阅 [本文 (](#onboarding-methods) 载入方法) 。
+4. 在 **"部署方法**"下，选择一个选项。 按照链接和提示载入组织的设备。 需要帮助？ 请参阅 [本文 (](#onboarding-methods) 载入方法) 。
 
 ### <a name="onboarding-methods"></a>载入方法
  
@@ -69,7 +69,7 @@ ms.locfileid: "53289507"
 | Windows 10     | [组策略](configure-endpoints-gp.md)<p>[配置管理器](configure-endpoints-sccm.md)<p>[Intune (移动设备) ](configure-endpoints-mdm.md)<p>[本地脚本](configure-endpoints-script.md) <p>**注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。         |
 | Windows 8.1 企业版 <p>Windows 8.1 专业版 <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。        |
 | WindowsServer 2019 及更高版本 <p>WindowsServer 2019 核心版本 <p>Windows服务器版本 1803 和更高版本 | [本地脚本](configure-endpoints-script.md) <p>[组策略](configure-endpoints-gp.md) <p>[配置管理器](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[用于非永久性设备的 VDI 载入脚本](configure-endpoints-vdi.md) <p>**注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。    |
-| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft Defender 安全中心](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
+| Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft 365 Defender 门户](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
 | macOS：<p>11.3.1 (Big Sur)  <p>10.15 (加泰罗尼亚语) <p>10.14 (Mojave)  | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
 | iOS | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
 | Linux：<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
@@ -143,7 +143,7 @@ ms.locfileid: "53289507"
 
 现在，你已载入 Defender for Endpoint，并且已卸载以前的非 Microsoft 解决方案，下一步是确保 Defender for Endpoint 正常工作。 为此，一个好方法就是访问 Defender for Endpoint 演示方案站点 [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) () 。 尝试该页面上的一个或多个演示方案，包括至少以下方案：
 
-- 云传递保护
+- 云端保护
 - PUA (可能不需要) 
 - 网络保护 (NP) 
 
@@ -151,5 +151,5 @@ ms.locfileid: "53289507"
 
 **恭喜！** 你已完成到 [Defender for Endpoint 的迁移](switch-to-microsoft-defender-migration.md#the-migration-process)！ 
 
-- [访问安全操作仪表板](security-operations-dashboard.md) [https://securitycenter.windows.com](https://securitycenter.windows.com) ，Microsoft Defender 安全中心 () 。 
+- [访问安全操作仪表板，Microsoft 365 Defender](security-operations-dashboard.md)门户 [https://security.microsoft.com](https://security.microsoft.com) () 。 
 - [管理适用于终结点的 Defender，迁移后](manage-atp-post-migration.md)。

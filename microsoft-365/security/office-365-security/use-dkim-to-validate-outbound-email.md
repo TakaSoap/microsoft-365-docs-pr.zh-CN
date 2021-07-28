@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9aa67d7875bb7f81c6569b56704d221b57378962
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: b5e852e26d1fc336a52255ea8fc7a90ab384c64c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108495"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544477"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -113,7 +113,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 > [!TIP]
 > 这一新的 2048 位密钥将在 RotateOnDate 生效，在过渡期间则使用 1024 位密钥发送电子邮件。 四天后，可以使用 2048 位秘钥再次进行测试（即一旦轮换对第二个选择器生效）。
 
-若要轮换到第二个选择器，可以采用下列方法：a) 让 Microsoft 365 服务轮换选择器，并在未来 6 个月内升级到 2048 位，或 b) 在确认使用 2048 位 4 天后，使用上面列出的相应 cmdlet 手动轮换第二个选择器密钥。
+如果要旋转到第二个选择器，请在四天后确认 是否正在使用 2048 位，然后通过使用上面列出的适当 cmdlet 手动轮换第二个选择器键。
 
 有关详细语法和参数信息，请参阅以下文章： [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)、 [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)和 [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig)。
 
@@ -202,11 +202,13 @@ TTL:                3600
 
 3. 在 **DKIM** 页面，通过点击名称选择域。
 
-4. 在出现的详细信息中，更改 **使用 DKIM 签名为该域签名消息** 设置为 **已启用** (![切换到](../../media/scc-toggle-on.png))
+4. 在出现的详细信息浮出控件中，将 **使用 DKIM 签名为该域签名消息** 设置更改为 **已启用**（![切换打开](../../media/scc-toggle-on.png)）
 
    完成后，请点击 **轮换 DKIM 密钥**。
 
 5. 对每个自定义域重复这些步骤。
+
+6. 如果是首次配置 DKIM，并且看到错误“没有为此域保存 DKIM 密钥”，则必须使用 Windows PowerShell 启用 DKIM 签名，如下一步中所述。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 为自定义域启用 DKIM 签名
 
@@ -259,7 +261,7 @@ TTL:                3600
 ## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>为自定义域禁用 DKIM 签名策略
 <a name="DisableDKIMSigningPolicy"> </a>
 
-禁用签名策略不会完全禁用 DKIM。 一段时间后，Microsoft 365 会自动为你的域应用默认策略。 有关详细信息，请参阅 [DKIM 和 Microsoft 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)。
+禁用签名策略不会完全禁用 DKIM。 一段时间后，如果默认策略仍处于启用状态，则 Microsoft 365 将自动为域应用默认策略。 如果希望完全禁用 DKIM，则需要同时在自定义域和默认域上禁用 DKIM。 有关详细信息，请参阅 [DKIM 和 Microsoft 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)。
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>使用 Windows PowerShell 禁用 DKIM 签名策略
 
@@ -294,9 +296,9 @@ TTL:                3600
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>DKIM 和 Microsoft 365 的默认行为
 <a name="DefaultDKIMbehavior"> </a>
 
-如果不启用 DKIM，Microsoft 365 将自动为你的默认域创建 1024 位 DKIM 公钥，以及我们在数据中心内部存储的关联私钥。默认情况下，Microsoft 365 为没有合适策略的域使用默认签名配置。也就是说，如果没有设置 DKIM，Microsoft 365 会使用它的默认策略和它创建的密钥来为你的域启用 DKIM。
+如果不启用 DKIM，Microsoft 365 将自动为你的 Microsoft 联机电子邮件路由地址 (MOERA)/初始域创建 1024 位 DKIM 公钥，以及我们在数据中心内部存储的关联私钥。默认情况下，Microsoft 365 为没有合适策略的域使用默认签名配置。这意味着，如果你自己没有设置 DKIM，Microsoft 365 将使用默认策略和所创建的密钥来为你的域启用 DKIM。
 
-此外，如果你在启用 DKIM 签名后禁用它，一段时间后，Microsoft 365 会自动为你的域应用默认策略。
+此外，如果启用后在自定义域上禁用 DKIM 签名，则在一段时间后，Microsoft 365 将自动为自定义域应用 MOERA/初始域策略。
 
 在以下示例中，假定 fabrikam.com 的 DKIM 已由 Microsoft 365（而不是域管理员）启用。这表明 DNS 中没有所需的 CNAME。来自此域的电子邮件的 DKIM 签名如下所示：
 

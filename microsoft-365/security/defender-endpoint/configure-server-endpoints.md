@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: c318f063814d9b31e6d07c3bc6c7feea503efe2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415607"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544838"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -65,10 +65,10 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 
 通常，您需要执行以下步骤：
 
-1. 满足开始之前部分 **中列出的载入** 要求。
-2. 从门户打开Microsoft 365 Defender监控。
-3. 安装和配置服务器的 MMA，以将传感器数据报告给 Defender for Endpoint。
-4. 配置和更新System Center Endpoint Protection客户端。
+  1. 满足开始之前部分 **中列出的载入** 要求。
+  2. 从服务器启用Microsoft 365 Defender。
+  3. 安装和配置服务器的 MMA，以将传感器数据报告给 Defender for Endpoint。
+  4. 配置和更新System Center Endpoint Protection客户端。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证它是否正确载入到服务。 有关详细信息，请参阅对新载入的 Defender 终结点终结点运行检测 [测试](run-detection-test.md)。
@@ -121,7 +121,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>选项 2：Windows Azure 安全中心载入服务器
 
-1. 在"Microsoft 365 Defender"导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
+在"Microsoft 365 Defender"导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
 2. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统。
 
@@ -200,7 +200,8 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的Window
     > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展，以支持[Windows Server 2019 和 Windows Virtual Desktop (WVD) 。 ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows Azure Defender 监视的服务器也将在 Defender for Endpoint 中可用 - Azure Defender 无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。  此外，适用于终结点的 Defender 警报将在 Azure Defender 控制台中提供。
-- 服务器调查 - Azure Defender 客户可以访问Microsoft 365 Defender门户来执行详细调查，以发现潜在泄露的范围。
+
+- 服务器调查 - Azure Defender 客户可以访问Microsoft 365 Defender执行详细调查，以发现潜在泄露的范围。
 
 > [!IMPORTANT]
 > - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲用户和英国用户创建 Defender) 。<br>

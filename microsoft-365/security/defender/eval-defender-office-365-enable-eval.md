@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: c0736b93c314c3086f8a52477622c6bcfa4096a0
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: eebf6b6a07ed051a59ce9563497be25367ad3878
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457696"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544513"
 ---
 # <a name="enable-the-evaluation-environment"></a>启用评估环境
 
@@ -37,7 +37,6 @@ ms.locfileid: "53457696"
 本文是设置 Microsoft Defender for Office 365 评估环境过程中的第 2 步（第[3](eval-defender-office-365-overview.md) Office 365）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-office-365-overview.md)。
 
 使用以下步骤启用 Microsoft Defender for Office 365。
-
 
 ![在 Microsoft Defender 评估Office 365启用 Microsoft Defender for Office 365的步骤](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
@@ -54,20 +53,20 @@ ms.locfileid: "53457696"
 1. 导航到管理门户。
 2. 从快速启动中选择&quot;购买服务&quot;。
 
-:::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;单击导航窗格上的&quot;购买服务&quot;Office 365。&quot;:::
+   :::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;单击导航窗格上的&quot;购买服务&quot;Office 365。&quot;:::
 
-3.  向下滚动到&quot;Add-On&quot;部分 (或搜索&quot;Defender") 找到 Microsoft Defender for Office 365 计划。
-4.  单击要评估的计划旁边的"详细信息"。
+3. 向下滚动到&quot;Add-On&quot;部分 (或搜索&quot;Defender") 找到 Microsoft Defender for Office 365 计划。
+4. 单击要评估的计划旁边的"详细信息"。
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="单击&quot;详细信息&quot;按钮，下一步。":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="单击&quot;详细信息&quot;按钮，下一步。":::
 
 5. 单击" *开始免费试用"* 链接。
 
-:::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击此面板上的&quot;开始免费试用 *超链接*&quot;。":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击此面板上的&quot;开始免费试用 *超链接*&quot;。":::
 
 6. 确认请求并单击"立即 *尝试"* 按钮。
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="现在，单击&quot;立即尝试 *&quot;按钮*。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="现在，单击&quot;立即尝试 *&quot;按钮*。":::
 
 ## <a name="step-2-audit-and-verify-the-public-mx-record"></a>步骤 2：审核和验证公共 MX 记录
 
@@ -101,33 +100,34 @@ ms.locfileid: "53457696"
 1. 使用有权访问租户门户的帐户登录到Microsoft 365 Defender门户。
 2. 选择是否要将 Microsoft 365 Defender 门户作为 Microsoft Defender 管理的默认界面Office 365推荐 (Microsoft Defender) 。
 
-:::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="单击&quot;打开设置&quot;按钮以使用集中式和改进Microsoft 365 Defender门户进行管理。":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="单击&quot;打开设置&quot;按钮以使用集中式和改进Microsoft 365 Defender门户进行管理。":::
 
 3. From the navigation menu， select **Policies & Rules** under Email & *Collaboration*.
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="下面是指向策略&规则的电子邮件协作&图片。单击该按钮！":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="下面是指向策略&规则的电子邮件协作&图片。单击该按钮！":::
 
 4. 在策略策略 *&仪表板上* ，单击威胁 **策略**。
 
-:::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="策略策略策略&仪表板的图片和指向威胁策略的箭头。单击下一步！":::
+   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="策略策略策略&仪表板的图片和指向威胁策略的箭头。单击下一步！":::
 
 5. 向下滚动到 *"其他策略"，* 然后选择"**评估 Defender Office 365** 磁贴。
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="Eval Defender for Office 365磁贴显示它是跨电子邮件和协作矢量进行 30 &试用版。单击浏览。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="Eval Defender for Office 365磁贴显示它是跨电子邮件和协作矢量进行 30 &试用版。单击浏览。":::
 
 6. 现在，选择是直接将外部电子邮件路由Exchange Online路由到第三方网关还是第三方网关或服务，然后单击"下一步"。
 
-:::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365将评估发送到你的邮箱Exchange Online邮件。提供现在如何路由邮件的详细信息，包括路由邮件的出站连接器的名称。如果您仅Exchange Online Protection (EOP) 您将没有连接器。选择我使用第三方或本地提供商之一，或者我仅使用 EOP。":::
+   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365将评估发送到你的邮箱Exchange Online邮件。提供现在如何路由邮件的详细信息，包括路由邮件的出站连接器的名称。如果您仅Exchange Online Protection (EOP) 您将没有连接器。选择我使用第三方或本地提供商之一，或者我仅使用 EOP。":::
 
 7. 如果使用第三方网关，请从下拉列表中选择供应商名称以及与该解决方案关联的入站连接器。 列出答案后，单击"下一步"。
 
-:::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="在此对话框中，选择组织使用的第三方供应商服务，或选择&quot;*其他*&quot;。下一个对话框中，选择入站连接器。然后单击&quot;下一步&quot;。":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="在此对话框中，选择组织使用的第三方供应商服务，或选择&quot;*其他*&quot;。下一个对话框中，选择入站连接器。然后单击&quot;下一步&quot;。":::
 
 8. 查看设置并单击"创建 **评估"** 按钮。
 
-|  |  |
-|---------|---------|
-|  :::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="此窗格有一个下拉列表，用于查看你的设置。如果需要，它还具有&quot;编辑路由类型&quot;的可单击链接。准备好后，单击大蓝色&quot;创建评估&quot;按钮。":::   |   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="现在设置已完成。此页面上的蓝色按钮显示&quot;转到评估&quot;。":::      |
+   |活动前|活动后|
+   |:---:|:---:|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="此窗格有一个下拉列表，用于查看你的设置。如果需要，它还具有&quot;编辑路由类型&quot;的可单击链接。准备好后，单击大蓝色&quot;创建评估&quot;按钮。":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="现在设置已完成。此页面上的蓝色按钮显示&quot;转到评估&quot;。":::|
+   |
 
 ## <a name="next-steps"></a>后续步骤
 

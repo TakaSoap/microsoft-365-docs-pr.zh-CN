@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (中的欺骗智能) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f2e1b59b1140b4ee5b187329dac51557ef4df87
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: daec0fe3a667aa92e9c137cdc7e612b6b11fb344
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314376"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544489"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺骗智能见解
 
@@ -71,7 +71,7 @@ ms.locfileid: "53314376"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到" **防钓鱼"页面** ，请使用 <https://security.microsoft.com/antiphishing> 。 若要直接转到欺骗 **智能见解** 页面，请使用 <https://security.microsoft.com/spoofintelligence> 。
+- 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到 **租户允许****/** 阻止列表页面上的欺骗选项卡，请使用 <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> 。 若要直接转到欺骗 **智能见解** 页面，请使用 <https://security.microsoft.com/spoofintelligence> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -82,6 +82,7 @@ ms.locfileid: "53314376"
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
+  >
   > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
@@ -142,7 +143,7 @@ ms.locfileid: "53314376"
 - 需要执行哪些工作。
 - 包含主要欺骗智能页面中大部分相同信息的域摘要。
 - WhoIs 有关发件人的数据。
-- 一个链接，用于打开[威胁](threat-explorer.md)资源管理器以查看有关 Microsoft Defender for (的发件人的其他Office 365) 。
+- 一个链接，用于打开[威胁](threat-explorer.md)资源管理器，以查看在 Microsoft  Defender 中查看钓鱼邮件 for \>  Office 365 下有关发件人的其他Office 365。
 - 我们在租户中看到的来自同一发件人的类似邮件。
 
 ### <a name="about-allowed-spoofed-senders"></a>关于允许的欺骗发件人
@@ -158,7 +159,7 @@ ms.locfileid: "53314376"
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>在 PowerShell 或独立 EOP PowerShell Exchange Online欺骗智能见解
 
-在 PowerShell 中，使用 **Get-SpoofIntelligenceInsight** cmdlet 查看欺骗智能检测到的允许和阻止的欺骗发件人。  若要手动允许或阻止欺骗的发件人，你需要使用 **New-TenantAllowBlockListSpoofItems** cmdlet。 有关详细信息，请参阅使用 [PowerShell 配置租户允许/阻止列表](tenant-allow-block-list.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list)。
+在 PowerShell 中，使用 **Get-SpoofIntelligenceInsight** cmdlet 查看欺骗智能检测到的允许和阻止的欺骗发件人。  若要手动允许或阻止欺骗的发件人，你需要使用 **New-TenantAllowBlockListSpoofItems** cmdlet。 有关详细信息，请参阅使用 PowerShell 管理租户允许/阻止列表的欺骗 [性发件人条目](tenant-allow-block-list.md)。
 
 若要查看欺骗智能见解中的信息，请运行以下命令：
 

@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c554f7bcedbdb64118639f5a455fd6f6e55daaa6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6f8e8ed59c38c00c2158292b343d5ce347ebf297
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457642"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544729"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
@@ -44,7 +44,7 @@ ms.locfileid: "53457642"
 | [管理事件](#manage-incidents) | 修改事件属性以确保正确分配、添加标记和注释以及解决事件。 |
 | [自动调查和响应](#examine-automated-investigation-and-response-with-the-action-center) | AIR (自动调查和) 功能，可帮助安全运营团队更有效地应对威胁。 操作中心是事件和警报任务（如批准挂起的修正操作）的"单窗格"体验。 |
 | [高级搜寻](#advanced-hunting) | 基于查询的威胁搜寻工具，可让你主动检查网络中事件并查找威胁指示器和实体。 在调查和修正事件期间，你还使用高级搜寻。 |
-||||
+
 
 ## <a name="prioritize-incidents"></a>确定事件优先级
 
@@ -131,7 +131,10 @@ ms.locfileid: "53457642"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 
-如果可选的无文件 [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) 攻击模拟是已到达凭据访问阶段的真实攻击，可以在调查的任何时间点使用高级搜寻，使用已生成的警报和受影响的实体中已了解的内容主动搜索网络的事件和记录。 例如，可以查询过去 30 天内与外部 IP 地址的任何连接。
+如果可选的无文件 [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) 攻击模拟是已到达凭据访问阶段的真实攻击，可以在调查的任何时间点使用高级搜寻，使用已生成的警报和受影响的实体中已了解的内容主动搜索网络的事件和记录。 
+
+例如，根据用户和 IP 地址重新重用[ (SMB) ](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity)警报中的信息，可以使用表查找所有 SMB 会话枚举事件，或使用表在 Microsoft Defender for Identity 数据的各种其他协议中查找更多发现活动。 `IdentityDirectoryEvents` `IdentityQueryEvents`
+
 
 ### <a name="hunting-environment-requirements"></a>搜寻环境要求
 

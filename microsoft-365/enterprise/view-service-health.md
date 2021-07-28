@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 先查看 Microsoft 365 服务的运行状况，然后再致电支持人员，查看活动服务是否中断。
-ms.openlocfilehash: fd54e888ffa1522e43c5e798ada855f9ca9f7785
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 2b856b7851f569324d1cccabb6b2da2d098b2fbe
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596250"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543445"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -102,7 +102,7 @@ ms.locfileid: "53596250"
 
 ### <a name="translate-service-health-details"></a>翻译服务运行状况详细信息
 
-我们使用机器翻译自动以首选语言显示信息。 有关如何设置语言的详细信息，请阅读 [服务运行状况仪表板的语言翻译](lang-service-health.md)。
+我们使用机器翻译自动以首选语言显示信息。 有关如何设置语言的详细信息，请阅读[消息中心帖子的语言翻译](/microsoft-365/admin/manage/language-translation-for-message-center-posts)。
 
 ### <a name="definitions"></a>定义
 

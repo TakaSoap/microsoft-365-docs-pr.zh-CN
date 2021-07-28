@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: f1b695ecd156fd8a26ee7a5ca04bb0e76c77f4b8
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 6c02632c2f953b4a4ce94bc434ce26a1798a8707
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464041"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544717"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -129,7 +129,7 @@ ms.locfileid: "53464041"
 
 ### <a name="using-network-upload-to-import-pst-files"></a>使用网络上传导入 PST 文件
 
- **在 Office 365 导入服务中创建导入作业需要哪些权限？**
+#### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-network-upload"></a>在 Office 365 导入服务中使用网络上传创建导入作业需要哪些权限？
 
 必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
@@ -144,67 +144,67 @@ ms.locfileid: "53464041"
 > [!TIP]
 > 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
 
- **网络上传在哪些地区提供？**
+#### <a name="where-is-network-upload-available"></a>网络上传在哪些地区提供？
 
 目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域中提供。
 
- **使用网络上传导入 PST 文件的定价如何？**
+#### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>What is the pricing for importing PST files by using network upload?
 
 Using network upload to import PST files is free.
 
 这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 管理中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
- **哪个版本的 PST 文件格式支持导入到 Office 365？**
+#### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
 
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅[使用网络上传将 PST 文件导入到 Office 365](./use-network-upload-to-import-pst-files.md) 中的步骤 4。
+There are two versions of the PST file format: ANSI and Unicode. 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅[使用网络上传将 PST 文件导入到 Office 365](./use-network-upload-to-import-pst-files.md) 中的步骤 4。
 
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
 
- **将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？**
+#### <a name="after-i-upload-my-pst-files-to-the-azure-storage-area-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？
 
 当使用网络上传方法导入 PST 文件时，会将文件上传到已命名的 Azure Blob 容器`ingestiondata`。 如果安全与合规中心中的“**导入 PST 页面**”页面上没有正在进行的导入作业，则 Azure 中 `ingestiondata` 容器内的所有 PST 文件都会在安全与合规中心中创建最新导入作业 30 天后被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。
 
 这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
- **将 PST 文件导入到邮箱需要多长时间？**
+#### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-network-upload"></a>使用网络上传将 PST 文件导入邮箱需要多长时间？
 
 这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 将 PST 文件复制到 Azure 存储区域后，PST 文件将以每天大约 24 GB 的速度导入到 Microsoft 365 邮箱<sup>\*</sup>。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
 
 <sup>\*</sup> 不能保证此速率。 服务器工作负载和暂时性的性能问题可能会降低此速率。
 
-如果将不同的 PST 文件导入到不同的目标邮箱，则导入过程将按顺序进行（一次一个），并进行限制。
+如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入同一个邮箱，则将按顺序（一次导入一个）导入这些文件，而非同时导入。
 
- **PST 导入进程如何处理重复的电子邮件项？**
+#### <a name="how-does-the-pst-import-process-handle-duplicate-email-items"></a>PST 导入进程如何处理重复的电子邮件项？
 
 如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
 
- **导入 PST 文件时是否有邮件大小限制？**
+#### <a name="is-there-a-message-size-limit-when-importing-pst-files-using-network-upload"></a>使用网络上传导入 PST 文件时是否有邮件大小限制？
 
 是。 如果 PST 文件包含大于 150 MB 的邮箱项目，导入过程中将跳过且不导入该项目。 不导入大小超过 150 MB 的邮件，因为 Exchange Online 中的邮件大小限制为 150 MB。 有关详细信息，请参阅 [Exchange Online 中的邮件](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
 
- **PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？**
+#### <a name="are-message-properties-such-as-when-the-message-was-sent-or-received-the-list-of-recipients-and-other-properties-preserved-when-pst-files-are-imported-to-a-microsoft-365-mailbox-using-network-upload"></a>使用网络上传将 PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？
 
 是的。导入过程中不会更改原始邮件元数据。
 
- **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
+#### <a name="is-there-a-limit-to-the-number-of-levels-in-a-folder-hierarchy-for-a-pst-file-that-i-want-to-import-to-a-mailbox-using-network-upload"></a>我想要使用网络上传导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？
 
 是的。不能导入包含 300 个或更多级别的嵌套文件夹的 PST 文件。
 
- **是否可以使用网络上传将 PST 文件导入到 Office 365 中的非活动邮箱？**
+#### <a name="can-i-use-network-upload-to-import-pst-files-to-an-inactive-mailbox-in-office-365"></a>Can I use network upload to import PST files to an inactive mailbox in Office 365?
 
-是的，这一功能现已推出。
+Yes, this capability is now available.
 
- **是否可以使用网络上传将 PST 文件导入到 Exchange 混合部署中的联机存档邮箱？**
+#### <a name="can-i-use-network-upload-to-import-pst-files-to-an-online-archive-mailbox-in-an-exchange-hybrid-deployment"></a>Can I use network upload to import PST files to an online archive mailbox in an Exchange hybrid deployment?
 
-是的，这一功能现已推出。 
+Yes, this capability is now available.
 
- **是否可以使用网络上传将 PST 文件导入 Exchange Online 中的公用文件夹？**
+#### <a name="can-i-use-network-upload-to-import-pst-files-to-public-folders-in-exchange-online"></a>是否可以使用网络上传将 PST 文件导入 Exchange Online 中的公用文件夹？
 
 否，无法将 PST 文件导入公用文件夹。
 
 ### <a name="using-drive-shipping-to-import-pst-files"></a>使用驱动器寄送导入 PST 文件
 
- **在 Office 365 导入服务中创建导入作业需要哪些权限？**
+#### <a name="what-permissions-are-required-to-create-import-jobs-in-the-office-365-import-service-using-drive-shipping"></a>在 Office 365 导入服务中使用驱动器传送创建导入作业需要哪些权限？
 
 必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
@@ -219,106 +219,106 @@ Using network upload to import PST files is free.
 > [!TIP]
 > 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
 
- **哪些地区提供驱动器传送服务？**
+#### <a name="where-is-drive-shipping-available"></a>哪些地区提供驱动器传送服务？
 
 当前，美国、加拿大、巴西、英国、欧洲、印度、东亚、东南亚、日本、韩国和澳大利亚已推出驱动器传送服务。不久之后，还会有更多地区提供此服务。
 
 > [!NOTE]
 > 目前，不可在德国和瑞士使用驱动器发运导入 PST 文件。 当这些国家/地区提供驱动器发运功能后，此常见问题解答将更新。
 
- **哪些商业许可协议支持驱动器发运？**
+#### <a name="what-commercial-licensing-agreements-support-drive-shipping"></a>哪些商业许可协议支持驱动器传送？
 
 驱动器传送可通过 Microsoft 企业协议 (EA) 将 PST 文件导入到 Microsoft 365。驱动器传送不可通过 Microsoft 产品和服务协议 (MPSA) 实现。
 
- **使用驱动器传送将 PST 文件导入到 Microsoft 365 的定价如何？**
+#### <a name="what-is-the-pricing-for-using-drive-shipping-to-import-pst-files-to-microsoft-365"></a>使用驱动器传送将 PST 文件导入到 Microsoft 365 的定价如何？
 
 使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的费用为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
 
- **哪类硬盘支持驱动器发运？**
+#### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>哪类硬盘支持驱动器传送？
 
 对于 Office365 导入服务，仅支持使用 2.5 英寸固态硬盘 (SSD) 或者 2.5 或 3.5 英寸 SATA II/III 内部硬盘。可以使用容量最大为 10 TB 的硬盘驱动器。对于导入作业，将仅处理硬盘驱动器上的第一个数据卷。必须使用 NTFS 格式化数据卷。将数据复制到硬盘驱动器上时，可使用 2.5 英寸 SSD 或 2.5 或 3.5 英寸 SATA II/III 连接线将其直接连接，或可使用外部 2.5 英寸 SSD 或 2.5 或 3.5 英寸 SATA II/III USB 适配器在外部连接。
 
 > [!IMPORTANT]
 > Office365 导入服务不支持附带内置 USB 适配器的外部硬盘。此外，不能使用外部硬盘驱动器外壳内的磁盘。请不要运送外部硬盘。
 
- **单个导入作业可以发运多少个硬盘？**
+#### <a name="how-many-hard-drives-can-i-ship-for-a-single-import-job"></a>How many hard drives can I ship for a single import job?
 
-单个导入作业最多可以发运 10 个硬盘。
+You can ship a maximum of 10 hard drives for a single import job.
 
- **传送硬盘后，需要多长时间才能转到 Microsoft 数据中心？**
+#### <a name="after-i-ship-my-hard-drive-how-long-does-it-take-to-get-to-the-microsoft-datacenter"></a>传送硬盘后，需要多长时间才能转到 Microsoft 数据中心？
 
 这取决于几点，例如你与 Microsoft 数据中心之间的距离、使用哪种类型的送货选项来配送硬盘（如隔天送达、两天送达或地面配送）。对于大多数运货商，可使用跟踪编号跟踪配送状态。
 
- **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST 文件上传到 Azure？**
+#### <a name="after-my-hard-drive-arrives-at-the-microsoft-datacenter-how-long-does-it-take-to-upload-my-pst-files-to-azure"></a>硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST 文件上传到 Azure？
 
 Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PST 文件上传到你组织的 Azure 存储位置。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。
 
- **将 PST 文件导入到邮箱需要多长时间？**
+#### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-drive-shipping"></a>使用驱动器传送将 PST 文件导入邮箱需要多长时间？
 
 将 PST 文件上传到 Azure 存储区域后，Microsoft 365 采用安全方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Microsoft 365 邮箱。 如果此速度不能满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Microsoft 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Microsoft 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
 
-如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
+如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入同一个邮箱，则将按顺序（一次导入一个）导入这些文件，而非同时导入。
 
- **Microsoft 将 PST 文件上传到 Azure 后，这些文件在删除前可在 Azure 中保留多长时间？**
+#### <a name="after-microsoft-uploads-my-pst-files-to-azure-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Microsoft 将 PST 文件上传到 Azure 后，这些文件在删除前可在 Azure 中保留多长时间？
 
 在安全与合规中心的“**导入 PST 文件**”页面上创建最新导入作业的 30 天后，将删除组织的 Azure 存储位置（位于名为 `ingestiondata` 的 Blob 容器中）内的所有 PST 文件。
 
 这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
- **哪个版本的 PST 文件格式支持导入到 Microsoft 365？**
+#### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-microsoft-365"></a>哪个版本的 PST 文件格式支持导入到 Microsoft 365？
 
 可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅[使用驱动器传送将组织的 PST 文件导入到 Microsoft 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file) 中的步骤 3。
 
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Microsoft 365。
 
- **导入 PST 文件时是否有邮件大小限制？**
+#### <a name="is-there-a-message-size-limit-when-importing-pst-files-using-drive-shipping"></a>使用驱动器传送导入 PST 文件时是否有邮件大小限制？
 
 是。 如果 PST 文件包含大于 150 MB 的邮箱项目，导入过程中将跳过且不导入该项目。 不导入大小超过 150 MB 的邮件，因为 Exchange Online 中的邮件大小限制为 150 MB。 有关详细信息，请参阅 [Exchange Online 中的邮件](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
 
-  **PST 导入进程如何处理重复的电子邮件项？**
+  **PST 导入进程如何处理重复的电子邮件项？
 
 如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
 
- **PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？**
+#### <a name="are-message-properties-such-as-when-the-message-was-sent-or-received-the-list-of-recipients-and-other-properties-preserved-when-pst-files-are-imported-to-a-microsoft-365-mailbox-using-drive-shipping"></a>使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？
 
 是的。导入过程中不会更改原始邮件的元数据
 
- **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
+#### <a name="is-there-a-limit-to-the-number-of-levels-in-a-folder-hierarchy-for-a-pst-file-that-i-want-to-import-to-a-mailbox-using-drive-shipping"></a>我想要使用驱动器传送导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？
 
 是的。不能导入包含 300 个或更多级别的嵌套文件夹的 PST 文件。
 
- **是否可以使用驱动器传送将 PST 文件导入到 Microsoft 365 中的非活动邮箱？**
+#### <a name="can-i-use-drive-shipping-to-import-pst-files-to-an-inactive-mailbox-in-microsoft-365"></a>是否可以使用驱动器传送将 PST 文件导入到 Microsoft 365 中的非活动邮箱？
 
-是的，这一功能现已推出。
+Yes, this capability is now available.
 
- **是否可以使用驱动器发运将 PST 文件导入到 Exchange 混合部署中的联机存档邮箱？**
+#### <a name="can-i-use-drive-shipping-to-import-pst-files-to-an-online-archive-mailbox-in-an-exchange-hybrid-deployment"></a>Can I use drive shipping to import PST files to an online archive mailbox in an Exchange hybrid deployment?
 
-是的，这一功能现已推出。
+Yes, this capability is now available.
 
- **是否可以使用驱动器发运将 PST 文件导入 Exchange Online 中的公用文件夹？**
+#### <a name="can-i-use-drive-shipping-to-import-pst-files-to-public-folders-in-exchange-online"></a>是否可以使用驱动器传送将 PST 文件导入 Exchange Online 中的公用文件夹？
 
 否，无法将 PST 文件导入公用文件夹。
 
- **Microsoft 将硬盘运回给我之前，是否会进行擦除？**
+#### <a name="can-microsoft-wipe-my-hard-drive-before-they-ship-it-back-to-me"></a>Microsoft 将硬盘运回给我之前，是否会进行擦除？
 
-不会，Microsoft 将硬盘运回给客户前不会进行擦除。硬盘将以 Microsoft 接收到的状态返回给你。
+No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
 
- **Microsoft 是否会销毁我的硬盘，而不是寄回给我？**
+#### <a name="can-microsoft-shred-my-hard-drive-instead-of-shipping-it-back-to-me"></a>Can Microsoft shred my hard drive instead of shipping it back to me?
 
-不会，Microsoft 不会销毁硬盘。硬盘将以 Microsoft 接收到的状态返回给你。
+No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
 
- **寄回时支持哪些快递服务？**
+#### <a name="what-courier-services-are-supported-for-return-shipping"></a>What courier services are supported for return shipping?
 
-对于美国或欧洲客户，Microsoft 使用 FedEx 运回硬盘。对于所有其他区域的客户，Microsoft 将使用 DHL。
+If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
 
- **寄回的运费是多少？**
+#### <a name="what-are-the-return-shipping-costs"></a>What are the return shipping costs?
 
-运回的运费有所不同，具体取决于你与硬盘运达的 Microsoft 数据中心之间的距离。Microsoft 将向你收取通过 FedEx 或 DHL 运回硬盘的费用。返回运费需由你支付。
+Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
 
- **是否可以使用 FedEx Custom Shipping 等自定义快递运输服将我的硬盘寄送至 Microsoft？**
+#### <a name="can-i-use-a-custom-courier-shipping-service-such-as-fedex-custom-shipping-to-ship-my-hard-drive-to-microsoft"></a>Can I use a custom courier shipping service, such as FedEx Custom Shipping, to ship my hard drive to Microsoft?
 
-是。
+是的。
 
- **If I have to ship my hard drive to another country, is there anything I need to do?**
+#### <a name="if-i-have-to-ship-my-hard-drive-to-another-country-is-there-anything-i-need-to-do"></a>If I have to ship my hard drive to another country, is there anything I need to do?
 
 你发运到 Microsoft 的硬盘可能会跨越国际边界。如果是这种情况，你有责任确保硬盘及其所含数据是根据适用法律导入和/或导出的。发运硬盘前，请与顾问联系以验证驱动器和数据可以合法地发送到指定的 Microsoft 数据中心。此操作有助于确保其及时送达 Microsoft。

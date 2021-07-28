@@ -258,7 +258,6 @@
 #### [云传递保护和 Microsoft Defender 防病毒软件](cloud-protection-microsoft-defender-antivirus.md)
 ##### [打开云传递保护](enable-cloud-protection-microsoft-defender-antivirus.md)
 ##### [指定云传递的保护级别](specify-cloud-protection-level-microsoft-defender-antivirus.md)
-##### [云传递的保护 Microsoft Defender 防病毒示例提交](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)
 #### [使用篡改保护保护安全设置](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [在首次看到时打开阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -484,7 +483,6 @@
 ####### [获取通知相关 IP 信息](get-alert-related-ip-info.md)
 ####### [获取警报相关设备信息](get-alert-related-machine-info.md)
 ####### [获取警报相关用户信息](get-alert-related-user-info.md)
-####### [Microsoft 365 Defender 中的警报队列](alerts-queue-endpoint-detection-response.md)
 
 ###### [漏洞和安全配置评估]()
 ####### [导出评估方法和属性](get-assessment-methods-properties.md)

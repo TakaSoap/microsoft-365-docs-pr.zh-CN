@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9d24ecb807e60733471be60353d12789f19be1b4
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 2d8e0a8cea68e969df5939691b517ee71e78472d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322675"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544453"
 ---
 # <a name="test-base-faq"></a>测试基础常见问题解答
 
@@ -61,7 +61,7 @@ ms.locfileid: "53322675"
 
 **问：测试基础能否支持我们的自动测试？**
 
-是的，测试库支持自动测试，但由于服务功能，目前不支持手动测试。
+**答：** 是的，测试库支持自动测试，但是，由于服务功能，我们目前不支持手动测试。
 
 **问：你支持哪些语言和自动测试框架？**
 
