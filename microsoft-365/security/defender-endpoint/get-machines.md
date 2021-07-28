@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d52e1b69311c26144684b90545e17934d1223332
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 17bf0ecf778dbf4dd651f5145b5963929df75af3
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287851"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621651"
 ---
 # <a name="list-machines-api"></a>列出计算机 API
 
@@ -29,38 +29,42 @@ ms.locfileid: "53287851"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API 说明
-检索 [已与](machine.md) Microsoft Defender for Endpoint 云通信的计算机集合。
-<br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
-<br>OData 的 `$filter` 查询在 上受支持 `computerDnsName` `lastSeen` ：、、、、 `healthStatus` `osPlatform` 和 `riskScore` `rbacGroupId` 。
-<br>有关示例， [请参阅使用 Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)
 
+检索 [已与](machine.md) Microsoft Defender for Endpoint 云通信的计算机集合。
+
+支持 [OData V4 查询](https://www.odata.org/documentation/)。
+
+OData 的 `$filter` 查询在 上受支持 `computerDnsName` `lastSeen` ：、、、、 `healthStatus` `osPlatform` 和 `riskScore` `rbacGroupId` 。
+
+有关示例， [请参阅使用 Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>限制
+
 1. 你可以根据配置的保留期获取最后一次看到的设备。
 2. 最大页面大小为 10，000。
 3. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。 
 
-
 ## <a name="permissions"></a>权限
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-Application |   Machine.Read.All |  "读取所有计算机配置文件"
-Application |   Machine.ReadWrite.All | "读取和写入所有计算机信息"
-委派（工作或学校帐户） | Machine.Read | "读取计算机信息"
-委派（工作或学校帐户） | Machine.ReadWrite | "读取和写入计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
+委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
->- 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+>
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -70,21 +74,21 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
-
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功且计算机存在 - 200 正常，正文中 [包含](machine.md) 计算机实体列表。 如果没有最近的计算机 - 404 未找到。
 
+如果成功且计算机存在 - 200 正常，正文中 [包含](machine.md) 计算机实体列表。 如果没有最近的计算机 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
@@ -92,7 +96,7 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
@@ -128,4 +132,5 @@ Content-type: application/json
 ```
 
 ## <a name="related-topics"></a>相关主题
+
 - [使用 Microsoft Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)

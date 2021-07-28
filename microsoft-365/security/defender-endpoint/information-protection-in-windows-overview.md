@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d68f879fe8fd9379b286c106ed9229895f91b9a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ec329a4e8fe22992d155e0564e83e23f1d8d6cac
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841100"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618975"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -32,22 +32,20 @@ ms.locfileid: "52841100"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 信息保护是 Microsoft 365 企业版的一部分，可提供智能保护，以确保敏感数据的安全，同时在工作场所中提高工作效率。
 
-
 >[!TIP]
-> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint 与 Microsoft 信息保护集成，以发现、保护和监视Windows[敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint Microsoft 信息保护集成，以发现、保护和监视Windows[敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint 应用以下方法来发现、分类和保护数据：
 
 - **数据发现**- 识别Windows的敏感数据
-- **数据分类**- 根据 Microsoft 安全与合规中心 (管理) Microsoft 信息保护Office 365 MIP &数据分类。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
-
+- **数据分类**- 根据安全与合规中心Microsoft 信息保护 (管理) MIP 策略Office 365数据&分类。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
 
 ## <a name="data-discovery-and-data-classification"></a>数据发现和数据分类
 
@@ -70,7 +68,7 @@ DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 ![使用 Azure 信息保护的设置页面的图像](images/atp-settings-aip.png)
 
-报告的信号可以在 Azure 信息保护 – 数据发现仪表板上查看。
+报告的信号可以在 Azure 信息保护 - 数据发现仪表板上查看。
 
 ## <a name="azure-information-protection---data-discovery-dashboard"></a>Azure 信息保护 - 数据发现仪表板
 
@@ -82,8 +80,8 @@ DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 单击设备以查看在此设备上观测到的文件列表，及其敏感度标签和信息类型。
 
->[!NOTE]
->请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映发现的文件。
+> [!NOTE]
+> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映发现的文件。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,16 +93,13 @@ Azure Log [Analytics](/azure/log-analytics/log-analytics-overview)中也提供�
 
 若要查看 Defender for Endpoint 数据，请执行包含以下项的查询：
 
-```
+```text
 InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender"
 ```
 
-**先决条件：**
+### <a name="prerequisites"></a>先决条件
 
 - 客户必须订阅 Azure 信息保护。
 - 在服务中启用 Azure 信息保护Microsoft Defender 安全中心：
-    - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规 **"设置"高级****"。**
-
-
-
+  - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规 **"设置"高级****"。**

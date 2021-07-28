@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9227987544e1cee1eeb4b65b5ae6bbf719558dd4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ac7f0df912c12d09eb1f587024d93772acbc33e1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845198"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621627"
 ---
 # <a name="get-recommendation-by-software"></a>按软件获取建议
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845198"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,43 +41,45 @@ ms.locfileid: "52845198"
 检索与特定软件相关的安全建议。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md) 了解详细信息。
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   SecurityRecommendation.Read.All |   "读取威胁和漏洞管理安全建议信息"
-委派（工作或学校帐户） | SecurityRecommendation.Read |  "读取威胁和漏洞管理安全建议信息"
+应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/recommendations/{id}/software
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 200 OK，并返回与正文中的安全建议关联的软件。
 
+如果成功，此方法返回 200 OK，并返回与正文中的安全建议关联的软件。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/software 
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
@@ -96,5 +98,6 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 ```
 
 ## <a name="related-topics"></a>相关主题
+
 - [基于风险的威胁&漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [威胁&漏洞安全建议](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

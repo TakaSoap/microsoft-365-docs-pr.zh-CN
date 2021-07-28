@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d204c7ad9aaecd077f2bce462d650a4cfdbf06e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933825"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619539"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的 IP 地址
 
@@ -36,7 +36,7 @@ ms.locfileid: "51933825"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 检查你的设备和外部 Internet 协议与 IP 地址 () 通信。
 
@@ -87,7 +87,7 @@ ms.locfileid: "51933825"
 
 ## <a name="related-topics"></a>相关主题
 
-- [查看和组织 Microsoft Defender 终结点警报队列](alerts-queue.md)
+- [查看并组织 Microsoft Defender for Endpoint 警报队列](alerts-queue.md)
 - [管理 Microsoft Defender for Endpoint 警报](manage-alerts.md)
 - [调查 Microsoft Defender for Endpoint 警报](investigate-alerts.md)
 - [调查与 Microsoft Defender for Endpoint 警报关联的文件](investigate-files.md)

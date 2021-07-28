@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何阻止将来宾添加到特定组
-ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538923"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621735"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来宾添加到特定组或Microsoft 365组Microsoft Teams组
 
@@ -67,7 +67,22 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 验证如下所示：
     
 ![显示来宾组访问已设置为 false 的 PowerShell 窗口屏幕截图。](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
+
+如果要切换回此设置以允许来宾访问特定组，请运行以下脚本，更改为要允许来宾访问的 ```<GroupName>``` 组的名称。
+
+```PowerShell
+$GroupName = "<GroupName>"
+
+Connect-AzureAD
+
+$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
+$settingsCopy = $template.CreateDirectorySetting()
+$settingsCopy["AllowToAddGuests"]=$True
+$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
+Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
+```
+
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>基于其域允许或阻止来宾访问
 
 你可以允许或阻止使用特定域的来宾。 例如，如果您的企业 (Contoso) 与另一个业务 (Fabrikam) 有合作关系，您可以将 Fabrikam 添加到允许列表，以便您的用户可以将那些来宾添加到其组。
@@ -96,7 +111,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [创建协作管理计划](collaboration-governance-first.md)
 
-[管理管理中心Microsoft 365组成员身份](../admin/create-groups/add-or-remove-members-from-groups.md)
+[管理用户中的组Microsoft 365 管理中心](../admin/create-groups/add-or-remove-members-from-groups.md)
   
 [Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

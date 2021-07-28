@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 43fc03522f1783c74eb5b2874da6125881a3740d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935025"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618892"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -34,37 +34,37 @@ ms.locfileid: "51935025"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 本文提供有关如何定义适用于按需扫描以及实时保护和监视的排除项的信息。
 
->[!IMPORTANT]
->本文中介绍的排除项不适用于 Mac 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发EDR检测。
+> [!IMPORTANT]
+> 本文中介绍的排除项不适用于 Mac 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发EDR检测。
 
 你可以从 Mac 上的 Defender for Endpoint 扫描中排除某些文件、文件夹、进程和进程打开的文件。
 
 排除项可用于避免对组织唯一或自定义的文件或软件进行错误检测。 它们还可用于缓解由 Mac 上的 Defender for Endpoint 引起的性能问题。
 
->[!WARNING]
->定义排除项会降低 Mac 上 Defender for Endpoint 所提供的保护。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
+> [!WARNING]
+> 定义排除项会降低 Mac 上 Defender for Endpoint 所提供的保护。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
 
 ## <a name="supported-exclusion-types"></a>支持的排除类型
 
 下表显示了 Mac 上的 Defender for Endpoint 支持的排除类型。
 
-排除 | 定义 | 示例
+排除|定义|示例
 ---|---|---
-文件扩展名 | 计算机上任意位置具有扩展名的所有文件 | `.test`
-文件 | 由完整路径标识的特定文件 | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-文件夹 | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
-流程 | 特定进程 (的完整路径或文件名指定，) 它打开的所有文件 | `/bin/cat`<br/>`cat`<br/>`c?t`
+文件扩展名|计算机上任意位置具有扩展名的所有文件|`.test`
+文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
+流程|特定进程 (的完整路径或文件名指定，) 它打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
 
 文件、文件夹和进程排除项支持以下通配符：
 
-通配符 | 说明 | 示例 | 匹配 | 不匹配
+通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\* |    匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个)  | `/var/*/*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | 匹配任何单个字符 | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 >[!NOTE]
 >产品在评估排除项时尝试解析固定链接。 当排除项包含通配符或目标文件 (卷上不存在时，) `Data` 解析不起作用。

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 89012dce4aa5b74d09f071b23f7709b4bd0bf03c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 06428df405987236f06eec0c5a4981d7256740dc
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771425"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621759"
 ---
 # <a name="score-resource-type"></a>分数资源类型
 
@@ -32,27 +32,26 @@ ms.locfileid: "52771425"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>方法
 
-方法 |返回类型 |说明
+方法|返回类型|说明
 :---|:---|:---
-[获取曝光分数](get-exposure-score.md) | [分数](score.md) | 获取组织曝光分数。
-[获取设备安全分数](get-device-secure-score.md) | [分数](score.md) | 获取组织设备安全分数。
-[按设备组列出曝光分数](get-machine-group-exposure-score.md)| [分数](score.md) | 按设备组列出分数。
+[获取曝光分数](get-exposure-score.md)|[分数](score.md)|获取组织曝光分数。
+[获取设备安全分数](get-device-secure-score.md)|[分数](score.md)|获取组织设备安全分数。
+[按设备组列出曝光分数](get-machine-group-exposure-score.md)|[分数](score.md)|按设备组列出分数。
 
 ## <a name="properties"></a>属性
 
-属性 |  类型    |   说明
+属性|类型|说明
 :---|:---|:---
-得分 | 双精度 | 当前分数。
-时间 | 日期时间 | 调用此 API 的日期和时间。
-RbacGroupName | String | 设备组名称。
+得分|双精度|当前分数。
+时间|日期时间|调用此 API 的日期和时间。
+RbacGroupName|字符串|设备组名称。

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 35a78870f3b1ecbe1d15790c033db1b59bf93a83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771593"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621555"
 ---
 # <a name="recommendation-resource-type"></a>建议资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771593"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,23 +52,23 @@ ms.locfileid: "52771593"
 ## <a name="properties"></a>属性
 属性 |   类型   |   说明
 :---|:---|:---
-id | String | 建议 ID
+id | 字符串 | 建议 ID
 productName | String | 相关软件名称  
-recommendationName | String | 建议名称
+recommendationName | 字符串 | 建议名称
 漏洞 | 长型 | 发现的漏洞数量
-供应商 | String | 相关供应商名称
-recommendedVersion | String | 建议版本
-recommendationCategory | String | 建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityStack"
-subCategory | String | 建议子类别
+供应商 | 字符串 | 相关供应商名称
+recommendedVersion | 字符串 | 建议版本
+recommendationCategory | 字符串 | 建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityStack"
+subCategory | 字符串 | 建议子类别
 severityScore | 双精度 | 配置对组织的 Microsoft 设备安全分数的潜在影响 (1-10) 
-publicExploit | Boolean | 公共攻击可用 
-activeAlert | Boolean | 活动警报与此建议关联
-associatedThreats | String collection | 威胁分析报告与此建议关联
-remediationType | String | 修正类型。 可能的值是："ConfigurationChange"、"Update"、"Upgrade"、"Uninstall"
+publicExploit | 布尔 | 公共攻击可用 
+activeAlert | 布尔 | 活动警报与此建议关联
+associatedThreats | String 集合 | 威胁分析报告与此建议关联
+remediationType | 字符串 | 修正类型。 可能的值是："ConfigurationChange"、"Update"、"Upgrade"、"Uninstall"
 状态 | 枚举 | 建议例外状态。 可能的值是："Active"和"Exception"
 configScoreImpact | 双精度 | Microsoft 设备影响安全分数
 exposureImpacte | 双精度 | 曝光分数影响
 totalMachineCount | 长型 | 已安装设备的数量
 exposedMachinesCount | 长型 | 向漏洞公开的已安装设备的数量
 nonProductivityImpactedAssets | 长型 | 不受影响的设备数量  
-relatedComponent | String |  相关软件组件
+relatedComponent | 字符串 |  相关软件组件

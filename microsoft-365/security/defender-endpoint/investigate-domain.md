@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7826229ba67384137c033745a5b85e557fc9c4a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 98e4c781f28f1a89eb3ba9878b65ef57d0e40ea8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933465"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619551"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的域
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933465"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink)。
 
 调查域以查看企业网络中设备和服务器是否一直与已知的恶意域通信。
 
@@ -82,7 +82,7 @@ ms.locfileid: "51933465"
 5. 单击任何设备名称将进入该设备的视图，你可以继续调查报告的警报、行为和事件。
 
 ## <a name="related-topics"></a>相关主题
-- [查看和组织 Microsoft Defender 终结点警报队列](alerts-queue.md)
+- [查看并组织 Microsoft Defender for Endpoint 警报队列](alerts-queue.md)
 - [管理 Microsoft Defender for Endpoint 警报](manage-alerts.md)
 - [调查 Microsoft Defender for Endpoint 警报](investigate-alerts.md)
 - [调查与 Microsoft Defender for Endpoint 警报关联的文件](investigate-files.md)

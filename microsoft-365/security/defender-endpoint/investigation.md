@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 252b273995d48d523604802c0c4365a613d86dbe
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3da531ab8f9c92cfdb32e6c4b5054be3148f49ec
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771725"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618932"
 ---
 # <a name="investigation-resource-type"></a>调查资源类型
 
@@ -33,36 +33,37 @@ ms.locfileid: "52771725"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 代表 Defender for Endpoint 中的自动调查实体。
-<br> 有关详细信息 [，请参阅自动](automated-investigations.md) 调查概述。
+
+有关详细信息 [，请参阅自动](automated-investigations.md) 调查概述。
 
 ## <a name="methods"></a>方法
-方法|返回类型 |说明
-:---|:---|:---
-[列表调查](get-investigation-collection.md) | 调查集合 | 获取调查集合
-[获取单个调查](get-investigation-object.md) | 调查实体 | 获取单个 Investigation 实体。
-[启动调查](initiate-autoir-investigation.md) | 调查实体 | 在设备上启动调查。
 
+方法|返回类型|说明
+:---|:---|:---
+[列表调查](get-investigation-collection.md)|调查集合|获取调查集合
+[获取单个调查](get-investigation-object.md)|调查实体|获取单个 Investigation 实体。
+[启动调查](initiate-autoir-investigation.md)|调查实体|在设备上启动调查。
 
 ## <a name="properties"></a>属性
-属性 |  类型    |   说明
-:---|:---|:---
-id | String | 调查实体的标识。 
-startTime | DateTime Nullable | 创建调查的日期和时间。 
-endTime | DateTime Nullable | 调查完成的日期和时间。 
-cancelledBy | String | 取消调查的用户/应用程序的 ID。 
-investigationState | 枚举 | 调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
-statusDetails | String | 有关调查状态的其他信息。
-machineId | String | 执行调查的设备 ID。
-computerDnsName | String | 执行调查的设备的名称。
-triggeringAlertId | String | 触发调查的警报的 ID。
 
+属性|类型|说明
+:---|:---|:---
+id|字符串|调查实体的标识。 
+startTime|DateTime Nullable|创建调查的日期和时间。
+endTime|DateTime Nullable|调查完成的日期和时间。
+cancelledBy|字符串|取消调查的用户/应用程序的 ID。
+investigationState|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
+statusDetails|字符串|有关调查状态的其他信息。
+machineId|字符串|执行调查的设备 ID。
+computerDnsName|字符串|执行调查的设备的名称。
+triggeringAlertId|字符串|触发调查的警报的 ID。
 
 ## <a name="json-representation"></a>Json 表示形式
 
