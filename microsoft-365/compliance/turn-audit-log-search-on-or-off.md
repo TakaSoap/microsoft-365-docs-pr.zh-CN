@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 如何打开或关闭审核日志搜索功能Microsoft 365 合规中心启用或禁用管理员搜索审核日志。
-ms.openlocfilehash: dd39b883036ce6060aef71c6a927c03f391d827f
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8da6ba3f8dc9fbc7564b7bd71e71c542cb118057
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341492"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567544"
 ---
 # <a name="turn-auditing-on-or-off"></a>打开或关闭审核
 
-Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。 启用 Microsoft 365 合规中心 中的审核时，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。 但是，您的组织可能出于不希望记录并保留数据审核日志的原因。 在这种情况下，全局管理员可能会决定在 Microsoft 365 中关闭审核。
+默认情况下，将为企业组织和企业组织启用Microsoft 365 Office 365日志记录。 但是，在组织Microsoft 365或Office 365时，应验证组织的审核状态。 有关说明，请参阅本文 [中的验证组织的](#verify-the-auditing-status-for-your-organization) 审核状态部分。 
 
-在组织中设置Microsoft 365 Office 365时，可以验证组织的审核状态。 有关说明，请参阅本文 [中的验证组织的](#verify-the-auditing-status-for-your-organization) 审核状态部分。
+启用 Microsoft 365 合规中心 中的审核时，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。 但是，您的组织可能出于不希望记录并保留数据审核日志的原因。 在这种情况下，全局管理员可能会决定在 Microsoft 365 中关闭审核。
 
 > [!IMPORTANT]
 > 如果关闭组织中Microsoft 365，则你无法通过 Office 365 管理活动 API 或 Azure Sentinel 访问组织的审核数据。 按照本文中的步骤关闭审核意味着在使用 Microsoft 365 合规中心 搜索 审核日志 或在 Exchange Online PowerShell 中运行 **Search-UnifiedAuditLog** cmdlet 时不会返回任何结果。 这也意味着审核日志无法通过 Office 365管理活动 API 或 Azure Sentinel 提供。

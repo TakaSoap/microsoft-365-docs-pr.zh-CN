@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: 8df2e240440ad33ac82d926b63cc495d1aaef692
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: ce7ff5158327c7358d921021017382a3a719a809
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925147"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541033"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -85,7 +85,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 ### <a name="view-policies-in-the-dashboard"></a>在仪表板中查看策略
 
-审核日志保留策略列在仪表板中。 在仪表板中查看策略的一个优点是，可以单击“**优先级**”列以按它们应用的优先级列出策略。 如前所述，值越大表示优先级越高。
+审核日志保留策略列在仪表板中。 在仪表板中查看策略的一个优点是，可以单击“**优先级**”列以按它们应用的优先级列出策略。 如前所述，值越小表示优先级越高。
 
 ![“审核保留策略”仪表板中的“优先级”列](../media/AuditLogRetentionDashboardPriority.png)
 

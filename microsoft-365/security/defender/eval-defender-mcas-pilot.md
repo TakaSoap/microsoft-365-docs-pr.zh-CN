@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e061bf213ee929f91a48b03c71b9654a7ea76b8c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457625"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587941"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>试用Microsoft Cloud App Security Microsoft 365 Defender
 
@@ -80,6 +80,8 @@ Microsoft Cloud App Security允许您确定部署的范围。 通过作用域，
 - [阻止下载敏感信息](/cloud-app-security/use-case-proxy-block-session-aad)
 - [使用管理员隔离保护文件](/cloud-app-security/use-case-admin-quarantine)
 - [在有风险的操作时要求执行逐步身份验证](/cloud-app-security/tutorial-step-up-authentication)
+
+有关数据中高级搜寻Microsoft Cloud App Security，请参阅[视频](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)。
 
 ## <a name="next-steps"></a>后续步骤
 

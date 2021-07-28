@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 9a56167f0025ec42f4fd441886f83026c1bf23d6
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: fc4cdbca28b07ab4d5a75c761d3558595df4cd6f
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339529"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567508"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender for Endpoint 
 
@@ -41,7 +41,7 @@ ms.locfileid: "53339529"
 
 在将多个设备载入服务之前，你可能想要体验 Defender for Endpoint。 为此，可以在一些测试设备上运行受控攻击模拟。 运行模拟攻击后，你可以查看 Defender for Endpoint 如何显示恶意活动，并探索它如何启用有效的响应。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 若要运行任何提供的模拟，你至少需要一 [个已载入的设备](onboard-configure.md)。 
 
@@ -59,7 +59,7 @@ ms.locfileid: "53339529"
 
 2. 下载并阅读所选方案提供的相应演练文档。
 
-3. 下载模拟文件或复制模拟脚本，方法为导航到帮助模拟  >  **&教程**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
+3. 下载模拟文件或复制模拟脚本，方法为导航到评估&**教程**  >  **教程&模拟**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
 
 4. 根据演练文档中的指示，在测试设备上运行模拟文件或脚本。
 

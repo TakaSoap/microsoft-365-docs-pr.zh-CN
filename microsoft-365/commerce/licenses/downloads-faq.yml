@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: 有关下载Microsoft 365 管理中心常见问题。
-  ms.openlocfilehash: a01c46bb4ac8072fe7293abbc016a9b2bb8e377d
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 406e25fa4d6aac05ecbdaa05f407626cff9d112e
+  ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
   ms.translationtype: MT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542420"
+  ms.locfileid: "53567340"
 title: 下载常见问题
 summary: ''
 sections:
@@ -104,7 +104,7 @@ sections:
   - question: >
       在哪里可以找到对此常见问题解答中涵盖的主题的支持？
     answer: >
-      有关包括视频在内的更多培训资源，请参阅 [Microsoft 批量许可服务中心培训和资源](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3)。
+      有关包括视频在内的更多培训资源，请参阅 [Microsoft 批量许可服务中心培训和资源](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
   - question: >
       如何联系 Microsoft 支持部门？
     answer: >

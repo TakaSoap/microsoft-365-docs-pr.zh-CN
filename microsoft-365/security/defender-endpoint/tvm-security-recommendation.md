@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 6243444c6dca31608512dbe9e6183cc7355ef55a
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567148"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588013"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -35,24 +35,22 @@ ms.locfileid: "53567148"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 组织中标识的网络安全漏洞将映射到可操作的安全建议，并按其影响确定优先级。 优先建议有助于缩短缓解或修正漏洞和推动合规性的时间。
 
 每个安全建议都包括可操作修正步骤。 为了帮助进行任务管理，也可使用 Microsoft Intune 和 Microsoft Endpoint Configuration Manager。 当威胁形势发生变化时，建议也会发生变化，因为它会持续从你的环境收集信息。
 
->[!TIP]
->若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
+> [!TIP]
+> 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
 
 ## <a name="how-it-works"></a>运作方式
 
 组织的每台设备都基于三个重要因素进行评分，以帮助客户在正确的时间专注于正确的内容。
 
-- **威胁**— 组织设备中的漏洞和攻击的特征和泄露历史记录。 根据这些因素，安全建议显示活动警报的相应链接、正在进行的威胁活动及其相应的威胁分析报告。
-
-- **泄露** 可能性 - 组织的安全状态和抵御威胁的复原能力
-
-- **业务** 价值 - 组织的资产、关键流程和知识产权
+- **威胁**：组织设备中的漏洞和攻击的特征和泄露历史记录。 根据这些因素，安全建议显示活动警报的相应链接、正在进行的威胁活动及其相应的威胁分析报告。
+- **泄露可能性**：组织的安全状态和抵御威胁的复原能力。
+- **业务价值**：组织的资产、关键流程和知识产权。
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>导航到"安全建议"页
 
@@ -84,14 +82,15 @@ ms.locfileid: "53567148"
 
 "公开设备 **"图的颜色** 随着趋势的变化而更改。 如果公开的设备数量上升，则颜色将变为红色。 如果公开设备的数量减少，图形的颜色将变为绿色。
 
->[!NOTE]
->威胁漏洞管理显示最多 **30** 天之前使用的设备。 这不同于适用于终结点的 Microsoft Defender 的其余部分，如果设备已使用超过 7 天，则设备处于"非活动"状态。
+> [!NOTE]
+> 威胁漏洞管理显示最多 **30** 天之前使用的设备。 这不同于适用于终结点的 Microsoft Defender 的其余部分，如果设备已使用超过 7 天，则设备处于"非活动"状态。
 
 ![安全建议登录页面示例。](images/tvmsecrec-updated.png)
 
 ### <a name="icons"></a>图标
 
 有用的图标也会快速吸引你注意：
+
 - ![箭头命中目标](images/tvm_alert_icon.png) 可能的活动警报
 - ![红色 bug](images/tvm_bug_icon.png) 关联的公共攻击
 - ![光灯](images/tvm_insight_icon.png) 建议见解

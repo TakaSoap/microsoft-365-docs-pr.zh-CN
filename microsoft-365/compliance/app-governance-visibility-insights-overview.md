@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可见性和见解。
-ms.openlocfilehash: ee485c972193c515bafec55f58a7a89aa1f567f1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: eac4cd67591d261843f0d3efe476db027c58db91
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420028"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541081"
 ---
 # <a name="learn-about-visibility-and-insights"></a>了解可见性见解
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-通过 Microsoft 应用治理，你可以快速获得关于 Microsoft 365 应用程序生态系统的可见性以及有意义的见解。 从应用治理仪表板开始，该仪表板提供租户中需要管理员注意的警报和应用的高级别摘要。
+通过 Microsoft 应用治理，你可以快速获得关于 Microsoft 365 应用程序生态系统的可见性以及有意义的见解。 从应用治理仪表板开始，该仪表板提供租户中需要管理员注意的警报和应用的高级别概述。
 
 通过应用治理可见性和见解，你可以看到：
 
-- 通过 Microsoft Graph API 访问 Microsoft 365 数据，并且已启用 OAuth 的应用列表。
+- 通过租户内 Microsoft Graph API 访问 Microsoft 365 数据，并且已启用 OAuth 的应用列表。
 - 有关应用活动的丰富视图，以便你可以对它们做出反应或响应。
 
 >[!Note]
@@ -37,21 +37,6 @@ ms.locfileid: "53420028"
 >
 
 有关获得可见性和见解所需的管理员角色的概述，请参阅[管理员角色](app-governance-get-started.md#administrator-roles)。
-
-<!--
-From messaging doc, page 21:
-
-View M365 App List & Metadata
-View M365 App List of Consented Users
-View M365 App Permissions
-View M365 App Permission Usage
-View Over permissioned Apps
-Aggregate M365 API Usage Data by Workload (count, download/upload)
-Per-App M365 API Usage Data by Workload (count, download/upload)
-Per-User M365 API Usage Data by Workload (count, download/upload)
-M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
-M365 API Error Analysis per App
--->
 
 通过应用治理，你可以看到：
 
@@ -71,8 +56,8 @@ M365 API Error Analysis per App
 - 访问应用的用户的累积视图。
 - 警报见解。
 - 策略列表见解。
-<!-->
-- 在应用治理门户中的 MCAS 中创建的策略。
+<!--
+- Policies created in MCAS in the app governance portal.
 -->
 - 针对 MCAS 中生成的 OAuth 应用的警报（位于应用治理门户中）。
 

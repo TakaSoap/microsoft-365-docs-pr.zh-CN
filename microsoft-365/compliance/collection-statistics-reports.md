@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何访问和使用已提交到 Advanced eDiscovery 审阅集的草稿集合的统计信息和报告。
-ms.openlocfilehash: 5edbd4a3b7212e027c777ed6ce5284f4e9cf595c
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: e9be02f0c1c1d20639c7120bc0f357a381411b31
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838848"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541021"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>集合中的统计信息和报告Advanced eDiscovery
 
@@ -106,7 +106,7 @@ ms.locfileid: "50838848"
 
 **新的索引项**。 在将项目添加到审阅集之前新编制索引的项目数。 新索引项的一个示例是子项，这些子项从父项中提取，然后在将这些项目添加到审阅集之前编制索引。 此外，在将未添加到审阅中之前，会先对不在"数据源"选项卡上列出的主要数据源和非内容位置中的项目编制索引。 例如，新编制索引的项目将包括从其他位置收集的项目。
 
-**更新了索引项**。 已成功编制索引并添加到审阅集的部分索引项的数量。 这将部分索引来自当前内容位置和非审阅内容位置的项。在将集合提交到审阅集时已成功编制索引的"数据源"选项卡。
+**更新了索引项**。 已成功编制索引并添加到审阅集的部分索引项的数量。 此统计信息指示在将集合提交到审阅集时成功编制索引的来自当前内容位置和非内容位置的"数据源"选项卡中的部分索引项。
 
 **索引错误**。 在将部分索引项添加到审阅集之前无法编制索引的项目数。 这些项目可能需要错误修正。
 

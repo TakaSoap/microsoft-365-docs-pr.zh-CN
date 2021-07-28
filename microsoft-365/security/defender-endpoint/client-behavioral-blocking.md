@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9a2fa36d7902c66e1ac40f0ecd07c0db38752e8d
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289927"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567496"
 ---
 # <a name="client-behavioral-blocking"></a>客户端行为阻止
 
@@ -38,7 +38,7 @@ ms.locfileid: "53289927"
 
 客户端行为阻止是 Defender for Endpoint 中行为阻止 [和](behavioral-blocking-containment.md) 包含功能的一个组件。 由于在设备上检测到可疑行为 (也称为客户端或终结点) ，因此 (或应用程序等项目) 自动阻止、检查和修正。 
 
-:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="云和客户端保护":::
+:::image type="content" alt-text="云和客户端保护" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 防病毒保护在与云保护配对时效果最佳。
 
@@ -46,7 +46,7 @@ ms.locfileid: "53289927"
 
 [Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)检测设备上可疑行为、恶意代码、无文件攻击和内存中攻击等。 当检测到可疑行为时，Microsoft Defender 防病毒监控这些可疑行为并将其进程树发送到云保护服务。 机器学习在毫秒内区分恶意应用程序和良好行为，并分类每个项目。 在几乎实时中，只要发现项目是恶意项目，就会在设备上被阻止。 
 
-只要检测到可疑行为，就会生成警报[](alerts-queue.md)，并且该警报Microsoft 365 Defender门户 (之前Microsoft Defender 安全中心) 。 [](microsoft-defender-security-center.md)
+只要检测到可疑行为，就会生成警报[](alerts-queue.md)，并且该警报Microsoft 365 Defender[门户](microsoft-defender-security-center.md) (之前Microsoft 365 Defender) 。
 
 客户端行为阻止非常有效，因为它不仅有助于防止攻击启动，还有助于阻止已开始执行的攻击。 此外， [通过反馈循环](feedback-loop-blocking.md) (行为阻止和) 功能，可以阻止组织中其他设备的攻击。
 
@@ -60,13 +60,13 @@ ms.locfileid: "53289927"
 |执行 | `Behavior:Win32/Execution.*!ml` |
 |持久性 | `Behavior:Win32/Persistence.*!ml` |
 |特权提升 | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|防御者 | `Behavior:Win32/DefenseEvasion.*!ml` |
+|防御规避 | `Behavior:Win32/DefenseEvasion.*!ml` |
 |凭据访问 | `Behavior:Win32/CredentialAccess.*!ml` |
 |Discovery | `Behavior:Win32/Discovery.*!ml` |
 |横向移动 | `Behavior:Win32/LateralMovement.*!ml` |
 |集合 | `Behavior:Win32/Collection.*!ml` |
 |命令和控件 | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
+|外泄 | `Behavior:Win32/Exfiltration.*!ml` |
 |影响 | `Behavior:Win32/Impact.*!ml` |
 |未分类 | `Behavior:Win32/Generic.*!ml` |
 

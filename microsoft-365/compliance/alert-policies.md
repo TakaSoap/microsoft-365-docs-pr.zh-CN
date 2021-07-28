@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: 在策略中创建Microsoft 365 合规中心策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 02b5727f0c844fa6b825b4c0c032ea6c2633d6df
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+description: 在网站或 Microsoft 365 合规中心 门户Microsoft 365 Defender警报策略，以监视潜在威胁、数据丢失和权限问题。
+ms.openlocfilehash: 531ce27d8335216f76b5ff1516ecc8263f24bb51
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363987"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567388"
 ---
-# <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>警报策略Microsoft 365 合规中心
+# <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 中的警报策略
 
-可以使用警报策略和 Microsoft 365 合规中心 中的警报仪表板工具创建警报策略，然后查看当用户执行与警报策略的条件相匹配的活动时生成的警报。 有几种默认警报策略可帮助您监视活动，如在 Exchange Online 中分配管理员权限、恶意软件攻击、网络钓鱼活动以及异常级别的文件删除和外部共享。
+可以使用 Microsoft 365 合规中心 或 Microsoft 365 Defender 门户中的警报策略和警报仪表板工具创建警报策略，然后查看当用户执行与警报策略的条件相匹配的活动时生成的警报。 有几种默认警报策略可帮助您监视活动，如在 Exchange Online 中分配管理员权限、恶意软件攻击、网络钓鱼活动以及异常级别的文件删除和外部共享。
 
-通过警报策略，您可以对策略触发的警报进行分类，将策略应用于组织中所有用户，设置触发警报的阈值级别，以及决定是否在触发警报时接收电子邮件通知。 合规中心还有一个警报页面，可在其中查看和筛选警报、设置警报状态以帮助你管理警报，然后在解决或解决基本事件后消除警报。
+通过警报策略，您可以对策略触发的警报进行分类，将策略应用于组织中所有用户，设置触发警报的阈值级别，以及决定是否在触发警报时接收电子邮件通知。 还有一个"警报"页面，您可以在其中查看和筛选警报、设置警报状态以帮助管理警报，然后在解决或解决基本事件后消除警报。
 
 > [!NOTE]
 > 警报策略适用于具有 Microsoft 365 企业版、Office 365 企业版 或 Office 365 美国政府版 E1/F1/G1、E3/F3/G3 或 E5/G5 订阅的组织。 高级功能仅适用于具有 E5/G5 订阅的组织，或者具有 E1/F1/G1 或 E3/F3/G3 订阅以及适用于 Office 365 P2 或 Microsoft 365 E5 合规 或 E5 电子数据展示和审核附加订阅的 Microsoft Defender 的组织。 本主题重点介绍了需要 E5/G5 或加载项订阅的功能。 另请注意，警报策略在 Office 365 GCC、GCC High 和 DoD 美国政府环境中可用。
@@ -38,18 +38,18 @@ ms.locfileid: "53363987"
 
 下面简要概述了警报策略如何工作，以及当用户或管理员活动与警报策略的条件相匹配时触发的警报。
 
-![警报策略如何工作概述](../media/M365-AlertPolicies-Overview.png)
+![警报策略如何工作概述](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
 
-1. 贵组织的管理员使用合规性中心中的警报策略页面创建、配置和启用警报策略。  您还可以使用安全与合规中心 PowerShell 中的 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet &警报策略。
+1. 你的组织的管理员通过使用 Microsoft 365 合规中心 或 Microsoft 365 Defender 门户中的警报策略页面创建、配置和启用警报策略。 您还可以使用安全与合规中心 PowerShell 中的 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet &警报策略。
 
-   若要创建警报策略，您必须在合规中心获得"管理警报"角色或"组织配置"角色。
+   若要创建警报策略，你必须在安全或 Defender 门户中分配"管理警报"角色Microsoft 365 合规中心"组织配置"角色。
 
    > [!NOTE]
    > 创建或更新警报策略后最多需要 24 小时，策略才能触发警报。 这是因为策略必须同步到警报检测引擎。
 
 2. 用户执行与警报策略的条件相匹配的活动。 对于恶意软件攻击，发送给组织中用户的受感染电子邮件将触发警报。
 
-3. Microsoft 365将生成一个警报，该警报显示在 Microsoft 365 合规中心 中的"通知"页上。 此外，如果为警报策略启用了电子邮件通知，Microsoft 将向收件人列表发送通知。 管理员或其他用户可在"通知"页面上看到的警报由分配给用户的角色确定。 有关详细信息，请参阅 [查看警报所需的 RBAC 权限](#rbac-permissions-required-to-view-alerts)。
+3. Microsoft 365生成警报，该警报显示在 defender 或 defender门户Microsoft 365 合规中心警报页面。 此外，如果为警报策略启用了电子邮件通知，Microsoft 将向收件人列表发送通知。 管理员或其他用户可在"通知"页面上看到的警报由分配给用户的角色确定。 有关详细信息，请参阅 [查看警报所需的 RBAC 权限](#rbac-permissions-required-to-view-alerts)。
 
 4. 管理员在合规中心管理警报。 管理警报包括分配警报状态以帮助跟踪和管理任何调查。
 
@@ -57,14 +57,22 @@ ms.locfileid: "53363987"
 
 警报策略包含一组规则和条件，用于定义生成警报的用户或管理员活动、触发警报的用户列表（如果他们执行活动）以及一个定义触发通知之前必须发生活动次数的阈值。 还可以对策略进行分类，并为其分配严重性级别。 这两个设置可帮助您管理警报策略 (以及当策略条件与) 匹配时触发的警报，因为您可以在管理策略和查看合规性中心中的警报时筛选这些设置。 例如，可以查看与同一类别的条件匹配的警报，或查看严重性级别相同的警报。
 
-**查看和创建警报策略：**
+查看和创建警报策略：
+
+### <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规中心
 
 转到 ， <https://compliance.microsoft.com> 然后选择策略  >  **警报**  >  **警报策略**。 或者，你可以直接转到 <https://compliance.microsoft.com/alertpolicies> 。
 
 ![在合规中心内，选择"策略"，在"警报"下，选择"警报策略"以查看和创建警报策略](../media/LaunchAlertPoliciesMCC.png)
 
+### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户
+
+转到电子邮件 <https://security.microsoft.com> 和协作下 **&策略&****警报**  >  **策略"。** 或者，你可以直接转到 <https://security.microsoft.com/alertpolicies> 。
+
+![在 Defender 门户中，选择电子邮件&协作下的策略&规则，然后选择警报策略以查看和创建警报策略](../media/LaunchAlertPoliciesDefenderPortal.png)
+
 > [!NOTE]
-> 您必须分配有"管理View-Only"角色，以查看警报策略Microsoft 365 合规中心。 您必须分配有"管理警报"角色，以创建和编辑警报策略。 有关详细信息，请参阅 [安全与合规中心中的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+> 你必须分配有管理View-Only角色，以查看合规中心或 Defender 门户中的警报策略。 您必须分配有"管理警报"角色，以创建和编辑警报策略。 有关详细信息，请参阅 [安全与合规中心中的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 警报策略由以下设置和条件组成。
 
@@ -74,6 +82,8 @@ ms.locfileid: "53363987"
     > 你可以跟踪的活动取决于你组织的活动Office 365 企业版或Office 365美国政府计划。 通常，与恶意软件市场活动和网络钓鱼攻击相关的活动需要 E5/G5 订阅或 E1/F1/G1 或 E3/F3/G3 订阅以及适用于 Office 365 计划 2 附加订阅的[Defender。](../security/office-365-security/defender-for-office-365.md)
 
 - **活动条件**。 对于大多数活动，你可以定义触发警报所必须满足的其他条件。 常见条件包括 IP 地址 (以便当用户在具有特定 IP 地址的计算机上或 IP 地址范围) 内执行活动时触发警报、特定用户执行该活动时是否触发警报，以及是否对特定文件名或 URL 执行活动。 还可以配置在组织中任何用户执行活动时触发警报的条件。 可用条件取决于所选活动。
+
+还可以将用户标记定义为警报策略的条件。 这将生成策略触发的警报，以包含受影响用户的上下文。 可以使用系统用户标记或自定义用户标记。 有关详细信息，请参阅 Microsoft Defender for Office 365 中的[用户标记](/microsoft-365/security/office-365-security/user-tags)。
 
 - **触发警报时**。 您可以配置一个设置，该设置定义在触发警报之前可以发生活动的时间。 这样，你可以设置一个策略，每当活动符合策略条件、超过某个阈值时，或者当警报正在跟踪的活动出现异常时，组织都会生成警报。
 
@@ -149,20 +159,29 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 |**传递到收件箱/文件夹**<sup>1、2</sup>的用户 <sup>模拟网络钓鱼</sup>|当 Microsoft 检测到管理员或用户替代已允许将用户模拟网络钓鱼邮件发送到邮箱的收件箱 (或其他用户访问的文件夹时) 警报。 替代示例包括允许来自特定发件人或域的邮件的收件箱或邮件流规则，或者允许来自特定发件人或域的邮件的反垃圾邮件策略。 此 **策略具有中等** 严重性设置。|威胁管理|适用于 P2 附加Office 365订阅的 E5/G5 或 Defender|
 |**被限制发送电子邮件的用户**|当组织内部人员被限制发送出站邮件时，生成警报。 这通常会导致帐户遭到入侵，并且该用户列在用户帐户的"受限用户"Microsoft 365 合规中心。   (若要访问此页面，请转到威胁管理 **>查看>受限**) 。 此策略具有 **高** 严重性设置。 有关受限用户的信息，请参阅在发送垃圾邮件后从阻止列表中删除用户、域或 [IP 地址](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**用户被限制共享表单和收集响应**|如果由于检测到重复的网络钓鱼尝试行为而限制您组织中的某人共享表单和使用 Microsoft Forms 收集响应，则生成警报。 此策略具有 **高** 严重性设置。|威胁管理|E1、E3/F3 或 E5|
-|||||
 
 > [!NOTE]
-> <sup>1</sup> 我们已根据客户反馈暂时删除了此默认警报策略。 我们正在努力改进它，并将于近期将其替换为新版本。 在此之前，您可以通过使用下列设置创建自定义警报策略以替换此功能：<br/>&nbsp; * 活动是在送达时检测到的钓鱼电子邮件<br/>&nbsp; * Mail is not ZAP'd<br/>&nbsp; * 邮件方向为入站<br/>&nbsp; * 邮件传递状态为已送达<br/>&nbsp; * 检测技术为恶意 URL 保留、URL 触发、高级钓鱼筛选器、常规钓鱼筛选器、域模拟、用户模拟和品牌模拟<br/><br/>&nbsp;&nbsp;&nbsp;有关网站中的防钓鱼Office 365，请参阅设置防钓鱼[和防钓鱼策略](../security/office-365-security/set-up-anti-phishing-policies.md)。<br/><br/><sup>2</sup> 若要重新创建此警报策略，请按照上一脚注中的指南操作，但选择"用户模拟"作为唯一的检测技术。
+> <sup>1</sup> 我们已根据客户反馈暂时删除了此默认警报策略。 我们正在努力改进它，并将于近期将其替换为新版本。 在此之前，您可以通过使用下列设置创建自定义警报策略以替换此功能： <ul><li>活动是在送达时检测到的钓鱼电子邮件</li> <li>邮件不是 ZAP</li> <li>邮件方向为 Inbound</li> <li>邮件传递状态为"已送达"</li> <li>检测技术为恶意 URL 保留、URL 触发、高级钓鱼筛选器、常规钓鱼筛选器、域模拟、用户模拟和品牌模拟</li></ul> 有关网站中的防钓鱼Office 365，请参阅设置防钓鱼[和防钓鱼策略](../security/office-365-security/set-up-anti-phishing-policies.md)。<br/><br/><sup>2</sup> 若要重新创建此警报策略，请按照上一脚注中的指南操作，但选择"用户模拟"作为唯一的检测技术。
 
 某些内置策略监视的异常活动基于与之前描述的警报阈值设置相同的过程。 Microsoft 建立了一个基线值，用于定义"常规"活动的正常频率。 然后，当内置警报策略跟踪的活动频率大大超过基线值时，将触发警报。
 
 ## <a name="viewing-alerts"></a>查看警报
 
-当组织中用户执行的活动与警报策略的设置相匹配时，会生成警报，并显示在合规中心的"警报"页面上。  根据警报策略的设置，当触发警报时，还会向指定用户列表发送电子邮件通知。 对于每个警报，"警报"页面上的仪表板将显示相应警报策略的名称、警报策略) 中定义的警报 (的严重性和类别，以及导致生成警报的活动发生次数。 此值基于警报策略的阈值设置。 仪表板还会显示每个警报的状态。 有关使用 status 属性管理警报的信息，请参阅 [管理警报](#managing-alerts)。
+当组织中用户执行的活动与警报策略的设置相匹配时，会生成警报，并显示在合规中心或 Defender 门户的警报页面上。 根据警报策略的设置，当触发警报时，还会向指定用户列表发送电子邮件通知。 对于每个警报，"警报"页面上的仪表板将显示相应警报策略的名称、警报策略) 中定义的警报 (的严重性和类别，以及导致生成警报的活动发生次数。 此值基于警报策略的阈值设置。 仪表板还会显示每个警报的状态。 有关使用 status 属性管理警报的信息，请参阅 [管理警报](#managing-alerts)。
 
-若要查看警报，请转到 ， <https://compliance.microsoft.com> 然后选择警报 。  或者，你可以直接转到 <https://compliance.microsoft.com/compliancealerts> 。
+查看警报：
+
+### <a name="microsoft-365-compliance-center"></a>Microsoft 365 合规中心
+
+ 转到 ， <https://compliance.microsoft.com> 然后选择警报。 或者，你可以直接转到 <https://compliance.microsoft.com/compliancealerts> 。
 
 ![In the Microsoft 365 合规中心， select Alerts](../media/ViewAlertsMCC.png)
+
+### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户
+
+转到 ， <https://security.microsoft.com> 然后选择事件 **&警报**  >  **。** 或者，你可以直接转到 <https://security.microsoft.com/alerts> 。
+
+![在Microsoft 365 Defender门户中，选择"事件&警报"，然后选择"警报"](../media/ViewAlertsDefenderPortal.png)
 
 您可以使用以下筛选器查看"警报"页上所有 **警报的** 子集。
 
@@ -197,7 +216,7 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 |E5 合规性加载项或 E5 发现和审核加载项|1 分钟|
 |Office 365或 Microsoft 365 E1/F1/G1 或 E3/F3/G3|15 分钟|
 |Defender for Office 365 计划 1 或 Exchange Online Protection|15 分钟|
-|||
+
 
 当与同一警报策略匹配的事件在聚合间隔内发生时，有关后续事件的详细信息将添加到原始警报中。 对于所有事件，有关聚合事件的信息将显示在详细信息字段中，并且与聚合间隔一起发生的事件数将显示在活动/命中计数字段中。 可以通过查看活动列表来查看有关所有聚合事件实例的信息。
 
@@ -213,7 +232,7 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>查看警报所需的 RBAC 权限
 
-基于角色的访问控制 (RBAC) 分配给您组织中用户的权限可确定用户可以在"警报"页上 **看到哪些警报** 。 如何完成此操作？ 分配给用户的管理角色 (角色组中角色组的成员身份Microsoft 365 合规中心) 确定用户可以在"警报"页上看到的 **警报** 类别。 下面是一些示例：
+基于角色的访问控制 (RBAC) 分配给您组织中用户的权限可确定用户可以在"警报"页上 **看到哪些警报** 。 如何完成此操作？ 根据用户在 Microsoft 365 合规中心 或 Microsoft 365 Defender 门户) 中的角色组成员身份 (分配给用户的管理角色可确定用户可以在"警报"页上看到的 **警报** 类别。 下面是一些示例：
 
 - 记录管理角色组的成员只能查看由分配了信息管理类别的警报策略 **生成的** 警报。
 
@@ -223,7 +242,7 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 
 此 (基于 RBAC 权限) 允许你确定哪些警报 (组织中特定工作角色的用户可以查看和管理) 。
 
-下表列出了查看六个不同警报类别中的警报所需的角色。 表中的第一列列出了角色列表中Microsoft 365 合规中心。  一个选中标记指示分配了该角色的用户可以查看顶部行中列出的相应警报类别中的警报。
+下表列出了查看六个不同警报类别中的警报所需的角色。 表中的第一列列出了 Microsoft 365 合规中心 或 Microsoft 365 Defender 门户中的所有角色。  一个选中标记指示分配了该角色的用户可以查看顶部行中列出的相应警报类别中的警报。
 
 To see which category a default alert policy is assigned to， see the table in [Default alert policies](#default-alert-policies).
 
@@ -231,7 +250,7 @@ To see which category a default alert policy is assigned to， see the table in 
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |审核日志|||||||
 |案例管理|||||||
-|合规性管理员|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)|
+|合规管理员|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)|
 |合规性搜索|||||||
 |设备管理|||||||
 |处置管理|||||||
@@ -248,7 +267,7 @@ To see which category a default alert policy is assigned to， see the table in 
 |角色管理||||![复选标记](../media/checkmark.png)|||
 |搜索和清除|||||||
 |安全管理员||![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|
-|安全读取者||![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)
+|安全信息读取者||![复选标记](../media/checkmark.png)||![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)|![复选标记](../media/checkmark.png)
 |服务保障视图|||||||
 |监管审核管理员|||||||
 |仅供查看审核日志|||||||
@@ -258,7 +277,7 @@ To see which category a default alert policy is assigned to， see the table in 
 |仅查看收件人|||![复选标记](../media/checkmark.png)||||
 |View-Only记录管理|![复选标记](../media/checkmark.png)||||||
 |View-Only保留管理|![复选标记](../media/checkmark.png)||||||
-|||||||
+
 
 > [!TIP]
 > 若要查看分配给每个默认角色组的角色，请运行安全与合规中心 PowerShell &命令：
@@ -271,11 +290,13 @@ To see which category a default alert policy is assigned to， see the table in 
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >
-> 还可以查看分配给角色组中角色组Microsoft 365 合规中心。 转到" **权限"** 页，然后选择角色组。 分配的角色在飞出页面上列出。
+> 还可以查看分配给角色组的角色，Microsoft 365 合规中心或Microsoft 365 Defender角色。 转到" **权限"** 页，然后选择角色组。 分配的角色在飞出页面上列出。
 
 ## <a name="managing-alerts"></a>管理警报
 
-生成警报并显示在合规中心的警报页面上后，你可以对警报进行会审、调查和解决。 以下是您可以执行以管理警报的一些任务。
+生成警报并显示在合规中心的警报页面上后，你可以对警报进行会审、调查和解决。 授予用户对警报的访问权限的相同 [RBAC](#rbac-permissions-required-to-view-alerts) 权限也允许用户管理警报。
+
+以下是您可以执行以管理警报的一些任务。
 
 - **为警报分配状态。** 你可以为警报分配以下状态之一：Active **(默认值**) 、**正在** 调查、已解决或 **已消除**。 然后，可以筛选此设置以显示具有相同状态设置的警报。 此状态设置可帮助跟踪警报管理过程。
 
@@ -301,9 +322,9 @@ To see which category a default alert policy is assigned to， see the table in 
 
 由策略触发Office 365 云应用安全现在显示在合规中心的"**警报**"页面上。 这包括活动策略触发的警报，以及由活动策略中的异常检测策略触发Office 365 云应用安全。 这意味着可以查看合规中心内的所有警报。 Office 365 云应用安全 E5 或美国政府 Office 365 企业版 G5 订阅Office 365组织可用。 有关详细信息，请参阅概述[云应用安全。](/cloud-app-security/what-is-cloud-app-security)
 
-已Microsoft Cloud App Security 企业移动性 + 安全性 E5 订阅的一部分或作为独立服务的组织还可以查看 云应用安全 警报，这些警报与 Microsoft 365 中的 Microsoft 365 合规中心 应用和服务相关。
+已将 Microsoft Cloud App Security 作为 企业移动性 + 安全性 E5 订阅的一部分或作为独立服务的组织还可以在 Microsoft 365 合规中心 或 Microsoft 365 Defender 门户中查看与 Microsoft 365 应用和服务相关的 云应用安全 警报。
 
-若要仅显示云应用安全中心中的警报，请使用"源"**筛选器并选择****"云应用安全"。**
+若要仅显示云应用安全中心或 Defender 门户中的警报，请使用源筛选器并选择"云应用安全"。  
 
 ![使用"源"筛选器仅显示云应用安全警报](../media/FilterCASAlerts.png)
 

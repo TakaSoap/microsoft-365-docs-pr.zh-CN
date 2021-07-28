@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: c5eebef3e2c6021efc08ff1ed41ba28bacc92487
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 512f08a621487fb2c3f2fd9f6b5d8ac00e49ac5e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339426"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541049"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
@@ -198,6 +198,56 @@ TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中�
 ### <a name="insider-risk-management"></a>内部风险管理
 
 预览体验成员风险管理解决方案可以使用来自第三方数据的信号（如选择性 HR[](insider-risk-management.md)数据）来最大程度地降低内部风险，让你可以检测、调查和处理组织中存在风险的活动。 例如，HR 数据连接器导入的数据用作风险指示器，以帮助检测离职的员工数据盗窃。
+
+## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>使用电子数据展示工具搜索第三方数据
+
+使用数据连接器导入和存档用户邮箱中的第三方数据后，可以使用 Microsoft 365 电子数据展示工具搜索第三方数据。 您还可以使用电子数据展示工具创建与核心电子数据展示相关联的基于查询的保留，Advanced eDiscovery事例以保留第三方数据。 有关电子数据展示工具的更多信息，请参阅电子数据展示[Microsoft 365。](ediscovery.md)
+
+若要搜索 (或将已导入) 连接器导入用户邮箱的任何类型第三方数据置于保留状态，可以使用以下搜索查询。 请确保将搜索范围确定为用户邮箱。
+
+```powershell
+kind:externaldata
+```
+
+可以在"关键字"框中使用此查询进行内容搜索、与核心电子数据展示案例关联的搜索或 Advanced eDiscovery。
+
+![查询以搜索第三方数据](..\media\SearchThirdPartyData1.png)
+
+您还可以使用 property：value 对将搜索范围缩小到 `kind:externaldata` 第三方数据。 例如，若要搜索从导入项目的 **Subject** 属性中包含 *单词 contoso* 的任何第三方数据源导入的项目，请使用"**关键字**"框中的以下查询：
+
+```powershell
+subject:contoso AND kind:externaldata
+```
+
+或者，您可以使用 Message **kind** 条件配置相同的查询。
+
+![使用邮件类型条件将搜索范围缩小到第三方数据](..\media\SearchThirdPartyData2.png)
+
+若要搜索特定类型的存档第三方数据，请使用搜索查询中的 **itemclass** 邮箱属性。 使用以下 property：value 格式：
+
+```powershell
+itemclass:ipm.externaldata.<third-party data type>
+```
+
+第三方数据连接器导入的每一项都包括 **itemclass** 属性，其值对应于第三方数据数据类型。 例如，若要在导入项目的 **Subject** 属性中搜索包含 *单词 contoso* 的 Facebook 数据，请使用以下查询：
+
+```powershell
+subject:contoso AND itemclass:ipm.externaldata.facebook*
+```
+
+下面是适用于不同类型的第三方数据的 **itemclass** 值的一些示例。
+
+| **第三方数据类型** | **itemclass 属性的值**   |
+|---------------------------|-------------------------------------|
+| Bloomberg 消息         | ipm.externaldata.bloombergmessage* |
+| CellTrust                 | ipm.externaldata.celltrust*        |
+| Pivot                     | ipm.externaldata.pivot*            |
+| WhatsApp 存档器         | ipm.externaldata.whatsapparchiver* |
+|||
+
+*itemclass 属性的值* 不区分大小写。 通常，使用第三方名称（不含数据类型 (空格）后) 通配符 ( * ) 字符。
+
+有关创建电子数据展示搜索查询的信息，请参阅关键字 [查询和电子数据展示的搜索条件](keyword-queries-and-search-conditions.md)。
 
 ## <a name="data-connectors-in-the-us-government-cloud"></a>美国政府云中的数据连接器
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，了解如何注册 Microsoft 365 Lighthouse。
-ms.openlocfilehash: e87757f22cc76bf681058ab453bdfdf60c6c64c9
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d53c95ac636af38d458c1259f8d75c1e59f9d775
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542365"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587917"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>注册Microsoft 365 Lighthouse
 
@@ -49,7 +49,7 @@ ms.locfileid: "53542365"
 1. 选择 **"购买"。**
 
     > [!NOTE]
-    > Microsoft 365 Lighthouse租户需要一个许可证。 无需其他每用户许可证。 
+    > Microsoft 365 Lighthouse仅需要合作伙伴租户的一个许可证。 合作伙伴不需要其他每用户许可证，并且任何Microsoft 365 Lighthouse租户中都不需要任何用户许可证。 
 
     若要验证Microsoft 365 Lighthouse已成功添加到租户，Microsoft 365 Lighthouse">"**中**"帐单"下查找Microsoft 365 管理中心。
 

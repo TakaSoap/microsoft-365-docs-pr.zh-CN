@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 98ea631536bbfa9e1858f70ae3a0ea9de8743572
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 02502269c1f33a0aba6ef0102a87116020026411
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029773"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567376"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -54,17 +54,17 @@ ms.locfileid: "53029773"
 
 下图显示了由行为阻止和抑制功能触发的警报示例：
 
-:::image type="content" source="images/blocked-behav-alert.png" alt-text="通过行为阻止和包含的警报示例":::
+:::image type="content" alt-text="通过行为阻止和包含的警报示例" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在信息警报Microsoft 365 Defender <https://security.microsoft.com> 此类行为。 默认情况下不会启用攻击面减少规则;在策略中[配置Microsoft 365 Defender。](microsoft-defender-security-center.md)
+- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft 365 Defender门户中 () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在门户 中配置[Microsoft 365 Defender策略](microsoft-defender-security-center.md)。
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。) 
 
 - **[反馈循环阻止 (](feedback-loop-blocking.md)** 也称为快速保护) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
 
-- **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下未启用;在 Microsoft 365 Defender.) 
+- **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下运行，默认情况下不启用;在 Microsoft 365 Defender.) 
 
 随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
@@ -95,7 +95,7 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 - 第一个保护层检测到攻击行为。 云中的设备学习分类器正确地将威胁标识为 并立即指示客户端设备阻止攻击。
 - 第二个保护层，帮助阻止攻击通过第一层、检测到进程正在停靠、停止该进程并删除了相应文件 (如 Lokibot) 。
 
-在检测到并停止攻击时，警报（如"初始访问警报）"会触发并出现在 Microsoft 365 Defender[门户](microsoft-defender-security-center.md)中 (以前Microsoft Defender 安全中心) ：
+在检测到并停止攻击时，警报（如"初始访问警报）"被触发并出现在 Microsoft 365 Defender[门户中](microsoft-defender-security-center.md)。
 
 :::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Microsoft 365 Defender门户中的初始Microsoft 365 Defender警报":::
 
@@ -105,15 +105,15 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 如最近的博客文章行为阻止和抑制： [将](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)光学镜头转换为保护中所述，2020 年 1 月，Defender for Endpoint 检测到组织中设备上的权限提升活动。 触发了名为"使用 NTLM 中继的可能特权升级"的警报。
 
-:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="Juicy Malware 恶意软件的 NTLM 警报":::
+:::image type="content" alt-text="Juicy Malware 恶意软件的 NTLM 警报" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
 威胁已变成恶意软件;它是名为 Juicy 为的黑客工具的一个之前未发现的新变体，攻击者使用该工具在设备上获取特权提升。
 
 警报触发后的几分钟内，将分析文件并确认为恶意文件。 其进程已停止和阻止，如下图所示：
 
-:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="项目被阻止":::
+:::image type="content" alt-text="项目被阻止" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
 
-项目被阻止几分钟后，同一设备的多个同一文件实例被阻止，从而阻止其他攻击者或其他恶意软件在设备上部署。
+项目被阻止几分钟后，同一设备的多个同一文件实例被阻止，从而阻止更多攻击者或其他恶意软件在设备上部署。
 
 此示例显示，使用行为阻止和抑制功能，可以自动检测、包含和阻止威胁。
 

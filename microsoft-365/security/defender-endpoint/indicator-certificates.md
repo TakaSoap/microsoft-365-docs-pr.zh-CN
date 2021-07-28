@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2354a6b86f88ac8d49956677d318700c8e104719
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542293"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588133"
 ---
 # <a name="create-indicators-based-on-certificates"></a>创建基于证书的指示器
 
@@ -33,16 +33,14 @@ ms.locfileid: "53542293"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
 你可以为证书创建指示器。 一些常见用例包括：
 
 - 当你需要部署阻止技术（如攻击面减少规则和受控文件夹[](attack-surface-reduction.md)访问权限）但需要允许[](controlled-folders.md)已签名应用程序的行为时，需要在允许列表中添加证书。
 - 阻止在整个组织中使用特定的已签名应用程序。 通过创建用于阻止应用程序证书的指示器，Windows Defender AV 将阻止文件执行 (并修正) 自动调查和修正的行为相同。
 
-
-### <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>准备工作
 
 在创建证书指示器之前，了解以下要求很重要：
 
@@ -52,32 +50,30 @@ ms.locfileid: "53542293"
 - 病毒和威胁防护定义必须最新的。
 - 此功能当前支持输入 。CER 或 。PEM 文件扩展名。
 
->[!IMPORTANT]
+> [!IMPORTANT]
+>
 > - 有效的叶证书是具有有效证书路径的签名证书，必须链接至 Microsoft 信任的 (CA) 根证书颁发机构。  或者，只要自定义 (自签名) 证书受客户端信任 (根 CA 证书安装在本地计算机"受信任的根证书颁发机构") 下。
 >- 允许/阻止证书 IOC 的子级或父级不包括在允许/阻止 IoC 功能中，仅支持叶证书。
 >- 无法阻止 Microsoft 签名的证书。
 
-#### <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>从设置页面创建证书指示器：
+## <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>从设置页面创建证书指示器：
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > 创建和删除证书 IoC 可能需要 3 小时。
 
-1. 在导航窗格中，选择"设置规则"下 (终结点  >    > 
- ) 。   
+1. 在导航窗格中，选择"设置规则"下 (终结点 \>  \> ) 。 
 
+2. 选择 **"添加指示器"。**
 
-2. 选择" **证书"** 选项卡。
-
-3. 选择 **"添加项目"。**
-
-4. 指定以下详细信息：
+3. 指定以下详细信息：
    - Indicator - 指定实体详细信息并定义指示器的过期时间。
    - 操作 - 指定要采取的操作并提供说明。
    - Scope - 定义计算机组的范围。
 
-5. 查看"摘要"选项卡 **中的详细信息**，然后单击"保存 **"。**
+4. 查看"摘要"选项卡中的详细信息，然后单击"保存 **"。**
 
 ## <a name="related-topics"></a>相关主题
+
 - [创建指示器](manage-indicators.md)
 - [创建文件指示器](indicator-file.md)
 - [创建 IP 和 URL/域指示器](indicator-ip-domain.md)

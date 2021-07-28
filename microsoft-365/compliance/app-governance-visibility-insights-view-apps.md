@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 查看你的应用。
-ms.openlocfilehash: 48a1a2140a3b59091796ca013a12eeefb8a284b9
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 448ca4cd7fab13ce25c3bcc18c350d227461ee45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420029"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541095"
 ---
 # <a name="view-your-apps"></a>查看你的应用
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-Microsoft 应用治理让你可以快速深入了解租户中的 Microsoft 365 应用。 例如，你可以看到：
+通过 Microsoft 应用治理，可以快速深入了解租户中的 Microsoft 365 应用。例如，你可以查看：
 
 - 租户中使用 Microsoft Graph API，并且已启用 OAuth 的应用列表，以及相关的应用元数据和使用情况数据。
 - 通过在列表中选择一个应用，可以看到包含更深入的见解和信息的应用详细信息。
@@ -44,7 +44,7 @@ Microsoft 应用治理让你可以快速深入了解租户中的 Microsoft 365 �
 
 - 应用名称
 - 发布者
-- 应用认证
+- M365 认证
 
   指示应用是否与 Microsoft 技术兼容、是否符合云应用安全最佳实践以及是否受 Microsoft 支持。
 
@@ -79,7 +79,7 @@ Microsoft 应用治理让你可以快速深入了解租户中的 Microsoft 365 �
 | 权限 | 查看应用授予和使用的权限的摘要以及特定权限的列表。 有关详细信息，请参阅 [Microsoft Graph 权限参考](/graph/permissions-reference)。 |
 |||
 
-对于已启用的应用，还有一个“**禁用应用**”控件和一个“**启用应用**”控件，前者用于禁用所选应用，后者用于启用已禁用应用。 这些操作需要以下[管理员角色](app-governance-get-started.md#administrator-roles)才能执行：
+对于已启用的应用，还有一个“**禁用应用**”控件和一个“**启用应用**”控件，前者用于禁用所选应用，后者用于启用已禁用应用。 这些操作需要以下管理员角色才能执行：
 
 - 合规管理员
 - 全局管理员

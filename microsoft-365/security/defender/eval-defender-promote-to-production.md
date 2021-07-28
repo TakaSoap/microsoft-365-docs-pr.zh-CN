@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b67f0f493c97b900fa08b10e3eb7a5967560dcfd
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457690"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588121"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>将Microsoft 365 Defender环境推广到生产环境
 
@@ -48,15 +48,15 @@ Defender for Identity 不需要任何其他配置。 只需确保你已购买必
 5. 停用任何第三方 SMTP 网关，并禁用或删除与此中继关联的任何 EXO 连接器。
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
-若要将 Microsoft Defender for Endpoint 评估环境从试点推广到生产环境，只需使用任何受支持的工具和方法将更多终结点 [载入服务](/defender-endpoint/onboard-configure)。
+若要将 Microsoft Defender for Endpoint 评估环境从试点推广到生产环境，只需使用任何受支持的工具和方法将更多终结点 [载入服务](../defender-endpoint/onboard-configure.md)。
 
 使用以下一般准则将更多设备载入到 Microsoft Defender for Endpoint。 
 
-1. 验证设备是否满足最低 [要求](/defender-endpoint/minimum-requirements)。
+1. 验证设备是否满足最低 [要求](../defender-endpoint/minimum-requirements.md)。
 2. 根据设备，请按照 Defender for Endpoint 门户的载入部分中提供的配置步骤操作。
 3. 为设备使用适当的管理工具和部署方法。
 4.  运行检测测试，验证设备是否正确载入并报告给服务。
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-cloud-app-security"></a>Microsoft 云应用安全
 Microsoft Cloud App Security不需要任何其他配置。 只需确保你已购买必要的许可证。 如果将部署范围缩小到某些用户组，请增加这些组的范围，直到达到生产规模。 
 
