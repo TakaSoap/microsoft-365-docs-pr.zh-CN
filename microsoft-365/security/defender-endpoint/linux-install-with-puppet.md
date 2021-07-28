@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d54732134e91b87b2639634c365556beda5312b0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f935815f7830b8697e1870bde89af8fa056534ff
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934569"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543301"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>使用部署在 Linux 上的 Microsoft Defender for Endpoint
 
@@ -51,13 +51,13 @@ ms.locfileid: "51934569"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从以下网站下载载入Microsoft Defender 安全中心：
+从应用门户下载Microsoft 365 Defender包：
 
-1. In Microsoft Defender 安全中心， go to **设置 > Device Management > Onboarding**.
+1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft Defender 安全中心屏幕截图](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender门户屏幕截图](images/portal-onboarding-linux-2.png)
 
 4. 在命令提示符下，验证您是否具有该文件。 
 

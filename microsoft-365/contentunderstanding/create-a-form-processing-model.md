@@ -1,8 +1,9 @@
 ---
-title: 创建表单处理模型
-ms.author: efrene
-author: efrene
+title: 在 Microsoft SharePoint Syntex 中创建表单处理模型
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: 在 Microsoft SharePoint Syntex 中创建表单处理模型。
-ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何在 SharePoint Syntex 中创建表单处理模型。
+ms.openlocfilehash: fb643ac4ce009e3344aa444229fc75ccf478b876
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905842"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543044"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建表单处理模型
 
@@ -27,124 +28,112 @@ ms.locfileid: "50905842"
 
 </br>
 
-使用[AI Builder](/ai-builder/overview) - Microsoft PowerApps 中的一项功能 - SharePoint Syntex 用户可以直接从 SharePoint 文档库中创建[表单处理模型](form-processing-overview.md)。 
+使用 [AI Builder](/ai-builder/overview) - Microsoft PowerApps 中的一项功能 - SharePoint Syntex 用户可以直接根据 SharePoint 文档库创建“[表单处理模型](form-processing-overview.md)”。 
 
-创建表单处理模型涉及以下操作：
- - 步骤 1：创建表单处理模型以创建内容类型
- - 步骤 2：添加和分析示例文件
- - 步骤 3：选择表单字段
- - 步骤 4：培训并测试你的模型
- - 步骤 5：发布模型
- - 步骤 6：使用模型
+创建表单处理模型涉及以下步骤：
+
+ - [步骤 1：创建表单处理模型](create-a-form-processing-model.md#step-1-create-a-form-processing-model)
+ - [步骤 2：添加和分析文档](create-a-form-processing-model.md#step-2-add-and-analyze-documents)
+ - [步骤3：标记字段和表](create-a-form-processing-model.md#step-3-tag-fields-and-tables)
+ - [步骤 4：训练并测试模型](create-a-form-processing-model.md#step-4-train-and-publish-your-model)
+ - [步骤 5：使用模型](create-a-form-processing-model.md#step-5-use-your-model)
 
 ## <a name="requirements"></a>要求
 
-只能在启用了表单处理的 SharePoint 文档库中创建表单处理模型。 如果已启用表单处理，你可以在文档库中的“**自动化**”菜单下看到 “**AI Buidler**” “**创建表单处理模型**”。  如果需要在文档库中启用处理，则必须联系你的 SharePoint 管理员。
+只能在启用了表单处理模型的 SharePoint 文档库中创建表单处理模型。 如果已启用表单处理，则可以在文档库中看到“**自动化**” > “**AI Buidler**” > “**创建表单处理模型**”菜单。 如果需要在文档库中启用处理，则必须联系你的 SharePoint 管理员。
 
- ![创建 AI Builder 模型](../media/content-understanding/create-ai-builder-model.png)</br>
+ ![显示 AI Builder 模型的屏幕截图。](../media/content-understanding/create-ai-builder-model2.png)
 
 ## <a name="step-1-create-a-form-processing-model"></a>步骤 1：创建表单处理模型
 
-创建表单处理模型的第一步是将其命名并创建新内容类型的定义，以及为其创建新的文档库视图。
+创建表单处理模型的第一步是命名模型、定义新内容类型，以及为其创建新的文档库视图。
 
-1. 在文档库中，选择 “**自动化**”菜单，选择 “**AI Builder**”，然后选择“**创建表单处理模型**”。
+1. 在文档库中，选择“**自动化**”菜单，选择“**AI Builder**”，然后选择“**创建表单处理模型**”。
 
-    ![创建模型](../media/content-understanding/create-ai-builder-model.png)</br>
+    ![显示“自动化”菜单和“创建表单处理模型”选项的屏幕截图。](../media/content-understanding/create-ai-builder-model2.png)
 
-2. 在“**新的表单处理模型**”窗格中，在“**名称**”字段中，键入模型的名称（例如，“*采购订单*”）。
+2. 在“**创建表单处理模型**”窗格的 **名称** 字段中，键入模型的名称（例如，“*购买订单*”）。
 
-    ![新的表单处理模型](../media/content-understanding/new-form-model.png)</br> 
+    ![显示创建表单处理模型面板的屏幕截图。](../media/content-understanding/new-form-model2.png) 
 
-3. 创建表单处理模型时，将创建新的 SharePoint 内容类型。 SharePoint 内容类型表示具有共同特征的文档类别，并共享该特定内容的列或元数据属性的集合。 可通过“[内容类型库]()”管理 SharePoint 内容类型。
+3. 现在，可以从 SharePoint 文档库中共享类似布局的结构化文件（如发票或税务文档）*集合* 中自动提取和保存信息。 使用这一功能，可以将多个模型组合到单个模型中，并提取特定的表项信息。
 
-    如果想要将此模型映射到 SharePoint 内容类型库中的现有内容类型以使用其架构，请选择“**高级设置**”。 
+   集合名称将保存到应用模型的文档库中的专用列，这使你可以区分由同一模型处理的不同文件布局。
 
-4. 你的模型将在文档库中为提取的数据创建一个新视图。 如果不希望其成为默认视图，请取消选择“**将视图设置为默认**”。
+   此外，提取的表信息将保存到指定列表，并与上传的文件相关联，以便轻松查看或实现其他业务流程自动化。
+
+   要将表信息提取到关联列表，请执行以下操作：<br><br>
+
+     1. 在 **从表中提取信息？** 部分中，选择“**是**”。
+
+      ![显示创建表单处理模型面板上从表中提取信息部分的屏幕截图。](../media/content-understanding/extract-info-from-tables.png) 
+
+     2. 在 **应在何处保存表信息？** 部分中，执行以下操作：
+ 
+        - 如果选择“**新列表**”（默认设置），则会在 **新建列表名称** 框中自动提供建议的名称。 可以按需修改名称。 要在网站导航中显示列表，请选择“**在网站导航中显示**”复选框。
+
+        - 如果选择“**现有列表**”，请在“**所选列表**”框中，选择要使用的列表。
+
+4. 创建表单处理模型时，将创建新的 SharePoint 内容类型。 SharePoint 内容类型表示具有共同特征的文档类别，并共享该特定内容的列或元数据属性的集合。 SharePoint 内容类型通过 SharePoint 管理中心进行管理。
+
+   要将此模型映射到 SharePoint 内容类型库中的现有内容类型，请选择“**高级设置**”。
+
+    ![显示创建表单处理模型面板中高级设置的屏幕截图。](../media/content-understanding/new-form-model-advanced-settings.png) 
+
+   1. 在 **内容类型** 部分中，选择是创建新内容类型还是使用现有内容类型。 
+
+   2. 要使用现有内容类型，请选择“**选择一个**”，然后从列表中选择内容类型。
+
+   3. 你的模型将在文档库中为提取的数据创建一个新视图。 如果不希望该视图为默认视图，请在 **此模型的库视图** 部分中，清除“**将视图设置为默认**”复选框。
+
+   4. 要将保留标签应用于文件，请在 **保留标签** 部分中，选择要使用的保留标签。
 
 5. 选择 **“创建”**。
 
 ## <a name="step-2-add-and-analyze-documents"></a>步骤 2：添加和分析文档
 
-创建新的表单处理模型后，浏览器将打开一个新的 PowerApps AI Builder 表单处理模型页面。 在此页面上，你可以添加和分析示例文档。 </br>
+创建新的表单处理模型后，浏览器将打开一个新的 PowerApps AI Builder 表单处理模型页面。 在此页面上，可以添加和分析示例文档。 
 
 > [!NOTE]
-> 查找要使用的示例文件时，请参阅[表单处理模型输入文档要求和优化提示](/ai-builder/form-processing-model-requirements)。 
-
-   ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
+> 查找要使用的示例文件时，请参阅 [表单处理模型输入文档要求和优化提示](/ai-builder/form-processing-model-requirements)。 
  
-1. 选择“**添加文档**”，开始添加已分析的示例文档，以确定可提取的指名值对。 然后，你可以选择“**从本地存储上传**”、“**SharePoint**”，或“**Azure Blob 存储**”。 至少需要使用五个文件进行培训。
+1. 首先定义要在 **选择要提取的信息** 页上指导模型进行提取的字段和表。 有关详细步骤，请参阅 [定义要提取的字段和表](/ai-builder/create-form-processing-model#define-fields-and-tables-to-extract)。 
 
-2. 添加文件后，选择“**分析**”，检查所有文件的任何常见信息。 此操作可能需要几分钟才能完成。</br> 
+2.  可以创建希望模型处理的尽可能多的文档布局集合。 有关详细步骤，请参阅 [按集合分组文档](/ai-builder/create-form-processing-model#group-documents-by-collections)。 
+
+3. 创建集合并为每一个添加示例文件后，AI Builder 将检查已上传文档以检测字段和表。 这通常需要几分钟时间。 分析完成后，可以继续标记文档。
+
+## <a name="step-3-tag-fields-and-tables"></a>步骤 3：标记字段和表
+
+需要标记文档，以指导模型理解要提取的字段和表数据。 有关详细步骤，请参阅 [标记文档](/ai-builder/create-form-processing-model#tag-documents)。
+
+## <a name="step-4-train-and-publish-your-model"></a>步骤 4：训练和发布模型
+
+1. 创建和训练模型后，即已准备好发布模型并在 SharePoint 中使用它。 有关详细步骤，请参阅 [训练和发布表单处理模型](/ai-builder/form-processing-train)。 
+
+2. 发布模型后，选择“**使用模型**”，然后选择“**创建流**”。 此操作将创建一个可在 SharePoint 文档库中运行，并提取已在模型中标识的字段的 Power Automate 流。
+
+    ![AI Builder 中的屏幕截图，其中显示了创建流面板。](../media/content-understanding/ai-builder-create-a-flow.png)
  
-    ![分析文件](../media/content-understanding/analyze.png)</br> 
+3. 完成后，你将看到以下消息 *已成功创建流*。
 
-3. 分析文件后，在“**选择想要保存的表单域**”页面上，选择该文件以查看检测到的字段。</br>
+    ![AI Builder 中显示已成功创建流的屏幕截图。](../media/content-understanding/ai-builder-flow-created.png)
 
-    ![选择表单字段](../media/content-understanding/select-form-fields.png)</br> 
+4. 选择“**转到 SharePoint**”按钮，以查看随模型更新的文档库。
 
-## <a name="step-3-select-your-form-fields"></a>步骤 3：选择表单字段
+## <a name="step-5-use-your-model"></a>步骤 5：使用模型
 
-为字段而分析文档后，你现在可以看到找到的字段，并确定要保存的字段。 保存的字段在模型的文档库视图中显示为列，并显示从每个文档中提取的值。
+1. 在文档库模型视图中，请注意所选字段现在已显示为列。
 
-1. 下一页将显示其中一个示例文件，并突出显示系统自动检测到的所有常见字段。 </br>
+    ![已应用文档库模型。](../media/content-understanding/doc-lib-view.png)
 
-    ![选择字段页](../media/content-understanding/select-fields-page.png)</br> 
+2. 请注意，**文档** 旁边的信息链接指出表单处理模型已应用于此文档库。
 
-2. 选择要保存的字段，然后选中该复选框以确认选择。 例如，在“采购订单”模型 中，选择选中“*日期*”、“*PO*” 和 “*总数*”字段。  请注意，如果选择的话，你也也可以选择重命名字段。 </br>
+    ![“信息”按钮。](../media/content-understanding/info-button.png)  
 
-    ![选择 PO#](../media/content-understanding/po.png)</br> 
+3. 将文件上传到文档库。 任何由模型识别为其内容类型的文件都会在视图中列出文件，并在列中显示提取的数据。
 
-3. 如果分析未检测到字段，你仍然可以选择添加。 突出显示要提取的信息，然后在名称框中键入所需名称。 然后选中复选框。 请注意，你需要在其余示例文件中确认未检测到的字段。
-
-4. 选择要保存的字段后，单击“**确认字段**”。 </br>
- 
-    ![选择字段后确认字段](../media/content-understanding/confirm-fields.png)</br> 
- 
-5. 在“**选择想要保存的表单字段**”页面，它将显示所选的字段数量。 选择 **“完成”**。
-
-## <a name="step-4-train-and-test-your-model"></a>步骤 4：培训并测试你的模型
-
-选择想要保存的字段后，“**模型摘要**”页可用于培训并测试模型。
-
-1. 在“**模型摘要**”页面上，已保存的字段将显示在“**选定字段**”部分。 选择“**培训**”以开始对示例文件进行培训。 请注意，这可能需要几分钟才能完成。</br>
-
-     ![选择字段培训](../media/content-understanding/select-fields-train.png)</br> 
-
-2. 当你看到“已完成培训”的通知时，请选择“**转到详细信息页面**。 
-
-3. 在“**模型详细信息**”页面上，可选择“**快速测试**”来测试模型的工作方式。 这使你可以将文件拖放到页面上，查看是否检测到字段。
-
-    ![确认字段](../media/content-understanding/select-fields-train.png)</br> 
-
-2. 当你看到“已完成培训”的通知时，请选择“**转到详细信息页面**。 
-
-3. 在“**模型详细信息**”页面上，选择“**快速测试**”来测试模型的工作方式。 这使你可以将文件拖放到页面上，查看是否检测到字段。
-
-## <a name="step-5-publish-your-model"></a>步骤 5：发布模型
-
-1. 如果你对模型的结果感到满意，请选择“**发布**”，使其可供使用。
-
-2. 发布模型后，选择“**使用模型**”。 这将创建一个可在 SharePoint 文档库中运行的 PowerAutomate 流，它还可以提取已在模型中标识的字段，然后选择“**创建流**”。
-  
-3. 完成后，你将看到一条消息，“**已成功创建流**”。
- 
-## <a name="step-6-use-your-model"></a>步骤 6：使用模型
-
-发布模型并创建 PowerAutomate 流后，可在 SharePoint 文档库中使用模型。
-
-1. 发布模型后，选择“**转到 SharePoint**”，以便转到文档库。
-
-2. 在文档库模型视图中，注意看，所选字段现在已显示为列。</br>
-
-    ![已应用文档库模型](../media/content-understanding/doc-lib-view.png)</br> 
-
-3. 注意看，**文档** 旁的信息链接提示了表单处理模型已应用于此文档库。
-
-    ![信息按钮](../media/content-understanding/info-button.png)</br>  
-
-4. 将文件上传到文档库。 任何被模型识别为其内容类型的文件都会在视图中列出文件，并且在列中显示提取的数据。</br>
-
-    ![完成](../media/content-understanding/doc-lib-done.png)</br>  
+    ![已完成。](../media/content-understanding/doc-lib-done.png) 
 
 ## <a name="see-also"></a>另请参阅
   

@@ -1,8 +1,9 @@
 ---
-title: 将保留标签应用于模型
-ms.author: efrene
-author: efrene
+title: 在 SharePoint 整合中向模型应用保留标签
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Normal
-description: 本文讨论如何将保留标签应用于 SharePoint Syntex 中的模型
-ms.openlocfilehash: 00a8d255b3274af3cd96527e0dcd2ae2644226ac
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: 了解如何将保留标签应用于 SharePoint Syntex。
+ms.openlocfilehash: 5fa028664f0f981c9a95c31eac256f3a149a250a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861607"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543181"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>在 SharePoint 整合中向模型应用保留标签
 

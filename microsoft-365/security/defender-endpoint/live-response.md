@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e7acc625694c9296970f7872e8afa6551c2e0f9d
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 52334acf594661f4236fb04ef0cba768cb0540d4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590943"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543661"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -32,7 +32,7 @@ ms.locfileid: "53590943"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 实时响应使安全运营团队能够即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够实时执行深入调查工作，并立即采取响应操作，以迅速包含识别的威胁。 
 
@@ -61,7 +61,7 @@ ms.locfileid: "53590943"
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019**
+  - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384) 版本) 更高版本 
     - 版本 1809 ([KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818)) 
 
@@ -78,6 +78,10 @@ ms.locfileid: "53590943"
     
 - **确保设备具有分配给它的自动化修正级别**。<br>
 你至少需要启用给定设备组的最低修正级别。 否则，将无法与该组的成员建立实时响应会话。
+
+    您将收到以下错误：
+
+    ![错误消息的图像](images/live-response-error.png)
 
 - **启用实时响应未签名脚本执行 (** 可选) 。 <br>
 

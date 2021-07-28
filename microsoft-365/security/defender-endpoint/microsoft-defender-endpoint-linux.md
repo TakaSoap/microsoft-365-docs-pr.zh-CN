@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: b7f834a50156f09cd3fca355bbf1dd8f6a853b2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256887"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542125"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -43,9 +43,9 @@ ms.locfileid: "53256887"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
-- 访问 Microsoft Defender 安全中心 门户
+- 访问 Microsoft 365 Defender 门户
 - 使用系统 [系统管理器的](https://systemd.io/) Linux 分发
 - Linux 和 BASH 脚本的初学者级体验
 - 手动部署时，设备上 (管理权限) 
@@ -54,8 +54,6 @@ ms.locfileid: "53256887"
 >  Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
 > 
 > Linux 上的 Microsoft Defender for Endpoint 尚未集成到 Azure 安全中心。
-
-
 
 ### <a name="installation-instructions"></a>安装说明
 

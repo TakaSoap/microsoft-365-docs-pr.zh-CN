@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7de216c1397a7cc4806af8221257eeedd2290830
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 554767c1db2d4122c7bc77c47a55772e4ddaa0a6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933309"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542173"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 
@@ -33,7 +33,7 @@ ms.locfileid: "51933309"
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
-本文提供了一些常规步骤，以减少安全中心门户中丢失的事件 [或](https://securitycenter.windows.com/) 警报。
+本文提供了一些常规步骤，以减少事件门户中缺少Microsoft 365 Defender[警报](https://security.microsoft.com/)。
 
 在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节将解决缺失某些或所有预期事件的情况。
 例如，如果缺少 _所有 CreatedFile_ 事件。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5590e62e7838bb9f611320b6d0e5c573b2be084
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e24153da80cc5ab1b1b6103e83d6378e210733d9
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841554"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596358"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>优化 ASR 规则部署和检测
 
@@ -31,11 +31,13 @@ ms.locfileid: "52841554"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
 [攻击面减少 (ASR) 识别](./attack-surface-reduction.md) 并阻止典型的恶意软件攻击。 它们控制何时以及如何运行潜在的恶意代码。 例如，它们可以防止 JavaScript 或 VBScript 启动下载的可执行文件、阻止从 Office 宏调用 Win32 API 以及阻止从 USB 驱动器运行的进程。
 
-![攻击面管理卡](images/secconmgmt_asr_card.png)<br>
+
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻击面管理卡":::
+<br>
 *攻击面管理卡*
 
 攻击 *面管理卡* 是安全中心中Microsoft 365入口点，可用于：
@@ -44,7 +46,7 @@ ms.locfileid: "52841554"
 * 查看 ASR 检测并识别可能的不正确检测。
 * 分析排除的影响并生成要排除的文件路径列表。
 
-选择 **转到攻击面管理**  >  **监视&报告>攻击面减少规则>添加排除项**。 然后，你可以导航到安全中心Microsoft 365分区。
+选择 **转到攻击面管理**  >  **报告**  >  **攻击面减少规则**  >  **添加排除** 项。 然后，你可以导航到安全中心Microsoft 365分区。
 
 ![在安全中心的"攻击面减少规则"Microsoft 365排除项"选项卡](images/secconmgmt_asr_m365exlusions.png)<br>
 安全 ***中心的"攻击** 面减少规则"页中的"添加排除Microsoft 365选项卡*

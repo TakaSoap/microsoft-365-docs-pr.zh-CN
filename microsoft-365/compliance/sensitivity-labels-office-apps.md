@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: b515ce5f24b93888b138cf0f61cefdf20cf49515
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430752"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543613"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -90,9 +90,9 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | 是 |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
-|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 审阅中 | 审阅中           | 审阅中               | 审阅中 |
+|[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 即将推出：16.51+ <sup>\*</sup> | 即将推出：4.2126+ | 即将推出：4.2126+ | 审阅中 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
-|[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | 是 |
+|[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | 是 |
 |
 
 **Footnotes:**
@@ -317,7 +317,7 @@ Office 应用应用的内容标记和加密与敏感度标签不同，具体取�
 | `${Item.Location}` | 被标签的文档的路径和文件名，或者标记的电子邮件的电子邮件主题 | **\\\Sales\2020\Q3\Report.docx**|
 | `${User.Name}` | 显示应用标签的用户名称 | **Richard Simone** |
 | `${User.PrincipalName}` | 应用标签的用户的 Azure AD 用户主体名称 （UPN） | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | 标记内容的日期和时间，位于应用标签的用户的本地时区 | **2020/8/10 下午 1：30** |
+| `${Event.DateTime}` | 标记内容的日期和时间，以应用 Microsoft 365 应用中应用标签的用户的本地时区，或 Office Online 和自动标签策略的 UTC（协调世界时）表示 | **2020/8/10 下午 1：30** |
 
 > [!NOTE]
 > 这些变量的语法区分大小写。

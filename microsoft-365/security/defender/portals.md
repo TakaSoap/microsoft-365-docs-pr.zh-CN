@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 5b723f4faef891c04dc78a18de09a469d703c492
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 182d44c8ad46b8c711705c46aabba3393f4e0801
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228887"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595962"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全门户和管理中心
 
@@ -57,6 +57,6 @@ ms.locfileid: "53228887"
 |---|---|---| 
 | Azure 门户 | 查看和管理[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)所有[Azure 资源](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 合规中心 | 管理数据处理策略并确保 [遵守法规](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
-| Microsoft 365 管理中心 | 配置Microsoft 365服务;管理角色、许可证和跟踪对服务Microsoft 365更新 | [admin.microsoft.com](https://admin.microsoft.com/) |
+| Microsoft 365 管理中心 | 配置Microsoft 365服务;管理角色、许可证和跟踪对服务Microsoft 365更新 | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft Endpoint Manager 管理中心 | 使用[Microsoft Endpoint Manager](/mem/configmgr/) Intune 和 Configuration Manager 功能管理和保护设备 | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune门户 | 使用[Microsoft Intune](/intune/fundamentals/what-is-intune)部署设备策略并监视设备合规性 | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

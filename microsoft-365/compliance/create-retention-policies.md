@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 512bf7ed8eeaf8bea58d0a1a1e54d0ad2315bddc
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362326"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542041"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -53,6 +53,7 @@ ms.locfileid: "53362326"
 - Exchange 公用文件夹
 - Teams 通道消息
 - Teams 聊天
+- Teams 专用频道消息
 - yammer 社区消息
 - Yammer 用户消息
 

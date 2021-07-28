@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e1c81a572e74b965842d9b6888c9242b73a822c5
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769565"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543637"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -49,20 +49,20 @@ ms.locfileid: "52769565"
 |复合路径|CompoundPath|Compound_path|描述项目源的可读路径。|
 |内容*|内容||已提取项目的文本。|
 |对话正文|对话正文||项目的对话正文。|
-|对话主题|对话主题||项目的对话主题。|
-|对话 ID|ConversationId|Conversation_ID|邮件的对话 ID。|
+|对话 ID|ConversationId|Conversation_ID|邮件的对话 ID。 对于Teams一对一和群组聊天，同一对话内的所有转录文件及其系列项目共享同一对话 ID。 有关详细信息，请参阅 Advanced eDiscovery[中的内容的工作流Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md) |
 |对话索引||Conversation_index|邮件的对话索引。|
+|对话名称 | |ConversationName|频道中频道Teams。 名称的格式取决于通道的类型： <br/>Teams频道聊天和私人频道聊天：<团队名称、频道名称> <br/>Teams一对一和群聊：所有聊天参与者的显示名称和电子邮件地址<br/>Yammer社区：Community名称 + 帖子的前 120 个字符<br/>Yammer私有：发件人姓名和电子邮件地址 + 邮件的前 120 个字符|
 |对话 Pdf 时间|ConversationPdfTime||创建对话的 PDF 版本的日期。|
 |对话修订消耗时间|ConversationRedactionBurnTime||为聊天创建对话的 PDF 版本的日期。|
+|对话主题|对话主题||项目的对话主题。|
+|对话类型| ConversationType|ConversationType| 聊天对话的类型。 值为： <br/> Teams 1：1 和群聊及所有Yammer对话：**分组** 针对<br/>Teams频道和专用频道：**频道**|
+|包含已编辑邮件 |ContainsEditedMessage|ContainsEditedMessage|指示聊天脚本Teams脚本是否包含已编辑的消息
 |||Converted_file_path|转换后的导出文件的路径。 对于内部 Microsoft，请使用 。|
-|创建文档的日期|CreatedTime|Doc_date_created|从文档元数据创建日期。|
 |Custodian|Custodian|Custodian|与项目关联的保管人的名称。|
-|日期|日期|日期|Date 是依赖于文件类型的计算字段。<br /><br />电子邮件：发送日期<br />电子邮件附件：文档的上次修改日期;如果不可用，则说明父级的发送日期<br />嵌入文档：文档的上次修改日期;如果不可用，则父项的上次修改日期<br />SPO 文档 (包括新式) ：SharePoint上次修改日期;如果不可用，则文档上次修改日期<br />非Office 365文档：上次修改日期<br />会议：会议开始日期<br />VoiceMail：发送日期<br />IM：发送日期|
-|其他路径|Dedupedcompoundpath|Deduped_compound_path|与电子邮件完全相同的文档的复合路径列表 (：基于内容、文档：基于哈希) 。|
-|其他保管人|DedupedCustodians|Deduped_custodians|与电子邮件完全相同的文档保管人 (，基于内容;基于哈希值对文档) 。|
-|其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (列表（基于内容）;基于哈希值对文档) 。|
+|日期|日期|日期|Date 是依赖于文件类型的计算字段。<br /><br />电子邮件：发送日期<br />电子邮件附件：文档的上次修改日期;如果不可用，则说明父级的发送日期<br />嵌入文档：文档的上次修改日期;如果不可用，则父项的上次修改日期<br />SPO 文档 (包括新式) ：SharePoint上次修改日期;如果不可用，则文档上次修改日期<br />非Office 365文档：上次修改日期<br />会议：会议开始日期<br />VoiceMail：发送日期<br />IM：发送日期<br />Teams：发送日期|
 |文档注释|DocComments|Doc_comments|文档元数据中的注释。|
 |文档公司||Doc_company|文档元数据中的公司。|
+|创建文档的日期|CreatedTime|Doc_date_created|从文档元数据创建日期。|
 |DocIndex*|||系列中的索引。 **-1** 或 **0** 表示它是根。|
 |文档关键字||Doc_keywords|文档元数据中的关键字。|
 |修改者的文档||Doc_modified_by|文档元数据的上次修改日期。|
@@ -89,15 +89,15 @@ ms.locfileid: "52769565"
 |||Extracted_text_path|导出中提取的文本文件的路径。|
 |ExtractedTextLength*||Extracted_text_length|提取的文本中的字符数。|
 |FamilyDuplicateSet*||Family_duplicate_set|彼此完全相同的系列的数字标识符 (内容以及所有相同的) 。|
-|家庭 ID|FamilyId|Family_ID|将电子邮件的所有项目分组在一起。 这包括邮件以及所有附件和提取的项目。|
+|家庭 ID|FamilyId|Family_ID|将附件和从电子邮件中提取的项目及其父项进行分组和聊天。 这包括聊天或电子邮件以及所有附件和提取的项目。|
 |系列大小||Family_size|家庭中的文档数。|
-|文件类|FileClass|File_class|For content from SharePoint and OneDrive： **Document**;for content from Exchange： **Email** or **Attachment**.|
+|文件类|FileClass|File_class|For content from SharePoint and OneDrive： **Document**. <br/>For content from Exchange： **Email** or **Attachment**. <br/>For content from Teams or Yammer： **Conversations**. |
 |文件 ID|FileId|File_ID|文档标识符在大小写中是唯一的。|
 |创建文件系统日期||File_system_date_created|文件系统数据的创建 (仅适用于非Office 365数据) 。|
 |修改文件系统日期||File_system_date_modified|文件系统文件的修改 (仅适用于非Office 365数据) 。|
 |文件类型|FileType||基于文件扩展名的项目的文件类型。|
 |组 ID|组 ID|Group_ID|将电子邮件和文档的所有项目分组在一起。 对于电子邮件，这包括邮件以及所有附件和提取的项目。 对于文档，这包括文档和任何嵌入项目。|
-|具有附件|HasAttachment|Email_has_attachment|指示邮件是否包含附件。|
+|具有附件|EmailHasAttachment|Email_has_attachment|指示邮件是否包含附件。|
 |有律师|HasAttorney||**如此** 当在律师列表中找到至少一个参与者;否则，值为 **False**。|
 |HasText*||Has_text|指示项目是否具有文本;可能的值是 **True** 和 **False**。|
 |不可变 ID||Immutable_ID|此 ID 用于唯一标识审阅集内的文档。 此字段不能用于审阅集搜索，并且 Id 不能用于访问位于其本机位置的文档。|
@@ -133,6 +133,9 @@ ms.locfileid: "52769565"
 |O365 创建日期||O365_date_created|创建日期SharePoint。|
 |O365 修改日期||O365_date_modified|上次修改日期（SharePoint）。|
 |修改者 O365||O365_modified_by|修改者SharePoint。|
+|其他保管人|DedupedCustodians|Deduped_custodians|与电子邮件完全相同的文档保管人 (，基于内容;基于哈希值对文档) 。|
+|其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (列表（基于内容）;基于哈希值对文档) 。|
+|其他路径|Dedupedcompoundpath|Deduped_compound_path|与电子邮件完全相同的文档的复合路径列表 (：基于内容、文档：基于哈希) 。|
 |父 ID|ParentId|Parent_ID|项的父级的 ID。|
 |ParentNode||Parent_node|电子邮件线程中最接近的前一封电子邮件。|
 |参与者域|ParticipantDomains|Email_participant_domains|邮件参与者的所有域的列表。|
@@ -155,7 +158,7 @@ ms.locfileid: "52769565"
 |发件人|发件人|Email_sender|发件人 (邮件) 发件人"字段。 格式为 **DisplayName \<SmtpAddress>**。|
 |发件人/作者|SenderAuthor||计算字段，由项目的发件人或作者组成。|
 |发件人域|SenderDomain|Email_sender_domain|发件人的域。|
-|发件箱|发件箱|Email_date_sent|邮件的发送日期。|
+|发件箱|发件箱|Email_date_sent|邮件的发送日期。<br/>聊天：脚本的开始日期|
 |设置顺序：先包含|SetOrderInclusivesFirst|Set_order_inclusives_first|排序字段 - 电子邮件和附件：按时间顺序排序;documents： pivot first then by descending similarity score.|
 |设置 ID||Set_ID|同一电子邮件线程 (ND_set) 相似内容的文档或电子邮件 (Email_set) 共享相同的Set_ID。|
 |SimilarityPercent||Similarity_percent|指示文档与近重复集的透视表的相似性。|
@@ -163,9 +166,10 @@ ms.locfileid: "52769565"
 |主题|主题|Email_subject|邮件的主题。|
 |主题/标题|SubjectTitle||计算字段，由项目的主题或标题组成。|
 |标记|标记|标记|在审阅集内应用的标记。|
+|Teams频道名称|TeamsChannel|Channel_Name|频道中频道Microsoft Teams。|
 |主题列表|ThemesList|Themes_list|为分析计算的主题列表。|
-|标题|标题|Doc_title|文档元数据中的标题。|
-|到|到|Email_to|邮件类型的收件人字段。 Format 为 **DisplayName \<SmtpAddress>**|
+|Title|Title|Doc_title|文档元数据中的标题。 文档元数据中的标题。 对于Teams和Yammer，这是 ConversationName 属性的值。|
+|To|To|Email_to|邮件类型的收件人字段。 Format 为 **DisplayName \<SmtpAddress>**|
 |在电子邮件集内是唯一的|UniqueInEmailSet||**假** 如果电子邮件集的附件副本。|
 |版本组 ID||Version_Group_Id|将同一文档的不同版本分组在一起。|
 |已修正|WasRemediated|Was_Remediated|**如此** 如果该项已修正，否则 **为 假**。|

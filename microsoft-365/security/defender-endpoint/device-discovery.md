@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9a21c5d067a0ec27b00ff4b4c9aae90bbb65a062
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4d44fef395ad7da336e55f4cd0ca6eed46e9393d
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289867"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596277"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -85,10 +85,10 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 已发现但尚未由 Microsoft Defender for Endpoint 载入并保护的设备将在"终结点"选项卡内的"设备清单"中列出。你现在可以在设备清单列表中使用名为载入状态的新筛选器，该筛选器可以具有以下任何值：
 
-- 已载入 – 终结点已载入到 Microsoft Defender for Endpoint。
-- 可以载入 – 终结点已发现在网络中，操作系统被标识为 Microsoft Defender for Endpoint 支持的操作系统，但当前尚未载入。 我们强烈建议载入这些设备。
-- 不受支持 – 终结点已发现在网络中，但不受 Microsoft Defender for Endpoint 支持。
-- 信息不足 – 系统无法确定设备的可支持性。 在网络中更多设备上启用标准发现可以丰富发现的属性。
+- 已载入：终结点已载入到 Microsoft Defender for Endpoint。
+- 可以载入：已发现网络中终结点，操作系统被标识为 Microsoft Defender for Endpoint 支持的操作系统，但当前尚未载入。 我们强烈建议载入这些设备。
+- 不支持：终结点已发现在网络中，但不受 Microsoft Defender for Endpoint 支持。
+- 信息不足：系统无法确定设备的可支持性。 在网络中更多设备上启用标准发现可以丰富发现的属性。
 
 ![设备清单仪表板的图像](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
@@ -120,7 +120,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 您可以尝试此示例查询：
 
-```
+```text
 DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10

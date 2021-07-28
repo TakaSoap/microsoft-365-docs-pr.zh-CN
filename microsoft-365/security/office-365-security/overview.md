@@ -1,9 +1,9 @@
 ---
-title: Office 365 安全性, Microsoft Defender for Office 365, EOP, MSDO
+title: Office 365安全，包括 Microsoft Defender for Office 365 和 Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 06/11/2021
+ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db458f0a3a3ac2cc4a06d0827844e156798f6505
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5b9db76654e19309816b29e5cfe607c064b8d364
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083652"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542222"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365安全概述
 

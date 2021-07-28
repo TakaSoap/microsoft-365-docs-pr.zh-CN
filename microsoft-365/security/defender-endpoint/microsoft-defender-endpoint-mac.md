@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301772"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543421"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -56,7 +56,7 @@ ms.locfileid: "52301772"
 
 ### <a name="prerequisites"></a>先决条件
 
-- Defender for Endpoint 订阅和访问 Microsoft Defender 安全中心 门户
+- Defender for Endpoint 订阅和访问 Microsoft 365 Defender 门户
 - macOS 和 BASH 脚本的初学者级体验
 - 手动部署时，设备上 (管理权限) 
 
@@ -97,7 +97,7 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 - Microsoft 365 E5 (M365 E5) 
 - Microsoft 365 E5 安全性
-- Microsoft 365A5 (M365 A5) 
+- Microsoft 365 A5 (M365 A5) 
 - Windows 10 企业版E5
 - Microsoft Defender for Endpoint
 
@@ -117,7 +117,7 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务器：
 - PAC (代理) 
-- Web 代理自动发现协议 (WPAD) 
+- Web 代理自动发现协议 (WPAD)
 - 手动静态代理配置
 
 如果代理或防火墙阻止匿名流量，请确保允许匿名流量位于前面列出的 URL 中。

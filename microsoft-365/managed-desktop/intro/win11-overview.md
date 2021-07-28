@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1c5f2a7f60097bb02cb11eaabd66cad88657c505
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 7a99ca8d5f56fd5614dc27e3a28efe905ba30e46
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53457725"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543001"
 ---
 # <a name="microsoft-managed-desktop-and-windows-11"></a>Microsoft 托管桌面和 Windows 11
 
@@ -26,7 +26,7 @@ ms.locfileid: "53457725"
 
 Windows 11 个预览版本从 2021 年 6 月 28 日开始通过预览体验计划Windows[提供](/windows-insider/)。 我们希望在 2021 日历年结束时发布版本。
 
-欢迎在设备上安装预览版本，无论它们是否由Microsoft 托管桌面管理。 我们将继续并行支持Windows 10，直至停止提供支持。
+欢迎在设备上安装预览版本，无论它们是否由Microsoft 托管桌面管理。 我们将继续并行支持Windows 10，直到它获得企业支持结束。 请参阅[Windows 10生命周期信息的](/windows/release-health/release-information)发布信息。
 
 当 Windows 11 已普遍可用时，我们将执行更多验证测试。 我们预计 2022 年 1 月将是Windows组向 Microsoft 托管桌面 生产设备提供 11 的最早时间。
 
@@ -36,7 +36,7 @@ Windows 11 个预览版本从 2021 年 6 月 28 日开始通过预览体验计�
 
 超过 95% Microsoft 托管桌面设备符合 Windows 11 条件，因此你可能想要在生产部署之前在测试设备上预览升级。 有关 11 Windows要求，请参阅 Windows [11 要求](/windows/whats-new/windows-11-requirements)。 你可以从应用请求有关设备资格状态Microsoft 托管桌面。
 
-对于Microsoft 托管桌面设备，你可以请求将测试设备添加到新式 **\[ 工作区 Windows \] 11 预发布测试设备** 组。 此组会收到Windows 11 个预览版本以及Microsoft 托管桌面配置。 Microsoft 托管桌面 11 预览Windows版本发布频率，因此此设备组的成员接收更新的频率可能高于Windows 10组。
+对于Microsoft 托管桌面设备，你可以请求将测试设备添加到现代 **工作区 - Windows 11** 预发布测试设备组。 此组会收到Windows 11 个预览版本以及Microsoft 托管桌面配置。 Microsoft 托管桌面 11 预览Windows版本发布频率，因此此设备组的成员接收更新的频率可能高于Windows 10组。
 
 对于不由 Microsoft 托管桌面 管理的设备，你可以加入[Windows 预览](/windows-insider/)体验计划，下载预览版本并获取有关自己部署 Windows 11 的指导。 如果你的设备在 11 Windows版本之前运行，稍后在 Microsoft 托管桌面 中注册它们，它们将不会恢复为Windows 10。
 
@@ -54,8 +54,8 @@ Windows 11 个预览版本从 2021 年 6 月 28 日开始通过预览体验计�
 
 **常见应用：** Microsoft 正在广泛测试在 11 版本上部署的最常见企业Windows套件。 我们与外部软件发布者和内部产品团队合作，以解决在测试过程中发现的任何问题。 有关主动兼容性测试工作的详细信息，请参阅 [应用程序兼容性博客](https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/)。
 
-[](https://www.microsoft.com/testbase)业务线应用：测试库是应用发布者和 IT 管理员可用于提交应用和测试用例的资源，Microsoft 可以在安全 Azure 环境中运行 Windows 11 内部版本上的虚拟机上运行。 每次测试执行的结果、测试见解和回归分析都可供你在专用 Azure 门户上使用。 Microsoft 托管桌面将帮助你根据应用使用情况和可靠性数据确定业务线应用进行验证的优先级。 有关测试基础的信息，请参阅测试[基础Microsoft 365。](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/test-base-for-microsoft-365-microsoft-ignite-2021-updates/ba-p/2185566)
+[](https://www.microsoft.com/en-us/testbase)业务线应用：测试库是应用发布者和 IT 管理员可用于提交应用和测试用例的资源，Microsoft 可以在安全 Azure 环境中运行 Windows 11 内部版本上的虚拟机上运行。 每次测试执行的结果、测试见解和回归分析都可供你在专用 Azure 门户上使用。 Microsoft 托管桌面将帮助你根据应用使用情况和可靠性数据确定业务线应用进行验证的优先级。 有关测试基础的信息，请参阅测试[基础Microsoft 365。](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/test-base-for-microsoft-365-microsoft-ignite-2021-updates/ba-p/2185566)
 
 ### <a name="reactive-measures"></a>反应措施
+如果你在测试或生产环境中遇到应用兼容性问题，你可以根据情况通过吸引应用保证或 FastTrack[](/fasttrack/products-and-capabilities#app-assure)获得免费支持。 对于 Windows 11，这包括运行在最新操作系统内部版本上的 Office、Microsoft Edge、Teams 和业务线应用程序的任何功能。 应用保证直接与应用发布者合作，确定应用兼容性问题的优先级并解决它们。
 
-如果你在测试或生产环境中遇到应用兼容性问题，可以在适当时通过吸引应用保证或[](/fasttrack/products-and-capabilities)FastTrack 获得支持。 对于 Windows 11，这包括运行在最新操作系统Office、Microsoft Edge 和 Teams 应用程序的任何功能。 应用保证直接与应用发布者合作，确定应用兼容性问题的优先级并解决它们。

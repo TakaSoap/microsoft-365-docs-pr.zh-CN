@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e04535268c94478c862998cfd91df1680eb22fc0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843502"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542089"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -106,7 +106,7 @@ ms.locfileid: "52843502"
 
     ![向导Microsoft Endpoint Configuration Manager的图像8](images/configmgr-membership-rules.png)
 
-9. 选择“下一步”。
+9. 选择“**下一步**”。
 
     ![Microsoft Endpoint Configuration Manager向导9 的图像](images/configmgr-confirm.png)
 
@@ -119,14 +119,14 @@ ms.locfileid: "52843502"
 
 - [**终结点检测和响应**](#endpoint-detection-and-response)
 - [**下一代保护**](#next-generation-protection)
-- [**减少攻击面**](#attack-surface-reduction)
+- [**攻击面减少**](#attack-surface-reduction)
 
 
 ### <a name="endpoint-detection-and-response"></a>终结点检测和响应
 #### <a name="windows-10"></a>Windows 10
-从 Microsoft Defender 安全中心可以下载可用于在 System Center Configuration Manager 中创建策略的".onboarding"策略，Windows 10部署该策略。
+在 Microsoft 365 Defender 门户中，可以下载可用于在 System Center Configuration Manager 中创建策略的".onboarding"策略，Windows 10部署该策略。
 
-1. 从"Microsoft Defender 安全中心门户"中，[选择"设置"，然后选择"载入"。](https://securitycenter.windows.com/preferences2/onboarding)
+1. From a Microsoft 365 Defender portal， select[设置 and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 
 
@@ -141,7 +141,7 @@ ms.locfileid: "52843502"
 4. 将程序包保存到可访问的位置。
 5. In Microsoft Endpoint Configuration Manager， navigate to： **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
-6. 右键单击 **"Microsoft Defender ATP策略"，** 然后选择"**创建Microsoft Defender ATP策略"。**
+6. 右键单击 **Microsoft Defender ATP 策略** ，然后选择创建 Microsoft Defender **ATP 策略**。
 
     ![Microsoft Endpoint Configuration Manager向导12 的图像](images/configmgr-create-policy.png)
 
@@ -181,7 +181,7 @@ ms.locfileid: "52843502"
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>早期版本的 Windows Client (Windows 7 和 Windows 8.1) 
 按照以下步骤标识 Defender for Endpoint Workspace ID 和工作区密钥，这是载入早期版本的 Windows。
 
-1. 从"Microsoft Defender 安全中心门户"中 **，设置 >"载入"。**
+1. 从 Microsoft 365 Defender门户中，设置设备管理 (下选择") "。  >    >   
 
 2. 在操作系统下 **，Windows 7 SP1 和 8.1。**
 
@@ -267,7 +267,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 ### <a name="attack-surface-reduction"></a>攻击面减少
 适用于终结点的 Defender 的攻击面减少支柱包括攻击防护下提供的功能集。 攻击面减少 (ASR) 规则、受控文件夹访问权限、网络保护和 Exploit Protection。 
 
-所有这些功能都提供审核模式和阻止模式。 在审核模式下，对最终用户没有影响。 它所执行的所有工作就是收集其他遥测，并使其在Microsoft Defender 安全中心。 部署的目标是将安全控件分步移动到阻止模式。
+所有这些功能都提供审核模式和阻止模式。 在审核模式下，对最终用户没有影响。 它所执行的所有操作是收集其他遥测，并使其在 Microsoft 365 Defender 门户中可用。 部署的目标是将安全控件分步移动到阻止模式。
 
 在审核模式下设置 ASR 规则：
 
@@ -308,7 +308,7 @@ Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机�
 下面是验证 ASR 规则是否已正确应用到终结点的其他步骤。  (这可能需要几分钟) 
 
 
-1. 在 Web 浏览器中，导航到 <https://securitycenter.windows.com> 。
+1. 在 Web 浏览器中，导航到 <https://security.microsoft.com> 。
 
 2.  从 **左侧菜单中选择** 配置管理。
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2f02de4b738d9d61ef9f98cd03d15bd91709339e
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314424"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541981"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -36,9 +36,37 @@ ms.locfileid: "53314424"
 
 Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/securescore [中心。](overview-security-center.md)
 
+## <a name="july-2021"></a>2021 年 7 月
+
+### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>添加了与 Microsoft Defender for Endpoint 相关的改进操作
+- 修复适用于 macOS 的 Microsoft Defender for Endpoint 传感器数据收集
+- 修复 MacOS 的终结点通信受损的 Microsoft Defender
+- 在 macOS 中将最小密码长度设置为 15 个或多个字符
+- 在 macOS 中将"强制实施密码历史记录"设置为" (24) 密码"。
+- 在 macOS 中，将"最长密码使用时间"设置为"90 天或更少天，但不设置为 0"
+- 在 macOS 中将帐户锁定阈值设置为 5 或更低
+- 打开 macOS 上的防火墙
+- 启用网关守卫
+- 启用系统完整性保护 (SIP) 
+- 启用 FileVault 磁盘加密
+- 将屏幕设置为在 macOS 中启动屏幕保护程序时锁定
+- 确保屏幕保护程序在 macOS 中设置为在 20 分钟内或更先于 20 分钟内启动
+- 保护家庭文件夹
+- 打开Microsoft Defender 防病毒 macOS 实时保护
+- 在 macOS Microsoft Defender 防病毒模式下打开 PUA 保护
+- 启用Microsoft Defender 防病毒云提供的 macOS 保护
+- 更新 Microsoft Defender 防病毒 macOS 的定义
+- 修复适用于 Linux 的 Microsoft Defender for Endpoint 传感器数据收集
+- 修复适用于 Linux 的终结点通信受损的 Microsoft Defender
+- 无限制访问帐户
+- 打开Microsoft Defender 防病毒 Linux 实时保护
+- 在 Linux Microsoft Defender 防病毒模式打开 PUA 保护
+- 为 linux Microsoft Defender 防病毒云提供的保护
+- 更新Microsoft Defender 防病毒 Linux 的发布定义
+
 ## <a name="june-2021"></a>2021 年 6 月
 
-### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>删除与项目相关的改进Microsoft Cloud App Security
+### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>删除了与项目相关的改进Microsoft Cloud App Security
 
 - 使用云应用安全检测异常行为。
 
@@ -79,7 +107,7 @@ Microsoft Teams安全分数中的一项新增改进操作，客户会看到"限�
 
 ## <a name="october-2020"></a>2020 年 10 月
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>删除与 Microsoft Defender for Endpoint 相关的改进操作
+### <a name="removed-improvement-action-related-to-microsoft-defender-for-endpoint"></a>删除了与 Microsoft Defender for Endpoint 相关的改进操作
 
 - 将Microsoft Defender SmartScreen Windows应用商店应用 Web 内容检查设置为警告
 

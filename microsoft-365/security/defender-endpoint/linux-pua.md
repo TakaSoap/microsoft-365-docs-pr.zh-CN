@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d18ff1a9e060bcc668dd5c52ffd67283539d29b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933153"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542197"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>使用 Linux 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
@@ -45,15 +45,15 @@ Linux 上的 Defender for Endpoint (PUA) 保护功能可能不需要的应用程
 
 Linux 上的 Defender for Endpoint 可以检测和报告 PUA 文件。 在阻止模式下配置时，PUA 文件将移动到隔离区。
 
-在终结点上检测到 PUA 时，Linux 上的 Defender for Endpoint 会记录威胁历史记录中的感染情况。 可以从管理门户或命令行Microsoft Defender 安全中心可视化 `mdatp` 历史记录。 威胁名称将包含单词"Application"。
+在终结点上检测到 PUA 时，Linux 上的 Defender for Endpoint 会记录威胁历史记录中的感染情况。 可以从中心门户或命令行Microsoft 365 Defender可视化 `mdatp` 历史记录。 威胁名称将包含单词"Application"。
 
 ## <a name="configure-pua-protection"></a>配置 PUA 保护
 
 可通过以下方法之一配置 Linux 上的 Defender for Endpoint 中的 PUA 保护：
 
 - **关闭**：PUA 保护已禁用。
-- **审核**：PUA 文件在产品日志中报告，但不在Microsoft Defender 安全中心。 威胁历史记录中未存储任何感染记录，产品不采取措施。
-- **Block**：PUA 文件在产品日志中和产品日志中Microsoft Defender 安全中心。 感染的记录存储在威胁历史记录中，产品会采取措施。
+- **审核**：PUA 文件在产品日志中报告，但不在Microsoft 365 Defender。 威胁历史记录中未存储任何感染记录，产品不采取措施。
+- **Block**：PUA 文件在产品日志中和产品日志中Microsoft 365 Defender。 感染的记录存储在威胁历史记录中，产品会采取措施。
 
 >[!WARNING]
 >默认情况下，PUA 保护在 **审核模式下配置** 。

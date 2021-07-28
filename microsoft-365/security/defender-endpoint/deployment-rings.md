@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fffbbb519f9c31b5343e665958bcb47436a2d50
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d575d628907ca417b03010d555d489d3329cd176
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289339"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596334"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "53289339"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 可以使用基于圈的部署方法部署 Microsoft Defender for Endpoint。 
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 | 终结点     | 部署工具                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br> 注意：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。<br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md)   |
+| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br> 注意：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。<br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **macOS**    | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [基于应用](ios-install.md)                                |
@@ -93,7 +93,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 使用以下材料选择最适合贵组织的适用于终结点的 Microsoft Defender 体系结构。
 
-|**Item**|**说明**|
+|**项**|**说明**|
 |:-----|:-----|
 |[![Microsoft Defender for Endpoint 部署策略缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>
 

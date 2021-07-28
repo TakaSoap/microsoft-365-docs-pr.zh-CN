@@ -1,8 +1,7 @@
 ---
-title: 在 Microsoft Viva 主题中创建新主题
-description: 如何在 Microsoft Viva 主题中创建新主题。
-author: efrene
-ms.author: efrene
+title: 在"主题"Microsoft Viva主题
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +13,15 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+description: 了解如何在"主题"中创建新Microsoft Viva主题。
+ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687527"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596298"
 ---
-# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中创建新主题
+# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在"主题"Microsoft Viva主题
 
 在 Viva 主题中，如果尚未通过索引发现一个主题，或者 AI 技术没有找到足够证据来将它确定为主题，你可以创建新主题。
 
@@ -33,7 +33,7 @@ ms.locfileid: "51687527"
 
 若要创建新主题，您需要：
 - 拥有 Viva 主题许可证。
-- 具有创建或 [**Who主题的权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva 主题的主题权限设置中向用户授予此权限。 
+- 具有创建或 [**Who主题的权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 > [!Note] 
 > 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
@@ -50,7 +50,7 @@ ms.locfileid: "51687527"
 
     ![管理主题中的新主题](../media/knowledge-management/new-topic-topic-center.png)  
 
-### <a name="to-create-a-new-topic"></a>要创建新主题：
+### <a name="to-create-a-new-topic"></a>要创建新主题，请：
 
 1. 请从“管理主题”页上的功能区中选择选项，以创建 新主题页。
 
@@ -58,7 +58,7 @@ ms.locfileid: "51687527"
 
     ![将本主题命名](../media/knowledge-management/k-new-topic-page.png)  
 
-3. 在 **"备用名称** "部分，键入本主题可能引用的其他任何名称。 
+3. 在“**备用名**”部分，键入提及此主题时可使用的任何其他名称。 
 
     ![备用名称](../media/knowledge-management/alt-names.png)  
 
@@ -66,23 +66,23 @@ ms.locfileid: "51687527"
 
     ![主题的说明](../media/knowledge-management/description.png)
 
-4. 在 **"固定人员** "部分中，你可以"固定"一个人，以将其显示与主题 (例如，已连接资源的所有者) 。 首先在"添加新用户"框中键入用户的姓名或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" **图标来** "取消固定"它们。 您还可以将该人员拖动到列表中的其他位置。
+4. 在 **"固定人员** "部分中，你可以"固定"一个人，以将其显示与主题 (例如，已连接资源的所有者) 。 首先在“**添加新用户**”框中键入他们的姓名或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" **图标来** "取消固定"它们。 您还可以将该人员拖动到列表中的其他位置。
  
     ![固定人员](../media/knowledge-management/pinned-people.png)
 
-5. 在 **"固定的文件和** 页面"部分，可以添加或"固定"SharePoint主题关联的文件或页面。
+5. 在“**固定的文件和页面**”部分中，可以添加或“固定”与该主题关联的文件或 SharePoint 网站页面。
 
    ![固定的文件和页面](../media/knowledge-management/pinned-files-and-pages.png)
  
     若要添加新文件，请选择"添加"，从"常用SharePoint"或"关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
 
-    您还可以通过提供 URL，使用"自链接"选项添加文件或页面。 
+    还可使用“**来自链接**”选项，以通过提供 URL 来添加文件或页面。 
 
     > [!Note] 
     > 添加的文件和页面必须位于同一租户Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
 
 
-6.  " **相关网站** "部分显示包含有关该主题的信息的网站。 
+6.  “**相关网站**”部分显示具有主题相关信息的网站。 
 
     ![相关网站部分](../media/knowledge-management/related-sites.png)
 

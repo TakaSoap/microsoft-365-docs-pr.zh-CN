@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceccd9e3c8a8137f672e7be519675034a84c7881
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 3dbadc6c69c243ef18b80207fc5b64a51d1f993b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055113"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542149"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
@@ -59,7 +59,7 @@ ms.locfileid: "53055113"
 
 -   **对于管理员**
 
-    -   访问 Microsoft Defender 安全中心 门户。
+    -   访问 Microsoft 365 Defender 门户。
 
         > [!NOTE]
         > Microsoft Intune在 Android 上部署 Microsoft Defender for Endpoint (MDM) 唯一受支持的移动设备管理解决方案。 目前，仅支持在 Intune 中对 Android 相关设备合规性策略强制实施 Defender for Endpoint 的设备。 

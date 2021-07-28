@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c1695729a12f9cce74663c35f6a9cd537ac468b6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770765"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543481"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
 
@@ -49,8 +49,8 @@ ms.locfileid: "52770765"
 
 步骤 2：从客户的租户获取访问和刷新令牌
  
-步骤 3：允许应用程序Microsoft Defender 安全中心
- 
+步骤 3：允许应用程序Microsoft 365 Defender
+
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>步骤 1：在 Azure AD Azure Active Directory (创建) 
  
 你需要创建一个应用程序，并授予它从客户的适用于终结点租户的 Microsoft Defender 获取警报的权限。
@@ -160,14 +160,14 @@ ms.locfileid: "52770765"
 
 8. 在 PowerShell 窗口中，您将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>步骤 3：允许应用程序Microsoft Defender 安全中心
-你需要允许在应用程序中创建的应用程序Microsoft Defender 安全中心。
+### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
+你需要允许你在应用程序中创建的应用程序Microsoft 365 Defender。
  
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 
-1. 转到 `https://securitycenter.windows.com?tid=<customer_tenant_id>` (客户租户 ID \<customer_tenant_id\> 替换。
+1. 转到 `https://security.microsoft.com?tid=<customer_tenant_id>` (客户租户 ID \<customer_tenant_id\> 替换。
 
-2. 单击 **"设置**  >  **SIEM"。** 
+2. 单击 **设置**  >    >  **终结点 API**  >  **SIEM"**。 
 
 3. 选择 **"MSSP"** 选项卡。
 

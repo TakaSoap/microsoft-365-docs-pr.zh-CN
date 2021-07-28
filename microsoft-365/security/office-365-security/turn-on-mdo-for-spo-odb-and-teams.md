@@ -20,12 +20,12 @@ description: 管理员可以了解如何为 保险箱、OneDrive 和 Microsoft T
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 80c35b91de046642a7b4ff4c66d1a42f76976c5b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083088"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543241"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>为 SharePoint、OneDrive 和 Microsoft Teams 启用安全附件
 
@@ -47,7 +47,7 @@ Microsoft Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams�
 
 - 若要SharePoint Online PowerShell 阻止用户下载恶意文件，你需要是 Azure AD 中全局管理员[](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)或 SharePoint[管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)角色的成员。
 
-- 验证是否为组织启用了审核日志记录。 有关详细信息，请参阅 [打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+- 验证是否为组织启用了审核日志记录。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 - 设置最多允许 30 分钟生效。
 
@@ -85,7 +85,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**注意**：
+**注意**:
 
 - 此设置同时影响用户和管理员。
 - 用户仍可以删除恶意文件。
@@ -94,7 +94,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>步骤 3 (推荐) 使用 Microsoft 365 Defender 门户为检测到的文件创建警报策略
 
-你可以创建一个警报策略，当 保险箱 附件SharePoint、OneDrive和Microsoft Teams检测到恶意文件时Microsoft Teams通知你和其他管理员。 若要了解有关警报的信息，请参阅在活动门户Microsoft 365 Defender[警报](../../compliance/create-activity-alerts.md)。
+你可以创建一个警报策略，当 保险箱 附件SharePoint、OneDrive和Microsoft Teams检测到恶意文件时Microsoft Teams通知你和其他管理员。 若要了解有关警报的更多信息，请参阅 [警报策略](../../compliance/alert-policies.md)。
 
 1. 在 Microsoft 365 Defender门户中，转到策略 **&警报策略** \> **或** 打开 <https://security.microsoft.com/alertpolicies> 。
 

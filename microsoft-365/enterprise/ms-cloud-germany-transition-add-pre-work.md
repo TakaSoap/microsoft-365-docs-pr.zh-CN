@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务前工作。
-ms.openlocfilehash: 08774cdfd831556c194b5175879f211efa250632
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362734"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542029"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移前活动
 
@@ -119,7 +119,8 @@ Office 365"德国"地区的租户要求所有用户在租户迁移到达阶段 9
 
 |步骤 (步骤) |说明|影响|
 |---|---|---|
-|限制为SharePoint 2013 工作流，在 SharePoint Online 迁移期间使用。|在SharePoint之前减少 2013 工作流和完成运行中的工作流。|不操作可能会导致用户混淆和技术支持呼叫。|
+|限制为SharePoint 2013 工作流，在 SharePoint Online 迁移期间使用。|在SharePoint之前减少 2013 工作流和完成运行中的工作流。|不操作可能会导致用户混淆和技术支持呼叫。| 
+如果SharePoint任何修改，导出搜索配置。 |将不会SharePoint搜索配置。 如果已应用SharePoint任何修改，请确保记下任何更改并导出搜索配置。 完成切换后，必须SharePoint导入这些设置。|在重新应用搜索修改之前，任何基于已修改搜索架构的自定义解决方案将不可用。|
 
 
 ## <a name="exchange-online"></a>Exchange Online
@@ -277,7 +278,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 

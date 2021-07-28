@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f0527192a55d67df7e23507bed46df446f8b2b7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: de3fe133611885dd71458a6104b054fe25d0a524
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165161"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596346"
 ---
 # <a name="deployment-phases"></a>部署阶段
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165161"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 了解如何部署 Microsoft Defender for Endpoint，以便企业可以利用预防性保护、攻破后检测、自动调查和响应。 
 
@@ -76,7 +76,7 @@ ms.locfileid: "51165161"
 功能 | 说明 
 :---|:---
 终结点检测和响应 | 终结点检测和响应功能已到位，以检测、调查和响应入侵尝试和主动泄露。
-下一代保护 | 为了进一步强化网络的安全外围，Microsoft Defender for Endpoint 使用旨在捕获所有类型的新兴威胁的下一代保护。
+下一代保护 | 为了进一步巩固你的网络的安全外围，Microsoft Defender for Endpoint 使用下一代保护来捕获所有类型的新兴威胁。
 攻击面减少 |  在堆栈中提供第一道防线。 通过确保正确设置配置设置并应用攻击缓解技术，这些功能集可抵御攻击和利用。
 
 所有这些功能都适用于适用于终结点许可证持有者的 Microsoft Defender。 有关详细信息，请参阅 [许可要求](minimum-requirements.md#licensing-requirements)。

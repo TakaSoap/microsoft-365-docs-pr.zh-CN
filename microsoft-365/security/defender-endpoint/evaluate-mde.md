@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7f065c5f42b62885c3c0fde7b402490f86ec2ba
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fd8e1e007031a19a0520e11c8b2497e64e721a74
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843194"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595938"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>评估 Microsoft Defender for Endpoint 
 
@@ -32,7 +32,7 @@ ms.locfileid: "52843194"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。
 

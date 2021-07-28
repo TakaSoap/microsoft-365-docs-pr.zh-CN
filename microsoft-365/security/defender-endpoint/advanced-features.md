@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: db9ff6429062f110981a2e91506b155a506d6ee5
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339570"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591003"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -32,13 +32,13 @@ ms.locfileid: "53339570"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)。
 
 根据你使用的 Microsoft 安全产品，某些高级功能可能可供你集成 Defender for Endpoint。
 
 ## <a name="enable-advanced-features"></a>启用高级功能
 
-1. 在导航窗格中，选择 **首选项设置**  >  **高级功能**。
+1. 在导航窗格中，选择 **"设置**  >   **终结点**  >  **高级功能"。**
 2. 选择要配置的高级功能，并切换 **开和****关之间的设置**。
 3. 单击 **保存首选项**。
 
@@ -65,13 +65,13 @@ ms.locfileid: "53339570"
 启用此功能后，您可以在实时响应会话中运行未签名的脚本。
 
 ## <a name="always-remediate-pua"></a>始终修正 PUA
-可能不需要的应用程序 （PUA） 是一类软件，会导致计算机运行缓慢、显示意外广告或最糟情况，安装其他可能意外或不需要的软件。 
+PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告或在最差时安装其他软件（可能是意外的或不需要的）。 
 
 启用此功能，以便 (PUA) 在租户的所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。 
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
-此配置可用于本地 SOC 操作希望仅将警报关联限制为可以访问的设备组的方案。 打开此设置后，由跨设备组的警报组成的事件将不再被视为单个事件。 然后，本地 SOC 可以针对事件采取措施，因为他们可以访问涉及的设备组之一。 但是，全局 SOC 将按设备组而不是一个事件查看多个不同的事件。 建议不要打开此设置，除非这样做超出了整个组织中事件相关性的好处
+此配置可用于本地 SOC 操作希望仅将警报关联限制为可以访问的设备组的方案。 打开此设置后，由跨设备组的警报组成的事件将不再被视为单个事件。 然后，本地 SOC 可以针对事件采取措施，因为他们可以访问涉及的设备组之一。 但是，全局 SOC 将按设备组而不是一个事件查看多个不同的事件。 建议不要启用此设置，除非这样做超出了整个组织中事件相关性的好处
 >[!NOTE]
 >更改此设置仅影响未来的警报关联。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53339570"
 对于在 Windows 10 版本 1809 或之后创建的租户，自动调查和修正功能默认配置为解决自动分析结果状态为"未找到威胁"或"已修正"的警报。  如果不希望自动解决警报，需要手动关闭该功能。
 
 > [!TIP]
-> 对于在此版本之前创建的租户，你需要从高级功能页面手动 [启用](https://securitycenter.windows.com/preferences2/integration) 此功能。
+> 对于在此版本之前创建的租户，你需要从高级功能页面手动 [启用](https://security.microsoft.com//preferences2/integration) 此功能。
 
 > [!NOTE]
 >
@@ -105,8 +105,8 @@ ms.locfileid: "53339570"
 1. 在导航窗格中，选择"设置  >    >  **终结点常规**  >  **高级功能**  >  **允许或阻止文件"。**
 
 1. 切换开和 **关****之间的设置**。
-
-    ![阻止文件功能的高级设置的图像](images/atp-preferences-setup.png)
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="阻止文件功能的高级设置的图像":::
 
 1. 选择 **页面底部的** "保存首选项"。
 
@@ -153,14 +153,14 @@ ms.locfileid: "53339570"
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity 集成
 
-与 Microsoft Defender for Identity 的集成允许你直接透视另一个 Microsoft Identity 安全产品。 Microsoft Defender for Identity 通过有关可疑遭到入侵的帐户和相关资源的其他见解来扩大调查。 通过启用此功能，你将通过从标识的角度透视网络来丰富基于设备的调查功能。
+与 Microsoft Defender for Identity 的集成允许你直接透视另一个 Microsoft Identity 安全产品。 Microsoft Defender for Identity 通过有关可疑遭到入侵的帐户和相关资源的更多见解来扩大调查。 通过启用此功能，你将通过从标识的角度透视网络来丰富基于设备的调查功能。
 
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365威胁智能连接
 
-此功能仅在你拥有活动Office 365 E5或威胁智能加载项时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
+此功能仅在你拥有活动状态或威胁Office 365 E5加载项时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
 
 启用此功能后，你将能够将 Microsoft Defender for Office 365 数据合并到 Microsoft 365 Defender 中，以便跨 Office 365 邮箱和 Windows 设备进行全面安全调查。
 
@@ -171,11 +171,11 @@ ms.locfileid: "53339570"
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威胁专家 - 目标攻击通知
 
-在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 只有在应用预览版且应用程序已获得批准后，才能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板Microsoft 威胁专家接收来自你的终结点门户的定向攻击通知（如果已配置的话）。
+在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板Microsoft 威胁专家接收来自你的终结点门户的定向攻击通知（如果已配置的话）。
 
 > [!NOTE]
 > Defender for Endpoint 中的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-cloud-app-security"></a>Microsoft 云应用安全
 
 启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全位置。
 
@@ -225,13 +225,13 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 
 ### <a name="conditional-access-policy"></a>条件访问策略
 
-启用 Intune 集成后，Intune 将自动创建经典条件访问 (CA) 策略。 此经典 CA 策略是设置到 Intune 的状态报告的先决条件。 不应删除它。
+启用 Intune 集成后，Intune 将自动创建经典条件访问 (CA) 策略。 此经典 CA 策略是设置到 Intune 的状态报告的先决条件。 不应将其删除。
 
 > [!NOTE]
 > Intune 创建的经典 CA 策略与用于配置[](/azure/active-directory/conditional-access/overview/)终结点的新式条件访问策略不同。
 
-
 ## <a name="device-discovery"></a>设备发现
+
 帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。 使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。 有关详细信息，请参阅设备 [发现](device-discovery.md)。
 
 > [!NOTE]
@@ -243,8 +243,9 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 
 你将有权访问即将推出的功能，你可以提供反馈，以帮助在功能全面可用之前改进整体体验。
 
+## <a name="download-quarantined-files"></a>下载隔离文件
 
-
+在安全合规的位置备份隔离文件，以便可以直接从隔离区下载这些文件。 " **下载文件** "按钮将始终在文件页面中可用。 默认情况下，此设置为打开状态。 [详细了解要求](respond-file-alerts.md#download-quarantined-files)
 
 ## <a name="related-topics"></a>相关主题
 

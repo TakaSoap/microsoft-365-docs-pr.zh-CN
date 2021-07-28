@@ -9,33 +9,61 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d4e8285bb4d589bc527db8d979a0223d3f64b8ec
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 31446b7f2afd316929443a3aa36cb73addbf9a2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287839"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542005"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
 可以使用管理门户向 Microsoft 提交支持票证Microsoft 托管桌面反馈请求。 支持请求始终优先处理反馈提交。 根据严重性定义表 中列出的严重性对支持请求进行会审 [和管理](#sev)。 在请求时，将审核反馈和提供的响应。 
 
-> [!IMPORTANT]
-> 请确保为 [应用打包、](../get-started/add-admin-contacts.md) 设备、安全和其他请求设置管理员联系人。 如果你不提供管理员联系人，你将无法在任何这些方面提交支持请求。
 
-**提交支持请求**
+## <a name="open-a-new-support-request"></a>打开新的支持请求
 
 1. 登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到"**租户管理"** 菜单。
 2. 查找"Microsoft 托管桌面"部分，然后选择"服务 **请求"。**
 3. 在 **"支持请求"上**，选择 **"+ 新支持票证"。**
 4. 选择 **与你需要的帮助** 匹配的支持请求类型。 下表概述了这些选项。 
-5. 选择 **"严重性级别"。** 有关详细信息，请参阅支持 [请求严重性定义](#sev)。 
+5. 选择 **"严重性级别"。** 有关详细信息，请参阅支持 [请求严重性定义](#sev)。
+6. 尽可能提供有关请求的信息，以帮助团队快速响应。 根据请求的类型，您可能需要提供不同的详细信息。
+7. 查看您提供的所有信息的准确性。 
+8. 准备就绪后，选择“**创建**”。
+ 
 
 支持请求类型 | 何时使用
 --- | ---
 事件 | 例如，Microsoft 托管桌面运营团队调查变更或服务中断的广泛影响。
 信息请求 | 你正在计划网络、代理配置、VPN 系统、证书过期更改，或者只需有关该服务的一些信息。 在组织内部Microsoft 托管桌面更改时，建议来自运营团队的响应。
 更改请求 | 你需要让Microsoft 托管桌面团队做出更改，如在更新组之间移动设备。
+
+> [!IMPORTANT]
+> 创建支持请求时，你需要列出主要联系人，负责与服务工程师一起解决问题或回答有关请求更改的任何问题。 我们还要求你之前设置了管理员联系人[](../get-started/add-admin-contacts.md)，该联系人将针对其相关关注区域的所有案例通知进行复制，并被要求在无法到达案例的主要联系人时接管案例。
+
+## <a name="manage-an-active-support-request"></a>管理活动支持请求
+案例联系人的主要联系人 (该重点关注区域的任何管理员联系人) [](../get-started/add-admin-contacts.md)将在创建案例、分配到服务工程师进行调查和解决时收到 **电子邮件通知**。   如果你对这种情况有任何疑问，与团队联系的最佳方法就是直接答复其中一封电子邮件。 如果我们对请求有疑问或需要执行更多操作的详细信息，我们将通过电子邮件将支持请求中列出的主要联系人 (复制所有相关的管理员联系人) 。
+
+### <a name="view-all-your-active-cases"></a>查看所有活动案例
+虽然建议使用电子邮件与团队进行交互，但你可能希望查看所有支持请求的摘要状态。 你随时都可以使用门户查看过去六个月内的所有支持请求活动。
+
+1.  登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到"**租户管理"** 菜单。
+2.  查找 *"Microsoft 托管桌面"* 部分，选择"**服务请求"。**
+3.  从此视图中，可以导出摘要视图或单击任何案例以查看详细信息
+
+### <a name="edit-case-details"></a>编辑案例详细信息
+如果需要编辑案例的详细信息，例如更新主要案例联系人，则需要执行以下步骤：
+1.  从 **"服务请求**"边栏选项卡 **，在** [](https://endpoint.microsoft.com/)Microsoft Endpoint Manager 的"租户管理"菜单中，使用搜索栏或筛选器查找你感兴趣的编辑案例。
+2.  选择案例以打开请求的详细信息 
+3.  滚动到请求详细信息的底部， **然后选择编辑**。
+4.  更新可编辑的信息、向案例添加附件或添加服务工程团队的注释，然后选择"保存 **"。**
+
+### <a name="provide-feedback"></a>提供反馈
+
+感谢你的反馈，并使用它来改进管理员支持体验。
+
+当你是支持请求的主要联系人时，你将收到来自 Microsoft 托管桌面 Operations 的电子邮件，询问问题解决后的体验。 主动监视反馈，并与工程部门共享反馈，以改进服务并设置未来功能的优先级。 请务必专注于你的体验，不要将个人信息包括在反馈表单中。 有关隐私详细信息，请参阅 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 <span id="sev" />
 
@@ -57,13 +85,6 @@ ms.locfileid: "53287839"
 - **应用程序** 兼容性 - 若要考虑应用程序兼容性问题，必须在早期版本或当前版本的 Windows 或 Microsoft 365 企业应用版 之间出现同一版本的应用程序的可重现错误。 若要解决应用程序兼容性问题，我们需要组织中的联系点才能使用。 联系人必须直接与 Fast Track 团队合作以调查和解决问题。
 - **客户响应时间** 如果不能满足预期响应要求，我们会将请求降级为一个严重性级别（最低严重性 C）。如果你对行动请求没有响应，我们将在上一个请求的 48 小时内缓解并关闭支持请求。
 
-## <a name="provide-feedback"></a>提供反馈
-
-感谢你的反馈，并使用它来改进管理员支持体验。
-
-一旦票证进入"已缓解"或"已解决"状态，你可以分享你有关该特定问题体验的反馈。 若要共享反馈，请转到 Microsoft Endpoint Manager门户的疑难 **解答 +** 支持菜单中的"服务Microsoft Endpoint Manager页面。 选择特定票证。 票证详细信息将显示在右侧飞入中。 选择 **"反馈** "选项卡，并提供请求的信息。 请注意不要将任何个人信息包括在反馈表单中。 有关隐私详细信息，请参阅 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
-
-:::image type="content" alt-text="反馈表单的示例。" source="../../media/feedback_form.png" lightbox="../../media/feedback_form.png":::
 
 ## <a name="more-resources"></a>更多资源
 

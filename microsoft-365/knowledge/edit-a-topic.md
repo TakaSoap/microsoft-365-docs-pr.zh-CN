@@ -1,7 +1,7 @@
 ---
-title: 编辑 Microsoft Viva 主题中的现有主题
-author: chuckedmonson
+title: 编辑现有主题中的Microsoft Viva主题
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: cjtan
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-description: 了解如何编辑 Microsoft Viva 主题中的现有主题。
-ms.openlocfilehash: 6e1f85737298736a3aafcb30cfe103c28654d1c1
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+description: 了解如何在"主题"中编辑Microsoft Viva主题。
+ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053193"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596226"
 ---
-# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>编辑 Microsoft Viva 主题中的现有主题 
+# <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>编辑现有主题中的Microsoft Viva主题 
 
 </br>
 
@@ -34,11 +34,11 @@ ms.locfileid: "53053193"
 > [!Note] 
 > 虽然 AI 收集的主题信息经过安全修整，[](topic-experiences-security-trimming.md)但有权查看主题的所有用户都可以看到在编辑现有主题时手动添加的主题说明和人员信息。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要编辑现有主题，您需要：
 - 拥有 Viva 主题许可证。
-- 具有创建 [或编辑主题的权限](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva 主题的主题权限设置中向用户授予此权限。 
+- 具有创建 [或编辑主题的权限](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 > [!Note] 
 > 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
@@ -107,43 +107,9 @@ ms.locfileid: "53053193"
 
     可以通过选择固定的图标将建议的网站更改为固定的网站。
 
-
-<!---
-
-7.  The <b>Related sites</b> section shows sites that have information about the topic. 
-
-    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
-
-    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
-    
-    ![Select a site](../media/knowledge-management/sites.png)</br>
-
-8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
-
-   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
-
-    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
-
-   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
-
-   The related topic you added will display as a connected topic.
-
-   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
-
-   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
- 
-   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
-
-   Then select <b>Remove</b>.</br>
-
-   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
-
---->
-
-9. 也可通过选择画布图标（可在简短说明下方找到）将静态项目（如文本、图像或链接）添加到页面。 选择它将打开SharePoint工具箱，您可以从中选择要添加到页面的项。
+9. 您还可以通过选择画布图标（可在简短说明下方找到）将静态项目（如文本、图像或链接）添加到页面。 选择它将打开SharePoint工具箱，您可以从中选择要添加到页面的项。
 
    ![显示 Canvas 图标的屏幕截图。](../media/knowledge-management/webpart-library.png)
-
 
 10. 选择“**发布**”或“**重新发布**”以保存更改。 **如果主题** 之前已发布，则重新发布将成为可用选项。
 

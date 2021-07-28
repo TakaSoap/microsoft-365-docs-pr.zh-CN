@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 了解如何自动Office 365安全与合规中心用户重定向到Microsoft 365 合规中心。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62fc302f9f065ac7bb0475a6e72dc240a56a1fe1
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 167a38d4f4cd06f98993f401d72f9b6dafa29f40
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339402"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543625"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>将用户从 Office 365 安全与合规中心重定向到Microsoft 365 合规中心
 
@@ -24,18 +24,19 @@ ms.locfileid: "53339402"
 
 ## <a name="what-to-expect"></a>预期结果
 
-默认情况下，在安全与合规策略中访问以下合规性相关解决方案的所有用户Office 365自动 (protection.office.com) ：
+默认情况下，在安全与合规策略中访问合规性相关解决方案的所有用户Office 365自动 (protection.office.com) ：
 
-- 数据丢失防护 (DLP)
-- 分类
-- 信息治理
-- 记录管理
-- 通信合规性 (以前是"监督") 
+- [高级电子数据展示](overview-ediscovery-20.md)
+- [通信合规性](communication-compliance.md)
+- [内容搜索](search-for-content.md)
+- [核心电子数据展示](get-started-core-ediscovery.md)
+- [数据分类](data-classification-overview.md)
+- [Data loss prevention (DLP)](dlp-learn-about-dlp.md)
+- [数据主体请求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
+- [信息治理](manage-information-governance.md)
+- [记录管理](records-management.md)
 
 用户将自动路由到 Microsoft 365 合规中心 (compliance.microsoft.com) 中的相同合规性解决方案。
-
-> [!NOTE]
-> 对于安全与合规Office 365中包含的其他合规性解决方案，用户将继续在 Microsoft 365 合规中心 或 Office 365 安全与合规中心管理这些解决方案。 这些合规性解决方案的自动重定向即将推出。
 
 此功能和相关控件不支持自动重定向 Microsoft Defender for Office 365。 若要启用安全功能重定向，请参阅将帐户从[Microsoft Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) for Office 365重定向到 Microsoft 365 安全中心了解详细信息。
 
@@ -44,7 +45,7 @@ ms.locfileid: "53339402"
 如果无法通过 Microsoft 365 合规中心 门户完成某些操作或无法完成某些操作，可以暂时禁用所有用户的自动重定向。
 
 > [!IMPORTANT]
-> The Microsoft 365 合规中心 is the replacement management portal for compliance solutions currently managed in the Office 365 Security and Compliance center. 所有Microsoft 365合规性解决方案将仅在 Microsoft 365 合规中心 中进行管理。 禁用重定向到Microsoft 365 合规中心应该是一个短期解决方案。
+> The Microsoft 365 合规中心 is the replacement management portal for compliance solutions currently managed in the Office 365 Security and Compliance center. 所有Microsoft 365合规性解决方案将仅在 Microsoft 365 合规中心 中进行管理。 禁用对 Microsoft 365 合规中心的重定向应视为短期解决方案。
 
 若要切换回Office 365安全与合规 (protection.microsoft.com) ，请完成以下步骤：
 

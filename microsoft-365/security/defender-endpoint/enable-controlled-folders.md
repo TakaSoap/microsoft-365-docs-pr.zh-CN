@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 810782dc3cca33515a0292d79ddab3c487330a98
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924679"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596094"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -30,7 +30,7 @@ ms.locfileid: "52924679"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 [受控文件夹访问权限](controlled-folders.md) 可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限包含在 Windows 10 Windows Server 2019 中。
 
@@ -73,7 +73,7 @@ ms.locfileid: "52924679"
 
 3. 选择 **平台**，选择 **Windows 10** 和更高版本，然后选择配置文件 **攻击面减少规则**  >  **创建**。
 
-4.  命名策略并添加说明。 选择“**下一步**”。
+4.  命名策略并添加说明。 选择 **下一步**。
 
 5.  向下滚动到底部，选择"**启用文件夹** 保护"下拉列表，然后选择"启用 **"。**
 
@@ -132,7 +132,7 @@ ms.locfileid: "52924679"
 
 ## <a name="powershell"></a>PowerShell
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 
@@ -146,6 +146,6 @@ ms.locfileid: "52924679"
 
 ## <a name="see-also"></a>另请参阅
 
-* [使用受控文件夹访问权限保护重要文件夹](controlled-folders.md)
+* [使用受控文件夹访问保护文重要件夹](controlled-folders.md)
 * [自定义受控文件夹访问](customize-controlled-folders.md)
 * [评估 Microsoft Defender for Endpoint](evaluate-mde.md)

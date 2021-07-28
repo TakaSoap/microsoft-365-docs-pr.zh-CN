@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 266155dca8206e6c3572655fdd88b1ca8bdfde2e
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454705"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596166"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -36,9 +36,9 @@ ms.locfileid: "53454705"
 - macOS
 - Linux
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink)。
 
-Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种受支持操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。 
+Defender for Endpoint 为非安全平台Windows集中式安全Windows体验。 你将能够查看来自各种受支持操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。 
 
 你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关详细信息，请参阅：
 - [Linux 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-linux.md#system-requirements)  
@@ -50,12 +50,11 @@ Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windo
 
    - 对于 macOS 设备，你可以选择通过 Microsoft Defender for Endpoint 或第三方解决方案载入。 有关详细信息，请参阅 Mac 上的[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - 对于其他非Windows设备，选择"通过 **第三Windows集成载入非集成设备"。**   
-    1. 在导航窗格中，选择 **互操作性**  >  **合作伙伴**。 确保列出了第三方解决方案。
-    2. 在 **"合作伙伴应用程序**"选项卡中，选择支持非Windows合作伙伴。
-    3. 选择 **"打开合作伙伴** 页面"以打开合作伙伴的页面。 按照页面上提供的说明进行操作。
+   - 对于其他非Windows设备选择"通过第三Windows **集成载入非非集成设备"。**   
+    1. 在导航窗格中，选择 **"合作伙伴和 API**  >  **合作伙伴应用程序"。** 确保列出了第三方解决方案。
+    2. 在 **"合作伙伴应用程序"** 页中，选择支持非Windows合作伙伴。
+    3. 单击 **"** 查看"打开合作伙伴的页面。 按照页面上提供的说明进行操作。
     4. 创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。 仔细阅读权限请求，确保它与所需的服务保持一致。 
-
         
 2. 按照第三方解决方案的说明运行检测测试。
 

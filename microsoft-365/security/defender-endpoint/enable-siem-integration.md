@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 81bed621396e4dd8fe57eae157ed2be62f350fc6
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842958"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594930"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用 SIEM 集成
 
@@ -31,9 +31,9 @@ ms.locfileid: "52842958"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
-在 SIEM 集成中启用 (事件) ，以便你可以从 SIEM 中拉取Microsoft Defender 安全中心。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
+在 SIEM (启用安全信息和事件) ，以便你可以从 SIEM Microsoft 365 Defender。 使用 SIEM 解决方案或直接连接到检测 REST API 拉取检测。
 
 >[!NOTE]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) 由一个或多个检测组成。
@@ -45,19 +45,20 @@ ms.locfileid: "52842958"
 - 激活该设置的用户必须具有在 AAD Azure Active Directory (创建) 。 这是具有以下角色的人： 
 
   - 安全管理员和全局管理员之一
-  - 云 应用程序管理员
-  -  应用程序管理员
+  - 云应用程序管理员
+  - 应用程序管理员
   - 服务主体的所有者
 
 - 在初始激活期间，将显示一个弹出屏幕以输入凭据。 请确保允许此网站的弹出窗口。
 
 ## <a name="enabling-siem-integration"></a>启用 SIEM 集成 
-1. 在导航窗格中，**选择设置**  >  **SIEM"。**
 
-    ![来自菜单 1 的 SIEM 设置图像](images/enable_siem.png)
+1. 在导航窗格中，选择 **"设置**  >    >  **终结点 API**  >  **SIEM"。**
 
-    >[!TIP]
-    >如果在尝试启用 SIEM 连接器应用程序时遇到错误，请检查浏览器的弹出窗口阻止程序设置。 启用该功能时，它可能会阻止打开的新窗口。 
+      :::image type="content" source="../../media/enable-siemnew.png" alt-text="来自菜单 1 的 SIEM 设置图像":::
+
+      >[!TIP]
+      >如果在尝试启用 SIEM 连接器应用程序时遇到错误，请检查浏览器的弹出窗口阻止程序设置。 启用该功能时，它可能会阻止打开的新窗口。 
 
 2. 选择 **启用 SIEM 集成**。 这会使用预填充的值激活 **SIEM** 连接器访问详细信息部分，并且应用程序是在 Azure AD Azure Active Directory (租户) 创建的。
 
@@ -85,7 +86,7 @@ ms.locfileid: "52842958"
 
 6. 按照为 Microsoft Defender for Endpoint 创建 [Azure AD](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) 应用注册的说明操作，并为其分配正确的权限以读取警报。
 
-你现在可以继续配置 SIEM 解决方案，或者通过编程访问连接到检测 REST API。 配置 SIEM 解决方案时，你需要使用令牌，以允许它接收来自Microsoft Defender 安全中心。
+你现在可以继续配置 SIEM 解决方案，或者通过编程访问连接到检测 REST API。 配置 SIEM 解决方案时，你需要使用令牌，以允许它接收来自Microsoft 365 Defender。
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>将 Microsoft Defender for Endpoint 与 IBM QRadar 集成 
 你可以将 IBM QRadar 配置为从 Microsoft Defender for Endpoint 收集检测。 有关详细信息，请参阅 [IBM 知识库](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)。

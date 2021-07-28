@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861571"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542942"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和组织适用于终结点设备的 Microsoft Defender 列表
 
@@ -51,7 +51,7 @@ ms.locfileid: "51861571"
 >[!NOTE]
 > 如果导出设备列表，它将包含组织的每台设备。 下载可能需要很长时间，具体取决于你的组织规模。 以 CSV 格式导出列表以未筛选的方式显示数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选。
 
-![包含设备列表的设备列表的图像](images/device-list.png)
+![包含设备列表的设备列表的图像](images/device-inventory.png)
 
 ## <a name="sort-and-filter-the-device-list"></a>排序和筛选设备列表
 
@@ -103,7 +103,7 @@ ms.locfileid: "51861571"
 
 若要了解有关特定威胁的更多信息，请参阅 [威胁分析](threat-analytics.md)。 有关缓解信息，请参阅[威胁&漏洞管理。](next-gen-threat-and-vuln-mgt.md)
 
-### <a name="windows-10-version"></a>Windows 10版本
+### <a name="windows-10-version"></a>Windows 10 版本
 
 仅选择Windows 10关注的版本。
 

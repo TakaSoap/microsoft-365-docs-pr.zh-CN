@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: d1ba87687f5650310b3b94e5827181510b3834c3
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062146"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543649"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "53062146"
 > [!NOTE]  
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-网络发现功能在安全中心和 Microsoft 365控制台的"设备Microsoft Defender 安全中心部分中提供。  
+网络发现功能在安全中心和 Microsoft 365 Defender控制台的"设备Microsoft 365部分中提供。  
 
 指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。  
 
@@ -91,7 +91,7 @@ ms.locfileid: "53062146"
 8. 若要允许网络扫描程序进行身份验证并正常运行，必须添加以下域/URL：
 
     - login.windows.net  
-    - *.securitycenter.windows.com
+    - *.security.microsoft.com
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
@@ -105,7 +105,7 @@ ms.locfileid: "53062146"
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
 1. 转到 **"Microsoft 365网络设置** 下 (终结点  >    >    >  **评估**) 。
-    1. In the Microsoft Defender 安全中心， go to 设置 > Assessment jobs page.
+    1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
 

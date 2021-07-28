@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: d4bf5314772ab37c2b79c1895e3094fdb2b66593
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438032"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594906"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -27,10 +27,11 @@ ms.locfileid: "53438032"
 
 1. 验证账户是否有适当的许可级别。应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为下面列出的各种许可证包的一部分存在于帐户中。
 1. 你必须具有下面列出的管理员角色之一才能访问门户中的应用治理页面。
+1. 组织的租户注册必须位于 [受支持的北美、欧洲或非洲区域](app-governance-countries.md) 之一。
 
 ## <a name="licensing-for-app-governance"></a>应用治理许可
 
-在开始使用应用治理之前，应该先确认 [Microsoft 365 管理中心 - 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 和任何加载项。 若要访问和使用应用治理，你的组织必须拥有以下订阅或加载项之一：
+在开始使用应用治理之前，应该先确认 [Microsoft 365 管理中心 - 订阅](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) 和任何加载项。 若要访问和使用应用治理，你的组织必须拥有以下订阅或加载项之一：
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -110,9 +111,50 @@ ms.locfileid: "53438032"
 1. 在注册门户中，提供用于试用的电子邮件地址。 如果你是现有客户，请使用与你的帐户关联的电子邮件。 单击“**下一步**”。
 1. 登录后，单击“**立即试用**”以获取免费试用版。
 1. 单击“**继续**”关闭页面并开始设置试用版。 对于应用治理的新客户，应用治理实例最多需要两个小时才可用。 对于现有客户，现有服务不会中断。
+
   > [!NOTE]
-如果你还没有帐户，系统会提示你先设置一个新帐户，然后才能继续试用。
+  如果你还没有帐户，系统会提示你先设置一个新帐户，然后才能继续试用。
 
 1. 为你的 AAD 租户输入一个可用的域名，然后单击“**检查可用性**”。 系统会自动为你分配一个管理员角色（如果你没有用于应用治理的现有角色），并且可以随时更改域名和/或稍后通过 Microsoft 365 管理中心购买更多租户。
 1. 输入要用于登录帐户的用户名和密码。 单击“**注册**”。
 1. 单击“**开始使用**”转至应用治理门户，或者单击“**管理订阅**”转至 Microsoft 365 管理中心。
+
+## <a name="add-integration-with-mcas"></a>添加与 MCAS 的集成 
+
+先决条件：
+
+- Office 365 已在云应用安全中连接
+- Office 365 Azure AD 应用已启用
+
+要启用与云应用安全的应用治理同步，请执行以下步骤：
+
+1. 转到 Microsoft Cloud App Security 门户 - [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+1. 单击齿轮图标（右上角），然后选择“**设置**”。
+1. 在 **威胁防护** 下，选择“**应用治理**”。
+1. 单击“**启用应用治理集成**”，然后选择“**保存**”。
+
+接下来，查看 MCAS 中新启用的策略。 启用集成后，新策略可能需要几分钟才能显示。
+
+- Microsoft 365 OAuth 应用信誉
+- Microsoft 365 OAuth 网络钓鱼检测
+- Microsoft 365 OAuth 应用治理
+- 在 MCAS 仪表板中查看应用治理小组件
+- 查看 MCAS 警报中新生成的应用治理警报
+- 查看应用治理策略列表中的 MCAS M365 OAuth 策略
+- 在应用治理警报中查看新生成的 MCAS M365 OAuth 警报
+
+## <a name="canceling-your-trial"></a>正在取消试用版
+
+如果未参与个人预览，并且希望取消应用治理试用版，则可以与 CXE 联系人通信，或使用以下步骤：
+
+1. 在 Microsoft 365 管理中心中，转到“**账单**” > “**你的产品**”。
+1. 导航到应用治理试用版，单击三个点，然后选择“**取消订阅**”。
+1. 在生成的浮出窗格中，提供取消原因、任何其他反馈，然后选择“**取消订阅**”。
+1. 在生成的弹出屏幕中选择“**取消订阅**”。 你的试用版已取消，你将失去对应用治理的访问权限，并将删除你的应用治理数据（用于创建应用治理见解和检测的日志数据 - 不会影响电子邮件或其他文件）。
+
+## <a name="known-issues-for-the-public-preview"></a>公共预览版的已知问题
+
+应用治理团队已确定预览版的以下已知问题： 
+
+- Microsoft Defender 和应用治理警报之间的双向同步 - 目前，在 Defender 中已解决的警报也必须在应用治理中手动解决。
+- 对于某些用户，应用用户和使用情况选项卡中的优先级帐户见解将无法按预期工作。

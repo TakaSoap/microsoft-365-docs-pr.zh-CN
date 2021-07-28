@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 学习如何以及为什么在 Microsoft SharePoint Syntex 中重命名模型。
-ms.openlocfilehash: d0d17f040199b2e6b60bfc98d325f18b6de0b7f2
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d1a96646f507a3124759b2a5865440d4d5621209
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445940"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595926"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中重命名模型
 
@@ -49,7 +49,7 @@ ms.locfileid: "51445940"
 
     ![屏幕截图显示了“重命名”模型面板。](../media/content-understanding/rename-model-panel.png) </br>
 
-   b. (可选)在“**高级设置**”下，选择是否希望关联现有[内容类型](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。 如果选择“**使用现有内容类型**”，则将重命名模型，从而匹配所选的内容类型。
+   b. (可选)在“**高级设置**”下，选择是否希望关联现有 [内容类型](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。 如果选择“**使用现有内容类型**”，则将重命名模型，从而匹配所选的内容类型。
 
 5. 选择“**重命名**”。
 

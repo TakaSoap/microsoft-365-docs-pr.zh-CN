@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: ac2643adaa2e0a30e94434a0fe34e4d6ec2b3b1d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053151"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542965"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -81,7 +81,7 @@ ms.locfileid: "53053151"
 
 
 ## <a name="what-is-the-amount-of-traffic-being-generated-by-the-standard-discovery-active-probe"></a>标准发现活动探测器生成的流量量是什么？
- 每次探测尝试，活动探测在已载入设备和探测器设备之间可生成多达 5K 的流量
+ 每次探测尝试，活动探测在已载入设备和探测器设备之间可生成多达 50Kb 的流量
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>为什么设备清单中的"可载入"设备与仪表板磁贴中的"可载入"设备数存在差异？
 你可能会注意到，在设备清单、"载入到 Microsoft Defender for Endpoint"安全建议和"载入设备"仪表板小组件中"可以载入"下列出的设备数量之间存在差异。
@@ -89,7 +89,7 @@ ms.locfileid: "53053151"
  安全建议和仪表板小部件适用于网络中稳定的设备;不包括临时设备、来宾设备和其他。 该想法是在持久性设备上推荐，这也意味着组织的总体安全分数。
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>我能否载入找到的非托管设备？
- 是。 网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。 
+ 能。 网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。 
 
 ## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>我已注意到非托管设备运行状况状态始终为"活动"，为什么？
 在设备清单的标准保留期内，非托管设备运行状况临时为"活动"状态，无论其实际状态如何。

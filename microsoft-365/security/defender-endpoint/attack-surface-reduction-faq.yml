@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: 8088e1bfb8cbaa2d9c7b094b03a56b54c01f8f69
-  ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+  ms.openlocfilehash: e393ff27b5bd918559346959fda65a057205e29d
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53062374"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53543733"
 title: '攻击面减少常见问题解答 (常见问题) '
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -34,7 +34,7 @@ summary: >
 
   - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 sections:
-- name: 忽略
+- name: 已忽略
   questions:
   - question: >
       攻击面减少 (ASR) 是否属于Windows？
@@ -49,7 +49,7 @@ sections:
       若要了解有关许可Windows，请参阅 Windows 10 [Licensing and](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
   - question: >
       如果我有 E3 许可证，是否支持 ASR？
-    answer: "是。 E3 及Windows Enterprise支持 ASR。 \n"
+    answer: "能。 E3 及Windows Enterprise支持 ASR。 \n"
   - question: >
       E5 许可证支持哪些功能？
     answer: >
@@ -89,7 +89,7 @@ sections:
       :::image type="content" source="images/asrfaq2.png" alt-text="排除文件 asr":::
   - question: >
       Microsoft 建议启用哪些规则？
-    answer: "我们建议启用每个可能的规则。 但是，在某些情况下不应启用规则。 例如，如果您使用的是 Microsoft Endpoint Configuration Manager (或 System Center Configuration Manager - SCCM) 来管理终结点，则不建议启用源自 PSExec 和 WMI 命令规则的阻止进程创建。\n\n我们强烈建议您阅读我们的公共文档中提供的每个特定于规则的信息和/或 [警告](/microsoft-365/security/defender-endpoint/attack-surface-reduction)。\n跨多个保护支柱，Office、凭据、脚本、电子邮件等。1709 及更高版本支持所有 ASR 规则（通过 WMI 事件订阅阻止持久性Windows除外）：\n\n* [阻止来自电子邮件客户端和 Webmail 的可执行内容](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)\n* [阻止所有Office应用程序创建子进程](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)\n* [阻止Office应用程序创建可执行内容](attack-surface-reduction.md#block-office-applications-from-creating-executable-content)\n* [阻止Office代码注入其他进程](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)\n* [阻止 JavaScript 或 VBScript 启动下载的可执行内容](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)\n* [阻止执行可能混淆的脚本](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)\n* [从宏中阻止 Win32 API Office调用](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)\n* [使用高级防护抵御勒索软件](attack-surface-reduction.md#use-advanced-protection-against-ransomware)\n* [阻止来自本地安全Windows子系统的](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)凭据 (lsass.exe) \n* [阻止源自 PSExec 和 WMI 命令的进程创建](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)\n* [阻止从 USB 运行的不受信任的和未签名的进程](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)\n* [阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)\n* [阻止Office应用程序创建子进程](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)\n* [阻止 Adobe Reader 创建子进程](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)\n* [通过 WMI 事件订阅阻止持久性](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)\n"
+    answer: "我们建议启用每个可能的规则。 但是，在某些情况下不应启用规则。 例如，如果您使用的是 Microsoft Endpoint Configuration Manager (或 System Center Configuration Manager - SCCM) 来管理终结点，则不建议启用源自 PSExec 和 WMI 命令规则的阻止进程创建。\n\n我们强烈建议您阅读我们的公共文档中提供的每个特定于规则的信息和/或 [警告](/microsoft-365/security/defender-endpoint/attack-surface-reduction)。\n跨多个保护支柱，Office、凭据、脚本、电子邮件等。1709 及更高版本支持所有 ASR 规则（通过 WMI 事件订阅阻止持久性Windows除外）：\n\n* [阻止滥用被攻击的易受攻击的已签名驱动程序](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)\n* [阻止来自电子邮件客户端和 Webmail 的可执行内容](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)\n* [阻止所有Office应用程序创建子进程](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)\n* [阻止Office应用程序创建可执行内容](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)\n* [阻止Office代码注入其他进程](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)\n* [阻止 JavaScript 或 VBScript 启动下载的可执行内容](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)\n* [阻止执行可能混淆的脚本](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)\n* [从宏中阻止 Win32 API Office调用](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)\n* [使用高级防护抵御勒索软件](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)\n* [阻止来自本地安全Windows子系统的](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)凭据 (lsass.exe) \n* [阻止源自 PSExec 和 WMI 命令的进程创建](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)\n* [阻止从 USB 运行的不受信任的和未签名的进程](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)\n* [阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)\n* [阻止Office应用程序创建子进程](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)\n* [阻止 Adobe Reader 创建子进程](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)\n* [通过 WMI 事件订阅阻止持久性](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)\n"
   - question: >
       有关 ASR 入门的一些很好建议是什么？
     answer: >
@@ -107,7 +107,7 @@ sections:
   - question: >
       ASR 是否支持路径中包括系统变量和通配符的文件或文件夹排除项？
     answer: >
-      是。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
+      能。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
   - question: >
       默认情况下，ASR 规则是否涵盖所有应用程序？
     answer: >
@@ -133,7 +133,7 @@ sections:
   - question: >
       规则使用的条件"除非可执行文件满足普遍程度、年龄或受信任的列表条件，否则阻止可执行文件运行"是否由管理员配置？
     answer: >
-      不正确。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
+      否。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
   - question: >
       我启用了 ASR 规则"阻止可执行文件运行，除非它们符合普遍程度、年龄或受信任的列表条件"。 一段时间之后，我更新了一个软件，规则现在阻止了它，即使以前没有更新过。 出错了？
     answer: >

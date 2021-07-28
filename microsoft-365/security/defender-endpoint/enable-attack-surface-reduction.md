@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f08bc688f46d5b68dc7e0cedd68593111231014a
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229139"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596118"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -72,7 +72,7 @@ ms.locfileid: "53229139"
 可以使用以下任一方法启用攻击面减少规则：
 
 - [Microsoft Intune](#intune)
-- [移动设备管理 (MDM)](#mdm)
+- [移动设备管理 (MDM) ](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [组策略](#group-policy)
 - [PowerShell](#powershell)
@@ -109,7 +109,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 ## <a name="mem"></a>MEM
 
-可以使用 OMA-URI Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。 以下过程使用规则 [阻止滥用攻击的易受攻击的已](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) 签名驱动程序作为示例。
+可以使用 OMA-URI Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。 以下过程使用规则 [阻止滥用攻击的易受攻击的已](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) 签名驱动程序作为示例。
 
 1. 打开管理Microsoft Endpoint Manager (MEM) 管理中心。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
 
@@ -131,7 +131,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 基本属性](images/mem03-1-basics.png)
 
-4. 单击 **下一个**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
+4. 点击“**下一步**”。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 配置设置](images/mem04-2-configuration-settings.png)
@@ -172,7 +172,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 适用性规则](images/mem07-5-applicability-rules.png)
 
-10. 单击 **下一个**。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
+10. 点击“**下一步**”。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
 
     > [!div class="mx-imgBorder"]
     > ![MEM 审阅和创建](images/mem08-6-review-create.png)
@@ -191,7 +191,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) 配置服务提供程序 (CSP) 单独启用和设置每个规则的模式。
 
-下面是使用 ASR 规则的 [GUID 值进行引用的示例](attack-surface-reduction.md#attack-surface-reduction-rules)。
+下面是使用攻击面减少规则的 GUID 值进行参考 [的示例](attack-surface-reduction-rules.md)。
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 

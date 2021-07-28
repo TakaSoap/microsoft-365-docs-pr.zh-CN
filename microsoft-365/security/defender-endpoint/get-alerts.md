@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7a508815ca584f28f0a52768ac10a556c3ef621b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289832"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543313"
 ---
 # <a name="list-alerts-api"></a>列出警报 API
 
@@ -61,8 +61,8 @@ ms.locfileid: "53289832"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Alert.Read.All | "读取所有警报"
-Application | Alert.ReadWrite.All | "读取和写入所有警报"
+应用程序 | Alert.Read.All | "读取所有警报"
+应用程序 | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
@@ -82,7 +82,7 @@ GET /api/alerts
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -145,7 +145,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
@@ -215,7 +215,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
@@ -245,8 +245,8 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
                     "registryHive": null,
                     "registryValueType": null,
                     "registryValue": null,
-                    "accountName": "eranb",
-                    "domainName": "MIDDLEEAST",
+                    "accountName": "name",
+                    "domainName": "DOMAIN",
                     "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
                     "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
                     "userPrincipalName": "temp123@microsoft.com",

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4793f3c84ddda0db7f4d67ac96cb31a6e2108c57
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 6e5bb710598e13a47f11a4392985276525760dca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326995"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542113"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>适用于非 Windows 平台的 Microsoft Defender for Endpoint
 
@@ -76,7 +76,7 @@ Android 版 Microsoft Defender for Endpoint 是适用于运行 Android 6.0 及�
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
-iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高版本的设备的移动威胁防护解决方案。 支持监督设备和未监督设备。 在 iOS 上，我们提供包括防钓鱼、阻止不安全连接和设置自定义指示器的 Web 保护。 有关主要功能和优点详细信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
+iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高版本的设备的移动威胁防护解决方案。 支持在客户的租户中注册的设备 (注册或注销) 注册。 受监督的注册设备和未监管注册设备均受支持。 在 iOS 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接和设置自定义指示器以及越狱检测。 有关主要功能和优点详细信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
 
 若要详细了解如何开始使用，请访问 iOS 上的 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-ios.md)。
 

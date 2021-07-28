@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb4a3d01c1380f4fd06999c8f81a4054e2fd00
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c1809969d37d2e3cfb9279eb8266a65ba098b3c6
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844426"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542101"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>载入以前版本的 Windows
 
@@ -85,7 +85,7 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 1. 下载代理安装文件[：Windows 64](https://go.microsoft.com/fwlink/?LinkId=828603)位代理或 Windows [32 位代理](https://go.microsoft.com/fwlink/?LinkId=828604)。
 
 2. 获取工作区 ID：
-   - 在 Defender for Endpoint 导航窗格中，选择"设置 >**设备管理>载入"**
+   - 在 Defender for Endpoint 导航窗格中，选择"设置 >终结点 **">">载入"**
    - 选择 **Windows 7 SP1 和 8.1** 作为操作系统
    - 复制工作区 ID 和工作区密钥
 

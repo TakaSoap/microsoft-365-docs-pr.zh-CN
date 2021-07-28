@@ -13,12 +13,12 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2edd4503e25b4ef2ddf4225716a152609c1022b3
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772361"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596310"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>使用设备控制保护组织的数据
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用
 
 - **一般详细信息：** 日期、操作模式和此事件的策略。
 - **媒体信息：** 媒体信息包括媒体名称、类名称、类 GUID、设备 ID、供应商 ID、卷、序列号和总线类型。
-- **位置详细信息：** 设备名称和MDATP设备 ID。
+- **位置详细信息：** 设备名称和 MDATP 设备 ID。
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: c81f14b92b285359bda7e291bd8d3a8b636ae54d
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cc7fc87a4c9d8bcdcb6c80db6d8725ecb62f24a2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228959"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542794"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Defender for Identity security alerts in Microsoft 365 Defender
 
@@ -21,9 +21,9 @@ ms.locfileid: "53228959"
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍了如何在安全中心内使用[Microsoft Defender for Identity](/defender-for-identity)安全警报Microsoft 365[基础知识](/microsoft-365/security/defender/overview-security-center)。
+本文介绍了如何使用 Microsoft [Defender for Identity](/defender-for-identity)安全警报的基础知识，Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
 
-Defender for Identity 警报已本机集成到具有专用标识[Microsoft 365页面格式](https://security.microsoft.com)的安全中心。 这标记了将完整的[Microsoft Defender for Identity](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)体验引入到 Microsoft 365 Defender。
+Defender for Identity 警报在本机集成到具有[Microsoft 365 Defender标识警报](https://security.microsoft.com)页面格式的页面中。 这标记了将完整的[Microsoft Defender for Identity](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)体验引入到 Microsoft 365 Defender。
 
 新的标识警报页面为 Microsoft Defender for Identity 客户提供更好的跨域信号扩充和新自动标识响应功能。 它可确保您保持安全，并有助于提高安全操作的效率。
 
@@ -38,7 +38,7 @@ Defender for Identity 警报已本机集成到具有专用标识[Microsoft 365�
 
 可以从多个位置访问警报，包括警报页面、事件页面、各个设备的页面以及高级 **搜寻页面。**  本示例中，我们将查看警报 **页面**。
 
-在安全 [Microsoft 365，](https://security.microsoft.com/)转到"事件 **&警报"，** 然后转到"**警报"。**
+In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **Incidents & alerts** and then to **Alerts**.
 
 ![转到"事件和警报"，然后转到"警报"](../../media/defender-identity/incidents-alerts.png)
 

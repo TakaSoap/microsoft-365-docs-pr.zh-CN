@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 342e471c897c6722e9a7d67578e10b85719d5bd8
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985443"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595986"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -31,7 +31,7 @@ ms.locfileid: "52985443"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 查看事件查看器中的攻击面减少事件，以监视哪些规则或设置正在工作。 您还可以确定任何设置是否过于"干扰"或影响您的日常工作流。
 
@@ -81,7 +81,7 @@ ms.locfileid: "52985443"
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择 **“确定”**。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -148,20 +148,20 @@ ms.locfileid: "52985443"
 
    ![使用事件查看器显示动画](images/event-viewer.gif)
 
-功能 | 提供程序/源 | 事件 ID | 说明
+功能 | 提供程序/源 | 事件 ID | 描述
 :-|:-|:-:|:-
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 1 | ACG 审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 2 | ACG 强制
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 3 | 不允许子进程审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 4  | 不允许子进程阻止
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 5  | 阻止低完整性图像审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 6  | 阻止低完整性图像块
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 6  | 阻止低完整性图像阻止
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 7  | 阻止远程图像审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 8  | 阻止远程图像阻止
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 9  | 禁用 win32k 系统调用审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 10   | 禁用 win32k 系统调用块
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 10  | 禁用 win32k 系统调用阻止
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 11 | 代码完整性防护审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 12  | 代码完整性防护块
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 12  | 代码完整性防护阻止
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 13 | EAF 审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 14  | EAF 强制
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 15 | EAF+ 审核
@@ -174,7 +174,7 @@ ms.locfileid: "52985443"
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 22 | ROP CallerCheck 强制
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 23 | ROP SimExec 审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 24 | ROP SimExec 强制
-漏洞保护 | WER-Diagnostics | 5  | CFG 块
+漏洞保护 | WER-诊断 | 5  | CFG 阻止
 漏洞保护 | Win32K (Operational)  | 260 | 不受信任的字体
 网络保护 | Windows Defender (操作)  | 5007 | 更改设置时的事件
 网络保护 | Windows Defender (操作)  | 1125 | 在审核模式下触发网络保护时的事件

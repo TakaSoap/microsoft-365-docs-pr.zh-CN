@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1154c1f1da0c5b4dba026af21e07dd1e7f66abe9
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339642"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596154"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用Windows 10脚本载入新设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "53339642"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
 
 还可以手动将个别设备载入到 Defender for Endpoint。 在承诺载入网络内的所有设备之前，你可能希望先在测试服务时这样做。
 
@@ -76,7 +76,7 @@ ms.locfileid: "53339642"
 
 
 >[!TIP]
-> 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint 终结点](run-detection-test.md)运行检测测试。
+> 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint 终结点](run-detection-test.md)运行检测测试。
 
 ## <a name="configure-sample-collection-settings"></a>配置示例集合设置
 对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
@@ -86,7 +86,7 @@ ms.locfileid: "53339642"
 通过以下注册表项设置配置：
 
 ```console
-Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
@@ -107,7 +107,7 @@ Value: 0 or 1
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-    1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  > **""载出"。**
+    1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >  **""载出"。**
 
     1. 选择Windows 10操作系统。
 
@@ -144,7 +144,6 @@ Value: 0 or 1
 2. 单击 **"设备清单"。**
 
 3. 验证设备是否显示。
-
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](configure-endpoints-gp.md)

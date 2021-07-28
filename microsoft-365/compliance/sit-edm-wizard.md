@@ -17,19 +17,16 @@ search.appverid:
 - MET150
 description: 学习如何使用精确数据匹配和敏感信息类型向导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 1cbbb02528e898f775d63bf023b641bdaaeeb07e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861655"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543601"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>使用精确数据匹配架构和敏感信息类型向导
 
 [使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (规则包) 文件来帮助简化此过程。
-
-> [!NOTE]
-> 精确数据匹配架构和敏感信息类型向导仅用于 World Wide 和 GCC。
 
 可以使用此向导而无需：
 
@@ -42,7 +39,7 @@ ms.locfileid: "52861655"
 
 1. 通过 EDM [工作流程概览](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) 熟悉使用 EDM 创建自定义敏感信息类型的步骤。
 
-2. 执行 [以 .csv 格式保存敏感数据](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) 一节中的步骤。
+2. 执行以 .csv [.tsv 格式保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>使用精确数据匹配架构和敏感信息类型模式向导
 

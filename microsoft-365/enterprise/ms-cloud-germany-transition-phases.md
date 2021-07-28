@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云迁移到德国 microsoft 云 (到德国新数据中心) Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 2efb1ad941c06ed3273032eb8ce14d81dd2eb834
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 37c8e1d879bc296b226fb4d616d798d4c38b4a0d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286149"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542017"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -158,6 +158,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 - 其 SharePoint Online 实例尚未迁移的德国 Microsoft 云客户需要留在 SharePoint Online PowerShell 模块/Microsoft.SharePointOnline.CSOM 版本 16.0.20616.12000 或以下。 否则，SharePoint PowerShell 或客户端对象模型连接到联机连接将失败。
 - 在此阶段中，URL 后面的 IP SharePoint将会更改。 转换到 Office 365 全局服务后，保留的租户 URL (例如，和) 的地址将更改为全球 Microsoft 365 URL 和 IP 地址范围 (SharePoint Online 和 `contoso.sharepoint.de` `contoso-my.sharepoint.de` [OneDrive for Business) ](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)。
 - 尽管SharePoint和OneDrive服务已转换，Office Online 可能无法如期工作。
+- 如果已应用自定义搜索配置，则完成转换后导入搜索配置。 在转换前必须导出搜索配置，如 SharePoint Online 的迁移前[步骤中所述](ms-cloud-germany-transition-add-pre-work.md#sharepoint-online)。
 
 > [!NOTE]
 > 如果使用电子数据展示，请确保了解电子 [数据展示迁移体验](ms-cloud-germany-transition-add-scc.md)。

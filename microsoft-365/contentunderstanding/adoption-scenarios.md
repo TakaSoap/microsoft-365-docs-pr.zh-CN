@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex 的方案和用例
+title: Microsoft SharePoint Syntex 的应用场景和用例
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,21 +14,21 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-description: 查找有关如何在组织中SharePoint Syntex 的方案。
-ms.openlocfilehash: b28239a304c8fab209436c12e6cdbffe160b7981
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+description: 查找有关在组织中如何使用SharePoint Syntex的方案。
+ms.openlocfilehash: 4714af4c4182c3c57625a82dff0cfdc1d5260785
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52697055"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543205"
 ---
-# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 的方案和用例
+# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 的应用场景和用例
 
-使用以下示例方案可提示你了解如何在组织中SharePoint Syntex。
+使用以下示例方案可提示有关在组织中如何使用SharePoint Syntex的想法。
 
 - [应用场景：通过表单处理跟踪发票数据](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [方案：通过了解文档来跟踪合同信息](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [应用场景：避免记录管理、文档管理和合规性流程的风险（SharePoint整合）](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [应用场景：避免基于记录管理、文档管理和合规性流程SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
 - [方案：捕获以前无法访问的文档的信息](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [方案：改进数据处理以提供见解和分析](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [方案：自动执行订单处理](adoption-scenarios.md#scenario-automate-order-processing)
@@ -36,7 +36,7 @@ ms.locfileid: "52697055"
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>应用场景：通过表单处理跟踪发票数据
 
-例如，可以使用 Syntex 和 SharePoint 功能Power Automate和监视发票来设置流程。
+例如，你可以设置一个使用 SharePoint Syntex 和 Power Automate 功能来跟踪和监视发票的过程。
 
 1. 设置用于存储发票文档的库。
 1. 训练模型以识别文档中的字段。
@@ -46,7 +46,7 @@ ms.locfileid: "52697055"
     - 发票已过期。
     - 发票的金额大于自动审批金额。
 
-![使用 Syntex 和 SharePoint 跟踪和Power Automate](../media/content-understanding/process-invoices-flow.png)
+![使用发票和 SharePoint Syntex 跟踪Power Automate](../media/content-understanding/process-invoices-flow.png)
 
 当您自动执行此方案时，您可以：
 
@@ -63,14 +63,14 @@ ms.locfileid: "52697055"
 1. 模型完成后，将模型应用到可在其中上载合约的库。
 1. 将保留标签应用于日期字段，以便合同在库中保留所需时间。
 
-![使用合成和保留SharePoint跟踪和监视合约](../media/content-understanding/process-contracts-flow.png)
+![使用标签和保留标签跟踪SharePoint Syntex合同](../media/content-understanding/process-contracts-flow.png)
 
 当您自动执行此方案时，您可以：
 
 - 通过自动从合同中提取数据而不是手动提取数据来节省时间和资金。
 - 通过使用保留标签来确保更好地合规性，以确保适当地保留合同。
 
-## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>应用场景：避免记录管理、文档管理和合规性流程的风险（SharePoint整合）
+## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>应用场景：避免基于记录管理、文档管理和合规性流程SharePoint Syntex
 
 降低风险是大多数公司的共同目标。 您可能需要：
 
@@ -79,7 +79,7 @@ ms.locfileid: "52697055"
 - 审核收据、合同等，以确保遵守公司策略。
 - 确保项目具有合规性所需的全部文档。
 
-设置一些流程以遵守 SharePoint Syntex，以捕获和适当分类、审核和标记需要更好治理的文档和表单。 您可以依赖SharePoint来自动对内容进行分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 您可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
+设置一些流程以遵守SharePoint Syntex，以捕获和适当分类、审核和标记需要更好治理的文档和表单。 您可以依赖SharePoint Syntex来自动对内容进行分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 您可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
 
 当您自动执行此方案时，您感觉安全：
 
@@ -104,7 +104,7 @@ ms.locfileid: "52697055"
 
 ## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>方案：改进数据处理以提供见解和分析
 
-例如，一家SharePoint公司可以使用 Syntex 从 FDA 文档中提取信息，以回答其领导的问题。 使答案更易于访问可以缩短生成这些答案的时间，并增加数据的可用性以生成更准确的领导问题的答案。
+例如，一家SharePoint Syntex公司可以使用代码从 FDA 文档中提取信息，以回答其领导的问题。 使答案更易于访问可以缩短生成这些答案的时间，并增加数据的可用性以生成更准确的领导问题的答案。
 
 例如，项目经理需要快速提供来自我领导团队的产品相关问题的解答。 他们需要在一个合并仪表板中查找与查询相关的信息和指标。 他们正在寻找一个解决方案，从产品标签、产品 pamphlet 和其他材料中提取他们需要的信息，并生成一份合并报告，在向领导团队报告时可以使用该报告。
 
@@ -116,7 +116,7 @@ ms.locfileid: "52697055"
 
 ## <a name="scenario-automate-order-processing"></a>方案：自动执行订单处理
 
-使用 SharePoint Syntex，可以缩短手动处理客户订单的时间。 例如，您可以使用 OCR 处理将传真、电子邮件或纸张中的订单上载到 SharePoint，然后从这些订单中提取元数据，以便您可以使用自动化流程完成这些订单。
+使用 SharePoint Syntex，您可以缩短手动处理客户订单的时间。 例如，您可以使用 OCR 处理将传真、电子邮件或纸张中的订单上载到 SharePoint，然后从这些订单中提取元数据，以便您可以使用自动化流程完成这些订单。
 
 例如，供应链经理希望减少由手动数据输入导致的错误。 他们希望避免手动查看入站客户订单和数据输入， (、传真或电子邮件) ，以减少进入业务系统的错误。 他们希望有一个应用 AI 和机器学习技术的解决方案，以验证传入订单信息、提取核心数据并自动将数据推送到其 ERP 系统中，以便订单履行与对帐。
 
@@ -129,7 +129,7 @@ ms.locfileid: "52697055"
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>应用场景：简化护照续订流程
 
-SharePointSyntex 可以帮助你自动执行关键合同信息的提醒和续订。 例如，HR 主管需要确保员工的护照是最新的和/或及时续订的。 他们希望为用户提供一个简单直观的更新其 Visa 的过程。 他们需要一个解决方案，从合同中提取续订日期，并自动在员工续订日期接近时发送提醒。
+SharePoint Syntex可帮助你自动执行关键合同信息的提醒和续订。 例如，HR 主管需要确保员工的护照是最新的和/或及时续订的。 他们希望为用户提供一个简单直观的更新其 Visa 的过程。 他们需要一个解决方案，从合同中提取续订日期，并自动在员工续订日期接近时发送提醒。
 
 自动执行此方案时，可以确保：
 
@@ -139,4 +139,4 @@ SharePointSyntex 可以帮助你自动执行关键合同信息的提醒和续订
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft SharePoint整合采用：入门](adoption-getstarted.md)
+[Microsoft SharePoint Syntex采用：入门](adoption-getstarted.md)

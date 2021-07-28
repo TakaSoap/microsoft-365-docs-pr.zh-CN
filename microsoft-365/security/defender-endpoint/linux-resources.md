@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 9fe35f5bac942cc5a4e9fa95a5eaf9759072d832
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930363"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542185"
 ---
 # <a name="resources"></a>资源
 
@@ -104,7 +104,7 @@ ms.locfileid: "52930363"
 
 下表列出了一些最常见方案的命令。 从 `mdatp help` 终端运行以查看受支持命令的完整列表。
 
-|组                 |应用场景                                                |命令                                                                |
+|Group                 |应用场景                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |配置         |打开/关闭实时保护                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
 |配置         |打开/关闭行为监视                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -166,8 +166,8 @@ ms.locfileid: "52930363"
 
 ### <a name="known-issues"></a>已知问题
 
-- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft Defender 安全中心，即使产品正在正常工作。 我们正在解决此问题。
-- 登录的用户不会显示在Microsoft Defender 安全中心门户中。
+- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft 365 Defender，即使产品正在正常工作。 我们正在解决此问题。
+- 登录的用户不会显示在Microsoft 365 Defender门户中。
 - 在 SUSE 分发中，如果 *libatomic1* 安装失败，应验证操作系统是否注册：
 
    ```bash

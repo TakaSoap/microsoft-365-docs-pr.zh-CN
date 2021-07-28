@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb5d4d017e7ca67c87a081b618d4f324394367e1
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 8b4954906ace6e2171a18e23a4eb64c66e1cf844
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590729"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53543376"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 客户服务
 
@@ -32,7 +32,7 @@ ms.locfileid: "53590729"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
+>想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint 最近升级了支持流程，可提供更现代、更高级的支持体验。 
 
@@ -83,10 +83,9 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 > 如果你有与 Microsoft 的协助支持合同，你将在小组件上看到顶级标记。 如果没有，请联系你的 Microsoft 帐户经理。
 
 ### <a name="contact-support"></a>联系支持人员
-通过单击看起来像耳机的图标可使用此选项。 然后，你将获取以下页面以提交支持案例： </br>
+通过单击看起来像耳机的图标可使用此选项。 然后，你将获取以下页面以提交支持案例： :::image type="content" source="../../media/contactsupport2.png" alt-text="联系支持人员 2":::
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="联系支持人员 2"::: </br>
-
+![打开服务请求小组件的图像](images/contact-support-screen.png)
 
 1. 填写你所面临的问题的标题和说明，以及我们可能会联系你的电话号码和电子邮件地址。
 

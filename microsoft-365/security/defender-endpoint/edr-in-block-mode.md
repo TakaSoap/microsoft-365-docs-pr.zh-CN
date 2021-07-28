@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/13/2021
+ms.date: 07/20/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 1915a57becb1cba14605f4512ff123c1bca846bb
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: b5c2694437333f197f3c9b04fd1f10fb581cd4d2
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415595"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596106"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -35,11 +35,11 @@ ms.locfileid: "53415595"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 ## <a name="what-is-edr-in-block-mode"></a>阻止EDR什么？
 
-[当终结点检测和响应](overview-endpoint-detection-response.md) (EDR) 处于阻止模式时，如果终结点Microsoft Defender 防病毒防病毒产品，并且正在被动模式下运行，可以针对恶意项目提供额外的保护。 EDR阻止模式修复使用阻止模式检测到的恶意EDR。 此类项目可能已被主要的非 Microsoft 防病毒产品错过。 EDR阻止模式在后台工作，以修正在设备中检测到的泄露后的恶意项目。 
+[当终结点检测和响应](overview-endpoint-detection-response.md) (EDR) 处于阻止模式时，如果终结点Microsoft Defender 防病毒防病毒产品，并且正在被动模式下运行，可以针对恶意项目提供额外的保护。 EDR阻止模式在后台工作，以修正由功能检测到的EDR项目。 此类项目可能已被主要的非 Microsoft 防病毒产品错过。 
 
 > [!IMPORTANT]
 > EDR阻止模式时，不会提供启用实时Microsoft Defender 防病毒时可用的所有保护。 依赖于要成为Microsoft Defender 防病毒防病毒解决方案的所有功能将不起作用，包括以下关键示例： 
@@ -74,7 +74,8 @@ EDR阻止模式下的已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 
 2. Choose **设置**  >  **Endpoints**  >  **General**  >  **Advanced features**.
 
-3. 向下滚动，然后在"在块EDR **启用 urln。**
+3. 向下滚动，然后在块模式下EDR **启用"**
+
 
 > [!NOTE]
 > EDR在阻止模式下只能打开 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 或之前 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。 不能使用注册表项、Microsoft Intune或组策略来启用或禁用EDR阻止模式。
