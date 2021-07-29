@@ -9,16 +9,16 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft Bookings 常见问题解答。
-  ms.openlocfilehash: 956d423ef89454fa87524ce15165ffd3c8b59507
-  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+  ms.openlocfilehash: 4f8066e8d6ade84cbe5aa9e41b14784870353ddf
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/30/2021
-  ms.locfileid: "53227699"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53541465"
 title: Microsoft Bookings 常见问题解答
 summary: ''
 sections:
-- name: 概要
+- name: 一般信息
   questions:
   - question: >
       什么是 Microsoft Bookings？
@@ -47,11 +47,11 @@ sections:
   - question: >
       能否在我自己的网站中使用 Bookings？
     answer: >
-      可以。 我们提供了一种通过 iFrame 在网站中嵌入 Bookings 日历的方法。 链接嵌入代码位于 Bookings 应用内的 **Bookings** 页面选项卡中。
+      能。 我们提供了一种通过 iFrame 在网站中嵌入 Bookings 日历的方法。 链接嵌入代码位于 Bookings 应用内的 **Bookings** 页面选项卡中。
   - question: >
       即使我的企业没有网页，我能否使用 Bookings？
     answer: >
-      可以。 我们在 Web 应用中的"预订页面"选项卡 **中提供一** 个指向你的预订页面的链接。 你只需将链接提供给客户或客户，他们将看到你的企业的最新可用性信息。 或者，可以在社交媒体中共享预订页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并仅限制对组织内部用户的访问权限来控制哪些人可以访问页面。
+      能。 我们在 Web 应用中的"预订页面"选项卡 **中提供一** 个指向你的预订页面的链接。 你只需将链接提供给客户或客户，他们将看到你的企业的最新可用性信息。 或者，可以在社交媒体中共享预订页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并仅限制对组织内部用户的访问权限来控制哪些人可以访问页面。
   - question: >
       我们的 IT 部门是否可以控制最终用户是否可以访问 Bookings？
     answer: >
@@ -69,7 +69,7 @@ sections:
   - question: >
       原始 Bookings Web 应用的所有功能是否可在 Microsoft Teams？
     answer: >
-      Bookings 的轻型版本现在作为应用中的应用Teams。 初始通知位于 [此处](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/)。 Web 应用中提供了深层链接功能，设置完成后，无需离开网站即可使用 Bookings Teams。 信息跨平台流动。
+      Bookings 的轻型版本现在作为应用中的应用Teams。 有关它详细信息，请参阅 Teams[中的 Bookings Teams。](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) Web 应用中提供了深层链接功能，设置完成后，无需离开网站即可使用 Bookings Teams。 信息跨平台流动。
   - question: >
       Bookings 是小型企业产品/服务还是Enterprise两者？
     answer: "Bookings 是各种行业Enterprise和小型企业客户的理想解决方案。 用例包括：\n\n- 金融服务\n    - 一些\n    - banking and insurance services\n    - 税务归档\n\n- 人力资源 (人力资源) \n    - 候选人面试\n    - 载入\n    - 福利协助\n    - 培训和研讨会\n\n- 医疗\n    - patient 访问\n    - 提供程序到提供程序的协作\n    - insurance consults\n\n- 政府&公共部门\n    - 法院听审和试用\n    - 公共服务\n    - 部门约会\n\n- 教育 - K-12\n    - 家长会\n    - 学校大会堂\n    - 学生访问\n\n- 教育 - 教育程度更高\n    - 办公时间\n    - 一些\n    - 学生服务\n    - 考试注册\n\n- 零售版\n    - 辅助购物\n    - 项目计划\n    - 设计服务\n\n- 常规Enterprise和小型企业需求\n    - 客户和客户端会议\n    - 技术支持\n    - 法律审阅\n    - facilities\n"
@@ -89,11 +89,11 @@ sections:
   - question: >
       我的员工能否在没有帐户的情况下使用 Bookings Microsoft 365帐户？
     answer: >
-      可以。 可以使用任何电子邮件添加员工，当有人与员工一起预订约会时，他们仍将收到电子邮件确认和日历邀请。
+      能。 可以使用任何电子邮件添加员工，当有人与员工一起预订约会时，他们仍将收到电子邮件确认和日历邀请。
   - question: >
       我能否在同一个帐户下创建多个 Bookings 日历Microsoft 365并切换它们？
     answer: >
-      可以。 可以使用一个帐户创建和管理多个 Bookings 日历。 可以在 Bookings Web 应用中使用业务名称旁边的连接号在两者之间进行切换。
+      能。 可以使用一个帐户创建和管理多个 Bookings 日历。 可以在 Bookings Web 应用中使用业务名称旁边的连接号在两者之间进行切换。
   - question: >
       如果我的组织具有 F1/F3、E1 和 E3/E5 混合许可证，如何？
     answer: >
@@ -174,7 +174,7 @@ sections:
   - question: >
       日历能否保持未发布状态 (面向公众) 但仍可供指定用户访问？
     answer: >
-      可以。 Web 应用中的"预订页面"选项卡上有一个复选框："需要我的Microsoft 365或Office 365 **帐户进行预订。"** 选中此复选框将自助服务页面访问权限限制为仅租户内的页面。 位于 Web 应用内以创建和管理的 Bookings 日历仅能由作为员工添加到具有管理员或查看者角色的人员访问。
+      能。 Web 应用中的"预订页面"选项卡上有一个复选框："需要我的Microsoft 365或Office 365 **帐户进行预订。"** 选中此复选框将自助服务页面访问权限限制为仅租户内的页面。 位于 Web 应用内以创建和管理的 Bookings 日历仅能由作为员工添加到具有管理员或查看者角色的人员访问。
 
 
       :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings 中的预订页面访问控制":::

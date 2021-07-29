@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，会使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: a251967670e19d8f387e3fc4f724a06ef674a2b4
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f6c03787db890e1963f659aa9d2ece052d50a82c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394035"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541633"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -58,7 +58,7 @@ ms.locfileid: "53394035"
 
 - **登录：** 共享邮箱不用于通过关联的用户帐户直接登录。 应始终阻止共享邮箱帐户的登录，并阻止登录。
 
-- **用户过多：** 当同时访问共享邮箱的指定用户过多时，他们可能间歇性地无法连接到此邮箱。 在这种情况下，你可以考虑减少用户数或使用不同的工作负荷，如Microsoft 365或公用文件夹。
+- **用户过多：** 当有太多指定用户同时访问共享邮箱 (建议不要超过 25) 时，他们可能间歇性地无法连接到此邮箱，或者存在不一致的情况，如发件箱中重复的邮件。 在这种情况下，你可以考虑减少用户数或使用不同的工作负载，例如Microsoft 365组或公用文件夹。
 
 - **邮件删除：** 遗憾的是，无法阻止用户删除共享邮箱中的邮件。 这样做的唯一方法就是创建一个Microsoft 365组，而不是共享邮箱。 邮箱中的Outlook就像共享邮箱。 有关这两个组的比较，请参阅 [比较组](../create-groups/compare-groups.md)。 若要详细了解组，请参阅 [了解有关组的更多信息](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ebd1ef10f0ea9a6fbedf9aea1e13237e45dd6ee3
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840906"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567617"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>使用安全修复危险和漏洞管理
 
@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 
 ### <a name="enable-microsoft-intune-connection"></a>启用Microsoft Intune连接
 
-若要使用此功能，请启用Microsoft Intune连接。 In the Microsoft Defender 安全中心， navigate to **设置**  >  **General**  >  **Advanced features**. 向下滚动并查找Microsoft Intune **连接**。 默认情况下，切换处于关闭状态。 打开连接 **Microsoft Intune****打开。**
+若要使用此功能，请启用Microsoft Intune连接。 在Microsoft 365 Defender门户中，导航到设置  >  **高级**  >  **功能"。** 向下滚动并查找Microsoft Intune **连接**。 默认情况下，切换处于关闭状态。 打开连接 **Microsoft Intune****打开。**
 
 **注意**：如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 
 ### <a name="remediation-request-steps"></a>修正请求步骤
 
-1. 转到"危险和漏洞管理导航"菜单中，Microsoft Defender 安全中心"[**安全建议"。**](tvm-security-recommendation.md)
+1. 转到安全门户中的"威胁和 **漏洞** 管理"导航Microsoft 365 Defender，**然后选择"推荐**[**安全建议"。**](tvm-security-recommendation.md)
 
 2. 选择要请求修正的安全建议，然后选择"修正 **选项"。**
 
@@ -79,7 +79,8 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。
 
 进入"修正"页后，选择要查看的修正活动。 你可以按照修正步骤、跟踪进度、查看相关建议、导出到 CSV 或标记为完成。
-![包含所选修正活动的"修正"页的示例，以及该活动的列出说明、IT 服务和设备管理工具以及设备修正进度的飞出图。](images/remediation_flyouteolsw.png)
+
+:::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="包含所选修正活动的&quot;修正&quot;页面示例，以及列出说明、IT 服务和设备管理工具以及设备修正的活动的飞出图":::
 
 >[!NOTE]
 > 已完成的修正活动保留期为 180 天。 若要使"修正"页以最佳方式执行，修正活动将在完成后 6 个月后删除。
@@ -92,11 +93,11 @@ Microsoft Defender for Endpoint 中的 危险和漏洞管理 功能通过修正�
 - **系统确认**：在已修正 (自动完成任务) 
 - **N/A：** 信息不可用，因为我们不知道此旧任务的完成情况
 
-![由具有两行的列创建和完成。 "完成者"的一行包含电子邮件示例，另一行显示系统确认。](images/tvm-completed-by.png)
+:::image type="content" alt-text="由具有两行的列创建和完成。&quot;完成者&quot;的一行包含电子邮件示例，另一行显示系统确认。" source="images/tvm-completed-by.png":::
 
 ### <a name="top-remediation-activities-in-the-dashboard"></a>仪表板中的热门修正活动
 
-在 **仪表板 中查看** 危险和漏洞管理 [活动](tvm-dashboard-insights.md)。 选择任意条目以转到"修正 **"** 页。 可以在 IT 管理员团队修正任务后将修正活动标记为已完成。
+查看 **威胁和** 漏洞管理 [仪表板中的 **热门修正** 活动](tvm-dashboard-insights.md)。 选择任意条目以转到"修正 **"** 页。 可以在 IT 管理员团队修正任务后将修正活动标记为已完成。
 
 ![Top 修正活动卡片的示例，该表列出了根据安全建议生成的顶部活动。](images/tvm-remediation-activities-card.png)
 

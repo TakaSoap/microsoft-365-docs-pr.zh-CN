@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 调查异常检测警报。
-ms.openlocfilehash: 6797cdcbfd2a2d3c32768a158a5f8cd0fc579d56
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 41dd60de86d7583169845ae185f9f715011ea3e4
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420117"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541369"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>调查异常检测警报
 
@@ -27,9 +27,9 @@ ms.locfileid: "53420117"
 
 ## <a name="mitre-attck"></a>MITRE ATT&CK
 
-为了更轻松地映射 Microsoft 应用治理警报和熟悉的 MITRE ATT&CK 矩阵之间的关系，我们已按其相应的 MITRE ATT&CK 策略对警报进行了分类。 借助此附加参考，可以更轻松地了解触发 Microsoft 应用程序安全和治理警报时可能使用的可疑攻击技术。
+为了更轻松地映射 Microsoft 应用治理警报和熟悉的 MITRE ATT&CK 矩阵之间的关系，我们已按其相应的 MITRE ATT&CK 策略对警报进行了分类。 借助此附加参考，可以更轻松地了解触发应用治理警报时可能使用的可疑攻击技术。
 
-本指南提供有关调查和修正以下类别中的 Microsoft 应用治理警报的信息。
+本指南提供有关调查和修正以下类别中应用治理警报的信息。
 
 - 初始访问
 - 执行
@@ -41,6 +41,7 @@ ms.locfileid: "53420117"
 - 外泄
 - 影响
 
+<!-->
 ## <a name="security-alert-classifications"></a>安全警报分类
 
 经过适当调查后，所有 Microsoft 应用治理警报都可以归类为以下活动类型之一:
@@ -48,13 +49,14 @@ ms.locfileid: "53420117"
 - 真阳性(TP): 针对确认为恶意活动的警报。
 - 良性真阳性(B-TP): 针对可疑但非恶意活动的警报，例如渗透测试或其他授权的可疑操作。
 - 假阳性(FP): 针对非恶意活动的警报。
+-->
 
 ## <a name="general-investigation-steps"></a>一般调查步骤
 
 在调查任何类型的警报时，请使用以下一般准则，从而在应用推荐操作之前更清楚地了解潜在威胁。
 
 - 查看应用严重性级别，并与租户中的其余应用进行比较。 这样的查看将帮助识别租户中会带来更大风险的应用。
-- 如果识别出 TP，请查看所有应用活动以了解影响。 例如，查看以下应用信息:
+- 如果标识了 TP，请查看所有应用活动以了解影响。例如，查看以下应用信息：
 
   - 授予访问权限的范围
   - 异常行为  

@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 按照以下步骤将前员工的电子邮件转发给其他员工或转换为共享邮箱。
-ms.openlocfilehash: 5ab66cf9d71a597a7f33c9a5e3a180738592faca
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: df8652f89df5715ba45408f87755bd2ee238884c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244171"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541597"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱
 
@@ -56,3 +57,10 @@ ms.locfileid: "52244171"
 4. 启用" **转发发至此邮箱的所有电子邮件** "。 在 **"转发地址** "框中，键入要获取电子邮件的当前员工的电子邮件地址。
 5. 选择“**保存**”。
 6. 注意，切勿删除以前员工的帐户。
+
+## <a name="related-content"></a>相关内容
+
+[在邮箱中打开和使用](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd) 
+ 共享Outlook[访问其他人的邮箱](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081) 
+[Exchange管理中心Exchange Online](/exchange/exchange-admin-center) 
+[经理其他人的邮件和日历项目](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

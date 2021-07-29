@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: e52471e1b3e9ee3a410de493b536f9d360d60624
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 35c8f85bad73d98aa6eef0f58f853560fe9a1e63
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844438"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590667"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -37,7 +37,7 @@ ms.locfileid: "52844438"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-想要了解它的工作原理吗？ 观看以下视频： <br/><br/>
+想要了解它的工作原理吗？ 观看以下视频：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
@@ -46,16 +46,16 @@ ms.locfileid: "52844438"
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
 > [!TIP]
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
 
 ## <a name="how-the-automated-investigation-starts"></a>自动调查的启动方式
 
 当触发警报或安全操作员启动调查时，可以启动自动调查。
 
-|情况  |发生的情况  |
-|---------|---------|
-|触发警报     | 通常，自动调查在触发[警报并](review-alerts.md)[创建事件时](view-incidents-queue.md)启动。 例如，假设恶意文件驻留在设备上。 检测到该文件时，将触发警报并创建事件。 自动调查过程在设备上开始。 由于其他设备上生成了相同的文件，因此其他警报会添加到关联事件和自动调查。         |
-|手动启动调查     | 安全运营团队可以手动启动自动调查。 例如，假设安全操作员正在查看设备列表，并注意到设备具有高风险级别。 安全操作员可以选择列表中的设备以打开其飞出内容，然后选择启动 **自动调查**。 |
+|情况|发生的情况|
+|---|---|
+|触发警报|通常，自动调查在触发[警报并](review-alerts.md)[创建事件时](view-incidents-queue.md)启动。 例如，假设恶意文件驻留在设备上。 检测到该文件时，将触发警报并创建事件。 自动调查过程在设备上开始。 由于其他设备上生成了相同的文件，因此其他警报会添加到关联事件和自动调查。|
+|手动启动调查|安全运营团队可以手动启动自动调查。 例如，假设安全操作员正在查看设备列表，并注意到设备具有高风险级别。 安全操作员可以选择列表中的设备以打开其飞出内容，然后选择启动 **自动调查**。|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>自动调查如何扩展其范围
 
@@ -65,10 +65,11 @@ ms.locfileid: "52844438"
 
 ## <a name="how-threats-are-remediated"></a>如何修正威胁
 
-触发警报并运行自动调查时，将针对调查的每个证据生成裁定。 裁定可以是 
+触发警报并运行自动调查时，将针对调查的每个证据生成裁定。 裁定可以是：
+
 - *恶意*;
-- *可疑*;或 
-- *未找到威胁*。 
+- *可疑*;或
+- *未找到威胁*。
 
 在做出裁定后，自动调查可能会导致一个或多个修正操作。 修正操作的示例包括将文件发送到隔离区、停止服务、删除计划任务等。 若要了解更多信息，请参阅 [修正操作](manage-auto-investigation.md#remediation-actions)。  
 
@@ -79,12 +80,12 @@ ms.locfileid: "52844438"
 > [!TIP]
 > 查看安全中心内新的统一Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
-
 ## <a name="requirements-for-air"></a>AIR 的要求
 
 你的组织必须具有适用于终结点的 Defender (请参阅[Microsoft Defender for Endpoint) 。](minimum-requirements.md)
 
 目前，AIR 仅支持以下操作系统版本：
+
 - Windows Server 2019
 - Windows 10版本 1709 (OS 内部版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
 - Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
@@ -100,4 +101,4 @@ ms.locfileid: "52844438"
 
 - [PUA 保护](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Microsoft 365 Defender 中的自动调查和响应](/microsoft-365/security/defender/mtp-autoir)
+- [自动调查和响应Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何创建和管理用于处理组织中个人数据的策略，Microsoft 365响应警报以及修正问题。
-ms.openlocfilehash: f9df027d01ffe4629654db1ddd006d141d57e387
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 9597d0f55f6dc21004fd23ff94d53bf3838ef177
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378485"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541789"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>在隐私管理与预览版 (和管理) 
 
@@ -50,7 +50,7 @@ ms.locfileid: "53378485"
 跨部门或区域边界传输数据可能会增加数据泄露的风险，例如，如果通过未加密的电子邮件或未经授权的收件人发送数据。 此类操作可能会影响法规，也可能违反既定的隐私实践。 使用数据传输模板创建隐私管理策略可以发现并帮助限制此类传输。
 
 > [!NOTE]
-> 在公共预览版期间，某些运行数据传输策略以检测跨区域的传输的租户可能会遇到同步问题，这些问题会影响对 Exchange 和 Teams 匹配项的可见性。 我们建议在预览此策略SharePoint时OneDrive和定义数据。 预计 2021 年秋季将更新此问题。
+> 在公共预览版期间，某些运行数据传输策略以检测跨区域的传输的租户可能会遇到同步问题，这些问题会影响对 Exchange 和 Teams 匹配项的可见性。 我们建议在预览此策略SharePoint时OneDrive和定义数据。
 
 ### <a name="data-minimization"></a>数据最小化
 

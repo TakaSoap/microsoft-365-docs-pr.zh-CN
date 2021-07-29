@@ -19,12 +19,12 @@ description: 管理员可以了解如何查找和使用电子邮件门户中提�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: cc5cc9f61a1a7a34b9078cc2355f6693d2b3592f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083520"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541929"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -58,22 +58,25 @@ Microsoft 365 Defender 门户中提供了各种报告，可帮助你查看电子
 
 To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** & collaboration \> **reports**. 在"**电子邮件&协作报告**"页上，找到 **"遭到** 入侵的用户"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/CompromisedUsers> 。
 
-在"**遭到入侵** 的用户"页上，可以同时筛选图表和详细信息表，方法是单击"筛选器"，在出现的标注中选择以下一个或多个值：
+在" **遭到入侵的用户** "页上，图表显示指定日期范围的以下信息：
 
-- **DATE (UTC)**： **Start date** and **End date**.
-- **活动**：
-  - **可疑**：用户帐户已发送可疑电子邮件，并且存在被限制发送电子邮件的风险。
-  - **受限**：由于高度可疑的模式，已限制用户帐户发送电子邮件。
+- **受限**：由于高度可疑的模式，已限制用户帐户发送电子邮件。
+- **可疑**：用户帐户已发送可疑电子邮件，并且存在被限制发送电子邮件的风险。
 
-配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
-
-!["泄露的用户"报告中的报告视图](../../media/compromised-users-report-activity-view.png)
-
-在图表下面的详细信息表中，可以看到以下详细信息：
+图形下方的详细信息表显示了以下信息：
 
 - **创建时间**
 - **用户 ID**
 - **Action**
+
+通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
+
+- **DATE (UTC)**： **Start date** and **End date**.
+- **活动**：**受限或****可疑**
+
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
+
+!["泄露的用户"报告中的报告视图](../../media/compromised-users-report-activity-view.png)
 
 ## <a name="exchange-transport-rule-report"></a>Exchange传输规则报告
 
@@ -99,11 +102,11 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **Date**
 - **DLP 策略** (**仅通过 DLP Exchange传输规则查看**) 
 - **传输规则**
-- **主题**
+- **Subject**
 - **发件人地址**
 - **收件人地址**
 - **严重性**
-- **方向**
+- **Direction**
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
@@ -128,11 +131,11 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **Date**
 - **DLP 策略** (**仅通过 DLP Exchange传输规则查看**) 
 - **传输规则**
-- **主题**
+- **Subject**
 - **发件人地址**
 - **收件人地址**
 - **严重性**
-- **方向**
+- **Direction**
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
@@ -159,13 +162,33 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![邮件流状态报告中的类型视图](../../media/mail-flow-status-report-type-view.png)
 
-在" **邮件流状态报告** "页上， **默认情况下选择** "类型"选项卡。 默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
+在" **邮件流状态报告** "页上， **默认情况下选择** "类型"选项卡。 该图表显示指定日期范围的以下信息：
 
-- **UTC (日期)** 最近 7 天。
+- **良好的邮件**
+- **Total**
+- **恶意软件**
+- **钓鱼电子邮件**
+- **垃圾邮件**
+- **边缘保护**
+- **规则邮件**
+
+图形下方的详细信息表显示了以下信息：
+
+- **Direction**
+- **类型**
+- **24 小时**
+- **3 天**
+- **7 天**
+- **15 天**
+- **30 天**
+
+通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
+
+- **UTC (日期) ：****开始日期和****结束日期**
 - **邮件方向**：
   - **入站**
   - **出站**
-  - **组织内部**：此计数用于租户内的邮件，即 发件人 abc@domain.com 发送到收件人的邮件 xyz@domain.com (与 **入站** 和出站邮件 **分开计算)**
+  - **组织内部**：在同一租户内发送的邮件。 例如，chris@contoso.com 向用户发送 michelle@contso.com。
 - **类型**：
   - **良好的邮件**
   - **恶意软件**
@@ -175,19 +198,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
   - **钓鱼电子邮件**
 - **域**： **全部**
 
-图表按 Type **值组织** 。
-
-可以通过单击"筛选器"来更改这些 **筛选器**。
-
-下图下的详细信息表中显示了以下信息：
-
-- **方向**
-- **类型**
-- **24 小时**
-- **3 天**
-- **7 天**
-- **15 天**
-- **30 天**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 If you click **Choose a category for more details**， you can select from the following values：
 
@@ -206,13 +217,15 @@ If you click **Choose a category for more details**， you can select from the f
 
 ![邮件流状态报告中的方向视图](../../media/mail-flow-status-report-direction-view.png)
 
-如果单击" **方向"** 选项卡，则使用"类型"视图中 **的相同** 默认筛选器。
+如果单击" **方向"** 选项卡，图表将显示指定日期范围的以下信息：
 
-图表按 Direction **值** 组织。
+- **入站**
+- **出站**
+- **组织内部**
 
-可以通过单击"筛选器"来更改这些 **筛选器**。 使用"类型" **视图中的** 相同筛选器。
+图形下方的详细信息表包含"类型"视图中 **的相同** 信息。
 
-详细信息表包含"类型"视图中 **的相同** 信息。
+可以通过单击筛选器 来筛选图表和详细信息 **表**。 "类型"视图中可用的 **筛选器** 相同。
 
 " **选择类别"了解更多详细信息** 可用的选择和行为与"类型 **"视图相同** 。
 
@@ -228,58 +241,55 @@ If you click **Choose a category for more details**， you can select from the f
 
 ![邮件流状态报告中的漏斗视图](../../media/mail-flow-status-report-funnel-view.png)
 
-如果单击" **漏斗"** 选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
-
-- **日期**：最近 7 天。
-
-- **方向**：
-  - **入站**
-  - **出站**
-  - **组织内部**：此计数用于租户内发送的邮件;即，发件人 abc@domain.com 收件人的邮件 xyz@domain.com (入站和出站邮件分开计算) 。
-
 聚合视图和详细信息表视图允许筛选 90 天。
 
-可以通过单击"筛选器"来更改这些 **筛选器**。 使用"类型" **视图中的** 相同筛选器。
+如果单击" **漏斗"** 选项卡，图表将显示按指定日期范围按以下类别组织的邮件：
 
-此图表显示按以下方式组织的电子邮件计数：
-
-- **电子邮件总数**
+- **电子邮件总数**：此值始终先显示。 剩余值按邮件计数降序显示。
 - **边缘保护后的电子邮件**
 - **传输规则之后的电子邮件 (** 邮件流规则) 
 - **反恶意软件后的电子邮件， 文件信誉， 文件类型阻止**
-- **反网络钓鱼后的电子邮件， URL 信誉， 品牌模拟， 反欺骗**
-- **反垃圾邮件、批量邮件筛选后的电子邮件**
-- **用户和域模拟后的电子邮件**<sup>\*</sup>
-- **文件和 URL 触发后的电子邮件**<sup>\*</sup>
-- **在传递后保护或 URL 单击时间保护 (检测为安全)**
-
-<sup>\*</sup>仅 defender for Office 365
-
-若要查看由 EOP 或 Defender 单独筛选的电子邮件Office 365，请单击图表图例中的值。
-
-详细信息表包含以下信息，按降序日期顺序显示：
-
-- **Date**
-- **电子邮件总数**
-- **边缘保护**
-- **反恶意软件， 文件信誉， 文件类型阻止**：
   - **文件信誉**：由于其他 Microsoft 客户标识的附加文件而筛选的邮件。
   - **文件类型阻止**：由于邮件中标识的恶意文件类型而筛选的邮件。
-- **反网络钓鱼， URL 信誉， 品牌模拟， 反欺骗**：
+- **反网络钓鱼后的电子邮件， URL 信誉， 品牌模拟， 反欺骗**
   - **URL 信誉**：由于其他 Microsoft 客户标识的 URL 而筛选的邮件。
   - **品牌模拟**：由于来自已知品牌模拟发件人的邮件而筛选的邮件。
   - **反欺骗**：由于邮件试图欺骗收件人所属的域或邮件发件人不属于的域而筛选的邮件。
-- **反垃圾邮件，批量邮件筛选**：
+- **反垃圾邮件、批量邮件筛选后的电子邮件**
   - **批量邮件筛选**：根据反垃圾邮件策略中的批量投诉级别 (BCL) 筛选的邮件。
-- **Defender for (的用户和Office 365) ：**
-  - 用户模拟：由于尝试模拟用户 (邮件发件人) （在反网络钓鱼策略的模拟保护设置中定义）而筛选的邮件。
-  - **域模拟**：由于尝试模拟在反网络钓鱼策略的模拟保护设置中定义的域而筛选的邮件。
-- **Defender for (的文件和 URL Office 365) ：**
+- **用户和域模拟后的电子邮件**
+  - 用户模拟：由于尝试模拟用户 (邮件发件人) 而筛选的邮件在 Defender for Office 365 中的反网络钓鱼策略的模拟保护设置中定义。
+  - **域模拟**：由于尝试模拟在 Defender for Office 365 中反网络钓鱼策略的模拟保护设置中定义的域而筛选的邮件。
+- **文件和 URL 触发后的电子邮件**
   - **文件触发**：由附件策略保险箱的邮件。
   - **URL 触发**：按链接策略保险箱的邮件。
-- 传递后保护和 **ZAP (ATP) 或 ZAP (EOP) ：** 零时差自动清除 (ZAP) 恶意软件、垃圾邮件和网络钓鱼。
+- **在传递后保护或 URL 单击时间保护 (检测为安全)**
+
+这些类别由 **EOP** 或 **Defender** 为 Office 365 编码。 若要筛选图表中的类别，请单击图表图例Office 365 **EOP** 或 Defender for **(** 单击可消除;第二次单击可返回) 。
+
+图表下面的详细信息表包含与图表相同的信息，但包含的信息 (较短) 说明：
+
+- **电子邮件总数**
+- **边缘保护**
+- **规则邮件**
+- **反恶意软件， 文件信誉， 文件类型， 文件阻止**
+- **反网络钓鱼， URL 信誉， 品牌模拟， 反欺骗**
+- **反垃圾邮件、批量邮件筛选**
+- **用户和域模拟**
+- **ATP (** 文件和 URL) ：Defender for Office 365
+- **传递后保护和 ZAP (ATP) ：Defender** for Office 365
 
 如果在详细信息表中选择一行，则电子邮件计数的进一步细分将显示在该飞出内容中。
+
+通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
+
+- **UTC (日期) ：****开始日期和****结束日期**
+- **邮件方向**：
+  - **入站**
+  - **出站**
+  - **组织内部**：在同一租户内发送的邮件。 例如，chris@contoso.com 向用户发送 michelle@contso.com。
+
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 #### <a name="export-from-funnel-view"></a>从漏斗视图导出
 
@@ -296,20 +306,11 @@ If you click **Choose a category for more details**， you can select from the f
 
 " **技术"** 视图类似于漏 **斗视图** ，提供有关配置的威胁防护功能的更具体的详细信息。 从图中，你可以看到如何在威胁防护的不同阶段对邮件进行分类。
 
-如果单击" **技术视图** "选项卡，默认情况下，此视图包含一个图表和一个使用以下筛选器配置的详细信息表：
+![邮件流状态报告中的技术视图](../../media/mail-flow-status-report-tech-view.png)
 
-- **日期**：最近 7 天。
+聚合视图和详细信息表允许筛选 90 天。
 
-- **方向**：
-  - **入站**
-  - **出站**
-  - **组织内部**：此计数用于租户内的邮件，即 发件人 abc@domain.com 发送到收件人的邮件 xyz@domain.com (与入站和出站邮件分开计数) 
-
-聚合视图和详细信息表视图允许筛选 90 天。
-
-可以通过单击"筛选器"来更改这些 **筛选器**。 使用"类型" **视图中的** 相同筛选器。
-
-此图显示按以下类别组织的邮件：
+如果单击" **技术视图"** 选项卡，图表将显示按指定日期范围按以下类别组织的消息：
 
 - **电子邮件总数**
 - **边缘允许** 和 **边缘筛选**
@@ -324,13 +325,13 @@ If you click **Choose a category for more details**， you can select from the f
 
 将鼠标悬停在图表中的类别上时，可以看到该类别中的消息数。
 
-详细信息表包含以下信息，按降序日期顺序显示：
+图表下面的详细信息表包含以下信息
 
 - **Date (UTC)**
 - **电子邮件总数**
 - **已筛选边缘**
 - **规则邮件**：由于邮件流规则而筛选 (也称为传输规则) 。
-- **反恶意软件引擎** **，保险箱附件** <sup>\*</sup> ：
+- **反恶意软件引擎，保险箱附件** <sup>\*</sup> ：
 - **DMARC， 模拟** <sup>\*</sup> ，**欺骗**，**网络钓鱼筛选**：
   - **DMARC：** 由于邮件未通过 DMARC 身份验证检查而筛选的邮件。
 - **URL 触发检测**<sup>\*</sup>
@@ -341,6 +342,16 @@ If you click **Choose a category for more details**， you can select from the f
 <sup>\*</sup>Defender for Office 365
 
 如果在详细信息表中选择一行，则电子邮件计数的进一步细分将显示在该飞出内容中。
+
+通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
+
+- **UTC (日期) ：****开始日期和****结束日期**
+- **邮件方向**：
+  - **入站**
+  - **出站**
+  - **组织内部**：在同一租户内发送的邮件。 例如，chris@contoso.com 向用户发送 michelle@contso.com。
+
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 #### <a name="export-from-tech-view"></a>"从技术导出"视图
 
@@ -353,8 +364,6 @@ If you click **Choose a category for more details**， you can select from the f
 
 每个导出.csv文件限制为 150，000 行。 如果数据包含的行数超过 150，000，.csv文件。
 
-![邮件流状态报告中的技术视图](../../media/mail-flow-status-report-tech-view.png)
-
 ## <a name="malware-detections-report"></a>恶意软件检测报告
 
 恶意软件 **检测报告显示** 有关传入和传出电子邮件中的恶意软件检测信息， (EOP Exchange Online Protection检测到的) 。 有关 EOP 中的恶意软件保护详细信息，请参阅 [EOP 中的反恶意软件保护](anti-malware-protection.md)。
@@ -365,22 +374,29 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![电子邮件小部件中的恶意软件检测（位于"电子邮件&协作报告"页面上）](../../media/malware-detections-widget.png)
 
-在"**恶意软件检测报告**"页上，可以通过单击"筛选器"并选择下列值之一来筛选图表和详细信息表：
+在" **恶意软件检测报告"** 页上，图表显示指定日期范围的以下信息：
 
-- **UTC (UTC)****开始日期和****结束日期**
-- **方向**：**入站****和出站**
+- **出站**
+- **入站**
 
 ![电子邮件报告中的恶意软件检测中的报告视图](../../media/malware-detections-report-view.png)
 
-在图表下面的详细信息表中，可以看到以下详细信息：
+图形下方的详细信息表显示了以下信息：
 
 - **Date**
 - **发件人地址**
 - **收件人地址**
 - **邮件 ID：** 在邮件 **头的 Message-ID** 头字段中可用，并且应该是唯一的。 示例值是 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (尖括号) 。
-- **主题**
+- **Subject**
 - **Filename**
 - **恶意软件名称**
+
+通过单击"筛选器"并选择下列值之一，可以筛选图表和详细信息表：
+
+- **UTC (UTC)****开始日期和****结束日期**
+- **方向**：**入站****和出站**
+
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 ## <a name="mail-latency-report"></a>邮件延迟报告
 
@@ -429,7 +445,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![电子邮件门户中的欺骗邮件Microsoft 365 Defender页面](../../media/spoof-detections-report-page.png)
 
-在图表下面的详细信息表中，可以看到以下详细信息：
+图形下方的详细信息表显示了以下信息：
 
 - **Date**
 - **欺骗用户**
@@ -463,7 +479,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **提交类型**：
   - **电子邮件**
   - **URL**
-  - **文件**
+  - **File**
 - **提交 ID**
 - **网络消息 ID**
 - **Sender**
@@ -519,7 +535,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **检测**：**电子邮件恶意软件****、电子邮件钓鱼** 邮件或 **内容恶意软件**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
-- **方向**
+- **Direction**
 - **域**
 - **策略类型**
 
@@ -552,7 +568,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 在图表下面的详细信息表中，提供了以下信息：
 
 - **Date**
-- **主题**
+- **Subject**
 - **发件人**
 - **Recipients**
 - **检测者**
@@ -565,7 +581,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
-- **方向**
+- **Direction**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
 - **域**
 - **策略类型**
@@ -593,7 +609,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 在图表下面的详细信息表中，提供了以下信息：
 
 - **Date**
-- **主题**
+- **Subject**
 - **发件人**
 - **Recipients**
 - **检测者**
@@ -606,7 +622,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
-- **方向**
+- **Direction**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
 - **域**
 - **策略类型**
@@ -631,7 +647,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 在图表下面的详细信息表中，提供了以下信息：
 
 - **Date**
-- **主题**
+- **Subject**
 - **发件人**
 - **Recipients**
 - **检测者**
@@ -644,7 +660,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
-- **方向**
+- **Direction**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
 - **域**
 - **策略类型**
@@ -672,7 +688,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 在图表下面的详细信息表中，提供了以下信息：
 
 - **Date**
-- **主题**
+- **Subject**
 - **发件人**
 - **Recipients**
 - **检测者**
@@ -685,7 +701,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **UTC (UTC)****开始日期和****结束日期**
 - **检测**
 - **受保护****：MDO** (Defender for Office 365) **或 EOP**
-- **方向**
+- **Direction**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
 - **域**
 - **策略类型**
@@ -717,11 +733,11 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
-### <a name="view-data-by-system-override"></a>按系统覆盖查看数据
+### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>按系统覆盖和按原因的图表细分查看数据
 
-![威胁防护状态报告中的邮件替代视图](../../media/threat-protection-status-report-message-override-view.png)
+![威胁防护状态报告中按原因视图的邮件替代和图表细分](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
 
-在" **按系统覆盖查看数据"视图中** ，图表中显示了以下替代原因信息：
+在" **按系统覆盖查看数据"和** "按原因 **查看** 图表细分"视图中，图表中将显示以下替代原因信息：
 
 - **本地跳过**
 - **IP 允许**
@@ -729,36 +745,89 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **组织允许的发件人**
 - **组织允许的域**
 - **ZAP 未启用**
-- **未启用垃圾邮件文件夹**
 - **用户保险箱发件人**
 - **用户保险箱域**
+- **网络钓鱼模拟**：有关详细信息，请参阅配置向用户传递第三方网络钓鱼模拟以及将未筛选的邮件发送到 [SecOps 邮箱](configure-advanced-delivery.md)。
+- **第三方筛选器**
 
 在图表下面的详细信息表中，提供了以下信息：
 
 - **Date**
-- **主题**
+- **Subject**
 - **发件人**
 - **Recipients**
-- **检测者**
-- **传递状态**
+- **系统替代**
 - **泄露来源**
 - **Tags**
 
 如果单击 **"筛选器"，** 则以下筛选器可用：
 
 - **UTC (UTC)****开始日期和****结束日期**
-- **检测**
-- **受保护****：MDO** (Defender for Office 365) **或 EOP**
-- **方向**
+- **原因**
+- **方向**：
+  - **全部**
+  - **入站**
+  - **出站**
 - **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
 - **域**
-- **策略类型**
+- **策略类型**：
+  - **全部**
+  - **反恶意软件**
+  - **保险箱附件**<sup>\*</sup>
+  - **防钓鱼**
+  - **反垃圾邮件**
+  - **邮件流规则** (传输规则) 
+  - **其他**
 - **策略名称** (详细信息表) 
 - **收件人**
 
+<sup>\*</sup>仅 defender for Office 365
+
 配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
+### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>按"系统替代"和"图表细分"按传递位置查看数据
+
+![威胁防护状态报告中的"传递位置"视图的邮件替代和图表细分](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+
+在"**按系统覆盖查看** 数据"和"按传递位置查看图表细分"视图中，图表中显示了以下替代原因信息：
+
+- **未启用垃圾邮件文件夹**
+- **SecOps 邮箱**：有关详细信息，请参阅配置向用户传递第三方网络钓鱼模拟以及将未筛选的邮件发送到 [SecOps 邮箱](configure-advanced-delivery.md)。
+
+在图表下面的详细信息表中，提供了以下信息：
+
+- **Date**
+- **Subject**
+- **发件人**
+- **Recipients**
+- **系统替代**
+- **泄露来源**
+- **Tags**
+
+如果单击 **"筛选器"，** 则以下筛选器可用：
+
+- **UTC (UTC)****开始日期和****结束日期**
+- **原因**
+- **方向**：
+  - **全部**
+  - **入站**
+  - **出站**
+- **Tag**：按应用了指定用户标记的用户或组筛选结果 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
+- **域**
+- **策略类型**：
+  - **全部**
+  - **反恶意软件**
+  - **保险箱附件**<sup>\*</sup>
+  - **防钓鱼**
+  - **反垃圾邮件**
+  - **邮件流规则** (传输规则) 
+  - **其他**
+- **策略名称** (详细信息表) 
+- **收件人**
+
 <sup>\*</sup>仅 defender for Office 365
+
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 ## <a name="top-malware-report"></a>热门恶意软件报告
 
@@ -821,7 +890,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ![用户报告的邮件报告](../../media/user-reported-messages-report.png)
 
-在图表下面的详细信息表中，可以看到以下详细信息：
+图形下方的详细信息表显示了以下信息：
 
 - **电子邮件主题**
 - **报告者**
@@ -845,12 +914,12 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 - **组织管理**
 - **安全管理员**
-- **安全读者**
-- **全局读者**
+- **安全信息读取者**
+- **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 

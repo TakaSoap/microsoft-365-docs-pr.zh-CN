@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934101"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568000"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "51934101"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-你的曝光分数显示在威胁和漏洞管理[仪表板](tvm-dashboard-insights.md)中Microsoft Defender 安全中心。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
+你的曝光分数显示在 Microsoft 365 Defender[门户的威胁漏洞管理](tvm-dashboard-insights.md)仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
 
 - 快速了解和识别有关组织中安全状态的高层次要点。
 - 检测和响应需要调查或操作以改进当前状态的区域。

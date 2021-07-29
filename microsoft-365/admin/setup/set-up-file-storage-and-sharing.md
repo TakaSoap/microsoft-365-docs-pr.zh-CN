@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站来Microsoft 365和Microsoft 365文件共享。
-ms.openlocfilehash: 40c62842f59fe932fdf297629b456acd595a7b0d
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 4b0d39f4ab8d6ff84b50e1563de054ecea8d0cbd
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393495"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541477"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在文件中设置文件存储和Microsoft 365
 
@@ -78,7 +78,7 @@ ms.locfileid: "53393495"
   
 下面将说明团队中的每个人如何设置OneDrive共享文件。
 
-1. 转到<a href="https://admin.mirosoft.com/ " target="_blank">Microsoft 365 管理中心</a>，然后使用用户名和密码登录。
+1. 转到<a href="https://admin.microsoft.com/ " target="_blank">Microsoft 365 管理中心</a>，然后使用用户名和密码登录。
 
 2. 从应用启动器中，选择 **"OneDrive"。**
 

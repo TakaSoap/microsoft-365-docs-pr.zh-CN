@@ -23,22 +23,31 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: c043a1cd796789e9da51cbb6c1f59d7a7c8df07d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393255"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541645"
 ---
 # <a name="compare-groups"></a>比较组
 
 在 Microsoft 365 管理中心的 **组** 部分中，可创建和管理以下类型的组： 
 
-- **Microsoft 365 组** （之前称为 Office 365 组）用于公司内部和外部用户之间的协作。
+- **Microsoft 365 组** 用于公司内部和外部用户之间的协作。 它们包括协作服务，如 SharePoint 和 Planner。
 - **通讯组** 用于向一组人员发送电子邮件通知。
 - **安全组** 用于授予对资源（如 SharePoint 网站）的访问权限。
 - **启用邮件的安全组** 用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
 - 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用 **共享邮箱**。
+
+某些组允许动态成员身份或电子邮件。
+
+||Microsoft 365 组|通讯组|安全组|启用邮件功能的安全组|共享邮箱|
+|:----|:----|:----|:----|:----|:----|
+|**已启用邮件**|是|是|否|是|是|
+|**Azure AD 中的动态成员资格**|是|否|是|否|否|
+
+所有这些组类型都可以与 Power Automate 一起使用。
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 组
 

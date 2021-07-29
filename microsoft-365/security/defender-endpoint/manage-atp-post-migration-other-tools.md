@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 063870c58377d7327f621ec49855b684065f436b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2c9cbff0a1637636e310ca83523319dd6fe236f2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286761"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541705"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>使用 PowerShell、WMI 和 MPCmdRun.exe
 
@@ -80,9 +80,9 @@ WMI 是一个脚本界面，允许您检索、修改和更新设置。 若要了
 |---|---|
 |**管理Microsoft Defender 防病毒**|[使用自定义Microsoft Defender 防病毒和管理mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
 
-## <a name="configure-your-microsoft-defender-security-center"></a>配置Microsoft Defender 安全中心
+## <a name="configure-your-microsoft-365-defender-portal"></a>配置Microsoft 365 Defender门户
 
-如果尚未配置，请配置 Microsoft Defender 安全中心 **(**) 以查看警报、配置威胁防护功能以及查看有关组织整体安全状况 [https://securitycenter.windows.com](https://securitycenter.windows.com) 的详细信息。
+如果尚未配置，请配置 Microsoft 365 Defender 门户以查看[](https://security.microsoft.com/)警报、配置威胁防护功能，并查看有关组织整体安全状况的详细信息。
 
 还可以配置最终用户是否可以在网站中查看这些功能Microsoft Defender 安全中心。
 

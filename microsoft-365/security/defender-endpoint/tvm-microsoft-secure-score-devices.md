@@ -1,5 +1,5 @@
 ---
-title: Microsoft 设备安全分数
+title: 设备的 Microsoft 安全功能分数
 description: 你的设备分数显示设备在应用程序、操作系统、网络、帐户和安全控件中的统一安全配置状态。
 keywords: Microsoft 设备安全分数， Microsoft Defender for Endpoint Microsoft 设备安全分数， 安全分数， 配置分数， 危险和漏洞管理， 安全控制， 改进机会， 一段时间的安全配置分数， 安全状况， 基线
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13307d3205818d41e7b2219b4e3a4ed6e9f2d5bb
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: bddd635506f5a37585bc8c06fb44e1c2fbffd721
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454768"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567940"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>Microsoft 设备安全分数
+# <a name="microsoft-secure-score-for-devices"></a>设备的 Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,6 +56,7 @@ ms.locfileid: "53454768"
 转发 Microsoft Defender for Endpoint 信号，使 Microsoft 安全分数能够查看设备安全状态。 转发数据的存储和处理位置与 Microsoft 安全分数数据位于同一位置。
 
 更改可能需要几个小时才能反映在仪表板中。
+
 
 1. 在导航窗格中，**转到"设置**  >    >  **终结点""常规**  >  **高级功能"** 
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 47a14222f4297ffd4ef278da7c8c65913ed27f3c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327055"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541777"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -39,6 +39,9 @@ SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 ## <a name="get-started"></a>入门
 
 本节中的资源有助于详细了解 SharePoint Syntex 所使用的两种数据分类和提取方法：表单处理和文档理解。
+
+> [!NOTE]
+> [可从 SharePoint 管理中心创建内容中心](create-a-content-center.md)，无需购买许可证即可开始使用 SharePoint Syntex。 未经许可的用户可以创建文档理解模型，但无法将其应用于文档库。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|

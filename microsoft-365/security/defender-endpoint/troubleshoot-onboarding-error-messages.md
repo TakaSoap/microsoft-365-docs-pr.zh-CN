@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 03d102ec116b9f5507c3eaa869231a9197d3041c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844030"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568072"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>解决订阅和门户访问问题
 
@@ -35,11 +35,11 @@ ms.locfileid: "52844030"
 
 此页面提供了详细步骤，用于解决设置 Microsoft Defender for Endpoint 服务时可能发生的问题。
 
-如果您收到错误消息，Microsoft Defender 安全中心将详细说明问题是什么，并提供相关链接。
+如果您收到错误消息，Microsoft 365 Defender将详细说明问题是什么，并提供相关链接。
 
 ## <a name="no-subscriptions-found"></a>未找到订阅
 
-如果在访问 Microsoft Defender 安全中心收到"未找到订阅"消息，这意味着用于登录门户的用户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender for Endpoint 许可证。
+如果在访问 Microsoft 365 Defender收到"未找到订阅"消息，这意味着用于登录门户的用户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender 终结点许可证。
 
 可能的原因：
 - Windows E5 和 Office E5 许可证是分开的。
@@ -53,7 +53,7 @@ ms.locfileid: "52844030"
 
 ## <a name="your-subscription-has-expired"></a>你的订阅已过期
 
-如果在访问Microsoft Defender 安全中心收到你的订阅 **已过期** 的消息，则你的联机服务订阅已过期。 与任何其他联机服务订阅一样，Microsoft Defender for Endpoint 订阅具有到期日期。 
+如果在访问Microsoft 365 Defender收到你的订阅 **已过期** 的消息，则你的联机服务订阅已过期。 与任何其他联机服务订阅一样，Microsoft Defender for Endpoint 订阅具有到期日期。 
 
 你可以选择随时续订或延长许可证。 在过期日期后访问门户时，如果选择不续订许可证，将显示你的订阅已过期的消息，你可以选择下载设备载出包。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52844030"
 
 ![数据图像当前不可用](images/atp-data-not-available.png)
 
-你需要允许 及其下的所有 `securitycenter.windows.com` 子域。 例如，`*.securitycenter.windows.com`。
+你需要允许 及其下的所有 `security.windows.com` 子域。 例如，`*.security.windows.com`。
 
 
 ## <a name="portal-communication-issues"></a>门户通信问题

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9a8ebcc89c3009cd93fbb42f2a74bbb9ffcc31b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c47d11bd1afe247b687b8736b4cad8fa4e906bb1
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934089"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567988"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>搜寻公开的设备 - 危险和漏洞管理
 
@@ -55,7 +55,7 @@ ms.locfileid: "51934089"
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>检查高严重性警报中涉及的设备
 
-1. 从 **左侧** 导航窗格中转到高级搜寻Microsoft Defender 安全中心。
+1. 从导航  >  **门户的** 左侧导航窗格中转到搜寻高级Microsoft 365 Defender。
 
 2. 向下滚动到 TVM 高级搜寻架构，以熟悉列名称。
 

@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 按照以下步骤阻止以前员工的移动设备访问。
-ms.openlocfilehash: 1ce12b06b6a0a74615ff8ac43b8f333456a469bb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 603192f2ad2f22056f56157751c35a30a4502d12
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244170"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541573"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>步骤 5 - 擦除和阻止前员工的移动设备
 
@@ -44,3 +45,7 @@ ms.locfileid: "52244170"
 5. 选择“**保存**”。
    > [!TIP]
    > 请确保从本地 Blackberry Enterprise服务中删除或禁用用户。 还应禁用该用户的所有 BlackBerry 设备。 有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。
+
+## <a name="related-content"></a>相关内容
+
+[Exchange Online 中的 Exchange 管理中心](/exchange/exchange-admin-center)

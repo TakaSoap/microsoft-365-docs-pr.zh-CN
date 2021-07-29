@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解 Microsoft Defender for Office 365
-ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 9bd762f60dac6e9a0cf88890c5cf5bfd313733ac
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195005"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567784"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
@@ -34,10 +34,28 @@ Microsoft Defender for Office 365保护你的组织免受电子邮件、链接�
 - **威胁调查和响应功能**：使用前沿工具调查、理解、模拟和阻止威胁。
 - **自动化调查和响应功能**：节省时间和精力来调查和缓解威胁。
 
-Microsoft Defender for Office 365 试用版是试用 Defender for Office 365 功能的最简单方法，设置它只需单击几下。 完成试用设置后，组织的所有 Defender for Office 365 计划 1 和计划 2 功能可在最多 90 天内在组织中使用。
+Microsoft Defender for Office 365 试用版是试用 Defender for Office 365 功能的最简单方法，设置它只需单击几下。 完成试用设置后，组织的所有 Defender for Office 365 计划 1 和计划 2 功能可在最多 90 天内在组织中使用。 以下列表描述了这些高级功能：
+
+<br>
+
+****
+
+|功能|说明|
+|---|---|
+|[反网络钓鱼策略中的独占设置](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|获取用户模拟保护、域模拟保护、邮箱智能和高级网络钓鱼阈值。|
+|[安全附件](safe-attachments.md)|在受控的爆炸环境中检查电子邮件附件和其他文件，以捕获新的和具有威胁性的恶意软件。|
+|[安全链接](safe-links.md)|执行单击时间检查，以确保可能已经通过初始检查的 URL 尚未被武器化。|
+|[威胁跟踪器](threat-trackers.md)<sup>\*</sup>|使用信息小组件和视图来确定可能会影响组织的网络安全问题。|
+|[威胁资源管理器](threat-explorer.md)<sup>\*</sup>|使用有关电子邮件中威胁的Office 365信息进行搜寻。|
+|[AIR (自动调查和) ](office-365-air.md)<sup>\*</sup>|触发警报时自动查找和修正威胁对象。|
+|[攻击模拟培训](attack-simulation-training.md)<sup>\*</sup>|培训用户识别网络钓鱼攻击并做出相应的响应。|
+|[市场活动视图](campaigns.md)<sup>\*</sup>|调查和响应大规模的恶意电子邮件活动。|
+|[使用 Defender for Office 365功能的报告](view-reports-for-mdo.md)|查看报告，包括威胁防护状态、URL 威胁防护、邮件延迟等。|
+
+<sup>\*</sup>Defender for Office 365 2 计划功能，作为试用版的一部分提供。
 
 > [!NOTE]
-> 本文中介绍的自动配置目前位于公共预览版中，可能在你的位置不可用。
+> 本文中介绍的自动配置目前处于公共预览版中，可能在你的组织中不可用。
 
 ## <a name="terms-and-conditions"></a>条款和条件
 
@@ -51,7 +69,7 @@ Defender for Office 365试用版的可用时间为 90 天，并且可针对所�
 
 在设置期间，Office 365 Defender (P2 的 Defender Office 365 或等效) 也会为整个组织设置。 无需策略范围。
 
-## <a name="licensing"></a>许可
+## <a name="licensing"></a>授权
 
 作为试用设置的一部分，Office 365 Defender 许可证将自动应用于组织。 许可证在前 90 天内免费。
 
@@ -112,7 +130,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 
 - [开始使用攻击模拟培训](attack-simulation-training-get-started.md)
 
-### <a name="secure-posture"></a>安全状态
+### <a name="security-posture"></a>安全状况
 
 建议的模板和配置见解帮助客户获得和保持安全。
 

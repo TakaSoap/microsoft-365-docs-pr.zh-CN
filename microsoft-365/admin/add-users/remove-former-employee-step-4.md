@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: b5868ab1622fea68cc3dabb54a3d06208ccaa165
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394299"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541585"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
@@ -129,7 +130,7 @@ ms.locfileid: "53394299"
   
     ![导出Outlook"数据文件"对话框，其中选中了顶部文件夹并选中了"包含子文件夹"](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 选择 **“下一步”**。
+7. 选择“**下一步**”。
 
 8. 选择 **"浏览**"选择保存Outlook文件 (.pst) 。 键入  *文件名，* 然后选择" **确定"** 继续。
 
@@ -172,7 +173,7 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 5. 在 **"选项**"下，选择如何处理重复项
 
-6. 选择 **“下一步”**。
+6. 选择“**下一步**”。
 
 7. 如果将密码分配给 Outlook.pst (.pst) ，请输入密码，然后选择"确定 **"。**
 
@@ -188,6 +189,4 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 ## <a name="related-content"></a>相关内容
 
-[在帐户帐户上添加OneDrive (管理员](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)) \
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article) \
-[OneDrive保留和删除 (](/onedrive/retention-and-deletion)文章) 
+[在](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)OneDrive 帐户上添加和删除管理员 (文章) 还原已删除 OneDrive [ (](/onedrive/restore-deleted-onedrive)文章) OneDrive[保留和](/onedrive/retention-and-deletion)删除 (文章) [共享 OneDrive 文件和文件夹](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

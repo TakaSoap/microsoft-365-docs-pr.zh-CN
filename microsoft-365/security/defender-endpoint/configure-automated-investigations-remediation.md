@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: bd86458749db4019bb247a3664748b9891965754
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0d7a6e4897989df55b00e1aeff0ff512b030c023
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841326"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590691"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 
@@ -33,28 +33,29 @@ ms.locfileid: "52841326"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-如果你的组织使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/) (Defender for Endpoint) ，自动调查和修正功能可以节省你的安全操作团队时间和精力。 [](/microsoft-365/security/defender-endpoint/automated-investigations) 如本 [博客文章所述](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)，这些功能模拟安全分析师调查和修正威胁的理想步骤。 [详细了解自动调查和修正](/microsoft-365/security/defender-endpoint/automated-investigations)。 
+如果你的组织使用[Microsoft Defender for Endpoint](/windows/security/threat-protection/) (Defender for Endpoint) ，自动调查和修正功能可以节省你的安全操作团队时间和精力。 [](/microsoft-365/security/defender-endpoint/automated-investigations) 如本 [博客文章所述](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)，这些功能模拟安全分析师调查和修正威胁的理想步骤。 [详细了解自动调查和修正](/microsoft-365/security/defender-endpoint/automated-investigations)。
 
-若要配置自动调查和修正，
-1. [打开功能](#turn-on-automated-investigation-and-remediation);和 
+配置自动调查和修正：
+
+1. [打开功能](#turn-on-automated-investigation-and-remediation);和
 2. [设置设备组](#set-up-device-groups)。
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>启用自动调查和修正
 
-1. 作为全局管理员或安全管理员，转到Microsoft Defender 安全中心 () [https://securitycenter.windows.com](https://securitycenter.windows.com) 并登录。
+1. 作为全局管理员或安全管理员，转到Microsoft Defender 安全中心 () <https://securitycenter.windows.com> 并登录。
 2. 在导航窗格中，选择 **"设置"。**
 3. 在"**常规"** 部分，选择"**高级功能"。**
 4. 同时启用 **自动调查和****自动解决警报**。
 
 ## <a name="set-up-device-groups"></a>设置设备组
 
-1. In the Microsoft Defender 安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) ， on the **设置** page， under **Permissions，** select **Device groups**.
+1. In the Microsoft Defender 安全中心 (<https://securitycenter.windows.com>) ， on the **设置** page， under **Permissions，** select **Device groups**.
 2. 选择 **+ 添加设备组**。
 3. 创建至少一个设备组，如下所示：
    - 为设备组指定名称和说明。
-   - 在"**自动化级别"列表中**，选择一个级别，例如 **"完全 - 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
+   - 在"**自动化级别"列表中**，选择一个级别，例如"完全 **- 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
    - 在 **"用户访问"**[选项卡上，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。

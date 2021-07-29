@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d214692e5511e7fcb10f2d1c79c9a8797ec04fff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229103"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568132"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -85,7 +85,7 @@ EOP 和 Defender for Office 365 中的防钓鱼策略中提供了以下策略Off
   - **域**：域中配置的一个或多个 [接受](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Microsoft 365。
 
   - **排除这些用户、组和域**：策略的例外。 设置和行为与条件完全相同：
-    - **Users**
+    - **用户**
     - **组**
     - **域**
 
@@ -221,7 +221,7 @@ EOP 和 Defender for Office 365 中的反网络钓鱼策略中提供了以下欺
   - **传递邮件，将其他地址添加到"Bcc"行**
   - **在邮件传递之前删除邮件**
 
-- **添加受信任的发件人和域**：模拟保护设置例外。 策略不会将来自指定发件人和发件人域的邮件分类为基于模拟的攻击。 换句话说，对受保护的发件人、受保护的域或邮箱智能保护的操作不会应用于这些受信任的发件人或发件人域。 这些列表的最大限制为大约 1000 个条目。
+- **添加受信任的发件人和域**：模拟保护设置例外。 策略不会将来自指定发件人和发件人域的邮件分类为基于模拟的攻击。 换句话说，对受保护的发件人、受保护的域或邮箱智能保护的操作不会应用于这些受信任的发件人或发件人域。 这些列表的最大限制为 1024 个条目。
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级网络钓鱼Office 365
 

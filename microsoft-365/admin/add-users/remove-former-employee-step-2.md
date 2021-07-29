@@ -19,19 +19,24 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何保存以前员工的邮箱内容。
-ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: b6030c0231339cb77c2d91ba5e118da8be14780f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177485"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541609"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>步骤 2 - 保存以前员工的邮箱的内容
+
+在此步骤中，将诉讼保留或就地保留放在用户上，或将Outlook数据导出到 .pst 文件中。
+
+## <a name="place-hold-or-export-users-data-to-a-pst-file"></a>将用户数据保留或导出到 .pst 文件
 
 阻止用户登录到组织后，可以保存其邮箱的内容。 有两种方法可以保存以前员工的邮箱的内容。
   
@@ -46,3 +51,8 @@ ms.locfileid: "53177485"
     **OR**
 
 2. 将前员工的电子邮件地址添加到桌面版的 Outlook，然后将数据导出到 .pst 文件。 可以根据需要将数据导入到其他电子邮件帐户。 请查看步骤[6 - 向另一名员工授予OneDrive和Outlook数据的访问权限](remove-former-employee-step-6.md)。
+
+## <a name="related-content"></a>相关内容
+
+[Exchange管理中心Exchange Online](/exchange/exchange-admin-center) 
+[还原用户](restore-user.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 19cee5d2d000458c99fb54bf47a54a44e9ff899f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 830a744ff2552cda2e974867920bceab77763e91
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542989"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590703"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "53542989"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -56,7 +56,7 @@ ms.locfileid: "53542989"
 
 属性 |    类型    |    说明
 :---|:---|:---
-id | String | 警报 ID。
+id | 字符串 | 警报 ID。
 title | String | 警报标题。
 说明 | String | 警报说明。
 alertCreationTime | Nullable DateTimeOffset | 创建警报时 (UTC) 日期和时间。
@@ -72,14 +72,14 @@ severity | 枚举 | 警报的严重性。 可能的值包括："UnSpecified"、"
 status | 枚举 | 指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。
 classification | Nullable Enum | 警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。
 确定 | Nullable Enum | 指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。
-“类别”| String | 警报的类别。
-detectionSource | String | 检测源。
-threatFamilyName | String | 威胁系列。
-threatName | String | 威胁名称。
-machineId | String | 与 [警报关联的](machine.md) 计算机实体的 ID。
-computerDnsName | String | [计算机](machine.md) 完全限定的名称。
-aadTenantId | String | 用户Azure Active Directory ID。
-一个 | String | 触发警报的检测器的 ID。
+“类别”| 字符串 | 警报的类别。
+detectionSource | 字符串 | 检测源。
+threatFamilyName | 字符串 | 威胁系列。
+threatName | 字符串 | 威胁名称。
+machineId | 字符串 | 与 [警报关联的](machine.md) 计算机实体的 ID。
+computerDnsName | 字符串 | [计算机](machine.md) 完全限定的名称。
+aadTenantId | 字符串 | 用户Azure Active Directory ID。
+一个 | 字符串 | 触发警报的检测器的 ID。
 comments | 警报注释列表 | Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
 证据 | 警报证据列表 | 与警报相关的证据。 请参阅下面的示例。
 

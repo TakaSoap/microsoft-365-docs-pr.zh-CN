@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4ec716f82fb3dd2352183be8f8cf0d81bcebfff
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934137"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568037"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
@@ -44,7 +44,7 @@ ms.locfileid: "51934137"
 - 事件调查期间有价值的设备漏洞上下文
 - 内置修正过程通过Microsoft Intune Microsoft Endpoint Configuration Manager  
   
-可以使用 中的 危险和漏洞管理[功能](https://securitycenter.windows.com/)Microsoft Defender 安全中心：
+可以使用门户中的 危险和漏洞管理 功能[Microsoft 365 Defender：](https://security.microsoft.com/)
 
 - 查看设备的曝光分数和 Microsoft 安全分数，以及顶级安全建议、软件漏洞、修正活动和公开的设备
 - 将EDR与终结点漏洞关联并处理它们
@@ -60,9 +60,9 @@ ms.locfileid: "51934137"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板
 
- ![适用于终结点的 Microsoft Defender 门户](images/tvm-dashboard-devices.png)
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="设备的威胁和漏洞管理仪表板":::
 
-领域 | 说明
+区域 | 说明
 :---|:---
 **所选设备组 (#/#)**   | 按危险和漏洞管理组筛选想要在仪表板和卡片中查看的数据。 在筛选器中选择的内容将应用于整个危险和漏洞管理页。
 [**风险评分**](tvm-exposure-score.md)   | 查看组织设备面临的威胁和漏洞的当前状态。 有几个因素会影响组织的曝光评分：在设备中发现的缺点、设备被泄露的可能性、设备对组织的价值，以及设备发现的相关警报。 目标是降低组织的曝光分数，以更安全。 若要降低分数，需要修正安全建议中列出的相关安全配置问题。

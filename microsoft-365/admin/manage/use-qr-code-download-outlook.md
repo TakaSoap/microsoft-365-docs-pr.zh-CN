@@ -1,5 +1,5 @@
 ---
-title: 使用 QR 代码登录到 Outlook移动应用
+title: 使用 QR 代码登录到 Outlook 移动应用
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,39 +8,49 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: 了解如何使用 QR 代码在移动设备上进行身份验证和Outlook下载。
-ms.openlocfilehash: c13fbeabd320c64925165ba16797d5a3471961ad
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
-ms.translationtype: MT
+description: 了解如何使用 QR 代码进行身份验证并下载 Outlook 移动版。
+ms.openlocfilehash: e00297880d791447798f8038c3f772f21302daa2
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391335"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541489"
 ---
-# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 代码登录到 Outlook移动应用
+# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 代码登录到 Outlook 移动应用
 
 > [!IMPORTANT]
-> 此功能仅适用于已在此版本中打开定向发布Microsoft 365 管理中心。 若要打开定向发布并了解其工作方式的详细信息，请参阅 [设置标准或定向发布选项](release-options-in-office-365.md)。 未来几周内，我们将通过公共预览版扩展到更多组织。 公共预览版可提前访问Microsoft 365功能。
+> 此功能仅适用于已在 Microsoft 365 管理中心中启用目标发布的组织。 要启用目标发布并详细了解其工作原理，请参阅 [设置标准或目标发布选项](release-options-in-office-365.md)。 我们将在未来几周内通过公共预览版扩展到更多组织。 公共预览版提供对 Microsoft 365 功能的提前访问。
 
-作为Microsoft 365管理员，你可以让用户登录到 Outlook for Android 或 iOS 应用，而无需输入用户名和密码。 通过扫描 QR 代码，用户可以安全地进行身份验证并登录到Outlook登录。
+作为 Microsoft 365 管理员，你可以让用户在其移动设备上登录到 Outlook for Android 或 iOS 应用，而无需输入其用户名和密码。 通过扫描 QR 代码，用户可以安全地进行身份验证并登录到 Outlook 移动版。
 
-在Outlook 网页版或其他桌面Outlook应用程序中，用户可能会看到通知，通知他们可在Outlook设备上使用桌面设备。 管理员可以使用 Powershell 管理Exchange通知。 如果用户选择向自己发送短信以在移动设备上下载应用，QR 代码将显示在其计算机上。 他们将能够扫描 QR 代码，以登录到Outlook或平板电脑上的设备。 此 QR 代码是只能兑换一次短期令牌。
+在 Outlook 网页版或其他桌面 Outlook 应用程序中，用户可能会看到通知，提示他们可以在其移动设备上使用 Outlook。 管理员可以使用 Exchange PowerShell 管理这些通知。 如果用户选择向自己发送短信以在其移动设备上下载应用，则其计算机上将显示 QR 代码。 他们将能够扫描 QR 代码以登录到其手机或平板电脑上的 Outlook。 此 QR 代码是一个生存期较短的令牌，只能兑换一次。
+
+仅当满足以下条件时才会生成通知：
+
+1. 已为租户启用 QR 代码体验（默认情况下启用此体验）。
+
+2. 用户尚未使用 Outlook for iOS 和 Android。
+
+3. 用户在阅读窗格中具有空状态（未选择“自动打开第一封电子邮件”选项）。
+
+4. 用户未关闭通知。
 
 > [!NOTE]
-> 在某些情况下，用户必须重新验证其计算机以生成 QR 代码。
+> 在某些情况下，用户必须在其计算机上重新进行身份验证才能生成 QR 代码。
 
 ## <a name="use-exchange-powershell"></a>使用 Exchange PowerShell
 
-默认情况下，启用此功能。 若要禁用此功能，请按照以下步骤操作。
+默认情况下，启用此功能。 要禁用此功能，请执行以下步骤。
 
-1. [连接 PowerShell Exchange 。](/powershell/exchange/connect-to-exchange-online-powershell)
-2. 使用 PowerShell，可以禁用通知用户有关Outlook通知。 这还会阻止显示 QR 代码登录流。
+1. [连接到 Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+2. 使用 PowerShell，可以禁用提示用户有关 Outlook 移动应用的通知。 此操作还会阻止显示 QR 代码登录流。
 
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
@@ -48,5 +58,5 @@ Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 
 ## <a name="related-content"></a>相关内容
 
-[设置标准发布选项或定向发布 (](release-options-in-office-365.md) 文章) \
-[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) (文章) 
+[设置标准发布或目标发布选项](release-options-in-office-365.md)（文章\）
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)（文章）

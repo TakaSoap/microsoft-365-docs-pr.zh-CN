@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 5ca16e125b1eb8377c3a591d039eb7da65b873fb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 127d27e84cd7fc1fdaf530bc149f5d6e0d950337
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229091"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541717"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 管理 Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ ms.locfileid: "53229091"
 4. 选择现有配置文件，或新建一个配置文件。
 
 > [!TIP]
-> 需要帮助? 请参阅 **[将 Microsoft Defender for Endpoint 与 Intune 一同使用](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。  
+> 需要帮助？ 请参阅 **[将 Microsoft Defender for Endpoint 与 Intune 一同使用](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。  
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 配置 Microsoft Defender for Endpoint
 
@@ -79,16 +79,16 @@ ms.locfileid: "53229091"
 |**配置 Microsoft Defender 应用程序控制** 以选择在组织设备上审核还是信任应用 <br/><br/>*Microsoft Defender 应用程序控制也称为 [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)。*|[使用 Microsoft Defender 应用程序控制策略部署Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)<br/><br/>[终结点保护：Microsoft Defender 应用程序控制](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control)<br/><br/>[AppLocker 云解决方案提供商](/windows/client-management/mdm/applocker-csp)|
 |**配置设备控制和 USB 外围设备访问** ，以帮助防止未经授权的外围设备中的威胁损害你的设备 |[使用 Microsoft Defender for Endpoint 和 Intune 控制 USB 设备和其他可移动媒体](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)  |
 
-## <a name="configure-your-microsoft-defender-security-center"></a>配置Microsoft Defender 安全中心
+## <a name="configure-your-microsoft-365-defender-portal"></a>配置Microsoft 365 Defender门户
 
-如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能，并查看有关组织整体安全状况的详细信息。 请参阅[Microsoft Defender 安全中心](microsoft-defender-security-center.md)。 还可以配置最终用户是否可以在网站门户中查看这些功能Microsoft 365 Defender功能。
+如果尚未配置，请配置 Microsoft 365 Defender 门户以查看警报、配置威胁防护功能，并查看有关组织整体安全状况的详细信息。 请参阅[Microsoft 365 Defender](microsoft-defender-security-center.md)。 还可以配置最终用户是否可以在网站门户中查看这些功能Microsoft 365 Defender功能。
 
-- [概述Microsoft Defender 安全中心](/microsoft-365/security/defender-endpoint/use)
+- [概述Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 
-- [终结点保护：Microsoft Defender 安全中心](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [终结点保护：Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## <a name="next-steps"></a>后续步骤
 
-- [大致了解危险和漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [获取威胁和漏洞管理的概述](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [访问 Microsoft Defender 安全中心安全操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [访问 Microsoft 365 Defender门户安全操作仪表板](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

@@ -1,5 +1,5 @@
 ---
-title: 步骤 6 - 从以前的员工删除和删除 Microsoft 365 许可证
+title: 步骤 6 - 删除Microsoft 365员工的许可证
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,23 +19,24 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 按照以下步骤从以前的员工删除 Microsoft 365 许可证。
-ms.openlocfilehash: ed86eb28cc6d4996f7def8cb567f0e4085e67624
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 按照以下步骤从以前的员工Microsoft 365许可证。
+ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244164"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541561"
 ---
-# <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>步骤 6 - 从以前的员工删除 Microsoft 365 许可证
+# <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>步骤 6 - 删除Microsoft 365员工的许可证
 
-如果某人离开组织后不想支付许可证费用，则需要删除其 Microsoft 365 许可证，然后从订阅中删除它。 如果不删除许可证，可以将许可证分配给其他用户。
+如果某人离开组织后不想支付许可证费用，则需要删除其Microsoft 365许可证，然后从订阅中删除。 如果不删除许可证，可以将许可证分配给其他用户。
   
-删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档除外）将从 Microsoft 365 中永久删除，并且无法恢复。
+删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档将从 Microsoft 365 中永久删除，并且无法恢复。
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要阻止的员工的姓名，然后选择"许可证 **和应用"** 选项卡。
@@ -51,7 +52,7 @@ ms.locfileid: "52244164"
 
 向 [企业添加其他人](add-users.md) 时，系统会提示你同时购买许可证，只需一个步骤！
 
-有关管理 Microsoft 365 商业版用户许可证的信息，请参阅在 [Microsoft 365](../manage/assign-licenses-to-users.md)商业版 中向用户分配许可证和取消分配 [Microsoft 365](../manage/remove-licenses-from-users.md)商业版中的用户许可证。
+有关管理 Microsoft 365 for business 的用户许可证的信息，请参阅Assign [licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)和[Unassign licenses from users in Microsoft 365 for business。](../manage/remove-licenses-from-users.md)
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已删除的员工帐户如何影响 Skype for Business
 
@@ -61,4 +62,4 @@ ms.locfileid: "52244164"
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>设置呼叫转发给组织人员
 
-如果需要为离职员工的电话号码设置呼叫转发，呼叫策略下的呼叫转发设置可以设置转发，其中传入呼叫可以转发给其他用户，也可以同时呼叫其他人。 有关详细信息，请参阅 [Microsoft Teams 中的通话策略](/microsoftteams/teams-calling-policy)。
+如果需要为离职员工的电话号码设置呼叫转发，呼叫策略下的呼叫转发设置可以设置转发，其中传入呼叫可以转发给其他用户，也可以同时呼叫其他人。 有关详细信息，请参阅调用 Microsoft Teams 中的[策略](/microsoftteams/teams-calling-policy)。

@@ -19,12 +19,12 @@ description: 管理员可以了解如何使用欺骗智能策略和欺骗智能�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 696019f540bd09fd504400be182e7eb4ca810d6d
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029293"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541888"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人
 
@@ -35,19 +35,18 @@ ms.locfileid: "53029293"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 本文介绍了要替换的旧版欺骗性发件人管理体验。 有关新体验详细信息，请参阅 [EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)
+> 本文介绍在"反垃圾邮件策略"页面的"反垃圾邮件策略" (替换的旧版欺骗发件人管理) 。  有关租户允许/阻止列表 (中的"欺骗"选项卡的新体验) ，请参阅 EOP 中的欺骗[智能见解](learn-about-spoof-intelligence.md)
 
 在具有 Exchange Online 或独立 Exchange Online Protection (EOP) 组织邮箱且没有 Exchange Online 邮箱的 Microsoft 365 组织中，自 2018 年 10 日起，入站电子邮件将自动受到 EOP 的欺骗保护。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
 默认 (仅) 欺骗智能策略有助于确保合法发件人发送的欺骗性电子邮件不会在 EOP 垃圾邮件筛选器中被发现，同时保护用户免受垃圾邮件或网络钓鱼攻击。 您还可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查的域合法地向您发送未经身份验证 (电子邮件) 。
 
-可以在安全与合规中心内或在 PowerShell & PowerShell 中管理欺骗智能， (Exchange Online PowerShell 中Microsoft 365邮箱位于 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+您可以在企业门户中或在 PowerShell Microsoft 365 Defender PowerShell 中管理欺骗智能， (Exchange Online在 Microsoft 365 中拥有邮箱的组织Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。
-  - 若要直接转到欺骗 **智能策略的"反** 垃圾邮件设置"页，请使用 <https://protection.office.com/antispam> 。
-  - 若要直接转到安全 **仪表板页面** 获取欺骗智能见解，请使用 <https://protection.office.com/searchandinvestigation/dashboard> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。
+  - 若要直接转到“**反垃圾邮件策略**”页面，请使用 <https://security.microsoft.com/antispam>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -80,25 +79,25 @@ ms.locfileid: "53029293"
 
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>管理欺骗智能策略中的欺骗发件人
 
-1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
+1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
 
-2. 在"**反垃圾邮件设置"页上**，单击" ![ 展开图标 ](../../media/scc-expand-icon.png) "展开 **"欺骗智能策略"。**
+2. 在 **"反垃圾邮件策略"** 页上 **，通过单击** 名称选择"欺骗智能策略"。
 
    ![选择欺骗智能策略](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
-3. 进行以下选择之一：
-
-   - **查看新发件人**
+3. 在出现的 **欺骗智能** 策略飞出上，进行以下选择之一：
    - **向我显示我已审阅的发件人**
+   - **查看新发件人**
 
-4. 在 **确定是否允许这些发件人欺骗** 出现的用户飞出邮件中，选择以下选项卡之一：
-
+4. 在 **"确定是否允许这些发件人** 欺骗出现的用户"飞出内容上，选择以下选项卡之一：
    - **你的域**：发件人欺骗内部域中的用户。
    - **外部域**：发件人欺骗外部域中的用户。
 
-5. 单击 ![ "允许 ](../../media/scc-expand-icon.png) 欺骗 **？"列中的&quot;展开图标** &quot;。 选择 **&quot;** 是&quot;以允许欺骗发件人，或选择&quot; **否** &quot;将邮件标记为欺骗邮件。 该操作由默认反网络钓鱼策略或自定义防钓鱼策略控制， (默认值为&quot;将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md#spoof-settings)。
+5. 单击 ![ " ](../../media/scc-expand-icon.png) 允许欺骗 **？"列中** 的"展开图标"，然后进行以下选择之一：
+   - **是**：允许欺骗性发件人。
+   - **否**：将邮件标记为欺骗邮件。 操作由默认防钓鱼策略或自定义防钓鱼策略控制。 有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
-   ![显示欺骗性发件人飞出以及是否允许发件人欺骗的屏幕截图](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+   ![显示欺骗性发件人飞出以及是否允许发件人欺骗的屏幕截图](../../media/spoof-allow-block-flyout.png)
 
    您看到的列和值如下列表所示：
 
@@ -119,10 +118,6 @@ ms.locfileid: "53029293"
       - **失败**：发件人未通过 EOP 发件人身份验证检查。
       - **未知**：这些检查的结果未知。
 
-   - **决策集：** 显示谁确定发送基础结构是否允许欺骗用户：
-       - **欺骗智能策略** (自动) 
-       - **管理员** (手动) 
-
    - **Last seen**： The last date when a message was received from the sending infrastructure that contains the spoofed user.
 
    - **允许欺骗？：** 你在此处看到的值是：
@@ -131,7 +126,7 @@ ms.locfileid: "53029293"
 
      - **某些用户** (你的域"选项卡) ：发送基础结构是欺骗多个用户，其中允许一些欺骗用户，另一些不允许。 使用 **"详细** "选项卡查看特定地址。
 
-6. 在页面底部，单击“保存”。
+6. 完成后，单击“**保存**”。
 
 #### <a name="use-powershell-to-manage-spoofed-senders"></a>使用 PowerShell 管理欺骗性发件人
 
@@ -233,7 +228,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 若要验证是否向允许和不允许欺骗的发件人配置了欺骗智能，请执行以下步骤之一：
 
-- 在安全&合规中心，转到"威胁管理""策略""反垃圾邮件"展开"反垃圾邮件智能策略"，选择"向我显示已审阅的发件人"选择"你的域"或"外部域"选项卡，并验证发件人的" \>  \>  \>  \>  \> **允许** 欺骗？"值。
+- **电子邮件&协作** \>**策略&规则** \>**威胁策略** 页面 \> **策略** 部分 反垃圾邮件欺骗 \>  \> **智能策略** 选择"向我 \> **显示** \> 已审阅的发件人"选择"你的域或外部域"选项卡，并验证发件人的"允许欺骗？"值。
 
 - 在 PowerShell 中，运行以下命令以查看允许和不允许欺骗的发件人：
 

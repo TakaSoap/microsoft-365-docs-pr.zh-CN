@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 阻止以前的员工登录并阻止访问Microsoft 365服务。
-ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 69108539a87e9db4aa72851e5622a5f3856d3a45
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177113"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541621"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止对 Microsoft 365 服务的访问
 
@@ -68,4 +69,9 @@ ms.locfileid: "53177113"
 1. 转到 <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
 3. 双击用户，然后转到"电子邮件应用"**下的"** 管理电子邮件 **应用设置"。** 关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
-4. 选择“保存”。
+4. 选择“**保存**”。
+
+## <a name="related-content"></a>相关内容
+
+[Exchange管理中心Exchange Online](/exchange/exchange-admin-center) 
+[还原用户](restore-user.md)
