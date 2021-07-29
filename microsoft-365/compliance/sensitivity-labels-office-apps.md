@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b515ce5f24b93888b138cf0f61cefdf20cf49515
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3790b3ca48e733cd2637356547dcb6a6159396e0
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543613"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622132"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -66,7 +66,8 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 推出时间：16.0.13628 及以上 | 是的 <sup>\*</sup>                                                        |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 16.44+  | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 2009+                                  | 16.44+  | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 2009+                                  | 审阅中 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[支持对标记文档和加密](sensitivity-labels-coauthoring.md) 创作和自动保存 | 2105: 6 月 18 日 以上 |  16.50 以上 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -91,7 +92,8 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | 是 |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 即将推出：16.51+ <sup>\*</sup> | 即将推出：4.2126+ | 即将推出：4.2126+ | 审阅中 |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用敏感信息类型                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md) <br /> - 使用可训练分类器                    | 2009+                      | 审阅中                    | 审阅中           | 审阅中               | 是 |
 |[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | 是 |
 |
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: ae51d32343bbcf81d2d659121f475837cf0abe95
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3f1d3a7ee191377a22f5411578f5e267c8e7d345
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541431"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624232"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -85,7 +85,7 @@ ms.locfileid: "53541431"
 
 |功能或行为|标签设置：文件和电子邮件的自动标记  |策略：自动标记|
 |:-----|:-----|:-----|
-|应用相关性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 \* |
+|应用相关性|是（[最低版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)） |否 \* |
 |按位置限制|否 |是 |
 |条件：可训练分类器|是 |否 |
 |条件：电子邮件的共享选项和其他选项|否 |是 |
@@ -146,26 +146,13 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
-此选项目前处于预览阶段。 如果使用此选项，请确保你已在租户中发布至少一个其他针对自动标记和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)配置的敏感度标签。
+如果使用此选项，请确保你已在租户中发布至少一个其他针对自动标记和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)配置的敏感度标签。
 
 当你选择“**可训练分类器**”选项时，请从 Microsoft 中选择一个或多个内置的可训练分类器。 如果你创建了自己的自定义可训练分类器，也可以选择：
 
 ![可训练分类器和敏感度标签选项](../media/sensitivity-labels-classifers.png)
 
 有关这些分类器的详细信息，请参阅 [了解可训练分类器（预览版）](classifier-learn-about.md)。
-
-在此选项的预览期间，以下应用支持敏感度标签的可训练分类器：
-
-- 适用于 Windows 的 Microsoft 365 企业应用版（[以前的 Office 365 专业增强版](/deployoffice/name-change)），现已推出到版本 2006 及更高版本中的[当前频道](/deployoffice/overview-update-channels#current-channel-overview)：
-    - Word
-    - Excel
-    - PowerPoint
-
-- Office 网页版应用（如果你已[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)）：
-    - Word
-    - Excel
-    - PowerPoint
-    - Outlook
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>建议用户应用敏感度标签
 

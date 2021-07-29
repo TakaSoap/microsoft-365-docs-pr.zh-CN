@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 2a7330cff56f053f7714a88d8d3519cb0cd3cbaa
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878120"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621663"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -49,7 +49,7 @@ ms.locfileid: "52878120"
 
 若要仅为用户授予处置评审所需的权限，而不授予他们查看和配置保留和记录管理其他功能的权限，请创建一个自定义角色组（例如，命名为“处置审阅者”），并授予此组“**处置管理**”角色。
 
-有关配置这些权限的说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关将用户添加到默认角色或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
 
 另外：
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: 8d313650f298f2ab26989bec9df1260918f7dd5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 1815605d78f3b623eba34bf4d0ec2899256e6385
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300098"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624208"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -73,7 +73,7 @@ Remove-Item $rawFile
 
 词典可能有多个关键字来源，最常见的来源是服务或 PowerShell cmdlet 中导入的文件（如 .csv 或 .txt 列表）、你直接在 PowerShell cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
-1. 使用 **安全与合规中心** ([https://protection.office.com](https://protection.office.com)) 或连接到 **安全与合规中心 PowerShell**。&amp;
+1. 使用 **安全与合规中心**（[https://compliance.microsoft.com](https://compliance.microsoft.com)）或连接到 **安全性 &amp; 合规中心 PowerShell**。
     
 2. **定义或加载目标来源中的关键字**。 该向导和 cmdlet 均接受逗号分隔的关键字列表，以创建自定义关键字字典，所以这一步将会因关键字来源不同而略有差异。 加载后的关键字会在导入前编码并转换为字节数组。
     
@@ -83,7 +83,7 @@ Remove-Item $rawFile
 
 使用以下步骤创建和导入自定义字典关键字：
 
-1. 连接到安全与合规中心 ([https://protection.office.com](https://protection.office.com))。
+1. 连接到合规中心（[https://compliance.microsoft.com](https://compliance.microsoft.com)）。
 
 2. 导航到 **“分类”>“敏感信息类型”**。
 

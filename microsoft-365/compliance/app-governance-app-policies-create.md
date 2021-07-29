@@ -2,8 +2,8 @@
 title: 创建应用策略
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建应用策略。
-ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 317254714188bd1118a5ba285c5cc91f050abd28
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438056"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619167"
 ---
 # <a name="create-app-policies"></a>创建应用策略
 
@@ -50,7 +50,7 @@ ms.locfileid: "53438056"
 
 | 模板名称 | 说明 |
 |:-------|:-----|
-| 具有大量数据访问的新应用 | 突出显示具有大量数据访问的最近注册应用，以确保这些数据模式符合预期。 <br><br> 默认情况下，此策略将标记所有在过去 7 天内注册的、且在此期间数据访问量超过 1 GB 的应用。 可以使用更多条件和操作自定义此策略。 |
+| 具有大量数据访问的新应用 | 突出显示具有大量数据访问的最近注册应用，以确保这些数据模式符合预期。 <br><br> 默认情况下，此策略将标记过去 7 天内注册并且在该期间数据访问超过 1 GB 的所有应用。此策略可通过更多条件和操作进行自定义。 |
 |||
 
 ### <a name="app-permissions"></a>应用权限
@@ -63,13 +63,13 @@ ms.locfileid: "53438056"
 | 具有高特权权限的新应用 | 突出显示所有具有高特权权限的新应用，以确定可能需要进一步调查的潜在高占用空间应用。 <br><br> 默认情况下，此策略将标记所有在过去 7 天内注册的、具有高范围权限的应用。 |
 |||
 
-### <a name="app-certification"></a>应用认证
+### <a name="m365-certification"></a>M365 认证
 
-应用治理包含这些用于生成应用认证警报的模板。
+应用治理包含这些用于生成 M365 认证警报的模板。
 
 | 模板名称 | 说明 |
 |:-------|:-----|
-| 未经认证的新应用 | 突出显示尚未通过应用认证流程的新应用，以确保其在租户中符合预期。 <br><br> 默认情况下，此策略将标记所有在过去 7 天内注册且未经认证的应用。 |
+| 未经认证的新应用 | 突出显示尚未通过 M365 认证流程的新应用，以确保其在租户中符合预期。 <br><br> 默认情况下，此策略将标记所有在过去 7 天内注册且未经认证的应用。 |
 |||
 
 ## <a name="custom-app-policies"></a>自定义应用策略
@@ -109,7 +109,7 @@ ms.locfileid: "53438056"
 |条件 | 接受的条件值 | 详细信息 |
 |:-------|:-----|:-------|
 | 应用注册年龄 | 过去 X 天内 |  |
-| 应用认证 | 基本合规性、MCAS 合规性或 N/A | [Microsoft 365 认证](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| M365 认证 | 基本合规性、MCAS 合规性或 N/A | [Microsoft 365 认证](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
 | 发布者验证 | 是或否 | [发布者验证](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
 | 应用程序权限 | 从列表中选择一个或多个 API 权限 | [Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference) |
 | 委托的权限 | 从列表中选择一个或多个 API 权限 | [Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference) |
@@ -127,11 +127,7 @@ ms.locfileid: "53438056"
 | 错误率 | 在过去 7 天内，错误率大于 X%，其中 X 为管理员定义的值 |  |
 ||||
 
-<!--
-NOTE TO WRITER: Replace X in the above table with correct values.
--->
-
-必须满足所有指定的条件才可应用此应用策略。
+必须满足所有指定的条件，此应用策略才能生成警报。
 
 指定条件后，选择 **保存**，然后选择 **下一步**。
 

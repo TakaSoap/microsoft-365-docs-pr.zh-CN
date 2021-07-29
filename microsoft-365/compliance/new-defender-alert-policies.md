@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: 我们将为 Microsoft Defender for Office 365 发布新的警报策略。 我们还将停用已由新策略替换的两个现有警报策略。
-ms.openlocfilehash: 5791c909cc9cb94abab5d0dd013d250939fae160
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d9515c4a6b4fead11f0b8f8b2eeb82d19b8dbf34
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289183"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621987"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中新的警报策略
 
@@ -99,7 +99,7 @@ Microsoft Defender for Office 365 引入了与传递检测相关的新增和改�
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>为这些更改做好准备
 
-你的组织如何利用这些警报将确定需要执行哪些操作进行准备。 如果已操作警报，并且正在通过 API、警报电子邮件通知或者 Office 365 安全与合规中心 （`https://protection.office.com/viewalerts`） 或 Microsoft 安全中心 （`https://security.microsoft.com/viewalerts`） 使用或消耗警报，则需要修改工作流。
+你的组织如何利用这些警报将确定需要执行哪些操作进行准备。 如果已操作警报，并且正在通过 API、警报电子邮件通知或者在 Microsoft 365 合规中心（`https://compliance.mmicrosoft.com/viewalerts`）或 Microsoft 安全中心（`https://security.microsoft.com/viewalerts`）内使用警报，将需要修改工作流。
 
 **如果尚未操作这些警报，可以执行下列操作之一：**
 

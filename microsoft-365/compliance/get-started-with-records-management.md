@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8e6f32a7f1bc68449f1b43531725f07999043b82
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226571"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624028"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -53,9 +53,7 @@ ms.locfileid: "53226571"
 
 对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。
 
-有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
-
-有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关将用户添加到默认角色或创建自己的角色组的说明，请参阅 [Microsoft 365 合规中心中的权限](microsoft-365-compliance-center-permissions.md)。
 
 只有在创建、配置和应用用于声明记录和管理处置的保留标签时才需要这些权限。 配置这些标签的人员不需要访问该内容。
 

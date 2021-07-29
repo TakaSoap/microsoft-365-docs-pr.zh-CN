@@ -2,8 +2,8 @@
 title: 查看你的应用
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查看你的应用。
-ms.openlocfilehash: 448ca4cd7fab13ce25c3bcc18c350d227461ee45
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541095"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623010"
 ---
 # <a name="view-your-apps"></a>查看你的应用
 
@@ -32,7 +32,7 @@ ms.locfileid: "53541095"
 
 ## <a name="getting-a-list-of-all-the-apps-in-your-tenant"></a>获取租户中所有应用的列表
 
-有关租户中应用的摘要，请转到 **“Microsoft 365 合规中心”>“应用保护和治理”>“应用”**。
+有关租户中应用的摘要，请转到“**Microsoft 365 合规中心”>“应用治理”>“应用**”。
 
 ![Microsoft 365 合规中心内的 MAPG 应用摘要页面](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
@@ -74,12 +74,12 @@ ms.locfileid: "53541095"
 | 选项卡名称 | 说明 |
 |:-------|:-----|
 | 详细信息 | 查看应用的其他数据，例如首次同意的日期和应用 ID。 要查看在 Azure AD 中注册的应用的属性，请选择“**在 Azure AD 中查看应用**”。 |
-| 使用情况 | 查看租户中的应用访问的数据、绘制数据使用情况图，并显示排名靠前的 \<x> 用户和拥有[优先帐户](/microsoft-365/admin/setup/priority-accounts)的用户的使用情况。 |
+| 使用情况 |查看租户中应用访问的数据，并绘制 Sharepoint 和 Exchange 资源的数据使用情况。 |
 | 用户 | 查看正在使用该应用的用户列表、他们是否是优先帐户，以及下载和上传的数据量。 |
 | 权限 | 查看应用授予和使用的权限的摘要以及特定权限的列表。 有关详细信息，请参阅 [Microsoft Graph 权限参考](/graph/permissions-reference)。 |
 |||
 
-对于已启用的应用，还有一个“**禁用应用**”控件和一个“**启用应用**”控件，前者用于禁用所选应用，后者用于启用已禁用应用。 这些操作需要以下管理员角色才能执行：
+对于已启用的应用，还有一个 **禁用应用** 控件用来禁止使用所选应用，以及一个 **启用应用** 控件，用来启用已禁用的应用。这些操作需要以下角色组：
 
 - 合规管理员
 - 全局管理员
