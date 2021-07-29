@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 23940fc05e08dec6074dbdc420d529425cec0027
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222331"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595818"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>将检测拉取到 SIEM 工具
 
@@ -31,7 +31,7 @@ ms.locfileid: "51222331"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
 ## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>使用 SIEM 安全工具中的安全信息和事件 (拉) 检测
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a73c54c989d33a5e3d4faacb286bfb551d74a3c6
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845410"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591231"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高级搜寻主动搜寻威胁
 
@@ -30,21 +30,20 @@ ms.locfileid: "52845410"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)。
 
 高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 你可以主动检查网络中事件，以查找威胁指示器和实体。 通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。
 
 观看此视频，快速概览高级搜寻和快速入门的简短教程。
-<br />
-<br />
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqo]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqo]
 
 你可以使用相同的威胁搜寻查询来构建自定义检测规则。 这些规则将自动运行，以检查并响应可疑的泄露活动、错误配置的计算机和其他发现。
 
->[!TIP]
->使用[Microsoft 365 Defender 中的高级](/microsoft-365/security/defender/advanced-hunting-overview)搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。<br><br>
-在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，了解有关如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender[中。](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+> [!TIP]
+> 使用[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)中的高级搜寻，使用 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 数据来搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
+
+若要详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender从[Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)迁移高级搜寻查询。
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 
@@ -52,24 +51,30 @@ ms.locfileid: "52845410"
 
 我们建议执行几个步骤来通过高级搜寻快速启动并运行。
 
-| 学习目标 | 说明 | 资源 |
-|--|--|--|
-| **了解语言** | 高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)，支持相同的语法和运算符。 通过运行第一个查询开始学习查询语言。 | [查询语言概述](advanced-hunting-query-language.md) |
-| **了解如何使用查询结果** | 了解图表以及查看或导出结果的各种方法。 了解如何快速调整查询并向下钻取以获取更丰富的信息。 | [处理查询结果](advanced-hunting-query-results.md) |
-| **了解架构** | 更好地大致了解架构及其列中的表。 了解在构造查询时在何处查找数据。 | [架构参考](advanced-hunting-schema-reference.md) |
-| **使用预定义查询** | 浏览涵盖不同威胁搜寻方案的预定义查询集合。 | [共享查询](advanced-hunting-shared-queries.md) |
-| **优化查询和处理错误** | 了解如何创建高效且无错误的查询。 | - [查询最佳做法](advanced-hunting-best-practices.md)<br>- [处理错误](advanced-hunting-errors.md) |
-| **获得最完整的覆盖范围** | 使用审核设置为组织提供更好的数据覆盖范围。 | - [扩展高级搜寻范围](advanced-hunting-extend-data.md) |
-| **运行快速调查** | 快速运行高级搜寻查询以调查可疑活动。 | - [使用 go hunt 快速搜寻实体或 *事件信息*](advanced-hunting-go-hunt.md) |
-| **包含威胁和地址泄露** | 通过隔离文件、限制应用执行和其他操作来响应攻击 | - [对高级搜寻查询结果采取措施](advanced-hunting-take-action.md) |
-| **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发警报并自动执行响应操作。 | - [自定义检测概述](overview-custom-detections.md)<br>- [自定义检测规则](custom-detection-rules.md) |
+<br>
+
+****
+
+|学习目标|说明|资源|
+|---|---|---|
+|**了解语言**|高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)，支持相同的语法和运算符。 通过运行第一个查询开始学习查询语言。|[查询语言概述](advanced-hunting-query-language.md)|
+|**了解如何使用查询结果**|了解图表以及查看或导出结果的各种方法。 了解如何快速调整查询并向下钻取以获取更丰富的信息。|[处理查询结果](advanced-hunting-query-results.md)|
+|**了解架构**|更好地大致了解架构及其列中的表。 了解在构造查询时在何处查找数据。|[架构参考](advanced-hunting-schema-reference.md)|
+|**使用预定义查询**|浏览涵盖不同威胁搜寻方案的预定义查询集合。|[共享查询](advanced-hunting-shared-queries.md)|
+|**优化查询和处理错误**|了解如何创建高效且无错误的查询。|- [查询最佳做法](advanced-hunting-best-practices.md)<br>- [处理错误](advanced-hunting-errors.md)|
+|**获得最完整的覆盖范围**|使用审核设置为组织提供更好的数据覆盖范围。|- [扩展高级搜寻范围](advanced-hunting-extend-data.md)|
+|**运行快速调查**|快速运行高级搜寻查询以调查可疑活动。|- [使用 go hunt 快速搜寻实体或 *事件信息*](advanced-hunting-go-hunt.md)|
+|**包含威胁和地址泄露**|通过隔离文件、限制应用执行和其他操作来响应攻击|- [对高级搜寻查询结果采取措施](advanced-hunting-take-action.md)|
+|**创建自定义检测规则**|了解如何使用高级搜寻查询来触发警报并自动执行响应操作。|- [自定义检测概述](overview-custom-detections.md)<br>- [自定义检测规则](custom-detection-rules.md)|
+|
+
 
 ## <a name="data-freshness-and-update-frequency"></a>数据新鲜度和更新频率
 
 高级搜寻数据可以分为两种不同的类型，每种类型合并的方式不同。
 
-- **事件或活动数据**- 填充有关警报、安全事件、系统事件和例程评估的表。 高级搜寻在收集它们传感器将其成功传输到 Defender for Endpoint 后，几乎会立即收到此数据。
-- **实体数据**- 使用有关用户和设备的综合信息填充表。 此数据来自相对静态数据源和动态源，如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
+- **事件或活动数据**：填充有关警报、安全事件、系统事件和常规评估的表。 高级搜寻在收集它们传感器将其成功传输到 Defender for Endpoint 后，几乎会立即收到此数据。
+- **实体数据**：使用有关用户和设备的综合信息填充表。 此数据来自相对静态数据源和动态源，如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
 
 ## <a name="time-zone"></a>时区
 

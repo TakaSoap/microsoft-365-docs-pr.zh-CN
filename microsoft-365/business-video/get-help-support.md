@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 你必须是企业订阅的管理员，才能在 Microsoft 365 商业高级版中获取管理员帮助或在线/电话支持。
-ms.openlocfilehash: c33506a17ea7c99902025b613e27168606e7ff03
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394817"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595014"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -46,15 +46,11 @@ ms.locfileid: "53394817"
 
 可通过在线发起服务请求节省时间。我们将帮助你查找解决方案，或请技术支持人员与你联系。
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。（有关详细信息，请参阅[谁在我的公司中拥有管理员权限？](admin-center-overview.md#who-has-admin-permissions-in-my-business)。）
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。（有关详细信息，请参阅[谁在我的公司中拥有管理员权限？](admin-center-overview.md#who-has-admin-permissions-in-my-business)。）
 
-2. 选择“**需要帮助?**”按钮。
+1. 如果所得结果没有帮助，请选择“**联系支持人员**”。
 
-3. 在“**需要帮助?**”窗格中，告诉我们你需要哪方面的帮助，然后按 **Enter**。
-
-4. 如果所得结果没有帮助，请选择“**联系支持人员**”。
-
-5. 输入问题的说明（如有需要），确认你的联系号码和电子邮件地址，选择你首选的联系方式，然后选择“**联系我**”。 预期等待时间在“**需要帮助?**”窗格中显示。
+1. 输入问题的说明（如有需要），确认你的联系号码和电子邮件地址，选择你首选的联系方式，然后选择“**联系我**”。 预期等待时间在“**需要帮助?**”窗格中显示。
 
 ## <a name="phone-support"></a>电话支持
 

@@ -17,12 +17,12 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.openlocfilehash: e393ff27b5bd918559346959fda65a057205e29d
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: d32bcdb3e17ccc7b94d47dd67f12c04d115da550
+  ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53543733"
+  ms.lasthandoff: 07/26/2021
+  ms.locfileid: "53591087"
 title: '攻击面减少常见问题解答 (常见问题) '
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +49,7 @@ sections:
       若要了解有关许可Windows，请参阅 Windows 10 [Licensing and](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
   - question: >
       如果我有 E3 许可证，是否支持 ASR？
-    answer: "能。 E3 及Windows Enterprise支持 ASR。 \n"
+    answer: "是。 E3 及Windows Enterprise支持 ASR。 \n"
   - question: >
       E5 许可证支持哪些功能？
     answer: >
@@ -107,7 +107,7 @@ sections:
   - question: >
       ASR 是否支持路径中包括系统变量和通配符的文件或文件夹排除项？
     answer: >
-      能。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
+      是。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
   - question: >
       默认情况下，ASR 规则是否涵盖所有应用程序？
     answer: >

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b989b11739b5418ad14e147f76dde0e0dd7b1b1a
-ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
+ms.openlocfilehash: b74ff33fe2ed2581e033511b6ee8069696439a58
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53383446"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591171"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -43,22 +43,23 @@ ms.locfileid: "53383446"
 
 - EOP 和 Microsoft Defender 中的筛选器Office 365这些邮件不执行任何操作。<sup>\*</sup>
 - [零时差清除 (对 ](zero-hour-auto-purge.md)) 和网络钓鱼的 ZAP 邮件不执行任何操作。<sup>\*</sup>
-- [对于这些方案](alerts.md) ，不会触发默认系统警报。
+- [对于这些方案](/microsoft-365/compliance/alert-policies#default-alert-policies) ，不会触发默认系统警报。
 - [AIR 和 Defender for Office 365](office-365-air.md)将忽略这些消息。
 - 专用于第三方网络钓鱼模拟：
-  - [管理员提交](admin-submission.md) 生成自动响应，指出邮件是网络钓鱼模拟活动的一部分，不是真正的威胁。 不会触发警报和 AIR。
+  - [管理员提交](admin-submission.md) 生成自动响应，指出邮件是网络钓鱼模拟活动的一部分，不是真正的威胁。 不会触发警报和 AIR。 管理员提交体验将这些邮件作为模拟威胁显示。
+  - 当用户使用报告网络钓鱼外接程序 for [Outlook](enable-the-report-message-add-in.md)报告网络钓鱼模拟邮件时，系统不会生成警报、调查或事件。 邮件还将显示在提交页面的"用户报告的邮件"选项卡上。
   - [保险箱 Defender for Office 365](safe-links.md)中的链接不会阻止或触发这些邮件中专门标识的 URL。
   - [保险箱 Defender for Office 365](safe-attachments.md)中的附件不会触发这些邮件中的附件。
 
 <sup>\*</sup> 无法绕过恶意软件筛选或恶意软件的 ZAP。
 
-由高级传递策略标识的邮件不是安全威胁，因此邮件标记为系统替代。 管理员可以在下列体验中筛选和分析这些系统替代：
+由高级传递策略标识的邮件不是安全威胁，因此邮件使用系统替代进行标记。 由于网络钓鱼模拟系统覆盖或 **SecOps** 邮箱系统覆盖，管理员体验将显示这些邮件。 管理员可以在下列体验中筛选和分析这些系统替代：
 
-- [Defender for Office 365 计划 2 中的威胁资源管理器/实时检测](threat-explorer.md)
-- 威胁[资源管理器/实时](mdo-email-entity-page.md)检测中的电子邮件实体页面
-- [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft Defender for Endpoint 中的高级搜寻](../defender-endpoint/advanced-hunting-overview.md)
-- [市场活动视图](campaigns.md)
+- [威胁资源管理器/实时检测在 Defender for Office 365 计划 2：](threat-explorer.md)管理员可以筛选系统覆盖源并选择网络钓鱼 **模拟** 或 **SecOps 邮箱**。
+- 威胁资源管理器 [/](mdo-email-entity-page.md)实时检测中的电子邮件实体页面：管理员可以查看 **SecOps** 邮箱或钓鱼模拟在"覆盖"部分中的"租户替代"下 (组织策略) **的邮件。**
+- 威胁[防护状态报告](view-email-security-reports.md#threat-protection-status-report)：管理员可以在下拉菜单中按系统覆盖查看数据进行筛选，并选择查看由于网络钓鱼模拟系统覆盖而允许的邮件。 To see messages allowed by the SecOps mailbox override， you can select **chart breakdown by delivery location** in the chart breakdown by **reason** drop down menu.
+- [Microsoft Defender for Endpoint 中的](../defender-endpoint/advanced-hunting-overview.md)高级搜寻：网络钓鱼模拟和 SecOps 邮箱系统覆盖在 EmailEvents 中的 OrgLevelPolicy 中将显示为选项。 
+- [Campaign Views](campaigns.md)： Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -103,16 +104,19 @@ ms.locfileid: "53383446"
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**
    - 如果没有配置网络钓鱼模拟，请单击"添加 **"。**
 
-3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置：
+3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置： 
 
    - 发送域：展开此设置并输入至少一个电子邮件地址域 (例如，contoso.com) 方法是单击该框，输入值，然后按 Enter 或选择显示在框下方的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
-   - **发送 IP：** 展开此设置，并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值为：
+   - **发送 IP：** 展开此设置，并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值包含:
      - 单个 IP：例如，192.168.1.1。
      - IP 范围：例如，192.168.0.1-192.168.0.254。
      - CIDR IP：例如，192.168.0.1/25。
    - 要允许的模拟 URL：展开此设置，并选择输入属于网络钓鱼模拟活动的一部分的特定 URL，这些 URL 不应被阻止或触发，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 您最多可以添加 10 个条目。 有关 URL 语法格式，请参阅 [租户允许/阻止列表的 URL 语法](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
 
    若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
+   
+   > [!NOTE]
+   > 您必须指定至少一个 **发送** 域和至少一个 **发送 IP，** 以在高级传递中配置第三方网络钓鱼模拟。 可以选择包括模拟 **URL，以确保** 不会阻止模拟消息中的 URL。 每个字段最多可以指定 10 个条目。 必须在至少一个发送域和一个发送 **IP** 上匹配，但值之间不会保持关联。
 
 4. 完成后，请执行下列步骤之一：
    - **第一次**：单击 **"添加"，** 然后单击"关闭 **"。**

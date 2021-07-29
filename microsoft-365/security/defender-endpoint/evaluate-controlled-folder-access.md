@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4254c5ea24d8c901ac5f6337b0c626afe02747e2
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 758dd66f9f1d124cbf2966a665a69fba4238b22f
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926639"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594882"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -29,7 +29,7 @@ ms.locfileid: "52926639"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 
 [受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019 和 Windows 10 客户端上受支持。
@@ -59,7 +59,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 以下受控文件夹访问权限事件显示在 microsoft/Windows/Windows Windows Defender/Operational 文件夹下的 Windows 事件查看器中。
 
-事件 ID | 说明
+事件 ID | 描述
 -|-
  5007 | 更改设置时的事件
  1124 | 已审核的受控文件夹访问事件
@@ -76,6 +76,6 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 ## <a name="see-also"></a>另请参阅
 
-* [使用受控文件夹访问权限保护重要文件夹](controlled-folders.md)
+* [使用受控文件夹访问保护文重要件夹](controlled-folders.md)
 * [评估 Microsoft Defender for Endpoint](evaluate-mde.md)
 * [使用审核模式](audit-windows-defender.md)

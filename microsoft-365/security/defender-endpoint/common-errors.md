@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2e52b7074dcd15e7f6852a11ccb7793572cd9b5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 482893e069f33f445bdb792eebed3ea6cf2ad91c
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771005"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591363"
 ---
 # <a name="common-rest-api-error-codes"></a>常见的 REST API 错误代码
 
@@ -33,7 +33,7 @@ ms.locfileid: "52771005"
 * 邮件是可更改的免费文本。
 * 在页面底部，可以找到响应示例。
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 错误代码 |HTTP 状态代码 |邮件 
 :---|:---|:---

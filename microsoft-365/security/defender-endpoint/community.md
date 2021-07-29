@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f97edde712287ef72b9196b11651bc5ce3fbe7a2
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a70f324763e0db4cf3a4f2d1b04680d59843a3da
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567232"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591315"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>访问 Microsoft Defender for Endpoint 社区中心
 
@@ -32,7 +32,7 @@ ms.locfileid: "53567232"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 Defender for Endpoint Community 中心是社区成员可以学习、协作和共享产品体验的地方。 
 

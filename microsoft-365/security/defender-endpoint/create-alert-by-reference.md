@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 91e57b9941764d5f26ae47e137f584cd9f2c5f5d
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289459"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595758"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "53289459"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -58,7 +58,7 @@ ms.locfileid: "53289459"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Alerts.ReadWrite.All | "读取和写入所有警报"
+应用程序 | Alerts.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
 Authorization | 字符串 | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。

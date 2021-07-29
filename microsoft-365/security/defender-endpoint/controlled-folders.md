@@ -17,14 +17,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 82cc897cf8ae2289c83111a27bb8d82b401a86c9
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904052"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595746"
 ---
-# <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问权限保护重要文件夹
+# <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问保护文重要件夹
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "52904052"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 ## <a name="what-is-controlled-folder-access"></a>什么是受控文件夹访问权限？
 
@@ -58,7 +58,7 @@ ms.locfileid: "52904052"
 
 ## <a name="why-controlled-folder-access-is-important"></a>受控文件夹访问权限为什么很重要
 
-受控文件夹访问权限在帮助保护文档和信息免受勒索软件攻击 [方面尤其有用](https://www.microsoft.com/wdsi/threats/ransomware)。 在勒索软件攻击中，你的文件可以加密并保存。 受控文件夹访问权限就位后，应用尝试对受保护文件夹中的文件进行更改的计算机上将显示一条通知。 可以使用 [公司详细信息和](customize-attack-surface-reduction.md#customize-the-notification) 联系信息自定义通知。 您还可以单独启用规则以自定义功能监视的技术。
+受控文件夹访问权限在帮助保护文档和信息免受勒索软件攻击 [方面尤其有用](https://www.microsoft.com/wdsi/threats/ransomware)。 在勒索软件攻击中，你的文件可以加密并保存。 受控文件夹访问权限就位后，应用尝试对受保护文件夹中的文件进行更改的计算机上将显示一条通知。 你可以使用公司的详细信息和联系人信息[自定义通知](customize-attack-surface-reduction.md#customize-the-notification)。 还可以单独启用规则以自定义功能所监视的技术。
 
 受保护的 [文件夹包括](#review-controlled-folder-access-events-in-windows-event-viewer) 公用系统文件夹 (包括启动) ，你可以 [添加更多文件夹](customize-controlled-folders.md#protect-additional-folders)。 还可以允许 [应用](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) 向它们授予对受保护文件夹的访问权限。
 
@@ -89,9 +89,9 @@ Windows默认保护系统文件夹以及其他一些文件夹：
 
 受控文件夹访问权限需要启用Microsoft Defender 防病毒[实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>在 Defender 门户中查看受控Microsoft 365访问事件
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>在管理门户中查看受控文件夹Microsoft 365 Defender事件
 
-Defender for Endpoint 提供事件的详细报告和阻止，作为在[](investigate-alerts.md)Microsoft 365 Defender 门户中警报调查方案的一部分。  (请参阅 Microsoft [Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).) 
+Defender for Endpoint 提供事件的详细报告和阻止，作为其警报[](investigate-alerts.md)调查方案的一Microsoft 365 Defender门户。  (请参阅 Microsoft [Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).) 
 
 可以使用高级搜寻查询 Microsoft Defender 的终结点 [数据](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)。 如果你使用的是审核[模式](audit-windows-defender.md)，可以使用高级搜寻查看受控文件夹[](advanced-hunting-overview.md)访问权限设置在启用后将如何影响你的环境。
 
@@ -107,14 +107,14 @@ DeviceEvents
 你可以查看Windows事件日志，以查看当受控文件夹访问权限阻止应用 (或审核) 创建的事件：
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
-2. 在 **"开始**"菜单中键入事件查看器以打开Windows事件查看器。
+2. 在 **事件** 查看器中键入"开始"菜单以打开Windows事件查看器。
 3. 在左侧面板的"操作 **"下**，选择 **"导入自定义视图..."。**
 4. 导航到提取 *内容cfa-events.xml并选择* 它。 或者，[直接复制 XML。](event-views.md)
-5. 选择“**确定**”。
+5. 选择 **“确定”**。
 
 下表显示与受控文件夹访问权限相关的事件：
 
-|事件 ID | 说明 |
+|事件 ID | 描述 |
 |:---|:---|
 |5007 | 更改设置时的事件 |
 |1124 | 已审核的受控文件夹访问事件 | 

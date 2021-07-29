@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2b0b987f12888de6c04d33f711112bf2e400d448
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289891"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591291"
 ---
 # <a name="collect-investigation-package-api"></a>收集调查包 API
 
@@ -32,12 +32,11 @@ ms.locfileid: "53289891"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>API 说明
 
@@ -51,10 +50,10 @@ ms.locfileid: "53289891"
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅对 [终结点 API 使用 Defender](apis-intro.md)
 
-权限类型 | 权限 | 权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-Application | Machine.CollectForensics | "收集取证"
-委派（工作或学校帐户） | Machine.CollectForensics | "收集取证"
+应用程序|Machine.CollectForensics|"收集取证"
+委派（工作或学校帐户）|Machine.CollectForensics|"收集取证"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
@@ -70,18 +69,18 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
-Content-Type | string | application/json. **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
+Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型 | 说明
+参数|类型|说明
 :---|:---|:---
-评论 | 字符串 | 要与操作关联的注释。 **必需**。
+评论|字符串|要与操作关联的注释。 **必需**。
 
 ## <a name="response"></a>响应
 

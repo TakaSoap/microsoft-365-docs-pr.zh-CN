@@ -1,5 +1,5 @@
 ---
-title: 查看和组织 Microsoft Defender 终结点警报队列
+title: 查看并组织 Microsoft Defender for Endpoint 警报队列
 description: 了解 Microsoft Defender for Endpoint 警报队列如何工作，以及如何对警报列表进行排序和筛选。
 keywords: 警报， 队列， 警报队列， 排序， 顺序， 筛选， 管理警报， 新， 正在进行， 已解决， 最新， 队列中的时间， 严重性， 时间段， Microsoft 威胁专家警报
 search.product: eADQiWindows 10XVcnh
@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934329"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591267"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看和组织 Microsoft Defender 终结点警报队列
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [适用于终结点的 Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)。
 
 **警报队列** 显示从网络中设备标记的警报列表。 默认情况下，队列在分组视图中显示最近 30 天内看到的警报。 最新警报在列表顶部显示，有助于你先查看最新警报。
 
@@ -58,8 +58,8 @@ ms.locfileid: "51934329"
 
 警报严重性 | 说明
 :---|:---
-高 </br> (红色)  | 通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
-中 </br> (橙色)  | 终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
+High </br> (红色)  | 通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
+Medium </br> (橙色)  | 终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
 低 </br> (黄色)  | 与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
 信息 </br> (灰色)  | 可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
 
@@ -92,7 +92,7 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 | 防御者      | DefenseEvasion      | 例如，通过关闭安全应用、删除芯片和运行 rootkit 来避免安全控制                        |
 | 发现            | 发现           | 收集有关重要设备和资源（如管理员计算机、域控制器和文件服务器）的信息  |
 | 执行            | 执行           | 启动攻击者工具和恶意代码，包括 RAT 和后门                                                             |
-| Exfiltration         | Exfiltration        | 将数据从网络提取到外部攻击者控制的位置                                                         |
+| 外泄         | 外泄        | 将数据从网络提取到外部攻击者控制的位置                                                         |
 | 攻击              | 攻击             | 攻击代码和可能的利用活动                                                                                       |
 | 初始访问       | InitialAccess       | 获取目标网络的初始条目，通常涉及密码猜测、攻击或钓鱼电子邮件                      |
 | 横向移动     | LateralMovement     | 在目标网络中设备之间移动以到达关键资源或获取网络持久性                                |
@@ -139,7 +139,7 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 | Microsoft 威胁专家          | ThreatExperts              |
 | SmartScreen                       | WindowsDefenderSmartScreen |
 
-### <a name="os-platform"></a>操作系统平台
+### <a name="os-platform"></a>OS 平台
 
 通过选择你感兴趣的操作系统平台来限制警报队列视图。
 

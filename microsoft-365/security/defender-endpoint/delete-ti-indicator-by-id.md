@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9e2a674f156b5300fac22673e33c07c9b5532b42
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289915"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595662"
 ---
 # <a name="delete-indicator-api"></a>删除指示器 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "53289915"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,8 +52,8 @@ ms.locfileid: "53289915"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Ti.ReadWrite | "读取和写入 TI 指示器"
-Application | Ti.ReadWrite.All | "读取和写入指示器"
+应用程序 | Ti.ReadWrite | "读取和写入 TI 指示器"
+应用程序 | Ti.ReadWrite.All | "读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,7 +65,7 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
 Authorization | 字符串 | Bearer {token}。 **必需**。
 

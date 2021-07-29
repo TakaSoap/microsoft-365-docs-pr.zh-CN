@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dc3ce994108f902e3119de2f5b175b232b68c891
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fcb34385446342e4b0a948f561b886e19743aa4e
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843718"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591135"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>适用于终结点 API 的 Microsoft Defender 许可证和使用条款
 
@@ -37,15 +37,16 @@ Defender for Endpoint API 受 [Microsoft API 许可和使用条款控制](/legal
 
 ### <a name="throttling-limits"></a>节流限制
 
-名称 | 呼叫 | 续订期 
+名称|呼叫|续订期
 :---|:---|:---
-每个连接的 API 调用 | 100 | 60 秒。
-
+每个连接的 API 调用|100|60 秒。
 
 ## <a name="legal-notices"></a>法律声明
 
 Microsoft 和任何参与者在 Creative Commons Attribution 4.0 International Public License 下授予你 Microsoft 文档和此存储库中其他内容的许可证，请参阅许可证文件。
 
-本文档Windows、Microsoft Azure和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区中的商标或注册商标。 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。 可在 上找到 Microsoft 的一般商标准则 https://go.microsoft.com/fwlink/?LinkID=254653 。
+本文档Windows、Microsoft Azure和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区中的商标或注册商标。 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。 可在 上找到 Microsoft 的一般商标准则 <https://go.microsoft.com/fwlink/p/?LinkID=254653> 。
 
-隐私信息可在 Microsoft 找到，任何参与者保留所有其他权利，无论是根据其各自的版权、专利还是商标，无论是通过暗示、阻止拼写还是 https://privacy.microsoft.com/en-us/ 其他方式。
+隐私信息位于 <https://privacy.microsoft.com/> 。
+
+Microsoft 和任何参与者保留所有其他权利，无论是根据其各自的版权、专利还是商标，无论是通过暗示、阻止拼写还是以其他方式。

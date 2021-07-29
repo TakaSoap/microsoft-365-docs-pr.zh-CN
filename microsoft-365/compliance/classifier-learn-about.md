@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的正面和负面示例来识别各种类型的内容。 对分类器进行培训后，您确认其结果准确无误。 然后，使用它搜索组织的内容，并进行分类以应用保留或敏感度标签，或将其包括在 DLP 策略或保留策略 (数据丢失) 中。
-ms.openlocfilehash: 1881e4de87fd41f21bb1f2236d46391b3a1ed785
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: 可Microsoft 365分类器是一种工具，你可以训练该工具，通过为实验室或策略应用程序提供要查看的正面和负面示例来识别不同类型的内容。
+ms.openlocfilehash: 2a98d3d889b1f2d51c795a8668c46ef4e0d7d93e
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114048"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53594942"
 ---
 # <a name="learn-about-trainable-classifiers"></a>了解可训练的分类器
 
@@ -102,13 +102,18 @@ Microsoft 365五个预先训练的分类器：
 - **冒犯**：根据以下特征检测与针对一个或多个个人的冒犯行为相关的特定冒犯性语言文本项类别：种族、国家/地区、性别、性取向、年龄、残障
 - **冒犯性**：检测特定类别的冒犯性语言文本项，这些文本项包含使大多数用户感同的表达式
 - **威胁**：检测与威胁相关的特定类别的冒犯性语言文本项，以实施暴力或对人员或属性进行物理损害或损害
+- **种族**：检测明确的语言，与其他社区相比，对针对美洲/黑色社区的语言特别敏感。
 
-这些记录Microsoft 365数据  >  **分类**  >  **可训练分类** 器视图，状态为 `Ready to use` 。
+> [!IMPORTANT]
+> 该可训练分类器仅作为公共预览提供给其租户Microsoft 365位于北美数据中心的客户。 To see where your Microsoft 365 tenant is homed open the Microsoft 365 管理 center and navigate to **设置**  >  **Org settings** Organizational  >  **profile**  >  **Data location**. 
+
+它们显示在数据分类 **Microsoft 365 合规中心**  >    >  **可训练分类器**"视图中，状态为 `Ready to use` 。
 
 ![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> 请注意，冒犯性语言、冒犯性、亵亵和威胁分类器仅适用于可搜索文本，并不详尽或完整。  此外，语言和文化标准会不断改变，并且鉴于这些创新，Microsoft 保留自行决定更新这些分类器的权利。 虽然分类器可帮助组织监视使用的攻击性语言和其他语言，但分类器不会解决此类语言的后果，也不用于提供组织监视或响应此类语言使用的唯一方式。 贵组织（而不是 Microsoft 或其子公司）仍负责与监视、强制执行、阻止、删除和保留由预先训练的分类器标识的任何内容相关的所有决策。
+> 请注意，冒犯性语言、冒犯性以及威胁分类器仅适用于可搜索文本，并不包含这些领域的字词或语言的详尽或完整列表。 此外，语言和文化标准会不断改变，并且鉴于这些创新，Microsoft 保留自行决定更新这些分类器的权利。 虽然分类器可帮助组织检测这些方面，但分类器并不适合提供组织检测或解决此类语言使用的唯一方法。 贵组织（而不是 Microsoft 或其子公司）仍负责与监视、扫描、阻止、删除和保留由预先训练的分类器确定的任何内容相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
+
 
 ### <a name="custom-classifiers"></a>自定义分类器
 

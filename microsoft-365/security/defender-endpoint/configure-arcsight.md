@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a52f810647c387c5a5726b9d31998c34add4092e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8397731941a3344638edb0b57e77272f4fae930
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166181"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590991"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>配置 Micro Focus ArcSight 以拉取 Defender 进行终结点检测
 
@@ -32,15 +32,16 @@ ms.locfileid: "51166181"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink)。
 
 你需要安装和配置一些文件和工具以使用 Micro Focus ArcSight，以便它可以拉取 Defender 进行终结点检测。
 
->[!Note]
+> [!NOTE]
+>
 >- [Defender for Endpoint Alert](alerts.md) 由一个或多个检测组成
 >- [Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 配置微型焦点 ArcSight 连接器工具需要多个配置文件，以拉取和分析来自 AAD Azure Active Directory (应用程序的) 检测。
 
@@ -88,7 +89,6 @@ ms.locfileid: "51166181"
    - WDATP-connector.properties：C：folder_location \\ \current\user\agent\flexagent\
 
    > [!NOTE]
-   > 
    > 必须将配置文件放在此位置，其中 *folder_location表示安装* 该工具的位置。
 
 4. 核心连接器的安装完成后，将打开"连接器设置"窗口。 在"连接器设置"窗口中，选择"**添加连接器"。**
@@ -97,47 +97,32 @@ ms.locfileid: "51166181"
 
 6. 在参数详细信息表单中键入以下信息。 表单中的所有其他值都是可选的，可以留空。
 
-   <table>
-    <tbody style="vertical-align:top;">
-    <tr>
-    <th>字段</th>
-    <th>值</th>
-    </tr>
-    <tr>
-    <td>配置文件</td>
-    <td>键入客户端属性文件的名称。 该名称必须与下载的 .zip中提供的文件匹配。
-例如，如果 flexagent 目录中的配置文件名为 &quot; &quot;WDATP-Connector.js&quot; onparser.properties，则必须键入 &quot; &quot; WDATP-Connector 作为客户端属性 &quot; 文件的名称。</td>
-    </tr>
-    <td>事件 URL</td>
-    <td>根据您的数据中心位置，选择欧盟或美国 URL： </br></br> <b>对于欧盟</b>：https:// <i></i> wdatp-alertexporter-eu.windows.com/api/alerts/？sinceTimeUtc=$START_AT_TIME <br>
-   </br><b>对于美国：https://</b> <i></i> wdatp-alertexporter-us.windows.com/api/alerts/？sinceTimeUtc=$START_AT_TIME <br> <br> <b>英国 ：https://</b> <i></i> wdatp-alertexporter-uk.windows.com/api/alerts/？sinceTimeUtc=$START_AT_TIME</td>
-    <tr>
-    <td>身份验证类型</td>
-    <td>OAuth 2</td>
-    </tr>
-    <td>OAuth 2 客户端属性文件</td>
-    <td>浏览到 <em>wdatp-connector.properties 文件</em> 的位置。 该名称必须与下载的 .zip中提供的文件匹配。</td>
-    <tr>
-    <td>刷新令牌</td>
-    <td>可以通过两种方式获取刷新令牌：从 <b>SIEM</b> 设置页生成刷新令牌，或者使用 restutil 工具。 <br><br> 有关从首选项设置生成刷新令牌详细信息 <b>，</b> 请参阅在 Defender for Endpoint 中启用 <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">SIEM 集成</a>。 </br> </br><b>使用 restutil 工具获取刷新令牌：</b> </br> a. 打开命令提示符。 导航到 C：\<em>folder_location</em>\current\bin，folder_location表示安装该工具的位置。 <em></em> </br></br> b. 类型： <code>arcsight restutil token -config</code> 从 bin 目录。例如 <b>：arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> Web 浏览器窗口将打开。 </br> </br>c. 键入凭据，然后单击密码字段，让页面重定向。 在登录提示中，输入凭据。 </br> </br>d. 刷新令牌显示在命令提示符中。 </br></br> e. 将其复制并粘贴到 <b>"刷新令牌"</b> 字段中。
-    </td>
-    </tr>
-    </tr>
-    </table><br/>
-    
+   <br>
+
+   ****
+
+   |字段|值|
+   |---|---|
+   |配置文件|键入客户端属性文件的名称。 该名称必须与下载的 .zip中提供的文件匹配。 <p> 例如，如果"flexagent"目录中的配置文件名为"WDATP-Connector.jsonparser.properties"，则必须键入"WDATP-Connector"作为客户端属性文件的名称。|
+   |事件 URL|根据您的数据中心位置，选择欧盟或美国 URL： <ul><li>**对于欧盟**：  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**对于美国**： `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**对于英国**： `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |身份验证类型|OAuth 2|
+   |OAuth 2 客户端属性文件|浏览到 *wdatp-connector.properties 文件* 的位置。 该名称必须与下载的 .zip中提供的文件匹配。|
+   |刷新令牌|可以通过两种方式获取刷新令牌：从 **SIEM** 设置页生成刷新令牌，或者使用 restutil 工具。 <p> 有关从首选项设置生成刷新令牌详细信息 **，** 请参阅在 Defender for Endpoint 中启用 [SIEM 集成](enable-siem-integration.md)。 <p> **使用 restutil 工具获取刷新令牌**： <ol><li>打开命令提示符。 导航到 C： \\ *文件夹 \_ 位置*\current\bin，其中 *文件夹 \_* 位置表示安装该工具的位置。</li><li>类型： `arcsight restutil token -config` 从 bin 目录。 例如 **：arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**。 将打开一个 Web 浏览器窗口。</li><li>键入凭据，然后单击密码字段，让页面重定向。 在登录提示中，输入凭据。</li><li>刷新令牌显示在命令提示符中。</li><li>将其复制并粘贴到 **"刷新令牌"** 字段中。|
+   |
+
 7. 浏览器窗口由连接器打开。 使用应用程序凭据登录。 登录后，将要求您授予 OAuth2 客户端的权限。 您必须向 OAuth 2 客户端授予权限，以便连接器配置可以进行身份验证。
 
    如果 <code>redirect_uri</code> 为 https URL，将重定向到本地主机上的 URL。 你将看到一个页面，请求你信任在本地主机上运行的连接器提供的证书。 如果证书是 https，则需要redirect_uri证书。
-   
+
    但是，如果为证书指定 http URL redirect_uri，则无需在信任证书时提供同意。
 
 8. 返回到 Micro Focus ArcSight 连接器设置窗口，继续进行连接器设置。
 
 9. 选择 **ArcSight 管理器 (加密)** 作为目标，然后单击下一 **步**。
 
-10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 点击 **“下一步”**。
+10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 点击“**下一步**”。
 
-11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 点击 **“下一步”**。
+11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 点击“**下一步**”。
 
 12. 将显示 ESM 管理器导入证书窗口。 选择 **"将证书从目标导入连接器"，然后单击**"下一 **步"。** 将显示 **"添加连接器摘要** "窗口，并导入证书。
 
@@ -145,9 +130,9 @@ ms.locfileid: "51166181"
 
 14. 选择 **"安装为服务"，** 然后单击"下一 **步"。**
 
-15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 点击 **“下一步”**。
+15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 点击“**下一步**”。
 
-16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 点击 **“下一步”**。
+16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 点击“**下一步**”。
 
 17. 通过选择"退出"和"下一步 **"完成****安装**。
 
@@ -183,7 +168,6 @@ ms.locfileid: "51166181"
 
 Defender for Endpoint 检测将显示为离散事件，"Microsoft"作为供应商，"Windows Defender ATP"作为设备名称。
 
-
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>微焦点 ArcSight 连接疑难解答
 
 **问题：** 未能刷新令牌。 你可以找到位于 C： \\ *folder_location*\current\logs 中的日志folder_location表示安装该工具的位置。 打开 _agent.log_ 并查找 `ERROR/FATAL/WARN` 。
@@ -206,6 +190,7 @@ Defender for Endpoint 检测将显示为离散事件，"Microsoft"作为供应�
 > 通过再次停止进程来验证连接器是否正在运行。 然后再次启动连接器，不应显示浏览器窗口。
 
 ## <a name="related-topics"></a>相关主题
+
 - [在 Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)
 - [将检测拉取到 SIEM 工具](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [使用 REST API 拉取 Defender for Endpoint 检测](pull-alerts-using-rest-api.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c318f063814d9b31e6d07c3bc6c7feea503efe2c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 73a602f9a8fbf9387708b1d0343315b7bc82617c
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544838"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595866"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -36,7 +36,7 @@ ms.locfileid: "53544838"
 - WindowsServer 2019 及更高版本
 - WindowsServer 2019 核心版本
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)。
 
 Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过安全中心控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。
 
@@ -112,7 +112,6 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 如果你的服务器需要使用代理与 Defender for Endpoint 通信，请使用以下方法之一将 MMA 配置为使用代理服务器：
 
 - [配置 MMA 以使用代理服务器](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
-
 - [配置Windows以将代理服务器用于所有连接](configure-proxy-internet.md)
 
 如果代理或防火墙已在使用中，请确保服务器可以直接访问所有 Microsoft Defender for Endpoint 服务 URL，且无需 SSL 拦截。 有关详细信息，请参阅启用对 [Defender for Endpoint 服务 URL 的访问](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。 使用 SSL 拦截将阻止系统与 Defender for Endpoint 服务通信。
@@ -123,11 +122,11 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 在"Microsoft 365 Defender"导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
-2. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统。
+1. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统。
 
-3. 单击 **Azure 安全中心中的载入服务器**。
+2. 单击 **Azure 安全中心中的载入服务器**。
 
-4. 按照使用 Azure Defender 的 [Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp) 中的载入说明操作，如果你使用的是 Azure ARC，请按照启用适用于终结点集成的 Microsoft Defender [中的载入说明操作](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)。
+3. 按照使用 Azure Defender 的 [Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp) 中的载入说明操作，如果你使用的是 Azure ARC，请按照启用适用于终结点集成的 Microsoft Defender [中的载入说明操作](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)。
 
 完成载入步骤后，你需要配置和更新System Center Endpoint Protection[客户端](#configure-and-update-system-center-endpoint-protection-clients)。
 
@@ -182,7 +181,9 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 3. 运行以下命令检查是否安装了 Microsoft Defender AV：
 
-   ```sc.exe query Windefend```
+   ```dos
+   sc.exe query Windefend
+   ```
 
     如果结果是"指定服务作为已安装服务不存在"，则需要安装 Microsoft Defender AV。 有关详细信息，请参阅 Microsoft Defender 防病毒[中的Windows 10。](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
@@ -204,10 +205,12 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的Window
 - 服务器调查 - Azure Defender 客户可以访问Microsoft 365 Defender执行详细调查，以发现潜在泄露的范围。
 
 > [!IMPORTANT]
-> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲用户和英国用户创建 Defender) 。<br>
+>
+> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲用户和英国用户创建 Defender) 。
 Defender for Endpoint 收集的数据存储在预配期间标识的租户地理位置中。
 > - 如果在使用 Azure Defender 之前使用 Defender for Endpoint，则数据将存储在创建租户时指定的位置，即使以后与 Azure Defender 集成。
-> - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。 <br>
+> - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。
+>
 已针对客户禁用利用此集成的服务器终结点Office 365 GCC监视。
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>配置和更新System Center Endpoint Protection客户端
@@ -228,7 +231,6 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 - [使用 Configuration Manager 的载出设备](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
 - [使用移动设备管理工具离开并监视设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
 
 对于其他Windows版本，有两个选项Windows从服务中离开服务器：
 
@@ -278,7 +280,6 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
     $AgentCfg.RemoveCloudWorkspace(&quot;WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
-
     ```
 
 ## <a name="onboarding-servers-with-no-management-solution"></a>载入服务器，无管理解决方案
@@ -349,7 +350,7 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 在启动过程中重新启动服务器后，它将安装客户体验更新和诊断遥测 KB，然后安装 MMA 代理，同时设置工作区 ID 和密钥，并且将载入服务器。
 
 如果不想重新启动所有 **服务器** ，您也可以使用即时任务运行 deployMMA.cmd。
-这分两个阶段完成。 首先 **在** GPO 中创建文件和文件夹 – 为系统提供时间来确保已应用 GPO，并且所有服务器都有安装文件。 然后，添加即时任务。 这将获得相同的结果，而无需重新启动。
+这分两个阶段完成。 首先在 GPO **中创建文件和** 文件夹。 为系统提供时间来确保已应用 GPO，并且所有服务器都有安装文件。 然后，添加即时任务。 这将获得相同的结果，而无需重新启动。
 
 由于脚本具有退出方法，并且如果安装了 MMA，将不会重新运行，因此，您还可以使用每日计划任务来实现相同的结果。 与 Configuration Manager 合规性策略类似，它每天都会检查以确保 MMA 存在。
 

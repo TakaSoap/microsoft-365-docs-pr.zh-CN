@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a0718f8e3aba27e6fbfc92a4308278f4c629275f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 14c06cbfe8913f24082bccc6e0f607f871043425
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843790"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591159"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843790"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
 
@@ -55,7 +55,7 @@ Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
 
     ![编辑凭据的图像2](images/api-flow-1.png)
 
-3. 为用户选择一个Flow，搜索"Microsoft Defender ATP触发器"作为触发器，然后选择新的警报触发器。
+3. 为用户选择名称Flow搜索"Microsoft Defender ATP 触发器"作为触发器，然后选择新的警报触发器。
 
     ![编辑凭据的图像3](images/api-flow-2.png)
 
@@ -69,7 +69,7 @@ Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>使用连接器获取 Alert 实体
 
-1. 选择 **"Microsoft Defender ATP"** 以执行新步骤。
+1. 选择 **"Microsoft Defender ATP"** 作为新步骤。
 
 2. 选择 **警报 - 获取单个警报 API。**
 
@@ -83,7 +83,7 @@ Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
 
 2. 检查警报严重性 **是否等于"高** "。
 
-   如果是，请添加Microsoft Defender ATP **- 使用** 计算机 ID 和注释隔离计算机操作。
+   如果是，请添加 **Microsoft Defender ATP - 使用** 计算机 ID 和注释隔离计算机操作。
 
     ![编辑凭据的图像6](images/api-flow-5.png)
 

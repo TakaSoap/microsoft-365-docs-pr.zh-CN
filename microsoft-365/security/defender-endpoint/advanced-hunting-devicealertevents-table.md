@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: f4f6ecdc57d8602f49fb389c741c5e01dc1b41b5
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ae462235bcc2f2673f8a5ec1ea353f9bd9707918
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939644"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53591255"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -33,30 +33,31 @@ ms.locfileid: "51939644"
 
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)。
 
 高级 `DeviceAlertEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关搜索中警报Microsoft Defender 安全中心。 使用此参考来构建从该表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请参阅 [高级搜寻架构参考](advanced-hunting-schema-reference.md)。
 
-| 列名称 | 数据类型 | 说明 |
-|-------------|-----------|-------------|
-| `AlertId` | string | 警报的唯一标识符 |
-| `Timestamp` | datetime | 记录事件的日期和时间 |
-| `DeviceId` | string | 服务中设备的唯一标识符 |
-| `DeviceName` | string | 设备的完全限定 (FQDN) FQDN |
-| `Severity` | string | 指示警报所标识的威胁指示器或违反活动的潜在影响（高、中或低） |
-| `Category` | string | 由警报标识的威胁指示器或违反活动的类型 |
-| `Title` | string | 警报的标题 |
-| `FileName` | string | 录制操作所应用到的文件的名称 |
-| `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
-| `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
-| `RemoteIP` | string | 连接到的 IP 地址 |
-| `AttackTechniques` | string | MITRE ATT&触发警报的活动相关的 CK 技术 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 和 `DeviceName` `Timestamp` 列一起使用 |
-| `Table` | string | 包含事件详细信息的表 |
+|列名称|数据类型|说明|
+|---|---|---|
+|`AlertId`|string|警报的唯一标识符|
+|`Timestamp`|datetime|记录事件的日期和时间|
+|`DeviceId`|string|服务中设备的唯一标识符|
+|`DeviceName`|字符串|设备的完全限定 (FQDN) FQDN|
+|`Severity`|string|指示警报所标识的威胁指示器或违反活动的潜在影响（高、中或低）|
+|`Category`|string|由警报标识的威胁指示器或违反活动的类型|
+|`Title`|string|警报的标题|
+|`FileName`|string|录制操作所应用到的文件的名称|
+|`SHA1`|string|录制操作所应用到的文件的 SHA-1|
+|`RemoteUrl`|string|连接到的 URL 或完全限定域名 (FQDN)|
+|`RemoteIP`|string|连接到的 IP 地址|
+|`AttackTechniques`|字符串|MITRE ATT&触发警报的活动相关的 CK 技术|
+|`ReportId`|long|基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 和 `DeviceName` `Timestamp` 列一起使用|
+|`Table`|string|包含事件详细信息的表|
 
 ## <a name="related-topics"></a>相关主题
+
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [了解架构](advanced-hunting-schema-reference.md)

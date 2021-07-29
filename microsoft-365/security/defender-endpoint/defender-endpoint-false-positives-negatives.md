@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: ba376288b759f9a9c331450f3f48c918b0171e51
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339258"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595686"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for Endpoint 中的误报/漏报
 
@@ -180,12 +180,12 @@ ms.locfileid: "53339258"
 
 1. 在设备上打开提升的命令行提示符：
    1. 转到“**开始**”并键入“_cmd_”。
-   2. 右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。
+   2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
 2. 输入以下命令，然后按 **Enter：**
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
