@@ -10,24 +10,21 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b65ad2a6ac1a9b9abe06cc108a980be21152bc86
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 99bfaf40ab2bce2878af76650f92dda9f528be59
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844954"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622108"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和注册状态页的首次运行体验
 
 Microsoft 托管桌面使用[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)和 Microsoft Intune 的注册状态[页面 (ESP) ](/windows/deployment/windows-autopilot/enrollment-status)为用户提供可能的最佳首次运行体验。
 
-"注册状态"页当前处于公共预览状态。
-
 ## <a name="initial-deployment"></a>初始部署
 
 若要提供 ESP 体验，你必须在 Microsoft 托管桌面 服务中注册设备。 有关注册的信息，请参阅自己 [注册新设备](../get-started/register-devices-self.md) 或合作伙伴 [注册设备的步骤](../get-started/register-devices-partner.md)。
-
-向服务注册设备后，可以通过管理门户Microsoft 托管桌面提交支持票证，为设备[启用](https://portal.azure.com/)ESP。 提交票证时，我们将首先将 ESP 配置部署到测试组。 它每 24 小时部署到其他后续部署 (、快速和广泛) 部署组。 若要暂停部署，请提出另一个请求操作保留的票证。
+默认情况下，"注册状态"页和预预配部署的 Autopilot 在 Microsoft 托管桌面。
 
 ## <a name="autopilot-profile-settings"></a>Autopilot 配置文件设置
 
@@ -42,13 +39,13 @@ Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用�
 |部署模式|用户驱动|
 |作为 加入 Azure AD|已加入 Azure AD|
 |语言 (区域) |用户选择|
-|自动配置键盘|不支持|
+|自动配置键盘|否|
 |Microsoft 软件许可条款|隐藏|
 |隐私设置|隐藏|
 |隐藏更改帐户选项|Show|
 |用户帐户类型|标准|
-|允许白手套 OOBE|支持|
-|应用设备名称模板|支持|
+|允许白手套 OOBE|是|
+|应用设备名称模板|是|
 |输入名称|MMD-%RAND：11%|
 |
 
@@ -62,16 +59,15 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 
 |设置|值|
 |---|---|
-|显示应用和配置文件配置进度|支持|
+|显示应用和配置文件配置进度|是|
 |当安装时间超过指定分钟数时显示错误|60|
-|在出现时间限制错误时显示自定义消息|支持|
-|错误消息|是的，设置设备的时间比预期的要长一些。 单击下方开始，我们将在后台完成设置|
-|允许用户收集有关安装错误的日志|支持|
-|仅在 OOBE 设备上通过开箱使用体验预配 (页面) |支持|
-|在安装所有应用和配置文件之前阻止设备使用|支持|
-|允许用户在出现安装错误时重置设备|支持|
-|发生安装错误时允许用户使用设备|支持|
-|阻止设备使用，直到安装这些必需的应用（如果它们已分配给用户/设备）|现代工作场所 - 时间更正|
+|在出现时间限制错误时显示自定义消息|否|
+|允许用户收集有关安装错误的日志|是|
+|仅在 OOBE 设备上通过开箱使用体验预配 (页面) |是|
+|在安装所有应用和配置文件之前阻止设备使用|是|
+|允许用户在出现安装错误时重置设备|是|
+|发生安装错误时允许用户使用设备|是|
+|阻止设备使用，直到安装这些必需的应用（如果它们已分配给用户/设备）|现代工作场所 - 时间更正|现代工作区 - 客户端库|
 |
 
 注册状态页面体验分三个阶段进行。 有关详细信息，请参阅注册 [状态页面跟踪信息](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
@@ -88,14 +84,9 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 
 ![Autopilot 设置的起始页显示"设备准备"和"设备设置"阶段。](../../media/mmd-autopilot-screenshot.png)
 
-## <a name="autopilot-for-pre-provisioned-deployment"></a>用于预预配部署的 Autopilot
-
-> [!NOTE]
-> Microsoft 托管桌面中预预配部署的 Autopilot 当前处于公共预览阶段。
 
 ## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>用于预预配部署的 Autopilot 的其他先决条件
 
-- YOU must have Enrollment Status Page (ESP) enabled. 有关详细信息，请参阅初始 [部署](#initial-deployment)。
 - 设备必须具有有线网络连接。
 - 如果你有在 2020 年 8 月之前使用 Microsoft 托管桌面 门户注册的设备，请取消注册并再次注册它们。
 - 设备必须具有包含 2020 年 11 月累积更新[19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3)或[20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e)的出厂映像（如果已安装）或必须用最新的 Microsoft 托管桌面 映像进行重新映像。
@@ -130,7 +121,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 ### <a name="enrollment-status-page-settings-change"></a>注册状态页面设置更改
 
 - "安装所花的时间超过指定分钟数时显示错误"设置的分钟数较长。
-- 显示的错误消息
+- 显示的错误消息。
 - 在"阻止设备使用，直到安装这些必需的应用（如果它们已分配给用户/设备）"设置中添加或删除应用程序。
 
 ## <a name="required-applications"></a>必需的应用程序
@@ -140,4 +131,4 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 - 将所需应用程序限制为仅在用户登录到设备时立即需要的核心应用程序。
 - 将所有应用程序的总大小统一保持在 1 GB 以下，以避免在应用程序安装阶段超时。
 - 理想情况下，应用不应有任何依赖关系。 如果你有 *必须具有依赖项* 的应用，请确保在 ESP 评估中配置、测试和验证它们。
-- 例如，不需要"用户"上下文 (例如，Teams) 公共预览版中可以包括这些应用程序。
+- Microsoft Teams包含在 ESP 中。

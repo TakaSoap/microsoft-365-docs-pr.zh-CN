@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b55572509e9837f2858f96b01a13fbf259b2b770
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0fbcdaf4a9882f80578d871def3dd33674a7231f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393783"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622204"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 
@@ -33,7 +33,7 @@ ms.locfileid: "53393783"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 本文提供有关如何定义适用于按需扫描以及实时保护和监视的排除项的信息。
 
@@ -51,22 +51,22 @@ ms.locfileid: "53393783"
 
 下表显示了 Linux 上的 Defender for Endpoint 支持的排除类型。
 
-排除 | 定义 | 示例
+排除|定义|示例
 ---|---|---
-文件扩展名 | 扩展名位于设备上任意位置的所有文件 | `.test`
-文件 | 由完整路径标识的特定文件 | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
-流程 | 特定进程 (的完整路径或文件名指定，) 它打开的所有文件 | `/bin/cat`<br/>`cat`<br/>`c?t`
+文件扩展名|扩展名位于设备上任意位置的所有文件|`.test`
+文件|由完整路径标识的特定文件|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Folder|指定文件夹下的所有 (以递归) |`/var/log/`<br/>`/var/*/`
+流程|特定进程 (的完整路径或文件名指定，) 它打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > 上述路径必须是硬链接，而不是符号链接，才能成功排除。 可以通过运行 来检查路径是否为符号链接 `file <path-name>` 。
 
 文件、文件夹和进程排除项支持以下通配符：
 
-通配符 | 说明 | 示例 | 匹配 | 不匹配
+通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\* |    匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个)  | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | 匹配任何单个字符 | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|匹配任何单个字符|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>如何配置排除项列表
 
@@ -92,6 +92,7 @@ mdatp exclusion
     ```bash
     mdatp exclusion extension add --name .txt
     ```
+
     ```Output
     Extension exclusion configured successfully
     ```
@@ -101,6 +102,7 @@ mdatp exclusion
     ```bash
     mdatp exclusion file add --path /var/log/dummy.log
     ```
+
     ```Output
     File exclusion configured successfully
     ```
@@ -110,10 +112,10 @@ mdatp exclusion
     ```bash
     mdatp exclusion folder add --path /var/log/
     ```
+
     ```Output
     Folder exclusion configured successfully
     ```
-
 
 - 添加第二个文件夹的排除项：
 
@@ -121,10 +123,10 @@ mdatp exclusion
     mdatp exclusion folder add --path /var/log/
     mdatp exclusion folder add --path /other/folder
     ```
+
     ```Output
     Folder exclusion configured successfully
     ```
-
 
 - 为包含通配符的文件夹添加排除项：
 
@@ -134,10 +136,11 @@ mdatp exclusion
 
     > [!NOTE]
     > 这将仅排除 */var/* 下一级的路径，但不包括嵌套较深的文件夹;例如 *，/var/this-subfolder/but-not-this-subfolder*。
-    
+
     ```bash
     mdatp exclusion folder add --path "/var/"
     ```
+
     > [!NOTE]
     > 这将排除其父级为 */var/* 的所有路径;例如 *，/var/this-subfolder/and-this-subfolder-as-well*。
 
@@ -150,10 +153,10 @@ mdatp exclusion
     ```bash
     mdatp exclusion process add --name cat
     ```
-    ```Output    
+
+    ```Output
     Process exclusion configured successfully
     ```
-
 
 - 为第二个进程添加排除项：
 
@@ -161,7 +164,8 @@ mdatp exclusion
     mdatp exclusion process add --name cat
     mdatp exclusion process add --name dog
     ```
-    ```Output    
+
+    ```Output
     Process exclusion configured successfully
     ```
 

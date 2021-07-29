@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1ba87687f5650310b3b94e5827181510b3834c3
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 87bcfaababa0007b5d56c8eed8b391d7519fc001
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543649"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622060"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53543649"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 > [!NOTE]  
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。

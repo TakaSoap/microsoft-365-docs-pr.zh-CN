@@ -1,6 +1,6 @@
 ---
 title: 在 iOS 功能上部署 Microsoft Defender for Endpoint
-description: 介绍如何在 iOS 功能上部署 Microsoft Defender for Endpoint
+description: 介绍如何在注销的 iOS 设备上部署适用于终结点的 Microsoft Defender。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 配置， 功能， ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b6851c54d961bbb41229f8ae08bad372228629c0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ca97031cfffa40e099c5c2b8af68b157f3289aca
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542426"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622600"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>在注销的 iOS 设备上部署 Microsoft Defender for Endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542426"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 > [!NOTE]
 > iOS 上的 Defender for Endpoint 使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略
 使用 Microsoft Defender for Endpoint 设置应用保护策略的步骤如下：
 
 1. 设置从你的 Microsoft Endpoint Manager 到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 中，转到"设置) "下的"跨平台) "或"终结点安全 Microsoft Defender  >    >  **for**   >  **Endpoint** ("下的"适用于终结点的 Microsoft Defender (租户管理连接器和令牌"，然后打开适用于 iOS 的应用保护策略 设置 下的切换。
-1. 选择“**保存**”。 应看到"**连接状态**"现在设置为"**已启用"。**
+1. 选择 **保存**。 应看到"**连接状态**"现在设置为"**已启用"。**
 1. 创建应用保护策略：Microsoft Defender for Endpoint 连接器设置完成后，导航到"策略 (下的应用应用保护策略) 以创建新策略或更新现有  >  策略。
 1. 选择组织为策略 **所需的** 平台、应用、数据保护、访问要求设置。
 1. 在 **"条件启动**  >  **设备条件**"下，你将找到设置 **"允许的最大设备威胁级别"。** 需要将此功能配置为"低、中、高"或"安全"。 可用操作为"阻止 **访问"或**"**擦除数据"。** 你可能会看到信息对话框，以确保在此设置生效之前已经设置了连接器。 如果连接器已设置，可以忽略此对话框。

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 1d1e001bd90592d51bf144908caf8afebdbaa80d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454813"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622528"
 ---
 # <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除 
 
@@ -32,7 +32,7 @@ ms.locfileid: "53454813"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)。
 
 自动文件夹排除项允许你指定自动调查将跳过的文件夹。 
 
@@ -65,7 +65,7 @@ ms.locfileid: "53454813"
 
 3. 输入文件夹详细信息：
 
-    - 文件夹
+    - Folder
     - 扩展
     - 文件名
     - 说明

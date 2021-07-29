@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b1777adf7b97083fae2daf4213a4bda742ba097d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8f9f46e56543e0ea4cbd4f6e8a9df325d7bb70af
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198241"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622228"
 ---
 # <a name="import-indicators-api"></a>导入指示器 API
 
@@ -28,59 +28,63 @@ ms.locfileid: "51198241"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API 说明
+
 提交或更新一 [批指示器](ti-indicator.md) 实体。
-<br>不支持 IP 的 CIDR 表示法。
+
+不支持 IP 的 CIDR 表示法。
 
 ## <a name="limitations"></a>限制
+
 1. 此 API 的速率限制是每分钟 30 次调用。
-2. 每个租户的活动指示器数限制为 15，000 个。 [](ti-indicator.md) 
+2. 每个租户的活动指示器数限制为 15，000 个。 [](ti-indicator.md)
 3. 一个 API 调用的最大批处理大小为 500。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [入门](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Ti.ReadWrite |  "读取和写入指示器"
-应用程序 |   Ti.ReadWrite.All |  "读取和写入所有指示器"
-委派（工作或学校帐户） |    Ti.ReadWrite |  "读取和写入指示器"
-
+应用程序|Ti.ReadWrite|"读取和写入指示器"
+应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
+委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-Content-Type | string | application/json. **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
+Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型    | 说明
+参数|类型|说明
 :---|:---|:---
-指示器 | 列表<[指示器](ti-indicator.md)> | 指标 [列表](ti-indicator.md)。 **Required**
-
+指示器|列表<[指示器](ti-indicator.md)>|指标 [列表](ti-indicator.md)。 **必需**
 
 ## <a name="response"></a>响应
+
 - 如果成功，此方法返回 200 - OK 响应代码，每个指示器包含导入结果列表，请参阅下面的示例。
 - 如果未成功：此方法返回 400 - 错误请求。 错误的请求通常指示正文不正确。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
@@ -120,7 +124,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 }
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
@@ -144,4 +148,5 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 ```
 
 ## <a name="related-topic"></a>相关主题
+
 - [管理指示器](manage-indicators.md)

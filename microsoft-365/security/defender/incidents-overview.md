@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 303391a5ed9368e94fe744cf405e2502af0e6ec6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028519"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622732"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>事件Microsoft 365 Defender
 
@@ -54,7 +54,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-将相关警报分组到事件可为你提供攻击的全面视图。 例如，可以看到：
+将相关警报分组到事件可为你提供攻击的全面视图。 例如，你可以看到：
 
 - 攻击的开始位置。
 - 使用了哪些策略。
@@ -194,6 +194,8 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
   - [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。
 
   - [执行事件](investigate-incidents.md)调查。
+
+- 了解如何将Microsoft 365 Defender[集成到安全运营中心 (SOC) 。 ](integrate-microsoft-365-defender-secops.md)
 
 - 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。
 

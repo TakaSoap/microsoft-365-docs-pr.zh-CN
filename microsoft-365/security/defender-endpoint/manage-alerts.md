@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f03c2209b369e6fb9e001452c53073daeb5fe1c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1885d508b26e517fde4dd2ba45a562f9393ffd75
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186997"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622552"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -32,7 +32,7 @@ ms.locfileid: "51186997"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
 Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，并且可以访问警报 **队列中的所有警报**。
 
@@ -94,7 +94,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 5. 输入规则名称和注释。
 
-6. 单击“保存”。
+6. 单击“**保存**”。
 
 #### <a name="view-the-list-of-suppression-rules"></a>查看抑制规则列表
 
@@ -127,7 +127,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 ## <a name="related-topics"></a>相关主题
 - [管理点规则](manage-suppression-rules.md)
-- [查看和组织 Microsoft Defender 终结点警报队列](alerts-queue.md)
+- [查看并组织 Microsoft Defender for Endpoint 警报队列](alerts-queue.md)
 - [调查 Microsoft Defender for Endpoint 警报](investigate-alerts.md)
 - [调查与 Microsoft Defender for Endpoint 警报关联的文件](investigate-files.md)
 - [调查 Microsoft Defender 终结点设备列表中的设备](investigate-machines.md)

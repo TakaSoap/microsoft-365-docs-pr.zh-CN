@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6447aa4182846020312e9be870c5548d9415ac71
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 154d9abcbf4a2d37cd852b91412a076c22cb6c47
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842826"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622588"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -36,7 +36,7 @@ ms.locfileid: "52842826"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。
 
@@ -52,7 +52,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 在 MAU 中，macOS 上的 Microsoft Defender for Endpoint 的应用程序标识符是 *WDAV00*。 若要在 macOS 上下载并安装 Microsoft Defender for Endpoint 的最新更新，请从"终端"窗口执行以下命令：
 
-```
+```dos
 ./msupdate --install --apps wdav00
 ```
 
@@ -62,13 +62,13 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 ### <a name="set-the-channel-name"></a>设置频道名称
 
-通道确定通过 MAU 提供的更新的类型和频率。 中的设备可以在 和 中的设备 `Beta` 之前试用 `Preview` 新功能 `Current` 。 
+通道确定通过 MAU 提供的更新的类型和频率。 中的设备可以在 和 中的设备 `Beta` 之前试用 `Preview` 新功能 `Current` 。
 
 `Current`渠道包含最稳定的产品版本。
 
->[!IMPORTANT]
-> 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称： 
-> 
+> [!IMPORTANT]
+> 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
+>
 > - `Beta` 被命名为 `InsiderFast` (Insider Fast) 
 > - `Preview` 被命名为 `External` (Insider Slow) 
 > - `Current` 已命名 `Production`
@@ -77,15 +77,16 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 >为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
 
 |节|值|
-|:--|:--|
-| **域** | `com.microsoft.autoupdate2` |
-| **键** | ChannelName |
-| **数据类型** | String |
-| **可能的值** | Beta 版本 <br/> 预览 <br/> Current |
+|---|---|
+|**域**|`com.microsoft.autoupdate2`|
+|**键**|ChannelName|
+|**数据类型**|String|
+|**可能的值**|Beta 版本 <p> 预览 <p> Current|
 |||
 
 >[!WARNING]
 >此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS 上的 Microsoft Defender for Endpoint 更改通道，请用所需通道替换后执行 `[channel-name]` 以下命令：
+>
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
@@ -95,77 +96,72 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 更改 MAU 搜索更新频繁。
 
 |节|值|
-|:--|:--|
-| **域** | `com.microsoft.autoupdate2` |
-| **键** | UpdateCheckFrequency |
-| **数据类型** | 整数 |
-| **默认值** | 720 (分钟)  |
-| **Comment** | 此值以分钟数设置。 |
-
+|---|---|
+|**域**|`com.microsoft.autoupdate2`|
+|**键**|UpdateCheckFrequency|
+|**数据类型**|整数|
+|**默认值**|720 (分钟) |
+|**Comment**|此值以分钟数设置。|
 
 ### <a name="change-how-mau-interacts-with-updates"></a>更改 MAU 与更新的交互方式
 
 更改 MAU 搜索更新时如何。
 
 |节|值|
-|:--|:--|
-| **域** | `com.microsoft.autoupdate2` |
-| **键** | HowToCheck |
-| **数据类型** | String |
-| **可能的值** | 手动 <br/> AutomaticCheck <br/> AutomaticDownload |
-| **Comment** |  请注意，如果可能，AutomaticDownload 将执行下载并静默安装。 |
-
+|---|---|
+|**域**|`com.microsoft.autoupdate2`|
+|**键**|HowToCheck|
+|**数据类型**|String|
+|**可能的值**|手动 <p> AutomaticCheck <p> AutomaticDownload|
+|**Comment**|请注意，如果可能，AutomaticDownload 将执行下载并静默安装。|
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>更改"检查更新"按钮是否已启用
 
 更改本地用户是否可以单击 Microsoft AutoUpdate 用户界面中的"检查更新"选项。
 
 |节|值|
-|:--|:--|
-| **域** | `com.microsoft.autoupdate2` |
-| **键** | EnableCheckForUpdatesButton |
-| **数据类型** | Boolean |
-| **可能的值** | 为 (默认值)  <br/> 错误 |
-
+|---|---|
+|**域**|`com.microsoft.autoupdate2`|
+|**键**|EnableCheckForUpdatesButton|
+|**数据类型**|布尔值|
+|**可能的值**|为 (默认值)  <p> False|
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
 
 设置为 true 将"加入 Office预览体验计划..."。复选框不可用/灰度为用户。
 
 |节|值|
-|:--|:--|
-| **域** | `com.microsoft.autoupdate2` |
-| **键** | DisableInsiderCheckbox |
-| **数据类型** | Boolean |
-| **可能的值** | False (默认值)  <br/> True |
-
+|---|---|
+|**域**|`com.microsoft.autoupdate2`|
+|**键**|DisableInsiderCheckbox|
+|**数据类型**|布尔值|
+|**可能的值**|False (默认值)  <p> True|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>限制从 MAU 发送的遥测
 
 设置为 false 可发送最小检测信号数据、无应用程序使用情况和无环境详细信息。
 
 |节|值|
-|:--|:--|
-| **域** | `com.microsoft.autoupdate2` |
-| **键** | SendAllTelemetryEnabled |
-| **数据类型** | Boolean |
-| **可能的值** | 为 (默认值)  <br/> 错误 |
-
+|---|---|
+|**域**|`com.microsoft.autoupdate2`|
+|**键**|SendAllTelemetryEnabled|
+|**数据类型**|布尔值|
+|**可能的值**|为 (默认值)  <p> False|
 
 ## <a name="example-configuration-profile"></a>配置文件示例
 
 以下配置文件用于：
+
 - 将设备放在生产渠道中
 - 自动下载和安装更新
 - 在用户界面中启用"检查更新"按钮
 - 允许设备上的用户注册预览体验成员频道
 
+> [!WARNING]
+> 以下配置是一个示例配置，如果不适当审阅设置和定制配置，则不应在生产中使用。
 
->[!WARNING]
->以下配置是一个示例配置，如果不适当审阅设置和定制配置，则不应在生产中使用。
-
->[!TIP]
->为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
+> [!TIP]
+> 为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
 
 ### <a name="jamf"></a>JAMF
 
@@ -251,6 +247,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 ```
 
 若要配置 MAU，可以从企业使用的管理工具部署此配置文件：
+
 - 从 JAMF 中，上传此配置文件，将首选项域设置为 *com.microsoft.autoupdate2*。
 - 从 Intune 中，上载此配置文件，将自定义配置文件名称设置为 *com.microsoft.autoupdate2*。
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b82b6993ce9ed5a3f0f3e6e13e8a260a185c9730
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 4c1daa22b6b3a99fbcad2ae6c370c668232d3768
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194969"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622216"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查问题并查找 iOS 上 Microsoft Defender for Endpoint 上的常见问题解答
 
@@ -32,7 +32,7 @@ ms.locfileid: "53194969"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 本主题提供疑难解答信息，以帮助你解决在 iOS 上使用 Microsoft Defender for Endpoint 时可能出现的问题。
 

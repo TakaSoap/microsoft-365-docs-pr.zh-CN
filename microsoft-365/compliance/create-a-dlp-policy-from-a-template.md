@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: 0088381698b47b2451f52fde32716a2436e8c073
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ae0284cfdbdc28db350dd655f9ceeda38830285c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113964"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622444"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
@@ -58,7 +58,7 @@ OneDrive for Business帐户使整个组织的人可以轻松协作和共享文�
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
     
 2. 使用工作或学校帐户进行登录。 现在，你已位于安全 &amp; 与合规中心。
     

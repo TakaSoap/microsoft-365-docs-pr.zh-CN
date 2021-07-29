@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a7f343db64174fe3c48eaf8b584b03b53921edcb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 243d29f460f0454d88c65baa0a9ed6bef9821733
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843610"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622660"
 ---
 # <a name="list-exposure-score-by-device-group"></a>按设备组列出曝光分数
 
@@ -31,7 +31,7 @@ ms.locfileid: "52843610"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,22 +45,22 @@ ms.locfileid: "52843610"
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
-:---|:---|:---
-应用程序 | Score.Read.All | "读取威胁和漏洞管理分数"
-委派（工作或学校帐户） | Score.Read | "读取威胁和漏洞管理分数"
+权限类型|权限|权限显示名称
+---|---|---
+应用程序|Score.Read.All|"读取威胁和漏洞管理分数"
+委派（工作或学校帐户）|Score.Read|"读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求
 
-```
+```http
 GET /api/exposureScore/ByMachineGroups
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称        | 类型 | 说明
-|:--------------|:-------|:--------------|
-| Authorization | String | Bearer {token}。**必需**。
+名称|类型|说明
+---|---|---
+|Authorization|字符串|Bearer {token}。**必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -72,20 +72,19 @@ Empty
 
 ## <a name="example"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-request"></a>示例请求
 
 下面是一个请求示例。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 ```
 
-### <a name="response"></a>响应
+### <a name="example-response"></a>示例响应
 
 下面是一个响应示例。
 
 ```json
-
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore",
     "value": [

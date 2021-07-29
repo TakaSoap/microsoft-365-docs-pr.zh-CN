@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87d9d768a81d8e6ddd72753fe7372f18c13254e1
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d70825f8bdcd47f17d2f61834f4353c537a033ed
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542942"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622564"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和组织适用于终结点设备的 Microsoft Defender 列表
 
@@ -32,8 +32,7 @@ ms.locfileid: "53542942"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
-
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-machinesview-abovefoldlink)。
 
 **"设备"** 列表显示网络中生成警报的设备列表。 默认情况下，队列显示最近 30 天内看到的设备。  
 
@@ -67,7 +66,7 @@ ms.locfileid: "53542942"
 
 如果曝光级别显示"无可用数据"，可能有以下原因：
 
-- 设备停止报告超过 30 天 - 在这种情况下，它被视为非活动状态，并且未计算曝光
+- 设备停止报告超过 30 天。 在这种情况下，它被视为非活动状态，并且未计算曝光
 - 设备操作系统不受支持 - 请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)
 - 具有过时代理 (不太可能) 
 
@@ -79,9 +78,9 @@ ms.locfileid: "53542942"
 
 按以下设备运行状况状态进行筛选：
 
-- **活动** – 主动向服务报告传感器数据的设备。
-- **非** 活动 – 已完全停止发送信号超过 7 天的设备。
-- **错误配置** – 与服务通信受损或无法发送传感器数据的设备。 可以将错误配置的设备进一步分类为：
+- **Active：** 主动向服务报告传感器数据的设备。
+- **非** 活动：已完全停止发送信号超过 7 天的设备。
+- **错误配置**：与服务通信受损或无法发送传感器数据的设备。 可以将错误配置的设备进一步分类为：
   - 无传感器数据
   - 通信受损
 

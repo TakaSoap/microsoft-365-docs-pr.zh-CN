@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解Microsoft 365目录，包括其中包含的内容、如何获取它以及您的下一步。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d98684fd7f839cb0340cce4126e1c45b43b107b8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288295"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622011"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -78,17 +78,11 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 若要访问Microsoft 365目录，请转到 全局管理员、合规性管理员或合规性数据管理员并 [https://compliance.microsoft.com](https://compliance.microsoft.com) 登录。 选择 **屏幕** 左侧导航窗格中的"目录"以打开目录主页。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **为什么我看不到解决方案Microsoft 365目录？**
 
-首先，请确保你拥有相应的许可证和权限。 然后，以全局管理员 [https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员的登录名登录。
-
-**解决方案目录页面上列出的某些合规性功能在解决方案目录中Microsoft 365 合规中心。我该怎么办？**
-
-我们一直在致力于将新功能添加到 Microsoft 365 合规中心 和解决方案目录中。 如果在导航区域中找不到特定解决方案，则当解决方案在你的订阅中可用时可以访问它。
-
-如果要查找现有的合规性解决方案，但该解决方案尚未在 Microsoft 365 合规中心中提供，则始终可以通过访问 访问现有安全与合规中心 &amp; 中的解决方案 [https://protection.office.com](https://protection.office.com) 。 或者，你可以单击页面左侧导航栏中的"更多资源"选项卡Microsoft 365 合规中心并选择"Office 365安全与合规中心"卡。  
+首先，请确保你拥有相应的许可证和权限。 然后，以全局管理员 [https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员的登录名登录。 
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Viva 主题角色
-ms.author: efrene
-author: efrene
+title: 主题中Microsoft Viva的角色
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 在 Viva 主题中了解用户角色。
-ms.openlocfilehash: 9f1d3667ee9eeb05201613c15dc360b2b006cecb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288067"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622288"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Microsoft Viva 主题角色 
+# <a name="roles-in-microsoft-viva-topics"></a>主题中Microsoft Viva的角色
 
 当您在环境环境中使用 Viva Microsoft 365，您的用户可以具有以下角色：
 
@@ -54,9 +54,9 @@ ms.locfileid: "53288067"
 
 ## <a name="knowledge-managers"></a>知识经理
 
-知识经理是管理组织中主题的用户。  主题管理是通过主题中心的“管理主题”页面完成的，并且只有知识经理才能看到。
+知识经理是管理组织中主题的用户。  主题管理通过主题中心的" **管理** 主题"页完成，并且仅对知识管理人员可见。
 
-在“管理主题”页面中，知识经理可以执行下列任务：
+在" **管理主题"** 页上，知识管理人员可以执行以下任务：
 
 - 查看 AI 建议的主题。
 - 查看主题以确认它们有效。

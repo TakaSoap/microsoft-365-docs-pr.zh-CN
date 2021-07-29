@@ -2,8 +2,8 @@
 title: 确定你的应用合规性状况
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 确定你的应用合规性状况。
-ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: c991c1eb513184c2dd2a64d85f64fc6190f0320f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438020"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622456"
 ---
 # <a name="determine-your-app-compliance-posture"></a>确定你的应用合规性状况
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-Microsoft 应用治理允许你从 [Microsoft 365 合规中心](https://aka.ms/appgovernance)的应用治理概述页面快速评估第三方应用的合规状况及其对 Microsoft 365 租户中数据的访问。
+Microsoft 应用治理允许你从 Microsoft 365 合规中心的应用治理概述页面快速评估第三方应用的合规状况及其对 Microsoft 365 租户中数据的访问。
 
 ![Microsoft 365 合规中心内的应用治理概述页面](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

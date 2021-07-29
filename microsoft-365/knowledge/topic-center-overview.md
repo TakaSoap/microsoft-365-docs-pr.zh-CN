@@ -1,7 +1,7 @@
 ---
-title: Microsoft Viva 主题中的主题中心概述
-author: chuckedmonson
+title: 主题主题中的主题Microsoft Viva概述
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -11,19 +11,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: ''
 localization_priority: None
-description: 了解 Microsoft Viva 主题中的主题中心。
-ms.openlocfilehash: bd3bdbc368ca95b1c795043c5c083aaebfcf5742
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 在"主题"中了解Microsoft Viva中心。
+ms.openlocfilehash: 17dec65a1347d3e65ea7794d3b6129267776d6a2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287277"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624448"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主题中的主题中心概述
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题主题中的主题Microsoft Viva概述
 
-在 Microsoft Viva 主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
+在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
 
 主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。
 

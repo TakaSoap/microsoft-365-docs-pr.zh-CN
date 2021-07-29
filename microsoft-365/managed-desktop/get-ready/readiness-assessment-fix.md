@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 65ccc2cf551eeb52b9751a2457f8f1ba66e83fc7
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327007"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622696"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -91,7 +91,7 @@ Microsoft 托管桌面要求 IT 管理员使用 Intune 公司门户 为用户安
 
 Intune 管理员角色没有足够的权限进行此检查。 还需要分配以下任一 Azure AD 角色来运行此检查：
 
-- 安全读取者
+- 安全信息读取者
 - 安全管理员
 - 条件访问管理员
 - 全局读取者
@@ -102,13 +102,9 @@ Intune 管理员角色没有足够的权限进行此检查。 还需要分配以
 
 Azure AD 组织中 Intune 设备合规性策略可能会影响Microsoft 托管桌面设备。
 
-**未就绪**
-
-您至少有一个面向所有用户的合规性策略。 Microsoft 托管桌面包括面向你的设备Microsoft 托管桌面策略。  将策略更改为面向不包含任何用户或设备Microsoft 托管桌面 Azure AD 组。 有关步骤，请参阅 Create [a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy)。
-
 **公告**
 
-确保你拥有的任何合规性策略不面向任何Microsoft 托管桌面用户。 有关步骤，请参阅 Create [a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy)。
+您至少有一个适用于所有用户的合规性策略。 Microsoft 托管桌面还包括将应用于你的设备Microsoft 托管桌面策略。 查看组织创建的所有适用于Microsoft 托管桌面合规性策略，以确保没有冲突。 有关步骤，请参阅 Create [a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy)。
 
 
 
@@ -118,7 +114,7 @@ Azure AD 组织中 Intune 设备配置文件不得面向任何 Microsoft 管理�
 
 **未就绪**
 
-你至少具有一个面向所有用户和/或所有设备的配置文件。 将配置文件重置为面向不包括任何设备的特定 Azure AD Microsoft 托管桌面组。 有关步骤，请参阅[Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure)。
+你至少有一个配置文件适用于所有用户、所有设备或两者。 重置配置文件以应用于不包括任何设备配置的特定 Azure AD Microsoft 托管桌面组。 有关步骤，请参阅[Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure)。
 
 **公告**
 
@@ -172,7 +168,7 @@ YOU currently have the Enrollment Status Page (ESP) enabled. 如果你打算参�
 
 Intune 管理员角色没有足够的权限进行此检查。 还需要分配以下任一 Azure AD 角色来运行此检查：
 
-- 安全读取者
+- 安全信息读取者
 - 安全管理员
 - 条件访问管理员
 - 全局读取者
@@ -187,7 +183,7 @@ Windows PowerShell无法以面向特定设备的方式分配Microsoft 托管桌�
 
 请确保 Azure AD Windows PowerShell中的脚本不面向任何 Microsoft 管理桌面设备或用户。 不要将 PowerShell 脚本分配给所有用户、所有设备或两者。 将策略更改为使用面向特定 Azure AD 组（不包括任何设备Microsoft 托管桌面的分配。 有关详细信息，请参阅在[Intune Windows 10设备上使用 PowerShell 脚本](/mem/intune/apps/intune-management-extension)。
 
-### <a name="region"></a>区域
+### <a name="region"></a>地区
 
 你的区域必须受 Microsoft 托管桌面。
 

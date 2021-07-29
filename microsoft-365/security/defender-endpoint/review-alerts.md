@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c05858184df57b148b83dabee402fde29d98e95e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844018"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622035"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>查看 Microsoft Defender for Endpoint 中的警报
 
@@ -32,7 +32,7 @@ ms.locfileid: "52844018"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
 Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相关的攻击信号和警报，为警报提供完整的上下文，以构建详细的警报情景。
 
@@ -49,25 +49,25 @@ Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相
 3. 警报 **情景** 通过树视图显示与警报相关的所有实体。 当你首次登录所选警报的页面时，标题中的警报将是焦点。 警报情景中的实体可展开且可单击，通过允许您在警报页面上下文中立即采取措施来提供其他信息并加快响应速度。 使用警报情景开始调查。 在调查 [Microsoft Defender for Endpoint 中的警报中了解如何](/microsoft-365/security/defender-endpoint/investigate-alerts)操作。
 4. 详细信息 **窗格** 将首先显示所选警报的详细信息，以及与此警报相关的详细信息和操作。 如果在警报情景中选择任何受影响的资产或实体，详细信息窗格将更改为提供所选对象的上下文信息和操作。
 
-记下警报的检测状态。 
-- 已阻止 – 已避免尝试的可疑操作。 例如，文件未写入磁盘或已执行。
-![显示已阻止威胁的警报页面](images/detstat-prevented.png)
-- 已阻止 – 已执行可疑行为，然后阻止。 例如，进程已执行，但由于它随后呈现了可疑行为，因此进程已终止。
-![显示已阻止威胁的警报页面](images/detstat-blocked.png)
-- 检测到 – 检测到攻击，并且可能仍处于活动状态。
-![显示检测到威胁的警报页面](images/detstat-detected.png)
+记下警报的检测状态。
 
+- 已阻止：已避免尝试的可疑操作。 例如，文件未写入磁盘或已执行。
 
+  ![显示已阻止威胁的警报页面](images/detstat-prevented.png)
 
+- 已阻止：已执行可疑行为，然后阻止。 例如，进程已执行，但由于它随后呈现了可疑行为，因此进程已终止。
+
+  ![显示已阻止威胁的警报页面](images/detstat-blocked.png)
+
+- 检测到：检测到攻击，并且可能仍处于活动状态。
+
+  ![显示检测到威胁的警报页面](images/detstat-detected.png)
 
 然后，还可以在警报的详细信息窗格中查看自动调查详细信息，查看已采取的操作，并阅读警报的说明，了解建议的操作。
 
 ![突出显示了警报说明和自动调查部分的详细信息窗格的代码段](images/alert-air-and-alert-description.png)
 
 当警报打开时，详细信息窗格中提供的其他信息包括 MITRE 技术、源和其他上下文详细信息。
-
-
-
 
 ## <a name="review-affected-assets"></a>查看受影响的资产
 
@@ -80,7 +80,6 @@ Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相
 - **对于用户**，详细信息窗格将显示详细的用户信息，如用户的 SAM 名称和 SID，以及此用户执行的登录类型以及任何与该用户相关的警报和事件。 可以选择" *打开用户页面* "以从该用户的角度继续调查。
 
    ![选择用户时详细信息窗格的代码段](images/user-page-details.png)
-
 
 ## <a name="related-topics"></a>相关主题
 

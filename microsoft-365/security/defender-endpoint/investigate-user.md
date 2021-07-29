@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 90e15fbd28d8b7a57b9d65c2f7ea46e625a42038
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935061"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622624"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935061"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatgeuser-abovefoldlink)。
 
 ## <a name="investigate-user-account-entities"></a>调查用户帐户实体
 
@@ -99,7 +99,7 @@ ms.locfileid: "51935061"
 
 ## <a name="related-topics"></a>相关主题
 
-- [查看和组织 Microsoft Defender 终结点警报队列](alerts-queue.md)
+- [查看并组织 Microsoft Defender for Endpoint 警报队列](alerts-queue.md)
 - [管理 Microsoft Defender for Endpoint 警报](manage-alerts.md)
 - [调查 Microsoft Defender for Endpoint 警报](investigate-alerts.md)
 - [调查与 Defender for Endpoint 警报关联的文件](investigate-files.md)

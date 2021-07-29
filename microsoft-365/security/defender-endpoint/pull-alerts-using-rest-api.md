@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 90e63ead4debd7a5b7033f1a8c9d6b0fd50cfe81
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771665"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622047"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -33,7 +33,7 @@ ms.locfileid: "52771665"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
 >[!NOTE]
 >Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 - 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 AAD Azure Active Directory (启用 SIEM) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 请记下 Azure 应用程序注册过程中的下列值。需要使用这些值在服务或守护程序应用中配置 OAuth 流：
@@ -124,11 +124,11 @@ Authorization | string | 必填。 Azure AD 访问令牌，格式为 **Bearer** 
 :---|:---|:---
 sinceTimeUtc | 日期时间 | 根据字段定义从中检索下限的警报： <br> `LastProcessedTimeUtc` <br> 该时间范围将为：从 sinceTimeUtc 时间到当前时间。 <br><br> **注意**：如果未指定，将检索过去两小时内生成的所有警报。
 untilTimeUtc | 日期时间 | 定义检索的上限警报。 <br> 该时间范围将为： `sinceTimeUtc` 从一次一 `untilTimeUtc` 次到一次。 <br><br> **注意**：如果未指定，默认值将为当前时间。
-ago | string | 在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <br><br> 值应按照 ISO **8601 持续时间格式** 进行设置 <br> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
+ago | 字符串 | 在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <br><br> 值应按照 ISO **8601 持续时间格式** 进行设置 <br> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
 limit | int | 定义要检索的警报数。 将基于定义的号码检索最新警报。<br><br> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
-machinegroups | string | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | 注册表中的单个设备标记。
-CloudCreatedMachineTags | string | 在活动中创建的设备Microsoft Defender 安全中心。
+machinegroups | 字符串 | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | 字符串 | 注册表中的单个设备标记。
+CloudCreatedMachineTags | 字符串 | 在活动中创建的设备Microsoft Defender 安全中心。
 
 ### <a name="request-example"></a>请求示例
 以下示例演示如何检索组织的所有检测。

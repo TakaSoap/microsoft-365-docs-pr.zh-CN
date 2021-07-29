@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b7d330388dd698cb524c1f4a8edaf9039ba4d16e
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 00410ea53f8656c25e4912f8979b11f0c4b0483a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454825"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622540"
 ---
 # <a name="manage-automation-file-uploads"></a>管理自动化文件上载
 
@@ -31,7 +31,7 @@ ms.locfileid: "53454825"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationefileuploads-abovefoldlink)。
 
 启用内容分析功能，以便某些文件和电子邮件附件可以自动上载到云，以便自动调查进行其他检查。
 

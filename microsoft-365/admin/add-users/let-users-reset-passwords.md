@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何设置策略以允许用户使用自助服务密码重置工具重置自己的密码。
-ms.openlocfilehash: ac6d7f16cb35cec757340a94c262c3541bea927a
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 284a81e46ff22bf0a2ae514db81432b64e342a7f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394311"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622144"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -67,11 +67,9 @@ ms.locfileid: "53394311"
 
 4. 在 **"自助服务密码重置"下**，选择"转到 Azure 门户"以打开 **自助服务密码重置**。
 
-5. 在左侧导航窗格中，选择" **用户"，** 然后在"用户"| **所有用户页面** ，选择密码 **重置**。
+5. 在"**属性"****页上，选择**"全部"为企业中的每个人启用它，然后选择"保存 **"。**
   
-6. 在"**属性"****页上，选择**"全部"为企业中的每个人启用它，然后选择"保存 **"。**
-  
-7. 当用户登录时，系统将提示用户输入其他联系人信息，以帮助他们在将来重置密码。
+6. 当用户登录时，系统将提示用户输入其他联系人信息，以帮助他们在将来重置密码。
 
 ## <a name="related-content"></a>相关内容
 
