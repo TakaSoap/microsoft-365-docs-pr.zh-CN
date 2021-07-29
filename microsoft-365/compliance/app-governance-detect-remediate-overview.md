@@ -2,8 +2,8 @@
 title: 了解应用威胁检测和修正
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解应用威胁检测和修正。
-ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 70f39ac3506ff6962ab028009cab54dfb83cd47b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438044"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624220"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>了解应用威胁检测和修正
 
@@ -51,10 +51,6 @@ ms.locfileid: "53438044"
 - 应用治理中的应用登录信息：
 
   从应用治理门户，你可以查看每个应用的聚合登录活动，并链接回 Azure Active Directory 管理中心以获取登录事件的详细信息。
-
-- Azure Active Directory 管理中心内的应用 API 使用信息：
-
-  从 Azure Active Directory 管理中心，你可以查看聚合的应用使用信息和应用治理门户的链接，了解应用使用的详细信息。
 
 - Microsoft Cloud App Security 门户中的 API 使用信息： 
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b31ae48c4defaa0061bef4b13522dd62b8058150
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 77d5cb27a4cb52136bb35aa6ffa40561cb0124d6
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543457"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621951"
 ---
 # <a name="find-devices-by-tag-api"></a>按标记 API 查找设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543457"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -74,20 +74,21 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
 名称|类型|说明
 :---|:---|:---
-tag|String|标记名称。 **必需**。
-useStartsWithFilter|Boolean|设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
+tag|字符串|标记名称。 **必需**。
+useStartsWithFilter|布尔|设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
 
 ## <a name="request-body"></a>请求正文
 
 Empty
 
 ## <a name="response"></a>响应
+
 如果成功 - 200 正常，响应正文中提供计算机列表。
 
 ## <a name="example"></a>示例

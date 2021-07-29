@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1c5b8fa6e0f1fd887c857bd4e6451a5e59b708af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 352cce0e1342471a39c217c397d1af230b36fddd
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198537"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624376"
 ---
 # <a name="get-user-information-api"></a>获取用户信息 API
 
@@ -27,53 +27,55 @@ ms.locfileid: "51198537"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 按键检索 User 实体 (用户名) 。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-Application |   User.Read.All | "读取所有用户配置文件"
+Application|User.Read.All|"读取所有用户配置文件"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/users/{id}/
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功且用户存在 - 正文中的 [user](user.md) 实体为 200 正常。 如果用户不存在 - 404 未找到。
 
+如果成功且用户存在 - 正文中的 [user](user.md) 实体为 200 正常。 如果用户不存在 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/users/user1
 Content-type: application/json
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 

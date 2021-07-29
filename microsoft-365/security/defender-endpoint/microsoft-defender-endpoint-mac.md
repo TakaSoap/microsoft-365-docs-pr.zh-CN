@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b809cc82ef6fda3d4153dbf19871801ec59ae75
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2c2c0ff1cfa84689215272d1fcf5a1f7476ca4d9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543421"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621843"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "53543421"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 本主题介绍如何在 Mac 上安装、配置、更新和使用 Defender for Endpoint。
 
@@ -109,13 +109,12 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
-
-
-|**域列表电子表格**|**说明**|
-|:-----|:-----|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>在此处下载[电子表格：mdatp-urls.xlsx。 ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|域列表电子表格|说明|
+|---|---|
+|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载[电子表格：mdatp-urls.xlsx。 ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务器：
+
 - PAC (代理) 
 - Web 代理自动发现协议 (WPAD)
 - 手动静态代理配置
@@ -127,7 +126,7 @@ Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务
 >
 > 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 macOS 上的 Microsoft Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
-若要测试连接是否未阻止，请打开 [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) ，在浏览器中打开。
+若要测试连接是否未阻止，请打开 <https://x.cp.wd.microsoft.com/api/report> <https://cdn.x.cp.wd.microsoft.com/ping> ，在浏览器中打开。
 
 如果您更喜欢命令行，还可以在终端中运行以下命令来检查连接：
 
@@ -142,9 +141,10 @@ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https:
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> 建议在客户端设备上保持 [启用 (](https://support.apple.com/en-us/HT204899) SIP) 系统完整性保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
+> 建议在客户端设备上保持 [启用 (](https://support.apple.com/HT204899) SIP) 系统完整性保护。 SIP 是内置的 macOS 安全功能，可防止对操作系统进行低级篡改，并且默认启用。
 
 安装 Microsoft Defender for Endpoint 后，可通过在终端中运行以下命令来验证连接性：
+
 ```bash
 mdatp connectivity test
 ```
@@ -164,5 +164,4 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 ## <a name="resources"></a>资源
 
 - 有关日志记录、卸载或其他主题的信息，请参阅 Mac 上的 [Microsoft Defender for Endpoint 的资源](mac-resources.md)。
-
 - [Mac 上的 Microsoft Defender for Endpoint 的隐私](mac-privacy.md)。

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ef594d4ccb25f688be21b4e8fe6aac2f024eb1d
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 2062d85d27208f871a96b64a90a457469f83559a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419747"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623188"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -33,10 +33,14 @@ ms.locfileid: "53419747"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 > [!IMPORTANT]
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
+
+## <a name="1013428-20121061134280"></a>101.34.28 (20.121061.13428.0) 
+
+- Bug 修复
 
 ## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0) 
 
@@ -153,7 +157,7 @@ ms.locfileid: "53419747"
 
 > [!IMPORTANT]
 > 我们正在为命令行工具开发新的增强 `mdatp` 语法。 新语法当前是预览体验成员 -快和预览体验成员 - 慢更新频道中的默认语法。 我们鼓励你使用这种新语法来自我激励。
-> 
+>
 > 我们将继续支持旧语法与新语法并行，并针对即将推出的几个月中的旧语法弃用计划提供更多通信。
 
 - 解决了访问 SMB 文件共享时有时发生的内核内核问题
@@ -200,7 +204,7 @@ ms.locfileid: "53419747"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> 为了确保对 macOS 设备进行最完整的保护，并符合 Apple 停止将 macOS 本机安全更新交付到低于 [current – 2] 的操作系统版本，macOS Sierra [10.12] 上将不再支持适用于 Mac 的 MDATP 部署和更新。 适用于 Mac 的 MDATP 更新和增强功能将传递到运行版本 Catalina [10.15]、Mojave [10.14] 和 High Sierra [10.13] 的设备。 
+> 为了确保对 macOS 设备进行最完整的保护，并且与 Apple 停止向低于 [current - 2] 的操作系统版本交付 macOS 本机安全更新一致，macOS Sierra [10.12] 上将不再支持适用于 Mac 的 MDATP 部署和更新。 适用于 Mac 的 MDATP 更新和增强功能将传递到运行版本 Catalina [10.15]、Mojave [10.14] 和 High Sierra [10.13] 的设备。
 >
 > 如果你已经将适用于 Mac 的 MDATP 部署到 Sierra [10.12] 设备，请升级到最新的 macOS 版本以消除丢失保护的风险。
 
@@ -224,9 +228,11 @@ ms.locfileid: "53419747"
 
 - 修复了 Mac 上的 Microsoft Defender for Endpoint 有时干扰时间计算机的问题
 - 向命令行实用工具添加了一个新开关，用于测试与后端服务的连接
+
   ```bash
   mdatp connectivity test
   ```
+
 - 添加了在用户界面中查看完整威胁历史记录 (可以从"保护历史记录"视图访问) 
 - Bug 修复&性能改进
 

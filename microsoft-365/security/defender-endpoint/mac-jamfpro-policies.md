@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 577eea6e678b6a5d60e5bb8f2fbaaae25d239577
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c73a1a4ca5a85e4c6867cbe2cb79a33cfe0bfac9
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230063"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623788"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf 中设置 macOS 上的 Microsoft Defender for Endpoint Pro
 
@@ -60,7 +60,6 @@ ms.locfileid: "53230063"
 
 11. [在 macOS 上部署 Microsoft Defender for Endpoint](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
-
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>步骤 1：获取适用于终结点的 Microsoft Defender 载入程序包
 
 1. In [Microsoft Defender 安全中心，](https://securitycenter.microsoft.com)navigate to **设置 > Onboarding**.
@@ -81,7 +80,6 @@ ms.locfileid: "53230063"
 1. 找到上 `WindowsDefenderATPOnboarding.plist` 一部分中的文件。
 
    ![WindowsDefenderATPOnboarding 文件的图像](images/plist-onboarding-file.png)
-
 
 2. 在 Jamf Pro仪表板中，选择"新建 **"。**
 
@@ -124,7 +122,7 @@ ms.locfileid: "53230063"
 
     ![目标图像](images/jamfpro-targets.png)
 
-10. 选择“**保存**”。
+10. 选择 **保存**。
 
     ![部署目标计算机的图像](images/jamfpro-deployment-target.png)
 
@@ -204,8 +202,8 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     - enableRealTimeProtection
     - passiveMode
 
-    >[!NOTE]
-    >默认情况下未打开，如果计划运行适用于 macOS 的第三方 AV，请将其设置为 `true` 。
+    > [!NOTE]
+    > 默认情况下未打开，如果计划运行适用于 macOS 的第三方 AV，请将其设置为 `true` 。
 
     - 排除项
     - excludedPath
@@ -214,8 +212,8 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     - exclusionsMergePolicy
     - allowedThreats
 
-    >[!NOTE]
-    >EICAR 位于示例中，如果你要通过概念证明，请删除它，尤其是在你测试 EICAR 时。
+    > [!NOTE]
+    > EICAR 位于示例中，如果你要通过概念证明，请删除它，尤其是在你测试 EICAR 时。
 
     - disallowedThreatActions
     - potentially_unwanted_application
@@ -376,8 +374,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     >如果你发生上载 Intune 文件的情况，你将看到以下错误：<br>
     >![配置设置 intune 文件上载的图像](images/8e69f867664668796a3b2904896f0436.png)
 
-
-11. 选择“**保存**”。
+11. 选择 **保存**。
 
     ![配置设置的图像 保存映像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -518,7 +515,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置设置的图像](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 选择“**保存**”。
+11. 选择 **保存**。
 
     ![配置设置 saveimg 的图像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -526,7 +523,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
      ![配置设置作用域tab的图像](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. 选择“添加”。
+13. 选择“**添加**”。
 
     ![配置设置 addimg1 的图像](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -617,9 +614,9 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 contoso machinegrp 的图像](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. 选择“添加”。
+15. 选择“**添加**”。
 
-16. 选择“**保存**”。
+16. 选择 **保存**。
 
 17. 选择“完成”。
 
@@ -654,7 +651,6 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![批准的内核扩展的配置设置的图像](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
-
 4. 在 **"已批准内核扩展"** 中 输入以下详细信息：
 
     - 显示名称：Microsoft Corp.
@@ -674,7 +670,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置添加映像的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 选择“**保存**”。
+9. 选择 **保存**。
 
     ![配置设置保存映像](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -729,7 +725,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
    ![配置设置 addima 的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 选择“**保存**”。
+9. 选择 **保存**。
 
    ![配置设置 sysext 作用域的图像](images/sysext-scope.png)
 
@@ -779,7 +775,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 adim 的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. 选择“**保存**”。
+7. 选择 **保存**。
 
     ![配置设置 savimg netextscop 的图像](images/netext-scope.png)
 
@@ -789,10 +785,9 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
 或者，你可以下载[netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)并将其上载到 JAMF 配置文件，如使用 Jamf 配置部署自定义[配置文件Pro|方法 2：Upload配置文件为 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
-
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>步骤 10：在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
-按照在 [macOS 上使用 Microsoft Defender for Endpoint 计划扫描的说明操作](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
+按照在 [macOS 上使用 Microsoft Defender for Endpoint 计划扫描的说明操作](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>步骤 11：在 macOS 上部署 Microsoft Defender for Endpoint
 
@@ -838,7 +833,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
      ![配置设置限制选项卡的图像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 
-8. 选择“**保存**”。 程序包将上载到 Jamf Pro。
+8. 选择 **保存**。 程序包将上载到 Jamf Pro。
 
    ![配置设置包 upl jamf pro 的图像](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -865,8 +860,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置重复签入的图像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-
-13. 选择“**保存**”。
+13. 选择 **保存**。
 
 14. 选择 **">配置"。**
 
@@ -876,7 +870,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 MDATP 和 MDA 添加的图像](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 选择“**保存**”。
+16. 选择 **保存**。
 
     ![配置设置的图像avimg](images/9d6e5386e652e00715ff348af72671c6.png)
 
@@ -890,7 +884,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     **Scope**
 
-    选择“添加”。
+    选择“**添加**”。
 
     ![配置设置 ad1img 的图像](images/1c08d097829863778d562c10c5f92b67.png)
 
@@ -905,7 +899,3 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     ![配置设置 do1img 的图像](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
     ![配置设置 do2img 的图像](images/632aaab79ae18d0d2b8e0c16b6ba39e2.png)
-
-
-
-

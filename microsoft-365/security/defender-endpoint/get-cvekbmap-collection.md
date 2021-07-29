@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 85c4d82f07354193fb1e997abb98dbdaa02dc8ef
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: afb3e689c33b7d6d314bc23b19869824b3666c00
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166328"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623944"
 ---
 # <a name="get-cve-kb-map-api"></a>获取 CVE-KB 地图 API
 
@@ -32,7 +32,7 @@ ms.locfileid: "51166328"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,30 +40,34 @@ ms.locfileid: "51166328"
 
 检索 CVE 到 KB 和 CVE 详细信息的地图。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
+
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /testwdatppreview/cvekbmap
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-标头 | 值 
+标头|值
 :---|:---
-Authorization | Bearer {token}。 **必需**。
-内容类型 | application/json
+Authorization|Bearer {token}。 **必需**。
+内容类型|application/json
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
+
 如果成功且存在映射 - 200 正常。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
@@ -71,7 +75,7 @@ Empty
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
@@ -87,7 +91,6 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
             "title": "Cumulative Security Update for Internet Explorer",
             "severity": "Critical"
         },
-    …
+    ...
 }
-
 ```

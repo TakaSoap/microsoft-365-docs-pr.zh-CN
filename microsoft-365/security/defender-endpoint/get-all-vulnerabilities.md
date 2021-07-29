@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6def1b64430ad70dc4b4898ba2b914288826873e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: e57270345c0d87a9fcbc25ef7d9a7598bb8b0226
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861487"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624160"
 ---
 # <a name="list-vulnerabilities"></a>列出漏洞
 
@@ -31,7 +31,7 @@ ms.locfileid: "52861487"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,35 +42,37 @@ ms.locfileid: "52861487"
 检索所有漏洞的列表。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md) 了解详细信息。
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Vulnerability.Read.All |    "读取威胁和漏洞管理漏洞信息"
-委派（工作或学校帐户） | Vulnerability.Read |   "读取威胁和漏洞管理漏洞信息"
+应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理漏洞信息"
+委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理漏洞信息"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/vulnerabilities
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
 
+如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
@@ -78,10 +80,9 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
-
 
 ```json
 {
@@ -109,5 +110,6 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 ```
 
 ## <a name="see-also"></a>另请参阅
+
 - [基于风险的威胁&漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [组织中漏洞](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

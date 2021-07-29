@@ -1,9 +1,9 @@
 ---
-title: 在 Microsoft Viva 主题中大规模管理主题
-author: chuckedmonson
+title: 在主题中大规模Microsoft Viva主题
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解使用 Viva 主题管理组织中许多主题的最佳实践。
-ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 96580df486195af991e446ae6f1bbb4b08013947
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624833"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624352"
 ---
-# <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中大规模管理主题
+# <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在主题中大规模Microsoft Viva主题
 
 为 Viva 主题SharePoint或整个组织编制索引时，可能会生成许多主题。 如果发生这种情况，并且你在"管理主题"页上看到数千个建议的主题，那么了解从何处开始可能会非常困难。 本文介绍 Viva 主题如何帮助您优化向搜索信息的用户显示的主题和信息，即使在具有大量主题的大型组织中。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52624833"
 
 - 对于显示的文件和页面，系统会标识在文档中提及主题多少次，但还必须在标识对特定类型 (如项目或工作组) 的主题的引用的特定上下文中提及该主题。 这是 AI 的证据。 系统还会考虑主题名称在文档标题、文档类型和其他分析功能（如视图视图） (出现) 。
 
-   ![显示"建议主题"的横幅图像和 Microsoft Viva 发现了此主题。](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
+   ![显示"建议主题"的横幅图像，Microsoft Viva发现了本主题。](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
 
    ![显示"建议主题"和"编辑此页面"描述你参与本主题的横幅的图像。](../media/knowledge-management/scale-topics-suggested-describe-your-involvement.png)
 
@@ -144,11 +144,11 @@ ms.locfileid: "52624833"
 
 ### <a name="search"></a>搜索
 
-常见搜索词通常作为主题发现。 通过使用 [Microsoft 搜索中排名居](/sharepoint/view-search-usage-reports)首的查询报告，您可以确定组织中最常见的搜索词。 如果已发现这些术语的主题，则它们适合进行选择。 这些主题可在 Microsoft 搜索中作为答案卡片显示。
+常见搜索词通常作为主题发现。 通过使用[Microsoft 搜索](/sharepoint/view-search-usage-reports)中的顶部查询报告，您可以标识组织中最常用的搜索词。 如果已发现这些术语的主题，则它们适合进行选择。 这些主题可以作为答案卡片在Microsoft 搜索。
 
-如果当前使用的是 Microsoft [搜索书签，](/microsoftsearch/manage-bookmarks)请考虑使用主题替换其中哪一个。 书签应答卡包含标题、说明和 URL。 在某些情况下，主题卡片可能更适用于用户，主题卡片还显示资源和人员。
+如果当前正在使用Microsoft 搜索[书签，](/microsoftsearch/manage-bookmarks)请考虑使用主题替换其中哪一个。 书签应答卡包含标题、说明和 URL。 在某些情况下，主题卡片可能更适用于用户，主题卡片还显示资源和人员。
 
-在用户的搜索体验中，当用户搜索"旅行"等字词时，搜索结果将按以下优先级顺序显示在 Microsoft 搜索中：
+在用户的搜索体验中，当用户搜索"旅行"等字词时，搜索结果将按以下优先级顺序Microsoft 搜索：
 
 1.  已发布或已确认的主题
 
@@ -172,6 +172,6 @@ ms.locfileid: "52624833"
 
 ## <a name="see-also"></a>另请参阅
 
-[在主题中心管理主题](manage-topics.md)
+[管理主题中心中的主题](manage-topics.md)
 
 [主题中心概述](topic-center-overview.md)

@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3eb4d01957383efc8df47e9fee6eb6394c80015a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924379"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623356"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题
 
@@ -37,7 +37,7 @@ ms.locfileid: "52924379"
 
 通过选择任务栏中的"搜索"图标并搜索事件查看器，打开 *事件查看器应用*。
 
-有关应用程序Microsoft Defender 防病毒信息，请参阅Microsoft Windows Windows Defender 应用程序和服务  >    >    >  **日志**。 
+有关应用程序Microsoft Defender 防病毒信息，请参阅Microsoft Windows Windows Defender 应用程序和服务  >    >    >  **日志**。
 
 从"操作"**下方选择**"打开 **"。**
 
@@ -49,11 +49,11 @@ ms.locfileid: "52924379"
 
 ### <a name="associated-event-ids"></a>关联的事件 ID
 
- 事件 ID | 日志名称 | 说明 | 源
--|-|-|-
-15 | 应用程序 | 更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。 | 安全中心
-5007 | Microsoft-Windows-Windows Defender/Operational | Windows Defender 防病毒配置已更改。  如果这是意外事件，你应该查看设置，因为这可能是恶意软件的结果。<br /><br />**旧值：** Default\IsServiceRunning = 0x0<br />**新值：** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
-5010 | Microsoft-Windows-Windows Defender/Operational | Windows Defender 防病毒间谍软件和其他可能不需要的软件扫描处于禁用状态。 | Windows Defender
+事件 ID|日志名称|说明|源
+---|---|---|---
+15|应用程序|更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。|安全中心
+5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒配置已更改。  如果这是意外事件，你应该查看设置，因为这可能是恶意软件的结果。 <p> **旧值：** Default\IsServiceRunning = 0x0 p>**新值**：HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5010|Microsoft-Windows-Windows Defender/Operational|Windows Defender 防病毒间谍软件和其他可能不需要的软件扫描处于禁用状态。|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>如何判断Microsoft Defender 防病毒安装第三方防病毒后无法启动
 
@@ -68,7 +68,7 @@ ms.locfileid: "52924379"
 
 有关Microsoft Defender 防病毒的信息将在服务应用下"操作 **"Windows Defender**  >  **列出**。 防病毒服务名称是Windows Defender 防病毒 *服务*。
 
-在检查应用时，你可能会看到 *Windows Defender 防病毒 Service* 设置为手动 ，但在尝试手动启动此服务时，你收到一条警告，指出"本地计算机上 Windows Defender 防病毒 *服务服务已启动，然后已停止"。如果某些服务未由其他服务或程序* 使用，则会自动停止这些服务。
+在检查应用时，你可能会看到 *Windows Defender 防病毒 服务* 已设置为手动，但在尝试手动启动此服务时，你收到一条警告，指出"本地计算机上 Windows Defender 防病毒 服务服务已启动，然后已停止"。 *如果某些服务未由其他服务或程序* 使用，则会自动停止这些服务。
 
 这表示Microsoft Defender 防病毒已自动关闭，以保留和第三方防病毒的兼容性。
 
@@ -88,31 +88,31 @@ GPresult.exe /h gpresult.html
 
 在 GPResults 报告中，在标题 Windows *Components/Windows Defender 防病毒* 下，你可能会看到如下条目，指示Microsoft Defender 防病毒关闭。
 
-策略 | 设置 | 获胜的 GPO
--|-|-
-关闭Windows Defender 防病毒 | 已启用 | Win10-Workstations
+Policy|设置|获胜的 GPO
+---|---|---
+关闭Windows Defender 防病毒|已启用|Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>如果安全设置通过组策略首选项 (GPP) 
 
 在标题"注册表项 (项路径 *：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender，值名称：DisableAntiSpyware) "* 下，你可能会看到如下条目，指示 Microsoft Defender 防病毒 已关闭。
 
-DisableAntiSpyware | -
--|-
-获胜的 GPO | Win10-Workstations
-结果：成功 | 
-**常规** | 
-操作 | 更新
-**属性** | 
-配置单元 | HKEY_LOCAL_MACHINE
-密钥路径 | SOFTWARE\Policies\Microsoft\Windows Defender
-值名称 | DisableAntiSpyware
-值类型 | REG_DWORD
-值数据 | 0x1 (1) 
+DisableAntiSpyware|-
+---|---
+获胜的 GPO|Win10-Workstations
+结果：成功|
+**常规**|
+操作|更新
+**属性**|
+配置单元|HKEY_LOCAL_MACHINE
+密钥路径|SOFTWARE\Policies\Microsoft\Windows Defender
+值名称|DisableAntiSpyware
+值类型|REG_DWORD
+值数据|0x1 (1) 
 
 ###### <a name="if-security-settings-are-implemented-via-registry-key"></a>如果安全设置是通过注册表项实现的
 
 报告可能包含以下文本，指示Microsoft Defender 防病毒关闭状态：
- 
+
 > 注册表 (regedit.exe) 
 >
 > HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender DisableAntiSpyware (十六) 1 (dword) 
@@ -137,5 +137,5 @@ Microsoft Defender 防病毒当前没有处于活动状态的防病毒，将自�
 
 ### <a name="see-also"></a>另请参阅
 
-* [Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)
-* [Microsoft Defender 防病毒应用中Windows 安全中心](microsoft-defender-security-center-antivirus.md)
+- [Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)
+- [Microsoft Defender 防病毒应用中Windows 安全中心](microsoft-defender-security-center-antivirus.md)

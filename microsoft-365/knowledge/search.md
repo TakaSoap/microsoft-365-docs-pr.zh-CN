@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
+title: 使用Microsoft 搜索查找"主题"Microsoft Viva主题
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
-description: 了解如何在 Microsoft Viva 中搜索主题。
-ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 了解如何搜索"主题"Microsoft Viva主题。
+ms.openlocfilehash: 0a29bb4578ead314c362959a4e410665114c7fbb
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287253"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624340"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用Microsoft 搜索查找"主题"Microsoft Viva主题
 
 Viva 主题用户可以通过其网站中的主题SharePoint查找主题，也可以通过主题Microsoft 搜索。 
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b10659f76e5b05bea11f5c6c55ca7c2a34a2db5
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1d421de1bcdc926fa05fae626c0474d2dce54e41
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772157"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621867"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>列出修正活动的暴露设备
 
@@ -32,7 +32,7 @@ ms.locfileid: "52772157"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -54,19 +54,19 @@ ms.locfileid: "52772157"
 
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API 了解详细信息。](apis-intro.md)
 
-权限类型 | 权限 | 权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 | RemediationTask.Read.All | \'阅读威胁和漏洞管理漏洞信息\'
-委派（工作或学校帐户） | RemediationTask.Read.Read | \'阅读威胁和漏洞管理漏洞信息\'
+应用程序|RemediationTask.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+委派（工作或学校帐户）|RemediationTask.Read.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ## <a name="properties-details"></a>属性详细信息
 
-属性 (id)  | 数据类型 | 说明 | 示例
+属性 (id) |数据类型|说明|示例
 :---|:---|:---|:---
-id | String | 设备 ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | String | 设备名称 | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | 设备操作系统 | WindowsServer2012R2
-rbacGroupName | String | 与此设备关联的设备组的名称 | 服务器
+id|字符串|设备 ID|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|字符串|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|字符串|设备操作系统|WindowsServer2012R2
+rbacGroupName|字符串|与此设备关联的设备组的名称|服务器
 
 ## <a name="example"></a>示例
 
@@ -117,11 +117,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ## <a name="see-also"></a>另请参阅
 
 - [修正方法和属性](get-remediation-methods-properties.md)
-
 - [按 ID 获取一个修正活动](get-remediation-one-activity.md)
-
 - [列出所有修正活动](get-remediation-all-activities.md)
-
 - [基于风险的威胁& 漏洞管理](next-gen-threat-and-vuln-mgt.md)
-
 - [组织中漏洞](tvm-weaknesses.md)

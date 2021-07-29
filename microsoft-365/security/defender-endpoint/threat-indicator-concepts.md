@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb82634c8c2ef11131a43e8e479bf88d5626ed03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f707e8290c7b976ace0495e03a3b909a8f544294
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055913"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623368"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>了解威胁智能概念
 
@@ -33,7 +33,7 @@ ms.locfileid: "51055913"
 
 
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-threatindicator-abovefoldlink)。
 
 高级网络安全攻击由多个复杂的恶意事件、属性和上下文信息组成。 确定和确定哪些活动符合可疑条件可能是一项极具挑战性的任务。 了解特定于你的行业的已知属性和异常活动是了解何时将观察到的行为称为可疑行为的基础。
 

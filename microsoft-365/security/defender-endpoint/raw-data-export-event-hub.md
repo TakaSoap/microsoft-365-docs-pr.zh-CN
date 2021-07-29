@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8985a40c99ad4db9710dfbf9805d537a921f6c96
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: 814eea3a4c24b5706b288840436022a3cecaa6b1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780161"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623104"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -32,9 +33,9 @@ ms.locfileid: "52780161"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
@@ -54,7 +55,7 @@ ms.locfileid: "52780161"
 
 6. 键入 **事件中心名称和** 事件中心资源 **ID。**
 
-   若要获取事件中心资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/) > 属性选项卡上的 Azure 事件中心命名空间页面>复制资源 **ID 下的文本**：
+   若要获取事件中心资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/) > 属性选项卡上的 Azure 事件中心命名空间页面，复制资源 \> ID **下的文本**：
 
    ![事件中心资源 Id1 的图像](images/event-hub-resource-id.png)
 
@@ -62,7 +63,7 @@ ms.locfileid: "52780161"
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Azure 事件中心中的事件的架构
 
-```
+```text
 {
     "records": [
                     {
@@ -91,18 +92,19 @@ ms.locfileid: "52780161"
 1. 登录[以Microsoft Defender 安全中心](https://securitycenter.windows.com)转到高级[搜寻页面](https://securitycenter.windows.com/hunting-package)。
 
 2. 运行以下查询，获取每个事件的数据类型映射：
- 
-   ```
+
+   ```text
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
    ```
 
-- 下面是设备信息事件的示例： 
+- 下面是设备信息事件的示例：
 
   ![事件中心资源 Id2 的图像](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>相关主题
+
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [适用于终结点流 API 的 Microsoft Defender](raw-data-export.md)
 - [将 Microsoft Defender for Endpoint 事件流式处理到 Azure 存储帐户](raw-data-export-storage.md)

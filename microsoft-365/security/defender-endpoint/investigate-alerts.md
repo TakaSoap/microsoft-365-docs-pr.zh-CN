@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 53a00625e50081a1af7ba78fbd8fce604ad3ed9c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841086"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623752"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的警报
 
@@ -34,7 +34,7 @@ ms.locfileid: "52841086"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink)。
 
 调查影响网络的警报，了解它们的含义以及如何解决它们。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52841086"
 
 
 ## <a name="related-topics"></a>相关主题
-- [查看和组织 Microsoft Defender 终结点警报队列](alerts-queue.md)
+- [查看并组织 Microsoft Defender for Endpoint 警报队列](alerts-queue.md)
 - [管理 Microsoft Defender for Endpoint 警报](manage-alerts.md)
 - [调查与 Defender for Endpoint 警报关联的文件](investigate-files.md)
 - [调查 Defender for Endpoint Devices 列表中的设备](investigate-machines.md)

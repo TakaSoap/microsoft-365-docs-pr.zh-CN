@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 了解如何将策略提示添加到 DLP (策略) 数据丢失防护，以通知用户他们处理的内容与 DLP 策略冲突。
-ms.openlocfilehash: 53a4db6cfc37f35422a1efffaeac052370cd5988
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f8b1c4228dcccf82a8dadb8b942d2587f92ba382
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228647"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623044"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -55,7 +55,7 @@ ms.locfileid: "53228647"
 
 创建 DLP 策略时，可以启用用户 **通知**。 启用用户通知后，Microsoft 365发送电子邮件通知和策略提示。 你可以自定义向谁发送通知电子邮件、电子邮件文本和策略提示文本。
 
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 [https：// (https://compliance.microsoft.com/permissions ] (https：// (https://compliance.microsoft.com/permissions) 。
 
 2. 使用工作或学校帐户进行登录。 现在，你已位于安全 &amp; 与合规中心。
 

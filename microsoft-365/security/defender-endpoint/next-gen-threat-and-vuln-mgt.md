@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db213da7c1859c9f4c9871aea508b225fd9b7b44
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934161"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623152"
 ---
 # <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "51934161"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 有效识别、评估和修正终结点缺陷是运行正常安全计划并降低组织风险的关键。 威胁和漏洞管理是减少组织风险，强化终结点表面区域和提高组织复原能力的基础结构。
 
@@ -40,11 +40,11 @@ ms.locfileid: "51934161"
 
 观看此视频，快速了解危险和漏洞管理。
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>桥接工作流差距
 
-威胁漏洞管理内置、实时且由云支持。 它与 Microsoft 终结点安全堆栈、Microsoft Intelligent Security Graph应用程序分析知识库完全集成。  
+威胁漏洞管理内置、实时且由云支持。 它与 Microsoft 终结点安全堆栈、Microsoft Intelligent Security Graph应用程序分析知识库完全集成。
 
 漏洞管理是行业首个在修正过程中弥补安全管理和 IT 管理差距的解决方案。 通过集成安全任务或票证，Microsoft Intune Microsoft Endpoint Configuration Manager。
 
@@ -54,10 +54,10 @@ ms.locfileid: "51934161"
 
 它还提供：
 
-- **实时设备清单** - 载入 Defender for Endpoint 的设备会自动将漏洞和安全配置数据报告并推送到仪表板。
-- **了解软件和漏洞** - 组织软件清单的光学镜头，以及安装、卸载和修补程序等软件更改。 新发现的漏洞通过针对第一方和第三方应用程序的可操作缓解建议进行报告。
-- **应用程序运行时上下文** - 有关应用程序使用模式的可见性，以更好地进行优先顺序和决策制定。
-- **配置状态** - 了解组织安全配置或错误配置。 在仪表板中报告的问题以及可操作的安全建议。
+- **实时设备库存** - 载入到 Defender for Endpoint 的设备会自动将漏洞和安全配置数据报告并推送到仪表板。
+- **软件和漏洞的可见性** - 了解组织的软件库存，以及安装、卸载、修补等软件更改。 系统会报告新发现的漏洞，并随附第一方和第三方应用程序的可操作缓解建议。
+- **应用程序运行时上下文** - 提供应用程序使用模式的可见性，从而更好地确定优先级并做出决策。
+- **配置状况** - 提供组织安全配置或配置错误的可见性。 系统会在仪表板中报告问题，并随附可操作的安全建议。
 
 ### <a name="intelligence-driven-prioritization"></a>智能驱动的优先顺序
 
@@ -83,10 +83,10 @@ ms.locfileid: "51934161"
 
 ## <a name="navigation-pane"></a>导航窗格 
 
-领域 | 说明
+区域 | 说明
 :---|:---
 **仪表板**   | 获取组织曝光分数、适用于设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。
-[**安全性建议**](tvm-security-recommendation.md) | 请参阅安全建议和相关威胁信息列表。 当你从列表中选择一个项目时，将打开一个包含漏洞详细信息的飞出面板、一个打开软件页的链接以及修正和例外选项。 如果你的设备通过设备加入 Azure Active Directory并且你已启用 Defender for Endpoint 中的 Intune 连接，则还可以在 Intune 中打开票证。
+[**安全建议**](tvm-security-recommendation.md) | 请参阅安全建议和相关威胁信息列表。 当你从列表中选择一个项目时，将打开一个包含漏洞详细信息的飞出面板、一个打开软件页的链接以及修正和例外选项。 如果你的设备通过设备加入 Azure Active Directory并且你已启用 Defender for Endpoint 中的 Intune 连接，则还可以在 Intune 中打开票证。
 [**修正**](tvm-remediation.md) | 请参阅已创建的修正活动和建议例外。
 [**软件库存**](tvm-software-inventory.md) | 请参阅组织中易受攻击的软件列表，以及漏洞和威胁信息。
 [**漏洞**](tvm-weaknesses.md) | 请参阅组织中 C CV 的常见 (曝光) 列表。

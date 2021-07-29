@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5a4beaefb2fcc12d46cf61c22644217dce1807a6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d8b7bbd2a5f1050b7897af3b208346330172ef94
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845362"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623200"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
 
@@ -34,48 +34,59 @@ Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) �
 > [!NOTE]
 > 若要获取所有时区的列表，请运行以下命令： `timedatectl list-timezones`<br>
 > 时区示例：
+>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
 ## <a name="to-set-the-cron-job"></a>设置 Cron 作业
+
 使用以下命令：
 
-**备份 crontab 条目**
+### <a name="backup-crontab-entries"></a>备份 crontab 条目
 
-`sudo crontab -l > /var/tmp/cron_backup_200919.dat`
+```bash
+sudo crontab -l > /var/tmp/cron_backup_200919.dat
+```
 
 > [!NOTE]
 > 其中 200919 == YRMMDD
 
 > [!TIP]
-> 在编辑或删除之前，请执行这一操作。 <br>
+> 在编辑或删除之前，请执行这一操作。
 
-若要编辑 crontab，并添加一个新作业作为根用户： <br>
-`sudo crontab -e`
+若要编辑 crontab，并添加一个新作业作为根用户：
+
+```bash
+sudo crontab -e
+```
 
 > [!NOTE]
 > 默认编辑器为 VIM。
 
 你可能会看到：
 
-0 * * * * * /etc/opt/microsoft/mdatp/logrorate.sh
+```outbou
+0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
+```
 
 按"插入"
 
 添加以下条目：
 
+```bash
 CRON_TZ=America/Los_Angeles
 
 0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
+```
 
 > [!NOTE]
->本示例中，我们设置为 00 分钟，即 2 a.m。  (24 小时制的 24 小时制) 、月中的任意一天、任何一个月的星期六。 这意味着它将于星期六的上午 2：00 运行。 太平洋 (UTC –8) 。
+> 本示例中，我们设置为 00 分钟，即 2 a.m。  (24 小时制的 24 小时制) 、月中的任意一天、任何一个月的星期六。 这意味着它将于星期六的上午 2：00 运行。 太平洋 (UTC -8) 。
 
 按"Esc"
 
-键入不带双引号的"：wq"。
+键入不带 `:wq` 双引号的" "。
 
 > [!NOTE]
 > w == 写入，q == quit
@@ -84,32 +95,45 @@ CRON_TZ=America/Los_Angeles
 
 :::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
 
-**检查 cron 作业运行**
+#### <a name="to-inspect-cron-job-runs"></a>检查 cron 作业运行
 
-`sudo grep mdatp /var/log/cron`
+```bash
+sudo grep mdatp /var/log/cron
+```
 
-**检查 mdatp_cron_job.log**
+#### <a name="to-inspect-the-mdatp_cron_joblog"></a>检查 mdatp_cron_job.log*
 
-`sudo nano mdatp_cron_job.log`
+```bash
+sudo nano mdatp_cron_job.log
+```
 
 ## <a name="for-those-who-use-ansible-chef-or-puppet"></a>对于使用"Ansible"、"用户"或"时形"的
 
 使用以下命令：
+
 ### <a name="to-set-cron-jobs-in-ansible"></a>在 Ansible 中设置 cron 作业
 
-`cron – Manage cron.d and crontab entries`
+```bash
+cron - Manage cron.d and crontab entries
 
-有关详细信息，请参阅 [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html)。
+See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
-### <a name="to-set-crontabs-in-chef"></a>在管理中设置裁剪
-`cron resource`
+### To set crontabs in Chef
 
-有关详细信息，请参阅 [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/)。
+```bash
+cron resource
+```bash
+
+```
+有关详细信息，请参阅 <https://docs.chef.io/resources/cron/>。
 
 ### <a name="to-set-cron-jobs-in-puppet"></a>在"创建"中设置 cron 作业
-资源类型：cron
 
-有关详细信息，请参阅 [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html)。
+```bash
+Resource Type: cron
+```
+
+有关详细信息，请参阅 <https://puppet.com/docs/puppet/5.5/types/cron.html>。
 
 使用改进实现自动化：Cron 作业和计划任务
 
@@ -117,56 +141,74 @@ CRON_TZ=America/Los_Angeles
 
 ## <a name="additional-information"></a>其他信息
 
-**获取有关 crontab 的帮助**
+### <a name="to-get-help-with-crontab"></a>获取有关 crontab 的帮助
 
-`man crontab`
+```bash
+man crontab
+```
 
-**获取当前用户的 crontab 文件列表**
+### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>获取当前用户的 crontab 文件列表
 
-`crontab -l`
+```bash
+crontab -l
+```
 
-**获取其他用户的 crontab 文件列表**
+### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>获取其他用户的 crontab 文件列表
 
-`crontab -u username -l`
+```bash
+crontab -u username -l
+```
 
-**备份 crontab 条目**
+### <a name="to-backup-crontab-entries"></a>备份 crontab 条目
 
-`crontab -l > /var/tmp/cron_backup.dat`
+```bash
+crontab -l > /var/tmp/cron_backup.dat
+```
 
 > [!TIP]
-> 在编辑或删除之前，请执行这一操作。 <br>
+> 在编辑或删除之前，请执行这一操作。
 
-**还原 crontab 条目**
+### <a name="to-restore-crontab-entries"></a>还原 crontab 条目
 
-`crontab /var/tmp/cron_backup.dat`
+```bash
+crontab /var/tmp/cron_backup.dat
+```
 
-**编辑 crontab 并作为根用户添加新作业**
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>编辑 crontab 并作为根用户添加新作业
 
-`sudo crontab -e`
+```bash
+sudo crontab -e
+```
 
-**编辑 crontab 并添加新作业**
+### <a name="to-edit-the-crontab-and-add-a-new-job"></a>编辑 crontab 并添加新作业
 
-`crontab -e`
+```bash
+crontab -e
+```
 
-**编辑其他用户的 crontab 条目**
+### <a name="to-edit-other-users-crontab-entries"></a>编辑其他用户的 crontab 条目
 
-`crontab -u username -e`
+```bash
+crontab -u username -e
+```
 
-**删除所有 crontab 条目**
+### <a name="to-remove-all-crontab-entries"></a>删除所有 crontab 条目
 
-`crontab -r`
+```bash
+crontab -r
+```
 
-**删除其他用户的 crontab 条目**
+### <a name="to-remove-other-users-crontab-entries"></a>删除其他用户的 crontab 条目
 
-`crontab -u username -r`
+```bash
+crontab -u username -r
+```
 
-**说明**
+### <a name="explanation"></a>说明
 
-+—————-分钟 (值：0 – 59)  (特殊字符： 、 – * /)   <br>
-|+————-小时 (值：0 – 23)  (特殊字符： 、 – * /)  <br>
-| |+———-月中的 (值：1 – 31)  (特殊字符： 、 – * / L W C)   <br>
-| | |+——-月 (值：1 – 12)  (特殊字符：，- * / )   <br>
-| | | |+-- 一周中的 (值：0 – 6)  (Sunday=0 或 7)  (特殊字符： 、 – * / L W C)  <br>
++—————-分钟 (值：0 - 59)  (特殊字符： 、 - * /)   <br>
+|+————-小时 (值：0 - 23)  (特殊字符： 、 - * /)  <br>
+| |+———-月中的 (值：1 - 31)  (特殊字符： 、 - * / L W C)   <br>
+| | |+——-月 (值：1 - 12)  (特殊字符：，- * / )   <br>
+| | | |+-- 一周中的 (值：0 - 6)  (Sunday=0 或 7)  (特殊字符： 、 - * / L W C)  <br>
 | | | | |*****要执行的命令
-
-

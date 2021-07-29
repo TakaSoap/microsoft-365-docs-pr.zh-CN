@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ab0d0e97365b5ce38b29f2b0d65e3aea48d6c28c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c704702bedaabaac7b446590bb1268b1d286562b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769925"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622912"
 ---
 # <a name="get-user-related-alerts-api"></a>获取与用户相关的警报 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "52769925"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -47,44 +47,47 @@ ms.locfileid: "52769925"
 
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Alert.Read.All |    "读取所有警报"
-应用程序 |   Alert.ReadWrite.All |   "读取和写入所有警报"
+应用程序|Alert.Read.All|"读取所有警报"
+应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)。
+>
+> - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)。
 >- 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/users/{id}/alerts
 ```
 
 **ID 不是完整的 UPN，而只是用户名。 (，例如，若要检索用户 user1@contoso.com /api/users/user1/alerts)**
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功且用户存在 - 200 正常。 如果用户不存在 - 404 未找到。 
 
+如果成功且用户存在 - 200 正常。 如果用户不存在 - 404 未找到。 
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64362598ff4b0512eb110917071e6d32abb8ede9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fbcdad37eb76ca871d2b50a2146ba8a4b3b3d115
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933477"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622775"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933477"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 事件时间线是一个风险新闻源，可帮助您解释通过新漏洞或漏洞向组织引入风险的方式。 您可以查看可能会影响组织风险的事件。 例如，你可以找到引入的新漏洞、被利用的漏洞、添加到攻击工具包的漏洞等。
 

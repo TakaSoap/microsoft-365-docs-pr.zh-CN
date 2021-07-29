@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4919f082c115d8a57960ec49532b6cda6a63833f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 673f6f92b96cb1cbe42c2fa513aa3c57713be88f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998724"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622936"
 ---
 # <a name="get-ip-statistics-api"></a>获取 IP 统计信息 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "52998724"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,16 +44,17 @@ ms.locfileid: "52998724"
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Ip.Read.All |   "读取 IP 地址配置文件"
-委派（工作或学校帐户） | Ip.Read.All |  "读取 IP 地址配置文件"
+应用程序|Ip.Read.All|"读取 IP 地址配置文件"
+委派（工作或学校帐户）|Ip.Read.All|"读取 IP 地址配置文件"
 
->[!NOTE]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -63,26 +64,27 @@ GET /api/ips/{ip}/stats
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-lookBackHours | Int32 | 定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选。**
+lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选。**
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功且 ip 存在 - 200 正常，正文中具有统计数据。 IP 不存在 - 404 未找到。
 
+如果成功且 ip 存在 - 200 正常，正文中具有统计数据。 IP 不存在 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
@@ -90,10 +92,9 @@ Empty
 GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBackHours=48
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
-
 
 ```json
 {
@@ -105,12 +106,11 @@ GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBac
 }
 ```
 
-
-| 名称 | 说明 |
-| :--- | :---------- |
-| 组织普遍程度 | 打开到此 IP 的网络连接的设备数。 |
-| 首次看到组织 | 组织中此 IP 的第一个连接。 |
-| 上次查看组织  | 组织中此 IP 的最后一个连接。 |
+|名称|说明|
+|---|---|
+|组织普遍程度|打开到此 IP 的网络连接的设备数。|
+|首次看到组织|组织中此 IP 的第一个连接。|
+|上次查看组织|组织中此 IP 的最后一个连接。|
 
 > [!NOTE]
-> 此统计信息基于过去 30 天的数据。 
+> 此统计信息基于过去 30 天的数据。

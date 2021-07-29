@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338705"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623344"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -32,7 +32,7 @@ ms.locfileid: "53338705"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
 
 Defender for Endpoint 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Defender for Endpoint 服务通信。
 
@@ -44,9 +44,7 @@ Defender for Endpoint 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传
 WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理设置，并且只能使用下列发现方法发现代理服务器：
 
 - 自动发现方法：
-
   - 透明代理
-
   - Web 代理自动发现协议 (WPAD)
 
     > [!NOTE]
@@ -55,8 +53,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 - 手动静态代理配置：
 
   - 基于注册表的配置
-
-  - 使用 netsh 命令配置的 WinHTTP – 仅适用于稳定拓扑中的桌面（例如：同一代理后面的公司网络中的桌面）
+  - 使用 netsh 命令配置的 WinHTTP：仅适用于稳定拓扑中的桌面 (例如：企业网络中位于同一代理服务器后面的桌面) 
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基于注册表的静态代理手动配置代理服务器
 
@@ -65,10 +62,10 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 > [!NOTE]
 > 在 Windows 10 或 Windows Server 2019 上使用此选项时，建议将以下 (或更高版本) 内部版本和累积更新汇总：
 >
-> - Windows 10 版本 1809或 Windows Server 2019 -https://support.microsoft.com/kb/5001384
-> - Windows 10，版本 1909 -https://support.microsoft.com/kb/4601380
-> - Windows 10，版本 2004 -https://support.microsoft.com/kb/4601382
-> - Windows 10，版本 20H2 -https://support.microsoft.com/kb/4601382
+> - Windows 10 版本 1809或 Windows Server 2019 -<https://support.microsoft.com/kb/5001384>
+> - Windows 10，版本 1909 -<https://support.microsoft.com/kb/4601380>
+> - Windows 10，版本 2004 -<https://support.microsoft.com/kb/4601382>
+> - Windows 10，版本 20H2 -<https://support.microsoft.com/kb/4601382>
 >
 > 这些更新改进了 CnC (Command and Control) 连接和可靠性。
 
@@ -108,9 +105,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 > - 更改拓扑结构（例如 (：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
 
 1. 打开提升的命令行：
-
    1. 转到“**开始**”并键入“**cmd**”。
-
    1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
 2. 输入以下命令，再按 **Enter**：
@@ -135,9 +130,13 @@ netsh winhttp reset proxy
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
-| 域列表电子表格 | 说明 |
-|:-----|:-----|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+**** 
+|域列表电子表格|说明|
+|---|---|
+|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|
 
 如果代理或防火墙启用了 HTTPS 扫描（SSL 检查），则从 HTTPS 扫描中排除上表中列出的域。
 
@@ -154,12 +153,16 @@ netsh winhttp reset proxy
 
 以下信息列出了与 Log Analytics 代理通信所需的代理和防火墙配置信息 (对于早期版本的 Windows（如 Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2 和 Windows Server 2016）通常称为 Microsoft Monitoring Agent) 。
 
-|代理资源|端口 |方向 |绕过 HTTPS 检查|
-|------|---------|--------|--------|
-|*.ods.opinsights.azure.com |端口 443 |出站|是 |  
-|*.oms.opinsights.azure.com |端口 443 |出站|是 |  
-|*.blob.core.windows.net |端口 443 |出站|是 |
-|*.azure-automation.net |端口 443 |出站|是 |  
+<br>
+
+****
+
+|代理资源|端口|方向|绕过 HTTPS 检查|
+|---|---|---|---|
+|*.ods.opinsights.azure.com|端口 443|出站|是|
+|*.oms.opinsights.azure.com|端口 443|出站|是|
+|*.blob.core.windows.net|端口 443|出站|是|
+|*.azure-automation.net|端口 443|出站|是|
 
 > [!NOTE]
 > 作为基于云的解决方案，IP 范围可能会更改。 建议移动到 DNS 解析设置。
@@ -189,33 +192,31 @@ netsh winhttp reset proxy
 
 验证代理配置是否成功完成，WinHTTP 是否可以在你的环境中发现代理服务器并通过代理服务器进行通信，以及代理服务器是否允许到 Defender for Endpoint 服务 URL 的通信。
 
-1. 将 [MDATP 客户端分析器工具](https://aka.ms/mdatpanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
+1. 将 [Micrsofot Defender for Endpoint Client Analyzer](https://aka.ms/mdeanalyzer) 工具下载到运行 Defender for Endpoint 传感器的电脑。
 
-2. 提取设备上 MDATPClientAnalyzer.zip 的内容。
+2. 提取设备上MDEClientAnalyzer.zip内容。
 
 3. 打开提升的命令行：
-
    1. 转到“**开始**”并键入“**cmd**”。
-
    1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
 4. 输入以下命令，再按 **Enter**：
 
     ```PowerShell
-    HardDrivePath\MDATPClientAnalyzer.cmd
+    HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    将 *HardDrivePath* 替换为下载 MDATPClientAnalyzer 工具的路径，例如：
+    将 *HardDrivePath* 替换为下载 MDEClientAnalyzer 工具的路径，例如：
 
     ```PowerShell
-    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
+    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. 提取 *MDATPClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中创建的文件。
+5. 提取 *MDEClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中创建的文件。
 
-6. 打开 *MDATPClientAnalyzerResult.txt* 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。
+6. 打开 *MDEClientAnalyzerResult.txt* 并验证是否执行了代理配置步骤，以启用服务器发现和访问服务 URL。
 
-   该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它将结果打印到每个可能用于与 Defender for Endpoint 服务进行通信的 URL 的 *MDATPClientAnalyzerResult.txt* 文件中。 例如：
+   该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它会将每个 URL的结果输出到MDEClientAnalyzerResult.txt文件中，这些 URL 可能用于与 Defender for Endpoint 服务进行通信。 例如：
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -231,7 +232,7 @@ netsh winhttp reset proxy
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后，可以使用在代理服务器 中启用对 Defender [for Endpoint 服务 URL](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)的访问中显示的表中的 URL。 将使用的 URL 取决于在载入过程中选择的区域。
 
 > [!NOTE]
-> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
+> 连接分析器工具云连接检查与攻击面减少规则阻止源自 [PSExec](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建不兼容。 需要暂时禁用此规则才能运行连接工具。 或者，可以在运行分析器时临时添加 [ASR](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) 排除项。
 >
 > 当在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到直接。
 

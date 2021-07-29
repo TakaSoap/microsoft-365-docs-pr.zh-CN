@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d58fc87d16bb58199c95933d85752008a08a0e81
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d5152940bee3637352d61fea6f251144644ca3ae
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879661"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621903"
 ---
 #  <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -37,7 +37,7 @@ ms.locfileid: "52879661"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ ms.locfileid: "52879661"
 
 ## <a name="limitations"></a>限制
 
-1.  此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅 [入门](apis-intro.md)。
 
-| 权限类型                    | 权限           | 权限显示名称                   |
-|------------------------------------|----------------------|-------------------------------------------|
-| 应用程序                        | Machine.LiveResponse | 在特定的计算机上运行实时响应 |
-| 委派（工作或学校帐户） | Machine.LiveResponse | 在特定的计算机上运行实时响应 |
+|权限类型|权限|权限显示名称|
+|---|---|---|
+|应用程序|Machine.LiveResponse|在特定的计算机上运行实时响应|
+|委派（工作或学校帐户）|Machine.LiveResponse|在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -69,9 +69,9 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      | 类型 | 说明               |
-|---------------|----------|-------------------------------|
-| Authorization | String   | Bearer {token}。必需。 |
+|名称|类型|说明|
+|---|---|---|
+|Authorization|字符串|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -83,25 +83,24 @@ Empty
 
 *Runscript 脚本属性：*
 
-| 属性  | 说明                       |
-|---------------|---------------------------------------|
-| name          | 已执行的脚本名称                  |
-| exit_code     | 已执行的脚本退出代码             |
-| script_output | 已执行的脚本标准输出       |
-| script_error  | 已执行的脚本标准错误输出 |
+|属性|说明|
+|---|---|
+|name|已执行的脚本名称|
+|exit_code|已执行的脚本退出代码|
+|script_output|已执行的脚本标准输出|
+|script_error|已执行的脚本标准错误输出|
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
 ```HTTP
-GET
-https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
+GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
@@ -116,7 +115,7 @@ Content-type： application/json
 }
 ```
 
-*文件内容：* 
+*文件内容：*
 
 ```JSON
 {

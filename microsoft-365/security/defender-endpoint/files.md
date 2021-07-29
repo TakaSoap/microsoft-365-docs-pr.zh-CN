@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7a08ecd8b0086596e27a7accbadedf649a353ec2
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290011"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621963"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "53290011"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -59,13 +59,13 @@ ms.locfileid: "53290011"
 |globalLastObserved | DateTimeOffset | 上次观测到该文件的时间 |
 |大小 | Nullable long | 文件大小 |
 |fileType | 字符串 | 文件类型 |
-|isPeFile | Boolean | 如果文件是可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
+|isPeFile | 布尔 | 如果文件是可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
 |filePublisher | 字符串 | 文件发布者 |
 |fileProductName | 字符串 | 产品名称 |
 |signer | 字符串 | 文件签名者 |
 |issuer | 字符串 | 文件颁发者 |
 |signerHash | 字符串 | 签名证书的哈希 |
-|isValidCertificate | Boolean | Microsoft Defender for Endpoint 代理是否成功验证了对证书的签名 |
+|isValidCertificate | 布尔 | Microsoft Defender for Endpoint 代理是否成功验证了对证书的签名 |
 |determinationType | 字符串 | 文件的确定类型 |
 |determinationValue | 字符串 | 确定值 |
 

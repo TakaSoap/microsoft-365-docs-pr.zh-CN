@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dcb00d0d2afc7f873ea9c4afa3174ac46babf879
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 013b742fae2b4c28de68034858f870da00245656
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770777"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623224"
 ---
 # <a name="get-machineaction-api"></a>获取 machineAction API
 
@@ -29,69 +29,71 @@ ms.locfileid: "52770777"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API 说明
+
 按其 ID [检索](machineaction.md) 特定计算机操作。
 
-
 ## <a name="limitations"></a>限制
+
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
-
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅对 [终结点 API 使用 Defender](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Machine.Read.All |  "读取所有计算机配置文件"
-应用程序 |   Machine.ReadWrite.All | "读取和写入所有计算机信息"
-委派（工作或学校帐户） | Machine.Read | "读取计算机信息"
-委派（工作或学校帐户） | Machine.ReadWrite | "读取和写入计算机信息"
+应用程序|Machine.Read.All|"读取所有计算机配置文件"
+应用程序|Machine.ReadWrite.All|"读取和写入所有计算机信息"
+委派（工作或学校帐户）|Machine.Read|"读取计算机信息"
+委派（工作或学校帐户）|Machine.ReadWrite|"读取和写入计算机信息"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+>
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
+
 如果成功，此方法使用 Machine Action 实体返回 200 Ok [响应](machineaction.md) 代码。 如果未找到具有指定 ID 的机器操作实体 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="example-request"></a>示例请求
 
 下面是一个请求示例。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
-
-```
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
@@ -108,6 +110,4 @@ Content-type: application/json
     "lastUpdateDateTimeUtc": "2019-01-02T14:40:44.6596267Z",
     "relatedFileInfo": null
 }
-
-
 ```

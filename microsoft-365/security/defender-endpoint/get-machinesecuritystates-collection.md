@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9dab4bdccc1fead5bc2cc5b9bdff8f2a45b6c8db
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6784d1cf6716a1f7d76c7660ff5bbf24e2aa5594
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200361"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623212"
 ---
 # <a name="get-machines-security-states-collection-api"></a>获取计算机安全状态集合 API
 
@@ -29,7 +29,7 @@ ms.locfileid: "51200361"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,44 +37,49 @@ ms.locfileid: "51200361"
 
 检索设备安全状态的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
+
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /testwdatppreview/machinesecuritystates
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-标头 | 值 
+标头|值
 :---|:---
-Authorization | Bearer {token}。 **必需**。
-内容类型 | application/json
+Authorization|Bearer {token}。 **必需**。
+内容类型|application/json
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
+
 如果成功 - 200 正常。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
 Content-type: application/json
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
-字段 *ID* 包含设备 ID，并且等于设备信息中的字段 *ID**。 
 
-```
+字段 *ID* 包含设备 ID，并且等于设备信息中的字段 *ID**。
+
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -93,7 +98,7 @@ Content-type: application/json
                 "EdrImpairedCommunications"
             ]
         },
-        …
+        ...
     ]
 }
 ```

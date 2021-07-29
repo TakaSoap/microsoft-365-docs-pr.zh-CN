@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5869e8406158eb6d6b2f48b3083cb9011bb3951d
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: abcfa00f13857fa5b3fcd83a2e4ee073c6143540
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604341"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621831"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>配置Microsoft Defender 安全中心设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "51604341"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)。
 
 使用设置 **菜单** 修改常规设置、高级功能、启用预览体验、电子邮件通知和自定义威胁情报功能。
 
@@ -40,7 +40,7 @@ ms.locfileid: "51604341"
 主题 | 说明
 :---|:---
 常规设置 | 修改之前在载入过程中定义的常规设置。
-Permissions | 使用 RBAC 和设备组管理门户访问。
+权限 | 使用 RBAC 和设备组管理门户访问。
 API | 启用威胁情报和 SIEM 集成。
 Rules | 配置抑制规则和自动化设置。
 设备管理 | 载入和载出设备。

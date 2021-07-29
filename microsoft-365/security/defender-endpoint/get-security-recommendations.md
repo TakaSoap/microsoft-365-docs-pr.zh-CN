@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4498761fd21331821cf4676bfe65630be5436ce5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 955d082d9139479a9bcda2fbad629128d909f03c
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845123"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624292"
 ---
 # <a name="get-security-recommendations"></a>获取安全建议
 
@@ -29,7 +29,7 @@ ms.locfileid: "52845123"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,48 +40,49 @@ ms.locfileid: "52845123"
 检索与给定设备 ID 相关的安全建议集合。
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 | SecurityRecommendation.Read.All | "读取威胁和漏洞管理安全建议信息"
-委派（工作或学校帐户） | SecurityRecommendation.Read |  "读取威胁和漏洞管理安全建议信息"
+应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /api/machines/{machineId}/recommendations
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功，此方法在正文中返回 200 OK 以及安全建议。
 
+如果成功，此方法在正文中返回 200 OK 以及安全建议。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request-example"></a>请求示例
 
 下面是一个请求示例。
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/recommendations
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 
-
-```
+```json
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
@@ -107,10 +108,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
             "nonProductivityImpactedAssets": 0,
             "relatedComponent": "Git"
         },
-…
+...
 }
 ```
 
 ## <a name="related-topics"></a>相关主题
+
 - [基于风险的威胁&漏洞管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [威胁&漏洞安全建议](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

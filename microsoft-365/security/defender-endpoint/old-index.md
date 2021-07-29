@@ -14,14 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3c49575e7a1d88c15907fdd7c118b71071949b23
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840990"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622840"
 ---
 # <a name="threat-protection"></a>威胁防护
+
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。 Defender for Endpoint 可保护终结点免受网络威胁，检测高级攻击和数据泄露，自动执行安全事件，并改进安全状况。
 
 > [!TIP]
@@ -39,31 +40,30 @@ ms.locfileid: "52840990"
 </tr>
 <tr>
 <td colspan="7">
-<a href="#apis"><center><b>集中配置和管理、API</a></b></center></td>
+<a href="#apis"><center><b>集中配置和管理，API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
 
 <a name="tvm"></a>
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
-
-**[威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)**<br>
-此内置功能使用基于游戏变化风险的方法发现、确定终结点漏洞和错误配置的优先顺序并修正。
+**[威胁& 漏洞管理](next-gen-threat-and-vuln-mgt.md)**<br>
+此内置功能使用改变格局的基于风险的方法，以实现对终结点漏洞和错误配置的发现、优先级确定和修复。
 
 - [威胁& 漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [入门](tvm-prerequisites.md)
 - [访问安全状态](tvm-dashboard-insights.md)
-- [改善安全状况并降低风险](tvm-security-recommendation.md)
+- [提升安全性并降低风险](tvm-security-recommendation.md)
 - [了解设备上的漏洞](tvm-software-inventory.md)
 
 <a name="asr"></a>
 
-**[减少攻击面](overview-attack-surface-reduction.md)**<br>
+**[攻击面减少](overview-attack-surface-reduction.md)**<br>
 攻击面减少功能集在堆栈中提供第一道防线。 通过确保正确设置配置设置并应用攻击缓解技术，这些功能集可抵御攻击和利用。
 
 - [基于硬件的隔离](overview-hardware-based-isolation.md)
@@ -78,7 +78,7 @@ ms.locfileid: "52840990"
 <a name="ngp"></a>
 
 **[下一代保护](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
-为了进一步强化网络的安全外围，Microsoft Defender for Endpoint 使用旨在捕获所有类型的新兴威胁的下一代保护。
+为了进一步巩固你的网络的安全外围，Microsoft Defender for Endpoint 使用下一代保护来捕获所有类型的新兴威胁。
 
 - [行为监视](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
@@ -120,7 +120,7 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻
 
 <a name="apis"></a>
 
-**[集中配置和管理、API](management-apis.md)**<br>
+**[集中配置和管理，API](management-apis.md)**<br>
 将 Microsoft Defender for Endpoint 集成到现有工作流中。
 - [载入](onboard-configure.md)
 - [API 和 SIEM 集成](configure-siem.md)
@@ -139,5 +139,5 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
  借助 Microsoft 365 Defender，Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。

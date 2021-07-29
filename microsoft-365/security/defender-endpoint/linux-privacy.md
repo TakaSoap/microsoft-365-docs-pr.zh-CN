@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 3eb4ebbf9da14e90e812eb28f58ba262a218b207
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651328"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622876"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隐私
 
@@ -31,7 +31,7 @@ ms.locfileid: "52651328"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选择收集和使用数据方式时需要的信息和控件。
 
@@ -151,7 +151,7 @@ The privacy controls for the various types of data described in the preceding se
 | ---------------- | ----------- |
 | from_version     | 原始安全智能版本。 |
 | to_version       | 新的安全智能版本。 |
-| 状态           | 指示成功或失败的更新的状态。 |
+| status           | 指示成功或失败的更新的状态。 |
 | using_proxy      | 更新是否通过代理完成。 |
 | error            | 更新失败时的错误代码。 |
 | reason           | 更新失败时出现错误消息。 |

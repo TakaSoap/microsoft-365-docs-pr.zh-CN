@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 9c55ca17f4d0fe8cd5911e1d42d1b20588da28ef
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: d0dd39197835574a5982d50486026b713f71e8d5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542456"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624184"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -36,7 +36,7 @@ ms.locfileid: "53542456"
 
 ## <a name="supported-operating-systems"></a>支持的操作系统 
 
-下表列出了有关此表中引用的操作系统版本的信息的链接。
+下表按字母顺序列出了攻击面减少规则。 一个选中标记，指示该列中列出的操作系统支持该规则。
 
 > [!Note]
 >
@@ -63,18 +63,6 @@ ms.locfileid: "53542456"
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | ![支持](images/checkmark.png) <br><br> 版本 1803 或更高版本 | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
 | **规则名称** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windows服务器** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
-
-### <a name="operating-system-version"></a>操作系统版本
-
-- [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 专业版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 企业版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [WindowsServer 版本 1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="supported-configuration-management-systems"></a>支持的配置管理系统
 
@@ -119,7 +107,7 @@ ms.locfileid: "53542456"
 >
 > 您还可以使用 [PowerShell](enable-attack-surface-reduction.md#powershell)配置此规则。
 >
-> 若要检查驱动程序，请使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
+> 若要检查驱动程序，请使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/wdsi/driversubmission)。
 
 Intune 名称： `Block abuse of exploited vulnerable signed drivers`
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2884ffc695abc1c6b4b5be9bbd7c9ad37ad05439
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: c9814513049f06a6525c80cc922789f60bf39e44
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651292"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622852"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
@@ -32,7 +32,7 @@ ms.locfileid: "52651292"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 Microsoft 致力于为您提供在 macOS 上使用 Microsoft Defender for Endpoint 时，选择收集和使用数据方式时需要的信息和控件。
 
@@ -149,7 +149,7 @@ The privacy controls for the various types of data described in the preceding se
 | ---------------- | ----------- |
 | from_version     | 原始安全智能版本。 |
 | to_version       | 新的安全智能版本。 |
-| 状态           | 指示成功或失败的更新的状态。 |
+| status           | 指示成功或失败的更新的状态。 |
 | using_proxy      | 更新是否通过代理完成。 |
 | error            | 更新失败时的错误代码。 |
 | reason           | 如果更新的存档，则显示错误消息。 |

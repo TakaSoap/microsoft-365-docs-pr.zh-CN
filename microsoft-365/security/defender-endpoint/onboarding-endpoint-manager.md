@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 397aa8a0e8f0523c9975d40759d39369c221222b
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cdd188a58bd80885c90b87e3d42c999a2afd14c1
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228971"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53622816"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -34,7 +34,7 @@ ms.locfileid: "53228971"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 本文是部署指南的一部分，并作为示例载入方法。
 
@@ -122,7 +122,7 @@ ms.locfileid: "53228971"
 然后，继续创建几种不同类型的终结点安全策略：
 
 - [下一代保护](#next-generation-protection)
-- [减少攻击面](#attack-surface-reduction--attack-surface-reduction-rules)
+- [减少攻击面](#attack-surface-reduction---attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>终结点检测和响应
 
@@ -181,7 +181,7 @@ ms.locfileid: "53228971"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal12 的图像](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. 选择 **平台 - Windows 10和更高版本 - Windows配置文件 – Microsoft Defender 防病毒>创建**。
+3. 选择 **平台 - Windows 10和更高版本 - Windows配置文件 - Microsoft Defender 防病毒>创建**。
 
 4. 输入名称和说明，然后选择下一  **步**。
 
@@ -213,7 +213,7 @@ ms.locfileid: "53228971"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal18 的图像](images/38180219e632d6e4ec7bd25a46398da8.png)
 
-### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>攻击面减少 – 攻击面减少规则
+### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>攻击面减少 - 攻击面减少规则
 
 1. 打开 MEM 门户。
 
@@ -221,7 +221,7 @@ ms.locfileid: "53228971"
 
 3. 选择 **"创建策略"。**
 
-4. 选择 **平台 - Windows 10和更高版本 – 配置文件 - 攻击面减少规则>创建**。
+4. 选择 **平台 - Windows 10和更高版本 - 配置文件 - 攻击面减少规则>创建**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager门户的图像19](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -261,7 +261,7 @@ ms.locfileid: "53228971"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal25 的图像](images/7a631d17cc42500dacad4e995823ffef.png)
 
-### <a name="attack-surface-reduction--web-protection"></a>攻击面减少 – Web 保护
+### <a name="attack-surface-reduction---web-protection"></a>攻击面减少 - Web 保护
 
 1. 打开 MEM 门户。
 
@@ -269,7 +269,7 @@ ms.locfileid: "53228971"
 
 3. 选择 **"创建策略"。**
 
-4. 选择 **Windows 10"和"更高版本 – Web >创建"。**
+4. 选择 **"Windows 10"和"稍后 - Web >创建"。**
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal26 的图像](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
@@ -311,7 +311,7 @@ ms.locfileid: "53228971"
 
 ## <a name="validate-configuration-settings"></a>验证配置设置
 
-### <a name="confirm-policies-have-been-applied"></a>确认已应用策略
+### <a name="confirm-policies-have-been-applied"></a>确认策略已应用
 
 分配配置策略后，需要一些时间应用。
 
@@ -322,22 +322,22 @@ ms.locfileid: "53228971"
 1. 打开 MEM 门户并导航到相关策略，如上述步骤所示。 以下示例显示了下一代保护设置。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager门户的图像33 ](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Microsoft Endpoint Manager portal33 的图像](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2. 选择 **配置策略** 以查看策略状态。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager门户的图像34 ](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![Microsoft Endpoint Manager门户的图像34](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. 选择  **"设备状态** "以查看状态。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal35 的图像 ](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![Microsoft Endpoint Manager门户的图像35](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. 选择  **"用户状态** "以查看状态。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal36 的图像 ](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
+    > [![Microsoft Endpoint Manager门户的图像36](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
 5. 选择  **"每设置状态** "以查看状态。
 
@@ -345,26 +345,26 @@ ms.locfileid: "53228971"
     > 此视图对于标识与另一个策略冲突的任何设置非常有用。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager门户的图像37 ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![Microsoft Endpoint Manager portal37 的图像](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### <a name="endpoint-detection-and-response"></a>终结点检测和响应
+### <a name="confirm-endpoint-detection-and-response"></a>确认终结点检测和响应
 
-1. 在应用配置之前，不应启动 Defender for Endpoint Protection 服务。
+1. 在应用配置之前，Endpoint Protection Defender for Endpoint Protection服务。
 
     > [!div class="mx-imgBorder"]
-    > [![服务面板的图像 1 ](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
+    > [![服务面板的图像 1](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2. 应用配置后，应启动 Defender for Endpoint Protection Service。
 
     > [!div class="mx-imgBorder"]
-    > [![服务面板 2 的图像 ](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
+    > [![服务面板 2 的图像](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3. 在设备上运行服务后，设备将显示在 Microsoft Defender 安全中心中。
 
     > [!div class="mx-imgBorder"]
-    > [![图像Microsoft Defender 安全中心 ](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![图像Microsoft Defender 安全中心](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### <a name="next-generation-protection"></a>下一代保护
+### <a name="confirm-next-generation-protection"></a>确认下一代保护
 
 1. 在测试设备上应用策略之前，你应该能够手动管理设置，如下所示。
 
@@ -379,7 +379,7 @@ ms.locfileid: "53228971"
     > [!div class="mx-imgBorder"]
     > ![设置页面 2 的图像](images/9341428b2d3164ca63d7d4eaa5cff642.png)
 
-### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>攻击面减少 – 攻击面减少规则
+### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>确认攻击面减少 - 攻击面减少规则
 
 1. 在测试设备上应用该策略之前，笔使用 PowerShell 窗口并键入 `Get-MpPreference` 。
 
@@ -399,7 +399,7 @@ ms.locfileid: "53228971"
 
     ![命令行 2 的图像](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### <a name="attack-surface-reduction--web-protection"></a>攻击面减少 – Web 保护
+### <a name="confirm-attack-surface-reduction---web-protection"></a>确认攻击面减少 - Web 保护
 
 1. 在测试设备上，打开 PowerShell Windows键入 `(Get-MpPreference).EnableNetworkProtection` 。
 

@@ -9,28 +9,16 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: de608fa58d0267050b510ef8308d716b608f8e37
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544681"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624436"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>使用 Microsoft 托管桌面预览和测试 Windows 11
 
  如何注册并参与Windows 11 兼容性测试Microsoft 托管桌面计划。 有关通常Windows 11 Microsoft 托管桌面，请参阅 Windows [11 和 Microsoft 托管桌面。](../intro/win11-overview.md) 
-
-## <a name="check-device-eligibility"></a>检查设备资格
-
-到目前为止，超过 95% Microsoft 托管桌面设备符合[11](/windows/whats-new/windows-11-requirements)Windows条件。 你可以从应用请求有关设备资格状态Microsoft 托管桌面。 若要提交请求，请按照以下步骤操作：
-
-1. 与服务工程团队Microsoft 托管桌面新服务请求。 如果你需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
-2. 对字段使用这些值：
-    - 标题：Windows 11 设备资格
-    - 请求类型：信息请求
-    - 类别：设备
-    - 子类别：其他
-
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>将设备添加到 Windows 11 测试组
 

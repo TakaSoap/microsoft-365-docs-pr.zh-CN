@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9ec8610957af0bc7741848e7c7bd4fe850f5e32
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a94c9e45fca9e7e5be2dde04d48267fb1c453999
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770417"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624280"
 ---
 # <a name="list-indicators-api"></a>列表指示器 API
 
@@ -29,69 +29,74 @@ ms.locfileid: "52770417"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API 说明
-检索所有活动指示器 [的集合](ti-indicator.md)。
-<br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
-<br>OData 的 ```$filter``` 查询在：、 ```indicatorValue``` ```indicatorType``` ```creationTimeDateTimeUtc``` 和 ```createdBy``` ```action``` 属性上 ```severity``` 受支持。
-<br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)
 
+检索所有活动指示器 [的集合](ti-indicator.md)。
+
+支持 [OData V4 查询](https://www.odata.org/documentation/)。
+
+OData 的 `$filter` 查询在：、 `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` 和 `createdBy` `action` 属性上 `severity` 受支持。
+
+请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>限制
+
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。 
 
-
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [入门](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Ti.ReadWrite |  "读取和写入指示器"
-应用程序 |   Ti.ReadWrite.All |  "读取和写入所有指示器"
-委派（工作或学校帐户） |    Ti.ReadWrite |  "读取和写入指示器"
+应用程序|Ti.ReadWrite|"读取和写入指示器"
+应用程序|Ti.ReadWrite.All|"读取和写入所有指示器"
+委派（工作或学校帐户）|Ti.ReadWrite|"读取和写入指示器"
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
+名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
-
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 200， Ok 响应代码和 [指示器](ti-indicator.md) 实体集合。
 
->[!Note]
+> [!NOTE]
 > 如果应用程序具有"Ti.ReadWrite.All"权限，它将公开给所有指示器。 否则，它将只对它创建的指示器公开。
 
-## <a name="example-1"></a>示例 1：
+## <a name="example-1"></a>示例 1
 
-**请求**
+### <a name="example-1-request"></a>示例 1 请求
 
 下面是获取所有指示器的请求示例
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
-**响应**
+### <a name="example-1-response"></a>示例 1 响应
 
 下面是一个响应示例。
 
-```
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
@@ -140,21 +145,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2"></a>示例 2：
+## <a name="example-2"></a>示例 2
 
-**请求**
+### <a name="example-2-request"></a>示例 2 请求
 
 下面是使用"AlertAndBlock"操作获取所有指示器的请求示例 
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
-**响应**
+### <a name="example-2-response"></a>示例 2 响应
 
 下面是一个响应示例。
 
-```
+```json
 HTTP/1.1 200 Ok
 Content-type: application/json
 {

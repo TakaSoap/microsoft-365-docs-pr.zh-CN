@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 425e5b9e0be12b89c8fd3b7201010b0f776cc6a5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: cd9849151fbaf0de3b353c5fe26c440368579e68
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934149"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623704"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>从 Microsoft Defender for Endpoint 服务载出设备
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934149"
 - Windows Server 2012 R2
 - Windows Server 2016
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)。
 
 按照相应说明进行操作，具体取决于你的首选部署方法。
 

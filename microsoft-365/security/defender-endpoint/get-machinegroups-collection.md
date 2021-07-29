@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b23dfc899d33858baf93c337471470b710426c57
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932771"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621891"
 ---
 # <a name="get-kb-collection-api"></a>获取 KB 集合 API
 
@@ -30,7 +30,7 @@ ms.locfileid: "51932771"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,11 +39,12 @@ ms.locfileid: "51932771"
 
 检索 RBAC 设备组的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 GET /testwdatppreview/machinegroups
 ```
 
@@ -55,23 +56,25 @@ Authorization | Bearer {token}。 **必需**。
 内容类型 | application/json
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
+
 如果成功 - 200 正常。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machinegroups
 Content-type: application/json
 ```
 
-**响应**
+### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
 字段 ID 包含设备组 **ID，** 并且等于设备信息中的字段 **rbacGroupId。** 只有 **对于尚未** 分配到任何组的所有设备的一个组，取消分组的字段才为 true。 像往常一样，此组的名称为"UnassignedGroup"。
@@ -88,6 +91,6 @@ Content-type: application/json
             "name":"UnassignedGroup",
             "description":"",
             "ungrouped":true},
-        …
+        ...
 }
 ```

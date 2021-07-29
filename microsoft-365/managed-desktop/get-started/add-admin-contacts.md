@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a95ab526d43e6eb243cb3de3a7b7c75e1e82b07f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286917"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624196"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -22,17 +22,6 @@ ms.locfileid: "53286917"
 
 > [!IMPORTANT]
 > 你可能已经在管理门户中添加了这些联系人。 如果是，请立即仔细检查联系人列表是否准确，因为Microsoft 托管桌面发生严重事件时必须能够联系他们。 
-
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory管理Microsoft 托管桌面的访问权限
-
-Microsoft 托管桌面管理门户要求访问该门户的用户具有以下 AD Azure Active Directory (角色) 之一：
-
-- 全局管理员
-- Intune 服务管理员
-- 全局读取者
-- 服务支持管理员
-
-全局管理员必须是在组织中注册Microsoft 托管桌面。 这五个角色在管理门户中具有相同的访问权限，可以启动和查看任务。 有关在 Azure AD 中分配这些角色的信息，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="admin-contact-areas-of-focus"></a>管理员重点关注的联系人区域
 

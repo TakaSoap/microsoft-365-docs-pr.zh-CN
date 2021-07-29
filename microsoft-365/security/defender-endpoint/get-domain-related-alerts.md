@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c5de779566f1aa8e53da10b9aa5bceb92f5a0a3c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5ca04c71c2a79297195f6c11ac65aa86e818ac85
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772253"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53623296"
 ---
 # <a name="get-domain-related-alerts-api"></a>获取与域相关的警报 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "52772253"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,6 +48,7 @@ ms.locfileid: "52772253"
 
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
 权限类型 |   权限  |   权限显示名称
@@ -57,9 +58,10 @@ ms.locfileid: "52772253"
 委派（工作或学校帐户） | Alert.Read | "读取警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
->[!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
->- 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+>
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
 >- 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
@@ -71,18 +73,19 @@ GET /api/domains/{domain}/alerts
 
 | 标头        | 值  |
 |:--------------|:-------|
-| Authorization | String |
+| Authorization | 字符串 |
 
 ## <a name="request-body"></a>请求正文
+
 Empty
 
 ## <a name="response"></a>响应
-如果成功且域存在 - 200 正常，警报 [实体](alerts.md) 列表可用。 如果域不存在 - 404 未找到。
 
+如果成功且域存在 - 200 正常，警报 [实体](alerts.md) 列表可用。 如果域不存在 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 

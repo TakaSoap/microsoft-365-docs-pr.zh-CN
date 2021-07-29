@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 471db75102eabd4d7fce14ec42d0a47562007aae
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fc16297b8c5c61f1dc70a6eb2567cafe4dd2e67f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229979"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53624364"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概述
 
@@ -33,7 +33,7 @@ ms.locfileid: "53229979"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)。
 
 
 Defender for Endpoint 支持多种选项，以确保客户可以轻松采用平台。
@@ -68,7 +68,7 @@ Defender for Endpoint API 可以分为三组：
 Defender for Endpoint 提供分层 API 模型，在结构化、清晰且易于使用的模型中公开数据和功能，该模型通过基于 Azure AD 的标准身份验证和授权模型公开，从而允许用户或 SaaS 应用程序上下文访问。 API 模型旨在以一致的形式公开实体和功能。
 
 观看此视频，快速概览适用于终结点的 API 的 Defender。
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 调查 **API** 公开了适用于终结点的 Defender 的丰富功能 - 公开计算实体或"配置文件"实体 (例如设备、用户和文件) 和离散事件 (例如，进程创建和文件创建) 通常描述与实体相关的行为，从而允许通过调查界面访问数据，从而允许基于查询的数据访问。 有关详细信息，请参阅受支持的[API。](exposed-apis-list.md)
 
