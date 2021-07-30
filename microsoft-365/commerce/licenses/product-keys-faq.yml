@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: 产品密钥常见问题
-  ms.openlocfilehash: 472b49dbd105c50658270e9ffa6e0ab73570bbca
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 4ab699c56eaa9c7676104989f14450f4d1f8487a
+  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542416"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "53656543"
 title: 产品密钥常见问题
 summary: ''
 sections:
@@ -37,7 +37,7 @@ sections:
       有关详细信息，请参阅 [开放程序联机服务激活常见问题](/licensing/online-service-activation-faq)解答。
   - question: >
       如何在产品密钥中查找Microsoft 365 管理中心？
-    answer: "1.  登录到Microsoft 365 管理中心。 \n2.  转到计费  >  **你的产品**  >  **批量许可** 下载  >  **&将**>悬停在产品上，然后选择查看 **密钥**。\n\n你将找到每个产品的产品密钥信息、 (批量许可密钥、密钥管理服务 (KMS) 和多次激活密钥 (MAK) ) 以及已使用和可用的 MAK 激活数。\n\n选择 **\"下载所有产品密钥** \"，将许可证显示的密钥下载到本地驱动器。\n"
+    answer: "1. 登录到Microsoft 365 管理中心。 \n2. 转到计费  >  **你的产品**  >  **批量许可** 下载  >  **&将**>悬停在产品上，然后选择查看 **密钥**。\n\n你将找到每个产品的产品密钥信息、 (批量许可密钥、密钥管理服务 (KMS) 和多次激活密钥 (MAK) ) 以及已使用和可用的 MAK 激活数。\n\n选择 **\"下载所有产品密钥** \"，将许可证显示的密钥下载到本地驱动器。\n"
   - question: >
       如何查找产品SQL Server密钥？
     answer: >
@@ -73,7 +73,7 @@ sections:
   - question: >
       什么是批量激活？
     answer: >
-      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件和支持批量激活的软件。 有关更多信息，请参阅：
+      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件和支持批量激活的软件。 有关详细信息，请参阅：
         - [用于管理批量激活Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [批量激活Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -182,7 +182,7 @@ sections:
   - question: >
       我能否使用批量许可证密钥来行使我的重新映像权限？
     answer: >
-      能。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，如果从批量许可介质制作的副本与原始许可产品相同，客户可以使用其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心 [请求密钥](https://licensingapps.microsoft.com/product-activation)。
+      是。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，如果从批量许可介质制作的副本与原始许可产品相同，客户可以使用其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心 [请求密钥](https://licensingapps.microsoft.com/product-activation)。
 
 
       **注意** 如果你是开放许可证客户，则必须购买至少一个要重新映像的产品单元，以获取对产品媒体的访问权限并接收产品密钥。
@@ -191,7 +191,7 @@ sections:
       有关重新映像权限的信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
   - question: >
       如何将密钥下载到本地文件？
-    answer: "该Microsoft 365 管理中心提供了一个选项，将产品密钥下载到本地文件供以后使用。 从\"下载和密钥\"页下载产品密钥时，该文件包含与管理中心配置文件中的协议相关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的\"许可 ID\"视图中下载密钥，文件将仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可以在Excel或文本编辑器中打开，以便排序和查看密钥。 其中包括文件中包含的列：**许可证 ID、****父** 计划、**组织**、**产品**、**产品** 密钥 **、Type** 和 MAK **Activations-Used/Available、Seats 和 OSA Status**。 \n\n若要在文件包中打开Excel，请完成以下步骤：\n  1.    打开 Microsoft Excel。\n  2.    选择 **\"**  >  **文件** 打开\"，然后选择下载的 CSV 文件。\n  3.    选择 **\"** 以 (分隔) \"，然后选择\"以制表符分隔 (以防止在单个列中显示所有) 。\n  4.    选择 **“完成”**。 \n\nthe .CSV file opens in Excel and the data is displayed in separate columns.\n"
+    answer: "该Microsoft 365 管理中心提供了一个选项，将产品密钥下载到本地文件供以后使用。 从\"下载和密钥\"页下载产品密钥时，该文件包含与管理中心配置文件中的协议相关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的\"许可 ID\"视图中下载密钥，文件将仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可以在Excel或文本编辑器中打开，以便排序和查看密钥。 其中包括文件中包含的列：**许可证 ID、****父** 计划、**组织**、**产品**、**产品** 密钥 **、Type** 和 MAK **Activations-Used/Available、Seats 和 OSA Status**。 \n\n若要在文件包中打开Excel，请完成以下步骤：\n  1. 打开 Microsoft Excel。\n  2. 选择 **\"**  >  **文件** 打开\"，然后选择下载的 CSV 文件。\n  3. 选择 **\"** 以 (分隔) \"，然后选择\"以制表符分隔 (以防止在单个列中显示所有) 。\n  4. 选择 **“完成”**。 \n\nthe .CSV file opens in Excel and the data is displayed in separate columns.\n"
 - name: 支持
   questions:
   - question: >

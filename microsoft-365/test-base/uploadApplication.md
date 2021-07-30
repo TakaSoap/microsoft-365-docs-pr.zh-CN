@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 300b12f66143d72aa2cab6945a4df52d22ced635
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 26033189eb5d63aee632dba2254f2109d273ae0b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538825"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656567"
 ---
 # <a name="step-2-uploading-a-package"></a>步骤 2：上载程序包
 
@@ -31,20 +31,20 @@ ms.locfileid: "53538825"
 
 ## <a name="enter-details-for-your-package"></a>输入程序包的详细信息
 
-在"测试详细信息"选项卡上，键入程序包的名称、版本和其他请求的详细信息。 
+在"测试详细信息"选项卡上，键入程序包的名称、版本和其他请求的详细信息。
 
 **可通过此仪表板** 完成开箱即用和功能测试。
 
 以下步骤提供了如何填写程序包详细信息的指南：
 
-1.  在 字段中输入要给定程序包 `Package name` 的名称。
+1. 在 字段中输入要给定程序包 `Package name` 的名称。
 
-    > [!Note]  
+    > [!NOTE]
     > 输入的程序包名称和版本组合在组织中必须是唯一的。 检查标记对此进行验证，如下所示。
-  
+
     - 如果选择重复使用程序包的名称，版本号必须是唯一的 (也就是说，从不用于包含该特定名称的程序包) 。
 
-    - 如果程序包名称 + 版本的组合未通过唯一性检查，你将看到一条错误消息，显示"程序包包含此程序包版本 *已存在"。* 
+    - 如果程序包名称 + 版本的组合未通过唯一性检查，你将看到一条错误消息，显示"程序包包含此程序包版本 *已存在"。*
 
     :::image type="content" alt-text="用于上传程序包说明的图像。" source="Media/Instructions.png":::
 
@@ -52,35 +52,35 @@ ms.locfileid: "53538825"
 
     :::image type="content" alt-text="程序包版本。" source="Media/ApplicationVersion.png":::
 
-3.  选择要在此程序包上运行的测试类型。
+3. 选择要在此程序包上运行的测试类型。
 
-    开 **箱即用 OOB (OOB)***测试执行程序包* 的安装、启动、*关闭* 和卸载。 安装后，在运行单个卸载之前，launch-close 例程将重复 30 次。 
-    
+    开 **箱即用 OOB (OOB)***测试执行程序包* 的安装、启动、*关闭* 和卸载。 安装后，在运行单个卸载之前，launch-close 例程将重复 30 次。
+
     此 OOB 测试提供了程序包上的标准化遥测，可跨内部版本Windows比较。
 
     功能 **测试** 将在程序包上执行 () 脚本。 脚本按上载顺序运行，特定脚本中的失败将停止后续脚本的执行。
 
-    > [!Note]
-    > **所有** 脚本最多运行 80 分钟。 
-    
-4.  选择操作系统更新类型。
+    > [!NOTE]
+    > **所有** 脚本最多运行 80 分钟。
 
-    - 通过"安全更新"，可以针对预发布每月安全更新中Windows增量改动测试程序包。 
+4. 选择操作系统更新类型。
+
+    - 通过"安全更新"，可以针对预发布每月安全更新中Windows增量改动测试程序包。
     - 利用"功能更新"，可以针对预览体验计划Windows预发布两年功能更新版本测试Windows程序包。
     <!---
     Change to the correct picture
     -->
     :::image type="content" alt-text="操作系统更新类型。" source="Media/OSUpdateType.png":::
 
-5.  选择用于安全更新 () 操作系统版本。
+5. 选择用于安全更新 () 操作系统版本。
 
-    在多选下拉列表中， (安装) Windows选择操作系统版本。 
+    在多选下拉列表中， (安装) Windows选择操作系统版本。
 
     - 若要仅针对 Windows 操作系统测试程序包，请从Windows列表中选择适用的 11 操作系统版本。
     - 若要仅针对 Windows Server 操作系统测试程序包，请从Windows选择适用的服务器操作系统版本。
-    - 若要仅针对 Windows 和 Windows Server 操作系统测试程序包，请从菜单列表中选择所有适用的操作系统。 
+    - 若要仅针对 Windows 和 Windows Server 操作系统测试程序包，请从菜单列表中选择所有适用的操作系统。
 
-    > [!Note]
+    > [!NOTE]
     > 如果选择针对服务器和客户端 OSes 测试程序包，请确保程序包兼容，并且可在两个 OSes 上运行
 
     :::image type="content" alt-text="选择操作系统版本。" source="Media/OSVersion.png":::
@@ -88,15 +88,15 @@ ms.locfileid: "53538825"
     Change to the correct picture
     -->
 
-6.  选择功能更新测试的选项：
+6. 选择功能更新测试的选项：
 
     - 在"选择预览体验成员频道"选项上，选择 作为应针对其测试 `Windows Insider Program Channel` 程序包的内部版本。
-  
+
       我们目前使用预览体验成员 Beta 渠道中测试的内部版本。
 
-    - 在"为 Insight 选择操作系统基线"选项上，Windows用作比较测试结果基线的 os 版本。 
+    - 在"为 Insight 选择操作系统基线"选项上，Windows用作比较测试结果基线的 os 版本。
 
-    > [!Note]
+    > [!NOTE]
     > 目前我们不支持服务器 OSes 的功能更新测试
     <!---
     Note to actual note format for markdown
@@ -106,7 +106,7 @@ ms.locfileid: "53538825"
     -->
     :::image type="content" alt-text="功能更新测试。" source="Media/FeatureUpdate.png":::
 
-7.  完成的"测试详细信息"页应如下所示： 
+7. 完成的"测试详细信息"页应如下所示：
 
     :::image type="content" alt-text="查看测试详细信息。" source="Media/TestDetails.png":::
 
@@ -120,4 +120,3 @@ ms.locfileid: "53538825"
 <!---
 Add button for next page
 -->
-

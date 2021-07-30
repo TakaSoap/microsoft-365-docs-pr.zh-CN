@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: e6a0806aed745687ef943e537c64ad74db3b3480
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0d1edd11f378f91dabd7e1ca7910070ab6961e90
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542161"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652933"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
@@ -34,7 +34,7 @@ ms.locfileid: "53542161"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) 更高版本的 macOS。
 
@@ -179,7 +179,7 @@ ms.locfileid: "53542161"
 批准系统扩展：
 
 1. 在 Intune 中，打开 **"管理**  >  **设备配置"。** 选择 **"管理**  >  **配置文件**  >  **""创建配置文件"。**
-2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **Profile type=Extensions**。 选择“**创建**”。
+2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **Profile type=Extensions**。 选择 **创建**。
 3. 在 `Basics` 选项卡中，为此新配置文件命名。
 4. 在 `Configuration settings` 选项卡中，在 部分中添加以下 `Allowed system extensions` 条目：
 
@@ -308,7 +308,7 @@ sysext.xml: OK
 1. 在 Intune 中，打开 **"管理**  >  **设备配置"。** 选择 **"管理**  >  **配置文件**  >  **""创建配置文件"。**
 2. 选择配置文件的名称。 Change **Platform=macOS** and **Profile type=Custom**. 选择"**配置"。**
 3. 打开配置文件， **然后上传** sysext.xml。 此文件是在上一步骤中创建的。
-4. 选择“**确定**”。
+4. 选择 **“确定”**。
 
     ![Intune 中的系统扩展屏幕截图](images/mac-system-extension-intune.png)
 

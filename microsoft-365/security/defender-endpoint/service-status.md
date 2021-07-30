@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b6cd870fbd700610bdc8dd458b7ed78c1a8ee23b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: aa98826605ef1af62ec720c06baa844260ddc9ae
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544826"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656639"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>检查 Microsoft Defender 终结点服务运行状况
 
@@ -31,7 +31,7 @@ ms.locfileid: "53544826"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-servicestatus-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-servicestatus-abovefoldlink)。
 
 **服务运行状况** 提供有关 Defender for Endpoint 服务的当前状态的信息。 你将能够验证服务运行状况是否正常或当前是否有问题。 如果存在问题，你将看到诸如何时检测到问题、初步确定的根本原因以及预期解决时间等信息。
 
@@ -45,6 +45,7 @@ ms.locfileid: "53544826"
 - **状态历史记录**
 
 ## <a name="current-status"></a>当前状态
+
 " **当前状态** "选项卡显示 Defender for Endpoint 服务的当前状态。 当服务平稳运行时，将显示正常的服务运行状况。 如果发现问题，将显示以下服务详细信息，以帮助您更好地了解该问题：
 
 - 检测到问题的日期和时间
@@ -60,7 +61,9 @@ ms.locfileid: "53544826"
 当问题解决时，该问题将记录在"状态 **历史记录"** 选项卡中。
 
 ## <a name="status-history"></a>状态历史记录
+
 " **状态历史记录** "选项卡反映已看到和已解决的所有历史问题。 你将看到已解决的问题的详细信息以及解决时包含的其他信息。
 
 ### <a name="related-topic"></a>相关主题
+
 - [查看安全操作仪表板](security-operations-dashboard.md)

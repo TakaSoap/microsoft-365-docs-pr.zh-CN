@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771389"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656627"
 ---
 # <a name="software-resource-type"></a>软件资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "52771389"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -57,11 +57,11 @@ ms.locfileid: "52771389"
 
 属性 |   类型   |   说明
 :---|:---|:---
-id | String | 软件 ID
+id | 字符串 | 软件 ID
 名称 | String | 软件名称
-供应商 | String | 软件供应商名称
+供应商 | 字符串 | 软件供应商名称
 漏洞 | 长型 | 发现的漏洞数量
-publicExploit | Boolean | 存在针对某些漏洞的公共攻击
-activeAlert | Boolean | 活动警报与此软件关联
+publicExploit | 布尔 | 存在针对某些漏洞的公共攻击
+activeAlert | 布尔 | 活动警报与此软件关联
 exposedMachines | 长型 | 公开的设备数量
 impactScore | 双精度 | 此软件的曝光评分影响
