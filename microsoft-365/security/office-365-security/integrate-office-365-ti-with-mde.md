@@ -19,12 +19,12 @@ description: 将 Microsoft Defender for Office 365与 Microsoft Defender for End
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fed3a04a7a699b4689cd9d6d9d335a8ba51d2fd8
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 4ca22633006e047628d5b256bf79c19719da57a3
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083375"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664125"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365 Microsoft Defender for Endpoint 一起使用
 
@@ -44,11 +44,11 @@ ms.locfileid: "53083375"
 > [!TIP]
 > Microsoft 365 Defender门户将替换Microsoft Defender 安全中心。 请参阅[Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 - 你的组织必须具有 Microsoft Defender for Office 365 (或 Office 365 E5) 和 Microsoft Defender for Endpoint。
 
-- 您必须是全局管理员或具有安全管理员角色 (例如安全管理员) 分配Microsoft 365。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
+- 必须分配有全局管理员或安全管理员角色Microsoft 365。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
 - 你必须有权访问 Explorer ([或实时检测) 。 ](threat-explorer.md)
 
@@ -56,23 +56,25 @@ ms.locfileid: "53083375"
 
 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成在 Defender for Endpoint 和 Defender for Office 365 中设置。
 
-1. 作为全局管理员或安全管理员，打开 Microsoft 365 Defender 门户 () 转到"电子邮件& <https://security.microsoft.com> **协作** \> **资源管理器"。** 若要直接转到资源管理器 **页面** ，请使用 <https://security.microsoft.com/threatexplorer> 。
+1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
-2. 在 **"资源管理器**"页上的屏幕右上角，单击 **"MDE 设置"。**
+2. 转到"**电子邮件&协作** \> **资源管理器"。** 
 
-3. 在出现的 **Microsoft Defender for Endpoint** 连接飞出中，在 连接 上打开"适用于终结点的 Microsoft **Defender** (切换") ![ ](../../media/scc-toggle-on.png) 然后单击关闭图标"关闭 ![ ](../../media/m365-cc-sc-close-icon.png) **"。**
+3. 在 **资源管理器** 页面的屏幕右上角，选择 **MDE 设置**。
+
+3. 在出现的 **Microsoft Defender for Endpoint** 连接飞出区中，连接切换到 Microsoft Defender for **Endpoint** (![ 切换) ](../../media/scc-toggle-on.png) 然后选择关闭。 
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 连接":::
 
-4. 返回到导航窗格中，选择 **"设置"。** 在 **"设置"** 页上，选择 **"终结点"**
+4. 在导航窗格中，选择 **"设置"。** 在 **"设置"** 页上，选择 **"终结点"**
 
 5. 在打开 **的"终结点**"页上，选择"**高级功能"。**
 
 6. 向下滚动到 **"Office 365** 智能"连接，然后打开" (![ 上的 ](../../media/scc-toggle-on.png) ") "。
 
-   完成后，单击保存 **首选项**。
+   完成后，选择保存 **首选项**。
 
-## <a name="related-articles"></a>相关文章
+## <a name="see-also"></a>另请参阅
 
 [威胁调查和响应功能在Office 365](office-365-ti.md)
 

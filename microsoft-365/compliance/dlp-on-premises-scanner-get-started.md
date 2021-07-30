@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 本地扫描仪数据丢失防护入门（预览）
+title: 本地扫描程序Microsoft 365数据丢失防护入门
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289195"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657395"
 ---
-# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>开始进行本地扫描仪的数据丢失防护（预览）
+# <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>本地扫描程序数据丢失防护入门
 
 本文将引导你完成 Microsoft 365 本地扫描仪数据丢失防护的先决条件和配置。
 
@@ -34,7 +34,7 @@ ms.locfileid: "53289195"
 
 ### <a name="skusubscriptions-licensing"></a>SKU/订阅许可
 
-在开始使用终结点 DLP 之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)以及任何加载项。 若要参与预览版，设置 DLP 规则的管理员帐户必须分配以下其中一个许可证：
+在开始使用终结点 DLP 之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)以及任何加载项。 必须为设置 DLP 规则的管理员帐户分配以下许可证之一：
 
 - Microsoft 365 E5
 - Microsoft 365 E5 合规
@@ -66,7 +66,7 @@ ms.locfileid: "53289195"
     1. 网络发现作业配置是一个可选步骤。 可以跳过它，并定义要扫描内容扫描作业的特定存储库。
     2. 必须创建内容扫描作业，并指定 DLP 引擎需要评估的托管文件的存储库。
     3. 在已创建的内容扫描作业中启用 DLP 规则，将 **强制** 选项设置为 **关闭**，除非想要直接进入 DLP 强制阶段。
-3. 验证内容扫描作业是否分配给了右群集。如果仍未创建内容扫描作业，请创建新的扫描作业，将其分配到包含运行公共预览版本的扫描仪节点群集。
+3. 验证是否已将内容扫描作业分配到正确的群集。如果仍未创建内容扫描作业，请创建一个新作业，并将其分配给包含扫描程序节点的群集。
 
 4. 连接到 Azure 门户 [Azure 信息保护扩展](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) 将存储库添加到将执行扫描的内容扫描作业。
 
@@ -82,7 +82,7 @@ ms.locfileid: "53289195"
 
 7. 选择 **创建策略** 并创建测试 DLP 策略。 如果你需要 [帮助创建策略，请参阅](create-a-dlp-policy-from-a-template.md) 模板创建 DLP 策略。 请务必在测试中运行它，直到熟悉此功能。 将以下参数用于策略：
     1. 如有必要，将 DLP 本地扫描仪规则的范围设置到特定位置。 如果将扫描 **的位置****所有**，则通过扫描仪扫描的所有文件将受制于 DLP 规则匹配和强制。
-    1. 指定位置时，可以使用排除列表或包含列表。 在公共预览期间，不能同时设置两者。 可定义规则仅与包含列表中列出的其中一个模式相匹配的路径相关，与包含列表中列出的所有文件（与包含列表中列出的模式相匹配的文件除外）的所有文件除外。 不支持任何本地路径。 以下是一些有效路径的示例：
+    1. 指定位置时，可以使用排除列表或包含列表。 可定义规则仅与包含列表中列出的其中一个模式相匹配的路径相关，与包含列表中列出的所有文件（与包含列表中列出的模式相匹配的文件除外）的所有文件除外。 不支持任何本地路径。 以下是一些有效路径的示例：
       - \\\server\share
       - \\\server\share\folder1\subfolderabc
       - \*\\folder1
@@ -115,18 +115,18 @@ ms.locfileid: "53289195"
 
 2. 请参阅活动 [工具入门](data-classification-activity-explorer.md) 中的过程，以访问和筛选本地扫描仪位置的所有数据。
 
-3. 在合规 [中打开"审核"](https://security.microsoft.com/auditlogsearch)。 在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，或由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 访问 
+3. 在合规 [中打开"审核"](https://security.microsoft.com/auditlogsearch)。 DLP 规则匹配项在审核日志 UI 中可用，或可通过 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 访问 
 
 
 ## <a name="next-steps"></a>后续步骤
 现在，你已载入设备，并且可以在“活动资源管理器”中查看活动数据，那么就可以继续下一步，在其中创建保护敏感项目的 DLP 策略。
 
-- [使用本地 DLP（预览）](dlp-on-premises-scanner-use.md)
+- [使用 DLP 本地](dlp-on-premises-scanner-use.md)
 
 ## <a name="see-also"></a>另请参阅
 
-- [了解 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-learn.md)
-- [使用 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-use.md)
+- [了解 DLP 本地扫描程序](dlp-on-premises-scanner-learn.md)
+- [使用 DLP 本地扫描程序](dlp-on-premises-scanner-use.md)
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)

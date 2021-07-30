@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ff885980f784e9f4a56b737ddf0bc6b7109ee5f6
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 1f303bd129bc1cea62375b56e4b535907440f191
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591243"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650651"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>添加或删除计算机标记 API
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591243"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -82,7 +82,7 @@ Content-Type|string|application/json. **必需**。
 参数|类型|说明
 :---|:---|:---
 值|String|标记名称。 **必需**。
-Action|枚举|添加或删除。 允许的值包括："Add"或"Remove"。 **必需**。
+操作|枚举|添加或删除。 允许的值包括："Add"或"Remove"。 **必需**。
 
 ## <a name="response"></a>响应
 

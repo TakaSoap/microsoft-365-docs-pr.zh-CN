@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffe1a2e7c57d98594a6ab401caf6e2ef1746f4fd
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: f728e49d742b20cf8434ca83eaf29e7e91b725ee
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622156"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657023"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -41,7 +41,7 @@ ms.locfileid: "53622156"
 本文内容：
 
 - [DKIM 如何能够比单独使用 SPF 更有效地防止恶意欺骗](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
-- [从 Microsoft 365 Defender 门户启用和禁用 DKIM 的步骤]
+- [从 Microsoft 365 Defender 门户创建、启用和禁用 DKIM 的步骤](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 - [手动将 1024 位密钥升级到 2048 位 DKIM 加密密钥的步骤](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
 - [手动设置 DKIM 的步骤](#steps-to-manually-set-up-dkim)
 - [为多个自定义域配置 DKIM 的步骤](#to-configure-dkim-for-more-than-one-custom-domain)

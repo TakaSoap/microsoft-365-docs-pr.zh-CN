@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: ed5ddc90df8ee3d0e938c0db9bca367a424f0413
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363975"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651047"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -33,9 +33,9 @@ ms.locfileid: "53363975"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 macOS 的设备控件具有以下先决条件：
 
@@ -55,7 +55,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | deviceControl |
+| **键** | deviceControl |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 
@@ -75,7 +75,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | navigationTarget |
+| **键** | navigationTarget |
 | **数据类型** | 字符串 |
 | **Comments** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
 
@@ -89,7 +89,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | removableMediaPolicy |
+| **键** | removableMediaPolicy |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
 
@@ -125,7 +125,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | enforcementLevel |
+| **键** | enforcementLevel |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block |
 
@@ -150,7 +150,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 无 <br/> 阅读 <br/> 写入 <br/> execute |
 
@@ -165,7 +165,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | 供应商 |
+| **键** | 供应商 |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个供应商，你可以为来自该供应商的设备指定所需的权限级别。
@@ -173,7 +173,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -182,7 +182,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | products |
+| **键** | products |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个产品，您可以为该产品指定所需的权限级别。
@@ -190,7 +190,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -201,7 +201,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | serialNumbers |
+| **键** | serialNumbers |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个序列号，您可以指定所需的权限级别。
@@ -209,7 +209,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **Key** | permission |
+| **键** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 

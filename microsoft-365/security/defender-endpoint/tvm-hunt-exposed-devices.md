@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c47d11bd1afe247b687b8736b4cad8fa4e906bb1
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: c927d8b6ca563f889abe5fcf39a9deb93efd9d47
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567988"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650747"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>搜寻公开的设备 - 危险和漏洞管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53567988"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 ## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a>使用高级搜寻查找具有漏洞的设备
 

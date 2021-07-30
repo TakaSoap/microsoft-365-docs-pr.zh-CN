@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 17915741485919ae85d5e16fbee8de5108b7f2eb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543289"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657095"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -34,7 +34,7 @@ ms.locfileid: "53543289"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 > [!IMPORTANT]
 > 本主题包含有关如何在企业环境中为 Linux 上的 Defender for Endpoint 设置首选项的说明。 如果你有兴趣从命令行在设备上配置产品，请参阅 [资源](linux-resources.md#configure-from-the-command-line)。
@@ -61,7 +61,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|antivirusEngine|
+|**键**|antivirusEngine|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -76,8 +76,8 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|enableRealTimeProtection|
-|**数据类型**|Boolean|
+|**键**|enableRealTimeProtection|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -97,8 +97,8 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|passiveMode|
-|**数据类型**|Boolean|
+|**键**|passiveMode|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。|
 |
@@ -113,7 +113,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|exclusionsMergePolicy|
+|**键**|exclusionsMergePolicy|
 |**数据类型**|String|
 |**可能的值**|合并 (默认)  <p> admin_only|
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
@@ -130,7 +130,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|排除项|
+|**键**|排除项|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -145,7 +145,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|$type|
+|**键**|$type|
 |**数据类型**|String|
 |**可能的值**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |
@@ -160,7 +160,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|path|
+|**键**|path|
 |**数据类型**|String|
 |**可能的值**|有效路径|
 |**Comments**|仅在 *排除$type**时适用*|
@@ -176,8 +176,8 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|isDirectory|
-|**数据类型**|Boolean|
+|**键**|isDirectory|
+|**数据类型**|布尔值|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |
@@ -192,7 +192,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|extension|
+|**键**|extension|
 |**数据类型**|String|
 |**可能的值**|有效的文件扩展名|
 |**Comments**|仅在 *排除**$type FileExtension 时适用*|
@@ -208,7 +208,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|name|
+|**键**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
 |**Comments**|仅在 *排除**$type FileName 时适用*|
@@ -224,7 +224,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|allowedThreats|
+|**键**|allowedThreats|
 |**数据类型**|字符串数组|
 |
 
@@ -238,7 +238,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|disallowedThreatActions|
+|**键**|disallowedThreatActions|
 |**数据类型**|字符串数组|
 |**可能的值**|允许 (限制用户允许威胁)  <p> restore (限制用户从隔离网站还原) |
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
@@ -254,7 +254,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|threatTypeSettings|
+|**键**|threatTypeSettings|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -269,7 +269,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|注册表项|
+|**键**|注册表项|
 |**数据类型**|String|
 |**可能的值**|potentially_unwanted_application <p> archive_bomb|
 |
@@ -288,7 +288,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|值|
+|**键**|值|
 |**数据类型**|String|
 |**可能的值**|审核 (默认)  <p> block <p> off|
 |
@@ -303,7 +303,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|threatTypeSettingsMergePolicy|
+|**键**|threatTypeSettingsMergePolicy|
 |**数据类型**|String|
 |**可能的值**|合并 (默认)  <p> admin_only|
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
@@ -319,7 +319,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|scanResultsRetentionDays|
+|**键**|scanResultsRetentionDays|
 |**数据类型**|String|
 |**可能的值**|90 (默认值) 。 允许的值从 1 天到 180 天。|
 |**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
@@ -335,7 +335,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|scanHistoryMaximumItems|
+|**键**|scanHistoryMaximumItems|
 |**数据类型**|String|
 |**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
 |**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
@@ -351,7 +351,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|cloudService|
+|**键**|cloudService|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -366,8 +366,8 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|enabled|
-|**数据类型**|Boolean|
+|**键**|enabled|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -381,7 +381,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|diagnosticLevel|
+|**键**|diagnosticLevel|
 |**数据类型**|String|
 |**可能的值**|可选 (默认)  <p> 必需|
 |
@@ -400,7 +400,7 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|automaticSampleSubmissionConsent|
+|**键**|automaticSampleSubmissionConsent|
 |**数据类型**|String|
 |**可能的值**|无 <p> 安全 (默认)  <p> all|
 |
@@ -415,8 +415,8 @@ ms.locfileid: "53543289"
 
 |说明|值|
 |---|---|
-|**Key**|automaticDefinitionUpdateEnabled|
-|**数据类型**|Boolean|
+|**键**|automaticDefinitionUpdateEnabled|
+|**数据类型**|布尔值|
 |**可能的值**|true (默认值)  <p> false|
 |
 

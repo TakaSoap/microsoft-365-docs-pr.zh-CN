@@ -17,18 +17,19 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在网站中设置安全Teams，以基于数据的敏感度来保护数据。
-ms.openlocfilehash: 7a5b8f58cc5e4a23d2d143419f99ecdd87b949c1
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 227f63284f6fb2bdae52fe32d1c011698d3f44fd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924355"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657047"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>设置与 Microsoft 365 和 Microsoft Teams
 
 能够与合适的人员轻松共享信息，同时防止过度共享是组织取得成功的关键。 这包括能够仅与应有权访问敏感数据的人安全地共享敏感数据。 根据项目的不同，这可能包括与组织外部人员共享敏感数据。
 
 此协作解决方案指南包括两个可帮助你的组件：
+
 - 为Microsoft Teams部署具有正确保护级别的项目
 - 使用每个项目的适当安全设置配置外部共享
 
@@ -61,36 +62,35 @@ ms.locfileid: "52924355"
 
 ![风险范围从低 (发行) 到高 (敏感业务数据) ](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
-对于上述所有方案，可以使用 Microsoft Teams来存储、共享和协作处理信息。 
+对于上述所有方案，可以使用 Microsoft Teams来存储、共享和协作处理信息。
 
 若要配置安全协作，请使用Microsoft 365功能。
 
-| 产品或组件 | 功能或特性 | 许可 |
-|:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | 保险箱SPO、OneDrive 和 Teams 的附件;保险箱文档;保险箱链接Teams    | Microsoft 365E1、E3 和 E5 |
-| SharePoint    | 网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置 | Microsoft 365E1、E3 和 E5 |
-| Microsoft Teams   | 来宾访问、私人团队、私人频道 | Microsoft 365E1、E3 和 E5 |
-| Microsoft 365 合规中心  | 敏感度标签    | Microsoft 365 E3 和 E5 |
+|产品或组件|功能或特性|许可|
+|---|---|---|
+|Microsoft Defender for Office 365|保险箱SPO、OneDrive 和 Teams 的附件;保险箱文档;保险箱链接Teams|Microsoft 365E1、E3 和 E5|
+|SharePoint|网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置|Microsoft 365E1、E3 和 E5|
+|Microsoft Teams|来宾访问、私人团队、私人频道|Microsoft 365E1、E3 和 E5|
+|Microsoft 365 合规中心|敏感度标签|Microsoft 365 E3 和 E5|
 
-### <a name="collaboration-governance"></a>协作管理
+## <a name="collaboration-governance"></a>协作管理
 
 Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建议您将此部署内容与协作管理内容 [一起用于](collaboration-governance-overview.md) 为组织创建最佳协作解决方案。
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>对Teams使用数据
 
-为了管理对不同敏感信息的访问，我们开发了三种不同保护层[，](configure-teams-three-tiers-protection.md)用于Teams。 您可以自定义这些层中的任一层，以更好地满足需求或业务。 
+为了管理对不同敏感信息的访问，我们开发了三种不同保护层[，](configure-teams-three-tiers-protection.md)用于Teams。 您可以自定义这些层中的任一层，以更好地满足需求或业务。
 
 ![三种保护级别的图形Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
-
 这些层 *（基线*、 *敏感* 和高度 *敏感* ）逐渐增加保护，以帮助防止过度共享和潜在的信息泄露，如下表所示。
 
-|-|**基线层**|**敏感层**|**高度敏感的层**|
-|:--|:-----------|:------------|:-------------------|
+|-|基线层|敏感层|高度敏感的层|
+|---|---|---|---|
 |公共团队或私人团队|两者皆可|Private|Private|
 |未经身份验证的共享|Blocked|Blocked|Blocked|
 |文件共享|允许|允许|只有团队所有者才能共享。|
-|团队成员身份|任何人都可以加入公共团队。<br>加入私人团队需要团队所有者批准。|需要团队所有者批准才能加入。|需要团队所有者批准才能加入。|
+|团队成员资格|任何人都可以加入公共团队。<br>加入私人团队需要团队所有者批准。|需要团队所有者批准才能加入。|需要团队所有者批准才能加入。|
 |文档加密|||与敏感度标签一起提供|
 |来宾共享|允许|允许或阻止|允许或阻止|
 |未托管的设备|无限制|仅 Web 访问|Blocked|
@@ -128,44 +128,42 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 
 如果你与合作伙伴组织有一个主要项目，可以使用 Azure 权利管理来管理为该项目设置的团队中的来自该组织的来宾。 有关详细信息[，请参阅使用托管来宾创建 B2B Extranet。](b2b-extranet.md)
 
-
-
 ## <a name="training-for-administrators"></a>管理员培训
 
 Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 中的协作、管理和标识功能。
 
-#### <a name="teams"></a>Teams
+### <a name="teams"></a>Teams
 
 |培训：|使用 Microsoft Teams 管理团队协作|
-|:---|:---|
-|![Teams协作培训图标](../media/manage-team-collaboration-with-microsoft-teams.svg)|“使用 Microsoft Teams 管理团队协作”介绍了 Microsoft Teams 的特性和功能，它是 Microsoft 365 中的团队协作中心。 你将了解如何使用 Teams 促进组织内的团队合作和通信，无论是在办公场所内还是办公场所外，也无论团队使用何种设备（从桌面设备到平板电脑再到电话），同时利用 Office 365 应用的所有丰富功能。 你将了解 Teams 如何为团队跨应用和设备进行协作提供全面、灵活的环境。 此学习途径可帮助你准备 Microsoft 365 认证：Teams 管理员关联认证。<br><br>2 小时 17 分钟 - 学习路径 - 5 个模块|
+|---|---|
+|![Teams协作培训图标](../media/manage-team-collaboration-with-microsoft-teams.svg)|“使用 Microsoft Teams 管理团队协作”介绍了 Microsoft Teams 的特性和功能，它是 Microsoft 365 中的团队协作中心。 你将了解如何使用 Teams 促进组织内的团队合作和通信，无论是在办公场所内还是办公场所外，也无论团队使用何种设备（从桌面设备到平板电脑再到电话），同时利用 Office 365 应用的所有丰富功能。 你将了解 Teams 如何为团队跨应用和设备进行协作提供全面、灵活的环境。 此学习途径可帮助你准备 Microsoft 365 认证：Teams 管理员关联认证。<p>2 小时 17 分钟 - Learning 路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
-#### <a name="sharepoint"></a>SharePoint
+### <a name="sharepoint"></a>SharePoint
 
 |培训：|在 Microsoft 365 中配合使用 SharePoint|
-|:---|:---|
-|![SharePoint培训图标](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|“使用 Microsoft SharePoint 管理共享内容”介绍 SharePoint 的特性和功能，以及它如何与 Microsoft 365 协同工作。 你将了解 SharePoint 网站的不同类型（包括中心网站）以及信息保护、报告和监视。 还将了解如何使用 SharePoint 文件和文件夹共享来优化协作，如何在外部共享文件，以及如何在 SharePoint 管理中心中管理 SharePoint 网站。 此学习途径可帮助你准备 Microsoft 365 认证：团队合作管理员关联认证。<br><br>1 小时 14 分钟 - 学习路径 - 4 个模块|
+|---|---|
+|![SharePoint培训图标](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|“使用 Microsoft SharePoint 管理共享内容”介绍 SharePoint 的特性和功能，以及它如何与 Microsoft 365 协同工作。 你将了解 SharePoint 网站的不同类型（包括中心网站）以及信息保护、报告和监视。 还将了解如何使用 SharePoint 文件和文件夹共享来优化协作，如何在外部共享文件，以及如何在 SharePoint 管理中心中管理 SharePoint 网站。 此学习途径可帮助你准备 Microsoft 365 认证：团队合作管理员关联认证。<p>1 小时 14 分钟 - Learning 路径 - 4 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
-#### <a name="information-protection"></a>信息保护
+### <a name="information-protection"></a>信息保护
 
 |培训：|使用 Microsoft 365 保护企业信息|
-|:---|:---|
-|![Teams信息保护培训图标](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<br><br>1 小时 - 学习路径 - 5 个模块|
+|---|---|
+|![Teams信息保护培训图标](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<p>1 小时 - Learning 路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-security-info-overview/introduction/)
 
-#### <a name="identity-and-access"></a>身份和访问
+### <a name="identity-and-access"></a>身份和访问
 
 |培训：|使用 Azure Active Directory 提供标识和访问保护|
-|:---|:---|
-|![标识和访问培训图标](../media/protect-identity-and-access-with-microsoft-365.svg)|标识和访问学习路径涵盖了最新的身份和访问技术、用于加强身份验证的工具以及组织内有关身份保护的指南。 Microsoft 访问和身份技术使你能够保护组织的身份（无论是本地身份还是在云中），并使用户能够从任何位置安全地工作。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<br><br>2 小时 52 分钟 - 学习路径 - 6 个模块|
+|---|---|
+|![标识和访问培训图标](../media/protect-identity-and-access-with-microsoft-365.svg)|标识和访问学习路径涵盖了最新的身份和访问技术、用于加强身份验证的工具以及组织内有关身份保护的指南。 Microsoft 访问和身份技术使你能够保护组织的身份（无论是本地身份还是在云中），并使用户能够从任何位置安全地工作。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<p>2 小时 52 分钟 - Learning 路径 - 6 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-identity-overview/introduction/)
@@ -175,7 +173,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 这些培训模块可帮助用户使用Teams、组和SharePoint进行Microsoft 365。
 
 |Teams|SharePoint|
-|:---|:---|
+|---|---|
 |![设置和自定义团队培训图标](../media/set-up-customize-team-training.png)<br>**[设置和自定义团队](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint共享和同步培训图标](../media/sharepoint-share-sync-training.png)<br>**[共享和同步](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams上传和查找文件培训图标](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![在团队和频道中协作图标](../media/teams-collaborate-channels-training.png)<br>**[在团队和频道中协作](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
@@ -185,22 +183,25 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 这些插图将帮助您了解组和团队如何与组织中其他服务交互Microsoft 365以及哪些治理和合规性功能可帮助您在组织中管理这些服务。
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
+
 对于 Microsoft 365 中的组，IT 架构师需要了解的信息
 
 |**项**|**说明**|
-|:-----|:-----|
-|[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2019 年 6 月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
+|---|---|
+|[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2019 年 6 月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的 Microsoft Teams 和相关生产力服务
+
 Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。
 
 |**项**|**说明**|
-|:-----|:-----|
-|[![Teams 逻辑体系结构海报缩略图](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2019 年 4 月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
+|---|---|
+|[![Teams 逻辑体系结构海报缩略图](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2019 年 4 月更新|Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <p>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>部署安全协作解决方案
 
 准备好部署此解决方案后，请继续执行以下步骤：
+
 1. 配置[三种不同保护层以用于Teams。](configure-teams-three-tiers-protection.md)
 2. 配置用于 [与组织外部人员共享任何敏感度信息的设置](collaborate-with-people-outside-your-organization.md)。
 

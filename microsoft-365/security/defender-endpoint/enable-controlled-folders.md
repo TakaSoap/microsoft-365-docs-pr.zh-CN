@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 810782dc3cca33515a0292d79ddab3c487330a98
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 286ccc9efa44d3afdf4e11c4d7652288fd693713
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596094"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657287"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -30,7 +30,7 @@ ms.locfileid: "53596094"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 [受控文件夹访问权限](controlled-folders.md) 可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限包含在 Windows 10 Windows Server 2019 中。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53596094"
 
 3. 选择 **平台**，选择 **Windows 10** 和更高版本，然后选择配置文件 **攻击面减少规则**  >  **创建**。
 
-4.  命名策略并添加说明。 选择 **下一步**。
+4.  命名策略并添加说明。 选择“**下一步**”。
 
 5.  向下滚动到底部，选择"**启用文件夹** 保护"下拉列表，然后选择"启用 **"。**
 

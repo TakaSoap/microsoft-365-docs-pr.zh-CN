@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a6071a8cb13fc7c785a1b3914f65cd8eca27f28f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289531"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651611"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -75,6 +75,9 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 你需要将 CSV 文件中的数据合并到单个文件中才能完成注册。 下面是一个简单易行的示例 PowerShell 脚本：
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
+
+> [!NOTE]
+> 不支持其他列。 不支持引号。 只有 ANSI 格式的文本文件才能用于 unicode (Unicode) 。 标头区分大小写。 由于这些要求，Excel文件并另存为 CSV 文件不会生成可用文件。 请确保在设备序列号中保留任何前导零。
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 

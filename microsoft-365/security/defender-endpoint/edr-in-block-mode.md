@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/20/2021
+ms.date: 07/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 064cc66dfa273209bea5dc14c0e8cf0f39d7c6ac
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9106ee8a89ca0a42fc3a010fb790816ff9871b52
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655787"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664104"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -84,7 +84,7 @@ EDR阻止模式下的已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 
 | 要求  | 详细信息  |
 |---------|---------|
-| 权限 | 您必须具有全局管理员或安全管理员角色分配[在Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。 |
+| 权限 | 您必须在 "全局管理员" 或 "安全管理员" 角色中[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。 |
 | 操作系统     | 设备必须运行以下版本之一Windows： <br/>- Windows 10 (所有)  <br/>- Windows Server 版本 1803 或更高版本 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (仅在Microsoft Defender 防病毒处于活动状态时)      |
 | Microsoft Defender for Endpoint     | 设备必须载入到适用于终结点的 Defender。 请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。       |
 | Microsoft Defender 防病毒  | 设备必须已安装Microsoft Defender 防病毒在主动模式或被动模式下运行。 [确认Microsoft Defender 防病毒处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
@@ -95,7 +95,7 @@ EDR阻止模式下的已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 > [!IMPORTANT]
 > 若要获取最佳保护值，请确保防病毒解决方案配置为接收定期更新和基本功能，并且已配置排除 [项](configure-exclusions-microsoft-defender-antivirus.md)。 EDR模式配置遵守为用户定义的排除Microsoft Defender 防病毒，但不包括为 Microsoft Defender for Endpoint[](manage-indicators.md)定义的指示器。
 
-## <a name="frequently-asked-questions"></a>常见问题 
+## <a name="frequently-asked-questions"></a>常见问题解答 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>如果我在设备上运行EDR，是否需要在阻止Microsoft Defender 防病毒打开？
 

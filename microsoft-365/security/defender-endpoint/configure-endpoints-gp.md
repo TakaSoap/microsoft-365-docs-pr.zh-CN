@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: a93691f1c491a722834ef0325b5cc4e477ee0027
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 0d53e0fa2912c5cb318cb1e7eb9d23149e1c67a4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568156"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651503"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用Windows 10载入新设备 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53568156"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)。
 
 > [!NOTE]
 > 若要使用组策略 (GP) 更新来部署程序包，必须在 Windows Server 2008 R2 或更高版本上。
@@ -120,7 +120,7 @@ ms.locfileid: "53568156"
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-策略 | 设置
+Policy | 设置
 :---|:---
 Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集合"
 
@@ -128,7 +128,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-策略 | 设置
+Policy | 设置
 :---|:---
 配置对可能不需要的应用程序的检测 | 已启用、阻止
 
@@ -136,7 +136,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-策略 | 设置
+Policy | 设置
 :---|:---
 加入 Microsoft MAPS | 已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -145,7 +145,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-策略 | 设置
+Policy | 设置
 :---|:---
 关闭实时保护|已禁用
 打开行为监视|已启用
@@ -158,7 +158,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-策略 | 设置 
+Policy | 设置 
 :---|:---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -180,7 +180,7 @@ Enable\Disable Sample 集合| 已启用 - 选中"启用计算机上的示例集�
 
    ![攻击面减少配置的图像](images/asr-guid.png)
 
-策略 | 设置
+Policy | 设置
 :---|:---
 配置受控文件夹访问权限| 已启用，审核模式
 

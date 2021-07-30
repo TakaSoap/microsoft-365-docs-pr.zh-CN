@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 9429a4fc5adc3447a0238a3e8aa84ab39585fc50
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394517"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664036"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -88,6 +88,7 @@ ms.locfileid: "53394517"
 - 瑞典
 - Switzerland（瑞士）
 - Taiwan（台湾）
+- 泰国
 - 土耳其
 - 阿拉伯联合酋长国
 - 英国

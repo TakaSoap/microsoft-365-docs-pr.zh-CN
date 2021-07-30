@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 365 本地扫描仪数据丢失防护（预览）
+title: 了解Microsoft 365本地扫描程序的数据丢失防护
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 本地扫描仪的数据丢失防护扩展了对文件活动的监视以及针对这些文件的安全操作，可扩展到本地文件共享和 SharePoint 文件夹和文档库。通过 Azure 信息保护 （AIP） 扫描仪扫描和保护文件
-ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114160"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657383"
 ---
-# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>了解 Microsoft 365 本地扫描仪数据丢失防护（预览）
+# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>了解本地扫描程序Microsoft 365数据丢失防护
 
 Microsoft 本地扫描仪的 Microsoft 数据丢失防护是 Microsoft 365 数据丢失防护 （DLP） 套件的一部分，可用于在 Microsoft 365 服务中发现和保护敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](dlp-learn-about-dlp.md)。
 

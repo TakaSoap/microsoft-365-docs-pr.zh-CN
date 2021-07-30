@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 数据丢失防护本地扫描程序（预览版）
+title: 使用Microsoft 365本地扫描程序的数据丢失防护
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 本地扫描仪扫描停止的数据，并执行本地文件共享和本地 SharePoint 文件夹和文档库的安全操作。
-ms.openlocfilehash: b2512c47b82ab3624d892d349611dd3f1e5aed3c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3d7c2e30092eee022fc0ed2a7ef6a8be7b82e3f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289171"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53657371"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>使用 Microsoft 365 本地扫描仪的数据丢失防护（预览）
+# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>使用Microsoft 365本地扫描程序数据丢失防护
 
 为帮助熟悉 DLP 本地功能，以及如何在 DLP 策略中显示这些功能，我们汇集了一些方案供你遵循。
 
@@ -48,7 +48,7 @@ DLP 本地扫描仪在几个区域出现数据
 
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365 审核日志
 
-在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，请参阅 [在合规中心](search-the-audit-log-in-security-and-compliance.md)  中搜索审核日志，或由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 访问。
+审核日志 UI 中提供了 DLP 规则匹配项，请参阅 [在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)  或可由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 访问。
 
 #### <a name="aip"></a>AIP
 
@@ -80,8 +80,8 @@ DLP 本地扫描仪在几个区域出现数据
 
 ## <a name="see-also"></a>另请参阅
 
-- [了解 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-learn.md)
-- [开始使用 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-get-started.md)
+- [了解 DLP 本地扫描程序](dlp-on-premises-scanner-learn.md)
+- [开始使用 DLP 本地扫描程序](dlp-on-premises-scanner-get-started.md)
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)

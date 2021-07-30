@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: fa9592dccd806ad14e609df073c855170dcb2c76
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 68b627c7cdc215317d737a637316e5edf0971322
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391443"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650915"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -35,7 +35,7 @@ ms.locfileid: "53391443"
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
 如果遇到问题，可能需要解决 Microsoft Defender 终结点载入过程的问题。
 此页提供了解决在使用部署工具之一进行部署时可能会发生的载入问题以及设备上可能会发生的常见错误的详细步骤。
@@ -134,9 +134,9 @@ ms.locfileid: "53391443"
 
 频道名称：管理员
 
-ID | Severity | 事件描述 | 故障排除步骤
+ID | 严重性 | 事件描述 | 故障排除步骤
 :---|:---|:---|:---
-1819 | Error | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载[1607 年 Windows 10 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
+1819 | 错误 | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载[1607 年 Windows 10 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>解决设备上载入问题
 
