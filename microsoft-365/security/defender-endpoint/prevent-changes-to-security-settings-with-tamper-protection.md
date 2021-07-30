@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 5d11be17cba8683344e631e799df98d3cf11dbf8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 39f32fe71bfa84fc9806c02d265d93cd00e17da1
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623117"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53664137"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -58,7 +58,7 @@ ms.locfileid: "53623117"
 - 通过 PowerShell cmdlet 更改设置
 - 通过组策略编辑或删除安全设置
 
-篡改保护不会阻止您查看安全设置。 而且，防篡改保护不会影响第三方防病毒应用向 Windows 安全中心 注册。 如果您的组织正在使用 Windows 10 企业版 E5，则单个用户不能更改篡改保护设置;在这种情况下，防篡改保护由安全团队进行管理。
+篡改保护不会阻止您查看安全设置。 而且，防篡改保护不会影响非 Microsoft 防病毒应用向 Windows 安全中心 注册。 如果您的组织正在使用 Windows 10 企业版 E5，则单个用户不能更改篡改保护设置;在这种情况下，防篡改保护由安全团队进行管理。
 
 ### <a name="what-do-you-want-to-do"></a>要执行什么操作？
 
@@ -96,7 +96,7 @@ ms.locfileid: "53623117"
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>管理网站门户中的防篡改Microsoft 365 Defender的要求
 
-- 您必须具有适当的 [权限](/microsoft-365/security/defender-endpoint/assign-portal-access)，例如全局管理员、安全管理员或安全操作。
+- 必须分配有 [适当的](/microsoft-365/security/defender-endpoint/assign-portal-access) 权限，例如全局管理员、安全管理员或安全操作。
 
 - 你的Windows设备必须运行以下版本之一Windows：
 
@@ -129,7 +129,7 @@ ms.locfileid: "53623117"
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>在 Intune 中管理防篡改保护的要求
 
-- 您必须具有适当的 [权限](/microsoft-365/security/defender-endpoint/assign-portal-access)，例如全局管理员、安全管理员或安全操作。
+- 必须分配有 [适当的](/microsoft-365/security/defender-endpoint/assign-portal-access) 权限，例如全局管理员、安全管理员或安全操作。
 
 - 你的组织使用 [Intune 管理设备](/intune/fundamentals/what-is-device-management)。  ([Intune 许可证](/intune/fundamentals/licenses)是必需的;Intune 包含在 Microsoft 365 E5.) 
 
@@ -143,7 +143,7 @@ ms.locfileid: "53623117"
 
 ![使用 Intune 打开防篡改保护](images/turnontamperprotect-MEM.png)
 
-1. 转到管理[Microsoft Endpoint Manager](https://endpoint.microsoft.com)中心，然后使用你的工作或学校帐户登录。
+1. 转到管理[Microsoft Endpoint Manager并](https://endpoint.microsoft.com)登录。
 
 2. 选择 **"设备**  >  **配置文件"。**
 
@@ -198,7 +198,7 @@ ms.locfileid: "53623117"
 > [!NOTE]
 > 篡改保护会阻止尝试Microsoft Defender 防病毒注册表修改设置。
 >
-> 若要帮助确保防篡改不会干扰修改这些设置的第三方安全产品或企业安装脚本，请转到 **Windows 安全中心，** 将安全智能更新到版本 1.287.60.0 或更高版本。   (安全 [智能更新](https://www.microsoft.com/wdsi/definitions).) 
+> 若要帮助确保防篡改不会干扰修改这些设置的非 Microsoft 安全产品或企业安装脚本，请转到 **Windows 安全中心，** 将安全智能更新到版本 1.287.60.0 或更高版本。   (安全 [智能更新](https://www.microsoft.com/wdsi/definitions).) 
 >
 > 进行此更新后，防篡改保护将继续保护注册表设置，并且日志会尝试修改它们而不会返回错误。
 
@@ -232,7 +232,7 @@ ms.locfileid: "53623117"
 
 若要了解有关威胁和漏洞&，请参阅威胁&[漏洞管理Microsoft 365 Defender。](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>我可以在哪些版本的Windows配置篡改保护？
 
@@ -242,7 +242,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>防篡改保护是否会影响非 Microsoft 防病毒在 Windows 安全中心 注册？
 
-否。 第三方防病毒产品将继续在应用程序Windows 安全中心注册。
+否。 非 Microsoft 防病毒产品/服务将继续注册到 Windows 安全中心 应用程序。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>如果设备Microsoft Defender 防病毒处于活动状态，会发生什么情况？
 

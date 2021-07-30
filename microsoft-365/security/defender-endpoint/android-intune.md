@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5a98dd096395435c52dea3e4a994b41a16e1a7a3
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: e502c63cb30de23b190a0d6844c9e87d6720d707
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591183"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656999"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591183"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 了解如何在已注册的设备上在 Android Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅  [注册设备](/mem/intune/user-help/enroll-device-android-company-portal)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53591183"
    - **Publisher** Microsoft。
    - **作为 Defender** for https://play.google.com/store/apps/details?id=com.microsoft.scmx Endpoint (的应用商店 URL Google Play 应用商店 URL) 
 
-   其他字段是可选的。 选择 **下一步**。
+   其他字段是可选的。 选择“**下一步**”。
 
    ![管理中心Microsoft Endpoint Manager应用信息的图像](images/mda-addappinfo.png)
 

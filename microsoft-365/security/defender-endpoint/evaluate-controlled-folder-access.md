@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 758dd66f9f1d124cbf2966a665a69fba4238b22f
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 5991ac4a845680ad5a2b0fc7b5cdd4b35e66cf2f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594882"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656855"
 ---
 # <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
@@ -29,7 +29,7 @@ ms.locfileid: "53594882"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 
 [受控文件夹](controlled-folders.md) 访问权限是一项有助于保护文档和文件免受可疑或恶意应用修改的功能。 受控文件夹访问权限在 Windows Server 2019 和 Windows 10 客户端上受支持。

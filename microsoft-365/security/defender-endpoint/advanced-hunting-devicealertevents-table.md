@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: ae462235bcc2f2673f8a5ec1ea353f9bd9707918
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 6a56a1abab388e98af52fadc322d41484c1610a5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591255"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656987"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -33,7 +33,7 @@ ms.locfileid: "53591255"
 
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)。
 
 高级 `DeviceAlertEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关搜索中警报Microsoft Defender 安全中心。 使用此参考来构建从该表返回信息的查询。
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: 2913ba7aa3a729b7ea0eb8356ed93b05fb902cef
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: ee3329248e42f3689755438e086bef3ee749b544
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591099"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656963"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>通过模拟攻击体验 Microsoft Defender for Endpoint 
 
@@ -33,7 +33,7 @@ ms.locfileid: "53591099"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-abovefoldlink)。
 
 > [!TIP]
 >
@@ -64,7 +64,7 @@ ms.locfileid: "53591099"
 > [!NOTE]
 > 模拟文件或脚本模拟攻击活动，但实际上是恶意的，不会损害或损害测试设备。
 >
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)。
 
 ## <a name="related-topics"></a>相关主题
 
