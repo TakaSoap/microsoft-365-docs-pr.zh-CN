@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 借助Microsoft 365 网络合作伙伴计划，你的设备可以认证为使用 Microsoft 365。
 hideEdit: true
-ms.openlocfilehash: 2c57974bd15e5bac11a2275472255982a20aefac
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1330015d11179f67cc60077f2e4b51382af2d1a3
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923144"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663835"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 网络合作伙伴计划
 
@@ -36,7 +36,3 @@ ms.locfileid: "50923144"
 The Microsoft 365 网络合作伙伴计划 helps these questions and demonstrates Microsoft commitment to help our customers build and optimize their network architecture for the best Microsoft 365 experience. Microsoft 365团队与许多网络行业合作伙伴合作，帮助确保最佳连接的关键原则在本机内置于他们的网络产品和解决方案中。
 
 该Microsoft 365 网络合作伙伴计划将合格的网络解决方案指定为"使用Microsoft 365"。 只有满足 Microsoft 严格测试要求、具有设置无缝体验并证明与 Microsoft 365 一起使用的高质量网络体验的设备或解决方案才能获得"使用 Microsoft 365"标志。 这些经过验证的合作伙伴解决方案在 Microsoft 365 网络合作伙伴计划[页面上列出](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners)，以及解决方案详细信息和链接以了解更多信息。
-
-如果你是客户Microsoft 365，可以通过此页面在 中使网络解决方案提供商了解此计划 [https://aka.ms/Office365NPP]() 。
-
-对于要查询有关 Microsoft 365 网络合作伙伴计划的网络解决方案提供商，请填写表单 [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) 。 感谢你的关注，我们期待一个美观的合作关系。

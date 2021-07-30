@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8397731941a3344638edb0b57e77272f4fae930
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: b052bc0c02bbf71791b6c0a96767bc75d7d546bd
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590991"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649571"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>配置 Micro Focus ArcSight 以拉取 Defender 进行终结点检测
 
@@ -32,7 +32,7 @@ ms.locfileid: "53590991"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configurearcsight-abovefoldlink)。
 
 你需要安装和配置一些文件和工具以使用 Micro Focus ArcSight，以便它可以拉取 Defender 进行终结点检测。
 
@@ -120,9 +120,9 @@ ms.locfileid: "53590991"
 
 9. 选择 **ArcSight 管理器 (加密)** 作为目标，然后单击下一 **步**。
 
-10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 点击“**下一步**”。
+10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 单击“**下一步**”。
 
-11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 点击“**下一步**”。
+11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 单击“**下一步**”。
 
 12. 将显示 ESM 管理器导入证书窗口。 选择 **"将证书从目标导入连接器"，然后单击**"下一 **步"。** 将显示 **"添加连接器摘要** "窗口，并导入证书。
 
@@ -130,9 +130,9 @@ ms.locfileid: "53590991"
 
 14. 选择 **"安装为服务"，** 然后单击"下一 **步"。**
 
-15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 点击“**下一步**”。
+15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 单击“**下一步**”。
 
-16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 点击“**下一步**”。
+16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 单击“**下一步**”。
 
 17. 通过选择"退出"和"下一步 **"完成****安装**。
 

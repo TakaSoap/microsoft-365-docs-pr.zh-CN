@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 78ca10d5da8d9cfb6e40764162b7161a61b6993a
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d2919bb6fa20870eb0de1361b9674df2a74e8ea1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595998"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649363"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>使用事件查看器查看事件和错误
 
@@ -34,7 +34,7 @@ ms.locfileid: "53595998"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 可以在各个设备上的事件查看器 [中查看](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) 事件 ID。
 
@@ -57,7 +57,7 @@ ms.locfileid: "53595998"
 
    ****
 
-   |事件 ID|邮件|说明|Action|
+   |事件 ID|邮件|说明|操作|
    |---|---|---|---|
    |1|Microsoft Defender for Endpoint 服务 (版本 `variable`) 。|在系统启动、关闭和载入期间发生。|正常操作通知;无需任何操作。|
    |2|Microsoft Defender for Endpoint 服务关闭。|在设备关闭或载出时发生。|正常操作通知;无需任何操作。|
@@ -147,7 +147,7 @@ ms.locfileid: "53595998"
    |103|适用于终结点网络检测和响应可执行文件的 Microsoft Defender 已结束|SenseNdr 可执行文件已结束。|正常操作通知;无需任何操作。|
    |
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)。
 
 ## <a name="related-topics"></a>相关主题
 

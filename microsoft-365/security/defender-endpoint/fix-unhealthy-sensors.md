@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 76b701243b2c458ad623f7e39967bf8d2595bbc5
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 737a0e4b7e75b24bde486b79667da8e7771bbefa
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53619599"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649319"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
@@ -32,7 +32,7 @@ ms.locfileid: "53619599"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)。
+- 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)。
 
 分类为错误配置或非活动的设备可能由于各种原因被标记。 本节提供了一些说明，说明可能导致设备被分类为非活动或错误配置的原因。
 

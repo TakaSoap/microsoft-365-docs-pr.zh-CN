@@ -1,5 +1,5 @@
 ---
-title: 运行 Microsoft Viva 主题试用版
+title: 运行试用Microsoft Viva主题
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
-description: 了解如何在组织中计划和运行 Microsoft Viva 主题的试用试点计划。
-ms.openlocfilehash: 128e82e7664a76baa55d37e983319c9f344624fd
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+description: 了解如何在组织中规划并运行适用于Microsoft Viva主题的试用计划。
+ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327076"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649619"
 ---
-# <a name="run-a-trial-of-microsoft-viva-topics"></a>运行 Microsoft Viva 主题试用版
+# <a name="run-a-trial-of-microsoft-viva-topics"></a>运行试用Microsoft Viva主题
 
 本文介绍如何设置和运行试用计划，以将 Viva 主题部署到组织。 本文还推荐了试用版的最佳实践。
 
@@ -30,12 +30,12 @@ ms.locfileid: "53327076"
 - [Viva 主题产品页](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 - The [Microsoft 365 管理中心](https://admin.microsoft.com)
-    1.  登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
-    2.  转到计费  >  **购买服务**。
-    3.  向下滚动到“**加载项**”部分。
-    4.  在"**主题体验"** 磁贴上，选择"详细信息 **"。**
-    5.  选择“**获取免费试用版**”。
-    6.  按照其余向导步骤确认试用版。
+    1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
+    2. 转到计费  >  **购买服务**。
+    3. 向下滚动到“**加载项**”部分。
+    4. 在"**主题体验"** 磁贴上，选择"详细信息 **"。**
+    5. 选择“**获取免费试用版**”。
+    6. 按照其余向导步骤确认试用版。
 
 你必须是全局Microsoft 365或帐单管理员才能激活试用版。
 
@@ -44,23 +44,23 @@ ms.locfileid: "53327076"
 
 ### <a name="who-should-be-involved-in-a-trial"></a>Who应涉及试用版
 
-|角色  |活动  |
-|---------|---------|
-|Microsoft 365全局管理员或帐单管理员  |   激活试用版并分配许可证      |
-|Microsoft 365全局管理员或SharePoint管理员    |       配置 Viva 主题并创建主题中心  |
-|业务用户     |   执行知识管理器、主题参与者和主题使用者角色      |
+|角色|活动|
+|---|---|
+|Microsoft 365全局管理员或帐单管理员|激活试用版并分配许可证|
+|Microsoft 365全局管理员或SharePoint管理员|配置 Viva 主题并创建主题中心|
+|业务用户|执行知识管理器、主题参与者和主题使用者角色|
 
 ### <a name="before-you-activate-a-trial"></a>激活试用版之前
 
 规划对于有效试用 Viva 主题至关重要。 试用期有限，必须包括主题发现和探索主题质量、管理和最终用户体验。
 
-#### <a name="discovery"></a>Discovery
+#### <a name="discovery"></a>发现
 
 在试用期间，主题发现配置有两个高级策略选项：
 
 - 索引所有或大部分联机SharePoint内容。
-   - 大型租户最多可能需要两周时间才能完全编制索引。 虽然主题将在这一期间逐步生成，但完整索引可能占用试用期的一半。
-   - 对于具有大量数据的租户，此选项可生成大量主题，可能数万个。
+  - 大型租户最多可能需要两周时间才能完全编制索引。 虽然主题将在这一期间逐步生成，但完整索引可能占用试用期的一半。
+  - 对于具有大量数据的租户，此选项可生成大量主题，可能数万个。
 
 - 标识要编制索引SharePoint网站子集。
 
@@ -78,11 +78,11 @@ ms.locfileid: "53327076"
 
 在试用期间，有三个角色必须处于活动状态，如下表所述。
 
-|角色  |活动  |
-|---------|---------|
-|知识经理     |   控制主题的生命周期阶段;确认并删除主题;充当主题参与者的社区管理员      |
-|主题参与者    |      内容主题专家，可以：<br> 查看评估 AI 定义的内容质量的主题<br>使用附加内容来特展发现的主题<br>创建 AI 未发现的其他主题   |
-|主题使用者    |     通过页面突出显示和搜索使用主题<br>提供对所展示主题的价值的反馈    |
+|角色|活动|
+|---|---|
+|知识经理|控制主题的生命周期阶段;确认并删除主题;充当主题参与者的社区管理员|
+|主题参与者|内容主题专家，可以：<br> 查看评估 AI 定义的内容质量的主题<br>使用附加内容来特展发现的主题<br>创建 AI 未发现的其他主题|
+|主题使用者|通过页面突出显示和搜索使用主题<br>提供对所展示主题的价值的反馈|
 
 #### <a name="expected-topics"></a>预期主题
 
@@ -123,7 +123,7 @@ ms.locfileid: "53327076"
 
 ### <a name="proceed-to-production-use"></a>继续生产使用
 
-为了确保服务的连续性，必须购买所需的许可证数并将这些许可证分配给用户。 在试用期结束时没有完整许可证的试用用户将无法访问任何 Viva 主题体验。
+为了确保服务的连续性，必须购买所需的许可证数并将这些许可证分配给用户。 试用期结束时没有完整许可证的试用版用户将无法访问任何 Viva Topics 体验。
 
 ### <a name="dont-proceed-to-production-use"></a>请勿继续生产使用
 
@@ -138,4 +138,3 @@ ms.locfileid: "53327076"
 ## <a name="see-also"></a>另请参阅
 
 [开始推动采用 Microsoft Viva 主题](topics-adoption-getstarted.md)
-

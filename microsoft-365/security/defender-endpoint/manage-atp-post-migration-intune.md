@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 127d27e84cd7fc1fdaf530bc149f5d6e0d950337
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fedd48d935ec023b8cd929cb978f5181914f546c
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541717"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663871"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 管理 Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "53541717"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 建议使用[Microsoft Endpoint Manager](/mem)，其中包括 Microsoft Intune (Intune) 来管理组织对也称为终结点 (的设备的威胁防护) 。 [详细了解Endpoint Manager。](/mem/endpoint-manager-overview)
 
@@ -44,7 +44,7 @@ ms.locfileid: "53541717"
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>在 Intune 中查找适用于终结点的 Microsoft Defender 设置
 
 > [!IMPORTANT]
-> 你必须是 Intune 中的全局管理员或服务管理员才能配置本文中所述的设置。 若要了解更多信息，请参阅 **[Intune (管理员) 。](/mem/intune/fundamentals/users-add#types-of-administrators)**
+> 你必须在 Intune 中分配全局管理员或服务管理员角色，才能配置本文中所述的设置。 若要了解更多信息，请参阅 **[Intune (管理员) 。](/mem/intune/fundamentals/users-add#types-of-administrators)**
 
 1. 转到 Azure 门户 [https://portal.azure.com](https://portal.azure.com) () 并登录。
 

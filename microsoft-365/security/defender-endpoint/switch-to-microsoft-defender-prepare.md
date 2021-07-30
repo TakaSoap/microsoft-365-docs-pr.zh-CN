@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 306536e62b8ab47a8428882ffa43cd337805d4fb
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544537"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663883"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切换到 Microsoft Defender for Endpoint - 阶段 1：准备
 
@@ -63,7 +63,7 @@ ms.locfileid: "53544537"
 
 需要更新组织设备的帮助？ 参阅以下资源：
 
-|操作系统 | Resource |
+|操作系统 | 资源 |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [如何在 Mac 上更新软件](https://support.apple.com/HT201541)|
@@ -79,14 +79,14 @@ ms.locfileid: "53544537"
 
 2. 验证许可证是否正确预配。 [检查你的许可证状态](production-deployment.md#check-license-state)。
 
-3. 作为全局管理员或安全管理员，设置适用于终结点的 Defender 的专用云实例。 请参阅 [Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
+3. 设置适用于终结点的 Defender 的专用云实例。 请参阅 [Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
 
 4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
  
 此时，您已准备好向将使用 Microsoft 365 Defender 门户策略的安全管理员和安全 [https://security.microsoft.com](https://security.microsoft.com) () 。 
 
 > [!NOTE]
-> 该Microsoft 365 Defender门户有时称为 Defender for Endpoint 门户，可在 上访问 [https://security.microsoft.com](https://security.microsoft.com) 。 
+> 该Microsoft 365 Defender门户有时称为 Defender for Endpoint 门户，可在 上访问 [https://security.microsoft.com](https://security.microsoft.com) 。 以前的Microsoft Defender 安全中心 (https://securitycenter.windows.com) 将很快重定向到 Microsoft 365 Defender 门户。 若要了解更多信息，请参阅[Microsoft 365 Defender门户概述](portal-overview.md)。
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>授予对 Microsoft 365 Defender 门户的访问权限
 

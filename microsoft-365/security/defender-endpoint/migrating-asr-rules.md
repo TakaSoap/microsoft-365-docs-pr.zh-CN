@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: b1aae75f411af4f9d745c67831222c5ceee6bb0d
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062159"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663823"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>从第三方 HIPS 迁移到 ASR 规则
 
@@ -79,7 +79,7 @@ ms.locfileid: "53062159"
 - **进程**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/** 值、进程、服务 - powershell.exe、cmd.exe、wscript.exe、mshta.exe、EQNEDT32.EXE、regsrv32.exe
-- **攻击面** 减少规则 - ASR 规则内置了阻止 Office 应用启动子进程的规则："阻止所有 Office 应用程序创建子进程"、GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A"。
+- **攻击面** 减少规则 - ASR 规则内置了阻止 Office 应用启动子进程的规则："阻止所有 Office 应用程序创建子进程"、GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a"。
 - **其他推荐功能**- N/A
     
 ### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>阻止Office启动子进程和创建可执行内容
@@ -96,7 +96,7 @@ ms.locfileid: "53062159"
 - **进程**- wscript.exe
 - **操作**- 文件读取
 - **文件/文件夹、注册表项/** 值、进程、服务 - C：\Users *\AppData**.js、C：\Users*\Downloads**.js
-- **攻击面减少** 规则 - 由于可靠性和性能问题，ASR 规则无法阻止特定进程读取特定脚本文件类型。 我们有一个规则来阻止可能源自这些方案的攻击途径。 规则名称为"阻止 JavaScript 或 VBScript 启动下载的可执行内容" (GUID "D3E037E1-3EB8-44C8-A917-57927947596D") ) 和"阻止执行可能混淆的脚本" (GUID" 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC") 。
+- **攻击面减少** 规则 - 由于可靠性和性能问题，ASR 规则无法阻止特定进程读取特定脚本文件类型。 我们有一个规则来阻止可能源自这些方案的攻击途径。 规则名称为"阻止 JavaScript 或 VBScript 启动下载的可执行内容" (GUID "d3e037e1-3eb8-44c8-a917-57927947596d") 和"阻止执行可能混淆的脚本" (GUID" 5beb7efe-fd9a-4556-801d-275e5ffc04cc") 。
 - 其他推荐功能 **-** 尽管在这些方案中存在特定的 ASR 规则可缓解某些攻击途径，但需要指出的是，默认情况下，AV 可以通过反恶意软件扫描接口 (AMSI) 实时检查脚本 (PowerShell、Windows Script Host、JavaScript、VBScript 等) 。 详细信息在此处可用： [反恶意软件扫描接口 (AMSI) ](/windows/win32/amsi/antimalware-scan-interface-portal)。
 
 ### <a name="block-launch-of-child-processes"></a>阻止启动子进程

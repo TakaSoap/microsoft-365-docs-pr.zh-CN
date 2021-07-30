@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 139b1ae75ff7fe98591f0053a526e8aec5266a5f
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 6118b461d615002423712dc931962c8ab21778c2
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567107"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648923"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻击的设备报告 - 危险和漏洞管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53567107"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 该报告显示包含易受攻击的设备趋势和当前统计信息的图形和条形图。 目标是了解设备曝光的目的和范围。
 

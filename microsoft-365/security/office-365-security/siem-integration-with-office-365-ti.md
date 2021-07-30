@@ -19,12 +19,12 @@ description: 将组织的 SIEM 服务器与 Microsoft Defender 集成，Office 3
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e11d1e64b7c8c3b9d5b93516fe05aed3d5937290
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
+ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105628"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53663859"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM 与 Microsoft Defender for Office 365
 
@@ -57,20 +57,16 @@ SIEM 服务器或其他类似的系统轮询 **audit.general** 工作负载以�
 
 下表汇总了与 Microsoft Defender for Office 365 事件相关的 **AuditLogRecordType** 值：
 
-<br>
-
-****
-
-|值|成员名称|说明|
+| 值 | 成员名称 | 说明 |
 |---|---|---|
-|28|ThreatIntelligence|Exchange Online Protection 和 Microsoft Defender for Office 365 中的网络钓鱼和恶意软件事件。|
-|41|ThreatIntelligenceUrl|保险箱链接 Microsoft Defender for Office 365 的阻止时间和阻止覆盖Office 365。|
-|47|ThreatIntelligenceAtpContent|SharePoint Online、OneDrive for Business 和 Microsoft Teams 中文件的网络钓鱼和恶意软件Office 365。|
-|64|AirInvestigation|来自 Microsoft Defender for Office 365计划 2 的自动调查和响应事件，例如调查详细信息和相关项目。|
+| 28| ThreatIntelligence | Exchange Online Protection 和 Microsoft Defender for Office 365 中的网络钓鱼和恶意软件事件。 |
+| 41| ThreatIntelligenceUrl | 保险箱链接 Microsoft Defender for Office 365 的阻止时间和阻止覆盖Office 365。 |
+| 47| ThreatIntelligenceAtpContent | SharePoint Online、OneDrive for Business 和 Microsoft Teams 中文件的网络钓鱼和恶意软件Office 365。 |
+| 64| AirInvestigation | 来自 Microsoft Defender for Office 365计划 2 的自动调查和响应事件，例如调查详细信息和相关项目。 |
 |
 
 > [!IMPORTANT]
-> 你必须是全局管理员或在 Microsoft 365 Defender 门户中分配了安全管理员角色，才能设置 SIEM 与 Microsoft Defender Office 365。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
+> 你必须在 Microsoft 365 Defender 门户中分配全局管理员或安全管理员角色，才能设置 SIEM 与 Microsoft Defender Office 365。 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 >
 > 必须为审核环境启用Microsoft 365日志记录。 若要获取有关此内容的帮助，请参阅打开 [审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 

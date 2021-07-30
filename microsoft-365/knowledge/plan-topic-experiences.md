@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划规划Microsoft Viva主题
-ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542389"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649643"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划Microsoft Viva主题
 
@@ -54,6 +54,8 @@ ms.locfileid: "53542389"
 - **除所选网站之外的所有网站**：除指定网站之外的所有网站。 将来创建的网站将包含为主题发现源。 
 - **仅选定网站**：仅指定网站。 将不包含未来创建的网站作为发现源。
 - **无网站**：不包含任何 SharePoint 网站。
+
+我们建议选择足够的网站以包含至少 20，000 个文档，以从 Viva 主题获得最佳结果。
 
 如果您选择"全部 **"（** 所选网站除外）或"仅所选网站"，您可以上载包含.csv列表的配置文件。 如果你进行试验并且希望包含有限数量的站点来启动，这些选项非常有用。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 70607eb90fa6c1614ed10e90e4d6ee9cf36f7204
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595698"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649391"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595698"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 本部分涵盖有关 Defender for Endpoint 的隐私和数据处理的一些最常见的问题。
 
@@ -112,4 +112,4 @@ Microsoft 为客户提供有关 Microsoft 安全与合规计划的详细信息�
 
 有关 Defender for Endpoint 认证报告详细信息，请参阅 [Microsoft 信任中心](https://servicetrust.microsoft.com/)。 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-datastorage-belowfoldlink)。

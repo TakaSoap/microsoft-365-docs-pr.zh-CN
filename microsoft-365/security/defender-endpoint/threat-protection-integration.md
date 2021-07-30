@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: a5bd08de8e685dc30908647b6d2a0544309b074e
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878564"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649103"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -32,7 +32,7 @@ ms.locfileid: "52878564"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 ## <a name="integrate-with-other-microsoft-solutions"></a>与其他 Microsoft 解决方案集成
 
@@ -68,11 +68,11 @@ Microsoft Cloud App Security Microsoft Defender for Endpoint 终结点信号，�
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 借助 Microsoft 365 Defender、Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案，形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。 
  
-[详细了解 Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+[详细了解Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>相关主题
 - [配置集成和其他高级功能](advanced-features.md)
-- [Microsoft 365Defender 概述](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Microsoft 365 Defender概述](/microsoft-365/security/defender/microsoft-threat-protection)
 - [打开 Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
 - [使用条件访问保护用户、数据和设备](conditional-access.md)

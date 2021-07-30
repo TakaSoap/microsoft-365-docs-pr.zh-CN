@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db9ff6429062f110981a2e91506b155a506d6ee5
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2b9914c67ba9e98d68e053b8c3613c7d883f82a5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591003"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649631"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "53591003"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)。
 
 根据你使用的 Microsoft 安全产品，某些高级功能可能可供你集成 Defender for Endpoint。
 
@@ -175,7 +175,7 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 > [!NOTE]
 > Defender for Endpoint 中的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-## <a name="microsoft-cloud-app-security"></a>Microsoft 云应用安全
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全位置。
 

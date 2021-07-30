@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ef5402ac782f856a96c27ed745a8c1ecf93813ca
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7bef13e2a7e85b10a103175de55d4d721bde2573
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543565"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649415"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>计划 Microsoft Defender for Endpoint 部署 
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543565"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
 规划 Microsoft Defender for Endpoint 部署，以便你可以最大化套件中的安全性功能，并更好地保护你的企业免受网络威胁。
 

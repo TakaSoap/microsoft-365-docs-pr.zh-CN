@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0d3cda6ad01faea2fb2f959f167367ed912c35bb
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 693f750b7e169eda597b43344d913c170676be77
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621771"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649163"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全操作仪表板
 
@@ -31,7 +31,7 @@ ms.locfileid: "53621771"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
 安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供了发现检测位置的简要概述，并突出显示了需要响应操作的地方。
 
@@ -126,7 +126,7 @@ ms.locfileid: "53621771"
 
 单击用户帐户以查看有关用户帐户的详细信息。 有关详细信息，请参阅 [调查用户帐户](investigate-user.md)。
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)。
 
 ## <a name="related-topics"></a>相关主题
 
