@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bde97638a39eef4561b898b2cf49e51bed6e77a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 06d59cd1b5d2d41c06ef7867e5b0174946cecfb0
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926651"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656099"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -30,7 +30,7 @@ ms.locfileid: "52926651"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 [网络](network-protection.md) 保护有助于防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 可以在 [测试环境中](evaluate-network-protection.md) 审核网络保护，以查看在启用应用之前将阻止哪些应用。
 
@@ -65,7 +65,7 @@ ms.locfileid: "52926651"
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell

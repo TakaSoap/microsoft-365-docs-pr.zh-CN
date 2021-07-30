@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务保护混合工作者的应用、数据和设备。
-ms.openlocfilehash: 3de458f99ce1c83132d193cae523a49353b6956c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 30df9210cf1f154551b64451ec4ebd22ffe410a8
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229391"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656051"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>步骤 3：为混合工作者部署安全性和合规性
 
@@ -47,13 +47,13 @@ ms.locfileid: "53229391"
 
 使用 Microsoft 365 的这些安全功能来保护应用程序和数据。
 
-| 功能或特性 | 为什么需要它 | 许可 |
-|:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Microsoft Defender for Office 365 会收集并分析应用中信号，用于检测、调查和修正安全风险，并保护组织免受电子邮件、链接 （URL） 和协作工具造成恶意威胁。它还提供针对标准和严格安全性等同的租户配置评估和配置工具。 | Microsoft 365 E3 或 E5 |
-| 恶意软件防护 | ‎Microsoft Defender 防病毒和 Device Guard 提供基于设备的恶意软件防护。 <br><br> SharePoint‎ Online 会自动扫描上传文件中已知的恶意软件。<br><br> Exchange Online Protection‎ (‎EOP‎) 可保护云邮箱。 | Microsoft 365 E3 或 E5 |
-| Microsoft Defender for Endpoint | 保护你的组织的设备免受网络威胁和数据泄露，并检测、调查和响应高级威胁。 | Microsoft 365 E5 |
-| 云应用安全 | 保防您的基于云的服务（Microsoft 365 和其他 SaaS 应用）受到攻击。 | Microsoft 365 E5 或单独的云应用安全许可证 |
-| Azure AD 标识保护  | 自动检测和修复基于标识的风险。 <br><br>创建基于风险的条件访问策略，以对有风险的登录要求多重身份验证 (MFA)。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
+|功能或特性|为什么需要它|许可|
+|---|---|---|
+|Microsoft Defender for Office 365|保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <p> Microsoft Defender for Office 365 会收集并分析应用中信号，用于检测、调查和修正安全风险，并保护组织免受电子邮件、链接 （URL） 和协作工具造成恶意威胁。它还提供针对标准和严格安全性等同的租户配置评估和配置工具。|Microsoft 365 E3 或 E5|
+|恶意软件防护|‎Microsoft Defender 防病毒和 Device Guard 提供基于设备的恶意软件防护。 <p> SharePoint‎ Online 会自动扫描上传文件中已知的恶意软件。 <p> Exchange Online Protection‎ (‎EOP‎) 可保护云邮箱。|Microsoft 365 E3 或 E5|
+|Microsoft Defender for Endpoint|保护你的组织的设备免受网络威胁和数据泄露，并检测、调查和响应高级威胁。|Microsoft 365 E5|
+|云应用安全|保防您的基于云的服务（Microsoft 365 和其他 SaaS 应用）受到攻击。|Microsoft 365 E5 或单独的云应用安全许可证|
+|Azure AD 标识保护|自动检测和修复基于标识的风险。 <p>创建基于风险的条件访问策略，以对有风险的登录要求多重身份验证 (MFA)。|Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可）|
 ||||
 
 第一步是了解和使用 [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)。
@@ -66,17 +66,17 @@ ms.locfileid: "53229391"
 
 使用 Microsoft 365 的这些合规性功能来遵守内部政策或法规要求。
 
-| 功能或特性 | 为什么需要它 | 许可 |
-|:-------|:-----|:-------|
-| 敏感度标签 | 通过在电子邮件、文件或站点上放置具有不同保护级别的标签，可以在不影响用户工作效率和协作能力的情况下对组织的数据进行分类和保护。 | Microsoft 365 E3 或 E5 |
-| 数据丢失防护 (DLP) | 在内部和外部检测、警告和阻止有风险的、无意或不适当的共享，例如包含个人信息的数据共享。 | Microsoft 365 E3 或 E5 |
-| 条件访问应用控制 | 防止敏感数据下载到用户的个人设备。 | Microsoft 365 E3 或 E5 |
-| 数据保留标签和策略 | 实施信息治理控制，例如将数据保留多长时间以及对客户个人数据存储的要求，以符合组织的政策或数据法规。 | Microsoft 365 E3 或 E5 |
-| Office 邮件加密 (OME) | 在组织内部和外部的人员之间发送和接收加密的电子邮件，其中包含受监管的数据，例如客户的个人数据。 | Microsoft 365 E3 或 E5 |
-| 合规性管理器 | 使用 Microsoft 服务信任门户中基于工作流的风险评估工具来管理与 Microsoft 云服务相关的法规合规性活动。 | Microsoft 365 E3 或 E5 |
-| 合规性管理器 | 在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。 | Microsoft 365 E3 或 E5 |
-| 通信合规性  | 对组织中的不当邮件进行检测、捕获和执行修正操作。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
-| 内部风险管理 |  对组织中的恶意和意外风险进行检测、调查并采取相关措施。 即使员工使用的是非托管设备，Microsoft 365 也可检测到这些类型的风险。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
+|功能或特性|为什么需要它|许可|
+|---|---|---|
+|敏感度标签|通过在电子邮件、文件或站点上放置具有不同保护级别的标签，可以在不影响用户工作效率和协作能力的情况下对组织的数据进行分类和保护。|Microsoft 365 E3 或 E5|
+|数据丢失防护 (DLP)|在内部和外部检测、警告和阻止有风险的、无意或不适当的共享，例如包含个人信息的数据共享。|Microsoft 365 E3 或 E5|
+|条件访问应用控制|防止敏感数据下载到用户的个人设备。|Microsoft 365 E3 或 E5|
+|数据保留标签和策略|实施信息治理控制，例如将数据保留多长时间以及对客户个人数据存储的要求，以符合组织的政策或数据法规。|Microsoft 365 E3 或 E5|
+|Office 邮件加密 (OME)|在组织内部和外部的人员之间发送和接收加密的电子邮件，其中包含受监管的数据，例如客户的个人数据。|Microsoft 365 E3 或 E5|
+|合规性管理器|使用 Microsoft 服务信任门户中基于工作流的风险评估工具来管理与 Microsoft 云服务相关的法规合规性活动。|Microsoft 365 E3 或 E5|
+|合规性管理器|在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。|Microsoft 365 E3 或 E5|
+|通信合规性|对组织中的不当邮件进行检测、捕获和执行修正操作。|具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3|
+|内部风险管理|对组织中的恶意和意外风险进行检测、调查并采取相关措施。 即使员工使用的是非托管设备，Microsoft 365 也可检测到这些类型的风险。|具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3|
 ||||
 
 有关详细信息，请参阅 [Microsoft 365 合规中心入门快速任务](../compliance/compliance-quick-tasks.md)。

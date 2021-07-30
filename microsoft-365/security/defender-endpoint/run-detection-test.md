@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10090fdd1dff6b020d06c82afa8456d7a157ff91
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d73a07bdd57748a5756d0fabddeff3aee0cd4d5d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843302"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656279"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试 
 
@@ -39,7 +39,7 @@ ms.locfileid: "52843302"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 在新载入的设备上运行以下 PowerShell 脚本，验证它是否正确报告给 Defender for Endpoint 服务。
 
@@ -50,7 +50,7 @@ ms.locfileid: "52843302"
 
    1. 右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。
 
-      ![指向"以管理员模式运行"的"窗口开始"菜单](images/run-as-admin.png)
+      ![指向"开始"菜单以管理员角色运行"的窗口](images/run-as-admin.png)
 
 3. 在提示符下，复制并运行以下命令：
 

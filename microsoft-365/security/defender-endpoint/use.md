@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bfd6652395b7a1687320ec78d49caba67dc160
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581090"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656195"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender 安全中心概述
 
@@ -33,7 +33,7 @@ ms.locfileid: "51581090"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-usewdatp-abovefoldlink)。
 
 Microsoft Defender 安全中心是一个门户，可在其中访问 Microsoft Defender for Endpoint 功能。
 

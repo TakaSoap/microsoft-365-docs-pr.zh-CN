@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 389318ec86b1464b905be35f7de67e5037c94ad3
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 95ad09a3aca9b756752ef7fd05886e4d8c98befc
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596130"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655823"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>适用于 Defender for Endpoint 中 Windows 10设备的载入工具和方法
 
@@ -33,7 +33,7 @@ ms.locfileid: "53596130"
 - [Microsoft 365DLP (终结点数据丢失) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Microsoft 365内部风险管理](/microsoft-365/compliance/insider-risk-management)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 必须配置组织中设备，以便 Defender for Endpoint 服务可以从这些设备获取传感器数据。 可以使用多种方法和部署工具来配置贵组织的设备。
 
@@ -54,4 +54,4 @@ ms.locfileid: "53596130"
 [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)|了解如何使用本地脚本在终结点上部署配置包。
 [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)|了解如何使用配置包配置 VDI 设备。
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)。

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fa03a11a548cfd60e9b9911eb2a87be0af37015
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 33bd21cb338d5c792e6241ac61f75712ecc1ad45
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542629"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656063"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "53542629"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
 在最新版本的 Microsoft Defender for Endpoint 中 (GA) 中通常提供以下功能，以及 Windows 10 和 Windows Server 中的安全功能。
 
@@ -200,7 +200,7 @@ ms.locfileid: "53542629"
   - 阻止从 USB 运行的不受信任的和未签名的进程
   - 阻止来自电子邮件客户端和 Webmail 的可执行内容
 
-- [自动调查和修复](automated-investigations.md)<BR> 使用自动调查来调查和修正威胁。
+- [自动调查和修正](automated-investigations.md)<BR> 使用自动调查来调查和修正威胁。
 
     > [!NOTE]
     > 可从 Windows 10 版本 1803 或更高版本获得。

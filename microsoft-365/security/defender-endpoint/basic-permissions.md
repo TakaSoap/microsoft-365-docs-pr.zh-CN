@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: eac7f951d7b07fb14b95df78c02e5c0206d8a6f1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290181"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655883"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本权限访问门户
 
@@ -32,7 +32,7 @@ ms.locfileid: "53290181"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-basicaccess-abovefoldlink)。
 
 请参阅下面的说明以使用基本权限管理。
 
@@ -47,7 +47,7 @@ ms.locfileid: "53290181"
 - 可读写 (完全访问权限) 
 - 只读访问
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 
 - 安装 Azure PowerShell。 有关详细信息，请参阅如何安装和配置[Azure PowerShell。](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
 

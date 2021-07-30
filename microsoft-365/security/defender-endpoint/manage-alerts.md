@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1885d508b26e517fde4dd2ba45a562f9393ffd75
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: dec8014dd27084d22b33e9bdb6ab6b6a38520db4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622552"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650303"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -32,7 +32,7 @@ ms.locfileid: "53622552"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
 Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，并且可以访问警报 **队列中的所有警报**。
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: 744b68d3cbb910eca3d3cd5d47d94feb3581ae7c
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 47777bf0a659b6bd08bcb15e8263c674dac2a4e8
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595674"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655367"
 ---
 # <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>防病毒解决方案与 Microsoft Defender for Endpoint 的兼容性
 
@@ -33,7 +33,7 @@ ms.locfileid: "53595674"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-defendercompat-abovefoldlink)。
 
 Microsoft Defender for Endpoint 代理依赖于Microsoft Defender 防病毒某些功能（如文件扫描）的功能。
 

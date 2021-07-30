@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73a602f9a8fbf9387708b1d0343315b7bc82617c
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: bb4a7a132cb096f53dcd0fa0f14d90dfb6dfbc39
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595866"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656123"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -36,7 +36,7 @@ ms.locfileid: "53595866"
 - WindowsServer 2019 及更高版本
 - WindowsServer 2019 核心版本
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)。
 
 Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过安全中心控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。
 

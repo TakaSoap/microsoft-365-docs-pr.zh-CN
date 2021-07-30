@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9f8d8fed0abd6140d7cddf46621dde82da0752e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 8bca8fa3446bc3e078c992b537b30dfe70e73f65
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623140"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650015"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的合作伙伴应用程序
 
@@ -33,7 +33,7 @@ ms.locfileid: "53623140"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 Defender for Endpoint 支持第三方应用程序，以帮助增强平台的检测、调查和威胁智能功能。
 

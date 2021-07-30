@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 75c8ee6bc736bbe53638cb9040cf2bb68e333201
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229367"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650183"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -82,22 +82,22 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 要为混合工作者启用 Microsoft 365 的功能，请使用以下 Microsoft 365 功能。
 
-| 功能或特性 | 说明 | 许可 |
-|:-------|:-----|:-------|
-| 通过安全性默认设置强制执行 MFA   | 通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。   | Microsoft 365 E3 或 E5 |
-| 通过条件访问强制执行 MFA| 要求基于使用条件访问策略的登录的属性进行 MFA。    | Microsoft 365 E3 或 E5 |
-| 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
-| 自助服务密码重置 (SSPR)    | 允许用户重置或解锁其密码或帐户。  | Microsoft 365 E3 或 E5 |
-| Azure AD 应用程序代理    | 为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。   | 需要单独的付费 Azure 订阅 |
-| 配置点到站点 VPN   | 通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。   | 需要单独的付费 Azure 订阅 |
-| Windows 虚拟桌面   | 支持只能将其个人和非托管设备与在 Azure 中运行的虚拟桌面配合使用的远程工作者。 | 需要单独的付费 Azure 订阅 |
-| 远程桌面服务 (RDS) | 允许员工通过 Intranet 连接到基于 Windows 的计算机。 | Microsoft 365 E3 或 E5 |
-| 远程桌面服务网关   | 加密通信，防止 RDS 主机直接向 Internet 公开。 | 需要单独的 Windows Server 许可证 |
-| Microsoft Intune | 管理设备和应用程序。   | Microsoft 365 E3 或 E5 |
-| 内容和功能， | 管理设备上的软件安装、更新和设置 | 需要单独的 Configuration Manager 许可证 |
-| 桌面分析 | 确定你的 Windows 客户端的更新准备情况。   | 需要单独的 Configuration Manager 许可证 |
-| Windows Autopilot | 设置和预配置新的 Windows 10 设备，以便高效使用。   | Microsoft 365 E3 或 E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer | 创建、沟通和协作。 | Microsoft 365 E3 或 E5 |
+|功能或特性|说明|许可|
+|---|---|---|
+|通过安全性默认设置强制执行 MFA|通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。|Microsoft 365 E3 或 E5|
+|通过条件访问强制执行 MFA|要求基于使用条件访问策略的登录的属性进行 MFA。|Microsoft 365 E3 或 E5|
+|通过基于风险的条件访问强制执行 MFA|需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。|Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可）|
+|自助服务密码重置 (SSPR)|允许用户重置或解锁其密码或帐户。|Microsoft 365 E3 或 E5|
+|Azure AD 应用程序代理|为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。|需要单独的付费 Azure 订阅|
+|配置点到站点 VPN|通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。|需要单独的付费 Azure 订阅|
+|Windows 虚拟桌面|支持只能将其个人和非托管设备与在 Azure 中运行的虚拟桌面配合使用的远程工作者。|需要单独的付费 Azure 订阅|
+|远程桌面服务 (RDS)|允许员工通过 Intranet 连接到基于 Windows 的计算机。|Microsoft 365 E3 或 E5|
+|远程桌面服务网关|加密通信，防止 RDS 主机直接向 Internet 公开。|需要单独的 Windows Server 许可证|
+|Microsoft Intune|管理设备和应用程序。|Microsoft 365 E3 或 E5|
+|内容和功能，|管理设备上的软件安装、更新和设置|需要单独的 Configuration Manager 许可证|
+|桌面分析|确定你的 Windows 客户端的更新准备情况。|需要单独的 Configuration Manager 许可证|
+|Windows Autopilot|设置和预配置新的 Windows 10 设备，以便高效使用。|Microsoft 365 E3 或 E5|
+|Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer|创建、沟通和协作。|Microsoft 365 E3 或 E5|
 ||||
 
 有关安全和合规性条件，请参阅[针对远程工作者的部署安全性与合规性](empower-people-to-work-remotely-security-compliance.md)。

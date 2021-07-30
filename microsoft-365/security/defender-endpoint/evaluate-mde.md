@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fd8e1e007031a19a0520e11c8b2497e64e721a74
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595938"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655763"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>评估 Microsoft Defender for Endpoint 
 
@@ -32,11 +32,11 @@ ms.locfileid: "53595938"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。
 
-可以通过启动免费试用版评估你的组织的 Microsoft Defender for [Endpoint。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+可以通过启动免费试用版评估你的组织的 Microsoft Defender for [Endpoint。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)
 
 还可以按照以下说明评估 Microsoft Defender for Endpoint 中的不同安全功能。
 

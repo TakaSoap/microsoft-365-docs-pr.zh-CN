@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3d09f293924003ea8bf3df0079b31b633e1cc23
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8c4af97ed6ef6e14ed1aeede655ab48f04998d3d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544623"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655595"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "53544623"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 本主题介绍如何手动在 macOS 上部署 Microsoft Defender for Endpoint。 要成功部署，需要完成以下所有步骤：
 

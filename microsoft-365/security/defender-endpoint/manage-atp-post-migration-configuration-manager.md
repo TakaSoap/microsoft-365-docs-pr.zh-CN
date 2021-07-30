@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 58bc187eb1e875e2bb6cf28360c10d45918454f4
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 64346434356a4c5e77f31a11b7d0d599361d3c67
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542929"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650279"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "53542929"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 
 我们建议使用[Microsoft Endpoint Manager，](/mem)其中包括[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) 和[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) 来管理组织对设备的威胁防护功能 (也称为终结点) 。 

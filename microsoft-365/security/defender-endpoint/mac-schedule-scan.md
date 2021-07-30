@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a93ea3427c72eb5529715b92cb18d01462493cc6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9ec708ee24d33765203730412ddfc7eea5cc2e37
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842850"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650351"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
 
@@ -33,7 +33,7 @@ ms.locfileid: "52842850"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 虽然你随时可以使用 Microsoft Defender for Endpoint 启动威胁扫描，但企业可能会从计划扫描或定期扫描中获益。 例如，可以将扫描计划为每个工作日或每周的开始运行。 
 
@@ -41,9 +41,13 @@ ms.locfileid: "52842850"
 
 可以在 macOS 设备上使用启动 *的守护程序* 创建扫描计划。
 
-1. 以下代码显示计划扫描所需的架构。 打开文本编辑器，并使用此示例作为你自己的计划扫描文件的指南。
+有关此处使用的 *.plist* 文件格式详细信息，请参阅官方 Apple 开发人员网站的关于 [信息属性](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) 列表文件。
 
-    有关此处使用的 *.plist* 文件格式详细信息，请参阅官方 Apple 开发人员网站的关于 [信息属性](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) 列表文件。
+### <a name="schedule-a-quick-scan"></a>计划快速扫描
+
+以下代码显示计划快速扫描所需的架构。 
+
+1. 打开文本编辑器，并使用此示例作为你自己的计划扫描文件的指南。
 
     ```XML
     <?xml version="1.0" encoding="UTF-8"?>
@@ -80,18 +84,56 @@ ms.locfileid: "52842850"
 
 2. 将文件另存为 *com.microsoft.wdav.schedquickscan.plist*。
 
-    > [!TIP]
-    > 若要运行完全扫描而不是快速扫描，请更改第 12 行，以使用 选项而不是 (即) ，将文件另存为 `<string>/usr/local/bin/mdatp scan quick</string>` `full` `quick` `<string>/usr/local/bin/mdatp scan full</string>` *com.microsoft.wdav.sched **full** scan.plist，* 而不是 *com.microsoft.wdav.sched **quick** scan.plist*。
+### <a name="schedule-a-full-scan"></a>计划完全扫描
 
-3. 打开 **终端**。
-4. 输入以下命令以加载文件：
+1. 打开文本编辑器，并使用此示例进行完整扫描。
+
+    ```XML
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+      "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.microsoft.wdav.schedfullscan</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>sh</string>
+            <string>-c</string>
+            <string>/usr/local/bin/mdatp scan full</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>StartCalendarInterval</key>
+        <dict>
+            <key>Day</key>
+            <integer>3</integer>
+            <key>Hour</key>
+            <integer>2</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+            <key>Weekday</key>
+            <integer>5</integer>
+        </dict>
+        <key>WorkingDirectory</key>
+        <string>/usr/local/bin/</string>
+    </dict>
+    </plist>
+     ```
+
+2. 将文件另存为 *com.microsoft.wdav.schedfullscan.plist*。
+ 
+### <a name="load-your-file"></a>加载文件
+
+1. 打开 **终端**。
+2. 输入以下命令以加载文件：
 
     ```bash
     launchctl load /Library/LaunchDaemons/<your file name.plist>
     launchctl start <your file name>
     ```
 
-5. 计划扫描将按你在 p-list 中定义的日期、时间和频率运行。 在示例中，扫描每周五的上午 2：00 运行。 
+3. 计划扫描将按你在 p-list 中定义的日期、时间和频率运行。 在以上示例中，扫描每周五的上午 2：00 运行。 
 
     `Weekday`的值 `StartCalendarInterval` 使用整数指示一周的第五天或星期五。
 

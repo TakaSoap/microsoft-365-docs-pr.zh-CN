@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: c05858184df57b148b83dabee402fde29d98e95e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: bc3ef2737afed17ca46d4715992b9c8cc82758cb
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622035"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649859"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>查看 Microsoft Defender for Endpoint 中的警报
 
@@ -32,7 +32,7 @@ ms.locfileid: "53622035"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
 Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相关的攻击信号和警报，为警报提供完整的上下文，以构建详细的警报情景。
 

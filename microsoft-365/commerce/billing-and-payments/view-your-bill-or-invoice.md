@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: 463b1b1a34a14c1283ad31fb2e1236ba913b0594
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394481"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650087"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -81,6 +81,12 @@ ms.locfileid: "53394481"
 > 你需要注册的帐户以便访问[发票管理系统](https://go.microsoft.com/fwlink/p/?linkid=837465)。 如果尚未设置帐户，请参阅[由世纪互联运营的 Office 365 发票](../../admin/services-in-china/apply-for-a-fapiao.md)。
 
 ::: moniker-end
+
+> [!NOTE]
+> 
+> Microsoft 365服务不提供付款回执。
+> 对于信用卡付款，请使用发票和信用卡帐单来匹配你的付款。
+
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>以电子邮件方式接收帐单副本
 

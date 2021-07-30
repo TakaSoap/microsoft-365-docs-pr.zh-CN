@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解新的 Office 365 邮件加密功能，可与组织内部和外部的人员实现受保护的电子邮件通信。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228575"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655475"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 
@@ -72,21 +72,21 @@ ms.locfileid: "53228575"
 
 3. 使用以下语法运行 Test-IRMConfiguration cmdlet：
 
-     ```powershell
-     Test-IRMConfiguration [-Sender <email address >]
-     ```
+   ```powershell
+   Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
+   ```
 
    **示例**：
 
-     ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com
-     ```
+   ```powershell
+   Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
+   ```
 
-     - 向发件人提供电子邮件是可选项，但会强制系统执行其他检查。 使用 Microsoft 365 租户中任何用户的电子邮件地址。
+   - 对于发件人和收件人，请使用Microsoft 365租户中任何用户的电子邮件地址。
 
      结果应类似于：
 
-     ```text
+     ```console
      Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c471f2b0d88219ac04a1c64343c950604fec2183
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622504"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655535"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>将设备载入到 Microsoft Defender for Endpoint 服务
 
@@ -33,7 +33,7 @@ ms.locfileid: "53622504"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
 你需要转到 Defender for Endpoint 门户的载入部分，以载入任何受支持的设备。 根据设备，将指导你执行相应步骤，并提供适当的适用于设备的管理和部署工具选项。
 
@@ -70,4 +70,4 @@ ms.locfileid: "53622504"
 [配置代理和 Internet 设置](configure-proxy-internet.md)|通过配置代理和 Internet 连接设置，启用与 Defender for Endpoint 云服务的通信。
 [解决载入问题](troubleshoot-onboarding.md)|了解如何解决载入期间可能出现的问题。
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。

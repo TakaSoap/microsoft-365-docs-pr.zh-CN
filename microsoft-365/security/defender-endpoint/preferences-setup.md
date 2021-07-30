@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abcfa00f13857fa5b3fcd83a2e4ee073c6143540
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621831"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656303"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>配置Microsoft Defender 安全中心设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "53621831"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)。
 
 使用设置 **菜单** 修改常规设置、高级功能、启用预览体验、电子邮件通知和自定义威胁情报功能。
 

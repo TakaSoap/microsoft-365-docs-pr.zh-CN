@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: cab209af0ef2f8294ab47ca877b2c0b63206a00d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822366"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655631"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 
@@ -31,7 +31,7 @@ ms.locfileid: "52822366"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 > [!NOTE]
 > iOS 上的 Defender for Endpoint 使用 VPN 提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地或自循环 VPN。 **Microsoft 或你的组织看不到你的浏览活动。**

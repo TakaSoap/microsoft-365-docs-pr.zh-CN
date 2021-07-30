@@ -15,12 +15,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 description: 了解如何在组织中计划和运行SharePoint Syntex试点计划。
-ms.openlocfilehash: 2668c0c85d6b8c73d377ac9efffc7f777fc7add6
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 6b3aadd635e8abb41e0b3eb1bb9414d40fc1192b
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327077"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655463"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>运行 Microsoft SharePoint Syntex
 
@@ -38,22 +38,22 @@ ms.locfileid: "53327077"
 - 产品[SharePoint Syntex页面](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
 - The [Microsoft 365 管理中心](https://admin.microsoft.com)
-    1.  登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
-    2.  转到计费  >  **购买服务**。
-    3.  向下滚动到“**加载项**”部分。
-    4.  在"SharePoint Syntex磁贴上，选择"详细信息 **"。**
-    5.  选择“**获取免费试用版**”。
-    6.  若要确认试用版，请按照其余向导步骤操作。
+    1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
+    2. 转到计费  >  **购买服务**。
+    3. 向下滚动到“**加载项**”部分。
+    4. 在"SharePoint Syntex磁贴上，选择"详细信息 **"。**
+    5. 选择“**获取免费试用版**”。
+    6. 若要确认试用版，请按照其余向导步骤操作。
 
 你必须是全局Microsoft 365或帐单管理员才能激活试用版。
 
 ### <a name="who-should-be-involved-in-a-trial"></a>Who应涉及试用版
 
-|角色  |活动  |
-|---------|---------|
-|Microsoft 365全局管理员或帐单管理员    |     激活试用版并分配许可证    |
-|Microsoft 365全局管理员或SharePoint管理员     |   配置SharePoint Syntex和创建内容中心      |
-|业务用户     |    模型生成和测试     |
+|角色|活动|
+|---|---|
+|Microsoft 365全局管理员或帐单管理员|激活试用版并分配许可证|
+|Microsoft 365全局管理员或SharePoint管理员|配置SharePoint Syntex和创建内容中心|
+|业务用户|模型生成和测试|
 
 ### <a name="before-you-activate-a-trial"></a>激活试用版之前
 
@@ -80,7 +80,7 @@ ms.locfileid: "53327077"
 
 - 将许可证分配给相关用户。
 - 执行[其他设置SharePoint Syntex。](set-up-content-understanding.md)
-    - 您可能需要创建 [其他内容中心](create-a-content-center.md)。
+  - 您可能需要创建 [其他内容中心](create-a-content-center.md)。
 
 激活试用版后，可以创建模型并处理文件。 请参阅 [模型创建指南](create-a-content-center.md)。
 
@@ -104,7 +104,7 @@ ms.locfileid: "53327077"
 
 - 无法创建新模型。
 - 运行模型的库将不再自动对文件或提取模型进行分类。
-- 任何以前已分类的文件或提取的元数据都不受影响。 
+- 任何以前已分类的文件或提取的元数据都不受影响。
 - 内容中心和任何文档理解模型不会自动删除。 如果你决定将来购买许可证，这些许可证将仍然可供使用。
 - 表单处理模型将存储在默认 Power Platform 环境的 common Data Services (CDS) 实例中。 这些可以与以后许可一SharePoint Syntex Power Platform 中的 AI 生成器功能一起使用。
 

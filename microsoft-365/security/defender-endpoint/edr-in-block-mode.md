@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 2754303163e608596cb554dfdb44113c6684fcfe
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 064cc66dfa273209bea5dc14c0e8cf0f39d7c6ac
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543553"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655787"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -35,7 +35,7 @@ ms.locfileid: "53543553"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 ## <a name="what-is-edr-in-block-mode"></a>阻止EDR什么？
 
@@ -76,6 +76,7 @@ EDR阻止模式下的已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 
 3. 向下滚动，然后在块模式下EDR **启用"**
 
+
 > [!NOTE]
 > EDR在阻止模式下只能打开 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 或之前 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。 不能使用注册表项、Microsoft Intune或组策略来启用或禁用EDR阻止模式。
 
@@ -94,7 +95,7 @@ EDR阻止模式下的已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 > [!IMPORTANT]
 > 若要获取最佳保护值，请确保防病毒解决方案配置为接收定期更新和基本功能，并且已配置排除 [项](configure-exclusions-microsoft-defender-antivirus.md)。 EDR模式配置遵守为用户定义的排除Microsoft Defender 防病毒，但不包括为 Microsoft Defender for Endpoint[](manage-indicators.md)定义的指示器。
 
-## <a name="frequently-asked-questions"></a>常见问题解答 
+## <a name="frequently-asked-questions"></a>常见问题 
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>如果我在设备上运行EDR，是否需要在阻止Microsoft Defender 防病毒打开？
 

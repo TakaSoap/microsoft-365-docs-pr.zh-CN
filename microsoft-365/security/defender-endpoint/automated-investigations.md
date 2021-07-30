@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 35c8f85bad73d98aa6eef0f58f853560fe9a1e63
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: fc69992139235dd0e99a0c22e92f87c8447dab43
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590667"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655895"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -46,7 +46,7 @@ ms.locfileid: "53590667"
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
 > [!TIP]
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)。
 
 ## <a name="how-the-automated-investigation-starts"></a>自动调查的启动方式
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 48cfbd3b895579ccf92cb7e9f21dbedf87d599d4
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: d04ce84d49b1ba059c1bd9550a2894ba13296525
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595902"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655835"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>获取载入到 Microsoft Defender for Endpoint 的设备
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595902"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
 每个已载入的设备在传感器上添加额外的终结点检测和 (EDR) ，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
 
@@ -74,7 +74,7 @@ Defender for Endpoint 为载入设备提供了几个[Windows 10选项](onboard-c
 
 有关详细信息，请阅读 [有关使用 Intune 设备](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)配置文件将设备载入 Defender for Endpoint 的信息。
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -21,12 +21,12 @@ description: The Microsoft 365 管理中心 - learn about the features that were
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 1071826fde079ca13626eb8034f41b9c522961d6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394689"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649943"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>最新功能Microsoft 365 管理中心
 
@@ -143,7 +143,7 @@ ms.locfileid: "53394689"
 
 ### <a name="whats-new-features"></a>新增功能
 
-我们改进了在应用中查看用户"新增功能"Office功能。 现在，您可以在"内容"新窗格中看到用户可以看到的丰富内容。 您还可以在决定让用户了解该功能之前了解有关该功能的更多信息。 有关详细信息，请查看管理哪些[Office功能显示在新增功能中](manage/show-hide-new-features.md)。
+我们改进了在应用中查看用户"新增功能"Office功能。 现在，您可以在"新增功能"窗格中看到用户可以看到的丰富内容。 您还可以在决定让用户了解该功能之前了解有关该功能的更多信息。 有关详细信息，请查看管理哪些[Office功能显示在新增功能中](manage/show-hide-new-features.md)。
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot： Office apps what's new page showing improvements to Power BI":::
 
@@ -441,7 +441,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 |Office 365 商业高级版     |    Microsoft 365 商业标准版     |
 |Microsoft 365 商业版     |    Microsoft 365 商业高级版     |
 |Office 365 商业版     |    Microsoft 365 商业应用版       |
-|Office 365 专业增强版    |   Microsoft 365企业应用      |
+|Office 365 ProPlus    |   Microsoft 365企业应用      |
 
 ### <a name="videos-training-and-docs"></a>视频、培训和文档
 

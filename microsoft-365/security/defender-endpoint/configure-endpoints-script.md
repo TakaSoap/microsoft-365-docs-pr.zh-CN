@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1154c1f1da0c5b4dba026af21e07dd1e7f66abe9
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 1db3cb2365f32b61b8bf99d5d8b48d4a7ee39091
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596154"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655439"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用Windows 10脚本载入新设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "53596154"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)。
 
 还可以手动将个别设备载入到 Defender for Endpoint。 在承诺载入网络内的所有设备之前，你可能希望先在测试服务时这样做。
 

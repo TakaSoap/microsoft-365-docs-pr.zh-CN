@@ -1,5 +1,5 @@
 ---
-title: 在 Linux 上部署 Microsoft Defender for Endpoint 更新
+title: 部署 Linux 版 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何在企业环境中为 Linux 上的 Microsoft Defender for Endpoint 部署更新。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 更新， 部署
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc5a64f4be1b782c423c2ae9e2222a1424be97e0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7de99494a373a2e741e7dff2da4b59d94115cc33
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274720"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650495"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上部署 Microsoft Defender for Endpoint 更新
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>部署 Linux 版 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274720"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 5ac5d39af831bdae0069dd3902a9db3e59585909
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 999363676c18ba2d24e2b35fa03081eb292ab650
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543433"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655415"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -35,16 +35,15 @@ ms.locfileid: "53543433"
 - 虚拟桌面基础结构 (VDI) 设备
 - Windows 10、Windows Server 2019、Windows Server 2008R2/2012R2/2016
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)。
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
 
 Defender for Endpoint 支持非永久性 VDI 会话载入。 
 
-
 载入 VDIS 时可能存在相关挑战。 以下是此方案的典型挑战：
 
-- 即时提前载入短期会话，这些会话在实际预配之前必须载入到 Defender for Endpoint。
+- 即时提前载入短期会话，此会话在实际预配之前必须载入到 Defender for Endpoint。
 - 设备名称通常重新用于新会话。
 
 VDI 设备可以在 Defender for Endpoint 门户中显示为：
@@ -76,9 +75,9 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 2. 将文件从 windowsDefenderATPOnboardingPackage 文件夹中从 .zip 文件复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
 
-    1. 如果不为每台设备实现单个条目，请复制 WindowsDefenderATPOnboardingScript.cmd。
+    1. 如果你未针对每台设备实现单个条目，请复制 WindowsDefenderATPOnboardingScript.cmd。
 
-    1. 如果要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
+    1. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
     
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
@@ -90,13 +89,13 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 4. 根据你要实现的方法，请按照相应步骤操作：
 
-   - 对于每台设备的单个条目：
+    - 对于每台设备的单个条目：
    
-     选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
+         选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
    
-   - 对于每台设备的多个条目：
+    - 对于每台设备的多个条目：
    
-     选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
+         选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. 测试解决方案：
 
@@ -109,14 +108,15 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    1. 使用其他用户登录到设备。
       
    1. 根据你要实现的方法，请按照相应步骤操作：
-   
-      - 对于每台设备的单个条目： 
-    
-        在查询中仅检查一Microsoft 365 Defender。
 
-      - 对于每台设备的多个条目： 
-       
-        检查查询中的多个Microsoft 365 Defender。
+   - 对于每台设备的单个条目： 
+
+     仅检查门户中的Microsoft 365 Defender条目。
+
+   - 对于每台设备的多个条目： 
+
+     在门户中检查Microsoft 365 Defender条目。
+
 
 6. 单击 **导航窗格上的** "设备列表"。
 
@@ -178,11 +178,11 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
-5. 像平常一样重新密封黄金/主图像。
+5. 像平常一样封装黄金/主图像。
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](configure-endpoints-gp.md)

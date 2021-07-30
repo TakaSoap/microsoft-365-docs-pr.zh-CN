@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: af21b0ae3e03ebacae9412fc48693d57f32c81e6
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 15611500ae45f2406daf033d27b49de0e2cc3070
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53568000"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656219"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53568000"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 你的曝光分数显示在 Microsoft 365 Defender[门户的威胁漏洞管理](tvm-dashboard-insights.md)仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
 
@@ -51,9 +51,9 @@ ms.locfileid: "53568000"
 
 曝光分数分为以下级别：
 
-- 0–29：低曝光分数
-- 30–69：中等曝光分数
-- 70–100：高曝光分数
+- 0-29：低曝光分数
+- 30-69：中等曝光分数
+- 70-100：高曝光分数
 
 你可以根据优先的安全建议修正问题 [，](tvm-security-recommendation.md) 以减少曝光评分。 每个软件都有一些缺陷，这些缺陷会转换为建议，并基于组织的风险确定优先级。
 

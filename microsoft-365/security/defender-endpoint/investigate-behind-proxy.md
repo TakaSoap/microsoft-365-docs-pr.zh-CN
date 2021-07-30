@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07ed378965cd8c806c6495959fa29a95eda396b9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841050"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650555"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -32,7 +32,7 @@ ms.locfileid: "52841050"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)。
 
 Defender for Endpoint 支持来自不同级别的网络堆栈的网络连接监视。 一个难题是，当网络使用转发代理作为 Internet 网关时。
 

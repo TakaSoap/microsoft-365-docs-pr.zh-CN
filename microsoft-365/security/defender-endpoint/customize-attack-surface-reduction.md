@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2882ac239dd272839917ceae8de5fa31d07af3da
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 22c3235c5d381bc14bd40e474ef0b8a6452db7c2
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53663811"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656111"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -72,19 +72,19 @@ ms.locfileid: "53663811"
 |:----|:----|
 | 阻止滥用被攻击的易受攻击的已签名驱动程序 | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
 | 阻止 Adobe Reader 创建子进程 | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| 阻止所有Office应用程序创建子进程 | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
+| 阻止所有Office应用程序创建子进程 | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | 阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
-| 阻止来自电子邮件客户端和 Webmail 的可执行内容 | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
+| 阻止来自电子邮件客户端和 Webmail 的可执行内容 | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | 阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| 阻止执行可能混淆的脚本 | `5beb7efe-fd9a-4556-801d-275e5ffc04cc` |
-| 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | `d3e037e1-3eb8-44c8-a917-57927947596d` |
-| 阻止Office应用程序创建可执行内容 | `3b576869-a4ec-4529-8536-b80a7769e899` |
-| 阻止Office代码注入其他进程 | `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84` |
+| 阻止执行可能混淆的脚本 | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| 阻止Office应用程序创建可执行内容 | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| 阻止Office代码注入其他进程 | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
 | 阻止Office应用程序创建子进程 | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
 | 通过 WMI 事件订阅阻止持久性 | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | 阻止源自 PSExec 和 WMI 命令的进程创建 | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | 阻止从 USB 运行的不受信任的和未签名的进程 | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| 从宏中阻止 Win32 API Office调用 | `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b` |
+| 从宏中阻止 Win32 API Office调用 | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
 | 使用高级防护抵御勒索软件 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 有关 [每个规则的详细信息](attack-surface-reduction.md) ，请参阅攻击面减少主题。

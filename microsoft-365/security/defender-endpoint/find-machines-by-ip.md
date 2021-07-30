@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 47a8e9e48103eabc481a2f89d2a417582b9c563a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 31ff698a6094e72cea32b7db19db8edf947a1326
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543469"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655322"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>按内部 IP API 查找设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "53543469"
 
 **适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -73,7 +73,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

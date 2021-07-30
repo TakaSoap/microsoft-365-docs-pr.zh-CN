@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f5f3066f16a5f9cf39b2fcf4677b4906758fbe1
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 20851106ec3301823e6c87432eb54b6c8adccc79
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595890"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655811"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -31,7 +31,7 @@ ms.locfileid: "53595890"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
 借助正确配置的设备，你可以提升抵御威胁的整体复原能力，并增强检测和响应攻击的能力。 安全配置管理有助于确保你的设备：
 
@@ -92,4 +92,4 @@ ms.locfileid: "53595890"
 [提高 Defender for Endpoint 安全基线的合规性](configure-machines-security-baseline.md)|跟踪基线合规性和不符合情况。 将安全基线部署到更多 Intune 托管的设备。
 [优化 ASR 规则部署和检测](configure-machines-asr.md)|查看规则部署，然后使用安全中心内的影响分析工具Microsoft 365检测。
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。

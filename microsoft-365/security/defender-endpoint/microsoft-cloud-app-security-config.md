@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4f7aca5cb532510d55042c70d04d65f2aa08baa3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 24022d71802bdaa299547b4885bcb0d23ddd0c57
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844750"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650255"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>在Microsoft Cloud App Security Microsoft Defender for Endpoint 中配置策略
 
@@ -32,13 +32,13 @@ ms.locfileid: "52844750"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 
 若要从适用于终结点的 Microsoft Defender 云应用发现信号中获益，请打开Microsoft Cloud App Security集成。
 
 >[!NOTE]
->此功能将在运行[Windows 10](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上随 企业移动性 + 安全性 一起提供) 。 Windows 10，版本 1803 (OS 内部版本 17134.704，包含[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10、版本 1809 (OS 内部版本 17763.379（具有[KB4489899](https://support.microsoft.com/help/4489899)) 或更高版本 Windows 10 版本）。
+>此功能将在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上随 企业移动性 + 安全性 一起提供) 。 Windows 10，版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10 版本 1809 (OS 内部版本 17763.379 以及[KB4489899](https://support.microsoft.com/help/4489899)) 或更高版本 Windows 10 版本）。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 > 请参阅[Microsoft Defender for Endpoint integration with Microsoft Cloud App Security](/cloud-app-security/mde-integration) for Microsoft Defender for Endpoint with Microsoft Cloud App Security。 
 

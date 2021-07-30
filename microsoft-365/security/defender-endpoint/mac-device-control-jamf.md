@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 21e44090cf21ac8bba29885a2f97242faf3e2164
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 3b96bc33763ded81a760e3d0d0ba6459fa2b5857
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363963"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655583"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 的设备控制策略示例
 
@@ -33,7 +33,7 @@ ms.locfileid: "53363963"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 本文档包含您可以为你自己的组织自定义的设备控制策略的示例。 如果你使用 JAMF 管理企业中的设备，则这些示例适用。
 

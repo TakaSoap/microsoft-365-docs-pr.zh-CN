@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b3adb34e38ff5a67adcabca638bd21817bfd1a27
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 67a9cdb3185bf33b3e4b6353852acdae3f5b1f60
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53594990"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53650447"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -32,7 +32,7 @@ ms.locfileid: "53594990"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 实时响应使安全运营团队能够即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 

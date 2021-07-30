@@ -14,40 +14,36 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 00399cbfaea79b3e1658988272c1bfb1ecbc2b5e
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: edec6726ef2db0f0efffe131886a653cd164cf6f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567004"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655523"
 ---
-# <a name="what-is-test-base-for-microsoft-365"></a>什么是测试基础Microsoft 365？ 
+# <a name="what-is-test-base-for-microsoft-365"></a>什么是测试基础Microsoft 365？
 
-测试Microsoft 365 (测试) 是 Microsoft 基于安全 Azure 环境的验证服务。  
+测试Microsoft 365 (测试) 是 Microsoft 基于安全 Azure 环境的验证服务。
 借助测试库，软件供应商 (SV) 和系统集成商 () 可以针对预发布的 Windows 安全和功能版本加快其应用程序的验证。 这是 SV 合作伙伴与 Microsoft 之间高度参与的协作，支持联合测试、验证和修正。
 
 测试基础提供了一个在 Azure 上构建和维护安全验证服务的机会，客户和合作伙伴可以在该服务中根据我们预发布的安全更新对应用程序工作负载进行阶段和测试。
 
 借助测试基础，SV 可以更深入了解潜在的问题，这些问题可能会妨碍其应用程序 () 在 Microsoft 向市场发布更新之前，在其新操作系统版本上实现最佳性能。
 
-这项新服务将帮助 SV 简化测试工作并提高效率。 Enterprise在协作环境中一起从 SV 和 Microsoft 测试中获益，并更放心地确保他们的应用程序能够正常工作。 
+这项新服务将帮助 SV 简化测试工作并提高效率。 Enterprise在协作环境中一起从 SV 和 Microsoft 测试中获益，并更放心地确保他们的应用程序能够正常工作。
 
-### <a name="advantages-test-base-offers-enterprises-and-their-sv-partners-include"></a>优势 测试基础提供企业及其 SV 合作伙伴包括： 
- 
-  * 更快推出安全更新，以确保设备安全; 
- 
-  * 通过在同一环境中承载操作系统更改和应用程序来降低更新验证成本; 
-  
-  * 来自 Microsoft 的一流的智能报告， (代码覆盖范围、) API 影响分析等; 
-  
-  * Microsoft 在转换测试内容和利用 Azure 方面的专业知识。 
+**优势 测试基础提供企业及其 SV 合作伙伴包括**：
 
+- 更快推出安全更新，以确保设备安全;
+- 通过在同一环境中承载操作系统更改和应用程序来降低更新验证成本;
+- 来自 Microsoft 的一流的智能报告， (代码覆盖范围、) API 影响分析等;
+- Microsoft 在转换测试内容和利用 Azure 方面的专业知识。
 
-### <a name="guide-to-navigating-the-test-base-portal"></a>导航测试基础门户指南
+## <a name="guide-to-navigating-the-test-base-portal"></a>导航测试基础门户指南
 
 本指南分为四个部分 (4) ，以确保在使用我们的服务时实现轻松体验：
 
-1. **概述** 提供详细的分步指南，了解如何通过自助载入门户上传应用程序。 
+1. **概述** 提供详细的分步指南，了解如何通过自助载入门户上传应用程序。
 
 2. **快速入门** 部分，提供有关压缩文件夹结构的格式以及准备测试脚本时需要知道的信息。
 
@@ -55,13 +51,13 @@ ms.locfileid: "53567004"
 
 4. " **参考** "部分提供我们从客户处收到的典型问题的答案。
 
-### <a name="test-base-is-in-public-preview"></a>测试基础在公共预览版中！
+## <a name="test-base-is-in-public-preview"></a>测试基础在公共预览版中！
 
-测试基础已在 ```Public Preview``` 2021 年 7 月的 Microsoft 启发会议期间正式声明。 
+测试基础已在 `Public Preview` 2021 年 7 月的 Microsoft 启发会议期间正式声明。
 
 这意味着具有有效企业 Azure 帐户的任何人都可以载入其测试附属项，并快速开始在服务上测试其应用程序。
 
-### <a name="who-should-onboard"></a>Who应载入？
+## <a name="who-should-onboard"></a>Who应载入？
 
 我们鼓励所有软件供应商 (SV) 、系统集成商 () 将他们的应用程序、二进制文件和测试脚本载入服务。
 
@@ -69,5 +65,4 @@ ms.locfileid: "53567004"
 
 按照链接开始
 > [!div class="nextstepaction"]
-> [后续步骤](createaccount.md)
-
+> [下一步](createaccount.md)

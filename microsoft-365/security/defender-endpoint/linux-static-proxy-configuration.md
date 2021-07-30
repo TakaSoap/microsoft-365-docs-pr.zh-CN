@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5a8e1cbda5f4361532c7fac0892be7ffe72f64ca
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: e23b701fc64a24a6befe4fea1769e31092288729
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114724"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655601"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "53114724"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
 Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代理服务器。 必须在安装 **时和安装** 产品后配置此设置。
 

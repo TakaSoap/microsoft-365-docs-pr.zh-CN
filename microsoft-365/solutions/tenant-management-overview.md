@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 规划、部署和持续操作应用程序租户的Microsoft 365概述。
-ms.openlocfilehash: 42bde00fbd4ddc1cf92236f099a22b2260dbb980
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7cc7ead75781ab2d8ac4776e3f6075de89fef8db
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405674"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53649825"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户管理
 
 通过云计算创建组织数字化转型的路径需要一个稳固的基础，员工可以依靠这些基础来提高工作效率、协作、性能、隐私、合规性和安全性。
 
-正确配置租户Microsoft 365提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。 
+正确配置租户Microsoft 365提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。
 
 此解决方案将按照以下步骤完成该基础的配置：
 
@@ -43,13 +43,13 @@ ms.locfileid: "50405674"
 
 Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储的组织数据的专用服务实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
 
-你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户各不相同、唯一，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。 
+你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户各不相同、唯一，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
 
 下面是一个示例：
 
 ![具有 Azure AD Microsoft 365租户的租户示例](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
-*租户管理* 是租户租户的规划、部署和Microsoft 365操作。 
+*租户管理* 是租户租户的规划、部署和Microsoft 365操作。
 
 ## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>设计良好且运行良好的租户的属性
 
@@ -90,50 +90,50 @@ Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储
 
 以下各节和表列出了此解决方案中步骤的关键功能和许可。
 
-### <a name="tenant"></a>租户
+### <a name="tenant"></a>Tenant
 
-| 功能或特性 | 说明 | 许可 |
-|:-------|:-----|:-------|
-| 多个租户 | 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 对于多个租户，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。 | Microsoft 365 E3 或 E5 | 
-| 交叉租户邮箱迁移 | 租户管理员可以在本地系统中以最少的基础结构依赖项在租户之间移动邮箱。 这将无需离开和载入邮箱。 | Microsoft 365 E3 或 E5 | 
-| 多地理位置 | 租户可以在选择满足数据驻留要求的其他数据中心地理位置中存储静止数据。 | Microsoft 365 E3 或 E5 | 
-| 将核心数据移动到新的数据中心地理位置 | 随着 Microsoft 添加新的数据中心地理位置来增加容量和计算资源，你可以请求为核心客户数据的地理位置内数据驻留进行数据中心异地移动。 | Microsoft 365 E3 或 E5 | 
+|功能或特性|说明|许可|
+|---|---|---|
+|多个租户|每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 对于多个租户，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。|Microsoft 365 E3 或 E5|
+|交叉租户邮箱迁移|租户管理员可以在本地系统中以最少的基础结构依赖项在租户之间移动邮箱。 这将无需离开和载入邮箱。|Microsoft 365 E3 或 E5|
+|多地理位置|租户可以在选择满足数据驻留要求的其他数据中心地理位置中存储静止数据。|Microsoft 365 E3 或 E5|
+|将核心数据移动到新的数据中心地理位置|随着 Microsoft 添加新的数据中心地理位置来增加容量和计算资源，你可以请求为核心客户数据的地理位置内数据驻留进行数据中心异地移动。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="networking"></a>网络
 
-| 功能或特性 | 说明 | 许可 |
-|:-------|:-----|:-------|
-| Network Insights | 从租户中收集的网络Microsoft 365指标，有助于设计办公地点的网络外围。 | Microsoft 365 E3 或 E5 | 
-| 自动化终结点更新 | 自动执行客户端 PAC 文件和网络设备Microsoft 365终结点的配置和持续更新。 | Microsoft 365 E3 或 E5 | 
+|功能或特性|说明|许可|
+|---|---|---|
+|网络Insights|从租户中收集的网络Microsoft 365指标，有助于设计办公地点的网络外围。|Microsoft 365 E3 或 E5|
+|自动化终结点更新|自动执行客户端 PAC 文件和网络设备Microsoft 365终结点的配置和持续更新。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="identity"></a>标识
 
-| 功能或特性 | 说明 | 许可 |
-|:-------|:-----|:-------|
-| 将本地 Active Directory 域服务 (AD DS) Azure AD 租户同步    | 将本地标识提供程序用于用户帐户、组和其他对象。 | Microsoft 365 E3 或 E5 |
-| 通过安全性默认设置强制执行 MFA   | 通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。   | Microsoft 365 E3 或 E5 |
-| 通过条件访问强制执行 MFA| 需要基于具有条件访问策略的登录属性的 MFA。    | Microsoft 365 E3 或 E5 | 
-| 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） | 
-| 自助服务密码重置 (SSPR)    | 允许用户重置或解锁其密码或帐户。  | Microsoft 365 E3 或 E5 |
+|功能或特性|说明|许可|
+|---|---|---|
+|将本地 Active Directory 域服务 (AD DS) Azure AD 租户同步|将本地标识提供程序用于用户帐户、组和其他对象。|Microsoft 365 E3 或 E5|
+|通过安全性默认设置强制执行 MFA|通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。|Microsoft 365 E3 或 E5|
+|通过条件访问强制执行 MFA|需要基于具有条件访问策略的登录属性的 MFA。|Microsoft 365 E3 或 E5|
+|通过基于风险的条件访问强制执行 MFA|需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。|Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可）|
+|自助服务密码重置 (SSPR)|允许用户重置或解锁其密码或帐户。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="migration"></a>迁移
 
-| 功能或特性 | 说明 | 许可 |
-|:-------|:-----|:-------|
-| 迁移到 Windows 10 | 将运行 Windows 7 或 Windows 8.1 的设备Windows 10 企业版。 | Windows 10 企业版或 E5 Microsoft 365 E3许可证 | 
-| 迁移到Microsoft 365 企业应用版 | 将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云中安装且已更新新功能的版本。 | Microsoft 365 E3 或 E5 | 
-| 将本地服务器和数据迁移到Microsoft 365 | 将Exchange邮箱、SharePoint网站和 Skype for Business Online Microsoft 365云服务。 | Microsoft 365 E3 或 E5 | 
+|功能或特性|说明|许可|
+|---|---|---|
+|迁移到 Windows 10|将运行 Windows 7 或 Windows 8.1 的设备Windows 10 企业版。|Windows 10 企业版或 E5 Microsoft 365 E3许可证|
+|迁移到Microsoft 365 企业应用版|将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云中安装且已更新新功能的版本。|Microsoft 365 E3 或 E5|
+|将本地服务器和数据迁移到Microsoft 365|将Exchange邮箱、SharePoint网站和 Skype for Business Online Microsoft 365云服务。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="device-and-app-management"></a>设备和应用管理
 
-| 功能或特性 | 说明 | 许可 |
-|:-------|:-----|:-------|
-| Microsoft Intune | 基于云的服务，提供移动设备管理 (MDM) 和移动应用程序管理 (MAM) ，以控制组织的应用程序和设备的使用方式，包括移动电话、平板电脑和笔记本电脑。 | Microsoft 365 E3 或 E5 | 
-| 基本移动性和安全性 | 通过此内置服务保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。  | Microsoft 365 E3 或 E5 | 
+|功能或特性|说明|许可|
+|---|---|---|
+|Microsoft Intune|基于云的服务，提供移动设备管理 (MDM) 和移动应用程序管理 (MAM) ，以控制组织的应用程序和设备的使用方式，包括移动电话、平板电脑和笔记本电脑。|Microsoft 365 E3 或 E5|
+|基本移动性和安全性|通过此内置服务保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。|Microsoft 365 E3 或 E5|
 ||||
 
 ## <a name="next-steps"></a>后续步骤

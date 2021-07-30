@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d52e9d2d6fc10cfd58a6d658bb01f5b7bfa1c83
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 2c547fd5691332044082b918f07e5da7c7c92bcf
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591303"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53655427"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>启用条件访问以更好地保护用户、设备和数据 
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591303"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)。
 
 条件访问是一项功能，它通过确保只有安全设备有权访问应用程序，来帮助你更好地保护用户和企业信息。
 

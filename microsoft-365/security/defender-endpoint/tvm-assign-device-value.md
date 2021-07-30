@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ca6c88b08b331eb65035387a9c070d0914b1651d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15ab851cfe59d92663fc484b5bb0364c25af4f30
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935193"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53656231"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>分配设备值 - 危险和漏洞管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935193"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "51935193"
 
 - 低
 - 标准（默认）
-- 高
+- High
 
 应分配高值的设备示例：
 
