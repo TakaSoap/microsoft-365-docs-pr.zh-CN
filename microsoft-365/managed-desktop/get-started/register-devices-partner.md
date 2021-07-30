@@ -1,6 +1,6 @@
 ---
 title: 合作伙伴注册设备的步骤
-description: 合作伙伴如何注册设备，以便由 Microsoft 托管桌面管理设备
+description: 合作伙伴如何注册设备，以便由合作伙伴Microsoft 托管桌面
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,17 +11,17 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 227786fdcf1e490be1e3ce74bbc1be1c5f21acfe
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 64686f84d8e4cc7dca40a875d8b54508ea9a1fc9
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689229"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648467"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>合作伙伴注册设备的步骤
 
 
-本文介绍了合作伙伴注册设备要遵循的步骤。 为自己注册设备的过程记录在"在 Microsoft 托管桌面中注册设备 ["中](register-devices-self.md)。
+本文介绍了合作伙伴注册设备要遵循的步骤。 为自己注册设备的过程记录在注册Microsoft 托管桌面[中](register-devices-self.md)。
 
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "51689229"
 
 
 > [!NOTE]
-> 本文档仅适用于合作伙伴和 OEM。 自行注册的过程记录在自行注册 Microsoft [托管桌面中的设备中](register-devices-self.md)。
+> 本文档仅适用于合作伙伴和 OEM。 自行注册过程记录在自行注册Microsoft 托管桌面[中](register-devices-self.md)。
 
 
 ## <a name="register-devices-by-using-partner-center"></a>使用合作伙伴中心注册设备
@@ -50,12 +50,12 @@ ms.locfileid: "51689229"
 |标准     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> 组名称必须与表中列出的名称完全匹配，包括大写和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。
+> 组名称必须与表中列出的名称完全匹配，包括大写和特殊字符。 这将允许新注册的设备与 Autopilot 配置文件Microsoft 托管桌面分配。
 
 >[!NOTE]
-> 你应该已经收到此.csv购买的文件。 如果你未收到.csv文件，可以按照将设备添加到 Windows Autopilot 中的步骤操作 [，自己创建一个](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)。 the Windows PowerShell script is different from the one used for the [Microsoft Managed Desktop Admin portal](./register-devices-self.md#obtain-the-hardware-hash). 合作伙伴应在合作伙伴 [中心使用 Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 为 Microsoft 托管桌面设备注册设备。
+> 你应该已经收到此.csv购买的文件。 如果你未收到.csv文件，你可以按照将设备添加到[Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)中的步骤操作Windows文件。 不支持其他列。 不支持引号。 只有 ANSI 格式的文本文件才能用于 unicode (Unicode) 。 标头区分大小写。 由于这些要求，Excel文件并另存为 CSV 文件不会生成可用文件。 请确保在设备序列号中保留任何前导零。 合作伙伴应在合作伙伴中心[使用 Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)为Microsoft 托管桌面设备注册设备。
 
-如果在尝试上载文件时收到.csv错误消息，请检查该文件的格式。 确保列顺序与使用新设备的 [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)配置文件自定义客户的全新体验中所述相匹配。 您还可以使用添加设备.csv旁边链接提供的示例文件创建设备列表。  
+如果在尝试上载文件时收到.csv错误消息，请检查该文件的格式。 确保列顺序与使用新Windows [Autopilot 配置文件](/partner-center/autopilot#add-devices-to-a-customers-account)自定义客户的全新体验中所述相匹配。 您还可以使用添加设备.csv旁边链接提供的示例文件创建设备列表。  
 
 有关合作伙伴方案中的 Autopilot 详细信息，请参阅 [将设备添加到客户的帐户](/partner-center/autopilot#add-devices-to-a-customers-account)。
 
@@ -74,4 +74,4 @@ ms.locfileid: "51689229"
 |标准     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> 组标记必须与表中列出的标记完全匹配，包括大写字符和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。
+> 组标记必须与表中列出的标记完全匹配，包括大写字符和特殊字符。 这将允许新注册的设备与 Autopilot 配置文件Microsoft 托管桌面分配。

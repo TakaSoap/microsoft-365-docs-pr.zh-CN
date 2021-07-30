@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: 如何使用 PowerShell 阻止和取消阻止对帐户Microsoft 365访问。
-ms.openlocfilehash: 90d712cdb6eb34d0588fc262e3a02673accfbd9e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d6ccedf68772d6774ed327e75f080f9200eb5684
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287217"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648611"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
@@ -85,7 +85,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 若要检查用户帐户的阻止状态，请使用以下命令：
 
 ```powershell
-Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
+Get-AzureADUser  -ObjectID <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
 ### <a name="block-multiple-user-accounts"></a>阻止多个用户帐户

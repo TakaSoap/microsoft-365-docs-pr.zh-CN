@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: f6989de8e9a3926f5d9e43cf08240ce76c85a0c9
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0486c073da8061b72eedb9a7fac44adf6d38ae19
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541009"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648599"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 
@@ -113,7 +113,7 @@ ms.locfileid: "53541009"
 
 ### <a name="user-notification-emails"></a>用户通知电子邮件
 
-当我们检测到与你的数据处理策略相匹配时，隐私管理会向受影响的用户发送电子邮件，并包含要采取的纠正措施以及指向隐私培训的链接。 在设置中，可以整体启用或禁用隐私管理的电子邮件通知功能。 创建或编辑策略时，可以激活单个通知、设置电子邮件频率并指定培训 URL。 如果通知功能在邮件设置，将禁用特定通知邮件的任何策略级别配置。 若要了解有关策略的更多信息，请参阅 [创建和管理策略](privacy-management-policies.md)。
+当我们检测到与你的数据处理策略相匹配时，隐私管理会向用户发送电子邮件，包含要采取的纠正措施以及指向隐私培训的链接。 在设置中，可以整体启用或禁用隐私管理的电子邮件通知功能。 创建或编辑策略时，可以激活单个通知、设置电子邮件频率并指定培训 URL。 如果通知功能在邮件设置，将禁用特定通知邮件的任何策略级别配置。 若要了解有关策略的更多信息，请参阅 [创建和管理策略](privacy-management-policies.md)。
 
 ### <a name="teams-collaboration"></a>Teams collaboration
 

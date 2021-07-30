@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6243444c6dca31608512dbe9e6183cc7355ef55a
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 9855a7aa8af9d380f192285ddbdb5c30a7a734d4
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588013"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647963"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "53588013"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 组织中标识的网络安全漏洞将映射到可操作的安全建议，并按其影响确定优先级。 优先建议有助于缩短缓解或修正漏洞和推动合规性的时间。
 

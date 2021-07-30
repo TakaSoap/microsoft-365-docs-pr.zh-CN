@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5166de3a7c7017979a93ac7026636ba24671892e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935145"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651960"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上的 Microsoft Defender for Endpoint 的安装问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "51935145"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 ## <a name="installation-failed"></a>安装失败
 
@@ -58,9 +58,9 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 本示例中，实际原因的前缀为 `[ERROR]` 。
 安装失败，因为不支持这些版本之间的降级。
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP安装日志丢失或未更新
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP 安装日志缺失或未更新
 
-在极少数情况下，安装不会在 MDATP /Library/Logs/Microsoft/mdatp/install.日志文件。
+在极少数情况下，安装不会在 MDATP 的 /Library/Logs/Microsoft/mdatp/install.日志文件。
 你可以验证安装是否发生，并分析可能的错误，通过查询 macOS 日志 (当没有客户端 UI 支持时，这对 MDM 部署) 。 建议您使用较窄的时间窗口来运行查询，并按日志记录进程名称进行筛选，因为将会存在大量信息。
 
 ```bash

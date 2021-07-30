@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: db213da7c1859c9f4c9871aea508b225fd9b7b44
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623152"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648119"
 ---
 # <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
@@ -32,7 +32,7 @@ ms.locfileid: "53623152"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 有效识别、评估和修正终结点缺陷是运行正常安全计划并降低组织风险的关键。 威胁和漏洞管理是减少组织风险，强化终结点表面区域和提高组织复原能力的基础结构。
 

@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用 Microsoft 365 验证域和创建 DNS 记录。
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64984cc6631e4585b208b67970b1fc91402881ed
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050650"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648623"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>将你的域连接到 Microsoft 365
 
@@ -45,11 +45,12 @@ ms.locfileid: "51050650"
 - 优先级：设置为可用的最高值，通常为 `0`。
 - 主机名：`@`
 - 指向地址：从管理中心复制值并将其粘贴到此处。
-- TTL：`3600‎`（或提供商的默认值）
+- TTL：`3600`（或提供商的默认值）
 
 保存记录，然后删除任何其他 MX 记录。
 
 ## <a name="add-a-cname-record-to-connect-users-to-their-mailboxes"></a>添加 CNAME 记录以将用户连接到其邮箱
+
 你将从管理中心域设置向导中获取有关 CNAME 记录的信息。
 
 在托管提供商的网站上，添加以下 CNAME 记录。 请确保将每个服务的字段设置为以下值：
@@ -57,9 +58,10 @@ ms.locfileid: "51050650"
 - 记录类型：`CNAME (Alias)`
 - 主机：将从管理中心复制的值粘贴在此处。
 - 指向地址：从管理中心复制值并将其粘贴到此处。
-- TTL：`3600‎`（或提供商的默认值）
+- TTL：`3600`（或提供商的默认值）
 
 ## <a name="add-a-txt-record-to-help-prevent-spam"></a>添加 TXT 记录以帮助防止垃圾邮件
+
 **准备工作：** 如果你的域已有 SPF 记录，请不要为 Microsoft 365 创建新记录。 相反，可以在托管提供商网站上将所需的 Microsoft 365 值添加到当前记录，这样就拥有同时包含两组值的 *单个* SPF 记录。
 
 在托管提供商的网站上，编辑现有 SPF 记录或创建 SPF 记录。
@@ -68,7 +70,7 @@ ms.locfileid: "51050650"
 - 记录类型：`TXT (Text)`
 - 主机：`@`
 - TXT 值：`v=spf1 include:spf.protection.outlook.com -all`
-- TTL：`3600‎`（或提供商的默认值）
+- TTL：`3600`（或提供商的默认值）
 
 保存记录。
 
@@ -76,6 +78,6 @@ ms.locfileid: "51050650"
 
 SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防范这些骗术，在设置 SPF 后，还应为 Microsoft 365 设置 DKIM 和 DMARC。
 
-若要开始进行设置，请参阅[使用 DKIM 验证从 Microsoft 365 中的域发送的出站电子邮件](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md)和[使用 DMARC 验证 Microsoft 365 中的电子邮件](../../security/defender-365-security/use-dmarc-to-validate-email.md)。
+若要开始进行设置，请参阅[使用 DKIM 验证从 Microsoft 365 中的域发送的出站电子邮件](../../security/office-365-security/use-dkim-to-validate-outbound-email.md)和[使用 DMARC 验证 Microsoft 365 中的电子邮件](../../security/office-365-security/use-dmarc-to-validate-email.md)。
 
 最后，请返回管理中心域设置向导以完成设置。

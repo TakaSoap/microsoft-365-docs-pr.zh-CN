@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c83d5994ab93799536796c153dfd878e3e2dd6d0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542701"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652547"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>列出事件 API Microsoft 365 Defender
 
@@ -58,14 +58,14 @@ API 支持以下 **OData** 运算符：
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅[Access Microsoft 365 Defender API](api-access.md)
 
-权限类型 | 权限 | 权限显示名称
--|-|-
-应用程序 | Incident.Read.All | 读取所有事件
-应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
-委派（工作或学校帐户） | Incident.Read | 读取事件
-委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
+权限类型|权限|权限显示名称
+---|---|---
+应用程序|Incident.Read.All|读取所有事件
+应用程序|Incident.ReadWrite.All|读取和写入所有事件
+委派（工作或学校帐户）|Incident.Read|读取事件
+委派（工作或学校帐户）|Incident.ReadWrite|读取和写入事件
 
-> [!Note]
+> [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户需要具有门户中事件的查看权限。
@@ -79,10 +79,9 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
--|-|-
-Authorization | String | Bearer {token}。 **必需**
-
+名称|类型|说明
+---|---|---
+Authorization|字符串|Bearer {token}。 **必需**
 
 ## <a name="request-body"></a>请求正文
 
@@ -96,109 +95,109 @@ Authorization | String | Bearer {token}。 **必需**
 
 ### <a name="incident-metadata"></a>事件元数据
 
-字段名 | 说明 | 示例值
--|-|-
-incidentId | 表示事件的唯一标识符 | 924565
-redirectIncidentId | 只有在将事件与另一个事件分组在一起时填充，作为事件处理逻辑的一部分。 | 924569
-incidentName | 可用于每个事件的字符串值。 | 勒索软件活动
-createdTime | 第一次创建事件的时间。 | 2020-09-06T14：46：57.0733333Z
-lastUpdateTime | 上次在后端更新事件的时间。<br /><br /> 为检索事件的时间范围设置请求参数时，可以使用此字段。 | 2020-09-06T14：46：57.29Z
-assignedTo | 事件的所有者;如果没有分配 *所有者* ，则为空。 | secop2@contoso.com
-classification | 事件的规范。 属性值为 *：Unknown、FalsePositive、TruePositive*   | 未知
-确定 | 指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other        | NotAvailable
-detectionSource | 指定检测源。 | MCAS
-status | 将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。 | 活动
-severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br /><br />下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
-标记 | 与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。 | \[\]
-comments | 由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。 | \[\]
-警报 | 包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。 | \[\] (以下警报字段的详细信息) 
+字段名|说明|示例值
+---|---|---
+incidentId|表示事件的唯一标识符|924565
+redirectIncidentId|只有在将事件与另一个事件分组在一起时填充，作为事件处理逻辑的一部分。|924569
+incidentName|可用于每个事件的字符串值。|勒索软件活动
+createdTime|第一次创建事件的时间。|2020-09-06T14：46：57.0733333Z
+lastUpdateTime|上次在后端更新事件的时间。 <p> 为检索事件的时间范围设置请求参数时，可以使用此字段。|2020-09-06T14：46：57.29Z
+assignedTo|事件的所有者;如果没有分配 *所有者* ，则为空。|secop2@contoso.com
+classification|事件的规范。 属性值为 *：Unknown、FalsePositive、TruePositive*  |未知
+确定|指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other       |NotAvailable
+detectionSource|指定检测源。|MCAS
+status|将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。|活动
+severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。 <p> 下列值之一 *：Informational、Low、*Medium* 和 *High。* |Medium
+标记|与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。|\[\]
+comments|由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。|\[\]
+警报|包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。|\[\] (以下警报字段的详细信息) 
 
 ### <a name="alerts-metadata"></a>警报元数据
 
-字段名 | 说明 | 示例值
--|-|-
-alertId | 表示警报的唯一标识符 | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
-incidentId | 表示与此警报关联的事件的唯一标识符 | 924565
-serviceSource | 警报源自的服务，例如 Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity 或 Microsoft Defender for Office 365。 | MicrosoftCloudAppSecurity
-creationTime | 首次创建警报的时间。 | 2020-09-06T14：46：55.7182276Z
-lastUpdatedTime | 上次在后端更新警报的时间。 | 2020-09-06T14：46：57.2433333Z
-resolvedTime | 警报解决的时间。 | 2020-09-10T05：22：59Z
-firstActivity | 警报首次报告在后端更新活动的时间。| 2020-09-04T05：22：59Z
-title | 简要标识可用于每个警报的字符串值。 | 勒索软件活动
-说明 | 描述每个警报的字符串值。 | 用户 Test User2 (testUser2@contoso.com) 操作 99 个文件，其多个扩展名以不常见的扩展 *名 herunterladen 结尾*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
-“类别” | 有关攻击在击杀链上的进度的可视和数值视图。 与 [MITRE ATT&CK™对齐](https://attack.mitre.org/)。 | 影响
-status | 将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。 | 新增
-severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
-investigationId | 此警报触发的自动调查 ID。 | 1234
-investigationState | 有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Failed、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType、SuppressedAlert 。                   | UnsupportedAlertType
-classification | 事件的规范。 属性值包括：Unknown、FalsePositive、TruePositive 或 null    | 未知
-确定 | 指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other或 null       | Apt
-assignedTo | 事件的所有者;如果没有分配 *所有者* ，则为空。 | secop2@contoso.com
-actorName | 与此警报关联的活动组（如果有）。 | 一个
-threatFamilyName | 与此警报关联的威胁系列。 | 空
-mitreTechniques | 攻击技术，与 [MITRE ATT](https://attack.mitre.org/)&CK ™框架一致。 | \[\]
-设备 | 已发送与事件相关的警报的所有设备。 | \[\] (下面实体字段的详细信息) 
+字段名|说明|示例值
+---|---|---
+alertId|表示警报的唯一标识符|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
+incidentId|表示与此警报关联的事件的唯一标识符|924565
+serviceSource|警报源自的服务，例如 Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity 或 Microsoft Defender for Office 365。|MicrosoftCloudAppSecurity
+creationTime|首次创建警报的时间。|2020-09-06T14：46：55.7182276Z
+lastUpdatedTime|上次在后端更新警报的时间。|2020-09-06T14：46：57.2433333Z
+resolvedTime|警报解决的时间。|2020-09-10T05：22：59Z
+firstActivity|警报首次报告在后端更新活动的时间。|2020-09-04T05：22：59Z
+职位|简要标识可用于每个警报的字符串值。|勒索软件活动
+说明|描述每个警报的字符串值。|用户 Test User2 (testUser2@contoso.com) 操作 99 个文件，其多个扩展名以不常见的扩展 *名 herunterladen 结尾*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
+“类别”|有关攻击在击杀链上的进度的可视和数值视图。 与 [MITRE ATT&CK™对齐](https://attack.mitre.org/)。|影响
+status|将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。|新增
+severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、Medium* 和 *High。* |Medium
+investigationId|此警报触发的自动调查 ID。|1234
+investigationState|有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Failed、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType、SuppressedAlert 。                  |UnsupportedAlertType
+classification|事件的规范。 属性值包括：Unknown、FalsePositive、TruePositive 或 null   |未知
+确定|指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other或 null      |Apt
+assignedTo|事件的所有者;如果没有分配 *所有者* ，则为空。|secop2@contoso.com
+actorName|与此警报关联的活动组（如果有）。|一个
+threatFamilyName|与此警报关联的威胁系列。|空
+mitreTechniques|攻击技术，与 [MITRE ATT](https://attack.mitre.org/)&CK ™框架一致。|\[\]
+设备|已发送与事件相关的警报的所有设备。|\[\] (下面实体字段的详细信息) 
 
 ### <a name="device-format"></a>设备格式
 
-字段名 | 说明 | 示例值
--|-|-
-DeviceId | 在 Microsoft Defender for Endpoint 中指定的设备 ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  中指定的设备 ID [Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-whatis) 仅适用于已加入域的设备。 | 空
-deviceDnsName | 设备的完全限定域名。 | user5cx.middleeast.corp.contoso.com
-osPlatform | 设备正在运行的操作系统平台。| WindowsServer2016
-osBuild | 设备正在运行的操作系统的生成版本。 | 14393
-rbacGroupName | 基于 [角色的访问控制 (](/azure/role-based-access-control/overview) 与) 关联的 RBAC 组。 | WDATP-Ring0
-firstSeen | 首次看到设备的时间。 | 2020-02-06T14：16：01.9330135Z
-healthStatus | 设备的运行状况。 | 活动
-riskScore | 设备的风险评分。 | 高
-entities | 已标识为给定警报的一部分或与给定警报相关的所有实体。 | \[\] (下面实体字段的详细信息) 
+字段名|说明|示例值
+---|---|---
+DeviceId|在 Microsoft Defender for Endpoint 中指定的设备 ID。|24c222b0b60fe148eeece49ac83910cc6a7ef491
+aadDeviceId|中指定的设备 ID [Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-whatis) 仅适用于已加入域的设备。|空
+deviceDnsName|设备的完全限定域名。|user5cx.middleeast.corp.contoso.com
+osPlatform|设备正在运行的操作系统平台。|WindowsServer2016
+osBuild|设备正在运行的操作系统的生成版本。|14393
+rbacGroupName|基于 [角色的访问控制 (](/azure/role-based-access-control/overview) 与) 关联的 RBAC 组。|WDATP-Ring0
+firstSeen|首次看到设备的时间。|2020-02-06T14：16：01.9330135Z
+healthStatus|设备的运行状况。|活动
+riskScore|设备的风险评分。|High
+entities|已标识为给定警报的一部分或与给定警报相关的所有实体。|\[\] (下面实体字段的详细信息) 
 
 ### <a name="entity-format"></a>实体格式
 
-字段名 | 说明 | 示例值
--|-|-
-entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | 用户
-sha1 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-sha256 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
-fileName | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件名 | Detector.UnitTests.dll
-filePath | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件路径 | C： \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
-processId | 如果 entityType 为 Process ， *则可用*。 | 24348
-processCommandLine | 如果 entityType 为 Process ， *则可用*。 | "你的文件已准备好下载 \_1911150169.exe"
-processCreationTime | 如果 entityType 为 Process ， *则可用*。 | 2020-07-18T03：25：38.5269993Z
-parentProcessId | 如果 entityType 为 Process ， *则可用*。 | 16840
-parentProcessCreationTime | 如果 entityType 为 Process ， *则可用*。 | 2020-07-18T02：12：32.8616797Z
-ipAddress | 如果 entityType 为 *Ip，则可用*。 <br>与网络事件（如到恶意网络目标的通信）关联的警报的 IP *地址*。 | 62.216.203.204
-url | 如果 entityType 为 *Url，则可用*。 <br>与网络事件（例如，到恶意网络目标的通信）*关联的警报的 URL。* | down.esales360.cn
-accountName | 如果 entityType 为 User ， *则可用*。 | testUser2
-domainName | 如果 entityType 为 User ， *则可用*。 | europe.corp.contoso
-userSid | 如果 entityType 为 User ， *则可用*。 | S-1-5-21-1721254763-462695806-1538882281-4156657
-aadUserId | 如果 entityType 为 User ， *则可用*。 | fc8f7484-f813-4db2-afab-bc1507913fb6
-userPrincipalName | 如果 entityType 为 *User* / *MailBox* / *MailMessage，则可用*。 | testUser2@contoso.com
-mailboxDisplayName | 如果 entityType 为 *MailBox ，则可用*。 | test User2
-mailboxAddress | 如果 entityType 为 *User* / *MailBox* / *MailMessage，则可用*。 | testUser2@contoso.com
-clusterBy | 如果 entityType 为  *MailCluster，则可用*。 | 主题;P2SenderDomain;ContentType
-sender | 如果 entityType 为 *User* / *MailBox* / *MailMessage，则可用*。 | user.abc@mail.contoso.co.in
-recipient | 如果 entityType 为 *MailMessage ，则可用*。 | testUser2@contoso.com
-subject | 如果 entityType 为 *MailMessage ，则可用*。 | \[外部 \] 关注
-deliveryAction | 如果 entityType 为 *MailMessage ，则可用*。 | 已传递
-securityGroupId | 如果 entityType 为  *SecurityGroup，则可用*。 | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
-securityGroupName | 如果 entityType 为  *SecurityGroup，则可用*。 | 网络配置运算符
-registryHive | 如果 entityType 为  *Registry ，则可用*。 | HKEY \_ 本地 \_ 计算机 |
-registryKey | 如果 entityType 为  *Registry ，则可用*。 | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | 如果 entityType 为  *Registry ，则可用*。 | String
-registryValue | 如果 entityType 为  *Registry ，则可用*。 | 31-00-00-00
-deviceId | 与实体相关的设备的 ID（如果有）。 | 986e5df8b73dacd43c8917d17e523e76b13c75cd
+字段名|说明|示例值
+---|---|---
+entityType|已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry         |用户
+sha1|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+fileName|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件名|Detector.UnitTests.dll
+filePath|如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件路径|C： \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+processId|如果 entityType 为 Process ， *则可用*。|24348
+processCommandLine|如果 entityType 为 Process ， *则可用*。|"你的文件已准备好下载 \_1911150169.exe"
+processCreationTime|如果 entityType 为 Process ， *则可用*。|2020-07-18T03：25：38.5269993Z
+parentProcessId|如果 entityType 为 Process ， *则可用*。|16840
+parentProcessCreationTime|如果 entityType 为 Process ， *则可用*。|2020-07-18T02：12：32.8616797Z
+ipAddress|如果 entityType 为 *Ip，则可用*。 <br>与网络事件（如到恶意网络目标的通信）关联的警报的 IP *地址*。|62.216.203.204
+url|如果 entityType 为 *Url，则可用*。 <br>与网络事件（例如，到恶意网络目标的通信）*关联的警报的 URL。*|down.esales360.cn
+accountName|如果 entityType 为 User ， *则可用*。|testUser2
+domainName|如果 entityType 为 User ， *则可用*。|europe.corp.contoso
+userSid|如果 entityType 为 User ， *则可用*。|S-1-5-21-1721254763-462695806-1538882281-4156657
+aadUserId|如果 entityType 为 User ， *则可用*。|fc8f7484-f813-4db2-afab-bc1507913fb6
+userPrincipalName|如果 entityType 为 *User* / *MailBox* / *MailMessage，则可用*。|testUser2@contoso.com
+mailboxDisplayName|如果 entityType 为 *MailBox ，则可用*。|test User2
+mailboxAddress|如果 entityType 为 *User* / *MailBox* / *MailMessage，则可用*。|testUser2@contoso.com
+clusterBy|如果 entityType 为  *MailCluster，则可用*。|主题;P2SenderDomain;ContentType
+sender|如果 entityType 为 *User* / *MailBox* / *MailMessage，则可用*。|user.abc@mail.contoso.co.in
+recipient|如果 entityType 为 *MailMessage ，则可用*。|testUser2@contoso.com
+subject|如果 entityType 为 *MailMessage ，则可用*。|\[外部 \] 关注
+deliveryAction|如果 entityType 为 *MailMessage ，则可用*。|已传递
+securityGroupId|如果 entityType 为  *SecurityGroup，则可用*。|301c47c8-e15f-4059-ab09-e2ba9ffd372b
+securityGroupName|如果 entityType 为  *SecurityGroup，则可用*。|网络配置运算符
+registryHive|如果 entityType 为  *Registry ，则可用*。|HKEY \_ 本地 \_ 计算机|
+registryKey|如果 entityType 为  *Registry ，则可用*。|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryValueType|如果 entityType 为  *Registry ，则可用*。|字符串
+registryValue|如果 entityType 为  *Registry ，则可用*。|31-00-00-00
+deviceId|与实体相关的设备的 ID（如果有）。|986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>示例
 
-### <a name="request"></a>请求
+### <a name="request-example"></a>请求示例
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-### <a name="response"></a>响应
+### <a name="response-example"></a>响应示例
 
 ```json
 {

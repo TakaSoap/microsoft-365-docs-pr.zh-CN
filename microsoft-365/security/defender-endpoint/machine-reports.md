@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 23d099d01791fcdd5f5265c8683d6faca9fb857d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860287"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651935"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的设备运行状况和合规性报告
 
@@ -33,7 +33,7 @@ ms.locfileid: "51860287"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 设备状态报告提供有关组织中设备的高级别信息。 该报告包括显示传感器运行状况状态、防病毒状态、操作系统平台和Windows 10信息。
 
@@ -93,7 +93,7 @@ ms.locfileid: "51860287"
  
 1. 在 **筛选器>传感器运行状况状态>处于活动状态。**
 2. 然后选择操作系统 **平台> Windows 10。**
-3. 选择 **应用**。
+3. 选择“**应用**”。
 
 
 ## <a name="related-topic"></a>相关主题

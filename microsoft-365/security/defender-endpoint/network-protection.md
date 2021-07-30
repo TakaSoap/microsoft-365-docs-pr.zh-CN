@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b6b664d471e238e2feb1e1aedd100c1299fc5bbe
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c6c0ad005a4485151a1404165b09648478cc1831
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844258"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53651887"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -31,7 +31,7 @@ ms.locfileid: "52844258"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 网络保护有助于减少基于 Internet 的事件对设备的攻击面。 它防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 网络保护扩展[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)以阻止所有尝试基于域或主机名连接到低信誉源 (的出站 HTTP () ) 。
 
@@ -82,11 +82,11 @@ DeviceEvents
 
 1. [直接复制 XML。](event-views.md)
 
-2. 选择“**确定**”。
+2. 选择 **“确定”**。
 
 此过程将创建一个自定义视图，该视图筛选为只显示与网络保护相关的以下事件：
 
-| 事件 ID | 说明 |
+| 事件 ID | 描述 |
 |:---|:---|
 | 5007 | 更改设置时的事件 |
 | 1125 | 在审核模式下触发网络保护时的事件 |

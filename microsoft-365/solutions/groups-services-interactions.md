@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 组服务交互
-ms.openlocfilehash: f9b0d7ca61d55e3d23aa94577fc8257073b26675
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 13331ea53b69b4559bfe21074dd5c7d998aa68af
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539199"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652463"
 ---
 # <a name="groups-services-interactions"></a>组服务交互
 
@@ -63,13 +63,13 @@ Microsoft 365管理员和最终用户都可以从各种界面创建和管理组�
 
 **Microsoft 365 管理中心**
 
-在 Microsoft 365 管理中心中，默认情况下启用对组的来宾访问，以及允许所有者添加来宾的能力。 此管理中心不再对组提供组织级别控制。
+在Microsoft 365 管理中心中，默认情况下启用对组的来宾访问，以及允许所有者添加来宾的能力。 此管理中心不再对组提供组织级别控制。
 
 **Azure AD 管理中心**
 
 Azure AD 管理中心控制用户是否可以在 Azure 门户创建组或分配所有者，以及过期和命名策略设置。
 
-管理中心还提供了许多除 Microsoft 365 管理中心之外的来宾邀请控制措施，例如限制非所有者是否可以同时邀请来宾的能力
+管理中心还提供了一些除以下功能之外的来宾邀请控制措施Microsoft 365 管理中心，例如限制非所有者是否可以同时邀请来宾
 
 **SharePoint**
 
@@ -80,18 +80,23 @@ SharePoint所有者、成员和访问者安全组创建网站，前两个安全�
 最终用户可以从组织内部的几个服务Microsoft 365组，而其他用户则只能与组共享。
 
 以下服务允许最终用户创建组：
-                         
-OutlookPlanner Project Web SharePoint Stream Microsoft Teams Yammer
 
-**组创建限制**
+- Outlook
+- Planner
+- Project 网页版
+- SharePoint
+- Stream
+- Microsoft Teams
+- Yammer
+
+#### <a name="restriction-of-group-creation"></a>组创建限制
 
 控制团队的激增的一种常见方法是限制哪些用户可以创建团队。 这仅可通过限制组的创建完成。 这样做会影响从最终用户可能需要的其他服务创建组的能力。 Microsoft 365组不支持限制某些应用或服务中的组创建，同时允许其他应用或服务创建组。
 
 组创建限制的体验因应用和服务而异：
 
-
 |应用或服务|体验|
-|:-------------|:---------|
+|---|---|
 |Outlook|**"新建组** "选项已从"人员"页面的"新建"菜单中删除|
 |Planner|**新** 计划说明组创建已关闭，并提供将计划添加到现有组|
 |Project Web 和路线图|**"创建组** "菜单说明组创建受到限制，并建议使用现有组。|
@@ -111,7 +116,7 @@ OutlookPlanner Project Web SharePoint Stream Microsoft Teams Yammer
 下表概述了组与Microsoft 365的组交互：
 
 |产品|功能|服务是否<br>是否存在没有组？|服务能否<br>创建组|是否删除<br>实例删除组|
-|:---|:---|:---|:---|:---|
+|---|---|---|---|---|
 |Azure AD|成员身份、组控件、来宾|是|是|是|
 |Exchange|日历、邮箱|是|是|是|
 |表单|表单|是|否|否|

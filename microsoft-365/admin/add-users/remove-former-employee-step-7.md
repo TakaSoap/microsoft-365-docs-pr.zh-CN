@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤删除以前员工的用户帐户。
-ms.openlocfilehash: 3db2eb7fd4c73854a759ee4026d6f9b9c12dfa82
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541549"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648635"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步骤 7 - 删除以前员工的用户帐户
 
@@ -95,4 +95,6 @@ ms.locfileid: "53541549"
   
 ## <a name="related-content"></a>相关内容
 
-[Restore a user (](restore-user.md) article) / [Reset passwords](reset-passwords.md) (article) 
+[Restore a user (](restore-user.md) article) 
+
+[重置密码](reset-passwords.md)（文章）

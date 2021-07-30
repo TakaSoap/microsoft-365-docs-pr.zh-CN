@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e8fc583feb0d1ae1fc4ec4aa970b9dc19ae46fd9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: dab1d8befaa0d32118f3fea350037ed8b91aadf3
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286893"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652415"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 托管桌面操作和监视
 
@@ -75,7 +75,7 @@ The Microsoft 托管桌面 service is implemented and operated by Microsoft in y
 --- | --- | ---
 网络 (代理、数据包检查、VPN)   | 为客户提供建议和计划，以最大限度地降低业务用户的风险。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在操作进行评估Microsoft 托管桌面建议后应用更改。
 服务帐户 |- 实现、安全存储和管理凭据。<br> - 将未经授权访问或使用这些凭据告知安全运营团队。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在操作进行评估Microsoft 托管桌面建议后应用更改。<br>- 不向服务帐户分配策略、多重身份验证、条件访问或Microsoft 托管桌面部署。<br>- 不重置密码或使用凭据。<br>- 如果 Intune 或 Azure 审核日志中发现与这些服务帐户Microsoft 托管桌面可疑活动，请打开 Sev C 支持请求，以执行相关操作。
-设备组 | - 实现和管理组内设备Microsoft 托管桌面成员身份。<br>- 使用Microsoft 托管桌面组来管理配置和更新的分配和发布。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在操作进行评估Microsoft 托管桌面建议后应用更改。<br>- 不修改任何组Microsoft 托管桌面成员身份。<br>- 仅使用这些组来分配服务（如 VPN、Windows Hello for Business 或电子邮件加密或公司Wi-Fi配置文件配置）的企业证书。<br>- 如果存在共同管理，在部署 Configuration Manager Microsoft 托管桌面显式排除所有组。
+设备组 | - 实现和分配组内Microsoft 托管桌面成员身份。<br>- 使用Microsoft 托管桌面组来管理配置和更新的分配和发布。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在操作进行评估Microsoft 托管桌面建议后应用更改。<br>- 仅按照将设备分配给Microsoft 托管桌面组中所述的步骤将设备[分配给任何组](../working-with-managed-desktop/assign-deployment-group.md)。<br>- 仅使用这些组为诸如 VPN、Windows Hello For Business 或电子邮件加密或公司 wifi 配置文件配置等服务分配公司证书。<br>- 如果存在共同管理，在部署 Configuration Manager Microsoft 托管桌面显式排除所有组。
 策略 | - 实现和管理Microsoft 托管桌面服务中设备的配置状态的策略。<br>- 使用设备组以增量Windows策略或策略部署更新。<br> - 明确排除非Microsoft 托管桌面组。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在操作进行评估Microsoft 托管桌面建议后应用更改。<br>- 不编辑Microsoft 托管桌面策略，也不将策略分配给未由 Microsoft 托管桌面 管理的设备或用户。
 Microsoft Defender for Endpoint | 监视和调查服务范围内Microsoft 托管桌面设备。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在评估并Microsoft 托管桌面后应用更改
 适用于企业的 Microsoft Store | 配置和维护 Windows 服务的 Autopilot Microsoft 托管桌面配置文件。 | - 创建支持请求，请求有关计划配置更改的信息，包括配置详细信息、范围、日程表和其他相关详细信息，供 Microsoft 查看。<br>- 仅在操作进行评估Microsoft 托管桌面建议后应用更改。<br>- 不修改 Autopilot 配置文件Microsoft 托管桌面 Windows添加/删除分配的设备的配置。

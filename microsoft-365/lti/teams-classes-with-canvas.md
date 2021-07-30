@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: e8ab45de84fe8325f6d5b349deb96aa831d54e36
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9baf4f3607673e48472e297ce42a1ad461df5b84
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454681"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652427"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -56,13 +56,13 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
    ![权限](media/permissions.png)
 
-8. 选择 **接受**。
+8. 选择“**接受**”。
 
 ## <a name="canvas-admin"></a>Canvas 管理
 
 设置 Microsoft Teams LTI 1.3 集成。
 
-作为 Canvas 管理员，你需要在你的环境中添加Microsoft Teams类 LTI 应用。 记下应用的 LTI 客户端 ID。
+作为 Canvas 管理员，你需要在你的环境中添加Microsoft Teams类 LTI 应用。 访问主帐户中的"开发人员密钥"列表，切换到继承的密钥，Teams LTI 工具。 记下应用的 LTI 客户端 ID。
 
  - Microsoft Teams类 - 170000000000570
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 19423b1a52bc02768236e56a73ccefe71cfd7672
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a24797d39ece34d615dde26811da8b7d7d2b9a6d
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567076"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647891"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -37,7 +37,7 @@ ms.locfileid: "53567076"
 > 有关详细信息，请参阅 [Microsoft Defender for Endpoint 预览功能](preview.md)。
 
 > [!TIP]
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)。
 
 Web 内容筛选是 Microsoft Defender for Endpoint 中的 [Web](web-protection-overview.md) 保护功能的一部分。 它使组织能够根据网站的内容类别跟踪和监管对网站的访问。 许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。
 
@@ -55,7 +55,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 第三方支持的浏览器的阻止体验由网络保护提供，它提供系统级 Toast 以通知用户阻止的连接。 为获得更用户友好的浏览器内体验，请考虑使用Microsoft Edge。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 在尝试此功能之前，请确保满足以下要求：
 

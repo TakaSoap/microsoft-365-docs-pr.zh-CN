@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b9a146d2dd66222d405243ea5db66486c2678412
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844210"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647879"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看和组织 Microsoft Defender 终结点事件队列
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看并组织 Microsoft Defender for Endpoint 事件队列
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "52844210"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
 **"事件队列**"显示从网络中设备标记的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。
 
@@ -57,15 +57,15 @@ ms.locfileid: "52844210"
 
 事件严重性 | 说明
 :---|:---
-高 </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
-中 </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
+High </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
+Medium </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
 低 </br> (黄色)  | 与流行恶意软件和黑客工具关联的威胁，这些威胁不一定表示针对组织的高级威胁。
 信息 </br> (灰色)  | 信息事件可能被视为对网络没有危害，但可以跟踪。
 
 ## <a name="assigned-to"></a>分配到
 可选择通过选择分配给任何人/分配给你的人来筛选列表。
 
-### <a name="category"></a>Category
+### <a name="category"></a>类别
 根据网络安全终止链所处于的阶段的说明对事件进行分类。 此视图可帮助威胁分析员根据上下文确定要部署的优先级、紧急程度和相应的响应策略。
 
 ### <a name="status"></a>状态

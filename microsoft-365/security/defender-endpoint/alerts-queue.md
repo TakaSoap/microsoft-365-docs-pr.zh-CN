@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 4570e04b53f5469242f1c05d808e6aae80663b6d
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 1c45bec7e38a849160a14adb3011a303085b00e6
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591267"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648443"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
@@ -31,7 +31,7 @@ ms.locfileid: "53591267"
 **适用于：**
 - [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-alertsq-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)。
 
 **警报队列** 显示从网络中设备标记的警报列表。 默认情况下，队列在分组视图中显示最近 30 天内看到的警报。 最新警报在列表顶部显示，有助于你先查看最新警报。
 

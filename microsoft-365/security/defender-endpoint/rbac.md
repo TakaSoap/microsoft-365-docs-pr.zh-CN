@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 594adb952f9c5f98a5c51a176f3fe7f0ac56692c
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: e3c97151adac40e457439e07c1cb1c7dbcc84632
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624268"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652703"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>使用基于角色的访问控制管理门户访问
 
@@ -31,7 +31,7 @@ ms.locfileid: "53624268"
 - Azure Active Directory
 - Office 365
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-rbac-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)。
 
 使用基于角色的访问控制 (RBAC) ，可以在安全操作团队内创建角色和组，以授予对门户的适当访问权限。 根据你创建的角色和组，你可以精细控制有权访问门户的用户可以看到和执行哪些操作。 
 

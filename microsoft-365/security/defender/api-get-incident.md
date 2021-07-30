@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289603"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53652583"
 ---
 # <a name="get-incident-information-api"></a>获取事件信息 API
 
@@ -30,12 +30,11 @@ ms.locfileid: "53289603"
 **适用于：**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## <a name="api-description"></a>API 说明
 
@@ -45,17 +44,16 @@ ms.locfileid: "53289603"
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
-
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限之一。 
+若要调用此 API，需要以下权限之一。
 
-权限类型 | 权限 | 权限显示名称
-:---|:---|:---
-Application | Incident.Read.All | "读取所有事件"
-Application | Incident.ReadWrite.All | "读取和写入所有事件"
-委派（工作或学校帐户） | Incident.Read | "读取事件"
-委派（工作或学校帐户） | Incident.ReadWrite | "读取和写入事件"
+权限类型|权限|权限显示名称
+---|---|---
+应用程序|Incident.Read.All|"读取所有事件"
+应用程序|Incident.ReadWrite.All|"读取和写入所有事件"
+委派（工作或学校帐户）|Incident.Read|"读取事件"
+委派（工作或学校帐户）|Incident.ReadWrite|"读取和写入事件"
 
 > [!NOTE]
 >
@@ -67,14 +65,14 @@ Application | Incident.ReadWrite.All | "读取和写入所有事件"
 ## <a name="http-request"></a>HTTP 请求
 
 ```console
-GET .../api/incidents/{id} 
+GET .../api/incidents/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-名称 | 类型 | 说明
-:---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+名称|类型|说明
+---|---|---
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -82,11 +80,12 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 OK 和事件实体。 如果未找到具有指定 ID 的事件 - 404 未找到。
+如果成功，此方法在响应正文中返回 200 OK 和事件实体。
+如果未找到具有指定 ID 的事件 - 404 未找到。
 
 ## <a name="example"></a>示例
 
-**请求**
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 

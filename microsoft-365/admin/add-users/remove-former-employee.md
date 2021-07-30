@@ -26,22 +26,30 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: 00706f0dac37fe7be538a45908372ed1084dc9d0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541537"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648659"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
-我们经常收到一个问题："当员工离开我的组织时，我应该如何保护数据和保护访问？" 本系列文章介绍如何阻止访问Microsoft 365、保护数据应执行的步骤以及如何允许其他员工访问数据。
-
-:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot： Overview steps for removing a former employee":::
+我们经常收到一个问题："当员工离开我的组织时，我应该如何保护数据和保护访问？" 本系列文章介绍如何阻止访问 Microsoft 365以便这些用户无法登录 Microsoft 365、应执行哪些步骤保护组织数据，以及如何允许其他员工访问电子邮件和 OneDrive 数据。
 
 ## <a name="before-you-begin"></a>准备工作
 
 您需要是全局管理员才能完成此解决方案中的步骤。
+
+若要完成本系列中的步骤，请使用Microsoft 365功能。
+
+|产品或组件|功能或特性|
+|---|---|
+|Microsoft 365 管理中心|转换邮箱， 转发电子邮件， 撤销访问权限， 删除用户 |
+|Exchange 管理中心|阻止用户、阻止访问电子邮件、擦除设备 |
+|OneDrive 和 SharePoint |向其他用户授予访问权限 |
+|Outlook|导入 pst 文件，添加邮箱 |
+|Active Directory|在混合环境中删除用户 |
 
 ## <a name="solution-remove-a-former-employee"></a>解决方案：删除以前的员工
 

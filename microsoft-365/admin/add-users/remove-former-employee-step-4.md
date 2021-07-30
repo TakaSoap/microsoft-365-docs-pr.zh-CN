@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: 67ec651361aac2b687fa1b0f851271ced5e634ed
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 0051f9c20508f0682d34ad3ad17d3e4d8cccf60f
+ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541585"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53648683"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
@@ -185,8 +185,14 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 > 访问现有用户的邮箱和电子邮件数据的步骤OneDrive相同。
 
 > [!TIP]
-> 如果希望仅导入或还原 Outlook Data File (.pst) 中的几个项目，可以打开 Outlook 数据文件。 然后，在导航窗格中，将项目从Outlook数据文件文件夹拖动到现有Outlook文件夹中。 
+> 如果希望仅导入或还原 Outlook Data File (.pst) 中的几个项目，可以打开 Outlook 数据文件。 然后，在导航窗格中，将项目从Outlook数据文件文件夹拖动到现有Outlook文件夹中。
 
 ## <a name="related-content"></a>相关内容
 
-[在](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)OneDrive 帐户上添加和删除管理员 (文章) 还原已删除 OneDrive [ (](/onedrive/restore-deleted-onedrive)文章) OneDrive[保留和](/onedrive/retention-and-deletion)删除 (文章) [共享 OneDrive 文件和文件夹](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)
+[在帐户帐户上添加OneDrive (管理员) ](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article) 
+
+[OneDrive保留和删除 (](/onedrive/retention-and-deletion)文章) 
+
+[共享 OneDrive 文件和文件夹](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)
