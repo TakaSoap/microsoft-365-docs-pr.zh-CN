@@ -46,27 +46,27 @@ ms.locfileid: "53544513"
 - [步骤 4：审核入站连接器](#step-4-audit-inbound-connectors)
 - [步骤 5：激活评估](#step-5-activate-the-evaluation)
 
-## <a name="step-1-activate-trial-licenses&quot;></a>步骤 1：激活试用许可证
+## <a name="step-1-activate-trial-licenses"></a>步骤 1：激活试用许可证
 
 登录到现有 Microsoft Defender for Office 365或租户管理门户。
 
 1. 导航到管理门户。
-2. 从快速启动中选择&quot;购买服务&quot;。
+2. 从快速启动中选择"购买服务"。
 
-   :::image type=&quot;content&quot; source=&quot;../../media/mdo-eval/1_m365-purchase-services.png&quot; alt-text=&quot;单击导航窗格上的&quot;购买服务&quot;Office 365。&quot;:::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="单击导航窗格上的"购买服务"Office 365。":::
 
-3. 向下滚动到&quot;Add-On&quot;部分 (或搜索&quot;Defender") 找到 Microsoft Defender for Office 365 计划。
+3. 向下滚动到"Add-On"部分 (或搜索"Defender") 找到 Microsoft Defender for Office 365 计划。
 4. 单击要评估的计划旁边的"详细信息"。
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="单击&quot;详细信息&quot;按钮，下一步。":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="单击详细信息按钮，下一步。":::
 
 5. 单击" *开始免费试用"* 链接。
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击此面板上的&quot;开始免费试用 *超链接*&quot;。":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击此面板上的开始免费试用 *超链接*。":::
 
 6. 确认请求并单击"立即 *尝试"* 按钮。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="现在，单击&quot;立即尝试 *&quot;按钮*。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="现在，单击立即尝试 *按钮*。":::
 
 ## <a name="step-2-audit-and-verify-the-public-mx-record"></a>步骤 2：审核和验证公共 MX 记录
 
@@ -100,7 +100,7 @@ ms.locfileid: "53544513"
 1. 使用有权访问租户门户的帐户登录到Microsoft 365 Defender门户。
 2. 选择是否要将 Microsoft 365 Defender 门户作为 Microsoft Defender 管理的默认界面Office 365推荐 (Microsoft Defender) 。
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="单击&quot;打开设置&quot;按钮以使用集中式和改进Microsoft 365 Defender门户进行管理。":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="单击打开设置按钮以使用集中式和改进Microsoft 365 Defender门户进行管理。":::
 
 3. From the navigation menu， select **Policies & Rules** under Email & *Collaboration*.
 
@@ -120,13 +120,13 @@ ms.locfileid: "53544513"
 
 7. 如果使用第三方网关，请从下拉列表中选择供应商名称以及与该解决方案关联的入站连接器。 列出答案后，单击"下一步"。
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="在此对话框中，选择组织使用的第三方供应商服务，或选择&quot;*其他*&quot;。下一个对话框中，选择入站连接器。然后单击&quot;下一步&quot;。":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="在此对话框中，选择组织使用的第三方供应商服务，或选择*其他*。下一个对话框中，选择入站连接器。然后单击下一步。":::
 
 8. 查看设置并单击"创建 **评估"** 按钮。
 
    |活动前|活动后|
    |:---:|:---:|
-   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="此窗格有一个下拉列表，用于查看你的设置。如果需要，它还具有&quot;编辑路由类型&quot;的可单击链接。准备好后，单击大蓝色&quot;创建评估&quot;按钮。":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="现在设置已完成。此页面上的蓝色按钮显示&quot;转到评估&quot;。":::|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="此窗格有一个下拉列表，用于查看你的设置。如果需要，它还具有"编辑路由类型的可单击链接。准备好后，单击大蓝色创建评估按钮。":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="现在设置已完成。此页面上的蓝色按钮显示转到评估。":::|
    |
 
 ## <a name="next-steps"></a>后续步骤
