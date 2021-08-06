@@ -42,7 +42,7 @@
 
 将在主题的元数据中标识的编写器收到通知，并最终审阅和批准更改，以便本主题将在 docs.microsoft.com。 如果对更新有疑问或问题，编写器将联系你。
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开源代码行为准则
 
 此项目已采用 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
 

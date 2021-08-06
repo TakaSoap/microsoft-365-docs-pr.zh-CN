@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 为Windows租户迁移 Windows 设备、Office客户端应用Office服务器Microsoft 365服务器。
-ms.openlocfilehash: 336dee2e62c6d0917c437252ba1d741c304998fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9bef3b3128a43c75f5f465d22c82b0bc4431b53b7a86059dfc09ba982e4f94fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798541"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 4. 企业租户Microsoft 365迁移
 
@@ -29,7 +29,7 @@ ms.locfileid: "50929140"
 
 若要最大程度地提高企业集成套件Microsoft 365业务价值，请开始规划和实施迁移这些版本的策略：
 
-| 发件人 | 到 |
+| 发件人 | To |
 |:-------|:-----|
 | Windows 7 和 Windows 8.1 | Windows 10 企业版 |
 | Office工作人员设备上安装的客户端产品 | Microsoft 365 企业应用版 |
@@ -96,7 +96,7 @@ Microsoft 365 企业版包括基于云的 Office 服务器服务版本，这些�
 - 根据您的邮箱迁移Exchange，继续滚动到向Exchange Online迁移。
 - 根据本地部署和网站SharePoint的状态，继续向组织SharePoint Microsoft 365迁移。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 5.部署设备和应用管理](../media/tenant-management-overview/tenant-management-step-grid-device-mgmt.png)](tenant-management-device-management.md)
 

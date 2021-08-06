@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 109ba05b21ce9c1355be73dbdfb000d6eb8c4e4d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 06f253afdceb7d41b7cd1f3a6c891260a48771b0bef9d18e04b65fd1012dea49
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930467"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798733"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>支持在家工作的安全团队的 12 大任务
 
@@ -30,17 +30,17 @@ ms.locfileid: "51930467"
 
 如果你是使用 Microsoft 业务计划之一的中小型组织，请改为参阅以下资源：
 
-- [保护 Office 365 和 Microsoft 365 商业版计划的十大方法](../admin/security-and-compliance/secure-your-business-data.md)
-- [Microsoft 365 商业](../campaigns/index.md) (包括针对 Microsoft 365 商业版的建议安全) 
+- [保护业务计划的 Office 365 Microsoft 365的十大方法](../admin/security-and-compliance/secure-your-business-data.md)
+- [Microsoft 365活动 (](../campaigns/index.md)包括针对商业Microsoft 365建议的安全) 
 
-对于使用企业计划的客户，Microsoft 建议你完成下表中列出的适用于你的服务计划的任务。 如果不购买 Microsoft 365 企业版计划，而是合并订阅，请注意以下事项：
+对于使用企业计划的客户，Microsoft 建议你完成下表中列出的适用于你的服务计划的任务。 如果要合并订阅Microsoft 365购买企业版计划，请注意以下事项：
 
-- Microsoft 365 E3 包括企业移动性 + 安全性 (EMS) E3 和 Azure AD P1
-- Microsoft 365 E5 包括 EMS E5 和 Azure AD P2
+- Microsoft 365 E3 E3 企业移动性 + 安全性 (Azure AD P1) EMS
+- Microsoft 365 E5包括 EMS E5 和 Azure AD P2
 
 ****
 
-|步骤|任务|所有 Office 365 企业版计划|Microsoft 365 E3|Microsoft 365 E5|
+|步骤|任务|所有Office 365 企业版计划|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
 |1|[启用 Azure AD 多重身份验证 (MFA) ](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[威胁防护](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -51,18 +51,18 @@ ms.locfileid: "51930467"
 |7 |[为来宾配置 MFA 和条件访问，包括 Intune 应用保护](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[将电脑注册到设备管理中，并需要兼容电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[针对云连接优化网络](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |11|[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[监视威胁并采取措施](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-开始之前，请查看 Microsoft [365](./defender/microsoft-secure-score.md) 安全中心中的 Microsoft 365 安全分数。 通过集中式仪表板，你可以监视和提高 Microsoft 365 标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 本文中推荐的任务将提高分数。
+开始之前，[请在安全中心](./defender/microsoft-secure-score.md)Microsoft 365安全Microsoft 365安全分数。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 本文中推荐的任务将提高分数。
 
 ![Microsoft 安全分数的屏幕截图](../media/secure-score.png)
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1：启用 Azure AD 多重身份验证 (MFA) 
 
-为在家工作的员工提高安全性，你可以做的一个最好操作是打开 MFA。 如果还没有流程，请看做紧急试点，并确保支持人员已准备好帮助遇到问题的员工。 由于你可能不会分发硬件安全设备，因此请使用 Windows Hello 生物识别以及 Microsoft Authenticator 等智能手机身份验证应用。
+为在家工作的员工提高安全性，你可以做的一个最好操作是打开 MFA。 如果还没有流程，请看做紧急试点，并确保支持人员已准备好帮助遇到问题的员工。 由于你可能不会分发硬件安全设备，因此Windows Hello生物识别以及智能手机身份验证应用（如Microsoft Authenticator）。
 
 通常，Microsoft 建议在要求 MFA 前为用户提供 14 天时间，以注册其设备进行多重身份验证。 但是，如果你的员工突然在家工作，请继续操作，要求将 MFA 作为安全优先级，并准备好帮助需要它的用户。
 
@@ -72,25 +72,25 @@ ms.locfileid: "51930467"
 
 |计划|建议|
 |---|---|
-|Microsoft 365 计划 (Azure AD P1 或 P2) |[在 Azure AD 中启用安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。|
+|Microsoft 365 Azure AD P1 (P2) |[在 Azure AD 中启用安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。|
 |Microsoft 365 E3 (Azure AD P1) |使用[常用条件访问策略](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br/>- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (Azure AD P2) |利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](./office-365-security/identity-access-policies.md)：<br/> - [要求在登录风险为“中等”或“高”时执行 MFA](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [阻止不支持新式身份验证的客户端](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [高风险用户必须更改密码](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2：防范威胁
 
-所有 Microsoft 365 计划都包括各种威胁防护功能。 为这些功能加强保护只需几分钟。
+所有Microsoft 365计划都包括各种威胁防护功能。 为这些功能加强保护只需几分钟。
 
 - 反恶意软件保护
 - 防止恶意 URL 和文件
 - 防钓鱼保护
 - 反垃圾邮件保护
 
-请参阅 [防止 Office 365](office-365-security/protect-against-threats.md) 中的威胁，了解可以用作起始点的指南。
+有关[可以用作Office 365](office-365-security/protect-against-threats.md)的指导，请参阅防止威胁。
 
-## <a name="3-configure-microsoft-defender-for-office-365"></a>3：为 Office 365 配置 Microsoft Defender
+## <a name="3-configure-microsoft-defender-for-office-365"></a>3：配置 Microsoft Defender for Office 365
 
-Microsoft 365 E5 和 Office 365 E5 中包含的 Microsoft Defender for Office 365 可保护您的组织免受电子邮件、链接 (URL) 和协作工具造成的恶意威胁。 这可能需要几个小时进行配置。
+Microsoft Defender for Office 365（Microsoft 365 E5 和 Office 365 E5 包含）可保护你的组织免受电子邮件、链接 (URL 和协作) 造成的恶意威胁。 这可能需要几个小时进行配置。
 
 Microsoft Defender for Office 365：
 
@@ -98,17 +98,17 @@ Microsoft Defender for Office 365：
 - 当用户协作和共享文件时，通过识别和阻止工作组网站和文档库中的恶意文件来保护你的组织。
 - 应用机器学习模型和高级模拟检测算法来防范网络钓鱼攻击。
 
-有关概述（包括计划摘要），请参阅 Defender [for Office 365。](./office-365-security/defender-for-office-365.md)
+有关概述（包括计划摘要），请参阅 Defender [for Office 365](./office-365-security/defender-for-office-365.md)。
 
 全局管理员可以配置以下保护：
 
 - [设置安全链接策略](office-365-security/set-up-safe-links-policies.md)
-- [配置安全链接的全局设置](office-365-security/configure-global-settings-for-safe-links.md)
+- [配置链接的保险箱设置](office-365-security/configure-global-settings-for-safe-links.md)
 - [设置安全附件策略](office-365-security/set-up-safe-attachments-policies.md)
 
-你需要与 Exchange Online 管理员和 SharePoint Online 管理员一起为这些工作负载配置适用于 Office 365 的 Defender：
+你需要与你的联机管理员Exchange Online联机管理员SharePoint为这些工作负载Office 365 Defender：
 
-- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Microsoft Defender for Endpoint](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [Microsoft Defender for Endpoint for SharePoint、OneDrive 和 Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：为标识配置 Microsoft Defender
 
@@ -118,13 +118,13 @@ Microsoft Defender for Office 365：
 - 观看视频 [：Microsoft Defender 标识简介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - 查看 [Microsoft Defender 标识部署的三个阶段](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-365-defender"></a>5：打开 Microsoft 365 Defender
+## <a name="5-turn-on-microsoft-365-defender"></a>5：打开Microsoft 365 Defender
 
-现在，你已配置 Microsoft Defender for Office 365 和 Microsoft Defender for Identity，可以在一个仪表板中查看这些功能的组合信号。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md) 将警报、事件、自动调查和响应以及跨工作负载的高级搜寻 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Cloud App Security) 汇集到 security.microsoft.com 的单个 [窗格中](https://security.microsoft.com)。
+现在，你已配置 Microsoft Defender for Office 365 和 Microsoft Defender for Identity，可以在一个仪表板中查看这些功能的组合信号。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)跨工作负载将警报、事件、自动调查和响应以及高级搜寻汇集在一起 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Cloud App Security) 集成到位于 security.microsoft.com 的单个[窗格中](https://security.microsoft.com)。
 
 ![MTP 仪表板图示](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-配置一个或多个 Defender for Office 365 服务后，打开 MTP。 新功能不断添加到 MTP;考虑选择接收预览功能。
+配置了一个或多个 Defender 以使用 Office 365 服务后，打开 MTP。 新功能不断添加到 MTP;考虑选择接收预览功能。
 
 - [了解有关 MTP 的更多信息](./defender/microsoft-365-defender.md)
 - [打开 MTP](./defender/m365d-enable.md)
@@ -132,7 +132,7 @@ Microsoft Defender for Office 365：
 
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6：为手机和平板电脑配置 Intune 移动应用保护
 
-Microsoft Intune 移动应用 (MAM) 允许你管理和保护电话和平板电脑上的组织数据，而无需管理这些设备。 以下是相应的工作方式：
+Microsoft Intune移动应用程序管理 (MAM) 允许你管理和保护电话和平板电脑上的组织数据，而无需管理这些设备。 以下是相应的工作方式：
 
 - 创建应用保护策略 (APP) ，确定设备上管理哪些应用以及允许哪些行为 (例如阻止将托管应用的数据复制到非托管应用) 。 你可以为 iOS、Android (的每个平台创建一) 。
 - 创建应用保护策略后，通过创建 Azure AD 中的条件访问规则来强制执行这些策略，以要求批准的应用和应用数据保护。
@@ -148,9 +148,9 @@ Microsoft Intune 移动应用 (MAM) 允许你管理和保护电话和平板电�
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7：为来宾配置 MFA 和条件访问，包括 Intune 移动应用保护
 
-接下来，让我们确保你可以继续协作并与来宾合作。 如果你使用的是 Microsoft 365 E3 计划，并且你为所有用户实现了 MFA，则你已设置。
+接下来，让我们确保你可以继续协作并与来宾合作。 如果你使用 Microsoft 365 E3 计划，并且为所有用户实现了 MFA，则你已设置。
 
-如果你使用的是 Microsoft 365 E5 计划，并且正在利用 Azure Identity Protection 进行基于风险的 MFA，则需要对 (做一些调整，因为 Azure AD Identity protection 不会扩展到来宾) ：
+如果你使用的是 Microsoft 365 E5 计划，并且正在利用 Azure Identity Protection 进行基于风险的 MFA，则需要对 (做一些调整，因为 Azure AD 标识保护不会扩展到来宾) ：
 
 - 创建新的条件访问规则，要求始终对来宾和外部用户执行 MFA。
 - 更新基于风险的 MFA 条件访问规则以排除来宾和外部用户。
@@ -164,18 +164,18 @@ Microsoft Intune 移动应用 (MAM) 允许你管理和保护电话和平板电�
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8：将电脑注册到设备管理中，并需要兼容电脑
 
-有几种方法可以注册员工的设备。 每个方法取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理要求（重置、相关性、锁定）。 这可能需要一些时间才能排序。请参阅： [在 Microsoft Intune 中注册设备](/mem/intune/enrollment/)。
+有几种方法可以注册员工的设备。 每个方法取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理要求（重置、相关性、锁定）。 这可能需要一些时间才能排序。请参阅：[在 Microsoft Intune 中注册设备](/mem/intune/enrollment/)。
 
-最简单的方法就是设置 [Windows 10 设备的自动注册](/mem/intune/enrollment/quickstart-setup-auto-enrollment)。
+最简单的方法就是设置自动[注册Windows 10设备](/mem/intune/enrollment/quickstart-setup-auto-enrollment)。
 
 还可以充分利用以下教程：
 
-- [使用 Autopilot 在 Intune 中注册 Windows 设备](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
+- [使用 Autopilot 在 Intune Windows注册设备](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [使用 Apple Business Manager 中的 Apple 企业设备注册功能 (ABM) Intune 中注册 iOS/iPadOS 设备](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 注册设备后，使用通用标识和设备访问 [策略中的指南](./office-365-security/identity-access-policies.md) 创建这些策略：
 
-- [定义设备合规性策略](./office-365-security/identity-access-policies.md#define-device-compliance-policies) — Windows 10 的建议设置包括要求防病毒保护。 如果你有 Microsoft 365 E5，请使用 Microsoft Defender for Endpoint 监视员工设备的运行状况。 确保其他操作系统的合规性策略包括防病毒保护和终点保护软件。
+- [定义设备合规性策略](./office-365-security/identity-access-policies.md#define-device-compliance-policies)— 建议用于Windows 10防病毒保护。 如果已Microsoft 365 E5，请使用 Microsoft Defender for Endpoint 监视员工设备的运行状况。 确保其他操作系统的合规性策略包括防病毒保护和终点保护软件。
 - [需要合规电脑](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) — 这是 Azure AD 中强制执行设备合规性策略的条件访问规则。
 
 只有一个组织可以管理设备，因此请确保从 Azure AD 的条件访问规则中排除来宾帐户。 如果不从要求设备符合性的策略中排除来宾和外部用户，这些策略将阻止这些用户。 有关详细信息，请参阅 [更新通用策略以允许和保护来宾和外部访问](./office-365-security/identity-access-policies-guest-access.md)。
@@ -186,7 +186,7 @@ Microsoft Intune 移动应用 (MAM) 允许你管理和保护电话和平板电�
 
 网络元素（如 VPN 主控器、中央网络出口设备 (如代理和数据丢失防护设备) 、中央 Internet 带宽、回程 MPLS 电路、NAT 功能等）突然因使用它们的整个业务负载而变得极大压力。 最终结果是性能和工作效率不佳，加上适应在家工作的用户的用户体验不佳。
 
-过去通过公司网络路由回流量提供的一些保护由用户访问的云应用提供。 如果你已到达本文中的此步骤，则你已经为 Microsoft 365 服务和数据实现了一组复杂的云安全控件。 借助这些控件，你可以准备好将远程用户的流量直接路由到 Office 365。 如果仍然需要 VPN 链接才能访问其他应用程序，可以通过实现拆分隧道大大提高性能和用户体验。 在组织中达成一致后，一个协调良好的网络团队可以在一天内完成此操作。
+过去通过公司网络路由回流量提供的一些保护由用户访问的云应用提供。 如果你已到达本文中的这一步，你已针对基于云的服务和数据Microsoft 365复杂的云安全控件。 借助这些控件，你可以准备好将远程用户的流量直接路由到Office 365。 如果仍然需要 VPN 链接才能访问其他应用程序，可以通过实现拆分隧道大大提高性能和用户体验。 在组织中达成一致后，一个协调良好的网络团队可以在一天内完成此操作。
 
 有关详细信息，请参阅 Docs 上的以下资源：
 
@@ -204,14 +204,14 @@ Microsoft Intune 移动应用 (MAM) 允许你管理和保护电话和平板电�
 
 该学院网络安全 [宣传活动](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) 手册提供了有关在组织中建立强大安全意识文化的指导，包括培训用户识别网络钓鱼攻击。
 
-Microsoft 365 提供以下资源来帮助通知贵组织的用户：
+Microsoft 365提供了以下资源来帮助通知贵组织的用户：
 
 ****
 
 |概念|资源|
 |---|---|
 |Microsoft 365|[可自定义的学习路径](/office365/customlearning/) <p>这些资源可帮助您将针对组织中最终用户的培训整合在一起|
-|Microsoft 365 安全中心|[学习模块：使用 Microsoft 365 的内置智能安全性保护组织](/learn/modules/security-with-microsoft-365) <p>本模块使您能够描述 Microsoft 365 安全功能如何协同工作，并阐明这些安全功能的好处。|
+|Microsoft 365 安全中心|[Learning模块：使用内置的智能安全保护组织，Microsoft 365](/learn/modules/security-with-microsoft-365) <p>本模块使您能够描述Microsoft 365功能如何协同工作，并阐明这些安全功能的好处。|
 |多重身份验证|[两步验证：什么是附加验证页面？](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>本文帮助最终用户了解什么是多重身份验证以及为什么在组织中使用的多重身份验证。|
 |
 
@@ -219,7 +219,7 @@ Microsoft 365 提供以下资源来帮助通知贵组织的用户：
 
 - 使用强密码
 - 保护设备
-- 在 Windows 10 和 Mac PC 上为非托管 (启用安全功能) 
+- 为非托管设备Windows 10 Mac 电脑 (安全功能) 
 
 Microsoft 还建议用户采取以下文章中建议的操作来保护其个人电子邮件帐户：
 
@@ -227,28 +227,28 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 - [使用 2 步验证保护 Gmail 帐户](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-cloud-app-security"></a>11：Microsoft Cloud App Security 入门
+## <a name="11-get-started-with-microsoft-cloud-app-security"></a>11：开始Microsoft Cloud App Security
 
-[Microsoft Cloud App Security](/cloud-app-security) 提供丰富的可见性、对数据旅行的控制以及复杂的分析，以识别和防御所有云服务中的网络威胁。 开始使用 Cloud App Security 后，将自动启用异常检测策略，但 Cloud App Security 的初始学习期为七天，在此期间并非所有异常检测警报都会引发。
+[Microsoft Cloud App Security](/cloud-app-security)提供丰富的可见性、对数据传输的控制以及复杂的分析，以识别和防御所有云服务中的网络威胁。 开始使用异常检测云应用安全将自动启用异常检测策略，云应用安全有七天的初始学习期，在此期间并非所有异常检测警报都会引发。
 
-现在开始使用 Cloud App Security。 稍后，您可以设置更复杂的监视和控件。
+现在云应用安全入门。 稍后，您可以设置更复杂的监视和控件。
 
-- [快速入门：云应用安全入门](/cloud-app-security/getting-started-with-cloud-app-security)
+- [快速入门：快速入门云应用安全](/cloud-app-security/getting-started-with-cloud-app-security)
 - [获取即时行为分析和异常检测](/cloud-app-security/anomaly-detection-policy)
-- [详细了解 Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [详细了解Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [查看新特性和功能](/cloud-app-security/release-notes)
 - [请参阅基本设置说明](/cloud-app-security/general-setup)
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12：监视威胁并采取措施
 
-Microsoft 365 包括多种监视状态和采取适当操作的方法。 最佳起点是 Microsoft 365 安全中心 () ，你可以在这里查看组织的 Microsoft 安全分数以及任何需要你注意的警报或 [https://security.microsoft.com](https://security.microsoft.com) 实体。 [](./defender/microsoft-secure-score.md)
+Microsoft 365包括多种监视状态和采取适当操作的方法。 最佳起点是 Microsoft 365 安全中心 () ，你可以在这里查看组织的 Microsoft 安全分数以及任何需要你注意的 [https://security.microsoft.com](https://security.microsoft.com) 警报[](./defender/microsoft-secure-score.md)或实体。
 
-- [Microsoft 365 安全中心入门](./defender/overview-security-center.md)
+- [安全中心Microsoft 365入门](./defender/overview-security-center.md)
 - [监视和查看报表](./defender/overview-security-center.md)
-- [请参阅 Microsoft 365 中的安全门户](./defender/portals.md)
+- [请参阅安全门户Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>后续步骤
 
-恭喜！ 您快速实施了一些最重要的安全保护，并且您的组织更加安全。 现在，你可以进一步使用威胁防护功能 (包括 Microsoft Defender for Endpoint) 、数据分类和保护功能，以及保护管理帐户。 有关针对 Microsoft 365 的更深入、有条理的安全建议集，请参阅 [Microsoft 365 ](Microsoft-365-security-for-bdm.md)商业版决策者 (BDM) 。
+恭喜！ 您快速实施了一些最重要的安全保护，并且您的组织更加安全。 现在，你可以进一步使用威胁防护功能 (包括 Microsoft Defender for Endpoint) 、数据分类和保护功能，以及保护管理帐户。 有关更深入、系统化的安全建议集Microsoft 365，请参阅 Microsoft 365 [Security for Business Decision Makers (BDM) ](Microsoft-365-security-for-bdm.md)。
 
 另请访问 Microsoft 的新安全[中心，docs.microsoft.com/security。](/security)

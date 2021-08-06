@@ -9,22 +9,22 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: 在 Microsoft Bookings 中更改语言和时区设置。 如果预定是在错误的时间创建的，则可能会为错误的时区设置 Bookings。
-ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 7c1ae42f327291062fb6bc4512ef3b1b85709b45814a816222958405327e054c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843610"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>在 Microsoft Bookings 中设置语言和时区
 
 如果你使用的是 Microsoft Bookings，并且预定是在错误的时间创建的，则你的时区设置可能需要更改。 同样，如果某些预订使用的语言错误，你可能需要更改语言设置。
 
-Bookings 有两个单独的语言和时区设置。 第一个设置控制预订日历的语言和时区，并Outlook登录用户的个人日历的 Web 设置上的设置。 第二个设置会影响客户使用的自助服务预订页面，并使用"区域设置"页面进行设置，该页面仅控制该页面的语言和时区。
+Bookings 有两个单独的语言和时区设置。 第一个设置控制预订日历的语言和时区，并且使用已登录用户的个人日历的 Outlook 网页版 设置进行设置。 第二个设置会影响客户使用的自助服务预订页面，并使用"区域设置"页面进行设置，该页面仅控制该页面的语言和时区。
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>设置预订日历的语言和时区
 
-预订日历使用登录用户的语言和时区设置。 例如，如果登录用户的时区设置为东部标准时间 (EST) ，则预订日历将在 EST 中显示现有约会开始时间和结束时间。 此时区最初是在创建用户的 Microsoft 365 Outlook时设置的。
+预订日历使用登录用户的语言和时区设置。 例如，如果登录用户的时区设置为东部标准时间 (EST) ，则预订日历将在 EST 中显示现有约会开始时间和结束时间。 此时区最初是在创建用户的帐户和Microsoft 365 Outlook 网页版设置。
 
 若要设置预订日历的语言和时区，
 
@@ -36,7 +36,7 @@ Bookings 有两个单独的语言和时区设置。 第一个设置控制预订�
 
 1. 通过在"语言"或"当前时区"框中选择下拉箭头并选择所需的设置，更改语言或时区。
 
-1. 单击“保存”。 the 设置 panel closes， Outlook on the web restarts， and the new language and time zone settings are applied.
+1. 单击 **保存**。 the 设置 panel closes， Outlook 网页版 restarts， and the new language and time zone settings are applied.
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>设置预订页面的语言和时区
 

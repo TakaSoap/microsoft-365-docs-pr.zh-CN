@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 94cbfb02449abb75ff90659bfa678ea61694f2f2f5aac372ba3e31372d5ae59b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843439"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 

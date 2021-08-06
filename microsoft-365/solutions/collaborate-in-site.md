@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: 了解设置Microsoft 365来宾协作的 SharePoint 网站所需的配置步骤。
-ms.openlocfilehash: f91b9c64dbdca8ed7e3ada3315cb57f1c728f838
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 054de924b2cf5041694ca12dcf2fb4137242d16fb53060421aedb51aed9668a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810160"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -132,14 +132,14 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 3. 单击“**添加成员**”。
 4. 键入要邀请到网站的用户的姓名或电子邮件地址，然后单击"保存 **"。**
 
-无法从网站添加来宾。 你需要使用 Web 上的Outlook添加它们。 因此，作为添加来宾并邀请来宾加入组的先决条件，请单击"URL"列中网站的 **URL**  以导航到特定于网站的页面。 从此页中，单击 **应用启动器** 图标并选择"Outlook"。  这是你可以从其中邀请来宾加入组的屏幕，此过程如下所述。
+无法从网站添加来宾。 你需要使用 Outlook 网页版。 因此，作为添加来宾并邀请来宾加入组的先决条件，请单击"URL"列中网站的 **URL**  以导航到特定于网站的页面。 从此页中，单击 **应用启动器** 图标并选择"Outlook"。  这是你可以从其中邀请来宾加入组的屏幕，此过程如下所述。
 
 邀请来宾加入组
 1. 在 **"** 组"下，单击要邀请来宾的组。
 2. 打开组联系人卡片，单击右上角的"成员"链接 (表示成员计数) 。
 3. 单击 **"添加成员"。**
 4. 键入要邀请的来宾的电子邮件地址，然后单击"添加 **"。**
-5. 单击“**关闭**”。
+5. 单击“关闭”。
 请注意，只有不是 **组所有者时** ，才需要单击"关闭"，因此，不允许将来宾添加到组中。 在这种情况下，将来宾添加到组的请求将传输给组所有者进行审批。
 
 ## <a name="see-also"></a>另请参阅

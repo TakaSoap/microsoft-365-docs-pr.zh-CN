@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 396611563f40fb52ddd58f0c6f99af9e25c97c1c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f92a586ae44c926193132fb7a994895579cbfe0f049abcd96547f29f5922a9f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809882"
 ---
 # <a name="contact-support-for-puerto-rico"></a>联系波多黎各支持人员
 

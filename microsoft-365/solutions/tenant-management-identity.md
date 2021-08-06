@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 为租户部署正确的标识Microsoft 365并强制执行强用户登录。
-ms.openlocfilehash: c6b098cf73ef56327448413381d5621dfd4d2b59
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 01a69a326195514d0aa0a7eef1124bb820a211a508a1ed5cf79a520b82d0afa9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798626"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 3. 企业租户Microsoft 365的标识
 
@@ -77,7 +77,7 @@ ms.locfileid: "53229067"
 | Azure AD 密码保护 | 检测并阻止已知的弱密码及其变体，还可以阻止特定于您的组织的其他弱术语。 | [配置 Azure AD 密码保护](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 或 E5 |
 | 使用多重身份验证 (MFA) | MFA 要求用户登录需要除用户帐户密码之外的其他验证，例如使用智能手机应用进行验证或发送到智能手机的短信。 有关 [用户](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) 如何设置 MFA 的说明，请参阅此视频。 | [适用于企业的 Microsoft 365 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 或 E5 |
 | 标识和设备访问配置 | 设置策略，其中包括建议的先决条件功能及其设置，以及条件访问、Intune 和 Azure AD Identity Protection 策略，这些策略确定是否应授予给定访问请求以及应在哪些条件下授予。  | [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 或 E5 |
-| Azure AD Identity Protection | 防止凭据泄露，攻击者可确定用户帐户名和密码，以访问组织的云服务和数据。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5或Microsoft 365 E3 Identity &威胁防护加载项的加载项 |
+| Azure AD 标识保护 | 防止凭据泄露，攻击者可确定用户帐户名和密码，以访问组织的云服务和数据。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5或Microsoft 365 E3 Identity &威胁防护加载项的加载项 |
 |  |  |  |
 
 
@@ -106,7 +106,7 @@ ms.locfileid: "53229067"
 - 添加或修改用户帐户和组。 对于仅云标识，使用 Azure AD 工具（如 Microsoft 365 管理中心 或 PowerShell）维护基于云的用户和组。 对于混合标识，使用 AD DS 工具维护本地用户和组。
 - 添加或修改标识和设备访问配置，以强制实施登录安全要求。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 4.迁移本地部署Office服务器和数据](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: 了解如何控制哪些用户可以创建Microsoft 365组。
-ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 374e5b1f7b89e9c2c0727035baeb692a5f869fe1e117ec6fb691e34caf65ab18
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53777688"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -47,18 +47,18 @@ ms.locfileid: "52539175"
 本文中的步骤不会阻止某些角色的成员创建组。 Office 365全局管理员可以通过 Microsoft 365 管理中心、Planner、Exchange 和 SharePoint Online 创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
 - Exchange管理员：Exchange管理中心，Azure AD
-- 合作伙伴第 1 层支持：Microsoft 365管理中心、Exchange管理中心、Azure AD
-- 合作伙伴第 2 层支持：Microsoft 365管理中心、Exchange管理中心、Azure AD
+- 合作伙伴第 1 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
+- 合作伙伴第 2 层支持：Microsoft 365 管理中心、Exchange管理中心、Azure AD
 - 目录编写器：Azure AD
 - SharePoint管理员：SharePoint管理中心，Azure AD
 - Teams服务管理员：Teams管理中心，Azure AD
-- 用户管理员：Microsoft 365管理中心，Azure AD
+- 用户管理员：Microsoft 365 管理中心、Azure AD
 
 如果你是其中一个角色的成员，你可以为受限用户Microsoft 365组"，然后将该用户分配为组的所有者。
 
 ## <a name="licensing-requirements"></a>许可要求
 
-若要管理创建组的用户，以下人员需要 Azure AD 高级版或分配给他们的 Azure AD 基本 EDU 许可证：
+若要管理创建组的用户，以下人员Azure AD Premium分配给他们的 Azure AD Basic EDU 许可证：
 
 - 配置这些组创建设置的管理员
 - 允许创建组的组的成员
@@ -66,7 +66,7 @@ ms.locfileid: "52539175"
 > [!NOTE]
 > 请参阅[在 Azure Active Directory 门户](/azure/active-directory/fundamentals/license-users-groups)中分配或删除许可证，了解有关如何分配 Azure 许可证的更多详细信息。
 
-以下人员不需要 Azure AD 高级版或分配给他们的 Azure AD 基本 EDU 许可证：
+以下人员不需要分配Azure AD Premium Azure AD 基本 EDU 许可证：
 
 - 作为组Microsoft 365且无法创建其他组的人。
 
@@ -84,7 +84,7 @@ ms.locfileid: "52539175"
 
 4. 完成组设置，添加要能够在组织内创建组的人或其他组。
 
-有关详细说明，请参阅在管理中心创建、编辑或删除Microsoft 365[组](../admin/email/create-edit-or-delete-a-security-group.md)。
+有关详细说明，请参阅创建[、编辑或删除](../admin/email/create-edit-or-delete-a-security-group.md)安全Microsoft 365 管理中心。
 
 ## <a name="step-2-run-powershell-commands"></a>步骤 2：运行 PowerShell 命令
 

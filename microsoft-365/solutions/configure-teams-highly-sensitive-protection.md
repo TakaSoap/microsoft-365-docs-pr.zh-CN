@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 995f684d9bbc492ba63dadbc6394e1195a288d5416214de61d87b12bf3fdb16c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798682"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -130,7 +130,7 @@ ms.locfileid: "52788351"
 更新网站默认共享链接类型
 
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**网站**”下，单击“**活动的网站**”。
+2. 在“**站点**”下，单击“**活动站点**”。
 3. 单击与团队关联的网站。
 4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 5. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**具有现有访问权限的人员**”。

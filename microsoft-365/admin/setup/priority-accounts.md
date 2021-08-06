@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 监视发送到或发送自对业务影响较高的帐户的失败和延迟的电子邮件。
-ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 63c394055f94370a09ea76cc8125a71f7061b2f3d6b66ff8106c76c2571f90cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821539"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理和监视优先级帐户
 
@@ -37,7 +37,7 @@ ms.locfileid: "53286137"
 
 有关优先级帐户的安全最佳做法，请参阅安全 [建议优先级帐户](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 本主题 **中所述** 的优先级帐户保护功能仅适用于满足以下要求的组织：
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云迁移到德国 microsoft 云 (到德国新数据中心) Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 37c8e1d879bc296b226fb4d616d798d4c38b4a0d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: eefc1f54f20d1d59a8732cdd75356039bc434f91
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542017"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757002"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -259,7 +259,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 查看[联机迁移的Skype for Business，](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online)并确保你已完成所有步骤。
 在此阶段，Skype for Business迁移到Microsoft Teams。 现有Skype for Business客户迁移到Office 365全球服务，然后转换到 Office 365 服务"德国"地区的 Microsoft Teams。
 
-- 用户将无法在迁移Skype for Business登录。 在迁移前 10 天，客户将在管理中心收到一条消息，通知迁移将何时进行，迁移开始时将再次通知。
+- 用户将无法在迁移Skype for Business登录。
 - 迁移策略配置。
 - 用户将被迁移到Teams迁移后将无法再Skype for Business用户。
 - 用户必须已安装Microsoft Teams客户端。 安装将在 10 天内通过 Skype for Business 基础结构上的策略进行，但如果失败，用户仍然需要下载客户端或与受支持的浏览器连接。

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caefcd7ce19073a10139a9f4d6d84c49e93c392f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7e3077980755f81a3ca86569b53051a2851191de
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623344"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757050"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -139,6 +139,7 @@ netsh winhttp reset proxy
 |
 
 如果代理或防火墙启用了 HTTPS 扫描（SSL 检查），则从 HTTPS 扫描中排除上表中列出的域。
+在防火墙中，打开地理位置列为 WW 的所有 URL。 对于地理位置列不是 WW 的行，打开特定数据位置的 URL。 若要验证数据位置设置，请参阅验证 [数据存储位置并更新 Microsoft Defender for Endpoint 的数据保留设置](/microsoft-365/security/defender-endpoint/data-retention-settings)。
 
 > [!NOTE]
 > settings-win.data.microsoft.com 运行版本 1803 或Windows 10的设备时，才需要此配置。<br>
@@ -192,7 +193,7 @@ netsh winhttp reset proxy
 
 验证代理配置是否成功完成，WinHTTP 是否可以在你的环境中发现代理服务器并通过代理服务器进行通信，以及代理服务器是否允许到 Defender for Endpoint 服务 URL 的通信。
 
-1. 将 [Micrsofot Defender for Endpoint Client Analyzer](https://aka.ms/mdeanalyzer) 工具下载到运行 Defender for Endpoint 传感器的电脑。
+1. 将 [Microsoft Defender for Endpoint Client Analyzer 工具](https://aka.ms/mdeanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
 
 2. 提取设备上MDEClientAnalyzer.zip内容。
 

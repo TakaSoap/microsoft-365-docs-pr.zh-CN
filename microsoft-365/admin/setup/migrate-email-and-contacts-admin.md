@@ -29,12 +29,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到 Microsoft 365。
-ms.openlocfilehash: adfdf83c763f2bf610f441469cd7c1a027370bc7
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 7ae14ffa8445a54d888216e7014d21e31752e1c17c9c496cf6d7e4c546cfa716
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821746"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 

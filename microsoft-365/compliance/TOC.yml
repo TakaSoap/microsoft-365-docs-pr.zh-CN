@@ -968,8 +968,6 @@
           href: compliance-manager-mcca.md
         - name: 常见问题 (FAQ)
           href: compliance-manager-faq.yml
-        - name: 合规性管理器（经典）
-          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft 服务信任门户
       href: get-started-with-service-trust-portal.md
     - name: 特定于行业的指南

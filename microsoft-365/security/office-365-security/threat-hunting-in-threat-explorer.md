@@ -16,12 +16,12 @@ description: 使用威胁资源管理器或 Microsoft 365 Defender中的实时�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ad5d73abae71cc7cc00e12665d96b2020da0c41
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 5d35478c81dc939e7c2cad686db638004e260e00b40ed185c92b8f07bae081ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798904"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 威胁资源管理器中的威胁搜寻
 
@@ -246,7 +246,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 - 对于 Microsoft 365 Defender 门户：
   - 组织管理
   - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
-  - 安全读取者
+  - 安全信息读取者
 - 例如Exchange Online：
   - 组织管理
   - 仅查看组织管理

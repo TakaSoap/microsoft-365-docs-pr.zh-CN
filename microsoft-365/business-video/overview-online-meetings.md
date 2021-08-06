@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为企业主持联机会议。
-ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b744410f8553a6da384142d6edc9a2377a8d8d74539dcb62d8011fdc045e988
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843500"
 ---
 # <a name="host-online-meetings-for-your-business"></a>为企业主持联机会议
 

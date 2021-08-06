@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业应用版订阅。
-ms.openlocfilehash: 9c973866a3bf1008a8c8062e2a5b9e101494d5f9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 84018b0291b68a65216f1ac4d430cfdb270f8c65e7f35e245bcb695b758855a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535730"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821503"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>设置 Microsoft 365 商业应用版
 
