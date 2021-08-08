@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef81785c1f0395091c3207ca4da22e70bb0c411d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648731"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757278"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -45,6 +45,7 @@ ms.locfileid: "53648731"
 ## <a name="july-2021"></a>2021 年 7 月
 
 - [自动调查中的电子邮件分析改进](email-analysis-investigations.md)
+- [保险箱链接Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 
 
 ## <a name="june-2021"></a>2021 年 6 月
@@ -117,7 +118,7 @@ ms.locfileid: "53648731"
 
 - [查看 Microsoft](address-compromised-users-quickly.md) Defender for (**计划** 2)  (预览版中Office 365泄露的新用户检测和响应) 
 
-## <a name="september-2019"></a>2019 年 9 月
+## <a name="september-2019"></a>2019年九月
 
 - [使用 Microsoft](automated-investigation-response-office.md) Defender for (计划 2 Office 365的自动调查和响应) 
 

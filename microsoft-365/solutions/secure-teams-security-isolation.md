@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 4ed8b3a7476e11cdf2341b0a98af690ed3f33c7e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ba929dad3fa7797db736907d085d9beb28835332ba79e3a02ce1363fdb129d4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843883"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -160,7 +160,7 @@ ms.locfileid: "52539067"
 
 应用敏感度标签
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**网站**”下，单击“**活动的网站**”。
+2. 在“**站点**”下，单击“**活动站点**”。
 3. 单击与团队关联的网站。
 4. 在“**策略**”选项卡的“**敏感度**”下，单击“**编辑**”。
 5. 选择创建的标签，然后单击“**保存**”。
@@ -186,7 +186,7 @@ ms.locfileid: "52539067"
 
 更新网站设置
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“**网站**”下，单击“**活动的网站**”。
+2. 在“**站点**”下，单击“**活动站点**”。
 3. 单击与团队关联的网站。
 4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 5. 如果在创建敏感标签时允许来宾共享，请确保选定“**新来宾和现有来宾**”。 如果创建标签时不允许共享，选择“**仅限组织中的人员**”。

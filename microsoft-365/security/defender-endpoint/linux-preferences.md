@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d39316b4377665b8269e352c853742a744dc517
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657095"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757326"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -77,7 +77,7 @@ ms.locfileid: "53657095"
 |说明|值|
 |---|---|
 |**键**|enableRealTimeProtection|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -98,7 +98,7 @@ ms.locfileid: "53657095"
 |说明|值|
 |---|---|
 |**键**|passiveMode|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。|
 |
@@ -177,7 +177,7 @@ ms.locfileid: "53657095"
 |说明|值|
 |---|---|
 |**键**|isDirectory|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 |
@@ -367,7 +367,7 @@ ms.locfileid: "53657095"
 |说明|值|
 |---|---|
 |**键**|enabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -416,7 +416,7 @@ ms.locfileid: "53657095"
 |说明|值|
 |---|---|
 |**键**|automaticDefinitionUpdateEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 |
 
@@ -470,6 +470,7 @@ ms.locfileid: "53657095"
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
+      "maximumOnDemandScanThreads":1,
       "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[

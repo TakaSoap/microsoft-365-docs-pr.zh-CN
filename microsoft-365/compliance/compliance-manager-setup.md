@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454013"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725824"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -72,9 +72,7 @@ ms.locfileid: "53454013"
 
 8. 分配完用户后，选择"完成"，然后选择"**保存**"，然后选择"**关闭"。**
 
-如果需要在 Microsoft 服务信任门户中访问经典版本的合规性管理器，服务信任门户中的管理员设置提供了另一种分配角色 ([查看](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) 说明) 。 请注意，此类角色的功能更加有限。
-
-##### <a name="more-about-azure-ad"></a>有关 Azure AD 的更多信息
+#### <a name="more-about-azure-ad"></a>有关 Azure AD 的更多信息
 
 若要在 Azure AD 中分配角色和设置权限，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给具有Azure Active Directory。
 

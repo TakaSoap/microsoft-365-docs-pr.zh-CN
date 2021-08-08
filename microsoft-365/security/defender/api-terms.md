@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365Defender API 许可证和使用条款
-description: Microsoft 365 Defender 中 API 的许可和使用条款的说明
+title: Microsoft 365 DefenderAPI 许可证和使用条款
+description: 应用程序内 API 的许可和使用条款Microsoft 365 Defender
 keywords: api， api， 许可， 条款， api， 法律， 通知， 行为准则
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b70311726b6c1c5bedf34a18ee1763255c93ba3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e40910defa4fba006cdfdd02f6eeebe53ce7006db2f2c99de88397027869237e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054901"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844243"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365Defender API 许可证和使用条款
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 DefenderAPI 许可证和使用条款
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51054901"
 
 ## <a name="official-terms"></a>正式条款
 
-Microsoft 365Defender API 受 Microsoft [API 许可证和使用条款约束](/legal/microsoft-apis/terms-of-use)。
+Microsoft 365 DefenderAPI 受[Microsoft API 许可证和使用条款约束](/legal/microsoft-apis/terms-of-use)。
 
 ## <a name="legal-notices"></a>法律声明
 
@@ -63,7 +63,7 @@ Microsoft 和任何参与者保留所有其他权利，无论是其各自的版�
 
 ### <a name="quotas-and-resource-allocation"></a>配额和资源分配
 
-Microsoft 365 Defender API 具有限制阈值。
+这些Microsoft 365 Defender API 具有限制阈值。
 
 - **事件 API：** 每分钟最多 50 个调用或每小时 1500 个调用。
 - **高级搜寻 API：** 每分钟最多 15 次调用，每小时 10 分钟运行时间，每天 4 小时运行时间。
@@ -74,6 +74,6 @@ Microsoft 365 Defender API 具有限制阈值。
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365Defender API 概述](api-overview.md)
+- [Microsoft 365 DefenderAPI 概述](api-overview.md)
 - [支持的 Microsoft 365 Defender API](api-supported.md)
-- [访问 Microsoft 365 Defender API](api-access.md)
+- [访问Microsoft 365 Defender API](api-access.md)

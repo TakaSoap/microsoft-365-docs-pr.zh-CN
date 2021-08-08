@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 472ed8f5e8e7ba3d0f277ce14b220f6ec466c9b9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b88dc4546a79a51a8094cefc236dae9892ff936a67915379ba9ff310b70b8a4b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800314"
 ---
 # <a name="get-recommendation-by-software"></a>按软件获取建议
 
@@ -59,7 +59,7 @@ GET /api/recommendations/{id}/software
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

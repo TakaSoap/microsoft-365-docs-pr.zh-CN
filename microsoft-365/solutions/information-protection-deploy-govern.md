@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用Microsoft 365保留标签和策略来管理你的Microsoft 365中的个人数据。
-ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06d3c19918d7e2963bffbb0f663971bbbbb209891f62ee9c83ebcc59b74e16d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843871"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私条例约束的信息
 
@@ -72,7 +72,7 @@ ms.locfileid: "50928432"
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>制定容器、电子邮件和内容的数据保留计划
 
-请注意下列事项：
+请注意以下几点：
 
 - 为定义的信息类型建立数据保留计划应被视为实施任何保留或删除方案的先决条件。
 

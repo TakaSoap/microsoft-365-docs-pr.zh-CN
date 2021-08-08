@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 48a51b8ec880726bdd2121f2eaf0d78f5cd6b3e0
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 4b2775bfe94eb53851e108ed7b7d436f233beea267b3485385801534748ef16c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844022"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨组织配置威胁防护Microsoft 365
 

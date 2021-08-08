@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: 计划程序Microsoft 365常见问题解答
-ms.openlocfilehash: 423660785e51a61cbff9fa2849b9466feddfc1c1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: bcbfd6431216f9c9d7d1e0c16de9bafddbfa8276af13b514f0107f6369e6c759
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800422"
 ---
 # <a name="scheduler-for-microsoft-365-faqs"></a>计划程序Microsoft 365常见问题解答
 
@@ -50,7 +50,7 @@ Outlook不需要在后台打开。 只需向邮件Cortana并依赖邮件执行�
 计划程序自动化使用 *findMeetingTimes* 服务来标识与会者和组织者可相互使用的时间。 此服务支持Outlook *会议表单中的* 建议时间Outlook体验。 忙/闲与会者信息不会明确用作忙/闲块。
 
 **问题：** 计划程序 GDPR 是否符合？ </br>
-可以。
+能。
 
 **问题**：Who是否有权访问Cortana邮箱？ </br>
 计划程序处理发送到租户的邮箱中的会议请求Cortana电子邮件。 除非根据租户管理员的请求通过密码箱审批，否则 Microsoft 对 Cortana 邮箱没有任何其他访问权限。

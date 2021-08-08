@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 240056565d88977aa7019f5a14e2db98a8dbb6db
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b1921b9cdd8e42cc83e2a8a0cda23965fd82a9f1
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933187"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725884"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -98,7 +98,7 @@ ms.locfileid: "52933187"
 
 保险箱链接扫描传入电子邮件中的已知恶意超链接。 扫描的 URL 使用 Microsoft 标准 URL 前缀重写 `https://nam01.safelinks.protection.outlook.com` ：。 重写链接后，将分析潜在恶意内容。
 
-在保险箱链接重写 URL 之后，即使手动将邮件转发或答复给内部和外部收件人， ( URL 仍然重写) 。 不会重写添加到转发或答复邮件的其他链接。 但是，在收件箱规则或SMTP 转发自动转发的情况下，不会在发送给最终收件人的邮件中重写 URL，除非该收件人还受 保险箱 链接或URL 已在以前的通信中重写。 
+在保险箱链接重写 URL 之后，即使手动将邮件转发或答复给内部和外部收件人， ( URL 仍然重写) 。 不会重写添加到转发或答复邮件的其他链接。 但是，在收件箱规则或SMTP 转发自动转发的情况下，不会在发送给最终收件人的邮件中重写 URL，除非该收件人还受 保险箱 链接或URL 已在以前的通信中重写。 重写的 URL 仅适用于 HTML 电子邮件，因为重写 URL 会使格式和纯文本 URL 不可读，但在传递之前仍将扫描这些 URL。 在 Outlook 桌面版 16.0.12513 或更高版本中单击时，客户端 API 对 保险箱 链接的调用仍将检查包含 URL 的富文本和纯文本电子邮件。
 
 以下列表保险箱电子邮件的链接策略中的设置：
 
@@ -158,9 +158,6 @@ ms.locfileid: "52933187"
    - 如果确定 URL 是安全的，将打开网站。
 
 ## <a name="safe-links-settings-for-microsoft-teams"></a>保险箱链接设置Microsoft Teams
-
-> [!IMPORTANT]
-> 自 2020 年 3 月起，此功能为预览版，仅提供给 Microsoft Teams Technology Adoption Program (TAP) 。 有关发布计划的信息，请查看Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)。
 
 在链接策略中保险箱或禁用Microsoft Teams链接保险箱保护。 具体来说，使用"**选择用于未知或潜在** 恶意 URL 的操作"设置Microsoft Teams URL。 建议的值是 **On**。
 
@@ -259,7 +256,7 @@ ms.locfileid: "52933187"
 
 您可以在全局设置中为"链接"配置保险箱列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**：
+**注意**:
 
 - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
 - 阻止以下 **URL 列表** 的限制：
@@ -281,7 +278,7 @@ ms.locfileid: "52933187"
 
 |值|结果|
 |---|---|
-|`contoso.com` <p> 或 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com` `https://sub.contoso.com` 、 和 `https://contoso.com/abc` 被阻止。|
+|`contoso.com` <p> 或者 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com` `https://sub.contoso.com` 、 和 `https://contoso.com/abc` 被阻止。|
 |`https://contoso.com/a`|阻止 `https://contoso.com/a` 但不阻止其他子路径（如 `https://contoso.com/a/b` ）。|
 |`https://contoso.com/a*`|块 `https://contoso.com/a` 和其他子路径（如 `https://contoso.com/a/b` ）。|
 |`https://toys.contoso.com*`|阻止此示例中 (`toys` 子域) 但允许单击其他域 URL (或 `https://contoso.com` `https://home.contoso.com`) 。|
@@ -296,7 +293,7 @@ ms.locfileid: "52933187"
 
 若要将条目添加到新列表或现有链接保险箱，请参阅 Create 保险箱 Links [policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)或 Modify 保险箱[Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**：
+**注意**:
 
 - 以下客户端无法识别"不重写链接"**策略** 中的保险箱 URL 列表。 根据以下客户端中链接扫描的结果，可阻止包含在保险箱中的用户访问 URL：
   - Microsoft Teams

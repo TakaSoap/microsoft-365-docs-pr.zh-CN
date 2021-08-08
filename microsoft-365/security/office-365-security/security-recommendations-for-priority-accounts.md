@@ -20,12 +20,12 @@ ms.collection:
 description: 管理员可以了解如何提升安全设置，并使用报告、警报和调查，以在组织中Microsoft 365帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1cf813706a5fc0180ed36943c6bc7ae54e35ae346aba3d2b0251489e05cc715b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844089"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>针对企业中的优先级帐户的安全Microsoft 365
 

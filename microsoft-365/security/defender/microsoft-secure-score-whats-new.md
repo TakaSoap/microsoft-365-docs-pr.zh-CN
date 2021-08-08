@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8d16d4640a926697363e7bb7588d80a8c28439df
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ca71b8431972085d2e4b13d0669219a9187246e6
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541981"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726148"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -38,7 +38,16 @@ Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/s
 
 ## <a name="july-2021"></a>2021 年 7 月
 
+### <a name="added-improvement-action-related-to-microsoft-teams"></a>添加了与项目相关的改进Microsoft Teams
+
+- 限制拨入用户绕过会议厅
+- 限制外部参与者在会议Teams控制
+- 限制匿名用户启动Teams会议
+- 要求为会议设置Teams大厅
+- 配置允许哪些用户参加Teams会议
+
 ### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>添加了与 Microsoft Defender for Endpoint 相关的改进操作
+
 - 修复适用于 macOS 的 Microsoft Defender for Endpoint 传感器数据收集
 - 修复 MacOS 的终结点通信受损的 Microsoft Defender
 - 在 macOS 中将最小密码长度设置为 15 个或多个字符

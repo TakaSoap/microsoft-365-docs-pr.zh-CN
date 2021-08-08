@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 25417a883ef281c2c5104046b016446c9d89707e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a2e4e01ebb90389f02b7e141a7412927319135e94b63536f19ec0dea8754a262
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800362"
 ---
 # <a name="get-file-statistics-api"></a>获取文件统计信息 API
 
@@ -69,7 +69,7 @@ GET /api/files/{id}/stats
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 

@@ -17,35 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
-ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
-ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+ms.openlocfilehash: c19655e3cd509d141878e8d917d248cc2ce42aa5
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53330937"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757242"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
 **本文内容：** 了解什么是合规性管理器，它如何有助于简化合规性和降低风险及其关键组件。
 
-## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的 GA 版本
+## <a name="what-is-compliance-manager"></a>什么是合规性管理器？
 
-合规性管理器现已 (GA) 作为内部端到端合规性[管理解决方案](microsoft-365-compliance-center.md)Microsoft 365 合规中心。 在此版本中，合规性管理器完成从以前位置到 Microsoft 服务信任门户的转换。 合规性管理器还可用于美国政府国防Community (GCC) 、GCC和国防部 (DoD) 客户。
-
-从合规性分数的公共预览版开始，它已发展为具有增强的合规性管理功能和更好的易用性的集中式工具。  GA 版本提供更大的预建评估集合，可帮助你扩展合规性活动。
-
-**详细了解 GA 版本：**
-- 我们的 [常见问题将](compliance-manager-faq.yml) 详细介绍发展过程。
-- 阅读此博客文章中的 GA [功能增强功能](https://aka.ms/compliancemanager/GAblog)。
+[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager)是 Microsoft 365 合规中心一[](microsoft-365-compliance-center.md)项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你在整个合规性旅程中，从清点数据保护风险到管理实施控制措施的复杂性、及时获得法规和认证，以及向审核员报告。
 
 观看下面的视频，了解合规性管理器如何有助于简化组织管理合规性的情况：
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
-
-## <a name="what-is-compliance-manager"></a>什么是合规性管理器
-
-[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager)是 Microsoft 365 合规中心一[](microsoft-365-compliance-center.md)项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你在整个合规性旅程中，从清点数据保护风险到管理实施控制措施的复杂性、及时获得法规和认证，以及向审核员报告。
 
 合规性管理器通过提供：
 

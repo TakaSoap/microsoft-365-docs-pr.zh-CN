@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何创建协作管理计划
-ms.openlocfilehash: c371d97c211275ffb1019e6f6dfc165295ed729f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 062648ca2e4eb2c3909b38d376f568df726ac2bef3abb5b82b1e86db879a1887
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53843979"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>创建协作管理计划
 
@@ -65,7 +65,7 @@ Microsoft 365应补充管理本地环境的现有策略。 但是，由于云提
 
 ## <a name="think-about-governance-first"></a>首先考虑治理
 
-对 Microsoft 365 的投资仅与启用的内容和体验的价值一样好，因此在旅程开始时考虑治理可确保在有机会了解和评估每个决策的含义之前，不会锁定或启用太多。 你可以为各个网站和团队打开多个"Microsoft 365和拨号"。 有效的治理计划对于实现业务目标至关重要，但治理与平衡风险与优势有关。 如果我们锁定所有内容，人们将找到一种处理规则的方法（如果他们需要这样做来完成工作）。
+对 Microsoft 365 的投资仅与启用的内容和体验的价值一样好，因此在旅程开始时考虑治理可确保在有机会了解和评估每个决策的含义之前，不会锁定或启用太多。 你可以为各个网站和团队启用多个"Microsoft 365 管理中心和拨号"。 有效的治理计划对于实现业务目标至关重要，但治理与平衡风险与优势有关。 如果我们锁定所有内容，人们将找到一种处理规则的方法（如果他们需要这样做来完成工作）。
 
 首先考虑治理，可以：
 

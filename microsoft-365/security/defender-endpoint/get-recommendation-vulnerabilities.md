@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 79861b93c00cd058d3a9ee50d324b4a1fd079614
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 74c47c8e9e4e6f46802c64df0d987ae123ed727cde05b520847c94fcfc7fd349
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800302"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>按建议列出漏洞
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
