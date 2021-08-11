@@ -14,48 +14,50 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: c4cdc83d41a888fbf395d2c13e442bbaaf7da54e
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 12c90a2caea7d27713cc9dad0be11894d84b19b3245e07046a8ed7b2451db601
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621675"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520421"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
 开始使用 Microsoft Cloud App Security 的应用治理附加产品:
 
-1. 验证账户是否有 [适当的许可级别](#licensing-for-app-governance)。应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为下面列出的各种许可证包的一部分存在于帐户中。
-1. 你必须具有下面列出的 [管理员角色](#administrator-roles) 之一才能访问门户中的应用治理页面。
-1. 组织的租户注册必须位于 [受支持的北美、欧洲或非洲区域](app-governance-countries.md) 之一。
+1. 验证帐户是否具有 [适当的许可级别](#licensing-for-app-governance)。 应用治理是 Microsoft Cloud App Security (MCAS) 的附加功能，因此 MCAS 必须作为独立产品或作为各种许可证包的一部分存在于帐户中。
+1. 必须具有下面列出的 [管理员角色](#administrator-roles) 之一才能访问门户中的应用治理页面。
+1. 组织的帐单地址必须在[北美、欧洲或非洲的支持地区](app-governance-countries.md) 之一，以便激活免费试用。
 
-## <a name="add-app-governance-to-your-microsoft-365-account"></a>将应用治理添加到你的 Microsoft 365 帐户
+## <a name="sign-up-for-free-trial-of-app-governance"></a>注册免费试用的应用程序治理
 
-对于新的 Microsoft 365 客户：
+对于新的 Microsoft 365 客户:
 
-1. 在此页面顶部，单击“ **免费账户**”  按钮。
-1. 在  **试用 Microsoft 365 商业版** 下，  单击“ **免费试用 1 个月**”。
+1. 在此页面顶部，选择  **“免费账户”**  按钮。
+1. 在  **试用 Microsoft 365 商业版** 下选择 **“免费试用 1 个月”**。
 1. 完成注册步骤。
+1. 继续执行现有 Microsoft 365 客户的步骤。
 
 对于现有的 Microsoft 365 客户：
 
-1. 在 Microsoft 365 管理中心中，导航到“ **计费**” > “**购买服务**” ，然后单击“ **附加产品**”。 使用搜索栏查找 **应用治理**。
-1. 在应用治理卡片中，单击“ **详细信息**”。
-1. 单击“ **激活开始免费试用**”。
+1. 导航到 [“免费试用注册页”](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)。 
+1. 完成添加应用程序治理的步骤。 注册很简单，如下图所示。
 
-## <a name="add-integration-with-mcas"></a>添加与 MCAS 的集成 
+:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="在账户中添加应用治理的简单步骤":::
+
+## <a name="add-integration-with-mcas"></a>添加与 MCAS 的集成
 
 先决条件：
 
 - Office 365 已在云应用安全中连接
 - Office 365 Azure AD 应用已启用
 
-要启用与云应用安全的应用治理同步，请执行以下步骤：
+要启用与云应用安全的应用治理同步，请执行以下步骤:
 
 1. 转到 Microsoft Cloud App Security 门户 - [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. 单击齿轮图标（右上角），然后选择“**设置**”。
+1. 选择齿轮图标（右上角），然后选择“**设置**”。
 1. 在 **威胁防护** 下，选择“**应用治理**”。
-1. 单击“**启用应用治理集成**”，然后选择“**保存**”。
+1. 选择“**启用应用治理集成**”，然后选择“**保存**”。
 
 接下来，查看 MCAS 中新启用的策略。 启用集成后，新策略可能需要几分钟才能显示。
 
@@ -64,8 +66,8 @@ ms.locfileid: "53621675"
 - Microsoft 365 OAuth 应用治理
 - 在 MCAS 仪表板中查看应用治理小组件
 - 查看 MCAS 警报中新生成的应用治理警报
-- 查看应用治理策略列表中的 MCAS M365 OAuth 策略
-- 在应用治理警报中查看新生成的 MCAS M365 OAuth 警报
+- 查看应用治理策略列表中的 MCAS Microsoft 365 OAuth 策略
+- 在应用治理警报中查看新生成的 MCAS Microsoft 365 OAuth 警报
 
 ## <a name="licensing-for-app-governance"></a>应用治理许可
 
@@ -147,4 +149,3 @@ ms.locfileid: "53621675"
 应用治理团队已确定预览版的以下已知问题： 
 
 - Microsoft Defender 和应用治理警报之间的双向同步 - 目前，在 Defender 中已解决的警报也必须在应用治理中手动解决。
-- 对于某些用户，应用用户和使用情况选项卡中的优先级帐户见解将无法按预期工作。

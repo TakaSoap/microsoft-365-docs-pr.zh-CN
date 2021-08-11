@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: c2de2d8b75aaf50bd1d19d3fd3b507fd476d4847
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a0a92b7401bd78d80ebcf7c98e4e2e4417a15333769685a2b68bbfe47727b0c4
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393927"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520347"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
 
@@ -154,7 +154,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 - 在更改 NS 记录之前，Microsoft 365域的所有电子邮件地址进行移动。
 
-- 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向网站记录后，用户仍可访问Microsoft 365。
+- 想要添加当前与网站地址一同使用的域，如 `https://www.fourthcoffee.com` ？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向网站记录后，用户仍可访问Microsoft 365。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 

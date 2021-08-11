@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edad9446575ae1165f9268de1bb61ed7cc2f4893
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 362e0f20b23068027e65199f3800bd4f315ec2a0
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53653015"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53757374"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -123,7 +123,7 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
-      以上输出是性能问题的主要参与者的列表。 第一列是 PID (的进程标识符) ，第二列是 te 进程名称，最后一列是扫描的文件数，按影响排序。
+      以上输出是性能问题的主要参与者的列表。 第一列是 PID (的进程标识符) ，第二列是进程名称，最后一列是扫描的文件数，按影响排序。
     例如，该命令的输出如下所示： 
 
     ```Output

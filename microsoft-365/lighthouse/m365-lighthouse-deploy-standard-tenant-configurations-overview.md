@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse使用基线部署标准租户配置。
-ms.openlocfilehash: ff3fb21e71195f9614870b8e3c65c92ee11fdf69
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 1daaeba481f65018eaa9f82f9ef889c7e5dbd3e7fffb4421ae24aa1facf39354
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409173"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800770"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>使用基线部署标准租户配置的概述 
 
@@ -44,7 +44,7 @@ Microsoft 365 Lighthouse工作负载的标准基线配置旨在帮助所有托�
 |--|--|
 | 要求管理员使用 MFA | 仅报告条件访问策略，要求对管理员进行多重身份验证。 所有云应用程序都需要它。 |
 | 要求最终用户使用 MFA | 仅报告条件访问策略，要求用户进行多重身份验证。 所有云应用程序都需要它。 |
-| 阻止传统身份验证 | 用于阻止旧客户端身份验证的仅报告条件访问策略。 |
+| 阻止旧身份验证 | 用于阻止旧客户端身份验证的仅报告条件访问策略。 |
 | 在 Azure AD Microsoft Endpoint Manager注册设备 | 设备注册，允许租户设备注册Microsoft Endpoint Manager。 这是通过设置自动注册在 Azure Active Directory 和 Microsoft Endpoint Manager。 |
 | 防病毒 (AV) 策略配置 | 具有预配置Windows配置的设备配置配置文件Microsoft Defender 防病毒配置文件。 |
 | 窗口 10 合规性策略设置 | 一Windows预配置设置的设备策略，以满足基本合规性要求。 |

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 28260c5c34663254e9ee6f238e98259caf68e8f002d1c8572e448fcecbbde963
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007656"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803220"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与用户界面Microsoft Defender 防病毒交互
 
@@ -40,7 +40,7 @@ ms.locfileid: "53007656"
 
 将设置设置为"**已启用"：**
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows 安全中心防护图标以及病毒和威胁防护部分":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图":::
 
 将设置设置为"已 **禁用"** 或未配置：
 

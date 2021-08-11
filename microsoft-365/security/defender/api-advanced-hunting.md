@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365Defender 高级搜寻 API
-description: 了解如何使用 Defender 的高级搜寻 API Microsoft 365高级搜寻查询
+title: Microsoft 365 Defender高级搜寻 API
+description: 了解如何使用 Microsoft 365 Defender 高级搜寻 API 运行高级搜寻查询
 keywords: 高级搜寻， API， api， M365 Defender， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4064a2d4469fb842a6446c1a869de44a48f2b627cdb25ae4f7999a255c3d04f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792910"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender 高级搜寻 API
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高级搜寻 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52769581"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[高级搜寻](advanced-hunting-overview.md)是一种威胁搜寻工具，它[](advanced-hunting-query-language.md)使用专门构造的查询来检查 Microsoft 365 Defender 中过去 30 天的事件数据。 可以使用高级搜寻查询来检查异常活动、检测可能的威胁，甚至响应攻击。 高级搜寻 API 允许你以编程方式查询事件数据。
+[高级搜寻](advanced-hunting-overview.md)是一种威胁搜寻工具，它[](advanced-hunting-query-language.md)使用专门构造的查询来检查过去 30 天内Microsoft 365 Defender。 可以使用高级搜寻查询来检查异常活动、检测可能的威胁，甚至响应攻击。 高级搜寻 API 允许你以编程方式查询事件数据。
 
 ## <a name="quotas-and-resource-allocation"></a>配额和资源分配
 
@@ -56,7 +56,7 @@ ms.locfileid: "52769581"
 
 ## <a name="permissions"></a>权限
 
-调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅访问[Microsoft 365 Defender 保护 API](api-access.md)
+调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅访问 Microsoft 365 Defender[保护 API](api-access.md)
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
@@ -179,7 +179,7 @@ response 对象包含三个顶级属性：
 
 ## <a name="related-articles"></a>相关文章
 
-- [访问 Microsoft 365 Defender API](api-access.md)
+- [访问Microsoft 365 Defender API](api-access.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)
 - [高级搜寻概述](advanced-hunting-overview.md)

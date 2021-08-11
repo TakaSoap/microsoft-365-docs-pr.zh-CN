@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 摘要：了解 PowerShell for Microsoft 365 的价值、如何连接到 Microsoft 365 租户以及获取帮助的地方。
-ms.openlocfilehash: 850d3eea1aa23937bf30795784405119ef6c167c
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 07d40ef94d72c3d12ff305d329c43d11859fd752b701c670282ce4fefe5cab08
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801058"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>PowerShell for Microsoft 365 入门
 

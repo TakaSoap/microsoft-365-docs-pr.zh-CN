@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 摘要：介绍了本地和混合Exchange SSO、使用 AD FS 的 SSO、Exchange Online 服务和 Exchange 所需的 SSL 证书。
-ms.openlocfilehash: f2505a40e87ab36c96c0ed24514420b56d1479d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 041365e1da16a92dc1a5262909c8871f62b22902931f45867cf1fa65c6f5e89b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800782"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>规划 Microsoft 365 的第三方 SSL 证书
 

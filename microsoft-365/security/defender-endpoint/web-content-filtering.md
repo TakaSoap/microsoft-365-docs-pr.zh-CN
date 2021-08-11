@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a24797d39ece34d615dde26811da8b7d7d2b9a6d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 21b2f8b4766cd4596774a7e42a44de561686e7605ff12fe31fc5e571bc29b510
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844659"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -43,17 +43,13 @@ Web 内容筛选是 Microsoft Defender for Endpoint 中的 [Web](web-protection-
 
 配置跨设备组的策略以阻止某些类别。 阻止类别会阻止指定设备组内的用户访问与该类别关联的 URL。 对于未阻止的任何类别，将自动审核 URL。 用户无需中断即可访问 URL，并且你将收集访问统计信息以帮助创建更自定义的策略决策。 如果用户正在查看的页面上的元素正在调用阻止的资源，则会看到阻止通知。
 
-Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Blocks 和 Opera) 执行) 。 有关浏览器支持的信息，请参阅先决条件部分。
+Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defender SmartScreen (Microsoft Edge) 和网络保护 (Chrome、Firefox、Filtering 和 Opera) 执行) 。 有关浏览器支持的信息，请参阅先决条件部分。
 
 总结优点：
 
 - 阻止用户访问被阻止类别的网站，无论他们是在内部浏览还是离开
 - 安全团队可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，便捷地将策略 [部署到用户组](/microsoft-365/security/defender-endpoint/rbac)
 - 安全团队可以访问位于相同中心位置的 Web 报告，并查看实际块和 Web 使用情况
-
-## <a name="user-experience"></a>用户体验
-
-第三方支持的浏览器的阻止体验由网络保护提供，它提供系统级 Toast 以通知用户阻止的连接。 为获得更用户友好的浏览器内体验，请考虑使用Microsoft Edge。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -64,6 +60,9 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 - 运行 Windows 10 周年更新 (版本 1607) 或更高版本使用最新的 MoCAMP 更新。
 - Windows DefenderSmartScreen 和网络保护已启用。
 
+## <a name="user-experience"></a>用户体验
+
+第三方支持的浏览器的阻止体验由网络保护提供，它提供一个系统级 Toast，以通知用户阻止的连接。 为获得更用户友好的浏览器内体验，请考虑使用Microsoft Edge。
 
 ## <a name="data-handling"></a>数据处理
 
@@ -108,13 +107,19 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 3. 将策略操作设置为 **"允许"。**  
 
-### <a name="reporting-inaccuracies"></a>报告不准确之处
+### <a name="dispute-categories"></a>争议类别
 
-如果遇到未正确分类的域，可以直接从"Web 内容筛选报告"页向我们报告不准确之处。 此功能仅在新安全中心Microsoft 365可用 (security.microsoft.com) 。
+如果遇到未正确分类的域，可以直接在门户中就类别进行争议。 
 
-若要报告不准确的信息，请导航到"报告  >  **Web 保护 Web** 内容  >  **筛选详细信息**  >  **域"。** 在我们的 Web 内容筛选报表的"域"选项卡上，你将在每个域旁边看到一个省略号。 将鼠标悬停在此省略号上，然后选择 **"报告 Inaccuracy"。**
+要争议域的类别，请导航 **到"报告** Web 保护 Web 内容  >    >  **筛选详细信息** 域  >  **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
 
 将打开一个面板，您可以在其中选择优先级并添加其他详细信息，例如建议用于重新分类的类别。 完成表单后，选择"提交 **"。** Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
+
+### <a name="url-category-lookup"></a>URL 类别查找
+
+若要确定网站的类别，可以使用网站门户或网站上提供的 URL https://security.microsoft.com) Microsoft 365 Defender (。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+
+![Web 内容筛选类别查找结果的图像](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web 内容筛选卡和详细信息
 
@@ -158,7 +163,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>此预览版中的限制和已知问题
 
-- 如果你Microsoft Edge操作系统配置是 Server (  >  **systeminfo** OS Configuration) ，则仅支持此  >  ) 。 网络保护仅在服务器设备的检查模式下受支持，它负责保护跨受支持的第三方浏览器的流量。
+- 如果你Microsoft Edge操作系统配置是 Server (  >  **systeminfo** OS Configuration) ，则仅支持此  >  ) 。 网络保护仅在服务器设备的"检查"模式下受支持，它负责保护受支持的第三方浏览器上的流量。
 
 - 未分配的设备将在报告内显示不正确的数据。 在"**报告详细信息**  >  **""** 设备组透视表"中，你可能会看到一个包含空白"设备组"字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
 

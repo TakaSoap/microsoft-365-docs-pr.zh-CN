@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: acbad7a1c5fa541ee83da668768cc42af7a5afda
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 9ef0495b1eae033a6a7cc8b6929344967ea4591c165ea647923afd3bb5daefb9
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464005"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803172"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -40,6 +40,76 @@ ms.locfileid: "53464005"
 > - [Microsoft 365 Defender 的新增功能](../security/defender/whats-new.md)
 >
 > 请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)，了解Microsoft 365、即将推出、正在开发、已取消或以前发布的新功能。
+
+## <a name="july-2021"></a>2021 年 7 月
+
+### <a name="advanced-ediscovery"></a>高级电子数据展示
+
+- [Advanced eDiscovery使用大Microsoft Teams](teams-workflow-in-advanced-ediscovery.md)中的内容创建工作流添加了一个端到端工作流，用于管理Teams中 Advanced eDiscovery的内容;包括有关新对话脚本功能的预览的详细信息。
+- [使用大Advanced eDiscovery](advanced-ediscovery-large-cases.md)添加了新大写格式的预览，该预览扩展了审阅集和事例限制，并支持 Teams 和 Yammer 对话的对话脚本。
+
+### <a name="app-governance"></a>应用治理
+
+- 适用于[MCAS Microsoft Cloud App Security (](app-governance-manage-app-governance.md)管理) 已进入公共预览阶段。 应用管理可监视 M365 租户中基于 OAUth 的应用，并针对可能表示恶意软件或权限级别不当的活动生成警报。
+
+### <a name="compliance-offerings"></a>合规性产品/服务
+
+- [合规性产品](/compliance/regulatory/offering-home) /服务更改侧重于适用的服务范围和更新，以便与 [适用法规的 Azure](/azure/compliance) 产品/服务更加一致。
+
+### <a name="compliance--service-assurance"></a>合规性&服务保证
+
+- [服务保证](/compliance/) (更新;每季度查看内容更新，获取认证和适用性) 
+    - 云背景检查
+    - 员工转移&终止
+    - 管控
+    - 人力资源
+    - 事件管理
+    - 岗前调查
+    - 安全事件管理 (SIM 卡) 
+    - SIM – 抑制、抑制和恢复
+    - SIM – 检测&分析
+    - SIM – 事件后报告
+    - SIM – 准备
+    - 租户隔离
+
+### <a name="data-classification"></a>数据分类
+
+- [了解数据分类](data-classification-overview.md)。 针对 GA 发布的可训练分类器进行了更新。
+
+### <a name="data-loss-prevention"></a>数据丢失防护
+
+- [了解终结点Microsoft 365数据丢失防护](endpoint-dlp-learn-about.md)添加了有关设备始终审核文件活动的更新指导。
+- [开始使用针对](dlp-on-premises-scanner-get-started.md) GA 版本更新的数据丢失防护本地扫描程序。
+- [了解针对 GA Microsoft 365更新](dlp-on-premises-scanner-learn.md)的数据丢失防护本地扫描程序。
+- [使用Microsoft 365 GA](dlp-on-premises-scanner-use.md)版本更新的数据丢失防护本地扫描程序。
+- [对针对](dlp-use-policies-non-microsoft-cloud-apps.md) GA 版本和 MIP-MCAS 集成更新的非 Microsoft 云应用使用数据丢失防护策略。
+
+### <a name="insider-risk-management"></a>内部风险管理
+
+- [调查内部风险管理活动](insider-risk-management-activities.md) 为新的用户活动报告和新的消除多个警报预览功能添加了内容更新。
+- [开始使用内部风险管理设置](insider-risk-management-settings.md) 添加了新 RBAC 功能的内容更新，以选择优先用户组预览功能的审阅者。
+
+### <a name="privacy-management"></a>隐私管理
+
+- Microsoft [隐私管理](privacy-management.md) 已进入公共预览阶段。 隐私管理可帮助你的组织了解和管理你的Microsoft 365、修正潜在的隐私风险以及履行主体权利请求。
+
+### <a name="retention-and-records-management"></a>保留和记录管理
+- 预览版[：Teams](create-retention-policies.md#retention-policy-for-teams-locations)保留策略现在支持私人频道作为Teams或编辑保留策略时的新频道位置
+- 导入 [文件计划的说明](file-plan-manager.md#import-retention-labels-into-your-file-plan) 已更新，以包含每个条目的法规记录和依赖关系
+
+### <a name="sensitive-information-types"></a>敏感信息类型
+
+添加了以下页面：
+
+- [自定义敏感信息类型筛选器参考](sit-custom-sit-filters.md)
+- [使用 PowerShell 修改自定义敏感信息类型](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
+- [使用 PowerShell 删除自定义敏感信息类型](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
+
+### <a name="sensitivity-labels"></a>敏感度标签
+- 可训练分类器现已在 GA () 中普遍可用，可用于 Office [Windows](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)应用和 (Office Online) 
+- 强制标签现在扩展到预览Power BI ([中) ](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
+- 对于 [使用敏感度标签加密]( sensitivity-labels-coauthoring.md)的文件共同创作：推出对使用敏感度标签作为条件和未加密电子邮件附件的 DLP 策略的支持
+- 现在，Outlook macOS、iOS 和 Android 提供审核事件，并推出适用于 Outlook 网页版
 
 ## <a name="june-2021"></a>2021 年 6 月
 
@@ -215,7 +285,7 @@ Outlook版本和更新：
 
 在下列主题中添加或更新了内容：
 
-- [内容浏览器入门](/microsoft-365/compliance/data-classification-content-explorer)
+- [内容资源管理器入门](/microsoft-365/compliance/data-classification-content-explorer)
 - [数据分类发行说明](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>数据丢失防护
@@ -224,8 +294,8 @@ Outlook版本和更新：
 
 - [了解 Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [发送电子邮件通知并显示 DLP 策略的策略提示](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [了解Microsoft 365数据丢失防护本地扫描程序](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [数据丢失防护本地扫描程序入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [了解本地扫描程序Microsoft 365数据丢失防护](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [本地扫描程序数据丢失防护入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [创建 DLP 策略来保护具有 FCI 或其他属性的文档](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
 - [使用终结点数据丢失防护](/microsoft-365/compliance/endpoint-dlp-using)
 - [终结点数据丢失防护入门](/microsoft-365/compliance/endpoint-dlp-getting-started)
@@ -276,22 +346,3 @@ Outlook版本和更新：
 
 - **SharePoint外部共享**。 对于[容器标签](sensitivity-labels-teams-groups-sites.md)，外部共享选项SharePoint现在发布为公开发布。 此外，Microsoft 365 管理中心和 Planner 现在支持应用这些敏感度标签。 
 - **共同创作和自动保存**。 对 [加密文件共同创作](sensitivity-labels-coauthoring.md) 和自动保存的支持发布为预览版，用于测试非生产租户。
-
-## <a name="january-2021"></a>2021 年 1 月
-
-### <a name="support-for-card-content-in-teams"></a>支持卡片内容Teams
-
-以下Microsoft 365合规性解决方案现在支持检测通过邮件中的应用生成的Teams[](/microsoftteams/platform/task-modules-and-cards/what-are-cards)内容：
-
-- **核心和Advanced eDiscovery**。 现在可以将卡片内容[置于保留](create-ediscovery-holds.md#preserve-card-content)状态或包含在搜索 ([](/microsoftteams/ediscovery-investigation#search-for-card-content)内容搜索以及) 。
-- **审核**。 卡片活动现在[记录到审核日志。](/microsoftteams/audit-log-events#teams-activities)
-- **保留策略**。 现在可以使用保留策略 [来保留和删除卡片内容](retention-policies-teams.md#whats-included-for-retention-and-deletion)。
-
-### <a name="information-governance-and-records-management"></a>信息管理和记录管理
-
-[用于解决](retention-regulatory-requirements.md#new-zealand-public-records-act) 使用信息管理和记录管理以帮助履行新西兰公共记录法案的合规性义务的新评估。
-
-### <a name="sensitivity-labels"></a>敏感度标签
-
-- 敏感度标签现在支持美国政府租户 (GCC GCC-H) 。
-- macOS [的新](sensitivity-labels-office-apps.md) 自动标记支持。

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器中可用的标签活动列表。
-ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6dbfe8341e714c49795d8aaf7991988bec901496bf28b2bbd4d4711bdbd81c23
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532250"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520479"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>活动资源管理器中可用的标记活动
 
@@ -39,7 +39,7 @@ ms.locfileid: "52532250"
 |源  |在活动资源管理器中报告 | 注释  |
 |---------|---------|---------|
 | Word、Excel、PowerPoint|是 |
-|Outlook| 是 |从 Win 32 |
+|Outlook| 是 | |
 |SharePoint联机，OneDrive|是 | |
 |Exchange        |是         | |
 |Azure 信息保护 (AIP) 统一客户端和 AIP 统一扫描程序 |是 |AIP *新标签* 操作映射到活动 *资源管理器中* 应用的标签   |
@@ -63,7 +63,7 @@ ms.locfileid: "52532250"
 |源  |在活动资源管理器中报告|注释  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
-|Outlook         |是         |Win 32|
+|Outlook         |是         |
 |SharePoint联机、OneDrive         |是         |
 |Exchange         |是         |
 |AIP 统一客户端         |是         |
@@ -84,7 +84,7 @@ ms.locfileid: "52532250"
 |源  |在活动资源管理器中报告 | 注释  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
-|Outlook         |是         |Win 32|
+|Outlook         |是         ||
 |SharePoint联机、OneDrive         |是         |
 |Exchange         |是         |
 |AIP 统一客户端         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作|

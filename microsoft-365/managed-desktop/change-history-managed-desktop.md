@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 38c4d1ed871027157488d8d721d7cc80c685c07b966c171c5a0c9a1c693c76b6
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779851"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834496"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本文列出了本文中新增和更新Microsoft 托管桌面[文章](index.yml)。 "已更新"的文章有重大新增内容或更正，例如拼写错误、样式或格式设置问题的更正未列出。 你始终可以查看特定提交历史记录， (访问上存储库) 更改[GitHub的详细信息](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+
+## <a name="july-2021"></a>2021 年 7 月
+新增或已更改的文章 | 说明
+--- | ---
+[设备图像](service-description/device-images.md)| 更新的文章
+[修复准备情况评估工具发现的问题](get-ready/readiness-assessment-fix.md) | 更新的文章
+[Microsoft 托管桌面角色和责任](intro/roles-and-responsibilities.md) | 更新的文章
+[启用用户支持功能](get-started/enable-support.md) | 新增文章
+[启用企业状态漫游](get-started/enterprise-state-roaming.md) | 更新的文章
+[Microsoft 托管桌面和 Windows 11](intro/win11-overview.md) | 新增文章
+[使用 Microsoft 托管桌面预览和测试 Windows 11](working-with-managed-desktop/test-win11-mmd.md) | 新增文章
+[合作伙伴注册设备的步骤](get-started/register-devices-partner.md) | 更新的文章
+[自行注册新设备](get-started/register-devices-self.md) |更新的文章
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
+[使用 Autopilot 和注册状态页的首次运行体验](get-started/esp-first-run.md) | 更新的文章
+[Microsoft 托管桌面操作和监视](service-description/operations-and-monitoring.md) | 更新的文章
+[获取针对用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+
+## <a name="june-2021"></a>2021 年 6 月
+新增或已更改的文章 | 说明
+--- | ---
+[处理报告](working-with-managed-desktop/reports.md) | 更新的文章
+[概述](service-description/privacy-personal-data.md) | 更新的文章
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
+[修复准备情况评估工具发现的问题](get-ready/readiness-assessment-fix.md) | 更新的文章
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
+[启用企业状态漫游](get-started/enterprise-state-roaming.md) | 更新的文章
 
 ## <a name="may-2021"></a>2021 年 5 月
 新增或已更改的文章 | 说明
@@ -70,7 +98,7 @@ ms.locfileid: "52779851"
 [设备要求](service-description/device-requirements.md) | 更新的文章
 [修复准备情况评估工具发现的问题](get-ready/readiness-assessment-fix.md) | 更新的文章
 [Microsoft OneDrive](get-started/onedrive.md) | 新增文章
-[合规性](intro/compliance.md) | Updated
+[合规性](intro/compliance.md) | 更新日期
 [Microsoft 365 企业应用版](get-started/m365-apps.md) | 更新的文章
 [准备情况评估工具](get-ready/readiness-assessment-tool.md) | 更新的文章
 
@@ -217,7 +245,7 @@ Windows 安全更新见解| 新增文章
 ## <a name="january-2020"></a>2020 年 1 月
 新增或已更改的文章 | 说明
 --- | ---
-[为用户做好使用设备的准备](get-started/get-started-devices.md)| 更新的文章
+[让用户做好使用设备的准备](get-started/get-started-devices.md)| 更新的文章
 [在管理门户中添加和验证管理员联系人](get-started/add-admin-contacts.md) | 更新的文章
 [设备配置](service-description/device-policies.md) | 更新的文章
 
@@ -240,7 +268,7 @@ Windows 安全更新见解| 新增文章
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
 [Microsoft 托管桌面主页](./index.yml) | 更新的文章
 [什么是 Microsoft 托管桌面？](./intro/index.md) | 更新的文章
-[为用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的文章
+[让用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的文章
 [服务计划的例外情况](service-description/customizing.md) | 更新的文章
 
 

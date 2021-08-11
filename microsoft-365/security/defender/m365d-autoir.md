@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender 中的自动调查和响应
-description: 大致了解 Microsoft 365 Defender 中的自动调查和响应功能（也称为自我修复）
+title: 自动调查和响应Microsoft 365 Defender
+description: 大致了解自动调查和响应功能（也称为自我修复Microsoft 365 Defender
 keywords: 自动化， 调查， 警报， 触发器， 操作， 修正， 自我修复
 search.appverid: met150
 ms.prod: m365-security
@@ -21,21 +21,21 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 326910f4b556837b319c53cb1d257af09efbbe7a6ba8b92a4784d38a50b43fbe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53792898"
 ---
-# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
+# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>自动调查和响应Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-如果你的组织使用[Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动或项目Microsoft 365安全中心内收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender 包括自动调查和响应 (AIR) 功能，可帮助你的安全运营团队更有效地应对威胁。
+如果你的组织[正在使用Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动或项目Microsoft 365安全中心内收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender包括自动调查和响应 (AIR) 功能，可帮助安全运营团队更有效地应对威胁。
 
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
@@ -44,20 +44,20 @@ ms.locfileid: "52274564"
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>自动调查和自我修复的工作原理
 
-触发安全警报时，由安全运营团队来调查这些警报，并采取措施来保护你的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 Defender 中的自动调查和响应功能以及自我修复Microsoft 365 Defender 可以提供帮助。
+触发安全警报时，由安全运营团队来调查这些警报，并采取措施来保护你的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 自动调查和响应功能以及自动修复功能Microsoft 365 Defender可提供帮助。
 
 观看以下视频，了解自我修复的工作原理： <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 365 Defender 中，具有自我修复功能的自动调查和响应适用于你的设备、电子邮件&内容和标识。
+在Microsoft 365 Defender中，具有自我修复功能的自动调查和响应适用于你的设备、电子邮件&内容和标识。
  
 > [!TIP]
-> 本文介绍了自动调查和响应的工作原理。 若要配置这些功能，请参阅在 Microsoft 365 Defender 中配置[自动调查和响应功能](m365d-configure-auto-investigation-response.md)。
+> 本文介绍了自动调查和响应的工作原理。 若要配置这些功能，请参阅在 Microsoft 365 Defender[中配置自动调查和响应Microsoft 365 Defender。](m365d-configure-auto-investigation-response.md)
 
 ## <a name="your-own-virtual-analyst"></a>你自己的虚拟分析师
 
-Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟分析师模仿安全运营团队调查和修正威胁所采取的理想步骤。 虚拟分析师可以 24x7 工作，且容量不受限制，并承担大量的调查和威胁修正工作。 此类虚拟分析师可以显著减少响应时间，释放安全运营团队用于其他重要威胁或战略项目。 如果此方案看起来像科学虚构，则不是！ 此类虚拟分析师是你的 Microsoft 365 Defender 套件的一部分，其名称是 *自动调查和响应*。
+Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟分析师模仿安全运营团队调查和修正威胁所采取的理想步骤。 虚拟分析师可以 24x7 工作，且容量不受限制，并承担大量的调查和威胁修正工作。 此类虚拟分析师可以显著减少响应时间，释放安全运营团队用于其他重要威胁或战略项目。 如果此方案看起来像科学虚构，则不是！ 此类虚拟分析师是 Microsoft 365 Defender套件的一部分，其名称是自动 *调查和响应*。
 
 自动调查和响应功能使安全运营团队可以大大增加组织处理安全警报和事件的能力。 通过自动调查和响应，你可以降低调查和响应活动处理的成本，并能够最利用威胁防护套件。 自动调查和响应功能可有助于安全运营团队：
 
@@ -77,11 +77,11 @@ Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟
 
 - 将文件发送到隔离区
 - 停止进程
-- 隔离设备
+- 正在隔离设备
 - 阻止 URL 
 - 其他操作
 
-有关详细信息，请参阅 Defender 中的修正[Microsoft 365操作](m365d-remediation-actions.md)。
+有关详细信息，请参阅修正[操作Microsoft 365 Defender。](m365d-remediation-actions.md)
 
 根据 [组织的自动](m365d-configure-auto-investigation-response.md) 调查和响应功能配置方式，自动执行修正操作，或仅在安全运营团队批准后执行修正操作。 所有操作（无论是挂起操作还是已完成操作）都列在操作 [中心中](m365d-action-center.md)。
 
@@ -91,7 +91,7 @@ Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟
 
 |实体 |威胁防护服务  |
 |:---------|:---------|
-|设备 (也称为终结点或计算机)  |[适用于终结点的 Defender](../defender-endpoint/automated-investigations.md) |      
+|设备 (也称为终结点或计算机)  |[Defender for Endpoint](../defender-endpoint/automated-investigations.md) |      
 |本地 Active Directory 用户、实体行为和活动     |[Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
 |电子邮件 (可能包含文件和 URL 的电子邮件)      |[Defender for Office 365](../office-365-security/defender-for-office-365.md) |
 

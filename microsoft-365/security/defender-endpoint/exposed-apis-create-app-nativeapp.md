@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0c631192cc197318212169fce51222457450d4ec
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5bc5039ee8c36ac9679859c2298dffca645efd6707adbb38c4e5742a57b64b69
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890573"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>将 Microsoft Defender 用于终结点 API
 
