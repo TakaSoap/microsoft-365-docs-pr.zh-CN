@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bfbf9a7cb32242c9ac2e12d637b85628632c5d0b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 409eed3462c386c7cf55968fdab5111f49080cab139d86e6058c05ad9881fb1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839875"
 ---
 # <a name="common-rest-api-error-codes"></a>常见的 REST API 错误代码
 
@@ -35,7 +35,7 @@ ms.locfileid: "53656159"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-错误代码 |HTTP 状态代码 |邮件 
+错误代码 |HTTP 状态代码 |消息 
 :---|:---|:---
 BadRequest | BadRequest (400)  | 常规错误请求错误消息。
 ODataError | BadRequest (400)  | 指定的特定错误 (OData URI 查询无效) 。

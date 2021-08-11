@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses () Defender 高级搜寻中的Microsoft 365函数
+title: AssignedIPAddresses () 高级搜寻中的 Microsoft 365 Defender
 description: 了解如何使用 AssignedIPAddresses () 函数获取分配给设备的最新 IP 地址
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ebd301d6c79bf5286d9293e04e4073b99d1e35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7160a05111ffa9085a2d7b146e6258ba6c4fd2388a1c8898bbc480c16195c7ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833311"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934905"
 
 此函数返回具有以下列的表：
 
-| Column | 数据类型 | 说明 |
+| 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | 使用 IP 地址观测到设备的最新时间 |
 | `IPAddress` | string | 设备使用的 IP 地址 |

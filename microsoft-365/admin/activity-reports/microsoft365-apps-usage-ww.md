@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 了解如何使用 Microsoft 365 应用版 中的"报表"仪表板Microsoft 365报表报表Microsoft 365 管理中心。
-ms.openlocfilehash: 3147aebc10ff774b8af3ff10f9a76d52a2db87b2
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 58fe420f13bcd41bceaea9605d9ced2c539c8857e56335ebfff8fcef672fd222
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797659"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365管理中心中的报告 - Microsoft 365 应用版使用情况
 
@@ -47,7 +47,7 @@ ms.locfileid: "53377237"
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 应用版使用情况报告](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
-|项目|说明|
+|Item|说明|
  |:-----|:-----|
  |1. <br/> |可查看 **Microsoft 365 应用版** 使用情况报告，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。 <br/> |
  |2. <br/> |每个报告中的数据通常涵盖最近两天。 每六天，我们将使用次要更新刷新报告，以确保数据质量。 <br/> |

@@ -1,5 +1,5 @@
 ---
-title: 评估 Microsoft Defender for Endpoint 概述，包括查看体系结构、启用或激活评估环境以及构建试点。
+title: 评估 Microsoft Defender for Endpoint 概述，包括查看体系结构
 description: 针对测试实验室或试验Microsoft 365 Defender设置的步骤。 测试并体验安全解决方案如何设计用于保护组织中设备、标识、数据和应用。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f4f66c6a7bd5f375ffedc822a3ad5bb5a4f5a431
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f3ec24e4d73ac9297e4ca0bec5659b987f9e33d7bae182a1f7f1853ee72d6876
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833204"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>评估 Microsoft Defender for Endpoint 概述
 

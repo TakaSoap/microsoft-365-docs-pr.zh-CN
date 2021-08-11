@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 组织当前针对其生产环境所面临的最常见威胁和攻击Microsoft 365以及用于缓解这些风险的建议操作。
-ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dabd4e094962c15ade360db317fa197698733e2da4cedc752d602337df090a37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839914"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365业务决策者的安全 (BDM) 
 
@@ -139,7 +139,7 @@ Microsoft 365信息保护功能可帮助你发现你拥有的信息、存储的�
 |**每周查看安全** 分数 — 安全分数是访问公司的安全状态并基于安全分数建议采取措施的中心位置。 建议每周执行一次此检查。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
 |使用 **Microsoft Defender for Office 365** 工具：<br>* 威胁调查和响应功能<br> * 自动调查和响应 |         |![绿色选中标记](../media/green-check-mark.png)|
 |使用 **Microsoft Defender for Endpoint**：<br> *    [终结点检测和响应](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> * 自动调查和修正安全分数 <br>*    [高级搜寻](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![绿色选中标记](../media/green-check-mark.png)|
-|使用 **Microsoft Cloud App Security** 检测跨云应用的异常行为，以识别勒索软件、遭到入侵的用户或未授权的应用程序、分析高风险使用情况并自动修正以限制组织的风险。|         |![绿色选中标记](../media/green-check-mark.png)|
+|使用 **Microsoft Cloud App Security** 检测云应用中的异常行为，以识别勒索软件、遭到入侵的用户或未授权的应用程序、分析高风险使用情况并自动修正以限制组织的风险。|         |![绿色选中标记](../media/green-check-mark.png)|
 |使用 **Microsoft Azure Sentinel** 或当前的 SIEM 工具监视整个环境中的威胁。 |         |![绿色选中标记](../media/green-check-mark.png)|
 |**部署 [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)** 以监视并防范针对本地 Active Directory 环境的威胁。   |         |![绿色选中标记](../media/green-check-mark.png) |
 |使用 **Azure Defender** _ 监视混合和云工作负载中的威胁。 Azure Defender_ 包括一层免费功能和一个基于资源小时或交易付费的标准级别的功能。|         |         |
@@ -148,6 +148,6 @@ Microsoft 365信息保护功能可帮助你发现你拥有的信息、存储的�
 ![用于持续监视和审核的推荐功能](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 建议执行的建议监视操作：
-- **每周查看一次 Microsoft 安全** 分数 — 安全分数是访问租户的安全状态并基于主要建议采取措施的中心位置。 建议每周执行一次此检查。 安全分数包括来自 Azure AD、Intune、Cloud App Security 和 Microsoft Defender for Endpoint 以及 Office 365 的建议。 
+- **每周查看一次 Microsoft 安全** 分数 — 安全分数是访问租户的安全状态并基于主要建议采取措施的中心位置。 建议每周执行一次此检查。 安全分数包括来自 Azure AD、Intune、云应用安全 和 Microsoft Defender for Endpoint 的建议，Office 365。 
 - **每周查看有风险** 登录 — 使用 Azure AD 管理中心每周查看有风险的登录。 推荐的标识和设备访问规则集包括一个策略，用于对有风险的登录强制实施密码更改。  
-- **每周** 查看主要恶意软件和网络钓鱼用户 — 使用 Microsoft Defender for Office 365 威胁资源管理器查看以恶意软件和网络钓鱼为目标的主要用户，并找出这些用户受到影响的根本原因。
+- **每周查看** 主要恶意软件和网络钓鱼用户 — 使用 Microsoft Defender for Office 365 威胁资源管理器查看以恶意软件和网络钓鱼为目标的主要用户，并找出这些用户受到影响的根本原因。

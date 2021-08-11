@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 455959c8b11a3cfaf293052d2c23251771ac7456
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ef81951a0c34fb888cd31a29aa0f59c01f1fb22190e75ba9d3d43ca059570f08
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797646"
 ---
 # <a name="contact-support-for-belarus"></a>联系白俄罗斯支持人员
 

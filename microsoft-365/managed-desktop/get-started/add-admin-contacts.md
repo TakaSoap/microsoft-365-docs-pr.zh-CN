@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a95ab526d43e6eb243cb3de3a7b7c75e1e82b07f
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 99a2d6d5a5617c66143df2a4f91d80abdafd5f90005ad5401c86bcfd669dd1cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819101"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -31,7 +31,7 @@ ms.locfileid: "53624196"
 --- | ---
 应用打包 | 应用打包疑难解答
 设备 | 设备运行状况，Microsoft 托管桌面疑难解答
-安全性 | 解决设备Microsoft 托管桌面安全问题
+安全团队 | 解决设备Microsoft 托管桌面安全问题
 IT 技术支持 | 如果支持人员在支持区域外将用户票证Microsoft 托管桌面的情况 
 其他 | 对于其他方面未涵盖的问题
 
@@ -45,7 +45,7 @@ IT 技术支持 | 如果支持人员在支持区域外将用户票证Microsoft �
 
 2. 在 **"租户管理**"下，**查找**"Microsoft 托管桌面"部分，然后选择"**管理员联系人"。**
 
-3. 选择“**添加**”。
+3. 选择 **添加**。
 
 4. 选择 **一个焦点区域** ，然后输入联系人的信息。 
 

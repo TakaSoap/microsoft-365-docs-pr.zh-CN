@@ -19,12 +19,12 @@ description: 使用浏览器门户中的资源管理器和实时检测Microsoft 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 35044963b34d9120eb1490e64b8c9831ba6840aad7d7aa6b3b2776e70602d6fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805810"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -547,7 +547,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
   - 组织管理
   - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
-  - 安全读取者
+  - 安全信息读取者
 
 - For Exchange Online， you must have one of the following roles assigned in either the Exchange admin center <https://admin.protection.outlook.com/ecp/> () or Exchange Online [PowerShell：](/powershell/exchange/exchange-online-powershell)
 

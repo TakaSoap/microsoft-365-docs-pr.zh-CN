@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 631b39d2ba1c07a30614ce0fb52480dcbeefc245
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 13a1e77c42843bcac211352fb5e039340ffd248192c9b3af3810902868017904
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797514"
 ---
 # <a name="contact-support-for-cocos-keeling-islands"></a>联系科科斯 (基林) 支持
 

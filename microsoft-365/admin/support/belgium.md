@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 96b1a495217bfdbd84397d1f6f027c5427f82ee0
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 87f82863311183582f34d43d4d562662026b5a2de87ab296e5a527618761ef89
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797634"
 ---
 # <a name="contact-support-for-belgium"></a>联系比利时支持人员
 

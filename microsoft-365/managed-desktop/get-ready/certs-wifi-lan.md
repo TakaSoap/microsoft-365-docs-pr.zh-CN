@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e6c6c6f2e77ef81efae29f98baa85feafada9724cc12623bf1501316a91a38f5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819195"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备证书和网络配置文件  
  
@@ -44,7 +44,7 @@ ms.locfileid: "51574579"
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>有线连接要求和 802.1x 身份验证 
  
-如果使用 802.1x 身份验证保护从设备到局域网 (LAN) 的访问，则需要将所需的配置详细信息推送到 Microsoft 托管桌面 设备。 Microsoft 托管桌面运行 Windows 10 版本 1809 或更高版本的设备支持通过 WiredNetwork 配置服务提供商 (CSP) 部署 802.1x 配置。 有关详细信息，请参阅 [WiredNetwork 云解决方案提供商](/windows/client-management/mdm/wirednetwork-csp) 文档。 
+如果使用 802.1x 身份验证保护从设备到局域网 (LAN) 的访问，则需要将所需的配置详细信息推送到 Microsoft 托管桌面 设备。 Microsoft 托管桌面运行 Windows 10 版本 1809 或更高版本的设备支持通过 WiredNetwork 配置服务提供程序和 CSP (部署 802.1x) 。 有关详细信息，请参阅 [WiredNetwork 云解决方案提供商](/windows/client-management/mdm/wirednetwork-csp) 文档。 
  
 在将有线网络配置文件部署到Microsoft 托管桌面之前，请收集组织对有线企业网络的要求。 为此，请执行以下步骤： 
  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 5. 部署混合工作者生产力应用和服务
+title: 步骤 5：部署混合工作者生产力应用和服务
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,15 +16,15 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: ed35f06f3dcee9c7981a086278040fc0a44519b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+description: 使用户可通过使用 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
+ms.openlocfilehash: 7a26d89e04d9739434208c4b3c4a536be5c5c5075a00dabdc06b8c4abd318838
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53777749"
 ---
-# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>步骤 5. 部署混合工作者生产力应用和服务
+# <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>步骤 5：部署混合工作者生产力应用和服务
 
 为了提高工作效率，人们需要相互沟通和协作。 他们需要举行会议、通过语音和文本聊天、创建新内容、共享信息和文件、进行电子邮件往来以及管理日历和任务。 Microsoft 365 提供基于云的服务来实现所有这些关键功能：
 
