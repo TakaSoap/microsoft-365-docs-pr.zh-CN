@@ -380,7 +380,7 @@ ms.locfileid: "53226427"
 7. 若要导入要添加到策略的用户列表，请选择" **导入** .csv（逗号分隔值）文件。 该文件必须采用以下格式，并且您必须在文件中列出用户主体名称：
 
     ```csv
-    user principal name
+    用户主体名称
     user1@domain.com
     user2@domain.com
     ```
