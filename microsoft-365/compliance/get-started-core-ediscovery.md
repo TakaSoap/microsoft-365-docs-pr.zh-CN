@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍如何开始使用 Microsoft 365 中的核心电子数据Microsoft 365。 分配电子数据展示权限并创建案例后，可以添加成员、创建电子数据展示保留，然后搜索和导出与调查相关的内容。
-ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8b0e1c91f0816df3b443933d4e14c6c36f41b143a27d06516cf66e46a0f054a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819904"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Microsoft 365 中的核心电子数据展示Microsoft 365
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 您可以导出搜索结果报告，而不是在 Office 365 安全与合规&导出内容搜索的实际结果。 该报告包含搜索结果摘要和一个文档，其中包含有关将导出的每个项目的详细信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 094e67812b45ab1544d629ba6ddabcd86c70c633
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0eae866625c9fd2424263ebfa6bff03ecc5c09a820017ffde5dad6d66f1c2164
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819976"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 
@@ -51,9 +51,9 @@ ms.locfileid: "52311565"
 
   - Microsoft Edge <sup>2</sup>
 
-    OR
+    或
 
-  - Microsoft Internet Explorer 10及更高版本
+  - Microsoft Internet Explorer 10 和更高版本
 
   > [!NOTE]
   > <sup>1</sup> Microsoft 不会为应用程序制作第三方扩展ClickOnce加载项。 不支持使用不支持的浏览器和第三方扩展或加载项导出搜索结果。<br/>
@@ -69,7 +69,7 @@ ms.locfileid: "52311565"
 
 第一步是准备报告以下载到计算机导出。 导出报告时，报告文档将上载到 Microsoft Azure 存储区域。
   
-1. 在Microsoft 365中心，选择要导出报告的内容搜索。
+1. 在Microsoft 365 合规中心中，选择要导出报告的内容搜索。
   
 2. 在搜索 **弹出** 页底部的"操作"菜单上，单击"导出 **报告"。**
 
@@ -105,7 +105,7 @@ ms.locfileid: "52311565"
 
 下一步是将报告从 Azure 存储 下载到本地计算机。
 
-1. 在合规性 **中心的"** 内容搜索"Microsoft 365，选择"导出 **"** 选项卡
+1. 在页面 **的"** 内容搜索"Microsoft 365 合规中心，选择"导出 **"** 选项卡
   
    您可能必须 **单击"刷新** "来更新导出作业的列表，以便它显示您创建的导出作业。 导出报告作业的名称与相应的搜索同名，_ReportsOnly搜索名称后面。
   
@@ -130,7 +130,7 @@ ms.locfileid: "52311565"
 
 7. 单击“启动”将搜索结果下载到计算机。
   
-    **电子数据展示工具** 显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后，您可以在下载文件的位置访问这些文件。
+    **电子数据展示工具** 显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后，你可以在文件下载的位置访问它们。
   
 ## <a name="whats-included-in-the-report"></a>报告中包含的内容
 

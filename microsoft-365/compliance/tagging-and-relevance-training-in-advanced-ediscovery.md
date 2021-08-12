@@ -1,5 +1,5 @@
 ---
-title: 高级电子数据展示中的标记和相关性培训
+title: Advanced eDiscovery 中的标记和相关性Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解在高级电子数据展示的相关性培训阶段标记 40 个文件的培训示例，然后使用这些步骤。
-ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: 了解在项目相关性培训阶段标记 40 个文件的培训示例，然后Advanced eDiscovery。
+ms.openlocfilehash: a510d331da39cfec7e861148a20200c6f3a1239f7ca0fc6387ffc7de56fa38fd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813594"
 ---
-# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>高级电子数据展示中的标记和相关性培训
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Advanced eDiscovery 中的标记和相关性Advanced eDiscovery
   
-本文介绍了使用高级电子数据展示中的相关性培训模块的过程。
+本文介绍使用 Advanced eDiscovery 中的相关性培训模块的过程。
   
-在高级电子数据展示中完成评估并进入相关性培训阶段后，将在标记选项卡中提供包含 40 个文件的培训示例进行标记。
+在评估完成后，Advanced eDiscovery进入相关性培训阶段，40 个文件的培训示例将进入标记的"标签"选项卡。
   
 ## <a name="performing-relevance-training"></a>执行相关性培训
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a015755d0848b0287854db67021599917851d889bb178ff4f4129e02c09919db
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806280"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -34,7 +34,7 @@ ms.locfileid: "52842238"
 
 
 > [!TIP]
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)。
 
 ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置指示器列表，用于检测并阻止 (防护和响应) 。
 

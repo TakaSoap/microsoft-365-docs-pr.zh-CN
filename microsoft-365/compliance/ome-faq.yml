@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: 对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
-  ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+  ms.openlocfilehash: 0fb607492d8df6b1e10d73191b6d662ea6bb63eb39da74e0bfed6ba331c1516f
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/29/2021
-  ms.locfileid: "53657011"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53813639"
 title: 邮件加密常见问题解答
 summary: >
   对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。 此外，请参阅 Azure[](/information-protection/get-started/faqs-rms)信息保护中有关数据保护的常见问题解答，以解答有关 Azure 信息保护中数据保护服务（Azure 权限管理）的问题。
@@ -72,7 +72,7 @@ sections:
   - question: >
       可以使用 OME 发送的邮件是否有大小限制？
     answer: >
-      是。 可以与 OME 一起发送的最大邮件大小（包括附件）为 25 MB。 有关详细信息，请参阅邮件 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
+      能。 可以与 OME 一起发送的最大邮件大小（包括附件）为 25 MB。 有关详细信息，请参阅邮件 [限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
   - question: >
       受保护的电子邮件中支持哪些文件类型作为附件？ 附件是否继承了与受保护的电子邮件相关联的保护策略？
     answer: "您可以将任何文件类型附加到受保护的邮件。 有一个例外，保护策略仅适用于 Azure 信息保护客户端支持的文件类型中提到的 [文件格式](/information-protection/rms-client/client-admin-guide-file-types)。 OME 不支持以下 97-2003 版本的以下 Office 程序：Word (.doc) 、Excel (.xls) 和 PowerPoint (.ppt) 。\n\n如果文件格式（如 Word、Excel 或 PowerPoint 文件）受支持，则即使收件人已下载附件，文件也始终受到保护。 例如，假设附件受\"请勿转发\"保护。 原始收件人下载文件，创建一封邮件给新收件人并附加到该文件。 当新收件人收到该文件时，该收件人将无法打开受保护的文件。\n  \n"
@@ -117,7 +117,7 @@ sections:
       Outlook 网页版保护邮件的吊销。  有关详细信息 [，请参阅如何撤销已发送的加密](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) 邮件。
   - question: >
       我能否通过设置策略自动加密邮件？
-    answer: "是。 使用邮件流规则Exchange Online根据某些条件自动加密邮件。 例如，可以创建基于收件人 ID、收件人域或邮件正文或主题内容的策略。 请参阅[定义邮件流规则以加密电子邮件Office 365。](define-mail-flow-rules-to-encrypt-email.md)\n  \n"
+    answer: "能。 使用邮件流规则Exchange Online根据某些条件自动加密邮件。 例如，可以创建基于收件人 ID、收件人域或邮件正文或主题内容的策略。 请参阅[定义邮件流规则以加密电子邮件Office 365。](define-mail-flow-rules-to-encrypt-email.md)\n  \n"
   - question: >
       能否自动删除传入和传出邮件的加密？
     answer: >
@@ -135,7 +135,7 @@ sections:
   - question: >
       能否将邮件加密与电子数据展示等合规性功能一同使用？
     answer: >
-      是。 Microsoft 365合规性功能可以发现所有加密的电子邮件。 有关详细信息 [，请参阅支持加密项目的电子数据](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) 展示活动。
+      能。 Microsoft 365合规性功能可以发现所有加密的电子邮件。 有关详细信息 [，请参阅支持加密项目的电子数据](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) 展示活动。
   - question: >
       能否从电子邮件中删除加密？
     answer: >

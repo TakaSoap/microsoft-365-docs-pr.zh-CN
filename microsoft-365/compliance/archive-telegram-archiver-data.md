@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器，以在邮箱中导入和存档 Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 5db1869a1c386ed75f3d8d1381f598d907d2b5ba
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 93126418a9cd636307d90dbe59d62e111a9d521af6415d74646a27766f1d7938
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796403"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>设置连接器以存档为用户通信数据存档
 
@@ -50,6 +50,8 @@ ms.locfileid: "53339438"
 - 在员工的移动电话上安装"Archiver"应用并激活它。 通过"英语存档器"应用，他们能够与其他"英语"用户进行通信和聊天。
 
 - 必须在步骤 3 中为在步骤 3 中创建存档连接器的用户分配邮箱导入导出Exchange Online。 这是在"数据连接器"页的"数据连接器 **"页中添加** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+
+- 此数据连接器可用于美国政府GCC云Microsoft 365环境中。 第三方应用程序和服务可能涉及在 Microsoft 365 基础结构外部的第三方系统上存储、传输和处理组织的客户数据，因此未涵盖在 Microsoft 365 合规性和数据保护承诺中。 Microsoft 不表示使用此产品连接到第三方应用程序意味着这些第三方应用程序符合 FEDRAMP。
 
 ## <a name="create-a-telegram-archiver-connector"></a>创建一个 Archiver 连接器
 

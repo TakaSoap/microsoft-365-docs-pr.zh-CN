@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: 作为管理员，查找有关设置 Skype for Business Online 部分的帮助，包括你的网络、会议和 IM 以及用户的外部访问。
-ms.openlocfilehash: 64d43b4593de9c23e28bcec1bb5c3ce369ee9b2b
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: db39d4d42b27aa95cdb3dc86d0c1976dd053d43408e5b64289b2754f88e698b6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835003"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 中的 Skype for Business Online - 管理员帮助
 

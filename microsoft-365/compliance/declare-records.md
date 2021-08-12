@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0d2614709c22347c3a2a9f2bedf952cd5d70508f54fd8e6edcdae0dec3e7791b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842361"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 

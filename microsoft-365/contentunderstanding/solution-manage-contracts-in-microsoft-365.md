@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用 Microsoft 365、SharePoint Syntex、SharePoint 列表、Microsoft Teams 和 Power Automate 解决方案管理Power Automate。
-ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9a80a97ad87d407e6b0cb56fae99712b0f3b403c416fcfa67c57d4f2c9e0236d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287313"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813438"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用 Microsoft 365 解决方案管理合同
 

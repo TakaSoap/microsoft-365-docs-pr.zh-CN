@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何消除重复电子数据展示搜索结果，以便只导出电子邮件的一个副本。
-ms.openlocfilehash: 859c1c41a9f6a530cdefce5220039fbc6ba1a14e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08318019f9fc56b70d2eae3ea80b82da85e37e69e8d0ff1401517ae1a84ea327
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842409"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>电子数据展示搜索结果中的重复数据删除
 
@@ -68,7 +68,7 @@ ms.locfileid: "50925668"
 > [!IMPORTANT]
 > 如果重复数据删除算法的限制可能会影响搜索结果的质量，则导出项目时不应启用重复数据删除。 如果本节中所述的情况不太可能成为搜索结果中的一个因素，并且您希望减少最有可能重复的项目数，则应考虑启用重复数据删除。 
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 使用下列电子数据展示工具之一导出搜索结果时，本文中的信息适用：
 

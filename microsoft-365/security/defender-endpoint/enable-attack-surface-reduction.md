@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: 3db8e217ffbf664c92d463241300143669ccecac
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 571e9fb4bcfc097e502fbf4d3696574ec880e23e3348b84056725977196c0464
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794207"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -131,7 +131,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 基本属性](images/mem03-1-basics.png)
 
-4. 单击“**下一步**”。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
+4. 单击 **下一个**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 配置设置](images/mem04-2-configuration-settings.png)
@@ -147,7 +147,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI 配置](images/mem05-add-row-oma-uri.png)
 
-6. 单击“**保存**”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
+6. 单击 **保存**。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
 
    - 单击 **"选择范围标记"，** 选择作用域 (可选) ，然后单击"下一步 **"。**
    - 或单击" **下一步"**
@@ -172,7 +172,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 适用性规则](images/mem07-5-applicability-rules.png)
 
-10. 单击“**下一步**”。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
+10. 单击 **下一个**。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
 
     > [!div class="mx-imgBorder"]
     > ![MEM 审阅和创建](images/mem08-6-review-create.png)
@@ -195,7 +195,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
-`Value: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=2|3B576869-A4EC-4529-8536-B80A7769E899=1|D4F940AB-401B-4EfC-AADC-AD5F3C50688A=2|D3E037E1-3EB8-44C8-A917-57927947596D=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=0|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1`
+`Value: 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84=2|3b576869-a4ec-4529-8536-b80a7769e899=1|d4f940ab-401b-4efc-aadc-ad5f3c50688a=2|d3e037e1-3eb8-44c8-a917-57927947596d=1|5beb7efe-fd9a-4556-801d-275e5ffc04cc=0|be9ba2d9-53ea-4cdc-84e5-9b1eeee46550=1`
 
 在审核模式下 (阻止) 、禁用、警告或启用的值为：
 
