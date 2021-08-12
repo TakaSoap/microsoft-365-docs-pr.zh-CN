@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 作为管理员和邮件发件人，您可以撤消某些使用邮件加密Office 365 高级邮件加密。
-ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 58a029dbbc2fef644e533ccb072bb8e0e8bb0e67e70584d1e93d956db4c9c2c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795554"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤销通过高级邮件加密加密的电子邮件
 
@@ -29,7 +29,7 @@ ms.locfileid: "51051714"
 
 本文是有关本文的更多系列文章的一[Office 365 邮件加密。](ome.md)
 
-如果邮件是使用 Office 365 高级邮件加密 加密的，并且你是Microsoft 365管理员，或者你是邮件的发件人，则在某些情况下可以撤销该邮件。 管理员使用 PowerShell 撤销邮件。 作为发件人，你可以撤销直接从 Web 上的Outlook发送的邮件。 本文介绍可能吊销的情况以及如何进行吊销。
+如果邮件是使用 Office 365 高级邮件加密 加密的，并且你是Microsoft 365管理员，或者你是邮件的发件人，则在某些情况下可以撤销该邮件。 管理员使用 PowerShell 撤销邮件。 作为发件人，您可以撤销直接从发件人发送Outlook 网页版。 本文介绍可能吊销的情况以及如何进行吊销。
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>可以撤销的加密电子邮件
 
@@ -37,9 +37,9 @@ ms.locfileid: "51051714"
 
 收件人是否收到基于链接的体验或内联体验取决于收件人标识类型：Office 365 和 Microsoft 帐户收件人 (例如，outlook.com 用户) 受支持的 Outlook 客户端获得内联体验。 所有其他收件人类型（如 Gmail 和 Yahoo 收件人）都获得基于链接的体验。
 
-管理员和邮件发件人可以吊销使用直接来自 Web 上的Outlook加密的邮件。 例如，使用"仅加密"选项加密的邮件。
+管理员和邮件发件人可以撤销使用直接来自邮件的加密进行加密Outlook 网页版。 例如，使用"仅加密"选项加密的邮件。
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot showing Encrypt Only option in Outlook on the web.":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot showing Encrypt Only option in Outlook 网页版.":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a>已吊销加密电子邮件的收件人体验
 
@@ -55,17 +55,17 @@ ms.locfileid: "51051714"
 
 若要撤销已发送的加密邮件，请完成这些步骤
 
-1. 在Outlook中，在"已发送 **"文件夹中浏览** 到要撤销的邮件。
+1. In Outlook 网页版， in your **Sent** folder， browse to the message you want to revoke.
 
    如果邮件可撤销，你将在邮件顶部看到"删除外部访问"链接。
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Screenshot showing encrypted mail that you want to revoke in Outlook on the web.":::
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Screenshot showing encrypted mail that you want to revoke in Outlook 网页版.":::
 
 2. 单击 **"删除外部访问** "以撤销邮件。
 
    该消息显示其状态已被吊销。
 
-   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Screenshot showing revoked encrypted message in Outlook on the web.":::
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Screenshot showing revoked encrypted message in Outlook 网页版.":::
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>如何以管理员角色撤销加密邮件
 
@@ -91,7 +91,7 @@ Microsoft 365管理员按照以下常规步骤撤销符合条件的加密电子�
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>使用安全与合规中心中的"邮件加密"报告Office要撤销的电子邮件的邮件 &amp; ID
 
-1. 在安全 &amp; 与合规中心中，导航到"**邮件加密报告"。** 有关此报告的信息，请参阅在安全与 [合规中心查看电子邮件 &amp; 安全报告](../security/defender-365-security/view-email-security-reports.md)。
+1. 在安全 &amp; 与合规中心中，导航到"**邮件加密报告"。** 有关此报告的信息，请参阅在安全与 [合规中心查看电子邮件 &amp; 安全报告](../security/office-365-security/view-email-security-reports.md)。
 
 2. 选择 **"查看详细信息** "表，并确定要撤销的邮件。
 

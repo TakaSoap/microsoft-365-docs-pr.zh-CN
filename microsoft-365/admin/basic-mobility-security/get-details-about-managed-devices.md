@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
-ms.openlocfilehash: 2edee1b08f137d3e4f977b4d6800c1b0fc0e0473
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1d34f1b1dbb96227affffd31d794b7d0244298e25e3080ea08dcd3380399db4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826804"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 

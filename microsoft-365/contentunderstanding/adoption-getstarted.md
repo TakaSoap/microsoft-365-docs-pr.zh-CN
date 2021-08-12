@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795371"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex采用：入门
 
@@ -146,4 +146,4 @@ ms.locfileid: "53288151"
 
 ## <a name="see-also"></a>另请参阅
 
-[应用场景和SharePoint Syntex](adoption-scenarios.md)
+[SharePoint Syntex 的应用场景和用例](adoption-scenarios.md)

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性是基本移动Microsoft 365的一部分。
-ms.openlocfilehash: 4da5175ece5da0e6e2f5aaadb26a177835d90fcf39f727b748b83685c1c355d7
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 69d1c285d234d0884400cfc6325fcecfbff5a2d3bb62769682ec974b53a85f7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827031"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>在"基本移动性和安全性"或"Intune"之间选择
 
@@ -36,7 +36,7 @@ ms.locfileid: "57834499"
 
 | 计划 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 应用版|是|否|
+|Microsoft 365 应用|是|否|
 |Microsoft 365 商业基础版|是|否|
 |Microsoft 365 商业标准版|是|否|
 |Office 365 E1 |是|否|
@@ -71,6 +71,7 @@ Microsoft Intune和内置的基本移动性和安全性都为您提供了管理�
 |设备合规性|设置和管理安全策略，如设备级别的 PIN 锁定和越狱检测。 |Android 9 及更高版本设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
 |基于设备合规性的条件访问 |防止不相容的设备从云中访问公司电子邮件和数据。 |不支持在Windows 10。<br/>仅限于控制对 Exchange Online、SharePoint Online 和 Outlook 的访问。 |是 |
 |设备配置  |配置设备 (例如，禁用相机) |有限的设置集。|是|
+|设备合规性  |设置和管理安全策略，如设备级别的 PIN 锁定和越狱检测。 |Android 9 及更高版本设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
 |电子邮件配置文件  |在设备上预配本机电子邮件配置文件。 |是|是|
 |WiFi 配置文件 |在设备上预配本机 WiFi 配置文件。 |否|是|
 |VPN 配置文件 |在设备上预配本机 VPN 配置文件。 |否|是|

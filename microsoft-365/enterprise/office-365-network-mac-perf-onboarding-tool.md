@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络连接测试工具
-ms.openlocfilehash: 8cb25dfc8d11ca28d1a3c35985d84126f0652439
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: f143cf8f9cd838bafa8e21ac258d0fcc09f3221d738f14013ee81e09e9dbdc1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840949"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365网络连接测试工具
 
-Microsoft 365网络连接测试工具位于 <https://connectivity.office.com> 。 它是网络评估和网络见解信息的一个Microsoft 365运行状况管理中心下的网络 **|"连接"** 菜单。
+Microsoft 365网络连接测试工具位于 <https://connectivity.office.com> 。 它是网络评估和网络见解信息（在运行状况Microsoft 365 管理中心下提供的网络| **"连接"** 菜单。
 
 > [!IMPORTANT]
 > 登录 Microsoft 365 租户非常重要，因为所有测试报告都与管理员共享，并上传到租户（登录时）。
@@ -34,12 +34,12 @@ Microsoft 365网络连接测试工具位于 <https://connectivity.office.com> �
 >[!NOTE]
 >网络连接测试工具支持 WW Commercial 和 Germany 中的租户，GCC中等、GCC高、DoD 或中国。
 
-Microsoft 365 管理中心中的网络见解基于 Microsoft 365 租户的常规产品内度量，每天汇总一次。 相比之下，来自 Microsoft 365 网络连接测试的网络见解在本地运行，在工具中运行一次。 可在产品内完成的测试受到限制，通过在本地运行用户测试，可以收集更多数据，从而获得更深入的见解。 然后，考虑一下，Microsoft 365管理中心中的网络见解将显示特定办公地点Microsoft 365网络存在问题。 Microsoft 365连接测试可帮助确定导致建议的网络性能改进操作的根本原因。
+Microsoft 365 管理 中心中的网络见解基于 Microsoft 365 租户的常规产品内度量，每天汇总一次。 相比之下，来自 Microsoft 365 网络连接测试的网络见解在本地运行，在工具中运行一次。 可在产品内完成的测试受到限制，通过在本地运行用户测试，可以收集更多数据，从而获得更深入的见解。 然后，考虑一下，Microsoft 365 管理中心的网络见解将显示特定办公地点Microsoft 365网络存在问题。 Microsoft 365连接测试可帮助确定导致建议的网络性能改进操作的根本原因。
 
-我们建议一起使用这些见解，其中可以评估 Microsoft 365 管理中心中每个办公室位置的网络质量状态，并且可以在基于 Microsoft 365 连接测试部署测试后找到更多具体信息。
+我们建议一起使用这些见解，其中可以针对 Microsoft 365 管理 中心的每个办公室位置评估网络质量状态，并且可以在基于 Microsoft 365 连接测试部署测试后找到更具体的信息。
 
 >[!IMPORTANT]
->Microsoft 365 管理中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
+>Microsoft 365 管理 中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="what-happens-at-each-test-step"></a>每个测试步骤中发生的情况
 
@@ -80,7 +80,7 @@ Web 浏览器测试完成后，系统将提示您从网站下载高级客户端�
 
 ### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>与 Microsoft 帐户团队、支持或其他人员共享
 
-测试报告 (与 Microsoft 员工) 的任何个人标识。 此共享默认处于启用状态，并且您的管理员可以在"运行状况"| **管理中心** 中的"网络连接Microsoft 365页。
+测试报告 (与 Microsoft 员工) 的任何个人标识。 此共享默认处于启用状态，并且您的管理员可以在"运行状况"| **Microsoft 365 管理** 中的"网络连接"页。
 
 ### <a name="sharing-with-other-users-who-sign-in-to-the-same-office-365-tenant"></a>与登录到同一租户的Office 365共享
 
@@ -250,7 +250,7 @@ Web 浏览器测试完成后，系统将提示您从网站下载高级客户端�
 > [!div class="mx-imgBorder"]
 > ![网络运行状况状态](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 以下是一些常见问题的解答。
 
@@ -279,7 +279,7 @@ Internet 出口位置是网络流量退出企业网络并连接到 Internet 的�
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 管理中心 (预览) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 中心 (预览) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365预览版 (网络性能) ](office-365-network-mac-perf-insights.md)
 

@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 激活基本移动性和安全性后，可以创建移动设备管理策略。
-ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 7f5e4a039e254b1c9336f6b15086f8f6c50b80f6fc95f9b987306558b4bf9f8a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826743"
 ---
 # <a name="privacy-and-security-in-basic-mobility-and-security"></a>基本移动性和安全性中的隐私和安全性
 

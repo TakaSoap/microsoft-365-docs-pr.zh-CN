@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0802b702f735a1105407477d20c553e694f423cf
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b7e966586d13a8a4a5d4c5b1126354c72a2e03cc8811bb222b673cb7245c959b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833928"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>通过内部 IP API 查找设备信息
 
@@ -58,7 +58,7 @@ GET /api/machines/find(timestamp={time},key={IP})
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

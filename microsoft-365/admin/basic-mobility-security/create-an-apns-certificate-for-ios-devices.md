@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 在基本移动性和安全性中管理 iOS 设备。
-ms.openlocfilehash: 84f3589593ef26325397f5b6e90d5b21662d2352
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 64f4d3fa5d3c4d1807a78ddcf0cf00ec043b6dba2306aeab79ddfc128236a891
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826983"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>为 iOS 设备创建 APNs 证书
 

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: 9c61745fe322dce4cb2b537b18963634a97c697a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d6fdeb6391d452aee310ae9f2eecfec0e177ae4fdd76b71dcbe7a987144067dc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840909"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
@@ -118,7 +118,7 @@ ms.locfileid: "50921500"
     
 13. 选择 **User1 帐户**，然后选择"**许可证和应用"。**
     
-14. 在 **"产品许可证**"中，根据需要选择 (位置) 禁用 Office 365 **E5** 许可证，然后启用 **Microsoft 365 E5许可证。** 
+14. 在 **"产品许可证**"中，根据需要选择 (位置) 禁用Office 365 E5许可证，然后启用 **Microsoft 365 E5许可证。**  
 
 15. 选择 **页面** 底部的"保存"，然后选择"关闭 **"。**
     
@@ -136,7 +136,7 @@ ms.locfileid: "50921500"
 
 此配置包括： 
   
-- Microsoft 365 E5注册Office 365 DNS 域 TESTLAB.<注册的 E5 试用版或付费>订阅。 
+- Microsoft 365 E5注册Office 365 E5 DNS 域 TESTLAB.<试用或付费>订阅。 
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机组成。 Azure AD 连接 APP1 上运行，以定期将 TESTLAB AD DS 域同步到你的 Microsoft 365 租户。
 - TESTLAB  AD DS 域中的 User1 帐户已与 Azure AD 租户同步。
 

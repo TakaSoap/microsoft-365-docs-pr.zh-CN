@@ -20,19 +20,19 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: 了解如何在 PowerShell 中使用不同的模块来删除Microsoft 365用户帐户。
-ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 33a5a8d79413549d98bc0289dc1239e88cbc7c109334245cb6a7fa536477a89d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819423"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
 
 可以使用 PowerShell for Microsoft 365删除和还原用户帐户。
 
 >[!Note]
->了解如何使用[管理中心Microsoft 365](../admin/add-users/restore-user.md)用户帐户。
+>了解如何使用[Microsoft 365 管理中心](../admin/add-users/restore-user.md)还原用户帐户。
 >
 >有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >   

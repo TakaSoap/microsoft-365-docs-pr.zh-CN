@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f8c6c289cca61e5a0891af04ef97831a27b341f3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5cf987c71ff3da40149dd18ba2578ffc11bd01774b83ae24ee9a3b3fba7e7b23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833924"
 ---
 # <a name="find-devices-by-tag-api"></a>按标记 API 查找设备
 
@@ -74,13 +74,13 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
 名称|类型|说明
 :---|:---|:---
-tag|字符串|标记名称。 **必需**。
+tag|String|标记名称。 **必需**。
 useStartsWithFilter|布尔|设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
 
 ## <a name="request-body"></a>请求正文

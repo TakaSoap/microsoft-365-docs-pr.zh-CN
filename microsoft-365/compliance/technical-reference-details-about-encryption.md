@@ -20,19 +20,19 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 了解各种证书、技术和传输层安全性 (TLS) 加密套件，这些密码套件用于 Office 365 和 Microsoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 9d7c9bacc8f4e95ca15c4e420efc9b5db1eb074726496d4278be3e2f87046e52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795526"
 ---
 # <a name="technical-reference-details-about-encryption"></a>有关加密的技术参考详情
 
 请参阅本文，了解用于加密的证书、技术和 TLS [Office 365。](encryption.md) 本文还提供了有关计划弃用的详细信息。
   
 - 如果要查找概述信息，请参阅加密[Office 365。](encryption.md)
-- 如果要查找设置信息，请参阅在 Office 365 Enterprise[中设置加密](set-up-encryption.md)。
+- 如果要查找设置信息，请参阅在 Office 365 企业版[中设置Office 365 企业版。](set-up-encryption.md)
 - 有关特定版本的 Windows 支持加密套件的信息，请参阅[TLS/SSL (Schannel SSP ](/windows/desktop/SecAuthN/cipher-suites-in-schannel)) 。
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 证书所有权和管理
@@ -78,12 +78,12 @@ Office 365首先尝试使用最安全的加密套件进行连接，以响应连�
 
 | 密码套件名称 | 密钥交换算法/强度 | 向前保密 | 密码/强度 | 身份验证算法/强度 |
 |:-----|:-----|:-----|:-----|:-----|
-| TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | 是的。  <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | 是的。  <br/> | AES/128  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | 是的。  <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | 是的。  <br/> | AES/128  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | 是的。  <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | 是的。  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384  <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA     <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA     <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
@@ -91,8 +91,8 @@ Office 365首先尝试使用最安全的加密套件进行连接，以响应连�
 
 | 协议 | 密码套件名称 | 密钥交换算法/强度 | 向前保密 | 密码/强度 | 身份验证算法/强度 | 
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | 是的。  <br/> | AES/256  <br/> | RSA/112  <br/> |
-| TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | 是的。  <br/> | AES/128  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | 是  <br/> | AES/256  <br/> | RSA/112  <br/> |
+| TLS 1.0、1.1、1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | 是  <br/> | AES/128  <br/> | RSA/112  <br/> |
 | TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA        <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_128_CBC_SHA        <br/> | RSA/112   <br/> | 否   <br/> | AES/128  <br/> | RSA/112  <br/> |
 | TLS 1.0、1.1、1.2  <br/> | TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> | RSA/112   <br/> | 否   <br/> | AES/256  <br/> | RSA/112  <br/> |

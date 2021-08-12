@@ -19,16 +19,16 @@ metadata:
   search.appverid:
   - MET150
   description: 有关基本移动性和安全性的常见问题。
-  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
-  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+  ms.openlocfilehash: f899aecd313ffd4fbc1d94d44f2a1b9c41780984a9c8eb8383a51da661d80be8
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/29/2021
-  ms.locfileid: "53177654"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53826755"
 title: '基本移动性和安全性常见问题解答 (常见问题) '
 summary: 本文包含有关基本移动性和安全性的常见问题，这是一项可帮助您管理并保护移动设备在 Microsoft 365。 如果找不到问题的答案，请通过在此页面上留下评论来告诉我们，以便我们考虑将问题添加到本文。
 sections:
-- name: Ignored
+- name: 已忽略
   questions:
   - question: >
       如何获取基本移动性和安全性？ 我在"管理"中Microsoft 365 管理中心

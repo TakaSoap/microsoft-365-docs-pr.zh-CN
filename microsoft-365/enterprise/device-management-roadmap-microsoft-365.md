@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 为设备设置设备管理的Microsoft 365。
-ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9efb9659c4c6dcfe20b8f52c1a451b3644dcc0023e4087723141d6574db082ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819411"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 设备管理指南
 
@@ -54,10 +54,10 @@ Microsoft 365企业版包括可帮助在组织中管理设备及其应用的功�
  
 ## <a name="identity-and-device-access-recommendations"></a>标识和设备访问建议
 
-Microsoft 提供了一组有关[身份和设备访问](../security/defender-365-security/microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。 对于设备访问，请使用以下文章中的建议和设置：
+Microsoft 提供了一组有关[身份和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。 对于设备访问，请使用以下文章中的建议和设置：
 
-- [先决条件](../security/defender-365-security/identity-access-prerequisites.md)
-- [常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
+- [先决条件](../security/office-365-security/identity-access-prerequisites.md)
+- [常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何管理设备Microsoft 365
 

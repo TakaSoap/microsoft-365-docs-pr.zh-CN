@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 54dd3cc2709933ffb7b7d5fecdd181fad2abb42b
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 5ba812ba2f5694dd7860131479f01fceaba9ab2a040d1ba828306aa022665f74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819271"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -44,7 +44,7 @@ Microsoft Teams会议是 Learning Tools Interoperability (LTI) 应用，可帮�
 
    ![权限](media/permissions.png)
 
-7. 选择 **接受**。
+7. 选择“**接受**”。
 
 8. 通过打开Microsoft Teams启用同步。
 

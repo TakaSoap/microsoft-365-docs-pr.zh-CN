@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: 了解如何在 SharePoint Server 2013 和 SharePoint Online 中将内容查询Web 部件替换为内容搜索Web 部件来提高性能。
-ms.openlocfilehash: e5f57e59a421d79302f447e229091fdfc96f1237
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1fbddb662d87f135d90dfb1303ba75097da4650eefdf57dfe2f9ca50fcf186a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840778"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>使用内容搜索Web 部件而不是内容Web 部件来改进 SharePoint Online 中的性能
 

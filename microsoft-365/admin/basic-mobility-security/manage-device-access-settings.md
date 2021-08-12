@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可以帮助您保护和管理移动设备。
-ms.openlocfilehash: 24eeb1dfccef3d30e577b15ecb9d2fda4d902cdc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3691968803c615356570be5584ce869fddff81effdc304caa42bc1071b5f579b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826864"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>在基本移动性和安全性中管理设备访问设置
 

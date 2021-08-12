@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 在调查期间，可以使用"重试"按钮解决内容位置错误的内容搜索。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb85a882ef111aa38a73dbe155a9ad0ef57dd3de
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a67702e7c9d3c307ed44fe52c86c8b080f8d1e01e7cf9dcdc9dfb3929c638bf6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795671"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
