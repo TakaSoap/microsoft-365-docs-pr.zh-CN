@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 996a62f6098ae494b42de5f055ab1ddeb08db35c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 30428565f082610c64c65da88fad614ef755e557fa56b0fc278cc62bf9d88c26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829311"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>按设备 ID 获取缺少的 KB
 
@@ -47,7 +47,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

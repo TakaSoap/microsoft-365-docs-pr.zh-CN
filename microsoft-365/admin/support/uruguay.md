@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: abd4c36e87ff40c1f2056121d280576a6792125f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b7422a0785930111b57cafbad5bb9f0f944ac5f38b852c0c50e9858d3afaaa18
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797262"
 ---
 # <a name="contact-support-for-uruguay"></a>联系乌拉圭支持人员
 

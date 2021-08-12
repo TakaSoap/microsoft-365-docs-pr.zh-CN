@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a62e8e58d201515bfe3df18d4aff5a423b0813
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e469bc9d9ce3de8cd1425231f4b4b90247da2317a6ffc90ded86f5e4880563cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806744"
 ---
 # <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除 
 
@@ -70,7 +70,7 @@ ms.locfileid: "53650039"
     - 文件名
     - 说明
 
-4. 单击“**保存**”。
+4. 单击 **保存**。
 
 >[!NOTE]
 > 用于收集或检查已排除文件的 Live Response 命令将失败，并出现错误："已排除文件"。 此外，自动调查将忽略排除的项目。

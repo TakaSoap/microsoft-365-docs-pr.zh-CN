@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62664e77cfb8a2f6b4bf4411f010745796a3371a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e4888bfd83f70170bfd360275777845c1049ac96c4bd93b7a52d251f326fdd95
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796870"
 ---
 # <a name="payment-information-for-kyrgyzstan"></a>乌兹别克斯坦的付款信息
 
@@ -30,6 +30,6 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
- IBAN：12510049，  
+**IBAN：12510049，**  
 **帐户编号：** GB95CITI18500812510049  
 **帐户名称：** MICROSOFT

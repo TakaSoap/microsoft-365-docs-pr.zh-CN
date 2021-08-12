@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通过从"报告"Microsoft Teams应用程序使用情况报告，深入了解Microsoft Teams中使用的 Microsoft 365 应用。
-ms.openlocfilehash: 096954ad246f3b10369dfbf683d04b6c81950b5e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6691520f7fc2f05f58d83ea97ab07f1f0bfeb144fc6b6bd9036e0773be10bb78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797768"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365管理中心中的报告 - Microsoft Teams使用情况
 
@@ -50,7 +50,7 @@ You can view the device use in the Teams by choosing the **Device usage** tab.<b
 
 可查看" **Microsoft Teams 设备使用情况**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的显示名称。  <br/> |

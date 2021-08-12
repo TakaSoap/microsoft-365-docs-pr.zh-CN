@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a317e197c425750c8db0592f1e2f1e4d6d90a142
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3336cd39dcf0db15b5b2adb2189ce627b9dc6b3cd775fa19d060001613c9510a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829383"
 ---
 # <a name="get-alert-related-ips-information-api"></a>获取与警报相关的 IP 信息 API
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/ips
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

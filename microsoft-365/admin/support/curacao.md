@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1b799e976e5c2b5a7d500fdf69d996671c29ea38
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 17b0bdacfe745788fc4da24d1622142b2e4bb91519947a859dee43b0677ec5c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821267"
 ---
 # <a name="contact-support-for-curacao"></a>联系库拉索的支持人员
 

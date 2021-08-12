@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置Advanced eDiscovery，以便你可以开始创建和管理事例。 它还介绍了所需的 Microsoft 订阅和许可。 完成几个快速步骤后，Advanced eDiscovery即可使用。
-ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 1b2f7a26c96af40f28ef69cfc70d07c90b229dc86b4a78df68247c30ab4ff323
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814121"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>设置Microsoft 365 Advanced eDiscovery
 

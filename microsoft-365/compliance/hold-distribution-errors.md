@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 解决与核心电子数据展示中应用于保管人和非监管数据源的法律保留相关的错误。
-ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: a1e53397b4a0b18aa5c110a0499e239b51e24bd587fa8b04351d930d684c7e8d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813927"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>解决电子数据展示保留错误
 

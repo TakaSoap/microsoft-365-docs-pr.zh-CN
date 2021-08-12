@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6314e09f3c4ef69b77c5d51daf92e35538b22d5a
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: efac32ac7002ea87d2d2fa4f7cfb9dda1cc087d456af9988c5405620e807ba5e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797394"
 ---
 # <a name="contact-support-for-swaziland"></a>联系美国支持部门
 

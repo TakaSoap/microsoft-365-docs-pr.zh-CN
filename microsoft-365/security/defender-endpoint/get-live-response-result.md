@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8fde75f8f7b65f9d74362a40b881b335129e4bee
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3240b0c56b94c365f070935542ae100a94c0375847fa097cb29dc9886b210b79
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829347"
 ---
 #  <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -51,6 +51,25 @@ ms.locfileid: "53652182"
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
+## <a name="minimum-requirements"></a>最低要求
+
+在设备上启动会话之前，请确保满足以下要求：
+
+- **验证是否正在运行受支持的版本Windows。**
+
+  设备必须运行以下版本之一Windows
+
+  - **Windows 10**
+    - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
+    - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
+    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+
+  - **WindowsServer 2019 - 仅适用于公共预览版**
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息，包括如何选择权限，请参阅 [入门](apis-intro.md)。
@@ -71,7 +90,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|字符串|Bearer {token}。必需。|
+|Authorization|String|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 

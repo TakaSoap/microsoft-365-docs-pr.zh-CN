@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
 ms.date: 04/02/2021
-ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f5fc1e162e6471feb62e886d65755b4b434bdf4a834be59bcf7b37f76f23f129
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797142"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
@@ -41,7 +41,7 @@ ms.locfileid: "53394625"
 
 帐单配置文件上的角色具有控制购买以及查看和管理发票的权限。 向跟踪、组织和支付发票的用户分配这些角色。 例如，您组织中采购工作组的成员。
 
-| Role                         | 说明                                                                      |
+| 角色                         | 说明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | 计费配置文件所有者        | 管理计费配置文件的所有内容                                          |
 | 计费配置文件参与者  | 管理计费配置文件中的权限之外的所有内容                        |
@@ -70,7 +70,7 @@ ms.locfileid: "53394625"
 >
 > 只能将计费配置文件角色分配给贵组织的用户。
 
-## <a name="need-help-contact-support"></a>需要帮助？ 联系支持人员
+## <a name="need-help-contact-support"></a>需要帮助？ 联系技术支持部门
 
 如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
 

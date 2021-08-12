@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建 AutoPilot 配置文件，并应用到设备，以及编辑或删除配置文件或者从设备中删除配置文件。
-ms.openlocfilehash: 414243da88fb6f39f8e6067d19d49ffe955f725f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d2a3038346b7879006dc2eb50ebe2e70cc6fae92c020a38465cec9d468c638b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797182"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 
@@ -40,7 +40,7 @@ ms.locfileid: "51580246"
 
 配置文件适用于单个设备或一组设备，
   
-1. In the Microsoft 365 admin center， choose **Devices** \> **AutoPilot**.
+1. In the Microsoft 365 管理中心， choose **Devices** \> **AutoPilot**.
   
 2. 在 **AutoPilot 页面上** ，选择 **配置文件** 选项卡 \> **创建配置文件**。
     

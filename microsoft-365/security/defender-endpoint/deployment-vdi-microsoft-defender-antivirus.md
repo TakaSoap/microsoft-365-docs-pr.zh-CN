@@ -15,12 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: baec5e1e35c93213be67df1163113cfe3cb3dd29
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 8a4cd421121f9cfae94724bfaab29df2bf873ab8748f1605d68f5a9813f99102
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794362"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南
 
@@ -113,7 +113,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 2. 输入名称作为 **安全智能解压缩。** 转到触发器 **选项卡。** 选择新建 **...**  > **每天**，然后选择 **确定**。
 
-3. 转到"操作 **"** 选项卡。选择"**新建..."。** 在"程序/脚本 **"字段中输入** **PowerShell。** 在 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` "添加 **参数"字段中** 输入。 选择 **“确定”**。
+3. 转到"操作 **"** 选项卡。选择"**新建..."。** 在"程序/脚本 **"字段中输入** **PowerShell。** 在 `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` "添加 **参数"字段中** 输入。 选择“**确定**”。
 
 4. 如果需要，可以选择配置其他设置。
 
@@ -211,7 +211,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 3. 将策略设置为 **已启用**。
 
-4. 选择 **“确定”**。
+4. 选择“**确定**”。
 
 5. 像通常一样部署组策略对象。
 

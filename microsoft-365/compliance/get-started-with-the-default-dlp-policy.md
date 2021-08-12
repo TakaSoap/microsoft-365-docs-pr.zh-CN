@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用此报告来优化 DLP 策略中组织 (数据丢失) 防护。
-ms.openlocfilehash: 98f2a95d66860695034fa958969d1c195e9d58be
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: d2b140c6cd55896739c2500c7bc5a9196dfdf7e2e5971c4a45ef312acdcd75ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53408956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813979"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>开始使用默认 DLP 策略
 

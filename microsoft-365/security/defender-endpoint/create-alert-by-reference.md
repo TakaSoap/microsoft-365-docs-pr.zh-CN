@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9543ef45e568e742e6fd660a2408462de4874e57
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9ff52a2c2cd464552637a166708669c2ab4d00eece6bd6585603d2a33bf5a038
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794374"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -87,13 +87,13 @@ Content-Type | String | application/json. **必需**。
 属性 | 类型 | 说明
 :---|:---|:---
 eventTime | DateTime (UTC)  | 事件作为字符串的精确时间，从高级搜寻获取。 例如， ```2018-08-03T16:45:21.7115183Z``` **必需**。
-reportId | 字符串 | 事件的 reportId，从高级搜寻获取。 **必需**。
-machineId | 字符串 | 标识事件的设备 ID。 **必需**。
-severity | 字符串 | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
+reportId | String | 事件的 reportId，从高级搜寻获取。 **必需**。
+machineId | String | 标识事件的设备 ID。 **必需**。
+severity | String | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
 title | String | 警报的标题。 **必需**。
-说明 | 字符串 | 警报的说明。 **必需**。
-recommendedAction| 字符串 | 建议安全人员在分析警报时采取的操作。 **必需**。
-“类别”| 字符串 | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"DefenseMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
+说明 | String | 警报的说明。 **必需**。
+recommendedAction| String | 建议安全人员在分析警报时采取的操作。 **必需**。
+“类别”| String | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"DefenseMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
 
 ## <a name="response"></a>响应
 

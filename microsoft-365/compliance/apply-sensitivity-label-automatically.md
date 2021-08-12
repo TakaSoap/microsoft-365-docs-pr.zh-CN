@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 3f1d3a7ee191377a22f5411578f5e267c8e7d345
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0822ef527429e48f6eb301af0838081ed597b5d9c5b1cb6825f6a53cfb93d19a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836738"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -178,7 +178,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 

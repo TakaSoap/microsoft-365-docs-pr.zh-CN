@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 02cc958f816c2335a24923cf7fc16b80b9806d9c7811457e88080be50438ce48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814158"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 

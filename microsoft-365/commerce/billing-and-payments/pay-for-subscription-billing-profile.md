@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1d820f2d44719caf254b07aee279f1b8121106009e014afddd8fc121bd5d1cc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797130"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
@@ -219,7 +219,7 @@ ms.locfileid: "52331978"
 
 ## <a name="can-i-pay-my-invoice-online"></a>能否在线按发票支付？
 
-如果已针对帐单配置文件关闭定期计费，可以使用信用卡在线支付发票。 若要付款，请使用发票上的"现在支付"按钮，Microsoft 365管理中心。 若要查找发票，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md)。
+如果已针对帐单配置文件关闭定期计费，可以使用信用卡在线支付发票。 若要付款，请使用发票上的"现在支付"按钮Microsoft 365 管理中心。 若要查找发票，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我能否从当前的付款方式更改为按发票付款？
 

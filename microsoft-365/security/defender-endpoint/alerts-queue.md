@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 1c45bec7e38a849160a14adb3011a303085b00e6
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 478495601673a92075366d4497ac35f40c84172468b44926546d05c7b3b02edb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794459"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
@@ -59,7 +59,7 @@ ms.locfileid: "53648443"
 警报严重性 | 说明
 :---|:---
 High </br> (红色)  | 通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
-Medium </br> (橙色)  | 终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
+中 </br> (橙色)  | 终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
 低 </br> (黄色)  | 与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
 信息 </br> (灰色)  | 可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
 

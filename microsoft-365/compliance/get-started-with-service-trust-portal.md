@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 了解如何访问和使用 Microsoft 服务信任门户，以帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 38a5295d225df1ec04fba756b0e88639ab5c3dad7a67e8597456ca318f004d09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814052"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -69,7 +69,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 ### <a name="compliance-manager"></a>合规性管理器
 
 > [!IMPORTANT]
-> 合规性管理器已从服务信任门户移动到其Microsoft 365[位置](https://compliance.microsoft.com/)。 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在合规性Microsoft 365合规性管理器。
+> 合规性管理器已从服务信任门户移动到其[Microsoft 365 合规中心。](https://compliance.microsoft.com/) 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在 Microsoft 365 合规中心。
 
 ### <a name="trust-documents"></a>信任文档
 

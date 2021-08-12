@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 059ebba84f96a24f4ac855d7bb84c3abed64f0c3
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3b30d73572f6d1f0b67c7bdd434400cd28c86d5e1a69bc0fcda1410fe50a1df9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794424"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则来避免感染恶意软件
 
@@ -96,7 +96,7 @@ Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](/
 
 此外，当触发某些攻击面减少规则时，将生成警报。
 
-通知和生成的任何通知都可以在 Microsoft 365 Defender 门户 ()  (以前称为 Microsoft Defender 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 。 [](microsoft-defender-security-center.md)
+通知和生成的任何通知都可以在 Microsoft 365 Defender 门户中 ()  (以前称为 Microsoft 365 Defender [https://security.microsoft.com](https://security.microsoft.com)) 。 [](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高级搜寻和攻击面减少事件
 
