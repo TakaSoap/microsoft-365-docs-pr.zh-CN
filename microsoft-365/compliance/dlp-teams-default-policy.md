@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解默认数据丢失防护策略Microsoft Teams
-ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 6358ec692142aa5f2c47007133cb99ec080621f8452234f1260a65e5cd7f9c21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814240"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
 
 [数据丢失防护](dlp-learn-about-dlp.md)功能已扩展为包括Microsoft Teams消息，包括私人频道消息。 作为此版本的一部分，我们为首次Microsoft Teams客户创建了默认 DLP 策略。
 
-## <a name="applies-to"></a>适用于
+## <a name="applies-to"></a>适用对象
 
 通过以下一个或多个许可证获得许可并拥有活动许可证Teams租户
  
