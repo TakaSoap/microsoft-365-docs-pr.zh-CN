@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams类与具有"Learn 超"的类一同使用
-ms.openlocfilehash: a97d5bf56e1e045ccb0ef7cc66ecef7dfba4041a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: fc2bb1fa222dd47917d14c5c055c8f52fcbe7390
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454624"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726208"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>将Microsoft Teams类与具有"Learn 超"的类一同使用
 
@@ -54,7 +54,7 @@ ms.locfileid: "53454624"
 > [!NOTE]
 > 值得注意的是，默认情况下，机构电子邮件设置为所有 SIS格式的"个人电子邮件"，并且对于每个人必须是唯一的。  设置并运行的所有现有集成都将具有此数据映射，因为如果用户的电子邮件被复制，SIS 将无法导入用户。 如果机构需要能够将机构电子邮件更改为自定义，他们将需要通过 SIS **中的** 高级配置设置管理。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 该Microsoft Teams课程集成仅适用于 **超课程视图课程**。 你的机构需要完成这些要求以使用它：
 
@@ -178,5 +178,3 @@ ms.locfileid: "53454624"
    - 如果同意尚未获得批准，请按照所述的步骤生成许可 URL 并将其发送给全局管理员Microsoft 365进行审批。
 
 5. 确认审批后，选择"**重试** 以确认"，然后选择"提交 **"。**
-
-   ![指示您的访问已被阻止的对话框](media/blocked-access.png)

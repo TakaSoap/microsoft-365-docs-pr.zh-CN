@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 999363676c18ba2d24e2b35fa03081eb292ab650
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9d976ee46cc6feb7897e67294077b8a1fbaa0f12
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655415"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567844"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "53655415"
 - 虚拟桌面基础结构 (VDI) 设备
 - Windows 10、Windows Server 2019、Windows Server 2008R2/2012R2/2016
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)。
+>想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
 
@@ -89,13 +89,13 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 4. 根据你要实现的方法，请按照相应步骤操作：
 
-    - 对于每台设备的单个条目：
+   - 对于每台设备的单个条目：
    
-         选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
+     选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
    
-    - 对于每台设备的多个条目：
+   - 对于每台设备的多个条目：
    
-         选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
+     选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. 测试解决方案：
 
@@ -109,14 +109,13 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
       
    1. 根据你要实现的方法，请按照相应步骤操作：
 
-   - 对于每台设备的单个条目： 
+        - 对于每台设备的单个条目： 
 
-     仅检查门户中的Microsoft 365 Defender条目。
+            仅检查门户中的Microsoft 365 Defender条目。
 
-   - 对于每台设备的多个条目： 
+        - 对于每台设备的多个条目： 
 
-     在门户中检查Microsoft 365 Defender条目。
-
+            在门户中检查Microsoft 365 Defender条目。
 
 6. 单击 **导航窗格上的** "设备列表"。
 
@@ -178,7 +177,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 

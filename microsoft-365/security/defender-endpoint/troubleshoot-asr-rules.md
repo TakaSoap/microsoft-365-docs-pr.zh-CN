@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8d2798dd4f578218f4f4d24f1f2e582f04df596b
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: b671810bce375bfe2574315ea83cd3f939f025fa
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588001"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567916"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>针对 ATP ASR 规则报告 Microsoft Defender 并排除故障
 
@@ -32,14 +32,13 @@ ms.locfileid: "53588001"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-安全Microsoft 365中心是跨 Microsoft 标识、数据、设备、应用和基础结构监视和管理安全性的新界面。 可在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心旨在帮助安全管理员和安全操作团队更好地管理和保护其组织。 请访问 Microsoft 365安全中心 <https://security.microsoft.com> 。
-
+安全Microsoft 365中心是跨 Microsoft 标识、数据、设备、应用和基础结构监视和管理安全性的新界面。 可在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心旨在帮助安全管理员和安全操作团队更好地管理和保护其组织。 请访问 Microsoft 365安全中心 https://security.microsoft.com 。
 在Microsoft 365安全中心，我们将提供你当前 ASR 规则配置和您资产中的事件的完整外观。 请注意，你的设备必须载入到 Microsoft Defender for Endpoint 服务中，以填充这些报告。
-下面是报告设备攻击面减少Microsoft 365下的安全 ( \>  \> **屏幕截图**) 。 在设备级别 **，从攻击** 面减少规则 **窗格中选择配置** 。 将显示以下屏幕，可在其中选择特定设备并检查其单独的 ASR 规则配置。
+下面是报告设备攻击面减少Microsoft 365下的安全 (  >    >  **屏幕截图**) 。 在设备级别 **，从攻击** 面减少规则 **窗格中选择配置** 。 将显示以下屏幕，可在其中选择特定设备并检查其单独的 ASR 规则配置。
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR 规则屏幕":::
 
-## <a name="microsoft-defender-for-endpoint---advanced-hunting"></a>Microsoft Defender for Endpoint - 高级搜寻
+## <a name="microsoft-defender-for-endpoint--advanced-hunting"></a>Microsoft Defender for Endpoint – 高级搜寻
 
 Microsoft Defender for Endpoint 的最强大功能之一是高级搜寻。 如果你不熟悉高级搜寻，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
@@ -70,9 +69,7 @@ Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法
 下面是一些其他一些信息源，Windows ASR 规则的影响和操作疑难解答。
 
 ### <a name="querying-which-rules-are-active"></a>查询哪些规则处于活动状态
-
-确定 ASR 规则是否已启用的最简单方法是通过 PowerShell cmdlet Get-MpPreference。
-
+确定 ASR 规则是否已启用的最简单方法之一是，通过 PowerShell cmdlet Get-MpPreference。
 示例如下：
 
 :::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="get mppreference 脚本":::
@@ -83,24 +80,19 @@ Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法
 
 示例：
 
-```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
-```
+*Get-MPPreference |Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids*
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="get mpreference 示例":::
 
 上面显示了 ASR 规则的所有设置不同于 0 的 ID， (未配置) 。
 
-然后，下一步是列出每个 (配置) 的"阻止"或"审核"操作。
+然后，下一步是列出每个 (配置) 的"阻止"或"审核"操作。 
 
-```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
-```
+*Get-MPPreference |Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions*
 
 :::image type="content" source="images/getmpref-example2new.png" alt-text="get mppreference 示例 2":::
 
 ### <a name="querying-blocking-and-auditing-events"></a>查询阻止和审核事件
-
 可以在活动日志中查看 ASR 规则Windows Defender事件。
 
 若要访问它，请Windows事件查看器，并浏览到应用程序和服务日志  >  **Microsoft** Windows Windows Defender  >    >    >  **操作**。
@@ -108,7 +100,6 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="事件查看器 scr":::
 
 ## <a name="microsoft-defender-malware-protection-logs"></a>Microsoft Defender 恶意软件保护日志
-
 您还可以通过称为 的专用命令行工具查看规则Microsoft Defender 防病毒，该工具可用于管理和配置任务，并 `*mpcmdrun.exe*` 根据需要自动执行任务。
 
 您可以在 *%ProgramFiles%\Windows Defender\MpCmdRun.exe找到此实用工具*。 必须从提升的命令提示符运行 (，即以管理员角色) 。
@@ -121,6 +112,6 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 最相关的文件如下所示：
 
-- **MPOperationalEvents.txt：** 此文件包含在事件查看器中找到的相同级别的信息，Windows Defender操作日志。
-- **MPRegistry.txt：** 在此文件中，你可以分析所有当前Windows Defender配置，从捕获支持日志开始。
-- **MPLog.txt：** 此日志包含有关项目的所有操作Windows Defender。
+- **MPOperationalEvents.txt** - 此文件包含事件查看器中有关Windows Defender日志的相同级别的信息。
+- **MPRegistry.txt** – 在此文件中，你可以分析所有当前Windows Defender配置，从捕获支持日志开始。
+- **MPLog.txt** – 此日志包含有关项目的所有操作Windows Defender。

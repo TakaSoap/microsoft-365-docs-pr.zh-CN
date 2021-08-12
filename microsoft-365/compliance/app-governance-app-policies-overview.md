@@ -2,8 +2,8 @@
 title: 了解应用策略
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解应用策略。
-ms.openlocfilehash: 437ad69799edc45f21512cf60f385b86a9266fc3
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 09542f967a02ab475a8726dff51456b4993fb18e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53621723"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541261"
 ---
 # <a name="learn-about-app-policies"></a>了解应用策略
 

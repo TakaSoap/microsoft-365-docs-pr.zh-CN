@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 493273f9827680205714cd53ef12ea327b15ddf993c2ba8e58d31bbca83f1cdd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1386732325b831d176c662d821a2bb13d5e96739
+ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890684"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53595854"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -139,7 +139,6 @@ netsh winhttp reset proxy
 |
 
 如果代理或防火墙启用了 HTTPS 扫描（SSL 检查），则从 HTTPS 扫描中排除上表中列出的域。
-在防火墙中，打开地理位置列为 WW 的所有 URL。 对于地理位置列不是 WW 的行，打开特定数据位置的 URL。 若要验证数据位置设置，请参阅验证 [数据存储位置并更新 Microsoft Defender for Endpoint 的数据保留设置](/microsoft-365/security/defender-endpoint/data-retention-settings)。
 
 > [!NOTE]
 > settings-win.data.microsoft.com 运行版本 1803 或Windows 10的设备时，才需要此配置。<br>
@@ -193,9 +192,9 @@ netsh winhttp reset proxy
 
 验证代理配置是否成功完成，WinHTTP 是否可以在你的环境中发现代理服务器并通过代理服务器进行通信，以及代理服务器是否允许到 Defender for Endpoint 服务 URL 的通信。
 
-1. 将 [Microsoft Defender for Endpoint Client Analyzer 工具](https://aka.ms/mdeanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
+1. 将 [MDATP 客户端分析器工具](https://aka.ms/mdatpanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
 
-2. 提取设备上MDEClientAnalyzer.zip内容。
+2. 提取设备上 MDATPClientAnalyzer.zip 的内容。
 
 3. 打开提升的命令行：
    1. 转到“**开始**”并键入“**cmd**”。
@@ -204,20 +203,20 @@ netsh winhttp reset proxy
 4. 输入以下命令，再按 **Enter**：
 
     ```PowerShell
-    HardDrivePath\MDEClientAnalyzer.cmd
+    HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    将 *HardDrivePath* 替换为下载 MDEClientAnalyzer 工具的路径，例如：
+    将 *HardDrivePath* 替换为下载 MDATPClientAnalyzer 工具的路径，例如：
 
     ```PowerShell
-    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
+    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
     ```
 
-5. 提取 *MDEClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中创建的文件。
+5. 提取 *MDATPClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中创建的文件。
 
-6. 打开 *MDEClientAnalyzerResult.txt* 并验证是否执行了代理配置步骤，以启用服务器发现和访问服务 URL。
+6. 打开 *MDATPClientAnalyzerResult.txt* 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。
 
-   该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它会将每个 URL的结果输出到MDEClientAnalyzerResult.txt文件中，这些 URL 可能用于与 Defender for Endpoint 服务进行通信。 例如：
+   该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它将结果打印到每个可能用于与 Defender for Endpoint 服务进行通信的 URL 的 *MDATPClientAnalyzerResult.txt* 文件中。 例如：
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -233,7 +232,7 @@ netsh winhttp reset proxy
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后，可以使用在代理服务器 中启用对 Defender [for Endpoint 服务 URL](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)的访问中显示的表中的 URL。 将使用的 URL 取决于在载入过程中选择的区域。
 
 > [!NOTE]
-> 连接分析器工具云连接检查与攻击面减少规则阻止源自 [PSExec](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建不兼容。 需要暂时禁用此规则才能运行连接工具。 或者，可以在运行分析器时临时添加 [ASR](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) 排除项。
+> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
 >
 > 当在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到直接。
 

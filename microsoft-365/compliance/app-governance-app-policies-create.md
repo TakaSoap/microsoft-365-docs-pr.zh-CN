@@ -2,8 +2,8 @@
 title: 创建应用策略
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建应用策略。
-ms.openlocfilehash: 19056c235fdcd88de20b68bbb473a9b7dcfd3e3c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 70c22201c64e5fa1d4b77eec922fb53f75abfe6b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656555"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541346"
 ---
 # <a name="create-app-policies"></a>创建应用策略
 
@@ -48,40 +48,28 @@ ms.locfileid: "53656555"
 
 应用治理包含这些用于生成应用使用警报的模板。
 
-<br>
-
-****
-
-|模板名称|说明|
-|---|---|
-|具有大量数据访问的新应用|突出显示具有大量数据访问的最近注册应用，以确保这些数据模式符合预期。 <p> 默认情况下，此策略将标记过去 7 天内注册并且在该期间数据访问超过 1 GB 的所有应用。此策略可通过更多条件和操作进行自定义。|
+| 模板名称 | 说明 |
+|:-------|:-----|
+| 具有大量数据访问的新应用 | 突出显示具有大量数据访问的最近注册应用，以确保这些数据模式符合预期。 <br><br> 默认情况下，此策略将标记过去 7 天内注册并且在该期间数据访问超过 1 GB 的所有应用。此策略可通过更多条件和操作进行自定义。 |
 |||
 
 ### <a name="app-permissions"></a>应用权限
 
 应用治理包含这些用于生成应用权限警报的模板。
 
-<br>
-
-****
-
-|模板名称|说明|
-|---|---|
-|特权过多的应用|突出显示授予的权限超过那些应用使用的权限的应用，以确定可能减少权限的机会。 <p> 默认情况下，如果 90 天内未使用，此策略将标记所有标记为“特权过多”的应用。 可以使用更多条件和操作自定义此时间段过滤器。|
-|具有高特权权限的新应用|突出显示所有具有高特权权限的新应用，以确定可能需要进一步调查的潜在高占用空间应用。 <p> 默认情况下，此策略将标记所有在过去 7 天内注册的、具有高范围权限的应用。|
+| 模板名称 | 说明 |
+|:-------|:-----|
+| 特权过多的应用 | 突出显示授予的权限超过那些应用使用的权限的应用，以确定可能减少权限的机会。 <br><br> 默认情况下，如果 90 天内未使用，此策略将标记所有标记为“特权过多”的应用。 可以使用更多条件和操作自定义此时间段过滤器。 |
+| 具有高特权权限的新应用 | 突出显示所有具有高特权权限的新应用，以确定可能需要进一步调查的潜在高占用空间应用。 <br><br> 默认情况下，此策略将标记所有在过去 7 天内注册的、具有高范围权限的应用。 |
 |||
 
 ### <a name="m365-certification"></a>M365 认证
 
 应用治理包含这些用于生成 M365 认证警报的模板。
 
-<br>
-
-****
-
-|模板名称|说明|
-|---|---|
-|未经认证的新应用|突出显示尚未通过 M365 认证流程的新应用，以确保其在租户中符合预期。 <p> 默认情况下，此策略将标记所有在过去 7 天内注册且未经认证的应用。|
+| 模板名称 | 说明 |
+|:-------|:-----|
+| 未经认证的新应用 | 突出显示尚未通过 M365 认证流程的新应用，以确保其在租户中符合预期。 <br><br> 默认情况下，此策略将标记所有在过去 7 天内注册且未经认证的应用。 |
 |||
 
 ## <a name="custom-app-policies"></a>自定义应用策略
@@ -118,29 +106,25 @@ ms.locfileid: "53656555"
 
 以下是自定义应用策略的可用条件。
 
-<br>
-
-****
-
-|条件|接受的条件值|详细信息|
-|---|---|---|
-|应用注册年龄|过去 X 天内||
-|应用认证|基本合规性、MCAS 合规性或 N/A|[Microsoft 365 认证](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
-|发布者验证|是或否|[发布者验证](/azure/active-directory/develop/publisher-verification-overview)|
-|应用程序权限|从列表中选择一个或多个 API 权限|[Microsoft Graph 权限参考](/graph/permissions-reference)|
-|委托的权限|从列表中选择一个或多个 API 权限|[Microsoft Graph 权限参考](/graph/permissions-reference)|
-|高权限|是或否|这是基于 MCAS 使用的相同逻辑的内部指定。|
-|特权过多的应用|是或否|授予的权限超过那些应用使用的权限的应用。|
-|应用数据访问|每小时数据访问量超过 X GB||
-|应用数据访问趋势|过去 7 天内数据使用量增加 X%||
-|应用 API 访问|每小时 API 调用数超过 X||
-|应用 API 访问趋势|过去 7 天内 API 调用数增加 X%||
-|同意的用户|同意的用户(超过或不足)X||
-|同意的优先用户|是或否|具有 [优先级帐户](/microsoft-365/admin/setup/priority-accounts) 的用户。|
-|应用同意者|从列表中选择用户||
-|认可用户的角色|选择一个或多个: Teams 管理员、目录读取者、安全信息读取者、合规性管理员、安全管理员、帮助台管理员、SharePoint 管理员、Exchange 管理员、全局读取者、全局管理员、合规性数据管理员、用户管理员、服务支持管理员|允许多个选择。 <p> 此列表中应提供具有已分配成员的 Azure AD 角色。|
-|已访问的工作负载|OneDrive 和/或 SharePoint 和/或 Exchange|允许多个选择。|
-|错误率|在过去 7 天内，错误率大于 X%，其中 X 为管理员定义的值||
+|条件 | 接受的条件值 | 详细信息 |
+|:-------|:-----|:-------|
+| 应用注册年龄 | 过去 X 天内 |  |
+| 应用认证 | 基本合规性、MCAS 合规性或 N/A | [Microsoft 365 认证](https://docs.microsoft.com/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+| 发布者验证 | 是或否 | [发布者验证](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview) |
+| 应用程序权限 | 从列表中选择一个或多个 API 权限 | [Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference) |
+| 委托的权限 | 从列表中选择一个或多个 API 权限 | [Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference) |
+| 高权限 | 是或否 | 这是基于 MCAS 使用的相同逻辑的内部指定。 |
+| 特权过多的应用 | 是或否 | 授予的权限超过那些应用使用的权限的应用。 |
+| 应用数据访问 | 每小时数据访问量超过 X GB |  |
+| 应用数据访问趋势 | 过去 7 天内数据使用量增加 X% |  |
+| 应用 API 访问 | 每小时 API 调用数超过 X |  |
+| 应用 API 访问趋势 | 过去 7 天内 API 调用数增加 X%     |  |
+| 同意的用户 | 同意的用户(超过或不足)X |  |
+| 同意的优先用户 | 是或否 | 具有 [优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 的用户。 |
+| 应用同意者 | 从列表中选择用户 |  |
+| 正在同意的用户角色 | 选择一个或多个: Teams 管理员、目录读取者、安全信息读取者、合规性管理员、安全管理员、帮助台管理员、SharePoint 管理员、Exchange 管理员、全局读取者、全局管理员、合规性数据管理员、用户管理员、服务支持管理员 | 允许多个选择。 <br><br> 此列表中应提供具有已分配成员的 Azure AD 角色。 |
+| 已访问的工作负载 | OneDrive 和/或 SharePoint 和/或 Exchange | 允许多个选择。 |
+| 错误率 | 在过去 7 天内，错误率大于 X%，其中 X 为管理员定义的值 |  |
 ||||
 
 必须满足所有指定的条件，此应用策略才能生成警报。
@@ -167,7 +151,7 @@ Publish metadata-based policies
 
 ## <a name="test-and-monitor-your-new-app-policy"></a>测试并监视新的应用策略
 
-现在，应用策略已经创建，你应在 **策略** 页面中进行监视，以确保在测试期间其注册的活动警报数和警报总数符合预期。
+现在，应用策略已经创建，你应在 **策略** 页面中进行监视，以确保在测试期间其注册的活动警报数和警报总数符合预期。 
 
 ![Microsoft 365 合规中心中的 MAPG 策略摘要页面，其中突出显示了某项策略](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 

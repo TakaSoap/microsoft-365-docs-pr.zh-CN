@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c35ce53c28beb83232edb5c1cb805b6f6e51ce1c92f10e21ecb0d6b655e76c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b2d4817849d3008c231015b805b13b0a1abdb4af
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792979"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567652"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>软件清单 - 危险和漏洞管理
 
@@ -34,9 +34,9 @@ ms.locfileid: "53792979"
 - [威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
+>想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-危险和漏洞管理软件清单是组织中具有正式通用平台枚举的已知软件列表 ([CPE) 。 ](https://nvd.nist.gov/products/cpe) 没有正式 CPE 的软件产品没有发布漏洞。 它还包括供应商名称、漏洞数量、威胁和公开设备数量等详细信息。
+危险和漏洞管理软件清单是组织中具有正式通用平台枚举的已知软件列表 ([CPE) 。 ](https://nvd.nist.gov/products/cpe) 没有官方 CPE 的软件产品不发布漏洞。 它还包括供应商名称、漏洞数量、威胁和公开设备数量等详细信息。
 
 ## <a name="how-it-works"></a>运作方式
 
@@ -107,11 +107,12 @@ ms.locfileid: "53792979"
 - 包含供应商信息的侧面板、组织中软件的普遍程度 (包括其安装的设备数量，以及未修补) 的公开设备、是否可用和攻击，以及你的曝光评分。
 - 显示漏洞和错误配置的数量和严重性的数据可视化。 此外，使用公开的设备数的图形。
 - 显示以下信息的选项卡：
-  - 针对所识别的漏洞的相应安全建议。
-  - 发现的漏洞的命名 CVEs。
-  - 安装了软件的设备 (设备名称、域、操作系统等) 。
-  - 软件版本列表 (包括安装版本的设备数、发现的漏洞数以及安装的设备名称) 。
+    - 针对所识别的漏洞的相应安全建议。
+    - 发现的漏洞的命名 CVEs。
+    - 安装了软件的设备 (设备名称、域、操作系统等) 。
+    - 软件版本列表 (包括安装版本的设备数、发现的漏洞数以及安装的设备名称) 。
 
+    ![2017 Visual Studio软件详细信息、漏洞、公开设备等的 2017 软件示例页面。](images/tvm-software-page-example.png)
     :::image type="content" alt-text="2017 Visual Studio软件详细信息、漏洞、公开设备等的 2017 软件示例页面。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy

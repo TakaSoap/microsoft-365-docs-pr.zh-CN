@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3d4e13c5884edc562e1a791c2435148320cf485
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b9311844bbe7bffa0d22d064f4a285af755d0432
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622864"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726184"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -70,7 +70,7 @@ ms.locfileid: "53622864"
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
 |**键**|enableRealTimeProtection|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
@@ -87,7 +87,7 @@ ms.locfileid: "53622864"
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
 |**键**|passiveMode|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Microsoft Defender 中可用。|
 
@@ -167,7 +167,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
 |**键**|isDirectory|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
 
@@ -309,7 +309,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
 |**键**|enabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -331,7 +331,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
 |**键**|automaticSampleSubmission|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
@@ -341,7 +341,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 |节|值|
 |:---|:---|
 |**键**|automaticDefinitionUpdateEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|true (默认值)  <p> false|
 
 ### <a name="user-interface-preferences"></a>用户界面首选项
@@ -363,7 +363,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
 |**键**|hideStatusMenuIcon|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 
 #### <a name="show--hide-option-to-send-feedback"></a>显示/隐藏发送反馈的选项
@@ -398,7 +398,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 |节|值|
 |:---|:---|
 |**域**|`com.microsoft.wdav`|
-|**键**|标记|
+|**键**|tags|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 
@@ -581,6 +581,8 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
         <true/>
         <key>passiveMode</key>
         <false/>
+        <key>maximumOnDemandScanThreads</key>
+        <integer>1</integer>
         <key>exclusions</key>
         <array>
             <dict>
@@ -731,6 +733,8 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
                     <true/>
                     <key>passiveMode</key>
                     <false/>
+                    <key>maximumOnDemandScanThreads</key>
+                    <integer>1</integer>
                     <key>exclusions</key>
                     <array>
                         <dict>
@@ -870,7 +874,7 @@ com.microsoft.wdav.plist: OK
 
 5. 打开配置文件并上载 `com.microsoft.wdav.xml` 文件。  (此文件是在步骤 3.) 
 
-6. 选择 **“确定”**。
+6. 选择“**确定**”。
 
 7. 选择 **"管理**  >  **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
 

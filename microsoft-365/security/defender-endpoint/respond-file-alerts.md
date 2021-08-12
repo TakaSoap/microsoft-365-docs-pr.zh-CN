@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 813a6e425801bbcad24255839e9f6250aaefa87599f51a45d1adecb29efc9245
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57494202a401edd920ac43defc40f6bebcde778a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793065"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541681"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -33,7 +33,7 @@ ms.locfileid: "53793065"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-responddile-abovefoldlink)。
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 通过停止和隔离文件或阻止文件来快速响应检测到的攻击。 对文件采取操作后，可以在操作中心查看活动详细信息。
 
@@ -51,17 +51,12 @@ ms.locfileid: "53793065"
 
 某些操作需要某些权限。 下表介绍了某些权限对 PE 文件和非 PE (可执行文件) 的操作：
 
-<br>
-
-****
-
-|权限|PE 文件|非 PE 文件|
-|:---------------------|:------:|:----------:|
-|查看数据|X|X|
-|警报调查|&#x2611;|X|
-|实时响应基本|X|X|
-|实时响应高级|&#x2611;|&#x2611;|
-|
+| 权限             | PE 文件 | 非 PE 文件 |
+| :--------------------- | :------: | :----------: |
+| 查看数据              |     X    |       X      |
+| 警报调查   | &#x2611; |       X      |
+| 实时响应基本    |     X    |       X      |
+| 实时响应高级 | &#x2611; |   &#x2611;   |
 
 有关角色详细信息，请参阅为基于角色的访问控制 [创建和管理角色](user-roles.md)。
 
@@ -102,7 +97,7 @@ ms.locfileid: "53793065"
    ![停止和隔离文件模式窗口的图像](images/atp-stop-quarantine.png)
 
    操作中心显示提交信息：
-
+   
    ![停止和隔离文件操作中心的图像](images/atp-stopnquarantine-file.png)
 
    - **提交时间** - 显示提交操作的时间。
@@ -112,8 +107,7 @@ ms.locfileid: "53793065"
 
 4. 选择任何状态指示器以查看有关操作详细信息。 例如，选择 **"失败** "以查看操作失败的地方。
 
-#### <a name="notification-on-device-user"></a>有关设备用户的通知
-
+**有关设备用户的通知**：</br>
 从设备中删除文件时，将显示以下通知：
 
 ![设备用户通知的图像](images/atp-notification-file.png)
@@ -130,12 +124,12 @@ ms.locfileid: "53793065"
 
    1. 转到“**开始**”并键入“_cmd_”。
 
-   1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
+   1. 右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。
 
 2. 输入以下命令，然后按 **Enter：**
 
-   ```dos
-   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+   ```console
+   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
    > [!NOTE]
@@ -150,31 +144,9 @@ ms.locfileid: "53793065"
 
 通过 **响应** 操作选择"下载文件"，可以下载包含.zip受密码保护的本地文件。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
 
-默认情况下，您应该能够下载隔离的文件。
+默认情况下，你将无法下载隔离的文件。
 
 ![下载文件操作的图像](images/atp-download-file-action.png)
-
-### <a name="download-quarantined-files"></a>下载隔离文件
-
-已由安全组或Microsoft Defender 防病毒隔离的文件将按照你的示例提交配置以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
-
-位置取决于组织的地理位置设置 (欧盟、英国或美国) 。 每个组织只能收集一次隔离文件。 若要详细了解 Microsoft 数据保护，请通过 服务信任门户了解 https://aka.ms/STP 。
-
-启用此设置可帮助安全团队检查潜在的错误文件，并快速且风险较低地调查事件。 但是，如果你需要关闭此设置，请转到设置  >  **终结点** 高级  >  **功能**  >  **下载隔离** 文件以调整设置。 [详细了解高级功能](advanced-features.md)
-
-#### <a name="backing-up-quarantined-files"></a>备份隔离的文件
-
-系统可能会提示用户在备份隔离文件之前提供显式同意，具体取决于你的 [示例提交配置](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection)。
-
-如果关闭示例提交，此功能将不起作用。 如果将自动提交示例设置为向用户请求权限，则仅收集用户同意发送的示例。
-
->[!IMPORTANT]
->下载隔离文件要求：
->- 你的组织在Microsoft Defender 防病毒模式下使用用户 
->- 防病毒引擎版本为 1.1.17300.4 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- 启用基于云的保护。 请参阅 [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)
->- 示例提交已打开
->- 设备具有 Windows 10 版本 1703 或更高版本，或 Windows Server 2016 或 2019
 
 ### <a name="collect-files"></a>收集文件
 
@@ -203,7 +175,6 @@ ms.locfileid: "53793065"
 ### <a name="enable-the-block-file-feature"></a>启用阻止文件功能
 
 若要开始阻止文件，首先需要打开"[](advanced-features.md)阻止或允许"设置。
-
 ### <a name="allow-or-block-file"></a>允许或阻止文件
 
 为文件添加指示器哈希时，可以选择引发警报，并阻止组织中设备尝试运行该文件。
@@ -248,11 +219,10 @@ ms.locfileid: "53793065"
 
 深度分析结果与威胁智能匹配，任何匹配都将生成相应的警报。
 
-使用深度分析功能调查任何文件的详细信息，通常是在调查警报期间或出于任何其他怀疑恶意行为的原因。 此功能在文件的配置文件页上 **的** "深入分析"选项卡中提供。
+使用深度分析功能调查任何文件的详细信息，通常是在调查警报期间或出于任何其他怀疑恶意行为的原因。 此功能在文件的配置文件页上 **的** "深入分析"选项卡中提供。<br/>
+<br/>
 
-<br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
 **当文件在** Defender for Endpoint 后端示例集合中可用时，或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
 
@@ -282,7 +252,7 @@ ms.locfileid: "53793065"
    将显示一个进度栏，并提供有关分析的不同阶段的信息。 然后，您可以在分析完成时查看报告。
 
 > [!NOTE]
-> 根据设备可用性，示例收集时间可能会有所不同。 示例集合有 3 小时超时。 如果当时没有联机设备报告，该集合Windows 10将中止操作。 你可以重新提交文件进行深入分析，以获得文件的新数据。
+> 根据设备可用性，示例收集时间可能会有所不同。 示例集合有 3 小时超时。 如果当时没有联机设备报告，该集合Windows 10将中止操作。 你可以重新提交文件进行深入分析，获取文件的新数据。
 
 ### <a name="view-deep-analysis-reports"></a>查看深入分析报告
 
@@ -312,18 +282,18 @@ ms.locfileid: "53793065"
 
 4. 如果未配置示例集合策略，则默认行为是允许示例集合。 如果已配置，请验证策略设置是否允许示例收集，然后再重新提交文件。 配置示例集合后，请检查以下注册表值：
 
-    ```text
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 - block sample collection
-      Value = 1 - allow sample collection
+      Value = 0 – block sample collection
+      Value = 1 – allow sample collection
     ```
 
-5. 通过组策略更改组织单位。 有关详细信息，请参阅使用 [组策略配置](configure-endpoints-gp.md)。
+1. 通过组策略更改组织单位。 有关详细信息，请参阅使用 [组策略配置](configure-endpoints-gp.md)。
 
-6. 如果这些步骤无法解决问题，请与联系[winatp@microsoft.com。](mailto:winatp@microsoft.com)
+1. 如果这些步骤无法解决问题，请与联系[winatp@microsoft.com。](mailto:winatp@microsoft.com)
 
 ## <a name="related-topics"></a>相关主题
 

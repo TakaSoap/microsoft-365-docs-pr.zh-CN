@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b74ff33fe2ed2581e033511b6ee8069696439a58
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591171"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726196"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -30,9 +30,6 @@ ms.locfileid: "53591171"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> 本文介绍的功能在预览版中，并非对所有人都可用，并且可能会更改。
 
 若要在默认情况下保证[](secure-by-default.md)组织安全，Exchange Online Protection (EOP) 不允许对标识为恶意软件或高可信度网络钓鱼的邮件进行安全列表或筛选绕过。 但是，有一些特定方案需要传递未筛选的邮件。 例如：
 
@@ -65,7 +62,7 @@ ms.locfileid: "53591171"
 
 - 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到高级传递 **页面，** 请打开 <https://security.microsoft.com/advanceddelivery> 。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
+- 若要连接到安全与合规中心 PowerShell，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 - 您需获得权限，然后才能执行本文中的过程：
   - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组的成员**。 
@@ -106,7 +103,13 @@ ms.locfileid: "53591171"
 
 3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置： 
 
+地址 `5321.MailFrom` (**MAIL FROM** 地址、P1 发件人或信封发件人) 是在邮件的 SMTP 传输中使用的电子邮件地址。
+
    - 发送域：展开此设置并输入至少一个电子邮件地址域 (例如，contoso.com) 方法是单击该框，输入值，然后按 Enter 或选择显示在框下方的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
+
+     > [!NOTE]
+     > 使用地址中的域 (SMTP 传输中使用的邮件发件人地址、P1 发件人或) 发件人 `5321.MailFrom` 地址。  此电子邮件地址通常记录在邮件头的 **"返回** 路径"头字段中。
+
    - **发送 IP：** 展开此设置，并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值包含:
      - 单个 IP：例如，192.168.1.1。
      - IP 范围：例如，192.168.0.1-192.168.0.254。
@@ -132,9 +135,9 @@ ms.locfileid: "53591171"
 
 - 正在审查 **的** 误报：你可能希望暂时允许 Microsoft 通过管理员提交仍在分析的某些邮件，以报告被 [](admin-submission.md)错误地标记为对 Microsoft (误报错误的已知) 。 与所有替代一样， **_我们强烈建议这些_** 允许是临时的。
 
-## <a name="exchange-online-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Exchange Online高级传递策略中 SecOps 邮箱的 PowerShell 过程
+## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>安全&中心高级传递策略中针对 SecOps 邮箱的 PowerShell 过程
 
-在 Exchange Online PowerShell 中，高级传递策略中 SecOps 邮箱的基本元素为：
+在安全&中心 PowerShell 中，高级传递策略中 SecOps 邮箱的基本元素为：
 
 - **SecOps 覆盖策略**：由 **\* -SecOpsOverridePolicy** cmdlet 控制。
 - **SecOps 重写规则**：由 **\* -SecOpsOverrideRule** cmdlet 控制。
@@ -178,7 +181,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 ```
 
-**注意**：**无论指定 Name 值如何，规则名称将为 SecOpsOverrideRule，其中是唯一的 GUID 值 \<GUID\> (例如 \<GUID\> ，6fed4b63-3563-495d-a481-b24a311f8329) 。
+**注意**：无论指定 Name 值如何，规则名称将为 SecOpsOverrideRule，其中是唯一的 GUID 值 (例如 \<GUID\> \<GUID\> ，6fed4b63-3563-495d-a481-b24a311f8329) 。
 
 有关语法和参数的详细信息，请参阅 [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule)。
 
@@ -262,9 +265,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 有关语法和参数的详细信息，请参阅 [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule)。
 
-## <a name="exchange-online-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Exchange Online高级传递策略中第三方网络钓鱼模拟的 PowerShell 过程
+## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>安全&高级传递策略中第三方网络钓鱼模拟的合规性中心 PowerShell 过程
 
-在 Exchange Online PowerShell 中，高级传递策略中第三方网络钓鱼模拟的基本元素为：
+在安全&合规中心 PowerShell 中，高级传递策略中第三方网络钓鱼模拟的基本元素为：
 
 - **网络钓鱼模拟替代策略**：由 **\* -PhishSimOverridePolicy** cmdlet 控制。
 - **网络钓鱼模拟替代规则**：由 **\* -PhishSimOverrideRule** cmdlet 控制。
@@ -297,7 +300,7 @@ New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>步骤 2：使用 PowerShell 创建网络钓鱼模拟替代规则
 
-使用以下语法：
+使用以下语法:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>

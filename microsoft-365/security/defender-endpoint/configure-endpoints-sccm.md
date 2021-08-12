@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 011008d5c8976e056cacfdba344e8ef0f1a45406
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8f12185a9ef7f988aecfa6a807ff707f5102e18c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651455"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568108"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用Windows 10管理器载入新设备
 
@@ -35,7 +35,7 @@ ms.locfileid: "53651455"
 - Microsoft Endpoint Configuration Manager当前分支
 - 系统中心 2012 R2 配置管理器
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)。
+>想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>支持的客户端操作系统
 
@@ -87,14 +87,14 @@ ms.locfileid: "53651455"
     a. 选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> 在 [OOBE ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 体验阶段，Defender for Endpoint 不支持 (载入) 阶段。 确保用户在运行完安装或升级Windows OOBE。
+> 在 [OOBE ](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 体验阶段，Defender for Endpoint 不支持 (载入) 阶段。 确保用户在运行完安装或升级Windows OOBE。
 
-> [!TIP]
+>[!TIP]
 > 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
 > 如果由于挂起的 OOBE (或其他任何原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
->
+> 
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
 有关详细信息，请参阅[Configure Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
@@ -103,8 +103,8 @@ ms.locfileid: "53651455"
 
 对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
 
-> [!NOTE]
-> 这些配置设置通常通过 Configuration Manager 完成。
+>[!NOTE]
+>这些配置设置通常通过 Configuration Manager 完成。
 
 可以在 Configuration Manager 中为配置项设置合规性规则，以更改设备上的示例共享设置。
 
@@ -112,62 +112,58 @@ ms.locfileid: "53651455"
 
 通过以下注册表项设置配置：
 
-```text
+```console
 Path: "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-其中 Key 类型为 D-WORD。 可能的值是：
-
-- 0：不允许从此设备进行示例共享
-- 1：允许从此设备共享所有文件类型
+其中：<br>
+键类型为 D-WORD。 <br>
+可能的值是：
+- 0 - 不允许从此设备共享示例
+- 1 - 允许从此设备共享所有文件类型
 
 如果注册表项不存在，则默认值为 1。
 
 有关合规性System Center Configuration Manager，请参阅[System Center 2012 R2 Configuration Manager 中的合规性设置简介](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
-## <a name="other-recommended-configuration-settings"></a>其他建议的配置设置
 
+## <a name="other-recommended-configuration-settings"></a>其他建议的配置设置
 将设备载入服务后，必须利用包含的威胁防护功能，通过以下建议的配置设置启用这些功能。
 
 ### <a name="device-collection-configuration"></a>设备集合配置
-
 如果你使用的是 Endpoint Configuration Manager 版本 2002 或更高版本，可以选择扩大部署范围以包括服务器或低级别客户端。
 
-### <a name="next-generation-protection-configuration"></a>下一代保护配置
 
+### <a name="next-generation-protection-configuration"></a>下一代保护配置
 建议使用以下配置设置：
 
-#### <a name="scan"></a>扫描
-
+**扫描** <br>
 - 扫描可移动存储设备（如 USB 驱动器）：是
 
-#### <a name="real-time-protection"></a>实时保护
-
+**实时保护** <br>
 - 启用行为监视：是
 - 在下载时和安装之前启用对可能不需要的应用程序的保护：是
 
-#### <a name="cloud-protection-service"></a>云保护服务
-
+**云保护服务**
 - 云保护服务成员身份类型：高级成员身份
 
-#### <a name="attack-surface-reduction"></a>攻击面减少
+**攻击面减少** 将所有可用规则配置为审核。
 
-将所有可用规则配置为审核。
-
-> [!NOTE]
+>[!NOTE]
 > 阻止这些活动可能会中断合法的业务流程。 最佳方法是设置要审核的所有内容，确定哪些内容可安全打开，然后在没有误报检测的终结点上启用这些设置。
 
-#### <a name="network-protection"></a>网络保护
 
-在审核或阻止模式下启用网络保护之前，请确保你已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
+**网络保护** <br>
+在审核或阻止模式下启用网络保护之前，请确保你已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
-#### <a name="controlled-folder-access"></a>受控文件夹访问
 
+**受控文件夹访问**<br>
 在审核模式下启用该功能至少 30 天。 在此时间段后，检查检测并创建允许写入受保护目录的应用程序列表。
 
 有关详细信息，请参阅评估 [受控文件夹访问权限](evaluate-controlled-folder-access.md)。
+
 
 ## <a name="offboard-devices-using-configuration-manager"></a>使用 Configuration Manager 的载出设备
 
@@ -184,19 +180,24 @@ Value: 0 or 1
 
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
+
     1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >   **""载出"。**
+
     1. 选择Windows 10操作系统。
+
     1. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
+    
     1. 选择 **"下载程序包**"，然后保存.zip文件。
 
 2. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 3. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))一文中的步骤部署程序包。
 
-   选择要将程序包部署到的预定义设备集合。
+    a. 选择要将程序包部署到的预定义设备集合。
 
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
+
 
 ## <a name="monitor-device-configuration"></a>监视设备配置
 
@@ -239,7 +240,6 @@ Value: "1"
 有关详细信息，请参阅 introduction [to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
 ## <a name="related-topics"></a>相关主题
-
 - [使用Windows 10载入设备](configure-endpoints-gp.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)

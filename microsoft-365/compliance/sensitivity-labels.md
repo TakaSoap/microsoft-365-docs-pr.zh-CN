@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 130b264735d00083116a5cf18cc0c4bf6b1a764c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 13e7d42242bca811a2b56f79aa3a13f6ff9cfef6
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453629"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726234"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -195,9 +195,9 @@ ms.locfileid: "53453629"
 
 - **要求用户将标签应用** 于文档和电子邮件、仅文档、容器及 Power BI 内容。 也称为强制标记，这些选项确保在用户保存文档、发送电子邮件、创建新的组或网站之前，以及当他们为 Power BI 使用未标记的内容时必须应用标签。
     
-    该标签可由用户手动分配，由于您配置的条件或默认分配的条件（如上所述的 "默认标签" 选项）而自动分配。当用户需要分配标签时，Outlook 中显示的示例提示：
+    该标签可由用户手动分配，由于您配置的条件或默认分配的条件（如上所述的 "默认标签" 选项）而自动分配。当用户需要分配标签时，以下为示例提示：
 
-    ![在 Outlook 中要求用户应用所需标签的提示](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    ![在 Outlook 中要求用户应用所需标签的提示](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
     有关文档和电子邮件的强制标签的详细信息，请参阅[要求用户应用标签到他们的电子邮件和文档](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。
     

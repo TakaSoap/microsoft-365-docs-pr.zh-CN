@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79483956fe15cc3aacaaae90f23968efbd317a80a64c1bd7f0e6862c66580988
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: ca0eeba9fb8678a4b71e8fdaefb05acb0ec55978
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520382"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726292"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -45,25 +45,16 @@ ms.locfileid: "54520382"
 ## <a name="july-2021"></a>2021 年 7 月
 
 - [自动调查中的电子邮件分析改进](email-analysis-investigations.md)
-- [高级](configure-advanced-delivery.md)传递：引入一项新功能，用于配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到安全操作邮箱。
 - [保险箱链接Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
-- 针对以下方案的新警报策略：遭到入侵的邮箱、表单网络钓鱼、由于替代和舍入 ZAP 而传递的恶意邮件
-  - 可疑电子邮件转发活动
-  - 用户被限制共享表单和收集响应
-  - 表单因潜在的网络钓鱼尝试被阻止
-  - 已标记并确认为网络钓鱼的表单
-  - [ZAP 的新警报策略](../../compliance/new-defender-alert-policies.md)
-- Microsoft Defender for Office 365 警报现已集成到 Microsoft 365 Defender - Microsoft 365 Defender 统一警报队列和[统一警报队列](../defender/investigate-alerts.md)
-- [用户](user-tags.md)标记现已集成到 Microsoft Defender 中的 Office 365 警报体验，包括：Office 365 安全 & 合规性中的警报队列和详细信息，以及将自定义警报策略范围限制到用户标记以创建目标警报策略。 
-  - Microsoft Defender for (计划 2 中Microsoft 365 Defender统一警报队列中Office 365标记) 
 
 
 ## <a name="june-2021"></a>2021 年 6 月
 
 - 反网络钓鱼策略安全提示第一个联系人策略设置。 当安全提示第一次收到发件人发送的电子邮件或不经常收到发件人发送的电子邮件时，将显示此通知。 有关此设置以及如何配置它的信息，请参阅以下文章：
-  - [第一个联系人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-  - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
-  - [在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+
+- [第一个联系人安全提示](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
+- [在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 

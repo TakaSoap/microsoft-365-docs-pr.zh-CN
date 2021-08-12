@@ -18,14 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 在网站或 Microsoft 365 合规中心 门户Microsoft 365 Defender警报策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 531ce27d8335216f76b5ff1516ecc8263f24bb51
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a6a1f9dfeec6e59f51a4ad0dba364610341e6e5b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567388"
+ms.locfileid: "53541818"
 ---
-# <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 中的警报策略
+# <a name="alert-policies-in-the-microsoft-365"></a>警报策略Microsoft 365
 
 可以使用 Microsoft 365 合规中心 或 Microsoft 365 Defender 门户中的警报策略和警报仪表板工具创建警报策略，然后查看当用户执行与警报策略的条件相匹配的活动时生成的警报。 有几种默认警报策略可帮助您监视活动，如在 Exchange Online 中分配管理员权限、恶意软件攻击、网络钓鱼活动以及异常级别的文件删除和外部共享。
 
@@ -246,7 +246,7 @@ Microsoft 提供了内置警报策略，可帮助Exchange权限滥用、恶意�
 
 To see which category a default alert policy is assigned to， see the table in [Default alert policies](#default-alert-policies).
 
-|Role|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
+|角色|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |审核日志|||||||
 |案例管理|||||||

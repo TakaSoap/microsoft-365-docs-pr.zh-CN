@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 405f63c849c33680ff221dd752899682df5d62e7
+ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326815"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726160"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -98,7 +98,7 @@ ms.locfileid: "53326815"
 " **警报"** 选项卡汇总了案例中包含的当前警报。 新警报可能会添加到现有案例，并将在分配时添加到警报队列中。  队列列出了以下警报属性：
 
 - 状态
-- Severity
+- 严重性
 - 检测到的时间
 
 Select an alert from the queue to display the **Alert detail** page.
@@ -106,7 +106,7 @@ Select an alert from the queue to display the **Alert detail** page.
 使用搜索控件搜索特定文本的警报名称，并使用警报筛选器按以下属性对事例进行排序：
 
 - 状态
-- Severity
+- 严重性
 - 检测时间、开始日期和结束日期
 
 使用筛选器控件按多个属性筛选警报，包括：
@@ -151,13 +151,13 @@ Select an alert from the queue to display the **Alert detail** page.
 
 ### <a name="content-explorer"></a>内容资源管理器
 
-通过“**内容资源管理器**”选项卡，风险分析员和调查员可以审阅与风险警报相关联的所有单个文件和电子邮件的副本。 例如，如果用户从 SharePoint Online 下载数百个文件时创建了警报，并且活动触发了策略警报，则警报的所有下载文件将被捕获并复制到原始存储源中的内部风险管理案例。
+" **内容资源管理器** "选项卡允许风险调查人员查看与风险警报相关联的所有单个文件和电子邮件的副本。 例如，如果用户从 SharePoint Online 下载数百个文件时创建了警报，并且活动触发了策略警报，则警报的所有下载文件将被捕获并复制到原始存储源中的内部风险管理案例。
 
 内容资源管理器是一款功能强大的工具，具有基本的高级搜索和筛选功能。 若要详细了解如何使用内容资源管理器，请参阅预览体验 [成员风险管理内容资源管理器](insider-risk-management-content-explorer.md)。
 
 ![内部风险管理案例内容资源管理器](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>案例注释
+### <a name="case-notes"></a>案例备注
 
 在 **案例的"** 案例备注"选项卡中，风险分析员和研究人员可以分享有关其案例工作的评论、反馈和见解。 注释将永久添加到案例，在保存注释后无法编辑或删除它。 当通过警报创建案例时，在“**确认警报并创建内部风险案例**”对话框中输入的注释会自动添加为案例注释。
 
@@ -229,23 +229,23 @@ Select an alert from the queue to display the **Alert detail** page.
 - 在 ServiceNow 中为内部风险管理案例创建记录
 - 将用户添加到内部风险策略时通知用户
 
-若要运行、管理或创建Power Automate内部风险管理案例的流：
+若要为内部风险管理案例运行、管理或创建 Power Automate 流：
 
 1. 在 **"案例** 操作"工具栏上选择"自动"。 
-2. 选择要运行的Power Automate流，然后选择"运行 **流"。** 
+2. 选择要运行的 Power Automate 流，然后选择"**运行流"。** 
 3. 流完成后，**选择完成。**
 
-若要了解有关内部Power Automate流的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
+若要了解有关适用于内部风险管理的 Power Automate 流的信息，请参阅内部 [风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建Microsoft Teams案例团队
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建适用于此案例的 Microsoft Teams 团队
 
-在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams，并在案例操作工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队查看案例。
+在设置中启用针对内部风险管理的 Microsoft Teams 集成后，每次确认警报并创建案例时，都会自动创建 Microsoft Teams 团队。 风险研究人员和分析员可以通过选择"案例操作"工具栏上的"查看 **Microsoft Teams** 团队"，快速打开 Microsoft Teams 并直接导航到团队了解案例。
 
-对于启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。 
+对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建 **Microsoft Teams** 团队"，为事例创建新的 Microsoft Teams 团队。
 
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
-若要了解有关内部风险管理Microsoft Teams，请参阅[内部风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
+若要了解有关用于内部风险管理的 Microsoft Teams 的信息，请参阅内部 [风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
 
 ### <a name="resolve-the-case"></a>解决案例
 
@@ -256,7 +256,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 要解决这种情况，需要：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
+1. 在 [Microsoft 365](https://compliance.microsoft.com)合规中心，转到 **"内部风险管理** "并选择" **案例"** 选项卡。
 2. 选择一个案例，然后选择案例操作工具栏上的"解决大小写"按钮。
 3. 在" **解决案例** "对话框中 **，选择"** 解析为"下拉列表控件以选择案例的解析分类。 选项为 **"安全"****或"已确认的策略违反"。**
 4. 在" **解决案例** "对话框中，在"已采取操作的文本"字段中输入解析 **分类** 的原因。
