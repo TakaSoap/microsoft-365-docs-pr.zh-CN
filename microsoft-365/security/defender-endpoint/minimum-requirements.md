@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab3741f61abc4bf771f86741b7e067385326e8f8
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3b6a1feae3ad7427e0cda6c3f1594b83b4fdce845f65b9d7f2988dea15f9f8e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845120"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -75,7 +75,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 有关不同版本中功能数组Windows 10，请参阅[比较Windows 10版本](https://www.microsoft.com/windowsforbusiness/compare)。
 
-有关商业版比较Windows 10比较表，请参阅[比较 PDF。](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf)
+
 
 ## <a name="browser-requirements"></a>浏览器要求
 

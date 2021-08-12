@@ -16,18 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7b4ab2ccdb072171b8e311d6464230229fbaf691c04a1730893073158000f00
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 4765477c4faf583fd9906aaa700aafc3fb26a992172f81eb4d3f6978724724be
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803232"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520639"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
-> [!NOTE]
-> 该产品的组策略管理现在通常适用于 (4.18.2106) ：请参阅 Tech Community 博客：使用[Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)保护可移动存储和打印机 
-
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能够执行以下任务：
 
@@ -37,14 +35,15 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 ****
 
-| Privilege | 权限 |
-|:---|:---|
-| Access | 读取、写入、执行 |
-| 操作模式 | 审核、允许、阻止 |
-| 云解决方案提供商支持 | 是 |
-| GPO 支持 | 是 |
-| 基于用户的支持 | 是 |
-| 基于计算机的支持 | 是 |
+|Privilege|权限|
+|---|---|
+|Access|读取、写入、执行|
+|操作模式|审核、允许、阻止|
+|云解决方案提供商支持|是|
+|GPO 支持|是|
+|基于用户的支持|是|
+|基于计算机的支持|是|
+|||
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
@@ -220,7 +219,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 通过"存储访问控制"功能，可以通过组策略将策略应用于用户或设备，或同时应用于两者。
 
-### <a name="licensing"></a>许可
+### <a name="licensing"></a>授权
 
 在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 

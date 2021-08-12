@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 06/11/2021
+ms.date: 07/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: a285815a3f05054627d46144aa11f2790cce1535
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e72ef3c2f443194db0e45ca3dec553ba364e633504932bff72f303dc8dc0e53e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652895"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845126"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 管理 Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ ms.locfileid: "53652895"
 ## <a name="find-your-microsoft-defender-for-endpoint-settings-in-intune"></a>在 Intune 中查找适用于终结点的 Microsoft Defender 设置
 
 > [!IMPORTANT]
-> 你必须是 Intune 中的全局管理员或服务管理员才能配置本文中所述的设置。 若要了解更多信息，请参阅 **[Intune (管理员) 。](/mem/intune/fundamentals/users-add#types-of-administrators)**
+> 你必须在 Intune 中分配全局管理员或服务管理员角色，才能配置本文中所述的设置。 若要了解更多信息，请参阅 **[Intune (管理员) 。](/mem/intune/fundamentals/users-add#types-of-administrators)**
 
 1. 转到 Azure 门户 [https://portal.azure.com](https://portal.azure.com) () 并登录。
 

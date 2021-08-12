@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 458173fc9c35e59c667ac05f6179b2b48ca77a0e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: dce9f77e7c45aba8a49322348d0cb16d9a7e48f72c9972b973589b01d2b4a10c
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656663"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520731"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -59,6 +59,7 @@ ms.locfileid: "53656663"
 >
 > - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
 > - 对于非Windows平台， (设备隔离) 依赖于第三方功能。
+> - 对于 Microsoft 第一方代理，请参阅每个功能下的"详细信息"链接，了解最低操作系统要求。
 
 ## <a name="manage-tags"></a>管理标签
 
@@ -83,6 +84,10 @@ ms.locfileid: "53656663"
 ## <a name="collect-investigation-package-from-devices"></a>从设备收集调查包
 
 作为调查或响应过程的一部分，你可以从设备收集调查包。 通过收集调查包，你可以确定设备的当前状态，并进一步理解攻击者使用的工具和技术。
+
+> [!IMPORTANT]
+>
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
 
 下载 Zip (包) 并调查设备上发生的事件
 
@@ -111,7 +116,7 @@ ms.locfileid: "53656663"
 |自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助识别攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
 |已安装的程序|此.CSV文件包含已安装的程序的列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
 |网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前的地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul>|
-|预取文件|Windows预取文件旨在加快应用程序启动过程。 它可用于跟踪系统中最近使用的所有文件，并查找可能已删除但仍可在预取文件列表中找到的应用程序的跟踪。 <il><li>预取文件夹：包含 中的预取文件的副本 `%SystemRoot%\Prefetch` 。 注意：建议下载预取文件查看器以查看预取文件。</li><li>PrefetchFilesList.txt：包含所有复制文件的列表，这些文件可用于跟踪预取文件夹是否有复制失败。</li></ul>|
+|预取文件|Windows预取文件旨在加快应用程序启动过程。 它可用于跟踪系统中最近使用的所有文件，并查找可能已删除但仍可在预取文件列表中找到的应用程序的跟踪。 <ul><li>预取文件夹：包含 中的预取文件的副本 `%SystemRoot%\Prefetch` 。 注意：建议下载预取文件查看器以查看预取文件。</li><li>PrefetchFilesList.txt：包含所有复制文件的列表，这些文件可用于跟踪预取文件夹是否有复制失败。</li></ul>|
 |进程|包含一.CSV一个列出正在运行的进程的文件，该文件提供识别设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
 |计划任务|包含一.CSV列出计划任务的文件，可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
 |安全事件日志|包含安全事件日志，其中包含登录或注销活动的记录，或者由系统的审核策略指定的其他与安全相关的事件。 <p><div class="alert"><b>注意：</b> 使用事件查看器日志文件事件视图。</div>|

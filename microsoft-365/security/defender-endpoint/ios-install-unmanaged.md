@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f8caa7fa5379c32333ccdab807cca453cf49567
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a95544debbb2ce40abdee70d3907ef85038d23bcb56eb2c53c6ea10549699cc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845107"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>在注销的 iOS 设备上部署 Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint 可以配置为发送要用于应用保护策略
 使用 Microsoft Defender for Endpoint 设置应用保护策略的步骤如下：
 
 1. 设置从你的 Microsoft Endpoint Manager 到 Microsoft Defender for Endpoint 的连接。 在 [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 中，转到"设置) "下的"跨平台) "或"终结点安全 Microsoft Defender  >    >  **for**   >  **Endpoint** ("下的"适用于终结点的 Microsoft Defender (租户管理连接器和令牌"，然后打开适用于 iOS 的应用保护策略 设置 下的切换。
-1. 选择 **保存**。 应看到"**连接状态**"现在设置为"**已启用"。**
+1. 选择“**保存**”。 应看到"**连接状态**"现在设置为"**已启用"。**
 1. 创建应用保护策略：Microsoft Defender for Endpoint 连接器设置完成后，导航到"策略 (下的应用应用保护策略) 以创建新策略或更新现有  >  策略。
 1. 选择组织为策略 **所需的** 平台、应用、数据保护、访问要求设置。
 1. 在 **"条件启动**  >  **设备条件**"下，你将找到设置 **"允许的最大设备威胁级别"。** 需要将此功能配置为"低、中、高"或"安全"。 可用操作为"阻止 **访问"或**"**擦除数据"。** 你可能会看到信息对话框，以确保在此设置生效之前已经设置了连接器。 如果连接器已设置，可以忽略此对话框。

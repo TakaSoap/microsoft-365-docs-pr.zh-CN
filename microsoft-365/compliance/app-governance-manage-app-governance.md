@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
-ms.openlocfilehash: 87ca62f6543b4fd9a768554085796b14aa6cf209
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 79dcf99dcedb075615085b207ec3284e3d1bf287202d69c8fd503d66b51ed14f
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622468"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520551"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 > [!NOTE]
-> 要注册应用治理，请参阅 [应用治理入门（预览版）](app-governance-get-started.md)。
+> 要注册应用治理，请参阅 [应用治理入门（预览版）](app-governance-get-started.md#sign-up-for-free-trial-of-app-governance)。
 
 网络攻击通过各种日益复杂的方式来利用你部署在本地和云基础设施中的应用，为特权提升、横向移动和数据泄露奠定基础。 若要了解潜在风险并阻止这些类型的攻击，你需要清楚了解组织的应用合规状况，以快速识别应用何时表现出异常行为，并在这些行为对你的环境、数据和用户构成风险时做出响应。
 

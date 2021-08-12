@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 11c5a8dde11b09f56a89af4815a06a57d3cbaeed
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 5a27bebc9be678119703f931d99e07627c4355e0c64febecb067a12666edb73d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793798"
 ---
 # <a name="list-exposure-score-by-device-group"></a>按设备组列出曝光分数
 
@@ -60,7 +60,7 @@ GET /api/exposureScore/ByMachineGroups
 
 名称|类型|说明
 ---|---|---
-|Authorization|字符串|Bearer {token}。**必需**。
+|Authorization|String|Bearer {token}。**必需**。
 
 ## <a name="request-body"></a>请求正文
 

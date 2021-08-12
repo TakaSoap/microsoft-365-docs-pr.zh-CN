@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: ff5a2277edc820ee03cb7c545595bd456aed27d86e41723347cce8d80d25af19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844891"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理Microsoft Defender 防病毒
 
@@ -94,7 +94,7 @@ ms.locfileid: "52302096"
 | 修正 | 为运行计划的完整扫描以完成修正的时间配置本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 修正 | 指定一周中的哪些天运行计划的完全扫描以完成修正 | [配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | [配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Reporting | 关闭增强型通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
+| 报表 | 关闭增强型通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 | 根 | 关闭Microsoft Defender 防病毒 | 未 (此设置必须设置为"未配置"，以确保任何已安装的第三方防病毒应用) 
 | 根 | 定义绕过代理服务器的地址 | 未使用 |
 | 根 | 定义代理自动 (.pac) 以连接到网络 | 未使用 |

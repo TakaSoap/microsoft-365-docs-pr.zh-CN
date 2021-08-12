@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9dde952f8dd67084cf8d2b466f51d3077fcc4458
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9d36aad47928424c233ab68607732bcaafa6db3879e69e8de1ae54b84de6aa96
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53844987"
 ---
 # <a name="release-device-from-isolation-api"></a>从隔离 API 中释放设备
 
@@ -46,6 +46,12 @@ ms.locfileid: "53648887"
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+>
+> - 完全隔离适用于 Windows 10 版本 1703 上的设备。
+> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 ## <a name="permissions"></a>权限
 
@@ -72,7 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unisolate
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文

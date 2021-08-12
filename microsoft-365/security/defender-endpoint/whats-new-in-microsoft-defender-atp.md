@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 33bd21cb338d5c792e6241ac61f75712ecc1ad45
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6b1d5496d6476353cfe16acebc43de498547465fab3a8ea245b410de632aadb2
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656063"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54520563"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -43,7 +43,7 @@ ms.locfileid: "53656063"
 > RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中：
 >
 > ```https
-> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
 ## <a name="june-2021"></a>2021 年 6 月
@@ -118,7 +118,7 @@ ms.locfileid: "53656063"
 
 - [API 资源管理器](api-explorer.md)<br> 通过 API 资源管理器，可以轻松构造和执行 API 查询、测试和发送任何可用 Microsoft Defender 终结点 API 终结点的请求。
 
-## <a name="september-2019"></a>2019 年 9 月
+## <a name="september-2019"></a>2019年九月
 
 - [使用 Intune 的防篡改保护设置](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> 现在，你可以打开或 (Intune) Intune Microsoft 365 Device Management Portal 中的组织 (防篡改) 。
 

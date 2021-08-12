@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845023"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -124,11 +124,11 @@ Authorization | string | 必填。 Azure AD 访问令牌，格式为 **Bearer** 
 :---|:---|:---
 sinceTimeUtc | 日期时间 | 根据字段定义从中检索下限的警报： <br> `LastProcessedTimeUtc` <br> 该时间范围将为：从 sinceTimeUtc 时间到当前时间。 <br><br> **注意**：如果未指定，将检索过去两小时内生成的所有警报。
 untilTimeUtc | 日期时间 | 定义检索的上限警报。 <br> 该时间范围将为： `sinceTimeUtc` 从一次一 `untilTimeUtc` 次到一次。 <br><br> **注意**：如果未指定，默认值将为当前时间。
-ago | 字符串 | 在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <br><br> 值应按照 ISO **8601 持续时间格式** 进行设置 <br> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
+ago | string | 在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <br><br> 值应按照 ISO **8601 持续时间格式** 进行设置 <br> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
 limit | int | 定义要检索的警报数。 将基于定义的号码检索最新警报。<br><br> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
-machinegroups | 字符串 | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | 字符串 | 注册表中的单个设备标记。
-CloudCreatedMachineTags | 字符串 | 在活动中创建的设备Microsoft Defender 安全中心。
+machinegroups | string | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | string | 注册表中的单个设备标记。
+CloudCreatedMachineTags | string | 在活动中创建的设备Microsoft Defender 安全中心。
 
 ### <a name="request-example"></a>请求示例
 以下示例演示如何检索组织的所有检测。
