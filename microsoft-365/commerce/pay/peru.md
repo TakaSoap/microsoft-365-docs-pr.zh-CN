@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4a453bab5bc5067c77b33a77fa72d13be247363
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d9a84d23921676c98c1581651cbef933e51266ec007014804c898c5cc0cb13e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820767"
 ---
 # <a name="payment-information-for-peru"></a>秘鲁的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on the payment invoice.
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号** ：4426587954  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft

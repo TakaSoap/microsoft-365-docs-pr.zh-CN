@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 摘要：了解为什么必须使用 PowerShell 管理Microsoft 365，在某些情况下可以更高效地管理，而在某些情况下，必须这样管理。
-ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1c575cc71186dcf5c82e11f03c266086abac730a7340d89ae5d8c1a005d4496c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807265"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>为什么需要使用 PowerShell for Microsoft 365
 

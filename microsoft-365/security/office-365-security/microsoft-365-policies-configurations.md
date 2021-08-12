@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: aa12cc4ad885c3d4b9d1c35fba9f38747f24077d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 50898cf6062719b81b75de07ffab6b9a8c58cd8759d92c7cccc330a1389feb5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828138"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -65,7 +65,7 @@ ms.locfileid: "52583185"
 
 建议的策略适用于完全在 Microsoft 云中运营的企业组织，以及混合标识基础结构（这是与 Azure AD 租户同步的一个本地 Active Directory 域服务 (AD DS) 林）的客户。
 
-提供的很多建议都依赖于仅 Microsoft 365 E5、Microsoft 365 E3 E5 安全加载项、EMS E5 或 Azure AD 高级版 P2 许可证提供的服务。
+提供的很多建议都依赖于仅 Microsoft 365 E5、Microsoft 365 E3 E5 安全加载项、EMS E5 或 Azure AD Premium P2 可用的服务。
 
 对于没有这些许可证的组织，Microsoft 建议你至少实现安全默认值，它[](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)包含在所有Microsoft 365计划中。
 
@@ -124,7 +124,7 @@ Azure AD 提供了一整套标识管理功能。 我们建议使用这些功能�
 |[条件访问](/azure/active-directory/conditional-access/overview)|Azure AD 评估用户登录的条件，并使用条件访问策略来确定允许的访问。 例如，在本指南中，我们将向您展示如何创建条件访问策略，以要求设备合规性访问敏感数据。 这大大降低了具有自己的设备和凭据被盗的黑客访问敏感数据的风险。 它还保护设备的敏感数据，因为设备必须满足运行状况和安全性的特定要求。|Microsoft 365 E3 或 E5|
 |[Azure AD 组](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件访问策略、使用 Intune 的设备管理，甚至组织中文件和网站的权限都依赖于对用户帐户或 Azure AD 组的分配。 我们建议你创建与正在实现的保护级别对应的 Azure AD 组。 例如，你的管理人员可能是黑客的更高价值目标。 因此，有必要将这些员工的用户帐户添加到 Azure AD 组，并将该组分配给条件访问策略和其他强制执行更高级别的访问保护的策略。|Microsoft 365 E3 或 E5|
 |[设备注册](/azure/active-directory/devices/overview)|将设备注册到 Azure AD 以创建设备的标识。 此标识用于在用户登录时对设备进行身份验证，并应用要求加入域或兼容电脑的条件访问策略。 对于本指南，我们使用设备注册在计算机中自动注册Windows域。 设备注册是使用 Intune 管理设备的先决条件。|Microsoft 365 E3 或 E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|使您可以检测影响组织标识的潜在漏洞，将自动修正策略配置为低、中、高登录风险和用户风险。 本指南依赖于此风险评估，对多重身份验证应用条件访问策略。 本指南还包括条件访问策略，要求用户在检测到其帐户的高风险活动时更改其密码。|Microsoft 365 E5，Microsoft 365 E3 E5 安全加载项、EMS E5 或 Azure AD 高级版 P2 许可证|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|使您可以检测影响组织标识的潜在漏洞，将自动修正策略配置为低、中、高登录风险和用户风险。 本指南依赖于此风险评估，对多重身份验证应用条件访问策略。 本指南还包括条件访问策略，要求用户在检测到其帐户的高风险活动时更改其密码。|Microsoft 365 E5，Microsoft 365 E3 E5 安全加载项、EMS E5 或 Azure AD Premium P2 许可证|
 |[SSPR (自助服务密码) ](/azure/active-directory/authentication/concept-sspr-howitworks)|通过提供对管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需支持人员干预。|Microsoft 365 E3 或 E5|
 |[Azure AD 密码保护](/azure/active-directory/authentication/concept-password-ban-bad)|检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。|Microsoft 365 E3 或 E5|
 |
@@ -207,6 +207,6 @@ Microsoft 建议不要创建适用于所有应用的策略集，因为这可能�
 
 配置标识和设备访问后，请参阅[Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)功能部署指南，了解要考虑的其他功能的分阶段清单，以及用于保护、监视和审核访问的[Azure AD Identity Governance。](/azure/active-directory/governance/)
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [实现标识和设备访问策略的先决条件工作](identity-access-prerequisites.md)

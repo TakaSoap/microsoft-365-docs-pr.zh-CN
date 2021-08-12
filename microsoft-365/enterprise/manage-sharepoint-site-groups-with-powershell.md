@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将介绍使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组的过程。
-ms.openlocfilehash: 383536a6ad5ac5742cf1e38081a9be984ce4806b
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: db5f044de7f70cf27e0f7de37c9fceba12249cb6c09891102557fb3c95efcb52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841052"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 网站用户组
 
@@ -33,7 +33,7 @@ ms.locfileid: "53289075"
 
 尽管您可以使用 Microsoft 365 管理中心，但您也可以使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 本文中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 

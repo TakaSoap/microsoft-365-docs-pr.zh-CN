@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 获取基于硬件的最新隔离。 防止当前和新出现的攻击（如攻击或恶意链接）干扰员工工作效率和企业安全。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6eabad2b52dc83c65b6a36ea4bb057573ce83e5d4dfc18b298ba1e287a8a696d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828221"
 ---
 # <a name="application-guard-for-office-for-admins"></a>适用于管理员Office应用程序防护
 
@@ -29,7 +29,7 @@ ms.locfileid: "53055270"
 
 Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助于防止不受信任的文件访问受信任资源，确保企业不受新的和新出现的攻击。 本文将指导管理员设置设备，以预览适用于Office。 它提供有关在设备上启用应用程序防护的系统要求Office安装步骤的信息。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 ### <a name="minimum-hardware-requirements"></a>最低硬件要求
 

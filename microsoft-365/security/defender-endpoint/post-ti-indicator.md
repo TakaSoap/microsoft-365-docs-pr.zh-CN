@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 42d6ed79868b9f32f8ea3cfe77bb78f1a86a8bea
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 464ed75474256e62ccb75756b3949441aae24d04483ccc4ca653db1439d0015b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793306"
 ---
 # <a name="submit-or-update-indicator-api"></a>提交或更新指示器 API
 
@@ -69,7 +69,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -78,16 +78,16 @@ Content-Type|string|application/json. **必需**。
 
 参数|类型|说明
 :---|:---|:---
-indicatorValue|字符串|Indicator [实体的](ti-indicator.md) 标识。 **必需**
+indicatorValue|String|Indicator [实体的](ti-indicator.md) 标识。 **必需**
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **必需**
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。 **必需**
-应用程序|字符串|与指示器关联的应用程序。 **可选**
+应用程序|String|与指示器关联的应用程序。 **可选**
 title|String|指示器警报标题。 **必需**
-说明|字符串|指示器的说明。 **必需**
+说明|String|指示器的说明。 **必需**
 expirationTime|DateTimeOffset|指示器的过期时间。 **可选**
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
-recommendedActions|字符串|TI 指示器警报建议操作。 **可选**
-rbacGroupNames|字符串|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
+recommendedActions|String|TI 指示器警报建议操作。 **可选**
+rbacGroupNames|String|将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
 
 ## <a name="response"></a>响应
 

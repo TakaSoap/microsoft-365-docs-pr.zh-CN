@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美国政府云中的管理员可以设置数据连接器，以从组织的人力资源部门导入员工数据， (HR) 系统导入Microsoft 365。 这样，你可以将 HR 数据用于内部风险管理策略，以帮助你检测特定用户可能对组织造成内部威胁的活动。
-ms.openlocfilehash: 16d6d72d557744e30d41795d5f8c8a17db81c6a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c471fed07fc1f9cb5c86a027884f2973bf05ac5db53522f4e21a8eded5e7c7a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813832"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>设置连接器以导入美国政府中的 HR 数据
 
-您可以在合规性中心内设置数据Microsoft 365，以将人力资源 () 到美国政府组织。 与 HR 相关的数据包括员工提交其期限的日期和员工最后一天的日期。 然后，Microsoft 信息保护解决方案（如内部风险管理解决方案）可以使用此[](insider-risk-management.md)HR 数据，帮助保护组织免受组织内部恶意活动或数据盗窃的攻击。 设置 HR 连接器包括：在 Azure Active Directory 中创建一个应用，该应用用于通过连接器进行身份验证，创建包含 HR 数据的 CSV 映射文件，在合规中心创建数据连接器，然后按计划运行脚本 (以) 将 CSV 文件的 HR 数据导入到 Microsoft 云。 然后，内部风险管理工具使用数据连接器访问导入到美国政府组织的MICROSOFT 365 HR 数据。
+您可以在企业设置数据连接器，Microsoft 365 合规中心向美国政府组织 (人力资源) 人力资源连接器。 与 HR 相关的数据包括员工提交其期限的日期和员工最后一天的日期。 然后，此 HR 数据可用于Microsoft 信息保护解决方案（如内部风险管理解决方案）[](insider-risk-management.md)来帮助保护组织免受组织内部恶意活动或数据盗窃的攻击。 设置 HR 连接器包括：在 Azure Active Directory 中创建一个应用，该应用用于通过连接器进行身份验证，创建包含 HR 数据的 CSV 映射文件，在合规中心创建数据连接器，然后按计划运行脚本 (以) 将 CSV 文件的 HR 数据导入到 Microsoft 云。 然后，内部风险管理工具使用数据连接器访问导入到美国政府组织的MICROSOFT 365 HR 数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 必须在步骤 3 中为在步骤 3 中创建 HR 连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
@@ -71,7 +71,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 每个列
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤 3：创建 HR 连接器
 
-下一步是在合规中心内Microsoft 365 HR 连接器。 在步骤 4 中运行脚本后，您创建的 HR 连接器将从 CSV 文件将 HR 数据导入Microsoft 365组织。 在此步骤中，请确保复制创建连接器时生成的作业 ID。 运行脚本时，将使用作业 ID。
+下一步是在应用程序创建 HR Microsoft 365 合规中心。 在步骤 4 中运行脚本后，您创建的 HR 连接器将从 CSV 文件将 HR 数据导入Microsoft 365组织。 在此步骤中，请确保复制创建连接器时生成的作业 ID。 运行脚本时，将使用作业 ID。
 
 1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com) 然后单击左侧 **导航中的** "数据连接器"。
 
@@ -157,7 +157,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 每个列
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步骤 5：监视 HR 连接器
 
-创建 HR 连接器并运行脚本以上传 HR 数据后，可以查看该连接器，并上传Microsoft 365合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建 HR 连接器并运行脚本以上传 HR 数据后，可以查看该连接器，并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

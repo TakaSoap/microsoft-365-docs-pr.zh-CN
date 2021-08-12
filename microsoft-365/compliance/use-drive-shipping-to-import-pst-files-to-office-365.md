@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理员可以了解如何将 PST 文件批量导入到Microsoft 365将 PST 文件复制到硬盘驱动器，然后将这些文件寄送到 Microsoft。
-ms.openlocfilehash: a0858e3c1b6bcbe48a4060e8efaa3094768236fb
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 4c4509301a6bf4c2807b89fc9fe005522e36989f6712236efda8d917851bee02
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684073"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813710"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>使用驱动器寄送导入组织的 PST 文件
 
@@ -55,7 +55,7 @@ ms.locfileid: "52684073"
 
 - 必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者，可以创建一个角色组，分配“邮箱导入导出”角色，然后将自己添加为成员。 有关详细信息，请参阅[管理角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
     
-    此外，若要在合规性Microsoft 365创建导入作业，必须满足以下条件之一：
+    此外，若要在 Microsoft 365 合规中心创建导入作业，下列操作之一必须为 true：
     
   - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
     
@@ -64,7 +64,7 @@ ms.locfileid: "52684073"
   - 必须是你组织中的全局管理员。
     
     > [!TIP]
-    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
+    > 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 
   
 - 您需要将要复制到硬盘中的 PST 文件存储在组织中的文件服务器或共享文件夹中。 在步骤 2 中，运行 Azure 导入导出 (WAImportExport.exe) 将存储在此文件服务器或共享文件夹中的 PST 文件复制到硬盘驱动器。
 
@@ -73,13 +73,13 @@ ms.locfileid: "52684073"
 - 仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘驱动器与 Office 365 导入服务一同使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘驱动器时，可以使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接它，或者可以使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器将其外部连接。
     
     > [!IMPORTANT]
-    > Office 365 导入服务中不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 请不要发运外部硬盘。 
+    > Office365 导入服务不支持附带内置 USB 适配器的外部硬盘。此外，不能使用外部硬盘驱动器外壳内的磁盘。请不要运送外部硬盘。 
   
-- 包含 PST 文件副本的硬盘驱动器必须使用 BitLocker 进行加密。 您在步骤 2 中运行的 WAImportExport.exe 工具将帮助您设置 BitLocker。 它还生成一个BitLocker加密密钥，Microsoft 数据中心工作人员使用该密钥访问驱动器，将 PST 文件上载到 Microsoft 云中的 Azure 存储 区域。
+- 包含 PST 文件副本的硬盘驱动器必须使用 BitLocker 进行加密。 您在步骤 2 中运行的 WAImportExport.exe 工具将帮助您设置 BitLocker。 它还生成 BitLocker 加密密钥，Microsoft 数据中心工作人员使用该密钥访问驱动器，将 PST 文件上载到 Microsoft 云中的 Azure 存储 区域。
     
 - 驱动器寄送通过 Microsoft 企业协议 (EA) 。 驱动器寄送不可通过 Microsoft 产品和服务协议 (MPSA) 实现。
     
-- 使用驱动器寄送将 PST 文件导入Microsoft 365邮箱的成本是每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
+- 使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的成本为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
     
 - 您或您的组织必须拥有 FedEx 或 DHL 帐户。 
     
@@ -115,16 +115,16 @@ ms.locfileid: "52684073"
 第一步是下载安全存储密钥和工具，在步骤 2 中用于将 PST 文件复制到硬盘驱动器。
   
 > [!IMPORTANT]
-> 您必须使用 Azure 导入/导出 工具版本 1 (WAimportExportV1) 驱动器寄送方法成功导入 PST 文件。 版本 2 的 Azure 导入/导出 工具不受支持，使用它将导致硬盘驱动器无法正确准备导入作业。 请务必按照此步骤中的过程从 导入/导出 合规性Microsoft 365 Azure Microsoft 365 工具。 
+> 您必须使用 Azure 导入/导出 工具版本 1 (WAimportExportV1) 驱动器寄送方法成功导入 PST 文件。 版本 2 的 Azure 导入/导出 工具不受支持，使用它将导致硬盘驱动器无法正确准备导入作业。 请务必按照此步骤导入/导出从 Microsoft 365 合规中心 下载 Azure Microsoft 365 合规中心 工具。 
   
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365 **信息治理导入** \> **"。**
+2. 在网站左侧导航窗格中 **，Microsoft 365 合规中心"信息治理""** \> **导入"。**
     
     > [!NOTE]
-    > 如前所述，您必须获得适当的权限才能访问合规性中心中的"导入Microsoft 365页面。  
+    > 如前所述，您必须获得适当的权限才能访问"导入"页Microsoft 365 合规中心。  
   
-3. 在"导入 **"** 选项卡上，单击 ![ "添加图标 ](../media/ITPro-EAC-AddIcon.gif) **""新建导入作业"。**
+3. 在“**导入**”选项卡上，单击“![添加图标](../media/ITPro-EAC-AddIcon.gif)” “**新建导入作业**”。
     
 4. 在导入作业向导中，键入 PST 导入作业的名称，然后单击"下一步 **"。** 请使用小写字母、数字、连字符和下划线。 无法在名称中使用大写字母或包含空格。
     
@@ -146,7 +146,7 @@ ms.locfileid: "52684073"
     
 7. 单击 **"** 取消"关闭向导。 
     
-    在步骤 4 **中** 创建导入作业时，您将返回到 Microsoft 365 合规中心的"导入"页面。 
+    在步骤 4 **中** 创建导入作业Microsoft 365 合规中心您将返回到"导入"页面中的"导入"页。 
 
 ## <a name="step-2-copy-the-pst-files-to-the-hard-drive"></a>步骤 2：将 PST 文件复制到硬盘驱动器
 
@@ -182,7 +182,7 @@ ms.locfileid: "52684073"
     | `/dstdir:` <br/> |指定 Microsoft 云中要上载AZURE 存储区域的目标目录。 必须使用值  `ingestiondata/` 。 请务必用双引号 (" ") 引住此参数的值。  <br/> （可选）还可以向此参数的值添加额外的文件路径。 例如，您可以使用硬盘驱动器上的源目录的文件路径 (转换为 URL 格式) ，该格式在 参数  `/srcdir:` 中指定。 例如，  `\\FILESERVER01\PSTs` 更改为  `FILESERVER01/PSTs` 。 在这种情况下，您仍必须包括在  `ingestiondata` 文件路径中。 因此，此示例中参数的值为  `/dstdir:`  `"ingestiondata/FILESERVER01/PSTs"` 。  <br/> 添加其他文件路径的原因之一是如果您有具有相同文件名的 PST 文件。  <br/> > [!NOTE]>如果包含可选的 pathname，则 PST 文件上载到 Azure 存储 区域后的命名空间包括路径名和 PST 文件的名称;例如， `FILESERVER01/PSTs/annb.pst` 。 如果不包括路径名，则命名空间只是 PST 文件名;例如  `annb.pst` 。           | `/dstdir:"ingestiondata/"` <br/> 或  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |指定您在步骤 1 中获得的存储帐户密钥。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/blobtype:` <br/> |指定要导入 PST 文件Azure 存储区域中的 blob 的类型。 对于导入 PST 文件，请使用值 **BlockBlob**。 此参数是必需的。   <br/> | `/blobtype:BlockBlob` <br/> |
-    | `/encrypt` <br/> |此开关对硬盘驱动器启用 BitLocker。首次运行 WAImportExport.exe 工具时，此参数是必需的。  <br/> 该BitLocker加密密钥将复制到日志文件以及日志文件参数时创建的 `/logfile:` 日志文件。 如前所述，日志文件保存到 WAImportExport.exe 工具所在的同一文件夹中。  <br/> | `/encrypt` <br/> |
+    | `/encrypt` <br/> |此开关对硬盘驱动器启用 BitLocker。首次运行 WAImportExport.exe 工具时，此参数是必需的。  <br/> BitLocker 加密密钥将复制到日志文件日志文件使用 参数时创建的  `/logfile:` 密钥。 如前所述，日志文件保存到 WAImportExport.exe 工具所在的同一文件夹中。  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |此可选参数指定要保存日志文件的文件夹。 如果未指定，日志文件将保存到 WAImportExport.exe 工具所在的同一文件夹中。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
    
     以下是对每个参数使用实际值的 WAImportExport.exe 工具的语法示例：
@@ -251,14 +251,14 @@ ms.locfileid: "52684073"
 
 下一步是在 Office 365 的导入服务中创建 PST 导入作业。 如前所述，提交在步骤 3 中创建的 PST 导入映射文件。 创建作业后，导入服务将使用映射文件中的信息，将 PST 文件从硬盘驱动器复制到 Azure 存储 区域，并创建并启动导入作业后，将 PST 文件导入到指定的用户邮箱。
   
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365 **信息治理导入** \> **"。**
+2. 在网站左侧导航窗格中 **，Microsoft 365 合规中心"信息治理""** \> **导入"。**
 
-3. 在"导入 **"** 选项卡上，单击 ![ "添加图标 ](../media/ITPro-EAC-AddIcon.gif) **""新建导入作业"。**
+3. 在“**导入**”选项卡上，单击“![添加图标](../media/ITPro-EAC-AddIcon.gif)” “**新建导入作业**”。
 
     > [!NOTE]
-    > 如前所述，您必须获得适当的权限才能访问合规性中心中的"导入Microsoft 365页面。 
+    > 如前所述，您必须获得适当的权限才能访问"导入"页Microsoft 365 合规中心。 
   
 4. 为 PST 导入作业键入一个名称，然后单击“**下一步**”。 请使用小写字母、数字、连字符和下划线。 无法在名称中使用大写字母或包含空格。
 
@@ -335,9 +335,9 @@ ms.locfileid: "52684073"
 
 将硬盘驱动器寄送到 Microsoft 后，在导入服务页上完成以下过程。
   
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365"信息治理">**导入"。**
+2. 在列表的左侧导航窗格中 **，Microsoft 365 合规中心"信息治理>导入"。**
 
 3. 在 **"导入** "选项卡上，单击要输入其跟踪号的驱动器装运作业。
 
@@ -361,9 +361,9 @@ Microsoft 收到硬盘驱动器后，"导入 **PST** 文件"页上导入作业�
   
 将 PST 文件上传到 Azure 后，状态将更改为 **"正在分析"。** 这表示Microsoft 365以安全的方式分析 PST 文件 (数据) 以确定项目的年龄以及 PST 文件中包含的不同邮件类型。 分析完成并且数据已准备好导入时，导入作业的状态将更改为 **"分析已完成"。** 此时，您可以选择导入 PST 文件中包含的所有数据，或者可以通过设置控制要导入的数据的筛选器来修整导入的数据。
   
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365"**信息** \> 治理"**"导入****"。
+2. 在导航窗格的左侧导航窗格中，Microsoft 365 合规中心 \> 信息治理 **Import****。。
 
 3. 在"**导入**"选项卡上，选择在步骤 4 中创建的导入作业，然后单击"导入 **以Office 365"。**
   
@@ -400,11 +400,11 @@ Microsoft 收到硬盘驱动器后，"导入 **PST** 文件"页上导入作业�
 
 若要安装 Azure 存储资源管理器并连接到 Azure 存储区域，请执行以下操作：
 
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户凭据登录。
 
-2. 在合规性中心的左窗格中，Microsoft 365"**信息治理">导入"。**
+2. 在 Microsoft 365 合规中心的左侧窗格中，单击“**信息治理”>“导入**”。
 
-3. 在"导入 **"** 选项卡上，单击 ![ "添加图标 ](../media/ITPro-EAC-AddIcon.gif) **""新建导入作业"。**
+3. 在“**导入**”选项卡上，单击“![添加图标](../media/ITPro-EAC-AddIcon.gif)” “**新建导入作业**”。
 
 4. 在导入作业向导中，键入 PST 导入作业的名称，然后单击"下一步 **"。** 请使用小写字母、数字、连字符和下划线。 无法在名称中使用大写字母或包含空格。
 

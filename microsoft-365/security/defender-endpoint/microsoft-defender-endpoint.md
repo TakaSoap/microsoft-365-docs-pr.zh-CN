@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35bcc532c492acbd0856a5b5410176df58af574a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 65bfcf003ff1fc29187f0c66d2c39cf177b75b11ed792a5566ec0ef81b71d705
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53793479"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -138,5 +138,3 @@ Defender for Endpoint 直接集成了各种 Microsoft 解决方案，包括：
 借助 Microsoft 365 Defender，Defender for Endpoint 和各种 Microsoft 安全解决方案构成了统一的违反前/违反后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
 
 
-## <a name="related-topic"></a>相关主题
-[Microsoft Defender for Endpoint 帮助检测复杂威胁](https://www.microsoft.com/itshowcase/microsoft-defender-atps-antivirus-capabilities-boost-malware-protection)

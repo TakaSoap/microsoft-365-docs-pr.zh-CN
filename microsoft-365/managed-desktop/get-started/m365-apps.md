@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 45064584b622c313fee66c0699ab6495353342edad39948e8f8dabcd68911547
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807188"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 

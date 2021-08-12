@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 了解如何使用 PowerShell 随着时间的推移，使用分步迁移将内容从源电子邮件系统Microsoft 365。
-ms.openlocfilehash: 6a458f6164a842394ec87f59df11939a8c435ea2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd78d466c62303ffe208137f39ee5188c0d03c283fca04263842e63982183b92
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807248"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>使用 PowerShell 分步迁移到 Microsoft 365
 

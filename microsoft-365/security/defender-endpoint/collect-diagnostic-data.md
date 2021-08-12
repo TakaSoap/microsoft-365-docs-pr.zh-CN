@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: caf2e81d45e302b986753e641fb3704167fb092e033534869fdd48fabbdf3aac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834274"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 诊断数据
 
