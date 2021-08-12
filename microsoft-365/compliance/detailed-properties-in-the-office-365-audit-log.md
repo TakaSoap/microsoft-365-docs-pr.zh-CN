@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: 本文提供导出记录结果时包含的其他Office 365 审核日志说明。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69a34f4de948bc9533ef2872d94171134e50ffea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a3641b40b76c2839f5cd29c22c28dfb5652ce42515d4e0ffe7e3edce0dcd3a7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808136"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>审核日志中的详细属性
 
@@ -48,29 +48,29 @@ ms.locfileid: "50927070"
 |客户端|客户端设备、设备操作系统和用于登录事件的设备浏览器 (，例如 Nokia Lumia 920;Windows Phone 8;IE Mobile 11) 。|Azure Active Directory|
 |ClientInfoString|有关用于执行此操作的电子邮件客户端的信息，例如浏览器版本、Outlook版本和移动设备信息|Exchange (邮箱活动) |
 |ClientIP|记录活动时使用的设备的 IP 地址。 IP 地址显示为 IPv4 或 IPv6 地址格式。<br/><br/> 对于某些服务，此属性中显示的值可能是代表用户调用服务的受信任应用程序（例如，Web 应用上的 Office）的 IP 地址，而不是执行活动的人员使用的设备的 IP 地址。 <br/><br/>此外，对于管理员 (或由系统帐户) 为 Azure Active Directory 相关事件执行的活动，不会记录 IP 地址，并且 ClientIP 属性的值为 `null` 。 |Azure Active Directory、Exchange、SharePoint|
-|CreationTime|用户执行活动时的协调世界时 (UTC) 日期和时间。|所有|
+|CreationTime|用户执行活动时的协调世界时 (UTC) 日期和时间。|全部|
 |DestinationFileExtension|复制或移动的文件的文件扩展名。 此属性只对 FileCopied 和 FileMoved 用户活动显示。|SharePoint|
 |DestinationFileName|复制或移动文件的名称。 此属性只对 FileCopied 和 FileMoved 操作显示。|SharePoint|
 |DestinationRelativeUrl|在其中复制或移动文件的目标文件夹的 URL。 SiteURL、DestinationRelativeURL和 **DestinationFileName** 属性的值的组合与 ObjectID 属性的值相同，ObjectID 属性的值是所复制文件的完整路径名。  此属性只对 FileCopied 和 FileMoved 用户活动显示。|SharePoint|
 |EventSource|识别在 SharePoint 中发生的事件。 可能的值为 **SharePoint** 和 **ObjectModel**。|SharePoint|
 |ExternalAccess|For Exchange admin activity， specifies whether the cmdlet was run by a user in your organization， by Microsoft datacenter personnel or a datacenter service account， or by a delegated administrator. 值 **False** 表示 cmdlet 由组织中的某人运行。 值 **True** 表示 cmdlet 由数据中心人员、数据中心服务帐户或委托的管理员运行。  <br/> For Exchange mailbox activity， specifies whether a mailbox was accessed by a user outside your organization.|Exchange|
 |ExtendedProperties|事件扩展Azure Active Directory属性。|Azure Active Directory|
-|ID|报告条目的 ID。 ID 唯一标识报告条目。|所有|
+|ID|报告条目的 ID。 ID 唯一标识报告条目。|全部|
 |InternalLogonType|仅供内部使用。|Exchange (邮箱活动) |
 |ItemType|访问或修改的对象类型。 可能的值包括File、Folder、Web、Site、Tenant 和 **DocumentLibrary**。    |SharePoint|
 |LoginStatus|标识可能发生的登录失败。|Azure Active Directory|
 |LogonType|邮箱访问的类型。 下列值指示访问邮箱的用户的类型。  <br/><br/> **0** - 指示邮箱所有者。<br/> **1** - 指示管理员。<br/> **2** - 指示代理人。 <br/>**3** - 指示 Microsoft 数据中心中的传输服务。<br/> **4** - 指示 Microsoft 数据中心中的服务帐户。 <br/>**6** - 指示委派的管理员。|Exchange (邮箱活动) |
 |MailboxGuid|访问邮箱的 Exchange GUID。|Exchange (邮箱活动) |
 |MailboxOwnerUPN|拥有已访问邮箱的人员的电子邮件地址。|Exchange (邮箱活动) |
-|Members|列出已从团队中添加或删除的用户。 以下值表示分配给用户的角色类型。  <br/><br/> **1** - 指示所有者角色。<br/> **2** - 表示“成员”角色。<br/> **3** - 表示“来宾”角色。 <br/><br/>成员属性还包括组织的名称和成员的电子邮件地址。|Microsoft Teams|
+|成员|列出已从团队中添加或删除的用户。 以下值表示分配给用户的角色类型。  <br/><br/> **1** - 指示所有者角色。<br/> **2** - 表示“成员”角色。<br/> **3** - 表示“来宾”角色。 <br/><br/>成员属性还包括组织的名称和成员的电子邮件地址。|Microsoft Teams|
 |ModifiedProperties (Name、NewValue、OldValue) |属性包含在管理员事件中，例如将用户添加为网站或网站集管理组的成员。 属性包括修改 (例如，Site Admin 组) 修改的属性的新值 (例如已添加为网站管理员的用户和已修改对象的上一个值。|所有 (管理员活动) |
-|ObjectId|对于 Exchange 管理员审核日志，通过 cmdlet 修改的对象的名称。  <br/> 对于SharePoint，用户访问的文件或文件夹的完整 URL 路径名称。  <br/> 对于 Azure AD 活动，为已修改的用户帐户的名称。|所有|
-|Operation|用户或管理员活动的名称。 此属性的值对应于在"活动"下拉列表 **中** 选定的值。 如果 **选择了"显示所有活动** 的结果"，则报告中将包含所有服务的所有用户和管理员活动的条目。 有关记录在 审核日志 中的操作/活动的说明，请参阅"搜索审核日志中的"已审核[Office 365"。](search-the-audit-log-in-security-and-compliance.md)  <br/> 对于 Exchange 管理员活动，此属性标识已运行的 cmdlet 名称。|所有|
-|OrganizationId|组织的 GUID。|所有|
-|路径|访问的邮件所在的邮箱文件夹的名称。 此属性还标识创建邮件或将邮件复制/移动到的文件夹。|Exchange (邮箱活动) |
+|ObjectId|对于 Exchange 管理员审核日志，通过 cmdlet 修改的对象的名称。  <br/> 对于SharePoint，用户访问的文件或文件夹的完整 URL 路径名称。  <br/> 对于 Azure AD 活动，为已修改的用户帐户的名称。|全部|
+|操作|用户或管理员活动的名称。 此属性的值对应于在"活动"下拉列表 **中** 选定的值。 如果 **选择了"显示所有活动** 的结果"，则报告中将包含所有服务的所有用户和管理员活动的条目。 有关记录在 审核日志 中的操作/活动的说明，请参阅"搜索审核日志中的"已审核[Office 365"。](search-the-audit-log-in-security-and-compliance.md)  <br/> 对于 Exchange 管理员活动，此属性标识已运行的 cmdlet 名称。|全部|
+|OrganizationId|组织的 GUID。|全部|
+|Path|访问的邮件所在的邮箱文件夹的名称。 此属性还标识创建邮件或将邮件复制/移动到的文件夹。|Exchange (邮箱活动) |
 |参数|对于Exchange活动，与 Operation 属性中标识的 cmdlet 一同使用的所有参数的名称和值。|Exchange (管理员活动) |
 |RecordType|记录指示的操作类型。 此属性指示触发该操作的服务或功能。 有关记录类型及其对应的 ENUM 值列表 (这是审核记录中的 **RecordType** 属性) ，请参阅审核 [日志记录类型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。| 
-|ResultStatus|指示在 Operation **(中指定的** 操作) 是否成功。  <br/> 对于Exchange活动，该值为 **True** (成功) **False** (失败) 。|所有  <br/>|
+|ResultStatus|指示在 Operation **(中指定的** 操作) 是否成功。  <br/> 对于Exchange活动，该值为 **True** (成功) **False** (失败) 。|全部  <br/>|
 |SecurityComplianceCenterEventType|指示活动是安全中心&事件。 所有安全&合规中心活动的此属性的值为 **0。**|安全与合规中心|
 |SharingType|分配给共享资源的用户的共享权限的类型。 此用户在 **UserSharedWith** 属性中标识。|SharePoint|
 |Site|用户访问的文件或文件夹所在网站的 GUID。|SharePoint|
@@ -85,12 +85,12 @@ ms.locfileid: "50927070"
 |TeamName|团队中团队Microsoft Teams。|Microsoft Teams|
 |UserAgent|有关用户浏览器的信息。 此信息由浏览器提供。|SharePoint|
 |UserDomain|有关执行该操作的用户或 () 租户组织的标识信息。|Azure Active Directory|
-|UserID|执行该操作的用户 (**Operation** 属性) 记录的记录。 审核由系统帐户执行的活动记录 (例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM) 也包含在审核日志。 UserId 属性的另一个常见值是 app@sharepoint。 这表明执行活动的“用户”是在 SharePoint 中拥有必要权限的应用程序，代表用户、管理员或服务执行组织范围内操作（例如，搜索 SharePoint 网站或 OneDrive 帐户）。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。 |所有|
-|UserKey|UserID 属性中标识的用户的备用 **ID。** 例如，对于由 SharePoint 中的用户执行 (，此属性使用 PUID) passport 唯一 ID 进行填充。 对于系统帐户执行的其他服务和事件，此属性也可能指定与 **UserID** 属性相同的值。|所有|
+|UserID|执行该操作的用户 (**Operation** 属性) 记录的记录。 审核由系统帐户执行的活动记录 (例如 SHAREPOINT\system 或 NT AUTHORITY\SYSTEM) 也包含在审核日志。 UserId 属性的另一个常见值是 app@sharepoint。 这表明执行活动的“用户”是在 SharePoint 中拥有必要权限的应用程序，代表用户、管理员或服务执行组织范围内操作（例如，搜索 SharePoint 网站或 OneDrive 帐户）。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。 |全部|
+|UserKey|UserID 属性中标识的用户的备用 **ID。** 例如，对于由 SharePoint 中的用户执行 (，此属性使用 PUID) passport 唯一 ID 进行填充。 对于系统帐户执行的其他服务和事件，此属性也可能指定与 **UserID** 属性相同的值。|全部|
 |UserSharedWith|与之共享资源的用户。 如果 Operation 属性的值为 **SharingSet** **，则包含** 此属性。 此用户也列在报表的 **"共享** 对象"列中。|SharePoint|
-|UserType|执行操作的用户类型。 以下值指示用户类型。 <br/> <br/> **0** - 常规用户。 <br/>**2** - 组织内部Microsoft 365管理员。<sup>1</sup> <br/>**3** - Microsoft 数据中心管理员或数据中心系统帐户。 <br/>**4** - 系统帐户。 <br/>**5** - 应用程序。 <br/>**6** - 服务主体。<br/>**7** - 自定义策略。<br/>**8** - 系统策略。|所有|
-|版本|指示由记录的 Operation (标识的活动) 版本号。 |所有|
-|工作负载|活动Microsoft 365服务。|所有|
+|UserType|执行操作的用户类型。 以下值指示用户类型。 <br/> <br/> **0** - 常规用户。 <br/>**2** - 组织内部Microsoft 365管理员。<sup>1</sup> <br/>**3** - Microsoft 数据中心管理员或数据中心系统帐户。 <br/>**4** - 系统帐户。 <br/>**5** - 应用程序。 <br/>**6** - 服务主体。<br/>**7** - 自定义策略。<br/>**8** - 系统策略。|全部|
+|版本|指示由记录的 Operation (标识的活动) 版本号。 |全部|
+|Workload|活动Microsoft 365服务。|全部|
 ||||
 
 > [!NOTE]

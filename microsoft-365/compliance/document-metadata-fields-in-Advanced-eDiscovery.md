@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: 4c9fe8713d1953719f614dfa4b8b85ec64a63eab
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842311"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -172,7 +172,7 @@ ms.locfileid: "53655487"
 |标记|标记|标记|在审阅集内应用的标记。|
 |Teams频道名称|TeamsChannel|Channel_Name|频道中频道Microsoft Teams。|
 |主题列表|ThemesList|Themes_list|为分析计算的主题列表。|
-|Title|Title|Doc_title|文档元数据中的标题。 文档元数据中的标题。 对于Teams和Yammer，这是 ConversationName 属性的值。|
+|标题|标题|Doc_title|文档元数据中的标题。 文档元数据中的标题。 对于Teams和Yammer，这是 ConversationName 属性的值。|
 |To|To|Email_to|邮件类型的收件人字段。 Format 为 **DisplayName \<SmtpAddress>**|
 |在电子邮件集内是唯一的|UniqueInEmailSet||**假** 如果电子邮件集的附件副本。|
 |版本组 ID||Version_Group_Id|将同一文档的不同版本分组在一起。|

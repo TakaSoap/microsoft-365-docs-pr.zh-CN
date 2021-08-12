@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 管理员可以了解如何在组织中使用共享审核Microsoft 365 审核日志标识与组织外部的用户共享的资源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: e77d02351763caee74137108a8d4f7b6a6f7bd3dd59abc8ce312a9290e6a7789
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801479"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>在审核日志中使用共享审核
 
@@ -100,7 +100,7 @@ ms.locfileid: "53341504"
 
 2. 使用工作或学校帐户进行登录。
 
-3. 在任务窗格的左Microsoft 365 合规中心，单击"审核 **"。**
+3. 在 Microsoft 365 合规中心的左窗格中，单击“**审核**”。
 
     将显示“**审核**”页。
 

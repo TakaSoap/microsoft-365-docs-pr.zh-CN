@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Advanced eDiscovery 管理工具管理法律案件的数据。
-ms.openlocfilehash: 22297edbf73f561ad46e5fae521abeb371fdc88d
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 92102a0748f37b2d6d18ab36baf6d50ef95e699e64c278bf5daf273e6c94b312
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842143"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>在托管服务中处理保管人和非托管Advanced eDiscovery
 

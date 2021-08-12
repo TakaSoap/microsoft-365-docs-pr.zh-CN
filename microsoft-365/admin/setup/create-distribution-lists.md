@@ -24,12 +24,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 在通讯组中创建通讯组或Microsoft 365 管理中心以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
-ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 2aa7ded4fe29a43d2b1f0d3282467e8eaba6484d2ab40df99bd81f4bbe348bb6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822147"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在通讯组中Microsoft 365 管理中心
   

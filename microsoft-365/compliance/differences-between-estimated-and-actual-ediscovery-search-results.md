@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 了解为什么使用电子数据展示工具在搜索中估计和实际搜索结果可能会有所不同Office 365。
-ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 70a2f22250010204298bb4e9ea5e4f3833013d04027bbdb4bcb0d25653ca47d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808067"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>估计和实际电子数据展示搜索结果之间的差异
 
@@ -33,7 +33,7 @@ ms.locfileid: "52653507"
 - 内容搜索
 - 核心电子数据展示
 
-运行电子数据展示搜索时，你使用的工具将返回估计的项目数 (及其总大小) 匹配搜索条件。 例如，在合规性中心内Microsoft 365搜索时，估计的搜索结果将显示在所选搜索的飞出页面上。
+运行电子数据展示搜索时，你使用的工具将返回估计的项目数 (及其总大小) 匹配搜索条件。 例如，当您在搜索Microsoft 365 合规中心时，估计的搜索结果将显示在所选搜索的飞出页面上。
   
 ![估计显示在搜索飞出页上的结果](../media/EstimatedSearchResults1.png)
   

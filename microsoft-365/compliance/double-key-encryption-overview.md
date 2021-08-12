@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: df6d0e98eae9c66d1fc366014f94ff6aeb479e4b36a7f0825982872ce416b6f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842299"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>双密钥加密常见问题
 
@@ -65,7 +65,7 @@ DKE 不支持这些环境，因为该服务需要访问Microsoft Azure。
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>What regions and languages is Double Key Encryption available in？ 双密钥加密是否在全球可用？
 
-DKE 标签本地化为与 Microsoft 信息保护中其他敏感度标签相同的语言。 双密钥加密在全球范围内可用。
+DKE 标签将本地化为与 DKE 中其他敏感度标签Microsoft 信息保护。 双密钥加密在全球范围内可用。
 
 ## <a name="can-i-convert-a-non-dke-label-to-a-dke-label"></a>能否将非 DKE 标签转换为 DKE 标签？
 

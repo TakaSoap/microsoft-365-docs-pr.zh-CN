@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 Advanced eDiscovery中的通信工作流跟踪法定保留通知的状态，并在必要时进行更新和重新发送。
-ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 88dd3ef8e74dd67b196f574b1cfe8ba5c33a1a63afeac8701f19e36476e56767
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842130"
 ---
 # <a name="manage-hold-notifications"></a>管理保留通知
 
@@ -72,7 +72,7 @@ ms.locfileid: "42280110"
 
 3. 在"**编辑通信**"向导中，单击向导左窗格中的"定义门户内容"，然后更新通知的内容。
 
-4. 单击“保存”。
+4. 单击 **保存**。
 
 重新颁发通知将发送给分配给法定保留通知的所有保管人。 此外，如果启用了提醒或上报通知，则这些类型的通知的工作流将重新启动。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42280110"
 
 更新发布、发布、重新发布、提醒或上报通知的内容或设置时，这些更改将应用于工作流将来生成的所有通信。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [向事例添加保管人](add-custodians-to-case.md)
 

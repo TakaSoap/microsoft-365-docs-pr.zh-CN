@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 405f63c849c33680ff221dd752899682df5d62e7
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0a465458026c7da21ff60d62c7566d01e77d3e584ba487adf842074578066662
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801564"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -229,23 +229,23 @@ Select an alert from the queue to display the **Alert detail** page.
 - 在 ServiceNow 中为内部风险管理案例创建记录
 - 将用户添加到内部风险策略时通知用户
 
-若要为内部风险管理案例运行、管理或创建 Power Automate 流：
+若要运行、管理或创建Power Automate内部风险管理案例的流：
 
 1. 在 **"案例** 操作"工具栏上选择"自动"。 
-2. 选择要运行的 Power Automate 流，然后选择"**运行流"。** 
+2. 选择要运行的Power Automate流，然后选择"运行 **流"。** 
 3. 流完成后，**选择完成。**
 
-若要了解有关适用于内部风险管理的 Power Automate 流的信息，请参阅内部 [风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
+若要了解有关内部Power Automate流的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建适用于此案例的 Microsoft Teams 团队
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建Microsoft Teams案例团队
 
-在设置中启用针对内部风险管理的 Microsoft Teams 集成后，每次确认警报并创建案例时，都会自动创建 Microsoft Teams 团队。 风险研究人员和分析员可以通过选择"案例操作"工具栏上的"查看 **Microsoft Teams** 团队"，快速打开 Microsoft Teams 并直接导航到团队了解案例。
+在Microsoft Teams启用内部风险管理集成后，Microsoft Teams每次确认警报并创建案例时，都会自动创建一个团队。 风险研究人员和分析员可以快速打开Microsoft Teams，并在案例操作工具栏上选择"查看Microsoft Teams团队，直接导航 **到** 团队查看案例。
 
-对于在启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建 **Microsoft Teams** 团队"，为事例创建新的 Microsoft Teams 团队。
+对于启用 Microsoft Team 集成之前打开的事例，风险研究人员和分析师可以通过在事例操作工具栏上选择"创建Microsoft Teams团队"，为事例创建新的 Microsoft Teams 团队。 
 
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
-若要了解有关用于内部风险管理的 Microsoft Teams 的信息，请参阅内部 [风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
+若要了解有关内部风险管理Microsoft Teams，请参阅[内部风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
 
 ### <a name="resolve-the-case"></a>解决案例
 
@@ -256,7 +256,7 @@ Select an alert from the queue to display the **Alert detail** page.
 
 要解决这种情况，需要：
 
-1. 在 [Microsoft 365](https://compliance.microsoft.com)合规中心，转到 **"内部风险管理** "并选择" **案例"** 选项卡。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Cases** tab.
 2. 选择一个案例，然后选择案例操作工具栏上的"解决大小写"按钮。
 3. 在" **解决案例** "对话框中 **，选择"** 解析为"下拉列表控件以选择案例的解析分类。 选项为 **"安全"****或"已确认的策略违反"。**
 4. 在" **解决案例** "对话框中，在"已采取操作的文本"字段中输入解析 **分类** 的原因。

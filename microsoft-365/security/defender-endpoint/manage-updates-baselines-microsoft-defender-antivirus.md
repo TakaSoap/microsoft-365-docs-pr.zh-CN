@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 07/12/2021
-ms.openlocfilehash: 1b773549909f376a67e0dc407d35ed4a6152ada8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.date: 08/04/2021
+ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800086"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -82,6 +82,23 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 - 云 (集成[改进](/microsoft-365/security/defender/microsoft-365-defender)Microsoft 365 Defender) 。
 <br/>
 <details>
+<summary> 2021 年 7 月 (平台：4.18.2107.4 |引擎：1.1.18400.x) </summary>
+
+&ensp;安全智能更新版本 **：x.xxx.xx.x**  
+&ensp;已发布： **日期，2021 年**  
+&ensp;平台 **：4.18.2107.4**  
+&ensp;引擎 **：1.1.18400.x**  
+&ensp;支持阶段： **安全和关键更新**
+    
+### <a name="whats-new"></a>最近更新
+- 为可移植设备Windows设备控制支持
+- 默认情况下， (PUA) 保护中可能不需要的应用程序为使用者打开 (看到默认情况下，可能会不需要的应用将被阻止) [](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
+- 组策略对象托管系统的计划扫描将遵循用户配置的扫描时间 
+
+### <a name="known-issues"></a>已知问题
+无已知问题  
+<br/>
+</details><details>
 <summary> 2021 年 6 月 (平台：4.18.2106.5 |引擎：1.1.18300.4) </summary>
 
 &ensp;安全智能更新版本 **：1.343.17.0**  
@@ -115,13 +132,18 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 ### <a name="known-issues"></a>已知问题
 无已知问题  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>旧版本更新：仅技术升级支持
+
+发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 低于本部分中列出的版本，并且仅提供用于技术升级支持的版本。 
+<details>
 <summary> 2021 年 4 月 (平台：4.18.2104.14 |引擎：1.1.18100.5) </summary>
 
 &ensp;安全智能更新版本 **：1.337.2.0**  
 &ensp;发布时间 **：2021**  年 4 月 26 日 (引擎：1.1.18100.6 发布时间 2021 年 5 月 5 日) &ensp; 平台 **：4.18.2104.14**  
 &ensp;引擎 **：1.1.18100.5**  
-&ensp;支持阶段： **安全和关键更新**
+&ensp;支持阶段 **：仅支持 (升级)**
     
 ### <a name="whats-new"></a>最近更新
 - 其他行为监视逻辑
@@ -132,12 +154,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 ### <a name="known-issues"></a>已知问题
 无已知问题  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>旧版本更新：仅技术升级支持
-
-发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 低于本部分中列出的版本，并且仅提供用于技术升级支持的版本。 
-<details>
+</details><details>
 <summary> 2021 年 3 月 (平台：4.18.2103.7 |引擎：1.1.18000.5) </summary>
 
 &ensp;安全智能更新版本 **：1.335.36.0**  

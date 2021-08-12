@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 67a9cdb3185bf33b3e4b6353852acdae3f5b1f60
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b72291e1c5b63cea65b6990a82e9de24cfc8fd5ea2ae75e31b82bc4033a0bc5f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53800111"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -276,7 +276,7 @@ ms.locfileid: "53650447"
   <command name> -type file -id <file path> - auto
   ```
 
-  或
+  或者
 
   ```powershell
   remediate file <file path> - auto`

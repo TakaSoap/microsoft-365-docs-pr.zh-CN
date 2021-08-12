@@ -1,5 +1,5 @@
 ---
-title: 下载通过云解决方案提供商云解决方案提供商计划云解决方案提供商计划 (软件) 密钥
+title: 下载通过云解决方案提供商计划购买云解决方案提供商 (软件) 密钥
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,18 +17,18 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
-description: 了解如何下载通过云解决方案提供商云解决方案提供商计划 (软件) 密钥。
+description: 了解如何下载通过云解决方案提供商计划云解决方案提供商计划云解决方案提供商 (软件) 密钥。
 ms.date: 01/27/2021
-ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7ab5cfef9ae5e17ae2ab34fff05ed482e9dd7a859f9ab72132e9bfc6264bea59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821983"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>下载永久软件和产品许可证密钥
 
-本文介绍如何下载通过云解决方案提供商云解决方案提供商计划 (软件) 密钥。
+本文介绍如何下载通过云解决方案提供商计划购买永久软件的软件云解决方案提供商 (产品) 密钥。
 
 ## <a name="before-you-begin"></a>准备工作
 

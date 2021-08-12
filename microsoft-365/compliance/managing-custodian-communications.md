@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery轻松管理法律调查中通知保管人的法律保留通知工作流。
-ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 0cb845ee7aa110649d5c148868d0d8b1f16b2d801fb7b55c8b12170a121f975f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842107"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>使用 Advanced eDiscovery
 

@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何使用仅云或混合标识模型Microsoft 365 Azure AD 用户标识服务。
-ms.openlocfilehash: 93a37f39a4d96d7c2e434ed6edf4df588e672a0f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 659546d6138591bc0b3db04bb4a77f1eab4edf665513fbf1b4df4e2109c71dcf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835471"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365标识模型和Azure Active Directory
 
@@ -94,7 +94,7 @@ Azure AD 租户具有 AD DS 帐户的副本。 在此配置中，本地和远程
 
 在 Azure AD 中，Microsoft 365 管理中心或 PowerShell Microsoft 365管理同步的用户帐户。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 如果你需要仅云标识模型，请参阅仅 [云标识](cloud-only-identities.md)。
 

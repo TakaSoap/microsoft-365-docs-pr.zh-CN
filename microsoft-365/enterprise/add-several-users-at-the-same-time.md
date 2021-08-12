@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: '了解如何从电子表格或其他 CSV 格式Microsoft 365列表中的用户添加到企业版。 观看 YouTube 上的一个介绍如何将帐户添加到 Microsoft 365。 在此过程结束时，拥有帐户的每个用户都将拥有一Microsoft 365邮箱。 '
-ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835401"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同时添加多个用户以Microsoft 365管理员帮助
 
@@ -38,7 +38,7 @@ ms.locfileid: "50905616"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>在管理中心Microsoft 365多个用户
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>在网站中添加Microsoft 365 管理中心
 
 1. 使用工作或学校帐户登录 Microsoft 365。
 
@@ -96,7 +96,7 @@ CSV 文件是包含逗号分隔值的文件。 可以使用任何文本编辑器
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>使用技巧设置电子表格格式的模板
 
-- **是否需要与示例电子表格中相同的列标题？** 是的。 示例电子表格包含第一行中的列标题。 这些标题是必需的。 对于要添加到"用户"Microsoft 365，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365可能无法从文件中的信息创建用户。
+- **是否需要与示例电子表格中相同的列标题？** 能。 示例电子表格包含第一行中的列标题。 这些标题是必需的。 对于要添加到"用户"Microsoft 365，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365可能无法从文件中的信息创建用户。
 
 - **如果我没有每个用户所需的全部信息，应该怎么做？** 用户名和显示名称是必需的，如果没有此信息，就无法添加新用户。 如果没有其他一些信息（如传真），可以使用空格加逗号指示字段应保留为空。
 

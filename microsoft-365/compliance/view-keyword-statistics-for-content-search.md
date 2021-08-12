@@ -14,14 +14,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何使用搜索统计信息功能在合规性中心中显示与核心电子数据展示案例关联的内容搜索Microsoft 365统计信息。
+description: 了解如何使用搜索统计信息功能显示与核心电子数据展示案例关联的内容搜索和搜索的统计信息Microsoft 365 合规中心。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0e543c89b91560520a4e4bf31feb8471c91da4a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 25884f0b450c1bc90cb6487e64fe636ef5f8af16dd30ad7bb4e7ed28402da03f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835512"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>查看电子数据展示搜索结果的统计信息
 
@@ -35,11 +35,11 @@ ms.locfileid: "52311090"
 
 显示内容搜索或与核心电子数据展示案例关联的搜索的统计信息：
   
-1. 在Microsoft 365合规中心 **，单击"** 全部显示"，然后执行下列操作之一：
+1. 在"Microsoft 365 合规中心 **中，** 单击"全部显示"，然后执行下列操作之一：
 
    - 单击 **"内容** 搜索"，然后选择一个搜索以显示该飞出页。
 
-     OR
+     或
 
    - 单击 **"电子数据展示** 核心"，选择一个案例，然后在"搜索"选项卡上选择搜索以显示  >  该飞出页面。 
 
@@ -97,7 +97,7 @@ ms.locfileid: "52311090"
 
 若要创建关键字列表并查看搜索的关键字统计信息，
   
-1. 在Microsoft 365中心，创建新的内容搜索或与核心电子数据展示案例关联的搜索。
+1. 在Microsoft 365 合规中心中，创建新的内容搜索或与核心电子数据展示案例关联的搜索。
 
 2. 在搜索 **向导** 的"条件"页上。 选中" **显示关键字列表"** 复选框。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dce9f77e7c45aba8a49322348d0cb16d9a7e48f72c9972b973589b01d2b4a10c
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 01f9e286c785defa2cc182685be300e695ee181ea9f51de71c821b2290a665ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828994"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -84,10 +84,6 @@ ms.locfileid: "54520731"
 ## <a name="collect-investigation-package-from-devices"></a>从设备收集调查包
 
 作为调查或响应过程的一部分，你可以从设备收集调查包。 通过收集调查包，你可以确定设备的当前状态，并进一步理解攻击者使用的工具和技术。
-
-> [!IMPORTANT]
->
-> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
 
 下载 Zip (包) 并调查设备上发生的事件
 

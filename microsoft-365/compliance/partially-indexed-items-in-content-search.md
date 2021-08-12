@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: 了解 Exchange 和 SharePoint 中可以包含的未索引项，这些项可包括在在 Microsoft 365 合规中心运行电子数据展示搜索中。
-ms.openlocfilehash: e1730959cd3177fe1f7bce1f0315c871b5a57598
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 了解可包括在Exchange电子数据展示搜索中的未SharePoint和未索引Microsoft 365 合规中心。
+ms.openlocfilehash: a43873b52ad4cf76c694b4666761b6904ab4126c5c7b79a6ca530ef00af5c688
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835747"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>电子数据展示中的部分索引项
 
-从合规性中心运行电子数据展示搜索Microsoft 365运行搜索时，自动在估计的搜索结果中包含部分索引项。 部分索引项目Exchange邮箱项目和文档SharePoint OneDrive for Business由于某种原因未完全编制索引进行搜索的邮箱项目和文档。 在Exchange中，部分索引项通常包含 (类型的文件，该文件类型无法) 附加到电子邮件。 以下是在运行电子数据展示搜索时无法为搜索编制索引和作为部分索引项返回的项目的其他一些原因：
+从搜索运行电子数据展示搜索Microsoft 365 合规中心运行搜索时，自动将部分索引项包括在估计的搜索结果中。 部分索引项目Exchange邮箱项目和文档SharePoint OneDrive for Business由于某种原因未完全编制索引进行搜索的邮箱项目和文档。 在Exchange中，部分索引项通常包含 (类型的文件，该文件类型无法) 附加到电子邮件。 以下是在运行电子数据展示搜索时无法为搜索编制索引和作为部分索引项返回的项目的其他一些原因：
   
 - 文件类型是索引无法识别或不支持的文件类型。
 

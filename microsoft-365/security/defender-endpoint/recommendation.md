@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 62db58a58aeb400ddd02fa094cb0962e870bd8d9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9361e791eafad1a3d7243a0d11821c9286c5e3bebf64f878af1e72cda6bfa952
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829107"
 ---
 # <a name="recommendation-resource-type"></a>建议资源类型
 
@@ -52,18 +52,18 @@ ms.locfileid: "53656291"
 ## <a name="properties"></a>属性
 属性 |   类型   |   说明
 :---|:---|:---
-id | 字符串 | 建议 ID
+id | String | 建议 ID
 productName | String | 相关软件名称  
-recommendationName | 字符串 | 建议名称
+recommendationName | String | 建议名称
 漏洞 | 长型 | 发现的漏洞数量
-供应商 | 字符串 | 相关供应商名称
+供应商 | String | 相关供应商名称
 recommendedVersion | 字符串 | 建议版本
-recommendationCategory | 字符串 | 建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityStack"
-subCategory | 字符串 | 建议子类别
+recommendationCategory | String | 建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityStack"
+subCategory | String | 建议子类别
 severityScore | 双精度 | 配置对组织的 Microsoft 设备安全分数的潜在影响 (1-10) 
 publicExploit | 布尔 | 公共攻击可用 
 activeAlert | 布尔 | 活动警报与此建议关联
-associatedThreats | String 集合 | 威胁分析报告与此建议关联
+associatedThreats | String collection | 威胁分析报告与此建议关联
 remediationType | 字符串 | 修正类型。 可能的值是："ConfigurationChange"、"Update"、"Upgrade"、"Uninstall"
 状态 | 枚举 | 建议例外状态。 可能的值是："Active"和"Exception"
 configScoreImpact | 双精度 | Microsoft 设备影响安全分数
