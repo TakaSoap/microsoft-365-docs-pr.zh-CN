@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何启用自动扩展存档，这为用户提供了针对其邮箱的Exchange Online存储空间。 您可以为整个组织或仅为特定用户启用自动扩展存档。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac5661ac43ed9c0f35eba20007f0c4c4406ebf20
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e92f114a613c202e6c61830604bb9d3c16e1d0259f33a0304a9bb244870a562c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795911"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>启用无限制存档 - 管理员帮助
 
@@ -40,7 +40,7 @@ ms.locfileid: "50927822"
 
 - 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档，需要Exchange Online计划 2 许可证Exchange Online计划 1 许可证Exchange Online Archiving许可证。
 
-- 自动扩展存档可防止恢复或还原非 [活动邮箱](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 这意味着，如果为邮箱启用自动扩展存档，并且邮箱在以后变为非活动状态，将无法通过将非活动邮箱 [ (](recover-an-inactive-mailbox.md) 转换为活动邮箱) 或通过将内容合并到现有邮箱) 来将其 [还原到](restore-an-inactive-mailbox.md) (。 如果在非活动邮箱上启用了自动扩展存档，则恢复数据的唯一方法就是使用 Microsoft 365 合规中心中的内容搜索工具将数据从邮箱导出并导入另一个邮箱。 有关详细信息，请参阅 Overview of inactive mailboxes 中的"非活动邮箱和自动扩展 [存档"部分](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)。
+- 自动扩展存档可防止恢复或还原非 [活动邮箱](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 这意味着，如果为邮箱启用自动扩展存档，并且邮箱在以后变为非活动状态，将无法通过将非活动邮箱 [ (](recover-an-inactive-mailbox.md) 转换为活动邮箱) 或通过将内容合并到现有邮箱) 来将其 [还原到](restore-an-inactive-mailbox.md) (。 如果在非活动邮箱上启用了自动扩展存档，则恢复数据的唯一方法就是使用 Microsoft 365 合规中心 中的内容搜索工具将数据从邮箱导出并导入另一个邮箱。 有关详细信息，请参阅 Overview of inactive mailboxes 中的"非活动邮箱和自动扩展 [存档"部分](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)。
 
 - You can't use the Exchange admin center or the Security & Compliance Center to enable auto-expanding archiving. 您必须使用 Exchange Online PowerShell。 若要使用远程 PowerShell Exchange Online组织，请参阅连接 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
@@ -113,7 +113,7 @@ Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnab
 
     ![启用自动扩展存档后，ArchiveQuota 和 ArchiveWarningQuota 属性将被忽略](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 您还可以使用 PowerShell 启用存档邮箱。 例如，可以在 PowerShell Exchange Online运行以下命令，为尚未启用存档邮箱的所有用户启用存档邮箱。
 

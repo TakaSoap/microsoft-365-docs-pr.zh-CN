@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: 0051f9c20508f0682d34ad3ad17d3e4d8cccf60f
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c9d9858d030e54884a4defc9b06afe67e8951fca37e36f10d0e9979e5d282920
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827456"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
@@ -130,7 +130,7 @@ ms.locfileid: "53648683"
   
     ![导出Outlook"数据文件"对话框，其中选中了顶部文件夹并选中了"包含子文件夹"](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 选择“**下一步**”。
+7. 选择 **下一步**。
 
 8. 选择 **"浏览**"选择保存Outlook文件 (.pst) 。 键入  *文件名，* 然后选择" **确定"** 继续。
 
@@ -173,7 +173,7 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 5. 在 **"选项**"下，选择如何处理重复项
 
-6. 选择“**下一步**”。
+6. 选择 **下一步**。
 
 7. 如果将密码分配给 Outlook.pst (.pst) ，请输入密码，然后选择"确定 **"。**
 

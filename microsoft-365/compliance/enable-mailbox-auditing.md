@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: 默认情况下，邮箱审核日志记录在邮箱Microsoft 365 (也称为默认邮箱审核或默认启用邮箱审核) 。 这意味着邮箱所有者、代理人和管理员执行的某些操作会自动记录在邮箱 审核日志 中，您可以在其中搜索对邮箱执行的活动。
-ms.openlocfilehash: f74cb23a029d4710a19aeb18999169f6adc636a4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9b649e1e81ba9a70e11d255ba35af17869744e9bbb9b26ba7cc84294e10afafb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796044"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -64,7 +64,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ****
 
-|邮箱类型|受支持|
+|邮箱类型|支持|
 |---|:---:|
 |用户邮箱|![复选标记](../media/checkmark.png)|
 |共享邮箱|![复选标记](../media/checkmark.png)|

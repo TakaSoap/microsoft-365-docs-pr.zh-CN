@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自动扩展存档，它为邮箱提供无限制Exchange Online存储。
-ms.openlocfilehash: d61d3649ed65a93298928cced21180bbeca6aa95
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 20be08209bbd4bad3bf0bdb0e7de4d602ee995a2873116981a9f7d892ffd1e46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841258"
 ---
 # <a name="overview-of-unlimited-archiving"></a>无限制存档概述
 
@@ -86,15 +86,15 @@ ms.locfileid: "51476263"
 
 - Outlook 2016 2019 for Mac Outlook 或 Outlook for Mac
 
-下面是在 Web 上使用 Outlook 或 Outlook 访问存储在自动展开存档中的邮件时要考虑的一些情况。
+下面是使用自动展开的存档Outlook Outlook 网页版存储的邮件时要考虑的一些情况。
 
 - 可以访问存档邮箱中的任意文件夹，包括已移动到自动扩展存储区域的文件夹。
 
 - 搜索自动扩展存档在 OWA Outlook 中 (可用) 。 与联机存档类似，可以搜索已移动到其他存储区域的项目。 在 OWA 中选择存档作为搜索范围时， (包括自动展开的存档及其) 及其对应的子文件夹。
 
-- 自动展开的存档搜索在当前频道中的Outlook桌面 (预览) 。 在此预览版中，"当前邮箱"范围可用，因此允许您搜索自动展开的存档。 有关此功能和其他 Microsoft 搜索支持功能的信息，请参阅如何[Outlook Windows](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)用户Exchange Online Microsoft 搜索。 
+- 自动展开的存档搜索在当前频道中的Outlook桌面 (预览) 。 在此预览版中，"当前邮箱"范围可用，因此允许您搜索自动展开的存档。 有关此功能和其他支持功能Microsoft 搜索，请参阅如何Outlook Windows用户Exchange Online[利用](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)Microsoft 搜索。 
 
-- Outlook存档中 (和 Web Outlook Outlook 中的项目计数) 读/未读计数可能不准确。
+- 自动展开Outlook中的Outlook和读/未读 (计数Outlook Outlook 网页版) 自动展开存档中的项目计数可能不准确。
 
 - 可以删除指向自动扩展存储区的子文件夹中的项目，但无法删除文件夹本身。
 
@@ -112,6 +112,6 @@ ms.locfileid: "51476263"
 
 - **导入服务：** 可以使用 Office 365 导入服务将 PST 文件导入到用户的自动展开存档。 您最多可以将 100 GB 的数据从 PST 文件导入到用户的存档邮箱。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 有关自动扩展存档的更多技术详细信息，请参阅[Microsoft 365： Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)。

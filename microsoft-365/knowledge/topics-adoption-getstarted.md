@@ -1,6 +1,6 @@
 ---
 title: 开始推动采用 Microsoft Viva 主题
-description: 了解如何在组织中推动采用 Microsoft Viva 主题。
+description: 了解如何在组织中推动Microsoft Viva主题的采用。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -11,12 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 591b83823aac1679209ed6cdd0069d559e9fe3e7adfbf7a3f24f0730f37ce912
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834694"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>开始推动采用 Microsoft Viva 主题
 

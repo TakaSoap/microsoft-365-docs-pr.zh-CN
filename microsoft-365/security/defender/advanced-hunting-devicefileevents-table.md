@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceFileEvents 表
 description: 了解高级搜寻架构的 DeviceFileEvents 表中与文件相关的事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件创建事件， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， filecreationevents， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 980cac2d3997e062758a5d8f95f86ff5fa65a8988e94b2485136ed5eca49a7d1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52022994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806156"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 

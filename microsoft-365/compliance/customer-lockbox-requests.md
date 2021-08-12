@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求，该请求允许你控制 Microsoft 支持工程师在遇到问题时如何访问你的数据。
-ms.openlocfilehash: 6a6a1d45bfbc8b7c65d9ac8d58eb246643505c4f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4669abefe039d0f4ba75f22d267c54696cb680aee44df560befd93006c515ae5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796200"
 ---
 # <a name="customer-lockbox-in-office-365"></a>客户密码箱Office 365
 
@@ -54,9 +54,9 @@ ms.locfileid: "50922706"
 
     ![客户密码箱电子邮件通知示例](../media/CustomerLockbox1.png)
 
-   在管理中心中分配有客户密码箱[访问](/office365/admin/add-users/about-admin-roles)审批者管理员Microsoft 365可以批准客户密码箱请求。
+   分配了客户密码箱[访问](/office365/admin/add-users/about-admin-roles)审批者管理员角色的任何人都可以Microsoft 365 管理中心客户密码箱请求。
 
-6. 审批者登录管理Microsoft 365审批请求。 此步骤会触发创建审核记录，可通过搜索审核日志获得该审核记录。 有关详细信息，请参阅审核 [客户密码箱请求](#auditing-customer-lockbox-requests)。
+6. 审批者登录审批Microsoft 365 管理中心批准请求。 此步骤会触发创建审核记录，可通过搜索审核日志获得该审核记录。 有关详细信息，请参阅审核 [客户密码箱请求](#auditing-customer-lockbox-requests)。
 
    如果客户拒绝请求或者未在 12 小时内批准请求，该请求将过期，并且不会向 Microsoft 工程师授予任何访问权限。
 
@@ -156,7 +156,7 @@ ms.locfileid: "50922706"
 | IP 地址 | 审批者用于批准或拒绝请求的计算机的 IP 地址。 |
 | 用户       | 客户帐户BOXServiceAccount@ \[ \] .prod.outlook.com。            |
 | 活动   | Set-AccessToCustomerDataRequest；这是批准或拒绝客户密码箱请求时记录的审核活动。                                |
-| 项目       | 客户密码箱请求的 Guid                             |
+| Item       | 客户密码箱请求的 Guid                             |
 
 以下屏幕截图显示了与批准的客户密码箱请求审核日志记录的示例。 如果客户密码箱请求被拒绝， **则 ApprovalDecision** 参数的值为 **Deny**。
 
@@ -167,7 +167,7 @@ ms.locfileid: "50922706"
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Microsoft 工程师执行的操作的审核记录
 
-客户密码箱请求获得批准后 Microsoft 工程师执行的操作（可能导致访问客户内容）将记录在审核日志中。 这些记录包含以下信息。
+批准客户密码箱请求后，Microsoft 工程师执行的操作（可能导致访问客户内容）将记录在审核日志中。这些记录包含以下信息。
 
 | 审核记录属性| 描述|
 |:---------- |:----------|
@@ -219,7 +219,7 @@ ms.locfileid: "50922706"
 
 #### <a name="how-do-i-opt-in-to-customer-lockbox"></a>如何选择加入客户密码箱？
 
-全局管理员可以在管理中心或管理中心Microsoft 365 Microsoft 365客户密码箱。
+全局管理员可以在"客户密码箱"或"密码箱"Microsoft 365 Microsoft 365 管理中心。
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>如果我批准客户密码箱请求，工程师可以做什么，如何知道 Microsoft 工程师做什么？
 
@@ -227,7 +227,7 @@ ms.locfileid: "50922706"
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>我如何知道 Microsoft 遵循审批流程？
 
-可以在管理中心内使用客户密码箱请求历史记录交叉引用发送给组织中管理员和审批者Microsoft 365通知。
+可以使用客户密码箱请求历史记录交叉引用发送给组织中管理员和审批者的电子邮件审批Microsoft 365 管理中心。
 
 客户密码箱包含在最新的 [SOC 1 SSAE 16 审核报告中](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)。 有关详细信息，可以在 Microsoft 服务信任门户 [中查找最新报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)。
 
@@ -245,7 +245,7 @@ ms.locfileid: "50922706"
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>如何获取所有客户密码箱请求的历史记录？
 
-所有客户密码箱请求都通过管理中心Microsoft 365查看。
+所有客户密码箱请求都可查看Microsoft 365 管理中心。
 
 #### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>如何将内容访问请求与相关的审核日志关联？
 

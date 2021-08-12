@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在内容资源管理器中向可训练分类器提供反馈。
-ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: fddb25bb1ebf702d19767c13f65df4f925fcfc78a7036eb769b96241b271471c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796332"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
@@ -61,7 +61,7 @@ ms.locfileid: "52793060"
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
-1. 使用合规性管理员Microsoft 365安全管理员角色访问权限登录到合规性中心，然后打开Microsoft 365 **中心**  >  **数据** 分类  >  **内容资源管理器"。** 
+1. 登录以使用Microsoft 365 合规中心管理员或安全管理员角色访问权限登录，**然后打开Microsoft 365 合规中心**  >  **数据分类**  >  **内容资源管理器"。** 
 2. 在"**筛选标签、信息类型** 或类别"列表下，展开 **"可训练分类器"。**
 
 > [!IMPORTANT]

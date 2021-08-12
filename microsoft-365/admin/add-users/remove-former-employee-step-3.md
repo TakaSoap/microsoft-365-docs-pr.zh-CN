@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤将前员工的电子邮件转发给其他员工或转换为共享邮箱。
-ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 07973e47dd7f79ad4adc9121c9a2f6d368bb699e22d6d2cbacb91d3b8fce4fbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827355"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱
 
@@ -55,7 +55,7 @@ ms.locfileid: "53650111"
 2. 选择要阻止的员工的姓名，然后选择"邮件 **"** 选项卡。
 3. 在 **"电子邮件转发"下**，选择 **"管理电子邮件转发"。**
 4. 启用" **转发发至此邮箱的所有电子邮件** "。 在 **"转发地址** "框中，键入要获取电子邮件的当前员工的电子邮件地址。
-5. 选择 **保存**。
+5. 选择“**保存**”。
 6. 注意，切勿删除以前员工的帐户。
 
 ## <a name="related-content"></a>相关内容

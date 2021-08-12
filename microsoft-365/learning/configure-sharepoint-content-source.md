@@ -1,5 +1,5 @@
 ---
-title: '将 SharePoint 配置为 Microsoft Viva 预览版Learning (学习) '
+title: 将 SharePoint 配置为 Microsoft Viva Learning (Preview) 的学习内容源
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 了解如何将 SharePoint配置为 Microsoft Viva Learning (Preview) 。
-ms.openlocfilehash: 96dc12f8c69281f420b339198222f9f918ebc5b4
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 了解如何将 SharePoint 配置为 Microsoft Viva Learning (Preview) 。
+ms.openlocfilehash: a7f4b41bb515fbd8c1ffde98f29da1ff13cc30df5eb36f07ae4ab35c0eb4f229
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834667"
 ---
-# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>将 SharePoint 配置为 Microsoft Viva 预览版Learning (学习) 
+# <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>将 SharePoint 配置为 Microsoft Viva Learning (Preview) 的学习内容源
 
 > [!NOTE]
 > 此功能在产品预览中尚不可用。

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0c5e4418a44c463ab05f920f53f4c46b8fdc7c521d84deca48bdfdbfb207befa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53812992"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到Office 365新的德国数据中心区域提供服务
 
@@ -66,7 +66,7 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 :::image type="content" alt-text="迁移到新德国数据中心的十个阶段" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
-当你选择加入迁移 [时，这些阶段将开始](./ms-cloud-germany-migration-opt-in.md)。 大多数迁移阶段都是作为后端服务操作执行的，所需的客户交互最少，并且执行后一个阶段。 其他客户引导任务的开始和整体迁移状态将在迁移过程中通过 Microsoft 365 管理中心的消息中心进行通信。 任务示例可能包括客户管理的 DNS 更新、针对混合客户的混合Exchange重新配置或 Azure 迁移。
+当你选择加入迁移 [时，这些阶段将开始](./ms-cloud-germany-migration-opt-in.md)。 大多数迁移阶段都是作为后端服务操作执行的，所需的客户交互最少，并且执行后一个阶段。 其他由客户引导的任务和整体迁移状态的开始将在迁移过程中通过Microsoft 365 管理中心消息中心进行通信。 任务示例可能包括客户管理的 DNS 更新、针对混合客户的混合Exchange重新配置或 Azure 迁移。
 
 选择加入时迁移不会立即开始。 你的组织将添加到计划稍后迁移的租户列表中。 现在可以开始工作前阶段，这些阶段对于确保在完成时成功迁移和使用至关重要：
 
@@ -97,7 +97,7 @@ Azure AD 最终转换到全球服务后，预计所有客户端和应用程序�
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>移动到新的德国数据中心区域
 
-现有的德国 Microsoft 云客户现在可以开始迁移其 Office 365 Dynamics 365 客户参与度和 Power Platform 服务。 首先要[选择采用 Microsoft 引导的迁移](./ms-cloud-germany-migration-opt-in.md)方法，迁移到新的德国数据中心区域。 续订订阅时，将自动选择加入 Microsoft 协助的迁移。 发生此情况时，Microsoft 会使用电子邮件和 Microsoft 365 中心的消息中心通知客户租户管理员。 但是，如果你希望现在启动此过程，可以选择直接在管理中心[](./ms-cloud-germany-migration-opt-in.md)Microsoft 365加入。 迁移预计于 2021 年初开始，并将于 2021 年 10 月 29 日完成。 
+现有的德国 Microsoft 云客户现在可以开始迁移其 Office 365 Dynamics 365 客户参与度和 Power Platform 服务。 首先要[选择采用 Microsoft 引导的迁移](./ms-cloud-germany-migration-opt-in.md)方法，迁移到新的德国数据中心区域。 续订订阅时，将自动选择加入 Microsoft 协助的迁移。 发生此情况时，Microsoft 会向客户租户管理员发送电子邮件，Microsoft 365 管理中心消息中心通知客户租户管理员。 但是，如果你希望立即开始此过程，则现在可以直接选择加入Microsoft 365 管理中心[](./ms-cloud-germany-migration-opt-in.md)中。 迁移预计于 2021 年初开始，并将于 2021 年 10 月 29 日完成。 
 
 迁移后，核心客户数据和订阅将移动到新的德国数据中心区域。
 
@@ -180,10 +180,10 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 23. Office 网页版
 24. Planner
 25. Sway
-26. Microsoft 365 应用版
+26. Microsoft 365 应用
 27. Outlook Mobile
-28. 企业移动性 + 安全性 (E3) E3 (Azure AD 高级版 P1、Intune 和 Rights Management Service) 
-29. Yammer 企业版
+28. 企业移动性 + 安全性 (E3) E3 (Azure AD Premium P1、Intune 和权限管理服务服务) 
+29. Yammer Enterprise
 30. Microsoft Forms
 31. Power Automate Office 365
 32. Power Virtual Agents Office 365
@@ -205,7 +205,7 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 
 **Office 365**
 
-立即[选择加入](./ms-cloud-germany-migration-opt-in.md)以执行 Microsoft 引导的迁移。 当我们准备好开始迁移时，我们将通过管理中心的消息中心Microsoft 365通知你。
+立即[选择加入](./ms-cloud-germany-migration-opt-in.md)以执行 Microsoft 引导的迁移。 当我们准备好开始迁移时，我们将通过邮件中心中的 Microsoft 365 管理中心。
 
 **Dynamics 365 和 Power BI**
 
@@ -213,7 +213,7 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>我使用的服务Office 365价格会发生变化吗？
 
-是。 Microsoft 全球&#39;区域的定价 (包括新的数据中心区域) 通常较低。
+能。 Microsoft 全球&#39;区域的定价 (包括新的数据中心区域) 通常较低。
 
 ### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>在订阅迁移过程中，哪些 SKUS 和许可证将应用于我的组织和用户？
 
@@ -246,9 +246,9 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 | \_Office 365 商业协作版DE (O365 \_ BUSINESS \_ ESSENTIALS DE \_)  | Microsoft 365 商业基础版 (O365 \_ 商业 \_ 基本)  |
 | \_Office 365 商业高级版DE (O365 \_ 商业 \_ 高级 \_ 版 DE)  | Microsoft 365 商业标准版 (O365 \_ 商业 \_ 高级版)  |
 | \_Office 365 商业版DE (O365 \_ BUSINESS \_ DE)  | Microsoft 365 商业应用版 (O365 \_ BUSINESS)  |
-| Office 365E1 \_ DE (STANDARDPACK DE \_)  | Office 365E1 (STANDARDPACK)  |
-| Office 365不带 ProPlus \_ DE 的 E3 (ENTERPRISEPACKWITHOUTPROPLUS \_ DE)  | Office 365不带 ProPlus 的 E3 (ENTERPRISEPACKWITHOUTPROPLUS)  |
-| Office 365E3 \_ DE (ENTERPRISEPACK DE \_)  | Office 365E3 (ENTERPRISEPACK)  |
+| \_Office 365 E1DE (STANDARDPACK \_ DE)  | Office 365 E1 (STANDARDPACK)  |
+| Office 365 E3没有 ProPlus \_ DE (ENTERPRISEPACKWITHOUTPROPLUS \_ DE)  | Office 365 E3 ENTERPRISEPACKWITHOUTPROPLUS (没有 ProPlus)  |
+| \_Office 365 E3DE (ENTERPRISEPACK \_ DE)  | Office 365 E3 (ENTERPRISEPACK)  |
 | Office 365 企业版E1 \_ DE (STANDARDPACK DE \_)  | Office 365 企业版E1 (STANDARDPACK)  |
 | Office 365 企业版E3 \_ DE (ENTERPRISEPACK DE \_)  | Office 365 企业版E3 (ENTERPRISEPACK)  |
 | \_Office 365 额外文件存储空间DE (SHAREPOINTSTORAGE \_ DE)  | Office 365 额外文件存储空间 (SHAREPOINTSTORAGE)  |
@@ -263,11 +263,11 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 | \_Project Online 协作版DE (PROJECTESSENTIALS \_ DE)  | Project Online 协作版 (PROJECTESSENTIALS)  |
 | \_Project Online 高级版DE (PROJECTPREMIUM \_ DE)  | Project Online 高级版 (PROJECTPREMIUM)  |
 | \_Project Online ProfessionalDE (PROJECTPROFESSIONAL \_ DE)  | Project Online Professional (PROJECTPROFESSIONAL)  |
-| Project计划 3 \_ DE (PROJECTPROFESSIONAL \_ DE)  | Project计划 3 (PROJECTPROFESSIONAL)  |
-| Office 365E4 \_ DE (ENTERPRISEWITHSCAL \_ DE)  | Office 365E3 (ENTERPRISEPACK)  |
+| \_Project 计划 3DE (PROJECTPROFESSIONAL \_ DE)  | Project 计划 3 (PROJECTPROFESSIONAL)  |
+| Office 365E4 \_ DE (ENTERPRISEWITHSCAL \_ DE)  | Office 365 E3 (ENTERPRISEPACK)  |
 | \_SharePoint Online (计划 1) DE (SHAREPOINTSTANDARD \_ DE)  | SharePoint Online (计划 1)  (SHAREPOINTSTANDARD)  |
 | \_SharePoint Online (计划 2) DE (SHAREPOINTENTERPRISE \_ DE)  | SharePoint Online (计划 2)  (SHAREPOINTENTERPRISE)  |
-| Skype for Business联机 (MCOIMP DE) DE (计划 \_ 1 \_)  | Office 365E1 (STANDARDPACK)  |
+| Skype for Business联机 (MCOIMP DE) DE (计划 \_ 1 \_)  | Office 365 E1 (STANDARDPACK)  |
 | Skype for Business联机 (MCOIMP DE) DE (计划 \_ 1 \_)  | Skype for BusinessMCOIMP (计划 1)  (联机)  |
 | Skype for Business联机 (计划 2) DE \_ (MCOSTANDARD \_ DE)  | Skype for Business在线 (MCOSTANDARD)  (计划 2)  |
 | Skype for Business加上 CAL \_ DE (MCOPLUSCAL \_ DE)  | Skype for Business加上 CAL (MCOPLUSCAL)  |
@@ -275,8 +275,8 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 | Visio联机计划 1 \_ DE (VISIOONLINE \_ PLAN1 DE \_)  | Visio联机计划 1 (VISIOONLINE \_ PLAN1)  |
 | VisioVISIOCLIENT FACULTY DE (Online Plan 2 for \_ \_ faculty \_ DE)  | VisioVISIOCLIENT 教职员工在线计划 2 (VISIOCLIENT \_ 教职员工)  |
 | VisioVISIOCLIENT DE (Online Plan 2 \_ \_ DE)  | VisioVISIOCLIENT (Online Plan 2)  |
-| Visio计划 1 \_ DE (VISIOONLINE \_ PLAN1 DE \_)  | Visio规划 1 (VISIOONLINE \_ PLAN1)  |
-| Visio规划 2 \_ DE (VISIOCLIENT \_ DE)  | VisioVISIOCLIENT (2)  |
+| \_Visio 计划 1DE (VISIOONLINE \_ PLAN1 \_ DE)  | Visio 计划 1 (VISIOONLINE \_ PLAN1)  |
+| \_Visio 计划 2DE (VISIOCLIENT \_ DE)  | Visio 计划 2 (VISIOCLIENT)  |
 |||
 
 ### <a name="how-do-i-get-help-from-microsoft-to-migrate-to-a-new-region-or-answer-support-questions"></a>我可如何获取帮助，让 Microsoft 帮我迁移到新的区域或解答支持问题？
@@ -284,8 +284,8 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 如果你有问题，可以联系我们或你的合作伙伴：
 
 - 对于 Azure，可在 Azure 门户提交[新的支持请求](https://portal.microsoftazure.de/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)。
-- For Office 365， you may submit questions using the &quot; Need Help？ &quot; link of the Microsoft 365 admin [center](https://portal.office.de/).
-- 如果你是 Dynamics 365 客户参与度Power BI且还具有 Office 365，可以使用管理中心 中的"需要帮助？"链接提交Microsoft 365 &quot; &quot; [问题](https://portal.office.de/)。 有关 Dynamics 365 Customer Engagement 支持选项，可查看[此处](/dynamics365/get-started/support/)。 有关 Power BI 支持选项，可查看[此处](https://powerbi.microsoft.com/support/)。
+- For Office 365， you may submit questions using the &quot; Need Help？ &quot; link of the [Microsoft 365 管理中心](https://portal.office.de/).
+- 如果你是 Dynamics 365 客户参与Power BI且还具有Office 365，可以使用以下链接的"需要帮助？"链接提交 &quot; &quot; [Microsoft 365 管理中心。](https://portal.office.de/) 有关 Dynamics 365 Customer Engagement 支持选项，可查看[此处](/dynamics365/get-started/support/)。 有关 Power BI 支持选项，可查看[此处](https://powerbi.microsoft.com/support/)。
 
 ### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>除了德国 Microsoft 云租户外，我的客户还具有全球 Microsoft 云中的 M365 租户。 这两个租户能否作为迁移的一部分合并到一个租户中？
 
@@ -330,15 +330,15 @@ Microsoft 管理的 IP 范围和 DNS 区域在迁移到全局服务期间进行�
 
 ### <a name="will-outlook-for-ios-and-android-work-after-the-migration"></a>迁移Outlook适用于 iOS 和 Android 的 IOS 和 Android 版本会正常工作吗？ 
 
-是。 Microsoft 的建议是，所有客户都运行最新可用版本的 Office 客户端，Outlook适用于 iOS 和 Android 客户端的客户端。 迁移到 Office 365 全局服务后，所有 Office 客户端都需要注销并重新登录，才能从全局服务Azure Active Directory新的 Azure Active Directory 访问令牌。 
+能。 Microsoft 的建议是，所有客户都运行最新可用版本的 Office 客户端，Outlook适用于 iOS 和 Android 客户端的客户端。 迁移到 Office 365 全局服务后，所有 Office 客户端都需要注销并重新登录，才能从全局服务Azure Active Directory新的 Azure Active Directory 访问令牌。 
 
 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 

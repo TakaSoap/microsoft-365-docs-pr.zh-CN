@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 了解如何在网站中保留、收集、审阅和导出Microsoft Teams内容Advanced eDiscovery。
-ms.openlocfilehash: fc6fcc7973d9582714106506a41058bb2a905372
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e5e899b3ee6268c0214dbcfe6b53566072fc75ed045e728a0f7845f25354e552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53841308"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery使用大Microsoft Teams预览 (中的内容) 
 

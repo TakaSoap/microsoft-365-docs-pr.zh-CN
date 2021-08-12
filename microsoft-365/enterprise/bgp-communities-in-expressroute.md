@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 了解如何在 Azure ExpressRoute 中使用 BGP 社区来管理 IP 前缀的数量和用于Office 365带宽。
-ms.openlocfilehash: 9cb6980c1d8cc120f99cac087602856aeacf1adf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7dd274524ece89c6114be594c24e1a5ee049de77f139fd2116f32c6dd3adc502
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819567"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>在 ExpressRoute 中将 BGP 社区用于Office 365方案
 

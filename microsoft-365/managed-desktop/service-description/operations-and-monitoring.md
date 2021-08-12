@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: dab1d8befaa0d32118f3fea350037ed8b91aadf3
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3b3ac3be5ac9d0944303d4e43bbb7b352d7e03497b6807752ee19b9c32f881ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652415"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834607"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 托管桌面操作和监视
 
@@ -55,7 +55,7 @@ ms.locfileid: "53652415"
 
 并不是所有的更改都会对您的用户产生相同的影响，或需要采取操作。 一些是已计划的，一些则根据其性质 (非安全更新和安全更新通常不会) 。 根据更改的类型，信道可能会有所不同。 下表列出了您期望的 Microsoft 托管桌面 类型的更改。
 
-|   | 功能 | 非安全更新 | 安全性
+|   | 功能 | 非安全更新 | 安全团队
 --- | --- | --- | ---
 **更改类型** | - 功能更新<br>- 新功能或应用程序<br>- 弃用的功能 | 针对问题的客户端修补程序 | 安全更新
 **预先通知** | 有关需要操作的更改的 5 天通知 | 否，此类更改包含在每月版本中 | 否，更改包含在每月版本中 

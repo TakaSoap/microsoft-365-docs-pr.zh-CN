@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 本文将介绍使用美国政府高级计划Office 365客户GCC终结点。
 hideEdit: true
-ms.openlocfilehash: 2febfec744dfb527dd99b205f3b2b78f5b9af4e7
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 52027e4c9b503edfb5b051be96c5f238e731c825626b70ee66a2de53f7759dbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813039"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 美国政府 GCC High 终结点
 
@@ -39,7 +39,7 @@ Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美�
 
 ****
 
-|注释|下载|
+|备注|下载|
 |---|---|
 |**上次更新时间：** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：JSON** 格式 [的完整列表](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: 使用发送到适用于企业测试环境的 Microsoft 365智能手机配置多重身份验证。
-ms.openlocfilehash: aeb8940a9499909b8c568d1230f9aa45aee07b3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4f410b7e8a57a119ecce33626354639af89c0e65aea01b123d213908735dbb00
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923752"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813014"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365多重身份验证
 
@@ -70,7 +70,7 @@ ms.locfileid: "50923752"
     
 7. 在"**更新成功"** 对话框中，选择"关闭 **"。**
     
-8. 在 **"Microsoft 365** 中心"选项卡上，选择右上角的用户帐户图标，然后选择"**注销"。**
+8. 在 **"Microsoft 365 管理中心"** 选项卡上，选择右上角的用户帐户图标，然后选择"**注销"。**
     
 9. 关闭浏览器实例。
    
@@ -78,9 +78,9 @@ ms.locfileid: "50923752"
   
 1. 打开浏览器的新专用实例。
     
-2. 转到管理[Microsoft 365](https://admin.microsoft.com)中心，然后使用 User 2 帐户名称和密码登录。
+2. 转到["Microsoft 365 管理中心"，](https://admin.microsoft.com)然后使用 User 2 帐户名称和密码登录。
     
-3. 登录后，系统将提示你设置帐户，了解详细信息。 选择“**下一步**”。
+3. 登录后，系统将提示你设置帐户，了解详细信息。 选择 **下一步**。
     
 4. 在“其他安全性验证”页上： 
     
@@ -90,7 +90,7 @@ ms.locfileid: "50923752"
     
    - 在 **"方法**"中 **，选择"通过短信向我发送代码"。**
     
-5. 选择“**下一步**”。
+5. 选择 **下一步**。
     
 6. 输入智能手机上收到的短信中的验证码，然后选择"验证 **"。**
     
@@ -108,7 +108,7 @@ ms.locfileid: "50923752"
 
 接下来，创建一个名为 MFAUsers 的新组，并添加 User 3 帐户。
 
-1. 在 **"Microsoft 365中心"** 选项卡上，选择左侧导航中的"组"，然后选择"组 **"。**
+1. 在 **"Microsoft 365 管理中心"** 选项卡上，选择左侧导航中的"组"，然后选择"组 **"。**
 2. 选择 **"添加组"。**
 3. 在"**选择组类型"窗格中**，选择"**安全性"，** 然后选择"下一 **步"。**
 4. 在"**设置基础知识"窗格中**，选择"**创建组**"，然后选择"关闭 **"。**
@@ -129,7 +129,7 @@ ms.locfileid: "50923752"
 8. 在"**新建"窗格** 的"访问控制"**部分**，选择"授予 **"。**
 9. 在"**授予"** 窗格中，选择 **"需要多重身份验证"，** 然后选择"选择 **"。**
 10. 在"**新建"** 窗格中，为"启用策略"选择 **"打开****"，** 然后选择"创建 **"。**
-11. 关闭 **Azure 门户，Microsoft 365****管理中心** 选项卡。
+11. 关闭 **Azure 门户，** 然后 **Microsoft 365 管理中心** 选项卡。
 
 若要测试此策略，请注销，然后使用 User 3 帐户登录。 系统将提示你配置 MFA。 这演示了正在应用 MFAUsers 策略。
 

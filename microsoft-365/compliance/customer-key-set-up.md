@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为用户设置客户密钥Microsoft 365。
-ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2db1aff638818fea18a55e331093fcd26ca30071995447ca817234f450798047
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53796282"
 ---
 # <a name="set-up-customer-key"></a>设置客户密钥
 
@@ -32,7 +32,7 @@ ms.locfileid: "52344670"
 
 在开始使用之前，请确保你拥有适合你的组织的 Azure 订阅和许可。 使用付费 Azure 订阅，企业协议云服务提供商。 不接受基于信用卡的付款。 批准并设置帐户开票需求。 你通过免费、试用、支持、MSDN 订阅和旧版支持下获取的订阅不符合资格。
 
-Office 365E5、Microsoft 365 E5、Microsoft 365 E5 合规 和 Microsoft 365 E5 信息& SK 提供客户密钥。 Office 365 高级合规版SKU 不再可用于购买新许可证。 现有Office 365 高级合规版许可证将继续受支持。
+Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 合规 和 Microsoft 365 E5 信息& SK 提供客户密钥。 Office 365 高级合规版SKU 不再可用于购买新许可证。 现有Office 365 高级合规版许可证将继续受支持。
 
 若要了解本文中的概念和过程，请查看 [Azure Key Vault](/azure/key-vault/) 文档。 此外，请熟悉 Azure 中使用的术语，例如 Azure [AD 租户](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)。
   

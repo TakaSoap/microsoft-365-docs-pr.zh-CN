@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: 7c9667b771300a75a91588727f1d333ff2215302
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 08b776430eb51546acd9e0bff82b32e08f045f0cad57d16c646e49bc17e44a7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827405"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
