@@ -14,12 +14,12 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c31f0945bfca39545d6bb841d02e4c559ad6be0d3e75a530c32ce2cac22b366
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850563"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>在 Microsoft 365 GCC High 和 DoD 中禁用 TLS 1.0 和 1.1
 
@@ -33,7 +33,7 @@ ms.locfileid: "50919338"
 
 [解决 TLS 1.0 问题](https://www.microsoft.com/download/details.aspx?id=55266)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 从 2020 年 1 月 15 Microsoft 365，GCC高和 DoD 环境中将禁用 TLS 1.1 和 1.0。
 

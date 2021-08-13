@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍如何从 Microsoft 365 中的核心电子数据展示案例导出和下载Microsoft 365。
-ms.openlocfilehash: 8eb54e23369ef682e8aa1ebf7e681eb34444f1cd
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: c74cf79ffc5defe495ed03ac45182dbd8e36582418879d6cf367242b96095eb9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850812"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>从核心电子数据展示事例导出内容
 
@@ -32,7 +32,7 @@ ms.locfileid: "52310834"
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后使用已分配有相应电子数据展示权限的用户帐户的凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365全部显示"，然后单击"电子数据展示>**核心"。**
+2. 在任务窗格的左侧导航 **Microsoft 365 合规中心，单击**"全部显示"，然后单击"电子数据展示>**核心"。**
 
 3. 在 **"核心电子数据展示"** 页上，单击要创建保留的案例的名称。
 

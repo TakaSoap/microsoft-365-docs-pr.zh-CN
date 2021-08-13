@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 在审查案例内容时，使用律师-客户特权检测模型使用基于机器学习的特权Advanced eDiscovery检测。
-ms.openlocfilehash: 73a0efeece7bc331045e9bbe1a1da56f9fd24700
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a6389d68a73813dff9853cf904bd79c2ce47b9fc4de4000250bb75e0e0c8bc86
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808477"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在服务中设置律师-客户Advanced eDiscovery
 
 任何电子数据展示过程的审阅阶段的主要且成本高昂的方面是查看文档的特权内容。 Advanced eDiscovery提供基于机器学习的特权内容的检测，提高此过程的效率。 此功能称为 *律师-客户特权检测*。
 
-## <a name="how-does-it-work"></a>它的工作原理
+## <a name="how-does-it-work"></a>它的工作原理是什么？
 
 启用律师-客户特权检测后，当您分析审阅集内的数据时，律师-客户特权检测模型将处理审阅集内的所有[](analyzing-data-in-review-set.md)文档。 模型查找两项内容：
 
@@ -73,7 +73,7 @@ ms.locfileid: "47358038"
 
 要上载律师-客户特权检测模型使用律师列表，请执行以下操作：
 
-1. 创建 .csv 文件（不带标题行），在单独的行上为每个合适的人员添加电子邮件地址。 将此文件保存到本地计算机。
+1. 创建 .csv 文件（不带标题行），在单独的行上为每个合适的人员添加电子邮件地址。将此文件保存到本地计算机。
 
 2. 在Advanced eDiscovery **主页** 上的"设置 **磁贴中**，选择"配置实验性功能"，然后选择"管理 **律师-客户特权设置"。**
 

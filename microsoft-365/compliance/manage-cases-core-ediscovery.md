@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何在 Microsoft 365 中的核心电子数据展示创建、关闭、重新打开和删除事例。
-ms.openlocfilehash: 517819ce542d5f53587d21c2ee08c9d5d96cd27d
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: d8d2a185d32445639b99243d50fa1e21ff09872548de12c8505dc4e6776fe9c2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850611"
 ---
 # <a name="manage-cases-in-core-ediscovery"></a>管理核心电子数据展示中事例
 

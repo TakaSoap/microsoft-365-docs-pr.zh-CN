@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍服务加密如何与 Microsoft 365 中的客户密钥一Microsoft 365。
-ms.openlocfilehash: 9a8558a0cf36f2040614ca3ffb61e7ba9936d40f
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 291f1161eb820efe6bc09149ae73b911888013844d9c2dd107b357018ba6a51f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842579"
 ---
 # <a name="service-encryption-with-customer-key"></a>使用客户密钥执行服务加密
 

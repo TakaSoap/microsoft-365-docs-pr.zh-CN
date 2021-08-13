@@ -15,12 +15,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 0d502a43125640b1c90f37b8b8ddaeb2ea2cf0d0
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: cb90623629be58122b985088ddce0ec26e24dc53c0772a7f3a6f09bfa2467731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53618909"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833552"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>管理 Microsoft Defender 防病毒软件保护更新源
 
@@ -104,7 +104,7 @@ ms.locfileid: "53618909"
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="列出源顺序的组策略设置":::
 
-   3. 选择 **“确定”**。 这将设置保护更新源的顺序。
+   3. 选择“**确定**”。 这将设置保护更新源的顺序。
 
    4. 双击"定义 **文件共享以下载安全智能** 更新"设置，并设置该选项为 **"已启用"。**
 

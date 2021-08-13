@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Refinitiv Eikon Messenger DataParser 连接器在 Microsoft 365 中导入和存档 Refinitiv Eikon Messenger 数据。
-ms.openlocfilehash: 4577d849e84955f10c2f3176c2e384410430ebc6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 3389198173ef10e9b89cdcdead19ea543845ada5e566be263b39b646ee8f4fef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808797"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>设置连接器以存档 Refinitiv Eikon Messenger 数据
 

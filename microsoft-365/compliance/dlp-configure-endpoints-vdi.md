@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft 365 终结点数据丢失防护服务。
-ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: d86046f474ce0afe3a21354bd36f9ed433b627384aec314f129702bc43480b4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807980"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 

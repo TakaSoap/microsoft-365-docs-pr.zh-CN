@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解对 Microsoft 365 中解决方案生效的大小写限制、索引Advanced eDiscovery和搜索Microsoft 365。
-ms.openlocfilehash: 335e40c6918fc33acc12082546b98f28c319c814
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ba4abe52c668799f379780221b46042c8f515393ecd6f395cb45a49bad9295e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807968"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>高级电子数据展示中的限制
 
@@ -74,7 +74,7 @@ ms.locfileid: "52244572"
 |:-----|:-----|
 |可以在单个搜索中搜索的最大邮箱或网站数。 |无限制|
 |可以同时运行的最大搜索数。 |无限制 |
-|单个用户可以同时启动的最大搜索数。 |10   | 
+|单个用户可以同时启动的最大搜索数。 |10  | 
 |搜索查询记录的最大字符数 (运算符和条件) 。 |10，000 &nbsp; <sup>2</sup>|
 |网站和网站搜索查询的最大字符数SharePoint OneDrive for Business包括 (运算符和条件) 。 |10,000<br>4，000（带通配符 &nbsp; <sup>2）</sup>|
 |前缀通配符的最小 alpha 字符数;例如，一 **\* *个 _* 或 \* _ set**。|3 |  

@@ -1,5 +1,5 @@
 ---
-title: 验证 Microsoft 365 教育版订阅的学术资格
+title: 验证订阅的Microsoft 365 教育版资格
 f1.keywords:
 - CSH
 - FWLink-2135711
@@ -18,31 +18,31 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 了解如何验证学校是否有资格使用 Microsoft 365 教育学院定价。
+description: 了解如何验证学校是否有资格使用Microsoft 365 教育版定价。
 ms.date: 07/21/2020
-ms.openlocfilehash: 7da6fbc73ece51c5d9b845487e344bbbdec679cf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b861092b0168fa83a8bac423caa3e29621837bc1f08d5af95502cde94c97ff4a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808844"
 ---
-# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>验证 Microsoft 365 教育版订阅的学术资格
+# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>验证订阅的Microsoft 365 教育版资格
 
-如果你是教育机构的一部分，可以注册 Microsoft 365 教育版的免费试用版。 Microsoft 验证你的学校的学术资格后，你可以以学院价格购买 Microsoft 365 产品。 这包括免费提供的产品，如 Office 365 A1（教职员工）和 Office 365 A1（学生）。 在免费试用版结束之前，你可以将其转换为以学院价格付费的订阅。
+如果你是教育机构的一部分，你可以注册免费试用版Microsoft 365 教育版。 Microsoft 验证你的学校的学术资格后，你可以以学院Microsoft 365购买课程产品。 这包括免费提供的产品，Office 365 A1教职员工和Office 365 A1学生。 在免费试用版结束之前，你可以将其转换为以学院价格付费的订阅。
 
 本文介绍如何验证学校的学院资格、检查资格状态，以及在学校获得批准后如何以学院价格购买订阅。
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须已拥有 Microsoft 365 教育版试用订阅。 如果你没有试用版订阅，请访问此 [网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
+你必须已拥有Microsoft 365 教育版订阅。 如果你没有试用版订阅，请访问此 [网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>验证是否具有试用订阅
 
-如果你不确定你是否拥有 Microsoft 365 教育版试用订阅，请使用以下步骤验证你是否已订阅。
+如果你不确定你拥有试用订阅Microsoft 365 教育版，请使用以下步骤验证你是否拥有试用版订阅。
 
-1. 在 Microsoft 365 管理中心，转到" **帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">""产品"</a> 页面。
-2. 查找 **Office 365 A1（教职员工试用版** ）和 **Office 365 A1（学生试用版**）。 如果找不到这些订阅，请访问此 [网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
+1. In the Microsoft 365 管理中心， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. 查找适用于 **Office 365 A1试用和Office 365 A1****试用的教职员工。** 如果找不到这些订阅，请访问此 [网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
 
 ## <a name="verify-your-schools-academic-eligibility"></a>验证学校的学术资格
 
@@ -57,20 +57,20 @@ ms.locfileid: "52333082"
 
 ## <a name="check-the-status-of-your-schools-academic-eligibility"></a>检查学校的学院资格状态
 
-拥有 Microsoft 365 教育版试用版后，你随时都可以检查学校的学术资格状态。
+获得Microsoft 365 教育版后，你随时都可以检查学校的学术资格状态。
 
-1. 转到 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)。
+1. 转到["Microsoft 365 管理中心"。](https://go.microsoft.com/fwlink/p/?linkid=2024339)
 2. 在主页上，找到 **"帐单"** 卡。\
     计费 **卡** 指示验证过程的状态。 该卡显示以下状态之一：已批准、挂起、已拒绝或添加域。
 
     > [!NOTE]
-    > 如果你看不到这些状态之一，这意味着你没有 Microsoft 365 教育版试用订阅。 若要启动免费试用版， [请访问此网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
+    > 如果你看不到这些状态之一，这意味着你还没有Microsoft 365 教育版订阅。 若要启动免费试用版， [请访问此网页，](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) 然后选择 **免费入门**。
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>以学院价格购买订阅
 
 验证学校资格后，你可以以学院价格购买订阅。 还可以将 [免费试用版转换为付费订阅](../try-or-buy-microsoft-365.md)。 如果要转换试用版订阅，必须在试用期结束之前进行转换。
 
-1. 在 Microsoft 365 管理中心，转到帐单 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>页面。
+1. In the Microsoft 365 管理中心， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. 若要查看学院产品/服务，请选择" **教育"** 选项卡。
 
     > [!NOTE]
@@ -83,7 +83,7 @@ ms.locfileid: "52333082"
 
 您可以在"你的产品"页面上找到免费试用版订阅 **的到期日期** 。 还可以延长试用期。
 
-1. 在 Microsoft 365 管理中心，转到" **帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">""产品"</a> 页面。
+1. In the Microsoft 365 管理中心， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. 查找试用版订阅。
 3. 在" **计费** "部分中的" **免费试用版订阅"** 下，将显示到期日期。
 4. 如果要延长试用期，请选择"延长 **试用期"。** 每个免费试用版订阅只能执行一次此操作。
@@ -96,13 +96,13 @@ ms.locfileid: "52333082"
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解如何为学校部署 Microsoft 365，请访问 [Microsoft 365 教育版文档和资源](/microsoft-365/education/deploy/)。 接下来，可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。 如果需要，还可以 [为订阅购买更多许可证](../licenses/buy-licenses.md)。
+若要了解如何为学校部署Microsoft 365，请访问Microsoft 365 教育版[文档和资源](/microsoft-365/education/deploy/)。 接下来，可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。 如果需要，还可以 [为订阅购买更多许可证](../licenses/buy-licenses.md)。
 
 ## <a name="related-content"></a>相关内容
 
-[适用于 IT 管理员的 Microsoft 365](/education/itadmins) 教育版文档 (链接) \
-[Microsoft Teams 教育](https://microsoft.com/education/products/teams/default.aspx) (产品页面) \
-[了解 Microsoft 365](../licenses/subscriptions-and-licenses.md) 商业版订阅和许可证 (文章) \
+[Microsoft 365 教育版 IT 管理员文档 (](/education/itadmins)文章链接) \
+[Microsoft Teams 教育版 (](https://microsoft.com/education/products/teams/default.aspx)页面) \
+[了解适用于企业Microsoft 365中的 (订阅](../licenses/subscriptions-and-licenses.md)) \
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [购买或删除订阅许可证](../licenses/buy-licenses.md) (文章) \
 [将用户移动到其他订阅](move-users-different-subscription.md)（文章）

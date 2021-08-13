@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 分配使用管理程序执行与电子数据展示相关的Microsoft 365 合规中心。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06e75a18c338d2634ae3be93514ee518d9e91860
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 080514ba2d802ca0aa3438e00966cc84df59f32149ff9392a180344949d9ec26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808450"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>在服务中分配电子数据展示Microsoft 365 合规中心
 
@@ -77,7 +77,7 @@ Microsoft 365 合规中心中与电子数据展示相关的主要角色组称为
 
 下表列出了 Microsoft 365 合规中心 中与电子数据展示相关的 RBAC 角色，并指示默认情况下每个角色分配到的内置角色组。
   
-| 角色 | 合规性管理员 | 电子数据展示管理员&管理员 | 组织管理 | Reviewer |
+| 角色 | 合规管理员 | 电子数据展示管理员&管理员 | 组织管理 | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |案例管理 <br/> |![复选标记](../media/checkmark.png) <br/> |![复选标记](../media/checkmark.png) <br/> |![复选标记](../media/checkmark.png) <br/> | <br/> |
 |通信 <br/> | <br/> |![复选标记](../media/checkmark.png) <br/> | <br/> | <br/> |

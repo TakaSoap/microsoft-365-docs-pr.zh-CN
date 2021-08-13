@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在审阅集内创建和运行查询，以组织内容，以在Advanced eDiscovery审阅。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 40a7c7ecaa222f2c2974352446cb2f71bc8c13b27663a28f4d792127f848f768
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850632"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>查询和筛选审阅集内的内容
+# <a name="query-and-filter-content-in-a-review-set"></a>查询和筛选审阅集中的内容
 
 在大多数情况下，深入探究审阅集内的内容并组织该内容以促进更高效的审阅将非常有用。 在审阅集中使用筛选器和查询可帮助您重点关注满足审阅条件的文档的子集。
 

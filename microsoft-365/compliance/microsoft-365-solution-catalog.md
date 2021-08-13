@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解Microsoft 365目录，包括其中包含的内容、如何获取它以及您的下一步。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d98684fd7f839cb0340cce4126e1c45b43b107b8
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7ca34e9bb091d98af999b0c7e019421bbd2b023961c2b9c348c38fdd65dd6e51
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807768"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -78,7 +78,7 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 若要访问Microsoft 365目录，请转到 全局管理员、合规性管理员或合规性数据管理员并 [https://compliance.microsoft.com](https://compliance.microsoft.com) 登录。 选择 **屏幕** 左侧导航窗格中的"目录"以打开目录主页。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么我看不到解决方案Microsoft 365目录？**
 

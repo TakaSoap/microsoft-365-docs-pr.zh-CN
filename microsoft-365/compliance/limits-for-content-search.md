@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 了解内容搜索和核心电子数据展示功能在 Microsoft 365 合规中心。
-ms.openlocfilehash: db0f24d66fd7dc23a82a5ededfcfbc4d9edabad7
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: f7f5d00604b6aff64f5e380e4fe30c5e09666ab52c216706b63ae0bab3a25318
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807956"
 ---
 # <a name="limits-for-ediscovery-search"></a>电子数据展示搜索的限制
 
@@ -126,7 +126,7 @@ Microsoft 收集所有组织运行的搜索的性能信息。 尽管搜索查询
 |正文中的最大唯一标记数|1 百万|如前所述，令牌是从内容中提取文本、删除标点和空格，然后将它划分为存储在索引中的 (称为) 标记"的单词的结果。 例如，短语包含 `"cat, mouse, bird, dog, dog"` 5 个标记。 但是只有 4 个唯一令牌。 每封电子邮件有 100 万个唯一令牌的限制，这有助于防止索引使用随机令牌变得过大。|
 |||
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 还有一些与内容搜索的各个方面相关的其他限制，如内容索引。 有关这些限制详细信息，请参阅下列主题：
 

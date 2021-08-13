@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e82f18b129963b254bf2120d444ce81e4e53e89d
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 564747e31f7ab412d14790e42e6c8e901e382de4e08834b9a5b2f7c775454c74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816943"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -55,7 +55,7 @@ ms.locfileid: "53544501"
 
 为了给你一些时间来完成这些任务，我们建议按此表中列出的顺序实现基准策略。 但是，可随时实施针对敏感和高度管控级别的保护的 MFA 策略。
 
-|保护级别|策略|详细信息|授权|
+|保护级别|策略|更多信息|授权|
 |---|---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5或Microsoft 365 E3 E5 安全附加设备|
 ||[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-multi-factor)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略非常重要。|Microsoft 365 E3 或 E5|
@@ -125,7 +125,7 @@ ms.locfileid: "53544501"
 
 根据目标保护级别应用风险级别设置。
 
-|保护级别|所需的风险级别值|Action|
+|保护级别|所需的风险级别值|操作|
 |---|---|---|
 |基线|高、中|检查两者。|
 |敏感|高、中、低|检查全部三者。|
@@ -134,11 +134,11 @@ ms.locfileid: "53544501"
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|Action|
+|设置|属性|值|操作|
 |---|---|---|---|
-|授予|**Grant access**||Select|
+|授予|**Grant access**||选择|
 |||**需要多重身份验证**|支票|
-||**需要所有已选控件**||Select|
+||**需要所有已选控件**||选择|
 |
 
 选择 **"** 选择"保存 **"授予"** 设置。
@@ -165,10 +165,10 @@ ms.locfileid: "53544501"
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|Action|
+|设置|属性|值|操作|
 |---|---|---|---|
-|授予|**阻止访问**||Select|
-||**需要所有已选控件**||Select|
+|授予|**阻止访问**||选择|
+||**需要所有已选控件**||选择|
 |
 
 选择 **"** 选择"保存 **"授予"** 设置。
@@ -187,17 +187,17 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在" **分配"** 部分：
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
-|Users|包括|**所有用户**|Select|
-|用户风险|**High**||Select|
+|Users|包括|**所有用户**|选择|
+|用户风险|**High**||选择|
 |
 
 在"第二 **个工作分配"** 部分：
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
-|Access|**允许访问**||Select|
+|Access|**允许访问**||选择|
 |||**需要更改密码**|支票|
 |
 
@@ -223,7 +223,7 @@ APP 数据保护框架分为三个不同的配置级别，每个级别都从上�
 
 根据标识和设备 [访问配置中](microsoft-365-policies-configurations.md)概述的原则，基线和敏感保护层与级别 2 企业增强数据保护设置紧密映射。 高度管控保护层紧密映射到第 3 级企业高数据保护设置。
 
-|保护级别|应用保护策略|详细信息|
+|保护级别|应用保护策略|更多信息|
 |---|---|---|
 |基线|[第 2 级增强数据保护](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。|
 |敏感|[第 2 级增强数据保护](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。|
@@ -311,7 +311,7 @@ iOS/iPadOS 安全配置框架分为几个不同的配置方案，为个人拥有
 
 使用标识和设备 [访问配置中](microsoft-365-policies-configurations.md)概述的原则，基线和敏感保护层与级别 2 增强的安全设置紧密映射。 高度管控保护层紧密映射到级别 3 高安全设置。
 
-|保护级别  |设备策略 |详细信息  |
+|保护级别  |设备策略 |更多信息  |
 |---------|---------|---------|
 |基线     |增强的安全性 (级别 2)          |级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
 |敏感     |增强的安全性 (级别 2)          |级别 2 中强制执行的策略设置包括建议级别 1 的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
@@ -343,7 +343,7 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 对于 Android Enterprise工作配置文件设备：
 
-|保护级别  |设备策略 |详细信息  |
+|保护级别  |设备策略 |更多信息  |
 |---------|---------|---------|
 |基线     |工作配置文件：基本安全 (级别 1)       |不适用         |
 |敏感     |工作配置文件：基本安全 (级别 1)          |不适用         |
@@ -359,11 +359,11 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 有关 **设备运行状况> Windows证明服务评估规则，** 请参阅此表。
 
-|属性|值|Action|
+|属性|值|操作|
 |---|---|---|
-|需要 BitLocker|需要|Select|
-|要求在设备上启用安全启动|需要|Select|
-|需要代码完整性|需要|Select|
+|需要 BitLocker|需要|选择|
+|要求在设备上启用安全启动|需要|选择|
+|需要代码完整性|需要|选择|
 |
 
 对于 **设备属性**，根据你的 IT 和安全策略为操作系统版本指定适当的值。
@@ -372,31 +372,31 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 有关 **系统安全性**，请参阅此表。
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
-|Password|需要密码才能解锁移动设备|需要|Select|
-||简单密码|阻止|Select|
-||密码类型|设备默认值|Select|
+|密码|需要密码才能解锁移动设备|需要|选择|
+||简单密码|阻止|选择|
+||密码类型|设备默认值|选择|
 ||最短密码长度|6 |类型|
 ||需要密码之前不活动的最大分钟数|15|类型 <p> Android 版本 4.0 及以上或 KNOX 4.0 及以上版本支持此设置。 对于 iOS 设备，iOS 8.0 及以上版本支持。|
 ||密码过期 (天数) |41|类型|
 ||防止重复使用的以前密码的数量|5 |类型|
 ||设备从空闲状态返回时需要密码 (移动设备和全息) |需要|可用于 Windows 10 及更高版本|
-|加密|设备上数据存储的加密|需要|Select|
-|设备安全|防火墙|需要|Select|
-||防病毒|需要|Select|
-||反间谍软件|需要|Select <p> 此设置要求在安全中心注册反间谍软件Windows 安全中心解决方案。|
-|Defender|Microsoft Defender 反恶意软件|需要|Select|
+|加密|设备上数据存储的加密|需要|选择|
+|设备安全|防火墙|需要|选择|
+||防病毒|需要|选择|
+||反间谍软件|需要|选择 <p> 此设置要求在安全中心注册反间谍软件Windows 安全中心解决方案。|
+|Defender|Microsoft Defender 反恶意软件|需要|选择|
 ||Microsoft Defender 反恶意软件最低版本||类型 <p> 仅受桌面Windows 10支持。 Microsoft 建议版本与最新版本的后面版本不超过 5 个。|
-||Microsoft Defender 反恶意软件签名最新|需要|Select|
-||实时保护|需要|Select <p> 仅受桌面Windows 10支持|
+||Microsoft Defender 反恶意软件签名最新|需要|选择|
+||实时保护|需要|选择 <p> 仅受桌面Windows 10支持|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
-|Microsoft Defender for Endpoint 规则Microsoft Endpoint Manager管理中心|[要求设备处于计算机风险分数或处于计算机风险分数之下](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|Select|
+|Microsoft Defender for Endpoint 规则Microsoft Endpoint Manager管理中心|[要求设备处于计算机风险分数或处于计算机风险分数之下](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|选择|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>要求兼容电脑 (但不符合标准的手机和平板电脑) 

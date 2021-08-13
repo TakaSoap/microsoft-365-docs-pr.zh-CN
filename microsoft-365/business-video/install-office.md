@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何安装Microsoft Office应用。
-ms.openlocfilehash: 3626b21a3c98fba1830350568440467869577ccb
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 6a19c10036ab7a941ed0e9683fb1307b0037209ee21a95ef56adc5bd7ac1a72c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856603"
 ---
 # <a name="install-office-apps"></a>安装 Office 应用 
 
@@ -47,7 +47,7 @@ Microsoft Office"开始"**菜单上找到** 这些应用。 如果看不到&#39;
 
 [将内容迁移到Microsoft 365 (](/sharepointmigration/migrate-to-sharepoint-online.md)中) 
 
-[将 Microsoft 365 Admin 移动应用安装在手机上 (](admin-mobile.md)视频) 
+[将Microsoft 365 管理移动应用安装在手机上 (](admin-mobile.md)视频) 
 
 [小型企业Microsoft Teams视频 (](get-started-teams-small-business.md)入门) 
 
