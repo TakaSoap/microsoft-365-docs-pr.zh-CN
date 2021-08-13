@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bf87efbbd8cfb621ec3894fe5d02f9d11ed6bc46
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2be221ab3800a1baf5ce1927fcf2f1bcfee8d636d1badb9bb826c75e7d6c1426
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803902"
 ---
 # <a name="contact-support-for-zimbabwe"></a>联系津巴布韦支持人员
 

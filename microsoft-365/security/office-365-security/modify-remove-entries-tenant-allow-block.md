@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何修改和删除安全门户中租户允许/阻止列表中的条目。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 23c390babc64909aa860554437b60e2370d0fd1f
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 03f2d3f61bc61862bc221f338e6115b035fd2ea349be5531ca2035558046ba06
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56788445"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>修改和删除租户允许/阻止列表中的条目
 
@@ -38,7 +38,7 @@ ms.locfileid: "53542424"
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
 
 2. 选择包含要修改的条目类型的选项卡：
    - **URL**
@@ -58,7 +58,7 @@ ms.locfileid: "53542424"
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
 
 2. 选择包含要删除的条目类型的选项卡：
    - **URL**

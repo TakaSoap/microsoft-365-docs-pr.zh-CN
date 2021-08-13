@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南创建和使用企业测试环境中 Microsoft 365文档的保留标签。
-ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79002397be7c44c5c160d80288d3fea6e9c1f9594a024f5aa4dc501f86dda886
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891315"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业Microsoft 365环境的数据分类
 
@@ -78,7 +78,7 @@ ms.locfileid: "50919184"
 
 首先，在 Online 团队网站SharePoint敏感级别：
   
-1. 使用浏览器的专用实例，使用全局[Microsoft 365登录](https://admin.microsoft.com)管理中心。
+1. 使用浏览器的专用实例，Microsoft 365 管理中心[全局管理员](https://admin.microsoft.com)帐户登录帐户。
 1. 在磁贴列表中，选择 **"SharePoint"。**
 1. 在浏览器的新 **SharePoint** 选项卡上，选择"**创建网站"。**
 1. 在“创建网站”页中，选择“团队网站”。
@@ -104,7 +104,7 @@ ms.locfileid: "50919184"
 1. 单击 **编辑全部**。
 1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密**"标签，然后选择"保存 **"。**
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 探索 [测试环境中](m365-enterprise-test-lab-guides.md#information-protection) 的其他信息保护特性和功能。
 

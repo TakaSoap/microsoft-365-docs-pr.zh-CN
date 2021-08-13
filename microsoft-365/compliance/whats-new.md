@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dada5e5fe82f12e02365d9babe4d91c10acdd6195a8371b9fe9b6bd4713d4fe8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c24108d7ccc140fecac9c6a7444a697d1526e95c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807548"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58244008"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -39,7 +39,77 @@ ms.locfileid: "53807548"
 > - [SharePoint管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 > - [Microsoft 365 Defender 的新增功能](../security/defender/whats-new.md)
 >
-> 请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)，了解Microsoft 365、即将推出、正在开发、已取消或以前发布的新功能。
+> 请访问Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)，了解Microsoft 365、即将推出、正在开发、已取消或之前发布的新功能。
+
+## <a name="july-2021"></a>2021 年 7 月
+
+### <a name="advanced-ediscovery"></a>高级电子数据展示
+
+- [Advanced eDiscovery使用大Microsoft Teams](teams-workflow-in-advanced-ediscovery.md)中的内容创建工作流添加了一个端到端工作流，用于管理Teams Advanced eDiscovery中的内容;包括有关新对话脚本功能的预览的详细信息。
+- [使用大Advanced eDiscovery](advanced-ediscovery-large-cases.md)添加了新大写格式的预览，该预览扩展了审阅集和事例限制，并支持 Teams 和 Yammer 对话的对话脚本。
+
+### <a name="app-governance"></a>应用治理
+
+- MCAS [Microsoft Cloud App Security (](app-governance-manage-app-governance.md)管理) 已进入公共预览阶段。 应用管理可监视 M365 租户中基于 OAUth 的应用，并针对可能表示恶意软件或不当权限级别的活动生成警报。
+
+### <a name="compliance-offerings"></a>合规性产品/服务
+
+- [合规性产品](/compliance/regulatory/offering-home) /服务更改侧重于适用的服务范围和更新，以便与 [适用法规的 Azure](/azure/compliance) 产品/服务更加一致。
+
+### <a name="compliance--service-assurance"></a>合规性&服务保证
+
+- [服务保证](/compliance/) (更新;每季度查看内容更新，获取认证和适用性) 
+    - 云背景检查
+    - 员工转移&终止
+    - 管控
+    - 人力资源
+    - 事件管理
+    - 岗前调查
+    - 安全事件管理 (SIM 卡) 
+    - SIM – 抑制、抑制和恢复
+    - SIM – 检测&分析
+    - SIM – 事件后报告
+    - SIM – 准备
+    - 租户隔离
+
+### <a name="data-classification"></a>数据分类
+
+- [了解数据分类](data-classification-overview.md)。 针对 GA 发布的可训练分类器进行了更新。
+
+### <a name="data-loss-prevention"></a>数据丢失防护
+
+- [了解Microsoft 365终结点数据丢失防护](endpoint-dlp-learn-about.md)新增了有关设备始终审核文件活动的更新指导。
+- [开始使用针对](dlp-on-premises-scanner-get-started.md) GA 版本更新的数据丢失防护本地扫描程序。
+- [了解针对 GA Microsoft 365更新](dlp-on-premises-scanner-learn.md)的数据丢失防护本地扫描程序。
+- [使用Microsoft 365 GA](dlp-on-premises-scanner-use.md)版本更新的数据丢失防护本地扫描程序。
+- [对针对](dlp-use-policies-non-microsoft-cloud-apps.md) GA 版本和 MIP-MCAS 集成更新的非 Microsoft 云应用使用数据丢失防护策略。
+
+### <a name="insider-risk-management"></a>内部风险管理
+
+- [调查内部风险管理活动](insider-risk-management-activities.md) 为新的用户活动报告和新的消除多个警报预览功能添加了内容更新。
+- [开始使用内部风险管理设置添加了](insider-risk-management-settings.md) 新 RBAC 功能的内容更新，以选择优先用户组预览功能的审阅者。
+
+### <a name="privacy-management"></a>隐私管理
+
+- Microsoft [隐私管理](privacy-management.md) 已进入公共预览阶段。 隐私管理可帮助组织了解和管理组织环境中Microsoft 365、修正潜在的隐私风险以及履行主体权利请求。
+
+### <a name="retention-and-records-management"></a>保留和记录管理
+- 预览版[：Teams](create-retention-policies.md#retention-policy-for-teams-locations)保留策略现在支持私人频道作为Teams或编辑保留策略时的新频道位置
+- 导入 [文件计划的说明](file-plan-manager.md#import-retention-labels-into-your-file-plan) 已更新，以包含每个条目的法规记录和依赖关系
+
+### <a name="sensitive-information-types"></a>敏感信息类型
+
+添加了以下页面：
+
+- [自定义敏感信息类型筛选器参考](sit-custom-sit-filters.md)
+- [使用 PowerShell 修改自定义敏感信息类型](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
+- [使用 PowerShell 删除自定义敏感信息类型](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
+
+### <a name="sensitivity-labels"></a>敏感度标签
+- 可训练分类器现已在 GA () 中普遍可用，可用于 Office [for](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) Windows 和 Web (Office Online) 
+- 强制标记现在扩展到预览Power BI ([中) ](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
+- 对于 [使用敏感度标签加密]( sensitivity-labels-coauthoring.md)的文件共同创作：推出对将敏感度标签用作条件和电子邮件未加密附件的 DLP 策略的支持
+- 适用于 Outlook 的审核事件现在适用于 macOS、iOS 和 Android，并且适用于 Outlook 网页版
 
 ## <a name="june-2021"></a>2021 年 6 月
 
@@ -49,23 +119,23 @@ ms.locfileid: "53807548"
 
 ### <a name="data-connectors"></a>数据连接器
 
-- 我们已与 [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) 合作发布了 17 个新的数据连接器，与 [CellTrust](archiving-third-party-data.md#celltrust-data-connectors)合作发布了一个新连接器。 我们还发布了其他数据连接器，这些连接器与[具有合作关系的具有合作关系的"百](archiving-third-party-data.md#veritas-data-connectors)米"和["TeleMessage"。](archiving-third-party-data.md#telemessage-data-connectors) 到目前为止，共有 65 个可用的数据连接器可用于导入第三方数据并存档Microsoft 365。
+- 我们已与 [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) 合作发布了 17 个新的数据连接器，与 [CellTrust](archiving-third-party-data.md#celltrust-data-connectors)合作发布了一个新连接器。 我们还发布了其他数据连接器，这些连接器与[具有合作关系的具有合作关系的"百](archiving-third-party-data.md#veritas-data-connectors)米"和["TeleMessage"。](archiving-third-party-data.md#telemessage-data-connectors) 到目前为止，共有 65 个可用的数据连接器可用于将第三方数据导入和存档到Microsoft 365。
 
 ### <a name="ediscovery"></a>电子数据展示
 
 - [使用新的](review-set-search.md) UX 格式 (查询和筛选审阅集内容，以筛选和搜索审阅集内容) 
-- [在审阅集](tagging-documents.md)内标记文档Advanced eDiscovery (新的标记功能和 UX，以便更快、更轻松地标记审阅集内的文档;包括使用查询和使用筛选器根据项目标记项目来快速查找或排除审阅集项目的新功能) 
-- [为电子数据展示](set-up-compliance-boundaries.md)调查设置合规性 (Microsoft 已取消联系 MS 支持以请求将合规性属性同步到OneDrive的要求;现在，邮箱搜索权限筛选器用于强制实施邮箱搜索权限OneDrive) 
+- [在审阅集](tagging-documents.md)内标记文档Advanced eDiscovery (新的标记功能和 UX，以便更快、更轻松地标记审阅集内的文档;包括使用查询和筛选器根据项目标记项目类型来快速查找或排除审阅集项目的新功能) 
+- [为电子数据展示](set-up-compliance-boundaries.md)调查设置合规性 (Microsoft 已取消联系 MS 支持以请求将合规性属性同步到 OneDrive 的要求;现在，邮箱搜索权限筛选器用于强制实施邮箱搜索权限OneDrive) 
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
-- 敏感度标签策略向导现在支持Outlook标签[](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)和强制标签的特定选项，作为比 (仍受 PowerShell) 支持更简单的配置。
+- 敏感度标签策略向导现在支持Outlook标签[](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)和强制标记的特定选项，作为比 (仍受 PowerShell 高级设置) 配置。
 - 现已[推出 Word、Excel](sensitivity-labels-office-apps.md#dynamic-markings-with-variables )和 PowerPoint web 版
 - 对于[自动标记策略](apply-sensitivity-label-automatically.md)Exchange，如果标签配置为加密，则不应用该加密。 此外Exchange自动标记策略，现在可以配置例外和以下新条件：主题、收件人地址或发件人地址匹配模式;收件人地址包含词语;sender domain is， recipient is a member of;sender 是。
 - 将敏感度标签与团队、组和网站一同使用时，可以将 Set-SPOTenant 与 BlockSendLabelMismatchEmail 参数一同使用，以防止在记录审核事件检测到文档敏感度不匹配时自动生成的电子邮件。  有关详细信息，请参阅审核 [敏感度标签活动](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )。
 - 现在 [，敏感度](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) 标签的身份验证上下文设置已完全推出预览版。 此外，此配置现在受 Microsoft Teams。
-- 为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签后，现在可以在 Office 网页版 中打开由服务原则名称 (（如 Microsoft Cloud App Security) ）标记和加密然后上传到 SharePoint 和[OneDrive 的文件](sensitivity-labels-sharepoint-onedrive-files.md)。
-- [](sensitivity-labels-coauthoring.md)使用版本 2105 时，共同创作和自动保存不再局限于测试租户，现在支持生产：6 月 18 日针对 Windows，版本 16.50+ for macOS。 请注意，此功能仍不受 iOS 和 Android 支持，仍保持预览状态。
+- 在 SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签后，现在可以在 Office 网页版 中打开由服务原则名称 (（如 Microsoft Cloud App Security) ）标记和加密然后上传到 SharePoint 和[OneDrive 的文件](sensitivity-labels-sharepoint-onedrive-files.md)。
+- [](sensitivity-labels-coauthoring.md)使用版本 2105 时，共同创作和自动保存不再局限于测试租户，现在支持在生产中：6 月 18 日针对 Windows，版本 16.50+ for macOS。 请注意，此功能仍不受 iOS 和 Android 支持，仍保持预览状态。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -75,7 +145,7 @@ ms.locfileid: "53807548"
 
 ### <a name="retention-and-records-management"></a>保留和记录管理
 
-- 如果从 SharePoint 或 OneDrive 帐户发布保留策略，则无需再等待 30 天的宽限期，然后才能删除站点或帐户。 客户提出的一个热门请求，此更改现已针对所有租户完成。
+- 如果从网站或 OneDrive 帐户SharePoint保留策略，则无需再等待 30 天的宽限期，然后才能删除站点或帐户。 客户提出的一个热门请求，此更改现已针对所有租户完成。
 - 在预览版 **中**，多阶段处置评审：管理员现在可以为保留标签添加最多五个连续的 [](disposition.md)处置评审阶段，审阅者可以将其他用户添加到其处置评审阶段。 你还可以自定义电子邮件通知和提醒。
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
@@ -107,7 +177,7 @@ ms.locfileid: "53807548"
 
 - 数据丢失防护 [策略提示的新主题参考](/microsoft-365/compliance/dlp-policy-tips-reference)。
 - 了解数据丢失 [防护的新主题](/microsoft-365/compliance/dlp-learn-about-dlp)。
-- 数据丢失防护 [警报仪表板入门的新主题](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)。
+- 数据丢失防护警报 [仪表板入门的新主题](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)。
 
 ### <a name="retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略
 
@@ -117,14 +187,14 @@ ms.locfileid: "53807548"
 
 Outlook版本和更新：
 
-- [默认标签和强制标签的不同](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) 设置现在支持内置标签。 以前，这些设置仅受 AIP 统一标记客户端支持。
+- [默认标签和强制标签的不同](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) 设置现在支持内置标签。 以前，仅 AIP 统一标记客户端支持这些设置。
 - [](encryption-sensitivity-labels.md#let-users-assign-permissions) macOS、iOS 和 Android 现在支持仅加密。
 - [强制标记](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) 将推出到其余平台。
 - [所有客户端都支持](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)使用所有变量的动态Outlook标记。
 
 ## <a name="march-2021"></a>2021 年 3 月
 
-下面是 3 月对Microsoft 365解决方案和内容的一些更改。
+下面是对 3 月份Microsoft 365解决方案和内容的一些更改。
 
 ### <a name="advanced-ediscovery"></a>高级电子数据展示
 
@@ -161,8 +231,8 @@ Outlook版本和更新：
 - 新的审核日志功能和报告
 - 策略创建向导的增强功能
 - 内容资源管理器更新
-- 新用户管理过程/支持 (策略策略中添加/删除) 
-- 新的 AAD 集成支持 (离开的用户策略支持) 
+- 新用户管理过程/支持 (策略中添加/删除) 
+- 对 AAD 集成的新 (脱离的用户策略支持) 
 - 更新了 REGEX 策略 (域) 
 - 策略模板增强功能和改进
 
@@ -200,7 +270,7 @@ Outlook版本和更新：
 
 - **DoD 支持**。 支持具有 DoD 环境的美国政府租户。
 - **仅对加密Outlook。** 选择"允许用户分配Outlook时，Encrypt-Only加密选项[现在包括加密选项](encryption-sensitivity-labels.md#let-users-assign-permissions)。
-- **强制在应用应用中Office标签**。 更新[了](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)在安装 Azure 信息保护统一标签客户端Office应用中强制执行内置标签的指南。
+- **在应用中强制执行Office标签**。 更新[了](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)在安装 Azure 信息保护统一标签客户端Office应用中强制执行内置标签的指南。
 
 ## <a name="february-2021"></a>2021 年 2 月
 
@@ -215,7 +285,7 @@ Outlook版本和更新：
 
 在下列主题中添加或更新了内容：
 
-- [内容资源管理器入门](/microsoft-365/compliance/data-classification-content-explorer)
+- [内容浏览器入门](/microsoft-365/compliance/data-classification-content-explorer)
 - [数据分类发行说明](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>数据丢失防护
@@ -274,24 +344,5 @@ Outlook版本和更新：
 
 在下列主题中添加或更新了内容：
 
-- **SharePoint外部共享**。 对于[容器标签](sensitivity-labels-teams-groups-sites.md)，外部共享选项SharePoint现在发布为公开发布。 此外，Microsoft 365 管理中心和 Planner 现在支持应用这些敏感度标签。 
-- **共同创作和自动保存**。 对 [加密文件共同创作](sensitivity-labels-coauthoring.md) 和自动保存的支持发布为预览版，用于测试非生产租户。
-
-## <a name="january-2021"></a>2021 年 1 月
-
-### <a name="support-for-card-content-in-teams"></a>支持卡片内容Teams
-
-以下Microsoft 365合规性解决方案现在支持检测通过邮件中的应用生成的Teams[](/microsoftteams/platform/task-modules-and-cards/what-are-cards)内容：
-
-- **核心和Advanced eDiscovery**。 现在可以将卡片内容[置于保留](create-ediscovery-holds.md#preserve-card-content)状态或包含在搜索 ([](/microsoftteams/ediscovery-investigation#search-for-card-content)内容搜索以及) 。
-- **审核**。 卡片活动现在[记录到审核日志。](/microsoftteams/audit-log-events#teams-activities)
-- **保留策略**。 现在可以使用保留策略 [来保留和删除卡片内容](retention-policies-teams.md#whats-included-for-retention-and-deletion)。
-
-### <a name="information-governance-and-records-management"></a>信息管理和记录管理
-
-[用于解决](retention-regulatory-requirements.md#new-zealand-public-records-act) 使用信息管理和记录管理以帮助履行新西兰公共记录法案的合规性义务的新评估。
-
-### <a name="sensitivity-labels"></a>敏感度标签
-
-- 敏感度标签现在支持美国政府租户 (GCC GCC-H) 。
-- macOS [的新](sensitivity-labels-office-apps.md) 自动标记支持。
+- **SharePoint外部共享 。** 对于[容器标签](sensitivity-labels-teams-groups-sites.md)，外部共享选项SharePoint现在发布为公开发布。 此外，Microsoft 365 管理中心和 Planner 现在支持应用这些敏感度标签。 
+- **共同创作和自动保存**。 对 [加密文件共同创作](sensitivity-labels-coauthoring.md) 和自动保存的支持发布为预览版，以在非生产租户中进行测试。

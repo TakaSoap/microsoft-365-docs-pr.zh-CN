@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: 0a16c7a4b7668d580246a94ac721d2438e95b70cfe1a2b4ac302048913a11ebd
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 268fcc1239370d55a112c60192fb37f42df2203b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520395"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243988"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -221,7 +221,7 @@ Yes, this capability is now available.
 
 #### <a name="where-is-drive-shipping-available"></a>哪些地区提供驱动器传送服务？
 
-当前，美国、加拿大、巴西、英国、欧洲、印度、东亚、东南亚、日本、韩国和澳大利亚已推出驱动器传送服务。不久之后，还会有更多地区提供此服务。
+美国、加拿大、巴西、英国、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和南非目前提供驱动器寄送。驱动器传送将很快在更多区域推出。
 
 > [!NOTE]
 > 目前，不可在德国和瑞士使用驱动器发运导入 PST 文件。 当这些国家/地区提供驱动器发运功能后，此常见问题解答将更新。

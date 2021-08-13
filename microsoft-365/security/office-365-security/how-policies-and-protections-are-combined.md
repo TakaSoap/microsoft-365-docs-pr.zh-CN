@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 EOP Exchange Online Protection (中的保护) ，以及保护策略中的优先级值如何确定应用的策略。
+description: 管理员可以了解 EOP Exchange Online Protection (中的保护) ，以及保护策略中的优先级值如何确定应用哪个策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 522af9171b9188bd817708ce7de5eb90cd0df7c8412c60ab5d79a128b75d6ff4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790493"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
@@ -33,7 +33,7 @@ ms.locfileid: "53409124"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) Exchange Online 组织中，入站电子邮件可能会受到多种形式的保护标记。 例如，EOP 中可用于所有 Microsoft 365 客户的内置防钓鱼策略，以及可供 Office 365 客户 Microsoft Defender 使用更可靠的防钓鱼策略。 邮件还会通过恶意软件、垃圾邮件、网络钓鱼等的多个检测扫描。鉴于所有这些活动，可能混淆了要应用哪个策略。
+在Microsoft 365没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中，入站电子邮件可能会受到多种形式的保护标记。 例如，EOP 中可用于所有 Microsoft 365 客户的内置防钓鱼策略，以及 Microsoft Defender 为 Office 365 客户提供的更可靠的防钓鱼策略。 邮件还会通过恶意软件、垃圾邮件、网络钓鱼等的多个检测扫描。鉴于所有这些活动，可能会对应用哪个策略产生混淆。
 
 通常，应用于邮件的策略在 CAT (Category 属性的 **X-Forefront-Antispam-Report** **标头)** 标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
@@ -47,12 +47,12 @@ ms.locfileid: "53409124"
 
   |优先级|电子邮件保护|类别|管理位置|
   |---|---|---|---|
-  |1|恶意软件|CAT：MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
-  |2|网络钓鱼|CAT：PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |3|高可信度垃圾邮件|CAT：HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |1 |恶意软件|CAT：MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
+  |2 |网络钓鱼|CAT：PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |3 |高可信度垃圾邮件|CAT：HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |4 |网络钓鱼|CAT：SPOOF|[EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender 中配置防钓鱼策略Office 365](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender 中配置防钓鱼策略Office 365](configure-mdo-anti-phishing-policies.md)|
   |7 |垃圾邮件|CAT：SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |8 |批量邮件|CAT：BULK|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |
@@ -72,8 +72,8 @@ ms.locfileid: "53409124"
 
 |策略名称|优先级|用户模拟|反欺骗|
 |---|---|---|---|
-|策略 A|1|开|关|
-|策略 B|2|关|开|
+|策略 A|1 |开|关|
+|策略 B|2 |关|开|
 |
 
 1. 邮件被标记为欺骗邮件并被视为欺骗邮件，因为欺骗的优先级 (4) 比 5 (高) 。
@@ -83,6 +83,6 @@ ms.locfileid: "53409124"
 
 由于同一用户可能会有意或无意地包含在同一类型的多个自定义策略中，因此请对自定义策略使用以下设计准则：
 
-- 为适用于少数用户的策略分配更高的优先级，为适用于大量用户的策略分配较低的优先级。 请记住，默认策略始终应用最后。
+- 为适用于少数用户的策略分配更高的优先级，为适用于大量用户的策略分配较低的优先级。 请记住，默认策略始终应用最后一个。
 - 将高优先级策略配置为具有比较低优先级策略更严格或更专门的设置。
 - 请考虑使用更少的自定义策略 (仅对需要更严格或更专业设置的用户使用) 。

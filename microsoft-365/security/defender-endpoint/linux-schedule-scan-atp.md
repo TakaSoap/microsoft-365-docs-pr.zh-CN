@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8b7bbd2a5f1050b7897af3b208346330172ef94
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b74843982c115753a2cd050f7b2813a33d3e6825bc8d4f679694b2659fd94c65
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623200"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523583"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
 
@@ -93,7 +93,7 @@ CRON_TZ=America/Los_Angeles
 
 若要查看 cron 作业，请键入 `sudo crontab -l`
 
-:::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp":::
 
 #### <a name="to-inspect-cron-job-runs"></a>检查 cron 作业运行
 
@@ -204,7 +204,7 @@ crontab -r
 crontab -u username -r
 ```
 
-### <a name="explanation"></a>说明
+### <a name="explanation"></a>解释
 
 +—————-分钟 (值：0 - 59)  (特殊字符： 、 - * /)   <br>
 |+————-小时 (值：0 - 23)  (特殊字符： 、 - * /)  <br>

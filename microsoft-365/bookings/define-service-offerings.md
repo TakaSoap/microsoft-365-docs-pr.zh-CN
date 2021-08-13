@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: 有关输入服务产品/服务信息的说明，包括服务名称、说明、位置、持续时间和定价。 还可以标记有资格提供服务的员工。
-ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 8a287e08a64fd2f7ca94e83f7b99c277f9e0124673697b202eda9ad86b0ff9e4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962533"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803991"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>在 Bookings 中定义服务产品
 
@@ -98,13 +98,13 @@ ms.locfileid: "47962533"
 
         :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings 电子邮件中的附加信息":::
 
-14. **为客户启用短信通知** 如果选中短信，则只会在用户选择加入时，才将邮件发送给客户。
+14. **为客户启用短信通知** 如果选中，SMS 消息将发送给客户，但仅在用户选择加入时发送。
 
     - 手动预订和预订页面上的"选择加入Self-Service框：
 
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookings 中的选择加入框":::
 
-    - 短信通知将如下所示， (请注意短信目前仅在北美地区提供) ：
+    - 短信通知将如下所示， (SMS 通知当前仅适用于北美地区) ：
 
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="来自 Bookings 的文本通知":::
 

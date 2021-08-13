@@ -1,5 +1,5 @@
 ---
-title: 如何在 Microsoft Defender for Office 365 自动调查后报告误报或漏报Office 365
+title: 如何在 Microsoft Defender for Office 365 自动调查后报告误报或Office 365
 description: MICROSOFT Defender for Office 365 中的 AIR 是否遗漏或Office 365？ 了解如何将误报或漏报提交给 Microsoft 进行分析。
 keywords: 自动化， 调查， 警报， 触发器， 操作， 修正， 误报， 漏报
 search.appverid: met150
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 8e1812d8b6df9b48377978715e3a213e66993965ad1d0e6108457150ad1d3d12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790759"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自动调查和响应功能中报告误报/负面影响
 
@@ -37,10 +37,10 @@ ms.locfileid: "52878876"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果[自动调查和响应 (AIR](automated-investigation-response-office.md)) 检测Office 365错误检测到某些内容，则安全运营团队可以采取一些措施来解决此问题。 此类操作包括：
+如果[自动调查和响应 (AIR](automated-investigation-response-office.md)) 中检测到Office 365错误检测到某些内容，则安全运营团队可以采取一些措施来解决此问题。 此类操作包括：
 
 - [向 Microsoft 报告误报/负数](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [根据需要调整警报](#adjust-an-alert-to-prevent-false-positives-from-recurring) (调整) ;和
+- [根据需要调整 (](#adjust-an-alert-to-prevent-false-positives-from-recurring) 警报) ;和
 - [撤消已采取的修正操作](#undo-a-remediation-action)。
 
 使用本文作为指南。
@@ -55,11 +55,11 @@ ms.locfileid: "52878876"
 
 如果警报是由合法使用触发的，或者该警报不准确，可以在 云应用安全[门户中管理警报](/cloud-app-security/managing-alerts)。
 
-如果你的组织除了使用 Office 365 之外还使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection)并且文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全，你可以为设备创建包含"允许"操作的自定义[指示器。](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+如果你的组织除了使用 Office 365 之外还使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection)并且文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全，也可以为设备创建包含"允许"操作的自定义[指示器。](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
 
 ## <a name="undo-a-remediation-action"></a>撤消修正操作
 
-在大多数情况下，如果对电子邮件、电子邮件附件或 URL 采取修正操作，并且该项目实际上不是威胁，则安全运营团队可以撤消修正操作，并采取措施防止误报重复发生。 可以使用威胁资源管理器 [或](#undo-an-action-using-threat-explorer) "操作" [选项卡进行调查](#undo-an-action-in-the-action-center) 以撤消操作。
+在大多数情况下，如果对电子邮件、电子邮件附件或 URL 采取修正操作，并且该项目实际上不是威胁，则安全运营团队可以撤消修正操作，并采取措施防止误报重复发生。 可以使用威胁资源管理器 [或](#undo-an-action-using-threat-explorer) "操作 ["选项卡进行调查](#undo-an-action-in-the-action-center) 以撤消操作。
 
 > [!IMPORTANT]
 > 在尝试执行以下任务之前，请确保你拥有必要的权限。
@@ -72,7 +72,7 @@ ms.locfileid: "52878876"
 
 ****
 
-|应用场景|撤消选项|了解更多|
+|方案|撤消选项|了解详细信息|
 |---|---|---|
 |电子邮件已路由到用户的"垃圾邮件"文件夹|<ul><li>将邮件移动到用户的"已删除邮件"文件夹</li><li>将邮件移动到用户的收件箱</li><li>删除邮件</li></ul>|[查找并调查在邮件中传递的恶意Office 365](investigate-malicious-email-that-was-delivered.md)|
 |已隔离电子邮件或文件|<ul><li>释放电子邮件或文件</li><li> 删除电子邮件或文件</li></ul>|[以管理员角色管理隔离邮件](manage-quarantined-messages-and-files.md)|
@@ -82,7 +82,7 @@ ms.locfileid: "52878876"
 
 在操作中心，你可以看到已采取的修正操作并可能撤消该操作。
 
-1. 转到 Defender Microsoft 365门户 <https://security.microsoft.com> () 。
+1. 转到 Microsoft 365 Defender 门户 <https://security.microsoft.com> () 。
 2. 在导航窗格中，选择操作 **中心**。
 3. 选择 **"历史记录** "选项卡以查看已完成操作的列表。
 4. 选择一个项目。 将打开其飞出窗格。

@@ -14,17 +14,17 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 此解决方案会告诉您最常见的网络安全攻击Microsoft 365如何响应它们
+description: 此解决方案会告知你最常见的网络安全攻击Microsoft 365如何响应它们
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65ff75253f45ae2d0f051dafe73c6e665f89827a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 62e73b3b8e72aad66fd83743551f770078d164e93136defc31140bf20cb87042
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790841"
 ---
 # <a name="security-incident-response"></a>安全事件响应
 
@@ -35,7 +35,7 @@ ms.locfileid: "51203638"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **摘要：** 此解决方案将告知您有关 Office 365 中最常见的网络安全攻击的指示器、如何积极确认任何给定攻击以及如何响应它。
+ **摘要：** 此解决方案会告知你哪些指标是针对 Office 365 最常见的网络安全攻击、如何积极确认任何给定的攻击以及如何响应它。
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>了解如何响应网络攻击
 
@@ -67,10 +67,10 @@ ms.locfileid: "51203638"
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
-你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用 Microsoft 365安全路线图 - 前[30 天、前 90](security-roadmap.md)天及之后的主要优先级，实现 Microsoft 建议用于保护组织安全Microsoft 365做法。
+你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用 Microsoft 365安全路线图 - 前[30 天、前 90](security-roadmap.md)天及之后的首要任务，实现 Microsoft 建议用于保护组织安全Microsoft 365做法。
 
 - 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
 
 - 需要在 90 天内完成的任务。 这些需要多花一点时间来计划和实现，但会显著改善你的安全状况
 
-- 90 天后。 这些增强功能基于前 90 天的工作构建。
+- 90 天后。这些增强功能基于前 90 天的工作构建。

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 59a9ae07b6d8073bd46a36a803abda3b419cc4cb33e3739250474a2217fbbf8a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523358"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243944"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
 
 在安装过程中 `HTTPS_PROXY` ，必须将环境变量传递给程序包管理器。 程序包管理器可以通过以下任一方式读取此变量：
 
-- 变量 `HTTPS_PROXY` 在 中定义 `/etc/environment` ，并包含以下行：
+- 变量 `HTTPS_PROXY` 用以下 `/etc/environment` 行定义：
 
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"

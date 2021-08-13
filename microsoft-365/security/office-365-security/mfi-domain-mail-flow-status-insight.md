@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何 &使用安全与合规中心内"邮件流"仪表板中的"热门域邮件流状态"见解，解决与 MX 记录相关的邮件流问题。
+description: 管理员可以 &了解如何使用安全与合规中心内"邮件流"仪表板中的"热门域邮件流状态"见解，解决与 MX 记录相关的邮件流问题。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850e72fa0ad7a3f41450a1d0a2c02dd3df4a0cb5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e0258aeb57f9821091f29f884a42266da47e63dee4adf44a99b3f22154549d19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56739738"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全与合规中心内热门域&状态见解
 
@@ -30,19 +30,19 @@ ms.locfileid: "51203924"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 **与合规** 中心内"邮件流"[](mail-flow-insights-v2.md)仪表板中的"热门域邮件流状态"&[可](https://protection.office.com)为你提供组织的当前邮件流状态。
+安全 **与合规** 中心的"邮件流"仪表板 [](mail-flow-insights-v2.md)中的"热门域邮件流状态"&[可](https://protection.office.com)为你提供组织的当前邮件流状态。
 
 此见解可帮助您识别和排查遇到邮件 ***流问题的域*** 。 例如，域无法接收外部电子邮件，因为该域已过期或域的 MX 记录不正确。
 
 ![安全与合规中心内"邮件流"仪表板中的"&流状态"小组件](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-在小 **组件中** 单击"查看详细信息"时 **，将显示"** 域状态"飞出，其中显示每个域状态的更多详细信息：
+在小 **组件中** 单击"查看详细信息"时 **，将显示"** 域状态"飞出控件，其中显示每个域状态的更多详细信息：
 
 - **域**
 - **以前的 MX 记录**
 - **当前 MX 记录**
 - **电子邮件接收状态**
-- 域状态：绿色选中标记表示单击小组件) 时当前的 MX 记录 (匹配我们记录的值，并且域在过去两小时内已收到电子邮件。
+- 域状态：绿色选中标记表示单击小组件 (时当前的 MX 记录) 匹配我们记录的值，并且域在过去两小时内收到了电子邮件。
 
   红色 X 表示 MX 记录已更改，并且域在过去 6 小时内未收到任何电子邮件。 这很可能表示您的域已过期，或者 MX 记录更新不正确。 请与域注册机构或 DNS 托管服务核实，以查看域是否已过期，或者域的 MX 记录不正确。
 
@@ -52,4 +52,4 @@ ms.locfileid: "51203924"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

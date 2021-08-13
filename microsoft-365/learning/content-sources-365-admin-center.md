@@ -1,5 +1,5 @@
 ---
-title: 配置 Microsoft Viva Learning (预览) 中的学习内容Microsoft 365 管理中心
+title: 配置 Microsoft Viva Learning (预览) 学习内容源Microsoft 365 管理中心
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 了解如何在 Microsoft 365 管理中心 中配置 Microsoft Viva Learning (Preview) 学习Microsoft 365 管理中心。
-ms.openlocfilehash: ac9ec6196f758d3ed02d3a102fef80b8a7adeeaa
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 了解如何在 Microsoft 365 管理中心 中为 Microsoft Viva Learning (Preview) 配置学习内容Microsoft 365 管理中心。
+ms.openlocfilehash: f7a712d2b7d4fa2635a27f4d1e36893c75c6f9b120503efba676bdd37e0ab1d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891212"
 ---
-# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>配置 Microsoft Viva Learning (预览) 中的学习内容Microsoft 365 管理中心
+# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>配置 Microsoft Viva Learning (预览) 学习内容源Microsoft 365 管理中心
 
 > [!NOTE]
 > 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 
@@ -113,6 +113,6 @@ Microsoft 365 管理中心管理员（无论是自己还是通过向组织中选
 
 您需要与非 Microsoft 服务的供应商合作，以根据非 Microsoft 服务的许可证、服务或隐私条款访问、更正、删除或提取数据。 非 Microsoft 服务和 Viva Learning (Preview) 的数据更新周期完成后，在 Viva Learning (Preview) 中处理的数据中将反映所做的更改。 如果关闭 Viva Learning (Preview) 和非 Microsoft 服务之间的连接，则之前从该服务导入的所有数据都将被删除。 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
-[将 SharePoint 配置为 Microsoft Viva Learning (Preview) ](configure-sharepoint-content-source.md)
+[将 SharePoint 配置为 Microsoft Viva Learning (Preview) 的学习内容源](configure-sharepoint-content-source.md)

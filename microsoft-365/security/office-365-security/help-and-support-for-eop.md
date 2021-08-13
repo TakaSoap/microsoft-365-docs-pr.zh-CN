@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: d1ce9c5a92a7b481058e9ba7e0c3e4067d613085fa7fd18eaddc7e0b78db563c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790054"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -29,35 +29,35 @@ ms.locfileid: "52298024"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织中或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，如果在使用 EOP 时遇到困难，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
+在具有 Exchange Online 或独立 Exchange Online Protection (EOP) 邮箱且没有 Exchange Online 邮箱的 Microsoft 365 组织中，如果在使用 EOP 时遇到困难，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 
 ## <a name="self-support-options"></a>自助支持选项
 
-登录后，Microsoft 365 管理中心提供有关组织服务状态的信息。 此外，服务运行状况部分还显示服务的当前状态、有关中断和中断的详细信息，并列出计划的维护时间。 Microsoft 365 管理中心还提供有关已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域详细信息，请参阅服务 [运行状况和连续性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以使用此处列出的工具、论坛和社区网站自行查找更多帮助。
+登录后，Microsoft 365 管理中心提供有关组织服务状态的信息。 此外，服务运行状况部分还显示服务的当前状态、有关中断和中断的详细信息，并列出计划的维护时间。 该Microsoft 365 管理中心还提供了已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域详细信息，请参阅服务 [运行状况和连续性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以使用此处列出的工具、论坛和社区网站自行查找更多帮助。
 
 [Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [联系商业版产品的支持人员 - 管理员帮助](../../business-video/get-help-support.md)
 
-[Microsoft 365 社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[SaRA (Microsoft 支持和恢复) ](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft 支持和恢复助手 (SaRA) ](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [邮件流疑难解答程序](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-可以通过在 Microsoft 365 管理中心内启动新服务请求或通过电话获得 Microsoft 帮助。 Premier Support 订阅者具有额外的支持选项。
+可以通过在服务中心内启动新服务请求Microsoft 365 管理中心或通过电话调用，从 Microsoft 获取帮助。 Premier Support 订阅者具有额外的支持选项。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
 如果您是 EOP 客户，而且具有 Microsoft Premier Support 合同，您可以通过正常的 Microsoft Premier Support 渠道获得支持。这允许您接收对 Premier Support 客户可用的所有进程和资源（如 Premier 技术客户经理 (TAM) 和实例提交）的访问权限。适用于 Microsoft Online Services 的 Premier Support 将 Premier Support 框架从内部部署产品扩展到联机服务，从而为您提供跨所有产品和服务的统一支持体验。该服务有助于确保客户可以快速解决问题，并且简化对 IT 基础结构不同组件的支持进行管理的任务。
 
-有关顶级支持如何帮助你的组织最大化 IT 投资价值的信息，请参阅[Premier Support for Partners。](https://partner.microsoft.com/support/microsoft-services-premier-support)
+有关顶级支持如何帮助你的组织最大化 IT 投资价值的信息，请参阅 [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support)。
 
 ### <a name="ask-for-help-on-the-web"></a>在 Web 上寻求帮助
 
-1. 登录到 Microsoft 365 管理中心。
+1. 登录到Microsoft 365 管理中心。
 
 2. Go to **Support** \> **Ask for Customer Support** \> **New Service Request**
 
@@ -65,7 +65,7 @@ ms.locfileid: "52298024"
 
 ### <a name="ask-for-help-on-the-telephone"></a>致电寻求帮助
 
-1. 登录到 Microsoft 365 管理中心。
+1. 登录到Microsoft 365 管理中心。
 
 2. 有关常规产品问题， **请转到支持** \> **人员询问客户支持** \> **致电技术支持** 人员。
 
@@ -75,7 +75,7 @@ ms.locfileid: "52298024"
 
 ## <a name="support-telephone-numbers"></a>支持电话号码
 
-Microsoft 针对全球产品支持提供本地或免费电话号码。 很多支持中心都可以在工作时间提供本地语言支持，或者全天候提供英文支持。 如果未看到下面列出的位置，请使用如上所述的虚拟代理查找本地支持电话号码。
+Microsoft 针对全球产品支持提供本地或免费电话号码。 很多支持中心都可以在工作时间提供本地语言支持，或者全天候提供英文支持。 如果您未看到下面列出的位置，请使用如上所述的虚拟代理查找您的本地支持电话号码。
 
 ****
 

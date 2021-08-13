@@ -18,12 +18,12 @@ description: 了解如何识别和修正非法同意授权攻击Microsoft 365。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1f2e5139ed9c16026ec49eab9318588b7704a0fb7f690fef5ea6cc4ce3274fde
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56739638"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测和修正非法同意授予
 
@@ -37,16 +37,16 @@ ms.locfileid: "53083004"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-microsoft-365"></a>什么是非法许可授予攻击Microsoft 365？
 
-在非法许可授予攻击中，攻击者创建 Azure 注册的应用程序，请求访问联系人信息、电子邮件或文档等数据。 攻击者随后会通过网络钓鱼攻击或将非法代码注入受信任的网站，来欺骗最终用户授予该应用程序访问其数据的同意。 在非法应用程序获得同意后，它无需组织帐户即可对数据进行帐户级访问。 正常修正步骤（如重置泄露帐户的密码或要求帐户使用多重身份验证 (MFA) ）无法抵御此类攻击，因为此类攻击是第三方应用程序且位于组织外部。
+在非法许可授予攻击中，攻击者创建 Azure 注册的应用程序，请求访问联系人信息、电子邮件或文档等数据。 攻击者随后会通过网络钓鱼攻击或将非法代码注入受信任的网站，来欺骗最终用户授予该应用程序访问其数据的同意。 在非法应用程序获得同意后，它无需组织帐户即可对数据进行帐户级访问。 正常修正步骤（如重置泄露帐户的密码或要求帐户使用多重身份验证 (MFA) ）无法抵御此类攻击，因为此类攻击是第三方应用程序，位于组织外部。
 
 这些攻击利用一个交互模型，该模型认为调用信息的实体是自动化的，而不是人为的。
 
 > [!IMPORTANT]
-> 你是否怀疑目前遇到来自应用的非法许可问题？ Microsoft Cloud App Security (MCAS) 具有用于检测、调查和修正 OAuth 应用的工具。 本 MCAS 文章包含一个教程，概述了如何调查 [有风险的 OAuth 应用](/cloud-app-security/investigate-risky-oauth)。 还可以设置 [OAuth](/cloud-app-security/app-permission-policy) 应用策略以调查应用请求的权限（用户正在授权这些应用的权限）并广泛批准或禁止这些权限请求。
+> 你是否怀疑目前遇到来自应用的非法许可问题？ Microsoft Cloud App Security (MCAS) 具有检测、调查和修正 OAuth 应用的工具。 本 MCAS 文章包含一个教程，概述了如何调查 [有风险的 OAuth 应用](/cloud-app-security/investigate-risky-oauth)。 还可以设置 [OAuth](/cloud-app-security/app-permission-policy) 应用策略以调查应用请求的权限（用户正在授权这些应用的权限）并广泛批准或禁止这些权限请求。
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>非法许可授予攻击在攻击中Microsoft 365？
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>非法同意授予攻击在攻击中Microsoft 365？
 
-你需要搜索安全审核日志，也称为"泄露指示器" (IOC) 攻击。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是每周查看一次组织同意授予。
+你需要搜索 **安全审核日志，** 也称为威胁指示器 (IOC) 攻击。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是每周查看一次你的组织同意授予。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此攻击的迹象的步骤
 
@@ -64,7 +64,7 @@ ms.locfileid: "53083004"
 
 > [!NOTE]
 >
-> 在事件发生后，可能需要 30 分钟到 24 小时审核日志相应的项目条目显示在搜索结果中。
+> 在事件发生后，可能需要 30 分钟到 24 审核日志条目显示在搜索结果中。
 >
 > 审核记录在 审核日志 中保留和搜索的时间长度取决于 Microsoft 365 订阅，特别是分配给特定用户的许可证类型。 有关详细信息，请参阅审核 [日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 >
@@ -72,9 +72,9 @@ ms.locfileid: "53083004"
 
 ## <a name="how-to-confirm-an-attack"></a>如何确认攻击
 
-如果你有上面列出的一个或多个 ICS 实例，则需要进行进一步调查，以积极确认攻击已发生。 可以使用以下三种方法之一确认攻击：
+如果你有上面列出的 IIC 的一个或多个实例，则需要进行进一步调查，以积极确认攻击已发生。 可以使用以下三种方法之一确认攻击：
 
-- 使用管理门户清点应用程序及其Azure Active Directory权限。 此方法很全面，但一次只能检查一个用户，如果有许多用户要检查，则检查可能非常耗时。
+- 使用应用程序门户清点应用程序及其Azure Active Directory权限。 此方法很全面，但一次只能检查一个用户，如果有许多用户要检查，则检查可能非常耗时。
 - 使用 PowerShell 清点应用程序及其权限。 这是最快、最彻底的方法，开销最少。
 - 让用户单独检查其应用和权限，将结果报告回管理员进行修正。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53083004"
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>使用 Azure Active Directory 门户的步骤
 
-您可以使用 位于 的"管理门户"查找任何单个用户已授予Azure Active Directory的应用程序 <https://portal.azure.com> 。
+您可以通过使用 位于 的 Azure Active Directory 门户来查找任何单个用户已授予其权限的应用程序 <https://portal.azure.com> 。
 
 1. 使用管理权限登录到 Azure 门户。
 2. 选择"Azure Active Directory边栏选项卡。
@@ -125,9 +125,9 @@ ms.locfileid: "53083004"
    .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-该脚本生成一个名为 Permissions.csv。 按照以下步骤查找非法应用程序权限授予：
+该脚本生成一个名为 Permissions.csv 的文件。 按照以下步骤查找非法应用程序权限授予：
 
-1. 在 ConsentType 列 (G 列) 搜索值"AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中每个人的内容。 本机Microsoft 365应用程序需要此权限才能正常工作。 应仔细查看每个具有此权限的非 Microsoft 应用程序。
+1. 在 ConsentType 列 (G) 搜索值"AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中每个人的内容。 本机Microsoft 365应用程序需要此权限才能正常工作。 应仔细查看每个具有此权限的非 Microsoft 应用程序。
 
 2. 在"权限 (列F) 查看每个委派应用程序对内容具有的权限。 查找"读取"和"写入"权限或"*"。所有"权限，并仔细查看这些权限，因为它们可能不适合。
 
@@ -140,11 +140,11 @@ ms.locfileid: "53083004"
 完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在门户 中 **审核日志** 搜索Microsoft 365 Defender [搜索](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 
 > [!IMPORTANT]
-> [在攻击](../../compliance/enable-mailbox-auditing.md)[之前，必须为](../../compliance/turn-audit-log-search-on-or-off.md)管理员和用户启用邮箱审核和活动审核才能获取此信息。
+> [在攻击](../../compliance/enable-mailbox-auditing.md)[之前，](../../compliance/turn-audit-log-search-on-or-off.md)必须为管理员和用户启用邮箱审核和活动审核才能获取此信息。
 
 ## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>如何停止和修正非法同意授予攻击
 
-在标识具有非法权限的应用程序后，您具有几种删除该访问权限的方法。
+识别具有非法权限的应用程序后，您具有几种删除该访问权限的方法。
 
 - 可以通过以下方法撤销应用程序在 Azure Active Directory 中的权限：
   1. 在"用户"边栏选项卡中Azure Active Directory **受影响的** 用户。
@@ -165,8 +165,8 @@ ms.locfileid: "53083004"
 你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。
 
 - 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
-- 需要在 90 天内完成的任务。 这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。
-- 90 天后。 这些增强功能基于前 90 天的工作构建。
+- 要在 90 天内完成的任务。这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。
+- 90 天后。这些增强功能基于前 90 天的工作构建。
 
 ## <a name="see-also"></a>另请参阅
 

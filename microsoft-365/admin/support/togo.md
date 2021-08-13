@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 251242c4e2ce64263c8ad920d1de7f0b751c2fb8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 1928168f532c9601ceff99280ab8a74be0b2b94117ff82711366fa5656a5cd74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804082"
 ---
 # <a name="contact-support-for-togo"></a>联系 Togo 支持人员
 

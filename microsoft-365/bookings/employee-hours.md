@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: 在 Microsoft Bookings 中设置员工工作时间和可用性。
-ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 04e6d3e079fec1c75536f3ac30dbab12026dabe2207f985b87410af77a7b832f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803773"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings 中的员工工作时间
 
@@ -44,7 +44,7 @@ ms.locfileid: "47962521"
 
 1. 单击 **+** 添加开始时间和结束时间选择器。
 
-1. 选择"保存"。
+1. 选择“保存”。
 
 ## <a name="set-an-employees-days-off"></a>设置员工的天数
 

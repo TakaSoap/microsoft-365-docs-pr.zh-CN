@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以 &了解如何使用安全与合规中心内"邮件流"仪表板中的"修复可能的邮件循环见解"来标识和修复其组织的邮件循环。
+description: 管理员可以了解如何 &使用安全与合规中心内"邮件流"仪表板中的"修复可能的邮件循环见解"来标识和修复其组织的邮件循环。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bb08eb2f9a5ea0eb72433f92b6d28175edc75b8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c391dee66461dd2535de5f05ef6ebd0f00b8dde0b7c973df8fa638199885dd22
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56788266"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修复安全与合规中心内可能&见解
 
@@ -46,7 +46,7 @@ ms.locfileid: "51203799"
 
 - **域**
 - **邮件数**：**可以单击"** 查看示例邮件"以查看受 [](message-trace-scc.md)循环影响的邮件示例的邮件跟踪结果。
-- **域类型**" 例如，权威或非权威。
+- **"域** 类型"例如，"权威"或"非权威"。
 - **MX 记录**： (**邮箱)****域的** MX 记录的优先级值。
 - **循环原因****和如何修复**：我们将确定最常见的邮件循环方案并提供建议的操作来修复循环。
 
@@ -54,4 +54,4 @@ ms.locfileid: "51203799"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

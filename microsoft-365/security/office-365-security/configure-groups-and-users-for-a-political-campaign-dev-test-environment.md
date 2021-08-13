@@ -19,12 +19,12 @@ description: 摘要：通过用户和组创建适用于政治宣传活动开发/
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e21cdfb0aabbdb10397d6d16c879756449a498e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790755"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -45,7 +45,7 @@ ms.locfileid: "51203165"
 
 接下来，注册 EMS E5 试用订阅，并将它添加到你的试用订阅所在的同一组织中。
 
-1. 如有需要，请使用试用订阅的全局管理员帐户的凭据登录管理中心。 如需帮助，请参阅[在哪里登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，请使用试用订阅的全局管理员帐户的凭据登录到管理中心。有关帮助，请参阅 [登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)的位置。
 
 2. 单击“管理员”磁贴。
 
@@ -71,7 +71,7 @@ ms.locfileid: "51203165"
 
 首先，通过 Azure 门户为典型政治宣传活动创建一系列组。
 
-1. 在浏览器的单独选项卡上，转到 azure 门户（按 <https://portal.azure.com>）。 如有需要，请使用 Office 365 E5 试用订阅的全局管理员帐户凭据登录。
+1. 在浏览器的单独标签页上，转到 Azure 门户 (<https://portal.azure.com>)。如有需要，请使用 Office 365 E5 试用订阅的全局管理员帐户凭据登录。
 
 2. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”。
 

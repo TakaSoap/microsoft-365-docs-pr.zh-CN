@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8d33804e8c1405093843709e06250beb7f10512
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 40301b0fd16b7d0b29b6a89ec009fc07c85b33ba587833866dd2e2b49741f85d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790641"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -49,7 +49,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>示例：用户报告的钓鱼邮件启动调查手册
 
-假设你组织的用户收到一封电子邮件，他们会认为这是网络钓鱼。 经过培训可报告此类邮件的用户使用报告邮件外接程序或[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序将其发送到 Microsoft[](enable-the-report-phish-add-in.md)进行分析。 提交也会发送到你的系统，并且显示在"提交"视图中的资源管理器中 (以前称为用户 **报告的视图**) 。 此外，用户报告的消息现在触发基于系统的信息警报，该警报将自动启动调查手册。
+假设你组织的用户收到一封电子邮件，他们会认为这是网络钓鱼尝试。 经过培训可报告此类邮件的用户使用报告邮件外接程序或[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序将其发送到 Microsoft[](enable-the-report-phish-add-in.md)进行分析。 提交也会发送到你的系统，并且显示在"提交"视图中的资源管理器中 (以前称为用户 **报告的视图**) 。 此外，用户报告的消息现在触发基于系统的信息警报，该警报将自动启动调查手册。
 
 在根调查阶段，将评估电子邮件的各个方面。 这些方面包括：
 
@@ -68,8 +68,8 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 - 类似的电子邮件通过电子邮件群集搜索进行标识。
 - 信号与其他平台（如 Microsoft Defender [for Endpoint）共享](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
 - 确定任何用户是否点击了可疑电子邮件中任何恶意链接。
-- 在[Exchange Online Protection (EOP](exchange-online-protection-overview.md)) 和 (Microsoft Defender for Office 365 [) ](defender-for-office-365.md)中检查用户是否报告了任何其他类似消息。
-- 检查用户是否遭到入侵。 此检查利用跨 Office 365、Microsoft Cloud App Security 和[](/cloud-app-security)Azure Active Directory 的信号，关联[](/azure/active-directory)任何相关的用户活动异常。
+- 在[Exchange Online Protection (EOP](exchange-online-protection-overview.md)) 和[ (Microsoft Defender for Office 365) ](defender-for-office-365.md)中检查用户是否报告了任何其他类似消息。
+- 检查用户是否遭到入侵。 此检查利用跨[Office 365、Microsoft Cloud App Security](/cloud-app-security)和[Azure Active Directory](/azure/active-directory)的信号，关联任何相关的用户活动异常。
 
 在搜寻阶段，将风险和威胁分配给各种搜寻步骤。
 
@@ -89,7 +89,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 
 与警报触发的手册类似，从资源管理器中的视图触发的自动调查包括根调查、识别和关联威胁的步骤，以及缓解这些威胁的建议操作。
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>示例：安全运营团队使用 OFFICE 365活动 API 将 AIR 与 SIEM 集成
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>示例：安全运营团队使用安全管理活动 API 将 AIR Office 365 SIEM 集成
 
 Microsoft Defender for Office 365 AIR 功能包括&[安全](air-view-investigation-results.md)运营团队可用于监视和解决威胁的报告和详细信息。 但您也可以将 AIR 功能与其他解决方案集成。 示例包括 SIEM (安全) 、案例管理系统或自定义报告解决方案。 这些类型的集成可以使用管理活动 API Office 365[实现](/office/office-365-management-api/office-365-management-activity-api-reference)。
 

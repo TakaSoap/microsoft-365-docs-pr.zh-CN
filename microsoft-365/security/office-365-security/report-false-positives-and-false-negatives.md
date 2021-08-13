@@ -10,15 +10,15 @@ ms.topic: how-to
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用"报告邮件"功能在Outlook中报告误报和漏报。
+description: 了解如何使用"报告消息"功能在Outlook报告误报和漏报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 458e7d16e2614e7bac3a0aac5a4310e6353ab569
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: ac0dbb205e6205a9c92cc56922b7399c6dd2c65cde276854b2901edf89b29503
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56788288"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>在 Outlook 中报告误报和漏报
 
@@ -30,20 +30,20 @@ ms.locfileid: "53082920"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是拥有邮箱的 Microsoft 365 组织的管理员Exchange Online，我们建议你使用 Microsoft 365 Defender 页面。  有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有邮箱的 Microsoft 365 组织的管理员Exchange Online，我们建议你使用 Microsoft 365 Defender 门户中的"提交"页面。  有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
-在 Microsoft 365 组织中，邮箱位于 Exchange Online 或本地邮箱使用混合新式身份验证，你可以提交误报 (被阻止或发送到垃圾邮件文件夹) 的误报 (以及传递到) 至 Exchange Online Protection (EOP) 的不需要的电子邮件或网络钓鱼。
+在 Microsoft 365 组织中，邮箱位于 Exchange Online 或本地邮箱使用混合新式身份验证，你可以提交误报 (被阻止或发送到垃圾邮件文件夹) 的误报 (以及传递到) 到 Exchange Online Protection (EOP) 的不需要的电子邮件或网络钓鱼。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 为了获得最佳用户提交体验，请使用报告邮件外接程序或报告网络钓鱼外接程序。
 
   > [!IMPORTANT]
   > 报告垃圾邮件或网络钓鱼的内置体验Outlook用户提交[策略](./user-submission.md)。 我们建议改为使用报告邮件外接程序或报告网络钓鱼外接程序。
 
-- 报告邮件外接程序和 Report Phishing 外接程序适用于 Outlook、iOS、Android 和桌面 (Outlook 网页版平台中的) 。
+- 报告邮件外接程序和 Report Phishing 外接程序适用于所有平台 Outlook、iOS、Android 和桌面 (Outlook 网页版) 。
 
-- 如果你是拥有邮箱的组织的管理员，Exchange Online门户中的提交Microsoft 365 Defender门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+- 如果你是具有邮箱的组织管理员，请使用 Exchange Online 门户中的提交Microsoft 365 Defender门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 - 您可以配置为直接向 Microsoft 和/或您指定的邮箱发送邮件。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
 

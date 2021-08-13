@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 了解如何使用合规性分数和合规性管理器提高对个人数据的保护级别。
-ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ad9ac81d6427e4cb698ad80d5a5621daaf490f6203def774b5aea91fc2418ba5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804956"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合规性管理器管理改进操作
 

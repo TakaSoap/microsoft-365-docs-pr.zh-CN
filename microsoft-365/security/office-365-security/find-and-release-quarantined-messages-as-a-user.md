@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b54af30ee273680e71a0a3eead433f8f26ebd814
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 59477ae4e75e243c27d39f26b57192b55c2ec44432da8bc24e83504542e71844
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542773"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790495"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 

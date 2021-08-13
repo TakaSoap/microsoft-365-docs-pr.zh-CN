@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0828d19f875767ec2285057824c931e3a67477641cdc923bac0a2513e4325ac8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7eb71d0547c0ee242e02697e949bd39c3bdb2f3012adeaf159ca90f953268aa
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800326"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523629"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
@@ -38,7 +38,9 @@ ms.locfileid: "53800326"
 ## <a name="api-description"></a>API 说明
 获取允许下载调查包 [的](collect-investigation-package.md)URI。
 
-
+> [!IMPORTANT]
+>
+> - 这些操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [访问 Microsoft Defender for Endpoint API](apis-intro.md)
@@ -64,7 +66,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 名称|类型|说明
 :---|:---|:---
-Authorization|String|Bearer {token}。 **必需**。
+Authorization|字符串|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

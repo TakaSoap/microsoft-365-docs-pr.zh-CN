@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 090253806295d0a5db67afbe769c9c0ca8be4b39
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790255"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -136,7 +136,7 @@ ms.locfileid: "53054342"
 
 4. 在 <https://admin.exchange.microsoft.com> 进入 Exchange 管理中心 (EAC)，并转到“**收件人**”\>“**邮箱**”。
 
-5. 查找并选择用户。 在打开的邮箱详细信息浮出控件中，执行以下步骤：
+5. 查找并选择用户。在打开的邮箱详细信息浮出控件中，执行以下步骤：
    - 在 **电子邮件应用** 部分中，通过将切换开关移到右侧“![禁用](../../media/scc-toggle-on.png)”来阻止所有可用设置：
      - **Outlook 网页版**
      - **Outlook 桌面应用 (MAPI)**

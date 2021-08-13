@@ -19,12 +19,12 @@ description: 将组织的 SIEM 服务器与 Microsoft Defender 集成，Office 3
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: f0f80ac15ef26cac6eddcc2c8c6219f64e62c8400bbb9e305f5961c08d1b6ab0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53663859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56788440"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM 与 Microsoft Defender for Office 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "53663859"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-如果你的组织使用 SIEM (安全信息和事件) ，你可以将 Microsoft Defender for Office 365与 SIEM 服务器集成。 可以使用活动管理 API Office 365[此集成](/office/office-365-management-api/office-365-management-activity-api-reference)。
+如果你的组织使用 SIEM (安全信息和事件) ，你可以将适用于 Office 365 Microsoft Defender 与 SIEM 服务器集成。 可以使用活动管理 API Office 365[此集成](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
 SIEM 集成使你能够在 SIEM 服务器报告中查看信息，如 Microsoft Defender for Office 365 检测到的恶意软件或网络钓鱼。
 
@@ -45,11 +45,11 @@ SIEM 集成使你能够在 SIEM 服务器报告中查看信息，如 Microsoft D
 
 ## <a name="how-siem-integration-works"></a>SIEM 集成的工作原理
 
-活动Office 365 API 从组织的活动日志和活动日志中检索有关用户、管理员、系统和策略操作Microsoft 365 Azure Active Directory的信息。 如果你的组织拥有 Microsoft Defender for Office 365 计划 1 或 2，Office 365 E5，可以使用 Microsoft [Defender for Office 365 架构](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)。
+活动Office 365 API 从组织的活动日志和活动日志中检索有关用户、管理员、系统和策略操作Microsoft 365 Azure Active Directory的信息。 如果你的组织拥有适用于计划 1 Office 365 2 的 Microsoft Defender，Office 365 E5，可以使用 Microsoft Defender[进行Office 365架构](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)。
 
 最近，来自 Microsoft Defender for Office 365[计划 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)中的自动调查和响应功能的事件已添加到 Office 365 活动 API。 除了包含有关核心调查详细信息（如 ID、名称和状态）的数据之外，API 还包含有关调查操作和实体的高级别信息。
 
-SIEM 服务器或其他类似的系统轮询 **audit.general** 工作负载以访问检测事件。 若要了解更多信息，请参阅 Office 365 [API 入门](/office/office-365-management-api/get-started-with-office-365-management-apis)。
+SIEM 服务器或其他类似的系统轮询 **audit.general** 工作负载以访问检测事件。 若要了解更多信息，请参阅Office 365 [API 入门](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>枚举：AuditLogRecordType - 类型：Edm.Int32
 
@@ -60,9 +60,9 @@ SIEM 服务器或其他类似的系统轮询 **audit.general** 工作负载以�
 | 值 | 成员名称 | 说明 |
 |---|---|---|
 | 28| ThreatIntelligence | Exchange Online Protection 和 Microsoft Defender for Office 365 中的网络钓鱼和恶意软件事件。 |
-| 41| ThreatIntelligenceUrl | 保险箱链接 Microsoft Defender for Office 365 的阻止时间和阻止覆盖Office 365。 |
-| 47| ThreatIntelligenceAtpContent | SharePoint Online、OneDrive for Business 和 Microsoft Teams 中文件的网络钓鱼和恶意软件Office 365。 |
-| 64| AirInvestigation | 来自 Microsoft Defender for Office 365计划 2 的自动调查和响应事件，例如调查详细信息和相关项目。 |
+| 41| ThreatIntelligenceUrl | 保险箱链接来自 Microsoft Defender for Office 365 的阻止时间和Office 365。 |
+| 47| ThreatIntelligenceAtpContent | SharePoint Online、OneDrive for Business 和 Microsoft Teams 中的文件的网络钓鱼和恶意软件Office 365。 |
+| 64| AirInvestigation | Microsoft Defender for Office 365计划 2 中的自动调查和响应事件，如调查详细信息和相关项目。 |
 |
 
 > [!IMPORTANT]

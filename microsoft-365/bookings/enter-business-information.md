@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 按照以下说明创建"关于我们"页面，包括 Microsoft Bookings 中的公司名称、地址、电话号码、网站 URL、徽标和营业时间。
-ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: fae790405d6691d35f5c0bfe806b6d7d46c3b555ecfd14660d3fb89b34b3efe8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803834"
 ---
 # <a name="enter-your-business-information"></a>输入商业信息
 
@@ -57,7 +57,7 @@ ms.locfileid: "47962497"
 
 你可能需要每天或每周的一部分时间阻止员工会议、更新清单或处理其他节奏的业务详细信息。 Bookings 应用允许你将客户约会限制为指定的时间段。
 
-例如，你每周四的 1 点到 2：30 都有员工会议，并且想要阻止该时间，以便你的所有员工都可以参加会议。 为此，请执行以下操作：
+例如，你每周四的 1 点到 2：30 都有员工会议，并且想要阻止该时间，以便你的所有员工都可以参加会议。 为此:
 
 1. 在"业务信息"页上的"营业时间"下，选择周四的开始时间和结束时间。 本示例将设置 8：00 a.m. 到下午 1：00
 
@@ -69,7 +69,7 @@ ms.locfileid: "47962497"
 
    ![添加了小时数的营业时间 UI 的图像](../media/bookings-split-shift-hours.png)
 
-1. 选择"保存"。
+1. 选择“保存”。
 
     当客户转到你的预订页面时，他/她将看到你的业务在星期四的 1 到 2：30 关闭。
 

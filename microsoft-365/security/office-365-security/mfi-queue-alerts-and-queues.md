@@ -12,14 +12,14 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: '& 管理员可以了解如何使用安全与合规中心内"邮件流"仪表板中的"队列"小组件监视通过出站连接器发送到其内部部署或合作伙伴组织的失败邮件流。'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9b4bee0a8be6b7fdcc022add2092fb16b88d5d2f3f245e6a998036d66ed490af
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790636"
 ---
-# <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&队列见解
+# <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,13 +33,13 @@ ms.locfileid: "51599979"
 - 连接器配置不正确。
 - 本地环境中已发生网络或防火墙更改。
 
-Microsoft 365 24 小时内继续重试传递。 24 小时后，这些邮件将过期，并返回到未送达报告中的发件人 (也称为"未送达报告"或"退回邮件) 。
+Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期，并返回到未送达报告中的发件人 (也称为未送达报告或退回邮件) 。
 
 如果排队的电子邮件卷超过预定义的阈值 (默认值为 200 封邮件) ，则信息可在以下位置获取：
 
-- 安全 **与** 合规中心内邮件流 [仪表板](mail-flow-insights-v2.md)[中的队列&见解](https://protection.office.com)。 有关详细信息，请参阅本文中的 [邮件流仪表板中的](#queues-insight-in-the-mail-flow-dashboard) 队列见解部分。
+- 安全 **与** 合规中心内 [的邮件](mail-flow-insights-v2.md) 流仪表板 [中的&见解](https://protection.office.com)。 有关详细信息，请参阅本文中的 [邮件流仪表板中的](#queues-insight-in-the-mail-flow-dashboard) 队列见解部分。
 
-- 警报显示在 **安全与合规** 中心内警报仪表板或&警报 ([](https://protection.office.com)**警报** \>  <https://protection.office.com/alertsdashboard>) 。
+- 警报显示在安全与合规中心的 **"** 最近使用警报"仪表板&警报 [](https://protection.office.com) ( \> **或** <https://protection.office.com/alertsdashboard>) 。
 
   ![安全与合规中心的警报仪表板中的&警报](../../media/mfi-queued-messages-alert.png)
 
@@ -49,7 +49,7 @@ Microsoft 365 24 小时内继续重试传递。 24 小时后，这些邮件将�
 
 ## <a name="customize-queue-alerts"></a>自定义队列警报
 
-1. 在安全 [&中心，](https://protection.office.com)转到 **警报** \> **警报策略或** 打开 <https://protection.office.com/alertpolicies> 。
+1. 在安全 [&中心](https://protection.office.com)，转到 **警报** \> **警报策略或** 打开 <https://protection.office.com/alertpolicies> 。
 
 2. 在警报 **策略页面上** ，查找并选择名为 **邮件已延迟的策略**。
 
@@ -74,9 +74,9 @@ Microsoft 365 24 小时内继续重试传递。 24 小时后，这些邮件将�
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>邮件流仪表板中的队列见解
 
-即使排队的邮件卷未超出阈值并生成警报，您仍可以使用邮件流仪表板中的 **队列** 见解来查看排队时间超过 1 小时的邮件，在排队邮件数量变得过大之前采取措施。 [](mail-flow-insights-v2.md)
+即使排队的邮件卷未超出阈值并生成警报，您仍可以使用邮件流仪表板中的 **队列** 见解来查看排队时间超过 1 小时的邮件，并采取措施，使排队邮件的数量变得过大。 [](mail-flow-insights-v2.md)
 
-![安全与合规中心内"邮件流"仪表板&"小组件](../../media/mfi-queues-widget.png)
+![安全与合规中心内"邮件流"仪表板中的&"小组件](../../media/mfi-queues-widget.png)
 
 If you click the number of messages on the widget， a **Messages queued** flyout appears with the following information：
 
@@ -93,7 +93,7 @@ If you click the number of messages on the widget， a **Messages queued** flyou
 
 在邮件已延迟警报的详细信息中单击"查看队列"后，将显示 **相同的飞** 出图。
 
-![安全与合规中心内的邮件已&警报详细信息](../../media/mfi-queued-messages-alert-details.png)
+![安全与合规中心内的邮件&警报详细信息](../../media/mfi-queued-messages-alert-details.png)
 
 ## <a name="see-also"></a>另请参阅
 

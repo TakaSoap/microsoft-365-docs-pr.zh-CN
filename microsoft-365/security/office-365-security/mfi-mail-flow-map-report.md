@@ -14,12 +14,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"邮件流"映射，直观呈现和跟踪通过连接器（不使用连接器）在组织中往来的邮件流。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e806dde2e6f3ddde5cce3b61c85fe0b024ba2fe
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6bf906871bc95bd57ef3ffc342352c4ce8b5fea96bb6a5212b04b000d66c7b41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56790754"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心&流程图
 
@@ -30,11 +30,11 @@ ms.locfileid: "51203922"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 **与合规中心的**"邮件 [](mail-flow-insights-v2.md)流"仪表板中的"邮件流 ["&可](https://protection.office.com)深入了解邮件在组织中如何流动。 您可以使用此信息了解模式、识别异常并修复发生的问题。
+安全 **与合规中心的**["邮件流](mail-flow-insights-v2.md)"仪表板中的"邮件流 ["&可](https://protection.office.com)深入了解邮件在组织中如何流动。 您可以使用此信息了解模式、识别异常并修复发生的问题。
 
-![安全与合规中心内"邮件流"仪表板中的"邮件&小组件](../../media/mfi-mail-flow-map-widget.png)
+![安全与合规中心的"邮件流"仪表板中的"邮件流&小组件](../../media/mfi-mail-flow-map-widget.png)
 
-默认情况下，小部件在称为 *Sankey* 图表的图表中显示前一天的邮件流模式。 您可以使用向左箭头向左 ![ 箭头 ](../../media/scc-left-arrow.png) 和向右键 ![ 显示 ](../../media/scc-right-arrow.png) 不同日期的信息。 每种不同的颜色表示通过不同入站或出站连接器的邮件流 (或不使用连接器) 。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
+默认情况下，小部件在称为 *Sankey* 图表的图表中显示前一天的邮件流模式。 可以使用向左箭头向左箭头 ![ 和 ](../../media/scc-left-arrow.png) 向右键 ![ 显示 ](../../media/scc-right-arrow.png) 不同日期的信息。 每种不同的颜色表示通过不同入站或出站连接器的邮件流 (或不使用连接器) 。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
 
 ## <a name="report-view-for-the-mail-flow-map"></a>邮件流映射的报告视图
 
@@ -54,19 +54,19 @@ ms.locfileid: "51203922"
 
 若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
-相关见解显示在邮件流映射下方（如果它们 (例如，修复可能的邮件 [循环见解](mfi-mail-loop-insight.md)) 。
+相关见解显示在邮件流映射下方（如果它们 (例如，修复可能的邮件 [循环](mfi-mail-loop-insight.md) 见解) 。
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>邮件流映射的详细信息表视图
 
-如果单击 **视图中的"** 查看详细信息"报表视图，将显示以下信息：
+如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **Date**
+- **日期**
 - **类别**
 - **连接器/第三方服务提供商**
 - **发件人/收件人域**
 - **邮件计数**
 
-如果在详细信息 **表** 视图中单击"筛选器"，可以指定开始日期和 **结束日期的日期范围**。 
+如果在详细信息 **表** 视图中单击筛选器，可以指定开始日期和 **结束日期的日期范围**。 
 
 如果您选择一行，则类似的详细信息将显示在一个飞出内容中：
 
