@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6aa112f0d0219394445ebd57cacdfeb2df83ec4c
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: a82b88683eaf1e7033115ce98773abf810602264dda8e48f5004d4ee5bf1cdc6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817264"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威胁防护报告
 
@@ -33,7 +33,7 @@ ms.locfileid: "53567796"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
 威胁防护报告提供有关在组织中生成的警报的高级别信息。 该报告包括趋势信息，显示检测源、类别、严重性、状态、分类以及警报的确定。
 
@@ -91,7 +91,7 @@ ms.locfileid: "53567796"
 
 1. 在 **"事件&警报** 筛选器  >    >  **">严重性"下，** 选择"高 **"。**
 2. 确保已取消选择"严重性 **"下的** 所有其他选项。
-3. 选择 **应用**。
+3. 选择“**应用**”。
 
 ## <a name="related-topic"></a>相关主题
 - [设备运行状况和合规性报告](machine-reports.md)

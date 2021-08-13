@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解 Microsoft 云服务的组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: 05c30cd47364a9161d0fa95a952f21d0b62940159cb638127d4eb8240b2a108e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794726"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -52,7 +52,7 @@ ms.locfileid: "51604317"
  
 你也可以使用试用版订阅，此订阅会在一定时间后或使用费用后过期。你可以将试用版订阅转换为付费订阅。
   
-组织可订阅多个 Micrososft 云服务。 图 1 显示了一个组织，它具有多个 Microsoft 365 订阅、一个 Dynamics 365 订阅以及多个 Azure 订阅。
+组织可订阅多个 Micrososft 云服务。图 1 显示了一个具有多个 Microsoft 365 订阅、一个 Dynamics 365 订阅和多个 Azure 订阅的单一组织。
 
 **图 1：组织的多个订阅示例**
 
@@ -60,7 +60,7 @@ ms.locfileid: "51604317"
   
 ### <a name="licenses"></a>许可证
 
-对于 Microsoft 的 SaaS 云服务，许可证允许特定用户帐户使用云产品的服务。 作为订阅的一部分，你可以每月支付固定的费用。 管理员将许可证分配给订阅中的各个用户帐户。 对于图 2 中的示例，Contoso 公司订阅了具有 100 个许可证的 Office 365 E5，允许最多 100 个单个用户帐户使用 Microsoft 365 E5 的功能和服务。
+对于 Microsoft 的 SaaS 云服务，许可证允许特定用户帐户使用云产品的服务。作为订阅的一部分，你可以每月支付固定的费用。管理员将许可证分配给订阅中的各个用户帐户。对于图 2 中的示例，Contoso 公司订阅了具有 100 个许可证的 Office 365 E5，允许最多 100 个单个用户帐户使用 Microsoft 365 E5 的功能和服务。
   
 **图 2：组织基于 SaaS 的订阅内的许可证**
 
@@ -78,7 +78,7 @@ ms.locfileid: "51604317"
   
 ### <a name="user-accounts"></a>用户帐户
 
-所有 Microsoft 云服务的用户帐户均存储在 Active Directory (Azure AD) 租户中，其中包含用户帐户和组。 通过使用基于 Windows 服务器的服务 Azure AD Connect，Azure AD 租户可与你现有的 Active Directory 域服务 (AD DS) 帐户同步。 这叫做目录同步。
+所有 Microsoft 云服务的用户帐户均存储在 Active Directory (Azure AD) 租户中，其中包含用户帐户和组。通过使用基于 Windows 服务器服务的 Azure AD Connect，Azure AD 租户可与你现有的 Active Directory 域服务 (AD DS) 帐户同步。这叫做目录同步。
   
 图 3 显示了某个组织使用包含组织帐户的常见 Azure AD 租户进行多个订阅的示例。
   
@@ -88,11 +88,11 @@ ms.locfileid: "51604317"
   
 ### <a name="tenants"></a>租户
 
-对于 SaaS 云服务，租户是承载提供云服务的服务器的区域位置。 例如，Contoso 公司选择欧洲地区为其巴黎总部的 15,000 名工作人员托管其 Microsoft 365、EMS 和 Dynamics 365 订阅。
+对于 SaaS 云服务，租户是承载提供云服务的服务器的区域位置。例如，Contoso 公司选择欧洲地区为其巴黎总部的 15,000 名工作人员托管其 Microsoft 365、EMS 和 Dynamics 365 订阅。
   
 Azure PaaS 服务和在 Azure IaaS 中托管的基于虚拟机的工作负荷可以在世界范围内的任何 Azure 数据中心拥有租户。在创建 Azure PaaS 应用或服务或 IaaS 工作负荷的元素时，应指定 Azure 数据中心（称为位置）。
   
-Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 365 或 Dynamics 365 的付费或试用版订阅包括免费的 Azure AD 租户。 此 Azure AD 租户不包括其他 Azure 服务，且与 Azure 试用版或付费订阅不同。
+Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Microsoft 365 或 Dynamics 365 的付费或试用版订阅包括免费的 Azure AD 租户。此 Azure AD 租户不包括其他 Azure 服务，且与 Azure 试用版或付费订阅不同。
   
 ### <a name="summary-of-the-hierarchy"></a>层次结构的摘要
 
@@ -120,7 +120,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
     
   - 常见 Azure AD 租户中的组织的用户帐户。
     
-多个 Microsoft 云服务订阅可使用同一 Azure AD 租户作为通用标识提供程序。 包含本地 AD DS 的同步帐户的中心 Azure AD 租户可为组织提供基于云的标识即服务 (IDaaS)。 
+多个 Microsoft 云服务订阅可使用同一 Azure AD 租户作为通用标识提供程序。包含本地 AD DS 的同步帐户的中心 Azure AD 租户可为组织提供基于云的标识即服务 (IDaaS)。 
   
 **图 4：适用于组织的同步本地帐户和 IDaaS**
 

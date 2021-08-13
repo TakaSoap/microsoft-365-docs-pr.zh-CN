@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 大致了解邮件Microsoft 365及其在跟踪新功能和已更改的功能以及其他重要通知中的角色。
-ms.openlocfilehash: 302ae9aef9669d8eb567680f5d96acf5b0c32009
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ec011330541e9b1c03ba5bb12f3e41645ace5abdecba4de357906e93f9cbfc37
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825102"
 ---
 # <a name="message-center"></a>消息中心
 
@@ -189,7 +189,7 @@ ms.locfileid: "53392535"
 
 ### <a name="display-messages-in-your-preferred-language"></a>以你的首选语言显示消息
   
-我们使用机器翻译以你的首选语言自动显示消息。 阅读 [消息中心帖子的语言](language-translation-for-message-center-posts.md) 翻译，详细了解如何设置语言。
+我们使用机器翻译自动以首选语言显示信息。 有关如何设置语言的详细信息，请阅读[消息中心帖子的语言翻译](language-translation-for-message-center-posts.md)。
   
 > [!NOTE]
 > 每周摘要和通过电子邮件发送的任何帖子以仅英文发送。 收件人[可以使用适用于 outlook 的翻译工具首选](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa)语言阅读邮件。
@@ -304,6 +304,6 @@ ms.locfileid: "53392535"
 
 ## <a name="related-content"></a>相关内容
 
-[设置标准发布选项或定向发布 (](../manage/release-options-in-office-365.md) 文章) \
+[设置标准发布或目标发布选项](../manage/release-options-in-office-365.md)（文章\）
 [管理Office新功能在](../manage/show-hide-new-features.md)新增功能 (中) \
 [商业版订阅和帐单文档 (](../../commerce/index.yml) 链接页) 

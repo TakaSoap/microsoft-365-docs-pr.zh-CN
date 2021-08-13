@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 22ba0539233923224d920489b9e5bf04f65c692b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 836f3974da913dc27010cbc8d3162f35618e123e1c596dac42d9bf5e24863da3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817203"
 ---
 # <a name="indicator-resource-type"></a>指示器资源类型
 
@@ -52,22 +52,22 @@ ms.locfileid: "53649079"
 
 属性|类型|说明
 :---|:---|:---
-id|字符串|Indicator [实体的](ti-indicator.md) 标识。
-indicatorValue|字符串|指示器 [的值](ti-indicator.md)。
+id|String|Indicator [实体的](ti-indicator.md) 标识。
+indicatorValue|String|指示器 [的值](ti-indicator.md)。
 indicatorType|枚举|指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。
-应用程序|字符串|与指示器关联的应用程序。
+应用程序|String|与指示器关联的应用程序。
 action|枚举|如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。
 sourceType|枚举|"用户"（如果由用户创建的指示器 (例如，从门户) ，"AadApp"，以防它通过 API 使用自动应用程序提交。
-source|字符串|提交指示器的用户/应用程序的名称。
+source|string|提交指示器的用户/应用程序的名称。
 createdBy|String|提交指示器的用户/应用程序的唯一标识。
-lastUpdatedBy|字符串|上次更新指示器的用户/应用程序的标识。
+lastUpdatedBy|String|上次更新指示器的用户/应用程序的标识。
 creationTimeDateTimeUtc|DateTimeOffset|创建指示器的日期和时间。
 expirationTime|DateTimeOffset|指示器的过期时间。
 lastUpdateTime|DateTimeOffset|上次更新指示器的时间。
 severity|枚举|指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。
 title|String|指示器标题。
-说明|字符串|指示器的说明。
-recommendedActions|字符串|指示器的建议操作。
+说明|String|指示器的说明。
+recommendedActions|String|指示器的建议操作。
 rbacGroupNames|字符串列表|RBAC 设备组名称，其中指示器已公开且处于活动状态。 空列表，以防它向所有设备公开。
 
 ## <a name="json-representation"></a>Json 表示形式

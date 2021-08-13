@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
-ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
+ms.openlocfilehash: b1cb2b9f7a9f3feddc86fdd5eda5323f5459b427412e334044433f589a85f594
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53347903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833383"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 

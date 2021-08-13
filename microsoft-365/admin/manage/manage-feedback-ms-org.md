@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 517a8ebc080c33399a018e666de9b7f81d50b98d075cc6e67891123611cdacda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825215"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>为组织管理 Microsoft 反馈
 

@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 了解如何从通过保护策略管理的设备上删除公司数据，以及将Windows 10重置为出厂设置。
-ms.openlocfilehash: 2bb982d0530c47270b0edb230d08b80b5edc2706
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e806ed42009e7ce399d59be8392d9267ce383a95e1134bd06d6169e49a9fbb3a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809324"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>使用安全管理设备Microsoft 365 商业高级版
 

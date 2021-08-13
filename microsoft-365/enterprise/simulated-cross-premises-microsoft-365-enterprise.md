@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为 Microsoft 365 测试环境。
-ms.openlocfilehash: 545cce668df66b594de6b45ddd506b87afcf44ac
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 35284ad032539304293db8f9c678bbe2d30179af370bb0cf81d2081bdf4e2976
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926028"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794786"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 测试环境中的模拟跨界虚拟网络
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
 本文逐步介绍了如何使用两个 Azure 虚拟网络来创建 Microsoft Azure 模拟混合云环境。下面是生成的配置。 
   
@@ -59,12 +59,12 @@ ms.locfileid: "50926028"
 > [!NOTE]
 > 此配置需要付费的 Azure 订阅。 
 
-可以使用生成的环境通过其他测试实验室指南或自行测试 Microsoft [365](https://www.microsoft.com/microsoft-365/enterprise)企业版的特性和功能[](m365-enterprise-test-lab-guides.md)。
+您可以使用生成的环境通过额外的测试实验室指南Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版的功能。 [](m365-enterprise-test-lab-guides.md)
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 转到 [Microsoft 365 企业](../downloads/Microsoft365EnterpriseTLGStack.pdf) 版测试实验室指南堆栈，直观映射到 Microsoft 365 企业版测试实验室指南堆栈中所有文章。
+> 转到 Microsoft 365 企业测试实验室指南[堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)，直观映射到 Microsoft 365 for enterprise Test Lab Guide 堆栈中所有文章。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 
@@ -205,7 +205,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 此时，你的模拟 Azure 混合云环境就可供测试了。
   
-现在，你已准备好试用 [Microsoft 365 企业版的其他功能](https://www.microsoft.com/microsoft-365/enterprise)。
+现在，你已准备好试用适用于企业的 Microsoft 365[功能](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>后续步骤
 

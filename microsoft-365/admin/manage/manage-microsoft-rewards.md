@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 如果启用了"将 AAD 与奖励链接"功能，则拥有个人 Microsoft 帐户的用户可以获得与工作搜索有关的 Microsoft 奖励点数。
-ms.openlocfilehash: 581a7a044ef1b3508591778c9da416ffc3afac2e
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 682bfb9e26ca81ac76f147ce53f3ff92bae1ec47e3b91babcdfde6bf6acab4fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825075"
 ---
 # <a name="manage-microsoft-rewards"></a>管理 Microsoft 奖励
 
@@ -36,7 +36,7 @@ ms.locfileid: "52779658"
 
 ## <a name="related-content"></a>相关内容
 
-[设置 Microsoft 搜索](/microsoftsearch/setup-microsoft-search) (文章) 
+[设置Microsoft 搜索 (](/microsoftsearch/setup-microsoft-search)文章) 
 
 [支持在家工作的安全团队的 12](../../security/top-security-tasks-for-remote-work.md) 大 (文章) 
 

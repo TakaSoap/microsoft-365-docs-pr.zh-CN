@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: 设置租户租户的Microsoft 365。
-ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53464029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794710"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>租户的租户Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "53464029"
 
 在确保优化网络以同时针对本地和远程工作人员访问 Microsoft 365 后，下一项重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
 
-### <a name="plan"></a>套餐
+### <a name="plan"></a>计划
 
 若要规划租户实施，请执行：
 

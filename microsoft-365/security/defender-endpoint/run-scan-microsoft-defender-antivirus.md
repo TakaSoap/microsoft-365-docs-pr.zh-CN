@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b2910f9fe1c49178b8696d1a421248156b0fc4c2
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a39d62d2c0ff0cf4ac4257100bd1acccdb3a178a84ed5235f8ac4e0b2719f128
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833456"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>配置并运行按需 Microsoft Defender 防病毒软件扫描
 

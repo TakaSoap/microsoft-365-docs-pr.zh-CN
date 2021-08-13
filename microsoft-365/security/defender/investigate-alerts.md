@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: a9d8d2fe7fe26b90719502fffebaa96526a26d24207b49136e52373fc058d94b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799335"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ ms.locfileid: "53022660"
 - 类别
 - 检测源
 - 标记
-- 策略
+- Policy
 - 影响的资产
 
 ## <a name="analyze-an-alert"></a>分析警报

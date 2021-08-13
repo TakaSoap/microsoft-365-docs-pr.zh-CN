@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 将域控制的用户与Microsoft 365同步。
-ms.openlocfilehash: b477b8a1f35a790d6c49937c973c141ad9f90ad4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 468fa943df55b12573f0a4f595294e39a146b1850f3c430ac2088a30991c0e60
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809304"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>将域用户同步到 Microsoft 365
 
