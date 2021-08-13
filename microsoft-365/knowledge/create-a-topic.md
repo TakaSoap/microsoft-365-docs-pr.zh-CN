@@ -14,12 +14,12 @@ ms.service: ''
 search.appverid: ''
 localization_priority: Normal
 description: 了解如何在"主题"中创建新Microsoft Viva主题。
-ms.openlocfilehash: 5b275741cad759348bc42ebb6bc7fe0d04199ea5
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 4f6ae1444770f26cdb2aff9c6b7516dc2b9e14f0126bf2833e825f05c75dc779
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840564"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在"主题"Microsoft Viva主题
 
@@ -29,7 +29,7 @@ ms.locfileid: "53596298"
 > 虽然 AI 收集的主题中的信息是经过安全[](topic-experiences-security-trimming.md)修整的，但请注意，手动创建的主题中的主题说明和人员信息对有权查看该主题的所有用户可见。 
 
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 若要创建新主题，您需要：
 - 拥有 Viva 主题许可证。

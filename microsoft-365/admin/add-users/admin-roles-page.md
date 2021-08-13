@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理员角色映射到业务功能，并提供在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: 20ba46c94f94267df7117d4baf020bbdc21cad7c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 5e1555d022801eb59bf4a4996c12c95e25037efbde9314e1157b06fa793a1ae2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815922"
 ---
 # <a name="get-started-with-the-roles-page"></a>角色页面入门
 
@@ -101,5 +101,5 @@ ms.locfileid: "53394383"
 
 ## <a name="related-content"></a>相关内容
 
-[关于Microsoft 365管理员角色](about-admin-roles.md) (文章) \
+[关于 Microsoft 365 管理员角色](about-admin-roles.md)（文章）\
 [分配管理员角色](assign-admin-roles.md)（文章）

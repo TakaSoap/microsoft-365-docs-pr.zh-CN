@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户以及如何处理用户的电子邮件和内容OneDrive以及是否保留产品许可证。
-ms.openlocfilehash: 81dc71c6734340146e1dd13bcd59696eed5be202
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8fe01b286f59ea43f1e810f4e70422aeda140db803c76f8b7dafe04fa06953b1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815739"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -48,7 +48,7 @@ ms.locfileid: "53394347"
 
 在开始之前，考虑想要使用用户的电子邮件和内容OneDrive，以及是想要保留许可证还是停止支付许可证费用。
   
-|项目 | 说明 |
+|Item | 说明 |
 |:-----|:-----|
 |产品许可证  <br/> |你可以从用户中删除许可证，并从订阅中删除该许可证，以停止支付该许可证费用。 如果选择此选项，许可证将自动从订阅中删除。  <br/><br/> **如果通过合作伙伴或** 批量许可购买了许可证，则不能删除该许可证。 如果你为年度计划付费，或正在计费周期中，那么在承诺完成之前，你将无法从订阅中删除许可证。  <br/> |
 |OneDrive内容  <br/> |如果用户将文件保存到OneDrive，您可以授予其他用户对这些文件的访问权限。  <br/><br/> 你需要在为文件设置的保留期内移动OneDrive文件。 **默认情况下，保留期为 30 天。** 如果在删除用户后没有在保留期内移动文件，则OneDrive内容将被永久删除。 若要增加保留已删除帐户的 OneDrive 文件天数，请参阅为已删除OneDrive[设置保留时间](/onedrive/set-retention)。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则你无法擦除他们存储在其计算机中的文件。 他们将继续具有对从服务器同步的任何OneDrive。           |

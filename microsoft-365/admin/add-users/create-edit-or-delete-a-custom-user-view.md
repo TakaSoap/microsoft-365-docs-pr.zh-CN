@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器在自定义视图中创建、编辑或删除Microsoft 365。
-ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 41cba32be3ee1e452462a398d5c7f0cc5a632061b4ce64ed3594d82f69887b68
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815823"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>创建、编辑或删除自定义用户视图
 
@@ -131,7 +131,7 @@ ms.locfileid: "52683219"
 
 ## <a name="related-content"></a>相关内容
 
-[管理中心Microsoft 365视频](../../business-video/admin-center-overview.md) (概述) \
+[视频Microsoft 365 管理中心 (](../../business-video/admin-center-overview.md)概述) \
 [关于管理员角色](../add-users/about-admin-roles.md) (视频) \
 [自定义Microsoft 365主题， (](../setup/customize-your-organization-theme.md)文章) 
 

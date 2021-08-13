@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 具有有效工作或学校帐户的用户可以Cortana符合Microsoft 365安全承诺Office 365体验。
-ms.openlocfilehash: 06df3e6cbb700971f8429dd99ed1dc9f9c247949
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f81fd357ec69a8cf50c2f55875a65b61b0f7d9348662f8c0c1f8f11864419630
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824188"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana Microsoft 365
 

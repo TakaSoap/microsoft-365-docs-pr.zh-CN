@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取Microsoft 365，以便你可以保护你的市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: a26d58a56167fd3147664e7867ba20090f881fa616f78a6cf439a11407efb561
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856387"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>获取Microsoft 365活动信息
 

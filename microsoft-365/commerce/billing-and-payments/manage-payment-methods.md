@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，购买 Microsoft 的业务产品或服务。
 ms.date: 04/02/2021
-ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6996108fa3a1a9f945be1e1e26c574cd559054dbcb5998d94ba09299c93e5c7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856375"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 

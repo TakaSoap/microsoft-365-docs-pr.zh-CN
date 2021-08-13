@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 本文概述了在 Microsoft 云中用于保护客户数据安全的各种形式的加密。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d05c904fc70d02d8694b8f2d3b451fd1d51dc91
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a253f5fb0df4f71c47aa0c64bd5bfb48ef874c2b1de4d92de245bb2962c3dc7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53807728"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft 云中的加密
 
@@ -44,11 +44,11 @@ Microsoft 通过每个新版本的 Windows 操作系统验证云服务中使用�
 
 - Azure 和 Azure 美国政府
 - Dynamics 365 和 Dynamics 365 美国政府
-- Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense
+- Office 365、Office 365 美国政府版和 Office 365 美国政府国防部版
 
-静态客户数据的加密由多种服务端技术提供，包括 BitLocker、DKM、Azure 存储 Service Encryption 以及 Exchange Online、Skype for Business、OneDrive for Business 和 SharePoint Online 中的服务加密。 Office 365服务加密包括使用存储在 Azure Key Vault 中的客户管理的加密密钥的选项。 此客户管理的密钥[选项称为客户](./customer-key-overview.md)密钥，可用于 Exchange Online、SharePoint Online、Skype for Business 和 OneDrive for Business。
+静态客户数据的加密由多种服务端技术提供，包括 Exchange Online、Skype for Business、OneDrive for Business 和 SharePoint Online 中的 BitLocker、DKM、Azure 存储 服务加密和服务加密。 Office 365服务加密包括使用存储在 Azure Key Vault 中的客户管理的加密密钥的选项。 此客户管理的密钥[选项称为客户](./customer-key-overview.md)密钥，可用于 Exchange Online、SharePoint Online、Skype for Business 和 OneDrive for Business。
 
-对于传输中的客户数据，Office 365默认情况下使用 TLS 与客户端计算机协商安全会话，以确保客户数据的安全。 例如，Office 365 Web Skype for Business、Outlook 和 Outlook 浏览器上协商安全会话。
+对于传输中的客户数据，Office 365默认情况下使用 TLS 与客户端计算机协商安全会话，以确保客户数据的安全。 例如，Office 365将协商安全会话Skype for Business、Outlook和 Outlook 网页版、移动客户端和 Web 浏览器。
 
  (默认情况下，所有面向客户的服务器都协商 TLS 1.2。) 
 

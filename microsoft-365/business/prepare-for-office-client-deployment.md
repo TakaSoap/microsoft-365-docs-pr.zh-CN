@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 了解如何在计算机中自动安装 32 Office应用Windows 10保持更新。
-ms.openlocfilehash: 843be426d817da1173769b3b66dc4c054179f0fd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 134d5f2918e3f28c2025b282b9ae0325b64fe0474ae8123d0637bb43c4730c55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803540"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>准备Office企业部署Microsoft 365部署客户端
 
@@ -53,7 +53,7 @@ ms.locfileid: "52924219"
   
 电脑属于以下情况的最终用户：
   
-- **拥有** Windows 10 商业版用户许可证、Microsoft 365企业版许可证Windows 10创意者更新，并加入 Azure Active Directory。 
+- **拥有** Windows 10 商业版许可证、Microsoft 365许可证的活动用户、Windows 10 创意者更新并加入Azure Active Directory。 
     
 - **没有 64** 位应用Office示例 (Word、Excel、PowerPoint) 。 如果需要 64 位 Office 应用，则此功能不适合，因为不支持从 Microsoft 365 商业版管理控制台触发 64 位 2016 即点即用版本的 Office。 
     

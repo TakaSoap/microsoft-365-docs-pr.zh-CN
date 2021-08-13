@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d842c715071792e5c86272d3624e340288d71d9b
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 85c50b0a7e2fc2e38bb2b956a800ca349609139ab75aa30fe8d20f2f28b2abed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53618867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806900"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>通过 Chef 在 Linux 上部署 Defender for Endpoint
 

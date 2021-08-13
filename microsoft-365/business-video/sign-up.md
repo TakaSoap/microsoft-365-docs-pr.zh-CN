@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何注册之前称为Microsoft 365 商业高级版 (的Microsoft 365 商业版) 。
-ms.openlocfilehash: 998c1ad6a7ed30adb0d6beb9ebb7762dec8a8485
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 了解如何注册之前称为 Microsoft 365 商业高级版 (Business Microsoft 365) 。
+ms.openlocfilehash: c0ff8a92e240c7b00b505fcd6acacff9c802c81ab7a3ee1be9ed62b9bd2e4a12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706482"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803526"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>注册 Microsoft 365 商业高级版 订阅
 
@@ -35,7 +35,7 @@ ms.locfileid: "52706482"
 
 ## <a name="try-it"></a>试一试！
 
-按照以下步骤注册之前Microsoft 365 商业高级版 (注册Microsoft 365 商业版) ：
+按照以下步骤注册之前Microsoft 365 商业高级版 (商业Microsoft 365) ：
 
 1. 若要注册Microsoft 365 商业高级版，请在线搜索并选择它。
 2. 选择 **"对于企业**"，然后选择"**立即购买"。**
@@ -47,4 +47,4 @@ ms.locfileid: "52706482"
 8. 输入用户数，选择计费计划，然后选择下一  **步**。
 9.  输入你的公司&#39;地址，然后输入下一  **步**。
 10. 输入你的信用卡信息，然后  **下订单**。 片刻后，将创建你的帐户。
-11. 此时，可以选择 **"继续设置** 帐户"，也可以登录管理中心Microsoft 365完成设置。
+11. 此时，可以选择"继续 **设置帐户**"，也可以登录Microsoft 365 管理中心完成设置。

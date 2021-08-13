@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
 description: 删除用户的帐户时，请遵循Microsoft 365清单。
-ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5ea562e45b16a47272c4dfffcd4d30d135e191c195f2b3a8b8d1f70beeb9849d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824151"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>快速帮助：已删除的用户清单
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以在添加多个用户时创建并使用模板来节省时间和标准化设置。
-ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ff111850cf0dabda464653bc7503622d92e8468a430eb27a3dd2843f6ec5ade5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815835"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
 

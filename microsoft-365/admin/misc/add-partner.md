@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 在购买时添加记录合作伙伴Microsoft 365更改合作伙伴，或者从订阅中删除合作伙伴。
-ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 39e4ff5b996841815a4ae113bc3c3211a5984dadf15c4515aa37d336864d4dea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824307"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -106,7 +106,7 @@ ms.locfileid: "53393855"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在 **"产品** "选项卡上，选择要编辑的订阅。
 3. 在订阅详细信息页面的"**合作伙伴信息"下**，键入 **合作伙伴网络 ID。** 你可以向合作伙伴询问，获取合作伙伴的 Microsoft 合作伙伴网络 ID。
-4. 选择“**添加**”。
+4. 选择 **添加**。
 
 ::: moniker-end
 
@@ -152,7 +152,7 @@ ms.locfileid: "53393855"
 ::: moniker-end
 2. 在订阅详细信息页面的"合作伙伴信息"**下，** 选择"删除 **"。**
 3. 键入 **新合作伙伴的 Microsoft** 合作伙伴网络 ID。 可询问合作伙伴获得合作伙伴的 Microsoft 合作伙伴 ID。
-4. 选择“**添加**”。
+4. 选择 **添加**。
   
 ## <a name="view-your-partner-relationships"></a>查看你的合作伙伴关系
 

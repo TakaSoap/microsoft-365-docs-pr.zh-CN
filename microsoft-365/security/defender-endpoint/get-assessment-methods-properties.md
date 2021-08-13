@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3f37ec12b7e54e0241e66def76d9ed2d6892b7a7
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2d2e2e53061353a4035675c6e24b8dcc19900f672a159d13fe1277bed0393461
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53806984"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>导出每个设备的评估方法和属性
 
@@ -79,22 +79,22 @@ ConfigurationId|string|特定配置的唯一标识符
 ConfigurationImpact|string|配置对总体配置评分的影响程度 (1-10)
 ConfigurationName|string|配置的显示名称
 ConfigurationSubcategory|string|配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。
-DeviceId|字符串|服务中设备的唯一标识符。
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。
+DeviceId|string|服务中设备的唯一标识符。
+DeviceName|string|设备的完全限定 (FQDN) FQDN。
 IsApplicable|bool|指示配置或策略是否适用
 IsCompliant|bool|指示是否正确配置了配置或策略
 IsExpectedUserImpact|bool|指示是否将应用配置时影响用户
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
-RecommendationReference|字符串|对此软件相关建议 ID 的引用。
-Timestamp|字符串|上次在设备上看到配置的时间
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
+RecommendationReference|string|对此软件相关建议 ID 的引用。
+Timestamp|string|上次在设备上看到配置的时间
 
 ### <a name="13-properties-via-files"></a>1.3 属性 (文件) 
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表。
-GeneratedTime|字符串|导出的生成时间。
+GeneratedTime|string|导出的生成时间。
 
 ## <a name="2-export-software-inventory-assessment"></a>2. 导出软件清单评估
 
@@ -111,27 +111,27 @@ GeneratedTime|字符串|导出的生成时间。
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
-DeviceId|字符串|服务中设备的唯一标识符。
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。
+DeviceId|string|服务中设备的唯一标识符。
+DeviceName|string|设备的完全限定 (FQDN) FQDN。
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。
-EndOfSupportDate|字符串|此软件支持已结束或将终止的日期。
-EndOfSupportStatus|字符串|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。
+EndOfSupportDate|string|此软件支持已结束或将终止的日期。
+EndOfSupportStatus|string|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。
 Id|string|记录的唯一标识符。
 NumberOfWeaknesses|int|此设备上此软件上漏洞的数量
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
 RegistryPaths|Array[string]|注册表证据，表明产品已安装在设备中。
-SoftwareFirstSeenTimestamp|字符串|首次在设备上看到此软件。
-SoftwareName|字符串|软件产品的名称。
-SoftwareVendor|字符串|软件供应商的名称。
-SoftwareVersion|字符串|软件产品的版本号。
+SoftwareFirstSeenTimestamp|string|首次在设备上看到此软件。
+SoftwareName|string|软件产品的名称。
+SoftwareVendor|string|软件供应商的名称。
+SoftwareVersion|string|软件产品的版本号。
 
 ### <a name="23-properties-via-files"></a>2.3 属性 (文件) 
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表。
-GeneratedTime|字符串|导出的生成时间。
+GeneratedTime|string|导出的生成时间。
 
 ## <a name="3-export-software-vulnerabilities-assessment"></a>3. 导出软件漏洞评估
 
@@ -149,58 +149,58 @@ GeneratedTime|字符串|导出的生成时间。
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
-CveId|字符串|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。
-CvssScore|字符串|CVE 的 CVSS 分数。
-DeviceId|字符串|服务中设备的唯一标识符。
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。
+CveId|string|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。
+CvssScore|string|CVE 的 CVSS 分数。
+DeviceId|string|服务中设备的唯一标识符。
+DeviceName|string|设备的完全限定 (FQDN) FQDN。
 DiskPaths|数组 \[ 字符串\]|表明产品已安装在设备的磁盘证据。
-ExploitabilityLevel|字符串|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
-FirstSeenTimestamp|字符串|首次在设备上看到此产品的 CVE 时。
+ExploitabilityLevel|string|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
+FirstSeenTimestamp|string|首次在设备上看到此产品的 CVE 时。
 Id|string|记录的唯一标识符。
-LastSeenTimestamp|字符串|上次在设备上看到 CVE 的时间。
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
-RecommendationReference|字符串|对此软件相关建议 ID 的引用。
-RecommendedSecurityUpdate|字符串|软件供应商提供的用于解决漏洞的安全更新的名称或说明。
-RecommendedSecurityUpdateId|字符串|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章
+LastSeenTimestamp|string|上次在设备上看到 CVE 的时间。
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
+RecommendationReference|string|对此软件相关建议 ID 的引用。
+RecommendedSecurityUpdate|string|软件供应商提供的用于解决漏洞的安全更新的名称或说明。
+RecommendedSecurityUpdateId|string|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章
 注册表路径 数组 \[ 字符串\]|注册表证据，表明产品已安装在设备中。
-SoftwareName|字符串|软件产品的名称。
-SoftwareVendor|字符串|软件供应商的名称。
-SoftwareVersion|字符串|软件产品的版本号。
-VulnerabilitySeverityLevel|字符串|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。
+SoftwareName|string|软件产品的名称。
+SoftwareVendor|string|软件供应商的名称。
+SoftwareVersion|string|软件产品的版本号。
+VulnerabilitySeverityLevel|string|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。
 
 ### <a name="33-properties-via-files"></a>3.3 属性 (文件) 
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表。
-GeneratedTime|字符串|导出的生成时间。
+GeneratedTime|string|导出的生成时间。
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 delta (JSON 响应列表的属性) 
 
 属性 (ID) |数据类型|说明
 :---|:---|:---
-CveId |字符串|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。
-CvssScore|字符串|CVE 的 CVSS 分数。
-DeviceId|字符串|服务中设备的唯一标识符。
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。
+CveId |string|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。
+CvssScore|string|CVE 的 CVSS 分数。
+DeviceId|string|服务中设备的唯一标识符。
+DeviceName|string|设备的完全限定 (FQDN) FQDN。
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。
-EventTimestamp|字符串|找到此 delta 事件的时间。
-ExploitabilityLevel|字符串|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
-FirstSeenTimestamp|字符串|首次在设备上看到此产品的 CVE 时。
+EventTimestamp|String|找到此 delta 事件的时间。
+ExploitabilityLevel|string|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) 
+FirstSeenTimestamp|string|首次在设备上看到此产品的 CVE 时。
 Id|string|记录的唯一标识符。  
-LastSeenTimestamp|字符串|上次在设备上看到 CVE 的时间。
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
-RecommendationReference|字符串|对此软件相关建议 ID 的引用。
-RecommendedSecurityUpdate |字符串|软件供应商提供的用于解决漏洞的安全更新的名称或说明。
-RecommendedSecurityUpdateId |字符串|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章
+LastSeenTimestamp|string|上次在设备上看到 CVE 的时间。
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。
+RecommendationReference|string|对此软件相关建议 ID 的引用。
+RecommendedSecurityUpdate |string|软件供应商提供的用于解决漏洞的安全更新的名称或说明。
+RecommendedSecurityUpdateId |string|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章
 RegistryPaths |Array[string]|注册表证据，表明产品已安装在设备中。
-SoftwareName|字符串|软件产品的名称。
-SoftwareVendor|字符串|软件供应商的名称。
-SoftwareVersion|字符串|软件产品的版本号。
-状态|字符串|**新建**   (设备上引入的新漏洞的) 。 **Fixed**   (设备上不再存在的漏洞，这意味着已) 。 **已更新**   (已更改的设备上发现漏洞。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。
-VulnerabilitySeverityLevel|字符串|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。
+SoftwareName|string|软件产品的名称。
+SoftwareVendor|string|软件供应商的名称。
+SoftwareVersion|string|软件产品的版本号。
+状态|String|**新建**   (设备上引入的新漏洞的) 。 **Fixed**   (设备上不再存在的漏洞，这意味着已) 。 **已更新**   (已更改的设备上发现漏洞。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。
+VulnerabilitySeverityLevel|string|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。
 
 ## <a name="see-also"></a>另请参阅
 
