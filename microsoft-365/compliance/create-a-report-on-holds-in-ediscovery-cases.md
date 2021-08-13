@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何生成包含与电子数据展示事例关联的所有保留的信息的报告。
-ms.openlocfilehash: 04282f6f2481d892fa16d685936efeec55feae77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70895e07b652054e27cb382267da003c99d2e7a2a1d6a6c0c557e0bbc25ce635
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802488"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
 
@@ -43,7 +43,7 @@ ms.locfileid: "50908406"
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤 1：连接安全与合规& PowerShell
 
-第一步是连接到组织&安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+第一步是为组织连接到安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步骤 2：运行脚本以报告与电子数据展示事例关联的保留
 
@@ -162,7 +162,7 @@ ms.locfileid: "50908406"
 
    ![运行脚本后的输出CaseHoldsReport.ps1脚本](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 在运行本文中的脚本时创建的保留报告包含有关每个保留的以下信息。 如前所述，你必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关事例保留详细信息，请参阅 [电子数据展示事例](./get-started-core-ediscovery.md)。
 

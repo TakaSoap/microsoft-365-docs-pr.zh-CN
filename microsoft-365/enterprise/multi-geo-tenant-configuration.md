@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 在本文中，了解如何添加适用于 Microsoft 365 多地理位置租户的卫星位置和配置。
-ms.openlocfilehash: 9176c66e8d0aa7e893ef137131147f8e0c85d3ac
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 76b6b16a0673495abfe5ce920c7f916d37a43f619eacd1c4a2765989e639295b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794966"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 多地理位置租户配置
 
@@ -110,10 +110,10 @@ ms.locfileid: "50923644"
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive 设置和 PDL 效果
 
-如果用户已有在租户中创建的 OneDrive 网站，设置用户 PDL 不会自动移动他们的现有 OneDrive。 若要移动用户的 OneDrive，请参阅 [OneDrive for Business 地理位置移动](move-onedrive-between-geo-locations.md)。
+如果用户已有在租户中创建的 OneDrive 网站，设置用户 PDL 不会自动移动他们的现有 OneDrive。 若要移动用户的地理位置OneDrive，请参阅OneDrive for Business[地理位置移动。](move-onedrive-between-geo-locations.md)
 
 > [!NOTE]
-> 如果 PLD 发生更改且 MailboxRegion 不再与邮箱数据库地理位置代码匹配，Exchange Online 将自动重定位用户的邮箱。 有关详细信息，请参阅在多地理位置环境中管理 [Exchange Online 邮箱](./administering-exchange-online-multi-geo.md)。
+> Exchange Online PLD 发生更改且 MailboxRegion 不再与邮箱数据库地理位置代码匹配，则自动重定位用户的邮箱。 有关详细信息，请参阅[在多Exchange Online环境中管理邮箱](./administering-exchange-online-multi-geo.md)。
 
 如果用户在租户内没有 OneDrive 网站，将会根据用户的 PDL 值为他们预配 OneDrive，假定用户的 PDL 与公司的附属位置之一匹配。
 

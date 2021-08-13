@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，以从组织的人力资源部门导入员工数据， (HR) 系统Microsoft 365。 这样，你可以将 HR 数据用于内部风险管理策略，以帮助你检测特定用户可能对组织造成内部威胁的活动。
-ms.openlocfilehash: eb11eb5790ca9c585db8bbb95b41747a72e5c8f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 41838fae932dbe8c6d24388f5ce3b241a6742f0412fdb05435f2baf5702047c7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801985"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
-您可以在 Microsoft 365 合规中心中设置数据连接器，以导入与事件（如用户的变化或用户的工作级别变化）相关的人力资源 (HR) 数据。 然后，内部风险管理解决方案可以使用 HR[](insider-risk-management.md)数据生成风险指示器，以帮助你识别组织内部用户可能恶意活动或数据盗窃。
+您可以在 Microsoft 365 合规中心 中设置一个数据连接器，以导入与事件（如用户的变化或用户的工作级别变化）相关的人力资源 (HR) 数据。 然后，内部风险管理解决方案可以使用 HR[](insider-risk-management.md)数据生成风险指示器，以帮助你识别组织内部用户可能恶意活动或数据盗窃。
 
-为内部风险管理策略可用于生成风险指标的 HR 数据设置连接器包括创建一个包含 HR 数据的 CSV 文件、在 Azure Active Directory 中创建用于身份验证的应用程序、在 Microsoft 365 (合规中心创建 HR 数据连接器，然后按计划运行) 该脚本) 该脚本将 CSV 文件的 HR 数据导入到 Microsoft 云，以便它可用于内部风险管理解决方案。
+为内部风险管理策略可用于生成风险指标的 HR 数据设置连接器包括创建一个包含 HR 数据的 CSV 文件、在 Azure Active Directory 中创建用于身份验证的应用程序、在 Microsoft 365 合规中心 中创建 HR 数据连接器，然后按计划运行脚本 () 该脚本将 CSV 文件的 HR 数据导入到 Microsoft 云，以便它可用于内部风险管理解决方案。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 确定哪些 HR 方案和数据要导入Microsoft 365。 这将帮助你确定需要创建的 CSV 文件和 HR 连接器的个数，以及如何生成和构建 CSV 文件。 导入的 HR 数据由要实施的内部风险管理策略确定。 有关详细信息，请参阅步骤 1。
 
@@ -53,14 +53,14 @@ ms.locfileid: "50911372"
 
 |  策略模板 |  HR 数据类型 |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
-| 通过离职用户窃取数据                   | 员工员工                                                 |
+| 离职用户窃取数据                   | 员工员工                                                 |
 | 常规数据泄露                              | 不适用                                                        |
-| 按优先级用户的数据泄露                    | 不适用                                                        |
-| 解除限制的用户泄露数据                 | 作业级别更改、绩效考核、绩效改进计划 |
-| 常规安全策略违反              | 不适用                                                        |
-| 离开用户违反安全策略   | 员工员工                                                 |
-| 优先级用户违反安全策略    | 不适用                                                        |
-| 解除限制的用户违反安全策略 | 作业级别更改、绩效考核、绩效改进计划 |
+| 优先用户的数据泄露                    | 不适用                                                        |
+| 心怀不满用户的数据泄露活动                 | 作业级别更改、绩效考核、绩效改进计划 |
+| 违反常规安全策略              | 不适用                                                        |
+| 离职用户的安全策略违规活动   | 员工员工                                                 |
+| 优先用户的安全策略违规    | 不适用                                                        |
+| 心怀不满员工的安全策略违规活动 | 作业级别更改、绩效考核、绩效改进计划 |
 | 邮件中的冒犯性语言                     | 不适用                                                        |
 
 有关内部风险管理的策略模板详细信息，请参阅 [预览体验成员风险管理策略](insider-risk-management-policies.md#policy-templates)。
@@ -211,7 +211,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤 3：创建 HR 连接器
 
-下一步是在合规中心内Microsoft 365 HR 连接器。 在步骤 4 中运行脚本后，您创建的 HR 连接器将从 CSV 文件将 HR 数据导入Microsoft 365组织。 创建连接器之前，请确保您具有 HR 方案的列表以及每个方案对应的 CSV 列名称。 配置连接器时，您必须将每个方案所需的数据映射到 CSV 文件中的实际列名称。 或者，您可以在配置连接器时上载示例 CSV 文件，向导将帮助您将列的名称映射到所需的数据类型。
+下一步是在应用程序创建 HR Microsoft 365 合规中心。 在步骤 4 中运行脚本后，您创建的 HR 连接器将从 CSV 文件将 HR 数据导入Microsoft 365组织。 创建连接器之前，请确保您具有 HR 方案的列表以及每个方案对应的 CSV 列名称。 配置连接器时，您必须将每个方案所需的数据映射到 CSV 文件中的实际列名称。 或者，您可以在配置连接器时上载示例 CSV 文件，向导将帮助您将列的名称映射到所需的数据类型。
 
 完成此步骤后，请确保复制创建连接器时生成的作业 ID。 运行脚本时，将使用作业 ID。
 
@@ -233,7 +233,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    - **Upload示例文件**。 如果选择此选项，请单击"Upload文件"以上载在步骤 1 中准备的 CSV 文件。 此选项允许您从下拉列表中快速选择 CSV 文件的列名称，以将其映射到您之前选择的 HR 方案的数据类型。
 
-   OR
+   或
 
    - **手动提供映射详细信息**。 如果选择此选项，您必须在 CSV 文件中键入列的名称，以将它们映射到之前选择的 HR 方案的数据类型。
 
@@ -311,7 +311,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步骤 5：监视 HR 连接器
 
-创建 HR 连接器并运行脚本以上传 HR 数据后，可以查看该连接器，并上传Microsoft 365合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建 HR 连接器并运行脚本以上传 HR 数据后，可以查看该连接器，并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

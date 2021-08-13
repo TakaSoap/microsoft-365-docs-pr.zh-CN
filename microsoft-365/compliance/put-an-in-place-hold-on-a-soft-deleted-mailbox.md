@@ -14,12 +14,12 @@ ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何为软删除邮箱创建就地保留，以将其变为非活动邮箱并保留其内容。
-ms.openlocfilehash: d72a5407bfafabed30466447e404cdd4196678ae
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5c10a170f3c6e4d7d692be7719f9514e892f154cdc1ba1a021f45ab7c92eebf8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795814"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>将就地保留置于 Exchange Online 中的软删除邮箱上
 

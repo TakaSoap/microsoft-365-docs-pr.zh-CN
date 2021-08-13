@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 在案例使用通信Advanced eDiscovery发送、收集和跟踪合法保留通知。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 026670b9ed45f366ff3d711d8f2b2d0274be5a19
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8b33165e6d39a1829f99e0a0194bc7938b95b9600e2977dec920e0dbb97c56d9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802407"
 ---
 # <a name="create-a-legal-hold-notice"></a>创建法定保留通知
 
@@ -91,7 +91,7 @@ ms.locfileid: "53227099"
 
 4. 指定要向保管人提供的内容或其他 (所需的) 。 在步骤 2 中定义的门户内容将添加到发布通知的末尾。
 
-5. 单击“**保存**”。
+5. 单击 **保存**。
 
 ### <a name="re-issuance-notification"></a>Re-Issuance通知
 
@@ -107,7 +107,7 @@ ms.locfileid: "53227099"
 
 4. 指定要向保管人提供的内容或其他 (所需的) 。 步骤 2 中定义的门户内容将添加到重新发布通知的末尾。
 
-5. 单击“**保存**”。
+5. 单击 **保存**。
 
 > [!NOTE]
 > 如果修改门户内容 (编辑通信向导) 中的"定义门户内容"页上的"定义门户内容"页上，则重新发布通知将自动发送给分配给通知的所有保管人。 发送通知后，将要求保管人重新确认其保留通知。 如果已设置任何提醒或升级工作流，这些工作流也将重新开始。 有关其他哪些案例管理事件触发通信的信息，请参阅 [触发通知的事件](#events-that-trigger-notifications)。

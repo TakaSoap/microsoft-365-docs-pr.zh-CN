@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
-ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: e1c608425c25c018eddebe14023537b2739694d110d3683829c861dd96a61c73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795202"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 

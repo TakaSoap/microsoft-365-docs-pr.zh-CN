@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含适用于使用 Office 2007 或 Office 2010 的用户的资源，以帮助他们规划升级。
-ms.openlocfilehash: 65f635e5c6195222ef2e39898cb1da2ee0dc0df0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d93a1a00e2738d907fdfc9a9c9cad8a64f23519c647315166f093d424e7217b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53794926"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>计划升级自 Office 2007 或 Office 2010 服务器和客户端
 
@@ -83,7 +83,7 @@ Microsoft 365是一种以数字方式改变业务的方式，并不断改善由 
 
 - 如果你的组织购买了符合条件的许可证Microsoft 365数量，我们的 FastTrack 团队可以帮助你完成设置过程。 有关详细信息，请参阅[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)。
 
-- 如果你是小型组织的一部分，或者如果你想要自己处理组织的 Office 升级，请参阅将 Microsoft 365 商业版 用户升级到最新的[Office 客户端](/office365/admin/setup/upgrade-users-to-latest-office-client)。 
+- 如果你是小型组织的一部分，或者如果你想要自己处理组织的 Office 升级，请参阅将 Microsoft 365 商业版用户升级到最新的[Office 客户端](/office365/admin/setup/upgrade-users-to-latest-office-client)。 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>我是一位家庭用户。 我怎么办？
 
@@ -91,7 +91,7 @@ Microsoft 365是一种以数字方式改变业务的方式，并不断改善由 
 
 - **在Office中免费使用。** 在浏览器中创建、Office和编辑文件。 从任何具有 Internet 访问权限的设备获取对这些文件的访问权限。 
 
-  [Office web 版](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)包括 Word[网页](https://go.microsoft.com/fwlink/p/?linkid=746664)Excel、Excel网页[](https://go.microsoft.com/fwlink/p/?linkid=746665)、PowerPoint[网页](https://go.microsoft.com/fwlink/p/?linkid=746666)[](https://go.microsoft.com/fwlink/p/?linkid=746678)[OneNote、Sway、](https://go.microsoft.com/fwlink/p/?linkid=746675)[电子邮件](https://go.microsoft.com/fwlink/p/?linkid=746676)、日历和[OneDrive。](https://go.microsoft.com/fwlink/p/?linkid=746679) [](https://go.microsoft.com/fwlink/p/?linkid=746674) To get started， visit [Office.com](https://office.com) and sign in by using your [Microsoft account](https://account.microsoft.com/account). 如果你没有 Microsoft 帐户，可以在[Office.com 创建一个](https://office.com)。
+  [Office web 版](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)包括[](https://go.microsoft.com/fwlink/p/?linkid=746664)Word 网页版、Excel 网页版、PowerPoint 网页版、OneNote 网页版、Sway、[电子邮件](https://go.microsoft.com/fwlink/p/?linkid=746676)、[](https://go.microsoft.com/fwlink/p/?linkid=746666)[日历](https://go.microsoft.com/fwlink/p/?linkid=746678)[和OneDrive。](https://go.microsoft.com/fwlink/p/?linkid=746679) [](https://go.microsoft.com/fwlink/p/?linkid=746665) [](https://go.microsoft.com/fwlink/p/?linkid=746674) [](https://go.microsoft.com/fwlink/p/?linkid=746675) To get started， visit [Office.com](https://office.com) and sign in by using your [Microsoft account](https://account.microsoft.com/account). 如果你没有 Microsoft 帐户，可以在[Office.com 创建一个](https://office.com)。
 
 - **请尝试Microsoft 365 家庭版。** 开始试用[Microsoft 365 家庭版](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab)了解它是如何工作的。 使用Microsoft 365 家庭版，你将享受云存储与OneDrive。
 

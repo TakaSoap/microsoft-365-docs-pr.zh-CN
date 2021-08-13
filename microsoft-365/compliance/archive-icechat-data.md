@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器，以将数据从 ICE 聊天工具导入和存档到Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 958a6dde0a4f23933ef6328719fbf43265420c7c
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 0e2029f638611844fa2dba54241e11d9b743f802521615d7d4ea6f5865e2181d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077297"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802599"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>设置连接器以存档 ICE Chat 数据
 
-使用合规性中心中的本机连接器Microsoft 365 ICE 聊天协作工具导入和存档金融服务聊天数据。 设置和配置连接器后，它每天连接到组织的 ICE Chat 安全 FTP (SFTP) 站点一次，将聊天消息的内容转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的邮箱。
+使用会议工具中的本机连接器Microsoft 365 合规中心 ICE 聊天协作工具导入和存档金融服务聊天数据。 设置和配置连接器后，它每天连接到组织的 ICE Chat 安全 FTP (SFTP) 站点一次，将聊天消息的内容转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的邮箱。
 
 ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性功能（如诉讼保留、电子数据展示、存档、审核、通信合规性和 Microsoft 365 保留策略）应用到 ICE 聊天数据。 例如，您可以使用内容搜索来搜索 ICE Chat 消息，或将包含 ICE Chat 数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用 ICE 聊天连接器导入数据并存档数据Microsoft 365可帮助组织遵守政府及法规策略。
 
@@ -35,7 +35,7 @@ ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性�
 
 2. 每 24 小时一次，ICE 聊天中的聊天消息将复制到 ICE 聊天 SFTP 站点。
 
-3. 在 Microsoft 365 合规中心创建的 ICE 聊天连接器每天连接到 ICE 聊天 SFTP 网站，将聊天消息从过去 24 小时转移到 Microsoft 云中的安全 Azure 存储 位置。 连接器还会将聊天聊天者的内容转换为电子邮件格式。
+3. 在 Microsoft 365 合规中心 创建的 ICE 聊天连接器每天连接到 ICE Chat SFTP 网站，将聊天消息从过去 24 小时转移到 Microsoft 云中的安全 Azure 存储 位置。 连接器还会将聊天聊天者的内容转换为电子邮件格式。
 
 4. 连接器将聊天消息项目导入特定用户的邮箱。 在用户邮箱中创建 **一** 个名为 ICE Chat 的新文件夹，聊天消息项目将导入该文件夹。 连接器使用 *SenderEmail* 和 *RecipientEmail 属性的值* 实现。 每个聊天消息都包含这些属性，这些属性填充了聊天消息的发件人和每个收件人/参与者的电子邮件地址。
 
@@ -55,7 +55,7 @@ ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性�
 
 - ICE 聊天连接器在一天中总共可以导入 200，000 个项目。 如果 SFTP 网站上有 200，000 多个项目，则这些项均不会导入Microsoft 365。
 
-- 必须在步骤 3 (中为在步骤 3 中创建 ICE 聊天连接器且在步骤 1) 中下载公钥和 IP 地址的管理员分配邮箱导入导出Exchange Online。 若要在合规性中心的"数据连接器"页上添加 **连接器，Microsoft 365** 此角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 (中为在步骤 3 中创建 ICE 聊天连接器且在步骤 1) 中下载公钥和 IP 地址的管理员分配邮箱导入导出Exchange Online。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** 此Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="set-up-a-connector-using-public-keys"></a>使用公钥设置连接器
 
@@ -97,7 +97,7 @@ ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性�
 
 ### <a name="step-3-create-an-ice-chat-connector"></a>步骤 3：创建 ICE 聊天连接器
 
-最后一步是在合规性中心内Microsoft 365 ICE 聊天连接器。 连接器使用您提供的信息连接到 ICE Chat SFTP 网站，将聊天消息传输至 MICROSOFT 365 中的相应用户邮箱框。
+最后一步是在会议场中创建 ICE 聊天Microsoft 365 合规中心。 连接器使用您提供的信息连接到 ICE Chat SFTP 网站，将聊天消息传输至 MICROSOFT 365 中的相应用户邮箱框。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
@@ -162,7 +162,7 @@ ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性�
 
 ### <a name="step-2-create-an-ice-chat-connector"></a>步骤 2：创建 ICE 聊天连接器
 
-配置 ICE 聊天 SFTP 站点后，下一步是在合规性中心内Microsoft 365 ICE 聊天连接器。 连接器使用您提供的信息连接到 ICE Chat SFTP 站点，将电子邮件传输至 MICROSOFT 365 中的相应用户邮箱框。 若要完成此步骤，请确保具有用于设置 ICE 聊天 SFTP 网站的相同私钥和密钥密码的副本。
+配置 ICE 聊天 SFTP 站点后，下一步是在 ICE 聊天Microsoft 365 合规中心。 连接器使用您提供的信息连接到 ICE Chat SFTP 站点，将电子邮件传输至 MICROSOFT 365 中的相应用户邮箱框。 若要完成此步骤，请确保具有用于设置 ICE 聊天 SFTP 网站的相同私钥和密钥密码的副本。
 
 1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

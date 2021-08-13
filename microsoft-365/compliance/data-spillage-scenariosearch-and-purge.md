@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 5fb9e7a4a744bf05990634c433b6a5b56f21f94dea9b30326be7e124b926c8cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683771"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802070"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -87,7 +87,7 @@ ms.locfileid: "52683771"
   
 如果每个邮箱超过 1，000 个邮箱或 100 多封电子邮件要审阅，可以使用其他关键字或条件（如日期范围或发件人/收件人）将初始搜索划分为多个搜索，并单独查看每个搜索的结果。 请务必记下在步骤 [7](#step-7-permanently-delete-the-spilled-data)中删除邮件时将使用的所有搜索查询。
 
-如果为保管人或最终用户分配了一个 Office 365 E5 许可证，则使用 E5 许可证一次最多可以检查 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，并按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
+如果为保管人或最终用户分配了Office 365 E5许可证，则您可以使用此许可证同时检查最多 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，并按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
 
 当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定该邮件是否与外部共享。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便可以使用邮件跟踪日志。 此过程在步骤 [5 中介绍](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)。
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 使用 Office 365 高级邮件加密自定义品牌模板设置电子邮件的到期日期，以扩展电子邮件安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f936ffa62f31e47f51fc1bcb2765195b0ea809af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d5cc669a0aae02da413b0e288be9203743d29c20e0fcd870cb99b67154fdf66e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927782"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795838"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 

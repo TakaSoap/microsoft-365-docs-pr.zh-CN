@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 95712ea75b498c159d3a1d982f417a03d1d978a9d8529294522f25eb80cc6a65
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802546"
 ---
 # <a name="plan-for-communication-compliance"></a>通信合规性规划
 
@@ -42,7 +42,7 @@ ms.locfileid: "48131534"
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>规划调查和修正工作流
 
-选择专门的利益干系人，定期在合规中心 中监视和查看Microsoft 365[和案例](https://compliance.microsoft.com/)。 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
+选择专门的利益干系人，以定期监视和查看警报和事例[，Microsoft 365 合规中心。](https://compliance.microsoft.com/) 请务必了解如何将用户和利益干系人分配到组织中不同的通信合规性角色组。
 
 根据希望管理通信策略和警报方式，需要为管理员、审阅者和调查人员将用户分配到一个或多个角色组。 您可以选择将用户分配给特定角色组，以管理不同的通信合规性功能集。 或者，您可以决定将所有通信合规性用户分配给 Communication Compliance 角色组。 使用单个角色组或多个组以最适合合规性管理要求。
 

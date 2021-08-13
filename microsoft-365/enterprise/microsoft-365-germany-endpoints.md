@@ -20,18 +20,18 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 本文将介绍在德国使用 Office 365的终结点。
 hideEdit: true
-ms.openlocfilehash: 27d7b3c895cb3a8cae148262ce3962f03fb417aa
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 04a183bfbea22d189a45b8fba90f0fc1c28b1577e4b7e82e5f2a0703d5f6a5e2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795156"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
  *适用于：Office 365 Admin*
 
-Office 365需要连接到 Internet。 对于使用德国计划的客户，应Office 365 **终结点**。
+Office 365 要求连接到 Internet。 对于使用德国计划的客户，应Office 365 **终结点**。
 
 > [!NOTE]
 > 对于正在转换到德国新数据中心Microsoft 365的客户，终结点将发生变化。

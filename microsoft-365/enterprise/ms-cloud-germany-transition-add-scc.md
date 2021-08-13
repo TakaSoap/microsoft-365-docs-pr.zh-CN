@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移电子数据展示迁移步骤。
-ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d73a0bccf870999e63f9d05eaff796e7066a90240c45c7b93208fd715a0d2baa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795070"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移期间电子数据展示体验的信息
 以下各节提供有关从德国 Microsoft 云 (德国 microsoft 云迁移到新的德国数据中心) Office 365服务时电子数据展示体验的其他信息。
@@ -42,7 +42,7 @@ ms.locfileid: "52844246"
 - 按照从 SharePoint 或 OneDrive for Business OneDrive 下载文件和文件夹中的说明，直接从 SharePoint Online 或 SharePoint[下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要SharePoint联机管理员权限或只读权限。
 - 如果超出限制，如从 OneDrive 或[SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹中介绍，客户可以按照将 SharePoint 和 Teams 文件与计算机同步中的指导使用 OneDrive for Business 同步[客户端](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)。
 
-- 有关详细信息，请参阅 就地电子数据展示[中的Exchange Server。](/Exchange/policy-and-compliance/ediscovery/ediscovery)
+- 有关详细信息，请参阅[In-Place eDiscovery in Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery)。
 
 
 ## <a name="ediscovery-administration-after-phase-9"></a>第 9 阶段之后电子数据展示管理

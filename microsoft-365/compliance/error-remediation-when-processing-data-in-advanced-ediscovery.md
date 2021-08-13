@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何使用错误修正来更正Advanced eDiscovery可能会阻止正确处理内容的数据问题。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cd2d8e3f681f57c915b610f4771bdeb078fbc79ae3482f7dfacbbc9334697ad1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802131"
 ---
 # <a name="error-remediation-when-processing-data"></a>修正处理数据时出现的错误
 

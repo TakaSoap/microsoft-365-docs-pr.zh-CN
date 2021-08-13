@@ -1,5 +1,5 @@
 ---
-title: 使用组策略计划防病毒扫描
+title: 使用组策略安排防病毒扫描
 description: 使用组策略设置防病毒扫描
 keywords: 快速扫描， 完全扫描， 计划， 组策略， 防病毒
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6f6018ec8b514234ab4f98e3d5416b472ff88739
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 413f003150b41cea0fb63e4ecd486b7ea230d1a06c2a0d4890deb8b7c209dfcc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799714"
 ---
-# <a name="schedule-antivirus-scans-using-group-policy"></a>使用组策略计划防病毒扫描
+# <a name="schedule-antivirus-scans-using-group-policy"></a>使用组策略安排防病毒扫描
 
 **适用于：**
 

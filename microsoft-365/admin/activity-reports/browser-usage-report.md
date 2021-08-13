@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 了解如何使用 Microsoft 365 中的"报告"仪表板获取 Microsoft 浏览器Microsoft 365 管理中心。
-ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 7225b3b1d2c86dd917bc4cb69d2cf3ca398221619710e9f0268e9d861d8d261b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53798203"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365管理中心中的报告 - Microsoft 浏览器使用情况
 
@@ -41,7 +41,7 @@ ms.locfileid: "53377201"
 
 ![Microsoft 浏览器使用情况报告](../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png)
 
-|项目|说明|
+|Item|说明|
  |:-----|:-----|
  |1. <br/> |可查看 **Microsoft 浏览器使用情况** 报告，了解过去 7 天、30 天、90 天或 180 天的趋势。  <br/> |
  |2. <br/> |每个报告中的数据通常涵盖最近七天。 <br/> |

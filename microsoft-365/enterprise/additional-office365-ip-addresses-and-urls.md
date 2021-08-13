@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新终结点 Web 服务不包含特定应用场景的少量终结点。
 hideEdit: true
-ms.openlocfilehash: 76bfc947460d4c513207c3a53b2f4536282c65e1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9d653b706946158e1a4c4619e1e569ca200011d438eae2605cf5309efed1937a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795214"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务中未包含的其他终结点
 
@@ -59,9 +59,9 @@ ms.locfileid: "53289147"
 |8 |[Exchange 混合部署](/exchange/exchange-deployment-assistant)代理身份验证|客户本地 STS|入站服务器流量|
 |9 |用于使用 [Exchange 混合配置向导](/exchange/hybrid-configuration-wizard)来配置 [Exchange 混合](/exchange/exchange-deployment-assistant) <p> 注意：这些终结点仅用于配置 Exchange 混合|TCP 端口 80 和 443 上的 domains.live.com，仅用于 Exchange 2010 SP3 混合配置向导。 <p> GCC High，DoD IP 地址：40.118.209.192/32；168.62.190.41/32 <p> 全球商业 \* & GCC：.store.core.windows.net;asl.configure.office.com;tds.configure.office.com;mshybridservice.trafficmanager.net; <br> aka.ms/hybridwizard; <br> shcwreleaseprod.blob.core.windows.net/shcw/ \* ;|仅出站服务器流量|
 |10 |AutoDetect 服务用于 [Exchange 混合部署](/exchange/exchange-deployment-assistant)应用场景，可实现[适用于 iOS 和 Android 的 Outlook 的混合型新式验证](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <p> `*.acompli.net` <br> `*.outlookmobile.com` <br> `*.outlookmobile.us` <br> `52.125.128.0/20` <br> `52.127.96.0/23`|TCP 443 上的客户本地 Exchange 服务器|入站服务器流量|
-|11 |Exchange Azure AD 身份验证|*.msappproxy.net|TCP 出站服务器流量|
+|11|Exchange Azure AD 身份验证|*.msappproxy.net|TCP 出站服务器流量|
 |12 |Office 2016 中的 Skype for Business 包括使用 UDP 端口的基于视频的屏幕共享。Office 2013 和早期版本中的先前 Skype for Business 客户端使用 RDP over TCP 端口 443。|TCP 端口 443 对 52.112.0.0/14 开放|Office 2013 和早期版本中的 Skype for Business 早期客户端版本|
-|13 |Skype for Business 混合内部部署服务器与 Skype for Business Online 之间的连接|13.107.64.0/18, 52.112.0.0/14 <br> UDP 端口 50,000-59,999 <br> TCP 端口 50,000-59,999; 5061|Skype for Business 内部部署服务器出站连接|
+|13|Skype for Business 混合内部部署服务器与 Skype for Business Online 之间的连接|13.107.64.0/18, 52.112.0.0/14 <br> UDP 端口 50,000-59,999 <br> TCP 端口 50,000-59,999; 5061|Skype for Business 内部部署服务器出站连接|
 |14 |具有内部部署混合连接的云 PSTN 要求网络连接对内部部署主机开放。有关 Skype for Business Online 混合配置的更多详细信息，|请参阅[ Skype for Business Server 和 Office 365 之间的混合连接](/skypeforbusiness/hybrid/plan-hybrid-connectivity)|Skype for Business 内部部署混合入站|
 |15|**身份验证和标识 FQDN** <p> FQDN `secure.aadcdn.microsoftonline-p.com` 必须位于客户端的 Internet Explorer (IE) 或 Edge 受信任的站点区域内才能起作用。||受信任的站点|
 |16 |**Microsoft Teams FQDN** <p> 如果你使用的是 Internet Explorer 或 Microsoft Edge，则需要启用第一方和第三方 Cookie，并将 Teams FQDN 添加到受信任的站点。这是除 14 行列出的套件级 FQDN、CDN 和遥测之外的补充内容。有关详细信息，请参阅 [ Microsoft Teams 的已知问题](/microsoftteams/known-issues)。||受信任的站点|

@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何通过将邮箱转换为非活动邮箱来保留以前员工的邮箱内容。
-ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3badfacad1ffc58a686efd1f1971ce6dd015398e6662512c1de4ccb463ee98ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53801922"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非活动邮箱概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "50911248"
 
 ## <a name="inactive-mailboxes-and-microsoft-365-retention-policies"></a>非活动邮箱Microsoft 365保留策略
 
-除了诉讼保留之外，在 Microsoft 365 合规中心内使用新的 Microsoft 365 保留策略功能是使邮箱变为非活动状态的另一种方法。 若要使用保留策略使邮箱变为非活动邮箱：
+除了诉讼保留之外，Microsoft 365保留策略功能Microsoft 365 合规中心另一种使邮箱变为非活动状态的方法。 若要使用保留策略使邮箱变为非活动邮箱：
 
 - 必须将其配置为保留内容或保留内容，然后删除内容。 如果将保留策略配置为仅删除内容，则当删除用户帐户时，应用该策略的邮箱不会变为非活动状态。
 

@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何设置信息管理策略来控制信息保留时间并跟踪使用信息的人。
-ms.openlocfilehash: 626549401f463ca7a28a0cdd8948f710a5128f08
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 94a97aed83f2b0b7b68ba1fb1bb1533718a00b44c1e02df565f8762dd941a013
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802332"
 ---
 # <a name="create-and-apply-information-management-policies"></a>创建和应用信息管理策略
 
@@ -60,7 +60,7 @@ ms.locfileid: "53287511"
 
 5. 请参阅下一部分，了解如何为网站内容类型创建策略，了解如何设置要与策略关联的功能。
 
-6. 选择“确定”。
+6. 选择“**确定**”。
 
 ## <a name="create-a-policy-for-a-site-content-type"></a>为网站内容类型创建策略
 <a name="__create_a_policy"> </a>
@@ -164,7 +164,7 @@ ms.locfileid: "53287511"
 
     7. 选择 **"刷新** "预览标签内容。
 
-11. 选择“确定”。
+11. 选择“**确定**”。
 
 ## <a name="create-a-policy-for-a-list-library-or-folder-location-based-retention-policy"></a>为列表、库或文件夹创建策略（基于位置的保留策略）
 <a name="__create_a_policy"> </a>
@@ -195,7 +195,7 @@ ms.locfileid: "53287511"
 
 4. 在"信息管理策略设置页上，确保将列表或库的保留源设置为"库和文件夹"。
 
-   如果 **内容类型** 显示为源，请单击"**更改源**"，然后单击"库 **和文件夹"。** 请注意，内容类型保留策略将被忽略。 选择“确定”。
+   如果 **内容类型** 显示为源，请单击"**更改源**"，然后单击"库 **和文件夹"。** 请注意，内容类型保留策略将被忽略。 选择“**确定**”。
 
 5. 在"编辑策略"页上的"基于 **库的保留计划**"下，输入所创建策略的简要说明。
 
@@ -221,7 +221,7 @@ ms.locfileid: "53287511"
    > [!NOTE]
    >  此选项仅在所选操作可以重复时可用。 例如，不能为"永久删除"**操作设置定期。**
 
-10. 选择“确定”。
+10. 选择“**确定**”。
 
 ## <a name="apply-a-site-collection-policy-to-a-content-type"></a>将网站集策略应用于内容类型
 <a name="__apply_a_site"> </a>
@@ -247,7 +247,7 @@ ms.locfileid: "53287511"
    > [!NOTE]
    >  如果 **"使用网站集策略** "选项不可用，则没有为网站集定义任何网站集策略。
 
-6. 选择“确定”。
+6. 选择“**确定**”。
 
    如果您处理的列表或库支持管理多个内容类型，您可以在"内容类型"下选择要指定信息管理策略的内容类型。 这将直接进入上述步骤 5。
 

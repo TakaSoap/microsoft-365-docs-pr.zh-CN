@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将了解如何使用 PowerShell for Microsoft 365管理 SharePoint Online 用户、组和网站。
-ms.openlocfilehash: 823c5fdc9af178a2e8ea8f0ca4c63fbfa4673dd8
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 98a37311c75380f7ae6174e741690a9c84f9bec44a8f60a7051650a3d70c09e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795190"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 用户和组
 

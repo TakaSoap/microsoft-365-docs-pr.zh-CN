@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 查看 DOD 和 GCC High root 证书的完整列表， (CA) Microsoft 365。
-ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4e12f98e2f9949fc108807f3915c52136287bebe8894e36816d8b00ae2d64713
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795874"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365加密链 - DOD 和 GCC High
 
@@ -45,7 +45,7 @@ Last updated： **10/16/2020**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Subject** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **主题** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | --- | --- |
 | **序列号** | 02：00：00：B9 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -59,7 +59,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 云服务 CA-1**
 
-| **Subject** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **序列号** | 01：9E：C1：C6：BD：3F：59：7B：B2：0C：33：38：E5：51：D8：77 |
@@ -77,7 +77,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 云服务 CA-1**
 
-| **Subject** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0F：17：1A：48：C6：F2：23：80：92：18：CD：2E：D6：DD：C0：E8 |
@@ -94,7 +94,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert 全局根 CA**
 
-| **Subject** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **序列号** | 08：3B：E0：56：90：42：46：B1：A1：75：6A：C9：59：91：C7：4A |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -109,7 +109,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-global-root-g2"></a>**DigiCert 全局根 G2**
 
-| **Subject** | CN=DigiCert 全局根 G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert 全局根 G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 03：3A：F1：E6：A7：11：A9：A0：BB：28：64：B1：1D：09：FA：E5 |
@@ -124,7 +124,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert 高保证 EV 根 CA**
 
-| **Subject** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **序列号** | 02：AC：5C：26：6A：0B：40：9B：8F：0B：79：F2：AE：46：25：77 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -139,7 +139,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 扩展验证服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 扩展验证服务器 CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 扩展验证服务器 CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **序列号** | 0C：79：A9：44：B0：8C：11：95：20：92：61：5F：E2：6B：1D：83 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -153,7 +153,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 01：FD：A3：EB：6E：CA：75：C8：88：43：8B：72：4B：CF：BC：91 |
@@ -170,7 +170,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 02：74：2E：AA：17：CA：8E：21：C7：17：BB：1F：FC：FD：0C：A0 |
@@ -187,7 +187,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
 
-| **Subject** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0A：35：08：D5：5C：29：2B：01：7D：F8：AD：65：C0：0F：F7：E4 |
@@ -204,7 +204,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-root-certification-authority"></a>**委托根证书颁发机构**
 
-| **Subject** | CN=进行根证书颁发机构<br>OU=" (c) 2006 Entrust， Inc."<br>OU=www.entrust.net/CPS 通过参考纳入<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=进行根证书颁发机构<br>OU=" (c) 2006 Entrust， Inc."<br>OU=www.entrust.net/CPS 通过参考纳入<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **序列号** | 45：6B：50：54 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -218,7 +218,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-root-certification-authority---g2"></a>**代理根证书颁发机构 - G2**
 
-| **Subject** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **序列号** | 4A：53：8C：28 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -232,7 +232,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Subject** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.) <br>O=Entrust.net |
+| **主题** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.) <br>O=Entrust.net |
 | --- | --- |
 | **序列号** | 38：63：DE：F8 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -246,7 +246,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1c"></a>**证书颁发机构 - L1C**
 
-| **Subject** | CN=Entrust Certification Authority - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa 通过参考纳入<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Entrust Certification Authority - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa 通过参考纳入<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (限制 liab.) <br>O=Entrust.net |
 | **序列号** | 4C：0E：8C：39 |
@@ -264,7 +264,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1e"></a>**证书颁发机构 - L1E**
 
-| **Subject** | CN=Entrust Certification Authority - L1E<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa 通过参考纳入<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Entrust Certification Authority - L1E<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa 通过参考纳入<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (限制 liab.) <br>O=Entrust.net |
 | **序列号** | 4C：0E：C9：18 |
@@ -281,7 +281,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1k"></a>**代理证书颁发机构 - L1K**
 
-| **Subject** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **序列号** | 0E：E9：4C：C3：00：00：00：00：51：D3：77：85 |
@@ -299,7 +299,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1m"></a>**代理证书颁发机构 - L1M**
 
-| **Subject** | CN=Entrust Certification Authority - L1M， OU= &quot; (c) 2014 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Entrust Certification Authority - L1M， OU= &quot; (c) 2014 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **序列号** | 61：A1：E7：D2：00：00：00：00：51：D3：66：A6 |
@@ -316,7 +316,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft AzureTLS 颁发 CA 01**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 0A：AF：A6：C5：CA：63：C4：51：41：EA：3B：E1：F7：C7：53：17 |
@@ -333,7 +333,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 颁发 CA 02**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 0C：6A：E9：7C：CE：D5：99：83：86：90：A0：0A：9E：A5：32：14 |
@@ -350,7 +350,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 颁发 CA 05**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 0D：7B：ED：E9：7D：82：09：96：7A：52：63：1B：8B：DD：18：BD |
@@ -367,7 +367,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft AzureTLS 颁发 CA 06**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 02：E7：91：71：FB：80：21：E9：3F：E2：D9：83：83：4C：50：C0 |
@@ -384,7 +384,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **Subject** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 08：B8：7A：50：1B：BE：9C：DA：2D：16：4D：3E：39：51：BF：55 |
@@ -402,7 +402,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **Subject** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 0F：2C：10：C9：5B：06：C0：93：7F：B8：D4：49：F8：3E：85：69 |
@@ -420,7 +420,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **Subject** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 0B：6A：B3：B0：3E：B1：A9：F6：C4：60：92：6A：A8：CD：FE：B3 |
@@ -438,7 +438,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **Subject** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 08：88：CD：52：5F：19：24：44：4D：14：A5：82：91：DE：B9：52 |
@@ -456,7 +456,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
 
-| **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root， OU=CyberTrust， O=Baltimore， C=IE |
 | **序列号** | 0F：14：96：5F：20：20：69：99：4F：D5：C7：AC：78：89：41：E2 |
@@ -473,7 +473,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
 
-| **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root， OU=CyberTrust， O=Baltimore， C=IE |
 | **序列号** | 0F：A7：47：22：C5：3D：88：C8：0F：58：9E：FB：1F：9D：4A：3A |

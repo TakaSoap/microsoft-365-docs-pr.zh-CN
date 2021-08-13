@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 了解如何使用管理中心中的"Microsoft 365报告"仪表板获取 Microsoft Dynamics 365 Microsoft 365活动报告。
-ms.openlocfilehash: 7975db1f3681ab0823e222f017f6addb514dafd7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 了解如何使用 Microsoft Dynamics 365 客户语音活动Microsoft 365仪表板获取 Microsoft 365 管理中心。
+ms.openlocfilehash: 3b7e326a8661523865235880b0d0affd98c8836f531908943670caab0ad4fec4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53797958"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365管理中心中的报告 - Dynamics 365 客户语音活动
 
@@ -49,7 +49,7 @@ You can view the activities in the Dynamics 365 Customer Voice report by choosin
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |在 Microsoft Forms 上执行活动的用户的电子邮件地址。  <br/> |

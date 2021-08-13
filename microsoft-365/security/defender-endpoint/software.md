@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b64ba9bec7de209ec8458c6b9215b766b51f7349052b94d7a2b19cdf8d1519fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53799726"
 ---
 # <a name="software-resource-type"></a>软件资源类型
 
@@ -57,11 +57,11 @@ ms.locfileid: "53656627"
 
 属性 |   类型   |   说明
 :---|:---|:---
-id | 字符串 | 软件 ID
+id | String | 软件 ID
 名称 | String | 软件名称
-供应商 | 字符串 | 软件供应商名称
+供应商 | String | 软件供应商名称
 漏洞 | 长型 | 发现的漏洞数量
-publicExploit | 布尔 | 存在针对某些漏洞的公共攻击
-activeAlert | 布尔 | 活动警报与此软件关联
+publicExploit | Boolean | 存在针对某些漏洞的公共攻击
+activeAlert | Boolean | 活动警报与此软件关联
 exposedMachines | 长型 | 公开的设备数量
 impactScore | 双精度 | 此软件的曝光评分影响

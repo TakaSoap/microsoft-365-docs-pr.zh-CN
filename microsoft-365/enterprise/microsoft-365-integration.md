@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: 本文将了解如何将Microsoft 365目录服务和本地环境集成。
-ms.openlocfilehash: c0453b7685254ccbbb301a17749fe48549fae78d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 48d7066ea51647cc0e7594dd774201d736471369b6158550cb1a238b65fa0d0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53795120"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365与本地环境集成
 
@@ -38,13 +38,13 @@ ms.locfileid: "50923962"
  - 集成 AD DS 时，可以同步和管理两种环境的用户帐户。 您还可以将密码哈希同步 (PHS) 或单一登录 (SSO) 以便用户可以使用其本地凭据登录到这两个环境。
  - 与本地服务器产品集成时，将创建混合环境。 混合环境可以帮助你将用户或信息迁移到 Microsoft 365，或者你可以继续拥有一些用户或本地的一些信息，还有一些信息位于云中。 有关混合环境详细信息，请参阅 [混合云](../solutions/cloud-architecture-models.md#hybrid)。
 
-此外，还可使用 Azure Active Directory (Azure AD) 顾问，在 Microsoft 365 管理中心中 (你必须登录到 Microsoft 365) ：
+还可使用 Azure AD Azure Active Directory (顾问) Azure AD Microsoft 365 管理中心 (指导，才能登录以下Microsoft 365) ：
 
 - [Azure AD 设置指南](https://aka.ms/aadpguidance)
 - [从组织目录中同步用户](https://aka.ms/aadconnectpwsync)
 - [Active Directory 联合身份验证服务 (AD FS) 顾问](https://aka.ms/adfsguidance)
    
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在集成Microsoft 365和本地环境之前，还需要执行[网络规划和性能调整](network-planning-and-performance.md)。 你还需要了解可用的 [标识模型](about-microsoft-365-identity.md)。 
 

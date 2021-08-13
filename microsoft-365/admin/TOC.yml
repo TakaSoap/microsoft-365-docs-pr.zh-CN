@@ -10,6 +10,12 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: 计划安装
           href: setup/plan-your-setup.md
+        - name: 规划 Windows 365 商业版
+          items:
+            - name: Windows 365 商业版和云电脑入门
+              href: setup/get-started-windows-365-business.md
+            - name: Windows 365 商业版大小调整选项
+              href: setup/windows-365-business-sizing.md
         - name: 使用引导式安装为组织安装
           items:
             - name: Microsoft 365 商业基础版
@@ -289,6 +295,8 @@
               href: usage-analytics/active-user-in-usage-reports.md
             - name: 自定义报告
               href: usage-analytics/customize-reports.md
+            - name: 使用 Microsoft 365 GCC 进行使用情况分析
+              href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
             - name: 关于使用情况分析数据模型
               href: usage-analytics/usage-analytics-data-model.md
             - name: 排查使用情况分析错误

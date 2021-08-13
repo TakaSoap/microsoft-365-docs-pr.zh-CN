@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合规性管理器中对控件执行实现和测试。 分配工作、存储文档和导出报告。
-ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 55bcdb6082d643dee15be8c2e7539e7d897bac66c1c716e7982a9f6203a32044
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802474"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>在合规性管理器中分配并完成改进操作
 

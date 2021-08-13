@@ -7,9 +7,9 @@
 
 ID | 类别 | ER | Addresses | 端口
 -- | -------------------- | -- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------
-1  | 优化<BR>必填 | 否 | `outlook.office.de`<BR>`51.4.64.0/23, 51.5.64.0/23` | **TCP：** 443、80
-2  | 默认<BR>必填 | 否 | `r1.res.office365.com` | **TCP：** 443、80
-3  | 默认值<BR>必填 | 否 | `outlook.office.de` | **TCP：** 143、25、587、993、995
+1 | 优化<BR>必填 | 否 | `outlook.office.de`<BR>`51.4.64.0/23, 51.5.64.0/23` | **TCP：** 443、80
+2 | 默认<BR>必填 | 否 | `r1.res.office365.com` | **TCP：** 443、80
+3 | 默认值<BR>必填 | 否 | `outlook.office.de` | **TCP：** 143、25、587、993、995
 4  | 默认<BR>必填 | 否 | `attachments.office365-net.de, autodiscover-s.outlook.de` | **TCP：** 443、80
 5  | 允许<BR>必填 | 否 | `*.protection.outlook.de`<BR>`51.4.72.0/24, 51.4.80.0/27, 51.5.72.0/24, 51.5.80.0/27, 2a01:4180:4050:400::/64, 2a01:4180:4050:800::/64, 2a01:4180:4051:400::/64, 2a01:4180:4051:800::/64` | **TCP：** 25、443
 
@@ -20,9 +20,9 @@ ID | 类别 | ER | Addresses | 端口
 8  | 优化<BR>必填 | 否 | `<tenant>.sharepoint.de`<BR>`51.4.66.0/23, 51.5.66.0/23, 2a01:4180:4030::/44` | **TCP：** 443、80
 9  | 默认<BR>必填 | 否 | `odc.osi.office.de` | **TCP：** 443、80
 10  | 默认<BR>必填 | 否 | `*.wns.windows.com` | **TCP：** 443、80
-11  | 默认<BR>必填 | 否 | `officeapps.live.com` | **TCP：** 443、80
+11 | 默认<BR>必填 | 否 | `officeapps.live.com` | **TCP：** 443、80
 12  | 默认<BR>必填 | 否 | `shellprod.msocdn.de, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP：** 443、80
-13  | 默认<BR>必填 | 否 | `*.search.production.de.azuretrafficmanager.de` | **TCP：** 443
+13 | 默认<BR>必填 | 否 | `*.search.production.de.azuretrafficmanager.de` | **TCP：** 443
 14  | 默认<BR>必填 | 否 | `odc.officeapps.live.com, officeclient.microsoft.com` | **TCP：** 443、80
 15 | 默认<BR>必填 | 否 | `mobile.pipe.aria.microsoft.com, ssw.live.com, watson.telemetry.microsoft.com` | **TCP：** 443、80
 16  | 默认<BR>必填 | 否 | `oneclient.sfx.ms` | **TCP：** 443、80
