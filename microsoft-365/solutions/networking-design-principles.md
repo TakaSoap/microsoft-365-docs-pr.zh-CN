@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7de9aec29b0a57e85e3539fc2e99384de545c52a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1d3bcf269211dc00702c08c22ff0c6f6055b1b63f6bfd351d5aba7679b82978
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804742"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>网络 (云) —一个架构师的见解
 
@@ -108,7 +108,7 @@ TLS 检查意味着安全性！ 但其实不是！ 许多具有代理的客户�
 
 成千上万个组织（包括几乎所有全球 500 强组织）Office 365日常任务关键功能。 它们可安全执行，并且通过 Internet 执行。
 
-无论你实现什么安全目标，都可以通过一些方法实现这些目标，而不需要 VPN 连接、代理服务器、TLS 中断和检查或集中式 Internet 出口，以便尽快将用户的流量从网络和我们的网络传输至我们，无论网络是公司总部还是远程办公室，都可以提供最佳性能或在家工作的用户。 我们的指南基于如何Office 365服务，并确保获得安全且性能丰富的用户体验。
+无论你实现什么安全目标，都可以通过一些方法实现它们，无需 VPN 连接、代理服务器、TLS 中断和检查或集中式 Internet 出口，以尽快将用户的流量从网络和我们的网络获取，无论网络是公司总部，这都可以提供最佳性能、远程办公室或在家工作的用户。 我们的指南基于如何Office 365服务，并确保获得安全且性能丰富的用户体验。
 
 ## <a name="further-reading"></a>进一步阅读
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365，并规划网络实施项目（如果你要使用它进行部署）。
-ms.openlocfilehash: c43957435272e1a3b6f738d33a2dd12e81dfc013
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 742beb28db325b61c837d205b9463be3fcc551087628d39e3c1ce3839a1fd3d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830378"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 

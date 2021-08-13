@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: 了解如何向 DLP 策略中的数据丢失防护 (策略) 通知用户他们正在处理与 DLP 策略冲突的内容。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 785d7fad1cf35bab56594e5b0c11287c153eaa44aedcf2cf6b44a742ed93ee74
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814435"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>数据丢失防护策略提示参考
 
@@ -34,9 +34,9 @@ ms.locfileid: "52086755"
 
 - 发件人是
 - 发件人域为
-- 收件人是
+- 收件人所在组为
 - 标头包含单词或短语
-- 标头与模式匹配
+- 标题与模式匹配
 - 文档大小等于或大于
 - 邮件类型为
 - 邮件重要性为
@@ -392,16 +392,16 @@ ms.locfileid: "52086755"
 
 ## <a name="support-matrix-for-dlp-policy-tips-across-microsoft-apps"></a>Microsoft 应用中 DLP 策略提示的支持矩阵
 
-|**应用和平台**|**DLP 策略提示支持**|**支持的敏感信息类型**|**支持的谓词和操作**|**备注**|
+|**应用和平台**|**DLP 策略提示支持**|**支持的敏感信息类型**|**支持的谓词和操作**|**Comments**|
 |:--|:--|:--|:--|:--|
-|**OutlookWeb Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|所有|Subset|请参阅 [数据丢失防护策略提示参考](#data-loss-prevention-policy-tips-reference)|
+|**OutlookWeb Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|Subset|请参阅 [数据丢失防护策略提示参考](#data-loss-prevention-policy-tips-reference)|
 |**OutlookWin32 (Outlook 2013 及)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|请参阅[Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)及更高版本仅支持显示某些条件和例外的策略提示，并且桌面版上的[Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)及更高版本和 Office 应用支持显示仅某些敏感信息类型的策略提示，了解有关支持敏感信息类型和 DLP 条件以及支持在 Outlook Win32 上显示 DLP 策略提示的操作的详细信息。|
 |**Outlook移动 (iOS、Android) /Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|DLP 策略提示在移动版上Outlook支持|
-|**Sharepoint Online/One Drive for Business Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|所有|DLP 中所有 SPO/ODB 谓词和操作||
+|**Sharepoint Online/One Drive for Business Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中所有 SPO/ODB 谓词和操作||
 |**Sharepoint Win32/ One Drive for Business Win32 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|Sharepoint 或桌面客户端应用程序不支持 DLP OneDrive提示|
-|**Word、Excel、PowerPoint Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|所有|DLP 中所有 SPO/ODB 谓词和操作|如果文档托管在 SPO 或 ODB Web 应用上并且已标记 DLP 策略，则支持 DLP 策略提示。|
+|**Word、Excel、PowerPoint Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中所有 SPO/ODB 谓词和操作|如果文档托管在 SPO 或 ODB Web 应用上并且已标记 DLP 策略，则支持 DLP 策略提示。|
 |**Word、Excel、PowerPoint Mobile 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|DLP 策略提示在适用于应用程序的移动应用程序中不受Office。|
-|**TeamsWeb/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|所有|DLP Teams中所有规则谓词|当邮件被标记为"此邮件已标记"时，将显示策略提示。 我该怎么办？ 单击链接时，用户可以查看检测到的敏感信息类型，并覆盖或报告问题（如果管理员允许）。请注意，不会为文件显示任何策略提示。 当收件人尝试访问文档时，如果不允许，他们可能会被拒绝访问。|
+|**TeamsWeb/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP Teams中所有规则谓词|当邮件被标记为"此邮件已标记"时，将显示策略提示。 我该怎么办？ 单击链接时，用户可以查看检测到的敏感信息类型，并覆盖或报告问题（如果管理员允许）。请注意，不会为文件显示任何策略提示。 当收件人尝试访问文档时，如果不允许，他们可能会被拒绝访问。|
 |**Win32 终结点设备**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|DLP 策略中所有终结点 DLP 谓词和操作|请参阅 [Endpoint 上的数据丢失防护仅支持某些敏感信息类型的策略提示](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Mac 设备**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|现在，Mac 设备上未实施数据丢失防护策略|
 |**第三方云应用**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|第三方云应用不支持数据丢失防护策略提示|

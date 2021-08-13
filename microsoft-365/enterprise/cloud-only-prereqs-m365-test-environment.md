@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: 927aa032e4181206b3a744da7076b696ac5cf4d4
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dbe2fed146f6a0507ce1fa514239f059973c092fa1494452c09b32900ea23c1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830399"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
-*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md) 配置是一组建议配置和条件访问策略，用于保护对与 Azure AD (Azure Active Directory 集成的所有服务) 。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组建议配置和条件访问策略，用于保护对与 Azure AD Azure Active Directory (集成的所有服务) 。
 
 本文介绍了如何配置 Microsoft 365 测试环境，使其满足标识和设备访问[仅限云的先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51199545"
 2. 配置命名位置
 3. 配置自助密码重置
 4. 配置多重身份验证
-5. 启用已加入域的 Windows 计算机的自动设备注册
+5. 启用已加入域的计算机的Windows注册
 6. 配置 Azure AD 密码保护 
 7. 启用 Azure AD Identity Protection
 8. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
@@ -77,9 +77,9 @@ ms.locfileid: "51199545"
 
 仅为用户 2 帐户测试多重身份验证。
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 5：启用已加入域的 Windows 计算机的自动设备注册 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 5：启用已加入域的计算机的Windows注册 
 
-按照 [以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan) 启用已加入域的 Windows 计算机的自动设备注册。
+按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>阶段 6：配置 Azure AD 密码保护 
 
@@ -111,7 +111,7 @@ ms.locfileid: "51199545"
 
 结果是测试环境满足标识和设备访问的仅云 [先决条件](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 配置的要求。 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 使用[常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
 

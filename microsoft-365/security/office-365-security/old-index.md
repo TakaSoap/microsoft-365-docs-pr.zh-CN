@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解你拥有的属性并了解如何保护你的属性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8040a6b7758e271d68af872bc2acf9ebac3af9d4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 471817772327a761e1903d0074c41ad3a4bd5fbac1ddb501b2d8887e35d51b34
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838485"
 ---
 # <a name="office-365-security"></a>Office 365 安全中心
 

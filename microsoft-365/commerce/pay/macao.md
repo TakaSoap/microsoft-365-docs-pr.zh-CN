@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fe06472c56456809172e2c85bd753cf98c4e74a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e63e9156cbe1022b16f239ea31fad88fef4f66ce308d708ca3b9a4b4dc729b4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802702"
 ---
 # <a name="payment-information-for-macao"></a>澳门的付款信息
 

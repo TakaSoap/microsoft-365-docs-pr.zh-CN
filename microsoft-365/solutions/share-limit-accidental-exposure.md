@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: 1dffa40a0c21f5f611492d5a098a98f8aaa726a5
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: be5dfaa0549d96c93befc5c59947651391acf6e9f0b029d4745f717d87c7cccb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804671"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 

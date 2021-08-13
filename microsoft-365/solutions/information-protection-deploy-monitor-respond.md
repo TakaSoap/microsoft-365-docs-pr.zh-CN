@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用审核和警报策略和数据主体请求来监视和响应个人数据事件。
-ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 225c0969f932490012a6cd54cb920cc59322ea9a8cea11c214a866ad58cecfca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804728"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>监视和响应组织中数据隐私事件
 
 Microsoft 365功能可帮助您在操作相关功能时监视、调查和响应组织的数据隐私事件。 为每项流程、过程和其他文档提供过程、过程和其他文档可能也很重要，以证明对监管机构的遵从性。
 
-其中包括： 
+包括： 
 
 - 审核和警报策略
 - 数据主体请求 (包括内容搜索和电子数据展示) 

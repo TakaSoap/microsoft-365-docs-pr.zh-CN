@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 为租户部署正确的设备和应用管理Microsoft 365选项。
-ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: eb15f5805308c6f575beb9eebd8f7825ebdd13173037870a3770fd306bb090bb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804599"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 5. 适用于企业租户Microsoft 365应用的设备和应用管理
 
@@ -48,7 +48,7 @@ Microsoft 365企业版包括以下功能：通过移动设备管理 (MDM) 和移
 
 ## <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
-Microsoft 提供了一组用于标识 [和设备访问的配置](../security/defender-365-security/microsoft-365-policies-configurations.md) ，以确保员工安全高效。 这些配置包括使用：
+Microsoft 提供了一组用于标识 [和设备访问的配置](../security/office-365-security/microsoft-365-policies-configurations.md) ，以确保员工安全高效。 这些配置包括使用：
 
 - Azure AD 条件访问策略
 - Microsoft Intune设备合规性应用保护策略
@@ -61,8 +61,8 @@ Microsoft 提供了一组用于标识 [和设备访问的配置](../security/def
 
 对于设备访问和应用管理，请使用以下文章中的配置：
 
-- [先决条件](../security/defender-365-security/identity-access-prerequisites.md)
-- [常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
+- [先决条件](../security/office-365-security/identity-access-prerequisites.md)
+- [常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>步骤 5 的结果
 

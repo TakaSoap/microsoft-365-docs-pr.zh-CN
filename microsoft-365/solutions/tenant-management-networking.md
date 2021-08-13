@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 优化对租户Microsoft 365访问。
-ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6741c47fac4cadab8a6c5df7febc07250219072a4429abe15bf6ba97e41cbeeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804505"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 2. 适用于企业租户Microsoft 365最佳网络
 
@@ -175,7 +175,7 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）
 - 管理资源管理Office 365 CDN。
 - 更新 VPN 客户端中的拆分隧道配置，以更改终结点。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 3.同步标识并强制执行安全登录](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 

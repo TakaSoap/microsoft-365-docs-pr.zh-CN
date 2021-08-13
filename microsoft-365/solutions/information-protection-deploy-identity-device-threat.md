@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用用户标识、设备和威胁防护服务防止个人数据Microsoft 365。
-ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2f5c131a079804ed1884a4a86d759b232f5305f1cc14272b290844fe5872067
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199461"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53804716"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>使用标识、设备和威胁防护进行数据隐私管理
 
