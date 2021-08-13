@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解安全默认值如何通过提供预配置的安全设置来帮助保护组织免受与标识相关的攻击。
-ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 88fac794b59785a37121800c95a99e2b6be3b35deb2830c927600442f3bdb42f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809110"
 ---
 # <a name="turn-on-security-defaults"></a>打开安全默认值
 
@@ -41,7 +41,7 @@ ms.locfileid: "51398286"
 
 若要在 Azure AD Azure Active Directory (启用) 或检查它们是否已启用：
 
-1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a>登录管理中心。
+1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>登录帐户。
 
 2. 在左侧窗格中，选择"全部 **显示**"，**然后在"管理** 中心"下，选择"Azure Active Directory"。 
 
@@ -68,7 +68,7 @@ ms.locfileid: "51398286"
 
 安全默认值可供所有客户使用，而条件访问需要以下计划之一的许可证：
 
-- Azure Active Directory 高级版 P1 或 P2
+- Azure Active Directory Premium P1 或 P2
 - Microsoft 365 商业高级版
 - Microsoft 365 E3 或 E5
 - Enterprise移动性&安全性 E3 或 E5
@@ -79,7 +79,7 @@ ms.locfileid: "51398286"
 - [需要 MFA 进行 Azure 管理](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [阻止旧身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)- 需要 Azure AD Identity Protection，这是 Azure Active Directory 高级版 P2 的一部分
+- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)- 需要 Azure AD Identity Protection，这是 azure AD 标识Azure Active Directory Premium P2
 
 若要详细了解条件访问，请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview) 有关创建条件访问策略的信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

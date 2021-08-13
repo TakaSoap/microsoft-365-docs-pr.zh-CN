@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何查找适用于管理员的管理员Microsoft 365 商业高级版。
-ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4d7a5c3e1bacd81d04a32e30c7d12f264cd355c81783409500e416be1345a0c7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809596"
 ---
 # <a name="find-docs-and-training"></a>查找文档和培训
 
@@ -36,9 +36,9 @@ ms.locfileid: "52245224"
 
 有关所有培训支持的链接，你需要在小型企业Microsoft 365，请参阅Microsoft 365[小型企业培训](index.yml)。 
 
-## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>搜索Microsoft 365中心文档和资源
+## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>搜索Microsoft 365 管理中心文档和资源
 
-若要搜索与管理员相关的任务和帮助，例如重置密码和分配 Microsoft 订阅，请参阅Microsoft 365[中心帮助](../admin/index.yml)。
+若要搜索与管理员相关的任务和帮助，例如重置密码和分配 Microsoft 订阅，请参阅Microsoft 365 管理中心[帮助](../admin/index.yml)。
 
 ## <a name="join-the-community"></a>加入社区
 

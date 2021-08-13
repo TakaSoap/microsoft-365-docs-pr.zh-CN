@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: 了解如何解决在设备上使用 AutoPilot 设备文件时可能Microsoft 365 商业高级版。
-ms.openlocfilehash: 1078ab74b07952e4bb565555a081b98ecce9db5c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b74c57acbaa5682f6db97e7d8a090e6e28a40dcc3246f00cacc7984cb52cc758
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809172"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Autopilot 设备错误疑难解答
 

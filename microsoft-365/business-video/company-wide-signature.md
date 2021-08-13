@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建公司范围的电子邮件签名。
-ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2fa201a8c01aa69046a3e126a4ff774b728fa49d0631129f109bcf6a1cc7e6fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803614"
 ---
 # <a name="create-a-company-wide-email-signature"></a>创建公司范围的电子邮件签名
 
@@ -38,7 +38,7 @@ ms.locfileid: "52706258"
 
 ## <a name="try-it"></a>试一试！
 
-1. 在管理Microsoft 365中，选择 **"Exchange"。**
+1. 在"Microsoft 365 管理中心"中，选择 **"Exchange"。**
 1. 选择 **"邮件流"。**
 1. 选择 **"添加 +**"，然后选择"**应用免责声明"。**
 1. 在" **新建规则"** 页上：

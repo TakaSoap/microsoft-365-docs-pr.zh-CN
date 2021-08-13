@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b813ec63f2cd91671f5e265cdac5c023a75dbe71
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 156e95b5dd045e1a06886f739e4e8b13577313caa90d7fcce177313e1f79200c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536690"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53808992"
 ---
 # <a name="payment-information-for-hong-kong"></a>香港付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "52536690"
 **银行代码** ：004  
 **分支代码** ：848  
 **SWIFT 代码：** 功能区 2013 年 10 月  
-**帐号** ：848342259001  
+**帐户编号：848342259001**  
 **帐户名称：** Microsoft 付款Ltd-Payco发票

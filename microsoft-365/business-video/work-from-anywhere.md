@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 概述Microsoft 365随时随地进行工作。
-ms.openlocfilehash: 1b8bfe4f452b1a7d9501ba7b92554f86492a36e6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2a11f4094e85e2514c1016c3fb7566359d32bce843e2d8070c39f41591cb437
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803591"
 ---
 # <a name="work-from-anywhere---overview"></a>随时随地工作 - 概述
 
@@ -94,9 +94,9 @@ ms.locfileid: "52244880"
 **在浏览器中使用 Office Online**
 
 - [Office Online 入门Microsoft 365](https://support.microsoft.com/office/5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
-- [Word 网页入门](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
+- [开始Word 网页版](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
 - [Excel Online 入门](https://support.microsoft.com/office/63b50461-38c4-4c93-a17e-36998be0e3d0)
-- [Web PowerPoint入门](https://support.microsoft.com/office/21360025-7eef-4173-9d7c-08281d55f64a)
+- [开始PowerPoint 网页版](https://support.microsoft.com/office/21360025-7eef-4173-9d7c-08281d55f64a)
 
 ### <a name="join-online-meetings-remotely"></a>远程加入联机会议
 

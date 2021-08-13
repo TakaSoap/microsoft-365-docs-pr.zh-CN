@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Cisco Webex DataParser 连接器在 Microsoft 365 中导入和存档 Cisco Webex 数据。
-ms.openlocfilehash: ca17ffb9313c6c59884d2c7a55d1bc81816acda7
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9ecae0c9794f68d8739ed5dc4ecbca8197e069667ce57329bd1ea0f02f68895b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836072"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>设置连接器以存档 Cisco Webex 数据
 

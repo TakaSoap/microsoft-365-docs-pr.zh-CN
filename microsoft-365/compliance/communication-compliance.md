@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7941297ea523cb395ab0ac36707bd7d224ea60a0bfeadfae9f28e5df6d3c70a
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: 35db4a7728fff40e6bf81b2c7992db229048964f60fc1ed2db829cf2c86b0749
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835871"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>了解通信合规性Microsoft 365
 
@@ -47,8 +47,6 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 - [更好地与Microsoft Teams - 详细了解通信合规性中Teams集成功能的最新本机和集成功能](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 有关通信合规性的快速概述，请参阅[Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries)频道上的检测工作场所骚扰[Microsoft 365](https://youtu.be/z33ji7a7Zho)通信合规性响应。
-
-查看 [TD Security 如何使用通信合规性](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) 来解决其监管义务并满足其安全性和稳定性需求。
 
 ## <a name="scenarios-for-communication-compliance"></a>通信合规性的场景
 

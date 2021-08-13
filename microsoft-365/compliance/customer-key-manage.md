@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 设置客户密钥后，了解如何通过还原 AKV 密钥、管理权限以及创建和分配数据加密策略来管理它。
-ms.openlocfilehash: da806ec9dcf1327ec5fdd6b0a0c9e7f22c89584e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 263f5d13a554ab06c140101595e39c98ae1bc9488dbeff13da0eda9c02d334fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835831"
 ---
 # <a name="manage-customer-key"></a>管理客户密钥
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在需要新功能时将用户移动到其他订阅。
-ms.openlocfilehash: ffba2184908ccdc4736bae3dc0ac835c0d088143
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: e3059a9e841aba348ef3b3038bb24651c11f48792c421fb25b0bc17b720b5eeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803710"
 ---
 # <a name="move-users-to-different-subscriptions"></a>将用户移动到不同的订阅
 
@@ -42,7 +42,7 @@ ms.locfileid: "52706270"
 
 ### <a name="add-a-new-subscription"></a>添加新订阅
 
-1. 在Microsoft 365管理中心的左侧导航窗格中，选择"计费 **"，然后选择**"**购买服务"。**
+1. In the Microsoft 365 管理中心， in the left navigation pane， select **Billing**， and then **Purchase services**.
 1. 选择要添加的订阅，然后选择"购买 **"。**
 1. Choose how you want to pay and the number of licenses you need， and then select **Check out now**.
 1. 查看订单，然后选择"下一 **步"。**
@@ -50,13 +50,13 @@ ms.locfileid: "52706270"
 
 ### <a name="change-the-license-assigned-to-a-user"></a>更改分配给用户的许可证
 
-1. 在Microsoft 365管理中心的左侧导航窗格中，选择"用户 **"，然后选择**"活动 **用户"。**
+1. In the Microsoft 365 管理中心， in the left navigation pane， select **Users**， and then **Active users**.
 1. 选择用户的名称，然后选择"许可证 **"和"应用**"。
 1. 在 **"许可证**"下，你将看到新订阅。 选中新订阅旁边的复选框，并清除旧订阅旁边的复选框。
 1. 选择“**保存更改**”。 新订阅的许可证现在分配给此用户。
 
 ### <a name="remove-an-unused-license"></a>删除未使用的许可证
 
-1. In the Microsoft 365 admin center， select **Billing**， and then **Products & services**.
+1. In the Microsoft 365 管理中心， select **Billing**， and then **Products & services**.
 1. 选择要更改的订阅，然后选择"**添加/删除许可证"。**
 1. 使用向下箭头减少此订阅的许可证数量，然后选择提交 **更改**。 现在，你的用户的许可证数量正确。

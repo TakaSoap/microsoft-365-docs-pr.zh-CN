@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何通过进入"你的产品"页面来验证你的组织拥有哪些订阅。
 ms.date: 01/21/2021
-ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 4db973a3817638e3c41f5e73989052e26f66c0af08eceeada74cc47728d5094c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827091"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
