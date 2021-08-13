@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a9d8d2fe7fe26b90719502fffebaa96526a26d24207b49136e52373fc058d94b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e85231278a03b4c9495e9331e50734f643d3c17def30fdcc4ba3c385aac94b8a
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799335"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834747"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ ms.locfileid: "53799335"
 - 类别
 - 检测源
 - 标记
-- Policy
+- 策略
 - 影响的资产
 
 ## <a name="analyze-an-alert"></a>分析警报
@@ -74,8 +74,6 @@ ms.locfileid: "53799335"
 
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="通知门户中警报的详细信息Microsoft 365 Defender示例":::
 
 在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 

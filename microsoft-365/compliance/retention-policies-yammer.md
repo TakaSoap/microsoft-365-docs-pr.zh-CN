@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: deacfafbc16c2b04b3dad8a4e9c49ffe07fdf165792c7360a31419a821c52c22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea9e1acb96de32565c4d49529af75fd0224db7885fd6431b8de8bc287969c970
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835592"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834531"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -41,9 +41,13 @@ ms.locfileid: "53835592"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
-可通过使用 Yammer 的保留策略来保留和删除以下 Yammer 项：社区消息和用户消息。
+可以使用 Yammer的保留策略删除 Yammer 用户消息和社区消息，除了消息中的文本外，出于合规性原因，还可以保留以下项目：超文本链接和指向其他 Yammer 消息的链接。
 
-这些消息中不包括其他人以表情符号的形式所做的回复。
+用户消息包括对话中所有人员的姓名，社区消息包括社区名称和消息标题（如有提供）。
+
+使用 Yammer 的保留策略时，不会保留其他人以表情符号的形式做出的反应。
+
+与 Yammer 一起使用的文件不包含在 Yammer 的保留策略中。这些项目有自己的保留策略。
 
 ## <a name="how-retention-works-with-yammer"></a>用于 Yammer 的保留的工作原理
 

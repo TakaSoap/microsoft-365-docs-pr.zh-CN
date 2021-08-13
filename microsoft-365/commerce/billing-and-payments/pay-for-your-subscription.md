@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 8298cbda4d0f9d038e6142ac7bbb858c603704501974fdae8254433d8d4745e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802918"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
@@ -58,7 +58,7 @@ ms.locfileid: "53394601"
 - 订阅费用超过一定金额（此金额因服务位置而异）
 - 通过信用检查
 
-如果需要进行信用检查，在购买订阅时就会收到通知。 如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。 通常会在两个工作日内完成信用检查。
+如果需要进行信用检查，在购买订阅时就会收到通知。如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。通常会在两个工作日内完成信用检查。
 
 > [!NOTE]
 > 居住在巴西的客户可以使用 Boleto Bancario 支付订阅费用。 如果选择此选项，在订单日期后 10 个工作日内，付款凭据将被发送至订阅购买期间提供的电子邮件。 截止日期是订单日期后 30 日。 如果通过电子邮件未收到 Boleto，选中垃圾电子邮件文件夹或联系支持人员。

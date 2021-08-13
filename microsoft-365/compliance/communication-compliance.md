@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 470b33ca3201151fb164640eeb93c50daf7bb458
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: e7941297ea523cb395ab0ac36707bd7d224ea60a0bfeadfae9f28e5df6d3c70a
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322361"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523344"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>了解通信合规性Microsoft 365
 
@@ -47,6 +47,8 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 - [更好地与Microsoft Teams - 详细了解通信合规性中Teams集成功能的最新本机和集成功能](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 有关通信合规性的快速概述，请参阅[Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries)频道上的检测工作场所骚扰[Microsoft 365](https://youtu.be/z33ji7a7Zho)通信合规性响应。
+
+查看 [TD Security 如何使用通信合规性](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) 来解决其监管义务并满足其安全性和稳定性需求。
 
 ## <a name="scenarios-for-communication-compliance"></a>通信合规性的场景
 
@@ -93,9 +95,9 @@ Microsoft 365 中的通信合规性策略可以帮助你克服很多与合规性
 - **OCR (** 预览)  () 识别：扫描、检测和调查嵌入或附加到电子邮件或聊天消息的图像中的打印和手写Microsoft Teams文本。
 - **新筛选器**：使用多个字段的邮件筛选器更快地调查和修正策略警报，包括发件人、收件人、日期、域等。
 - **改进的消息视图**：现在，使用新的邮件源、文本和注释视图，调查和修正操作会更快。 现在可以查看邮件附件，以在采取修正操作时提供完整上下文。
-- **用户历史视图**：可展示所有用户邮件修正活动的历史视图，例如过去对策略匹配项的通知和报告，从而为审阅者在修正工作流提供更多背景信息。 用户的第一次或重复的策略匹配实例现在已存档且易于查看。
+- **用户历史记录**：现在，在修正工作流过程中，所有用户邮件修正活动（如过去的通知和策略匹配升级）的历史视图为审阅者提供了更多上下文。 用户的第一次或重复的策略匹配实例现在已存档且易于查看。
 - **模式检测到通知**：许多威胁和威胁操作会随着时间的推移发生，并且涉及用户重新出现相同行为的实例。 警报详细信息中显示的新模式检测到的通知有助于引起用户注意这些警报和这种类型的行为。
-- **显示翻译视图**：使用修正工作流中的翻译支持快速调查八种语言的邮件详细信息。 其他语言的邮件将自动转换为审阅者的显示语言。
+- **翻译**：使用修正工作流中的翻译支持快速调查八种语言的邮件详细信息。 其他语言的邮件将自动转换为审阅者的显示语言。
 
 ### <a name="actionable-insights"></a>可行见解
 

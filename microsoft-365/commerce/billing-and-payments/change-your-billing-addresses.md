@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何更新帐单邮寄地址或用于接收适用于Microsoft 365帐单通知的电子邮件地址。
 ms.date: 04/07/2021
-ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: eb2b50bb5032b30961a14d38bbdb6c04a04a1105ce7000adde8edc1e10a16cb4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53802930"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 

@@ -1,5 +1,5 @@
 ---
-title: 在管理中心Learning (Microsoft Viva) 预览Teams Microsoft Viva
+title: 在 Microsoft Viva Learning (管理) 中Teams预览版
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 了解如何在管理中心Learning (Microsoft Viva) 预览Teams预览版。
-ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: 了解如何在 Microsoft Viva Learning (管理) 配置 Teams 预览版。
+ms.openlocfilehash: 01c3ac59b1f40ba0eb743a4b14bd9c02711cb050724057544a2d6238696015ab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891128"
 ---
-# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>在管理中心Learning (Microsoft Viva) 预览Teams Microsoft Viva
+# <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>在 Microsoft Viva Learning (管理) 中Teams预览版
 
 > [!NOTE]
 > 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 
@@ -138,6 +138,6 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 --->
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [为 Viva Learning (预览) 配置学习内容源Microsoft 365 管理中心](content-sources-365-admin-center.md)

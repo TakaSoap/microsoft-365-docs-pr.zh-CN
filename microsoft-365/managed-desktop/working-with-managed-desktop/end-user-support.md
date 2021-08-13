@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 237c6e944669a2041a46465296af71f14851598351f51738d7f3c7f096414247
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9314b1b99afeed1738d03a5f11c513166c37dfa002784b21d3c3b461183b0077
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800662"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803424"
 ---
 # <a name="getting-help-for-users"></a>获取针对用户的帮助
 
@@ -51,8 +51,10 @@ ms.locfileid: "53800662"
 3. 提供以下详细信息：
     - **从你自己的** 支持票证系统支持票证 ID。
     - **设备名称**：输入设备序列号，然后从菜单中选择设备。
-    - **类别**：选择最适合你的问题的类别。 如果似乎没有任何选项关闭，请选择"**其他**"，然后在"标题"和"操作计划"**字段中提供** 详细信息。 最好尽可能选择类别。
-    - **子类别**：选择最适合该问题的类别。 如果没有选项看起来接近，请选择" **其他** "，然后在"标题"中提供 **简短说明**。 在 **"操作计划**"中，提供授予提升权限后计划采取疑难解答步骤。
+    - **类别**：选择最适合你的问题的类别。 如果没有选项看起来接近，请选择"其他 **"。** 最好尽可能选择类别。
+    - **子类别**：选择最适合该问题的类别。 如果没有选项看起来接近，请选择"其他 **"。**
+    - **标题**：提供设备上问题的简短说明。
+    - **计划行动**：提供授予提升权限后计划要采取疑难解答步骤。 
 4. 选择“**提交**”。
 
 

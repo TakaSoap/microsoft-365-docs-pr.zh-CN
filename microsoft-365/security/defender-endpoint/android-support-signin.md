@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d46a2ff2b1faa7360c27ca8c4571bd55e72ede1e93a8bf62dbc24d9f0ea08050
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2981138d6bf8d5bd3fa49120e3469fe29301ef6fbe8bba074ed83495044ef562
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834419"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834735"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint 问题疑难解答
 
@@ -101,3 +101,25 @@ ms.locfileid: "53834419"
 对一些设备启用所需的权限。
 
 - 在后台运行时显示弹出窗口。
+
+
+## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>在某些 OEM 设备上载入期间，无法允许"永久保护"的权限
+
+**适用于：** 仅特定 OEM 设备。
+
+-   **使用 Android 11 的一位小马** 
+
+作为应用载入的一部分，Defender 应用会要求在设备上使用电池优化/永久保护权限，选择"允许"将返回无法设置权限的错误。 它只影响最后一个称为"永久保护"的权限。 
+ 
+**原因：** Xiomi 更改了 Android 11 中的电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
+
+**解决方案：** 我们正在与 OEM 合作，通过应用载入屏幕查找启用此权限的解决方案。 在解决此问题时，我们将更新文档。
+用户可以按照以下步骤从设备设置启用相同的权限： 
+
+1. 转到 **设置** 上的"设置"。
+2. 搜索并选择电池 **优化**。
+3. 在 **"特殊应用访问"中**，选择 **"电池优化"。**
+4. 将下拉列表更改为显示 **所有应用**。
+5. 找到"Microsoft Defender 终结点"，然后选择 **"不优化"。**
+
+返回到 Microsoft Defender 终结点载入屏幕，选择" **允许"，** 你将重定向到仪表板屏幕。

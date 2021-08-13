@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 0f471d9ffb559314e1c5d9ea0ee297cdf3e9866d17d87583974438c9bca74c71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b2cbfdddce8f26a64b1def5fa89ead6d7fb0557697363f6d285d8ee82ea353f
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799822"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803412"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows 10 中的 Microsoft Defender 防病毒
 
@@ -41,7 +41,7 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 | 模式  | 发生的情况  |
 |---------|---------|
 | 主动模式 | 在主动模式下，Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，修正威胁，并将检测到的威胁列在组织的安全报告中和 Windows 安全中心应用中。 |
-| 被动模式 | 在被动模式下，不将 Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，并报告检测到的威胁，但 Microsoft Defender 防病毒不会修正威胁。   |
+| 被动模式 | 在被动模式下，不将 Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，并报告检测到的威胁，但 Microsoft Defender 防病毒不会修正威胁。 <br/><br/>**重要**： Microsoft Defender 防病毒只能在载入到 Microsoft Defender for Endpoint 的终结点上以被动模式运行。 请参阅 [在被动模式](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)中运行Microsoft Defender 防病毒的要求。  |
 | 已禁用或卸载  | 在已禁用或卸载时，不使用 Microsoft Defender 防病毒。 不会扫描文件，并且不会修正威胁。 通常，我们不建议禁用或卸载 Microsoft Defender 防病毒。  |
 
 要了解详细信息，请参阅 [Microsoft Defender 防病毒](microsoft-defender-antivirus-compatibility.md)。
@@ -69,11 +69,15 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 3. 在结果列表中，查看 **AMRunningMode** 行。
 
    - **正常** 表示 Microsoft Defender 防病毒在主动模式下运行。
-   - **被动模式** 表示 Microsoft Defender 防病毒正在运行，但不是设备上的主要防病毒/反恶意软件产品。
-   - **EDR 阻止模式** 表示 Microsoft Defender 防病毒正在运行，并且已启用 Microsoft Defender for Endpoint 中名为“阻止模式下的 EDR”的功能。 （请参阅 [阻止模式下的终结点检测和响应 (EDR)](edr-in-block-mode.md)。）
-   - **SxS 被动模式** 表示 Microsoft Defender 防病毒与其他防病毒/反恶意软件产品一起运行，但处于被动模式下，并且设备未加入 Microsoft Defender for Endpoint。 在这种情况下，Microsoft Defender 防病毒使用有限的定期扫描。 要了解详细信息，请参阅 [在 Microsoft Defender 防病毒中使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)。
 
-要了解 Get-MpComputerStatus PowerShell cmdlet 的详细信息，请参阅参考文章 [get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。
+   - **被动模式** 表示 Microsoft Defender 防病毒正在运行，但不是设备上的主要防病毒/反恶意软件产品。 被动模式仅适用于已载入 Microsoft Defender for Endpoint 且满足特定要求的设备。 若要了解详细信息，请参阅 [Microsoft Defender 防病毒在被动模式](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)运行的要求。
+
+   - **EDR 阻止模式** 意味着Microsoft Defender 防病毒正在运行，并且在阻止模式下 [终结点检测和响应 （EDR），](edr-in-block-mode.md)（Microsoft Defender for Endpoint 中的功能）已启用。
+
+   - **SxS 被动模式** 意味着Microsoft Defender 防病毒与其他防病毒/反恶意软件产品一起运行，并且[使用有限定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)。
+
+> [!TIP]
+> 要了解 Get-MpComputerStatus PowerShell cmdlet 的详细信息，请参阅参考文章 [get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>获取防病毒/反恶意软件平台更新
 

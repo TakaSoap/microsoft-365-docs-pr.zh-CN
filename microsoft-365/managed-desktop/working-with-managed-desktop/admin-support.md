@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 041f493e81a38b09fd064eaac866af74913e0b5c9986dd6e752eec80ba86a9e8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b72218f1174eb06a99b5cc0fbb4788b40c867038fd5edfb3f76632b072ed3f73
+ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794614"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57803472"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
@@ -23,17 +23,17 @@ ms.locfileid: "53794614"
 ## <a name="open-a-new-support-request"></a>打开新的支持请求
 
 1. 登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到"**租户管理"** 菜单。
-2. 查找"Microsoft 托管桌面"部分，然后选择"服务 **请求"。**
-3. 在 **"支持请求"上**，选择 **"+ 新支持票证"。**
-4. 选择 **与你需要的帮助** 匹配的支持请求类型。 下表概述了这些选项。
-5. 选择 **"严重性级别"。** 有关详细信息，请参阅支持 [请求严重性定义](#sev)。
+2. 查找"Microsoft 托管桌面"部分，然后选择"**服务请求"。**
+3. 在"**服务请求"** 边栏选项卡上，选择 **"+ 新建支持请求"。**
+4. 选择 **与** 你需要的帮助匹配的请求类型。 下表概述了这些选项。
+5. 选择 **"严重性"** 级别。 有关详细信息，请参阅支持 [请求严重性定义](#sev)。
 6. 尽可能提供有关请求的信息，以帮助团队快速响应。 根据请求的类型，您可能需要提供不同的详细信息。
 7. 查看您提供的所有信息的准确性。
 8. 准备就绪后，选择 **“创建”**。
 
 支持请求类型|何时使用
 ---|---
-事件|例如，Microsoft 托管桌面运营团队调查变更或服务中断的广泛影响。
+事件|您需要Microsoft 托管桌面运营团队调查由变更或服务中断等大范围影响导致的用户问题。
 信息请求|你正在计划网络、代理配置、VPN 系统、证书过期更改，或者只需有关该服务的一些信息。 在组织内部Microsoft 托管桌面更改时，建议来自运营团队的响应。
 更改请求|你需要让Microsoft 托管桌面团队做出更改，如在更新组之间移动设备。
 
@@ -56,7 +56,7 @@ ms.locfileid: "53794614"
 
 如果需要编辑案例的详细信息，例如更新主要案例联系人，则需要执行以下步骤：
 
-1. 从 **"服务请求**"边栏选项卡 **，在** [](https://endpoint.microsoft.com/)Microsoft Endpoint Manager 的"租户管理"菜单中，使用搜索栏或筛选器查找你感兴趣的编辑案例。
+1. 从 **"服务请求**"边栏选项卡，在 Microsoft Endpoint Manager [](https://endpoint.microsoft.com/)的"租户管理"菜单中，使用搜索栏或筛选器查找你感兴趣的编辑案例。
 2. 选择案例以打开请求的详细信息
 3. 滚动到请求详细信息的底部， **然后选择编辑**。
 4. 更新可编辑的信息、向案例添加附件或添加服务工程团队的注释，然后选择"保存 **"。**

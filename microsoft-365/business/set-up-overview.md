@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解从订阅Microsoft 365 商业高级版添加域和用户的设置步骤，以及设置安全策略等。
-ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7c09dca354781bf92f6bbecca0f3fb9875fb654515fe35c2f96cc780a894a764
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53803214"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -89,10 +89,10 @@ ms.locfileid: "52245056"
 
 - **访问本地资源**
 
-     - 如果您的组织使用 Windows Server Active Directory 本地，您可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保留对需要本地身份验证的本地资源的访问权限。 按照启用[已加入域Windows 10设备中的步骤操作，Microsoft 365 商业高级版](manage-windows-devices.md)进行设置。 这是首选方法，并且此状态中的设备称为加入混合 Azure AD 的设备。
+     - 如果你的组织在本地Windows Server Active Directory，你可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照启用[已加入域Windows 10设备中的步骤操作，Microsoft 365 商业高级版](manage-windows-devices.md)进行设置。 这是首选方法，并且此状态中的设备称为加入混合 Azure AD 的设备。
 
     - 如果你的企业有一个本地 Active Directory，其中包含一些本地资源 (例如文件共享和打印机) ，你可以按照此处的步骤为加入 Azure AD 的设备授予对这些资源的访问权限：在 Microsoft 365 商业高级版 中从加入[Azure AD](access-resources.md)的设备访问本地资源。
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365企业培训视频 (](../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频](../business-video/index.yml)(链接页面)

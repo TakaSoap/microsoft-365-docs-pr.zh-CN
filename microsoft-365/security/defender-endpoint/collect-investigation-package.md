@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a857e2cf9c20f9c31503bb74cbac33bd79a64e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1d1652a866d8d3cfd7b1270a09abead8a27507a7d7ec7dde2a5a5dceb465677e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649595"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523389"
 ---
 # <a name="collect-investigation-package-api"></a>收集调查包 API
 
@@ -45,6 +45,10 @@ ms.locfileid: "53649595"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+
+> [!IMPORTANT]
+>
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
 
 ## <a name="permissions"></a>权限
 

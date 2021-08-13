@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6e5db8d641c4b38f6b660479be451ddaa5a23aac440e8d98757cac99f2160fb1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890943"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 

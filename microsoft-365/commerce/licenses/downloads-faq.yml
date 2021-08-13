@@ -4,9 +4,7 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
-  ms.reviewer:
-  - Rani Chegondi
-  - Armando Valenzuela
+  ms.reviewer: 'racheg, armanv'
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
@@ -14,99 +12,109 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: 有关下载Microsoft 365 管理中心常见问题。
-  ms.openlocfilehash: 9b487a4b6fdb517267a9af2d65112bee4af715260ef6e53a82823dd7929c64e8
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53843343"
 title: 下载常见问题
 summary: ''
 sections:
-- name: 常规
-  questions:
-  - question: >
-      从应用程序下载软件的要求Microsoft 365 管理中心？
-    answer: "您必须为计划下载的产品购买许可证，并且必须访问每个许可证的有效产品密钥才能完成安装。 在下载产品之前验证许可协议。\n\n你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明**。 \n\n**注意** 并非所有产品都需要产品密钥。\n"
-  - question: >
-      可从管理中心下载哪些产品？
-    answer: >
-      如果下载权限与开放式许可证、开放式价值或开放式价值订阅计划相关联，则只能下载已购买的产品。 管理中心仅显示已购买的许可证的下载。
+  - name: 常规
+    questions:
+      - question: |
+          从应用程序下载软件的要求Microsoft 365 管理中心？
+        answer: |
+          您必须为计划下载的产品购买许可证，并且必须访问每个许可证的有效产品密钥才能完成安装。 在下载产品之前验证许可协议。
 
+          你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明**。 
 
-      Select Plus (、Enterprise、Campus 或 School) 的其他许可计划允许你在购买许可证之前从目录中下载任何产品。
+          **注意** 并非所有产品都需要产品密钥。
+      - question: |
+          可从管理中心下载哪些产品？
+        answer: |
+          如果下载权限与开放式许可证、开放式价值或开放式价值订阅计划相关联，则只能下载已购买的产品。 管理中心仅显示已购买的许可证的下载。
 
+          Select Plus (、Enterprise、Campus 或 School) 的其他许可计划允许你在购买许可证之前从目录中下载任何产品。
 
-      如果配置文件同时链接到"开放"和其他许可计划，则可查看整个目录。
+          如果配置文件同时链接到"开放"和其他许可计划，则可查看整个目录。
 
+          若要确定产品是否有资格下载：
 
-      若要确定产品是否有资格下载：
+            1. 选择 **批量许可**，然后选择产品或 **查看下载**。
+            2. 在 **"** 下载"下，如果产品不可用，你将看到"此产品不可下载"。
+      - question: |
+          什么是 CAL (客户端) ？
+        answer: |
+          CAL (CAL) 客户端访问许可证是为用户提供访问服务器服务的权利的许可证。
 
-        1. 选择 **批量许可**，然后选择产品或 **查看下载**。
-        2. 在 **"** 下载"下，如果产品不可用，你将看到"此产品不可下载"。
-  - question: >
-      什么是 CAL (客户端) ？
-    answer: >
-      CAL (CAL) 客户端访问许可证是为用户提供访问服务器服务的权利的许可证。
+          无需软件下载文件或产品密钥即可激活 CAL。 而是通过激活向导直接从计算机激活和安装产品。
 
+          CAL 的示例包括：
+            - Windows Server
+            - SQL Server
+            - Exchange Server
+            - Skype for Business Server
+            - SharePoint Server
+            - System Center
+            - Project Server
+      - question: |
+          如何下载Office for Mac？ 
+        answer: |
+          若要运行批量许可版本的 Office for Mac，必须下载并安装以下文件：
+            - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列化Office for Mac程序包。
+            - 安装[Office for Mac包 。](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) 单个应用程序的安装程序程序包文件也可在 Microsoft 365 管理中心。 Office for Mac不需要产品密钥，因为 VL 序列化程序用于激活批量许可版本的 Office for Mac。
+      - question: |
+          如何在管理中心下载产品？
+        answer: |
+          若要在管理中心下载产品：
+          1. 选择 **批量许可**，然后选择产品或 **查看下载**。
+          2. 在 **"下载**"下，选择组件并选择下载操作或下载图标。 
 
-      无需软件下载文件或产品密钥即可激活 CAL。 而是通过激活向导直接从计算机激活和安装产品。
+          若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将您分配到以下角色之一来提供访问权限：
+            - 管理员
+            - 下载
+            - 软件保障管理器
+      - question: |
+          如何更改下载设置？
+        answer: |
+          若要访问管理中心中的下载设置，请执行以下操作：
+          1. 选择 **批量许可**，然后选择产品或 **查看下载**。
+          2. 在 **"下载**"下，**选择"语言****和操作系统类型"。**
 
+          **注意** 弹出窗口阻止程序可以阻止下载。 从管理中心下载软件时，请确保已禁用弹出窗口阻止程序。
+      - question: |
+          什么是 EXE 和 ISO 文件？
+        answer: |
+          从管理中心下载产品时，可以选择两种文件类型：
+            
+            - **可执行 (EXE**) 文件可以下载并安装在同一个系统中，但无法创建单独的启动磁盘以安装在其他计算机上。
+            - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的确切表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。
 
-      CAL 的示例包括：
-        - Windows Server
-        - SQL Server
-        - Exchange Server
-        - Skype for Business Server
-        - SharePoint Server
-        - System Center
-        - Project Server
-  - question: "如何下载Office for Mac？ \n"
-    answer: >
-      若要运行批量许可版本的 Office for Mac，必须下载并安装以下文件：
-        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列化Office for Mac程序包。
-        - 安装[Office for Mac包 。](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) 单个应用程序的安装程序程序包文件也可在 Microsoft 365 管理中心。 Office for Mac不需要产品密钥，因为 VL 序列化程序用于激活批量许可版本的 Office for Mac。
-  - question: >
-      如何在管理中心下载产品？
-    answer: "若要在管理中心下载产品：\n1. 选择 **批量许可**，然后选择产品或 **查看下载**。\n2. 在 **\"下载**\"下，选择组件并选择下载操作或下载图标。 \n\n若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将您分配到以下角色之一来提供访问权限：\n  - 管理员\n  - 下载\n  - 软件保障管理器\n"
-  - question: >
-      如何更改下载设置？
-    answer: >
-      若要访问管理中心中的下载设置，请执行以下操作：
+          **注意** 并非所有产品都提供所有语言和格式。
+      - question: |
+          如何使用 ISO 映像文件软件将 ISO 映像文件下载并保存到 CD-R 或 DVD-R 磁盘？
+        answer: |
+          如果你将电脑与 Windows操作系统一起使用，则无需其他软件来刻录 CD-R 或 DVD-R。 双击下载的 ISO 文件，然后按照映像刻录器向导中的步骤操作。
 
-      1. 选择 **批量许可**，然后选择产品或 **查看下载**。
+          如果你使用的是除操作系统外的任何操作系统Windows，你可能需要其他软件。 如果你的计算机配备了 CD/DVD 刻录机，则该软件可能会加载到电脑上。 大多数 CD-R/DVD-R 写入软件都允许您从映像文件创建磁盘。 选择一个菜单项（ **如将图像复制到 CD** 或 **刻录图像）** 以访问此功能。
+      - question: |
+          如何作为虚拟设备装载和访问 ISO 文件？
+        answer: |
+          如果你的计算机上未安装 CD/DVD 刻录机，或者媒体不可用，你可以将 ISO 文件装载为虚拟驱动器。 使用此方法，计算机认为该文件是真正的磁盘驱动器，你可以从此虚拟磁盘读取文件。
 
-      2. 在 **"下载**"下，**选择"语言****和操作系统类型"。**
+          **注意** 建议仅对安装应用程序（如Office或次要系统升级）使用这种方法。 无法通过这种方法安装操作系统，因为虚拟驱动器在安装过程中会消失。
+      - question: |
+          如何获取对已下载产品的支持？
+        answer: |
+          有关支持选项的列表，请参阅 [Microsoft 支持](https://support.microsoft.com/)。 某些批量许可客户可以使用问题解决支持（软件保障权益）。 查看软件保障权益以验证你的资格。
+      - question: |
+          在哪里可以找到对此常见问题解答中涵盖的主题的支持？
+        answer: |
+          有关包括视频在内的更多培训资源，请参阅 [Microsoft 批量许可服务中心培训和资源](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
+      - question: |
+          如何联系 Microsoft 支持部门？
+        answer: |
+          有关 VLSC 客户电话或 Web 表单支持，请参阅 [联系我们](/licensing/contact-us)。 Microsoft 在 24 小时内响应 Web 表单提交。
+additionalContent: |
 
+  ## <a name="additional-resources"></a>其他资源
 
-      **注意** 弹出窗口阻止程序可以阻止下载。 从管理中心下载软件时，请确保已禁用弹出窗口阻止程序。
-  - question: >
-      什么是 EXE 和 ISO 文件？
-    answer: "从管理中心下载产品时，可以选择两种文件类型：\n  \n  - **可执行 (EXE**) 文件可以下载并安装在同一个系统中，但无法创建单独的启动磁盘以安装在其他计算机上。\n  - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的确切表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。\n\n**注意** 并非所有产品都提供所有语言和格式。\n"
-  - question: >
-      如何使用 ISO 映像文件软件将 ISO 映像文件下载并保存到 CD-R 或 DVD-R 磁盘？
-    answer: >
-      如果你将电脑与 Windows操作系统一起使用，则无需其他软件来刻录 CD-R 或 DVD-R。 双击下载的 ISO 文件，然后按照映像刻录器向导中的步骤操作。
+  - [产品密钥常见问题解答](product-keys-faq.yml)
 
-
-      如果你使用的是除操作系统外的任何操作系统Windows，你可能需要其他软件。 如果你的计算机配备了 CD/DVD 刻录机，则该软件可能会加载到电脑上。 大多数 CD-R/DVD-R 写入软件都允许您从映像文件创建磁盘。 选择一个菜单项（ **如将图像复制到 CD** 或 **刻录图像）** 以访问此功能。
-  - question: >
-      如何作为虚拟设备装载和访问 ISO 文件？
-    answer: >
-      如果你的计算机上未安装 CD/DVD 刻录机，或者媒体不可用，你可以将 ISO 文件装载为虚拟驱动器。 使用此方法，计算机认为该文件是真正的磁盘驱动器，你可以从此虚拟磁盘读取文件。
-
-
-      **注意** 建议仅对安装应用程序（如Office或次要系统升级）使用这种方法。 无法通过这种方法安装操作系统，因为虚拟驱动器在安装过程中会消失。
-  - question: >
-      如何获取对已下载产品的支持？
-    answer: >
-      有关支持选项的列表，请参阅 [Microsoft 支持](https://support.microsoft.com/)。 某些批量许可客户可以使用问题解决支持（软件保障权益）。 查看软件保障权益以验证你的资格。
-  - question: >
-      在哪里可以找到对此常见问题解答中涵盖的主题的支持？
-    answer: >
-      有关包括视频在内的更多培训资源，请参阅 [Microsoft 批量许可服务中心培训和资源](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
-  - question: >
-      如何联系 Microsoft 支持部门？
-    answer: >
-      有关 VLSC 客户电话或 Web 表单支持，请参阅 [联系我们](/licensing/contact-us)。 Microsoft 在 24 小时内响应 Web 表单提交。
-additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [产品密钥常见问题解答](product-keys-faq.yml)\n\n- [开放计划联机服务激活常见问题解答](online-service-activation-faq.yml)"
+  - [开放计划联机服务激活常见问题解答](online-service-activation-faq.yml)

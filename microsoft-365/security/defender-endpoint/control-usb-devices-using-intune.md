@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c7bc0a7378225d027e42ddfc1d08f946ad5046
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7b2a03cac1f81af4d55f3eb1d79de114abe9599094dbbf484c44dc204f0e8290
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595770"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523425"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体
 
@@ -66,7 +66,6 @@ Microsoft [建议使用分层](https://aka.ms/devicecontrolblog)方法来保护�
 |[允许安装和使用具有匹配设备实例 ID 的专门批准的外围设备](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids)|只能安装和使用与这些设备实例任何一个匹配的已批准外围设备。|
 |[使用匹配的设备实例 ID 阻止安装和使用专门禁止的外围设备](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids)|你无法安装或使用与这些设备实例 ID 匹配的任何禁止的外围设备。|
 |[限制使用服务蓝牙](#limit-services-that-use-bluetooth)|您可以限制可以使用此蓝牙。|
-|[使用 Microsoft Defender for Endpoint 基线设置](#use-microsoft-defender-for-endpoint-baseline-settings)|可以使用 Defender for Endpoint 安全基线设置 ATP 的建议配置。|
 |
 
 ### <a name="restrict-usb-drives-and-other-peripherals"></a>限制 USB 驱动器和其他外围设备
@@ -118,7 +117,7 @@ Microsoft [建议使用分层](https://aka.ms/devicecontrolblog)方法来保护�
 
 若要查找设备 ID，请参阅查找[设备 ID。](#look-up-device-id) 
 
-例如: 
+例如：
 
 1. 从允许使用与这些设备设置匹配的驱动程序安装 **设备中删除类** USBDevice。
 2. 在"允许安装与这些设备 ID 匹配的任何设备"中添加 **要允许的设备 ID。** 
@@ -238,12 +237,6 @@ Microsoft Defender for Endpoint 使用以下任一选项阻止安装和使用禁
 > [!div class="mx-imgBorder"]
 > !["设置蓝牙屏幕截图](images/bluetooth.png)
 
-### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>使用 Microsoft Defender for Endpoint 基线设置
-
-Microsoft Defender for Endpoint 基线设置表示威胁防护的建议配置。 基线的配置设置位于配置设置的编辑配置文件页中。
-
-> [!div class="mx-imgBorder"]
-> ![MEM 中的基线](images/baselines.png)
 
 ## <a name="prevent-threats-from-removable-storage"></a>防止来自可移动存储的威胁
   

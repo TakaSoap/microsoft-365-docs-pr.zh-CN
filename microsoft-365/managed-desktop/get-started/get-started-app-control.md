@@ -10,26 +10,26 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 431e6cb3b8d7ab7e1dd317918fab4821889c7d4e
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3b1e74289046f7c04b77b25448af409966117fd9836f22dfdf813bdfd732b524
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53890955"
 ---
 # <a name="get-started-with-app-control"></a>开始使用应用程序控制
 
-在环境中启用应用控制之前，请务必查看并了解 [Microsoft 托管](../service-description/app-control.md) 桌面如何实现它以及你的角色和责任。
+在环境中启用应用控制之前，请务必查看并了解你Microsoft 托管桌面[实现](../service-description/app-control.md)它以及你的角色和责任。
 
-Microsoft 托管桌面通过关注获取安全基本策略的更具挑战性方面来简化应用控制。 IT 管理员仍必须在测试圈中测试你的应用，并查看日志中是否有警告或错误。 如果应用需要豁免，你可以提出请求，或者 Microsoft 托管桌面操作可能会，具体取决于谁先检测到它。
+Microsoft 托管桌面关注获取安全基本策略的更具挑战性方面，从而简化了应用控制。 IT 管理员仍必须在测试圈中测试你的应用，并查看日志中是否有警告或错误。 如果应用需要豁免，你可以提出请求，Microsoft 托管桌面操作可能，具体取决于谁先检测到它。
 
 ## <a name="initial-deployment-of-apps"></a>应用的初始部署
 
-首次部署应用时，Microsoft 托管桌面需要评估其当前行为。 启用应用控制的确切步骤取决于是否已在你的环境中部署设备。
+首次部署应用时，Microsoft 托管桌面评估其当前行为。 启用应用控制的确切步骤取决于是否已在你的环境中部署设备。
 
 ### <a name="devices-not-yet-in-use"></a>尚未使用的设备
 
-如果尚未使用任何设备，请通过 Microsoft 托管桌面操作打开服务票证，请求我们启用应用控制。 按照此计划，操作将逐步将策略部署到部署组：
+如果你尚未使用任何设备，请打开一个服务票证，Microsoft 托管桌面操作请求我们启用应用控制。 按照此计划，操作将逐步将策略部署到部署组：
 
 |部署组  |策略类型  |Timing  |
 |---------|---------|---------|
@@ -42,9 +42,9 @@ Microsoft 托管桌面通过关注获取安全基本策略的更具挑战性方�
 
 ### <a name="devices-already-in-use"></a>已在使用的设备
 
-如果至少有一台 Microsoft 托管桌面设备已在使用中，请按照以下步骤操作：
+如果已至少有一个Microsoft 托管桌面设备，请按照以下步骤操作：
 
-1. 使用 Microsoft 托管桌面操作打开服务票证，请求我们启用应用控制。 操作将审核 [策略部署到](../service-description/app-control.md#audit-policy) 所有设备。
+1. 使用请求启用Microsoft 托管桌面控制的应用操作打开服务票证。 操作将审核 [策略部署到](../service-description/app-control.md#audit-policy) 所有设备。
 2. [测试应用程序](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) 以查看是否阻止了任何应用程序。 如果应用程序被阻止，请打开 [签名者请求](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer)。 
 3. 完成测试后，无论 (结果如何，) 通知操作，并通知任何挂起的签名者请求。 按照此计划，操作将逐步将策略部署到部署组：
 

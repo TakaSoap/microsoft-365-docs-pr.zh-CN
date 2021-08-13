@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e8cb3b843ce3f8bbbec6d1dc96bf2aa237eaa2a
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 3274e3e4b2992ad6d7309b01bc7ed8b7113302fc6fbbb4e706cb1365ae58821b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53845331"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -106,7 +106,7 @@ ms.locfileid: "53655559"
 
     ![向导Microsoft Endpoint Configuration Manager的图像8](images/configmgr-membership-rules.png)
 
-9. 选择“**下一步**”。
+9. 选择 **下一步**。
 
     ![Microsoft Endpoint Configuration Manager向导9 的图像](images/configmgr-confirm.png)
 
@@ -154,7 +154,7 @@ ms.locfileid: "53655559"
 
 9. 从上面的步骤 4 导航到已下载文件的位置。
 
-10. 单击“**下一步**”。
+10. 单击 **下一个**。
 11. 使用"无"或"所有文件类型 (**相应的示例配置代理) 。** 
 
     ![配置设置的图像1](images/configmgr-config-settings.png)

@@ -18,17 +18,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e23b701fc64a24a6befe4fea1769e31092288729
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 59a9ae07b6d8073bd46a36a803abda3b419cc4cb33e3739250474a2217fbbf8a
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655601"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523358"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -49,17 +48,17 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
   ```
 
 - 变量 `HTTPS_PROXY` 在程序包管理器全局配置中定义。 例如，在 Ubuntu 18.04 中，可以将以下行添加到 `/etc/apt/apt.conf.d/proxy.conf` ：
-  
+
   ```bash
   Acquire::https::Proxy "http://proxy.server:port/";
   ```
 
   > [!CAUTION]
   > 请注意，上述两种方法可定义要用于系统上其他应用程序的代理。 请谨慎使用此方法，或仅在本该配置是一般全局配置时使用此方法。
-  
-- 变量 `HTTPS_PROXY` 位于安装或卸载命令的之前。 例如，使用 APT 程序包管理器，在安装适用于 Endpoint 的 Microsoft Defender 时，按如下所示在变量前预置： 
 
-  ```bash  
+- 变量 `HTTPS_PROXY` 位于安装或卸载命令的之前。 例如，使用 APT 程序包管理器，在安装适用于 Endpoint 的 Microsoft Defender 时，按如下所示在变量前预置：
+
+  ```bash
   HTTPS_PROXY="http://proxy.server:port/" apt install mdatp
   ```
 
@@ -71,22 +70,20 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
 请注意，如果需要代理但不配置代理，安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
 
 ## <a name="post-installation-configuration"></a>安装后配置
-  
-安装后，必须在 Defender for Endpoint 服务文件中 `HTTPS_PROXY` 定义环境变量。 为此，在 `/lib/systemd/system/mdatp.service` 作为根用户运行时，在文本编辑器中打开。 然后，可以通过以下两种方式之一将变量传播到服务：
 
-> [!NOTE]
-> 在 CentOS 或 RedHat Linux 分发上，Endpoint 服务文件的位置为 `/usr/lib/systemd/system/mdatp.service` 。
+安装后，必须在 Defender for Endpoint 服务文件中 `HTTPS_PROXY` 定义环境变量。 为此，请运行 `sudo systemctl edit --full mdatp.service` 。
+然后，可以通过以下两种方式之一将变量传播到服务：
 
 - 取消注释行并 `#Environment="HTTPS_PROXY=http://address:port"` 指定静态代理地址。
 
 - 添加一行 `EnvironmentFile=/path/to/env/file` 。 此路径可以指向 `/etc/environment` 或自定义文件，其中任一文件都需要添加以下行：
-  
+
   ```bash
   HTTPS_PROXY="http://proxy.server:port/"
   ```
 
-修改文件 `mdatp.service` 后，保存并关闭它。 重新启动服务，以便可以应用更改。 在 Ubuntu 中，这包括两个命令：  
+修改 `mdatp.service` 后，保存文件并重新启动服务，以便可以使用以下命令应用更改：
 
 ```bash
-systemctl daemon-reload; systemctl restart mdatp
+sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```

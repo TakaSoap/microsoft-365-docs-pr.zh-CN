@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 36bd812bfe41ca5113fe9ceb5710de3ded15210ca5e4eda4a9065fc1c1a11cdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794110"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523330"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -36,19 +36,19 @@ ms.locfileid: "53794110"
 
 可以使用以下任一方法启用受控文件夹访问权限：
 
-* [Windows 安全中心应用](#windows-security-app)
-* [Microsoft Endpoint Manager](#endpoint-manager)
-* [移动设备管理 (MDM) ](#mobile-device-management-mdm)
-* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
-* [组策略](#group-policy)
-* [PowerShell](#powershell)
+- [Windows 安全中心应用](#windows-security-app)
+- [Microsoft Endpoint Manager](#endpoint-manager)
+- [移动设备管理 (MDM) ](#mobile-device-management-mdm)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [组策略](#group-policy)
+- [PowerShell](#powershell)
 
 [审核](evaluate-controlled-folder-access.md) 模式允许你测试此功能在 (并查看) 事件，而不会影响设备的正常使用。
 
 禁用本地管理员列表合并的组策略设置将覆盖受控文件夹访问权限设置。 它们还通过受控文件夹访问权限覆盖受保护的文件夹和允许的本地管理员设置的应用。 这些策略包括：
 
-* Microsoft Defender 防病毒 **配置列表的本地管理员合并行为**
-* System Center Endpoint Protection **允许用户添加排除和替代**
+- Microsoft Defender 防病毒 **配置列表的本地管理员合并行为**
+- System Center Endpoint Protection **允许用户添加排除和替代**
 
 有关禁用本地列表合并的信息，请参阅阻止或 [允许用户在本地修改 Microsoft Defender AV 策略设置](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)。
 
@@ -119,13 +119,13 @@ ms.locfileid: "53794110"
 3. 展开树以 **Windows攻击> Microsoft Defender 防病毒 > Windows Defender受控>访问权限的组件**。
 
 4. 双击配置受控文件夹 **访问权限** 设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
-    * **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
-    * **禁用 (默认)** - 受控文件夹访问权限功能将不起作用。 所有应用都可以对受保护的文件夹中的文件进行更改。
-    * **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在事件Windows日志中，您可以在其中评估对组织的影响。
-    * **仅阻止磁盘修改**- 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 可以在 Microsoft > Operational **> Windows > Windows Defender >** Id 1123 的应用程序>日志中找到这些日志。
-    * **仅** 审核磁盘修改 - 仅在应用程序和服务日志Microsoft Windows Windows Defender Operational ID  >    >    >    >    >  **1124**) 下的 Windows (事件日志中记录写入受保护磁盘扇区的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
+   - **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
+   - **禁用 (默认)** - 受控文件夹访问权限功能将不起作用。 所有应用都可以对受保护的文件夹中的文件进行更改。
+   - **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在事件Windows日志中，您可以在其中评估对组织的影响。
+   - **仅阻止磁盘修改**- 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 这些日志位于 Microsoft  Windows Windows Defender \> ID \> \> \> \> 1123 的应用程序和服务日志中。
+   - **仅** 审核磁盘修改 - 仅在应用程序和服务日志Microsoft Windows Windows Defender Operational ID  >   \>  \>  \>  \> **1124**) 下的 Windows (事件日志中记录写入受保护磁盘扇区的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
 
-      ![在下拉列表中选中的组策略选项"启用"和"审核模式"的屏幕截图](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
+      ![在下拉列表中选中的组策略选项"启用"和"审核模式"的屏幕截图](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > 若要完全启用受控文件夹访问权限，必须将组策略选项设置为 **已启用**，然后选择选项下拉菜单中的阻止。
@@ -146,6 +146,6 @@ ms.locfileid: "53794110"
 
 ## <a name="see-also"></a>另请参阅
 
-* [使用受控文件夹访问保护文重要件夹](controlled-folders.md)
-* [自定义受控文件夹访问](customize-controlled-folders.md)
-* [评估 Microsoft Defender for Endpoint](evaluate-mde.md)
+- [使用受控文件夹访问保护文重要件夹](controlled-folders.md)
+- [自定义受控文件夹访问](customize-controlled-folders.md)
+- [评估 Microsoft Defender for Endpoint](evaluate-mde.md)
