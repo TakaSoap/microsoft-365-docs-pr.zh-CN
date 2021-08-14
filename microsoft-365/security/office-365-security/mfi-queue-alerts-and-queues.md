@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: '& 管理员可以了解如何使用安全与合规中心内"邮件流"仪表板中的"队列"小组件监视通过出站连接器发送到其内部部署或合作伙伴组织的失败邮件流。'
+description: 管理员可以 &了解如何使用安全与合规中心内"邮件流"仪表板中的"队列"小组件监视通过出站连接器发送到其内部部署或合作伙伴组织的失败邮件流。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9b4bee0a8be6b7fdcc022add2092fb16b88d5d2f3f245e6a998036d66ed490af
@@ -19,7 +19,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "56790636"
 ---
-# <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&见解
+# <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&队列见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,11 +33,11 @@ ms.locfileid: "56790636"
 - 连接器配置不正确。
 - 本地环境中已发生网络或防火墙更改。
 
-Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期，并返回到未送达报告中的发件人 (也称为未送达报告或退回邮件) 。
+Microsoft 365 24 小时内继续重试传递。 24 小时后，这些邮件将过期，并返回到未送达报告中的发件人 (也称为"未送达报告"或"退回邮件) 。
 
 如果排队的电子邮件卷超过预定义的阈值 (默认值为 200 封邮件) ，则信息可在以下位置获取：
 
-- 安全 **与** 合规中心内 [的邮件](mail-flow-insights-v2.md) 流仪表板 [中的&见解](https://protection.office.com)。 有关详细信息，请参阅本文中的 [邮件流仪表板中的](#queues-insight-in-the-mail-flow-dashboard) 队列见解部分。
+- 安全 **与** 合规中心内 [邮件流仪表板](mail-flow-insights-v2.md)[中的&见解](https://protection.office.com)。 有关详细信息，请参阅本文中的 [邮件流仪表板中的](#queues-insight-in-the-mail-flow-dashboard) 队列见解部分。
 
 - 警报显示在安全与合规中心的 **"** 最近使用警报"仪表板&警报 [](https://protection.office.com) ( \> **或** <https://protection.office.com/alertsdashboard>) 。
 
@@ -55,7 +55,7 @@ Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期�
 
 3. 在 **打开的"消息已** 延迟"飞出中，你可以打开或关闭警报并配置通知设置。
 
-   ![邮件已延迟警报策略详细信息 安全&合规中心](../../media/mfi-queued-messages-alert-policy.png)
+   ![邮件已延迟警报策略详细信息 安全&中心](../../media/mfi-queued-messages-alert-policy.png)
 
    - **状态**：你可以打开或关闭警报。
 
@@ -81,7 +81,7 @@ Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期�
 If you click the number of messages on the widget， a **Messages queued** flyout appears with the following information：
 
 - **排队邮件数**
-- **连接器名称**：单击连接器名称，在 EAC Exchange管理中心 (连接器) 。
+- **连接器名称**：单击连接器名称，在 EAC Exchange管理 (管理) 。
 - **队列启动时间**
 - **最旧邮件已过期**
 - **目标服务器**

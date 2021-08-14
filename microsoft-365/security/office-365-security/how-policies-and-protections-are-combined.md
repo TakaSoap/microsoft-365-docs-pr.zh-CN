@@ -33,9 +33,9 @@ ms.locfileid: "56790493"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在Microsoft 365没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中，入站电子邮件可能会受到多种形式的保护标记。 例如，EOP 中可用于所有 Microsoft 365 客户的内置防钓鱼策略，以及 Microsoft Defender 为 Office 365 客户提供的更可靠的防钓鱼策略。 邮件还会通过恶意软件、垃圾邮件、网络钓鱼等的多个检测扫描。鉴于所有这些活动，可能会对应用哪个策略产生混淆。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) ) 组织中，没有 Exchange Online 邮箱的入站电子邮件可能会受到多种形式的保护标记。 例如，EOP 中可用于所有 Microsoft 365 客户的内置防钓鱼策略，以及可供 Office 365 客户 Microsoft Defender 使用更可靠的防钓鱼策略。 邮件还会通过恶意软件、垃圾邮件、网络钓鱼等的多个检测扫描。鉴于所有这些活动，可能会对应用哪个策略产生混淆。
 
-通常，应用于邮件的策略在 CAT (Category 属性的 **X-Forefront-Antispam-Report** **标头)** 标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
+通常，应用于邮件的策略在 CAT (Category) 属性的 **X-Forefront-Antispam-Report** **标头中** 标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
 有两个主要因素可确定将哪个策略应用于邮件：
 
@@ -57,9 +57,9 @@ ms.locfileid: "56790493"
   |8 |批量邮件|CAT：BULK|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup>这些功能仅在 Microsoft Defender for Office 365 中的防钓鱼策略中Office 365。
+  <sup>\*</sup>这些功能仅在 Microsoft Defender for Office 365 中的反网络钓鱼策略中Office 365。
 
-- 策略优先级：对于每种类型的策略 (反垃圾邮件、反恶意软件、防钓鱼等 ) ，都有一个适用于所有用户的默认策略，但你可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略的应用顺序。 默认策略始终应用最后。
+- 策略优先级：对于每种类型的策略 (反垃圾邮件、反恶意软件、防钓鱼等 ) ，都有一个适用于所有用户的默认策略，但你可以创建自定义策略来应用于特定用户。 每个自定义策略都有一个优先级值，用于确定策略的应用顺序。 默认策略始终应用最后。
 
   > [!IMPORTANT]
   > 如果用户在相同类型的多个策略中定义，则仅应用优先级最高的策略。 不会为用户评估此类型的任何剩余策略 (包括默认策略) 。
@@ -85,4 +85,4 @@ ms.locfileid: "56790493"
 
 - 为适用于少数用户的策略分配更高的优先级，为适用于大量用户的策略分配较低的优先级。 请记住，默认策略始终应用最后一个。
 - 将高优先级策略配置为具有比较低优先级策略更严格或更专门的设置。
-- 请考虑使用更少的自定义策略 (仅对需要更严格或更专业设置的用户使用) 。
+- 请考虑使用更少的自定义策略 (对需要更严格或更专门的设置的用户使用自定义) 。

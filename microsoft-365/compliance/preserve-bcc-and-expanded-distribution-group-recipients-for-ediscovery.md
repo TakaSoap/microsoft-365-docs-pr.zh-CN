@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place保留、诉讼保留Microsoft 365保留策略，您可以保留邮箱内容以满足法规遵从性要求和电子数据展示要求。
-ms.openlocfilehash: f00ed951fb68778b9c62ae874c2cca964bd6cb5c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80481a5b7c85167742e79c86c6d60e52f80aa0e4b1dd9b128e7ce188f5ddf09a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891807"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   
@@ -72,19 +72,19 @@ Exchange Online 2013 Exchange Server 2013 (累积更新 7 及更高版本) 有�
 
  **问：何时何地存储密件抄送收件人信息？**
   
-A. 默认情况下，在发件人邮箱的原始邮件中保留"Bcc"收件人信息。 如果"Bcc"收件人是通讯组，则仅在发件人的邮箱被保留或分配给某个邮件保留策略时，才能扩展Microsoft 365成员身份。
+答： 默认情况下，在发件人邮箱的原始邮件中保留"Bcc"收件人信息。 如果"Bcc"收件人是通讯组，则仅在发件人的邮箱被保留或分配给某个邮件保留策略时，才能扩展Microsoft 365成员身份。
   
  **问：何时何地存储展开的通讯组收件人列表？**
   
-A. 组成员身份在邮件发送时展开。 展开的通讯组的成员列表存储在发件人邮箱的原始邮件中。 发件人的邮箱必须位于"In-Place保留"或"诉讼保留"中，或分配给Microsoft 365策略。
+答： 组成员身份在邮件发送时展开。 展开的通讯组的成员列表存储在发件人邮箱的原始邮件中。 发件人的邮箱必须位于"In-Place保留"或"诉讼保留"中，或分配给Microsoft 365策略。
   
  **问：收件人/抄送收件人可以看到被密件抄送的收件人吗？**
   
 答：此信息并不包含在邮件标头中，对收件人/抄送收件人不可见。发件人可以看到其邮箱中所存储原始邮件中的密件抄送字段。搜索发件人邮箱时，合规部主管可以看到此信息。
   
- **问：如何确保始终保留展开的通讯组收件人？**
+ **Q.如何确保始终保留展开的通讯组收件人？**
   
-A. 若要确保展开的通讯组的成员始终与邮件一起保留，请[](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold)保留所有邮箱或创建组织范围内的Microsoft 365策略。 
+答： 若要确保展开的通讯组的成员始终与邮件一起保留，请[](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold)保留所有邮箱或创建组织范围内的Microsoft 365策略。 
   
  **问：支持哪些类型的组？**
   
@@ -104,4 +104,4 @@ A. 若要确保展开的通讯组的成员始终与邮件一起保留，请[](/E
   
  **问：如果通讯组中的一个成员在组织的全局地址列表 (GAL) 中被隐藏会怎样？**
   
-A. 没有任何影响。 如果收件人在 GAL 中隐藏，则这些收件人仍包括在展开通讯组的收件人列表中。
+答： 没有任何影响。 如果收件人在 GAL 中隐藏，则这些收件人仍包括在展开通讯组的收件人列表中。

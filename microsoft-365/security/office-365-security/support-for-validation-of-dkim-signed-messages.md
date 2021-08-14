@@ -36,11 +36,11 @@ Exchange Online Protection (EOP) 和 Exchange Online 都支持对[DKIM](https://
 
 DKIM 验证电子邮件是否被其他人欺骗，并且发送自它所 *声称的域*。 它将电子邮件与发送它的组织链接在一起。 DKIM 验证将自动用于使用 IPv6 发送的所有邮件。 Microsoft 365通过 IPv4 发送邮件时，还支持 DKIM。  (有关 IPv6 支持的信息，请参阅支持通过 [IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md).) 
 
-DKIM 验证显示在邮件头的 DKIM-Signature 头中的数字签名邮件。 验证结果DKIM-Signature标记在Authentication-Results标头中。 邮件标头文本将如下所示（其中 contoso.com 是发件人）：
+DKIM 验证显示在邮件头的 DKIM-Signature 头中的数字签名邮件。 验证结果DKIM-Signature标记在 Authentication-Results 标头中。 邮件标头文本将如下所示（其中 contoso.com 是发件人）：
 
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
 
 > [!NOTE]
 > 有关邮件头Authentication-Results，请参阅 RFC 7001 [ (Message Header Field for Indicating Message Authentication Status](https://www.rfc-editor.org/rfc/rfc7001.txt)。 Microsoft 的 DKIM 实现符合此 RFC。
 
-管理员可以创建Exchange[邮件](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (规则，也称为) DKIM 验证结果的传输规则。 这些邮件流规则将允许管理员根据需要筛选或路由邮件。
+管理员可以创建Exchange[邮件](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)流规则 (DKIM 验证结果) 传输规则。 这些邮件流规则将允许管理员根据需要筛选或路由邮件。

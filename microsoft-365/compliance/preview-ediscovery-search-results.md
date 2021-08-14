@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 预览 Microsoft 365 合规中心中内容搜索或核心电子数据展示搜索返回的结果示例。
-ms.openlocfilehash: a89c8c9ed2500b4e2a859c75be3da177203d1406
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fa9d69672f86cb58ef362b4b3fbaec5ba00bd50ac48778a96a0358910a35f311
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891725"
 ---
 # <a name="preview-ediscovery-search-results"></a>预览电子数据展示搜索结果
 

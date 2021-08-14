@@ -14,7 +14,7 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 此解决方案会告知你最常见的网络安全攻击Microsoft 365如何响应它们
+description: 此解决方案会告诉您最常见的网络安全攻击Microsoft 365如何响应它们
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
@@ -35,13 +35,13 @@ ms.locfileid: "56790841"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **摘要：** 此解决方案会告知你哪些指标是针对 Office 365 最常见的网络安全攻击、如何积极确认任何给定的攻击以及如何响应它。
+ **摘要：** 此解决方案将告知您有关 Office 365 中最常见的网络安全攻击的指示器、如何积极确认任何给定的攻击以及如何响应它。
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>了解如何响应网络攻击
 
 并非所有网络攻击都可以阻止。 攻击者不断在防御策略中寻找新的漏洞，或者他们利用旧漏洞。 通过了解如何识别攻击，可以更快地响应攻击，从而缩短安全事件的持续时间。
 
-本系列文章可帮助你了解特定类型攻击在攻击中可能Microsoft 365并为你提供可采取响应的步骤。 它们是快速了解的入口点：
+本系列文章可帮助你了解特定类型攻击在攻击中Microsoft 365并为你提供可采取响应的步骤。 它们是快速了解的入口点：
 
 - 攻击是什么及其工作方式。
 

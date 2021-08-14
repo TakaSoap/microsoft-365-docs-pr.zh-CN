@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具通过创建查询来搜索导入到第三Microsoft 365数据源中邮箱的项目。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 3f493640ecb1e0e0bb03ce315055e2faac37d0a5a05b47711c29d68e13a46a6c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891663"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用内容搜索搜索自定义合作伙伴连接器导入的第三方数据
 

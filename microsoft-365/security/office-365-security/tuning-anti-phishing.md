@@ -66,7 +66,7 @@ ms.locfileid: "56790486"
 
 - 来自欺骗 (发件人的电子邮件地址的邮件与邮件来源不匹配) 在 Defender for Office 365 中分类为网络钓鱼。 有时欺骗是恶意的，有时用户不希望隔离来自特定欺骗发件人的邮件。 若要最大程度地减小对用户的影响，请定期查看[](learn-about-spoof-intelligence.md)欺骗智能见解、租户允许[/](tenant-allow-block-list.md)阻止列表中的"欺骗"选项卡和欺骗[检测报告](view-email-security-reports.md#spoof-detections-report)。 查看允许和阻止的欺骗发件人并进行必要的替代后，你可以确信地将反网络钓鱼策略中的欺骗智能配置为隔离可疑[](set-up-anti-phishing-policies.md#spoof-settings)邮件，而不是将它们发送到用户的垃圾邮件文件夹。 
 
-- 你可以对 Microsoft Defender for (中的模拟域或) 重复上述Office 365。 模拟报告位于威胁管理仪表板 \>  \> Insights。
+- 你可以对 Microsoft Defender for (中的模拟域或) 重复上述Office 365。 模拟报告位于威胁 **管理仪表板** \>  \> Insights。
 
 - 定期检查威胁 [防护状态报告](view-reports-for-mdo.md#threat-protection-status-report)。
 
@@ -74,9 +74,9 @@ ms.locfileid: "56790486"
 
   处理由 Microsoft 365 (误报) 阻止的合法邮件（涉及域中的发件人）的最好办法就是在所有电子邮件域的 DNS 中完全配置 SPF、DKIM 和 DMARC 记录： 
 
-  - 验证 SPF 记录是否 _标识_ 域中发件人的所有电子邮件 (不要忘记第三方服务！) 。
+  - 验证 SPF 记录是否 _标识域中_ 发件人的所有电子邮件 (不要忘记第三方服务！) 。
 
-  - 使用硬 (所有) 以确保未经授权的发件人被配置为拒绝的电子邮件 \- 系统拒绝。 您可以使用欺骗 [智能见解](learn-about-spoof-intelligence.md) 来帮助识别正在使用你的域的发件人，以便可以在 SPF 记录中包括授权的第三方发件人。
+  - 使用硬 (所有) ，以确保未经授权的发件人被配置为拒绝的电子邮件 \- 系统。 您可以使用欺骗 [智能见解](learn-about-spoof-intelligence.md) 来帮助识别正在使用你的域的发件人，以便可以在 SPF 记录中包括授权的第三方发件人。
 
   有关配置说明，请参阅：
 

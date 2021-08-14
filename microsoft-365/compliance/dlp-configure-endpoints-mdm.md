@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b95ee215e63027b7d7579aebecc091c972fd26ebbc3352a43c1f4dfe69d73826
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917988"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892071"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "50917988"
 可以使用移动设备管理 (MDM) 解决方案配置设备。 Microsoft 365终结点数据丢失防护通过提供创建OMA-URIs来管理设备的策略，从而支持 MDM。
 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不会成功应用。 
 
 有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
@@ -78,4 +78,4 @@ ms.locfileid: "50917988"
 - [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
-- [载入Microsoft Defender 高级威胁防护疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

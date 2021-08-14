@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Advanced eDiscovery中新的预测编码模块使用机器学习来分析审阅集内的项目，以预测哪些项目与案例或调查相关。
-ms.openlocfilehash: 3c8fbd75bd585dd6ae722bf17deea906611d8df6
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5588f65af5d987eb5094a605331d9efd46f8fe999b5983e5a546f19564b09f26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891892"
 ---
 # <a name="learn-about-predictive-coding-in-advanced-ediscovery-preview"></a>了解预览版中的Advanced eDiscovery (编码) 
 

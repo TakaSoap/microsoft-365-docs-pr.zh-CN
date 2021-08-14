@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eeda30297133c9bfd2d030f602cb76fdf1c39ba9
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 22b272e956740fe77bc936827c7212ddcc1e75efa8dbf30103a04ba2f53a2607
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811479"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -36,7 +36,7 @@ ms.locfileid: "53591279"
 
 ## <a name="supported-operating-systems"></a>支持的操作系统 
 
-下表列出了有关此表中引用的操作系统版本的信息的链接。
+下表按字母顺序列出了攻击面减少规则。 一个选中标记，指示该列中列出的操作系统支持该规则。
 
 > [!Note]
 >
@@ -63,18 +63,6 @@ ms.locfileid: "53591279"
 |[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | ![支持](images/checkmark.png) <br><br> 版本 1803 或更高版本 | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
 | **规则名称** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windows服务器** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
-
-### <a name="operating-system-version"></a>操作系统版本
-
-- [Windows 10，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 专业版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10 企业版，版本 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows 10，版本 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows 10 版本 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-
-- [WindowsServer 版本 1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)
-- [Windows服务器版本 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="supported-configuration-management-systems"></a>支持的配置管理系统
 
@@ -147,7 +135,7 @@ Intune 名称： `Office apps launching child processes`
 
 Configuration Manager 名称： `Block Office application from creating child processes`
 
-GUID：`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
+GUID：`d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>阻止从本地安全Windows窃取凭据
 
@@ -175,7 +163,7 @@ Intune 名称： `Execution of executable content (exe, dll, ps, js, vbs, etc.) 
 
 Microsoft Endpoint Manager名称：`Block executable content from email client and webmail`
 
-GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
+GUID：`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 > [!NOTE]
 > 规则 **"阻止来自电子邮件客户端和 Webmail** 的可执行内容"具有以下替代说明，具体取决于你使用的应用程序：
@@ -217,7 +205,7 @@ Intune 名称： `Obfuscated js/vbs/ps/macro code`
 
 Configuration Manager 名称： `Block execution of potentially obfuscated scripts`
 
-GUID：`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`
+GUID：`5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>阻止 JavaScript 或 VBScript 启动下载的可执行内容
 
@@ -229,7 +217,7 @@ Intune 名称： `js/vbs executing payload downloaded from Internet (no exceptio
 
 Configuration Manager 名称： `Block JavaScript or VBScript from launching downloaded executable content`
 
-GUID：`D3E037E1-3EB8-44C8-A917-57927947596D`
+GUID：`d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>阻止Office应用程序创建可执行内容
 
@@ -241,7 +229,7 @@ Intune 名称： `Office apps/macros creating executable content`
 
 SCCM 名称： `Block Office applications from creating executable content`
 
-GUID：`3B576869-A4EC-4529-8536-B80A7769E899`
+GUID：`3b576869-a4ec-4529-8536-b80a7769e899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office代码注入其他进程
 
@@ -257,7 +245,7 @@ Intune 名称： `Office apps injecting code into other processes (no exceptions
 
 Configuration Manager 名称： `Block Office applications from injecting code into other processes`
 
-GUID：`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
+GUID：`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
@@ -329,7 +317,7 @@ Intune 名称： `Win32 imports from Office macro code`
 
 Configuration Manager 名称： `Block Win32 API calls from Office macros`
 
-GUID：`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
+GUID：`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>使用高级防护抵御勒索软件
 

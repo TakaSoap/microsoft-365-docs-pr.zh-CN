@@ -1,5 +1,5 @@
 ---
-title: 更改名称服务器以设置Microsoft 365注册机构的域名
+title: 更改名称服务器以设置Microsoft 365注册机构的名称
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -26,18 +26,18 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: a0a92b7401bd78d80ebcf7c98e4e2e4417a15333769685a2b68bbfe47727b0c4
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: e7c30665484413108180c75760fe70cc787d789c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58244127"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
+# <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的名称
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-请按照以下说明在 Microsoft 365中添加和设置你的域，以便电子邮件Teams服务将使用你自己的域名。 为此，您需要验证您的域，然后将您的域的名称服务器更改为 Microsoft 365以便您可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
+请按照以下说明在 Microsoft 365 中添加和设置你的域，以便电子邮件和 Teams 服务将使用你自己的域名。 为此，您需要验证您的域，然后将您的域的名称服务器更改为 Microsoft 365以便您可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
 
 - 你有你自己的域，并且想要设置它以使用Microsoft 365。
 
@@ -138,7 +138,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 2. 创建两个名称服务器记录，或编辑现有名称服务器记录匹配以下值：
 
    - 第一个名称 ns1.dns.partner.microsoftonline.cn
-   - 第二个名称 ns2.dns.partner.microsoftonline.cn
+   - 第二个名称器：ns2.dns.partner.microsoftonline.cn
 
    > [!TIP]
    > 应至少使用两个名称机记录。 如果列出了任何其他名称服务器，您可以删除它们，或者将它们更改为 ns3.dns.partner.microsoftonline.cn **ns4.dns.partner.microsoftonline.cn** **。**
@@ -146,7 +146,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 3. 保存所做的更改。
 
 > [!CAUTION]
-> 当您将域的 NS 记录更改为指向由世纪Office 365服务器运营的域时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。
+> 将域的 NS 记录更改为指向由世纪Office 365服务器运营的域时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 - 在更改 NS 记录之前，Microsoft 365域的所有电子邮件地址进行移动。
 
-- 想要添加当前与网站地址一同使用的域，如 `https://www.fourthcoffee.com` ？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向网站记录后，用户仍可访问Microsoft 365。
+- 想要添加当前与网站地址一同使用的域，如 `https://www.fourthcoffee.com` ？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向 Microsoft 365 后，用户仍可访问网站。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
@@ -164,11 +164,11 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 4. 选择 **"添加记录"。**
 
-5. 在"**添加自定义 DNS** 记录"窗格中，从"类型"下拉列表中选择" (**地址**) " 。
+5. 在"**添加自定义 DNS** 记录"窗格中，从"类型"下拉列表中选择" (**地址) "。**
 
 6. 在" **主机名"或"别名"** 框中，键入 **@** 。
 
-7. 在 **"IP 地址** "框中，键入当前托管该地址的网站的静态 IP 地址。 例如，172.16.140.1。
+7. 在 **"IP 地址** "框中，键入其当前托管的网站的静态 IP 地址。 例如，172.16.140.1。
 
    > [!IMPORTANT]
    > 这必须是网站的 _静态_ IP 地址，而不是 _动态_ IP 地址。 若要确保您可以获取公共网站的静态 IP 地址，请与承载您的网站的网站核实。
@@ -182,7 +182,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 1. 选择 **"添加记录"。**
 2. 在"**添加自定义 DNS** 记录"窗格中，从"类型"下拉列表中选择 **"CNAME (别名) "。**
 3. 在" **主机名"或"别名"** 框中，键入 **www**。
-4. 在" **指向地址"** 框中，键入网站的 (FQDN) 完全限定的域名。 例如 **，contoso.5om**。
+4. 在" **指向地址"** 框中，键入网站的 (FQDN) 的完全限定域名。 例如 **，contoso.5om**。
 5. 如果要更改记录的 TTL 设置，请从 **TTL** 下拉列表中选择一个新的时间长度。 否则，继续执行步骤 6。
 6. 选择“**保存**”。
 

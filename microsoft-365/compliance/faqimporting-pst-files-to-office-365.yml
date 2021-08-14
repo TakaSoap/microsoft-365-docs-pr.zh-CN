@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: 本文包含管理员有关使用 Microsoft 365 导入服务将 PST 文件导入到Office 365常见问题的解答。
-  ms.openlocfilehash: fe867519cab6899b79ae03ba2304965453918b2c
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: f7dd23974fbd587e3c55533d2c015bda1cc995cedab02674cbdc2c3f9b0676a4
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53544429"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53892047"
 title: 有关导入 PST 文件的常见问题解答
 summary: >
   **本文适用于管理员。是否要将 PST 文件导入到您自己的邮箱？请参阅 [从 .pst 文件](https://go.microsoft.com/fwlink/p/?LinkID=785075)导入电子邮件Outlook联系人和日历**
@@ -37,7 +37,7 @@ summary: >
 
   有关分步说明，请参阅使用网络上传将[PST 文件导入Office 365。](use-network-upload-to-import-pst-files.md)
 sections:
-- name: 一般信息
+- name: 常规
   questions:
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
@@ -59,7 +59,7 @@ sections:
 
       > 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
   - question: >
-      Where is network upload available?
+      网络上传在哪些地区提供？
     answer: >
       目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域中提供。
   - question: >
@@ -92,7 +92,7 @@ sections:
       <sup>\*</sup> 不能保证此速率。 服务器工作负载和暂时性的性能问题可能会降低此速率。
 
 
-      如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入到同一个邮箱，则这些文件 (一次导入一个，) 同步导入。
+      如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入同一个邮箱，则将按顺序（一次导入一个）导入这些文件，而非同时导入。
   - question: >
       PST 导入进程如何处理重复的电子邮件项？
     answer: >
@@ -151,7 +151,7 @@ sections:
 
       > 请考虑在 Exchange Online 中创建专门用于将 PST 文件导入到 Office 365 的新角色组。要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
   - question: >
-      Where is drive shipping available?
+      哪些地区提供驱动器传送服务？
     answer: >
       当前，美国、加拿大、巴西、英国、欧洲、印度、东亚、东南亚、日本、韩国和澳大利亚已推出驱动器传送服务。不久之后，还会有更多地区提供此服务。
 
@@ -160,7 +160,7 @@ sections:
 
       > 目前，不可在德国和瑞士使用驱动器发运导入 PST 文件。 当这些国家/地区提供驱动器发运功能后，此常见问题解答将更新。
   - question: >
-      What commercial licensing agreements support drive shipping?
+      哪些商业许可协议支持驱动器传送？
     answer: >
       驱动器传送可通过 Microsoft 企业协议 (EA) 将 PST 文件导入到 Microsoft 365。驱动器传送不可通过 Microsoft 产品和服务协议 (MPSA) 实现。
   - question: >
@@ -168,7 +168,7 @@ sections:
     answer: >
       使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的费用为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
   - question: >
-      What kind of hard drives are supported for drive shipping?
+      哪类硬盘支持驱动器传送？
     answer: >
       仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘驱动器与 Office 365 导入服务一同使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘驱动器时，可以使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接它，或者可以使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器将其外部连接。
 
@@ -194,7 +194,7 @@ sections:
       将 PST 文件上传到 Azure 存储区域后，Microsoft 365 采用安全方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
 
 
-      如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入到同一个邮箱，则这些文件 (一次导入一个，) 同步导入。
+      如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 如果将多个 PST 文件导入同一个邮箱，则将按顺序（一次导入一个）导入这些文件，而非同时导入。
   - question: >
       Microsoft 将 PST 文件上传到 Azure 后，这些文件在删除前可在 Azure 中保留多长时间？
     answer: >
@@ -234,11 +234,11 @@ sections:
     answer: >
       Yes, this capability is now available.
   - question: >
-      是否可以使用驱动器发运将 PST 文件导入 Exchange Online 中的公用文件夹？
+      是否可以使用驱动器传送将 PST 文件导入 Exchange Online 中的公用文件夹？
     answer: >
       否，无法将 PST 文件导入公用文件夹。
   - question: >
-      Can Microsoft wipe my hard drive before they ship it back to me?
+      Microsoft 将硬盘运回给我之前，是否会进行擦除？
     answer: >
       No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   - question: >
@@ -256,7 +256,7 @@ sections:
   - question: >
       Can I use a custom courier shipping service, such as FedEx Custom Shipping, to ship my hard drive to Microsoft?
     answer: >
-      能。
+      是的。
   - question: >
       If I have to ship my hard drive to another country, is there anything I need to do?
     answer: >

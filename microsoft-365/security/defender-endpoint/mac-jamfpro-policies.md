@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c73a1a4ca5a85e4c6867cbe2cb79a33cfe0bfac9
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 7b180808422c3c71adf430d1d9c5d4283ef9b90e801f54ccd5492a8d070504e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623788"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811591"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf 中设置 macOS 上的 Microsoft Defender for Endpoint Pro
 
@@ -122,7 +122,7 @@ ms.locfileid: "53623788"
 
     ![目标图像](images/jamfpro-targets.png)
 
-10. 选择 **保存**。
+10. 选择“**保存**”。
 
     ![部署目标计算机的图像](images/jamfpro-deployment-target.png)
 
@@ -164,7 +164,7 @@ ms.locfileid: "53623788"
 
     ![添加自定义架构](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. 输入 `com.microsoft.wdav` 作为首选项域，单击"添加架构 **"Uploadschema.js** 步骤 1 上下载的文件上的"添加架构"。 单击“**保存**”。
+4. 输入 `com.microsoft.wdav` 作为首选项域，单击"添加架构 **"Uploadschema.js** 步骤 1 上下载的文件上的"添加架构"。 单击 **保存**。
 
     ![Upload架构](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
@@ -220,7 +220,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - 标记
+    - tags
     - hideStatusMenuIcon
 
      有关信息，请参阅 [Jamf 配置文件的属性列表](mac-preferences.md#property-list-for-jamf-configuration-profile)。
@@ -374,7 +374,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
     >如果你发生上载 Intune 文件的情况，你将看到以下错误：<br>
     >![配置设置 intune 文件上载的图像](images/8e69f867664668796a3b2904896f0436.png)
 
-11. 选择 **保存**。
+11. 选择“**保存**”。
 
     ![配置设置的图像 保存映像](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -515,7 +515,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置设置的图像](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. 选择 **保存**。
+11. 选择“**保存**”。
 
     ![配置设置 saveimg 的图像](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -523,7 +523,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
      ![配置设置作用域tab的图像](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. 选择“**添加**”。
+13. 选择 **添加**。
 
     ![配置设置 addimg1 的图像](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -614,9 +614,9 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 contoso machinegrp 的图像](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. 选择“**添加**”。
+15. 选择 **添加**。
 
-16. 选择 **保存**。
+16. 选择“**保存**”。
 
 17. 选择“完成”。
 
@@ -670,7 +670,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置添加映像的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 选择 **保存**。
+9. 选择“**保存**”。
 
     ![配置设置保存映像](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -725,7 +725,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
    ![配置设置 addima 的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. 选择 **保存**。
+9. 选择“**保存**”。
 
    ![配置设置 sysext 作用域的图像](images/sysext-scope.png)
 
@@ -775,7 +775,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 adim 的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. 选择 **保存**。
+7. 选择“**保存**”。
 
     ![配置设置 savimg netextscop 的图像](images/netext-scope.png)
 
@@ -833,7 +833,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
      ![配置设置限制选项卡的图像](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 
-8. 选择 **保存**。 程序包将上载到 Jamf Pro。
+8. 选择“**保存**”。 程序包将上载到 Jamf Pro。
 
    ![配置设置包 upl jamf pro 的图像](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -860,7 +860,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置重复签入的图像](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-13. 选择 **保存**。
+13. 选择“**保存**”。
 
 14. 选择 **">配置"。**
 
@@ -870,7 +870,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     ![配置设置 MDATP 和 MDA 添加的图像](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. 选择 **保存**。
+16. 选择“**保存**”。
 
     ![配置设置的图像avimg](images/9d6e5386e652e00715ff348af72671c6.png)
 
@@ -884,7 +884,7 @@ Microsoft Defender 会随着时间的推移添加新设置。 这些新设置将
 
     **Scope**
 
-    选择“**添加**”。
+    选择 **添加**。
 
     ![配置设置 ad1img 的图像](images/1c08d097829863778d562c10c5f92b67.png)
 

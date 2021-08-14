@@ -1,5 +1,5 @@
 ---
-title: 将安全Microsoft 365 Defender集成到安全操作简介
+title: 将Microsoft 365 Defender集成到安全操作
 description: 将安全Microsoft 365 Defender到安全操作的基本信息。
 keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击， secops， 安全操作， soc
 search.product: eADQiWindows 10XVcnh
@@ -22,21 +22,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a90ef363b869b5b10352a0aedcd6210a336e4a8c2a32b806aa3d3b583287b515
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862595"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58243923"
 ---
-# <a name="introduction-to-integrating-microsoft-365-defender-into-your-security-operations"></a>将安全Microsoft 365 Defender集成到安全操作简介
+# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>将Microsoft 365 Defender集成到安全操作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-现代安全操作中心 (SOC) 是智能驱动的自适应组织，它支持威胁防护策略，在部署过程中提前移动安全流程，以便内置安全性。 这意味着，向单个安全分析师分配独立技术和流程的传统方式不再支持来自多个源的数据的不断增加。 要求安全分析师和工程师采取更全面的方法，并使用跨不同平台和准则的共享见解来采取有效措施。 
+现代安全操作中心 (SOC) 是智能驱动的自适应组织，它采用威胁防护策略，在部署过程中提前移动安全流程，以便内置安全性。 这意味着，向单个安全分析师分配独立技术和流程的传统方式不再支持来自多个源的数据的不断增加。 要求安全分析师和工程师采取更全面的方法，并使用跨不同平台和学科的共享见解来采取有效措施。 
 
 因此，Microsoft Defender 平台的部署和实现将需要与 SOC 团队一起仔细规划，以优化 Defender 服务本身日常操作和生命周期管理。 此内容探究了一些概念，了解如何操作 Microsoft 365 Defender集成构成新式安全操作基础的新的或现有的人员、流程和技术。
 
@@ -45,8 +45,10 @@ ms.locfileid: "53862595"
 - [Microsoft 365 Defender 入门](get-started.md)
 - [打开 Microsoft 365 Defender](m365d-enable.md)
 
+如果你的组织已经实施了某些方面的Microsoft 365 Defender，这些文章可以确认或帮助改进现有体系结构和流程。
+
 >[!Note]
->如果你的组织已经实施了某些方面的Microsoft 365 Defender，这些文章可以确认或帮助改进现有体系结构和流程。
+>作为 Microsoft 合作伙伴，Protiviti 参与了本文的撰写并提供了实质性反馈。
 >
 
 ## <a name="target-audience"></a>目标受众

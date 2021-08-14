@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Microsoft 365 合规中心中的搜索和清除功能搜索和删除组织中所有邮箱的电子邮件。
-ms.openlocfilehash: 3bbd7a59ed0f969293aff738872662afa9738b649876092e17f4d09712d5ebed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a01b981bb8562b59c29c351468060aaaecaed2501b835e7d230054665a7e7e1e
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807620"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834783"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
 **本文适用于管理员。你是否尝试在邮箱中查找要删除的项目？请参阅 [使用“即时搜索”查找邮件或项目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**。
 
-你可以使用内容搜索功能在组织中的所有邮箱中搜索并删除电子邮件。这可以帮助你查找并删除可能有害的或存在高风险的电子邮件，如：
+你可以使用内容搜索功能在组织的所有邮箱中搜索并删除电子邮件。这可以帮助你查找并删除可能有害或高风险的电子邮件，如：
 
 - 包含危险附件或病毒的邮件
 
@@ -41,10 +41,12 @@ ms.locfileid: "53807620"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 若要创建并运行内容搜索，你必须是 **电子数据展示管理员** 角色组的成员，或者分配有安全与合规中心中的 **合规性搜索** 管理角色。 若要删除邮件，你必须是 **组织管理** 角色组的成员或分配有安全与合规中心中的 **搜索并清除** 管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](assign-ediscovery-permissions.md)。
+- 本文中所述的搜索和清除工作流不会从 Microsoft Teams 中删除聊天消息或其他内容。 如果在步骤 2 中创建的内容搜索返回 Microsoft Teams 中的项目，则在清除步骤 3 中的项目时不会删除这些项目。
+
+- 要创建并运行内容搜索，你必须是 **电子数据展示管理员** 角色组的成员，或者分配有 Microsoft 365 合规中心内的 **合规性搜索** 角色。 要删除邮件，你必须是 **组织管理** 角色组的成员，或分配有合规中心内的 **搜索和清除** 角色。有关将用户添加到角色组的信息，请参阅 [分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
   > [!NOTE]
-  > Exchange Online 和安全与合规中心中都有 **组织管理** 角色组。 这些角色组都是独立的角色组，授予不同的权限。 作为 Exchange Online 中 **组织管理** 的成员，并没有授予删除邮件的必要权限。 如果你未被分配安全与合规中心的 **搜索并清除** 角色（直接分配或通过 **组织管理** 等角色组分配），则当你运行 **New-ComplianceSearchAction** cmdlet 时，会在步骤 3 中收到一个显示为“找不到与参数名称‘清除’相符的参数”的错误消息。
+  > Exchange Online 和 Microsoft 365 安全与合规中心中都存在 **组织管理** 角色组。 这些角色组都是独立的角色组，授予不同的权限。 作为 Exchange Online 中 **组织管理** 的成员，并没有授予删除邮件的必要权限。 如果未向你分配安全与合规中心的 **搜索并清除** 角色（直接分配或通过 **组织管理** 等角色组分配），则当你运行 **New-ComplianceSearchAction** cmdlet 时，将在步骤 3 中收到错误消息“找不到与参数名称‘清除’相匹配的参数”。
 
 - 你必须使用安全与合规中心 PowerShell 删除邮件。 请参阅 [步骤 1](#step-1-connect-to-security--compliance-center-powershell) ，了解如何连接的说明。
 
@@ -112,21 +114,30 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-3-delete-the-message"></a>步骤 3：删除邮件
 
-创建并优化内容搜索以返回你想要删除的邮件并且连接到安全与合规中心 PowerShell 后，最后一步是运行 **New-ComplianceSearchAction** cmdlet 来删除邮件。 可对邮件进行软删除或硬删除。 软删除的邮件将移至用户的“可恢复的项目”文件夹并保留，直到已删除项目的保留期到期。 硬删除的邮件被标记为从邮箱中永久删除，并在托管文件夹助理下次处理邮箱时永久删除。 如果为邮箱启用了单个项目恢复，则在已删除项目的保留期到期后，将永久删除硬删除的项目。 如果邮箱处于保留状态，则会保留已删除的邮件，直到该项目的保留期到期或从邮箱中删除保留为止。
+创建并优化内容搜索以返回要删除的邮件后，最后一步是运行安全与合规中心 PowerShell 内的 **New-ComplianceSearchAction -Purge** 命令来删除邮件。 可对邮件进行软删除或硬删除。 软删除的邮件将移至用户的“可恢复的项目”文件夹并保留，直到已删除项目的保留期到期。 硬删除的邮件被标记为从邮箱中永久删除，并在托管文件夹助理下次处理邮箱时永久删除。 如果为邮箱启用了单个项目恢复，则在已删除项目的保留期到期后，将永久删除硬删除的项目。 如果邮箱处于保留状态，则会保留已删除的邮件，直到该项目的保留期到期或从邮箱中删除保留为止。
 
-在以下示例中，该命令软删除名为“删除网络钓鱼邮件”的内容搜索返回的搜索结果。
+> [!NOTE]
+> 如前所述，运行 **New-ComplianceSearchAction -Purge** 命令时，不会删除内容搜索返回的 Microsoft Teams 中的项。
+
+要运行以下命令来删除邮件，请确保你已 [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+
+### <a name="soft-delete-messages"></a>软删除邮件
+
+在以下示例中，该命令软删除名为“删除网络钓鱼邮件”由内容搜索返回的搜索结果。
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-要硬删除由“删除网络钓鱼邮件”内容搜索返回的项目，你需要运行以下命令：
+### <a name="hard-delete-messages"></a>硬删除邮件
+
+要硬删除由“删除网络钓鱼邮件”内容搜索返回的项目，需要运行以下命令：
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-当你运行上一个命令以软删除或硬删除邮件时，*SearchName* 参数是你在步骤 1 中创建的内容搜索。
+当你运行之前的命令以软删除或硬删除邮件时，由 *SearchName* 参数指定的搜索就是你在步骤 1 中创建的内容搜索。
 
 有关详细信息，请参阅 [New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction)。
 

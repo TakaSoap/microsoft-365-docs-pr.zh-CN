@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以了解如何使用安全与合规中心中的"新用户转发电子邮件见解&调查其组织中用户将邮件转发到新域的情况。
+description: 管理员可以了解如何使用安全与合规中心中的"新用户转发电子邮件见解&调查其组织中用户何时将邮件转发到新域。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1791f8663e7ffa0e9d0fb0b55f625f73f1482cf4f61e5f4ce03cdf1e1e525552
@@ -72,7 +72,7 @@ ms.locfileid: "56790844"
 
   ![转发修改报告中的新转发域视图](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
-If you click **Filters** in a 报表视图， you can specify a date range with **Start date** and **End date**.
+如果 **单击筛选器中的** 报表视图，可以指定开始日期和 **结束日期的日期范围**。 
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>转发修改报告的详细信息表视图
 
@@ -114,4 +114,4 @@ If you click **Filters** in a 报表视图， you can specify a date range with 
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。

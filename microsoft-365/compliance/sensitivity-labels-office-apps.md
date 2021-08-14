@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fa41e172f970dcac818d989b60a69bbd2ddbfe1c945eff971a4bfc2cca63d02
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: f64a1ccc0990c2e3961bb31f25616874c9f3fe885a3aca806e1301235b0d2311
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834759"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523725"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -44,16 +44,11 @@ ms.locfileid: "57834759"
 不同更新频道在不同时间提供新版本的 Office 应用。 有关详细信息（包括如何配置更新频道，以便可以测试您感兴趣的新标签功能），请参阅 [Microsoft 365 应用更新频道概述](/DeployOffice/overview-update-channels)。 表中不包括专用预览版中的新功能，但通过选择组织参加 [Microsoft 信息保护专用预览计划，](https://aka.ms/mip-preview)。
 
 > [!NOTE]
-> 2020 年 5 月，Office 应用程序的更新通道名称发生更改。 例如，每月频道现在是当前频道，Office 预览体验计划现在是 Beta 频道。 有关详细信息，请参阅[对 Microsoft 365 应用版的更新频道所做的更改](/deployoffice/update-channels-changes)。
+> 最近已更改 Office 应用更新频道的名称。 例如，每月频道现在是当前频道，Office 预览体验计划现在是 Beta 频道。 有关详细信息，请参阅[对 Microsoft 365 应用版的更新频道所做的更改](/deployoffice/update-channels-changes)。
 
 Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用](https://www.microsoft.com/zh-CN/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)。
 
 安装 Azure 信息保护统一标签客户端（该客户端仅在 Windows 计算机上运行）时，可以使用其他功能。 有关详细信息，请参阅 [Windows 计算机标签客户端](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
-
-> [!TIP]
-> 将表格中的最小版本与所拥有的版本进行比较时，请记住发布版本的常见做法是省略前导零。
-> 
-> 例如，有 4.2128.0 版本，并读取到 4.7.1 以上是最低版本。 为便于比较，请将 4.7.1 (无前导零) 读取为 4.**0007**.1 (而不是 4.**7000**.1)。 4.2128.0 版本高于 4.0007.1，因此支持本版本。
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel 和 PowerPoint 中的敏感度标签功能
 

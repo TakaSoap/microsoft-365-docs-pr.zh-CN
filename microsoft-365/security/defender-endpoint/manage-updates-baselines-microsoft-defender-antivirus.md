@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 08/04/2021
-ms.openlocfilehash: d90ae4b8281015c675535f483b23e5c027e6918abc57627e8da3440db9b03064
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/05/2021
+ms.openlocfilehash: 80dba315e8293e6a88e8cca7db3bbe12a30226ffb4b6daa4b9cad2343ac9e4a7
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800086"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523641"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -82,18 +82,19 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 - 云 (集成[改进](/microsoft-365/security/defender/microsoft-365-defender)Microsoft 365 Defender) 。
 <br/>
 <details>
-<summary> 2021 年 7 月 (平台：4.18.2107.4 |引擎：1.1.18400.x) </summary>
+<summary> 2021 年 7 月 (平台：4.18.2107.4 |引擎：1.1.18400.4) </summary>
 
-&ensp;安全智能更新版本 **：x.xxx.xx.x**  
-&ensp;已发布： **日期，2021 年**  
+&ensp;安全智能更新版本 **：1.345.13.0**  
+&ensp;发布时间 **：2021 年 8 月 5 日**  
 &ensp;平台 **：4.18.2107.4**  
-&ensp;引擎 **：1.1.18400.x**  
+&ensp;引擎 **：1.1.18400.4**  
 &ensp;支持阶段： **安全和关键更新**
     
 ### <a name="whats-new"></a>最近更新
 - 为可移植设备Windows设备控制支持
 - 默认情况下， (PUA) 保护中可能不需要的应用程序为使用者打开 (看到默认情况下，可能会不需要的应用将被阻止) [](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
 - 组策略对象托管系统的计划扫描将遵循用户配置的扫描时间 
+- 对行为监视引擎的改进
 
 ### <a name="known-issues"></a>已知问题
 无已知问题  
@@ -513,6 +514,20 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 有关详细信息，请参阅适用于操作系统[安装映像Windows Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2108.01</summary>
+
+&ensp;程序包版本 **：1.1.2108.01**    
+&ensp;平台版本 **：4.18.2107.4**   
+&ensp;引擎版本 **：1.1.18300.4**  
+&ensp;签名版本 **：1.343.2244.0**    
+    
+### <a name="fixes"></a>修补程序
+- 无
+
+### <a name="additional-information"></a>其他信息
+- 无  
+<br/>
+</details><details>
 <summary>1.1.2107.02</summary>
 
 &ensp;程序包版本 **：1.1.2107.02**    

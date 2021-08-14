@@ -45,7 +45,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 
 - [示例 1：用户报告的网络钓鱼邮件启动调查手册](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [示例 2：安全管理员从威胁资源管理器触发调查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
-- [示例 3：安全运营团队使用管理活动 API 将 AIR 与 SIEM Office 365集成](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
+- [示例 3：安全运营团队使用 Office 365 活动 API 将 AIR 与 SIEM 集成](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>示例：用户报告的钓鱼邮件启动调查手册
 
@@ -68,7 +68,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 - 类似的电子邮件通过电子邮件群集搜索进行标识。
 - 信号与其他平台（如 Microsoft Defender [for Endpoint）共享](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
 - 确定任何用户是否点击了可疑电子邮件中任何恶意链接。
-- 在[Exchange Online Protection (EOP](exchange-online-protection-overview.md)) 和[ (Microsoft Defender for Office 365) ](defender-for-office-365.md)中检查用户是否报告了任何其他类似消息。
+- 在[Exchange Online Protection (EOP](exchange-online-protection-overview.md)) 和[ (Microsoft Defender for Office 365) ](defender-for-office-365.md)检查以查看用户是否报告了任何其他类似消息。
 - 检查用户是否遭到入侵。 此检查利用跨[Office 365、Microsoft Cloud App Security](/cloud-app-security)和[Azure Active Directory](/azure/active-directory)的信号，关联任何相关的用户活动异常。
 
 在搜寻阶段，将风险和威胁分配给各种搜寻步骤。
@@ -89,7 +89,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 
 与警报触发的手册类似，从资源管理器中的视图触发的自动调查包括根调查、识别和关联威胁的步骤，以及缓解这些威胁的建议操作。
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>示例：安全运营团队使用安全管理活动 API 将 AIR Office 365 SIEM 集成
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>示例：安全运营团队使用管理活动 API 将 AIR 与 SIEM Office 365集成
 
 Microsoft Defender for Office 365 AIR 功能包括&[安全](air-view-investigation-results.md)运营团队可用于监视和解决威胁的报告和详细信息。 但您也可以将 AIR 功能与其他解决方案集成。 示例包括 SIEM (安全) 、案例管理系统或自定义报告解决方案。 这些类型的集成可以使用管理活动 API Office 365[实现](/office/office-365-management-api/office-365-management-activity-api-reference)。
 

@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 07/29/2021
+ms.date: 08/05/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: ee163b8a32bde00fe247dcc4f570ce7768c33a55e1c4c8ffc88ad7fbe08dc080
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3169cbd5aa834e22a5d354066b01b1da04adafe59bf780da99367da21774e359
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833903"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523701"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>终结点检测和响应 (EDR) 阻止模式
 
@@ -84,7 +84,7 @@ EDR阻止模式下的已与威胁& 漏洞管理[集成](next-gen-threat-and-vuln
 
 | 要求  | 详细信息  |
 |---------|---------|
-| Permissions | 您必须在 "全局管理员" 或 "安全管理员" 角色中[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。 |
+| 权限 | 您必须在 "全局管理员" 或 "安全管理员" 角色中[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。 |
 | 操作系统     | 设备必须运行以下版本之一Windows： <br/>- Windows 10 (所有)  <br/>- Windows Server 版本 1803 或更高版本 <br/>- Windows Server 2019 <br/>- Windows Server 2016 (仅在Microsoft Defender 防病毒处于活动状态时)      |
 | Microsoft Defender for Endpoint     | 设备必须载入到适用于终结点的 Defender。 请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。       |
 | Microsoft Defender 防病毒  | 设备必须已安装Microsoft Defender 防病毒在主动模式或被动模式下运行。 [确认Microsoft Defender 防病毒处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
@@ -159,7 +159,7 @@ EDR模式运行不会影响在用户设备上运行的第三方防病毒保护�
 
 如果Windows Server 2016在Microsoft Defender 防病毒模式下运行，并且终结点已载入到 Defender for Endpoint，则EDR支持以阻止模式运行。 但是，EDR阻止模式旨在当终结点上不是Microsoft Defender 防病毒防病毒解决方案时提供额外保护。 在这种情况下，Microsoft Defender 防病毒被动模式下运行。 
 
-目前，Microsoft Defender 防病毒在被动模式下运行 Windows Server 2016。 若要了解更多信息，请参阅[Microsoft Defender 防病毒和非 Microsoft 防病毒/反恶意软件解决方案](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)。
+目前，Microsoft Defender 防病毒在被动模式下运行 Windows Server 2016。 若要了解更多信息，请参阅被动[模式和Windows服务器](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)Microsoft Defender 防病毒[兼容性](microsoft-defender-antivirus-compatibility.md)。
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>在阻止模式下禁用EDR需要的时间？
 

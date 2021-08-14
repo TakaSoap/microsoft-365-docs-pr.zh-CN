@@ -33,7 +33,7 @@ ms.locfileid: "56790757"
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-如果你的组织拥有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2（[](office-365-ti.md)包括威胁调查和响应功能），可以在 Microsoft 365 Defender 门户中使用攻击模拟培训在组织中运行真实的攻击方案。 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
+如果你的组织拥有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2（包括威胁调查和响应功能），可以在 Microsoft 365 Defender 门户中使用攻击模拟培训在组织中运行真实的攻击方案。 [](office-365-ti.md) 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
 
 > [!NOTE]
 > 攻击模拟培训取代了 Microsoft Defender for Office 365 攻击模拟器中所述的旧攻击[模拟器 v1 体验](attack-simulator.md)。
@@ -42,7 +42,7 @@ ms.locfileid: "56790757"
 
 - 若要打开 Microsoft 365 Defender 门户，请转到 <https://security.microsoft.com>。 攻击模拟培训位于电子邮件和 **协作** \> **攻击模拟培训中**。 若要直接转到攻击模拟培训，请打开 <https://security.microsoft.com/attacksimulator> 。
 
-- 有关跨不同用户订阅进行攻击模拟培训Microsoft 365，请参阅[Microsoft Defender for Office 365服务说明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 有关跨不同订阅提供攻击模拟培训Microsoft 365，请参阅[Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - 您需在 Microsoft 365 Defender 门户或 Azure Active Directory 分配权限，然后才能执行本文中的过程。 具体来说，你需要是组织管理、安全 **管理员** 或以下角色之一的成员： 
   - **攻击模拟器管理员**：创建和管理攻击模拟活动的所有方面。
@@ -54,7 +54,7 @@ ms.locfileid: "56790757"
 
 - 攻击模拟和培训相关的数据与其他客户数据存储在一起，Microsoft 365服务。 有关详细信息，请参阅[Microsoft 365位置](../../enterprise/o365-data-locations.md)。 攻击模拟可用于以下区域：NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN、BRA、BRA、EUR 和 CHE。
 
-- 自 2021 年 6 月 15 日起，攻击模拟GCC。 如果你的组织拥有 Office 365 G5 GCC 或 Microsoft Defender for Office 365 (计划 2) 政府版，可以使用 Microsoft 365 Defender 门户中的攻击模拟培训在组织中运行实际攻击方案，如本文所述。 攻击模拟培训尚未在高GCC DoD 环境中提供。
+- 自 2021 年 6 月 15 日起，攻击模拟GCC。 如果你的组织拥有 Office 365 G5 GCC 或 Microsoft Defender for Office 365 (计划 2) 政府版，可以使用 Microsoft 365 Defender 门户中的攻击模拟培训在你的组织中运行实际的攻击方案，如本文所述。 攻击模拟培训尚未在高GCC DoD 环境中提供。
 
 > [!NOTE]
 > 攻击模拟培训将一部分功能作为试用版向 E3 客户提供。 试用版包含使用凭据获取有效负载的能力，以及选择"ISA 网络钓鱼"或"批量市场网络钓鱼"培训体验的能力。 E3 试用版产品/服务中没有任何其他功能。
@@ -67,11 +67,11 @@ ms.locfileid: "56790757"
 
 - **凭据获取**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至一个网站，该网站通常显示一个对话框，要求用户输入用户名和密码。 通常，目标页面以表示已知网站为标题，以在用户中建立信任。
 
-- **恶意软件** 附件：攻击者向收件人发送包含附件的邮件。 当收件人打开附件时， (代码，例如，在用户设备上) 宏代码，以帮助攻击者安装其他代码或进一步放大自身。
+- **恶意软件** 附件：攻击者向收件人发送包含附件的邮件。 当收件人打开附件时， (代码，例如，在用户设备上) 宏代码，以帮助攻击者安装其他代码或进一步自我编写代码。
 
 - **附件中的链接**：这是凭据获取的混合。 攻击者向收件人发送一封邮件，其中包含附件内的 URL。 当收件人打开附件并单击该 URL 时，他们会访问一个网站，该网站通常显示一个对话框，要求用户输入用户名和密码。 通常，目标页面以表示已知网站为标题，以在用户中建立信任。
 
-- **链接到恶意软件**：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站上附件的链接 (例如，SharePoint Online 或 Dropbox) 。 当收件人单击 URL 时，附件将打开，并且会打开任意代码 (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或自行进一步安装代码。
+- 链接到 **恶意软件**：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站上附件的链接 (例如，SharePoint Online 或 Dropbox) 。 当收件人单击 URL 时，附件将打开，并且会打开任意代码 (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或自行进一步安装代码。
 
 - **按 URL 驱动器**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至尝试运行后台代码的网站。 此后台代码尝试收集有关收件人的信息或在设备上部署任意代码。 通常，目标网站是已遭到入侵的已知网站或已知网站的克隆。 熟悉网站有助于让用户确信链接可安全单击。 此技术也称为水 _洞攻击_。
 
@@ -118,4 +118,4 @@ ms.locfileid: "56790757"
 有关如何通过报告获取见解的分步说明，请参阅通过 [攻击模拟培训获取见解](attack-simulation-training-insights.md)。
 
 > [!NOTE]
-> 攻击模拟器使用 defender for Office 365 中的 保险箱 链接安全跟踪发送给网络钓鱼活动的目标收件人的有效负载邮件中 URL 的单击数据，即使 保险箱 链接策略中已打开"不跟踪用户单击"设置。
+> 攻击模拟器使用 Office 365 defender 中的 保险箱 链接安全跟踪发送给网络钓鱼活动的目标收件人的有效负载邮件中 URL 的单击数据，即使 保险箱 链接策略中已打开"不跟踪用户单击"设置。

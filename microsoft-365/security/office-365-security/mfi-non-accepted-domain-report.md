@@ -32,7 +32,7 @@ ms.locfileid: "56790639"
 
 安全与合规中心内"邮件流[](mail-flow-insights-v2.md)"仪表板中的"非接受域"报告显示有关来自内部部署电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
 
-Microsoft 365有数据可以证明这些邮件的意图是恶意的，则可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
+Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
 
 ![安全与合规中心的"邮件流"仪表板中的"非接受&小组件](../../media/mfi-non-accepted-domain-report-widget.png)
 

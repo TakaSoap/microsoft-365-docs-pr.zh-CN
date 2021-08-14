@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3f3ee0590fcbbbbcdb58680e13d154ddc4b2918e48a0c494f8ebdbdf70757bc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8058109abb8462849af4fea04e43c934ebfce1ad440053c60f8b8e070171e76e
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794026"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523750"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -44,24 +44,24 @@ ms.locfileid: "53794026"
 
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
 
-3. 在嵌套菜单中导航到 **SOFTWARE**  >  **Microsoft**  >  **Windows Defender Windows Defender** Exploit  >  **Guard**  >  **网络保护**
+3. 在嵌套菜单中导航到 **软件** 策略  >    >  **Microsoft**  >  **Windows Defender Windows Defender**  >  **Exploit Guard**  >  **网络保护**
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
 
-    * 0 或 **Off**
-    * 1 或 **On**
-    * 2 或 **审核** 模式
-    
-    ![networkprotection](https://user-images.githubusercontent.com/3296790/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.PNG)
+   - 0 或 **Off**
+   - 1 或 **On**
+   - 2 或 **审核** 模式
+
+    ![网络保护注册表项](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## <a name="enable-network-protection"></a>启用网络保护
 
 使用以下任一方法启用网络保护：
 
-* [PowerShell](#powershell)
-* [移动设备管理 (MDM) ](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
-* [组策略](#group-policy)
+- [PowerShell](#powershell)
+- [移动设备管理 (MDM) ](#mobile-device-management-mdm)
+- [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
+- [组策略](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
@@ -106,13 +106,13 @@ ms.locfileid: "53794026"
 
 3. 展开树以 **Windows Exploit** Guard  >  **网络Microsoft Defender 防病毒Windows Defender**  >    >  **的组件**。
 
-> [!NOTE]
-> 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > [!NOTE]
+   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
-    * **阻止** - 用户无法访问恶意 IP 地址和域
-    * **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域
-    * **审核模式**- 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
+    - **阻止** - 用户无法访问恶意 IP 地址和域
+    - **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域
+    - **审核模式**- 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
 
 > [!IMPORTANT]
 > 若要完全启用网络保护，必须将组策略选项设置为 **已启用**，还要在选项下拉菜单中选择阻止。
@@ -124,12 +124,12 @@ ms.locfileid: "53794026"
 2. 导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. 选择 **EnableNetworkProtection** 并确认值：
-   * 0=Off
-   * 1=打开
-   * 2=审核
+   - 0=Off
+   - 1=打开
+   - 2=审核
 
 ## <a name="see-also"></a>另请参阅
 
-* [网络保护](network-protection.md)
-* [网络保护功能评估](evaluate-network-protection.md)
-* [网络保护疑难解答](troubleshoot-np.md)
+- [网络保护](network-protection.md)
+- [网络保护功能评估](evaluate-network-protection.md)
+- [网络保护疑难解答](troubleshoot-np.md)

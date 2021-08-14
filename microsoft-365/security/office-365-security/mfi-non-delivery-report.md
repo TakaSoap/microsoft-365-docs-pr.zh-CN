@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告 (也称为"未送达报告"中最常遇到的错误代码或退回来自组织中发件人的邮件) 。
+description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告 (也称为"未送达报告"中最常遇到的错误代码或从组织的发件人退回邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d2ac4d55557165c3f6cf327bcff529edc3dc16ad1fc08eb2a5a30828b7a57661
@@ -30,9 +30,9 @@ ms.locfileid: "56739703"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全与合规中心内"邮件[](mail-flow-insights-v2.md)流"仪表板中的"未送达报告"显示未送达报告 (也称为"未送达"或退回邮件) （对于组织用户）中遇到的错误代码。 [&](https://protection.office.com) 此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
+安全 & 合规中心的邮件[](mail-flow-insights-v2.md)流仪表板中的未送达[](https://protection.office.com)报告显示未送达报告 (也称为"未送达"或退回邮件) （对于组织用户）中遇到的错误代码。  此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
 
-![安全与合规中心的"邮件流"仪表板中的"未送达&小组件](../../media/mfi-non-delivery-report-widget.png)
+![安全与合规中心内"邮件流"仪表板中的"未送达&小组件](../../media/mfi-non-delivery-report-widget.png)
 
 ## <a name="report-view-for-the-non-delivery-report"></a>未送达报告的报告视图
 
@@ -68,4 +68,4 @@ ms.locfileid: "56739703"
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

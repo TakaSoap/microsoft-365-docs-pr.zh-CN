@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 了解如何在 Advanced eDiscovery 中创建预测编码Advanced eDiscovery。 这是使用 Advanced eDiscovery 中的机器学习功能来帮助你在审阅集内标识相关和非相关内容的第一步。
-ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 37ff12ea723127b322e7a2b2a1e049b66b72bb92a7625c97efdff4dcdb64b976
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53891987"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>创建预测编码模型 (预览) 
 

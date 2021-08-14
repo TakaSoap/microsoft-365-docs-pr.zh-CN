@@ -21,7 +21,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "56790754"
 ---
-# <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心&流程图
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心内&流程图
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -30,11 +30,11 @@ ms.locfileid: "56790754"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 **与合规中心的**["邮件流](mail-flow-insights-v2.md)"仪表板中的"邮件流 ["&可](https://protection.office.com)深入了解邮件在组织中如何流动。 您可以使用此信息了解模式、识别异常并修复发生的问题。
+安全 **与合规中心的**"邮件 [](mail-flow-insights-v2.md)流"仪表板中的"邮件流 ["&可](https://protection.office.com)深入了解邮件在组织中如何流动。 您可以使用此信息了解模式、识别异常并修复发生的问题。
 
-![安全与合规中心的"邮件流"仪表板中的"邮件流&小组件](../../media/mfi-mail-flow-map-widget.png)
+![安全与合规中心内"邮件流"仪表板中的"邮件&小组件](../../media/mfi-mail-flow-map-widget.png)
 
-默认情况下，小部件在称为 *Sankey* 图表的图表中显示前一天的邮件流模式。 可以使用向左箭头向左箭头 ![ 和 ](../../media/scc-left-arrow.png) 向右键 ![ 显示 ](../../media/scc-right-arrow.png) 不同日期的信息。 每种不同的颜色表示通过不同入站或出站连接器的邮件流 (或不使用连接器) 。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
+默认情况下，小部件在称为 *Sankey* 图表的图表中显示前一天的邮件流模式。 可以使用向左箭头向左箭头 ![ 和 ](../../media/scc-left-arrow.png) 向右键 ![ 显示 ](../../media/scc-right-arrow.png) 不同日期的信息。 每种不同的颜色表示通过不同入站或出站连接器的邮件流 (，或者使用连接器) 。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
 
 ## <a name="report-view-for-the-mail-flow-map"></a>邮件流映射的报告视图
 
@@ -50,7 +50,7 @@ ms.locfileid: "56790754"
 
   ![邮件流映射报告中的详细信息视图](../../media/mfi-mail-flow-map-report-detail.png)
 
-如果 **单击筛选器中的** 报表视图，可以指定开始日期和 **结束日期的日期范围**。 
+If you click **Filters** in a 报表视图， you can specify a date range with **Start date** and **End date**.
 
 若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
@@ -78,4 +78,4 @@ ms.locfileid: "56790754"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

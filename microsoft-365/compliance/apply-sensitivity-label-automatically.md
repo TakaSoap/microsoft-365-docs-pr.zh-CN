@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 0822ef527429e48f6eb301af0838081ed597b5d9c5b1cb6825f6a53cfb93d19a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aa318c75dcfcb339ae1f7c52832938805593e47b966d68694380e3d760f0569
+ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836738"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54523774"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -63,7 +63,7 @@ ms.locfileid: "53836738"
         - 创建自动标签策略之前或之后，这些文件可自动标记。 如果文件是打开的会话的一部分（文件已打开），则不能自动标记它们。
         - 目前不支持列表项的附件，且不会自动标记。
     - 租户中每天最多自动标记 25,000 个文件。
-    - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。
+    - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。 随着 [最新增强功能的推出](#recent-enhancements-for-auto-labeling-policies)，在单独指定它们时，这些数字增加到 100 个策略和 100 个站点。 也可以指定所有站点，这种配置不受 100 个站点上限的限制。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。
     - 标签应用加密时，[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是最后修改文件的帐户。
 
@@ -87,6 +87,7 @@ ms.locfileid: "53836738"
 |:-----|:-----|:-----|
 |应用相关性|是（[最低版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)） |否 \* |
 |按位置限制|否 |是 |
+|条件：自定义敏感信息类型的精确数据匹配|是 |否 |
 |条件：可训练分类器|是 |否 |
 |条件：电子邮件的共享选项和其他选项|否 |是 |
 |条件：异常|否 |是（仅限电子邮件） |
@@ -144,6 +145,12 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 > [!NOTE]
 > 基于自定义敏感信息类型的自动标签仅适用于 OneDrive 和 SharePoint 中新创建或修改的内容，而不适用于现有内容。此限制也适用于自动标签策略。
 
+#### <a name="custom-sensitive-information-types-with-exact-data-match"></a>使用精确数据匹配的自定义敏感信息类型
+
+可以配置一个敏感度标签，对自定义敏感信息类型使用 [基于精确数据匹配 (EDM) 的分类](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。 然而，目前还必须指定至少一种不使用 EDM 的敏感信息类型。 例如，内置的敏感信息类型之一，如 **信用卡号码**。
+
+如果为敏感信息类型条件配置了一个仅有 EDM 的敏感标签，那么该标签的自动贴标设置则会自动关闭。
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
 如果使用此选项，请确保你已在租户中发布至少一个其他针对自动标记和 [敏感信息类型选项](#configuring-sensitive-info-types-for-a-label)配置的敏感度标签。
@@ -178,7 +185,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 
@@ -189,6 +196,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 - 敏感信息可以在文档和电子邮件的正文文本和页眉、页脚中检测到，但无法在电子邮件的主题行或附件中检测到。
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略
+
+> [!IMPORTANT]
+> 用于自动标记策略的新的增强功能目前正在推出，其中包括更快的模拟结果，支持更多的文件和更多的站点，以及电子邮件通知。 有关详细信息，请参阅 [自动标记策略的最新增强功能](#recent-enhancements-for-auto-labeling-policies)。
 
 在配置自动标记策略前，请确保你了解这些先决条件。
 
@@ -222,6 +232,8 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 1. 创建和配置自动标记策略。
 
 2. 以模拟模式运行该策略，可能需要 48 小时才能完成。
+    
+    随着 [最新增强功能](#recent-enhancements-for-auto-labeling-policies) 的推出，这个时间缩短为 12 小时，完成的模拟会触发电子邮件通知，并发送给配置为接收 [活动警报](alert-policies.md) 的用户。
 
 3. 查看结果，并在必要时优化策略。 重新运行模拟模式，并等待其再次完成。
 
@@ -261,12 +273,12 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 网站和 OneDrive 的位置。 然后选择“**下一步**”。
 
     ![选择位置页面自动标记向导](../media/locations-auto-labeling-wizard.png)
+    
+    若要指定个人 OneDrive 账户: 用户 OneDrive 帐户的 URL 采用以下格式:`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
-    必须指定单独的 SharePoint 网站和 OneDrive 帐户。 对于 OneDrive，用户的 OneDrive 帐户的 URL 采用以下格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    例如，对于 contoso 租户中用户名为“rsimone”的用户:`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-    例如，对于 contoso 租户中用户名为“rsimone”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+    若要验证租户的语法并标识用户的 OneDrive URL，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果需要针对每个位置使用不同的规则，请选择“**高级规则**”。 然后选择“**下一步**”。
 
@@ -367,6 +379,43 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="recent-enhancements-for-auto-labeling-policies"></a>自动标记策略的最新增强功能
+
+现在推出的针对 OneDrive 和 SharePoint 的自动标签策略的最新增强功能与之前的版本相比有以下改进:
+
+- 每个租户最多可以有 100 个自动标签策略，而不是 10 个。
+
+- 支持所有 OneDrive 和 SharePoint 站点 (新策略的默认值)，并能选择可用的 SharePoint 站点，而不必按 URL 输入每个站点。 当使用新的 **“全部”** 默认值时，租户中所有现有的 SharePoint 站点和 OneDrive 账户以及任何新创建的站点和账户都将自动包含在策略中。 选择为 SharePoint **“选择站点”** 时，如有需要，仍可通过其 URL 手动输入站点。
+
+- 在自动标记策略中指定单个站点时，现在最多支持 100 个站点，而不是 10 个站点。
+
+- 每个自动标签策略最多可以匹配 1,000,000 个文件，不过租户中每天共有 25,000 个自动标签的文件保持不变。
+
+- 模拟改进:
+    - 在模拟模式下运行自动贴标策略，在 12 小时内完成，而不是长达 48 小时。
+    - 通过为每个站点 (OneDrive 或 SharePoint) 提供多达 100 个随机抽样的匹配文件供审查，而不是每个匹配项目供审查，从而提高性能。
+    - 模拟完成后，将向配置为接受 [活动警报](alert-policies.md) 的用户发送电子邮件通知。
+
+- 改进措施以帮助审查匹配的项目:
+    - 已取样匹配项目的额外元数据信息。
+    - 能够导出有关匹配项目的信息，如 SharePoint 站点名称和文件所有者。 可以使用这些信息来透视和分析匹配的文件，并在需要时委托给文件所有者进行审查。
+
+> [!TIP]
+> 若要利用所支持的更多策略和站点，使用 PowerShell 有效地创建新的策略，并向现有策略添加额外的站点。 有关详细信息，请参阅本页面上的 [使用 PowerShell 自动标记策略](#use-powershell-for-auto-labeling-policies) 部分。
+
+### <a name="how-to-determine-whether-your-tenant-has-the-new-enhancements"></a>如何确定租户是否有新的改进措施
+
+当租户拥有新的增强功能时，会在 **自动标记** 标签上看到以下通知:
+
+![确认租户拥有新的增强功能通知横幅](../media/auto-labeling-updatedbanner.png)
+
+如果未看到此通知，则租户尚未新的增强功能，但会在几天内再次检查。
+
+> [!NOTE]
+> 如果租户收到新的增强功能时，有任何处于模拟模式的自动标记策略，则必须重新运行模拟。 如果此方案适用于你，则在查看模拟时，系统会提示选择 **“重启模拟”**。 如果不重新启动模拟，则无法完成。
+> 
+> 然而，这些增强功能仍然适用于任何不经模拟而运行的自动标记策略以及所创建的所有新的自动标记策略。
 
 ## <a name="tips-to-increase-labeling-reach"></a>提高标记覆盖范围的提示
 
