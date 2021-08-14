@@ -1,5 +1,5 @@
 ---
-title: 非客户向邮箱发送邮件的服务Microsoft 365
+title: 非客户向客户发送邮件的服务Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ ms.collection:
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a8ad98029fdc7f008ff6b22c2e8fa3e738b9fc7c0caa13b0aaca918a40f4d3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203833"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56831009"
 ---
-# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>非客户向邮箱发送邮件的服务Microsoft 365
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>非客户向客户发送邮件的服务Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51203833"
 |此联机帮助内容|提供： <ul><li>与向 EOP 用户传递通信的任何问题的起点。</li><li>包含一个简单的在线指南，其中包含我们的策略和要求。</li><li>Microsoft 所采用垃圾邮件筛选器和身份验证技术的概述。</li><ul>|
 |[Microsoft 支持](#microsoft-support)|提供有关传送问题的自助和升级支持。|
 |[反垃圾邮件 IP 除名门户](#anti-spam-ip-delist-portal)|一种提交 IP 除名请求的工具。在提交此请求前，发件人有责任确保任何源自可疑 IP 的后续邮件不是滥用的或恶意的。|
-|[源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|防止垃圾邮件和其他不需要的邮件从Exchange Online和混乱的 Internet 和邮件系统。|
+|[源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|防止垃圾邮件和其他不需要的邮件从 Exchange Online，使 Internet 和邮件系统变得混乱。|
 |
 
 ## <a name="microsoft-support"></a>Microsoft 支持
@@ -63,8 +63,8 @@ Microsoft 为向收件人发送邮件时遇到问题的人提供了Microsoft 365
 
 ## <a name="anti-spam-ip-delist-portal"></a>反垃圾邮件 IP 除名门户
 
-这是一个自助服务门户，可用于将自己从阻止的Microsoft 365列表中。 如果您尝试向电子邮件地址位于 Microsoft 365 中的收件人发送电子邮件时收到错误消息，并且您认为不应这样做，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+这是一个自助服务门户，可用于将自己从阻止的Microsoft 365列表中。 如果您尝试向电子邮件地址位于 Microsoft 365 且您认为不应发送电子邮件的收件人时收到错误消息，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告
 
-有时，第三方会使用 Microsoft365 发送垃圾邮件，这违反我们的使用条款和策略。 如果您收到来自 Microsoft 的任何垃圾邮件Office 365，您可以向 Microsoft 报告这些邮件。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+有时，第三方会使用 Microsoft365 发送垃圾邮件，这违反我们的使用条款和策略。 如果您收到来自 microsoft 的任何垃圾邮件Office 365，您可以向 Microsoft 报告这些邮件。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。

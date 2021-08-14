@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2097507c79d9c2f1738e0fee45464e90e7887551836fd8895c99cfb22de1d094
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816738"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2：提供对本地应用和服务的远程访问权限
 

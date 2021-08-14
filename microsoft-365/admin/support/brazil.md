@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7f0f18e89c42d3bd43f21de47b9cc4ba6c420f34
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b4932c9b178692ed45fbbaba4663d727cabdf3c279eec9e592fc0cba59fbb267
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893377"
 ---
 # <a name="contact-support-for-brazil"></a>联系巴西支持人员
 

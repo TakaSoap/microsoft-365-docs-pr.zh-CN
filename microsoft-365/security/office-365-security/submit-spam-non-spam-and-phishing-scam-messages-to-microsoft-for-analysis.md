@@ -1,5 +1,5 @@
 ---
-title: 手动将邮件提交到 Microsoft 进行分析
+title: 手动将邮件提交给 Microsoft 进行分析
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 管理员和最终用户可以了解如何发送电子邮件， (标记为错误或错误的邮件允许向 Microsoft 发送) 邮件进行分析。
+description: 管理员和最终用户可以了解如何通过电子邮件 (标记为错误或错误的邮件，允许将邮件) Microsoft 进行分析。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a6dd7314162fd91be487684be2191c1ea2b50d740fd86fc27bc91e7c0d978196
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56825642"
 ---
-# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交到 Microsoft 进行分析
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,11 +35,11 @@ ms.locfileid: "53105544"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用"提交"页面，Microsoft 365 Defender门户。  有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用 Microsoft 365 Defender 页面。  有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 如果组织的用户在收件箱中收到垃圾邮件 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，可能很令人沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
-你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 () 错误邮件和钓鱼邮件来帮助此过程。
+你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (允许的) 错误邮件和网络钓鱼邮件，来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很高，我们可能无法回答所有分析请求。
@@ -49,20 +49,20 @@ ms.locfileid: "53105544"
 > [!TIP]
 > Outlook 和 Outlook 网页版 (中以前称为 Outlook Web App) 的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
 
-如果您收到通过垃圾邮件筛选且应被标识为垃圾邮件或网络钓鱼的邮件，您可以将该邮件提交到 Microsoft 垃圾邮件分析团队和 Microsoft 网络钓鱼分析团队（如果适用）。 如果邮件符合分类条件，分析员将查看邮件并将其添加到服务范围的筛选器。
+如果您收到通过垃圾邮件筛选且应被标识为垃圾邮件或网络钓鱼的邮件，您可以在适当时将邮件提交给 Microsoft 垃圾邮件分析团队和 Microsoft 网络钓鱼分析团队。 如果邮件符合分类条件，分析员将查看邮件并将其添加到服务范围的筛选器。
 
 1. 创建具有以下收件人之一的新空白电子邮件：
 
    - **垃圾邮件**： `junk@office365.microsoft.com`
    - **网络钓鱼**： `phish@office365.microsoft.com`
 
-2. 将垃圾邮件或网络钓鱼邮件拖放到新邮件中。 这会将垃圾邮件或网络钓鱼邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容，或将邮件转发 (我们需要原始邮件，以便检查邮件头) 。
+2. 将垃圾邮件或网络钓鱼邮件拖放到新邮件中。 这会将垃圾邮件或网络钓鱼邮件另存为新邮件中的附件。 不要复制和粘贴邮件内容或转发邮件 (我们需要原始邮件，以便检查邮件头) 。
 
    > [!NOTE]
    >
    > - 可以在新邮件中附加多个邮件。 确保所有邮件类型相同：网络钓鱼邮件或垃圾邮件。
    > - 保留新的邮件正文空白。
-   > - 对于附加 (，Outlook .msg) 或 .eml (默认Outlook格式) Web 格式。
+   > - 在附加 (Web (Outlook格式) 使用 .msg 或 .eml (默认 Outlook) 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -78,13 +78,13 @@ ms.locfileid: "53105544"
 
 1. 创建一封作为收件人的新 `not_junk@office365.microsoft.com` 空白电子邮件。
 
-2. 将错误标识的邮件拖放到新邮件中。 这会将错误标识的邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容，或将邮件转发 (我们需要原始邮件，以便检查邮件头) 。
+2. 将错误标识的邮件拖放到新邮件中。 这会将错误标识的邮件另存为新邮件中的附件。 不要复制和粘贴邮件内容或转发邮件 (我们需要原始邮件，以便检查邮件头) 。
 
    > [!NOTE]
    >
    > - 可以在新邮件中附加多个邮件。 确保所有邮件类型相同：网络钓鱼邮件或垃圾邮件。
    > - 保留新的邮件正文空白。
-   > - 对于附加 (，Outlook .msg) 或 .eml (默认Outlook格式) Web 格式。
+   > - 在附加 (Web (Outlook格式) 使用 .msg 或 .eml (默认 Outlook) 格式。
 
 3. 完成后，单击"发送 **"。**
 

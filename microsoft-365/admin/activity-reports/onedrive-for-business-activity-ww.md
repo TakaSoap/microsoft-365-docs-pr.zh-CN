@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取OneDrive使用情况报告，并知道每个用户的活动OneDrive共享的文件数和存储使用率。
-ms.openlocfilehash: 8257d8e85819ff5edae96967fd4a687be3a903a1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f651732a6684389aa3be5214600385797d4b202b79491379f53712dc61f8ac2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816329"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365管理中心中的报表 - OneDrive for Business活动
 
@@ -49,7 +49,7 @@ You can view the activities in the OneDrive by choosing the **Activity** tab.<br
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |帐户所有者的用户名OneDrive帐户。  <br/> |

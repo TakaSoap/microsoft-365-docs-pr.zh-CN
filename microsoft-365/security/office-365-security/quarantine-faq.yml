@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
-  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+  ms.openlocfilehash: 0dd07677bf372bb4bb15008708641837d475af716e1c5fc3c2edc5ebe42cb750
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/23/2021
-  ms.locfileid: "53083640"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56825461"
 title: 隔离邮件常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主题为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织提供有关隔离电子邮件的Exchange Online常见问题和解答。
+  本主题提供有关在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织的隔离Exchange Online常见问题和解答。
 
 
   有关反垃圾邮件保护的问题和解答，请参阅 [反垃圾邮件保护常见问题解答](anti-spam-protection-faq.yml)。
@@ -51,7 +51,7 @@ summary: >
 
   有关反欺骗保护的问题和解答，请参阅 [反欺骗保护常见问题解答](anti-spoofing-protection-faq.yml)。
 sections:
-- name: 忽略
+- name: 已忽略
   questions:
   - question: >
       如何管理因恶意软件隔离的邮件？
@@ -64,11 +64,11 @@ sections:
   - question: >
       如何授予用户对隔离的访问权限？
     answer: >
-      用户必须具有有效的帐户，以访问隔离中自己的邮件。 独立 EOP 要求在 EOP 中将用户表示为邮件用户 (通过目录同步邮箱手动创建或) 。 有关在独立 EOP 环境中管理用户的信息，请参阅 [在独立 EOP 中管理邮件用户](/exchange/standalone-eop/manage-mail-users-in-eop)。
+      用户必须具有有效的帐户，以访问隔离中自己的邮件。 独立 EOP 要求用户在 EOP 中表示为邮件用户 (通过目录同步邮箱手动创建) 。 有关在独立 EOP 环境中管理用户的信息，请参阅 [在独立 EOP 中管理邮件用户](/exchange/standalone-eop/manage-mail-users-in-eop)。
   - question: >
       最终用户可以在隔离中访问哪些邮件？
     answer: >
-      自 2020 年 4 (，用户可以访问垃圾邮件、批量) 电子邮件和邮件。这些邮件是收件人。 最终用户无法访问隔离的恶意软件、高可信度网络钓鱼或因邮件流规则中的"将邮件传递至托管隔离"操作而隔离 (也称为传输规则) 。 有关访问隔离邮件的用户详细信息，请参阅以用户模式查找并 [释放隔离邮件](find-and-release-quarantined-messages-as-a-user.md)。
+      自 2020 年 4 (，用户可以访问垃圾邮件、批量) 电子邮件和邮件，这些邮件是收件人。 最终用户无法访问隔离的恶意软件、高可信度网络钓鱼或因邮件流规则中的"将邮件传递至托管隔离"操作而隔离的邮件 (也称为传输规则) 。 有关访问隔离邮件的用户详细信息，请参阅以用户模式查找并 [释放隔离邮件](find-and-release-quarantined-messages-as-a-user.md)。
   - question: >
       邮件在隔离区中保留多久？
     answer: >
@@ -82,17 +82,17 @@ sections:
   - question: >
       能否一次释放或报告多个隔离邮件？
     answer: >
-      在 Microsoft 365 Defender 门户中，一次可以选择并释放最多 100 条消息。
+      在 Microsoft 365 Defender 门户中，一次最多可以选择并释放 100 条消息。
 
 
-      管理员可以使用 Exchange Online PowerShell 或独立 EOP PowerShell 中的[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)和[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlet 批量查找和释放隔离邮件，并批量报告误报。
+      管理员可以使用 Exchange Online PowerShell 或独立 EOP PowerShell 中的[Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)和[Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlet 批量查找并释放隔离邮件，并批量报告误报。
   - question: >
       搜索隔离邮件时是否支持通配符？ 能否搜索特定域的隔离邮件？
     answer: >-
-      通配符在应用程序门户中不受Microsoft 365 Defender支持。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
+      通配符在应用程序门户中Microsoft 365 Defender支持。 例如，在搜索发件人时，需要指定完整的电子邮件地址。 但是，可以在 PowerShell 或独立 EOP PowerShell Exchange Online通配符。
 
 
-      例如，将以下 PowerShell 代码复制到记事本，.ps1文件另存为 (，例如C:\Data\QuarantineRelease.ps1) 。
+      例如，将以下 PowerShell 代码复制到记事本，.ps1文件另存为 (，例如，C:\Data\QuarantineRelease.ps1) 。
 
 
       然后，在连接到 Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)或[Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)后，运行以下命令以运行脚本：
@@ -108,7 +108,7 @@ sections:
       该脚本执行以下操作：
 
 
-      - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最大结果数为 50，000， (50 页（包含 1000 个结果) ）。
+      - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最大结果数为 50，000， (50 页（包含 1000 个) ）。
 
       - 将结果保存到 CSV 文件。
 

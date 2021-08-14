@@ -15,14 +15,14 @@ ms.collection:
 description: Microsoft 365管理员可以了解如何从勒索软件攻击中恢复。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: b7511039c1d33722790e993e8cd9c8c89e1e620b2585255359cb14f59ddb1ece
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56825897"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件Microsoft 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>从 Microsoft 365 中的勒索软件攻击中Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "53415547"
 
 - 无法保证支付勒索金额将返回对文件的访问权限。 事实上，支付勒索金额可能会成为更多勒索软件的目标。
 
-  如果已付款，但在未使用攻击者的解决方案的情况下恢复，请与银行联系，看看他们能否阻止交易。
+  如果已付款，但在没有使用攻击者的解决方案的情况下恢复，请与银行联系，看看他们能否阻止交易。
 
   我们还建议您向执法机构、欺诈报告网站和 Microsoft 报告勒索软件攻击，如本文稍后所述。
 
@@ -63,7 +63,7 @@ ms.locfileid: "53415547"
 
 - [为用户启用或禁用 POP3 或 IMAP4 访问](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何暂停[和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+暂停OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何在 OneDrive 中[暂停和恢复OneDrive。](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤 3：从受影响的设备中删除恶意软件
 
@@ -71,23 +71,23 @@ ms.locfileid: "53415547"
 
 不要忘记扫描正在同步数据的设备或映射的网络驱动器的目标。
 
-你可以[对Windows Defender (](https://www.microsoft.com/windows/comprehensive-security)客户端使用) [Microsoft Security Essentials。](https://www.microsoft.com/download/details.aspx?id=5201)
+你可以[对Windows Defender旧](https://www.microsoft.com/windows/comprehensive-security) (客户端) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
 
-此外，还可以帮助你删除勒索软件或恶意软件的替代方法是[MSRT (恶意软件) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
+此外，还可以帮助你删除勒索软件或恶意软件的替代方法是 MSRT (恶意软件[) 。 ](https://www.microsoft.com/download/details.aspx?id=9905)
 
-如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或[解决检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
+如果这些选项不起作用，可以尝试Windows Defender[脱机](https://support.microsoft.com/help/17466)"或解决[检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤 4：在已清理的计算机或设备上恢复文件
 
-完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除文件) 后，可以使用 Windows 10 和 Windows 8.1 中的文件历史记录或 Windows 7 中的系统保护尝试恢复本地文件和文件夹。 [](https://support.microsoft.com/help/17128)
+完成上一步以将勒索软件有效负载从你的环境 (这将阻止勒索软件加密或删除你的文件) 后，可以使用 Windows 10 和 Windows 8.1 中的文件历史记录或 Windows 7 中的系统保护来尝试恢复你的本地文件和文件夹。 [](https://support.microsoft.com/help/17128)
 
-**注意**:
+**注意**：
 
 - 某些勒索软件还会加密或删除备份版本，因此你无法使用文件历史记录或系统保护来还原文件。 如果发生这种情况，你需要在不受勒索软件或软件影响的外部驱动器或OneDrive备份，如下一节中所述。
 
-- 如果文件夹已同步到OneDrive并且您没有使用最新版本的 Windows，则使用"文件历史记录"可能有一些限制。
+- 如果文件夹已同步OneDrive并且您没有使用最新版本的 Windows，则使用文件历史记录可能有一些限制。
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复OneDrive for Business
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复用户OneDrive for Business
 
 文件还原OneDrive for Business使您可以将整个OneDrive还原到过去 30 天内以前的时间点。 有关详细信息，请参阅“还原你的 OneDrive”[](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "53415547"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤 7：重新启用Exchange ActiveSync OneDrive 同步
 
-在清理计算机和设备并恢复数据后，可以重新启用Exchange ActiveSync OneDrive 同步之前在步骤 2 中禁用的[Exchange ActiveSync 和 OneDrive 同步。](#step-2-disable-exchange-activesync-and-onedrive-sync)
+清理计算机和设备并恢复数据后，可以重新启用Exchange ActiveSync OneDrive 同步之前在步骤 2 中禁用的 Exchange ActiveSync[和 OneDrive 同步。](#step-2-disable-exchange-activesync-and-onedrive-sync)
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步骤 8 (可选) ：OneDrive 同步文件扩展名阻止访问
 
@@ -151,7 +151,7 @@ ms.locfileid: "53415547"
 
 - [最新Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/) (第 22-24 页) 
 
-- **勒索软件：Microsoft 365 Defender** 门户门户的"威胁分析"节点中的 (威胁报告，请参阅这些 [)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
+- **勒索软件：Microsoft 365 Defender** 门户的"威胁分析"节点中的一个持续威胁 (请参阅这些 [许可](/microsoft-365/security/defender/prerequisites#licensing-requirements)) 
 
 Microsoft 365保护：
 
@@ -162,12 +162,12 @@ Microsoft 365保护：
 
 Microsoft 安全团队博客文章：
 
-- [通过了解网络安全风险复原：第 4 部分- (2021 年 5 月) ](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [通过了解网络安全风险来复原：第 4 部分- (2021 年 5 月) ](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   请参阅 **勒索软件** 部分。
 
-- [人为操作的勒索软件攻击：2020 年 3 月 (可阻止的灾难) ](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [人为勒索软件攻击：2020 年 3 月 (可阻止的) ](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 - [勒索软件响应 - 是否付费？ (2019 年 12 月) ](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk 在 2019 年 12 月 (透明响应勒索软件) ](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-- [有价值的升级：Windows 10新一代的安全性证明可以抵御 2017 年 1 月 2018 年 1 月 (勒索软件爆发) ](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [有价值的升级：Windows 10新一代的安全性证明可以抵御 2017 年 1 月 2018 年 1 月 (勒索软件) ](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

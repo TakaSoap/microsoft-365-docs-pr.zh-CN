@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44d093c039e972832b162b989577f04dc336812b
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5971a9d7764e8b6a64676a9ed81e2ddc1edd0e218191ee45efab167d59c7b968
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56830864"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正邮件中传递的恶意Office 365
 
@@ -29,21 +29,21 @@ ms.locfileid: "53082872"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-修正意味着对威胁采取规定操作。 发送到组织的恶意电子邮件可以通过系统、零时差自动清除 (ZAP) 或安全团队通过修正操作（如移动到收件箱、移动到垃圾邮件、移动到已删除项目、软删除或硬删除）进行 *清理。*   Microsoft Defender for Office 365 Plan 2/E5 使安全团队可以通过手动和自动调查来修正电子邮件和协作功能中的威胁。
+修正意味着对威胁采取规定操作。 发送到组织的恶意电子邮件可以通过系统、零时差自动清除 (ZAP) 或安全团队通过修正操作（如移动到收件箱、移动到垃圾邮件、移动到已删除项目、软删除或硬删除）进行 *清理*。   Microsoft Defender for Office 365计划 2/E5 使安全团队可以通过手动和自动调查来修正电子邮件和协作功能中的威胁。
 
 > [!NOTE]
-> 若要修正恶意电子邮件，安全团队需要分配有 *"搜索* 和清除"角色。 角色分配通过管理门户 中[的权限Microsoft 365 Defender完成](permissions-microsoft-365-security-center.md)。
+> 若要修正恶意电子邮件，安全团队需要分配有 *"搜索* 和清除"角色。 角色分配通过管理[门户 中的权限Microsoft 365 Defender完成](permissions-microsoft-365-security-center.md)。
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>开始之前您需要了解哪些信息
 
-管理员可以对电子邮件采取必需操作，但若要批准这些操作，他们必须在 Microsoft 365 Defender 门户的"电子邮件"&协作权限中为其分配"搜索和清除"角色。 如果没有 *向其中一* 个角色组添加"搜索和清除"角色，他们将无法执行该操作。
+管理员可以对电子邮件采取必需操作，但若要批准这些操作，他们必须在 Microsoft 365 Defender 门户的"电子邮件"&协作 **权限** 中为其分配"搜索和清除"角色。 如果没有 *向其中一* 个角色组添加"搜索和清除"角色，他们将无法执行该操作。
 
 ## <a name="manual-and-automated-remediation"></a>手动和自动修正
 
 *当安全* 团队使用资源管理器中的搜索和筛选功能手动识别威胁时，将发生手动搜寻。 确定一组需要修复的电子邮件后，可以通过任何电子邮件视图 (*恶意软件*、网络钓鱼或所有电子邮件) 触发手动电子邮件修正。
 
 > [!div class="mx-imgBorder"]
-> [![按日期Office 365威胁资源管理器中的手动搜寻。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![按日期在Office 365资源管理器中手动搜寻。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 安全团队可以通过多种方式使用资源管理器选择电子邮件：
 
@@ -64,7 +64,7 @@ ms.locfileid: "53082872"
 > [!div class="mx-imgBorder"]
 > [!["Zapped"页面中包含恶意软件的邮件显示 Zap 执行的时间。](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-所有修正 (直接审批或两步) 资源管理器中创建的审批流程，以及来自自动调查的已批准操作均显示在操作中心中。 通过"审阅操作中心"下的左侧导航 \> **面板访问它们**。
+所有修正 (直接审批或两步) 资源管理器中创建的审批请求，以及来自自动调查的已批准操作均显示在操作中心中。 通过"审阅操作中心"下的左侧导航 \> **面板访问它们**。
 
 > [!div class="mx-imgBorder"]
 > [![操作中心，按日期和严重性列出威胁。](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
@@ -113,7 +113,7 @@ ms.locfileid: "53082872"
   > [!div class="mx-imgBorder"]
   > [![ZAP 电子邮件群集飞出面板。](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  选择一个邮件提交项以显示该修正的详细信息，例如通过自动调查触发修正时查询 (或通过选择查询) 以及修正的开始和结束时间触发修正。 它还显示已提交进行修正的邮件列表。 当邮件从资源管理器保留期移开时，邮件将从此列表消失。 该列表还显示可修复的单个邮件。
+  选择一个邮件提交项以显示该修正的详细信息，例如通过自动调查触发修正时查询 (或通过选择查询) 以及修正的开始和结束时间触发修正。 它还显示已提交进行修正的邮件列表。 当邮件从资源管理器保留期移开时，邮件将从此列表中消失。 该列表还显示可修复的单个邮件。
 
 - **操作日志**：此选项卡显示已修正的邮件，包括已批准日期、批准操作、操作、状态和计数的管理员。
 
@@ -127,7 +127,7 @@ ms.locfileid: "53082872"
 
   由于只能处理可修复的电子邮件，因此每个电子邮件的清理都显示为成功或失败。 从可修复的电子邮件总数中，报告成功和失败的缓解。
 
-  - **成功**：已完成对可修复电子邮件的所需操作。 例如：管理员希望从邮箱中删除电子邮件，因此管理员执行软删除电子邮件的操作。 如果在采取操作后在原始文件夹中找不到可修复的电子邮件，则状态将显示为成功。
+  - **成功**：已完成对可修复电子邮件的所需操作。 例如：管理员希望从邮箱中删除电子邮件，因此管理员执行软删除电子邮件的操作。 如果在采取操作后未在原始文件夹中找到可修复的电子邮件，则状态将显示为成功。
 
   - **失败**：对可修复电子邮件的所需操作失败。 例如：管理员希望从邮箱中删除电子邮件，因此管理员执行软删除电子邮件的操作。 如果在采取操作后在邮箱中仍发现可修复的电子邮件，则状态将显示为失败。
   

@@ -13,12 +13,12 @@ description: 管理员可以了解安全与合规中心内邮件流仪表板中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 39f7b43db62fd19f7500972a3016fdd8dd0875b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7b38bb50bd72ea3391cd908e6e058e050003a17b41777df9d8d2663a50977904
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56826501"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -71,10 +71,10 @@ ms.locfileid: "51203787"
 
 - **[Exchange管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory。
 
-- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange组的成员，请考虑以下问题：
+- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange的成员，请考虑以下问题：
   - 用户必须直接登录到安全&合规中心 <https://protection.office.com> 。
   - 用户仅对邮件流仪表板具有只读权限。
-  - 用户无法访问管理Microsoft 365中心。
+  - 用户无法访问Microsoft 365 管理中心。
 
 有关权限详细信息，请参阅安全与合规中心& [权限](permissions-in-the-security-and-compliance-center.md) 和向用户授予对安全与合规& [的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 

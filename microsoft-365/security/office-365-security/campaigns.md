@@ -19,12 +19,12 @@ ms.collection:
 description: 了解 Microsoft Defender for Office 365 中的市场活动Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: d1b080968675de25374019ea96e68cb6e9a63aa2fe72533759065cd4fbbc44c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56830879"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的市场活动视图
 
@@ -33,7 +33,7 @@ ms.locfileid: "52879128"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如，Microsoft 365 E5 或具有 Defender for Office 365 计划 2 附加设备) 。 Defender 门户中的Microsoft 365视图标识和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
+市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如，Microsoft 365 E5 或具有 Defender for Office 365 计划 2 加载项的) 。 活动门户中的Microsoft 365 Defender标识和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
 
 - 高效调查和应对钓鱼攻击。
 - 更好地了解攻击范围。
@@ -52,13 +52,13 @@ Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反�
 - **邮件收件人**：收件人如何相关。 例如，收件人域、收件人工作职能 (管理员、主管人员等 ) 、公司类型 (大型、小型、公共、私有等 ) 和行业。
 - **攻击有效** 负载：邮件中的恶意链接、附件或其他有效负载。
 
-活动可能是短期的，或者可能跨越几天、几周或几个月的活动和无效时段。 可能会针对你的特定组织启动市场活动，或者你的组织可能是跨多个公司进行更大活动的一部分。
+活动可能是短期的，或者可能跨越几天、几周或几个月的活动和无效时段。 可能针对你的特定组织启动市场活动，或者你的组织可能是跨多个公司进行更大活动的一部分。
 
-## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的市场活动视图
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>门户中的市场活动Microsoft 365 Defender视图
 
 Campaign Views is available in the Microsoft 365 Defender portal () <https://security.microsoft.com> at Email & **collaboration** \> **Campaigns，** or directly at <https://security.microsoft.com/campaigns> .
 
-![Microsoft 365 Defender 门户中的市场活动概述](../../media/campaigns-overview.png)
+![活动门户中的Microsoft 365 Defender概述](../../media/campaigns-overview.png)
 
 还可以从：
 
@@ -67,7 +67,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 - **电子邮件&协作** \>**资源管理器** \>**视图** \>**钓鱼邮件** \>**"市场活动"** 选项卡
 - **电子邮件&协作** \>**资源管理器** \>**视图** \>**恶意软件** \>**"市场活动"** 选项卡
 
-若要访问市场活动视图，你需要是 Defender 门户中组织管理、安全管理员或安全读者角色Microsoft 365的成员。  有关详细信息，请参阅 Defender 门户[中Microsoft 365权限](permissions-microsoft-365-security-center.md)。
+若要访问市场活动视图，你需要是组织管理、安全管理员或安全读者角色组的成员，Microsoft 365 Defender组。  有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
 ## <a name="campaigns-overview"></a>市场活动概述
 
@@ -78,13 +78,13 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 > [!TIP]
 > 如果看不到任何市场活动数据，请尝试更改日期范围或 [筛选器](#filters-and-settings)。
 
-概述页面上图表下方的表在"活动"选项卡上 **显示** 以下信息：
+概述页面上图表下方的表在"市场活动"选项卡上 **显示** 以下信息：
 
 - **名称**
 
 - **示例主题**：活动中某封邮件的主题行。 请注意，活动的所有邮件不一定具有相同的主题。
 
-- 目标：计算得出的百分比： (组织中活动收件人的数量) / (服务组织中所有组织中活动的收件人) 。 此值指示仅将市场活动定向到你的组织的程度 (一个值) 与针对服务中其他组织 (该值) 。
+- 目标：计算得出的百分比： (组织中活动收件人的数量) / (服务组织中所有组织的活动收件人) 。 此值指示仅将活动定向到组织的程度 (值高于) ，而该值也指向服务中 (值较低的组织) 。
 
 - **类型**：此值是钓鱼 **邮件或****恶意软件**。
 
@@ -100,11 +100,11 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 - **单击**：单击 URL 或在网络钓鱼邮件中打开附件的用户数。
 
-- **单击率**：由"单击的 **收件箱"**  /  **计算得出的百** 分比。 此值是活动有效性的指示器。 换句话说，如果收件人能够将邮件标识为网络钓鱼邮件，并且他们未单击有效负载 URL。
+- **单击率**：由"单击的 **收件箱"**  /  **计算得出的百** 分比。 此值是活动有效性的指示器。 换句话说，如果收件人能够将邮件标识为网络钓鱼，并且他们未单击有效负载 URL。
 
   请注意， **点击** 率不用于恶意软件市场活动。
 
-- **已访问**：实际上有多少用户进入有效负载网站。 如果存在 **Clicked 值**，保险箱链接阻止访问网站，则此值将为 0。
+- **已访问**：实际上有多少用户进入有效负载网站。 如果存在 **Clicked 值**，但保险箱链接阻止访问网站，此值将为零。
 
 " **宣传活动源** "选项卡显示世界地图中的邮件源。
 
@@ -127,7 +127,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   - **发件人**
   - **Recipients**
   - **发件人域**
-  - **主题**
+  - **Subject**
   - **附件的文件名**
   - **恶意软件系列**
   - **标记**：应用了指定用户标记的用户或组 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
@@ -140,10 +140,10 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   - **系统覆盖**
 
 - **高级**：
-  - **Internet 邮件 ID：** 在邮件 **头的 Message-ID** 头字段中可用。 示例值是 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (尖括号) 。
+  - **Internet 邮件 ID：** 在邮件头的 **Message-ID** 头字段中可用。 示例值是 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (尖括号) 。
   - **网络邮件 ID：** 在邮件头的 **X-MS-Exchange-Organization-Network-Message-Id** 头字段中可用的 GUID 值。
   - **发件人 IP**
-  - **附件 SHA256：** 若要在命令提示符中查找文件的 SHA256 哈希Windows，在命令提示符中运行以下命令： `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
+  - **附件 SHA256：** 若要在 Windows 中查找文件的 SHA256 哈希值，在命令提示符中运行以下命令 `certutil.exe -hashfile "<Path>\<Filename>" SHA256` ：。
   - **群集 ID**
   - **警报 ID**
   - **警报策略 ID**
@@ -165,11 +165,11 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 完成后，单击"查询 **"** 按钮。
 
-创建基本或高级筛选器后，可以使用"保存查询"或"将查询另存为"**来保存它**。 稍后，当你返回到"市场活动"页面时，可以通过单击"保存的查询设置"加载 **已保存的筛选器**。
+创建基本或高级筛选器后，可以使用"保存查询"或"将查询另存为"**来保存它**。 稍后，当你返回到"市场活动" **页面时** ，可以通过单击"保存的查询设置"加载 **已保存的筛选器**。
 
 若要导出图表或市场活动列表，请单击"导出 **"，然后选择**"**导出图表** 数据"或"**导出市场活动列表"。**
 
-如果你有 Microsoft Defender for Endpoint 订阅，可以单击 **MDE 设置** Microsoft Defender for Endpoint 连接或断开活动信息。 有关详细信息，请参阅将[Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 集成](integrate-office-365-ti-with-mde.md)。
+如果你有 Microsoft Defender for Endpoint 订阅，可以单击 **MDE 设置** Microsoft Defender for Endpoint 连接或断开连接活动信息。 有关详细信息，请参阅将[Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 集成](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="campaign-details"></a>活动详细信息
 
@@ -185,7 +185,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 - **影响**
 - **邮件**：收件人总数。
 - **收件箱**：传递到收件箱而不是垃圾邮件文件夹的邮件数。
-- **单击的链接**：单击网络钓鱼邮件中的 URL 有效负载的用户数。
+- **单击的链接**：在网络钓鱼邮件中单击 URL 有效负载的用户数。
 - **访问链接**：访问 URL 的用户数。
 - **目标 (%) ：** 计算得出的百分比： (组织中活动收件人数) / (服务) 中所有组织中活动的收件人总数。 请注意，此值在活动的整个生命周期内计算，不会基于日期筛选器更改。
 - 市场活动流的开始日期/时间和结束数据/时间筛选器，如下一节中所述。
@@ -195,7 +195,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 ### <a name="campaign-flow"></a>活动流
 
-在活动详细信息视图的中间，有关市场活动的重要详细信息在称为 _Sankey_ 图表 (流程图) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
+在活动详细信息视图的中间，有关活动的重要详细信息在称为 _"Sankey_ 图表"视图 (流程图) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
 
 > [!TIP]
 > 流程图中显示的信息由日程表中的日期范围筛选器控制，如上一节中所述。
@@ -208,15 +208,15 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 - **发件人 IP**
 - **发件人域名**
-- **筛选器裁定**：裁定值与可用网络钓鱼和垃圾邮件筛选裁定相关，如 [反垃圾邮件邮件头中所述](anti-spam-message-headers.md)。 下表介绍了可用值：
+- **筛选器裁定**：裁定值与可用的网络钓鱼和垃圾邮件筛选裁定相关，如 [反垃圾邮件邮件头中所述](anti-spam-message-headers.md)。 下表介绍了可用值：
 
   <br>
 
   ****
 
-  |值|垃圾邮件筛选器裁定|说明|
+  |值|垃圾邮件筛选器裁定|描述|
   |---|---|---|
-  |**允许**|`SFV:SKN` <p> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为非垃圾邮件和/或跳过筛选。 例如，邮件被邮件流规则标记为"非垃圾邮件 (也称为传输规则) 。 <p> 邮件由于其他原因跳过了垃圾邮件筛选。 例如，发件人和收件人似乎在同一个组织中。|
+  |**允许**|`SFV:SKN` <p> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为非垃圾邮件和/或跳过筛选。 例如，邮件流规则将邮件标记为非垃圾邮件 (传输规则) 。 <p> 邮件由于其他原因跳过了垃圾邮件筛选。 例如，发件人和收件人似乎在同一个组织中。|
   |**已阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|
   |**已检测**|`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
   |**未检测到**|`SFV:NSPM`|邮件被垃圾邮件筛选标记为非垃圾邮件。|
@@ -225,7 +225,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   |**租户阻止**<sup>\*\*</sup>|`SFV:SKA`|邮件被垃圾邮件筛选阻止，因为反垃圾邮件策略中的设置。 例如，发件人在允许的发件人列表或允许的域列表中。|
   |**用户允许**<sup>\*</sup>|`SFV:SFE`|邮件跳过了垃圾邮件筛选，因为发件人位于用户的"发件人保险箱列表中。|
   |**用户阻止**<sup>\*\*</sup>|`SFV:BLK`|邮件被垃圾邮件筛选阻止，因为发件人位于用户的"阻止的发件人"列表中。|
-  |**ZAP**|不适用|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已传递的邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件策略中配置操作。|
+  |**ZAP**|不适用|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已送达邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件策略中配置操作。|
   |
 
   <sup>\*</sup> 查看反垃圾邮件策略，因为允许的邮件可能已被服务阻止。
@@ -250,13 +250,13 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
 
 #### <a name="url-clicks"></a>URL 单击次数
 
-当网络钓鱼邮件传递到收件人的"收件箱"或"垃圾邮件"文件夹时，用户始终有可能单击有效负载 URL。 不单击 URL 是成功指标，但您需要确定网络钓鱼邮件甚至被传递到邮箱的原因。
+当网络钓鱼邮件传递到收件人的"收件箱"或"垃圾邮件"文件夹时，用户始终有可能单击有效负载 URL。 不单击 URL 只是成功指标，但您需要确定网络钓鱼邮件甚至被传递到邮箱的原因。
 
 如果用户单击网络钓鱼邮件的有效负载 URL，操作将显示在活动详细信息视图中图表的 **URL** 单击区域中。
 
 - **允许**
 - **BlockPage：** 收件人单击了有效负载 URL，但他们对恶意网站的访问被保险箱 [链接](safe-links.md)策略阻止。
-- **BlockPageOverride：** 收件人单击了邮件中的有效负载 URL，保险箱链接试图阻止它们，但允许它们覆盖此块。 检查你的[保险箱](set-up-safe-links-policies.md)链接策略，了解为什么允许用户替代"链接保险箱裁定并继续访问恶意网站。
+- **BlockPageOverride：** 收件人单击了邮件中的有效负载 URL，保险箱链接试图阻止它们，但允许他们覆盖此阻止。 检查你的[保险箱链接](set-up-safe-links-policies.md)策略，了解为什么允许用户替代"链接保险箱裁定并继续访问恶意网站。
 - **PendingDetonationPage**： 保险箱 Attachments in Microsoft Defender for Office 365 is in the process of opening and investigating the payload URL in a virtual computer environment.
 - **PendingDetonationPageOverride：** 允许收件人替代有效负载触发过程并打开 URL，而无需等待结果。
 
@@ -285,7 +285,7 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   - **总计数**
   - **收件箱**
   - **非收件箱**
-  - **DKIM 已通过** 身份验证：发件人已通过 DKIM 邮件的域密钥 ([身份验证) 。](support-for-validation-of-dkim-signed-messages.md) 未通过 DKIM 验证的发件人指示未经身份验证的发件人，或者邮件正在欺骗合法发件人。
+  - **DKIM 通过**：发件人已通过 [DKIM](support-for-validation-of-dkim-signed-messages.md)邮件的域密钥 (身份验证) 。 未通过 DKIM 验证的发件人指示未经身份验证的发件人，或者邮件正在欺骗合法发件人。
   - **DMARC passed**： the sender was authenticated by [Domain-based Message Authentication， Reporting， and Conformance (DMARC)](use-dmarc-to-validate-email.md). 未通过 DMARC 验证的发件人指示未经身份验证的发件人，或者邮件正在欺骗合法发件人。
 
 - **附件**
@@ -309,4 +309,4 @@ Campaign Views is available in the Microsoft 365 Defender portal () <https://sec
   - **收件箱邮件**：打开一个新的威胁资源管理器搜索选项卡，将" **市场活动 ID"** 和"传递位置 **： 收件箱** "用作搜索筛选器。
   - **内部消息**：打开一个新的威胁资源管理器搜索选项卡，将 **"市场活动 ID"** 和"方向 **性： 组织** 内部"用作搜索筛选器。
 
-- **下载威胁报告**：将市场活动详细信息下载到 Word (，默认名为 CampaignReport.docx) 。 请注意，下载包含市场活动的整个生命周期的详细信息， (所选的筛选日期) 。
+- **下载威胁报告**：将市场活动详细信息下载到 Word 文档 (名为 CampaignReport.docx) 。 请注意，下载包含市场活动的整个生命周期的详细信息 (选择筛选日期) 。

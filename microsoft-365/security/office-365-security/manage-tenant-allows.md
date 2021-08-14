@@ -16,14 +16,14 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5870ff663f0e97d699f6e4a158f8b0b05ee0bf15
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56830680"
 ---
-# <a name="add-allows-in-the-tenant-allowblock-list"></a>租户允许/阻止列表中的添加允许
+# <a name="add-allows-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加允许
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "53543838"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-允许不能直接添加到租户允许/阻止列表。 使用管理员提交过程将 URL、文件和/或发件人允许添加到租户允许/阻止列表。 Microsoft 不允许管理员添加直接允许，但确定阻止了哪些内容，并提供了允许。 在大多数情况下，添加 允许为系统提供一些时间，并自然地允许（如果需要）。 在某些情况下，Microsoft 会管理你的允许。
+允许不能直接添加到租户允许/阻止列表。 使用管理员提交过程将 URL、文件和/或发件人允许添加到租户允许/阻止列表。 Microsoft 不允许管理员添加直接允许，但确定阻止了哪些内容，并提供允许。 在大多数情况下，添加 允许为系统提供一些时间，并自然地允许（如果需要）。 在某些情况下，Microsoft 会管理你的允许。
 
 ## <a name="add-allows-using-the-submissions-portal"></a>添加允许使用提交门户 
 
@@ -42,9 +42,9 @@ ms.locfileid: "53543838"
 
 2. 在"**提交"** 页上，验证"**已提交进行分析**"选项卡已选中，然后单击广告图标"提交到 ![ Microsoft ](../../media/m365-cc-sc-create-icon.png) **进行分析"。**
 
-3. 使用 **"提交到 Microsoft 进行审阅** "飞出以将发件人、文件或 URL 标记为误报。 
+3. 使用 **"提交给 Microsoft 审阅** "飞出页面将发件人、文件或 URL 标记为误报。 
 
-4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择"不应被阻止 (**误报) "。** 
+4. 在"**选择提交** 到 Microsoft 的原因"部分，选择"不应已被阻止 (**误报) "。** 
 
 5. 启用" **允许类似此选项的邮件** "。 
 
@@ -57,14 +57,14 @@ ms.locfileid: "53543838"
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>使用邮件创建欺骗性发件人允许Microsoft 365 Defender
 
-**注意**:
+**注意**：
 
 - 仅 _明确_ 允许或阻止欺骗用户和域对中定义的发送基础结构的组合。
 - 为域对配置允许或阻止条目时，来自该域对的邮件将不再显示在欺骗智能见解中。
 - 欺骗性发件人的条目永不过期。
 - 欺骗同时支持允许和阻止。 URL 仅支持允许。
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
 
 2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"选项卡**，然后单击"阻止图标""添加 ![ ](../../media/m365-cc-sc-create-icon.png) **"。**
 

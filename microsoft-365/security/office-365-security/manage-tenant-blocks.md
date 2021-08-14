@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38347850b66c2a83708df12aaa3233a0afe01444
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ad3cf9a4080a5ec50bdff1de623118d70f90bc1240a7eb5b6a09f0b6fe7b2a45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56826391"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加块
 
@@ -36,14 +36,14 @@ ms.locfileid: "53543837"
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止 URL 条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
 
 2. 在"**租户允许/阻止列表**"页上，验证 **"URL"** 选项卡已选中，然后单击"阻止 ![ "图标"阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
 
 3. 在 **出现的"阻止 URL"** 飞出中，配置以下设置：
-   - **添加包含通配符的 URL：** 每行输入一个 URL，最多输入 20 个 URL。 有关 URL 条目的语法的详细信息，请参阅管理租户允许/阻止列表 中的 URL [语法部分](tenant-allow-block-list.md)。
+   - **添加包含通配符的 URL：** 每行输入一个 URL，最多输入 20 个。 有关 URL 条目的语法的详细信息，请参阅管理租户允许/阻止列表 中的 URL [语法部分](tenant-allow-block-list.md)。
    - **永不过期**：执行下列步骤之一：
-     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"删除开"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。
 
        或
 
@@ -54,14 +54,14 @@ ms.locfileid: "53543837"
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止文件条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
 
 2. 在"**租户允许/阻止列表"** 页上，选择"**文件**"选项卡，然后单击"阻止 ![ 图标阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
 
 3. 在出现的 **"阻止文件** "飞出中，配置以下设置：
    - **添加文件哈希**：每行输入一个 SHA256 哈希值，最多 20 个。
    - **永不过期**：执行下列步骤之一：
-     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"删除开"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。
 
      或
 
@@ -72,14 +72,14 @@ ms.locfileid: "53543837"
 
 ### <a name="create-spoofed-sender-block-entries"></a>创建欺骗性发件人阻止条目
 
-**注意**:
+**注意**：
 
 - 仅 _明确_ 允许或阻止欺骗用户和域对中定义的发送基础结构的组合。
 - 为域对配置允许或阻止条目时，来自该域对的邮件将不再显示在欺骗智能见解中。
 - 欺骗性发件人的条目永不过期。
 - 欺骗同时支持允许和阻止。 URL 仅支持允许。
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
 
 2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"选项卡**，然后单击"阻止图标""添加 ![ ](../../media/m365-cc-sc-create-icon.png) **"。**
 
@@ -108,7 +108,7 @@ New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
-此示例为 contoso.com 及其所有子域（例如， (、contoso.com、www.contoso.com 和 xyz.abc.contoso.com) ）添加一个阻止 URL 条目。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
+此示例为 contoso.com 和所有子域（例如， (、contoso.com、www.contoso.com 和 xyz.abc.contoso.com) ）添加一个阻止 URL 条目。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com

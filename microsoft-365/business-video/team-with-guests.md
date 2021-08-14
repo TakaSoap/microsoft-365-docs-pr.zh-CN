@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在 Microsoft Teams 中创建具有来宾的团队。
-ms.openlocfilehash: a6d30684bed3a750a11e311f4e47d88940adbd0f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4a4736c993c54064d1711f2a350ee0cdef5b835b639d65e0e529f4784d547ee1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893288"
 ---
 # <a name="create-a-team-with-guests"></a>以来宾身份创建团队
 

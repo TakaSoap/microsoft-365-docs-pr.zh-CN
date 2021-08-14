@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 如何响应 COVID-19 病毒，并针对混合工作设计其软件安装和更新基础结构。
-ms.openlocfilehash: 2d28b0513221f6c14526baba69bf0f5986154805
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816689"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 的 COVID-19 响应和支持混合工作
 
@@ -85,6 +85,6 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 对于颁发给新工作者的新远程设备，当工作者登录时，该设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，远程设备即可使用，并使用已安装的 VPN 客户端访问本地资源，并使用 Microsoft 365网络进行持续更新。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [在组织中设置混合工作的](empower-people-to-work-remotely.md) 基础结构。

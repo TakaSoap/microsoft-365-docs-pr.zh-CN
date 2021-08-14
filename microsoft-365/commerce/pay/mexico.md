@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5300552fdd2b33986c96ad5f59e827e3e309ca47
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 460ba16b68263d8c56858b4b833e37737fde5052b732247539144643596aa62e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535418"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893099"
 ---
 # <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>仅针对墨西哥的通过 (或电子) 
 
@@ -33,7 +33,7 @@ ms.locfileid: "52535418"
 **分支：** Act. Roberto Medellin 800， P.B. Sur、Col. 一位圣fe，墨西哥城市 C.P. 01210，墨西哥  
 **SWIFT 代码：** BNMXMM  
 **CLABE** 002180002337160225  
-**帐号** ：0233716022  
+**帐号：0233716022**  
 **帐户名称：** Microsoft Payments Inc.  
 **货币：** 墨西哥货币
 

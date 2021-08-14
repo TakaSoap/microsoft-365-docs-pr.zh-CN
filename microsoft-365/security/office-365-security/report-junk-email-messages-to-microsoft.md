@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解向 Microsoft 报告好坏消息和文件以进行分析的不同方法。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89ea8a41a31c9544284566fade0e603d48af759
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b257033c4dc5ebe8d6b28c315484cdccf48b5d6581d23c038433f4fc21424aa4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56830859"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>向 Microsoft 报告邮件和文件
 
@@ -41,10 +41,10 @@ ms.locfileid: "53082812"
 
 |方法|说明|
 |---|---|
-|[使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft](admin-submission.md)|对于拥有邮箱的组织中管理员Exchange Online报告 (在独立 EOP) 。|
-|[启用报告邮件或报告钓鱼外接程序](enable-the-report-message-add-in.md)|适用于Outlook和Outlook 网页版 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户通过外接程序报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) (AIR) [结果](air-view-investigation-results.md)、用户报告的邮件报告以及[资源管理器](threat-explorer-views.md#email--submissions)中提供。 [](view-email-security-reports.md#user-reported-messages-report) <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
+|[使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft](admin-submission.md)|对于具有邮箱的组织的管理员Exchange Online报告 (在独立 EOP) 。|
+|[启用报告邮件或报告钓鱼外接程序](enable-the-report-message-add-in.md)|使用Outlook和Outlook 网页版 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户通过外接程序报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) (AIR) [结果](air-view-investigation-results.md)、用户报告的邮件报告以及[资源管理器](threat-explorer-views.md#email--submissions)中提供。 [](view-email-security-reports.md#user-reported-messages-report) <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
 |[在 Outlook 中报告误报和漏报](report-false-positives-and-false-negatives.md)|提交误报 (阻止或发送到垃圾邮件文件夹) 的误报 (以及使用"报告邮件"功能传递到收件箱) Exchange Online Protection (EOP) 的误报或钓鱼邮件。|
-|[手动将邮件提交到 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|将附加邮件手动发送到特定 Microsoft 电子邮件地址，以发送垃圾邮件，而不是垃圾邮件和网络钓鱼。|
+|[手动将邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|将附加邮件手动发送到特定 Microsoft 电子邮件地址，以发送垃圾邮件，而不是垃圾邮件和网络钓鱼。|
 |[使用邮件流规则查看用户向 Microsoft 报告的内容](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|了解如何创建邮件流规则 (也称为传输规则) 在用户向 Microsoft 报告邮件进行分析时通知您。|
 |[将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全智能 网站提交附件和其他文件。|
 |

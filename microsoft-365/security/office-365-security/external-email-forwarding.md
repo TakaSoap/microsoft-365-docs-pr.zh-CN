@@ -1,5 +1,5 @@
 ---
-title: 配置和控制外部电子邮件转发、自动转发、5.7.520 访问被拒绝、禁用外部转发、管理员已禁用外部转发、出站反垃圾邮件策略
+title: 配置和控制外部电子邮件转发， 自动转发， 5.7.520 访问被拒绝， 禁用外部转发， 管理员已禁用外部转发， 出站反垃圾邮件策略
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 0e5f75f0523af7f2a81ce9f1d74ae8f323c78816c828cd9fdfba4210afc912fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56825898"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>控制邮件中的自动外部电子邮件Microsoft 365
 
@@ -36,21 +36,21 @@ ms.locfileid: "52792952"
 以下类型的自动转发在Microsoft 365：
 
 - 用户可以将 [收件箱规则](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) 配置为自动将邮件转发给外部发件人 (或由于帐户遭到入侵) 。
-- 管理员可以配置邮箱 [转发 (](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)_也称为 SMTP_ 转发) 自动将邮件转发给外部收件人。 管理员可以选择是直接转发邮件，还是保留邮箱中转发邮件的副本。
+- 管理员可以配置邮箱 [转发 (](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)_也称为 SMTP_) 自动将邮件转发给外部收件人。 管理员可以选择是直接转发邮件，还是保留邮箱中转发邮件的副本。
 
 您可以使用出站垃圾邮件筛选器策略来控制自动转发给外部收件人。 有三种设置可用：
 
 - **自动 - 系统控制**：阻止自动外部转发。 内部自动转发邮件将继续工作。 这是默认设置。
-- **On：** 允许且不允许自动外部转发。
+- **On**：允许且不允许自动外部转发。
 - **关闭**：自动外部转发处于禁用状态，将导致向发件人发送 (NDR 或退回邮件) 未送达报告。
 
 有关如何配置这些设置的说明，请参阅在 EOP 中配置出 [站垃圾邮件筛选](configure-the-outbound-spam-policy.md)。
 
 > [!NOTE]
 >
-> - 禁用自动转发会禁用任何收件箱规则 (将) 重定向到外部地址 (或) 转发邮箱的用户。
+> - 禁用自动转发会禁用将 (重定向到外部地址) 或 (转发) 或邮箱转发用户的任何收件箱规则。
 >
-> - 出站垃圾邮件筛选器策略中的设置不会影响内部用户之间的自动转发邮件。
+> - 出站垃圾邮件筛选器策略中的设置不会在内部用户之间自动转发邮件。
 >
 > - You can see information about users that are automatically forwarding messages to external recipients in the [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md).
 
@@ -59,7 +59,7 @@ ms.locfileid: "52792952"
 作为管理员，您可能已经配置了其他控件以允许或阻止自动电子邮件转发。 例如：
 
 - [允许或](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 阻止自动电子邮件转发到某些或所有外部域的远程域。
-- 邮件流规则中的Exchange[和](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)操作 (传输规则) 检测并阻止自动转发给外部收件人的邮件。
+- 邮件流规则Exchange[中的](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)条件和操作 (传输规则) 检测并阻止自动转发给外部收件人的邮件。
 
 远程域设置和邮件流规则独立于出站垃圾邮件筛选器策略中的设置。 例如：
 

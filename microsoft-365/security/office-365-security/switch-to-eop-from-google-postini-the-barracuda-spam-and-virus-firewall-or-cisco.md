@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
-description: 本文将了解如何从本地电子邮件安全Exchange Online Protection (或基于云的) 切换到 EOP 服务。
+description: 本文将了解如何从本地电子邮件Exchange Online Protection (安全) 或基于云的保护服务切换到 EOP 服务。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 610ac3633516be12fe42cdfb77b0b240f7408746203284f6dba227021d314ed1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56831008"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -39,9 +39,9 @@ ms.locfileid: "52624009"
 
 - 使用内部部署邮箱的 **EOP** 保护：如果您具有您想要使用的现有邮件托管基础结构，或者您具有将邮箱保留在本地的业务要求，并且您希望使用 EOP 作为基于云的电子邮件保护，则此方案适用。 [独立切换到 EOP](#switch-to-eop-standalone)详细描述了此方案。
 
-- **EOP 保护Exchange Online** 邮箱：如果您需要 EOP 保护以及所有托管在云中的邮箱，则此方案适用。 它可以帮助您降低复杂性，因为您不必维护内部部署邮件传递服务器。 [切换到 Exchange Online](#switch-to-exchange-online) 描述了此方案。
+- **EOP 保护Exchange Online** 邮箱：如果您需要 EOP 保护以及托管在云中的所有邮箱，则此方案适用。 它可以帮助您降低复杂性，因为您不必维护内部部署邮件传递服务器。 [切换到 Exchange Online](#switch-to-exchange-online) 描述了此方案。
 
-- **混合邮箱的 EOP** 保护：可能希望使用云邮箱，但需要为一些用户保留内部部署邮箱。 如果您希望在内部部署中托管某些邮箱并使用 Exchange Online 托管其他邮箱，则选择此方案。 [切换到混合解决方案](#switch-to-a-hybrid-solution)描述了此方案。
+- **混合邮箱的 EOP** 保护：可能希望使用云邮箱，但需要为某些用户保留内部部署邮箱。 如果您希望在内部部署中托管某些邮箱并使用 Exchange Online 托管其他邮箱，则选择此方案。 [切换到混合解决方案](#switch-to-a-hybrid-solution)描述了此方案。
 
 ## <a name="switch-to-eop-standalone"></a>独立切换到 EOP
 
@@ -49,9 +49,9 @@ ms.locfileid: "52624009"
 
 ## <a name="switch-to-exchange-online"></a>切换到 Exchange Online
 
-你可能有受本地设备保护的本地邮箱，并且你想要跳转到 Exchange Online 云托管的邮箱和 EOP 保护，以利用 Microsoft 365 云消息和保护功能。 To get started， you can sign up for Microsoft 365 and add your domain. 此方案不需要您设置连接器，因为没有任何路由到内部部署邮箱。 从[获取最新高级功能开始Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)注册并熟悉其功能。
+你可能有受本地设备保护的本地邮箱，并且你想要跳转到 Exchange Online 云托管的邮箱和 EOP 保护，以利用 Microsoft 365 云消息和保护功能。 To get started， you can sign up for Microsoft 365 and add your domain. 此方案不需要您设置连接器，因为没有任何路由到内部部署邮箱。 首先[，使用](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)Microsoft 365获取最新高级功能，以注册并熟悉其功能。
 
-在Microsoft 365安装过程中，您将创建基于云的邮箱用户。
+在Microsoft 365过程中，您将创建基于云的邮箱用户。
 
 ## <a name="switch-to-a-hybrid-solution"></a>切换到混合解决方案
 

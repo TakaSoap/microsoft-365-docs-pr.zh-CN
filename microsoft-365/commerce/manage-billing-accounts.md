@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解计费帐户及其如何用于管理帐户设置、发票、付款方式和购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0e88a1aa7a690b61744339f9b7e7dc931ed3ab85eb240868b3d66eabcf3c4b4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893135"
 ---
 # <a name="understand-billing-accounts"></a>了解计费帐户
 

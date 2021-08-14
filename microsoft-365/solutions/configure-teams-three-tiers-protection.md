@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 06ee7cd8d82f65e0108595eaa9873b198dae90531d2a547849a85e765292cd57
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816675"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 

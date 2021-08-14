@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取Yammer使用情况报告，了解用户在哪些设备上Yammer设备。
-ms.openlocfilehash: 817627cac791d35f49cd240ceb48de15ef328ef8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6130da9e6cb7c982489ea50fe80aa661bc2a512967284237ef63e7dc9cafc429
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816185"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365管理中心中的报告 - Yammer使用情况报告
 
@@ -49,7 +49,7 @@ You can view the usage in the OneDrive by choosing the **Device usage** tab.<br/
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。 此网格显示使用 Yammer 登录Microsoft 365或使用单一登录登录网络的用户。 <br/> |

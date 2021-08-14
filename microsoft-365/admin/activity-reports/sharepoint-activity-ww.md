@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取SharePoint活动使用情况报告，了解每个用户SharePoint的活动、共享的文件数和存储使用率。
-ms.openlocfilehash: f049a67e8444654e05cfe3dc72a8d4fe39792cb2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4121cce33c530e422dcf3b3d05e9a47f1a86c381eff549187f5904c961c57470
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816257"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365管理中心中的报表 - SharePoint活动
 
-作为Microsoft 365管理员，"报表"仪表板将显示组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 查看管理[中心 中的Microsoft 365报告](activity-reports.md)。
+作为Microsoft 365管理员，"报表"仪表板将显示组织中各种产品的活动概述。 使用该仪表板，能够更深入细致地了解特定于每个产品的活动。 请查看[活动报告中的活动Microsoft 365 管理中心。](activity-reports.md)
   
 例如，可通过查看有权使用 SharePoint 的用户与文件之间的交互情况，了解每个用户的活动。用户还可使用它查看共享的文件数，从而了解正在进行的协作的级别。
   
@@ -49,7 +49,7 @@ You can view the activities in the SharePoint by choosing the **Activity** tab.<
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |在活动网站上执行活动的用户SharePoint地址。  <br/> |

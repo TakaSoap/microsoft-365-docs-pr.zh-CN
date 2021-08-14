@@ -16,12 +16,12 @@ metadata:
   description: 管理员可以查看 Microsoft 合作伙伴和经销商在 Microsoft 365中有关委派管理任务的常见问题和解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: b13a7378eed01cab14dc45632b240c8dfa73d590de3f1db2e1ff87a5043f635e
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52624081"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "56830691"
 title: 委派管理常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -30,7 +30,7 @@ summary: >
 
   本文提供有关 Microsoft 合作伙伴和经销商的 Microsoft 365 中的委派管理任务的常见问题和解答。 委派管理包括管理 Exchange Online Protection (公司) 租户的 EOP (设置) 。
 sections:
-- name: 忽略
+- name: 已忽略
   questions:
   - question: >
       我是经销商，需要管理我的客户租户。 这如何工作？
@@ -61,4 +61,4 @@ sections:
       否。 Microsoft 365当前没有此功能。
   - question: >
       我能否获得我的所有子模板的合并报告？
-    answer: 管理中心报告中未提供你管理的Microsoft 365合并报告。 但是，您可以使用 Microsoft Graph 获取[报告](/graph/overview)。
+    answer: 所管理的公司中的合并报告在报告Microsoft 365 管理中心提供。 但是，您可以使用 Microsoft Graph 获取[报告](/graph/overview)。

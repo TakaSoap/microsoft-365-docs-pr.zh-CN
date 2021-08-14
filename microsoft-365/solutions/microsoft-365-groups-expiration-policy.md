@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 了解Microsoft 365组过期策略。
-ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 831253a64ad30cf37370ec9e93e3f1d8172befc94705758e77367c3697c41686
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53816652"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365组过期策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "52925919"
 
 主动使用的组将自动续订。 以下任一操作将自动续订组：
 - SharePoint - 查看、编辑、下载、移动、共享或上载文件。  (查看SharePoint页面不作为自动续订的操作。) 
-- Outlook - 加入组、从组读取或写入组消息， (Outlook Web 上的) 。
+- Outlook - 加入组、从组读取或写入组邮件，就像邮件 (Outlook 网页版) 。
 - Teams - 访问团队频道。
 
 请注意，唯一Yammer触发自动组续订的活动是将文档上载到SharePoint社区内。
@@ -47,7 +47,7 @@ ms.locfileid: "52925919"
 了解默认情况下关闭过期很重要。 如果想使用，管理员必须针对其组织启用它。
 
 > [!NOTE]
-> 配置和使用 Microsoft 365 组的过期策略需要你拥有（但不一定）为应用过期策略的所有组的成员分配 Azure AD 高级版 许可证。 有关详细信息，请参阅[入门Azure Active Directory 高级版。](/azure/active-directory/active-directory-get-started-premium)
+> 配置和使用 Microsoft 365 组的过期策略需要你拥有（但不一定）为应用过期策略的所有Azure AD Premium组的成员分配 Azure AD Premium 许可证。 有关详细信息，请参阅[Azure Active Directory Premium 入门](/azure/active-directory/active-directory-get-started-premium)。
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Who配置和使用组Microsoft 365策略？
 
