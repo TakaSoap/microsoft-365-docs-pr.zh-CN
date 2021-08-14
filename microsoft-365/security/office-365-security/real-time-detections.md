@@ -16,12 +16,12 @@ description: 使用资源管理器或实时检测高效调查和响应威胁。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d0a9ba7ee40c8ad97df745a20d6b5b3314bb3d8
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: a89ed9eed07be2d66336dcab799e45d155151fce252f163c1d0eb27f43a4ac46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867471"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>资源管理器和实时检测基础知识
 
@@ -73,7 +73,7 @@ ms.locfileid: "53083184"
 - 在 Defender for Office 365：
   - 组织管理
   - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
-  - 安全读取者
+  - 安全信息读取者
 - 在Exchange Online：
   - 组织管理
   - 仅查看组织管理

@@ -11,42 +11,36 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 07/21/2020
-  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
-  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "47419332"
 landingContent:
-- title: 关于 Microsoft Bookings
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 什么是 Microsoft Bookings？
-      url: bookings-overview.md
-  - linkListType: download
-    links:
-    - text: 应用 Bookings 应用
-      url: get-bookings-app.md
-- title: 设置 Microsoft Bookings
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 输入商业信息
-      url: enter-business-information.md
-    - text: 设置日程安排策略
-      url: set-scheduling-policies.md
-    - text: 定义服务套餐
-      url: define-service-offerings.md
-    - text: 设置员工工作时间
-      url: employee-hours.md
-    - text: 定制并发布预订页面
-      url: customize-booking-page.md
-    - text: 创建和配备你的预订
-      url: create-a-manual-booking.md
-- title: 邀请用户预订约会
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 自定义你的预订页面
-      url: customize-booking-page.md
+  - title: 关于 Microsoft Bookings
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: 什么是 Microsoft Bookings？
+            url: bookings-overview.md
+      - linkListType: download
+        links:
+          - text: 应用 Bookings 应用
+            url: get-bookings-app.md
+  - title: 设置 Microsoft Bookings
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 输入商业信息
+            url: enter-business-information.md
+          - text: 设置日程安排策略
+            url: set-scheduling-policies.md
+          - text: 定义服务套餐
+            url: define-service-offerings.md
+          - text: 设置员工工作时间
+            url: employee-hours.md
+          - text: 定制并发布预订页面
+            url: customize-booking-page.md
+          - text: 创建和配备你的预订
+            url: create-a-manual-booking.md
+  - title: 邀请用户预订约会
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 自定义你的预订页面
+            url: customize-booking-page.md

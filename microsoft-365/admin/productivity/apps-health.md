@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 有关运行状况Microsoft 365 应用版的详细信息 - 技术体验生产力分数。
-ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: def83cb3a468a31ce5d714af4337f786ef660ebd89293ead9c6c92d9ec23c34d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823364"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 应用版运行状况–技术体验
 
@@ -73,7 +73,7 @@ ms.locfileid: "51580866"
 
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="显示当前受支持渠道中的设备数量的图表。":::
 
-1. **标头** 好友动态当前频道上运行受支持版本的设备数的百分比Microsoft 365 应用版  
+1. **标头：** 突出显示当前频道上正在运行受支持版本的设备数的Microsoft 365 应用版
 1. **正文：** 提供有关在推荐通道上运行应用Microsoft 365的值的信息。
 1. **可视化：** 可视化中的细分表示跨不同渠道应用在最新和支持的 Microsoft 365 版本上的设备百分比) ，如下所示：
     - **支持的版本：** 蓝色条代表在受支持的应用版本上运行Microsoft 365百分比。
@@ -84,7 +84,7 @@ ms.locfileid: "51580866"
 
 :::image type="content" source="../../media/device-supported-versions.png" alt-text="显示运行最新和受支持的应用版本的设备的图表。":::
 
-1. **标头** 好友动态运行受支持版本的设备和运行最新版本的设备百分比。  
+1. **标头：**  突出显示运行受支持版本的设备和运行最新版本的设备百分比。
 1. **正文：**  提供有关在推荐频道和受支持/最新版本上运行设备的价值的信息。
 1. **可视化：** 可视化中的细分旨在表示显示运行受支持版本和最新版本的 Microsoft 365 应用的) ：
     - **支持的版本：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示运行受支持版本的 Microsoft 365 应用的设备的百分比。

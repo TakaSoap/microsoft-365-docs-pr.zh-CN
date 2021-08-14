@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 了解如何将用户Microsoft 365联系人（如员工、合作伙伴或供应商）添加到电子邮件通讯组。
-ms.openlocfilehash: 4c6bfc5dc8e19d84fd9a0e6bd16f87a413fb2b3c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a5cce43d37eb67b40f284b732aa8cb997c14bc30e9c7f359247170195073e9cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832784"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 

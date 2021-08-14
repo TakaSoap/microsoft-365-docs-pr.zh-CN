@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: 了解如何通过使用 JavaScript 延迟加载图像和非必需 JavaScript 来减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0b0129f691018caf414ebd249e905a97d5560145dc648a073d8000402d11217d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813280"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 77932e4efa59e84a29f14e8ff0a7c184ba812da5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6e85b1ce02dc741d7f1411bfaa7aa82da4092d23e731e6f12656144fafac382a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832339"
 ---
 # <a name="contact-support-for-mauritius"></a>联系毛里求斯支持人员
 

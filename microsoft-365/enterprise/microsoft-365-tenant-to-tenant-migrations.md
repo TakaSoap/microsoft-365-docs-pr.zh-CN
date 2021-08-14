@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何迁移Microsoft 365租户。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6e8277a7ca768db3a4a4acd2488859b7764a40c
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 291c61dfd3361a1159b9d3df26c8f4e3c536c2e99d1039cab03d5851d3ab011e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813087"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365租户到租户的迁移
 

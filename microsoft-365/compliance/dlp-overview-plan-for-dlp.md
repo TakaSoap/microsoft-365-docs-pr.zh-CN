@@ -1,5 +1,5 @@
 ---
-title: 数据丢失防护计划
+title: 数据丢失预防计划
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 数据丢失防护的规划过程概述
-ms.openlocfilehash: 84f1dc0426ba88f934c1d67d71f75364adeb4340
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 2f1c37cee6b3fee9d317314b67736d627e4f7e4306be7f063383656e54fe374d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814519"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>规划 DLP (数据丢失) 
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ac274b0b6e9758db8515a9774ab991f56c574174
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c1921fabd44b21d00e19df91910d60662de87ee35c82b293a9e6bd344c118c5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832327"
 ---
 # <a name="contact-support-for-mayotte"></a>联系马约特的支持人员
 

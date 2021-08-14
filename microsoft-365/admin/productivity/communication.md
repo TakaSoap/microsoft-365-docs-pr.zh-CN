@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通信 - 人员体验工作效率分数的详细信息。
-ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 354f5db7eede84d448489cf7c269d1aa1ed6500c7806c66029cc38daad83b5d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823446"
 ---
 # <a name="communication--people-experiences"></a>通信 – 人员体验
 

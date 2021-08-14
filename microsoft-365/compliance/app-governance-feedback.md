@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何发送对应用治理的反馈。
-ms.openlocfilehash: 7009628d132df02f7f4e34bf3f097fe4ef700a07
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 8ea251f8101d0b4f5f05ca7c9e7279f73cc318ff57dfe69e24f1b55ccb692a78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53842611"
 ---
 # <a name="how-to-submit-feedback-on-app-governance"></a>如何提交有关应用治理的反馈 
 

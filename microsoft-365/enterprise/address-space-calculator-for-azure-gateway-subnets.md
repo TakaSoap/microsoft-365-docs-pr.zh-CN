@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: 摘要：使用 C3、Python 或 PowerShell 计算 Azure 网关子网的地址空间。
-ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 7f5fce25a6d3725dbb80d3dcfe0a47153b2134e02d2db66b78252097e1009614
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813242"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure 网关子网的地址空间计算器
 
@@ -62,8 +62,8 @@ namespace ConsoleApplication1
  
             // Get the five values needed from the keyboard. 
             Console.WriteLine("**************************************************************************"); 
-            Console.WriteLine("**_ Gateway subnet address space calculator for Azure virtual networks _*_");             
-            Console.WriteLine("_*************************************************************************");  
+            Console.WriteLine("*** Gateway subnet address space calculator for Azure virtual networks ***");             
+            Console.WriteLine("**************************************************************************");  
             Console.WriteLine(); 
             Console.WriteLine("Please supply your virtual network address space in the form of w.x.y.z/n."); 
             Console.WriteLine(); 
@@ -116,8 +116,8 @@ namespace ConsoleApplication1
 import math 
 # Collect the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet 
 print("**************************************************************************")  
-print("**_ Gateway subnet address space calculator for Azure virtual networks _*_")  
-print("_*************************************************************************\n")   
+print("*** Gateway subnet address space calculator for Azure virtual networks ***")  
+print("**************************************************************************\n")   
 print("Please supply your virtual network address space in the form of w.x.y.z/n.");  
 w=int(input("w = ")) 
 x=int(input("x = ")) 

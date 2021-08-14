@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a3c728d05137db26877bb8910d6a4b477e791f7e
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 58b9f8b04acf72b6641d55207ff8d4d838bbadaa9156fb2cb761b672f8b3b7a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832423"
 ---
 # <a name="contact-support-for-malta"></a>联系马耳他支持人员
 

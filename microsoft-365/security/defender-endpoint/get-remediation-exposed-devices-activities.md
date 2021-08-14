@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4da7eb20a465829f9bf7049bd8df3a0ed01bf8b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d4f87a292c93bd5d29d9abdcef8ce3134f65b0f0afe7430d22a64c677be7a1ee
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811226"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>列出修正活动的暴露设备
 
@@ -63,10 +63,10 @@ ms.locfileid: "53656711"
 
 属性 (id) |数据类型|说明|示例
 :---|:---|:---|:---
-id|字符串|设备 ID|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|字符串|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform|字符串|设备操作系统|WindowsServer2012R2
-rbacGroupName|字符串|与此设备关联的设备组的名称|服务器
+id|String|设备 ID|w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName|String|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform|String|设备操作系统|WindowsServer2012R2
+rbacGroupName|String|与此设备关联的设备组的名称|服务器
 
 ## <a name="example"></a>示例
 

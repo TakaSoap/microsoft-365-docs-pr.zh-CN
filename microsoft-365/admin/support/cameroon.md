@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3fc8dc128d4ece94a00cf4a0acfcb7d18ca10f2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4f5b06879b80efcc74425d8b35d0dcaca522e0fbae97862656e13d8e1ac3da73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867435"
 ---
 # <a name="contact-support-for-cameroon"></a>联系喀麦隆支持人员
 

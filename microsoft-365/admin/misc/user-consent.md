@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解用户对应用的同意，以及如何启用它们以允许第三方应用访问用户Microsoft 365信息。
-ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 83f48549532b5bf901c9de1416cf5bbe9e6374d23bf2da9c7a4900c847bdf160
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53391227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823527"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户对应用程序中应用Microsoft 365
 

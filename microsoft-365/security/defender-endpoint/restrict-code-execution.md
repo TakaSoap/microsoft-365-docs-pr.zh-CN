@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7365bc28e05c22cdba3ac52fcbda109c192bbe7e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c2154351dd3f7db7e3300dde86bdb3e7f1b6e4d55853c59449d11aa5ef12a643
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810974"
 ---
 # <a name="restrict-app-execution-api"></a>限制应用执行 API
 
@@ -49,6 +49,13 @@ ms.locfileid: "53651743"
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
+
+> [!IMPORTANT]
+>
+> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
+> - 此操作需要满足应用程序Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
@@ -74,7 +81,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文

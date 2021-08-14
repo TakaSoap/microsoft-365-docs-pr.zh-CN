@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 05e7b3042eeb3a40b2ed733f680591f0a4d14774
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: fbd562d98d953020eca9322b496378826f956f559590040c809cf3a88291128f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867411"
 ---
 # <a name="contact-support-for-iraq"></a>联系伊拉克支持人员
 

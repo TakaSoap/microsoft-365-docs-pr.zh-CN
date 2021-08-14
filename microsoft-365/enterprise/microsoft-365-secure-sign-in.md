@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: 32a33822d33d5be881e02089d064866db5d8e111
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3520a76b3007befda335ef26609ae89fe8b2a7b92821bb9f72e9213087df5fb5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813230"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
@@ -62,7 +62,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 |---------|---------|
 |所有 Microsoft 365 套餐（无 Azure AD Premium P1 或 P2 许可证）     |[在 Azure AD 中启用安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。   |
 |Microsoft 365 E3 （包括 Azure AD Premium P1 许可证）     | 使用[常用条件访问策略](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../security/defender-365-security/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高风险用户必须更改密码](../security/defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../security/office-365-security/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高风险用户必须更改密码](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>安全性默认值
@@ -122,18 +122,18 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 这些层及其相应的配置会跨数据、标识和设备，提供一致级别的保护。
 
-Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。 有关详细信息，请参阅“[标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)”。
+Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。 有关详细信息，请参阅“[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)”。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD 标识保护
 
-在此部分中，将了解如何配置策略，以防止凭据泄露（攻击者可以通过确定用户帐户名称和密码来获取访问组织的云服务和数据的权限）。 Azure AD Identity Protection 可提供多种方式来帮助阻止攻击者破坏用户帐户的凭据。
+在此部分，将了解如何配置策略，以防止凭据泄露（攻击者可以通过确定用户帐户名称和密码来获取访问组织的云服务和数据的权限）。Azure AD 标识保护可提供多种方式来帮助阻止攻击者泄露用户帐户的凭据。
 
 使用 Azure AD Identity Protection，可以：
 
 |功能|Description|
 |:---------|:---------|
-| 确定并解决组织身份中的潜在漏洞 | Azure AD 使用机器学习功能检测不正常和可疑活动，如登录和登录后活动。 通过使用此数据，Azure AD Identity Protection 会生成报告和警报，帮助你评估问题并执行操作。|
-|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，该策略可在达到指定风险级别时自动响应检测到的问题。 除了 Azure AD 与 Microsoft Intune 提供的其他条件性访问控制以外，这些策略也可以自动阻止访问或采取纠正措施，包括密码重置和要求后续登录的 Azure AD 多因素身份验证。 |
+| 确定并解决组织身份中的潜在漏洞 | Azure AD 使用机器学习来检测异常和可疑活动（如登录和后登录活动）。使用此数据，Azure AD 标识保护将生成报告和警报，用以帮助你评估问题并采取行动。|
+|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，以在达到指定风险级别时自动响应检测到的问题。这些策略，以及由 Azure AD and Microsoft Intune 提供的其他条件访问控制，可自动阻止访问或采取纠正措施，包括密码重置以及要求对后续登录进行 Azure AD 多重身份验证。 |
 | 调查可疑事件并使用管理操作加以解决 | 可以使用有关安全事件的信息来调查风险事件。提供的基本工作流可用于跟踪调查和启动修正操作（如密码重置）。 |
 |||
 
@@ -147,7 +147,7 @@ Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，�
 - [Microsoft 365 的识别指南](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 培训视频](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [配置  Azure AD 多重身份验证注册策略](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>后续步骤
 

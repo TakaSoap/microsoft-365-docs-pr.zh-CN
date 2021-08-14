@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d39140d3f5d9f066dab59b19d41a98aa0d0a6f4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: cddd84dc362d2193cb63dc18783f280730ba4a6f37df5dc8677bb56899767370
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53811214"
 ---
 # <a name="get-machine-related-alerts--api"></a>获取计算机相关警报 API
 
@@ -67,7 +67,7 @@ GET /api/machines/{id}/alerts
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

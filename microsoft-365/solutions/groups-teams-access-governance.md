@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解管理组、Microsoft 365和Teams中的SharePoint。
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853003"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 组、Teams 和 SharePoint
 

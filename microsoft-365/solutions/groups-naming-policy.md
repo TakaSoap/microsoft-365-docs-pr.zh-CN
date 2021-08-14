@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: 了解如何为组创建Microsoft 365策略。
-ms.openlocfilehash: 5ab5f252e2b81470413b4efea17b131613aabc18
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 20d993ed4a799c68b33c9187c8b4b2021731e9415c6dc39726543343bec4517a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853076"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365组命名策略
 
@@ -42,7 +42,7 @@ ms.locfileid: "52538167"
 
 ## <a name="licensing-requirements"></a>许可要求
 
-对 Microsoft 365 组使用 Azure AD 命名策略需要你拥有但不一定为每个唯一用户分配 Azure Active Directory 高级版 P1 许可证或 Azure AD Basic EDU 许可证 (包括作为一个或多个 Microsoft 365 组的一个成员的来宾) 。
+对 Microsoft 365 组使用 Azure AD 命名策略需要你拥有但不一定为每个唯一用户分配 Azure Active Directory Premium P1 许可证或 Azure AD Basic EDU 许可证 (包括作为一个或多个 Microsoft 365 组的一个成员的来宾) 。
 
 创建组命名策略的管理员也要求这样做。
 

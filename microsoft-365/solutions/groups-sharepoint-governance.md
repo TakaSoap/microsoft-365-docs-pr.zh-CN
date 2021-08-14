@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解组和组之间的Microsoft 365交互SharePoint
-ms.openlocfilehash: 23e9553ce07514b18bafada5c93bcadab19806fe
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6f24f18a91e897467a85a31945efe34c78b51db74dd2ffc0aa65322fd936a9ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853040"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>设置组与Microsoft 365组之间的交互SharePoint
 
