@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美国政府Office 365 DoD 计划的客户。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 32a760843453a4d243ee65802325852323402140
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: ba0723e8155039475a6df497db98c11b2fcf0766280ecba3202e3fe607a8645d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53813063"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365美国政府 DoD 终结点
 
@@ -41,7 +41,7 @@ Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美�
 
 ****
 
-|注释|下载|
+|备注|下载|
 |---|---|
 |**上次更新时间：** 2021 年 5 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**下载：JSON** 格式 [的完整列表](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |

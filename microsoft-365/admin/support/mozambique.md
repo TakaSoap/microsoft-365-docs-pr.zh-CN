@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37fa76440ebd844f2400030db79f7b2f4a4c72d8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7e0fc609fdfe95da0e6099e18816b478c01d7d520c6cac0be2dce7d278b43073
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832087"
 ---
 # <a name="contact-support-for-mozambique"></a>联系支持人员以访问该区
 

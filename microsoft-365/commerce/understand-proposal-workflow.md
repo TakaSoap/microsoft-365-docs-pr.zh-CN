@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 了解帮助你购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852027"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -62,7 +62,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 如果这是新的计费帐户，并且没有人接受协议，则会自动成为计费帐户所有者，但你必须：
 
 - 建议中是否指定人员\
-    OR
+    或
 - 已是[Azure Active Directory全局](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)管理员
 
 ## <a name="what-is-the-overall-workflow"></a>什么是总体工作流？
@@ -100,7 +100,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 " **你的组织** "部分显示与之关联的计费帐户。 计费帐户信息从现有计费帐户提取，或由 Microsoft 代表创建。 如果您的组织是另一个组织的关联，则还会看到包含该组织的名称和地址的潜在客户组织部分。
 
-如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在管理中心的"计费帐户"页面上查看和更改Microsoft 365联系人信息。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../business-video/get-help-support.md)
+如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，你可以查看和更改组织的地址和联系人信息，在邮件的帐单帐户页面上Microsoft 365 管理中心。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>你的信息
 
@@ -127,7 +127,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 | 准备者 | 准备建议的 Microsoft 代表的电子邮件地址。 |
 | 摘要 | 显示与建议关联的小计。 如有必要，还将显示用于计算 (的) 汇率的汇率。 |
 | 建议行项目 | 本节包含建议中包含的所有项目的数量、单价和小计。 |
-| 后续步骤 | 本节指示必须执行的必要操作。 |
+| 下一步 | 本节指示必须执行的必要操作。 |
 
 若要对 MCA 进行签名，请选择"下一步 **"下的按钮**。 如果必须签署补充条款，一个链接将你指向 DocuSign 站点，你可以按照步骤对文档进行签名。
 

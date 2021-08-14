@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 移动性的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d3ea6e4803a1aa5d12084d626b60c058dd578832d8707e8269419683a0ed223d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580842"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823016"
 ---
 # <a name="mobility--people-experiences"></a>移动性 – 人员体验
 
@@ -142,7 +142,7 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 :::image type="content" source="../../media/remotework-trend.png" alt-text="显示远程工作、现场工作或同时在两者中工作的人的图表。":::
 
 1. **标头：** 显示仅从家庭或公司网络外部的位置工作的人的百分比。
-2. **正文** 好友动态为无法访问组织物理办公室的人推动远程工作的重要性。
+2. **正文：** 强调为无法访问组织物理办公室的人推动远程工作的重要性。
 3. **可视化：** 显示仅远程工作的每日百分比和每天也现场工作人员百分比的趋势线。 如果用户在一天中至少执行三小时的活动，Microsoft 365 应用版现场参与。
 
 ## <a name="related-content"></a>相关内容

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 内容协作的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 14d3449faff16893cd74ed1618557092d3347dc5
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 13bee74b901bef4a4d4086e5cbed97a1bdddbabb145acaee5e68af9f5fdac010
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823256"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作 – 人员体验
 

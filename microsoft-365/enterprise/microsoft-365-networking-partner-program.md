@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 借助Microsoft 365 网络合作伙伴计划，你的设备可以认证为使用 Microsoft 365。
 hideEdit: true
-ms.openlocfilehash: 1330015d11179f67cc60077f2e4b51382af2d1a3
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: b755b65a264cc5aebcc37119972ab4c18d7304e46a87e719911e14dc646cc1ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53663835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858731"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 网络合作伙伴计划
 

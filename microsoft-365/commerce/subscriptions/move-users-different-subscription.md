@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何在订阅之间移动用户。
 ms.date: 07/01/2020
-ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 014112043582c19d6b8461c8205e03516e68e814bbc2fd62e72aa32772573c01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852075"
 ---
 # <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
 
@@ -39,25 +39,25 @@ ms.locfileid: "52822077"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 2. 选择要替换其现有许可证的用户姓名旁边的圆圈。
 
-3. 在顶部，选择管理 **产品许可证**。
+3. 在顶部，选择“**管理产品许可证**”。
 
 4. 在 **"管理产品许可证"** 窗格中，选择"替换"，然后选择要分配给用户的许可证。
 

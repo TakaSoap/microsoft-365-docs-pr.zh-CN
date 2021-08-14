@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 了解哪些类型的 SharePoint 2013 解决方案可以托管在 Microsoft Azure 虚拟机中，以及如何将 Azure 设置为托管一个。
-ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7405909e25078086147e2bab7504375b6527ff07c14a1750c9b5971592a4858
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858764"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 的 Microsoft Azure 体系结构
 
-Azure 是用于托管 SharePoint Server 2013 解决方案的绝佳环境。 在大多数情况下，我们建议使用 Microsoft 365，但托管在 Azure 中的 SharePoint Server 场可能是特定解决方案的良好选择。 本文介绍如何构建 SharePoint 解决方案，使它们适合 Azure 平台。 我们将以下面两个特定解决方案为例进行说明：
+Azure 是用于托管 SharePoint Server 2013 解决方案的绝佳环境。 在大多数情况下，我们建议Microsoft 365，但托管在 Azure SharePoint服务器场是特定解决方案的良好选择。 本文介绍如何构建 SharePoint 解决方案，使它们适合 Azure 平台。 我们将以下面两个特定解决方案为例进行说明：
   
 - [Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Azure 基础结构服务是用于托管 SharePoint 解决方案的极具吸引�
 |:-----|:-----|
 |开发和测试环境  <br/> |创建和管理这些环境非常容易。  <br/> |
 |将内部部署 SharePoint 服务器场灾难恢复到 Azure  <br/> |**承载的辅助数据中心** 使用 Azure，而不是在其他地区投资建设辅助数据中心。 <br/> **低成本灾难恢复环境** 维护和支付比内部部署灾难恢复环境更少的资源。资源数量取决于您选择的灾难恢复环境：冷备用、温备用或热备用。<br/> **更有弹性的平台** 如果发生灾难，轻松扩展恢复 SharePoint 服务器场以满足负载要求。当您不再需要这些资源时，进行缩放。<br/> 请参阅[Microsoft Azure 中的 SharePoint Server 2013 灾难恢复](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)。  <br/> |
-|使用 Microsoft 365 中不可用的功能和规模的面向 Internet 的网站  <br/> |**集中精力** 构建一个很棒的网站，而不是构建基础结构。 <br/> **利用 Azure 中的弹性** 根据需要通过添加新服务器调整服务器场大小，仅支付您需要的资源。不支持动态计算机分配（自动缩放）。<br/> **使用 Azure Active Directory (AD)** 利用客户帐户的 Azure AD。 <br/> **添加 Microsoft 365 中不可用的 SharePoint 功能** 添加深度报告和 Web 分析。 <br/> 请参阅[Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)。  <br/> |
-|支持 Microsoft 365 或本地环境的应用场  <br/> |在 Azure 中构建、测试和承载应用程序，以支持内部部署和云环境。 <br/> 在 Azure 中承载此角色，而无需为内部部署环境购买新硬件。 <br/> |
+|使用功能和缩放功能的面向 Internet 的网站在 Microsoft 365  <br/> |**集中精力** 构建一个很棒的网站，而不是构建基础结构。 <br/> **利用 Azure 中的弹性** 根据需要通过添加新服务器调整服务器场大小，仅支付您需要的资源。不支持动态计算机分配（自动缩放）。<br/> **使用 Azure Active Directory (AD)** 利用客户帐户的 Azure AD。 <br/> **添加SharePoint中不可用的Microsoft 365** 添加深度报告和 Web 分析。 <br/> 请参阅[Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)。  <br/> |
+|支持本地Microsoft 365或本地环境的应用程序场  <br/> |在 Azure 中构建、测试和承载应用程序，以支持内部部署和云环境。 <br/> 在 Azure 中承载此角色，而无需为内部部署环境购买新硬件。 <br/> |
    
 对于 Intranet 以及协作解决方案和工作负载，请考虑下列选项：
   
-- 确定 Microsoft 365 是否满足你的业务需求，或者是否属于解决方案的一部分。 Microsoft 365 提供始终保持最新的丰富功能集。
+- 确定Microsoft 365业务要求，还是作为解决方案的一部分。 Microsoft 365提供始终保持最新的丰富功能集。
     
-- 如果 Microsoft 365 不满足您的所有业务要求，请考虑 Microsoft 咨询服务和 MCS (SharePoint 2013) 。 相比自定义体系结构而言，标准体系结构的支持更快速、便宜和简单。 
+- 如果Microsoft 365业务要求，请考虑 Microsoft 咨询服务部门 MCS SharePoint 2013 (标准) 。 相比自定义体系结构而言，标准体系结构的支持更快速、便宜和简单。 
     
 - 如果标准实现不满足您的业务需求，请考虑使用自定义的内部部署解决方案。
     

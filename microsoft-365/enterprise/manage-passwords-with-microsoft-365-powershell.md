@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: 了解如何使用 PowerShell 管理密码。
-ms.openlocfilehash: ac0a47edb4ccbed93c1a3b88df083d463784b4a4
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3f5ebfb7f7171cd45cf5ad1749b7bbb807068f812ee2a37f78ead7f6e8660c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858743"
 ---
 # <a name="manage-passwords-with-powershell"></a>使用 PowerShell 管理密码
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以使用 PowerShell for Microsoft 365作为管理中心Microsoft 365管理密码的Microsoft 365。 
+可以使用 PowerShell for Microsoft 365作为管理Microsoft 365 管理中心中密码的Microsoft 365。 
 
 当本文中的命令块要求您指定变量值时，请使用这些步骤。
 

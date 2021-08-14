@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c094ca0970d7bd8cce077c8c89b04f0ab2aa8a1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8411f5241a8a800e10e6eb9593e71016b3623bb4b9b5dc17964c53b2db05a930
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832063"
 ---
 # <a name="contact-support-for-nauru"></a>联系支持人员，该技术支持人员
 

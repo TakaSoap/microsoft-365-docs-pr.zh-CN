@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0edae8f92165841e94b8079f32d778bee3c1aeab
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: ef5bc9561f79bf1629522a610632d5eb349ab892347843e73701a2efa2ef65c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53543858"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810883"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "53543858"
 
 1. 选择 **运行状况问题通知**。
 
-1. 输入收件人的电子邮件地址。 选择“**添加**”。
+1. 输入收件人的电子邮件地址。 选择 **添加**。
 
     ![输入运行状况问题的电子邮件地址](../../media/defender-identity/health-email-recipient.png)
 
@@ -57,7 +57,7 @@ ms.locfileid: "53543858"
 
 1. 选择 **警报通知**。
 
-1. 输入收件人的电子邮件地址。 选择“**添加**”。
+1. 输入收件人的电子邮件地址。 选择 **添加**。
 
     ![输入检测到的警报的电子邮件地址](../../media/defender-identity/alert-email-recipient.png)
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何使用工作效率分数保护隐私。
-ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 928dfc8677cc452fb3c6309d6a42e4390a238d52b7dffa0217a4b4507c8d72a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822904"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>工作效率分数的隐私控件
 
@@ -53,7 +53,7 @@ ms.locfileid: "51579166"
 
 将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不一定是 IT 管理员。 通过此角色，他们可以访问管理中心内Microsoft 365分数体验。
 
-必须通过 PowerShell cmdlet 分配使用情况摘要报告读取者角色，直到它在 2020 年稍后从 Microsoft 365 管理中心分配。
+"使用率摘要报告读取者"角色必须通过 PowerShell cmdlet 分配，直到它在 2020 年Microsoft 365 管理中心分配。
 
 若要使用 PowerShell 分配使用情况摘要报告读取者角色：
 

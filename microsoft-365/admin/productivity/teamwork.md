@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 团队合作的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db948c7a510c1bfe959b9f8aa07544f0ed9faf03909da9ec182ec18abdea5e82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822932"
 ---
 # <a name="teamwork--people-experiences"></a>团队合作 – 人员体验
 
@@ -71,7 +71,7 @@ ms.locfileid: "51579154"
 1. **正文：** 提供有关在共享工作区中完成内容通信和交互后如何对组织中工作效率产生积极结果的信息。
 2. **可视化 (当前状态) ：**
       - 蓝色部分代表标题中表示的百分比的水平栏
-      - 好友动态计算页眉 (百分比的分数) /分母值
+      - 突出显示用于计算标题 (百分比的分数) /分母
         - 数字：通过 Exchange 向组邮箱发送电子邮件的组织中用户的数量，或者通过 Teams 发送频道邮件，或在 SharePoint 团队网站中阅读和创建内容的用户数量。
         - 分母：组织中的通过 Exchange 发送电子邮件，或在 Microsoft Teams 上发送消息)  (聊天或频道消息，或在 OneDrive 或 SharePoint 上读取和创建内容，并且至少有权访问以下服务之一：Exchange、Microsoft Teams 或 SharePoint。
    - 关键指标的对等基准值也显示为百分比。

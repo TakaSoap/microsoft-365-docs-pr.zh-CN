@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 会议详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: e9de4ab128628b4308b1796ac0c83637283bba7f505e348206c36179a8c19e73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823103"
 ---
 # <a name="meetings--people-experiences"></a>会议 – 人员体验
 
 生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 会议类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 若要开始使用会议见解，需要获得组织中人员的许可：
 
@@ -83,7 +83,7 @@ Microsoft Teams日历Outlook集成，并提供一系列功能，使会议更具�
 
 :::image type="content" source="../../media/videouse-meetings.png" alt-text="显示会议的主要见解的图表 - 人员体验。":::
 
-1. **标头**：好友动态主要见解和评分中考虑Microsoft Teams视频最佳做法的在线会议数的百分比。  
+1. **标头：** 突出显示使用主要见解Microsoft Teams评分中考虑的视频最佳做法的在线会议百分比。
 2. **正文：** Hrovide 提供有关在会议期间使用这些做法使其更具吸引力的价值的信息。 
 3. **可视化：** 可视化中的细分旨在表示联机Microsoft Teams会议遵循以下每个最佳做法的程度： 
     - **视频**：彩色部分和分数表示打开视频Microsoft Teams联机会议百分比。 分数的构造方式为： 
@@ -121,7 +121,7 @@ Microsoft Teams日历Outlook集成，并提供一系列功能，使会议更具�
 
 :::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="显示不同会议类型的参与百分比的图表。":::
 
-1. **标头**：好友动态前 28 天（少于 30 分钟）Microsoft Teams联机联机会议所占的百分比。
+1. **标头：** 突出显示前 28 天Microsoft Teams在线会议时间少于 30 分钟的会议所占的百分比。
 2. **正文：** 提供有关在频道功能中使用"现在开会Microsoft Teams &quot; &quot; 的信息。
 3. **可视化：** 显示参加任何联机会议或联机会议Microsoft Teams类型的会议。 每种会议类型都表示为水平条，其中的颜色部分和分数表示以下内容：
     - **即时 1：1 呼叫**：
