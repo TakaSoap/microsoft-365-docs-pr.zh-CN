@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用租户切换器视图和多租户视图，这让你能够从单个位置管理租户。
-ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9573106ca7c82f92582fbe9eeebfdb7bc5bab751e67b105f55c35bed397f7d4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823591"
 ---
 # <a name="multi-tenant-management"></a>多租户管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "52706150"
 
 ## <a name="move-between-tenants"></a>在租户之间移动
 
-1. 在管理Microsoft 365，选择组织名称。
+1. 在"Microsoft 365 管理中心中，选择组织名称。
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="多租户切换器。":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "52706150"
 
 ## <a name="view-all-tenants-page"></a>查看所有租户页面
 
-1. 在管理Microsoft 365左侧导航中，选择"**所有租户"。**
+1. In the Microsoft 365 管理中心， in the left nav， select **All tenants**.
 - 在 **"所有租户"** 页面上，可以
   - 评估服务运行状况
   - 查看许可证使用情况
@@ -59,7 +59,7 @@ ms.locfileid: "52706150"
 
 服务运行状况视图显示是否有事件或公告影响租户。 它甚至会告诉您受影响的托管租户数。
 
-1. 在Microsoft 365管理中心的多租户视图中，选择"服务 **运行状况"。**
+1. In the Microsoft 365 管理中心， in the multi-tenant view， select **Service Health**.
 2. 在"服务运行状况"页面聚合视图中，您还可以查看事件总数、影响任何托管租户的公告总数以及包含活动事件的服务数。 还可以查看有多少租户受事件和公告的影响。
 
     - 可以使用筛选器选项按问题类型或服务查看问题
@@ -73,9 +73,9 @@ ms.locfileid: "52706150"
 
 受影响租户的列表可以导出为 CSV 格式，以便管理员可以与支持团队共享该列表。
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>在管理中心内查看Microsoft 365租户
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>查看租户中的单个Microsoft 365 管理中心
 
-可以从"所有租户"Microsoft 365任何租户的"管理 **中心"。**
+你可以从"所有Microsoft 365 管理中心"页面返回任意租户 **的** 租户列表。
 
 1. 在 **"所有租户"** 页面上，选择要查看其管理中心的租户名称。
 2. 你将定向到该租户的管理中心。

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Azure 中部署 Microsoft 365 目录同步
+title: 在Microsoft 365部署目录Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,17 +19,17 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: 了解如何在 Azure 中的虚拟机上部署 Azure AD Connect，以在本地目录和 Azure AD 租户之间同步帐户。
-ms.openlocfilehash: 52c1bb2eb53cc4e6753d528e0d82822b2a0eebc5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何在 Azure 中的连接部署 Azure AD 帐户，以在本地目录和 Azure AD 租户之间同步帐户。
+ms.openlocfilehash: 6f7744ab894346e7468f3b90c211d0f8247ba253b291a4a8eda0b292e7409f04
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835199"
 ---
-# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>在 Microsoft Azure 中部署 Microsoft 365 目录同步
+# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>在Microsoft 365部署目录Microsoft Azure
 
-Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目录同步工具或 DirSync.exe 工具) 是安装在加入域的服务器上以将本地 Active Directory 域服务 (AD DS) 用户同步到 Microsoft 365 订阅的 Azure AD 租户的应用程序。 Microsoft 365 将 Azure AD 用于其目录服务。 Microsoft 365 订阅包括 Azure AD 租户。 此租户还可用于管理组织与其他云工作负载（包括 Azure 中其他 SaaS 应用程序和应用）的标识。
+Azure Active Directory (Azure AD) 连接 (以前称为目录同步工具、目录同步工具或 DirSync.exe 工具) 是安装在加入域的服务器上以将本地 Active Directory 域服务 (AD DS) 用户同步到 Microsoft 365 订阅的 Azure AD 租户的应用程序。 Microsoft 365将 Azure AD 用于其目录服务。 你的Microsoft 365订阅包括 Azure AD 租户。 此租户还可用于管理组织与其他云工作负载（包括 Azure 中其他 SaaS 应用程序和应用）的标识。
 
 可以在本地服务器上安装 Azure AD Connect，但也可以将其安装在 Azure 中的虚拟机上，具体原因如下：
   
@@ -40,33 +40,33 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
 此解决方案要求在本地网络和 Azure 虚拟网络之间建立连接。有关详细信息，请参阅[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)。 
   
 > [!NOTE]
-> 本文介绍了单个林中单个域的同步。 Azure AD Connect 将 Active Directory 林中所有 AD DS 域与 Microsoft 365 同步。 如果你有多个 Active Directory 林要与 Microsoft 365 同步，请参阅 [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity)。 
+> 本文介绍了单个林中单个域的同步。 Azure AD 连接将 Active Directory 林中所有 AD DS 域与 Microsoft 365。 如果你有多个 Active Directory 林要与 Microsoft 365 同步，请参阅[Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity)。 
   
-## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>在 Azure 中部署 Microsoft 365 目录同步的概述
+## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>在 Azure 中Microsoft 365目录同步的概述
 
-下图显示了在将本地 AD DS 林同步到 Microsoft 365 订阅的 Azure (目录同步服务器) 中虚拟机上运行的 Azure AD Connect。
+下图显示了在 Azure 连接 虚拟机上运行的 Azure AD (用于将本地 AD DS 林同步到 Microsoft 365 订阅的目录同步服务器) 。
   
-![Azure 中的虚拟机上的 Azure AD Connect 工具，通过流量流将本地帐户同步到 Microsoft 365 订阅的 Azure AD 租户](../media/CP-DirSyncOverview.png)
+![Azure 连接虚拟机上的 Azure AD 工具，通过流量流将本地帐户同步到 Microsoft 365 订阅的 Azure AD 租户](../media/CP-DirSyncOverview.png)
   
 图中有两个通过站点间 VPN 或 ExpressRoute 连接进行连接的网络：一个是 AD DS 域控制器所在的本地网络，另外一个是带有目录同步服务器的 Azure 虚拟网络，目录同步服务器是一个运行 [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) 的虚拟机。有两个主要通信流源自目录同步服务器：
   
 -  Azure AD Connect 查询本地网络上的域控制器以获取对帐户和密码的更改。
--  Azure AD Connect 将帐户和密码更改发送到 Microsoft 365 订阅的 Azure AD 实例。 由于目录同步服务器位于本地网络的扩展部分，因此这些更改通过本地网络的代理服务器发送。
+-  Azure AD 连接将帐户和密码的更改发送到你的订阅的 Azure AD Microsoft 365实例。 由于目录同步服务器位于本地网络的扩展部分，因此这些更改通过本地网络的代理服务器发送。
     
 > [!NOTE]
-> 本解决方案说明单个 Active Directory 林中单个 Active Directory 域的同步。 Azure AD Connect 将 Active Directory 林中所有 Active Directory 域与 Microsoft 365 同步。 如果你有多个 Active Directory 林要与 Microsoft 365 同步，请参阅 [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity)。 
+> 本解决方案说明单个 Active Directory 林中单个 Active Directory 域的同步。 Azure AD 连接将 Active Directory 林中所有 Active Directory 域与 Microsoft 365。 如果你有多个 Active Directory 林要与 Microsoft 365 同步，请参阅[Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity)。 
   
 部署此解决方案时有两个主要步骤：
   
 1. 创建 Azure 虚拟网络和建立到本地网络的站点间 VPN 连接。有关详细信息，请参阅[将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)。
     
-2. 在 Azure 中加入域的虚拟机上安装 [Azure AD Connect，](https://www.microsoft.com/download/details.aspx?id=47594) 然后将本地 AD DS 同步到 Microsoft 365。 这包括：
+2. 在 Azure 连接加入域的虚拟机上安装[Azure AD](https://www.microsoft.com/download/details.aspx?id=47594)服务器，然后将本地 AD DS 同步到Microsoft 365。 这包括：
     
     创建 Azure 虚拟机以运行 Azure AD Connect。
     
     安装和配置 [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)。
     
-    配置 Azure AD Connect (Azure AD 管理员帐户) AD DS 企业管理员帐户的用户名和密码。 Azure AD Connect 会立即运行，并持续运行，以将本地 AD DS 林同步到 Microsoft 365。
+    配置 Azure AD 连接需要 Azure AD (帐户) AD DS 企业管理员帐户的用户名和密码。 Azure AD 连接立即运行并持续运行，以将本地 AD DS 林同步到Microsoft 365。
     
 在生产中部署此解决方案之前，可以使用模拟企业基础配置中的[](simulated-ent-base-configuration-microsoft-365-enterprise.md)说明设置此配置作为概念证明、演示或实验。
   
@@ -74,9 +74,9 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
 > Azure AD Connect 配置完成后，它不会保存 AD DS 企业管理员帐户凭据。 
   
 > [!NOTE]
-> 此解决方案描述将单个 AD DS 林同步到 Microsoft 365。 本文中讨论的拓扑只是表示实现此解决方案的一种方法。 根据唯一的网络要求和安全注意事项，组织的拓扑可能会有所不同。 
+> 此解决方案介绍如何将单个 AD DS 林同步到Microsoft 365。 本文中讨论的拓扑只是表示实现此解决方案的一种方法。 根据唯一的网络要求和安全注意事项，组织的拓扑可能会有所不同。 
   
-## <a name="plan-for-hosting-a-directory-sync-server-for-microsoft-365-in-azure"></a>规划在 Azure 中托管 Microsoft 365 的目录同步服务器
+## <a name="plan-for-hosting-a-directory-sync-server-for-microsoft-365-in-azure"></a>规划在 Azure 中托管目录同步Microsoft 365服务器
 <a name="PlanningVirtual"> </a>
 
 ### <a name="prerequisites"></a>先决条件
@@ -87,9 +87,9 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
     
 - 确保满足配置 Azure 虚拟网络的所有[先决条件](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites)。
     
-- 拥有包含 Active Directory 集成功能的 Microsoft 365 订阅。 有关 Microsoft 365 订阅的信息，请转到 [Microsoft 365 订阅页面](https://products.office.com/compare-all-microsoft-office-products?tab=2)。
+- 拥有Microsoft 365 Active Directory 集成功能的所有订阅。 有关订阅Microsoft 365，请转到订阅Microsoft 365[页面](https://products.office.com/compare-all-microsoft-office-products?tab=2)。
     
-- 预配一个运行 Azure AD Connect 的 Azure 虚拟机，以将本地 AD DS 林与 Microsoft 365 同步。
+- 预配一个运行 Azure AD 连接 Azure 虚拟机，以将本地 AD DS 林与 Microsoft 365。
     
     必须具有 AD DS 企业管理员帐户和 Azure AD 管理员帐户的凭据（名称和密码）。
     
@@ -119,7 +119,7 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
     
 - 阶段 3：安装和配置 Azure AD Connect
     
-部署后，还必须为 Microsoft 365 中的新用户帐户分配位置和许可证。
+部署后，还必须在部署中分配新用户帐户的位置和Microsoft 365。
 
 
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>第 1 阶段：创建和配置 Azure 虚拟网络
@@ -128,7 +128,7 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
   
 这是生成的配置。
   
-![Azure 中托管的 Microsoft 365 的目录同步服务器的第 1 阶段](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Azure 中托管的用于Microsoft 365同步服务器的第 1 阶段](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 该图显示了通过站点间 VPN 或 ExpressRoute 连接来连接到 Azure 虚拟网络的本地网络。
   
@@ -150,7 +150,7 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
   
 这是生成的配置。
   
-![Azure 中托管的 Microsoft 365 的目录同步服务器的第 2 阶段](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Azure 中托管的用于Microsoft 365同步服务器的第 2 阶段](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 该图显示跨界 Azure 虚拟网络中的目录同步服务器虚拟机。
   
@@ -160,22 +160,22 @@ Azure Active Directory (Azure AD) Connect (以前称为目录同步工具、目�
   
 1. 通过远程桌面连接，使用具有本地管理员特权的 AD DS 域帐户连接到目录同步服务器。请参阅[连接到虚拟机并登录](/azure/virtual-machines/windows/connect-logon)。
     
-2. 从目录同步服务器中，打开设置 [Microsoft 365](set-up-directory-synchronization.md) 目录同步一文并按照使用密码哈希同步进行目录同步的说明操作。
+2. 从目录同步服务器中，打开设置目录同步[Microsoft 365](set-up-directory-synchronization.md)并按照使用密码哈希同步进行目录同步的说明操作。
     
 > [!CAUTION]
 > 安装程序将在本地用户组织单位 (OU) 中创建 **AAD_xxxxxxxxxxxx** 帐户。请勿移动或删除该帐户，否则同步将失败。
   
 这是生成的配置。
   
-![Azure 中托管的 Microsoft 365 的目录同步服务器的第 3 阶段](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Azure 中托管的用于Microsoft 365的目录同步服务器的第 3 阶段](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 该图显示跨界 Azure 虚拟网络中具有 Azure AD Connect 的目录同步服务器。
   
-### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>在 Microsoft 365 中向用户分配位置和许可证
+### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>向用户分配位置和许可证Microsoft 365
 
-Azure AD Connect 将帐户从本地 AD DS 添加到 Microsoft 365 订阅，但为了使用户能够登录到 Microsoft 365 并使用其服务，必须使用位置和许可证配置帐户。 使用下列步骤为适当的用户帐户添加位置和激活许可证：
+Azure AD 连接将帐户从本地 AD DS 添加到 Microsoft 365 订阅，但为了使用户能够登录到 Microsoft 365 并使用其服务，必须使用位置和许可证配置帐户。 使用下列步骤为适当的用户帐户添加位置和激活许可证：
   
-1. 登录到 Microsoft [365 管理中心](https://admin.microsoft.com)，然后单击"管理员 **"。**
+1. 登录到"管理 [Microsoft 365 管理中心，](https://admin.microsoft.com)然后单击"管理员 **"。**
     
 2. 在左侧导航栏中，单击“用户”>“活动用户”。
     
@@ -197,4 +197,4 @@ Azure AD Connect 将帐户从本地 AD DS 添加到 Microsoft 365 订阅，但�
 
 [下载 Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[为 Microsoft 365 设置目录同步](set-up-directory-synchronization.md)
+[为用户设置目录Microsoft 365](set-up-directory-synchronization.md)

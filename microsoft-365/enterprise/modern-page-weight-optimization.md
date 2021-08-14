@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何使用页面诊断工具优化 SharePoint Online 新式网站页面中的页面权重。
-ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95a8a978d0451c36416fbe22ae3135962d34bf22a3dae68688a9dafe59be52c0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848801"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网页上优化页面权重
 

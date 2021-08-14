@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南为企业Microsoft 365环境启用Microsoft 365安全设置。
-ms.openlocfilehash: d1bff8b736e5074f621a173d206f7c5f77841b25
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3decba5b8e75525c8988f07e8e3af3e236ed5e2e597266901bec5346cec8660c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835147"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为Microsoft 365测试环境Microsoft 365安全性提高
 
@@ -49,13 +49,13 @@ ms.locfileid: "51198347"
 
 不支持新式身份验证的应用无法应用[标识](../security/office-365-security/microsoft-365-policies-configurations.md)和设备访问配置，这是保护你的 Microsoft 365 订阅及其数字资产的重要元素。 
 
-1. 转到管理Microsoft 365中心 () ，然后使用全局管理员帐户Microsoft 365你的 Microsoft 365 测试 [https://portal.microsoft.com](https://portal.microsoft.com) 实验室订阅。
+1. 转到"Microsoft 365 管理中心 () ，然后使用全局管理员帐户Microsoft 365你的测试 [https://portal.microsoft.com](https://portal.microsoft.com) 实验室订阅。
     
   - 如果你使用的是轻型测试Microsoft 365，请从本地计算机登录。
     
   - 如果你使用的是模拟的企业Microsoft 365环境，请使用[Azure](https://portal.azure.com)门户连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
  
-2. 在新"Microsoft 365管理中心 **"** 选项卡上，在左侧导航 **窗格中的**"管理中心"下，单击 **"SharePoint"。**
+2. 在新的 **"Microsoft 365 管理中心"** 选项卡上，在左侧导航 **窗格中的**"管理中心"下，单击 **"SharePoint"。**
 3. 在"管理 **SharePoint选项卡上**，单击"访问控制 **>策略"。**
 4. 单击 **不支持新式验证的应用，选择**"**阻止访问**"，然后单击"保存 **"。**
 
@@ -70,7 +70,7 @@ defender for Office 365 for SharePoint， OneDrive， and Microsoft Teams protec
 
 3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams"** 下。 选择 **打开 ATP SharePoint、OneDrive 和 Microsoft Teams。**
 
-4. 单击“保存”。
+4. 单击 **保存**。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件

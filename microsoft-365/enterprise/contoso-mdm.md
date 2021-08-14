@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备以及在其上运行的应用。
-ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f4d1982dbb889f1eefc50a8bf618f54e4867120d754d2ec94f7dc62be855c921
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835256"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
@@ -68,7 +68,7 @@ Contoso 通过将已部署的电脑和公司拥有的智能手机和平板电脑
 
 ![Contoso 移动设备管理部署基础结构](../media/contoso-mdm/contoso-mdm-fig1.png)
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 了解 Contoso 如何使用[](contoso-info-protect.md)企业Microsoft 365信息保护功能来分类、标识和保护整个组织的重要数字资产。
 

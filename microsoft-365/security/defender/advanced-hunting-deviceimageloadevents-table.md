@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceImageLoadEvents 表
 description: 了解高级搜寻架构的 DeviceImageLoadEvents 表中的 DLL 加载事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 映像加载事件， DeviceImageLoadEvents， DLL 加载， 库， 文件图像
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 图像加载事件， DeviceImageLoadEvents， DLL 加载， 库， 文件图像
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0129c98fe21df2976fae57fc3c4011af75facdda
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 88e4b4192bacc133e9891303af992f0437501df30b5f8f8bb1f055779e1725de
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52022995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884231"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 

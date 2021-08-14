@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何从德国 Microsoft 云Exchange Online全球 Exchange Online服务
-ms.openlocfilehash: 93eab2c4e0ab2f841359061ebdca69967d8d7d33
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: e075aeaaaa101da261116116d787f2313edd0254ad3ab692dd51a04fb33245c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823563"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>更新 MX 记录以转换到全局 Exchange Online 服务
 

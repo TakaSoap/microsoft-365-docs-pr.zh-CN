@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell 通过策略Skype for Business Online 用户帐户属性。
-ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 51218d2158558e527f5ce9b3c12388e69cd3d87c140641762247a90d6e78043c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835051"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online 策略
 
@@ -27,7 +27,7 @@ ms.locfileid: "50916698"
 
 若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将其指定为策略Microsoft 365。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 使用这些说明设置以运行命令 (跳过已完成) ：
 
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在管理Microsoft 365中。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
+本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在Microsoft 365 管理中心。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
   
 - **EnableFederationAccess** 指示用户是否可以与联合域的用户通信。
     

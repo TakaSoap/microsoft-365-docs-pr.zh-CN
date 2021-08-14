@@ -17,18 +17,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 了解如何使用 PowerShell Microsoft 365用户帐户、许可证和组。
-ms.openlocfilehash: d3745b9365c67615efe32881408d1a717b8dbbed
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: c3ba0202da4281955ec8287b6b06be90937e851ce0b00b702655e7c5449177f3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835063"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-Microsoft 365管理员需要管理用户帐户、许可证和组。 尽管可以在管理中心内执行大部分Microsoft 365，但一些任务在 PowerShell 中更简单。
+Microsoft 365管理员需要管理用户帐户、许可证和组。 尽管可以在 PowerShell 中执行大部分Microsoft 365 管理中心，但一些任务在 PowerShell 中更简单。
 
 有关详细信息，请参阅以下文章：
 

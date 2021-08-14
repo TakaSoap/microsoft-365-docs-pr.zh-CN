@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: 了解如何购买和管理适用于企业订阅的 Microsoft 365 加载项。
 ms.date: 04/02/2021
-ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 59abcbed4ee051d59d6b5fdd2091d0cb6164396269171a157fd447ce2e6f1b16
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856291"
 ---
 # <a name="buy-or-manage-add-ons"></a>购买或管理加载项
 

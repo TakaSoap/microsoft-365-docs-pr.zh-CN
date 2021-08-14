@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva 主题安全和隐私
+title: Microsoft Viva安全和隐私主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: 了解如何规划 Microsoft Viva 主题安全和隐私
-ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: 了解如何规划安全Microsoft Viva主题的安全和隐私
+ms.openlocfilehash: cf7e631970196b2995891ef302f9af33dd2ab0388b95a54ea04b4a3a24d0a838
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864035"
 ---
-# <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主题安全和隐私
+# <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva安全和隐私主题
 
 主题使用组织中现有的内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: 本文将介绍 Azure ExpressRoute for Office 365以及如何利用它进行网络规划。
-ms.openlocfilehash: 440d4fafadd7e9b504dc4ffdac1123a2956ed798
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 33e8a078a8bfd2dec5fc643a73e1d17201c3d7f51f9b491f7e53d25389104d39
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53835039"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>使用适用于 Office 365 的 ExpressRoute 进行网络规划
 

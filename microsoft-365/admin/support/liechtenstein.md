@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07f23961062632fab132610b7b103652f7fcf546
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 84bb8267a39c2a9232df6f6f369b98014f3cdc978cf90d8499e2fb1e36975397
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295911"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856723"
 ---
 # <a name="contact-support-for-liechtenstein"></a>联系列支敦士登支持人员
 
