@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3e6fcb5f91a90bc062e12a38cf58d5666ec868ab35aa448250d2da8eb3b1b6a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226907"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820248"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>双密钥加密Microsoft 365
 
@@ -515,7 +515,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     3. 定义所需的任何剩余值。
 
-    4. 选择“添加作用域”。
+    4. 选择“**添加作用域**”。
 
     5. 选择 **顶部的** "保存"保存更改。
 

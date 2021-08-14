@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820135"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -49,7 +49,7 @@ ms.locfileid: "53339414"
    "useralias@contoso.com"的输出将类似于以下内容：
 
    > 
-   > |Name|RecipientType|
+   > |名称|RecipientType|
    > |---|---|
    > |别名、用户|MailUser|
    > |别名、用户|用户|

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: ac7963b71c466e8dfdc513a2563776cd4e10af95
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ecd7b539aa22d2935f96860769b30751022d89ea43151a94222caeec9b309928
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810364"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>创建用于攻击模拟培训的自定义负载
 
@@ -32,6 +32,9 @@ Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以�
 接下来，选择一种关联的技术。 有关技术的详细信息，请参阅 [选择社交工程技术](attack-simulation-training.md#selecting-a-social-engineering-technique)。
 
 在下一步中，将有效负载命名。 （可选）您可以为它提供说明。
+
+> [!NOTE]
+> 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法律的高度保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"FBI"、"社会保险部"、"一家"和"Medic一"、美国国税局和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果你对创建或配置负载时适合使用或不适合使用的任何进一步问题，应咨询法律顾问。
 
 ## <a name="configure-payload"></a>配置有效负载
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 88235051a50197be56f20dcce22e868ce6bf4b3e
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 0338cdd6dd45596e31650680d15c9fa31126929ae355389cce66e2045437bfcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810316"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -55,7 +55,7 @@ ms.locfileid: "53726196"
 - [威胁资源管理器/实时检测在 Defender for Office 365 计划 2：](threat-explorer.md)管理员可以筛选系统覆盖源并选择网络钓鱼 **模拟** 或 **SecOps 邮箱**。
 - 威胁资源管理器 [/](mdo-email-entity-page.md)实时检测中的电子邮件实体页面：管理员可以查看 **SecOps** 邮箱或钓鱼模拟在"覆盖"部分中的"租户替代"下 (组织策略) **的邮件。**
 - 威胁[防护状态报告](view-email-security-reports.md#threat-protection-status-report)：管理员可以在下拉菜单中按系统覆盖查看数据进行筛选，并选择查看由于网络钓鱼模拟系统覆盖而允许的邮件。 To see messages allowed by the SecOps mailbox override， you can select **chart breakdown by delivery location** in the chart breakdown by **reason** drop down menu.
-- [Microsoft Defender for Endpoint 中的](../defender-endpoint/advanced-hunting-overview.md)高级搜寻：网络钓鱼模拟和 SecOps 邮箱系统覆盖在 EmailEvents 中的 OrgLevelPolicy 中将显示为选项。 
+- [Microsoft Defender for Endpoint 中的](../defender-endpoint/advanced-hunting-overview.md)高级搜寻：网络钓鱼模拟和 SecOps 邮箱系统覆盖在 EmailEvents 中的 OrgLevelPolicy 中将显示为选项。
 - [Campaign Views](campaigns.md)： Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
@@ -75,7 +75,7 @@ ms.locfileid: "53726196"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender门户在高级传递策略中配置 SecOps 邮箱
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** threat \> **policies** page \> **Rules** section \> **Advanced delivery**.
+1. 在 Microsoft 365 Defender 门户中，转到"规则"部分中的"电子邮件&协作策略& \> **规则** 威胁 \> **策略** 高级 \> 传递"。 
 
 2. 在" **高级传递"** 页上，确认 **"SecOps** 邮箱"选项卡已选中，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**
@@ -95,20 +95,18 @@ ms.locfileid: "53726196"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用Microsoft 365 Defender门户在高级传递策略中配置第三方网络钓鱼模拟
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** threat \> **policies** page \> **Rules** section \> **Advanced delivery**.
+1. 在 Microsoft 365 Defender 门户中，转到"规则"部分中的"电子邮件&协作策略& \> **规则** 威胁 \> **策略** 高级 \> 传递"。 
 
 2. 在" **高级传递"** 页上，选择" **网络钓鱼模拟** "选项卡，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**
    - 如果没有配置网络钓鱼模拟，请单击"添加 **"。**
 
-3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置： 
-
-地址 `5321.MailFrom` (**MAIL FROM** 地址、P1 发件人或信封发件人) 是在邮件的 SMTP 传输中使用的电子邮件地址。
+3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置：
 
    - 发送域：展开此设置并输入至少一个电子邮件地址域 (例如，contoso.com) 方法是单击该框，输入值，然后按 Enter 或选择显示在框下方的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
 
      > [!NOTE]
-     > 使用地址中的域 (SMTP 传输中使用的邮件发件人地址、P1 发件人或) 发件人 `5321.MailFrom` 地址。  此电子邮件地址通常记录在邮件头的 **"返回** 路径"头字段中。
+     > 使用地址中的域 (SMTP 传输中使用的邮件发件人地址、P1 发件人或) 发件人 `5321.MailFrom` 地址。 
 
    - **发送 IP：** 展开此设置，并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值包含:
      - 单个 IP：例如，192.168.1.1。
@@ -117,7 +115,7 @@ ms.locfileid: "53726196"
    - 要允许的模拟 URL：展开此设置，并选择输入属于网络钓鱼模拟活动的一部分的特定 URL，这些 URL 不应被阻止或触发，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 您最多可以添加 10 个条目。 有关 URL 语法格式，请参阅 [租户允许/阻止列表的 URL 语法](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
 
    若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
-   
+
    > [!NOTE]
    > 您必须指定至少一个 **发送** 域和至少一个 **发送 IP，** 以在高级传递中配置第三方网络钓鱼模拟。 可以选择包括模拟 **URL，以确保** 不会阻止模拟消息中的 URL。 每个字段最多可以指定 10 个条目。 必须在至少一个发送域和一个发送 **IP** 上匹配，但值之间不会保持关联。
 

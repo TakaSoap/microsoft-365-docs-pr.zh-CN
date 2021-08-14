@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解新的 Office 365 邮件加密功能，可与组织内部和外部的人员实现受保护的电子邮件通信。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fedbfc753250cd9b2a080aab91342d904876e0ef
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655475"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819771"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 

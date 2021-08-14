@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 启用存档邮箱并启用自动扩展存档，以增加邮箱中邮箱的"可恢复的项目"文件夹Microsoft 365。
-ms.openlocfilehash: 47227e066f922a9e4b8bccedaa9573c001194836
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: ed6b427bf9bd30a4f57bd8c893c879857022ee44c0c951ed9a77c5f9f4da53cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226583"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819797"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 

@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在测试环境中注册Microsoft 365并远程管理设备。
-ms.openlocfilehash: 06f83d1ed61bcc530b6aa974d7730f1aadc0ecbd
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: e00aa4b51d5e3a9cc88c9d73ef644c56d4336b8b6120df4ac34de061200af317
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855091"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试Microsoft 365注册 iOS 和 Android 设备
 
@@ -70,7 +70,7 @@ Microsoft Intune远程锁定和密码重置功能。 如果有人丢失了设备
 
 有关你可以远程运行的其他任务，请参阅 [可用的设备操作](/mem/intune/remote-actions/device-management#available-device-actions)。
     
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 探索 [测试环境中](m365-enterprise-test-lab-guides.md#mobile-device-management) 的其他移动设备管理功能。
 

@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 了解在 2007 年Exchange Server你的选项，并开始计划迁移到 Microsoft 365、Office 365 或 Exchange 2016。
-ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a6de134db567d3c932d4455409653f1bfd40b3e35960f84691cbcef247b1cfe5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855079"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 停止提供支持路线图
 
