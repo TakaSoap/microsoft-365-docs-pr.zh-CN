@@ -1,5 +1,5 @@
 ---
-title: 评估 Microsoft Defender Office 365概述、如何评估、评估步骤
+title: 评估 Microsoft Defender for Office 365概述
 description: 使用此概述可了解设置 MDO 试点的步骤，包括要求、启用或激活 eval 以及设置试点。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c39f5823d87ab7b7ff7795014925ca7c22231a3f
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 1971f70752b7787540e3edd470bece5e609d5bcd6171a7c6a8ef39af44c0ce4f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893900"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>启用和试用 Microsoft Defender for Office 365
 

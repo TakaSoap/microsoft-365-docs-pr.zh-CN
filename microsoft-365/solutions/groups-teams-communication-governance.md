@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解通信治理协作方案。
-ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a85a88c79d9a08750c6ca2e9c16028c6a0407aeec68c8eb205f7f8132735d807
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893515"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>协作方案的通信治理
 

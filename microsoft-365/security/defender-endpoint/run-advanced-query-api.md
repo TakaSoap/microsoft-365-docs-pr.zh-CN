@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eebb80b015674cf3526f0d4f6efbbc16e17c5d54
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7f37dc12e14561b46e264f46cb7e07c4a9cc757083bbe8402f07bdf4705f08f1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817666"
 ---
 # <a name="advanced-hunting-api"></a>高级搜寻 API
 

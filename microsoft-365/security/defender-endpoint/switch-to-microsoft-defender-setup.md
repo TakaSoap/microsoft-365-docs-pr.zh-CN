@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 07/19/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: a019d13bd7a051c386cfc848672c7aa95a23225a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 958c7fbf01db148973c0fd6a478595caa4da7215c7120cd31f8391cc4ece838c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53817779"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切换到 Microsoft Defender for Endpoint - 阶段 2：设置
 
@@ -145,7 +145,7 @@ ms.locfileid: "53541669"
 | [Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是该Microsoft Endpoint Manager。 | 1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<p> 2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件类型。 如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅配置设备限制设置[Microsoft Intune。](/intune/device-restrictions-configure)<p> 3. 选择 **"属性"，** 然后选择"**配置设置：编辑"。**<p> 4. 展开 **"Microsoft Defender 防病毒"。** <p> 5. 启用 **云保护**。<p> 6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<p> 7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<p> 8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**<p>**提示**：有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅什么是Microsoft Intune [配置文件？。](/intune/device-profiles)|
 | Microsoft Endpoint Configuration Manager    | 请参阅[在 Configuration Manager 中为Endpoint Protection和部署反恶意软件策略](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)。 创建和配置反恶意软件策略时，请确保查看实时保护设置并启用"[](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings)[首次看到时阻止"。](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 | 控制面板Windows     |请按照以下指南：[打开"Microsoft Defender 防病毒"。](/mem/intune/user-help/turn-on-defender-windows) <p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。        |
-| [高级组策略管理](/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[组策略管理控制台](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  | 1. 转到计算机 **配置**  >  **管理模板**  >  **Windows组件**  >  **Microsoft Defender 防病毒**。 <p> 2. 查找名为"关闭策略 **Microsoft Defender 防病毒。**<p> 3. 选择 **"编辑策略设置**"，并确保策略已禁用。 此操作将启用Microsoft Defender 防病毒。 <p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。 |
+| [高级组策略管理](/microsoft-desktop-optimization-pack/agpm/) <br/>或者<br/>[组策略管理控制台](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  | 1. 转到计算机 **配置**  >  **管理模板**  >  **Windows组件**  >  **Microsoft Defender 防病毒**。 <p> 2. 查找名为"关闭策略 **Microsoft Defender 防病毒。**<p> 3. 选择 **"编辑策略设置**"，并确保策略已禁用。 此操作将启用Microsoft Defender 防病毒。 <p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。 |
 
 > [!TIP]
 > 可以在载入组织设备之前部署策略。

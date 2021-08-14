@@ -1,5 +1,5 @@
 ---
-title: 调查 Microsoft 365 Defender 中的用户
+title: 调查用户Microsoft 365 Defender
 description: 在安全中心调查Microsoft 365事件。
 keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， 监视， 报告， 标识， 数据， 设备， 应用， 事件， 分析， 响应
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1962e90fbbcddd9c5c342abb0eb368dfc89848f8da79278895431643eaa400f7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893770"
 ---
-# <a name="investigate-users-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的用户
+# <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
