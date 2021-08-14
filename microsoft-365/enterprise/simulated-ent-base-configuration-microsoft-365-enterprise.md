@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建适用于企业的 Microsoft 365模拟企业测试环境。
-ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c07187d5c86af7e82c6ce31ad98a1caa5bb71669df3eb64d24831018b6f679c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870169"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 

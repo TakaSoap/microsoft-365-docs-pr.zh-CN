@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何将Microsoft 365许可证分配给用户帐户，无论是单独分配还是基于组成员身份。
-ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e2550f7532c332de3a6d2939a2249788aa04bf1122d00359f860bf8cae349b6f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051528"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855211"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>将Microsoft 365许可证分配给用户帐户
 
@@ -67,7 +67,7 @@ ms.locfileid: "51051528"
 
 通过已分配许可证的一组适当的用户帐户，你现在可以：
 
-- [实现安全性](../security/defender-365-security/security-roadmap.md)
+- [实现安全性](../security/office-365-security/security-roadmap.md)
 - [部署客户端软件，例如Microsoft 365 应用版](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [设置设备管理](device-management-roadmap-microsoft-365.md)
 - [配置服务和应用程序](configure-services-and-applications.md)

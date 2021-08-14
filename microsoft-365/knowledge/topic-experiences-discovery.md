@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Viva 主题中管理主题发现
+title: 管理主题主题Microsoft Viva主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,21 +9,21 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: 了解如何管理 Microsoft Viva 主题中的主题发现。
-ms.openlocfilehash: 53e304dc69ccf2ca6fe01d29f0997c539406b0fe
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+description: 了解如何在"主题"中管理Microsoft Viva发现。
+ms.openlocfilehash: 39ecd7ab79267d560b614e981f1ef7ad14fd807db94c64a9483b1603d0e2733a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870084"
 ---
-# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中管理主题发现
+# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>管理主题主题Microsoft Viva主题
 
-可以在管理中心 中管理Microsoft 365[发现设置](https://admin.microsoft.com)。 您必须是全局管理员或SharePoint才能执行这些任务。
+可以在管理主题发现设置[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
 
-## <a name="to-access-topics-management-settings"></a>若要访问主题管理设置：
+## <a name="to-access-topics-management-settings"></a>要访问主题管理设置，请执行以下操作：
 
-1. 在管理Microsoft 365，单击"设置"，**然后单击"****组织设置"。**
+1. 在"Microsoft 365 管理中心中，单击"设置"，**然后单击"****组织设置"。**
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
     ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
@@ -55,7 +55,7 @@ Site name,URL
 
     ![主题SharePoint用户界面的屏幕截图](../media/k-manage-select-topic-source.png)
    
-3. 单击“保存”。
+3. 单击 **保存**。
 
 ## <a name="exclude-topics-by-name"></a>按名称排除主题
 
@@ -64,7 +64,7 @@ Site name,URL
 1. 在“**主题**”选项卡上，“**排除主题**”下方，选择“**编辑**”。
 2. 单击 **"按名称排除主题"。**
 3. 如果需要创建列表，请下载 .csv 模板并添加要排除 (请参阅下面的使用 .csv *模板*) 。 文件准备就绪后，单击" **浏览** "并上载该文件。 如果存在现有列表，可以下载包含.csv的列表。
-4. 单击“保存”。
+4. 单击 **保存**。
 
     ![排除主题用户界面的屏幕截图](../media/km-manage-exclude-topics.png)
 

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: 7907bf64acce3af8b21459202cb6f5cbc1e9f990
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1c7383c8d8813dfefa9b20d57bf489a840b47cb4cd3669aef89d302abb1af14d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855177"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
@@ -80,7 +80,7 @@ Contoso 使用 Windows Analytics 中的升级就绪情况来确定已安装的�
 - 通常位于 Contoso 区域中心办事处的区域分发点。
 - Windows不同位置接收和安装部署包（基于组成员身份进行就地升级或持续更新）的 PC 和设备。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 了解 Contoso 如何利用其 Configuration Manager 基础结构在整个组织中[部署](contoso-o365pp.md)Microsoft 365 企业应用版保持最新状态。 
 

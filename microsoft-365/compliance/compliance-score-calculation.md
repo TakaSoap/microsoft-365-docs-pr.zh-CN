@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 合规性管理器如何根据为应对风险和改进合规性状态而采取的操作计算个性化分数。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: cbbef643005904e8ca913df69382e9e6012e5b371c9cb5ff132990e1ba74c535
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149162"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820468"
 ---
 # <a name="compliance-score-calculation"></a>合规性分数计算
 
@@ -114,9 +114,9 @@ ms.locfileid: "53149162"
 |:-----|:-----|
 | 预防性强制 | 27 |
 | 预防自主型 | 9  |
-| 检测强制 | 3  |
-| 检测随意 | 1  |
-| 纠正强制型 | 3  |
-| 更正随意 | 1  |
+| 检测强制 | 3 |
+| 检测随意 | 1 |
+| 纠正强制型 | 3 |
+| 更正随意 | 1 |
   
 ![合规性管理器操作点值](../media/compliance-score-action-scoring.png "合规性管理器操作点值")

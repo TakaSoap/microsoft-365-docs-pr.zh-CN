@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: 查找从 SharePoint 2010 和 Sharepoint Server 2010 升级的信息和资源。 对两者的支持将于 2021 年 4 月 13 日结束。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4fa82fb0e382a244cdc126609ac62d17280b9702
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 67b8174aa23027b64132cc4676e2e7bfb5675cd1deb4684d18945d58b5cf63ad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848145"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>升级自 SharePoint 2010
 
@@ -269,7 +269,7 @@ SharePoint服务器 2013 和 SharePoint Foundation 2013 可以本地安装在您
 
 [帮助你从 2007 Office 2010 服务器和客户端升级的资源](upgrade-from-office-2010-servers-and-products.md)
 
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013)
+[从 SharePoint 2010 到 SharePoint 2013 的升级过程概述](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013)
 
 [从 SharePoint 2010 升级到 SharePoint 2013 的最佳做法](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)
 

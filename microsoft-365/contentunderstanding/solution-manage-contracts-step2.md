@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
-ms.openlocfilehash: 79298cc570f59bbd4fa48a6ba9e68e8562a519a2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9efd6f49954b6ed9b9dd2339ba720641a2f7fe73e6526809ad5d71d148838337
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855275"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
 
@@ -110,7 +110,7 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
 
 在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，以下各节定义了其中每一部分。
 
-### <a name="client"></a>Client
+### <a name="client"></a>客户端
 
 此部分定义"客户端"在卡片上的显示方式，并使用特定合约的值。
 
@@ -206,6 +206,6 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
                       }
 ```
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [步骤 3.使用 Power Automate 创建处理合同的流程](solution-manage-contracts-step3.md)

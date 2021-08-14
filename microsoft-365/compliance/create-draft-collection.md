@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 草稿集合是一种电子数据展示搜索，用于搜索 Advanced eDiscovery 情况下的查询和非查询数据源，该搜索估计值返回与集合的搜索查询相匹配的搜索估计值。 在将结果提交到审阅集之前，你可以查看搜索统计信息、预览项目采样以及修改和重新运行集合。
-ms.openlocfilehash: 18f018a5e00f355c3f320a963135e76ecc51f086
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 42497a8f5f8d5d8e5ecf58ff8f486bffa578e6f0ca9375ab1924d2f2100b5729
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820422"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>在集合中创建草稿Advanced eDiscovery
 
@@ -39,7 +39,7 @@ ms.locfileid: "50838841"
 
 ## <a name="create-a-draft-collection"></a>创建草稿集合
 
-1. 在"Microsoft 365合规中心"中，打开Advanced eDiscovery案例"，然后选择"集合 **"** 选项卡。
+1. In the Microsoft 365 合规中心， open the Advanced eDiscovery case， and then select the **Collections** tab.
 
 2. 在"**集合"** 页上，选择 **"新建集合""**  >  **标准集合"。**
 

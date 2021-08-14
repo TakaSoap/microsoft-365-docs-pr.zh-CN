@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用企业Microsoft 365安全功能。
-ms.openlocfilehash: 59eed0b7e08aae8397bb037e6d1b515bf6aa0ba8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 8e207ac55b7d7280adfeb356cef20dec1ada0da89298945f1318bbf656a2310f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855199"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Microsoft 365企业安全管理摘要
 
@@ -77,11 +77,11 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - Windows Hello 企业版
 
-  Contoso 部署了[Windows Hello 企业](/windows/security/identity-protection/hello-for-business/hello-identity-verification)版，最终无需在运行 Windows 10 企业版 的 PC 和移动设备上通过强双因素身份验证来输入Windows 10 企业版。
+  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)以便最终无需在运行 Windows 10 企业版 的 PC 和移动设备上使用强双因素身份验证。
 
 - Windows Defender Credential Guard
 
-  若要使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso Windows Defender Credential Guard AD DS 组策略启用。 [](/windows/security/identity-protection/credential-guard/credential-guard)
+  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender启用[Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
 
 ## <a name="threat-protection"></a>威胁防护
 

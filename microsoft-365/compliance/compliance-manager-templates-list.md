@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器提供用于构建符合国家、区域和行业法规、标准和法律的评估的模板。
-ms.openlocfilehash: 88d68e270990229164c442939cf93c6fa2d6781f
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7b81959f6db033468f5312f53744bceabb9e28768ec5213c11a22c000e2677ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820407"
 ---
 # <a name="compliance-manager-templates-list"></a>合规性管理器模板列表
 

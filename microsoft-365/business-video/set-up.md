@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何设置Microsoft 365 商业高级版。
-ms.openlocfilehash: 2e6cdf3c2280b527571d62f5e3535dcea6ad3523
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8824755d8215af6a1459ae73d1cd9ba08f5897c574b07e8e99f6b78cfee439c1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838015"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>设置 Microsoft 365 商业高级版
 
@@ -33,7 +33,7 @@ ms.locfileid: "51578647"
 
 ## <a name="try-it"></a>试一试！
 
-1. 登录到管理Microsoft 365中心，然后选择转到 **设置**。 安装向导将启动。
+1. 登录到"设置Microsoft 365 管理中心，然后选择"**转到设置"。** 安装向导将启动。
 2.  在"**安装Office应用**"页上，可以选择Office安装应用，或选择"继续 **"。**
 3.  在"**你的域是你的企业标识**"页上，输入你的企业域名，然后选择"**使用此域"。** 如果使用通用注册器（如 WordPress 或 GoDaddy），则会自动在此页面上添加记录。
 4. 在"  **验证域"**  页上，选择"  **验证** "以验证您的域的所有权，然后登录到您的域注册机构帐户。 若要让 Microsoft 添加用于帐户验证的 TXT 记录，请选择"确认 **"。**

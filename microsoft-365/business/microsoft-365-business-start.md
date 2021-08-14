@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解Microsoft 365，如何设置，以及如何准备用户的设备和电脑，以确保它们受到适用于Microsoft 365保护。
-ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 3ac8ec3c831d14cfa6d0018340458b2b494b2dd746a7f2bd61d2eba0b4eaf0a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837877"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>企业Microsoft 365入门
 
@@ -99,7 +99,7 @@ Sign in to [Microsoft 365 管理中心](https://admin.microsoft.com/adminportal/
 如果你保留包含一些本地资源 (（如文件共享和打印机) ）的本地 Active Directory，你可以按照下面的步骤向加入 Azure **AD** 的设备授予对这些资源的访问权限：从 Microsoft 365 for business 中加入 [Azure AD](access-resources.md)的设备访问本地资源。
   
   
-## <a name="contact-support"></a>联系支持人员
+## <a name="contact-support"></a>联系技术支持部门
 
  **如需联系支持人员：**
   

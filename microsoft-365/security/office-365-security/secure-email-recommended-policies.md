@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 755dbd892d5e772a2bfda3b8e6e959027b74815a2e69ab27659f7f5e4a29bf26
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53805234"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -49,7 +49,7 @@ ms.locfileid: "51599847"
 
 如果在设置Exchange Online策略Outlook策略作用域中包含了策略和策略，则只需创建新策略以阻止 ActiveSync 客户端。 查看下表中列出的策略，并添加建议的策略，或确认已包含这些策略。 每个策略链接到常见标识和设备访问策略中的 [关联配置说明](identity-access-policies.md)。
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将Exchange Online包括在云应用的分配中|
 ||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|将Exchange Online包括在云应用的分配中|
@@ -70,9 +70,9 @@ ms.locfileid: "51599847"
 
 您还可以使用身份验证策略禁用 [基本身份验证](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)，这将强制所有客户端访问请求使用新式验证。
 
-## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>限制对Exchange Online网页Outlook访问
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>限制对Exchange Online访问Outlook 网页版
 
-您可以限制用户从 web 上的Outlook下载附件的能力。 这些设备上的用户可以使用 Office Online 查看和编辑这些文件，而无需泄露和存储设备上的文件。 还可以阻止用户在非托管设备上看到附件。
+您可以限制用户在 umnanaged 设备上从 Outlook 网页版下载附件的能力。 这些设备上的用户可以使用 Office Online 查看和编辑这些文件，而无需泄露和存储设备上的文件。 还可以阻止用户在非托管设备上看到附件。
 
 步骤如下：
 
