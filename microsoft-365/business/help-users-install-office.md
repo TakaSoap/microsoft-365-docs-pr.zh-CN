@@ -26,19 +26,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: 帮助你的用户在 Office 设备上安装 Windows 10 应用，并轻松地Office Windows 10管理中心中的Microsoft 365安装应用。
-ms.openlocfilehash: 74c17533995b74655be57524b77d9c508f703c50
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 帮助你的用户在 Office 设备上安装 Windows 10 应用，并轻松地Office Windows 10安装Microsoft 365 管理中心。
+ms.openlocfilehash: bfd0d9baba177bd68b4d3174eba7c5ffb3a38aa8c690c7b8314e5b298bdbdfc1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820971"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>帮助你的用户在Office设备上Windows 10安装设备
 
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
-你可以从管理中心Office在Windows 10计算机上安装Microsoft 365安装程序。
+你可以快速轻松地在Office Windows 10计算机上安装Microsoft 365 管理中心。
   
 若要了解这如何适用于以前安装的 Office 应用，请在开始之前阅读[准备 Office 客户端安装](prepare-for-office-client-deployment.md)。
 

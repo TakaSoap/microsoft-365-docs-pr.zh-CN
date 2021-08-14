@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何通过安全链接安全地将业务文件共享给组织外部人员。
-ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 26f6d88805a9dd185dfd2c8271613f9701fd51eef3a8ebd8ef9a990785917506
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820955"
 ---
 # <a name="securely-share-files-externally"></a>在外部安全地共享文件
 

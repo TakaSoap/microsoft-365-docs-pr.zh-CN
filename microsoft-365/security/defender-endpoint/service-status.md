@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aa98826605ef1af62ec720c06baa844260ddc9ae
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c38cacb253fa8a78a5dfd28cb98bcc753ab84af2bb8387b83b6de09617985cad
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894091"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>检查 Microsoft Defender 终结点服务运行状况
 

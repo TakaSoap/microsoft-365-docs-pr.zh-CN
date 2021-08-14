@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b54159cfd7e7a8f6d970db1bc7fcb64539061dbd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9ecbb39e7dbdc3702c38cf76f2e53b66ec99b67648071931f978c212047a0c7c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818768"
 ---
 # <a name="get-investigation-api"></a>获取调查 API
 
@@ -73,7 +73,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

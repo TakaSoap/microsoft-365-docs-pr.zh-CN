@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b25d97aebbf2f8c1ac55cdbbb6a34db073024daf
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: c200e2e0b214b634b3a893d07cc8044995190f8eb89f8adad1e3b96ad1f7ae19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53818763"
 ---
 # <a name="list-alerts-api"></a>列出警报 API
 
@@ -83,7 +83,7 @@ GET /api/alerts
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

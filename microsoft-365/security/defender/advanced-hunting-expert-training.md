@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 909247e914453cebbe86115561818cde7cb7c44e3ed8a4d1a8149db301b55031
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893983"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>获取高级搜寻方面的专家培训
 
@@ -40,13 +40,13 @@ ms.locfileid: "52538851"
 
 | 标题 | 说明 | Watch | 查询 | 
 |--|--|--|--|
-| 第 1 节：KQL 基础知识 | 此剧集介绍 Microsoft 365 Defender 中高级搜寻的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54：14)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
+| 第 1 节：KQL 基础知识 | 此剧集涵盖了高级搜寻在Microsoft 365 Defender。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54：14)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | 第 2 集：加入 | 继续了解高级搜寻数据以及如何将表联接在一起。 了解 `inner` 、 、 和 联接，并了解默认 `outer` `unique` Kusto 联接的 `semi` `innerunique` 细微差别。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53：33)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | 第 3 部分：汇总、透视和可视化数据 | 现在，你已经了解了筛选、操作和联接数据，是时候总结、量化、透视和可视化了。 此部分讨论了 `summarize` 运算符和各种计算，同时引入了架构中的其他表。 你还将学习如何将数据集转换为图表，帮助你提取见解。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48：52)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
 | 第 4 集：让我们搜寻！ 将 KQL 应用于事件跟踪 | 在此集中，你将了解跟踪某些攻击者活动。 我们使用对 Kusto 和高级搜寻的改进了解来跟踪攻击。 了解现场使用的实际技巧，包括网络安全的 APC 以及如何将它们应用于事件响应。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59：36)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
 
 
-使用 *L33TSP3AK* 获取更多专家培训：Microsoft 365 Defender 中的高级搜寻，这是一个网络广播系列，适用于希望扩展其技术知识和实用技能以使用 Microsoft 365 Defender 高级搜寻执行安全调查的分析师。 
+使用 *L33TSP3AK* 获取更多专家培训：Microsoft 365 Defender 中的高级搜寻，这是一个网络广播系列，供希望扩展其技术知识和实用技能以在 Microsoft 365 Defender 中使用高级搜寻执行安全调查的分析师。 
 
 | 标题 | 说明 | Watch | 查询 | 
 |--|--|--|--|

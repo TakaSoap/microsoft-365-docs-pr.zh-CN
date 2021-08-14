@@ -20,12 +20,12 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ms.date: 03/17/2021
-ms.openlocfilehash: c590c2d47699c4c3cbea4b5145bea9e7c9fc79ec
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5866fd7ae42a8e127250a2f02c7378381b736da54027ab80bab1228fbef23e33
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53820907"
 ---
 # <a name="manage-licenses-for-devices"></a>管理设备的许可证
 
@@ -43,7 +43,7 @@ ms.locfileid: "52535658"
 
 将许可证分配给组时，需要将许可证分配给组内的所有设备。 只能向任何单个组分配一个订阅。
 
-1. 在管理Microsoft 365中，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. 在许可证 **页面上**，选择 **Microsoft 365 应用版 for Education (device)** 或 Microsoft 365 企业应用版 (device **)**。
 3. On the next page， choose a subscription， then choose **Assign licenses**.
 4. 在 **"将许可证分配给组** "窗格中，开始键入组名称，然后从结果中选择它以将其添加到列表中。

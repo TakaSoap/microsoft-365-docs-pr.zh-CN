@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 15ab851cfe59d92663fc484b5bb0364c25af4f30
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 687b125b0b48a6f2adbaaaff9019c7202e1b2228b043160e2d13a6d91a3eeb14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894045"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>分配设备值 - 危险和漏洞管理
 

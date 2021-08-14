@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何购买Microsoft 365 商务语音加载项。
-ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e04d88bdabc1f7e9bf6e26fb3b7d5171cd6f893321b3cacafdcb41c16ddb3ec9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53821099"
 ---
 # <a name="buy-business-voice"></a>购买商务语音
 
@@ -36,7 +36,7 @@ ms.locfileid: "50422983"
 
 ## <a name="try-it"></a>试一试！
 
-1. In the Microsoft 365 admin center， go to **Billing**， and select **Purchase services**.
+1. In the Microsoft 365 管理中心， go to **Billing**， and select **Purchase services**.
 1. 向下滚动并选择"**加载项"。** 
 1. 选择 **"Microsoft 365 商务语音"。**
 
@@ -45,7 +45,7 @@ ms.locfileid: "50422983"
 1. 选择 **"自动充值** "以根据需要购买通信信用，并避免服务中断。
 
     通信信用用于国际呼叫、免费号码和其他通话分钟数。
-1. 选择“**下一步**”。
+1. 选择 **下一步**。
 1. 验证付款方式。
 1. 选择 **下订单并继续****。**
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4df1ac2ca5fdfaa88ec2d08c85112f52da26b873
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 8e41fa007c870615af18a8e0c8bef4aedeb2d1904e032aad08195f133a61701f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53893960"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
 
@@ -58,7 +58,7 @@ ms.locfileid: "53457645"
 
 下表确定了评估、配置和部署 Microsoft Defender for Endpoint 时必须了解的重要概念： 
 
-概念 | 说明 | 详细信息
+概念 | 说明 | 更多信息
 :---|:---|:---|
 管理门户 | Microsoft 365 Defender用于监视和协助响应潜在高级永久性威胁活动或数据泄露警报的门户。 | [Microsoft Defender for Endpoint 门户概述](/defender-endpoint/portal-overview)
 攻击面减少 | 通过最大程度地减少组织易受网络威胁和攻击的位置，帮助减少攻击面。 | [减少攻击面概述](/defender-endpoint/overview-attack-surface-reduction)
