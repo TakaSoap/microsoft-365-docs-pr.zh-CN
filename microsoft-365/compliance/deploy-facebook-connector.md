@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理员可以设置本机连接器，以将 Facebook 商业版页面导入和存档到 Microsoft 365。 在将数据导入到 Microsoft 365 后，可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
-ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: 管理员可以设置本机连接器，将 Facebook 商业版页面导入和存档到Microsoft 365。 在将数据导入Microsoft 365，您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Facebook 数据的管理。
+ms.openlocfilehash: 773893884aebba3d55e063e7e4f8fa331553eb215a2e20f6b8833b00811d7c12
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892724"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署连接器以存档 Facebook 业务页面数据
 
-本文包含部署连接器的分步过程，该连接器使用 Office 365 导入服务将数据从 Facebook 商业页面导入到 Microsoft 365。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅设置连接器以存档 Facebook [数据](archive-facebook-data-with-sample-connector.md)。
+本文包含部署连接器的分步过程，该连接器使用 Office 365 导入服务将数据从 Facebook 业务页面导入Microsoft 365。 有关此过程的简要概述以及部署 Facebook 连接器所需的先决条件列表，请参阅设置连接器以存档 Facebook [数据](archive-facebook-data-with-sample-connector.md)。
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory 中创建应用
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
 1. 转到 <https://portal.azure.com> ，然后使用全局管理员帐户的凭据登录。
 
@@ -34,7 +34,7 @@ ms.locfileid: "49619948"
 
 2. 在左侧导航窗格中，单击 **Azure Active Directory**。
 
-    ![单击"Azure Active Directory"](../media/FBCimage2.png)
+    ![单击Azure Active Directory](../media/FBCimage2.png)
 
 3. 在左侧导航窗格中，单击"应用注册 (**预览**) 然后单击"新建 **注册"。**
 
@@ -64,13 +64,13 @@ ms.locfileid: "49619948"
 
    ![复制并保存密码的值](../media/FBCimage9.png)
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步骤 2：将连接器 Web 服务从 GitHub 部署到 Azure 帐户
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步骤 2：将连接器 Web 服务从 GitHub部署到 Azure 帐户
 
-1. 转到此 [GitHub 网站，然后单击](https://github.com/microsoft/m365-sample-connector-csharp-aspnet)**"部署到 Azure"。**
+1. 转到此 [GitHub站点，](https://github.com/microsoft/m365-sample-connector-csharp-aspnet)然后单击 **"部署到 Azure"。**
 
     ![单击"部署到 Azure"](../media/FBCGithubApp.png)
 
-2. 单击" **部署到 Azure"** 后，你将重定向到包含自定义模板页面的 Azure 门户。 填写"**基本"和****"设置"** 详细信息，然后单击"购买 **"。**
+2. 单击" **部署到 Azure"** 后，你将重定向到包含自定义模板页面的 Azure 门户。 填写基本 **信息设置****详细信息，****然后单击购买。**
 
    - **订阅：** 选择要将 Facebook 业务页面连接器 Web 服务部署到的 Azure 订阅。
 
@@ -80,7 +80,7 @@ ms.locfileid: "49619948"
 
    - **Web 应用名称：** 为连接器 Web 应用提供唯一的名称。 名称长度必须在 3 到 18 个字符之间。 此名称用于创建 Azure 应用服务 URL;例如，如果你提供 **fbconnector** 的 Web 应用名称，则 Azure 应用服务 URL **将** fbconnector.azurewebsites.net。
 
-   - **tenantId：** 在步骤 1 中的 Azure Active Directory 中创建 Facebook 连接器应用后复制的 Microsoft 365 组织的租户 ID。
+   - **tenantId：** 在步骤 1 Microsoft 365 Facebook 连接器应用程序后复制的 Azure Active Directory 租户 ID。
 
    - **APISecretKey：** 你可以键入任何值作为密码。 这用于访问步骤 5 中的连接器 Web 应用。
 
@@ -88,7 +88,7 @@ ms.locfileid: "49619948"
 
 3. 部署成功后，页面将类似于以下屏幕截图：
 
-   ![单击"存储"，然后单击"存储帐户"](../media/FBCimage13.png)
+   ![单击存储"，然后单击"存储帐户"](../media/FBCimage13.png)
 
 ## <a name="step-3-register-the-facebook-app"></a>步骤 3：注册 Facebook 应用
 
@@ -116,7 +116,7 @@ ms.locfileid: "49619948"
 
    ![完成"快速入门"部分](../media/FBCimage30.png)
 
-7. 在左侧导航窗格中的 **Facebook 登录** 下，单击"设置"，在"有效 OAuth 重定向 URI"框中添加 **OAuth 重定向 URI。** 使用 **\<connectorserviceuri> /Views/FacebookOAuth** 格式，其中 connectorserviceuri 的值为组织的 Azure 应用服务 URL;例如， `https://fbconnector.azurewebsites.net` 。
+7. 在 **"Facebook** 登录"下的左侧导航窗格中 **，设置"，** 在"有效 OAuth 重定向 URI"框中添加 **OAuth 重定向 URI。** 使用 **\<connectorserviceuri> /Views/FacebookOAuth** 格式，其中 connectorserviceuri 的值为组织的 Azure 应用服务 URL;例如， `https://fbconnector.azurewebsites.net` 。
 
    ![将 OAuth 重定向 URI 添加到"有效 OAuth 重定向 URI"框](../media/FBCimage31.png)
 
@@ -168,7 +168,7 @@ ms.locfileid: "49619948"
 
    ![单击"配置"显示登录页](../media/FBCimage42.png)
 
-3. 在"租户 ID"框中，键入或粘贴 (步骤 2) 。 在密码框中，键入或粘贴在步骤 2 (获取的 APISecretKey) ，然后单击"设置 **配置** 设置"以显示配置详细信息页。
+3. 在"租户 ID"框中，键入或粘贴 (步骤 2) 。 在密码框中，键入或粘贴在步骤 2 (获取的 APISecretKey) ，然后单击"设置配置 设置"以显示配置详细信息页。
 
     ![使用租户 ID 和密码登录，然后转到配置详细信息页面](../media/FBCimage43.png)
 
@@ -180,13 +180,13 @@ ms.locfileid: "49619948"
 
    - **Facebook Webhook 验证令牌：** 在步骤 3 中创建的验证令牌。
 
-   - **AAD 应用程序 ID：** 你在步骤 1 中创建的 Azure Active Directory 应用的应用程序 ID。
+   - **AAD 应用程序 ID：** 在步骤 1 中创建Azure Active Directory应用程序的应用程序 ID。
 
    - **AAD 应用程序密码：** 在步骤 1 中创建的 APISecretKey 密码的值。
 
 5. 单击 **"保存** "以保存连接器设置。
 
-## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在 Microsoft 365 合规中心设置 Facebook 连接器
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在网站中设置 Facebook Microsoft 365 合规中心
 
 1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com) 然后单击左侧 **导航中的** "数据连接器"。
 
@@ -210,7 +210,7 @@ ms.locfileid: "49619948"
 
 6. 成功验证连接后，单击"下一 **步"。**
 
-7. 在"**授权 Microsoft 365 导入** 数据"页上，再次键入或粘贴 APISecretKey，然后单击"**登录 Web 应用"。**
+7. 在"**授权Microsoft 365数据"页上**，再次键入或粘贴 APISecretKey，然后单击"登录 Web **应用"。**
 
 8. 在" **配置 Facebook 连接器应用程序** "页上，单击"使用 **Facebook** 登录"，然后使用您组织的 Facebook 业务页面的帐户凭据登录。 确保您登录的 Facebook 帐户分配了您组织的 Facebook 业务页面的管理员角色。
 
@@ -224,7 +224,7 @@ ms.locfileid: "49619948"
 
 11. 在 **"设置筛选器** "页上，可以应用筛选器以初始导入具有特定年龄的项目。 选择一个年龄，然后单击下一 **步**。
 
-12. 在"**选择存储位置**"页上，键入 Facebook 项目将导入到的 Microsoft 365 邮箱的电子邮件地址，然后单击"下一步 **"。**
+12. 在"**选择存储位置**"页上，Microsoft 365 Facebook 项目将导入到的邮箱的电子邮件地址，然后单击"下一步 **"。**
 
 13. 单击 **"下** 一步"查看连接器设置，然后单击" **完成** "以完成连接器设置。
 

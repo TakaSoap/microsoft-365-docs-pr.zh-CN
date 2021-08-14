@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7395e7fb22c8ad090ab35868d385fa240700505c
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 9ee25f7f9e227cbaf5691489bcdea9c421762b40e9984d7ddaf641028fcf9e66
+ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726402"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57834795"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -62,7 +62,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 ## <a name="user-experience"></a>用户体验
 
-第三方支持的浏览器的阻止体验由网络保护提供，它提供一个系统级 Toast，以通知用户阻止的连接。 为获得更用户友好的浏览器内体验，请考虑使用Microsoft Edge。
+第三方支持的浏览器的阻止体验由网络保护提供，它提供一条系统级消息，通知用户阻止的连接。 为获得更用户友好的浏览器内体验，请考虑使用Microsoft Edge。
 
 ## <a name="data-handling"></a>数据处理
 
@@ -117,7 +117,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用网站门户或网站上提供的 URL https://security.microsoft.com) Microsoft 365 Defender (。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 (https://security.microsoft.com) **URL 搜索**  >  **函数**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像](../../media/web-content-filtering-category-lookup.png)
 
@@ -176,4 +176,3 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 - [监视 web 安全性](web-protection-monitoring.md)
 - [响应 web 威胁](web-protection-response.md)
 - [网络保护的要求](web-content-filtering.md)
-

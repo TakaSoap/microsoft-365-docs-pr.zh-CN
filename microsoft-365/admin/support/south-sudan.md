@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 463155e9b1af9dad0a5bbbbe9eed86c3abbbbdcf
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 1d96e70c26033ffd597abbf700c248c6e8a0595e18d564c887fd8a2680bf90dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815481"
 ---
 # <a name="contact-support-for-south-sudan"></a>联系南部州支持人员
 

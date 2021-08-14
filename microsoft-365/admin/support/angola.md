@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 060de2bcfa681e34e25cb4211581e8ec347ca2b4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: dbc37b071cc57ea0621029ea0e49920de6f45938490c4fc39fe1c4bf3f14dc7e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815607"
 ---
 # <a name="contact-support-for-angola"></a>联系安哥拉支持人员
 

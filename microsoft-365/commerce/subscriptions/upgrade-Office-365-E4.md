@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 了解如何从 E4 Office 365升级。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ee90038bb80120ed727cd2dee0c43a894053440f
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 3131f163bcf846c623213a3e2d7c88e6d21cd1479f64185d2b70be81de102c23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892623"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>从 E4 Office 365升级
 
@@ -36,7 +36,7 @@ ms.locfileid: "52344619"
 
 ## <a name="what-are-my-options-for-how-to-upgrade"></a>我提供了哪些升级选项？
 
-升级计划的最简单方法是使用管理中心中的"升级Microsoft 365选项卡。 但是，并非所有 **情况** 都支持使用"升级"选项卡。 如果您的方案不受支持，您可以手动升级计划。
+升级计划的最简单方法是使用"升级"选项卡Microsoft 365 管理中心。  但是，并非所有 **情况** 都支持使用"升级"选项卡。 如果您的方案不受支持，您可以手动升级计划。
 
 ## <a name="what-is-the-upgrade-tab"></a>什么是"升级"选项卡？
 
@@ -66,7 +66,7 @@ ms.locfileid: "52344619"
 
 ## <a name="will-a-credit-check-be-required"></a>是否要求进行信用检查？
 
-如果你通过发票为新计划付款，或购买超过一定费用，则可能需要核实信用。 如果需要进行信用检查，升级最多可能需要两个工作日。 在信用检查完成之前，管理员Microsoft 365管理中心的访问权限。 但是，在升级完成之前，用户仍可完全访问 E4 计划。
+如果你通过发票为新计划付款，或购买超过一定费用，则可能需要核实信用。 如果需要进行信用检查，升级最多可能需要两个工作日。 在信用检查完成之前，管理员Microsoft 365 管理中心访问权限。 但是，在升级完成之前，用户仍可完全访问 E4 计划。
 
 ## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>使用"升级"选项卡升级计划
 
@@ -74,7 +74,7 @@ ms.locfileid: "52344619"
 
 在开始之前有必要了解以下些许事项。
 
-- **规划管理停机时间。** 计划升级时，管理员Microsoft 365管理中心。 根据您拥有的用户数，升级可能需要几分钟到几小时。 建议在无需使用管理中心进行更新时，Microsoft 365升级。
+- **规划管理停机时间。** 在计划升级期间，Microsoft 365 管理中心管理员无法使用此帐户。 根据您拥有的用户数，升级可能需要几分钟到几小时。 建议在无需使用 Microsoft 365 管理中心 进行更新时进行升级。
 
     升级计划期间，用户不会遇到任何服务中断，他们继续在升级过程中具有对 E4 订阅的完全访问权限。 升级完成后，用户有权访问新计划。
 - **用户、许可证、帐单和自定义域。** 若要了解升级期间如何处理用户和许可证、升级计划如何影响计费以及如何处理自定义域，请参阅升级计划和计费有何 [影响？](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
@@ -127,7 +127,7 @@ ms.locfileid: "52344619"
 
 ### <a name="step-3-reassign-licenses-to-users"></a>步骤 3：向用户重新分配许可证
 
-可以使用管理中心Microsoft 365一次最多为 20 个用户重新分配许可证。 若要了解如何，请参阅 [将用户移动到其他订阅](move-users-different-subscription.md)。
+可以使用此Microsoft 365 管理中心一次最多为 20 个用户重新分配许可证。 若要了解如何，请参阅 [将用户移动到其他订阅](move-users-different-subscription.md)。
 
 > [!TIP]
 > 如果你有很多用户，可以使用 Office 365 [PowerShell 批量分配用户许可证](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
