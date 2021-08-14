@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1771f71e444233ffce60a4a56273d3062fe8b70d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6b0957984d7391ac8a9303b1f412b89196b6345ae88db39206dc555e91507fef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53810196"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>用于保护网站和SharePoint的策略建议
 
@@ -52,7 +52,7 @@ ms.locfileid: "51203167"
 
 下表列出了需要查看和更新的策略，或创建新的SharePoint。 常见策略链接到常见标识和设备访问策略文章中的关联 [配置说明](identity-access-policies.md) 。
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将SharePoint包括在云应用的分配中。|
 ||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|将SharePoint包括在云应用的分配中。|
@@ -97,7 +97,7 @@ Microsoft 建议通过设备访问控制SharePoint敏感和高度管控内容保
 - 如果作为使用非托管电话（允许基线用户使用）的敏感网站，则他将收到对敏感网站的仅浏览器访问权限，因为为此网站配置了设备访问策略。
 - 如果作为使用非托管电话的会员的一员，则由于为该网站配置了访问策略，因此将阻止他访问。 他只能使用自己托管且合规的电脑访问此网站。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 ![步骤 4：云Microsoft 365策略](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

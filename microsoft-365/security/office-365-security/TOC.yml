@@ -136,7 +136,7 @@
           href: tenant-wide-setup-for-increased-security.md
         - name: 预设安全策略
           href: preset-security-policies.md
-        - name: 用于预置安全策略的配置分析器
+        - name: 保护策略的配置分析器
           href: configuration-analyzer-for-security-policies.md
         - name: Defender for Office 365 中的攻击模拟器
           href: attack-simulator.md

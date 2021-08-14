@@ -15,16 +15,16 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 本文查找有关客户端Microsoft 365服务应用支持的详细信息。
-ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3ca331329719511c834cc0b5c10af511c5450c9fcb684e22cadbc356f26d6d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855031"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365客户端和服务应用支持
 
-Microsoft 支持多种安全、身份验证和合规性功能，以确保客户数据安全，并允许 IT 管理员在 Microsoft 365 管理中心中为用户自定义策略。 以下功能只是许多企业功能的子集，您可以根据你的订阅Microsoft 365这些功能。
+Microsoft 支持多种安全、身份验证和合规性功能，以确保客户数据安全，并允许 IT 管理员在其用户Microsoft 365 管理中心自定义策略。 以下功能只是许多企业功能的子集，您可以根据你的订阅Microsoft 365这些功能。
 
 ## <a name="client-and-service-support"></a>客户端和服务支持
 

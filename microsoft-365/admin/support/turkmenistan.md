@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 923e3ed22b00b95f751f140397c22631ba3025b5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 064027de063e7db82eea7e257528db6f5afa2e303e5df9db11e239577ac5f442
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297508"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809810"
 ---
 # <a name="contact-support-for-turkmenistan"></a>联系针对阿塞拜疆的支持人员
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: 本文介绍如何部署到 SharePoint Online，而无需执行传统的负载测试，因为它是不允许的。
-ms.openlocfilehash: fb54864168b35fed290ccb1139cb6c607969820d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a8b12cbe3c581a455e3e8c2b5cb39653d159f5fb678eda7cdf2069f49849f3ba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53819459"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量规划和负载测试 SharePoint Online
 本文介绍如何在没有传统负载测试SharePoint部署到 SharePoint Online，因为不允许在 SharePoint Online 上执行负载测试。 SharePoint联机是一种云服务，负载功能、服务中的负载运行状况和总体平衡由 Microsoft 管理。

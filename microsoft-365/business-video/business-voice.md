@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解Microsoft 365 商务语音。
-ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3e909d77d0206c6f4506030340965d8bd7c756a2ba66ab9e2619f2a706adaa3a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53809692"
 ---
 # <a name="overview-of-business-voice"></a>商务语音概述
 
@@ -56,7 +56,7 @@ Microsoft 365 商务语音使中小型组织能够轻松地Microsoft Teams强大
 1. 最后，将现有电话号码转移到Microsoft Teams。
 1. 当这些号码在Teams时，将其分配给你的员工和主要企业号码。 现在，你已准备好在任意计算机、电话或平板电脑上将Teams新业务电话与 Teams 应用一同使用。
 
-## <a name="how-to-use"></a>如何使用
+## <a name="how-to-use"></a>如何使用 
 
 若要拨打电话，请打开计算机Teams平板电脑或手机上的"呼叫"应用，然后选择"呼叫"。 你将看到分配的电话号码和拨号盘，可用于呼叫任何号码。 或者，从你的电话或Outlook任意联系人并直接呼叫他们。
 

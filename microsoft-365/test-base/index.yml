@@ -11,52 +11,46 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
-  ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "53322513"
 landingContent:
-- title: 关于测试基础
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 什么是测试基础？
-      url: overview.md
-  - linkListType: get-started
-    links:
-    - text: 创建测试基本帐户
-      url: createAccount.md
-  - linkListType: tutorial
-    links:
-    - text: additional-resources
-      url: faq.md
-- title: 入门
-  linkLists:
-  - linkListType: quickstart
-    links:
-    - text: 创建测试基本帐户
-      url: createAccount.md
-    - text: Upload应用程序
-      url: uploadApplication.md
-    - text: Upload二进制文件
-      url: binaries.md
-    - text: 设置测试任务
-      url: testtask.md
-    - text: 选择测试选项
-      url: testoptions.md
-    - text: 查看你的选择
-      url: review.md
-    - text: 测试包指南
-      url: contentguideline.md
-    - text: 内存回归分析
-      url: memory.md
-    - text: CPU 回归分析
-      url: cpu.md
-- title: 获取引用
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: 常见问题解答
-      url: faq.md
+  - title: 关于测试基础
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: 什么是测试基础？
+            url: overview.md
+      - linkListType: get-started
+        links:
+          - text: 创建测试基本帐户
+            url: createAccount.md
+      - linkListType: tutorial
+        links:
+          - text: additional-resources
+            url: faq.md
+  - title: 入门
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: 创建测试基本帐户
+            url: createAccount.md
+          - text: Upload应用程序
+            url: uploadApplication.md
+          - text: Upload二进制文件
+            url: binaries.md
+          - text: 设置测试任务
+            url: testtask.md
+          - text: 选择测试选项
+            url: testoptions.md
+          - text: 查看你的选择
+            url: review.md
+          - text: 测试包指南
+            url: contentguideline.md
+          - text: 内存回归分析
+            url: memory.md
+          - text: CPU 回归分析
+            url: cpu.md
+  - title: 获取引用
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: 常见问题
+            url: faq.md

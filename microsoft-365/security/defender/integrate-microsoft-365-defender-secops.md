@@ -1,5 +1,5 @@
 ---
-title: 将Microsoft 365 Defender集成到安全操作
+title: 将安全Microsoft 365 Defender集成到安全操作简介
 description: 将安全Microsoft 365 Defender到安全操作的基本信息。
 keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击， secops， 安全操作， soc
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8bf84ca58f2a2f263558b89d699184c4b47225c292dc6f17cdfb9fff12d63683
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: a90ef363b869b5b10352a0aedcd6210a336e4a8c2a32b806aa3d3b583287b515
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862595"
 ---
-# <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>将Microsoft 365 Defender集成到安全操作
+# <a name="introduction-to-integrating-microsoft-365-defender-into-your-security-operations"></a>将安全Microsoft 365 Defender集成到安全操作简介
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 本文详细介绍了如何Microsoft 365基于证书的身份验证的客户端应用支持。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: cef2cc9084b44e568afd1df7291a21dce8c4ae3dd7a3feb8dcba31f20d5a31b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855045"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365客户端应用支持：基于证书的身份验证
 
