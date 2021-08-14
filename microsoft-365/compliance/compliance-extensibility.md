@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用第Microsoft 365数据连接器和 Microsoft Graph API 扩展合规性解决方案。
-ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: df3fcf74fb7e042bb13d482fe4433c36dc4c4896c15d094ffb5f408dd3925908
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651052"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892263"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365合规性扩展性
 
@@ -39,21 +39,21 @@ Microsoft 365合规性解决方案可帮助组织智能评估其合规性风险�
 
 ## <a name="data-connectors"></a>数据连接器
 
-Microsoft 提供可在合规性中心内配置的第三方Microsoft 365连接器。 有关 Microsoft 提供的数据连接器的列表，请参阅第三方 [数据连接器](archiving-third-party-data.md#third-party-data-connectors) 表。 第三方数据连接器表还汇总了在 Microsoft 365 中导入和存档数据后可应用于第三方数据的合规性解决方案，以及指向每个连接器的分步说明的链接。
+Microsoft 提供可在服务器中配置的第三方数据Microsoft 365 合规中心。 有关 Microsoft 提供的数据连接器的列表，请参阅第三方 [数据连接器](archiving-third-party-data.md#third-party-data-connectors) 表。 第三方数据连接器表还汇总了在 Microsoft 365 中导入和存档数据后可应用于第三方数据的合规性解决方案，以及指向每个连接器的分步说明的链接。
 
-若要了解有关数据连接器Microsoft 365，请参阅存档[第三方数据](archiving-third-party-data.md)。 如果第三数据类型服务不受 Microsoft 365 合规中心中提供的数据连接器支持，您可以与可以为您提供自定义连接器的合作伙伴合作。 有关可以合作的合作伙伴列表以及此方法的分步过程，请参阅与合作伙伴协作以存档 [第三方数据](work-with-partner-to-archive-third-party-data.md)。
+若要了解有关数据连接器Microsoft 365，请参阅存档[第三方数据](archiving-third-party-data.md)。 如果第三数据类型服务不受 Microsoft 365 合规中心 中提供的数据连接器支持，您可以与可以为您提供自定义连接器的合作伙伴合作。 有关可以合作的合作伙伴列表以及此方法的分步过程，请参阅与合作伙伴协作以存档 [第三方数据](work-with-partner-to-archive-third-party-data.md)。
 
 ### <a name="prerequisites-for-data-connectors"></a>数据连接器的先决条件
 
-Microsoft 365合规中心中提供的用于导入和存档第三方数据的许多数据连接器都需要您准备并执行第三方数据源中的配置任务。 每个第三方数据连接器都详细记录了这些先决条件。
+要导入和存档第三Microsoft 365 合规中心，许多数据连接器都需要您准备并执行第三方数据源中的配置任务。 每个第三方数据连接器都详细记录了这些先决条件。
 
-对于 Microsoft Microsoft 365提供的数据连接器，贵组织需要与合作伙伴建立业务关系，然后才能部署连接器。
+对于 Microsoft Microsoft 365 合规中心提供的数据连接器，贵组织需要与合作伙伴建立业务关系，然后才能部署连接器。
 
 有关第三方数据连接器的许可要求，Microsoft 365[合规性许可比较](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)文档。
 
 ## <a name="apis"></a>API
 
-Microsoft 365合规性 API 在 Microsoft 信息保护 SDK、Microsoft Graph API 和 microsoft Office 365 活动 API 中提供。 某些合规性 API 是一组新的安全性和合规性 API 的一部分，这些 API 使 Microsoft 365 客户、独立软件供应商、系统集成商和托管安全服务提供商的开发人员能够构建高价值安全性和合规性解决方案。
+Microsoft 365合规性 API 在 Microsoft 信息保护 SDK、Microsoft Graph API 和 Office 365 管理活动 API 中提供。 某些合规性 API 是一组新的安全性和合规性 API 的一部分，这些 API 使 Microsoft 365 客户、独立软件供应商、系统集成商和托管安全服务提供商的开发人员能够构建高价值安全性和合规性解决方案。
 
 若要详细了解如何访问 Graph API，请参阅[Microsoft](/graph/overview)Graph 概述。
 
@@ -97,5 +97,5 @@ Graph适用于 Advanced eDiscovery API 可用于以可扩展且可重复的方�
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph 连接器 API (预览) 
 
-借助[Microsoft Graph](/microsoftsearch/connectors-overview)连接器，组织可以索引第三方数据，以便数据出现在 Microsoft 搜索结果中。 此功能扩展了 Microsoft 365 生产力应用中可搜索的内容源类型以及 Microsoft 更广泛的数据源。 第三方数据可以托管在本地或公有云或私有云中。 从Advanced eDiscovery开始，我们将为开发人员预览连接的应用的内置合规性Microsoft 365预览。 这使集成到生态系统的应用Microsoft 365，从而为用户提供无缝的合规性体验。 若要了解有关如何在应用视图中合并 Microsoft Graph 连接器 API 的信息，请参阅在 Microsoft 应用视图中创建、更新[和删除Graph。](/graph/search-index-manage-connections)
+使用[Microsoft Graph](/microsoftsearch/connectors-overview)连接器，组织可以索引第三方数据，以便数据显示在Microsoft 搜索结果中。 此功能扩展了 Microsoft 365 生产力应用中可搜索的内容源类型以及 Microsoft 更广泛的数据源。 第三方数据可以托管在本地或公有云或私有云中。 从Advanced eDiscovery开始，我们将为开发人员预览连接的应用的内置合规性Microsoft 365预览。 这使集成到生态系统的应用Microsoft 365，从而为用户提供无缝的合规性体验。 若要了解有关如何在应用视图中合并 Microsoft Graph 连接器 API 的信息，请参阅在 Microsoft 应用视图中创建、更新[和删除Graph。](/graph/search-index-manage-connections)
 

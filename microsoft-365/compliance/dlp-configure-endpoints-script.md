@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b5df749d71ac3c7b6004f2c44e5d0015595a935a749061eb74b581ae44951cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892120"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -52,13 +52,13 @@ ms.locfileid: "52843442"
 
 8.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-    ![指向"以管理员模式运行"的"窗口开始"菜单](../media/dlp-run-as-admin.png)
+    ![指向"开始"菜单以管理员角色运行"的窗口](../media/dlp-run-as-admin.png)
 
 9.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
 10.  按 **Enter 键** 或单击"确定 **"。**
 
-若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅载入Microsoft Defender 高级威胁防护[疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
+若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅 [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
 ## <a name="offboard-devices-using-a-local-script"></a>使用本地脚本的载出设备
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
@@ -82,7 +82,7 @@ ms.locfileid: "52843442"
 
 8.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-    ![指向"以管理员模式运行"的"窗口开始"菜单](../media/dlp-run-as-admin.png)
+    ![指向"开始"菜单以管理员角色运行"的窗口](../media/dlp-run-as-admin.png)
 
 9.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -111,4 +111,4 @@ ms.locfileid: "52843442"
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [载入Microsoft Defender 高级威胁防护疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

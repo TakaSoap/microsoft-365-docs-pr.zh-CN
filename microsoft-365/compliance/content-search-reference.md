@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: c66ef036e7a44e64a4e4e99aec3c81da287590d0
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0bde0c6610e1280a23a7382babf302cc1a8839497e06361a5d4554274903315d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892398"
 ---
 # <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
 

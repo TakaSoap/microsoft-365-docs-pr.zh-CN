@@ -21,12 +21,12 @@ search.appverid: MET150
 description: 了解如何从免费Microsoft Teams升级到新的 Microsoft 365 商业版订阅。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 8aab61819f7f335d4865e162ca752aa307f8f7ac
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892251"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>从免费Microsoft Teams升级到Microsoft 365企业版
 
@@ -49,7 +49,7 @@ ms.locfileid: "52345102"
 
 拥有免费组织的基本工作或学校帐户Microsoft Teams，必须重置该帐户的密码。
 
-1. 转到管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365中心</a>。 当系统提示登录时，选择"**忘记密码"。**
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"。</a> 当系统提示登录时，选择"**忘记密码"。**
 2. 使用以 . (结尾的基础工作或学校帐户完成密码重置 *onmicrosoft.com) 。*
 3. 完成验证步骤。 你将收到一封包含用于设置新密码的代码的电子邮件。
 4. 输入代码以完成验证过程。

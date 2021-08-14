@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 9b6885d101529d18201084b3364c6412bbbc4f4d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 3d6eb3abac41106d48794b7f1859d7c809602489db93e99a46a4eed44efd6d30
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725824"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892301"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 

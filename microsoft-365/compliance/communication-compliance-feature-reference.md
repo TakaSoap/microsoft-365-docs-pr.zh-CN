@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0f771adb84c4fc335c13909e9da37c3bf27dcda0
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2f81c50473f6181d1fb083e03db1f671b2bfdd00c6652aece93fff7a40212b8e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53814711"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -317,8 +317,8 @@ ms.locfileid: "53541873"
 |:-----|:-----|:-----|
 |**模板名称** | 是 | 修复过程中将在通知工作流中选择的通知模板的友好名称支持文本字符。 |
 | **发件人地址** | 是 | 一个或多个用户或组的地址，这些用户或组通过策略匹配（从订阅的 Active Directory 选择）向用户发送邮件。 |
-| **抄送和密件抄送地址** | 不支持 | 要接收策略匹配通知的可选用户或组（从订阅的 Active Directory 中选择）。 |
-| **Subject** | 是 | 邮件主题行中显示的信息支持文本字符。 |
+| **抄送和密件抄送地址** | 否 | 要接收策略匹配通知的可选用户或组（从订阅的 Active Directory 中选择）。 |
+| **主题** | 是 | 邮件主题行中显示的信息支持文本字符。 |
 | **邮件正文** | 是 | 邮件正文中显示的信息支持文本或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>通知的 HTML
@@ -355,7 +355,7 @@ ms.locfileid: "53541873"
 | **收件人** | 邮件发送到的用户。 |
 | **Sender** | 发送消息的人。 |
 | **发件人域** | 发送邮件的域。 |
-| **Size** | 邮件的大小（以 KB 为单位）。 |
+| **大小** | 邮件的大小（以 KB 为单位）。 |
 | **主题/标题** | 消息主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，可以是 *Questionable* *、Compliant* 或 *Non-compliant*。 |
 | **Language** | 邮件中检测到的文本语言。 邮件根据大多数邮件文本的语言进行分类。 例如，对于同时包含德语和意大利语文本的邮件，但大多数文本为德语，该邮件被归类为德语 (DE) 。 支持以下语言：简体中文 (-ZH) 、英语 (EN) 、法语 (FR) 、德语 (DE) 、意大利语 (IT) 、日语 (JP) 、葡萄牙语 (PT) 和西班牙语 (ES) 。 例如，若要筛选分类为德语和意大利语的邮件，请在"语言 (搜索框中输入"DE，IT") 2 位数字的语言代码。 若要查看检测到的邮件语言分类，请选择一封邮件，选择"查看邮件详细信息"，然后滚动到 EmailDetectedLanguage 字段。 |

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何查看和批准或拒绝用户针对企业版订阅Microsoft 365请求。
 ms.date: 06/07/2021
-ms.openlocfilehash: 23258d21ebb413c56323aa4dab25cee60baf2be0
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 3a1290c071fa96be654e645d6f7ca82197ecc4b929f6c6c97d1b2c61625b5ef7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53815047"
 ---
 # <a name="manage-license-requests"></a>管理许可证请求
 
@@ -39,7 +39,7 @@ ms.locfileid: "53256803"
 
 若要查看和管理许可证请求，管理员使用"许可"页上的"请求 **"** 选项卡。 该列表显示所请求的产品的名称、请求许可证的人的姓名、请求的日期以及请求的状态。 管理员可以筛选列表以显示挂起或已完成的请求。 请求将进行 30 天。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你必须是全局管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 

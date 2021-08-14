@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: 60b453faf44ae80a8bd066e93f759cd23413ce3b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 40ee83defc901805841530404b384671bbcbbd68761476146cff2e4d55993943
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53892323"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合规性管理器中使用评估模板
 
