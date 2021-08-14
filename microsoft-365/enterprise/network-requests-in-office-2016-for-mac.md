@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: 本文介绍应用程序尝试Office for Mac终结点和 URL，以及提供的服务。
-ms.openlocfilehash: b777b4ea7e03495cb6389be8fe05e96a26fd9664
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 48a2dd266e0ed9379651e62ad835f4d27a5228b726b5f0e6da03ed8a55e23606
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848479"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac 中的网络请求
 
@@ -147,11 +147,11 @@ URL 类型定义如下：
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
-|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights Web 服务  <br/> |
+|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |InsightsWeb 服务  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |JQuery 库  <br/> |
 |```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |支持 JavaScript 库  <br/> |
-|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights 内容提供程序  <br/> |
-|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Insights 内容提供程序  <br/> |
+|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights内容提供程序  <br/> |
+|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Insights内容提供程序  <br/> |
    
  **PowerPoint 设计器**
   
@@ -159,7 +159,7 @@ URL 类型定义如下：
   
 |**URL**|**应用**|**类型**|**说明**|
 |:-----|:-----|:-----|:-----|
-|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint 设计器 Web 服务  <br/> |
+|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint设计器 Web 服务  <br/> |
    
  **PowerPoint 快速启动**
   
@@ -239,7 +239,7 @@ URL 类型定义如下：
 |**URL**|**类型**|**说明**|
 |:-----|:-----|:-----|
 |```https://watson.microsoft.com/```  <br/> |ST  <br/> |Microsoft 错误报告服务  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |OfficeCollaborative Insights Service  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office协作Insights服务  <br/> |
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>用于减少网络请求和流量的选项
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 管理中心 中的"Office 中的新增功能"功能，确定当用户在 Windows 上的 Office 应用 中选择帮助 >"新增功能"时要显示或隐藏的 Office 功能。 Office
-ms.openlocfilehash: 66665aaf7fda869492d7bdfc12feaf45869f847b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824571"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理Office功能显示在新增功能中
 

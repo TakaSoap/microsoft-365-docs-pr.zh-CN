@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 了解Microsoft 365企业版如何帮助你完成一般数据保护条例 （GDPR） 过程。
-ms.openlocfilehash: 147843fab8fcb8d2d1793a21f9bb897cb4a59672
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: f5070c446a98815061d9e898167a8214d5fc8bb946ba586c47a3a9b230ae4a78
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822831"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>简化的 GDPR: 适用于小型企业的指南
 
@@ -89,12 +89,12 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
 小型企业开始使用 GDPR 的一个好方法是在收集个人数据时确保应用以下关键原则：
 
 - 收集具有明确定义目的的个人数据，以供你使用，而不要将其用于任何其他用途。 例如，如果你告诉客户端为你提供其电子邮件地址，以便他们可以获取你的新产品/服务或促销，则只能使用其电子邮件地址来实现特定目的。
-- 不要收集超出所需量的数据。 例如，如果你的企业需要邮寄地址供你交付商品，则需要客户的地址和姓名，但你不需要知道该人的收件人状态。
+- 请勿收集超出需求的数据。例如，如果企业需要邮寄地址来寄送商品，则你需要客户的地址和姓名，但不需要知道该人的婚姻状况。
 
 
 ### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>步骤 1：了解你在企业中收集和使用的个人数据，以及你需要它的原因
 
-作为小型企业，首先应采取的步骤之一是清点你在企业中收集和使用的个人数据，以及为什么需要它。 这包括员工和客户的数据。
+作为小型企业，首先应采取的步骤之一是清点你在企业中收集和使用的个人数据，以及需要这些数据的原因。这包括员工和客户的数据。
 
 例如，出于雇佣合同和法律原因（例如，向国内税收署报告税款），可能需要员工的个人数据。
 
@@ -105,7 +105,7 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>步骤 2：当需要收集客户、员工和其他个人的个人个人的个人数据时，请通知他们
 
-个人必须知道你处理他们的个人数据以及其用途。 例如，如果客户需要创建客户配置文件来访问企业的联机网站，请确保明确说明你打算如何处理其信息。
+个人数据所有者必须了解你处理他们的个人数据以及出于什么目的。例如，如果客户需要创建配置文件来访问企业的联机网站，请确保明确说明你打算如何处理其信息。
 
 但是，当个人已经知道你将如何使用数据时，他们无需通知他们。 例如，当他们为你提供送货的家庭地址时，他们会订购。
 
@@ -123,7 +123,7 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
 
 ### <a name="step-4-secure-the-personal-data-you-are-processing"></a>步骤 4：保护正在处理的个人数据
 
-如果将个人数据存储在 IT 系统上，请限制对包含数据的文件的访问，例如，通过强密码。 定期更新系统的安全设置。
+如果将个人数据存储在 IT 系统上，请限制对包含数据的文件的访问，例如，通过设置强密码。定期更新系统的安全设置。
 
 > [!NOTE]
 > GDPR 不规定使用任何特定的 IT 系统，而是使系统具有适当的安全级别。 有关详细信息，请参阅 [GDRP 文章 32：安全性的处理](https://gdpr.eu/article-32-security-of-processing/)。
@@ -216,7 +216,7 @@ GDPR 是一项保护欧盟公民的法规。 如果你的公司现在与欧盟�
 
 你需要确保你的客户（即使是你多年来拥有的客户）已同意使用其数据进行市场营销。 你之前可能已捕获同意，以及用于显示许可的记录。 如果是这样，那么你就可以继续营销了。 如果没有，则需要获得客户的权限才能继续向他们营销。 这通常涉及发送一封电子邮件，要求客户转到你的网站，并选择一个选项以同意接收将来的电子邮件。 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>在招聘新员工时是否必须担心 GDPR？ 当前员工呢？
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>招聘新员工时是否需要担心 GDPR？那么对于目前的员工呢？
 
 GDPR 不仅会影响客户数据;它也扩展到员工数据。 新员工通常使用社交媒体平台（如LinkedIn）。 请确保在没有其明确权限的情况下，不会存储任何潜在的招聘数据。
   

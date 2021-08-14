@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 在组织中启用日历Microsoft 365 管理中心以便用户可以与组织内外的任何人共享其日历。
-ms.openlocfilehash: 21dbf12ec495f3a22a45d8a23af807ffd34fef72
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ed0ee14c37f5c23d262d98408114143a3f84803ba8830461a659b4dc6c010902
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824583"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 

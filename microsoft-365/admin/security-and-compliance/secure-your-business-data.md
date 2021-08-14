@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 如何保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0088e3404227d1340af2801157027c250f5066f11604b2d46afd9910cd622d3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822725"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务计划的 Microsoft 365的十大方法
 
@@ -155,7 +155,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 6. 选择“**保存**”。
     
-| Setting | 在打开文件附件之前Office警告 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
+| 设置 | 在打开文件附件之前Office警告 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
 |名称  <br/> |反勒索软件规则：警告用户  <br/> |反勒索软件规则：阻止文件类型  <br/> |
 |在 中应用此规则。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |
@@ -191,7 +191,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 6. 选择“**保存**”。
 
-|Setting|拒绝自动将电子邮件转发到外部域|
+|设置|拒绝自动将电子邮件转发到外部域|
 |---|---|
 |名称|阻止电子邮件自动转发到外部域|
 |如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
@@ -263,7 +263,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 |选择操作|如果电子邮件是由模拟用户发送的：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如，securityadmin@contoso.com。 <br/> 如果电子邮件是由模拟域发送的：请选择"隔离 **邮件"。**|
 |邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
 |添加受信任的发件人和域|在此示例中，不要定义任何替代项。|
-|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如，contoso.com，再选择"添加 **"。** 选择“**完成**”。|
+|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如，contoso.com，再选择"添加 **"。** 选择“完成”。|
 |
 
 有关详细信息，请参阅在 Defender for [Office 365 中设置防钓鱼Office 365。](../../security/office-365-security/configure-atp-anti-phishing-policies.md)

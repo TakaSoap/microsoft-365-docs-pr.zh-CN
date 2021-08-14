@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理 中心中的网络连接概述
-ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 3d22d3d3ee4081ab905c3848a39f5f9df9a9e667b503899b946c1ebec8110dc8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870376"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 中心中的网络连接
 
@@ -203,7 +203,7 @@ The details tab on the office location page shows the specific measurement resul
    > [!div class="mx-imgBorder"]
    > ![CSV 导入就绪邮件](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是Microsoft 365前端？
 

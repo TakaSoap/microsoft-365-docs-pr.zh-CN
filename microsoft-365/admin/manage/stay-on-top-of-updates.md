@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: 了解如何使用消息中心、Microsoft 365发布、路线图以及博客和博客Community。
-ms.openlocfilehash: d37680c4c0036f6e27619a09954d0776ca071e9e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 0740d94d930f291416599d7ccba4a36605108e53eb5996877c67ae145d6052ba
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824511"
 ---
 # <a name="stay-on-top-of-changes"></a>随时掌握更改
 
@@ -33,9 +33,9 @@ ms.locfileid: "52924595"
 
 ## <a name="stay-on-top-of-microsoft-365-changes"></a>随时掌握 Microsoft 365 的变更情况
 
-|功能|说明|如何使用|
+|功能|说明|如何使用 |
 |:-----|:-----|:-----|
-|**消息中心** <br/> |了解官方服务公告和功能更改。 可以在管理中心、管理移动应用Microsoft 365阅读这些消息，或通过电子邮件接收每周摘要。 当你看到其他人应处理的消息时，与组织其他人共享这些邮件。 也可使用服务通信 API 检索消息。  <br/> |登录[管理中心](../admin-overview/about-the-admin-center.md)或[管理移动应用](../admin-overview/admin-mobile-app.md)。 选择 **"运行状况** \> **消息中心"。** 选择要阅读或共享的消息。  <br/> 通过选择管理中心中的"编辑首选项"，更改你查看有关每周摘要的消息 **或选择加入** 的服务。 这也是你可以选择退出每周摘要的地方。  <br/> [邮件Microsoft 365概述](message-center.md) <br/> |
+|**消息中心** <br/> |了解官方服务公告和功能更改。 可以在管理员移动应用中阅读Microsoft 365 管理中心消息，或通过电子邮件接收每周摘要。 当你看到其他人应处理的消息时，与组织其他人共享这些邮件。 也可使用服务通信 API 检索消息。  <br/> |登录[管理中心](../admin-overview/about-the-admin-center.md)或[管理移动应用](../admin-overview/admin-mobile-app.md)。 选择 **"运行状况** \> **消息中心"。** 选择要阅读或共享的消息。  <br/> 通过选择管理中心中的"编辑首选项"，更改你查看有关每周摘要的消息 **或选择加入** 的服务。 这也是你可以选择退出每周摘要的地方。  <br/> [邮件Microsoft 365概述](message-center.md) <br/> |
 |**定向发布** <br/> |为自己和组织中的一组选定人员注册定向发布。 先获取Microsoft 365更新，然后通知或培训用户了解新体验。  <br/> |登录[管理中心](../admin-overview/about-the-admin-center.md)或[管理移动应用](../admin-overview/admin-mobile-app.md)。 Selece **设置** \> **组织配置文件** \> **发布首选项**。 了解有关[定向发布](release-options-in-office-365.md)的详细信息。  <br/> |
 |**产品指南** <br/> |请访问Microsoft 365路线图，了解已启动、即将推出、正在开发、已取消或以前发布的功能。 路线图是更新和更改Microsoft 365网站。  <br/> |请[经常Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)路线图，了解计划的更新和版本。  <br/> |
 |**博客** 和 **社区** <br/> |请访问Office博客、Microsoft Community 和 Microsoft Community，了解有关 Microsoft 365 更改的更多详细信息，并与其他用户共享体验。  <br/> |访问 [Office 博客](https://www.microsoft.com/en-us/microsoft-365/blog/)。访问 [Microsoft 社区](https://answers.microsoft.com)。访问 [Microsoft 技术社区](https://techcommunity.microsoft.com)。  <br/> |

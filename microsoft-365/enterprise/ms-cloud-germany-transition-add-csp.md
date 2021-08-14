@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：与从德国 Microsoft 云迁移相关的云解决方案提供商的其他信息。
-ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: af437995566332679a06cf21803d2a5cb1e98008e49d6c7ff6927cf106abb2a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848611"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>云解决方案提供商的其他信息
 

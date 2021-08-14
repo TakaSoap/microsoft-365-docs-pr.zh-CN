@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 33db334ecf977b351ac963107c647c7eff414cc0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2cfd687b3f34c1857fa5128cefa236ceb71f6b8ba7ba00a86a3dfceb43b60062
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870327"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 和 Office 365 部署实验室工具包
 

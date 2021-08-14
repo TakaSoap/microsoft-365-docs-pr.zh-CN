@@ -1,5 +1,5 @@
 ---
-title: 试点Microsoft Cloud App Security Microsoft 365 Defender、创建试点组、配置条件访问控制、试用功能、将安装程序作为测试的一Microsoft 365 Defender
+title: 试用Microsoft Cloud App Security Microsoft 365 Defender
 description: 设置你的Microsoft 365 Defender试验实验室或试验环境，以测试并体验旨在保护设备、标识、数据和应用程序的安全解决方案。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: a4aeb40e7386ae3648a392b6869551c3f16c2514b459ab1abf11c8ae6ceee46b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862848"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>试用Microsoft Cloud App Security Microsoft 365 Defender
 

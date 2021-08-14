@@ -1,5 +1,5 @@
 ---
-title: 用于身份验证的多重Microsoft 365
+title: Microsoft 365 的多重身份验证
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,14 +24,14 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: MFA (多重身份验证) 密码（应该很强）和其他验证方法。
-ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: afe93f3b9432c26ba38e007e929e718853816b7b9f45d9d1d4053c30898a88a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822773"
 ---
-# <a name="multifactor-authentication-for-microsoft-365"></a>用于身份验证的多重Microsoft 365
+# <a name="multifactor-authentication-for-microsoft-365"></a>Microsoft 365 的多重身份验证
 
 密码是验证计算机或联机服务的登录的最常见方法，但它们也是最易受攻击的。 用户可以选择简单密码，并使用相同的密码进行不同计算机和服务的多个登录。
 
@@ -58,7 +58,7 @@ ms.locfileid: "53393639"
 
 这些方法基于你的Microsoft 365计划。
 
-|套餐|建议|客户类型|
+|计划|建议|客户类型|
 |---|---|---|
 |所有Microsoft 365计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
 |Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级版 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户进行 MFA。|小型企业到企业|
@@ -122,11 +122,11 @@ ms.locfileid: "53393639"
 
 - [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [阻止旧身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
 有关详细信息，请参阅此[条件访问概述](/azure/active-directory/conditional-access/overview)。
 
-### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
+### <a name="azure-ad-identity-protection"></a>Azure AD 标识保护
 
 借助 Azure AD Identity Protection，你可以创建其他条件访问策略，要求在登录风险中等或较高时[进行 MFA。](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
@@ -177,5 +177,5 @@ ms.locfileid: "53393639"
 
 ## <a name="related-content"></a>相关内容
 
-[打开多重身份验证 (](../../business-video/turn-on-mfa.md) 视频) \
-[打开手机和视频视频 (](../../business-video/set-up-mfa.md) 多重) 
+[打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）\
+[为手机开启多重身份验证](../../business-video/set-up-mfa.md)（视频）

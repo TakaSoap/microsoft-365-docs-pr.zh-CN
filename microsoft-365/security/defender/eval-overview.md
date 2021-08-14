@@ -1,5 +1,5 @@
 ---
-title: 评估和试用Microsoft 365 Defender XDR，以阻止、检测、调查、响应、终结点、标识、应用、电子邮件、协作应用程序、数据。
+title: 评估和试用Microsoft 365 Defender，一个 XDR
 description: 规划Microsoft 365 Defender试验实验室或试验环境，以测试并体验旨在保护设备、标识、数据和应用程序的安全解决方案。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ade3087543f45439664868fbe02f1746e1f5e762
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e8dc4d61fb0d43d2864245223923936fe4a646e88e93a3c6eda2a672d459b137
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862813"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>评估和试用Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender由这些安全技术共同运行。 无需所有这些组
 |Microsoft Defender for Office 365     |     Microsoft Defender for Office 365保护你的组织免受电子邮件、链接和 (URL) 和协作工具造成的恶意威胁。      |    [Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)    |
 |Microsoft Defender for Endpoint     |     Microsoft Defender for Endpoint 是设备保护、攻破后检测、自动调查和建议响应的统一平台。      |   [Microsoft Defender for Endpoint - Windows安全](../defender-endpoint/microsoft-defender-endpoint.md)    |
 |Microsoft Cloud App Security     |      Microsoft Cloud App security 是一个全面的跨 SaaS 解决方案，为云应用提供深入了解、强大的数据控制和增强的威胁防护。       |    [什么是云应用安全？](/cloud-app-security/what-is-cloud-app-security)    |
-|Azure AD Identity Protection|Azure AD Identity Protection 评估来自数十亿次登录尝试的风险数据，并使用此数据来评估每次登录环境的风险。 此数据由 Azure AD 用于允许或阻止帐户访问，具体取决于条件访问策略的配置方式。 Azure AD Identity Protection 独立于组织Microsoft 365 Defender。 它包含在Azure Active Directory Premium P2。|[什么是标识保护？](/azure/active-directory/identity-protection/overview-identity-protection)|
+|Azure AD 标识保护|Azure AD Identity Protection 评估来自数十亿次登录尝试的风险数据，并使用此数据来评估每次登录环境的风险。 此数据由 Azure AD 用于允许或阻止帐户访问，具体取决于条件访问策略的配置方式。 Azure AD Identity Protection 独立于组织Microsoft 365 Defender。 它包含在Azure Active Directory Premium P2。|[什么是标识保护？](/azure/active-directory/identity-protection/overview-identity-protection)|
 | | | |
 
 ## <a name="microsoft-365-defender-architecture"></a>Microsoft 365 Defender体系结构
@@ -106,7 +106,7 @@ Microsoft 建议按说明Microsoft 365启用应用程序组件：
 |4      | [为终结点启用 Defender ](eval-defender-endpoint-overview.md)       | 确保满足体系结构要求，启用评估，然后创建试点环境。         |
 |5      | [启用Microsoft Cloud App Security](eval-defender-mcas-overview.md)        |  确保满足体系结构要求，启用评估，然后创建试点环境。        |
 |6      | [调查并响应威胁](eval-defender-investigate-respond.md)        |   模拟攻击并开始使用事件响应功能。      |
-|7      | [将试用版推广到生产环境](eval-defender-promote-to-production.md)        | 将Microsoft 365组件一个一个地提升为生产。        |
+|7      | [将试用版提升到生产](eval-defender-promote-to-production.md)        | 将Microsoft 365组件一个一个地提升为生产。        |
 | | | |
 
 这是通常推荐的顺序，旨在根据部署和配置功能通常需要多少工作量来快速获取功能价值。 例如，Office 365 Defender for Endpoint 所需的配置速度比为 Defender for Endpoint 注册设备要快得多。 当然，你可以确定组件优先级以满足业务需求，并按不同顺序启用这些组件。

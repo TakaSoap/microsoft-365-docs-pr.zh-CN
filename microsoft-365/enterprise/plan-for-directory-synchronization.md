@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Microsoft 365 的目录同步、Active Directory 域服务清理Azure Active Directory 连接工具。
-ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 10fe97f13f02aa19371b40284ca0549d6f14285042bf19ae174a833e44130343
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848433"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>混合标识和目录同步Microsoft 365
 
@@ -141,6 +141,6 @@ PTA 还适用于具有立即强制执行本地用户帐户状态、密码策略�
   - 你拥有集成的本地智能卡或多重身份验证解决方案。
 - 同步照片、缩略图、会议室和安全组
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 准备好部署混合标识时，请参阅 [准备目录同步](prepare-for-directory-synchronization.md)。

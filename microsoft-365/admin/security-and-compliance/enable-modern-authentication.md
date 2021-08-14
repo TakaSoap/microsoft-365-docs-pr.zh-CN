@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 了解如何设置注册表项，以对已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: 8bfe515fefed9d58f140a67e53ce0d078457aa72
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 0d794c62f558c29dd8edd367b76f7038a3fd1848b3528649ef6ef6b8bcbe0b48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53822843"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
