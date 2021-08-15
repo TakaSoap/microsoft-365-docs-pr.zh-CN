@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 68b627c7cdc215317d737a637316e5edf0971322
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: e74ca9a12938028d3e9710e46de8b2f82bca00a3c01f241c74b344f9e211d082
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889937"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -167,7 +167,7 @@ ID | 严重性 | 事件描述 | 故障排除步骤
 
 6. 可指示问题的事件将显示在"操作" **窗格中** 。 您可以尝试根据下表中的解决方案进行疑难解答：
 
-事件 ID | 邮件 | 解决方案步骤
+事件 ID | 消息 | 解决方案步骤
 :---:|:---|:---
  `5` | Microsoft Defender for Endpoint 服务无法连接到位于 _variable 的服务器_ | [确保设备可以访问 Internet。](#ensure-the-device-has-an-internet-connection)
  `6` | Microsoft Defender for Endpoint 服务未载入，并且未找到任何载入参数。 失败代码： _变量_ | [再次运行载入脚本](configure-endpoints-script.md)。

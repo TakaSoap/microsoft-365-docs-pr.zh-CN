@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建组电子邮件地址。
-ms.openlocfilehash: 0854c41a4af52649c09fc8e5e3d121282e615d8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9dd9b6fb64de02b2e7063266cee9afd6e9dcc277fc43f903d58d3dce693c1eab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882417"
 ---
 # <a name="create-a-group-email-address"></a>创建组电子邮件地址
 

@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 了解如何创建和配置 AD FS 服务器，以用于 Microsoft 365 中的Microsoft Azure。
-ms.openlocfilehash: 388a99aa496c4ecd9145759d4dfb1b9441b4fb2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23297f9ee38dcc1753f004aa225ee8eb32438c2eff08418aedfa9b5362c90c7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870692"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
@@ -150,7 +150,7 @@ Restart-Computer
 
 ![Azure 中与 AD FS Microsoft 365联合身份验证基础结构的第 3 阶段](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 使用 [阶段 4：配置 Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) 应用程序代理以继续配置此工作负载。
   

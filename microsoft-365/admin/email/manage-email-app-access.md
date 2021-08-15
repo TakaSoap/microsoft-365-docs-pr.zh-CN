@@ -1,5 +1,5 @@
 ---
-title: 在管理中心管理Microsoft 365电子邮件应用访问
+title: 在应用中管理电子邮件Microsoft 365 管理中心
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何选择用户可用于访问电子邮件、日历和联系人的移动应用。
-ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d38730df158758ceb310ba25f45f222d7893afe2d0aefc601a17663e85787552
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400048"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825975"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>在管理中心管理Microsoft 365应用访问权限
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>管理电子邮件应用中的电子邮件Microsoft 365 管理中心
 
 使用移动电子邮件访问设置选择贵组织人员可用于访问其工作或学校帐户以访问电子邮件、日历和联系人的移动应用。
   

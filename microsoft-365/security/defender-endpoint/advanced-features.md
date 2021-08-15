@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 165130eeb5cfa8616c2256eb390ac669b466500c
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 5fb05070f23781dd65cad1d1c359e139d12b5a5d23efa7a0b1b437c621f71bf7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53829877"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "53567689"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedfeats-abovefoldlink)。
 
 根据你使用的 Microsoft 安全产品，某些高级功能可能可供你集成 Defender for Endpoint。
 
@@ -230,8 +230,8 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 > [!NOTE]
 > Intune 创建的经典 CA 策略与用于配置[](/azure/active-directory/conditional-access/overview/)终结点的新式条件访问策略不同。
 
-
 ## <a name="device-discovery"></a>设备发现
+
 帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。 使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。 有关详细信息，请参阅设备 [发现](device-discovery.md)。
 
 > [!NOTE]
@@ -242,6 +242,10 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 了解 Defender for Endpoint 预览版中的新功能。 通过打开预览体验来尝试即将推出的功能。
 
 你将有权访问即将推出的功能，你可以提供反馈，以帮助在功能全面可用之前改进整体体验。
+
+## <a name="download-quarantined-files"></a>下载隔离文件
+
+在安全合规的位置备份隔离文件，以便可以直接从隔离区下载这些文件。 " **下载文件** "按钮将始终在文件页面中可用。 默认情况下，此设置为打开状态。 [详细了解要求](respond-file-alerts.md#download-quarantined-files)
 
 ## <a name="related-topics"></a>相关主题
 

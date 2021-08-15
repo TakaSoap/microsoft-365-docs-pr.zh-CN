@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse设备合规性页面。
-ms.openlocfilehash: 3568f5b362df86955a1ea6ce15928658c854a584
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 396417729184bf7bc9190193482a6567267098e8bdfb142b32e874014d0ce731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854603"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse设备合规性页面概述
 

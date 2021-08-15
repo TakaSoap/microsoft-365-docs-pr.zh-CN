@@ -12,18 +12,18 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7a967f5e4b2678b55ed87f2eaa68590703c55805
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4470ce4bc2ee671a24c319b817162b10cb89dbb4917feda51010147bb46fd814
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854540"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 咨询服务
 
 你可以与 Microsoft 咨询服务 (MCS) ，以打包应用以用于Microsoft 托管桌面。 有关确切详细信息，请与你的帐户代表联系 MCS，并确定特定应用打包项目的范围。
 
-## <a name="roles-and-responsibilities"></a>角色和职责
+## <a name="roles-and-responsibilities"></a>角色与责任
 
 若要使用 MCS 应用打包 **，必须提供以下元素**：
 

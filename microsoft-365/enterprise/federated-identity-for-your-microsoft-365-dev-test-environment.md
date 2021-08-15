@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: 0fb8c55f5b7291cdc6bcec636981a9d31015e723
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: e4d287f82fd267b3a56bcfad8266389e2dffa194c16f9c2fb9048cebe4773232
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870870"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
@@ -201,9 +201,9 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
   
 1. 选择 **"开始****"，mmc.exe，** 然后按 **Enter。**
     
-2. 选择 **"**  >  **文件添加/删除贴靠外接程序"。**
+2. 选择 **"**  >  **文件添加/删除管理单元"。**
     
-3. 在 **"添加或删除贴靠"** 中，双击可用管理单元列表中的"证书"，选择"计算机帐户"，然后选择"下一 **步"。**
+3. 在 **"添加或删除管理单元"中**，双击可用管理单元列表中的"证书"，选择"**计算机** 帐户"，然后选择"下一步 **"。**
     
 4. 在 **"选择计算机"** 中，**选择"完成**"，然后选择"确定 **"。**
     
@@ -253,7 +253,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
   - 在 **"联合身份验证服务显示** 名称"中，输入虚构组织的名称。
     
-  - 选择“**下一步**”。
+  - 选择 **下一步**。
     
 7. 在"**指定服务帐户"** 页上，选择 **"选择** 帐户 **名称"。**
     
@@ -277,9 +277,9 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
   
 1. 选择 **"开始****"，mmc.exe，** 然后按 **Enter。**
     
-2. Select **File > Add/Remove 贴靠-in**.
+2. 选择 **">/删除管理单元"。**
     
-3. 在 **"添加或删除贴靠"** 中，双击可用管理单元列表中的"证书"，选择"计算机帐户"，然后选择"下一 **步"。**
+3. 在 **"添加或删除管理单元"中**，双击可用管理单元列表中的"证书"，选择"**计算机** 帐户"，然后选择"下一步 **"。**
     
 4. 在 **"选择计算机"** 中，**选择"完成**"，然后选择"确定 **"。**
     
@@ -335,7 +335,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - 在 **"密码** "框中，输入 User1 帐户的密码。
     
-  - 选择“**下一步**”。
+  - 选择 **下一步**。
     
 6. 在 **"AD FS 代理** 证书"页上，选择向下箭头，选择包含联合身份验证服务 FQDN 的证书，然后选择"下一 **步"。**
     

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 摘要：为 web 应用程序代理服务器配置高可用性联合身份验证，Microsoft 365 Microsoft Azure。
-ms.openlocfilehash: 95d73d05f2eef087e606df14db180b24c69d5932
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc74fd93fc668094d9627486ac0106447825166e3c69b4c79c36be7ccd6ea107
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870634"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
@@ -158,7 +158,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 ![Azure 中的高可用性基础结构的第 4 阶段Microsoft 365 Web 应用程序代理服务器部署联合身份验证基础结构](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 使用[阶段 5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365配置联合身份验证以继续配置此工作负载。
   

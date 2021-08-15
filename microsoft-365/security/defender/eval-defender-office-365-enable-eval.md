@@ -1,7 +1,6 @@
 ---
-title: 在生产环境中为 Microsoft Defender Office 365评估环境，激活评估、激活
+title: 在生产环境中为 Microsoft Defender Office 365评估环境
 description: 激活 Microsoft Defender for Office365 评估的步骤，包括试用许可证、MX 记录处理、&接受域和入站连接的审核。
-keywords: Microsoft 365 Defender试用版， 试用 Microsoft 365 Defender， 评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: eebf6b6a07ed051a59ce9563497be25367ad3878
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 3a771c463c5f41aa9c74a8fb318b248f92bfb0ca159e84714c53ff43d378dc5f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544513"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863025"
 ---
 # <a name="enable-the-evaluation-environment"></a>启用评估环境
 
@@ -53,20 +52,20 @@ ms.locfileid: "53544513"
 1. 导航到管理门户。
 2. 从快速启动中选择"购买服务"。
 
-   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="单击导航窗格上的"购买服务"Office 365。":::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="单击导航窗格上的&quot;购买服务&quot;Office 365。":::
 
 3. 向下滚动到"Add-On"部分 (或搜索"Defender") 找到 Microsoft Defender for Office 365 计划。
 4. 单击要评估的计划旁边的"详细信息"。
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="单击详细信息按钮，下一步。":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="单击&quot;详细信息&quot;按钮，下一步。":::
 
 5. 单击" *开始免费试用"* 链接。
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击此面板上的开始免费试用 *超链接*。":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击此面板上的&quot;开始免费试用 *超链接*&quot;。":::
 
 6. 确认请求并单击"立即 *尝试"* 按钮。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="现在，单击立即尝试 *按钮*。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="现在，单击&quot;立即尝试 *&quot;按钮*。":::
 
 ## <a name="step-2-audit-and-verify-the-public-mx-record"></a>步骤 2：审核和验证公共 MX 记录
 
@@ -100,7 +99,7 @@ ms.locfileid: "53544513"
 1. 使用有权访问租户门户的帐户登录到Microsoft 365 Defender门户。
 2. 选择是否要将 Microsoft 365 Defender 门户作为 Microsoft Defender 管理的默认界面Office 365推荐 (Microsoft Defender) 。
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="单击打开设置按钮以使用集中式和改进Microsoft 365 Defender门户进行管理。":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="单击&quot;打开设置&quot;按钮以使用集中式和改进Microsoft 365 Defender门户进行管理。":::
 
 3. From the navigation menu， select **Policies & Rules** under Email & *Collaboration*.
 
@@ -120,13 +119,13 @@ ms.locfileid: "53544513"
 
 7. 如果使用第三方网关，请从下拉列表中选择供应商名称以及与该解决方案关联的入站连接器。 列出答案后，单击"下一步"。
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="在此对话框中，选择组织使用的第三方供应商服务，或选择*其他*。下一个对话框中，选择入站连接器。然后单击下一步。":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="在此对话框中，选择组织使用的第三方供应商服务，或选择&quot;*其他*&quot;。下一个对话框中，选择入站连接器。然后单击&quot;下一步&quot;。":::
 
 8. 查看设置并单击"创建 **评估"** 按钮。
 
    |活动前|活动后|
    |:---:|:---:|
-   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="此窗格有一个下拉列表，用于查看你的设置。如果需要，它还具有"编辑路由类型的可单击链接。准备好后，单击大蓝色创建评估按钮。":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="现在设置已完成。此页面上的蓝色按钮显示转到评估。":::|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="此窗格有一个下拉列表，用于查看你的设置。如果需要，它还具有&quot;编辑路由类型&quot;的可单击链接。准备好后，单击大蓝色&quot;创建评估&quot;按钮。":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="现在设置已完成。此页面上的蓝色按钮显示&quot;转到评估&quot;。":::|
    |
 
 ## <a name="next-steps"></a>后续步骤

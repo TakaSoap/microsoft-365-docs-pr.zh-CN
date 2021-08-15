@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用新的 Microsoft OneDrive Learning 互操作性应用创建和评级作业、构建和选择课程内容，并实时协作处理文件。
-ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: a1a07173b756d8eb86158bb669113d7e9f7202bf1b666ebc2a086f1aed732d2e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322217"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830048"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>将 Microsoft OneDrive LTI 与 Canvas 集成
 
@@ -96,4 +96,4 @@ Canvas 管理员可以针对所有课程Microsoft OneDrive LTI。 如果Microsof
 > 可以将协作分配给单个学生和学生组。 默认情况下，分配给单个学生有效。 若要能够将协作分配给学生组，请按照以下步骤操作：
 
 1. 以管理员角色登录并转到 **"开发人员密钥"** 部分。
-1. 查找值为 1700000000000710 的键，并设置为 **"打开"。**
+1. 查找值为 170000000000710的键，并设置为 **"打开"。**

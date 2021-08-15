@@ -1,5 +1,5 @@
 ---
-title: 试用 Microsoft Defender for Office 365，在生产环境中使用评估，提升评估以在生产中运行，了解如何评估 Defender
+title: 试用 Microsoft Defender for Office 365，在生产环境中使用评估
 description: 针对活动用户和现有用户组试点评估的步骤，以便正确测试 Microsoft Defender for Office 365。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 86f8dcc7b5e06605042f609ede4027510663cc65
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: ce1d08abb6c66df2eb75fd6c9349dcf085096394453375e5f85c5089e908147a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862881"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>试用 Microsoft Defender for Office 365
 **适用于：**
@@ -122,7 +122,7 @@ ms.locfileid: "53457668"
 
 下表提供了有关配置和分配自定义保护策略的参考和其他指南：
 
-|策略   |说明  |参考  |
+|Policy   |说明  |参考  |
 |:---------:|---------|---------|
 |连接筛选     |    按 IP 地址标识好或坏的源电子邮件服务器。     |     [在 EOP 中配置默认连接筛选器策略](../office-365-security/configure-the-connection-filter-policy.md)    |
 |反恶意软件    |    保护用户免受电子邮件恶意软件的攻击，包括要采取的操作以及检测到恶意软件时要通知的用户。     |    [在 EOP 中配置反恶意软件策略](../office-365-security/configure-anti-malware-policies.md)     |
@@ -136,7 +136,7 @@ ms.locfileid: "53457668"
 
 现在，你的试点已设置和配置，熟悉 Microsoft Defender for Microsoft 365 独有的报告、监视和攻击模拟工具Microsoft 365。
 
-|功能  |说明  |详细信息  |
+|功能  |说明  |更多信息  |
 |---------|---------|---------|
 |威胁资源管理器     | 威胁资源管理器是一个强大的近实时工具，可帮助安全运营团队调查和响应威胁，并显示有关 Office 365 中电子邮件和文件中可疑恶意软件和网络钓鱼的信息，以及组织面临的其他安全威胁和风险。        | [威胁资源管理器中的视图和实时检测 ](../office-365-security/threat-explorer-views.md)       | 
 |攻击模拟器     | 可以使用 Microsoft Defender 365 门户中的攻击模拟培训在组织中运行真实的攻击方案，这有助于你在真正的攻击影响你的环境之前识别和查找易受攻击的用户。        |  [Microsoft Defender for Office 365 中的攻击模拟器](../office-365-security/attack-simulator.md)       |

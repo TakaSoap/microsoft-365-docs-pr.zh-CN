@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 你的组织可能需要多个域，以便客户可以找到你。 了解如何将另一个域添加到订阅。
-ms.openlocfilehash: 766d0f6c1e3c68a262bc01ba432e042f0d274ce8
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: c127abf899985bb23cc3a9906425d4d5408a4376fde3bc88a4c3bdda1277bace
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882605"
 ---
 # <a name="add-another-domain"></a>添加其他域
 

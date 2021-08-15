@@ -25,12 +25,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: 了解Microsoft 365 2013 和 2016 客户端Office新式验证功能如何以不同方式工作。
-ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a115eec0781645c87bd799d15d4966133b4fd9de40993858912fda71cc5ab485
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870519"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>新式验证如何适用于 Office 2013、Office 2016 和 Office 2019 客户端应用
 
@@ -60,10 +60,10 @@ Office 2013 客户端应用默认支持旧版身份验证。 旧版意味着它�
 
 若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
 
-|**注册表项**|**Type**|**值** |
+|**注册表项**|**类型**|**值** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
 
 阅读[如何使用新式验证 (ADAL) Skype for Business](./hybrid-modern-auth-overview.md)了解它如何与 Skype for Business。
 

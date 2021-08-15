@@ -13,12 +13,12 @@ ms.collection:
 ms.service: o365-administration
 localization_priority: Normal
 description: 作为全局管理员，你最多可以将三个应用固定到用户的应用启动器。
-ms.openlocfilehash: 786368f1236c7a86a6fbd0dd863ad0296cb65fac
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6569b05f29a2219c9d1d6c847e65cd29043d80fd82d5e499e2af57ba96af0da9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53825004"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>将应用固定到用户的应用启动器
 
@@ -28,7 +28,7 @@ ms.locfileid: "51579262"
 
 ## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>使用 Azure Active Directory门户固定应用
 
-1. 转到位于 Microsoft 365管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. 转到 上 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Microsoft 365 管理中心。
 2. 在左侧导航中，选择"**全部显示**"，在"管理中心"**下，选择**"Azure Active Directory"。 
 3. In **Azure Active Directory，** choose **Enterprise applications**  >  **User settings**.
 4. 在 **"Office 365 设置"** 部分，选择"**添加应用程序"。**

@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 了解Microsoft 365组织之间的协作如何工作，从而允许不同组织安全地协同工作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0a9d15608e046e72ba579b77ba44092ed2ecb46
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 36e16beb852b99a17f0252217cfd6f148dcf0a0a15feb9770adcc3d5b9d268b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870541"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365租户间协作
 
@@ -100,7 +100,7 @@ Microsoft 365租户间协作选项包括使用文件和对话的中心位置、�
 
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>我们能否跨多个租户Microsoft 365命名空间？
 
-不需要。 组织域名（如 fabrikam.com 或 tailspintoys.com）只能与单个租户关联Microsoft 365使用。 每个租户都必须有自己的命名空间。 无法在租户之间共享 UPN、SMTP 和 SIP 命名空间。
+否。 组织域名（如 fabrikam.com 或 tailspintoys.com）只能与单个租户关联Microsoft 365使用。 每个租户都必须有自己的命名空间。 无法在租户之间共享 UPN、SMTP 和 SIP 命名空间。
 
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>混合组件和租户Microsoft 365协作呢？
 

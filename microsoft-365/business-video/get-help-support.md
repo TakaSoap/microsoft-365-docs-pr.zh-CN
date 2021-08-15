@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 你必须是企业订阅的管理员，才能在 Microsoft 365 商业高级版中获取管理员帮助或在线/电话支持。
-ms.openlocfilehash: 982c36ba5c941b2269fbdc59a66fa65e1baa903c
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 56aae6fc6ad966aeefb7d1fede4b86e1300babd393f51f5c28839f3220d985e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882518"
 ---
 # <a name="get-support"></a>获取支持
 

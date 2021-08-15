@@ -1,5 +1,5 @@
 ---
-title: 开始Teams
+title: Teams 入门
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在小型企业Microsoft Teams商业应用。
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5ba2dee81602cf6c474728879435998b699a1b5439ae751033a3511b17940361
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882441"
 ---
-# <a name="get-started-with-teams"></a>开始Teams
+# <a name="get-started-with-teams"></a>Teams 入门
 
 如果你刚刚开始将业务更改为远程工作，那么这里就对了。 借助 Microsoft 365，你可以虚拟地管理业务，并通过联机会议、聊天、文件共享和 Microsoft Teams 中的通话与员工、合作伙伴和客户[](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)保持联系。 
 
@@ -65,7 +65,7 @@ Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在�
 
 ### <a name="secure-your-business-as-it-runs-remotely"></a>在业务远程运行时保护业务
 
-高度推荐的安全功能是多重身份验证 (MFA) 。 为远程员工添加 MFA 要求他们在登录时输入文本、电话呼叫或身份验证应用Microsoft 365。 如果黑客通过网络钓鱼攻击持有某人的密码，则他们无法使用它来访问你的公司帐户和数据。 你可以从管理中心添加 MFA [Microsoft 365：为移动设备设置 MFA。](set-up-mfa.md)
+高度推荐的安全功能是多重身份验证 (MFA) 。 为远程员工添加 MFA 要求他们在登录时输入文本、电话呼叫或身份验证应用Microsoft 365。 如果黑客通过网络钓鱼攻击持有某人的密码，则他们无法使用它来访问你的公司帐户和数据。 你可以从以下中心添加 MFA Microsoft 365 管理：[为移动设备设置 MFA。](set-up-mfa.md)
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams模板
 

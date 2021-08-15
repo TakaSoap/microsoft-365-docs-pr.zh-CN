@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: 本文提供用于设计和实现 Azure 基础结构服务中托管的 Sharepoint Server 2013 Internet 网站的资源。
-ms.openlocfilehash: f6c7bec1dccc48c1080f76c30bb31b98a473f66e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9d811900485fe42e218a2e58ec4572d993c849ffe7f5ddbcd54ab16c42887db2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870580"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点
 
- 使用 SharePoint Server 2013 的 Internet 网站通过托管在 Azure 基础结构服务中而受益。 本文提供了用于设计和实施此解决方案的资源。
+ 使用 SharePoint Server 2013 的 Internet 站点通过托管在 Azure 基础结构服务中而受益。 本文提供了用于设计和实施此解决方案的资源。
 
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>将 Azure 基础结构服务用于 Internet 站点
 
@@ -39,16 +39,16 @@ Microsoft Azure 提供了托管基于 SharePoint Server 2013 的 Internet 站点
 
 - 利用客户帐户的 Azure Active Directory。
 
-- 添加 Microsoft 365 中当前未提供的功能，例如深度报告和分析。
+- 添加当前未在 Microsoft 365的功能，例如深入报告和分析。
 
 ## <a name="resources"></a>资源
 
 以下技术插图和文章提供了有关如何使用 SharePoint Server 2013 在 Azure 中设计和实施 Internet 站点的信息。
 
-|Resource|详细信息|
+|资源|详细信息|
 |---|---|
 |**Azure** 中的 SharePoint Server 2013 Internet 站点 <br/> [![使用 SharePoint 的 Azure 中的 Internet 网站图像](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|此体系结构模型概述了 Azure 中适用于 Internet 站点的关键设计活动和建议的体系结构选择。|
-|**设计示例：适用于 SharePoint Server 2013 的 Azure 中的 Internet 站点** <br/> [ ![ 设计示例的图像：Microsoft Azure for SharePoint 2013 中的 Internet 站点 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|将此设计示例作为你自己的体系结构的起点。|
+|**设计示例：适用于 SharePoint Server 2013 的 Azure 中的 Internet 站点** <br/> [ ![ 设计示例的图像：Microsoft Azure for SharePoint 2013 中的 Internet 网站 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|将此设计示例作为你自己的体系结构的起点。|
 |**[SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |本文介绍如何设计用于托管 SharePoint 解决方案的 Azure 体系结构。|
 |
 
