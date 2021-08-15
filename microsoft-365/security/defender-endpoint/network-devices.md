@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 939a2ef1620b8539c398f320d5e9cf61021eb5fe
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4e3665e148cd08bfef2fd56e1d51595ed7626a57a82cc6c3b3577b8d157bb1a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884558"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -98,7 +98,7 @@ ms.locfileid: "53650063"
     > [!NOTE]
     > 并非所有 URL 都指定在 Defender for Endpoint 记录允许的数据收集列表中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 若要配置评估作业，需要以下用户权限选项： **在安全中心中管理安全设置**。 可以通过访问角色 来设置  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 

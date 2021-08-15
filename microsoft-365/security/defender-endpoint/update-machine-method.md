@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2fc8fe1bc7e33a505038287e6ee6a8481d2c5aeb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: a67ec7ce5e71ed5b0275f509928d4acaa2b7c4b1f89db971353fc27fb98c650d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650771"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884519"
 ---
 # <a name="update-machine"></a>更新计算机 
 
@@ -86,7 +86,7 @@ Content-Type|String|application/json. **必需**。
 
 属性|类型|说明
 :---|:---|:---
-machineTags|String 集合|计算机 [标记](machine.md) 集。
+machineTags|String collection|计算机 [标记](machine.md) 集。
 deviceValue|Nullable Enum|[设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。
 
 ## <a name="response"></a>响应

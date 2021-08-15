@@ -12,12 +12,12 @@ ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e9bbd29db305eb5c335514621b442d9750b4cca8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 76e0e69e4fa517ccf6411c3c5f6dd5b7fb7c1fbf95f35c91276cd2598ac6bac4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837447"
 ---
 # <a name="payment-information-for-barbados"></a>伯利兹的付款信息
 
@@ -30,5 +30,5 @@ Please pay in USD only and reference your invoice number (s) on your invoice inv
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号** ：4426587954  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft

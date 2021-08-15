@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为团队创建一个协作空间，Microsoft Teams。
-ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6ca87115a55a91d1e00534556c4fa6d3b3bf72f4682f9ab4f562b772286b3fe9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837514"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>创建团队以在 Microsoft Teams
 

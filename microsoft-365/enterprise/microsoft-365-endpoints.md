@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 对于 Microsoft 365 流量的目标 IP 地址和 URL，请针对不同 Microsoft 365 云的 Internet 终结点使用此文章列表。
-ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
-ms.translationtype: HT
+ms.openlocfilehash: 3ffe00e1b578f135829f8c1d621e413dd6f00848041087222a0af4518e79a15f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787899"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830189"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 终结点
 

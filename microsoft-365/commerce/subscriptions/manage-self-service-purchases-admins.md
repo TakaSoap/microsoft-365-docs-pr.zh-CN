@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
 ms.date: 03/26/2021
-ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3ab07fac52a55518f2d8259b35f1de808bb544685ef4c463ac9c5e9d3706a973
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852231"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -198,7 +198,7 @@ ms.locfileid: "52536090"
 8. 关闭右窗格。
 9. 在订阅详细信息页面上， **订阅状态** 将显示为 **已删除**。
 
-## <a name="need-help-contact-us"></a>需要帮助? 请联系我们。
+## <a name="need-help-contact-us"></a>需要帮助？ 请联系我们。
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.yml)解答。
 

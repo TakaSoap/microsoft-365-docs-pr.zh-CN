@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 44b5fed8c99f9d2c738abfcdad99e1f4c020d3bca97591c3645ae3c8ac6c1029
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869839"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
@@ -39,7 +39,7 @@ ms.locfileid: "53286869"
 |Intune 服务管理员     |  具有此角色的 **管理员将在管理** 门户中对与安全Microsoft 托管桌面权限。       |
 |服务支持管理员     | 具有此角色的 **管理员将具有** 对与安全不相关的功能的只读权限，并且具有在管理门户中管理支持请求Microsoft 托管桌面写入权限。         |
 |安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且将在管理门户的 Microsoft 托管桌面 中编写安全相关功能的权限。 |
-|安全读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。|
+|安全信息读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。|
 
 如果需要有关分配角色Azure Active Directory帮助，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 

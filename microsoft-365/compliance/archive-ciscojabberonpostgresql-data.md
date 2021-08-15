@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解如何在 Microsoft 365 合规中心 中设置和使用连接器，以从 PostgreSQL 上的 Cisco Jabber 导入和存档Microsoft 365。
-ms.openlocfilehash: 7fca60df9d2c0378579d7700fb3dae9bbcdf619d
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: fc73fe178c59a50da81dd6e17ccf63e2e8b655419e24d0f17adcfffabc9449a4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861048"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>设置连接器以在 PostgreSQL 数据上存档 Cisco Jabber
 

@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: 了解如何在 Azure AD Office 365和管理集成应用，从而允许在全局管理员级别进行应用授权。
-ms.openlocfilehash: 0b7392984b77b01abb0992fea5db62b80ed9fb6c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 54825d551c39dde75596615080618d9a0693ac90ada420373d28bcc6881e4b09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909770"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830211"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>适用于管理员的集成应用Microsoft 365 Azure AD
 

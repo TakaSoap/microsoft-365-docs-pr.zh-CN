@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 如果你拥有 Office 365 E3，但员工不超过 300 人，请考虑切换到 Microsoft 365 商业高级版。
-ms.openlocfilehash: c1b4da07b3bf28cce1a48424ab45cde6ea54d367
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 89bf493b39250d88fcb47585d71e7dadd6600c4c3fff0658bb72e51b9ff386c5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53837655"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版
 

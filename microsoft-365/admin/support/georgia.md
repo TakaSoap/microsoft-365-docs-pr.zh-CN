@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4e8dc069bd59028acf939e954caae2c24fd47d0ecfa869633e9677353cbe4891
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901799"
 ---
 # <a name="contact-support-for-georgia"></a>联系格鲁吉亚支持人员
 

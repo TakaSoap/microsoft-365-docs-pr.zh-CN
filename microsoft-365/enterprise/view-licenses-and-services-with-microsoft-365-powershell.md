@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 介绍如何使用 PowerShell 查看有关你的组织可用的许可计划、服务和许可证Microsoft 365的信息。
-ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: faf7589cacee5d945ef136c602dd1f3f18ac92dba5e361adc1a9e43580afe24f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830139"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>使用 PowerShell Microsoft 365许可证和服务
 

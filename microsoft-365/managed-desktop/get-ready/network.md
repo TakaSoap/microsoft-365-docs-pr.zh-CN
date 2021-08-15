@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 076d2fe17be8d557d55d432eda637e4ba74a0121
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 8503b294f60ffe7d01199cd4e910a94abc138bb9feed6c80483250e6c3f1fab5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869961"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 

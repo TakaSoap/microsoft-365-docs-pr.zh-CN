@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: d6fb8dc510e004fa88bf99583cc2cc33ae8c63bb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 820300be1a8c68dab4b000b61023819ce1b75cf800e7cc16915f2aa7a696dfd2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884431"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell cmdlet 配置和管理Microsoft Defender 防病毒
 
@@ -55,7 +55,7 @@ PowerShell 通常安装在 文件夹 下 `%SystemRoot%\system32\WindowsPowerShel
 3. 输入 PowerShell 命令和任何参数。
 
 > [!NOTE]
-> 您可能需要在管理员模式下打开 PowerShell。 右键单击"开始"菜单中的项，单击"以管理员角色运行 **"，** 在权限提示符下单击"是"。
+> 您可能需要在管理员模式下打开 PowerShell。 右键单击用户策略中的 **"开始"菜单，** 单击"以管理员角色运行"，在权限提示符下单击"是"。
 
 若要打开任何 cmdlet 的联机帮助，请键入以下内容：
 

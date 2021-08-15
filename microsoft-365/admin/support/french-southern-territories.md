@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b9485364997c6ef824516e4a8fa1b576c33bbbee
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 3afefc809fc2a8160340706ebadc8f5a0950746ab667e285dccdf2762aff0ba6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901787"
 ---
 # <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>请联系法属南部领地 (法属) 
 

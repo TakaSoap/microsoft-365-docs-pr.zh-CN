@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c2b0cc6db8ade434e94db92ae225140f7b1aec69
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4ca75cdd3721f8a49f36b59f4ada0cd6f3dee49e1bf1d139240d52f83899fbb7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869949"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的系统必备
 
@@ -25,9 +25,9 @@ ms.locfileid: "53289579"
 本主题概述了为确保成功处理项目而必须满足的基础结构Microsoft 托管桌面。
 
 
-领域 | 先决条件详细信息
+区域 | 先决条件详细信息
 --- | ---
-许可 |Microsoft 托管桌面需要Microsoft 365 E3 Microsoft Defender for Endpoint 许可证 (或) 分配给你的用户的等效许可证。<br>有关特定服务计划的详细信息，请参阅本主题 [中有关](#more-about-licenses) 许可证的详细信息。<br>有关可用许可证详细信息，请参阅Microsoft 365[许可。](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
+授权 |Microsoft 托管桌面需要Microsoft 365 E3 Microsoft Defender for Endpoint 许可证 (或) 分配给你的用户的等效许可证。<br>有关特定服务计划的详细信息，请参阅本主题 [中有关](#more-about-licenses) 许可证的详细信息。<br>有关可用许可证详细信息，请参阅Microsoft 365[许可。](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
 连接 | 所有Microsoft 托管桌面设备都需要从企业网络连接到多个 Microsoft 服务终结点。<br><br>有关所需 IP 和 URL 的完整列表，请参阅网络 [配置](../get-ready/network.md)。 
 Azure Active Directory | Azure Active Directory (Azure AD) 必须是所有用户帐户的颁发机构，或者必须使用最新支持的 Azure AD 连接 从本地 Active Directory 同步用户帐户。<br><br>有关详细信息，请参阅[Azure AD 连接。](/azure/active-directory/hybrid/whatis-azure-ad-connect)<br><br>有关受支持的 Azure AD 连接版本，请参阅[Azure AD 连接：版本发布历史记录](/azure/active-directory/hybrid/reference-connect-version-history)。
 身份验证 | 如果 Azure AD 不是用户帐户的主身份验证源，则必须在 Azure AD 连接：<br>- 密码哈希同步<br>- 传递身份验证<br>- 外部标识提供程序 (包括 Windows 服务器 ADFS 和非 Microsoft IDP) 配置为满足 Azure AD 集成要求。 有关详细信息 [，](https://www.microsoft.com/download/details.aspx?id=56843) 请参阅指南。 <br><br>使用 Azure AD 设置身份验证选项连接，还推荐密码写回。 有关详细信息，请参阅密码 [写回](/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>如果实施了外部标识提供程序，则必须验证解决方案：<br>- 满足 Azure AD 集成要求<br>- 支持 Azure AD 条件访问，允许Microsoft 托管桌面配置设备合规性策略<br>- 启用设备注册和使用Microsoft 365服务或功能所需的服务或Microsoft 托管桌面 <br><br>有关使用 Azure AD 的身份验证选项的详细信息，请参阅[Azure AD 连接用户登录选项](/azure/active-directory/connect/active-directory-aadconnect-user-signin)。

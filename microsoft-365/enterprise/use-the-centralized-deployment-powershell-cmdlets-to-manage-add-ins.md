@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: 使用集中部署 PowerShell cmdlet 可帮助你为 Office 部署和管理 Microsoft 365 外接程序。
-ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830151"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过Office中心部署加载项Microsoft 365，您还可以使用 Microsoft PowerShell。 安装[O365 集中Add-In部署模块Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过 Office部署加载项Microsoft 365 管理中心，您还可以使用 Microsoft PowerShell。 安装[O365 集中Add-In部署模块Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
 下载模块后，打开常规Windows PowerShell窗口并运行以下 cmdlet：
 

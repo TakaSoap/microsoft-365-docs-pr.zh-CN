@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虚构但具有代表性的全球组织如何为企业Microsoft 365企业。
-ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: deef90fc670c0baca49d79ea6c285cd6fb2ee4f9151d83b6a336e0e7b81b0ff5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830271"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Contoso Corporation 的企业版
 
@@ -43,7 +43,7 @@ Contoso Corporation 是一家虚构但具有代表性的全球大型制造企业
 
   Contoso 网络工程师为本地用户优化了到 Intranet 边缘和 Internet 上最近的 Microsoft 网络位置的流量。
 
-- [标识](contoso-identity.md)
+- [身份](contoso-identity.md)
 
   Contoso 云中标识解决方案利用公司本地 Active Directory 域服务 (AD DS) 林。 它包括具有其现有受信任的第三方标识提供程序的联合身份验证。
 
@@ -85,7 +85,7 @@ Contoso Corporation 是一家虚构但具有代表性的全球大型制造企业
 
   了解 Contoso 如何快速配置冒犯性语言策略Microsoft Teams、Exchange和Yammer通信。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 了解[Contoso Corporation，](contoso-overview.md)以及他们在为企业部署 Microsoft 365时解决的设计注意事项。
 

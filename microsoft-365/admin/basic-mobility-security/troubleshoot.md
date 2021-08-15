@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: 尝试以下步骤以跟踪基本移动性和安全性问题
-ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 1ba964f052169b3937ecbc086abd4a686c0a66bb959c4b38d4280c1bbb0225a2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826707"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本移动性和安全性疑难解答
 
@@ -61,7 +61,7 @@ ms.locfileid: "49876848"
 
 - 请确保域已设置为Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
     
-- 除非你已Azure Active Directory 高级版，否则请确保用户选择仅在设备管理中注册 ****   ， **而不是** 选择连接。
+- 除非你已Azure Active Directory Premium，否则请确保用户选择仅在设备管理中注册 ****   ，而不是选择连接。 ****
 
 ## <a name="android-phone-or-tablet"></a>Android 手机或平板电脑
 

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 65ccc2cf551eeb52b9751a2457f8f1ba66e83fc7
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: c153d664ca658c50789b7372de0bd20e3423199f5f82242f76470c375b3a530c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869873"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -87,7 +87,7 @@ Microsoft 托管桌面要求 IT 管理员使用 Intune 公司门户 为用户安
 
 您具有可能会阻止用户管理 Microsoft 托管桌面服务的条件Microsoft 托管桌面策略。 注册期间，我们会从Microsoft 托管桌面访问策略中排除服务帐户，并应用新的条件访问策略来限制访问这些帐户。 有关这些服务帐户的更多信息，请参阅 [标准操作过程](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**Error**
+**错误**
 
 Intune 管理员角色没有足够的权限进行此检查。 还需要分配以下任一 Azure AD 角色来运行此检查：
 
@@ -164,7 +164,7 @@ YOU currently have the Enrollment Status Page (ESP) enabled. 如果你打算参�
 
 您具有条件访问策略所需的多重身份验证，这些策略Microsoft 托管桌面管理 Microsoft 托管桌面 服务。 注册期间，我们会从Microsoft 托管桌面访问策略中排除服务帐户，并应用新的条件访问策略来限制访问这些帐户。 有关这些服务帐户的更多信息，请参阅 [标准操作过程](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**Error**
+**错误**
 
 Intune 管理员角色没有足够的权限进行此检查。 还需要分配以下任一 Azure AD 角色来运行此检查：
 

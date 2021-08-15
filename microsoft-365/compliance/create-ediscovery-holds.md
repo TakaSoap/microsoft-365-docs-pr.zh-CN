@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可以创建与核心电子数据展示案例关联的保留Microsoft 365保留与调查或法律案件相关的内容。
-ms.openlocfilehash: 61bbe2e8d2713c2960105e2ec4eb4beffcd4306e
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0d7d7438002f811e11a6a303b6fc6947b7db296428dd8cb1cc6c1e418d9530ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860909"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -42,7 +42,7 @@ ms.locfileid: "52311593"
   
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后使用已分配有相应电子数据展示权限的用户帐户的凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365全部显示"，然后单击"电子数据展示>**核心"。**
+2. 在任务窗格的左侧导航 **Microsoft 365 合规中心，单击**"全部显示"，然后单击"电子数据展示>**核心"。**
 
 3. 在 **"核心电子数据展示"** 页上，单击要创建保留的案例的名称。
 
@@ -56,11 +56,11 @@ ms.locfileid: "52311593"
 
     ![选择将其置于保留状态的内容位置](../media/eDiscoveryHoldLocations.png)
   
-   1. **Exchange邮箱**：将开关设置为 **"打开**"，然后单击"选择用户、组或团队"以指定要置于保留中的邮箱。 使用搜索框查找用户邮箱和通讯 (将要置于保留状态) 的组成员的邮箱置于保留状态。 还可以将 Microsoft 团队、组和组关联的邮箱Office 365保留Yammer邮箱。 有关将邮箱置于保留状态时保留的应用程序数据详细信息，请参阅存储在邮箱中用于 [电子数据展示的内容](what-is-stored-in-exo-mailbox.md)。
+   1. **Exchange 邮箱**：将切换设置为“**打开**”，然后单击“**选择用户、组或团队**”，以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（将组成员的邮箱置于保留状态）以置于保留状态。 还可以将 Microsoft 团队、组和组关联的邮箱Office 365保留Yammer邮箱。 有关将邮箱置于保留状态时保留的应用程序数据详细信息，请参阅存储在邮箱中用于 [电子数据展示的内容](what-is-stored-in-exo-mailbox.md)。
 
-   1. **SharePoint网站**：将开关设置为 **"** 打开"，然后单击"选择网站"以指定SharePoint网站OneDrive保留的帐户。 键入要保留的每个网站的 URL。 还可以为 Microsoft 团队、SharePoint 组或 Yammer 组添加 Office 365 URL。
+   1. **SharePoint 站点**：将切换设置为“**打开**”，然后单击“**选择站点** ”，以指定要置于保留状态的 SharePoint 站点和 OneDrive 帐户。 键入你想要置于保留状态的每个站点的 URL。 还可以为 Microsoft 团队、SharePoint 组或 Yammer 组添加 Office 365 URL。
   
-   1. **Exchange公用文件夹**：将开关设置为 **"打开**"，将组织Exchange Online文件夹置于保留状态。 你无法选择要置于保留状态的特定公用文件夹。 如果不想将公用文件夹置于保留状态，请关闭切换开关。
+   1. **Exchange 公用文件夹**：将切换设置为“**打开**”，从而把 Exchange Online 组织中的所有公用文件夹置于保留状态。 无法选择要置于保留状态的特定公用文件夹。 如果不想把公用文件夹置于保留状态，请让切换开关保持关闭。
 
    > [!NOTE]
    > 必须至少向保留项添加一个内容位置。 否则，电子数据展示保留统计信息将显示没有项目被保留。
@@ -177,7 +177,7 @@ Teams基于组Office 365构建。 因此，将Office 365组置于电子数据展
   
 - 搜索用户的邮箱时，将不会搜索该用户Office 365组的任何团队或组。 同样，当您将团队或Office 365组置于电子数据展示保留中时，只会将组邮箱和组网站置于保留状态。 除非将OneDrive for Business添加到电子数据展示保留中，否则不会将其置于保留状态。 因此，如果出于法律原因Office 365将团队或组置于保留状态，请考虑将OneDrive或团队成员的帐户添加到同一保留中。
 
-- 若要获取团队或组Office 365列表，可以在管理中心查看"组"Microsoft 365属性。  或者，可以在 Exchange Online PowerShell 中运行以下命令：
+- 若要获取 Team 或 Office 365 组的成员列表，可以在"组"页上查看Microsoft 365 管理中心。  或者，可以在 Exchange Online PowerShell 中运行以下命令：
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -199,7 +199,7 @@ Teams基于组Office 365构建。 因此，将Office 365组置于电子数据展
 
 - **邮箱：** 下次托管文件夹助理处理邮箱并检测已删除电子数据展示保留时，邮箱将设置延迟保留。 具体来说，当托管文件夹助理将下列邮箱属性之一设置为 True 时，将延迟保留应用于 **邮箱**：
 
-   - **DelayHoldApplied：** 此属性适用于用户邮箱 (Web) 上使用 Outlook 和 Outlook 生成的电子邮件相关内容。
+   - **DelayHoldApplied：** 此属性适用于用户使用存储在 (邮箱中的Outlook和Outlook 网页版) 生成的电子邮件相关内容。
 
    - **DelayReleaseHoldApplied：** 此属性 (适用于由非 Outlook 应用（如 Microsoft Teams、Microsoft Forms 和 Microsoft Yammer) ）生成的基于云的内容Yammer) 存储在用户邮箱中。 由 Microsoft 应用生成的云数据通常存储在用户邮箱的隐藏文件夹中。
 
