@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 82e1d1b117fd8c68077a249a14f66b9915d517e9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: da145578dd8dedcd5358d9bb9ef850c17ea282729dc16503cddcd7fc75b07414
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828692"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>步骤 1. 会审和分析第一个事件
 
@@ -127,7 +127,7 @@ Microsoft 365 Defender多个 Microsoft 安全平台接收警报和事件作为�
 
 6. 通过选择其他警报，分析员可以全面了解攻击情况。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 2：了解如何修正事件](../../media/first-incident-overview/first-incident-path-step2.png)](first-incident-remediate.md)
 

@@ -1,6 +1,6 @@
 ---
-title: 常见的 Microsoft 365 Defender REST API 错误代码
-description: 了解常见的 Microsoft 365 Defender REST API 错误代码
+title: 常见Microsoft 365 Defender REST API 错误代码
+description: 了解 REST API Microsoft 365 Defender代码
 keywords: api， 错误， 代码， 常见错误， Microsoft 365 Defender， api 错误代码
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b972bc1710a5edbb3d351f2a33f966c80266fe4d9f13cfbfa6f6bf320764a93c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888867"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见的 Microsoft 365 Defender REST API 错误代码
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见Microsoft 365 Defender REST API 错误代码
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "52930267"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-任何 Defender API 上的操作可能会返回Microsoft 365代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
+任何应用程序 API 上的操作可能会返回Microsoft 365 Defender代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
 
 ## <a name="error-codes"></a>错误代码
 
-错误代码 | HTTP 状态代码 | 邮件
+错误代码 | HTTP 状态代码 | 消息
 -|-|-
 BadRequest | BadRequest (400)  | 常规错误请求错误消息。
 ODataError | BadRequest (400)  | 无效的 OData URI 查询 \<the specific error is specified\> 。
@@ -99,7 +99,7 @@ InternalServerError | 内部服务器错误 (500)  | *注意：无错误消息�
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365Defender API 概述](api-overview.md)
+- [Microsoft 365 DefenderAPI 概述](api-overview.md)
 - [支持的 Microsoft 365 Defender API](api-supported.md)
-- [访问 Microsoft 365 Defender API](api-access.md)
+- [访问Microsoft 365 Defender API](api-access.md)
 - [了解 API 限制和许可](api-terms.md)

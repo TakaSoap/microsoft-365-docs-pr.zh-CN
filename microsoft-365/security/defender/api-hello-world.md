@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ffdcf91da6b5def7d63e5fdb8ff51ddbdb1ec550
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 50316659caf811410b9422151e47feb17fbead8055bec08a3e4e342d61f2d83b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888844"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -52,10 +52,10 @@ ms.locfileid: "51055572"
 
 3. 在注册表单中，选择应用程序的名称，然后选择"注册 **"。** 选择重定向 URI 是可选的。 完成此示例不需要一个。
 
-4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用> API"，Microsoft 威胁防护"，然后选择  >    >  **"Microsoft 威胁防护"。**  你的应用现在可以访问 Microsoft 365 Defender。
+4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用>  >    >   API"，键入 **"Microsoft 威胁** 防护"，然后选择 **"Microsoft 威胁防护"。** 你的应用现在可以访问Microsoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft 威胁防护* 是 Defender 的Microsoft 365名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
+   > *Microsoft 威胁防护* 是 Microsoft 威胁防护Microsoft 365 Defender名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
    ![API 权限选择的图像](../../media/apis-in-my-org-tab.PNG)
 
    - 选择 **"应用程序权限**  >  **""Incident.Read.All"，** 然后选择"**添加权限"。**
@@ -172,10 +172,10 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365Defender API 概述](api-overview.md)
-- [访问 Microsoft 365 Defender API](api-access.md)
-- [创建应用以在没有用户Microsoft 365 Defender](api-create-app-web.md)
-- [创建应用以Microsoft 365用户访问 Defender API](api-create-app-user-context.md)
-- [创建具有对 Defender API 的多租户合作伙伴访问权限Microsoft 365应用](api-partner-access.md)
+- [Microsoft 365 DefenderAPI 概述](api-overview.md)
+- [访问Microsoft 365 Defender API](api-access.md)
+- [创建应用以在没有用户Microsoft 365 Defender访问用户](api-create-app-web.md)
+- [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md)
+- [创建具有对 API 的多租户合作伙伴访问权限Microsoft 365 Defender应用](api-partner-access.md)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 用户登录和 API 访问授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

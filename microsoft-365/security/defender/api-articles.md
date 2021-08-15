@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 93697ac4009d19a09a57600a1736e839fb04fb80
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c9cafdb24ea52b5a68373ce5f4ce67175ec89af12958ecb99cde494b1a551d89
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888939"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>其他安全和威胁防护 API
 
@@ -33,7 +33,7 @@ ms.locfileid: "51935745"
 
 **适用于：**
 
-- Microsoft 365Defender API
+- Microsoft 365 DefenderAPI
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。

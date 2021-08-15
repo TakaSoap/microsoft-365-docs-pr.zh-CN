@@ -1,6 +1,6 @@
 ---
-title: 创建应用以Microsoft 365用户访问 Defender API
-description: 了解如何代表Microsoft 365访问 Defender API。
+title: 创建应用以Microsoft 365 Defender用户访问 API
+description: 了解如何代表Microsoft 365 Defender访问 API。
 keywords: 访问，代表用户， api， 应用程序， 用户， 访问令牌， 令牌，
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bffe38ff5dc4c11ed25519c86081e24ff1191e94
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4c2b33a319b98215241f13f80adc8e2e1cc849a02c6044b939465adead69e683
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888966"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>创建应用以Microsoft 365用户访问 Defender API
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>创建应用以Microsoft 365 Defender用户访问 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "51056559"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-此页面介绍如何创建应用程序，以代表单个用户Microsoft 365 Defender 进行编程访问。
+此页面介绍如何创建应用程序，以代表单个用户Microsoft 365 Defender访问应用程序。
 
-如果你需要在未定义用户 (的情况下以编程方式访问 Microsoft 365 Defender，例如，如果你要编写后台应用或守护程序) ，请参阅创建应用以在没有用户的情况下访问[Microsoft 365 Defender。](api-create-app-web.md) 如果你需要为多个租户提供访问权限（例如，如果你为大型组织或一组客户提供服务，请参阅创建具有合作伙伴访问 Microsoft 365 Defender [API 的应用](api-partner-access.md)。如果你不确定需要哪种类型的访问，请参阅[入门](api-access.md)。
+如果需要在未定义用户 (的情况下以编程方式访问 Microsoft 365 Defender，例如，如果要编写后台应用或守护程序) ，请参阅创建应用以在没有用户的情况下访问[Microsoft 365 Defender。](api-create-app-web.md) 如果你需要为多个租户提供访问权限（例如，如果你为大型组织或一组客户提供服务，请参阅创建具有合作伙伴访问 Microsoft 365 Defender API[的应用](api-partner-access.md)。如果你不确定需要哪种类型的访问，请参阅[入门](api-access.md)。
 
-Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作。 这些 API 可帮助你自动执行工作流，并Microsoft 365 Defender 的功能。 此 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作。 这些 API 可帮助您自动化工作流，并充分利用Microsoft 365 Defender功能。 此 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用这些 API：
 
@@ -57,7 +57,7 @@ Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作�
 - 验证令牌
 
 > [!NOTE]
-> 当代表Microsoft 365访问 Defender API 时，你将需要正确的应用程序权限和用户权限。
+> 代表Microsoft 365 Defender访问 API 时，需要正确的应用程序权限和用户权限。
 
 > [!TIP]
 > 如果你有权在门户中执行一个操作，则你有权在 API 中执行此操作。
@@ -77,10 +77,10 @@ Microsoft 365Defender 通过一组编程 API 公开其大部分数据和操作�
    - **应用程序类型：** 公共客户端
    - **重定向 URI：**https://portal.azure.com
 
-4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用> API"，Microsoft 威胁防护"，然后选择  >    >  **"Microsoft 威胁防护"。**  你的应用现在可以访问 Microsoft 365 Defender。
+4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用>  >    >   API"，键入 **"Microsoft 威胁** 防护"，然后选择 **"Microsoft 威胁防护"。** 你的应用现在可以访问Microsoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft 威胁防护* 是 Defender 的Microsoft 365名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
+   > *Microsoft 威胁防护* 是 Microsoft 威胁防护Microsoft 365 Defender名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
 
    ![API 权限选择的图像](../../media/apis-in-my-org-tab.PNG)
 
@@ -134,7 +134,7 @@ $response.AccessToken
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用令牌访问 Microsoft 365 Defender API
 
-1. 选择要用于事件或高级搜寻 () API。 有关详细信息，请参阅支持的[Microsoft 365 Defender API。](api-supported.md)
+1. 选择要用于事件或高级搜寻 () API。 有关详细信息，请参阅受支持的[Microsoft 365 Defender API。](api-supported.md)
 2. 在即将发送的 http 请求中，将授权标头设置为 `"Bearer" <token>` *，Bearer* 为授权方案，令牌为经过验证的令牌。
 3. 令牌将在一小时内过期。 在此期间，可以使用同一令牌发送多个请求。
 
@@ -151,11 +151,11 @@ $response.AccessToken
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365Defender API 概述](api-overview.md)
-- [访问 Microsoft 365 Defender API](api-access.md)
+- [Microsoft 365 DefenderAPI 概述](api-overview.md)
+- [访问Microsoft 365 Defender API](api-access.md)
 - [创建"Hello world"应用](api-hello-world.md)
-- [创建应用以在没有用户Microsoft 365 Defender](api-create-app-web.md)
-- [创建具有对 Defender API 的多租户合作伙伴访问权限Microsoft 365应用](api-partner-access.md)
+- [创建应用以在没有用户Microsoft 365 Defender访问用户](api-create-app-web.md)
+- [创建具有对 API 的多租户合作伙伴访问权限Microsoft 365 Defender应用](api-partner-access.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)
 - [用户登录和 API 访问的 OAuth 2.0 授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

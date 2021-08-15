@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 457df54dd2e73e7c580059cb698a2345dca92a607e730b9d98b5f27bb4e02134
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853601"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 危险和漏洞管理
 
@@ -42,7 +42,7 @@ ms.locfileid: "53650807"
 
 为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (按设备组) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 只有具有"异常处理"权限的用户才能管理异常 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: 试用 Microsoft Defender for Endpoint，在评估中设置试点、测试功能
+title: 试用 Microsoft Defender for Endpoint
 description: 了解如何运行 Microsoft Defender for Endpoint (MDE) 的试点，包括验证试点组和试用功能。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d1efc37bd6412e441593dc9cf81296162f7fa754
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6d7ccaa890c8678bf1d02e578f33019208e6d2a9050f286435f913e67831d35d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53828640"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>试用 Microsoft Defender for Endpoint
 

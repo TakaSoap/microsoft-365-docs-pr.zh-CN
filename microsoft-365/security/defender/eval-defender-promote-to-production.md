@@ -1,5 +1,5 @@
 ---
-title: 将Microsoft 365 Defender环境推广到生产环境、Microsoft 365 Defender评估、试用评估、保留评估、生产评估
+title: 将你的Microsoft 365 Defender环境推广到生产环境
 description: 使用本文将 MDI、MDO、MDE 和 MCAS 的检测工具推广到 Microsoft 365 Defender 或 M365D 中的实时环境。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 475260ee10bd1d85c895bcbd69df78b338367931e63a115466a75e9e836b189d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53588121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853315"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>将Microsoft 365 Defender环境推广到生产环境
 
@@ -57,6 +57,6 @@ Defender for Identity 不需要任何其他配置。 只需确保你已购买必
 3. 为设备使用适当的管理工具和部署方法。
 4.  运行检测测试，验证设备是否正确载入并报告给服务。
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft 云应用安全
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 Microsoft Cloud App Security不需要任何其他配置。 只需确保你已购买必要的许可证。 如果将部署范围缩小到某些用户组，请增加这些组的范围，直到达到生产规模。 
 

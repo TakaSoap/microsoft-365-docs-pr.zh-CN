@@ -1,5 +1,5 @@
 ---
-title: 在试点环境中使用 Microsoft 365 Defender 调查和响应，并使用攻击模拟器，教用户检测、调查攻击面并增强安全状态
+title: 在试点环境中使用Microsoft 365 Defender和响应
 description: 在试用实验室或Microsoft 365 Defender环境中设置攻击模拟，以试用旨在教用户保护设备、标识、数据和应用程序的安全解决方案。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 590b9445b08e3a786b32e7086f27b140934d22d0
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 45ae39cde67b556f5bd5a0cd4e8a37f6e3b34e90d49fe663812db4f7727b30cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853329"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>在试点环境中使用Microsoft 365 Defender和响应
 

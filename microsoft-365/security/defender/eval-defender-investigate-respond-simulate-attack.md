@@ -1,5 +1,5 @@
 ---
-title: 在试点环境中运行攻击Microsoft 365 Defender、隔离环境进行攻击模拟、响应、修正
+title: 在试点环境中Microsoft 365 Defender攻击模拟
 description: 运行攻击模拟，Microsoft 365 Defender如何呈现警报和事件、获得见解以及快速修正威胁。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ebea0a8eeed737712c55eb80b9ce3c68e06853c1
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 8abbc10c9e8ca5ae9c75210ce2c698f7b7ddd41bc2336e4636a9b365cdba838c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853373"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>在试点环境中Microsoft 365 Defender攻击模拟
 

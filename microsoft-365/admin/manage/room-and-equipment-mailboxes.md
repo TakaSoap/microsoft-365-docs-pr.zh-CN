@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 44233261f266a6caf4b4bea78d0dbf83d98daefe537121e0ba37748e71900462
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227927"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824876"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 

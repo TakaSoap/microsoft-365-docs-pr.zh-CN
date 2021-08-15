@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 64f0968dac4dd33b7333455a48d491f89b555524
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 45302f3b27e6aca7701fbddcd4e1db8fbd067e41cbaf6b62778408caba4bc49d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853119"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -88,7 +88,7 @@ Teams 可提供一个协作空间来安全地存储敏感的客户端数据，�
 * 不需要或不使用的团队数量剧增。
 * 数据保留期超出了组织需要或使用的期限（依法保留/保存情况除外）。
 
-管理员可为 Microsoft 365 组指定有效期，如 90 天、180 天或 365 天。 如果 Microsoft 365 组支持的服务在过期后处于非活动状态，则会通知组所有者。 如果未采取任何操作，将删除 Microsoft 365 组及其所有相关服务（包括 Teams）。
+管理员可以为 Microsoft 365 组指定过期期限（例如 90 天、180 天或 365 天）。如果 Microsoft 365 组支持的服务在到期期间处于非活动状态，则会通知组所有者。如果未采取任何操作，则将删除 Microsoft 365 组及其所有相关服务（包括 Teams）。
   
 Teams 和其他基于组的服务中存储的超过保留期的数据会导致金融服务组织面临风险。 建议采用 Microsoft 365 组过期策略来帮助防止保留不再需要的数据。 Microsoft 365 结合了内置的保留标签和策略，帮助确保组织仅保留满足公司策略和法规遵从义务所需的数据。
 

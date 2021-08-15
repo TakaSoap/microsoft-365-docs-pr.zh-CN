@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c30e65a154e582ee843bcae4fa233f81964aca13
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e335503c9182176b957b5b15e664a4e629f42a17a585c3fbd53ea5508b730cbd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869060"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -101,7 +101,7 @@ ms.locfileid: "53542318"
     > [!div class="mx-imgBorder"]
     > ![自定义配置文件创建](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. 为配置文件选择名称，例如"macOS 的 Defender 或终结点载入"。 单击“**下一步**”。
+1. 为配置文件选择名称，例如"macOS 的 Defender 或终结点载入"。 单击 **下一个**。
 
     > [!div class="mx-imgBorder"]
     > ![自定义配置文件 - 名称](images/mdatp-6-systemconfigurationprofiles-2.png)
@@ -112,7 +112,7 @@ ms.locfileid: "53542318"
     > [!div class="mx-imgBorder"]
     > ![从文件导入自定义配置文件的配置](images/mdatp-6-systemconfigurationprofiles.png)
 
-1. 单击“**下一步**”。
+1. 单击 **下一个**。
 1. 在"分配"选项卡上 **分配** 设备。单击"下一 **步"。**
 
     > [!div class="mx-imgBorder"]

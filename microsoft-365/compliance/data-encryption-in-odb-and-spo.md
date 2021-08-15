@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解 OneDrive for Business 和 SharePoint Online 中数据安全加密的基本元素。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7dfbe142e065ef1afcf21c7652b08a0f1277e855b6b3b40af6b6e70a3745e65
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860807"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business 和 SharePoint Online 中的数据加密
 

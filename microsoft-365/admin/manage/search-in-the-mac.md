@@ -1,5 +1,5 @@
 ---
-title: 在管理中心中搜索Microsoft 365文档
+title: 搜索任务或文档中Microsoft 365 管理中心
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,24 +17,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用管理中心中的搜索功能获得更快速的结果。
-ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53824732"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中搜索
 
 作为组织管理员，Microsoft 365搜索来查找用户、执行操作、导航到不同的设置和阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
 
-:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot： Search bar in the Microsoft 365 admin center":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot： Search bar in the Microsoft 365 管理中心":::
 
 搜索结果分为不同的类别。 大多数类别是管理中心中的项目。 例如，用户、组、共享邮箱或域。 其他类别显示你可以导航到的位置、可采取的操作或你可以更改的应用级别设置。 还有一个与文档相关的类别。
 
 以下各节介绍管理中心中可搜索的不同区域和类别。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你需要是管理员才能在管理中心进行搜索。 搜索结果的范围为登录用户具有的管理员权限。 例如，SharePoint管理员在管理中心中看不到区域或类别，他们将不会在搜索中看到它。
 

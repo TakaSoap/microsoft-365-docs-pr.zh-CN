@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: 每日新闻、趋势和与你的公司、工作或行业相关的新闻、趋势和文章汇总会提供全新的收件箱。
-ms.openlocfilehash: 811fbf981d740735d140c14d786b505eebaa05f4
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: ac88ccb709f23a95046ad5361fef60a1270a125ac4350e13cc0e192adcdf17b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51649958"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823887"
 ---
 # <a name="microsoft-industry-updates"></a>Microsoft 行业更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "51649958"
 
 利用 Microsoft 的搜索引擎必应，行业更新是来自 Web 的最重要的工作新闻的集合，仅针对你选择。
 
-## <a name="how-does-it-work"></a>它的工作原理
+## <a name="how-does-it-work"></a>它的工作原理是什么？
 
 通过以下主题和兴趣自定义体验。 获取有关你的公司的新闻，跟踪行业趋势，成为第一个了解关键产品发布的人。 此外，还了解发展你的职业所需的技能和信息。
 

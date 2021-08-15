@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: ab77f3ab5ac9385d1ce049061730d2192e3bcb0c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: d2380053ffcb81a939494b487e17d065bd9d67c72664145e0232d9e1fd89608c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839179"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>使用Microsoft Endpoint Manager配置和管理Microsoft Defender 防病毒
 
@@ -55,7 +55,7 @@ ms.locfileid: "52683747"
 
 
 > [!TIP]
-> 需要帮助? 请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)
+> 需要帮助？ 请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)
 
 
 ## <a name="related-articles"></a>相关文章

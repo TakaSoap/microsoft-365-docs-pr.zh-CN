@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ee075f34087d28fc9326d408622d05f363bba768
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: c4093ca351873f3f16742f6c0d131ac39d70c5f6360a3a52bb1dbed1985158d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853281"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -59,7 +59,7 @@ ms.locfileid: "53022580"
 
 如果您具有适当的权限以及以下一个或多个订阅，可以使用统一操作中心：
 
-- [适用于终结点的 Defender](../defender-endpoint/microsoft-defender-endpoint.md)
+- [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -132,6 +132,6 @@ ms.locfileid: "53022580"
 > [!TIP]
 > 在 Azure  AD 中分配了全局管理员角色的用户可以批准或拒绝操作中心中任何挂起的操作。 但是，最佳做法是，贵组织应限制分配了全局管理员 **角色的人的数量** 。 我们建议对操作中心权限使用上表中列出的安全管理员、**活动** 修正操作和搜索和清除角色。
 
-## <a name="next-step"></a>后续步骤 
+## <a name="next-step"></a>下一步 
 
 - [查看和管理修正操作](m365d-autoir-actions.md)

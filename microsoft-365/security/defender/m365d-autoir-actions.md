@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 0ecc3f7a91b79651b0a970553576a3c8d93320b25c258dd3f793552a4acf31a8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888771"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -36,7 +36,7 @@ ms.locfileid: "52782989"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 中的威胁防护功能可能会导致某些修正操作。 下面是一些示例：
+威胁防护功能Microsoft 365 Defender会导致某些修正操作。 下面是一些示例：
 
 - [自动调查](m365d-autoir.md) 可能会导致自动执行修正操作或等待您的批准。
 - 防病毒、反恶意软件和其他威胁防护功能可能会导致修正操作，例如阻止文件、URL 或进程，或将项目发送到隔离区。

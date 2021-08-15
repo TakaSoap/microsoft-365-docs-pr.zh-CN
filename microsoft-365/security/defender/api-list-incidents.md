@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: fbc7e7147868649982defec9593b8852737a6ca7642faec4f125eca471c4e89d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853351"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>列出事件 API Microsoft 365 Defender
 
@@ -107,8 +107,8 @@ classification|事件的规范。 属性值为 *：Unknown、FalsePositive、Tru
 确定|指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other       |NotAvailable
 detectionSource|指定检测源。|MCAS
 status|将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。|活动
-severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。 <p> 下列值之一 *：Informational、Low、*Medium* 和 *High。* |Medium
-标记|与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。|\[\]
+severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。 <p> 下列值之一 *：Informational、Low、*Medium* 和 *High。* |中
+tags|与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。|\[\]
 comments|由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。|\[\]
 警报|包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。|\[\] (以下警报字段的详细信息) 
 
@@ -127,7 +127,7 @@ firstActivity|警报首次报告在后端更新活动的时间。|2020-09-04T05�
 说明|描述每个警报的字符串值。|用户 Test User2 (testUser2@contoso.com) 操作 99 个文件，其多个扩展名以不常见的扩展 *名 herunterladen 结尾*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
 “类别”|有关攻击在击杀链上的进度的可视和数值视图。 与 [MITRE ATT&CK™对齐](https://attack.mitre.org/)。|影响
 status|将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。|新增
-severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、Medium* 和 *High。* |Medium
+severity|指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、Medium* 和 *High。* |中
 investigationId|此警报触发的自动调查 ID。|1234
 investigationState|有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Failed、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType、SuppressedAlert 。                  |UnsupportedAlertType
 classification|事件的规范。 属性值包括：Unknown、FalsePositive、TruePositive 或 null   |未知
@@ -185,7 +185,7 @@ securityGroupId|如果 entityType 为  *SecurityGroup，则可用*。|301c47c8-e
 securityGroupName|如果 entityType 为  *SecurityGroup，则可用*。|网络配置运算符
 registryHive|如果 entityType 为  *Registry ，则可用*。|HKEY \_ 本地 \_ 计算机|
 registryKey|如果 entityType 为  *Registry ，则可用*。|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType|如果 entityType 为  *Registry ，则可用*。|字符串
+registryValueType|如果 entityType 为  *Registry ，则可用*。|String
 registryValue|如果 entityType 为  *Registry ，则可用*。|31-00-00-00
 deviceId|与实体相关的设备的 ID（如果有）。|986e5df8b73dacd43c8917d17e523e76b13c75cd
 
