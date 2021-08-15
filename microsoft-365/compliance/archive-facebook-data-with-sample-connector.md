@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: 了解如何设置&使用 Microsoft 365 合规中心中的连接器将 & 存档数据从 Facebook 业务页面导入Microsoft 365。
-ms.openlocfilehash: 616466a3af83c1558184526aa463f68c10ef9e70
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何设置&使用 Microsoft 365 合规中心 中的连接器将 & 存档数据从 Facebook 业务页面导入Microsoft 365。
+ms.openlocfilehash: 9327da8f3e37d64300ff1bafeb375f65e77fda67cc2d13bf0d1a3227b9bca693
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866651"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>设置连接器以存档 Facebook 数据 (预览) 
 
-使用合规性中心中的Microsoft 365将 Facebook 业务页面的数据导入和存档到Microsoft 365。 设置和配置连接器后，它将按计划连接到 facebook 业务页面 () ，将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的邮箱。
+使用网站中的连接器Microsoft 365 合规中心数据从 Facebook 业务页面导入和存档Microsoft 365。 设置和配置连接器后，它将按计划连接到 facebook 业务页面 () ，将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的邮箱。
 
 导入 Facebook 数据后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核、通信合规性和 Microsoft 365 保留策略）应用于 Facebook 数据。 例如，将邮箱置于诉讼保留或分配给保留策略时，将保留 Facebook 数据。 您可以使用内容搜索搜索第三方数据，或将存储 Facebook 数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用连接器在组织中导入和存档 Facebook Microsoft 365可帮助组织遵守政府及法规策略。
 
@@ -45,7 +45,7 @@ ms.locfileid: "50921732"
 
 - Facebook Business 页面的连接器一天中总共可以导入 200，000 个项目。 如果一天中 Facebook 业务项目超过 200，000 个，则这些项目不会导入Microsoft 365。
 
-- 必须在步骤 5) 中为在 Microsoft 365 合规中心 (中设置自定义连接器Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 5 Microsoft 365 合规中心 (中为在) 中设置自定义连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
@@ -107,11 +107,11 @@ ms.locfileid: "50921732"
 
 - Azure Active Directory步骤 1 (中获取的 AAD 应用程序密码) 
 
-## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在合规性中心内Microsoft 365 Facebook 业务页面连接器
+## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在网站中设置 Facebook Microsoft 365 合规中心
 
-最后一步是在 Microsoft 365 合规中心中设置连接器，以将数据从 Facebook 商业版页面导入 Microsoft 365。 完成此步骤后，Microsoft 365导入服务将开始将数据从 Facebook 业务页面导入Microsoft 365。
+最后一步是在 Microsoft 365 合规中心 中设置连接器，该连接器将数据从 Facebook 业务页面导入 Microsoft 365。 完成此步骤后，Microsoft 365导入服务将开始将数据从 Facebook 业务页面导入Microsoft 365。
 
-有关分步说明，请参阅步骤[5：](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)在合规性Microsoft 365设置 Facebook 连接器。 
+有关分步说明，请参阅步骤[5：](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)在 Microsoft 365 合规中心 中设置 Facebook 连接器。 
 
 在完成此步骤 (按照) 的分步说明 (在完成步骤) 后复制到文本文件的以下信息。
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除Microsoft 365组、添加和删除组的成员，以及自定义组的工作方式。
-ms.openlocfilehash: 1afa8d38d05ca0383f56cdba795f26739457347c
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 98e4243705a027ab660099a4a1fbce470a9844d83b8f62715b6c62d2dde9d207
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826498"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在"管理"中Microsoft 365 管理中心
   
@@ -45,11 +45,11 @@ ms.locfileid: "53393747"
   
 3. 在"**选择组类型"页上**，选择 **"Office 365"，** 然后选择"下一 **步"。**
 
-4. 在 **"基本信息** "页上，键入组的名称以及说明（可选）。 选择 **“下一步”**。
+4. 在 **"基本信息** "页上，键入组的名称以及说明（可选）。 选择 **下一步**。
     
 5. 在"**编辑设置**"页上，键入组的唯一电子邮件地址，选择隐私选项以及是否要添加Microsoft Teams，然后选择"下一 **步"。**
     
-6. 在 **"所有者** "上，选择将被指定为管理该组的一个或多个人员的名称。 任何一个组所有者都可以从"组"收件箱中删除电子邮件。 其他成员将无法从"组"收件箱中删除电子邮件。 选择 **“下一步”**。
+6. 在 **"所有者** "上，选择将被指定为管理该组的一个或多个人员的名称。 任何一个组所有者都可以从"组"收件箱中删除电子邮件。 其他成员将无法从"组"收件箱中删除电子邮件。 选择 **下一步**。
     
 7. 查看设置并做出任何更改后，选择"创建 **组"。**
 

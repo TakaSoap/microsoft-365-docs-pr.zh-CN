@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: 包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 的页面下载时间。
-ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e76969da9dce2d6cc87bc903960e9879f81bdc4e6895161df84367b0f95afff3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878127"
 ---
 # <a name="tune-sharepoint-online-performance"></a>优化 SharePoint Online 性能
 

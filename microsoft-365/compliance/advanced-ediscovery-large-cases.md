@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在管理中Advanced eDiscovery大的情况，以便可以添加更多项目来审阅集，并充分利用其他增加的限制。
-ms.openlocfilehash: 739fa2a7bb3e1d1d650ef736ca1c480c8b704e6f4c2cc12b6c7fdd7e03fec2ed
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: d73ef8bd29de96fb845913e966e7d195d286b94f061e7fa492353ccfe773800f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53836427"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>在预览版Advanced eDiscovery (大) 
 
@@ -63,9 +63,7 @@ ms.locfileid: "54523653"
 
 ## <a name="known-issues"></a>已知问题
 
-- 将内容导出为 Loose 文件和 **PST** 的选项当前在大部分情况下不受支持， (选项显示为灰色) 。 即将支持适用于大案例的此导出选项。 有关导出内容的信息，请参阅从网站中的审阅集[导出Advanced eDiscovery。](export-documents-from-review-set.md)
-
-- 在将保管人和非托管数据源添加到事例时发生的高级索引在大型情况下当前不受支持。 索引作业已创建，但无法完成。 大情况下的高级索引将很快受到支持。 有关高级索引功能的信息，请参阅 [保管人数据的高级索引](indexing-custodian-data.md)。
+- 目前，将内容导出为 Loose 文件和 **PST** 的选项在大部分情况下不受支持， (选项当前显示为灰色) 。 此导出选项将很快受到支持。 有关导出内容的信息，请参阅从网站中的审阅集[导出Advanced eDiscovery。](export-documents-from-review-set.md)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

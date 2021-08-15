@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: 使用适用于 SharePoint 的页面诊断工具SharePoint预定义的性能标准集来分析 SharePoint Online 新式门户和经典发布页面。
-ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 742c55fcdcb527b3544650918d2e404045318619abba7df79f736dead31d07ca
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878347"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>使用适用于用户的页面诊断SharePoint工具
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 了解如何将成员添加到组、从组中删除成员以及管理组所有者Microsoft 365 管理中心。
-ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: ee93f4c22d64e20ec586dd315aa970b610ff7e450e1a2bd79700b3f91ed84c23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826539"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心Microsoft 365或删除组的成员
 

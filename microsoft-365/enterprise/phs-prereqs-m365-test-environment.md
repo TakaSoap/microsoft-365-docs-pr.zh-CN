@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: a3b02167bc3c1d2e7bc809d227ce5537114ffff9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f46f5a00a0ae996b0b68cd613f622ecd8753e1e202bb4deaff6851f5f05063e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199437"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878195"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 

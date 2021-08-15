@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
-description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 7497d21cc85449ee2141ac1362f82d092f150b4b
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+description: 设置 SharePoint Syntex
+ms.openlocfilehash: 423c69a3c199cd3b1f0c71b93d3632e555125e1e47c4e5b5c8db95f7c52d195d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859156"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -53,17 +53,9 @@ ms.locfileid: "53544705"
 - SharePoint 整合 - SPO 类型
 - 用于 SharePoint 整合的常用数据服务
 
-如果将来（或试用版过期）取消 SharePoint Syntex 订阅，用户将无法创建或运行文档了解或表单处理模型，且内容中心模板将不再可用。 此外，术语库报表、SKOS 分类导入和内容类型推送将不再可用。 不会删除任何内容，且网站权限不会更改。
+若要使用表单处理，还需要 AI Builder 额度。 如果你有 300 个或更多许可用户，则每月会分配 AI 生成器额度。
 
-### <a name="ai-builder-credits"></a>AI 生成器点数
-
-如果你的组织中的 SharePoint Syntex有300或更多SharePoint Syntex 许可证，则会分配一百万个 AI 生成器点数。 如果许可证少于300个，则必须购买AI 生成器点数才能使用表单处理。
-
-可使用 [AI 生成器计算器](https://powerapps.microsoft.com/ai-builder-calculator)来估算出适合你的AI 生成器容量。
-
-如果计划使用自定义 Power Platform 环境，必须 [向该环境分配点数](/power-platform/admin/capacity-add-on)。
-
-转到 [Power Platform 管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)，以查询点数和使用情况。
+有关 SharePoint Syntex 许可的详细信息，请参阅 [SharePoint Syntex 许可](syntex-licensing.md)
 
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 

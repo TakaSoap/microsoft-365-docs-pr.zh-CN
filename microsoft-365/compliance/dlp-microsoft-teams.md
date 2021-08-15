@@ -1,5 +1,5 @@
 ---
-title: 数据丢失保护和 Microsoft Teams
+title: 数据丢失防护和 Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,14 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams聊天和频道支持数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: fa7e0967e24d8fa5e64b84fbccf54ff8cf45d1d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c71001ec81326df07362c4caa34a2f9d382fb3eb3b18d790a3883f369b41aba7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851183"
 ---
-# <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失保护和 Microsoft Teams
+# <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
 如果您的组织具有 DLP (数据丢失) ，您可以定义防止用户共享 Microsoft Teams 频道或聊天会话中敏感信息的策略。 下面是此保护的工作原理的一些示例：
 
@@ -31,13 +31,13 @@ ms.locfileid: "52843538"
     > [!NOTE]
     > 与具有Microsoft Teams的用户共享时，用于Microsoft Teams DLP 会阻止敏感内容：<br/>- [团队和](/MicrosoftTeams/guest-access) 频道中的来宾访问;或<br/>- [会议和](/MicrosoftTeams/manage-external-access) 聊天会话中的外部访问。 <p>外部聊天会话的 DLP 仅在发送方和接收方均在"仅Teams且使用本地联盟Microsoft Teams[才能工作](/microsoftteams/manage-external-access)。 DLP for Teams 不会阻止与本地[](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business)或非Skype for Business联盟聊天会话进行互操作的消息。
 
-- **示例 2：保护文档中的敏感信息**。 假设有人尝试在频道或聊天中与来宾共享Microsoft Teams，并且该文档包含敏感信息。 如果已定义 DLP 策略以防止出现此状态，文档将不会为这些用户打开。 DLP 策略必须包含 SharePoint 和 OneDrive，才能实施保护。 这是 SharePoint DLP 的一个示例，显示在 Microsoft Teams 中，因此要求用户获得 Office 365 E3) 中包含的 Office 365 Office 365 DLP (的许可，但不要求用户获得 Office 365 高级合规版.) 的许可。
+- **示例 2：保护文档中的敏感信息**。 假设有人尝试在频道或聊天中与来宾共享Microsoft Teams，并且该文档包含敏感信息。 如果已定义 DLP 策略以防止出现此状态，文档将不会为这些用户打开。 DLP 策略必须包含 SharePoint 和 OneDrive，才能实施保护。 这是 SharePoint DLP 的一个示例，显示在 Microsoft Teams 中，因此要求用户获得 Office 365 DLP (Office 365 E3) 中的许可，但不要求用户获得 Office 365 高级合规版.) 
 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>DLP 许可Microsoft Teams
 
 [数据丢失防护](dlp-learn-about-dlp.md)功能已扩展为包括Microsoft Teams消息，包括用于以下功能的 **专用频道** 消息：
 
-- Office 365E5/A5
+- Office 365 E5/A5
 - Microsoft 365 E5/A5
 - Microsoft 365 信息保护和治理
 - Office 365 高级合规版
@@ -70,7 +70,7 @@ DLP 保护以不同方式应用于Teams实体。
 
 ## <a name="policy-tips-help-educate-users"></a>策略提示有助于培训用户
 
-与 DLP 在[Exchange、Outlook、Outlook 网页](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)版[、SharePoint Online、OneDrive for Business 网站](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)和[Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)桌面客户端中的工作方式类似，当使用 DLP 策略触发操作时，会显示策略提示。 下面是策略提示的示例：
+与 DLP 在[Exchange、Outlook、Outlook 网页版、SharePoint](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web) [Online、OneDrive for Business 网站](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)和 Office 桌面客户端中的工作方式类似，当使用 DLP 策略触发操作时[，](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)会显示策略提示。 下面是策略提示的示例：
 
 ![阻止的邮件通知Teams](../media/dlp-teams-blockedmessage-notification.png)
 
@@ -138,7 +138,7 @@ DLP 保护以不同方式应用于Teams实体。
     
 6. 然后选择“**下一步**”。
 
-7. 单击“**保存**”。
+7. 单击 **保存**。
 
 允许大约 1 小时更改通过数据中心运行并同步到用户帐户。
 <!-- again, why user accounts? -->

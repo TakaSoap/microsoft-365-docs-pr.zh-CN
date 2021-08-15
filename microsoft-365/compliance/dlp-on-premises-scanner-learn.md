@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 本地扫描仪的数据丢失防护扩展了对文件活动的监视以及针对这些文件的安全操作，可扩展到本地文件共享和 SharePoint 文件夹和文档库。通过 Azure 信息保护 （AIP） 扫描仪扫描和保护文件
-ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6f86d77ea9b6249225f3b0ee2cdd1f91c230ce1de4b2e62cabda7719de27bfa9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851079"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>了解本地扫描程序Microsoft 365数据丢失防护
 

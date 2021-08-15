@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 执行电子邮件Advanced eDiscovery分析时，电子邮件线程分析电子邮件会话，将每封邮件分为不同的类别。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: afe740f3b5be33a7033f8ed5ce41aa9582b0da4d2a7af05868bd5522d5f66fb1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285558"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850887"
 ---
 # <a name="email-threading-in-advanced-ediscovery"></a>电子邮件主题中的Advanced eDiscovery
 

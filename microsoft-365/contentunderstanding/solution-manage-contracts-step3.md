@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Power Automate解决方案来创建流程以处理Microsoft 365合同。
-ms.openlocfilehash: e6c1d1e53363f996241efb2394189853d840c6c2
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: ddf9df71c53af9f3a68dcbfd9a5b1882b67c4fbd4600e89ecec36e283848ac3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054475"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859209"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建处理合同的流程
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 中的应用治理
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -14,16 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
-ms.openlocfilehash: 3665abc224330f0e2f2ba8139acb097a9aad2621
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: e36ab9e3f8d19c68027e6b665bd0755839e1accf952b7df8ca1fe1694c0a8bae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887207"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 要注册应用治理，请参阅 [应用治理入门（预览版）](app-governance-get-started.md#add-app-governance-to-your-microsoft-365-account)。
 
 网络攻击通过各种日益复杂的方式来利用你部署在本地和云基础设施中的应用，为特权提升、横向移动和数据泄露奠定基础。 若要了解潜在风险并阻止这些类型的攻击，你需要清楚了解组织的应用合规状况，以快速识别应用何时表现出异常行为，并在这些行为对你的环境、数据和用户构成风险时做出响应。
 
@@ -45,15 +48,9 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 应用治理是一种基于平台的解决方案，是 Microsoft 365 应用生态系统不可或缺的一部分。 应用治理可监督和管理在 Azure Active Directory (Azure AD) 中注册、通过 Microsoft Graph API 访问数据，并且已启用 OAuth 的应用。 应用治理为你提供应用行为控件，以帮助增强 IT 基础设施的安全性和合规性状况。
 
-<!--
-Unlike other application governance products in the marketplace, MAPG is a platform-based solution that is an integral part of the Microsoft 365 application ecosystem. MAPG's initial focus is on OAuth-enabled apps published to the Microsoft 365 platform that are registered with Azure AD and access data through the Graph API. For the initial release, MAPG does not support other, non-OAuth-enabled M365 apps, add-ins (such as PowerBI), or other app vendor ecosystems such as Google, Facebook, Amazon Web Services, Workplace, and Salesforce. MAPG’s focus is on third-party published apps for the Microsoft 365 application platform.
-
-Microsoft allows developers to build cloud applications using Azure Active Directory (Azure AD), Microsoft’s cloud identity platform, and other resources and access to tenant data through the Microsoft Graph. Because of MAPG's visibility, insights, and control capabilities, app developers have the incentive to comply with publisher verification, self-attestation, and Microsoft certification, and can build high-quality productivity apps that are secure and compliant.
--->
-
 ## <a name="a-first-glimpse-at-app-governance"></a>应用治理概览
 
-要查看应用治理仪表板，请转到 [https://aka.ms/appgovernance](https://aka.ms/appgovernance)。 请注意，若要查看应用治理数据，你的登录帐户必须具有其中一个[管理员角色](app-governance-get-started.md#administrator-roles)。
+要查看应用治理仪表板，请转到 [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance)。 请注意，若要查看应用治理数据，你的登录帐户必须具有其中一个[管理员角色](app-governance-get-started.md#administrator-roles)。
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成
 

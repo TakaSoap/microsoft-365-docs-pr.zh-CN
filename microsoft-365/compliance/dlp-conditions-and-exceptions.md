@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 了解 dlp 策略条件和例外
-ms.openlocfilehash: e85f9c1fdc19e125ef790d14e4e42d2390145fdc
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b1ada8362b149e737784f3cc2948100bbcb217274e000736ecf4cc4752c59e93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851127"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP 策略条件、例外和操作
 
@@ -94,7 +94,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |主题或正文包含字词|condition： *SubjectOrBodyContainsWords* <br/> exception： *ExceptIfSubjectOrBodyContainsWords*|Words|主题字段或邮件正文中具有指定词语的邮件|
 |
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>附件
 
 <br>
 
@@ -157,7 +157,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |将邮件转发给特定审批者进行审批|适度|第一个属性 *：ModerateMessageByUser*</br>次要属性：*Addresses*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法：@{ ModerateMessageByUser = @ ("emailaddress1"，"emailaddress2",..."emailaddressN") }|
 |添加收件人|AddRecipients|第一个属性 *：Field*</br>次要属性：*Addresses*|将一个或多个收件人添加到邮件的"收件人/抄送/密件抄送"字段中。 此参数使用语法：@{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |将发件人的经理添加为收件人|AddRecipients|第一个属性 *：AddedManagerAction*</br>Second 属性 *：Field*|将发件人的经理添加到邮件中作为指定收件人类型 (To、Cc、Bcc)，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用语法：@{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|
-Prepend subject|PrependSubject|字符串|将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。|
+Prepend subject|PrependSubject|String|将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。|
 |应用 HTML 免责声明|ApplyHtmlDisclaimer|第一个属性 *：Text*</br>Second 属性 *：Location*</br>第三个属性 *：回退操作*|将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <Append \| Prepend>;FallbackAction = <\| Wrap Ignore \| Reject> }|
 |删除Office 365 邮件加密和权限保护|RemoveRMSTemplate|不适用|删除Office 365应用于电子邮件的加密|
 |
