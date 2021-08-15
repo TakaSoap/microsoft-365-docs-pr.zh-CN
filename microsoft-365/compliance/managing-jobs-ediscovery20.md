@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 高级 eDiscovery 作业帮助跟踪与执行各种高级 eDiscovery 任务相关的长期运行进程状态。
-ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 09b114ad39f2bbc7868a5ea6bf2871e0f3cba4a386d359316518bbf1bbe886a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871789"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>管理高级 eDiscovery 中的作业
 

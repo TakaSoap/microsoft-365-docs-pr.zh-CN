@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何滚动存储在 Azure Key Vault 中与客户密钥一同使用的客户根密钥。 服务包括Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Teams 文件。
-ms.openlocfilehash: 892d77959bec1fb33b0ea6bcfaa8c530dd9b8911
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: c74465dd9ab5d05374f11169d6c60d60b85372710f44dca1d7c164f7ca339136
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871895"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>滚动或旋转客户密钥或可用性密钥
 

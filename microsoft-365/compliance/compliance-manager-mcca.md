@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性配置分析器快速启动并运行 Microsoft 合规性管理器。
-ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7d7a711514e471a3d239918eaa576746a43dded02da81f8103f5c6213df20839
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287049"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872053"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>适用于合规性管理器的 Microsoft 合规性配置 (预览版) 
 
@@ -111,9 +111,9 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 8  | 韩国 |
   | 9  | 北美 (加拿大)  |
   | 10  | 南美洲 |
-  | 11  | 南非 |
+  | 11 | 南非 |
   | 12  | Switzerland（瑞士） |
-  | 13  | 阿拉伯联合酋长国 |
+  | 13 | 阿拉伯联合酋长国 |
   | 14  | 英国 |
 
 

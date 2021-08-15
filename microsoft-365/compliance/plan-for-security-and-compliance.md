@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页提供了安全与合规中心中的链接和Office 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 03e722baa51f0e91b59bc61f30ce004ff38ed9a051a110d7e11ba49a9efb25dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871701"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 

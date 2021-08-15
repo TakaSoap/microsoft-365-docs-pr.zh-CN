@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cbe29e5323047e887aa64823c9011a0f77c498a8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 057c8dd125fb993a607ef5a5362886ab7434f4bc4c0271385603e472edbd8812
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862271"
 ---
 # <a name="contact-support-for-burkina-faso"></a>联系针对百里达的支持人员
 

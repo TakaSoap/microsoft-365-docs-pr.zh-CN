@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 219689783dbd98c1b6dfa09a2164cc4d350ffd9c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: a3895b2d3e5ee435f0aeb1bb9b2becf23b6da71ecd387bbbc06fac3f1941a8d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838797"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender for Office 365 in Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ ms.locfileid: "53029629"
 |记录管理||请参阅[Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)||
 |信息治理||请参阅[Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)||
 |威胁管理|[电子邮件&协作](https://security.microsoft.com/homepage)|||
-|权限|[角色&权限](https://security.microsoft.com/emailandcollabpermissions)|请参阅[Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)||
+|Permissions|[角色&权限](https://security.microsoft.com/emailandcollabpermissions)|请参阅[Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)||
 |邮件流|||请参阅[Exchange管理中心](https://admin.exchange.microsoft.com/#/)|
 |数据隐私||请参阅[Microsoft 365 合规中心](https://compliance.microsoft.com/homepage)||
 |搜索|[审核](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|搜索 (内容搜索) ||
@@ -143,7 +143,7 @@ Defender for Office 365保护你的组织免受电子邮件、链接和 URL (和
 
 ****
 
-|领域|更改说明|
+|区域|更改说明|
 |---|---|
 |[调查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|将 [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) 和 [Defender for Endpoint](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。|
 |[警报队列](../../compliance/alert-policies.md)|安全 **与合规中心** 中的"查看警报"&现在包含指向警报Microsoft 365 Defender。 单击"打开 **通知页**"链接，Microsoft 365 Defender打开。 可以通过单击警报 **中** Office 365 警报来访问通知页面。|

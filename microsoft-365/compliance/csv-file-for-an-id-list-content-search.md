@@ -18,12 +18,12 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: 使用现有内容搜索中的 CSV 文件创建返回特定电子邮件项目的 ID 列表搜索。
-ms.openlocfilehash: 37a398d0896fcfd7b7282bda1f6a549ed9f53601
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: db22ac702e71004d73728350acf4242c9a5ac25d59749584dc8a7948ff2d1065
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871941"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>准备用于 ID 列表内容搜索的 CSV 文件
 
@@ -33,7 +33,7 @@ ms.locfileid: "52311530"
 
 以下是创建 ID 列表搜索的过程的快速概述。
 
-1. 在合规性中心创建并运行Microsoft 365搜索。
+1. 在搜索中新建并运行Microsoft 365 合规中心。
 
 2. 导出内容搜索结果或内容搜索报告。 有关详细信息，请参阅：
 
@@ -59,7 +59,7 @@ ms.locfileid: "52311530"
 2. 在 **"所选****"列中，** 在对应于要搜索的项目的单元格中键入"是"。 对要搜索的每个项目重复此步骤。
 
     > [!IMPORTANT]
-    > 当您在"文档 ID"Excel中打开 CSV 文件时，"文档 **ID"** 列的数据格式可能已更改为 **"常规"。** 这导致以科学表示法显示项目的文档 ID。 例如，文档 ID"481037338205"显示为"4.81037E+11"。 如果发生这种情况，您必须执行以下步骤以将"文档 **ID"** 列的数据格式更改为 **"** 数字"，以还原文档 ID 的正确格式。 如果不这样做，则使用 CSV 文件的 ID 列表搜索将失败。
+    > 当您在"文档 ID"Excel中打开 CSV 文件时，"文档 **ID"** 列的数据格式可能已更改为 **"常规"。** 这导致以科学表示法显示项目的文档 ID。 例如，"481037338205"的文档 ID 显示为"4.81037E+11"。 如果发生这种情况，您必须执行以下步骤以将"文档 **ID"** 列的数据格式更改为 **"** 数字"，以还原文档 ID 的正确格式。 如果不这样做，则使用 CSV 文件的 ID 列表搜索将失败。
 
 3. 右键单击整个"**文档 ID"** 列，然后选择"**设置单元格格式"。**
 

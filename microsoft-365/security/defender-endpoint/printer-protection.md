@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4a91bece49c4e1e12e8f0a2d9d2d6f6cf0e2681a
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 738a5ae02cba8078b583b138b4e9dfa8733433f07feb69bce96b663a068aaa4e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853800"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ****
 
-|Title|说明|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
+|标题|说明|云解决方案提供商支持 | GPO 支持 | 基于用户的支持 | 基于计算机的支持 |
 |---|---|:---:|:---:|:---:|:---:|
 |**启用设备控制打印限制**|阻止用户通过非公司打印机打印|是|是|是|是|
 |**已批准的 USB 连接打印设备列表**\*|允许特定 USB 打印机|是|是|是|是|

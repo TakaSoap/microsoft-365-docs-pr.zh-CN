@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解Exchange Online和Microsoft 365如何使用传输层安全性 (TLS) 和向前保密 (FS) 保护电子邮件通信。 此外，还获取有关 Microsoft 颁发的证书的信息，Exchange Online。
-ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ff2b7bf948e9ceead83b3d871073eb9be9c52d6a3898437212f717ff5cd4493e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895267"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online 如何使用 TLS 保护电子邮件连接
 
