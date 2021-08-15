@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 2ec4cd8b3730c93a6de30e59087beaff788992dd
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 8334433cd166b01ba297f79b6a142248eacffe4021bae14edafeae6803d93fc2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878794"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -273,7 +273,7 @@ Skype for Business Online 生成用户名/密码，可用于通过 _围绕 NAT �
 - **Pulse Secure**：[VPN 隧道：如何配置拆分隧道以排除 Office365 应用程序](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 - **检查点** [VPN：如何为 Tunnel 和其他 SaaS Office 365配置拆分服务器](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)人员在今天独特的远程工作场景中实现新式安全控制的替代方法（博客文章，概述了安全专业人员和 IT 人员在当今独特的远程工作场景中实现新式安全控制的关键方法）。 此外，下面是有关此主题的一些常见客户问题和解答。
 

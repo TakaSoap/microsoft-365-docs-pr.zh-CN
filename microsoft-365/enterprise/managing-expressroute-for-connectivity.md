@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: 了解如何管理 ExpressRoute for Office 365，包括配置前缀筛选、安全性和合规性等常见区域。
-ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb6f2a4f0c6c8d2d00fc8f8dcf05e33399f4f8a1695f03402a53d07cf329dc5c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878777"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>管理 ExpressRoute for Office 365 的连接性
 
@@ -57,7 +57,7 @@ Microsoft 建议客户接受 Microsoft 播发的所有 BGP 路由，提供的路
   
 无论你如何管理来自 Microsoft 的 BGP 路由广告，与单独通过 Internet 线路连接到 Office 365 相比，你将不会获得对 Office 365 服务的任何特殊曝光。 无论客户用于连接到客户端的电路类型如何，Microsoft 都会保持相同的安全、合规性和性能Office 365。
   
-### <a name="security"></a>安全性
+### <a name="security"></a>安全团队
 
 Microsoft 建议你维护自己的网络和安全外围控件，用于与 ExpressRoute 公共对等和 Microsoft 对等连接（包括与 Office 365 连接）。 对于从网络出站到 Microsoft 网络以及从 Microsoft 网络到网络的入站网络请求，应实施安全控制。
   

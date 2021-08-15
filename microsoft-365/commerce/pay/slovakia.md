@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 464a0af3441b2d9511093467a66352bba8521ee6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f83fa4a99e021a9055b5eea7c7ca3ce707629baa52804faf4325e9fe82b86429
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866735"
 ---
 # <a name="payment-information-for-slovakia"></a>斯洛伐克的付款信息
 
@@ -31,6 +31,6 @@ ms.locfileid: "52535154"
 **Bank：** 年，伦敦  
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
-**SORT 代码** ：185008  
-**帐号** ：12207591  
+**SORT 代码：185008**  
+**帐户号：12207591**  
 **帐户名称：** MICROSOFT
