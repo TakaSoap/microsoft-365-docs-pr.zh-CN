@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 423affe20b070afd6f3a9f5938cb8c66c638522a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a44671636e9900ce26b4931853343c26eba2a4fa95fd8399c0e68f2069aa1cce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900335"
 ---
 # <a name="payment-information-for-montenegro"></a>阿尔巴尼亚的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
-**帐号** ：12510049  
+**帐户号：12510049**  
 **帐户名称：** MICROSOFT

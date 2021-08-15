@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e502c63cb30de23b190a0d6844c9e87d6720d707
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 468abdd5db01cdf5450bfb8efefae0e93852da8be867ebdbc7345587a89779d8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858057"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint
 
@@ -62,7 +62,7 @@ ms.locfileid: "53656999"
    - **Publisher** Microsoft。
    - **作为 Defender** for https://play.google.com/store/apps/details?id=com.microsoft.scmx Endpoint (的应用商店 URL Google Play 应用商店 URL) 
 
-   其他字段是可选的。 选择“**下一步**”。
+   其他字段是可选的。 选择 **下一步**。
 
    ![管理中心Microsoft Endpoint Manager应用信息的图像](images/mda-addappinfo.png)
 

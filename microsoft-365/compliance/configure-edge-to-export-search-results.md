@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必须启用ClickOnce支持，才能使用最新版本的 Microsoft Edge 从安全与合规中心的内容搜索和电子数据展示下载搜索结果。
-ms.openlocfilehash: 60f42d2884c56aaff40bc0a6a979e99698a3cd2e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ec241d36bc24d72e4c0ea3e30e622e42eb9546bfb4b548220e98a0d9ea1c0334
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830886"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>使用电子数据展示导出工具Microsoft Edge
 

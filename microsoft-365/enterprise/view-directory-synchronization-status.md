@@ -21,12 +21,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 本文将了解如何在 Office 365 中检查目录同步的状态。
-ms.openlocfilehash: cbaae8bbd31f6124c2b0f4984b9a625ffbde538f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 766e3ef112ac9493863df0aa6c9958e89ec93c0e2e0c9e307e7371b536f3cb01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840751"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>查看目录中的目录Microsoft 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "50924656"
   
 ## <a name="view-directory-synchronization-status"></a>查看目录同步状态
 
-- 登录到管理中心 [Microsoft 365](https://admin.microsoft.com)主页上的 **"DirSync** 状态"。
+- 登录到 [网站Microsoft 365 管理中心在](https://admin.microsoft.com)主页上选择 **"DirSync** 状态"。
 - 或者，你可以转到"用户 **""** 活动用户"，在"活动用户"页面上， \> 选择"**更多** \> **目录同步"。** 在"**目录同步"窗格中**，选择 **"转到目录同步管理"。**
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>"管理目录同步"页上的信息
@@ -43,7 +43,7 @@ ms.locfileid: "50924656"
   
 如果您的目录同步出现问题，则此页上也列出了这些错误。 有关可能遇到的不同错误的详细信息，请参阅在 Microsoft 365[中标识目录同步Microsoft 365。](identify-directory-synchronization-errors.md)
   
-|项目|它有何用途？|
+|Item|它有何用途？|
 |:-----|:-----|
 |**已验证域** | 已验证你拥有Microsoft 365租户中的域数。 |
 |**未验证域** | 已添加但未经验证的域。 |

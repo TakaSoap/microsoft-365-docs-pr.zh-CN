@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络路由
-ms.openlocfilehash: 5275f8ea55afaf621555b440e7fae4a6d11cad91
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 1a03a832e3c4121f948af0d6e7bc2ff37d2a2b925c7f7d69bac2773bed5abbfe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857987"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365网络路由 (预览) 
 
@@ -41,7 +41,7 @@ ms.locfileid: "50717596"
 >[!NOTE]
 >Microsoft 365网络路由支持 WW 商业云中的租户，但GCC中等、GCC高、DoD、德国或中国云。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 ### <a name="integrated-sd-wan-solutions"></a>集成 SD-WAN 解决方案
 
@@ -63,9 +63,9 @@ Microsoft 正在与各种合作伙伴合作，以便能够与Microsoft 365网络
 
 ## <a name="enabling-informed-network-routing"></a>启用智能网络路由
 
-启用智能网络路由需要多个步骤，其中一些步骤需要在 SD-WAN 解决方案的配置接口内执行。 有关如何启动在 SD-WAN 解决方案中启用网络通知路由的过程的指导，请咨询您的 SD-WAN 解决方案供应商，然后再在 Microsoft 365 管理中心进行配置。
+启用智能网络路由需要多个步骤，其中一些步骤需要在 SD-WAN 解决方案的配置接口内执行。 有关如何启动在 SD-WAN 解决方案中启用网络通知路由的过程的指导，请咨询您的 SD-WAN 解决方案供应商，然后再继续 Microsoft 365 管理中心。
 
-准备好在管理中心启用通知Microsoft 365后，请确保你拥有必要的全局管理员权限。
+准备好在站点中启用通知网络路由Microsoft 365 管理中心，请确保拥有必要的全局管理员权限。
 
 >[!IMPORTANT]
 >为了向选定的 SD-WAN 解决方案提供必要的租户级应用程序权限许可，以访问通知的网络路由数据共享通道，必须以全局管理员角色执行以下步骤。
@@ -73,9 +73,9 @@ Microsoft 正在与各种合作伙伴合作，以便能够与Microsoft 365网络
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>步骤 1：打开 SD-WAN 解决方案配置选项
 
-在Microsoft 365 [中心，](https://admin.microsoft.com/)在左侧导航 **窗格中>"** 运行状况""网络连接"。
+In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， select **Health > Network connectivity** in the left-left navigation pane.
 
-管理中心的这一部分为组织提供了聚合的网络连接指标，并指导如何提高连接性。 有关[管理中心内提供的](office-365-network-mac-perf-overview.md)这些功能) ，请参阅 Microsoft 365 管理中心 (预览版中的网络连接。
+管理中心的这一部分为组织提供了聚合的网络连接指标，并指导如何提高连接性。 有关[管理中心内提供的这些功能Microsoft 365 管理， (预览](office-365-network-mac-perf-overview.md)) 中的网络连接。
 
 选择 **设置 > SD-WAN 解决方案"** 以打开通知网络路由配置窗格。 "管理中心"下设置选项适用于管理中心中的一般网络连接指南，不需要这些选项来启用明智的网络路由。
 
@@ -85,13 +85,13 @@ Microsoft 正在与各种合作伙伴合作，以便能够与Microsoft 365网络
 
 在下拉框中，选择已部署的 SD-WAN 解决方案以及要存储与网络通知路由关联的数据的位置。 有关 [其他信息，](#data-storage) 请参阅数据存储部分。
 
-选择“**下一步**”。
+选择 **下一步**。
 
 ### <a name="step-3-accept-terms-for-sharing-of-data"></a>步骤 3：接受数据共享条款
 
 仔细阅读并确认提供的与在 Microsoft 和所选 SD-WAN 解决方案之间共享数据相关的条款，然后选中指示的复选框。
 
-选择“**下一步**”。
+选择 **下一步**。
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>步骤 4：向 SD-WAN 解决方案授予权限
 
@@ -113,7 +113,7 @@ Microsoft 正在与各种合作伙伴合作，以便能够与Microsoft 365网络
 
 您将对 SD-WAN 解决方案中的明智网络路由执行大部分配置，例如配置在正常情况下应该如何路由流量，以及检测到问题时应该使用的备用路径。 有关这些配置步骤的详细信息，请咨询您的 SD-WAN 解决方案提供商。
 
-必须在管理中心内配置每个Microsoft 365，以便通知网络路由可以正确识别与提供这些位置连接的网络电路相关的流量。
+每个办公室位置都必须在服务器配置Microsoft 365 管理中心以便通知网络路由可以正确识别与提供这些位置连接的网络电路相关的流量。
 
 Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合的一部分。 因此，某些位置可能会预先填充在租户的管理中心中。 
 
@@ -136,7 +136,7 @@ Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合
 
 2. 在此 **位置Microsoft 365使用已通知网络路由**。
 
-3. 在此办公室位置的"出口 IP 地址范围"部分添加所有提供 Internet 连接到此 **办公室位置** 的网络电路。 确保每个电路与代表网络流量的唯一公用 IP 地址子网关联。
+3. 将提供 Internet 连接的所有网络电路添加到此办公地点部分Egress **IP 地址范围** 中。 确保每个电路与代表网络流量的唯一公用 IP 地址子网关联。
 
 4. 选择 **保存** 以保存所做的更改。
 
@@ -146,7 +146,7 @@ Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>步骤 1：打开 SD-WAN 解决方案配置选项
 
-在Microsoft 365 [管理中心，](https://admin.microsoft.com/)**选择左侧**>窗格中的"运行状况""网络连接"。
+In the [Microsoft 365 管理中心](https://admin.microsoft.com/)select **Health > Network connectivity** in the left-left navigation pane.
 
 选择 **设置 > SD-WAN 解决方案"** 以打开通知网络路由配置窗格。
 
@@ -169,6 +169,6 @@ Office位置可能会自动检测为 Microsoft 正在进行的网络遥测集合
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365管理中心中的网络连接 (预览) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理中心 (预览) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365网络连接位置服务 (预览) ](office-365-network-mac-location-services.md)
