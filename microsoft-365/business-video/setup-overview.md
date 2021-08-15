@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解设置项目所需的Microsoft 365 商业高级版。
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9a88b5269b4c3c4b566f50baf535a5896e9ad2bdde148eb82323b31dcdb64420
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831572"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>设置Microsoft 365 商业高级版概述
 
@@ -55,7 +55,7 @@ ms.locfileid: "51580398"
 
 - 如果你[Office 365 商业协作版](https://www.microsoft.com/en-us/p/office-365-business-essentials/cfq7ttc0k59v?rtc=1&amp;activetab=pivot:overviewtab)在线应用， (Web 浏览器访问的应用，) 、文档创建、协作和云存储。 这包括 Word Online、Excel Online、PowerPoint Online 和 SharePoint Online。
 - 如果你想要[Office 365 商业高级版](https://products.office.com/en-us/business/office-365-business-premium)直接在电脑和 Mac 上运行的 Office 应用（如 Word、Excel 和 Teams 应用）的功能丰富的版本，请选择"设置"。 这是联机应用之外。
-- 如果你[Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business?rtc=1)所有应用，以及云安全和设备Office，请选择"设置"。 这包括抵御病毒、恶意软件、勒索软件等，以及设备管理和加密。 此外，还可从早期版本Windows 10 专业版免费Windows Professional升级。
+- 如果你想要[Microsoft 365](https://www.microsoft.com/microsoft-365/business?rtc=1)应用以及云安全和设备管理，Office商业版。 这包括抵御病毒、恶意软件、勒索软件等，以及设备管理和加密。 此外，还可从早期版本Windows 10 专业版免费Windows Professional升级。
 - 如果你的业务规模较大或需要更复杂的 IT 应用和服务，请了解我们的Microsoft 365 企业版[计划](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 
@@ -79,7 +79,7 @@ ms.locfileid: "51580398"
 
 ## <a name="5-manage-and-secure-your-devices"></a>5. 管理和保护设备
 
-- 借助Microsoft 365 商业高级版，你可以在你的设备上获得保护、抵御联机威胁和防止意外数据丢失。 此外，还可Windows Defender、BitLocker和自动更新Windows 10 专业版Office应用。
+- 借助Microsoft 365 商业高级版，你可以在你的设备上获得保护、抵御联机威胁和防止意外数据丢失。 你还可Windows Defender应用和应用的 Windows 10 专业版、BitLocker Office自动更新。
 - 你可以设置多重身份验证 (MFA) 、电子邮件加密、恶意软件保护和勒索软件保护，以防止对设备和数据进行未经授权的访问。
 - 你可以保护存储在电脑、SharePoint OneDrive for Business或移动设备上的有价值的工作数据。 内置的移动设备管理 (MDM) for Microsoft 365 可帮助你保护和管理&#39; 移动设备（如 iPhone、iPad、Android 和 Windows 手机）的用户。 使用 MDM，你可以创建并管理设备安全策略、远程擦除设备，以及查看详细的设备报告。
 

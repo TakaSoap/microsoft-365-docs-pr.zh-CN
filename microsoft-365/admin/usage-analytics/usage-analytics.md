@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 9e1518d85a583af100ea2734fdc1f526599e55b82882733c4516c7f88dcc2451
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887897"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
@@ -60,7 +60,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 - **通信** &ndash;你可以一目了然地查看组织成员是否喜欢使用 Teams、Yammer、电子邮件或Skype保持联系。 你可以观察员工之间的通信工具使用模式是否变化。 
 
-- **协作** &ndash;了解组织中人员如何使用 OneDrive 和 SharePoint 来存储文档和相互协作，以及这些趋势如何逐渐变化。 还可以查看在内部或外部共享的文档数，以及所有者和其他协作者SharePoint使用的 SharePoint 或 OneDrive 帐户数。
+- **协作** &ndash;了解组织中人员如何使用 OneDrive 和 SharePoint 来存储文档和相互协作，以及这些趋势如何逐渐变化。 还可以查看在内部或外部共享文档的用户数，以及使用 SharePoint 或 OneDrive 帐户的用户数（按所有者和其他协作者细分）。
 
 - **存储** &ndash;使用此报告可跟踪邮箱、OneDrive和SharePoint存储。
 
@@ -80,9 +80,9 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ## <a name="user-activity"></a>用户活动
 
-用户活动报告可用于某些单个服务。 这些报告提供与 Active Directory 属性联接的用户级别详细使用情况数据。 此外，通过部门采用报告，你可以按 Active Directory 属性进行切片，以便你可以查看所有单个服务中的活动用户。 所有指标将聚合到最新完整月份。
+用户活动报告可用于某些单个服务。 这些报告提供与 Active Directory 属性联接的用户级别详细使用情况数据。 此外，通过部门采用报告，你可以按 Active Directory 属性进行切片，以便你可以查看所有单个服务中的活动用户。 所有指标将聚合到最新完整月份。 若要查看内容日期，请导航到表页并选择 UserActivity 表，其中 TimeFrame 下的值提供报告时间段。 
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>此模板应用是通过购买提供还是免费？
 
@@ -119,7 +119,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可能与一组人员一起处理和自定义同一模板应用？
 
-是。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板[和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+能。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板[和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可以使用哪些时间范围的数据？
 

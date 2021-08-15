@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 本文包含一些链接，这些链接指向有关网络规划、测试和迁移到 Office 365。
-ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 0467b60315f879141a344e620f218de8fd7ed8e0c368f26d7a5dd50a85a2bc84
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149102"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898943"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 

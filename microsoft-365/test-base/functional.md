@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 7b5cb907756ec0fb746d303b3ab629e912bf9c96
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 989ec90af003d3b0a488e4ab32afa70e5640dd93cbfab4195d6b048105b80e80
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888115"
 ---
 # <a name="functional-testing"></a>功能测试
 
@@ -76,7 +76,7 @@ To get started， navigate to the Upload page， select Upload new application u
 验证过程最多可能需要 24 小时。 验证完成后，您可以在菜单中看到状态 ```Manage packages``` ，该状态可以是两个条目之一：
 
 1. 验证成功：程序包将自动针对所选操作系统Windows预发布更新进行测试。
-或
+或者
 2. 验证失败：你将需要调查失败的原因、修复问题，然后重新上传你的程序包。
 
 你还将通过 Azure 门户中的通知图标收到任一结果的通知。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 云服务路线图
+title: 云解决方案云服务Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -12,26 +12,26 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: 设置 Microsoft 365 云服务的路线图。
-ms.openlocfilehash: 3303d91b5ec72090c69ae0b1fb14434e03c83729
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 设置云服务的路线图Microsoft 365。
+ms.openlocfilehash: b4de1f40ff845f59903708da927eeb29cec5391527dfcb31cf952d221a1beb19
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53850227"
 ---
-# <a name="cloud-services-roadmap-for-microsoft-365"></a>Microsoft 365 云服务路线图
+# <a name="cloud-services-roadmap-for-microsoft-365"></a>云解决方案云服务Microsoft 365
 
-若要从 Microsoft 365 企业版获得创造力、团队合作和生产力优势，请部署最符合组织需求的云服务。
+若要获得企业版组织的创造力、团队合作Microsoft 365优势，请部署最符合组织需求的云服务。
 
-如果你有 Exchange、SharePoint 或 Skype for Business 的现有基于服务器的部署，并且想要将整个组织迁移到 Microsoft 365 企业版，请参阅客户端 [和服务器软件路线图](client-server-software-roadmap-microsoft-365.md)。 此路线图Microsoft Office客户端产品、本地 Office Server 产品和基于 Microsoft Windows &ndash; 的设备。
+如果您具有适用于 Exchange、SharePoint 或 Skype for Business 的现有基于服务器的部署，并且想要将整个组织迁移到 Microsoft 365 for enterprise，请参阅客户端和[服务器软件路线图](client-server-software-roadmap-microsoft-365.md)。 此路线图包括Microsoft Office客户端产品、本地 Office Server 产品和基于 Microsoft Windows &ndash; 的设备。
 
 ## <a name="deploy"></a>部署
 
 部署云服务：
 
 - [准备好服务](configure-services-and-applications.md)
-- [将本地数据迁移到 Microsoft 365](migrate-data-to-office-365.md)
+- [将本地数据迁移到Microsoft 365](migrate-data-to-office-365.md)
 - 为用户设置云服务
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](/sharepoint/sharepoint-online)
@@ -54,14 +54,14 @@ ms.locfileid: "52300021"
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [对云服务执行性能调整](tune-microsoft-365-performance.md)
 
-## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Microsoft 如何为 Microsoft 365 提供云服务
+## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Microsoft 如何为客户Microsoft 365
 
-有关 Microsoft IT 如何部署或管理 Microsoft 365 云服务的信息：
+有关 Microsoft IT 如何部署或管理云服务Microsoft 365的信息：
 
 1. 转到 [Microsoft IT 展示](https://www.microsoft.com/itshowcase)。
 2. 选择 **"搜索内容"。**
-3. 在 **"优化结果"** 下 **，选择"** 受众"下的 **"IT 专业人员**"，**然后在"产品**"下选择云服务。
+3. 在 **"优化结果"** 下，选择 **Pro访问群体**"下的 **"IT** 服务"，然后在"产品"下选择云服务。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
-启动云服务实施。 有关指南，请参阅 [配置 Microsoft 365 企业版服务和应用程序](configure-services-and-applications.md)。
+启动云服务实施。 有关指南，请参阅[配置Microsoft 365 企业版服务和应用程序](configure-services-and-applications.md)。

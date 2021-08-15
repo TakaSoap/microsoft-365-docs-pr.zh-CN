@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 发现你用于购买Microsoft 365 商业高级版和从 Microsoft 合作伙伴中心购买它的分步说明。
-ms.openlocfilehash: 9e88229f22bdfbfc0b363b5bf56ed2def4db9b8c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3e75e1e31789882ef41abf4b30c7af3886bb4821fe5c288ceda5af684ea8f854
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831503"
 ---
 # <a name="get-microsoft-365-business-premium"></a>获取 Microsoft 365 商业高级版
 

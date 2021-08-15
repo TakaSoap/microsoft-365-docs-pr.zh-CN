@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务前工作。
-ms.openlocfilehash: 77e3dbd3f819aea15632a0ba069249a44a8663fb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 8d2f33f7bd574610980e64c4da769f3418042bc302c1a5d33d081ceeeebfd4a9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899003"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移前活动
 
@@ -278,7 +278,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 

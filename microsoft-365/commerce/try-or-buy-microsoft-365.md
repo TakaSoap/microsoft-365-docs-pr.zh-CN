@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: GEA150
 description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 794b278be829a30bbea4833253ef45d75f1f1048add2ce493b2b65c1093b5de4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861323"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 

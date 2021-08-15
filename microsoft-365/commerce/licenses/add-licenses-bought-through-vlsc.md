@@ -18,18 +18,18 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: 了解如何将许可证添加到通过 Microsoft 识别的第三方合作伙伴购买的 Microsoft 365 订阅。
+description: 了解如何向通过第三方Microsoft 365购买、由 Microsoft 识别的订阅添加许可证。
 ms.date: 04/07/2021
-ms.openlocfilehash: 0e2a3779ae7d93eaaea660209bbc86a6843b553c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 88118f77d4ffa024b4553cf4dec384a287341dfd785ed543fb5d37dd193235fe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831419"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>向通过批量许可服务中心购买的订阅添加许可证
 
-如果通过第三方合作伙伴购买了 Microsoft 365 商业版或 Office 365 企业版计划，则必须通过该合作伙伴购买其他许可证。 如果从 Microsoft 已知的合作伙伴那里购买订阅，您可以通过以下步骤找到该合作伙伴的联系方式。
+如果你通过第三Microsoft 365购买了Office 365 企业版商业版或商业版计划，则必须通过该合作伙伴购买其他许可证。 如果从 Microsoft 已知的合作伙伴那里购买订阅，您可以通过以下步骤找到该合作伙伴的联系方式。
   
 ::: moniker range="o365-worldwide"
 

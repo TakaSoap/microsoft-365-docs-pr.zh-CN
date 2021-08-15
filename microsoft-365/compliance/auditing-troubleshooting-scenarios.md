@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Microsoft 365 审核日志 搜索工具帮助解决电子邮件帐户的常见支持问题。
-ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 2a758114f361f3d13f0393780ef9b1e149fd421960bee627e3fb4ff41d100859
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906301"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜索审核日志调查常见支持问题
 
@@ -43,7 +43,7 @@ ms.locfileid: "53341042"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用搜索工具审核日志所需的权限
 
-必须分配有"审核View-Only"或"审核日志"角色Exchange Online搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为组织中组织管理角色Exchange Online。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
+必须分配有"审核View-Only"或"审核日志"角色Exchange Online搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
 
 ### <a name="running-audit-log-searches"></a>运行审核日志搜索
 

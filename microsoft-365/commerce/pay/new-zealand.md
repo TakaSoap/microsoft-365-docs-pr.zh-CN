@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 21711c1e992ef5c6cee0ead839f35327f90a04fe855213913b29283637cb273c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906455"
 ---
 # <a name="payment-information-for-new-zealand"></a>新西兰的付款信息
 
@@ -36,13 +36,13 @@ ms.locfileid: "52535334"
 **SWIFT 代码：** NZNZ2X  
 **后缀 (3 位) ：004**  
 **后缀 (2 位) ：04**  
-**帐号** ：0026181  
+**帐户编号：0026181**  
 **帐户名称：** MICROSOFT
 
 如果你有一张发票，由 **Microsoft New Zealand Limited** 针对从 2021 年 3 月 1 日开始的订单和消耗计费，请使用此银行信息：
 
 **Bank：** Bank， N.A. 新西兰分支  
 **SWIFT 代码：** CTINZ2X  
- BSB：312825  
-**帐号** ：0008655083  
+**BSB：312825**  
+**帐户编号：0008655083**  
 **帐户名称：** MICROSOFT

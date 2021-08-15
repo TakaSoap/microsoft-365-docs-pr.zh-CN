@@ -17,18 +17,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 了解如何在管理中心激活和管理第三Microsoft 365应用。
+description: 了解如何在应用中激活和管理第三方Microsoft 365 管理中心。
 ms.date: 04/15/2021
-ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831431"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理组织的第三方应用订阅
 
-可以在新的管理中心管理第三方应用的许可证Microsoft 365计费。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
+可以在新应用中管理第三方应用的许可证和Microsoft 365 管理中心。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何获取软件型服务应用
 
@@ -38,7 +38,7 @@ ms.locfileid: "52866603"
 - **合作伙伴购买** – 通过合作伙伴中心与合作伙伴合作购买订阅。
 - **Microsoft 建议** – 响应来自 Microsoft 销售部门（包括第三方应用）的建议。
 
-客户购买应用并接受 Microsoft 客户协议后，可以在管理中心Microsoft 365或适用于企业的 Microsoft Store。
+客户购买应用并接受 Microsoft 客户协议后，就可以在 Microsoft 365 管理中心 或 适用于企业的 Microsoft Store。
 
 应用提供商通过统一费率或为用户购买许可证来销售他们的应用。
 
@@ -74,7 +74,7 @@ ms.locfileid: "52866603"
 
 ## <a name="manage-third-party-apps"></a>管理第三方应用
 
-管理员在两个位置管理第三方应用：Microsoft 365管理中心和第三方应用提供商的门户。
+管理员在两个位置管理第三方应用：Microsoft 365 管理中心和第三方应用提供商的门户。
 
 以下是您可以在每个门户中执行哪些操作。
 

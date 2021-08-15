@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Microsoft Defender Office 365保护敏感数据免受网络钓鱼、恶意软件和其他威胁的侵害。
-ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d5aad66642fc2b509ae40dc1277167deb53de6fbb0593a3dcd766062305fbd6a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831467"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -101,7 +101,7 @@ ms.locfileid: "52924311"
 
 若要创建邮件传输规则，请观看此 [简短视频](../business-video/stop-email-auto-forward.md) 或执行以下步骤：
 
-1. In the Microsoft 365 admin center， select **Admin centers** \> **Exchange**.
+1. In the Microsoft 365 管理中心， select **Admin centers** \> **Exchange**.
 
 2. 在"**邮件流"** 类别中，选择"规则 **"。**
 

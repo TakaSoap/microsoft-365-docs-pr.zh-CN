@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: cd95c4e0eb04b05860ded256066913cf87d67e86
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: ea4ce5d4883f3e3263a8885f1c347cf9f6fb8fb0c1d4062c1c2a843387d9aea3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888043"
 ---
 # <a name="memory-regression-analysis"></a>内存回归分析
 
@@ -74,7 +74,7 @@ M365 测试基础仪表板显示应用程序在新的预发布 Windows 更新中
 
 继续阅读下一篇文章，开始了解智能 CPU 回归分析。
 > [!div class="nextstepaction"]
-> [后续步骤](cpu.md)
+> [下一步](cpu.md)
 
 <!---
 Add button for next page

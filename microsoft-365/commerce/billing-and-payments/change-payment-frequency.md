@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何更改针对你的企业订阅的计费频率。
 ms.date: 04/02/2021
-ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 14eef03bd156987fe3aa485f8276b37849a58b9cc31e14505de712dbc5655349
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394661"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861419"
 ---
 # <a name="change-your-billing-frequency"></a>更改计费频率
 
