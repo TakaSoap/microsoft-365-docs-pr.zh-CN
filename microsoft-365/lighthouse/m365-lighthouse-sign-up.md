@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，了解如何注册 Microsoft 365 Lighthouse。
-ms.openlocfilehash: d53c95ac636af38d458c1259f8d75c1e59f9d775
-ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+ms.openlocfilehash: 60d78f243c757596aa5b3d493d0b79848ebe033a109858e8fd8fbd7ae6bf5f9c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53587917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53877787"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>注册Microsoft 365 Lighthouse
 

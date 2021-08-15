@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: 使用邮箱中的非活动邮箱功能保留已删除邮箱Microsoft 365。
-ms.openlocfilehash: acd00fedcf0949b7d0c9f85c17039105e9b34821
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 7e0fa04d82a52bf41d763255239421eed8e47700b88756140bda81505c4d08f4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866417"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>创建和管理非活动邮箱
 
@@ -36,7 +36,7 @@ Microsoft 365，您可以保留已删除邮箱的内容。 此功能称为“非
   
 ## <a name="preparations-before-creating-an-inactive-mailbox"></a>创建非活动邮箱之前的准备
 
-- 若要使邮箱变为非活动状态，必须为其分配 Exchange Online 计划 2 许可证，以便可以在删除邮箱之前将诉讼保留或保留策略应用于邮箱。 Exchange Online计划 2 许可证是 E3 Office 365 企业版 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划 1 或 Exchange Online Kiosk 许可证 (分别属于 Office 365 E1 和 F1 订阅的) ，您必须为其分配单独的 Exchange Online Archiving 许可证，以便保留可以在删除邮箱之前应用于邮箱。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
+- 若要使邮箱变为非活动状态，必须为其分配 Exchange Online 计划 2 许可证，以便可以在删除邮箱之前将诉讼保留或保留策略应用于邮箱。 Exchange Online计划 2 许可证是 E3 Office 365 企业版 E5 订阅的一部分。 如果为邮箱分配了 Exchange Online 计划 1 或 Exchange Online Kiosk 许可证 (分别属于 Office 365 E1 和 F1 订阅的) ，则你必须为其分配单独的 Exchange Online Archiving 许可证，以便保留可以在删除邮箱之前应用于邮箱。 有关详细信息，请参阅 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)。
 
 - 删除相应的用户帐户后Exchange Online已删除邮箱关联的许可证将可用。 然后， [可以将这些许可证分配给其他用户](../admin/manage/assign-licenses-to-users.md)。
 
@@ -65,7 +65,7 @@ Microsoft 365，您可以保留已删除邮箱的内容。 此功能称为“非
   
 ### <a name="step-2-delete-the-mailbox"></a>步骤 2：删除邮箱
 
-将邮箱置于保留状态或应用保留策略后，下一步是删除邮箱。 删除邮箱的最佳方法就是删除管理中心内Microsoft 365用户帐户。 有关删除用户帐户的信息，请参阅 [从组织中删除用户](../admin/add-users/delete-a-user.md)。
+将邮箱置于保留状态或应用保留策略后，下一步是删除邮箱。 删除邮箱的最佳方法就是删除邮箱中的相应Microsoft 365 管理中心。 有关删除用户帐户的信息，请参阅 [从组织中删除用户](../admin/add-users/delete-a-user.md)。
   
 > [!NOTE]
 > 您还可以使用 PowerShell 中的 **Remove-Mailbox** cmdlet 删除Exchange Online邮箱。 有关详细信息，请参阅删除[或还原用户邮箱Exchange Online。](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
@@ -74,9 +74,9 @@ Microsoft 365，您可以保留已删除邮箱的内容。 此功能称为“非
 
 若要查看组织中非活动邮箱的列表，请进行以下选择：
 
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com> ，然后使用组织中全局管理员或合规性管理员帐户的凭据登录。
 
-2. 在合规性中心的左侧导航窗格中，Microsoft 365全部显示"，然后单击"信息治理>**保留"。**
+2. 在任务窗格的左侧导航窗格中 **Microsoft 365 合规中心"全部** 显示"，然后单击"信息治理>**保留"。**
 
    ![单击"保留"页上的"非活动邮箱"按钮](../media/MCCInactiveMailboxes1.png)
 

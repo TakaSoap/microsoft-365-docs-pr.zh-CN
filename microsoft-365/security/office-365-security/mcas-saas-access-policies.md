@@ -15,17 +15,17 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 0051b138d155ed4bdf41786f4a73439bba22c738ba7d2a73da44341437ba5c0c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838557"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>SaaS Microsoft Cloud App Security的建议策略
 Microsoft Cloud App Security基于 Azure AD 条件访问策略构建，支持使用 SaaS 应用实时监视和控制粒度操作，例如阻止下载、上传、复制和粘贴以及打印。 此功能为具有固有风险的会话添加安全性，例如，当非托管设备或来宾用户访问公司资源时。
 
-Microsoft Cloud App Security与 Microsoft 信息保护本地集成，提供实时内容检查，以根据敏感信息类型和敏感度标签查找敏感数据，并采取适当的措施。
+Microsoft Cloud App Security与 Microsoft 信息保护 集成，提供实时内容检查，以根据敏感信息类型和敏感度标签查找敏感数据，并采取适当的措施。
 
 本指南包括针对以下方案的建议：
 
@@ -50,14 +50,14 @@ Microsoft Cloud App Security与 Microsoft 信息保护本地集成，提供实�
 
 下表列出了必须在 Azure AD 中创建的新条件访问策略。
 
-|保护级别|策略|详细信息|
+|保护级别|Policy|更多信息|
 |---|---|---|
 |所有保护级别|[在应用程序中使用条件访问云应用安全](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|这将配置你的 IdP (Azure AD) 以使用 云应用安全。|
 ||||
 
 下表列出了上面说明的示例策略，你可以创建这些策略来保护所有 SaaS 应用。 请务必评估自己的业务、安全性和合规性目标，然后创建为环境提供最合适的保护的策略。
 
-|保护级别|策略|
+|保护级别|Policy|
 |---|---|
 |基线|监视来自非托管设备的流量 <p> 向从非托管设备下载文件添加保护|
 |敏感|阻止从非托管设备下载标记为敏感或分类的文件 (这将仅提供浏览器) |

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886405"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
@@ -115,4 +115,4 @@ ms.locfileid: "52114004"
 - [了解敏感度标签](sensitivity-labels.md)
 - [了解保留策略和保留标签](retention.md)
 - [了解敏感信息类型](sensitive-information-type-learn-about.md)
-- [了解数据分类。](data-classification-overview.md)
+- [了解数据分类](data-classification-overview.md)

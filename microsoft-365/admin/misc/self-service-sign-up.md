@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解 Microsoft 365自助注册和可用的自助服务计划，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365 for Finance。
 ms.date: 03/17/2021
-ms.openlocfilehash: 7aec03abce468342cfeb23da490b1f950ecd7050
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: e1a11db1e5fe1d6cb35d1583a6a6fc9f7bb73e16d76e98d2c8cb739223d22db3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823803"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在组织中使用自助注册
 

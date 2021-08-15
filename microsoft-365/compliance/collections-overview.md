@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Advanced eDiscovery 中的集合来搜索和收集与案例或调查相关的内容。
-ms.openlocfilehash: e3f383fab31ec39f22bd781fc84644e3eeee57bb
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: e808db2829c8742fe34faa56965bacb79283b14b67a6ffbfccd8c43c88f12bac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866472"
 ---
 # <a name="learn-about-collections-in-advanced-ediscovery"></a>了解 Advanced eDiscovery
 
@@ -38,7 +38,7 @@ Advanced eDiscovery中的集合可帮助电子数据展示管理员快速将搜�
 
 当经理对集合的范围和可能做出响应的估计内容量感到满意时，经理可以将内容添加或提交到审阅集。  将集合提交到审阅集时，该经理还可以选择包括聊天对话、云附件和文档版本。 在将集合中的内容纳入审阅集期间，该集合中的内容也会经历另一个处理级别。 集合将更新为最终集合摘要。 将内容添加到审阅集后，电子数据展示管理员可继续查询、分组和优化中的内容，以帮助实现最小化和审阅。 此外，该集合还更新了提交到审阅集的内容的信息和统计信息。 这将提供有关集合中内容的历史参考。
 
-随着集合在Advanced eDiscovery发布，"搜索"选项卡已重命名为 Advanced eDiscovery 合规中心中Microsoft 365集合。 定义集合的范围和大小的步骤遵循与搜索相同的过程来定义位置和条件。 另存为草稿并获取预览估计值可在将完全搜索和集合提交到审阅集中之前快速验证集合的目标范围。 这样，可以改进作业管理和目标迭代，以便开始在搜索和收集过程中最小化内容。
+随着集合在集合Advanced eDiscovery，"搜索"选项卡已重命名为"集合"，Advanced eDiscovery一种情况Microsoft 365 合规中心。 定义集合的范围和大小的步骤遵循与搜索相同的过程来定义位置和条件。 另存为草稿并获取预览估计值可在将完全搜索和集合提交到审阅集中之前快速验证集合的目标范围。 这样，可以改进作业管理和目标迭代，以便开始在搜索和收集过程中最小化内容。
 
 ## <a name="collections-workflow"></a>集合工作流
 

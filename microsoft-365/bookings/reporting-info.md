@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 了解如何查看 Bookings 活动的 4 个月视图
-ms.openlocfilehash: ad0a21454cfe28cec521e545e587105e8f8a7454
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838197"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings 的报告信息
 
@@ -58,6 +58,6 @@ ms.locfileid: "51887219"
 - **货币**   为企业设置的货币类型。
 - **抄送与会者**   将接收预订电子邮件通知的收件人。 在创建预订时，可以从Teams应用中指定。
 - **已注册与会者计数**   有多少客户预订了组预订服务。
-- **启用文本通知**  客户是否可以接收短信文本相关的通知。
+- **启用文本通知**   客户是否可以接收短信相关通知。
 - **自定义域**   与单个预订相关的所有问题和答案都组合在此字段中。
 - **预订 ID**   这有助于确定相同的组服务预订。

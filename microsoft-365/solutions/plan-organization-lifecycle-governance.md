@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 与协作工具的生命周期管理选项Microsoft 365
-ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d49fb6cfe9f181a7e79c9984aa54deb0cf2f3a8e4008512132c980ce1623ea59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827704"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>规划组和组织的组织和生命周期Microsoft 365和Microsoft Teams
 

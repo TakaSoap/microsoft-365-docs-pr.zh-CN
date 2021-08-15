@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解Power BI组织的用户如何使用此业务分析服务。
-ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: d9e7aa90803dc87aece4246a369f9b4ae83bb7e867fae5790cb82ba615b8385b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53823852"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -40,7 +40,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>用户如何注册 Power BI？
 
-作为管理员，您可以通过 Power BI 网站注册Power BI[应用程序](https://powerbi.microsoft.com/en-us/)。 您还可以通过管理中心上的"购买服务"Microsoft 365注册。 当管理员注册订阅Power BI，他们可以将用户订阅许可证分配给应具有访问权限的用户。
+作为管理员，您可以通过 Power BI 网站注册Power BI[应用程序](https://powerbi.microsoft.com/en-us/)。 您还可以通过"购买服务"页上的"购买服务"Microsoft 365 管理中心。 当管理员注册订阅Power BI，他们可以将用户订阅许可证分配给应具有访问权限的用户。
   
 此外，您的组织中的个人用户可以通过 [Power BI 网站](https://powerbi.microsoft.com/en-us/)注册 Power BI。 当您的组织中的用户注册 Power BI 时，将自动为该用户分配 Power BI 许可证。
   
@@ -99,7 +99,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 ::: moniker-end
 
-4. 选择左上角的应用启动器图标，然后选择“管理”。
+4. 选择左上角的应用启动器图标，然后选择“**管理员**”。
 
     ![突出显示了管理应用的应用启动器](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
@@ -170,19 +170,19 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

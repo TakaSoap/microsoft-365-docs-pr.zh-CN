@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d0d4fe867664d090359b1a9f7ab13d3ad46497ce8673a9d1615a112bfe8d78ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827680"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>可以克服的安全障碍 - 一个架构师的见解
 
@@ -49,7 +49,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 
 接下来，采用零信任体系结构方法。 首先构建一个基于身份的新式安全外围。 设计安全体系结构，在验证每次访问尝试（无论是 On-prem 还是云）之前，都会被视为不受信任的—"从不信任，始终验证"。 此设计方法不仅提高了安全性和工作效率，还允许用户从任何位置使用任意设备类型。 应用程序中包含的复杂云Microsoft 365有助于保护用户的身份，同时根据用户风险级别控制对有价值资源的访问。
 
-有关建议的配置，请参阅 [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)。
+有关建议的配置，请参阅 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="transition-security-controls-to-the-cloud"></a>将安全控件转换到云
 
@@ -75,7 +75,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 
 为了帮助您克服这些障碍，Microsoft 已精心规划多个资源，旨在帮助你采用有条不理的安全策略和实施方法。
 
-|Resource   |详细信息  |
+|资源   |详细信息  |
 |---------|---------|
 |[安全团队为支持在家办公需完成的首要任务](../security/top-security-tasks-for-remote-work.md)      | 如果你发现自己突然支持大多数在家工作的员工，本文可帮助你快速提高安全性。 它包括根据你的许可计划建议执行的主要任务。    |
 |[Microsoft 365Security for Business Decisions Makers](../security/Microsoft-365-security-for-bdm.md)    | 当你有时间来制定更全面的计划时，本文包括跨多个Microsoft 365，按攻击面确定优先级的建议。 它甚至附带了一个电子表格，可用于根据许可和区域 (，如标识、威胁防护和监视) 。  |

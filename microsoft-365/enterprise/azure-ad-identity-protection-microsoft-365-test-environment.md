@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 配置 Azure AD Identity Protection 并分析企业测试Microsoft 365中的当前帐户。
-ms.openlocfilehash: 0cb0acf3faee13676573b04178bd6b4d3d36da4d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7432a7469d759300def98acfed31e328a253b5388cbb459dda8211baab868885
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859067"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365 Azure AD Identity Protection
 

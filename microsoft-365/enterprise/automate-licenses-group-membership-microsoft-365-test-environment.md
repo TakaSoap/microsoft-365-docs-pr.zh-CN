@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在企业测试环境中配置基于组的许可和Microsoft 365组成员身份。
-ms.openlocfilehash: 26840e2884202a0fa9c4bb563f3d7c653482ef87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8835498f0b56eeafbc86f49a0be2df840359afbfdeb5518ca6fe521b64c8c652
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859079"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>针对企业测试环境自动Microsoft 365和组成员身份
 
@@ -51,7 +51,7 @@ ms.locfileid: "50905364"
 
 首先，创建一个名为 Sales 的新组，并添加动态组成员身份规则，以便部门设置为 **Sales** 的用户帐户自动加入销售组。
 
-1. 在 Internet 浏览器的专用实例中，Microsoft 365测试实验室[](https://admin.microsoft.com)订阅的全局管理员帐户Microsoft 365 E5管理中心。
+1. 在 Internet 浏览器的专用实例中，Microsoft 365 管理中心测试实验室[](https://admin.microsoft.com)订阅的全局管理员帐户Microsoft 365 E5登录。
 2. 在浏览器的单独选项卡上，转到 Azure 门户，位于 [https://portal.azure.com](https://portal.azure.com) 。
 3. 在 Azure 门户中，在 **搜索** 框中输入组， **然后选择组**。
 4. 在"**所有组"** 窗格中，选择"**新建组"。**
@@ -75,7 +75,7 @@ ms.locfileid: "50905364"
 接下来，在 User 4 帐户上测试动态组成员身份和自动许可：
 
 1. 从浏览器 **Microsoft Office** 主页"选项卡中，选择"管理员 **"。**
-2. 从 **"Microsoft 365管理中心"选项卡** 中，选择"**活动用户"。**
+2. 从 **"Microsoft 365 管理中心"** 选项卡中，选择"**活动用户"。**
 3. 在" **活动用户"** 页上，选择 **"用户 4"** 帐户。
 4. 在"**用户 4"** 窗格中，为 **"产品许可证****"选择"编辑"。**
 5. 在"**产品许可证"** 窗格中 **，禁用Microsoft 365 E5** 许可证，然后选择"保存 **""关闭**  >  **"。**

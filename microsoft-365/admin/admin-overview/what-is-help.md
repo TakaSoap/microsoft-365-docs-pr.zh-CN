@@ -1,5 +1,5 @@
 ---
-title: 如何在管理中心Microsoft 365帮助
+title: 如何获取帮助Microsoft 365 管理中心
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,19 +20,19 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: 了解使用管理中心获取帮助Microsoft 365方式。
-ms.openlocfilehash: fdf88c59c640798469a00d17d0c23efe5fe1ce2b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解使用工具获取帮助的所有Microsoft 365 管理中心。
+ms.openlocfilehash: 48174626780dcca87e76ec4961c7d9f2c0f6017651129cca1d9fe4d499f51098
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53827130"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
-# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>如何在管理中心Microsoft 365帮助
+# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>如何获取帮助Microsoft 365 管理中心
 
-如果你是管理员，admin.microsoft.com 可以管理[](https://admin.microsoft.com)并充分利用你的 Microsoft 365 订阅。 有时，你可能无法找到正确的任务，在启动任务流之前需要更多上下文，或者只是不确定作为管理员的操作的范围和影响。为了涵盖这些情况，我们通过以下方式在整个管理中心Microsoft 365新式帮助和智能帮助：
+如果你是管理员，admin.microsoft.com 可以管理[](https://admin.microsoft.com)并充分利用你的 Microsoft 365 订阅。 有时，你可能无法找到正确的任务，在启动任务流之前需要更多上下文，或者只是不确定作为管理员的操作的范围和影响。为了涵盖这些情况，我们在整个过程中通过以下方式Microsoft 365 管理中心新式帮助和智能帮助：
 
 * **集成帮助** - 管理中心中的帮助
 
@@ -48,7 +48,7 @@ ms.locfileid: "50904332"
 
 ## <a name="modern-self-help-powered-by-ai"></a>由 AI 提供现代自助功能
 
-若要打开由人工智能支持的现代自助体验，请选择管理中心中的"需要帮助Microsoft 365按钮。  例如，如果您搜索"验证我的域"，您将获得这些步骤以及一些我们认为会有所帮助的文章。 我们使用机器学习来显示最接近的解决方案，该解决方案已帮助其他已输入类似查询的管理员。
+若要打开由人工智能支持的现代自助体验，请选择"需要帮助"按钮Microsoft 365 管理中心。  例如，如果您搜索"验证我的域"，您将获得这些步骤以及一些我们认为会有所帮助的文章。 我们使用机器学习来显示最接近的解决方案，该解决方案已帮助其他已输入类似查询的管理员。
 
 或者，对于你不太知道如何在你的特定情况下完成某些操作的情况，请使用支持助理。 目前，此体验仅提供英语版本。 若要打开支持助理，只需使用"需要帮助" **窗格顶部的开关** 。 支持助理提供了一个对话界面来帮助你。 输入查询后，聊天机器人会询问阐明问题，以针对您的特定情况获得正确的答案。 将它视为发现解决方案和完成任务的虚拟帮助程序。
 
