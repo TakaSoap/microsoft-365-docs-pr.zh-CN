@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1e5a65ce0ac9320a586e3bad73a6bfbdb967ff39b8cfae3344b4bc633c922041
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858973"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -37,17 +37,17 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
   
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请展开下图或转到 Microsoft [365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack， expand the following graphic or go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 [![Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本配置
 
-首先，为 [Microsoft 365 企业版创建测试环境](/microsoft-365-enterprise/)。 可以创建两种不同类型的基本配置：
+首先，为企业版 Microsoft 365[测试环境](/microsoft-365-enterprise/)。 可以创建两种不同类型的基本配置：
 
-- [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md) - 当你想要在仅云环境中配置和演示 Microsoft 365 企业版特性和功能（不包括任何本地组件）时，可使用此配置。
+- [轻型基本](lightweight-base-configuration-microsoft-365-enterprise.md)配置 - 当你要配置和演示Microsoft 365云环境中企业特性和功能（不包括任何本地组件）时，可使用此配置。
 
-- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 在混合云环境中配置和演示 Microsoft 365 企业版特性和功能时使用此配置，该环境使用 Active Directory 域服务 (AD DS) 域等本地组件。
+- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 在混合云环境中配置和演示企业特性和功能（使用 Active Directory 域服务 (AD DS) 域）中的 Microsoft 365 时，可使用此配置。
 
 此外，还可通过不将 Microsoft 365 E5 许可证添加到试用版或产品测试环境中，来创建 Office 365 E5 的测试环境。
     

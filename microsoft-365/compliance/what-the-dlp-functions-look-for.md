@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: 了解 DLP (函数) 数据丢失防护功能。
-ms.openlocfilehash: 787abc1e7fb4c95392a76f7514ceffd3f7f4dda0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7dad18402b25b97097eb35729d4009d9add5533f18f3aec25e63a31015e51b32
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859667"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 

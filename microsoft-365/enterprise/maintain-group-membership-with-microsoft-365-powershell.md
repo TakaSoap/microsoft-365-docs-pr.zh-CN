@@ -18,21 +18,21 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 了解如何使用 PowerShell 维护组Microsoft 365成员身份。
-ms.openlocfilehash: 9696c9093ae6f24a2edaf544e80794bde45d18d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e60aaa0200a4cbc972f9157ead3db81a92fb7f4e7049d9ab27c2e420b94c2169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858947"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>使用 PowerShell 维护安全组成员身份
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以使用 PowerShell for Microsoft 365作为管理中心Microsoft 365维护安全组成员身份的Microsoft 365。 
+可以使用 PowerShell for Microsoft 365作为安全组Microsoft 365 管理中心，以维护安全组Microsoft 365。 
 
 >[!Note]
->[了解如何使用Microsoft 365中心维护](../admin/create-groups/add-or-remove-members-from-groups.md)Microsoft 365成员身份。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>[了解如何维护Microsoft 365组成员身份](../admin/create-groups/add-or-remove-members-from-groups.md)Microsoft 365 管理中心。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell

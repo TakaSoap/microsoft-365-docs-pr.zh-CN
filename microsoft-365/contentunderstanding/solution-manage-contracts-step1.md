@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: 了解如何使用SharePoint Syntex解决方案识别合同文件并提取Microsoft 365数据。
-ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d26a11edfbfadfa9b8905e9cb7643cfefeef9b1e1f6e7e0516c50305fe974d71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287349"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859461"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用SharePoint Syntex标识合同文件并提取数据
 
@@ -186,7 +186,7 @@ ms.locfileid: "53287349"
 
    ![Screenshot showing the Contracts page with Apply model to libraries option highlighted.](../media/content-understanding/key-actions-apply-model.png)
 
-2. 在 **"添加** 合同"SharePoint，选择包含要应用模型的文档库的网站。 如果该网站未显示在列表中，请使用搜索框进行查找。 选择“**添加**”。
+2. 在 **"添加** 合同"SharePoint，选择包含要应用模型的文档库的网站。 如果该网站未显示在列表中，请使用搜索框进行查找。 选择 **添加**。
 
     > [!NOTE]
     > 你必须拥有 *管理列表* 权限，或者 *编辑* 对应用模型的文档库的权限。
@@ -208,6 +208,6 @@ ms.locfileid: "53287349"
 
 将模型应用到文档库后，您可以开始将文档上载到网站并查看结果。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [步骤 2.使用Microsoft Teams创建合同管理通道](solution-manage-contracts-step2.md)

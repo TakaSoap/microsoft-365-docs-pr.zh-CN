@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南将 Intune 设备合规性策略Microsoft 365企业测试环境。
-ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 697837a93b92006f51aca5d20a5ad62bf130f1bbfaf2c4d00caddfe8ea7d12e1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53858899"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试Microsoft 365的设备合规性策略
 
@@ -50,7 +50,7 @@ ms.locfileid: "49367091"
 
 在此阶段中，为设备创建Windows 10策略。 此阶段Microsoft Intune和Microsoft Endpoint Manager管理中心添加[](https://go.microsoft.com/fwlink/?linkid=2109431)组，并创建合规性策略。
 
-1. 转到["Microsoft 365](https://admin.microsoft.com)中心"，然后使用全局管理员Microsoft 365登录到你的测试实验室订阅。 选择 **"Endpoint Manager** 管理中心"。 将[Endpoint Manager管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 转到["Microsoft 365 管理中心"，](https://admin.microsoft.com)然后使用全局管理员Microsoft 365登录到你的测试实验室订阅。 选择 **"Endpoint Manager** 管理中心"。 将[Endpoint Manager管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
     如果显示类似于 **你尚未启用设备** 管理的消息，则选择 Intune 作为 MDM 颁发机构。 有关具体步骤，请参阅 [设置移动设备管理机构](/mem/intune/fundamentals/mdm-authority-set)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "49367091"
 
 完成后，你有一个设备合规性策略，用于测试托管Windows 10 **组的成员**。
   
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 探索 [测试环境中](m365-enterprise-test-lab-guides.md#mobile-device-management) 的其他移动设备管理功能。
 

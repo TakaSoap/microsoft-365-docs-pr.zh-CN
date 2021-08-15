@@ -1,5 +1,5 @@
 ---
-title: 创建Microsoft 365 Defender评估环境。 激活或启用试用许可证，然后继续使用 Microsoft Defender for Identity (MDI) 。
+title: 创建Microsoft 365 Defender评估环境
 description: 通过激活Microsoft 365 Defender设置试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 04f7a746788ebcf67525020515cdc7bb20c41bb6
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 6e89591b57be2bf79664547715906074b92b54649e1858bde9ffe06cb2be9335
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457673"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867615"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>创建Microsoft 365 Defender评估环境
 

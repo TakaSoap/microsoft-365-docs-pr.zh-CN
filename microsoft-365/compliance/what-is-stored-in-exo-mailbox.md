@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 由基于云的应用在 Microsoft 365 中生成的内容将存储或与用户的邮箱Exchange Online关联。 可以使用 Microsoft 电子数据展示工具搜索此内容。
-ms.openlocfilehash: 975f4ac8be8c2cdeed8dea1d73699607662a1ce9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 9df7198f50809af4a97eabecfab02219f7d2d17cfe96037422e8516fd2567a1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859679"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>存储在电子数据Exchange Online邮箱中的内容
 

@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 指导如何使用 Office 365 VPN 拆分隧道为远程用户优化 Office 365 连接。
-ms.openlocfilehash: c92599469431732136637cee2bb6a029c4eb4037
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: dc9e9fa6b730ac6a98879c692f349b2480d3dcf14320c7817d5d5b14eb6ac825
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259243"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53848898"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>使用 VPN 拆分隧道为远程用户优化 Office 365 连接
 <!---

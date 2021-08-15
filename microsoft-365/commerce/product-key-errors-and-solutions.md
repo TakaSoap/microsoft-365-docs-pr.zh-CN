@@ -21,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 ms.date: 05/01/2021
-ms.openlocfilehash: d93b45258b9004d0ae19795886d31ce1e7141601
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: cfb46f4f248a24f9f6c24c33a3b7691e24e20feeb0b6f1899833881f0654fcea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830991"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>业务Microsoft 365密钥有问题？
 

@@ -20,33 +20,33 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: 了解如何解决有关 Microsoft 365 使用情况分析模板应用的问题。
-ms.openlocfilehash: 74ee32ae015421a2352474daefa0eaa0a53fbbc9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b0978edd23809d61a7160cb423cf279d425dd0c13c0451798d8d54535a78c284
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53901125"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>使用率Microsoft 365疑难解答
 
 浏览以下错误消息列表，获取有关有关使用情况分析的最常见Microsoft 365的帮助。
   
     
-## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>无法处理你的请求。 你必须首先从管理中心Microsoft 365此数据
+## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>无法处理你的请求。 你首先必须订阅数据Microsoft 365 管理中心
 
  **错误代码** ：422 
   
  **将在什么位置看到此消息：** 此外Power BI连接到 Microsoft 365 使用情况分析模板应用或直接调用 Microsoft 365 报告 API 时。 
   
- **原因：** 在连接到应用之前，你必须从管理中心Microsoft 365数据。 如果未首先完成此步骤，将无法连接到模板应用，即使提供租户MICROSOFT 365 ID。 
+ **原因：** 在可以连接到应用之前，你必须从应用程序订阅Microsoft 365 管理中心。 如果未首先完成此步骤，将无法连接到模板应用，即使提供租户MICROSOFT 365 ID。 
   
  **若要修复此错误：** 若要订阅数据，请转到管理中心"报告使用情况"，Microsoft 365主仪表板页面上的"使用情况分析" \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank"></a>磁贴。 选择 **"开始"** 按钮，然后在打开的"报告"窗格中，打开"使数据可用于Microsoft 365使用情况分析"Power BI"**保存****"设置**。
   
 ## <a name="we-are-processing-your-data"></a>正在处理你的数据
 
- **将在什么位置看到此消息：** In the **Microsoft 365 usage analytics** tile on the **Usage** dashboard in the Microsoft 365 admin center. 
+ **将在什么位置看到此消息：** In the **Microsoft 365 usage analytics** tile on the **Usage** dashboard in the Microsoft 365 管理中心. 
   
- **原因：** 当你 [选择从管理中心查看](enable-usage-analytics.md)模板Microsoft 365时，Microsoft 365系统开始为组织生成历史使用情况数据。 此步骤可能需要 2 至 48 小时的时间，具体取决于租户的大小。 
+ **原因：** 当你 [选择从模板](enable-usage-analytics.md)应用中查看Microsoft 365 管理中心时，Microsoft 365系统开始为组织生成历史使用情况数据。 此步骤可能需要 2 至 48 小时的时间，具体取决于租户的大小。 
   
  **若要修复此问题，请进行修复：** 请耐心等待，但如果邮件未在 3天后更改为"数据已准备就绪"，请与Microsoft 365 [联系。](../../business-video/get-help-support.md)
   
