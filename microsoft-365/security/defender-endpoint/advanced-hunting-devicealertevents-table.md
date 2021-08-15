@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 6a56a1abab388e98af52fadc322d41484c1610a5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9b19f526434cdaf0eb1b6f6ad1fc0b6f7232b77d6b6b96d43bb777e45e19856d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898391"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -44,7 +44,7 @@ ms.locfileid: "53656987"
 |`AlertId`|string|警报的唯一标识符|
 |`Timestamp`|datetime|记录事件的日期和时间|
 |`DeviceId`|string|服务中设备的唯一标识符|
-|`DeviceName`|字符串|设备的完全限定 (FQDN) FQDN|
+|`DeviceName`|string|设备的完全限定 (FQDN) FQDN|
 |`Severity`|string|指示警报所标识的威胁指示器或违反活动的潜在影响（高、中或低）|
 |`Category`|string|由警报标识的威胁指示器或违反活动的类型|
 |`Title`|string|警报的标题|
@@ -52,7 +52,7 @@ ms.locfileid: "53656987"
 |`SHA1`|string|录制操作所应用到的文件的 SHA-1|
 |`RemoteUrl`|string|连接到的 URL 或完全限定域名 (FQDN)|
 |`RemoteIP`|string|连接到的 IP 地址|
-|`AttackTechniques`|字符串|MITRE ATT&触发警报的活动相关的 CK 技术|
+|`AttackTechniques`|string|MITRE ATT&触发警报的活动相关的 CK 技术|
 |`ReportId`|long|基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 和 `DeviceName` `Timestamp` 列一起使用|
 |`Table`|string|包含事件详细信息的表|
 

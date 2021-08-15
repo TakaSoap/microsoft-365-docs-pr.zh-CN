@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 规划 Office 365 部署时要使用的外部域名系统记录的引用列表。
-ms.openlocfilehash: 2cbbbcb6105feccdaed1f7b6ce05a84b374024c0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: e3f66326d314246b3cde5c88dfc00ea394d8119e92cf9dcd14840f559aa7cd6f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53849184"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -52,7 +52,7 @@ ms.locfileid: "52926259"
   
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
 |----------|-----------|------------|
-|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。 [详细信息](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。[详细信息](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导** 提供了用于创建此记录的值。  <br/> |
 
 
@@ -66,7 +66,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 - **MX 记录** 告知其他邮件系统向您的域发送电子邮件的位置。**注意：** 当通过更新域的 MX 记录将电子邮件更改为 Office 365 时，发送到该域的所有电子邮件都将开始传送到 Office 365。  
 你是否只是想要将几个电子邮件地址切换到 Office 365？ 你可以[通过在自定义域中使用少量电子邮件地址试行 Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7)。
 
-- **SPF 的 TXT 记录** 由收件人的电子邮件系统用于验证发送电子邮件的服务器是批准的服务器。 这将有助于防止电子邮件欺诈和钓鱼等问题。 请参阅本文中[SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords)，帮助了解记录中应包含的内容。
+- 收件人电子邮件系统使用 **SPF 的 TXT 记录** 确认发送你的电子邮件的服务器是你批准的服务器。这有助于预防电子邮件欺骗和钓鱼等问题。请参阅本文中的 [SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords)，以帮助你了解记录中要包含的内容。
 
 使用 Exchange Federation 的电子邮件客户也将需要使用其他 CNAME 和 TXT 记录（列于表格底部）。
   

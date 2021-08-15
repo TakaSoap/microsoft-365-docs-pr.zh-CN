@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 一Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
-ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 25052b461aee3a9ba823c203ebb2f8bddebd3196312e9697574fcd2efba2af50
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872162"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>可训练的分类器入门
 
@@ -40,13 +40,13 @@ ms.locfileid: "53286629"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 ### <a name="licensing-requirements"></a>许可要求
 
 分类器是Microsoft 365 E5 E5 合规性功能。 你必须拥有其中一个订阅，以使用这些订阅。
 
-### <a name="permissions"></a>权限
+### <a name="permissions"></a>Permissions
 
 若要访问 UI 中的分类器：： 
 

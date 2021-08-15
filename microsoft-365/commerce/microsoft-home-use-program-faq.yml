@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: 常见问题解答 (常见问题) 有关Microsoft 家用许可计划。
   ms.date: 05/01/2021
-  ms.openlocfilehash: 467e378244ac991c2b0997b297eb1a751bdf9a85
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: c4345ad61c8a97b953493dcaeffd399ce4cab02c8965934f6ac96ef35a514529
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52535764"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53831387"
 title: 'Microsoft 家用许可计划常见问题解答 (常见问题) '
 summary: >
   批量许可客户在) 网站上Microsoft 家用许可计划 (HUP 适用于企业的 Microsoft Store [HUP。](https://go.microsoft.com/fwlink/?linkid=2139192)
@@ -35,7 +35,7 @@ summary: >
 
   - In the Microsoft admin center， go to the **Billing**  >  [**Your products** page](https://go.microsoft.com/fwlink/p/?linkid=842054)， select the **Benefits** tab， and then select the **HUP** tab.
 sections:
-- name: 忽略
+- name: 已忽略
   questions:
   - question: >
       什么是Microsoft 家用许可计划？

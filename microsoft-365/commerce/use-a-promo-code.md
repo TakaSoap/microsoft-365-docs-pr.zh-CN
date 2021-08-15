@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150 S
 description: 了解如何将促销代码应用到你的 Microsoft 365 订阅来降低价格，以及如何解决促销代码出错的问题。
 ms.date: 03/17/2021
-ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 01a185229f7ca07b7f665fa0515ed479490b92f4e8499787711bb847e2cb51e9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872655"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码来降低价格
 

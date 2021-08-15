@@ -2,8 +2,8 @@
 title: 开始使用应用策略
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始了解应用策略。
-ms.openlocfilehash: 96acc17322cf811ba2ce36345df972f36b7706c7
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861300"
 ---
 # <a name="get-started-with-app-policies"></a>开始使用应用策略
 
@@ -27,7 +27,7 @@ ms.locfileid: "53541274"
 
 Microsoft 应用治理的应用策略是实施更主动或被动的条件，以创建警报或自动修正来满足组织中针对应用合规性的特定需求的方式。
 
-若要查看当前应用策略的列表，请转到 **“Microsoft 365合规中心”>“应用保护和管理”>“策略”**。
+要查看当前应用策略的列表，请转到“**Microsoft 365 合规中心”>“应用治理”>“策略**”。
 
 ![Microsoft 365 合规中心内的 MAPG 策略摘要页面](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
@@ -61,7 +61,7 @@ Microsoft 应用治理的应用策略是实施更主动或被动的条件，以�
 还可以执行以下操作：
 
 - 创建新策略。你可以从应用使用策略或权限策略开始。
-- 将策略列表导出到逗号分隔值 (CSV) 文件。 例如，你可以在 Microsoft Excel 中打开 CVS 文件，然后按“**严重性**”和“**警报总数**”对策略进行排序。
+- 将策略列表导出为逗号分隔值 (CSV) 文件。例如，你可以在 Microsoft Excel 中打开 CSV 文件，并按 **严重性** 对策略进行排序，然后按 **警报总数**”排序。
 - 搜索策略列表。
 
 ## <a name="next-step"></a>后续步骤

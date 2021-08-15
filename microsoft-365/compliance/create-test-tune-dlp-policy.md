@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 本文将了解如何根据组织需求创建、测试和调整 DLP 策略。
-ms.openlocfilehash: 3b7f74605c8a825bb03244f3a861ad3cca8f550d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: b503fbf62972c2c816fdf7396c7cad4eb2b5fe2514ca36375d7773c9e432d175
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53872309"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -36,7 +36,7 @@ DLP 检查电子邮件和文件，以查找敏感信息，如信用卡号。 使
 - 向发送电子邮件或共享文件的最终用户显示警告
 - 主动阻止电子邮件或文件共享发生
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 创建 DLP 策略的合规性团队成员需要具有对合规中心的访问权限。 默认情况下，租户管理员将具有访问权限，可授予合规部官员和其他人员访问权限。 请按以下步骤操作：
   
@@ -56,7 +56,7 @@ DLP 检查电子邮件和文件，以查找敏感信息，如信用卡号。 使
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP 如何检测敏感信息
 
-DLP 通过正则表达式 (RegEx) 模式匹配，以及其他指示器（如某些关键字与匹配模式的邻近度）查找敏感信息。 例如，VISA 信用卡号有 16 个数字。 但是，可以不同方式写入这些数字，例如 1111-1111-1111-1111、1111 1111 1111 1111 或 1111111111111。
+DLP 通过正则表达式 (RegEx) 模式匹配，以及其他指示器（如某些关键字与匹配模式的邻近度）查找敏感信息。 例如，VISA 信用卡号有 16 个数字。 但是，这些数字可通过不同方式写入，例如 1111-1111-1111-1111、1111 1111 1111 1111 1111 或 1111111111111111。
 
 任何 16 位字符串不一定是信用卡号，它可以是技术支持系统的票证号或硬件的序列号。 为了区分信用卡号和无害的 16 位数字字符串，将执行 (校验和) ，以确认数字与各种信用卡品牌的已知模式匹配。
 

@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，以从 Microsoft 365 中的 Bloomberg Message 电子邮件工具导入和存档Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 7029b95e4b9ceb91859e2a4b38afb5205e3307b2
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6fe3f50576ef01868c335823f09970f9a3bf88ccdbe06eef73cc1e04ea8d7e61
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861220"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>设置连接器以存档 Bloomberg 邮件数据
 
-使用合规性中心内Microsoft 365连接器，从[Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/)协作工具导入和存档金融服务电子邮件数据。 设置和配置连接器后，它将每天连接到组织的一次安全 FTP (SFTP) 网站，并导入电子邮件项目到 Microsoft 365 中的邮箱。
+使用数据连接器从"Microsoft 365 合规中心"消息协作工具导入和存档[金融服务](https://www.bloomberg.com/professional/product/collaboration/)电子邮件数据。 设置和配置连接器后，它将每天连接到组织的一次安全 FTP (SFTP) 网站，并导入电子邮件项目到 Microsoft 365 中的邮箱。
 
 在将 Bloomberg 邮件数据存储在用户邮箱中后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Microsoft 365 保留策略）应用于 Bloomberg Message 数据。 例如，您可以使用内容搜索工具搜索 Bloomberg Message 电子邮件，或将包含 Bloomberg Message 数据的邮箱与案例的保管人Advanced eDiscovery关联。 使用一个 Bloomberg 邮件连接器将数据导入并存档Microsoft 365可帮助你的组织遵守政府及法规策略。
 
@@ -35,7 +35,7 @@ ms.locfileid: "51222537"
 
 2. 每 24 小时发送一次，来自 Bloomberg Message 的电子邮件将复制到 Bloomberg SFTP 网站。
 
-3. 在 Microsoft 365 合规中心创建的 Bloomberg 邮件连接器每天连接到一个 Bloomberg SFTP 网站，将过去 24 小时内的电子邮件转移到 Microsoft 云中的安全 Azure 存储 区域。
+3. 在 Microsoft 365 合规中心 创建的 Bloomberg 邮件连接器每天连接到 Bloomberg SFTP 网站，将过去 24 小时内的电子邮件转移到 Microsoft 云中的安全 Azure 存储 区域。
 
 4. 连接器将电子邮件项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 BloombergMessage 的新文件夹，项目将导入到该文件夹中。
 
@@ -71,7 +71,7 @@ ms.locfileid: "51222537"
 
 - Bloomberg 邮件连接器一天中总共可以导入 200，000 个项目。 如果 SFTP 网站上有 200，000 多个项目，则这些项均不会导入Microsoft 365。
 
-- 必须在 (中为在步骤 3 (中创建一个 Bloomberg 邮件连接器且在步骤 1) 中下载公钥和 IP 地址的用户分配邮箱导入导出 Exchange Online角色。 在安全与合规中心的"数据连接器"页中添加Microsoft 365是必需的。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在 (中为在步骤 3 (中创建一个 Bloomberg 邮件连接器且在步骤 1) 中下载公钥和 IP 地址的用户分配邮箱导入导出 Exchange Online角色。 这是在"数据连接器"页的"数据连接器 **"页中添加** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="set-up-a-connector-using-public-keys"></a>使用公钥设置连接器
 
@@ -119,7 +119,7 @@ ms.locfileid: "51222537"
 
 ### <a name="step-3-create-a-bloomberg-message-connector"></a>步骤 3：创建一个 Bloomberg 邮件连接器
 
-最后一步是在合规中心内创建一Microsoft 365邮件连接器。 连接器使用你提供的信息连接到 Bloomberg SFTP 网站，将电子邮件传输至邮箱邮箱中的相应Microsoft 365。
+最后一步是在邮件服务中创建一个Microsoft 365 合规中心。 连接器使用你提供的信息连接到 Bloomberg SFTP 网站，将电子邮件传输至邮箱邮箱中的相应Microsoft 365。
 
 1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
@@ -187,7 +187,7 @@ ms.locfileid: "51222537"
 
 ### <a name="step-2-create-a-bloomberg-message-connector"></a>步骤 2：创建一个 Bloomberg 邮件连接器
 
-配置一个 Bloomberg SFTP 网站后，下一步是在合规性中心内创建一Microsoft 365邮件连接器。 连接器使用你提供的信息连接到 Bloomberg SFTP 网站，将电子邮件传输至邮箱邮箱中的相应Microsoft 365。 若要完成此步骤，请确保具有用于设置一个 Bloomberg SFTP 网站的相同私钥和密钥密码的副本。
+在配置了一个 Bloomberg SFTP 网站后，下一步是在站点内创建一个Microsoft 365 合规中心。 连接器使用你提供的信息连接到 Bloomberg SFTP 网站，将电子邮件传输至邮箱邮箱中的相应Microsoft 365。 若要完成此步骤，请确保具有用于设置一个 Bloomberg SFTP 网站的相同私钥和密钥密码的副本。
 
 1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5923d572f73b188d8ef2b706db7f61afe9421061
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9b39a81a74c21f9a68ee8bfe166ec58dcdeda0ffcdd430bc313f84f468441616
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537171"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831208"
 ---
 # <a name="payment-information-for-bahamas"></a>哥斯达黎加的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference your invoice number (s) on your invoice inv
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号** ：4426587954  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft

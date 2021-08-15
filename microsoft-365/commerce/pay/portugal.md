@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6c8ef3f67bd7cb2fe996262f5e4395e036650fc
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: be9129913d936233308d2518d24a29dc64a9ccff01512414d2881b3bcccd05f2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831099"
 ---
 # <a name="payment-information-for-portugal"></a>葡萄牙的付款信息
 
@@ -31,6 +31,6 @@ ms.locfileid: "52536318"
 **Bank：** 年，伦敦  
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
-**SORT 代码** ：185008  
-**帐号** ：12207591  
+**SORT 代码：185008**  
+**帐户号：12207591**  
 **帐户名称：** MICROSOFT

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 查看根证书和证书颁发机构的完整 (CA) Microsoft 365。
-ms.openlocfilehash: ab4ca6f92407659b96e177161e0fd0c2847a890c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a462b5912bc27cc8ed6ef529df63fd96c25969a494253e4133324c031d2475d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905831"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365加密链
 
@@ -44,7 +44,7 @@ Last updated： **10/16/2020**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Subject** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **主题** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | --- | --- |
 | **序列号** | 02：00：00：B9 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -58,7 +58,7 @@ Last updated： **10/16/2020**
 
 ### <a name="cnnic-root"></a>**省/市/区根目录**
 
-| **Subject** | CN=CN=CNIC ROOT<br>O=$A0-10<br>C=CN |
+| **主题** | CN=CN=CNIC ROOT<br>O=$A0-10<br>C=CN |
 | --- | --- |
 | **序列号** | 49:33:00:01 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -73,7 +73,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert 全局根 CA**
 
-| **Subject** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **序列号** | 08：3B：E0：56：90：42：46：B1：A1：75：6A：C9：59：91：C7：4A |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -88,7 +88,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-global-root-g2"></a>**DigiCert 全局根 G2**
 
-| **Subject** | CN=DigiCert 全局根 G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert 全局根 G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 03：3A：F1：E6：A7：11：A9：A0：BB：28：64：B1：1D：09：FA：E5 |
@@ -103,7 +103,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert 高保证 EV 根 CA**
 
-| **Subject** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **序列号** | 02：AC：5C：26：6A：0B：40：9B：8F：0B：79：F2：AE：46：25：77 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -118,7 +118,7 @@ Last updated： **10/16/2020**
 
 ### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-TRUST Root Class 3 CA 2 2009**
 
-| **Subject** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
+| **主题** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
 | **序列号** | 09：83：F3 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -133,7 +133,7 @@ Last updated： **10/16/2020**
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-TRUST 根类 3 CA 2 EV 2009**
 
-| **Subject** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
+| **主题** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
 | **序列号** | 09：83：F4 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -148,7 +148,7 @@ Last updated： **10/16/2020**
 
 ### <a name="dst-root-ca-x3"></a>**DST 根 CA X3**
 
-| **Subject** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
+| **主题** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
 | --- | --- |
 | **序列号** | 44：AF：B0：80：D6：A3：27：BA：89：30：39：86：2E：F8：40：6B |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -162,7 +162,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-root-certification-authority---g2"></a>**代理根证书颁发机构 - G2**
 
-| **Subject** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **序列号** | 4A：53：8C：28 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -176,7 +176,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Subject** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.) <br>O=Entrust.net |
+| **主题** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.) <br>O=Entrust.net |
 | --- | --- |
 | **序列号** | 38：63：DE：F8 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -190,7 +190,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-root-ca---r1"></a>**GlobalSign 根 CA - R1**
 
-| **Subject** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **序列号** | 04：00：00：00：00：01：15：4B：5A：C3：94 |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -204,7 +204,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-root-ca---r3"></a>**GlobalSign 根 CA - R3**
 
-| **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
+| **主题** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | --- | --- |
 | **颁发者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign Root CA - R3 |
 | **序列号** | 04：00：00：00：00：01：21：58：53：08：A2 |
@@ -219,7 +219,7 @@ Last updated： **10/16/2020**
 
 ### <a name="thawte-primary-root-ca---g3"></a>**thawte Primary Root CA - G3**
 
-| **Subject** | CN=thawte Primary Root CA - G3<br>OU= &quot; (c) 2008 thawte， Inc. - 仅授权使用&quot;<br>OU=Certification Services 部门<br>O= &quot; thawte, Inc.&quot;<br>C=US |
+| **主题** | CN=thawte Primary Root CA - G3<br>OU= &quot; (c) 2008 thawte， Inc. - 仅授权使用&quot;<br>OU=Certification Services 部门<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | --- | --- |
 | **序列号** | 60：01：97：B7：46：A7：EA：B4：B4：9A：D6：4B：2F：F7：90：FB |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -233,7 +233,7 @@ Last updated： **10/16/2020**
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign 3 类公共主要证书颁发机构 - G5**
 
-| **Subject** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign， Inc. - 仅授权使用&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
+| **主题** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign， Inc. - 仅授权使用&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | --- | --- |
 | **序列号** | 18：DA：D1：9E：26：7D：E8：BB：4A：21：58：CD：CC：6B：3B：4A |
 | **公钥长度** | RSA 2048 bits (e 65537)  |
@@ -249,7 +249,7 @@ Last updated： **10/16/2020**
 
 ### <a name="cnnic-sha256-ssl"></a>**四分网网 SHA256 SSL**
 
-| **Subject** | CN=CN=CNIC SHA256 SSL <br>O=$A0-100-10-10-16-36-1 <br>C=CN |
+| **主题** | CN=CN=CNIC SHA256 SSL <br>O=$A0-100-10-10-16-36-1 <br>C=CN |
 | --- | --- |
 | **颁发者** | CN=CN=CNIC ROOT <br>O=$A0-10 <br>C=CN |
 | **序列号** | 49：33：00：7C |
@@ -268,7 +268,7 @@ Last updated： **10/16/2020**
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL Class 3 CA 1 2009**
 
-| **Subject** | CN=D-TRUST SSL Class 3 CA 1 2009<br>O=D-Trust GmbH<br>C=DE |
+| **主题** | CN=D-TRUST SSL Class 3 CA 1 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
 | **颁发者** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
 | **主题备用名称** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -287,7 +287,7 @@ Last updated： **10/16/2020**
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL Class 3 CA 1 EV 2009**
 
-| **Subject** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust GmbH<br>C=DE |
+| **主题** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
 | **颁发者** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | **主题备用名称** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -306,7 +306,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-basic-rsa-cn-ca-g2"></a>**DigiCert Basic RSA CN CA G2**
 
-| **Subject** | CN=DigiCert Basic RSA CN CA G2<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert Basic RSA CN CA G2<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 02：F7：E1：F9：82：BA：D0：09：AF：F4：7D：C9：57：41：B2：F6 |
@@ -323,7 +323,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-cloud-services-ca-1-older"></a>**DigiCert 云服务 CA-1 (** 旧版本) 
 
-| **Subject** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **序列号** | 01：9E：C1：C6：BD：3F：59：7B：B2：0C：33：38：E5：51：D8：77 |
@@ -341,7 +341,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 云服务 CA-1**
 
-| **Subject** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert 云服务 CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **序列号** | 0F：17：1A：48：C6：F2：23：80：92：18：CD：2E：D6：DD：C0：E8 |
@@ -359,7 +359,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 扩展验证服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 扩展验证服务器 CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 扩展验证服务器 CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert High Assurance EV Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0C：79：A9：44：B0：8C：11：95：20：92：61：5F：E2：6B：1D：83 |
@@ -376,7 +376,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-high-assurance-server-ca"></a>**DigiCert SHA2 高保证服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 高保证服务器 CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 高保证服务器 CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **序列号** | 04：E1：E7：A4：DC：5C：F2：F3：6D：C0：2B：42：B8：5D：15：9F |
@@ -394,7 +394,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **序列号** | 01：FD：A3：EB：6E：CA：75：C8：88：43：8B：72：4B：CF：BC：91 |
@@ -412,7 +412,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
 
-| **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 02：74：2E：AA：17：CA：8E：21：C7：17：BB：1F：FC：FD：0C：A0 |
@@ -429,7 +429,7 @@ Last updated： **10/16/2020**
 
 ### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
 
-| **Subject** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
+| **主题** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert Global Root CA， OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0A：35：08：D5：5C：29：2B：01：7D：F8：AD：65：C0：0F：F7：E4 |
@@ -446,7 +446,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1c"></a>**证书颁发机构 - L1C**
 
-| **Subject** | CN=Entrust Certification Authority - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa 通过参考纳入<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Entrust Certification Authority - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa 通过参考纳入<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Entrust.net Certification Authority (2048) <br>OU= (c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (限制 liab.) <br>O=Entrust.net |
 | **序列号** | 4C：0E：8C：39 |
@@ -464,7 +464,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1k"></a>**代理证书颁发机构 - L1K**
 
-| **Subject** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **序列号** | 0E：E9：4C：C3：00：00：00：00：51：D3：77：85 |
@@ -482,7 +482,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign 扩展验证 CA - SHA256 - G2**
 
-| **Subject** | CN=GlobalSign 扩展验证 CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign 扩展验证 CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **颁发者** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
 | **序列号** | 04：00：00：00：00：01：44：4E：F0：4A：55 |
@@ -500,7 +500,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign 扩展验证 CA - SHA256 - G3**
 
-| **Subject** | CN=GlobalSign 扩展验证 CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign 扩展验证 CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **颁发者** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | **序列号** | 48：A4：02：DD：27：92：0D：A2：08：34：9D：D1：99：7B |
@@ -518,7 +518,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2-older"></a>**GlobalSign 组织验证 CA - SHA256 - G2 (** 旧) 
 
-| **Subject** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **颁发者** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | **序列号** | 04：00：00：00：00：01：31：89：C6：44：C9 |
@@ -536,7 +536,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 组织验证 CA - SHA256 - G2**
 
-| **Subject** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **颁发者** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
 | **序列号** | 04：00：00：00：00：01：44：4E：F0：42：47 |
@@ -554,7 +554,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-organization-validation-ca---sha256---g3"></a>**GlobalSign 组织验证 CA - SHA256 - G3**
 
-| **Subject** | CN=GlobalSign Organization Validation CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign Organization Validation CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **颁发者** | CN=GlobalSign Root CA、OU=Root CA、O=GlobalSign nv-sa、C=BE |
 | **序列号** | 47：07：B1：01：9A：0C：57：AD：39：B3：E1：7D：A9：F9 |
@@ -571,7 +571,7 @@ Last updated： **10/16/2020**
 
 ### <a name="globalsign-rsa-ov-ssl-ca-2018"></a>**GlobalSign RSA OV SSL CA 2018**
 
-| **Subject** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
+| **主题** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **颁发者** | CN=GlobalSign、O=GlobalSign、OU=GlobalSign Root CA - R3 |
 | **序列号** | 01：企业版：5F：22：1D：FC：62：3B：D4：33：3A：85：57 |
@@ -588,7 +588,7 @@ Last updated： **10/16/2020**
 
 ### <a name="lets-encrypt-authority-x3"></a>**让我们加密颁发机构 X3**
 
-| **Subject** | CN=Let's Encrypt Authority X3<br>O=Let's Encrypt<br>C=US |
+| **主题** | CN=Let's Encrypt Authority X3<br>O=Let's Encrypt<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
 | **序列号** | 0A：01：41：42：00：00：01：53：85：73：6A：0B：85：EC：A7：08 |
@@ -607,7 +607,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft AzureTLS 颁发 CA 01**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 0A：AF：A6：C5：CA：63：C4：51：41：EA：3B：E1：F7：C7：53：17 |
@@ -624,7 +624,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 颁发 CA 02**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 0C：6A：E9：7C：CE：D5：99：83：86：90：A0：0A：9E：A5：32：14 |
@@ -641,7 +641,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 颁发 CA 05**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 0D：7B：ED：E9：7D：82：09：96：7A：52：63：1B：8B：DD：18：BD |
@@ -658,7 +658,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft AzureTLS 颁发 CA 06**
 
-| **Subject** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
 | **序列号** | 02：E7：91：71：FB：80：21：E9：3F：E2：D9：83：83：4C：50：C0 |
@@ -675,7 +675,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **Subject** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 08：B8：7A：50：1B：BE：9C：DA：2D：16：4D：3E：39：51：BF：55 |
@@ -693,7 +693,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **Subject** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 0F：2C：10：C9：5B：06：C0：93：7F：B8：D4：49：F8：3E：85：69 |
@@ -711,7 +711,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **Subject** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 0B：6A：B3：B0：3E：B1：A9：F6：C4：60：92：6A：A8：CD：FE：B3 |
@@ -729,7 +729,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **Subject** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **主题** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 08：88：CD：52：5F：19：24：44：4D：14：A5：82：91：DE：B9：52 |
@@ -747,7 +747,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
 
-| **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root， OU=CyberTrust， O=Baltimore， C=IE |
 | **序列号** | 0F：14：96：5F：20：20：69：99：4F：D5：C7：AC：78：89：41：E2 |
@@ -764,7 +764,7 @@ Last updated： **10/16/2020**
 
 ### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
 
-| **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
+| **主题** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root， OU=CyberTrust， O=Baltimore， C=IE |
 | **序列号** | 0F：A7：47：22：C5：3D：88：C8：0F：58：9E：FB：1F：9D：4A：3A |
@@ -781,7 +781,7 @@ Last updated： **10/16/2020**
 
 ### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec Class 3 EV SSL CA - G3**
 
-| **Subject** | CN=Symantec Class 3 EV SSL CA - G3<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
+| **主题** | CN=Symantec Class 3 EV SSL CA - G3<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign， Inc. - 仅授权使用&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | **主题备用名称** | 目录地址：CN=SymantecPKI-1-533 |
@@ -800,7 +800,7 @@ Last updated： **10/16/2020**
 
 ### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec Class 3 Secure Server CA - G4**
 
-| **Subject** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
+| **主题** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
 | **颁发者** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign， Inc. - 仅授权使用&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | **主题备用名称** | 目录地址：CN=SymantecPKI-1-534 |
@@ -819,7 +819,7 @@ Last updated： **10/16/2020**
 
 ### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
 
-| **Subject** | CN=thawte SHA256 SSL CA<br>O= &quot; thawte, Inc.&quot;<br>C=US |
+| **主题** | CN=thawte SHA256 SSL CA<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=thawte Primary Root CA - G3<br>OU= &quot; (c) 2008 thawte， Inc. - 仅授权使用&quot;<br>OU=Certification Services 部门<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | **主题备用名称** | 目录地址：CN=VeriSignMPKI-2-415 |
@@ -838,7 +838,7 @@ Last updated： **10/16/2020**
 
 ### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer CA G14-SHA2**
 
-| **Subject** | CN=Verizon Akamai SureServer CA G14-SHA2<br>OU=Cybertrust<br>O=Verizon Enterprise 解决方案<br>L=阿姆斯特丹<br>C=NL |
+| **主题** | CN=Verizon Akamai SureServer CA G14-SHA2<br>OU=Cybertrust<br>O=Verizon Enterprise 解决方案<br>L=阿姆斯特丹<br>C=NL |
 | --- | --- |
 | **颁发者** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | **序列号** | 07：27：A4：6B |

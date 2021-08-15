@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何选择和导出演示文稿或外部Advanced eDiscovery审阅集的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7aa0685be3beadc9e7c9979aa2ebea25465b67f3e0fc93cbd33b5dffa8338074
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: ceb735b4ebce5ef26eb7e7216e1e0f81897c7c0cfbdbb5982b632e6f355e442a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54520600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905796"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>从审阅集导出文档Advanced eDiscovery
 
@@ -76,8 +76,6 @@ ms.locfileid: "54520600"
   - 文本文件：此选项包括导出中的本机文件的提取文本版本。
   
   - 将修订的本机替换为转换后的 PDF：如果在审阅过程中生成了修订的 PDF 文件，则这些文件可供导出。 可以选择不选择此选项 (导出已修订的本机文件) 也可以选择此选项以导出包含实际修订的 PDF 文件。
-
-  - 对话 PDF 而不是单个聊天消息：选中此复选框以导出 PDF 文件中聊天对话。 同一对话的所有聊天消息都在同一 PDF 文件中导出。 如果保留此复选框为未选中状态，则聊天对话中每个唯一的消息都导出为独立项目。 以与邮箱中相同的格式导出文件。 对于特定对话，您将收到多个 .msg 文件。
 
 以下各节介绍松散文件和压缩目录结构选项的文件夹结构。 导出将分区到 ZIP 文件中，未压缩内容的最大大小为 75 GB。 如果导出大小小于 75 GB，则导出将包含摘要文件和单个 ZIP 文件。 对于超过 75 GB 的未压缩数据的导出，将创建多个 ZIP 文件。 下载后，可以将 ZIP 文件解压缩到单个位置以重新创建完整导出。
 

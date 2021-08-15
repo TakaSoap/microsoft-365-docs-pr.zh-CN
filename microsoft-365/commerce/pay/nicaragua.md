@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f071c1aa1965649027b5237a12aef78e0774e60e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aaafcb64bcfffe78959bc78dca8a774f27f3681fe2b17cb64559d17e45d87f5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831123"
 ---
 # <a name="payment-information-for-nicaragua"></a>尼加拉瓜的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号** ：4426587954  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft
