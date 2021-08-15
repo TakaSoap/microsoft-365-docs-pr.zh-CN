@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: 520f500ce6e0ec10f7d37d1d08efcc91c8910352cdf551ee6e37e4904c459688
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 347d9a6b5de1d9045baf8d4a0778788a18514600bfc6f56652951e4ad420f1bb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53834226"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>云提供的保护防病毒示例提交
 
@@ -35,11 +35,11 @@ Microsoft Defender for Endpoint 防病毒 (Defender for Endpoint 防病毒) 使�
 - "自动发送所有示例"。  
 - "请勿发送示例。"  
 
-有关使用 Intune、Configuration Manager、GPO 或 PowerShell 的配置选项的信息，请参阅在 Microsoft Defender 防病毒[中启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)。  
+有关使用 Intune、Configuration Manager、GPO 或 PowerShell 的配置选项的信息，请参阅在 Microsoft Defender 防病毒[中启用云保护](/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)。  
 
 ## <a name="customer-data-cloud-protection-and-sample-submission"></a>客户数据、云保护和示例提交
 
-当载入 Defender for Endpoint 时，Defender for Endpoint 会处理所有文件示例作为客户数据，同时考虑客户选择的地理位置和数据保留选项。 地理位置和数据保留选项如下所述 [：Microsoft Defender for Endpoint 数据存储和隐私](data-storage-privacy.md#data-storage-location)。
+当载入 Defender for Endpoint 时，Defender for Endpoint 会处理所有文件示例作为客户数据，同时考虑客户选择的地理位置和数据保留选项。 地理位置和数据保留选项如下所述 [：Microsoft Defender for Endpoint 数据存储和隐私](/security/defender-endpoint/data-storage-privacy#data-storage-location)。
 该产品已接收多个合规性认证，表明继续遵守一组复杂的合规性控制措施：
 
 - ISO 27001
@@ -47,7 +47,7 @@ Microsoft Defender for Endpoint 防病毒 (Defender for Endpoint 防病毒) 使�
 - SOC I、II、III
 - 和 PCI
 
-[Azure 合规性产品/](/azure/storage/common/storage-compliance-offerings) 服务提供了有关这些认证详细信息。 Microsoft Defender for Endpoint 的所有认证项目可在每个关联的 Azure[](https://servicetrust.microsoft.com/)认证报告中的 Microsoft 服务信任门户上找到。
+[Azure 合规性产品/](/azure/compliance/#compliance-offerings) 服务提供了有关这些认证详细信息。 Microsoft Defender for Endpoint 的所有认证项目可在每个关联的 Azure[](https://servicetrust.microsoft.com/)认证报告中的 Microsoft 服务信任门户上找到。
 
 ## <a name="cloud-protection-mechanisms"></a>云保护机制
 
@@ -111,12 +111,11 @@ _图 3.云提供的保护和分层机器学习_
 
 ## <a name="cloud-delivered-protection-levels"></a>云提供的保护级别
 
-恶意软件检测要求在提供尽可能强大的保护的同时最大限度地减少误报数之间实现平衡。 不同的环境可能具有保护容忍度与误报风险。 云提供的保护级别允许客户定义适用于特定环境的容限级别。 启用云保护时，会自动配置保护级别以提供强检测，而不会增加检测合法文件的风险。 如果要配置其他保护级别，[请参阅指定云](specify-cloud-protection-level-microsoft-defender-antivirus.md)保护级别的Microsoft Defender 防病毒。  
+恶意软件检测要求在提供尽可能强大的保护的同时最大限度地减少误报数之间实现平衡。 不同的环境可能具有保护容忍度与误报风险。 云提供的保护级别允许客户定义适用于特定环境的容限级别。 启用云保护时，会自动配置保护级别以提供强检测，而不会增加检测合法文件的风险。 如果要配置其他保护级别，[请参阅指定云](/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)保护级别的Microsoft Defender 防病毒。  
 
 > [!Note]
 >
 > 更改保护级别可能会导致更高级别的误报，更改前应仔细评估。
->
 
 ## <a name="other-file-sample-submission-scenarios"></a>其他文件示例提交方案
 
@@ -126,10 +125,10 @@ _图 3.云提供的保护和分层机器学习_
 
 将设备载入到适用于终结点的 Microsoft Defender EDR有一个设置可启用设备中的示例集合，这可能会与上面讨论的设置混淆。 当通过 Defender for Endpoint 管理门户请求时，此设置控制设备中的文件示例集合;它受已建立的角色和权限限制。 此设置可以允许或阻止终结点中的文件收集，以使用 Defender for Endpoint 门户中的深入分析等功能。 如果未配置此设置，则默认为启用示例集合。
 
-了解适用于终结点的 Defender 配置设置，请参阅：在 Defender for Endpoint 中为 Windows 10[设备载入工具和方法](configure-endpoints.md)
+[适用于终结点配置的其他 Defender 设置](/configure-endpoints#additional-defender-for-endpoint-configuration-settings)
 
 ### <a name="automated-investigation-and-response-content-analysis"></a>自动调查和响应内容分析
 
 当自动调查在设备上运行时 (当配置为自动运行以响应警报或手动运行) 时，可以从终结点收集标识为可疑的文件，以进一步检查。 可以在 Defender for Endpoint 门户中禁用自动调查的文件内容分析功能。 还可以修改文件扩展名，以添加或删除将在自动调查期间自动提交的其他文件类型的扩展名。
 
-[管理自动化文件上载](manage-automation-file-uploads.md)
+[管理自动化文件上载](/manage-automation-file-uploads)

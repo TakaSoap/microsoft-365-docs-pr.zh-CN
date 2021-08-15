@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 0d53e0fa2912c5cb318cb1e7eb9d23149e1c67a4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 406a7cf3e234bc8d9d4fdb314c39d4ee8cbc9aaad7ff4aea96308595c2b1736a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857774"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用Windows 10载入新设备 
 
@@ -71,9 +71,11 @@ ms.locfileid: "53651503"
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box.
 
-8. 转到"操作 **"选项卡** ，然后单击" **新建..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 输入共享  *WindowsDefenderATPOnboardingScript.cmd* 文件的 NetBIOS 路径。
+8. 在"名称"字段中，键入计划任务策略的适当名称 (例如，Defender for Endpoint Deployment) 。
 
-9. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
+9. 转到操作 **选项卡，** 然后选择新建 **...** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOnboardingScript.cmd* 文件的文件服务器的完全限定域名 (FQDN) 输入 UNC 路径。
+
+10. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
@@ -214,9 +216,11 @@ Policy | 设置
 
 7. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check-box.
 
-8. 转到"操作 **"选项卡** ，然后单击"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 输入共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 文件的* NetBIOS 路径。
+8. 在"名称"字段中，键入计划任务策略的适当名称 (例如，Defender for Endpoint Deployment) 。
 
-9. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
+9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* 文件的文件服务器的完全限定域名 (FQDN) 输入 UNC 路径。
+
+10. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。

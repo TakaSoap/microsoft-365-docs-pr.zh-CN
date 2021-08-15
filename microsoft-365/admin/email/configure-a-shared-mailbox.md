@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 创建共享邮箱并配置其用户的一些设置，例如电子邮件转发和自动答复。
-ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: dafc63bd09cb50501503ab74086b9b51f73e8e7ea1b72d420e610eb58681072c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826215"
 ---
 # <a name="configure-shared-mailbox-settings"></a>配置共享邮箱设置
 

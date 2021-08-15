@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f303bd129bc1cea62375b56e4b535907440f191
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 1158f0bf09b45bda17521ba7e0e472c5633492d205e60c312e93c071abb5e6fc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857879"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>添加或删除计算机标记 API
 
@@ -72,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|string|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,7 @@ Content-Type|string|application/json. **必需**。
 参数|类型|说明
 :---|:---|:---
 值|String|标记名称。 **必需**。
-操作|枚举|添加或删除。 允许的值包括："Add"或"Remove"。 **必需**。
+Action|枚举|添加或删除。 允许的值包括："Add"或"Remove"。 **必需**。
 
 ## <a name="response"></a>响应
 

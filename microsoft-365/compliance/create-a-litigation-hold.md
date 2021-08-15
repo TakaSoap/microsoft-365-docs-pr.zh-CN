@@ -16,12 +16,12 @@ description: 了解如何将邮箱置于诉讼保留状态，在调查期间保�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 3bf6b39edd42d03a11731c436cd5792c3b9f7309
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: a8386eba6373be26ccd3e4a9cb9884ca44cb61237e33d93c33528db4b318c71e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886599"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 

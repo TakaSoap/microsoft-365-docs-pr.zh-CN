@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e6e84fb611e22462b11f6c32a14b10a52ef6e45
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d5307eba16184c8eb3aa3dadf32ad3d2ea69448fd53bdbc27d1db13bef1a40ec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857807"
 ---
 # <a name="batch-update-alerts"></a>批更新通知
 
@@ -74,7 +74,7 @@ POST /api/alerts/batchUpdate
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -88,7 +88,7 @@ Content-Type | String | application/json. **必需**。
 属性 | 类型 | 说明
 :---|:---|:---
 alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **必需**
-status | 字符串 | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
+status | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
 确定 | 字符串 | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"

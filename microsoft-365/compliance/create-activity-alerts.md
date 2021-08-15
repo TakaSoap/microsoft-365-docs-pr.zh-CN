@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在安全与合规中心中添加&活动警报，以便Microsoft 365执行特定活动时发送电子邮件通知
-ms.openlocfilehash: 5ca3b7d49490b3bd43eb82e2f230e804ad769386
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 1411e69229dc2baa60578bfa60a7c2c18184fd10a759081e68c13d87a482d7cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886527"
 ---
 # <a name="create-activity-alerts"></a>创建活动通知
 
@@ -97,7 +97,7 @@ ms.locfileid: "53542053"
 
 若要重新启用活动提醒，只需重复这些步骤并单击"关闭"切换开关，即可将状态更改为 **"开"。**
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 下面是一个电子邮件通知示例，发送给以下用户：在"向字段 (发送此通知"中指定的用户，这些通知在安全 &合规中心内"活动提醒"页面) 上的"收件人"下列出。
 

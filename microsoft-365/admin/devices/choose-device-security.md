@@ -18,19 +18,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在不同的 MDM 和 MAM 方法之间选择。
-ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826227"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>用于保护设备和应用数据的选项
 
 有几种方法可以使用适用于企业或企业的 Microsoft 365保护组织设备和数据。 可以使用以下独立计划：
 
 - Intune (Microsoft Endpoint Management) 
-- Azure Active Directory 高级版计划。
+- Azure Active Directory Premium计划。
 - 大多数 (商业版Microsoft 365企业版计划) 或使用包含某些或所有以前独立计划的订阅。
 
 - 一Microsoft 365 商业高级版订阅，其中包括针对用户数不足 300 的小型企业的安全和威胁防护。
@@ -48,8 +48,8 @@ ms.locfileid: "51579358"
 
 - **Azure Active Directory (AD) 高级版** 计划是独立计划，也随一些企业Microsoft 365计划一起提供。 有关详细信息，请参阅 [Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
-     Azure AD 高级版 P1 和 Azure AD 高级版 P2 允许你设置条件访问功能、自助服务密码重置等。有关计划功能的详细信息，高级版[Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)页面。
-- **Microsoft 365 商业高级版** Intune 和 Azure Active Directory 高级版 P1 以及 Office 365 高级威胁防护。 
+     Azure AD Premium P1和Azure AD Premium P2设置条件访问功能、自助服务密码重置等。有关计划功能的详细信息，高级版[Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)页面。
+- **Microsoft 365 商业高级版** Intune、Azure Active Directory Premium P1 Office 365高级威胁防护。 
  
     Microsoft 365 商业高级版一组用于保护设备和应用数据的策略模板。 它为用户数不足 300 的大多数企业提供了级别良好的安全和威胁防护。 有关详细信息，[请参阅在安装](../../business/set-up.md)向导Microsoft 365 商业高级版设置策略、Windows 10[计算机](../../business/secure-win-10-pcs.md)Microsoft 365 商业高级版[安全与合规功能](../../business/security-features.md)。
 

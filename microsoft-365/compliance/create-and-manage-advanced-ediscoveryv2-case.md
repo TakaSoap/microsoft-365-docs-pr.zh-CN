@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何创建和管理Advanced eDiscovery案例。 第一步是创建案例并开始使用Advanced eDiscovery功能。
-ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886452"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>创建和管理Advanced eDiscovery案例
 
@@ -34,7 +34,7 @@ ms.locfileid: "52311636"
 
 ## <a name="create-a-case"></a>创建案例
 
-完成以下步骤以创建案例并添加成员。 创建案例的用户将自动添加为成员。 案例的成员可以在合规中心内访问Microsoft 365，并执行Advanced eDiscovery任务。
+完成以下步骤以创建案例并添加成员。 创建案例的用户将自动添加为成员。 案例的成员可以在任务中访问Microsoft 365 合规中心并执行Advanced eDiscovery任务。
 
 1. 转到 <https://compliance.microsoft.com> ，然后使用已分配有电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员还可以创建Advanced eDiscovery案例。
 

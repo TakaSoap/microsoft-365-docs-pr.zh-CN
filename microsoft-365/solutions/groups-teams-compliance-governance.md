@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解组、Microsoft 365和Teams的合规性SharePoint选项。
-ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9ffd08d217d7b79db69778021e0629ae7929edb61b2342317c105d60aee181cb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538119"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896951"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>用于组Microsoft 365、Teams和SharePoint的合规性选项
 

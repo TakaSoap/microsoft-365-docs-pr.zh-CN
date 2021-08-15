@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录Windows Microsoft 的基于 DNS。
-ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53826203"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 DNS Windows Microsoft 创建 DNS 记录
 
@@ -54,7 +54,7 @@ To get started， you need to [find your DNS records in Windows based DNS](#find
     - 主机名： 
     - @Address：粘贴你刚刚从 Microsoft 复制的"指向地址"值。  
     - Pref： 
-- 选择 **"保存更改"。**
+- 选择“保存更改”。
 - 请删除任何已过时的 MX 记录。 如果此域有任何将电子邮件路由到其他位置的旧 MX 记录，请选中每个旧记录旁边的复选框，然后选择 **"删除确定**  >  **"。** 
    
 ## <a name="add-cname-records"></a>添加 CNAME 记录

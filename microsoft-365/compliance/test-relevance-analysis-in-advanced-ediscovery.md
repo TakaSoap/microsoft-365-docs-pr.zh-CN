@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示中测试相关性分析
+title: 测试数据中的相关性Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在高级电子数据展示中批量计算后使用"测试"选项卡来测试、比较和验证总体处理质量。
-ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: 了解如何在批处理计算后使用"测试"Advanced eDiscovery测试、比较和验证总体处理质量。
+ms.openlocfilehash: 97adafae8cc6113fbc2f34a1c9a95276439fc834e14ef0b45b345e1deb577ca9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865237"
 ---
-# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>在高级电子数据展示中测试相关性分析
+# <a name="test-relevance-analysis-in-advanced-ediscovery"></a>测试数据中的相关性Advanced eDiscovery
   
-高级电子数据展示中的"测试"选项卡使您能够测试、比较和验证总体处理质量。 这些测试在批计算后执行。 通过标记集合中的文件，专家可以最终判断每个标记的文件是否与案例相关。
+利用该Advanced eDiscovery中的"测试"选项卡，您可以测试、比较和验证总体处理质量。 这些测试在批计算后执行。 通过标记集合中的文件，专家可以最终判断每个标记的文件是否与案例相关。
   
 在单问题和多问题方案中，测试通常按问题执行。 可以在每个测试之后查看结果，并且可以使用指定的示例测试文件对测试结果进行重新修改。
   
 ## <a name="testing-the-rest"></a>测试其余部分
 
-例如，"测试 Rest"测试用于验证剔除决策，以便根据最终的高级电子数据展示结果仅查看特定相关性截止分数之上的文件。 专家查看选定截止分数下的文件示例，以评估该集合中相关文件的数量。
+例如，"测试其余内容"测试用于验证剔除决策，以根据最终结果仅查看特定相关性截止分数Advanced eDiscovery文件。 专家查看选定截止分数下的文件示例，以评估该集合中相关文件的数量。
   
 此测试提供"审阅集"和"测试 Rest"总体之间的统计信息和比较。 审阅集的结果由培训期间相关性计算的结果。 结果包括基于设置和输入参数的计算，例如：
   
