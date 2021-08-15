@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 04de03e22e270099c647a0dd1ac6d3bb9826ccf87014031bb13ed77b0b580870
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840115"
 ---
 # <a name="diagnostic-logs"></a>诊断日志
 

@@ -2,8 +2,8 @@
 title: 开始使用可见性和见解
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用可见性和见解。
-ms.openlocfilehash: 04c8403302996bf8c26a6cb5352c5d92ec51f9ff
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 63b55b6c943d1ccd274477aff9b3327f58aade5da9e6fd4b89db2c73c21d809c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887052"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>开始使用可见性和见解
 
@@ -29,15 +29,17 @@ ms.locfileid: "53541166"
 
 ![Microsoft 365 合规中心内的应用治理概述页面](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
-你还可以从“**Office 365 管理中心”>“Microsoft 365 合规中心”>“应用治理”>“概述**”页访问应用治理仪表板。
+你还可以从“**Office 365”>“Microsoft 365 合规中心”>“应用治理”>“概述**”页访问应用治理仪表板。
 
 ## <a name="whats-available-on-the-dashboard"></a>仪表板上提供的内容
 
 仪表板包含租户中 Microsoft 365 应用生态系统组件的摘要：
 
 - **租户摘要**：关键应用和警报类别的计数。
-- **检测和策略警报**：租户中最近的活动警报
-- **数据和资源访问**：聚合应用 API 访问和租户中热门资源的总体使用情况。 将鼠标悬停在图表中的每个月份列上可以看到对应的值。
+- **热门警报**：租户中最新的 10 个活动警报
+- **数据和资源访问权限**：在图形中每月的列上移动鼠标以查看相应的值。
+    - **过去四个月中的数据访问**: 跟踪租户中所有应用在过去四个日历月中通过 Graph API 访问的数据总数。目前仅包括邮件和文件上传/下载的使用。
+    - **过去四个月中排名靠前的资源数据访问**: 过去四个日历月中数据使用情况，按资源类型细分。目前仅包括邮件和文件上传/下载的使用
 - **改进应用保护和治理**：建议的操作，例如创建应用使用或权限策略。
 - **按类别排列的热门应用**：按以下类别排序的热门应用：
   

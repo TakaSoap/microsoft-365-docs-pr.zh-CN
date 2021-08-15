@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以将非安全数据源添加到Advanced eDiscovery案例，并保留该数据源。 非索引数据源会重新编制索引，因此将重新处理标记为部分索引的任何内容，使其完全且快速可搜索。
-ms.openlocfilehash: 097b054bdcc1dc37f74f86703ac8d7061b76ebba
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: bb43c7fe6a57a45e8eea9ff87601c13e018bff5707e474206e97fe05c6c3a6e7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855922"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>将非安全数据源添加到Advanced eDiscovery案例
 

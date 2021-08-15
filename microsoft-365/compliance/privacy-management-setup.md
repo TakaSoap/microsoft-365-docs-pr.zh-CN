@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: 0486c073da8061b72eedb9a7fac44adf6d38ae19
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8c66d041b05a672c3622d0187fb3a6b538e2505d7f5a69eed1f2089cabef2e24
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648599"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53830703"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 

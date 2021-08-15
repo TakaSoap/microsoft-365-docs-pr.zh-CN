@@ -19,16 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 完成设置 OME Office 365 邮件加密 (OME) ，了解如何以多种方式自定义部署。
-ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 73862bd08ba393d7ccc24a2b665cb3ac83df99a9018b3c9945ce3cae691e78a5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52650980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855991"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
-完成 OME Office 365 邮件加密 (OME) 后，可以通过多种方式自定义部署配置。 例如，可以配置是否启用一次传递代码、在 Web 上的Outlook"加密"按钮等。  本文中的任务介绍了操作方法。
+完成 OME Office 365 邮件加密 (OME) 后，可以通过多种方式自定义部署配置。 例如，可以配置是否启用一次传递代码、在密码中显示"加密"Outlook 网页版等。 本文中的任务介绍了操作方法。
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>管理 Google、Yahoo 和 Microsoft 帐户收件人是否可以使用这些帐户登录 Office 365 邮件加密门户
 
@@ -82,11 +82,11 @@ ms.locfileid: "52650980"
    Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
    ```
 
-## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>管理"加密"按钮在 web Outlook中的显示
+## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>管理"加密"按钮在Outlook 网页版
 
 作为管理员，您可以管理是否向最终用户显示此按钮。
   
-### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>管理"加密"按钮是否显示在Outlook网页中
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>管理"加密"按钮是否显示在Outlook 网页版
   
 1. 使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -221,7 +221,7 @@ iOS 邮件应用程序无法解密受邮件安全Office 365 邮件加密。 作�
   
 1. 使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 如果在 Web上的 Outlook 启用"加密"按钮，请通过运行带 SimplifiedClientAccessEnabled 参数的 Set-IRMConfiguration cmdlet 来禁用它。 否则，请跳过此步骤。
+2. 如果启用了"加密"按钮，Outlook 网页版使用 SimplifiedClientAccessEnabled 参数运行 Set-IRMConfiguration cmdlet 来禁用它。 否则，请跳过此步骤。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2af9f7988e25b9f6e74f65593a4524cba25e476c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 9916f0d7f41354decbe935a635dd709e2cfe1f6320cdb6edf9cc84c59559a964
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839551"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 资源类型
 
@@ -66,10 +66,10 @@ ms.locfileid: "53650999"
 |ID|Guid|计算机 [操作实体的](machineaction.md) 标识。|
 |type|枚举|操作的类型。 可能的值包括："RunAntiVirusScan"、"Offboard"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"和"UnrestrictCodeExecution"|
 |scope|string|操作的范围。 "完全"或"选择性"用于隔离，"快速"或"完全"用于防病毒扫描。|
-|requestor|字符串|执行该操作的人的身份。|
-|requestorComment|字符串|发出操作时写入的注释。|
+|requestor|String|执行该操作的人的身份。|
+|requestorComment|String|发出操作时写入的注释。|
 |status|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Canceled"。|
-|machineId|字符串|已 [执行](machine.md) 该操作的虚拟机的 ID。|
+|machineId|String|已 [执行](machine.md) 该操作的虚拟机的 ID。|
 |machineId|字符串|已 [执行](machine.md) 该操作计算机的名称。|
 |creationDateTimeUtc|DateTimeOffset|创建该操作的日期和时间。|
 |lastUpdateTimeUtc|DateTimeOffset|上次更新操作状态的日期和时间。|

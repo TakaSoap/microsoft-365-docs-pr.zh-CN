@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用 Microsoft 365 中的电子数据展示工具在 Exchange 混合部署中搜索和导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab59c179b62903dd5f1ddd9b718f81a1ac78923a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f89882517dc28d0bb3aadbf082d23c5b08e0f7f3aff893e9d8bbf66fb7476054
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855659"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 

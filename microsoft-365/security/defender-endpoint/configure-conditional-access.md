@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2460b1aac746e706175524e7f201610a1888c255
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 281a9391fdc512882a4a7aef2dfecf51e28ce77a9724f0ba1882d75f7bbff935
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839851"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -77,7 +77,7 @@ ms.locfileid: "53655859"
 1. 登录 [Azure 门户](https://portal.azure.com)。
 2. 选择 **设备合规性**  >  **Microsoft Defender ATP**。
 3. 将 **连接 Windows 10.0.15063+ 设备设置为"打开"。。** 
-4. 单击“**保存**”。
+4. 单击 **保存**。
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步骤 3：在 Intune 中创建合规性策略
 

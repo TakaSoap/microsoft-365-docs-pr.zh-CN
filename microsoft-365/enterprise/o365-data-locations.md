@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ee2e3630901f5c18382f2671ba72f684602a309edd2b28efa22f3ea14567a326
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028952"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864179"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -90,14 +90,14 @@ Microsoft 365 使用服务端技术对静态和传输中的客户数据进行加
 
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Microsoft Intune 数据位置有哪些例外情况？
 
-Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 下列情况除外：
+Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。除非：
 
 - Microsoft 必须提供客户支持、解决服务问题或遵守法律要求。
 - 客户配置帐户以启用此类客户数据存储，包括通过以下方式使用：
 
   - 设计为全局运行的功能，例如内容交付网络（CDN），可提供全局缓存服务，并将客户数据存储到世界各地的边缘位置。
 
-  - Azure Active Directory（Azure AD），它可能会在世界各地存储目录数据。 这不适用于部署在美国的 Azure AD（仅适用于美国的 Azure AD 数据）或欧洲（Azure AD 数据存储在欧洲或美国）。
+  - Azure Active Directory (Azure AD)，它可能会在世界各地存储目录数据。这不适用于部署在美国的 Azure AD（仅适用于美国的 Azure AD 数据）或欧洲（Azure AD 数据存储在欧洲或美国）。
    
   - “预览”、“Beta”或其他预发布服务通常将客户数据存储在美国，但也可能将其存储在世界各地。
 

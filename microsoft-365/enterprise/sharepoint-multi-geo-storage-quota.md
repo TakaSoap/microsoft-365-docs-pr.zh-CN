@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解SharePoint多地理位置环境中配置存储配额，以及如何由 SharePoint Online 管理员管理配额。
-ms.openlocfilehash: 0843407e7926027e28cdd1f5893c4aafec4e1cd5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: d7c45831c5168313e52c373a3d420a3ef480bef9bb8f01c2c69c34273bae8b41
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904284"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>多地理位置环境中的 SharePoint 存储配额
 

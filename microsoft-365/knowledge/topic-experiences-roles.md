@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 在 Viva 主题中了解用户角色。
-ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: d09a0e976bd403ffc13be5af5e011451763f44dcca9820f2c448c310cc8fc36d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53622288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840139"
 ---
 # <a name="roles-in-microsoft-viva-topics"></a>主题中Microsoft Viva的角色
 

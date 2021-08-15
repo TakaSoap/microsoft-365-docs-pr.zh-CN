@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 PowerShell 从命令行来创建和发布保留标签，而不受 Microsoft 365合规中心影响。
-ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d18305dc6ca114b41f9b8d3a2932ff6580e4fc3e738834e30505465dd1a4f7c1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886907"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 创建和发布保留标签
 

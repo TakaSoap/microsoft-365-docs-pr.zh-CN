@@ -1,6 +1,6 @@
 ---
-title: 使环境准备好进行Microsoft Viva Topics
-description: 准备好你的环境，以便你可以为用户提供尽可能多的内容，Microsoft Viva Topics。
+title: 使环境准备好使用Microsoft Viva主题
+description: 准备好你的环境，以便你可以为用户提供尽可能多的内容，Microsoft Viva主题。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,14 +10,14 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 84a07211126e2007b0f5740c18ef871d24497d8746d369acabf0aa9adf0203b9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864144"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>使环境准备好进行Microsoft Viva Topics
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>使环境准备好使用Microsoft Viva主题
 
 为了充分利用 Viva 主题，您希望包含尽可能多的主题发现内容，以便为用户提供一组丰富的主题。 但是，哪些内容应该用于主题发现？ 如何在保持控制的同时最大化已编制索引的内容？ 范围内的内容越多，人工智能可以发现的见解就越好。 本文将指导你完成规划步骤，以确保包含适当的内容，并且具有合适的人员和资源来为用户提供良好的体验。
 
@@ -107,7 +107,7 @@ ms.locfileid: "52984876"
 管理员可以在管理中心Microsoft 365 管理索引。 设置 [Viva 主题时](set-up-topic-experiences.md)，您可以：
 
 - 允许所有 SharePoint 站点上的发现，或指定要包含或排除的站点作为主题源。
-- 具有敏感条款时，还可按名称排除主题。 例如，无论用户的权限如何，如果有敏感项目的名称，都不希望出现突出显示或卡片，则可以排除该项目名称。
+- 如果有敏感术语，还可以按名称排除主题。例如，如果具有敏感项目的名称，并且不希望突出显示或显示卡片，则无论用户的权限如何，都可以排除该项目名称。
 
 在内容级别，还可以控制可发现的内容。 您为从搜索中排除内容所做的任何配置也将由内容发现使用。 因此，例如，如果您将特定文档库从搜索结果中排除，则此文档库不会用于主题发现。
 

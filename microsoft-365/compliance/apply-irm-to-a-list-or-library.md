@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: 您可以使用信息权限管理 (IRM) 来帮助控制和保护从列表或库下载的文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0648d511ee882765f1905e83ebdea673f306c186
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 8e6390e20b19c291ea79417082d926e670d7b59a27572d58e25b888e8a18d023
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887017"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>将信息权限管理 (IRM) 列表或库
 
@@ -66,7 +66,7 @@ ms.locfileid: "50233348"
 
 7. 若要对此列表或库中的文档应用其他限制，请选择"显示选项"，然后执行下列任一操作： 
 
-|**为此，请执行以下操作：**|**为此：**|
+|**为此:**|**为此：**|
 |:-----|:-----|
 |允许用户从此列表或库中打印文档|选中" **允许查看者打印"** 复选框。|
 |允许至少具有"查看项目"权限的用户对文档运行嵌入的代码或宏。|选中" **允许查看者运行脚本和屏幕阅读器对下载的文档** 运行功能"复选框。如果选择此选项，则用户可以运行代码来提取文档的内容。           |

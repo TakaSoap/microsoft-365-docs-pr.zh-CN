@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 了解如何通过将其转换为包含非活动邮箱内容的新邮箱Office 365恢复非活动邮箱的内容。
-ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62b3412b0c6152ea0ceb3d902218654f6559c198c680743021bb18f0dcc9e0c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855643"
 ---
 # <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
@@ -73,7 +73,7 @@ ms.locfileid: "50926170"
 
    恢复的非活动邮箱的主 SMTP 地址的值与  *MicrosoftOnlineServicesID*  参数指定的值相同。
 
-恢复非活动邮箱后，还会创建一个新的用户帐户。 您需要通过分配许可证来激活此用户帐户。 若要在管理中心Microsoft 365许可证，请参阅同时添加[用户和分配许可证](../admin/add-users/add-users.md)。
+恢复非活动邮箱后，还会创建一个新的用户帐户。 您需要通过分配许可证来激活此用户帐户。 若要在许可证分配Microsoft 365 管理中心，请参阅同时[添加用户和分配许可证](../admin/add-users/add-users.md)。
 
 ## <a name="more-information"></a>详细信息
 

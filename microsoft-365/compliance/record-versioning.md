@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 86fbd84e03263ca5d99e1bfe6ab572589dc98bbd
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 41967ee8372335bc60a12bd200154c70a1d7ce883ec895d8f9cc3b6af6346672
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855708"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 

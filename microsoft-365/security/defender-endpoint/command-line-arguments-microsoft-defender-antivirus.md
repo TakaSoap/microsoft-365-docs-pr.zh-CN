@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: efeb49b2741bdc45f7924032c2deb8a27458ca29
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7f407ae3018dc9214d364528c2392b00b7279489d98ec96c5b5d24d8207bfc01
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904127"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用 Microsoft Defender 防病毒命令行工具mpcmdrun.exe和管理应用程序
 
@@ -51,7 +51,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 | 命令  | 说明   |
 |:----|:----|
-| `-?` **或** `-h`   | 显示 MpCmdRun 工具的所有可用选项 |
+| `-?`**或**`-h`   | 显示 MpCmdRun 工具的所有可用选项 |
 | `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 扫描恶意软件。 **ScanType 的值为**：<p>**0** 默认，根据你的配置<p>**1** 快速扫描<p>**2** 完全扫描<p>**3** 文件和目录自定义扫描。<p>CpuThrottling 根据策略配置运行 |
 | `-Trace [-Grouping #] [-Level #]` | 启动诊断跟踪 |
 | `-GetFiles [-SupportLogLocation <path>]` | 收集支持信息。 请参阅'[收集诊断数据](collect-diagnostic-data.md)'  |

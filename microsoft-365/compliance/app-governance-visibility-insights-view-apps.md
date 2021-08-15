@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查看你的应用。
-ms.openlocfilehash: 5a11e161fb7b37405b61866599a616874ad4a190
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: b711610461ec02a4e3174557f77fc0d553afd124ae13a96d858a2ae353e4a554
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886982"
 ---
 # <a name="view-your-apps"></a>查看你的应用
 

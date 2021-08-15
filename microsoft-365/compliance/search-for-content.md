@@ -10,27 +10,25 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: 使用安全 & 合规中心中的内容搜索电子数据展示工具快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。
-ms.openlocfilehash: a70c234331d1329fb80f32fb81762391a862d487
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: 使用 Microsoft 365 合规中心 中的内容搜索电子数据展示工具可快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。
+ms.openlocfilehash: d56c2e9532611593fe41df8ac2bee4860b3920b175e50a188abbc8de67812473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53855631"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>使用内容搜索工具搜索内容
 
-使用安全 & 合规中心中的内容搜索工具快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。 您可以使用内容搜索工具在协作工具（如组和组）中搜索电子邮件、文档Microsoft Teams Microsoft 365对话。
-
+使用 Microsoft 365 合规中心 中的内容搜索工具可快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。 您可以使用内容搜索工具在协作工具（如组和组）中搜索电子邮件、文档Microsoft Teams Microsoft 365对话。
+  
 ## <a name="search-for-content"></a>搜索内容
 
 第一步是开始使用内容搜索工具选择要搜索的内容位置，并配置关键字查询以搜索特定项目。 或者，您可以将查询留空并返回目标位置的所有项目。
-
+  
 - [创建和运行](content-search.md) 内容搜索
 
-- 内容搜索服务 [功能参考] (content-search-reference.md) 
+- [内容搜索](content-search-reference.md) 的功能参考
 
 - [生成搜索查询并使用条件](keyword-queries-and-search-conditions.md) 来缩小搜索范围
 
@@ -53,17 +51,17 @@ ms.locfileid: "53226055"
 ## <a name="perform-actions-on-content-you-find"></a>对找到的内容执行操作
 
 运行搜索并在必要时进行优化后，下一步是对搜索返回的结果执行一些操作。 您可以将结果导出并下载到本地计算机，或在组织受到电子邮件攻击的情况下，可以从用户邮箱中删除搜索结果。
-
+  
 - [导出内容搜索的结果，](export-search-results.md) 并下载到本地计算机
 
-- [搜索并删除电子邮件](search-for-and-delete-messages-in-your-organization.md) ，例如包含病毒、危险附件或网络钓鱼邮件的邮件
+- [搜索并删除电子邮件](search-for-and-delete-messages-in-your-organization.md)，例如包含病毒、危险附件或网络钓鱼邮件的邮件
 
 - [导出有关](export-a-content-search-report.md) 内容搜索结果的报告，而不导出实际结果
 
 ## <a name="learn-more-about-content-search"></a>详细了解内容搜索
 
 内容搜索易于使用，但它也是一个强大的工具。 在后台，会进行很多操作。 你越了解它并了解它的行为及其限制，你越成功地使用它以满足组织的搜索和调查需求。 了解以下信息：
-
+  
 - [网站和网站](partially-indexed-items-in-content-search.md)中的部分Exchange索引SharePoint以及如何在导出和下载搜索结果时包含或排除这些项
 
 - [调查部分索引](investigating-partially-indexed-items-in-ediscovery.md) 项并确定组织对这些项目的曝光

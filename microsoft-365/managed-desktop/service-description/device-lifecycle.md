@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a8b8abc58b82d08d004d204396cfd8e381c6303a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f7c2a72fdd212eb9a549d3b855a693f095949e0dbb203caf05d37e9ad8ace226
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904309"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft 托管桌面产品生命周期
 
-Microsoft 托管桌面使用户受益，因为他们始终使用提供最佳性能、可靠性、设计和安全功能的设备 (如支持 Windows Hello) 。 为实现这一Microsoft 托管桌面，需要维护一个持续更新的已批准设备的简短目录。 可以通过在"购买商业Microsoft 托管桌面"网站上筛选Windows 10 专业版[批准的](https://www.microsoft.com/windowsforbusiness/view-all-devices)设备。
+Microsoft 托管桌面使用户受益，因为他们始终使用提供最佳性能、可靠性、设计和安全功能的设备， (如支持 Windows Hello) 。 为实现这一Microsoft 托管桌面，需要维护一个持续更新的已批准设备的简短目录。 可以通过在"购买商业Microsoft 托管桌面"网站上筛选Windows 10 专业版[批准的](https://www.microsoft.com/windowsforbusiness/view-all-devices)设备。
  
 本文详细介绍了在已批准目录中添加和删除设备的生命周期。 
 

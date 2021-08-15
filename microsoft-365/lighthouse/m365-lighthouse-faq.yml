@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，请获取有关 (常见问题解答) 常见问题Microsoft 365 Lighthouse。
-  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
-  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+  ms.openlocfilehash: f144e2a1535054508e548a8b2848600e45c4adba1763de85194879965a8358af
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/13/2021
-  ms.locfileid: "53415526"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53840127"
 title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
 summary: >
   > [!NOTE]
@@ -79,4 +79,16 @@ sections:
 
       若要了解有关租户的更多信息，请参阅Microsoft 365 Lighthouse[租户列表概述](m365-lighthouse-tenant-list-overview.md)。
   - question: 如果我Microsoft 365 Lighthouse租户拥有除客户租户之外的其他订阅，Microsoft 365 商业高级版？
-    answer: Microsoft 365 Lighthouse管理具有针对其用户Microsoft 365 商业高级版许可证的客户租户。 对于没有商业版许可证的客户租户高级版，Microsoft 365 Lighthouse功能将受到限制。 例如，如果用户缺少包含 Intune 的许可证，该用户的设备、设备符合性状态和威胁状态将不可用;如果用户缺少包含 Azure AD P1 的许可证，该用户的密码和登录管理将不可用。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+    answer: >
+      Microsoft 365 Lighthouse管理具有针对其用户Microsoft 365 商业高级版许可证的客户租户。 对于没有商业版许可证的客户租户高级版，Microsoft 365 Lighthouse功能将受到限制。 例如，如果用户缺少包含 Intune 的许可证，该用户的设备、设备符合性状态和威胁状态将不可用;如果用户缺少包含 Azure AD P1 的许可证，该用户的密码和登录管理将不可用。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 如何有资格管理客户云Microsoft 365 Lighthouse？
+    answer: >
+      如果你满足使用云Microsoft 365 Lighthouse的要求，则你有资格在 Microsoft 365 Lighthouse 中管理客户云Microsoft 365 Lighthouse。 有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
+  - question: 在哪里可以为客户购买 Windows 365 (云) 许可证？
+    answer: >
+      可以通过所有Windows Microsoft 商业销售渠道购买 365 个许可证。 购买的一个许可证相当于购买一台云电脑。 目前，只能为每个用户分配一台相同 SKU 类型的云电脑，但如果它们具有不同的 SKU 类型，则他们可分配多个云电脑。 若要比较 Windows 365 计划和定价，请参阅获取Windows适合你的[Windows 365 云电脑](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。
+  - question: 如何获得帮助和支持？
+    answer: >
+      在Microsoft 365 Lighthouse中，选择 **"** " 图标打开帮助 **窗格** 。 你可以在此处访问自助文章或联系支持人员。 有关帮助和支持选项的详细信息，请参阅获取有关帮助[和支持Microsoft 365 Lighthouse。](m365-lighthouse-get-help-and-support.md)
+  - question: 在哪里可以提交反馈和想法？
+    answer: 您的反馈非常重要，并且对我们非常重要！ 通过"Intune 反馈"页提交[Microsoft Endpoint Manager或功能想法](https://go.microsoft.com/fwlink/?linkid=2151507)。 你可以开始有关 Microsoft 365 Lighthouse 和 Windows 365 功能的对话、向其他合作伙伴或 Microsoft 员工提问、提供功能反馈等。
