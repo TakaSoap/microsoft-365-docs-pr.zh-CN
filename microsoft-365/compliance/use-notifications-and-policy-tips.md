@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 了解如何将策略提示添加到 DLP (策略) 数据丢失防护，以通知用户他们处理的内容与 DLP 策略冲突。
-ms.openlocfilehash: f8b1c4228dcccf82a8dadb8b942d2587f92ba382
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 0eb30101dc42ab25eef5625f2fa952cac8f8bda89e6c72a5f7f46186ac96f652
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53623044"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859866"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -286,7 +286,7 @@ Office桌面程序自动直接从 Office 365 同步 DLP 策略，然后扫描文
 ## <a name="more-information"></a>更多信息
 
 - [了解数据丢失防护](dlp-learn-about-dlp.md)
-- [根据模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
+- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 - [DLP 策略条件、例外和操作 (预览) ](./dlp-microsoft-teams.md)
 - [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)

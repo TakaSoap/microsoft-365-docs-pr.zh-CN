@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 73c63374b980eea272d8940b7c6e62827788075c3827341dfe1ff039d4c6fa58
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bc8b5d2229dac85ff5029c3f40bb0581a66b3343
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253542"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
@@ -34,7 +34,7 @@ ms.locfileid: "53833887"
 
 - 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)。
 
-分类为错误配置或非活动的设备可能由于各种原因被标记。 本节提供了一些说明，说明可能导致设备被分类为非活动或错误配置的原因。
+分类为错误配置或非活动的设备可能由于各种原因被标记。 本节提供有关可能导致设备被分类为非活动或错误配置的一些说明。
 
 ## <a name="inactive-devices"></a>非活跃设备
 
@@ -45,7 +45,7 @@ ms.locfileid: "53833887"
 如果设备出于任何原因未使用七天以上，它将在门户中保持"非活动"状态。
 
 ### <a name="device-was-reinstalled-or-renamed"></a>已重新安装或重命名设备
-重新安装或重命名的设备将在新的设备Microsoft Defender 安全中心。 以前的设备实体在门户中将保持"非活动"状态。 如果重新安装了设备并部署了 Defender for Endpoint 程序包，请搜索新设备名称以验证设备是否正常报告。
+重新安装或重命名的设备将在新设备中生成Microsoft Defender 安全中心。 以前的设备实体在门户中将保持"非活动"状态。 如果重新安装了设备并部署了 Defender for Endpoint 程序包，请搜索新设备名称以验证设备是否正常报告。
 
 ### <a name="device-was-offboarded"></a>设备已载出
 如果设备已载出，它仍将显示在设备列表中。 七天后，设备运行状况应更改为非活动状态。
@@ -93,3 +93,9 @@ ms.locfileid: "53833887"
 
 ## <a name="see-also"></a>另请参阅
 - [检查 Microsoft Defender for Endpoint 中的传感器运行状况](check-sensor-status.md)
+- [客户端分析器概述](overview-client-analyzer.md)
+- [下载并运行客户端分析器](download-client-analyzer.md)
+- [在客户端上运行Windows](run-analyzer-windows.md)
+- [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
+- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)
+

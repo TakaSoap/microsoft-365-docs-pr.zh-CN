@@ -1,6 +1,6 @@
 ---
 title: 创建Microsoft 365 Defender评估环境
-description: 通过激活Microsoft 365 Defender设置试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
+description: 通过激活试用Microsoft 365 Defender设置你的试用实验室或试验环境。 然后设置 Microsoft Defender for Identity (MDI) 所有其他 M365D 评估。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,20 +21,20 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 6e89591b57be2bf79664547715906074b92b54649e1858bde9ffe06cb2be9335
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3b2af2f8d893245c596af07284ee095985af7e2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867615"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252836"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>创建Microsoft 365 Defender评估环境
 
 在评估中，有两种常见方法可以执行下一步。 本文档假定你已有生产 M365 租户，并且将激活 E5 试用许可证，以在当前环境中评估 M365 *Defender。* 就地评估将让你保留任何安全方法，在评估期后购买许可证。
 
-第二个[操作是Microsoft 365 Defender测试](setup-m365deval.md)实验室环境以进行评估。 业务可能没有太多实际信号，因此请注意这一点。
+第二个操作[是Microsoft 365 Defender测试](setup-m365deval.md)实验室环境以进行评估。 业务可能没有太多实际信号，因此请注意这一点。
 
-## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>激活 E5 试用许可证以评估Microsoft 365 Defender 
+## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>激活 E5 试用版许可证以评估Microsoft 365 Defender 
 1. 登录到现有 M365 租户管理门户。
 2. 从 *导航菜单中选择* "购买服务"。
 3. 向下滚动到 *"Office 365"* 部分，然后选择"许可证"下的"Office 365 E5按钮。
@@ -47,7 +47,7 @@ ms.locfileid: "53867615"
 
 5. 确认你的请求，然后单击立即 *尝试* 按钮。
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="在&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮 (25 个用户试用一Office 365 E5 25) 。":::
+:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="在&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮， (25 个用户的 Office 365 E5 试用版，) 。":::
 
 ## <a name="next-steps"></a>后续步骤
 [启用Microsoft 365标识](eval-defender-identity-overview.md)

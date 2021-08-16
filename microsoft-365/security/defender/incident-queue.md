@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: f504ac86dcef68bf4427819babea119b2418512bee59e169ffd72e51a6dd92dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873459"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -77,7 +77,7 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 | 调查状态 | 按自动调查的状态筛选事件。  |
 | 多个类别 | 可以选择仅查看映射到多个类别并因此可能导致更多损坏的事件。 |
 | 多个服务源  | 筛选以仅查看包含来自不同来源的警报的事件 (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。 |
-| 操作系统平台 | 按操作系统限制事件队列视图。 |
+| OS 平台 | 按操作系统限制事件队列视图。 |
 | 服务源 | 通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。 |
 | 严重性 | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
 | 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |

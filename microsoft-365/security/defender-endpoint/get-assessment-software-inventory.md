@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e3ccce5c5955418e3e1243b96d51e5999f0f585
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 8a1f956f74bebe778abdd974941dd8d055c9f092b1e1203bdbc7b9237cd93c45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656807"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857563"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>导出每个设备的软件清单评估
 
@@ -92,20 +92,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-DeviceId|字符串|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
+DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。|[ "C： \\Program Files (x86) \\ Microsoft \\ Silverlight \\ Application \\silverlight.exe" ]
-EndOfSupportDate|字符串|此软件支持已结束或将终止的日期。|2020-12-30
-EndOfSupportStatus|字符串|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。|即将推出的 EOS
+EndOfSupportDate|string|此软件支持已结束或将终止的日期。|2020-12-30
+EndOfSupportStatus|string|停止提供支持状态。 可以包含以下可能的值：None、EOS Version、Upcoming EOS Version、EOS Software、Upcoming EOS Software。|即将推出的 EOS
 Id|string|记录的唯一标识符。|123ABG55_573AG&mnp！
 NumberOfWeaknesses|int|此设备上此软件上漏洞的数量|3
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RegistryPaths|Array[string]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE \\SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp|字符串|首次在设备上看到此软件。|2019-04-07 02:06:47
-SoftwareName|字符串|软件产品的名称。|Silverlight
-SoftwareVendor|字符串|软件供应商的名称。|microsoft
-SoftwareVersion|字符串|软件产品的版本号。|81.0.4044.138
+SoftwareFirstSeenTimestamp|string|首次在设备上看到此软件。|2019-04-07 02:06:47
+SoftwareName|string|软件产品的名称。|Silverlight
+SoftwareVendor|string|软件供应商的名称。|microsoft
+SoftwareVersion|string|软件产品的版本号。|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 示例
@@ -254,7 +254,7 @@ GET /api/machines/SoftwareInventoryExport
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|字符串|导出的生成时间。|2021-05-20T08：00：00Z
+GeneratedTime|string|导出的生成时间。|2021-05-20T08：00：00Z
 |
 
 ### <a name="26-examples"></a>2.6 示例

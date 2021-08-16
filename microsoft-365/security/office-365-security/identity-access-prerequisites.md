@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: edce65314062f731673926195be791f77d1cb823
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 684585d38bd66e5a62df82e9c757a80775f4403e42d4f28c929d1f6e3fe3852f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873353"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
@@ -35,7 +35,7 @@ ms.locfileid: "51952544"
 
 本文介绍管理员使用推荐的标识和设备访问策略以及使用条件访问必须满足的先决条件。 本文还讨论了为 SSO 登录体验的最佳单一登录 (客户端) 默认值。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 在使用建议的标识和设备访问策略之前，组织必须满足先决条件。 对于列出的各种标识和身份验证模型，要求是不同的：
 
@@ -99,8 +99,8 @@ ms.locfileid: "51952544"
 
 |平台|Word/Excel/PowerPoint|OneNote|OneDrive 应用|SharePoint 应用|[OneDrive 同步客户端](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 8.1|支持|支持|不适用|不适用|受支持|
-|Windows 10|支持|支持|不适用|不适用|受支持|
+|Windows 8.1|支持|支持|不适用|不适用|支持|
+|Windows 10|支持|支持|不适用|不适用|支持|
 |Android|支持|支持|支持|支持|不适用|
 |iOS|支持|支持|支持|支持|不适用|
 |macOS|支持|支持|不适用|不适用|不支持|
@@ -116,7 +116,7 @@ ms.locfileid: "51952544"
 
 ## <a name="protecting-administrator-accounts"></a>保护管理员帐户
 
-对于 Microsoft 365 E3 E5 或具有单独的 Azure AD 高级版 P1 或 P2 许可证，可以使用手动创建的条件访问策略要求管理员帐户使用 MFA。 有关详细信息[，请参阅条件访问：要求管理员使用 MFA。](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+对于 Microsoft 365 E3 E5 或具有单独的 Azure AD Premium P1 或 P2 许可证，可以使用手动创建的条件访问策略要求管理员帐户使用 MFA。 有关详细信息[，请参阅条件访问：要求管理员使用 MFA。](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 
 对于不支持Microsoft 365 Office 365访问的用户帐户版本，可以启用安全默认值以要求所有帐户使用 MFA。 [](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
@@ -127,7 +127,7 @@ ms.locfileid: "51952544"
 - 创建和使用单独的帐户，这些帐户Microsoft 365 [管理员角色用于](../../admin/add-users/about-admin-roles.md)*管理*。 管理员应拥有自己的用户帐户，用于常规的非管理用途，并且仅在必要时使用管理帐户来完成与其角色或作业功能相关联的任务。
 - 遵循 [在](/azure/active-directory/admin-roles-best-practices) Azure AD 中保护特权帐户的最佳实践。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 2：配置通用标识和访问条件访问策略](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

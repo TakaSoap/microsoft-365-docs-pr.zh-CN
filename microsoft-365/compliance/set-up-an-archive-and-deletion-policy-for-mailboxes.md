@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何在存档和删除策略Microsoft 365自动将项目移动到用户的存档邮箱。
-ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a7367bc8861f02b31a4782770e28c86c133b5b46add0fa22da30f2f078f47881
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871504"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 

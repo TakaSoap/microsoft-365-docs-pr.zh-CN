@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9d3eb0668b855745aee32ac0d070613a60a20b93ec13fef6ff564f2f4c7944a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 70957d49f818424062002b8604854bf3bd5e60cb
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58252481"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>试用 Microsoft Defender for Identity
 
@@ -49,7 +49,7 @@ ms.locfileid: "53857216"
 
 Microsoft 为使用 Microsoft 云服务的客户提供安全基准建议。 [Azure 安全](/security/benchmark/azure/overview)基准 (ASB) 提供了说明性最佳做法和建议，以帮助提高 Azure 上的工作负载、数据和服务的安全性。
 
-这些基准建议包括 Microsoft Defender 标识 的 [Azure 安全基线](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 实施这些建议可能需要一些时间来计划和实现。 虽然这将大大提高标识环境的安全性，但不应阻止你继续评估和实现 Microsoft Defender for Identity。 此处提供了这些信息，以用于你的了解。
+这些基准建议包括 Microsoft Defender 标识 的 [Azure 安全基线](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 实施这些建议可能需要一些时间来计划和实现。 虽然这将大大提高标识环境的安全性，但不应阻止你继续评估和实现 Microsoft Defender for Identity。 此处提供了这些功能，以用于你的感知。
 
 ## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>步骤 2. 试用功能 - 演练用于识别和修正不同攻击类型的教程
 
@@ -70,6 +70,6 @@ Microsoft Defender for Identity 文档包括一系列教程，这些教程演示
 
 [评估 Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-返回到评估 Microsoft [Defender](eval-defender-office-365-overview.md) for Office 365
+返回到评估 Microsoft [Defender for Office 365](eval-defender-office-365-overview.md)
 
 返回到评估和试点[计划概述Microsoft 365 Defender](eval-overview.md)

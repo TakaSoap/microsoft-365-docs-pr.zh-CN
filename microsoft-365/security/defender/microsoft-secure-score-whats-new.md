@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全分数中的新增功能
-description: 介绍安全中心内 Microsoft 安全分数Microsoft 365更改。
-keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心
+description: 介绍 Microsoft 安全分数在 microsoft 安全分数门户中Microsoft 365 Defender更改。
+keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c0abdd26456fe9c7d2ee6111f8c15805af3f66b7738b42ee79fb1a230e08239d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884135"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58249061"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "53884135"
 
 为了更好地代表 Microsoft 安全分数的安全状态，我们进行了一些更改。 若要了解计划更改，请参阅 Microsoft 安全分数 [中即将提供哪些功能？](microsoft-secure-score-whats-coming.md)
 
-Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/securescore [中心。](overview-security-center.md)
+可在 Microsoft 安全分数门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到](overview-security-center.md)。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
@@ -51,7 +51,7 @@ Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/s
 - 修复适用于 macOS 的 Microsoft Defender for Endpoint 传感器数据收集
 - 修复 MacOS 的终结点通信受损的 Microsoft Defender
 - 在 macOS 中将最小密码长度设置为 15 个或多个字符
-- 在 macOS 中将"强制实施密码历史记录"设置为" (24) 密码"。
+- 在 macOS 中将"强制实施密码历史记录"设置为"24 (密码) 密码"。
 - 在 macOS 中，将"最长密码使用时间"设置为"90 天或更少天，但不设置为 0"
 - 在 macOS 中将帐户锁定阈值设置为 5 或更低
 - 打开 macOS 上的防火墙
@@ -69,13 +69,13 @@ Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/s
 - 修复适用于 Linux 的终结点通信受损的 Microsoft Defender
 - 无限制访问帐户
 - 打开Microsoft Defender 防病毒 Linux 实时保护
-- 在 Linux Microsoft Defender 防病毒模式打开 PUA 保护
+- 在 Linux Microsoft Defender 防病毒模式下打开 PUA 保护
 - 为 linux Microsoft Defender 防病毒云提供的保护
-- 更新Microsoft Defender 防病毒 Linux 的发布定义
+- 更新Microsoft Defender 防病毒 Linux 的定义
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>删除了与项目相关的改进Microsoft Cloud App Security
+### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>删除了与项目相关的Microsoft Cloud App Security
 
 - 使用云应用安全检测异常行为。
 
@@ -83,7 +83,7 @@ Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/s
 
 ### <a name="compatibility-with-graph-api"></a>与 Graph API 的兼容性
 
-通过 Graph API 提供的 Microsoft 安全分数建议的外观和权重将与当前在安全中心内看到的建议Microsoft 365相同。
+通过 Graph API 提供的 Microsoft 安全分数建议的外观和权重将与当前在 Microsoft 365 Defender 门户中看到的建议相同。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
@@ -106,7 +106,7 @@ Microsoft Teams安全分数中的一项新增改进操作，客户会看到"限�
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>删除了通过安全分数创建 ServiceNow 票证的能力 
 
-不再提供通过安全分数创建 ServiceNow 票证（通过> **ServiceNow）** 的能力。 感谢你提供反馈，并继续支持我们确定下一步。
+不再提供通过安全分数创建 ServiceNow 票证> **ServiceNow。** 感谢你提供反馈，并继续支持我们确定下一步。
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>为 Microsoft Defender for Endpoint 添加了三个与服务相关的改进操作：
 
@@ -128,9 +128,9 @@ Microsoft Teams安全分数中的一项新增改进操作，客户会看到"限�
 
 ## <a name="incompatibility-with-identity-secure-score"></a>与标识安全分数不兼容
 
-在 Microsoft 安全分数的最近版本中，发布了改进的评分模型。 通过这些更改，可以更灵活和准确地查看安全状态。 但是，这些更新使 Microsoft 安全分数暂时与标识安全分数不兼容。
+在 Microsoft 安全分数的最近版本中，发布了改进的评分模型。 通过这些更改，可以更灵活、准确地查看安全状态。 但是，这些更新使 Microsoft 安全分数暂时与标识安全分数不兼容。
 
-Identity Secure Score 将采用新的评分模型。 在此之前，客户将看到 Microsoft 安全分数和标识安全分数报告的分数的差异。 对此引起的不便，我们感到抱歉，并致力于确保这些体验在未来更加兼容。
+随着时间的推移，Identity Secure Score 将采用新的评分模型。 在此之前，客户将看到 Microsoft 安全分数和标识安全分数报告的分数的差异。 我们对此引起的不便表示抱歉，并致力于确保这些体验在未来更加兼容。
 
 ## <a name="updated-improvement-actions"></a>更新后的改进操作
 
@@ -150,7 +150,7 @@ Identity Secure Score 将采用新的评分模型。 在此之前，客户将看
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果有任何问题，请通过发布到安全、隐私和合规性社区 [&告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
+如果有任何问题，请通过发布在安全、隐私和合规性社区中& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 

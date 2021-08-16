@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 882cb3c4e7630e6c55c4f0e76944a9b5b9203d84404028aa4487210ed6f89d0b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 646a391d469470b780010e4293d1433153419b23
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248061"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -43,9 +43,7 @@ ms.locfileid: "53807668"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
-可以通过使用 Teams 的保留策略删除 Teams 聊天消息和频道消息，除了消息中的文本外，以下项目可以因合规性原因而保留。嵌入的图像、表格、超文本链接、到其他 Teams 消息和文件的链接，以及 [卡内容](/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 聊天消息包括聊天中所有人员的姓名；频道消息包含团队名称和消息标题（如有提供）。 
-> [!NOTE]
-> 当前以预览版形式推出对专用频道中消息的支持。
+可以通过使用 Teams 的保留策略删除 Teams 聊天消息、频道消息、专用频道消息，除了消息中的文本外，以下项目可以因合规性原因而保留。嵌入的图像、表格、超文本链接、到其他 Teams 消息和文件的链接，以及[卡内容](/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 聊天消息和专用频道消息包括对话中所有人员的姓名；频道消息包含团队名称和消息标题（如有提供）。 
 
 当你对 Teams 使用保留策略时，来自 Teams 移动客户端的代码片段、来自 Teams 移动客户端的语音备忘录、缩略图、公告图像以及其他人的图释反应不会保留。
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: c66bfd02c83e8d6d7f63c4f80db5f32a7c376dfa3ce52516e5681a86bbbb5c4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fbe99e07a9fa881656df15e2be1d673f87bc523
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886361"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58251917"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -57,6 +57,9 @@ ms.locfileid: "53886361"
 > [!IMPORTANT]
 > 这些角色组中的成员身份不允许你查看内容资源管理器中项目的列表，或查看内容资源管理器中项目的内容。
 
+> [!IMPORTANT]
+> 只有全局管理员才能在合规中心管理或分配其他用户的权限。 有关详细信息，请参阅[授予用户访问安全与合规中心的权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+> 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>在内容资源管理器中访问项目所需的权限
 
 对内容资源管理器的访问权限受到高度限制，因为它允许你读取已扫描文件的内容。

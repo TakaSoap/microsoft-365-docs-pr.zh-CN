@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解有关部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 For Office 365 Plan 2 组织中培训的常见问题。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 12d00fee09ca21245812917fb00cff89c322e4112df970b25f853032344f6faf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873379"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
@@ -172,7 +172,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>问：我能否将属于不同租户的用户作为同一模拟市场活动的一部分？
 
-答：不可以。 目前不支持跨租户模拟。 验证所有目标用户是否位于同一租户中。 任何跨租户用户或来宾用户都将从模拟市场活动中排除。
+答：否。 目前不支持跨租户模拟。 验证所有目标用户是否位于同一租户中。 任何跨租户用户或来宾用户都将从模拟市场活动中排除。
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>问：区域感知传递如何工作？
 

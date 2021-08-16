@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 2415bace353e3ee5596117e37eb860c7a206c96b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4c1e3671e68d291d2f9a78f3d25a94abb82269059c8c220d9117048f0481f1cc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869669"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 

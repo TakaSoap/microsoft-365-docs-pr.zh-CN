@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6a5684d71d34b3efdfe915ae674b4fcb90342154
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6569a84dfe2e59eabeceb849296b883a436a939d5348f2bad2bda56e42f9dec9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769793"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869681"
 ---
 # <a name="api-explorer"></a>API 资源管理器
 
@@ -64,7 +64,7 @@ API 文档中提供了受支持的 [API 列表](apis-intro.md)。
 
 一些示例可能需要在 URL 中指定参数，例如 {machine- ID}。
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 **我是否需要具有 API 令牌以使用 API 资源管理器？** <br>
 不需要访问 API 的凭据。 API 资源管理器在提出请求时使用 Defender for Endpoint 管理门户令牌。

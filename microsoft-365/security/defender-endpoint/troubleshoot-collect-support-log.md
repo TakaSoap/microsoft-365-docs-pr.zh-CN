@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 69c6bb7a054841cdb7ee7feded55d8f27b3fb93c9e411c3c69853e49141723ed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250573"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
 
@@ -81,3 +81,13 @@ ms.locfileid: "53839195"
 >   ```
 >
 > - 有关在计算机本地收集数据（如果计算机未与适用于 Endpoint 云服务的 Microsoft Defender 通信，或未按预期显示在 Microsoft Defender for Endpoint 门户中）上的数据详细信息，请参阅验证与 [Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)服务 URL 的客户端连接。
+
+
+## <a name="see-also"></a>另请参阅
+- [客户端分析器概述](overview-client-analyzer.md)
+- [下载并运行客户端分析器](download-client-analyzer.md)
+- [在客户端上运行Windows](run-analyzer-windows.md)
+- [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
+- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)
+- [了解分析器 HTML 报告](analyzer-report.md)
+

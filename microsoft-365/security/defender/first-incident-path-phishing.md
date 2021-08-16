@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 16599fc3941c2e3e86600ee5f45b3ea2eb43c6924259468c00edfdc773577338
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873524"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>网络钓鱼电子邮件攻击的示例
 
@@ -36,13 +36,13 @@ ms.locfileid: "52299984"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 可帮助检测通过电子邮件传递的恶意附件。 由于 [Office 365](https://protection.office.com/) 安全与合规中心与 Microsoft 365 Defender 集成，因此安全分析师可以了解来自 Office 365 的威胁，例如通过电子邮件附件。
+Microsoft 365 Defender可以帮助检测通过电子邮件传递的恶意附件。 由于[Office 365](https://protection.office.com/)安全与合规中心与 Microsoft 365 Defender 集成，因此安全分析师可以了解来自 Office 365 的威胁，例如通过电子邮件附件。
 
 例如，为分析员分配了一个多阶段事件。
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="多阶段事件的示例"::: 
 
-在 **事件的警报** 选项卡中，将显示来自 Defender for Office 365 和 Microsoft Cloud App Security 的警报。 分析员可以通过选择电子邮件警报深入了解 Defender for Office 365 警报。 警报的详细信息显示在侧窗格中。
+在 **事件的"警报**"选项卡中，将显示来自 Defender 的Office 365和Microsoft Cloud App Security警报。 分析员可以通过选择电子邮件Office 365深入了解 Defender for Office 365 警报。 警报的详细信息显示在侧窗格中。
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="电子邮件警报示例":::
  
@@ -54,13 +54,13 @@ Microsoft 365 Defender 可帮助检测通过电子邮件传递的恶意附件。
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="警报详细信息示例"::: 
 
-这会将分析师打开"威胁管理"页，其中显示电子邮件"主题、收件人、发件人和其他信息"。 **"特殊****操作"下的** ZAP 告诉分析师"零时差自动清除"功能已实现。 ZAP 自动检测并删除整个组织邮箱中的恶意邮件和垃圾邮件。 有关详细信息，请参阅[Zero-hour auto purge (ZAP) in Exchange Online。](../office-365-security/zero-hour-auto-purge.md)
+这会将分析师打开"威胁管理"页，其中显示电子邮件"主题、收件人、发件人和其他信息"。 **"特殊****操作"下的** ZAP 告诉分析师"零时差自动清除"功能已实现。 ZAP 自动检测并删除整个组织邮箱中的恶意邮件和垃圾邮件。 有关详细信息，请参阅 EXCHANGE ONLINE 中的零[时差自动清除 (ZAP) 。](../office-365-security/zero-hour-auto-purge.md)
 
 可以通过选择操作 来对特定邮件执行其他 **操作**。 
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="可以针对电子邮件执行的其他操作的示例"::: 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 请参阅 [基于身份的攻击调查](first-incident-path-identity.md) 路径。
 

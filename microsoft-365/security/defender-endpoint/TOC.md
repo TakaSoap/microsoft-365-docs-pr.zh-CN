@@ -561,7 +561,7 @@
 ####### [建议方法和属性](recommendation.md)
 ####### [列出所有建议](get-all-recommendations.md)
 ####### [按 ID 获取建议](get-recommendation-by-id.md)
-####### [按软件获取建议](get-recommendation-software.md)
+####### [按软件获取建议](list-recommendation-software.md)
 ####### [按建议列出计算机](get-recommendation-machines.md)
 ####### [按建议列出漏洞](get-recommendation-vulnerabilities.md)
 
@@ -666,6 +666,17 @@
 ##### [非活跃设备](fix-unhealthy-sensors.md#inactive-devices)
 ##### [配置错误的设备](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [使用事件查看器查看计算机上的传感器事件和错误](event-error-codes.md)
+
+#### [使用客户端分析器排查传感器运行状况问题]()
+##### [客户端分析器概述](overview-client-analyzer.md)
+##### [下载并运行分析器](download-client-analyzer.md)
+##### [在 Windows 上运行客户端分析器](run-analyzer-windows.md)
+##### [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
+##### [用于在 Windows 上进行高级故障排除的数据收集](data-collection-analyzer.md)
+##### [了解分析器 HTML 报表](analyzer-report.md)
+##### [在客户端分析器工具上提供反馈](analyzer-feedback.md)
+
+  
 
 #### [Microsoft Defender for Endpoint 服务疑难解答]()
 ##### [服务疑难解答](troubleshoot-mdatp.md)
