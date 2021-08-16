@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6672723f6a4f3319e837fbb85442a031414e5cba67809197312eebf411a301e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 79916304950547acdb169cbee9b8fcccc40b8f93
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862617"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247142"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>调查事件Microsoft 365 Defender
 
@@ -64,21 +64,23 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 通过 **"摘要** "页面，您可以快速查看有关事件的顶部注意事项。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="安全中心内事件的&quot;摘要&quot;Microsoft 365示例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="事件门户中事件的&quot;摘要&quot;Microsoft 365 Defender示例":::
 
-攻击类别可直观和数字地了解攻击对击杀链的进度。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender[与 MITRE &trade; ATT](https://attack.mitre.org/)&CK 框架一致。
+信息在这些部分中进行组织。
 
-“范围” 部分提供了属于此事件的最受影响的资产列表。 如果存在有关此资产的具体信息（例如风险级别、调查优先级以及资产上的任何标记），也将在本节中显示。
+| 节 | 说明 |
+|:-------|:-----|
+| 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender [CK &trade; ](https://attack.mitre.org/)框架与 MITRE ATT&保持一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
+| 范围 |  显示受影响设备、用户和邮箱的数量，并按风险级别和调查优先级的顺序列出实体。 |
+| 证据 | 显示受事件影响的实体数。 |
+| 事件信息 | 显示事件的属性，如标记、状态和严重性。 |
+|||
 
-警报时间线可快速了解警报发生的时间顺序，以及这些警报链接到此事件的原因。
-
-最后 ， 证据部分提供事件中包含的不同项目及其修正状态的摘要，以便你可以立即确定你是否需要任何操作。
-
-本概述可通过深入了解应了解的事件主要特征，帮助对事件进行初始会审。
+使用 **"摘要** "页评估事件的相对重要性，并快速访问关联的警报和影响的实体。
 
 ## <a name="alerts"></a>警报
 
-在 **"警报** "选项卡上，您可以查看警报队列，了解与事件相关的警报及其其他信息，例如：
+在 **"警报"** 选项卡上，您可以查看警报队列，了解与事件相关的警报及其其他信息，例如：
 
 - 严重性。
 - 警报中涉及的实体。
@@ -89,19 +91,27 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="事件的警报页面示例":::
 
-默认情况下，警报按时间顺序排序，以便查看事件如何随着时间的推移而播放。 在事件内选择警报时，Microsoft 365 Defender显示特定于整体事件上下文的警报信息。 
+默认情况下，警报按时间顺序排序，以便你可以查看攻击如何随着时间的推移而播放。 在事件内选择警报时，Microsoft 365 Defender显示特定于整体事件上下文的警报信息。 
 
-你可以查看警报的事件，其他触发的警报导致了当前警报，以及攻击中涉及的所有受影响的实体和活动，包括文件、用户和邮箱。
+你可以查看警报的事件，其他触发的警报导致了当前警报，以及攻击中涉及的所有受影响的实体和活动，包括设备、文件、用户和邮箱。
 
 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="事件内的警报详细信息页面示例":::
 
-此事件警报页面包含以下部分：
+事件警报页面包含以下部分：
 
-- 警报情景，其中包括所发生事情的摘要
-- 相关事件和警报
-- 摘要详细信息
+- 警报情景，其中包括：
+
+   - 发生了什么事
+
+   - Mailbox01 会使用新的数据库重新联机。
+
+   - 相关事件
+
+- 右窗格中的警报属性 (状态、详细信息、说明和其他) 
+
+并非每个警报都将具有警报部分中列出的 **所有** 子部分。
 
 了解如何在调查警报中使用警报队列 [和警报页面](investigate-alerts.md)。
 
@@ -111,14 +121,14 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="事件的设备页面示例":::
 
-可以选择设备的选中标记以查看设备、目录数据、活动警报和登录用户的详细信息。 选择设备名称以查看 Microsoft Defender for Endpoints 设备清单中的设备详细信息。
+可以选择设备的选中标记以查看设备、目录数据、活动警报和登录用户的详细信息。 选择设备名称以查看 Microsoft Defender for Endpoints 设备清单中的设备详细信息。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="适用于终结点的 Microsoft Defender 的设备页面示例":::
 
-从设备页面，你可以收集有关设备的其他信息，例如其所有警报、时间线和安全建议。 例如，从"时间线"选项卡中，你可以滚动浏览计算机时间线，并按时间顺序查看计算机上观测到的所有事件和行为，与所发出警报的交错。
+从设备页面，你可以收集有关设备的其他信息，例如其所有警报、时间线和安全建议。 例如，从"时间线"选项卡中，你可以滚动浏览计算机时间线，并按时间顺序查看计算机上观测到的所有事件和行为，这些事件和行为与所引发警报的交错。
 
 > [!TIP]
-> 可以在设备页面上执行按需扫描。 In the Microsoft 365 security center， choose **Endpoints > Device inventory**. 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅在[Microsoft Defender 防病毒运行扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> 可以在设备页面上执行按需扫描。 在Microsoft 365 Defender门户中，选择"终结点 **>设备清单"。** 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅在[Microsoft Defender 防病毒运行扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>用户
 
@@ -141,7 +151,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 ## <a name="investigations"></a>调查
 
-"**调查**"选项卡列出了此事件中的 [](m365d-autoir.md)警报触发的所有自动调查。 调查将执行修正操作或等待分析员批准操作，具体取决于如何将自动调查配置为在 Microsoft Defender for Endpoint 和 Defender for Office 365 中运行。
+"**调查**"选项卡列出了此事件中的 [](m365d-autoir.md)警报触发的所有自动调查。 自动调查将执行修正操作或等待分析员批准操作，具体取决于如何将自动调查配置为在 Microsoft Defender for Endpoint 和 Defender for Office 365 中运行。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的调查页面示例":::
 
@@ -153,7 +163,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 - 哪些实体与哪些警报相关，以及它们如何成为攻击的一部分。
 - 事件的警报。
 
-调查图通过将属于攻击的不同可疑实体连接到其相关资产（如用户、设备和邮箱）来帮助您快速了解攻击的完整范围。 
+调查图通过将属于攻击的不同可疑实体（如用户、设备和邮箱）连接到其相关资产，帮助您快速了解攻击的完整范围。 
 
 有关详细信息，请参阅自动[调查和响应Microsoft 365 Defender。](m365d-autoir.md)
 
@@ -165,7 +175,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、进程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
 
-每个被分析的实体都标记为"恶意 (可疑、) 清理"和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
+每个分析的实体都标有一条 (、可疑、) 和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
 
 ## <a name="next-steps"></a>后续步骤
 

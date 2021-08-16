@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 1aa318c75dcfcb339ae1f7c52832938805593e47b966d68694380e3d760f0569
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b61abfa58d10aca154cee02edf15a56b516495b8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523774"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247087"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -63,7 +63,7 @@ ms.locfileid: "54523774"
         - 创建自动标签策略之前或之后，这些文件可自动标记。 如果文件是打开的会话的一部分（文件已打开），则不能自动标记它们。
         - 目前不支持列表项的附件，且不会自动标记。
     - 租户中每天最多自动标记 25,000 个文件。
-    - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。 随着 [最新增强功能的推出](#recent-enhancements-for-auto-labeling-policies)，在单独指定它们时，这些数字增加到 100 个策略和 100 个站点。 也可以指定所有站点，这种配置不受 100 个站点上限的限制。
+    - 每个租户最多 100 个自动标记策略，每个策略在单独指定时最多面向 100 个网站（SharePoint 或 OneDrive）。 也可以指定所有站点，这种配置不受 100 个站点上限的限制。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。
     - 标签应用加密时，[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是最后修改文件的帐户。
 
@@ -98,7 +98,7 @@ ms.locfileid: "54523774"
 |覆盖在未带标签的情况下应用的 IRM 加密|如果用户具有“导出”的最低使用权限，则为“是” |是（仅限电子邮件） |
 |标记传入电子邮件|否 |是|
 
-\*自动标记当前在所有区域中均不可用。 如果你的租户不支持此功能，则管理员标记中心中的“自动标记”选项卡将不可见。
+\*自动标记当前在所有区域中均不可用。 如果你的租户不支持此功能，则合规中心中的“**自动标记**”选项卡将不可见。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
 
@@ -197,9 +197,6 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略
 
-> [!IMPORTANT]
-> 用于自动标记策略的新的增强功能目前正在推出，其中包括更快的模拟结果，支持更多的文件和更多的站点，以及电子邮件通知。 有关详细信息，请参阅 [自动标记策略的最新增强功能](#recent-enhancements-for-auto-labeling-policies)。
-
 在配置自动标记策略前，请确保你了解这些先决条件。
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自动标记策略的先决条件
@@ -231,9 +228,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 1. 创建和配置自动标记策略。
 
-2. 以模拟模式运行该策略，可能需要 48 小时才能完成。
-    
-    随着 [最新增强功能](#recent-enhancements-for-auto-labeling-policies) 的推出，这个时间缩短为 12 小时，完成的模拟会触发电子邮件通知，并发送给配置为接收 [活动警报](alert-policies.md) 的用户。
+2. 以模拟模式运行该策略，可能需要 12 小时才能完成。 完成的模拟会触发发送给用户的电子邮件通知，该通知配置为接收[活动警报](alert-policies.md)。
 
 3. 查看结果，并在必要时优化策略。 重新运行模拟模式，并等待其再次完成。
 
@@ -270,7 +265,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 5. 对于“**为自动标记策略命名**”页面：提供唯一的名称，并选择性地提供描述，以帮助识别自动应用的标签、位置和条件（用于标识要标记的内容）。
 
-6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 网站和 OneDrive 的位置。 然后选择“**下一步**”。
+6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 和 OneDrive 的位置。 如果不想保留所选位置的默认“**全部**”，请选择特定实例的链接。 然后选择“**下一步**”。
 
     ![选择位置页面自动标记向导](../media/locations-auto-labeling-wizard.png)
     
@@ -382,7 +377,7 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 
 ## <a name="recent-enhancements-for-auto-labeling-policies"></a>自动标记策略的最新增强功能
 
-现在推出的针对 OneDrive 和 SharePoint 的自动标签策略的最新增强功能与之前的版本相比有以下改进:
+最近推出的针对 OneDrive 和 SharePoint 的自动标签策略的最新增强功能与之前的版本相比有以下改进：
 
 - 每个租户最多可以有 100 个自动标签策略，而不是 10 个。
 
@@ -409,8 +404,6 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 当租户拥有新的增强功能时，会在 **自动标记** 标签上看到以下通知:
 
 ![确认租户拥有新的增强功能通知横幅](../media/auto-labeling-updatedbanner.png)
-
-如果未看到此通知，则租户尚未新的增强功能，但会在几天内再次检查。
 
 > [!NOTE]
 > 如果租户收到新的增强功能时，有任何处于模拟模式的自动标记策略，则必须重新运行模拟。 如果此方案适用于你，则在查看模拟时，系统会提示选择 **“重启模拟”**。 如果不重新启动模拟，则无法完成。

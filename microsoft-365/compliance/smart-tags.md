@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 智能标记使你可以应用机器学习功能，在查看事件案例Advanced eDiscovery功能。 使用智能标记组显示机器学习检测模型（如律师-客户特权模型）的结果。
-ms.openlocfilehash: 3d3852a13410a3aa57932e19031cc5d00ce52a96
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4b793b53001a9d03e53d9aadac1bd39d2d6c98d8ab498d91be12d9a6886e185b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859775"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>在智能标记中设置Advanced eDiscovery
 

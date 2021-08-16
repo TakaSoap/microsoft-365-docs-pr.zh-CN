@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: 了解如何运行脚本，将邮箱& OneDrive for Business网站添加到与电子数据展示合规中心中的电子数据展示Microsoft 365保留。
-ms.openlocfilehash: d6e6ff1ca053fd8c729054490e78ef42dc64e829
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何运行脚本，将邮箱& OneDrive for Business网站添加到与电子邮件中的电子数据展示案例关联的新Microsoft 365 合规中心。
+ms.openlocfilehash: 7f1b5f9d3b8106ca899079d22fd4a46a8270771470be5a288ef5d1f77f1a6cce
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859763"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用脚本将用户添加到核心电子数据展示案例中的保留
 

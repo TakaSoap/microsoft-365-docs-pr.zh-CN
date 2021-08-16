@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c37ff8a7cc364a3633ced5439f03df0bfba3dcaa
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 700c24b35bb1915839b023139927a02fc6680f34eecdabbac1c60129ba0969ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873221"
 ---
 # <a name="contact-support-for-kosovo"></a>联系支持人员
 

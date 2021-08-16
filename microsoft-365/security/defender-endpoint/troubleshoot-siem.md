@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 95b4b82b87fc633afe716c9c7b403808bedac65d
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 925c357da9ec5cee3b0df8f68b0cbc5446f5d3377ef3cd39c578377a691eb17c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889299"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM 工具集成问题疑难解答
 
@@ -53,7 +53,7 @@ ms.locfileid: "53651695"
 
 5. 选择 **"&** 密码"部分，单击"新建客户端密码"，然后提供说明并指定有效期。
 
-6. 单击“**保存**”。 将显示键值。
+6. 单击 **保存**。 将显示键值。
 
 7. 复制值并将其保存在安全的位置。
 
@@ -74,7 +74,7 @@ ms.locfileid: "53651695"
    - 对于英国： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 对于美国  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` ：。
 
-6. 单击“**保存**”。
+6. 单击 **保存**。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>启用 SIEM 连接器应用程序时出错
 

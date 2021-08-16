@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何对保管人及其数据源设置保留，以保留与托管案例Advanced eDiscovery内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c5781d5dd2ce08c3b57695fa08720c1cc3ab38c6f41bceeb6f12a388232c70c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53859799"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>管理保留Advanced eDiscovery
 
@@ -36,7 +36,7 @@ ms.locfileid: "51570586"
 
 查看保管人保留策略：
 
-1. 在Microsoft 365中心，单击 **">高级**"以显示组织中事例的列表。
+1. 在Microsoft 365 合规中心中，单击 **">高级**"以显示组织中事例的列表。
 
 2. 转到" **源"** 选项卡，在你的案例中添加保管人。 若要了解如何在案例内添加保管人并Advanced eDiscovery保管人，请参阅向案例[添加保管人](add-custodians-to-case.md)。 如果已添加保管人并置于保留状态，请转到步骤 3。
 
@@ -54,7 +54,7 @@ ms.locfileid: "51570586"
 
 若要为事件案例创建非Advanced eDiscovery保留：
 
-1. 在Microsoft 365中心，单击 **">高级**"以显示组织中事例的列表。
+1. 在Microsoft 365 合规中心中，单击 **">高级**"以显示组织中事例的列表。
   
 2. 单击 **要** 创建保留的案例旁边的"打开"。
   
@@ -66,7 +66,7 @@ ms.locfileid: "51570586"
  
 6.  (可选) **在"说明** "框中，添加保留的说明。
   
-7. 点击 **“下一步”**。
+7. 单击 **下一个**。
   
 8. 选择要保留的内容位置。 可以将邮箱、站点和公用文件夹置于保留状态。
 
@@ -135,9 +135,9 @@ Microsoft Teams基于组Office 365构建。 因此，将它们置于保留状态
     > [!NOTE]
     > 若要运行 Get-UnifiedGroup cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。
 
- - 搜索用户的邮箱时，将不会搜索该用户是其中成员的任何 Microsoft 365 组或 Microsoft 团队。 同样，当您将 Microsoft 365 组或 Microsoft Team 保留时，只会将组邮箱和组网站置于保留状态;除非明确将团队成员添加为保管人或将其数据源置于保留状态，否则不会将其成员的邮箱和 OneDrive for Business 网站置于保留状态。 因此，如果需要将 Microsoft 365 组或 Microsoft Team 置于保留状态以保留特定保管人，请考虑将组网站和组邮箱映射到保管人 (请参阅在高级电子数据展示中管理保管人) 。 如果 Microsoft 365 组或 Microsoft 团队无法归到单个保管人，请考虑将源添加到非托管保留。 
+ - 在搜索用户的邮箱时，Microsoft 365的任何组或 Microsoft Team 用户将不会进行搜索。 同样，当您将Microsoft 365或 Microsoft Team 保留时，只会将组邮箱和组网站置于保留状态;除非将OneDrive for Business添加为保管人或将其数据源置于保留状态，否则不会将其成员的邮箱和网站置于保留状态。 因此，如果需要将 Microsoft 365 组或 Microsoft Team 置于保留状态以保留特定保管人，请考虑将组网站和组邮箱映射到保管人 (请参阅在 Advanced eDiscovery) 中管理保管人。 如果Microsoft 365组或 Microsoft Team 无法归为单个保管人，请考虑将源添加到非托管保留。 
  
- - 若要获取 Microsoft 365 组或 Microsoft Team 的成员列表，可以查看 Microsoft 365 管理中心中"主页>组"页上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
+ - 若要获取 Microsoft 365 或 Microsoft Team 的成员列表，可以查看 > 组主页上的Microsoft 365 管理中心。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -146,11 +146,11 @@ Microsoft Teams基于组Office 365构建。 因此，将它们置于保留状态
     > [!NOTE]
     > 若要运行 **Get-UnifiedGroupLinks** cmdlet，则你必须在 Exchange Online 中分配有仅查看收件人角色或者是分配有仅查看收件人角色的角色组的成员。
 
-- 属于 Microsoft Teams 频道的频道对话存储在与团队关联的邮箱中。 同样，团队成员在渠道中共享的文件将存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft Team 邮箱和 SharePoint 网站置于保留状态，以在频道中保留对话和文件。
+- 属于团队频道的Microsoft Teams对话存储在与团队关联的邮箱中。 同样，团队成员在渠道中共享的文件将存储在团队的 SharePoint 网站上。 因此，您必须将 Microsoft 团队邮箱和 SharePoint网站置于保留状态，以在频道中保留对话和文件。
   
-- 或者，属于 Microsoft Teams 中聊天列表的对话将存储在参与聊天的用户的邮箱中。  用户在聊天对话中共享的文件存储在共享文件的用户的 OneDrive for Business 网站中。 因此，您必须将单个用户邮箱和 OneDrive for Business 网站置于保留状态，以在"聊天"列表中保留对话和文件。 
+- 或者，属于聊天Microsoft Teams对话将存储在参与聊天的用户的邮箱中。  用户在聊天对话中共享的文件存储在共享OneDrive for Business用户的网站中。 因此，您必须将单个用户邮箱和OneDrive for Business网站置于保留状态，以在"聊天"列表中保留对话和文件。 
   
 - 每个 Microsoft 团队或团队频道都包含一个 Wiki，用于做笔记和进行协作。 Wiki 内容将会自动保存至采用 .mht 格式的文件。 此文件存储在团队 SharePoint 网站的 Teams Wiki 数据文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态，在 Wiki 中保留内容。
 
   > [!NOTE]
-  > 当您将团队的 SharePoint 网站保留 (保留 Microsoft 团队或团队频道的 Wiki 内容的功能于 2017 年 6 月 22) 发布。 如果团队网站保留，Wiki 内容将自该日期开始保留。 但是，如果团队网站在 2017 年 6 月 22 之前被保留，且 Wiki 内容已删除，则 Wiki 内容不会保留。
+  > 将团队的 SharePoint 网站保留时保留 Microsoft 团队或团队频道 (的功能于 2017 年 6 月 22) 日发布。 如果团队网站保留，Wiki 内容将自该日期开始保留。 但是，如果团队网站在 2017 年 6 月 22 之前被保留，且 Wiki 内容已删除，则 Wiki 内容不会保留。

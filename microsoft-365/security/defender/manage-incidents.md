@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 87e20b8b44c42c1063155396c1ce1f98d10cd88391336734f28fe24db293a312
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae03aff64765647bd7a32b31fcc987b062c15173
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247113"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "53838736"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在快速启动 Microsoft 365安全中心&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在 Microsoft 365 Defender **>** (security.microsoft.com) 快速启动时，你可以管理事件&警报) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
@@ -61,11 +61,11 @@ ms.locfileid: "53838736"
 - 事件队列中事件的属性窗格。
 - **事件的** 摘要页。
 
-如果想将警报从一个事件移动到另一个事件，也可以从"警报"选项卡进行移动，从而创建包含所有相关警报的较大或较小的事件。
+如果想将警报从一个事件移动到另一个事件，则还可以从"警报"选项卡进行移动，从而创建包含所有相关警报的较大或较小的事件。
 
 ## <a name="edit-the-incident-name"></a>编辑事件名称
 
-Microsoft 365 Defender警报属性自动分配名称，如受影响的终结点数、受影响的用户数、检测源或类别。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
+Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动分配名称。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
 
 可以从"管理事件"窗格上的" **事件名称** "字段中 **编辑事件** 名称。
 
@@ -82,7 +82,7 @@ Microsoft 365 Defender警报属性自动分配名称，如受影响的终结点�
 
 若要分配事件，请选择"**分配给我"。** 这样做会向用户帐户分配事件的所有权以及与其关联的所有警报。
 
-通过筛选事件队列，可以获取分配给您的事件列表。 
+通过筛选事件队列，您可以获取分配给您的事件列表。 
 
 1. 从事件队列中，选择"筛选器 **"。**
 2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择"**分配给我"。**
