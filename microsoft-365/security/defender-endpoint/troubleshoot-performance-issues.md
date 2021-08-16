@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 146cda79ef70500ccc016f5064d1b1847b69b6ff
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d760a122527c3d5c9578188043ec2fdc56c5840b457a2f177263bfb9fcc4ad93
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889402"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -121,7 +121,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
         >
         > ![最小化 Procmon](images/procmon-minimize.png)
 
-7. 执行步骤 6 中的其中一个过程后，你将看到设置筛选器的选项。 选择 **“确定”**。 捕获完成后，你始终可以筛选结果。
+7. 执行步骤 6 中的其中一个过程后，你将看到设置筛选器的选项。 选择“**确定**”。 捕获完成后，你始终可以筛选结果。
 
     ![筛选出进程名称为系统排除](images/procmon-filter-options.png)
 
@@ -218,7 +218,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
     > [!TIP]
     > 使数据收集不超过五分钟。 2 到 3 分钟是一个很好的范围，因为正在收集大量的数据。
 
-12. 选择 **保存**。
+12. 选择“**保存**”。
 
     ![选择"保存"](images/wpr-10.png)
 
@@ -227,7 +227,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
     ![填写详细信息](images/wpr-12.png)
 
     1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，它 1.is 另存为 `%user%\Documents\WPR Files\` 。
-    1. 选择 **保存**。
+    1. 选择“**保存**”。
 
 14. 在合并跟踪时等待。
 

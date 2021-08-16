@@ -15,19 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何设置Microsoft 365以便准备好从 Google Workspace 进行迁移。
-ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 231847c9d3a0b34e4422a8e2f8fb93bc59e0c39f3e01be42b0c0c71ea8963a2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53831619"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>设置Microsoft 365 Google Workspace 迁移
 
@@ -38,7 +37,7 @@ ms.locfileid: "49928182"
 ## <a name="try-it"></a>试一试！ 
 
 1. 登录到"office.com"，然后选择"管理员 **"。** [](https://office.com)
-1. In the Microsoft 365 admin center， choose **Go to guided setup**. 
+1. In the Microsoft 365 管理中心， choose **Go to guided setup**. 
 1. （可选）安装Office应用，然后选择"继续 **"。** 
 1. 由于你要从 Google Workspace 迁移，请选择默认域，然后选择"**使用此域"。** 
 1. 输入用户名和所需用户名，验证电子邮件地址，以便可以接收用户密码，然后选择"添加用户并 **分配许可证"。** 

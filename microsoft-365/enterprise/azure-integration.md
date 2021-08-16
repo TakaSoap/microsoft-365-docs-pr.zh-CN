@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: 如果需要Microsoft 365同步密码或单一登录，请与 Azure AD 集成。
-ms.openlocfilehash: f977969634401d59d7598136f9323cb0e37f9ece
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 68ec6098d6873177d573e866e0361b3775be25df1b7751a77f5b589adf5503ac
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878893"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure 与 Microsoft 365
 
@@ -37,7 +37,7 @@ Microsoft 365使用 Azure Active Directory (Azure AD) 在后台管理用户标�
   
 Azure AD 还提供了其他功能，如管理集成应用，可用于扩展和自定义Microsoft 365订阅。
   
-可以使用 Azure AD 部署顾问，在 Microsoft 365 管理中心获取指导性安装和配置 (必须登录到 Microsoft 365) ：
+你可以将 Azure AD 部署顾问用于指导性安装和配置体验，Microsoft 365 管理中心 (必须登录到以下Microsoft 365) ：
 
  - [Azure AD 连接顾问](https://aka.ms/aadconnectpwsync)
  - [AD FS 部署顾问](https://aka.ms/adfsguidance)
@@ -45,7 +45,7 @@ Azure AD 还提供了其他功能，如管理集成应用，可用于扩展和�
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure AD 版本和Microsoft 365身份管理
 
-如果你有付费订阅，Microsoft 365 Azure AD 订阅。 可以使用 Azure AD 创建和管理用户和组帐户。 若要激活此订阅，必须完成一次注册。 之后，你可以从你的管理中心Microsoft 365 Azure AD。 
+如果你有付费订阅，Microsoft 365 Azure AD 订阅。 可以使用 Azure AD 创建和管理用户和组帐户。 若要激活此订阅，必须完成一次注册。 之后，你可以从你的帐户访问 Azure AD Microsoft 365 管理中心。 
 
 有关注册免费 Azure AD 订阅的说明，请参阅 [使用免费的 Azure AD 订阅](../compliance/use-your-free-azure-ad-subscription-in-office-365.md)。 不要直接转到 azure.microsoft.com 进行注册，否则你最终会获得 Microsoft Azure 的试用版或付费订阅，该订阅与使用 Microsoft 365 的免费 Azure AD 订阅Microsoft 365。 
   

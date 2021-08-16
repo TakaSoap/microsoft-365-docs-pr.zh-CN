@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e0c13fcc5309418beaf92f5f34ed83b7295e0ef3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bf96468b58c28ec5a2b4ab517a7d02d5e0abc9477afcab62010f90f5c4e77202
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852495"
 ---
 # <a name="payment-information-for-dominican-republic"></a>多米尼加共和国的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号** ：4426587954  
+**帐户编号：4426587954**  
 **帐户名称：** Microsoft

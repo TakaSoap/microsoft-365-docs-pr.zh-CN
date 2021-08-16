@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 了解如何使用 PowerShell for Microsoft 365管理用户、组和网站组。
-ms.openlocfilehash: b601c3280555d6ff670f5739fb107fa579d4410f
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: ef92442ccbeb404e467f0b765add871215ce771bdcff97903d762c7753110efd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878973"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>使用 PowerShell SharePoint管理服务
 

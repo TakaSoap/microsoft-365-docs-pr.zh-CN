@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 description: 用户可以了解如何管理其自助购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 581a142eb18e64bfec237e6108564d68d715e21ca20b74e39337afbb7ac86491
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852195"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
-作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在管理中心内管理Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">订阅，admin.microsoft.com。</a>
+作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心 中的 admin.microsoft.com 管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
 
 你的管理员具有你购买的任何订阅的只读视图。 他们可以看到所购买的每个订阅的产品、购买者名称、购买的订阅、到期日期、购买价格以及分配的用户。
 
@@ -145,7 +145,7 @@ ms.locfileid: "52683663"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
-2. 在“**产品**”选项卡上，找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
+2. 在“**产品**”选项卡上，找到要取消的订阅，选择三个点（更多操作），然后选择“**取消订阅**”。
 3. 在“**取消订阅**”窗格中，选择取消原因。 （可选）提供你拥有的任何反馈。
 4. 选择“**保存**”。
 
@@ -176,7 +176,7 @@ ms.locfileid: "52683663"
 1. In the admin center， go to **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 在 **"发票"** 选项卡上，选择要查看的发票。 如果没有发票可见，将过去 **3** 个月更改为过去 **6** 个月或 **指定日期范围**。
 
-## <a name="need-help-contact-us"></a>需要帮助? 请联系我们。
+## <a name="need-help-contact-us"></a>需要帮助？ 请联系我们。
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.yml)解答。
 

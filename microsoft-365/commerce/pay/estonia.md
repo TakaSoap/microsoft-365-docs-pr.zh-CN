@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b1b7d37a00a680c9f483bbe280336581fadae796
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: adb3283d81241ad0fc4a544044153554511fc40bb88acb7a52ff4e29b5cc0b45
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852483"
 ---
 # <a name="payment-information-for-estonia"></a>爱沙尼亚的付款信息
 
@@ -31,6 +31,6 @@ ms.locfileid: "52535562"
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB31CITI18500812207591  
-**SORT 代码** ：185008  
-**帐号** ：12207591  
+**SORT 代码：185008**  
+**帐户号：12207591**  
 **帐户名称：** MICROSOFT

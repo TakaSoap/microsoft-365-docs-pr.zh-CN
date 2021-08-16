@@ -24,15 +24,15 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
+description: 本文中，管理员可了解 defender 保险箱 链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1921b9cdd8e42cc83e2a8a0cda23965fd82a9f1
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 75509ea5c1d340347db75f5eba91b1abf1b795f07077977b096dde1e803388f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725884"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56901863"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -43,28 +43,28 @@ ms.locfileid: "53725884"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](defender-for-office-365.md)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版 或 Microsoft 365 个人版，并且正在查找有关 Outlook 中的安全链接的信息，请参阅高级[Outlook.com 安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](defender-for-office-365.md)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版 或 Microsoft 365 个人版，并且正在查找有关 Outlook 中的安全链接的信息，请参阅 Advanced [Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-保险箱链接是 Defender [for Office 365](defender-for-office-365.md)中的一项功能，它提供邮件流中入站电子邮件的 URL 扫描和重写，以及电子邮件和其他位置中 URL 和链接的单击验证时间。 保险箱除了 EOP 邮箱中的入站电子邮件[](anti-spam-and-anti-malware-protection.md)中的常规反垃圾邮件和反恶意软件保护外，Exchange Online Protection (扫描) 。 保险箱链接扫描可帮助保护组织免受钓鱼和其他攻击中使用的恶意链接的攻击。
+保险箱链接是 defender [for Office 365](defender-for-office-365.md)中的一项功能，它提供对邮件流中入站电子邮件的 URL 扫描和重写，以及电子邮件和其他位置中 URL 和链接的单击验证时间。 保险箱除了 EOP 邮箱中的入站电子邮件[](anti-spam-and-anti-malware-protection.md)中的常规反垃圾邮件和反恶意软件保护外，Exchange Online Protection (扫描) 。 保险箱链接扫描可帮助保护组织免受钓鱼和其他攻击中使用的恶意链接的攻击。
 
 保险箱链接保护可在以下位置使用：
 
-- **电子邮件：保险箱** 链接策略控制电子邮件中链接保险箱保护。 没有默认链接保险箱，因此若要保护电子邮件中的保险箱链接，需要创建一个或多个链接保险箱 **策略**。 有关说明，请参阅在[Microsoft Defender 保险箱设置链接策略Office 365。](set-up-safe-links-policies.md)
+- **电子邮件 ：保险箱** 链接策略控制电子邮件中链接保险箱保护。 没有默认的"保险箱"策略，因此，若要保护电子邮件中的保险箱链接，您需要创建一个或多个"链接保险箱 **策略。** 有关说明，请参阅在[Microsoft Defender 保险箱设置链接策略Office 365。](set-up-safe-links-policies.md)
 
   有关电子邮件的链接保险箱保护功能，请参阅本文保险箱电子邮件的链接设置"部分。 [](#safe-links-settings-for-email-messages)
   
   > [!NOTE]
   > 保险箱链接对启用邮件的公用文件夹不起作用。
 
-- **Microsoft Teams (** TAP Preview) ： 保险箱 Links protection for links in Teams conversations， group chats， or from channels is also controlled by 保险箱 Links policies. 没有默认链接保险箱，因此若要在 Teams 中保护 保险箱 链接，需要创建一个或多个保险箱 **链接策略**。
+- **Microsoft Teams (** TAP Preview) ： 保险箱 Links protection for links in Teams conversations， group chats， or from channels is also controlled by 保险箱 Links policies. 没有默认的链接保险箱，因此若要在 Teams 中保护 保险箱 链接，你需要创建一个或多个保险箱 **链接策略**。
 
-  有关在 Teams 中保险箱链接保护保险箱，请参阅本文保险箱的 Microsoft Teams[](#safe-links-settings-for-microsoft-teams)链接设置一节。
+  有关在 保险箱 中Teams链接保护保险箱请参阅本文Microsoft Teams的链接设置一节[](#safe-links-settings-for-microsoft-teams)。
 
-- **Office 365应用**：保险箱支持Office 365、移动和 Web 应用中提供适用于应用的链接保护。 在 **全局** 保险箱"链接"策略Office 365为应用配置链接保险箱保护。  有关说明，请参阅[在 Microsoft Defender 中为 保险箱 链接设置配置全局Office 365。](configure-global-settings-for-safe-links.md)
+- **Office 365应用**：保险箱支持Office 365、移动和 Web 应用中提供适用于应用的链接保护。 在 **全局** 保险箱"链接"策略之外的全局设置中，Office 365应用配置链接保险箱保护。  有关说明，请参阅[在 Microsoft Defender 中为 保险箱 链接设置配置全局Office 365。](configure-global-settings-for-safe-links.md)
 
-  保险箱Office 365应用的链接保护适用于组织中获得 Defender for Office 365 许可的所有用户，无论用户是否包含在活动的 保险箱 链接策略中。
+  保险箱Office 365应用的链接保护适用于组织中获得 defender for Office 365 许可的所有用户，无论用户是否包含在活动的 保险箱 链接策略中。
 
-  有关在应用中保险箱链接保护Office 365，请参阅本文保险箱应用的 Office 365[链接](#safe-links-settings-for-office-365-apps)设置部分。
+  有关在 Office 365 应用中保险箱链接保护保险箱请参阅本文稍后介绍的 Office 365[应用](#safe-links-settings-for-office-365-apps)的链接设置部分。
 
 本文包含以下类型链接保险箱详细说明：
 
@@ -79,18 +79,18 @@ ms.locfileid: "53725884"
   - [保险箱应用的链接Office 365设置](#safe-links-settings-for-office-365-apps)
   - [链接的"阻止以下 URL"保险箱列表](#block-the-following-urls-list-for-safe-links)
 
-下表介绍了 Microsoft 365 Microsoft 365 和 Office 365 组织中包含 Defender for Office 365 (的 保险箱 链接的方案，换句话说，在) 示例中，缺少许可永远不会是问题。
+下表介绍了 Microsoft 365 Microsoft 365 和 Office 365 组织中包含 Defender for Office 365 (的 保险箱 链接的方案，换句话说，) 示例中永远不会出现缺少许可的问题。
 
 <br>
 
 ****
 
-|应用场景|结果|
+|方案|结果|
 |---|---|
-|表示是市场营销部门的成员。 保险箱Office 365应用的链接保护在 保险箱 链接的全局设置中打开，并且存在适用于市场营销部门成员的 保险箱 链接策略。 在电子邮件PowerPoint打开一个演示文稿，然后单击演示文稿中的 URL。|百分之百受链接保险箱保护。 <p> 该链接策略中包含 保险箱，保险箱应用的链接Office 365保护功能已打开。 <p> 有关在 Office 365 应用中使用 保险箱 链接保护保险箱相关要求，请参阅本文稍后介绍的 保险箱[Links Office 365 部分](#safe-links-settings-for-office-365-apps)。|
-|Chris 的Microsoft 365 E5未配置保险箱链接策略。 Chris 从外部发件人收到一封电子邮件，其中包含他最终单击的恶意网站的 URL。|Chris 不受链接保险箱保护。 <p> 管理员必须至少为任何人创建一保险箱链接策略，才能在入站电子邮件保险箱链接保护。 Chris 必须包含在策略条件中，才能保险箱链接保护。|
-|在 Pat 的组织中，管理员尚未创建任何保险箱链接策略，保险箱应用的链接Office 365保护功能已打开。 Pat 打开 Word 文档并单击该文件中的 URL。|Pat 不受链接保险箱保护。 <p> 尽管保险箱应用的链接保护Office 365全局打开，但 Pat 未包含在任何活动的 保险箱 链接策略中，因此无法应用保护。|
-|In Lee's organization， `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for 保险箱 Links. A 保险箱 Links policy that includes Lee already exists. Lee 收到一封包含 URL 的电子邮件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 单击 URL。|可能为 Lee 自动阻止 URL;这取决于列表中的 URL 条目和所使用的电子邮件客户端 Lee。 有关详细信息，请参阅本文稍后介绍的"阻止以下[URL"保险箱链接](#block-the-following-urls-list-for-safe-links)"部分。|
+|表示是市场营销部门的成员。 保险箱Office 365应用的链接保护在 保险箱 链接的全局设置中打开，并且存在适用于市场营销部门成员的 保险箱 链接策略。 在电子邮件PowerPoint打开一个演示文稿，然后单击演示文稿中的 URL。|百分之百受链接保险箱保护。 <p> 该链接策略中包含 保险箱，保险箱应用的链接Office 365保护已打开。 <p> 有关在 Office 365 应用中使用 保险箱 链接保护保险箱相关要求，请参阅本文稍后介绍的 Office 365[应用](#safe-links-settings-for-office-365-apps)的链接设置部分。|
+|Chris 的Microsoft 365 E5未配置保险箱链接策略。 Chris 从外部发件人收到一封电子邮件，其中包含他最终单击的恶意网站的 URL。|Chris 不受链接保险箱保护。 <p> 管理员必须至少创建一个保险箱链接策略，才能在入站电子邮件保险箱链接保护。 Chris 必须包含在策略条件中，才能保险箱链接保护。|
+|在 Pat 的组织中，管理员尚未创建任何保险箱链接策略，保险箱应用的链接Office 365保护已打开。 Pat 打开 Word 文档并单击该文件中的 URL。|Pat 不受链接保险箱保护。 <p> 尽管保险箱应用的链接保护Office 365全局打开，但 Pat 未包含在任何活动的 保险箱 链接策略中，因此无法应用保护。|
+|In Lee's organization， `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for 保险箱 Links. 包含保险箱的"链接"策略已存在。 Lee 收到一封包含 URL 的电子邮件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 单击 URL。|可能为 Lee 自动阻止 URL;这取决于列表中的 URL 条目和所使用的电子邮件客户端 Lee。 有关详细信息，请参阅本文稍后介绍的"阻止以下[URL"保险箱链接](#block-the-following-urls-list-for-safe-links)"部分。|
 |Jamie 和 Julia 都负责 contoso.com。 在很长一段时间之前，管理员保险箱适用于 Jamie 和 Julia 的链接策略。 Jamie 向 Julia 发送了一封电子邮件，但不知道该电子邮件包含恶意 URL。|如果适用于 julia 的 保险箱 链接策略保险箱配置为应用于内部收件人之间的邮件，则 Julia 受"链接"保护。 有关详细信息，请参阅本文保险箱电子邮件[](#safe-links-settings-for-email-messages)的链接设置部分。|
 |
 
@@ -98,21 +98,21 @@ ms.locfileid: "53725884"
 
 保险箱链接扫描传入电子邮件中的已知恶意超链接。 扫描的 URL 使用 Microsoft 标准 URL 前缀重写 `https://nam01.safelinks.protection.outlook.com` ：。 重写链接后，将分析潜在恶意内容。
 
-在保险箱链接重写 URL 之后，即使手动将邮件转发或答复给内部和外部收件人， ( URL 仍然重写) 。 不会重写添加到转发或答复邮件的其他链接。 但是，在收件箱规则或SMTP 转发自动转发的情况下，不会在发送给最终收件人的邮件中重写 URL，除非该收件人还受 保险箱 链接或URL 已在以前的通信中重写。 重写的 URL 仅适用于 HTML 电子邮件，因为重写 URL 会使格式和纯文本 URL 不可读，但在传递之前仍将扫描这些 URL。 在 Outlook 桌面版 16.0.12513 或更高版本中单击时，客户端 API 对 保险箱 链接的调用仍将检查包含 URL 的富文本和纯文本电子邮件。
+在保险箱链接重写 URL 后，即使手动将邮件转发或答复给内部和外部收件人， ( URL 仍) 。 不会重写添加到转发或答复邮件的其他链接。 但是，在通过收件箱规则或 SMTP 转发自动转发的情况下，不会在发送给最终收件人的邮件中重写 URL，除非该收件人还受 保险箱 链接或URL 已在以前的通信中重写。 重写的 URL 仅适用于 HTML 电子邮件，因为重写 URL 会使格式和纯文本 URL 不可读，但在传递之前仍将扫描这些 URL。 在桌面版 16.0.12513 或更高版本的 Outlook 中单击时，客户端 API 对 保险箱 链接的包含 URL 的富文本和纯文本电子邮件仍将进行检查。
 
 以下列表保险箱电子邮件的链接策略中的设置：
 
 - **选择邮件中未知潜在** 恶意 URL 的操作：启用或保险箱电子邮件中的链接扫描。 建议的值是 **On**。 打开此设置会导致以下操作。
 
   - 保险箱链接扫描在 Outlook (C2R) 中Windows。
-  - 重写 URL，当用户单击邮件中的 URL 时保险箱链接保护进行路由。
+  - 当单击邮件中的 URL 时，url 将被重写保险箱链接保护进行路由。
   - 单击后，将针对已知恶意 URL 列表和"阻止以下 URL"列表检查[URL。](#block-the-following-urls-list-for-safe-links)
   - 没有有效信誉的 URL 将在后台异步触发。
 
 - **对指向文件的** 可疑链接应用实时 URL 扫描：启用链接（包括指向可下载内容的电子邮件中的链接）实时扫描。 建议的值已启用。
   - **等待 URL 扫描完成，然后再传递邮件**：
     - 已启用：包含 URL 的邮件将一直进行，直到扫描完成。 仅在确认 URL 是安全的之后，才传递邮件。 这是建议的值。
-    - 已禁用：如果 URL 扫描无法完成，无论如何都传递邮件。
+    - 已禁用：如果 URL 扫描无法完成，无论如何传递邮件。
 
 - **Apply 保险箱 Links to email messages sent within the organization**： Enables or disables 保险箱 Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. 建议的值已启用。
 
@@ -124,9 +124,9 @@ ms.locfileid: "53725884"
 
 - **在通知和警告页面上** 显示组织品牌：此选项在警告页面上显示组织的品牌。 品牌打造可帮助用户识别合法警告，因为默认 Microsoft 警告页面经常被攻击者使用。 有关自定义品牌打造详细信息，请参阅[自定义Microsoft 365自定义自定义主题](../../admin/setup/customize-your-organization-theme.md)。
 
-- **不要重写以下 URL：** 保留 URL。 保留不需要扫描的安全 URL 的自定义列表。 该列表对于每个链接策略保险箱唯一。 有关"不重写以下 **URL"** 列表的信息，请参阅本文稍后的"保险箱 [链接策略"](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)一节中的"不重写以下 URL"列表。
+- **不要重写以下 URL：** 保留 URL。 保留不需要扫描的安全 URL 的自定义列表。 该列表对于每个安全链接策略都是唯一的。 有关不重写以下 **URL** 列表的信息，请参阅本文稍后的安全链接策略 [](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)中的"不重写以下 URL"列表一节。
 
-  有关链接策略的标准策略和严格策略设置的建议值保险箱，请参阅保险箱[链接策略设置。](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+  有关安全链接策略的"标准"和"严格"策略设置的建议值详细信息，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **收件人** 筛选器：需要指定确定策略适用的收件人条件和例外。 可以将这些属性用于条件和例外：
   - **收件人为**
@@ -139,134 +139,134 @@ ms.locfileid: "53725884"
 
   有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
   
-### <a name="how-safe-links-works-in-email-messages"></a>链接保险箱在电子邮件中的工作方式
+### <a name="how-safe-links-works-in-email-messages"></a>安全链接在电子邮件中的工作方式
 
-在高级别上，下面将保险箱链接保护如何作用于电子邮件中的 URL：
+在高级别上，下面将说明安全链接保护在电子邮件中的 URL 上的工作原理：
 
 1. 所有电子邮件均通过 EOP，其中 Internet 协议 (IP) 和信封筛选器、基于签名的恶意软件保护、反垃圾邮件和反恶意软件筛选器在邮件传递到收件人邮箱之前。
 
 2. 用户在邮箱中打开邮件，并单击邮件中的 URL。
 
-3. 保险箱链接在打开网站之前立即检查 URL：
+3. 安全链接在打开网站之前立即检查 URL：
 
    - 如果 URL 包含在"阻止以下 **URL"** 列表中，将打开 [阻止的 URL](#blocked-url-warning) 警告。
 
-   - 如果 URL 指向已确定为恶意的网站，将打开恶意 (或其他警告[](#malicious-website-warning)) 页面。
+   - 如果 URL 指向已确定为恶意的网站，将打开恶意网站 (或其他[](#malicious-website-warning)警告) 页面。
 
    - 如果 URL 指向可下载的文件，并且适用于用户的策略中启用了"对指向文件的可疑链接和链接应用实时 **URL** 扫描"设置，则选中可下载的文件。
 
    - 如果确定 URL 是安全的，将打开网站。
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>保险箱链接设置Microsoft Teams
+## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft Teams 的安全链接设置
 
-在链接策略中保险箱或禁用Microsoft Teams链接保险箱保护。 具体来说，使用"**选择用于未知或潜在** 恶意 URL 的操作"设置Microsoft Teams URL。 建议的值是 **On**。
+在安全链接策略中为 Microsoft Teams 启用或禁用安全链接保护。 具体来说，使用" **为 Microsoft Teams 中的未知或潜在恶意 URL 选择操作"** 设置。 建议的值是 **On**。
 
-电子邮件中保险箱的链接策略中的以下设置也适用于电子邮件中Teams：
+适用于电子邮件中链接的安全链接策略中的以下设置也适用于 Teams 中的链接：
 
 - **对指向文件的可疑链接应用实时 URL 扫描**
 - **不跟踪用户单击**
 - **不允许用户单击至初始 URL**
 
-这些设置在之前的电子邮件保险箱[链接设置中进行了介绍](#safe-links-settings-for-email-messages)。
+这些设置之前在电子邮件 [的安全链接设置中进行了介绍](#safe-links-settings-for-email-messages)。
 
-为 Microsoft Teams 启用 保险箱 链接保护后，当受保护的用户单击 (单击链接时，将针对已知恶意链接列表检查 Teams 中的 URL) 。 不重写 URL。 如果发现链接是恶意链接，用户将具有以下体验：
+为 Microsoft Teams 启用安全链接保护后，当受保护的用户单击链接时，将针对已知恶意链接列表检查 Teams 中的 URL (单击时保护) 。 不重写 URL。 如果发现链接是恶意链接，用户将具有以下体验：
 
-- 如果在对话、群组Teams或频道中单击了链接，则以下屏幕截图中显示的警告页面将显示在默认 Web 浏览器中。
-- 如果从固定选项卡单击了链接，则警告页面将显示在该选项卡Teams的"页面"界面中。出于安全考虑，禁用在 Web 浏览器中打开链接的选项。
-- 根据策略中"不允许用户单击到原始 **URL"** 设置的配置方式，用户将允许或不允许单击到原始 URL (是否继续 (屏幕截图) 中不建议) 。  我们建议您启用"不允许用户单击访问原始 **URL"** 设置，以便用户无法单击到原始 URL。
+- 如果在 Teams 对话、群聊或频道中单击了链接，则以下屏幕截图中显示的警告页面将显示在默认 Web 浏览器中。
+- 如果从固定选项卡单击了链接，则警告页面将显示在该选项卡内的 Teams 界面中。出于安全考虑，禁用在 Web 浏览器中打开链接的选项。
+- 根据策略中"不允许用户单击到原始 **URL"** 设置的配置方式，用户将允许或不允许单击到原始 URL (继续 (屏幕截图) 中不建议) 。  我们建议您启用"不允许用户单击访问原始 **URL"** 设置，以便用户无法单击到原始 URL。
 
-如果发送链接的用户未包含在启用了 Teams 保护的 保险箱 链接策略中，则用户可以随意单击找到其计算机或设备上的原始 URL。
+如果发送链接的用户未包含在启用了 Teams 保护的安全链接策略中，则用户可以随意单击访问其计算机或设备上的原始 URL。
 
-![报告保险箱恶意Teams网页的"安全链接"。](../../media/tp-safe-links-for-teams-malicious.png)
+!["Teams 安全链接"页面报告恶意链接。](../../media/tp-safe-links-for-teams-malicious.png)
 
-单击 **警告页面上的** "返回"按钮将用户返回到其原始上下文或 URL 位置。 但是，再次单击原始链接将导致保险箱链接重新扫描 URL，因此警告页面将重新出现。
+单击 **警告页面上的"** 返回"按钮将用户返回到其原始上下文或 URL 位置。 但是，再次单击原始链接将导致安全链接重新扫描 URL，因此警告页面将重新出现。
 
-### <a name="how-safe-links-works-in-teams"></a>链接保险箱中的工作原理Teams
+### <a name="how-safe-links-works-in-teams"></a>安全链接在 Teams 中的工作方式
 
-在高级别上，下面保险箱链接保护如何对网站中的 URL Microsoft Teams：
+在高级别上，下面将说明安全链接保护在 Microsoft Teams 中对 URL 的工作原理：
 
-1. 用户启动Teams应用。
+1. 用户启动 Teams 应用。
 
-2. Microsoft 365验证用户组织是否包括适用于 Office 365 的 Microsoft Defender，以及该用户是否包含在启用了 Microsoft Teams 保护的活动 保险箱 链接策略中。
+2. Microsoft 365 验证用户组织是否包含适用于 Office 365 的 Microsoft Defender，并且用户是否包含在启用了 Microsoft Teams 保护的活动安全链接策略中。
 
 3. 在用户单击聊天、群聊、频道和选项卡时验证 URL。
 
-## <a name="safe-links-settings-for-office-365-apps"></a>保险箱应用的链接Office 365设置
+## <a name="safe-links-settings-for-office-365-apps"></a>Office 365 应用的安全链接设置
 
-保险箱Office 365 应用程序的链接保护会检查 Office 文档中的链接，而不是电子邮件 (但它可以在打开) 后检查电子邮件中附加 Office 文档中的链接。
+Office 365 应用的安全链接保护检查 Office 文档中的链接，而不是电子邮件 (但它可以在打开 Office 文档后检查电子邮件中附加的 Office) 。
 
-保险箱适用于应用Office 365保护具有以下客户端要求：
+Office 365 应用的安全链接保护具有以下客户端要求：
 
-- Microsoft 365 应用版或Microsoft 365 商业高级版。
-  - Word、Excel 和 PowerPoint、Mac Windows或 Web 浏览器中的当前版本。
-  - Office iOS 或 Android 设备上的应用。
-  - Visio上Windows。
-  - OneNote Web 浏览器中显示。
+- Microsoft 365 应用版或 Microsoft 365 商业高级版。
+  - Windows、Mac 或 Web 浏览器中 Word、Excel 和 PowerPoint 的当前版本。
+  - iOS 或 Android 设备上的 Office 应用。
+  - Windows 上的 Visio。
+  - Web 浏览器中的 OneNote。
 
-- Office 365应用配置为使用新式验证。 有关详细信息，请参阅新式验证如何适用于[Office 2013、Office 2016 和 Office 2019 客户端应用](../../enterprise/modern-auth-for-office-2013-and-2016.md)。
+- Office 365 应用配置为使用新式验证。 有关详细信息，请参阅新式验证如何适用于 [Office 2013、Office 2016 和 Office 2019 客户端应用](../../enterprise/modern-auth-for-office-2013-and-2016.md)。
 
-- 用户使用工作或学校帐户登录。 有关详细信息，请参阅登录[Office。](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
+- 用户使用工作或学校帐户登录。 有关详细信息，请参阅登录到[Office。](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
 
-在 保险箱 链接的全局Office 365（而不是在"链接"策略中保险箱为 保险箱 应用配置链接保护。 保护适用于组织中获得 Defender for Office 365 许可的所有用户，无论这些用户是否包含在活动的 保险箱 链接策略中。
+在安全链接的全局设置中（而不是在安全链接策略中）为 Office 365 应用配置安全链接保护。 保护适用于组织中获得 Office 365 Defender 许可的所有用户，无论用户是否包含在活动安全链接策略中。
 
-以下保险箱链接设置可用于Office 365应用：
+以下安全链接设置适用于 Office 365 应用：
 
-- **Office 365应用程序**：启用或禁用保险箱支持的链接Office 365扫描。 默认值和推荐值为 **On。**
+- **Office 365 应用程序**：启用或禁用受支持的 Office 365 应用中的安全链接扫描。 默认值和推荐值为 **On。**
 
-- Do **not track when users click 保险箱 Links**： Enables or disables storing 保险箱 Links click data for URLs clicked in the desktop versions Word， Excel， PowerPoint， and Visio. 建议值为 **Off**，这意味着将跟踪用户点击量。
+- **Do not track when users click Safe Links**： Enables or disables storing Safe Links click data for URLs clicked in the desktop versions Word， Excel， PowerPoint， and Visio. 建议值为 **Off**，这意味着将跟踪用户点击量。
 
-- 不允许用户单击指向原始 URL 的安全链接：允许或阻止用户单击桌面版 Word、Excel、PowerPoint 和 Visio 中的警告页面指向原始 **URL。** [](#warning-pages-from-safe-links) 默认值和推荐值为 **On。**
+- **不允许用户** 单击指向原始 URL 的安全链接：允许或阻止用户在桌面版 Word、Excel、PowerPoint 和 Visio 中单击通过警告页面指向原始 URL。 [](#warning-pages-from-safe-links) 默认值和推荐值为 **On。**
 
-若要为 保险箱应用配置Office 365链接设置，请参阅为保险箱应用配置Office 365[保护](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)。
+若要为 Office 365 应用配置安全链接设置，请参阅为 [Office 365](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)应用配置安全链接保护。
 
-有关"标准"和"严格"策略设置的建议值详细信息，请参阅全局设置["保险箱链接"。](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)
+有关"标准"和"严格"策略设置的建议值详细信息，请参阅安全链接 [的全局设置](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)。
 
-### <a name="how-safe-links-works-in-office-365-apps"></a>保险箱链接在应用中Office 365的工作方式
+### <a name="how-safe-links-works-in-office-365-apps"></a>安全链接在 Office 365 应用中的工作方式
 
-在高级别上，下面将保险箱链接保护如何作用于应用中Office 365 URL。 上Office 365介绍了受支持的应用。
+在高级别上，下面将说明安全链接保护在 Office 365 应用中对 URL 的工作原理。 支持的 Office 365 应用在上一部分中进行了介绍。
 
-1. 用户使用其工作或学校帐户登录包括Microsoft 365 应用版或Microsoft 365 商业高级版。
+1. 用户在包含 Microsoft 365 应用版或 Microsoft 365 商业高级版的组织使用工作或学校帐户登录。
 
-2. 用户打开并单击支持文档中Office文档的链接Office 应用。
+2. 用户打开并单击受支持的 Office 应用中的 Office 文档链接。
 
-3. 保险箱链接在打开目标网站之前立即检查 URL：
+3. 安全链接在打开目标网站之前立即检查 URL：
 
-   - 如果 URL 包含在跳过链接扫描列表保险箱阻止 (阻止的 URL) 将打开阻止[的 URL 警告](#blocked-url-warning)页。
+   - 如果 URL 包含在跳过安全链接扫描的列表中 (将打开阻止的 URL ) 阻止[的 URL 列表](#blocked-url-warning)。
 
-   - 如果 URL 指向已确定为恶意的网站，将打开恶意 (或其他警告[](#malicious-website-warning)) 页面。
+   - 如果 URL 指向已确定为恶意的网站，将打开恶意网站 (或其他[](#malicious-website-warning)警告) 页面。
 
-   - 如果 URL 指向可下载的文件，并且适用于用户的 保险箱 链接策略配置为扫描指向可下载内容的链接 (应用实时 **URL** 扫描，以找到指向文件) 的可疑链接和链接，则检查可下载文件。
+   - 如果 URL 指向可下载文件，并且将适用于用户的安全链接策略配置为扫描指向可下载内容的链接 (应用实时 **URL** 扫描，以找到指向文件) 的可疑链接，将检查可下载文件。
 
    - 如果 URL 被视为安全 URL，则用户将访问网站。
 
-   - 如果保险箱链接扫描无法完成，保险箱链接保护不会触发。 在Office客户端中，在用户继续访问目标网站之前，将警告用户。
+   - 如果安全链接扫描无法完成，不会触发安全链接保护。 在 Office 桌面客户端中，在用户继续访问目标网站之前，将警告用户。
 
 > [!NOTE]
-> 在每个会话开始时，可能需要几秒钟来验证用户是否已启用保险箱链接Office。
+> 在每个会话开始时，可能需要几秒钟来验证用户是否启用了 Office 安全链接。
 
-## <a name="block-the-following-urls-list-for-safe-links"></a>链接的"阻止以下 URL"保险箱列表
+## <a name="block-the-following-urls-list-for-safe-links"></a>安全链接的"阻止以下 URL"列表
 
-"**阻止以下 URL"** 列表定义始终被以下位置保险箱链接扫描阻止的链接：
+" **阻止以下 URL"** 列表定义安全链接扫描始终阻止的链接，这些链接位于以下位置：
 
 - 电子邮件。
-- Office 365和 Mac Windows应用中的文档。
-- 适用于 iOS Office Android 的 Office 中的文档。
+- Windows 和 Mac 中的 Office 365 应用中的文档。
+- Office for iOS 和 Android 中的文档。
 
-当活动链接策略中的保险箱单击受支持应用中的阻止链接时，他们会访问阻止[的 URL 警告](#blocked-url-warning)页面。
+当活动安全链接策略中的用户单击受支持的应用中的阻止链接时，他们会访问阻止 [的 URL 警告](#blocked-url-warning) 页面。
 
-您可以在全局设置中为"链接"配置保险箱列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
+在安全链接的全局设置中配置 URL 列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**:
+**注意**：
 
 - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
 - 阻止以下 **URL 列表** 的限制：
   - 最大条目数为 500。
   - 条目的最大长度为 128 个字符。
   - 所有条目不能超过 10，000 个字符。
-- 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
-- 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
+- 不要在 URL 末尾 () `/` 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
+- 例如或) 仅域 URL `contoso.com` (`tailspintoys.com` 将阻止包含该域的任何 URL。
 - 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
-- 每个 URL 条目可以包含最多三 () `*` 通配符。
+- 每个 URL 条目可以包含最多三 `*` () 通配符。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>"阻止以下 URL"列表的条目语法
 
@@ -278,10 +278,10 @@ ms.locfileid: "53725884"
 
 |值|结果|
 |---|---|
-|`contoso.com` <p> 或者 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com` `https://sub.contoso.com` 、 和 `https://contoso.com/abc` 被阻止。|
+|`contoso.com` <p> 或 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com` `https://sub.contoso.com` 、 和 `https://contoso.com/abc` 被阻止。|
 |`https://contoso.com/a`|阻止 `https://contoso.com/a` 但不阻止其他子路径（如 `https://contoso.com/a/b` ）。|
 |`https://contoso.com/a*`|块 `https://contoso.com/a` 和其他子路径（如 `https://contoso.com/a/b` ）。|
-|`https://toys.contoso.com*`|阻止此示例中 (`toys` 子域) 但允许单击其他域 URL (或 `https://contoso.com` `https://home.contoso.com`) 。|
+|`https://toys.contoso.com*`|阻止此示例中 (`toys` 子域) 但允许单击其他域 URL， (或 `https://contoso.com` `https://home.contoso.com`) 。|
 |
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>链接策略中的"不重写保险箱 URL"
@@ -289,11 +289,11 @@ ms.locfileid: "53725884"
 > [!NOTE]
 > 如果组织使用保险箱链接策略，则不重写以下 **URL** 列表是支持的第三方网络钓鱼测试的唯一方法。
 
-每个保险箱链接策略都包含一个"不重写以下 **URL"** 列表，您可以使用该列表指定未由"链接"扫描保险箱 URL。 换句话说，该列表允许策略中包含的用户访问指定的 URL，否则，"链接"会保险箱 URL。 可以在不同的链接策略中配置保险箱列表。 策略处理在用户应用第一 (策略后) 可能停止。 因此，只有一个"不重写以下 **URL"** 列表应用于包含多个活动"链接"策略保险箱用户。
+每个保险箱链接策略都包含一个"不重写以下 **URL"** 列表，您可以使用该列表指定未由"链接"扫描保险箱 URL。 换句话说，该列表允许策略中包含的用户访问指定的 URL，否则，这些 URL 将被链接保险箱阻止。 可以在不同的链接策略中配置保险箱列表。 策略处理在用户应用第一 (策略后) 可能停止。 因此，只有一个"不重写以下 **URL"** 列表应用于包含多个活动"链接"策略保险箱用户。
 
-若要将条目添加到新列表或现有链接保险箱，请参阅 Create 保险箱 Links [policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)或 Modify 保险箱[Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
+若要将条目添加到新列表或现有链接保险箱，请参阅 Create 保险箱 Links [policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)或[Modify 保险箱 Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**:
+**注意**：
 
 - 以下客户端无法识别"不重写链接"**策略** 中的保险箱 URL 列表。 根据以下客户端中链接扫描的结果，可阻止包含在保险箱中的用户访问 URL：
   - Microsoft Teams
@@ -302,9 +302,9 @@ ms.locfileid: "53725884"
   有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
 
 - 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint，可以添加这些 URL 以将其从扫描中排除。
-- 如果"链接"**策略** 中已有"不重写保险箱 URL 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
-- 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
-- 如果 URL 使用 HTTP 到 HTTPS (（例如，302 重定向到) ）的自动重定向，并且您尝试为列表中的同一 URL 输入 HTTP 和 HTTPS 条目，您可能会注意到第二个 URL 条目将替换第一 `http://www.contoso.com` 个 URL 条目。 `https://www.contoso.com` 如果 URL 的 HTTP 和 HTTPS 版本是完全独立的，则不会发生此行为。
+- 如果"链接"**策略** 中已经有"不重写保险箱 URL 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径（如 `https://contoso.com/a/b` ）。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
+- 每个 URL 条目可以包含最多三 `*` () 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
+- 如果 URL 使用 HTTP 到 HTTPS (例如 302 重定向到) ，并且您尝试为列表中的同一 URL 输入 HTTP 和 HTTPS 条目，您可能会注意到第二个 URL 条目将替换第一 `http://www.contoso.com` 个 URL 条目。 `https://www.contoso.com` 如果 URL 的 HTTP 和 HTTPS 版本是完全独立的，则不会发生此行为。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"不重写以下 URL"列表的条目语法
 
@@ -317,7 +317,7 @@ ms.locfileid: "53725884"
 |值|结果|
 |---|---|
 |`contoso.com`|允许访问 `https://contoso.com` 子域或路径，但不能访问子域或路径。|
-|`*.contoso.com/*`|允许访问域、子域和路径 (例如、 `https://www.contoso.com` `https://www.contoso.com` 或 `https://maps.contoso.com` `https://www.contoso.com/a`) 。 <p> 此条目本质上优于 ，因为它不允许潜在的欺诈性网站 `*contoso.com*` ，如 `https://www.falsecontoso.com` 或 `https://www.false.contoso.completelyfalse.com`|
+|`*.contoso.com/*`|允许访问域、子域和路径 (例如、 `https://www.contoso.com` `https://www.contoso.com` 或 `https://maps.contoso.com` `https://www.contoso.com/a`) 。 <p> 此条目本质上优于 ，因为它不允许潜在的欺诈网站 `*contoso.com*` ，如 `https://www.falsecontoso.com` 或 `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|允许访问 `https://contoso.com/a` ，但不允许访问子路径（如 ） `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|允许访问 `https://contoso.com/a` 和子路径，如 `https://contoso.com/a/b`|
 |
@@ -370,7 +370,7 @@ ms.locfileid: "53725884"
 
 原始警告页面如下所示：
 
-![原始"根据组织的 URL 策略阻止此网站"警告](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![原始"已根据组织的 URL 策略阻止此网站"警告](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
 ### <a name="error-warning"></a>错误警告
 

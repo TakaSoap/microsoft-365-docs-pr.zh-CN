@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5b6ed22b38d0795073fc72f380bcad89683ada9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 2facf41d8d2f695c67b7609fe8aec222413ba23c855b94d8b1d1ecd0da177173
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863689"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>配置和验证 Microsoft Defender 防病毒软件网络连接
 
@@ -36,7 +36,7 @@ ms.locfileid: "53286809"
 > [!TIP]
 > 请访问 Microsoft Defender for Endpoint 演示 [网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 确认以下功能是否正常工作：
 >
-> - 云传递保护
+> - 云端保护
 > - 快速学习 (包括首次看到时阻止) 
 > - 可能不需要的应用程序阻止
 

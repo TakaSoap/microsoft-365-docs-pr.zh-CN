@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 了解 Microsoft 列表。 借助 Microsoft 列表，你可以跟踪客户详细信息，如客户类型、订单履行和订单进度。
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900579"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>使用 Microsoft 列表跟踪业务信息
 

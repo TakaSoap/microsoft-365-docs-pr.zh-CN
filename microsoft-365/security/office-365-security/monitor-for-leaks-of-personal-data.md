@@ -19,12 +19,12 @@ search.appverid:
 description: 了解可用于监视个人数据泄露的三种工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: e0d5803560ea965e222669027be30860d8a17328b2d097705dabe9bb88e5c42c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "56901878"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -58,7 +58,7 @@ ms.locfileid: "52878480"
 
 此外，当你在测试模式下运行 DLP 策略时，可以使用 DLP 报告对其进行微调。
 
-DLP 报告在 Microsoft 365 合规中心内。 转到“**报告**”\>“**组织数据**”部分来查找“**DLP 策略匹配**”、“**DLP 事件**”、“**DLP 误报和重写**”报告。
+DLP 报表位于Microsoft 365 合规中心中。转到 **报表**\>**组织数据** 部分，查找 **DLP 策略匹配**、**DLP 事件**，以及 **DLP 误报和替代** 报告。
 
 有关详细信息，请参阅[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)。
 

@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: 了解如何使用 PowerShell 管理安全组。
-ms.openlocfilehash: 64a02a1472fdeb0d61cfb4f380cbe61dd7b557b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fbefc5d483c327daa1082debd8ca504bc8df36e52dd49a0c3ad50ee356e45e48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53878881"
 ---
 # <a name="manage-security-groups-with-powershell"></a>使用 PowerShell 管理安全组
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以使用 PowerShell for Microsoft 365作为管理中心管理Microsoft 365安全组的替代方法。 
+可以使用 PowerShell for Microsoft 365作为管理安全Microsoft 365 管理中心的替代方法。 
 
 本文介绍列出、创建、更改设置和删除安全组。 
 

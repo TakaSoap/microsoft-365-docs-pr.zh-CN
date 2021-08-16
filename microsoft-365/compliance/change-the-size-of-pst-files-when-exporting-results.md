@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 导出电子数据展示搜索结果时，可以更改下载到计算机中的 PST 文件的默认大小。
-ms.openlocfilehash: eb5fcce037ff5e3444b42c996b4a32d818edd29d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 76f15e590e1a12468f197f81a1963c9bce06c65008e0570df7bbbaf77b2e9d52
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53851511"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>导出电子数据展示搜索结果时更改 PST 文件的大小
 
