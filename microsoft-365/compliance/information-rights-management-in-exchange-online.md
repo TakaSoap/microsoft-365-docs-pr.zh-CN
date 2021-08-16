@@ -16,18 +16,18 @@ ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何配置 Exchange Online IRM 以使用内部部署 Active Directory 权限管理服务 (AD RMS) 以满足组织要求。
-ms.openlocfilehash: d98cf5c762cd4dac0cbad6d25a3cc766d5c5310a
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: fd70ccd6c239d519953b35361731e7395567c3439842adf01774d7740bc36d21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876271"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860759"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>带 AD RMS 的 Exchange Online 邮件加密
 
 为了帮助防止信息泄露，Exchange Online 的信息权限管理 (IRM) 功能可为电子邮件和附件提供联机和脱机保护。 您可以配置 Exchange Online IRM 以使用本地 Active Directory 权限管理服务 (AD RMS) ，以满足组织要求。 这并不常见。 如果不需要使用 AD RMS，[请改为](ome.md)Office 365 邮件加密。 
 
-Microsoft Outlook 或 Outlook 中的用户可以应用 IRM 保护，并且管理员可以使用传输保护规则或 Outlook规则应用 IRM 保护。 IRM 可帮助您和您的用户控制谁可以访问、转发、打印或复制电子邮件中的敏感数据。
+Microsoft Outlook 或 Outlook 网页版 用户可以应用 IRM 保护，并且管理员可以使用传输保护规则或Outlook规则应用 IRM 保护。 IRM 可帮助您和您的用户控制谁可以访问、转发、打印或复制电子邮件中的敏感数据。
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>更改 IRM 与 OME Office 365 邮件加密 (OME) Azure Active Directory
 
@@ -43,8 +43,8 @@ Exchange OnlineIRM 使用本地 Active Directory Rights Management Services (AD 
   
 启用后，IRM 保护可以应用于邮件，如下所示：
   
-- **用户可以使用 Web 上的 Outlook 和 Outlook手动应用模板。** 用户可以通过从"设置权限"列表中选择模板，将 AD RMS 权限 **策略模板应用于** 电子邮件。 当用户发送受 IRM 保护的邮件时，任何使用支持格式的附加文件也会受到与邮件相同的 IRM 保护。 IRM 保护会应用于与 Word、Excel 和 PowerPoint 相关联的文件以及 .xps 文件和附加的电子邮件。 
+- **用户可以使用自定义模板和模板Outlook Outlook 网页版。** 用户可以通过从"设置权限"列表中选择模板，将 AD RMS 权限 **策略模板应用于** 电子邮件。 当用户发送受 IRM 保护的邮件时，任何使用支持格式的附加文件也会受到与邮件相同的 IRM 保护。 IRM 保护会应用于与 Word、Excel 和 PowerPoint 相关联的文件以及 .xps 文件和附加的电子邮件。 
     
-- **管理员可以使用传输保护规则将 IRM 保护自动应用于 web 上的Outlook Outlook和 IRM 保护。** 可以创建传输保护规则以使用 IRM 保护邮件。 将传输保护规则操作配置为将 AD RMS 权限策略模板应用于符合规则条件的邮件。 启用 IRM 后，组织的 AD RMS 权限策略模板可用于名为 将权限保护应用于邮件的传输保护规则 **操作**。
+- **管理员可以使用传输保护规则将 IRM 保护自动应用于 Outlook 和 Outlook 网页版。** 可以创建传输保护规则以使用 IRM 保护邮件。 将传输保护规则操作配置为将 AD RMS 权限策略模板应用于符合规则条件的邮件。 启用 IRM 后，组织的 AD RMS 权限策略模板可用于名为 将权限保护应用于邮件的传输保护规则 **操作**。
     
-- **管理员可以创建Outlook规则。** Outlook 保护规则自动将 IRM 保护应用于 Outlook 2010 (而不是 Outlook 网页) 中的邮件，这些邮件条件包括发件人的部门、邮件的收件人以及收件人是组织内部还是外部。 有关详细信息，请参阅[Create an Outlook Protection Rule](/exchange/create-an-outlook-protection-rule-exchange-2013-help)。
+- **管理员可以创建Outlook规则。** Outlook 保护规则自动将 IRM 保护应用于 Outlook 2010 (中的邮件，而不是 Outlook 网页版) ，根据邮件条件包括发件人的部门、邮件的收件人以及收件人是组织内部还是外部。 有关详细信息，请参阅[Create an Outlook Protection Rule](/exchange/create-an-outlook-protection-rule-exchange-2013-help)。
