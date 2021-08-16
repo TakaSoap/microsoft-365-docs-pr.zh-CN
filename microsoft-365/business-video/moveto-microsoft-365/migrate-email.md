@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将电子邮件、联系人和日历从 Google Workspace 迁移到 Microsoft 365 for business。
-ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26ed00be3241f07d564fd7823c44610cf34d6ffd96cc4becb36d907439f23629
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896555"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>从 Google Workspace 迁移业务电子邮件和日历
 
@@ -86,8 +86,8 @@ ms.locfileid: "50913618"
 
     域验证通常只需几分钟，但最多可能需要 48 小时。
 
-1. 转到管理[Microsoft 365中心](https://admin.microsoft.com)。
-1. In the **Microsoft 365 admin center**， in the left nav， select Show **all**，**设置**， **Domains**， and then **Add domain**. 
+1. 转到["Microsoft 365 管理中心"。](https://admin.microsoft.com)
+1. In the **Microsoft 365 管理中心**， in the left nav， select **Show all**，**设置**， **Domains**， and then **Add domain**. 
 1. 输入之前创建的子域，然后选择"**使用此域"。** 
 1. 若要连接域，请选择"继续 **"。** 
 1. 向下滚动并记下 MX 记录、CNAME 记录和 TXT 记录。 
@@ -99,7 +99,7 @@ ms.locfileid: "50913618"
 
     可能需要一些时间，这些更改生效。  
 
-1. 返回到你离开管理 **中心Microsoft 365，****然后选择继续。** 
+1. 返回到在活动状态 **中Microsoft 365 管理中心，****然后选择继续。** 
 
 您的域现已设置。  
 
@@ -107,7 +107,7 @@ ms.locfileid: "50913618"
 
 在开始迁移之前，您需要使用新的子域为用户创建电子邮件别名。 
 
-1. 若要开始下一步，请在管理中心的"添加域"Microsoft 365，选择"转到活动 **用户"。** 
+1. 若要开始下一步，请在"添加域"向导的Microsoft 365 管理中心，选择"转到活动 **用户"。** 
 1. 选择用户，然后管理 **用户名和电子邮件**。 
 1. 从 **"域** "下拉列表中，选择之前创建的子域。 
 1. 输入用户名，选择"**添加****"，"保存更改**"，然后关闭窗口。 
@@ -118,7 +118,7 @@ ms.locfileid: "50913618"
 
 完成后，即可进行迁移。 
 
-1. 在管理中心的左侧导航 **Microsoft 365，向下滚动** 到"管理中心 **"，然后选择"Exchange"。**  
+1. 在"管理中心"的Microsoft 365 管理中心中，向下滚动到"管理中心 **"，然后选择"Exchange"。** 
 1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建****"，Exchange Online"** 迁移"，选择 **"G Suite 迁移**"，然后选择"下一 **步"。** 
 1. 创建包含要迁移的邮箱列表的 CSV 文件。 确保文件遵循以下格式： 
 

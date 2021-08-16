@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 了解如何配置任何设备在登录工作或学校帐户Windows 10接收的默认设备策略的设置。
-ms.openlocfilehash: 3f85549e722c9aa4196cf50fc02bee2e89506017
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d08d33807a6ad724412574c27aecddd8f228ee8d0b6f1e6725d2a0d6d75cab06
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882033"
 ---
 # <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 

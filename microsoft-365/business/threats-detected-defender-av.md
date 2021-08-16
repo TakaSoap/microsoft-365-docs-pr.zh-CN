@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何Microsoft Defender 防病毒设备Windows软件威胁，如病毒、恶意软件和间谍软件。
-ms.openlocfilehash: 7c5d000e2a8c30e17d1f890cef69fe88beed75bb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 79ec44a44c3939a4a868b98d75ab4f24eaf949fcd9bbafb7c0a3173e267f4680
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896295"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender 防病毒 检测到的威胁
 
@@ -64,7 +64,7 @@ Microsoft Defender 防病毒操作系统的一部分，在运行操作系统的�
 
 - 用户会收到[来自 Windows 的通知](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e)。 
 - "保护历史记录 ["页上Windows 安全中心](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)应用 **中列出的检测**。  
-- 如果你已保护 [Windows 10](secure-win-10-pcs.md)设备，在 [Intune](/mem/intune/enrollment/windows-enrollment-methods)中注册它们，并且你的组织注册了 800 台或更少的设备，你将在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a>管理中心中看到威胁检测和见解，在"威胁和防病毒"页面上，你可以从主页 (上的 **Microsoft Defender 防病毒** 卡或导航窗格中选择"运行状况威胁"&防病毒) 访问。  >  
+- 如果你已保护 [Windows 10](secure-win-10-pcs.md)设备，并且在 [Intune](/mem/intune/enrollment/windows-enrollment-methods)中注册了这些设备，并且你的组织注册了 800 台或更少的设备，你将在"威胁和防病毒"页面上看到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心威胁</a>检测和见解，你可以从 (主页上的 **Microsoft Defender 防病毒** 卡或导航窗格中选择"运行状况威胁"& 防病毒) 来访问该页面。  >  
 
     如果你的组织在 Intune 中注册了 800 多个设备，系统将提示你查看[来自 Microsoft Endpoint Manager](/mem/endpoint-manager-overview)而非威胁和防病毒页面的威胁检测和见解。 
  

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 本文将介绍可用于监视和维护连接的工具Microsoft 365技术。
-ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5013ef1129e230ea9a3cd31e5a75dbf367c4e5c01c63b37768e7f73098bcfacc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924195"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899195"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>监视 Microsoft 365 连接性
 

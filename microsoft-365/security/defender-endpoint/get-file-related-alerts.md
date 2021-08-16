@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f342a4a104fb908bc8b8c05d2d53d190de8d64c9a826fb87be641e63921bb456
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 478a187494ff247c7d3e8a258e8ac73eb921d4d2
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346024"
 ---
 # <a name="get-file-related-alerts-api"></a>获取与文件相关的警报 API
 
@@ -44,6 +44,7 @@ ms.locfileid: "53793810"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256) 。
 
 ## <a name="permissions"></a>权限
 
@@ -59,8 +60,8 @@ ms.locfileid: "53793810"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -80,7 +81,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且文件存在 - 200 正常，正文中 [具有警报](alerts.md) 实体列表。 如果文件不存在 - 404 未找到。
+如果成功且文件存在 - 200 正常，正文中 [具有](alerts.md) 警报实体列表。 如果文件不存在 - 200 确定，但为空集。
 
 ## <a name="example"></a>示例
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在适用于企业Microsoft 365重置用户密码。
-ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: db89626096f151f9ebc446e08ff970a8f02c4aa2a966f6c882a7012745b96f07
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580482"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896507"
 ---
 # <a name="reset-passwords-for-your-users"></a>重置用户密码
 
@@ -37,7 +37,7 @@ ms.locfileid: "51580482"
 ## <a name="try-it"></a>试一试！
 
 1. 当用户请求新密码时，你将收到电子邮件中的密码重置请求。 若要重置密码，请打开应用启动器并选择"管理员 **"。**
-1. 在Microsoft 365中心，选择"用户"和"**活动** 用户"，然后选择请求重置的用户旁边的键图标。
+1. In the Microsoft 365 管理中心， select **Users**， **Active users**， and then select the key icon next to the user who requested the reset.
 1. 选择 **"自动生成密码** "以自动创建随机密码。
 1. 选择"**重置"。**
 1. 选中" **通过电子邮件发送密码"** 复选框。

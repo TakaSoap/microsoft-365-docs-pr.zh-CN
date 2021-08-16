@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何在设备上查看和管理由Microsoft Defender 防病毒检测到Windows 10威胁。
-ms.openlocfilehash: 15e99fb75e4a3ac1af842ca7d0b900e02cbc6bd4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2edd27c527cc2b9fd8c986191a0bad5c0844da68880f8d8d775491e3480babd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912782"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882085"
 ---
 # <a name="review-detected-threats-and-take-action"></a>查看检测到的威胁并执行操作
 
@@ -32,7 +32,7 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 - 网络钓鱼尝试
 - 数据盗窃尝试
 
-作为 IT 专业人员/管理员，你可以查看有关在 Microsoft 365 管理中心[Intune](/mem/intune/enrollment/device-enrollment)中注册的跨 Windows 10 设备的威胁检测的信息。 你将看到摘要信息，例如：
+作为 IT 专业人员/管理员，你可以查看有关在 Microsoft 365 管理中心[Intune 中](/mem/intune/enrollment/device-enrollment)注册的跨 Windows 10 设备的威胁检测Microsoft 365 管理中心。 你将看到摘要信息，例如：
 
 - 需要防病毒保护的设备数
 - 多少设备不符合安全策略
@@ -40,8 +40,8 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 
 有几种选项可以查看有关威胁检测和设备的特定信息：
 
-- 管理 **中心** 中的"<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">活动Microsoft 365页面</a>。 请参阅 [本文中的在活动设备上管理](#manage-threat-detections-on-the-active-devices-page) 威胁检测。
-- 管理 **中心** 中的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365"页面</a>。 请参阅 [本文中"活动威胁"页面上的"](#manage-threat-detections-on-the-active-threats-page) 管理威胁检测"。
+- "**活动设备"**<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">页Microsoft 365 管理中心。</a> 请参阅 [本文中的在活动设备上管理](#manage-threat-detections-on-the-active-devices-page) 威胁检测。
+- 活动 **威胁页面**<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">在Microsoft 365 管理中心。</a> 请参阅 [本文中"活动威胁"页面上的"](#manage-threat-detections-on-the-active-threats-page) 管理威胁检测"。
 - 中的 **"防病毒**<a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">"Microsoft Endpoint Manager。</a> 请参阅[本文Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager)中管理威胁检测。
 
 若要了解更多信息，请参阅威胁[检测Microsoft Defender 防病毒。](threats-detected-defender-av.md)
@@ -50,7 +50,7 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 
 以下过程适用于已购买Microsoft 365 商业高级版。
 
-1. 转到管理Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 中心，然后登录。
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> "Microsoft 365 管理中心"并登录。
 
 2. 在导航页中，选择 **"设备**  >  **""活动设备"。** 你将看到活动设备和详细信息的列表，如保护状态、防病毒 (AV) 保护状态以及检测到的活动威胁数量。
 
@@ -63,7 +63,7 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 > [!NOTE]
 > the **Microsoft Defender 防病毒** card and **Active threats** page are being rolled out in phases， so you may not have immediate access to them.
 
-1. 转到管理Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 中心，然后登录。
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> "Microsoft 365 管理中心"并登录。
 
 2. 在 **"Microsoft Defender 防病毒"** 卡上，选择"**查看活动威胁"。**  (，或者，在导航窗格中，选择"运行状况威胁&  >  **防病毒**.) 
 
@@ -77,8 +77,8 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 
 | 操作 | 说明 |
 |--|--|
-| 配置保护 | 需要配置威胁防护策略。 选择链接以转到策略配置页面。<br><br>需要帮助? 请参阅[使用 Microsoft Intune 中的终结点安全策略管理设备Microsoft Intune。](/mem/intune/protect/endpoint-security-policy) |
-| 更新策略 | 需要更新或配置防病毒和实时保护策略。 选择链接以转到策略配置页面。<br><br>需要帮助? 请参阅[使用 Microsoft Intune 中的终结点安全策略管理设备Microsoft Intune。](/mem/intune/protect/endpoint-security-policy) |
+| 配置保护 | 需要配置威胁防护策略。 选择链接以转到策略配置页面。<br><br>需要帮助？ 请参阅[使用 Microsoft Intune 中的终结点安全策略管理设备Microsoft Intune。](/mem/intune/protect/endpoint-security-policy) |
+| 更新策略 | 需要更新或配置防病毒和实时保护策略。 选择链接以转到策略配置页面。<br><br>需要帮助？ 请参阅[使用 Microsoft Intune 中的终结点安全策略管理设备Microsoft Intune。](/mem/intune/protect/endpoint-security-policy) |
 | 运行快速扫描 | 在设备上启动快速防病毒扫描，重点关注可能注册恶意软件的常见位置，例如注册表项和启动Windows已知位置。 |
 | 运行完全扫描 | 在设备上启动完全防病毒扫描，重点关注可能注册恶意软件的常见位置，包括设备上每个文件和文件夹。 结果[将发送到](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)Microsoft Endpoint Manager 。 |
 | 更新防病毒 | 需要设备获取 [防病毒和](https://go.microsoft.com/fwlink/?linkid=2149926) 反恶意软件保护的安全智能更新。 |

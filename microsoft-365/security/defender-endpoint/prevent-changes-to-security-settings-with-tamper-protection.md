@@ -17,12 +17,12 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
-ms.openlocfilehash: 39f32fe71bfa84fc9806c02d265d93cd00e17da1
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 5b8abf4f07c1e0a136c456cf5b83adf64e974d7c67ae512c0edb991935afb423
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873884"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -290,7 +290,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="if-the-status-of-tamper-protection-changes-are-alerts-shown-in-the-microsoft-365-defender-portal"></a>如果篡改保护的状态发生更改，警报是否显示在Microsoft 365 Defender门户中？
 
-是。 警报显示在警报 [https://security.microsoft.com](https://security.microsoft.com) **下**。
+能。 警报显示在警报 [https://security.microsoft.com](https://security.microsoft.com) **下**。
 
 安全运营团队还可使用搜寻查询，如以下示例：
 

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解 SharePoint Online 中新式网站的性能建议，例如限制对 Sharepoint 和外部终结点的调用。
-ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6ae0ab89d0b940d41ee2f8056d4cdaf35f7c957784a315612413cb37fd219c58
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899207"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint联机新式门户网站限制
 

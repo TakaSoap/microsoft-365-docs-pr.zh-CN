@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用租户切换器视图和多租户视图，这让你能够从单个位置管理租户。
-ms.openlocfilehash: 9573106ca7c82f92582fbe9eeebfdb7bc5bab751e67b105f55c35bed397f7d4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09256ed8653924fc646f0a5d621d0e55e4a07856
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346084"
 ---
 # <a name="multi-tenant-management"></a>多租户管理
 
-多租户管理提供了统一的管理形式，允许Microsoft 365管理员从一个位置管理他们管理的所有租户。 如果你是管理多个租户的合作伙伴，你可以：
+多租户管理提供了统一的管理形式，使Microsoft 365管理员能够从一个位置管理他们管理的所有租户。 如果你是管理多个租户的合作伙伴，你可以：
 
 - 在管理租户之间快速移动。
 - 跨多个租户评估服务运行状况、产品和计费。
@@ -36,7 +36,7 @@ ms.locfileid: "53823591"
 
 ## <a name="move-between-tenants"></a>在租户之间移动
 
-1. 在"Microsoft 365 管理中心中，选择组织名称。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>中，选择"组织名称"。
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="多租户切换器。":::
 
@@ -46,7 +46,7 @@ ms.locfileid: "53823591"
 
 ## <a name="view-all-tenants-page"></a>查看所有租户页面
 
-1. In the Microsoft 365 管理中心， in the left nav， select **All tenants**.
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>左侧导航中，选择"**所有租户"。**
 - 在 **"所有租户"** 页面上，可以
   - 评估服务运行状况
   - 查看许可证使用情况
@@ -59,7 +59,7 @@ ms.locfileid: "53823591"
 
 服务运行状况视图显示是否有事件或公告影响租户。 它甚至会告诉您受影响的托管租户数。
 
-1. In the Microsoft 365 管理中心， in the multi-tenant view， select **Service Health**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>， in the multi-tenant view， select **Service Health**.
 2. 在"服务运行状况"页面聚合视图中，您还可以查看事件总数、影响任何托管租户的公告总数以及包含活动事件的服务数。 还可以查看有多少租户受事件和公告的影响。
 
     - 可以使用筛选器选项按问题类型或服务查看问题
@@ -71,11 +71,11 @@ ms.locfileid: "53823591"
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="受服务运行状况问题影响的租户列表。":::
 
-受影响租户的列表可以导出为 CSV 格式，以便管理员可以与支持团队共享该列表。
+受影响的租户列表可以导出为 CSV 格式，以便管理员可以与支持团队共享该列表。
 
 ## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>查看租户中的单个Microsoft 365 管理中心
 
-你可以从"所有Microsoft 365 管理中心"页面返回任意租户 **的** 租户列表。
+你可以从"所有Microsoft 365 管理中心"页面返回任意 **租户的** 租户列表。
 
 1. 在 **"所有租户"** 页面上，选择要查看其管理中心的租户名称。
 2. 你将定向到该租户的管理中心。

@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用 Microsoft 365 管理中心 中的"Office 中的新增功能"功能，确定当用户在 Windows 上的 Office 应用 中选择帮助 >"新增功能"时要显示或隐藏的 Office 功能。 Office
-ms.openlocfilehash: 882616a8ed0f4a4198bd7987ea596fe2c0cfc83dbe844e2ca5e354bbca768bcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 使用 Microsoft 365 管理中心 中的"Office 中的新增功能"功能，确定当用户在 Windows 上的 Office 应用 中选择帮助 > 新增功能时要显示或隐藏的 Microsoft 365 管理中心 功能。 Office
+ms.openlocfilehash: 22801436a4502dd27e9b290080bcb6f1936550ac
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824571"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346252"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理Office功能显示在新增功能中
 
@@ -34,21 +34,20 @@ ms.locfileid: "53824571"
 
 > [!NOTE]
 >
-> - 向用户隐藏功能消息不会在功能策略中Office 应用。
+> - 向用户隐藏功能消息不会在用户通知中禁用Office 应用。
 > - 必须分配有全局管理员角色或 Office 应用管理员角色，才能使用"Office **新增功能**。
 
 ## <a name="show-or-hide-new-features"></a>显示或隐藏新功能
 
-1. In the Microsoft 365 管理中心， under **设置，** choose **Org settings**.
-2. 在"**服务"** 选项卡上，选择"服务 **中的新增Office"。**
-3. 单击功能名称时，将显示一个飞出面板，并包含以下信息：
+1. In the Microsoft 365 管理中心， under **设置**， choose **Org settings，** select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"> **Services** tab</a>， and then select **What's new in Office**.
+1. 单击功能名称时，将显示一个飞出面板，并包含以下信息：
      - 功能简短说明。
-     - 指向文章的链接，以了解有关该功能的更多内容。
-     - 功能Office应用程序的列表。
+     - 指向文章的链接，以了解有关该功能的更多信息。
+     - 显示Office的应用程序。
      - 第一 (版本) 该功能可用于该频道。
-4. 选择 **"向用户隐藏"。** 或者，如果你之前隐藏该功能，请选择"**向用户显示"。**
+1. 选择 **"向用户隐藏"。** 或者，如果你之前隐藏该功能，请选择"**向用户显示"。**
 
-还可以选择"管理哪些功能Office **功能** 显示在"新增功能"页上，**然后选择"隐藏**"或"显示 **"。**
+还可以在"管理哪些功能 **"Office"新增** 功能"页上选择多个功能，**然后选择"隐藏**"或"显示 **"。**
 
 > [!NOTE]
 >
@@ -70,17 +69,17 @@ ms.locfileid: "53824571"
 |---|---|---|
 |**Current**|当月 15 日|1 - 每月发布前的 3 周|
 |**月度企业版**|当月的第一天|在引入新功能的主要版本前两周|
-|**半年预览Enterprise (预览)**|9 月 1 日到 3 月 1 日| 在引入新功能的主要版本前 2 周|
+|**半年Enterprise (预览)**|9 月 1 日到 3 月 1 日| 在引入新功能的主要版本前 2 周|
 |**半年Enterprise**|1 月 1 日到 7 月 1 日| 在引入新功能的主要版本前 2 周|
 |
 
 有关何时向每个更新频道发布新版本的信息，请参阅更新历史记录Microsoft 365 应用版 ([按](/officeupdates/update-history-microsoft365-apps-by-date)日期) 。
 
-## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>将"Office中的新增功能"卡片添加到管理中心主页
+## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>将"管理中心中的新增Office"卡片添加到管理中心主页
 
 1. 在"Microsoft 365"页面上 **，选择页面** 顶部的"添加卡片"
-2. 找到 **"管理Office功能显示在"新增功能"** 中，然后选择它。
-3. 卡片位于主页上后，可以选择"Office中的新增功能"来显示[或隐藏组织](#show-or-hide-new-features)的功能。
+2. 找到 **"管理Office功能显示在"新增** 功能"列表中并选择它。
+3. 一旦卡片位于你的主页上，你可以选择"Office中的新增功能"来显示或[隐藏组织的功能](#show-or-hide-new-features)。
 
 ## <a name="related-articles"></a>相关文章
 

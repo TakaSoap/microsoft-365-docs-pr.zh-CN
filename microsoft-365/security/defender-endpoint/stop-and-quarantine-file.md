@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d9ae988df82a2cc1cf5106f832ae22f0c5a95dbdfbf28e6dc773cea3e8208798
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873819"
 ---
 # <a name="stop-and-quarantine-file-api"></a>停止和隔离文件 API
 
@@ -84,7 +84,7 @@ Content-Type|string|application/json. **必需**。
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 Sha1|String|在设备上停止和隔离的文件的 Sha1。 **必需**。

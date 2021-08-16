@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 6d453a8b6e5c4947c0fb03131c539b083227c28a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb831d676aafcc202fbe701aec0b5ae6657988607cb8bb7d097cf94b6f78ad70
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53869601"
 ---
-# <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自动调查和修正功能中的自动化级别
+# <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自动调查和修正功能中的自动级别
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

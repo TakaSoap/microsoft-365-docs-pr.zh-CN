@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e6077427c642e30809b2da140eac00ea03737ca3b62cd498514b1ade4ec0caa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899227"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -33,7 +33,7 @@ Microsoft 365 企业版包括：
 |服务|Description|
 |---|---|
 |本地和基于云的应用和生产力服务|包括 Microsoft 365 企业应用版、适用于 PC 和 Mac 的最新 Office 应用（例如 Word、Excel、PowerPoint、Outlook 和其他应用），以及用于电子邮件、文件存储和协作、会议等的一整套在线服务。|
-|Windows 10 企业版|满足中大型组织的需求。 对于用户而言，这是最高效、最安全的 Windows 版本。 对于 IT 专业人员，它还提供全面的部署、设备和应用管理。|
+|Windows 10 企业版|满足了大型和中型组织的需求。对用户来说，它是最具生产力和安全性的 Windows 版本。对于 IT 专业人士来说，它还提供全面的部署、设备和应用管理。|
 |设备管理和高级安全服务|包括 Microsoft Intune，这是一种基于云的企业移动管理服务，可帮助员工提高工作效率，同时保护组织数据。|
 |||
 
@@ -134,7 +134,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 ## <a name="best-together-with-surface-and-the-edge-browser"></a>通过 Surface 和 Microsoft Edge 浏览器协同工作效果最佳
 
-利用 Microsoft 365 企业版、Microsoft Surface 设备和 Microsoft Edge 浏览器的最佳组合，优化用户的集成和安全生产力。 此跨产品集成提供：
+利用 Microsoft 365 企业版、Microsoft Surface 设备和 Microsoft Edge 浏览器的最佳组合，优化用户的集成和安全生产力。这种跨产品的整合提供了:
 
 - 通用身份和登录安全基础结构。
 - 集成本地和云应用，实现搜索、协作、高效和合规性。

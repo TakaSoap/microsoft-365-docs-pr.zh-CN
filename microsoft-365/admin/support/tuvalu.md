@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a3b034cf0d36bd200f48e87983b9b467ab40574c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2bac78ea50d17bb3ddb9620e5c5787199465196a6d6ae80ba13f5425633984ff
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882801"
 ---
 # <a name="contact-support-for-tuvalu"></a>联系支持人员，该技术支持人员
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c281cdc1183af270b4d09721f38233b10c52d99d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9a84fc8bac6a00129b8425da21c562f012e8c8bc141d83204b4f42a291948f11
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882707"
 ---
 # <a name="contact-support-for-united-kingdom"></a>联系英国支持人员
 
