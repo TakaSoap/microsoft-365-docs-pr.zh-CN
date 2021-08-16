@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 本文包含有关连接Microsoft 365的信息。
-ms.openlocfilehash: 952990a63d4ad064b2027c6f2364e8082342fa34
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: e4020fc21492f3c261e10b8fad3c60c43c64bad24d12f1b1145773489f2fa3b0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455973"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854887"
 ---
 # <a name="microsoft-365-connectivity-optics"></a>Microsoft 365连接光学
 
@@ -47,7 +47,7 @@ ms.locfileid: "53455973"
 
 每个度量通常与其他信息相关联，其中可能包括以下项目：
 
-| 项目 | 说明 |
+| Item | 说明 |
 | --- | --- |
 | 租户 ID | 与最终用户设备关联的Azure Active Directory租户的唯一标识符。 |
 | 监视器 ID | 生成请求请求的应用程序的标识符 (，如 Outlook、OneDrive 等 ) ，由执行测量的客户端应用程序提供。 |

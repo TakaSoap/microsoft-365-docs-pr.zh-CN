@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365Network Insights
+title: Microsoft 365网络Insights
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365Network Insights
-ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Microsoft 365网络Insights
+ms.openlocfilehash: ef844598d505e42f4fb99cb52321fc9709dbd4a2411884f7b8b4fff51c3a62d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854759"
 ---
-# <a name="microsoft-365-network-insights"></a>Microsoft 365Network Insights
+# <a name="microsoft-365-network-insights"></a>Microsoft 365网络Insights
 
-**网络见解** 是从 Microsoft 365 租户收集的性能指标，可供租户中的管理用户查看。 Insights are displayed in the Microsoft 365 Center at <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**网络见解** 是从 Microsoft 365 租户收集的性能指标，可供租户中的管理用户查看。 Insights在 位于 的 Microsoft 365 管理 Center 中 <https://portal.microsoft.com/adminportal/home#/networkperformance> 显示。
 
-见解旨在帮助您设计办公地点的网络外围。 每个见解提供有关用户正在访问租户的每个地理位置的特定常见问题的性能特征的实时详细信息。
+Insights旨在帮助您设计办公地点的网络外围。 每个见解提供有关用户正在访问租户的每个地理位置的特定常见问题的性能特征的实时详细信息。
 
 可能会针对每个办公室位置显示六个特定的网络见解：
 
@@ -43,13 +43,13 @@ ms.locfileid: "52470535"
 - [SharePoint连接问题影响的已采样连接](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
->Microsoft 365 管理中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
+>Microsoft 365 管理 中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="backhauled-network-egress"></a>回程网络出口
 
 如果网络见解服务检测到从给定用户位置到网络出口的距离大于 500 英里 (800 千米) ，则将显示此见解，指示 Microsoft 365 流量正回流到常见的 Internet 边缘设备或代理。
 
-在某些摘要视图中，此见解缩写为"出口"。
+此见解在一些摘要视图中Egress"概述"。
 
 > [!div class="mx-imgBorder"]
 > ![回程网络出口](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
@@ -60,11 +60,11 @@ ms.locfileid: "52470535"
 
 此见解的详细信息包括办公室位置、估计的租户用户总数在位置中的百分比、当前网络出口位置、出口位置的相关性、位置与当前出口点之间的距离、首次检测到条件的日期以及解决条件的日期。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 为获得此见解，我们建议网络出口距离办公地点更近，以便连接可以最佳方式路由到 Microsoft 的全局网络和最近的 Microsoft 365 服务前端。 关闭网络出口到用户办公地点还可以在未来提高性能，因为 Microsoft 未来将同时扩展网络接入点和Microsoft 365前端服务。
 
-若要详细了解如何解决此问题，请参阅[Network](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) Connectivity Principles 中的本地[Office 365出口](microsoft-365-network-connectivity-principles.md)。
+若要详细了解如何解决此问题，请参阅 Egress Network [](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) [Connectivity Principles](microsoft-365-network-connectivity-principles.md)中的本地Office 365网络连接。
 
 ## <a name="network-intermediary-device"></a>网络中介设备
 
@@ -76,7 +76,7 @@ ms.locfileid: "52470535"
 
 网络中介设备（如代理服务器、VPN 和数据丢失防护设备）可能会影响流量Microsoft 365客户端的性能和稳定性。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 配置检测到绕过对网络通信的处理的网络Microsoft 365设备。
 
@@ -93,7 +93,7 @@ ms.locfileid: "52470535"
 
 此见解将分析客户在此Microsoft 365同一城市的总绩效。 如果用户的平均延迟比相邻租户的平均延迟高 10%，将显示此见解。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 此情况可能有很多原因，包括公司网络或 ISP 中的延迟、瓶颈或体系结构设计问题。 检查办公室网络与当前网络之间的路由中每个跃点Microsoft 365延迟。 有关详细信息，请参阅Microsoft 365[网络连接原则](microsoft-365-network-connectivity-principles.md)。
 
@@ -110,7 +110,7 @@ ms.locfileid: "52470535"
 
 我们Exchange Online适合从办公地点城市使用、性能良好的服务前端门。 如果当前测试显示是否Exchange Online服务前端未在此列表中，那么我们将提出此建议。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 使用非最佳Exchange Online服务前端可能是由于企业网络出口前面的网络回程所致，在这种情况下，我们建议使用本地和直接网络出口。 它还可能是由于使用远程 DNS 递归解析程序服务器所致，在这种情况下，我们建议将 DNS 递归解析器服务器与网络出口对齐。
 
@@ -127,7 +127,7 @@ ms.locfileid: "52470535"
 
 我们SharePoint客户端连接到的联机服务前端。 然后，对于办公地点城市，我们将它SharePoint该城市的预期联机服务前端。 如果不匹配，我们提出此建议。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 使用非最佳 SharePoint Online 服务前端可能是由于企业网络出口前面的网络回程所致，在这种情况下，我们建议使用本地和直接网络出口。 它还可能是由于使用远程 DNS 递归解析程序服务器所致，在这种情况下，我们建议将 DNS 递归解析器服务器与网络出口对齐。
 
@@ -141,7 +141,7 @@ ms.locfileid: "52470535"
 
 用户可以从 SharePoint Online 和 OneDrive for Business 服务前端门获取的下载速度以每秒兆字节 (MBps) 。 如果此值小于 1 MBps，我们将提供此见解。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 若要提高下载速度，可能需要增加带宽。 或者，办公地点的用户计算机和 SharePoint Online 服务前端之间可能存在网络拥塞。 这有时称为"连接丢失"，即使有足够的带宽可用，它也会限制可供用户使用的下载速度。
 
@@ -162,7 +162,7 @@ ms.locfileid: "52470535"
 
 与这些位置距离用户更远的 Internet 出口将降低性能，并且由于跨界拥塞，中国出口可能会导致高延迟和连接问题。
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 若要详细了解如何缓解与此见解相关的性能问题，请参阅Microsoft 365中国用户的全局[租户性能优化](microsoft-365-networking-china.md)。
 
@@ -174,7 +174,7 @@ ms.locfileid: "52470535"
 
 这表示你的大多数用户在连接到 Outlook 时可能会遇到Exchange Online。 样本百分比可能表示显示低于 60 分的用户百分比。  
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 启用 Office 位置网络连接可见性（如果尚未启用）。 您希望确定哪些办事处受到影响 Exchange且网络连接不佳的影响，并找到改进将用户连接到 Microsoft 网络的每个办事处的网络外围的方法。
 
@@ -186,13 +186,13 @@ ms.locfileid: "52470535"
 
 这表示你的大多数用户可能遇到与用户或用户SharePoint OneDrive。 样本百分比可能表示显示低于 40 分的用户百分比。  
 
-### <a name="what-should-i-do"></a>该怎么办？
+### <a name="what-should-i-do"></a>我该怎么办？
 
 启用 Office 位置网络连接可见性（如果尚未启用）。 您希望确定哪些办事处受影响 SharePoint且网络连接不佳的影响，并找到改进将用户连接到 Microsoft 网络的每个办事处的网络外围的方法。
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 管理中心 (预览) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 中心 (预览) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365网络评估 (预览) ](office-365-network-mac-perf-score.md)
 

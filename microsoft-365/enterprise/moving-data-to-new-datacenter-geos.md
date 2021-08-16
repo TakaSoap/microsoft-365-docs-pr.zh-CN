@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解新的Office 365数据中心地理位置，以及如何使用数据驻留选项请求将核心数据移动到新地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ddf0caa30f80033a9cfdbbc4cd19f0811f92fcd5e4f28bb98d0e949f9f67412c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854707"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>将核心数据移动到新的数据中心Microsoft 365地理位置
 

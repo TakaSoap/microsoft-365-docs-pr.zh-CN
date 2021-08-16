@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划规划Microsoft Viva主题
-ms.openlocfilehash: 8f02d917a6a977dfcd8fdca6745abcdc66142aaa
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 639c76567f3f14ac9c885ae277ee2631ca26dec5bdf8b3184ad6ee212a7c4c1f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854695"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划Microsoft Viva主题
 
@@ -36,7 +36,7 @@ ms.locfileid: "53649643"
 
 请记住，Viva 主题需要访问用户每天使用的网站和文件。 在测试或开发环境中部署 Viva 主题可能不会产生有用的结果。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
 

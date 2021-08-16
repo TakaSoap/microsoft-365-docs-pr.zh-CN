@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: ff7ba1964afdfcc63c81034666d29432c395c2f391ed5e3945969db0fcae49da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841706"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248033"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -413,13 +413,16 @@ ms.locfileid: "53841706"
 ## <a name="auditing-sensitivity-label-activities"></a>审核敏感度标签活动
 
 > [!IMPORTANT]
-> 如果通过仅为保护容器的标签选择“**组和网站**”作用域来使用标签分离，则：由于本部分描述的 **检测到文档敏感度不匹配** 审核事件和电子邮件，请考虑在为标签设置“**文件和电子邮件**”作用域之前先 [对这些标签进行排序](sensitivity-labels.md#label-priority-order-matters)。 
+> 如果通过仅为保护容器的标签选择“**组和网站**”作用域来使用标签分离，则：由于本部分描述的 **检测到文档敏感度不匹配** 审核事件和电子邮件，请考虑在为标签设置“**文件和电子邮件**”作用域之前先[对标签进行排序](sensitivity-labels.md#label-priority-order-matters)。 
 
 如果有人将文档上传到受敏感度标签保护的网站上，且该文档的敏感度标签的[优先级](sensitivity-labels.md#label-priority-order-matters)比该网站应用的敏感度标签高，则不会阻止此操作。 例如，你向 SharePoint 网站应用了“**常规**”标签，并且有人向此网站上传了一个标记为“**机密**”的文档。 对于优先级更低的内容来说，具有更高优先级的敏感度标签会识别敏感度高于此内容的内容，因此该情况可能会带来安全隐患。
 
 虽然未阻止该操作，但其已经过审核，并默认自动生成一封发往上传文档人员和网站管理员的电子邮件。 因此，可识别存在这种标签优先级不一致情况的用户和管理员，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。
 
 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不会出现安全问题。 例如，标有“**常规**”的文档上传到标有“**机密**”的网站上。 在这种情况中，不生成审核事件和电子邮件。
+
+> [!NOTE]
+> 正如要求用户提供将标签更改为较低分类的理由的策略选项一样，同一父标签的子标签都被视为具有相同的优先级。
 
 要搜索此事件的审核日志，请从“**文件和页面活动**”类别中查找“**检测到文档敏感度不匹配**”。
 

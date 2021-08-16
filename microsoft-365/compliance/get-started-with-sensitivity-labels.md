@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: fc2de341f79940f4c7a3a79ca61f2854844d2263
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 3b4c99f78173466e2a4d5802be54fd98cf312849
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53618879"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247894"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -71,7 +71,7 @@ ms.locfileid: "53618879"
 
 建议使用下一节中的表，确定映射到最有影响的业务需求的前一两个场景。 部署这些场景后，返回到列表，确定下一个或两个部署的优先级。
 
-可以在可下载的数据丢失保护和 Microsoft 信息保护部署加速指南中找到其他常规部署指南。 有关详细信息，请参阅博客文章，[Microsoft 365 信息保护与合规性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404)。
+你将在 [Microsoft 信息保护和数据丢失防护的部署加速指南](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/)中找到有关其他常规部署的指南，这是来自[客户加速团队 (CAT)](https://microsoft.github.io/ComplianceCxE/) 站点的资源之一。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度标签的常见场景
 

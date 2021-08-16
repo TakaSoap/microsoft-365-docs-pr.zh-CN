@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365网络评估
-ms.openlocfilehash: c09e34b1bc3a8bf0f82a4a1e3c72e67f320abd43
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: c9533cb4189709ad4e32194371fb0863b4b5fa3f38eb035f7f0bdc505152b731
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854721"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365网络评估
 
-在Microsoft 365中心的网络连接中，网络评估将许多网络性能指标聚合到企业网络外围运行状况的快照中。 网络评估会告知你客户负责的网络设计对用户体验Office 365的影响。 网络评估的范围既包括整个租户，也包括用户连接到租户的每个地理位置。 评估为Microsoft 365管理员提供了一种简单方法，以便立即了解企业的网络运行状况，并快速深入到任何全局办事处位置的详细报告。
+在 Microsoft 365 管理 中心的网络连接中，网络评估将许多网络性能指标聚合到企业网络外围运行状况的快照中。 网络评估会告知你客户负责的网络设计对用户体验Office 365的影响。 网络评估的范围既包括整个租户，也包括用户连接到租户的每个地理位置。 评估为Microsoft 365管理员提供了一种简单方法，以便立即了解企业的网络运行状况，并快速深入到任何全局办事处位置的详细报告。
 
 网络评估点值从 0 到 100，是 TCP 延迟、下载速度和 UDP 连接质量指标的平均值。 这些指标每天编译一次。 这些指标中不包括 Microsoft 拥有的网络的性能指标，以确保评估结果明确且特定于企业网络。
 
@@ -42,7 +42,7 @@ ms.locfileid: "52470462"
 | 0                  | 网络问题是一个常见讨论主题 |
 
 >[!IMPORTANT]
->Microsoft 365 管理中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
+>Microsoft 365 管理 中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
 ## <a name="network-assessment-panel"></a>网络评估面板
 
@@ -99,7 +99,7 @@ For SharePoint Online the download speed for a user to access a document from Sh
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 管理中心 (预览) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理 中心 (预览) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365预览版 (网络性能) ](office-365-network-mac-perf-insights.md)
 
