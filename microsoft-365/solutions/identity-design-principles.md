@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: a3be13624c3b3cc9d7be667e28e435c76c513fc3
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: e17c343dbda957144d227c1c82ee83356147a6f80402846c62e5fb75342eb908
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883479"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -320,6 +320,6 @@ Azure Role-Based访问控制 (RBAC) 为 Azure 启用精细的访问管理。 使
 
 如上图所示，许多其他服务都将被视为设计方案（例如 (Azure 策略[](/azure/governance/management-groups/)[、Azure](/azure/governance/policy/overview)[蓝图](/azure/governance/blueprints/overview)、管理组等）的一) 。
 
-## <a name="conclusion"></a>总结
+## <a name="conclusion"></a>结束语
 
 作为简短摘要启动，结束时间长于我预期。  现在，我希望您准备好深入了解如何为组织创建委派模型。  此对话与客户非常常见。 没有适用于所有人的模型。 在记录我们在整个客户看到的常见模式之前，等待 Microsoft 工程部门规划的一些改进。 在此期间，你可以与 Microsoft 帐户团队一起安排访问最近的 [Microsoft 技术中心](https://www.microsoft.com/mtc)。  请在这里看到！

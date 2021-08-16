@@ -13,18 +13,18 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 9309d0b1bc5a83495af344b699b45e6e21d7e1d65dab6511e31880ee11ec4bfb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43c32f12a125386d6c27a8e1df5bba9875001afc
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811291"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347212"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>使用设备控制保护组织的数据
 
-**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint 设备控件通过监视和控制组织中设备的媒体使用（如使用可移动存储设备和 USB 驱动器）防止数据丢失。
+Microsoft Defender for Endpoint 设备控制通过监视和控制组织中设备的媒体使用（如使用可移动存储设备和 USB 驱动器）防止数据丢失。
 
 借助设备控件报告，可以查看与媒体使用情况相关的事件，例如：
 
@@ -39,11 +39,11 @@ Microsoft Defender for Endpoint 设备控件通过监视和控制组织中设备
 审核事件包括：
 
 - **USB 驱动器装入和卸载：** 装载或卸载 USB 驱动器时生成的审核事件。
-- **PnP：** 即插即用审核事件在可移动存储、打印机或蓝牙媒体连接时生成。
+- **PnP：** 即插即用审核事件在连接可移动存储、打印机或蓝牙时生成。
 
 ## <a name="monitor-device-control-security"></a>监视设备控制安全性
 
-Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以找到安全中心中的设备Microsoft 365报告，>**设备保护**" 。
+Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以访问报告设备保护，Microsoft 365安全中心 **>报告**。
 
 "报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。
 

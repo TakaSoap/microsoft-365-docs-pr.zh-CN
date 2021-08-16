@@ -1,7 +1,7 @@
 ---
 title: 查看目录中的目录同步Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -23,16 +23,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: 了解如何在目录中查看目录同步错误和可能的Microsoft 365 管理中心。
-ms.openlocfilehash: 37bd25f46c84f2a4ec26f17accdae034487a4dc91023d798cf3459941136c0a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d48b67f31241777368cd27cf0385d34757495eef
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885242"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353752"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>查看目录中的目录同步Microsoft 365
 
-可以在目录同步过程中查看Microsoft 365 管理中心。 只显示 User 对象错误。 若要查看 PowerShell 错误，请参阅 [使用 DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)标识对象。
+可以在"管理"中查看目录Microsoft 365 管理中心。 只显示 User 对象错误。 若要查看 PowerShell 错误，请参阅 [使用 DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)标识对象。
 
 ## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>查看目录中的目录Microsoft 365 管理中心
 
@@ -52,4 +52,4 @@ ms.locfileid: "53885242"
 
    ![目录同步错误的详细信息示例](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-查看后，请参阅[修复目录同步Microsoft 365](fix-problems-with-directory-synchronization.md)修复任何已识别的问题。
+查看后，请参阅[修复目录同步问题，Microsoft 365](fix-problems-with-directory-synchronization.md)修复任何已识别的问题。

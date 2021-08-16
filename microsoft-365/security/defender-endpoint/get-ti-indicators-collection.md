@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b69de3add4ca159793eada07ff6c121e7e29690a751be682285ffea24ee46ff5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d04590eee8f771fe8001f44dfae490645e270e64
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349604"
 ---
 # <a name="list-indicators-api"></a>列表指示器 API
 
@@ -41,7 +41,9 @@ ms.locfileid: "53829299"
 
 支持 [OData V4 查询](https://www.odata.org/documentation/)。
 
-OData 的 `$filter` 查询在：、 `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` 和 `createdBy` `action` 属性上 `severity` 受支持。
+OData 的查询在以下项上受支持 `$filter` ：、 `application` `createdByDisplayName` `expirationTime` `generateAlert` `title` `rbacGroupNames` `rbacGroupIds` `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` `createdBy` `action` 和 `severity` 属性。
+<br>```$stop``` 最大值为 10，000。 
+<br>```$skip```.
 
 请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)
 

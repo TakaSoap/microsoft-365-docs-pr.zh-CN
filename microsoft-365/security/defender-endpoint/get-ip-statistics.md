@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e59f59158e36def392255e3034e0123c98ffac7a83548bf5c0284f92bea03a8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347200"
 ---
 # <a name="get-ip-statistics-api"></a>获取 IP 统计信息 API
 
@@ -42,6 +42,7 @@ ms.locfileid: "53853915"
 
 ## <a name="limitations"></a>限制
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+2. Lookbackhours 的最大值是 720 小时 (30 天) 。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +55,7 @@ ms.locfileid: "53853915"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +67,7 @@ GET /api/ips/{ip}/stats
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
@@ -80,7 +81,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且 ip 存在 - 200 正常，正文中具有统计数据。 IP 不存在 - 404 未找到。
+如果成功且 ip 存在 - 200 正常，正文中提供统计数据。 IP 有效但不存在 - organizationPrevalence 0，IP 无效 - HTTP 400。
 
 ## <a name="example"></a>示例
 

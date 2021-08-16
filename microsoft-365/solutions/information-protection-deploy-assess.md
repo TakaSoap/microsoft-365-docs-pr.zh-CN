@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确定数据隐私法规、相关方案、准备情况以及用户环境中Microsoft 365类型。
-ms.openlocfilehash: 106bc0d15c04e44e17bf4c0528b541c5d5fd6d8e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 04dc67ee6316f4549e7d215f997cdc171b0038024f3740d544d6acb214f9be1e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883399"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>使用数据隐私风险评估数据隐私Microsoft 365
 

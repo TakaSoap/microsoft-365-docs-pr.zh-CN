@@ -1,5 +1,5 @@
 ---
-title: 高级电子数据展示中的标记和评估
+title: 标记和评估Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
-description: 查看执行评估培训的步骤，包括标记文件，并查看高级电子数据展示中的评估结果。
-ms.openlocfilehash: 15bc8254ea1589d9afa17a74eaf3bfbcdfd4bba0
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+description: 查看执行评估培训的步骤，包括标记文件，并查看评估Advanced eDiscovery。
+ms.openlocfilehash: 4e1b9f3e79ee35866322e713412690af068ce1837c668c0331d1091cd84a2786
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769187"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899836"
 ---
-# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>高级电子数据展示中相关性模块中的标记和评估
+# <a name="tagging-and-assessment-in-the-relevance-module-in-advanced-ediscovery"></a>中相关性模块中的标记Advanced eDiscovery
   
-本节介绍高级电子数据展示中相关性模块中的评估过程。
+本节介绍在 Advanced eDiscovery 中相关性模块中评估Advanced eDiscovery。
   
 ## <a name="performing-assessment-training-and-analysis"></a>执行评估培训和分析
 
@@ -106,7 +106,7 @@ ms.locfileid: "49769187"
 
 - 需要检查 (其他评估) 
 
-评估当前误差区是高级电子数据展示建议的误差区。 为"需要其他评估文件"显示的数量对应于该建议。
+评估当前误差区是由评估建议的错误Advanced eDiscovery。 为"需要其他评估文件"显示的数量对应于该建议。
   
 评估进度指示器显示评估的完成级别（假设当前误差线）。 评估正在进行时，用户将标记另一个评估示例。
   
@@ -114,7 +114,7 @@ ms.locfileid: "49769187"
   
 展开的"跟踪"显示显示下一步的建议步骤、评估统计信息以及详细结果的访问权限。
   
-当丰富程度非常低时，需要达到最少数量的相关文件以生成有用统计信息所需的其他评估文件数非常高。 然后，高级电子数据展示将建议继续培训。 评估进度指示器将带底纹，并且没有可用的统计信息。
+当丰富程度非常低时，需要达到最少数量的相关文件以生成有用统计信息所需的其他评估文件数非常高。 Advanced eDiscovery建议继续培训。 评估进度指示器将带底纹，并且没有可用的统计信息。
   
 如果没有基于统计的防抖动，则结果的准确性和可信度将较低。 但是，当你不需要知道找到的相关文件的百分比时，这些结果可用于查找相关文件。 同样，此状态可用于对低丰富度问题进行训练，其中相关性分数可以加快对与特定问题相关的文件的访问。
   

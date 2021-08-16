@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 了解如何为组织选择和部署Teams语音解决方案。
-ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bfcad56d54eb29fdf9d2b48b74d7811dee5dc2df1be9fdf2ddcd5373a1b1be48
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883357"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>计划和部署 Teams 语音解决方案
 

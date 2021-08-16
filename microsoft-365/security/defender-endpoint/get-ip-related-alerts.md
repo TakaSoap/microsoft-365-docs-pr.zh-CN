@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a68402571ff86c8b130b168e4fd1164abf46b3c01b6906c1ec8cfc7c1123cfa2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12317627c497999f0821a09bc6639aedc2515933
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347236"
 ---
 # <a name="get-ip-related-alerts-api"></a>获取 IP 相关警报 API
 
@@ -59,8 +59,8 @@ ms.locfileid: "53811250"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
->- 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+>- 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -72,7 +72,7 @@ GET /api/ips/{ip}/alerts
 
 名称|类型|说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -80,7 +80,8 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且 IP 存在 - 200 正常， [正文中具有](alerts.md) 警报实体列表。 如果 IP 不存在 - 404 未找到。
+如果成功且 IP 存在 - 200 正常， [正文中具有](alerts.md) 警报实体列表。 如果 IP 地址未知但有效，它将返回空集。
+如果 IP 地址无效，它将返回 HTTP 400。
 
 ## <a name="example"></a>示例
 

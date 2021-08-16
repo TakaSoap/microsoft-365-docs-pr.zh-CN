@@ -20,22 +20,22 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: 059e1653d7db9140dbc80fd69fe36e95a744b079
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 02cc7298afe202ae004a1fff84ea6961535c5b2e2972d08da6527946d7253fae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899992"
 ---
 # <a name="learn-about-privileged-access-management"></a>了解特权访问管理
 
-特权访问管理允许在 Office 365 中对特权管理任务精细的访问控制。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。 特权访问管理要求用户通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成提升和特权任务。 此配置授予用户适当的访问权限，以执行手头任务，而不会冒暴露敏感数据或关键配置设置的风险。 在 Microsoft 365 中启用特权访问管理，使组织能够使用零长期特权运行，并针对长期管理访问漏洞提供一个防御层。
+特权访问管理允许在 Office 365 中对特权管理任务进行精细的访问控制。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。 特权访问管理要求用户通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成提升和特权任务。 此配置授予用户适当的访问权限，以执行手头任务，而不会冒暴露敏感数据或关键配置设置的风险。 在 Microsoft 365 中启用特权访问管理，使组织能够使用零长期特权运行，并针对长期管理访问漏洞提供一个防御层。
 
 有关集成的客户密码箱和特权访问管理工作流的快速概述，请参阅此客户密码箱 [和特权访问管理视频](https://go.microsoft.com/fwlink/?linkid=2066800)。
 
 ## <a name="layers-of-protection"></a>保护层
 
-特权访问管理补充了安全体系结构内的其他数据和Microsoft 365功能保护。 将特权访问管理作为集成和分层安全方法的一部分提供一个安全模型，可最大限度地保护敏感信息Microsoft 365配置设置。 如图所示，特权访问管理基于对 Microsoft 365 数据的本机加密提供的保护以及 Microsoft 365 服务的基于角色的访问控制安全模型。 当与[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)一起使用时，这两个功能提供访问控制，在不同范围内提供实时访问。
+特权访问管理补充了 Microsoft 365 安全中心体系结构中的其他数据和访问功能保护。 将特权访问管理作为集成的分层安全方法的一部分提供了一个安全模型，可以最大限度地保护敏感信息和 Microsoft 365 配置设置。 如图所示，特权访问管理建立在 Microsoft 365 数据本机加密提供的保护和 Microsoft 365 服务基于角色的访问控制安全模型的基础上。 当与[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)一起使用时，这两个功能提供访问控制，在不同范围内提供实时访问。
 
 ![分层保护Microsoft 365](../media/pam-layered-protection.png)
 
@@ -51,13 +51,13 @@ ms.locfileid: "50126601"
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>步骤 1：配置特权访问策略
 
-使用 Microsoft 365 管理中心或[Exchange](https://admin.microsoft.com) Management PowerShell 配置特权访问策略时，需要定义策略和特权访问功能进程以及 Microsoft 365 层中的策略属性。 这些活动记录在安全与合规 &amp; 中心。 该策略现在已启用并可以处理传入的审批请求。
+在使用[Microsoft 365 管理中心](https://admin.microsoft.com)或 Exchange Management PowerShell 配置特权访问策略时，需要定义策略和特权访问功能进程以及 Microsoft 365 元素中的策略属性。 这些活动记录在安全与合规 &amp; 中心。 该策略现在已启用并可以处理传入的审批请求。
 
 ![步骤 1：策略创建](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>第 2 步：访问请求
 
-在[Microsoft 365管理](https://admin.microsoft.com)中心或 Exchange PowerShell 中，用户可以请求对提升或特权任务的访问权限。 特权访问功能将请求发送到Microsoft 365配置的权限访问策略进行处理，并将活动记录在安全与合规中心 &amp; 日志中。
+在[Microsoft 365 管理中心](https://admin.microsoft.com)或 Exchange PowerShell 中，用户可以请求对提升或特权任务的访问权限。 特权访问功能将请求发送到Microsoft 365配置的权限访问策略进行处理，并将活动记录在安全与合规中心 &amp; 日志中。
 
 ![第 2 步：访问请求](../media/pam-step2-access-request.jpg)
 

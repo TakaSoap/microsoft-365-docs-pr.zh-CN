@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f04fac6783f07918639e54b3f318b63ed32838fe
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257089"
+ms.locfileid: "58349280"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
@@ -41,6 +41,11 @@ ms.locfileid: "58257089"
 > [!IMPORTANT]
 >
 > - 这些操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
+
+## <a name="limitations"></a>限制
+
+此 API 的速率限制是每分钟 2 个调用和每小时 120 个调用。 
+
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [访问 Microsoft Defender for Endpoint API](apis-intro.md)
@@ -53,7 +58,7 @@ ms.locfileid: "58257089"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -74,7 +79,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。
+如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回 404 未找到。
 
 ## <a name="example"></a>示例
 

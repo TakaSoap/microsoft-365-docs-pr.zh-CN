@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础结构的基本结构，以及企业内部部署基础结构如何满足Microsoft 365业务需求。
-ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 70b0f0c9ae93a682a00eb6cccfec013c4e72f18b29d2c701ae9a3c3db84da240
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899557"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 

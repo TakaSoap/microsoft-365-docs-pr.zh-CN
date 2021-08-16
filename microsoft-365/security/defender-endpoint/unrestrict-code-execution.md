@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb0a64b6f6d63e0439a03805e4e8cfc1d05116c7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38c34198f20c55e1dc6dd2518f30764bf6d58493
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255471"
+ms.locfileid: "58349772"
 ---
 # <a name="remove-app-restriction-api"></a>删除应用限制 API
 
@@ -50,9 +50,9 @@ ms.locfileid: "58255471"
 
 > [!IMPORTANT]
 >
-> - 完全隔离适用于 Windows 10 版本 1703 上的设备。
-> - 选择性隔离适用于 Windows 10版本 1709 或更高版本上的设备。
-> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender 终结点使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
+> - 完全隔离适用于版本 1703 Windows 10上的设备。
+> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender for Endpoint 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 ## <a name="permissions"></a>权限
 
@@ -86,13 +86,15 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 201 - 已创建响应 [代码和计算机](machineaction.md) 操作。
+
+如果发送多个 API 调用来删除同一设备的应用限制，它将返回"挂起计算机操作"或 HTTP 400，消息为"操作已在进行中"。
 
 ## <a name="example"></a>示例
 

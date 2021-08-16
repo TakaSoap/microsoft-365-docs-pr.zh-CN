@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b71ed4cb81da800069df826f9d95737134822ae896dc23cbe37363275264219e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 93e76fb5730140d06f9805e91ecd1a175a4f7cfb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847411"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347140"
 ---
 # <a name="get-domain-statistics-api"></a>获取域统计信息 API
 
@@ -44,6 +44,7 @@ ms.locfileid: "53847411"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+2. 最大值为 `lookbackhours` 720 小时 (30 天) 。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +58,7 @@ ms.locfileid: "53847411"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 0b959dd9349a032d6825d010d103bfd74d080a595b072be950a61e98f3765dbb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55eaf8f37a61e12ec57b386a509dfddf2ca05ff8
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346996"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -58,7 +58,7 @@ ms.locfileid: "53815859"
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>使用角色向用户分配管理员角色
 
-1. 在管理中心， **转到角色**。 选择 **Azure AD 或** **Intune** 选项卡以查看适用于你的组织的管理员角色。
+1. 在管理中心中，转到"<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**角色分配"。**</a> 选择 **Azure AD 或** **Intune** 选项卡以查看适用于你的组织的管理员角色。
 2. 选择要为其分配用户的管理员角色。
 3. 选择 **分配管理员添加**  >  。
 4. 键入用户的 **显示名称****或用户名**，然后从建议列表中选择用户。
@@ -91,7 +91,7 @@ ms.locfileid: "53815859"
 
 ## <a name="assign-admin-roles-to-multiple-users"></a>向多个用户分配管理员角色
 
-如果您知道 PowerShell，请参阅 [使用 PowerShell 向用户帐户分配角色](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)。 它非常适合为数百个用户分配角色。
+如果您知道 PowerShell，请参阅使用 [PowerShell 向用户帐户分配角色](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)。 它非常适合为数百个用户分配角色。
   
 请按照以下说明向数十个用户分配角色。
 

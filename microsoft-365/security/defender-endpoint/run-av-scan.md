@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07b3b6174b8f99123cb4184c68fa22fdddf6ca8e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255752"
+ms.locfileid: "58349208"
 ---
 # <a name="run-antivirus-scan-api"></a>运行防病毒扫描 API
 
@@ -47,7 +47,7 @@ ms.locfileid: "58255752"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
+> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
 > - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>权限
@@ -82,7 +82,7 @@ Content-Type|string|application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 ScanType|String|定义扫描的类型。 **必需**。
@@ -95,6 +95,8 @@ ScanType|String|定义扫描的类型。 **必需**。
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 201、Created 响应代码和 _MachineAction_ 对象。
+
+如果发送多个 API 调用以对同一设备运行防病毒扫描，它将返回"挂起计算机操作"或 HTTP 400，消息为"操作已在进行中"。
 
 ## <a name="example"></a>示例
 

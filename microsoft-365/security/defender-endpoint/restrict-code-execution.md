@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2eda900a659879fcfe07052e8b51ba3e5a03e633
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257702"
+ms.locfileid: "58350012"
 ---
 # <a name="restrict-app-execution-api"></a>限制应用执行 API
 
@@ -52,9 +52,9 @@ ms.locfileid: "58257702"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
+> - 此操作适用于版本 1709 Windows 10版本上的设备。
 > - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
-> - 此操作需要满足应用程序Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+> - 此操作需要满足Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
 ## <a name="permissions"></a>权限
 
@@ -88,13 +88,15 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 201 - 已创建响应 [代码和计算机](machineaction.md) 操作。
+
+如果发送多个 API 调用来限制同一设备的应用执行，它将返回"挂起计算机操作"或 HTTP 400，消息为"Action is already in progress"。
 
 ## <a name="example"></a>示例
 

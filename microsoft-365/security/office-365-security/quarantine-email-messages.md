@@ -19,15 +19,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解在包含潜在危险或不需要Exchange Online Protection (的 EOP) 隔离邮件。
+description: 管理员可以了解在 EOP Exchange Online Protection (隔离) 具有潜在危险或不需要的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0ca5a61a7e71a2414fcaf1c0b02aec04820ca17
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c68351b690ecab2f60990695dc0e550b5ff0aff7
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258199"
+ms.locfileid: "58349940"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP 中的隔离电子邮件
 
@@ -38,7 +38,7 @@ ms.locfileid: "58258199"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中，如果没有 Exchange Online 邮箱，可以使用隔离来保留潜在危险或不需要的邮件。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) Exchange Online) 组织中，可以使用隔离来保留潜在危险或不需要的邮件。
 
 如果发现任何附件包含 *恶意软件，反* 恶意软件策略将自动隔离邮件。 有关详细信息，请参阅在 [EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 
@@ -46,9 +46,9 @@ ms.locfileid: "58258199"
 
 用户和管理员可以使用隔离邮件：
 
-- 管理员可以为所有用户使用所有类型的隔离邮件。 只有管理员才能处理被隔离为恶意软件、高可信度网络钓鱼的邮件，或由于邮件流规则 (也称为传输规则) 。 有关详细信息，请参阅[在 EOP 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
+- 管理员可以为所有用户使用所有类型的隔离邮件。 只有管理员才能处理被隔离为恶意软件、高可信度网络钓鱼的邮件，或者由于邮件流规则 (也称为传输规则) 。 有关详细信息，请参阅[在 EOP 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
 
-- 从 2020 年 4 月开始，如果邮件被隔离为垃圾邮件、批量电子邮件或电子邮件 (，用户可以处理作为收件人的隔离) 邮件。 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
+- 用户可以处理作为收件人且自 2020 年 4 月开始被隔离为垃圾邮件、 (电子邮件或邮件的隔离邮件) 网络钓鱼。 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
 
   为了防止用户管理自己的隔离网络钓鱼邮件，管理员可以为反垃圾邮件策略中的网络钓鱼电子邮件筛选裁定配置不同的操作。  有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 

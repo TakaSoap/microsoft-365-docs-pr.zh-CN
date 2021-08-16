@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: 1472b20b32315480f5b7b237ca91a465de293747
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 63a6919b2aa4c368360414c683614d8bb4305fd0
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247526"
+ms.locfileid: "58350036"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 
@@ -38,13 +38,17 @@ ms.locfileid: "58247526"
 
 ## <a name="set-up-privacy-management"></a>设置隐私管理
 
-若要开始使用隐私管理，首先获取试用版许可证并登录。 然后，您可以为用户分配权限并查看设置。
+若要开始使用隐私管理，请首先获取试用版许可证。 然后，你可以登录隐私管理、为用户分配权限并查看设置。
 
 ### <a name="get-trial-license"></a>获取试用许可证
 
 若要开始使用公共预览版，全局管理员可以从管理中心获取免费隐私管理 [试用许可证](https://aka.ms/purchasem365privacy)。 选择"开始试用"开始。 你的许可证将持续一个月，可以在公共预览版期间根据需要无需任何费用续订它。
 
-获取订阅后，最多允许激活 30 分钟。 然后返回到隐私管理以开始。 你将被要求确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#how-we-evaluate-your-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
+获取订阅后，最多允许激活 30 分钟。 然后返回到合规中心中的隐私管理以开始。
+
+### <a name="accept-privacy-management-terms"></a>接受隐私管理条款
+
+首次打开隐私管理时，将要求您确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#how-we-evaluate-your-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
 
 如果你没有获得订阅或同意使用隐私管理条款所需的角色，系统将提示你联系全局管理员寻求帮助。
 
@@ -58,7 +62,7 @@ ms.locfileid: "58247526"
 
 ### <a name="manage-settings"></a>管理设置
 
-可通过设置管理主页右上角的齿轮访问该页面。 它允许隐私管理管理员跨隐私管理配置基本属性。
+可通过设置管理主页右上角的齿轮访问"隐私管理"页面。 它允许隐私管理管理员跨隐私管理配置基本属性。
 
 在开始之前，你可能希望查看默认配置并做出任何所需的调整。 若要了解有关选项的详细信息，请参阅 [管理隐私管理设置](privacy-management-settings.md)。
 
@@ -66,10 +70,10 @@ ms.locfileid: "58247526"
 
 登录隐私管理后，你将进入概述 **页面** 。 此页面提供有关存储在 Microsoft 365 环境中个人数据的见解，以帮助您快速发现问题、识别风险指标并采取措施解决问题。 你的概述应在注册前 24 小时内填充初始见解。 当你继续使用隐私管理时，概述页面将刷新以继续提供最新信息。
 
-为了进一步深入了解数据，数据配置文件页将提供更多的可视化和分析，并按地理位置和按服务Microsoft 365组织数据。
+为了进一步深入了解数据，数据配置文件页将提供更多可视化和分析，并按地理位置和 Microsoft 365 服务提供组织数据高级视图。
 
 若要了解有关这些页面的信息，请参阅 [查找和可视化数据](privacy-management-data-profile.md)。
 
-## <a name="get-started-with-default-policies"></a>默认策略入门 
+## <a name="get-started-with-default-policies"></a>默认策略入门
 
 隐私管理将有助于启动数据评估过程，方法为创建三个使用默认设置的策略，使用用于数据最小化、数据过度利用和数据传输的模板。 默认情况下，这些策略将启用，但不会自动触发通知邮件或修正提示。 初始设置后，可以继续创建和自定义自己的策略。 若要了解更多信息，请参阅 [创建和管理策略](privacy-management-policies.md)。

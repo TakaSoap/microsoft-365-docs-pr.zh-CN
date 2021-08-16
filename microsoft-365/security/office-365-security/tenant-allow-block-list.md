@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中管理允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ba0695b8b07defbfe991da1c3ed24d0ea0a88679ef36cf43dc49ecefd7a35
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56830686"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349964"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -34,20 +34,23 @@ ms.locfileid: "56830686"
 
 > [!NOTE]
 >
-> 本文中所述的功能在预览版中，可能会更改，并且并非在所有组织中都可用。  如果你的组织没有本文中所述的欺骗功能，请参阅使用欺骗智能策略和 EOP 中的欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
+> 本文中介绍的一些功能在预览版中，可能会更改，并且并不是在所有组织中都可用。
+> 
+> 如果你的组织没有本文中所述的欺骗功能，请参阅使用欺骗智能策略和 EOP 中的欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
+在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
 
-在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会对 EOP 筛选裁定有意见不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
-
-租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动替代筛选裁定Microsoft 365的方法。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
+租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动覆盖筛选裁定Microsoft 365的方法。 租户允许/阻止列表在传入邮件的邮件流期间 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
+- 要阻止的发件人电子邮件或域。
 - 允许或阻止欺骗发件人。 如果替代欺骗智能见解中的允许或阻止裁定[](learn-about-spoof-intelligence.md)，欺骗发件人将成为仅出现在租户允许/阻止列表中的"欺骗"选项卡上的手动允许或阻止条目。 在欺骗智能检测到欺骗性发件人之前，还可以在此处手动创建允许或阻止欺骗发件人的允许或阻止条目。
 - 允许的 URL。
-- 要允许的文件。 
+- 要允许的文件。
+- 要允许的发件人电子邮件或域。
 
-本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，这些组织的邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文介绍如何在 Microsoft 365 Defender 门户或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -63,7 +66,7 @@ ms.locfileid: "56830686"
 
 - 本文稍后的租户允许/阻止列表一节的 [URL](#url-syntax-for-the-tenant-allowblock-list) 语法中介绍了可用的 URL 值。
 
-- 租户允许/阻止列表允许最多 500 个 URL 条目和 500 个文件哈希条目。
+- 租户允许/阻止列表允许最多 500 个发件人条目、500 个 URL 条目和 500 个文件哈希条目。
 
 - 每个条目的最大字符数为：
   - 文件哈希 = 64
@@ -76,8 +79,8 @@ ms.locfileid: "56830686"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在 Exchange Online 网站中 分配 权限，才能执行本文中的步骤：
-  - **URL 和文件**：
-    - 若要在租户允许/阻止列表中添加和删除值，你需要是组织 **管理或** 安全管理员角色 **组** 的成员。
+  - **发件人、URL 和文件**：
+    - 若要在租户允许/阻止列表中添加和删除值，你需要是组织管理、安全管理员或安全操作员角色组的成员，或者你分配有 Tenant **AllowBlockList Manager** 角色。
     - 若要对租户允许/阻止列表进行只读访问，你需要是全局读取 **者** 或安全读者 **角色组的成员** 。
   - **欺骗**：以下组合之一：
     - **组织管理**
@@ -95,7 +98,7 @@ ms.locfileid: "56830686"
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>使用 Microsoft 365 Defender 门户
 
-在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
+In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 若要添加所有块，请参阅 [在租户允许/阻止列表中添加块](manage-tenant-blocks.md)。
 
@@ -109,19 +112,25 @@ ms.locfileid: "56830686"
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>查看租户允许/阻止列表中的条目
 
-1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择您想要的选项卡。 可用的列取决于所选的选项卡：
 
+   - **发件人**：
+     - **值**：发件人域或电子邮件地址。
+     - **操作**：值 **Allow** 或 **Block**。
+     - **上次更新**
+     - **删除 on**
+     - **Notes**
    - **URL：**
      - **值**：URL。
-     - **操作**：值 **Block**。
+     - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
      - **Notes**
    - **Files**
      - **值**：文件哈希。
-     - **操作**：值 **Block**。
+     - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
      - **Notes**
@@ -135,6 +144,7 @@ ms.locfileid: "56830686"
 
    可以单击 **"分组** "对结果进行分组。 可用的值取决于所选的选项卡：
 
+   - **发件人**：可以按操作 对结果 **进行分组**。
    - **URL**：可以按操作 对结果 **进行分组**。
    - **文件**：可以按操作 对结果 **进行分组**。
    - **欺骗：** 你可以按操作或欺骗 **类型****对结果进行分组**。
@@ -143,6 +153,11 @@ ms.locfileid: "56830686"
 
    单击 **"筛选** "筛选结果。 显示在"筛选器 **"飞出** 控件中的可用值取决于所选的选项卡：
 
+   - **发件人**
+     - **Action**
+     - **永不过期**
+     - **上次更新日期**
+     - **删除 on**
    - **URL**
      - **Action**
      - **永不过期**
@@ -161,12 +176,12 @@ ms.locfileid: "56830686"
 
 4. 完成后，单击“**添加**”。
 
-## <a name="view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>查看租户允许/阻止列表中的阻止文件或 URL 条目
+## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>查看租户允许/阻止列表中的发件人、文件或 URL 条目
 
-若要查看租户允许/阻止列表中的阻止文件或 URL 条目，请使用以下语法：
+若要查看租户允许/阻止列表中的阻止发件人、文件或 URL 条目，请使用以下语法：
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <FileHash | URL> [-Entry <FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
+Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
 ```
 
 此示例返回指定文件哈希值的信息。
@@ -215,7 +230,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - 允许 IP4v 和 IPv6 地址，但不允许 TCP/UDP 端口。
 
-- 例如，不允许使用文件名 (，例如test.pdf) 。
+- 不允许使用文件名扩展名 (例如，test.pdf) 。
 
 - 不支持 Unicode，但 Punycode 支持。
 
@@ -456,7 +471,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - 通配符 (例如 \* ，) 。
 
 - **发送基础结构**：此值指示来自欺骗用户的邮件来源。 有效值包括：
-  - 反向 DNS 查找中的域 (PTR) 源电子邮件服务器的 IP 地址的 IP 地址 (例如，fabrikam.com) 。
+  - 反向 DNS 查找中的域 (PTR 记录) 源电子邮件服务器的 IP 地址的 IP 地址 (例如，fabrikam.com) 。
   - 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
 
 下面是用于标识欺骗性发件人的有效域对的一些示例：
@@ -471,7 +486,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 例如，为以下域对添加允许条目：
 
-- **域**：gmail.com
+- **域**： gmail.com
 - **基础结构**：tms.mx.com
 
-仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的其他域中发件人的邮件 tms.mx.com 反欺骗智能进行检查。
+仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的发件人的邮件 tms.mx.com 反欺骗智能进行检查。

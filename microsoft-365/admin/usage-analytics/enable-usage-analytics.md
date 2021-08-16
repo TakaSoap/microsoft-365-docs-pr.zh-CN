@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: 了解如何使用 Power BI 中的"使用率分析"Microsoft 365开始收集租户Power BI。
-ms.openlocfilehash: 836ff4cea69f0feef2c94980a48c9202ce57dd6891ef4a7dd76cea26fc3d2cc4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何使用 Power BI 中的"使用情况分析"Microsoft 365开始收集租户Power BI。
+ms.openlocfilehash: b8101733b125c869d55c0e9cc00f1ec598bed08f
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901155"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347224"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
-Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Community。
+Microsoft 365使用情况分析尚未向美国政府Microsoft 365提供Community。
 
 ## <a name="before-you-begin"></a>准备工作
 
-若要开始使用Microsoft 365分析，你必须先在应用中提供Microsoft 365 管理中心，然后在 Power BI 中启动模板应用。
+若要开始使用Microsoft 365分析，必须先在 Microsoft 365 管理中心 中提供数据，然后在 Power BI 中启动<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>模板Power BI。
 
 ## <a name="get-power-bi"></a>获取 Power BI
 
-如果尚未注册Power BI，可以[注册Power BI Pro。](https://go.microsoft.com/fwlink/p/?linkid=845347) 选择 **"免费试用**"以注册试用版，**或选择"** 立即购买"Power BI Pro。
+如果尚未注册Power BI，可以[注册Power BI Pro。](https://go.microsoft.com/fwlink/p/?linkid=845347) 选择 **"免费试用** 以注册试用版"**或"立即** 购买"Power BI Pro。
 
 
 也可展开" **产品**"，购买某一版 Power BI。
@@ -55,17 +55,17 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
 
 有关详细信息 [，请参阅有关](../add-users/about-admin-roles.md) 管理员角色的信息。
 
-1. 在管理中心，转到 \> **"设置"组织设置** \> **""服务"** 选项卡。
+1. 在管理中心中，转到 \> **"设置"组织设置** \> **""服务"** 选项卡。
 
 2. 在"**服务"选项卡** 上，选择"报告 **"。**
 
-3. 在打开的"报告"面板上，将"报告数据可供Microsoft 365 **使用情况** 分析 **"Power BI"保存** \> **"。**
+3. 在打开的"报告"面板上，将"报告数据可用于Microsoft 365 **使用情况** 分析 **"Power BI"保存** \> **"。**
 
-数据收集过程将在 2 到 48 小时内完成，具体取决于租户的大小。 数据收集 **完成后Power BI"** 转到 ("按钮) 不再灰显。
+数据收集过程将在 2 到 48 小时内完成，具体取决于租户的大小。 数据收集 **完成后Power BI"** 转到 (按钮) 不再灰显。
 
 ## <a name="start-the-template-app"></a>启动模板应用
 
-若要启动模板应用，你必须是全局管理员、报告读取者、Exchange管理员、Skype for Business **管理员** SharePoint **管理员**。
+若要启动模板应用，你必须是全局管理员、报告读取者、Exchange管理员、Skype for Business管理员SharePoint **管理员**。 
 
 1. 复制租户 ID，然后选择"**转到Power BI"。**
 
@@ -79,13 +79,13 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
 
 5. 选择 **"浏览** 应用"以查看包含示例数据的应用。 选择 **连接** 以将应用连接到组织的数据。
 
-6. 选择 **"连接"，** 在"连接 到 **Microsoft 365** 使用情况分析"屏幕上，键入在步骤 (1) 中复制的租户 ID (不带短划线) ) ，然后选择"下一步"。
+6. 选择 **"连接"，** 在"连接 到 **Microsoft 365** 使用情况分析"屏幕上，键入租户 ID (不带短划线) 在步骤 (1) 中复制，然后选择"下一步"。
 
 7. 下一个屏幕上，选择 **"OAuth2"****作为"身份验证方法** \> **""登录"。** 如果选择任何其他身份验证方法，则与模板应用的连接将失败。
 
     ![选择 Microsoft 帐户作为身份验证方法](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. 实例化模板应用后，Microsoft 365使用情况分析仪表板将在Power BI中可用。 仪表板的初始加载需要 2 到 30 分钟。
+8. 实例化模板应用后，Microsoft 365使用情况分析仪表板将在Power BI中提供。 仪表板的初始加载需要 2 到 30 分钟。
 
 选择加入后，租户级别聚合将在所有报告中可用。 **用户级别的详细信息将仅在** 选择加入后的下一日历月 5 日左右可用。 这将影响"用户活动"下的所有 (请参阅导航和利用[Microsoft 365 使用情况](navigate-and-utilize-reports.md)分析中的报告，获取有关如何查看和使用这些报告的) 。
 
@@ -102,5 +102,5 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
 ## <a name="related-content"></a>相关内容
 
 [关于使用情况分析](usage-analytics.md) (文章) \
-[获取使用情况分析的最新版本](get-the-latest-version-of-usage-analytics.md) (文章) \
+[获取使用情况分析的最新版本 (](get-the-latest-version-of-usage-analytics.md) 文章) \
 [导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中的) 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 通过查看在网站集中运行集合搜索后生成的统计信息来验证Advanced eDiscovery。
-ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 811668ba0a1d6a4ca9e171f634f9802273921d0fa1cf7190b315111183a172b8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750773"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899819"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>搜索中的搜索Advanced eDiscovery
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
-ms.openlocfilehash: 39c8e9ec5a94cf9f50ac4d98ac8a789e6f007949
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f735520841531360e5fa943ebecd832ab60cfc858a61c84feec572af04eebf71
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899905"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
@@ -83,7 +83,7 @@ ms.locfileid: "58255118"
 
 ## <a name="user-notification-of-expiry-date"></a>过期日期的用户通知
 
-与其他 Microsoft 365 工作负载的保留策略不同，Exchange 的保留策略会显示用户状态，方法是在每封电子邮件的顶部显示项目到期日期最短的保留策略的名称以及该项目的计算到期日期。如果保留策略不会删除项（仅保留），则用户不会看到此通知。
+与其他 Microsoft 365 工作负载的保留策略不同，Exchange 的保留策略会显示用户状态，方法是在每封电子邮件的顶部显示项目到期日期最短的保留策略的名称以及该项目的计算到期日期。 如果保留策略未删除项目（仅保留），则用户看不到此通知。
 
 如果将保留标签应用于电子邮件，则始终显示该标签的名称和相应的到期日期，并将替换应用于邮箱的任何保留策略中的名称和日期。
 

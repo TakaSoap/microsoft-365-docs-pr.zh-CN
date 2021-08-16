@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 管理 SharePoint Online 网站用户组
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/17/2019
 audience: Admin
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将介绍使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组的过程。
-ms.openlocfilehash: db5f044de7f70cf27e0f7de37c9fceba12249cb6c09891102557fb3c95efcb52
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2004d4720eb693cb2a9bd0a7304f9c2e2cc5ab58
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841052"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353693"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 网站用户组
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 尽管您可以使用 Microsoft 365 管理中心，但您也可以使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组。
 
@@ -42,7 +42,7 @@ ms.locfileid: "53841052"
 SharePoint Online 管理中心提供一些易于使用的方法来管理网站组。 例如，假设您要查看网站的组和 `https://litwareinc.sharepoint.com/sites/finance` 组成员。 下面是您必须执行以下工作：
 
 1. 从SharePoint管理中心，单击"**活动站点**"，然后单击网站的 URL。
-2. 在网站页面上，单击设置位于 (右上角的"网站"图标，) "网站 **权限"。**
+2. 在网站页面上，单击 **设置位于 (** 右上角的) 图标，然后单击"网站 **权限"。**
 
 然后对您要查看的下一个网站重复此过程。
 
@@ -61,7 +61,7 @@ foreach ($y in $x)
 
 在命令行管理程序命令行管理程序命令提示符SharePoint运行此命令集的方法有两种：
 
-- 将命令复制到 记事本 (或其他文本编辑器) ，修改 **$siteURL** 变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。 执行时，PowerShell 将在提示符下 **>>** 停止。 按 Enter 执行 `foreach` 命令。<br/>
+- 将命令复制到记事本 (或其他文本编辑器) ，修改 **$siteURL** 变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。 执行时，PowerShell 将在提示符下 **>>** 停止。 按 Enter 执行 `foreach` 命令。<br/>
 - 将命令复制到记事本（或其他文本编辑器），修改 **$siteURL** 变量值，然后在合适的文件夹中使用一个名称和.ps1 扩展名保存该文本文件。 接下来，通过指定脚本的路径和文件名SharePoint命令行管理程序命令提示符运行脚本。 下面是一个示例命令：
 
 ```powershell

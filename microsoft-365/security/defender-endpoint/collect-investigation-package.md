@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 85a29e312240d416f7a9870bf904865e78e5e59bbc704792269167e8544a5c68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894595"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349256"
 ---
 # <a name="collect-investigation-package-api"></a>收集调查包 API
 
@@ -46,6 +46,10 @@ ms.locfileid: "53894595"
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
+> [!IMPORTANT]
+>
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
+
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅对 [终结点 API 使用 Defender](apis-intro.md)
@@ -58,7 +62,7 @@ ms.locfileid: "53894595"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -84,7 +88,7 @@ Content-Type|string|application/json. **必需**。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 201 - 已创建响应 [代码和计算机](machineaction.md) 操作。
+如果成功，此方法在响应正文中返回 201 - 已创建响应 [代码和计算机](machineaction.md) 操作。 如果集合已在运行，则返回 400 错误请求。
 
 ## <a name="example"></a>示例
 

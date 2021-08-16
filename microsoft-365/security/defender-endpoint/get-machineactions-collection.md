@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 80089d9bb12970c759e0beffb492f9c1a9a04c0c8548574da127ab2770cc96c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28eb524645ecbc3867a342bea1fa34a717a3dde5
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818715"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58349796"
 ---
 # <a name="list-machineactions-api"></a>列出 MachineActions API
 
@@ -42,7 +42,9 @@ ms.locfileid: "53818715"
 
 支持 [OData V4 查询](https://www.odata.org/documentation/)。
 
-OData 的 `$filter` 查询在以下项上受支持 `status` ：、、 和 `machineId` `type` `requestor` `creationDateTimeUtc` 属性。
+OData 的 `$filter` 查询在以下项上受 `id` 支持 `status` ：、、、、、 `machineId` `type` `requestor` 和 `creationDateTimeUtc` 属性。
+<br>```$stop``` 最大值为 10，000
+<br>```$skip```
 
 请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)
 
@@ -65,7 +67,7 @@ OData 的 `$filter` 查询在以下项上受支持 `status` ：、、 和 `machi
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解在关闭或删除受调查案例支持的调查Advanced eDiscovery法律案件时会发生什么情况。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: f67fbbbc57af2802da8aa73803c3ba106b1a9fc55d608a1468feec327bc99fec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900120"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>关闭或删除Advanced eDiscovery案例
 

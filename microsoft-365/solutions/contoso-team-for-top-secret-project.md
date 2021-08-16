@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要：Contoso 如何使用具有最高机密项目安全隔离的团队来开发一套新的产品和服务。
-ms.openlocfilehash: 751bf3972d148219a6cc341067c0bf34cd581447
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 86c2b0cbf53df07ac956138e096ad53a67f0bd7226b8583214d0e666ddbafe9e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883573"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 最高机密项目的隔离团队
 
@@ -98,9 +98,9 @@ Contoso 安全人员在Project 2X 团队成员参加一个强制性课程，以�
 
 但是，在打开凭据时提示输入凭据后，他们意识到自己的错误并将其删除。
 
-由于 Teams 的协作环境和 Microsoft 365 的安全功能，Project 2X 的详细信息在项目期间一直保密。 Contoso 宣布其计划，并正在推出新产品和服务，以令其客户和对手的满意以及其竞争对手的 <6>念。
+由于 Teams 的协作环境和 Microsoft 365 的安全功能，Project 2X 的详细信息在项目期间一直保密。 Contoso 宣布其计划，并正在推出新产品和服务，以令其客户和对手的满意以及其竞争对手的念。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [在组织中部署具有安全隔离](secure-teams-security-isolation.md) 的团队。
 

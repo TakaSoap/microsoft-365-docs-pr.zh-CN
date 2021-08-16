@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1aa13e51114691426a9d898d61f2faff0593b9ef9997784d8980b6ebcc2f6978
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 110b86974badde65450f4264daf9373f46f8993d
+ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58350024"
 ---
 # <a name="list-software-inventory-api"></a>列出软件清单 API
 
@@ -35,7 +35,15 @@ ms.locfileid: "53847231"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+## <a name="api-description"></a>API 说明
+
 检索组织软件清单。
+<br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
+<br>OData 支持的运算符：
+<br>```$filter``` on：  ```id``` ```name``` 、 和 ```vendor``` 属性。
+<br>```$top``` 最大值为 10，000。
+<br>```$skip```.
+<br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)。
 
 ## <a name="permissions"></a>权限
 

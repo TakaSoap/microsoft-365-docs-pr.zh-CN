@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 使用Office 365，内容将静态加密，并采用可用的最强加密、协议和技术进行传输。 大致了解加密Office 365。
-ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1dcfb16c08eae1cddde10f250093df9ffc43cbc11944745c96e38e3ff0279670
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900059"
 ---
 # <a name="encryption"></a>加密
 
@@ -53,7 +53,7 @@ ms.locfileid: "50926440"
   
 |**内容类型**|**加密技术**|**了解详细信息的资源**|
 |:-----|:-----|:-----|
-|设备上的文件。 这些文件可能包括保存在文件夹中的电子邮件、Office、保存在计算机、平板电脑或手机上的文档或保存到 Microsoft 云的数据。  <br/> |BitLocker Microsoft 数据中心。 BitLocker还可用于客户端计算机，例如Windows和平板电脑  <br/> Microsoft 数据中心 (DKM) 分布式密钥管理器  <br/> 客户密钥Microsoft 365  <br/> |[WindowsIT 中心：BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [云安全控制系列：加密其余数据](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何进行电子邮件保密](exchange-online-secures-email-secrets.md) <br/> [使用客户密钥执行服务加密](customer-key-overview.md) <br/> |
+|设备上的文件。 这些文件可能包括保存在文件夹中的电子邮件、Office、保存在计算机、平板电脑或手机上的文档或保存到 Microsoft 云的数据。  <br/> |Microsoft 数据中心中的 BitLocker。 BitLocker 还可用于客户端计算机，例如Windows和平板电脑  <br/> Microsoft 数据中心 (DKM) 分布式密钥管理器  <br/> 客户密钥Microsoft 365  <br/> |[WindowsIT 中心：BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [云安全控制系列：加密其余数据](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何进行电子邮件保密](exchange-online-secures-email-secrets.md) <br/> [使用客户密钥执行服务加密](customer-key-overview.md) <br/> |
 |在用户之间传输的文件。 这些文件可以包括在用户Office共享SharePoint列表项的列表项。  <br/> |传输中的文件的 TLS  <br/> |[OneDrive for Business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business联机：安全性和存档](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
 |收件人之间传输的电子邮件。 此电子邮件包括由用户托管Exchange Online。  <br/> |Office 365 邮件加密传输中的电子邮件使用 Azure 权限管理、S/MIME 和 TLS  <br/> |[Office 365 邮件加密 (OME)](ome.md) <br/> [Office 365 中的电子邮件加密](email-encryption.md) <br/> [Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |在收件人之间传输的聊天、消息和Microsoft Teams。 <br/> |Teams TLS 和 MTLS 加密即时消息。 媒体流量使用安全 RTP (SRTP) 。 Teams FIPS (美国联邦信息处理标准) 加密密钥交换的兼容算法。 <br/> |[加密Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
