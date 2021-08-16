@@ -4,7 +4,7 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
-  ms.reviewer: 'racheg, armanv'
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
@@ -12,109 +12,99 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: 有关下载Microsoft 365 管理中心常见问题。
+  ms.openlocfilehash: c10fbf7260324e4b0a6511c112d91dc3d87aa10a
+  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "58247568"
 title: 下载常见问题
 summary: ''
 sections:
-  - name: 常规
-    questions:
-      - question: |
-          从应用程序下载软件的要求Microsoft 365 管理中心？
-        answer: |
-          您必须为计划下载的产品购买许可证，并且必须访问每个许可证的有效产品密钥才能完成安装。 在下载产品之前验证许可协议。
+- name: 概要
+  questions:
+  - question: >
+      What are the requirements for downloading software from the Microsoft 365 admin center?
+    answer: "You must purchase a license for the products you plan to download and have access to a valid product key for each license to complete the installation. Verify your license agreement before you download products.\n\nYou can find the system requirements for each product by signing into the admin center and going to **Your products** > **Downloads** page > **Product description**. \n\n**Note** Not all products require a product key.\n"
+  - question: >
+      What products can I download from the admin center?
+    answer: >
+      If your download rights are associated with the Open License, Open Value, or Open Value Subscription program, you can download only those products you've already purchased. The admin center displays downloads only for licenses you’ve purchased.
 
-          你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明**。 
 
-          **注意** 并非所有产品都需要产品密钥。
-      - question: |
-          可从管理中心下载哪些产品？
-        answer: |
-          如果下载权限与开放式许可证、开放式价值或开放式价值订阅计划相关联，则只能下载已购买的产品。 管理中心仅显示已购买的许可证的下载。
+      Other licensing programs (Select Plus, Enterprise, Campus, or School) allow you to download any product from the catalog before you purchase licenses.
 
-          Select Plus (、Enterprise、Campus 或 School) 的其他许可计划允许你在购买许可证之前从目录中下载任何产品。
 
-          如果配置文件同时链接到"开放"和其他许可计划，则可查看整个目录。
+      If your profile is linked to both Open and other licensing programs, you can view the entire catalog.
 
-          若要确定产品是否有资格下载：
 
-            1. 选择 **批量许可**，然后选择产品或 **查看下载**。
-            2. 在 **"** 下载"下，如果产品不可用，你将看到"此产品不可下载"。
-      - question: |
-          什么是 CAL (客户端) ？
-        answer: |
-          CAL (CAL) 客户端访问许可证是为用户提供访问服务器服务的权利的许可证。
+      To determine if a product is eligible for download:
 
-          无需软件下载文件或产品密钥即可激活 CAL。 而是通过激活向导直接从计算机激活和安装产品。
+        1. Select **Volume Licensing**, and then select the product or **View downloads**.
+        2. Under **Download**, if the product is not available, you’ll see “This product is not available for download.”
+  - question: >
+      What is a Client Access License (CAL)?
+    answer: >
+      A Client Access License (CAL) is a license that gives a user the right to access the services of the server.
 
-          CAL 的示例包括：
-            - Windows Server
-            - SQL Server
-            - Exchange Server
-            - Skype for Business Server
-            - SharePoint Server
-            - System Center
-            - Project Server
-      - question: |
-          如何下载Office for Mac？ 
-        answer: |
-          若要运行批量许可版本的 Office for Mac，必须下载并安装以下文件：
-            - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列化Office for Mac程序包。
-            - 安装[Office for Mac包 。](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) 单个应用程序的安装程序程序包文件也可在 Microsoft 365 管理中心。 Office for Mac不需要产品密钥，因为 VL 序列化程序用于激活批量许可版本的 Office for Mac。
-      - question: |
-          如何在管理中心下载产品？
-        answer: |
-          若要在管理中心下载产品：
-          1. 选择 **批量许可**，然后选择产品或 **查看下载**。
-          2. 在 **"下载**"下，选择组件并选择下载操作或下载图标。 
 
-          若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将您分配到以下角色之一来提供访问权限：
-            - 管理员
-            - 下载
-            - 软件保障管理器
-      - question: |
-          如何更改下载设置？
-        answer: |
-          若要访问管理中心中的下载设置，请执行以下操作：
-          1. 选择 **批量许可**，然后选择产品或 **查看下载**。
-          2. 在 **"下载**"下，**选择"语言****和操作系统类型"。**
+      You don’t need a software download file or product key to activate a CAL. Instead, the product is activated and installed through the activation wizard directly from your computer.
 
-          **注意** 弹出窗口阻止程序可以阻止下载。 从管理中心下载软件时，请确保已禁用弹出窗口阻止程序。
-      - question: |
-          什么是 EXE 和 ISO 文件？
-        answer: |
-          从管理中心下载产品时，可以选择两种文件类型：
-            
-            - **可执行 (EXE**) 文件可以下载并安装在同一个系统中，但无法创建单独的启动磁盘以安装在其他计算机上。
-            - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的确切表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。
 
-          **注意** 并非所有产品都提供所有语言和格式。
-      - question: |
-          如何使用 ISO 映像文件软件将 ISO 映像文件下载并保存到 CD-R 或 DVD-R 磁盘？
-        answer: |
-          如果你将电脑与 Windows操作系统一起使用，则无需其他软件来刻录 CD-R 或 DVD-R。 双击下载的 ISO 文件，然后按照映像刻录器向导中的步骤操作。
+      Examples of CALs include:
+        - Windows Server
+        - SQL Server
+        - Exchange Server
+        - Skype for Business Server
+        - SharePoint Server
+        - System Center
+        - Project Server
+  - question: "How do I download Office for Mac? \n"
+    answer: >
+      To run a volume licensing version of Office for Mac, you must download and install the following files:
+        - The [Volume License (VL) Serializer](/deployoffice/mac/volume-license-serializer) package located in the Office for Mac download file.
+        - The [Office for Mac installation package](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Installer package files for individual applications are also available on the Microsoft 365 admin center. Office for Mac doesn’t require a product key because the VL Serializer is used to activate a volume licensed version of Office for Mac.
+  - question: >
+      How do I download products in the admin center?
+    answer: "To download products in the admin center:\n1. Select **Volume Licensing**, and then select the product or **View downloads**.\n2. Under **Download**, select a component and select a download action or the download icon. \n\nTo access downloads in the admin center, a VLSC administrator in your organization can provide access by assigning you to one of these roles:\n  - Administrator\n  - Download\n  - Software Assurance Manager\n"
+  - question: >
+      How do I change my download settings?
+    answer: >
+      To access download settings in the admin center:
 
-          如果你使用的是除操作系统外的任何操作系统Windows，你可能需要其他软件。 如果你的计算机配备了 CD/DVD 刻录机，则该软件可能会加载到电脑上。 大多数 CD-R/DVD-R 写入软件都允许您从映像文件创建磁盘。 选择一个菜单项（ **如将图像复制到 CD** 或 **刻录图像）** 以访问此功能。
-      - question: |
-          如何作为虚拟设备装载和访问 ISO 文件？
-        answer: |
-          如果你的计算机上未安装 CD/DVD 刻录机，或者媒体不可用，你可以将 ISO 文件装载为虚拟驱动器。 使用此方法，计算机认为该文件是真正的磁盘驱动器，你可以从此虚拟磁盘读取文件。
+      1. Select **Volume Licensing**, and then select the product or **View downloads**.
 
-          **注意** 建议仅对安装应用程序（如Office或次要系统升级）使用这种方法。 无法通过这种方法安装操作系统，因为虚拟驱动器在安装过程中会消失。
-      - question: |
-          如何获取对已下载产品的支持？
-        answer: |
-          有关支持选项的列表，请参阅 [Microsoft 支持](https://support.microsoft.com/)。 某些批量许可客户可以使用问题解决支持（软件保障权益）。 查看软件保障权益以验证你的资格。
-      - question: |
-          在哪里可以找到对此常见问题解答中涵盖的主题的支持？
-        answer: |
-          有关包括视频在内的更多培训资源，请参阅 [Microsoft 批量许可服务中心培训和资源](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)。
-      - question: |
-          如何联系 Microsoft 支持部门？
-        answer: |
-          有关 VLSC 客户电话或 Web 表单支持，请参阅 [联系我们](/licensing/contact-us)。 Microsoft 在 24 小时内响应 Web 表单提交。
-additionalContent: |
+      2. Under **Download**, select the **Language** and **Operating System Type**.
 
-  ## <a name="additional-resources"></a>其他资源
 
-  - [产品密钥常见问题解答](product-keys-faq.yml)
+      **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
+  - question: >
+      What are EXE and ISO files?
+    answer: "You can select two file types when you download products from the admin center:\n  \n  - **Executable (EXE) files** can be downloaded and installed on the same system, but you can’t create separate boot disks for installation on other computers.\n  - **ISO (International Standards Organization) image files** are exact representations of the content and the logical format. You can install these on the computer used to download the package or write the files to disks for distribution and installation on other computers.\n\n**Note** Not all products are available in all languages and in all formats.\n"
+  - question: >
+      How do I use ISO image file software to download and save ISO image file to a CD-R or a DVD-R disk?
+    answer: >
+      If you’re using a PC with the Windows operating system, you don't need additional software to burn a CD-R or DVD-R. Double-click the ISO file you downloaded, and then follow the steps in the Image Burner Wizard.
 
-  - [开放计划联机服务激活常见问题解答](online-service-activation-faq.yml)
+
+      If you’re using any operating system other than Windows, you might need additional software. If your computer is equipped with a CD/DVD burner, the software is probably loaded on your PC. Most CD-R/DVD-R writing software allows you to create a disk from an image file. Select a menu item such **Copy Image to CD** or **Burn Image to access** to access this feature.
+  - question: >
+      How do I mount and access ISO files as a virtual device?
+    answer: >
+      If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
+
+
+      **Note** This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+  - question: >
+      How do I get support for downloaded products?
+    answer: >
+      For a list of support options, see [Microsoft Support](https://support.microsoft.com/). Some Volume Licensing customers can use Problem Resolution Support, a Software Assurance Benefit. Review your Software Assurance Benefits to verify your eligibility.
+  - question: >
+      Where can I find support for the topics covered in this FAQ?
+    answer: >
+      For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+  - question: >
+      How can I contact Microsoft Support?
+    answer: >
+      For VLSC customer phone or web form support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
+additionalContent: "\n## Additional resources\n\n- [Product keys FAQ](product-keys-faq.yml)\n\n- [Online services activation for Open programs FAQ](online-service-activation-faq.yml)"

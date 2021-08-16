@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b052bc0c02bbf71791b6c0a96767bc75d7d546bd
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 66186c3e1b4509cf64cc4105975f15995523fc67b942fa8d9cfccad3a8134d2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854323"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>配置 Micro Focus ArcSight 以拉取 Defender 进行终结点检测
 
@@ -120,9 +120,9 @@ ms.locfileid: "53649571"
 
 9. 选择 **ArcSight 管理器 (加密)** 作为目标，然后单击下一 **步**。
 
-10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 单击“**下一步**”。
+10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 单击 **下一个**。
 
-11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 单击“**下一步**”。
+11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 单击 **下一个**。
 
 12. 将显示 ESM 管理器导入证书窗口。 选择 **"将证书从目标导入连接器"，然后单击**"下一 **步"。** 将显示 **"添加连接器摘要** "窗口，并导入证书。
 
@@ -130,9 +130,9 @@ ms.locfileid: "53649571"
 
 14. 选择 **"安装为服务"，** 然后单击"下一 **步"。**
 
-15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 单击“**下一步**”。
+15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 单击 **下一个**。
 
-16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 单击“**下一步**”。
+16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 单击 **下一个**。
 
 17. 通过选择"退出"和"下一步 **"完成****安装**。
 

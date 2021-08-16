@@ -15,14 +15,17 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 6f3c44ba70debfdf4ecebb089f2015214e92f4b2cef037da5bdf5f7ad0e99c40
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: c6daa760dcec7c170cba15619eea380b6a1b882ff5baa7c3fc74c2b88f90ee62
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854131"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描的Microsoft Defender 防病毒项
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
 
 **适用于：**
 
@@ -47,15 +50,15 @@ ms.locfileid: "57803628"
 
 定义排除项时，请记住以下几点：  
 
-- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有适当的访问控制列表 (ACL 或) 策略以审核模式。
+- 从技术上说，排除项是一个保护缺陷。 定义排除项时，始终考虑缓解。 其他缓解措施可能非常简单，只需确保排除的位置具有适当的访问控制列表 (ACL) 、审核策略、由最新的软件等进行处理。
 
-- 定期查看排除项。 在查看过程中重新检查和重新强制执行缓解。
+- 定期查看排除项。 在审查过程中重新检查和重新强制执行缓解。
 
-- 理想情况下，为了避免为了主动而定义排除项。 例如，不要仅因为你认为将来可能会出现问题而排除某些内容。 仅将排除项用于特定问题，例如与排除项可以缓解的性能或应用程序兼容性有关的问题。
+- 理想情况下，避免定义旨在主动的排除项。 例如，不要仅因为你认为将来可能会出现问题而排除某些内容。 仅将排除项用于特定问题，例如与排除项可以缓解的性能或应用程序兼容性有关的问题。
 
-- 查看并审核对排除项列表的更改。 安全团队应保留有关添加特定排除的原因的上下文，以避免以后混淆。 安全团队应能够提供有关排除原因的特定答案。
+- 审核排除列表更改。 安全管理员应保留有关添加特定排除的原因的足够上下文。 您应该能够提供答案，并说明排除特定路径的原因的特定原因。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-articles"></a>相关文章
 
 - [Microsoft Defender 防病毒排除项Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)

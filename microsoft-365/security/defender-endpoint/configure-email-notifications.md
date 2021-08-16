@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6910e814dd1f48cdc03e2e4e02f0173ed37585a9
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f0a28aa76189388a5e7943d8a662ddcb0b28d56828d53a4b62e6d64a34518454
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854299"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
@@ -66,7 +66,7 @@ ms.locfileid: "53656915"
     - **设备** - 选择是通知收件人有关所有设备上警报 (全局管理员角色) 或所选设备组。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
     - **警报严重性** - 选择警报严重性级别。
 
-4. 单击“**下一步**”。
+4. 单击 **下一个**。
 
 5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可添加多个电子邮件地址。
 

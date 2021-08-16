@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 870b3491bd0556b2d72de901917713c6d6643a5f3c31871ab33f5eb459fefaf2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2b21df0592c2ca6f3f45500236e2cd07ab7128c1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802730"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247558"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -127,6 +127,16 @@ ms.locfileid: "53802730"
 
 - [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
+所有三个条件都可以在发送和接收电子邮件时自动将保留标签应用于电子邮件，但不能应用于邮箱中的现有项目（静态数据）。 对于 SharePoint 和 OneDrive 中的项目，请使用下表来确定何时可以自动应用保留标签：
+
+|条件|新建或修改的项目 |现有项（静态数据）|
+|:-----|:-----|:-----|
+|敏感信息类型 - 内置| 是 | 是 |
+|敏感信息类型 - 自定义| 是 | 否 |
+|特定关键字或可搜索属性| 是 |是 |
+|可训练的分类器| 是 | 是（仅过去六个月） |
+
+
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
 > [!WARNING]
@@ -148,7 +158,7 @@ ms.locfileid: "53802730"
 
 使用敏感信息类型自动应用保留标签时要考虑的事项：
 
-- 新增项目和已修改项目可自动添加标签。
+- 如果使用自定义敏感信息类型，则这些类型不能自动标记 SharePoint 和 OneDrive 中的现有项目。
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 
@@ -161,8 +171,6 @@ ms.locfileid: "53802730"
 基于查询的自动应用策略使用与电子数据展示内容搜索相同的搜索索引来识别内容。 有关可使用的可搜索属性的详细信息，请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
 
 使用关键字或可搜索属性自动应用保留标签时需要考虑的一些事项：
-
-- 对于 SharePoint、OneDrive 和 Exchange，新增项目、已修改项目和现有项目将自动添加标签。
 
 - 对于 SharePoint，这些 KQL 查询不支持已爬网属性和自定义属性，你必须仅使用文档的预定义托管属性。 但是，你可以在租户级别使用与默认情况下启用为精简条件的预定义托管属性（RefinableDate00-19、RefinableString00-99、RefinableInt00-49、RefinableDecimals00-09 和 RefinableDouble00-09）的映射。 有关详细信息，请参阅 [SharePoint Server 中的已爬网和托管属性概述](/SharePoint/technical-reference/crawled-and-managed-properties-overview)，有关说明，请参阅[创建新的托管属性](/sharepoint/manage-search-schema#create-a-new-managed-property)。
 
@@ -255,7 +263,7 @@ ProgID:Media AND ProgID:Meeting
 
 使用可训练的分类器自动应用保留标签时要考虑的事项：
 
-- 新增项目和已修改项目可以自动添加标签，以及过去六个月的现有项目。
+- 不能自动标记超过六个月的 SharePoint 和 OneDrive 项目。
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 

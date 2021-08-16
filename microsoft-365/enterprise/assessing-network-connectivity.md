@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365旨在允许全球客户使用 Internet 连接连接到服务。 随着服务的发展，Microsoft 365 Internet 建立与服务的连接，提高服务的安全性、性能和可靠性。
-ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ae3b06a607d3e45f5f1067616ba46c4226dde55766e02bd9f75b70313095474e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885407"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>评估 Microsoft 365 网络连接
 

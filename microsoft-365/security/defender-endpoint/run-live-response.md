@@ -1,7 +1,7 @@
 ---
 title: 在设备上运行实时响应命令
 description: 了解如何在设备上运行实时响应命令序列。
-keywords: api， 图形 api， 受支持的 api， 上传到库
+keywords: api， 图形 api， 受支持的 api， 上载到库
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a27761cc6f907905e9aa1a4fb2c1a1dc8120f5acfb15574cae6b170d75d51ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247617"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
@@ -50,21 +50,23 @@ ms.locfileid: "53833479"
 
 ## <a name="limitations"></a>限制
 
-1.  此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应) 。
+1.  此 API 的速率限制是每分钟 10 次 (HTTP 429 请求响应其他) 。
 
-2.  25 个并发运行的 (超过限制的请求将收到"429 - 请求过多"响应) 。
+2.  25 个并发 (超过限制的请求将收到"429 - 请求过多"响应) 。
 
 3.  如果计算机不可用，会话将排入队列最多 3 天。
 
 4.  RunScript 命令在 10 分钟后超时。
 
-5.  当实时响应命令失败时，将不会执行所有关注的操作。
+5.  实时响应命令无法排入队列，一次只能执行一个。 
+
+6.  可以在单个 API 调用中运行多个实时响应命令。 但是，当实时响应命令失败时，将不会执行以下所有操作。
 
 ## <a name="minimum-requirements"></a>最低要求
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的版本Windows。**
+- **验证您运行的是受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
@@ -77,7 +79,7 @@ ms.locfileid: "53833479"
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
 ## <a name="permissions"></a>权限
 
@@ -98,12 +100,12 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|字符串|Bearer\<token>\. 必填。|
+|Authorization|字符串|Bearer\<token>\. 必需。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
 
-|参数|类型|说明|
+|参数|类型|描述|
 |---|---|---|
 |评论|字符串|要与操作关联的注释。|
 |命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|
@@ -118,7 +120,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="response"></a>响应
 
-- 如果成功，此方法返回 200，确定。
+- 如果成功，此方法返回 201 Created。
 
   Action 实体。 如果未找到具有指定 ID 的机器 - 404 未找到。
 

@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: eeb2a64c82d5edec57e7f53a00d8dcedcfadc2900161462b826392a1fea4c2be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 50a2a17987c78b1a5f7aca7046a8cfd34e0ec467
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897733"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247583"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
@@ -47,9 +47,9 @@ ms.locfileid: "53897733"
 
 |阶段 |说明 |
 |--|--|
-|[准备迁移](switch-to-microsoft-defender-prepare.md) |在 [" **准备"** 阶段](switch-to-microsoft-defender-prepare.md)： <p>1。更新组织的设备。 <p>2. 获取适用于终结点的 Defender。 <p>3. 规划角色和权限，并授予对 Microsoft 365 Defender 门户的访问权限。 <p>4. 配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
-|[设置适用于终结点的 Defender](switch-to-microsoft-defender-setup.md) |在 [设置 **阶段**：](switch-to-microsoft-defender-setup.md) <p>1. 启用/重新安装Microsoft Defender 防病毒。 <p>2. 为终结点配置 Defender。 <p>3. 将 Defender for Endpoint 添加到现有解决方案的排除列表中。 <p>4. 将现有解决方案添加到列表的排除Microsoft Defender 防病毒。 <p>5. 设置设备组、集合和组织单位。 <p>6. 配置反恶意软件策略和实时保护设置。|
-|[载入到适用于终结点的 Defender](switch-to-microsoft-defender-onboard.md) |在 [载入 **阶段**](switch-to-microsoft-defender-onboard.md)： <p>1. 将设备载入到 Defender for Endpoint。 <p>2. 运行检测测试。 <p>3. 确认Microsoft Defender 防病毒被动模式下运行。 <p>4. 获取更新Microsoft Defender 防病毒。 <p>5. 卸载现有的终结点保护解决方案。 <p>6. 确保 Defender for Endpoint 正常工作。 |
+|[准备迁移](switch-to-microsoft-defender-prepare.md) |在 [" **准备"** 阶段](switch-to-microsoft-defender-prepare.md)： <br/>1。更新组织的设备。 <br/>2. 获取适用于终结点的 Defender。 <br/>3. 规划角色和权限，并授予对 Microsoft 365 Defender 门户的访问权限。 <br/>4. 配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
+|[设置适用于终结点的 Defender](switch-to-microsoft-defender-setup.md) |在 [设置 **阶段**：](switch-to-microsoft-defender-setup.md) <br/>1. 启用/重新安装Microsoft Defender 防病毒，并设置为被动模式。 <br/>2. 为终结点配置 Defender。 <br/>3. 将 Defender for Endpoint 添加到现有解决方案的排除列表中。 <br/>4. 将现有解决方案添加到列表的排除Microsoft Defender 防病毒。 <br/>5. 设置设备组、集合和组织单位。 <br/>6. 配置反恶意软件策略和实时保护设置。|
+|[载入到适用于终结点的 Defender](switch-to-microsoft-defender-onboard.md) |在 [载入 **阶段**](switch-to-microsoft-defender-onboard.md)： <br/>1. 将设备载入到 Defender for Endpoint。 <br/>2. 运行检测测试。 <br/>3. 确认Microsoft Defender 防病毒被动模式运行。 <br/>4. 获取更新Microsoft Defender 防病毒。 <br/>5. 卸载现有的终结点保护解决方案。 <br/>6. 确保 Defender for Endpoint 正常工作。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含哪些内容？
 
@@ -63,11 +63,11 @@ ms.locfileid: "53897733"
 | [终结点检测和响应](overview-endpoint-detection-response.md) | 终结点检测和响应功能可检测、调查和响应入侵尝试和主动泄露。  |
 | [高级搜寻](advanced-hunting-overview.md) | 高级搜寻功能使安全运营团队能够找到已知或潜在威胁的指示器和实体。 |
 | [行为阻止和控制](behavioral-blocking-containment.md) | 行为阻止和包含功能有助于根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 |
-| [自动调查和修正](automated-investigations.md) | 自动调查和响应功能可检查警报，并立即采取修正措施来解决违规问题。 |
+| [自动调查和修正](automated-investigations.md) | 自动调查和响应功能可检查警报，并立即采取修正操作来解决违规问题。 |
 | [威胁搜寻服务](microsoft-threat-experts.md) (Microsoft 威胁专家)  | 威胁搜寻服务为安全运营团队提供专家级别的监视和分析，并帮助确保不会错过关键威胁。 |
 
 **想要了解更多信息？请参阅 [Defender for Endpoint](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 - 继续为 [迁移做准备](switch-to-microsoft-defender-prepare.md)。

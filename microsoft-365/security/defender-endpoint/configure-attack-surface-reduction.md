@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: e8d9d82f3645e2702d1f2b44514ec10d3130ac81
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4f1bb28be40b003060db1e33fb15070b4b38ca0f66288ca37a2e1533dc39ce2e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854311"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>配置攻击面减少功能
 

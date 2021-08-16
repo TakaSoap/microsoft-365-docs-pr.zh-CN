@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 65c5047aec917089b83ef431630d4b591a539361
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: ca05076b1f70ec81f0263cf4d5b38ddacf399b25b4f37a04514b7d94b69a4977
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655907"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854371"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -56,7 +56,7 @@ ms.locfileid: "53655907"
 
 属性 |    类型    |    说明
 :---|:---|:---
-id | 字符串 | 警报 ID。
+id | String | 警报 ID。
 title | String | 警报标题。
 说明 | String | 警报说明。
 alertCreationTime | Nullable DateTimeOffset | 创建警报时 (UTC) 日期和时间。
@@ -72,14 +72,14 @@ severity | 枚举 | 警报的严重性。 可能的值包括："UnSpecified"、"
 status | 枚举 | 指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。
 classification | Nullable Enum | 警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。
 确定 | Nullable Enum | 指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。
-“类别”| 字符串 | 警报的类别。
-detectionSource | 字符串 | 检测源。
-threatFamilyName | 字符串 | 威胁系列。
-threatName | 字符串 | 威胁名称。
+“类别”| String | 警报的类别。
+detectionSource | String | 检测源。
+threatFamilyName | String | 威胁系列。
+threatName | String | 威胁名称。
 machineId | 字符串 | 与 [警报关联的](machine.md) 计算机实体的 ID。
-computerDnsName | 字符串 | [计算机](machine.md) 完全限定的名称。
+computerDnsName | String | [计算机](machine.md) 完全限定的名称。
 aadTenantId | 字符串 | 用户Azure Active Directory ID。
-一个 | 字符串 | 触发警报的检测器的 ID。
+一个 | String | 触发警报的检测器的 ID。
 comments | 警报注释列表 | Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
 证据 | 警报证据列表 | 与警报相关的证据。 请参阅下面的示例。
 

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负荷的有用信息的链接Microsoft Azure。
-ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b63f2fff61a9fb8a7eb99bd15da13d5c909af86c3362618ab7a438e0a610316
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885383"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 

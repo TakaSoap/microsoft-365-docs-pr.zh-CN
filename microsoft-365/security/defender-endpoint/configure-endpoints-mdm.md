@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 144abff07cdfd8c0017bda9e5b8cdd022ba3eade0fa7ae367b96823d9c9596c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 501da26d834295e36f4ddafb7e48f08f9b4b75c1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247631"
 ---
 # <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>使用Windows 10管理工具载入新设备
 
@@ -47,7 +47,7 @@ ms.locfileid: "53818795"
 
 [![显示使用 Defender for Endpoint 的载入设备的 PDF Microsoft Intune](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
 
-请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
+请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
 
 按照 [Intune 中的说明操作](/intune/advanced-threat-protection)。
 
@@ -55,13 +55,15 @@ ms.locfileid: "53818795"
 
 > [!NOTE]
 >
-> - 载入 **设备的运行状况策略使用** 只读属性，并且无法修正。
+> - 载入 **设备的运行状况策略** 使用只读属性，并且无法修正。
 > - 诊断数据报告频率的配置仅适用于 Windows 10 版本 1703 上的设备。
 
-> [!TIP]
-> 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
 
-请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Microsoft Defender for Endpoint 的各种路径。
+请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Microsoft Defender for Endpoint 的各种路径。
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>运行检测测试以验证载入
+载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
+
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具离开并监视设备
 
@@ -72,13 +74,13 @@ ms.locfileid: "53818795"
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-   1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >  **""载出"。**
+   1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **""载出"。**
 
    1. 选择Windows 10操作系统。
 
    1. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"。**
 
-   1. 单击 **"下载程序包**"，然后保存.zip文件。
+   1. 单击 **"下载** 程序包"，然后保存.zip文件。
 
 2. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding 的文件*。
 
@@ -97,7 +99,7 @@ ms.locfileid: "53818795"
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用Windows 10载入设备](configure-endpoints-gp.md)
+- [使用Windows 10策略载入设备](configure-endpoints-gp.md)
 - [使用Windows 10载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)

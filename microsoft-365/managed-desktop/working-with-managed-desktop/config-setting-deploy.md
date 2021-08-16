@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: aad4995f9c329b0fd8fcbcc8b1d13379453c2a76
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 093697e0a8c491dbd0baf5f2966e08d989416e2496cf7972be35ba2377160e09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854359"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置设置 - Microsoft 托管桌面
 
@@ -24,7 +24,7 @@ ms.locfileid: "53287791"
 
 这些状态将针对每个部署显示。
 
-状态 | 解释
+状态 | 说明
 --- | ---
 部署 | 您的更改正在等待部署到此组。
 正在进行 | 更改将应用于此组的活动设备。
