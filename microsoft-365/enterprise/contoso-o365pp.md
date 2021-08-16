@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Microsoft 365 企业应用版。
-ms.openlocfilehash: 71958b2e87882e478a852db1f906f61207837854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 858d83f02bc00874c639815ce4af6a491a0352764f9ddb7ab024d3d9fc37ebe7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899497"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 的 Microsoft 365 企业应用版部署
 
@@ -76,7 +76,7 @@ Contoso 对功能更新采用与用于部署 Office 相同的两阶段方法：�
 
 ![用于部署的 Contoso 部署Microsoft 365 企业应用版](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 了解 Contoso[](contoso-mdm.md)如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备和他们在组织中运行的应用。
 

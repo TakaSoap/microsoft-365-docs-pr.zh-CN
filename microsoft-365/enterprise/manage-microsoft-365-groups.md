@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理组Microsoft 365组。
-ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4658f046ec6ce7fbd8039556f0faf30ee2860a7416dd99baff45e3efb4a532fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899327"
 ---
 # <a name="manage-microsoft-365-groups"></a>管理 Microsoft 365 组
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-您可以使用几种Microsoft 365管理组，具体取决于您的配置。 可以在[Microsoft 365](../admin/add-users/index.yml)管理中心 、PowerShell、Active Directory 域服务 (AD DS) 或[Azure Active Directory (Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)) 管理中心 中管理用户帐户。 
+您可以使用几种Microsoft 365管理组，具体取决于您的配置。 可以在 Microsoft 365 管理中心 、PowerShell、Active Directory 域服务 (AD DS) 或[Azure Active Directory (Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)) 管理中心 中管理用户帐户。 [](../admin/add-users/index.yml) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>规划管理组位置和方式
 

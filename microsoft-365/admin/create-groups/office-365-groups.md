@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 通过Microsoft 365组，可以通过向一组人员提供对共享资源集合的访问权限Microsoft 365跨组织推动团队合作。
-ms.openlocfilehash: f054578e13fb4ee43aa158f615d3a2810769d6982981fcd534bb4ca8d234a70c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 通过Microsoft 365组，你可以为一组Microsoft 365共享资源集合提供访问权限，从而推动整个团队的团队合作。
+ms.openlocfilehash: 4d6e8d394cf659d511a0ab069911d00c18428a1c
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346828"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -54,7 +54,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 - **Members** - 成员可以访问组内的所有内容，但无法更改组设置。 默认情况下，团队成员可以邀请来宾加入你的组，但你可以 [控制该设置](manage-guest-access-in-groups.md)。
 - **来宾** - 组来宾是组织外部的成员。
 
-只有全局管理员、用户管理员和组管理员才能在用户组中创建和管理Microsoft 365 管理中心。 你不能是委派管理员（例如代表管理员的顾问）。
+只有全局管理员、用户管理员和组管理员才能在<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 管理中心。</a> 你不能是委派管理员（例如代表管理员的顾问）。
 
 作为管理员，您可以：
 
@@ -62,13 +62,13 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 - [为贵组织的组创建命名策略](../../solutions/groups-naming-policy.md)
 - [创建组时选择使用哪个域](../../solutions/choose-domain-to-create-groups.md)
 - [管理对组的来宾访问](manage-guest-access-in-groups.md)
-- [恢复已删除组 (](restore-deleted-group.md) 删除后 30 天内) 
+- [删除后 30](restore-deleted-group.md) (恢复已删除组) 
 
-如果更希望采用自动化的方式来管理组Microsoft 365，可以使用过期策略以特定时间间隔使组过期。 组所有者将在组到期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅[：Microsoft 365组过期策略](../../solutions/microsoft-365-groups-expiration-policy.md)。
+如果更希望采用自动化的方式来管理组Microsoft 365生命周期，可以使用过期策略以特定时间间隔使组过期。 组所有者将在组到期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅[：Microsoft 365组过期策略](../../solutions/microsoft-365-groups-expiration-policy.md)。
 
-可以从组管理组，Microsoft 365 管理中心[PowerShell 管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组。
+可以从管理组或Microsoft 365 管理中心[PowerShell 管理组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)。
 
-如果您有很多用户（例如，在大型企业或企业中）中，则您可能有许多用户出于各种目的创建组。 我们强烈建议您查看规划Microsoft 365[组，以](../../solutions/collaboration-governance-overview.md)获得最佳方案。
+如果您有很多用户（例如，在大型企业或企业中）中，则您可能有许多用户出于各种目的创建组。 我们强烈建议您查看规划管理[Microsoft 365组，以](../../solutions/collaboration-governance-overview.md)获得最佳方案。
 
 ## <a name="group-limits"></a>组限制
 
@@ -79,33 +79,33 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 |Owners per group|100|
 |Groups a user can create|250|
 |管理员可以创建的组|最多默认租户限制为 500 K|
-|成员数目|超过 1，000 个，但只有 1，000 个用户可以同时访问组对话。 <br>用户在访问日历和日历中的大型组的对话时可能会注意到Outlook。|
+|成员数目|超过 1，000 个，但只有 1，000 个用户可以同时访问组对话。 <br>用户在访问日历和日历中大型组的对话时可能会注意到Outlook。|
 |用户可以是其中一个成员的组数|7,000|
 |文件存储|每个订阅用户 1 TB + 10 GB + 已购买任何其他存储。 你可以购买无限量的额外存储空间。|
 |组邮箱大小|50 GB|
 
 组织可以拥有的默认Microsoft 365数是 500，000。 若要超出默认限制，必须联系 Microsoft 支持部门。 有关组限制Microsoft 365，请参阅Microsoft 365[组 - 管理员帮助](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
-当你拥有Microsoft 365组使用情况的可操作信息时，管理你的组会更有效。 The Microsoft 365 管理中心 has a reporting tool that lets you see storage use， how many active groups you have， and how users are using the groups. 有关详细信息[Microsoft 365请参阅管理中心中的](../activity-reports/office-365-groups.md)报表。
+当你拥有Microsoft 365组使用情况的可操作信息时，管理你的组会更有效。 该Microsoft 365 管理中心报告工具可用于查看存储用途、您拥有的活动组数以及用户如何使用组。 有关详细信息[Microsoft 365请参阅管理中心](../activity-reports/office-365-groups.md)中的报告。
 
 ## <a name="sensitivity-labels"></a>敏感度标签
 
-可以创建敏感度标签，组织中用户在创建组时可以设置Microsoft 365标签。 使用敏感度标签，可以配置： 
+可以创建敏感度标签，组织中用户在创建组时可设置Microsoft 365标签。 使用敏感度标签，可以配置： 
 
-- 隐私 (公共或) 
+- 隐私 (公共或私有) 
 - 外部用户访问
 - 非托管设备访问
 
-例如，你可以创建一个称为"高度机密"的标签，并指定用此标签创建的任何组都是私有组，并且不允许外部用户。 当贵组织的用户在组创建期间选择此标签时，该组将设置为专用组，并且不允许组的成员向该组添加外部用户。
+例如，可以创建一个称为"高度机密"的标签，并指定用此标签创建的任何组都是私有组，不允许外部用户。 当贵组织的用户在组创建期间选择此标签时，该组将设置为专用组，并且不允许组的成员向该组添加外部用户。
 
 > [!IMPORTANT]
-> 如果当前正在使用分类标签，则启用敏感度标签后，创建组的用户将不再可以使用分类标签。 
+> 如果当前正在使用分类标签，则启用敏感度标签后，创建组的用户将无法再使用这些标签。 
 
-有关创建、管理和使用敏感度标签的信息，请参阅使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint[网站中的内容](../../compliance/sensitivity-labels-teams-groups-sites.md)。
+有关创建、管理和使用敏感度标签的信息，请参阅使用敏感度标签来保护 Microsoft Teams、Microsoft 365 组和 SharePoint[网站中的内容](../../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些Microsoft 365计划包括组？
 
-任何Microsoft 365和 Exchange Online Online SharePoint都将支持组。 这包括商业基础版和商业高级版计划，以及 Enterprise E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者具有所需的组具有的任何功能的正确许可证，该许可证就会传达给组。
+任何Microsoft 365和 SharePoint Online Exchange Online订阅都将支持组。 这包括商业基础版和商业高级版计划，以及 Enterprise E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者拥有所需的组具有的任何功能的正确许可证，该许可证就会传达给组。
 
 > [!NOTE]
 > 有关服务系列Microsoft 365和计划的更多详细信息，请参阅Microsoft 365[计划选项。](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
@@ -115,13 +115,13 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 Microsoft 365组使用Azure Active Directory。 你获取的组功能取决于Azure Active Directory订阅，以及分配给组组织者的许可证。
 
 > [!IMPORTANT]
-> 对于所有组功能，如果你有Azure AD Premium订阅，则用户可以加入组，无论他们是否分配有 AAD P1 许可证。 不强制执行许可。
+> 对于所有组功能，如果你有 Azure AD Premium订阅，则用户可以加入组，无论他们是否分配有 AAD P1 许可证。 不强制执行许可。
 > 我们将定期生成使用情况报告，告知你哪些用户缺少许可证，并且需要为其分配的许可证符合许可要求。 例如，假设用户没有许可证，他们将被添加到强制执行命名策略的组。 报告将标记你需要许可证。
 
 ## <a name="related-content"></a>相关内容
 
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article) \
 [Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md) (article) \
-[使用 PowerShell Microsoft 365管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组 (文章) \
+[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) \
 [SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) \
 [在 Microsoft Stream 中组织组](/stream/groups-channels-organization) 和频道 (文章) 

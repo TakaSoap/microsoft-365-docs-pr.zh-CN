@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 规划、部署和持续操作应用程序租户的Microsoft 365概述。
-ms.openlocfilehash: 7cc7ead75781ab2d8ac4776e3f6075de89fef8db
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883214"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户管理
 

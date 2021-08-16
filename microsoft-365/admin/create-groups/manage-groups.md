@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: f568ef170125c72a8280a354091f9a3f18b65069d33dc455f31671d8ec8b16ae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bdab4d473433622326e96b8f1e561a30eec1e80
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346852"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
@@ -34,7 +34,7 @@ ms.locfileid: "53826485"
 
 ## <a name="edit-the-group-name-or-description"></a>编辑组名称或说明
 
-1. 在管理中心中，展开 **"组"，** 然后单击"组 **"。**
+1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
 2. 选择要编辑的组，然后单击"编辑 **名称和说明"。**
 
@@ -42,7 +42,7 @@ ms.locfileid: "53826485"
 
 ## <a name="manage-group-owners-and-members"></a>管理组所有者和成员
 
-1. 在管理中心中，展开 **"组"，** 然后单击"组 **"。**
+1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
 2. 单击要管理的组的名称以打开设置窗格。
 
@@ -60,11 +60,11 @@ ms.locfileid: "53826485"
 
 组的成员可以选择不接收这些电子邮件，方法为选择停止在 Outlook。
 
-1. 在管理中心中，展开 **"组"，** 然后单击"组 **"。**
+1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 如果您希望 **设置** 收件箱中的组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
+3. 如果您希望 **设置** 自己的收件箱中接收组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
 
 4. 选择“**保存**”。
 
@@ -72,11 +72,11 @@ ms.locfileid: "53826485"
 
 如果你想要拥有公司电子邮件地址（如公司电子邮件地址，info@contoso.com。
  
-1. 在管理中心中，展开 **"组"，** 然后单击"组 **"。**
+1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"允许外部发件人向此组发送电子邮件 **"。**
+3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"**选项卡** 上，选择"允许外部发件人向此组发送电子邮件 **"。**
     
 4. 选择“**保存**”。
 
@@ -107,7 +107,7 @@ ms.locfileid: "53826485"
 
 [管理对 Microsoft 365 组的来宾访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[选择在创建组时Microsoft 365域](../../solutions/choose-domain-to-create-groups.md)
+[选择创建组时Microsoft 365域](../../solutions/choose-domain-to-create-groups.md)
 
 [允许成员代表组以组Microsoft 365发送](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理Microsoft 365用户帐户密码。
-ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac83ef8a52bd0f0c3a6a8d1c0164c6eb6c0a4f4b20045d5c23ad2c1fb7a6b6da
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899303"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>管理Microsoft 365用户帐户密码
 

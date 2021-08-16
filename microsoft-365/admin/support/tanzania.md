@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef3a678e1ae23878701ca0305c16484786927399
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b955ad0deac5907aed998a3a7f31db625eedc6772df5bfe8dda1b57959a314cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53882925"
 ---
 # <a name="contact-support-for-tanzania"></a>联系坦桑尼亚支持人员
 

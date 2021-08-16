@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 77843171550bfe07b0bd8739adc8464e527c7331
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8012eebf9a27d8f421e97dd37c2fb83a7ff06b4bfdea276d2046196d1622c86c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883177"
 ---
 # <a name="contact-support-for-czech-republic"></a>联系捷克共和国的支持人员
 

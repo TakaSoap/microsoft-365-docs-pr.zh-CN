@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 本文将了解如何在 PowerShell 中为 Microsoft 365组执行常见管理任务。
-ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 48555dd41ff18941a6cbce3ef9f25cb5e3727735c7c7cedfe1e6050556e96dfb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899402"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>使用 PowerShell Microsoft 365组
 
@@ -48,7 +48,7 @@ ms.locfileid: "52730554"
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>允许用户作为组Microsoft 365发送
 <a name="BK_LinkToGuideLines"> </a>
 
-如果要使组组Microsoft 365"发送方式"，请使用[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)和[Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) cmdlet 进行配置。 启用此设置后，Microsoft 365组用户就可以使用 Outlook 或 Outlook web 以组用户Microsoft 365和回复电子邮件。 用户可以转到组、创建新电子邮件，并将"发送为"字段更改为组的电子邮件地址。
+如果要使组组Microsoft 365"发送方式"，请使用[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)和[Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) cmdlet 进行配置。 启用此设置后，Microsoft 365组用户可以Outlook或Outlook 网页版组发送和回复Microsoft 365电子邮件。 用户可以转到组、创建新电子邮件，并将"发送为"字段更改为组的电子邮件地址。
 
  ([您还可以在管理中心 Exchange .) ](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)
 
@@ -62,7 +62,7 @@ $groupsRecipientDetails = Get-Recipient -RecipientTypeDetails groupmailbox -Iden
 Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAlias -AccessRights SendAs
 ```
 
-执行 cmdlet 后，用户可以通过将组电子邮件地址添加到"发送Outlook或Outlook Web 上转到组以作为 **组发送。**
+执行 cmdlet 后，用户可以通过向"Outlook"字段Outlook 网页版组电子邮件地址，转到"组"或"Outlook 网页版以组 **发送"。**
 
 ## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>为贵Microsoft 365组创建分类
 
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>更改显示名称组Microsoft 365
 
-the 显示名称 specifies the name of the Microsoft 365 Group. 您可以在 Exchange 管理中心或管理中心Microsoft 365此名称。 可以通过运行 显示名称 命令，编辑显示名称组或显示名称组Microsoft 365组Set-UnifiedGroup组：
+the 显示名称 specifies the name of the Microsoft 365 Group. 您可以在 Exchange 管理中心或 exchange 管理中心查看此Microsoft 365 管理中心。 可以通过运行 显示名称 命令，编辑显示名称组或显示名称组Microsoft 365组Set-UnifiedGroup组：
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44272c6d0442b02b2155f7581d389002dfc6f1a3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7d1fcb7ec2616f4f2fb888800fba9e37fe264e2d333a7190ac66aa3c5cc3761b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883117"
 ---
 # <a name="contact-support-for-isle-of-man"></a>联系马恩岛支持人员
 

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构，以及该公司如何使用 SD-WAN 技术实现最佳网络性能，Microsoft 365企业云服务。
-ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: a7b57a4a126b455b3a063abba9e215ec8d02f2b1b630234e647347fdd14dce6e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899521"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
@@ -114,7 +114,7 @@ Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接�
 
    检查了各个计算机以确保已安装最新的操作系统更新，并且终结点安全监视在所有客户端上处于活动状态。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 了解 Contoso 如何利用云中的本地 [Active Directory 域](contoso-identity.md) 服务为员工和联合身份验证客户和业务合作伙伴。
 

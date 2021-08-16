@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组、查看来宾用户和使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: dd29775aebc9b5a6434e7ce5bdbd46b6a874d548b6a82f61f2e525f51b638c27
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 13eb75203bc12e6682700c9a5d44bb33505f9ff0
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346840"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>管理来宾组中来宾Microsoft 365访问
 
@@ -38,7 +38,7 @@ ms.locfileid: "53826479"
 
 > [!Note]
 > Yammer Enterprise本机模式或[欧盟地理位置](/yammer/manage-security-and-compliance/manage-data-compliance)的网络不支持网络来宾。
-> Microsoft 365已Yammer组当前不支持来宾访问，但您可以在您的 Yammer 网络中创建未连接的外部组。 有关[说明，请参阅在](/yammer/work-with-external-users/create-and-manage-external-groups)Yammer 创建和管理外部组。
+> Microsoft 365已Yammer组当前不支持来宾访问，但您可以在您的 Yammer 网络中创建未连接的外部组。 有关[说明，](/yammer/work-with-external-users/create-and-manage-external-groups)请参阅在 Yammer 创建和管理外部组。
 
 组中的来宾访问通常用作更广泛的方案的一部分，包括SharePoint或Teams。 这些服务具有其自己的来宾共享设置。 有关在组、用户和用户之间设置来宾共享SharePoint的完整Teams，请参阅：
 
@@ -47,17 +47,17 @@ ms.locfileid: "53826479"
 
 ## <a name="manage-groups-guest-access"></a>管理组来宾访问
 
-如果要在组中启用或禁用来宾访问，可以在Microsoft 365 管理中心。
+如果要在组中启用或禁用来宾访问，可以在组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**中启用或禁用来宾访问**</a>。
 
-1. In the admin center， go to **Show all** \> **设置** \> **Org settings** and on the **Services** tab， select **Microsoft 365 groups**.
+1. In the admin center， go to **Show all** \> **设置** \> **Org settings** and on the **Services** tab， select <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Microsoft 365 Groups**</a>.
   
 2. 在 **"Microsoft 365** 组"页上，选择是允许组织外部人员访问组资源，还是允许组所有者将组织外部人员添加到组。
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>从管理中心Microsoft 365来宾添加到组
 
-如果目录中已存在来宾，你可以将它们添加到你的Microsoft 365 管理中心。  (动态成员身份的[组必须在](/azure/active-directory/enterprise-users/groups-create-rule).Azure Active Directory .) 
+如果来宾已存在于你的目录中，你可以将它们添加到你的<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 管理中心。</a>  (动态成员身份的[组必须在](/azure/active-directory/enterprise-users/groups-create-rule).Azure Active Directory .) 
   
-1. 在管理中心，转到组  >  **组** 页面。
+1. 在管理中心，转到组  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>。
   
 2. 单击要添加来宾的组，然后选择"成员"选项卡上的"查看所有和管理 **成员**"。 
   
@@ -71,7 +71,7 @@ ms.locfileid: "53826479"
 
 ## <a name="related-content"></a>相关内容
 
-[阻止来自特定组的来宾](../../solutions/per-group-guest-access.md) (文章) \
+[阻止特定组的来宾用户 (](../../solutions/per-group-guest-access.md) 文章) \
 [管理组成员身份，Microsoft 365 管理中心 (](add-or-remove-members-from-groups.md)文章) \
 [Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) \
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (文章) 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6733a4592d170be58dcbe4218d0cfb2b1ece2b38
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 666c849253b23eaa0ad76b469887b4fc16bd842ab0ec7d1a9b62b5c840859da5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883129"
 ---
 # <a name="contact-support-for-falkland-islands"></a>联系对维尔京群岛的支持
 
