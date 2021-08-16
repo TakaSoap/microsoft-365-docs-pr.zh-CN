@@ -19,15 +19,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 Exchange Online Protection (EOP) 具有潜在危险或不需要的邮件的隔离。
+description: 管理员可以了解在包含潜在危险或不需要Exchange Online Protection (的 EOP) 隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: f0ca5a61a7e71a2414fcaf1c0b02aec04820ca17
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333802"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258199"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP 中的隔离电子邮件
 
@@ -38,17 +38,17 @@ ms.locfileid: "52333802"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有 Exchange Online 邮箱或独立 Exchange Online Protection (EOP) 组织（没有 Exchange Online 邮箱）的 Microsoft 365 组织中，可以使用隔离来保留潜在危险或不需要的邮件。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中，如果没有 Exchange Online 邮箱，可以使用隔离来保留潜在危险或不需要的邮件。
 
 如果发现任何附件包含 *恶意软件，反* 恶意软件策略将自动隔离邮件。 有关详细信息，请参阅在 [EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 
-默认情况下，反垃圾邮件策略会隔离网络钓鱼邮件，将垃圾邮件和批量电子邮件发送到用户的"垃圾邮件"文件夹。 但是，您还可以创建和自定义反垃圾邮件策略以隔离垃圾邮件和批量电子邮件。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+默认情况下，反垃圾邮件策略隔离网络钓鱼和高可信度网络钓鱼邮件，将垃圾邮件、高可信度垃圾邮件和批量电子邮件发送到用户的"垃圾邮件"文件夹。 但是，您还可以创建和自定义反垃圾邮件策略以隔离垃圾邮件、高可信度垃圾邮件和批量电子邮件。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 用户和管理员可以使用隔离邮件：
 
-- 管理员可以为所有用户使用所有类型的隔离邮件。 只有管理员才能处理被隔离为恶意软件、高可信度网络钓鱼的邮件，或由于邮件流规则或邮件流规则 (传输规则) 。 有关详细信息，请参阅[在 EOP 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
+- 管理员可以为所有用户使用所有类型的隔离邮件。 只有管理员才能处理被隔离为恶意软件、高可信度网络钓鱼的邮件，或由于邮件流规则 (也称为传输规则) 。 有关详细信息，请参阅[在 EOP 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
 
-- 从 2020 年 4 月开始，如果邮件被隔离为垃圾邮件、批量电子邮件或 (，用户可以处理作为收件人的隔离) 邮件。 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
+- 从 2020 年 4 月开始，如果邮件被隔离为垃圾邮件、批量电子邮件或电子邮件 (，用户可以处理作为收件人的隔离) 邮件。 有关详细信息，请参阅在 [EOP](find-and-release-quarantined-messages-as-a-user.md)中以用户模式查找并释放隔离邮件。
 
   为了防止用户管理自己的隔离网络钓鱼邮件，管理员可以为反垃圾邮件策略中的网络钓鱼电子邮件筛选裁定配置不同的操作。  有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 

@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f728e49d742b20cf8434ca83eaf29e7e91b725ee
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53657023"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258198"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -83,29 +83,43 @@ SPF 将信息添加到邮件信封中，但 DKIM 是在邮件头中 *加密* 签
 > DKIM 使用私钥将加密的签名插入邮件头。 在邮件头中，将签名域或出站域作为 **d =** 字段中的值插入。 然后，验证域或收件人的域使用 **d=** 字段从 DNS 中查找公钥，对邮件进行身份验证。 如果邮件已经过验证，则 DKIM 检查通过。
 
 ## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>从 Microsoft 365 Defender 门户创建、启用和禁用 DKIM 的步骤
-租户的所有接受域都将显示在 Microsoft 365 Defender 门户中的 DKIM 页下。 如果未看到，请从 [域页面](/microsoft-365/admin/setup/add-domain?view=o365-worldwide#add-a-domain) 添加接受的域。
+
+租户的所有接受域都将显示在 Microsoft 365 Defender 门户中的 DKIM 页下。 如果未看到，请从 [域页面](/microsoft-365/admin/setup/add-domain#add-a-domain) 添加接受的域。
 添加域后，按照如下所示的步骤配置 DKIM。
 
-步骤 1：单击希望在 DKIM 页 ![图像](https://user-images.githubusercontent.com/3039750/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png) 上配置 DKIM 的域
+步骤 1：单击希望在 DKIM 页上配置 DKIM 的域。
 
-步骤 2：单击“创建密钥”![图像](https://user-images.githubusercontent.com/3039750/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-步骤 3：复制弹出窗口 ![图像](https://user-images.githubusercontent.com/3039750/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png) 中显示的 CNAMES
+步骤 2：单击“创建 DKIM 密钥”。
 
-步骤 4：将复制的 CNAME 记录发布到 DNS 服务提供程序。 在 DNS 提供程序的网站上，为要启用的 DKIM 添加 CNAME 记录。 请确保将每个字段设置为以下值：
+![带有“创建 DKIM 密钥”按钮的域详细信息浮出控件](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
-记录类型：CNAME（别名）主机：粘贴从 DKIM 页复制的值。
-指向地址：从 DKIM 页复制值。
-TTL：3600（或提供程序默认值）
+步骤 3：复制弹出窗口中显示的 CNAMES
 
-步骤 5：返回到 DKIM 页以启用 DKIM ![图像](https://user-images.githubusercontent.com/3039750/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+![“发布 CNAME”弹出窗口，其中包含要复制的两条 CNAME 记录](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
-如果看到 CNAME 记录不存在错误，则可能是由于
+步骤 4：将复制的 CNAME 记录发布到 DNS 服务提供程序。
+
+在 DNS 提供程序的网站上，为要启用的 DKIM 添加 CNAME 记录。 请确保将每个字段设置为以下值：
+
+```text
+Record Type: CNAME (Alias)
+> Host: Paste the values you copy from DKIM page.
+Points to address: Copy the value from DKIM page.
+TTL: 3600 (or your provider default)
+```
+
+步骤 5：返回到 DKIM 页以启用 DKIM。
+
+![将开关滑动到“已启用”以启用 DKIM](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+
+如果看到 CNAME 记录不存在错误，则可能是由于：
+
 1. 与 DNS 服务器同步，这可能需要几秒钟到几个小时。如果问题仍然存在，请重复这些步骤
 2. 检查是否有任何复制粘贴错误，如额外的空格或选项卡等。
 
 如果要禁用 DKIM，请切换回禁用模式
-
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手动将 1024 位密钥升级到 2048 位 DKIM 加密密钥的步骤
 <a name="1024to2048DKIM"> </a>
@@ -223,7 +237,7 @@ TTL:                3600
 
 1. [使用工作或学校账户](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) 打开 Microsoft 365 Defender 门户网站。
 
-2. 转到 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **“规则”** 部分 \> **DKIM**。 或者，若要直接转到 DKIM 页面，请使用 <https://security.microsoft.com/dkimv2>。
+2. 转到 **“规则”** 部分的 **“电子邮件和协作”** \> **“策略和规则”** \> **“威胁策略”** \> **DKIM**。 或者，若要直接转到 DKIM 页面，请使用 <https://security.microsoft.com/dkimv2>。
 
 3. 在 **DKIM** 页面，通过点击名称选择域。
 
@@ -383,4 +397,4 @@ Return-Path: <communication@bulkemailprovider.com>
 
 ## <a name="more-information"></a>更多信息
 
-通过 PowerShell [Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 进行密钥轮换
+通过 PowerShell 进行密钥轮换：[Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 

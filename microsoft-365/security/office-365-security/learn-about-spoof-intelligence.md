@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (中的欺骗智能) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: daec0fe3a667aa92e9c137cdc7e612b6b11fb344
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2f17ac22a85182356ac58952b1d381fc6a98451e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544489"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258224"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP 中的欺骗智能见解
 
@@ -39,7 +39,7 @@ ms.locfileid: "53544489"
 > [!NOTE]
 > 本文中所述的功能在预览版中，可能会更改，并且并非在所有组织中都可用。 如果你的组织没有本文中所述的功能，请参阅使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
-在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，入站电子邮件将自动防止欺骗。 EOP **使用欺骗智能** 作为组织防御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，入站电子邮件将自动受到保护，防止欺骗。 EOP **使用欺骗智能** 作为组织抵御网络钓鱼的整体防御的一部分。 有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
 当发件人欺骗电子邮件地址时，他们显示为组织某个域中的用户，或者是向组织发送电子邮件的外部域中的用户。 需要阻止欺骗发件人发送垃圾邮件或钓鱼电子邮件的攻击者。 但在某些情况下，合法发件人存在欺骗行为。 例如：
 
@@ -53,19 +53,19 @@ ms.locfileid: "53544489"
   - 发件人位于一个邮件列表 (也称为讨论列表) ，邮件列表将原始发件人的电子邮件中继到邮件列表上的所有参与者。
   - 外部公司代表另一家公司发送电子邮件 (例如自动报告或软件即服务公司) 。
 
-您可以使用 Microsoft 365 Defender门户中的欺骗智能见解，从未通过 SPF、DKIM 或 DMARC 检查) 的域中快速识别合法向您发送未经身份验证的电子邮件 (邮件的欺骗性发件人，并手动允许这些发件人。
+您可以使用 Microsoft 365 Defender门户中的欺骗智能见解，快速识别从未通过 SPF、DKIM 或 DMARC 检查) 的域中合法向您发送未经身份验证的电子邮件 (邮件的欺骗性发件人，并手动允许这些发件人。
 
 通过允许已知发件人从已知位置发送欺骗邮件，你可以减少误报 (标记为错误) 。 通过监视允许的欺骗发件人，你可以提供额外的安全层，以防止不安全的邮件到达你的组织。
 
 同样，你可以查看欺骗智能允许的欺骗性发件人，并手动阻止这些发件人获得欺骗智能见解。
 
-本文的其余部分介绍如何在 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织使用欺骗智能见解，Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文的其余部分介绍如何在 Microsoft 365 Defender 门户和 PowerShell (Exchange Online PowerShell 中为邮箱在 Exchange Online 中的 Microsoft 365 组织使用欺骗智能Exchange Online;独立 EOP PowerShell，适用于Exchange Online邮箱) 。
 
 > [!NOTE]
 >
 > - 欺骗智能见解中只显示欺骗智能检测到的欺骗发件人。 当你替代见解中的允许或阻止裁定时，欺骗发件人将成为一个手动允许或阻止条目，该条目仅出现在租户允许/阻止列表中的"欺骗"选项卡上。 还可以在欺骗智能检测到欺骗发件人之前，手动为这些发件人创建允许或阻止条目。 有关详细信息，请参阅[管理 EOP 中的租户允许/阻止列表](tenant-allow-block-list.md)。
 >
-> - 租户允许/阻止列表中的欺骗智能见解和"欺骗"选项卡取代了安全与合规中心的反垃圾邮件策略页面上提供的欺骗智能&功能。
+> - 租户允许/阻止列表中的欺骗智能见解和"欺骗"选项卡取代了安全与合规中心中的反垃圾邮件策略页面上提供的欺骗智能&功能。
 >
 >- 欺骗智能见解显示 7 天的数据。 **Get-SpoofIntelligenceInsight** cmdlet 显示 30 天的数据。
 
@@ -76,7 +76,7 @@ ms.locfileid: "53544489"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在 Exchange Online 网站中 **分配** 权限，才能执行本文中的步骤：
-  - 若要修改欺骗智能策略或启用或禁用欺骗智能，你需要是组织管理或安全 **管理员****角色组** 的成员。
+  - 若要修改欺骗智能策略或启用或禁用欺骗智能，你需要是组织管理或安全 **管理员角色****组** 的成员。
   - 若要对欺骗智能策略进行只读访问，你需要是全局读者或安全 **读者角色组** 的成员。 
 
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
@@ -86,13 +86,13 @@ ms.locfileid: "53544489"
   > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-- 在 EOP 和 Microsoft Defender for Office 365 中启用和禁用反网络钓鱼策略中的欺骗Office 365。 默认情况下启用欺骗智能。 有关详细信息，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略或在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-mdo-anti-phishing-policies.md)
+- 在 EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中启用和禁用Office 365。 默认情况下启用欺骗智能。 有关详细信息，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略或在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-mdo-anti-phishing-policies.md)
 
 - 有关建议的欺骗智能设置，请参阅 [EOP 防钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>在企业门户中打开Microsoft 365 Defender见解
 
-1. In the Microsoft 365 Defender portal， go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page Tenant \> **Allow/Block Lists**.
+1. 在 Microsoft 365 Defender 门户中，转到"规则"&中的"电子邮件&策略"&"威胁 \>  \> **策略** \> **""** 租户允许/阻止 **列表**"。
 
 2. 在" **租户允许/阻止列表"** 页上，欺骗智能见解如下所示：
 
@@ -100,8 +100,8 @@ ms.locfileid: "53544489"
 
    见解有两种模式：
 
-   - **见解模式**：如果启用了欺骗智能，该见解将展示过去七天内欺骗智能检测到的邮件数。
-   - **如果模式 ：** 如果禁用欺骗智能，则见解将显示过去七天内欺骗智能检测到的邮件数。
+   - **见解模式**：如果启用了欺骗智能，该见解将显示过去七天内欺骗智能检测到的邮件数。
+   - **如果模式**：如果禁用欺骗智能，则见解将显示过去七天内欺骗智能检测到的邮件数。
 
 若要查看有关欺骗智能检测的信息，请单击" **查看** 欺骗智能见解中的欺骗活动"。
 
@@ -114,9 +114,9 @@ ms.locfileid: "53544489"
 
 - **欺骗用户****：电子邮件** 客户端的"来源"框中显示的欺骗用户的域。  "From"地址也称为 `5322.From` "地址"。
 - **发送基础结构**：也称为 _基础结构_。 发送基础结构将为以下值之一：
-  - 反向 DNS 查找中的域 (源) IP 地址的 PTR 记录。
+  - 反向 DNS 查找 (PTR 记录) 源电子邮件服务器的 IP 地址。
   - 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
-- **邮件计数**：过去 7 天内从欺骗域和发送基础结构组合发送到组织的邮件数量。
+- **邮件计数**：过去 7 天内从欺骗性域和发送基础结构组合发送到组织的邮件数量。
 - **上次看到** 时间：从包含欺骗域的发送基础结构接收邮件的最后日期。
 - **欺骗类型**：下列值之一：
   - **内部**：欺骗性发件人位于组织所属的域中， ([接受的) 。](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
@@ -136,26 +136,26 @@ ms.locfileid: "53544489"
 
 ### <a name="view-details-about-spoofed-messages"></a>查看有关欺骗邮件的详细信息
 
-当你从列表中选择条目时，将显示一个包含以下信息和功能的详细信息飞出图：
+从列表中选择条目时，将显示一个包含以下信息和功能的详细信息飞出图：
 
 - 允许欺骗或阻止欺骗：选择这些值之一以替代原始欺骗智能裁定，将条目从欺骗智能见解移动到租户允许/阻止列表作为欺骗允许或阻止条目。
 - 我们为什么捕获到此。
 - 需要执行哪些工作。
 - 包含主要欺骗智能页面中大部分相同信息的域摘要。
 - WhoIs 有关发件人的数据。
-- 一个链接，用于打开[威胁](threat-explorer.md)资源管理器，以查看在 Microsoft  Defender 中查看钓鱼邮件 for \>  Office 365 下有关发件人的其他Office 365。
+- 一个链接，用于打开 [威胁](threat-explorer.md)资源管理器，以查看 Microsoft Defender  for Office 365 \> 中的 **查看** 网络钓鱼下有关发件人的其他详细信息。
 - 我们在租户中看到的来自同一发件人的类似邮件。
 
 ### <a name="about-allowed-spoofed-senders"></a>关于允许的欺骗发件人
 
-手动更改为"允许欺骗"的欺骗智能见解中允许的欺骗发件人或阻止的欺骗发件人仅允许来自欺骗域和发送基础结构组合的邮件。  它不允许来自任何来源的欺骗性域的电子邮件，也不允许来自任何域的发送基础结构的电子邮件。
+在欺骗智能见解中允许的欺骗发件人或手动更改为"允许欺骗"的阻止欺骗发件人仅允许来自欺骗域和发送基础结构组合的邮件。  它不允许来自任何来源的欺骗性域的电子邮件，也不允许来自任何域的发送基础结构的电子邮件。
 
 例如，允许以下欺骗性发件人欺骗：
 
-- **域**： gmail.com
+- **域**：gmail.com
 - **基础结构**：tms.mx.com
 
-仅允许来自该域/发送基础结构对的电子邮件欺骗。 不会自动允许其他发件人 gmail.com 欺骗邮件。 来自其他域中发件人的邮件 tms.mx.com 欺骗智能仍在检查，并且可能会阻止。
+仅允许来自该域/发送基础结构对的电子邮件欺骗。 不会自动允许其他发件人 gmail.com 欺骗邮件。 来自其他域中的发件人的邮件 tms.mx.com 欺骗智能仍在检查，并且可能会阻止。
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>在 PowerShell 或独立 EOP PowerShell Exchange Online欺骗智能见解
 

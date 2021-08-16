@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d18dd7f5dc702f08a722652394aeb0102f100ef
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: 4ce1ea9e06167f0fec4431438c48c967f12a8a46
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409052"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258183"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -76,17 +76,17 @@ ms.locfileid: "53409052"
 1. 在 **"选择提交类型"** 框中，确认 **"电子邮件** "在下拉列表中已选中。
 
 2. 在 **"添加网络邮件 ID 或上载电子邮件文件** "部分，使用以下选项之一：
-   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可在邮件的 **X-MS-Exchange-Organization-Network-Message-Id** 标头中或在隔离邮件的 **X-MS-Office365-Filtering-Correlation-Id** 头中提供。
+   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 标头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
    - **Upload电子邮件文件 (.msg 或 .eml) ：单击"浏览****文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
    > [!NOTE]
-   > 针对客户，针对 Defender 提交 30 天的邮件Office 365暂时暂停。 管理员只能返回 7 天。
+   > 针对客户，针对 Defender 提交 30 天的邮件Office 365暂停。 管理员只能返回 7 天。
 
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
 4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
    - **不应阻止误报 (误报)**
-   - **应已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
+   - **应该已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
      - **网络钓鱼**
      - **垃圾邮件**
      - **恶意软件**
@@ -104,14 +104,14 @@ ms.locfileid: "53409052"
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
    - **不应阻止误报 (误报)**
-   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**钓鱼"** 或"恶意软件 **"。**
+   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
 
 4. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
 > ![新电子邮件提交示例](../../media/submission-url-flyout.png)
 
-### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
+### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>向 Microsoft 提交可疑的电子邮件附件
 
 1. 在"**选择提交类型"框中****，从下拉列表** 中选择"文件"。
 
@@ -140,6 +140,7 @@ ms.locfileid: "53409052"
      - **提交原因**<sup>\*</sup>
      - **重新扫描状态**<sup>\*</sup>
      - **重新扫描结果**<sup>\*</sup>
+     - **标记**<sup>\*</sup>
      - **筛选裁定**
      - **传递/阻止原因**
      - **提交 ID**
@@ -159,17 +160,18 @@ ms.locfileid: "53409052"
      - **提交 ID：** 分配给每个提交的 GUID 值。
      - **网络消息 ID**
      - **Sender**
+     - **Tags**
 
      完成后，单击"应用 **"。**
 
      > [!div class="mx-imgBorder"]
      > ![管理员提交的新筛选器选项](../../media/admin-submission-filters.png)
 
-   - 若要对条目进行分组，请单击 **"分组** "，然后从下拉列表中选择下列值之一：
+   - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
-     - **类型**
+     - **Type**
      - **原因**
-     - **状态**
+     - **Status**
      - **重新扫描结果**
 
    - 若要导出条目，请单击"导出 **"。** 在出现的对话框中，保存.csv文件。
@@ -183,11 +185,11 @@ ms.locfileid: "53409052"
 - 当前触发结果，以查看邮件中所包含的 URL 或文件是否是恶意的。
 - 来自成绩者的反馈。
 
-如果找到了覆盖，则应该会在数分钟内完成重新扫描。 如果电子邮件身份验证没有问题，或者传递不受替代的影响，则来自成绩认证人员的反馈可能需要一天的时间。
+如果找到了覆盖，则应该会在数分钟内完成重新扫描。 如果电子邮件身份验证没有问题，或者传递不受替代影响，则来自成绩认证人员的反馈可能需要一天的时间。
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上看到报告的用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
@@ -201,6 +203,7 @@ ms.locfileid: "53409052"
      - **发件人**<sup>\*</sup>
      - **报告的原因**<sup>\*</sup>
      - **重新扫描结果**<sup>\*</sup>
+     - **标记**<sup>\*</sup>
      - **邮件报告 ID**
      - **网络消息 ID**
      - **发件人 IP**
@@ -217,13 +220,14 @@ ms.locfileid: "53409052"
      - **Sender**
      - **报告的原因**： **非垃圾邮件**、 **网络钓鱼** 或 **垃圾邮件**。
      - **网络钓鱼模拟**： **是** 或 **否**
+     - **Tags**
 
      完成后，单击"应用 **"。**
 
      > [!div class="mx-imgBorder"]
      > ![用户提交的新筛选器选项](../../media/admin-submission-reported-messages.png)
 
-   - 若要对条目进行分组，请单击 **"分组** "，然后从下拉列表中选择下列值之一：
+   - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
      - **原因**
      - **Sender**

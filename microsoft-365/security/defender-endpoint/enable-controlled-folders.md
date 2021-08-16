@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bb5efb5bd001a2659b0c3780af5f195b77b3103b2e8a7d0c7d1eee6915a6e303
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: a4961b7a9ae2bdf24e4ac105f2b3ff0a153c1399
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523330"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257796"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -38,12 +38,12 @@ ms.locfileid: "54523330"
 
 - [Windows 安全中心应用](#windows-security-app)
 - [Microsoft Endpoint Manager](#endpoint-manager)
-- [移动设备管理 (MDM) ](#mobile-device-management-mdm)
+- [移动设备管理 (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [组策略](#group-policy)
 - [PowerShell](#powershell)
 
-[审核](evaluate-controlled-folder-access.md) 模式允许你测试此功能在 (并查看) 事件，而不会影响设备的正常使用。
+[审核](evaluate-controlled-folder-access.md) 模式允许你测试此功能在 (并查看事件) 不会影响设备的正常使用。
 
 禁用本地管理员列表合并的组策略设置将覆盖受控文件夹访问权限设置。 它们还通过受控文件夹访问权限覆盖受保护的文件夹和允许的本地管理员设置的应用。 这些策略包括：
 
@@ -54,16 +54,16 @@ ms.locfileid: "54523330"
 
 ## <a name="windows-security-app"></a>Windows 安全中心应用
 
-1. 在任务栏Windows 安全中心防护图标，打开应用。 还可以搜索 Defender 的"开始" **菜单**。
+1. 通过在任务栏Windows 安全中心防护图标打开应用。 还可以搜索 Defender 的"开始" **菜单**。
 
-2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 然后选择勒索 **软件保护**。
+2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后选择勒索 **软件保护**。
 
 3. 将受控文件夹访问权限 **的开关设置为****开**。
 
 > [!NOTE]
 > 如果使用组策略、PowerShell 或 MDM CSP 配置受控文件夹访问权限，则设备重启后，Windows 安全中心应用中的状态将发生变化。
 > If the feature is set to **Audit mode** with any of those tools， the Windows 安全中心 app will show the state as **Off**.
-> 如果要保护用户配置文件数据，我们建议用户配置文件应位于默认安装Windows驱动器上。
+> 如果要保护用户配置文件数据，建议用户配置文件应位于默认安装Windows驱动器上。
 
 ## <a name="endpoint-manager"></a>Endpoint Manager
 
@@ -81,9 +81,9 @@ ms.locfileid: "54523330"
 
 7.  选择 **有权访问受保护文件夹的应用列表** ，并添加有权访问受保护文件夹的应用。
 
-8.  选择 **"从攻击面减少** 规则中排除文件和路径"，并添加需要从攻击面减少规则中排除的文件和路径。
+8.  选择 **"从攻击面减少规则中** 排除文件和路径"，并添加需要从攻击面减少规则中排除的文件和路径。
 
-9.  选择配置文件 **分配**，分配到所有用户 **&所有设备，****然后选择保存。**
+9.  选择配置文件 **分配**，分配给所有用户 **&所有设备，****然后选择保存。**
 
 10.  选择 **"下一** 步"保存每个打开的边栏选项卡，然后选择"**创建"。**
 
@@ -92,7 +92,7 @@ ms.locfileid: "54523330"
 
 ## <a name="mobile-device-management-mdm"></a>移动设备管理 (MDM)
 
-使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
+使用 [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) 配置服务提供程序 (CSP) 以允许应用对受保护的文件夹进行更改。
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
@@ -102,7 +102,7 @@ ms.locfileid: "54523330"
 
 3. 输入名称和说明，选择受控 **文件夹访问权限**，然后选择下一 **步**。
 
-4. 选择是阻止更改还是审核更改、允许其他应用或添加其他文件夹，然后选择"下一步 **"。**
+4. 选择是阻止还是审核更改、允许其他应用或添加其他文件夹，然后选择"下一 **步"。**
    > [!NOTE]
    > 应用程序支持 Wilcard，但文件夹不支持。 子文件夹不受保护。 允许的应用将继续触发事件，直到它们重新启动。
 
@@ -121,9 +121,9 @@ ms.locfileid: "54523330"
 4. 双击配置受控文件夹 **访问权限** 设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
    - **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
    - **禁用 (默认)** - 受控文件夹访问权限功能将不起作用。 所有应用都可以对受保护的文件夹中的文件进行更改。
-   - **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在事件Windows日志中，您可以在其中评估对组织的影响。
+   - **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将被记录在Windows事件日志中，您可以在其中评估对组织的影响。
    - **仅阻止磁盘修改**- 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 这些日志位于 Microsoft  Windows Windows Defender \> ID \> \> \> \> 1123 的应用程序和服务日志中。
-   - **仅** 审核磁盘修改 - 仅在应用程序和服务日志Microsoft Windows Windows Defender Operational ID  >   \>  \>  \>  \> **1124**) 下的 Windows (事件日志中记录写入受保护磁盘扇区的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
+   - **仅审核** 磁盘修改 - 仅在应用程序和服务日志Microsoft Windows Windows Defender Operational ID  >   \>  \>  \>  \> **1124**) 下的 Windows (事件日志中记录写入受保护磁盘扇区的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
 
       ![在下拉列表中选中的组策略选项"启用"和"审核模式"的屏幕截图](../../media/cfa-gp-enable.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "54523330"
 
 ## <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 输入以下 cmdlet：
 

@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f896888a90e855926fc8840f4bd936819ed25142
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258225"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -83,7 +83,7 @@ ms.locfileid: "53228659"
 
 在 Microsoft 365 Defender 门户中创建自定义反垃圾邮件策略，会同时使用相同的名称创建垃圾邮件筛选规则和关联的垃圾邮件筛选策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在 **“反垃圾邮件”策略** 页面上点击 ![“创建图标”](../../media/m365-cc-sc-create-icon.png) **“创建策略”**，然后从下拉列表中选择 **“入站”**。
 
@@ -140,7 +140,7 @@ ms.locfileid: "53228659"
 
      下表介绍了可以根据垃圾邮件筛选裁定而执行的操作。
 
-     - 复选标记 ( ![复选标记](../../media/checkmark.png) ）表示操作可以执行（并不是所有操作都适用于所有裁定）。
+     - 复选标记 ( ![复选标记](../../media/checkmark.png)）表示操作可以执行（并不是所有操作都适用于所有裁定）。
      - 复选标记后面的星号 (<sup>\*</sup>) 表示垃圾邮件筛选裁定对应的默认操作。
 
      <br>
@@ -149,12 +149,12 @@ ms.locfileid: "53228659"
 
      |操作|垃圾邮件|高<br>置信<br>垃圾邮件 (spam)|网络钓鱼|高<br>置信<br>仿冒|批量邮件|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**将邮件移动到“垃圾邮件”文件夹**：邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)<sup>\*</sup>|
-     |**添加 X 标头**：向邮件头添加 X 标头，并将邮件递送到邮箱。 <p> 稍后将在 **“添加此 X 标头文本”** 框中，输入 X 标头字段名称（而不是值）。 <p> 对于 **“垃圾邮件”** 和 **“高可信度垃圾邮件”** 裁定，邮件移动到“垃圾邮件”文件夹。<sup>1、2</sup>|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)<sup>\*</sup>|
+     |**将邮件移动到“垃圾邮件”文件夹**：邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|
+     |**添加 X 标头**：向邮件头添加 X 标头，并将邮件递送到邮箱。 <p> 稍后将在 **“添加此 X 标头文本”** 框中，输入 X 标头字段名称（而不是值）。 <p> 对于 **“垃圾邮件”** 和 **“高可信度垃圾邮件”** 裁定，邮件移动到“垃圾邮件”文件夹。<sup>1、2</sup>|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
      |**在主题行前面追加文本**：向邮件的主题行开头添加文本。 邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1、2</sup> <p> 稍后将在 **“在主题行前面添加此文本作为前缀”** 框中输入文本。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
      |**将邮件重定向到电子邮件地址**：将邮件发送给其他收件人，而不是目标收件人。 <p> 稍后将在 **“重定向到此电子邮件地址”** 框中指定收件人。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
      |**删除邮件**：无提示删除整个邮件，包括所有附件。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
-     |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+     |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|
      |**无操作**|||||![复选标记](../../media/checkmark.png)|
      |
 
@@ -242,7 +242,7 @@ ms.locfileid: "53228659"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户查看反垃圾邮件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在 **“反垃圾邮件”策略** 页面上，查找以下值之一:
    - “**类型**”值是“**自定义反垃圾邮件策略**”
@@ -259,7 +259,7 @@ ms.locfileid: "53228659"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户修改反垃圾邮件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择反垃圾邮件策略：
    - 你创建的自定义策略，其中“**类型**”列中的值为“**自定义反垃圾邮件策略**”。
@@ -275,7 +275,7 @@ ms.locfileid: "53228659"
 
 无法禁用默认反垃圾邮件策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。
 
@@ -300,7 +300,7 @@ ms.locfileid: "53228659"
 - 在 Microsoft 365 Defender 门户中，你只能在创建反垃圾邮件策略后更改其优先级。在 PowerShell 中，你可以在创建垃圾邮件筛选规则时覆盖默认优先级（这可能会影响现有规则的优先级）。
 - 反垃圾邮件策略将按其显示顺序进行处理（第一个策略的“**优先级**”值为 0）。 默认反垃圾邮件策略的优先级值为“**最低**”，你无法更改此值。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。
 
@@ -317,7 +317,7 @@ ms.locfileid: "53228659"
 
 如果垃圾邮件筛选裁定隔离了邮件，你可以配置最终用户垃圾邮件通知，让收件人知道向他们发送的邮件发生了什么。 若要详细了解这些通知，请参阅 [ EOP 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择反垃圾邮件策略：
    - 你创建的自定义策略，其中“**类型**”列中的值为“**自定义反垃圾邮件策略**”。
@@ -344,7 +344,7 @@ ms.locfileid: "53228659"
 
 当你使用 Microsoft 365 Defender 门户删除自定义反垃圾邮件策略时，垃圾邮件筛选规则和相应的垃圾邮件筛选策略都将被删除。无法删除默认反垃圾邮件策略。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”页面\>“**策略**”部分 \>“**反垃圾邮件**”。
+1. 在 Microsoft 365 Defender 门户中，转到“**策略**”部分中的“**电子邮件和协作**”\>“**策略和规则**”\>“**威胁策略**”\>的“**反垃圾邮件**”。
 
 2. 在“**反垃圾邮件策略**”页面上，单击名称以从列表中选择“**类型”** 值为“**自定义反垃圾邮件策略**”的策略。 在出现的策略详细信息浮出控件顶部，单击![“更多操作”图标](../../media/m365-cc-sc-more-actions-icon.png)“**更多操作**”\> ![“删除策略”图标](../../media/m365-cc-sc-delete-icon.png)“**删除策略**”。
 

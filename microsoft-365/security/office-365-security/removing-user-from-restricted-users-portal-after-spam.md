@@ -20,12 +20,12 @@ description: 管理员可以了解如何在 Microsoft 365 Defender 门户中从�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 924db948103a4d3b45c499f433961762a45931af
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082848"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258211"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>在 Microsoft 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -83,7 +83,7 @@ ms.locfileid: "53082848"
 6. 单击 **“是”** 确认更改。
 
    > [!NOTE]
-   > 从用户中删除所有限制可能需要多达 24 小时。
+   > 从用户中删除所有限制可能需要多达 1 小时。
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>验证用于受限的用户的警报设置
 

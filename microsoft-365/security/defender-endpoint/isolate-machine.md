@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c881402a90c8e858d05556f5d8ed7f1be581581c78b5b084838b4dfb6181255
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8066fe3cbb0a8c6662048e5f349f834428f419e9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806938"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257714"
 ---
 # <a name="isolate-machine-api"></a>隔离计算机 API
 
@@ -52,8 +52,8 @@ ms.locfileid: "53806938"
 > [!IMPORTANT]
 >
 > - 完全隔离适用于 Windows 10 版本 1703 上的设备。
-> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
-> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
+> - 选择性隔离适用于 Windows 10版本 1709 或更高版本上的设备。
+> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender 终结点使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 ## <a name="permissions"></a>权限
 
@@ -87,7 +87,7 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 IsolationType|String|隔离的类型。 允许的值包括："Full"或"Selective"。
