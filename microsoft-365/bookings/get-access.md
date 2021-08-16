@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 了解如何访问 Microsoft 365 中的 Bookings 功能。
-ms.openlocfilehash: 5d4ccc76b8cfc67b4e92fa02f65a1badd7b8dc13
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: f33ff7d3ca1977ada5dd7294278ee7ab65d1e50889b7ecf878f211ba923bfe43
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419294"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896628"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>获取 Microsoft Bookings 访问权限
 

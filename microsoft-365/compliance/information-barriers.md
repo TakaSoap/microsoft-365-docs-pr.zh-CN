@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ef3fce82a10792c8289a4a3c4e3cb5639a4d178
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b9c9657521265890b842c910286d92c655297612f6c545c4abf12faa46e5d999
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880191"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>了解信息障碍Microsoft 365
 
@@ -83,7 +83,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 信息屏障正在推出，并包含在订阅中，例如：
 
 - Microsoft 365 E5/A5
-- Office 365E5/A5
+- Office 365 E5/A5
 - Office 365 高级合规版
 - Microsoft 365合规性 E5/A5
 - Microsoft 365 内部风险管理
@@ -97,7 +97,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - 合规性管理员
 - IB 合规性管理
 
- (若要了解有关角色和权限的更多信息，请参阅 Office 365 [Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)中的权限) 
+ (若要了解有关角色和权限的更多信息，请参阅 Office 365 [Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)中的权限) 
 
 您必须熟悉 PowerShell cmdlet，才能定义、验证或编辑信息屏障策略。 尽管我们在操作方法文章中提供了 PowerShell cmdlet[](information-barriers-policies.md)的几个示例，但您需要了解组织的其他详细信息（如参数）。
 

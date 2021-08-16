@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可以使用电子数据展示搜索工具在 Microsoft 365 中搜索的电子邮件和Microsoft 365。
-ms.openlocfilehash: b274b185c7fb0d2cd6dfa4aca0e8d8429664fe61
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b465b0dedac35b8008627fcb9a2ecd2f9b9d27dddcfb26a16c290d7176447ce8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860140"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>电子数据展示的关键字查询和搜索条件
 
@@ -107,7 +107,7 @@ ms.locfileid: "53288811"
 |---|---|---|---|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其通过电子邮件发送给其他人，然后将该文档上载到SharePoint，则该文档仍将保留原始作者。 请务必使用用户的 显示名称 此属性。|`author:"Garth Fort"`|所有文档的作者均为 Garth Fort。|
 |ContentType|The SharePoint content type of an item， such as Item， Document， or Video.|`contenttype:document`|将返回所有文档。|
-|Created|创建项目的日期。|`created>=06/01/2016`|在 2016 年 6 月 1 日当天或之后创建的所有项目。|
+|已创建|创建项目的日期。|`created>=06/01/2016`|在 2016 年 6 月 1 日当天或之后创建的所有项目。|
 |CreatedBy|创建或上载项目的人员。 请务必使用用户的 显示名称 此属性。|`createdby:"Garth Fort"`|所有项目均由 Garth Fort 创建或上载。|
 |DetectedLanguage|项目的语言。|`detectedlanguage:english`|所有项目均为英语。|
 |DocumentLink|URL () 或网站中特定文件夹SharePoint OneDrive for Business URL。 如果使用此属性，请确保搜索指定文件夹所在的网站。 <p> 若要返回位于为 documentlink 属性指定的文件夹的子文件夹中的项目，您必须将 /添加到指定文件夹的 URL 中; \* 例如， `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上文件夹的文档链接 URL 的信息，请参阅对目标集合使用内容 [搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定文件夹OneDrive for Business项。 第二个示例返回指定网站文件夹中的文档 (文件名中包含) "机密"一词的所有子文件夹。|
@@ -119,7 +119,7 @@ ms.locfileid: "53288811"
 |SharedWithUsersOWSUser|已与指定用户共享并显示在用户网站中"我共享"页上OneDrive for Business的文档。 这些是组织中其他人已与指定用户显式共享的文档。 导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档从与指定用户共享文档的用户的原始内容位置导出。 有关详细信息，请参阅搜索 [在组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都返回已与 Garth Fort 显式共享且显示在 Garth  Fort 的 OneDrive for Business 页面上的所有内部文档。|
 |Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户OneDrive for Business网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1` <p> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
-|Title|文档的标题。 Title 属性是在文档中指定的Microsoft Office元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
+|标题|文档的标题。 Title 属性是在文档中指定的Microsoft Office元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |
 
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
@@ -152,7 +152,7 @@ ms.locfileid: "53288811"
 |OfficeLocation|Office **或** Office **中的** 值。|
 |OtherAddress|Other **address** 属性的值。|
 |Surname|Last **name** 属性中的名称。|
-|Title|Job title 属性 **中** 的标题。|
+|标题|Job title 属性 **中** 的标题。|
 |
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
@@ -185,7 +185,7 @@ To see a list of the sensitive information types that you can search for， go t
 
 ****
 
-|运算符|用法|说明|
+|运算符|使用情况|说明|
 |---|---|---|
 |AND|keyword1 AND keyword2|返回包含所有指定关键字或表达式  `property:value` 的项。 例如，将返回 Ann Beebe 发送的所有邮件，这些邮件的主题行中包含  `from:"Ann Beebe" AND subject:northwind` 单词 northwind。 <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <p> 查询 (符号后使用空格) 与使用 AND 运算符 `keyword1 + keyword2` **+** 不同。  This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
@@ -273,9 +273,9 @@ To see a list of the sensitive information types that you can search for， go t
 |Condition|说明|
 |---|---|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其通过电子邮件发送给其他人，然后将该文档上载到SharePoint，则该文档仍将保留原始作者。|
-|Title|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。|
-|Created|创建文档的日期。|
-|上次修改时间|上次修改文档的日期。|
+|标题|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。|
+|已创建|创建文档的日期。|
+|上次修改日期|上次修改文档的日期。|
 |文件类型|文件的扩展名;例如，docx、one、pptx 或 xlsx。 此属性与 FileExtension 网站属性相同。 <p> **注意：** 如果在搜索查询中包括使用 **"等于** "或" **等于** "任意运算符的"文件类型"条件，则不能将通配符 ( ) 包括在文件类型) 末尾以返回文件类型的所有版本，以使用前缀搜索 \* (。 如果这样做，通配符将被忽略。 例如，如果包含 条件 `Equals any of doc*` ，将仅返回扩展 `.doc` 名 为 的文件。 不会返回扩展名 为 `.docx` 的文件。 若要返回文件类型的所有版本，在关键字查询中使用 *property：value* 对;例如， `filetype:doc*` 。|
 |
 
@@ -289,8 +289,8 @@ To see a list of the sensitive information types that you can search for， go t
 
 |运算符|查询等效项|说明|
 |---|---|---|
-|段后|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
-|Before|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|
+|活动后|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
+|活动前|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|
 |Between|`date..date`|使用日期和大小条件。 当使用日期条件时，返回在指定的日期范围内发送、接收或修改的项。 当使用大小条件时，返回大小在指定范围内的项。|
 |包含任意|`(property:value) OR (property:value)`|与指定字符串值的属性条件一起使用。 返回包含一个或多个指定字符串值任何部分的项目。|
 |不包含任何|`-property:value` <p> `NOT property:value`|与指定字符串值的属性条件一起使用。返回不包含指定字符串值任何部分的项目。|

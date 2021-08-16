@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad044d7cb0ad2ed15d738e99deb14a9a04218479
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8c2029be06be016d34fc7f00f5b1ec4ffb474f472bb96179f46ed55280706a40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896939"
 ---
 # <a name="contact-support-for-canada"></a>联系加拿大支持人员
 

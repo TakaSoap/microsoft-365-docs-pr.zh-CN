@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place电子数据展示和 In-Place 保留 (以及 Exchange Online 中的相应 PowerShell cmdlet) 将于 2020 年上半年停用。 v1.0 Search-Mailbox cmdlet 和 Advanced eDiscovery 1.0 也在同一时间内停用。
-ms.openlocfilehash: 77a7daf36c86cd302f774e5a4b934148d3dfd5a7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 5fbcb980d941ddd54ce76d5a44f93e5cdd9f7e052466d01a727668ffac2c89ea
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53340992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860075"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 

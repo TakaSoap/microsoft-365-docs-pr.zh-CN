@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文提供可以编码为自定义敏感信息类型的筛选器列表。
-ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 8cf5e60aeb27ff7426837b8885597a7d03e9e868073262bed263a7f70bbb301b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879189"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>自定义敏感信息类型筛选器参考
 
@@ -30,7 +30,7 @@ ms.locfileid: "53322499"
 
 ### <a name="alldigitssame-exclude"></a>AllDigitsSame 排除
 
-说明：允许您排除所有数字为重复数字的匹配项，如 1111111111 或 111-111-111
+说明：允许您排除所有数字都为重复数字的匹配项，如 111111111 或 111-111-111
 
 定义筛选器
 ```xml
@@ -149,9 +149,9 @@ ms.locfileid: "53322499"
 
 ### <a name="textmatchfilter-full"></a>TextMatchFilter Full
 
-说明：允许您禁止某些匹配，以防止它们触发规则。 例如，从有效信用卡匹配列表中排除 411111111111111。
+说明：允许您禁止某些匹配，以防止它们触发规则。 例如，将4111111111111111信用卡匹配列表中排除。
 
-例如，要排除列表中类似 4111111111111111111 和 32418910311131111 的信用卡号，如下所示：
+例如，要排除信用卡号，4111111111111111和3241891031113111列表，如下所示：
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -172,7 +172,7 @@ ms.locfileid: "53322499"
   </Keyword>
 ```
 
-例如，若要在列表中包括信用卡号（如 411111111111111111111 和 32418910311131111111，如下所示）：
+例如，若要将信用卡号（如 4111111111111111 和 3241891031113111）包括在如下所示的列表中：
 
 - 4485 3647 3952 7352
 - 4111111111111111

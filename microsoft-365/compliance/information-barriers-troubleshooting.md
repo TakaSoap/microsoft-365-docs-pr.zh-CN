@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de415ba7b68df786ead038bb72465c445a86ba5a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e0cab2fb0a700fa91287d36ea38635f876453443b2171d22d9d5bc9b0ebc326a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880391"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
@@ -145,7 +145,7 @@ ms.locfileid: "50928002"
 
 2. 根据上一步的结果，执行下列步骤之一：
   
-    |**状态**|**后续步骤**|
+    |**状态**|**下一步**|
     |:---------|:------------|
     | **未启动** | 如果自 **Start-InformationBarrierPoliciesApplication** cmdlet 运行以来已超过 45 分钟，请查看 审核日志 以查看策略定义中是否有错误，或应用程序未启动的其他原因。 |
     | **失败** | 如果应用程序失败，请查看审核日志。 此外，查看你的分段和策略。 是否向多个用户分配了多个段？ 是否向任何分段分配了多个策略？ 如有必要， [编辑分段](information-barriers-edit-segments-policies.md#edit-a-segment) 和/ [或编辑策略](information-barriers-edit-segments-policies.md#edit-a-policy)，然后再次运行 **Start-InformationBarrierPoliciesApplication** cmdlet。 |
@@ -163,7 +163,7 @@ ms.locfileid: "50928002"
 
 2. 运行 [Get-AddressBookPolicy](/powershell/module/exchange/get-addressbookpolicy) cmdlet 并查看结果。
 
-    |**结果**|**后续步骤**|
+    |**结果**|**下一步**|
     |:----------|:------------|
     | Exchange通讯簿策略 | [删除通讯簿策略](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | 不存在通讯簿策略 |查看审核日志，了解策略应用程序失败的原因 |

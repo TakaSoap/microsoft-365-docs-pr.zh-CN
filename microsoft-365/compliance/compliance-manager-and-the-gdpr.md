@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器是 Microsoft 服务信任门户中基于工作流的免费风险评估工具。 合规性管理器使你能够跟踪、分配和验证与 Microsoft 云服务相关的法规合规性活动。
-ms.openlocfilehash: 69e6551620fb654cb09d46554e6e3c98b6a2fc60
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53880541"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft 合规性管理器和 GDPR
 
