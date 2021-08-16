@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 了解管理员如何使用 Exchange Online PowerShell 和 CSV 文件将外部联系人批量导入到全局地址列表。
-ms.openlocfilehash: 178e3676f8dc5fb59cdad9cc46d7ecbd9dddb90e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cb6195f82ed794ea5b6741a6b8bdf3007cdf366411ad7a464688b6ffbf5d9cb0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895959"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>将外部联系人批量导入Exchange Online
 
@@ -90,10 +90,10 @@ ms.locfileid: "50918208"
   
 5. 如有必要，请单击 **"刷新** "以更新列表并查看已导入的外部联系人。 
     
-    导入的联系人将显示在 Web 上的共享通讯簿Outlook Outlook共享通讯簿中。
+    导入的联系人将显示在共享通讯簿中的 Outlook 和 Outlook 网页版。
     
     > [!NOTE]
-    > 您还可以通过访问"用户联系人"Microsoft 365管理 **中心** \> **中的联系人**。 
+    > 您还可以通过访问"用户联系人"查看Microsoft 365 管理中心 \> **中的联系人**。 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>步骤 3：向外部联系人的属性添加信息
 
@@ -125,7 +125,7 @@ ms.locfileid: "50918208"
     
 2. 单击某个联系人，然后单击" **编辑** ![ 编辑"图标 ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 以显示该联系人的属性。 
     
-就是这么简单。 用户可以在 Web 上查看通讯簿中的联系人Outlook Outlook信息。
+就是这么简单。 用户可以在通讯簿和通讯簿中查看联系人Outlook Outlook 网页版。
   
 ## <a name="add-more-external-contacts"></a>添加更多外部联系人
 

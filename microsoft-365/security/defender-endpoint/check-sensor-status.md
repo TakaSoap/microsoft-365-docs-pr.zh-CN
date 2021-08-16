@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 91318cf3638b71ad14bf283185d31fba5280d983f961f591ebfc1c75bd7f75a2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8168977629f80923ed65e84127478eea0b526597
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256365"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>检查 Microsoft Defender for Endpoint 中的传感器运行状况
 
@@ -54,11 +54,16 @@ ms.locfileid: "53811360"
 您还可以使用导出功能以 CSV 格式下载 **整个** 列表。 有关筛选器的信息，请参阅 [查看和组织设备列表](machines-view-overview.md)。
 
 >[!NOTE]
->导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要大量时间来下载，具体取决于你的组织规模。
+>导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要很长时间才能下载，具体取决于组织的大小。
 
 ![设备列表页面的屏幕截图](images/atp-devices-list-page.png)
 
 单击错误配置或不活动的设备时，可以查看设备详细信息。
 
-## <a name="related-topic"></a>相关主题
+## <a name="see-also"></a>另请参阅
 - [修复 Defender for Endpoint 中的不正常传感器](fix-unhealthy-sensors.md)
+- [客户端分析器概述](overview-client-analyzer.md)
+- [下载并运行客户端分析器](download-client-analyzer.md)
+- [在客户端上运行Windows](run-analyzer-windows.md)
+- [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
+- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)

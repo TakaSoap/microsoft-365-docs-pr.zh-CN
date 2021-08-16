@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含有关使用 SharePoint Server 2007 帮助用户规划升级的信息。
-ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f3df4a66eb789cd6aa88f1f3a0f170c1c49b834a7b87bad242abb1fab15b4df
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894823"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint 2007 迁移选项需要考虑
 
@@ -103,7 +103,7 @@ Microsoft SharePoint 2007 和 SharePoint Server 2007 已终止支持。 是时�
     
 - 大型数据集 (，如文件存档) 
     
-- 供应情况
+- 可用性
     
 - 服务器场中的关键应用、Web 部件或文档 (任务关键型服务器场) 
     

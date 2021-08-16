@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ff360a460884f15f14501a241bbd96939184e792
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 0e6e29067d2bb1223809096483b096acebf6d2be95dd42ec811e765d0cb9b6d7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53591063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894655"
 ---
 # <a name="cancel-machine-action-api"></a>取消计算机操作 API
 
@@ -37,7 +37,7 @@ ms.locfileid: "53591063"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)。
+> 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -72,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|字符串|Bearer {token}。必需。|
+|Authorization|String|Bearer {token}。必需。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文

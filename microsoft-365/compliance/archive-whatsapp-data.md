@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器，以在 Microsoft 365 中导入和存档 WhatsApp Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 0f4759eeb26190d7fdfc92cbf986efecd017eda5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 3d329a97948e36f380d0d42dc59555a967c4f25223cdd34a932b99f89ecd9869
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054790"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53896117"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>设置连接器以存档 WhatsApp 数据
 

@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用于恢复丢失的客户密钥的可用性密钥。
-ms.openlocfilehash: 0f65721856cd046f28a399701e625239decbd9b6
-ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
+ms.openlocfilehash: 573c7bb7426dea8594f3a2e73991f845153146996f8a03cab4766855482a7de1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895781"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>了解客户密钥的可用性密钥
 
@@ -29,7 +29,7 @@ ms.locfileid: "53463993"
 - 逻辑控件和安全存储位置的分离可提供深度防御，并防范从单个攻击或故障点中丢失所有密钥和数据。
 - 如果服务由于暂时性错误Microsoft 365无法访问 Azure Key Vault 中托管的密钥，可用性密钥将提供高可用性功能。 此规则仅适用于 Exchange Online 和 Skype for Business 服务加密。 SharePoint联机OneDrive for Business和Teams文件永远不会使用可用性密钥，除非你明确指示 Microsoft 启动恢复过程。
 
-共享保护你的数据的责任，使用各种保护和过程进行密钥管理，最终可降低所有密钥 (因此你的) 将永久丢失或销毁的风险。 当你离开服务时，Microsoft 会为您提供对禁用或销毁可用性密钥的唯一授权。 根据设计，Microsoft 中没有人可以访问可用性密钥：它只能通过服务代码Microsoft 365访问。
+共享保护你的数据的责任，使用各种保护和过程进行密钥管理，最终可降低所有密钥 (因此你的) 将永久丢失或销毁的风险。 当你离开服务时，Microsoft 会为您提供对禁用或销毁可用性密钥的唯一授权。 按照设计，Microsoft 没有人可以访问可用性密钥：它只能通过 Microsoft 365 服务代码访问。
 
 请参阅 [Microsoft 信任中心](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) ，详细了解如何保护密钥。
   

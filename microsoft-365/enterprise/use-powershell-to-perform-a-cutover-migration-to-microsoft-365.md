@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 了解如何使用 PowerShell 通过执行到源电子邮件系统的转换迁移，一次从源电子邮件系统Microsoft 365。
-ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce2d97330cb090e261da8e1f8b120c1001a6b3d5a1e19ce5a42d72212880d3f8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894811"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 直接转换迁移到 Microsoft 365
 
@@ -199,7 +199,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>第 7 部分：分配用户许可证
 <a name="BK_Step7"> </a>
 
- **通过Microsoft 365许可证激活迁移帐户的用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在管理中心内Microsoft 365许可证，请参阅[分配或取消分配许可证](../admin/manage/assign-licenses-to-users.md)。
+ **通过Microsoft 365许可证激活迁移帐户的用户帐户。** 如果不分配许可证，则当宽限期（30 天）结束时，邮箱将处于禁用状态。 若要在许可证分配Microsoft 365 管理中心，请参阅[分配或取消分配许可证](../admin/manage/assign-licenses-to-users.md)。
 
 ### <a name="step-8-complete-post-migration-tasks"></a>步骤 8：完成迁移后任务
 <a name="BK_Step8"> </a>

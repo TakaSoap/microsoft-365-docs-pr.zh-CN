@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
-ms.openlocfilehash: fb1df207d770b74095542dd1531764bf48c5fd54
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: fef8fdc29b7839bd7bd097fb37246b5b029dbdf89258a2107b7574b6c23da12e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894395"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护
 

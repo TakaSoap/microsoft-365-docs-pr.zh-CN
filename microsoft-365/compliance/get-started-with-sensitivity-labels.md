@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 3b4c99f78173466e2a4d5802be54fd98cf312849
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 88eee1b57e7203a0407238c55e9b0c5307bf0bcb20ace02f00429b77d2402639
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895365"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -71,7 +71,7 @@ ms.locfileid: "58247894"
 
 建议使用下一节中的表，确定映射到最有影响的业务需求的前一两个场景。 部署这些场景后，返回到列表，确定下一个或两个部署的优先级。
 
-你将在 [Microsoft 信息保护和数据丢失防护的部署加速指南](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/)中找到有关其他常规部署的指南，这是来自[客户加速团队 (CAT)](https://microsoft.github.io/ComplianceCxE/) 站点的资源之一。
+可以在可下载的数据丢失保护和 Microsoft 信息保护部署加速指南中找到其他常规部署指南。 有关详细信息，请参阅博客文章，[Microsoft 365 信息保护与合规性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404)。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度标签的常见场景
 
@@ -106,8 +106,8 @@ ms.locfileid: "58247894"
 
 此外，还可使用以下资源来获取基本说明：
 
-- [在Office 的文件和电子邮件中应用敏感度标签](https://support.microsoft.com/zh-CN/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Office 中敏感度标签的已知问题](https://support.microsoft.com/zh-CN/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [在Office 的文件和电子邮件中应用敏感度标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Office 中敏感度标签的已知问题](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [向 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [有关自动应用或建议敏感度标签的已知问题](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

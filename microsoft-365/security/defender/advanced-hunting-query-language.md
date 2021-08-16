@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4b31a47ecfa887185673d75947fbab89332caa2a156bed8a35b158b63c2e8b95
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805583"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256536"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -40,7 +40,7 @@ ms.locfileid: "53805583"
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在Microsoft 365中心，**转到搜寻以** 运行你的第一个查询。 使用以下示例：
+在Microsoft 365 Defender门户中，转到"**搜寻**"以运行你的第一个查询。 使用以下示例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -71,13 +71,13 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 // Finds PowerShell execution events that could involve a download
 ```
 
-查询本身通常以表名称开始，后跟几个以管道连接 `|` () 。 此示例首先创建由 和 两个表组成并根据需要  `DeviceProcessEvents` `DeviceNetworkEvents` 添加管道元素。
+查询本身通常以表名称开始，后跟几个以管道连接 `|` () 。 此示例首先创建两个表和 的联合，  `DeviceProcessEvents` `DeviceNetworkEvents` 并根据需要添加管道元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>设置时间范围
-第一个管道元素是一个范围为前七天的时间筛选器。 限制时间范围有助于确保查询运行良好、返回可管理的结果，并且不会因此而省时。
+第一个通过管道的元素是一个范围为前七天的时间筛选器。 限制时间范围有助于确保查询运行良好、返回可管理的结果，并且不会因此而省时。
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -124,7 +124,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="learn-common-query-operators"></a>了解常见查询运算符
 
-您刚刚运行了第一个查询，并且对它的组件有一个一般性了解。 现在应该稍微后退一下，了解一些基础知识。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
+您刚刚运行了第一个查询，对它的组件有一个一般性了解。 现在应该稍微后退一下，了解一些基础知识。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
 
 | 运算符 | 说明和用法 |
 |--|--|
@@ -149,7 +149,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 |--|--|
 | `datetime` | 通常表示事件时间戳的数据和时间信息。 [查看受支持的日期时间格式](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
 | `string` | UTF-8 中的字符串，括在单引号 () `'` 或双引号 `"` () 。 [阅读有关字符串的更多信息](/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | 此选项数据类型 `true` 或 `false` 状态。 [查看受支持的文字和运算符](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `bool` | 此数据类型 `true` 支持或 `false` 状态。 [查看受支持的文字和运算符](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | 32 位整数  |
 | `long` | 64 位整数 |
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f3ec24e4d73ac9297e4ca0bec5659b987f9e33d7bae182a1f7f1853ee72d6876
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f5ddd873d5303748bab5ba391cfbf1d4f2b0066
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833204"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256512"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>评估 Microsoft Defender for Endpoint 概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "53833204"
 - Microsoft 365 Defender
 
 
-本文概述了启用和试用 Microsoft Defender for Endpoint 的过程。 在开始此过程之前，请确保你已查看用于评估项目Microsoft 365 Defender并且你已创建了[](eval-overview.md)Microsoft 365 Defender[评估环境](eval-create-eval-environment.md)。 
+本文概述了启用和试用 Microsoft Defender for Endpoint 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且已创建Microsoft 365 Defender[评估环境](eval-create-eval-environment.md)。 [](eval-overview.md) 
 <br>
 
 使用以下步骤启用和试用 Microsoft Defender for Endpoint。

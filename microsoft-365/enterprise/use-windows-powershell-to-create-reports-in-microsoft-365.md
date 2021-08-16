@@ -15,19 +15,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 摘要：使用 PowerShell for Microsoft 365创建无法通过管理中心Microsoft 365的报告。
-ms.openlocfilehash: 9e3b90dcdd32f80125175ad2e15a852db51e17f8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: 摘要：使用 PowerShell for Microsoft 365创建无法生成在 Microsoft 365 管理中心。
+ms.openlocfilehash: dba0e7eab3c2521193128b503fd11a00198e7abd199a0a3003ec19e1adf732fa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894799"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 创建 Microsoft 365 报告
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-管理中心提供了许多不同的Microsoft 365报告。 但是这些报告仅提供太多信息，有时你还需要更多信息。 这就是需要 PowerShell 进行Microsoft 365。
+许多不同的报告都可用于Microsoft 365 管理中心。 但是这些报告仅提供太多信息，有时你还需要更多信息。 这就是需要 PowerShell 进行Microsoft 365。
   
 这些文章介绍如何使用 PowerShell for Microsoft 365从你的租户Microsoft 365信息：
   

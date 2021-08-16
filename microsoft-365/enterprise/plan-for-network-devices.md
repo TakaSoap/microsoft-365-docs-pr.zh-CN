@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍用于连接到数据库的网络容量、WAN 加速器和负载平衡Office 365。
-ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bda9fc9e9005530e97bc0033fc13813fceeb77d84e39f44726d259fd8847e8e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894895"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 

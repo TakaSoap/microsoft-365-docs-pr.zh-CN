@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e396618984b90053c2f4918201f6abfe5ca915df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fc68c11a23d6d2282c8cc8c59e27f078057fe3fa17d446782418ded366ada763
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53866951"
 ---
 # <a name="payment-information-for-australia"></a>澳大利亚的付款信息
 
@@ -33,15 +33,15 @@ ms.locfileid: "52537219"
 **Bank：** 都道（北京）  
 **SWIFT 代码：** AU2X  
 **BSB 代码** ：242000  
-**帐号** ：205565043  
+**帐号：205565043**  
 **帐户名称：** MICROSOFT
 
 如果你有一张由 **Microsoft Pty Ltd** 针对从 2021 年 3 月 1 日开始的订单和消耗计费的发票，请使用此银行信息：
 
 **Bank：** Bank， N.A. 澳大利亚  
 **SWIFT 代码：** AU2X  
-**BSB 代码** ：248053  
-**帐号** ：100001074  
+**BSB 代码：248053**  
+**帐号：100001074**  
 **帐户名称：** MICROSOFT  
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

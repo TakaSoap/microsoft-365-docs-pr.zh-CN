@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 516c141be490e6ca87a96cfc0ec4ccf138eed63f9be11439161eb3bf4e2ba372
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53894559"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>配置 Microsoft Defender 防病毒软件扫描选项
 
@@ -56,17 +56,17 @@ ms.locfileid: "52964893"
 
 | 策略项和位置 | 如果未 (默认设置)  | 类的 PowerShell `Set-MpPreference` 参数或 WMI `MSFT_MpPreference` 属性 |
 |---|---|---|
-| 电子邮件扫描 <p> **扫描**  > **打开电子邮件扫描**<p>请参阅 [本文中的电子邮件](#email-scanning-limitations) (限制)  | 禁用 | `-DisableEmailScanning` |
-|扫描 [重新分析点](/windows/win32/fileio/reparse-points) <p> **扫描**  > **打开重新分析点扫描** | 禁用 | 不可用 <p>请参阅 [重新分析点](/windows/win32/fileio/reparse-points)  |
-| 扫描映射的网络驱动器 <p> **扫描**  > **在映射的网络驱动器上运行完全扫描** | 禁用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| 电子邮件扫描 <p> **扫描**  > **打开电子邮件扫描**<p>请参阅 [本文中的电子邮件](#email-scanning-limitations) (限制)  | 已禁用 | `-DisableEmailScanning` |
+|扫描 [重新分析点](/windows/win32/fileio/reparse-points) <p> **扫描**  > **打开重新分析点扫描** | 已禁用 | 不可用 <p>请参阅 [重新分析点](/windows/win32/fileio/reparse-points)  |
+| 扫描映射的网络驱动器 <p> **扫描**  > **在映射的网络驱动器上运行完全扫描** | 已禁用 | `-DisableScanningMappedNetworkDrivesForFullScan`|
 | 扫描存档 (，如.zip或.rar文件) 。  <p> **扫描**  > **扫描存档文件** | 已启用 | `-DisableArchiveScanning` <p>扩展 [名排除列表](configure-extension-file-exclusions-microsoft-defender-antivirus.md) 将优先于此设置。|
-| 扫描网络文件 <p> **扫描**  > **扫描网络文件** | 禁用 | `-DisableScanningNetworkFiles` |
+| 扫描网络文件 <p> **扫描**  > **扫描网络文件** | 已禁用 | `-DisableScanningNetworkFiles` |
 | 扫描打包的可执行文件 <p> **扫描**  > **扫描打包的可执行文件** | 已启用 | 不可用 |
-| 仅在完全扫描期间扫描可移动驱动器 <p> **扫描**  > **扫描可移动驱动器** | 禁用 | `-DisableRemovableDriveScanning` |
+| 仅在完全扫描期间扫描可移动驱动器 <p> **扫描**  > **扫描可移动驱动器** | 已禁用 | `-DisableRemovableDriveScanning` |
 | 指定要扫描的存档文件夹中的子文件夹级别 <p>**扫描**  > **指定扫描存档文件的最大深度** | 0 | 不可用 |
 | 指定最大 CPU 负载 (以扫描) 的百分比表示。 <p> **扫描**  > **指定扫描期间 CPU 使用率的最大百分比** | 50 |  `-ScanAvgCPULoadFactor` <p>**注意**：最大 CPU 负载不是硬性限制，但指导扫描引擎平均不超过最大值。 手动运行扫描将忽略此设置，并且运行时没有任何 CPU 限制。 |
 | 指定应 (存档) 的最大大小（以 KB 为单位）。 <p> **扫描**  > **指定要扫描的存档文件的最大大小** | 无限制 | 不可用 <p>默认值 0 没有限制 |
-| 为计划扫描配置低 CPU 优先级 <p> **扫描**  > **为计划扫描配置低 CPU 优先级** | 禁用 | 不可用 |
+| 为计划扫描配置低 CPU 优先级 <p> **扫描**  > **为计划扫描配置低 CPU 优先级** | 已禁用 | 不可用 |
 
  
 > [!NOTE]

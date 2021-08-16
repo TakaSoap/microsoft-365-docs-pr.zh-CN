@@ -1,6 +1,6 @@
 ---
 title: 将Microsoft 365 Defender流式处理到 Azure 事件中心
-description: 了解如何配置Microsoft 365 Defender以将高级搜寻事件流式传输至事件中心。
+description: 了解如何配置Microsoft 365 Defender高级搜寻事件流式传输至事件中心。
 keywords: 原始数据导出， 流式 API， API， Azure 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7745538471a2e8eae3b4708de06a789f4e0daff0150fd83f18a32b85461f892
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256500"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>配置Microsoft 365 Defender将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -37,9 +37,9 @@ ms.locfileid: "53893731"
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
-2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>**资源>注册到 Microsoft.Insights。**
+2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅 >你的订阅>**资源>注册到 Microsoft.Insights**。
 
-3. 创建事件中心命名空间，转到"事件中心"> **添加** "，然后选择适合预期负载的定价层、吞吐量单位和自动提高。 有关详细信息，请参阅定价[- 事件中心|Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)。  
+3. 创建事件中心命名空间，转到"事件中心"> **添加** "，然后选择适合预期负载的定价层、吞吐量单位和自动提高。 有关详细信息，请参阅 [事件中心定价](https://azure.microsoft.com/pricing/details/event-hubs/)。  
 
 ### <a name="add-contributor-permissions"></a>添加参与者权限
 
@@ -47,9 +47,9 @@ ms.locfileid: "53893731"
 
 1. 将要登录的用户定义为Microsoft 365 Defender用户。
 
-2. 如果要连接到应用程序，请添加应用注册服务主体作为读者，Azure 事件中心数据接收器 (此操作也可在资源组或订阅级别) 。 
+2. 如果要连接到应用程序，将应用注册服务主体添加为读者，Azure 事件中心数据接收器 (此操作也可在资源组或订阅级别) 。 
 
-    转到事件 **中心命名空间>访问控制 (IAM**) >添加并验证角色 **分配** 下。
+    转到事件 **中心命名空间>访问控制 (IAM) >添加并** 验证角色 **分配下**。
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
@@ -67,7 +67,7 @@ ms.locfileid: "53893731"
 
 7. 若要将事件数据导出到单个事件中心，请输入事件中心 **名称和****事件中心资源 ID。**
 
-   若要获取 **事件中心资源 ID，** 请转到 [Azure](https://ms.portal.azure.com/)属性选项卡上的 Azure 事件中心命名空间页面>复制资源  >  ID **下的文本**：
+   若要获取事件 **中心资源 ID，** 请转到 [Azure](https://ms.portal.azure.com/)属性选项卡上的 Azure 事件中心命名空间页面>复制资源  >  ID **下的文本**：
 
    ![事件中心资源 Id1 的图像](../defender-endpoint/images/event-hub-resource-id.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "53893731"
 
 - Azure 事件中心中的每个事件中心消息都包含记录列表。
 
-- 每条记录都包含事件名称、Microsoft 365 Defender接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件以 JSON 格式包含在名为 **"properties"** 的属性中。
+- 每条记录都包含事件名称、Microsoft 365 Defender接收事件的时间、它所属的租户 (仅从租户) 获取事件，事件以 JSON 格式包含在名为 **"properties"** 的属性中。
 
 - 有关事件架构Microsoft 365 Defender，请参阅高级[搜寻概述](advanced-hunting-overview.md)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "53893731"
 
 若要获取事件属性的数据类型，请执行下列操作：
 
-1. 登录到安全[Microsoft 365，](https://security.microsoft.com)然后转到高级[搜寻页面](https://security.microsoft.com/hunting-package)。
+1. 登录到高级[Microsoft 365 Defender，](https://security.microsoft.com)然后转到高级[搜寻页面](https://security.microsoft.com/hunting-package)。
 
 2. 运行以下查询，获取每个事件的数据类型映射：
 
@@ -119,6 +119,6 @@ ms.locfileid: "53893731"
 
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [Microsoft 365 Defender流式处理 API](streaming-api.md)
-- [将Microsoft 365 Defender流式处理到 Azure 存储帐户](streaming-api-storage.md)
+- [将Microsoft 365 Defender流式传输至 Azure 存储帐户](streaming-api-storage.md)
 - [Azure 事件中心文档](/azure/event-hubs/)
 - [解决连接问题 - Azure 事件中心](/azure/event-hubs/troubleshooting-guide)

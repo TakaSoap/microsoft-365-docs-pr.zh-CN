@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e3a84b2f1ace627906a0235d6ad27904aba8d6b312199f1df1eae133e907143
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817191"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256334"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>为基于角色的访问控制创建和管理角色
 
@@ -37,11 +37,11 @@ ms.locfileid: "53817191"
 
 ## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>创建角色并将角色分配给Azure Active Directory组
 
-以下步骤指导您如何在角色创建Microsoft 365 Defender。 它假定你已创建Azure Active Directory用户组。
+以下步骤指导您如何在 Microsoft 365 Defender。 它假定你已创建Azure Active Directory用户组。
 
 1. 使用分配[Microsoft 365 Defender](https://security.microsoft.com/)全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，选择"设置  >  **权限**  >  " ("终结点角色 **) 。**
+2. 在导航窗格中，选择"设置  >  **权限**  >  **" ("终结点角色) 。**
 
 3. 选择 **"添加项目"。**
 
@@ -71,7 +71,7 @@ ms.locfileid: "53817191"
 
 - **警报调查** - 管理警报、启动自动调查、运行扫描、收集调查包、管理设备标记，以及仅下载可移植的可执行 (PE) 文件 
 
-- **管理门户系统设置** - 配置存储设置、SIEM 和威胁情报 API (应用全局) 、高级设置、自动文件上传、角色和设备组
+- **管理门户系统设置** - 配置存储设置、SIEM 和威胁情报 API 设置 (适用于全球) 、高级设置、自动文件上载、角色和设备组
 
     > [!NOTE]
     > 此设置仅适用于 Microsoft Defender 终结点管理员 (默认) 角色。
@@ -82,8 +82,8 @@ ms.locfileid: "53817191"
     - **基本** 命令：
         - 启动实时响应会话
         - 在远程设备上执行只读实时响应命令 (文件复制和执行) 
-    - **高级** 命令：
         - 通过实时响应从远程设备下载文件
+    - **高级** 命令：
         - 从文件页面下载 PE 和非 PE 文件
         - Upload文件到远程设备
         - 从文件库查看脚本
@@ -95,7 +95,7 @@ ms.locfileid: "53817191"
 
 1. 使用分配[Microsoft 365 Defender](https://security.microsoft.com/)全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，选择"设置  >  **权限**  >  " ("终结点角色 **) 。**
+2. 在导航窗格中，选择"设置  >  **权限**  >  **" ("终结点角色) 。**
 
 3. 选择要编辑的角色。
 
@@ -109,7 +109,7 @@ ms.locfileid: "53817191"
 
 1. 使用分配[Microsoft 365 Defender](https://security.microsoft.com/)全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，选择"设置  >  **权限**  >  " ("终结点角色 **) 。**
+2. 在导航窗格中，选择"设置  >  **权限**  >  **" ("终结点角色) 。**
 
 3. 选择要删除的角色。
 
