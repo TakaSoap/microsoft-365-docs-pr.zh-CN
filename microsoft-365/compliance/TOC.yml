@@ -333,6 +333,8 @@
           items:
             - name: 保留策略和标签
               href: retention.md
+            - name: 保留流程图
+              href: retention-flowchart.md
             - name: 保留 Microsoft Office Sharepoint Online 和 OneDrive
               href: retention-policies-sharepoint.md
             - name: 保留 Microsoft Teams

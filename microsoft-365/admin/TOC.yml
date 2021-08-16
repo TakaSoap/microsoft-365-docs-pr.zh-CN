@@ -16,6 +16,8 @@
               href: setup/get-started-windows-365-business.md
             - name: Windows 365 商业版大小调整选项
               href: setup/windows-365-business-sizing.md
+            - name: 排查 Windows 365 云电脑设置问题
+              href: setup/troubleshoot-windows-365-business.md
         - name: 使用引导式安装为组织安装
           items:
             - name: Microsoft 365 商业基础版

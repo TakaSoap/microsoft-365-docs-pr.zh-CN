@@ -150,6 +150,10 @@
           items:
             - name: 设备清点报告
               href: working-with-managed-desktop/device-inventory-report.md
+            - name: 设备状态报告
+              href: working-with-managed-desktop/device-status-report.md
+            - name: Windows 安全更新报告
+              href: working-with-managed-desktop/security-updates-report.md
         - name: 管理支持
           href: working-with-managed-desktop/admin-support.md
         - name: 用户支持
@@ -160,7 +164,7 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: 更改设备配置文件
           href: working-with-managed-desktop/change-device-profile.md
-        - name: 将设备分配到部署
+        - name: 将设备分配到部署组
           href: working-with-managed-desktop/assign-deployment-group.md
         - name: 删除设备
           href: working-with-managed-desktop/remove-devices.md
