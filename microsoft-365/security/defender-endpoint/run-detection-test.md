@@ -1,6 +1,6 @@
 ---
-title: 在新载入的 Microsoft Defender 终结点设备上运行检测测试
-description: 在新载入的设备上运行检测脚本，以验证它是否正确载入到 Microsoft Defender for Endpoint 服务。
+title: 将设备添加到 Microsoft Defender for Endpoint 设备后运行检测测试
+description: 在最近添加到 Microsoft Defender for Endpoint 服务的设备上运行检测脚本，以验证它是否正确载入
 keywords: 检测测试， 检测， powershell， 脚本， 验证， 载入， 适用于终结点载入的 microsoft defender， 客户端， 服务器， 测试
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 82f34d345663df77c7b713f06b0d7b9760c86e1f374a033b5386bfdbdb0fcc41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ae3f6cfbdf1452b47f1bd91029c6a481eff5761
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867879"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256909"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试 
 
@@ -41,6 +41,11 @@ ms.locfileid: "53867879"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
+载入设备是向 Microsoft Defender for Endpoint 服务添加设备的方法。 它允许设备向服务报告信号。  
+
+验证设备是否已成功添加到服务是整个部署过程中的重要步骤。 
+
+## <a name="verify-onboarding-using-a-detection-test"></a>使用检测测试验证载入
 在新载入的设备上运行以下 PowerShell 脚本，验证它是否正确报告给 Defender for Endpoint 服务。
 
 1. 创建文件夹："C：\test-MDATP-test"。

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建轻型测试环境，以Microsoft 365企业版。
-ms.openlocfilehash: 2745d6a94262a45972c95d47dd10a464e76f4948ddb82a0ab01b084bd97786c7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a43616d538e21bf906fae82797c2835b0593b23c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256847"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
@@ -52,10 +52,10 @@ ms.locfileid: "53859008"
 
 ## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>阶段 1：创建Microsoft 365 E5订阅
 
-我们首先创建Microsoft 365 E5试用版订阅，然后将Microsoft 365 E5订阅添加到该订阅。
+我们先使用Microsoft 365 E5试用版订阅，然后将Microsoft 365 E5订阅添加到该订阅。
 
 >[!NOTE]
->我们建议你创建订阅的试用Office 365，以便你的测试环境具有独立于你当前拥有的任何付费订阅的 Azure AD 租户。 这种分离意味着可以在测试租户中添加和删除用户和组，而不会影响生产订阅。
+>我们建议你创建一个 Office 365，以便你的测试环境具有独立于你当前拥有的任何付费订阅的 Azure AD 租户。 这种分离意味着可以在测试租户中添加和删除用户和组，而不会影响生产订阅。
 
 要启动 Microsoft 365 E5 试用版订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
@@ -71,7 +71,7 @@ ms.locfileid: "53859008"
 
 1. 在浏览器中，转到 [https://aka.ms/e5trial](https://aka.ms/e5trial) 。
     
-2. 在"感谢您选择 Office 365 E5页面的步骤 **1** 中，输入新的电子邮件帐户地址。
+2. 在"感谢您选择 Office 365 E5 **页面的步骤** 1 中，输入新的电子邮件帐户地址。
 3. 在跟踪订阅过程的步骤 2 中，输入请求的信息，然后执行验证。
 4. 在步骤 3 中，输入组织名称，然后输入将成为订阅全局管理员的帐户名称。
 5. 在第 4 步中，在此记录登录页面（选择并复制）： ![折线图](../media/Common-Images/TableLine.png)
@@ -79,7 +79,7 @@ ms.locfileid: "53859008"
    记录在安全位置输入的密码。
    此值被称为 **“全局管理员名称”**。
 7. 选择 **"转到设置"。**
-8. 在Office 365 E5安装程序中，选择"继续使用 **组织的.onmicrosoft.com 电子邮件和登录"，** 然后选择"退出"，**稍后继续**。
+8. 在Office 365 E5安装程序"中，选择"继续使用 **组织的 .onmicrosoft.com 电子邮件和登录"，** 然后选择"退出"，**稍后继续**。
 
 你应当查看 Microsoft 365 管理中心。
     
@@ -87,9 +87,9 @@ ms.locfileid: "53859008"
 
 在这个阶段，你为订阅配置其他用户，并向这些用户分配 Office 365 E5 许可证。
   
-若要从计算机使用 Azure Active Directory PowerShell for Graph 模块连接到订阅，请使用 连接 Microsoft 365 [PowerShell 中的说明](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+若要从计算机使用 Azure Active Directory PowerShell for Graph 模块连接到订阅，请使用 连接 中的说明Microsoft 365 [PowerShell Microsoft 365。](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
     
-在 **"Windows PowerShell凭据请求**"对话框中，输入全局管理员 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 
+在 **"Windows PowerShell凭据** 请求"对话框中，输入全局管理员 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 
   
 填写组织名称 (例如 *contosotoycompany*) 、位置的两字符国家/地区代码、公用帐户密码，然后从 PowerShell 提示符处运行以下命令：
 
@@ -100,29 +100,17 @@ $commonPW="<common user account password>"
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password=$commonPW
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
 $License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
 $LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
 $LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
+for($i=2;$i -le 4; $i++) {
+    $userUPN= "user$($i)@$($orgName).onmicrosoft.com"
+    New-AzureADUser -DisplayName "User $($i)" -GivenName User -SurName $i -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user$($i)"
+    $userObjectID = (Get-AzureADUser -SearchString $userupn).ObjectID
+    Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
+}
 ```
 > [!NOTE]
 > 此处使用公用密码旨在自动配置测试环境，简化配置过程。 显然，对于生产订阅，这是非常不鼓励的。 
@@ -199,7 +187,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 - Microsoft 365 E5 试用版订阅。
 - 所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。
     
-生成的配置将添加Microsoft 365 E5，如下所示：
+生成的配置（可添加Microsoft 365 E5配置）如下所示：
   
 ![Microsoft 365 企业版测试环境的第 3 阶段](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -220,7 +208,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅 [在 Azure 中使用 Windows 客户端实现开发/测试方案](/azure/virtual-machines/windows/client-images)。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 这些命令集构建Windows 10 企业版 WIN10 及其所有必需基础结构（包括资源组、存储帐户和虚拟网络）的虚拟机。 如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 这些命令集构建Windows 10 企业版 WIN10 及其所有所需基础结构（包括资源组、存储帐户和虚拟网络）的虚拟机。 如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。
   
 首先，启动 Microsoft PowerShell 提示符。
   
@@ -284,7 +272,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 在创建具有 Windows 10 企业版的物理计算机或虚拟机之后，使用本地管理员帐户登录。
   
 > [!NOTE]
-> 对于 Azure 中的虚拟机，请使用  [以下](/azure/virtual-machines/windows/connect-logon) 说明连接到它。
+> 对于 Azure 中的虚拟机，请使用  [以下](/azure/virtual-machines/windows/connect-logon) 说明进行连接。
   
 接下来，将 WIN10 计算机联接到 Microsoft 365 E5 订阅的 Azure AD 租户中。
   
@@ -292,7 +280,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 2. 在 **"设置工作或学校帐户**"对话框中，选择 **"加入此设备以Azure Active Directory"。**
     
-3. 在 **"工作或学校帐户**"中，输入你的订阅的全局管理员Microsoft 365 E5名称，然后选择"下一步 **"。**
+3. 在 **"工作或学校帐户**"中，输入你的 Microsoft 365 E5 订阅的全局管理员帐户名称，然后选择"下一 **步"。**
     
 4. 在 **"输入密码**"中，输入全局管理员帐户的密码，然后选择"**登录"。**
     

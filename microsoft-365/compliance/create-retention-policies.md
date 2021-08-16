@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 45858943dab6f6cb2964cc2751c245f182f3ea9e61ab5a8565a238e3aad715e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3053740119c09b56b6fa01434d79fe9cd31d826e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808152"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256700"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -74,7 +74,7 @@ ms.locfileid: "53808152"
 3. 对于 **选择要应用策略的位置** 页面，请为 Teams 选择任何或所有位置:
     - **Teams 频道消息**: 来自标准频道聊天和标准频道会议的消息，但不包括来自具有其自己策略位置的 [私人频道](/microsoftteams/private-channels)。
     - **Teams 聊天**: 来自私人 1:1 聊天、群组聊天和会议聊天的消息。
-    - **Teams 专用频道消息**: 来自私人频道聊天和私人频道会议的消息。 此选项当前以预览版推出，如果未显示，请在几天后重试。
+    - **Teams 专用频道消息**: 来自私人频道聊天和私人频道会议的消息。
     
    默认情况下，[选择所有团队和所有用户](#a-policy-that-applies-to-entire-locations)，但你可以通过选择“**编辑**”选项来优化此设置，以为 [特定包含项或排除项](#a-policy-with-specific-inclusions-or-exclusions) 配置保留策略。 但是，在更改默认设置之前，请注意保留策略在配置为包含或排除邮件时删除邮件的下列影响：
     
@@ -197,7 +197,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 如果确实选择了要包括或排除的收件人，则可以选择通讯组和启用电子邮件的安全组。 在后台，这些组会在配置时自动展开，以选择组内用户的邮箱。 如果这些组的成员身份稍后发生更改，也不会自动更新现有保留策略。
 
-有关在为 Exchange 配置保留设置时包括和排除哪些邮箱项目的详细信息，请参阅[保留和删除哪些内容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+有关在为 Exchange 配置保留设置时包括和排除哪些邮箱项目的详细信息，请参阅[保留和删除哪些内容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)。
 
 **Exchange 公用文件夹** 位置将保留设置应用于所有公共文件夹，并且不能在文件夹或邮箱级别应用。
 

@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aaf30aa5f598fffc5f8f53fc92fef5571b3c851b0bd9e48ef3ca8b60ad9e5e43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 17b850cb26e9743afc807e3d72e3067eec2c7bd1
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863253"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256890"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
@@ -48,7 +48,7 @@ ms.locfileid: "53863253"
 
 ## <a name="prioritize-incidents"></a>确定事件优先级
 
-在快速启动 Microsoft 365 Defender 门户&事件>事件和事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365 Defender **>** 门户&事件&事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
@@ -93,7 +93,7 @@ ms.locfileid: "53863253"
   
 - 解决事件
 
-  在修复事件后关闭它。
+  在修复事件后关闭该事件。
   
 - 设置其分类和确定
 
@@ -124,7 +124,7 @@ ms.locfileid: "53863253"
 ## <a name="advanced-hunting"></a>高级搜寻
 
 > [!NOTE]
-> 在我们演示高级搜寻模拟之前，请观看以下视频，了解高级搜寻概念，查看可在门户中查找它的地方，并了解它可以如何帮助你执行安全操作。
+> 在我们演示高级搜寻模拟之前，请观看以下视频了解高级搜寻概念，查看可在门户中查找它的地方，并了解它如何帮助你执行安全操作。
 
 <br>
 
@@ -149,7 +149,7 @@ ms.locfileid: "53863253"
 
 3. 配置测试设备：
 
-    a. 确保使用的是 Windows 10 1903 或更高版本。
+    a. 确保使用的是 Windows 10版本 1903 或更高版本。
 
     b. 将测试设备加入测试域。
 
@@ -159,7 +159,7 @@ ms.locfileid: "53863253"
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（如果<i></i>) ）或Office文档类型（如 Word 文件）。 <i> </i>
+1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（如果) ）或 Office 文档类型（如 Word 文件）。 <i> </i> <i></i>
 
 2. 打开从设备发送的电子邮件，如搜寻环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
@@ -167,9 +167,9 @@ ms.locfileid: "53863253"
 
 1. 打开Microsoft 365 Defender[门户](https://security.microsoft.com/)。
 
-2. 从导航窗格中，选择"搜寻 **>高级搜寻"。**
+2. 从导航窗格中，选择"搜寻>**高级搜寻"。**
 
-3. 生成一个查询，该查询从收集电子邮件事件开始。
+3. 构建一个查询，该查询从收集电子邮件事件开始。
 
    1. 选择 **"查询>新建"。**
 
@@ -211,7 +211,7 @@ ms.locfileid: "53863253"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包括有关附件 (，例如：文件名、哈希) 到结果集。 为此，请加入 **EmailAttachmentInfo** 表。 要用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
+5. 接下来，包含有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp**"，有助于确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 
@@ -222,9 +222,9 @@ ms.locfileid: "53863253"
    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
    ```
 
-6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找在终结点上发生的 **DeviceFileEvents** (文件操作，) 哈希。 此处的常用字段是附件的 SHA256 哈希。
+6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找针对该哈希 (终结点上发生的 **DeviceFileEvents**) 文件操作。 此处的常用字段是附件的 SHA256 哈希。
 
-   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、在此例中 (已执行哪些操作、已筛选为仅包括 FileCreated) 事件和存储文件的位置。 还将包含与进程关联的帐户名称。
+   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、 (在这种情况下已执行哪些操作、已筛选为仅包括 FileCreated) 事件和存储文件的位置。 还将包含与进程关联的帐户名称。
 
    ```console
    EmailEvents
@@ -265,7 +265,7 @@ ms.locfileid: "53863253"
 
 2. 使用允许安全团队了解警报的信息、生成警报的原因以及预期他们执行哪些操作，填写必填字段。
 
-   ![可在其中定义警报详细信息的创建检测规则页示例](../../media/mtp/fig23.png)
+   ![可在其中定义警报详细信息的创建检测规则页面示例](../../media/mtp/fig23.png)
 
    确保清楚填写字段，以帮助向下一位用户告知有关此检测规则警报的明智决定
 
@@ -283,7 +283,7 @@ ms.locfileid: "53863253"
 
    对于此试点，你可能希望将此规则限制为生产环境中的测试设备的子集。
 
-6. 选择 **创建**。 然后，从 **导航面板中选择** "自定义检测规则"。
+6. 选择“**创建**”。 然后，从 **导航面板中选择** "自定义检测规则"。
 
    ![菜单中的"自定义检测规则"选项示例](../../media/mtp/fig27a.png)
 

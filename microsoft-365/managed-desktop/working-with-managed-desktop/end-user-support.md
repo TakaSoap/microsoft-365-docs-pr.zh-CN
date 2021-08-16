@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9314b1b99afeed1738d03a5f11c513166c37dfa002784b21d3c3b461183b0077
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803424"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256664"
 ---
 # <a name="getting-help-for-users"></a>获取针对用户的帮助
 
@@ -27,7 +27,7 @@ ms.locfileid: "57803424"
 
 在请求提升对设备的访问权限之前，最好查看最适合的操作。
 
-- **典型** 操作是此过程的目的，在解决设备问题时，将定期Microsoft 托管桌面操作。 示例包括：
+- **典型** 操作是此过程的目的，在解决设备问题时将定期Microsoft 托管桌面操作。 示例包括：
     - 提升内置系统疑难解答程序、命令提示符或Windows PowerShell
     - 业务线应用程序疑难解答
     - 使用解决方法更正应按设计正常运行 (如 BitLocker 激活或系统时间不更新) 
@@ -35,7 +35,7 @@ ms.locfileid: "57803424"
 
 - **不建议的操作** 包括：
     - 安装软件或浏览器
-    - 在外部安装驱动程序Windows设置，包括适用于外围设备的驱动程序
+    - 在外部安装驱动程序Windows设置，包括用于外设的驱动程序
     - 安装.msi或.exe文件
     - 安装Windows功能
 
@@ -71,7 +71,7 @@ ms.locfileid: "57803424"
     - **说明**：添加可帮助团队了解此问题的其他任何详细信息。 如果需要附加文件，可以在提交后返回请求以完成这一操作。
     - **主要联系人信息**：提供有关如何联系负责与团队合作的主要人员的信息。
 4. 选择“**提交**”。
-5. 重新访问同一门户中的票证以与团队交互。
+5. 重新访问同一门户中的票证，以与团队进行交互。
 
 > [!NOTE]
 > 只有严重性 C 问题可以通过此路径进行升级。 对于其他问题，请与 IT 管理员联系，以通过管理门户提出请求。

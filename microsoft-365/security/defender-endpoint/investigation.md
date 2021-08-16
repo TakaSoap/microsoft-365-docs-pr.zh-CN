@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06fb5c425327156a4acf78e9eb3f6864b2317ff23b31cd90a8aded764cff8d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256790"
 ---
 # <a name="investigation-resource-type"></a>调查资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "53889659"
 
 有关详细信息 [，请参阅自动](automated-investigations.md) 调查概述。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 方法|返回类型|说明
 :---|:---|:---
@@ -59,7 +59,7 @@ id|String|调查实体的标识。
 startTime|DateTime Nullable|创建调查的日期和时间。
 endTime|DateTime Nullable|调查完成的日期和时间。
 cancelledBy|字符串|取消调查的用户/应用程序的 ID。
-investigationState|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
+state|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
 statusDetails|String|有关调查状态的其他信息。
 machineId|String|执行调查的设备 ID。
 computerDnsName|String|执行调查的设备的名称。

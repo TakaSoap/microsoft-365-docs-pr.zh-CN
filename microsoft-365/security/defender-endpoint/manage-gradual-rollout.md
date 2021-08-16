@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: deef2ee379c1804f2ed1d07fc3fbdb2aa04646d2e9b51aa842e12a0afa3e7017
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 56ccdc577c85a91dfbeb22c466251607a330c30f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256726"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>管理 Microsoft Defender 更新的逐步推出过程
 
@@ -42,13 +42,13 @@ ms.locfileid: "53806696"
 功能通过多个组件提供： 
 
 - [终结点检测&响应](overview-endpoint-detection-response.md) 
-- [具有云保护](microsoft-defender-antivirus-in-windows-10.md#microsoft-defender-antivirus-your-next-generation-protection)[的下一代保护](cloud-protection-microsoft-defender-antivirus.md) 
+- [具有云保护](microsoft-defender-antivirus-windows.md)[的下一代保护](cloud-protection-microsoft-defender-antivirus.md) 
 - [攻击面减少](overview-attack-surface-reduction.md)
 
 使用逐步发布过程每月发布一次更新。 此过程有助于启用早期故障检测，以在影响发生时捕获影响，并快速在更大推出前解决它。 
 
 > [!NOTE]
-> 若要详细了解如何控制日常定义更新，请参阅计划Microsoft Defender 防病毒[定义更新 - Windows安全|Microsoft Docs](manage-protection-update-schedule-microsoft-defender-antivirus.md)。定义更新确保下一代保护可以抵御新威胁，即使云提供的保护对终结点不可用。
+> 若要详细了解如何控制日常安全智能更新，请参阅计划Microsoft Defender 防病毒[保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)。 更新可确保下一代保护可以抵御新威胁，即使云提供的保护对终结点不可用。
 
 ## <a name="microsoft-gradual-rollout-model"></a>Microsoft 逐步推出模型
 
@@ -67,7 +67,7 @@ ms.locfileid: "53806696"
 > [!NOTE]
 > 在规划自己的逐步发布时，请确保始终有一些设备订阅到预览频道和分步频道。 这将为组织和 Microsoft 提供防止或查找并修复特定于你的环境的问题的机会。
 
-例如，对于通过 WSUS) 或 Microsoft Endpoint Configuration Manager (MECM) 接收更新的计算机，所有 Windows 更新可以使用更多选项，包括适用于终结点的 Microsoft Defender 选项。 Windows Server Update Services (
+对于通过 WSUS) Windows Server Update Services (或 Microsoft Endpoint Configuration Manager (MECM) 接收更新的计算机，所有 Windows 更新都提供了更多选项，包括适用于终结点的 Microsoft Defender 的选项。
 
 - 若要详细了解如何使用 WSUS、MECM 等解决方案管理更新的分发和应用程序，请参阅管理 Microsoft Defender 防病毒 更新和应用基线 - Windows[安全|Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates)。
 
@@ -79,23 +79,23 @@ ms.locfileid: "53806696"
 
 以下更新频道可用：
 
-| 频道名称  | 说明  | 应用程序  |
+| 频道名称  | 描述  | 应用程序  |
 |-|-|-|
 | Beta 渠道 - 预发布  | 在其他人之前测试更新  | 设置为此频道的设备将是第一个接收新每月更新的设备。 选择 Beta 渠道以参与识别问题并报告给 Microsoft。 默认情况下，Windows预览体验计划中的设备订阅到此频道。 仅在测试环境中使用。  |
 | 当前频道（预览）  | 在逐步发布 **期间提前获取** 当前频道更新  | 在逐步发布周期中，将最早向设置为此频道的设备提供更新。 建议用于预生产/验证环境。  |
-| 当前频道 (分步)   | 在逐步发布期间获取当前频道更新  | 设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。  |
-| Current Channel (Broad)  | 在逐步发布结束时获取更新  | 仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (大约 10-100%) 。  |
-|  (默认)   |   | 如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期内自动保持最新。 适用于大多数设备。  |
+| 当前频道 (阶段)   | 在逐步发布期间获取当前频道更新  | 设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。  |
+| Current Channel (Broad)  | 在逐步发布结束时获取更新  | 仅在逐步发布周期完成后，才向设备提供更新。 建议应用于生产总体中的一组广泛的设备 (约 10-100%) 。  |
+|  (默认)   |   | 如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期中自动保持最新。 适用于大多数设备。  |
 
-### <a name="update-channels-for-daily-definition-updates"></a>更新每日定义更新的频道
+### <a name="update-channels-for-daily-updates"></a>每日更新的更新频道
 
-还可以将计算机分配给频道，以定义接收每日定义更新的节奏。 请注意，与每月进程不同，没有 Beta 渠道，并且此逐步发布周期每天发生多次。
+还可以将计算机分配给频道，以定义接收每日更新的节奏。 请注意，与每月进程不同，没有 Beta 渠道，并且此逐步发布周期每天发生多次。
   
-| 频道名称  | 说明  | 应用程序  |
+| 频道名称  | 描述  | 应用程序  |
 |-|-|-|
-| 当前频道 (分步)   | 在逐步发布期间获取当前频道更新  | 设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。  |
+| 当前频道 (阶段)   | 在逐步发布期间获取当前频道更新  | 设备将在逐步发布周期的稍后阶段提供更新。 建议应用于设备总体中具有代表性的较小部分 (大约 10%) 。  |
 | Current Channel (Broad)  | 在逐步发布结束时获取更新  | 设备将在逐步发布周期后提供更新。 最适合仅接收有限更新的数据中心计算机。 注意：此设置适用于所有 Defender 更新。  |
-|  (默认)   |   | 如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期内自动保持最新。 适用于大多数设备  |
+|  (默认)   |   | 如果禁用或不配置此策略，设备将保留在当前频道 (默认) ：在逐步发布周期中自动保持最新。 适用于大多数设备  |
 
 > [!NOTE]
 > 如果你希望强制更新最新的签名，而不是利用时间延迟，你将需要首先删除此策略。

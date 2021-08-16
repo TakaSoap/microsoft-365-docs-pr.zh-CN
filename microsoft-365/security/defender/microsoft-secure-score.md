@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全功能分数
-description: 介绍安全中心中的 Microsoft Microsoft 365分数、如何改善安全状态以及管理员期望的安全状态。
-keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
+description: 介绍 Microsoft 安全分数Microsoft 365 Defender门户、如何改善安全状态以及安全管理员期望的内容。
+keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， Microsoft 365 Defender门户， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9d922ed8fbcbace8cc804e33e00af8939c7ff5f0ac67610303deab2095ce326e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cf1130e13b90c60334b8af76f31d232a084f37a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893743"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256859"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在安全中心内 https://security.microsoft.com/securescore 找到[Microsoft 365。](overview-security-center.md)
+Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](overview-security-center.md)。
 
-执行安全功能分数建议可保护组织免遭威胁。 从安全中心内Microsoft 365仪表板，组织可以监视并处理其Microsoft 365、应用和设备的安全性。
+执行安全功能分数建议可保护组织免遭威胁。 从企业门户中的Microsoft 365 Defender仪表板，组织可以监视并处理其Microsoft 365标识、应用和设备的安全性。
 
 安全功能分数可帮助组织：  
 
@@ -56,7 +56,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 有些改进操作仅在完全完成时提供分数。 如果为某些设备或用户完成了这些操作，一些会提供部分分数。 如果无法或不希望评估其中一项改进操作，可以选择接受风险或剩余风险。
 
-如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进集，而不考虑许可证版本、订阅或计划。 这样，你可以了解安全性最佳实践并提升分数。 无论组织拥有特定产品的许可证是什么，你的绝对安全状况（以安全分数表示）都保持不变。 请记住，安全性应该与可用性相平衡，同时请注意不是每个建议都适合您的环境。
+如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进集，无论许可证版本、订阅或计划如何。 这样，你可以了解安全性最佳实践并提升分数。 无论组织拥有特定产品的许可证是什么，你的绝对安全状况（以安全分数表示）都保持不变。 请记住，安全性应该与可用性相平衡，同时请注意不是每个建议都适合您的环境。
 
 你的分数会实时更新，以反映可视化和改进操作页面中显示的信息。 安全分数还会每天同步一次，以接收有关每个操作所得分的系统数据。
 
@@ -71,7 +71,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或启用特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置百分比表示。
 
-例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的用户（共 100 个）中，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 pts) 。
+例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的总数为 100 个用户，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 pts) 。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
@@ -92,7 +92,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
-- 确保所有用户都可以在 9 个点 (安全访问) 
+- 确保所有用户都可以完成多重身份验证， (9 个点) 
 - 管理角色需要 MFA (10) 
 - 启用策略以阻止 7 (旧身份验证) 
 
@@ -101,7 +101,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 ## <a name="required-permissions"></a>所需权限
 
-要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
+要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之一Azure Active Directory。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 
@@ -125,7 +125,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 ## <a name="risk-awareness"></a>风险感知
 
-Microsoft 安全分数是安全状态的数字摘要，基于系统配置、用户行为和其他与安全相关的度量。 它不是系统或数据泄露的可能性的绝对度量。 而是表示在 Microsoft 环境中采用安全控件的程度，可帮助消除泄露风险。 任何联机服务都不应受到安全漏洞的影响，安全分数不应被解释为防止以任何方式出现安全漏洞的保证。
+Microsoft 安全分数是安全状态的数字摘要，基于系统配置、用户行为和其他与安全相关的度量。 它不是系统或数据泄露的可能性的绝对度量。 而是表示在 Microsoft 环境中采用安全控件的程度，可帮助消除泄露风险。 任何联机服务都不应受到安全漏洞的影响，安全分数不应被解释为防止任何形式的安全漏洞的保证。
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 

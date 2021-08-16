@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
-ms.translationtype: HT
+ms.openlocfilehash: 79795b6166b5a0b513ab4558effe509cc6637849
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256688"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -210,6 +210,8 @@ ms.locfileid: "53226427"
 
 ![预览体验计划风险管理策略运行状况](../media/insider-risk-policy-health.png)
 
+### <a name="notification-messages"></a>通知消息
+
 使用下表详细了解解决潜在问题的建议和警告通知及操作。
 
 |**通知消息**|**策略模板**|**原因/请尝试此操作进行修复**|
@@ -380,7 +382,7 @@ ms.locfileid: "53226427"
 7. 若要导入要添加到策略的用户列表，请选择" **导入** .csv（逗号分隔值）文件。 该文件必须采用以下格式，并且您必须在文件中列出用户主体名称：
 
     ```csv
-    用户主体名称
+    user principal name
     user1@domain.com
     user2@domain.com
     ```

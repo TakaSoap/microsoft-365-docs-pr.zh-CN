@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5b0add9b48920b04cedac78323f6ecbdd99d244afc878baeddb00944d032fa1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bf04b6bedf1169a2b892873517793010653b8bfd
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256753"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
 
 若要运行 Linux 扫描，请参阅支持 [的命令](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
 
-Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。
+Linux (和 Unix) 具有一个称为 **crontab** (的工具，) 任务计划程序工具可用于运行计划任务。
 
 ## <a name="pre-requisite"></a>先决条件
 
@@ -93,7 +93,7 @@ CRON_TZ=America/Los_Angeles
 
 若要查看 cron 作业，请键入 `sudo crontab -l`
 
-:::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp":::
 
 #### <a name="to-inspect-cron-job-runs"></a>检查 cron 作业运行
 
