@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 75c8ee6bc736bbe53638cb9040cf2bb68e333201
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f32b066d2816919687924a775b7e261ca03cb7b0253ebb9ceea2422071ec5a59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650183"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833040"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 

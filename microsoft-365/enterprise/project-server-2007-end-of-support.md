@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 2017 年 10 月 10 日，Project Server 2007、Project Portfolio Server 和 Project 2007 的支持结束。 使用本文现在规划升级。
-ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3ac7a40ec9fbaa8e495f9dd9321712b77aaf5b4b4b171c391593420eda45ddd7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904703"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 停止提供支持路线图
 

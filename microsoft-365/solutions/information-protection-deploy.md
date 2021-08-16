@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 针对数据隐私Microsoft 365如 GDPR 和加州消费者隐私法案 (CCPA) （包括 Microsoft Teams、SharePoint 和电子邮件）配置信息保护。
-ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0d0c0e4ed98ac2fefb7dc7abb1c1477adb93e994e66c86b2ed1a5a8fd88cb4ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833042"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为数据隐私法规部署信息保护与Microsoft 365
 
@@ -125,7 +125,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解对信息保护非常�
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-security-info-overview/introduction/)
 
-#### <a name="identity-and-access"></a>身份和访问控制
+#### <a name="identity-and-access"></a>身份和访问
 
 |培训：|使用 Azure Active Directory 提供标识和访问保护|
 |:---|:---|

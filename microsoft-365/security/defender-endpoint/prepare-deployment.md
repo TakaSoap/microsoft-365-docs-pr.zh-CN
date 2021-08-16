@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 58e5c388ceb2fa03782c073bc0802da5b6d06564
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 994e192be3e3570734cc88ad815fee5499bfaca8acb9a6c7d6d5934365673ace
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898068"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender for Endpoint 部署
 
@@ -60,7 +60,7 @@ ms.locfileid: "53651035"
 
 -   I = 已通知此项目
 
-| 名称                 | 角色                                                                                                                                                                                                          | 操作 |
+| 名称                 | 角色                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **CISO (** 首席) 一名执行代表，他作为新技术部署 *的组织内部发起人。*                                                  | SO     |
 | 输入名称和电子邮件 | **网络防御运营中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*       | SO     |

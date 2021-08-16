@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 对 SharePoint Server 2007 的支持已于 2017 年 10 月结束。 本文介绍升级、迁移和支持选项。
-ms.openlocfilehash: 224b0af90d6a314aa15a2c0dab7b60626e5abde8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de7469e40ac377cd49384c5d67cf9ac26273f4ace74ab165c6aa38835afa8444
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885071"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 停止提供支持路线图
 
@@ -71,7 +71,7 @@ SharePoint与大多数 Microsoft 产品一样，服务器具有支持生命周�
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-你的第一个停止位置应该是 [产品生命周期网站](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 如果你有一个过期本地 Microsoft 产品，请检查其支持结束日期，以便你有一年左右的时间计划升级或迁移。 选择下一步时，请考虑哪些产品功能足够好、更好、最好。 下面是一个示例： 
+你的第一个停止位置应该是 [产品生命周期网站](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 如果你有一个过期本地 Microsoft 产品，请检查其支持结束日期，以便你有一年左右的时间计划升级或迁移。 选择下一步时，请考虑哪些产品功能足够好、更好、最好。 示例如下： 
   
 |**Good**|**更好**|**最好**|
 |:-----|:-----|:-----|

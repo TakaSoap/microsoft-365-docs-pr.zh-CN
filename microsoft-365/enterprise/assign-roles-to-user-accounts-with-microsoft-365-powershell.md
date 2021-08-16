@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 本文将了解如何快速轻松地使用 PowerShell for Microsoft 365向用户帐户分配管理员角色。
-ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef02c57037e17d17455ea19e78beefd221fc678386fe1fbb68f465da0fe0df36
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904907"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 将Microsoft 365角色分配给用户帐户
 
@@ -34,7 +34,7 @@ ms.locfileid: "50905376"
 通过使用 PowerShell for Microsoft 365，可以轻松地将角色分配给Microsoft 365。
 
 >[!Note]
->了解如何使用[管理中心向](../admin/add-users/assign-admin-roles.md)用户帐户Microsoft 365角色。
+>了解如何将[管理员角色分配给](../admin/add-users/assign-admin-roles.md)用户帐户以及Microsoft 365 管理中心。
 >
 >有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >
@@ -48,7 +48,7 @@ ms.locfileid: "50905376"
 接下来，确定角色的名称。 请参阅[管理员角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 >[!Note]
->请注意本文中的说明。 对于 Azure AD 和 PowerShell，Azure Active Directory (角色) 不同。 例如 *，SharePoint中心* 中的 Microsoft 365 管理员角色SharePoint Azure AD PowerShell中的服务管理员。
+>请注意本文中的说明。 对于 Azure AD 和 PowerShell，Azure Active Directory (角色) 不同。 例如，SharePoint *中的* Microsoft 365 管理中心 *管理员SharePoint* Azure AD PowerShell 中的服务管理员。
 >
 
 接下来，填写登录名和角色名称并运行以下命令：
@@ -156,7 +156,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayNam
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    此命令将列出用户帐户的 UPN，按 UPN 排序，一次列出一个屏幕。 可以使用 Where **cmdlet** 筛选列表。 下面是一个示例：
+    此命令将列出用户帐户的 UPN，按 UPN 排序，一次列出一个屏幕。 可以使用 Where **cmdlet** 筛选列表。 示例如下：
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More

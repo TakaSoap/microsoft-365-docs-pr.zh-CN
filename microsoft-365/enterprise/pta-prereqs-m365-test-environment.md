@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附传递身份验证的先决条件。
-ms.openlocfilehash: f257b85672a1a1b27f600d145b1f9f3296b21980
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 530adf4e8b5b470f322cb3f0316151771ec30cf80a3a409caa20e5871b747883
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199845"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904708"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
 

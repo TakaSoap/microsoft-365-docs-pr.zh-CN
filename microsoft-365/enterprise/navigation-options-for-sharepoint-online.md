@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文介绍在 SharePoint Online 中启用了 SharePoint Publishing 的导航SharePoint网站。
-ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4cb0406fc9f4d1496cb28282427c38f83c3ea1eac31aecbf6e33f7247660be2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904972"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 

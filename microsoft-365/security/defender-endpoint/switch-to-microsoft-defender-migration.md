@@ -24,12 +24,12 @@ ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: cff0810a4469d3c2d9ff2fe0fe5100b7a37408ae
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: eeb2a64c82d5edec57e7f53a00d8dcedcfadc2900161462b826392a1fea4c2be
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53454741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897733"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 

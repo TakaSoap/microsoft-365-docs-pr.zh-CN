@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: b2a6ee7c3f3ea2fb31b31d2f1db178bfd9847fbc
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 0aedcdc310b10218afbfd6253dc1c02117f3428eafc5ffd668f35489d9bc2e14
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898095"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>运行并查看 Microsoft Defender 脱机扫描的结果
 
@@ -57,7 +57,7 @@ Microsoft Defender 脱机版中Windows 10具有相同的硬件要求Windows 10�
 Microsoft Defender 脱机版使用终结点上提供的最新保护更新;每当更新时，Windows Defender 防病毒更新。 
 
 > [!NOTE]
-> 在运行脱机扫描之前，应尝试更新 Microsoft Defender AV 保护。 可以使用组策略强制更新，或者通常将更新部署到终结点，也可以手动下载并安装来自 Microsoft 恶意软件保护中心[的最新保护Microsoft 恶意软件保护中心。](https://www.microsoft.com/security/portal/definitions/adl.aspx)
+> 在运行脱机扫描之前，应尝试更新 Microsoft Defender AV 保护。 可以使用组策略强制更新，或者通常将更新部署到终结点，也可以手动下载并安装来自 Microsoft 恶意软件防护中心[的最新保护更新](https://www.microsoft.com/security/portal/definitions/adl.aspx)。
 
 有关详细信息[，请参阅](manage-protection-updates-microsoft-defender-antivirus.md)Microsoft Defender 防病毒安全智能更新主题。
 

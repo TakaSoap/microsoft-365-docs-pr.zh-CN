@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 组、团队和团队的生命周期结束Yammer。
-ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9532fb7f7c57cf883a0c4d989c5372239eab1c9666890dabfa598cacdbb652cf
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53833011"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和团队的生命周期结束Yammer
 
@@ -58,7 +58,7 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 
 团队和组所有者以及 IT 管理员在删除组或团队时需要考虑三个关键方面。
 
-**Content**
+**内容**
 
 团队不再存在后，是否需要保留内容？ 是否足以依赖保留功能Microsoft 365，还是应用和服务中无法提供保留的一些内容？ 是否需要保留内容以用于记录管理、存档或将来使用和参考目的？
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: 本文将了解如何使用 PowerShell 为用户禁用对 Microsoft 365 服务的访问权限。
-ms.openlocfilehash: 292bda3b380b9ce3947b2427288da4f16198bb51
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 32acf601bdaad839855671e234c839409377a96e0a960b8a2a17e8a32edf4878
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904894"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>使用 PowerShell Microsoft 365访问服务
 

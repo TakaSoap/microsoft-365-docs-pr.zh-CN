@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供有关保护全局管理员对订阅Microsoft 365的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c929651f3e70a1aeef16cdf48d853d675820833
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 97ef59ff9b08ba9d763b18381b76a697de2e4338f28fbfb3799eba53d89e9c09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904691"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保护你的Microsoft 365全局管理员帐户
 
@@ -52,7 +52,7 @@ Microsoft 提供了可帮助保护组织的功能，但这些功能仅在你使�
 
 只有相对较少的管理任务（如向用户帐户分配角色）需要全局管理员权限。 因此，不要使用已分配有全局管理员角色的日常用户帐户，而是执行以下步骤：
   
-1. 确定已分配全局管理员角色的用户帐户集。 可以在管理中心或以下 Azure (Active Microsoft 365 Azure AD) Directory PowerShell for Graph 命令进行此操作：
+1. 确定已分配全局管理员角色的用户帐户集。 可以在以下 Azure Active Microsoft 365 管理中心 Azure AD (Directory PowerShell for) 命令中Graph此操作：
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -172,7 +172,7 @@ MFA (多重) 需要帐户名称和密码之外的其他信息。 Microsoft 365�
 
 在服务器上运行的 SIEM 软件对由应用程序和网络硬件创建的安全警报和事件执行实时分析。 若要允许 SIEM 服务器在其分析和Microsoft 365功能中包括安全警报和事件，请将 Azure AD 集成到 SEIM 中。 请参阅[Azure 日志集成](/azure/security/security-azure-log-integration-overview)简介。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 如果要为订阅设置标识Microsoft 365，请参阅：
 

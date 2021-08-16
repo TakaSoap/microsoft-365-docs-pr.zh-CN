@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 6b8f98441c7d727984bde8775dea496a9324d50c
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 26b05cac4db336a416e85367f04725ad9097065e3afc0afddb6fcbe90cd35e86
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904871"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 

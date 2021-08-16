@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 讨论为什么网络优化对于 SaaS 服务很重要、Microsoft 365目标，以及 SaaS 需要与其他工作负载不同的网络的方式。
-ms.openlocfilehash: d1a2b79f6e4042b97ec5a31d0ff92175baa1218e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c1d4b3f661cc10723b9419687ed5f5acbefeb8dedb39963992290ecba289aec
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904931"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 网络连接概述
 

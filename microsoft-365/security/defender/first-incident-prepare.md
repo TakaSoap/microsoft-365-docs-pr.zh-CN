@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: aa4080c6cfbbf0af93587e00b9b6d7489e6ed2da0e3fde1a0be8f84595026b7f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897866"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>为第一个事件准备安全状态
 
@@ -76,8 +76,8 @@ Microsoft 365 Defender 组件可以显示违反为建立零信任条件访问策
 - 活动威胁参与者及其活动
 - 热门和新的攻击技术
 - 关键漏洞
-- 常见的攻击面
-- 流行恶意软件
+- 常见攻击面
+- 流行的恶意软件
 
 威胁分析还会查看你的配置和警报，以确定你面临的风险以及是否有适用于报告的活动警报。
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender 组件可以显示违反为建立零信任条件访问策
 
 安排时间，定期查看安全中心中Microsoft 365分析[](threat-analytics.md)"部分。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 1：了解如何对事件分类和分析](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 

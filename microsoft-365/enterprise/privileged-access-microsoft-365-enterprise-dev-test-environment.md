@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南为企业测试环境启用Microsoft 365访问管理。
-ms.openlocfilehash: e9684ebd2aa147049dadfbda9408257ff801aff0
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 334680092becee4d10784b1f48d5b39ec5b94405d9d8afb59d1e2060c218a017
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904763"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365特权访问管理
 
@@ -29,6 +29,7 @@ ms.locfileid: "50126413"
 本文介绍如何配置特权访问管理以提高企业测试Microsoft 365的安全性。
 
 配置特权访问管理包括三个阶段：
+
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [阶段 2：配置特权访问管理](#phase-2-configure-privileged-access-management)
 - [阶段 3：验证提升和特权任务需要审批](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
@@ -67,48 +68,35 @@ ms.locfileid: "50126413"
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>测试执行特权访问策略中未定义的任务的能力
 
-首先，使用Exchange环境中配置为全局管理员的用户凭据连接到 Management PowerShell，并尝试创建新的日记规则。 [New-JournalRule](/powershell/module/exchange/new-journalrule)任务当前未在组织的特权访问策略中定义。
+首先，Exchange环境中配置了 Exchange 角色管理角色的用户凭据连接到 Exchange Management PowerShell，并尝试创建新的日记规则。 [New-JournalRule](/powershell/module/exchange/new-journalrule)任务当前未在组织的特权访问策略中定义。
 
-1. 在本地计算机上，使用测试环境的全局管理员帐户打开并Exchange Online **Microsoft Corporation** Microsoft Exchange Online 远程 PowerShell 模块的远程  >  **PowerShell** 模块。
-
-1. 在 Exchange Management PowerShell 中，为组织创建新的日记规则：
+1. 在本地计算机上，使用测试环境的 Exchange 角色管理角色凭据打开并登录 **Microsoft Corporation** Microsoft Exchange Online 远程 PowerShell 模块的 Exchange Online  >  **远程 PowerShell** 模块。
+2. 在 Exchange Management PowerShell 中，为组织创建新的日记规则：
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
    ```
 
-1. 查看新日记规则已成功在 Exchange PowerShell 中创建。
+3. 查看新日记规则已成功在 Exchange PowerShell 中创建。
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>为任务创建新的特权访问New-JournalRule策略
 
 >[!NOTE]
 >如果尚未完成本指南阶段 2 中的步骤 1 和步骤 2，请确保按照步骤创建名为"Privilege Access Approvers"的审批者组，以在测试环境中启用特权访问。
 
-1. 使用适用于测试[Microsoft 365](https://admin.microsoft.com)全局管理员帐户的凭据登录到管理中心。
-
+1. 使用凭据[Microsoft 365 管理中心](https://admin.microsoft.com)测试环境的 Exchange 角色管理角色登录服务器。
 2. In the Admin Center， go to **设置**  >  **Security & Privacy**  >  **Privileged access**.
-
 3. 选择 **"管理访问策略和请求"。**
-
 4. 选择 **"配置策略**"，然后选择"**添加策略"。**
-
 5. 从下拉列表字段中，选择或输入以下值：
 
-    **策略类型**：任务
-
-    **策略范围**: Exchange
-
-    **策略名称**：新建日记规则
-
-    **审批类型**：手动
-
-    **审批组**：特权访问审批者
+    **策略类型**： 任务 **策略作用域**： Exchange **策略名称**： 新日记规则 **审批类型**： 手动 **审批组**： 特权访问审批者  
 
 6. 选择“**创建**”，然后选择“**关闭**”。 可能需要几分钟时间，策略才能完全配置和启用。 在测试下一步中的审批要求之前，请确保留出时间使策略完全启用。
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特权访问策略中定义的New-JournalRule任务的测试审批要求
 
-1. 在本地计算机上，使用测试环境的全局管理员帐户打开并Exchange Online **Microsoft Corporation** Microsoft Exchange Online 远程 PowerShell 模块的远程  >  **PowerShell** 模块。
+1. 在本地计算机上，使用测试环境的 Exchange 角色管理角色凭据打开并登录 **Microsoft Corporation** Microsoft Exchange Online 远程 PowerShell 模块的 Exchange Online  >  **远程 PowerShell** 模块。
 
 2. 在 Exchange Management PowerShell 中，为组织创建新的日记规则：
 
@@ -128,7 +116,7 @@ ms.locfileid: "50126413"
 
 ### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>请求访问权限以使用"日记"任务创建新的日记New-JournalRule规则
 
-1. 使用测试[Microsoft 365](https://admin.microsoft.com)全局管理员帐户登录到管理中心。
+1. 使用凭据[Microsoft 365 管理中心](https://admin.microsoft.com)测试环境的 Exchange 角色管理角色登录服务器。
 
 2. In the Admin Center， go to **设置**  >  **Security & Privacy**  >  **Privileged access**.
 
@@ -136,48 +124,38 @@ ms.locfileid: "50126413"
 
 4. 选择 **"新建请求"。** 从下拉字段中，为组织选择适当的值：
 
-    **请求类型**： 任务
-
-    **请求范围**: Exchange
-
-    **请求：** 新建日记规则
-
-    **持续时间 (小时) ：** 2
-
-    **注释：** 请求创建新日记规则的权限
+    **请求类型**： 任务请求 **范围**： Exchange 请求 **：** 新建日记规则持续时间 (**小时)**： **2** 注释 ： 请求创建新日记规则的权限  
 
 5. 选择 **"保存"，** 然后选择"关闭 **"。** 您的请求将通过电子邮件发送到审批者组。
 
 ### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>批准新建日记规则的特权访问请求
 
-1. 使用测试[Microsoft 365](https://admin.microsoft.com)环境中用户 3 的凭据登录 (测试环境中"特权访问审批者"安全组的成员) 。
+1. 使用测试[环境中](https://admin.microsoft.com)Microsoft 365 管理中心用户 3 的凭据 (测试环境中"特权访问审批者"安全组的成员登录到) 。
 
 2. In the Admin Center， go to **设置**  >  **Security & Privacy**  >  **Privileged access**.
 
 3. 选择 **"管理访问策略和请求"。**
 
-4. 选择挂起的请求，然后选择" **批准** "以授予对全局管理员帐户的访问权限以创建新的日记规则。 请求用户 (全局管理员帐户) 将收到一封电子邮件确认，确认已授予批准。
+4. 选择挂起的请求，然后选择" **批准** "以授予对用户帐户的访问权限以创建新的日记规则。 请求 (用户的帐户) 将收到一封电子邮件确认，确认已授予批准。
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>测试创建新的日记规则，该规则具有已批准用于该任务的特权New-JournalRule规则
 
-1. 在本地计算机上，使用测试环境的全局管理员帐户打开并Exchange Online **Microsoft Corporation** Microsoft Exchange Online 远程 PowerShell 模块的远程  >  **PowerShell** 模块。
+1. 在本地计算机上，使用测试环境的 Exchange 角色管理角色凭据打开并登录 **Microsoft Corporation** Microsoft Exchange Online 远程 PowerShell 模块的 Exchange Online  >  **远程 PowerShell** 模块。
 
-1. 在 Exchange Management PowerShell 中，为组织创建新的日记规则：
+2. 在 Exchange Management PowerShell 中，为组织创建新的日记规则：
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-1. 查看新日记规则已成功在 Exchange PowerShell 中创建。
+3. 查看新日记规则已成功在 Exchange PowerShell 中创建。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 探索 [测试环境中](m365-enterprise-test-lab-guides.md#information-protection) 的其他信息保护特性和功能。
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
-
-[Microsoft 365 企业版概述](microsoft-365-overview.md)
-
-[适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)
+- [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
+- [Microsoft 365 企业版概述](microsoft-365-overview.md)
+- [适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)

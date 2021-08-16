@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训其用户模拟网络钓鱼Office 365。
 ms.technology: mdo
-ms.openlocfilehash: d82e7544e6795e4514cf1949645107c53fc69c61
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 9bed87402830981f355bb348b359a83f6c688ad59ff47493c5162350cd9e7297
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897796"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
@@ -27,11 +27,11 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
-若要启动模拟网络钓鱼攻击，请打开 Microsoft 365 Defender 门户 () ，转到电子邮件 <https://security.microsoft.com/> &**协作** 攻击 \> **模拟培训**，然后切换到 **[模拟](https://security.microsoft.com/attacksimulator?viewid=simulations)** 选项卡。
+若要启动模拟网络钓鱼攻击，请打开 Microsoft 365 Defender 门户 () ，转到电子邮件 & 协作攻击模拟培训，然后切换到 <https://security.microsoft.com/>  \> **[模拟](https://security.microsoft.com/attacksimulator?viewid=simulations)** 选项卡。
 
 在 **"模拟"** 下，选择 **"+ 启动模拟"。**
 
-![在 Defender 门户中Microsoft 365模拟按钮](../../media/attack-sim-preview-launch.png)
+![启动模拟门户中的Microsoft 365 Defender按钮](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > 在模拟创建期间的任何时间点，你都可以保存并关闭，以在以后继续配置模拟。
@@ -49,7 +49,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 > [!TIP]
 > 单击 **每种技术** 描述中的"查看详细信息"将显示该技术的进一步信息和模拟步骤。
 >
-> ![在 Microsoft 365 Defender 门户中攻击模拟培训中凭据收集的模拟步骤](../../media/attack-sim-preview-sim-steps.png)
+> ![在攻击门户中的攻击模拟培训中收集凭据的Microsoft 365 Defender步骤](../../media/attack-sim-preview-sim-steps.png)
 
 选择该技术并单击"下一步"后，为模拟指定名称和说明（可选）。
 
@@ -65,7 +65,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 - **复杂度**（通过 **筛选器提供**）根据有效负载中的指示器数量计算，这些指示器可提示攻击中的目标。 指示器越多，复杂性越低。
 - **Source**（通过 **筛选器提供**）指示有效负载是在租户上创建的，还是 Microsoft 预先存在的有效负载目录的一部分， (全局) 。
 
-![Microsoft 365 Defender 门户中攻击模拟培训内选定的有效负载](../../media/attack-sim-preview-select-payload.png)
+![测试门户中攻击模拟培训Microsoft 365 Defender负载](../../media/attack-sim-preview-select-payload.png)
 
 从列表中选择一个有效负载，以查看有效负载的预览，并提供有关它的其他信息。
 
@@ -79,7 +79,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 - **添加** 用户 ，这允许你利用租户的搜索，以及高级搜索和筛选功能，如面向过去 3 个月内未通过模拟定位的用户。
 
-  ![Microsoft 365 Defender 门户中攻击模拟培训中的用户筛选](../../media/attack-sim-preview-user-targeting.png)
+  ![客户门户中攻击模拟培训中的Microsoft 365 Defender筛选](../../media/attack-sim-preview-user-targeting.png)
 
 - **从 CSV 导入** 允许你导入此模拟的预定义用户集。
 
@@ -94,7 +94,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 > [!NOTE]
 > 如果你选择自己选择课程和模块，你仍然可以看到推荐的内容以及所有可用的课程和模块。
 >
-> ![在 defender 门户的攻击模拟培训中添加Microsoft 365培训](../../media/attack-sim-preview-add-training.png)
+> ![在攻击门户中的攻击模拟培训中添加Microsoft 365 Defender培训](../../media/attack-sim-preview-add-training.png)
 
 在以下步骤中，如果选择自己选择培训，将需要添加培训，并自定义培训登陆页面。 你将能够预览培训登陆页面，并更改其标头和正文。
 
@@ -105,3 +105,6 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 **启用区域感知时区传递** ，以根据员工的区域在工作时间向员工传递模拟攻击邮件。
 
 完成后，单击"下一步 **"** 并查看模拟的详细信息。 单击任何 **部件的** "编辑"可返回并更改需要更改的任何详细信息。 完成后，单击"提交 **"。**
+
+> [!NOTE]
+> 某些商标、徽标、符号、签名和其他源标识符受到当地、州、联邦法律的高度保护。 未经授权使用此类指示器可能会使用户遭受处罚，包括罚款。 虽然这不是一个广泛列表，但其中包括"百科百科"、"Vice Vice"和"一流"（该名称为"一家"）、"FBI"、"社会保险部"、"一家"和"Medic一"、美国国税局和"美国商务部"。 除了这些类别的商标之外，使用和修改任何第三方商标会带来固有风险。 在有效负载中使用自己的商标和徽标的风险较低，尤其是在组织允许使用的情况下。 如果你对创建或配置负载时适合使用或不适合使用的任何进一步问题，应咨询法律顾问。
