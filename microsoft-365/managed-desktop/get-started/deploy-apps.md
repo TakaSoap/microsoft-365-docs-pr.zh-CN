@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8bfc53d46bdcb91c16e9f4a1ddbc8ab3f6dfb47e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 96ad8e55dc4d7bea15da89142d42531ca46c960875b79b8579a3a5e9f0ce31d4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898655"
 ---
 # <a name="deploy-apps-to-devices"></a>将应用部署到设备
 加入应用Microsoft 托管桌面包括向用户设备添加和部署应用。 使用应用门户Microsoft 托管桌面，可以添加和部署应用。 
@@ -80,7 +80,7 @@ ms.locfileid: "50922022"
 应用分配类型 |    组使用    | 示例 Azure AD 名称
 --- | --- | ---
 可用 |  该应用将在应用或公司门户提供。 | MMD – *应用名称* – 可用
-必需 |  应用安装在所选组的设备上。 | MMD – *应用名称* – 必需
+必填 |  应用安装在所选组的设备上。 | MMD – *应用名称* – 必需
 卸载 |  从所选组的设备卸载应用。 | MMD – *应用名称* – 卸载
 
 将用户添加到这些组，以便提供应用、安装应用，或者从他们的 Microsoft 托管桌面 设备中删除该应用。 

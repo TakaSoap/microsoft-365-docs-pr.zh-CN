@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ba376288b759f9a9c331450f3f48c918b0171e51
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 904ea83c6a4a2c8267341ae5fb324c5f2f3678e0c5458720af13f6a932c8c25f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53854003"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for Endpoint 中的误报/漏报
 
@@ -344,7 +344,7 @@ ms.locfileid: "53595686"
 
 Microsoft Defender for Endpoint 提供各种选项，包括针对各种特性和功能微调设置的功能。 如果收到大量误报，请务必查看组织的威胁防护设置。 您可能需要进行一些调整以：
 
-- [云端保护](#cloud-delivered-protection)
+- [云保护](#cloud-delivered-protection)
 - [针对可能不需要的应用程序的修正](#remediation-for-potentially-unwanted-applications)
 - [自动调查和修正](#automated-investigation-and-remediation)
 

@@ -22,27 +22,27 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: 了解如何在管理中心中查看目录同步错误Microsoft 365修复。
-ms.openlocfilehash: 76717fc158aa0cee47f784919f19a295378bbd5b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何在目录中查看目录同步错误和可能的Microsoft 365 管理中心。
+ms.openlocfilehash: 37bd25f46c84f2a4ec26f17accdae034487a4dc91023d798cf3459941136c0a6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885242"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>查看目录中的目录同步Microsoft 365
 
-可以在管理中心内查看Microsoft 365同步错误。 只显示 User 对象错误。 若要查看 PowerShell 错误，请参阅 [使用 DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)标识对象。
+可以在目录同步过程中查看Microsoft 365 管理中心。 只显示 User 对象错误。 若要查看 PowerShell 错误，请参阅 [使用 DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)标识对象。
 
-## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>在管理中心内查看Microsoft 365同步错误
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>查看目录中的目录Microsoft 365 管理中心
 
-若要查看管理中心内Microsoft 365错误：
+若要查看报告记录中的Microsoft 365 管理中心：
   
-1. 使用全局管理员[Microsoft 365](https://admin.microsoft.com)登录管理中心。 
+1. 使用全局管理员[Microsoft 365 管理中心](https://admin.microsoft.com)登录到网站。 
     
 2. 在 **主页** 上，你将看到用户 **管理** 卡。 
     
-    ![管理中心的用户Microsoft 365卡片](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![用户管理卡片Microsoft 365 管理中心](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 3. On the card， choose **Sync errors** under **Azure AD 连接** to see the errors on the **Directory sync errors** page.   
     

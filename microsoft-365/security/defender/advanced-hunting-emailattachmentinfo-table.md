@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c21332ae4c71f78e5ce1f92684d2a1a4cb68618869413ab27bd692aa295bd283
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b38953c5f57b13e7aa13c62da926552c3d45c74b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863435"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247394"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -40,6 +40,9 @@ ms.locfileid: "53863435"
 高级 `EmailAttachmentInfo` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关由 Microsoft Defender for Office 365 处理的电子邮件附件的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
+
+> [!IMPORTANT]
+> 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
@@ -57,6 +60,7 @@ ms.locfileid: "53863435"
 | `ThreatNames` | string | 找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
+| `FileSize` | string | 文件大小（以字节为单位） |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

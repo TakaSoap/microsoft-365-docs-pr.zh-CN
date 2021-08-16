@@ -1,6 +1,6 @@
 ---
 title: 试用 Microsoft Defender for Endpoint
-description: 了解如何运行 Microsoft Defender for Endpoint (MDE) 的试点，包括验证试点组和试用功能。
+description: 了解如何为 Microsoft Defender for Endpoint (MDE) 运行试点，包括验证试点组和试用功能。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6d7ccaa890c8678bf1d02e578f33019208e6d2a9050f286435f913e67831d35d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 682b7729bbfe49a0889065b9cabcae980e031881
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828640"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247370"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>试用 Microsoft Defender for Endpoint
 
@@ -49,14 +49,14 @@ ms.locfileid: "53828640"
 当你看到已载入的设备时，你可以继续尝试功能。 
 
 ## <a name="step-2-try-out-capabilities"></a>步骤 2. 试用功能
-现在，你已完成载入某些设备并验证它们正在向服务报告，请通过尝试现成可用的强大功能来熟悉产品。
+现在，你已完成载入某些设备并验证它们正在向服务报告，通过尝试现成可用的强大功能来熟悉产品。
 
 在试点期间，你可以轻松开始尝试一些功能以查看产品运行情况，而无需完成复杂的配置步骤。
 
 让我们首先查看仪表板。
 
 ### <a name="view-the-device-inventory"></a>查看设备清单
-设备清单是你将看到网络中终结点、网络设备和 IoT 设备列表的地方。 它不仅为你提供了网络中设备的视图，还为你提供了有关这些设备的深入信息，例如域、风险级别、操作系统平台和其他详细信息，以便轻松识别风险最大的设备。
+设备清单是你将看到网络中终结点、网络设备和 IoT 设备列表的地方。 它不仅为你提供了网络中设备的视图，还为你提供了关于这些设备的深入信息，例如域、风险级别、操作系统平台和其他详细信息，以便轻松识别风险最大的设备。
 
 ### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>查看威胁和漏洞管理仪表板 
 威胁漏洞管理可帮助你专注于对组织构成最紧急和最高风险的漏洞。 从仪表板中，获取组织曝光分数、设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。 

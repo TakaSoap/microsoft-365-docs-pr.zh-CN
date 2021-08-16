@@ -268,7 +268,7 @@
             - name: 在管理中心管理加载项
               href: manage/manage-addins-in-the-admin-center.md
             - name: 集中部署常见问题解答
-              href: manage/centralized-deployment-faq.md
+              href: manage/centralized-deployment-faq.yml
         - name: 管理行业新闻
           href: manage/manage-industry-news.md
         - name: 管理 Office 脚本设置
@@ -425,3 +425,5 @@
       href: /office/troubleshoot/
     - name: 联系支持人员
       href: ../business-video/get-help-support.md
+    - name: 导航指南
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

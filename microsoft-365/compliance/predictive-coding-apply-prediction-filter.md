@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 使用预测分数筛选器显示预测编码模型预测为相关或不相关的项目。
-ms.openlocfilehash: 0ca2770d5ccbcc3ea5f3dec8394f69d1f5117da5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 99cc9aee90c57f6f48053a6ef7e5a622a15295aa16089416081913ac6e5d3473
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53865817"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>将预测分数筛选器应用于预览版 (审阅) 
 
@@ -39,7 +39,7 @@ ms.locfileid: "52822476"
 
 ## <a name="apply-a-prediction-score-filter"></a>应用预测分数筛选器
 
-1. 在合规性Microsoft 365中，打开Advanced eDiscovery案例，选择"审阅集"选项卡，然后打开审阅集。
+1. In the Microsoft 365 合规中心， open the Advanced eDiscovery case， select the **Review sets** tab， and then open the review set.
 
    ![单击"筛选器"以显示"筛选器"飞出页](..\media\PredictionScoreFilter0.png)   
 
@@ -66,6 +66,6 @@ ms.locfileid: "52822476"
   > [!TIP]
   > 若要查看分配给文档的实际预测分数，可以单击阅读窗格中的" **元数据** "选项卡。 审阅集内所有模型预测的分数都显示在 **RelevanceScores** 元数据属性中。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 有关使用筛选器的信息，请参阅查询 [和筛选审阅集的内容](review-set-search.md)。

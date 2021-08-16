@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何准备通过使用目录Microsoft 365设置用户，以及使用此方法的长期好处。
-ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fc2fa76e61afeb0efeeef9fca7f66ac34ec83c77169551b859724b86b766c2c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885131"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (德国) Office 365迁移后活动。
-ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ad696e1012d7b540017db29be7638d50ea2dbc5133411da7ba5e0d0145ada1e8
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899039"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移后活动
 
@@ -73,7 +73,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:------|:-------|:-------|
-| 更新本地 DNS 服务以Office 365服务终结点。 | 指向德国 Microsoft 云的客户托管 DNS 条目需要更新为指向 Office 365 全局服务终结点。 请参阅管理[中心中的Microsoft 365，](https://admin.microsoft.com/Adminportal/Home#/Domains)并应用 DNS 配置中的更改。 | 如果不这样做，可能会导致服务或软件客户端失败。 |
+| 更新本地 DNS 服务以Office 365服务终结点。 | 指向德国 Microsoft 云的客户托管 DNS 条目需要更新为指向 Office 365 全局服务终结点。 请参阅域中[的域Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal/Home#/Domains)并应用 DNS 配置中的更改。 | 如果不这样做，可能会导致服务或软件客户端失败。 |
 ||||
 
 ## <a name="third-party-services"></a>第三方服务

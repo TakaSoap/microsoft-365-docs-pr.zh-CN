@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 了解如何使用 Office 365 内容分发网络 (CDN) 来加快你的 SharePoint Online 资产的交付。
-ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: f2e23217e18c51bb865dd46a692db50bf3fa81ade1a09e833305cdb9a5fbadc9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885086"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>结合使用 Office 365 内容分发网络和 SharePoint Online
 
@@ -975,7 +975,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 需要注意的是，SharePoint Online 不支持私有源中的资产的项目级权限。 例如，对于位于 的文件，在 满足以下条件的情况下，用户 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` 具有对文件的有效访问权限：
 
-|用户  |权限  |有效访问  |
+|用户  |Permissions  |有效访问  |
 |---------|---------|---------|
 |用户 1     |有权访问 folder1         |可以从image1.jpg访问CDN         |
 |用户 2     |无法访问 folder1         |无法从image1.jpg访问CDN         |

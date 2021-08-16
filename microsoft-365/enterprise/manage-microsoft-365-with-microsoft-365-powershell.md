@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 了解如何使用 PowerShell Microsoft 365用户、许可证和 365 应用。
-ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e5f30a9d899ed84039077071fb33a0b540d07747e45c3cec2b2d70fa974eccb9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885203"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>使用 PowerShell 管理 Microsoft 365
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-PowerShell for Microsoft 365 是一款强大的管理工具，对管理中心Microsoft 365补充。 例如，可以使用 PowerShell 自动化轻松管理多个用户帐户和许可证以及创建报告。
+PowerShell for Microsoft 365 是一款强大的管理工具，可补充Microsoft 365 管理中心。 例如，可以使用 PowerShell 自动化轻松管理多个用户帐户和许可证以及创建报告。
 
 从以下主题中选择，了解如何使用 PowerShell 管理Microsoft 365：
   
@@ -62,6 +62,6 @@ PowerShell for Microsoft 365 是一款强大的管理工具，对管理中心Mic
 
     如果你想要使用联合和云解决方案提供商计划云解决方案提供商 (云解决方案提供商) 管理你的Microsoft 365租户。
 
-- [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype for Business联机**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
     从这里开始管理 Skype for Business Online。

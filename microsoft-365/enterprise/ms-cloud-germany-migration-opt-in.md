@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 959aee9662c843fa89851924c3f5e878d73a382b8ea19258eca2a332ff404169
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53899057"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择加入从德国 Microsoft 云到德国 microsoft 云 (到德国) Office 365数据中心区域的新迁移服务
 
@@ -34,7 +34,7 @@ ms.locfileid: "51592068"
 
 ## <a name="how-to-request-migration"></a>如何请求迁移
 
-如果你是在德国 Microsoft 云 (Microsoft 云) 中预配了服务的合格客户，并且你已作为租户 (全局) 管理员登录，Microsoft 365 管理中心中的页面允许你选择加入迁移。
+如果你是在德国 Microsoft 云 (Microsoft 云) 中预配了服务的合格客户，并且你已作为租户 (全局) 管理员登录，Microsoft 365 管理中心 中的页面允许你选择加入迁移。
 
 若要访问该页面，请在 **设置** 导航窗格中展开"组织配置文件"，然后单击"**组织配置文件"。**
 
@@ -48,7 +48,7 @@ ms.locfileid: "51592068"
  
 ![接受“选择加入”](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-代表租户选择加入后，所有管理员都将看到"从 **德国 Microsoft 云** 迁移 (Microsoft 云) 至德国 Office 365 服务"部分中确认，包括选择加入日期。 管理员还将在管理中心的消息中心收到Microsoft 365确认。 
+代表租户选择加入后，所有管理员都将看到"从 **德国 Microsoft 云** 迁移 (Microsoft 云) 至德国 Office 365 服务"部分中确认，包括选择加入日期。 管理员还将在邮件管理员的消息中心收到Microsoft 365 管理中心。 
  
 ![确认“选择加入”](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -62,13 +62,13 @@ ms.locfileid: "51592068"
 
 客户租户管理员将收到电子邮件和消息中心通知，提示 Microsoft 协助的迁移将自动选择加入迁移。 此通知将在自动选择加入前至少 30 天发送。 迁移选择加入后，所有通信和状态更新将发送给消息中心中的客户租户管理员。
 
-建议客户和合作伙伴租户管理员选择在 Microsoft 365 管理中心进行迁移，以便迁移过程可以尽快开始。
+建议客户和合作伙伴租户管理员选择加入迁移Microsoft 365 管理中心以便迁移过程可以尽快开始。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [了解迁移期间客户体验](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 

@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: eb24dee7a79bdf93d4571da0b5a9bd0b92a196a7b1d1767572767f7d92259056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6665fcfcc5031e9790e7b467e32f18e203f5fe6a
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893719"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247238"
 ---
-# <a name="set-the-time-zone-for-microsoft-365-defender"></a>设置设置的时区Microsoft 365 Defender
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a>设置要设置的时区Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "53893719"
 
 
 
-Microsoft 365 Defender可以使用本地时区或 UTC 显示日期和时间信息。 所选时区将应用于 Microsoft 365 安全中心的以下功能中所示的所有日期和时间信息：
+Microsoft 365 Defender可以使用本地时区或 UTC 显示日期和时间信息。 所选时区将应用于网站门户中的以下功能中显示的所有Microsoft 365 Defender信息：
 - 事件
 - 自动调查和修复，包括操作中心
 - 高级搜寻

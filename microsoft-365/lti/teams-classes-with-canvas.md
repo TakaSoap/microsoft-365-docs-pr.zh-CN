@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: 7743e7064bf31d87513c8c274f0ef8d0f70e7e8b9f97f530a2ad2f1826dd0542
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 8091d84e1d0f26c820979450001a1e0c9ad1cdec775ac9e34317f69c24bd2df6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53898703"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -28,7 +28,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
 > [!NOTE]
 > 当前的 Class Teams LTI 仅支持将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 在有限范围内同步。 
-> - 你的租户必须具有 Microsoft 教育版许可证。
+> - 你的租户必须在 Canvas 字段与 Microsoft AAD (电子邮件、用户 ID 或 SIS ID) UPN 之间完全匹配。 我们正在努力扩展同步功能的灵活性，但与此同时，Canvas 中与 AAD 中的 UPN 不匹配的任何用户将不会添加到与 Canvas 同步的 Teams 类。 
 > - 只有一个 Microsoft 租户可用于在 Canvas 和 Microsoft 之间映射用户。
 > - 在将 Class Teams LTI 之前，必须关闭 SDS，以避免重复组。
 
@@ -43,21 +43,18 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 3. 在管理员导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。
 
 4. 通过Microsoft Teams启用"同步"。
-   
-   ![Canvas Teams Sync Updated png](https://user-images.githubusercontent.com/87142492/128225881-abdfc52d-dc9e-48ad-aec5-f6617c6436f3.png)
 
-5. 输入你的 Microsoft 租户名称、登录属性、域后缀和 AAD 查找属性。
+   ![teams-sync](media/teams-sync.png)
 
-   这些字段将用于在 Canvas 中将用户与 Microsoft Azure Active Directory。 
-   * Login 属性是用于匹配的 Canvas 用户属性。
-   * 后缀字段是可选的，当 Canvas 属性和 Microsoft AAD 字段之间没有精确映射时，你可以指定域。 例如，如果你的 Canvas 电子邮件是"name@example.edu"，而 Microsoft AAD 中的 UPN 是"name"，则可以通过在后缀字段中输入"example.edu"来匹配用户。
-   * Active Directory Lookup 属性是 Microsoft 端与 Canvas 属性匹配的字段。 在 UPN、主电子邮件地址或电子邮件别名之间选择。
+5. 输入你的 Microsoft 租户名称和登录属性。
+
+   login 属性将用于将 Canvas 用户与用户Azure Active Directory关联。
 
 6. 选择 **"完成设置** 更新"。
 
 7. 若要批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用的访问权限，请选择"授予 **租户访问权限"** 链接。 你将被重定向到 Microsoft 标识平台管理员同意终结点。
 
-   ![permissions](media/permissions.png)
+   ![权限](media/permissions.png)
 
 8. 选择“**接受**”。
 

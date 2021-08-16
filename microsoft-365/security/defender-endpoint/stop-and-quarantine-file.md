@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96009bfd61ad22b06a5d5f64351e4983db264395
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 2d37eef37400f67421434e36aa3e7b36487afaf4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651719"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58247473"
 ---
 # <a name="stop-and-quarantine-file-api"></a>停止和隔离文件 API
 
@@ -44,6 +44,14 @@ ms.locfileid: "53651719"
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+> 只有在：
+>
+> - 正在采取操作的设备正在运行Windows 10版本 1703 或更高版本
+> - 该文件不属于受信任的第三方发布者，或者未由 Microsoft 签名
+> - Microsoft Defender 防病毒必须至少在被动模式下运行。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+
 
 ## <a name="permissions"></a>权限
 
@@ -76,10 +84,10 @@ Content-Type|string|application/json. **必需**。
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
-Sha1|字符串|在设备上停止和隔离的文件的 Sha1。 **必需**。
+Sha1|String|在设备上停止和隔离的文件的 Sha1。 **必需**。
 
 ## <a name="response"></a>响应
 

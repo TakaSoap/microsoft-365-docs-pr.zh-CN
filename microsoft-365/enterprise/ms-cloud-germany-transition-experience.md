@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解从德国 Microsoft 云 (德国 microsoft 云) 移动到新的德国数据中心Office 365服务的变化。
-ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: cacc6d75b890585aa7b219b8bbb8f49b3f2d6714fe4502fe1b6b1030f54b9763
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885167"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>迁移到新的德国数据中心Office 365服务后将发生哪些变化
 
@@ -101,11 +101,11 @@ Office 中最近 (MRU) 服务是一种从德国 Microsoft 云到全球Office 365
 
 Office 365视频将于 2021 年 3 月 1 日停用，Office 365将 SharePoint Online 迁移到新的德国数据中心区域后，视频将不受支持。 作为 Office 365 Online 迁移的一部分，将迁移来自视频SharePoint内容。 但是，Office 365迁移后，Office 365视频 UI 中SharePoint播放。 了解有关从视频转换到 Microsoft Stream Office 365经典视频 ([时间线) 概述](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [了解迁移阶段的操作和影响](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 
