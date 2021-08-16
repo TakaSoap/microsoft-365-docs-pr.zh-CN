@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署Microsoft 365安全性和合规性功能，并保护个人信息。
-ms.openlocfilehash: 7325aad0392d559703199c81f2544a582d7eadcb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 3cb4cefb0e7d93964eb10e97e44db9acee9331a795a5fd48defdceb843be1b60
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856994"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私条例保护的信息
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 20a9206574565b2a02e1dcf57545e7b40619beec212daf29d6d2cc571e08dffb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867747"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>分析字符串
 可以使用多种函数高效处理需要分析或转换的字符串。
 
-| String | 函数 | 用法示例 |
+| 字符串 | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line () ](/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 |
 | Paths | [parse_path () ](/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |

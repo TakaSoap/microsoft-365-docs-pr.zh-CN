@@ -1,5 +1,5 @@
 ---
-title: 评估Microsoft Cloud App Security概述、设置或设置设备、标识、数据和应用保护评估，作为Microsoft 365 Defender
+title: 评估Microsoft Cloud App Security概述
 description: 设置测试实验室Microsoft 365 Defender试验环境以试用并体验旨在保护组织中设备、标识、数据和应用程序的安全解决方案的步骤。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5b5af3611e7eb3976dd3c5aea8894e76818035a7
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 045516352ba9e27895f5c72ce90d29e50e13d04917f602c0543041089514b80b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897686"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>评估Microsoft Cloud App Security
 

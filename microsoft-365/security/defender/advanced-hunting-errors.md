@@ -1,5 +1,5 @@
 ---
-title: 处理 Defender 高级搜寻Microsoft 365错误
+title: 处理高级搜寻中用于搜索Microsoft 365 Defender
 description: 了解使用高级搜寻时显示的错误
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， 超时， 资源， 错误， 未知错误， 限制， 配额， 参数， 分配
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 25280ecb6b241c135f3ec1523b45fbd7ba379c88adef9cc49f2a6d46e076f88b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897707"
 ---
 # <a name="handle-advanced-hunting-errors"></a>处理高级搜寻错误
 

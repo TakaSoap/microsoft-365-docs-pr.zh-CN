@@ -1,5 +1,5 @@
 ---
-title: 查看 Microsoft Defender 的体系结构要求和规划Office 365、构建、构建和设计框架
+title: 查看 Microsoft Defender for Office 365 的体系结构要求和规划Office 365
 description: Microsoft Defender for Office 365 for Microsoft 365 Defender 的技术图表将帮助你在构建试用实验室或Microsoft 365环境之前了解 microsoft Defender 中的身份。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 15c84921dcfb4644241cf83ce4ffb6403180b9d4
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 2a62756522ad82d04c72995508ca8ada1e575f94c9bc9940069d59057f7de63f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53897672"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender Office 365体系结构要求和关键概念
 
@@ -63,7 +63,7 @@ ms.locfileid: "53457675"
 下表确定了在评估、配置和部署 MDO 时必须了解的重要概念。
 
 
-|概念  |说明 |详细信息  |
+|概念  |说明 |更多信息  |
 |---------|---------|---------|
 |Exchange Online Protection      |    Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助保护组织免受垃圾邮件和恶意软件电子邮件的攻击。 EOP 包含在所有Microsoft 365许可证中，其中包括Exchange Online。     |   [Exchange Online Protection 概述](../office-365-security/exchange-online-protection-overview.md)      |
 |反恶意软件保护     |    在 EXO 中拥有邮箱的组织将自动受到恶意软件的攻击。     |  [EOP 中的反恶意软件保护](../office-365-security/anti-malware-protection.md)       |

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: fc69992139235dd0e99a0c22e92f87c8447dab43
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: acb2c0cc3b75ac5491f2653c60e1e9d9bab7b22292caaeb698b1c9eed70df85c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53655895"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884802"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 

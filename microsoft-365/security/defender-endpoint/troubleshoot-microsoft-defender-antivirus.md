@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: cba7a9d6ed23ac1dc72ef6cbcecfdfc7a0f4c60b
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 2c6532ca3d610d2cc0650ee8fee986b296cd54af90d62fdb71926938302635b1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867833"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题
 
@@ -361,7 +361,7 @@ Microsoft Defender 防病毒事件日志中记录事件Windows。
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -433,7 +433,7 @@ Microsoft Defender 防病毒已采取措施保护此计算机免受恶意软件�
 <dt> 严重性 &lt; ： &gt; 严重性，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -485,7 +485,7 @@ Microsoft Defender 防病毒恶意软件或其他可能不需要的软件时遇�
 <dt> 严重性 &lt; ： &gt; 严重性，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -539,7 +539,7 @@ Microsoft Defender 防病毒已还原隔离项目。 有关详细信息，请参
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -581,7 +581,7 @@ Microsoft Defender 防病毒尝试从隔离区还原项目时遇到错误。 有
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -625,7 +625,7 @@ Microsoft Defender 防病毒已删除隔离项目。<br/>有关详细信息，�
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -668,7 +668,7 @@ Microsoft Defender 防病毒尝试从隔离区删除项目时遇到错误。
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -774,7 +774,7 @@ Microsoft Defender 防病毒检测到可疑行为。<br/>有关详细信息，�
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -849,7 +849,7 @@ Microsoft Defender 防病毒检测到恶意软件或其他可能不需要的软�
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -928,7 +928,7 @@ Microsoft Defender 防病毒已采取措施保护此计算机免受恶意软件�
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -1050,7 +1050,7 @@ Microsoft Defender 防病毒恶意软件或其他可能不需要的软件时遇�
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -1142,7 +1142,7 @@ Microsoft Defender 防病毒恶意软件或其他可能不需要的软件时遇�
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
 <li>适度</li>
-<li>高</li>
+<li>High</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -1204,7 +1204,7 @@ UAC </dt>
 由于Microsoft Defender 防病毒，客户端遇到了此错误。 终结点可能不受保护。 查看错误描述，然后按照下面的相关 <b>用户操作</b> 步骤操作。
 <table>
 <tr>
-<th>操作</th>
+<th>Action</th>
 <th>用户操作</th>
 </tr>
 <tr>
@@ -2608,7 +2608,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <th colspan="2">错误代码：0x80508007</th>
 </tr>
 <tr>
-<td>邮件</td>
+<td>消息</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2634,7 +2634,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 </tr>
 <tr>
 <th colspan="2">错误代码：0x8050800C</th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2658,7 +2658,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 </tr>
 <tr>
 <th colspan="2">错误代码：0x80508020</th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2668,7 +2668,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x805080211
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2678,7 +2678,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508022
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2689,7 +2689,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2703,7 +2703,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508024 </th></tr>
 <tr>
-<td>邮件</td>
+<td>消息</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2717,7 +2717,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508025
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2728,7 +2728,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508026
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2740,7 +2740,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508027
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2752,7 +2752,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508029
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2764,7 +2764,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508030
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2776,7 +2776,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508031
 </th>
-</tr><tr><td>邮件</td>
+</tr><tr><td>消息</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>可能的原因</td>
 <td>

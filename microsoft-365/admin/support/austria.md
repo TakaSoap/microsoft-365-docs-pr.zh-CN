@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5ceca007e3ad9d20ffaf5d4410f531404ec7349b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9c9a3ca0dedcd365ee2fb9cd669ea8bf1a17585a5b60f936bd52eb107f41a9fa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856795"
 ---
 # <a name="contact-support-for-austria"></a>联系奥地利支持人员
 

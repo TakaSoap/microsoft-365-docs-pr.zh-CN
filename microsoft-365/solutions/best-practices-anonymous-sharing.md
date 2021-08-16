@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 2c89ca319ba79d6f0463cc6d244c8d91928d6e42
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 6aba41705f519e973447653b2a4c9b32b97e43bc44864374b142955c45c17d11
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857114"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -166,4 +166,4 @@ ms.locfileid: "53327019"
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）

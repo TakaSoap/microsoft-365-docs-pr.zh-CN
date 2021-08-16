@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 现有Office 365客户必须在其国家/地区期限之前提交请求，Microsoft 365服务数据移动到其新地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: dbd1984520019296026bc5f57328a20837591c27830f4fe9b32fc425123b6550
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904632"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -49,9 +49,9 @@ ms.locfileid: "52908241"
 
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
-符合条件的客户将在管理中心Microsoft 365页面，这将允许他们请求将其核心客户数据移动到新的数据中心区域。  
+符合条件的客户将在客户中心看到Microsoft 365 管理中心，这将允许他们请求将其核心客户数据移动到新的数据中心区域。  
   
-若要访问管理中心中的Microsoft 365，请在左侧导航窗格中展开 **"设置"，** 然后单击"组织 **设置"。**
+若要访问网站中的页面Microsoft 365 管理中心，请在左侧导航窗格中展开"设置"，然后单击"组织 **设置"。**
 选择选项卡 **"组织配置文件"，** 然后选择选项"**数据驻留"。**
   
 如果你的租户不符合使用移动计划Microsoft 365本部分。  如果你的组织有数据驻留要求，并且你需要请求迁移，请标记复选框， **然后保存**。

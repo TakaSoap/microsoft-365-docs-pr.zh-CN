@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c032c54f8b80114e00fcff432a0da37a9d836f35
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 333e69c910e5800332261f9a7a2e23983f2615d7bac13f2139604747874b40b2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656303"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867939"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>配置Microsoft Defender 安全中心设置
 
@@ -40,7 +40,7 @@ ms.locfileid: "53656303"
 主题 | 说明
 :---|:---
 常规设置 | 修改之前在载入过程中定义的常规设置。
-权限 | 使用 RBAC 和设备组管理门户访问。
+Permissions | 使用 RBAC 和设备组管理门户访问。
 API | 启用威胁情报和 SIEM 集成。
 Rules | 配置抑制规则和自动化设置。
 设备管理 | 载入和载出设备。

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c6c0ad005a4485151a1404165b09648478cc1831
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6fb72c68d69c6844c981c7575bcfed3811a8d20e55a51485d78e26ec447becfe
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867975"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -50,7 +50,7 @@ ms.locfileid: "53651887"
 
 您还可以使用 [审核模式评估](audit-windows-defender.md) 网络保护在启用后对组织的影响。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 网络保护Windows 10 专业版或Enterprise，Microsoft Defender 防病毒实时保护。
 
@@ -82,7 +82,7 @@ DeviceEvents
 
 1. [直接复制 XML。](event-views.md)
 
-2. 选择 **“确定”**。
+2. 选择“**确定**”。
 
 此过程将创建一个自定义视图，该视图筛选为只显示与网络保护相关的以下事件：
 

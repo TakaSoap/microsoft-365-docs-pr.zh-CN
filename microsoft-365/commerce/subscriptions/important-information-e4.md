@@ -20,22 +20,22 @@ search.appverid: MET150
 description: 有关升级或更改使用 E4 订阅的客户计划Office 365重要信息。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 6ad72adc6904ee885dc4ce878a6e5c1fcc669263
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 7f0230272005519528952c88bb8a5426688c386677013aa58a7e46ad3a25ca2f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53856063"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>适用于 E4 Office 365的重要信息
 
-E4 Office 365于 2015 年停用。 作为Microsoft 365管理员，你将收到电子邮件更新，并查看 Microsoft 365 管理中心) 部分的邮件中心[ (](https://go.microsoft.com/fwlink/p/?linkid=2024339)中的帖子，其中包含有关何时需要采取措施的信息。
+E4 Office 365于 2015 年停用。 作为Microsoft 365管理员，你将收到电子邮件更新，并查看邮件中心 (部分中的帖子Microsoft 365 管理中心) 了解何时需要采取措施。 [](https://go.microsoft.com/fwlink/p/?linkid=2024339)
 
 ## <a name="compare-your-options-for-upgrading-or-changing-plans"></a>比较升级或更改计划的选项
 
 你可以选择保持与 E4 相同的功能，或者利用来自音频会议和音频会议Microsoft 365 Microsoft 365功能。 若要移动到新计划，你有五个选项。
 
-|  | 选项 1：升级到 Office 365 E5 | 选项 2：升级到Microsoft 365 E5 | 选项 3：升级到Microsoft 365 E5音频会议 | 选项 4：更改为 Office 365 E3 | 选项 5：更改为Microsoft 365 E3 |
+|  | 选项 1：升级到Office 365 E5 | 选项 2：升级到Microsoft 365 E5 | 选项 3：升级到Microsoft 365 E5音频会议 | 选项 4：更改为Office 365 E3 | 选项 5：更改为Microsoft 365 E3 |
 |-|-|-|-|-|-|
 | **获取当前 E4 订阅中包含的所有Office 365功能** | 是 | 是 | 是 | 否 | 否 |
 | **电话管理的数字Microsoft 365** | 是 | 是 | 否 | 否 | 否 |
@@ -48,7 +48,7 @@ E4 Office 365于 2015 年停用。 作为Microsoft 365管理员，你将收到�
 
 <sup>1</sup>Microsoft 365 或 Office 365 中的通话套餐在 11 个国家和地区可用，并且适用于其中一个国家和地区中具有帐单邮寄地址的组织。 若要了解更多信息，请参阅 [管理组织的电话号码](/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization)。 升级到 Microsoft 365 或 Office 365，或者如果你已购买 电话系统，可以选择添加国内或国内和国际呼叫计划。
 
-<sup>2</sup>音频会议并非在所有国家和地区都可用。 如果音频会议在你的国家/地区或地区不可用，我们将在音频会议可用时更新你。 此时，Microsoft 365和 Office 365 E5 客户可以立即升级到具有音频会议功能的 E5 订阅，也可以等到可以续订时再升级。 若要了解哪些国家/地区支持音频会议，请参阅音频[](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)会议和通话套餐的国家和地区可用性，并使用下拉列表选择你的国家/地区。
+<sup>2</sup>音频会议并非在所有国家和地区都可用。 如果音频会议在你的国家/地区或地区不可用，我们将在音频会议可用时更新你。 此时，Microsoft 365和Office 365 E5客户可以立即升级到具有音频会议的 E5 订阅，或等到可以续订时再升级。 若要了解哪些国家/地区支持音频会议，请参阅音频[](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)会议和通话套餐的国家和地区可用性，并使用下拉列表选择你的国家/地区。
 
 ## <a name="ready-to-upgrade"></a>准备好升级了吗？
 

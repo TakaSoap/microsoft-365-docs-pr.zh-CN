@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3c7a861e5cf342bbf1e6705729ac36dde0ae9c81
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 6d64b3998aabf7ff6435ea9cf32518eb4f827dd833fd05a650339ec3a96d25ef
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868324"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -123,8 +123,8 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|EnableCheckForUpdatesButton|
-|**数据类型**|布尔值|
-|**可能的值**|为 (默认值)  <p> False|
+|**数据类型**|Boolean|
+|**可能的值**|为 (默认值)  <p> 错误|
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
 
@@ -134,8 +134,8 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|DisableInsiderCheckbox|
-|**数据类型**|布尔值|
-|**可能的值**|False (默认值)  <p> True|
+|**数据类型**|Boolean|
+|**可能的值**|False (默认值)  <p> 正确|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>限制从 MAU 发送的遥测
 
@@ -145,8 +145,8 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|SendAllTelemetryEnabled|
-|**数据类型**|布尔值|
-|**可能的值**|为 (默认值)  <p> False|
+|**数据类型**|Boolean|
+|**可能的值**|为 (默认值)  <p> 错误|
 
 ## <a name="example-configuration-profile"></a>配置文件示例
 

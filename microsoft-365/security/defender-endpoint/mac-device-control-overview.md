@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed5ddc90df8ee3d0e938c0db9bca367a424f0413
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 40f783e8a99ef5bcbd3db516f65ff43812e83091fe93ace49562f5b45926afd1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651047"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53868400"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -35,7 +35,7 @@ ms.locfileid: "53651047"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 macOS 的设备控件具有以下先决条件：
 
@@ -76,7 +76,7 @@ macOS 的设备控件具有以下先决条件：
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
 | **键** | navigationTarget |
-| **数据类型** | 字符串 |
+| **数据类型** | String |
 | **Comments** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
 
 ### <a name="allow-or-block-removable-devices"></a>允许或阻止可移动设备

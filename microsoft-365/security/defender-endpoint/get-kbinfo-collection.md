@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: fa9fa4639a50a784a8df8c444eb73349f834e517
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 98b731329561b3a0bca599743934b164bc1b47a49558f43c11a4ab02a1869347
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53656459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884771"
 ---
 # <a name="get-kb-collection-api"></a>获取 KB 集合 API
 
@@ -40,7 +40,7 @@ ms.locfileid: "53656459"
 
 检索 KB 和 KB 详细信息的集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 用户需要读取权限。
 

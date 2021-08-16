@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 432f8e640d8bbc0f2464af2c2476c57bcd9539f38c23ae2c91b864afd585e6f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246235"
 ---
 # <a name="get-file-related-machines-api"></a>获取与文件相关的计算机 API
 
@@ -44,6 +44,7 @@ ms.locfileid: "53890487"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
+2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256 哈希) 。
 
 ## <a name="permissions"></a>权限
 
@@ -60,7 +61,7 @@ ms.locfileid: "53890487"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -80,7 +81,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且文件存在 - 200 正常[](machine.md)，正文中包含计算机实体列表。 如果文件不存在 - 404 未找到。
+如果成功且文件存在 - 200 正常[](machine.md)，正文中包含计算机实体列表。 如果文件不存在 - 200 确定，但为空集。
 
 ## <a name="example"></a>示例
 

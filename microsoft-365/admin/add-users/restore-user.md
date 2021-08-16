@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 在删除用户帐户后的 30 天内，可以还原该帐户以及所有数据，并且用户可以使用同一帐户登录。
-ms.openlocfilehash: e37f913bcc6a54bdcc1e0f52168fe1aab0c8afdd
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 7b030d3e6792b168977b63f1ca686e8870ea103dd86eec3312f4c0760154ecab
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832927"
 ---
 # <a name="restore-a-user"></a>还原用户
    

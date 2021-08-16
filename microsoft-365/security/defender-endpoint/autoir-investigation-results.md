@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: a10442bc9d92bb6004149180da30b86b646dd5de
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 31d272705fa5b93f57c34b811fea2a7717058df415df065885ced2537b692941
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53884783"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
@@ -81,7 +81,7 @@ ms.locfileid: "53290155"
 > [!NOTE]
 > 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| Tab | 说明 |
+| 选项卡 | 说明 |
 |:--------|:--------|
 | **调查图** | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
 | **警告** | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office、云应用安全和其他Microsoft 365 Defender功能。|

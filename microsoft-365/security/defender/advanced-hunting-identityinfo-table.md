@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8586ce73f73eb7566d45f88a3e5ac93d222e33e0ec1ff1ece98c557fe221216e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53867735"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
