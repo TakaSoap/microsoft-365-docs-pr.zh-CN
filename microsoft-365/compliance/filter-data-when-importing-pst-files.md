@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: 了解如何在将 PST 文件导入到 Microsoft 365 时，使用 Microsoft 365 导入服务中的智能导入功能筛选Microsoft 365。
-ms.openlocfilehash: fc89467e3ea9c0af86ec6b9ef6a9d7d61079e116
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: e7faa346e78e74246264b0751a4f8648b42aca22b0465c9bb75382136dd6b736
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895545"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>导入 PST 文件时筛选数据
 
@@ -113,7 +113,7 @@ ms.locfileid: "52730566"
   
     ![数据见解将基于筛选器设置进行更新](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. 单击“**下一步**”。
+    d. 单击 **下一个**。
   
     将显示一个状态页，其中显示筛选器设置。 同样，您可以编辑任何筛选器设置。
   

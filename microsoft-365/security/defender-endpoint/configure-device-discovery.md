@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fbce67602006a86c71bf3b802d8b69e2cd367104
-ms.sourcegitcommit: b3091791196828883d8284497561027df692d109
+ms.openlocfilehash: 2c58fb68ec96f802621c3b4c3a25d4174fc6017dd7f2855850fbcd6ea052d82d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53664065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863819"
 ---
 # <a name="configure-device-discovery"></a>配置设备发现
 
@@ -51,7 +51,7 @@ ms.locfileid: "53664065"
 1. 导航到 **设置 >设备发现 "**。
 2. 选择要在载入的设备上使用的发现模式。
 3. 如果你已选择使用标准发现，请通过指定设备标记来选择用于活动探测的设备：所有设备或子集。
-4. 单击“**保存**”。
+4. 单击 **保存**。
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>在标准发现中排除设备的活动探测器
 

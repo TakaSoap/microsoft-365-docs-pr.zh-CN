@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解 Advanced eDiscovery 中的Microsoft 365。 本文概述了 Advanced eDiscovery 中Microsoft 365，这是一种可帮助您管理内部和外部调查的工具。 它还说明使用 Advanced eDiscovery管理法律调查的业务原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4fe94aed10a7b9e981e2a9d46e992d5557e35dcb
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 611748b00df53f4988d37e92a93e63ef8348d9937f8092209c6b2320939c3af0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895477"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>概述Microsoft 365 Advanced eDiscovery
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何在内部部署 Active Directory Microsoft 365目录同步。
-ms.openlocfilehash: 14b44523c0a560a71ed8dc9182f677f2ebc0b865
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 53a64b2fdf2ff16f024425f516a5752b7788fadcabec94da772ace32ed9cdc0e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904451"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>为用户设置目录Microsoft 365
 
@@ -87,7 +87,7 @@ Azure AD 连接在本地服务器上运行，并且将 AD DS 与 Azure AD 租户
 
 请按以下步骤操作：
 
-1. 登录到管理Microsoft 365 [中心 (](https://admin.microsoft.com)左侧导航栏中选择"用户 https://admin.microsoft.com)  \> **""** 活动用户"。
+1. 登录到"用户 [Microsoft 365 管理中心 (](https://admin.microsoft.com)左侧导航栏中选择 https://admin.microsoft.com) "用户 \> **""** 活动用户"。
 2. 在"**活动用户**"页面上， (三个点) \> **目录同步"。**
   
 3. 在 **"Azure Active Directory准备**"页上，选择"转到下载中心 **"，获取 Azure AD 连接工具** 链接以开始操作。 
@@ -97,6 +97,6 @@ Azure AD 连接在本地服务器上运行，并且将 AD DS 与 Azure AD 租户
 
 按照管理[DNS 记录时Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) DNS 记录中的步骤完成域设置。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)

@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f97bd20334aceabd4d0763c6b8eca4b14271ab70a2099c4dfa97bb2560882742
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 64e634ce33794264de3b8a627355c9c0f64038d712cff55a6d704ada0dc33e3c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863844"
 ---
 # <a name="user-support"></a>用户支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "57803136"
 - 由管理员Microsoft 托管桌面文档，以及一个门户，可根据需要请求提升的设备访问权限并上报给支持人员。
 - 由安全中心每天Microsoft 托管桌面威胁监视和缓解
 
-## <a name="roles-and-responsibilities"></a>角色和职责
+## <a name="roles-and-responsibilities"></a>角色与责任
 
 为了确保服务质量而不会损害安全性，支持提供商、IT 管理员Microsoft 托管桌面各自具有不同的角色和职责。
 
@@ -51,7 +51,7 @@ IT 管理员负责以下各项：
 
 - 与支持提供商合作，为用户支持设置和管理服务级别协议
 - 管理批准的支持人员提升的访问权限。 有关详细信息，请参阅启用 [用户支持功能](../get-started/enable-support.md)
-- 如果存在影响用户的设备问题，请通过使用管理员支持流程Microsoft 托管桌面升级这些问题。 有关详细信息，请参阅管理员[对 Microsoft 托管桌面](../working-with-managed-desktop/admin-support.md)的支持。
+- 如果存在影响多个用户的设备问题，则使用管理员支持Microsoft 托管桌面升级这些问题。 有关详细信息，请参阅管理员[对 Microsoft 托管桌面](../working-with-managed-desktop/admin-support.md)的支持。
 - 将硬件相关问题路由到相应的供应商
 - 通过阻止更改我们设置的策略Microsoft 托管桌面设备上维护和保护设备安全策略设置。
 
@@ -74,7 +74,7 @@ IT 管理员负责以下各项：
 
 如果需要将用户问题上报为Microsoft 托管桌面，则有助于确定问题应定向到哪个团队。 我们可以适当地转移事例，但可以节省从一开始将它们路由到正确位置的时间。
 
-- 特定于Microsoft 托管桌面 (例如，服务本身部署的策略或设置) ：通过创建新的支持请求直接上报给运营团队。 有关详细信息，请参阅 [获取用户帮助](../working-with-managed-desktop/end-user-support.md)。
+- 特定于特定Microsoft 托管桌面 (例如，服务本身部署的策略或设置) ：直接上报给运营团队。 有关详细信息，请参阅 [获取用户帮助](../working-with-managed-desktop/end-user-support.md)。
 - 硬件问题：直接到硬件供应商或供应商
 - 其他问题：通过现有支持渠道升级，无论这是统一订阅还是顶级订阅。
 
@@ -83,7 +83,7 @@ IT 管理员负责以下各项：
 
 ### <a name="elevation-portal"></a>提升门户 
 
-由于Microsoft 托管桌面在标准用户上运行，因此某些任务需要提升权限。 有关用户帐户控制详细信息，请参阅 [用户帐户控制](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 为了使支持人员能够在排查用户问题时执行任务[](../working-with-managed-desktop/end-user-support.md#elevation-requests)，我们提供对管理员帐户的"实时"访问权限。 只有指定的用户才能安全访问此密码，并每隔几小时轮换一次。  
+由于Microsoft 托管桌面在标准用户上运行，因此某些任务需要提升权限。 有关用户帐户控制详细信息，请参阅 [用户帐户控制](/windows/security/identity-protection/user-account-control/user-account-control-overview)。 为了使支持人员能够在排查用户问题时执行任务[](../working-with-managed-desktop/end-user-support.md#elevation-requests)，我们提供对管理员帐户的"实时"访问权限。 此密码仅由指定的用户安全访问，每几小时轮换一次。  
 
 若要了解如何设置用户以访问此门户，请参阅启用 [用户支持功能](../get-started/enable-support.md)。
 
@@ -91,7 +91,7 @@ IT 管理员负责以下各项：
 
 ### <a name="escalation-portal"></a>升级门户 
 
-如果问题需要上报给Microsoft 托管桌面团队，指定的支持人员可能会指示类似于 IT 管理员支持请求。  
+如果问题需要上报给运营Microsoft 托管桌面团队，指定的支持人员可能会指示类似于 IT 管理员支持请求。  
 
 > [!NOTE]
 > 只有 Sev C 支持请求可以这样存档。 对于与其他严重性描述相匹配的问题，建议联系相应的 IT 管理员进行文件处理。 有关详细信息，请参阅支持 [请求严重性定义](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions)。

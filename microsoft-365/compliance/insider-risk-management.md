@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 553e27bf4f3d3b34749bb0b45375ee646e7c28ed20f5f3f0751626752b07b0d2
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879624"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>了解企业内部风险管理Microsoft 365
 
@@ -95,7 +95,7 @@ ms.locfileid: "53430596"
 警报由与策略条件匹配的风险指示器自动生成，并显示在 [警报仪表板中](insider-risk-management-activities.md#alert-dashboard)。 此仪表盘可以快速预览需要审查的全部警报、随时间变化的开放警报以及组织的警报统计。 将显示所有策略警报，并显示以下信息，以帮助您快速识别需要操作的现有警报和新警报的状态：
 
 - 状态
-- Severity
+- 严重性
 - 检测到的时间
 - 情况
 - 案例状态

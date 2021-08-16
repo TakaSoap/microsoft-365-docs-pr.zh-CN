@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合规性扩展可扩展对 Google Chrome 浏览器文件活动和保护操作的监视和控制
-ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e33d8e9df886b4d557674ec249c011bac97749deaa1c0c7e95e485bc999baa47
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895643"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合规性扩展
 

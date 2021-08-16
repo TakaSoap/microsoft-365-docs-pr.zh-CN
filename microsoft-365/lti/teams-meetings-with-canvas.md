@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
-ms.openlocfilehash: c3c2692aa44b8e711cfd9e4f1cb321dfba7cd80ae1e9186c95b1931705676016
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: b9507847b569ea999b45c1ea33b336360cc485d5
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834771"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257455"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -27,10 +27,10 @@ Microsoft Teams会议是 Learning Tools Interoperability (LTI) 应用，可帮�
 ## <a name="prerequisites-before-deployment"></a>部署前的先决条件
 
 > [!NOTE]
-> 当前Teams会议 LTI 仅支持在有限范围内将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 同步。 
+> 当前Teams会议 LTI 仅支持将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 在有限范围内同步。 
 > - 你的租户必须具有 Microsoft 教育版许可证。
 > - 只有一个 Microsoft 租户可用于在 Canvas 和 Microsoft 之间映射用户。
-> - 在将 Class Teams LTI 之前，必须关闭 SDS，以避免重复组。
+> - 在使用类和 LTI 之前，必须Teams SDS，以避免重复组。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理员
 
@@ -49,7 +49,7 @@ Microsoft Teams会议是 Learning Tools Interoperability (LTI) 应用，可帮�
    * 后缀字段是可选的，当 Canvas 属性和 Microsoft AAD 字段之间没有精确映射时，你可以指定域。 例如，如果你的 Canvas 电子邮件是"name@example.edu"，而 Microsoft AAD 中的 UPN 是"name"，则可以通过在后缀字段中输入"example.edu"来匹配用户。
    * Active Directory Lookup 属性是 Microsoft 端与 Canvas 属性匹配的字段。 在 UPN、主电子邮件地址或电子邮件别名之间选择。
 
-5. 选择 **"完成设置** 更新"。
+5. 选择 **"更新设置** 完成后更新"。
 
 6. 若要批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用的访问权限，请选择"授予 **租户访问权限"** 链接。 你将被重定向到 Microsoft 标识平台管理员同意终结点。
 
@@ -58,7 +58,7 @@ Microsoft Teams会议是 Learning Tools Interoperability (LTI) 应用，可帮�
 7. 选择“**接受**”。 
 
 > [!NOTE]
-> 同步是由 LMS 合作伙伴管理的一项功能，用于将课程级别的成员身份与使用 Microsoft graph API Teams团队同步。 这主要是教师在课程级别切换为 true 的功能。 随后，在 LMS 端为添加或删除成员所做的任何成员身份更改都使用 LMS 合作伙伴实现的 Sync 进行反映。 即使在为教师启用此过程之前，M365 教育协会管理员也允许教师使用下面的同步权限模式访问同步。 这些权限授予 LMS 合作伙伴，以便教师能够同步 LMS 课程和课堂Teams成员身份。
+> 同步是一项由 LMS 合作伙伴管理的功能，用于使用 Microsoft graph API 将课程级别的成员身份Teams团队同步。 这主要是教师在课程级别切换为 true 的功能。 随后，在 LMS 端为添加或删除成员所做的任何成员身份更改都使用 LMS 合作伙伴实现的 Sync 进行反映。 即使在为教师启用此过程之前，M365 教育协会管理员也允许教师使用下面的同步权限模式访问同步。 这些权限授予 LMS 合作伙伴，以便教师能够同步 LMS 课程和课堂团队Teams成员身份。
 
 8. 通过打开Microsoft Teams启用同步。
 

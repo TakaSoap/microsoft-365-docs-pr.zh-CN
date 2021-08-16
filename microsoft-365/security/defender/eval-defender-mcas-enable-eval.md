@@ -1,7 +1,6 @@
 ---
 title: 启用评估环境Microsoft Cloud App Security
 description: 了解 Microsoft Defender 中 MCAS 的体系结构，Office 365并了解产品之间的Microsoft 365 Defender交互。
-keywords: Microsoft 365 Defender试用版， 试用 Microsoft 365 Defender， 评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6ada9613f852e085158b7002cbbb9a9928d36d58
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 761a8fcb3c6f7efe82c542001dac1f62eb365f1473268df0866bb5dfae0ed302
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863184"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>启用评估环境Microsoft Cloud App Security
 

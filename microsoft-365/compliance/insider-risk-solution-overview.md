@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6967931f2c6a9382825218f36cdf6480d39b9ec3070d4c5f659ec881f1bd6c6e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879742"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -36,13 +36,13 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 | ![数据泄漏图标](../media/ir-risk-data-spillage.png)| 数据泄漏 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | !["违反机密"图标](../media/ir-risk-confidentiality-violations.png)| 违反保密规定 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 | ![IP 盗窃图标](../media/ir-risk-ip-theft.png)| IP 盗窃 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
-| ![工作场所暴力图标](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![工作场所暴力图标](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![支持](../media/check-mark.png) |  |  |  |
 | ![欺诈/欺诈图标](../media/ir-risk-fraud.png)| 欺诈 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | ![策略违反图标](../media/ir-risk-policy-violations.png)| 策略违反 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| ![预览体验成员交易/握手图标](../media/ir-risk-insider-trading.png)| 内幕交易 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![预览体验成员交易/握手图标](../media/ir-risk-insider-trading.png)| 内幕交易 | ![支持](../media/check-mark.png) |  |  |  |
 | !["利益冲突"图标](../media/ir-risk-conflicts-of-interest.png)| 冲突 | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |  |
 | ![敏感数据泄露/设备图标](../media/ir-risk-sensitive-data-leaks.png)| 敏感数据泄露 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
-| ![工作场所骚扰/人员图标](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![工作场所骚扰/人员图标](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![支持](../media/check-mark.png) |  |  |  |
 | ![安全冲突图标](../media/ir-risk-security-violations.png)| 违反安全规定 |  | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |
 | ![违反法规的图标](../media/ir-risk-regulatory-compliance-violations.png)| 违反法规遵从性 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 
@@ -82,7 +82,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 - Microsoft 365 G5 订阅（付费或试用版本）
 - Microsoft 365 G3订阅 + Microsoft 365 G5 合规性加载项
 - Microsoft 365 G3订阅 + Microsoft 365 G5 内部风险管理加载项
-- Office 365E3 订阅 + Enterprise移动性和安全性 E3 + Microsoft 365 E5 合规加载项
+- Office 365 E3 + Enterprise移动性和安全性 E3 + Microsoft 365 E5 合规加载项
 
 ### <a name="information-barriers"></a>信息屏障
 
@@ -113,7 +113,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 合规加载项
 - Microsoft 365 E3订阅 + Microsoft 365 E5信息保护和管理加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
-- Microsoft 365A3 订阅 + Microsoft 365 A5 信息保护和管理加载项
+- Microsoft 365 A3订阅 + Microsoft 365 A5信息保护和管理加载项
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署Microsoft 365内部风险解决方案
 
@@ -143,7 +143,7 @@ Microsoft 365提供了以下资源来帮助通知并培训贵组织中这些用�
 | 解决方案/区域 | 资源 |
 |:------------------|:--------------|
 | 在 Microsoft 365 中管理内部风险 |[完整学习路径](/learn/paths/m365-compliance-insider) <br> 此学习路径包括通信合规性、内部风险管理、信息屏障和特权访问管理的所有单个解决方案模块。 选择此学习路径以完成所有模块。 |
-| 通信合规性 | [学习模块：准备通信合规性Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> 本模块可帮助你了解如何在通信合规性下识别和修正行为准则违反策略的基础知识，介绍创建通信合规性策略之前所需的先决条件，并了解通信合规性中内置的预定义策略模板的类型。 |
-| 内部风险管理 | [学习模块：企业内部风险管理Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> 本模块可帮助你了解 Microsoft 365 中的内部风险管理如何有助于防止、检测和包含组织内部风险，了解内置预定义策略模板的类型，了解创建内部风险策略之前所需的基本先决条件，并说明您可以对内部风险管理案例采取的操作类型。 |
-| 信息屏障 | [学习模块：规划信息障碍](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> 本模块可帮助你了解信息屏障策略如何帮助你的组织保持对相关行业标准和法规的遵从性，列出信息屏障适用的情况类型，帮助解释创建信息屏障策略的过程，并帮助说明在信息屏障就位后如何解决意外问题。 |
-| 特权访问管理 | [学习模块：实现特权访问管理](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> 本模块可帮助你了解特权访问管理和特权标识管理的区别，了解特权访问管理过程流，以及了解如何配置和启用特权访问管理的基础知识。 |
+| 通信合规性 | [Learning模块：在 Microsoft 365 中准备通信合规性](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> 本模块可帮助你了解如何在通信合规性下识别和修正行为准则违反策略的基础知识，介绍创建通信合规性策略之前所需的先决条件，并了解通信合规性中内置的预定义策略模板的类型。 |
+| 内部风险管理 | [Learning模块：预览体验成员风险管理Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> 本模块可帮助你了解 Microsoft 365 中的内部风险管理如何有助于防止、检测和包含组织内部风险，了解内置预定义策略模板的类型，了解创建内部风险策略之前所需的基本先决条件，并说明您可以对内部风险管理案例采取的操作类型。 |
+| 信息屏障 | [Learning模块：规划信息屏障](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> 本模块可帮助你了解信息屏障策略如何帮助你的组织保持对相关行业标准和法规的遵从性，列出信息屏障适用的情况类型，帮助解释创建信息屏障策略的过程，并帮助说明在信息屏障就位后如何解决意外问题。 |
+| 特权访问管理 | [Learning模块：实现特权访问管理](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> 本模块可帮助你了解特权访问管理和特权标识管理的区别，了解特权访问管理过程流，以及了解如何配置和启用特权访问管理的基础知识。 |

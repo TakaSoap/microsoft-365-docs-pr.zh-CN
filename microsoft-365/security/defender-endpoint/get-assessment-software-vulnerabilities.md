@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b92f649c255d919b3dfb7c5d703f485367c4289c
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: b73e7c2afe25cbff55ace688c1f3c5d9351156484c45bceaf00b34ecca1afea3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853927"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>导出每个设备的软件漏洞评估
 
@@ -101,25 +101,25 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-CveId|字符串|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992
-CvssScore|字符串|CVE 的 CVSS 分数。|6.2
-DeviceId|字符串|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
+CveId|string|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992
+CvssScore|string|CVE 的 CVSS 分数。|6.2
+DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
 DiskPaths|数组 \[ 字符串\]|表明产品已安装在设备的磁盘证据。|[ "C：\Program Files (x86) \Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|字符串|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) |ExploitIsInKit
-FirstSeenTimestamp|字符串|首次在设备上看到此产品的 CVE 时。|2020-11-03 10:13:34.8476880
+ExploitabilityLevel|string|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) |ExploitIsInKit
+FirstSeenTimestamp|string|首次在设备上看到此产品的 CVE 时。|2020-11-03 10:13:34.8476880
 Id|string|记录的唯一标识符。|123ABG55_573AG&mnp！
-LastSeenTimestamp|字符串|上次在设备上看到 CVE 的时间。|2020-11-03 10:13:34.8476880
-OSPlatform|字符串|在设备上运行的操作系统的平台。 此属性指示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
-RecommendationReference|字符串|对此软件相关建议 ID 的引用。|va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (可选) |字符串|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新
-RecommendedSecurityUpdateId (可选) |字符串|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章|4550961
+LastSeenTimestamp|string|上次在设备上看到 CVE 的时间。|2020-11-03 10:13:34.8476880
+OSPlatform|string|在设备上运行的操作系统的平台。 此属性指示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
+RecommendationReference|string|对此软件相关建议 ID 的引用。|va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (可选) |string|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新
+RecommendedSecurityUpdateId (可选) |string|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章|4550961
 RegistryPaths|数组 \[ 字符串\]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SoftwareName|字符串|软件产品的名称。|chrome
-SoftwareVendor|字符串|软件供应商的名称。|google
-SoftwareVersion|字符串|软件产品的版本号。|81.0.4044.138
-VulnerabilitySeverityLevel|字符串|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。|Medium
+SoftwareName|string|软件产品的名称。|chrome
+SoftwareVendor|string|软件供应商的名称。|google
+SoftwareVersion|string|软件产品的版本号。|81.0.4044.138
+VulnerabilitySeverityLevel|string|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。|中
 |
 
 ### <a name="16-examples"></a>1.6 示例
@@ -309,7 +309,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表。|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|字符串|导出的生成时间。|2021-05-20T08：00：00Z
+GeneratedTime|string|导出的生成时间。|2021-05-20T08：00：00Z
 |
 
 ### <a name="26-examples"></a>2.6 示例
@@ -385,27 +385,27 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-CveId |字符串|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992  
-CvssScore|字符串|CVE 的 CVSS 分数。|6.2  
-DeviceId|字符串|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|字符串|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com  
+CveId |string|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992  
+CvssScore|string|CVE 的 CVSS 分数。|6.2  
+DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|表明产品已安装在设备的磁盘证据。|["C：\Program Files (x86) \Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|字符串|找到此 delta 事件的时间。|2021-01-11T11：06：08.291Z
-ExploitabilityLevel|字符串|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) |ExploitIsInKit  
-FirstSeenTimestamp|字符串|首次在设备上看到此产品的 CVE 时。|2020-11-03 10:13:34.8476880  
+ExploitabilityLevel|string|此漏洞的利用级别 (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit) |ExploitIsInKit  
+FirstSeenTimestamp|string|首次在设备上看到此产品的 CVE 时。|2020-11-03 10:13:34.8476880  
 Id|string|记录的唯一标识符。|123ABG55_573AG&mnp！  
-LastSeenTimestamp|字符串|上次在设备上看到 CVE 的时间。|2020-11-03 10:13:34.8476880  
-OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10  
-RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器  
-RecommendationReference|字符串|对此软件相关建议 ID 的引用。|va--microsoft--silverlight  
-RecommendedSecurityUpdate |字符串|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新  
-RecommendedSecurityUpdateId |字符串|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章|4550961  
+LastSeenTimestamp|string|上次在设备上看到 CVE 的时间。|2020-11-03 10:13:34.8476880  
+OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10  
+RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器  
+RecommendationReference|string|对此软件相关建议 ID 的引用。|va--microsoft--silverlight  
+RecommendedSecurityUpdate |string|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新  
+RecommendedSecurityUpdateId |string|相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章|4550961  
 RegistryPaths |Array[string]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName|字符串|软件产品的名称。|chrome  
-SoftwareVendor|字符串|软件供应商的名称。|google  
-SoftwareVersion|字符串|软件产品的版本号。|81.0.4044.138  
+SoftwareName|string|软件产品的名称。|chrome  
+SoftwareVendor|string|软件供应商的名称。|google  
+SoftwareVersion|string|软件产品的版本号。|81.0.4044.138  
 状态|字符串|**新建**   (如果设备上不再存在此漏洞（这意味着已修复此漏洞)  (1) **修复** (，则说明在设备上引入的新漏洞  ) 。  (2) 更新 (如果设备上 ****   漏洞已更改。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。 |Fixed
-VulnerabilitySeverityLevel|字符串|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。|Medium
+VulnerabilitySeverityLevel|string|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。|中
 |
 
 #### <a name="clarifications"></a>说明

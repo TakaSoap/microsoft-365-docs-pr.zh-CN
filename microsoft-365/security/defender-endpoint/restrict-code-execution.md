@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2154351dd3f7db7e3300dde86bdb3e7f1b6e4d55853c59449d11aa5ef12a643
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2eda900a659879fcfe07052e8b51ba3e5a03e633
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257702"
 ---
 # <a name="restrict-app-execution-api"></a>限制应用执行 API
 
@@ -52,7 +52,7 @@ ms.locfileid: "53810974"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
+> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
 > - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
 > - 此操作需要满足应用程序Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
@@ -88,7 +88,7 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 

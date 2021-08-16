@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 4a083f4d891ef51b3156c2ad407a55de597cd6a754fa77d9d96fe5d6e3cffe4d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863231"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 名称|类型|说明
 ---|---|---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|String|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -81,10 +81,10 @@ Content-Type|String|application/json. **必需**。
 属性|类型|说明
 ---|---|---
 状态|枚举|指定事件的当前状态。 可能的值是 `Active` ：、 `Resolved` 和 `Redirected` 。
-assignedTo|字符串|事件的所有者。
+assignedTo|string|事件的所有者。
 classification|枚举|事件的规范。 可取值为：`Unknown`、`FalsePositive`、`TruePositive`。
 确定|枚举|指定事件的确定。 可取值为：`NotAvailable`、`Apt`、`Malware`、`SecurityPersonnel`、`SecurityTesting`、`UnwantedSoftware` 或 `Other`。
-标记|字符串列表|事件标记列表。
+tags|字符串列表|事件标记列表。
 comment|string|要添加到事件的注释。
 
 ## <a name="response"></a>响应

@@ -160,22 +160,6 @@
                       href: first-incident-path-phishing.md
                     - name: 标识
                       href: first-incident-path-identity.md
-            - name: 将 Microsoft 365 Defender 集成到安全操作中
-              items:
-                - name: 简介
-                  href: integrate-microsoft-365-defender-secops.md
-                - name: 步骤 1. 操作准备情况
-                  href: integrate-microsoft-365-defender-secops-plan.md
-                - name: 步骤二。使用零信任的准备情况评估
-                  href: integrate-microsoft-365-defender-secops-readiness.md
-                - name: 步骤三。与 SOC 服务的集成
-                  href: integrate-microsoft-365-defender-secops-services.md
-                - name: 步骤 4. 角色、职责和监督
-                  href: integrate-microsoft-365-defender-secops-roles.md
-                - name: 步骤 5. 测试使用案例
-                  href: integrate-microsoft-365-defender-secops-use-cases.md
-                - name: 步骤 6. SOC 维护任务
-                  href: integrate-microsoft-365-defender-secops-tasks.md
             - name: 事件响应手册
               href: /security/compass/incident-response-playbooks
             - name: 电子邮件通知
@@ -320,6 +304,22 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: 配置和管理 Microsoft 威胁专家功能
               href: ../mtp/configure-microsoft-threat-experts.md
+        - name: 将 Microsoft 365 Defender 集成到安全操作中
+          items:
+            - name: 简介
+              href: integrate-microsoft-365-defender-secops.md
+            - name: 步骤 1. 操作准备情况
+              href: integrate-microsoft-365-defender-secops-plan.md
+            - name: 步骤二。使用零信任的准备情况评估
+              href: integrate-microsoft-365-defender-secops-readiness.md
+            - name: 步骤三。与 SOC 服务的集成
+              href: integrate-microsoft-365-defender-secops-services.md
+            - name: 步骤 4. 角色、职责和监督
+              href: integrate-microsoft-365-defender-secops-roles.md
+            - name: 步骤 5. 测试使用案例
+              href: integrate-microsoft-365-defender-secops-use-cases.md
+            - name: 步骤 6. SOC 维护任务
+              href: integrate-microsoft-365-defender-secops-tasks.md
     - name: 操作指南
       items:
         - name: 创建试用版实验室或试点环境

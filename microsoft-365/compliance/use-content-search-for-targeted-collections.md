@@ -19,29 +19,29 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 使用网站集中的内容Microsoft 365 合规中心执行目标集合，该集合可搜索特定邮箱或网站文件夹中的项目。
-ms.openlocfilehash: 60f0f51c713abf98109362fd57e3950d2ee17ce307b3c16b6483ada69385c2f1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b165e52835165980da3621634ef29247a87490fe
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891765"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257339"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>对目标集合使用内容搜索
 
-内容搜索工具Microsoft 365 合规中心 UI 中直接搜索 Exchange 邮箱或 SharePoint 中的特定文件夹，OneDrive for Business网站。 但是，通过在实际搜索查询语法中为电子邮件指定文件夹 ID 属性 (或为网站指定路径 (DocumentLink *)* 属性，可以搜索特定文件夹（称为目标集合) ）。 当您确信对案例或特权项目做出响应的项目位于特定邮箱或网站文件夹中时，使用内容搜索执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 () 和 OneDrive for Business 网站上文件夹的 DocumentLink SharePoint 路径。 然后，可以在搜索查询中使用该文件夹 ID 或路径返回文件夹中的项目。
+内容搜索工具Microsoft 365 合规中心 UI 中直接搜索 Exchange 邮箱或 SharePoint 和 OneDrive for Business 文件夹。 但是，通过为电子邮件指定文件夹 ID 属性 (或在实际搜索查询语法中为网站指定路径 (DocumentLink *)* 属性，可以搜索称为目标集合) 的特定文件夹。 当您确信对案例或特权项目做出响应的项目位于特定邮箱或网站文件夹中时，使用内容搜索执行目标集合非常有用。 您可以使用本文中的脚本来获取邮箱文件夹的文件夹 ID 或 (和 OneDrive for Business) 文件夹的 DocumentLink SharePoint 路径。 然后，可以在搜索查询中使用该文件夹 ID 或路径返回文件夹中的项目。
 
 > [!NOTE]
 > 若要返回位于网站或 SharePoint OneDrive for Business 文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性不会返回某些媒体文件。
 
 ## <a name="before-you-run-a-targeted-collection"></a>运行目标集合之前
 
-- 您必须是安全与合规中心内电子数据展示管理员&组的成员，以运行步骤 1 中的脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 您必须是安全与合规中心中的电子数据展示管理员角色组&，以运行步骤 1 中的脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
 - 还必须在您的组织中分配"邮件收件人"Exchange Online角色。 这是运行脚本中包含的 **Get-MailboxFolderStatistics** cmdlet 所需的。 默认情况下，"邮件收件人"角色分配给组织中"组织管理"和"收件人管理"角色Exchange Online。 有关在角色分配中分配权限Exchange Online，请参阅[管理角色组成员](/exchange/manage-role-group-members-exchange-2013-help)。 您还可以创建自定义角色组，为其分配"邮件收件人"角色，然后添加需要在步骤 1 中运行脚本的成员。 有关详细信息，请参阅管理 [角色组](/Exchange/permissions-exo/role-groups)。
 
-- 本文中的脚本支持新式验证。 如果你是组织成员或组织成员，Microsoft 365如Microsoft 365 GCC脚本。 如果你是德国Office 365组织、Microsoft 365 GCC高组织或 Microsoft 365 DoD 组织，您必须编辑脚本以成功运行它。 具体来说，您必须编辑行并使用 `Connect-ExchangeOnline` *ExchangeEnvironmentName* 参数 (以及您的组织类型相应的值) 连接到 Exchange Online PowerShell。  此外，您必须编辑行，并使用 `Connect-IPPSSession` *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 参数 (以及组织类型) 的适当值连接到安全 & 合规中心 PowerShell。 有关详细信息，请参阅 连接 Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)连接安全& [PowerShell 中的示例](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
+- 本文中的脚本支持新式验证。 如果你是组织成员或组织成员，Microsoft 365使用Microsoft 365 GCC脚本。 如果你是德国Office 365组织、Microsoft 365 GCC高组织或 Microsoft 365 DoD 组织，您必须编辑脚本以成功运行它。 具体而言，您必须编辑行并使用 `Connect-ExchangeOnline` *ExchangeEnvironmentName* 参数 (以及您的组织类型相应的值) 连接到 Exchange Online PowerShell。  此外，您必须编辑行，并使用 `Connect-IPPSSession` *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 参数 (以及组织类型) 的适当值连接到安全 & 合规中心 PowerShell。 有关详细信息，请参阅 连接 Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)连接安全& [PowerShell 中的示例](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 
-- 每次运行脚本时，将创建一个新的远程 PowerShell 会话。 这意味着您可以使用所有可用的远程 PowerShell 会话。 为了防止发生这种情况，请运行以下命令来断开活动的远程 PowerShell 会话。
+- 每次运行脚本时，将创建一个新的远程 PowerShell 会话。 这意味着您可以使用所有可用的远程 PowerShell 会话。 为了防止发生这种情况，请运行以下命令来断开活动远程 PowerShell 会话。
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -59,17 +59,17 @@ ms.locfileid: "53891765"
 
 - **电子邮件地址或站点 URL：** 键入保管人的电子邮件地址，以返回邮箱Exchange和文件夹 ID 的列表。 或者键入网站或SharePoint网站的 URL OneDrive for Business返回指定网站的路径列表。 下面是一些示例：
 
-  - **Exchange**： stacig@contoso.onmicrosoft <spam> <spam> .com
+  - **Exchange**：`stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**： https <span>：//</span>contoso.sharepoint.com/sites/marketing
+  - **SharePoint**：`https://contoso.sharepoint.com/sites/marketing`
 
-  - **OneDrive for Business**： https <span>：//</span>contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com
+  - **OneDrive for Business**：`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
-- **用户凭据**：脚本将使用你的凭据连接到使用新式Exchange Online PowerShell &安全中心 PowerShell。 如前所述，您必须获得适当的权限才能成功运行此脚本。
+- **用户凭据**：脚本将使用你的凭据连接到使用新式Exchange Online PowerShell &安全与合规中心 PowerShell。 如前所述，您必须获得适当的权限才能成功运行此脚本。
 
 若要显示邮箱文件夹列表或网站文档链接列表 (路径) 名称：
 
-1. 使用 Windows PowerShell 文件名后缀将以下文本保存到脚本.ps1;例如， `GetFolderSearchParameters.ps1` 。
+1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀.ps1;例如， `GetFolderSearchParameters.ps1` 。
 
    ```powershell
    #########################################################################################################
@@ -178,7 +178,7 @@ ms.locfileid: "53891765"
    }
    ```
 
-2. 在本地计算机上，打开Windows PowerShell并转到保存脚本的文件夹。
+2. 在本地计算机上，打开Windows PowerShell转到保存脚本的文件夹。
 
 3. 运行脚本;例如：
 
@@ -195,7 +195,7 @@ ms.locfileid: "53891765"
 
 ### <a name="script-output-for-mailbox-folders"></a>邮箱文件夹的脚本输出
 
-如果您收到邮箱文件夹的 ID，脚本将连接到 Exchange Online PowerShell，运行 **Get-MailboxFolderStatisics** cmdlet，然后显示指定邮箱中的文件夹列表。 对于邮箱中的每个文件夹，脚本都会显示 **FolderPath** 列中文件夹的名称和 **FolderQuery** 列中的文件夹 ID。 此外，该脚本将 **folderId** (，即邮箱属性的名称) 文件夹 ID。 由于 **folderid** 属性是一个可搜索属性，因此您将在步骤 2 中的搜索查询  `folderid:<folderid>` 中用于搜索该文件夹。 该脚本最多显示 100 个邮箱文件夹。
+如果您收到邮箱文件夹的 ID，脚本将连接到 Exchange Online PowerShell，运行 **Get-MailboxFolderStatisics** cmdlet，然后显示指定邮箱中的文件夹列表。 对于邮箱中每个文件夹，脚本都会显示 **FolderPath** 列中文件夹的名称和 **FolderQuery** 列中的文件夹 ID。 此外，该脚本将 **folderId** (，即邮箱属性的名称) 文件夹 ID。 由于 **folderid** 属性是一个可搜索属性，因此您将在步骤 2 中的搜索查询  `folderid:<folderid>` 中使用该搜索查询来搜索该文件夹。 该脚本最多显示 100 个邮箱文件夹。
 
 > [!IMPORTANT]
 > 本文中的脚本包含编码逻辑，该逻辑将 **Get-MailboxFolderStatistics** 返回的 64 个字符的文件夹 ID 值转换为索引为搜索的 48 个字符格式。 如果只需在 PowerShell 中运行 **Get-MailboxFolderStatistics** cmdlet 来获取文件夹 ID (而不是运行本文) 中的脚本，使用该文件夹 ID 值的搜索查询将失败。 您必须运行脚本才能获取可在内容搜索中使用的格式正确的文件夹 ID。
@@ -208,7 +208,7 @@ ms.locfileid: "53891765"
 
 ### <a name="script-output-for-site-folders"></a>网站文件夹的脚本输出
 
-如果要从 SharePoint 或 OneDrive for Business 网站获取 **documentlink** 属性的路径，脚本将连接到安全 & 合规性 PowerShell，创建一个新的内容搜索，在网站中搜索文件夹，然后显示位于指定网站的文件夹列表。 该脚本显示每个文件夹的名称，并将 **documentlink** 的前缀添加到文件夹 URL。 由于 **documentlink** 属性是一个可搜索属性，因此您将在步骤 2 中的搜索查询中使用 `documentlink:<path>` property：value 对来搜索该文件夹。 脚本最多显示 200 个网站文件夹。 如果网站文件夹超过 200 个，则显示最新文件夹。
+如果要从 SharePoint 或 OneDrive for Business 网站获取 **documentlink** 属性的路径，脚本将连接到安全 & 合规性 PowerShell，创建一个新的内容搜索，在网站中搜索文件夹，然后显示位于指定网站中的文件夹列表。 该脚本显示每个文件夹的名称，并将 **documentlink** 的前缀添加到文件夹 URL。 由于 **documentlink** 属性是一个可搜索属性，因此您将在步骤 2 中的搜索查询中使用 `documentlink:<path>` property：value 对来搜索该文件夹。 脚本最多显示 200 个网站文件夹。 如果网站文件夹超过 200 个，则显示最新文件夹。
 
 下面是脚本返回的网站文件夹的输出示例。
 
@@ -216,7 +216,7 @@ ms.locfileid: "53891765"
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步骤 2：使用文件夹 ID 或文档链接执行目标集合
 
-运行脚本收集特定用户的文件夹 ID 或文档链接列表后，下一步转到 Microsoft 365 合规中心 并创建新的内容搜索以搜索特定文件夹。 您将在"内容搜索"关键字框 (中配置的搜索查询中使用 `folderid:<folderid>` `documentlink:<path>` 或 property：value 对;如果使用 **New-ComplianceSearch** cmdlet) ，您将使用 or property：value 对作为 *ContentMatchQuery* 参数的值。 您可以将 或  `folderid`  `documentlink` 属性与其他搜索参数或搜索条件组合使用。 如果查询中仅包含 或 属性，  `folderid`  `documentlink` 搜索将返回指定文件夹中的所有项目。
+运行脚本收集特定用户的文件夹 ID 或文档链接列表后，下一步是转到 Microsoft 365 合规中心 并创建新的内容搜索以搜索特定文件夹。 您将在"内容搜索"关键字框 (中配置的搜索查询中使用 `folderid:<folderid>` `documentlink:<path>` 或 property：value 对;如果使用 **New-ComplianceSearch** cmdlet) ，您将使用 or property：value 对作为 *ContentMatchQuery* 参数的值。 您可以将 或  `folderid`  `documentlink` 属性与其他搜索参数或搜索条件组合使用。 如果查询中仅包含 或 属性，  `folderid`  `documentlink` 搜索将返回指定文件夹中的所有项目。
 
 1. 转到 ，然后使用在步骤 1 中用于运行脚本的帐户 <https://compliance.microsoft.com> 和凭据登录。
 
@@ -224,7 +224,7 @@ ms.locfileid: "53891765"
 
 3. 在 **"关键字"** 框中，粘贴由脚本在步骤 1 中返回的 `folderid:<folderid>` 或  `documentlink:<path>/*` 值。
 
-    例如，以下屏幕截图中的查询将在用户的"可恢复的项目"文件夹的"清除"子文件夹中搜索任何项目 ("清除"子文件夹的属性值显示在步骤 1) `folderid` 中的屏幕截图中：
+    例如，以下屏幕截图中的查询将在用户的"可恢复的项目"文件夹的"清除"子文件夹中搜索任何项目 ("清除"子文件夹的属性值显示在步骤 `folderid` 1) 中的屏幕截图中：
 
     ![将 folderid 或 documentlink 粘贴到搜索查询的关键字框中](../media/FolderIDSearchQuery.png)
     > [!IMPORTANT]
@@ -240,7 +240,7 @@ ms.locfileid: "53891765"
 
     - 在 **"SharePoint"** 旁边，单击"选择网站"，然后添加在步骤 1 中运行脚本时指定的同一网站 URL。
 
-6. 保存要搜索的内容位置后，单击"保存&**运行**"，键入内容搜索的名称，然后单击"保存"启动目标集合搜索。
+6. 保存要搜索的内容位置后，单击"保存&**运行**"，键入内容搜索的名称，然后单击"保存"启动目标集合搜索。 
 
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>目标集合的搜索查询示例
 
@@ -264,7 +264,7 @@ ms.locfileid: "53891765"
   documentlink:"<path>/*" AND filename:nda
   ```
 
-- 本示例在网站文件夹中搜索 (文件夹，并搜索) 范围内更改的文档的任何子文件夹。
+- 本示例搜索网站文件夹 (和任何子文件夹) 在日期范围内更改的文档。
 
   ```powershell
   documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
@@ -274,7 +274,7 @@ ms.locfileid: "53891765"
 
 使用本文中的脚本执行目标集合时，请记住以下事项。
 
-- 脚本不会从结果中删除任何文件夹。 因此，结果中列出的某些文件夹可能无法搜索 (或返回零项目) 因为它们包含系统生成的内容，或者因为它们只包含子文件夹而不是邮箱项目。
+- 脚本不会从结果中删除任何文件夹。 因此，结果中列出的某些文件夹可能无法搜索 (或返回零) 因为它们包含系统生成的内容，或者因为它们仅包含子文件夹而不是邮箱项目。
 
 - 此脚本仅返回用户的主邮箱的文件夹信息。 它不会返回有关用户存档邮箱中文件夹的信息。 若要返回有关用户存档邮箱中文件夹的信息，可以编辑脚本。 为此，请更改 行 `$folderStatistics = Get-MailboxFolderStatistics $emailAddress` ， `$folderStatistics = Get-MailboxFolderStatistics $emailAddress -Archive` 然后保存并运行编辑的脚本。 此更改将返回用户存档邮箱中文件夹和子文件夹的文件夹 ID。 若要搜索整个存档邮箱，可以在搜索查询中连接所有文件夹 ID property：value 对 `OR` 和运算符。
 
@@ -282,4 +282,4 @@ ms.locfileid: "53891765"
 
 - 搜索网站文件夹时，文件夹 (`documentlink` 属性标识) 将搜索所有子文件夹。
 
-- 导出仅在搜索查询中指定属性的搜索的结果时，可以选择第一个导出选项"所有项目（不包括具有无法识别的格式的项目）已加密，或者由于其他原因未编制索引 `folderid` 。" 将始终导出文件夹中的所有项目，无论其索引状态如何，因为文件夹 ID 始终为索引。
+- 导出仅指定搜索查询中的属性的搜索的结果时，可以选择第一个导出选项"由于其他原因，所有项目（不包括无法识别的格式的项目）都经过加密或未编制索引 `folderid` "。 将始终导出文件夹中的所有项目，无论其索引状态如何，因为文件夹 ID 始终为索引。

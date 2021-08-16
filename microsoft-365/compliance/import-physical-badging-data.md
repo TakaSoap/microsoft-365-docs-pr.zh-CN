@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，以将数据从组织的物理密码系统导入Microsoft 365。 这允许你在内部风险管理策略中使用此数据，以帮助你检测特定用户对可能向组织指示可能的内部威胁的物理建筑物的访问。
-ms.openlocfilehash: a300107af1d3fe07f208f7e3f239f75a9cd6e5af
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 800614ef38e065027238d32bf877a059e2022378a1a86b2f33c6f11f3827de2a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895415"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以在预览版中导入 () 
 
-您可以在 Microsoft 365 合规中心中设置数据连接器，以导入物理密码数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部恶意[](insider-risk-management.md)活动或数据盗窃的攻击。
+可以在 Microsoft 365 合规中心 中设置数据连接器，以导入物理密码数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部恶意[](insider-risk-management.md)活动或数据盗窃的攻击。
 
 设置物理保护连接器包括以下任务：
 
@@ -31,7 +31,7 @@ ms.locfileid: "51994823"
 
 - 使用由物理保护数据连接器定义的架构创建 JSON 有效负载。
 
-- 在安全与合规中心内创建Microsoft 365数据连接器。
+- 在服务器中创建物理Microsoft 365 合规中心。
 
 - 运行脚本以将物理保护代码数据推送到 API 终结点。
 
@@ -69,7 +69,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 |AssetId|物理资产或物理访问点的参考 ID。|字母数字字符串|
 |AssetName|物理资产或物理访问点的友好名称。|字母数字字符串|
 |EventTime|访问时间戳。|日期和时间（UTC 格式）|
-|AccessStatus|或 `Success` 的值 `Failed`|String|
+|AccessStatus|或 `Success` 的值 `Failed`|字符串|
 |||
 
 下面是符合所需架构的 JSON 文件示例：
@@ -132,7 +132,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>步骤 3：创建物理保护连接器
 
-下一步是在安全与合规中心创建Microsoft 365连接器。 在步骤 4 中运行脚本后，将在步骤 3 中创建的 JSON 文件进行处理并推送到在步骤 1 中配置的 API 终结点。 在此步骤中，请确保复制创建连接器时生成的 JobId。 运行脚本时，将使用 JobId。
+下一步是在服务器中创建一个Microsoft 365 合规中心。 在步骤 4 中运行脚本后，将在步骤 3 中创建的 JSON 文件进行处理并推送到在步骤 1 中配置的 API 终结点。 在此步骤中，请确保复制创建连接器时生成的 JobId。 运行脚本时，将使用 JobId。
 
 1. 转到 ， <https://compliance.microsoft.com> 然后单击左侧 **导航中的** "数据连接器"。
 
@@ -213,7 +213,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>步骤 5：监视物理保护连接器
 
-创建物理保护连接器并推送物理保护数据后，可以在安全与合规中心内查看Microsoft 365状态。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建物理保护连接器并推送物理保护数据后，可以查看连接器并上传Microsoft 365 合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
 1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

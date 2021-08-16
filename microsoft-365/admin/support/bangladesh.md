@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4b35675ee42b0439a353efbc38e045004e47f455
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f979d15b65d590b14055770387ff88881eabcf79dd413a27a66e2a4f0de909c3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862295"
 ---
 # <a name="contact-support-for-bangladesh"></a>联系孟加拉国支持人员
 

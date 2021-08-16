@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 905f1bc317d2cf2aa639edd1362d216e8d91413b
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 11b17f8e1013403796887ed57c6d29ab2cf52ffc7dab5d8a92b4b6d2c34d1ee1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53648131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853879"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3066ccf803d5a2cad907ae7f983f3cafbb41112d
-ms.sourcegitcommit: b3c4816b55657b87ed4a5f6a4abe3d505392218e
+ms.openlocfilehash: 62c8fda1276089ba4c9f6e7bd7a0839ddf88256d3c30f8c62f9eb25daadf7b40
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53725848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863208"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -45,6 +45,8 @@ ms.locfileid: "53725848"
 - **安全管理员**- 具有 [此Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)角色的用户可以在安全中心Microsoft 365和其他门户和服务中管理安全设置。
 
 - **安全** 操作员 - 具有 [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)此 Azure Active Directory 角色的用户可以管理警报，并且对安全相关功能（包括安全中心内Microsoft 365具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
+
+如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有针对Microsoft 365 Defender的Office，您可以使用表而不是表创建自定义 `Email` `Identity` 检测。  
 
 若要管理所需的权限，全局 **管理员可以** ：
 

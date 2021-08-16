@@ -8,18 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: accebb69977600950b2c88b35f9223db1379f56cb6e8e44179b503ea9748f03d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7752c5af144ca5b02f05bbdd6632df808cf2f63c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806999"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257650"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -59,8 +59,8 @@ ms.locfileid: "53806999"
 
 3. 选择 **操作**  >  **导入自定义视图...**
 
-  > [!div class="mx-imgBorder"]
-  > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画](images/events-import.gif)
+   > [!div class="mx-imgBorder"]
+   > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画](images/events-import.gif)
 
 4. 导航到您为您想要的自定义视图提取 XML 文件的位置并选择它。
 
@@ -74,14 +74,14 @@ ms.locfileid: "53806999"
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
-  > [!div class="mx-imgBorder"]
-  > ![在事件查看器窗口中突出显示"创建自定义视图"选项的动画](images/events-create.gif)
+   > [!div class="mx-imgBorder"]
+   > ![在事件查看器窗口中突出显示"创建自定义视图"选项的动画](images/events-create.gif)
 
 3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“**是**”。
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择“确定”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -143,47 +143,52 @@ ms.locfileid: "53806999"
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
+2. 展开 **Microsoft >** 服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画](images/event-viewer.gif)
 
-功能 | 提供程序/源 | 事件 ID | 描述
-:-|:-|:-:|:-
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 1 | ACG 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 2 | ACG 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 3 | 不允许子进程审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 4  | 不允许子进程阻止
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 5  | 阻止低完整性图像审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 6  | 阻止低完整性图像阻止
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 7  | 阻止远程图像审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 8  | 阻止远程图像阻止
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 9  | 禁用 win32k 系统调用审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 10  | 禁用 win32k 系统调用阻止
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 11 | 代码完整性防护审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 12  | 代码完整性防护阻止
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 13 | EAF 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 14  | EAF 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 15 | EAF+ 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 16  | EAF+ 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 17  | IAF 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 18  | IAF 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 19 | ROP StackPivot 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 20 | ROP StackPivot 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  |  21 | ROP CallerCheck 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 22 | ROP CallerCheck 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 23 | ROP SimExec 审核
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 24 | ROP SimExec 强制
-漏洞保护 | WER-诊断 | 5  | CFG 阻止
-漏洞保护 | Win32K (Operational)  | 260 | 不受信任的字体
-网络保护 | Windows Defender (操作)  | 5007 | 更改设置时的事件
-网络保护 | Windows Defender (操作)  | 1125 | 在审核模式下触发网络保护时的事件
-网络保护 | Windows Defender (操作)  | 1126 | 在阻止模式下触发网络保护时的事件
-受控文件夹访问 | Windows Defender (操作)  | 5007 | 更改设置时的事件
-受控文件夹访问 | Windows Defender (操作)  | 1124 | 已审核的受控文件夹访问权限事件
-受控文件夹访问 | Windows Defender (操作)  | 1123 | 阻止的受控文件夹访问权限事件
-受控文件夹访问 | Windows Defender (操作)  | 1127 | 阻止的受控文件夹访问权限扇区写入块事件
-受控文件夹访问 | Windows Defender (操作)  | 1128 | 审核的受控文件夹访问权限扇区写入块事件
-攻击面减少 | Windows Defender (操作)  | 5007 | 更改设置时的事件
-攻击面减少 | Windows Defender (操作)  | 1122 | 在审核模式下触发规则时的事件
-攻击面减少 | Windows Defender (操作)  | 1121 | 在阻止模式下触发规则时的事件
+<br>
+
+****
+
+|功能|提供程序/源|事件 ID|描述|
+|---|---|:---:|---|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |1 |ACG 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |2 |ACG 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |3 |不允许子进程审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |4 |不允许子进程阻止|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |5 |阻止低完整性图像审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |6 |阻止低完整性图像阻止|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |7 |阻止远程图像审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |8 |阻止远程图像阻止|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |9 |禁用 win32k 系统调用审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |10 |禁用 win32k 系统调用阻止|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |11 |代码完整性防护审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |12 |代码完整性防护阻止|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |13 |EAF 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |14 |EAF 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |15 |EAF+ 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |16 |EAF+ 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |17 |IAF 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |18 |IAF 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |19|ROP StackPivot 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |20|ROP StackPivot 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) | 21|ROP CallerCheck 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |22|ROP CallerCheck 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |23|ROP SimExec 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |24|ROP SimExec 强制|
+|漏洞保护|WER-诊断|5 |CFG 阻止|
+|漏洞保护|Win32K (Operational) |260|不受信任的字体|
+|网络保护|Windows Defender (操作) |5007|更改设置时的事件|
+|网络保护|Windows Defender (操作) |1125|在审核模式下触发网络保护时的事件|
+|网络保护|Windows Defender (操作) |1126|在阻止模式下触发网络保护时的事件|
+|受控文件夹访问|Windows Defender (操作) |5007|更改设置时的事件|
+|受控文件夹访问|Windows Defender (操作) |1124|已审核的受控文件夹访问权限事件|
+|受控文件夹访问|Windows Defender (操作) |1123|阻止的受控文件夹访问权限事件|
+|受控文件夹访问|Windows Defender (操作) |1127|阻止的受控文件夹访问权限扇区写入块事件|
+|受控文件夹访问|Windows Defender (操作) |1128|审核的受控文件夹访问权限扇区写入块事件|
+|攻击面减少|Windows Defender (操作) |5007|更改设置时的事件|
+|攻击面减少|Windows Defender (操作) |1122|在审核模式下触发规则时的事件|
+|攻击面减少|Windows Defender (操作) |1121|在阻止模式下触发规则时的事件|
+|

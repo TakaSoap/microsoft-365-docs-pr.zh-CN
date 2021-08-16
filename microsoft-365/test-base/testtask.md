@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 64abb5b10e3dc1d52b6baf8ceccd5aff2baacefe
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 4c721dfcc95a2e07cdbfc04de3d3b6df872e036d639e86c5330db942267fa3e3
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862332"
 ---
 # <a name="step-4-the-tasks-tab"></a>步骤 4："任务"选项卡
 
@@ -57,4 +57,4 @@ _**Zip_file_uploaded**_
 
 查看下一篇文章中的"测试选项"选项卡的详细信息 
 > [!div class="nextstepaction"]
-> [后续步骤](testoptions.md)
+> [下一步](testoptions.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a4d588e869fed684c4424578025a50d36a2280e
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: de6925bcfc70285516bf12c07540b9c74caec9ea8210850cc1a3cc44f6a1ed92
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53853867"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -97,7 +97,7 @@ ms.locfileid: "53650411"
 
 可以通过命令行完成重要任务，如控制产品设置和触发按需扫描：
 
-|组        |应用场景                                   |命令                                                                           |
+|Group        |应用场景                                   |命令                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |配置|打开/关闭实时保护           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |配置|打开/关闭云保护               |`mdatp config cloud --value [enabled/disabled]`                                   |

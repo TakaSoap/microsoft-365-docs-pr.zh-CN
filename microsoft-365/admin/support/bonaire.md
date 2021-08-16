@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 602812fb866e5d4940b2ccedfb90c46ddd9893a6
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e03c1c7a07cf754c29aec37ce13dd6b74b77860b481f2e241e8d830c515ddc59
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296884"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53862283"
 ---
 # <a name="contact-support-for-bonaire"></a>联系博里达的支持人员
 

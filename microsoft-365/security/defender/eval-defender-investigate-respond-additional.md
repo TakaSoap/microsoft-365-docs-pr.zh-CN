@@ -1,5 +1,5 @@
 ---
-title: 尝试Microsoft 365 Defender环境中使用事件响应功能，确定事件的优先级并管理事件，配置自动调查和响应，以及使用高级搜寻
+title: 尝试Microsoft 365 Defender环境中使用事件响应功能
 description: 在威胁检测中Microsoft 365 Defender事件响应功能，确定事件的优先级并管理事件、自动调查和使用高级搜寻。
 keywords: Microsoft 365 Defender试用版， 试用 Microsoft 365 Defender， 评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6f8e8ed59c38c00c2158292b343d5ce347ebf297
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: aaf30aa5f598fffc5f8f53fc92fef5571b3c851b0bd9e48ef3ca8b60ad9e5e43
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53544729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53863253"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
@@ -181,7 +181,7 @@ ms.locfileid: "53544729"
 
    1. 将查询的时间范围更改为最近 24 小时。 假设你运行上述模拟时发送的电子邮件是过去 24 小时发送的，否则请根据需要更改时间范围。
 
-   1. 选择 **"运行查询"。** 根据你的试点环境，结果可能会有所不同。
+   1. 选择 **运行查询**。 根据你的试点环境，结果可能会有所不同。
 
       > [!NOTE]
       > 有关限制数据返回的筛选选项，请参阅下一步。
@@ -283,7 +283,7 @@ ms.locfileid: "53544729"
 
    对于此试点，你可能希望将此规则限制为生产环境中的测试设备的子集。
 
-6. 选择“**创建**”。 然后，从 **导航面板中选择** "自定义检测规则"。
+6. 选择 **创建**。 然后，从 **导航面板中选择** "自定义检测规则"。
 
    ![菜单中的"自定义检测规则"选项示例](../../media/mtp/fig27a.png)
 

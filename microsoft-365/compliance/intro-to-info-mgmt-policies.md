@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用信息管理策略控制和跟踪内容保留时间或用户可以对内容采取的操作等内容。
-ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4584a23156a7dc492601717b0453cf7d9526f2654058ca0f311a370770518a73
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879355"
 ---
 # <a name="introduction-to-information-management-policies"></a>信息管理策略简介
 
@@ -72,7 +72,7 @@ ms.locfileid: "44815509"
   
 ![文档库的设置页上的信息管理策略链接](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-备注 
+注释 
   
 只有当列表或库不支持多种内容类型时，才能为该列表或库创建信息管理策略。 如果列表或库支持多种内容类型，则需要为与该列表或库关联的每个列表内容类型定义信息管理策略。  (与特定列表或库关联的网站内容类型的实例称为列表内容类型。) 
   

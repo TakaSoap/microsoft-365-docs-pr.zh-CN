@@ -19,23 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在手机上Microsoft 365管理移动应用。
-ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何在手机上Microsoft 365 管理移动应用。
+ms.openlocfilehash: 591a5440d3257afad9728b75013737daebad73694322774db19e8eacb0700abb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53861863"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>在Microsoft 365安装管理移动应用
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>将Microsoft 365 管理移动应用安装在手机上
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-可以使用管理Microsoft 365移动应用管理用户、监视服务运行状况以及从手机执行其他管理任务。
+可以使用移动Microsoft 365 管理管理用户、监视服务运行状况以及从手机执行其他管理任务。
 
 ## <a name="try-it"></a>试一试！
 
-1. 若要获取 Microsoft 365 Admin 移动应用，Microsoft 365设备的应用商店中搜索管理员并安装它。
+1. 若要获取Microsoft 365 管理应用，Microsoft 365 管理设备在应用商店中搜索并安装应用。
 2. 使用全局管理员电子邮件地址登录，并查看仪表板以查看服务运行状况、监视用户许可证以及查看消息和服务请求。
 3. 以下是你可以对应用执行一些常见任务：
 

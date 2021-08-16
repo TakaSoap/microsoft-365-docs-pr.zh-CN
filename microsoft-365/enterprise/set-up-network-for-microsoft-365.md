@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 查找指向文章的链接，这些文章包含可帮助您为 Microsoft 365设置网络的信息，包括网络连接概述和终结点列表。
-ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2feed0b600a107158b2ae32734169ae9d68294228d7eb449170dfe8a92511def
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904427"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>为用户设置Microsoft 365
 

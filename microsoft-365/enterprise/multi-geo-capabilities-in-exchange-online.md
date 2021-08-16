@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解邮箱中的多地理位置Exchange Online，如功能限制和邮箱放置。
-ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 1a6d5ff5dfe6072266a707e7263ae673d6605eb4f7e531bb8a62ebd60606bb27
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864191"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 

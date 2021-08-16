@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解数据丢失防护警报和警报仪表板。
-ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760703"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895655"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>了解数据丢失防护警报仪表板
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760703"
 
 ## <a name="workloads"></a>工作负载
 
-DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)（位于[Microsoft 365中心](https://compliance.microsoft.com/)）中，显示有关这些工作负载的 DLP 策略警报：
+DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)（位于[Microsoft 365 合规中心](https://compliance.microsoft.com/)中）显示有关这些工作负载的 DLP 策略警报：
 
 - Exchange
 - SharePoint
@@ -70,12 +70,12 @@ DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?v
 
 |属性名 |说明| 事件类型|
 |---------|---------|---------|
-|user | 执行导致策略匹配的操作的用户 | 所有事件|
+|用户 | 执行导致策略匹配的操作的用户 | 所有事件|
 |hostname | 发生 DLP 策略匹配的计算机的主机名 | 设备事件|
 |IP 地址 | 发生 DLP 策略匹配的计算机的 IP 地址 | 设备事件|
 |sha1 |文件的 SHA-1 哈希 | 设备事件|
 |sha256 | 文件的 SHA-256 哈希 | 设备事件|
-|MDATP设备 ID | 终结点设备MDATP ID|
+|MDATP 设备 ID | 终结点设备 MDATP ID|
 |文件大小 | 文件大小| SharePoint、OneDrive 和设备事件|
 |文件路径 | DLP 策略匹配所涉及的项目的绝对路径 | SharePoint、OneDrive 和设备事件|
 |电子邮件收件人 |如果电子邮件是符合 DLP 策略的敏感项目，则此字段包括该电子邮件的收件人| Exchange事件|

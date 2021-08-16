@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 616373c67d740154682387284ba265dfa64f9799
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: d65f6f0aa2d1d4d4017ffa768102be5b3d25cfb9e5ad08f167f98b87651fcfbc
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53649751"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53879925"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 

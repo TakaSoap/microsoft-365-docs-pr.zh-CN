@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 70ef9aabd86169cd64f252f26a792a380dc6fe44ddb7060bd6c7a8f19d3c6c22
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257282"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>载入以前版本的 Windows
 
@@ -41,7 +41,7 @@ ms.locfileid: "53806192"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)。
 
-Defender for Endpoint 扩展支持以包括低级别操作系统，从而在受支持的版本上提供高级攻击检测和Windows功能。
+Defender for Endpoint 扩展了支持，以包括低级别操作系统，在受支持的版本上提供高级攻击检测和Windows功能。
 
 若要将低级别Windows客户端终结点载入到 Defender for Endpoint，你将需要：
 
@@ -55,7 +55,7 @@ Defender for Endpoint 扩展支持以包括低级别操作系统，从而在受�
 > [!IMPORTANT]
 > 只有当您的组织使用 SCEP System Center Endpoint Protection (时，才需要) 。
 
-Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止潜在恶意文件或可疑恶意软件，提供恶意软件检测的可见性并阻止攻击在组织中传播。
+Defender for Endpoint 与 System Center Endpoint Protection集成，以通过禁止潜在恶意文件或可疑恶意软件来查看恶意软件检测，并阻止攻击在组织中传播。
 
 若要启用此集成，需要执行以下步骤：
 
@@ -80,14 +80,14 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 
     > [!NOTE]
     > 仅适用于 Windows 7 SP1 Enterprise Windows 7 SP1 Pro。
-    > 不要安装 4.0.x .NET Framework 4.0.x，因为它将否定上述安装。
+    > 不要安装 .NET Framework 4.0.x，因为它将否定上述安装。
 
 - 满足 Azure Log Analytics 代理的最低系统要求。 有关详细信息，请参阅使用 Log [Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)从环境中的计算机收集数据。
 
-1. 下载代理安装文件[：Windows 64](https://go.microsoft.com/fwlink/?LinkId=828603)位代理或 Windows [32 位代理](https://go.microsoft.com/fwlink/?LinkId=828604)。
+1. 下载代理设置文件[：Windows 64](https://go.microsoft.com/fwlink/?LinkId=828603)位代理或 Windows [32 位代理](https://go.microsoft.com/fwlink/?LinkId=828604)。
 
 2. 获取工作区 ID：
-   - 在 Defender for Endpoint 导航窗格中，选择"设置 >终结点 **">">载入"**
+   - 在 Defender for Endpoint 导航窗格中，选择"设置 >**终结点">">载入"**
    - 选择 **Windows 7 SP1 和 8.1** 作为操作系统
    - 复制工作区 ID 和工作区密钥
 
@@ -109,10 +109,13 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 ### <a name="configure-proxy-and-internet-connectivity-settings"></a>配置代理和 Internet 连接设置
 
 - 每个Windows终结点必须能够使用 HTTPS 连接到 Internet。 此连接可以是直接的、使用代理的，也可以通过 [OMS 网关进行](/azure/log-analytics/log-analytics-oms-gateway)。
-- 如果代理或防火墙默认阻止所有流量，并仅允许特定域通过或 HTTPS 扫描 (SSL 检查) 已启用，请确保启用对 Defender [for Endpoint 服务 URL 的访问](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+- 如果代理或防火墙默认阻止所有流量，并且仅允许特定域通过或 HTTPS 扫描 (SSL 检查) 已启用，请确保启用对 [Defender for Endpoint 服务 URL 的访问](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>运行检测测试以验证载入
+载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
 
 ## <a name="offboard-client-endpoints"></a>载出客户端终结点
 
-若要卸载，你可以从终结点卸载 MMA 代理或将其从报告分离到 Defender for Endpoint 工作区。 离开代理后，终结点将不再将传感器数据发送到 Defender for Endpoint。
+若要卸载，你可以从终结点卸载 MMA 代理或将其从报告分离到 Defender for Endpoint 工作区。 在离开代理后，终结点将不再将传感器数据发送到 Defender for Endpoint。
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevele-belowfoldlink)。
