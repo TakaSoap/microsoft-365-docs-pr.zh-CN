@@ -2,8 +2,8 @@
 title: 在企业测试环境中注册 iOS/iPadOS Microsoft 365 Android 设备
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2020
 audience: ITPro
@@ -14,14 +14,14 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在测试环境中注册Microsoft 365并远程管理设备。
-ms.openlocfilehash: e00aa4b51d5e3a9cc88c9d73ef644c56d4336b8b6120df4ac34de061200af317
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855091"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356740"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试Microsoft 365注册 iOS 和 Android 设备
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试环境的 Microsoft 365注册 iOS 和 Android 设备
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
@@ -35,7 +35,7 @@ ms.locfileid: "53855091"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -44,7 +44,7 @@ ms.locfileid: "53855091"
 如果要在模拟的企业中注册 iOS/iPadOS 和 Android 设备，请按照传递 [身份验证 中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并且可以在代表典型组织的环境中试验它。
+> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并且可以在代表典型组织的环境中试验它。
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>阶段 2：注册 iOS 和 Android 设备
 
@@ -70,7 +70,7 @@ Microsoft Intune远程锁定和密码重置功能。 如果有人丢失了设备
 
 有关你可以远程运行的其他任务，请参阅 [可用的设备操作](/mem/intune/remote-actions/device-management#available-device-actions)。
     
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 探索 [测试环境中](m365-enterprise-test-lab-guides.md#mobile-device-management) 的其他移动设备管理功能。
 

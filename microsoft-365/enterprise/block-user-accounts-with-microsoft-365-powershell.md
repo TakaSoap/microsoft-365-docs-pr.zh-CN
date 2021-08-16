@@ -1,7 +1,7 @@
 ---
-title: 使用 PowerShell Microsoft 365用户帐户
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 使用 powerShell Microsoft 365用户帐户
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/16/2020
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: 如何使用 PowerShell 阻止和取消阻止对帐户Microsoft 365访问。
-ms.openlocfilehash: 53988dbe995c67dd65e0b50f013b77dd7165e6511a50da8d95b43d7536c049e6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fd9eba96b09a73b2fb6e87b30096dbf8186caceb
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819531"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356428"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-阻止访问 Microsoft 365 帐户时，可防止任何人使用该帐户登录并访问组织中Microsoft 365和数据。 可以使用 PowerShell 阻止对单个或多个用户帐户的访问。
+当您阻止访问 Microsoft 365 帐户时，可以防止任何人使用该帐户登录并访问组织中服务和Microsoft 365数据。 可以使用 PowerShell 阻止对单个或多个用户帐户的访问。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt。* 将此文件名替换为文本文件的路径和文件名。
+在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt*。 将此文件名替换为文本文件的路径和文件名。
 
 若要阻止访问该文本文件中列出的帐户，请运行以下命令：
 
@@ -127,7 +127,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 >[!Note]
 >PowerShell Core 不支持模块Microsoft Azure Active Directory模块Windows PowerShell名称中具有 *Msol* 的 cmdlet。 您必须从应用程序运行这些 cmdlet Windows PowerShell。
 
-此示例阻止访问用户帐户 *fabricec litwareinc.com。 \@*
+此示例阻止对用户帐户 *fabricec litwareinc.com。 \@*
 
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -155,7 +155,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt。* 将此文件名替换为文本文件的路径和文件名。
+在下列命令中，示例文本文件为 *C：\My Documents\Accounts.txt*。 将此文件名替换为文本文件的路径和文件名。
 
 若要阻止对文本文件中列出的帐户的访问，请运行以下命令：
 

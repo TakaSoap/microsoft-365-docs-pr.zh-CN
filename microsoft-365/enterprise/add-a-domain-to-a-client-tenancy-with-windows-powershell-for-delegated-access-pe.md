@@ -1,7 +1,7 @@
 ---
-title: 使用 DAP 合作伙伴的 Windows PowerShell将域添加到客户端租赁
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 通过 DAP 合作伙伴的 Windows PowerShell域添加到客户端租赁
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,20 +17,20 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 摘要：使用 PowerShell for Microsoft 365向现有客户租户添加备用域名。
-ms.openlocfilehash: a7a1039f29b73cef50ed14fe6ad3189faf3365087e9526f5517b866ac0440f77
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90eec48de55a01dd2298bed1ff0dc068d57da3bb
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835447"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356116"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 您可以使用 PowerShell 创建新域并将其与客户租赁关联，Microsoft 365比使用 Microsoft 365 管理中心。
 
-委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们Microsoft 365订阅捆绑到他们的服务产品/服务中。 当他们销售 Microsoft 365 订阅时，将自动被授予代表 (AOBO) 管理客户租赁的权限，以便他们可以管理和报告客户租赁。
+委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们Microsoft 365订阅捆绑到他们的服务产品/服务中。 当他们销售 Microsoft 365 订阅时，他们将自动获得代表 (AOBO) 管理客户租赁的权限，以便可以管理和报告客户租赁。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 本主题中的过程需要您连接到 连接[Microsoft 365 PowerShell 进行连接](connect-to-microsoft-365-powershell.md)。
@@ -49,14 +49,14 @@ ms.locfileid: "53835447"
 
 ## <a name="create-domains"></a>创建域
 
- 您的客户可能会要求您创建与其租赁关联的其他域，因为他们不想让默认的<domain>.onmicrosoft.com域成为向全世界展示其公司标识的主要域。此步骤将引导您创建与您的客户租赁相关联的新域。
+ 您的客户可能会要求您创建与其租赁关联的其他域，因为他们不想让默认的\<domain>.onmicrosoft.com域成为向全世界展示其公司标识的主要域。此步骤将引导您创建与您的客户租赁相关联的新域。
 
 > [!NOTE]
-> 若要执行其中某些操作，对于"向支持的公司分配管理访问权限"设置，登录时使用的合作伙伴管理员帐户必须设置为"完全管理"，此设置位于 Microsoft 365 管理中心 中管理员帐户的详细信息中。 有关管理合作伙伴管理员角色详细信息，请参阅 [合作伙伴：提供委派管理](https://go.microsoft.com/fwlink/p/?LinkId=532435)。
+> 若要执行其中一些操作，对于"向支持的公司分配管理访问权限"设置，登录时使用的合作伙伴管理员帐户必须设置为"完全管理"，此设置位于 Microsoft 365 管理中心 中管理员帐户的详细信息中。 有关管理合作伙伴管理员角色的信息，请参阅合作伙伴 [：提供委派管理](https://go.microsoft.com/fwlink/p/?LinkId=532435)。
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>在 Azure Active Directory 中创建域
 
-此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。 当你向适用于企业的 Microsoft 企业认证证明你拥有公开注册的域Microsoft 365这一点。
+此命令在 Azure Active Directory 中创建域，但不会将其与公开注册的域相关联。 当你向适用于企业的 Microsoft 客户证明你拥有公开注册的Microsoft 365时，这一点将出现。
 
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -104,7 +104,7 @@ nslookup -type=TXT <FQDN of registered domain>
 
 ### <a name="validate-domain-ownership-in-microsoft-365"></a>验证域中的域Microsoft 365
 
-最后一步，验证Microsoft 365注册的域是否拥有。 执行此步骤后，Microsoft 365将开始接受路由到新域名的流量。 若要完成域创建和注册过程，请运行此命令。
+最后一步，验证Microsoft 365注册的域是否拥有该域。 执行此步骤后，Microsoft 365将开始接受路由到新域名的流量。 若要完成域创建和注册过程，请运行此命令。
 
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

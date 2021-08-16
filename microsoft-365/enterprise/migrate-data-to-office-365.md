@@ -1,7 +1,7 @@
 ---
 title: 将组织数据迁移到Microsoft 365 企业版
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍可帮助您将组织数据迁移到 Microsoft 365。
-ms.openlocfilehash: 6eff9d525f25817f7042e2ce77cfaf0e08170df794db22b13cced81fa791f43e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80efbafe17d0a35da323c6f6274e18af270c4985
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858683"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355948"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>将组织数据迁移到Microsoft 365 企业版
 
@@ -30,11 +30,11 @@ ms.locfileid: "53858683"
 
 我们[的基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可帮助你尽可能Microsoft 365使用你的服务和应用程序。 这将跳过混合方案以及更高级的方法，以迁移到Microsoft 365。 
   
-如果需要有关设置Microsoft 365的帮助[，FastTrack](https://fasttrack.microsoft.com/office)是部署 Microsoft 365 的最简单方法，还可以登录并使用 Microsoft 365[指南](setup-guides-for-microsoft-365.md)。
+如果需要有关设置Microsoft 365的帮助，FastTrack是部署 Microsoft 365[](https://fasttrack.microsoft.com/office)的最简单方法，还可以登录并使用 Microsoft 365[指南](setup-guides-for-microsoft-365.md)。
 
 ## <a name="migrate-email-to-microsoft-365"></a>将电子邮件迁移到Microsoft 365
 - 使用 [Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)通过 Exchange 混合迁移。（管理员）
-- 了解有关将电子邮件[迁移到电子邮件的不同方法Microsoft 365。](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- 了解有关将电子邮件迁移到电子邮件[的不同方法Microsoft 365。](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)
 - 寻找[可以迁移组织中的人员的电子邮件、联系人和日历](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)的替代方法。
 
 ## <a name="migrate-files-and-folders"></a>迁移文件和文件夹

@@ -2,8 +2,8 @@
 title: Microsoft 365 测试环境的密码写回
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/22/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: 5b75cc99d9f0f8f8d28a99d597406a605001721a29f60b6177e68a596a54e3a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ad01942b0da7858895d58ecd3bf5c83207e88b9
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840847"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356212"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
@@ -40,7 +40,7 @@ ms.locfileid: "53840847"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
@@ -76,7 +76,7 @@ ms.locfileid: "53840847"
 
 3. 在菜单栏上，选择"查看 **"。** 如果未 **启用** 高级功能，请选择它以启用它。
 
-4. 在树窗格中，选择并按住" (或右键单击") "，选择"属性"，然后选择"安全 **"** 选项卡。
+4. 在树窗格中，选择并按住 (或右键单击) ，选择"属性"，然后选择"安全 **"** 选项卡。
 
 5. 选择“高级”。
 
@@ -111,7 +111,7 @@ ms.locfileid: "53840847"
 
 5. 在 **"连接 Azure AD"** 页上，输入全局管理员帐户凭据，然后选择"下一 **步"。**
 
-6. 在"连接"和 **"域/OU 筛选**"页上，选择"下一 **步"。** 
+6. 在 **"连接"** 和 **"域/OU 筛选**"页上，选择"下一 **步"。**
 
 7. 在"**可选功能"** 页上，选择 **"密码写回**"，然后选择"下一 **步"。**
 

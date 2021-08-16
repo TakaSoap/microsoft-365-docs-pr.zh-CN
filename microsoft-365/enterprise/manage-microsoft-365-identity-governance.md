@@ -1,7 +1,7 @@
 ---
 title: 管理Microsoft 365身份管理
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何使用标识Microsoft 365功能。
-ms.openlocfilehash: a3e5ae78c0c84716d4290badfa034641b8ca696f8fc99b06f9b869437691f371
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9b353a83b79c2b66ca224914a7d33a4854919d4e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899339"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356668"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>管理Microsoft 365身份管理
 
 标识治理的功能就是保护、监视和审核对关键资产的访问，同时确保员工高效工作。 例如，借助标识治理，可以确保相应的用户有权访问正确的资源，并确定该访问权限是否随时间而变化。
 
-有关详细信息，请参阅 Azure [AD ](/azure/active-directory/governance/identity-governance-overview)Azure Active Directory (标识) 概述。
+有关详细信息，请参阅 Azure [AD ](/azure/active-directory/governance/identity-governance-overview)Azure Active Directory (的标识) 。
 
 ## <a name="set-up-azure-ad-access-reviews"></a>设置 Azure AD 访问评审
 
@@ -57,7 +57,7 @@ Azure AD 访问评审允许你查看用户的访问权限，以确保只有合�
 
 Wiht Azure AD 权利管理，可以通过自动执行访问请求工作流、访问分配、审阅和过期来大规模管理标识和访问生命周期。
 
-员工需要访问各种组、应用程序和网站才能执行他们的工作。 管理此访问可能充满挑战，因为要求发生变化、添加了新应用程序，或者用户需要其他访问权限。 与其他组织协作时，您可能不知道其他组织中的哪些人员需要访问组织的资源，外部用户将不知道组织正在使用哪些应用程序、组或网站。
+员工需要访问各种组、应用程序和网站才能执行他们的工作。 管理此访问可能充满挑战，因为要求发生变化、添加了新应用程序，或者用户需要其他访问权限。 与其他组织协作时，您可能不知道其他组织中的哪些人员需要访问您组织的资源，外部用户将不知道您的组织正在使用哪些应用程序、组或网站。
 
 Azure AD 权利管理可帮助你更高效地管理对内部和外部SharePoint组、应用程序和网站的访问权限。
  

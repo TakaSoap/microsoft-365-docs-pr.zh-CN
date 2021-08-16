@@ -1,9 +1,9 @@
 ---
 title: Contoso 的 Microsoft 365 企业应用版部署
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Microsoft 365 企业应用版。
-ms.openlocfilehash: 858d83f02bc00874c639815ce4af6a491a0352764f9ddb7ab024d3d9fc37ebe7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65c73ccccd3e0ca5a3d9e09d1643692d56f5c341
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899497"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356284"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 的 Microsoft 365 企业应用版部署
 
@@ -43,14 +43,14 @@ Contoso 将电脑升级到 Windows 10 企业版 Microsoft 365 企业应用版，
 
 ## <a name="managing-deployment-and-updates"></a>管理部署和更新
 
-Microsoft 365 企业应用版新的发布模型：Office即服务。 服务模型使使用新功能保持最新状态变得容易。 但通常需要 IT 部门更改其部署和测试新版本。 为了最大限度地减少兼容性问题并确保其计算机保持最新，Contoso 分两个阶段Windows Office和部署计算机：
+Microsoft 365 企业应用版新的发布模型：Office即服务。 服务模型使使用新功能保持最新状态变得容易。 但通常需要 IT 部门更改其部署和测试新版本。 为了最大限度地减少兼容性问题并确保其计算机保持最新，Contoso 分两个阶段Windows和Office部署和部署：
 
 - 首先，他们Microsoft 365 企业应用版组织中一小组具有代表性的设备进行部署。 此试点组用于测试应用、加载项和硬件Microsoft 365 企业应用版。
 - 四个月后，在解决了试点组中有关应用、加载项和硬件的所有关键问题后，Contoso 将 Microsoft 365 企业应用版部署到组织中的剩余设备（广泛组）。
 
 Contoso 从云Office自动更新，而不是使用 Configuration Manager 管理更新。 基于云的更新可减少管理开销，同时确保设备保持最新状态。
 
-Contoso 对功能更新采用与用于部署 Office 相同的两阶段方法：试点组中设备接收功能更新的时间比组织中其余组织的设备早四个月 (广泛组) 。 若要为用户启用Office，Contoso 使用了两个推荐的[更新频道](/DeployOffice/overview-update-channels)：
+Contoso 对功能更新采用与用于部署 Office 相同的两阶段方法：试点组中设备接收功能更新的时间比组织中其他 (广泛组) 中的设备早 4 个月。 为了针对用户启用Office，Contoso 使用了两个推荐的[更新频道](/DeployOffice/overview-update-channels)：
 
 - 试点组更新的 Enterprise 半年频道（预览）。
 - Semi-Annual Enterprise频道获取广泛组更新
@@ -61,14 +61,14 @@ Contoso 对功能更新采用与用于部署 Office 相同的两阶段方法：�
 
 为完成 Office 的部署，Contoso 实施了以下过程，其中包括来自 Microsoft 的最佳做法建议：
 
-1. 在部署之前，Contoso 使用 Toolkit 和 VBA 的 Readiness Office 测试其应用和 Office 外接程序来评估其与 Microsoft 365 企业应用版 的兼容性。
+1. 在部署之前，Contoso 使用 Toolkit for Office 外接程序和 VBA 的准备情况测试其应用和 Office 外接程序，以评估其与 Microsoft 365 企业应用版 的兼容性。
 1. 在 Configuration Manager 中，他们在客户端设备上启用了对等缓存，这有助于在部署到远程位置的客户端设备时具有有限的网络容量。 
-1. Contoso 在 Configuration Manager 中将两个部署组定义为设备集合：试点组和广泛组。 试点组包括一小组跨组织的代表设备，用于对应用、加载项和硬件进行附加测试，Windows 10 企业版Microsoft 365 企业应用版。
-1. 他们通过使用 Office 客户端管理仪表板和 Office 365 Installer 向导为 Office 创建了部署包，这两者都是 Configuration Manager 控制台的一部分。 他们构建了两Microsoft 365 企业应用版包，一个适用于 Semi-Annual Enterprise Channel (Preview) 上的试点组，另一个适用于 Semi-Annual Enterprise Channel 上的广泛组。
-2. 每个Office包都包含英语、法语和德语语言包。 如果设备所需的语言未包含在 Office 程序包中，则会自动从 Office 内容分发网络 (CDN) 。
+1. Contoso 在 Configuration Manager 中将两个部署组定义为设备集合：试点组和广泛组。 试点组包括一小组跨组织的代表设备，用于对应用、加载项和硬件进行附加测试，Windows 10 企业版和Microsoft 365 企业应用版。
+1. 他们使用 Office 客户端管理 Office仪表板和 Office 365 Installer 向导（两者都是 Configuration Manager 控制台的一部分）为 Office 创建了部署包。 他们构建了两Microsoft 365 企业应用版程序包，一个适用于 Semi-Annual Enterprise Channel (Preview) 上的试点组，另一个适用于 Semi-Annual Enterprise Channel 上的广泛组。
+2. 每个Office包都包含英语、法语和德语语言包。 如果设备需要未包含在 Office中的语言，则会自动从 Office 内容分发网络 (CDN) 。
 3. 在安装 Microsoft 365 企业应用版前，它们使用 Office 包中的内置功能来自动删除所有现有的 Office 的 MSI 版本。
-4. 在 Configuration Manager 中，他们部署了 Windows，Office程序包跨网络部署到分发点。 然后，他们运行 Configuration Manager 部署任务序列，将试点Microsoft 365 企业应用版包部署到试点组。
-5. 在解决了试点组的兼容性问题后，Contoso 运行任务序列以将Microsoft 365 企业应用版包部署到广泛组。
+4. 在 Configuration Manager 中，他们跨Windows Office将程序包部署到分发点。 然后，他们运行 Configuration Manager 部署任务序列，将试点Microsoft 365 企业应用版包部署到试点组。
+5. 在解决试点组的兼容性问题后，Contoso 运行任务序列以将Microsoft 365 企业应用版包部署到广泛组。
 
 因为 Contoso 选择从云中自动更新设备，所以无需在 Configuration Manager 中管理过程。 其设备会直接从基于云的自动更新，该更新通道是在初始部署中定义的。
 
@@ -76,7 +76,7 @@ Contoso 对功能更新采用与用于部署 Office 相同的两阶段方法：�
 
 ![用于部署的 Contoso 部署Microsoft 365 企业应用版](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 了解 Contoso[](contoso-mdm.md)如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备和他们在组织中运行的应用。
 

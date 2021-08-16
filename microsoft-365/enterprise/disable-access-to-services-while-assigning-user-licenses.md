@@ -1,7 +1,7 @@
 ---
 title: 在分配用户Microsoft 365禁用对服务的访问权限
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/24/2020
 audience: Admin
@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 了解如何使用 PowerShell for Microsoft 365 同时向用户帐户分配许可证和禁用特定服务Microsoft 365。
-ms.openlocfilehash: 1e4015873fd4461269ff77697010334d1b1a5d6703c8d965a81a4c9ce3141319
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf3ae327000f2f0bdb93dfdad8429c741a52c30f
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841069"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356536"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>在分配用户Microsoft 365禁用对服务的访问权限
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Microsoft 365订阅随单个服务的服务计划一起提供。 Microsoft 365向用户分配许可证时，管理员通常需要禁用某些计划。 按照本文中的说明，您可以分配一Microsoft 365许可证，同时使用 PowerShell 为单个用户帐户或多个用户帐户禁用特定服务计划。
+Microsoft 365订阅随单个服务的服务计划一起提供。 Microsoft 365向用户分配许可证时，管理员通常需要禁用某些计划。 按照本文中的说明，您可以分配一个Microsoft 365许可证，同时使用 PowerShell 为单个用户帐户或多个用户帐户禁用特定服务计划。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -44,7 +44,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 接下来，获取要添加许可证的帐户的登录名，也称为 UPN (用户) 。
 
-接下来，编译要启用的服务列表。 有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+接下来，编译要启用的服务列表。 有关许可证计划的完整列表 (产品名称) 包括的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 对于下面的命令块，填写用户帐户的用户主体名称、SKU 部件号以及启用和删除说明性文本和字符的服务计划 \< and > 列表。 然后，在 PowerShell 命令提示符下运行生成的命令。
 
@@ -97,11 +97,11 @@ Get-MsolAccountSku
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-通过显示此命令，确定在向用户分配许可证时要禁用的服务计划。
+从此命令的显示中，确定在向用户分配许可证时要禁用的服务计划。
 
 以下是服务计划及其相应服务Microsoft 365列表。
 
-下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。
+下表显示了最常见Microsoft 365的服务计划及其友好名称。 服务计划列表可能会有所不同。
 
 |**服务计划**|**说明**|
 |:-----|:-----|
@@ -115,7 +115,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 计划 2  <br/> |
 
-有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+有关许可证计划的完整列表 (产品名称) 包括的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 现在，您具有要禁用的 AccountSkuId 和服务计划，您可以为单个用户或多个用户分配许可证。
 
@@ -133,7 +133,7 @@ Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 ```
 
-下面是针对 contoso：ENTERPRISEPACK 许可证的名为 belindan@contoso.com 的帐户的示例命令块，要禁用的服务计划包括 RMS_S_ENTERPRISE、SWAY、INTUNE_O365 和 YAMMER_ENTERPRISE：
+下面是名为 belindan@contoso.com 的帐户、contoso：ENTERPRISEPACK 许可证以及要禁用的服务计划的示例命令块RMS_S_ENTERPRISE、SWAY、INTUNE_O365 和 YAMMER_ENTERPRISE：
 
 ```powershell
 $userUPN="belindan@contoso.com"

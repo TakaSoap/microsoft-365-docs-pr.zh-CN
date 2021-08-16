@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft 365从用户帐户删除许可证
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 使用 PowerShell Microsoft 365用户帐户中删除许可证
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/23/2020
 audience: Admin
@@ -20,19 +20,19 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 介绍如何使用 PowerShell 删除Microsoft 365分配给用户的许可证。
-ms.openlocfilehash: 42ed344a0cff959b2e99027b847cd6ab30fb5e62bc8d86b3b5901b7539a44965
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e798eaaf18c39a026c5a2d5f5861689e5ddd3953
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904667"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355900"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 Microsoft 365从用户帐户删除许可证
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户中删除许可证
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 >[!Note]
->[了解如何从用户帐户中删除许可证Microsoft 365 管理中心。](../admin/manage/remove-licenses-from-users.md) 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>[了解如何从用户帐户中删除具有](../admin/manage/remove-licenses-from-users.md)此权限Microsoft 365 管理中心。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
@@ -154,7 +154,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-此示例从文本文件 C：Documents\Accounts.txt\My (Office 365 企业版 中定义的用户帐户) **litwareinc：ENTERPRISEPACK**) E3 许可证。
+此示例从文本文件 C：\My (Office 365 企业版中定义的用户帐户) **litwareinc：ENTERPRISEPACK** (Office 365 企业版 E3 Documents\Accounts.txt。
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"

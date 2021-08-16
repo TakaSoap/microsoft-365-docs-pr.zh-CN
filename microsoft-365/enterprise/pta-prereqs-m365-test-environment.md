@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附传递身份验证的先决条件。
-ms.openlocfilehash: 530adf4e8b5b470f322cb3f0316151771ec30cf80a3a409caa20e5871b747883
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9df7fce98678797091c83efa01190b457221b308
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904708"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356464"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
 
@@ -37,7 +37,7 @@ ms.locfileid: "53904708"
 4. 配置密码写回服务
 5. 配置自助密码重置
 6. 配置多重身份验证
-7. 启用已加入域的计算机的Windows注册
+7. 启用已加入域的计算机的自动Windows注册
 8. 配置 Azure AD 密码保护 
 9. 启用 Azure AD Identity Protection
 10. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证

@@ -1,7 +1,7 @@
 ---
 title: PowerShell for Microsoft 365 入门
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -16,29 +16,29 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 摘要：了解 PowerShell for Microsoft 365 的价值、如何连接到 Microsoft 365 租户以及获取帮助的地方。
-ms.openlocfilehash: 07d40ef94d72c3d12ff305d329c43d11859fd752b701c670282ce4fefe5cab08
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：了解 PowerShell for Microsoft 365 的价值、如何连接到 Microsoft 365 租户以及在何处获取帮助。
+ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801058"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356716"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>PowerShell for Microsoft 365 入门
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-可以在 PowerShell for Microsoft 365中使用命令和脚本Microsoft 365并简化日常工作。 使用以下信息了解 PowerShell for Microsoft 365 对管理 Microsoft 365 至关重要的原因、如何连接到 Microsoft 365 订阅和创建报告，以及在何处从 Microsoft 365 社区获取详细信息。
+可以在 PowerShell for Microsoft 365中使用命令和脚本Microsoft 365并简化日常工作。 使用以下信息了解 powerShell for Microsoft 365 对管理 Microsoft 365 至关重要的原因、如何连接到 Microsoft 365 订阅和创建报告，以及在何处从 Microsoft 365 社区获取详细信息。
   
 从以下主题中选择：
   
 - [**为什么需要使用 PowerShell for Microsoft 365**](why-you-need-to-use-microsoft-365-powershell.md)
     
-    如果你是 PowerShell for Microsoft 365。 了解为什么应该使用 PowerShell 进行Microsoft 365。
+    如果你是使用 PowerShell for Microsoft 365。 了解为什么应该使用 PowerShell 进行Microsoft 365。
     
 - [**使用 PowerShell 连接 Microsoft 365**](connect-to-microsoft-365-powershell.md)
     
-    从此处开始，Microsoft 365 PowerShell for Microsoft 365从命令行执行管理任务。
+    使用 PowerShell for Microsoft 365从此处开始连接到 Microsoft 365 订阅，然后从命令行执行管理任务。
     
 - [**在单个 PowerShell 窗口中连接所有 Microsoft 365 服务**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
     
@@ -46,7 +46,7 @@ ms.locfileid: "53801058"
     
 - [**使用 PowerShell 在 Microsoft 365**](use-windows-powershell-to-create-reports-in-microsoft-365.md)
     
-    如果您已安装 PowerShell for Microsoft 365模块，并且想要了解如何使用自动化命令快速创建报告，请从这里开始。
+    如果已安装 PowerShell for Microsoft 365模块，并且想要了解如何使用自动化命令快速创建报告，请从这里开始。
     
 - [**Microsoft 365 服务的 cmdlet 参考**](cmdlet-references-for-microsoft-365-services.md)
     

@@ -1,7 +1,7 @@
 ---
-title: 使用 PowerShell Microsoft 365用户帐户
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 使用 powerShell Microsoft 365用户帐户
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 了解如何使用 PowerShell 以不同方式查看、Microsoft 365或显示用户帐户。
-ms.openlocfilehash: b7a899d7b67b124ffa1db391cd8762cf220d1aa9da01a9e60cb7cb488da1bd34
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b10b143b3608efa88eb27346b65fd4b80100020c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53812948"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356152"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 可以使用帐户Microsoft 365 管理中心查看你的租户Microsoft 365帐户。 PowerShell for Microsoft 365可实现此功能，但也提供了其他功能。
   
@@ -76,7 +76,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 默认情况下 **，Get-AzureADUser** cmdlet 仅显示帐户的 *ObjectID、DisplayName* 和 *UserPrincipalName* 属性。 
 
-若要对要显示的属性更具选择性，请结合使用 **Select** cmdlet 和 **Get-AzureADUser** cmdlet。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，指示 Azure Active Directory PowerShell Graph接受一个命令的结果并将其发送到下一个命令。 下面是显示每个用户帐户的 *DisplayName、Department* 和 *UsageLocation* 的示例命令：
+若要对要显示的属性更具选择性，请结合使用 **Select** cmdlet 和 **Get-AzureADUser** cmdlet。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，它Azure Active Directory PowerShell Graph一个命令的结果并将其发送到下一个命令。 下面是显示每个用户帐户的 *DisplayName、Department* 和 *UsageLocation* 的示例命令：
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -86,7 +86,7 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
   
 1. 获取 **Get-AzureADUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1.  仅显示用户帐户名、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
+1.  仅显示用户帐户名称、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
   
 To see all the properties for a specific user account， use the **Select** cmdlet and the wildcard character (*) . 示例如下：
   
@@ -123,17 +123,17 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>查看基于通用属性的帐户
 
-若要对要显示的帐户列表更具选择性，可以将 **Where** cmdlet 与 **Get-AzureADUser** cmdlet 结合使用。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，指示 Azure Active Directory PowerShell Graph接受一个命令的结果并将其发送到下一个命令。 下面是一个示例命令，该命令仅显示未指定使用位置的用户帐户：
+若要对要显示的帐户列表更具选择性，可以将 **Where** cmdlet 与 **Get-AzureADUser** cmdlet 结合使用。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，它Azure Active Directory PowerShell Graph一个命令的结果并将其发送到下一个命令。 下面是一个示例命令，该命令仅显示未指定使用位置的用户帐户：
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-此命令指示Azure Active Directory PowerShell Graph：
+此命令指示 Azure Active Directory PowerShell Graph：
   
 1. 获取 **Get-AzureADUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
+1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
 **UsageLocation** 属性只是与用户帐户关联的众多属性之一。 若要显示特定用户帐户的所有属性，请使用 **Select** cmdlet 和通配符 (*) 。 示例如下：
   
@@ -148,7 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
-> 这些示例中 **Where** cmdlet 的语法为 **Where {$ \_ 。** [用户帐户属性名称][比较运算符][value] **}**.> [comparison operator] is **-eq** for equals， **-ne** for not equals， **-lt** for less than， **-gt** for greater than， and others.  [value] 通常是一个字符串， (字母、数字和其他字符序列、) 、数字值 **$Null未指定。** 有关详细信息，请参阅 [Where](/powershell/module/microsoft.powershell.core/where-object)。
+> 这些示例中 **Where** cmdlet 的语法为 **Where {$ \_ 。** [用户帐户属性名称][比较运算符][value] **}**.> [comparison operator] is **-eq** for equals， **-ne** for not equals， **-lt** for less than， **-gt** for greater than， and others.  [value] 通常是一个字符串， (字母、数字和其他字符序列、) 、数值或未指定 **$Null字符串。** 有关详细信息，请参阅 [Where](/powershell/module/microsoft.powershell.core/where-object)。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
@@ -178,7 +178,7 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-MsolUser** cmdlet 也有一组参数可用于筛选显示的用户帐户组。 例如，对于未授权用户列表 (已添加到 Microsoft 365但尚未获得使用任一服务许可证) ，请运行以下命令：
+**Get-MsolUser** cmdlet 也有一组参数可用于筛选显示的用户帐户组。 例如，对于未授权用户列表 (已添加到 Microsoft 365但尚未获得使用任何服务许可证) ，请运行以下命令：
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
@@ -213,9 +213,9 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 
 此命令指示 PowerShell：
   
-1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
+1. 获取 **Get-MsolUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
+1. 在 Where {$ 中查找所有未指定使用 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq $Null) 。**
     
 应获取与以下类似的信息：
   
@@ -240,7 +240,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
-> 这些示例中 **Where** cmdlet 的语法为 **Where {$ \_ 。** [用户帐户属性名称][比较运算符][value] **}**.  [comparison operator] is **-eq** for equals， **-ne** for not equals， **-lt** for less than， **-gt** for greater than， and others.  [value] 通常是一个字符串， (字母、数字和其他字符序列、) 、数字值 **$Null未指定。** 有关详细信息，请参阅 [Where](/powershell/module/microsoft.powershell.core/where-object)。
+> 这些示例中 **Where** cmdlet 的语法为 **Where {$ \_ 。** [用户帐户属性名称][比较运算符][value] **}**.  [comparison operator] is **-eq** for equals， **-ne** for not equals， **-lt** for less than， **-gt** for greater than， and others.  [value] 通常是一个字符串， (字母、数字和其他字符序列、) 、数值或未指定 **$Null字符串。** 有关详细信息，请参阅 [Where](/powershell/module/microsoft.powershell.core/where-object)。
   
 若要检查用户帐户的阻止状态，请使用以下命令：
   
@@ -258,7 +258,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 - isLicensed
 
-如果您需要其他属性（如用户工作部门以及他们使用 Microsoft 365 服务的国家/地区），您可以结合 **Select** cmdlet 运行 **Get-MsolUser** 以指定用户帐户属性列表。 示例如下：
+如果您需要其他属性（如用户工作部门以及他们使用 Microsoft 365 服务的国家/地区），您可以运行 **Get-MsolUser** 和 **Select** cmdlet 以指定用户帐户属性的列表。 示例如下：
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -268,7 +268,7 @@ Get-MsolUser | Select DisplayName, Department, UsageLocation
   
 1. 获取 **Get-MsolUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1. 仅显示用户帐户名、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
+1. 仅显示用户帐户名称、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
     
 应获取与以下类似的信息：
   
@@ -299,7 +299,7 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
   
 1. 获取 **Get-MsolUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) ，并将结果信息发送到下一个命令 **|** () 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
+1. 在 Where {$ 中查找具有未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) ，并将结果信息发送到下一个命令 **|** () 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
 1. 仅显示用户帐户名、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
     
@@ -312,7 +312,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-如果要使用目录同步创建和管理 Microsoft 365 用户，可以显示已从其中Microsoft 365用户的本地帐户。 以下示例假定：
+如果使用目录同步创建和管理 Microsoft 365 用户，可以显示已计划Microsoft 365的本地帐户。 以下示例假定：
 
 - Azure AD 连接配置为使用 ObjectGUID 的默认源定位标记。  (有关配置源定位标记的信息，请参阅[Azure AD 连接：设计概](/azure/active-directory/hybrid/plan-connect-design-concepts)念) 。
 - 已安装用于 PowerShell 的 Active Directory 域服务模块 ([RSAT 工具](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)) 。

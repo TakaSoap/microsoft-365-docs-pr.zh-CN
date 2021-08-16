@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365仅云标识
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在订阅使用仅云标识Microsoft 365创建用户和组。
-ms.openlocfilehash: c12b3bea5523430c89c89f1e310308925a04c3c6fe6bd0a4b1a033dadd57501f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa3bef4b25327b675f18b2ea0bb9dfea15b2a81a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864983"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356092"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365仅云标识
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 借助仅云标识，所有用户、组和联系人都存储在 Azure Active Directory (订阅的) Azure AD Microsoft 365 租户中。 以下是仅云标识的基本组件。
  
@@ -53,9 +53,9 @@ ms.locfileid: "53864983"
 
 可以将 Azure AD 中的组用于多个目的，以简化云环境的管理。 例如，对于 Azure AD 组，你可以：
 
-- 使用基于组的许可，一旦添加为Microsoft 365，就会自动将用户的许可证分配给用户帐户。
+- 使用基于组的许可，一旦添加为Microsoft 365，就会自动将用户许可证分配给用户帐户。
 - 根据用户帐户属性（如部门名称）将用户帐户动态添加到特定组。
--  (在 SaaS) 中自动预配软件即服务用户) ，并保护使用 MFA 身份验证策略和其他条件访问策略 () 应用程序的访问权限。
+- 自动为用户预配软件即服务 (SaaS) 应用程序，并保护使用多重身份验证 (MFA) 和其他条件访问策略访问这些应用程序。
 - 为联机团队网站设置SharePoint级别。
 
 ## <a name="next-steps-for-cloud-only-identity"></a>仅云标识的以下步骤

@@ -2,8 +2,8 @@
 title: 针对企业测试环境自动Microsoft 365和组成员身份
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在企业测试环境中配置基于组的许可和Microsoft 365组成员身份。
-ms.openlocfilehash: 8835498f0b56eeafbc86f49a0be2df840359afbfdeb5518ca6fe521b64c8c652
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7c871c7005163aa81e911b15f8a3c91e8ea9c43
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859079"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356584"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>针对企业测试环境自动Microsoft 365和组成员身份
 
@@ -36,7 +36,7 @@ ms.locfileid: "53859079"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -45,13 +45,13 @@ ms.locfileid: "53859079"
 如果要在模拟的企业中测试自动许可和组成员身份，请按照传递身份验证 [中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。
+> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>阶段 2：配置和测试动态组成员身份和自动许可
 
 首先，创建一个名为 Sales 的新组，并添加动态组成员身份规则，以便部门设置为 **Sales** 的用户帐户自动加入销售组。
 
-1. 在 Internet 浏览器的专用实例中，Microsoft 365 管理中心测试实验室[](https://admin.microsoft.com)订阅的全局管理员帐户Microsoft 365 E5登录。
+1. 在 Internet 浏览器的专用实例中，Microsoft 365 管理中心测试实验室[](https://admin.microsoft.com)订阅的全局管理员Microsoft 365 E5登录。
 2. 在浏览器的单独选项卡上，转到 Azure 门户，位于 [https://portal.azure.com](https://portal.azure.com) 。
 3. 在 Azure 门户中，在 **搜索** 框中输入组， **然后选择组**。
 4. 在"**所有组"** 窗格中，选择"**新建组"。**
@@ -64,12 +64,12 @@ ms.locfileid: "53859079"
    - 选择 **"等于"** 运算符。
    - 在"**值"** 框中，输入 **"销售"。**
 10. 选择“**保存**”。
-11. 选择 **创建**。
+11. 选择“**创建**”。
 
 接下来，配置"销售"组，以便自动为成员分配Microsoft 365 E5许可证。
 
 1. 选择"**销售"** 组，然后选择"许可证 **"。**
-2. 在"**更新许可证分配"** 窗格中，选择 **"Microsoft 365 E5"，** 然后选择"保存 **"。**
+2. 在"**更新许可证分配**"窗格中，**选择**"Microsoft 365 E5"，然后选择"保存 **"。**
 3. 在浏览器中，关闭 Azure 门户选项卡。
 
 接下来，在 User 4 帐户上测试动态组成员身份和自动许可：
@@ -92,7 +92,7 @@ ms.locfileid: "53859079"
 
 请参阅以下文章以在生产中部署动态组成员身份和自动许可：
 
-- [Azure Active Directory 中的基于组的许可](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 - [动态组中Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## <a name="next-step"></a>后续步骤

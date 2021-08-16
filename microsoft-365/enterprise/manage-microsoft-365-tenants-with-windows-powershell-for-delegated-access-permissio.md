@@ -1,7 +1,7 @@
 ---
-title: 通过Microsoft 365 DAP 合作伙伴Windows PowerShell管理租户
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 通过Microsoft 365 DAP 合作伙伴的 Windows PowerShell 管理租户
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,20 +17,20 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 本文将了解如何使用 PowerShell for Microsoft 365管理客户租赁。
-ms.openlocfilehash: 2bbe59f5c5c27830569be2c357a586152ced849c62de0b62e3d29fcc6d926d37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee0eb3a645d6590e2393fe8ea7820511df36ab4a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899315"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356008"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用Microsoft 365 DAP Windows PowerShell的委派访问权限管理 (租户) 租户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Windows PowerShell联合和云解决方案提供商 (CSP) 合作伙伴可以轻松地管理和报告客户租赁设置，这些设置在 Microsoft 365 管理中心 中不可用。 请注意，合作伙伴管理员帐户要连接到其客户租赁，需要代表以下方管理 (AOBO) 权限。
 
-委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们Microsoft 365订阅捆绑到他们的服务产品/服务中。 当他们销售 Microsoft 365 订阅时，将自动被授予代表 (AOBO) 管理客户租赁的权限，以便他们可以管理和报告客户租赁。
+委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们Microsoft 365订阅捆绑到他们的服务产品/服务中。 当他们销售 Microsoft 365 订阅时，他们将自动获得代表 (AOBO) 管理客户租赁的权限，以便可以管理和报告客户租赁。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 本主题中的过程需要您连接到 连接[Microsoft 365 PowerShell 进行连接](connect-to-microsoft-365-powershell.md)。
@@ -66,7 +66,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>列出租户的所有域
 
-若要获取任一客户租户的所有域，请运行以下命令。将 _<customer TenantId value>_ 替换为实际值。
+若要获取任一客户租户的所有域，请运行以下命令。将 _\<customer TenantId value>_ 替换为实际值。
 
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -84,7 +84,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>获取租户的所有用户
 
-这会显示特定租户的所有用户的 **UserPrincipalName**、**DisplayName** 和 **isLicensed** 状态。将 _<customer TenantId value>_ 替换为实际值。
+这会显示特定租户的所有用户的 **UserPrincipalName**、**DisplayName** 和 **isLicensed** 状态。将 _\<customer TenantId value>_ 替换为实际值。
 
 ```powershell
 Get-MsolUser -TenantID <customer TenantId value>
@@ -92,7 +92,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>获取有关用户的所有详细信息
 
-若要查看特定用户的所有属性，请运行此命令。将 _<customer TenantId value>_ 和 _<user principal name value>_ 替换为实际值。
+若要查看特定用户的所有属性，请运行此命令。将 _\<customer TenantId value>_ 和 _\<user principal name value>_ 替换为实际值。
 
 ```powershell
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>

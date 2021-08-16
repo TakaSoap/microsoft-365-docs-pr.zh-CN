@@ -1,9 +1,9 @@
 ---
 title: Contoso Corporation 概述
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 的业务及其全球办事处的分层结构。
-ms.openlocfilehash: dc3d939895a5eedc0bf5f66a0226486bd2fa97cd15fb05aa9329a1cfbce644d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0690f942a72dedbd1247fcff9d6705ec638e189e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899376"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356848"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation 概述
 
@@ -37,13 +37,13 @@ Contoso 有三层办公室：
 
 - 总部
 
-  Contoso 总部是位于巴黎园区的公司园区，拥有数十座用于管理、工程和制造设施建筑物。 所有 Contoso 数据中心及其 Internet 状态都位于巴黎总部。
+  Contoso 总部是位于巴黎园区的公司园区，拥有数十座用于管理、工程和制造设施建筑物。 所有 Contoso 数据中心及其 Internet 状态均位于巴黎总部。
 
   总部拥有 25,000 名工作人员。
 
 - 区域中心
 
-  中心办事处为世界上的特定区域提供 60% 的销售和支持人员。 每个区域中心都通过高带宽 WAN 链路连接到巴黎总部。
+  中心办事处为世界上的一个特定区域提供 60% 的销售和支持人员。 每个区域中心都通过高带宽 WAN 链路连接到巴黎总部。
 
   区域中心平均拥有 2，000 个工作人员。
 
@@ -57,7 +57,7 @@ Contoso 有三层办公室：
 
 ## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>企业版Microsoft 365设计注意事项
 
-Contoso IT 架构师确定了以下用于为企业部署 Microsoft 365的要求因素：
+Contoso IT 架构师确定了以下用于为企业部署Microsoft 365要求因素：
 
 - 具有本地管理法规和合规性要求的多个地理位置
 - 总部办公室的中央 Intranet 数据中心和承载内部业务线应用程序的区域应用程序服务器

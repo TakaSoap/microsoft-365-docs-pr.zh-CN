@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 管理 Skype for Business Online 策略
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell 通过策略Skype for Business Online 用户帐户属性。
-ms.openlocfilehash: 51218d2158558e527f5ce9b3c12388e69cd3d87c140641762247a90d6e78043c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aea57c836403918e4c236f766ed211a31ea2ceec
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835051"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357037"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online 策略
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将其指定为策略Microsoft 365。
   
@@ -66,13 +66,13 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在Microsoft 365 管理中心。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
+本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部的用户通信。 请注意，此属性不会显示在Microsoft 365 管理中心。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
   
 - **EnableFederationAccess** 指示用户是否可以与联合域的用户通信。
     
 - **EnablePublicCloudAccess** 指示用户是否可以与 Windows Live 用户通信。
     
-因此，不要直接更改用户帐户上与联合 (例如 **Set-CsUser -EnableFederationAccess $True) 。** 相反，您可以为帐户分配一个预配置所需属性值的外部访问策略。 如果我们希望用户能够与联盟用户和 Windows Live 用户通信，则必须为用户帐户分配允许这些类型的通信的策略。
+因此，不要直接更改用户帐户上与联合身份验证相关的属性 (例如 **Set-CsUser -EnableFederationAccess** $True) 。 而是为帐户分配一个预配置了所需属性值的外部访问策略。 如果我们希望用户能够与联盟用户和 Windows Live 用户通信，则必须为用户帐户分配允许这些类型的通信的策略。
   
 如果您想了解某人是否可以与组织外部的用户通信，您必须：
   
@@ -86,7 +86,7 @@ EnableOutsideAccess               : True
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
-此命令查找分配给用户的策略，然后查找该策略中已启用或禁用的功能。
+此命令查找分配给用户的策略，然后查找该策略中启用或禁用的功能。
   
 若要使用 PowerShell Skype for Business Online 策略，请参阅以下 cmdlet：
 
@@ -98,7 +98,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 
 > [!NOTE]
-> "Skype for Business Online 拨号计划"是除名称以外的每个方面的策略。 选择名称"拨号计划"，而不是"拨号策略"，以提供与 Office Communications Server 和 Exchange 的向后Exchange。 
+> Skype for Business Online 拨号计划是除名称以外的每个方面的策略。 选择名称"拨号计划"，而不是"拨号策略"，以提供与 Office Communications Server 和 Exchange 的向后兼容性。 
   
 例如，若要查看所有可供使用的语音策略，请运行以下命令：
   
@@ -107,7 +107,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> 将返回所有可用的语音策略的列表。 但请记住，并非所有策略都可以分配给所有用户。 这是因为涉及许可和地理位置的各种限制。  (所谓的"[使用位置"。](/previous-versions/azure/dn194136(v=azure.100))) 如果您想要了解可分配给特定用户的外部访问策略和会议策略，请使用以下类似命令： 
+> 将返回所有可用的语音策略的列表。 但请记住，并非所有策略都可以分配给所有用户。 这是因为涉及许可和地理位置的各种限制。  (所谓的"使用[位置"。](/previous-versions/azure/dn194136(v=azure.100))) 如果您想要了解可分配给特定用户的外部访问策略和会议策略，请使用以下类似命令： 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

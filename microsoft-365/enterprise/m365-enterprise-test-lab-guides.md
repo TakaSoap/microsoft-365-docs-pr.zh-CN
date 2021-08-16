@@ -2,8 +2,8 @@
 title: Microsoft 365 企业版测试实验室指南
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/20/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 1e5a65ce0ac9320a586e3bad73a6bfbdb967ff39b8cfae3344b4bc633c922041
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 19b8a41674d26bf6e02da4be7be1e16739003044
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858973"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356356"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -37,7 +37,7 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
   
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack， expand the following graphic or go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+有关企业测试实验室指南堆栈中 Microsoft 365 文章的直观映射，请展开下图或转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 [![Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
@@ -47,7 +47,7 @@ For a visual map to all the articles in the Microsoft 365 for enterprise Test La
 
 - [轻型基本](lightweight-base-configuration-microsoft-365-enterprise.md)配置 - 当你要配置和演示Microsoft 365云环境中企业特性和功能（不包括任何本地组件）时，可使用此配置。
 
-- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 在混合云环境中配置和演示企业特性和功能（使用 Active Directory 域服务 (AD DS) 域）中的 Microsoft 365 时，可使用此配置。
+- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 当你希望为混合云环境中的企业特性和功能配置和演示 Microsoft 365 时，请使用此配置，该环境使用本地组件，如 Active Directory 域服务 (AD DS) 域。
 
 此外，还可通过不将 Microsoft 365 E5 许可证添加到试用版或产品测试环境中，来创建 Office 365 E5 的测试环境。
     

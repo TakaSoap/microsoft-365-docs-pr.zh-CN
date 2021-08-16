@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d6d077aa1e17bed75577a162c83d3d1105add4d2f6e7d7a91bf7000ad34b493
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01bf69e04f11727eb42612de74c9b4a93fae8f31
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817864"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356140"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>使用部署在 Linux 上的 Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "53817864"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本文介绍如何使用部署在 Linux 上使用部署 Defender for Endpoint。 成功的部署需要完成以下所有任务：
+本文介绍了如何使用部署在 Linux 上部署适用于 Endpoint 的 Defender。 成功的部署需要完成以下所有任务：
 
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建清单](#create-a-puppet-manifest)
@@ -45,7 +45,7 @@ ms.locfileid: "53817864"
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
- 有关当前软件版本的先决条件和系统要求的说明，请参阅 Linux 页面上的 [Defender for Endpoint 主页面](microsoft-defender-endpoint-linux.md)。
+ 有关当前软件版本的先决条件和系统要求的说明，请参阅 Linux 页面上的 Defender [for Endpoint 主页面](microsoft-defender-endpoint-linux.md)。
 
 此外，对于部署部署，你需要熟悉管理中心任务、配置了管理中心并知道如何部署程序包。 安装工具有许多方法可以完成同一任务。 这些说明假定受支持的"开发工具"模块可用， *例如，有助于* 部署程序包。 您的组织可能使用不同的工作流。 有关详细信息， [请参阅"百分百](https://puppet.com/docs) "文档。
 
@@ -77,11 +77,11 @@ ms.locfileid: "53817864"
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-a-puppet-manifest"></a>创建清单
+## <a name="create-a-puppet-manifest"></a>创建一个清单
 
 你需要创建一个清单，用于将 Linux 上的 Defender for Endpoint 部署到由开发工具服务器管理的设备上。 此示例使用了从 *labs中* 提供的 apt 和 *yumrepo* 模块，并假定模块已安装在了您的开发工具服务器上。
 
-在安装 *Install_mdatp模块文件夹* 下 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
+在安装 *Install_mdatp模块文件夹* 下 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上述mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
 
 ```bash
 pwd
@@ -103,16 +103,16 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>`install_mdatp/manifests/init.pp` 的内容
 
-Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
+可以从以下频道之一部署 Linux 上的 Defender for Endpoint (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-*慢。*
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-慢 *。*
 
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-记下分发和版本，并确定 其最接近的 `https://packages.microsoft.com/config/` 条目。
+记下分发和版本，并确定 其最接近的 `https://packages.microsoft.com/[distro]/` 条目。
 
 在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -242,7 +242,7 @@ mdatp health --field healthy
 
 ## <a name="uninstallation"></a>卸载
 
-创建一个 *remove_mdatp，install_mdatp*  *init.pp* 中的以下内容类似的模块 文件：
+创建一个 *remove_mdatp**模块，install_mdatp* *init.pp 中的以下内容类似的模块* 文件：
 
 ```bash
 class remove_mdatp {

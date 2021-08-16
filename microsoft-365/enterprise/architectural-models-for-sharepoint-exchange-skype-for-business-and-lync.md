@@ -1,7 +1,7 @@
 ---
 title: SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 05/16/2018
 audience: ITPro
@@ -20,18 +20,18 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 获取 IT 海报，这些海报介绍了适用于 SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型、部署和平台选项。
-ms.openlocfilehash: caa4f630a047ca438decdd9dd2dede13ff96598eea1f0781140a8c66dbc6381f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98558c20c66a808e93cd866b2f676b5f78fde3c1
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885449"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356440"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business和Lync的架构模型。
 
-本文中的 IT 海报介绍了适用于 SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型和部署选项。 它们还提供用于部署 SharePoint 中的Microsoft Azure。
+本文中的 IT 海报介绍了适用于 SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型和部署选项。 它们还提供用于部署SharePoint部署Microsoft Azure。
   
-通过使用Microsoft 365，可以通过云提供熟悉的协作和通信服务。 无论是维护本地部署还是使用本地部署，用户体验都保持不变，Microsoft 365。 
+通过使用Microsoft 365，可以通过云提供熟悉的协作和通信服务。 无论是维护本地部署还是使用本地部署，用户体验都Microsoft 365。 
 
 这种统一的用户体验使决定在何处放置每个工作负载变得复杂。 它还引发了问题：
   
@@ -46,7 +46,7 @@ ms.locfileid: "53885449"
 - Azure 支持Office工作负荷的配置？
     
 > [!TIP]
-> 本文中的大多数海报都提供多种语言。 可用语言包括中文、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语和西班牙语。 若要下载其中一种语言的海报，请在海报缩略图图像下，选择"**更多语言"。**
+> 本文中的大多数海报都提供多种语言。 可用语言包括中文、英语、法语、德语、意大利语、日语、朝鲜语、葡萄牙语、俄语和西班牙语。 若要下载其中一种语言的海报，请在海报缩略图图像下选择"**更多语言"。**
   
 请将你的想法告诉我们！向我们 ([cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)) 发送电子邮件。 
   
@@ -102,14 +102,14 @@ SharePoint 2016 和 Skype for Business 2015 的 IT 海报提供了一种以易�
 
 |Item|说明|
 |---|---|
-|[![SharePoint Server 2016 数据库海报缩略图。](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55041)|此 IT 海报是 SharePoint Server 2016 数据库的快速参考。 你将看到每个数据库的详细信息： <br/><br/> - 大小 <br/> - 扩展指南 <br/> - I/O 模式 <br/> - 要求： <br/><br/>  第一页SharePoint数据库和服务应用程序具有多个数据库。 第二页显示了具有单个数据库的所有服务应用程序。 <br/><br/>  有关详细信息，请参阅[SharePoint Server 2016 中的数据库类型和说明](/SharePoint/technical-reference/database-types-and-descriptions)。|
+|[![SharePoint Server 2016 数据库海报缩略图。](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55041)|此 IT 海报是 SharePoint Server 2016 数据库的快速参考。 你将看到每个数据库的详细信息： <br/><br/> - 大小 <br/> - 扩展指南 <br/> - I/O 模式 <br/> - 要求： <br/><br/>  第一页SharePoint数据库和服务应用程序具有多个数据库。 第二页显示了具有单个数据库的所有服务应用程序。 <br/><br/>  有关详细信息，请参阅 SharePoint [Server 2016 中的数据库类型和说明](/SharePoint/technical-reference/database-types-and-descriptions)。|
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft Skype for Business 2015 体系结构模型
 
 |Item|说明|
 |---|---|
-|[![体系结构模型Skype for Business缩略图。](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55022)|此海报介绍了 Skype for Business Online、本地、混合和云专用交换机 (PBX) 。 它还介绍了与业务Exchange SharePoint架构师需要知道的集成配置和配置。 <br/><br/> 此海报面向 IT 专业人员，旨在提升对基本体系结构模型（通过这些模型Skype for Business Online 和 Skype for Business本地部署）的感知度。 <br/><br/>从最适合组织需求和计划的配置开始。 请考虑并根据需要使用其他配置。 例如，您可能需要考虑与 Exchange SharePoint 或利用 Microsoft 云 PBX 产品的解决方案集成。|
+|[![体系结构模型Skype for Business缩略图。](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55022)|此海报介绍了 Skype for Business Online、本地、混合和云专用交换机 (PBX) 。 它还介绍与业务Exchange SharePoint架构师需要知道的一些配置和配置集成。 <br/><br/> 此海报面向 IT 专业人员，旨在提升对基本体系结构模型Skype for Business联机和Skype for Business内部部署体验。 <br/><br/>从最适合组织需求和计划的配置开始。 请考虑并根据需要使用其他配置。 例如，您可能需要考虑与 Exchange SharePoint 或利用 Microsoft 云 PBX 产品的解决方案集成。|
    
 ## <a name="platform-options-posters"></a>平台选项海报
 
@@ -130,14 +130,14 @@ SharePoint 2013、Exchange 2013 和 Lync 2013 的 IT 海报提供了一种一目
 
 |Item|说明|
 |---|---|
-|[![SharePoint 2013 平台选项海报的缩略图。](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=40332)|此海报向业务决策者和架构师显示了 SharePoint 2013、Microsoft 365 中的 SharePoint、与 Microsoft 365、Azure 和仅本地部署本地混合的平台选项。 它包括每个体系结构的概述、建议、许可证要求以及每个平台的架构师和 IT 专业人员任务列表。 该海报重点介绍了SharePoint Azure 上的多个解决方案。|
+|[![SharePoint 2013 平台选项海报的缩略图。](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=40332)|对于业务决策者和架构师，此海报显示了 SharePoint 2013、Microsoft 365 中的 SharePoint、与 Microsoft 365、Azure 和仅本地部署本地混合的平台选项。 它包括每个体系结构的概述、建议、许可证要求以及每个平台的架构师和 IT 专业人员任务列表。 海报重点介绍了 Azure SharePoint解决方案。|
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013 平台选项
 
 |Item|说明|
 |---|---|
-|[![Exchange"选项"海报的缩略图。](../media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=42676)|本海报针对业务决策者和架构师介绍了适用于 Exchange 2013 的平台选项。 客户可以选择使用 Exchange Online、Microsoft 365、Exchange、Exchange Server 内部部署和托管Exchange。 海报详细介绍了每个体系结构选项，包括每个选项的理想方案、许可证要求和 IT 专业人员的职责。|
+|[![Exchange选项海报的缩略图。](../media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=42676)|本海报针对业务决策者和架构师介绍了适用于 Exchange 2013 的平台选项。 客户可以从Exchange Online、Microsoft 365、混合Exchange、Exchange Server本地和托管Exchange。 海报详细介绍了每个体系结构选项，包括每个选项的理想方案、许可证要求和 IT 专业人员的职责。|
    
 <a name="Lync2013_Options"> </a>
 ## <a name="lync-2013-platform-options"></a>Lync 2013 平台选项

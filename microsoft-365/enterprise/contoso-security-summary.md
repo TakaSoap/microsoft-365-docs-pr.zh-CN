@@ -1,9 +1,9 @@
 ---
 title: Contoso Microsoft 365企业安全管理摘要
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用企业Microsoft 365安全功能。
-ms.openlocfilehash: 8e207ac55b7d7280adfeb356cef20dec1ada0da89298945f1318bbf656a2310f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b88e1dfafe6669782096e851eef1935079aa4676
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855199"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356404"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Microsoft 365企业安全管理摘要
 
@@ -44,7 +44,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 2. 将数据分为三个安全级别
 
-   Contoso 仔细审阅并确定了三个级别，这三个级别用于标识Microsoft 365功能保护最有价值的数据时所使用的标准。
+   Contoso 仔细审阅并确定了三个级别，这三个级别用于Microsoft 365功能保护最有价值的数据。
 
 3. 确定数据级别的访问、保留和信息保护策略
 
@@ -77,11 +77,11 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - Windows Hello 企业版
 
-  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)以便最终无需在运行 Windows 10 企业版 的 PC 和移动设备上使用强双因素身份验证。
+  Contoso 部署了[Windows Hello for Business，](/windows/security/identity-protection/hello-for-business/hello-identity-verification)以在运行 Windows 10 企业版 的 PC 和移动设备上通过强双因素身份验证最终消除对密码Windows 10 企业版。
 
 - Windows Defender Credential Guard
 
-  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender启用[Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
+  为了使用管理权限阻止在操作系统中运行的目标攻击和恶意软件，Contoso 通过 AD DS Windows Defender[启用 Credential Guard。](/windows/security/identity-protection/credential-guard/credential-guard)
 
 ## <a name="threat-protection"></a>威胁防护
 
@@ -91,7 +91,7 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - 使用 Microsoft Defender for Office 365 保护电子邮件流和邮箱审核日志记录 
 
-  Contoso 使用 Exchange Online Protection 和[Defender for Office 365](/office365/securitycompliance/office-365-atp)电子邮件传输的未知恶意软件、病毒和恶意 URL。
+  Contoso 使用 Exchange Online Protection 和[Defender for Office 365](/office365/securitycompliance/office-365-atp)来抵御通过电子邮件传输的未知恶意软件、病毒和恶意 URL。
 
   Contoso 还启用了邮箱审核日志记录，以标识登录到用户邮箱、发送邮件以及执行由邮箱所有者、委派用户或管理员执行的其他活动的用户。
 
@@ -133,4 +133,4 @@ Contoso 遵循这些步骤来准备其安全性，以部署Microsoft 365企业�
 
 - Windows Defender 安全中心适用于用户的安全中心仪表板
 
-  Contoso 将[](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)Windows 安全中心 应用部署到运行 Windows 10 企业版 电脑和设备，以便用户一目了然地查看其安全状态并采取措施。
+  Contoso 将[](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)Windows 安全中心 应用程序部署到运行 Windows 10 企业版 电脑和设备，以便用户可以一目了然地查看其安全状态并采取措施。

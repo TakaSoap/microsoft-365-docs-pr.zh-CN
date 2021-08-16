@@ -1,7 +1,7 @@
 ---
 title: 管理Microsoft 365用户帐户
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理Microsoft 365用户帐户。
-ms.openlocfilehash: 8fd2b537c83fcbab5c33c282487f02cba72bed514e01d8ecc1261d0554793331
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fb2fe71c73f99979b35e7ca9998302f387b9035
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858875"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356020"
 ---
 # <a name="manage-microsoft-365-user-accounts"></a>管理Microsoft 365用户帐户
 
-可以通过几种Microsoft 365管理用户帐户，具体取决于您的配置。 可以在[](../admin/add-users/index.yml)[Microsoft 365 管理中心、PowerShell、Active](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理门户中管理用户帐户。 
+可以通过几种Microsoft 365管理用户帐户，具体取决于您的配置。 可以在[Microsoft 365 管理中心、PowerShell、Active](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理门户中管理用户帐户。 [](../admin/add-users/index.yml) 
 
-一旦购买Microsoft 365，Microsoft 365 管理中心 PowerShell 可用于管理帐户。 管理云标识时，组织中的每个人都具有单独的用户帐户名称和密码。 如果你想要与本地基础结构集成，并且使用户帐户与 Microsoft 365 同步，可以使用 Azure AD 连接 为单一登录 (SSO) 功能提供标识和密码同步。
+一旦购买Microsoft 365，Microsoft 365 管理中心 PowerShell 可用于管理帐户。 管理云标识时，组织中的每个人都具有单独的用户帐户名称和密码。 如果你想要与本地基础结构集成，并将用户帐户与 Microsoft 365 同步，可以使用 Azure AD 连接 为单一登录 (SSO) 功能提供标识和密码同步。
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>规划用户帐户管理位置和方式
 
@@ -49,22 +49,22 @@ ms.locfileid: "53858875"
     
 ## <a name="managing-accounts"></a>管理帐户
 
-在决定组织创建和管理帐户的方式时，请考虑以下要求：
+在确定组织创建和管理帐户的方式时，请考虑以下要求：
   
 - 目录同步软件需要安装在本地环境的服务器上，以连接 Microsoft 365 和 AD DS 之间的标识。
     
-- 任何目录同步选项（包括 SSO 选项）都要求 AD DS 属性符合标准。 准备目录同步到 Microsoft 365 中介绍了目录中使用的属性以及 (（如果需要任何) ）的清理[Microsoft 365。](prepare-for-directory-synchronization.md) 
+- 任何目录同步选项（包括 SSO 选项）都要求 AD DS 属性符合标准。 准备目录同步到 Microsoft 365 中介绍了目录中使用的属性以及 (（如果需要任何) ）的[清理Microsoft 365。](prepare-for-directory-synchronization.md) 
     
-- 规划如何创建帐户Microsoft 365帐户。
+- 规划如何创建Microsoft 365帐户。
     
 下表列出了不同的帐户管理工具。
     
-|工具|注释|
+|工具|备注|
 |:-----|:-----|
 |Microsoft 365 管理中心  <br/> |[单独或批量添加用户](../admin/add-users/add-users.md) <br/>  提供用于添加和更改用户帐户的简单 Web 界面。  <br/>  如果启用了目录同步，则不能用于更改用户 (且可以将许可证分配设置为) 。  <br/>  不能与 SSO 选项一同使用。  <br/> |
 |Windows PowerShell  <br/> |[使用Microsoft 365管理Windows PowerShell](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  允许您使用自定义脚本批量添加Windows PowerShell用户。  <br/>  可用于向帐户分配位置和许可证，而不考虑帐户的创建方式。  <br/> |
 |批量导入  <br/> |[同时添加多个用户](add-several-users-at-the-same-time.md) <br/>  允许您导入 CSV 文件以将一组用户添加到Microsoft 365。  <br/>  不能与 SSO 选项一同使用。  <br/> |
-|Azure AD  <br/> |通过订阅获取免费版本的 Azure AD Microsoft 365订阅。 你可以执行一些功能，如为云用户重置自助服务密码，以及使用免费版本自定义登录和访问面板页面。 若要获取增强功能，可以升级到基本版本、Azure AD Premium P1或Azure AD Premium P2。 有关 [支持的功能列表，请参阅 Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) 版本。  <br/> |
+|Azure AD  <br/> |通过你的订阅获取免费版本的 Azure AD Microsoft 365订阅。 你可以执行一些功能，如为云用户重置自助服务密码，以及使用免费版本自定义登录和访问面板页面。 若要获取增强功能，可以升级到基本版本、Azure AD Premium P1或Azure AD Premium P2。 有关 [支持的功能列表，请参阅 Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) 版本。  <br/> |
 |目录同步  <br/> |[将本地标识与 Azure AD 集成](/azure/active-directory/hybrid/whatis-hybrid-identity) <br/>  对于具有或不使用密码同步的目录同步，请使用[Azure AD 连接快速设置](/azure/active-directory/hybrid/how-to-connect-install-express)。  <br/>  对于多个林和 SSO 选项，请使用[Azure AD](/azure/active-directory/hybrid/how-to-connect-install-custom)自定义连接。  <br/>  提供启用 SSO 所需的基础结构。  <br/>  对于很多混合方案（如分步迁移和混合部署）Exchange  <br/>  从 AD DS 同步安全和启用邮件的组。  <br/> |
 |||
    

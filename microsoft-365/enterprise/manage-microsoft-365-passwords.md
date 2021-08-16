@@ -1,7 +1,7 @@
 ---
 title: 管理Microsoft 365用户帐户密码
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理Microsoft 365用户帐户密码。
-ms.openlocfilehash: ac83ef8a52bd0f0c3a6a8d1c0164c6eb6c0a4f4b20045d5c23ad2c1fb7a6b6da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899303"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356656"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>管理Microsoft 365用户帐户密码
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 可以通过几种Microsoft 365管理用户帐户密码，具体取决于您的标识配置。 可以在 Microsoft 365 管理中心、Active Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理中心管理用户帐户。 [](../admin/add-users/index.yml)
 

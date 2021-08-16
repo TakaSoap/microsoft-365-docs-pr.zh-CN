@@ -1,7 +1,7 @@
 ---
 title: '使用Microsoft 365 TG 测试实验室 (测试) '
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：使用这些测试实验室指南 (TG) 设置演示、概念证明或 Microsoft 365。
-ms.openlocfilehash: 864b8f231cfd342aae26ec0e7deb83ff41bef28d8506f47a4eea6c44a1cfd8e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c1a1462c2bd177f30ced6b8e9ecdb17dd72adbc
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819436"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356104"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>使用Microsoft 365 TG 测试实验室 (测试) 
 
@@ -45,11 +45,11 @@ TLG 还允许你创建用于开发和测试应用程序的代表性环境，也�
 
 - [模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    创建在基础结构服务Microsoft Azure和 Microsoft 365 企业版 E5 试用订阅中运行的简化 Intranet。 
+    创建在基础结构服务中运行的Microsoft Azure Intranet 和 Microsoft 365 企业版 E5 试用订阅。 
 
     此为可选步骤，若要为混合标识生成模拟的企业配置，则需要执行此步骤。
     
-有关适用于 Office 365 和 Microsoft 365 的其他 TTL，请转到测试[实验室指南](m365-enterprise-test-lab-guides.md)。  
+有关同时适用于 Office 365 和 Microsoft 365 的其他 TTL，请转到测试[实验室指南](m365-enterprise-test-lab-guides.md)。  
     
 ## <a name="related-topics"></a>相关主题
 

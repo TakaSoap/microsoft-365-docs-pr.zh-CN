@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 管理 Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 了解如何使用 PowerShell Microsoft 365用户、许可证和 365 应用。
-ms.openlocfilehash: e5f30a9d899ed84039077071fb33a0b540d07747e45c3cec2b2d70fa974eccb9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbbbec88f8dcb4b31102bab4be4549c94874aff8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885203"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357073"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>使用 PowerShell 管理 Microsoft 365
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 PowerShell for Microsoft 365 是一款强大的管理工具，可补充Microsoft 365 管理中心。 例如，可以使用 PowerShell 自动化轻松管理多个用户帐户和许可证以及创建报告。
 
@@ -36,7 +36,7 @@ PowerShell for Microsoft 365 是一款强大的管理工具，可补充Microsoft
   
 - [**入门**](getting-started-with-microsoft-365-powershell.md)
 
-    如果您不熟悉 PowerShell for Microsoft 365，并且想要安装 Microsoft 365 模块并连接到订阅，请从这里开始。
+    如果不熟悉 PowerShell for Microsoft 365，并且想要安装 Microsoft 365 模块并连接到订阅，请从这里开始。
 
 - [**用户帐户、许可证和组**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
@@ -44,11 +44,11 @@ PowerShell for Microsoft 365 是一款强大的管理工具，可补充Microsoft
 
 - [**SharePoint**](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
-    若要使用自动化命令来管理 SharePoint。
+    若要使用自动化命令管理项目，请SharePoint。
 
 - [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
-    如果要管理项目，请从这里Exchange Online。
+    如果要管理项目，请Exchange Online。
 
 - [**电子邮件迁移**](use-powershell-for-email-migration-to-microsoft-365.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Office 365 中的 Skype for Business Online - 管理员帮助
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -21,19 +21,19 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 作为管理员，查找有关设置 Skype for Business Online 部分的帮助，包括你的网络、会议和 IM 以及用户的外部访问。
-ms.openlocfilehash: db39d4d42b27aa95cdb3dc86d0c1976dd053d43408e5b64289b2754f88e698b6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 作为管理员，查找有关设置 Skype for Business Online 部分（包括网络、会议和 IM 以及用户的外部访问）的帮助。
+ms.openlocfilehash: 3464f137459544d521fdbe43a2a6e590ed11b904
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835003"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58355852"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 中的 Skype for Business Online - 管理员帮助
 
 ## <a name="were-here-to-help"></a>我们随时提供帮助！
 
-作为 Office 365 商业版的管理员，你可以免费联系我们的资深支持专员。 如果在此网站上找不到所需的信息，请联系商业产品支持人员 - **[管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+作为 Office 365 商业版的管理员，你可以免费联系我们的资深支持专员。 如果在此网站上找不到需要的信息，请联系商业产品支持人员 - **[管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>让用户与外部 Skype 或 Skype for Business 用户联系
 
@@ -65,7 +65,7 @@ ms.locfileid: "53835003"
     
 ## <a name="fix-problems-for-your-users"></a>修复你的用户遇到的问题
 
-- [在"设置个人"选项Skype for Business](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
+- [在"设置个人"Skype for Business](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
 - [需要有关登录登录Skype for Business？](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     

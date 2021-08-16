@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 管理安全组
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,16 +17,16 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: 了解如何使用 PowerShell 管理安全组。
-ms.openlocfilehash: fbefc5d483c327daa1082debd8ca504bc8df36e52dd49a0c3ad50ee356e45e48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878881"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356260"
 ---
 # <a name="manage-security-groups-with-powershell"></a>使用 PowerShell 管理安全组
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 可以使用 PowerShell for Microsoft 365作为管理安全Microsoft 365 管理中心的替代方法。 
 
@@ -94,7 +94,7 @@ Remove-AzureADGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $gr
 $groupName="<display name of the group>"
 Get-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
-使用这些命令按用户帐户的用户主体 (名称将 **UPN**) 添加到安全组的当前所有者。
+使用这些命令按用户帐户的用户主体名称 (**UPN**) 安全组的当前所有者。
 
 ```powershell
 $userUPN="<UPN of the user account to add>"

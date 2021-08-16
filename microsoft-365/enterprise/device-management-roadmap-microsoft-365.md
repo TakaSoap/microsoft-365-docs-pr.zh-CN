@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 设备管理指南
 keywords: Microsoft 365、Microsoft 365企业版、Microsoft 365文档、移动设备管理、Intune
-author: JoeDavies-MSFT
-ms.author: josephd
+author: kelleyvice-msft
+ms.author: kvice
 manager: laurawi
 ms.date: 08/10/2020
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 为设备设置设备管理的Microsoft 365。
-ms.openlocfilehash: 9efb9659c4c6dcfe20b8f52c1a451b3644dcc0023e4087723141d6574db082ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2155d33aa57da5bb80dbc83623ac87a94a300f28
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819411"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356764"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 设备管理指南
 
@@ -33,7 +33,7 @@ Microsoft 365企业版包括可帮助在组织中管理设备及其应用的功�
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-可以使用Microsoft Intune移动设备管理或移动应用程序管理来管理对组织的访问权限。 移动设备管理是当用户在 Intune 中"注册"其设备时。 注册设备后，它是托管设备;因此，它可以接收组织的策略、规则和设置。 例如，你可以安装特定应用、创建密码策略、安装 VPN 连接等。
+您可以使用Microsoft Intune管理或移动应用程序管理来管理对组织的访问权限。 移动设备管理是当用户在 Intune 中"注册"其设备时。 注册设备后，它是托管设备;因此，它可以接收组织的策略、规则和设置。 例如，你可以安装特定应用、创建密码策略、安装 VPN 连接等。
 
 具有其自己的个人设备的用户可能不希望注册其设备或由 Intune 和组织的策略进行管理。 但仍需要保护组织的资源和数据。 在此方案中，可以使用移动应用程序管理来保护应用。 例如，可以使用移动应用程序管理策略，要求用户在访问 SharePoint Online 时输入 PIN。
 
@@ -61,4 +61,4 @@ Microsoft 提供了一组有关[身份和设备访问](../security/office-365-se
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何管理设备Microsoft 365
 
-有关虚构但具有代表性的跨国家/公司如何使用 Microsoft 365 部署其移动设备管理基础结构的信息，请参阅[Contoso](contoso-mdm.md)移动设备管理。
+有关虚构但具有代表性的多方企业如何使用 Microsoft 365 部署其移动设备管理基础结构的信息，请参阅[Contoso](contoso-mdm.md)移动设备管理。

@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell SharePoint管理服务
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 了解如何使用 PowerShell for Microsoft 365管理用户、组和网站组。
-ms.openlocfilehash: ef92442ccbeb404e467f0b765add871215ce771bdcff97903d762c7753110efd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6bf6fe8a47f8a5fb8309c24836da614e95dd5bf2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878973"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356248"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>使用 PowerShell SharePoint管理服务
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-SharePoint管理员必须管理网站、网站组和用户。 尽管可以在 PowerShell 中执行其中一Microsoft 365 管理中心，但其他任务在 PowerShell 中更简单。 有关详细信息，请参阅以下文章：
+SharePoint管理员必须管理网站、网站组和用户。 尽管您可以在 PowerShell 中执行其中一Microsoft 365 管理中心，但其他任务在 PowerShell 中更简单。 有关详细信息，请参阅以下文章：
 
 - [SharePoint Online 命令行管理程序入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 

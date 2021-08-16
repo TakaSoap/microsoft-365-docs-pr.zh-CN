@@ -1,7 +1,7 @@
 ---
 title: 规划Microsoft 365 企业版
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/12/2019
 audience: Admin
@@ -22,20 +22,20 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: 本文提供了用于规划部署部署的清单Microsoft 365 企业版其他资源。
-ms.openlocfilehash: fb3a62dd1751c51530bec1927e101c0dc5fd35bcf05ce8d7ac62d9fa5809909b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870715"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356728"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>规划Microsoft 365 企业版
 
 将企业组织移动到Microsoft 365时，提前规划并做出可简化 IT 部署和用户采用的关键设计决策非常重要。 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>使用 FastTrack Microsoft 365规划
+## <a name="planning-with-microsoft-365-fasttrack"></a>规划Microsoft 365 FastTrack
 
-[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)是从 Microsoft 获取有关规划部署部署帮助Microsoft 365方法。 FastTrack 可以帮助你解决最常见的设计注意事项，并可以回答一直的问题。 
+[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)是从 Microsoft 获取有关规划部署部署帮助Microsoft 365方法。 FastTrack可以帮助你解决最常见的设计注意事项，并可以回答一直的问题。 
 
 >[!Note]
 >还可以从 Microsoft 合作伙伴 [获取帮助](https://www.microsoft.com/solution-providers/home)。
@@ -51,7 +51,7 @@ ms.locfileid: "53870715"
 
 - 对客户端的支持
 
-  包括基于证书的身份验证、移动设备管理、身份验证选项和租户间协作。 有关详细信息 [，请转到基于证书的](microsoft-365-client-support-certificate-based-authentication.md) 身份验证。
+  包括基于证书的身份验证、移动设备管理、身份验证选项和租户间协作。 有关详细信息 [，请转到基于证书](microsoft-365-client-support-certificate-based-authentication.md) 的身份验证。
 
 - 对混合新式验证的支持
 
@@ -61,4 +61,4 @@ ms.locfileid: "53870715"
 
   包括有关 Office 2007 和 Office 2010 客户端和服务器产品的迁移信息。 有关详细信息 [，请转到规划](plan-upgrade-previous-versions-office.md) 升级。
 
-还可以登录到你的 Microsoft 365 订阅，并使用 Microsoft 365 和 Office 365[安装指南](setup-guides-for-microsoft-365.md)。
+还可以登录到你的 Microsoft 365 订阅，并使用 Microsoft 365 和 Office 365[指南](setup-guides-for-microsoft-365.md)。

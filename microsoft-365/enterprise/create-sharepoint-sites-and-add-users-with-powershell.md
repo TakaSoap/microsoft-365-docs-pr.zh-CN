@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 创建 SharePoint Online 网站并添加用户
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
-ms.openlocfilehash: 32c577b40dc85ebad586376a6a47e4587502eae626c21ce3076866e39a17e321
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9a55c6373e2ecc81c59b2e1bf2d1b8850dd1c13
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864815"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356392"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 创建 SharePoint Online 网站并添加用户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-使用 PowerShell for Microsoft 365创建 SharePoint Online 网站并添加用户时，快速重复执行任务的速度比在 Microsoft 365 管理中心 中快得多。 还可以执行在任务管理中无法Microsoft 365 管理中心。
+当您使用 PowerShell for Microsoft 365创建 SharePoint Online 网站并添加用户时，您可以快速重复地执行任务，速度比在 Microsoft 365 管理中心 中快得多。 还可以执行在任务管理中无法Microsoft 365 管理中心。
 
 ## <a name="connect-to-sharepoint-online"></a>连接到 SharePoint Online
 
@@ -38,9 +38,9 @@ ms.locfileid: "53864815"
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>步骤 1：使用 PowerShell 创建新的网站集
 
-使用 PowerShell 创建多个网站，以及.csv示例代码创建的网站文件，记事本。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许你创建单个文件并运行使用该文件的单个 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，创建一个.csv文件，然后使用 PowerShell 引用该.csv文件，它将使用其内容创建网站。
+使用 PowerShell 创建多个网站，以及.csv示例代码创建的网站文件，记事本。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许你创建单个文件并运行使用该文件的单个 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，创建一.csv文件，然后使用 PowerShell 引用.csv文件，它将使用其内容创建网站。
 
-PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管道传输至大括号内的循环，该循环将读取文件的第一行作为列标题。 然后，PowerShell cmdlet 会访问其余记录，为每个记录创建一个新的网站集，然后根据列标题分配网站集的属性。
+PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管道传输至大括号内的循环，该循环将读取文件的第一行作为列标题。 然后，PowerShell cmdlet 将访问其余记录，为每个记录创建新的网站集，并按列标题分配网站集的属性。
 
 ### <a name="create-a-csv-file"></a>创建 .csv 文件
 
@@ -59,7 +59,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 
    其中 *，tenant* 是租户的名称 *，owner* 是租户上要授予其主要网站集管理员角色的用户的用户名。
 
-    (使用 Ctrl+H 进行快速批量记事本按 Ctrl+H。) 
+    (使用"快速"进行批量替换时，记事本按 Ctrl+H。) 
 
 2. 将桌面上的文件另存为 **SiteCollections.csv。**
 
@@ -86,7 +86,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 
 4. 请注意列表中的新网站集。 使用示例 CSV 文件，你将看到以下网站集 **：TeamSite01、Blog01、Project01** 和 **Community01**  
 
-就是这样。 已使用您创建的 .csv 和一个 Windows PowerShell 命令创建多个网站集。 现在，可以创建用户并将其分配给这些网站。
+就是这样。 已使用您创建的 .csv 和一个 Windows PowerShell 命令创建了多个网站集。 现在，可以创建用户并将其分配给这些网站。
 
 ## <a name="step-2-add-users-and-groups"></a>步骤 2：添加用户和组
 
@@ -112,7 +112,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 
    其中 *tenant* 等于你的租户名称。
 
-2. 将文件另存 **为GroupsAndPermissions.csv。**
+2. 将文件另存 **为桌面** GroupsAndPermissions.csv。
 
 3. 打开记事本的新实例，然后向其中粘贴以下文本块：
 
@@ -130,7 +130,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 
    其中 *，tenant* 等于租户名称 *，username* 等于现有用户的用户名。
 
-4. 将文件另存 **为Users.csv。**
+4. 将文件另存 **为桌面** Users.csv。
 
 5. 打开记事本的新实例，然后向其中粘贴以下文本块：
 
@@ -141,7 +141,7 @@ PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管�
 
    其中 MyAlias 等于当前登录的用户的用户名。
 
-6. 将文件另存 **为UsersAndGroups.ps1。** 这是一个简单的 Windows PowerShell 脚本。
+6. 将文件另存 **为桌面** UsersAndGroups.ps1。 这是一个简单的 Windows PowerShell 脚本。
 
 现在，您可以运行 UsersAndGroup.ps1 脚本以向多个网站集中添加用户和组。
 

@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 创建 Microsoft 365 报告
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 摘要：使用 PowerShell for Microsoft 365创建无法生成在 Microsoft 365 管理中心。
-ms.openlocfilehash: dba0e7eab3c2521193128b503fd11a00198e7abd199a0a3003ec19e1adf732fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：使用 PowerShell for Microsoft 365创建无法通过 Microsoft 365 管理中心 生成的报告。
+ms.openlocfilehash: 9fe1b48bdb61d037a3b2bc49d017a16c3a6875cd
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894799"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356872"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 创建 Microsoft 365 报告
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 许多不同的报告都可用于Microsoft 365 管理中心。 但是这些报告仅提供太多信息，有时你还需要更多信息。 这就是需要 PowerShell 进行Microsoft 365。
   
@@ -40,11 +40,11 @@ ms.locfileid: "53894799"
     
   - [使用 PowerShell Microsoft 365许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [使用 PowerShell Microsoft 365许可和未授权的用户](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [使用 PowerShell Microsoft 365许可用户和未授权用户](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
   - [使用 PowerShell Microsoft 365帐户许可证和服务详细信息](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [使用 PowerShell Microsoft 365用户帐户](view-user-accounts-with-microsoft-365-powershell.md)
+  - [使用 powerShell Microsoft 365用户帐户](view-user-accounts-with-microsoft-365-powershell.md)
     
 - SharePoint Online 报告：
     

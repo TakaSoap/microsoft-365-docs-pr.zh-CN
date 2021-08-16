@@ -1,7 +1,7 @@
 ---
 title: 高可用性联合身份验证阶段 5 为用户配置Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -13,13 +13,13 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 摘要：配置 Azure AD 连接，以在 Microsoft 365 中Microsoft Azure。
-ms.openlocfilehash: 7953e7655b484250576352eb805042e1a435ccf5bf6cea25cf6a5dc7eb3a4bc8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：配置 Azure AD 连接，以在 Microsoft Azure 中为 Microsoft 365 进行高可用性联合Microsoft Azure。
+ms.openlocfilehash: ecd5eac14279bb79c0e4bc574a9340314cc77574
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870658"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356524"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性联合身份验证阶段 5：为用户配置Microsoft 365
 
@@ -45,11 +45,11 @@ ms.locfileid: "53870658"
   
 ## <a name="verify-your-configuration"></a>验证配置
 
-现在，你应准备好配置 Azure AD 连接和联合身份验证，Microsoft 365。 为确保已就绪，请检查以下清单：
+现在，你应该已准备好配置 Azure AD 连接和联合身份验证Microsoft 365。 为确保已就绪，请检查以下清单：
   
-- 你的组织的公共域将添加到你的Microsoft 365订阅。
+- 组织的公共域已添加到你的Microsoft 365订阅。
     
-- 组织的 Microsoft 365用户帐户配置为组织的公共域名，可以成功登录。
+- 组织的用户帐户Microsoft 365配置为组织的公用域名，并且可以成功登录。
     
 - 已基于公共域名确定联合身份验证服务 FQDN。
     
@@ -143,8 +143,8 @@ Azure 中适用于 azure Microsoft 365的高可用性联合身份验证基础结
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 
-[联合身份验证Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[联合身份Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)

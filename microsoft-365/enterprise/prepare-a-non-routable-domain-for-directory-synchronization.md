@@ -1,7 +1,7 @@
 ---
 title: 准备不可路由域以进行目录同步
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,17 +21,17 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: 了解在将不可路由的域与内部部署用户帐户同步到本地租户之前，Microsoft 365操作。
-ms.openlocfilehash: 97e4a0b634b66a439d96496b3e742659b9d99496271fddd8db2ddf7c6ee7cee9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解在将不可路由的域与本地用户帐户同步之前，如何Microsoft 365租户。
+ms.openlocfilehash: cecaee814d19f78b973ebd2f06c8d2c665d905de
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794846"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356908"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>准备不可路由域以进行目录同步
 
-当你将本地目录与 Microsoft 365 同步时，你必须在 Azure AD Azure Active Directory (中拥有) 。 只有与本地 Active Directory (AD DS) 关联的用户主体名称 (AD DS) UPN。 但是，任何包含不可路由域的 UPN（如".local" (示例：billa@contoso.local) ）都将同步到 .onmicrosoft.com 域 (示例：billa@contoso.onmicrosoft.com) 。 
+当你将本地目录与 Microsoft 365 同步时，你必须在 Azure AD Azure Active Directory (中拥有) 。 仅同步与 (Active Directory 域服务) AD DS (关联的用户主体名称) UPN。 但是，任何包含不可路由域的 UPN（如".local" (示例：billa@contoso.local) ）都将同步到 .onmicrosoft.com 域 (示例：billa@contoso.onmicrosoft.com) 。 
 
 如果当前对 AD DS 中的用户帐户使用".local"域，建议将其更改为使用验证域（如 billa@contoso.com）以便与 Microsoft 365 域正确同步。
   
@@ -39,7 +39,7 @@ ms.locfileid: "53794846"
 
 使用 Azure AD 连接将 AD DS 同步到租户的 Azure AD Microsoft 365租户。 有关详细信息，请参阅 [将本地标识与 Azure AD 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
   
-Azure AD 连接同步用户的 UPN 和密码，以便用户可以使用他们在本地使用的相同凭据登录。 但是，Azure AD 连接仅将用户同步到由 Microsoft 365 验证的域。 这意味着该域也由 Azure AD 验证，Microsoft 365由 Azure AD 管理。 换句话说，域必须是有效的 Internet 域 (例如 .com、.org、.net、.us) 。 如果内部 AD DS 仅使用不可路由的域 (例如，".local") ，这可能与 Microsoft 365 租户的已验证域不匹配。 可以通过在本地 AD DS 中更改主域，或者添加一个或多个 UPN 后缀来解决此问题。
+Azure AD 连接同步用户的 UPN 和密码，以便用户可以使用他们在本地使用的相同凭据登录。 但是，Azure AD 连接仅将用户同步到由 Microsoft 365 验证的域。 这意味着该域也由 Azure AD 验证，Microsoft 365由 Azure AD 管理。 换句话说，该域必须是有效的 Internet 域 (例如 .com、.org、.net、.us) 。 如果内部 AD DS 仅使用不可路由的域 (例如，".local") ，则这可能与 Microsoft 365 租户的已验证域不匹配。 可以通过在本地 AD DS 中更改主域或添加一个或多个 UPN 后缀来解决此问题。
   
 ### <a name="change-your-primary-domain"></a>更改主域
 
@@ -47,7 +47,7 @@ Azure AD 连接同步用户的 UPN 和密码，以便用户可以使用他们在
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>添加 UPN 后缀并更新用户
 
-您可以通过在 AD DS 中注册新的 UPN 后缀来匹配在 Microsoft 365 中验证的域 (或域) ".local"问题。 注册新后缀后，更新用户 UPN 以将".local"替换为新域名，例如，使用户帐户看起来像 billa@contoso.com。
+您可以通过在 AD DS 中注册新的 UPN 后缀来匹配在 (中验证的域或) ".local"Microsoft 365。 注册新后缀后，更新用户 UPN 以将".local"替换为新的域名，例如，使用户帐户看起来像 billa@contoso.com。
   
 更新 UPN 以使用已验证域后，即可将本地 AD DS 与 Microsoft 365。
   

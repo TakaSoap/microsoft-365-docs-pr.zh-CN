@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell Microsoft 365帐户许可证和服务详细信息
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -18,19 +18,19 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: 介绍如何使用 PowerShell 确定Microsoft 365的用户分配的服务。
-ms.openlocfilehash: 040f296468e3bc3ad3b4b69df4a4420defa202f4dc8e50441f5cbece71399613
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 说明如何使用 PowerShell 确定Microsoft 365的用户服务。
+ms.openlocfilehash: 2c450c0697dced43f974087f6c0453e4b761914b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840739"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356056"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>使用 PowerShell Microsoft 365帐户许可证和服务详细信息
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-在 Microsoft 365 中，许可计划 (（也称为 SK 或 Microsoft 365 计划) ）中的许可证允许用户访问为这些计划定义的 Microsoft 365 服务。 但是，用户可能无法访问当前分配给他们的许可证中提供的所有服务。 可以使用 PowerShell for Microsoft 365查看用户帐户上服务的状态。 
+在Microsoft 365中，许可计划的许可证 (SKUs 或 Microsoft 365 计划) 允许用户访问为这些计划定义的 Microsoft 365 服务。 但是，用户可能无法访问当前分配给他们的许可证中提供的所有服务。 可以使用 PowerShell for Microsoft 365查看用户帐户上服务的状态。 
 
 有关许可计划、许可证和服务的信息，请参阅 [使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
@@ -106,7 +106,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
-此示例显示用户能够 BelindaN@litwareinc.com 分配给其帐户的第一个许可证访问的服务 (索引号为 0) 。
+此示例显示用户 BelindaN@litwareinc.com 从分配给其帐户的第一个许可证访问的服务 (索引号为 0) 。
   
 ```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus

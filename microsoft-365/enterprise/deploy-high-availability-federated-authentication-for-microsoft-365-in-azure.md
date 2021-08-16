@@ -1,7 +1,7 @@
 ---
 title: 在 Azure 中为 Microsoft 365 部署高可用性联合身份验证
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 摘要：在 Microsoft Azure 中为 Microsoft 365 订阅配置高可用性联合Microsoft Azure。
-ms.openlocfilehash: e8060b9af085791ff8e11ad0e5be8cb307b7f5870dc92311a1f1375fbd3acfd5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：在 Microsoft Azure 中为 Microsoft 365 配置高可用性联合身份验证。
+ms.openlocfilehash: 2bbd802a3ed3e7cc553d95e346d6b793b59f3533
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835160"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356812"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>在 Azure 中为 Microsoft 365 部署高可用性联合身份验证
 
@@ -40,9 +40,9 @@ ms.locfileid: "53835160"
     
 下面是包含每个服务器的占位符名称的配置。
   
-**Azure 中用于 Microsoft 365 基础结构的高可用性联合身份验证**
+**Azure 中用于基础结构Microsoft 365高可用性联合身份验证**
 
-![Azure 中的高可用性和联合Microsoft 365基础结构的最终配置](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure 中高可用性和联合Microsoft 365基础结构的最终配置](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 所有虚拟机都位于一个跨界 Azure 虚拟网络 (VNet) 中。 
   
@@ -54,7 +54,7 @@ ms.locfileid: "53835160"
 > [!NOTE]
 > 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅 [Running Windows VMs for an N-tier architecture](/azure/guidance/guidance-compute-n-tier-vm)（运行用于 N 层体系结构的 Windows VM）。 
   
-此配置的结果是，您将对 Microsoft 365 所有用户进行联合身份验证，在此身份验证中，他们可以使用其 AD DS 凭据（而不是 Microsoft 365 帐户）登录。 联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
+此配置的结果是，您将对 Microsoft 365 用户进行联合身份验证，在此身份验证中，他们可以使用其 AD DS 凭据（而不是 Microsoft 365 帐户）登录。 联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
   
 ## <a name="bill-of-materials"></a>物料清单
 
@@ -98,13 +98,13 @@ ms.locfileid: "53835160"
     
 - [第 5 阶段：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365 配置联合身份验证。 为订阅配置Microsoft 365身份验证。
     
-这些文章提供预定义体系结构的规范性分阶段指南，以在 Azure 基础结构服务中为 Microsoft 365 创建功能、高可用性联合身份验证。 请注意下列事项：
+这些文章为预定义体系结构提供了说明性分阶段指南，以在 Azure 基础结构服务中为 Microsoft 365 创建功能、高可用性联合身份验证。 请注意下列事项：
   
 - 如果你是有经验的 AD FS 实施者，则可以自由调整第 3 阶段和第 4 阶段的说明，构建最符合你需求的服务器集。
     
 - 如果你已经拥有现有的 Azure 混合云部署以及现有的跨界虚拟网络，则可以随意调整或跳过第 1 阶段和第 2 阶段中的说明，并将 AD FS 和 Web 应用程序代理服务器置于相应的子网上。
     
-若要构建开发/测试环境或此配置的概念证明，请参阅适用于你的开发/测试Microsoft 365[联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
+若要构建开发/测试环境或此配置的概念证明，请参阅联合标识[Microsoft 365开发/测试环境](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
   
 ## <a name="next-step"></a>后续步骤
 

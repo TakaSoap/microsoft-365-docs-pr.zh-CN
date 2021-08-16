@@ -2,8 +2,8 @@
 title: Microsoft 365 测试环境的密码重置
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/13/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: 6935327518c6b2fe5bac9e8fddf4308eb34852954d9e20767a3d8315f7566c21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 999709558a468d53bc809662dbcc270fa8a9945b
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840871"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356500"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -41,7 +41,7 @@ ms.locfileid: "53840871"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
@@ -74,7 +74,7 @@ ms.locfileid: "53840871"
 3. 将“**组类型**”设置为“**安全**”，将“**组名称**”设置为“**PWReset**”，将“**成员身份类型**”设置为“**已分配**”。
 4. 选择 **"成员**"，查找并选择 **"用户 3"，** 选择 **"选择**"，然后选择"创建 **"。**
 5. 关闭“**组**”窗格。
-6. In the Azure Active Directory pane， select **Password reset** in the left navigation.
+6. 在Azure Active Directory窗格中，选择左侧导航 **中的"** 密码重置"。
 7. 在“**密码重置属性**”窗格的“**已启用自助式密码重置**”选项下，选中“**已选择**”。
 8. 选择 **"选择组"，** 选择 **"PWReset"** 组，然后选择"**保存**  >  **"。**
 9. 关闭专用浏览器实例。

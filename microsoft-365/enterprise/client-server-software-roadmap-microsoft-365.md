@@ -2,8 +2,8 @@
 title: 客户端和服务器软件路线图Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,30 +13,30 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 使用此路线图来设置客户端和服务器软件Microsoft 365。
-ms.openlocfilehash: 6fe2a271c8a6837bdd2dcf98f3aa5ca45f880ddd560b72979fb3e9a5b666caa0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864996"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356128"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>客户端和服务器软件路线图Microsoft 365
 
-大多数企业组织具有异类环境，其中包括操作系统、客户端软件和服务器软件的多个版本。 Microsoft 365 Enterprise包括 IT 基础结构的关键组件的最安全版本。 它还包括旨在利用云技术的生产力功能。
+大多数企业组织具有异类环境，其中包括操作系统、客户端软件和服务器软件的多个版本。 Microsoft 365 Enterprise包括 IT 基础结构的关键组件的最安全版本。 它还包括旨在利用云技术生产力功能。
 
 若要最大限度地利用集成套件Microsoft 365 Enterprise解决方案的业务价值，请开始规划和实施迁移以下版本的策略：
 
 - 计算机上安装Office客户端以Microsoft 365 企业应用版。
 - 服务器上Office的服务器与服务器中的等效服务Microsoft 365。
-- Windows 7，Windows 8.1设备上运行以Windows 10 企业版。
+- Windows 7，Windows 8.1设备上使用 Windows 10 企业版。
 
 >[!Note]
->2020 Windows 7 的支持于 *2020 年 1 月 14* 日结束。 有关详细信息，请参阅 [停止提供支持的详细信息](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
+>对 7 Windows的支持已于 *2020 年 1 月 14* 日结束。 有关详细信息，请参阅 [停止提供支持的详细信息](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
 随着时间的推移，随着这些迁移的完成，你的组织更接近新式工作场所 [的愿景](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)。 此安全且集成的环境可以帮助你在组织中激发团队合作和创造力。 Microsoft 365支持Enterprise一直支持你。
 
-## <a name="migration-for-office-client-products"></a>迁移 Office 客户端产品
+## <a name="migration-for-office-client-products"></a>迁移Office客户端产品
 
 大型和小型组织通常结合使用旧版 Office客户端产品，如 Word、Excel 和 PowerPoint。 这些较旧版本：
 
@@ -62,7 +62,7 @@ Microsoft 365 企业应用版自动安装更新。 它可以利用基于云的�
 
 对于 Office 2010 版本中Office版本，支持已于 *2020 年 10 月 13* 日结束。 有关详细信息，请参阅[Office 2010 年停止提供支持路线图](/deployoffice/office-2010-end-support-roadmap)。
 
-可以考虑将运行 2010 Office的计算机升级到 Office 2013 或 Office 2016。 但是，必须手动更新这两个版本。 因此，请考虑改为执行以下步骤：
+你可以考虑将运行 2010 Office的计算机升级到 2013 Office 2013 Office 2016。 但是，必须手动更新这两个版本。 因此，请考虑改为执行以下步骤：
 
 1. 获取并分配Microsoft 365许可证。
 2. 卸载Office 2010。
@@ -72,7 +72,7 @@ Microsoft 365 企业应用版自动安装安全更新和新功能更新。 它�
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 和 Office 2016
 
-请参阅[2013 年 10](/lifecycle/products/microsoft-office-2013)月Office路线图。 尚未确定对 Office 2016 的支持终止。 在这些版本（如 Office 2010）中，您仍[必须安装安全更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 此任务可能无法很好地扩展，具体取决于组织的规模。
+请参阅[2013 年 10](/lifecycle/products/microsoft-office-2013)月Office路线图。 尚未确定对 Office 2016 的支持结束。 在这些版本（如 Office 2010）中，您仍[必须安装安全更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 此任务可能无法很好地扩展，具体取决于组织的规模。
 
 与其使计算机保持最新的 Office 2013 或 Office 2016 安全更新，或者将计算机从 Office 2013 更新到 Office 2016，不如考虑执行以下步骤：
 
@@ -84,7 +84,7 @@ Microsoft 365 企业应用版自动安装安全更新和新功能更新。 它�
 
 ## <a name="migration-for-office-server-products"></a>迁移 Office 服务器产品
 
-大型和小型组织通常结合使用旧版 Office 服务器产品，如 Exchange Server 和 SharePoint Server。 这些较旧版本：
+大型和小型组织通常结合使用旧版本的 Office 服务器产品，如 Exchange Server 和 SharePoint Server。 这些较旧版本：
 
 - 应该更新最新的安全更新并支持修补程序。在某些情况下，这些更新每月发布一次。
 - 未优化为使用可帮助你进行业务数字化转型的 Microsoft 云技术。
@@ -109,29 +109,29 @@ Microsoft 365 Enterprise 包括基于云的 Office 服务器服务版本，这�
 - [OfficeCommunications Server 停止支持路线图](/skypeforbusiness/plan-your-deployment/upgrade)
 - [PerformancePoint Server 2007 年停止提供支持路线图](pps-2007-end-of-support.md)
 
-与其使用 Office 2010、Office 2013 或 Office 2016 发行版中的服务器产品升级 Office 2007 版本中的服务器产品，不如考虑执行以下步骤：
+与其在 Office 2010、Office 2013 或 Office 2016 版本中使用服务器产品升级 Office 2007 版本中的服务器产品，不如考虑执行以下步骤：
 
-1. 将 Office 2007 服务器上的数据迁移到 Microsoft 365。 有关详细信息或帮助，请雇用 Microsoft 合作伙伴。
+1. 将 Office 2007 服务器上的数据迁移到Microsoft 365。 有关详细信息或帮助，请雇用 Microsoft 合作伙伴。
 2. 向用户推出新功能和工作流程。
-3. 当您不再需要运行 Office 2007 服务器产品本地服务器时，请将其停用。
+3. 当您不再需要运行 2007 服务器产品Office服务器时，请将其停用。
 
 ### <a name="office-2010-server-products"></a>Office 2010 服务器产品
 
-对 [2010 Exchange Server](exchange-2010-end-of-support.md)的支持已于 *2020 年 10 月 13 日结束*。
+对 [2010 Exchange Server](exchange-2010-end-of-support.md)的支持已于 *2020 年 10 月 13* 日结束。
 
 对 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支持将于 *2021 年 4 月 13 日* 结束。
 
 与其在 Office 2010 版本中升级这些服务器产品，不如在 Office 2013 或 Office 2016 版本中使用服务器产品升级这些服务器产品，而是考虑执行以下步骤：
 
-1. 将 Office 2010 服务器上的数据迁移到 Microsoft 365。 有关详细信息，请参阅[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)或聘用 Microsoft 合作伙伴。
+1. 将 Office 2010 服务器上的数据迁移到Microsoft 365。 有关详细信息，请参阅FastTrack[或Microsoft 365](https://fasttrack.microsoft.com/microsoft365) Microsoft 合作伙伴。
 2. 向用户推出新功能和工作流程。
-3. 当您不再需要运行 2010 服务器产品Office服务器时，请将其停用。
+3. 当您不再需要运行 Office 2010 服务器产品本地服务器时，请将其停用。
 
 ### <a name="office-2013-server-products"></a>Office 2013 服务器产品
 
 对于 2013 Office中的服务器产品，尚未确定停止提供支持。 与其使用 Office 2016 版本中的服务器产品升级 Office 2013 版本中的服务器产品，不如考虑执行以下步骤：
 
-1. 将 Office 2013 服务器上的数据迁移到Microsoft 365。 有关详细信息，请参阅[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)或聘用 Microsoft 合作伙伴。
+1. 将 Office 2013 服务器上的数据迁移到Microsoft 365。 有关详细信息，请参阅FastTrack[或](https://fasttrack.microsoft.com/microsoft365)Microsoft 365 Microsoft 合作伙伴。
 2. 向用户推出新功能和工作流程。
 3. 当您不再需要运行 2013 服务器产品Office服务器时，请将其停用。
 
@@ -139,13 +139,13 @@ Microsoft 365 Enterprise 包括基于云的 Office 服务器服务版本，这�
 
 对于 2016 Office中的服务器产品，尚未确定停止提供支持。 若要利用基于云的服务和增强功能来数字化转换业务，请考虑执行以下步骤：
 
-1. 将 Office 2016 服务器上的数据迁移到Microsoft 365。 有关详细信息，请参阅[FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365)或聘用 Microsoft 合作伙伴。
+1. 将 Office 2016 服务器上的数据迁移到Microsoft 365。 有关详细信息，请参阅FastTrack[或](https://fasttrack.microsoft.com/microsoft365)Microsoft 365 Microsoft 合作伙伴。
 2. 向用户推出新功能和工作流程。
-3. 当您不再需要运行 2016 服务器产品Office服务器时，请将其停用。
+3. 当您不再需要运行 2016 服务器产品Office，请将其停用。
 
 ## <a name="migration-for-windows-7-and-81"></a>Windows 7 和 8.1 的迁移
 
-*2020* 年 1 Windows 7 日停止支持。 若要迁移运行 Windows 7 或 Windows 8.1的设备，可以执行就地升级。
+*2020* 年 1 Windows 7 日结束支持。 若要迁移运行 7 Windows 7 Windows 8.1的设备，可以执行就地升级。
 
 有关其他方法，请参阅 [Windows 10 部署方案](/windows/deployment/windows-10-deployment-scenarios)。你也可以自行规划 [Windows 10 部署](/windows/deployment/planning/)。
 
@@ -161,11 +161,11 @@ Microsoft 365 Enterprise 包括基于云的 Office 服务器服务版本，这�
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-若要更好地了解如何将整个组织移动到 Microsoft 365 for Enterprise 中的产品和服务，请下载此转换海报：
+若要更好地了解如何将整个组织移动到 Microsoft 365 for Enterprise 中的产品和服务，请下载以下转换海报：
 
-[![显示"转换到Microsoft 365海报的图像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![显示"转换到Microsoft 365的图像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-通过这份两页的海报可以快速清点现有基础结构。 使用它获取有关移动到 Microsoft 365 for Enterprise 中的产品或服务的指导。 它显示了Windows和Office以及其他基础结构和安全元素（如设备管理、标识和威胁防护以及信息和合规性保护）的信息。
+通过这份两页的海报可以快速清点现有基础结构。 使用它获取有关移动到 Microsoft 365 中的产品或服务的指导Enterprise。 它显示了Windows和Office产品以及其他基础结构和安全元素，如设备管理、标识和威胁防护以及信息和合规性保护。
 
 ## <a name="how-microsoft-migrated-to-microsoft-365-for-enterprise"></a>Microsoft 如何迁移到 Microsoft 365 for Enterprise
 
@@ -175,4 +175,4 @@ Microsoft 365 Enterprise 包括基于云的 Office 服务器服务版本，这�
 - [Microsoft 将 150,000 个邮箱迁移到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [将 SharePoint 迁移到云：了解 Microsoft 如何运行自己的迁移](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [在 Microsoft 中将 Windows 10 部署为就地升级](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Windows 10部署：使用技巧 Microsoft IT 人员视频 (](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT)和技巧) 
+- [Windows 10部署：使用技巧 Microsoft IT 人员视频](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (和技巧) 

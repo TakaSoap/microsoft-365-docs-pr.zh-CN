@@ -2,8 +2,8 @@
 title: Microsoft 365 测试环境的传递身份验证
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
-ms.openlocfilehash: 6c4366713621a305c7f9000b5971232510cdefb457330f77ed5921a03bf9be37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6919c3f85e076232c864642ada020daaeff8f566
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858001"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357061"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
@@ -94,7 +94,7 @@ ms.locfileid: "53858001"
  
 此配置包括：
 
-- 使用Microsoft 365 E5测试标签试用或付费订阅。\<your domain name> 。
+- 使用MICROSOFT 365 E5测试标签的试用或付费订阅。\<your domain name> 。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以处理 Microsoft 365 订阅的 Azure AD 租户发出的直通身份验证请求。
 
 ## <a name="next-step"></a>后续步骤

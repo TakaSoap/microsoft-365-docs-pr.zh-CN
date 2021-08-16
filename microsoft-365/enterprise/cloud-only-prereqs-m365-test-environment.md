@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: dbe2fed146f6a0507ce1fa514239f059973c092fa1494452c09b32900ea23c1c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 242f17fc2f8241e5a17078286e6e23d4920ca99d
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830399"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58357085"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
@@ -35,7 +35,7 @@ ms.locfileid: "53830399"
 2. 配置命名位置
 3. 配置自助密码重置
 4. 配置多重身份验证
-5. 启用已加入域的计算机的Windows注册
+5. 启用已加入域的计算机的自动Windows注册
 6. 配置 Azure AD 密码保护 
 7. 启用 Azure AD Identity Protection
 8. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
@@ -111,7 +111,7 @@ ms.locfileid: "53830399"
 
 结果是测试环境满足标识和设备访问的仅云 [先决条件](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 配置的要求。 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 使用[常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
 

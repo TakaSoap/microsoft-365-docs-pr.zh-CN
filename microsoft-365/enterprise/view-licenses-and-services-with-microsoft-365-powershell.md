@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell Microsoft 365许可证和服务
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -20,20 +20,20 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 介绍如何使用 PowerShell 查看有关你的组织可用的许可计划、服务和许可证Microsoft 365的信息。
-ms.openlocfilehash: faf7589cacee5d945ef136c602dd1f3f18ac92dba5e361adc1a9e43580afe24f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 920bc00dcfa774f7cf157be4a543bf30e18f406e
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830139"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356044"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>使用 PowerShell Microsoft 365许可证和服务
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 每个Microsoft 365订阅都由以下元素组成：
 
-- **许可计划** 这些也称为许可证计划或Microsoft 365计划。 许可计划定义Microsoft 365可用的服务。 你的Microsoft 365订阅可能包含多个许可计划。 例如，许可计划Microsoft 365 E3。
+- **许可计划** 这些也称为许可证计划或Microsoft 365计划。 许可计划Microsoft 365为用户提供的服务。 你的Microsoft 365订阅可能包含多个许可计划。 例如，许可计划Microsoft 365 E3。
     
 - **服务** 这些也称为服务计划。 服务是Microsoft 365许可计划中提供的主要产品、特性和功能，例如Exchange Online和Microsoft 365 企业应用版 (名称Office 365 专业增强版) 。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
     
@@ -99,14 +99,14 @@ $licenses[2].ServicePlans
 
 ENTERPRISEPREMIUM 是第三行。 因此，索引值是 (3 - 1) 2。
 
-有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+有关许可证计划的完整列表 (产品名称) 包括的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 >[!Note]
->PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用 Microsoft 365 中的服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
+>PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用组织Microsoft 365服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
 >
     
 若要查看有关当前许可计划以及每个计划的可用许可证的摘要信息，请运行以下命令：
@@ -129,13 +129,13 @@ Get-MsolAccountSku
     
 - **ConsumedUnits：** 从特定许可计划向用户分配的许可证数。
     
-若要查看有关所有许可证Microsoft 365中可用的服务的详细信息，请运行以下命令：
+若要查看有关所有许可证Microsoft 365可用的服务的详细信息，请运行以下命令：
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。 
+下表显示了最常见Microsoft 365的服务计划及其友好名称。 服务计划列表可能会有所不同。 
   
 |**服务计划**|**说明**|
 |:-----|:-----|
@@ -149,7 +149,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 计划 2  <br/> |
    
-有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
+有关许可证计划的完整列表 (产品名称) 包括的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
 若要查看有关特定Microsoft 365计划中可用的服务的详细信息，请使用以下语法。
   
