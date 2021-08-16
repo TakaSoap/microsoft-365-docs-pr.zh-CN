@@ -1,7 +1,7 @@
 ---
 title: 帮助您从 Office 2007 服务器和客户端升级的资源
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
 audience: ITPro
@@ -24,22 +24,22 @@ f1.keywords:
 - NOCSH
 description: 本文提供的资源可帮助您从 Office 2007 服务器和客户端进行升级，因为对 Office 2007 的支持已结束。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 661dfca0c9d38d48a083eb9724aeafb9d433d9fffad2d2cc882078c17860d265
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878071"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354184"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>帮助您从 Office 2007 服务器和客户端升级的资源
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 如果您使用的是 Office 2007 产品和服务，请注意，这些应用程序的支持已结束。 请考虑迁移到 Microsoft 云，从 Microsoft 365。 使用本文作为起点来查看选项并规划升级。
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 规划路线图
   
-2007 Office 2007 产品和服务的支持已终止。 以下路线图可帮助您现在规划升级。
+2007 Office 2007 产品和服务的支持已结束。 以下路线图可帮助您现在规划升级。
 
 |**规划内容**|**结束日期支持**|
 |:-----|:-----|
@@ -56,7 +56,7 @@ ms.locfileid: "53878071"
 - 免费或付费的协助支持选项 (包括自定义支持协议) 
 - 新的联机技术内容更新
 
-无论你是企业组织还是个人家庭用户，都有几个要考虑的选项。
+无论你是企业组织还是个人家庭用户，都有几个需要考虑的选项。
 
 ## <a name="im-a-home-user-what-do-i-do"></a>我是一位家庭用户。 我怎么办？
 

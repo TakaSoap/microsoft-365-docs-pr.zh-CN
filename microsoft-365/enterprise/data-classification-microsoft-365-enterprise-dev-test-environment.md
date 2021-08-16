@@ -1,9 +1,9 @@
 ---
-title: 适用于企业Microsoft 365环境的数据分类
+title: 企业测试环境Microsoft 365数据分类
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南创建和使用企业测试环境中 Microsoft 365文档的保留标签。
-ms.openlocfilehash: 79002397be7c44c5c160d80288d3fea6e9c1f9594a024f5aa4dc501f86dda886
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891315"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354304"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业Microsoft 365环境的数据分类
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>企业测试环境Microsoft 365数据分类
 
 *本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
@@ -35,13 +35,13 @@ ms.locfileid: "53891315"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
 如果你只想按最低要求以轻型方式配置保留标签，请按照轻型基本配置 [中的说明操作](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
-如果要在模拟的企业中配置保留标签，请按照传递身份验证 [中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
+如果要在模拟的企业中配置保留标签，请按照传递 [身份验证 中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
 > 测试保留标签不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。
@@ -51,7 +51,7 @@ ms.locfileid: "53891315"
 在此阶段，为联机文档文件夹的不同保留级别SharePoint保留标签：
 
 1. 使用全局管理员[Microsoft 365](https://security.microsoft.com/homepage)登录安全中心。
-1. 从浏览器 **的"** 主页 - Microsoft 365安全"选项卡中，选择"**分类保留**  >  **标签"。**
+1. 从浏览器 **的"主页 - Microsoft 365** 安全"选项卡中，选择"**分类**  >  **保留标签"。**
 1. 选择“**创建标签**”。
 1. 在"**命名标签"窗格中****，在"** 命名标签"中 **输入**"内部公用"，然后选择"下一步 **"。**
 1. 在"**文件计划描述符"窗格中**，选择"下一 **步"。**
@@ -78,14 +78,14 @@ ms.locfileid: "53891315"
 
 首先，在 Online 团队网站SharePoint敏感级别：
   
-1. 使用浏览器的专用实例，Microsoft 365 管理中心[全局管理员](https://admin.microsoft.com)帐户登录帐户。
+1. 使用浏览器的专用实例，使用全局[管理员Microsoft 365 管理中心](https://admin.microsoft.com)登录浏览器。
 1. 在磁贴列表中，选择 **"SharePoint"。**
 1. 在浏览器的新 **SharePoint** 选项卡上，选择"**创建网站"。**
 1. 在“创建网站”页中，选择“团队网站”。
 1. 在" **团队网站名称"** 框中，输入 **SensitiveFiles**。
 1. 在"**团队网站说明"** 框中 **，SharePoint敏感文件的网站"。**
 1. 在 **"隐私设置**"**中，选择"专用 - 只有成员可以访问此网站**"，然后选择"下一 **步"。**
-1. 在 **"Who是否要添加？"窗格中**，选择"完成 **"。**
+1. 在 **"Who是否要添加？"窗格中，** 选择"完成 **"。**
     
 接下来，为敏感保留标签配置 SensitiveFiles 团队网站的 Documents 文件夹。
   
@@ -99,12 +99,12 @@ ms.locfileid: "53891315"
 1. 在"文档"文件夹中，选择"**新建**  >  **Word 文档"。**
 1. 在空白文档中输入一些文本。 等待保存文本。
 1. 在菜单栏上，选择"**共享文档"。**
-1. 在文件 **Document.docx** 旁边，选择垂直省略号， **然后选择详细信息**。
-1. 在右窗格的"属性"**部分，** 在"应用保留标签"下，请注意，文档已自动应用"**敏感**"保留标签。
+1. 在文件 **Document.docx，** 选择垂直省略号， **然后选择详细信息**。
+1. 在右窗格的"属性"**部分，****在"** 应用保留标签"下，请注意，文档已自动应用"**敏感**"保留标签。
 1. 单击 **编辑全部**。
-1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密**"标签，然后选择"保存 **"。**
+1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密"** 标签，然后选择"保存 **"。**
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 探索 [测试环境中](m365-enterprise-test-lab-guides.md#information-protection) 的其他信息保护特性和功能。
 

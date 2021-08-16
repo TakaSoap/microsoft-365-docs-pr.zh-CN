@@ -2,8 +2,8 @@
 title: 云解决方案云服务Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 设置云服务的路线图Microsoft 365。
-ms.openlocfilehash: b4de1f40ff845f59903708da927eeb29cec5391527dfcb31cf952d221a1beb19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 050dc8e622bbfe9f1a065a74f4dffcdd3647074a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850227"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353764"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>云解决方案云服务Microsoft 365
 
-若要获得企业版组织的创造力、团队合作Microsoft 365优势，请部署最符合组织需求的云服务。
+若要获得企业用户对Microsoft 365的创造力、团队合作和生产力优势，请部署最符合组织需求的云服务。
 
-如果您具有适用于 Exchange、SharePoint 或 Skype for Business 的现有基于服务器的部署，并且想要将整个组织迁移到 Microsoft 365 for enterprise，请参阅客户端和[服务器软件路线图](client-server-software-roadmap-microsoft-365.md)。 此路线图包括Microsoft Office客户端产品、本地 Office Server 产品和基于 Microsoft Windows &ndash; 的设备。
+如果您具有适用于 Exchange、SharePoint 或 Skype for Business 的现有基于服务器的部署，并且想要将整个组织迁移到 Microsoft 365 企业版，请参阅客户端和[服务器软件路线图](client-server-software-roadmap-microsoft-365.md)。 此路线图包括Microsoft Office客户端产品、本地 Office Server 产品和基于 Microsoft Windows &ndash; 的设备。
 
 ## <a name="deploy"></a>部署
 
@@ -54,14 +54,14 @@ ms.locfileid: "53850227"
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [对云服务执行性能调整](tune-microsoft-365-performance.md)
 
-## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Microsoft 如何为客户Microsoft 365
+## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Microsoft 如何为云解决方案Microsoft 365
 
 有关 Microsoft IT 如何部署或管理云服务Microsoft 365的信息：
 
 1. 转到 [Microsoft IT 展示](https://www.microsoft.com/itshowcase)。
 2. 选择 **"搜索内容"。**
-3. 在 **"优化结果"** 下，选择 **Pro访问群体**"下的 **"IT** 服务"，然后在"产品"下选择云服务。
+3. 在 **"精简结果"** 下，Pro访问 **群体**"下的 **"IT** 服务"，然后在 **"产品"** 下选择云服务。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 启动云服务实施。 有关指南，请参阅[配置Microsoft 365 企业版服务和应用程序](configure-services-and-applications.md)。

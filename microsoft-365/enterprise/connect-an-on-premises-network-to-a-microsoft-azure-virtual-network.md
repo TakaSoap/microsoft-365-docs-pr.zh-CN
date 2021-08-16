@@ -1,7 +1,7 @@
 ---
 title: 将本地网络连接到 Microsoft Azure 虚拟网络
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: 88a0ecbae20fd145a4ec5e25f44e35e68d7b53bdbf5ee8b699a887fca2ba8b43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 70cd5690e687cbf2fab29f18e455fa5878056e6a
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864832"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354352"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
@@ -128,7 +128,7 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
   
 |**所需的虚拟机数量**|**所需的主机位数**|**子网大小**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
 |4-11  <br/> |4   <br/> |/28  <br/> |
 |12-27  <br/> |5   <br/> |/27  <br/> |
 |28-59  <br/> |6   <br/> |/26  <br/> |

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: 8e6f32a7f1bc68449f1b43531725f07999043b82
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 8837b764b3e84f16ed1d79d2e0aaf0d677c40fcce2105a34c837ae4bd638342a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624028"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53886007"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 

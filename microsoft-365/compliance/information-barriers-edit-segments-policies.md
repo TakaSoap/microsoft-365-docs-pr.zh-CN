@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5d0a24afb895afbce800b29b0f235c4a67e598f130de930c0e31b2909c077dcb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885971"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 

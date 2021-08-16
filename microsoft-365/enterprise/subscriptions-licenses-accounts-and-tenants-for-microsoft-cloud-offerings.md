@@ -1,7 +1,7 @@
 ---
 title: 针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解 Microsoft 云服务的组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: 05c30cd47364a9161d0fa95a952f21d0b62940159cb638127d4eb8240b2a108e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7120404eafd51714ac19805c088921ad6625ae2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794726"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354232"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -136,7 +136,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Microsoft 365
 |:-----|:-----|:-----|:-----|:-----|
 |**Microsoft 365** <br/> |不适用  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |从 Microsoft 365 管理中心向你的组织添加 Dynamics 365 订阅。  <br/> |
 |**Azure** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |不适用  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
-|**Dynamics 365** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |不适用  <br/> |
+|**Dynamics 365** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |NA  <br/> |
    
 为组织添加基于 Microsoft SaaS 的服务订阅的简便方法是通过管理中心来完成：
   

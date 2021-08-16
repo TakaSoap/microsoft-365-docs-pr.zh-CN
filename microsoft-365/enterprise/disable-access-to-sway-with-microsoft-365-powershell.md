@@ -1,7 +1,7 @@
 ---
-title: 禁止使用 PowerShell 访问 Sway for Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 使用 PowerShell for Microsoft 365
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: Admin
@@ -17,19 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: 了解从何处下载ManageSway.ps1 PowerShell 脚本，该脚本允许你在组织中禁用对 Sway Microsoft 365访问。
-ms.openlocfilehash: b659b428d28f033fe58d6badbc369b9dc374a4f89888c21461b6ae6155accbd7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解在何处下载 ManageSway.ps1 PowerShell 脚本，该脚本允许你在组织中禁用对 Sway Microsoft 365访问。
+ms.openlocfilehash: c441e3087ce85e2f41b200ce0a76f5f6196ea4cf
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819399"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354280"
 ---
-# <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>禁止使用 PowerShell 访问 Sway for Microsoft 365
+# <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>使用 PowerShell for Microsoft 365
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-使用 ManageSway.ps1 PowerShell 脚本可以查看和禁用 Microsoft 365 中的服务，包括 Sway。 此脚本可以自动执行以下主题中描述的过程：
+使用 ManageSway.ps1 PowerShell 脚本，可以查看和禁用 Microsoft 365 中的服务，包括 Sway。 此脚本可以自动执行以下主题中描述的过程：
   
 - [使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)
     

@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/16/2020
 audience: ITPro
@@ -13,17 +13,17 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 摘要：使用 PowerShell Microsoft 365 Online 策略分配每用户Skype for Business设置。
-ms.openlocfilehash: 42bd63a8fa5fd4bf838be949302d9f65479bde98897ab8f01ae17b738886957a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：使用 PowerShell for Microsoft 365 Online 策略分配每用户Skype for Business设置。
+ms.openlocfilehash: c0c2a4319b1f754384ab9b514bfe637591fc28c6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894931"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58353776"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 使用 PowerShell for Microsoft 365是使用联机策略分配每用户通信Skype for Business一种有效方法。
   

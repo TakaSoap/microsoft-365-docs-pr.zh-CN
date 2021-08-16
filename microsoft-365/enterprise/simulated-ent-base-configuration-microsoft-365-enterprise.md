@@ -2,8 +2,8 @@
 title: 适用于 Microsoft 365 的模拟企业基础配置
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/21/2019
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建适用于企业的 Microsoft 365模拟企业测试环境。
-ms.openlocfilehash: 8c07187d5c86af7e82c6ce31ad98a1caa5bb71669df3eb64d24831018b6f679c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c392e24b9bf3ef7c8c949ef00a6b661000156117
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870169"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354412"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
@@ -40,12 +40,12 @@ ms.locfileid: "53870169"
 - [第 1 阶段：创建模拟 Intranet](#phase-1-create-a-simulated-intranet)
 - [第 2 阶段：创建 Microsoft 365 E5 订阅](#phase-2-create-your-microsoft-365-e5-subscription)
 
-您可以使用生成的环境通过额外的测试实验室指南Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版的功能。 [](m365-enterprise-test-lab-guides.md)
+您可以使用生成的环境通过额外的测试实验室指南或Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版应用程序的功能。 [](m365-enterprise-test-lab-guides.md)
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>第 1 阶段：创建模拟 Intranet
 
@@ -59,7 +59,7 @@ ms.locfileid: "53870169"
 
 部署模板之前，请通读模板自述文件 [页](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) ，并准备好以下信息：
 
-- 测试环境的公用 DNS 域名 (testlab。 \<*your public domain*>) 。 您将在"自定义部署"页的 **"域名** " **字段中输入此** 名称。
+- 测试环境的公共 DNS 域名 (testlab。 \<*your public domain*>) 。 您将在"自定义部署"页的 **"域名** " **字段中输入此** 名称。
 - 虚拟机公共 IP 地址 URL 的 DNS 标签前缀。你将需要在“**自定义部署**”页面的“**Dns 标签前缀**”字段中输入此标签。
 
 阅读说明后，在模板自述文件页面上选择"部署到 **Azure"**[以开始](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems)操作。
@@ -79,7 +79,7 @@ ms.locfileid: "53870169"
 
 #### <a name="step-1-create-dc1"></a>步骤 1：创建 DC1
 
-在此步骤中，将创建 Azure 虚拟网络并添加 DC1，这是一个虚拟机，它是 AD DS 域的域控制器。
+在此步骤中，创建 Azure 虚拟网络并添加 DC1，这是一个虚拟机，它是 AD DS 域的域控制器。
 
 首先，在本地计算机上启动 Windows PowerShell 命令提示符。
   
@@ -160,7 +160,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 接下来，连接到 DC1 虚拟机：
   
-1. 在 [Azure 门户中](https://portal.azure.com)，选择"资源 > <新资源组 ***的名称 _> > _* DC1**  >  **连接。**
+1. 在 [Azure 门户中](https://portal.azure.com)，选择"资源 **组 > <** 新资源组 ***的名称 _> > _* DC1**  >  **连接。**
     
 2. 在打开的窗格中，选择 **下载 RDP 文件**。 打开下载的 DC1.rdp 文件，然后选择 **"连接"。**
     
@@ -197,7 +197,7 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重启后，重新连接到 DC1 虚拟机。
   
-1. 在 [Azure 门户中](https://portal.azure.com)，**选择"资源** 组 > <*你的资源组名称*> > **DC1**  >  **连接。**
+1. 在 [Azure 门户中，](https://portal.azure.com)选择"资源 **组** > <你的 *资源组名称> >* **DC1**  >  **连接。**
     
 2. 运行下载的 DC1.rdp 文件，然后选择 **"连接"。**
     
@@ -339,7 +339,7 @@ Restart-Computer
     
 2. 在 **CLIENT1 的属性中，****选择**"IE 增强的安全 **配置"旁边的"打开"。**
     
-3. 在 **Internet Explorer安全配置**"中 **，为"****管理员** 和用户"选择"关闭"，然后选择"确定 **"。**
+3. 在 **Internet Explorer增强的安全配置**"中 **，为"****管理员** 和用户"选择"关闭"，然后选择"确定 **"。**
     
 4. 从"开始"屏幕中 **，Internet Explorer"，** 然后选择"确定 **"。**
     
@@ -385,7 +385,7 @@ Restart-Computer
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>添加 Microsoft 365 E5 试用版订阅
 
-若要添加Microsoft 365 E5订阅，并配置具有许可证的用户帐户，请执行轻型基本配置测试实验室指南阶段[3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)中的说明。
+若要添加Microsoft 365 E5订阅并配置具有许可证的用户帐户，请按照轻型基本配置测试实验室指南阶段[3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)中的说明操作。
 
   
 ## <a name="results"></a>结果

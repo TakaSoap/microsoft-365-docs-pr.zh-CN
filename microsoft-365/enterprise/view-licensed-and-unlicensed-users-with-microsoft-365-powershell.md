@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 查看许可Microsoft 365未授权的用户
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/21/2020
 audience: Admin
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: 本文介绍如何使用 PowerShell 查看已授权和未授权Microsoft 365用户帐户。
-ms.openlocfilehash: 3bbc68e8e4e2b7186e95d8d534525181bcf885e2992476955a7df15c514b546d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f1b590dade1d07499ac6c9b5f8888d7cab7ecd6
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840727"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354388"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>使用 PowerShell 查看许可Microsoft 365未授权的用户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 你的组织Microsoft 365中的用户帐户可能从组织中可用的许可计划中分配了部分、全部或没有任何可用许可证。 可以使用 PowerShell for Microsoft 365快速查找组织中许可和未授权的用户。
 
@@ -43,7 +43,7 @@ ms.locfileid: "53840727"
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-若要查看组织中已分配给许可用户的任何许可计划的所有用户帐户 (许可) ，请运行以下命令：
+若要查看组织中已分配给许可用户的任何许可计划的所有用户帐户 () ，请运行以下命令：
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }

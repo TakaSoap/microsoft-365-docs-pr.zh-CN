@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dec8014dd27084d22b33e9bdb6ab6b6a38520db4
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 17e75cd8e12cf83a3581118dbe453314e659760b10c5960f6529d40c38deb303
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53650303"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53902808"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -94,7 +94,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 5. 输入规则名称和注释。
 
-6. 单击“**保存**”。
+6. 单击 **保存**。
 
 #### <a name="view-the-list-of-suppression-rules"></a>查看抑制规则列表
 

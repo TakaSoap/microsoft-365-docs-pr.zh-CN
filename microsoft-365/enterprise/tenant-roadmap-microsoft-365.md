@@ -2,8 +2,8 @@
 title: 租户的租户Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -13,13 +13,13 @@ ms.collection:
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
-description: 设置租户租户的Microsoft 365。
-ms.openlocfilehash: d96d6246bfe38c9e3a5f3aadf04bf5cfe19ccd2f54697141a7c5463c72a6aea2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 设置租户的Microsoft 365。
+ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794710"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354208"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>租户的租户Microsoft 365
 
@@ -31,13 +31,13 @@ ms.locfileid: "53794710"
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>设置 Microsoft 365 租户
 
-在确保优化网络以同时针对本地和远程工作人员访问 Microsoft 365 后，下一项重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
+在确保优化网络以允许本地和远程工作人员访问 Microsoft 365 后，下一项重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
 
 ### <a name="plan"></a>计划
 
 若要规划租户实施，请执行：
 
-- [了解 Azure AD 租户Azure Active Directory (订阅、) 许可证](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [了解 Azure AD 租户Azure Active Directory (、许可证) 订阅、许可证](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [了解如何使用第三方 SSL 证书](plan-for-third-party-ssl-certificates.md)
 - [了解租户租户Microsoft 365 Azure AD 服务集成的方式](integrated-apps-and-azure-ads.md)
 - [规划客户端应用支持](microsoft-365-client-support-certificate-based-authentication.md)
@@ -66,16 +66,16 @@ Microsoft 继续打开新的数据中心地理位置， (地理位置) 服务Mic
 
 有关详细信息，请参阅 [Microsoft 365 多地理位置](microsoft-365-multi-geo.md)。
 
-## <a name="manage-multiple-microsoft-365-tenants"></a>管理多个 Microsoft 365 租户 
+## <a name="manage-multiple-microsoft-365-tenants"></a>管理多个Microsoft 365租户 
 
-尽管对于组织组织来说，拥有一个租户是理想选择，但你可能是拥有多个租户的许多组织之一。 原因可能包括合并和收购、您希望管理隔离，或者您具有分散的 IT。
+尽管拥有单个租户进行组织组织是理想选择，但你可能是拥有多个租户的许多组织之一。 原因可能包括合并和收购、您希望管理隔离，或者您具有分散的 IT。
 
-如果你有多个Microsoft 365，请参阅以下文章，详细了解：
+如果你有多个租户Microsoft 365，请参阅以下文章，详细了解：
 
 - [租户间协作](microsoft-365-inter-tenant-collaboration.md)
 - [交叉租户邮箱迁移](cross-tenant-mailbox-migration.md)
 - [租户到租户迁移](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 使用订阅、许可证、 [帐户和租户开始租户规划](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)。
