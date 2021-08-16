@@ -1,6 +1,6 @@
 ---
-title: 在 defender 中通过电子邮件Microsoft 365通知
-description: 了解如何创建规则，以在 Defender 中获取Microsoft 365电子邮件通知
+title: 通过电子邮件获取事件通知Microsoft 365 Defender
+description: 了解如何创建规则，以针对事件发送电子邮件通知Microsoft 365 Defender
 keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 33de1e3adc004e05a8c383c8277c358d769bf520528c4c7332e23c5d05635051
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53838928"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 
@@ -37,7 +37,7 @@ ms.locfileid: "52651388"
 **适用于：**
 - Microsoft 365 Defender
 
-你可以设置 Microsoft 365 Defender，以通过电子邮件通知员工有关新事件或现有事件更新。 可以选择基于以下选项获取通知：
+你可以设置Microsoft 365 Defender通知员工有关新事件或现有事件更新的电子邮件。 可以选择基于以下选项获取通知：
 
 - 事件严重性。
 - 设备组。
@@ -55,7 +55,7 @@ ms.locfileid: "52651388"
 
 按照以下步骤创建新规则并自定义电子邮件通知设置。
 
-1. 在导航窗格中，选择"设置 > Microsoft 365 **Defender >事件电子邮件通知"。**
+1. 在导航窗格中，选择 **"设置 > Microsoft 365 Defender >事件电子邮件通知"。**
 2. 选择 **"添加项目"。**
 3. 在"**基本信息"** 页上，键入规则名称和说明，然后选择"下一步 **"。**
 4. 在" **通知设置"** 页上，配置：
@@ -67,8 +67,8 @@ ms.locfileid: "52651388"
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件电子邮件通知的通知设置":::
 
-5. 选择“**下一步**”。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择"**发送测试电子邮件"。** 
-6. 选择“**下一步**”。 在"**复查规则**"页上，查看规则的设置，然后选择"创建 **规则"。** 收件人将开始根据设置通过电子邮件接收事件通知。
+5. 选择 **下一步**。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择"**发送测试电子邮件"。** 
+6. 选择 **下一步**。 在"**复查规则**"页上，查看规则的设置，然后选择"创建 **规则"。** 收件人将开始根据设置通过电子邮件接收事件通知。
 
 若要编辑现有规则，请从规则列表中选择它。 在具有规则名称的窗格中，选择"编辑规则"，在"基本"、通知 **设置** 和"**收件人"页上进行更改**。 
 

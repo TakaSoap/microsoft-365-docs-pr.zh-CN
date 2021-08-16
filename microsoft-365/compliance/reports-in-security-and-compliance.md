@@ -15,19 +15,19 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 使用安全&中心获取 SharePoint Online 和 Exchange Online 组织的各种报告，Azure Active Directory报告。
-ms.openlocfilehash: 3e72ecab68ece31c44d99f85806492e788f4cd7c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 537ea9d20f0b0fdf534853c2a7b414f51ebd38c1a8e28c4111bc5d0e28212074
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871389"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全与合规中心中的报告
 
 您可以使用安全与合规中心中的"查看报告"&快速访问 SharePoint Online 和 Exchange Online 审核报告。 您还可以从"查看Azure Active Directory (") 访问用户登录报告、用户活动报告和 Azure AD 审核日志 AD **报告。** 这是因为付费订阅Microsoft 365订阅包括免费订阅Microsoft Azure。 首次尝试访问这些 Azure 报告时，必须完成一次注册过程。 
   
 > [!TIP]
-> 若要查看有关组织中活动的其他报告，请参阅管理中心Microsoft 365[报告](../admin/activity-reports/activity-reports.md)。 
+> 若要查看有关组织中活动的其他报告，请参阅活动报告中的活动[Microsoft 365 管理中心。](../admin/activity-reports/activity-reports.md) 
   
  **开始之前**
   

@@ -1,8 +1,7 @@
 ---
-title: 在 Microsoft Viva 主题的主题中心管理主题
-description: 如何在主题中心管理主题。
-author: chuckedmonson
+title: 管理主题中心中的主题Microsoft Viva主题
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ergradel
 audience: admin
@@ -13,14 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+description: 了解如何在主题中心中管理主题Microsoft Viva主题。
+ms.openlocfilehash: 53fbc338d69c87029a6e1a65917abcc9b003f36f959e440165405527fdca87e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840228"
 ---
-# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题的主题中心管理主题
+# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>管理主题中心中的主题Microsoft Viva主题
 
 </br>
 
@@ -30,13 +30,13 @@ ms.locfileid: "52651149"
 
 在 Viva 主题中心，知识管理员可以查看"管理主题"页，以查看知识管理员指定的源位置中标识的主题。  
 
-   ![主题中心](../media/knowledge-management/topic-center.png)  
+   ![主题中心。](../media/knowledge-management/topic-center.png)  
 
 ## <a name="topic-stages"></a>主题阶段
 
 知识管理器可帮助指导发现的主题完成各个主题生命周期阶段 **：Suggested、Confirmed、Published** 和 **Removed**。 
 
-   ![主题生命周期图表](../media/knowledge-management/topic-lifecycle.png) 
+   ![主题生命周期图表。](../media/knowledge-management/topic-lifecycle.png) 
 
 - **建议**: 主题已由 AI 标识，且具有足够的支持资源、连接和属性。  (UI.) 
 
@@ -54,7 +54,7 @@ ms.locfileid: "52651149"
 
    - 多个用户在主题卡片上使用反馈机制投了负票。 若要删除主题，必须存在从用户收到的两个负数投票。 例如，如果一个用户对特定主题投了负票，而一个用户对特定主题投了肯定票，你仍然需要另外两个否定的投票来删除该主题。
 
-  删除已发布的主题后，需要通过主题中心的"页面库"手动删除包含特用详细信息的页面。
+  删除已发布的主题后，需要通过主题中心的"页面"库手动删除包含特用详细信息的页面。
 
 > [!Note] 
 > 在 **"管理主题** "页上，每个知识经理只能查看他们有权访问连接到该主题的基础文件和页面的主题。 此权限修整将反映在"建议"选项卡、"已确认"选项卡、"**已发布**"和"已删除"选项卡 **上的主题** 列表中。  但是，主题计数会显示组织中所有权限的总计数。
@@ -64,17 +64,17 @@ ms.locfileid: "52651149"
 若要在主题中心管理主题，需要：
 - 拥有 Viva 主题许可证。
 
-- 拥有 [**Who主题权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva 主题的主题权限设置中向用户授予此权限。 
+- 拥有 [**Who主题权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 除非您具有管理主题的权限，否则将无法在主题中心Who **管理主题** 页面。
 
 在主题中心中，知识经理可以审阅在指定的源位置中标识的主题，并可以确认或删除这些主题。 如果主题发现中未找到新主题页，知识管理员还可以创建和发布新主题页，或者编辑现有主题页（如果需要更新）。
 
-## <a name="review-suggested-topics"></a>查看建议的主题
+## <a name="suggested-topics"></a>建议的主题
 
 在"**管理主题**"页上，在指定的源SharePoint发现的主题将列在"建议 **"选项卡上**。如果需要，知识经理可以审阅未确认的主题，并选择确认或删除它们。
 
-   ![建议的主题](../media/knowledge-management/quality-score.png) 
+   ![建议主题的屏幕截图。](../media/knowledge-management/quality-score.png) 
 
 查看建议的主题：
 
@@ -116,9 +116,21 @@ ms.locfileid: "52651149"
 
 ## <a name="published-topics"></a>已发布的主题
 
-已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
+在"**管理主题**"页上，在指定的源SharePoint发现的主题将列在"已发布"**选项卡** 上。已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
 
    ![管理主题](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="removed-topics"></a>已删除的主题
+
+在"**管理主题**"页上，在指定的源SharePoint中发现的主题将列在"已删除"**选项卡** 上。根据最终用户在主题中心中对主题卡的投票，可在此处显示一些建议的主题。
+
+如果需要，稍后可以将已删除的主题添加回可查看的主题。 如果要将已删除的主题添加回可查看的主题：
+
+1. 在" **已删除"** 选项卡上，选择主题。
+
+2. 选择 **"审阅并发布"。**
+
+   ![Screenshot of Removed tab showing the Review and publish option.](../media/knowledge-management/review-and-publish-removed-topic.png)
 
 ## <a name="topic-count-dashboard"></a>主题计数仪表板
 
@@ -126,4 +138,4 @@ ms.locfileid: "52651149"
 
 知识管理员在"管理主题"页上的主题列表中看到的主题数量可能与在仪表板中显示的主题数不同。 这是因为知识管理员可能无法访问所有主题。 在应用权限修整之前，会执行仪表板视图中呈现的计数。 
 
-   ![主题计数仪表板的屏幕截图](../media/knowledge-management/topic-count-dashboard.png)
+   ![主题计数仪表板的屏幕截图。](../media/knowledge-management/topic-count-dashboard.png)

@@ -1,5 +1,5 @@
 ---
-title: 启用 Microsoft Defender 标识评估环境，设置 MDI 实例，安装和配置 MDI 传感器，让 MDI 传感器检测本地管理员
+title: 启用 Microsoft Defender 标识评估环境
 description: 在试用实验室或Microsoft 365 Defender环境中设置 Microsoft Defender for Identity，&配置传感器，并发现其他计算机上的本地管理员。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f739c9897c9c43831cb4ed23cabaa1705c75d712
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: cff8a37999014cc037a0d76e99ff5b9a05ec44d28acab66e3238d0b4576969fb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839000"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>启用 Microsoft Defender 标识评估环境
 
@@ -48,7 +48,7 @@ ms.locfileid: "53457632"
 
 登录到 Defender for Identity 门户以创建实例，然后将此实例连接到 Active Directory 环境。 
 
-|  |步骤     |详细信息  |
+|  |步骤     |更多信息  |
 |---------|---------|---------|
 |1     | 创建 Defender for Identity 实例        | [快速入门：创建 Microsoft Defender for Identity 实例](/defender-for-identity/install-step1)        |
 |2     | 连接 Active Directory 林中设置 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
@@ -58,7 +58,7 @@ ms.locfileid: "53457632"
 
 接下来，在本地环境的域控制器和 AD FS 服务器上下载、安装和配置 Defender for Identity 传感器。
 
-|  |步骤     |详细信息  |
+|  |步骤     |更多信息  |
 |---------|---------|---------|
 |1     | 确定你需要多少个 Microsoft Defender for Identity 传感器。        | [规划 Microsoft Defender 标识容量](/defender-for-identity/capacity-planning)   |
 |2     | 下载传感器安装程序包  |  [快速入门：下载 Microsoft Defender for Identity 传感器安装程序包](/defender-for-identity/install-step3)   |
@@ -70,7 +70,7 @@ ms.locfileid: "53457632"
 
 在安装了传感器的计算机上安装，Windows事件日志集合和 Internet 代理设置以启用和增强检测功能。
 
-|  |步骤     |详细信息  |
+|  |步骤     |更多信息  |
 |---------|---------|---------|
 |1     | 配置Windows事件日志集合         | [配置 Windows 事件集合](/defender-for-identity/configure-windows-event-collection)        |
 |2     | 配置 Internet 代理设置        | [为 Microsoft Defender for Identity Sensor 配置终结点代理和 Internet 连接设置](/defender-for-identity/configure-proxy)        |

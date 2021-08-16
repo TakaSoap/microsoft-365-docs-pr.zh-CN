@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 部署和管理单个或多个Microsoft 365租户，并提供了多地理位置和移动位置的选项。
-ms.openlocfilehash: 4d9bd685fce6fb2f11b8e17bebae6460e0c10bd2
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 6cf7ca2a754077172aa5d90752109ea6773378f7a6b7457ac158cc599ad06ba9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53888382"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>步骤 1. 适用于Microsoft 365租户的租户
 
@@ -152,7 +152,7 @@ Microsoft 继续打开新的数据中心地理位置，Microsoft 365服务。 �
 - 添加多地理位置数据驻留要求。
 - 设置租户间协作。
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 [![步骤 2.针对访问优化你的租户网络](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 

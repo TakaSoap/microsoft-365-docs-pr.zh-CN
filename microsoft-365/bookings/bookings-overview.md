@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Microsoft Bookings 应用的概述，其中包括基于 Web 的预订日历，并且与 Outlook 集成，以优化员工的日历并让客户灵活地预订约会。
-ms.openlocfilehash: 4ad488761fa4cdbb6df1d4b70d3a7d73121295b5
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 6ea7d7105efd917674b56ddd952b754310623c98f17eef15b9bad9b50841c353
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900815"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 

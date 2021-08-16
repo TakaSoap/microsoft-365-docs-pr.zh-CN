@@ -9,12 +9,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 了解在"主题"中发现和浏览Microsoft Viva方式。
-ms.openlocfilehash: 65084663db1b9cdee4a179831a98c297c83d30d7
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 07b12ab191ec3222deb3e01f4b039f7b15dc8a5bed64047d144af35a9159a611
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840151"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Microsoft Viva 主题入门
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32afec539e63c9ce411bb49c52a2facc7f99e9eae84bff3e0bf65f670f1b4dd0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857239"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "51935865"
 高级 `CloudAppEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关云应用和服务中活动的信息，Microsoft Cloud App Security。 有关完整列表，跳转到 [涵盖的应用和服务](#apps-and-services-covered)。 使用此参考来构建从此表返回信息的查询。 
 
 >[!IMPORTANT]
->此表包含以前在表中可用的 `AppFileEvents` 信息。 从 2021 年 3 月 7 开始，在此日期及之后，在云服务中搜寻与文件相关的活动的用户应改为使用 `CloudAppEvents` 表。 <br><br>请确保搜索仍使用表的查询和自定义检测规则，并 `AppFileEvents` 编辑它们以使用 `CloudAppEvents` 该表。 有关转换受影响查询的更多指南，可在使用 Defender 高级搜寻的跨云应用[Microsoft 365中找到](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
+>此表包含以前在表中可用的 `AppFileEvents` 信息。 从 2021 年 3 月 7 开始，在此日期及之后，在云服务中搜寻与文件相关的活动的用户应改为使用 `CloudAppEvents` 表。 <br><br>请确保搜索仍使用表的查询和自定义检测规则，并 `AppFileEvents` 编辑它们以使用 `CloudAppEvents` 该表。 有关转换受影响查询的更多指南，可在使用高级搜寻的跨云应用[Microsoft 365 Defender找到](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
 
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。

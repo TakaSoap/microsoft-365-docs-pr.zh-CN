@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fca6ac7d76c4ce680209eba297894b582a824355b3a9c6f736c861dc9559fe82
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53900829"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（如姓名、电话号码和电子邮件地址）的地方。 您还可以在此处为每位员工设置工作时间。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 

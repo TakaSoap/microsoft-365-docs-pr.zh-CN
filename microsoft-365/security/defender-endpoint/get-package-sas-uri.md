@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d7eb71d0547c0ee242e02697e949bd39c3bdb2f3012adeaf159ca90f953268aa
-ms.sourcegitcommit: 4f074a8598a430344a2361728a64b8b8c0e1d215
+ms.openlocfilehash: b9bc82bff9be84c74b9d908b79572b926a943bab
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54523629"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257089"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
@@ -53,7 +53,7 @@ ms.locfileid: "54523629"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -66,7 +66,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action 
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -74,7 +74,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效期非常短，应该立即用于将程序包下载到本地存储。
+如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。
 
 ## <a name="example"></a>示例
 

@@ -1,5 +1,5 @@
 ---
-title: 试用 Microsoft Defender for Identity，设置配置基准、标准、指南，并学习有关检测和修正各种标识威胁的教程，如重新检测、凭据泄露、横向移动、域入侵和泄漏警报、执行用户、计算机、实体和横向移动路径调查。
+title: 试用 Microsoft Defender for Identity
 description: 试用 Microsoft Defender for Identity、设置基准、学习有关重新实现、凭据泄露、横向移动、域入侵和泄漏警报等的教程。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 14c5b9252e980d1f693139393d26b9405cb1b812
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 9d3eb0668b855745aee32ac0d070613a60a20b93ec13fef6ff564f2f4c7944a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857216"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>试用 Microsoft Defender for Identity
 

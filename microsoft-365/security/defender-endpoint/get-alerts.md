@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c200e2e0b214b634b3a893d07cc8044995190f8eb89f8adad1e3b96ad1f7ae19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e295d4014231242bf1e3ae7dceaeb38dfea2fa1c
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818763"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246320"
 ---
 # <a name="list-alerts-api"></a>列出警报 API
 
@@ -43,7 +43,7 @@ ms.locfileid: "53818763"
 检索 Alerts 集合。
 <br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
 <br>OData 支持的运算符：
-<br>```$filter``````alertCreationTime``` ```lastUpdateTime``` ```incidentId``` on：、、、、 ```InvestigationId``` ```status``` 和 ```severity``` ```category``` 属性。
+<br>```$filter``````alertCreationTime``` ```lastUpdateTime``` ```incidentId``` ```InvestigationId``` on：、、、、、、、、、 ```id``` ```asssignedTo``` ```detectionSource``` ```lastEventTime``` ```status``` ```severity``` 和 ```category``` 属性。
 <br>```$top``` 最大值为 10，000
 <br>```$skip```
 <br>```$expand``` of ```evidence```
@@ -71,7 +71,7 @@ ms.locfileid: "53818763"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
-> - 响应将仅包含与用户可以访问的设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
+> - 响应将仅包含与用户可以访问的设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

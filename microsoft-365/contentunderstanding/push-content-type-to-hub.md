@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 9d42e5f352631c744d04d312f40f359017c6100b392541b1c5136971bcc09494
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50144967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871109"
 ---
 # <a name="push-content-types-to-a-hub"></a>将内容类型推送到中心
 
@@ -41,7 +41,7 @@ ms.locfileid: "50144967"
 5. 选择所需的中心网站，然后选择“**确定**”。
 6. 选择“**保存**”。
 
-首次将内容类型推送到现有中心及其现有关联网站时，从访问中心或关联网站开始，最多可能需要一个小时才能更新网站中的设置。 中心的新增关联网站则无需等待这样一段时间，相应设置会在几分钟内体现出来。
+第一次将内容类型推送到现有中心和其现有关联站点时，从访问中心或关联站点开始，可能需要长达一小时的时间才能在站点中更新设置。与中心的任何新关联都不需要此等待，并且将在几分钟内反映设置。
 
 更新设置后，具有这些设置的内容类型将在几分钟内在任何与中心新关联的网站中变得可用。 然后，任何新创建的列表或库都将在创建后几分钟内自动添加该内容类型。 仅当推送的内容类型从文档内容类型直接或间接派生时，才会将其添加到文档库，并且仅在它不直接或间接从文档内容类型派生的情况下，才会将内容类型添加到列表中。
 

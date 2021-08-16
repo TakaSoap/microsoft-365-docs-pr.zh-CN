@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 早期版本的 Office 365 邮件加密依赖于Microsoft Azure权限 (以前称为Windows Azure Active Directory权限管理) 。
-ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 611e8f645b9149898e5c3cb0f10305e49deb90cd92b14aad7c946ead147e8fd9
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871365"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>为以前版本的邮件加密设置 Azure 权限管理
 
@@ -94,7 +94,7 @@ TPD 是一个 XML 文件，其中包含有关您组织权限管理设置的信�
 
    此外，此 cmdlet 还检查与 Azure 权限管理服务的连接、下载 TPD 并检查其有效性。
 
-6. 按如下所示[运行 Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) cmdlet，以禁止 Azure 权限管理模板Outlook Web 和 Outlook： 
+6. 运行[Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) cmdlet，以禁止 Azure 权限管理模板在 Outlook 网页版 和 Outlook： 
 
    ```powershell
    Set-IRMConfiguration -ClientAccessServerEnabled $false

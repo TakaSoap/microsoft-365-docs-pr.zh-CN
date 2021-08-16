@@ -1,5 +1,5 @@
 ---
-title: 查看体系结构要求和Microsoft Cloud App Security，通过了解 云应用安全 中的体系结构来规划Microsoft 365 Defender
+title: 查看体系结构要求和体系结构Microsoft Cloud App Security
 description: Microsoft Cloud App Security技术图表介绍了 Microsoft 365 Defender 中的体系结构，这将帮助你构建试验环境。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3fa9670262b90d1566c375680946a131bb9c78a
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: f06804e7a6944f119401f8cf2ea5cc0496fd30e841129cef061d8caee4964887
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53839028"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>查看体系结构要求和解决方案的关键Microsoft Cloud App Security
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security CASB (云访问安全代理) 。 CASB 充当网关�
 ![云Microsoft Cloud App Security体系结构 - 云发现](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 在此图中，有两种方法可用于监视网络流量和发现组织使用的云应用。
-- A. 云应用发现与 Microsoft Defender for Endpoint 本地集成。 Defender for Endpoint 报告从 IT 托管的设备访问的云Windows 10服务。 
+- 答： 云应用发现与 Microsoft Defender for Endpoint 本地集成。 Defender for Endpoint 报告从 IT 托管的设备访问的云Windows 10服务。 
 - B. 为了覆盖连接到网络的所有设备，云应用安全日志收集器安装在防火墙和其他代理上，以从终结点收集数据。 此数据将发送到云应用安全进行分析。
 
 #### <a name="managing-cloud-apps"></a>管理云应用
@@ -113,7 +113,7 @@ Microsoft Cloud App Security充当反向代理，提供对批准的云应用的�
 下表确定了在评估、配置和部署Microsoft Cloud App Security。
 
 
-|概念  |说明 |详细信息  |
+|概念  |说明 |更多信息  |
 |---------|---------|---------|
 | 云应用安全仪表板 | 概述了有关组织的最重要的信息，并提供了深入调查的链接。        | [使用仪表板 ](/cloud-app-security/daily-activities-to-protect-your-cloud-environment)       |
 | 条件访问应用控制    | 与 Identity Provider 和 IdP (反向代理体系结构) Azure AD 条件访问策略，并选择性地强制执行会话控制。        |  [使用条件访问Microsoft Cloud App Security控制保护应用](/cloud-app-security/proxy-intro-aad)       |

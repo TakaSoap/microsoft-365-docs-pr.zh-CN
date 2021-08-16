@@ -9,16 +9,16 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Microsoft Bookings 常见问题解答。
-  ms.openlocfilehash: 4f8066e8d6ade84cbe5aa9e41b14784870353ddf
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: c8e1548acb43e50d2dc457bed4aaa01c504f425f63a4a0872f033b70e5599891
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53541465"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53900930"
 title: Microsoft Bookings 常见问题解答
 summary: ''
 sections:
-- name: 一般信息
+- name: 常规
   questions:
   - question: >
       什么是 Microsoft Bookings？

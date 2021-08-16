@@ -14,12 +14,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: Advanced eDiscovery中的相关性模块将于 2021 年 3 月 10 日停用。 本文介绍在停用相关性之前要执行哪些工作。 具体而言，通过运行批计算完成任何未完成的模型，以便可以保留模型中的元数据。
-ms.openlocfilehash: 0719c2cb1b6b0d867ffc045fe02d57e1e2f32a61
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c64a0e1f42fc1904c91c4ac30a74cecb975b1b18c0a3426e63bd5ca2aac45feb
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53871450"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>停用中的相关性模块Advanced eDiscovery
 

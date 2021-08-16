@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息可了解如何使用内容Office 365网络 (CDN) 以提高性能。
-ms.openlocfilehash: 1a963d14df14e8644072a159e35c8590f953dae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 853c145e616739fb9cbc1e15a9939dbc38c2b2cf1803e5bfca1b36d2dc254373
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53870938"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容分发网络 (CDN)
 
@@ -127,7 +127,7 @@ Microsoft **的 Ajax CDN** 是一个只读 CDN，提供许多受欢迎的开发�
 
 用户使用的 CDN Office 365随时更改，在许多情况下，如果一个 cdn 不可用，CDN配置多个 CDN。 这些组使用的主要 CDN Office 365为：
 
-|CDN  |公司  |用法  |链接  |
+|CDN  |公司  |使用情况  |链接  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |公用源中的常规资产，SharePoint源中的用户内容         |[结合使用 Office 365 内容传送网络和 SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |Azure CDN     |Microsoft         |自定义代码、SharePoint 框架解决方案         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0d1edd11f378f91dabd7e1ca7910070ab6961e90
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: 49ea9fff9ab6d12cd9483c574d33f1e8d247ac7fe1728383311a4e65195eec8b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53652933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53857363"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
@@ -308,7 +308,7 @@ sysext.xml: OK
 1. 在 Intune 中，打开 **"管理**  >  **设备配置"。** 选择 **"管理**  >  **配置文件**  >  **""创建配置文件"。**
 2. 选择配置文件的名称。 Change **Platform=macOS** and **Profile type=Custom**. 选择"**配置"。**
 3. 打开配置文件， **然后上传** sysext.xml。 此文件是在上一步骤中创建的。
-4. 选择 **“确定”**。
+4. 选择“**确定**”。
 
     ![Intune 中的系统扩展屏幕截图](images/mac-system-extension-intune.png)
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: 了解如何在"主题"中编辑Microsoft Viva主题。
-ms.openlocfilehash: 47c9254c91e08cda6dc33c40768689d94e5ceeef
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53596226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840324"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>编辑现有主题中的Microsoft Viva主题 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53596226"
 > [!Note] 
 > 虽然 AI 收集的主题信息经过安全修整，[](topic-experiences-security-trimming.md)但有权查看主题的所有用户都可以看到在编辑现有主题时手动添加的主题说明和人员信息。 
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 若要编辑现有主题，您需要：
 - 拥有 Viva 主题许可证。

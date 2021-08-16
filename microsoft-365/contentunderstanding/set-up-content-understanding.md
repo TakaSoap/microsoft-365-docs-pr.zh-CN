@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 设置 SharePoint Syntex
-ms.openlocfilehash: 423c69a3c199cd3b1f0c71b93d3632e555125e1e47c4e5b5c8db95f7c52d195d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859156"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257101"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -54,8 +54,6 @@ ms.locfileid: "53859156"
 - 用于 SharePoint 整合的常用数据服务
 
 若要使用表单处理，还需要 AI Builder 额度。 如果你有 300 个或更多许可用户，则每月会分配 AI 生成器额度。
-
-有关 SharePoint Syntex 许可的详细信息，请参阅 [SharePoint Syntex 许可](syntex-licensing.md)
 
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 

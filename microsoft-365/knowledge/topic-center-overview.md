@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 在"主题"中了解Microsoft Viva中心。
-ms.openlocfilehash: 17dec65a1347d3e65ea7794d3b6129267776d6a2
-ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
+ms.openlocfilehash: 5373fbf35bd068228aed653535288ada4eb532c52122f01b12a317d3a98713a1
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "53624448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53840179"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题主题中的主题Microsoft Viva概述
 

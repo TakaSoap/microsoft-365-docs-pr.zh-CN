@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2981138d6bf8d5bd3fa49120e3469fe29301ef6fbe8bba074ed83495044ef562
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58246453"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint 问题疑难解答
 
@@ -55,7 +55,7 @@ ms.locfileid: "57834735"
 
 **解决方案：**
 
-从 Google Play 应用商店[Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试
+从 Google Play[应用商店Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试
 
 ## <a name="sign-in-failed---invalid-license"></a>登录失败 - 许可证无效
 
@@ -117,9 +117,24 @@ ms.locfileid: "57834735"
 用户可以按照以下步骤从设备设置启用相同的权限： 
 
 1. 转到 **设置** 上的"设置"。
+   
 2. 搜索并选择电池 **优化**。
+   
+   ![搜索并选择"电池电池"。](images/search-battery-optimisation.png)
+
 3. 在 **"特殊应用访问"中**，选择 **"电池优化"。**
+   
+   ![在"特殊应用访问"中，选择"Battery Battery"。](images/special-app-access.png)
+
 4. 将下拉列表更改为显示 **所有应用**。
+
+   ![将下拉列表更改为显示"所有应用"。](images/show-all-apps-2.png)
+
+   ![将下拉列表更改为显示"所有应用"。](images/show-all-apps-1.png)
+
 5. 找到"Microsoft Defender 终结点"，然后选择 **"不优化"。**
+
+   ![找到"Microsoft Defender 终结点"，然后选择"不开发"。](images/select-dont-optimise.png)
+
 
 返回到 Microsoft Defender 终结点载入屏幕，选择" **允许"，** 你将重定向到仪表板屏幕。
