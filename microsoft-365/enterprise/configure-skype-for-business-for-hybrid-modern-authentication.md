@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何配置本地Skype for Business使用混合新式验证 (HMA) ，以为您提供更安全的用户身份验证和授权。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9695815d0a085931b10f7f64b9fca2e997af9077
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 74046b89ba5ded65c9a645ca43e94b195ddf74896b0fd8832653ac8d96606b5f
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864901"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Skype for Business 以使用混合新式验证
 

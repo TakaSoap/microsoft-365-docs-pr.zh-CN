@@ -1,5 +1,5 @@
 ---
-title: 增强 Microsoft 365 商业高级版的威胁防护
+title: 增强威胁防护Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
-ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ae5e5727db1f372c40aa4468329021525b6dfc8c5ebbf34705184e461df069e5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881831"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-Microsoft 365 商业高级版附带保护你的数据和设备的功能，并且可帮助你保护你和客户敏感信息的安全。
+你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且有助于保护你和客户敏感信息的安全。
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 
@@ -49,7 +49,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
     
 1. 在左侧导航中，转到"用户 \> **""活动用户"。**
     
-2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，** 在"更多设置"**旁边**，选择"**编辑 Exchange 属性"。**
+2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑Exchange **属性"。**
     
 3. On the mailbox page for the user， choose ** mailbox features ** on the left nav， and then choose the **Enable** link under **Litigation hold**.
     

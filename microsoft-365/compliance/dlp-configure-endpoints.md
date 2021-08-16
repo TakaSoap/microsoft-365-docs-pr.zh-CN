@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 载入Windows 10设备，以便它们可以将传感器数据发送到 Microsoft 365 合规性解决方案
-ms.openlocfilehash: 676fb3a7ffcae8d108fd9b7fabe61bb78b7e1744
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: ac2cbf41d77960338885a98ffddc707618988848c6be8cc7ef4cb911da50a40d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895303"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Windows 10 设备的装载工具和方法
 

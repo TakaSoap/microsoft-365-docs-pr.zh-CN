@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解适用于用户Microsoft 365 商业高级版步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8158e911a8520c07cf5f85fea8b64d65820d603d7f9f49938849ff2df6fc45ed
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881912"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
 
@@ -69,7 +69,7 @@ ms.locfileid: "53227631"
     !["个性化您的登录"页面的屏幕截图。](../media/adddomain.png)
 
     
-4. 按照向导中的步骤，在验证您是否拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果您知道您的域主机，另请参阅[将域添加到 Microsoft 365](/microsoft-365/admin/setup/add-domain)。
+4. 按照向导中的步骤，在验证您是否拥有该域的任何 DNS Microsoft 365创建[DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录。 如果你知道域主机，另请参阅[向Microsoft 365](/microsoft-365/admin/setup/add-domain)添加域。
 
     如果你的托管服务提供商是 GoDaddy 或启用了 [domain connect](/office365/admin/get-help-with-domains/domain-connect) 的其他主机，则此过程很简单，系统会自动要求你登录并让 Microsoft 代表你进行身份验证。
 

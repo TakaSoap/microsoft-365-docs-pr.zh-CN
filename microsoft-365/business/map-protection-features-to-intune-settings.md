@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: 了解设备中的保护Microsoft 365 商业高级版映射到 Intune 设置。 订阅会提供修改 Intune 设置的许可证。
-ms.openlocfilehash: 9a6dcf014e009389e49860fa96486c264c22f501
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 844b83bca9483f72fd322d666803c42b90fee41d3e0047ea93b4b6b07717b0dd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53852723"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>保护功能如何映射到Microsoft 365 商业高级版 Intune 设置
 
@@ -104,7 +104,7 @@ ms.locfileid: "51580106"
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |" **Microsoft Edge 浏览器设置**"中的" **Microsoft SmartScreen**"设置为" **必需**"。  <br/> |
 |在闲置此时长后关闭设备屏幕(分钟)  <br/> |幕锁定前的最大非活动分钟数  <br/> |
 |允许用户从 Microsoft Store 下载应用  <br/> |自定义 URI 策略  <br/> |
-|允许用户访问 Cortana  <br/> |**常规** \>**当 Cortana** 在 Intune **中设置为** 关闭时，在 **Intune** 中Microsoft 365 商业高级版。  <br/> |
+|允许用户访问 Cortana  <br/> |**常规** \>**Cortana** 设置为在 Intune **中设置为**"关闭"时 **阻止Microsoft 365 商业高级版。**  <br/> |
 |允许用户接收来自 Microsoft 的 Windows 提示和广告  <br/> |**Windows聚焦**，如果设置为在聚焦中关闭，则所有Microsoft 365 商业高级版。   <br/> |
 |让 Windows 10 设备自动保持最新状态  <br/> | 此设置 **位于"Microsoft Intune** 服务更新 - Windows 10更新圈"中，选择"Windows 10设备的更新策略"， \> 然后选择"**属性** \> **设置"。**  <br/>  当 Microsoft 365 商业高级版 设置为 **"打开"** 时，将设置以下所有设置：  <br/> **在 CBB** **中关闭** 服务 (设置为 CB Microsoft 365 商业高级版) 。  <br/> " **Microsoft 产品更新**"设置为" **允许**"。  <br/> 将" **Windows 驱动程序**"设置为" **允许**"。  <br/> 将" **自动更新行为**"设置为" **维护时自动安装**"，其中：  <br/> " **开始时间**"设置为" **上午 6 点**"。  <br/> " **活动结束时间**"设置为" **晚上 10 点**"。  <br/> " **质量更新延迟期(天)**"设置为" **0**"。  <br/> " **功能更新延迟期(天)**"设置为" **0**"。  <br/> " **交付优化下载模式**"设置为" **与相同 NAT 后面的对等互连混合的 HTTP**"。  <br/> |
 |||

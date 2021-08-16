@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 了解如何使用再现和子画面来提高 SharePoint Online 经典发布网站上的图像性能。
-ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: d3bc078bd462e6695afd74d36712757d291215a7b9bbdb6158c1862c034f8158
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864699"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint经典发布网站的图像优化
 

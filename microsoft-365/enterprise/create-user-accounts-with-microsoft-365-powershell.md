@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 如何使用 PowerShell 创建单个或多个Microsoft 365用户帐户。
-ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3889c7611d4c0442eeac2e42fcaea0cb71aeb7b8467f8f6e88d11c8ac2fad21
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864803"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
@@ -45,7 +45,7 @@ ms.locfileid: "50907560"
 |**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如 *，US* 代表美国 *，FR* 代表法国。 提供此值很重要，因为某些 Microsoft 365服务在某些国家/地区不可用。 无法将许可证分配给用户帐户，除非该帐户已配置此值。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
 
 >[!Note]
->[了解如何使用管理中心](../admin/add-users/add-users.md)Microsoft 365用户帐户。
+>[了解如何使用 Microsoft 365 管理中心。](../admin/add-users/add-users.md)
 > 
 > 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >   
@@ -112,7 +112,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
    >[!NOTE]
    >列名及其在 CSV 文件第一行中的顺序是任意的。 但请确保文件其余部分的数据顺序与列名称的顺序相匹配。 并使用 PowerShell for Microsoft 365 命令中的参数值列名称。
     
-2. 使用以下语法：
+2. 使用以下语法:
     
     ```powershell
      Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>

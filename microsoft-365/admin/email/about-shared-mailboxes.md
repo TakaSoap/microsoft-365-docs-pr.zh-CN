@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，会使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: f6c03787db890e1963f659aa9d2ece052d50a82c
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: cdbe76fa5a0daee9d469e76ebc695d61dd52584186e0c56c6ee285d427fcbe3e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53541633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53832879"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 

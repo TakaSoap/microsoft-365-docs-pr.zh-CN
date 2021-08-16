@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 市场活动的分步Microsoft 365注册。 保护你的市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: eaba43a9163b4ee1db5b653b04c0eedea7716297e510edd4eb5926b41a554bda
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881707"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>注册Microsoft 365活动 
 
@@ -49,7 +49,7 @@ ms.locfileid: "51398213"
 1. In your invitation to Microsoft 365 for Campaigns email， select **ENROLL YOUR ORGANIZATION >**. 此操作将Microsoft 365注册。
     > [!NOTE]
     > 如果你已有 Microsoft 365 商业版订阅，并且你想要将 Microsoft 365 for Campaigns 优惠添加到它，请转到将Microsoft 365市场活动的订阅添加到[现有订阅](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)。
-1. **在"Microsoft 365 商业版"页上**，输入业务详细信息。 对于 **企业电子邮件地址**，请使用当前电子邮件地址。 在设置过程中，我们只需要此地址来保持联系。 选择“**下一步**”。
+1. **在"Microsoft 365商务"页上**，输入你的业务详细信息。 对于 **企业电子邮件地址**，请使用当前电子邮件地址。 在设置过程中，我们只需要此地址来保持联系。 选择 **下一步**。
 1. **在"创建用户 ID"页上**：
     1. 在 **"** 用户名"中，输入电子邮件地址的名称或别名。 例如，你可能只希望称为 Alice 或 Rob。 在较大的宣传活动中，AliceC 或 AliceChavez 可能更有意义。
     2. 在你的 **公司** 中，输入你工作的活动的名称。 例如，ContosoCampaign。 如果你已拥有一个域，请在此处使用该名称。 
@@ -62,7 +62,7 @@ ms.locfileid: "51398213"
     1. 准备好你的手机，然后选择"为我发送 (**或呼叫** 我（如果你更喜欢) ）。 然后输入你的电话号码。 
     2. When you select **Text me**， we'll send you a verification code. 或者，如果您选择"呼叫我"，我们将用代码 **呼叫你**。
     3. Enter the code from your text message (or call) and select **Next**. 预计稍等一会。 
-5. **你将在哪里使用此页**：输入活动的主要工作位置详细信息和电话号码。 选择“**下一步**”。
+5. **你将在哪里使用此页**：输入活动的主要工作位置详细信息和电话号码。 选择 **下一步**。
 6. **此外观页面如何**：
     1. 验证每个用户的成本为 5.00 美元。 
     2. 如果只想现在设置自己，请选择"下一 **步"。** 

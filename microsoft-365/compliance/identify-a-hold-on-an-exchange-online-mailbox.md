@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何识别可置于邮箱中邮箱的不同类型的Exchange Online Microsoft 365。
-ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
-ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
+ms.openlocfilehash: 2e781fea46706415525ef9396485310ad15ffc5e600c6664817b8637c84e44b7
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53895315"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -78,8 +78,8 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 诉讼保留                                                    | `True`                                                                                         | *LitigationHoldEnabled* 属性设置为 时，为邮箱启用诉讼保留 `True` 。                                                                                                                                                                                                                                         |
 | 电子数据展示保留                                                    | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`                                                     | *InPlaceHolds 属性* 包含与安全与合规中心中的电子数据展示案例关联的任何保留的 GUID。 您可以判断这是电子数据展示保留，因为 GUID 以前缀 (表示统一保留 `UniH`) 。                                                                                   |
-| 就地保留                                                      | `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`        | *InPlaceHolds* 属性包含邮箱In-Place保留的 GUID。 你可以判断这是一个In-Place保留，因为 GUID 不以前缀开头，或者以前缀 `cld` 开头。                                                                                                               |
-| Microsoft 365应用于邮箱的保留策略 | `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3` | InPlaceHolds 属性包含应用于邮箱的任一特定位置保留策略的 GUID。 您可以标识保留策略，因为 GUID 以 `mbx` 或 `skp` 前缀开头。 `skp`前缀指示保留策略应用于Skype for Business邮箱中的会话。 |
+| 就地保留                                                      | `c0ba3ce811b6432a8751430937152491` <br/> 或者 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`        | *InPlaceHolds* 属性包含邮箱In-Place保留的 GUID。 你可以判断这是一个In-Place保留，因为 GUID 不以前缀开头，或者以前缀 `cld` 开头。                                                                                                               |
+| Microsoft 365应用于邮箱的保留策略 | `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或者 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3` | InPlaceHolds 属性包含应用于邮箱的任一特定位置保留策略的 GUID。 您可以标识保留策略，因为 GUID 以 `mbx` 或 `skp` 前缀开头。 `skp`前缀指示保留策略应用于Skype for Business邮箱中的会话。 |
 | 从组织范围内的保留策略Microsoft 365排除  | `-mbxe9b52bf7ab3b46a286308ecb29624696`                                                         | 如果从组织范围的 Microsoft 365 保留策略中排除邮箱，则从中排除邮箱的保留策略的 GUID 将显示在 InPlaceHolds 属性中，并且由前缀标识。 `-mbx`                                                                                                     |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig

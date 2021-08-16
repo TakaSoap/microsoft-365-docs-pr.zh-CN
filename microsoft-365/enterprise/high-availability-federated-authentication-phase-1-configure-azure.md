@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构，以承载 Microsoft 365 的高可用性联合身份验证。
-ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e9b68fe1fa2c4028186d86b5cf6d419f63cfc79d57d5de8c4817c762791b3a55
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864756"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -304,7 +304,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![第 1 阶段的高可用性Microsoft 365 Azure 中的联合身份验证和 Azure 基础结构](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>后续步骤
+## <a name="next-step"></a>下一步
 
 使用 [阶段 2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 以继续配置此工作负载。
   

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解这些安全建议Microsoft 365 商业高级版影响用户和保护数据。
-ms.openlocfilehash: ce64189d721bc3eb356a39f431af01e67973516a
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8e2ce13b694aa526c3c063bec7a4dc8c7699244f2c00f4dfee5d38bfe5208b1b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881671"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>这些安全建议如何影响用户
 
@@ -72,7 +72,7 @@ ms.locfileid: "52924251"
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|打开BitLocker保护<p><p> 确保Windows Defender保持打开 <p>打开Windows防火墙| 使用 FileVault 加密 Mac 磁盘 <p><p>使用可靠的防病毒软件 <p>打开防火墙保护|
+|打开 BitLocker 设备保护<p><p> 确保Windows Defender保持打开 <p>打开Windows防火墙| 使用 FileVault 加密 Mac 磁盘 <p><p>使用可靠的防病毒软件 <p>打开防火墙保护|
 
 若要了解有关这些建议的信息，请参阅保护帐户和设备免受 [黑客和恶意软件的攻击](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)。
 

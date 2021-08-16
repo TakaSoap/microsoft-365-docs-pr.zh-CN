@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 BYOD 保护非托管或自带设备 (BYOD) Microsoft 365。
-ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4ee7e200216833cf67f2a0800a0ed808893c325e5c14c43e50cf30df63831586
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227495"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53881765"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保护非托管的 Windows 10 电脑和 Mac
 
