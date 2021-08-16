@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: a831ef11817af47ed1007600a1eb70bddd341b3ae474c11d0b2326a9e4debf89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826515"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346876"
 ---
 # <a name="compare-groups"></a>比较组
 
-在 Microsoft 365 管理中心的 **组** 部分中，可创建和管理以下类型的组： 
+在 Microsoft 365 管理中心的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>部分中，可创建和管理以下类型的组： 
 
 - **Microsoft 365 组** 用于公司内部和外部用户之间的协作。 它们包括协作服务，如 SharePoint 和 Planner。
 - **通讯组** 用于向一组人员发送电子邮件通知。

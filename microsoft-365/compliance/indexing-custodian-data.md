@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 将保管人添加到Advanced eDiscovery案例时，任何被视为部分索引的内容将被重新处理，使其完全可搜索。
-ms.openlocfilehash: 34855eb168dd10fc500e2e57fe1d57ad81449452
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: a43ccc09fb3c0821ff04d5ec47bf9bfbb1782c1061e51b6b541abc3792e82738
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53437972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905543"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>保管人数据的高级索引
 
@@ -39,7 +39,7 @@ ms.locfileid: "53437972"
 
 ## <a name="viewing-advanced-indexing-results"></a>查看高级索引结果
 
-完成高级索引过程后，您可以了解重新处理的有效性。  在案例的"处理"选项卡上的"高级索引结果"视图中，图形列出了添加到混合索引 *中的项目数*。  混合索引是存储Advanced eDiscovery重新处理的内容的位置。
+完成高级索引过程后，您可以了解重新处理的有效性。  在案例的"处理"选项卡上的"高级索引结果"视图中，图形列出了添加到混合索引 *中的项目数*。  混合索引是高级电子数据展示存储重新处理的内容的位置。
 
 此视图还包括需要修正的项目数和按文件类型显示的另一个错误图表。 有关详细信息，请参阅：
 

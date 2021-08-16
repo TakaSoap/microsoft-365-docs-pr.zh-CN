@@ -1,9 +1,9 @@
 ---
 title: Contoso 移动设备管理
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备以及在其上运行的应用。
-ms.openlocfilehash: f4d1982dbb889f1eefc50a8bf618f54e4867120d754d2ec94f7dc62be855c921
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c7a3a40867e15059c527edb0069ff639d68ae7c
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835256"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354892"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
@@ -57,7 +57,7 @@ Contoso 不使用 Intune 来：
   - 设备加密，有助于防止未经授权的访问。
   - 六位数的 PIN 或密码。
   - 不活动超时时段。
-  - 防病毒和恶意软件保护以及签名更新Windows Defender设备上Windows 10更新。
+  - 防病毒和恶意软件保护和签名更新Windows Defender设备上Windows 10更新。
   - 在包含Windows 10安全更新的设备上自动更新。
   - 将证书推送到托管设备。
   - 商业与个人数据的明确区分。用户或管理员可以选择性地擦除设备中的公司数据，而将图片、个人电子邮件帐户和个人文件等个人数据保持不变。
@@ -68,7 +68,7 @@ Contoso 通过将已部署的电脑和公司拥有的智能手机和平板电脑
 
 ![Contoso 移动设备管理部署基础结构](../media/contoso-mdm/contoso-mdm-fig1.png)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 了解 Contoso 如何使用[](contoso-info-protect.md)企业Microsoft 365信息保护功能来分类、标识和保护整个组织的重要数字资产。
 

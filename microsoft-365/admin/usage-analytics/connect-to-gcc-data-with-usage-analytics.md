@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: 了解如何使用 Microsoft 365 政府社区云 (GCC) 中的"Microsoft 365使用情况分析"模板应用连接到 Power BI。
-ms.openlocfilehash: f11a174f83dcdc9b2afadd71133cce19a5e6f677
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+description: 了解如何使用 Power BI 中的"Microsoft 365使用情况分析"模板应用连接到 Microsoft 365 政府社区云 (GCC) 租户Power BI。
+ms.openlocfilehash: e831cae78c90eeafae38117b6939d506f37632f30e3bd456ca9242b9d81c402c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907146"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>连接使用情况Microsoft 365 政府社区云 (GCC) 数据
 
@@ -38,16 +38,16 @@ ms.locfileid: "58253934"
 
 ## <a name="before-you-begin"></a>准备工作
 
-若要最初配置Microsoft 365使用情况分析： 
+若要最初配置Microsoft 365分析： 
 
 - 你需要成为全局管理员Microsoft 365才能启用数据收集。 
 - 您需要[Power BI Desktop应用程序](https://powerbi.microsoft.com/en-us/desktop/)来使用模板文件。 
-- 您需要具有[Power BI Pro许可证](https://go.microsoft.com/fwlink/p/?linkid=845347)高级版才能发布和查看报告。 
+- 您需要一[Power BI Pro许可证](https://go.microsoft.com/fwlink/p/?linkid=845347)或高级版才能发布和查看报告。 
 
-## <a name="step-1-make-you-organizations-data-available-for-the-microsoft-365-usage-analytics-report"></a>步骤 1：使组织的数据可用于Microsoft 365分析报告
+## <a name="step-1-make-you-organizations-data-available-for-the-microsoft-365-usage-analytics-report"></a>步骤 1：使组织的数据可用于 Microsoft 365使用情况分析报告
 
 1. In the Microsoft 365 管理中心， expand the navigation menu， select **Reports**， then select **Usage**. 
-2. 在"**使用率报告"** 页上的"Microsoft 365使用情况分析"部分，选择 **"入门"。** 
+2. 在"**使用率报告**"页上的"Microsoft 365使用情况分析"部分，选择 **"入门"。** 
 3. 在 **"Power BI** 使用情况分析"下，选择"将组织使用情况数据提供给 Microsoft Power BI **使用情况** 分析"，然后选择"保存 **"。**
 
     ![提供租户数据](../../media/usage-analytics/make-data-available.png) 
@@ -56,17 +56,17 @@ ms.locfileid: "58253934"
 
     这将启动一个过程，使组织数据可供此报告访问，并且你将看到一条消息，指出我们正在准备你的数据，Microsoft 365 **使用情况分析**。 请注意，此过程可能需要 24 小时才能完成。 
 
-4. 组织数据准备就绪后，刷新页面将显示一条消息，指出你的数据现已可用，并且还会提供你的 **租户 ID** 号。 在稍后的步骤中，当您尝试连接到租户数据时，将需要使用租户 ID。 
+4. 当组织数据准备就绪时，刷新页面将显示一条消息，指出你的数据现已可用，并且还会提供你的 **租户 ID** 号。 在稍后的步骤中，当您尝试连接到租户数据时，将需要使用租户 ID。 
  
     ![租户 ID](../../media/usage-analytics/tenant-id-gcc.png) 
  
     > [!IMPORTANT]
-    > 当数据可用时，不要选择"转到 **Power BI"，** 这将转到 Power BI Marketplace。  GCC应用商店中未提供此报告所需的Power BI应用程序。  
+    > 当数据可用时，不要 **选择"转到** Power BI"，这将转到 Power BI Marketplace。  GCC应用商店中未提供此报告所需的Power BI应用程序。  
 
 
 ## <a name="step-2-download-the-power-bi-template-connect-to-your-data-and-publish-the-report"></a>步骤 2：下载Power BI模板、连接到数据并发布报告
 
-Microsoft 365 GCC用户可以下载并使用Microsoft 365分析报告模板文件连接到其数据。 你将需要Power BI Desktop打开并使用模板文件。 
+Microsoft 365 GCC用户可以下载并使用 Microsoft 365使用情况分析报告模板文件连接到其数据。 你将需要Power BI Desktop打开并使用模板文件。 
 
  > [!NOTE]
  > 目前，Microsoft 365使用情况分析报告的模板应用不适用于 GCC Marketplace 中的Power BI租户。  

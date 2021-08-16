@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
-ms.openlocfilehash: 6172975719258e6186e6fcfdecc7bc9395b887c9f69ae835d45c1edf16626a2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e19c04d00e533797036a29cafdfe9902e93a008
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823827"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346072"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 
@@ -89,7 +89,7 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>步骤 5：创建用户帐户和设置主答复地址
 
-1. 在 Microsoft 365 管理中心的左侧窗格，选择“**用户**” > “**活动用户**”。
+1. 在 Microsoft 365 管理中心的左侧窗格，选择“**用户**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>”。
 
 2. 通过添加两个现有用户，创建两个测试帐户。
 

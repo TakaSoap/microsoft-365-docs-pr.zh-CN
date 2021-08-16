@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c04f92c4297804cf16c06c5bfffc24f7bae77031
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c6560c9b43c3eb51addf3a5515b5a215e4c6da9baabc32b92186a0f9e3b22149
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297412"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907003"
 ---
 # <a name="contact-support-for-yemen"></a>联系也门支持人员
 

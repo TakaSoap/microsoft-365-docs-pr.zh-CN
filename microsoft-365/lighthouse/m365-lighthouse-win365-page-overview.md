@@ -15,25 +15,25 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于使用 (托管服务提供商) MSP Microsoft 365 Lighthouse，请了解 Windows 365 (云) 页面。
-ms.openlocfilehash: 14ec611bc3c6238661acbc8389984783351a3161
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+description: 对于托管服务提供商 (MSP) 使用 Microsoft 365 Lighthouse，请了解 Windows 365 (云) 页面。
+ms.openlocfilehash: 1ad05cf2cae824c0bab61635f05cbce13f6fcbd57dfcb904c0e53fd3b25e9ab0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907131"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows 365 (云电脑) 概述  
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
   
 Windows 365 是一项基于云的服务，允许 Microsoft Endpoint Manager (MEM) 管理员为拥有 Windows 365 许可证的用户预配和管理云电脑。 Windows 365 与 MEM 完全集成，用于设备管理，Microsoft 365 Lighthouse用于跨所有客户租户管理云电脑的合作伙伴。
 
-有关 365 Windows，请参阅[什么是 Windows 365？](/windows-365/overview) 有关 365 Windows列表，请参阅 Requirements [for Windows 365](/windows-365/requirements)。
+有关 365 Windows，请参阅什么是 Windows [365？](/windows-365/overview) 有关 365 Windows列表，请参阅[Requirements for Windows 365](/windows-365/requirements)。
 
 > [!IMPORTANT]
-> 必须先转到[MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463)以预配每个客户租户的云电脑，然后才能在 Microsoft 365 Lighthouse。 你无法从 Microsoft 365Lighthouse 中预配。
+> 必须先转到[MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463)以预配每个客户租户的云电脑，然后才能在 Microsoft 365 Lighthouse 中管理它们。 你无法从 Microsoft 365Lighthouse 中预配。
 
 为客户租户预配云电脑后，Microsoft 365 主页上的 Windows 365 卡会提供有关需要采取措施的云电脑的简短警报，例如无法预配的云电脑数量和本地网络连接故障。 若要获取详细状态，请选择 Windows 365 卡上的按钮 (或在左侧导航窗格) 中选择 **Windows 365** 以打开 Windows 365 页面。 在此页面中，你可以获取分配给客户租户的云电脑的状态概述，查看你管理的所有云电脑及其分配到的租户的列表，并查看客户租户和 Azure Active Directory (Azure AD) 之间的本地网络连接及其状态。
 
@@ -68,18 +68,18 @@ Windows 365 是一项基于云的服务，允许 Microsoft Endpoint Manager (MEM
 
 若要了解哪些租户具有具有特定预配状态的云电脑，请从计数注释栏中选择该状态以筛选列表。 若要查看一个或多个特定客户租户的云电脑预配状态，请使用"租户"下拉菜单筛选列表。
 
-选择列表中的任意云电脑以查看更多详细信息。 如果你需要在云电脑上采取措施，可以使用选项在云中查看租户预配策略Microsoft Endpoint Manager。
+选择列表中的任意云电脑以查看更多详细信息。 如果需要在云电脑上采取措施，可以使用选项查看云中的租户预配策略和设备Microsoft Endpoint Manager。
 
 "所有云电脑"选项卡还包括以下选项：
 
 - **刷新：** 选择以检索最新的云电脑数据。
 - **导出：** 选择将云电脑数据导出到Excel逗号分隔 (.csv) 文件中。
 - **搜索：** 输入关键字以在列表中快速找到特定的云电脑。
-- **重试预配：** 从列表中选择状态为"预配失败"的 1 到 20 台云电脑，然后选择此选项以重试这些云电脑的预配。 
+- **重试预配：** 从列表中选择状态为预配失败的 1 到 20 台云电脑，然后选择此选项以重试这些云电脑的预配。
 
 若要查看云电脑状态及其含义的完整列表，请参阅 Windows 365 文档库中的云电脑概述页面。 [](/windows-365/device-management-overview#cloud-pc-overview-page)
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="&quot;Windows 365 所有云电脑&quot;选项卡的屏幕截图。":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="&quot;所有Windows 365 云电脑&quot;选项卡的屏幕截图。":::
 
 ## <a name="on-premises-network-connections-tab"></a>"本地网络连接"选项卡
 
@@ -102,5 +102,5 @@ To see connections with a specific provisioning status， select that status fro
 ## <a name="related-content"></a>相关内容
 
 [什么是 Windows 365？](/windows-365/overview) （文章）\
-Windows文章适用于云电脑的 ([365](/windows-365/device-management-overview)设备管理) \
+Windows文章适用于云电脑的 ([365](/windows-365/device-management-overview)) 概述\
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理员权限登录到 Microsoft 365 管理中心在云中设置组织，并管理用户和管理订阅。
-ms.openlocfilehash: 3eb5853a23930e1ab1e595efa6f1448dcb82894c531f0771a973318d4601c09d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1a5ebf22f874700510ff34a0f1d1fa7bb923fe0
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827163"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346972"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -38,7 +38,7 @@ ms.locfileid: "53827163"
 
 **如果你是使用者或具有 Microsoft 365 家庭版计划，则没有管理中心。** 如需设置 Microsoft 365，请前往 [在电脑或 Mac 上下载并安装或重新安装 Microsoft 365 或 Office 2019](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。
 
-可以使用管理中心在云中设置您的组织、添加用户、管理域和许可证证或执行更多操作。在本文中，了解如何进入管理中心，并了解可用的功能和设置。若要了解详细信息，请参阅管理中心。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>可用于在云中设置组织，还可用于管理用户和管理订阅等。 在本文中，学习如何访问管理中心并了解可用的功能和设置。
 
 观看有关管理中心的简短视频。 <br><br>
 

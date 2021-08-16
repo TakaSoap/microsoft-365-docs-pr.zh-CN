@@ -1,7 +1,7 @@
 ---
 title: 高可用性联合身份验证阶段 4 配置 Web 应用程序代理
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 摘要：为 web 应用程序代理服务器配置高可用性联合身份验证，Microsoft 365 Microsoft Azure。
-ms.openlocfilehash: cc74fd93fc668094d9627486ac0106447825166e3c69b4c79c36be7ccd6ea107
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：为 web 应用程序中的 web 应用程序代理服务器配置高可用性Microsoft 365联合Microsoft Azure。
+ms.openlocfilehash: 9c67aa4b2c3583fe4e370fdc750a49d7088e0db2
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870634"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354460"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
-在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
+在部署 Azure 基础结构服务Microsoft 365高可用性的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
 必须先完成此阶段，然后才能进入阶段[5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365 配置联合身份验证。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -60,17 +60,17 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>确定联合身份验证服务 FQDN 并创建 DNS 记录
 
-需要确定 DNS 名称以在 Internet 上标识联合身份验证服务名称。 Azure AD 连接将在第 5 阶段Microsoft 365此名称配置 Azure AD 令牌，该名称将成为 Microsoft 365 发送到连接客户端以获得安全令牌的 URL 的一部分。 例如，fs.contoso.com（fs 代表联合身份验证服务）。
+需要确定 DNS 名称以在 Internet 上标识联合身份验证服务名称。 Azure AD 连接将在第 5 阶段Microsoft 365此名称配置 Azure AD 令牌，该名称将成为 Microsoft 365发送到连接客户端以获得安全令牌的 URL 的一部分。 例如，fs.contoso.com（fs 代表联合身份验证服务）。
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
-|**名称**|**类型**|**TTL**|**值**|
+|**名称**|**类型**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |联合身份验证服务 FDQN  <br/> |A  <br/> |3600  <br/> |面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示) <br/> |
    
 下面是一个示例：
   
-|**名称**|**类型**|**TTL**|**值**|
+|**名称**|**类型**|**TTL**|**Value**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -158,14 +158,14 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 ![Azure 中的高可用性基础结构的第 4 阶段Microsoft 365 Web 应用程序代理服务器部署联合身份验证基础结构](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
-使用[阶段 5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365配置联合身份验证以继续配置此工作负载。
+使用[阶段 5：为用户配置联合身份验证Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 使用本文了解有关在 Office 365 中启用和配置特权访问管理Office 365。
-ms.openlocfilehash: 13b600c60e1b9c88285ee58efcf80a7ff5ea17fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 70af2d3582bd2a8166645ab7507369d48e5c17f0b43dae8543dac9e427bf2285
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905471"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
@@ -300,7 +300,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 5. 选择要删除的策略，然后选择"删除 **策略"。**
 
-6. 选择“关闭”。
+6. 选择“**关闭**”。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange Management PowerShell 中
 

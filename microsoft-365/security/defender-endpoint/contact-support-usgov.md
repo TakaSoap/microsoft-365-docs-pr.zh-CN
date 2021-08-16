@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 47d494016161f306745ea4116c95c22bd18e1402
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 93f84b6e65928dd2ff1e13a2d7474c4942ce4190a98eeb1e6daeb5e67e7bf944
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300069"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904043"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support-for-us-government-customers"></a>联系 Microsoft Defender for Endpoint support for US Government customers
 
@@ -39,7 +39,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 环境 | 门户 URL
 :---|:---
-商业上的 GCC-M | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
+GCC-M（商业） | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
 GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.microsoft.us)
 GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)

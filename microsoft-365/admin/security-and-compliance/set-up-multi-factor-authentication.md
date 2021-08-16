@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1649282a1ea63d03732744265a916fb96e6e85f1c109525918526d4b15dc319a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 08f1d17942b1fb11dd9717e96045fd0b32b2422b
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822699"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346060"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -86,14 +86,14 @@ ms.locfileid: "53822699"
 对于大多数订阅，新式验证会自动启用，但如果在 2017 年 8 月之前购买了订阅，可能需要启用新式验证才能使用多重身份验证等功能，以在 Outlook 等 Windows 客户端中正常工作。
 
 
-1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
 2. 在 **服务** 选项卡下，选择 **新式验证**，在 **新式验证** 窗格中，确保 **启用新式验证** 选项。 选择“**保存更改**”。
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA
 
 如果你以前已启用了每用户 MFA，则必须在启用安全性默认值之前将其关闭。
 
-1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**用户**”\>“**活动用户**”。
+1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>”。
 1. 在“**活动用户**”页面上，选择“**多重身份验证**”。
 1. 在“多重身份验证”页面上，选择每个用户并将其多重身份验证状态设置为“**禁用**”。
 

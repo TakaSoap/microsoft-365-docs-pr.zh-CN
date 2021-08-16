@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9b765d14e31d6c4890aeace41e4fe79bafdd889e
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a08be838fdfb23e7f24677694fb0fe2f896ca8412d0f77df937af6a7b732053e
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53904019"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>为 Microsoft Defender 防病毒检测配置修正
 
@@ -50,7 +50,7 @@ ms.locfileid: "52925571"
 
 |位置 | 设置 | 说明 | 如果未 (默认设置)  |
 |:---|:---|:---|:---|
-|扫描 | 创建系统还原点 | 在尝试清理或扫描之前，将每天创建一个系统还原点 | 禁用|
+|扫描 | 创建系统还原点 | 在尝试清理或扫描之前，将每天创建一个系统还原点 | 已禁用|
 |扫描 | 打开从扫描历史记录文件夹中删除项目 | 指定项目应在扫描历史记录中保留的天数 | 30 天 |
 |根 | 关闭常规修正 | 你可以指定是Microsoft Defender 防病毒自动修正威胁，还是应询问终结点用户应该怎么办。 | 禁用 (自动修正威胁)  |
 |隔离 | 配置从隔离文件夹删除项目 | 指定在删除项目之前应在隔离中保留的天数 | 90 天 |

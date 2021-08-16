@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 本文帮助说明不同版本的 Office 365 邮件加密。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92beb3625c0b115fe77f1667a448bf0bf9589040
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 5e94183ef90d5e55512f8d62db38be28f14d69d1fa8a5925b4de2afa660db26c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905483"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 
@@ -56,7 +56,7 @@ Exchange Online信息权限管理 (IRM) IRM 功能，可提供电子邮件和附
 新功能具有以下优点：
 
 - 能够使用仅加密选项 (启用安全协作) 、不要转发选项和自定义限制。
-- 发件人可以从 Outlook Web 客户端上的桌面、Outlook for Mac Outlook使用新功能手动发送加密的邮件。
+- 发件人可以从桌面、Outlook和桌面客户端Outlook for Mac加密Outlook 网页版邮件。
 - Microsoft 365在受支持的客户端中，收件人可以使用Outlook体验。 或者，管理员可以选择向收件人Microsoft 365品牌体验。
 - 组织Microsoft 365帐户（如 Gmail、Yahoo 和 Microsoft 帐户）与 OME 门户联合，这将为这些收件人提供更好的用户体验。 所有其他标识都使用一次传递代码访问加密邮件。
 - 管理员可以自定义品牌，并创建多个品牌模板。
@@ -83,9 +83,9 @@ Office 365 高级邮件加密高中不支持GCC。
 
 ### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>High 和 GCC High 收件人GCC加密的电子邮件
 
-发件人可以在 Outlook for PC 和 Mac 以及 Outlook 网页中手动加密电子邮件，或者组织可以设置策略以使用 Exchange 流规则加密电子邮件。
+发件人可以在 Outlook for PC 和 Mac 以及 Outlook 网页版 中手动加密电子邮件，或者组织可以设置策略以使用 Exchange 流规则加密电子邮件。
 
-GCC High 内的收件人在 Outlook for PC 和 Mac 中接收相同的内联阅读体验，Outlook所有用户一样在 Web 上接收内联阅读体验。
+在 GCC High 内的收件人会收到与所有其他Outlook和 Outlook 网页版相同的内联阅读体验。
 
 ### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>高收件人和非GCC收件人之间的GCC电子邮件
 
@@ -101,7 +101,7 @@ GCC High 内的发件人可以在"高"边界GCC发送加密电子邮件，反之
 
 - 若要指定新功能，请使用"邮件流Exchange **操作"应用Office 365 邮件加密权限保护"。**
 
-用户可以手动发送通过 Web 桌面、Outlook for Mac 和 Outlook 中的新功能Outlook加密的邮件。
+用户可以手动发送通过桌面、Outlook和桌面Outlook for Mac加密Outlook 网页版。
 
 ## <a name="migrate-from-legacy-ome-to-the-new-capabilities"></a>从旧 OME 迁移到新功能
 

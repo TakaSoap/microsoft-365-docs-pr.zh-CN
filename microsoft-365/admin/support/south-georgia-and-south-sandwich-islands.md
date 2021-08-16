@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70b640939e888095d0df647466595a95a40a902d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: efc31d8db631e95ee04c0e98e9dabaf488bb121892764dccd5bb841a4c0431c4
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907039"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>联系南部格鲁吉亚和南维尔京群岛的支持
 

@@ -2,8 +2,8 @@
 title: 为Microsoft 365测试环境Microsoft 365安全性提高
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/09/2019
 audience: ITPro
@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 使用此测试实验室指南为企业Microsoft 365环境启用Microsoft 365安全设置。
-ms.openlocfilehash: 3decba5b8e75525c8988f07e8e3af3e236ed5e2e597266901bec5346cec8660c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 使用此测试实验室指南为Microsoft 365环境启用Microsoft 365安全设置。
+ms.openlocfilehash: ad739ed76d903ece388dde4c4fbc6337bb230051
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835147"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354436"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为Microsoft 365测试环境Microsoft 365安全性提高
 
@@ -34,7 +34,7 @@ ms.locfileid: "53835147"
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
-如果你只想按最低要求Microsoft 365轻型方式配置提升的安全性，请按照轻型基本配置[中的说明操作](lightweight-base-configuration-microsoft-365-enterprise.md)。
+如果你只想使用最低要求Microsoft 365轻型方式配置提升的安全性，请按照轻型基本配置[中的说明操作](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
 如果要在模拟企业中配置Microsoft 365安全性，请按照传递身份验证[中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
@@ -43,7 +43,7 @@ ms.locfileid: "53835147"
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>阶段 2：配置增强Microsoft 365安全性
 
-在此阶段中，为企业Microsoft 365环境Microsoft 365安全性提高。 有关其他详细信息和设置，请参阅 [配置租户以提升安全性](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在这一阶段，为企业Microsoft 365环境Microsoft 365安全性提高。 有关其他详细信息和设置，请参阅 [配置租户以提升安全性](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式验证的应用
 
@@ -56,21 +56,21 @@ ms.locfileid: "53835147"
   - 如果你使用的是模拟的企业Microsoft 365环境，请使用[Azure](https://portal.azure.com)门户连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
  
 2. 在新的 **"Microsoft 365 管理中心"** 选项卡上，在左侧导航 **窗格中的**"管理中心"下，单击 **"SharePoint"。**
-3. 在"管理 **SharePoint选项卡上**，单击"访问控制 **>策略"。**
+3. 在"管理SharePoint **选项卡上**，单击"访问控制>**策略"。**
 4. 单击 **不支持新式验证的应用，选择**"**阻止访问**"，然后单击"保存 **"。**
 
 
 ### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>为 Office 365、SharePoint、OneDrive for Business 和 Microsoft Teams 启用 Defender for Microsoft Teams
 
-defender for Office 365 for SharePoint， OneDrive， and Microsoft Teams protects your organization from inadvertently sharing malicious files.
+Defender for Office 365 for SharePoint，OneDrive，Microsoft Teams保护你的组织避免意外共享恶意文件。
 
 1. 转到安全 [与&](https://protection.office.com) 中心，然后使用全局管理员帐户登录。
 
-2. 在左侧导航窗格中的 **"威胁管理**"下，单击"策略"，然后单击"保险箱 **附件"。** 
+2. 在左侧导航窗格中，在"**威胁** 管理"下，单击"策略"，然后单击"保险箱 **附件"。** 
 
-3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams"** 下。 选择 **打开 ATP SharePoint、OneDrive 和 Microsoft Teams。**
+3. 在 **"保护文件SharePoint、OneDrive和Microsoft Teams"** 下。 选择 **打开 ATP 作为SharePoint、OneDrive和Microsoft Teams。**
 
-4. 单击 **保存**。
+4. 单击“**保存**”。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件
@@ -94,7 +94,7 @@ Microsoft 365中的威胁管理可帮助您控制和管理对组织数据的移�
 
 查看安全仪表板：
 
-1. 如果需要，请转到安全与 [&](https://protection.office.com) 中心，然后使用全局管理员帐户登录。
+1. 如果需要，请转到安全与& [中心](https://protection.office.com) ，然后使用全局管理员帐户登录。
 
 2. 在左侧导航窗格中的 **"威胁管理**"下，单击"仪表板 **"。**
 

@@ -1,7 +1,7 @@
 ---
-title: 管理Microsoft 365 DAP Windows PowerShell的部署
-ms.author: josephd
-author: JoeDavies-MSFT
+title: 通过Microsoft 365 DAP Windows PowerShell管理部署
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -16,17 +16,17 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: 联合和云解决方案提供商云解决方案提供商 (合作伙伴) 如何使用Windows PowerShell管理Microsoft 365租户。
-ms.openlocfilehash: e601875f5541f090f596b059db5d92b3494fabd55796945e8d543ba7c9646343
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 联合和云解决方案云解决方案提供商 (云) 如何使用Windows PowerShell管理Microsoft 365租户。
+ms.openlocfilehash: be32c1c8f6a71e45c8f0176c037f7ca6f28f5c31
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830188"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354424"
 ---
-# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>如何使用委派Microsoft 365 Windows PowerShell管理权限合作伙伴的权限
+# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>如何使用委派访问权限Microsoft 365管理Windows PowerShell权限合作伙伴的代理
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 许多是网络或电信提供商。 他们Microsoft 365订阅捆绑到其服务产品/服务中。 当他们销售 Microsoft 365 订阅时，他们将自动获得代表 (AOBO) 管理客户租赁的权限，以便他们可以管理和报告这些租赁。 这些任务很难在任务Microsoft 365 管理中心。 使用 PowerShell 为用户Microsoft 365管理任务要容易得多，例如：
 - 列出所有客户 **TenantIds** 及其域 

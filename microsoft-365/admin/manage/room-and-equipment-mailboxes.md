@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 44233261f266a6caf4b4bea78d0dbf83d98daefe537121e0ba37748e71900462
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b5db5cfbbcacf501a280df98c4d1f9fc21fe509
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824876"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346768"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 
@@ -61,7 +61,7 @@ ms.locfileid: "53824876"
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>设置会议室和设备邮箱
 
-若要设置会议室或设备邮箱，请转到 Microsoft 365 管理中心。 （需要具有管理员权限才能执行此操作。）创建邮箱，并让所有人都知道他们可以通过预订，用于会议和活动。
+若要设置会议室或设备邮箱，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。 （需要具有管理员权限才能执行此操作。）创建邮箱，并让所有人都知道他们可以通过预订，用于会议和活动。
   
 1. 在管理中心，转到“**资源**”\> [会议室和设备](https://go.microsoft.com/fwlink/p/?linkid=2067334)页面。
   

@@ -1,7 +1,7 @@
 ---
 title: 混合解决方案
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
@@ -17,13 +17,13 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负荷的有用信息的链接Microsoft Azure。
-ms.openlocfilehash: 1b63f2fff61a9fb8a7eb99bd15da13d5c909af86c3362618ab7a438e0a610316
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负载的有用信息Microsoft Azure。
+ms.openlocfilehash: c7b3997464a6834da0471f3b879da4daafe3908d
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885383"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354448"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 

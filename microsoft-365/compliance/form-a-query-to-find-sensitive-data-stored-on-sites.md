@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 (Online (DLP) SharePoint发现整个租户中包含敏感数据的文档。
-ms.openlocfilehash: 04bf2e97dd2b5530838aef9fcb4b4467270d2d9d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: cd92fafe5a04de0339c0afb5f5b7cc2b4cc1772fc46dabe6477dd23aa981af23
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287475"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905568"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -68,7 +68,7 @@ dlp in SharePoint also introduces the LastSensitiveContentScan property， which
 
 ****
 
-|查询|解释|
+|查询|说明|
 |---|---|
 |`SensitiveType:"International Banking Account Number (IBAN)"`|该名称可能看起来有些奇怪，因为它太长，但却是该敏感类型的正确名称。 请确保使用敏感信息类型清单 [中的确切名称](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help)。 您还可以使用为组织 [创建的](create-a-custom-sensitive-information-type.md) 自定义敏感信息类型的名称。|
 |`SensitiveType:"Credit Card Number|1..4294967295|1..100"`|这将返回至少与敏感类型"信用卡号"匹配的文档。 每个范围的值分别是最小值和最大值。 编写此查询的一种更简单的方式是  `SensitiveType:"Credit Card Number"` ，但其中最有趣的是什么？|

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
-ms.openlocfilehash: 124e1acd5b2094553d86b47f401691fb1b513a8f375a3fecdb00e98b4e89c128
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15638d98f48c590e430dbba0528f7b29a186569e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824607"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346756"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -49,18 +49,20 @@ ms.locfileid: "53824607"
 
 如果希望用户密码在特定时段后过期，请按照以下步骤操作。
 
-1. 在管理中心，转到“**设置**”\>“**组织设置**”。
-
-2. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全和隐私</a>页面。
- 只有全局管理员能看到“安全和隐私”选项。
+1. 在 Microsoft 365 管理中心中，转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全性和隐私** 选项卡</a>。
+ 
+    只有全局管理员能看到“安全和隐私”选项。
   
-3. 选择“**密码过期策略**”。
+1. 选择“**密码过期策略**”。
   
-4. 如果不希望强制用户更改密码，请取消选择“**将用户密码设置为以下天数后过期**”旁边的复选框。
+1. 如果不希望强制用户更改密码，请取消选择“**将用户密码设置为以下天数后过期**”旁边的复选框。
   
-5. 键入密码应采用的过期频率。从 14 到 730 之间选择一个天数。
+1. 键入密码应采用的过期频率。从 14 到 730 之间选择一个天数。
   
 6. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
+
+> [!NOTE]
+> Office 365 门户或除 Outlook 以外的任何 Office 应用不再支持密码过期通知。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>密码到期功能重要事项须知
   

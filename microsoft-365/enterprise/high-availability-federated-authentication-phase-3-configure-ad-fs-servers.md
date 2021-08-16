@@ -1,7 +1,7 @@
 ---
 title: 高可用性联合身份验证阶段 3 配置 AD FS 服务器
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 了解如何创建和配置 AD FS 服务器，以用于 Microsoft 365 中的Microsoft Azure。
-ms.openlocfilehash: 23297f9ee38dcc1753f004aa225ee8eb32438c2eff08418aedfa9b5362c90c7f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83e8dd5f97017f19e709dd5a65a89275e7be12b3
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870692"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354472"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
-在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
+在部署 Azure 基础结构服务Microsoft 365高可用性的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
 必须先完成此阶段，然后才能进入阶段 [4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 对于每个虚拟机，请使用所选择的远程桌面客户端并创建远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-对于每个虚拟机，在命令提示符下 (这些命令) AD DS Windows PowerShell域。
+对于每个虚拟机，在 (提示符下) 这些命令，将它们加入相应的 Active Directory 域服务 (AD DS Windows PowerShell域中。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,9 +148,9 @@ Restart-Computer
   
 **阶段 3：Azure 中用于高可用性联合身份验证基础结构的 AD FS 服务器和内部负载均衡器**
 
-![Azure 中与 AD FS Microsoft 365联合身份验证基础结构的第 3 阶段](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![第 3 阶段的高可用性Microsoft 365 AD FS 服务器在 Azure 中部署联合身份验证基础结构](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 使用 [阶段 4：配置 Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) 应用程序代理以继续配置此工作负载。
   

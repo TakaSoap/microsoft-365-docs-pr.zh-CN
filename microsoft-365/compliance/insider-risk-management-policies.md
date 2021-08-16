@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 79795b6166b5a0b513ab4558effe509cc6637849
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53905499"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -209,8 +209,6 @@ ms.locfileid: "58256688"
 有关任何建议或警告的更多详细信息，请在 **“策略”** 选项卡上选择一个策略以打开策略详细信息卡。 详细信息卡的"通知"部分将显示有关建议和警告的详细信息，包括有关如何解决这些问题的指南。
 
 ![预览体验计划风险管理策略运行状况](../media/insider-risk-policy-health.png)
-
-### <a name="notification-messages"></a>通知消息
 
 使用下表详细了解解决潜在问题的建议和警告通知及操作。
 

@@ -1,9 +1,9 @@
 ---
 title: Contoso IT 基础结构和业务需求
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础结构的基本结构，以及企业内部部署基础结构如何满足Microsoft 365业务需求。
-ms.openlocfilehash: 70b0f0c9ae93a682a00eb6cccfec013c4e72f18b29d2c701ae9a3c3db84da240
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: abed7e47ab0654c44c047ef09a9a75a46d2a0e17
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899557"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354337"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 
@@ -60,7 +60,7 @@ Contoso 业务需求分为五个主要类别：
   将基于电子邮件和文件共享的协作替换为允许实时更改文档、简化联机会议和捕获的对话线程的联机模型。
 - 提高远程和移动工作者的工作效率
 
-  由于许多员工在家工作或现场工作，因此请将瓶颈的 VPN 解决方案替换为对云中 Contoso 数据和资源的性能访问。
+  由于许多员工在家工作或现场工作，因此请将瓶颈的 VPN 解决方案替换为对云中的 Contoso 数据和资源的性能访问权限。
 - 提高创造力和革新能力
 
   利用最新的视觉学习和创意开发方法，包括墨迹书写和 3D 可视化。
@@ -85,7 +85,7 @@ Contoso 业务需求分为五个主要类别：
 
 **远程和移动访问及业务合作伙伴**
 
-- 提高远程和移动工作者的安全性
+- 提高远程和移动工作人员的安全性
 
   实施自带设备 (BYOD) 和公司拥有的设备管理，以确保安全访问、正确的应用程序行为和公司数据保护。
 
@@ -95,23 +95,23 @@ Contoso 业务需求分为五个主要类别：
 
 - 为 B2B 业务和 B2B (提供更好的连接并降低) 开销
 
-  使用使用联合身份验证的基于云的解决方案替换旧合作伙伴 Extranet 和昂贵的合作伙伴 Extranet。
+  使用使用联合身份验证的基于云的解决方案替换老化且成本高昂的合作伙伴 Extranet。
 
 **合规性**
 
 - 遵守区域法规要求
 
-  确保遵守有关数据存储、加密、数据隐私和个人数据法规的行业和区域法规，如欧盟一般数据保护条例 (GDPR) 。
+  确保遵守针对数据存储、加密、数据隐私和个人数据法规的行业和区域法规，如欧盟一般数据保护条例 (GDPR) 。
 
 **管理**
 
 - 减少在客户端电脑和设备上运行的管理软件的 IT 开销
 
-  自动安装整个组织中Windows操作系统Microsoft 365 企业应用版更新。
+  自动安装组织中Windows操作系统和Microsoft 365 企业应用版更新。
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>映射 Contoso 业务需求以Microsoft 365企业版
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>映射 Contoso 业务需求Microsoft 365企业版
 
-Contoso IT 部门在部署之前确定了以下Microsoft 365 E5功能所需的映射：
+Contoso IT 部门在部署之前确定了以下Microsoft 365 E5功能的需求映射：
 
 
 | 类别 | 业务需求 | Microsoft 365企业产品或功能 |
@@ -137,7 +137,7 @@ Contoso IT 部门在部署之前确定了以下Microsoft 365 E5功能所需的�
 
 ## <a name="next-step"></a>后续步骤
 
-了解 Contoso [Corporation](contoso-networking.md)本地网络，以及如何针对访问和延迟优化网络以Microsoft 365基于云的资源。
+了解 Contoso [Corporation](contoso-networking.md)本地网络以及如何针对访问和延迟进行优化，以Microsoft 365基于云的资源。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a39eb15de97b8c3bc5c2862d5ad233ce90491d61
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: a3546160f31187d4c1d9ddda2f01edffee16bc1f65583b32b4c61659735d3f8c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53907075"
 ---
 # <a name="contact-support-for-italy"></a>联系意大利支持人员
 
