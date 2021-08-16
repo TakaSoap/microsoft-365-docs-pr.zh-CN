@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解如何在主题中心中管理主题Microsoft Viva主题。
-ms.openlocfilehash: 53fbc338d69c87029a6e1a65917abcc9b003f36f959e440165405527fdca87e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33d706a0801d8a91d22767b5b03461ba79cf8ff7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840228"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255600"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>管理主题中心中的主题Microsoft Viva主题
 
@@ -28,7 +28,7 @@ ms.locfileid: "53840228"
 
 </br>
 
-在 Viva 主题中心，知识管理员可以查看"管理主题"页，以查看知识管理员指定的源位置中标识的主题。  
+在 Viva 主题中心，知识管理员可以查看"管理主题"页，以查看在知识管理员指定的源位置中标识的主题。  
 
    ![主题中心。](../media/knowledge-management/topic-center.png)  
 
@@ -38,7 +38,7 @@ ms.locfileid: "53840228"
 
    ![主题生命周期图表。](../media/knowledge-management/topic-lifecycle.png) 
 
-- **建议**: 主题已由 AI 标识，且具有足够的支持资源、连接和属性。  (UI.) 
+- **建议**: 主题已由 AI 标识，且具有足够的支持资源、连接和属性。  (**UI.)**
 
 - **Confirmed：AI** 已发现并经过验证的主题。 当出现两种情况之一时，将进行主题验证：
 
@@ -64,7 +64,7 @@ ms.locfileid: "53840228"
 若要在主题中心管理主题，需要：
 - 拥有 Viva 主题许可证。
 
-- 拥有 [**Who主题权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
+- 拥有Who [**主题权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 除非您具有管理主题的权限，否则将无法在主题中心Who **管理主题** 页面。
 
@@ -94,7 +94,7 @@ ms.locfileid: "53840228"
 
 ### <a name="quality-score"></a>质量分数
 
-显示在"建议的主题" **页上的每个** 主题都分配有质量分数。 质量分数反映了普通用户将看到有关该主题的信息的信息量，同时请记住，每个用户可能会看到更多或更少的信息，因为他们可能拥有或可能不会查看主题中信息的权限。 
+"建议的主题" **页上显示的每个** 主题都分配有质量分数。 质量分数反映了普通用户将看到有关该主题的信息的信息量，同时请记住，每个用户可能会看到更多或更少的信息，因为他们可能拥有或可能不会查看主题中信息的权限。 
 
 质量分数可帮助深入了解包含最多信息的主题，并且可用于查找可能需要手动编辑的主题。 例如，质量分数较低的主题可能是由于某些用户没有对SHAREPOINT相关文件或网站的权限，而 AI 已包含在主题中。 然后，参与者可编辑该主题以包含该信息 (在适当的时候)，然后所有可查看该主题的用户都可以查看。
 

@@ -1,6 +1,6 @@
 ---
-title: 隐藏Microsoft Defender 防病毒界面
-description: 可以在应用内隐藏病毒和威胁防护Windows 安全中心磁贴。
+title: 隐藏Microsoft Defender 防病毒接口
+description: 可以在应用内隐藏病毒和威胁Windows 安全中心磁贴。
 keywords: ui 锁定， 无头模式， 隐藏应用， 隐藏设置， 隐藏界面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0e44e876c6eadc4c1b95081091346ce20ad4493bb0c258958fdbc1346e9659f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867905"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255778"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与用户界面Microsoft Defender 防病毒交互
 
@@ -32,15 +32,15 @@ ms.locfileid: "53867905"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用组策略阻止终结点上的用户看到 Microsoft Defender 防病毒 界面。 还可以阻止他们暂停扫描。
+可以使用组策略阻止终结点上的用户看到Microsoft Defender 防病毒界面。 还可以阻止他们暂停扫描。
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>隐藏Microsoft Defender 防病毒界面
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>隐藏Microsoft Defender 防病毒接口
 
-在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并防止病毒 & 威胁防护磁贴显示在 Windows 安全中心 应用中。
+在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并阻止病毒 & 威胁防护磁贴显示在 Windows 安全中心 应用中。
 
 将设置设置为"**已启用"：**
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Windows 安全中心防护图标以及病毒和威胁防护部分":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图":::
 
 将设置设置为"已 **禁用"** 或未配置：
 

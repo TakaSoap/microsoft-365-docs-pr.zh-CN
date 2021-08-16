@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供了有关安全优化 Microsoft 365 网络连接的最新指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8f710793dd8ce1e5a2835a05bbf366559a38a0aa
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ba808cb8bb4f71c22638950d22af6ede8170275ffaa8d84c00d8d2c54f383d43
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864402"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 网络连接原则
 
@@ -113,7 +113,7 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
 
 ![避免回流](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-一般来说，用户与最近的 Microsoft 365 终点之间的最短和最佳线路可提供最佳性能。 当绑定到特定目标的广域网或 VPN 通信首次定向到另一个中间位置（例如，安全堆栈、云访问代理、基于云的 web 网关的）时，会出现网络回流，导致延迟以及潜在重定向到地理位置较远的终结点。 路由/对等互连效率低下或次优的（远程）DNS 查找也会导致网络回流。
+一般来说，用户与最近的 Microsoft 365 终点之间的最短和最佳线路可提供最佳性能。 当绑定到特定目标的广域网或 VPN 通信首次定向到另一个中间位置（例如，基于云的 web 网关的安全堆栈、云访问代理）时，会出现网络回流，导致延迟以及潜在重定向到地理位置较远的终结点。 路由/对等互连效率低下或次优的（远程）DNS 查找也会导致网络回流。
   
 要确保 Microsoft 365 连接不受网络回流的影响（即使是本地出口情况下），请检查用于为用户提供 Internet 出口的 ISP 是否与靠近该位置的 Microsoft 全球网络具有直接对等连接关系。 你还可能想要配置出口路由以直接发送受信任的 Microsoft 365 流量，而不是通过处理 Internet 绑定流量的第三方云或基于云的网络安全供应商进行代理或隧道传输。 Microsoft 365 终结点的本地 DNS 名称解析有助于确保除直接路由外，最近的 Microsoft 365 入口点用于用户连接。
   

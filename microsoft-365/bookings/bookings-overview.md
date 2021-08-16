@@ -9,18 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Microsoft Bookings 应用的概述，其中包括基于 Web 的预订日历，并且与 Outlook 集成，以优化员工的日历并让客户灵活地预订约会。
-ms.openlocfilehash: 6ea7d7105efd917674b56ddd952b754310623c98f17eef15b9bad9b50841c353
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 339c8c2457b340dd863b5c9f8e0382b84ef43c08
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900815"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256123"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-Microsoft Bookings 使安排和管理约会成为一种希望。 Bookings 包括基于 Web 的预订日历，并且与 Outlook 集成，以优化员工的日历，并让客户灵活地预订最适合他们的时间。 自动通知电子邮件可减少未显示内容并提高客户满意度，并且组织通过减少重复的计划任务节省时间。 通过内置的灵活性和自定义功能，Bookings 可以设计为符合组织许多不同的部分的情况和需求。 Bookings 日历是一个位于 Exchange Online。
+Microsoft Bookings 使安排和管理约会成为一种希望。 Bookings 包括基于 Web 的预订日历，Outlook以优化员工的日历，并让客户灵活地预订最适合他们的时间。 自动通知电子邮件可减少无显示并增强客户满意度，并且组织通过减少重复的计划任务节省时间。 通过内置灵活性和自定义功能，Bookings 可以设计为符合组织许多不同的部分的情况和需求。 Bookings 日历是邮件中的Exchange Online。
 
-通过预订，你可以通过联机会议和会议[Microsoft Teams Skype for Business。](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) 作为联机会议预订的每个约会将创建一个发送给与会者的唯一会议链接，以便他们可以通过 Web 浏览器、电话拨入或 Skype 或 Teams 应用加入。 Bookings 还作为 Teams 内的应用提供，这允许你创建 Bookings 日历、分配员工，以及计划新约会和管理现有约会，而无需离开Teams。
+通过预订，可以通过联机会议和联机会议使[Microsoft Teams Skype for Business。](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) 作为联机会议预订的每个约会将创建一个发送给与会者的唯一会议链接，以便他们可以通过 Web 浏览器、电话拨入或 Skype 或 Teams 应用加入。 Bookings 还作为 Teams 中的应用提供，这允许你创建 Bookings 日历、分配员工，以及计划新约会和管理现有约会，而无需离开Teams。
 
 Bookings 有三个主要组成部分：
 
@@ -30,9 +30,16 @@ Bookings 有三个主要组成部分：
 
 - 一个面向企业的移动应用，在该应用中，预订日历所有者和管理员可以查看其所有预约，访问客户列表和联系信息，以及在旅途中进行手动预订。
 
+## <a name="before-you-begin"></a>准备工作
+
+以下订阅中提供了 Microsoft Bookings：
+
+- Office 365：A3、A5、E3、E5、F1、F3
+- Microsoft 365：A3、A5、E3、E5、F1、F3、Business 高级版
+
 ## <a name="get-started-using-bookings"></a>开始使用 Bookings
 
-准备好开始了吗?
+准备好开始了吗？
 
 观看此视频或按照以下步骤设置 Bookings。
 

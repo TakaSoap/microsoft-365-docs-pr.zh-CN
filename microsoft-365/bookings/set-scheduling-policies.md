@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: 了解如何设置企业的计划策略。 计划策略包括约会长度以及可接受的潜在客户和取消时间。
-ms.openlocfilehash: 82cc9a66e82665040a1f0d08635cae10cd413d4b
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: e4cfc3d22b662a1fb87e66f70a9b30a0c59d332060cea85ed9c0b409ec1e289d
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906907"
 ---
 # <a name="set-your-scheduling-policies"></a>设置日程安排策略
 
@@ -26,7 +26,7 @@ ms.locfileid: "47419272"
 
 此表说明了预订页面上可用的各种计划策略。
 
-| 策略 | 说明 |
+| Policy | 说明 |
 |---|---|
 | 时间增量 | 确定约会之间的间隔。 可以将时间增量从 5 分钟设置为 4 小时。 还可以设置自己的自定义时间增量。 例如，间隔 15 分钟意味着客户可以在 8：00、8：15、8：30 等时间安排 60 分钟的约会。 相反，60 分钟的间隔意味着只能在一小时进行约会。  (若要设置服务持续时间，请参阅 [定义服务产品](define-service-offerings.md)/)  |
 | 前导时间（以小时表示） | 基于安排的约会构建员工计划，因此必须提前知道在任何特定日期有多少客户要提供服务。 提前时间策略使您可以指定客户必须提前预定或取消约会的小时数。 |

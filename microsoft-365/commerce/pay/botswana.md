@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c728456fc4052f4ec8dfca29ddc28f6e26decd19
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 66b1071ab4d075160a78a125b6b6fa1202769c52df586a45acfc6e74f0cca5e0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906571"
 ---
 # <a name="payment-information-for-botswana"></a>博茨瓦纳的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference your invoice number (s) on your invoice inv
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
-**帐号** ：12510049  
+**帐户号：12510049**  
 **帐户名称：** MICROSOFT

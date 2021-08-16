@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9ee25f7f9e227cbaf5691489bcdea9c421762b40e9984d7ddaf641028fcf9e66
-ms.sourcegitcommit: 14a8a80aa85d501d3a77f6cdd3aba6750e6775e5
+ms.openlocfilehash: 011e816a7a01c0065f46113962d2b4fab356639b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57834795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255914"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -82,7 +82,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 添加新策略：
 
-1. 选择 **"Web 内容** 筛选"**页上的"** 添加 **设置"。**
+1. 选择 **"Web** 内容筛选 **"页上的"添加****设置"。**
 
 2. 指定名称。
 
@@ -101,7 +101,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 通过创建自定义指示器策略，可以覆盖 Web 内容筛选中阻止的类别以允许单个网站。 当自定义指示器策略应用于有关设备组时，它将取代 Web 内容筛选策略。
 
-1. 通过Microsoft 365 Defender终结点设置 URL/域 **添加项**，在 Microsoft 365 Defender 门户  >    >    >    >  **中创建自定义指示器**。
+1. 通过访问"终结点Microsoft 365 Defender URL/域 **设置项"，** 在 Microsoft 365 Defender 门户  >    >    >    >  **中创建自定义指示器**。
 
 2. 输入网站的域。
 
@@ -111,13 +111,13 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 如果遇到未正确分类的域，可以直接在门户中就类别进行争议。 
 
-要争议域的类别，请导航 **到"报告** Web 保护 Web 内容  >    >  **筛选详细信息** 域  >  **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
+要争议域的类别，请导航 **到"报告** Web 保护 Web 内容  >    >  **筛选详细信息域**  >  **"。** 在"Web 内容筛选"报表的"域"选项卡上，你将在每个域旁边看到省略号。 将鼠标悬停在此省略号上，然后选择"**争议类别"。**
 
 将打开一个面板，您可以在其中选择优先级并添加其他详细信息，例如建议用于重新分类的类别。 完成表单后，选择"提交 **"。** Our team will review the request within one business day. 若要立即取消阻止，请创建自定义 [允许指示器](indicator-ip-domain.md)。
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 (https://security.microsoft.com) **URL 搜索**  >  **函数**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别，可以使用终结点搜索 下Microsoft 365 Defender门户 (https://security.microsoft.com) **URL 搜索**  >  **功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
 ![Web 内容筛选类别查找结果的图像](../../media/web-content-filtering-category-lookup.png)
 
@@ -163,7 +163,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>此预览版中的限制和已知问题
 
-- 如果你Microsoft Edge操作系统配置是 Server (  >  **systeminfo** OS Configuration) ，则仅支持此  >  ) 。 网络保护仅在服务器设备的"检查"模式下受支持，它负责保护受支持的第三方浏览器上的流量。
+- 如果你Microsoft Edge操作系统配置是 Server (  >  **systeminfo** OS Configuration) ，则仅支持此  >  ) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
 
 - 未分配的设备将在报告内显示不正确的数据。 在"**报告详细信息**  >  **""** 设备组透视表"中，你可能会看到一个包含空白"设备组"字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
 

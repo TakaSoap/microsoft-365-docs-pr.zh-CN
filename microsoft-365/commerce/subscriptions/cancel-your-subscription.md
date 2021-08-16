@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: 78aa65e2b96d902dad53713ce694058f0e86c329def401c023263b3d38184826
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843222"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255695"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -50,14 +50,6 @@ ms.locfileid: "53843222"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
-3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
-4. 选择“**保存**”。
-
-你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
-
-> [!NOTE]
-> 如果显式删除订阅，则它将跳过过期和禁用阶段，而且会立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
 
 ::: moniker-end
 
@@ -70,14 +62,17 @@ ms.locfileid: "53843222"
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+
 ::: moniker-end
 
-2. 选择“**产品**”选项卡。
-3. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
-4. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
-5. 选择“**保存**”。
+2. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
+3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
+4. 选择“**保存**”。
 
 你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> 如果显式删除订阅，则它将跳过过期和禁用阶段，而且会立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>取消订阅会发生什么？
 

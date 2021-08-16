@@ -19,12 +19,12 @@ ms.custom:
 description: 了解如何创建和管理自动声明策略，这些策略可自动为特定应用的用户分配许可证。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: da5488b1cd463f173fda44dacd33a7198330f747495d10d5d696bee2195330ae
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887499"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自动声明策略
 
@@ -40,7 +40,7 @@ ms.locfileid: "52331642"
 - [查看策略报告](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
-> 自动声明策略当前仅适用于 Microsoft Teams。 将来将有更多的产品可供使用。
+> 自动声明策略当前仅适用于Microsoft Teams。 将来将有更多的产品可供使用。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -59,7 +59,7 @@ ms.locfileid: "52331642"
 
 只有全局管理员可以关闭自动声明策略设置。
 
-1. 在管理中心，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">""组织设置"</a> 页面。
+1. In the admin center， go to the **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Org settings</a> page.
 2. 在表底部附近，选择 **"用户拥有的应用和服务"。**
 3. 在右窗格中，清除"允许用户在首次登录时自动声明许可证 **"框**。
 
@@ -79,7 +79,7 @@ ms.locfileid: "52331642"
 3. 在"**命名此自动声明策略**"页上，输入策略的名称，然后选择"下一步 **"。**
 4. 在 **"设置自动声明应用** 和产品"页上，选择要为其分配许可证的应用和订阅。
 5. 如果要添加备份产品，请选择"将备份产品添加到此策略 **"，** 然后从列表中选择该产品。
-6. 选择“**下一步**”。
+6. 选择 **下一步**。
 7. 在"**选择应用"** 页上，清除或选择要排除或包括在许可证中的应用的框，然后选择"下一步 **"。**
 8. 如果添加了一个或多个备份产品，请对每个产品重复步骤 7。 否则，请转到步骤 9。
 9. 在"**查看并完成"** 页上，验证新策略信息，进行必要的更改，然后选择"创建 **策略"。**

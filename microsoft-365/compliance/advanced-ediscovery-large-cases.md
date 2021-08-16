@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 在管理中Advanced eDiscovery大的情况，以便可以添加更多项目来审阅集，并充分利用其他增加的限制。
-ms.openlocfilehash: d73ef8bd29de96fb845913e966e7d195d286b94f061e7fa492353ccfe773800f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 592b9d60a1275be0e12ddce238621d5ef02ab06e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255857"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>在预览版Advanced eDiscovery (大) 
 
-越来越多的组织将 Advanced eDiscovery 解决方案用于Microsoft 365电子数据展示流程。 这包括响应法规请求、调查和诉讼。 随着Advanced eDiscovery增加，常见的客户要求是增加可在单个网站集中管理的内容Advanced eDiscovery量。 为了帮助适应数据总量和总项目数的大小写大小显著增加的情况，现在可以在创建大案例时选择大Advanced eDiscovery格式。  
+越来越多的组织将 Advanced eDiscovery 解决方案用于Microsoft 365电子数据展示流程。 这包括响应法规请求、调查和诉讼。 随着Advanced eDiscovery增加，常见的客户要求是扩展可在单个网站集中管理Advanced eDiscovery量。 为了帮助适应数据总量和总项目数的大小写大小显著增加的情况，现在可以在创建大案例时选择大Advanced eDiscovery格式。  
 
 ## <a name="create-a-large-case"></a>创建大案例
 
@@ -33,15 +33,15 @@ ms.locfileid: "53836427"
 
 1. 转到 <https://compliance.microsoft.com> 并登录。
 
-2. 在导航窗格的左侧导航窗格中，Microsoft 365 合规中心"**电子数据展示>高级"。**
+2. 在页面的左侧导航窗格中，Microsoft 365 合规中心 **电子数据展示>高级"**。
 
-3. 在 **"Advanced eDiscovery"** 页上，单击"事例 **"** 选项卡，然后单击"**创建事例"。**
+3. 在 **"Advanced eDiscovery"** 页上，单击"**事例"** 选项卡，然后单击"**创建事例"。**
 
    将显示 **"新建电子数据展示案例** "飞出页。 " **大小写格式** "部分提供用于创建大案例的选项。 如果需要在短时间内收集大量内容，请选择此案例类型。
 
    !["新建电子数据展示案例"页面上的"大案例"选项](..\media\AeDLargeCases1.png)
 
-4. 命名案例后，选择"大案例" **选项** ，然后单击 **"保存"** 创建大案例。
+4. 命名案例后，选择"大案例 **"选项** ，然后单击 **"保存"** 创建大案例。
 
 ## <a name="benefits-of-large-cases"></a>大案例的好处
 
@@ -51,7 +51,7 @@ ms.locfileid: "53836427"
 
 - **集合**：在大型情况下，一个集合最多可以收集 1 TB 的数据。 
 
-   对于每个大的情况，集合设置将默认收集云附件和上下文Teams和Yammer内容。 这些设置有助于在调查中收集数字通信的完整图片。 对于 Teams 和 Yammer 上下文对话，大写格式会将基于时间 1：1、1：N 和 Channel 对话的快照转换为 html 脚本，以帮助提供对话上下文并减少基于聊天的内容产生的项目总数。  
+   对于每个大的情况，集合设置将默认收集云附件和上下文Teams和Yammer内容。 这些设置有助于在调查中收集数字通信的完整图片。 对于 Teams 和 Yammer 上下文对话，大写格式会将 1：1、1： N 和 Channel 对话的基于时间快照转换为 html 脚本，以帮助提供对话上下文并减少基于聊天的内容产生的项目总数。  
 
 - **审阅**：每个审阅集最多支持 1 TB 的预扩展内容。 其他元数据可用于筛选器和查询，包括团队名称、频道名称和内容Teams名称。 每个脚本将包括响应项目之前和之后基于时间的内容。 对于频道对话，将为响应式内容收集根帖子及所有回复。  
 
@@ -63,7 +63,9 @@ ms.locfileid: "53836427"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，将内容导出为 Loose 文件和 **PST** 的选项在大部分情况下不受支持， (选项当前显示为灰色) 。 此导出选项将很快受到支持。 有关导出内容的信息，请参阅从网站中的审阅集[导出Advanced eDiscovery。](export-documents-from-review-set.md)
+- 将内容导出为"松散"文件和 **PST** 的选项在大部分情况下不受支持， (选项显示为灰色) 。 即将支持适用于大案例的此导出选项。 有关导出内容的信息，请参阅从 Advanced eDiscovery[审阅集导出文档](export-documents-from-review-set.md)。
+
+- 在将保管人和非托管数据源添加到事例时发生的高级索引在大型情况下当前不受支持。 索引作业已创建，但无法完成。 大情况下的高级索引将很快受到支持。 有关高级索引功能的信息，请参阅 [保管人数据的高级索引](indexing-custodian-data.md)。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

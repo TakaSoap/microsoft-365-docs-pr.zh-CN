@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e4541bf39c034973057f53513afb7b5376d51b0ba7a2232f9fc5594ef64d76f0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 07b3b6174b8f99123cb4184c68fa22fdddf6ca8e
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255752"
 ---
 # <a name="run-antivirus-scan-api"></a>运行防病毒扫描 API
 
@@ -44,6 +44,11 @@ ms.locfileid: "53839539"
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
+
+> [!IMPORTANT]
+>
+> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
+> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -77,7 +82,7 @@ Content-Type|string|application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 ScanType|String|定义扫描的类型。 **必需**。

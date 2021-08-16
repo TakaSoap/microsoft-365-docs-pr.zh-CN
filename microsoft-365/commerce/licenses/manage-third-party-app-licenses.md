@@ -1,5 +1,5 @@
 ---
-title: 在管理中心管理 ISV Microsoft 365许可证
+title: 管理应用程序中的 ISV Microsoft 365 管理中心
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,16 +18,16 @@ ms.custom:
 - commerce_licensing
 search.appverid:
 - MET150
-description: 了解如何在管理中心内管理独立软件 (ISV) 应用的Microsoft 365许可证。
+description: 了解如何管理独立软件供应商 (ISV) 应用中的Microsoft 365 管理中心。
 ms.date: 06/15/2021
-ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 360b1a954d8b34fbc91b086fdab532685438b7874f998ef4ddb8b7b07732d15a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887523"
 ---
-# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>在管理中心管理 ISV Microsoft 365许可证
+# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>管理应用程序中的 ISV Microsoft 365 管理中心
 
 ISV 应用 (独立) 供应商是一款从除 Microsoft 外的软件供应商购买的应用。
 
@@ -37,7 +37,7 @@ ISV 应用 (独立) 供应商是一款从除 Microsoft 外的软件供应商购�
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>向用户或组分配 ISV 应用程序许可证
 
-1. 在管理Microsoft 365中，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
+1. In the Microsoft 365 管理中心， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. 选择要为其分配许可证的应用。
 3. 在许可证详细信息页面上，选择分配 **许可证**。
 4. 在 **"分配许可证"** 窗格中，开始键入用户或组的名称，然后从结果中选择它以将其添加到列表中。

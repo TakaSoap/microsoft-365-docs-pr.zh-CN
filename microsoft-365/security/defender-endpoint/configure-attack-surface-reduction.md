@@ -8,21 +8,21 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: jweston-1
+ms.author: v-jweston
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/02/2021
-ms.openlocfilehash: 4f1bb28be40b003060db1e33fb15070b4b38ca0f66288ca37a2e1533dc39ce2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.date: 08/11/2021
+ms.openlocfilehash: 79129d25c730f7948269c4291e53e3fc953af329
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256206"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>配置攻击面减少功能
 
@@ -42,7 +42,7 @@ Defender for Endpoint 包括多种攻击面减少功能。 若要了解更多信
 
    1. 查看 Windows 中的基本策略。 请参阅 [示例基本策略](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
    2. 请参阅Windows Defender[控件设计指南](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
-   3. 请参阅[部署 WDAC Windows Defender应用程序 (策略) 应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+   3. 请参阅使用[WDAC Windows Defender部署 (应用程序) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
 
 3. [启用受控文件夹访问权限](enable-controlled-folders.md)。
 

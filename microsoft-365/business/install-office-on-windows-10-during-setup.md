@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: 了解如何使用Microsoft 365 商业高级版，自动确保用户在所有设备上Office最新版本Windows 10版本。
-ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 869a44196e93ed0c9f7f6f64b21fe9b2302e9a48c4b0bdcdc3a09d28bb954d1c
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887535"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>在设置过程中，在 Windows 10 上安装 Office
 

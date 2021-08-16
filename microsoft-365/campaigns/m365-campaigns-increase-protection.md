@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关提高企业防护级别的Microsoft 365
-ms.openlocfilehash: a1f4714d5b7dcd8d6a22a07c118055e13b27e069
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 840c9ba2db5408d539722db45528a3db728698b311e55a7c3803cee32468aafa
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887635"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>增强针对 Microsoft 365 的威胁防护
 
@@ -80,7 +80,7 @@ ms.locfileid: "51398273"
 
 5. 为规则应用下表中的设置。 保留其余设置为默认设置，除非您要更改它们。
 
-6. 单击“保存”。
+6. 单击 **保存**。
 
 |设置|在打开文件附件之前Office警告|
 |---|---|
@@ -102,7 +102,7 @@ ms.locfileid: "51398273"
 
 若要创建邮件传输规则，请观看此 [简短视频](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) 或执行以下步骤：
 
-1. 在管理Microsoft 365中，单击"管理 **中心** \> **Exchange"。**
+1. 在"Microsoft 365 管理中心"中，单击"**管理中心** \> **Exchange"。**
 
 2. 在"**邮件流"** 类别中，单击"规则 **"。**
 
@@ -112,7 +112,7 @@ ms.locfileid: "51398273"
 
 5. 应用下表中的设置。 保留其余设置为默认设置，除非您要更改它们。
 
-6. 单击“保存”。
+6. 单击 **保存**。
 
 |设置|在打开文件附件之前Office警告|
 |---|---|
@@ -233,7 +233,7 @@ ms.locfileid: "51398273"
 
 2. 在 **设置适用于** 电子邮件以外的内容"下，选择 **"Microsoft 365 企业应用版、Office for iOS 和 Android"。**
 
-3. 单击“保存”。
+3. 单击 **保存**。
 
 要创建面向域中所有收件人的新策略，请执行：
 
@@ -241,7 +241,7 @@ ms.locfileid: "51398273"
 
 2. 应用下表中列出的设置。
 
-3. 单击“保存”。
+3. 单击 **保存**。
 
 |设置或选项|推荐设置|
 |---|---|
@@ -304,4 +304,4 @@ ms.locfileid: "51398273"
 
    ![与任何人共享日历忙/闲的屏幕截图。](../media/sharefreebusy.png)
 
-如果允许用户共享其日历，请参阅以下说明，了解如何从[](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)Outlook共享。
+如果允许用户共享其日历，请参阅以下说明[，了解如何从](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)Outlook 网页版。

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何管理安全附件。
-ms.openlocfilehash: 9afbdef2c7b400cf0bee5ae1e1ac3a9de6588cb8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6bcb0bf316da4496dda3baca94cea4249b73dd6c0b5745490fbe26f632e98271
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887727"
 ---
 # <a name="manage-safe-attachments"></a>管理安全附件
 

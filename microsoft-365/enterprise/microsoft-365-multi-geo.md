@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: 17fc2645f69a0d91c71c91718f321e5932d31bd2
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: a7bed2ddea25ccd808d0b92d6cdeb689c004d2a409ee553fb3862b539fab9c28
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864348"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 

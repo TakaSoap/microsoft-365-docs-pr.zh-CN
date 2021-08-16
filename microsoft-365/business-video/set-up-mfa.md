@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在手机上设置多重身份验证（有时也称为双重身份验证）。
-ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: e2cafa926f730d092debd1fde767bc74854658513dcb79cbefa64f13a5a39446
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53393471"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906751"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>在手机上设置多重身份验证
 
@@ -38,7 +38,7 @@ ms.locfileid: "53393471"
 
 ## <a name="try-it"></a>试一试！
 
-1. 登录 时 [https://office.com](https://office.com) ，你将看到"需要 **更多信息"** 提示。 选择“**下一步**”。
+1. 登录 时 [https://office.com](https://office.com) ，你将看到"需要 **更多信息"** 提示。 选择“下一步”。
 1. 在 **"步骤 1"****下，** 从"身份验证电话 **"** 下拉列表中选择"移动应用"。
 1. 在"希望如何使用移动应用？"下，选择要用于登录的方法：
     - 选择 **"接收验证通知"，** 直接从移动应用进行身份验证，其中可能包括指纹身份验证。

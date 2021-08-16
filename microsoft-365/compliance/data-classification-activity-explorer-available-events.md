@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器中可用的标签活动列表。
-ms.openlocfilehash: e9c1fadfda0d0e0fbfc5d942378035ea60ffaf266b64c117dfeb400411b30053
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5816bb897705e25ebf85b7f97df786cf2331bfb2
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796102"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255676"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>活动资源管理器中可用的标记活动
 
@@ -39,7 +39,7 @@ ms.locfileid: "53796102"
 |Source  |在活动资源管理器中报告 | 注释  |
 |---------|---------|---------|
 | Word、Excel、PowerPoint|是 |
-|Outlook| 是 |从 Win 32 |
+|Outlook| 是 | |
 |SharePoint联机，OneDrive|是 | |
 |Exchange        |是         | |
 |Azure 信息保护 (AIP) 统一客户端和 AIP 统一扫描程序 |是 |AIP *新标签* 操作映射到活动 *资源管理器中* 应用的标签   |
@@ -56,14 +56,14 @@ ms.locfileid: "53796102"
 
 - 在本机应用程序和 Web 应用程序中的保存Office捕获它。 
 - 在 Azure 信息保护统一客户端加载项和扫描程序实施中出现时捕获
-- 还可以通过"标签"事件类型字段和筛选器监视升级和 *降级标签操作* 。 对齐 *文本* 也会捕获，但 SharePoint Online 和 OneDrive。
-- 在应用上Office本机应用中Outlook敏感度标记会收集在文件保存/电子邮件发送操作之前生成的最后一个操作。 例如，如果用户在发送电子邮件之前多次更改电子邮件的标签，电子邮件发送时在电子邮件上找到的最后一个标签将捕获到 审核日志 然后在活动资源管理器中报告。 
+- 还可以通过"标签"事件类型字段和筛选器监视升级和 *降级标签操作* 。 除了 *SharePoint* Online 和 OneDrive 之外，还将捕获对齐文本。
+- 在 Office 上的本机应用中Outlook敏感度标记会收集在文件保存/电子邮件发送操作之前生成的最后一个操作。 例如，如果用户在发送前多次更改电子邮件的标签，电子邮件发送时在电子邮件上找到的最后一个标签将捕获到 审核日志 然后在活动资源管理器中报告。 
 
 
 |Source  |在活动资源管理器中报告|注释  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
-|Outlook         |是         |Win 32|
+|Outlook         |是         |
 |SharePoint联机、OneDrive         |是         |
 |Exchange         |是         |
 |AIP 统一客户端         |是         |
@@ -84,7 +84,7 @@ ms.locfileid: "53796102"
 |Source  |在活动资源管理器中报告 | 注释  |
 |---------|---------|---------| 
 |Word、Excel、PowerPoint         |是         |
-|Outlook         |是         |Win 32|
+|Outlook         |是         ||
 |SharePoint联机、OneDrive         |是         |
 |Exchange         |是         |
 |AIP 统一客户端         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作|
@@ -286,6 +286,6 @@ ms.locfileid: "53796102"
   
 - 向最终用户显示推荐的标签工具提示时，不会捕获它。 但是，如果用户选择应用建议的标签，标签将显示在"如何应用"字段下 *，显示为**"推荐"*  
 
-- 从 Sharepoint 和 sharepoint 降级的敏感度标签降级中，当前OneDrive。  
+- 从 Sharepoint 和 sharepoint 降级的敏感度标签降级时，当前OneDrive。  
 
 - 敏感信息类型当前不适用于 Word、Excel、PowerPoint 和 Outlook、SharePoint Online 和 OneDrive 中的自动标记OneDrive。

@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 9e1518d85a583af100ea2734fdc1f526599e55b82882733c4516c7f88dcc2451
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c2c81f1be38e0fe203b270eb132bff52be4482a7
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887897"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256258"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
-在Microsoft 365内使用Power BI使用情况分析，可深入了解组织如何采用 Microsoft 365。 你可以可视化和分析Microsoft 365数据、创建自定义报告并在组织内部共享见解。 您还可以深入了解特定区域或部门如何使用Microsoft 365。
+在Microsoft 365内进行Power BI使用情况分析，可深入了解组织采用组织中各种服务Microsoft 365。 你可以可视化和分析Microsoft 365数据、创建自定义报告并在组织内部共享见解。 您还可以深入了解特定区域或部门如何使用Microsoft 365。
   
-Microsoft 365使用情况分析，你可以访问预建仪表板，该仪表板提供过去 12 个月的跨产品视图，并包含大量预建报表。 每种报表为你提供特定的使用情况见解。 上一个完整日历月提供特定于用户的信息。
+Microsoft 365使用情况分析，可以访问预建仪表板，该仪表板提供过去 12 个月的跨产品视图，并包含大量预建报表。 每种报表为你提供特定的使用情况见解。 上一个完整日历月提供特定于用户的信息。
   
 支持 [模板](usage-analytics-data-model.md) 应用的数据模型包括 Active Directory 中的用户属性，从而能够在某些报告中进行透视。 包括以下 Active Directory 属性：位置、部门和组织。 
   
@@ -52,9 +52,9 @@ Microsoft 365使用情况分析包含以下各节中详述的很多报告。
 
 ## <a name="overview"></a>概述
 
-The Microsoft 365 overview report contains the following reports. 您可以通过选择报告页面顶部的选项卡来查看它们。 报告顶部显示的月份的所有值都指最新完整月份。
+本Microsoft 365概述报告包含以下报告。 您可以通过选择报告页面顶部的选项卡来查看它们。 报告顶部显示的月份的所有值都指最新完整月份。
 
-- **采用** &ndash; 提供采用趋势的汇总。 使用本节中的报告可了解用户如何采用Microsoft 365，以及各个服务的整体使用情况在一个月内的变化情况。 你可以查看用户是如何启用的、组织中有多少人正在使用 Microsoft 365、有多少是返回用户以及有多少用户第一次使用该产品。
+- **采用** &ndash; 提供采用趋势的汇总。 使用本节中的报告可了解用户如何采用Microsoft 365，以及各个服务的整体使用情况如何随着月份的变化而发生变化。 你可以查看用户是如何启用的、组织中有多少人正在使用 Microsoft 365、有多少是返回用户以及有多少用户第一次使用该产品。
 
 - **用法** &ndash; 提供一个深入了解活动用户的数量以及过去 12 个月内每个产品的关键活动。 使用本节中的报告可了解组织中人员如何使用Microsoft 365。
 
@@ -70,13 +70,13 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 激活和许可证页提供有关激活Microsoft 365报告;即，有多少用户已下载并激活Office应用以及你的组织已分配的许可证数。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
 
-- **激活** &ndash;跟踪服务 (，例如Microsoft 365 企业应用版、Project和Visio) 激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用此部分中的报告来查看用户已安装在应用中Office设备。 请注意，若要激活计划，用户必须安装应用，然后使用其帐户登录。
+- **激活** &ndash;跟踪服务 (，例如Microsoft 365 企业应用版、Project和Visio) 激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 还可使用此部分中的报表查看用户已安装在应用中Office设备。 请注意，若要激活计划，用户必须安装应用，然后使用其帐户登录。
 
-- **许可** &ndash; 此报告包含许可证类型的概述、分配了每种许可证类型的用户数以及每月的许可证分配分布。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
+- **许可** &ndash; 此报告概述了许可证类型、分配了每种许可证类型的用户数以及每月的许可证分配分配。 顶部月份值表示当前月，指标反映从该月开始到当前日期聚合的值。
 
 ## <a name="product-usage"></a>产品使用情况
 
-此报告包含每个 Microsoft 365 服务的单独报告，包括 Exchange、Microsoft 365 组、OneDrive、SharePoint、Skype、Teams 和 Yammer。 每个报告包含启用总数和活动用户报告总数、实体计数（如邮箱、网站、组和帐户）以及活动类型报告（如果适用）。 报告顶部显示的月份的所有值都指最新完整月份。
+此报告包含每个 Microsoft 365 服务的单独报告，包括 Exchange、Microsoft 365 组、OneDrive、SharePoint、Skype、Teams 和 Yammer。 每个报告都包含启用总数和活动用户报告总数、实体计数（如邮箱、网站、组和帐户）以及活动类型报告（如果适用）。 报告顶部显示的月份的所有值都指最新完整月份。
 
 ## <a name="user-activity"></a>用户活动
 
@@ -86,24 +86,24 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>此模板应用是通过购买提供还是免费？
 
-这不是免费的，你将需要一个Power BI Pro许可证。 有关详细信息， [请参阅安装](/power-bi/service-template-apps-install-distribute#prerequisites) 、自定义和分发模板应用的先决条件。
+它并非免费，你将需要一个Power BI Pro许可证。 有关详细信息， [请参阅安装](/power-bi/service-template-apps-install-distribute#prerequisites) 、自定义和分发模板应用的先决条件。
 
 若要与他人共享仪表板，请参阅共享仪表板[和报表。](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
 ### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>使用率摘要报告读取者角色是否足以查看使用情况分析？
 
-"使用率摘要报告读取者"角色仅允许访问使用情况分析中的租户Microsoft 365聚合。  我们建议任何负责变更管理和采用（但不是一定是 IT 管理员）的人使用报告读取者或使用情况摘要报告读取者角色。
+使用率摘要报告读取者角色仅允许访问租户级别聚合Microsoft 365使用情况分析。  我们建议任何负责变更管理和采用（但不是一定是 IT 管理员）的人使用报告读取者或使用情况摘要报告读取者角色。
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>谁可以连接到 Microsoft 365 使用情况分析？
 
-你必须是全局管理员、Exchange管理员、Skype for Business管理员 **、SharePoint** 管理员、全局读取者或报告读取者，才能建立与模板应用的连接。  有关详细信息 [，请参阅](../add-users/about-admin-roles.md) 关于管理员角色。
+你必须是全局管理员、Exchange管理员、Skype for Business管理员、SharePoint管理员、**全局** 读取者或报告读取者，才能建立与模板应用的连接。   有关详细信息 [，请参阅](../add-users/about-admin-roles.md) 关于管理员角色。
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Who自定义使用率分析报告吗？
 
-只有与模板应用建立初始连接的用户才能自定义报告或在 web 界面中Power BI报告。 有关[说明，请参阅自定义Microsoft 365使用情况分析](customize-reports.md)中的报表。
+只有与模板应用建立初始连接的用户才能自定义报告或在 Web 界面中Power BI报告。 有关[说明，请参阅Microsoft 365使用情况分析中的](customize-reports.md)报表。
 
 ### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>我能否仅从 Web 界面自定义Power BI报告？
 
-除了从 Power BI Web 界面自定义报告之外，用户还可使用 Power BI Desktop 直接连接到 Microsoft 365 报告服务以构建自己的报告。
+除了从 Power BI Web 界面自定义报告之外，用户还可使用 Power BI Desktop 直接连接到 Microsoft 365 报告服务来生成自己的报告。
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>如何获取与此仪表板关联的 pbit 文件？
 
@@ -119,7 +119,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可能与一组人员一起处理和自定义同一模板应用？
 
-能。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板[和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+是。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板[和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可以使用哪些时间范围的数据？
 
@@ -137,7 +137,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>何时应该使用模板应用以及使用情况报告？
 
-[活动报告](../activity-reports/activity-reports.md)是了解活动使用情况和采用情况的良好Microsoft 365。 模板应用将Microsoft 365使用情况数据和组织的 Active Directory 信息相结合，使管理员能够使用 Power BI 的可视化分析功能来分析数据集。 这使管理员不仅能够可视化和分析Microsoft 365数据，还可以按 Active Directory 属性（如部门、位置等）对其进行切片。他们还可以创建自定义报告，并在其组织内部共享见解。 
+[活动报告](../activity-reports/activity-reports.md)是了解活动使用情况和采用情况的良好Microsoft 365。 模板应用结合了Microsoft 365使用情况数据和组织的 Active Directory 信息，使管理员能够使用 Power BI 的可视化分析功能来分析数据集。 这使管理员不仅能够可视化和分析Microsoft 365数据，还可以按 Active Directory 属性（如部门、位置等）对其进行切片。他们还可以创建自定义报告，并在其组织内部共享见解。 
 
 ### <a name="how-often-is-the-data-refreshed"></a>数据的刷新频率是多高？ 
 
@@ -155,9 +155,9 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 模板应用的当前版本包括来自团队网站和SharePoint网站SharePoint活动。
 
-### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>组使用情况报告中包含哪些Microsoft 365组？
+### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>哪些组包含在"组Microsoft 365报告中？
 
-模板应用的当前版本包括Outlook组、Yammer组SharePoint使用情况。 它不包括与计划工具或 planner Microsoft Teams组。
+模板应用的当前版本包括Outlook组、Yammer组和SharePoint使用情况。 它不包括与计划工具或 planner Microsoft Teams组。
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>模板应用的更新版本何时可用？
 
@@ -165,7 +165,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>是否可以将模板应用的数据集成到现有解决方案中？ 
 
-模板应用中的数据可以通过预览版中的 Microsoft 365 API (检索) 。 在产品上发时，它们将被合并到 Microsoft Graph [API 中](https://go.microsoft.com/fwlink/p/?linkid=848843)。 
+模板应用中的数据可以通过预览版中的 Microsoft 365 API (检索) 。 当它们发货到生产环境时，它们将被合并到[Microsoft](https://go.microsoft.com/fwlink/p/?linkid=848843)Graph API 中。 
 
 ### <a name="are-there-plans-to-expand-the-template-app-to-show-usage-data-from-other-microsoft-products"></a>是否计划扩展模板应用以显示其他 Microsoft 产品的使用情况数据？
 
@@ -177,19 +177,19 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="is-it-possible-to-bring-in-additional-fields-from-active-directory"></a>是否可以从 Active Directory 引入其他字段？
 
-通过连接到 Microsoft 报告 API，可以对此数据进行其他自定义[Graph](https://go.microsoft.com/fwlink/p/?linkid=848843)从数据提取其他字段Azure Active Directory并联接到数据集。 
+通过连接到 Microsoft 报告 API，可以对此数据进行其他自定义Graph[从](https://go.microsoft.com/fwlink/p/?linkid=848843)数据提取其他字段Azure Active Directory并加入数据集。 
 
-### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>是否可能跨多个订阅聚合模板应用中的信息？
+### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>是否可跨多个订阅聚合模板应用中的信息？
 
 目前，模板应用适用于单个订阅，因为它与最初用于连接到它的凭据相关联。
 
-### <a name="is-it-possible-to-see-usage-by-plan-ie-e1-e3"></a>是否按计划查看使用情况， (E1、E3) ？
+### <a name="is-it-possible-to-see-usage-by-plan-ie-e1-e3"></a>是否可能按计划查看使用情况， (E1、E3) ？
 
 在模板应用中，使用情况按产品级别表示。 提供了分配给用户的各种订阅的数据，但无法将用户活动与分配给用户的订阅关联。
 
 ### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>是否可以将其他数据集集成到模板应用中？
 
-可以使用 Power BI Desktop 连接到预览Microsoft 365中的 (API) 引入与模板应用数据组合的其他数据源。
+可以使用 Power BI Desktop 连接到预览Microsoft 365中的 (API) ，以引入与模板应用数据组合的其他数据源。
 
 有关详细信息，请参阅 [自定义文档](customize-reports.md)。
 
@@ -203,7 +203,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>对于我的组织的相关数据，我有一个具体问题。我可以与谁联系？
 
-可以使用管理中心活动概述页面中的反馈按钮，也可以打开支持案例，获取有关模板应用的帮助。 [](../../business-video/get-help-support.md) 
+可以使用管理中心活动概述页面中的反馈按钮，也可以打开支持案例获取有关模板应用的帮助。 [](../../business-video/get-help-support.md) 
 
 ### <a name="how-can-partners-access-the-data"></a>合作伙伴如何访问数据？
 
@@ -217,4 +217,4 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 [启用 Microsoft 365 使用情况分析](enable-usage-analytics.md)（文章）\
 [导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中) \
-[查看视频视频](../../business-video/act-on-report.md)Microsoft 365 (中的) 
+[查看 Microsoft 365 (](../../business-video/act-on-report.md)视频) 

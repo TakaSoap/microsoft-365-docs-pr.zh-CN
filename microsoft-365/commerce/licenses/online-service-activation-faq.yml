@@ -12,65 +12,65 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: 开放计划联机服务激活常见问题解答
-  ms.openlocfilehash: b6e095733d53cad3b5d925ea4944fb3b5bcff92d
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: 943d9f3f7463f3d87b5489992c2281abd27092dca911322781a80a48dfce4f09
+  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58243966"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "53887475"
 title: 开放计划联机服务激活常见问题解答
 summary: ''
 sections:
-- name: 概要
+- name: 常规
   questions:
   - question: >
-      How do I activate online services purchased through the Open programs (Open, Open Value, and Open Value Subscription)?
+      如何激活通过开放计划购买的联机服务 (开放式、开放式值和开放式价值订阅) ？
     answer: >
-      Open customers can activate online services in two ways:
+      开放客户可以通过两种方式激活联机服务：
 
-      - After you order your online services through the Open program family, you’ll receive an email with a link and instructions to activate your services.
+      - 通过开放计划系列订购联机服务后，你将收到一封电子邮件，包含用于激活服务的链接和说明。
 
-      OR
+      或
 
-      - From the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) Open program customers can go to the Online Service Activation section and select the license to manage:
-
-
-      1. Select the manage activation link, and then select Start Activation. A product activation window opens and pre-populates the key.
-
-      2. Continue the remaining activation steps to complete product activation.
+      - 从 [批量许可服务中心 (VLSC) ](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) 开放计划客户可以转到"联机服务激活"部分并选择要管理的许可证：
 
 
-      Successful activation is complete within 48 hours on the Volume Licensing Online Service Activation website.
+      1. 选择"管理激活"链接，然后选择"开始激活"。 将打开产品激活窗口并预填充密钥。
 
-      For information about activating Microsoft Azure, see [Get Started with Azure in Open Licensing](https://azure.microsoft.com/offers/ms-azr-0111p/).
+      2. 继续执行剩余的激活步骤以完成产品激活。
+
+
+      在批量许可联机服务激活网站的 48 小时内完成成功激活。
+
+      有关激活 Azure Microsoft Azure的信息，请参阅入门[中的 Azure 进行激活](https://azure.microsoft.com/offers/ms-azr-0111p/)。
   - question: >
-      I don’t see my Azure order. What should I do?
+      我看不到 Azure 订单。 我该怎么办？
     answer: >
-      Azure orders are activated through keys. Get your keys through the Downloads and Keys tab in the VLSC and enter the key on the Get Started with [Azure in Open Licensing page](https://azure.microsoft.com/offers/azure-open/).
+      Azure 订单通过密钥激活。 通过 VLSC 中的"下载和密钥"选项卡获取密钥，在"开放入门[Azure"](https://azure.microsoft.com/offers/azure-open/)页面上输入密钥。
   - question: >
-      What is a work or school account and why do I need one to activate online services?
+      什么是工作或学校帐户，为什么需要一个帐户来激活联机服务？
     answer: >
-      A work or school account is intended for users to sign in to the organization Microsoft services. The sign-in typically uses the form username@orgname.com or username@orgname.onmicrosoft.com, where *orgname* is their organization email domain name.
+      工作或学校帐户供用户登录到组织Microsoft 服务。 登录通常使用 username@orgname.com 或 username@orgname.onmicrosoft.com 表单，其中 *orgname* 是组织电子邮件域名。
   - question: >
-      How do I know if my organization already has an account?
-    answer: "The organization name associated with your work or school account is taken from the License ID of the service you’re activating. If an account exists, the organization name is pre-populated in the Organizational Account set-up and already linked to your organization from the original online service order. The registration process validates whether your organization has an account. \n\nIf the field for **Company** is available, finish the registration process to sign in and activate the service. If this field is not available, you must register the organization. You must be a Global administrator to register an organization for an account.\n\nWhen you request a work or school account, your request is sent to your organization Tenant  administrator who grants or denies your registration request. Use this work or school account when you sign into Microsoft VLSC Online Service Activation.\n"
+      我如何知道我的组织是否已有帐户？
+    answer: "与工作或学校帐户关联的组织名称取自你正在激活的服务的许可证 ID。 如果存在帐户，组织名称将预先填充在组织帐户设置中，并且已根据原始联机服务订单链接到您的组织。 注册过程将验证你的组织是否有帐户。 \n\n如果\" **公司\"** 的字段可用，则完成注册过程以登录并激活服务。 如果此字段不可用，则必须注册组织。 您必须是全局管理员才能为帐户注册组织。\n\n当你请求工作或学校帐户时，你的请求将发送给你的组织租户管理员，该管理员授予或拒绝你的注册请求。 登录 Microsoft VLSC Online 服务激活时，请使用此工作或学校帐户。\n"
   - question: >
-      Why does the activation portal log me out after I activate an online service?
-    answer: "When activating Online Services under the Open License program, each agreement is activated separately. To ensure that licenses are not activated on the wrong tenant, each activation is handled in a separate session. \n"
+      为什么激活门户在激活联机服务后将我注销？
+    answer: "在开放许可计划下激活联机服务时，将单独激活每个协议。 为了确保许可证不会在错误的租户上激活，每次激活均在单独的会话中进行处理。 \n"
   - question: >
-      How does Online Service Activation work for Open License purchases?
+      联机服务激活对开放许可证购买如何工作？
     answer: >
-      Microsoft Online Services for Open Agreements has moved to a keyless handling activation model. After you order Open online services, you receive an email with a link and instructions to activate your services.
+      Microsoft Online Services开放式协议已移动到无键处理激活模型。 订购 Open Online 服务后，您将收到一封电子邮件，包含用于激活服务的链接和说明。
   - question: >
-      What if I want to assign my purchase to a different organization?
+      如果我想将购买分配给不同的组织，该做什么？
     answer: >
-      To assign products to a new organization, go through the sign-up steps to create a new organization. From there you can assign any seats or products you purchased.
+      若要将产品分配给新组织，请完成注册步骤以创建新组织。 你可以从该位置分配你购买的任何席位或产品。
   - question: >
-      I just activated my online service. Why does it still say I need to activate my service on the Manage Activations page on the Volume Licensing Service Center?
+      我刚刚激活了联机服务。 为什么仍显示我需要在批量许可服务中心的"管理激活"页上激活服务？
     answer: >
-      It can take up to 24 hours for the service you activated to appear as status **Activated** on the **Manage Activations** page.
+      激活的服务最多可能需要 24 小时才能在"管理激活"页上显示为"已 **激活"** 状态。
   - question: >
-      How do I contact support?
+      如何联系支持人员？
     answer: >
-      For phone or web for support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
-additionalContent: "\n## Additional resources\n\n- [Product keys FAQ](product-keys-faq.yml)\n\n- [Downloads FAQ](downloads-faq.yml)"
+      有关支持的电话或 Web，请参阅 [联系我们](/licensing/contact-us)。 Microsoft 在 24 小时内响应 Web 表单提交。
+additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [产品密钥常见问题解答](product-keys-faq.yml)\n\n- [下载常见问题解答](downloads-faq.yml)"

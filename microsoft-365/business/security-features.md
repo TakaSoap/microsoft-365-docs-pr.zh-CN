@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解设备中提供Microsoft 365 商业高级版保护电脑、手机和平板电脑上的数据。
-ms.openlocfilehash: 974204e100d3228f78406aca4acce67a889b08c3
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 50b74ed18d641e8de38db3284c3ef3abf319825f4f7dbe02b6575f6c0fbc6f85
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53887557"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级版安全性和合规性功能
 
 Microsoft 365 商业高级版提供简化的安全功能，以帮助保护电脑、手机和平板电脑上的数据。
     
-## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365管理中心安全功能
+## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 管理中心安全功能
 
 可以在管理中心管理Microsoft 365 商业高级版许多安全保护功能，这为你提供了打开或关闭这些功能的简化方法。 在管理中心中，可以执行以下操作：
   
@@ -49,7 +49,7 @@ Microsoft 365 商业高级版提供简化的安全功能，以帮助保护电脑
     
 - [为设备设置Windows 10设置](protection-settings-for-windows-10-pcs.md)。 
     
-    你可以启用[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)加密来帮助保护设备丢失或被盗时的数据，并启用 Windows[攻击防护](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection)，以针对勒索软件提供高级保护。 
+    你可以启用[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)加密以帮助保护设备丢失或被盗时的数据，并启用 Windows[攻击防护](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection)，以针对勒索软件提供高级保护。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
@@ -73,8 +73,8 @@ Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免�
 
 - **[Azure 门户中 Intune 的完整功能](/mem/intune/fundamentals/what-is-intune)**
     
-    通过访问 Azure 门户中的 Intune 管理中心，你可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 的高级设备管理，这些功能无法通过 Microsoft 365 管理中心提供。
-- **与 [Azure](/azure/active-directory/conditional-access/overview) AD 高级版 P1 计划相同的条件访问**
+    通过访问 Azure 门户中的 Intune 管理中心，你可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 的高级设备管理，这些功能无法通过 Microsoft 365 管理中心 实现。
+- **与 [计划相同的](/azure/active-directory/conditional-access/overview)条件Azure AD Premium P1访问**
 
 
     条件访问可帮助保护组织免受登录风险、来自意外网络或区域设置的访问尝试、来自风险设备类型的访问尝试等等。 条件访问策略是在完成第一次身份验证之后强制执行的，并且它使用来自第一个身份验证事件的信号来确定尝试的访问是应该批准、拒绝还是需要更多证明 (例如第二种标识) 。
@@ -108,10 +108,10 @@ Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免�
 
    Microsoft 365 商业高级版 Azure 信息保护计划[1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 通过此计划，你可以创建敏感度标签，通过"不要转发"和"不复制"等控件，你可以控制对电子邮件和文档中敏感信息的访问。 还可以将敏感信息分类为"机密"，并指定如何在企业外部和内部共享机密信息。 Enterprise级加密可轻松应用于电子邮件和文档，以保持你的信息的私密性。 还可以为应用安装 Azure 信息保护客户端Office加载项。 有关详细信息，请参阅 [Azure 信息保护统一标签客户端](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 对于敏感度标签 **，请安装** AzInfoProtection_UL.exe。
 
-可以在安全与合规中心和 Intune 管理中心 &amp; 内管理这些功能。 随着时间的推移，简化的控件将添加到管理Microsoft 365中心。
+可以在安全与合规中心和 Intune 管理中心 &amp; 内管理这些功能。 随着时间的推移，简化的控件将添加到Microsoft 365 管理中心。
   
     
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能是否在所有市场中可用？
   
@@ -123,6 +123,6 @@ Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免�
     
 2. 在左侧导航中，找到 **"管理中心"并** 展开它。 
     
-    ![在管理中心的左侧导航Microsoft 365，选择"管理中心"。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![In the left nav in the Microsoft 365 管理中心， choose Admin centers.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. 选择 **" &amp; 安全合规性** "以转到"安全 &amp; 与合规中心"。

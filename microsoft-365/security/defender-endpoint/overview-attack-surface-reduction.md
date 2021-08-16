@@ -9,8 +9,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: jweston-1
+ms.author: v-jweston
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: a736ff05bf729e69f89bdb9050a0c8dec2d033f74101fed7a2f46372872464e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 336fbbbbbe07747a8dbe12c46fd3bbe2483c08b9
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817687"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256175"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>攻击面减少功能概述
 
@@ -50,7 +50,7 @@ ms.locfileid: "53817687"
 |:---|:---|
 | [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
-| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件（ (要求Microsoft Defender 防病毒)  |
+| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑的应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (需要Microsoft Defender 防病毒)  |
 | [网络保护](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |

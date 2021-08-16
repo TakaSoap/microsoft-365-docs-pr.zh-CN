@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0d15f90c155a6ed14ccb29e5ab634a02b01d52b1
-ms.sourcegitcommit: d817a3aecb700f7227a05cd165ffa7dbad67b09d
+ms.openlocfilehash: f06fb5c425327156a4acf78e9eb3f6864b2317ff23b31cd90a8aded764cff8d5
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53651179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53889659"
 ---
 # <a name="investigation-resource-type"></a>调查资源类型
 
@@ -55,15 +55,15 @@ ms.locfileid: "53651179"
 
 属性|类型|说明
 :---|:---|:---
-id|字符串|调查实体的标识。 
+id|String|调查实体的标识。 
 startTime|DateTime Nullable|创建调查的日期和时间。
 endTime|DateTime Nullable|调查完成的日期和时间。
 cancelledBy|字符串|取消调查的用户/应用程序的 ID。
 investigationState|枚举|调查的当前状态。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
-statusDetails|字符串|有关调查状态的其他信息。
-machineId|字符串|执行调查的设备 ID。
-computerDnsName|字符串|执行调查的设备的名称。
-triggeringAlertId|字符串|触发调查的警报的 ID。
+statusDetails|String|有关调查状态的其他信息。
+machineId|String|执行调查的设备 ID。
+computerDnsName|String|执行调查的设备的名称。
+triggeringAlertId|String|触发调查的警报的 ID。
 
 ## <a name="json-representation"></a>Json 表示形式
 

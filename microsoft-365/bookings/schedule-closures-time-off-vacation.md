@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 从 Bookings 日历安排办公室关闭和员工请假，以便员工在指定的时间标记为不进行预订。
-ms.openlocfilehash: 6a4bf19a676b838bf164e3170b25659f5e76eba2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3d8c7b370331f0e4651864f961d6eceffc9d24cddef07810d765bfbc5db6e96b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53906969"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>安排公司关闭、休假和休假时间
 

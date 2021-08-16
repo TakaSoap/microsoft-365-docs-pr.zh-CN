@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 本文介绍隔离和访问控制如何工作，使多个租户的数据相互隔离Azure Active Directory。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 198e1f37a7378d14d5a4ad28d5bce9d480b2c49e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: e48ffaee5927010aa9e2cea2d231a194a33008d1d0c0ca7ed260fe6adc3c834b
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53864553"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365隔离和访问控制Azure Active Directory
 
