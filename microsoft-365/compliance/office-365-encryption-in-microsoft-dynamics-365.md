@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: 了解 Microsoft 如何使用加密技术在 Microsoft 数据库中和传输过程中静态保护 Microsoft Dynamics 365 中的客户数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e2691a2f02ecee5b346fcda3335ca7e5d4becc2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 22ac316240b0bf299351c48eef876d456662b23e4a856905ebdd92829c41a182
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885539"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 中的加密
 

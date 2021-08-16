@@ -1,5 +1,5 @@
 ---
-title: 将旧版电子数据展示搜索和保留迁移到Microsoft 365中心
+title: 将旧版电子数据展示搜索和保留迁移到Microsoft 365 合规中心
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,21 +14,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 0867e2b28bc693d50d5d79f4ba8e0a8cb89578d76853584f28c3db65ee7b692a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885644"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧版电子数据展示搜索和保留迁移到Microsoft 365中心
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧版电子数据展示搜索和保留迁移到Microsoft 365 合规中心
 
-Microsoft 365 合规性中心为电子数据展示的使用提供了改进的体验，包括：更高的可靠性、更好的性能以及针对电子数据展示工作流定制的许多功能，包括按重要方式组织内容的情况、审阅集以审阅内容和分析以帮助剔除数据进行审阅，例如近重复分组、电子邮件线程、主题分析和预测编码。
+Microsoft 365 合规中心 为电子数据展示的使用提供了改进的体验，包括：更高的可靠性、更好的性能以及针对电子数据展示工作流定制的许多功能，包括按重要情况组织内容的情况、审阅集（用于查看内容和分析）以帮助剔除数据进行审阅，如近重复分组、电子邮件线程、主题分析和预测编码。
 
-为了帮助客户利用新增和改进的功能，本文提供了有关如何将 In-Place 电子数据展示搜索和保留从 Exchange 管理中心迁移到 Microsoft 365 合规中心的基本指南。
+为了帮助客户利用新增和改进的功能，本文提供了有关如何将 In-Place 电子数据展示搜索和保留从 Exchange 管理中心迁移到 Microsoft 365 合规中心 的基本指南。
 
 > [!NOTE]
-> 由于存在许多不同的方案，因此本文提供了在合规性中心将搜索和保留转换到核心电子数据展示Microsoft 365指南。 使用电子数据展示事例并非始终必需，但是它们通过分配权限来控制谁有权访问组织中电子数据展示事例添加了额外的安全层。
+> 由于存在许多不同的方案，因此本文提供了转换搜索和保留搜索的常规指南，以在 Microsoft 365 合规中心。 使用电子数据展示事例并非始终必需，但是它们通过分配权限来控制谁有权访问组织中电子数据展示事例添加了额外的安全层。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -130,21 +130,21 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell New-ComplianceSearch示例](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤 8：在合规性中心验证Microsoft 365保留和搜索
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤 8：在查询中验证大小写、保留和Microsoft 365 合规中心
 
-若要确保所有设置正确，请转到 位于 的 Microsoft 365 合规中心，然后单击" [https://compliance.microsoft.com](https://compliance.microsoft.com) **电子数据展示>核心"。**
+若要确保所有设置正确，请转到 上显示 [https://compliance.microsoft.com](https://compliance.microsoft.com) Microsoft 365 合规中心，然后单击"电子数据展示>**核心"。**
 
 ![Microsoft 365合规中心电子数据展示](../media/MigrateLegacyeDiscovery7.png)
 
 在步骤 3 中创建的案例在核心电子 **数据** 展示页面上列出。 打开案例，然后注意你在"保留"选项卡上列出的步骤 4 **中创建的** 保留。您可以选择保留以查看飞出页面上的详细信息，包括应用保留的邮箱数和分发状态。
 
-![电子数据展示保留Microsoft 365合规中心](../media/MigrateLegacyeDiscovery8.png)
+![电子数据展示保留Microsoft 365 合规中心](../media/MigrateLegacyeDiscovery8.png)
 
 在步骤 7 中创建的搜索在案例的" **搜索** "选项卡上列出。
 
-![Microsoft 365合规中心中的电子数据展示案例搜索](../media/MigrateLegacyeDiscovery9.png)
+![电子数据展示服务中的电子数据展示Microsoft 365 合规中心](../media/MigrateLegacyeDiscovery9.png)
 
-如果你迁移In-Place电子数据展示搜索，但不将其与电子数据展示案例关联，它将在 Microsoft 365 合规中心的内容搜索页面上列出。
+如果迁移In-Place电子数据展示搜索，但不将其与电子数据展示案例关联，它将在"内容搜索"页上Microsoft 365 合规中心。
 
 ## <a name="more-information"></a>更多信息
 
@@ -170,4 +170,4 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- 有关合规性中心Microsoft 365，请参阅合规性Microsoft 365[概述](microsoft-365-compliance-center.md)。
+- 有关此Microsoft 365 合规中心，请参阅概述[Microsoft 365 合规中心。](microsoft-365-compliance-center.md)

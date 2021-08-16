@@ -1,5 +1,5 @@
 ---
-title: 开始使用应用治理
+title: 应用治理支持的区域
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 应用治理可用的国家/地区列表。
-ms.openlocfilehash: 4e9f5425d111c0a21946c78dfdbeebaedd56ac6ff23fb6c279a0c5e793f1674c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 926c2069a0fb53cb6211c6c686e2afc5b8bdc10b
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836407"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255381"
 ---
 # <a name="app-governance-supported-countries"></a>应用治理支持的国家/地区
 

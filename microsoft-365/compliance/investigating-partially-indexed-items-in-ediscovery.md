@@ -18,16 +18,16 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何管理部分索引项目 (也称为未编制索引) Exchange、SharePoint和OneDrive for Business索引项。
-ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: bd3e9f1da3b3404f1ca99d44c01fc4fa85ad391c3b0ede8889319044072bed8a
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53860201"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>调查电子数据展示中的部分索引项
 
-从合规性中心运行电子数据展示搜索Microsoft 365运行搜索时，自动在估计的搜索结果中包含部分索引项。 部分索引项目Exchange邮箱项目和文档SharePoint OneDrive for Business由于某种原因未完全编制索引进行搜索的邮箱项目和文档。 大多数电子邮件和网站文档都已成功编制索引，因为它们在电子邮件 [的索引限制范围内](limits-for-content-search.md#indexing-limits-for-email-messages)。 但是，某些项目可能会超出这些索引限制，并且将被部分索引。 以下是在运行电子数据展示搜索时无法对项目编制索引并作为部分索引项返回的其他原因：
+从搜索运行电子数据展示搜索Microsoft 365 合规中心运行搜索时，自动将部分索引项包括在估计的搜索结果中。 部分索引项目Exchange邮箱项目和文档SharePoint OneDrive for Business由于某种原因未完全编制索引进行搜索的邮箱项目和文档。 大多数电子邮件和网站文档都已成功编制索引，因为它们在电子邮件 [的索引限制范围内](limits-for-content-search.md#indexing-limits-for-email-messages)。 但是，某些项目可能会超出这些索引限制，并且将被部分索引。 以下是在运行电子数据展示搜索时无法对项目编制索引并作为部分索引项返回的其他原因：
   
 - 电子邮件具有一个附加文件，没有有效的处理程序，如图像文件;这是部分索引电子邮件项目的最常见原因。
 

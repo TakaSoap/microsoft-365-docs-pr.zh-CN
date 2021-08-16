@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 925e76c595b8714ebc0aaf41329b5edb94967434b6acce46431d326047d4c572
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deac72ddab08d180daf1c71885217c2a93ba1938
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874109"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255545"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用Windows 10管理器载入新设备
 
@@ -70,11 +70,11 @@ ms.locfileid: "53874109"
 请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Microsoft Defender for Endpoint 的各种路径。 
 
 
-1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
+1. 打开 Configuration Manager 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
 
     1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
     
-    1. 选择Windows 10操作系统。
+    1. 选择Windows 10作为操作系统。
 
     1. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
     
@@ -87,10 +87,7 @@ ms.locfileid: "53874109"
     a. 选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> 在 [OOBE ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 体验阶段，Defender for Endpoint 不支持 (载入) 阶段。 确保用户在运行完安装或升级Windows OOBE。
-
-> [!TIP]
-> 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
+> 在 OOBE 体验阶段，Defender for Endpoint [不支持 (载入) ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 阶段。 确保用户在运行完安装或升级Windows OOBE。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
 > 如果由于挂起的 OOBE (或其他任何原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
@@ -101,14 +98,14 @@ ms.locfileid: "53874109"
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以说明当通过 Microsoft 365 Defender 提交文件进行深入分析时是否可以从设备收集示例。
 
 > [!NOTE]
 > 这些配置设置通常通过 Configuration Manager 完成。
 
 可以在 Configuration Manager 中为配置项设置合规性规则，以更改设备上的示例共享设置。
 
-此规则应为 *修正合规性* 规则配置项，用于设置目标设备上注册表项的值，以确保它们有投诉。
+此规则应为修正 *合规性* 规则配置项，用于设置目标设备上注册表项的值以确保它们合规。
 
 通过以下注册表项设置配置：
 
@@ -161,13 +158,17 @@ Value: 0 or 1
 
 #### <a name="network-protection"></a>网络保护
 
-在审核或阻止模式下启用网络保护之前，请确保你已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
+在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
 #### <a name="controlled-folder-access"></a>受控文件夹访问
 
 在审核模式下启用该功能至少 30 天。 在此时间段后，检查检测并创建允许写入受保护目录的应用程序列表。
 
 有关详细信息，请参阅评估 [受控文件夹访问权限](evaluate-controlled-folder-access.md)。
+
+## <a name="run-a-detection-test-to-verify-onboarding"></a>运行检测测试以验证载入
+载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
+
 
 ## <a name="offboard-devices-using-configuration-manager"></a>使用 Configuration Manager 的载出设备
 
@@ -184,8 +185,8 @@ Value: 0 or 1
 
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
-    1. 在导航窗格中，**选择"设置**  >    >  **终结点设备管理**  >   **""载出"。**
-    1. 选择Windows 10操作系统。
+    1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >   **""载出"。**
+    1. 选择Windows 10作为操作系统。
     1. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
     1. 选择 **"下载程序包**"，然后保存.zip文件。
 
@@ -200,9 +201,9 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>监视设备配置
 
-如果你正在使用当前分支Microsoft Endpoint Manager，请使用 Configuration Manager 控制台中的内置 Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
+如果你使用的是当前分支Microsoft Endpoint Manager，请使用 Configuration Manager 控制台中的内置 Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
+如果使用 2012 R2 配置System Center，则监控由两部分组成：
 
 1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
 
@@ -240,7 +241,7 @@ Value: "1"
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用Windows 10载入设备](configure-endpoints-gp.md)
+- [使用Windows 10策略载入设备](configure-endpoints-gp.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)

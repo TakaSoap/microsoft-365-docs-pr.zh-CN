@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何管理组、Microsoft 365、Teams、SharePoint和Yammer 中的相关Yammer。
-ms.openlocfilehash: 3b526297a3f131364a2098b92de09245ab45feb8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c18dec0f2394273482366dcf230489b13b1b2e90e4d8459a006bc31fabbc6a0
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883686"
 ---
 # <a name="what-is-collaboration-governance"></a>什么是协作管理？
 
@@ -59,7 +59,7 @@ Microsoft 365组包括一套链接资源，用户可使用这些资源进行通�
 |[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|对于与组相关的计划事件|
 |[收件箱](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|对于团队成员之间的电子邮件对话。 此收件箱具有电子邮件地址，可以设置为接受来自组外部甚至组织外部人员的邮件，这非常像传统通讯组列表。|
 |[OneNote 笔记本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|收集想法、研究和信息|
-|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
+|[计划表](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
 |[Power BIWorkspace](/power-bi/collaborate-share/service-new-workspaces)|包含仪表板和报表的数据协作空间|
 |[Project和路线图](https://support.microsoft.com/project)|基于 Web 的项目管理工具|
 |[SharePoint 团队网站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|与组有关的信息、链接和内容的中央存储库|
@@ -148,9 +148,9 @@ Microsoft 365组包括各种管理控制，包括过期策略、命名约定和�
 |域允许/阻止|将与组织外部人员共享限制为来自特定域的用户。|Microsoft 365 E5 或 E3|
 |自助式网站创建|允许或阻止用户创建自己的SharePoint网站。|Microsoft 365 E5 或 E3|
 |受限制的网站和文件共享|将网站、文件和文件夹共享限制为特定安全组的成员。|Microsoft 365 E5 或 E3|
-|受限制的组创建|将团队和组创建限制为特定安全组的成员。|Microsoft 365 E5 Azure AD 许可证或 Azure AD 高级版或 Azure AD Basic EDU 许可证的 E3|
-|组命名策略|对组和团队名称强制实施前缀或后缀。|Microsoft 365 E5 Azure AD 许可证或 Azure AD 高级版或 Azure AD Basic EDU 许可证的 E3|
-|组过期策略|将非活动组和团队设置为过期，并指定时间段后删除。|Microsoft 365 E5 Azure AD 许可证的 E3 高级版 E3|
+|受限制的组创建|将团队和组创建限制为特定安全组的成员。|Microsoft 365 E5或 E3 Azure AD Premium Azure AD 基本 EDU 许可证|
+|组命名策略|对组和团队名称强制实施前缀或后缀。|Microsoft 365 E5或 E3 Azure AD Premium Azure AD 基本 EDU 许可证|
+|组过期策略|将非活动组和团队设置为过期，并指定时间段后删除。|Microsoft 365 E5许可证的 E3 Azure AD Premium E3|
 |按组的来宾访问|允许或阻止每个组与组织外部人员共享团队和组。|Microsoft 365 E5 或 E3|
 
 ## <a name="collaboration-governance-planning-step-by-step"></a>协作治理规划分步规划
@@ -174,7 +174,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Microsoft 365。
 
 |培训：|管理信息保护和治理|
 |:---|:---|
-|![信息保护培训图标](../media/information-protection-governance.svg)|当前生成的数据量以前所未有的速度增长，员工希望在任何位置完成工作，并且法规环境正在不断发生变化。 Microsoft 最小化威胁的解决方案可帮助组织在保护数据安全和保持员工效率之间实现适当的平衡。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<br><br>5 小时 13 分钟 - 学习路径 - 7 个模块|
+|![信息保护培训图标](../media/information-protection-governance.svg)|当前生成的数据量以前所未有的速度增长，员工希望在任何位置完成工作，并且法规环境正在不断发生变化。 Microsoft 最小化威胁的解决方案可帮助组织在保护数据安全和保持员工效率之间实现适当的平衡。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<br><br>5 小时 13 分钟 - Learning 路径 - 7 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-compliance-information-governance/introduction/)
@@ -183,7 +183,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Microsoft 365。
 
 |培训：|使用 Microsoft 365 保护企业信息|
 |:---|:---|
-|![Teams培训图标](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<br><br>1 小时 - 学习路径 - 5 个模块|
+|![Teams培训图标](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<br><br>1 小时 - Learning 路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-security-info-overview/introduction/)
@@ -192,7 +192,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Microsoft 365。
 
 |培训：|展示有关 Microsoft 365 安全和合规性功能的基本知识|
 |:---|:---|
-|![安全与合规培训图标](../media/microsoft-365-security-and-compliance-capabilities.svg)|了解 Microsoft 365 安全中心和合规性解决方案领域，以及可帮助企业保护企业安全和满足法规要求的功能。 如果你不熟悉基本的云计算概念，我们建议你学习云概念 [- 云计算原则](/learn/modules/principles-cloud-computing/index)。<br><br>3 小时 11 分钟 - 学习路径 - 8 个模块|
+|![安全与合规培训图标](../media/microsoft-365-security-and-compliance-capabilities.svg)|了解 Microsoft 365 安全中心和合规性解决方案领域，以及可帮助企业保护企业安全和满足法规要求的功能。 如果你不熟悉基本的云计算概念，我们建议你学习云概念 [- 云计算原则](/learn/modules/principles-cloud-computing/index)。<br><br>3 小时 11 分钟 - Learning 路径 - 8 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/what-is-m365/1-introduction/)
@@ -236,7 +236,7 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 
 - [接受Microsoft 365组](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
-**管理**
+**治理**
 
 了解如何设置组过期生命周期、命名策略、分类标签、与外部来宾的协作以及管理组创建权限。
 

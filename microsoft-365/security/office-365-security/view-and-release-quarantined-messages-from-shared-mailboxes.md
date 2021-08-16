@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 用户可以了解如何查看和操作发送到他们有权访问的共享邮箱的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 90c4476d2c882c98b6b24a738adc2d9e2a9d6244994bd8f82c36b0d1f544c488
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883861"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>查看并释放共享邮箱中的隔离邮件
 
@@ -35,8 +35,8 @@ ms.locfileid: "52933045"
 
 现在，用户不再需要自动映射来管理发送到共享邮箱的隔离邮件。 它只起作用。 有两种不同的方法来访问发送到共享邮箱的隔离邮件：
 
-- 如果管理员已启用反[](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)垃圾邮件策略中的最终用户垃圾邮件通知，则有权访问共享邮箱中的最终用户垃圾邮件通知的任何用户都可以单击通知中的"审阅"按钮，转到 Microsoft 365 Defender门户中的隔离。 请注意，此方法仅允许用户管理发送到共享邮箱的隔离邮件。 用户无法在此上下文中管理自己的隔离邮件。
-- 用户可以转到[Defender 门户中的Microsoft 365隔离。](find-and-release-quarantined-messages-as-a-user.md) 默认情况下，只显示发送给用户的邮件。 但是，用户可以将"排序结果" ("邮件 **ID"** 按钮（默认为) ）更改为"收件人电子邮件地址"，输入共享邮箱电子邮件地址，然后单击"刷新"查看发送到共享邮箱的隔离邮件。
+- 如果管理员已启用反[](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)垃圾邮件策略中的最终用户垃圾邮件通知，则有权访问共享邮箱中的最终用户垃圾邮件通知的任何用户都可以单击通知中的"审阅"按钮，以转到 Microsoft 365 Defender门户中的隔离邮箱。 请注意，此方法仅允许用户管理发送到共享邮箱的隔离邮件。 用户无法在此上下文中管理自己的隔离邮件。
+- 用户可以转到[Microsoft 365 Defender 门户中的隔离。](find-and-release-quarantined-messages-as-a-user.md) 默认情况下，只显示发送给用户的邮件。 但是，用户可以将"排序结果" ("邮件 **ID"** 按钮（默认为) ）更改为"收件人电子邮件地址"，输入共享邮箱电子邮件地址，然后单击"刷新"查看发送到共享邮箱的隔离邮件。
 
   ![按收件人电子邮件地址对隔离邮件进行排序。](../../media/quarantine-sort-results-by-recipient-email-address.png)
 

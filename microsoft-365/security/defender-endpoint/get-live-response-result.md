@@ -1,7 +1,7 @@
 ---
 title: 获取实时响应结果
 description: 了解如何按其索引检索特定实时响应命令结果。
-keywords: api， 图形 api， 受支持的 api， 上传到库
+keywords: api， 图形 api， 受支持的 api， 上载到库
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3240b0c56b94c365f070935542ae100a94c0375847fa097cb29dc9886b210b79
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d76c34ae2c610933285f93e349459497de7cb79
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255521"
 ---
 #  <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -55,7 +55,7 @@ ms.locfileid: "53829347"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的版本Windows。**
+- **验证您运行的是受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
@@ -68,7 +68,7 @@ ms.locfileid: "53829347"
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
 
 ## <a name="permissions"></a>权限
 
@@ -98,16 +98,16 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 正常响应代码，该对象包含指向 value 属性中的命令 *结果* 的链接。 此链接的有效期为 30 分钟，应该立即用于将程序包下载到本地存储。 另一个调用可以重新创建已过期的链接，并且无需再次运行实时响应。
+如果成功，此方法返回 200 正常响应代码，该对象包含指向 value 属性中命令 *结果* 的链接。 此链接的有效期为 30 分钟，应该立即用于将程序包下载到本地存储。 另一个调用可以重新创建已过期的链接，并且无需再次运行实时响应。
 
 *Runscript 脚本属性：*
 
-|属性|说明|
+|属性|描述|
 |---|---|
-|name|已执行的脚本名称|
+|script_name|已执行的脚本名称|
 |exit_code|已执行的脚本退出代码|
 |script_output|已执行的脚本标准输出|
-|script_error|已执行的脚本标准错误输出|
+|script_errors|已执行的脚本标准错误输出|
 
 ## <a name="example"></a>示例
 
@@ -142,7 +142,7 @@ Content-type： application/json
     "exit_code": 0,
     "script_output": "Transcript started, output file is C:\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection\\Temp\\PSScriptOutputs\\PSScript_Transcript_{TRANSCRIPT_ID}.txt
 C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
-    "script_error":""
+    "script_errors":""
 }
 ```
 

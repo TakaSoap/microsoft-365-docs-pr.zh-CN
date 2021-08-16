@@ -1,5 +1,5 @@
 ---
-title: 创建托管有来宾的 B2B 外联网
+title: 创建有托管来宾的 B2B 外网
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,14 +17,14 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何使用合作伙伴组织的托管来宾创建 B2B Extranet 站点或团队。
-ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ab88ba8b12c6eb53bc3c0b3c4b22cb09919ce38256b68fa65256e64d7ff81bdd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53883769"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>创建有托管来宾的 B2B 外网
 
 可以使用["Azure Active Directory](/azure/active-directory/governance/entitlement-management-overview)管理"创建 B2B Extranet，以与使用"授权管理"Azure Active Directory。 这允许用户在 Extranet 网站或团队中自行注册，并可以通过审批工作流接收访问权限。
 
@@ -36,7 +36,7 @@ ms.locfileid: "52538239"
 
 ## <a name="license-requirements"></a>许可要求
 
-使用此功能需要 Azure AD 高级版 P2 许可证。 
+使用此功能需要一个Azure AD Premium P2许可证。 
 
 专用云（如 Azure Germany 和 Azure China 21Vianet）目前不可用。
 

@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 2b2cbfdddce8f26a64b1def5fa89ead6d7fb0557697363f6d285d8ee82ea353f
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: c3ec44716cd466b3bfe4440c6cdf63fe00376f75
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803412"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255194"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows 10 中的 Microsoft Defender 防病毒
 
@@ -74,7 +74,7 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 
    - **EDR 阻止模式** 意味着Microsoft Defender 防病毒正在运行，并且在阻止模式下 [终结点检测和响应 （EDR），](edr-in-block-mode.md)（Microsoft Defender for Endpoint 中的功能）已启用。
 
-   - **SxS 被动模式** 意味着Microsoft Defender 防病毒与其他防病毒/反恶意软件产品一起运行，并且[使用有限定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)。
+   - **SxS 被动模式** 意味着Microsoft Defender 防病毒与其他防病毒/反恶意软件产品一起运行，并且 [使用有限定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)。
 
 > [!TIP]
 > 要了解 Get-MpComputerStatus PowerShell cmdlet 的详细信息，请参阅参考文章 [get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。

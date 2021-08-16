@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
-ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 39c8e9ec5a94cf9f50ac4d98ac8a789e6f007949
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538861"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255118"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
@@ -46,7 +46,7 @@ ms.locfileid: "53538861"
 
 邮箱和公用文件夹都使用“[可恢复的项目](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)”文件夹来保留项目。 只有已分配电子数据展示权限的人员才可以查看其他用户的“可恢复的项目”文件夹中的项目。
   
-当用户从“已删除邮件”文件夹以外的文件夹中删除邮件时，默认情况下，该邮件将移动到“已删除邮件”文件夹中。当用户从“已删除邮件”文件夹中删除邮件时，该邮件将移动到“可恢复的项目”文件夹中。但是，用户可以软删除 (Shift+Delete) 任何文件夹中的邮件，这会避开“已删除邮件”文件夹，直接将邮件移至“可恢复的项目”文件夹中。
+当用户从“已删除邮件”文件夹以外的文件夹中删除邮件时，默认情况下，该邮件将移动到“已删除邮件”文件夹中。但是，用户可以软删除 (Shift+Delete) 任何文件夹中的邮件，这会避开“已删除邮件”文件夹，直接将邮件移至“可恢复的项目”文件夹中。
   
 将保留设置应用于 Exchange 数据时，计时器作业会定期评估“可恢复的项目”文件夹中的项目。 如果某项目与至少一个保留策略或保留标签的规则不匹配，则将从“可恢复的项目”文件夹中永久删除该项目（亦称为“硬删除”）。
 
@@ -81,11 +81,19 @@ ms.locfileid: "53538861"
 
 2. **如果项目在配置的期限内遭到删除**：项目会立即移到“可恢复的项目”文件夹中。 如果用户从“可恢复的项”文件夹中删除项或清空此文件夹，该项将被永久删除。 否则，项会在“可恢复的项”文件夹中保留 14 天后永久删除。 
 
+## <a name="user-notification-of-expiry-date"></a>过期日期的用户通知
+
+与其他 Microsoft 365 工作负载的保留策略不同，Exchange 的保留策略会显示用户状态，方法是在每封电子邮件的顶部显示项目到期日期最短的保留策略的名称以及该项目的计算到期日期。如果保留策略不会删除项（仅保留），则用户不会看到此通知。
+
+如果将保留标签应用于电子邮件，则始终显示该标签的名称和相应的到期日期，并将替换应用于邮箱的任何保留策略中的名称和日期。
+
+请记住，在此上下文中，电子邮件删除的到期日期是用户想要电子邮件自动移动到“可恢复邮件”文件夹（如果尚不存在）的日期。 “可恢复邮件”文件夹中的电子邮件不会被永久删除，但如果它们受任何保留设置的约束而保留，或者出于法律或调查原因处于电子数据展示保留状态，则出于合规性目的，将会保留这些电子邮件。
+
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
 如果用户离开组织，且该用户邮箱包含在保留策略内，则在删除此用户的 Microsoft 365 帐户后，该邮箱变成非活动邮箱。 非活动邮箱的内容仍受在邮箱变成非活动状态之前对邮箱应用的所有保留策略约束，且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
 
-当由于数据已永久删除或保留期已过期而不再应用保留设置时，Exchange 管理员现在可以 [删除邮箱](delete-an-inactive-mailbox.md)。 在此方案中，不会自动删除非活动邮箱。
+当保留设置由于数据已永久删除或保留期已过期而不再应用时，Exchange 管理员现在可以[删除非活动的邮箱](delete-an-inactive-mailbox.md)。 在此方案中，不会自动删除非活动邮箱。
 
 ## <a name="configuration-guidance"></a>配置指南
 

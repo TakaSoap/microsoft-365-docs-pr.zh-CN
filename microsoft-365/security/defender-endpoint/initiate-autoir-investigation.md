@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b69acd8bb60c6b4c2d254c9cd1ca5aef7de69cf583fa02e56d799076c84d372a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9da8f0c15fdffbecb701955be10289ff19f28d1f
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868991"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255227"
 ---
 # <a name="start-investigation-api"></a>启动调查 API
 
@@ -54,8 +54,8 @@ ms.locfileid: "53868991"
 目前，AIR 仅支持以下操作系统版本：
 
 - Windows Server 2019
-- Windows 10版本 1709 (OS 内部版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
+- Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
+- Windows 10版本 1803 (操作系统版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 
 ## <a name="permissions"></a>权限
@@ -90,7 +90,7 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 

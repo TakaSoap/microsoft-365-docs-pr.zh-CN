@@ -1,5 +1,5 @@
 ---
-title: 双字节字符集的 Microsoft 365 合规性支持发行说明（预览版）
+title: 双字节字符集的 Microsoft 365 合规中心支持发行说明
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,23 +14,23 @@ search.appverid:
 - MOE150
 - MET150
 description: 双字节字符集支持的发行说明。
-ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 9f56441e6ba82b1936033c6f4a810ea2afeab72cc72b6337f992eb0bb52fd231
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885551"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>双字节字符集支持发行说明（预览版）
 
- Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
+ Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持：
 
 - 简体中文
 - 繁体中文
 - 韩语
 - 日语
 
-此支持适用于敏感信息类型和关键字字典，并且将在数据丢失防护、通信合规性、Exchange Online、SharePoint Online、OneDrive for Business 和 Teams 解决方案中有所体现。
+此支持适用于敏感信息类型和关键字词典，并将在数据丢失防护（适用于 Exchange Online、SharePoint Online、OneDrive for Business 和 Teams）、通信合规性、Office 应用中的自动标签和 Microsoft 云应用安全中有所体现。
 
 ## <a name="known-issues"></a>已知问题
 
@@ -47,3 +47,5 @@ ms.locfileid: "48681498"
   - “附件包含其中任意字词”
 
 相反，建议使用可检测邮件和附件中的模式的关键字字典创建自定义敏感信息类型 (SIT)，并将此自定义 SIT 作为通信合规性策略条件。
+
+

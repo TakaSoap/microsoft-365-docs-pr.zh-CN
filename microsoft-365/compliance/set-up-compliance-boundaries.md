@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界创建逻辑边界，以控制电子数据展示管理员可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 956260de2b522e2a84e6dffbf1fa50de4e7ced5e2dd9505534d35fed1450bcfd
+ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53885565"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>设置电子数据展示调查的合规性边界
 
@@ -295,7 +295,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
   
 **搜索权限筛选器是否适用于电子数据展示案例保留、Microsoft 365保留策略或 DLP？**
   
-否，此时不会。
+否，目前不可以。
   
 **如果指定一个控制内容导出位置的区域，但该区域中SharePoint组织，我能否仍搜索SharePoint？**
   

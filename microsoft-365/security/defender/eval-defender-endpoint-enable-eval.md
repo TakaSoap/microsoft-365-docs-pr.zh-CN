@@ -1,6 +1,6 @@
 ---
 title: 启用 Microsoft Defender 终结点评估
-description: 启用Microsoft 365 Defender试用实验室或试验环境，包括检查许可证状态和载入 enpoint
+description: 启用Microsoft 365 Defender试用实验室或试验环境，包括检查许可证状态和载入体验
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b57026ab2af53cbd941ecd3f4e9f9e6dff7f99c7eb44e0b1b9b2ffb462408415
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902222"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255445"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -47,10 +47,10 @@ ms.locfileid: "53902222"
 
 ## <a name="step-1-check-license-state"></a>步骤 1. 检查许可证状态
 
-首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理中心门户 **Microsoft Azure此操作**。
+首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
 
 
-1. 若要查看许可证，请转到 Microsoft Azure **门户** 并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像](../../media/defender/atp-licensing-azure-portal.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "53902222"
 
 为了评估 Microsoft Defender for Endpoint，我们建议选择Windows 10一组设备进行评估。 
 
-规划 [部署](../defender-endpoint/deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的常规步骤。  
+规划 [部署](../defender-endpoint/deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的一般步骤。  
 
 观看此视频，快速概览载入过程并了解可用的工具和方法。
 
@@ -86,7 +86,7 @@ ms.locfileid: "53902222"
 
 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 [设置适用于终结点的 Microsoft Defender 的试点](eval-defender-endpoint-pilot.md)
  
 返回到评估 Microsoft [Defender for Endpoint 的概述](eval-defender-endpoint-overview.md)

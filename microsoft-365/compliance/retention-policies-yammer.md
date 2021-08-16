@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 46397c4e0c414537b3f737105ce2d60e2c2ec7d366763b174a6ab377db4ee9c2
-ms.sourcegitcommit: 9410944dab4a34c38ee420e66b14c58ca037f31c
+ms.openlocfilehash: 63583fcdb0860bfba60d8847e9130f671d916bbf
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2021
-ms.locfileid: "57803448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255258"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -43,7 +43,7 @@ ms.locfileid: "57803448"
 
 可以使用 Yammer的保留策略删除 Yammer 用户消息和社区消息，除了消息中的文本外，出于合规性原因，还可以保留以下项目：超文本链接和指向其他 Yammer 消息的链接。
 
-用户消息包括聊天中所有人员的姓名，社区消息包括社区名称和消息标题（如有提供）。
+用户消息包括对话中所有人员的姓名，社区消息包括社区名称和消息标题（如有提供）。
 
 使用 Yammer 的保留策略时，不会保留其他人以表情符号的形式做出的反应。
 

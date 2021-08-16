@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 326910f4b556837b319c53cb1d257af09efbbe7a6ba8b92a4784d38a50b43fbe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
+ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792898"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255175"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>自动调查和响应Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "53792898"
 **适用于：**
 - Microsoft 365 Defender
 
-如果你的组织[正在使用Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动或项目Microsoft 365安全中心内收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender包括自动调查和响应 (AIR) 功能，可帮助安全运营团队更有效地应对威胁。
+如果组织正在使用[Microsoft 365 Defender，则](microsoft-365-defender.md)每当检测到恶意或可疑活动或Microsoft 365 Defender时，安全运营团队都会在安全门户中收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender包括自动调查和响应 AIR (功能) 可帮助安全运营团队更有效地应对威胁。
 
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
