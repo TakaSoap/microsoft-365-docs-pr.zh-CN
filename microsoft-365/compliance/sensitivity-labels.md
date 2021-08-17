@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6861c9e0fa4611ca2a457b26d431b7f9a7473690
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6c6f48b0dfdeee717162d8ebe031b162e2970959
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247862"
+ms.locfileid: "58347092"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -49,11 +49,9 @@ ms.locfileid: "58247862"
 若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
 
 > [!NOTE]
-> 对于美国政府租户，现支持所有平台的敏感度标签:
-> - 适用于 GCC 和 GCC 高环境: [Office for Windows](/officeupdates/current-channel#version-2101-january-26) 和 [Office for Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2) 的发行说明
-> - 适用于 DoD 环境: [Office for Windows](/officeupdates/current-channel#version-2103-march-30) 的发行说明
+> 对于美国政府租户，现在所有平台都已支持敏感度标签。
 >
-> 关于 Azure 信息保护统一标签客户端和扫描器，请参阅 [Azure 信息保护高级版政府服务说明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
+> 如果使用 Azure 信息保护统一标签客户端和扫描程序，请参阅 [Azure 信息保护高级版政府服务说明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 借助敏感度标签，你可以：
   
@@ -182,7 +180,7 @@ ms.locfileid: "58247862"
 
 - **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
-- 为新文档、未标记电子邮件和新容器 **指定默认标签**（在已 [为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签](sensitivity-labels-teams-groups-sites.md) 时）。 你可以为所有三种类型项目指定相同或不同的标签。 为文档指定默认标签时，Azure 信息保护统一标签客户端也将此标签应用于未标记的现有文档。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。
+- 为新文档、未标记电子邮件和新容器 **指定默认标签**（在已 [为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签](sensitivity-labels-teams-groups-sites.md) 时），然后现在 [为 Power BI 内容指定默认标签](/power-bi/admin/service-security-sensitivity-label-default-label-policy)。 你可以为所有四种类型项目指定相同或不同的标签。 为文档指定默认标签时，Azure 信息保护统一标签客户端也将此标签应用于未标记的现有文档。 如果用户确定其不正确，则可以更改已应用的默认敏感度标签。
     
     > [!IMPORTANT]
     > [子标签](#sublabels-grouping-labels)时，请注意不要将父标签配置为默认标签。

@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: b8221b457c27bc390aaa05059f8966f2d0e497cbc7e425fe8c6fec5679437781
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e0d914f4a0541a8b43959447d6fafdcaf8d3210
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897131"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347188"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -177,6 +177,9 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 3. 单击 **“编辑来宾信息”**。
 4. 键入来宾全名，然后单击选中标记。
 5. 单击 **“添加”**，然后单击 **“关闭”**。
+
+> [!NOTE]
+> 对于具有工作或学校帐户的来宾，只能通过使用其用户主体名称 (UPN) 来向其发出邀请（例如，adele@contoso.com）。 不支持使用 EAS ID 或其他电子邮件格式邀请来宾。
 
 ## <a name="see-also"></a>另请参阅
 

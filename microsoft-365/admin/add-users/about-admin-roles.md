@@ -23,26 +23,26 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: 2873773312af8584d403b9f4c506c72aad7a43a6367490887839d8778e285468
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 083c1586a522f74f87857311958a4d6082565268
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816051"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347032"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
-Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
+Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
-Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
+通过 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>，可以管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
 
 ## <a name="before-you-begin"></a>准备工作
 
-正在查找你可以在 Microsoft 365 管理中心中管理的详细 Azure AD 角色说明的完整列表？ 请参阅“Azure Active Directory 中的管理员角色权限”。 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+正在查找可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中管理的详细 Azure AD 角色说明的完整列表？ 请参阅“Azure Active Directory 中的管理员角色权限”。 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
-正在查找你可以在 Microsoft 365 管理中心中管理的详细 Intune 角色说明的完整列表？  查看 [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
+正在查找你可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中管理的详细 Intune 角色说明的完整列表？  查看 [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
-有关在 Microsoft 365 管理中心分配角色的详细信息，请参阅[分配管理员角色](assign-admin-roles.md)。
+有关在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中分配角色的详细信息，请参阅 [分配管理员角色](assign-admin-roles.md)。
 
 ## <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
 
@@ -62,7 +62,7 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>常用的 Microsoft 365 管理中心角色
 
-在 Microsoft 365 管理中心，你可以转到“**角色**”，然后选择任何角色以打开其详细信息窗格。 选择“**权限**”选项卡，以查看分配有该角色的管理员有权执行的操作的详细列表。 选择“**已分配**”或“**已分配管理员**”选项卡，以向角色添加用户。
+在 Microsoft 365 管理中心，可以转到“<a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**角色分配**</a>”，然后选择任何角色以打开其详细信息窗格。 选择“**权限**”选项卡，以查看分配有该角色的管理员有权执行的操作的详细列表。 选择“**已分配**”或“**已分配管理员**”选项卡，以向角色添加用户。
 
 你可能只需要在组织中分配以下角色。 默认情况下，我们首先显示大多数组织使用的角色。 如果找不到角色，请转到列表底部并选择“**按类别全部显示**”。 （有关详细信息，包括与角色关联的 cmdlet，请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。）
 

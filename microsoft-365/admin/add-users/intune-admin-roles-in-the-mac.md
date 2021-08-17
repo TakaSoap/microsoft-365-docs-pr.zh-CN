@@ -17,20 +17,20 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: 21618a078a3104af39727439c6690e31f75fbc93518e534e6759d3a914c414fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32f910729c5e7b76389bf54898ccb9c9e197045e
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815655"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346984"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Intune 管理员角色
 
-你的 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
+你的 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
 Microsoft 365 管理中心可用于管理一些 Microsoft Intune 角色。 然而，这些角色是 Intune 管理中心中可用角色的子集。 是否在查找 Microsoft Intune 的详细角色说明？ 查看 [Microsoft Intune 中的基于角色的访问控制 (RBAC)](/mem/intune/fundamentals/role-based-access-control)。
 
-有关在 Microsoft 365 管理中心分配角色的详细信息，请参阅[分配管理员角色](assign-admin-roles.md)。
+有关在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">Microsoft 365 管理中心</a> 内分配角色的详细信息，请参阅 [分配管理员角色](assign-admin-roles.md)。
 
 在 Microsoft 365 管理中心，你可以转到“**角色**”，然后选择任何角色以打开其详细信息窗格。 选择“**权限**”选项卡，以查看分配有该角色的管理员有权执行的操作的详细列表。 选择“**已分配**”或“**已分配管理员**”选项卡，以向角色添加用户。
 

@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
-ms.openlocfilehash: a4af63493ae155314f0e3cc0d7772b61d2656b6a898c036f0ee086622bccf42d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62cc6404790d711220ef80a644772e8dcd306fcb
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825909"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58346816"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -44,7 +44,7 @@ ms.locfileid: "53825909"
 
 首先，你需要证明自己拥有要添加到 Microsoft 365 的域。
 
-1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com/)，然后选择“**全部显示**” > “**设置**” > “**域**”。
+1. 登录到 Microsoft 365 管理中心，然后选择“**全部显示**” > “**设置**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">“**域**”</a>。
 2. 在新的浏览器标签页或窗口中，登录 DNS 托管提供商网站，然后找到管理 DNS 设置（如“区域文件设置”、“管理域”、“域管理器”和“DNS 管理器”）的位置。
 3. 转到提供商的“DNS 管理器”页面，然后将管理中心中指示的 TXT 记录添加到域中。
 
@@ -64,7 +64,7 @@ ms.locfileid: "53825909"
 
 如果注册机构不支持添加 TXT 记录，可通过添加 MX 记录进行验证。
 
-1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com/)，然后选择“**全部显示**” > “**设置**” > “**域**”。
+1. 登录到 Microsoft 365 管理中心，然后选择“**全部显示**” > “**设置**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">“**域**”</a>。
 2. 在新的浏览器标签页或窗口中，登录 DNS 托管提供商网站，然后找到管理 DNS 设置（如“区域文件设置”、“管理域”、“域管理器”和“DNS 管理器”）的位置。
 3. 转到提供商的“DNS 管理器”页面，然后将管理中心中指示的 MX 记录添加到域中。
 

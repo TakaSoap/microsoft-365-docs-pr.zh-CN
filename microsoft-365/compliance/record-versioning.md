@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 41967ee8372335bc60a12bd200154c70a1d7ce883ec895d8f9cc3b6af6346672
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1259065e2f2fb3e2ee3ad09405e365df7fd98767
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855708"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58356320"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
@@ -48,7 +48,7 @@ ms.locfileid: "53855708"
 > [!TIP]
 > 对具有删除操作的记录版本控制使用具有删除操作的记录版本时，建议同时配置保留设置 **基于：** 开始保留期 **在项目被标记为**。 设置此标签后，将重置每个新记录版本的保留期开始，这样可确保在较新版本之前删除较旧版本。
 
-对于具有将项标记为记录的保留标签的任何文档，记录版本控制自动可用。 当用户使用详细信息窗格查看文档属性时，可以将“**记录状态**”从“**已锁定**”切换为“**已解锁**”。 执行此操作即可在保留库的“记录”文件夹中创建一个记录，该记录将在其中保存剩余的保留期。
+记录版本控制自动适用于已应用将项目标记为记录的标签的任何文档，并且该标签已 [发布到网站](create-apply-retention-labels.md#step-2-publish-retention-labels)。 当用户使用详细信息窗格查看文档属性时，可以将“**记录状态**”从“**已锁定**”切换为“**已解锁**”。 执行此操作即可在保留库的“记录”文件夹中创建一个记录，该记录将在其中保存剩余的保留期。
 
 当文档处于已解锁状态时，拥有标准编辑权限的任何用户均可编辑此文件。 但是，用户无法编辑此文件，因为它仍然是记录。 完成编辑后，用户可再次将“**记录状态**”从“**已解锁**”切换回“**已锁定**”，此状态下可阻止用户进一步编辑该记录。
 <br/><br/>

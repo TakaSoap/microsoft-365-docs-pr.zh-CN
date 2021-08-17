@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 5d18bfbd396bc13496cc06c80dcb5cc6fbf7f84e9432936c1d745877f0074141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7fa0842812a83e510d7e200ebef3db4507d4b9d
+ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58347008"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
-团队中的每个人都需要一个用户账户，然后才能登录和访问 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。添加用户账户的最简单方法是在 Microsoft 365 管理中心中逐一添加。在完成该步骤后，用户就拥有了 Microsoft 365 的许可证、登录凭证和 Microsoft 365 邮箱。
+团队中的每个人都需要一个用户账户，然后才能登录和访问 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。添加用户账户的最简单方法是在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中逐一添加。完成该步骤后，用户就拥有了 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
 
 ## <a name="before-you-begin"></a>开始之前
 

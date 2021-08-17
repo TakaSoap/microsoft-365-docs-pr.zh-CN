@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 13b13a2f38641467611104ec0a93c2d5872d12d6fa48af758d7fc844397f7c03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1895e8a4b60a8c51e35d2b44c34a7fdcb8e0ac47
+ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899935"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58354376"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -252,7 +252,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 |自动应用保留 | 是 | 是 |
 |基于条件应用保留 <br /> - 敏感信息类型、KQL 查询、可训练的分类器| 否 | 是 |
 |手动应用保留 | 否 | 是 |
-|对最终用户显示 UI | 否 | 是 |
+|最终用户交互 | 否 | 是 |
 |在内容移动时仍继续应用在内容上 | 否 | 是，在您的 Microsoft 365 租户中 |
 |将项声明为记录| 否 | 是 |
 |从内容被标记或事件发生时开始计算保留期 | 否 | 是 |
@@ -293,11 +293,13 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 使用以下流程了解单个项目的保留和删除结果，其中每个级别从上到下都充当冲突平局。 如果结果由第一个级别决定，由于没有进一步冲突，则不需要再前进到下一个级别，等等。
 
 > [!IMPORTANT]
-> 如果您使用的是保留标签：在使用此流程确定同一项目上多个保留设置的结果之前，请确保您知道[应用了哪个保留标签](#only-one-retention-label-at-a-time)。
+> 如果使用保留标签：在应用此原则确定同一项目上多个保留设置的结果之前，请确保你了解 [应用了哪个保留标签](#only-one-retention-label-at-a-time)。
 
 ![保留原则关系图](../media/principles-of-retention.png)
 
 在更详细地解释每个原则之前，请务必了解项目保留期与保留策略或保留标签中指定的保留期之间的差异。 这是因为虽然默认配置是在创建项目时开始保留期，以便项目的保留期结束时间是固定的，但文件也支持配置从上次修改文件时开始保留期。 使用此备用配置时，每次修改文件，都会重置保留期的开始时间，这会延长项目的保留期结束时间。 保留标签还支持在标记时和事件开始时开始保留期。
+
+要将原则应用于一系列“是”和“否”问题，还可以使用 [保留流程图](retention-flowchart.md)。
 
 有关四种不同原则的说明：
   
