@@ -14,6 +14,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -21,21 +22,21 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: 了解如何使用 Microsoft 365 报告仪表板获取活动Microsoft 365 管理中心并了解使用的产品许可证数量。
-ms.openlocfilehash: 685373b41d86239f8c552fef0252472d82be3c235babcec77d1b6c806ad4116f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798275"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393444"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>评估Microsoft 365活动用户报告
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+the Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，可使用" **活动用户**"报表来了解组织中个人正在使用的产品许可证数量，并深入了解哪些用户正在使用哪些许可证。此报表可帮助管理员确定未被充分利用的产品或是可能需要其他培训或信息的用户。 
   
 > [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>如何获取活动用户报表
 

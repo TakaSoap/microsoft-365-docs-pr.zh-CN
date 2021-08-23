@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0acca0a1c04fa1391527991ff63e0cc19364d548937a8fb2d4a7f33ef73060a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf885a3d0bba2cf3abe85bc54f5e761f286716b9
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869997"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364969"
 ---
 # <a name="address-device-name-dependency"></a>地址设备名称依赖关系
 
@@ -24,3 +24,17 @@ Microsoft 托管桌面注册设备时应用标准化名称格式，如果以后�
 
 > [!IMPORTANT]
 > 如果你的环境依赖于特定设备 (例如，为了支持特定的网络配置) ，你应该调查在注册到 Microsoft 托管桌面 之前删除该依赖关系的选项。 如果必须保留名称依赖项，可以通过管理门户提交请求以禁用重命名功能并使用[](../working-with-managed-desktop/admin-support.md)所需的名称格式。
+
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>准备使用Microsoft 托管桌面
+
+1. 查看 [托管桌面应用](prerequisites.md)。
+2. 运行 [准备情况评估工具](readiness-assessment-tool.md)。
+1. 购买[公司门户](../get-started/company-portal.md)。
+1. 查看 [来宾帐户的先决条件](guest-accounts.md)。
+1. 检查 [网络配置](network.md)。
+1. [准备证书和网络配置文件](certs-wifi-lan.md)。
+1. [准备用户对数据的访问权限](authentication.md)。
+1. [准备应用](apps.md)。
+1. [准备映射的驱动器](mapped-drives.md)。
+1. [准备打印资源](printing.md)。
+1. Address [device names (this article) .

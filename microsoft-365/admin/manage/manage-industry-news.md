@@ -11,16 +11,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: 使用新闻服务为组织启用自定义新闻源，为用户提供行业最新新闻标题和来自组织的信息。
-ms.openlocfilehash: ccb2c944fb9f3a68d0670aa86acb0095362516dcad98069defe2aba1ec97dc97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 42a65543ef37d2433d84432a7436dabaaa9ce345
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825150"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394224"
 ---
 # <a name="manage-industry-news"></a>管理行业新闻
 
@@ -74,12 +76,12 @@ ms.locfileid: "53825150"
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
-1. 在"**新闻"** 面板中，单击 **"必应主页**"选项卡，然后选择"**在主页必应包含"。** 
+1. 在"**新闻"** 面板中，单击 **"必应主页**"选项卡，然后选择"在主页 **必应包含"。** 
 
-    行业新闻显示在 必应.com 上的组织的个性化信息下。 
+    行业新闻显示在 必应.com 上的组织个性化信息下。 
 
-## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge新选项卡页 
-当用户使用有效的工作或学校Microsoft Edge (登录 87) 或更高版本时，他们可以看到专为组织定制的新闻。
+## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge选项卡页 
+当用户使用有效的工作或学校帐户Microsoft Edge (版本 87 或更高版本) 时，他们可以看到为组织定制的新闻。
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. 在"**新闻"** 面板中，Microsoft Edge **新选项卡页"。**

@@ -13,22 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 6bdab4d473433622326e96b8f1e561a30eec1e80
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 12c1b74986429be8c2681725286a3e07b7ae1d86
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346852"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393408"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
-创建组[和Microsoft 365组的成员](create-groups.md)后，可以配置组。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
+创建组[和Microsoft 365组](create-groups.md)的成员后，可以配置组。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
 
 转到 上 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心。
 
@@ -56,15 +57,15 @@ ms.locfileid: "58346852"
   
 使用管理中心创建组时，默认情况下，用户不会收到发送到收件箱的组电子邮件副本，但用户会获得发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
 
-启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和会议Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
+启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
 
-组的成员可以选择不接收这些电子邮件，方法为选择停止在 Outlook。
+通过选择停止跟踪电子邮件中的组，组成员可以选择不接收Outlook。
 
 1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 如果您希望 **设置** 自己的收件箱中接收组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
+3. 如果您希望 **设置** 收件箱中的组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
 
 4. 选择“**保存**”。
 
@@ -76,7 +77,7 @@ ms.locfileid: "58346852"
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"**选项卡** 上，选择"允许外部发件人向此组发送电子邮件 **"。**
+3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"允许外部发件人向此组发送电子邮件 **"。**
     
 4. 选择“**保存**”。
 

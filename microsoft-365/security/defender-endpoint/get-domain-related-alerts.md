@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d4d84ff64399bdecc936ae8876c0e1713cbf3482ab9dbf1faf848b736bfa6a09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1511a31dfd7c86d24f3a91ceebfca65d1ce777e3
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800374"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365065"
 ---
 # <a name="get-domain-related-alerts-api"></a>获取与域相关的警报 API
 
@@ -61,8 +61,8 @@ ms.locfileid: "53800374"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
->- 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+>- 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 ```http
@@ -81,7 +81,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且域存在 - 200 正常，警报 [实体](alerts.md) 列表可用。 如果域不存在 - 404 未找到。
+如果成功且域存在 - 200 正常，警报 [实体](alerts.md) 列表可用。 如果域不存在 - 200 确定，但具有空集。
 
 ## <a name="example"></a>示例
 

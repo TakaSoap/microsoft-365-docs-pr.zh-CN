@@ -21,24 +21,24 @@ search.appverid:
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 8714334d2c05d312d8a7895c943e21816e31c9297e879b9681639efb92aec426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900275"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408042"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
-**MSCommerce** PowerShell 模块现已在 [PowerShell 库上提供](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 该模块包括 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，它允许您控制组织中用户是否可以进行自助购买。
+**MSCommerce** PowerShell 模块现已在 [PowerShell 库上提供](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 该模块包含 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，可用于控制贵组织的用户是否可以进行自助购买。
 
 您可以使用 **MSCommerce** PowerShell 模块：
 
 - 查看 **AllowSelfServicePurchase** 参数值的默认状态 — 是启用还是禁用
-- 查看适用产品的列表，以及自助服务购买是启用还是禁用
+- 查看适用产品的列表以及自助服务购买是启用还是禁用
 - 查看或修改特定产品的当前设置以启用或禁用它
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要使用 **MSCommerce** PowerShell 模块，您需要：
 
@@ -85,7 +85,7 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 
 ## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>查看自助服务购买产品及其状态的列表
 
-若要查看所有可用的自助式购买产品的列表以及每种产品的状态，请运行以下命令：
+若要查看所有可用自助式购买产品的列表以及每种产品的状态，请运行以下命令：
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
@@ -140,6 +140,14 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
+如果产品有多个值，您可以分别针对每个值运行命令，如以下示例所示：
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+```
+
+
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="problem"></a>问题
@@ -152,7 +160,13 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ### <a name="solution"></a>解决方案
 
-升级到 TLS 1.2： (/mem/configmgr/core/plan-design/security/enable-tls-1-2) 
+升级到 TLS 1.2。 以下语法将 ServicePointManager 安全协议更新为 TLS1.2：
+
+```powershell
+ [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+```
+
+若要了解更多信息，请参阅[如何启用 TLS 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

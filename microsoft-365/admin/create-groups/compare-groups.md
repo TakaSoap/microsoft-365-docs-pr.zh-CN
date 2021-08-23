@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: c5e616e95cf56a67799f4edc2608a54758a7aa0b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346876"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393420"
 ---
 # <a name="compare-groups"></a>比较组
 

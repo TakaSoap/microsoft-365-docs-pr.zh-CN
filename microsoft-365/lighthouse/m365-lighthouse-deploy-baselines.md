@@ -15,20 +15,20 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
-ms.openlocfilehash: 70dae3e86cd5f559d0afd65406cf72835af81ebb6bd209fb1d68038b9c1be5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何部署Microsoft 365 Lighthouse基线。
+ms.openlocfilehash: 85e9c9031575aae3aec43b4200caf2338422f563
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800795"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365209"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>部署Microsoft 365 Lighthouse基线 
 
 > [!NOTE]
 > 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以确保租户用户、设备和数据的安全。 有六种默认基线配置符合标准Microsoft 365 Lighthouse：
+Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以确保客户租户中的用户、设备和数据的安全。 有六种默认基线配置符合标准Microsoft 365 Lighthouse：
 
 - 要求管理员使用 MFA
 - 要求最终用户使用 MFA
@@ -39,13 +39,13 @@ Microsoft 365 Lighthouse基线，您可以部署标准托管租户配置，以�
 
 ## <a name="before-you-begin"></a>准备工作
 
-确保你和客户租户满足要求[for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)中列出的要求。
+确保你和客户租户满足要求中所列的要求[Microsoft 365 Lighthouse。](m365-lighthouse-requirements.md)
 
 ## <a name="learn-more-about-the-default-baseline"></a>详细了解默认基线
 
-从 **左侧导航** 窗格中选择"比较基准"以打开"比较基准"页。 你将看到默认基线已添加到默认租户组， (所有租户) 。 若要查看默认基线配置，请选择" **查看比较基准** "以打开"默认比较基准"页。 配置作为部署步骤列出。 选择任意部署步骤以查看部署详细信息和用户影响。
+从 **左侧导航** 窗格中选择"比较基准"以打开"比较基准"页。 你将看到默认基线已添加到默认租户组 (所有租户) 。 若要查看默认基线配置，请选择" **查看比较基准** "以打开"默认比较基准"页。 配置作为部署步骤列出。 选择任意部署步骤以查看部署详细信息和用户影响。
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Default baseline page.>。":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Default baseline page.> 屏幕截图。":::
 
 ## <a name="deploy-a-baseline-configuration"></a>部署基线配置  
 

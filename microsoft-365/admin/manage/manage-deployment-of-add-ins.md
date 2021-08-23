@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用管理中心中的集中部署将加载项部署到组织的用户和组。
-ms.openlocfilehash: 65f7d6c292d351a25b2d5ba499bd3791f5b260e8
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 8de912ce6762037d905847dcabdcc20778d347e3
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346792"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394236"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
 
@@ -39,7 +40,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 若要了解有关在部署后管理加载项的更多信息，请参阅在[管理](manage-addins-in-the-admin-center.md)中心管理加载项
   
 > [!NOTE]
->  对于 Word Excel 和 PowerPoint 使用[SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)应用程序目录向本地环境中的用户部署外接程序，而不需要与 Microsoft 365 和/或支持 SharePoint 外接程序的连接。 For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
+>  对于 Word Excel 和 PowerPoint 使用[SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)应用程序目录向本地环境中的用户部署外接程序，而不需要连接到 Microsoft 365 和/或支持 SharePoint 外接程序。 For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 加载项的推荐方法
 
@@ -83,7 +84,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 7. 部署加载项时，会出现绿色刻度线。 按照页面上的说明测试外接程序。
 
     > [!NOTE]
-    > 用户可能需要重新启动Office应用程序功能区上的外接程序图标。 Outlook外接程序最多可能需要 24 小时才能显示在应用程序功能区上。
+    > 用户可能需要重新启动Office，以查看应用程序功能区上的外接程序图标。 Outlook外接程序最多可能需要 24 小时才能显示在应用程序功能区上。
 
 8. 完成后，选择下一 **步**。 如果只向自己部署，可以选择"更改有权访问加载项的用户 **"，** 以部署到更多用户。
 
@@ -134,5 +135,5 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 
 [管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) \
 [生成首个 Word 任务窗格加载项 (](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) 文章\
-[从应用商店获取](minors-and-acquiring-addins-from-the-store.md) 外接程序的次要 (文章) \ 使用集中部署 [PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理外接程序 (文章) \  
+[从应用商店](minors-and-acquiring-addins-from-the-store.md) 获取外接程序的次要 (文章) \ 使用集中部署 [PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理外接程序 (文章) \  
 [疑难解答：用户看不到外接程序 (](/office365/troubleshoot/access-management/user-not-seeing-add-ins) 文章) 

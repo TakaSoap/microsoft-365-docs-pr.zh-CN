@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminTemplateSet
+ms.custom:
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: 邮件中心帖子仅提供英语版本，但可以使用您为邮件中心指定的语言自动Microsoft 365。
-ms.openlocfilehash: 7256fe69fb010ce2c3bf77c99de91a4ee42285a7
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346804"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394248"
 ---
 # <a name="language-translation-for-message-center-posts"></a>翻译消息中心的帖子
 
@@ -38,7 +40,7 @@ ms.locfileid: "58346804"
   
 ## <a name="set-your-preferred-language"></a>设置首选语言
 
-1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>or home page， select the settings icon in the upper-right corner of the window.
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>或主页上，选择窗口右上角的设置图标。
   
 2. 在 **语言和时区** 下，选择 **查看全部** 以显示可用选项。 从下拉菜单中选择所需语言，然后选择 **保存**。 Microsoft 365会尝试刷新并显示新的语言。 如果没有立即显示，或者似乎要花费过长时间，可以刷新浏览器或退出登录，然后重新登录。
   
@@ -52,7 +54,7 @@ ms.locfileid: "58346804"
 
 [视频Microsoft 365 管理中心 (](../../business-video/admin-center-overview.md)概述) \
 [我订阅了哪些产品？](../admin-overview/what-subscription-do-i-have.md) （文章）\
-[随时了解本文 (](../manage/stay-on-top-of-updates.md) 更改) 
+[随时了解更改 (](../manage/stay-on-top-of-updates.md) 文章) 
 
 
 

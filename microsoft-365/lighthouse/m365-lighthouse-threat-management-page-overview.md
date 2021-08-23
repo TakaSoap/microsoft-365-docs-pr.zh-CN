@@ -16,31 +16,31 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解"威胁管理"页。
-ms.openlocfilehash: 2c53c10922befea999a8025e35d53da2225aafc4a9543f13f04a35ca8e7f2ecd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898958"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365005"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse威胁管理页面概述 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 **适用于：**
 
 - Windows 10
 
-Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁，包括病毒、恶意软件和间谍软件。 它是内置于 Windows 10中且与 Microsoft 365 商业高级版 一起提供Microsoft 365 商业高级版。  
+Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁，包括病毒、恶意软件和间谍软件。 它是内置于 Windows 10中且包含在Microsoft 365 商业高级版。  
   
-若要访问 Microsoft 365 Lighthouse 中的"威胁管理"页，请选择左侧导航窗格中的"威胁管理"，查看租户针对威胁的安全状态。 你将看到需要你注意的租户、用户和设备，以及有助于降低风险的建议。  
+若要访问 Microsoft 365 Lighthouse 中的"威胁管理"页，请选择左侧导航窗格中的"威胁管理"以查看客户租户针对威胁的安全状态。 你将看到需要你注意的租户、用户和设备，以及有助于降低风险的建议。  
   
 ## <a name="overview-tab"></a>"概述"选项卡  
   
 在"威胁管理"页的"概述"选项卡上，可以监视所有租户中的防病毒状态，以确定需要关注的区域。
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="&quot;概述&quot;选项卡的屏幕截图>。":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="&quot;概述&quot;选项卡.>。":::
 
 ## <a name="threats-tab"></a>"威胁"选项卡
 
@@ -59,8 +59,8 @@ Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁，�
 
 | 威胁状态 | 定义 |
 |--|--|
-| 活动 | 威胁在设备上处于活动状态。 |
-| 无状态 | 威胁状态不可用。 在设备上运行完整扫描，Microsoft Defender 防病毒威胁。 |
+| 活动文件 | 威胁在设备上处于活动状态。 |
+| 无状态 | 威胁状态不可用。 在设备上运行完全扫描，Microsoft Defender 防病毒威胁。 |
 | 操作失败 | 设备没有风险。 操作已失败，但潜在威胁已停止，并且未在设备上处于活动状态。 在设备上运行完全扫描。 |
 | 需要手动步骤 | 威胁已停止，但需要手动完成步骤，如完全扫描或设备重启。 |
 | 需要完全扫描 | 需要设备的完整扫描。 |
@@ -79,5 +79,5 @@ Microsoft Defender 防病毒保护租户、用户和设备免受软件威胁，�
 
 ## <a name="related-content"></a>相关内容
 
-[部署Microsoft 365 Lighthouse文章](m365-lighthouse-deploy-baselines.md) (部署) \
+[部署Microsoft 365 Lighthouse比较基准](m365-lighthouse-deploy-baselines.md) (文章) \
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) 

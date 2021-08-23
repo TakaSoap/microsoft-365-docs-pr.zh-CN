@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 如果要重置自己的管理员密码，请更新管理中心中的管理员电话号码和电子邮件地址。
-ms.openlocfilehash: 685f6c55c3b83cb8ec52725a06a5c3d53d35118a
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: cbb969b93584503db0755675e4ea585ba401e377
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346108"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394188"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
@@ -45,7 +46,7 @@ ms.locfileid: "58346108"
 
 2. 在标头中，选择配置文件图标 \> **"我的帐户** \> **安全信息"。**
 
-3. 在"**安全信息"** 选项卡中，**选择"添加** 电话 \>  \> **备用** 电话 **或"电子邮件**"添加详细信息。 若要更新您的移动、电话和备用电子邮件地址详细信息，请选择"更改 **"。** 请确保将 Microsoft 电子邮件地址外的其他内容用于备用电子邮件地址。
+3. 在"**安全信息"** 选项卡中，**选择"添加** 电话 \>  \> **备用****电话"** 或"电子邮件"添加详细信息。 若要更新您的移动、电话和备用电子邮件地址详细信息，请选择"更改 **"。** 请确保将 Microsoft 电子邮件地址外的其他内容用于备用电子邮件地址。
 
     > [!IMPORTANT]
     > 重置管理员密码时需要备用电子邮件地址和移动电话号码 (计算机管理员密码) 。
@@ -61,6 +62,6 @@ ms.locfileid: "58346108"
 ## <a name="related-content"></a>相关内容
 
 [将用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 视频) \
-[向视频 (](../add-users/add-new-employee.md) 新员工) \
-[删除之前员工](../add-users/remove-former-employee.md) (视频) \
-[访问和备份以前用户的数据](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) (文章) 
+[将新员工添加到 (](../add-users/add-new-employee.md) 视频) \
+[删除以前员工](../add-users/remove-former-employee.md) (视频) \
+[访问和备份以前用户](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 的数据 (文章) 

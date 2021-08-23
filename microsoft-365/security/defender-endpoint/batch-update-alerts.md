@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5307eba16184c8eb3aa3dadf32ad3d2ea69448fd53bdbc27d1db13bef1a40ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 465aba55225aed74c838cb8ce09acf6d8b284491
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857807"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408054"
 ---
 # <a name="batch-update-alerts"></a>批更新通知
 
@@ -55,13 +55,13 @@ ms.locfileid: "53857807"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-应用程序 | Alerts.ReadWrite.All | "读取和写入所有警报"
+应用程序 | Alert.ReadWrite.All | "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -87,11 +87,11 @@ Content-Type | String | application/json. **必需**。
 
 属性 | 类型 | 说明
 :---|:---|:---
-alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **必需**
-status | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
+alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
+状态 | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
-确定 | 字符串 | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
+确定 | String | 指定指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、"SecurityPersonnel"、"SecurityTesting"、"UnwantedSoftware"和"Other"
 注释 | String | 要添加到指定警报的注释。
 
 ## <a name="response"></a>响应

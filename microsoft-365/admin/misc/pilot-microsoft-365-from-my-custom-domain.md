@@ -11,18 +11,19 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - Adm_O365
-ms.custom: ''
+ms.custom:
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
-ms.openlocfilehash: 0e19c04d00e533797036a29cafdfe9902e93a008
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 6980480893e3e544a912edbe7d7da0993e781df2
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346072"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394164"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dc6b2f1edcd7387ac144f4cd989cf3c65889dd232d887360187fbf84062cba78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f743e4960267f98496585163d963c720ab9d0c5c
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874095"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365029"
 ---
 # <a name="get-domain-related-machines-api"></a>获取域相关的计算机 API
 
@@ -60,7 +60,7 @@ ms.locfileid: "53874095"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 响应将仅包括用户可以访问的设备，基于设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/machines
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -81,7 +81,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且域存在 - 200 正常，包含 [计算机实体](machine.md) 列表。 如果域不存在 - 404 未找到。
+如果成功且域存在 - 200 正常，包含 [计算机实体](machine.md) 列表。 如果域不存在 - 200 正常，但设置为空。
 
 ## <a name="example"></a>示例
 

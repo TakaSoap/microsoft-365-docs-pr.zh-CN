@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '了解如何查找新的Microsoft 365合作伙伴，或获取过去合作过的合作伙伴的联系人信息。 '
-ms.openlocfilehash: 81beb661783e1bff223245b2abd8904686bd50e8308bb7178b161fb84da455d5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac557a04039c9cf618f2ed1fd0e8c0d967e76386
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825447"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394260"
 ---
 # <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
@@ -38,7 +39,7 @@ ms.locfileid: "53825447"
   
 ## <a name="find-a-new-partner-or-reseller"></a>查找新合作伙伴或零售商
 
-如果你已准备好通过开放批量许可购买或续订Microsoft 365，或者你只想了解有关与合作伙伴合作的详细信息，请选择以下选项。 
+如果你已准备好通过开放批量Microsoft 365购买或续订产品，或者你只想了解有关与合作伙伴合作的详细信息，请选择以下选项。 
   
 - [使用 Microsoft PinPoint 搜索合作伙伴](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -53,7 +54,7 @@ ms.locfileid: "53825447"
 
 1. 在管理中心，转到 **"设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">关系"</a>页面。
   
-2. 如果你有合作伙伴，合作伙伴的名称和与组织的关系将在此处列出。 若要查看合作伙伴联系人信息 (电话号码和电子邮件地址) ，请选择合作伙伴名称。
+2. 如果你有合作伙伴，此处将列出合作伙伴的姓名和与组织的关系。 若要查看合作伙伴联系人信息 (电话号码和电子邮件地址) ，请选择合作伙伴名称。
     
 ## <a name="more-resources"></a>更多资源
 

@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解"用户"页面。
-ms.openlocfilehash: 722650462d5403e24c2ac0e9b087e5f5710860b145a1a233c0f05a29ca77bbab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 102dcca973fed7a883dead0212a6f2965457cf9f
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898863"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365053"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse用户页面概述 
 
 > [!NOTE]
 > 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse通过选择左侧导航窗格中的"用户"打开"用户"页面，跨租户帐户管理用户。 在此页中，可以搜索用户，并评估用户帐户的安全状态并采取行动。 您还可以查看风险用户的见解，以及多重身份验证和自助服务密码重置的状态。  
+Microsoft 365 Lighthouse通过选择左侧导航窗格中的"用户"打开"用户"页面，跨客户租户帐户管理用户。 在此页中，可以搜索用户，并评估用户帐户的安全状态并采取行动。 您还可以查看风险用户的见解，以及多重身份验证和自助服务密码重置的状态。  
   
 ## <a name="search-users-tab"></a>"搜索用户"选项卡  
   

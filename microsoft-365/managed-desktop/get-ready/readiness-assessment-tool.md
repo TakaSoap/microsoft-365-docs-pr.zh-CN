@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7138933c1ef3b849374cda16f5072f408877dd66910808c0ce771fcd2c317d0c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869851"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364945"
 ---
 # <a name="readiness-assessment-tools"></a>准备情况评估工具
 
@@ -27,11 +27,11 @@ ms.locfileid: "53869851"
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>用于管理设置的联机准备情况评估工具
 
-联机[工具](https://aka.ms/mmdart)可Microsoft Endpoint Manager (Azure AD Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365 中的设置，以确保这些设置与 Microsoft 托管桌面 一Microsoft 托管桌面。 Microsoft 托管桌面在上一次在 Azure AD 组织或租户管理中心运行检查后，与这些检查关联的数据 (12) 。 12 个月后，我们会以已取消标识的形式保留它。 你可以选择删除我们收集的数据。
+联机[工具](https://aka.ms/mmdart)可Microsoft Endpoint Manager (Azure AD Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365 中的设置，以确保这些设置与 Microsoft 托管桌面 一Microsoft 托管桌面。 Microsoft 托管桌面在 Azure AD 组织或租户管理中心中运行检查后，将与此检查关联的数据保留 12 (12) 。 12 个月后，我们会以已取消标识的形式保留它。 你可以选择删除我们收集的数据。
 
 至少具有全局读取者或 Intune 管理员角色的任何人都可以运行此工具，但条件访问策略和 (身份验证中的两项检查需要[](readiness-assessment-fix.md#conditional-access-policies)其他权限。 [](readiness-assessment-fix.md#multifactor-authentication)
  
-评估工具将检查以下项：
+评估工具检查以下项：
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune设置
 
@@ -41,29 +41,29 @@ ms.locfileid: "53869851"
 |证书连接器     | 检查证书连接器的状态以确保它们处于活动状态   |
 |条件访问     | 验证条件访问策略是否未分配给所有 (不应将条件访问策略分配给Microsoft 托管桌面帐户。)     |
 |设备合规性策略     | 检查未将 Intune 合规性策略分配给所有用户 (不应将策略分配给任何Microsoft 托管桌面设备。)     |
-|设备配置文件     | 确认配置文件未分配给所有用户，或者不应 (配置文件的所有设备分配给任何Microsoft 托管桌面设备。)      |
+|设备配置文件     | 确认配置文件未分配给所有用户，或不应将 (配置文件的所有设备分配给任何Microsoft 托管桌面设备。)      |
 |设备类型限制     | 检查Windows 10设备是否允许在 Intune 中注册        |
 |注册状态页     | 确认未启用注册状态页      |
-|Intune 注册     | 验证Windows 10 Azure AD 组织中设备是否自动在 Intune 中注册         |
-|适用于企业的 Microsoft Store     | 确认已启用适用于企业的 Microsoft Store与 Intune 同步        |
+|Intune 注册     | 验证 azure AD Windows 10中的设备是否自动在 Intune 中注册         |
+|适用于企业的 Microsoft Store     | 确认已适用于企业的 Microsoft Store Intune 同步        |
 |多重身份验证 | 验证多重身份验证是否未应用于Microsoft 托管桌面帐户。
-|PowerShell 脚本     | 检查Windows PowerShell *脚本的分配* 方式是否面向 Microsoft 托管桌面 设备    |
+|PowerShell 脚本     | 检查Windows PowerShell *脚本的分配* 方式是否面向Microsoft 托管桌面设备    |
 |地区     | 检查你的区域是否受 Microsoft 托管桌面        |
 |安全基线     | 检查安全基线配置文件不面向所有用户，或安全基线策略 (所有设备不应面向任何Microsoft 托管桌面设备。)        |
 |Windows应用     | 查看你想要分配给Microsoft 托管桌面的应用      |
 |Windows Hello 企业版     | 检查Windows Hello Business 是否已启用        |
-|Windows 10更新圈     | 检查 Intune 的"Windows 10 更新圈"策略是否未面向所有用户或 (该策略不应面向任何Microsoft 托管桌面设备。)      |
+|Windows 10更新圈     | 检查 Intune 的"Windows 10 更新圈"策略不面向所有用户或 (该策略不应面向任何 Microsoft 托管桌面 设备。)      |
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory设置
 
 |支票  |说明  |
 |---------|---------|
-|适用于状态漫游的Enterprise临时"订阅     | 建议如何检查设置，如果 (设置为"false"，) 可能会Enterprise状态漫游正常工作  |
+|适用于状态漫游的Enterprise临时"订阅     | 建议如何检查设置，如果 ("false"，) 可能会Enterprise状态漫游正常工作  |
 |企业状态漫游     | 建议如何检查Enterprise漫游是否已启用       |
 |许可证     | 检查是否获取了必要的 [许可证](prerequisites.md#more-about-licenses)         |
 |多重身份验证     | 检查多重身份验证是否未应用于 (多重身份验证不得意外应用于Microsoft 托管桌面帐户。) |
-|安全帐户名称   | 检查没有与保留供自己Microsoft 托管桌面的用户名发生冲突        |
+|安全帐户名称   | 检查没有用户名与保留供Microsoft 托管桌面的用户名冲突        |
 |安全管理员角色     | 确认在 Microsoft Defender for Endpoint 中为具有安全读者、安全操作员或全局读者角色的用户分配了这些角色         |
 |安全性默认值 | 检查 Azure AD 组织是否已启用安全Azure Active Directory |
 |自助式密码重置     | 确认已启用自助服务密码重置        |
@@ -89,16 +89,18 @@ ms.locfileid: "53869851"
 
 ## <a name="after-enrollment"></a>注册后
 
-完成注册后，请记住Microsoft 托管桌面并调整某些 Intune 和 Azure AD 设置。 有关详细信息，请参阅 [在注册后调整设置](../get-started/conditional-access.md)。
+完成注册后，请记得Microsoft 托管桌面并调整某些 Intune 和 Azure AD 设置。 有关详细信息，请参阅 [在注册后调整设置](../get-started/conditional-access.md)。
 
-## <a name="steps-to-get-ready"></a>准备步骤
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>准备使用Microsoft 托管桌面
 
 1. 查看 [托管桌面应用](prerequisites.md)。
-2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。  (本文) 
-3. [来宾帐户的先决条件](guest-accounts.md)
-4. [Microsoft 托管桌面的网络配置](network.md)
-5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
-6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
-7. [Microsoft 托管桌面中的应用](apps.md)
-8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
-9. [为 Microsoft 托管桌面准备打印资源](printing.md)
+2. 运行本文 (准备情况评估) 。
+1. 购买[公司门户](../get-started/company-portal.md)。
+1. 查看 [来宾帐户的先决条件](guest-accounts.md)。
+1. 检查 [网络配置](network.md)。
+1. [准备证书和网络配置文件](certs-wifi-lan.md)。
+1. [准备用户对数据的访问权限](authentication.md)。
+1. [准备应用](apps.md)。
+1. [准备映射的驱动器](mapped-drives.md)。
+1. [准备打印资源](printing.md)。
+1. 地址 [设备名称](address-device-names.md)。

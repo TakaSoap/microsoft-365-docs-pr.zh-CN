@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: e0604a6531b93a1a0df04c39ebaff4e75a0365f9
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248033"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400399"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -170,7 +170,7 @@ ms.locfileid: "58248033"
 
 - 以下功能和应用可能与身份验证上下文不兼容，因此建议你检查这些功能和应用在用户使用身份验证上下文成功访问网站后是否可继续工作：
     
-    - 使用 PowerApps 或 Power Automate 的工作流
+    - 使用 Power Apps 或 Power Automate 的工作流
     - 第三方应用
 
 ## <a name="sensitivity-label-management"></a>敏感度标签管理
@@ -413,7 +413,7 @@ ms.locfileid: "58248033"
 ## <a name="auditing-sensitivity-label-activities"></a>审核敏感度标签活动
 
 > [!IMPORTANT]
-> 如果通过仅为保护容器的标签选择“**组和网站**”作用域来使用标签分离，则：由于本部分描述的 **检测到文档敏感度不匹配** 审核事件和电子邮件，请考虑在为标签设置“**文件和电子邮件**”作用域之前先[对标签进行排序](sensitivity-labels.md#label-priority-order-matters)。 
+> 如果通过仅为保护容器的标签选择“**组和网站**”作用域来使用标签分离，则：由于本部分描述的 **检测到文档敏感度不匹配** 审核事件和电子邮件，请考虑在为标签设置“**文件和电子邮件**”作用域之前先 [对标签进行排序](sensitivity-labels.md#label-priority-order-matters)。 
 
 如果有人将文档上传到受敏感度标签保护的网站上，且该文档的敏感度标签的[优先级](sensitivity-labels.md#label-priority-order-matters)比该网站应用的敏感度标签高，则不会阻止此操作。 例如，你向 SharePoint 网站应用了“**常规**”标签，并且有人向此网站上传了一个标记为“**机密**”的文档。 对于优先级更低的内容来说，具有更高优先级的敏感度标签会识别敏感度高于此内容的内容，因此该情况可能会带来安全隐患。
 
@@ -449,5 +449,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 ## <a name="additional-resources"></a>其他资源
 
 如需有关[通过 Microsoft Teams、O365 组和 SharePoint Online 网站使用敏感度标签](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380)的信息，请参阅网络研讨会的记录和回答的问题。
+
+有关管理 Teams 连接站点和频道网站的详细信息，请参阅 [管理 Teams 连接站点和频道网站](/SharePoint/teams-connected-sites)。
 
 在录制此网络研讨会时该功能仍处于预览阶段，因此你可能会发现 UI 存在某些差异。 但是，此功能的信息仍准确无误，并且该页面记录了所有新功能。

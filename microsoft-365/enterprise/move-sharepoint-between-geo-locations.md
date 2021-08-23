@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何将网站SharePoint多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80dfe847683271a8538f407f9a697536946e29a5ae98cefc92dfde74a45abd0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97f19b0f4ae1e00eb1d81bb20052efa158bc55cf
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854817"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400387"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -146,7 +146,7 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 通过使用以下 cmdlet，你可以确定站点移入或移出所连接到的地理位置的状态：
 
 - [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate)（非组连接的站点）
-- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (组连接的站点) 
+- [Get-SPOUnifiedGroupMoveState (](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) 组连接的站点) 
 
 使用 `-SourceSiteUrl` 参数来指定要查看其移动状态的站点。
 
@@ -219,9 +219,9 @@ SharePoint 移动应用跨地理位置兼容，并能够检测站点的新地理
 
 在大多数情况，流程在 SharePoint 站点地理位置移动后将继续工作。 我们建议你在移动完成后测试流程。
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
-需要在目标位置中重新创建 PowerApps。
+Power Apps需要在目标位置重新创建。
 
 ### <a name="data-movement-between-geo-locations"></a>地理位置之间的数据移动
 
