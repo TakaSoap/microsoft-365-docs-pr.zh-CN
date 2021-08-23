@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6008e59abadc179f8e6580d56007ea88b9415ab5
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 51f85d57a7d05ed298b94632ab35cf215d5679b2
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254740"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359969"
 ---
 #  <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 和 Linux 上运行客户端分析器
 
@@ -39,7 +39,7 @@ ms.locfileid: "58254740"
 > [!NOTE]  
 > 从上述链接下载的"XMDEClientAnalyzer.zip"的当前 SHA256 哈希为："029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85"。
 
-2.  提取计算机上XMDEClientAnalyzer.zip的内容。
+2.  提取计算机上XMDEClientAnalyzer.zip内容。
 
 3.  打开终端会话，将目录更改为提取的位置并运行：
 
@@ -61,7 +61,7 @@ ms.locfileid: "58254740"
 
 > [!NOTE]  
 > 对于 Linux，分析器需要"lxml"来生成结果输出。 如果未安装，分析器将尝试从下面的 python 包的官方存储库获取它：  
-https://files.pythonhosted.org/packages/\*/lxml \* .whl
+https://files.pythonhosted.org/packages/\*/lxml .whl 此外，该工具当前要求安装 \* Python 版本 3 或更高版本。
 
 示例：  
 

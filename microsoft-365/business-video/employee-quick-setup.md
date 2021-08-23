@@ -20,17 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 帮助员工了解如何设置Office他们使用应用获取Microsoft 365 商业高级版。
-ms.openlocfilehash: a33e834593025bc25e4766c0cafdee92c54f468febe4f0fea54d8359df091a19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 帮助员工了解如何设置Office使用应用获取Microsoft 365 商业高级版。
+ms.openlocfilehash: 7c7f28a13438d2cd5974d212d56c6885d8d4850c
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809731"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377759"
 ---
 # <a name="employee-quick-setup"></a>员工快速设置
 
-你是第一次Microsoft 365企业？ :::image type="icon" source="../media/video-call-icon.png" border="false":::[观看此视频](../business/microsoft-365-business-start.md)了解它。 然后按照下列步骤操作。
+你是第一次Microsoft 365企业？ :::image type="icon" source="../media/video-call-icon.png" border="false":::[观看此视频](what-is-microsoft-365.md)了解它。 然后按照下列步骤操作。
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="显示快速员工设置步骤的图像。":::
 

@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: 了解如何在适用于企业Microsoft 365 AutoPilot 创建 CSV 文件。
-ms.openlocfilehash: bc67e32d834ec8fde13386fb02ef1368ca3757cef47e78575d00a3e3d2fc6db3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在适用于企业的业务中为 AutoPilot Microsoft 365 CSV 文件。
+ms.openlocfilehash: d3785d85654c1e055d0f1b36dad50485d4e82fd9
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824115"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377740"
 ---
 # <a name="device-list-csv-file"></a>设备列表 CSV 文件
 
@@ -48,10 +48,8 @@ ms.locfileid: "53824115"
 
 添加设备时，还需要将它们添加到配置文件。 配置文件用于将 AutoPilot 部署配置文件应用于设备或一组设备。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365文档和资源](../../business/index.yml)
+[Microsoft 365文档和资源](../../index.yml)
   
-[企业Microsoft 365入门](../../business/microsoft-365-business-overview.md)
-  
-[管理Microsoft 365企业部署](../../business/manage.md)
+[企业Microsoft 365入门](../../business-video/what-is-microsoft-365.md)

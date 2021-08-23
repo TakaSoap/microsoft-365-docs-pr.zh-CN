@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 738a5ae02cba8078b583b138b4e9dfa8733433f07feb69bce96b663a068aaa4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5e1d402442b2e8fe01b55cf3d3e07858d9d592dd
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853800"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399739"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -26,7 +26,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 ## <a name="licensing"></a>授权
 
-在开始使用打印机保护之前，你应该[确认你的Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下权限：
+在开始使用打印机保护之前，你应该[确认你的Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下各项：
 
 - Microsoft 365 E3/策略部署
 - Microsoft 365 E5报告功能
@@ -49,14 +49,12 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 请确保计划Windows 10打印机保护的设备满足这些要求。
 
-1. 加入预览体验计划。
-
 1. 已安装以下 Windows 更新。
     - For Windows 1809： install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
     - For Windows 1909： install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
-    - For Windows 2004 or later
+    - 对于 Windows 2004 或更高版本
 
-1. 如果计划通过组策略部署策略，设备必须加入 MDATP;如果你计划通过 MEM 部署策略，设备必须加入 Intune。
+2. 如果你计划通过组策略部署策略，则必须将设备载入加入适用于终结点的 Microsoft Defender;如果你计划通过 Microsoft Endpoint Manager 部署策略，则必须使用 Microsoft Intune。
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>部署设备控制打印机保护策略
 

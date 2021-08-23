@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a67ec7ce5e71ed5b0275f509928d4acaa2b7c4b1f89db971353fc27fb98c650d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884519"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372816"
 ---
 # <a name="update-machine"></a>更新计算机 
 
@@ -73,7 +73,7 @@ PATCH /api/machines/{machineId}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|String|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -86,14 +86,14 @@ Content-Type|String|application/json. **必需**。
 
 属性|类型|说明
 :---|:---|:---
-machineTags|String collection|计算机 [标记](machine.md) 集。
+machineTags|字符串集合|计算机 [标记](machine.md) 集。
 deviceValue|Nullable Enum|[设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 OK 和 [计算机](machine.md) 实体以及更新的属性。
+如果成功，此方法在响应正文中返回 200 OK 和 [包含](machine.md) 更新属性的 machine 实体。
 
-如果正文中的计算机标记集合不包含现有计算机标记 - 400"输入无效"，并且有消息通知缺少标记/s。
+如果 body 中的计算机标记集合不包含现有计算机标记 - 请将所有标记替换为请求正文中提供的标记。
 
 如果未找到具有指定 ID 的机器 - 404 未找到。
 

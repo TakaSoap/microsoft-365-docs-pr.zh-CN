@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5afc965ab72ccdf062826a4157c6949f9a83fd165feb5b31f72dd67fda4e9e93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f56544ee8447c1bd0db5e493193357a50a1b1904
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839575"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372540"
 ---
 # <a name="machine-resource-type"></a>计算机资源类型
 
@@ -70,13 +70,13 @@ osProcessor | String | 操作系统处理器。 请改为使用 osArchitecture �
 version | String | 操作系统版本。
 osBuild | Nullable long | 操作系统内部版本编号。
 lastIpAddress | String | 计算机上本地 NIC 上的最后一[个 IP。](machine.md)
-lastExternalIpAddress | 字符串 | 计算机访问 Internet [的最后](machine.md) 一个 IP。
+lastExternalIpAddress | String | 计算机访问 Internet [的最后](machine.md) 一个 IP。
 healthStatus | 枚举 | [计算机](machine.md) 运行状况状态。 可能的值包括："Active"、"Inactive"、"ImpairedCommunication"、"NoSensorData"、"NoSensorDataImpairedCommunication"和"Unknown"。 
 rbacGroupName | String | 计算机组名称。
+rbacGroupId | String | 计算机组 ID。
 riskScore | Nullable Enum | 由 Microsoft Defender 终结点评估的风险评分。 可能的值包括："None"、"Informational"、"Low"、"Medium"和"High"。
-exposureScore | Nullable Enum | [由](tvm-exposure-score.md) Microsoft Defender for Endpoint 评估的曝光评分。 可能的值包括："None"、"Low"、"Medium"和"High"。
-aadDeviceId | Nullable 表示形式 Guid | 当计算机已 (AAD [时](machine.md) ，AAD 设备 ID) 。
-machineTags | String collection | 计算机 [标记](machine.md) 集。
+aadDeviceId | Nullable 表示形式 Guid | 当计算机已 (AAD 时 [，AAD](machine.md) 设备 ID) 。
+machineTags | 字符串集合 | 计算机 [标记](machine.md) 集。
 exposureLevel | Nullable Enum | 由 Microsoft Defender for Endpoint 评估的曝光级别。 可能的值包括："None"、"Low"、"Medium"和"High"。
 deviceValue | Nullable Enum | [设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。
 ipAddresses | IpAddress 集合 | ***IpAddress 对象*** 集。 请参阅[获取计算机 API。](get-machines.md)

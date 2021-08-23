@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在不同的 MDM 和 MAM 方法之间选择。
-ms.openlocfilehash: 933aacd950f67eaab9b538fd6b029a4b6f71d807a27bd33c9139650f57f1d7b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 887dae650dd0635724a59ebb3c1ddf5bc0d38418
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826227"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377699"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>用于保护设备和应用数据的选项
 
@@ -31,14 +31,14 @@ ms.locfileid: "53826227"
 
 - Intune (Microsoft Endpoint Management) 
 - Azure Active Directory Premium计划。
-- 大多数 (商业版Microsoft 365企业版计划) 或使用包含某些或所有以前独立计划的订阅。
+- 大多数 (Microsoft 365 商业版和企业版计划) 中都包含基本移动性和安全性) 或者使用包含部分或所有以前独立计划的订阅。
 
 - 一Microsoft 365 商业高级版订阅，其中包括针对用户数不足 300 的小型企业的安全和威胁防护。
 - Microsoft 365 企业版高级安全和威胁防护的计划。
 
 ## <a name="device-management-options"></a>设备管理选项
 
-- **基本移动性和安全性** 与大多数Microsoft 365一起提供，是专为 Microsoft 365 商业标准版 和 Microsoft 365 商业基础版 提供的唯一内置选项。 有关详细信息，请参阅 [Basic Mobility and Security 的可用性](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。 
+- **基本移动性和安全性** 与大多数Microsoft 365一起提供，是专为 Microsoft 365 商业标准版 和 Microsoft 365 商业基础版 提供的唯一内置Microsoft 365 商业基础版。 有关详细信息，请参阅 [Basic Mobility and Security 的可用性](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。 
 
     如果你拥有 Microsoft 365 商业基础版 或 Microsoft 365 商业标准版，如果你的组织具有更复杂的安全需求，还可以购买 Intune。
  
@@ -48,11 +48,11 @@ ms.locfileid: "53826227"
 
 - **Azure Active Directory (AD) 高级版** 计划是独立计划，也随一些企业Microsoft 365计划一起提供。 有关详细信息，请参阅 [Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
-     Azure AD Premium P1和Azure AD Premium P2设置条件访问功能、自助服务密码重置等。有关计划功能的详细信息，高级版[Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)页面。
+     Azure AD Premium P1 Azure AD Premium P2设置条件访问功能、自助服务密码重置等。有关计划功能的详细信息，高级版[Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)页面。
 - **Microsoft 365 商业高级版** Intune、Azure Active Directory Premium P1 Office 365高级威胁防护。 
  
-    Microsoft 365 商业高级版一组用于保护设备和应用数据的策略模板。 它为用户数不足 300 的大多数企业提供了级别良好的安全和威胁防护。 有关详细信息，[请参阅在安装](../../business/set-up.md)向导Microsoft 365 商业高级版设置策略、Windows 10[计算机](../../business/secure-win-10-pcs.md)Microsoft 365 商业高级版[安全与合规功能](../../business/security-features.md)。
+    Microsoft 365 商业高级版一组用于保护设备和应用数据的策略模板。 它为用户数不足 300 的大多数企业提供了级别良好的安全和威胁防护。 有关详细信息，[请参阅在安装](../../business/set-up.md)向导Microsoft 365 商业高级版设置安全机制、Windows 10[计算机](../../business/secure-win-10-pcs.md)Microsoft 365 商业高级版[安全与合规功能](/security-and-compliance/security-your-business-data.md)。
 
 - **Microsoft 365订阅包括** Microsoft Intune，E5 还包括 Azure AD Premium 计划 1 和 2。
 
-    Microsoft 365 E5订阅提供最高级别的安全和威胁Microsoft 365保护。 有关详细信息，请参阅企业Microsoft 365[概述](../../enterprise/microsoft-365-overview.md)。
+    Microsoft 365 E5订阅提供最高级别的安全和威胁Microsoft 365保护。 有关详细信息，请参阅Microsoft 365[企业概述。](../../enterprise/microsoft-365-overview.md)

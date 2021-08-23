@@ -14,16 +14,16 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8c31ed87e8662d8e0b2bdc6321f980621a7c08d7c32fa4f7b0c7d6fc285042c9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb639139e083ed613dea018131e7748cd063e37c
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888264"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372525"
 ---
 # <a name="step-1-create-a-test-base-account"></a>步骤 1：创建测试基础帐户
 
-如果你没有 Azure 订阅，在开始之前 [创建一](https://azure.microsoft.com/en-us/free/) 个免费帐户。
+如果你没有 Azure 订阅，在开始之前 [创建一](https://azure.microsoft.com/free/) 个免费帐户。
 
 ## <a name="enter-details-for-test-base-account"></a>输入测试基本帐户的详细信息
  
@@ -53,7 +53,7 @@ ms.locfileid: "53888264"
 
 前进到下一篇文章，开始使用步骤 **2：了解如何上传程序包。**
 > [!div class="nextstepaction"]
-> [下一步](uploadApplication.md)
+> [后续步骤](uploadApplication.md)
 
 <!---
 Add button for next page

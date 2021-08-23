@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d4ae05517583a8368ba7936a942e5ec06a9414f7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1ecf74b1fe53c20d72f472796c6a7eaf5ded9741
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257320"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360115"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -46,10 +46,10 @@ ms.locfileid: "58257320"
 可以选择通过"高级功能"页关闭 [设备](advanced-features.md) 发现。 但是，你将丢失网络中非托管设备的可见性。 
 
 ## <a name="what-is-standard-discovery-mode"></a>什么是标准发现模式？
- 在此模式下，载入到 Microsoft Defender for Endpoint 的终结点可以主动探测网络中观测到的设备，以丰富收集的数据 (网络流量可以忽略不计) 。 强烈建议使用此模式生成可靠且一致的设备清单。 如果选择禁用此模式，并选择"基本发现模式"，可能只会获得网络中非托管终结点的有限可见性。
+ 在此模式下，载入到 Microsoft Defender for Endpoint 的终结点可以主动探测网络中观察到的设备，以丰富收集的数据 (网络流量可以忽略不计) 。 强烈建议使用此模式生成可靠且一致的设备清单。 如果选择禁用此模式，并选择"基本发现模式"，可能只会获得网络中非托管终结点的有限可见性。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>我能否控制哪些设备执行标准发现？
- 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前 Windows 10 设备仅) 或者通过指定设备的设备标记来选择设备的子集。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
+ 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前仅 Windows 10 设备) 或者通过指定设备的设备标记来选择设备的子集。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>能否从设备清单列表中排除非托管设备？
 是，你可以应用筛选器，从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。 
@@ -65,7 +65,7 @@ ms.locfileid: "58257320"
  默认情况下，在 Windows 10 版本 1809 或更高版本上运行的所有已载入设备将捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (标头) 、UDP (标头) 、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>在标准发现中，使用哪些协议进行主动探测？
- 当设备配置为运行标准发现时，会使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync
+ 当设备配置为运行标准发现时， 使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、HTTPS、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL、RPC、mDNS、DHCP、AFP、CrestonCIP、IphoneSync、WinRM、VNC、SLP
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>如何排除使用标准发现对目标进行探测？
  如果网络上有些设备不应主动探测器，则还可以定义排除列表以防止它们被扫描。 配置在设备发现设置页中提供。
@@ -99,7 +99,7 @@ ms.locfileid: "58257320"
 在考虑标准发现时，你可能想知道探测的含义，尤其是安全工具是否怀疑此类活动是恶意活动。 以下子部分将解释为什么在几乎所有情况下，组织无需担心启用标准发现。  
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>探测分布于Windows设备上的所有设备
-与恶意活动（通常从少量受损设备扫描整个网络）相反，Microsoft Defender for Endpoint 的标准发现探测从所有已载入的 Windows 设备启动，使活动变好且非异常。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
+与恶意活动（通常从少量受损设备扫描整个网络）相反，Microsoft Defender for Endpoint 的标准发现探测从所有已载入的 Windows 设备启动，使活动成为恶意和非异常活动。 从云中集中管理探测，以平衡网络中所有受支持的已载入设备之间的探测尝试。  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>活动探测产生的额外流量可以忽略不计
 通常，非托管设备在三周内进行探测的时间不会超过一次，并生成小于 50KB 的流量。 恶意活动通常包括高重复探测尝试，在某些情况下，会生成大量的网络流量，网络监视工具可能会发现这些数据异常。 
@@ -115,4 +115,4 @@ active discovery capabilities have always been embedded in the Windows operating
 设备发现功能已构建为仅发现和标识网络上非托管设备。 这意味着不会探测之前发现的已载入 Microsoft Defender for Endpoint 的设备。 
 
 ### <a name="you-can-exclude-network-lures-from-active-probing"></a>你可以从活动探测中排除网络诱使
-标准发现支持将子网中的设备或 (排除) 活动探测中。 如果已部署网络部署，可以使用设备发现设置根据 IP 地址或子网定义排除 (一系列 IP 地址) 。 定义这些排除项将确保这些设备不会主动探测，也不会发出警报。 这些设备将仅使用被动方法发现 (基本发现模式) 。
+标准发现支持将子网中的设备或 (排除) 活动探测中。 如果已部署网络部署，可以使用设备发现设置根据 IP 地址或子网定义排除 (一系列 IP 地址) 。 定义这些排除项将确保这些设备不会主动探测，也不会发出警报。 这些设备将仅与基本发现模式 (被动方法发现) 。

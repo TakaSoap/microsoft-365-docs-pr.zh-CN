@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c6f48b0dfdeee717162d8ebe031b162e2970959
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 5604a6021150a7de4b287d91064c60f55be92500
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347092"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58360091"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -268,3 +268,7 @@ ms.locfileid: "58347092"
 有关部署规划和指南（包括许可信息、权限、部署策略、支持的方案列表和最终用户文档），请参阅 [敏感度标签入门](get-started-with-sensitivity-labels.md)。
 
 如需了解如何使用敏感度标签以遵守数据隐私法规，请参阅[使用 Microsoft 365 为数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。
+
+## <a name="see-also"></a>另请参阅
+
+[管理 Microsoft Teams 连接的网站和频道网站](/SharePoint/teams-connected-sites)

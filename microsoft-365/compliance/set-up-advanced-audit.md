@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级审核，以便可以在用户帐户泄露时执行取证调查或调查其他与安全相关的事件。
-ms.openlocfilehash: ed4e2a8c423631cfa1c846f271d8df9361ca6414002d026cc515ddcd78842784
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23f5c9ce4212e4974de97977bb2e0785bad69ed
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841544"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386956"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
@@ -46,15 +46,15 @@ ms.locfileid: "53841544"
 
 5. 如果未选中复选框，请选中它，然后单击"保存 **更改"。**
 
-   MailItemsAccessed 和 Send 的审核记录日志记录将在 24 小时内开始。 您必须执行步骤 3 才能开始记录其他两个高级审核关键事件：SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint。
+   MailItemsAccessed 和 Send 的审核记录日志记录将在 24 小时内开始。 您必须执行步骤 3 才能开始记录其他两个高级审核事件：SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint。
 
 对于使用基于组的许可将许可证分配给用户组的组织，必须为组禁用 Microsoft 365 高级审核的许可分配。 保存所做的更改后，请验证是否已为组禁用 Microsoft 365 高级审核。 然后，重新为组启用许可分配。 有关基于组的许可的说明，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
-此外，如果已自定义登录用户邮箱或共享邮箱的邮箱操作，Microsoft 发布的任何新关键事件将不会在这些邮箱上自动审核。 有关更改为每个登录类型审核的邮箱操作的信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的“更改或还原默认记录的邮箱操作”部分。
+此外，如果已自定义登录用户邮箱或共享邮箱的邮箱操作，Microsoft 发布的任何新高级审核事件将不会在这些邮箱上自动审核。 有关更改为每个登录类型审核的邮箱操作的信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的“更改或还原默认记录的邮箱操作”部分。
 
-## <a name="step-2-enable-crucial-events"></a>步骤 2：启用关键事件
+## <a name="step-2-enable-advanced-audit-events"></a>步骤 2：启用高级审核事件
 
-当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 这两个关键事件。 ( 若要为用户审核这两个事件，请为 ([PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的) 运行Exchange Online命令：
+当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请为在 PowerShell 中 (每个用户) 以下[Exchange Online命令](/powershell/exchange/connect-to-exchange-online-powershell)：
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -72,6 +72,6 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 除了将 Exchange、SharePoint 和 Azure AD 审核记录保留一年的默认策略外，可以创建其他审核日志保留策略以满足组织安全操作、IT 和合规团队的要求。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
-## <a name="step-4-search-for-crucial-events"></a>步骤 4：搜索关键事件
+## <a name="step-4-search-for-advanced-audit-events"></a>步骤 4：搜索高级审核事件
 
-现在，你已为组织设置了高级审核，可以在执行取证调查时搜索关键事件和其他活动。 完成步骤 1 和步骤 2 后，可以在调查泄露的帐户和其他类型的安全或合规性调查期间，在 审核日志 中搜索关键事件和其他活动。 有关使用 MailItemsAccessed 关键事件对遭到入侵的用户帐户进行取证调查详细信息，请参阅使用高级审核调查遭到入侵 [的帐户](mailitemsaccessed-forensics-investigations.md)。
+现在，你已为组织设置了高级审核，可以在执行取证调查时搜索关键的高级审核事件和其他活动。 完成步骤 1 和步骤 2 后，可以在调查遭到入侵的帐户和其他类型的安全或合规性调查期间，在 审核日志 中搜索高级审核事件和其他活动。 有关使用 MailItemsAccessed 高级审核事件对遭到入侵的用户帐户进行取证调查详细信息，请参阅使用高级审核调查遭到入侵 [的帐户](mailitemsaccessed-forensics-investigations.md)。

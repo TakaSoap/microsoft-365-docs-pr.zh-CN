@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea48f3e69630a61c8e3156ab156fb0365ff9c100
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 10fba72dbd22419d9941b20609c45d507cb0b206
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356176"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372516"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -74,14 +74,14 @@ ms.locfileid: "58356176"
     ```bash
     sudo yum install yum-utils
     ```
-- 记下你的分发和版本，并确定最近的条目 (按主要，然后在 下) 次要条目 `https://packages.microsoft.com/rhel/` 。
+- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
 
     使用下表可帮助指导你找到程序包： 
 
     |     发布&版本    |     程序包    |
     |---|---|
-    |     对于 RHEL 8.0-8.5    |     https://packages.microsoft.com/rhel/8/prod/    |
-    |     对于 RHEL 7.2-7.9    |     https://packages.microsoft.com/rhel/7/prod/    |
+    |     对于 RHEL 8.0-8.5    |     https://packages.microsoft.com/config/rhel/8/prod/    |
+    |     对于 RHEL 7.2-7.9    |     https://packages.microsoft.com/config/rhel/7/prod/    |
 
     在下列命令中，将 *[version]* *和 [channel]* 替换为已识别的信息：
 
@@ -89,19 +89,19 @@ ms.locfileid: "58356176"
     > 对于 Oracle Linux，将 *[distro]* 替换为"rhel"。
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
     ```
 
     例如，如果你运行的是 CentOS 7，并且想要从 *Prod* 渠道在 Linux 上部署 Defender for Endpoint：
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
     或者，如果你想要在所选设备上探索新功能，你可能想要在 Linux 上将 Microsoft Defender for Endpoint 部署到预览 *体验成员-快频道* ：
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
     ```
 
 - 安装 Microsoft GPG 公钥：
@@ -118,18 +118,18 @@ ms.locfileid: "58356176"
 
 ### <a name="sles-and-variants"></a>SLES 和变量
 
-- 记下你的分发和版本，并确定最近的条目 (按主要，然后在 下) 次要条目 `https://packages.microsoft.com/sles/` 。
+- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
 
     在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
     例如，如果你运行的是 SLES 12，并且想要从 *Prod* 通道在 Linux 上部署 Microsoft Defender for Endpoint：
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
     ```
 
 - 安装 Microsoft GPG 公钥：
@@ -152,18 +152,18 @@ ms.locfileid: "58356176"
     sudo apt-get install libplist-utils
     ```
 
-- 记下你的分发和版本，并确定最近的条目 (按主要，然后在 下) 次要条目 `https://packages.microsoft.com/[distro]/` 。
+- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
 
     在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
     例如，如果你运行的是 Ubuntu 18.04，并且想要从 *Prod* 渠道在 Linux 上部署 Microsoft Defender for Endpoint：
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
     ```
 
 - 安装存储库配置：
@@ -269,8 +269,8 @@ ms.locfileid: "58356176"
     ```
 
     ```Output
-    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
+    deb [arch=amd64] https://packages.microsoft.com/cofig/ubuntu/18.04/prod bionic main
     ```
 
     ```bash
@@ -279,9 +279,9 @@ ms.locfileid: "58356176"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从应用门户下载Microsoft 365 Defender包：
+从门户下载Microsoft 365 Defender包：
 
-1. 在 Microsoft 365 Defender 门户中，转到"设置 >终结点 **>">载入"。**
+1. 在Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
@@ -346,11 +346,11 @@ ms.locfileid: "58356176"
     > mdatp health --field definitions_status
     > ```
     >
-    > 请注意，完成初始安装后，可能还需要配置代理。 请参阅 [在 Linux 上为终结点配置静态代理发现：安装后配置](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
+    > 请注意，完成初始安装后，可能还需要配置代理。 请参阅 [在 Linux 上为终结点配置静态代理发现：安装后配置](linux-static-proxy-configuration.md#post-installation-configuration)。
 
 5. 运行检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-    - 确保实时保护 (由运行以下命令或命令的结果 `1`) ：
+    - 确保启用实时保护 (运行以下命令或命令的结果 `1`) ：
 
         ```bash
         mdatp health --field real_time_protection_enabled
@@ -368,15 +368,15 @@ ms.locfileid: "58356176"
         mdatp threat list
         ```
 
-## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>通过模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>使用模拟攻击体验 Linux 终结点 (EDR) 响应和响应功能
 
 若要测试适用于 Linux EDR的功能，请按照以下步骤在 Linux 服务器上模拟检测并调查这种情况。
 
-1. 验证载入的 Linux 服务器是否Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
+1. 验证载入的 Linux 服务器是否显示在Microsoft 365 Defender。 如果这是计算机首次载入，可能需要最多 20 分钟才会显示。
 
 2. 将脚本文件 [下载并](https://aka.ms/LinuxDIY) 解压缩到载入的 Linux 服务器并运行以下命令： `./mde_linux_edr_diy.sh`
 
-3. 几分钟后，应在测试中引发Microsoft 365 Defender。
+3. 几分钟后，应在运行中引发Microsoft 365 Defender。
 
 4. 查看警报详细信息、计算机时间线，并执行典型的调查步骤。
 
@@ -421,7 +421,7 @@ Options:
     sudo yum remove mdatp
     ```
 
-1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库
+1. 在 Linux 客户端上禁用 Defender for Endpoint Insiders-Fast存储库
 
     ```bash
     sudo yum repolist

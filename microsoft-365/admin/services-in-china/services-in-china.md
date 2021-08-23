@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3d91c452ddaca7b8214bffcfa7764515f12fac9ebee07fc6d3749767148a652a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57126d37e8abe64ed2cbee1c1c271de91cf547d8
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822317"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399775"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -78,7 +78,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
 |:-----|:-----|
 |通过电子邮件与组织外部的某人共享文档、库或网站  <br/> |该功能是可用的，但默认情况下是关闭的，因为使用该功能可能会使共享的文件在国家/地区之外受到访问。 管理员确实能够将其打开，但会收到一条警告消息，表明它可以使共享文件在你所在的国家/地区之外获得访问。 试图与组织以外的人共享的用户也将收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。  <br/> |
 |Access Services  <br/> |支持 Access 2013，但可能不支持添加新 Access 应用，因为将在 Office 365 和 SharePoint Online 中停用此功能。 从 2017 年 6 月起，将停止在 Office 365 和 SharePoint Online 中创建新的基于 Access 的 Web 应用和 Access Web 数据库，并于 2018 年 4月停止任何仍存在的 Web 应用和 Web 数据库。 此外，不支持 Access 2010 功能，并且尝试使用 Access 2010 数据库将导致错误并可能造成数据丢失。  <br/> |
-|Microsoft PowerApps  <br/> |即将推出。  <br/> |
+|Microsoft Power Apps  <br/> |即将推出。  <br/> |
 |信息权限管理 (IRM)  <br/> |为您的组织将 IRM 功能设置为 SharePoint 的功能即将推出。  <br/> |
 |翻译文本或页面的功能  <br/> |可用，但默认关闭。 租户管理员可以开启此功能，但翻译云服务可能位于你所在的国家/地区之外。 如果不希望用户将内容发送到翻译云服务，则可以保持禁用这些功能。  <br/> |
 |公共网站 ICP 注册  <br/> |中国 Internet 合规政策要求公众号必须获得 Internet 内容提供商（ICP）编号。  |

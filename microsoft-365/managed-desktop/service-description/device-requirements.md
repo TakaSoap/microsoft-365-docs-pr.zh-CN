@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 559cec70c4f699d0f6a849aec8235a22903a5050becb4469824b17908025f32d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877661"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372684"
 ---
 # <a name="device-requirements"></a>设备要求
 
-Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍设备必须满足的硬件和软件要求才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备列表。 筛选Microsoft 托管桌面[商店Windows 10 专业版业务设备"站点上的筛选器](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍了设备必须满足的硬件和软件要求，才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备的列表。 筛选Microsoft 托管桌面[购买Windows 10 专业版商业设备"网站上的内容](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > 这些要求可能随时更改，但我们会提前 30 天通知任何硬件要求更改。 最近更改的要求标有 **\*** 。 
@@ -50,7 +50,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 - 所有适用的设备驱动程序
 
 > [!NOTE]
-> Windows 11 在达到常规可用性后，它将是预安装软件的其他选项。
+> Windows 11 一旦达到常规可用性，它将是预安装软件的其他选项。
 >
 ### <a name="physical-features"></a>物理功能
 
@@ -81,7 +81,7 @@ Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文
 
 - Intel vPro 平台处理器或 AMD Ryzen Pro处理器
 - 容量至少为 256 GB 的 SSD 类型的启动驱动器
-- 内部设备内存 (内存) 至少为 16 GB
+- 内部设备内存 (RAM) 至少为 16 GB
 - 对现代待机的支持
 - 设备为安全核心电脑类型
 - 支持内核 DMA 保护

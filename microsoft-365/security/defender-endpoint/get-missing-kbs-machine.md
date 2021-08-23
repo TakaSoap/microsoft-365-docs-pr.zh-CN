@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 30428565f082610c64c65da88fad614ef755e557fa56b0fc278cc62bf9d88c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b2305472f19ac0424861a30034c2fdd45bd753c
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829311"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399727"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>按设备 ID 获取缺少的 KB
 
@@ -42,6 +42,13 @@ ms.locfileid: "53829311"
 ```http
 GET /api/machines/{machineId}/getmissingkbs
 ```
+## <a name="permissions"></a>权限
+
+调用此 API 需要以下权限。 若要了解更多信息，包括如何选择权限，请参阅使用[Microsoft Defender for Endpoint API。](apis-intro.md)
+
+权限类型 | 权限 | 权限显示名称
+:---|:---|:---
+应用程序 | Software.Read.All | "读取威胁和漏洞管理软件信息"
 
 ## <a name="request-header"></a>请求标头
 
@@ -87,8 +94,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93
             "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4540673",
             "machineMissedOn": 1,
             "cveAddressed": 97
-        },
-         ...
+        }
         ]
 }
 ```

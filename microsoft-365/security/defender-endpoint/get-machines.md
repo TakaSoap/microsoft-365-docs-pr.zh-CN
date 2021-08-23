@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1906511282b77cd7d49618779154b0ba54c5958041192435b5be6db2c53e3355
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903779"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372442"
 ---
 # <a name="list-machines-api"></a>列出计算机 API
 
@@ -41,9 +41,9 @@ ms.locfileid: "53903779"
 
 支持 [OData V4 查询](https://www.odata.org/documentation/)。
 
-OData 的 `$filter` 查询在 上受支持 `computerDnsName` `lastSeen` ：、、、、 `healthStatus` `osPlatform` 和 `riskScore` `rbacGroupId` 。
-
-有关示例， [请参阅使用 Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)
+OData 的查询在 上受支持 `$filter` `computerDnsName` `id` `version` `deviceValue` `aadDeviceId` `machineTags` ：、、、和 `lastSeen` `exposureLevel` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` 。
+<br>```$stop``` 最大值为 10，000
+<br>```$skip``` 有关示例， [请参阅使用 Defender for Endpoint 的 OData 查询](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>限制
 
@@ -63,7 +63,7 @@ OData 的 `$filter` 查询在 上受支持 `computerDnsName` `lastSeen` ：、�
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
@@ -84,7 +84,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且计算机存在 - 200 正常，正文中 [包含](machine.md) 计算机实体列表。 如果没有最近的计算机 - 404 未找到。
+如果成功且计算机存在 - 200 正常[](machine.md)，正文中具有计算机实体列表。 如果没有最近的计算机 - 404 未找到。
 
 ## <a name="example"></a>示例
 

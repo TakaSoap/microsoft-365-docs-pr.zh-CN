@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint 设备控件 可移动存储访问控制，可移动存储媒体
+title: Microsoft Defender for Endpoint 设备控件可移动存储访问控制，可移动存储媒体
 description: 有关 Microsoft Defender for Endpoint 的演练
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 769ccb8f50a6eb407d5a1a338f91af0bfd8ae401
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c65fcb93740f975c34534e1af244dcca20ce043c
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246203"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58387124"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -28,7 +28,7 @@ ms.locfileid: "58246203"
 > 该产品的组策略管理现在通常适用于 (4.18.2106) ：请参阅 Tech Community 博客：使用[Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)保护可移动存储和打印机 
 
 
-Microsoft Defender for Endpoint Device Control Removable 存储 Access Control 使你能够执行以下任务：
+Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能够执行以下任务：
 
 - 审核，允许或阻止对可移动存储进行读取、写入或执行访问（带排除或不排除）
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 
 | Privilege | 权限 |
 |:---|:---|
-| Access | 读取、写入、执行 |
+| 访问权限 | 读取、写入、执行 |
 | 操作模式 | 审核、允许、阻止 |
 | 云解决方案提供商支持 | 是 |
 | GPO 支持 | 是 |
@@ -47,16 +47,16 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
-在存储 **4.18.2103.3** 或更高版本的 Windows 10 设备上部署可移动访问控制。
+在反存储客户端版本 **4.18.2103.3** Windows 10设备上部署可移动访问控制。
 
 - **4.18.2104 或更高版本**：添加 SerialNumberId、VID_PID、基于 filepath 的 GPO 支持、ComputerSid
 - **4.18.2105** 或更高版本：添加对 HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId 的通配符支持，特定计算机上特定用户的组合、可删除的 SSD (SanDisk 极性 SSD) /USB 附加 SCSI (UAS) 支持
-- **4.18.2107 或** 更高版本：添加 Windows 可移植设备 (WPD) 支持 (移动设备（如平板电脑或) 
+- **4.18.2107 或** 更高版本：添加 Windows 可移植设备 (WPD) 支持 (移动设备（如平板电脑或) ;将 AccountName 添加到 [高级搜寻](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell 接口":::
 
 > [!NOTE]
-> 任何Windows 安全中心组件都不需要处于活动状态，因为您可以独立于存储状态运行可移动Windows 安全中心访问控制。
+> 任何Windows 安全中心组件都不需要处于活动状态，因为您可以独立于存储运行可移动Windows 安全中心访问控制。
 
 ## <a name="policy-properties"></a>策略属性
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 |属性名称  |说明  |Options  |
 |---------|---------|---------|
 |**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)是一个唯一 ID，表示组，将在策略中使用。      |         |
-|**DescriptorIdList**     |  列出你想要在组中覆盖的设备属性。 有关每个设备属性的详细信息，请参阅 [设备](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) 属性。       |  - **PrimaryId**：RemovableMediaDevices、CdRomDevices、WpdDevices</br> - **DeviceId** </br>- **HardwareId**</br>- **InstancePathId**：InstancePathId 是一个唯一标识系统中设备的字符串，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0。 末尾的编号 (例如 0 &0) 表示可用插槽，并且可能会从设备更改为设备。 为获得最佳结果，请结尾使用通配符。 例如，USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId**</br>- **SerialNumberId**</br>- **VID**</br>- **PID**</br>- **VID_PID**</br> 0751_55E0：匹配此精确的 VID/PID 对 </br>_55E0：匹配 PID=55E0 </br> 0751_ 的任何媒体：匹配任何具有 VID=0751 的媒体 |
+|**DescriptorIdList**     |  列出你想要在组中覆盖的设备属性。 有关每个设备属性的详细信息，请参阅 [设备](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) 属性。       |  - **PrimaryId**：RemovableMediaDevices、CdRomDevices、WpdDevices</br> - **DeviceId** </br>- **HardwareId**</br>- **InstancePathId**：InstancePathId 是一个唯一标识系统中设备的字符串，例如 USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0。 例如， (0 &0) 表示可用插槽，并且可能会从设备更改为设备。 为获得最佳结果，请结尾使用通配符。 例如，USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId**</br>- **SerialNumberId**</br>- **VID**</br>- **PID**</br>- **VID_PID**</br> 0751_55E0：匹配此精确的 VID/PID 对 </br>_55E0：匹配 PID=55E0 </br> 0751_ 的任何媒体：匹配任何具有 VID=0751 的媒体 |
 |**MatchType**     |    当 DescriptorIDList 中使用多个设备属性时，MatchType 将定义关系。     |  **MatchAll**： </br>DescriptorIdList 下的任何属性将为 **And** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 中，系统将检查 USB 是否同时满足这两个值。 </br> </br>**MatchAny**：</br> DescriptorIdList 下的属性将为 **Or** 关系;例如，如果管理员将 DeviceID 和 InstancePathID 放在每个连接的 USB 上，只要 USB 具有相同的 **DeviceID** 或 **InstanceID** 值，系统就会执行强制操作。       |
 ||||
 
@@ -100,28 +100,28 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 
 2. 创建策略
     1. 策略 1：阻止写入和执行访问，但允许批准的 USB。 此用例的一个示例是：示例方案 [1](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)阻止写入和执行访问但允许批准的 USBs.xml文件中的 PolicyRule **c544a991-5786-4402-949e-a032cb790d0e。**
-    2. 策略 2：审核对允许的 USB 的写入和执行访问权限。 此用例的一个示例是：对批准的 [USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件进行审核写入和执行访问示例中的 PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c。**
+    2. 策略 2：审核对允许的 USB 的写入和执行访问权限。 此用例的一个示例是：方案 [1](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)审核写入和执行对已批准 USBs.xml文件的访问示例中的 PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c。**
 
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>方案 2：审核对全部（但阻止特定未批准的 USB）的写入和执行访问权限
 
 1. 创建组
-    1. 组 1：任何可移动存储和 CD/DVD。 此用例的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file 中的 Group **9b28fae8-72f7-4267-a1a5-685f747a7146。**
-    2. 组 2：基于设备属性的未批准的 USB，例如未批准的 USB Group.xml文件中供应商 ID/产品 ID、友好名称 – 组 **65fa649a-a111-4912-9294-fb6337a25038。** [](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. 组 1：任何可移动存储和 CD/DVD。 此用例的一个示例是：示例 Any [Removable 存储 and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件中 Group **9b28fae8-72f7-4267-a1a5-685f747a7146。**
+    2. 组 2：基于设备属性（例如，供应商 ID/产品 ID、友好名称 – 组 **65fa649a-a111-4912-9294-fb6337a25038）** 的未批准 USB Group.xml文件中未批准的 [USB。](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
     > [!NOTE]
     > 您必须在 值 `&` 中 `&amp;` 将 替换为 。
 
 2. 创建策略
-    1. 策略 1：阻止对全部（但阻止特定未批准的 USB）的写入和执行访问。 此用例的一个示例是：示例方案 2 审核写入和执行对除阻止特定未批准的 [USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件的访问中的 PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98。**
+    1. 策略 1：阻止对全部（但阻止特定未批准的 USB）的写入和执行访问。 此用例的一个示例是：示例方案 2 审核写入和执行对除阻止特定未批准的 [USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件外的所有权限中的 PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98。**
     2. 策略 2：审核写入和执行对他人的访问。 此用例的一个示例是：对 [others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)文件进行审核写入和执行访问示例中的 PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48。**
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>通过组策略部署和管理策略
 
-通过"存储访问控制"功能，可以通过组策略将策略应用于用户或设备，或同时应用到两者。
+使用可移动存储访问控制功能，可以通过组策略将策略应用于用户或设备，或同时应用于两者。
 
-### <a name="licensing"></a>许可
+### <a name="licensing"></a>授权
 
-在开始使用可移动控件存储，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问并使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
+在开始使用"可移动存储访问控制"之前，必须确认Microsoft 365 [订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问并使用可移动存储访问控制，您必须具有Microsoft 365 E3或Microsoft 365 E5。
 
 ### <a name="deploying-policy-via-group-policy"></a>通过组策略部署策略
 
@@ -139,7 +139,7 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="显示指示 SID 属性属性使用情况的代码的屏幕":::
 
-3. 在网络共享文件夹中保存规则和组 XML 文件，将网络共享文件夹路径放入组策略设置：**计算机** 配置 管理模板 \>  \> **Windows 组件** \> **Microsoft Defender 防病毒** \> **设备控制****：'定义设备控制策略组'** 和'定义设备控制策略规则 **'。**
+3. 在网络共享文件夹中保存规则和组 XML 文件，将网络共享文件夹路径放入组策略设置：**计算机** 配置 管理模板 \>  \> **Windows 组件** \> **Microsoft Defender 防病毒** \> **设备控制****：'定义设备控制策略组'** 和'定义设备控制 **策略规则'。**
 
    如果在组策略中找不到策略配置 UX，则可以通过选择"原始"，然后选择"另存为"来下载 [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml)和 [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) **文件**。
 
@@ -193,7 +193,7 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>使用 Intune 用户界面部署和管理策略
 
-此功能 (管理中心 Microsoft Endpoint Manager设备配置文件 () 创建配置文件平台 <https://endpoint.microsoft.com/> \> \> \> \> ：Windows 10 及更高版本的 & 配置文件：设备控制) 尚不可用。
+此功能 (管理中心 Microsoft Endpoint Manager设备配置文件 () 创建配置文件平台 <https://endpoint.microsoft.com/> ：Windows 10 及更高版本 & 配置文件：设备控制) \> \> \> \> 尚不可用。
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 存储设备控件可移动访问控件数据
 
@@ -204,7 +204,7 @@ Microsoft Defender for Endpoint Device Control Removable 存储 Access Control �
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot;
+| where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
@@ -218,8 +218,7 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend MediaVolume = tostring(parsed.Volume) 
-| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 

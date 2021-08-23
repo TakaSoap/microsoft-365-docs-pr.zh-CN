@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 本文将了解如何使用 PowerShell 向未授权Microsoft 365许可证。
-ms.openlocfilehash: 08aab95c0d864437210de557bd48b9bb0a0ee3e2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356032"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58417959"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户分配许可证
 
@@ -40,7 +40,7 @@ ms.locfileid: "58356032"
 
 - Microsoft 365 管理员中心
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - Azure [门户 (](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) Active **Directory** 用户>配置文件>  >    >  **或**  >  **区域联系人信息) 。**
+ - Azure [门户 (](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) Active **Directory**>  >  用户帐户>**配置文件** 联系人  >  **信息**""国家/地区  >  **") 。**
 
 >[!Note]
 >[了解如何使用用户帐户分配许可证Microsoft 365 管理中心。](../admin/manage/assign-licenses-to-users.md) 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
@@ -48,7 +48,7 @@ ms.locfileid: "58356032"
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先[，连接到你的Microsoft 365租户。](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
 接下来，使用此命令列出租户的许可证计划。
@@ -87,9 +87,9 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-请注意，当此模块的功能在适用于 Graph 模块的更高版本的[PowerShell](/powershell/azuread/v2/azureactivedirectory)中可用时，我们将开始Azure Active Directory弃用此模块。 我们建议创建新 PowerShell 脚本的客户使用较新的模块而不是此模块。
+请注意，当此模块的功能在适用于 Graph 模块的更高版本的[PowerShell](/powershell/azuread/v2/azureactivedirectory)中可用时，我们将Azure Active Directory弃用此模块。 我们建议创建新 PowerShell 脚本的客户使用较新的模块而不是此模块。
 
-首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先[，连接到你的Microsoft 365租户。](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 运行 `Get-MsolAccountSku` 命令以查看组织中可用的许可计划以及每个计划的可用许可证数量。 每个计划中可用的许可证数量为 **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。 有关许可计划、许可证和服务的信息，请参阅 [使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
@@ -163,7 +163,7 @@ Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly |
   
 ## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>使用 PowerShell for (模块将) 移动到其他订阅Azure Active Directory许可证Graph计划
 
-首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先[，连接到你的Microsoft 365租户。](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 接下来，获取要切换订阅的用户帐户的登录名，也称为 UPN (用户) 。
 
@@ -182,9 +182,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-确定用户当前 (FROM 订阅订阅) 以及用户要移动到的订阅 (TO 订阅) 。
+确定用户当前 (FROM) 订阅订阅的订阅，以及用户 (TO 订阅) 。
 
-最后，使用 SKU (指定 TO 和 FROM) 并运行这些命令。
+最后，指定 SKU (的 TO 和 FROM) 并运行这些命令。
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -192,10 +192,6 @@ $subscriptionTo="<SKU part number of the new subscription>"
 # Unassign
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$licenses.AddLicenses = @()
 $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 # Assign

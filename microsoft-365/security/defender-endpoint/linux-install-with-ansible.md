@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9f65d7280ccbc2b780a693e1c259e3f3d6c6400
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 452a8238499f4c083b24c6ab01a95696334e6081
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357001"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372708"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -41,7 +41,7 @@ ms.locfileid: "58357001"
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建易读 YAML 文件](#create-ansible-yaml-files)
 - [部署](#deployment)
-- [References](#references)
+- [参考](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
@@ -50,7 +50,7 @@ ms.locfileid: "58357001"
 此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
 
 - Ansible 需要至少安装在一 (Ansible 调用此控件节点) 。
-- 必须在控制节点和将安装 Defender for Endpoint) 的所有托管节点 (设备之间为管理员帐户配置 SSH，建议使用公钥身份验证进行配置。
+- 必须在控制节点和将在这些设备上安装了 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证进行配置。
 - 必须在所有托管节点上安装以下软件：
   - 一个
   - python-apt
@@ -71,7 +71,7 @@ ms.locfileid: "58357001"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从应用门户下载Microsoft 365 Defender包：
+从门户下载Microsoft 365 Defender包：
 
 1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
@@ -138,7 +138,7 @@ ms.locfileid: "58357001"
     > [!WARNING]
     > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-    记下分发和版本，并确定 其最接近的 `https://packages.microsoft.com/[distro]/` 条目。
+    记下分发和版本，并确定 其最接近的 `https://packages.microsoft.com/config/[distro]/` 条目。
 
     在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息。
 
@@ -154,7 +154,7 @@ ms.locfileid: "58357001"
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -171,7 +171,7 @@ ms.locfileid: "58357001"
       name: packages-microsoft-com-prod-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/config/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"

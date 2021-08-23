@@ -20,12 +20,12 @@ search.appverid:
 description: 了解 Microsoft 365 商业高级版，这是一种处理 IT 部分的订阅服务。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 3dd2a4c549e38660a7df928645cd6932e1a5b09af72f3f2ec3805a4c7aef1e68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a31ce38a0ef6b04be5ad9af90e9e4c54e7b256b
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838027"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377711"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 商业高级版
 
@@ -49,4 +49,4 @@ Microsoft 365商业高级版是一项订阅服务，可让您在云中运行组�
 
 如有 Microsoft 商业高级版，设置安全性并开始安全协作的最快方法是遵循此库中的指南：[面向小型企业和活动的 Microsoft 365](../campaigns/index.md)。 此指南是与 Microsoft Defending Democracy 团队合作制定的，旨在保护所有小型企业客户免受老练黑客发起的网络威胁。 
 
-有关详细信息，请参阅[Microsoft 365商业内容](../business/index.yml)。
+有关详细信息，请参阅[Microsoft 365商业内容](../admin/index.yml)。

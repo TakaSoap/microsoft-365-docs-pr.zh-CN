@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a7baac7b4af572884e329964ea30831976ec5f0258d81e6b9a1d44e4ed28fd6b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
+ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890907"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372828"
 ---
 # <a name="validate-new-devices"></a>验证新设备
 
-无论你完全不是Microsoft 托管桌面订阅者还是长期订阅者，最好测试首次在服务中注册的任何设备型号的示例。 无论你是订购全新的设备还是重新使用现有设备，包括建议在购买商业Microsoft 托管桌面购买Windows 10 专业版[的设备](https://www.microsoft.com/windowsforbusiness/view-all-devices)，都是如此。 在该网站中，查看建议用于服务的设备，方法为展开"按筛选"区域中的功能，然后选择 **"Microsoft 托管桌面"。** 验证设备可确保它们能够提供你期望的用户体验。
+无论你是完全Microsoft 托管桌面还是长期订阅者，最好测试首次在服务中注册的任何设备模型的示例。 无论你是订购全新的设备还是重新使用现有设备（包括建议在购买商业Microsoft 托管桌面购买Windows 10 专业版[的设备](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)）都是如此。 在该网站中，查看建议用于服务的设备，方法为展开"按筛选"区域中的功能，然后选择 **"Microsoft 托管桌面"。** 验证设备可确保它们能够提供你期望的用户体验。
 
 ## <a name="validate-devices"></a>验证设备
 

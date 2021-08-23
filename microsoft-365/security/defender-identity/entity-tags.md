@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 2dcb7767be7145420c08161782f27a51ec38727ae5d427459c4af1d9676cd37d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3e8ff4f94b0295b4ce42e20175a3547cfb4ae23
+ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844736"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359868"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Defender for Identity 实体标记Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "53844736"
 
 ![转到"设置"，然后转到"标识"](../../media/defender-identity/settings-identities.png)
 
-标记设置将显示在"**标签设置中**。
+标记设置将显示在实体标记 **下**。
 
 ![标记设置类型](../../media/defender-identity/tag-settings.png)
 
@@ -46,7 +46,7 @@ Sensitive **标记** 用于标识高价值资产。 横向移动路径还依赖�
 
 还可以手动将用户、设备或组标记为敏感。
 
-1. 选择 **敏感标记**。 然后，你将看到现有的敏感 **用户****、设备和****组**。
+1. 选择 **敏感**。 然后，你将看到现有的敏感 **用户****、设备和****组**。
 
     ![敏感实体](../../media/defender-identity/sensitive-entities.png)
 
@@ -64,7 +64,7 @@ Honeytoken 实体用作恶意主角的陷阱。 与这些 honeytoken 实体关�
 
 可以使用 **Honeytoken** 标记来标记用户或设备，方法与标记敏感帐户的方式相同。
 
-1. 选择 **Honeytoken 标记**。 然后，你将看到现有的 honeytoken **用户****和设备**。
+1. 选择 **Honeytoken**。 然后，你将看到现有的 honeytoken **用户****和设备**。
 
     ![Honeytoken 实体](../../media/defender-identity/honeytoken-entities.png)
 
@@ -80,11 +80,11 @@ Honeytoken 实体用作恶意主角的陷阱。 与这些 honeytoken 实体关�
 
 Defender for Identity Exchange服务器视为高价值资产，并自动将其标记为 **敏感**。 还可以手动将设备标记为Exchange服务器。
 
-1. 选择 **"Exchange服务器标记"。** 然后，你将看到标有 Exchange **服务器标记的现有** 设备。
+1. 选择 **Exchange服务器"。** 然后，你将看到标有 Exchange **服务器标记的现有** 设备。
 
     ![Exchange服务器](../../media/defender-identity/exchange-servers.png)
 
-1. 若要将设备标记为Exchange，请选择"**标记设备"。**  将打开一个窗格，并包含可选择标记的设备。 若要搜索设备，请在搜索框中输入其名称。
+1. 若要将设备标记为Exchange服务器，请选择"**标记设备"。**  将打开一个窗格，并包含可选择标记的设备。 若要搜索设备，请在搜索框中输入其名称。
 
     ![添加设备](../../media/defender-identity/add-devices.png)
 
