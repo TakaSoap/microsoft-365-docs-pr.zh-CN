@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1577b20cfa4f18a8db4fcba8d05a27bdacd693074ed3d14319101c6122cb443f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e4d2d9813081785f3883c11a3a4ae8e8420855
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834085"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378055"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -51,7 +51,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 - 每台设备的单个条目。
 
   > [!NOTE]
-  > 在这种情况下， *必须在创建会话* 时配置相同的设备名称，例如使用无人参与应答文件。
+  > 在这种情况下，创建会话时必须配置相同的设备名称，例如使用无人参与应答文件。
 
 - 每个设备有多个条目 - 每个会话一个条目。
 
@@ -67,15 +67,15 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
     1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
 
-    1. 选择Windows 10操作系统。
+    1. 选择Windows 10作为操作系统。
 
     1.  在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
 
     1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从 windowsDefenderATPOnboardingPackage 文件夹中从 .zip 文件复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
+2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 下的黄金/主映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
 
-    1. 如果你未针对每台设备实现单个条目，请复制 WindowsDefenderATPOnboardingScript.cmd。
+    1. 如果要为每台设备实现多个条目（每个会话一个条目），请复制 WindowsDefenderATPOnboardingScript.cmd。
 
     1. 如果你要针对每台设备实现单个条目，请同时复制 Onboard-NonPersistentMachine.ps1 和 WindowsDefenderATPOnboardingScript.cmd。
     
@@ -120,10 +120,10 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 6. 单击 **导航窗格上的** "设备列表"。
 
-7. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
+7. 输入设备名称并选择"设备"作为搜索类型 **，** 以使用搜索函数。
 
 
-## <a name="for-downlevel-skus"></a>对于下层 SKUs
+## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>对于下层 SKUS (Windows Server 2008 R2/2012 R2/2016) 
 
 > [!NOTE]
 > 以下注册表仅在目标是实现"每个设备的单个条目"时相关。
@@ -172,7 +172,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积的网络 https://download.sysinternals.com/files/PSTools.zip) 文件夹内容：
+4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe

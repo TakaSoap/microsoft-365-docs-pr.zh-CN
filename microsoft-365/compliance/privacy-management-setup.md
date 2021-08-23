@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: 63a6919b2aa4c368360414c683614d8bb4305fd0
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
+ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350036"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380208"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "58350036"
 有关详细的许可指南，请参阅 [适用于安全性与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 > [!Note]
-> 美国政府隐私管理的公共预览版不适用于美国政府 Community (GCC) 、GCC 高或国防部 (DoD) 客户。
+> 美国政府隐私管理的公共预览版不适用于美国政府Community (GCC) 中等GCC或国防部 (DoD) 客户。
 
 ## <a name="set-up-privacy-management"></a>设置隐私管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "58350036"
 
 ### <a name="accept-privacy-management-terms"></a>接受隐私管理条款
 
-首次打开隐私管理时，将要求您确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#how-we-evaluate-your-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
+首次打开隐私管理时，将要求您确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#where-privacy-management-identifies-personal-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
 
 如果你没有获得订阅或同意使用隐私管理条款所需的角色，系统将提示你联系全局管理员寻求帮助。
 
@@ -62,7 +62,7 @@ ms.locfileid: "58350036"
 
 ### <a name="manage-settings"></a>管理设置
 
-可通过设置管理主页右上角的齿轮访问"隐私管理"页面。 它允许隐私管理管理员跨隐私管理配置基本属性。
+可通过设置管理主页右上角的齿轮访问该页面。 它允许隐私管理管理员跨隐私管理配置基本属性。
 
 在开始之前，你可能希望查看默认配置并做出任何所需的调整。 若要了解有关选项的详细信息，请参阅 [管理隐私管理设置](privacy-management-settings.md)。
 

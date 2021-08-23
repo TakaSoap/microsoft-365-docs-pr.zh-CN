@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 市场活动或其他Microsoft 365 商业高级版的安装程序概述
-ms.openlocfilehash: 8bb358575c651cc2dc8097dd76ffa525b95fc5d77faeef5dde14faf2be34ca05
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a31a0046bd37b7bb905f96d054ea5c9809e744fa
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802970"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58378009"
 ---
 # <a name="set-up-microsoft-365"></a>设置Microsoft 365
 
@@ -42,9 +42,9 @@ ms.locfileid: "53802970"
 
 ![设置项目Microsoft 365](../media/M365-democracy-SetUpProcess.png)
 
-对于符合特殊定价资格的市场活动，请从请求[Microsoft](https://m365forcampaigns.microsoft.com/)邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
+对于符合特殊定价资格的市场活动，请从[](https://m365forcampaigns.microsoft.com/)Microsoft 请求邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
 
-对于所有其他组织，注册 Microsoft 365 商业高级版[后，](../business/sign-up.md)通过运行安装向导配置核心设置来完成设置。 [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
+对于所有其他组织，注册 Microsoft 365 商业高级版[后，](../business-video/sign-up.md)通过运行安装向导配置核心设置来完成设置[](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)。
 
 对于所有组织，通过：保护管理员帐户、[](m365-campaigns-protect-admin-accounts.md)保护对邮件和数据的访问[](m365-campaigns-conditional-access.md)以及增强[威胁防护来提升安全保护](m365-campaigns-increase-protection.md)。
 
@@ -58,10 +58,10 @@ ms.locfileid: "53802970"
 
 1. 每个用户 [设置其移动设备](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)。
 2. 对于非托管设备，用户设置其[电脑和 Mac。](m365-campaigns-protect-pcs-macs.md)
-对于关键员工，我们建议你使用 [托管设备来](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) 提供更好的保护。 对于所有设备，你需要设置 [多重身份验证](m365-campaigns-multifactor-authenication.md)。
+对于关键员工，我们建议你使用 [托管设备来](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) 提供更好的保护。 对于所有设备，你将希望设置 [多重身份验证](m365-campaigns-multifactor-authenication.md)。
 3. 所有用户都应了解如何通过了解网络钓鱼和其他攻击来保护自己和 [市场活动](m365-campaigns-phishing-and-attacks.md)。 此 [信息图](m365-campaigns-protect-campaign-infographic.md) 还可帮助用户了解如何帮助保护市场活动免受联机威胁。
 
-## <a name="contact-support"></a>联系技术支持部门
+## <a name="contact-support"></a>联系支持人员
 
  **如需联系支持人员：**
   

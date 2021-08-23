@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的文件创建和修改Excel模板。
-ms.openlocfilehash: 1b1bc9ea01905e38f695707db1b302c160ea5818
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: fe6b8a946edb84fbeb5eb002eb33c4af2790b23b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349868"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58393360"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合规性管理器中使用评估模板
 
@@ -34,7 +34,7 @@ ms.locfileid: "58349868"
 
 我们按与基础认证或法规相同的名称来引用模板，例如欧盟 GDPR 模板和 ISO/IEC 27701：2019 模板。 由于合规性经理可用于评估不同类型的产品，因此每个模板有两个版本：一个版本适用于 Microsoft 365，另一个版本可定制为适合你选择的产品。
 
-请注意，美国政府Community (GCC) 、GCC、美国国防部 (DoD) 客户当前可以使用 Microsoft 365 模板版本，但并非通用。
+请注意，美国政府Community (GCC) 、GCC和国防部 (DoD) 客户当前可以使用 Microsoft 365 模板版本，但并非通用。
 
 ## <a name="template-availability-and-licensing"></a>模板可用性和许可
 
@@ -49,13 +49,33 @@ ms.locfileid: "58349868"
 
 ### <a name="purchase-premium-template-licenses"></a>购买高级模板许可证
 
-可以在管理中心购买模板许可证， (订阅、许可证和帐单[) 。](/microsoft-365/commerce/) 选择要购买的许可证数量和付款计划。 您还可以通过参与计划或批量许可[云解决方案提供商获取](https://partner.microsoft.com/membership/cloud-solution-provider)[许可证](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+模板许可证可通过这些方法中的一种或多种方法获取，具体取决于合规性管理器许可协议。 完成购买后，模板应在 48 小时内在租户中可用。
 
-完成购买后，模板应在 48 小时内在租户中可用。
+**商业和GCC中等**
+
+商业和GCC中等帐户可以在管理中心购买模板许可证 ([了解有关](/microsoft-365/commerce/)订阅、许可证和帐单) 。 选择要购买的许可证数量和付款计划。
+
+购买链接：
+
+- [商业](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [GCC中等](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+
+您还可以通过参与计划或批量许可[云解决方案提供商获取](https://partner.microsoft.com/membership/cloud-solution-provider)[许可证](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
+
+**GCC高帐户和 DOD 帐户**
+
+GCC高和 DOD 帐户必须通过批量许可购买[模板许可证](https://www.microsoft.com/licensing/licensing-programs/licensing-programs)。
 
 ### <a name="try-out-premium-templates"></a>试用高级模板
 
 若要在购买前试用高级模板，还可以获取许可证的试用版。 试用许可证适用于最多 25 个模板，最多为 90 天。 获取试用版许可证后，模板应在 48 小时内在租户中可用。
+
+若要启动试用版，请选择适合贵组织的链接：
+
+- [商业](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+- [GCC中等](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC 高级](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
 #### <a name="active-and-inactive-templates"></a>活动模板和无效模板
 
@@ -76,7 +96,7 @@ ms.locfileid: "58349868"
 
 如果计数器显示 5/2，则表明你的组织超出其限制，需要购买 3 个使用中的高级模板。
 
-Microsoft 365和通用版本的模板具有联合许可，因此可以在多个产品之间使用相同的基础认证。 使用同一模板的任一或两个版本将仅计为一个激活的模板。
+Microsoft 365和通用版本的模板具有联合许可，以便可以在多个产品之间使用相同的基础认证。 使用同一模板的任一或两个版本将仅计为一个激活的模板。
 
 有关更多详细信息，请参阅合规性 [管理器许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
@@ -88,7 +108,7 @@ Select a template from its row to bring up its details page. 此页面包含模�
 
 ## <a name="format-template-data-with-excel"></a>将模板数据格式化为Excel
 
-The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?linkid=2124865)) used to create or modify templates has a specific format and schema that must be used in order to import correctly into Compliance Manager. 它包含四个选项卡，其中三个选项卡是必需的：
+The Excel spreadsheet ([download an example](https://go.microsoft.com/fwlink/?linkid=2124865)) used to create or modify templates has a specific format and schema that must be used in order to import correctly into Compliance Manager. 它包含四个选项卡，其中三个选项卡是必需的：
 
 1. [模板](#template-tab) (模板) 
 2. [ControlFamily](#controlfamily-tab) (必需) 
@@ -99,7 +119,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 ##### <a name="template-tab"></a>"模板"选项卡
 
-" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 列必须保留工作表中Excel的顺序，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必将它们添加到" **维度"** 选项卡。
+" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 列必须保留工作表上Excel，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必将它们添加到" **维度"** 选项卡。
 
 - **title**：这是模板的标题，必须是唯一的。 它不能与合规性管理器中拥有的另一个模板共享名称，包括你自己的模板或合规性管理器模板。
 
@@ -130,7 +150,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 " **操作** "选项卡是必需的。  它指定了由组织管理的改进操作，而不是 Microsoft 的改进操作，这些改进操作已存在于合规性管理器中。 此选项卡的必需列必须遵循示例电子表格中提供的顺序：
 
-- **actionTitle：** 这是操作的标题，是必填字段。 你提供的标题必须是唯一的。 **重要** 提示：如果你引用了自己已有的操作 (如在另一个模板) 并修改后续列中的任何元素，这些更改将传播到其他模板中的同一操作。
+- **actionTitle：** 这是操作的标题，是必填字段。 你提供的标题必须是唯一的。 **重要** 提示：如果引用了自己已有的操作（如在其他模板 () 中）已存在) 并且修改后续列中的任何元素，这些更改将传播到其他模板中的同一操作。
 
 - **implementationType：** 在此必填字段中，列出以下三种实现类型之一：
     - **操作** - 人员和流程实施的用于保护组织系统、资产、数据和人员的机密性、完整性和可用性 (例如：安全意识和培训) 
@@ -170,7 +190,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 2. 选择 **"创建新模板"。** 将打开模板创建向导。
 3. 选择要创建的模板类型。 在这种情况下，请选择"**创建自定义模板"，** 然后选择"下一 **步"。**
 4. 在 **"Upload文件**"屏幕上，选择"浏览"查找并上载包含所有所需Excel模板数据的格式化文件。
-5. 如果文件没有问题，将显示上载的文件的名称。 选择“**下一步**”以继续。  (如果需要更改文件，请选择"更改Upload **文件") 。**
+5. 如果文件没有问题，将显示上载的文件的名称。 选择“**下一步**”以继续。  (如果需要更改文件，请选择"Upload **文件") 。**
     - 如果文件出错，顶部的错误消息将说明错误。 你将需要修复文件并再次上传它。 如果电子表格的格式不正确，或者某些字段中的信息无效，则会导致错误。
 6. " **审阅和完成"** 屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择" **创建模板"。**  (如果需要进行更改，请选择"上 **一** 步") 
 7. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。
@@ -180,7 +200,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 合规性管理器提供将你自己的控制措施和改进操作添加到 Microsoft 提供的现有模板的选项。 此过程称为扩展 Microsoft 模板。 扩展模板时，它仍然可以接收 Microsoft 发布的更新，当相关法规或产品策略发生更改时，可能会 (接受评估更新) 。 [](compliance-manager-assessments.md#accept-updates-to-assessments)
 
-请注意，如果你为除产品外的其他产品设置Microsoft 365，你的流程将有所不同。 若要了解更多信息，请参阅 [扩展通用评估模板](#extend-universal-assessment-templates)。
+请注意，如果你要为除产品外的其他产品设置Microsoft 365，你的流程将有所不同。 若要了解更多信息，请参阅 [扩展通用评估模板](#extend-universal-assessment-templates)。
 
 ### <a name="prepare-template-data-and-create-extension"></a>准备模板数据和创建扩展
 
@@ -230,7 +250,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 ### <a name="format-your-excel-file-to-modify-an-existing-template"></a>设置Excel文件的格式以修改现有模板
 
-从 **评估模板页面中**   ，选择要修改的模板，这将显示其详细信息页面。 然后选择" **导出到Excel"。** 将Excel模板数据的文件。 将文件保存到本地计算机。
+从 **评估模板页面中**   ，选择要修改的模板，这将显示其详细信息页面。 然后选择导出 **到Excel。** 将Excel模板数据的文件。 将文件保存到本地计算机。
 
 若要使用此文件，请跳转到下面的部分，以快速找到所需的说明：
 
@@ -255,7 +275,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 
 您可以更改除标题 之外的任何 *改进操作的信息*。 您可以编辑 B 列前向的任何单元格，当您将文件导入回模板时，该模板中的改进操作现在将包含更新的数据。
 
-不能编辑 A **列** (操作) 因为如果您这样做，合规性管理器会认为这是一个新的改进操作。 如果要更改改进操作的名称，请参阅下面的说明。
+不能编辑 A **列** (操作) ，因为如果您这样做，合规性管理器会认为这是一个新的改进操作。 如果要更改改进操作的名称，请参阅下面的说明。
 
 #### <a name="change-an-improvement-actions-name"></a>更改改进操作的名称
 
@@ -308,7 +328,7 @@ The Excel spreadsheet (download [an example](https://go.microsoft.com/fwlink/?li
 您的模板现在将包含您所做的更改。 使用此修改后模板的任何评估现在将显示挂起的更新，你将需要接受对评估的更新以反映在模板中所做的更改。 详细了解评估 [更新](compliance-manager-assessments.md#accept-updates-to-assessments)。
 
 > [!NOTE]
-> 如果使用英语语言而非英语的合规性管理器，你会注意到在导出模板以使用安全机制时，某些文本Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须为英语，控件必须识别。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
+> 如果使用英语版本外的其他语言使用合规性管理器，你会注意到，导出模板进行自定义时，某些文本以英语Excel。 操作标题 (改进操作，如果适用，Microsoft) 必须为英语，控件必须识别。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
 
 ## <a name="export-a-template"></a>导出模板
 

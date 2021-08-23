@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3edacef44021211d82b1b7d8c477683185c87f00
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
+ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247617"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58392128"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
@@ -52,7 +52,7 @@ ms.locfileid: "58247617"
 
 1.  此 API 的速率限制是每分钟 10 次 (HTTP 429 请求响应其他) 。
 
-2.  25 个并发 (超过限制的请求将收到"429 - 请求过多"响应) 。
+2.  25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
 
 3.  如果计算机不可用，会话将排入队列最多 3 天。
 
@@ -60,13 +60,15 @@ ms.locfileid: "58247617"
 
 5.  实时响应命令无法排入队列，一次只能执行一个。 
 
-6.  可以在单个 API 调用中运行多个实时响应命令。 但是，当实时响应命令失败时，将不会执行以下所有操作。
+6.  如果你尝试运行此 API 调用的机器位于未分配自动修正级别的 RBAC 设备组中，你至少需要为给定的设备组启用最低修正级别。
+
+7.  可以在单个 API 调用中运行多个实时响应命令。 但是，当实时响应命令失败时，将不会执行所有后续操作。
 
 ## <a name="minimum-requirements"></a>最低要求
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证您运行的是受支持的 Windows** 版本。
+- **验证是否正在运行受支持的 Windows** 版本。
 
   设备必须运行以下版本之一Windows
 
@@ -78,7 +80,7 @@ ms.locfileid: "58247617"
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
     - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
 ## <a name="permissions"></a>权限
@@ -100,12 +102,12 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |名称|类型|说明|
 |---|---|---|
-|Authorization|字符串|Bearer\<token>\. 必需。|
+|Authorization|String|Bearer\<token>\. 必需。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
 
-|参数|类型|描述|
+|参数|类型|说明|
 |---|---|---|
 |评论|字符串|要与操作关联的注释。|
 |命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|

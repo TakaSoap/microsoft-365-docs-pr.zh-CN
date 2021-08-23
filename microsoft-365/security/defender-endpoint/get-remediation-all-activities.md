@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e1d8b3f8d43bb1323ddc703cb4041ecaa5536d68f7c83acb1140f9158ae3774d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae861a5490880c4521e4e7b6521fa724a5dd4da4
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793762"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400195"
 ---
 # <a name="list-all-remediation-activities"></a>列出所有修正活动
 
@@ -54,7 +54,7 @@ ms.locfileid: "53793762"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|RemediationTask.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
+应用程序|RemediationTasks.Read.All|\'阅读威胁和漏洞管理漏洞信息\'
 委派（工作或学校帐户）|RemediationTask.Read|\'阅读威胁和漏洞管理漏洞信息\'
 
 ## <a name="properties"></a>属性
@@ -64,14 +64,14 @@ ms.locfileid: "53793762"
 “类别”|String|软件/安全配置 (修正活动的) |软件
 completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件|空
 completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID|空
-completionMethod|String|如果所有设备 (都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。|自动
-createdOn|日期时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
+completionMethod|String|如果由 (选择"标记为已完成") 或"手动"修补所有设备，则修正活动可以"自动"完成。|自动
+createdOn|日期/时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
 说明|String|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
-dueOn|日期时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
+dueOn|日期/时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
 fixedDevices|.|已修复的设备数量|2
 id|String|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|相关产品名称|Microsoft Silverlight
-priority|String|为此修正活动设置的创建者设置的优先级 (高\中\低) |High
+priority|String|针对此修正活动的创建者设置的优先级 (高\中\低) |高
 productId|String|相关产品 ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|只能请求对没有用户影响的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。|AllExposedAssets
 rbacGroupNames|String|相关设备组名称|[ "Windows Servers"， "Windows 10" ]
@@ -83,8 +83,8 @@ requesterEmail|String|创建者电子邮件地址|globaladmin@UserName.contoso.c
 requesterId|String|Creator 对象 ID|r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes|String|注释 (此) 活动的创建者添加的自定义文本|空
 scid|String|相关安全建议 SCID|空
-status|String|修正活动状态 (/已完成) |活动
-statusLastModifiedOn|日期时间|更新状态字段的日期|2021-01-12T18：54：11.5499487Z
+状态|String|修正活动状态 (/已完成) |活动文件
+statusLastModifiedOn|日期/时间|更新状态字段的日期|2021-01-12T18：54：11.5499487Z
 targetDevices|长型|此修正适用于的公开设备数量|43
 title|String|此修正活动的标题|更新 Microsoft Silverlight
 type|String|修正类型|更新

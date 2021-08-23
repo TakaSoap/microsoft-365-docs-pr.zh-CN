@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93e76fb5730140d06f9805e91ecd1a175a4f7cfb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347140"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364501"
 ---
 # <a name="get-domain-statistics-api"></a>获取域统计信息 API
 
@@ -84,7 +84,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且域存在 - 200 正常，响应正文中具有 statistics 对象。 如果域不存在 - 404 未找到。
+如果成功且域存在 - 200 正常，响应正文中具有 statistics 对象。 如果域不存在 - 200 正常，普遍程度设置为 0。
 
 ## <a name="example"></a>示例
 

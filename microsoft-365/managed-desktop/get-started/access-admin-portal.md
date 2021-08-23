@@ -10,16 +10,16 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 44b5fed8c99f9d2c738abfcdad99e1f4c020d3bca97591c3645ae3c8ac6c1029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44bc897cd2ead4c6c8568e8dc5048cf0118e35fc
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869839"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364537"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-您的网关连接到 Microsoft 托管桌面[服务Microsoft Endpoint Manager](https://endpoint.microsoft.com/)。 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
+您的网关连接到 Microsoft 托管桌面[服务Microsoft Endpoint Manager。](https://endpoint.microsoft.com/) 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
 
 > [!NOTE]
 > 在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)支持以下浏览器：
@@ -28,7 +28,7 @@ ms.locfileid: "53869839"
 > - Chrome (最新版本) 
 > - Firefox (最新版本) 
 
-管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。 可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 多个 Azure Active Directory (Azure AD) 管理员角色和内置 Microsoft 托管桌面 角色可用于更精细地控制 Microsoft 托管桌面 管理门户中的不同功能。 有关角色Azure Active Directory，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 与应用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，内置角色特定于 Microsoft 托管桌面并且仅保证访问此服务的管理员功能。 管理员可以单独或结合 Azure AD 管理员角色向用户分配内置角色，Microsoft 托管桌面现有管理员帐户的权限。
+管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。 可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 多个 Azure Active Directory (Azure AD) 管理员角色和内置 Microsoft 托管桌面 角色可用于更精细地控制 Microsoft 托管桌面 管理门户中的不同功能。 有关角色Azure Active Directory，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 与应用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，内置角色特定于 Microsoft 托管桌面 并且仅保证访问此服务的管理员功能。 管理员可以单独或结合 Azure AD 管理员角色向用户分配内置角色，Microsoft 托管桌面现有管理员帐户的权限。
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory具有访问权限Microsoft 托管桌面角色
 
@@ -36,24 +36,24 @@ ms.locfileid: "53869839"
 |---------|---------|
 |全局管理员     | 具有此角色的 **管理员将拥有** 对管理门户中所有功能的Microsoft 托管桌面权限。         |
 |全局读取者     | 具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。         |
-|Intune 服务管理员     |  具有此角色的 **管理员将在管理** 门户中对与安全Microsoft 托管桌面权限。       |
+|Intune 服务管理员     |  具有此角色的 **管理员将在管理** 门户中对与安全不相关的功能Microsoft 托管桌面权限。       |
 |服务支持管理员     | 具有此角色的 **管理员将具有** 对与安全不相关的功能的只读权限，并且具有在管理门户中管理支持请求Microsoft 托管桌面写入权限。         |
-|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且将在管理门户的 Microsoft 托管桌面 中编写安全相关功能的权限。 |
+|安全管理员 | 具有此角色的 **管理员将拥有** 对管理门户中所有功能的只读权限，以及针对管理员门户中与安全Microsoft 托管桌面相关的功能的写入权限。 |
 |安全信息读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。|
 
 如果需要有关分配角色Azure Active Directory帮助，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 > [!IMPORTANT]
-> 只有全局管理员角色才具有在组织中注册Microsoft 托管桌面。  请注意，Azure Active Directory角色将为用户帐户提供跨各种Microsoft 服务。 完成注册Microsoft 托管桌面，应始终使用具有完成其他任务所需的最小特权的角色。 
+> 只有全局管理员角色才具有在组织中注册组织所需的Microsoft 托管桌面。 请注意，Azure Active Directory角色将为用户帐户提供跨各种Microsoft 服务。 完成注册Microsoft 托管桌面，应始终使用具有完成其他任务所需的最小特权的角色。 
 
 ## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>由用户提供的内置Microsoft 托管桌面
 
 
 |内置角色  |Microsoft 托管桌面权限  |
 |---------|---------|
-|Microsoft 托管桌面服务管理员  | 在分配给用户时，此角色授予管理员对管理员门户中与安全Microsoft 托管桌面和写入权限。  |
-|Microsoft 托管桌面服务读者 | 分配给用户时，此角色向管理员授予对管理员门户中与安全不相关的功能的只读Microsoft 托管桌面权限。 |
-|Microsoft 托管桌面安全管理器 |分配给用户时，此角色仅向管理员授予对管理门户中与安全相关的功能的Microsoft 托管桌面权限。   |
+|Microsoft 托管桌面服务管理员  | 在分配给用户时，此角色授予管理员对管理员门户中与安全Microsoft 托管桌面权限。  |
+|Microsoft 托管桌面服务读者 | 分配给用户时，此角色为管理员授予对管理员门户中与安全不相关的功能的只读Microsoft 托管桌面权限。 |
+|Microsoft 托管桌面安全管理器 |分配给用户时，此角色仅向管理员授予对管理门户中与安全相关的Microsoft 托管桌面权限。   |
 
 > [!NOTE]
 > 安全功能包括与安全相关的通信、安全联系人的管理、安全相关支持请求的管理以及安全相关报告的访问权限。 
@@ -69,7 +69,7 @@ ms.locfileid: "53869839"
 6. 选择 **底部的** "选择"。
 
 > [!NOTE]
-> 当前不支持嵌套角色分配组。 
+> 当前不支持嵌套角色分配安全组。 
 
 ### <a name="assigning-built-in-roles-to-groups"></a>向组分配内置角色
 
@@ -82,4 +82,18 @@ ms.locfileid: "53869839"
 5. 从 **左侧窗格中** 选择"用户和组"，然后选择 **"+ 添加用户/组"。**
 6. 从用户和组搜索 **你需要的组**。
 7. 从"选择角色" **中搜索适用的角色**，然后选择它。
-8. 选择 **分配**。
+8. 选择“**分配**”。
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+
+1. 访问管理门户 (本文) 。
+1. [在管理门户中添加并验证管理员联系人](add-admin-contacts.md)。
+1. [注册后调整设置](conditional-access.md)。
+1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. [分配许可证](assign-licenses.md)。
+1. [部署应用](deploy-apps.md)。
+1. [设置设备](set-up-devices.md)。
+1. 设置 [Autopilot 和注册状态页面的首次运行体验](esp-first-run.md)。
+1. [启用用户支持功能](enable-support.md)。
+1. [让用户准备好使用设备](get-started-devices.md)。
+1. [应用控件入门](get-started-app-control.md)。

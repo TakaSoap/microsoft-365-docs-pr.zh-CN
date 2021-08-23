@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 20a7858e50a72073170be317b654de33804a5cb4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
+ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357013"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58377997"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -120,7 +120,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 ## <a name="additional-microsoft-365-products"></a>其他 Microsoft 365 产品
 
-- [Microsoft 365 商业高级版](../business/index.yml)
+- [Microsoft 365 商业高级版](../admin/index.yml)
 
   将一流的生产力和协作功能与设备管理和安全解决方案汇集在了一起，可为中小型企业保护业务数据的安全。
 

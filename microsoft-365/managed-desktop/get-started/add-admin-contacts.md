@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 99a2d6d5a5617c66143df2a4f91d80abdafd5f90005ad5401c86bcfd669dd1cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f7490ce1bbf1ef7666ce44f6101054d6acc7703
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819101"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364549"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -31,11 +31,11 @@ ms.locfileid: "53819101"
 --- | ---
 应用打包 | 应用打包疑难解答
 设备 | 设备运行状况，Microsoft 托管桌面疑难解答
-安全团队 | 解决设备Microsoft 托管桌面安全问题
-IT 技术支持 | 如果支持人员在支持区域外将用户票证Microsoft 托管桌面的情况 
+安全性 | 解决设备Microsoft 托管桌面安全问题
+IT 技术支持 | 如果支持人员在支持区域外接管用户Microsoft 托管桌面票证 
 其他 | 对于其他方面未涵盖的问题
 
-**无论为这些联系人选择谁，都需要有知识和权威来针对您的Microsoft 托管桌面决策。** 当你载入Microsoft 托管桌面环境时，系统将提示你为本地支持人员和安全添加联系人。 
+**无论为这些联系人选择谁，都需要有知识和权威来为Microsoft 托管桌面决策。** 当你载入Microsoft 托管桌面环境时，系统将提示你为本地支持人员和安全添加联系人。 
 
 提交支持请求时 [需要管理员联系人](../service-description/support.md)。 你需要有一个管理员联系人来联系支持请求的重点关注区域。
 
@@ -45,21 +45,24 @@ IT 技术支持 | 如果支持人员在支持区域外将用户票证Microsoft �
 
 2. 在 **"租户管理**"下，**查找**"Microsoft 托管桌面"部分，然后选择"**管理员联系人"。**
 
-3. 选择 **添加**。
+3. 选择“**添加**”。
 
 4. 选择 **一个焦点区域** ，然后输入联系人的信息。 
 
-    ![焦点区域列表，例如"其他"、"应用"和"安全"](../../media/areaoffocus.png)
+    ![关注区域列表，例如"其他"、"应用"和"安全"](../../media/areaoffocus.png)
 
 5. 对每个焦点区域重复上述步骤。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
-1. 在管理门户中添加和验证管理员 (本主题) 
-2. [调整条件访问](conditional-access.md)
-3. [分配许可证](assign-licenses.md)
-4. [在设备上安装 Intune 公司门户](company-portal.md)
-5. [启用企业状态漫游](enterprise-state-roaming.md)
-6. [设置 Microsoft 托管桌面设备](set-up-devices.md)
-7. [为用户做好使用设备的准备](get-started-devices.md)
-8. [将应用部署到设备](deploy-apps.md)
+1. 访问 [管理门户](access-admin-portal.md)。
+1. 在管理门户中添加和验证管理员 (本文) 。
+1. [注册后调整设置](conditional-access.md)。
+1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. [分配许可证](assign-licenses.md)。
+1. [部署应用](deploy-apps.md)。
+1. [设置设备](set-up-devices.md)。
+1. 设置 [Autopilot 和注册状态页面的首次运行体验](esp-first-run.md)。
+1. [启用用户支持功能](enable-support.md)。
+1. [让用户准备好使用设备](get-started-devices.md)。
+1. [应用控件入门](get-started-app-control.md)。

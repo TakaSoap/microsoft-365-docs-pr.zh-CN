@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何使用导航选项卡和筛选器查看报告。
-ms.openlocfilehash: 242a5f27c47fc1db0d807906f725201d2574712afe75ef421abf8848a334f2f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bf7d82b3c7ab8bab175da57a120ecf91e96e535
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901218"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400303"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>导航和利用 Microsoft 365 使用情况分析中的报表
 
-仪表板提供有关主要用途和采用指标的快速概述。 通过选择顶级指标，可以访问可提供更多详细信息和见解的报告。 每个报告选项卡都包含特定于组织的使用和采用方面的数据可视化。 收集的数据在每个报告的标题中进行了说明，并且将显示一个图块，其中包含有关正在查看的报告选项卡上的可视化效果的进一步信息。
+仪表板提供有关主要用途和采用指标的快速概述。 通过选择顶级指标，可以访问可提供更多详细信息和见解的报告。 每个报告选项卡都包含特定于组织的使用和采用方面的数据可视化。 收集的数据在每个报告的标题中进行了说明，将出现一个图块，其中包含有关正在查看的报告选项卡上的可视化效果的进一步信息。
 
 若要开始使用报表，下面是一些提示：
 
@@ -61,15 +61,15 @@ ms.locfileid: "53901218"
 
 - 使用基础[数据集](usage-analytics-data-model.md)创建自己的视觉对象。
 
-- 使用 PowerBI Desktop 引入自己的数据源。
+- 使用 Power BI Desktop引入您自己的数据源。
 
 若要共享报告，只需选择"共享"按钮 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 位于页面顶部。
 
-若要了解如何自定义报告，请参阅自定义使用情况Microsoft 365[中的报告](customize-reports.md)。
+若要了解如何自定义报告，请参阅自定义Microsoft 365[分析中的报告](customize-reports.md)。
 
 可以在 Power BI 帮助文档中找到许多额外信息：
 
-- [Power BI概念](/power-bi/service-basic-concepts)
+- [Power BI基本概念](/power-bi/service-basic-concepts)
 
     了解仪表板、数据集、报表和其他Power BI概念。
 

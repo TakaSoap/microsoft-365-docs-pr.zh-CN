@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c9cbcd9ef9e4557e30409cd471d80cbcca5a2947438ef988c7892c18eddd8a2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
+ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890969"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58364621"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和注册状态页的首次运行体验
 
-Microsoft 托管桌面使用[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)和 Microsoft Intune 的注册状态[页面 (ESP) ](/windows/deployment/windows-autopilot/enrollment-status)为用户提供可能的最佳首次运行体验。
+Microsoft 托管桌面使用 Windows [Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)和 Microsoft Intune 的注册状态页面[ (ESP) ](/windows/deployment/windows-autopilot/enrollment-status)为用户提供可能的最佳首次运行体验。
 
 ## <a name="initial-deployment"></a>初始部署
 
@@ -63,19 +63,19 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 |当安装时间超过指定分钟数时显示错误|60|
 |在出现时间限制错误时显示自定义消息|否|
 |允许用户收集有关安装错误的日志|是|
-|仅在 OOBE 设备上通过开箱使用体验预配 (页面) |是|
+|仅在 OOBE 设备上显示由开箱 (预配) |是|
 |在安装所有应用和配置文件之前阻止设备使用|是|
 |允许用户在出现安装错误时重置设备|是|
 |发生安装错误时允许用户使用设备|是|
 |阻止设备使用，直到安装这些必需的应用（如果它们已分配给用户/设备）|现代工作场所 - 时间更正|现代工作区 - 客户端库|
-|
+
 
 注册状态页面体验分三个阶段进行。 有关详细信息，请参阅注册 [状态页面跟踪信息](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)。
 
 体验将按如下方式进行：
 
 1. Autopilot 体验将启动，并且用户输入其凭据。
-2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户设置 (第) 步骤当前在 Microsoft 托管桌面 配置中已跳过，因为用户 ESP 已禁用。 设备重新启动。
+2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户 (配置) 跳过第三步Microsoft 托管桌面用户 ESP已禁用。 设备重新启动。
 3. 重新启动后，设备将打开Windows其他用户登录 **页面**。
 4. 用户再次输入其凭据，桌面将打开。
 
@@ -95,7 +95,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>用于预预配部署的 Autopilot 中的事件序列
 
 1. IT 管理员根据需要重置设备映像或重置设备。
-2. IT 管理员启动设备，达到开箱即用体验，然后按 Windows键五次。
+2. IT 管理员启动设备，获得开箱即用体验，然后按 Windows键五次。
 3. IT 管理员选择Windows Autopilot 预配"，然后选择"继续 **"。** 在Windows Autopilot 配置屏幕上，将显示有关设备的信息。
 4. IT 管理员选择 **预配** 以开始预配过程。
 5. 设备启动 ESP 并完成设备准备和设置阶段。 在设备设置阶段，你将看到显示 x 的应用安装 **x， (** ESP 配置文件设置的准确) 。
@@ -112,7 +112,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 
 ## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>更改为 Autopilot 和注册状态页面设置
 
-如果你使用的安装程序Microsoft 托管桌面你的需求完全匹配，可以通过管理门户提交支持[票证](https://portal.azure.com/)。 下面是您可能需要的配置类型的一些示例：
+如果你使用的安装程序Microsoft 托管桌面你的需求完全匹配，可以通过管理门户提交[支持票证](https://portal.azure.com/)。 下面是您可能需要的配置类型的一些示例：
 
 ### <a name="autopilot-settings-change"></a>Autopilot 设置更改
 
@@ -126,9 +126,23 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 
 ## <a name="required-applications"></a>必需的应用程序
 
-- 你必须面向新式工作区设备组 Test、First、Fast 和 Broad 中的应用程序。 应用程序必须安装在"系统"上下文中。 在将 ESP 分配给所有组之前，请确保使用测试组中 ESP 完成测试。
-- 任何应用程序都不应要求重新启动设备。 建议在生成应用程序包时将应用程序设置为"不执行任何操作"（如果需要重新启动）。
+- 你必须面向现代工作区设备组 Test、First、Fast 和 Broad 中的应用程序。 应用程序必须安装在"系统"上下文中。 在将 ESP 分配给所有组之前，请确保使用测试组中 ESP 完成测试。
+- 任何应用程序都不应要求重新启动设备。 如果应用程序需要重新启动，我们建议在生成应用程序包时，将应用程序设置为"不执行任何操作"。
 - 将所需应用程序限制为仅在用户登录到设备时立即需要的核心应用程序。
 - 将所有应用程序的总大小统一保持在 1 GB 以下，以避免在应用程序安装阶段超时。
 - 理想情况下，应用不应有任何依赖关系。 如果你有 *必须具有依赖项* 的应用，请确保在 ESP 评估中配置、测试和验证它们。
 - Microsoft Teams包含在 ESP 中。
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+
+1. 访问 [管理门户](access-admin-portal.md)。
+1. [在管理门户中添加并验证管理员联系人](add-admin-contacts.md)。
+1. [注册后调整设置](conditional-access.md)。
+1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. [分配许可证](assign-licenses.md)。
+1. [部署应用](deploy-apps.md)。
+1. [设置设备](set-up-devices.md)。
+1. 使用 Autopilot 和注册状态页设置首次运行体验 (本文) 。
+1. [启用用户支持功能](enable-support.md)。
+1. [让用户准备好使用设备](get-started-devices.md)。
+1. [应用控件入门](get-started-app-control.md)。

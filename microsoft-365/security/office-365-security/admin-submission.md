@@ -1,5 +1,5 @@
 ---
-title: 管理员提交
+title: 管理提交
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,14 +19,14 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be666d89c7a7d67a6b041e12fc53f005829ad455
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 13520774191e9b593f962b8291c873303ddf8580
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349976"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400147"
 ---
-# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "58349976"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在Microsoft 365组织中Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365邮箱Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件时，你得到：
 
@@ -45,7 +45,7 @@ ms.locfileid: "58349976"
 - **成绩分析**：由人工评分人员完成审阅，以确认邮件是否是恶意邮件。
 
 > [!IMPORTANT]
-> 负载信誉/触发和成绩分析并非在所有租户中都完成。 如果出于合规性目的数据不应离开租户边界，则阻止信息进入组织外部。
+> 负载信誉/触发和成绩分析并非在所有租户中都完成。 当数据出于合规性目的不应离开租户边界时，将阻止信息进入组织外部。
 
 有关向 Microsoft 提交电子邮件、URL 和附件的其他方法，请参阅向 Microsoft 报告 [邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -78,14 +78,14 @@ ms.locfileid: "58349976"
 1. 在 **"选择提交类型"** 框中，确认 **"电子邮件** "在下拉列表中已选中。
 
 2. 在 **"添加网络邮件 ID 或上载电子邮件文件** "部分，使用以下选项之一：
-   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 标头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
-   - **Upload电子邮件文件 (.msg 或 .eml) ：单击浏览****文件**。 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
+   - 添加电子邮件网络邮件 **ID：** 这是一个 GUID 值，可用于邮件中的 **X-MS-Exchange-Organization-Network-Message-Id** 头或隔离邮件中的 **X-MS-Office365-Filtering-Correlation-Id** 头。
+   - **Upload电子邮件文件 (.msg 或 .eml) ：单击"浏览****文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
 3. 在 **"选择具有问题的** 收件人"框中，指定要针对其运行策略检查的收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
 4. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (误报)**
-   - **应已被** 阻止：在"电子邮件 **应** 已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
+   - **不应阻止误报 (错误)**
+   - **应已被** 阻止：在"电子邮件应已分类为出现的部分"中，选择以下值之一 (如果你不确定，请使用最佳判断) ：
      - **网络钓鱼**
      - **垃圾邮件**
      - **恶意软件**
@@ -102,7 +102,7 @@ ms.locfileid: "58349976"
 2. 在出现的 **"URL"** 框中，输入完整的 URL (例如 `https://www.fabrikam.com/marketing.html` ，) 。
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (误报)**
+   - **不应阻止误报 (错误)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，选择"**网络钓鱼**"或"恶意软件 **"。**
 
 4. 完成后，单击"提交 **"** 按钮。
@@ -117,7 +117,7 @@ ms.locfileid: "58349976"
 2. 在出现的 **"文件**"部分，单击"**浏览文件"。** 在打开的对话框中，查找并选择文件，然后单击"打开 **"。**
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
-   - **不应阻止误报 (误报)**
+   - **不应阻止误报 (错误)**
    - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，" **恶意软件"是唯** 一的选择，并自动选中。
 
 4. 完成后，单击"提交 **"** 按钮。
@@ -129,9 +129,9 @@ ms.locfileid: "58349976"
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
-2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡。
+2. 在 **"提交"** 页上，确认已选中" **已提交进行分析"** 选项卡。
 
-   - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号 (<sup>\*</sup>)：
+   - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
      - **提交名称**<sup>\*</sup>
      - **发件人**<sup>\*</sup>
      - **提交日期**<sup>\*</sup>
@@ -151,7 +151,7 @@ ms.locfileid: "58349976"
      - **策略操作**
      - **提交者**
 
-     完成后，单击"应用 **"。**
+     完成后，单击“**应用**”。
 
    - 若要筛选条目，请单击"筛选器 **"。** 以下筛选器可用：
      - **提交日期**：**开始日期和****结束日期**。
@@ -161,7 +161,7 @@ ms.locfileid: "58349976"
      - **Sender**
      - **Tags**
 
-     完成后，单击"应用 **"。**
+     完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
      > ![管理员提交的新筛选器选项](../../media/admin-submission-filters.png)
@@ -184,17 +184,17 @@ ms.locfileid: "58349976"
 - 当前触发结果，以查看邮件中所包含的 URL 或文件是否是恶意的。
 - 来自成绩者的反馈。
 
-如果找到了覆盖，则应该会在数分钟内完成重新扫描。 如果电子邮件身份验证没有问题，或者传递不受替代的影响，则来自成绩认证人员的反馈可能需要一天的时间。
+如果找到了覆盖，则应该会在数分钟内完成重新扫描。 如果电子邮件身份验证没有问题，或者传递不受替代影响，则来自成绩认证人员的反馈可能需要一天的时间。
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上看到报告的用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在" **提交"** 页上，选择" **用户报告的邮件"** 选项卡。
 
-   - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号 (<sup>\*</sup>)：
+   - 可以通过单击可用列标题来对条目进行排序。 单击 **"自定义列** "最多可显示七列。 默认值标有星号（<sup>\*</sup>）：
 
      - **电子邮件主题**<sup>\*</sup>
      - **报告者**<sup>\*</sup>
@@ -208,7 +208,7 @@ ms.locfileid: "58349976"
      - **发件人 IP**
      - **网络钓鱼模拟**
 
-     完成后，单击"应用 **"。**
+     完成后，单击“**应用**”。
 
    - 若要筛选条目，请单击"筛选器 **"。** 以下筛选器可用：
      - **报告的日期****：开始日期和****结束日期**。
@@ -221,7 +221,7 @@ ms.locfileid: "58349976"
      - **网络钓鱼模拟**： **是** 或 **否**
      - **Tags**
 
-     完成后，单击"应用 **"。**
+     完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
      > ![用户提交的新筛选器选项](../../media/admin-submission-reported-messages.png)

@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
-ms.openlocfilehash: e1c608425c25c018eddebe14023537b2739694d110d3683829c861dd96a61c73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 管理员可以了解如何在多地理位置SharePoint OneDrive和管理服务。
+ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795202"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400123"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -58,9 +58,9 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 在 UI 中，无法为地理位置中的所有用户实施信息保护和数据丢失防护策略，你必须为策略选择适用的帐户，或将策略全局应用于所有帐户。
 
-## <a name="microsoft-powerapps"></a>Microsoft PowerApps
+## <a name="microsoft-power-apps"></a>Microsoft Power Apps
 
-为附属位置创建的 PowerApp 将使用位于租户的中心位置中的终结点。 Microsoft PowerApps 不是多地理位置服务。 
+Power Apps位置创建的位置将使用位于租户中心位置的终点。 Microsoft Power Apps不是多地理位置服务。 
 
 ## <a name="power-automate"></a>Power Automate
 
@@ -72,7 +72,7 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 ## <a name="sharing"></a>共享
 
-管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive中的SharePoint网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
+管理员可以为他们的每个位置设置和管理共享策略。 每个OneDrive SharePoint中的网站和网站将仅遵守相应的特定于地理位置的共享设置。 （例如，你可以为中心位置允许[外部共享](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)，但不能为附属位置允许外部共享，反之亦然。）请注意，共享设置不允许配置地理位置之间的共享限制。
 
 ## <a name="stream"></a>Stream
 
