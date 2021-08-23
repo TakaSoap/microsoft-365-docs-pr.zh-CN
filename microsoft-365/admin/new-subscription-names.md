@@ -12,21 +12,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: 了解新的订阅Microsoft 365名称。
-ms.openlocfilehash: 2885a4c7dc30cb9431b4389f30e5a0d443cf0f62
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: f08e3f6395d97dd5f0f54665d247c474db2556b6
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346036"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394416"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 就是现在的 Microsoft 365
 
-我们更改了一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 2020 年<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">4 月 21</a> Microsoft 365 管理中心且帐单将在 2020 年 4 月 21 日或之后自动更新。
+我们更改了一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 2020 年<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">4</a>月 21 日Microsoft 365 管理中心帐单将自动更新。帐单将在 2020 年 4 月 21 日或之后更新。
 
 - **Office 365 商业协作版** 现已 **Microsoft 365 商业基础版**
 - **Office 365 商业高级版** 现已 **Microsoft 365 商业标准版**

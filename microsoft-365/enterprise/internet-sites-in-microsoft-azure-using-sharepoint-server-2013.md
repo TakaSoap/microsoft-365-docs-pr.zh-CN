@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: 本文提供用于设计和实现 Azure 基础结构服务中托管的 Sharepoint Server 2013 Internet 网站的资源。
-ms.openlocfilehash: 9d811900485fe42e218a2e58ec4572d993c849ffe7f5ddbcd54ab16c42887db2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 本文提供用于设计和实现托管在 Azure 基础结构服务中的 SharePoint Server 2013 Internet 站点的资源。
+ms.openlocfilehash: f0d3ef56fc204f7d4bc9579102761792762edc7f
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870580"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394704"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Microsoft Azure 中使用 SharePoint Server 2013 的 Internet 站点
 
@@ -39,7 +39,7 @@ Microsoft Azure 提供了托管基于 SharePoint Server 2013 的 Internet 站点
 
 - 利用客户帐户的 Azure Active Directory。
 
-- 添加当前未在 Microsoft 365的功能，例如深入报告和分析。
+- 添加当前未在 Microsoft 365的功能，如深入报告和分析。
 
 ## <a name="resources"></a>资源
 

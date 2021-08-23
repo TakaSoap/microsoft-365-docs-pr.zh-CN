@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，可以选择使用自有的域，也可以在注册期间购买一个域。
-ms.openlocfilehash: f9dc7c45256e87a1482cb7d39cdba65b07c7502ad15f6a0ba300325f96d053e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23d33bde473cd92ccf585db05593240cc48cea5
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821449"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394752"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
 

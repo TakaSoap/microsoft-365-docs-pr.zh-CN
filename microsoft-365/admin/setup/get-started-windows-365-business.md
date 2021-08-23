@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: 了解如何为组织购买 Windows 365 商业版，并帮助用户开始使用其云电脑。
-ms.openlocfilehash: 1b1beaf65f43361626e03ca048a9942bc14d5e7b
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+description: 了解如何为组织购买 Windows 365 商业版，并帮助用户开始使用他们的云电脑。
+ms.openlocfilehash: a1dfb4ad2cdda501b699423d03e257dbe314976c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349244"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394572"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Windows 365 商业版和云电脑入门
 
@@ -40,7 +40,10 @@ ms.locfileid: "58349244"
 
    ![用户可以将设备加入 Azure AD 设置](../../media/deschutes/azure-device-settings.png)
 ## <a name="prerequisites"></a>先决条件
-设置 365 商业版Windows先决条件。
+没有设置 365 商业版Windows先决条件。
+
+为了获得最佳载入体验，请参阅设置疑难解答指南[](troubleshoot-windows-365-business.md)，以确保你的环境首选项已针对 Windows 365 商业版进行优化。 
+
 ## <a name="buy-subscriptions"></a>购买订阅
 
 有两种不同的方法可以让用户Windows 365 商业版订阅：
@@ -49,15 +52,23 @@ ms.locfileid: "58349244"
 - Microsoft 365 管理中心
 
 购买订阅后，可以使用 Microsoft 365 管理中心向组织用户分配许可证。
+
 ### <a name="buy-subscriptions-through-the-windows-365-products-site"></a>通过 365 产品Windows购买订阅
 
-如果你还没有订阅，可以在 Microsoft 365 365 产品网站上购买 Windows [365](https://www.microsoft.com/windows-365/business/compare-plans-pricing)商业Windows订阅。 使用以下步骤通过 Windows 365 产品页面购买 Windows 365 商业版订阅。
+如果还没有 Microsoft 365 订阅，可以在 Windows 365 产品网站上购买 Windows [365 商业版订阅](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。 使用以下步骤通过 Windows 365 产品页面购买 Windows 365 商业版订阅。
 
 1. 在 ["Windows 365 商业](https://www.microsoft.com/windows-365/business)版"页上，选择 **"查看计划和定价"。**
 2. On the next page， select the subscription you want to purchase， and then select **Buy now**.
-3. 在 **"感谢您选择 Windows 365 商业版**"页上，按照步骤设置您的帐户。
+3. 在 **"感谢您选择 Windows 365 商业版"** 页上，按照步骤设置您的帐户。
 4. 在 **"步骤 5 -** 确认详细信息"中，如果已准备好向用户分配许可证，请选择"开始"转到 Windows 365 主页（位于 https://windows365.microsoft.com ）。
 5. 在 Windows 365 主页上的"快速操作"部分，选择"**管理您的组织"。** 这会将你Microsoft 365 管理中心向用户分配许可证。
+
+没有全局或帐单管理员角色的用户可以使用自助服务购买直接从 Windows 365 商业版产品网站购买[Windows 365 商业版订阅](https://www.microsoft.com/windows-365/business?rtc=1)。 通过此方式购买订阅的用户被授予对 Microsoft 365 管理中心 的有限视图，他们可以在此[](https://go.microsoft.com/fwlink/p/?linkid=2024339)视图中将订阅的许可证分配给其组织的其他用户。 将许可证分配给其他用户会自动为其创建 Windows 365 商业云电脑，可以从[Windows 365 主页访问。](https://windows365.microsoft.com/)
+
+> [!NOTE]
+> 自助购买不适用于印度或政府或教育客户。
+
+若要详细了解自助服务购买，请参阅 [自助服务购买常见问题解答](../../commerce/subscriptions/self-service-purchase-faq.yml)。
 
 ### <a name="buy-a-subscription-through-the-microsoft-admin-center"></a>通过 Microsoft 管理中心购买订阅
 
@@ -71,12 +82,12 @@ ms.locfileid: "58349244"
 
 ## <a name="assign-licenses-to-users"></a>向用户分配许可证
 
-无论是通过 Windows 365 产品网站购买订阅，还是通过 Microsoft 365 管理中心 购买订阅，都可以通过 Microsoft 365 管理中心 中的[](/microsoft-365/admin/manage/assign-licenses-to-users)"计费"页面向用户分配Microsoft 365 管理中心。
+无论是通过 Windows 365 产品网站购买订阅，还是通过 Microsoft 365 管理中心 购买订阅，都可以通过 Microsoft 365 管理中心[](/microsoft-365/admin/manage/assign-licenses-to-users)中的"计费"页面向用户分配Microsoft 365 管理中心。
 
 您可以根据Windows业务需求为用户分配不同的 365 商业版许可证类型。 请参阅[Windows 365 商业](windows-365-business-sizing.md)版大小调整选项，获取有关哪种许可证类型可能适合你的用户的指南。
 
 > [!IMPORTANT]
-> 首次在租户上Windows 365 许可证时，系统帐户"CloudPCBPRT"会自动在 Azure Active Directory。 不要删除此帐户。 如果删除系统帐户，则安装可能会失败。 此系统帐户可确保设置过程顺畅，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或租户访问权限。 如果删除此用户，请通过支持中心提交票证。
+> 首次在租户上Windows 365 许可证时，系统帐户"CloudPCBPRT"将自动在 Azure Active Directory。 不要删除此帐户。 如果删除系统帐户，则安装可能会失败。 此系统帐户可确保设置过程顺畅，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或租户访问权限。 如果删除此用户，请通过支持中心提交票证。
 
 ## <a name="get-your-users-started-with-cloud-pc"></a>让用户开始使用云电脑
 
@@ -116,7 +127,7 @@ ms.locfileid: "58349244"
     > [!IMPORTANT]  
     > 在重置云电脑之前，请确保备份需要保留到云存储服务或外部存储的任何重要文件。 重置云电脑将删除这些文件。
 
-- **重命名**：更改在 365 主页上向用户Windows的名称。
+- **重命名**：更改在 365 主页上向用户Windows云电脑的名称。
 
 - **疑** 难解答：排查并尝试修复可能阻止用户连接到其云电脑的任何问题。 下表介绍了检查结果的状态。
 
@@ -136,7 +147,7 @@ ms.locfileid: "58349244"
 若要设置其远程桌面客户端，用户请按照以下步骤操作：
 
 1. 在 Windows **365** 主页上，选择&quot;Microsoft 远程桌面 **应用**&quot; (&quot;主页图标") "。
-2. 在Microsoft 远程桌面 **应用"** 页上，下载并安装所需的远程桌面应用。
+2. 在 **"Microsoft 远程桌面应用"** 页上，下载并安装所需的远程桌面应用。
 
    ![远程桌面客户端](../../media/deschutes/remote-desktop-apps.png)
 
@@ -144,16 +155,16 @@ ms.locfileid: "58349244"
 
 ## <a name="installing-apps"></a>安装应用
 
-用户可以通过从应用程序的网站下载应用或从 Windows 下载应用，在云电脑上正常安装应用Microsoft Store。
+用户可以在云电脑上安装应用，就像在 Windows 中一样，方法为从应用程序的网站下载应用，或者从应用程序下载Microsoft Store。
 
-所有 Windows 365 商业版用户都对云电脑具有本地管理员权限，因此他们应拥有将应用安装到工作区所需的权限。
+所有 Windows 365 商业版用户都对云电脑具有本地管理员权限，因此他们应拥有将应用安装到其工作区所需的权限。
 
 > [!IMPORTANT]
-> 如果用户尝试在云电脑上使用 Microsoft 365 商业标准版 许可证，他们可能会看到以下错误："帐户问题：在共享计算机方案中，我们在帐户中找到的产品无法用于激活 Office。" 在此方案中，用户必须卸载其云OFFICE安装的版本，然后从 Office.com 安装新副本。
+> 如果用户尝试在云电脑上使用 Microsoft 365 商业标准版 许可证，他们可能会看到以下错误："帐户问题：在共享计算机方案中，我们在帐户中找到的产品无法用于激活 Office。" 在此方案中，用户必须卸载其云Office安装的版本，然后从 Office.com 安装新副本。
 
 ## <a name="management-through-intune"></a>通过 Intune 管理
 
-Windows 365 商业版不会将云电脑注册到[Intune，](/mem/intune/fundamentals/what-is-intune)这是预配过程的一部分。 如果组织和用户已获得正确许可，则云电脑可以使用相同的过程注册到 Intune，Windows 10[注册到 Intune。](/mem/intune/user-help/enroll-windows-10-device)
+Windows 365 商业版不会将云电脑注册到[Intune，](/mem/intune/fundamentals/what-is-intune)这是预配过程的一部分。 如果组织和用户已正确获得许可，则云电脑可以使用相同的过程注册到 Intune Windows 10[计算机](/mem/intune/user-help/enroll-windows-10-device)。
 
 ## <a name="sending-outbound-email-messages-using-port-25-is-not-supported"></a>不支持使用端口 25 发送出站电子邮件
 

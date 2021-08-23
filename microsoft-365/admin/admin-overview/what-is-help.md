@@ -13,20 +13,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: 了解使用应用程序获取帮助的所有Microsoft 365 管理中心。
-ms.openlocfilehash: 9d36658bc94d8aae3873d7669620a17a83f1b211
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+description: 了解使用工具获取帮助的所有Microsoft 365 管理中心。
+ms.openlocfilehash: c011b68e07843956a558d26e42d0c0cd9a328451
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346960"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394344"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -58,4 +60,4 @@ ms.locfileid: "58346960"
 
 ## <a name="guides-and-articles"></a>指南和文章
 
-此外，如果你正在寻找全面的部署指南、快速分步过程或 PowerShell cmdlet，请通过 Web 查找我们。 我们频繁更新内容，并尝试向您提供最新信息。 请查看我们在文档文档网站上[Microsoft 365指南](../../index.yml)。
+此外，如果你正在寻找全面的部署指南、快速分步过程或 PowerShell cmdlet，请通过 Web 查找我们。 我们频繁更新内容，并尝试向您提供最新信息。 请查看我们的文章和指南，Microsoft 365[文档](../../index.yml)网站。

@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 08f1d17942b1fb11dd9717e96045fd0b32b2422b
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 39d9eb7aa25ac721fb7c39535404790e2af214e6
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346060"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394644"
 ---
 # <a name="set-up-multifactor-authentication"></a>设置多重身份验证
 
@@ -45,6 +46,14 @@ ms.locfileid: "58346060"
 - 如果你启用了旧版每用户 MFA，请[关闭旧版每用户 MFA](#turn-off-legacy-per-user-mfa)。
 - 如果你在 Windows 设备上有 Office 2013 客户端，[启用 Office 2013 客户端的新式验证](./enable-modern-authentication.md)。
 - 高级：如果你有使用 Active Directory 联合身份验证服务（AD FS）的第三方目录服务，请设置 Azure MFA 服务器。 有关详细信息，请参阅[具有 Azure Active Directory 多重身份验证的高级方案和第三方 VPN 解决方案](/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
+
+### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA
+
+如果你以前已启用了每用户 MFA，则必须在启用安全性默认值之前将其关闭。
+
+1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**用户**”\>“**活动用户**”。
+1. 在“**活动用户**”页面上，选择“**多重身份验证**”。
+1. 在“多重身份验证”页面上，选择每个用户并将其多重身份验证状态设置为“**禁用**”。
 
 ## <a name="turn-security-defaults-on-or-off"></a>打开或关闭安全性默认值
 
@@ -89,6 +98,7 @@ ms.locfileid: "58346060"
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
 2. 在 **服务** 选项卡下，选择 **新式验证**，在 **新式验证** 窗格中，确保 **启用新式验证** 选项。 选择“**保存更改**”。
 
+
 ### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA
 
 如果你以前已启用了每用户 MFA，则必须在启用安全性默认值之前将其关闭。
@@ -106,5 +116,8 @@ ms.locfileid: "58346060"
 
 ## <a name="related-content"></a>相关内容
 
-[打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）\
-[为手机开启多重身份验证](../../business-video/set-up-mfa.md)（视频）
+
+[打开多重身份验证](../../business-video/turn-on-mfa.md)（视频）
+
+[打开手机的多重身份验证](../../business-video/set-up-mfa.md)（视频）
+

@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: 本文介绍在 SharePoint Online 中启用了 SharePoint Publishing 的导航SharePoint网站。
-ms.openlocfilehash: 4cb0406fc9f4d1496cb28282427c38f83c3ea1eac31aecbf6e33f7247660be2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904972"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394656"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
 本文介绍在 SharePoint Online 中启用了 SharePoint Publishing 的导航SharePoint网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。 只有在SharePoint门户需要时，才应使用"发布网站模板"，并且发布功能应仅在特定网站上启用，并且仅在绝对需要时使用，因为它在错误使用时可能会影响性能。
 
 >[!NOTE]
->如果你使用的是新式导航导航SharePoint如大型菜单、级联导航或中心导航，本文不适用于你的网站。 新式SharePoint网站体系结构利用更平展的网站层次结构和中心分支模型。 这可以实现许多不需要使用"发布"功能SharePoint方案。
+>如果你使用的是新式导航选项SharePoint如大型菜单、级联导航或中心导航，本文不适用于你的网站。 新式SharePoint网站体系结构利用更平展的网站层次结构和中心分支模型。 这可以实现许多不需要使用"发布"功能SharePoint方案。
 
 ## <a name="overview-of-navigation-options"></a>导航选项概述
 
-导航提供程序配置会显著影响整个网站的性能，必须仔细考虑如何选择可有效扩展的导航提供程序和配置，从而满足网站SharePoint要求。 有两个开箱即用导航提供程序以及自定义导航实现。
+导航提供程序配置会显著影响整个网站的性能，必须仔细考虑如何选择可有效扩展的导航提供程序和配置，以SharePoint网站。 有两个开箱即用导航提供程序以及自定义导航实现。
 
-如果为网站启用 [](#using-structural-navigation-in-sharepoint-online)结构导航缓存，则第一个选项"结构导航"是 SharePoint Online 中推荐用于经典 Sharepoint 网站的 **导航选项**。 此导航提供程序显示当前网站下方的导航项目，也可以选择显示当前网站及其同级网站。 它提供其他功能，如安全修整和网站结构枚举。 如果禁用缓存，这将对性能和可伸缩性产生负面影响，并且可能会受到限制。
+如果为网站启用 [](#using-structural-navigation-in-sharepoint-online)结构导航缓存，则第一个选项"结构导航"是 SharePoint Online 中推荐用于经典 SharePoint 网站的 **导航选项**。 此导航提供程序显示当前网站下方的导航项目，也可以选择显示当前网站及其同级网站。 它提供其他功能，如安全修整和网站结构枚举。 如果禁用缓存，这将对性能和可伸缩性产生负面影响，并且可能会受到限制。
 
 第二个选项 Managed [**(Metadata) 表示**](#using-managed-navigation-and-metadata-in-sharepoint-online)使用托管元数据术语集的导航项。 建议禁用安全修整，除非需要。 安全修整作为此导航提供程序的默认设置启用;但是，许多网站不需要安全修整开销，因为导航元素对于网站的所有用户通常都是一致的。 使用禁用安全修整的建议配置，此导航提供程序不需要枚举网站结构，并且可扩展性高，并且对性能产生可接受的影响。
 
@@ -52,12 +52,12 @@ ms.locfileid: "53904972"
 |结构导航  |托管导航  |搜索驱动的导航  |自定义导航提供程序  |
 |---------|---------|---------|---------|
 |优点：<br/><br/>易于维护<br/>经过安全修整<br/>内容更改后 24 小时内自动更新<br/>     |优点：<br/><br/>易于维护<br/>|优点：<br/><br/>经过安全修整<br/>添加网站时自动更新<br/>加载时间和本地缓存的导航结构<br/>|优点：<br/><br/>可用选项的更多选择<br/>正确使用缓存时快速加载<br/>许多选项都很好地用于响应式页面设计<br/>|
-|缺点：<br/><br/>**如果禁用缓存，则影响性能**<br/>受限制<br/>|缺点：<br/><br/>不自动更新以反映网站结构<br/>**如果启用安全修整或** 导航结构复杂，则会影响性能<br/>|缺点：<br/><br/>无法轻松对网站排序<br/>需要自定义母版页 (所需的技术) <br/>|缺点：<br/><br/>需要自定义开发<br/>需要存储的外部数据源/缓存，例如 Azure<br/>|
+|缺点：<br/><br/>**如果禁用缓存，则影响性能**<br/>受限制<br/>|缺点：<br/><br/>不自动更新以反映网站结构<br/>**启用安全修整或** 导航结构复杂时影响性能<br/>|缺点：<br/><br/>无法轻松对网站排序<br/>需要自定义母版页 (所需的技术) <br/>|缺点：<br/><br/>需要自定义开发<br/>需要存储的外部数据源/缓存，例如 Azure<br/>|
 
-网站最适合的选项将取决于网站要求和您的技术功能。 如果需要一个易于配置的导航提供程序，该提供程序在内容更改时自动更新，则启用缓存 [的结构](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) 导航是一个不错的选择。
+网站最适合的选项将取决于网站要求和您的技术功能。 如果您希望一个易于配置的导航提供程序在内容更改时自动更新，则启用缓存 [的结构](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) 导航是一个不错的选择。
 
 >[!NOTE]
->通过简化整体网站结构SharePoint简单化的非分层结构，应用与新式网站相同的原则可提高性能并简化向新式SharePoint迁移。 这意味着，一个包含数百个网站的网站集 (子网站) ，更好的方法是让许多网站集具有非常少的子网站 (子网站) 。
+>通过简化整体网站结构SharePoint简单化的非分层结构，应用与新式网站相同的原则可提高性能并简化向新式SharePoint迁移。 这意味着，与单个网站集具有数百个网站 (子网站) 相反，更好的方法是让许多网站集具有非常少的子网站 (子) 。
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>分析 SharePoint Online 中的导航性能
 
@@ -85,7 +85,7 @@ Caching网站集级别和网站级别启用或禁用网站集，并且默认情�
 
 ![在网站级别启用缓存](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中SharePoint导航和元数据
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中使用托管导航和元数据
 
 托管导航是另一个开箱即用选项，可用于重新创建与结构导航相同的大部分功能。 托管元数据可以配置为启用或禁用安全修整。 在禁用安全修整的情况下配置后，托管导航会相当高效，因为它加载具有固定数量的服务器调用的所有导航链接。 但是，启用安全修整会否定托管导航的一些性能优势。
 
@@ -221,7 +221,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ### <a name="about-the-javascript-file"></a>关于 JavaScript 文件...
 
 >[!NOTE]
->如果使用自定义 JavaScript，请确保CDN启用公用文件，并且文件位于CDN位置。
+>如果使用自定义 JavaScript，请确保公用CDN已启用，并且文件位于CDN位置。
 
 整个 JavaScript 文件如下所示：
 
@@ -462,7 +462,7 @@ function addEventsToElements() {
 
 `QueryRemoteInterface()` 使用 函数和脚本前面定义的 查询参数生成请求， `getRequest()` 然后从服务器返回数据。 此数据实质上是网站集中所有网站的数组，表示为具有各种属性的数据传输对象。
 
-然后，此数据被解析为之前定义的对象，这些对象用于创建可观察属性，以用于将值绑定到我们之前定义的 `SPO.Models.NavigationNode` `Knockout.js` HTML 的数据。
+然后，此数据被解析到之前定义的对象中，这些对象用于创建可观察属性，以用于将值绑定到我们之前定义的 `SPO.Models.NavigationNode` `Knockout.js` HTML 的数据。
 
 然后，将对象放入结果数组中。 此数组使用 Knockout 解析为 JSON，并存储在本地浏览器存储中，以在将来页面加载时提高性能。
 
@@ -545,6 +545,6 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
   
 ## <a name="related-topics"></a>相关主题
 
-[SharePoint Server 中的托管导航概述](/sharepoint/administration/overview-of-managed-navigation)
+[SharePoint Server 2013 中的托管导航概述](/sharepoint/administration/overview-of-managed-navigation)
 
 [结构导航缓存和性能](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)

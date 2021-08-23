@@ -19,16 +19,16 @@ ms.assetid: ''
 description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ec120edcbccc64046b57507cd6cd6044fb583c5129c336e28890b67f369cd46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820135"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394584"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
-本主题介绍为识别和解决在电子数据展示搜索过程中或电子数据展示过程中其他位置可能遇到的问题而可以执行的基本疑难解答步骤。 解决其中某些方案需要 Microsoft 支持人员的帮助。 有关何时联系 Microsoft 支持的信息包含在解决方案步骤中。
+本主题介绍识别并解决电子数据展示搜索过程中或电子数据展示过程中其他位置可能遇到的问题的基本疑难解答步骤。 解决其中某些方案需要 Microsoft 支持人员的帮助。 有关何时联系 Microsoft 支持的信息包含在解决方案步骤中。
 
 ## <a name="errorissue-ambiguous-location"></a>错误/问题：位置不明确
 
@@ -38,7 +38,7 @@ ms.locfileid: "53820135"
 
 检查具有相同用户 ID 的重复用户或通讯组列表。
 
-1. 连接安全[与&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+1. 连接安全[&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 运行以下命令以检索用户名的所有实例：
 
@@ -80,7 +80,7 @@ ms.locfileid: "53820135"
 
 ## <a name="errorissue-file-not-found"></a>错误/问题：未找到文件
 
-当运行包括 SharePoint Online 和 One Drive For Business 位置的电子数据展示搜索时，你可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调) 。
+当运行包括 SharePoint Online 和 OneDrive for Business 位置的电子数据展示搜索时，你可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调的) 。
 
 > 28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。 其他诊断信息：Microsoft。Office。Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从类型为 Document 的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。 相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894 ---> Microsoft。SharePoint。Client.ServerException：***未找到文件***。 位于 Microsoft。SharePoint。Client.ClientRequest.ProcessResponseStream (Microsoft) Stream responseStream。SharePoint。Client.ClientRequest.ProcessResponse () ---内部异常堆栈跟踪结束---
 
@@ -92,17 +92,16 @@ ms.locfileid: "53820135"
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>错误/问题：此文件未导出，因为它不再存在。 该文件包含在估计的搜索结果计数中，因为它仍在索引中列出。 文件最终将从索引中删除，并且将来不会引发错误。
 
-运行包括"联机"和"One Drive for Business"SharePoint电子数据展示搜索时可能会看到该错误。 电子数据展示依赖 SPO 索引来标识文件位置。 如果文件已删除，但 SPO 索引尚未更新，则可能会发生此错误。
+运行包括联机搜索和联机搜索SharePoint电子数据OneDrive for Business错误。 电子数据展示依赖 SPO 索引来标识文件位置。 如果文件已删除，但 SPO 索引尚未更新，则可能会发生此错误。
 
 ### <a name="resolution"></a>解决方案 
 打开 SPO 位置并验证此文件是否确实不存在。
-建议的解决方案是手动对网站重新索引，或等到自动后台进程对网站重新索引。
+建议的解决方案是手动对网站重新索引，或等到网站通过自动后台进程重新索引。
 
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>错误/问题：此搜索结果未下载，因为此搜索结果是一个无法自行下载的文件夹或其他项目，将下载文件夹或库内的任何项目。
 
-运行包括"联机"和"One Drive for Business"SharePoint电子数据展示搜索时可能会看到该错误。 这意味着我们将尝试导出索引中报告的项目，但它却变成一个文件夹，因此我们没有导出它。 如错误所述，我们不会导出文件夹项目，但会导出其内容。
-
+运行包括联机搜索和联机搜索SharePoint电子数据OneDrive for Business错误。 这意味着我们将尝试导出索引中报告的项目，但它却变成一个文件夹，因此未导出它。 如错误所述，我们不会导出文件夹项目，但会导出其内容。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>错误/问题：搜索失败，因为未找到收件人
 
@@ -122,7 +121,7 @@ ms.locfileid: "53820135"
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>错误/问题：导出搜索结果的速度很慢
 
-从核心电子数据展示或内容搜索中导出搜索结果时Microsoft 365 合规中心下载时间超过预期。  你可以查看要下载的数据量，并可能提高导出速度。
+从核心电子数据展示或内容搜索中导出搜索结果时Microsoft 365 合规中心下载所花的时间超过预期。  你可以查看要下载的数据量，并可能提高导出速度。
 
 ### <a name="resolution"></a>解决方案
 
@@ -152,13 +151,13 @@ ms.locfileid: "53820135"
 
 ### <a name="resolution"></a>解决方案
 
-1. 如有必要，请重新运行搜索。 如果上次运行搜索的时间超过 7 天，您必须重新运行搜索。
+1. 如有必要，请重新运行搜索。 如果上次运行搜索的时间超过七天，您必须重新运行搜索。
 
 2. 重新启动导出。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>错误/问题："发生了 500 (内部) 错误"
 
-在运行电子数据展示搜索时，如果搜索不断失败，出现错误类似于"发生内部服务器错误 (500) "，可能需要仅在特定邮箱位置重新运行搜索。
+运行电子数据展示搜索时，如果搜索不断失败，出现错误类似于"发生内部服务器错误 (500) "，可能需要仅在特定邮箱位置重新运行搜索。
 
 ![内部服务器错误 500 屏幕截图](../media/edisc-tshoot-error-500.png)
 
@@ -182,11 +181,11 @@ ms.locfileid: "53820135"
 
 电子数据展示案例保留策略同步分发错误。 错误显示为：
 
-> "资源：部署策略所花时间超过预期。 更新最终部署状态可能需要另外 2 个小时，因此请在几小时后重新检查。"
+> "资源：部署策略所花时间超过预期。 可能需要 2 小时才能更新最终部署状态，因此请在几小时后重新检查。"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下针对电子数据展示案例保留的命令：
+1. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后针对电子数据展示案例保留运行以下命令：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -200,7 +199,7 @@ ms.locfileid: "53820135"
 
 2. 检查 DistributionDetail 参数中的值，了解错误，如下所示：
 
-   > 错误：资源：部署策略所花时间超过预期。 更新最终部署状态可能需要另外 2 个小时，因此请在几小时后重新检查。"
+   > 错误：资源：部署策略所花时间超过预期。 可能需要 2 小时才能更新最终部署状态，因此请在几小时后重新检查。"
 
 3. 尝试对问题策略运行 RetryDistribution 参数：
 
@@ -220,7 +219,7 @@ ms.locfileid: "53820135"
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误："不满足使用 HTTP (标头) 条件"
 
-使用电子数据展示导出工具下载搜索结果时，您可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。
+使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误：这是暂时性错误，通常发生在Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。
 
 ### <a name="resolution"></a>解决方案
 
@@ -247,3 +246,32 @@ ms.locfileid: "53820135"
 6. 如果前面的步骤不起作用，则禁用 zipping 和重复数据删除。
 
 7. 如果此操作有效，则问题由本地病毒扫描程序或磁盘问题导致。
+
+## <a name="error-your-request-cant-be-started-because-the-maximum-number-of-jobs-for-your-organization-are-currently-running"></a>错误："由于组织当前正在运行最大作业数，请求无法启动"
+
+您的组织已达到最大并发导出作业数的限制。 所有新的导出作业都受到限制。
+
+### <a name="resolution"></a>解决方案
+
+运行以下脚本以发现最近七天内启动的导出作业数仍在运行。
+
+1. 连接安全[&合规中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+
+2. 运行以下脚本以收集有关当前导出作业正在触发限制的信息：
+
+   ```powershell
+   $date = Get-Date;
+   $exports = Get-ComplianceSearchAction -Export -ResultSize Unlimited;
+   $inprogressExports = $exports | ?{$_.Results -eq $null -or (!$_.Results.Contains("Export status: Completed") -and !$_.Results.Contains("Export status: none"))};
+   $exportJobsRunning = $inprogressExports | ?{$_.JobStartTime -ge $date.AddDays(-7)} | Sort-Object JobStartTime -Descending;
+   ```
+
+3. 运行以下命令以显示当前正在运行的导出作业的列表：
+
+   ```powershell
+   $exportJobsRunning | Format-Table Name, JobStartTime, JobEndTime, Status | More;
+   ```
+
+   如果上一个命令返回 10 个或多个导出作业，则您的组织已达到并发导出作业数的限制。 有关详细信息，请参阅 [电子数据展示搜索的限制](limits-for-content-search.md)。
+
+4. 使用 [Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) cmdlet 等待现有导出作业完成或删除不再需要的导出作业。

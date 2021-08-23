@@ -18,33 +18,34 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 获取Microsoft 365 管理应用，并了解如何从手机或平板电脑管理联机组织。
-ms.openlocfilehash: c6990e8eed4a234c205b0a80b0a14faf18d0eeea6d607eb07b00682d17c40ab5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 获取Microsoft 365 管理，并了解如何从手机或平板电脑管理联机组织。
+ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827177"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394356"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于Microsoft 365移动应用
 
-你是经常在外访问的管理员吗？ 即使没有，有时可能需要从手机或平板电脑Microsoft 365管理设备。 查看免费Microsoft 365 管理[应用，](https://go.microsoft.com/fwlink/?LinkID=627216)这是基于 Web 的 web 应用Microsoft 365 管理中心。 你可以从 Apple App [Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)和 Google Play 应用商店下载 [应用](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
+你是经常在外访问的管理员吗？ 即使您不是，有时可能也需要从手机或平板电脑Microsoft 365设备。 查看免费Microsoft 365 管理[应用，](https://go.microsoft.com/fwlink/?LinkID=627216)这是基于 Web 的 web 应用Microsoft 365 管理中心。 你可以从 Apple App [Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)和 Google Play 应用商店下载 [应用](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot： Admin mobile app's home page， displaying search， Message center， health， and quick links":::
 
-管理应用具有许多功能，当你Microsoft 365计算机时，这些功能将使您能够从移动设备或平板电脑设备管理设备。 下面是你可以从应用执行一些任务的列表：
+管理应用具有许多功能，当你无法访问计算机时，Microsoft 365移动设备或平板电脑设备管理设备。 以下是你可以从应用执行一些任务的列表：
 
 - **管理用户和设备** 添加或编辑用户、重置用户密码、分配角色、阻止用户、删除用户、管理别名、分配许可证、擦除设备数据等。
 - **管理组** 添加组、在组中添加或删除用户。
 - **许可证管理和计费** 查看已购买和分配的许可证的列表、向用户分配许可证、购买或删除许可证以及查看和下载发票。
-- **支持** 创建新的服务请求，并跟踪你在外时与服务请求相关的所有更新。
-- **消息中心** 随时了解即将推出的更改、计划维护或与项目相关的Microsoft 365
+- **支持** 创建新的服务请求，并跟踪在离开时与服务请求相关的所有更新。
+- **消息中心** 随时了解即将进行的所有更改、计划维护或与更新相关的Microsoft 365
 - **服务运行状况** 通过查看服务的当前状态和有关服务中断的详细信息来监视所有服务的运行状况。
-- **通知** 通过推送通知了解与消息中心帖子、服务运行状况和计费相关的所有重要信息和更新。 甚至可以自定义要通知哪些信息。
+- **通知** 通过推送通知了解与消息中心帖子、服务运行状况和计费相关的所有重要信息和更新。 你甚至可以自定义要通知哪些信息。
 
 如果你是管理员并且负责多个组织Microsoft 365，可以登录到多个组织并快速切换。 应用支持深色主题，有 39 种语言版本。
   
@@ -89,7 +90,7 @@ ms.locfileid: "53827177"
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>如果我的组织启用了目录同步，是否可使用该应用？
 
-是，但功能已缩减。 你将能够登录和查看服务信息，但大多数用户管理功能都是只读的。 无法添加、编辑或删除用户。 但是，你将能够将许可证分配给贵组织的用户并获取通知。
+是，但功能已缩减。 你可以登录并查看服务信息，但大多数用户管理功能都是只读的。 无法添加、编辑或删除用户。 但是，你将能够将许可证分配给贵组织的用户并获取通知。
   
 ### <a name="what-languages-are-supported-by-the-app"></a>该应用支持什么语言？
 

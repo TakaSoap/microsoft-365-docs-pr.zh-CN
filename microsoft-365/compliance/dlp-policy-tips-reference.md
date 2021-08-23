@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 recommendations: false
-description: 了解如何向 DLP 策略中的数据丢失防护 (策略) 通知用户他们正在处理与 DLP 策略冲突的内容。
+description: 了解如何将策略提示添加到 DLP 策略 (数据丢失) 通知用户他们正在处理与 DLP 策略冲突的内容。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 785d7fad1cf35bab56594e5b0c11287c153eaa44aedcf2cf6b44a742ed93ee74
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4afaa874524e37075a22c8b3ba44387f69ecfc6e
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814435"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394776"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>数据丢失防护策略提示参考
 
-对于适用于 DLP 策略Outlook工作负荷的所有条件、例外和操作，Exchange Web Access 中的 DLP 策略提示除外：
+对于适用于 DLP 策略中Outlook工作负荷的所有条件、例外和操作，Exchange Web Access 中的 DLP 策略提示除外：
 
 **条件：**
 
@@ -67,7 +67,7 @@ ms.locfileid: "53814435"
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 及更高版本仅支持显示某些条件和例外的策略提示
 
-目前，Outlook 2013 及更高版本支持显示策略策略提示，这些策略不包含以下提及的条件和相应例外之外的任何条件或例外：
+目前，Outlook 2013 及更高版本支持显示除以下提及的条件和相应例外外不包含任何条件或例外的策略的策略提示：
 
 - 内容 (仅适用于敏感信息类型。 不支持敏感度标签) 
 - 共享内容
@@ -76,7 +76,7 @@ ms.locfileid: "53814435"
 
 ## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 及更高版本Office桌面应用支持仅显示某些敏感信息类型的策略提示
 
-将为在桌面版 (2013 及更高版本的 Outlook 和更高版本的) 和 Office 应用（桌面版 (上的 Word、Excel、PowerPoint) ）中显示 DLP 策略提示而检测到的现成敏感信息类型列表如下：
+将为在桌面版 (2013 及更高版本的 Outlook 和更高版本的) 和 Office 应用（桌面版 (、Excel、PowerPoint) ）中显示 DLP 策略提示而检测到的现成敏感信息类型列表如下：
 
 - ABA 银行代号
 - 阿根廷国家身份证 (DNI) 号
@@ -92,7 +92,7 @@ ms.locfileid: "53814435"
 - Azure SAS  
 - Azure 服务总线 连接字符串  
 - Azure 存储帐户密钥  
-- Azure 存储帐户密钥 (通用)   
+- Azure 存储通用 (帐户)   
 - 比利时国家号码
 - 巴西 CPF 号码
 - 巴西法律实体编号 (CNPJ)
@@ -206,7 +206,7 @@ ms.locfileid: "53814435"
 - Azure SAS 
 - Azure 服务总线 连接字符串 
 - Azure 存储帐户密钥 
-- Azure 存储帐户密钥 (通用)  
+- Azure 存储通用 (帐户)  
 - 比利时驾驶证号码 
 - 比利时国家号码 
 - 比利时护照号码 
@@ -262,7 +262,7 @@ ms.locfileid: "53814435"
 - 法国国家/地区身份证 (CNI) 
 - 法国护照号码 
 - 法国社会保险号码 (INSEE) 
-- numéro SPI. (法国税务标识号)  
+- 法国税务标识号 (numéro SPI.)  
 - 法国增值税编号 
 - 德国驾驶证号码 
 - 德国护照号码 
@@ -313,7 +313,7 @@ ms.locfileid: "53814435"
 - 立陶宛个人代码 
 - 都明达驾驶证号码 
 - 阿比塞明卡 (自然人身份证号)  
-- 阿比塞卡 (非自然人的身份证号)  
+- 阿比塞 (非自然人的身份证号)  
 - 百分卡护照号码 
 - 马来西亚身份证号码 
 - 马耳他驾驶证号码 
@@ -395,16 +395,16 @@ ms.locfileid: "53814435"
 |**应用和平台**|**DLP 策略提示支持**|**支持的敏感信息类型**|**支持的谓词和操作**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**OutlookWeb Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|Subset|请参阅 [数据丢失防护策略提示参考](#data-loss-prevention-policy-tips-reference)|
-|**OutlookWin32 (Outlook 2013 及)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|请参阅[Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)及更高版本仅支持显示某些条件和例外的策略提示，并且桌面版上的[Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)及更高版本和 Office 应用支持显示仅某些敏感信息类型的策略提示，了解有关支持敏感信息类型和 DLP 条件以及支持在 Outlook Win32 上显示 DLP 策略提示的操作的详细信息。|
+|**OutlookWin32 (Outlook 2013 及)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|请参阅[Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions)及更高版本仅支持显示某些条件和例外的策略提示，并且桌面版上的[Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)及更高版本和 Office 应用支持仅显示某些敏感信息类型的策略提示，了解有关支持敏感信息类型和 DLP 条件以及支持在 Outlook Win32 上显示 DLP 策略提示的操作的详细信息。|
 |**Outlook移动 (iOS、Android) /Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|DLP 策略提示在移动版上Outlook支持|
-|**Sharepoint Online/One Drive for Business Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中所有 SPO/ODB 谓词和操作||
-|**Sharepoint Win32/ One Drive for Business Win32 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|Sharepoint 或桌面客户端应用程序不支持 DLP OneDrive提示|
+|**SharePoint联机/OneDrive for Business Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中所有 SPO/ODB 谓词和操作||
+|**SharePointWin32/ OneDrive for Business Win32 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|DLP 策略提示在桌面客户端SharePoint OneDrive上不受支持|
 |**Word、Excel、PowerPoint Web 客户端**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP 中所有 SPO/ODB 谓词和操作|如果文档托管在 SPO 或 ODB Web 应用上并且已标记 DLP 策略，则支持 DLP 策略提示。|
-|**Word、Excel、PowerPoint Mobile 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|DLP 策略提示在适用于应用程序的移动应用程序中不受Office。|
+|**Word、Excel、PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|DLP 策略提示在适用于应用程序的移动应用程序中不受Office。|
 |**TeamsWeb/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|全部|DLP Teams中所有规则谓词|当邮件被标记为"此邮件已标记"时，将显示策略提示。 我该怎么办？ 单击链接时，用户可以查看检测到的敏感信息类型，并覆盖或报告问题（如果管理员允许）。请注意，不会为文件显示任何策略提示。 当收件人尝试访问文档时，如果不允许，他们可能会被拒绝访问。|
 |**Win32 终结点设备**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|DLP 策略中所有终结点 DLP 谓词和操作|请参阅 [Endpoint 上的数据丢失防护仅支持某些敏感信息类型的策略提示](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Mac 设备**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|现在，Mac 设备上未实施数据丢失防护策略|
 |**第三方云应用**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无|第三方云应用不支持数据丢失防护策略提示|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|无|无||
-|**Word、Excel、PowerPoint Win32 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|请参阅[Outlook 2013 及](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)更高版本和桌面Office应用支持，其中仅显示某些敏感信息类型的策略提示，了解支持的敏感信息类型列表</br></br>WXP 客户端应用的策略提示适用于存储在 Sharepoint Online 或 One Drive for Business 网站中的文档，适用于 DLP 策略中条件或操作完全相同的所有 DLP 策略：</br> <ul><li>内容包含敏感信息类型</li><li>访问 (内容在内部/外部共享) </li><li>通知用户 (策略提示/用户通知) </li><li>阻止所有人</li><li>事件报告</li></ul></br> 如果存在任何其他条件或操作，该策略的 DLP 策略提示将不会显示在 Word、Excel 或 PowerPoint。</br>有关详细信息[，请参阅 Excel、PowerPoint 和 Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)中的策略提示|
+|**Word、Excel、PowerPoint Win32 客户端**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|请参阅[Outlook 2013 及](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)更高版本以及桌面Office应用支持，其中仅显示某些敏感信息类型的策略提示，了解支持的敏感信息类型列表</br></br>WXP 客户端应用的策略提示适用于存储在 SharePoint Online 或 OneDrive for Business Sites 上的所有 DLP 策略的文档，这些策略在 DLP 策略中具有完全相同的条件或操作子集：</br> <ul><li>内容包含敏感信息类型</li><li>访问 (内容在内部/外部共享) </li><li>通知用户 (策略提示/用户) </li><li>阻止所有人</li><li>事件报告</li></ul></br> 如果存在任何其他条件或操作，该策略的 DLP 策略提示将不会显示在 Word、Excel 或 PowerPoint 桌面应用程序中。</br>有关详细信息[，请参阅 Excel、PowerPoint 和 Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)中的策略提示|
 ||||||

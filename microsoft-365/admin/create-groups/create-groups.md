@@ -17,25 +17,26 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: 了解如何创建和删除Microsoft 365组、添加和删除组的成员，以及自定义组的工作方式。
-ms.openlocfilehash: 07546d32c8bd55ae1548b8f690d046e6b319bf87
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+description: 了解如何创建和删除Microsoft 365组、添加和删除组成员，以及自定义组的工作方式。
+ms.openlocfilehash: 76131f434b3c4210578fe44ff7dd4e435f1fbe6b
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346864"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394380"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在"管理"中Microsoft 365 管理中心
   
 尽管用户可以从Microsoft 365或其他应用中创建Outlook组，但作为管理员，你可能需要创建或删除组、添加或删除成员以及自定义其工作。 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">是</a>进行此操作的位置。 
 
 > [!TIP]
-> Microsoft 365连接Yammer组必须在Yammer中创建，但可以像管理其他Microsoft 365 管理中心组一样Microsoft 365组。 若要了解更多信息，请参阅Yammer[组Microsoft 365组。](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
+> Microsoft 365连接Yammer组必须在Yammer中创建，但可以像管理其他组Microsoft 365 管理中心一样Microsoft 365组。 若要了解更多信息，请参阅Yammer[组Microsoft 365组。](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
 
 ## <a name="create-a-microsoft-365-group"></a>创建 Microsoft 365 组
 
@@ -43,7 +44,7 @@ ms.locfileid: "58346864"
 
 2. 选择 **"添加组"。**
   
-3. 在"**选择组类型"页上**，选择"Office 365"，然后选择"下一 **步"。**
+3. 在"**选择组类型"页上**，选择 **"Office 365"，** 然后选择"下一 **步"。**
 
 4. 在 **"基本信息** "页上，键入组的名称以及说明（可选）。 选择“**下一步**”。
     
@@ -71,7 +72,7 @@ ms.locfileid: "58346864"
     
 5. 单击“关闭”三次。 
     
-该组将显示在Outlook中，并为其分配成员。
+该组将显示在"Outlook中，并为其分配成员。
 
 ## <a name="who-can-delete-email-from-the-group-inbox"></a>Who组收件箱中删除电子邮件？
 

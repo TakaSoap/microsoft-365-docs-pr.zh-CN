@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 88506e546cc359a3cdf042c8661fcc54b217d6d4
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255445"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394692"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -47,10 +47,10 @@ ms.locfileid: "58255445"
 
 ## <a name="step-1-check-license-state"></a>步骤 1. 检查许可证状态
 
-首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
+首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理中心门户 **Microsoft Azure此操作**。
 
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像](../../media/defender/atp-licensing-azure-portal.png)
 
@@ -64,7 +64,9 @@ ms.locfileid: "58255445"
 
 确认许可证状态已正确预配后，你可以开始将设备载入服务。 
 
-为了评估 Microsoft Defender for Endpoint，我们建议选择Windows 10一组设备进行评估。 
+为了评估 Microsoft Defender for Endpoint，我们建议选择Windows 10一组设备进行评估。
+
+你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅配置[Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
 
 规划 [部署](../defender-endpoint/deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的一般步骤。  
 

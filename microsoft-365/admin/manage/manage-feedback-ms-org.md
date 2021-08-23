@@ -13,22 +13,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 517a8ebc080c33399a018e666de9b7f81d50b98d075cc6e67891123611cdacda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d6d607182a546e869a9f92e84adfa31f7e02a26
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825215"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394476"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>为组织管理 Microsoft 反馈
 
-作为 Microsoft 365 管理员，现在有几种策略可帮助您管理用户在使用 Microsoft 365 应用程序时的反馈收集和客户参与体验。 你可以针对每个策略在组织中创建和使用现有 Azure Active directory 组。 通过这些管理，你可以控制组织中不同部门向 Microsoft 发送反馈的方式。 Microsoft 会审核客户提交的所有反馈，并使用此反馈改进产品。 将反馈体验保持 **打开** 可让你查看用户关于他们使用的 Microsoft 产品的意见。 我们从你的用户收集的反馈将很快在 Microsoft 365 管理中心。
+作为 Microsoft 365 管理员，现在有几种策略可帮助你管理用户在使用 Microsoft 365 应用程序时的反馈收集和客户参与体验。 你可以针对每个策略在组织中创建和使用现有 Azure Active directory 组。 借助这些管理，你可以控制组织中不同部门向 Microsoft 发送反馈的方式。 Microsoft 会审核客户提交的所有反馈，并使用此反馈改进产品。 将反馈体验保持 **打开** 可让你查看用户关于他们使用的 Microsoft 产品的意见。 我们从你的用户收集的反馈将很快在 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中提供</a>。
 
 若要了解有关反馈类型以及 Microsoft 如何使用用户反馈的信息，请参阅 [了解组织的 Microsoft 反馈](../misc/feedback-user-control.md)。
 
@@ -88,17 +90,17 @@ ms.locfileid: "53825215"
 
 1. 转到 [https://config.office.com](https://config.office.com) 并登录。
 1. 选择 **"自定义**"，然后选择 **"策略管理"。**
-1. 选择 **创建**。
+1. 选择“创建”。
 1. 输入 **名称和****说明**。
 1. 选择要配置的 Azure Active directory 组。
 1. 搜索 **反馈和****调查**。
 1. 对于列出的每个策略，设置您想要的值。
 
-有关详细信息，请参阅云[策略Office概述](/deployoffice/overview-office-cloud-policy-service)。
+有关详细信息，请参阅云策略[Office概述](/deployoffice/overview-office-cloud-policy-service)。
 
 如果使用组策略，这些策略设置也可用。 若要使用这些策略设置，请至少下载 2021 年 3 月 22 日发布的管理模板文件 [ (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030)版本 5146.1000。
 
-您可以在"用户配置 -> 策略 -> 管理模板 -> Microsoft Office 2016 -> 隐私 -> 信任中心"下找到这些策略设置。
+您可以在用户配置 -> 策略 -> 管理模板 -> Microsoft Office 2016 -> 隐私 -> 信任中心下找到这些策略设置。
 
 > [!NOTE]
 > 客户端应用程序需要几个小时才能更新。
