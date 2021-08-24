@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 6fd9a7cbbc7db1062c22b77b1e64745e88853a13
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
+ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255888"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58386992"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
-Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-compliance.md)功能可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。 通过增加执行调查所需的审核日志保留期，高级审核帮助组织执行取证和合规性调查，从而提供对帮助确定泄露范围的关键事件的访问权限（通过在 Microsoft 365 合规中心和 Office 365 管理活动 API 中使用审核日志搜索），并更快地访问 Office 365 管理活动 API。
+Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-compliance.md)功能可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。 高级审核可帮助组织进行法庭取证和合规性调查，方法是增加进行调查所需的审核日志保留期，提供对确定泄露范围有帮助的关键事件的访问权限（通过在 Microsoft 365 合规中心和 Office 365 管理活动 API 中使用审核日志搜索），以及提供对 Office 365 管理活动 API 更快地访问。
 
 > [!NOTE]
-> 高级审核适用于具有 Office 365 E5/A5/G5 或 Microsoft 365 企业版 E5/A5/G5 订阅的组织。 应向用户分配 Microsoft 365 E5/A5/G5 合规性或 E5/A5/G5 电子数据展示和审核加载项许可证，以获取高级审核功能，例如长期保留审核日志以及用于调查的关键高级审核事件访问权限。 有关许可的详细信息，请参阅：<br/>- [高级审核许可要求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 高级审核适用于具有 Office 365 E5/A5/G5 或 Microsoft 365 企业版 E5/A5/G5 订阅的组织。 应向用户分配 Microsoft 365 E5/A5/G5 合规性或 E5/A5/G5 电子数据展示和审核附加许可证，以获取高级审核功能，例如长期保留审核日志以及用于调查的关键高级审核事件访问权限。 有关许可的详细信息，请参阅：<br/>- [高级审核许可要求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 本文概述了“高级审核”功能，并展示了如何为“高级审核”设置用户。
 
@@ -38,10 +38,10 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 高级审核将所有 Exchange、SharePoint 和 Azure Active Directory 审核记录保留一年。 这是通过默认审核日志保留策略来实现的，此策略保留包含“**工作量**”属性（表示发生活动的服务）的“**Exchange**”、“**SharePoint**” 或“**AzureActiveDirectory**”的所有审核记录。 长期保留审计记录，可以帮助进行取证或合规性调查。 有关详细信息，请参阅“[管理审核日志保留策略](audit-log-retention-policies.md#default-audit-log-retention-policy)”中的“默认审核日志保留策略”。
 
-除了高级审核的一年保留功能，我们还发布了将审核日志保留 10 年的功能。 保留审核日志 10 年有助于支持长期的调查，并对监管、法律和内部义务作出响应。
+除了提供高级审核的一年保留功能，我们还发布了将审核日志保留 10 年的功能。 保留审核日志 10 年有助于对长期调查提供支持，并对监管、法律和内部义务作出响应。
 
 > [!NOTE]
-> 保留审核日志 10 年将需要额外的每用户附加产品许可证。 将此许可证分配给用户并为其设置适当的 10 年审核日志保留策略后，该策略涵盖的审核日志将开始保留 10 年。 此策略不是追溯性的，不能保留在创建 10 年审核日志保留策略之前生成的审核日志。 有关详细信息，请参阅本文中的[高级审核常见问题](#faqs-for-advanced-audit)部分。
+> 保留审核日志 10 年将需要每位用户额外的附加产品许可证。 将此许可证分配给用户并为其设置适当的 10 年审核日志保留策略后，该策略涵盖的审核日志开始保留 10 年。 此策略不是追溯性的，不能保留在创建 10 年审核日志保留策略之前生成的审核日志。 有关详细信息，请参阅本文中的[高级审核常见问题](#faqs-for-advanced-audit)部分。
 
 ### <a name="audit-log-retention-policies"></a>审核日志保留策略
 
@@ -55,9 +55,11 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 还可以指定与策略和优先级匹配的审核记录时长，从而使指定的策略优先于其它策略。 另请注意，如果你需要为组织中的部分或所有用户保留 Exchange、SharePoint 或 Azure Active Directory 审计记录少于一年（或 10 年），那么任何自定义审核日志保留策略都将优先于默认的审核保留策略。 有关详细信息，请参阅[管理审核日志保留策略](audit-log-retention-policies.md)。
 
-## <a name="access-to-crucial-events-for-investigations"></a>访问关键事件进行调查
+## <a name="advanced-audit-events"></a>高级审核事件
 
-高级审核可帮助组织通过提供对重要事件的访问，例如访问邮件项目的时间，或邮件项目被回复和转发的时间，以及用户在 Exchange Online 和 SharePoint Online 中的搜索时间和内容，来执行取证和合规性调查。 这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。  高级审核提供以下重要事件：
+高级审核可帮助组织通过提供对重要事件的访问，例如访问邮件项目的时间，或邮件项目被回复和转发的时间，以及用户在 Exchange Online 和 SharePoint Online 中的搜索时间和内容，来执行取证和合规性调查。 这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。  除了 Exchange 和 SharePoint 中的关键事件之外，其他 Microsoft 365 服务中还存在被视为关键事件的事件，这些事件需要记录[适当的高级审核许可证](auditing-solutions-overview.md#licensing-requirements)。
+
+高级审核提供以下重要事件：
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -66,6 +68,8 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 - [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+- [Microsoft 365 中的其他高级审核事件](#other-advanced-audit-events-in-microsoft-365)
 
 > [!NOTE]
 > <sup>*</sup> 目前，此事件在 Office 365 和 Microsoft 365 政府版 GCC High 和 DoD 环境中不可用。
@@ -131,7 +135,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须启用对 SearchQueryInitiatedExchange 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-crucial-events)。
+> 必须启用对 SearchQueryInitiatedExchange 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -154,7 +158,19 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须启用对 SearchQueryInitiatedSharePoint 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-crucial-events)。
+> 必须启用对 SearchQueryInitiatedSharePoint 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-advanced-audit-events)。
+
+### <a name="other-advanced-audit-events-in-microsoft-365"></a>Microsoft 365 中的其他高级审核事件
+
+除了 Exchange Online 和 SharePoint Online 中的关键事件之外，其他 Microsoft 365 服务中还有一些关键事件，当为用户分配适当的高级审核许可时会记录这些事件。 以下 Microsoft 365 服务提供关键事件。 单击相应的链接可转到标识和描述这些事件的文章。
+
+- [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
+
+- [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
+
+- [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
+
+- [Yammer](search-the-audit-log-in-security-and-compliance.md#yammer-activities)
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>高带宽访问 Office 365 管理活动 API
 
@@ -174,7 +190,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 **我的组织具有 E5/A5/G5 订阅，我是否需要执行任何操作才能获取重要事件的审核记录的访问权限？**
 
-对于分配了相应 E5/A5/G5 许可证的合格客户和用户，除了启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint 事件之外，无需执行任何操作即可生成对关键审核事件的访问权限（如本文中之前所述）。
+对于分配了相应 E5/A5/G5 许可证的合格客户和用户，除了启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint 事件之外，无需执行任何操作即可生成对关键审核事件的访问（如本文前面所述）。
 
 **高级审核中的新事件在 Office 365 管理活动 API 中是否可用？**
 
@@ -184,6 +200,6 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 目前，高带宽可提供更好的管道，尤其是对于具有大量审核信号和明显消耗模式的组织。 带宽增加将改善延迟状况。 但是不存在与高带宽相关的 SLA。 文档中已记录标准延迟，这些延迟不会随着高级审核的发布而改变。
 
-**如果我在此功能正式发布时创建了 10 年审核日志保留策略，但又在必需的附加产品许可证可用之前，我的组织的审核日志数据将会怎样？**
+**当功能已向公众发布且在必需的附加产品许可证可用之前，如果我创建了 10 年审核日志保留策略，则组织的审核日志数据将会怎样？**
 
-此功能在2020年最后一个季度正式发布，此后创建的审核日志数据，如果在10年审核日志保留策略涵盖范围内，都将保留 10 年。 这包括在 2021 年 3 月所需的附加产品许可证可以购买之前创建的 10 年审核日志保留策略。 但是，由于 10 年审核日志保留附加产品许可证现已可以购买，因此将需要为某项 10 年审核保留策略涵盖其审核数据的所有用户购买并分配附加产品许可证。
+此功能在2020年最后一个季度正式发布，此后创建的审核日志数据，如果在10年审核日志保留策略涵盖范围内，都将保留 10 年。 这包括在 2021 年 3 月所需的附加许可证可以购买之前创建的 10 年审核日志保留策略。 但是，由于 10 年审核日志保留附加许可证现已可以购买，因此将需要为审核数据被 10 年审核保留策略涵盖的所有用户购买并分配附加许可证。

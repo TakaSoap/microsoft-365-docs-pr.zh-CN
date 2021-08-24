@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 45302f3b27e6aca7701fbddcd4e1db8fbd067e41cbaf6b62778408caba4bc49d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853119"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58400267"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -62,7 +62,7 @@ ms.locfileid: "53853119"
 
 通过使用基于云的新式协作平台，员工可以选择并集成可提高工作效率的工具，并使他们能够找到敏捷的工作方式。 将 Teams 与保护组织的安全控制和信息管理策略结合使用可帮助员工高效地进行沟通和协作。
 
-Teams 为组织提供了一个协作中心。 这有助于让员工在常见的计划和项目上高效地工作。 Teams 允许团队成员进行 1:1 和多方聊天对话、协作和共同创作文档，以及存储和共享文件。 Teams 还通过集成的企业语音和视频来促进在线会议。 还可以使用 Microsoft Planner、Microsoft Dynamics 365、PowerApps、Power BI 之类的 Microsoft 应用和第三方业务线应用程序来自定义 Teams。 Teams 旨在供内部团队成员使用，并允许可加入团队频道、参与聊天对话、访问存储文件和利用其他应用程序的外部用户使用
+Teams 为组织提供了一个协作中心。 这有助于让员工在常见的计划和项目上高效地工作。 Teams 允许团队成员进行 1:1 和多方聊天对话、协作和共同创作文档，以及存储和共享文件。 Teams 还通过集成的企业语音和视频来促进在线会议。 还可以使用 Microsoft Planner、Microsoft Dynamics 365、Power Apps、Power BI 之类的 Microsoft 应用和第三方业务线应用程序来自定义 Teams。 Teams 旨在供内部团队成员使用，并允许可加入团队频道、参与聊天对话、访问存储文件和利用其他应用程序的外部用户使用
 
 每个 Microsoft Team 由 Microsoft 365 组提供支持。 该组被视为众多 Office 365 服务（包括 Teams）的成员身份服务。 Microsoft 365 组用于安全区分“所有者”和“成员”，并控制对 Teams 中各种功能的访问。 在与适当的监管控制和定期管理的访问审查相结合时，Teams 仅允许成员和所有者利用授权频道和功能。
 

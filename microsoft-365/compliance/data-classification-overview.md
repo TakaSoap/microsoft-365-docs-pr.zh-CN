@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: c85129d13b836b8eab8b15fa5fcbbc3813d908e2c49f11ca70d887b283944370
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 367b37493b22074ca4d8006c8d8f8067c2b3d29b
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860851"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450112"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -53,8 +53,6 @@ ms.locfileid: "53860851"
 
 ## <a name="prerequisites"></a>先决条件
 
-许多不同的订阅都支持终结点 DLP。 若要查看终结点 DLP 的许可选项，请参阅[信息保护许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
-
 ### <a name="permissions"></a>权限
 
  为了访问数据分类页面，必须在以下任一角色或角色组中向帐户分配成员身份。
@@ -82,7 +80,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 ![最常用敏感信息类型悬停详细信息](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> 如果卡片上显示消息“找不到包含敏感信息的数据”。 这表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。 要开始使用标签，请参阅：
+> 如果卡片显示消息“找不到包含敏感信息的数据”，则表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。 要开始使用标签，请参阅：
 >- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)
 >- [开始使用保留策略和保留标签](get-started-with-retention.md)
 >- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
@@ -91,8 +89,8 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 通过 Microsoft 365 或 Azure 信息保护 (AIP) 将敏感度标签应用于项目时，会出现两种情况：
 
-- 指示项目对组织的价值的标记已嵌入到文档中，可随时随地进行跟踪
-- 标记的存在将实现各种保护行为，例如强制性水印或加密。 如果启用了终结点保护，你甚至还可阻止项目脱离组织控制。
+- 指示项目对组织的价值的标记已嵌入到文档中，可随时随地进行跟踪。
+- 可通过标记实现各种保护行为，例如强制性水印或加密。 如果启用了终结点保护，你甚至还可阻止项目脱离组织控制。
 
 有关敏感度标签的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md)。
 
@@ -108,7 +106,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 ## <a name="top-retention-labels-applied-to-content"></a>应用于内容的最常用保留标签
 
-保留标签用于管理组织中的内容的保留和处置方式。 应用后，它们可用于控制项目在删除之前的保留方式，是否应在删除之前对其进行评审，保留期何时到期以及是否应将其标记为记录。 有关详细信息，请参阅[了解保留策略和保留标签](retention.md)。
+保留标签用于管理组织中的内容的保留和处置方式。 应用后，它们可用于控制项目在删除之前的保留时间，是否应在删除之前对其进行评审，保留期何时到期以及是否应将其标记为记录。 有关详细信息，请参阅[了解保留策略和保留标签](retention.md)。
 
 “应用最多的保留标签”卡片显示具有给定保留标签的项目数量。
 
@@ -133,6 +131,20 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 > [!NOTE]
 > 如果此卡片显示消息“未检测到任何位置”，则表示尚未创建或发布任何敏感度标签，或者任何内容均未应用保留标签。若要开始使用敏感度标签，请参阅：
 >- [敏感度标签](sensitivity-labels.md)
+
+## <a name="public-preview-release-notes"></a>公共预览版发行说明 
+
+> [!NOTE]
+> **Exchange 邮箱计数**：你会注意到，当深入了解 Exchange 邮箱时出现一个小的工具提示。 这是为了表明以下事实：敏感信息类型，敏感度标签和保留标签显示的合计计数可能与邮箱中找到的项目数不完全匹配。 这是因为深入了解文件夹时，将提取内容的实时视图（已分类），同时会计算总计数。用户即使略读也应注意到的信息
+
+> [!NOTE]
+> **加密文档的呈现**：已加密的 SharePoint、Exchange 和 OneDrive 文件不会在内容资源管理器中呈现。 这是一项敏感问题，需要在内容资源管理器中查看文件内容和将内容保持加密的需求之间取得平衡。 通过 **内容资源管理器列表查看器** 和 **内容资源管理器内容查看器** 角色组授予的权限，你将看到文件的列表视图、文件元数据和可用于通过 Web 客户端访问内容的链接。用户即使略读也应注意到的信息
+
+> [!NOTE]
+> **SharePoint 搜索中保留标签名称中受支持的字符**：SharePoint 搜索不支持包含 `-` 或 `_` 的保留标签名称。 例如，`Label-MIP` 和 `Label_MIP` 不受支持。 SharePoint 搜索支持敏感性标签名称和敏感信息类型名称中的这些字符。
+
+> [!NOTE]
+> **OneDrive 仍处于预览状态**：感谢你在我们的预览计划期间提供有关 OneDrive 集成的宝贵反馈。 随着我们处理具体的细节，你可能会遇到不一致的数据/流。 我们将继续展示 OneDrive 预览版，直到所有修补程序均准备就绪。 非常感谢你的持续支持。
 
 ## <a name="see-also"></a>另请参阅
 

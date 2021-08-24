@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 33cec29afa04c3f2829f055e01760a19b47f1405acd618d630641135779976a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
+ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862446"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58418009"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -149,7 +149,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 共享
 
-![SharePoint 组织级别共享设置的屏幕截图](../media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint 组织级别共享设置的屏幕截图](../media/external-sharing.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 共享
 
-![SharePoint 组织级别的其他共享设置的屏幕截图](../media/sharepoint-organization-advanced-sharing-settings.png)
+![SharePoint 组织级别的其他共享设置的屏幕截图](../media/external-sharing.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -169,6 +169,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 |来宾必须使用发送共享邀请的同一帐户登录|关闭|阻止来宾使用与接收邀请的电子邮件地址不同的地址来兑换网站共享邀请。 <p> [Azure AD B2B 的 SharePoint 和 OneDrive 集成（预览）](/sharepoint/sharepoint-azureb2b-integration-preview)不使用此设置，因为所有来宾都将根据接收邀请的电子邮件地址添加到目录中。 备选电子邮件地址无法用于访问网站。|
 |允许来宾共享不属于他们的项目|打开|设置为“**打开**”时，来宾可以与其他用户或来宾共享不属于他们的项目；设置为“**关闭**”时，则无法执行此操作。 来宾始终可以共享其拥有完全控制权的项目。|
 |使用验证码的人员必须在此天数后重新进行身份验证|关闭|此设置允许你要求使用一次性密码进行身份验证的用户需在一定天数后重新进行身份验证。|
+|对网站或 OneDrive 的来宾访问权限将在此天数后自动过期|打开|如果你的管理员设置了来宾访问过期时间，则你邀请访问该网站或者与其共享文件和文件夹的每位来宾只能在特定天数内获得访问权限。 有关详细信息，请访问 [管理网站的来宾过期时间](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>SharePoint 和 OneDrive 文件和文件夹链接设置
 

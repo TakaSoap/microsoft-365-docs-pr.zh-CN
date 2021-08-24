@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: cafe6fe2628d58b80ea86753734e56996c5fdfcd
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
+ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357049"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470772"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> [规章记录](records-management.md#records)不支持这种情况。
+> 组织结构（如 SharePoint 中的文档集或库，或 Exchange 中的文件夹）的 [法规记录](records-management.md#records) 或默认标签不支持此方案。 这些方案需要 [已发布的保留标签策略](create-apply-retention-labels.md#step-2-publish-retention-labels)。
 
 [保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
   
@@ -53,7 +53,7 @@ ms.locfileid: "58357049"
 按照以下说明进行两个管理步骤。
 
 > [!NOTE]
-> "自动策略" 使用服务侧标记（带条件）自动应用保留标签。 执行以下操作时，还可使用标签策略自动应用保留标签： 
+> 自动策略使用带条件的服务侧标记将保留标签自动应用于项目。 执行以下操作时，还可使用标签策略自动应用保留标签： 
 >
 > - 将保留标签应用于文档理解 SharePoint Syntex 中的模型
 > - 将默认保留标签应用于 SharePoint 和 Outlook
@@ -136,6 +136,7 @@ ms.locfileid: "58357049"
 |特定关键字或可搜索属性| 是 |是 |
 |可训练的分类器| 是 | 是（仅过去六个月） |
 
+此外，此方案不支持处于草稿状态或从未发布的 SharePoint 项。
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
@@ -182,7 +183,7 @@ ms.locfileid: "58357049"
 
 - 使用 *DocumentLink* 属性而不是 *Path* 来基于其 URL 匹配项目。 
 
-- 不支持后缀通配符搜索（如 `*cat` ）或子字符串通配符搜索（如 `*cat*`）。 但是，支持前缀通配符搜索（如 `cat*`）。
+- 不支持后缀通配符搜索（如 `*cat`）或子字符串通配符搜索（如 `*cat*`）。 但是，支持前缀通配符搜索（如 `cat*`）。
 
 - 请注意，部分索引项可能会导致未对预期项目进行标记，或者在你使用 Not 运算符时不对你希望从标签中排除的项目进行标记。 有关详细信息，请参阅[内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)。
 
