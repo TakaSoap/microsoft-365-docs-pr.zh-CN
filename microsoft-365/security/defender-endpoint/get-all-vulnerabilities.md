@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e0b1da197b93fdae0cf0254b5af81808e3b744a73cbf74428dc7cc9f2da41d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829395"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503235"
 ---
 # <a name="list-vulnerabilities"></a>列出漏洞
 
@@ -39,7 +39,15 @@ ms.locfileid: "53829395"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## <a name="api-description"></a>API 说明
+
 检索所有漏洞的列表。
+<br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
+<br>OData 支持的运算符：
+<br>```$filter``````id``` ```name``` ```description``` ```cvssV3``` on：、、、、、、 ```publishedOn``` ```severity``` 和 ```updatedOn``` 属性。
+<br>```$top``` 最大值为 10，000。
+<br>```$skip```.
+<br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -68,7 +76,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
+如果成功，此方法在正文中返回 200 OK 和漏洞列表。
 
 ## <a name="example"></a>示例
 

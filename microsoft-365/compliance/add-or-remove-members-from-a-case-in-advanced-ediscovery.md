@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在管理案例时添加或删除可以访问Advanced eDiscovery的成员。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b0b35503ca4e006f7a15bae8ffebc80081a9020db47d31621f67b8edbcc22667
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4fbd3700a74da8975f46174405c73511d16af3b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837031"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502035"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>向事例添加成员或从事例中删除成员
 
-可添加或删除成员，管理可以访问此案例的人。 但是，在成员可以访问 Advanced eDiscovery case (并执行) 情况下的任务之前，您必须将用户添加到安全与合规中心的"权限"页上的"电子数据展示管理员"角色组中。  有关详细信息，请参阅 [分配安全与合规中心中的电子数据展示权限](./assign-ediscovery-permissions.md)。
+可添加或删除成员，管理可以访问此案例的人。 但是，在成员可以访问 Advanced eDiscovery 案例 (并执行) 情况下的任务之前，您必须将用户添加到安全与合规中心的"权限"页上的"电子数据展示管理员"角色组中。  有关详细信息，请参阅[分配电子数据展示权限](./assign-ediscovery-permissions.md)。
 
 1. 在 **高级电子数据** 页面上，转到你想要将成员添加到的大小写。
 

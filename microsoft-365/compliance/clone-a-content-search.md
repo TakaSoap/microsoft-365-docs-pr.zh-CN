@@ -18,16 +18,16 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: 使用本文中的 PowerShell 脚本快速克隆合规性中心中的现有内容搜索，Office 365或Microsoft 365。
-ms.openlocfilehash: 526c07ac3ce3ee30137bcb4d51f2c5fee32cc546bdcc5b56795ddea7f0449ac5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872019"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503199"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 
-在 Office 365 或 Microsoft 365 合规中心创建内容搜索SharePoint OneDrive for Business网站可能需要一段时间。 如果键入的 URL 错误，指定要搜索的网站也容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有内容搜索。 克隆搜索时，会创建一 (名称为) 的新搜索，其中包含与原始搜索相同的属性 (如内容位置和搜索查询) 。 然后，您可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行它。
+在 Office 365 或 Microsoft 365 合规中心内创建内容搜索SharePoint OneDrive for Business网站可能需要一段时间。 如果键入的 URL 错误，指定要搜索的网站也容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有内容搜索。 克隆搜索时，会创建一 (名称为) 的新搜索，其中包含与原始搜索相同的属性 (如内容位置和搜索查询) 。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行它。
   
 为什么要克隆内容搜索？
   
@@ -39,7 +39,7 @@ ms.locfileid: "53872019"
   
 ## <a name="script-information"></a>脚本信息
 
-- 您必须是安全与合规中心内电子数据展示管理员&组的成员，以运行本主题中所述的脚本。
+- 您必须是 Microsoft 365 合规中心 电子数据展示管理员角色组的成员，以运行本主题中介绍的脚本。
     
 - 该脚本包括最少的错误处理。 该脚本的主要目的是快速克隆内容搜索。
     
@@ -53,7 +53,7 @@ ms.locfileid: "53872019"
 
 此步骤中的脚本通过克隆现有内容搜索来创建新的内容搜索。 运行此脚本时，系统将提示您输入以下信息：
   
-- **你的用户凭据**- 脚本将使用你的凭据连接到组织的安全&合规中心，并使用此Windows PowerShell。 如前所述，你必须是安全中心电子数据展示管理员角色组&运行脚本。 
+- **你的用户凭据** - 脚本将使用你的凭据连接到安全&中心 PowerShell。 如前所述，您必须是安全中心电子数据展示管理员角色&的成员，以运行脚本。 
     
 - **现有搜索的名称** - 这是要克隆的内容搜索。 
     
@@ -61,7 +61,7 @@ ms.locfileid: "53872019"
     
 克隆搜索：
   
-1. 使用 Windows PowerShell 文件名后缀将以下文本保存到脚本.ps1;例如， `CloneSearch.ps1` 。
+1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀.ps1;例如， `CloneSearch.ps1` 。
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.
@@ -121,7 +121,7 @@ ms.locfileid: "53872019"
   }
   ```
 
-2. 打开Windows PowerShell并转到保存脚本的文件夹。
+2. 打开Windows PowerShell，然后转到保存脚本的文件夹。
     
 3. 运行脚本;例如：
     
@@ -147,4 +147,4 @@ ms.locfileid: "53872019"
     
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
     
-- [电子数据展示事例](./get-started-core-ediscovery.md)
+- [电子数据展示案例](./get-started-core-ediscovery.md)

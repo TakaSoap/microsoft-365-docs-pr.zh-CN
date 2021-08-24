@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ae861a5490880c4521e4e7b6521fa724a5dd4da4
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400195"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503139"
 ---
 # <a name="list-all-remediation-activities"></a>列出所有修正活动
 
@@ -47,6 +47,12 @@ ms.locfileid: "58400195"
 [详细了解修正活动](tvm-remediation.md)。
 
 **URL：** GET： /api/remediationTasks
+<br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
+<br>OData 支持的运算符：
+<br>```$filter``` on：  ```createdon``` 和 ```status``` properties。
+<br>```$top``` 最大值为 10，000。
+<br>```$skip```.
+<br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -68,7 +74,7 @@ completionMethod|String|如果由 (选择"标记为已完成") 或"手动"修补
 createdOn|日期/时间|创建此修正活动的时间|2021-01-12T18：54：11.5499478Z
 说明|String|此修正活动的说明|将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
 dueOn|日期/时间|此修正活动的创建者设置的截止日期|2021-01-13T00：00：00Z
-fixedDevices|.|已修复的设备数量|2
+fixedDevices|.|已修复的设备数量|2 
 id|String|此修正活动的 ID|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|相关产品名称|Microsoft Silverlight
 priority|String|针对此修正活动的创建者设置的优先级 (高\中\低) |高

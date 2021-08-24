@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置环境中的 SharePoint、OneDrive 和 Exchange 用户体验。
-ms.openlocfilehash: d81220cae6e78ddb387742a83affd3e8f803a75cef0cbc292d252f7b302f4959
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848503"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502899"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -40,7 +40,7 @@ SharePoint 中心网站增强了员工的内容发现和参与能力，同时还
 
 ## <a name="office-applications"></a>Office 应用程序
 
-Office Word、Excel 和 PowerPoint 等应用程序将自动检测每个用户登录OneDrive的正确地理位置。 用户无需输入 OneDrive 或 SharePoint 网站的地理位置专用 URL。
+Office Word、Excel 和 PowerPoint 等应用程序将自动检测OneDrive登录时每个用户的正确地理位置。 用户无需输入 OneDrive 或 SharePoint 网站的地理位置专用 URL。
 
 ## <a name="onedrive-sync-app"></a>OneDrive 同步应用
 
@@ -78,7 +78,7 @@ OneDrive 移动客户端可感知多地理位置，并显示来自所有地理�
 
 ## <a name="sharepoint-home"></a>SharePoint 主页 
 
-此外SharePoint Multi-Geo你的SharePoint托管在用户驻留的位置，由用户所在的位置OneDrive位置。 例如，如果用户在欧洲附属位置中托管 OneDrive，SharePoint 主页将从欧洲呈现。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
+此外SharePoint Multi-Geo你的SharePoint托管在用户驻留的位置，由用户所在的位置OneDrive位置。 例如，如果用户拥有在欧洲附属OneDrive托管的用户，则其SharePoint主页将呈现自欧洲。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
 
 **关注的网站、网站新闻、最近访问的网站、经常访问的网站和推荐网站**
 
@@ -94,7 +94,7 @@ SharePoint 移动客户端可感知多地理位置，并显示来自所有地理
 
 ## <a name="sharing"></a>共享
 
-“人员选取器”体验面向所有用户，无论他们的地理位置如何。 这样，一个用户可以与同一地理位置或租户内其他任何地理位置中的其他用户共享。 来自不同地理位置的内容将在用户的 OneDrive 的"共享我"视图中显示，并且可以使用单一 Sign-On 体验访问，而不管它托管在哪个地理位置。
+“人员选取器”体验面向所有用户，无论他们的地理位置如何。 这样，一个用户可以与同一地理位置或租户内其他任何地理位置中的其他用户共享。 来自不同地理位置的内容将在用户的 OneDrive、Word、Excel、PowerPoint 和 Office.com 的"共享我"视图中显示，并且无论托管在哪个地理位置，均可使用单一 Sign-On 体验访问。 
 
 ## <a name="teams-experience"></a>Teams 体验
 

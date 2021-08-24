@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4c50b9058510f07ef1e64bbfe2c01198a2cc78d02af1d4474e0cf1e6ba362c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7a339c3083c69b926f46134061a263bdb5bfeba
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793858"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502743"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>按计算机和软件列出漏洞
 
@@ -41,7 +41,9 @@ ms.locfileid: "53793858"
 
 - 如果漏洞具有修复 KB，它将出现在响应中。
 - 支持 [OData V4 查询](https://www.odata.org/documentation/)。
-- OData ```$filter``` 在所有属性上均受支持。
+- OData 的 `$filter` 查询受以下项支持：、、、、、 `id` `cveId` `machineId` `fixingKbId` `productName` `productVersion` `severity` 和 `productVendor` 属性。
+<br>```$stop``` 最大值为 10，000
+<br>```$skip```
 
 > [!TIP]
 > 这是适用于集成Power BI [API。](api-power-bi.md)
@@ -73,7 +75,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
+如果成功，此方法在正文中返回 200 OK 和漏洞列表。
 
 ## <a name="example"></a>示例
 

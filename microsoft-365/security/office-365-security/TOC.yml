@@ -252,7 +252,7 @@
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: 顶级域邮件流状态见解
           href: mfi-domain-mail-flow-status-insight.md
-        - name: 使用管理员提交
+        - name: 管理提交
           href: admin-submission.md
         - name: 使用邮件流规则查看用户向 Microsoft 报告的内容
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft

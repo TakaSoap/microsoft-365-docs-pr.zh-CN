@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9916f0d7f41354decbe935a635dd709e2cfe1f6320cdb6edf9cc84c59559a964
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839551"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503259"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction 资源类型
 
@@ -64,16 +64,23 @@ ms.locfileid: "53839551"
 |属性|类型|说明|
 |---|---|---|
 |ID|Guid|计算机 [操作实体的](machineaction.md) 标识。|
-|type|枚举|操作的类型。 可能的值包括："RunAntiVirusScan"、"Offboard"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"和"UnrestrictCodeExecution"|
+|type|枚举|操作的类型。 可能的值包括："RunAntiVirusScan"、"Offboard"、"Live Response"、"CollectInvestigationPackage"、"Isolate"、"Unisolate"、"StopAndQuarantineFile"、"RestrictCodeExecution"和"UnrestrictCodeExecution"。|
 |scope|string|操作的范围。 "完全"或"选择性"用于隔离，"快速"或"完全"用于防病毒扫描。|
 |requestor|String|执行该操作的人的身份。|
+|externalID|String|客户可以在自定义关联请求中提交的 ID。|
+|requestSource|string|提交操作的用户/应用程序的名称。|
+| 命令|数组|要运行的命令。 允许的值为 PutFile、RunScript、GetFile。|
+|cancellationRequestor|String|取消操作的人的标识。|
 |requestorComment|String|发出操作时写入的注释。|
-|status|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Canceled"。|
+|cancellationComment|String|取消操作时写入的注释。|
+|状态|枚举|命令的当前状态。 可能的值包括："Pending"、"InProgress"、"Succeeded"、"Failed"、"TimeOut"和"Cancelled"。|
 |machineId|String|已 [执行](machine.md) 该操作的虚拟机的 ID。|
-|machineId|字符串|已 [执行](machine.md) 该操作计算机的名称。|
+|machineId|String|已 [执行](machine.md) 该操作计算机的名称。|
 |creationDateTimeUtc|DateTimeOffset|创建该操作的日期和时间。|
-|lastUpdateTimeUtc|DateTimeOffset|上次更新操作状态的日期和时间。|
-|relatedFileInfo|类|包含两个属性。 string `fileIdentifier` `fileIdentifierType` ，Enum，可能的值："Sha1"、"Sha256"和"Md5"。|
+|cancellationDateTimeUtc|DateTimeOffset|取消该操作的日期和时间。|
+|lastUpdateDateTimeUtc|DateTimeOffset|上次更新操作状态的日期和时间。|
+|title|String|计算机操作标题。|
+|relatedFileInfo|类|包含两个属性。 string `fileIdentifier` ，具有 `fileIdentifierType` 可能值的 Enum："Sha1"、"Sha256"和"Md5"。|
 
 ## <a name="json-representation"></a>Json 表示形式
 

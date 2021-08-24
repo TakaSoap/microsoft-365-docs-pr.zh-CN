@@ -14,18 +14,18 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 摘要：使用 PowerShell for Microsoft 365 Online 策略分配每用户Skype for Business设置。
-ms.openlocfilehash: c0c2a4319b1f754384ab9b514bfe637591fc28c6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 6f262730c74de4442341454b2f85a181f673398b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353776"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502671"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-使用 PowerShell for Microsoft 365是使用联机策略分配每用户通信Skype for Business一种有效方法。
+使用 PowerShell for Microsoft 365是使用 Skype for Business Online 策略分配每用户通信设置的一种有效方法。
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>准备运行 PowerShell 命令
 
@@ -85,7 +85,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
-换句话说，向我们显示 ExternalAccessPolicy 属性设置为 FederationAndPICDefault 的所有用户。  (并且，为了限制屏幕上显示的信息量，请使用 Select-Object cmdlet 向我们仅显示每个用户的 显示名称.)  
+换句话说，向我们显示 ExternalAccessPolicy 属性设置为 FederationAndPICDefault 的所有用户。  (并且，为了限制屏幕上显示的信息量，请使用 Select-Object cmdlet 显示仅显示每个用户的 显示名称.)  
   
 若要配置所有用户帐户以使用同一策略，请使用此命令：
   
@@ -108,6 +108,8 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 若要管理 1000 (用户数超过 1000) ，您需要使用 [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet 通过脚本块对命令进行批处理。  在之前的示例中，每次执行 cmdlet 时，它必须设置调用，然后等待结果，然后再发送回。  使用脚本块时，这允许远程执行 cmdlet，一旦完成，将数据发送回。
 
 ```powershell
+$s = Get-PSSession | Where-Object { ($.ComputerName -like '*.online.lync.com' -or $.Computername -eq 'api.interfaces.records.teams.microsoft.com') -and $.State -eq 'Opened' -and $.Availability -eq 'Available' }
+
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
 
 $batch = 50

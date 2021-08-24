@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: 计划程序计划程序Microsoft 365。
-ms.openlocfilehash: 970d4a37c154e3049dcbd2f5987ff9055af6bbec
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 0b87555075bd9ac147579156897f545fbfe33020
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380220"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503247"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>欢迎使用计划程序Microsoft 365
 
@@ -55,7 +55,7 @@ Microsoft 365计划程序是一项服务，允许您将会议与约会计划委�
 
 ## <a name="pricing-and-licensing"></a>定价和许可
 
-了解更多信息[：Microsoft 365计划程序](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+了解更多信息[：Microsoft 365计划程序](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
 >[注意：与会者不需要计划程序或Microsoft 365许可证。 <br>计划程序助理邮箱不需要Microsoft 365计划程序许可证。
 

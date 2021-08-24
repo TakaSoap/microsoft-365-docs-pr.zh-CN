@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b8819712236ebd09c179e3f8c43a161a4ea73f5ca8b0fe8eca2fd9c242c38d40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f70cba0d749238b9602f88b27d96aec87a5139b
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863639"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502839"
 ---
 # <a name="list-vulnerabilities-by-software"></a>按软件列出漏洞
 
@@ -48,8 +48,8 @@ ms.locfileid: "53863639"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
-委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
+应用程序|Vulnerability.Read.All|"读取威胁和漏洞管理软件信息"
+委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
 

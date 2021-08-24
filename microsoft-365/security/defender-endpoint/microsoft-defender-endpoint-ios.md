@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 658aba2a3061e247c9be0aaa159708bb24e97a20649fa67c2ceba0aa127e48b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6f682cab22b5838234e16091001c1b0be0f4126
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894231"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502803"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
@@ -45,13 +45,13 @@ ms.locfileid: "53894231"
 
 **对于最终用户**
 
-- 分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。 请参阅 [Microsoft Defender for Endpoint 许可要求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
+- 分配给最终用户的 Microsoft Defender for Endpoint () 应用的许可证。 请参阅 [Microsoft Defender for Endpoint 许可要求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
 
-- **对于已注册设备**： (设备) 通过应用注册Intune 公司门户强制执行 Intune [](/mem/intune/user-help/enroll-your-device-in-intune-ios)设备合规性策略。 这要求为最终用户分配一个Microsoft Intune许可证。
-    - Intune 公司门户应用可以从[Apple App Store 下载](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
+- **对于已注册设备**： (设备) 通过 Intune 公司门户 应用注册，以 [](/mem/intune/user-help/enroll-your-device-in-intune-ios)强制执行 Intune 设备合规性策略。 这需要为最终用户分配一个Microsoft Intune许可证。
+    - Intune 公司门户应用可以从 Apple App Store[下载](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
     - 请注意，Apple 不允许重定向用户从应用商店下载其他应用，因此在载入 Microsoft Defender for Endpoint 应用之前，需要由用户完成此步骤。
 
-- **对于注销的设备：设备** (注册) 注册Azure Active Directory。 这要求最终用户通过应用 Microsoft Authenticator[登录](https://apps.apple.com/app/microsoft-authenticator/id983156458)。
+- **对于注销的设备**：设备 (注册) 注册Azure Active Directory。 这要求最终用户通过应用 Microsoft Authenticator[登录](https://apps.apple.com/app/microsoft-authenticator/id983156458)。
 
 - 若要详细了解如何分配许可证，请参阅 [向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
@@ -62,13 +62,14 @@ ms.locfileid: "53894231"
 - 访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
 
     > [!NOTE]
-    > Microsoft Intune唯一受支持的统一终结点管理 (UEM) 解决方案，用于部署 Microsoft Defender for Endpoint，以及强制执行 Intune 中与 Endpoint 相关的设备合规性策略的 Defender。
+    > Microsoft Defender for Endpoint 现在为未使用移动设备管理 (MDM) 但正在使用 Intune 管理移动应用程序的受管理应用程序内的组织数据提供支持。 它还向使用其他企业移动性管理解决方案的客户扩展此支持，同时仍使用 Intune 在 MAM (移动应用程序[) 。 ](/mem/intune/apps/mam-faq)
+    > 在此更新之前，Microsoft Defender for Endpoint 仅在使用 Intune MDM 注册的设备上有效。  
 
 **系统要求**
 
 - 运行 iOS 11.0 及以上设备的 iOS 设备。 iPad版本 1.1.15010101 之后正式支持的设备。
 
-- 设备已注册到 Intune 公司门户[应用，或者](https://apps.apple.com/us/app/intune-company-portal/id719171358)通过 Azure Active Directory[注册](https://apps.apple.com/app/microsoft-authenticator/id983156458)Microsoft Authenticator。
+- 设备已注册到 Intune 公司门户[应用，或](https://apps.apple.com/us/app/intune-company-portal/id719171358)通过 Azure Active Directory[注册](https://apps.apple.com/app/microsoft-authenticator/id983156458)Microsoft Authenticator。
 
 ## <a name="installation-instructions"></a>安装说明
 
@@ -77,7 +78,7 @@ ms.locfileid: "53894231"
 
 ## <a name="resources"></a>资源
 
-- 通过访问 [iOS](ios-whatsnew.md) 版 Microsoft Defender for Endpoint 中的新增功能或博客，随时了解即将发布的 [版本](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
+- 通过访问 [iOS](ios-whatsnew.md) 上的 Microsoft Defender for Endpoint 中的新增功能或我们的博客，随时了解即将发布的 [版本](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。
 
 - 通过应用内反馈系统或 [SecOps 门户提供反馈](https://securitycenter.microsoft.com)
 
@@ -87,3 +88,4 @@ ms.locfileid: "53894231"
 - [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
 - [配置应用保护策略，以将 Defender for Endpoint 风险信号 (MAM) ](ios-install-unmanaged.md)
 - [根据 Microsoft Defender for Endpoint 中的设备风险评分配置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [移动应用程序管理 (MAM) 基础知识](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

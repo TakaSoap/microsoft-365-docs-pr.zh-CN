@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: b61abfa58d10aca154cee02edf15a56b516495b8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: ea7c0bcfdefddaa1c44019f3752e5d00c5323bcc
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247087"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483411"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -114,7 +114,9 @@ ms.locfileid: "58247087"
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>如何配置 Office 应用的自动标签
 
-Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用中的自动标签。 对于 Office 应用中的内置标记，此功能[在不同应用程序中有不同的可用性阶段](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
+对于 Office 应用中的内置标记，请检查在 Office 应用中自动标记[所需的最低版本](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
+
+Azure 信息保护统一标记客户端支持自动标记内置和自定义敏感信息类型，但不支持使用精确数据匹配 (EDM) 的可训练分类器或敏感信息类型。
 
 [创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置。 请确保为标签的范围选择了 **“文件和电子邮件”**：
 

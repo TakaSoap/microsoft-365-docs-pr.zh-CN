@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 74c47c8e9e4e6f46802c64df0d987ae123ed727cde05b520847c94fcfc7fd349
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8325f848281a37099e7a89eeda05d738c686b011
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800302"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502731"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>按建议列出漏洞
 
@@ -45,8 +45,8 @@ ms.locfileid: "53800302"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
-委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
+应用程序|Vulnerability.Read.All  |"读取威胁和漏洞管理安全建议信息"
+委派（工作或学校帐户）|Vulnerability.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +66,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 200 OK，并包含与安全建议相关联的漏洞列表。
+如果成功，此方法将返回 200 OK，并列出与安全建议相关联的漏洞。
 
 ## <a name="example"></a>示例
 

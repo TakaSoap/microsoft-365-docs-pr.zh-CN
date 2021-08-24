@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将 dlp 策略用于非 Microsoft 云应用。
-ms.openlocfilehash: ef4482c66f9774057d5027b191cb32c8cf40becb0e28faa36fc0641fe2e51832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814267"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502815"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>对非 Microsoft 云应用使用数据丢失防护策略
 
-从 DLP (到) 应用的数据丢失防护是 DLP 功能Microsoft 365的一部分;使用这些功能，可以跨服务发现和保护Microsoft 365项。 有关所有 Microsoft DLP 产品/服务的信息，请参阅了解 [数据丢失防护](dlp-learn-about-dlp.md)。
+数据丢失防护 (DLP) 策略到非 Microsoft 云应用是 DLP 功能Microsoft 365的一部分;使用这些功能，可以跨服务发现和保护Microsoft 365项。 有关所有 Microsoft DLP 产品/服务的信息，请参阅了解 [数据丢失防护](dlp-learn-about-dlp.md)。
 
 您可以使用 DLP 策略对非 Microsoft 云应用进行监视和检测，以监视和检测何时通过非 Microsoft 云应用使用和共享敏感项目。 使用这些策略可为你提供所需的可见性和控制，以确保正确使用和保护它们，并且有助于防止可能损害它们的风险行为。
 
@@ -37,7 +37,7 @@ ms.locfileid: "53814267"
 
 ### <a name="skusubscriptions-licensing"></a>SKU/订阅许可
 
-开始将 DLP 策略用于非 Microsoft 云应用之前，Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)和任何加载项。 若要访问和使用此功能，你必须拥有以下订阅或加载项之一：
+开始对非 Microsoft 云应用使用 DLP 策略之前，Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)和任何加载项。 若要访问和使用此功能，你必须拥有以下订阅或加载项之一：
 
 - Microsoft 365 E5
 - Microsoft 365 E5 合规
@@ -59,7 +59,7 @@ ms.locfileid: "53814267"
 
 - [连接Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [连接 Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [连接G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [连接G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [连接Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [连接Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
@@ -79,7 +79,7 @@ ms.locfileid: "53814267"
 
    ![Box-US 和 Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
-你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每一个应用，可能的操作 (取决于云应用 API) 。
+你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每个应用，可能的操作 (取决于云应用 API) 。
 
 ![创建规则](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "53814267"
 ![限制第三方应用](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
-> 应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 当为非 Microsoft 应用创建 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。
+> 应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 创建非 Microsoft 应用的 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。
 
 有关创建和配置 DLP 策略的信息，请参阅创建 [测试和调整 DLP 策略](./create-test-tune-dlp-policy.md)。
 

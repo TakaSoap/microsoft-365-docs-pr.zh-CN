@@ -20,48 +20,48 @@ metadata:
   - MET150
   - MOE150
   description: 查看有关集中部署的常见问题的解答，Microsoft 365 管理中心。
-  ms.openlocfilehash: aace2db69a50f574ac6d48c95496ff65a535d150
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: e2b4717fb2e1d5e82d22ce5288c40187722495df
+  ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58254749"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "58501999"
 title: 集中部署常见问题解答
-summary: 建议 Office 365 管理员通过集中部署将 Office 加载项 (Word、Excel、PowerPoint 和 Outlook) 部署到组织内部的用户和组，只要组织满足本文所述的使用集中部署的所有要求。
+summary: 建议 Office 365 管理员通过集中部署将 Office 加载项 (Word、Excel、PowerPoint 和 Outlook) 部署到组织内部的用户和组，只要组织满足本文所述使用集中部署的所有要求。
 sections:
 - name: 已忽略
   questions:
   - question: >
-      How do I know if my organization is set up for Centralized Deployment?
-    answer: "Centralized deployment of add-ins requires that users are using Microsoft 365 Apps for enterprise (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory. \n \nCentralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.\n\nYou can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. \n  \n"
+      我如何知道我的组织是否设置为集中部署？
+    answer: "外接程序的集中部署要求用户使用 Microsoft 365 企业应用版 (，并且使用其组织登录凭据登录 Office 并且) 具有Exchange Online邮箱。 订阅目录必须位于订阅目录中，或已联合Azure Active Directory。 \n \n仅联机邮箱支持集中部署。 它不支持部署到内部部署Exchange邮箱。\n\n可以使用集中[部署兼容性检查器](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   来确定你的订阅是否符合条件。 \n  \n"
   - question: >
-      How do you target add-in user assignments with Centralized Deployment?
-    answer: "Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Azure Active Directory groups, including Office 365 Groups, distribution lists, and security groups. \n\nIt is better to use groups assignments instead of individual user assignment for easier management.\n \nFor more details, see [User and Group assignments](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).\n \n"
-  - question: "How long does it take for add-ins to show up for all users? \n"
-    answer: "It can take up to 24 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. \n"
+      如何使用集中部署将外接程序用户分配作为目标？
+    answer: "集中部署支持向租户中的单个用户、组和每个人分配工作。 集中部署可用于顶级组或没有父组的组的用户，但不能用于嵌套组或具有父组的组的用户。 集中部署也是大多数组Azure Active Directory的一Office 365组、通讯组列表和安全组。 \n\n为了便于管理，最好使用组分配而不是单个用户分配。\n \n有关详细信息，请参阅用户 [和组分配](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。\n \n"
+  - question: "加载项向所有用户显示需要多久？ \n"
+    answer: "外接程序最多可能需要 24 小时才能显示给所有用户。 外接程序更新、打开或关闭的更改或者外接程序删除可能需要相同的时间。 \n"
   - question: >
-      As an administrator, how do I manage the user access to add-ins for my organization?
+      作为管理员，如何管理用户对组织的外接程序的访问权限？
     answer: >
-      For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
+      为了便于将加载项部署到用户、组或整个组织，我们建议管理员使用集中部署。
 
 
-      For more information about managing user access, see:
-       - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
-       - [Specify the administrators and users who can install and manage add-ins for Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
-  - question: "Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? \n"
-    answer: "Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:\n\n**Fixed (Default)** \nThe add-in is deployed automatically to the assigned users, and they cannot remove it.\n \n**Available**\nUsers can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.\n \n**Optional**\nThe add-in is deployed automatically to the assigned users, but they can choose to remove it.\n    \n"
-  - question: "Can admins update Line-of-Business (LOB) add-ins? \n"
-    answer: "Yes. Admins can upload a new manifest file to support metadata changes for admin-deployed LOB add-ins. The add-in updates the next time the Office applications starts. The web application can change at any time.\n \nFor more information, see [line-of-business add-in](./manage-addins-in-the-admin-center.md).  \n"
-  - question: "Can admins turn off add-ins? \n"
+      有关管理用户访问权的信息，请参阅：
+       - [通过在所有客户端上关闭 Office Store 来阻止外接程序 (应用商店Outlook) ](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+       - [指定可安装和管理 Outlook 加载项的管理员和用户](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
+  - question: "集中部署是否使管理员能够灵活地选择用于Outlook部署方法？ \n"
+    answer: "是的。 集中部署使管理员能够灵活地选择以下两种部署方法之一Outlook外接程序部署期间部署外接程序：\n         \n**可用** 用户可以通过选择\"主页\"Outlook\"从管理员管理的\">\"获取>**外接程序\"来安装外接程序**。\n \n**可选** 外接程序将自动部署到分配的用户，但他们可以选择将其删除。\n    \n"
+  - question: "管理员能否将业务线 (LOB) 加载项？ \n"
+    answer: "是的。 管理员可以上载新的清单文件以支持管理员部署的 LOB 加载项的元数据更改。加载项在应用程序下次启动时Office更新。 Web 应用程序可以随时更改。\n \n有关详细信息，请参阅 [业务线加载项](./manage-addins-in-the-admin-center.md)。  \n"
+  - question: "管理员可以关闭加载项吗？ \n"
     answer: >
-      Yes. Admins can turn on or off the add-ins they deploy for all users from the Microsoft admin center.
+      是的。 管理员可以从 Microsoft 管理中心为所有用户打开或关闭他们部署的外接程序。
 
 
-      For more information, see [Add-in states](./manage-addins-in-the-admin-center.md#add-in-states).
+      有关详细信息，请参阅 [加载项状态](./manage-addins-in-the-admin-center.md#add-in-states)。
   - question: >
-      Can admins delete or remove add-ins?
-    answer: "Yes. Admins can delete add-ins they deployed for all users from the Microsoft admin center.\n\nFor more information, see [Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
-  - question: "Can admins deploy paid add-ins from the Office Store using Centralized Deployment? \n"
-    answer: "No. You can't deploy paid add-ins from the Office Store using Centralized Deployment at this time. \n \nWe suggest reaching out to the ISV Developer for the paid add-in to request a manifest file or a URL. The tenant admin can then deploy the add-in as a LOB add-in using Centralized Deployment.\n   \n"
-  - question: "Which admin role do I need to manage add-ins for my organization? \n"
-    answer: "Global Admin is the recommended role with complete access to add-in management lifecycle. If you're the person who purchased your Microsoft 365 Business subscription, you are the Global admin.\n\nYour subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  \n \nFor more information, see [Assign admin roles](../add-users/assign-admin-roles.md?view=o365-worldwide)."
+      管理员能否删除或删除加载项？
+    answer: "是的。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。\n\n有关详细信息，请参阅 [删除加载项](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 \n  \n"
+  - question: "管理员能否使用集中部署从 Office 应用商店部署付费加载项？ \n"
+    answer: "不正确。 目前，你无法使用集中部署从 Office 应用商店部署付费加载项。 \n \n我们建议向 ISV 开发人员联系付费加载项，以请求清单文件或 URL。 然后，租户管理员可以使用集中部署将加载项部署为 LOB 加载项。\n   \n"
+  - question: "我需要哪个管理员角色来管理我的组织的外接程序？ \n"
+    answer: "全局管理员是建议的角色，具有对加载项管理生命周期的完全访问权限。 如果你是购买了企业版订阅Microsoft 365，则你是全局管理员。\n\n订阅附带一组管理员角色，你可以将其分配给组织中其他用户。 每个管理员角色映射到常见的业务功能，并授予组织成员在组织中执行特定Microsoft 365 管理中心。  \n \n有关详细信息，请参阅分配 [管理员角色](../add-users/assign-admin-roles.md?view=o365-worldwide)。"

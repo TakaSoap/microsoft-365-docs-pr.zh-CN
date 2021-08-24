@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用Advanced eDiscovery仪表板查看集来快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。
-ms.openlocfilehash: 2128f2b2caa719cf2fc9b966ff70e1cfc74a1852896a10c85a17c407ffdddfea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836496"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502971"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery审阅集的仪表板
 
-在某些情况下，Advanced eDiscovery可能需要查看大量文档和电子邮件。 在开始审阅过程之前，您可能需要快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。 为此，可以使用审阅集Advanced eDiscovery仪表板来快速分析文档集。
+在某些情况下，Advanced eDiscovery，可能需要查看大量文档和电子邮件。 在开始审阅过程之前，您可能需要快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。 为此，可以使用审阅集Advanced eDiscovery仪表板来快速分析文档集。
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>步骤 1：在审阅集仪表板上创建小组件
 
-1. 在安全&合规中心，转到"**电子** 数据展示> Advanced eDiscovery以显示组织中事例的列表。
+1. 在Microsoft 365 合规中心中，转到"**电子** 数据> Advanced eDiscovery，以显示组织中事例的列表。
   
 2. 选择现有案例。
   
@@ -55,7 +55,7 @@ ms.locfileid: "53836496"
 
    ![创建小组件](../media/addwidget.png)
 
-    a. 键入小部件的名称，该名称将显示在小组件标题栏中。 需要命名小组件，但有助于标识小组件数据。
+    a. 键入小部件的名称，该名称将显示在小组件标题栏中。 命名小组件是必需的，但有助于标识小组件数据。
 
     b. 在"选择数据透视 **表** "下拉列表中选择一个将用于小组件数据的属性。 此列表中的项目是审阅集内项目的可搜索属性。 有关这些属性的说明，请参阅 Document [metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md)。 本主题的"可搜索字段名称"列中列出了小部件的透视选项。
 

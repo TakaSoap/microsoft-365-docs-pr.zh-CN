@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: 在本地Windows编辑注册表，以在从安全与合规中心导出内容搜索&报告。
-ms.openlocfilehash: 6424f1763a297cd2fee0e6c8b5b1b06236b95ad0173bc6e117bedd2da5502ed9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 在本地Windows编辑注册表，以在从目录导出内容搜索的结果时禁用Microsoft 365 合规中心。
+ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807992"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503151"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 
-在使用电子数据展示导出工具导出安全 & 合规中心中的内容搜索结果时，该工具会自动创建和导出两个报告，其中包含有关导出内容的其他信息。 这些报告是Results.csv文件和 Manifest.xml 文件 (请参阅本主题中有关禁用导出报告的常见问题部分，了解这些报告[](#frequently-asked-questions-about-disabling-export-reports)的) 。 由于这些文件可能非常大，因此可以通过阻止导出这些文件来加快下载时间并节省磁盘空间。 为此，可以在Windows导出搜索结果的计算机上更改注册表。 如果要在以后包含报告，可以编辑注册表设置。 
+当您使用电子数据展示导出工具导出 Microsoft 365 合规中心 中的内容搜索结果时，该工具会自动创建和导出两个报告，其中包含有关导出内容的其他信息。 这些报告是Results.csv文件和 Manifest.xml 文件 (请参阅本主题中有关禁用导出报告的常见问题部分，了解这些报告[](#frequently-asked-questions-about-disabling-export-reports)的) 。 由于这些文件可能非常大，因此可以通过阻止导出这些文件来加快下载时间并节省磁盘空间。 为此，可以在Windows导出搜索结果的计算机上更改注册表。 如果要在以后包含报告，可以编辑注册表设置。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>创建注册表设置以禁用导出报告
 
@@ -38,7 +38,7 @@ ms.locfileid: "53807992"
     
     - **Results.csv**
     
-      使用文件名后缀 .reg 将以下Windows保存到注册表文件中;例如，DisableResultsCsv.reg。
+      使用文件名后缀 .reg 将Windows保存到注册表文件中;例如，DisableResultsCsv.reg。
     
       ```text
       Windows Registry Editor Version 5.00
@@ -47,14 +47,14 @@ ms.locfileid: "53807992"
 
     - **Manifest.xml**
     
-      使用文件名后缀 .reg 将以下Windows保存到注册表文件中;例如，DisableManifestXml.reg。
+      使用文件名后缀 .reg 将Windows保存到注册表文件中;例如，DisableManifestXml.reg。
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. 在Windows资源管理器中，单击或双击在之前步骤中创建的 .reg 文件。
+3. 在Windows资源管理器"中，单击或双击在之前步骤中创建的 .reg 文件。
     
 4. 在"用户访问控制"窗口中，单击 **"是** "让注册表编辑器做出更改。 
     
@@ -72,7 +72,7 @@ ms.locfileid: "53807992"
     
     - **Results.csv**
     
-        在"文件"中打开 disableResultsCsv.reg 记事本，将值更改为 `False` `True` ，然后保存该文件。 例如，编辑文件后，它如下所示：
+        在"文件"中打开记事本 DisableResultsCsv.reg 文件，将值更改为 `False` `True` ，然后保存该文件。 例如，编辑文件后，它如下所示：
     
         ```text
         Windows Registry Editor Version 5.00
@@ -100,7 +100,7 @@ ms.locfileid: "53807992"
 
  **报告Results.csvManifest.xml是什么？**
   
-该Results.csvManifest.xml文件包含有关已导出内容的其他信息。
+该Results.csv和Manifest.xml文件包含有关已导出内容的其他信息。
   
 - **Results.csv** 一Excel文档，其中包含有关作为搜索结果下载的每个项目的信息。 对于电子邮件，结果日志包含有关每封邮件的信息，包括： 
     
@@ -124,7 +124,7 @@ ms.locfileid: "53807992"
     
   - 文档的名称（位于结果日志中的主题列）。
     
-- **Manifest.xml** 清单文件 (XML 格式) ，其中包含有关搜索结果中包括的每个项目的信息。 此报告中的信息与报告Results.csv相同，但采用电子数据发现参考模型 (EDRM) 。 有关 EDRM 详细信息，请转到 [https://www.edrm.net](https://www.edrm.net) 。
+- **Manifest.xml** 清单文件 (XML 格式) ，其中包含有关搜索结果中包括的每个项目的信息。 此报告中的信息与 Results.csv 相同，但采用电子数据发现参考模型 (EDRM) 。 有关 EDRM 详细信息，请转到 [https://www.edrm.net](https://www.edrm.net) 。
     
  **何时应禁用导出这些报告？**
   

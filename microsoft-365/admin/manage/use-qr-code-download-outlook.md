@@ -16,17 +16,14 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: 了解如何使用 QR 代码进行身份验证并下载 Outlook 移动版。
-ms.openlocfilehash: a648722877580899f9747afa20bd758be2589a7ab2fb794a636614b032e063cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4cd093ea8592255587cdbe8d4dbb1a5c4b1d6674
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824391"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502011"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 代码登录到 Outlook 移动应用
-
-> [!IMPORTANT]
-> 此功能仅适用于已在 Microsoft 365 管理中心中启用目标发布的组织。 要启用目标发布并详细了解其工作原理，请参阅 [设置标准或目标发布选项](release-options-in-office-365.md)。 我们将在未来几周内通过公共预览版扩展到更多组织。 公共预览版提供对 Microsoft 365 功能的提前访问。
 
 作为 Microsoft 365 管理员，你可以让用户在其移动设备上登录到 Outlook for Android 或 iOS 应用，而无需输入其用户名和密码。 通过扫描 QR 代码，用户可以安全地进行身份验证并登录到 Outlook 移动版。
 

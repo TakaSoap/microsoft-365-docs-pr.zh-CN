@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解电子Microsoft 365工具如何处理附加到电子邮件并存储在 SharePoint Online 和 OneDrive for Business 中的加密文档。
-ms.openlocfilehash: e03f5813fcd5f232119f3586cd173c40ca846cc7a7cb6908b5b71fab8e26361c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解电子Microsoft 365工具如何处理附加到电子邮件并存储在 SharePoint Online 和 OneDrive for Business 中的加密OneDrive for Business。
+ms.openlocfilehash: 7d0f4acd34fc67738258e0f0df23535e759bd8dd
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842287"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503043"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>电子数据展示Microsoft 365中的解密
 
@@ -31,11 +31,11 @@ ms.locfileid: "53842287"
 
 为了更加轻松地管理电子数据展示工作流中的加密内容，Microsoft 365电子数据展示工具现在合并对附加到电子邮件并发送到 Exchange Online 中的加密文件的解密。<sup>1</sup>此外，存储在 SharePoint Online 和 OneDrive for Business 中的加密Advanced eDiscovery。
 
-在此新功能之前，只有受权限管理保护的电子邮件内容 (未附加的文件) 解密。 电子数据展示SharePoint OneDrive加密的文档无法解密。 现在，当准备预览搜索结果、添加到 Advanced eDiscovery 中的审阅集并导出时，使用 Microsoft 加密技术加密的文件位于 SharePoint 或 OneDrive 帐户上，可进行搜索和解密。 此外，还可以SharePoint OneDrive电子邮件中的加密文档。 此解密功能允许电子数据展示管理员在预览搜索结果时查看加密电子邮件附件和网站文档的内容，并在将已添加到 Advanced eDiscovery 审阅集后查看这些内容。
+在此新功能之前，只有受权限管理保护的电子邮件内容 (未附加的文件) 解密。 电子数据展示SharePoint OneDrive加密的文档无法解密。 现在，当准备预览搜索结果、添加到 Advanced eDiscovery 中的审阅集并导出时，可以使用 Microsoft 加密技术加密的文件位于 SharePoint 或 OneDrive 帐户上，并可以搜索和解密这些文件。 此外，可SharePoint OneDrive电子邮件的加密文档和加密文档。 此解密功能允许电子数据展示管理员在预览搜索结果时查看加密电子邮件附件和网站文档的内容，并在将已添加到 Advanced eDiscovery 审阅集后查看这些内容。
 
 ## <a name="supported-encryption-technologies"></a>支持的加密技术
 
-Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的项目。 这些技术是 Azure 权限管理，Microsoft 信息保护 (特定敏感度标签) 。 有关 Microsoft 加密技术的信息，[请参阅加密。](encryption.md) 不支持通过第三方加密技术加密的内容。 例如，不支持预览或导出使用非 Microsoft 技术加密的内容。
+Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的项目。 这些技术是 Azure 权限管理和Microsoft 信息保护 (特定敏感度标签) 。 有关 Microsoft 加密技术的信息，[请参阅加密。](encryption.md) 不支持通过第三方加密技术加密的内容。 例如，不支持预览或导出使用非 Microsoft 技术加密的内容。
 
 > [!NOTE]
 > Microsoft 电子数据展示工具不支持解密Office 365 邮件加密 (OME) 加密的电子邮件。
@@ -48,18 +48,18 @@ Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的�
 |:---------|:---------|:---------|:---------|
 |在电子邮件和网站<sup>1</sup>中搜索加密文件中的内容     |是      |是      |是      |
 |预览附加到电子邮件的加密文件     |是      |是     |是       |
-|预览加密文档SharePoint OneDrive|否      |否    |是       |
+|预览加密的文档SharePoint OneDrive|否      |否    |是       |
 |查看审阅集的加密文件    |不适用      |不适用        | 是        |
 |导出附加到电子邮件的加密文件    |是       |是  |是    |
-|导出加密的文档SharePoint OneDrive    |否       |否  |是    |
+|导出加密的文档SharePoint和OneDrive    |否       |否  |是    |
 |||||
 
 > [!NOTE]
-> <sup>1</sup>不针对电子数据展示对位于本地计算机 (且未存储在 SharePoint 或 OneDrive 站点) 的加密文件编制索引。 这意味着，如果加密的本地文件附加到电子邮件，则关键字搜索查询不会返回该文件，即使该文件包含与搜索查询匹配的关键字。 但是，如果电子邮件属性 (如发送日期、发件人、收件人或主题) 匹配，电子数据展示搜索可以返回包含本地加密文件的电子邮件。
+> <sup>1</sup>不为电子数据展示对位于本地计算机 (且未存储在 SharePoint 或 OneDrive 站点) 的加密文件编制索引。 这意味着，如果加密的本地文件附加到电子邮件，则关键字搜索查询不会返回该文件，即使该文件包含与搜索查询匹配的关键字。 但是，如果电子邮件属性 (如发送日期、发件人、收件人或主题邮件与搜索查询匹配，则电子数据展示搜索可以返回包含本地加密文件) 电子邮件。
 
 ### <a name="decryption-limitations-with-sensitivity-labels"></a>敏感度标签的解密限制
 
-当应用了加密的敏感度标签SharePoint配置了以下任一设置时，电子数据展示不支持 SharePoint 和 OneDrive 中的加密文件：
+当应用了加密的敏感度标签配置了以下任一设置时SharePoint电子数据展示不支持 SharePoint 和 OneDrive 中的加密文件：
 
 - 用户可以在手动将标签应用于文档时分配权限。 这有时称为用户 *定义权限*。
 
@@ -73,4 +73,4 @@ Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的�
 
 您必须获得 RMS 解密角色，以预览、查看和导出使用 Microsoft 加密技术加密的文件。 还必须分配有此角色，以审阅和查询已添加到 Advanced eDiscovery 审阅集的加密Advanced eDiscovery。
 
-默认情况下，此角色分配给安全与合规中心中"权限"页上Office 365电子数据&组。 有关 RMS 解密角色详细信息，请参阅分配 [电子数据展示权限](assign-ediscovery-permissions.md#rms-decrypt)。
+默认情况下，此角色分配给"管理员"角色组中"权限"页上的"电子数据展示Microsoft 365 合规中心。 有关 RMS 解密角色详细信息，请参阅分配 [电子数据展示权限](assign-ediscovery-permissions.md#rms-decrypt)。
