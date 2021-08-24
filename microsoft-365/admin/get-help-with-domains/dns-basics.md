@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 域名系统将计算机主机名映射到 IP 地址，了解 DNS 和域注册机构基本信息可帮助管理域。
-ms.openlocfilehash: 0cf8d0ef7fa5a3a6420f0cf85eea2242ac9c909faaa3f0e0a032d7902fc4b7ee
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37d8e885dafaa055ed5cc7eee24456b758ef8b4f
+ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825843"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58394284"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -193,7 +194,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 
 Microsoft 365 需要几个 DNS 记录才能使用你的域。除了设置你的域的 MX 记录来将电子邮件发送到 Microsoft 365，还有一些记录可以帮助你完成以下任务：确保 Outlook 可以自动连接到正确的 Exchange 服务器，设置即时消息，帮助防止垃圾电子邮件等。
   
-可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 Microsoft 365 管理中心中。 
+可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Microsoft 365 管理中心</a> 中。 
   
 或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)”。
   

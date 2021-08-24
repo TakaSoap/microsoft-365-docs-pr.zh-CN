@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ca52f60d6bece71ca778c067fb96241b82c9093
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
+ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246375"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58408090"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -236,7 +236,7 @@ ms.locfileid: "58246375"
      > [!IMPORTANT]
      > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出的条目超出此限制，请尝试使用日期范围以减少审核日志项目。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。
 
-3. 导出过程完成后，窗口顶部会显示一条消息，提示你打开 CSV 文件并将其保存到本地计算机。 还可以访问“下载”文件夹中的 CSV 文件。
+3. 导出过程完成后，窗口顶部会显示一条消息，提示你打开 CSV 文件并将其保存到本地计算机。还可以访问"下载"文件夹中的 CSV 文件。
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>有关导出和查看审核日志搜索结果的详细信息
 
@@ -415,6 +415,8 @@ ms.locfileid: "58246375"
 |已移动文件|FileMoved|用户将文档从网站上的当前位置移动到新位置。|
 |(无)|FilePreviewed|用户在 SharePoint 或 OneDrive for Business 网站上预览文件。 这些事件通常发生在基于单个活动的高容量情形中，例如查看图库。|
 |已执行的搜索查询|SearchQueryPerformed|用户或系统帐户在 SharePoint 或 OneDrive for Business 中执行搜索。 部分服务帐户执行搜索查询的常见情形包括将电子数据展示挂起和保留策略应用到网站或 OneDrive 帐户，以及将保留或敏感度标签自动应用到网站内容。|
+|已回收文件 | FileRecycled | 用户将文件移入 SharePoint 回收站。 |
+|已回收文件夹 | FolderRecycled | 用户将文件夹移入 SharePoint 回收站。 |
 |已回收文件的次要版本|FileVersionsAllMinorsRecycled|用户从文件版本历史记录中删除所有次要版本。 已删除的版本移动到网站的回收站。|
 |已回收所有版本的文件|FileVersionsAllRecycled|用户从文件版本历史记录中删除所有版本。 已删除的版本移动到网站的回收站。|
 |已回收文件版本|FileVersionRecycled|用户从文件版本历史记录中删除某个版本。 已删除的版本移动到网站的回收站。|
@@ -626,7 +628,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
-|访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。 |
+|访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#advanced-audit-events)中的"高级审核事件"部分。 |
 |已添加代理邮箱权限|Add-MailboxPermission|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。|
 |已添加或删除具有日历文件夹代理访问权限的用户|UpdateCalendarDelegation|已在其他用户邮箱的日历中添加或删除具有代理身份的用户。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|
 |已向文件夹添加权限|AddFolderPermissions|已添加文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
@@ -642,7 +644,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已从邮箱清除邮件|HardDelete|已从“可恢复邮件”文件夹中清除邮件（已从邮箱中永久删除）。|
 |已删除代理邮箱权限|Remove-MailboxPermission|管理员已从用户邮箱删除分配给代理的 FullAccess 权限。 删除 FullAccess 权限后，代理无法打开他人邮箱，也无法访问该邮箱中的任何内容。|
 |已从文件夹中删除权限|RemoveFolderPermissions|已删除文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
-|已发送邮件|发送|邮件已发送、答复或转发。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 有关详细信息，请参阅[高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。|
+|已发送邮件|发送|邮件已发送、答复或转发。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 有关详细信息，请参阅 [高级审核](advanced-audit.md#advanced-audit-events)中的"高级审核事件"部分。|
 |已使用“发送方式”权限发送邮件|SendAs|已使用 SendAs 权限发送某个邮件。这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|
 |已使用“代表发送”权限发送邮件|SendOnBehalf|已使用 SendOnBehalf 权限发送消息。这意味着另一个用户代表邮箱所有者发送邮件。该邮件指示代表其发送邮件的收件人以及实际发送邮件的收件人。|
 |已从 Outlook 客户端更新收件箱规则|UpdateInboxRules|有权访问邮箱的邮箱所有者或其他用户在 Outlook 客户端中修改了收件箱规则。|
@@ -810,6 +812,9 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“活动”列表中的“显示所有活动的结果”。 使用日期范围框和“**用户**”列表，缩小搜索结果的范围。
 
+> [!NOTE]
+> 某些 Yammer 审核活动仅在高级审核中可用。 这意味着在审核日志中记录这些活动之前，必须为用户分配适当的许可证。 有关高级审核功能的更多详细信息，请参阅 [ Microsoft 365 高级审核](advanced-audit.md#advanced-audit-events)。 有关高级审核许可要求，请参阅[ Microsoft 365 中的审核解决方案](auditing-solutions-overview.md#licensing-requirements)。 <br/><br/>在下表中，高级审核活动突出显示了星号 （*）。
+
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已更改数据保留策略|SoftDeleteSettingsUpdated|验证管理员将网络数据保留策略的设置更新为了硬删除或软删除。 仅验证管理员可以执行此操作。|
@@ -819,16 +824,22 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更改安全配置|NetworkSecurityConfigurationUpdated|验证管理员更新了 Yammer 网络的安全配置。 其中包括设置了密码过期策略和 IP 地址限制。 仅验证管理员可以执行此操作。|
 |已创建文件|FileCreated|用户上传了文件。|
 |已创建组|GroupCreation|用户创建组。|
+|已创建消息<sup>*</sup>|MessageCreated|用户创建消息。|
 |已删除组|GroupDeletion|从 Yammer 中删除了组。|
 |已删除消息|MessageDeleted|用户删除了消息。|
 |已下载的文件|FileDownloaded|用户下载了文件。|
 |已导出数据|DataExport|验证管理员导出了 Yammer 网络数据。 仅验证管理员可以执行此操作。|
+|无法访问社区<sup>*</sup>|CommunityAccessFailure|用户无法访问社区。|
+|无法访问文件<sup>*</sup>|FileAccessFailure|用户无法访问文件。|
+|无法访问消息<sup>*</sup>|MessageAccessFailure|用户无法访问消息。|
 |已共享文件|FileShared|用户与其他用户共享了文件。|
 |已挂起网络用户|NetworkUserSuspended|网络管理员或验证管理员从 Yammer 中挂起（停用）了用户。|
 |已挂起用户|UserSuspension|挂起（停用）了用户帐户。|
 |已更新文件说明|FileUpdateDescription|用户更改了文件说明。|
 |已更新文件名|FileUpdateName|用户更改了文件名。|
+|已更新邮件<sup>*</sup>|MessageUpdated|用户更新了消息。|
 |已查看文件|FileVisited|用户查看了文件。|
+|已查看邮件<sup>*</sup>|MessageViewed|用户查看了消息。|
 ||||
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate 活动
@@ -867,12 +878,12 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms 活动
 
-下表列出了 Microsoft Forms 中记录在审核日志中的用户和管理员活动。 Microsoft Forms 是用于收集分析数据的表单/测验/调查工具。 
+下表列出了 Microsoft Forms 中记录在审核日志中的用户和管理员活动。 Microsoft Forms 是用于收集分析数据的表单/测验/调查工具。 在下面的说明中可以看到，一些操作包含其他活动参数。
 
-在下面的说明中可以看到，一些操作包含其他活动参数。
+如果 Forms 活动由共同创作者或匿名响应者执行，则记录方式会稍有不同。 有关详细信息，请参阅[共同创作者和匿名响应者执行的 Forms 活动](#forms-activities-performed-by-coauthors-and-anonymous-responders)部分。
 
 > [!NOTE]
-> 如果 Forms 活动由共同创作者或匿名响应者执行，则记录方式会稍有不同。 有关详细信息，请参阅[共同创作者和匿名响应者执行的 Forms 活动](#forms-activities-performed-by-coauthors-and-anonymous-responders)部分。
+> 某些窗体审核活动仅在高级审核中可用。 这意味着在审核日志中记录这些活动之前，必须为用户分配适当的许可证。 有关高级审核功能的更多详细信息，请参阅 [ Microsoft 365 高级审核](advanced-audit.md#advanced-audit-events)。 有关高级审核许可要求，请参阅[ Microsoft 365 中的审核解决方案](auditing-solutions-overview.md#licensing-requirements)。 <br/><br/>在下表中，高级审核活动突出显示了星号 （*）。
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
@@ -900,21 +911,21 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更新表单钓鱼状态|UpdatePhishingStatus|无论是否更改了最终安全状态（例如，表单现为“已关闭”或“已打开”状态），只要内部安全状态的详细信息值发生更改，就会记录此事件。 这意味着可能会在最终安全状态未更改的情况下看到重复的事件。 此事件的可能状态值如下：<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
 |已更新用户钓鱼状态|UpdateUserPhishingStatus|每当用户安全状态值更改时，都会记录此事件。 用户创建由 Microsoft Online 安全团队删除的网络钓鱼表单时，审核记录中的用户状态值为“**确认为钓鱼者**”。 如果管理员取消阻止该用户，则该用户状态的值将设置为“**重置为普通用户**”。|
 |已发送 Forms Pro 邀请|ProInvitation|用户通过单击激活 Pro 试用版。|
-|已更新表单设置|UpdateFormSetting|表单所有者更新一个或多个表单设置。 <br><br>属性 FormSettingName:string 指示已更新敏感设置的名称。 属性 NewFormSettings:string 指示已更新设置的名称和新值。 属性 thankYouMessageContainsLink:boolean 指示更新的 thankyou 消息包含 URL 链接。|
+|已更新表单设置<sup>*</sup> |UpdateFormSetting|表单所有者更新一个或多个表单设置。 <br><br>属性 FormSettingName:string 指示已更新敏感设置的名称。 属性 NewFormSettings:string 指示已更新设置的名称和新值。 属性 thankYouMessageContainsLink:boolean 指示更新的 thankyou 消息包含 URL 链接。|
 |已更新用户设置|UpdateUserSetting|表单所有者更新用户设置。 <br><br>属性 UserSettingName:string 表示设置的名称和新值|
-|已列出表单|ListForms|表单所有者正在查看表单列表。 <br><br>属性 ViewType:string 表示表单所有者正在使用的查看视图：“所有表单”、“与我共享”或“组表单”|
+|已列出表单<sup>*</sup>|ListForms|表单所有者正在查看表单列表。 <br><br>属性 ViewType:string 表示表单所有者正在使用的查看视图：“所有表单”、“与我共享”或“组表单”|
 |已提交响应|SubmitResponse|用户提交对表单的响应。 <br><br>属性 IsInternalForm:boolean 表示响应者是否与表单所有者位于同一组织中。|
-|启用任何人都可以响应设置|AllowAnonymousResponse|表单所有者启用允许任何一人响应表单的设置。|
-|已禁用任何人都可响应设置|DisallowAnonymousResponse|表单所有者关闭允许任何一人响应表单的设置。|
-|已启用特定人员可响应设置|EnableSpecificResponse|表单所有者启用该设置，仅允许当前组织中的特定人员或特定组响应表单。|
-|已禁用特定人员可响应设置|DisableSpecificResponse|表单所有者关闭仅允许当前组织中的特定人员或特定组响应表单的设置。|
-|已添加特定响应者|AddSpecificResponder|表单所有者将新用户或组添加到特定响应者列表。|
-|已删除特定响应者|RemoveSpecificResponder|表单所有者从特定响应者列表中删除用户或组。|
-|已禁用协作|DisableCollaboration|表单所有者关闭表单上的协作设置。|
-|已启用 Office 365 工作或学校帐户协作|EnableWorkOrSchoolCollaboration|表单所有者打开设置，允许具有 Office 365 工作或学校帐户的用户查看和编辑表单。|
-|已启用组织中人员协作|EnableSameOrgCollaboration|表单所有者打开设置，允许当前组织中的用户查看和编辑表单。|
-|已启用特定人员协作|EnableSpecificCollaboaration|表单所有者启用设置，仅允许当前组织中的特定人员或特定组查看和编辑表单。|
-|已连接到 Excel 工作簿|ConnectToExcelWorkbook|已将表单连接到 Excel 工作簿。 <br><br>属性 ExcelWorkbookLink:string 指示当前表单的关联 Excel 工作簿 ID。|
+|启用任何人都可以响应设置<sup>*</sup>|AllowAnonymousResponse|表单所有者启用允许任何一人响应表单的设置。|
+|已禁用任何人都可响应设置<sup>*</sup>|DisallowAnonymousResponse|表单所有者关闭允许任何一人响应表单的设置。|
+|已启用特定人员可响应设置<sup>*</sup>|EnableSpecificResponse|表单所有者启用该设置，仅允许当前组织中的特定人员或特定组响应表单。|
+|已禁用特定人员可响应设置<sup>*</sup>|DisableSpecificResponse|表单所有者关闭仅允许当前组织中的特定人员或特定组响应表单的设置。|
+|已添加特定响应者<sup>*</sup>|AddSpecificResponder|表单所有者将新用户或组添加到特定响应者列表。|
+|已删除特定响应者<sup>*</sup>|RemoveSpecificResponder|表单所有者从特定响应者列表中删除用户或组。|
+|已禁用协作<sup>*</sup>|DisableCollaboration|表单所有者关闭表单上的协作设置。|
+|已启用 Office 365 工作或学校帐户协作<sup>*</sup>|EnableWorkOrSchoolCollaboration|表单所有者打开设置，允许具有 Office 365 工作或学校帐户的用户查看和编辑表单。|
+|已启用组织中人员协作<sup>*</sup>|EnableSameOrgCollaboration|表单所有者打开设置，允许当前组织中的用户查看和编辑表单。|
+|已启用特定人员协作<sup>*</sup>|EnableSpecificCollaboaration|表单所有者启用设置，仅允许当前组织中的特定人员或特定组查看和编辑表单。|
+|已连接到 Excel 工作簿<sup>*</sup>|ConnectToExcelWorkbook|已将表单连接到 Excel 工作簿。 <br><br>属性 ExcelWorkbookLink:string 指示当前表单的关联 Excel 工作簿 ID。|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>合著者和匿名响应者执行的 Forms 活动

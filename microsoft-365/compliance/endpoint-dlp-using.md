@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 02cc958f816c2335a24923cf7fc16b80b9806d9c7811457e88080be50438ce48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
+ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814158"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58450124"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -65,16 +65,28 @@ ms.locfileid: "53814158"
 
 ### <a name="unallowed-apps"></a>不允许的应用
 
-启用策略的“**通过不允许的应用程序和浏览器访问**”设置，并且用户尝试使用这些应用程序访问受保护的文件时，活动将被允许、阻止或者阻止，但用户可以覆盖该限制。 所有活动均经过审核，可在活动资源管理器中查看。
+不允许的应用是你创建的不允许访问 DLP 保护文件的应用程序列表。
+启用策略的“**通过不允许的应用访问**”设置，并且不允许列表中的应用尝试访问受保护的文件时，活动将被允许、阻止或者阻止，但用户可以覆盖该限制。 所有活动均经过审核，可在活动资源管理器中查看。
 
 > [!IMPORTANT]
 > 不包括可执行文件的路径，而仅包括可执行文件的名称（如 browser.exe）。
+
+#### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>保护敏感数据免受云同步应用的保护
+
+若要防止云同步应用（如 *onedrive.exe*）将敏感项目同步到云，请将云同步应用添加到 **不允许的应用** 列表。 当不允许的云同步应用尝试访问受阻止的 DLP 策略保护的项时，DLP 可能会生成重复的通知。 可以通过在 **不允许的应用** 下启用 **自动隔离** 选项来避免这些重复通知。  
+
+##### <a name="auto-quarantine-preview"></a>自动隔离（预览版）
+
+启用后，当不允许的应用尝试访问受 DLP 保护的敏感项目时，自动隔离将启动。 自动隔离会将敏感项目移动到管理员配置的文件夹，并且可以将占位符 **.txt** 文件保留在原始文件的位置。 可以将占位符文件中的文本配置为告知用户项目移动到的位置以及其他相关信息。  
+
+可以使用自动隔离来防止针对用户和管理员的无休止 DLP 通知链。 请参阅 [方案 4：避免使用自动隔离（预览版）从云同步应用循环 DLP 通知](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)。
 
 ### <a name="unallowed-bluetooth-apps"></a>不允许的蓝牙应用
 
 阻止用户通过特定蓝牙应用传输受你的策略保护的文件。
 
 ### <a name="browser-and-domain-restrictions"></a>浏览器和域限制
+
 限制与策略匹配的敏感文件与不受限制的云服务域共享。
 
 #### <a name="service-domains"></a>服务域
@@ -220,6 +232,115 @@ ms.locfileid: "53814158"
    > ![终结点 DLP 客户端阻止覆盖通知](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. 检查活动资源管理器中的事件。
+
+### <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>方案 4：避免使用自动隔离（预览版）从云同步应用循环 DLP 通知。
+
+#### <a name="before-you-begin"></a>开始之前
+
+在此方案中，阻止将文件与 **高度机密** 敏感度标签同步到 OneDrive。 这是具有多个组件和过程的复杂方案。 你将需要：
+
+- 要面向的 AAD 用户帐户和一台已将本地 OneDrive 文件夹与 OneDrive 云存储同步的已载入 Windows 10 计算机。
+- 目标 Windows 10 计算机上安装的 Microsoft Word
+- 配置和发布的敏感度标签。 请参阅[敏感度标签入门](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)和[创建和配置敏感度标签及其策略](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+
+共有三个步骤。
+
+1. 配置终结点 DLP 自动隔离设置。
+2. 创建一个策略，用于阻止具有 **高度机密** 敏感度标签的敏感项目。
+3. 在 Windows 10 设备上创建一个针对该策略的 Word 文档，应用标签，并将其复制到正在同步的本地 OneDrive 文件夹的用户帐户。  
+
+#### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>配置终结点 DLP 不允许的应用和自动隔离设置
+
+1. 打开 [终结点 DLP 设置](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
+
+2. 展开 **不允许的应用**。
+
+3. 选择 **添加或编辑不允许的应用** ，并将 *OneDrive* 添加为显示名称，并将可执行文件名称添加 *onedrive.exe*  ，以禁止 onedrive.exe 访问 **高度机密** 标签的项目。
+
+4. 选择 **自动隔离**，然后 **保存**。
+
+5. 在 **自动隔离设置** 下选择 **编辑自动隔离设置**。
+
+6. 为不允许的应用启用 **自动隔离**。
+
+7. 输入要将原始敏感文件移动到本地计算机上文件夹的路径。 例如:
+   
+**用户名的"%homedrive%%%homepath%\Microsoft DLP\Quarantine"***Isaiah langer* 会将移动的项目放在 
+
+*C：\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* 文件夹，并将日期和时间戳追加到原始文件名。
+
+> [!NOTE]
+> DLP 自动隔离将为每个不允许的应用创建文件的子文件夹。 因此，如果在不允许的应用列表中同时有 *Notepad* 和 *OneDrive* ，将为 **\OneDrive** 创建一个子文件夹，并为 **\Notepad** 创建另一个子文件夹。
+
+8. 选择 **将文件替换为包含以下文本 的 .txt 文件**，并在占位符文件中输入所需的文本。 例如，对于名为 auto quar 1.docx *的文件，*：
+    
+**%%FileName%% 包含你的组织正在使用数据丢失防护 （DLP） 策略 %%PolicyName%% 保护的敏感信息，并已移动到隔离文件夹： %%QuarantinePath%%。** 
+
+将保留包含此消息的 .txt 文件
+
+*auto quar 1.docx 包含组织正在使用数据丢失防护 （DLP） 策略保护的敏感信息，并已移动到隔离文件夹：C：\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx。*
+
+9. 选择 **保存**
+
+#### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>配置策略以阻止 OneDrive 使用敏感度标签"高度机密"同步文件
+
+1. 打开[数据丢失防护页](https://compliance.microsoft.com/datalossprevention?viewid=policies)。
+
+2. 选择 **创建策略**。
+
+3. 对于此方案，请选择 **自定义**，然后 **自定义策略**，并选择 **下一步**。
+
+4. 填写 **名称** 和 **说明** 字段，选择 **下一步**。
+
+5. 将“**设备**”以外所有位置的“**状态**”字段切换为“关”。 如果你有一个要从中测试此项的特定终端用户帐户，请务必在范围内选择它。 选择 **下一步**。
+
+6. 默认情况下，接受 **创建或自定义高级 DLP 规则**，然后选择 **下一步**。
+
+7. 使用以下值创建规则：
+    1. **名称** > *方案 4 自动隔离*
+    1. **条件** > **内容包含** > **敏感度标签** > **高度机密**
+    1.  **操作** > **审核或限制 Windows 设备上的活动，** > **不允许的应用访问** > **阻止**。 对于此方案，请清除所有其他活动。
+    1. **打开****用户通知** > 
+    1. **终结点设备** >选择 **在活动** （如果尚未启用）时向用户显示策略提示通知。
+    
+8. 选择 **保存**，然后 **下一步**。
+
+9. 选择 **立即将其打开**。 选择“**下一步**”。
+
+10. 查看设置，然后选择“**提交**”。
+
+> [!NOTE]
+> 至少需要一小时才能将新策略复制并应用到目标 Windows 10 计算机。
+
+11. 新的 DLP 策略将显示在策略列表中。
+
+#### <a name="test-auto-quarantine-on-the-windows-10-device"></a>在 Windows 10 设备上测试自动隔离
+
+1. 使用你在[中指定的用户帐户登录到Windows 10 计算机。配置策略以阻止使用敏感度标签"高度机密"文件的 OneDrive 同步](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential)步骤 5。
+
+2. 创建内容不会同步到 OneDrive 的文件夹。 例如:
+
+    *C：\auto-quarantine 源文件夹*
+
+3. 打开 Microsoft Word 并在自动隔离源文件夹中创建文件。 应用 **高度机密** 敏感度标签。 请参阅[在 Office 的文件和电子邮件中应用敏感度标签](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+4. 将刚创建的文件复制到 OneDrive 同步文件夹。 应显示用户通知词，告知你不允许执行该操作，并且该文件将被隔离。 例如，对于用户名 *Isaiah Langer*，以及标题为 *自动隔离文档 1.docx*，你将看到以下消息：
+
+![数据丢失防护用户通知弹出窗口，指出指定文件不允许 OneDrive 同步操作，并且文件将被隔离](../media/auto-quarantine-user-notification-toast.png)
+
+消息将读取：
+
+"不允许使用此应用打开 autoquarantine doc 1.docx。 文件将被隔离到"C：\Users\IsaiahLanger\Microsoft DLP\OneDrive"
+
+5. 选择 **关闭**
+
+6. 打开占位符 .txt 文件。 将其命名为 **自动隔离文档1.docx_ *date_time*.txt**。 
+
+7. 打开隔离文件夹并确认原始文件存在。
+ 
+8. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。 如有需要，请参见[活动资源管理器（预览）入门](data-classification-activity-explorer.md)。
+
+9. 检查活动资源管理器中的事件。
 
 ## <a name="see-also"></a>另请参阅
 

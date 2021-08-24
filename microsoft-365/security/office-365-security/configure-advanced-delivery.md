@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa92adbcca8f01f878649081472ef600075a06d3
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 14e952aacf20350fb264fecd72f626b0f3a30729
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386968"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483351"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -65,25 +65,25 @@ ms.locfileid: "58386968"
 - 若要连接到安全与合规中心 PowerShell，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 - 您需获得权限，然后才能执行本文中的过程：
-  - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织 **管理角色组的成员**。 
+  - 若要在高级传递策略中创建、修改或删除配置的设置，您需要是 Microsoft 365 Defender 门户中安全管理员角色组的成员以及 **Exchange Online** 中的组织管理角色 **组的成员**。 
   - 若要对高级传递策略进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅网站门户中的权限Microsoft 365 Defender[中的权限](permissions-microsoft-365-security-center.md)[Exchange Online。](/exchange/permissions-exo/permissions-exo)
+  有关详细信息，请参阅 Microsoft 365 Defender[门户中的权限](permissions-microsoft-365-security-center.md)和 Exchange Online 中[的权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender _门户中_ 所需的权限，以及用户对 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用Microsoft 365 Defender门户在高级传递策略中配置 SecOps 邮箱
+## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>使用 Microsoft 365 Defender门户在高级传递策略中配置 SecOps 邮箱
 
-1. 在 Microsoft 365 Defender 门户中，转到"规则"部分中的"电子邮件&协作策略& \> **规则** \> **威胁策略** \> **高级** 传递"。 
+1. 在 Microsoft 365 Defender 门户中，转到"规则"部分 **中的**"电子邮件&协作策略& \> **规则** \> **威胁策略** 高级 \> 传递"。 
 
 2. 在" **高级传递"** 页上，确认 **"SecOps** 邮箱"选项卡已选中，然后执行下列步骤之一：
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**
    - 如果没有配置网络钓鱼模拟，请单击"添加 **"。**
 
-3. 在打开的"编辑 **SecOps** 邮箱"飞出控件上，通过执行下列步骤之一输入要指定为 SecOps Exchange Online现有邮箱：
+3. 在打开的"编辑 **SecOps** 邮箱"飞出控件上，通过执行下列步骤之一输入要指定为 SecOps Exchange Online现有 Exchange Online 邮箱：
    - 在框中单击，让邮箱列表解析，然后选择邮箱。
-   - 单击框中开始键入邮箱 (名称、显示名称、别名、电子邮件地址、帐户名等 ) 的标识符，然后从结果中选择 (显示名称) 邮箱名称。
+   - 单击框中开始键入邮箱 (名称、显示名称、别名、电子邮件地址、帐户名等 ) 的标识符，然后从结果 (显示名称) 邮箱名称。
 
      根据需要重复执行此步骤（次数不限）。 不允许通讯组。
 
@@ -95,24 +95,24 @@ ms.locfileid: "58386968"
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>使用Microsoft 365 Defender门户在高级传递策略中配置第三方网络钓鱼模拟
 
-1. 在 Microsoft 365 Defender 门户中，转到"规则"部分中的"电子邮件&协作策略& \> **规则** \> **威胁策略** \> **高级** 传递"。 
+1. 在 Microsoft 365 Defender 门户中，转到"规则"部分 **中的**"电子邮件&协作策略& \> **规则** \> **威胁策略** 高级 \> 传递"。 
 
-2. 在" **高级传递"** 页上，选择" **网络钓鱼模拟** "选项卡，然后执行下列步骤之一：
+2. 在" **高级传递"** 页上，选择" **网络钓鱼模拟** "选项卡，然后执行以下步骤之一：
    - 单击 ![ "编辑"图标 ](../../media/m365-cc-sc-edit-icon.png) **"编辑"。**
    - 如果没有配置网络钓鱼模拟，请单击"添加 **"。**
 
 3. 在打开 **的"编辑第三方网络钓鱼** 模拟"飞出控件上，配置以下设置：
 
-   - 发送域：展开此设置并输入至少一个电子邮件地址域 (例如，单击该框，输入值，然后按 Enter 或选择框下方显示的值来输入 contoso.com) 。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
+   - 发送域：展开此设置并输入至少一个电子邮件地址域 (例如，单击该框，输入值，然后按 Enter 或选择显示在框下方的值来输入 contoso.com) 。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。
 
      > [!NOTE]
-     > 使用地址中的域 (SMTP 传输中使用的邮件发件人地址、P1 发件人或) 发件人 `5321.MailFrom` 地址。 
+     > 使用地址地址中的域 (邮件 SMTP 传输中使用的邮件发件人地址、P1 发件人或) 发件人 `5321.MailFrom` 地址。 
 
    - **发送 IP：** 展开此设置并输入至少一个有效的 IPv4 地址，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 根据需要重复执行此步骤（次数不限）。 您最多可以添加 10 个条目。 有效值为：
      - 单个 IP：例如，192.168.1.1。
      - IP 范围：例如，192.168.0.1-192.168.0.254。
      - CIDR IP：例如，192.168.0.1/25。
-   - 要允许的模拟 URL：展开此设置，并选择输入属于网络钓鱼模拟活动的一部分的特定 URL，这些 URL 不应被阻止或触发，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 您最多可以添加 10 个条目。 有关 URL 语法格式，请参阅 [租户允许/阻止列表的 URL 语法](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
+   - 要允许的模拟 URL：展开此设置，并选择输入属于网络钓鱼模拟活动的一部分的特定 URL，这些 URL 不应被阻止或触发，方法是单击框，输入值，然后按 Enter 或选择框下方显示的值。 您最多可以添加 10 个条目。 有关 URL 语法格式，请参阅 [租户允许/阻止列表的 URL 语法](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
 
    若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
@@ -269,6 +269,7 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 - **网络钓鱼模拟替代策略**：由 **\* -PhishSimOverridePolicy** cmdlet 控制。
 - **网络钓鱼模拟替代规则**：由 **\* -PhishSimOverrideRule** cmdlet 控制。
+- **允许的 (网络钓鱼) URL：** 由 **\* -TenantAllowBlockListItems** cmdlet 控制。
 
 此行为具有以下结果：
 
@@ -279,10 +280,13 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 ### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>使用 PowerShell 配置第三方网络钓鱼模拟
 
-在 PowerShell 的高级传递策略中配置第三方网络钓鱼模拟的过程包括两个步骤：
+在 PowerShell 中配置第三方网络钓鱼模拟是一个多步骤过程：
 
 1. 创建网络钓鱼模拟替代策略。
-2. 创建网络钓鱼模拟替代规则，该规则指定应用该规则的策略。
+2. 创建钓鱼模拟替代规则，该规则指定：
+   - 规则应用于的策略。
+   - 网络钓鱼模拟邮件的源 IP 地址。
+3. （可选）标识应允许的网络钓鱼 (URL，即，不阻止或扫描) 。
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>步骤 1：使用 PowerShell 创建网络钓鱼模拟覆盖策略
 
@@ -320,6 +324,24 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 有关语法和参数的详细信息，请参阅 [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule)。
 
+#### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>步骤 3： (可选) 使用 PowerShell 标识要允许的网络钓鱼模拟 URL
+
+使用以下语法:
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+```
+
+有关 URL 语法的详细信息，请参阅 [租户允许/阻止列表的 URL 语法](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)。
+
+此示例为指定的第三方网络钓鱼模拟 URL 添加一个 URL 允许条目，但该条目没有过期时间。
+
+```powershell
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries *.fabrikam.com -NoExpiration
+```
+
+有关语法和参数的详细信息，请参阅 [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
+
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>使用 PowerShell 查看网络钓鱼模拟替代策略
 
 此示例返回有关唯一网络钓鱼模拟替代策略的详细信息。
@@ -350,6 +372,16 @@ Get-PhishSimOverrideRule | Format-Table Name,Mode
 
 有关语法和参数的详细信息，请参阅 [Get-PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule)。
 
+### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>使用 PowerShell 查看允许的网络钓鱼模拟 URL 条目
+
+若要查看允许的网络钓鱼模拟 URL，请运行以下命令：
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
+```
+
+有关语法和参数的详细信息，请参阅 [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
+
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>使用 PowerShell 修改网络钓鱼模拟替代策略
 
 若要修改网络钓鱼模拟替代策略，请使用以下语法：
@@ -366,24 +398,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 有关语法和参数的详细信息，请参阅 [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy)。
 
-### <a name="use-powershell-to-modify-the-simulation-url-settings"></a>使用 PowerShell 修改模拟 URL 设置
-
-若要修改网络钓鱼模拟替代策略，请使用以下语法：
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "<url>"
-```
-有关 URL 语法格式，请参阅 [租户允许/阻止列表的 URL 语法](/microsoft-365/security/office-365-security/tenant-allow-block-list#url-syntax-for-the-tenant-allowblock-list)。
-
-此示例为 contoso.com 子域添加模拟 URL。
-
-```powershell
-New-TenantAllowBlockListItems -ListType URL -ListSubType AdvancedDelivery -Entries "*.contoso.com"
-```
-
-有关语法和参数的详细信息，请参阅 [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
-
-### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>使用 PowerShell 修改网络钓鱼模拟替代规则
+### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>使用 PowerShell 修改网络钓鱼模拟替代规则
 
 若要修改网络钓鱼模拟替代规则，请使用以下语法：
 
@@ -393,7 +408,7 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 
 此示例使用下列设置修改指定的网络钓鱼模拟替代规则：
 
-- 添加域条目 blueyonderairlines.com。
+- 将域条目 blueyonderairlines.com。
 - 删除 IP 地址条目 192.168.1.55。
 
 请注意，这些更改不会影响现有条目。
@@ -403,6 +418,26 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 ```
 
 有关语法和参数的详细信息，请参阅 [Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule)。
+
+### <a name="use-powershell-to-modify-the-allowed-phishing-simulation-url-entries"></a>使用 PowerShell 修改允许的网络钓鱼模拟 URL 条目
+
+不能直接修改 URL 值。 您可以[删除现有 URL 条目并](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries)[添加新的 URL](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow)条目，如本文所述。
+
+若要修改允许的网络钓鱼模拟 URL 条目的其他属性 (例如到期日期或注释) ，请使用以下语法：
+
+```powershell
+Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
+```
+
+通过 _Entries_ 参数)  (或 **Get-TenantAllowBlockListItems** cmdlet 的输出中的 Identity 值（ (_Ids_ 参数 (）) 标识要修改的条目。
+
+本示例修改了指定条目的到期日期。
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+有关语法和参数的详细信息，请参阅 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>使用 PowerShell 删除网络钓鱼模拟替代策略
 
@@ -429,3 +464,22 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 ```
 
 有关语法和参数的详细信息，请参阅 [Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule)。
+
+### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>使用 PowerShell 删除允许的网络钓鱼模拟 URL 条目
+
+若要删除现有的网络钓鱼模拟 URL 条目，请使用以下语法：
+
+```powershell
+Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery
+```
+
+通过 _Entries_ 参数)  (或 **Get-TenantAllowBlockListItems** cmdlet 的输出中的 Identity 值（ (_Ids_ 参数 (）) 标识要修改的条目。
+
+本示例修改了指定条目的到期日期。
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+```
+
+有关语法和参数的详细信息，请参阅 [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems)。
+

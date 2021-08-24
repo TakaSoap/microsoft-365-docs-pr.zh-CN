@@ -268,9 +268,9 @@
 #### [在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [为 Microsoft Defender 防病毒检测配置修正](configure-remediation-microsoft-defender-antivirus.md)
 #### [配置 Microsoft Defender 防病毒扫描](schedule-antivirus-scans.md)
-##### [使用组策略安排防病毒扫描](schedule-antivirus-scans-group-policy.md)
-##### [使用 PowerShell 安排防病毒扫描](schedule-antivirus-scans-powershell.md)
-##### [使用 Windows Management Instrumentation (WMI) 安排防病毒扫描](schedule-antivirus-scans-wmi.md)
+##### [使用组策略计划扫描](schedule-antivirus-scans-group-policy.md)
+##### [使用 PowerShell 计划扫描](schedule-antivirus-scans-powershell.md)
+##### [使用 WMI 计划扫描](schedule-antivirus-scans-wmi.md)
 #### [在 Microsoft Defender 防病毒程序内使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [与其他安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
 
@@ -308,7 +308,7 @@
 ##### [基于文件扩展名和文件夹位置的排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [由进程打开的文件的排除](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Windows Server 的排除](configure-server-exclusions-microsoft-defender-antivirus.md)
-##### [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+##### [要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 #### Microsoft Defender 防病毒软件疑难解答
 ##### [解决更新合规性中的 Microsoft Defender 防病毒软件报告问题](troubleshoot-reporting.md)
@@ -347,11 +347,11 @@
 ##### [自定义受控文件夹访问](customize-controlled-folders.md)
 
 #### [设备控制]()
-##### [设备控制报告](device-control-report.md)
-##### [控制 USB 设备](control-usb-devices-using-intune.md)
+##### [控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)
 ##### [可移动存储保护](device-control-removable-storage-protection.md)
 ##### [可移动存储访问控制](device-control-removable-storage-access-control.md)
 ##### [设备控制打印机保护](printer-protection.md)
+##### [设备控制报告](device-control-report.md)
 
 #### [行为阻止和控制]()
 ##### [行为阻止和控制](behavioral-blocking-containment.md)

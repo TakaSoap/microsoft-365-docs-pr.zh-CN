@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表单处理。
-ms.openlocfilehash: 92bfd5afbdf15947afbf4264a266d0bfc009fcb03d81591fd752786e6d541be3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6914cf4a8427f505bf39e2b157beb0dbfee0336d
+ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891701"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58399715"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的表单处理概述
 
  ![AI 生成器](../media/content-understanding/ai-builder.png)</br>
 
-Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builder/overview)表单处理在 SharePoint 文档库中创建模型。
+Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builder/overview) 表单处理在 SharePoint 文档库中创建模型。
 
 可使用 AI 生成器表单处理来创建 AI 模型，它能够使用机器学习技术识别和提取结构化或半结构化文档（如表单和发票）中的关键值对和表数据。
 

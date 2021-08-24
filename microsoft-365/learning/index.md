@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: ''
 audience: enabler
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,20 +13,20 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 了解如何查找 Microsoft Viva Learning (Preview) 。
-ms.openlocfilehash: dd40e32e7bf34e172a4f812e7be9fd3c0c5b03c7c17ec486f18e1682e485d26f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何查找用于预览Microsoft Viva Learning () 。
+ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
+ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834633"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483339"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>预览Microsoft Viva Learning (简介) 
 
 > [!NOTE]
 > 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 
 
-Microsoft Viva Learning (预览) 使贵组织的团队和个人能够自然地学习一天。 该应用在企业内创建Microsoft Teams中心，员工可以在其中共享、分配和学习整个组织的内容库。
+Microsoft Viva Learning (预览) 使贵组织的团队和个人能够自然地学习一天。 该应用在组织中创建了一Microsoft Teams中心中心，员工可以在其中共享、分配和学习整个组织的内容库。
 
 此页面上的资源旨在帮助你开始了解和使用 Viva Learning (Preview) 组织。
 

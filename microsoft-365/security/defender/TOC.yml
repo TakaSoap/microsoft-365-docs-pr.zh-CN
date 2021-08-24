@@ -118,6 +118,8 @@
           items:
             - name: 传感器设置和运行状况
               href: ../defender-identity/sensor-health.md
+            - name: 目录服务帐户
+              href: ../defender-identity/directory-service-accounts.md
             - name: VPN 集成
               href: ../defender-identity/vpn-integration.md
             - name: 设置实体标记
