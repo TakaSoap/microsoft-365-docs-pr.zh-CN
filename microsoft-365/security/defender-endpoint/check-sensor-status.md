@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8168977629f80923ed65e84127478eea0b526597
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 64643873c9032af92d7093d5d75535cf3af118bc
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256365"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509541"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>检查 Microsoft Defender for Endpoint 中的传感器运行状况
 
@@ -37,6 +37,7 @@ ms.locfileid: "58256365"
 " **具有传感器问题的设备"** 磁贴位于安全操作仪表板上。 此磁贴提供有关单个设备提供传感器数据并与 Defender for Endpoint 服务通信的能力的信息。 它报告需要关注的设备数、帮助识别有问题的设备，并采取措施更正已知问题。
 
 磁贴上有两个状态指示器，它们提供有关未正确报告给服务的设备数量的信息：
+
 - **配置错误** - 这些设备可能部分向 Defender for Endpoint 服务报告传感器数据，并且可能有需要更正的配置错误。
 - **非** 活动 - 在过去一个月内停止向 Defender for Endpoint 服务报告超过七天的设备。
 
@@ -45,6 +46,7 @@ ms.locfileid: "58256365"
 ![具有传感器问题的设备的屏幕截图磁贴](images/atp-devices-with-sensor-issues-tile.png)
 
 在 **"设备"** 列表上，可以按以下状态筛选运行状况列表：
+
 - **Active** - 主动向 Defender for Endpoint 服务报告的设备。
 - **错误配置** - 这些设备可能部分向 Defender for Endpoint 服务报告传感器数据，但具有需要更正的配置错误。 配置错误的设备可能具有下列问题之一或多个问题组合：
   - **无传感器数据** - 设备已停止发送传感器数据。 设备可能会触发有限的警报。
@@ -53,17 +55,18 @@ ms.locfileid: "58256365"
 
 您还可以使用导出功能以 CSV 格式下载 **整个** 列表。 有关筛选器的信息，请参阅 [查看和组织设备列表](machines-view-overview.md)。
 
->[!NOTE]
->导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要很长时间才能下载，具体取决于组织的大小。
+> [!NOTE]
+> 导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要很长时间才能下载，具体取决于组织的大小。
 
 ![设备列表页面的屏幕截图](images/atp-devices-list-page.png)
 
 单击错误配置或不活动的设备时，可以查看设备详细信息。
 
 ## <a name="see-also"></a>另请参阅
+
 - [修复 Defender for Endpoint 中的不正常传感器](fix-unhealthy-sensors.md)
 - [客户端分析器概述](overview-client-analyzer.md)
-- [下载并运行客户端分析器](download-client-analyzer.md)
-- [在客户端上运行Windows](run-analyzer-windows.md)
+- [下载并运行分析器](download-client-analyzer.md)
+- [在 Windows 上运行客户端分析器](run-analyzer-windows.md)
 - [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
-- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)
+- [用于在 Windows 上进行高级故障排除的数据收集](data-collection-analyzer.md)

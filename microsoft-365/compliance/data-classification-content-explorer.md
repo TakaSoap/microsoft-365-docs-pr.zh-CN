@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 9fbe99e07a9fa881656df15e2be1d673f87bc523
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58251917"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502911"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -77,7 +77,7 @@ ms.locfileid: "58251917"
 
 你还可以将任一个角色或全部两个角色都分配到自定义角色组，以便对内容资源管理器的访问权限进行量身定制。
 
-全局管理员、合规性管理员或数据管理员可以分配必要的  内容资源管理器列表查看器  和  内容资源管理器内容查看器  角色组成员身份。
+全局管理员可以分配必要的“内容资源管理器列表查看者”和“内容资源管理器内容查看者”角色组成员身份。
 
 ## <a name="content-explorer"></a>内容资源管理器
 

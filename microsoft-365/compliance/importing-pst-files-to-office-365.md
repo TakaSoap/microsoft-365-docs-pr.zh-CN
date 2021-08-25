@@ -19,20 +19,20 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: 268fcc1239370d55a112c60192fb37f42df2203b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
+ms.openlocfilehash: 48696b10e10abafa50e866e52b4601e73c746c6c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243988"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507850"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
 > [!NOTE]
 > 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)。
 
-可以使用安全与合规中心的导入服务将 PST 文件快速批量导入到组织中的 Exchange Online 邮箱中。可以通过两种方式将 PST 文件导入到 Office 365：
+可以使用 Microsoft 365 合规中心的导入服务将 PST 文件快速批量导入到组织中的 Exchange Online 邮箱中。可以通过两种方式将 PST 文件导入到 Office 365：
 
 - **网络上传** ![云上传](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - 通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将 PST 数据导入到组织的邮箱中。
 
@@ -52,7 +52,7 @@ ms.locfileid: "58243988"
 
 ![PST 导入流程的工作流](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
 
-1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置** - 第一步是下载用于上传 PST 文件或将其复制到硬盘的工具和访问密钥。 需要从安全与合规中心的“导入”页获取工具和密钥。 密钥为你（如果是驱动器寄送，则是 Microsoft 数据中心人员）提供所需的权限用于将 PST 文件上传到安全的专用 Azure 存储位置。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 将 PST 文件导入到 Microsoft 365 不需要你的组织拥有单独的 Azure 订阅。
+1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置** - 第一步是下载用于上传 PST 文件或将其复制到硬盘的工具和访问密钥。 从 Microsoft 365 合规中心的“**导入**”页获取工具和密钥。 密钥为你（如果是驱动器寄送，则是 Microsoft 数据中心人员）提供所需的权限用于将 PST 文件上传到安全的专用 Azure 存储位置。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 将 PST 文件导入到 Microsoft 365 不需要你的组织拥有单独的 Azure 订阅。
 
 2. **上传或复制 PST 文件** - 下一步取决于你是使用网络上传或驱动器寄送来导入 PST 文件。 在两种情况下，你均使用在上一步中获得的工具和安全存储密钥。
 
@@ -64,7 +64,7 @@ ms.locfileid: "58243988"
 
 3. **创建 PST 导入映射文件** - 将 PST 文件上传至 Azure 存储位置或复制到硬盘之后，下一步是创建逗号分隔值 (CSV) 文件，用于指定 PST 文件将要导入到的用户邮箱（并且 PST 文件可导入到用户的主邮箱或其存档邮箱）。 [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。 Office 365 导入服务将使用此信息来导入 PST 文件。
 
-4. **创建 PST 导入作业** - 下一步是在安全与合规中心的“**导入 PST 文件**”页上创建 PST 导入作业并提交在上一步骤创建的 PST 导入映射文件。 对于网络上传（因为 PST 文件已上传至 Azure），Microsoft 365 将分析 PST 文件中的数据，然后为你提供设置筛选器的机会，以便控制哪些数据被实际导入到 PST 导入映射文件中指定的邮箱。
+4. **创建 PST 导入作业** - 下一步是在 Microsoft 365 合规中心 中的"**导入 PST文件**"页上创建 PST 导入作业，并提交在上一步中创建的 PST 导入映射文件。 对于网络上传（因为 PST 文件已上传至 Azure），Microsoft 365 将分析 PST 文件中的数据，然后为你提供设置筛选器的机会，以便控制哪些数据被实际导入到 PST 导入映射文件中指定的邮箱。
 
     对于驱动器寄送，在此过程中的这个环节会发生一些其他事情。
 
@@ -81,7 +81,7 @@ ms.locfileid: "58243988"
 
 5. **筛选将要导入到邮箱的 PST 数据** - 创建导入作业之后（并在驱动器传送操作中的 PST 文件上传至 Azure 存储位置后），Microsoft 365 将安全地分析 PST 文件中的数据，方法是标识项目期限以及 PST 文件中所含的不同邮件类型。 分析完成且数据准备就绪可供导入后，你可以选择导入 PST 文件中包含的所有数据，或者通过设置用于控制可导入哪些数据的筛选器来减少导入的数据。
 
-6. **启动 PST 导入作业** - 启动导入作业后，Microsoft 365 使用 PST 导入映射文件中的信息将 PST 文件从 Azure 存储位置导入到用户邮箱。 与导入作业相关的状态信息（包括与每个导入的 PST 文件相关的信息）将显示在安全与合规中心的“**导入 PST 文件**”页。 导入作业完成后，作业的状态将设置为“**完成**”。
+6. **启动 PST 导入作业** - 启动导入作业后，Microsoft 365 使用 PST 导入映射文件中的信息将 PST 文件从 Azure 存储位置导入到用户邮箱。 与导入作业相关的状态信息（包括与每个导入的 PST 文件相关的信息）将显示在 Microsoft 365 合规中心的“**导入 PST 文件**”页。 导入作业完成后，作业的状态将设置为“**完成**”。
 
 ## <a name="why-import-email-data-to-microsoft-365"></a>为什么要将电子邮件数据导入到 Microsoft 365？
 
@@ -99,7 +99,7 @@ ms.locfileid: "58243988"
 
   - 使用[电子数据展示事例](./get-started-core-ediscovery.md)管理组织的法律调查
 
-  - 使用安全与合规中心的“[保留策略](retention.md)”来控制邮箱内容的保留时长，然后在保留期限到期之后删除内容。
+  - 使用 Microsoft 365 合规中心的“[保留策略](retention.md)”来控制邮箱内容的保留时长，然后在保留期限到期之后删除内容。
 
   - 使用“[沟通合规性策略](communication-compliance.md)”检查邮件，以确保它们符合邮件标准并添加分类类型。
 
@@ -133,7 +133,7 @@ ms.locfileid: "58243988"
 
 必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
-此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
+此外，若要在 Microsoft 365 合规中心创建导入作业，必须满足以下条件之一：
 
 - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
 
@@ -162,9 +162,9 @@ There are two versions of the PST file format: ANSI and Unicode. 建议导入使
 
 #### <a name="after-i-upload-my-pst-files-to-the-azure-storage-area-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？
 
-当使用网络上传方法导入 PST 文件时，会将文件上传到已命名的 Azure Blob 容器`ingestiondata`。 如果安全与合规中心中的“**导入 PST 页面**”页面上没有正在进行的导入作业，则 Azure 中 `ingestiondata` 容器内的所有 PST 文件都会在安全与合规中心中创建最新导入作业 30 天后被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。
+当使用网络上传方法导入 PST 文件时，会将文件上传到已命名的 Azure Blob 容器`ingestiondata`。 如果 Microsoft 365 合规中心) 中的"**导入PST 文件**"页上没有正在进行导入作业，那么在 Microsoft 365 合规中心中创建最新导入作业 30 天后，Azure 中的`ingestiondata`容器内的所有 PST 文件都将被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在 Microsoft 365 合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。
 
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 合规管理中心已完成导入作业的文件列表中。 尽管导入作业可能仍列在 Microsoft 365 合规中心中的"**导入 PST 文件**"页上，但当你查看较旧的导入作业的详细信息时，PST 文件列表可能为空。
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-network-upload"></a>使用网络上传将 PST 文件导入邮箱需要多长时间？
 
@@ -208,7 +208,7 @@ Yes, this capability is now available.
 
 必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
 
-此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
+此外，若要在 Microsoft 365 合规中心创建导入作业，必须满足以下条件之一：
 
 - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
 
@@ -261,9 +261,9 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
 
 #### <a name="after-microsoft-uploads-my-pst-files-to-azure-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Microsoft 将 PST 文件上传到 Azure 后，这些文件在删除前可在 Azure 中保留多长时间？
 
-在安全与合规中心的“**导入 PST 文件**”页面上创建最新导入作业的 30 天后，将删除组织的 Azure 存储位置（位于名为 `ingestiondata` 的 Blob 容器中）内的所有 PST 文件。
+在 Microsoft 365 合规中心 **导入 PST 文件** 页面上创建最近的导入作业 30 天后，组织在Azure 存储位置(以 blob 容器命名`ingestiondata`)中的所有 PST 文件都会被删除。
 
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
+这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 合规管理中心已完成导入作业的文件列表中。 尽管导入作业可能仍列在 Microsoft 365 合规中心中的"**导入 PST 文件**"页上，但当你查看较旧的导入作业的详细信息时，PST 文件列表可能为空。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-microsoft-365"></a>哪个版本的 PST 文件格式支持导入到 Microsoft 365？
 

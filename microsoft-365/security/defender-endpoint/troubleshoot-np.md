@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507658"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509889"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -49,7 +49,8 @@ ms.locfileid: "58507658"
 
 网络保护仅适用于具有以下条件的设备：
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - 终结点运行Windows 10 专业版或Enterprise版本 1709 或更高版本。
 > - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看使用非 Microsoft 防病毒解决方案时会发生什么情况](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
@@ -69,7 +70,7 @@ ms.locfileid: "58507658"
 2. 执行导致问题的连接活动 (例如，尝试访问站点，或者连接到您这样做或不希望阻止访问的 IP) 。
 
 3. [查看网络保护事件](network-protection.md#review-network-protection-events-in-windows-event-viewer) 日志，以查看如果该功能已设置为"已启用"，该功能是否阻止 **了连接**。
-   
+
    如果网络保护未阻止预期应该阻止的连接，请启用该功能。
 
    ```PowerShell
@@ -102,7 +103,7 @@ ms.locfileid: "58507658"
    mpcmdrun -getfiles
    ```
 
-3. 将文件附加到提交表单。 默认情况下，诊断日志保存在 中 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 
+3. 将文件附加到提交表单。 默认情况下，诊断日志保存在 中 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。
 
 ## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>解决 E5 客户 (网络保护服务的连接) 
 
@@ -114,12 +115,12 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 
 ---OR---
 
-
 ```powershell
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
 可以使用 PowerShell、注册表项或组策略Microsoft Endpoint Manager注册表项。 以下是一些可帮助的资源：
+
 - [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
 - [配置自定义客户端设置Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [使用组策略设置来管理Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
@@ -127,11 +128,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>另请参阅
 
 - [网络保护](network-protection.md)
-
 - [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
-
 - [网络保护功能评估](evaluate-network-protection.md)
-
 - [启用网络保护](enable-network-protection.md)
-
 - [在 Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)

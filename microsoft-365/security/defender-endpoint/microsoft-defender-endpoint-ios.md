@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b6f682cab22b5838234e16091001c1b0be0f4126
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 4dc2d9e0d4ea06b7b51a29be11af4e6316c83bcc
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502803"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509565"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
@@ -62,8 +62,8 @@ ms.locfileid: "58502803"
 - 访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
 
     > [!NOTE]
-    > Microsoft Defender for Endpoint 现在为未使用移动设备管理 (MDM) 但正在使用 Intune 管理移动应用程序的受管理应用程序内的组织数据提供支持。 它还向使用其他企业移动性管理解决方案的客户扩展此支持，同时仍使用 Intune 在 MAM (移动应用程序[) 。 ](/mem/intune/apps/mam-faq)
-    > 在此更新之前，Microsoft Defender for Endpoint 仅在使用 Intune MDM 注册的设备上有效。  
+    > - Microsoft Defender for Endpoint 现在为未使用移动设备管理 (MDM) 但正在使用 Intune 管理移动应用程序的受管理应用程序内的组织数据扩展保护。 它还向使用其他企业移动性管理解决方案的客户扩展此支持，同时仍使用 Intune 在 MAM (移动应用程序[) 。 ](/mem/intune/apps/mam-faq)
+    > - 此外，Microsoft Defender for Endpoint 已支持使用 Intune 移动设备管理在 MDM (注册) 。  
 
 **系统要求**
 

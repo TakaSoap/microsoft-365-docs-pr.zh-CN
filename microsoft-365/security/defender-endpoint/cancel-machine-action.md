@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 33828866b32c14b4922e936fbd279c3f7bc3b536
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408070"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509949"
 ---
 # <a name="cancel-machine-action-api"></a>取消计算机操作 API
 
@@ -60,13 +60,11 @@ ms.locfileid: "58408070"
 |应用程序|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  载出计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 |委派（工作或学校帐户）|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|收集取证<br> 隔离计算机<br>  限制代码执行<br> 扫描计算机<br>载出计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 
-
 ## <a name="http-request"></a>HTTP 请求
 
+```http
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
 ```
-POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel  
-```
-
 
 ## <a name="request-headers"></a>请求标头
 

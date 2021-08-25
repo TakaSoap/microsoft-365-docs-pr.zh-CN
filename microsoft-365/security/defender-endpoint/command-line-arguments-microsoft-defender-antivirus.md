@@ -15,14 +15,14 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7f407ae3018dc9214d364528c2392b00b7279489d98ec96c5b5d24d8207bfc01
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f940d71b46f3010cded48cfe4c3b9873ea518a0b
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904127"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509517"
 ---
-# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用 Microsoft Defender 防病毒命令行工具mpcmdrun.exe和管理应用程序
+# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用 Microsoft Defender 防病毒命令行mpcmdrun.exe配置和管理客户端
 
 **适用于：**
 
@@ -31,7 +31,7 @@ ms.locfileid: "53904127"
 您可以使用专用的命令行工具Microsoft Defender 防病毒中执行各种 **mpcmdrun.exe。** 当您希望自动执行任务时，此实用工具Microsoft Defender 防病毒很有用。 可以在 中查找此实用工具 `%ProgramFiles%\Windows Defender\MpCmdRun.exe` 。 从命令提示符运行它。
 
 > [!TIP]
-> 您可能需要打开命令提示符的管理员级别版本。 当你在命令提示 **符** 上搜索命令"开始"菜单，选择以 **管理员角色运行**。 如果你运行的是更新的 Microsoft Defender 平台版本，请 `MpCmdRun` 从以下位置运行 `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` ：。 有关反恶意软件平台详细信息，请参阅Microsoft Defender 防病毒[更新和基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
+> 您可能需要打开命令提示符的管理员级别版本。 当您在命令提示 **符** 上搜索命令"开始"菜单，选择"以 **管理员角色运行"。** 如果你运行的是更新的 Microsoft Defender 平台版本，请 `MpCmdRun` 从以下位置运行 `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` ：。 有关反恶意软件平台详细信息，请参阅Microsoft Defender 防病毒[更新和基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 MpCmdRun 实用工具使用下列语法：
 
@@ -43,45 +43,45 @@ MpCmdRun.exe [command] [-options]
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
-``` 
+```
 
 在我们的示例中，MpCmdRun 实用工具在设备上启动完全防病毒扫描。
 
 ## <a name="commands"></a>命令
 
-| 命令  | 说明   |
-|:----|:----|
-| `-?`**或**`-h`   | 显示 MpCmdRun 工具的所有可用选项 |
-| `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 扫描恶意软件。 **ScanType 的值为**：<p>**0** 默认，根据你的配置<p>**1** 快速扫描<p>**2** 完全扫描<p>**3** 文件和目录自定义扫描。<p>CpuThrottling 根据策略配置运行 |
-| `-Trace [-Grouping #] [-Level #]` | 启动诊断跟踪 |
-| `-GetFiles [-SupportLogLocation <path>]` | 收集支持信息。 请参阅'[收集诊断数据](collect-diagnostic-data.md)'  |
-| `-GetFilesDiagTrack`  | 与 `-GetFiles` 相同，但输出到临时 DiagTrack 文件夹 |
-| `-RemoveDefinitions [-All]` | 将安装的安全智能还原到以前的备份副本或原始默认集 |
-| `-RemoveDefinitions [-DynamicSignatures]` | 仅删除动态下载的安全智能 |
-| `-RemoveDefinitions [-Engine]` | 还原以前安装的引擎 |
-| `-SignatureUpdate [-UNC \| -MMPC]` | 检查新的安全智能更新 |
-| `-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]]` | 还原或列出已隔离 (项)  |
-| `-AddDynamicSignature [-Path]` | 加载动态安全智能 |
-| `-ListAllDynamicSignatures` | 列出已加载的动态安全智能 |
-| `-RemoveDynamicSignature [-SignatureSetID]` | 删除动态安全智能 |
-| `-CheckExclusion -path <path>` | 检查路径是否被排除 |
-| `-ValidateMapsConnection` | 验证你的网络能否与 Microsoft Defender 防病毒 云服务通信。 此命令仅适用于版本Windows 10版本 1703 或更高版本。|
+|命令|说明|
+|---|---|
+|`-?`**或**`-h`|显示 MpCmdRun 工具的所有可用选项|
+|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|扫描恶意软件。 **ScanType 的值为**：<p>**0** 默认，根据你的配置<p>**1** 快速扫描<p>**2** 完全扫描<p>**3** 文件和目录自定义扫描。<p>CpuThrottling 根据策略配置运行|
+|`-Trace [-Grouping #] [-Level #]`|启动诊断跟踪|
+|`-GetFiles [-SupportLogLocation <path>]`|收集支持信息。 请参阅'[收集诊断数据](collect-diagnostic-data.md)'|
+|`-GetFilesDiagTrack`|与 `-GetFiles` 相同，但输出到临时 DiagTrack 文件夹|
+|`-RemoveDefinitions [-All]`|将安装的安全智能还原到以前的备份副本或原始默认集|
+|`-RemoveDefinitions [-DynamicSignatures]`|仅删除动态下载的安全智能|
+|`-RemoveDefinitions [-Engine]`|还原以前安装的引擎|
+|`-SignatureUpdate [-UNC \|-MMPC]`|检查新的安全智能更新|
+|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|还原或列出已隔离 (项目) |
+|`-AddDynamicSignature [-Path]`|加载动态安全智能|
+|`-ListAllDynamicSignatures`|列出已加载的动态安全智能|
+|`-RemoveDynamicSignature [-SignatureSetID]`|删除动态安全智能|
+|`-CheckExclusion -path <path>`|检查是否排除路径|
+|`-ValidateMapsConnection`|验证你的网络能否与云Microsoft Defender 防病毒通信。 此命令仅适用于版本Windows 10版本 1703 或更高版本。|
 
-## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>通过命令运行命令时出现mpcmdrun.exe 
+## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>通过命令运行命令的常见mpcmdrun.exe
 
 下表列出了使用 MpCmdRun 工具时可能会发生的常见错误。
 
-|错误消息 | 可能的原因 |
-|:----|:----|
-| **ValidateMapsConnection (800106BA** **) 失败0x800106BA** | 禁用Microsoft Defender 防病毒服务。 启用该服务，然后重试。 如果需要有关重新启用Microsoft Defender 防病毒的帮助，请参阅[在终结点Microsoft Defender 防病毒/启用策略](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **提示**：在 Windows 10 1909 或更旧版本，Windows Server 2019 或更旧版本中，该服务以前称为 *Windows Defender 防病毒。* |
-| **0x80070667** | 您运行的命令来自版本 `-ValidateMapsConnection` 1607 或Windows 10版本或版本Windows Server 2016版本的计算机。 从版本 1703 或Windows 10或更高版本或 Windows Server 2019 或更高版本运行命令。|
-| **MpCmdRun 无法识别为内部或外部命令、可操作程序或批处理文件。** | 该工具必须从任一或 (`%ProgramFiles%\Windows Defender` 运行，其中 `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` 可能有所不同，因为平台更新是每月更新，但 3 月除外) |
-| **ValidateMapsConnection 未能建立与 MAPS (hr=80070005 httpcode=450)** | 试图使用权限不足的命令。 以管理员 (cmd.exe) 命令提示符。|
-| **ValidateMapsConnection 未能建立与 MAPS (hr=80070006 httpcode=451)** | 防火墙阻止连接或执行 SSL 检查。 |
-| **ValidateMapsConnection 未能建立与 MAPS (hr=80004005 httpcode=450)** | 可能的网络相关问题，如名称解析问题|
-| **ValidateMapsConnection 未能建立与 MAPS (hr=0x80508015** | 防火墙阻止连接或执行 SSL 检查。 |
-| **ValidateMapsConnection 未能建立与 MAPS (hr=800722F0D 的连接** | 防火墙阻止连接或执行 SSL 检查。 |
-| **ValidateMapsConnection 未能建立与 MAPS (hr=80072EE7 httpcode=451)** | 防火墙阻止连接或执行 SSL 检查。 |
+|错误消息|可能的原因|
+|---|---|
+|**ValidateMapsConnection 失败 (800106BA** **) 或** 0x800106BA|禁用 Microsoft Defender 防病毒 服务。 启用该服务，然后重试。 如果需要有关重新启用Microsoft Defender 防病毒的帮助，请参阅[在终结点Microsoft Defender 防病毒/启用策略](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)。<p> **提示**：在 Windows 10 1909 或较早版本，Windows Server 2019 或更旧版本中，该服务以前称为 *Windows Defender 防病毒。*|
+|**0x80070667**|您运行的命令来自版本为 1607 或Windows 10版本的计算机，Windows Server 2016 `-ValidateMapsConnection` 版本或较早版本。 从版本 1703 或更高版本Windows 10或 Windows Server 2019 或更高版本运行命令。|
+|**MpCmdRun 无法识别为内部或外部命令、可操作程序或批处理文件。**|该工具必须从任一或 (`%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` 运行，其中可能有所不同，因为平台更新是每月更新，但 3 月除外 `2012.4-0`) |
+|**ValidateMapsConnection 未能建立与 MAPS (hr=80070005 httpcode=450)**|试图使用权限不足的命令。 以管理员 (cmd.exe) 命令提示符。|
+|**ValidateMapsConnection 未能建立与 MAPS (hr=80070006 httpcode=451)**|防火墙阻止连接或执行 SSL 检查。|
+|**ValidateMapsConnection 未能建立与 MAPS (hr=80004005 httpcode=450)**|可能的网络相关问题，如名称解析问题|
+|**ValidateMapsConnection 未能建立与 MAPS (hr=0x80508015**|防火墙阻止连接或执行 SSL 检查。|
+|**ValidateMapsConnection 未能建立与 MAPS (hr=800722F0D 的连接**|防火墙阻止连接或执行 SSL 检查。|
+|**ValidateMapsConnection 未能建立与 MAPS (hr=80072EE7 httpcode=451)**|防火墙阻止连接或执行 SSL 检查。|
 
 ## <a name="see-also"></a>另请参阅
 

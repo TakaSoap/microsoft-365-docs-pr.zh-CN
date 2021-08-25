@@ -1,6 +1,6 @@
 ---
 title: 测试 Microsoft Defender for Endpoint 功能在审核模式下如何工作
-description: 审核模式可帮助你查看 Microsoft Defender for Endpoint 在启用后如何保护你的设备。
+description: 审核模式可帮助你查看 Microsoft Defender for Endpoint 在启用后如何保护设备。
 keywords: 攻击防护， 审核， 审核， 模式， 已启用， 禁用， 测试， 演示， 评估， 实验室
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.topic: article
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: 470b123045d2f63b6dbf6aa681762892bfd529d95ef08918689f7429f4fbcdd6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f6a86aff84eda3f9f0145e47387b4353555a3a40
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839887"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58510069"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中测试攻击面减少
 
@@ -45,18 +45,18 @@ ms.locfileid: "53839887"
 
 这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
 
-若要查找审核的条目，请转到应用程序和服务Microsoft Windows  >    >  **Windows Defender**  >    >  **操作**。
+若要查找审核的条目，请转到应用程序和服务Microsoft Windows \>  \> **Windows Defender** \>  \> **操作**。
 
 使用 Defender for Endpoint 获取每个事件的更多详细信息，尤其是调查攻击面减少规则。 使用 Defender for Endpoint 控制台，你可以调查作为警报时间线和调查方案的 [一部分的问题](investigate-alerts.md)。
 
 可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用审核) 。
 
 > [!TIP]
-> 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
+> 还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
 
-| 审核选项 | 如何启用审核模式 | 如何查看事件 |
-|---------|---------|---------|
-| 审核适用于所有事件 | [启用受控文件夹访问](enable-controlled-folders.md) | [受控文件夹访问事件](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| 审核适用于单个规则 | [启用攻击面减少规则](enable-attack-surface-reduction.md) | [攻击面减少规则事件](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
-| 审核适用于所有事件 | [启用网络保护](enable-network-protection.md) | [网络保护事件](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| 审核适用于单个缓解 | [启用漏洞保护](enable-exploit-protection.md) | [Exploit Protection 事件](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+|审核选项|如何启用审核模式|如何查看事件|
+|---|---|---|
+|审核适用于所有事件|[启用受控文件夹访问](enable-controlled-folders.md)|[受控文件夹访问事件](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
+|审核适用于单个规则|[启用攻击面减少规则](enable-attack-surface-reduction.md)|[攻击面减少规则事件](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+|审核适用于所有事件|[启用网络保护](enable-network-protection.md)|[网络保护事件](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
+|审核适用于单个缓解|[启用漏洞保护](enable-exploit-protection.md)|[Exploit Protection 事件](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)

@@ -477,6 +477,7 @@
 ####### [警报方法和属性](alerts.md)
 ####### [列出警报](get-alerts.md)
 ####### [创建警报](create-alert-by-reference.md)
+####### [批量更新警报](batch-update-alerts.md)
 ####### [更新警报](update-alert.md)
 ####### [通过 ID 获取警报信息](get-alert-info-by-id.md)
 ####### [获取有关域信息的警报](get-alert-related-domain-info.md)

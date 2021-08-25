@@ -16,22 +16,22 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/15/2021
-ms.openlocfilehash: e7ea71848c2e64eb7d67605ca108ac9fc90709747af633e6a01b5da67cd8baed
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5fc496fd0d40d5dd172fb45e8ce6b8d23ebab6da
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857759"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509985"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>定义排除时要避免的常见错误
 
-你可以为不希望扫描的项目定义Microsoft Defender 防病毒列表。 此类排除项目可能包含使设备易受攻击的威胁。 本文介绍定义排除项时应避免的一些常见错误。 
+你可以为不希望扫描的项目定义排除Microsoft Defender 防病毒列表。 此类排除项目可能包含使设备易受攻击的威胁。 本文介绍定义排除项时应避免的一些常见错误。
 
-定义排除列表之前，请参阅推荐[排除项。](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
+定义排除列表之前，请参阅推荐[定义排除项。](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 ## <a name="excluding-certain-trusted-items"></a>排除某些受信任的项目
 
-某些文件、文件类型、文件夹或进程不应从扫描中排除，即使你信任它们不是恶意文件。 
+某些文件、文件类型、文件夹或进程不应从扫描中排除，即使你信任它们不是恶意文件。
 
 不要为以下部分中列出的文件夹位置、文件扩展名和进程定义排除项：
 - 文件夹位置
@@ -42,7 +42,7 @@ ms.locfileid: "53857759"
 
 通常，不要为以下文件夹位置定义排除项：
 
-`%systemdrive%` 
+`%systemdrive%`
 
 `C:`
 
@@ -52,13 +52,13 @@ ms.locfileid: "53857759"
 
 `%ProgramFiles%\Java`
 
-`C:\Program Files\Java` 
+`C:\Program Files\Java`
 
-`%ProgramFiles%\Contoso\` 
+`%ProgramFiles%\Contoso\`
 
-`C:\Program Files\Contoso\` 
+`C:\Program Files\Contoso\`
 
-`%ProgramFiles(x86)%\Contoso\` 
+`%ProgramFiles(x86)%\Contoso\`
 
 `C:\Program Files (x86)\Contoso\`
 
@@ -72,9 +72,9 @@ ms.locfileid: "53857759"
 
 `C:\Users\*`
 
-`C:\Users\<UserProfileName>\AppData\Local\Temp\`**请注意以下例外情况SharePoint：** 在文件级别防病毒保护中 `C:\Users\ServiceAccount\AppData\Local\Temp` SharePoint。 [](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+`C:\Users\<UserProfileName>\AppData\Local\Temp\`**请注意以下例外情况SharePoint：** 在安全文件中使用文件级防病毒保护时 `C:\Users\ServiceAccount\AppData\Local\Temp` [，SharePoint。](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**请注意以下例外情况SharePoint：** 在文件级别防病毒保护中 `C:\Users\Default\AppData\Local\Temp` SharePoint。 [](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**请注意以下例外情况SharePoint：** 在安全文件中使用文件级防病毒保护时 `C:\Users\Default\AppData\Local\Temp` [，SharePoint。](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 
 `%Windir%\Prefetch`
 
@@ -111,7 +111,7 @@ ms.locfileid: "53857759"
 
 `.cmd`
 
-`.com` 
+`.com`
 
 `.cpl`
 
@@ -177,79 +177,79 @@ ms.locfileid: "53857759"
 
 `.zip`
 
-### <a name="processes"></a>进程 
+### <a name="processes"></a>进程
 
 通常，不要为以下过程定义排除项：
 
-`AcroRd32.exe`  
+`AcroRd32.exe`
 
-`bitsadmin.exe`  
+`bitsadmin.exe`
 
-`excel.exe`  
+`excel.exe`
 
-`iexplore.exe`  
+`iexplore.exe`
 
-`java.exe`  
+`java.exe`
 
-`outlook.exe`  
+`outlook.exe`
 
-`psexec.exe`  
+`psexec.exe`
 
-`powerpnt.exe`  
+`powerpnt.exe`
 
-`powershell.exe`  
+`powershell.exe`
 
 `schtasks.exe`
 
-`svchost.exe` 
+`svchost.exe`
 
-`wmic.exe`  
+`wmic.exe`
 
-`winword.exe`  
+`winword.exe`
 
-`wuauclt.exe`  
+`wuauclt.exe`
 
-`addinprocess.exe`  
+`addinprocess.exe`
 
-`addinprocess32.exe`  
+`addinprocess32.exe`
 
-`addinutil.exe`  
+`addinutil.exe`
 
-`bash.exe`  
+`bash.exe`
 
-`bginfo.exe` 
+`bginfo.exe`
 
-`cdb.exe`  
+`cdb.exe`
 
-`csi.exe`  
+`csi.exe`
 
-`dbghost.exe`  
+`dbghost.exe`
 
-`dbgsvc.exe`  
+`dbgsvc.exe`
 
 `dnx.exe`
 
 `dotnet.exe`
 
-`fsi.exe`  
+`fsi.exe`
 
-`fsiAnyCpu.exe`  
+`fsiAnyCpu.exe`
 
-`kd.exe`  
+`kd.exe`
 
-`ntkd.exe`  
+`ntkd.exe`
 
-`lxssmanager.dll`  
+`lxssmanager.dll`
 
-`msbuild.exe` 
+`msbuild.exe`
 
-`mshta.exe`  
+`mshta.exe`
 
-`ntsd.exe`  
+`ntsd.exe`
 
-`rcsi.exe`  
+`rcsi.exe`
 
-`system.management.automation.dll`  
+`system.management.automation.dll`
 
 `windbg.exe`
 
@@ -266,7 +266,6 @@ ms.locfileid: "53857759"
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>在文件名和文件夹路径或扩展名排除列表中将不正确的环境变量用作通配符
 
-Microsoft Defender 防病毒服务使用 LocalSystem 帐户在系统上下文中运行，这意味着它从系统环境变量而不是用户环境变量获取信息。 将环境变量用作排除列表的通配符仅限于系统变量和那些适用于作为 NT AUTHORITY\SYSTEM 帐户运行的进程。 因此，在添加文件夹和进程排除项时，Microsoft Defender 防病毒变量作为通配符。 有关系统环境变量 [的完整](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 列表，请参阅系统环境变量下的表。
+Microsoft Defender 防病毒服务使用 LocalSystem 帐户在系统上下文中运行，这意味着它从系统环境变量而不是用户环境变量获取信息。 将环境变量用作排除列表的通配符仅限于系统变量和那些适用于作为 NT AUTHORITY\SYSTEM 帐户运行的进程。 因此，在添加文件夹和进程排除项时，不要Microsoft Defender 防病毒变量作为通配符。 有关系统环境变量 [的完整](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) 列表，请参阅系统环境变量下的表。
 
 请参阅 [在文件名和文件夹路径](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 或扩展名排除列表中使用通配符，了解如何在排除列表中使用通配符。
-

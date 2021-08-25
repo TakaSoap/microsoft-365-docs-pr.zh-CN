@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: e3d4f090ebe53175e2957d040ad18c226a7d3177159e2552586cac4a7b259734
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0d99321c02c4604219e5c6fcb247666f88cf4a08
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892335"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58502851"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
@@ -45,7 +45,7 @@ ms.locfileid: "53892335"
 
 ## <a name="create-and-run-a-search"></a>创建并运行搜索
 
-若要访问 Microsoft 365 合规中心的“**内容搜索**”页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是安全与合规中心的电子数据展示管理员角色组中的成员。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+若要访问 Microsoft 365 合规中心的“**内容搜索**”页面（以运行搜索和预览并导出结果），管理员、合规专员或电子数据展示管理员必须是 Microsoft 365 合规中心的电子数据展示管理员角色组中的成员。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
   
 1. 转到 <https://compliance.microsoft.com>，并使用已分配相应权限的帐户凭据进行登录。
 
