@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 48b014c808a2d8d91f7a0adb01938bf289c1985aece314fd5ab49d3ef9542c4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 20918b3412a5534675c873fdfd9d2fb94a73ab75
+ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829806"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58509937"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -28,7 +28,7 @@ ms.locfileid: "53829806"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-此文章解释了名为“首次看到时阻止”的防病毒/防恶意软件功能，并介绍了如何为组织启用“首次看到时阻止”功能。 
+此文章解释了名为“首次看到时阻止”的防病毒/防恶意软件功能，并介绍了如何为组织启用“首次看到时阻止”功能。
 
 > [!TIP]
 > 此文章适合的读者为管理组织安全设置的企业管理员和 IT 专业人员。 如果你不是企业管理员或 IT 专业人员，但你对“首次看到时阻止”有疑问，请参阅[不是企业管理员或 IT 专业人员？](#not-an-enterprise-admin-or-it-pro)部分。
@@ -37,19 +37,19 @@ ms.locfileid: "53829806"
 
 “首次看到时阻止”是下一代保护的一种威胁保护功能，它能够在几秒内检测新的恶意软件并将其阻止。 “首次看到时阻止”的启用方式是启用某些特定的安全设置。 这些设置包括：
 
-- 云端保护； 
-- 指定的示例提交超时（比如 50 秒）；以及 
-- 高文件阻止级别。 
+- 云端保护；
+- 指定的示例提交超时（比如 50 秒）；以及
+- 高文件阻止级别。
 
-在大多数企业组织中，需要启用“首次看到时阻止”的设置都已在部署 Microsoft Defender 防病毒时配置了。 
+在大多数企业组织中，需要启用“首次看到时阻止”的设置都已在部署 Microsoft Defender 防病毒时配置了。
 
 ## <a name="how-it-works"></a>运作方式
 
 当 Microsoft Defender 防病毒软件遇到未检测到的可疑文件时，它会查询云保护后端。 云后端将应用启发式、机器学习以及自动文件分析，以确定文件是恶意文件还是非威胁文件。
 
-Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、智能、实时的保护。 
+Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、智能、实时的保护。
 
-![Microsoft Defender AV 引擎列表](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Microsoft Defender AV 引擎列表](images/microsoft-defender-atp-next-generation-protection-engines.png)
 
 > [!TIP]
 > 若要了解更多信息，请参阅[（博客）了解 Microsoft Defender for Endpoint 下一代保护的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
@@ -71,7 +71,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 > [!TIP]
 > Microsoft Intune 现属于 Microsoft Endpoint Manager。
 
-1. 在 Microsoft Endpoint Manager 管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))，导航到“**设备**” > “**配置用户配置**”。
+1. 在 Microsoft Endpoint Manager 管理中心 (<https://endpoint.microsoft.com>)，导航到“**设备**”\>“**配置用户配置**”。
 
 2. 使用“**设备限制**”用户配置类型选择或创建用户配置。
 
@@ -87,6 +87,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 4. 保存设置。
 
 > [!TIP]
+>
 > - 将文件阻止级别设置为 **高** 将应用高强度检测级别。 如果发生了意外情况，导致对合法文件做出了误报检测，你的安全操作团队可以[还原隔离的文件](./restore-quarantined-files-microsoft-defender-antivirus.md)。
 > - 有关在 Intune 中配置 Microsoft Defender 防病毒设备限制的详细信息，请参阅[在 Microsoft Intune 中配置设备限制设置](/intune/device-restrictions-configure)。
 > - 有关 Intune 中的 Microsoft Defender 防病毒设备限制的列表，请参阅 [Intune 中 Windows 10（和更高版本）设置的设备限制](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)。
@@ -96,7 +97,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 > [!TIP]
 > 如果你在找 Microsoft Endpoint Configuration Manager，它现在属于 Microsoft Endpoint Manager。
 
-1. 在 Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 中，转到 **Endpoint 安全性** > **防病毒**。
+1. 在 Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) 中，转到 **Endpoint 安全性** \> **防病毒**。
 
 2. 选择现有策略，或使用 **Microsoft Defender 防病毒** 用户配置类型创建新策略。
 
@@ -113,11 +114,11 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 ## <a name="turn-on-block-at-first-sight-with-group-policy"></a>使用组策略打开“首次看到时阻止”
 
 > [!NOTE]
-> 我们建议使用 Intune 或 Microsoft Endpoint Manager 来打开“首次看到时阻止”。 
+> 我们建议使用 Intune 或 Microsoft Endpoint Manager 来打开“首次看到时阻止”。
 
-1. 在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，然后选择 **编辑**。 
+1. 在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，然后选择 **编辑**。
 
-2. 使用“**组策略管理编辑器**”转到“**计算机配置**” > “**管理模板**” > “**Windows 组件**” > “**Microsoft Defender 防病毒**” > “**MAPS**”。 
+2. 使用“**组策略管理编辑器**”转到“**计算机配置**”\>“**管理模板**”\>“**Windows 组件**”\>“**Microsoft Defender 防病毒**”\>“**MAPS**”。
 
 3. 在“MAPS”节中，双击“**配置“首次看到时阻止”功能**”，将其设为“**启用**”，然后选择“**OK**”。
 
@@ -141,14 +142,15 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 3. 确认 **云端保护** 和 **自动提交样本** 已开启。
 
 > [!NOTE]
-> - 如果已使用组策略配置并部署了先决条件设置，本部分所述的设置将灰显，并且在个别终结点上不可用。 
+>
+> - 如果已使用组策略配置并部署了先决条件设置，本部分所述的设置将灰显，并且在个别终结点上不可用。
 > - 通过组策略对象进行的更改必须先部署到个别终结点，然后 Windows 设置中的相关设置才会更新。
 
 ## <a name="validate-block-at-first-sight-is-working"></a>验证“首次看到时阻止”是否正常工作
 
 若要验证该功能是否正常工作，请下载[“首次看到时阻止”示例文件](https://demo.wd.microsoft.com/Page/BAFS)。 若要下载该文件，你需要在 Azure AD 中拥有分配有安全管理员或全局管理员角色的帐户。
 
-若要验证该功能是否正常工作，请按照[验证网络和云之间的连接](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)中的指导进行操作。 
+若要验证该功能是否正常工作，请按照[验证网络和云之间的连接](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)中的指导进行操作。
 
 ## <a name="turn-off-block-at-first-sight"></a>关闭“首次看到时阻止”
 
@@ -159,9 +161,9 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
 ### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>用 Microsoft Endpoint Manager 关闭“首次看到时阻止”
 
-1. 转到 Microsoft Endpoint Manager 管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) 并登录。
+1. 转到 Microsoft Endpoint Manager 管理中心 (<https://endpoint.microsoft.com>) 并登录。
 
-2. 转到“**终结点安全**” > “**防病毒**”，然后选择你的 Microsoft Defender 防病毒策略。
+2. 转到“**终结点安全**”\>“**防病毒**”，然后选择你的 Microsoft Defender 防病毒策略。
 
 3. 在“**管理**”下，选择“**属性**”。
 
@@ -181,7 +183,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
 2. 在 **策略管理编辑器** 中， 转到“**计算机配置**”并选择“**管理模板**”。
 
-3. 将树展开到“**Windows 组件**” > “**Windows Defender 防病毒**” > “**MAPS**。
+3. 将树展开到 “**Windows 组件**”\>“**Windows Defender 防病毒**”\>“**MAPS**”。
 
 4. 双击“**配置“首次看到时阻止”功能**”，并将该选项设置为“**禁用**”。
 
@@ -206,10 +208,10 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
    - 若要启用“首次看到时阻止”，请确保同时启用了“**云端保护**”和“**自动提交样本**”。
 
-   - 若要禁用启用“首次看到时阻止”，请禁用“**云端保护**”或“**自动提交样本**”。 <br/>
-    
+   - 若要禁用启用“首次看到时阻止”，请禁用“**云端保护**”或“**自动提交样本**”。
+
      > [!CAUTION]
-     > 关闭“首次看到时阻止”会降低设备的保护级别。 我们不建议长期禁用“首次看到时阻止”。 
+     > 关闭“首次看到时阻止”会降低设备的保护级别。 我们不建议长期禁用“首次看到时阻止”。
 
 
 ## <a name="see-also"></a>另请参阅
