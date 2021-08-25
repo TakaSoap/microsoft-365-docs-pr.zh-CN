@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: 2603a41fd4afb83c353854e5bed4c236138dd21d
-ms.sourcegitcommit: 43897ead6db2d3977f6ceb8abeedb8aaff9c020a
+ms.openlocfilehash: 8f45e779cc6ce8deaf20a5f49b597f4ad6139a08
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380208"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507694"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 
@@ -38,15 +38,13 @@ ms.locfileid: "58380208"
 
 ## <a name="set-up-privacy-management"></a>设置隐私管理
 
-若要开始使用隐私管理，请首先获取试用版许可证。 然后，你可以登录隐私管理、为用户分配权限并查看设置。
+若要开始使用隐私管理，请首先获取免费试用版许可证。 然后，你可以登录、为用户分配权限、查看设置并开始使用隐私管理功能。
 
-### <a name="get-trial-license"></a>获取试用许可证
+### <a name="get-free-trial-license"></a>获取免费试用版许可证
 
 若要开始使用公共预览版，全局管理员可以从管理中心获取免费隐私管理 [试用许可证](https://aka.ms/purchasem365privacy)。 选择"开始试用"开始。 你的许可证将持续一个月，可以在公共预览版期间根据需要无需任何费用续订它。
 
 获取订阅后，最多允许激活 30 分钟。 然后返回到合规中心中的隐私管理以开始。
-
-### <a name="accept-privacy-management-terms"></a>接受隐私管理条款
 
 首次打开隐私管理时，将要求您确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#where-privacy-management-identifies-personal-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
 
@@ -62,11 +60,11 @@ ms.locfileid: "58380208"
 
 ### <a name="manage-settings"></a>管理设置
 
-可通过设置管理主页右上角的齿轮访问该页面。 它允许隐私管理管理员跨隐私管理配置基本属性。
+可通过设置管理主页右上角的齿轮访问该页面。 它允许隐私管理管理员跨隐私管理配置基本属性，例如匿名处理、电子邮件通知等全局设置。
 
 在开始之前，你可能希望查看默认配置并做出任何所需的调整。 若要了解有关选项的详细信息，请参阅 [管理隐私管理设置](privacy-management-settings.md)。
 
-## <a name="get-initial-data-insights"></a>获取初始数据见解
+## <a name="start-visualizing-your-data"></a>开始可视化数据
 
 登录隐私管理后，你将进入概述 **页面** 。 此页面提供有关存储在 Microsoft 365 环境中个人数据的见解，以帮助您快速发现问题、识别风险指标并采取措施解决问题。 你的概述应在注册前 24 小时内填充初始见解。 当你继续使用隐私管理时，概述页面将刷新以继续提供最新信息。
 
@@ -74,6 +72,10 @@ ms.locfileid: "58380208"
 
 若要了解有关这些页面的信息，请参阅 [查找和可视化数据](privacy-management-data-profile.md)。
 
-## <a name="get-started-with-default-policies"></a>默认策略入门
+## <a name="start-managing-risks-with-default-policies"></a>开始使用默认策略管理风险
 
-隐私管理将有助于启动数据评估过程，方法为创建三个使用默认设置的策略，使用用于数据最小化、数据过度利用和数据传输的模板。 默认情况下，这些策略将启用，但不会自动触发通知邮件或修正提示。 初始设置后，可以继续创建和自定义自己的策略。 若要了解更多信息，请参阅 [创建和管理策略](privacy-management-policies.md)。
+隐私管理将开始评估数据，并帮助您了解关键风险方案，方法为创建三个默认设置策略、使用用于数据最小化的模板、数据过度曝光和数据传输。 默认情况下，这些策略将启用，但不会自动触发通知邮件或修正提示。 初始设置后，可以继续创建和自定义自己的策略。 若要了解更多信息，请参阅 [创建和管理策略](privacy-management-policies.md)。
+
+## <a name="get-started-with-subject-rights-requests"></a>主题权限请求入门
+
+隐私管理的主题权限请求解决方案可帮助你处理来自想要查看或管理你存储的个人数据的个人的请求。 若要了解有关使用这些功能的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。

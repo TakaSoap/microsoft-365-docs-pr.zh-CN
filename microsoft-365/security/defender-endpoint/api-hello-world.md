@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5081822d31d3e127dbe6511719afdaddd6f6b4fdf078bf5c6e09aee4caff725e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884928"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508210"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -43,18 +43,21 @@ ms.locfileid: "53884928"
 ## <a name="get-alerts-using-a-simple-powershell-script"></a>使用简单的 PowerShell 脚本获取警报
 
 ### <a name="how-long-it-takes-to-go-through-this-example"></a>完成此示例需要多久？
+
 只需两个步骤，只需 5 分钟即可完成：
+
 - 应用程序注册
 - 使用示例：仅需要复制/粘贴短 PowerShell 脚本
 
 ### <a name="do-i-need-a-permission-to-connect"></a>是否需要连接权限？
-对于应用程序注册阶段，你必须在 **Azure** AD 租户Azure Active Directory (全局) 角色。
+
+对于应用程序注册阶段，你必须在 Azure  AD 租户Azure Active Directory (全局) 角色。
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory
 
 1. 使用全局管理员 **用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。**
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。**
 
    ![应用程序注册Microsoft Azure导航的图像](images/atp-azure-new-app2.png)
 
@@ -62,13 +65,13 @@ ms.locfileid: "53884928"
 
 4. 允许应用程序访问适用于终结点的 Defender，并为其分配 **"读取所有警报"** 权限：
 
-   - 在应用程序页面上，单击 **"API** 权限""添加我的组织使用的权限  >    >  API"> **WindowsDefenderATP"，** 然后单击 **"WindowsDefenderATP"。**
+   - 在应用程序页面上，单击 **"API** 权限""添加我的组织使用的权限 \>  \> API"> **WindowsDefenderATP"，** 然后单击 **"WindowsDefenderATP"。**
 
    - **注意**：WindowsDefenderATP 不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
 
    ![API 访问和 API 选择的图像1](images/add-permission.png)
 
-   - Choose **Application permissions**  >  **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
    ![API 访问和 API 选择的图像2](images/application-permissions.png)
 
@@ -88,7 +91,7 @@ ms.locfileid: "53884928"
 
 6. 向应用程序添加密码。
 
-   - 单击 **"&** 密码"，将说明添加到密码，然后单击"添加 **"。**
+   - 单击 **"&密码"，** 将说明添加到密码，然后单击"添加 **"。**
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
@@ -140,8 +143,8 @@ ms.locfileid: "53884928"
 
 ### <a name="lets-get-the-alerts"></a>让我们获取警报！
 
-- 以下 **脚本将使用** Get-Token.ps1访问 API，并获取过去 48 小时的警报。
-- 将此脚本保存在保存上一脚本的同一文件夹中 **Get-Token.ps1。**
+- 下面的 **脚本将使用** Get-Token.ps1访问 API，并获取过去 48 小时的警报。
+- 在保存上一脚本的同一文件夹中保存 **此脚本** Get-Token.ps1。
 - 该脚本创建两 (json 和 csv) 文件，其中数据与脚本在同一文件夹中。
 
   ```powershell

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7adb3dfe610cb8fa2c2c697956e13769b09315b54d7e1506afc25d0a9520ccd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6079c0d4a92f17c9c00fc3b3f060fec6858cb996
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894643"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507216"
 ---
-#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
+# <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -31,11 +31,11 @@ ms.locfileid: "53894643"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
+Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
 
 有关数据存储详细信息，请参阅适用于终结点数据存储[和隐私的 Microsoft Defender。](data-storage-privacy.md)
 
-收集的信息有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
+收集的信息有助于使适用于 Android 的 Defender for Endpoint 保持安全、最新、如预期运行并支持服务。
 
 有关 Android 和 iOS 移动设备上的 Microsoft Defender for Endpoint 的最常见隐私问题详细信息，请参阅适用于终结点的 Microsoft Defender 和 Android 和 [iOS 移动设备上的隐私](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)。
 
@@ -48,7 +48,7 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 有关设备上 **恶意** Android (程序包) API 的信息，包括
 
 - 安装源
-- 存储 APK (文件路径) 位置
+- 存储 APK (文件) 位置
 - 安装时间、APK 大小和权限
 
 ### <a name="web-page--network-information"></a>网页/网络信息
@@ -92,4 +92,4 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 **反馈 通过** 用户提供的应用内反馈收集数据
 
 - 用户的电子邮件地址（如果他们选择提供它）。
-- 反馈类型 (、笑脸、想法) 以及用户提交的任何反馈评论。
+- 反馈类型 (、笑脸、) 以及用户提交的任何反馈评论。

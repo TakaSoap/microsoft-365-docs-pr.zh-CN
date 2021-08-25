@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: 在Office 365邮箱变为非活动邮箱后，更改分配给非活动邮箱Office 365保留策略的保留期。
-ms.openlocfilehash: 02fb0ab1f598db3532f1544c041dfcffd3a2224a
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: ff6394117c0c4f9410b12fcf3d8fc1c952ec1619
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502887"
+ms.locfileid: "58507647"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>更改非活动邮箱的保留期
 
@@ -104,7 +104,7 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |Ann Beebe  <br/> |诉讼保留  <br/> |*LitigationHoldEnabled* 属性设置为 `True` 。  <br/> |
 |Pilar Pinilla  <br/> |就地保留  <br/> |*InPlaceHolds* 属性包含非活动邮箱In-Place保留的 GUID。 你可以判断这是一个In-Place保留，因为 ID 不以前缀开头。  <br/> 可以使用 PowerShell 中的命令Exchange Online非活动邮箱上的In-Place `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` 保留"的信息。  <br/> |
 |为百分卡  <br/> |组织中组织Microsoft 365保留策略Microsoft 365 合规中心  <br/> |*InPlaceHolds* 属性为空。 这表示将一个或多个组织范围内的或 (Exchange保留) Microsoft 365应用于非活动邮箱。 在这种情况下，可以在 PowerShell 中Exchange Online命令，获取组织范围内策略保留策略的 `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` GUID Microsoft 365列表。 应用于邮箱的组织范围内保留策略的 GUID Exchange前缀开头; `mbx` 例如， `mbxa3056bb15562480fadb46ce523ff7b02` 。  <br/> <br/>若要标识Microsoft 365邮箱的保留策略，请运行安全与合规中心 PowerShell &命令。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
-|表示 Olson  <br/> |Microsoft 365安全与合规中心中&应用于特定邮箱的保留策略  <br/> |*InPlaceHolds* 属性包含应用于非Microsoft 365邮箱的保留策略的 GUID。 你可以判断这是应用于特定邮箱的保留策略，因为 GUID 以前缀  `mbx` 开头。 如果应用于非活动邮箱的保留策略的 GUID 以前缀开头，则指示保留策略应用于Skype for Business `skp` 对话。  <br/><br/> 若要标识Microsoft 365邮箱的保留策略，请运行安全与合规中心 PowerShell &命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>运行此命令时，  `mbx` 请务必删除 或  `skp` 前缀。  <br/> |
+|表示 Olson  <br/> |Microsoft 365应用于特定邮箱Microsoft 365 合规中心保留策略  <br/> |*InPlaceHolds* 属性包含应用于非Microsoft 365邮箱的保留策略的 GUID。 你可以判断这是应用于特定邮箱的保留策略，因为 GUID 以前缀  `mbx` 开头。 如果应用于非活动邮箱的保留策略的 GUID 以前缀开头，则指示保留策略应用于Skype for Business `skp` 对话。  <br/><br/> 若要标识Microsoft 365邮箱的保留策略，请运行安全与合规中心 PowerShell &命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>运行此命令时，  `mbx` 请务必删除 或  `skp` 前缀。  <br/> |
 |为 McMahon  <br/> |电子数据展示服务中的Microsoft 365 合规中心  <br/> |*InPlaceHolds* 属性包含非活动邮箱上设置电子数据展示案例保留的 GUID。 你可以判断这是电子数据展示案例保留，因为 GUID 以前缀  `UniH` 开头。  <br/> 您可以使用安全与合规& PowerShell 中的 cmdlet 获取有关非活动邮箱上的保留相关联的电子数据展示  `Get-CaseHoldPolicy` 案例的信息。 例如，可以运行命令来显示非活动邮箱上案例保留  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` 的名称。 运行此命令时  `UniH` ，请务必删除前缀。  <br/><br/> 若要标识与非活动邮箱上的保留相关联的电子数据展示案例，请运行以下命令。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注意：** 建议不要对非活动邮箱使用电子数据展示保留。 这是因为电子数据展示事例适用于与安全问题相关的特定、有时间限制的事例。 有时，法律案件可能会结束，并且与该案件关联的保留将被删除，电子数据展示案例将在最终 (或删除) 。 事实上，如果非活动邮箱上的保留与电子数据展示案例关联，并且该保留已释放或者电子数据展示案例已关闭或删除，则非活动邮箱将被永久删除。 
 
 有关保留策略Microsoft 365，请参阅了解[保留策略和保留标签](retention.md)。

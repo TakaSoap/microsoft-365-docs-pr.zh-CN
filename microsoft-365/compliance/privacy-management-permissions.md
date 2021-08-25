@@ -1,5 +1,5 @@
 ---
-title: '在隐私管理中设置用户权限和分配角色 (预览) '
+title: '设置用户权限，并分配隐私管理 (预览) '
 f1.keywords:
 - CSH
 ms.author: v-jgriffee
@@ -15,19 +15,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何设置隐私管理权限并将用户分配到角色组。
-ms.openlocfilehash: 644c32aad3e4c25e5ca74e6ae973a7305476af37
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+description: 了解如何设置隐私管理权限并将用户分配给角色组。
+ms.openlocfilehash: ebdd5610253ecb5bd490eb9b8bb8beb45f8b6458
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254758"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507706"
 ---
-# <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>在隐私管理中设置用户权限和分配角色 (预览) 
+# <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>设置用户权限，并分配隐私管理 (预览) 
 
 本文内容：了解如何设置 **权限并将** 用户分配给 **角色组** 和 **角色**。
 
-若要向组织成员授予使用隐私管理的权限，请将其分配给组织中相应的Microsoft 365 合规中心。 请注意，特定于隐私管理的角色不会显示在Azure Active Directory。
+若要向组织成员授予使用隐私管理的权限，请将其分配给组织中Microsoft 365 合规中心。 请注意，特定于隐私管理的角色不会显示在Azure Active Directory。
 
 ## <a name="sign-in-and-set-permissions"></a>登录并设置权限
 
@@ -42,7 +42,7 @@ ms.locfileid: "58254758"
 
 ## <a name="role-groups-and-roles"></a>角色组和角色
 
-根据成员需要完成的任务以及适当的文件访问级别，应将其分配给角色组。 每个角色组包括一个或多个角色。 这些角色可能属于为该组的成员启用或限制的特定隐私管理任务或关键功能。  
+成员应分配给角色组，具体取决于需要完成哪些任务以及适当的文件访问级别。 每个角色组包括一个或多个角色。 这些角色可能属于为该组的成员启用或限制的特定隐私管理任务或关键功能。  
 
 如果需要，可以自定义角色组。 为了避免意外丢失访问权限，我们建议创建要自定义的现有角色组的副本，为副本指定可识别名称，对新组进行更改并验证更改，并根据需要为其分配人员。
 
@@ -66,7 +66,7 @@ ms.locfileid: "58254758"
 
 ## <a name="privacy-management-administrators-role-group"></a>隐私管理管理员角色组
 
-此角色组的成员专注于配置和管理任务，可广泛访问隐私管理功能，包括创建、读取、更新和删除隐私管理策略、主体权限请求、隐私管理权限和隐私管理设置。
+此角色组的成员可广泛访问隐私管理功能，包括创建、读取、更新和删除隐私管理策略、主体权限请求、隐私管理权限和隐私管理设置。
 
 角色包括：
 
@@ -87,7 +87,7 @@ ms.locfileid: "58254758"
 
 ### <a name="privacy-management-investigators-role-group"></a>隐私管理调查人员角色组
 
-此组的成员充当隐私管理数据调查人员。 他们可以调查策略匹配项、查看关联的文件内容，以及执行修正操作。 此组可以通过内容资源管理器访问文件。 
+此组的成员充当隐私管理数据调查人员。 他们可以调查策略匹配项、查看关联的文件内容，以及执行修正操作。 此组可以通过内容资源管理器访问文件。
 
 角色包括：
 

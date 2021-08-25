@@ -19,38 +19,38 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用本文中的内容搜索和脚本搜索一组OneDrive for Business邮箱和网站。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01014f991ba832b54b703458ca1eac7cc40902a49bf18d2b79e4e6e89d37d49e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c6dea7423eefbbbba6efdf3b9fe2bbd320cb4d7d
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813663"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508174"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用内容搜索在邮箱和 OneDrive for Business 站点中搜索用户列表
 
-安全&中心提供了许多Windows PowerShell cmdlet，可让你自动执行与电子数据展示相关的耗时任务。 目前，在安全与合规中心&内容搜索以搜索大量保管人内容位置需要时间和准备工作。 创建搜索之前，必须收集每个 OneDrive for Business 网站的 URL，然后将每个邮箱和OneDrive for Business网站添加到搜索。 在将来的版本中，这将更容易在安全与合规中心&实现。 在此之前，您可以使用本文中的脚本自动执行此过程。 此脚本会提示您输入组织的"MySite"域 (例如，URL) 中的 **contoso、** 用户电子邮件地址列表、新内容搜索的名称以及使用的搜索 `https://contoso-my.sharepoint.com` 查询。 该脚本获取列表中每个用户的 OneDrive for Business URL，然后使用您提供的搜索查询创建并启动内容搜索，以搜索列表中的每个用户的邮箱和 OneDrive for Business 网站。
+安全&中心 PowerShell 提供了许多 cmdlet，可让你自动执行与电子数据展示相关的耗时任务。 目前，在 Microsoft 365 合规中心创建内容搜索以搜索大量保管人内容位置需要时间和准备工作。 创建搜索之前，必须收集每个 OneDrive for Business 网站的 URL，然后将每个邮箱和OneDrive for Business网站添加到搜索。 在将来的版本中，此操作将更容易在 Microsoft 365 合规中心。 在此之前，您可以使用本文中的脚本自动执行此过程。 此脚本会提示您输入组织的"MySite"域 (例如，URL) 中的 **contoso、** 用户电子邮件地址列表、新内容搜索的名称以及使用的搜索 `https://contoso-my.sharepoint.com` 查询。 该脚本获取列表中每个用户的 OneDrive for Business URL，然后使用您提供的搜索查询创建并启动内容搜索，以搜索列表中的每个用户的邮箱和 OneDrive for Business 网站。
   
 ## <a name="permissions-and-script-information"></a>权限和脚本信息
 
-- 你必须是安全与合规中心电子数据展示管理员角色组的成员&以及 SharePoint Online 全局管理员才能运行步骤 3 中的脚本。
+- 您必须是 Microsoft 365 合规中心 中的电子数据展示管理员角色组的成员，以及 SharePoint Online 全局管理员才能运行步骤 3 中的脚本。
 
 - 请确保将步骤 2 中创建的用户列表和步骤 3 中的脚本保存到同一文件夹中。 这样更易于运行脚本。
 
-- 该脚本包括最少的错误处理。 其主要用途是快速而轻松地搜索每个用户的OneDrive for Business网站。
+- 该脚本包括最少的错误处理。 其主要用途是快速而轻松地搜索每个用户OneDrive for Business和网站。
 
 - 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步骤 1：安装 SharePoint Online 命令行管理程序
 
-第一步是安装 SharePoint 命令行管理程序。 不必在此过程中使用命令行管理程序，但必须安装它，因为它包含步骤 3 中运行的脚本所需的先决条件。 这些先决条件允许脚本与 SharePoint Online 进行通信，以便获取网站OneDrive for Business URL。
+第一步是安装 SharePoint 命令行管理程序。 不必在此过程中使用命令行管理程序，但必须安装它，因为它包含步骤 3 中运行的脚本所需的先决条件。 这些先决条件允许脚本与 SharePoint Online 通信，以便获取网站OneDrive for Business URL。
   
 转到设置[SharePoint Online 命令行](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)管理程序 Windows PowerShell 环境，并执行步骤 1 和步骤 2 以安装 SharePoint Online 命令行管理程序。
   
 ## <a name="step-2-generate-a-list-of-users"></a>步骤 2：生成用户列表
 
-步骤 3 中的脚本将创建内容搜索，以搜索邮箱OneDrive帐户查找用户列表。 只需在文本文件中键入电子邮件地址，或者可以在 Windows PowerShell 中运行命令，获取电子邮件地址列表，并将其保存到位于步骤 3) 中将脚本保存到的同一文件夹中的 (文件中。
+步骤 3 中的脚本将创建内容搜索，以搜索邮箱OneDrive帐户查找用户列表。 只需在文本文件中键入电子邮件地址，或在 Windows PowerShell 中运行命令，获取电子邮件地址列表并将其保存到位于步骤 3) 中将脚本保存到的同一文件夹中的 (文件中。
   
-下面是一个[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)命令，可以运行此命令获取组织中所有用户的电子邮件地址列表，并将其保存到名为 的文本文件 `Users.txt` 中。 
+下面是一个[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)命令，可以运行该命令获取组织中所有用户的电子邮件地址列表，并将其保存到名为 的文本文件 `Users.txt` 中。 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
@@ -62,7 +62,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 在此步骤中运行脚本时，它将提示您输入以下信息。 在运行脚本之前，请务必准备好此信息。
   
-- 用户 **凭据**- 脚本将使用你的凭据访问 SharePoint Online，获取 OneDrive for Business URL，并使用远程 PowerShell 连接到安全 & 合规中心。 
+- **用户凭据**- 脚本将使用你的凭据访问 SharePoint Online，获取 OneDrive for Business URL 并连接到安全&中心 PowerShell。 
     
 - **MySite** 域的名称 - MySite 域是包含组织中所有OneDrive for Business网站的域。 例如，如果 MySite 域的 URL 为 ，则当脚本提示您输入 MySite 域的名称时， **https://contoso-my.sharepoint.com**  `contoso` 您将输入 。 
     
@@ -70,12 +70,12 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 - **内容搜索的名称** - 脚本将创建的内容搜索的名称。 
     
-- **搜索查询** - 创建并运行将用于内容搜索的搜索查询。 有关搜索查询详细信息，请参阅内容搜索的关键字 [查询和搜索条件](keyword-queries-and-search-conditions.md)。
+- **搜索查询** - 创建并运行将用于内容搜索的搜索查询。 有关搜索查询详细信息，请参阅关键字 [查询和电子数据展示的搜索条件](keyword-queries-and-search-conditions.md)。
 
 
 **若要运行该脚本，请执行下列操作：**
     
-1. 使用 Windows PowerShell 文件名后缀将以下文本保存到脚本.ps1;例如， `SearchEXOOD4B.ps1` 。 将文件保存到步骤 2 中保存用户列表的同一文件夹中。
+1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀.ps1;例如， `SearchEXOOD4B.ps1` 。 将文件保存到步骤 2 中保存用户列表的同一文件夹中。
     
   ```powershell
   # This PowerShell script will prompt you for the following information:
@@ -187,4 +187,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 搜索查询 (留空，以返回内容位置或网站) 。
     
-    该脚本获取每个网站OneDrive for Business URL，然后创建并启动搜索。 您可以在安全 & 合规中心 PowerShell 中运行 **Get-ComplianceSearch** cmdlet 以显示搜索统计信息和结果，也可以转到安全 & 合规性中心中的内容搜索页面查看有关搜索的信息。
+    该脚本获取每个网站OneDrive for Business URL，然后创建并启动搜索。 您可以在安全 & 合规中心 PowerShell 中运行 **Get-ComplianceSearch** cmdlet 以显示搜索统计信息和结果，也可以转到 Microsoft 365 合规中心 中的"内容"搜索页查看有关搜索的信息。

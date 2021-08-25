@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c804aa9b557e87b15cf40721239957c122fec22
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: bbc215c24c514799e617977152a7c71dd2e995e7
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247475"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507360"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "58247475"
 
 美国政府客户 Microsoft Defender for Endpoint 内置于 Azure 美国政府环境中，使用与 Azure 商业中的 Defender for Endpoint 相同的基础技术。
 
-此产品/服务GCC、GCC高和 DoD 客户，并且基于与商业版本相同的预防、检测、调查和修正。 但是，此产品/服务的功能可用性存在一些差异。
+此产品/服务适用于 GCC、GCC High 和 DoD 客户，并且基于与商业版本相同的预防、检测、调查和修正。 但是，此产品/服务的功能可用性存在一些差异。
 
 > [!NOTE]
 > 如果你是使用商业GCC Defender for Endpoint 的客户，请参阅公共文档页面。
@@ -46,7 +46,7 @@ GCC|GCC 高|DoD
 Microsoft 365 GCC G5|Microsoft 365 E5高GCC|Microsoft 365适用于 DOD 的 G5
 Microsoft 365G5 安全GCC|Microsoft 365G5 安全GCC高|Microsoft 365DOD 的 G5 安全性
 Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD
-Windows 10 企业版E5 GCC|Windows 10 企业版适用于高GCC E5|Windows 10 企业版E5 for DOD
+Windows 10 企业版E5 GCC|Windows 10 企业版E5 for GCC High|Windows 10 企业版E5 for DOD
 
 ### <a name="server-licensing"></a>服务器许可
 
@@ -74,10 +74,10 @@ DoD|<https://securitycenter.microsoft.us>
 操作系统版本|GCC|GCC 高|DoD
 :---|:---:|:---:|:---:
 Windows 10版本 21H1 及以上版本|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10，版本 20H2 ([KB4586853) ](https://support.microsoft.com/help/4586853)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10，版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853)) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10，版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853)) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853)) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10版本 1909 ([KB4586819) ](https://support.microsoft.com/help/4586819)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819)) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10版本 1903 ([KB4586819) ](https://support.microsoft.com/help/4586819)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10 版本 1809 ([KB4586839) ](https://support.microsoft.com/help/4586839)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245)) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10，版本 1709|![否](images/svg/check-no.svg) <p> 注意：将不受支持|![是 ](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147) <p> 注意： [已弃用，](/lifecycle/announcements/revised-end-of-service-windows-10-1709)请升级|![否](images/svg/check-no.svg) <p> 注意：将不受支持
@@ -162,10 +162,9 @@ SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wda
 :---|:---:|:---:|:---:
 网络发现|![否](images/svg/check-no.svg) 即将推出|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
 Web 内容筛选|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
-集成：Azure Sentinel|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg) 警报 <p> ![是](images/svg/check-yes.svg) 原始数据&事件：预览版|![是](images/svg/check-yes.svg) 警报 <p> ![是](images/svg/check-yes.svg) 原始数据&事件：预览版
-集成：Microsoft Cloud App Security|![是](images/svg/check-yes.svg)|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
-集成：Microsoft 合规性管理器|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-集成：Microsoft Defender for Identity|![否](images/svg/check-no.svg) 即将推出|![否](images/svg/check-no.svg) 即将推出|![否](images/svg/check-no.svg) 即将推出
+集成：Azure Sentinel|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg) 警报 <p> ![是](images/svg/check-yes.svg) 原始数据&事件：在个人预览版中|![是](images/svg/check-yes.svg) 警报 <p> ![是](images/svg/check-yes.svg) 原始数据&事件：在个人预览版中
+集成：Microsoft Cloud App Security|![是](images/svg/check-yes.svg)|![否](images/svg/check-no.svg) 即将推出|![否](images/svg/check-no.svg) 即将推出
+集成：Microsoft Defender for Identity|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 集成：Microsoft Endpoint DLP|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![否](images/svg/check-no.svg) 即将推出
 集成：Microsoft Power Automate & Azure 逻辑应用|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg) Azure 逻辑应用 <p> ![否](images/svg/check-no.svg) Power Automate：开发中
 Microsoft 威胁专家|![否](images/svg/check-no.svg) 工程积压工作|![否](images/svg/check-no.svg) 工程积压工作|![否](images/svg/check-no.svg) 工程积压工作

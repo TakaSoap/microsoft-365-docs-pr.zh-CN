@@ -18,23 +18,23 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍如何设置Advanced eDiscovery，以便你可以开始创建和管理事例。 它还介绍了所需的 Microsoft 订阅和许可。 完成几个快速步骤后，Advanced eDiscovery即可使用。
-ms.openlocfilehash: 1b2f7a26c96af40f28ef69cfc70d07c90b229dc86b4a78df68247c30ab4ff323
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 本文介绍如何设置Advanced eDiscovery以便你可以开始创建和管理事例。 它还介绍了所需的 Microsoft 订阅和许可。 完成几个快速步骤后，Advanced eDiscovery即可使用。
+ms.openlocfilehash: eb54b43e4361750f66371f224cd7bf6bce58d604
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814121"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508018"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>设置Microsoft 365 Advanced eDiscovery
 
-Advanced eDiscovery中Microsoft 365提供了端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的数据。 部署 Advanced eDiscovery 不需要任何内容，但 IT 管理员和电子数据展示管理员必须完成一些先决条件任务，然后组织才能开始创建和使用 Advanced eDiscovery 事例来管理调查。
+Advanced eDiscovery Microsoft 365 提供了端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的数据。 部署 Advanced eDiscovery 不需要任何内容，但 IT 管理员和电子数据展示管理员必须完成一些先决条件任务，然后组织才能开始创建和使用 Advanced eDiscovery 事例来管理调查。
 
 本文讨论设置项目所需的Advanced eDiscovery。
 
-![设置项目Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
+![设置Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
 
-这包括确保访问事例所需的适当许可Advanced eDiscovery并将保管人添加到事例，并将权限分配给法律和调查团队，以便他们可以访问和管理事例。
+这包括确保访问事例所需的适当许可Advanced eDiscovery并将保管人添加到事例，以及向法律和调查团队分配权限，以便他们可以访问和管理事例。
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>步骤 1：验证并分配适当的许可证
 
@@ -42,7 +42,7 @@ Advanced eDiscovery中Microsoft 365提供了端到端工作流，以保留、收
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤 2：分配电子数据展示权限
 
-若要Advanced eDiscovery或添加为 Advanced eDiscovery的成员，必须为用户分配适当的权限。 具体而言，必须将用户添加为安全与合规中心内电子数据展示&组的成员。 此角色组的成员可以创建和管理Advanced eDiscovery案例。 他们可以添加和删除成员、将保管人和内容位置保留、管理合法保留通知、创建和编辑与案例关联的搜索、将搜索结果添加到审阅集、分析审阅集内的数据以及从 Advanced eDiscovery 案例导出和下载。
+若要Advanced eDiscovery或添加为 Advanced eDiscovery 的成员，必须为用户分配适当的权限。 具体而言，必须将用户添加为电子数据展示管理员角色组Microsoft 365 合规中心。 此角色组的成员可以创建和管理Advanced eDiscovery案例。 他们可以添加和删除成员、将保管人和内容位置保留、管理合法保留通知、创建和编辑与案例关联的搜索、将搜索结果添加到审阅集、分析审阅集内的数据以及从 Advanced eDiscovery 案例导出和下载。
 
 完成以下步骤以将用户添加到电子数据展示管理员角色组：
 
@@ -80,7 +80,7 @@ Advanced eDiscovery中Microsoft 365提供了端到端工作流，以保留、收
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>步骤 3：配置全局设置Advanced eDiscovery
 
-在组织中人员开始创建和使用案例之前，要完成的最后一步是配置适用于组织中所有案例的全局设置。 目前，唯一的全局设置是律师 *-客户特权* 检测 (将来将有更多的全局设置) 。 此设置允许律师-客户特权模型在您分析审阅集内的数据时运行。 模型使用机器学习来确定文档是否包含本质上是合法的内容。 它还将文档参与者与律师列表 (设置模型) 时提交的列表进行比较，以确定文档是否至少有一个参与者是律师。
+在组织中人员开始创建和使用案例之前，要完成的最后一步是配置适用于组织中所有案例的全局设置。 目前，唯一的全局设置是律师 *-* 客户特权检测 (将来将有更多的全局设置) 。 此设置允许律师-客户特权模型在您分析审阅集内的数据时运行。 模型使用机器学习来确定文档是否包含本质上是合法的内容。 它还比较文档参与者与律师列表 (设置模型) 时提交的列表，以确定文档是否至少有一个参与者是律师。
 
 有关设置和使用律师-客户特权检测模型的信息，请参阅在 Advanced eDiscovery 中设置律师[-客户特权Advanced eDiscovery。](attorney-privilege-detection.md)
 

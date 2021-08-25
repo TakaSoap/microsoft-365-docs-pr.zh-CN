@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 64efe4f7e0c4b022c300d3e52551f64b73fcae20
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 488450f43de17904cbcac97e2aceaf11f1e12f17
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258202"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507586"
 ---
 # <a name="list-software-by-recommendation"></a>按建议列出软件
 
@@ -46,7 +46,7 @@ ms.locfileid: "58258202"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|SecurityRecommendation.Read.All|"读取威胁和漏洞管理安全建议信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户）|SecurityRecommendation.Read|"读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -59,7 +59,7 @@ GET /api/recommendations/{id}/software
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

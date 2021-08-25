@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 184d3a09c0dd4d01ad074563603e6a4f5cbc0a99
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 1e16b6aeb664c69c419337b82081a85f10344fba
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502779"
+ms.locfileid: "58507922"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
@@ -41,63 +41,58 @@ ms.locfileid: "58502779"
 > [!CAUTION]
 > 在 Android 上运行其他第三方终结点保护产品以及 Defender for Endpoint 可能会导致性能问题和不可预知的系统错误。
 
-
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上安装 Microsoft Defender for Endpoint
 
 ### <a name="prerequisites"></a>先决条件
 
--   **对于最终用户**
+- **对于最终用户**：
+  - 分配给最终用户的 Microsoft Defender for Endpoint () 应用的许可证。 请参阅 [适用于终结点的 Microsoft Defender 许可要求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+  - Intune 公司门户应用可以从[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)下载，并且可在 Android 设备上使用。
+  - 此外， (应用) 注册设备策略，Intune 公司门户强制执行 Intune 设备合规性策略。 [](/mem/intune/user-help/enroll-device-android-company-portal) 这需要为最终用户分配一个Microsoft Intune许可证。
+  - 若要详细了解如何分配许可证，请参阅 [向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
-    -   分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。 请参阅 [适用于终结点的 Microsoft Defender 许可要求](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+- **对于管理员**
+  - 访问 Microsoft 365 Defender 门户。
 
-    -   Intune 公司门户应用可以从[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)下载，并且可在 Android 设备上使用。
+    > [!NOTE]
+    > Microsoft Intune在 Android 上部署 Microsoft Defender for Endpoint (MDM) 唯一受支持的移动设备管理解决方案。 目前，仅支持在 Intune 中对 Android 相关设备合规性策略强制实施 Defender for Endpoint 的设备。
 
-        -   此外， (应用) 注册设备策略，Intune 公司门户强制执行 Intune[](/mem/intune/user-help/enroll-device-android-company-portal)设备合规性策略。 这需要为最终用户分配一个Microsoft Intune许可证。
-
-    -   若要详细了解如何分配许可证，请参阅 [向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
-        
-
--   **对于管理员**
-
-    -   访问 Microsoft 365 Defender 门户。
+  - 访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
+    - 访问 Microsoft 365 Defender 门户。
 
         > [!NOTE]
         > 对于没有使用移动设备管理 (MDM) 但正在使用 Intune 管理移动应用程序的人，Microsoft Defender for Endpoint 现在可以将保护扩展到托管应用程序中的组织数据。 它还向使用其他企业移动性管理解决方案的客户扩展此支持，同时仍使用 Intune 在 MAM (移动应用程序[) 。 ](/mem/intune/apps/mam-faq)
-         > 在此更新之前，Microsoft Defender for Endpoint 仅在使用 Intune MDM 注册的设备上有效。  
- 
+        >
+        > 在此更新之前，Microsoft Defender for Endpoint 仅在使用 Intune MDM 注册的设备上有效。
 
-    -   访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
-        
+    - 访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
+
 ### <a name="network-requirements"></a>网络要求
 
 - 为了使 Android 上的 Microsoft Defender for Endpoint 在连接到网络时能够正常运行，需要将防火墙/代理配置为允许访问[Microsoft Defender for Endpoint 服务 URL。](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 ### <a name="system-requirements"></a>系统要求
 
--   运行 Android 6.0 及以上的移动电话。 **目前不支持运行 Android 的平板电脑和其他移动设备。** 
-
--   Intune 公司门户 Google [Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)下载并安装应用。 必须注册设备才能强制执行 Intune 设备合规性策略。
+- 运行 Android 6.0 及以上的移动电话。 **目前不支持运行 Android 的平板电脑和其他移动设备。**
+- Intune 公司门户 Google [Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)下载并安装应用。 必须注册设备才能强制执行 Intune 设备合规性策略。
 
 ### <a name="installation-instructions"></a>安装说明
 
-Android 上的 Microsoft Defender for Endpoint 支持在已注册的两种模式（旧版设备管理员和 Android Enterprise安装。
-**目前，具有工作配置文件的个人拥有设备和公司拥有的完全托管用户设备注册在 Android Enterprise。其他 Android Enterprise模式的支持将在准备就绪后公布。**
+Android 上的 Microsoft Defender for Endpoint 支持在已注册的两种模式（旧版设备管理员和 Android Enterprise安装。 **目前，具有工作配置文件的个人拥有设备和公司拥有的完全托管用户设备注册在 Android Enterprise。其他 Android Enterprise模式的支持将在准备就绪后公布。**
 
-在 Android 上部署 Microsoft Defender for Endpoint 是通过 mdm Microsoft Intune () 。
-有关详细信息，请参阅使用 Microsoft Intune 在 Android 上[部署 Microsoft Defender for Endpoint。](android-intune.md)
-
+在 Android 上部署 Microsoft Defender for Endpoint 是通过 mdm Microsoft Intune () 。 有关详细信息，请参阅使用 Microsoft Intune 在 Android 上[部署 Microsoft Defender for Endpoint。](android-intune.md)
 
 > [!NOTE]
-> **Android 上的 Microsoft Defender for Endpoint 现已在 [Google Play 上](https://play.google.com/store/apps/details?id=com.microsoft.scmx) 可用。** <br> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android Enterprise应用部署 Microsoft Defender for Endpoint 应用。 
+> **Android 上的 Microsoft Defender for Endpoint 现已在 [Google Play 上](https://play.google.com/store/apps/details?id=com.microsoft.scmx) 可用。**
+>
+> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android Enterprise应用部署 Microsoft Defender for Endpoint 应用。
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上配置适用于终结点的 Microsoft Defender
 
 有关如何在 Android 上配置适用于终结点功能的 Microsoft Defender 的指南可在在 Android 功能上配置 [Microsoft Defender for Endpoint 中提供](android-configure.md)。
 
-
-
 ## <a name="related-topics"></a>相关主题
+
 - [使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint](android-intune.md)
 - [在 Android 功能上配置 Microsoft Defender for Endpoint](android-configure.md)
 - [移动应用程序管理 (MAM) 基础知识](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
-

@@ -17,31 +17,31 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具通过创建查询来搜索导入到第三Microsoft 365数据源中邮箱的项目。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f493640ecb1e0e0bb03ce315055e2faac37d0a5a05b47711c29d68e13a46a6c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891663"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507634"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用内容搜索搜索自定义合作伙伴连接器导入的第三方数据
 
-您可以使用安全与合规中心的内容搜索[电子](content-search.md)数据展示工具&第三方数据源中导入 Microsoft 365 邮箱的项目。 可以创建查询来搜索所有导入的第三方数据项，也可以创建查询来搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询电子数据展示的保留，以保留第三方数据。
+您可以使用内容搜索[电子数据](content-search.md)展示工具Microsoft 365 合规中心第三方数据源搜索导入到 Microsoft 365 中的邮箱的项目。 可以创建查询来搜索所有导入的第三方数据项，也可以创建查询来搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留，以保留第三方数据。
   
-有关与合作伙伴合作以导入第三方数据和可导入到 Microsoft 365 的第三方数据类型列表，请参阅与合作伙伴合作以在 Office 365 中存档第[三方数据](work-with-partner-to-archive-third-party-data.md)。
+有关与合作伙伴合作以导入第三方数据和可导入到 Microsoft 365 的第三方数据类型列表，请参阅与合作伙伴合作以在 Office 365 中存档[第三方数据](work-with-partner-to-archive-third-party-data.md)。
 
 > [!IMPORTANT]
 > 本文中的指南仅适用于由自定义合作伙伴连接器导入的第三方数据。 本文不适用于使用 Microsoft 合规中心中的第三方数据连接器导入的第三方[](archiving-third-party-data.md#third-party-data-connectors)数据。
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>创建查询以搜索所有第三方数据
 
-若要 (或将) 作为导入 Office 365 的任何类型的第三方数据进行搜索或保留，可以在内容搜索或创建基于查询的保留时，在关键字框中使用邮件属性值对。 `kind:externaldata` 例如，若要搜索从任何第三方数据源导入的项目，并且导入项目的 Subject 属性中包含单词"contoso"，可以使用以下查询： 
+若要 (或将) 导入 Office 365 的任何类型第三方数据放在保留状态，可以在内容搜索或创建基于查询的保留时，在关键字框中使用邮件属性值对。 `kind:externaldata` 例如，若要搜索从任何第三方数据源导入的项目，并且导入项目的 Subject 属性中包含单词"contoso"，您将使用以下查询： 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-前面的关键字查询示例包括 subject 属性。 有关可以在关键字查询中包括的第三方数据项的其他属性的列表，请参阅与合作伙伴合作以在关键字查询中存档第三方数据中的"[详细信息"Office 365。](work-with-partner-to-archive-third-party-data.md#more-information)
+前面的关键字查询示例包括 subject 属性。 有关可以在关键字查询中包括的第三方数据项的其他属性的列表，请参阅与合作伙伴合作以在关键字查询中存档第三方数据中的"[详细信息](work-with-partner-to-archive-third-party-data.md#more-information)Office 365。
   
 创建查询以搜索和保留第三方数据时，您还可以使用条件来缩小搜索结果范围。 有关创建内容搜索查询的信息，请参阅内容搜索的关键字查询 [和搜索条件](keyword-queries-and-search-conditions.md)。
   

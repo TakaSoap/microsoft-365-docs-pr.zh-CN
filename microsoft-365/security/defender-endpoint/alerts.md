@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77e7b86de5369b6a65224579de214d32c1f628e3
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377973"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508246"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -36,55 +36,64 @@ ms.locfileid: "58377973"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="methods"></a>方法
 
-方法 |返回类型 |说明
-:---|:---|:---
-[获取警报](get-alert-info-by-id.md) | [提醒](alerts.md) | 获取单个 [alert](alerts.md) 对象。
-[列出警报](get-alerts.md) | [警报](alerts.md) 集合 | 列出 [警报](alerts.md) 集合。
-[更新警报](update-alert.md) | [提醒](alerts.md) | 更新特定 [警报](alerts.md)。
-[批更新通知](batch-update-alerts.md) | | 更新一批 [警报](alerts.md)。
-[创建警报](create-alert-by-reference.md)|[提醒](alerts.md)|根据从高级搜寻 获取的事件数据 [创建警报](run-advanced-query-api.md)。
-[列出相关域](get-alert-related-domain-info.md)|域集合| 列出与警报关联的 URL。
-[列出相关文件](get-alert-related-files-info.md) | [文件](files.md) 集合 |  列出 [与](files.md) 警报关联的文件 [实体](alerts.md)。
-[列出相关 IP](get-alert-related-ip-info.md) | IP 集合 | 列出与警报关联的 IP。
-[获取相关计算机](get-alert-related-machine-info.md) | [计算机](machine.md) | [与](machine.md)警报关联的[计算机](alerts.md)。
-[获取相关用户](get-alert-related-user-info.md) | [用户](user.md) | [与](user.md)警报关联的[用户](alerts.md)。
+<br>
+
+****
+
+|方法|返回类型|说明|
+|---|---|---|
+|[获取警报](get-alert-info-by-id.md)|[提醒](alerts.md)|获取单个 [alert](alerts.md) 对象。|
+|[列出警报](get-alerts.md)|[警报](alerts.md) 集合|列出 [警报](alerts.md) 集合。|
+|[更新警报](update-alert.md)|[提醒](alerts.md)|更新特定 [警报](alerts.md)。|
+|[批更新通知](batch-update-alerts.md)||更新一批 [警报](alerts.md)。|
+|[创建警报](create-alert-by-reference.md)|[提醒](alerts.md)|根据从高级搜寻 获取的事件数据 [创建警报](run-advanced-query-api.md)。|
+|[列出相关域](get-alert-related-domain-info.md)|域集合|列出与警报关联的 URL。|
+|[列出相关文件](get-alert-related-files-info.md)|[文件](files.md) 集合|列出 [与](files.md) 警报关联的文件 [实体](alerts.md)。|
+|[列出相关 IP](get-alert-related-ip-info.md)|IP 集合|列出与警报关联的 IP。|
+|[获取相关计算机](get-alert-related-machine-info.md)|[计算机](machine.md)|[与](machine.md)警报关联的[计算机](alerts.md)。|
+|[获取相关用户](get-alert-related-user-info.md)|[用户](user.md)|[与](user.md)警报关联的[用户](alerts.md)。|
+|
 
 ## <a name="properties"></a>属性
 
-属性 |    类型    |    说明
-:---|:---|:---
-id | String | 警报 ID。
-title | String | 警报标题。
-说明 | String | 警报说明。
-alertCreationTime | Nullable DateTimeOffset | 创建警报时 (UTC) 日期和时间。
-lastEventTime | Nullable DateTimeOffset | 在同一设备上触发警报的事件的最后一次发生次数。
-firstEventTime | Nullable DateTimeOffset | 在该设备上触发警报的事件的第一次发生。
-lastUpdateTime | Nullable DateTimeOffset | 上次更新警报 (UTC) 日期和时间。
-resolvedTime | Nullable DateTimeOffset | 警报状态更改为"已解决"的日期和时间。
-incidentId | Nullable Long | [警报](view-incidents-queue.md)的事件 ID。
-investigationId | Nullable Long | 与 [警报](automated-investigations.md) 相关的调查 ID。
-investigationState | Nullable Enum | 调查 的当前 [状态](automated-investigations.md)。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。
-assignedTo | String | 警报的所有者。
-rbacGroupName | String | RBAC 设备组名称。
-mitreTechniques | String | Mitre Enterprise技术 ID。
-relatedUser | String |  与特定警报相关的用户的详细信息。
-severity | 枚举 | 警报的严重性。 可能的值包括："UnSpecified"、"Informational"、"Low"、"Medium"和"High"。
-状态 | 枚举 | 指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。
-classification | Nullable Enum | 警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。
-确定 | Nullable Enum | 指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。
-“类别”| String | 警报的类别。
-detectionSource | String | 检测源。
-threatFamilyName | String | 威胁系列。
-threatName | String | 威胁名称。
-machineId | String | 与 [警报关联的](machine.md) 计算机实体的 ID。
-computerDnsName | String | [计算机](machine.md) 完全限定的名称。
-aadTenantId | String | Azure Active Directory ID。
-一个 | String | 触发警报的检测器的 ID。
-comments | 警报注释列表 | Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
-证据 | 警报证据列表 | 与警报相关的证据。 请参阅下面的示例。
+<br>
+
+****
+
+|属性|类型|说明|
+|---|---|---|
+|id|String|警报 ID。|
+|title|String|警报标题。|
+|说明|String|警报说明。|
+|alertCreationTime|Nullable DateTimeOffset|创建警报时 (UTC) 日期和时间。|
+|lastEventTime|Nullable DateTimeOffset|在同一设备上触发警报的事件的最后一次发生次数。|
+|firstEventTime|Nullable DateTimeOffset|在该设备上触发警报的事件的第一次发生。|
+|lastUpdateTime|Nullable DateTimeOffset|上次更新警报 (UTC) 日期和时间。|
+|resolvedTime|Nullable DateTimeOffset|警报状态更改为"已解决"的日期和时间。|
+|incidentId|Nullable Long|[警报](view-incidents-queue.md)的事件 ID。|
+|investigationId|Nullable Long|与 [警报](automated-investigations.md) 相关的调查 ID。|
+|investigationState|Nullable Enum|调查 的当前 [状态](automated-investigations.md)。 可能的值包括："Unknown"、"Terminated"、 "SuccessfullyRemediated"、"Benign"、"Failed"、"PartiallyRemediated"、"Running"、"PendingApproval"、"PendingResource"、"PartiallyInvestigated"、"TerminatedByUser"、"TerminatedBySystem"、"Queued"、"InnerFailure"、"PreexistingAlert"、"UnsupportedOs"、"UnsupportedAlertType"和"SuppressedAlert"。|
+|assignedTo|String|警报的所有者。|
+|rbacGroupName|String|RBAC 设备组名称。|
+|mitreTechniques|String|Mitre Enterprise技术 ID。|
+|relatedUser|String|与特定警报相关的用户的详细信息。|
+|severity|枚举|警报的严重性。 可能的值包括："UnSpecified"、"Informational"、"Low"、"Medium"和"High"。|
+|状态|枚举|指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。|
+|classification|Nullable Enum|警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。|
+|确定|Nullable Enum|指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。|
+|“类别”|String|警报的类别。|
+|detectionSource|String|检测源。|
+|threatFamilyName|String|威胁系列。|
+|threatName|String|威胁名称。|
+|machineId|String|与 [警报关联的](machine.md) 计算机实体的 ID。|
+|computerDnsName|String|[计算机](machine.md) 完全限定的名称。|
+|aadTenantId|String|Azure Active Directory ID。|
+|一个|String|触发警报的检测器的 ID。|
+|comments|警报注释列表|Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。|
+|证据|警报证据列表|与警报相关的证据。 请参阅下面的示例。|
+|
 
 ### <a name="response-example-for-getting-single-alert"></a>获取单个警报的响应示例：
 

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6569a84dfe2e59eabeceb849296b883a436a939d5348f2bad2bda56e42f9dec9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f57a186c49b44d007d93cba6610865b5a4e7f47f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869681"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506486"
 ---
 # <a name="api-explorer"></a>API 资源管理器
 
@@ -32,8 +32,7 @@ ms.locfileid: "53869681"
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-
-Microsoft Defender for Endpoint API Explorer 是一款工具，可帮助你以交互方式浏览各种 Defender for Endpoint API。 
+Microsoft Defender for Endpoint API Explorer 是一款工具，可帮助你以交互方式浏览各种 Defender for Endpoint API。
 
 通过 API 资源管理器，可以轻松构造和执行 API 查询、测试和发送任何可用的 Defender for Endpoint API 终结点的请求。 使用 API 资源管理器执行操作或查找可能尚未通过用户界面提供的数据。
 
@@ -49,26 +48,26 @@ Microsoft Defender for Endpoint API Explorer 是一款工具，可帮助你以�
 
 ## <a name="access-api-explorer"></a>Access API 资源管理器
 
-从左侧导航菜单中，选择"合作伙伴 **& API API**  >  **资源管理器"。**
+从左侧导航菜单中，选择"合作伙伴 **& API** \> **资源管理器"。**
 
 ## <a name="supported-apis"></a>受支持的 API
 
 API 资源管理器支持 Defender for Endpoint 提供的所有 API。
-  
-API 文档中提供了受支持的 [API 列表](apis-intro.md)。 
+
+API 文档中提供了受支持的 [API 列表](apis-intro.md)。
 
 ## <a name="get-started-with-the-api-explorer"></a>API 资源管理器入门
 
-1. 在左窗格中，有一个可以使用的示例请求列表。 
-2. 按照链接操作，然后单击"**运行查询"。** 
+1. 在左窗格中，有一个可以使用的示例请求列表。
+2. 按照链接操作，然后单击"**运行查询"。**
 
 一些示例可能需要在 URL 中指定参数，例如 {machine- ID}。
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
 **我是否需要具有 API 令牌以使用 API 资源管理器？** <br>
 不需要访问 API 的凭据。 API 资源管理器在提出请求时使用 Defender for Endpoint 管理门户令牌。
 
 登录的用户身份验证凭据用于验证 API 资源管理器是否有权代表你访问数据。
 
-特定 API 请求根据 RBAC 权限受到限制。 例如，对"提交指示器"的请求仅限于安全管理员角色。 
+特定 API 请求根据 RBAC 权限受到限制。 例如，对"提交指示器"的请求仅限于安全管理员角色。

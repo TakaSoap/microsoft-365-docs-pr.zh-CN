@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 84a2cba9c2711be8812ee25d38c7c3eb19746e346e5c475270a42ff55c7645dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a31da45e56adc8838ed85df338e423070aac1a15
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873711"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507658"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -33,8 +33,7 @@ ms.locfileid: "53873711"
 > [!TIP]
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)。
 
-
-使用网络 [保护时](network-protection.md) ，可能会遇到问题，例如：
+本文提供了网络保护的疑难解答 [信息](network-protection.md)，例如：
 
 - 网络保护阻止安全网站 (误报) 
 - 网络保护无法阻止可疑或已知的恶意网站 (漏报) 
@@ -43,7 +42,7 @@ ms.locfileid: "53873711"
 
 1. 确认先决条件
 2. 使用审核模式测试规则
-3. 为指定的误报规则 (排除项) 
+3. 为指定规则添加排除 (用于误报) 
 4. 提交支持日志
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -79,7 +78,7 @@ ms.locfileid: "53873711"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-如果已使用演示网站和审核模式测试了功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender 安全](https://www.microsoft.com/wdsi/filesubmission)智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
+如果已使用演示网站和审核模式测试了该功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender](https://www.microsoft.com/wdsi/filesubmission)安全智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
 
 请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
 
@@ -122,12 +121,17 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 可以使用 PowerShell、注册表项或组策略Microsoft Endpoint Manager注册表项。 以下是一些可帮助的资源：
 - [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
-- [为客户端配置自定义Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [配置自定义客户端设置Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [使用组策略设置来管理Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>另请参阅
 
 - [网络保护](network-protection.md)
+
+- [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [网络保护功能评估](evaluate-network-protection.md)
+
 - [启用网络保护](enable-network-protection.md)
+
 - [在 Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)

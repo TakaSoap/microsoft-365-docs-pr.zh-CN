@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的警报队列
 ms.reviewer: ''
-description: 查看和管理警报中Microsoft 365 Defender
+description: 查看和管理警报中显示Microsoft 365 Defender
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: bd105f1f6c75ae084ce5b60e9585ef30be1058e2e1f9f1d4ad1ba8f3241f8d8e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794446"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507730"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的警报队列
 
@@ -37,15 +37,14 @@ ms.locfileid: "53794446"
 了解如何查看和管理队列，以便有效地调查在实体（如设备、文件或用户帐户）上看到的威胁。
 
 ## <a name="in-this-section"></a>本节内容
-主题 | 说明 
+
+主题|说明
 :---|:---
-[查看和组织警报队列](alerts-queue.md) | 显示网络中标记的警报列表。
-[管理警报](manage-alerts.md) | 了解如何管理警报（如更改其状态、将其分配给安全操作成员）以及查看警报历史记录。
-[调查警报](investigate-alerts.md)| 调查影响网络的警报，了解它们的含义以及如何解决它们。
-[调查文件](investigate-files.md)| 调查与特定警报、行为或事件关联的文件的详细信息。 
-[调查设备](investigate-machines.md)| 调查与特定警报、行为或事件关联的设备的详细信息。 
-[调查 IP 地址](investigate-ip.md) | 检查网络中设备与外部 Internet 协议与 IP 地址 () 通信。
-[调查域](investigate-domain.md) | 调查域以查看网络中设备和服务器是否一直与已知的恶意域通信。 
-[调查用户帐户](investigate-user.md) | 识别具有最活跃警报的用户帐户，并调查凭据可能遭到入侵的情况。  
-
-
+[查看和组织警报队列](alerts-queue.md)|显示网络中标记的警报列表。
+[管理警报](manage-alerts.md)|了解如何管理警报（如更改其状态、将其分配给安全操作成员）以及查看警报历史记录。
+[调查警报](investigate-alerts.md)|调查影响网络的警报，了解它们的含义以及如何解决它们。
+[调查文件](investigate-files.md)|调查与特定警报、行为或事件关联的文件的详细信息。
+[调查设备](investigate-machines.md)|调查与特定警报、行为或事件关联的设备的详细信息。
+[调查 IP 地址](investigate-ip.md)|检查网络中设备与外部 Internet 协议与 IP 地址 () 通信。
+[调查域](investigate-domain.md)|调查域，以查看网络中设备和服务器是否一直与已知的恶意域通信。
+[调查用户帐户](investigate-user.md)|识别具有最活跃警报的用户帐户，并调查凭据可能遭到入侵的情况。

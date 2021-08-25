@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1b121ca196ba1b416b0031e3a0a7a8516bc7299
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: b19b3c23716e7a9b1f78b82b3663271310603df8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256500"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508306"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>配置Microsoft 365 Defender将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -37,9 +37,9 @@ ms.locfileid: "58256500"
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
-2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅 >你的订阅>**资源>注册到 Microsoft.Insights**。
+2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>**资源>注册到 Microsoft.Insights。**
 
-3. 创建事件中心命名空间，转到"事件中心"> **添加** "，然后选择适合预期负载的定价层、吞吐量单位和自动提高。 有关详细信息，请参阅 [事件中心定价](https://azure.microsoft.com/pricing/details/event-hubs/)。  
+3. 创建事件中心命名空间，转到"事件中心"> **添加** "，然后选择适合预期负载的定价层、吞吐量单位和自动提高。 有关详细信息，请参阅 [事件中心定价](https://azure.microsoft.com/pricing/details/event-hubs/)。
 
 ### <a name="add-contributor-permissions"></a>添加参与者权限
 
@@ -47,9 +47,9 @@ ms.locfileid: "58256500"
 
 1. 将要登录的用户定义为Microsoft 365 Defender用户。
 
-2. 如果要连接到应用程序，将应用注册服务主体添加为读者，Azure 事件中心数据接收器 (此操作也可在资源组或订阅级别) 。 
+2. 如果要连接到应用程序，将应用注册服务主体添加为读者，Azure 事件中心数据接收器 (此操作也可在资源组或订阅级别) 。
 
-    转到事件 **中心命名空间>访问控制 (IAM) >添加并** 验证角色 **分配下**。
+    转到事件 **中心命名空间>访问控制 (IAM**) >添加并验证角色 **分配下**。
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
@@ -63,11 +63,11 @@ ms.locfileid: "58256500"
 
 5. 选择 **"将事件转发到 Azure 事件中心"。**
 
-6. 可以选择是希望将事件数据导出到单个事件中心，还是将每个事件表导出到事件中心命名空间中的不同事件中心。 
+6. 可以选择是希望将事件数据导出到单个事件中心，还是将每个事件表导出到事件中心命名空间中的不同事件中心。
 
 7. 若要将事件数据导出到单个事件中心，请输入事件中心 **名称和****事件中心资源 ID。**
 
-   若要获取事件 **中心资源 ID，** 请转到 [Azure](https://ms.portal.azure.com/)属性选项卡上的 Azure 事件中心命名空间页面>复制资源  >  ID **下的文本**：
+   若要获取 **事件中心资源 ID，** 请转到 Azure 属性选项卡上的 Azure [](https://ms.portal.azure.com/)事件中心命名空间页面>复制资源  >  ID **下的文本**：
 
    ![事件中心资源 Id1 的图像](../defender-endpoint/images/event-hub-resource-id.png)
 
@@ -91,27 +91,27 @@ ms.locfileid: "58256500"
 
 - Azure 事件中心中的每个事件中心消息都包含记录列表。
 
-- 每条记录都包含事件名称、Microsoft 365 Defender接收事件的时间、它所属的租户 (仅从租户) 获取事件，事件以 JSON 格式包含在名为 **"properties"** 的属性中。
+- 每条记录都包含事件名称、Microsoft 365 Defender接收事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
 
-- 有关事件架构Microsoft 365 Defender，请参阅高级[搜寻概述](advanced-hunting-overview.md)。
+- 有关事件架构Microsoft 365 Defender，请参阅[高级搜寻概述](advanced-hunting-overview.md)。
 
-- 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 
+- 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。
 
 ## <a name="data-types-mapping"></a>数据类型映射
 
 若要获取事件属性的数据类型，请执行下列操作：
 
-1. 登录到高级[Microsoft 365 Defender，](https://security.microsoft.com)然后转到高级[搜寻页面](https://security.microsoft.com/hunting-package)。
+1. 登录到["Microsoft 365 Defender"门户](https://security.microsoft.com)，然后转到"[高级搜寻"页面](https://security.microsoft.com/hunting-package)。
 
 2. 运行以下查询，获取每个事件的数据类型映射：
 
    ```kusto
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- 下面是设备信息事件的示例： 
+- 下面是设备信息事件的示例：
 
   ![事件中心资源 Id2 的图像](../defender-endpoint/images/machine-info-datatype-example.png)
 
@@ -119,6 +119,6 @@ ms.locfileid: "58256500"
 
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [Microsoft 365 Defender流式处理 API](streaming-api.md)
-- [将Microsoft 365 Defender流式传输至 Azure 存储帐户](streaming-api-storage.md)
+- [将Microsoft 365 Defender流式处理到 Azure 存储帐户](streaming-api-storage.md)
 - [Azure 事件中心文档](/azure/event-hubs/)
 - [解决连接问题 - Azure 事件中心](/azure/event-hubs/troubleshooting-guide)

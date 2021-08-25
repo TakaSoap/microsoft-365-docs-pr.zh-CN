@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: 了解如何在 Office 365 安全与合规中心中通过安全与合规中心中的 Power & Shell 脚本自动执行内容搜索任务，例如Office 365。
+description: 了解如何自动执行内容搜索任务，如使用安全与合规中心 PowerShell &和运行报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ca99a00c57de1c376ae3840324bd869abb73042
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: c49cc0da930d6502df2ae88652c3b9fb23c36d3f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58501975"
+ms.locfileid: "58508090"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 

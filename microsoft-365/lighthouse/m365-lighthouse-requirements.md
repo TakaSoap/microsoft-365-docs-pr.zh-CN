@@ -16,23 +16,23 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，获取使用托管服务提供商Microsoft 365 Lighthouse。
-ms.openlocfilehash: 1d2f2812e2f22060c2e401519f18ae8dc6f1959993ef7703fa1a9add69e9ae14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2247afb35e3b0e4757d7a6786b3a6a9027491e06
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847951"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507802"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse
 
 > [!NOTE]
-> 本文中所述的功能在预览版中可能会更改，并且仅对满足本文中列出的要求的合作伙伴可用。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中可能会更改，并且仅对满足本文中列出的要求的合作伙伴可用。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse是一个管理门户，可帮助托管服务提供商 (MSP) 为中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。  
+Microsoft 365 Lighthouse是一个管理门户，可帮助托管服务提供商 (MSP) 为中小型商业 (SMB 客户大规模保护和管理设备、数据和) 用户。  
 
-MSP 必须以间接经销商或直接计费合作伙伴云解决方案提供商 (云解决方案提供商计划) 注册，以使用Microsoft 365 Lighthouse。  
+MSP 必须以间接经销商或直接帐单合作伙伴云解决方案提供商 (云解决方案提供商计划) 注册，以使用 Lighthouse。  
 
-此外，每个 MSP 客户租户都必须Microsoft 365 Lighthouse满足以下要求，才有资格使用新租户： 
+此外，每个 MSP 客户租户都必须满足以下要求，才有资格使用 Lighthouse： 
  
 - MSP 的 (DAP) 委派管理员权限 
 - 至少一个Microsoft 365 商业高级版许可证 
@@ -42,12 +42,12 @@ MSP 必须以间接经销商或直接计费合作伙伴云解决方案提供商 
 
 若要在设备管理页面上查看客户租户设备，MSP 必须：    
 
-- 在 MEM Microsoft Endpoint Manager (注册) 。有关详细信息，请参阅在 Microsoft Intune[中注册设备](/mem/intune/enrollment/)。
-- 将合规性策略分配给所有客户设备。有关详细信息，请参阅 Create [a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy)。 
+- 在 MEM 中注册Microsoft Endpoint Manager (客户) 。有关详细信息，请参阅在 Microsoft Intune[中注册设备](/mem/intune/enrollment/)。
+- 将合规性策略分配给所有客户设备。有关详细信息，请参阅在策略[Microsoft Intune。](/mem/intune/protect/create-compliance-policy) 
 
 ## <a name="requirements-for-enabling-usermanagement"></a>启用用户管理的要求 
 
-若要使客户数据显示在用户管理页面上的报告（包括风险用户、多重身份验证和密码重置）中，客户租户必须具有 Azure Active Directory 高级版 P1 或更高版本的许可证。 Azure AD Premium P1包括在Microsoft 365 商业高级版。   
+若要使客户数据显示在用户管理页面上的报告（包括风险用户、多重身份验证和密码重置）中，客户租户必须具有 Azure Active Directory 高级版 P1 或更高版本的许可证。 Azure AD Premium P1包含在Microsoft 365 商业高级版。   
 
 ## <a name="requirements-for-enablingthreat-management"></a>启用威胁管理的要求 
 

@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何生成包含与电子数据展示事例关联的所有保留的信息的报告。
-ms.openlocfilehash: 70895e07b652054e27cb382267da003c99d2e7a2a1d6a6c0c557e0bbc25ce635
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a169290743c21c947edbb600f00b64a68d8cee2
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802488"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507610"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
 
@@ -41,7 +41,7 @@ ms.locfileid: "53802488"
 
 - 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤 1：连接安全与合规& PowerShell
+## <a name="step-1-connect-to-security--compliance-center-powershell"></a>步骤 1：连接到安全与合规中心 PowerShell
 
 第一步是为组织连接到安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
@@ -164,7 +164,7 @@ ms.locfileid: "53802488"
 
 ## <a name="more-information"></a>更多信息
 
-在运行本文中的脚本时创建的保留报告包含有关每个保留的以下信息。 如前所述，你必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关事例保留详细信息，请参阅 [电子数据展示事例](./get-started-core-ediscovery.md)。
+在您运行本文中的脚本时创建的保留报告包含有关每个保留的以下信息。 如前所述，你必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关事例保留详细信息，请参阅 [电子数据展示事例](./get-started-core-ediscovery.md)。
 
 - 保留的名称和与保留关联的电子数据展示案例的名称。
 
@@ -172,7 +172,7 @@ ms.locfileid: "53802488"
 
 - 是否启用或禁用保留。
 
-- 与保留关联的电子数据展示案例的成员。 案例成员可以查看或管理案例，具体取决于已分配电子数据展示权限。
+- 与保留关联的电子数据展示案例的成员。 案例成员可以查看或管理案例，具体取决于他们分配了电子数据展示权限。
 
 - 案例的创建时间和日期。
 

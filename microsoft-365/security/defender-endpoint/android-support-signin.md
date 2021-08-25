@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2ed53a3e8feb9531e4cb75bc9531718d33528870
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246453"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508270"
 ---
-# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint 问题疑难解答
+# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,9 +38,10 @@ ms.locfileid: "58246453"
 
 在载入期间，在设备上安装应用后，你可能会遇到登录问题。
 
-本文提供的解决方案可帮助解决登录问题。  
+本文提供的解决方案可帮助解决登录问题。
 
 ## <a name="sign-in-failed---unexpected-error"></a>登录失败 - 意外错误
+
 **登录失败：意外***错误，请稍后尝试*
 
 ![登录失败错误意外错误的图像](images/f9c3bad127d636c1f150d79814f35d4c.png)
@@ -55,7 +56,7 @@ ms.locfileid: "58246453"
 
 **解决方案：**
 
-从 Google Play[应用商店Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试
+从 Google Play 应用商店[Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试
 
 ## <a name="sign-in-failed---invalid-license"></a>登录失败 - 许可证无效
 
@@ -81,12 +82,11 @@ ms.locfileid: "58246453"
 
 **适用于：** 仅特定 OEM
 
--   **小米**
+- **小米**
 
 某些用户不会阻止 Defender for Android 终结点检测到的网络钓鱼和有害的 Web 威胁。 以下功能在这些设备上不起作用。
 
 ![报告不安全网站的图像](images/0c04975c74746a5cdb085e1d9386e713.png)
-
 
 **原因：**
 
@@ -102,39 +102,41 @@ ms.locfileid: "58246453"
 
 - 在后台运行时显示弹出窗口。
 
-
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>在某些 OEM 设备上载入期间，无法允许"永久保护"的权限
 
 **适用于：** 仅特定 OEM 设备。
 
--   **使用 Android 11 的一位小马** 
+- **使用 Android 11 的一位小马**
 
 作为应用载入的一部分，Defender 应用会要求在设备上使用电池优化/永久保护权限，选择"允许"将返回无法设置权限的错误。 它只影响最后一个称为"永久保护"的权限。 
- 
-**原因：** Xiomi 更改了 Android 11 中的电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
 
-**解决方案：** 我们正在与 OEM 合作，通过应用载入屏幕查找启用此权限的解决方案。 在解决此问题时，我们将更新文档。
+**原因：**
+
+Xiomi 更改了 Android 11 中的电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
+
+**解决方案：**
+
+我们正在与 OEM 合作，通过应用载入屏幕查找启用此权限的解决方案。 在解决此问题时，我们将更新文档。
 用户可以按照以下步骤从设备设置启用相同的权限： 
 
 1. 转到 **设置** 上的"设置"。
-   
+
 2. 搜索并选择电池 **优化**。
-   
+
    ![搜索并选择"电池电池"。](images/search-battery-optimisation.png)
 
 3. 在 **"特殊应用访问"中**，选择 **"电池优化"。**
-   
+
    ![在"特殊应用访问"中，选择"Battery Battery"。](images/special-app-access.png)
 
 4. 将下拉列表更改为显示 **所有应用**。
 
-   ![将下拉列表更改为显示"所有应用"。](images/show-all-apps-2.png)
+   ![将下拉列表更改为显示"所有应用"的第一步。](images/show-all-apps-2.png)
 
-   ![将下拉列表更改为显示"所有应用"。](images/show-all-apps-1.png)
+   ![第二步将下拉列表更改为显示"所有应用"。](images/show-all-apps-1.png)
 
 5. 找到"Microsoft Defender 终结点"，然后选择 **"不优化"。**
 
    ![找到"Microsoft Defender 终结点"，然后选择"不开发"。](images/select-dont-optimise.png)
-
 
 返回到 Microsoft Defender 终结点载入屏幕，选择" **允许"，** 你将重定向到仪表板屏幕。

@@ -11,35 +11,35 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: In-Place保留、诉讼保留Microsoft 365保留策略，您可以保留邮箱内容以满足法规遵从性要求和电子数据展示要求。
-ms.openlocfilehash: 80481a5b7c85167742e79c86c6d60e52f80aa0e4b1dd9b128e7ce188f5ddf09a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: In-Place保留、诉讼保留Microsoft 365保留策略，您可以保留邮箱内容以满足法规遵从性要求以及电子数据展示要求。
+ms.openlocfilehash: 4d72233a6026ac493de1cd551c0b4908d200815f
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891807"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508198"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   
-In-Place安全 & 合规中心) 中创建的 Microsoft 365 [ (](./retention.md)保留策略、诉讼保留和 Microsoft 365 保留策略允许您保留邮箱内容，以满足法规合规性和电子数据展示要求。 默认情况下，有关直接在邮件的"收件人"和"抄送"字段中寻址的收件人的信息包含在所有邮件中。 但是，您的组织可能需要能够搜索和重现有关邮件所有收件人的详细信息。 这包括：
+通过 Microsoft 365 合规中心) [ (](./retention.md)中创建Microsoft 365保留策略Microsoft 365保留策略，您可以保留邮箱内容以满足法规遵从性要求和电子数据展示要求。 默认情况下，有关直接在邮件的"收件人"和"抄送"字段中寻址的收件人的信息包含在所有邮件中。 但是，您的组织可能需要能够搜索和重现有关邮件所有收件人的详细信息。 这包括：
   
 - **使用邮件的"Bcc"字段寻址的收件人：** Bcc 收件人存储在发件人邮箱中的邮件中，但不包含在发送给收件人的邮件头中。 
     
 - **展开的通讯组收件人：** 接收邮件的收件人，因为他们是在"收件人"、"抄送"或"密件抄送"字段中发送邮件的通讯组的成员。 
     
-Exchange Online 2013 Exchange Server 2013 (累积更新 7 及更高版本) 有关"Bcc"和"展开的通讯组"收件人的信息。 您可以使用 Exchange 管理中心 (EAC) 中的 In-Place 电子数据展示搜索或安全与合规中心&内容搜索来搜索此信息。 
+Exchange Online 2013 Exchange Server 2013 (累积更新 7 及更高版本) 保留有关"Bcc"和"展开的通讯组"收件人的信息。 可以使用电子数据展示工具在数据展示中搜索Microsoft 365 合规中心。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>如何保留密件抄送收件人和展开的通讯组收件人
 
 如前所述，密件收件人的信息与邮件存储在发件人邮箱中。 此信息已编制索引，可用于电子数据展示搜索和保留。 
   
-将邮箱放置在就地保留或诉讼保留后，保存展开的通讯组收件人相关信息和邮件。 在Office 365中，在将保留策略Microsoft 365邮箱时，也会存储此信息。 在发送消息时，确定通讯组成员身份。 发送邮件后，更改组成员不影响与邮件一起存储的展开的收件人列表。 
+将邮箱放置在就地保留或诉讼保留后，保存展开的通讯组收件人相关信息和邮件。 此外Office 365，在将保留策略应用于Microsoft 365也会存储此信息。 在发送消息时，确定通讯组成员身份。 发送邮件后，更改组成员不影响与邮件一起存储的展开的收件人列表。 
   
 | 有关信息… | 存储在... | 默认情况下存储？ | 可访问… |
 |:-----|:-----|:-----|:-----|
 |"收件人"和"抄送"收件人  <br/> |发件人和收件人邮箱中的邮件属性。  <br/> |是  <br/> |发件人、收件人和合规部主管  <br/> |
 |密件抄送收件人  <br/> |发件人邮箱中的邮件属性。  <br/> |是  <br/> |发件人和合规部主管  <br/> |
-|展开的通讯组收件人  <br/> |发件人邮箱中的邮件属性。  <br/> |否。 展开的通讯组收件人信息存储在将邮箱置于"In-Place保留"或"诉讼保留"中，或分配给保留Microsoft 365策略。  <br/> |合规部主管  <br/> |
+|展开的通讯组收件人  <br/> |发件人邮箱中的邮件属性。  <br/> |否。 展开的通讯组收件人信息存储在将邮箱置于保留或诉讼In-Place，或分配给保留策略Microsoft 365邮箱。  <br/> |合规部主管  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>搜索发送给密件抄送以及展开的通讯组收件人的邮件
 
@@ -58,7 +58,7 @@ Exchange Online 2013 Exchange Server 2013 (累积更新 7 及更高版本) 有�
    
 方案 2：Bob 发送一封电子邮件给 John（收件人/抄送）和 Jack（通过通讯组直接或间接密件抄送）。下表显示了电子数据展示搜索结果。
   
-| 当搜索… | 对于发送的邮件… | 结果包含邮件？ | 备注 |
+| 当搜索… | 对于发送的邮件… | 结果包含邮件？ | 注释 |
 |:-----|:-----|:-----|:-----|
 |Bob 的邮箱  <br/> |收件人/抄送：John  <br/> |是  <br/> |显示一个表明 Jack 被密件抄送的指示。  <br/> |
 |Bob 的邮箱  <br/> |密件抄送：Jack  <br/> |是  <br/> |显示一个表明 Jack 被密件抄送的指示。  <br/> |
@@ -72,7 +72,7 @@ Exchange Online 2013 Exchange Server 2013 (累积更新 7 及更高版本) 有�
 
  **问：何时何地存储密件抄送收件人信息？**
   
-答： 默认情况下，在发件人邮箱的原始邮件中保留"Bcc"收件人信息。 如果"Bcc"收件人是通讯组，则仅在发件人的邮箱被保留或分配给某个邮件保留策略时，才能扩展Microsoft 365成员身份。
+答： 默认情况下，在发件人邮箱中的原始邮件中保留"Bcc"收件人信息。 如果"Bcc"收件人是通讯组，则仅在发件人的邮箱被保留或分配到某个保留策略时，才能扩展Microsoft 365成员身份。
   
  **问：何时何地存储展开的通讯组收件人列表？**
   
@@ -84,7 +84,7 @@ Exchange Online 2013 Exchange Server 2013 (累积更新 7 及更高版本) 有�
   
  **Q.如何确保始终保留展开的通讯组收件人？**
   
-答： 若要确保展开的通讯组的成员始终与邮件一起保留，请[](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold)保留所有邮箱或创建组织范围内的Microsoft 365策略。 
+答： 为了确保展开的通讯组成员始终与邮件一起保留，请保留[](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold)所有邮箱或创建组织范围内的Microsoft 365策略。 
   
  **问：支持哪些类型的组？**
   

@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b81752cbc77f4be2025d0f4d90699cbfd1facbf0
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1ba3c958c4a532976c8cb3c878ea4d116cf9a94c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248003"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507862"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -60,12 +60,12 @@ ms.locfileid: "58248003"
 
 - [PowerShell](#powershell)
 - [移动设备管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 - [组策略](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，****右键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -90,7 +90,7 @@ ms.locfileid: "58248003"
 
 2. 创建或编辑 [终结点保护配置文件](/mem/intune/protect/endpoint-protection-configure)
 
-3. 在 **配置文件设置** 配置策略下，转到Microsoft Defender 攻击防护  >  **网络筛选** 网络保护  >    >  **启用** 或仅 **审核"**
+3. 在 **配置文件设置** 配置策略"下，转到"Microsoft Defender 攻击防护  >  **网络筛选**  >  **""** 仅启用或  >  审核 **"**
 
 ### <a name="group-policy"></a>组策略
 
@@ -107,7 +107,7 @@ ms.locfileid: "58248003"
 3. 展开树以 **Windows Exploit** Guard  >  **网络Microsoft Defender 防病毒Windows Defender**  >    >  **组件**。
 
    > [!NOTE]
-   > 在旧版 Windows，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
     - **阻止** - 用户无法访问恶意 IP 地址和域
@@ -131,5 +131,9 @@ ms.locfileid: "58248003"
 ## <a name="see-also"></a>另请参阅
 
 - [网络保护](network-protection.md)
+
+- [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [网络保护功能评估](evaluate-network-protection.md)
+
 - [网络保护疑难解答](troubleshoot-np.md)

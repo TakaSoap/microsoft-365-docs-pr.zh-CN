@@ -188,6 +188,8 @@
               href: m365d-autoir-results.md
             - name: 解决误报和漏报
               href: m365d-autoir-report-false-positives-negatives.md
+            - name: 使用 Power Automate
+              href: use-power-automate.md
         - name: 高级搜寻
           items:
             - name: 高级搜寻概述

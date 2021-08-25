@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/28/2018
 ms.technology: mde
-ms.openlocfilehash: 0970314509efbcfad79d7f9f52f5ae3605f3d8fe538a18b142340fe6a2cf8d1f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d290352006b09be0d15a5df55533500db2fadb0
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857819"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507766"
 ---
 # <a name="assign-user-access-to-microsoft-defender-security-center"></a>向用户分配Microsoft Defender 安全中心
 
@@ -35,19 +35,18 @@ ms.locfileid: "53857819"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
 Defender for Endpoint 支持两种权限管理方法：
 
 - **基本权限管理**：将权限设置为完全访问或只读。
-- 基于角色的访问控制 **(RBAC) ：** 通过定义角色、将 Azure AD 用户组分配给角色以及向用户组授予对设备组的访问权限来设置粒度权限。 有关 RBAC 详细信息，请参阅使用基于角色的访问控制管理 [门户访问](rbac.md)。
+- 基于角色的访问控制 **(RBAC) ：** 通过定义角色、将 Azure AD 用户组分配给角色并授予用户组对设备组的访问权限来设置粒度权限。 有关 RBAC 详细信息，请参阅使用基于角色的访问控制管理 [门户访问](rbac.md)。
 
 > [!NOTE]
 > 如果已分配基本权限，可以随时切换到 RBAC。 进行切换之前，请考虑以下事项：
-> 
-> - 具有完全访问权限的用户 (Azure AD) 中分配了全局管理员或安全管理员目录角色的用户将自动分配有默认的 Defender for Endpoint 管理员角色，该角色也具有完全访问权限。 切换到 RBAC 后，可以将其他 Azure AD 用户组分配给 Defender for Endpoint 管理员角色。  只有分配到 Defender for Endpoint 管理员角色的用户才能使用 RBAC 管理权限。 
-> - 具有只读访问权限的用户 (安全读者) 分配角色之前，将失去对门户的访问权限。 请注意，在 RBAC 下只能为 Azure AD 用户组分配角色。
+>
+> - 具有完全访问权限 (Azure AD) 中分配了全局管理员或安全管理员目录角色的用户将自动分配有默认的 Defender for Endpoint 管理员角色，该角色也具有完全访问权限。 切换到 RBAC 后，可以将其他 Azure AD 用户组分配给 Defender for Endpoint 管理员角色。 只有分配到 Defender for Endpoint 管理员角色的用户才能使用 RBAC 管理权限。 
+> - 具有只读访问权限的用户 (安全) 用户分配角色之前，将失去对门户的访问权限。 请注意，在 RBAC 下只能为 Azure AD 用户组分配角色。
 > - 切换到 RBAC 后，将无法切换回使用基本权限管理。
 
 ## <a name="related-topics"></a>相关主题

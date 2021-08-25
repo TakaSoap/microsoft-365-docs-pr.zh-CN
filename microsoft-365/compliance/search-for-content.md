@@ -11,12 +11,12 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 description: 使用 Microsoft 365 合规中心 中的内容搜索电子数据展示工具可快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档以及 Skype for Business 中的即时消息对话。
-ms.openlocfilehash: 6161b84fa04b461835777ba769129b9cc32f5ab7
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377961"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508294"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>使用内容搜索工具搜索内容
 
@@ -36,11 +36,11 @@ ms.locfileid: "58377961"
 
 - [运行 ID 列表搜索](csv-file-for-an-id-list-content-search.md) 以搜索特定电子邮件
 
-- [搜索云中本地](search-cloud-based-mailboxes-for-on-premises-users.md)用户的基于云的Microsoft 365
+- [在基于云的邮箱中](search-cloud-based-mailboxes-for-on-premises-users.md)搜索本地Microsoft 365
 
 - [查看搜索结果](view-keyword-statistics-for-content-search.md) 的关键字统计信息，然后在必要时优化查询
 
-- [搜索组织已导入](use-content-search-to-search-third-party-data-that-was-imported.md)到网站的第三方Microsoft 365
+- [搜索组织已导入](use-content-search-to-search-third-party-data-that-was-imported.md)到数据的第三方Microsoft 365
 
 - [重试内容搜索](retry-failed-content-search.md) 以解决内容位置错误
 
@@ -72,11 +72,11 @@ ms.locfileid: "58377961"
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>将脚本用于高级方案
 
-有时，您必须执行更高级、更复杂且重复的内容搜索任务。 在这些情况下，在安全与合规中心内使用 PowerShell 命令&起来。 为了帮助简化这一过程，我们创建了多个安全与合规& PowerShell 脚本，以帮助你完成复杂的内容搜索相关任务。
+有时，您必须执行更高级、更复杂且重复的内容搜索任务。 在这些情况下，使用安全与合规中心 PowerShell 中的命令&更快捷。 为了帮助简化这一过程，我们创建了多个安全与合规& PowerShell 脚本，以帮助你完成复杂的内容搜索相关任务。
 
-- [当您确信对](use-content-search-for-targeted-collections.md) 案例做出响应 (位于该文件夹中时，搜索特定邮箱和网站文件夹) 称为 *目标集合的邮箱和网站文件夹
+- [当您确信对](use-content-search-for-targeted-collections.md) 案例做出响应的项目位于该文件夹中时 (特定邮箱和网站文件夹) 称为 *目标集合"
 
-- [搜索邮箱并OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)位置搜索用户列表
+- [搜索邮箱OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)搜索用户列表的位置
 
 - [创建、报告并删除多个搜索](create-report-on-and-delete-multiple-content-searches.md) ，以快速高效地标识和剔除搜索数据
 

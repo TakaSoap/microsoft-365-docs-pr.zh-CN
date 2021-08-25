@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse使用基线部署标准租户配置。
-ms.openlocfilehash: 5eea1deae1c8cf56315e121baa29273fc98feca8
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 5dc1f7da329ab1630d857ee337048a47ad06c9e9
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365197"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507934"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>使用基线部署标准租户配置的概述 
 
@@ -30,15 +30,15 @@ ms.locfileid: "58365197"
 
 Microsoft 365 Lighthouse基线提供了一种可重复且可扩展的方法，可让你跨多个客户租户Microsoft 365和管理安全设置。 基线还通过保护用户、设备和数据的配置帮助监视核心安全策略和租户合规性标准。
 
-旨在帮助合作伙伴按自己的节奏实现客户采用安全性，Microsoft 365 Lighthouse为服务提供一组标准基线参数和预定义Microsoft 365配置。 这些安全配置可帮助衡量租户Microsoft 365安全性和合规性进度。
+为了帮助客户按自己的节奏采用安全性，Lighthouse 提供了一组标准的基线参数和预定义的配置，Microsoft 365服务。 这些安全配置可帮助衡量租户Microsoft 365安全性和合规性进度。
 
-可以从内部查看默认基线及其部署Microsoft 365 Lighthouse。 若要将基线应用于租户，请选择左侧导航 **窗格中的** "租户"，然后选择租户。 接下来，转到"部署 **计划"** 选项卡，实现所需的基线。
+可以从 Lighthouse 内查看默认基线及其部署步骤。 若要将基线应用于租户，请选择左侧导航 **窗格中的** "租户"，然后选择租户。 接下来，转到"部署 **计划"** 选项卡，实现所需的基线。
 
 ## <a name="standard-baseline-security-templates"></a>标准基线安全模板
 
-Microsoft 365 Lighthouse工作负载的标准基线配置旨在帮助所有托管租户达到可接受的安全范围和合规性状态。
+安全工作负载的 Lighthouse 标准基线配置旨在帮助所有托管租户达到可接受的安全范围和合规性状态。
 
-下表中的基线配置是标准配置，Microsoft 365 Lighthouse默认基线。<br><br>
+下表中的基线配置与 Lighthouse 默认基线一起采用标准配置。<br><br>
 
 | 基线配置 | 说明 |
 |--|--|

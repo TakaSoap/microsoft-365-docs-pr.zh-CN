@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: 40addc161b40a4b9068fbe0c3041078086d21c6a
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503127"
+ms.locfileid: "58508186"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -172,7 +172,7 @@ ms.locfileid: "58503127"
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>步骤 7：永久删除溢出的数据
 
-使用在步骤 6 中收集和准备的邮箱位置和在步骤 3 中创建和优化的搜索查询来查找包含泄漏数据的电子邮件，现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是组织管理角色组的成员或分配有"搜索和清除"管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](./assign-ediscovery-permissions.md)。
+使用在步骤 6 中收集和准备的邮箱位置和在步骤 3 中创建和优化的搜索查询来查找包含泄漏数据的电子邮件，现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是组织管理角色组的成员或分配有"搜索和清除"管理角色。 有关向角色组添加用户的信息，请参阅分配 [电子数据展示权限](./assign-ediscovery-permissions.md)。
 
 若要删除溢出的邮件，请参阅搜索 [和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。
 

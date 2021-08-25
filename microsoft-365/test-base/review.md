@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b70a2b9446d845f08ea5f309d4c1f1900d6f882e0f1da1e56f301537145dcd11
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8763d07db48f86a1c4224fc6bde4d992ef6d3701
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804455"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507550"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>步骤 6：查看选择以创建程序包。
 
@@ -31,7 +31,7 @@ ms.locfileid: "53804455"
 
     :::image type="content" alt-text="查看验证。" source="Media/validation.png" lightbox="Media/validation.png":::
 
-3. 这会将程序包载入测试基础环境。 如果成功创建程序包，将触发用于验证是否可以在 Azure 上成功执行程序包的自动测试。
+3. 这会将程序包载入测试基础环境。 如果成功创建程序包，将触发一个自动测试，用于验证是否可以在 Azure 上成功执行程序包。
 
     ![成功结果](Media/successful.png)
 
@@ -44,9 +44,9 @@ ms.locfileid: "53804455"
 
       :::image type="content" alt-text="用于管理程序包的图像。" source="Media/managepackages.png" lightbox="Media/managepackages.png":::
 
-    - 对于成功测试，可以通过"测试摘要"、"安全更新结果"和"功能更新结果"页面（通常在上传后几天开始）按计划间隔查看其结果。 
-
-    - 测试失败时，需要上传新程序包。
+    - 为了成功进行测试，可以按计划间隔（通常在上传后几天开始）通过"测试摘要"、"安全更新结果"和"**功能** 更新结果"页面查看测试结果。
+  
+    - 测试失败时，需要上传新程序包。 
 
       可以从"**安全更新结果"和**"功能更新结果"页下载测试日志以 **进一步分析**。
 
@@ -57,4 +57,4 @@ ms.locfileid: "53804455"
 通过下面的链接发现我们的内容指南。
 
 > [!div class="nextstepaction"]
-> [下一步](contentguideline.md)
+> [后续步骤](contentguideline.md)

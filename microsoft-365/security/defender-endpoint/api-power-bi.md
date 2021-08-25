@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint API 到 Power BI
+title: Microsoft Defender for Endpoint API 与 Power BI
 ms.reviewer: ''
 description: 在 Microsoft Defender for Endpoint API (BI) 报告。
 keywords: api， 受支持的 api， Power BI， 报告
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 19ef2336983f315af5731fc1cf166ffef4a014bd5c9ddcb660e8cb90ef040e03
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e64ccef09af6a8ab9ff3f798a0754a605a7f122
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847680"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507742"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>使用自定义报告Power BI
 
@@ -39,7 +39,7 @@ ms.locfileid: "53847680"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-在此部分中，你将了解在 Defender for Endpoint API Power BI创建一个报告。
+在此部分中，你将了解在 Defender Power BI API 顶部创建一个报告。
 
 第一个示例演示如何将Power BI高级搜寻 API，第二个示例演示了与 OData API（如计算机操作或警报）的连接。
 
@@ -47,7 +47,7 @@ ms.locfileid: "53847680"
 
 - 打开 Microsoft Power BI
 
-- 单击 **"获取**  >  **数据空白查询"**
+- 单击 **"获取** \> **数据空白查询"**
 
   ![创建空白查询的图像](images/power-bi-create-blank-query.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "53847680"
 
     ![编辑凭据的图像0](images/power-bi-edit-credentials.png)
 
-- 选择 **"组织**  >  **帐户""登录"**
+- 选择 **"组织** \> **帐户""登录"**
 
     ![集凭据的图像1](images/power-bi-set-credentials-organizational.png)
 

@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: 使用安全与合规中心&电子数据Office 365管理组织的法律调查。
-ms.openlocfilehash: f422695b8d5aea05442cf4e17bf58c472caa3c54a0e0624572438bbc91472480
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 在组织中使用电子数据展示Microsoft 365 合规中心管理组织的法律调查。
+ms.openlocfilehash: 9eb41a67ae4ddfd39e1d40219861e0bd279fc7b8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856051"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507670"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>在 Microsoft 365 中管理法律调查
 
-组织有很多理由对涉及组织中特定主管或其他员工的法律案件作出响应。 这可能涉及快速查找和保留电子邮件、文档、即时消息对话以及用户用于其日常工作任务的其他内容位置中的进一步调查特定信息。 可以使用安全与合规中心中的电子数据展示案例工具执行这些活动以及许多其他类似的活动。
+组织有很多理由对涉及组织中特定主管或其他员工的法律案件作出响应。 这可能涉及快速查找和保留电子邮件、文档、即时消息对话以及用户用于其日常工作任务的其他内容位置中的进一步调查特定信息。 可以使用安全与合规中心中的电子数据展示案件集工具执行这些和其他许多类似活动。
   
 **想要了解 Microsoft 如何管理其电子数据展示调查？** 可 [下载以下技术](https://go.microsoft.com/fwlink/?linkid=852161) 白皮书，说明如何使用相同的搜索和调查工具来管理内部电子数据展示工作流。
 
@@ -44,11 +44,11 @@ ms.locfileid: "53856051"
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>将脚本用于高级方案
 
-与上一部分列出适用于内容搜索方案的脚本一样，我们还创建了一些安全与合规中心 PowerShell 脚本&帮助您管理电子数据展示事例。
+与列出内容搜索方案的脚本的上一部分类似，我们还创建了一些安全 & 合规中心 PowerShell 脚本，以帮助你管理电子数据展示事例。
   
 - [创建电子数据展示保留](create-a-report-on-holds-in-ediscovery-cases.md) 报告，其中包含有关组织中与电子数据展示事例关联的所有保留的信息。
 
-- [将用户OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)邮箱和邮箱位置添加到电子数据展示保留中。
+- [将用户OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)邮箱和邮箱位置添加到电子数据展示保留。
   
 ## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>使用 Microsoft 365 中的 Advanced eDiscovery 解决方案管理法律Microsoft 365
 
@@ -56,11 +56,11 @@ Advanced eDiscovery解决方案Microsoft 365中现有的电子数据展示和分
 
 Advanced eDiscovery组织或组织需要 E5 Microsoft 365 Office 365订阅。 有关许可详细信息，[请参阅设置](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)Advanced eDiscovery。
 
-下面简要概述了 Advanced eDiscovery 中的内置Advanced eDiscovery。 有关详细信息，请参阅管理[Advanced eDiscovery工作流](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
+下面简要概述了 Advanced eDiscovery 中的内置工作流。 有关详细信息，请参阅管理[Advanced eDiscovery工作流](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
 
 - [创建一个](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) 案例以开始。
 
-- [通过将保管](managing-custodians.md)人添加到案例，并合法保留其邮箱中的内容、OneDrive帐户和Microsoft Teams他们的成员，来管理保管人。
+- [通过将保管](managing-custodians.md)人添加到案例并合法保留其邮箱中的内容、OneDrive帐户和Microsoft Teams他们的成员来管理保管人。
 
 - [通过自动](managing-custodian-communications.md) 执行合法保留通知流程，管理与保管人的通信。
 

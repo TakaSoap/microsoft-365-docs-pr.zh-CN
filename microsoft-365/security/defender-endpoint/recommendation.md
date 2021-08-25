@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bc00136b3ca404efc2a39eb8cf7bac6dcbc84d2e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502023"
+ms.locfileid: "58507682"
 ---
 # <a name="recommendation-resource-type"></a>建议资源类型
 
@@ -36,41 +36,51 @@ ms.locfileid: "58502023"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>方法
-方法 |返回类型 |说明
-:---|:---|:---
-[列出所有建议](get-all-recommendations.md) | 建议集合 | 检索影响组织的所有安全建议的列表
-[按 Id 获取建议](get-recommendation-by-id.md) | 建议 | 按 ID 检索安全建议
-[获取建议软件](list-recommendation-software.md)| [软件](software.md) | 检索与特定软件相关的安全建议
-[获取建议设备](get-recommendation-machines.md)|MachineRef 集合 | 检索与安全建议关联的设备列表
-[获取建议漏洞](get-recommendation-vulnerabilities.md) | [漏洞](vulnerability.md) 集合 | 检索与安全建议关联的漏洞列表
 
+<br>
+
+****
+
+|方法|返回类型|说明|
+|---|---|---|
+|[列出所有建议](get-all-recommendations.md)|建议集合|检索影响组织的所有安全建议的列表|
+|[按 Id 获取建议](get-recommendation-by-id.md)|建议|按 ID 检索安全建议|
+|[获取建议软件](list-recommendation-software.md)|[软件](software.md)|检索与特定软件相关的安全建议|
+|[获取建议设备](get-recommendation-machines.md)|MachineRef 集合|检索与安全建议关联的设备列表|
+|[获取建议漏洞](get-recommendation-vulnerabilities.md)|[漏洞](vulnerability.md) 集合|检索与安全建议关联的漏洞列表|
+|
 
 ## <a name="properties"></a>属性
-属性 |   类型   |   说明
-:---|:---|:---
-id | String | 建议 ID
-productName | String | 相关软件名称  
-recommendationName | String | 建议名称
-漏洞 | 长型 | 发现的漏洞数量
-供应商 | String | 相关供应商名称
-recommendedVersion | String | 建议版本
-recommendedProgram | String | 建议的程序
-recommendedVendor | String | 推荐供应商
-recommendationCategory | String | 建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityControls"
-subCategory | String | 建议子类别
-severityScore | 双精度 | 配置对组织的 Microsoft 设备安全分数的潜在影响 (1-10) 
-publicExploit | Boolean | 公共攻击可用 
-activeAlert | Boolean | 活动警报与此建议关联
-associatedThreats | String collection | 威胁分析报告与此建议关联
-remediationType | String | 修正类型。 可能的值是："ConfigurationChange"、"Update"、"Upgrade"、"Uninstall"
-状态 | 枚举 | 建议例外状态。 可能的值是："Active"和"Exception"
-configScoreImpact | 双精度 | Microsoft 设备影响安全分数
-exposureImpact | 双精度 | 曝光分数影响
-totalMachineCount | 长型 | 已安装设备的数量
-exposedMachinesCount | 长型 | 向漏洞公开的已安装设备的数量
-nonProductivityImpactedAssets | 长型 | 不受影响的设备数量  
-relatedComponent | String |  相关软件组件
+
+<br>
+
+****
+
+|属性|类型|说明|
+|---|---|---|
+|id|String|建议 ID|
+|productName|String|相关软件名称|
+|recommendationName|String|建议名称|
+|漏洞|长型|发现的漏洞数量|
+|供应商|String|相关供应商名称|
+|recommendedVersion|String|建议版本|
+|recommendedProgram|String|建议的程序|
+|recommendedVendor|String|推荐供应商|
+|recommendationCategory|String|建议类别。 可能的值包括："Accounts"、"Application"、"Network"、"OS"、"SecurityControls"|
+|subCategory|String|建议子类别|
+|severityScore|双精度|配置对组织的 Microsoft 设备安全分数的潜在影响 (1-10) |
+|publicExploit|Boolean|公共攻击可用|
+|activeAlert|Boolean|活动警报与此建议关联|
+|associatedThreats|String collection|威胁分析报告与此建议关联|
+|remediationType|String|修正类型。 可能的值是："ConfigurationChange"、"Update"、"Upgrade"、"Uninstall"|
+|状态|枚举|建议例外状态。 可能的值是："Active"和"Exception"|
+|configScoreImpact|双精度|Microsoft 设备影响安全分数|
+|exposureImpact|双精度|曝光分数影响|
+|totalMachineCount|长型|已安装设备的数量|
+|exposedMachinesCount|长型|向漏洞公开的已安装设备的数量|
+|nonProductivityImpactedAssets|长型|不受影响的设备数量|
+|relatedComponent|String|相关软件组件|
+|

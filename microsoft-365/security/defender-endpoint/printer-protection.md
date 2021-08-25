@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 5e1d402442b2e8fe01b55cf3d3e07858d9d592dd
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399739"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507718"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -134,7 +134,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>在 Microsoft Defender 终结点门户中查看设备控制打印机保护数据
 
-安全[Microsoft 365显示](https://security.microsoft.com)上面的设备控制打印机保护策略阻止的打印。
+安全[Microsoft 365显示](https://security.microsoft.com)上述设备控制打印机保护策略阻止的打印。
 
 ```kusto
 DeviceEvents
@@ -149,3 +149,36 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高级搜寻":::
+ 
+ 可以使用 PnP 事件查找组织中使用的 USB 打印机：
+ 
+```kusto
+//find the USB Printer VID/PID
+DeviceEvents
+| where ActionType == "PnpDeviceConnected"
+| extend parsed=parse_json(AdditionalFields)
+| extend DeviceDescription = tostring(parsed.DeviceDescription) 
+| extend PrinterDeviceId = tostring(parsed.DeviceId) 
+| extend VID_PID_Array = split(split(PrinterDeviceId, "\\")[1], "&")
+| extend VID_PID = replace_string(strcat(VID_PID_Array[0], '/', VID_PID_Array[1]), 'VID_', '')
+| extend VID_PID = replace_string(VID_PID, 'PID_', '')
+| extend ClassId = tostring(parsed.ClassId) 
+| extend VendorIds = tostring(parsed.VendorIds) 
+| where DeviceDescription == 'USB Printing Support'
+| project Timestamp , DeviceId, DeviceName, ActionType, DeviceDescription, VID_PID, ClassId, PrinterDeviceId, VendorIds, parsed
+| order by Timestamp desc
+```
+
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高级搜寻":::
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 

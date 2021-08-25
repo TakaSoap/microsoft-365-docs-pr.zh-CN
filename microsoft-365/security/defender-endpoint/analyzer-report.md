@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c2758fd51d88be2447ae6ea63ca9ff3f7349ca2f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 4027d31cd66a783b6bb83742912f94a3a017c74a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247269"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508066"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>了解客户端分析器 HTML 报告
 
@@ -40,17 +40,14 @@ ms.locfileid: "58247269"
 
 ![客户端分析器结果的图像](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
--   顶部列出了脚本版本和脚本运行时，仅供参考
+- 顶部列出了脚本版本和脚本运行时，仅供参考
+- " **设备信息** "部分提供用于唯一标识运行分析器的设备的基本操作系统和设备标识符。
+- 终结点 **安全详细信息** 提供有关与终结点相关的进程的 Microsoft Defender 的常规信息，Microsoft Defender 防病毒和传感器进程。 如果重要进程未如预期联机，则颜色将更改为红色。
 
--   " **设备信息** "部分提供用于唯一标识运行分析器的设备的基本操作系统和设备标识符。
+  ![客户端分析器详细结果的图像](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   终结点 **安全详细信息** 提供有关与终结点相关的进程的 Microsoft Defender 的常规信息，Microsoft Defender 防病毒和传感器进程。 如果重要进程未如预期联机，则颜色将更改为红色。
-
-![客户端分析器详细结果的图像](images/85f56004dc6bd1679c3d2c063e36cb80.png)
-
--   On **Check Results Summary** you will have an aggregated count for error， warning， or informational events detected by the analyzer.
-
--   On the **Detailed Results** you will see a list (sorted by severity) with the results and the guidance based on the observations made by the analyzer.
+- On **Check Results Summary** you will have an aggregated count for error， warning， or informational events detected by the analyzer.
+- On the **Detailed Results** you will see a list (sorted by severity) with the results and the guidance based on the observations made by the analyzer.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>向 Microsoft 打开支持票证并包括分析工具结果
 

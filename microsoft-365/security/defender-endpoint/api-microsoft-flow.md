@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: adfe076160ca9499cace6807a0f5697a3055c1534bf4d88d57fd9337a130a575
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44db65f08c84cdcce819773958881320d7c99705
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834324"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58507778"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
 
@@ -37,12 +37,12 @@ ms.locfileid: "53834324"
 
 自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
 
-Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
+Microsoft Defender API 具有一个Flow连接器，具有许多功能。
 
 ![编辑凭据的图像1](images/api-flow-0.png)
 
 > [!NOTE]
-> 有关高级连接器许可先决条件的更多详细信息，请参阅 Premium [Connectors 的许可](/power-automate/triggers-introduction#licensing-for-premium-connectors)。
+> 有关高级连接器许可先决条件的更多详细信息，请参阅 Premium [connectors 的许可](/power-automate/triggers-introduction#licensing-for-premium-connectors)。
 
 
 ## <a name="usage-example"></a>用法示例
@@ -51,7 +51,7 @@ Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
 
 1. 登录到[Microsoft Power Automate。](https://flow.microsoft.com)
 
-2. Go to **My flows**  >  **New**  >  **Automated-from blank**.
+2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
     ![编辑凭据的图像2](images/api-flow-1.png)
 
