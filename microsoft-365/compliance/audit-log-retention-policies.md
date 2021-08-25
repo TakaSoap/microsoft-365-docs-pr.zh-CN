@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: 5e05dd44f6e89794f196099c878843f024b58d40e81637bd15e9fb46cc724146
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808390"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503079"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
-可在安全与合规中心创建和管理审核日志保留策略。 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。 可将审核日志保留长达 10 年时间。 可以根据以下标准创建策略：
+可在 Microsoft 365 合规中心中创建和管理审核日志保留策略。 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。 可将审核日志保留长达 10 年时间。 可以根据以下标准创建策略：
 
 - 一个或多个 Microsoft 365 服务中的所有活动
 - 所有用户或特定用户执行的特定活动（在 Microsoft 365 服务中）
@@ -41,7 +41,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>在创建审核日志保留策略之前
 
-- 必须在安全与合规中心为你分配了“组织配置”角色，这样才能创建或修改审核保留策略。
+- 你必须在 Microsoft 365 合规中心内分配有组织配置角色，才能创建或修改审核保留策略。
 
 - 在组织中，你最多可以拥有 50 个审核日志保留策略。
 
@@ -51,9 +51,9 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 ## <a name="create-an-audit-log-retention-policy"></a>创建审核日志保留策略
 
-1. 转到 <https://compliance.microsoft.com>，然后使用在安全与合规中心的“权限”页上分配了“组织配置”角色的用户帐户登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用在 Microsoft 365 合规中心的权限页上分配了组织配置角色的用户帐户登录。
 
-2. 在 Microsoft 365 合规中心的左窗格中，单击“**显示所有**”，然后单击“**审核**”。
+2. 在 Microsoft 365 合规中心的左侧窗格中，单击“**审核**”。
 
 3. 点击“**审核保留保留策略**”选项卡。
 

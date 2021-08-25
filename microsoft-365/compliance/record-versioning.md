@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 1259065e2f2fb3e2ee3ad09405e365df7fd98767
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: be85632bb4b85231f3a95680c960846fa245d97a
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356320"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506522"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
@@ -102,7 +102,7 @@ ms.locfileid: "58356320"
 
 锁定和解锁记录的操作会记录在审核日志中。 从 **文件和页面活动**，选择 **记录状态为"已锁定** "，然后选择" **记录状态为**。
 
-有关搜索这些事件详细信息，请参阅 [安全与合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。
+有关搜索这些事件详细信息，请参阅 [搜索审核日志](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。
 
 ## <a name="next-steps"></a>后续步骤
 

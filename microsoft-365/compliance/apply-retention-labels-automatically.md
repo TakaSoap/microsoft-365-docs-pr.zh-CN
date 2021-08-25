@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 44caa372797e627a05bc40b3fb816d50dcd5a88c
-ms.sourcegitcommit: 0ec4a6cc94ebc2ae18846011a34bbd1dd9a7ace0
+ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470772"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58506450"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -127,7 +127,16 @@ ms.locfileid: "58470772"
 
 - [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-所有三个条件都可以在发送和接收电子邮件时自动将保留标签应用于电子邮件（传输中的数据），但不能应用于邮箱中的现有项（静态数据）。 对于 SharePoint 和 OneDrive 中的项目，请使用下表来确定何时可以自动应用保留标签：
+使用下表确定何时可以将保留标签自动应用于 Exchange 的项目：
+
+|条件|传输中的项目（已发送或已接收） |现有项（静态数据）|
+|:-----|:-----|:-----|
+|敏感信息类型 - 内置| 是 | 否 |
+|敏感信息类型 - 自定义| 是 | 否 |
+|特定关键字或可搜索属性| 是 |是 |
+|可训练的分类器| 是 | 是（仅过去六个月） |
+
+对于 SharePoint 和 OneDrive 中的项目，请使用下表来确定何时可以自动应用保留标签：
 
 |条件|新建或修改的项目 |现有项（静态数据）|
 |:-----|:-----|:-----|

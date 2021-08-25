@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: 63a798d0656fbbdd0bd78cf47974befa3dad7b42d2413a98486504f6c5cf3e96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
+ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851435"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58508114"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -101,7 +101,7 @@ ms.locfileid: "53851435"
 
 - 使用 *LocaleSettings* 参数来进行跨国部署，以便用户可查看使用本地语言的标签名称和工具提示。 [下列部分](#example-configuration-to-configure-a-sensitivity-label-for-different-languages)有一个示例配置，用于为法语、意大利语和德语指定标签名称和工具提示文本。
 
-- 仅限 Azure 信息保护统一标记客户端，指定包括设置标签颜色，以及在应用标签时应用自定义属性的[高级设置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 有关完整列表，请参阅该客户端管理员指南的[标签 可用高级设置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
+- 仅限 Azure 信息保护统一标识客户端，支持大量[高级设置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)列表，其中包括设置标签颜色，以及在使用标签时应用自定义属性。 有关完整列表，请参阅该客户端管理员指南的[标签 可用高级设置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>配置不同语言的灵敏度标签的配置示例
 
@@ -181,8 +181,12 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 对 Windows、macOS、iOS 和 Android 上的 Office 应用使用内置标签时，刷新浏览器时，用户会在 4 个小时内看到新标签，而在 Word、Excel 和 PowerPoint Web 版上，1 小时内就可以看到新标签。但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
 
-> [!NOTE]
-> 其他支持敏感度标签的应用和服务可能会有自己的更新计划，更新频率超过每 24 小时一次，并触发策略更新。 有关详细信息，请参阅它们的文档。 例如，对于 Azure 信息保护统一标签客户端，请参阅 [Azure 信息保护客户端的详细对比](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)中的 **策略更新** 行。
+其他支持敏感度标签的应用和服务可能会有自己的更新计划，更新频率超过每 24 小时一次，并触发策略更新。 有关详细信息，请参阅它们的文档。 例如，对于 Azure 信息保护统一标签客户端，请参阅 [Azure 信息保护客户端的详细对比](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)中的 **策略更新** 行。
+
+> [!TIP]
+> 请记住，计时依赖关系有时可能会延迟敏感度标签和标签策略的正常工作。 例如，为应用加密的标签填充新的组和组成员身份更改、网络复制延迟和带宽限制，以及 [Azure 信息保护服务的组成员身份缓存](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection)。
+> 
+> 由于有许多外部依赖项，并且每个依赖项都有自己的计时周期，因此建议先等待 24 小时，然后再针对最近的更改标签和标签策略进行故障排除。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 

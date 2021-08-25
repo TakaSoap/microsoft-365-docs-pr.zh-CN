@@ -1,5 +1,5 @@
 ---
-title: 在安全与合规中心中启用存档邮箱
+title: 在 Microsoft 365 合规性中心中启用存档邮箱
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: 7a65a8347c1da2baf08c135a1818cf0d60dc13838e6acf858a6e0e70a10fcf97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cade5f3b089a5e6f98c234d9498635eb48e881c8
+ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796070"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58503067"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -36,7 +36,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 ## <a name="get-the-necessary-permissions"></a>获取必要的权限
 
-必须在 Exchange Online 中分配 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色分配给 Exchange 管理中心的 **权限** 页上的 "收件人管理" 和 "组织管理" 角色组。 如果在 "安全和合规性中心" 中看不到 **存档** 页, 请让管理员为你分配必要的权限。
+必须在 Exchange Online 中分配 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色分配给 Exchange 管理中心的 **权限** 页上的 "收件人管理" 和 "组织管理" 角色组。 如果在 Microsoft 365 合规中心中看不到 **存档** 页，则请管理员为你分配必要的权限。
 
 ## <a name="enable-an-archive-mailbox"></a>启用存档邮箱
 
@@ -66,7 +66,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 ## <a name="disable-an-archive-mailbox"></a>禁用存档邮箱
 
-还可以使用 Security & Compliance Center 中的 **存档** 页禁用用户的存档邮箱。 禁用存档邮箱后，您可以在禁用后的 30 天内重新将其连接到用户的主邮箱。 在这种情况下，存档邮箱的原始内容都会进行还原。 30 天后，原始存档邮箱的内容就会永久删除且无法恢复。 因此，如果您在禁用存档邮箱 30 天后重新启用此邮箱，则会新建一个存档邮箱。
+还可以使用 Microsoft 365 合规中心中的 **存档** 页禁用用户的存档邮箱。 禁用存档邮箱后，您可以在禁用后的 30 天内重新将其连接到用户的主邮箱。 在这种情况下，存档邮箱的原始内容都会进行还原。 30 天后，原始存档邮箱的内容就会永久删除且无法恢复。 因此，如果您在禁用存档邮箱 30 天后重新启用此邮箱，则会新建一个存档邮箱。
 
 分配给用户邮箱的默认存档策略会在邮件传递到邮箱两年后将其移动到存档邮箱。如果你禁用用户的存档邮箱，将不会对邮箱项目执行任何操作，它们将保留在用户的主邮箱中。
 
@@ -136,7 +136,7 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
   有关支持就地存档的 Outlook 许可证列表, 请参阅 [Exchange 功能的 Outlook 许可证要求](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 
-- 存档邮箱可帮助你和你的用户满足贵公司保留率、eDiscovery 和保存的要求。 例如，可以使用贵公司的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 使用安全性 & 合规中心中的 "内容搜索" 工具搜索用户邮箱中的特定内容时, 也将搜索用户的存档邮箱。 并且，将诉讼保留或保留策略应用于用户邮箱时，也会保留存档邮箱中的邮件。
+- 存档邮箱可帮助你和你的用户满足贵公司保留率、eDiscovery 和保存的要求。 例如，可以使用贵公司的 Exchange 保留策略将邮箱内容移动到用户的存档邮箱。 在使用 Microsoft 365 合规中心中的内容搜索工具搜索用户邮箱中的特定内容时，还将搜索用户的存档邮箱。 并且，将诉讼保留或保留策略应用于用户邮箱时，也会保留存档邮箱中的邮件。
 
 - 启用存档邮箱后, 贵公司可利用自动分配给每个邮箱的默认 Exchange 保留策略 (也称为 "邮件记录管理" 或 MRM 策略)。 启用存档邮箱时，默认 Exchange 保留策略自动执行以下操作：
 
