@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 3115695bb9c73dbff0c24f677e9e6151de82feba0695eebbb3b2078f01ab8ad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d232245ffa88ab63ebe68ac104f291d006612505
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794134"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533203"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -115,7 +115,7 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 
 4. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-5. 展开树，从 Microsoft Defender **Windows Components** > **Microsoft Defender 防病毒软件**。
+5. 展开树以 **Windows 组件**\>**Microsoft Defender 防病毒**。
 
 6. 双击配置 **中可能不需要的应用程序**。
 

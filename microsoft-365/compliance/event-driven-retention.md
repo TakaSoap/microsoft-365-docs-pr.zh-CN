@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: 4b1f30b8aaa072b328307a90f2828d7b8dd0187d3fd3767d8eb13bc6104bd033
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9f5ca3c0941d2f7c72d72da34d1a840ecf42c68e
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905909"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531523"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -208,7 +208,7 @@ REST API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 使用 REST API 有两种选择：
 
-- **Microsoft Power Automate 或类似的应用程序**，可用于自动触发事件的发生。 Microsoft Power Automate 是一种用于连接其他系统的协调程序，你无需编写自定义解决方案。 有关详细信息，请参阅 [Power Automate 网站](https://flow.microsoft.com/zh-CN/)。
+- **Microsoft Power Automate 或类似的应用程序**，可用于自动触发事件的发生。 Microsoft Power Automate 是一种用于连接其他系统的协调程序，你无需编写自定义解决方案。 有关详细信息，请参阅 [Power Automate 网站](https://flow.microsoft.com/en-us/)。
 
 - **通过 PowerShell 或 HTTP 客户端调用 REST API**，可使用 PowerShell（版本 6 或更高版本）创建事件，它是自定义解决方案的一部分。
 
@@ -226,9 +226,9 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 使用 Microsoft 365 REST API 创建用于创建事件的流：
 
-![使用流创建事件](../media/automate-event-driven-retention-flow-1.png)
+![使用Power Automate创建事件](../media/automate-event-driven-retention-flow-1.png)
 
-![使用流调用 REST API](../media/automate-event-driven-retention-flow-2.png)
+![使用Power Automate调用REST API](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>创建事件
 
