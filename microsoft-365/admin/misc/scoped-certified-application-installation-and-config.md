@@ -16,12 +16,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow 的作用域认证应用程序安装和配置指南。
-ms.openlocfilehash: 0bac2a0c12c1997627da77419a7b47d6cd4c74cb
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f5c562122fafcbb05115519d7841800be3e71a73
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508351"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531655"
 ---
 # <a name="scoped-certified-application-installation-and-configuration-guide"></a>作用域内认证应用程序安装和配置指南
 
@@ -31,13 +31,13 @@ ms.locfileid: "58508351"
 
 [配置说明](#configuration-instructions)
 
-[Who能否设置支持Microsoft 365集成？](#who-can-set-up-microsoft-365-support-integration)
+[Who可以设置支持Microsoft 365集成？](#who-can-set-up-microsoft-365-support-integration)
 
-[哪些功能可用于支持Microsoft 365集成？](#what-features-are-available-in-microsoft-365-support-integration) 
+[哪些功能在支持集成Microsoft 365中可用？](#what-features-are-available-in-microsoft-365-support-integration) 
 
-[设置支持Microsoft 365 ServiceNow 基本身份验证集成](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)
+[设置Microsoft 365 ServiceNow 基本身份验证集成](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)
 
-[设置Microsoft 365 AAD OAuth 令牌集成](#set-up-microsoft-365-support-integration-with-aad-oauth-token)
+[设置支持Microsoft 365 AAD OAuth 令牌集成](#set-up-microsoft-365-support-integration-with-aad-oauth-token)
 
 [设置Microsoft 365仅支持Insights集成](#set-up-microsoft-365-support-integration-for-insights-only) 
 
@@ -73,7 +73,7 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
 - 通过 Microsoft 门户将 ServiceNow 实例与 Microsoft Microsoft 365 管理集成。
 
-## <a name="who-can-set-up-microsoft-365-support-integration"></a>Who可以设置支持Microsoft 365集成吗？
+## <a name="who-can-set-up-microsoft-365-support-integration"></a>Who设置支持Microsoft 365集成？
 
 - 有权创建 AAD 应用程序的任何人。
 
@@ -81,30 +81,30 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
 - 支持人员管理员或租户中的服务Microsoft 365管理员。
 
-## <a name="what-features-are-available-in-microsoft-365-support-integration"></a>哪些功能可用于支持Microsoft 365集成？
+## <a name="what-features-are-available-in-microsoft-365-support-integration"></a>哪些功能在支持集成Microsoft 365中可用？
 
-在设置支持集成的 Microsoft 365配置之前，请查看对以下问题的回答：
+在设置支持集成Microsoft 365配置之前，请查看对以下问题的回答：
 
 **问题#1** 您的 ServiceNow 环境是否允许基本身份验证 (对入站 Web 服务调用使用 ServiceNow) 访问？
 
 **问题#2** 如果你有多个租户，是否计划使用与 ServiceNow 环境集成的单个租户Microsoft 365集成？
 
-此表根据这些问题的解答以及指向有关如何设置支持集成的特定说明的链接，确定Microsoft 365的功能。 有关每个功能的说明，请参阅Microsoft 365[集成。](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)
+此表根据这些问题的解答以及有关如何设置支持集成的特定说明的链接来标识Microsoft 365的功能。 有关每个功能的说明，请参阅Microsoft 365[集成。](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f)
 
 |问题#1答案|问题#2答案|哪些功能可用？|配置步骤|
 |--- |--- |--- |--- |
-|是|是|服务运行状况事件 <br/>建议的解决方案 </br>Microsoft 服务请求|[设置支持Microsoft 365 ServiceNow 基本身份验证集成](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)|
+|是|是|服务运行状况事件 <br/>建议的解决方案 </br>Microsoft 服务请求|[设置Microsoft 365 ServiceNow 基本身份验证集成](#set-up-microsoft-365-support-integration-with-servicenow-basic-authentication)|
 |是|否|服务运行状况事件 <br/>建议的解决方案 </br>Microsoft 服务请求||
-|否|是|服务运行状况事件 <br/>建议的解决方案 </br>Microsoft 服务请求|[设置Microsoft 365 AAD OAuth 令牌集成](#set-up-microsoft-365-support-integration-with-aad-oauth-token)|
+|否|是|服务运行状况事件 <br/>建议的解决方案 </br>Microsoft 服务请求|[设置支持Microsoft 365 AAD OAuth 令牌集成](#set-up-microsoft-365-support-integration-with-aad-oauth-token)|
 |否|否|服务运行状况事件 <br/>建议的解决方案|[设置Microsoft 365仅支持Insights集成](#set-up-microsoft-365-support-integration-for-insights-only) |
 
-## <a name="set-up-microsoft-365-support-integration-with-servicenow-basic-authentication"></a>设置支持Microsoft 365 ServiceNow 基本身份验证的集成
+## <a name="set-up-microsoft-365-support-integration-with-servicenow-basic-authentication"></a>设置Microsoft 365 ServiceNow 基本身份验证集成
 
 ### <a name="prerequisites-basic-authentication"></a>基本 (的先决条件) 
 
-设置支持集成所需的一些Microsoft 365组件。
+设置支持集成功能所需的一Microsoft 365先决条件。
 
-1. \[可以创建 AAD 应用程序在租户租户下创建 \] AAD Microsoft 365人员。
+1. \[可以在你的租户下创建 AAD 应用程序Microsoft 365 \] 应用程序。
 
     1. 使用你的[租户](https://portal.azure.com/)凭据Microsoft 365 Azure 门户。
 
@@ -128,7 +128,7 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
      :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
-    1. 通过选择"向第三方[OAuth 提供程序连接，创建](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)一个具有以下值的新应用程序。
+    1. 通过选择"向第三方 OAuth 提供程序连接[值新建](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)一个应用程序。
 
     - 客户端 ID：步骤 1 中创建的应用程序的客户端 \# ID
 
@@ -162,9 +162,9 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-### <a name="optional-whitelist-the-services-ips-of-microsoft-365-support-integration"></a>\[可选 \] 将服务的 Ip 列入支持集成的Microsoft 365白名单
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[可选 \] 允许服务的 IP 支持Microsoft 365集成
 
-如果贵公司使用自己的策略限制 Internet 访问，请通过将以下 IP 地址列入允许列表以允许入站和出站 API 访问，为 Microsoft 365 服务启用网络访问。
+如果贵公司使用自己的策略限制 Internet 访问，请通过允许下面的 IP 地址同时用于入站和出站 API 访问，为 Microsoft 365 服务启用网络访问以支持集成。
 
 - 52.149.152.32
 
@@ -187,7 +187,7 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
 若要设置 ServiceNow 实例与服务支持之间的集成，需要Microsoft 365这些步骤。
 
-1. \[作为 ServiceNow 管理员的用户 \] 将作用域切换为Microsoft 365集成。
+1. \[ServiceNow 管理员将作用域切换为 \] 支持Microsoft 365集成。
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
@@ -214,7 +214,7 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
 - 取消 **选中"外部 OIDC 身份验证令牌"。**
 
-- 在步骤 3 中选择"先决条件 ([基本) 中创建](#prerequisites-basic-authentication)的 OAuth 客户端 \# ，然后选择"下一 **步"。**
+- 选择在先决条件和基本身份验证 [ (中创建](#prerequisites-basic-authentication) 的 OAuth) \# 步骤 3，然后选择下一 **步**。
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
@@ -224,13 +224,13 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
 - Select the integration user created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \# 4 and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
 
 7. \[ServiceNow 管理员人员 \] 设置存储库 ID。
 
 指定存储库 ID，然后选择"下一 **步"。**
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
+:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
 
 8. \[ServiceNow 管理员人员 \] 设置应用程序设置。
 
@@ -244,7 +244,7 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="自动生成的图形用户界面、文本、应用程序说明":::
 
-9. \[作为租户中的支持管理员或服务请求管理员Microsoft 365完全 \] 集成。
+9. \[在租户中作为支持管理员或服务请求管理员Microsoft 365完全 \] 集成。
 
     1. 检查以下信息以确保正确无误。
 
@@ -254,7 +254,7 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
     1. 设置支持集成设置：
 
-        1. 在"基本信息"选项卡上，选择"内部支持工具""现在服务"，在"步骤 - 6 完成"页上键入"出站应用程序 [ID"](#prerequisites-basic-authentication)作为应用程序 **ID** 的值，该页是在先决条件 (基本身份验证) 步骤 1 中创建的。 \#
+        1. 在"基本信息"选项卡上，选择"内部支持工具""现在服务"，在"步骤 - 6 完成"页上键入"出站应用程序 [ID"作为](#prerequisites-basic-authentication)"应用程序 **ID"** 的值，该页是在"先决条件" (基本身份验证) 步骤 1 中创建的 \# 。
 
             :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
@@ -268,13 +268,13 @@ Microsoft 365集成使您可以将Microsoft 365、支持和服务运行状况与
 
         - 客户端 ID： **第** 6 步中的客户端 ID 值 完成集成。
 
-        - 客户端密码：在步骤 3 中的先决条件 ([基本 ](#prerequisites-basic-authentication) 身份验证) \# 的机密。
+        - 客户端密码：在步骤 3 的先决条件 ([中创建 ](#prerequisites-basic-authentication) 的入站 OAuth) \# 密码。
 
         - 刷新令牌过期：864000
 
         - Rest username： The **User Name** value from page Step - 6 Complete the integration.
 
-        - Rest user password： The password of the integration user that was created in [Prerequisites (Basic Authentication) ](#prerequisites-basic-authentication) step \# 4.
+        - Rest 用户密码：步骤 4 中在先决条件 ([基本 ](#prerequisites-basic-authentication) 身份验证) \# 用户的密码。
 
             :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image19.png" alt-text="图形用户界面，应用程序说明自动生成":::
 
@@ -293,9 +293,9 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 - [x \_ mioms \_ m365 \_ assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
 
 > [!NOTE]
-> 角色为 x \_ mioms \_ m365 \_ assis.insights 的用户 \_ 可以看到服务运行状况事件、推荐解决方案。 角色为 x \_ mioms \_ m365 assis.administrator 的用户也可以打开一个支持Microsoft 365 \_ 案例。
+> 角色为 x \_ mioms \_ m365 \_ assis.insights 的用户 \_ 可以看到服务运行状况事件、推荐解决方案。 角色为 x \_ mioms \_ m365 assis.administrator 的用户也可以打开一个Microsoft 365 \_ 案例。
 
-11. \[可选 \] \[ ServiceNow 管理员链接Microsoft 365 管理 \] 帐户。
+11. \[可选 \] \[ 是 ServiceNow 管理员 \] 链接Microsoft 365 管理帐户。
 
 如果任何用户具有角色 x \_ mioms \_ m365 assis.administrator，并且使用不同的 Microsoft 365 帐户来管理 Microsoft 365 支持案例，则必须转到 \_ Microsoft 365 支持 > 链接帐户以设置其 Microsoft 365 管理员电子邮件。
 
@@ -303,11 +303,11 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
 ## <a name="set-up-microsoft-365-support-integration-with-aad-oauth-token"></a>设置支持Microsoft 365 AAD OAuth 令牌集成
 
-### <a name="prerequisites-aad-oauth-token"></a>AAD OAuth (的先决条件) 
+### <a name="prerequisites-aad-oauth-token"></a>AAD (OAuth 令牌) 
 
 以下先决条件步骤是设置支持集成Microsoft 365所必需的：
 
-1. \[可以创建 AAD 应用程序的人 在租户租户下为出站创建 \] AAD Microsoft 365应用程序。
+1. \[可以创建 AAD 应用程序的人 在租户租户下为出 \] 站Microsoft 365应用程序。
 
     1. 使用租户[凭据](https://portal.azure.com/)Microsoft 365 Azure 门户。
 
@@ -350,15 +350,15 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
     1. 转到 **"系统""OAuth**  >  **应用程序注册表"。**
 
-    2. 如果范围未设置为"全局"，请打开 **"设置**  >    >  **应用程序"以** 切换到 **"全局"。**
+    2. 如果范围未设置为"全局"，请打开 **"设置**  >    >  **应用程序"以** 切换到"**全局"。**
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
-    3. 通过选择"向第三方[OAuth](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)提供程序连接一个使用下列值的新应用程序。
+    3. 通过选择"向第三方[OAuth](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)提供程序连接值创建新的应用程序。
 
-        - 客户端 ID：在步骤 1 的 [Prerequisites (AAD OAuth Token) ](#prerequisites-aad-oauth-token) \# ID。
+        - 客户端 ID：在步骤 1 的"先决条件" ([AAD OAuth 令牌 ](#prerequisites-aad-oauth-token)) \# ID。
 
-        - 客户端密码：在步骤 1 ([AAD OAuth ](#prerequisites-aad-oauth-token) 令牌) \# 的应用程序密码。
+        - 客户端密码：在 [AAD OAuth ](#prerequisites-aad-oauth-token) 令牌的先决条件 (步骤 1 中创建的应用程序) \# 密码。
 
         - 默认授予类型：客户端凭据。
 
@@ -411,9 +411,9 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-### <a name="optional-whitelist-the-services-ips-of-microsoft-365-support-integration"></a>\[可选 \] 将服务的 Ip 列入支持集成的Microsoft 365白名单
+### <a name="optional-allow-the-services-ips-of-microsoft-365-support-integration"></a>\[可选 \] 允许服务的 Ips 支持Microsoft 365集成
 
-如果您的公司使用自己的策略限制 Internet 访问，请通过将这些 IP 地址列入允许列表以允许入站和出站 API 访问，为 Microsoft 365 服务启用网络访问：
+如果您的公司使用自己的策略限制 Internet 访问，请通过允许这些 IP 地址同时访问入站和出站 API，为 Microsoft 365 服务启用网络访问以支持集成：
 
 - 52.149.152.32
 
@@ -473,7 +473,7 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
     1. 输入在 [AAD OAuth](#prerequisites-aad-oauth-token)令牌先决条件 (步骤 3 中创建) \# 客户端 ID，然后选择"下一 **步"。**
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image29.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
 7. \[ServiceNow 管理员人员 \] 设置存储库 ID。
 
@@ -487,7 +487,7 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
     1. SSO Microsoft 365：如果 ServiceNow 实例使用租户设置 SSO，请选中Microsoft 365复选框;否则取消选中它。
 
-    1. Microsoft 365管理员电子邮件：创建Microsoft 365案例时要联系Microsoft 365管理员用户的电子邮件。
+    1. Microsoft 365管理员电子邮件：创建Microsoft 365案例时要联系的管理员Microsoft 365电子邮件。
 
     1. 测试环境：选中此框可指示测试阶段，以避免 Microsoft 支持代理联系你以解决问题。 如果你已准备好使用支持集成Microsoft 365，请取消选中此框。
 
@@ -499,7 +499,7 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
     1. 检查以下信息以确保正确无误。
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image30.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
     1. 转到"Microsoft 365 [管理门户](https://admin.microsoft.com)  >    >  **设置设置**  >  **配置文件"。**
 
@@ -517,7 +517,7 @@ Microsoft 365仅对具有以下角色之一的用户启用支持集成：
 
     - 身份验证类型：选择 **AAD 身份验证**。
 
-    - 客户端 ID："步骤 - 6 完成集成"页上的客户端 **ID** 值，它是在步骤 2 的"先决条件" ([AAD OAuth](#prerequisites-aad-oauth-token) 令牌) \# 客户端 ID。
+    - 客户端 **ID："** 步骤 - 6 完成集成"页上的客户端 ID 值，它是在步骤 2 的"先决条件" ([AAD OAuth 令牌](#prerequisites-aad-oauth-token)) \# 客户端 ID。
 
     - Rest username： The **User Name** value on the Step - 6 Complete the integration page， which is the **Client ID** of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \# 3.
 
@@ -552,7 +552,7 @@ Microsoft 365仅对具有以下角色的用户启用支持集成：
 
 ### <a name="prerequisites-insights-only"></a>先决条件 (Insights仅) 
 
-以下先决条件步骤是设置支持集成Microsoft 365所必需的：
+若要设置支持集成，需要Microsoft 365步骤：
 
 1. \[可以创建 AAD 应用程序在租户租户下创建 \] AAD Microsoft 365人员。
 
@@ -574,15 +574,15 @@ Microsoft 365仅对具有以下角色的用户启用支持集成：
 
     1. 转到 **"系统""OAuth**  >  **应用程序注册表"。**
 
-    1. 如果范围未设置为"全局"，请打开 **"设置**  >    >  **应用程序"以** 切换到 **"全局"。**
+    1. 如果范围未设置为"全局"，请打开 **"设置**  >    >  **应用程序"** 以切换到"**全局"。**
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="自动生成的图形用户界面、文本、应用程序、聊天或短信说明":::
 
-    1. 通过选择"向第三方[OAuth](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)提供程序连接一个使用下列值的新应用程序。
+    1. 通过选择"向第三方[OAuth](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity)提供程序连接值创建新的应用程序。
 
-    - 客户端 ID：**仅在** 步骤 1 的"先决条件" (Insights [创建的)](#prerequisites-insights-only) \# ID
+    - 客户端 ID：**仅在** 步骤 1 的"先决条件" (Insights [中创建](#prerequisites-insights-only)) \# ID
 
-    - 客户端密码：仅在步骤 1 的"先决条件" (Insights[中创建](#prerequisites-insights-only)) \# 密码
+    - 客户端密码：仅在步骤 1 的先决条件 (Insights[创建](#prerequisites-insights-only)) \# 密码
 
     - 默认授予类型：客户端凭据
 
@@ -594,15 +594,15 @@ Microsoft 365仅对具有以下角色的用户启用支持集成：
 
 ### <a name="set-up-microsoft-365-support-integration"></a>设置Microsoft 365支持集成
 
-可以在Microsoft 365下通过安装程序设置支持 **集成Microsoft 365应用程序**。
+可以在Microsoft 365下通过安装程序 **设置支持集成** Microsoft 365应用程序。
 
 若要设置 ServiceNow 实例与 Microsoft 支持之间的集成，需要执行以下步骤。
 
-1. \[作为 ServiceNow 管理员的用户 \] 将作用域切换为Microsoft 365集成。
+1. \[ServiceNow 管理员将作用域切换为支持Microsoft 365 \] 集成。
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="图形用户界面，自动生成表说明":::
 
-2. \[ServiceNow 管理员人员 \] 转到"Microsoft 365">"**以** 打开集成流。
+2. \[ServiceNow 管理员人员 转到Microsoft 365 \] 支持>**安装程序** 以打开集成流。
 
 > [!NOTE]
 > 如果看到错误"由于表的跨作用域访问策略，作用域 \_ 'x \_ mioms \_ m365 \_ assis'中的'oauth 实体的读取操作'被拒绝"，则由表访问策略导致。 必须确保已检查 **table** oauth 实体的所有应用程序  >  作用域"可读取 \_ "。
@@ -641,7 +641,7 @@ Microsoft 365仅对具有以下角色的用户启用支持集成：
 
     选择正确的设置，然后选择下一 **步**。
 
-    - 具有 Microsoft 365 的 SSO：检查 ServiceNow 实例是否设置为具有租户的 SSO Microsoft 365 SSO;否则取消选中它。
+    - 具有 Microsoft 365 的 SSO：检查 ServiceNow 实例是否设置为 SSO Microsoft 365租户;否则取消选中它。
 
     - Microsoft 365 管理电子邮件：创建Microsoft 365案例时要联系的管理员Microsoft 365电子邮件。
 
@@ -655,7 +655,7 @@ Microsoft 365仅对具有以下角色的用户启用支持集成：
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image35.png" alt-text="自动生成的图形用户界面、文本、应用程序、电子邮件说明":::
 
-    1. 转到"Microsoft 365 [管理门户](https://admin.microsoft.com)  >    >  **设置设置**  >  **组织配置文件"。**
+    1. 转到"Microsoft 365 [管理门户](https://admin.microsoft.com)  >    >  **设置设置**  >  **配置文件"。**
 
         1. 使用安装流中显示的信息设置支持集成设置。
 
@@ -685,9 +685,9 @@ Microsoft 365仅对具有以下角色的用户启用支持集成：
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image37.png" alt-text="图形用户界面，自动生成应用程序说明":::
 
-10. \[ServiceNow 管理员启用Microsoft 365 \] 支持现有用户的集成。
+10. \[ServiceNow 管理员启用Microsoft 365支持现有 \] 用户的集成。
 
-Microsoft 365仅针对这些用户角色启用支持集成：
+Microsoft 365仅为这些用户角色启用支持集成：
 
 - [x \_ mioms \_ m365 \_ assis.insights \_ 用户](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
 
@@ -712,7 +712,7 @@ Microsoft 365仅针对这些用户角色启用支持集成：
 
 2. 打开任何事件。
 
-3. 重点关注 **"Microsoft 365"** 选项卡，然后选择"Microsoft 365 Insights"确定建议的解决方案是否检索成功。
+3. 重点关注 **"Microsoft 365"** 选项卡，然后选择"Microsoft 365 Insights"以确定是否成功检索了建议的解决方案。
 
 :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="自动生成的图形用户界面、应用程序、网站说明":::
 
@@ -720,7 +720,7 @@ Microsoft 365仅针对这些用户角色启用支持集成：
 
 |#|问题|诊断操作|
 |--- |--- |--- |
-|1 |看不到"支持 **Microsoft 365选项卡**|使用筛选器验证 **当前视图和**  >  "全部系统日志x_mioms_m365_assit|
+|1 |无法查看 **"Microsoft 365支持"** 选项卡|使用筛选器验证 **当前视图和**  >  "全部系统日志x_mioms_m365_assit|
 |2 |选择 **Microsoft 推荐的解决方案** ，但收到错误"Please contact your ServiceNow admin and ask them to complete the setup steps for the app."|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
 |3 |选择 **Microsoft 推荐的解决方案** ，但收到错误"Please contact your ServiceNow admin and ask them to complete the final set up step for the app."|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
 |4 |在搜索框中键入问题并选择 **Microsoft 建议** 的解决方案，但收到错误"请联系你的 ServiceNow 管理员，并要求他们完成应用的设置步骤。"|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
@@ -728,11 +728,11 @@ Microsoft 365仅针对这些用户角色启用支持集成：
 |6 |选择 **"联系 Microsoft 支持** 人员"，但收到错误"Please contact your ServiceNow admin and ask them to complete the setup steps for the app."|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
 |7 |选择 **"联系 Microsoft 支持** 人员"，但收到错误"Please contact your ServiceNow admin and ask them to complete the final set up step for the app."|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
 |8 |选择 **"联系 Microsoft 支持** 人员"，但收到错误"{EmailAddress} 不是有效的Microsoft 365管理员帐户。 您需要Microsoft 365管理员权限才能打开服务请求。 在应用中，链接管理员帐户。"|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
-|9 |选择 **Microsoft 建议的解决方案** ，但没有任何显示|检查 **系统日志 – 出站 HTTP 日志** login.microsoftonline.com 筛选器 connector.rave.microsoft.com|
+|9 |选择 **Microsoft 建议的解决方案** ，但没有任何显示|检查 **系统日志 – 具有** 筛选器筛选器的出站 HTTP login.microsoftonline.com connector.rave.microsoft.com|
 |10 |选择 **Microsoft 推荐的解决方案** ，但收到错误"请联系应用支持人员"。|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
-|11 |在搜索框中键入问题，然后选择 **Microsoft 建议的解决方案** ，但不显示任何内容|检查 **系统日志 – 出站 HTTP 日志** login.microsoftonline.com 筛选器 connector.rave.microsoft.com|
+|11 |在搜索框中键入问题，然后选择 **Microsoft 建议的解决方案** ，但不显示任何内容|检查 **系统日志 – 具有** 筛选器筛选器的出站 HTTP login.microsoftonline.com connector.rave.microsoft.com|
 |12 |在搜索框中键入问题，然后选择 **Microsoft 建议的解决方案** ，但收到错误"请联系应用支持人员"。|检查表单顶部的错误消息和"所有系统日志"  >  以及筛选器x_mioms_m365_assit|
-|13 |用户选择" **联系 Microsoft 支持人员**"，但没有任何反应|检查 **系统日志 – 出站 HTTP 日志** login.microsoftonline.com 筛选器 connector.rave.microsoft.com|
+|13 |用户选择" **联系 Microsoft 支持人员**"，但没有任何反应|检查 **系统日志 – 具有** 筛选器筛选器的出站 HTTP login.microsoftonline.com connector.rave.microsoft.com|
 |14 |重新打开事件后看不到 Microsoft 建议的解决方案|使用 **筛选器检查**  >  **"系统** 日志全部x_mioms_m365_assit|
 |15 |重新打开已转移到 Microsoft 支持人员的事件时看不到 Microsoft 案例|使用 **筛选器检查**  >  **"系统** 日志全部x_mioms_m365_assit|
 |16 |无法保存票证详细信息，收到错误"无法保存票证详细信息。 请联系应用支持人员。"|检查表单顶部的错误消息|

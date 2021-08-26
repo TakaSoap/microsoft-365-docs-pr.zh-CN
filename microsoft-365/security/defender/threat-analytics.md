@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c03dfef28744e2ee565c25d921902b8d11ecb7a3
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: da726aeaf82f13cef862b105e951f28c9fdf80e3
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533047"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>通过威胁分析跟踪和响应新兴威胁 
+# <a name="track-and-respond-to-emerging-threats-with-threat-analytics-in-microsoft-365-defender"></a>通过威胁分析跟踪和响应新出现的威胁Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -52,7 +52,7 @@ ms.locfileid: "53290239"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-你可以从 Microsoft 365 安全门户导航栏的左上角访问威胁分析，也可以从显示组织中的主要威胁的专用仪表板卡访问威胁分析。了解活动或正在进行的市场活动，了解通过威胁分析可采取哪些措施，有助于让安全运营团队做出明智的决策。 
+你可以从 Microsoft 365 安全门户导航栏的左上角，或者从显示组织中的主要威胁的专用仪表板卡片访问威胁分析。了解活动或正在进行的市场活动，了解通过威胁分析可采取哪些措施，有助于让安全运营团队做出明智的决策。 
 
 ![威胁分析仪表板的图像](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -66,13 +66,13 @@ _在何处访问威胁分析_
 - 查看抵御威胁或暴露给威胁的恢复能力
 - 确定可用于停止或包含威胁的缓解、恢复或防护操作
 
-每个报告都提供跟踪威胁的分析，并提供有关如何防御该威胁的广泛指导。 它还包含来自你的网络的数据，指示威胁是否处于活动状态以及是否具有适用的保护。
+每个报告都提供跟踪威胁的分析，并提供有关如何防御该威胁的广泛指南。 它还包含来自你的网络的数据，指示威胁是否处于活动状态以及是否具有适用的保护。
 
 ## <a name="view-the-threat-analytics-dashboard"></a>查看威胁分析仪表板
 
 威胁分析仪表板 (security.microsoft.com/threatanalytics3) 突出显示[](https://security.microsoft.com/threatanalytics3)与组织最相关的报告。 它总结了以下各节中的威胁：
 
-- **最新威胁**— 列出最近发布或更新的威胁报告，以及活动警报和已解决警报的数量。
+- **最新威胁**— 列出最近发布或更新的威胁报告，以及活动警报和已解决警报数。
 - **高影响威胁**— 列出对组织影响最大的威胁。 本节首先列出活动警报和已解决警报数最高的威胁。
 - **威胁摘要**— 通过显示具有活动警报和已解决警报的威胁数，提供所有跟踪的威胁的总体影响。
 
@@ -109,7 +109,7 @@ _威胁分析报告的概述部分_
   - 活动警报数及其关联的活动事件数
   - 活动事件的严重性
 - **一段时间的警报** 显示一段时间的相关 **活动****警报和已** 解决警报数。 已解决的警报数指示组织响应与威胁关联的警报的有多快。 理想情况下，图表应显示几天内解决的警报。
-- **影响的资产**— 显示当前至少有一个活动警报 (跟踪威胁) 邮箱中不同设备和电子邮件帐户的数量。 对于收到威胁电子邮件的邮箱，将触发警报。 查看组织级别和用户级别的策略，查看导致发送威胁电子邮件的覆盖。
+- **"受** 影响资源" 显示当前至少具有一个与 (关联的活动警报) 邮箱中不同设备和电子邮件帐户的数量。 对于收到威胁电子邮件的邮箱，将触发警报。 查看组织级别和用户级别的策略，查看导致发送威胁电子邮件的覆盖。
 - **阻止的电子邮件尝试**— 显示过去七天内在传递前被阻止或传递到垃圾邮件文件夹的电子邮件数量。
 
 #### <a name="review-security-resilience-and-posture"></a>查看安全恢复和状态
@@ -121,7 +121,7 @@ _威胁分析报告的概述部分_
 
 #### <a name="view-reports-per-threat-tags"></a>查看每个威胁标记的报告
 
-你可以根据特定威胁标记或报告类型来筛选威胁报告列表 (相关) 报告。
+你可以根据特定威胁标记或报告类型筛选威胁 (报告) 相关报告。
 
 - **威胁** 标记 — 帮助你根据特定威胁类别查看最相关的报告。 例如，所有与勒索软件相关的报告。
 - **报告** 类型 — 帮助您根据特定报告类型查看最相关的报告。 例如，涵盖工具和技术的所有报告。 
@@ -168,7 +168,7 @@ _威胁分析报告的相关事件部分_
 如果资产受未解决活动警报的影响，则认为资产受到影响。 " **影响的资产"** 选项卡列出了以下类型的受影响资产：
 
 - **影响的设备**- 具有未解析的 Microsoft Defender for Endpoint 警报的终结点。 这些警报通常在看到已知威胁指示器和活动时触发。
-- **影响邮箱**— 已接收已触发 Microsoft Defender for Office 365警报的邮箱。 触发警报的多数消息通常会被阻止，但用户或组织级别的策略可以覆盖筛选器。
+- **受到影响的邮箱**— 已接收已触发 Microsoft Defender for Office 365警报的电子邮件。 触发警报的多数消息通常会被阻止，但用户或组织级别的策略可以覆盖筛选器。
 
 ![威胁分析报告的影响资产部分的图像](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
@@ -178,7 +178,7 @@ _威胁分析报告的"影响的资产"部分_
 
 Microsoft Defender for Office 365通常阻止具有已知威胁指示器（包括恶意链接或附件）的电子邮件。 在某些情况下，检查可疑内容的主动筛选机制会改为将威胁电子邮件发送到垃圾邮件文件夹。 在任一情况下，威胁在设备上启动恶意软件代码的可能性都降低了。
 
-"**阻止的电子邮件尝试**"选项卡列出了所有在传递前被阻止或由 Microsoft Defender 发送到垃圾邮件文件夹的电子邮件Office 365。 
+"**阻止的电子邮件尝试**"选项卡列出了所有在传递之前被阻止或由 Microsoft Defender 发送到垃圾邮件文件夹的电子邮件Office 365。 
 
 ![威胁分析报告的阻止的电子邮件尝试部分的图像](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -194,7 +194,7 @@ _威胁分析报告的"阻止的电子邮件尝试"部分_
   - PUA 保护 (可能不需要) 应用程序
   - 实时保护
 
-本节中的缓解信息包含来自 危险和漏洞管理[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的数据，它还提供报告中各个链接的详细深化信息。
+本节中的缓解信息包含来自 危险和漏洞管理[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的数据，它还提供报告中各个链接的详细向下钻取信息。
 
 ![显示安全配置详细信息的威胁分析报告的缓解部分的图像](../../media/threat-analytics/ta_mitigations_mtp.png)
 
@@ -207,13 +207,13 @@ _威胁分析报告的缓解部分_
 > [!NOTE]
 > 作为统一安全体验的一部分，威胁分析现在不仅适用于 Microsoft Defender for Endpoint，还适用于适用于 Office E5 许可证持有者的 Microsoft Defender。
 >
-> 如果你未使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，则还可以在 Microsoft Defender 安全中心 门户中查看报告详细信息 (，而无需 Microsoft Defender for Office data)  (Microsoft Defender for Endpoint) 。
+> 如果你未使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，则还可以在 Microsoft Defender 安全中心 门户 (终结点) 的 Microsoft Defender 安全中心 门户中查看不带 Office 数据) 的 Microsoft Defender 报告详细信息 (。
 
 若要访问威胁分析报告，你需要某些角色和权限。 有关详细信息[，请参阅基于角色的访问控制中的Microsoft 365 Defender](custom-roles.md)角色。
 
-- 若要查看警报、事件或受影响的资产数据，你需要拥有对 microsoft Defender for Office 或 Microsoft Defender for Endpoint 警报数据的权限，或同时拥有这两者的权限。
+- 若要查看警报、事件或受影响的资产数据，你需要具有 Microsoft Defender for Office 或 Microsoft Defender for Endpoint 警报数据的权限，或同时拥有这两者的权限。
 - 若要查看阻止的电子邮件尝试，你需要拥有 Microsoft Defender 的权限，才能Office数据。 
-- 若要查看缓解，你需要拥有在 Microsoft Defender for Endpoint 危险和漏洞管理数据的权限。
+- 若要查看缓解，你需要具有在 Microsoft Defender for Endpoint 危险和漏洞管理数据的权限。
 
 查看威胁分析数据时，请记住以下因素：
 

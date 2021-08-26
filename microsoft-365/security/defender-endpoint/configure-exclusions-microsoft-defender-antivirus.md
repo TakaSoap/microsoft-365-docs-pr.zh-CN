@@ -1,6 +1,6 @@
 ---
-title: 设置扫描的Microsoft Defender 防病毒项
-description: 你可以排除文件 (文件，包括由指定进程) 的文件以及文件夹被Microsoft Defender 防病毒。 使用 PowerShell 验证排除项。
+title: 为扫描设置Microsoft Defender 防病毒项
+description: 你可以排除文件 (包括由指定进程修改的文件) 以及文件夹被文件扫描Microsoft Defender 防病毒。 使用 PowerShell 验证排除项。
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,14 +15,14 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 77a5d01b16a181067b347ab72220d722dc2ab447
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a6df318ccf484d750ae8010f34b5c545b115cde0
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256555"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532975"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描的Microsoft Defender 防病毒项
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证扫描Microsoft Defender 防病毒排除项
 
 **适用于：**
 
@@ -34,20 +34,20 @@ ms.locfileid: "58256555"
 
 若要配置和验证排除项，请参阅以下内容：
 
-- [根据文件名、扩展](configure-extension-file-exclusions-microsoft-defender-antivirus.md)名和文件夹位置配置并验证排除项。 你可以根据文件扩展Microsoft Defender 防病毒文件扩展名、文件名或位置从扫描中排除文件。
+- [根据文件名、扩展](configure-extension-file-exclusions-microsoft-defender-antivirus.md)名和文件夹位置配置并验证排除项。 可以基于文件扩展Microsoft Defender 防病毒文件扩展名、文件名或位置，从扫描中排除文件。
 
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 你可以从特定进程打开的扫描中排除文件。
 
 ## <a name="recommendations-for-defining-exclusions"></a>推荐排除项的定义
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（例如，在企业管理、数据库管理和其他企业方案和情况中使用的那些文件）的自动排除项。  
-> 
-> 定义排除项会降低组织提供的Microsoft Defender 防病毒。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
+> Microsoft Defender 防病毒包括许多基于已知操作系统行为和典型管理文件（如企业管理、数据库管理和其他企业方案和情况中使用的文件）的自动排除项。
+>
+> 定义排除项会降低由组织提供的Microsoft Defender 防病毒。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
 
-定义排除项时，请记住以下几点：  
+定义排除项时，请记住以下几点：
 
-- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有适当的访问控制列表 (ACL) 或最初将策略设置为审核模式。
+- 从技术上说，排除项是一个保护缺陷。 定义排除项时，请考虑所有选项。 其他选项可以非常简单，只需确保排除的位置具有适当的访问控制列表 (ACL 或) 策略设置为审核模式。
 
 - 定期查看排除项。 在查看过程中重新检查和重新强制执行缓解。
 

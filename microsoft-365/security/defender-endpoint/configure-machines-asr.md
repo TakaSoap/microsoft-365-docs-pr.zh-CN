@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e9059360c9ce9137092fec2422c563abf2f95e39c94c0fbc9b22b5c36c21161c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834069"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533395"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>优化 ASR 规则部署和检测
 
@@ -46,15 +46,15 @@ ms.locfileid: "53834069"
 * 查看 ASR 检测并识别可能的不正确检测。
 * 分析排除的影响并生成要排除的文件路径列表。
 
-选择 **转到攻击面管理**  >  **报告**  >  **攻击面减少规则**  >  **添加排除** 项。 然后，你可以导航到安全中心Microsoft 365分区。
+选择 **转到攻击面管理** \> **报告** \> **攻击面减少规则** \> **添加排除** 项。 然后，你可以导航到安全中心Microsoft 365分区。
 
 ![在安全中心的"攻击面减少规则"Microsoft 365排除项"选项卡](images/secconmgmt_asr_m365exlusions.png)<br>
 安全 ***中心的"攻击** 面减少规则"页中的"添加排除Microsoft 365选项卡*
 
 > [!NOTE]
-> 若要访问Microsoft 365安全中心，您需要一个 Microsoft 365 E3 或 E5 许可证以及一个在安全中心具有特定角色Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> 若要访问Microsoft 365中心，您需要一个 Microsoft 365 E3 E5 许可证和一个在安全中心上具有特定Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-有关安全中心中 ASR 规则部署Microsoft 365，请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+有关在安全中心内部署 ASR 规则Microsoft 365，请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **相关主题**
 

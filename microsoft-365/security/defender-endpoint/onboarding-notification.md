@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e62195582183f24078a2755b1773a00ceee06613f141403fe8399f798f2eb411
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799839"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531559"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -43,16 +43,16 @@ ms.locfileid: "53799839"
 
 ## <a name="before-you-begin"></a>准备工作
 
-你将需要有权访问：
+你将需要具有访问权：
 
-- Microsoft Flow (Flow计划 1 的最低) 。 有关详细信息，请参阅定价[Flow页面](https://flow.microsoft.com/pricing/)。
+- Power Automate (每用户计划的最低) 。 有关详细信息，请参阅定价[Power Automate页面](https://flow.microsoft.com/pricing/)。
 - Azure 表或SharePoint列表或库/SQL DB。
 
 ## <a name="create-the-notification-flow"></a>创建通知流
 
 1. 在 [flow.microsoft.com](https://flow.microsoft.com/)中。
 
-2. 从空白 **导航到"我的>">计划的新流"。**
+2. 导航到 **"我的流>新>计划 - 从空白。**
 
     ![流的图像](images/new-flow.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "53799839"
 
     ![通知流的图像](images/build-flow.png)
 
-4. 选择" +"按钮以添加新操作。 新操作将是向 Defender for Endpoint 安全中心设备发送的 HTTP (API) API。 还可以将其替换为开箱即用"WDATP 连接器" (操作："计算机 - 获取计算机列表") 。
+4. 选择" +"按钮以添加新操作。 新操作将是对 Defender for Endpoint 安全中心设备请求的 HTTP (API) API。 还可以将其替换为开箱即用"WDATP 连接器" (操作："计算机 - 获取计算机列表") 。
 
     ![重复和添加操作的图像](images/recurrence-add.png)
 
@@ -174,10 +174,10 @@ ms.locfileid: "53799839"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册为示例：
+10. 从 JSON 调用中提取值，并检查已载入 (设备) /是否已在 SharePoint 列表注册，例如：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在 SharePoint 列表中注册新的已 (设备) ，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在 (注册) 新载入SharePoint，并且会向 Defender for Endpoint 管理员发送通知
 
     ![适用于每个图像的图像](images/flow-apply.png)
 
@@ -210,5 +210,5 @@ ms.locfileid: "53799839"
 
 您可以拆分为两个查询：
 
-1. 对于载出，使用 OData $filter此间隔，并且仅在满足条件时通知。
+1. 对于"出载"，仅使用此间隔使用 OData $filter，并且仅在满足条件时通知。
 2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须位于) 。

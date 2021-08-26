@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ca9a0c814ba41d5d0272966b879d23a766ff6d002d142a7c7725ec87afff9fff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74bfa73ff9c647a0e6979eb18b06342fe2bea1ed
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890633"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532939"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Microsoft Defender for Endpoint 设备时间线事件标志
 
@@ -34,25 +34,26 @@ ms.locfileid: "53890633"
 
 Defender for Endpoint 设备时间线中的事件标志可帮助你在调查潜在攻击时筛选和组织特定事件。
 
-Defender for Endpoint 设备时间线提供设备上观测到的事件和相关警报的时间顺序视图。 通过此事件列表，可以完全查看在设备上观测到的任何事件、文件和 IP 地址。 列表有时可能很长。 设备时间线事件标志可帮助你跟踪可能相关的事件。 
+Defender for Endpoint 设备时间线提供设备上观测到的事件和相关警报的时间顺序视图。 通过此事件列表，可以完全查看在设备上观测到的任何事件、文件和 IP 地址。 列表有时可能很长。 设备时间线事件标志可帮助你跟踪可能相关的事件。
 
 完成设备时间线后，你可以排序、筛选和导出已标记的特定事件。
 
-在导航设备时间线时，你可以搜索和筛选特定事件。 可以通过：设置事件标志： 
+在导航设备时间线时，你可以搜索和筛选特定事件。 可以通过：设置事件标志：
 
-- 突出显示最重要的事件 
-- 标记需要深入探究的事件 
+- 突出显示最重要的事件
+- 标记需要深入探究的事件
 - 构建干净泄露时间线
 
-
-
 ## <a name="flag-an-event"></a>标记事件
-1. 查找要标记的事件
-2. 单击"标志"列中的标志图标。 
-![设备时间线标志的图像](images/device-flags.png)
 
-## <a name="view-flagged-events"></a>查看标记的事件  
+1. 查找要标记的事件
+2. 单击"标志"列中的标志图标。
+
+   ![设备时间线标志的图像](images/device-flags.png)
+
+## <a name="view-flagged-events"></a>查看标记的事件
+
 1. 在"时间线 **筛选器"** 部分，启用 **"已标记的事件"。**
-2. 单击“**应用**”。 只显示标记的事件。
-可以通过单击时间栏来应用其他筛选器。 这将只显示标记事件之前的事件。  
-![具有筛选功能的设备时间线标志的图像](images/device-flag-filter.png)
+2. 单击“**应用**”。 只显示标记的事件。 可以通过单击时间栏来应用其他筛选器。 这将只显示标记事件之前的事件。
+
+   ![具有筛选功能的设备时间线标志的图像](images/device-flag-filter.png)

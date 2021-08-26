@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f85e4a517b4af5120e88a76ef9dd46eda3011ec88383c9391bca0faaa2d5edd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fbf9561e214be2180d57b3b4dcd2369061d7a7d6
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857623"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532843"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>验证数据存储位置并更新 Microsoft Defender for Endpoint 的数据保留设置
 
@@ -43,14 +43,14 @@ ms.locfileid: "53857623"
 在 [设置阶段](production-deployment.md)，你已选择存储数据的位置。 
 
 
-通过导航到"常规"菜单下设置终结点数据保留 ( >    >  **验证) 。**
+可以通过导航到"常规"菜单下的"终结点设置数据保留 (\>  \> **验证) 。**
 
 
 ## <a name="update-data-retention-settings"></a>更新数据保留设置
 
 可以更新数据保留设置。 默认情况下，保留期为 180 天。 
 
-1. 在导航窗格中，**选择"常规** 设置  >    >  **下** (终结点数据保留 **) 。**
+1. 在导航窗格中，选择"常规设置 \> **下 (** 终结点数据 \> ) 。 
 
 2. 从下拉列表中选择数据保留期限。
 

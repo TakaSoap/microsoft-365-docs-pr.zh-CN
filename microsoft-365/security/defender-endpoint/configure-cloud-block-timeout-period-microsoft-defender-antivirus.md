@@ -1,7 +1,7 @@
 ---
 title: 配置Microsoft Defender 防病毒阻止超时期限
 description: 你可以配置在Microsoft Defender 防病毒确定时阻止文件运行的时间。
-keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 超时， 阻止， 时间段， 秒
+keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 超时， 块， 时间段， 秒
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
-ms.openlocfilehash: 4bca279f4fbb9a521fb436a91d2ff772dc4660e7d7c72f861bf010dfc03194cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 85313f279a46dbb278dbdb0014d44124a147394d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874143"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533215"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>配置云块超时时间段
 
@@ -31,7 +31,7 @@ ms.locfileid: "53874143"
 
 当Microsoft Defender 防病毒发现可疑文件时，它会阻止该文件在查询 Microsoft Defender 防病毒[云服务时运行](cloud-protection-microsoft-defender-antivirus.md)。
 
-文件被阻止的默认 [时间段](configure-block-at-first-sight-microsoft-defender-antivirus.md) 为 10 秒。 如果您是安全管理员，您可以指定在允许文件运行之前等待的时间。 延长云阻止超时期有助于确保有足够的时间从云云服务收到Microsoft Defender 防病毒决定。
+文件被阻止的默认 [时间段](configure-block-at-first-sight-microsoft-defender-antivirus.md) 为 10 秒。 如果您是安全管理员，您可以指定在允许文件运行之前等待的时间。 延长云阻止超时期限有助于确保有足够的时间从云云服务收到Microsoft Defender 防病毒决定。
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>使用扩展云阻止超时的先决条件
 
@@ -63,11 +63,11 @@ ms.locfileid: "53874143"
 
 3. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后选择"**管理模板"。**
 
-3. 展开树以Windows   >    >  **MpEngine** Microsoft Defender 防病毒组件。
+3. 展开树以Windows  \>  \> **MpEngine** Microsoft Defender 防病毒组件。
 
 4. 双击配置 **扩展云检查并确保** 该选项已启用。 
 
-   指定额外时间，以在等待云确定时阻止文件运行。 指定从 1 秒到 50 秒的额外时间（秒）。 您指定的任何时间将添加到默认值 10 秒。
+   指定额外的时间来阻止文件运行，同时等待云确定。 指定从 1 秒到 50 秒的额外时间（秒）。 您指定的任何时间将添加到默认值 10 秒。
 
 5. 选择“**确定**”。
 

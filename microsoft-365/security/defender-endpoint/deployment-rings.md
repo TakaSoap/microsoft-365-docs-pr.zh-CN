@@ -1,7 +1,7 @@
 ---
 title: 在圈中部署 Microsoft Defender for Endpoint
 description: 了解如何在圈中部署 Microsoft Defender for Endpoint
-keywords: 部署， 圈， 评估， 试点， 预览体验成员 - 快， 预览体验成员 - 慢， 设置， 载入， 阶段， 部署， 部署， 采用， 配置
+keywords: 部署， 圈， 评估， 试点， 预览体验成员快， 预览体验成员 - 慢， 设置， 载入， 阶段， 部署， 部署， 采用， 配置
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce3ef7cd0861f8f094a873e39ae010ac87e4e18549ce0337911c327741f5e4f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0688a9ccae293e68d54ec9f00d74d9829d85d4e
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53903794"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532807"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -35,9 +35,10 @@ ms.locfileid: "53903794"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-可以使用基于圈的部署方法部署 Microsoft Defender for Endpoint。 
+可以使用基于圈的部署方法部署 Microsoft Defender for Endpoint。
 
 可以在以下方案中应用部署圈：
+
 - [新部署](#new-deployments)
 - [现有部署](#existing-deployments)
 
@@ -45,20 +46,24 @@ ms.locfileid: "53903794"
 
 ![部署圈的图像](images/deployment-rings.png)
 
+基于圈的方法用于标识一组要载入的终结点，并验证是否满足特定条件，然后再继续将服务部署到更大的设备集。 你可以定义每个圈的退出条件，并确保它们满足，然后再移动到下一个圈。
 
-基于圈的方法用于标识要载入的一组终结点，并验证是否满足特定条件，然后再继续将服务部署到更大的设备集。 你可以定义每个圈的退出条件，并确保它们满足，然后再移动到下一个圈。
-
-采用基于圈的部署有助于减少推出服务时可能出现的潜在问题。 通过先试用一定数量的设备，你可以识别潜在问题并减少可能出现的潜在风险。 
+采用基于圈的部署有助于减少推出服务时可能出现的潜在问题。 通过先试用一定数量的设备，你可以识别潜在问题并减少可能出现的潜在风险。
 
 表 1 提供了您可能使用的部署圈的示例。
 
-**表 1**
+**表 1：**
 
-|部署环|说明
+<br>
+
+****
+
+|部署环|说明|
 |---|---|
-评估 | 圈 1：标识 50 个系统用于试点测试
-试点 | 圈 2：标识生产环境中的下 50-100 个终结点
-完全部署 | 圈 3：以较大增量向其余环境推出服务
+|评估|圈 1：标识 50 个系统用于试点测试|
+|试点|圈 2：标识生产环境中的下 50-100 个终结点|
+|完全部署|圈 3：以较大增量向其余环境推出服务|
+|
 
 ### <a name="exit-criteria"></a>退出条件
 
@@ -77,36 +82,45 @@ ms.locfileid: "53903794"
 
 Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 在此圈中，确定要载入的几个设备，并基于定义的退出条件，决定继续下一个部署圈。
 
-下表显示了受支持的终结点以及可用于将设备载入服务的相应工具。 
+下表显示了受支持的终结点以及可用于将设备载入服务的相应工具。
 
-| 终结点     | 部署工具                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br> 注意：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。<br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
-| **Linux Server** | [本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [基于应用](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
+<br>
+
+****
+
+|终结点|部署工具|
+|---|---|
+|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> **注意**：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。 <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[本地脚本](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [移动设备管理](mac-install-with-other-mdm.md)|
+|**Linux Server**|[本地脚本](linux-install-manually.md) <p> [百分百](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[基于应用](ios-install.md)|
+|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
+|
 
 ### <a name="full-deployment"></a>完全部署
 
-在此阶段，可以使用规划 [部署材料来帮助](deployment-strategy.md) 你规划部署。 
+在此阶段，可以使用规划 [部署材料来帮助](deployment-strategy.md) 你规划部署。
 
 使用以下材料选择最适合贵组织的适用于终结点的 Microsoft Defender 体系结构。
 
-|**项**|**说明**|
-|:-----|:-----|
-|[![Microsoft Defender for Endpoint 部署策略缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>
+<br>
+
+****
+
+|项目|说明|
+|---|---|
+|[![Microsoft Defender for Endpoint 部署策略缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) \|[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)  |体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>|
 
 ## <a name="existing-deployments"></a>现有部署
 
 ### <a name="windows-endpoints"></a>Windows终结点
 
-对于 Windows 和/或 Windows 服务器，可以使用 SUVP) 安全更新验证计划选择多个计算机在修补 (之前提前测试 (**SVP) 。**
+对于 Windows 和/或 Windows 服务器，可以使用安全更新验证计划 (**SUVP**) 在修补) 之前，提前选择几台计算机测试 (。
 
 有关详细信息，请参阅：
 
 - [什么是安全更新验证计划](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 交互式时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 互动时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 ### <a name="non-windows-endpoints"></a>非Windows终结点
 

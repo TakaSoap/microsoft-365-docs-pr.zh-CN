@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a9184805ee56a5a1154387a91734f1dd2665f82d
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c3a115cc972fa6eeb7d30395f11873c4eb409a09
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254748"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533023"
 ---
-#  <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>下载 Microsoft Defender for Endpoint 客户端分析器
+# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>下载 Microsoft Defender for Endpoint 客户端分析器
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -36,15 +36,11 @@ ms.locfileid: "58254748"
 
 ## <a name="download-client-analyzer-for-windows-os"></a>下载适用于 Windows 操作系统的客户端分析器
 
-1.  可从以下 URL 下载最新稳定版本： <https://aka.ms/MDEAnalyzer>
+1. 可从以下 URL 下载最新稳定版本： <https://aka.ms/MDEAnalyzer>
+2. 可从以下 URL 下载最新预览版： <https://aka.ms/BetaMDEAnalyzer>
 
-2.  可从以下 URL 下载最新预览版： <https://aka.ms/BetaMDEAnalyzer>
+## <a name="download-client-analyzer-for-macos-or-linux"></a>下载适用于 macOS 或 Linux 的客户端分析器
 
-##  <a name="download-client-analyzer-for-macos-or-linux"></a>下载适用于 macOS 或 Linux 的客户端分析器
+1. 最新稳定版本将集成到终结点代理的 MDE 中。 确保运行的是最新版本的[macOS](mac-whatsnew.md)或[Linux。](linux-whatsnew.md)
 
-1.  最新稳定版本将集成到终结点代理的 MDE 中。  
-    确保运行的是最新版本的[macOS](mac-whatsnew.md)或[Linux。](linux-whatsnew.md)
-
-2.  可从以下 URL 直接下载最新预览版： <https://aka.ms/XMDEClientAnalyzer>
-
-
+2. 可从以下 URL 直接下载最新预览版： <https://aka.ms/XMDEClientAnalyzer>

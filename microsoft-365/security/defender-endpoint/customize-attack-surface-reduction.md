@@ -8,18 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 68b322c3ddea8a1f361adc81226c20b6e7febada7f3c1b59662523fc729a2574
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bfdfd2badce75294376d6406ba3d3078f26a9857
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874083"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533071"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -46,7 +46,7 @@ ms.locfileid: "53874083"
 
 可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
 
-有关 [支持](enable-attack-surface-reduction.md#requirements) 的操作系统和其他要求信息的信息，请参阅"启用攻击面减少规则"文章中的要求。
+有关 [受支持的](enable-attack-surface-reduction.md#requirements) 操作系统和其他要求信息的信息，请参阅"启用攻击面减少规则"文章中的要求。
 
 ## <a name="exclude-files-and-folders"></a>排除文件和文件夹
 
@@ -56,36 +56,41 @@ ms.locfileid: "53874083"
 
 勒索软件规则旨在帮助企业客户降低勒索软件攻击的风险，同时确保业务连续性。 默认情况下，勒索软件规则错误应谨慎处理，并防范尚未获得足够信誉和信任的文件。 为了重新强调一下，勒索软件规则仅针对未基于数百万客户的使用情况指标获得足够正面信誉和普遍程度的文件触发。 通常，块是自行解析的，因为每个文件的"信誉和信任"值都会随着无问题使用率的增加而递增升级。
 
-如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC (IOC) 的"允许列表"功能来取消阻止文件本身。  
+如果无法及时解决阻止问题，客户可以自行承担风险，使用自助服务机制或基于IOC () 的"允许列表"功能来取消阻止文件本身。
 
 > [!WARNING]
 > 排除或取消阻止文件或文件夹可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
 
-排除应用于允许排除的所有规则。 您可以为资源指定单个文件、文件夹路径或完全限定的域名。 但是，不能将排除限制到特定规则。
+排除应用于允许排除的所有规则。 可以指定单个文件、文件夹路径或资源的完全限定域名。 但是，不能将排除限制到特定规则。
 
 仅在已排除的应用程序或服务启动时应用排除。 例如，如果为已在运行的更新服务添加排除项，则更新服务将继续触发事件，直到停止并重新启动该服务。
 
 攻击面减少支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 如果在检测你认为不应检测到的文件的规则方面遇到问题，请使用审核模式 [测试规则](evaluate-attack-surface-reduction.md)。
 
-| 规则说明 | GUID |
-|:----|:----|
-| 阻止滥用被攻击的易受攻击的已签名驱动程序 | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
-| 阻止 Adobe Reader 创建子进程 | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| 阻止所有Office应用程序创建子进程 | `d4f940ab-401b-4efc-aadc-ad5f3c50688a` |
-| 阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
-| 阻止来自电子邮件客户端和 Webmail 的可执行内容 | `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550` |
-| 阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| 阻止执行可能混淆的脚本 | `5beb7efe-fd9a-4556-801d-275e5ffc04cc` |
-| 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | `d3e037e1-3eb8-44c8-a917-57927947596d` |
-| 阻止Office应用程序创建可执行内容 | `3b576869-a4ec-4529-8536-b80a7769e899` |
-| 阻止Office代码注入其他进程 | `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84` |
-| 阻止Office应用程序创建子进程 | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| 通过 WMI 事件订阅阻止持久性 | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
-| 阻止源自 PSExec 和 WMI 命令的进程创建 | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
-| 阻止从 USB 运行的不受信任的和未签名的进程 | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| 从宏中阻止 Win32 API Office调用 | `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b` |
-| 使用高级防护抵御勒索软件 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
+<br>
+
+****
+
+|规则说明|GUID|
+|---|---|
+|阻止滥用被攻击的易受攻击的已签名驱动程序|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
+|阻止 Adobe Reader 创建子进程|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
+|阻止所有Office应用程序创建子进程|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
+|阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) |`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
+|阻止来自电子邮件客户端和 Webmail 的可执行内容|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
+|阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
+|阻止执行可能混淆的脚本|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
+|阻止 JavaScript 或 VBScript 启动下载的可执行内容|`d3e037e1-3eb8-44c8-a917-57927947596d`|
+|阻止Office应用程序创建可执行内容|`3b576869-a4ec-4529-8536-b80a7769e899`|
+|阻止Office将代码注入其他进程|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
+|阻止Office应用程序创建子进程|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
+|通过 WMI 事件订阅阻止持久性|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
+|阻止源自 PSExec 和 WMI 命令的进程创建|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
+|阻止从 USB 运行的不受信任的和未签名的进程|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
+|阻止从宏调用 win32 API Office宏|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
+|使用高级防护抵御勒索软件|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
+|
 
 有关 [每个规则的详细信息](attack-surface-reduction.md) ，请参阅攻击面减少主题。
 
@@ -95,7 +100,7 @@ ms.locfileid: "53874083"
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以 **Windows攻击**  >    >  **Microsoft Defender 防病毒Microsoft Defender 攻击防护**  >  **减少的组件**。
+3. 展开树以Windows **攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
@@ -104,7 +109,7 @@ ms.locfileid: "53874083"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右键单击"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell

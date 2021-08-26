@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 501da26d834295e36f4ddafb7e48f08f9b4b75c1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7628a46a2a6d166dcc37b551f2effcb42367084f
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247631"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533119"
 ---
 # <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>使用Windows 10管理工具载入新设备
 
@@ -47,7 +47,7 @@ ms.locfileid: "58247631"
 
 [![显示使用 Defender for Endpoint 的载入设备的 PDF Microsoft Intune](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
 
-请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
+请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
 按照 [Intune 中的说明操作](/intune/advanced-threat-protection)。
 
@@ -74,9 +74,9 @@ ms.locfileid: "58247631"
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
 
-   1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **设备管理**  >  **""载出"。**
+   1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**
 
-   1. 选择Windows 10操作系统。
+   1. 选择Windows 10作为操作系统。
 
    1. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"。**
 
@@ -99,7 +99,7 @@ ms.locfileid: "58247631"
 
 ## <a name="related-topics"></a>相关主题
 
-- [使用Windows 10策略载入设备](configure-endpoints-gp.md)
+- [使用Windows 10载入设备](configure-endpoints-gp.md)
 - [使用Windows 10载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)

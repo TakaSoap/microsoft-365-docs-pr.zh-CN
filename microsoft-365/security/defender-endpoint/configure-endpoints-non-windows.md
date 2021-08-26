@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b74d61f6739ba67e95e291ed287c8abaabe2c1a2079bfae23c6fa3219a0e3f57
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c3350cd45eedb590016e3456274b4e04dda1c51
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869519"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533299"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -38,24 +38,27 @@ ms.locfileid: "53869519"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)。
 
-Defender for Endpoint 为非安全平台Windows集中式安全Windows体验。 你将能够查看来自各种受支持操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。 
+Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种受支持操作系统 (操作系统或操作系统) 警报Microsoft 365 Defender更好地保护组织的网络。
 
 你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关详细信息，请参阅：
-- [Linux 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-linux.md#system-requirements)  
+
+- [Linux 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-linux.md#system-requirements)
 - [macOS 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-mac.md#system-requirements)。
 
 ## <a name="onboarding-non-windows-devices"></a>载入非Windows设备
+
 你需要执行以下步骤来载入非Windows设备：
+
 1. 选择你的首选载入方法：
 
    - 对于 macOS 设备，你可以选择通过 Microsoft Defender for Endpoint 或第三方解决方案载入。 有关详细信息，请参阅 Mac 上的[Microsoft Defender for Endpoint。](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - 对于其他非Windows设备选择"通过第三Windows **集成载入非非集成设备"。**   
-    1. 在导航窗格中，选择 **"合作伙伴和 API**  >  **合作伙伴应用程序"。** 确保列出了第三方解决方案。
+   - 对于其他非Windows设备选择"通过第三Windows集成载入 **非集成设备"。**
+    1. 在导航窗格中，选择"**合作伙伴和 API** \> **合作伙伴应用程序"。** 确保列出了第三方解决方案。
     2. 在 **"合作伙伴应用程序"** 页中，选择支持非Windows合作伙伴。
     3. 单击 **"** 查看"打开合作伙伴的页面。 按照页面上提供的说明进行操作。
-    4. 创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。 仔细阅读权限请求，确保它与所需的服务保持一致。 
-        
+    4. 创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。 仔细阅读权限请求，确保它与所需的服务保持一致。
+
 2. 按照第三方解决方案的说明运行检测测试。
 
 ## <a name="offboard-non-windows-devices"></a>载出非Windows设备
@@ -63,13 +66,13 @@ Defender for Endpoint 为非安全平台Windows集中式安全Windows体验。 �
 1. 按照第三方文档将第三方解决方案与 Microsoft Defender for Endpoint 断开连接。
 
 2. 删除 Azure AD 租户中第三方解决方案的权限。
-   1. 登录 [Azure 门户](https://portal.azure.com)。
+   1. 登录到 [Azure 门户](https://portal.azure.com)。
    2. 选择 **Azure Active Directory > Enterprise应用程序"。**
    3. 选择要离开的应用程序。
    4. 选择" **删除"** 按钮。
 
-
 ## <a name="related-topics"></a>相关主题
+
 - [载入 Windows 10 设备](configure-endpoints.md)
 - [载入服务器](configure-server-endpoints.md)
 - [配置代理和 Internet 连接设置](configure-proxy-internet.md)

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 了解如何解决 Windows 365 商业云电脑的安装问题。
 ms.date: 08/13/2021
-ms.openlocfilehash: b639453ef55960a3526fa8354dc95efb2653f9c5
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5602df4eaf140fec86a28252bb88763bd6417f50
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507336"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532927"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>解决 Windows 365 商业版云电脑设置问题
 
@@ -45,19 +45,19 @@ ms.locfileid: "58507336"
 2. 在 **"管理Azure Active Directory"** 下，选择"**查看"。**
 3. 在左侧导航中的"管理 **"下**，选择 **"设备"，** 然后选择"**设备设置"。**
 4. 如果用户 **可能将设备加入 Azure AD** 未设置为"全部"，请选择"全部"，然后选择"保存 **"。**
-5. 转到步骤 [2。验证 CloudPCBRT 系统帐户是否处于活动状态](#step-2-verify-that-the-cloudpcbrt-system-account-is-active)。
+5. 转到步骤[2。验证 Windows 365 BPRT 永久用户帐户是否处于活动状态](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)。
 
-## <a name="step-2-verify-that-the-cloudpcbrt-system-account-is-active"></a>步骤 2. 验证 CloudPCBRT 系统帐户是否处于活动状态
+## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>步骤 2. 验证 Windows 365 BPRT 永久用户帐户是否处于活动状态
 
-首次在组织中分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为"CloudPCBPRT"的系统帐户。 请勿删除此帐户，也不对该帐户 (例如更改名称或 UPN) 。 如果删除系统帐户，则安装将失败。 此系统帐户可确保设置过程顺畅，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除此系统帐户，则必须打开一个新的支持请求以将其还原。
+首次在组织中分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久** 用户的系统帐户。 请勿删除此帐户，也不对该帐户 (例如更改名称或 UPN) 。 如果删除系统帐户，则安装将失败。 此系统帐户可确保顺利设置过程，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除此系统帐户，则必须打开一个新的支持请求以将其还原。
 
-若要确保 CloudPCBRT 系统帐户在 Azure AD 中处于活动状态，请使用以下步骤。
+若要确保 Windows 365 BPRT 永久用户系统帐户在 Azure AD 中处于活动状态，请使用以下步骤。
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述"</a>页。
 2. 在左侧导航中的"管理 **"下，** 选择"**用户"。**
-3. 在搜索框中，键入 **CloudPCBRT**，然后按 **Enter。**
-4. 如果存在 CloudPCBRT 系统帐户，请转到步骤 [3。验证基于设备的 MFA 是否已关闭](#step-3-verify-that-device-based-mfa-is-turned-off)。
-5. 如果 CloudPCBRT 系统帐户缺失，请在左侧导航中，选择"新建支持请求"以打开支持票证。 关闭支持票证后，直接转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
+3. 在搜索框中，键入 Windows **365 BPRT 永久用户**，然后按 **Enter。**
+4. 如果存在 Windows 365 BPRT 永久用户帐户，请转到步骤[3。验证基于设备的 MFA 是否已关闭](#step-3-verify-that-device-based-mfa-is-turned-off)。
+5. 如果缺少 Windows 365 BPRT 永久用户系统帐户，请在左侧导航中，选择"新建支持请求"以打开支持票证。 关闭支持票证后，直接转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>步骤 3. 验证基于设备的 MFA 是否已关闭
 
@@ -91,19 +91,19 @@ ms.locfileid: "58507336"
 
 如果根据本文前面步骤 1-4 进行了更改，则现在可以解决根本原因。 若要验证该问题是否得到解决，请转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
-如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，则有两种途径可遵循，具体取决于你是否计划Microsoft Intune管理云电脑。
+如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，有两个途径可遵循，具体取决于你是否计划使用Microsoft Intune管理云电脑。
 
 - 如果你使用或计划将 Microsoft Intune 用于云电脑，请按照路径[A：确保](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs)已正确配置移动 (MDM 和 MAM) 设置中的步骤操作。
-- 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM 注册 中的步骤操作](#path-b-turn-off-automatic-mdm-enrollment)。
+- 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM](#path-b-turn-off-automatic-mdm-enrollment)注册 中的步骤操作。
 
 ### <a name="path-a-use-microsoft-intune-to-manage-your-cloud-pcs"></a>路径 A。Microsoft Intune管理云电脑
 
-如果你已使用 Microsoft Intune，或计划使用它来管理 Windows 365 云电脑，请确保 Azure AD 中的移动 (MDM 和 **MAM)** 设置已正确配置。
+如果你已使用 Microsoft Intune，或计划使用它管理 Windows 365 云电脑，请确保 Azure AD 中的移动 (MDM 和 **MAM)** 设置已正确配置。
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述"</a>页。
-2. 在左侧导航的 **"管理"** 下，选择"移动性 (MDM 和 **MAM) "，** 然后选择 **"Microsoft Intune"。**
+2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
 3. 在"**配置"** 页面上 **，在 MDM** 用户作用域旁边，选择 **"部分**"或"**全部**"，然后选择"保存 **"。**
-4. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM**) "，Microsoft Intune **注册"，然后** 重复步骤 3。
+4. 在左侧导航中，在"管理"下，选择"移动性 **(MDM 和 MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
 
 分配有云电脑的用户必须分配有 Intune 许可证。 CloudPCBPRT 系统帐户无需分配 Intune 许可证。
 
@@ -127,17 +127,17 @@ ms.locfileid: "58507336"
 #### <a name="option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>选项 1. 使用 Azure AD 门户关闭自动 Intune 注册
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述"</a>页。
-2. 在左侧导航的 **"管理"** 下，选择"移动性 (MDM 和 **MAM) "，** 然后选择 **"Microsoft Intune"。**
+2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
 3. 在"**配置"** 页面上，在 MDM 用户作用域旁边，选择"**无**"，然后选择"保存 **"。**
-4. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM**) "，Microsoft Intune **注册"，然后** 重复步骤 3。
+4. 在左侧导航中，在"管理"下，选择"移动性 **(MDM 和 MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
 5. 转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 #### <a name="option-2-use-microsoft-graph-to-turn-off-automatic-intune-enrollment"></a>选项 2：使用 Microsoft Graph关闭自动 Intune 注册
 
-如果你无法根据选项 1 Microsoft Azure配置移动 (MDM 和 **MAM**) 配置 [移动功能。使用 Azure AD](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment)门户关闭自动 Intune 注册，你将看到一条警告，显示"自动 MDM 注册仅适用于Azure AD Premium订阅者"。 在这种情况下，你必须使用 Microsoft Graph在你的环境中关闭 MDM 策略。
+如果无法根据选项 1 中的 **Microsoft Azure， (MDM** 和 MAM) 配置移动 [功能。使用 Azure AD](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment)门户关闭自动 Intune 注册，你将看到一条警告，显示"自动 MDM 注册仅适用于Azure AD Premium订阅者"。 在这种情况下，必须使用 Microsoft Graph在你的环境中关闭 MDM 策略。
 
-1. 转到 "Graph 资源管理器 <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a> "。。
-2. Under **Graph Explorer，** select **Sign in to Graph Explorer**， and sign in with your Global admin account.
+1. 转到 "Graph 资源管理器 <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a> "。
+2. 在 **Graph资源管理器"** 下，选择"登录Graph **资源管理器"，** 然后使用全局管理员帐户登录。
 3. 如果看到"**请求的权限"对话框**，请选择"接受 **"。**
 4. 在帐户名称旁边，选择"更多操作"按钮 (三个点) ，然后选择"**选择权限"。**
 5. 在"**权限"** 窗格中，展开"**策略**"，选择 **"Policy.Read.All"** 和 **"Policy.ReadWrite.MobilityManagement"，** 然后选择"同意 **"。**

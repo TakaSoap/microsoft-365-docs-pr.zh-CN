@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 44db65f08c84cdcce819773958881320d7c99705
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1f61fa2e2d5231d6e9c6a879a0827144282f1285
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507778"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533251"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
 
@@ -37,7 +37,7 @@ ms.locfileid: "58507778"
 
 自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
 
-Microsoft Defender API 具有一个Flow连接器，具有许多功能。
+Microsoft Defender API 具有官方 Power Automate 连接器，具有许多功能。
 
 ![编辑凭据的图像1](images/api-flow-0.png)
 
@@ -55,7 +55,7 @@ Microsoft Defender API 具有一个Flow连接器，具有许多功能。
 
     ![编辑凭据的图像2](images/api-flow-1.png)
 
-3. 为用户选择名称Flow搜索"Microsoft Defender ATP 触发器"作为触发器，然后选择新的警报触发器。
+3. 为用户选择一个Flow，搜索"Microsoft Defender ATP 触发器"作为触发器，然后选择新的警报触发器。
 
     ![编辑凭据的图像3](images/api-flow-2.png)
 

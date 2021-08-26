@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8ddc078e2d62881706c4e78d269268373c7e5fef9f25df3980ff411517f2b056
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869915"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533359"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>可下载的准备情况评估检查器
 
@@ -53,7 +53,7 @@ ms.locfileid: "53869915"
 
 ### <a name="hardware"></a>硬件
 
-设备必须满足特定的硬件要求，以使用Microsoft 托管桌面。 目前，仅 [允许注册特定](../service-description/device-list.md) 批准的设备。 
+设备必须满足特定的硬件要求，以使用Microsoft 托管桌面。 有关详细信息，请参阅设备 [要求](../service-description/device-list.md)。
 
 如果你的设备未通过任何检查，它将与Microsoft 托管桌面。
 
@@ -61,7 +61,7 @@ ms.locfileid: "53869915"
 
 设备能够访问多个[关键终结点，](network.md)以使用Microsoft 托管桌面。
 
-如果工具报告 **"未准备好"** 结果，请参阅详细报告，了解哪些终结点不可访问。 然后调整防火墙或其他网络设置，以确保可以到达这些终结点。
+如果工具报告 **"未** 准备好"结果，请参阅详细报告，了解哪些终结点不可访问。 然后调整防火墙或其他网络设置，以确保可以到达这些终结点。
 
 ### <a name="other-settings"></a>其他设置
 

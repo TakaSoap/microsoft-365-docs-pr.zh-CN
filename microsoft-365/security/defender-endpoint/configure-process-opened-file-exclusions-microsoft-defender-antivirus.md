@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 894f2da81365b176afd7789635a4c9830c6d8ab681478df91e5aedd3a6579cc0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794386"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533287"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>为进程打开的文件配置排除项
 
@@ -29,56 +29,59 @@ ms.locfileid: "53794386"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以从扫描中排除特定进程打开Microsoft Defender 防病毒文件。 请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)项，然后再定义排除列表。
+可以从扫描中排除特定进程打开Microsoft Defender 防病毒文件。 请参阅[推荐列表之前定义](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)排除项。
 
-本文介绍如何配置排除列表。 
+本文介绍如何配置排除列表。
 
 ## <a name="examples-of-exclusions"></a>排除示例
 
-|排除 | 示例 |
+<br>
+
+****
+
+|排除|示例|
 |---|---|
-|计算机上使用特定文件名的任何进程打开的任何文件 | 指定 `test.exe` 将排除由： <br/>`c:\sample\test.exe`<br/>`d:\internal\files\test.exe` |  
-|计算机上由特定文件夹下的任何进程打开的任何文件 | 指定 `c:\test\sample\*` 将排除由：<br/>`c:\test\sample\test.exe`<br/>`c:\test\sample\test2.exe`<br/>`c:\test\sample\utility.exe` | 
-|计算机上特定进程打开的特定文件夹中的任何文件 | 指定 `c:\test\process.exe` 将排除仅打开者的文件 `c:\test\process.exe` |
+|计算机上使用特定文件名的任何进程打开的任何文件|指定 `test.exe` 将排除由： <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
+|计算机上由特定文件夹下的任何进程打开的任何文件|指定 `c:\test\sample\*` 将排除由： <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
+|计算机上特定进程打开的特定文件夹中的任何文件|指定 `c:\test\process.exe` 将排除仅打开者的文件 `c:\test\process.exe`|
+|
 
-
-将进程添加到进程排除列表时，Microsoft Defender 防病毒不会扫描该进程打开的文件，无论这些文件位于何处。 但是，除非进程已添加到文件排除列表 ，否则将扫描进程 [本身](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+将进程添加到进程排除列表时，Microsoft Defender 防病毒不会扫描由该进程打开的文件，无论这些文件位于何处。 但是，除非进程已添加到文件排除列表 ，否则将扫描进程 [本身](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
 排除项仅适用于 [始终打开实时保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)。 它们不适用于计划扫描或按需扫描。
 
-使用组策略对排除列表所做的更改 **将显示在** 应用Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。 但是，在Windows 安全中心所做的更改 **将不会显示在** 组策略列表中。
+使用组策略对排除列表所做的更改 **将显示在** Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。 但是，在Windows 安全中心所做的更改 **将不会显示在** 组策略列表中。
 
 可以在组策略、Microsoft Endpoint Configuration Manager、Microsoft Intune 以及 Windows 安全中心 应用中添加、删除和查看排除列表，并且可以使用通配符进一步自定义列表。
 
 您还可以使用 PowerShell cmdlet 和 WMI 配置排除列表，包括查看列表。
 
-默认情况下，对列表进行的本地更改 (管理员权限的用户进行更改;使用 PowerShell 和 WMI) 所做的更改将与 (定义的列表合并，) 组策略、配置管理器或 Intune 进行部署。 如果发生冲突，组策略列表将优先。
+默认情况下，对列表进行的本地更改 (管理员权限的用户进行更改;使用 PowerShell 和 WMI) 所做的更改将与 (定义的列表合并，并) 组策略、配置管理器或 Intune 部署这些列表。 如果发生冲突，组策略列表将优先。
 
 您可以 [配置本地和](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) 全局定义的排除列表的合并方式，以允许本地更改覆盖托管部署设置。
 
-## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>配置由指定进程打开的文件的排除项列表
+## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>为指定进程打开的文件配置排除项列表
 
-### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Intune从扫描中排除指定进程打开的文件
+### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用Microsoft Intune扫描中排除指定进程打开的文件
 
 有关详细信息，请参阅[Microsoft Intune](/intune/device-restrictions-configure) 和 [Microsoft Defender Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10 防病毒设备限制设置。
 
 ### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Endpoint Manager从扫描中排除指定进程打开的文件
 
-请参阅[如何创建和部署反恶意软件策略：](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)排除设置，了解有关配置当前分支Microsoft Endpoint Manager (的详细信息) 。
+请参阅[如何创建和部署反恶意软件策略：排除](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)设置，详细了解如何Microsoft Endpoint Manager (当前分支) 。
 
-### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用组策略将指定进程打开的文件从扫描中排除
+### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用组策略从扫描中排除指定进程打开的文件
 
 1. 在组策略管理计算机上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，**然后单击编辑。**
 
 2. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以Windows **排除> Microsoft Defender 防病毒 >组件**。
+3. 展开树以Windows **排除 \> Microsoft Defender 防病毒 \> 组件**。
 
 4. 双击进程 **排除项** 并添加排除项：
-
     1. 将选项设置为 **已启用**。
     2. 在"选项 **"部分** 下，单击"**显示..."。**
-    3. 在"值名称"列下，在其自己的 **行中输入每个** 进程。 有关不同类型的进程排除项，请参阅示例表。  在所有进程的值 **列中输入** **0。**
+    3. 在"值名称"列下，在其自己的 **行中输入每个** 进程。 有关不同类型的进程排除项，请参阅示例表。 在所有进程的值 **列中输入** **0。**
 
 5. 单击“**确定**”。
 
@@ -92,16 +95,21 @@ cmdlet 的格式为：
 <cmdlet> -ExclusionProcess "<item>"
 ```
 
-允许将以下内容作为 \<cmdlet> ：
+允许将以下内容作为 \<cmdlet\> ：
 
-|配置操作 | PowerShell cmdlet |
+<br>
+
+****
+
+|配置操作|PowerShell cmdlet|
 |---|---|
-|创建或覆盖列表 | `Set-MpPreference` |
-|添加到列表 | `Add-MpPreference` |
-|从列表中删除项目 | `Remove-MpPreference` |
+|创建或覆盖列表|`Set-MpPreference`|
+|添加到列表|`Add-MpPreference`|
+|从列表中删除项目|`Remove-MpPreference`|
+|
 
->[!IMPORTANT]
->如果已使用 或 创建列表， `Set-MpPreference` `Add-MpPreference` 则再次使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
+> [!IMPORTANT]
+> 如果已使用 或 创建列表， `Set-MpPreference` `Add-MpPreference` 则再次使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
 
 例如，以下代码段将导致 Microsoft Defender AV 扫描排除指定进程打开的任何文件：
 
@@ -109,11 +117,11 @@ cmdlet 的格式为：
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-若要详细了解如何使用 PowerShell 和 Microsoft Defender 防病毒，请参阅使用 PowerShell cmdlet 和 Microsoft Defender 防病毒[cmdlet 管理防病毒](/powershell/module/defender)。
+若要详细了解如何使用 PowerShell 和 Microsoft Defender 防病毒，请参阅使用 PowerShell cmdlet 管理防病毒Microsoft Defender 防病毒[cmdlet。](/powershell/module/defender)
 
 ### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Windows Management Instruction (WMI) 从扫描中排除指定进程打开的文件
 
-对 [**以下属性** 使用 **MSFT_MpPreference** 类的 **Set、Add**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))和 Remove 方法：
+对以下属性使用 MSFT_MpPreference 类的 [**Set、Add** 和 **Remove**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))方法：
 
 ```WMI
 ExclusionProcess
@@ -131,14 +139,19 @@ Set、Add和 **Remove** 的使用类似于 PowerShell 中的对应类 `Set-MpPre
 
 进程排除列表中的通配符的使用不同于在其他排除列表中的使用。
 
-特别是，不能使用问号 () 通配符，并且星号 () 通配符只能在完整路径的末尾 `?` `*` 使用。 在进程排除列表中定义 (时，您仍可以将 (`%ALLUSERSPROFILE%`) 用作通配符。
+特别是，不能使用问号 () 通配符，并且星号 () 通配符只能在完整路径的末尾 `?` `*` 使用。 在进程排除列表中定义 (时，) 变量（如通配符 `%ALLUSERSPROFILE%` ）用作通配符。
 
 下表介绍如何在进程排除列表中使用通配符：
 
-|通配符 | 示例使用 | 示例匹配 |
-|:---|:---|:---|
-|`*` (星号)  <br/><br/> 替换任意数目的字符 | `C:\MyData\*` | 打开的任何文件 `C:\MyData\file.exe` |
-|环境变量 <br/><br/> 在计算排除时，定义的变量将填充为路径 | `%ALLUSERSPROFILE%\CustomLogFiles\file.exe` | 打开的任何文件 `C:\ProgramData\CustomLogFiles\file.exe` |
+<br>
+
+****
+
+|通配符|示例使用|示例匹配|
+|---|---|---|
+|`*` (星号)  <p> 替换任意数目的字符|`C:\MyData\*`|打开的任何文件 `C:\MyData\file.exe`|
+|环境变量 <p> 在计算排除时，定义的变量将填充为路径|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|打开的任何文件 `C:\ProgramData\CustomLogFiles\file.exe`|
+|
 
 ## <a name="review-the-list-of-exclusions"></a>查看排除项列表
 
@@ -158,10 +171,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> 检查 MpCmdRun 的排除项Microsoft Defender 防病毒 2018 年 12 月 (或更高版本发布的 CAMP) 4.18.1812.3。
+> 检查 MpCmdRun 的排除项需要 Microsoft Defender 防病毒 CAMP 版本 4.18.1812.3 (2018 年 12 月) 或更高版本。
 
-
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他首选项Microsoft Defender 防病毒列表
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他Microsoft Defender 防病毒首选项的列表
 
 使用以下 cmdlet：
 
