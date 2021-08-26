@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中管理允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09a710a5fb1518b819704e881534efda15236520
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349964"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533683"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -35,12 +35,12 @@ ms.locfileid: "58349964"
 > [!NOTE]
 >
 > 本文中介绍的一些功能在预览版中，可能会更改，并且并不是在所有组织中都可用。
-> 
+>
 > 如果你的组织没有本文中所述的欺骗功能，请参阅使用欺骗智能策略和 EOP 中的欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
 在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
 
-租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动覆盖筛选裁定Microsoft 365的方法。 租户允许/阻止列表在传入邮件的邮件流期间 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
+租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动替代筛选裁定Microsoft 365的方法。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
 - 要阻止的 URL。
 - 要阻止的文件。
@@ -50,7 +50,7 @@ ms.locfileid: "58349964"
 - 要允许的文件。
 - 要允许的发件人电子邮件或域。
 
-本文介绍如何在 Microsoft 365 Defender 门户或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文介绍如何在 Microsoft 365 Defender 门户或 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置租户允许/阻止列表中的Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -121,19 +121,19 @@ In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **P
      - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
-     - **Notes**
+     - **备注**
    - **URL：**
      - **值**：URL。
      - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
-     - **Notes**
+     - **备注**
    - **Files**
      - **值**：文件哈希。
      - **操作**：值 **Allow** 或 **Block**。
      - **上次更新**
      - **删除 on**
-     - **Notes**
+     - **备注**
    - **网络钓鱼**
      - **欺骗用户**
      - **发送基础结构**
@@ -154,25 +154,25 @@ In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **P
    单击 **"筛选** "筛选结果。 显示在"筛选器 **"飞出** 控件中的可用值取决于所选的选项卡：
 
    - **发件人**
-     - **Action**
+     - **操作**
      - **永不过期**
      - **上次更新日期**
      - **删除 on**
    - **URL**
-     - **Action**
+     - **操作**
      - **永不过期**
      - **上次更新日期**
      - **删除 on**
    - **Files**
-     - **Action**
+     - **操作**
      - **永不过期**
      - **上次更新**
      - **删除 on**
    - **网络钓鱼**
-     - **Action**
+     - **操作**
      - **欺骗类型**
 
-   完成后，单击"应用 **"。** 若要清除现有筛选器，请单击 **"筛选器"，** 在出现的"**筛选器**"飞出中，单击"清除 **筛选器"。**
+   完成后，单击“**应用**”。 若要清除现有筛选器，请单击 **"筛选器"，** 在出现的"**筛选器**"飞出中，单击"清除 **筛选器"。**
 
 4. 完成后，单击“**添加**”。
 
@@ -230,7 +230,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - 允许 IP4v 和 IPv6 地址，但不允许 TCP/UDP 端口。
 
-- 不允许使用文件名扩展名 (例如，test.pdf) 。
+- 例如，不允许使用文件名 (，例如test.pdf) 。
 
 - 不支持 Unicode，但 Punycode 支持。
 
@@ -269,7 +269,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - 不支持或不需要用户名或密码。
 
-- 引号 (或") 无效字符。
+- 引号 ("或") 无效字符。
 
 - 如果可能，URL 应包含所有重定向。
 
@@ -471,7 +471,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - 通配符 (例如 \* ，) 。
 
 - **发送基础结构**：此值指示来自欺骗用户的邮件来源。 有效值包括：
-  - 反向 DNS 查找中的域 (PTR 记录) 源电子邮件服务器的 IP 地址的 IP 地址 (例如，fabrikam.com) 。
+  - 反向 DNS 查找中的域 (PTR 记录) 源电子邮件服务器的 IP 地址 (例如，fabrikam.com) 。
   - 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
 
 下面是用于标识欺骗性发件人的有效域对的一些示例：
@@ -487,6 +487,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 例如，为以下域对添加允许条目：
 
 - **域**： gmail.com
-- **基础结构**：tms.mx.com
+- **基础结构**： tms.mx.com
 
 仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的发件人的邮件 tms.mx.com 反欺骗智能进行检查。

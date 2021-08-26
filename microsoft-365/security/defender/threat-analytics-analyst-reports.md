@@ -1,5 +1,5 @@
 ---
-title: 了解威胁分析中的分析员报告部分
+title: 了解威胁分析中的分析员Microsoft 365 Defender
 ms.reviewer: ''
 description: 了解每个威胁分析报告的分析师报告部分。 了解它如何提供有关威胁、缓解、检测、高级搜寻查询等的信息。
 keywords: 分析员报告， 威胁分析， 检测， 高级搜寻查询， 缓解，
@@ -21,14 +21,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f916137be71dffeaed7e3718286032a17c9f8e04
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a939bd03f983904f438aaa2efe8e3be18c6831cd
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533551"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics"></a>了解威胁分析中的分析员报告
+# <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>了解威胁分析中的分析员Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -47,14 +47,14 @@ ms.locfileid: "51498483"
 _威胁分析报告的分析员报告部分_
 
 ## <a name="scan-the-analyst-report"></a>扫描分析员报告 
-分析员报告的每个部分旨在提供可操作的信息。 尽管报告各不相同，但大多数报告包括下表中描述的部分。
+分析员报告的每个部分旨在提供可操作的信息。 虽然报告各不相同，但大多数报告包含下表中描述的部分。
 
 | "报告"部分 | 说明 |
 |--|--|
 | 执行摘要 | 威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。 |
 | 分析 | 有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面 | 
 | MITRE ATT&观察到的 CK 技术 | 观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/) | 
-| [缓解](#apply-additional-mitigations) | 推荐，可以停止或帮助降低威胁的影响。 本部分还包括作为威胁分析报告的一部分未动态跟踪的缓解。 |
+| [缓解措施](#apply-additional-mitigations) | 推荐可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。 |
 | [检测详细信息](#understand-how-each-threat-can-be-detected) | Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。 | 
 | [高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting) | [用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。 | 
 | 参考 | Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。 | 
@@ -73,7 +73,7 @@ _威胁分析报告的分析员报告部分_
 虽然可以使用"缓解" **选项卡评估** 针对威胁的安全状态，但这些建议可让你采取其他步骤改善安全状况。 仔细阅读分析员报告中的所有缓解指南，并尽可能应用它们。
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>了解如何检测每个威胁
-分析员报告还提供来自 Microsoft Defender 终结点防病毒的检测以及终结点检测和 _响应 (EDR) 功能_。
+分析员报告还提供来自 Microsoft Defender 终结点防病毒的检测以及终结点 _检测和_ 响应 (EDR) 功能。
 
 ### <a name="antivirus-detections"></a>防病毒检测
 这些检测在已打开[Microsoft Defender 防病毒设备上可用](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)。 当这些检测发生在已载入到 Microsoft Defender for Endpoint 的设备上时，它们还会触发警报，以点亮报告中的图表。
@@ -82,7 +82,7 @@ _威胁分析报告的分析员报告部分_
 >除特定于跟踪的威胁的组件或行为外，分析员报告还列出了可标识各种威胁的通用检测。 这些常规检测不会在图表中反映出来。
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>终结点检测和响应 (EDR) 警报
-EDR已载入[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号和其他充当强大信号源的终结点功能（如防病毒、网络保护、防篡改保护）。
+EDR已载入 Microsoft Defender [for Endpoint 的设备引发警报](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号和其他充当强大信号源的终结点功能（如防病毒、网络保护、防篡改保护）。
 
 与防病毒检测列表一样，某些EDR警报旨在一般标记可能未与跟踪威胁关联的可疑行为。 在这种情况下，报告将清楚地将警报标识为"通用"，并且它并不影响报告中的任何图表。
 
@@ -100,7 +100,7 @@ EDR已载入[Microsoft Defender for Endpoint](/windows/security/threat-protectio
 
 
 >[!NOTE]
-> Microsoft Defender for Endpoint 中也提供 [威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 但是，它在 Microsoft Defender for Office 和 Microsoft Defender for Endpoint 之间没有数据集成（Microsoft 365 Defender 威胁分析具有）。
+> Microsoft Defender for Endpoint 中也提供 [威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 但是，它不会在 Microsoft Defender for Office和 Microsoft Defender for Endpoint（威胁分析Microsoft 365 Defender集成）。
 
 
 ## <a name="related-topics"></a>相关主题

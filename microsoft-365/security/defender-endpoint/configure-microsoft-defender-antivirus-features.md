@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 140a6a58cd0ee3f179644b7f4365dd796bea9f8d1966885d4728a58161681982
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 361d807cb60d5e820a0b732bbe20fa49f954d47c
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829503"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533671"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>配置 Microsoft Defender 防病毒软件功能
 
@@ -40,14 +40,12 @@ ms.locfileid: "53829503"
 可以配置以下各种功能：
 
 - 云保护。 请参阅[云提供的保护和Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)
- 
+
 - 始终提供实时保护，包括行为保护、启发式保护以及基于机器学习的保护。 请参阅 [配置行为、启发式和实时保护](configure-protection-features-microsoft-defender-antivirus.md)。
 
 - 最终用户如何与各个终结点上的客户端交互。 参阅以下资源：
-   
-   - [阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-
-   - [阻止或允许用户在本地修改Microsoft Defender 防病毒策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) 
+  - [阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [阻止或允许用户在本地修改Microsoft Defender 防病毒策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > 查看 [管理和配置工具的参考主题](configuration-management-reference-microsoft-defender-antivirus.md)。

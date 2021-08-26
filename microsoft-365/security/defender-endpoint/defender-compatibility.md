@@ -1,6 +1,6 @@
 ---
 title: 防病毒解决方案与 Defender for Endpoint 的兼容性
-description: 了解Windows Defender Microsoft Defender for Endpoint 的工作原理，以及它如何使用第三方反恶意软件客户端。
+description: 了解如何Windows Defender适用于终结点的 Microsoft Defender。 此外，了解使用第三方反恶意软件客户端时 Defender for Endpoint 的工作原理。
 keywords: windows defender 兼容性， defender， 适用于终结点的 Microsoft Defender， 终结点的 defender， 防病毒， mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: 8384c3dca39a1b6b9978b200671be2ed883fe163fcb83e2c86122f951fe0368a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 02c6ecefc5d6393508382c436a9fe82e31200b76
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853987"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533491"
 ---
 # <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>防病毒解决方案与 Microsoft Defender for Endpoint 的兼容性
 
@@ -32,20 +32,19 @@ ms.locfileid: "53853987"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-defendercompat-abovefoldlink)。
 
 Microsoft Defender for Endpoint 代理依赖于Microsoft Defender 防病毒某些功能（如文件扫描）的功能。
 
->[!IMPORTANT]
->Defender for Endpoint 不遵循"Microsoft Defender 防病毒排除"设置。 
+> [!IMPORTANT]
+> Defender for Endpoint 不遵循"Microsoft Defender 防病毒排除"设置。
 
-你必须在 Defender for Endpoint 设备上配置安全智能更新，Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
+你必须在 Defender for Endpoint 设备上配置安全智能更新，Microsoft Defender 防病毒反恶意软件是否处于活动状态。 有关详细信息，请参阅管理Microsoft Defender 防病毒[更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-如果载入的设备受第三方反恶意软件客户端保护，Microsoft Defender 防病毒上的设备将进入被动模式。
+如果已载入的设备受第三方反恶意软件客户端保护，Microsoft Defender 防病毒上的设备将进入被动模式。
 
-Microsoft Defender 防病毒接收更新，mspeng.exe进程将列为正在运行的服务，但它不会执行扫描，并且不会替换正在运行的第三方反恶意软件客户端。
+Microsoft Defender 防病毒将继续接收更新，mspeng.exe *进程将* 列为正在运行的服务。 但是，它不会执行扫描，也不会替换正在运行的第三方反恶意软件客户端。
 
-设备Microsoft Defender 防病毒将禁用，并且设备上的用户将Microsoft Defender 防病毒执行按需扫描或配置大多数选项。
+the Microsoft Defender 防病毒 interface will be disabled. 设备上的用户将无法使用 Microsoft Defender 防病毒执行按需扫描或配置大多数选项。
 
 有关详细信息，请参阅适用于终结点的[Microsoft Defender 防病毒和 Defender 兼容性主题](microsoft-defender-antivirus-compatibility.md)。
