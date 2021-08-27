@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 了解如何解决 Windows 365 商业云电脑的安装问题。
 ms.date: 08/13/2021
-ms.openlocfilehash: 5602df4eaf140fec86a28252bb88763bd6417f50
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532927"
+ms.locfileid: "58598926"
 ---
 # <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>解决 Windows 365 商业版云电脑设置问题
 
@@ -49,15 +49,15 @@ ms.locfileid: "58532927"
 
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>步骤 2. 验证 Windows 365 BPRT 永久用户帐户是否处于活动状态
 
-首次在组织中分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久** 用户的系统帐户。 请勿删除此帐户，也不对该帐户 (例如更改名称或 UPN) 。 如果删除系统帐户，则安装将失败。 此系统帐户可确保顺利设置过程，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除此系统帐户，则必须打开一个新的支持请求以将其还原。
+首次在Windows分配 Windows 365 许可证时，将在 Azure AD 中自动创建名为 **Windows 365 BPRT 永久用户的** 系统帐户。 请勿删除此帐户，也不对该帐户 (例如更改名称或 UPN) 。 如果修改或删除系统帐户，则安装将失败。 此系统帐户可确保设置过程顺畅，并且除 Windows 365 商业版的范围服务功能外，其他任何写入功能或对组织的访问权限。 如果删除或修改此系统帐户，则必须使用具有 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com，并等待 12 小时以刷新令牌。
 
-若要确保 Windows 365 BPRT 永久用户系统帐户在 Azure AD 中处于活动状态，请使用以下步骤。
+若要确保 Windows 365 BPRT 永久用户帐户在 Azure AD 中处于活动状态，请使用以下步骤。
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述"</a>页。
 2. 在左侧导航中的"管理 **"下，** 选择"**用户"。**
 3. 在搜索框中，键入 Windows **365 BPRT 永久用户**，然后按 **Enter。**
 4. 如果存在 Windows 365 BPRT 永久用户帐户，请转到步骤[3。验证基于设备的 MFA 是否已关闭](#step-3-verify-that-device-based-mfa-is-turned-off)。
-5. 如果缺少 Windows 365 BPRT 永久用户系统帐户，请在左侧导航中，选择"新建支持请求"以打开支持票证。 关闭支持票证后，直接转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
+5. 如果 Windows 365 BPRT 永久用户系统帐户丢失或进行了任何更改，请通过分配有 Windows 365 商业版许可证的任何帐户登录到 windows365.microsoft.com。 将在 12 Windows生成新的 365 BPRT 永久用户。 重新生成令牌后，直接转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>步骤 3. 验证基于设备的 MFA 是否已关闭
 
@@ -91,7 +91,7 @@ ms.locfileid: "58532927"
 
 如果根据本文前面步骤 1-4 进行了更改，则现在可以解决根本原因。 若要验证该问题是否得到解决，请转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
-如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，有两个途径可遵循，具体取决于你是否计划使用Microsoft Intune管理云电脑。
+如果未对步骤 1-4 进行更改，则设置失败可能是由环境中 MDM 颁发机构配置导致的。 如果是这样，则有两个途径，具体取决于你是否计划使用Microsoft Intune管理云电脑。
 
 - 如果你使用或计划将 Microsoft Intune 用于云电脑，请按照路径[A：确保](#path-a-use-microsoft-intune-to-manage-your-cloud-pcs)已正确配置移动 (MDM 和 MAM) 设置中的步骤操作。
 - 如果你不计划使用 Microsoft Intune 管理云电脑，请按照路径[B： 关闭自动 MDM](#path-b-turn-off-automatic-mdm-enrollment)注册 中的步骤操作。
@@ -101,9 +101,9 @@ ms.locfileid: "58532927"
 如果你已使用 Microsoft Intune，或计划使用它管理 Windows 365 云电脑，请确保 Azure AD 中的移动 (MDM 和 **MAM)** 设置已正确配置。
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述"</a>页。
-2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
+2. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 然后选择"Microsoft Intune"。 
 3. 在"**配置"** 页面上 **，在 MDM** 用户作用域旁边，选择 **"部分**"或"**全部**"，然后选择"保存 **"。**
-4. 在左侧导航中，在"管理"下，选择"移动性 **(MDM 和 MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
+4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
 
 分配有云电脑的用户必须分配有 Intune 许可证。 CloudPCBPRT 系统帐户无需分配 Intune 许可证。
 
@@ -124,107 +124,14 @@ ms.locfileid: "58532927"
 > [!IMPORTANT]
 > 如果你不是 MDM 管理员，请不要在未咨询 IT 管理员的情况下使用以下任一过程。仅在未设置云电脑时遵循这些过程。 任何配置更改都可能会影响管理环境。 如果需要帮助，请联系 [Intune 支持](/mem/get-support)人员。
 
-#### <a name="option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>选项 1. 使用 Azure AD 门户关闭自动 Intune 注册
+#### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>使用 Azure AD 门户关闭自动 Intune 注册
 
 1. 在 Azure 门户中，转到<a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">"Azure Active Directory概述"</a>页。
-2. 在左侧导航 **中，在**"管理"下，选择"移动性 (MDM **和 MAM) "，** 然后选择"Microsoft Intune"。 
-3. 在"**配置"** 页面上，在 MDM 用户作用域旁边，选择"**无**"，然后选择"保存 **"。**
-4. 在左侧导航中，在"管理"下，选择"移动性 **(MDM 和 MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
+2. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 然后选择"Microsoft Intune"。 
+3. 在 **"配置** "页上，你将看到两个操作之一。 如果你有一个已Azure AD Premium，**请选择** MDM 用户作用域旁边的"无"，然后选择"保存 **"。** 如果没有订阅，请选择 **"Azure AD Premium"。**
+4. 在左侧导航中 **，在"** 管理"下，选择"移动性 (MDM 和 **MAM) "，** 选择"Microsoft Intune **注册**"，然后重复步骤 3。
 5. 转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
-#### <a name="option-2-use-microsoft-graph-to-turn-off-automatic-intune-enrollment"></a>选项 2：使用 Microsoft Graph关闭自动 Intune 注册
-
-如果无法根据选项 1 中的 **Microsoft Azure， (MDM** 和 MAM) 配置移动 [功能。使用 Azure AD](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment)门户关闭自动 Intune 注册，你将看到一条警告，显示"自动 MDM 注册仅适用于Azure AD Premium订阅者"。 在这种情况下，必须使用 Microsoft Graph在你的环境中关闭 MDM 策略。
-
-1. 转到 "Graph 资源管理器 <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a> "。
-2. 在 **Graph资源管理器"** 下，选择"登录Graph **资源管理器"，** 然后使用全局管理员帐户登录。
-3. 如果看到"**请求的权限"对话框**，请选择"接受 **"。**
-4. 在帐户名称旁边，选择"更多操作"按钮 (三个点) ，然后选择"**选择权限"。**
-5. 在"**权限"** 窗格中，展开"**策略**"，选择 **"Policy.Read.All"** 和 **"Policy.ReadWrite.MobilityManagement"，** 然后选择"同意 **"。**
-6. 如果看到"**请求的权限"对话框**，请选中"代表你的组织同意"复选框，然后选择"接受 **"。**
-7. 再次 **展开"** 策略"，验证 **Policy.Read.All** 和 **Policy.ReadWrite.MobilityManagement** 的"状态"列是否显示 **"Consented"，** 然后关闭"**权限"** 窗格。
-8. 从第一个下拉列表中，选择 **"GET"。**
-9. 在文本框中，输入以下字符串，然后选择"**运行查询"：**  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`  
-    此查询检索组织中设备管理策略的列表。
-   "响应预览 **"** 窗格中的结果应类似于以下代码段：
-
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "all",
-                "complianceUrl": null,
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": null,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": null
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    }
-    ```
-10. 如果 `"appliesTo"` 列出的所有策略的值为 **none，** 请转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。 否则，继续执行步骤 11。
-11. 第一个下拉列表中，选择 **PATCH**。
-12. 在文本框中，输入以下字符串：  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
-13. 在"**请求正文"** 部分，输入以下代码段，然后选择"**运行查询"：**
-    ```
-    {
-        "appliesTo": "none"
-    }
-    ```
-14. 在文本框中，输入以下字符串：  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
-15. 在"**请求正文**"部分，保留在步骤 13 中输入的代码段，然后选择"运行 **查询"。**
-16. 第一个下拉列表中，选择 **"GET"。**
-17. 清除"请求正文 **"部分的任何** 文本。
-18. 在文本框中，输入以下字符串，然后选择"**运行查询"：**  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
-
-    "响应"视图 **窗格中** 的结果应类似于以下代码段。
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction=Compliance",
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc”,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    } 
-    ```
-
-    所有 `"appliesTo"` 策略的值现在都设置为 **none**。 此查询验证作用域是否成功更改了组织中设备管理策略。
-19. 转到步骤 [6。重置云电脑](#step-6-reset-your-cloud-pcs)。
 
 ## <a name="step-6-reset-your-cloud-pcs"></a>步骤 6. 重置云电脑
 

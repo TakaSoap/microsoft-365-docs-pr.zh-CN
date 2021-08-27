@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5b1221e47d3e34832ac798fa3be0a37d607c3975
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392125"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611119"
 ---
-#  <a name="get-live-response-results"></a>获取实时响应结果
+# <a name="get-live-response-results"></a>获取实时响应结果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "58392125"
 
 - **验证是否正在运行受支持的 Windows** 版本。
 
-  设备必须运行以下版本之一Windows
+  设备必须运行以下版本之一的 Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -67,7 +67,7 @@ ms.locfileid: "58392125"
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
     - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
 
 ## <a name="permissions"></a>权限

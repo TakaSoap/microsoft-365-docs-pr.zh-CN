@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: e13620413c81e5a6492c85d54d284f48308f5578
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: e6d6c1bb9555f0cc0c80b4a4727a761bd2e99999
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256028"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603193"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -34,11 +34,11 @@ ms.locfileid: "58256028"
 
 ## <a name="before-you-begin"></a>准备工作
 
-组织的Microsoft 365管理员可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
+组织的Microsoft 365管理员很可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
 
 ## <a name="sign-in"></a>登录
 
-1. 转到 ["Microsoft 365 合规中心"，](https://compliance.microsoft.com/)**然后使用全局** Microsoft 365帐户登录。
+1. 转到 ["Microsoft 365 合规中心"，](https://compliance.microsoft.com/)然后使用 **全局** Microsoft 365帐户登录。
 2. 选择 **左侧导航** 窗格中的"合规性管理器"。 你将到达合规性管理器 [仪表板](#understand-the-compliance-manager-dashboard)。
 
 访问合规性管理器的直接链接是 [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) 。
@@ -49,7 +49,7 @@ ms.locfileid: "58256028"
 
 ### <a name="where-to-set-permissions"></a>在何处设置权限
 
-拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 权限可以在 Azure AD Microsoft 365 合规中心和 azure AD Azure Active Directory (中) 。
+拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 可以在 Azure AD Microsoft 365 合规中心和 Azure AD Azure Active Directory (中设置) 。
 
 > [!NOTE]
 > 美国政府高级Community (GCC) 和国防部 (DoD) 环境的客户只能在 Azure AD 中为合规性管理器设置用户权限和角色。 有关 Azure AD 说明和角色类型定义，请参阅下文。
@@ -60,7 +60,7 @@ ms.locfileid: "58256028"
 
 2. 在"**合规中心"** 下拉列表下，选择"**角色"。**
 
-3. 查找要添加一个或多个用户的角色组，并选中组名称左侧的框。  (请参阅 [下面的角色和相关函数列表](#role-types)。 角色组名称模仿角色名称。) 
+3. 查找要添加一个或多个用户的角色组，并选中组名称左侧的框。  (请参阅 [下面的角色和相关函数列表](#role-types)。 角色组名称模仿角色名称) 
 
 4. 在该组的飞出窗格中，选择"成员 **"** 标题下的 **"编辑** "。
 
@@ -74,13 +74,13 @@ ms.locfileid: "58256028"
 
 #### <a name="more-about-azure-ad"></a>有关 Azure AD 的更多信息
 
-若要在 Azure AD 中分配角色和设置权限，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给具有Azure Active Directory。
+若要在 Azure AD 中分配角色和设置权限，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给Azure Active Directory。
 
-具有 Azure AD 标识的用户Office 365或Microsoft 365订阅的用户将无法在 Microsoft 365 合规中心 中访问合规性管理器。 若要在访问合规性管理器方面寻求帮助 [，请联系](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
+具有 Azure AD 标识的用户没有 Office 365 或 Microsoft 365 订阅，将无法在 Microsoft 365 合规中心 中访问合规性管理器。 若要在访问合规性管理器方面寻求帮助 [，请联系](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
 
 ### <a name="role-types"></a>角色类型
 
-下表显示了合规性管理器中每个角色允许的功能。 该表还显示每个 [Azure AD 角色如何](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 映射到合规性管理器角色。 用户至少需要合规性管理器读者角色或 Azure AD 全局读者角色，以访问合规性管理器。
+下表显示了合规性管理器中每个角色允许的功能。 该表还显示每个 [Azure AD 角色如何](/azure/active-directory/roles/permissions-reference) 映射到合规性管理器角色。 用户至少需要合规性管理器读者角色或 Azure AD 全局读者角色，以访问合规性管理器。
 
 
 | 用户可以： | 合规性管理器角色 | Azure AD 角色 | 
@@ -100,7 +100,7 @@ ms.locfileid: "58256028"
 
 ### <a name="set-up-automated-testing"></a>设置自动测试
 
-合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/defender/microsoft-secure-score.md)分数 监视。 可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
+合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/defender/microsoft-secure-score.md)分数 监视。 您可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
 
 默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署Microsoft 365或Office 365时，安全分数需要大约 7 天的时间，以完全收集数据，并纳入合规性分数中。  启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
 
@@ -144,7 +144,7 @@ ms.locfileid: "58256028"
 
 您可以导出一Excel文件，其中包含当前分配给用户的改进操作列表。  该报告还列出了该用户上载的任何证据文件。 此信息可帮助您重新分配开放改进操作。
 
-该报告反映自创建日期起改进操作的状态。 这不是以前对状态或工作分配的所有更改的历史报告， (从改进操作页面导出) 。 [](compliance-manager-improvement-actions.md#export-a-report)
+该报告反映自创建日期起改进操作的状态。 它并不是之前对状态或工作分配的所有更改的历史报告， (从改进操作页面[导出) 。](compliance-manager-improvement-actions.md#export-a-report)
 
 **按照以下步骤按用户导出报告：**
 
@@ -158,7 +158,7 @@ ms.locfileid: "58256028"
 
 5. 从"**选择"** 下拉菜单中，选择"导出 **报告"。**
 
-6. 生成Excel文件后，可以将其打开并保存到本地计算机。
+6. 生成Excel文件后，你可以打开它并将其保存到本地计算机。
 
 #### <a name="reassign-improvement-actions-to-another-user"></a>将改进操作重新分配给其他用户
 
@@ -217,7 +217,7 @@ ms.locfileid: "58256028"
 
 合规性分数特别推荐在最上面。 它根据完成解决关键数据保护标准和法规的改进操作可达到的分数来显示百分比。 Microsoft 操作 [中的](compliance-manager-assessments.md#microsoft-actions-tab)分数（管理我的 Microsoft）也计入合规性分数。
 
-当你第一次访问合规性管理器时，你的初始分数基于Microsoft 365[基线。](compliance-manager-assessments.md#data-protection-baseline-default-assessment) 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
+当你第一次访问合规性管理器时，你的初始分数基于Microsoft 365[基线 。](compliance-manager-assessments.md#data-protection-baseline-default-assessment) 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
 
 **了解更多信息：**[了解如何计算合规性分数](compliance-score-calculation.md)。
 
@@ -260,7 +260,7 @@ ms.locfileid: "58256028"
 
 合规性管理器仪表板显示关键 **改进操作。** 若要查看所有改进操作，请选择仪表板上的"改进操作"选项卡，将您带到您的改进操作页面。 还可以在仪表板上的关键改进操作列表下方选择"查看所有改进操作"，以进入改进操作页面。
 
-"改进操作"页显示组织管理的所有改进操作。 可在每项评估中查看由 Microsoft 管理的操作 (了解有关 [Microsoft](compliance-manager-assessments.md#microsoft-actions-tab) 行动) 。
+"改进操作"页显示组织管理的所有改进操作。 可在每项评估中查看由 Microsoft 管理的操作， ([Microsoft 行动](compliance-manager-assessments.md#microsoft-actions-tab)) 。
 
 如果您的改进操作页上有一个很长的操作列表，则筛选视图可能会很有帮助。 选择 **操作** 列表右上角的"筛选"。 当出现 **"筛选器** "飞出窗格时，根据法规和标准、解决方案和组选择条件。 您还可以通过在右上角选择"组"来自定义视图。 从下拉菜单中，选择以按组、解决方案、类别、操作类型或状态进行查看。
 
@@ -273,7 +273,7 @@ ms.locfileid: "58256028"
 - **组**：将操作分配到的组
 - **解决方案**：可以执行该操作的解决方案
 - **评估**：包含行动的评估
-- **类别**：相关的数据保护类别 (，例如，保护信息、管理设备等) 
+- **类别**：相关的数据保护类别 (例如，保护信息、管理设备等) 
 - **测试状态**：
     - **无** - 未记录状态更新
     - **未评估** - 测试尚未开始
@@ -299,7 +299,7 @@ ms.locfileid: "58256028"
 筛选解决方案视图：
 
 1. 选择 **评估** 列表左上角的"筛选"。
-2. 在" **筛选器** "飞出窗格中，在所需条件旁边放置一个检查 (标准与法规、解决方案、操作类型、合规性管理器组、类别) 。
+2. 在" **筛选器** "飞出窗格中，在所需条件旁边放置一 (标准与法规、解决方案、操作类型、合规性管理器组、类别) 。
 3. 选择" **应用"** 按钮。 筛选器窗格将关闭，并且你将看到已筛选视图。
 
 您还可以通过从评估列表上方的"组"下拉菜单中选择分组类型，来修改视图以查看按组、产品或法规的评估。
@@ -312,7 +312,7 @@ ms.locfileid: "58256028"
 
 1. 在预期解决方案行的"剩余操作" **列下，** 选择超链接编号。 你将看到改进操作屏幕的筛选视图，其中显示了该解决方案的未经测试的改进操作。
 
-2. 在预期解决方案行的"打开解决方案"列下，选择"打开 **"。** 你将在安全与合规中心Microsoft 365解决方案Office 365位置，你可以在这里采取建议的操作。
+2. 在预期解决方案行的"打开解决方案"列下，选择"打开 **"。** 你将在安全与合规中心Microsoft 365 Office 365解决方案或位置，你可以在这里采取建议的操作。
 
 ## <a name="assessments-page"></a>评估页面
 

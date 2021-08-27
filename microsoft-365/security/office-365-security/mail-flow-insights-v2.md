@@ -13,12 +13,12 @@ description: 管理员可以了解安全与合规中心内邮件流仪表板中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b38bb50bd72ea3391cd908e6e058e050003a17b41777df9d8d2663a50977904
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6c960b34933c6a90dcf4a1675ced63dd43f00c07
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56826501"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607065"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -31,7 +31,7 @@ ms.locfileid: "56826501"
 
 管理员可以使用安全与合规中心内的邮件流&发现趋势、见解，并采取措施来解决与组织中邮件流相关的问题。
 
-![安全与合规中心内的邮件&仪表板](../../media/mail-flow-dashboard-v2.png)
+![安全与合规中心内的邮件&仪表板。](../../media/mail-flow-dashboard-v2.png)
 
 可用的见解包括：
 
@@ -67,11 +67,11 @@ ms.locfileid: "56826501"
 
 邮件流仪表板可供以下角色组的成员使用：
 
-- **安全与** 合规中心&组织 (全局管理员) 。
+- **安全与** 合规中心&管理 (全局管理员) 。
 
-- **[Exchange管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory。
+- **[Exchange管理员](/azure/active-directory/roles/permissions-reference#exchange-administrator)** Azure Active Directory。
 
-- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange的成员，请考虑以下问题：
+- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange组的成员，请考虑以下问题：
   - 用户必须直接登录到安全&合规中心 <https://protection.office.com> 。
   - 用户仅对邮件流仪表板具有只读权限。
   - 用户无法访问Microsoft 365 管理中心。
@@ -80,6 +80,6 @@ ms.locfileid: "56826501"
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在哪里可以找到邮件流仪表板
 
-打开安全& <https://protection.office.com> 合规中心，展开"**邮件** 流"，然后选择"仪表板 **"。**
+打开安全& <https://protection.office.com> 合规中心，展开"**邮件流**"，然后选择"仪表板 **"。**
 
 若要直接转到邮件流仪表板，请打开 <https://protection.office.com/mailflow/dashboard> 。

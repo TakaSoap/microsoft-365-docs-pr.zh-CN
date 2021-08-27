@@ -1,5 +1,5 @@
 ---
-title: 在网站中创建自定义检测Microsoft 365 Defender
+title: 在网站中创建自定义检测规则Microsoft 365 Defender
 description: 了解如何创建和管理基于高级搜寻查询的自定义检测规则
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 规则， 架构， kusto， RBAC， 权限， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f17a06aa34274cf61b1979c64a008e7fe70d676b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c1d0095860242492dc8dd5e370f8583aaed7cff4
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254588"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594216"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -42,15 +42,15 @@ ms.locfileid: "58254588"
 
 若要管理自定义检测，需要分配有以下角色之一：
 
-- **安全管理员**- 具有 [此](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)Azure Active Directory 角色的用户可以在 Microsoft 365 Defender门户和其他门户和服务中管理安全设置。
+- **安全管理员**- 具有 [此Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-administrator)角色的用户可以管理 Microsoft 365 Defender 门户和其他门户和服务中的安全设置。
 
-- **安全** 操作员 - 具有 [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)此 Azure Active Directory 角色的用户可以管理警报，并且具有对安全相关功能的全局只读访问权限，包括 Microsoft 365 Defender 门户中的信息。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
+- **安全** 操作员 - 具有 [](/azure/active-directory/roles/permissions-reference#security-operator)此 Azure Active Directory 角色的用户可以管理警报，并且对安全相关功能（包括 Microsoft 365 Defender 门户中所有信息）具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
 
-如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有针对Microsoft 365 Defender的Office，可以使用表而不是表创建自定义 `Email` `Identity` 检测。  
+如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有针对Microsoft 365 Defender的Office，您可以使用表而不是表创建自定义 `Email` `Identity` 检测。  
 
 若要管理所需的权限，全局 **管理员可以** ：
 
-- 在角色 **安全** 管理员下 **分配** 安全管理员Microsoft 365 管理中心 [](https://admin.microsoft.com/)  >  **安全操作员角色**。
+- 在角色 **安全** 管理员 **下分配** 安全管理员Microsoft 365 管理中心 [](https://admin.microsoft.com/)  >  **安全操作员角色**。
 - Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender 安全中心](https://securitycenter.windows.com/)under **设置**  >  **Permissions**  >  **Roles**. 选择相应的角色以分配 **管理安全设置** 权限。
 
 > [!NOTE]
@@ -97,7 +97,7 @@ ms.locfileid: "58254588"
 > 避免使用列筛选自定义 `Timestamp` 检测。 用于自定义检测的数据根据检测频率进行预筛选。
 
 
-下面的示例查询计算使用防病毒检测 () 的唯一设备数，并使用此计数来仅查找检测次数超过 `DeviceId` 五的设备。 若要返回最新 `Timestamp` 和相应的 `ReportId` ，它将 `summarize` 运算符与 `arg_max` 函数一同使用。
+下面的示例查询计算使用防病毒检测 () 的唯一设备数，并使用此计数仅查找检测次数超过 `DeviceId` 五的设备。 若要返回最新 `Timestamp` 和相应的 `ReportId` ，它将 `summarize` 运算符与 `arg_max` 函数一同使用。
 
 ```kusto
 DeviceEvents
@@ -119,7 +119,7 @@ DeviceEvents
 - **警报标题**- 显示的标题与规则触发的警报一起显示
 - **严重性**- 规则标识的组件或活动的潜在风险
 - **类别**— 规则标识的威胁组件或活动
-- **MITRE ATT&CK** 技术 - 一种或多种攻击技术，由 [MITRE ATT](https://attack.mitre.org/)和 CK 框架中记录的规则&攻击技术。 本部分对某些警报类别（包括恶意软件、勒索软件、可疑活动和不需要的软件）隐藏
+- **MITRE ATT&CK** 技术 - 由 [MITRE ATT](https://attack.mitre.org/)和 CK 框架中记录的规则标识的一&攻击技术。 本部分对某些警报类别（包括恶意软件、勒索软件、可疑活动和不需要的软件）隐藏
 - **说明**-有关规则标识的组件或活动详细信息 
 - **建议的操作**- 响应者为响应警报可能执行的其他操作
 
@@ -203,7 +203,7 @@ DeviceEvents
 
 若要查看有关自定义检测规则的综合信息，请转到"搜寻  >  **自定义检测**"，然后选择规则的名称。 然后，您可以查看有关规则的常规信息，包括其运行状态和范围的信息。 该页面还提供触发的警报和操作列表。
 
-![自定义检测规则详细信息页](../../media/custom-detection-details.png)<br>
+![自定义检测规则详细信息页。](../../media/custom-detection-details.png)<br>
 *自定义检测规则详细信息*
 
 您还可以从此页对规则执行以下操作：
@@ -216,20 +216,20 @@ DeviceEvents
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看和管理触发的警报
 
-在规则详细信息屏幕 (搜寻自定义检测  >    >  **[规则名称]**) ，转到触发的警报 ，其中列出了规则匹配项生成的警报。 选择警报以查看有关它的详细信息，并执行以下操作：
+在规则详细信息屏幕中 (搜索自定义检测  >    >  **[规则名称]**) ，转到触发的警报 ，其中列出了规则匹配项生成的警报。 选择警报以查看有关它的详细信息，并执行以下操作：
 
 - 通过将警报的状态和分类设置为 true 或 false (来管理警报) 
 - 将警报链接到事件
 - 运行触发高级搜寻警报的查询
 
 ### <a name="review-actions"></a>查看操作
-在规则详细信息屏幕 (搜寻自定义检测  >    >  **[规则名称]**) ，转到触发的操作，其中列出了基于规则匹配采取的操作。
+在规则详细信息屏幕 (搜寻自定义检测  >    >  **[规则名称]**) ，转到触发的操作，其中列出了基于规则匹配项采取的操作。
 
 >[!TIP]
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
 
 >[!NOTE]
->本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>另请参阅
 - [自定义检测概述](custom-detections-overview.md)

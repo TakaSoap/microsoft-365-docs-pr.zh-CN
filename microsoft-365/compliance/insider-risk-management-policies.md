@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 155195ef2c7083bf6d792ccd1b77584d43ba3be27414ac3b27013af6f774cd09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905499"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569053"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "53905499"
 - **对警报执行的操作数：** 最近 365 天内已确认或已关闭的警报总数。
 - **策略警报有效性**：由总已确认警报来确定的百分比，除以对警报执行的总操作（过去一年已确认或关闭的警报总数）。
 
-![预览体验计划风险管理策略仪表板](../media/insider-risk-policy-dashboard.png)
+![内部风险管理策略仪表板。](../media/insider-risk-policy-dashboard.png)
 
 ## <a name="policy-recommendations-from-analytics-preview"></a>分析中的策略建议（预览）
 
@@ -72,7 +72,7 @@ ms.locfileid: "53905499"
 
 - 确保用于此内部人员风险管理模板的DLP策略中的 **“事件报告”** 规则设置配置为 *高* 严重性级别警报。 *高* 严重性级别是触发事件，且预览体验计划风险管理警报不会根据 DLP 策略中的规则生成，**事件报告** 字段设置为 *低* 或 *中*。
 
-    ![DLP 策略警报设置](../media/insider-risk-DLP-policy-high-severity.png)
+    ![DLP 策略警报设置。](../media/insider-risk-DLP-policy-high-severity.png)
 
      > [!NOTE]
      > 使用内置模板创建新的 DLP 策略时，需要选择 **创建或自定义高级 DLP 规则** 选项，为 *高* 严重级别配置 **事件报告** 设置。
@@ -208,7 +208,9 @@ ms.locfileid: "53905499"
 
 有关任何建议或警告的更多详细信息，请在 **“策略”** 选项卡上选择一个策略以打开策略详细信息卡。 详细信息卡的"通知"部分将显示有关建议和警告的详细信息，包括有关如何解决这些问题的指南。
 
-![预览体验计划风险管理策略运行状况](../media/insider-risk-policy-health.png)
+![内部风险管理策略运行状况。](../media/insider-risk-policy-health.png)
+
+### <a name="notification-messages"></a>通知消息
 
 使用下表详细了解解决潜在问题的建议和警告通知及操作。
 

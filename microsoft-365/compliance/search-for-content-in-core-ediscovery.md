@@ -17,28 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: 搜索可能与核心电子数据展示案例相关的内容。
-ms.openlocfilehash: b71dfdbdee715c41c5aa2f5f1fe235c8a42412c01184a54172cf8846c3e48a14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569017"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>搜索核心电子数据展示案例中的内容
 
-创建核心电子数据展示案例并保留该案例的关注人员后，可以创建并运行一个或多个搜索，以查找与案例相关的内容。 与核心电子数据展示案例关联的搜索不会在"内容"搜索页上Microsoft 365 合规中心。  这些搜索将列在与 **搜索** 关联的核心电子数据展示案例的"搜索"页面上。 这也意味着与案例关联的搜索只能由案例成员访问。
+创建核心电子数据展示案例并保留该案例的关注人员后，可以创建并运行一个或多个搜索，以查找与案例相关的内容。 与核心电子数据展示案例关联的搜索未在"内容搜索"页上Microsoft 365 合规中心。  这些搜索将列在与 **搜索** 关联的核心电子数据展示案例的"搜索"页面上。 这也意味着与案例关联的搜索只能由案例成员访问。
 
 创建核心电子数据展示搜索：
   
-1. 转到 ，然后使用已分配有相应电子数据展示权限且是案例成员用户帐户的 <https://compliance.microsoft.com> 凭据登录。
+1. 转到 ，然后使用用户帐户的凭据登录，该帐户已分配有相应的电子数据展示权限，并且是案例 <https://compliance.microsoft.com> 的成员。
 
-2. 在任务窗格的左侧导航 **Microsoft 365 合规中心，单击**"全部显示"，然后单击"电子数据展示>**核心"。**
+2. 在导航窗格的左侧导航 **Microsoft 365 合规中心，单击**"全部显示"，然后单击"电子数据展示>**核心"。**
 
 3. 在"**核心电子数据展示**"页上，选择要创建关联搜索的案例，然后单击"打开 **案例"。**
 
 4. 在案例 **的主页** 上，单击"搜索 **"** 选项卡，然后单击"新建 **搜索"。**
 
-   ![单击"新建搜索"创建核心电子数据展示搜索](../media/CoreeDiscoverySearch1.png)
+   ![单击"新建搜索"以创建核心电子数据展示搜索。](../media/CoreeDiscoverySearch1.png)
 
    > [!NOTE]
    > “**按 ID 列表搜索**”选项使你可以使用 Exchange ID 列表搜索特定电子邮件和其他邮箱项目。 若要创建 ID 列表搜索，你可以提交一个用于标识要搜索的特定邮箱项的逗号分隔符值 (CSV) 文件。 有关说明，请参阅 [为 ID 列表搜索准备 CSV 文件](csv-file-for-an-id-list-content-search.md)。
@@ -47,7 +47,7 @@ ms.locfileid: "53871404"
 
 6. 在“**位置**”页面上，选择你希望搜索的内容位置。 可以搜索邮箱、站点和公用文件夹。
 
-    ![选择将其置于保留状态的内容位置](../media/ContentSearchLocations.png)
+    ![选择要保留的内容位置。](../media/ContentSearchLocations.png)
   
    1. **Exchange 邮箱**：将切换设置为“**打开**”，然后单击“**选择用户、组或团队**”，以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（将组成员的邮箱置于保留状态）以置于保留状态。 可以搜索与 Microsoft Team（适用于频道消息）、Office 365 组和 Yammer 组关联的邮箱。 有关存储在邮箱中的应用程序数据的详细信息，请参阅 [存储在邮箱中的电子数据展示内容](what-is-stored-in-exo-mailbox.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "53871404"
 
 7. 在“**定义搜索条件**”页面上，键入关键字查询，并在必要时将条件添加到搜索查询。
 
-   ![配置搜索查询](../media/ContentSearchQuery.png)
+   ![配置搜索查询。](../media/ContentSearchQuery.png)
 
    1. 指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 可以使用采用布尔运算符的更复杂查询，例如 **AND**、**OR**、**NOT** 和 **NEAR**。 如果将关键字框留空，则指定内容位置中的所有内容都将包括在搜索结果中。 有关详细信息，请参阅[适用于电子数据展示的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
 
@@ -74,12 +74,12 @@ ms.locfileid: "53871404"
 
 8. 查看搜索设置（并在必要时进行编辑），然后提交搜索以开始搜索。
 
-完成搜索后，您可以预览搜索结果。 如有必要，请单击 **"搜索"** 页上的"刷新"以显示您创建的搜索。
+完成搜索后，您可以预览搜索结果。 如有必要，请单击 **"搜索"****页上** 的"刷新"以显示您创建的搜索。
 
 ## <a name="more-information-about-searching-content-locations"></a>有关搜索内容位置详细信息
 
-- 单击" **选择用户、组或** 团队"以指定要搜索的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 To add recipients to this list， click **Choose users， groups， or teams**， type a name (a minimum of three characters) in the search box， select the check box next to the name， and then click **Choose**.
+- 单击" **选择用户、组或** 团队"以指定要搜索的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将收件人添加到此列表，请单击"选择用户、组或团队"，在搜索框中键入至少三个字符 () ，选中名称旁边的复选框，然后单击"选择 **"。**
 
-- 您可以将非活动邮箱、Microsoft Teams、Yammer 组、Office 365 组和通讯组添加到要搜索的邮箱列表中。 不支持动态通讯组。 如果添加Microsoft Teams组Yammer组或Office 365组，将搜索组或团队邮箱;不搜索其成员的邮箱。
+- 您可以将非活动邮箱、Microsoft Teams、Yammer 组Office 365组和通讯组添加到要搜索的邮箱列表中。 不支持动态通讯组。 如果添加Microsoft Teams、Yammer组或Office 365组，将搜索组或团队邮箱;不搜索其成员的邮箱。
 
 - 若要将网站添加到搜索，请打开切换，然后单击选择 **网站**。 键入要搜索的每个网站的 URL。 还可以为 Microsoft 团队、SharePoint组或 Office 365 组添加 Yammer URL。

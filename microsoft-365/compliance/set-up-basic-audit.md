@@ -19,20 +19,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置基本审核，以便您可以开始搜索组织中用户和管理员执行的审核活动。
-ms.openlocfilehash: 59a1af0946fbfbef6f2a1f5f6b8c3d7be002786239f1665d0ddbff09af254d1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871295"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568957"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
-使用"Microsoft 365基本审核"，可以搜索用户和管理员在不同 Microsoft 365 服务中执行的活动的审核记录。 由于默认情况下为大多数 Microsoft 365 Office 365 组织启用了基本审核，因此只有一些操作需要执行，您和您的组织中的其他人才能搜索审核日志。
+使用"Microsoft 365基本审核"，可以搜索用户和管理员在不同 Microsoft 365服务中执行的活动的审核记录。 由于默认情况下为大多数 Microsoft 365 Office 365 组织启用了基本审核，因此只有一些操作需要执行，您和您的组织中的其他人才能搜索审核日志。
 
 本文讨论设置基本审核所需的以下步骤。
 
-![设置基本审核的步骤](../media/BasicAuditingWorkflow.png)
+![设置基本审核的步骤。](../media/BasicAuditingWorkflow.png)
 
 这些步骤包括确保生成和保留审核记录所需的正确组织订阅和用户许可，以及向安全操作、IT、合规性和法律团队的团队成员分配权限，以便搜索审核日志。
 
@@ -50,9 +50,9 @@ ms.locfileid: "53871295"
 
 必须为管理员和调查团队的成员分配View-Only审核日志或审核日志Exchange Online搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
 
-以下屏幕截图显示了分配给管理中心内"组织管理"角色组的两个Exchange角色。
+以下屏幕截图显示了分配给管理中心中的"组织管理"角色组的两个Exchange角色。
 
-![审核分配给角色组中角色Exchange Online](../media/EACAuditRoles.png)
+![审核分配给角色组中角色Exchange Online。](../media/EACAuditRoles.png)
 
 ## <a name="step-3-search-the-audit-log"></a>步骤 3：搜索审核日志
 
@@ -64,7 +64,7 @@ ms.locfileid: "53871295"
 
 3. 在" **审核** "页上，使用"搜索"选项卡上的以下条件 **配置搜索** 。 
 
-   ![用于搜索的配置审核日志设置](../media/AuditLogSearchToolMCCCallouts.png)
+   ![用于搜索的配置审核日志设置。](../media/AuditLogSearchToolMCCCallouts.png)
 
    1. **日期和时间范围**。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间以本地时间显示。 默认情况下选择最近七天。
   

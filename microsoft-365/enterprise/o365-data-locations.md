@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: ee2e3630901f5c18382f2671ba72f684602a309edd2b28efa22f3ea14567a326
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2bc2af6fcb91b916ef3d4ff9f6397fca71aabb27
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864179"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58532855"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -86,7 +86,7 @@ Microsoft 365 使用服务端技术对静态和传输中的客户数据进行加
 
 ### <a name="what-services-support-multi-geo"></a>哪些服务支持多地理位置功能？
 
-[多地理位置](https://go.microsoft.com/fwlink/p/?linkid=872033)功能适用于 Exchange Online、OneDrive 和 SharePoint Online。 Microsoft 正在研究为其他 Microsoft 365 服务提供多地理位置功能。
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033)可用于 Exchange Online、OneDrive for Business、SharePoint Online 和 Teams。
 
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Microsoft Intune 数据位置有哪些例外情况？
 
@@ -114,7 +114,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | 全球地理位置 | 可以存储客户数据的位置 |
 | --- | --- |
 | 全球地理位置 1 – EMEA（欧洲、中东和非洲） | 奥地利、芬兰、法国、爱尔兰、荷兰 |
-| 全球地理位置 2 – 亚太地区 | 中国香港、日本、马来西亚、新加坡、韩国 |
+| 全球地理位置 2 – 亚太地区 | 香港、日本、马来西亚、新加坡、韩国 |
 | 全球地理位置 3 - 美洲 | 巴西、智利、美国 |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>特定于国家/地区的数据中心市/县位置

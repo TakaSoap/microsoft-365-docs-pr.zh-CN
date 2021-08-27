@@ -1,5 +1,5 @@
 ---
-title: 企业测试环境Microsoft 365数据分类
+title: 适用于企业Microsoft 365环境的数据分类
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南创建和使用企业测试环境中 Microsoft 365文档的保留标签。
-ms.openlocfilehash: c4527f751881750c5f6427ea085baa9516f0bd73
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354304"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552596"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>企业测试环境Microsoft 365数据分类
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业Microsoft 365环境的数据分类
 
 *本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
@@ -32,10 +32,10 @@ ms.locfileid: "58354304"
 - [阶段 2：创建保留标签](#phase-2-create-retention-labels)
 - [阶段 3：将保留标签应用于文档](#phase-3-apply-retention-labels-to-documents)
 
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -51,7 +51,7 @@ ms.locfileid: "58354304"
 在此阶段，为联机文档文件夹的不同保留级别SharePoint保留标签：
 
 1. 使用全局管理员[Microsoft 365](https://security.microsoft.com/homepage)登录安全中心。
-1. 从浏览器 **的"主页 - Microsoft 365** 安全"选项卡中，选择"**分类**  >  **保留标签"。**
+1. 从浏览器 **的"** 主页 - Microsoft 365安全"选项卡中，选择"**分类保留**  >  **标签"。**
 1. 选择“**创建标签**”。
 1. 在"**命名标签"窗格中****，在"** 命名标签"中 **输入**"内部公用"，然后选择"下一步 **"。**
 1. 在"**文件计划描述符"窗格中**，选择"下一 **步"。**
@@ -85,24 +85,24 @@ ms.locfileid: "58354304"
 1. 在" **团队网站名称"** 框中，输入 **SensitiveFiles**。
 1. 在"**团队网站说明"** 框中 **，SharePoint敏感文件的网站"。**
 1. 在 **"隐私设置**"**中，选择"专用 - 只有成员可以访问此网站**"，然后选择"下一 **步"。**
-1. 在 **"Who是否要添加？"窗格中，** 选择"完成 **"。**
+1. 在 **"Who是否要添加？"窗格中**，选择"完成 **"。**
     
 接下来，为敏感保留标签配置 SensitiveFiles 团队网站的 Documents 文件夹。
   
 1. 在浏览器 **的"SensitiveFiles"** 选项卡中，选择"文档 **"。**
 1. 选择 **"设置** 图标，然后选择"库 **设置"。**
 1. 在 **"权限和管理"下**，**选择"将标签应用于此列表或库中的项目"。** 如果未显示此选项，则尚未发布保留标签。 稍后尝试执行此步骤。
-1. 在 **设置应用标签**"中，选择下拉框中的"敏感"，然后选择"保存 **"。**
+1. 在 **设置应用标签**"中 **，选择下** 拉框中的"敏感"，然后选择"保存 **"。**
 
 接下来，在 SensitiveFiles 网站中创建新文档并更改其保留标签。
     
 1. 在"文档"文件夹中，选择"**新建**  >  **Word 文档"。**
 1. 在空白文档中输入一些文本。 等待保存文本。
 1. 在菜单栏上，选择"**共享文档"。**
-1. 在文件 **Document.docx，** 选择垂直省略号， **然后选择详细信息**。
+1. 在文件 **Document.docx** 旁边，选择垂直省略号， **然后选择详细信息**。
 1. 在右窗格的"属性"**部分，****在"** 应用保留标签"下，请注意，文档已自动应用"**敏感**"保留标签。
 1. 单击 **编辑全部**。
-1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密"** 标签，然后选择"保存 **"。**
+1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密**"标签，然后选择"保存 **"。**
 
 ## <a name="next-step"></a>后续步骤
 

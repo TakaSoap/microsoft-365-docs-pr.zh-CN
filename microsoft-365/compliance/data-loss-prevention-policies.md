@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: low
+localization_priority: ''
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -21,18 +21,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+ROBOTS: NOINDEX, NOFOLLOW
+feedback_system: None
 description: 数据丢失防护参考资料
-ms.openlocfilehash: abddda78d8d2eab3cf3931ec4adbc0fa74b8fd657d13f782fc5d93788ec99561
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1eba9c425e66c61e63133d39a844010a499b3eb4
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842745"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595272"
 ---
 # <a name="data-loss-prevention-reference"></a>数据丢失防护参考
 
 > [!IMPORTANT]
-> 此参考主题不再是 DLP Microsoft 365数据丢失防护 (的主要) 资源。 DLP 内容集正在更新和重新构建。 本文中介绍的主题将移动到新的更新的文章。 有关 DLP 详细信息，请参阅 [了解数据丢失防护](dlp-learn-about-dlp.md)。
+> This is reference topic is no longer the main resource for Microsoft 365 data loss prevention (DLP) information. DLP 内容集正在更新和重新构建。 本文中介绍的主题将移动到新的更新的文章。 有关 DLP 详细信息，请参阅 [了解数据丢失防护](dlp-learn-about-dlp.md)。
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -70,7 +72,7 @@ With a DLP policy, you can:
 
 你可在 Microsoft 365 安全合规中心的“数据丢失防护”页上创建和管理 DLP 策略。
 
-![Office 365 安全 &amp; 合规中心的数据丢失防护页](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![安全与合规中心Office 365 &amp; 数据丢失防护页面。](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -82,13 +84,13 @@ A DLP policy contains a few basic things:
 
   - **Conditions** the content must match before the rule is enforced. For example, a rule might be configured to look only for content containing Social Security numbers that's been shared with people outside your organization.
 
-  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification. -->
+  - **Actions** that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification.
 
-可使用规则来满足特定保护要求，然后使用 DLP 策略将常见保护要求组合在一起，例如符合特定规则所需的所有规则。
+You can use a rule to meet a specific protection requirement, and then use a DLP policy to group together common protection requirements, such as all of the rules needed to comply with a specific regulation.
 
-例如，DLP 策略可能会帮助您检测是否存在受健康保险可携性与责任法案 (HIPAA) 约束的信息。 此 DLP 策略可以通过查找与你的组织外部人员共享的包含此敏感信息（条件）的任何文档，来帮助保护所有 SharePoint Online 站点和所有 OneDrive for Business 站点（位置）的 HIPAA 数据（对象），然后阻止对该文档的访问并发送通知（操作）。 这些要求存储为单个规则，并作为一项 DLP 策略组合在一起以简化管理和报告。
+For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint Online sites and all OneDrive for Business sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
 
-![图表显示了 DLP 策略包含位置和规则](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagram shows that DLP policy contains locations and rules.](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png) -->
 
 <!-- MOVED TO LEARN ABOUT ### Locations
 
@@ -105,196 +107,199 @@ DLP policies are applied to sensitive items across Microsoft 365 locations and c
 |Microsoft Cloud App Security |instance |
  -->
 
-如果选择将特定通讯组包含在 Exchange 中，则 DLP 策略的影响范围将仅限于该组的成员。 同样，排除通讯组将把该通讯组的所有成员从策略评估中排除。 可选择将策略的影响范围限定为通讯组列表、动态通讯组和安全组的成员。 一条 DLP 策略可包含不超过 50 个这种包含和排除。
+<!-- moved to dlp-policy-reference.md
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
-如果你选择包含或排除特定 SharePoint 网站，则 DLP 策略可包含不超过 100 个此类包含项和排除项。 尽管存在此限制，你可应用组织范围策略或位置整体策略来超出此限制。
+If you choose to include or exclude specific SharePoint sites, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
-如果你选择包括或排除特定 OneDrive 帐户或组，则 DLP 策略可包含不超过 100 个用户帐户或 50 个组作为包含项或排除项。
+If you choose to include or exclude specific OneDrive accounts or groups, a DLP policy can contain no more than 100 user accounts or 50 groups as inclusion or exclusion.
 
-### <a name="rules"></a>Rules
+### Rules
 
 > [!NOTE]
-> 当未配置警报时，DLP 策略的默认行为是，不发出警报或不触发事件。 这仅适用于默认信息类型。 对于自定义信息类型，即使策略中未定义任何操作，系统也会发出警报。
+> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 
-规则用于对组织的内容强制执行业务要求。 策略包含一条或多条规则，每条规则由多个条件和操作组成。 对于每条规则，只要满足了条件，就会自动执行操作。 规则按顺序执行，从每个策略中优先级最高的规则开始。
+Rules are what enforce your business requirements on your organization's content. A policy contains one or more rules, and each rule consists of conditions and actions. For each rule, when the conditions are met, the actions are taken automatically. Rules are executed sequentially, starting with the highest-priority rule in each policy.
 
-规则还提供一些选项，用于通知用户（使用策略提示和电子邮件通知）和管理员（使用电子邮件事件报告）内容与规则相匹配。
+A rule also provides options to notify users (with policy tips and email notifications) and admins (with email incident reports) that content has matched the rule.
 
-以下是规则的各组成部分，并提供了相应说明。
+Here are the components of a rule, each explained below.
 
-![DLP 规则编辑器的各部分](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
+![Sections of the DLP rule editor.](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
 
-#### <a name="conditions"></a>条件
+#### Conditions
 
-条件非常重要，因为它们确定要查找的信息类型以及执行操作的时间。 例如，你可能会选择忽略包含护照号的内容，除非内容包含 10 个以上此类数字并与组织外部的人员进行了共享。
+Conditions are important because they determine what types of information you're looking for, and when to take an action. For example, you might choose to ignore content containing passport numbers unless the content contains more than 10 such numbers and is shared with people outside your organization.
 
-条件侧重于 **内容**，例如要查找的敏感信息类型，还侧重于 **上下文**，例如共享文档的人员。 你可以使用条件向不同的风险级别分配不同操作。 例如，相较与组织外部人员共享的敏感信息，可在内部共享的敏感内容的风险更低、需要执行的操作更少。
+Conditions focus on the **content**, such as what types of sensitive information you're looking for, and also on the **context**, such as who the document is shared with. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
 
-![显示可用的 DLP 条件的列表](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
+![List showing available DLP conditions.](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
 
-现在的可用条件可以确定以下内容：
+The conditions now available can determine if:
 
-- 包含某种敏感信息的内容。
+- Content contains a type of sensitive information.
 
-- 包含标签的内容。 有关详细信息，请参阅下方的[将保留标签用作 DLP 策略中的条件](#using-a-retention-label-as-a-condition-in-a-dlp-policy)部分。
+- Content contains a label. For more information, see the below section [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
-- 内容是与贵组织的外部还是内部人员共享。
+- Content is shared with people outside or inside your organization.
 
   > [!NOTE]
-  > 在主体组织的 Active Directory 或 Azure Active Directory 租户中具有非来宾帐户的用户是否被视为该组织内部人员。
+  > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
 
-#### <a name="types-of-sensitive-information"></a>敏感信息类型
+#### Types of sensitive information
 
-DLP 策略可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 包含对多个不同地区供你使用的众多常见敏感信息类型的定义，例如信用卡号、银行账号、国民身份证号及护照号等。
+A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers.
 
-![可用敏感信息类型列表](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![List of available sensitive information types.](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
 
-当 DLP 策略查找信用卡号之类的敏感信息类型时，它不只是在查找 16 位数字。 通过以下组合对每种敏感信息类型进行定义和检测：
+When a DLP policy looks for a sensitive information type such as a credit card number, it doesn't simply look for a 16-digit number. Each sensitive information type is defined and detected by using a combination of:
 
-- 关键字。
+- Keywords.
 
-- 用于验证校验和或撰写的内部函数。
+- Internal functions to validate checksums or composition.
 
-- 用于查找模式匹配的正则表达式评估。
+- Evaluation of regular expressions to find pattern matches.
 
-- 其他内容检查。
+- Other content examination.
 
-这将有助于实现高度准确的 DLP 检测，同时减少导致用户工作中断的误报数。
+This helps DLP detection achieve a high degree of accuracy while reducing the number of false positives that can interrupt peoples' work.
 
-#### <a name="actions"></a>操作
+#### Actions
 
-当内容与规则中的条件匹配时，可应用操作以自动保护内容。
+When content matches a condition in a rule, you can apply actions to automatically protect the content.
 
-![可用 DLP 操作列表](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
+![List of available DLP actions.](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
 
-借助可用操作，能够：
+With the actions now available, you can:
 
-- **限制对内容的访问权限**，根据需要，可通过以下三种方式限制对内容的访问权限：
+- **Restrict access to the content** Depending on your need, you can restrict access to content in three ways:
 
-  1. 限制所有人对内容的访问权限。
-  2. 限制组织外部人员对内容的访问权限。
-  3. 将访问权限限制为“拥有链接的任何人”。
+  1. Restrict access to content for everyone.
+  2. Restrict access to content for people outside the organization.
+  3. Restrict access to "Anyone with the link."
 
-  对于网站内容，这就意味着，除主要网站集管理员、文档所有者和上次修改文档的人员外，所有人访问该文档均受限。 这些用户可从文档中删除敏感信息或执行其他补救操作。 如果文档符合规则，则会自动恢复原始权限。 访问文档受阻时，文档将在网站的库中显示一个特殊策略提示图标。
+  For site content, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document. These people can remove the sensitive information from the document or take other remedial action. When the document is in compliance, the original permissions are automatically restored. When access to a document is blocked, the document appears with a special policy tip icon in the library on the site.
 
-  ![显示文档访问被拦截的策略提示](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Policy tip showing access to document is blocked.](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
 
-  对于电子邮件内容，此操作阻止发送该邮件。 根据 DLP 规则的配置方式，发件人将看到 NDR 或（如果规则使用通知）策略提示和/或电子邮件通知。
+  For email content, this action blocks the message from being sent. Depending on how the DLP rule is configured, the sender sees an NDR or (if the rule uses a notification) a policy tip and/or email notification.
 
-  ![警告：必须从邮件中删除未经授权的收件人](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Warning that unauthorized recipients must be removed from the message.](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
 
-#### <a name="user-notifications-and-user-overrides"></a>用户通知和用户覆盖
+#### User notifications and user overrides
 
-你可以使用通知和覆盖向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。 例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。
+You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.
 
-![DLP 规则编辑器的用户通知和用户覆盖部分](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+![User notifications and user overrides sections of DLP rule editor.](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
 
-电子邮件可向发送、共享或最后修改内容的人员发送通知，对于网站内容，则可通知主要网站集管理员和文档所有者。 此外，还可向电子邮件通知中添加人员或删除所选人员。
+The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
 
-除发送电子邮件通知外，用户通知还会显示一条策略提示：
+In addition to sending an email notification, a user notification displays a policy tip:
 
-- 在 Outlook 和 Outlook 网页版中。
+- In Outlook and Outlook on the web.
 
-- 对于 SharePoint Online 或 OneDrive for Business 网站上的文档。
+- For the document on a SharePoint Online or OneDrive for Business site.
 
-- 在 Excel、PowerPoint 和 Word 中（如果文档存储在 DLP 策略中包含的网站上）。
+- In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
 
-电子邮件通知和策略提示解释内容与 DLP 策略相冲突的原因。 如果您选择，电子邮件通知和策略提示可以允许用户通过报告误报或提供业务理由来替代规则。 这可以帮助您让用户了解您的 DLP 策略和强制执行它们，而不会阻止用户完成其工作。 有关替代和误报的信息还记录报告（请参阅下文提供的 DLP 报告）并且包含在事件报告（下一节）中，以便合规部主管可以定期查看此信息。
+The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
 
-以下是 OneDrive for Business 帐户中的策略提示。
+Here's what a policy tip looks like in a OneDrive for Business account.
 
-![针对 OneDrive 帐户中文档的策略提示](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
+![Policy tip for a document in a OneDrive account.](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- 若要了解有关 DLP 策略中的用户通知和策略提示的详细信息，请参阅[使用通知和策略提示](use-notifications-and-policy-tips.md)。
+ To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
 
-#### <a name="alerts-and-incident-reports"></a>警报和事件报告
+#### Alerts and Incident reports
 
-当规则匹配时，你可以向合规部主管 (或你选择 () 的任何) 发送一封包含警报详细信息的警报电子邮件。 此警报电子邮件将提供 [DLP 警报管理仪表板](dlp-configure-view-alerts-policies.md)的链接，法律人员可以使用该链接查看警报和事件的详细信息。 仪表板包含触发警报的事件的详细信息，以及匹配的 DLP 策略和检测到的敏感内容的详细信息。
+When a rule is matched, you can send an alert email to your compliance officer (or any person(s) you choose) with details of the alert. This alert email will carry a link of the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md) which the compliance officer can go to view the details of alert and events. The dashboard contains details of the event that triggered the alert along with details of the DLP policy matched and the sensitive content detected.
 
-此外，你还可以发送包含事件详细信息的事件报告。 此报告中的信息包括，匹配的项目的信息、与规则匹配的实际内容以及上次修改内容的人员的姓名。 对于电子邮件，报告还将与 DLP 策略匹配的原始邮件包含为附件。
+In addition, you can also send an incident report with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
 > [!div class="mx-imgBorder"]
-> ![用于配置事件报告的页面](../media/Alerts-and-incident-report.png)
+> ![Page for configuring incident reports.](../media/Alerts-and-incident-report.png)
 
-DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for Business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成警报和事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
+DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an alert and incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
-## <a name="grouping-and-logical-operators"></a>分组和逻辑运算符
+## Grouping and logical operators
 
-DLP 策略的要求通常比较简单，例如标识包含美国社会安全号码的所有内容。 但在其他情况下，DLP 策略可能需要标识定义更松散的数据。
+Often your DLP policy has a straightforward requirement, such as to identify all content that contains a U.S. Social Security Number. However, in other scenarios, your DLP policy might need to identify more loosely defined data.
 
-例如，若要标识应遵循美国健康保险法案 (HIPAA) 的内容，需要查找：
+For example, to identify content subject to the U.S. Health Insurance Act (HIPAA), you need to look for:
 
-- 包含特定类型敏感信息的内容，例如美国。社会安全号码或毒品管制局 (DEA) 号码。
+- Content that contains specific types of sensitive information, such as a U.S. Social Security Number or Drug Enforcement Agency (DEA) Number.
 
     AND
 
-- 更难以标识的内容，例如有关患者护理的通信，或者提供的医疗服务说明。 识别此内容需要匹配极庞大的关键字列表中的关键字，如国际疾病分类（ICD-9-CM 或 ICD-10-CM）。
+- Content that's more difficult to identify, such as communications about a patient's care or descriptions of medical services provided. Identifying this content requires matching keywords from very large keyword lists, such as the International Classification of Diseases (ICD-9-CM or ICD-10-CM).
 
-使用分组和逻辑运算符（AND、OR），可轻松标识此类定义松散的数据。 创建 DLP 策略时，可以执行以下操作：
+You can easily identify such loosely defined data by using grouping and logical operators (AND, OR). When you create a DLP policy, you can:
 
-- 对敏感信息类型进行分组。
+- Group sensitive information types.
 
-- 选择组内敏感信息类型之间以及组与组之间的逻辑运算符。
+- Choose the logical operator between the sensitive information types within a group and between the groups themselves.
 
-### <a name="choosing-the-operator-within-a-group"></a>选择组内的运算符
+### Choosing the operator within a group
 
-在组中，可选择要将内容视为与规则匹配，是只需满足该组中的任一条件，还是必须满足所有条件。
+Within a group, you can choose whether any or all of the conditions in that group must be satisfied for the content to match the rule.
 
-![显示组内运算符的组](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
+![Group showing the operators within the group.](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
 
-### <a name="adding-a-group"></a>添加组
+### Adding a group
 
-可以快速添加组，该组内可包含自己的条件和运算符。
+You can quickly add a group, which can have its own conditions and operator within that group.
 
-![添加组按钮](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
+![Add group button.](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
 
-### <a name="choosing-the-operator-between-groups"></a>选择组之间的运算符
+### Choosing the operator between groups
 
-在组之间，为使内容与规则匹配，可选择只需满足一个组中的条件，还是必须满足所有组的条件。
+Between groups, you can choose whether the conditions in just one group or all of the groups must be satisfied for the content to match the rule.
 
-例如，内置“**美国 HIPAA**”政策有一项规则，规定在组之间使用 **AND** 运算符，因此它标识的内容将包括：
+For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** operator between the groups so that it identifies content that contains:
 
-- 从组“**PII 标识符**”（至少一个 SSN 数字 **OR** DEA 数字）
+- from the group **PII Identifiers** (at least one SSN number **OR** DEA number)
 
-    AND
+    **AND**
 
-- 从组“**医疗条件**”（至少一个 ICD-9-CM 关键字 **OR** 一个 ICD-10-CM 关键字）
+- from the group **Medical Terms** (at least one ICD-9-CM keyword **OR** ICD-10-CM keyword)
 
-![显示组之间运算符的组](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
+![Groups showing the operator between groups.](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
 
-## <a name="the-priority-by-which-rules-are-processed"></a>处理规则的优先级
+## The priority by which rules are processed
 
-在策略中创建规则时，每条规则都按创建顺序分配了优先级 — 这意味着，首先创建的规则具有第一优先级，创建的第二条规则具有第二优先级，以此类推。
-
-> [!div class="mx-imgBorder"]
-> ![按优先级顺序排列的规则](../media/dlp-rules-in-priority-order.png)
-
-设置多个 DLP 策略后，可以更改一个或多个策略的优先级。 若要执行此操作，请选择一个策略，选择“**编辑策略**”，然后使用“**优先级**”列表指定其优先级。
+When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on.
 
 > [!div class="mx-imgBorder"]
-> ![设置策略的优先级](../media/dlp-set-policy-priority.png)
+> ![Rules in priority order.](../media/dlp-rules-in-priority-order.png)
 
-对照规则评估内容时，按优先级顺序处理规则。 如果内容符合多个规则，按优先级顺序处理规则，并强制实施最严格的操作。 例如，如果内容符合以下所有规则，将实施规则 3，因为它具有最高优先级且最严格：
+After you have set up more than one DLP policy, you can change the priority of one or more policies. To do that, select a policy, choose **Edit policy**, and use the **Priority** list to specify its priority.
 
-- 规则 1：仅通知用户
+> [!div class="mx-imgBorder"]
+> ![Set priority for a policy.](../media/dlp-set-policy-priority.png)
 
-- 规则 2：通知用户、限制访问并允许用户替代
+When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the rules are processed in priority order and the most restrictive action is enforced. For example, if content matches all of the following rules, Rule 3 is enforced because it's the highest priority, most restrictive rule:
 
-- 规则 3：通知用户、限制访问且不允许用户替代
+- Rule 1: only notifies users
 
-- 规则 4：仅通知用户
+- Rule 2: notifies users, restricts access, and allows user overrides
 
-- 规则 5：限制访问
+- Rule 3: notifies users, restricts access, and does not allow user overrides
 
-- 规则 6：通知用户、限制访问且不允许用户替代
+- Rule 4: only notifies users
 
-在此示例中，要注意的是尽管只实施最严格的规则，仍会将所有匹配的规则记录在审核日志中，并显示在 DLP 报表中。
+- Rule 5: restricts access
 
-对于策略提示，请注意:
+- Rule 6: notifies users, restricts access, and does not allow user overrides
 
-- 仅显示来自最高优先级、最具限制性的规则的策略提示。 例如，阻止访问内容的规则所提供的策略提示比起只是发送通知的规则所提供的策略提示，前者的显示优先级高于后者。 这会让用户看不到策略提示的级联方式。
+In this example, note that matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is enforced.
 
-- 如果限制最严格的规则中的策略提示允许用户替换规则，那么替换此规则还会替换与此内容相匹配的所有其他规则。
+Regarding policy tips, note that:
+
+- Only the policy tip from the highest priority, most restrictive rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
+
+- If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
+-->
 
 ## <a name="tuning-rules-to-make-them-easier-or-harder-to-match"></a>调整规则，使它们更易或更难匹配
 
@@ -321,7 +326,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 在实例计数较低（例如，1-9）的规则中，通常会使用较为宽松的操作，如发送用户通知。 在实例计数较高（例如，10–任意）的规则中，使用更严格的操作，如限制访问内容且不允许用户替代。
 
-![规则编辑器中的实例计数](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![规则编辑器中的实例计数。](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
 
 ### <a name="match-accuracy"></a>匹配准确度
 
@@ -353,7 +358,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 因此，如果要为信用卡创建两条互斥的规则，一条用于 65% 的匹配准确度，另一条用于 85% 的匹配准确度，匹配准确度的范围将如下所示。 第一条规则仅选取 65% 模式的匹配项。 第二条规则选取 **至少一个** 85% 匹配项，并且 **可能具有** 其他置信度较低的匹配项。
 
-![两条具有不同匹配准确度范围的规则](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![匹配准确度范围不同的两个规则。](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
 
 由于以上原因，使用不同的匹配准确性创建规则的指南为：
 
@@ -371,7 +376,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 - 已发布的保留标签可能需要一到七天的时间才能同步。有关详细信息，请参阅[当保留标签可应用时](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)（对于已在保留策略中发布的保留标签），以及[保留标签多长时间生效](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)（对于已自动发布的保留标签）。
 - **只有 SharePoint 和 OneDrive 中的项才支持***在策略中使用保留标签。
 
-  ![用作条件的标签](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  ![作为条件的标签。](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   如果你有项目处于保留和处置状态，并且还希望为其应用其他控件，则可能需要在 DLP 策略中使用保留标签，例如：
 
@@ -392,13 +397,13 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 - DLP 策略可对此内容执行 **保护** 操作。 执行这些操作之前，DLP 策略可要求内容除包含标签之外还需满足其他条件。
 
-![可应用于敏感信息的功能图表](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![可应用于敏感信息的功能关系图。](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
 
 请注意，相较于对敏感信息应用的标签或保留策略，DLP 策略的检测功能更强。 DLP 策略可以对包含敏感信息的内容执行保护操作；从内容中删除敏感信息之后，这些保护操作会在下一次扫描内容时撤消。 但如果对包含敏感信息的内容应用了保留策略或标签，则该操作是一次性操作，即使删除了敏感信息也不会撤消该操作。
 
 在 DLP 策略中使用标签作为条件之后，可对包含该标签的内容执行保留和保护操作。 可将带标签的内容完全视为包含敏感信息的内容；标签和敏感信息类型都是用于对内容进行分类的属性，以便对该内容执行操作。
 
-![使用标签作为条件的 DLP 策略图表](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![使用标签作为条件的 DLP 策略关系图。](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
 
 ## <a name="simple-settings-vs-advanced-settings"></a>简单设置与高级设置
 
@@ -416,7 +421,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 为轻松实现这一目标，创建 DLP 策略时，可选择 **使用简单设置**。 这些设置可提供实现最常见 DLP 策略所需的一切，无需使用规则编辑器。
 
-![DLP 简单和高级设置选项](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![简单和高级设置的 DLP 选项。](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
 
 ### <a name="advanced-settings"></a>高级设置
 
@@ -426,7 +431,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 若要快速跳转到某一部分，请单击规则编辑器顶部导航中的项，转到下面的部分。
 
-![DLP 规则编辑器的顶部导航菜单](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
+![DLP 规则编辑器的顶部导航菜单。](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
 
 ## <a name="dlp-policy-templates"></a>DLP 策略模板
 
@@ -434,7 +439,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 预配置的 DLP 策略模板可帮助你检测特定类型的敏感信息，如 HIPAA 数据、PCI-DSS 数据、格雷姆-里奇-比利雷法案数据，甚至是特定区域设置的个人身份信息 (P.I.)。 要使你能够轻松地查找和保护常见类型的敏感信息，包含在 Microsoft 365 中的策略模板已包含你要开始构建策略所需的最常见的敏感信息类型。
 
-![数据丢失防护策略模板列表，重点放在美国爱国者法案模板上](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![数据丢失防护策略模板列表，侧重于美国爱国者法案的模板。](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
 组织可能还有自己特定的要求，在这种情况下可通过选择“**自定义策略**”选项从头创建 DLP 策略。 自定义策略为空，且不包含任何预制定的规则。
 
@@ -452,16 +457,16 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend.
 
-    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
+    > ![Set rule priority.](../media/dlp-set-rule-priority.png)-->
 
 ## <a name="dlp-reports"></a>DLP 报告
 
@@ -477,7 +482,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 此外，您可以使用 DLP 报告在运行时微调您的 DLP 策略。
 
-![安全与合规中心的报表仪表板](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![安全与合规中心的报告仪表板。](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
 
 ## <a name="how-dlp-policies-work"></a>DLP 策略的工作原理
 
@@ -510,7 +515,7 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
 
 在用户添加或更改其站点中的文档时，搜索引擎会扫描内容，以便你稍后对其进行搜索。 同时，还对此内容进行敏感信息扫描，以检查是否进行过共享。 找到的任何敏感信息都安全地存储在搜索索引中，以便仅供合规性团队而不是典型用户进行访问。 已启用的每个 DLP 策略在后台（异步）运行，它会经常检查搜索中是否包含与某个策略相符的内容，并应用操作以防止由于疏忽而导致泄漏。
 
-![显示 DLP 策略如何异步计算内容的图表](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![显示 DLP 策略如何异步评估内容的图表。](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
 
 <!-- conflict with a DLP policy is bad wording --> 最后，文档可能与 DLP 策略相冲突，但也可能符合 DLP 策略。例如，如果用户将信用卡号添加到文档，可能会导致 DLP 策略自动阻止对该文档的访问。但是，如果该用户稍后删除此敏感信息，则下一次根据此策略对此文档进行评估时，该操作（在这种情况下，阻止操作）将自动撤消。
 

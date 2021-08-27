@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: 了解如何使用 Office 365 IP 地址和 URL Web 服务来帮助你更好地标识并区分 Office 365 网络流量。
-ms.openlocfilehash: fd9951d78757c07d543c502515304e6d8792ed5493665aebfb21b1b3ed84d725
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864539"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533443"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP 地址和 URL Web 服务
 
@@ -605,7 +605,7 @@ else:
 
 当 IP 地址和 URL 的变更发布到 Web 服务时，你可以使用几种不同的方法来获取电子邮件通知。
 
-- 若要使用 Microsoft Flow 解决方案，请参阅[使用 Microsoft Flow 接收对 Office 365 IP 地址和 URL 所做的更改的电子邮件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)。
+- 若要使用 Power Automate 解决方案，请参阅[使用 Power Automate 接收对 Office 365 IP 地址和 URL 所做的更改的电子邮件](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)。
 - 若要使用 ARM 模板部署 Azure Logic App，请参阅 [Office 365 更新通知 (v1.1)](https://aka.ms/ipurlws-updates-template)。
 - 若要使用 PowerShell 编写自己的通知脚本，请参阅 [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage)。
 

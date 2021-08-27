@@ -1,6 +1,6 @@
 ---
 title: 评估 Microsoft Defender 防病毒软件
-description: 各种规模的企业都可以使用本指南评估和测试企业在Microsoft Defender 防病毒所提供的Windows 10。
+description: 各种规模的企业都可以使用本指南评估和测试企业在Microsoft Defender 防病毒提供的Windows 10。
 keywords: Microsoft Defender 防病毒， 云保护， 云， 反恶意软件， 安全性， defender， 评估， 测试， 保护， 比较， 实时保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 93bc842f64139bce2ce5615868e77b4418e40f5dac7956711b7f5a08e60fcd42
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f68efdcf74317efeb1683b1cc5efcdf1f43fafa
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794014"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599287"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>评估 Microsoft Defender 防病毒软件
 
@@ -33,13 +33,14 @@ ms.locfileid: "53794014"
 
 使用本指南可确定Microsoft Defender 防病毒保护您免受病毒、恶意软件和可能不需要的应用程序的侵害。
 
->[!TIP]
->还可以访问 Microsoft Defender for Endpoint 演示[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 以确认以下功能是否正常工作并查看这些功能如何工作：
->- 云端保护
->- 快速学习 (包括首次看到时阻止) 
->- 可能不需要的应用程序阻止
+> [!TIP]
+>还可以访问 Microsoft Defender for Endpoint 演示[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认以下功能是否正常工作并查看这些功能如何工作：
+>
+> - 云传递保护
+> - 快速学习 (包括首次看到时阻止) 
+> - 可能不需要的应用程序阻止
 
-它介绍了适用于中小型企业的 Microsoft Defender 防病毒 的重要下一代保护功能，以及这些功能如何增强整个网络的恶意软件检测和保护。
+它介绍了适用于中小型企业的 Microsoft Defender 防病毒 重要下一代保护功能，以及这些功能如何增强整个网络的恶意软件检测和保护。
 
 可以选择单独配置和评估每个设置，也可以一次配置和评估所有设置。 我们已根据典型评估方案对类似的设置进行分组，并包括有关使用 PowerShell 启用设置的说明。
 
@@ -52,9 +53,9 @@ ms.locfileid: "53794014"
 - [下载 PowerShell 脚本以自动配置设置](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> 本指南目前适用于单计算机对Microsoft Defender 防病毒。 启用本指南中所有设置可能不适合实际部署。
+> 本指南当前适用于单计算机对 Microsoft Defender 防病毒。 启用本指南中所有设置可能不适合实际部署。
 >
-> 有关跨网络实际部署和监视 Microsoft Defender 防病毒的最新建议，请参阅部署[Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)。
+> 有关跨网络实际部署和监视 Microsoft Defender 防病毒的最新建议，请参阅部署[Microsoft Defender 防病毒。](deploy-manage-report-microsoft-defender-antivirus.md)
 
 ## <a name="related-topics"></a>相关主题
 

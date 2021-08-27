@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9c1a07c1e68694c64c185f612e237e909d2612d7eb5940aca169e6eaad0e47cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874047"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598989"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>通过软件 ID 获取缺失的 KB
 
@@ -41,10 +41,10 @@ ms.locfileid: "53874047"
 
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md) 了解详细信息。
 
-权限类型 |   权限   |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |Software.Read.All |   "读取威胁和漏洞管理软件信息"
-委派（工作或学校帐户） | Software.Read |   "读取威胁和漏洞管理软件信息"
+应用程序|Software.Read.All|"读取威胁和漏洞管理软件信息"
+委派（工作或学校帐户）|Software.Read|"读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 名称|类型|说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

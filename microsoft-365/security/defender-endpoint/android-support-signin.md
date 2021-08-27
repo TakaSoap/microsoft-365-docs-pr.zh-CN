@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38f7ff40416835e9908757456520f0a90a745dfd
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508270"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595240"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -44,7 +44,7 @@ ms.locfileid: "58508270"
 
 **登录失败：意外***错误，请稍后尝试*
 
-![登录失败错误意外错误的图像](images/f9c3bad127d636c1f150d79814f35d4c.png)
+![登录失败错误意外错误的图像。](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
 **消息：**
 
@@ -62,7 +62,7 @@ ms.locfileid: "58508270"
 
 **登录失败：许可证***无效，请联系管理员*
 
-![登录失败的图像请联系管理员](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![登录失败的图像请联系管理员。](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **邮件：***许可证无效，请联系管理员*
 
@@ -86,7 +86,7 @@ ms.locfileid: "58508270"
 
 某些用户不会阻止 Defender for Android 终结点检测到的网络钓鱼和有害的 Web 威胁。 以下功能在这些设备上不起作用。
 
-![报告不安全网站的图像](images/0c04975c74746a5cdb085e1d9386e713.png)
+![报告不安全的网站的图像。](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 **原因：**
 
@@ -94,7 +94,7 @@ ms.locfileid: "58508270"
 
 用户权限："在后台运行时显示弹出窗口"。
 
-![弹出窗口设置的图像](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+![弹出窗口设置的图像。](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **解决方案：**
 
@@ -112,7 +112,7 @@ ms.locfileid: "58508270"
 
 **原因：**
 
-Xiomi 更改了 Android 11 中的电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
+在 Android 11 中，用户更改了电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
 
 **解决方案：**
 

@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a7b1522046926fb0ec3998564f83fdb3d28cb74
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d9f425f94843f2e37026a87a5eab2c8743acc494
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258198"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533263"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -87,7 +87,7 @@ SPF 将信息添加到邮件信封中，但 DKIM 是在邮件头中 *加密* 签
 租户的所有接受域都将显示在 Microsoft 365 Defender 门户中的 DKIM 页下。 如果未看到，请从 [域页面](/microsoft-365/admin/setup/add-domain#add-a-domain) 添加接受的域。
 添加域后，按照如下所示的步骤配置 DKIM。
 
-步骤 1：单击希望在 DKIM 页上配置 DKIM 的域。
+步骤 1：单击希望在 DKIM 页上配置 DKIM 的域（https://security.microsoft.com/dkimv2 或 https://protection.office.com/dkimv2)。
 
 ![已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 

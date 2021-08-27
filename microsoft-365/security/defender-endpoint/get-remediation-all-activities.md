@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 37cccbc8447f10288369185da8fe1374b4e6690e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 670656ff15f33b28f66da5af9fa105606b99ca01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503139"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594238"
 ---
 # <a name="list-all-remediation-activities"></a>列出所有修正活动
 
@@ -118,7 +118,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
             "requesterEmail": "user1@contoso.com",
             "status": "Active",
             "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
-            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ",
+            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
             "relatedComponent": "Microsoft Silverlight",
             "targetDevices": 18511,
             "rbacGroupNames": [

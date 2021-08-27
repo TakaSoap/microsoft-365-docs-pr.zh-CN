@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfacd679a48c81b7a952638f2944d0fe6a8d9123
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408090"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533275"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -844,7 +844,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate 活动
 
-可以在审核日志中搜索 Power Automate（以前称为 Microsoft Flow）内的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关 Power Automate 活动审核的信息，请参阅博客[现已在 Microsoft 365 合规中心提供 Microsoft Flow 审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+可以在审核日志中搜索 Power Automate（以前称为 Microsoft Flow）内的活动。 这些活动包括创建、编辑和删除流以及更改流权限。 有关 Power Automate 活动审核的信息，请参阅博客[现已在 Microsoft 365 合规中心提供 Power Automate 审核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
 ### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps 活动
 

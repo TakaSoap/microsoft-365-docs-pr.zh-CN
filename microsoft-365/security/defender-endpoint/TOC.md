@@ -600,7 +600,7 @@
 ####### [按漏洞列出计算机](get-machines-by-vulnerability.md)
 
 ##### [如何使用 API - 示例]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [通过 Python 高级搜寻](run-advanced-query-sample-python.md)
 ###### [通过 PowerShell 高级搜寻](run-advanced-query-sample-powershell.md)

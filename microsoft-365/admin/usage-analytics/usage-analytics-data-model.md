@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API 并提供各种服务使用情况的每月Microsoft 365趋势。  '
-ms.openlocfilehash: cf53007e062db85bb17bd64851022218c0d220ba
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533539"
+ms.locfileid: "58603299"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>数据Microsoft 365使用情况分析表
 
-Microsoft 365使用情况分析连接到公开多维数据模型的 API。 使用情况分析Microsoft 365其数据的 API 来自各种通常可用的Graph API。 应用程序使用情况Microsoft 365 API 的功能本身并不普遍可用。
+Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分析Microsoft 365其数据的 API 来自各种普遍可用的Graph API。 应用程序使用情况Microsoft 365 API 的功能本身并不普遍可用。
   
 > [!NOTE]
 > 有关详细信息，请参阅在[Microsoft Microsoft 365 中处理Graph。](/graph/api/resources/report) 
@@ -67,7 +67,7 @@ Microsoft 365使用情况分析连接到公开多维数据模型的 API。 使�
 |Timeframe  <br/> |月份值，此表包含该月份的数据。  <br/> |
 |UPN  <br/> |用户主体名称，用于唯一标识用户，使其能够与其他外部数据源联接。  <br/> |
 |DisplayName  <br/> |用户的显示名称。  <br/> |
-|IDType  <br/> |如果用户是使用 Yammer ID 进行连接的 Yammer 用户，则 ID 类型设置为 1;如果用户使用 Microsoft 365 ID 连接到 Yammer，则设置为 0。  <br/> 值为 1 表示此用户使用其 Yammer ID Yammer而不是其Microsoft 365 ID  <br/> |
+|IDType  <br/> |如果用户是使用其 Yammer ID 进行连接的 Yammer 用户，则 ID 类型设置为 1;如果他们使用 Microsoft 365 ID 连接到 Yammer，则 ID 类型设置为 0。  <br/> 值为 1 表示此用户使用其 Yammer ID Yammer而不是其Microsoft 365 ID  <br/> |
 |HasLicenseEXO  <br/> |如果用户分配有许可证，并且能够使用 Exchange，则设置为 true。  <br/> |
 |HasLicenseODB  <br/> |如果用户分配有许可证，并且能够使用 OneDrive for Business，则设置为 true。  <br/> |
 |HasLicenseSPO  <br/> |如果用户分配有许可证，并且能够使用 SharePoint Online，则设置为 true。  <br/> |
@@ -109,9 +109,9 @@ Microsoft 365使用情况分析连接到公开多维数据模型的 API。 使�
 |ODB_FileSynched  <br/> |此用户在任何 OneDrive for Business 上同步的文件数。  <br/> |
 |ODB_FileSharedInternally  <br/> |此用户从任何用户内部共享OneDrive for Business，或与组内可能包含外部用户 (组) 。  <br/> |
 |ODB_FileSharedExternally  <br/> |此用户从任何 OneDrive for Business 进行外部共享的文件数。  <br/> |
-|ODB_AccessByOwner  <br/> |用户与之交互且位于其自己的 OneDrive for Business 上的文件数。  <br/> |
-|ODB_AccessOthers  <br/> |用户与之交互且位于其他用户的 OneDrive for Business 上的文件数。  <br/> |
-|SPO_GroupFileViewedModified  <br/> |此用户在任何组网站上进行交互的文件数。  <br/> |
+|ODB_AccessedByOwner  <br/> |用户与之交互的网站数，这些网站驻留在其自己的OneDrive for Business。  <br/> |
+|ODB_AccessedByOthers  <br/> |此用户与之交互的网站数，这些网站驻留在另一OneDrive for Business。  <br/> |
+|SPO_GroupFileViewedModified  <br/> |此用户在任何组网站上与之交互的文件数。  <br/> |
 |SPO_GroupFileSynched  <br/> |此用户在任何组网站上进行同步的文件数。  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |已与组织内部用户或组内用户（可能包含外部用户 (共享的文件) 。  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |此用户从任何组网站进行外部共享的文件数。  <br/> |
@@ -142,11 +142,11 @@ Microsoft 365使用情况分析连接到公开多维数据模型的 API。 使�
 |SFB_ConfPartSummary  <br/> |此用户参与的会议会话数。  <br/> |
 
 > [!NOTE]
-> Teams_HasOtherAction用户被视为活跃用户，但组织的聊天消息、一对一呼叫、频道消息、会议总数和会议值为零。
+> Teams_HasOtherAction用户被视为活动用户，但组织的聊天消息、一对一呼叫、频道消息、会议总数和会议值为零。
    
 ### <a name="data-table---tenant-product-usage"></a>数据表 - 租户产品使用情况
 
-此表提供每月的采用数据，这些数据针对每个产品的启用、活跃、返回和首次使用Microsoft 365。 这些值Microsoft 365表示任一产品中的活动使用情况。
+此表提供了每月的采用数据，这些数据针对每个产品的启用、活跃、返回和首次使用Microsoft 365。 这些Microsoft 365值表示任一产品中的活动使用情况。
   
 |**列名称**|**列说明**|
 |:-----|:-----|
@@ -273,12 +273,22 @@ Microsoft 365使用情况分析连接到公开多维数据模型的 API。 使�
 |YAM_ActiveGroups  <br/> |活动组Yammer数。  <br/> |
 |YAM_LikedActiveGroups  <br/> |具有Yammer的活动的组数。  <br/> |
 |YAM_PostedActiveGroups  <br/> |具有Yammer活动的活动组数。  <br/> |
-|YAM_ReadActiveGroups  <br/> |具有Yammer活动的组数。  <br/> |
+|YAM_ReadActiveGroups  <br/> |具有Yammer的组数。  <br/> |
 |YAM_TotalActivities  <br/> |活动Yammer数。  <br/> |
-|YAM_LikedActivities  <br/> |与活动Yammer数。  <br/> |
+|YAM_LikedActivities  <br/> |喜欢的活动Yammer个数。  <br/> |
 |YAM_PostedActivties  <br/> |帖子Yammer数。  <br/> |
 |YAM_ReadActivites  <br/> |读取Yammer数。  <br/> |
-   
+
+### <a name="data-table---tenant-office-licenses"></a>数据表 - 租户Office许可证
+
+此表提供有关用户的许可证分配的按月摘要数据。 
+  
+|**列名称**|**列说明**|
+|:-----|:-----|
+|LicenseName  <br/> |许可证的名称。  <br/> |
+|AssignedCount  <br/> |分配的许可证数。  <br/> |
+|Timeframe  <br/> |月份值。  <br/> |
+
 ### <a name="data-table---tenant-office-activation"></a>数据表 - 租户 Office 激活
 
 该表提供有关跨服务计划Office订阅激活数的数据，例如，Microsoft 365 应用版企业版、Visio Project。 此外，它还提供了有关每个设备 (Android/iOS/Mac/PC) 的激活次数的数据。

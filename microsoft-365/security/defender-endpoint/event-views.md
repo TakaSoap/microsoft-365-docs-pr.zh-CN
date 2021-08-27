@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7752c5af144ca5b02f05bbdd6632df808cf2f63c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257650"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607213"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -57,10 +57,10 @@ ms.locfileid: "58257650"
 
 2. 在 **事件查看器** 中键入"开始"菜单，然后打开 **事件查看器**。
 
-3. 选择 **操作**  >  **导入自定义视图...**
+3. 选择 **操作** \> **导入自定义视图...**
 
    > [!div class="mx-imgBorder"]
-   > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画](images/events-import.gif)
+   > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画。](images/events-import.gif)
 
 4. 导航到您为您想要的自定义视图提取 XML 文件的位置并选择它。
 
@@ -70,18 +70,18 @@ ms.locfileid: "58257650"
 
 ### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件查看器** 中键入"开始"菜单，然后Windows **事件查看器。**
+1. 在 **事件查看器** 中键入"开始"菜单，然后打开Windows **事件查看器。**
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
    > [!div class="mx-imgBorder"]
-   > ![在事件查看器窗口中突出显示"创建自定义视图"选项的动画](images/events-create.gif)
+   > ![突出显示"事件查看器"窗口上的"创建自定义视图"选项的动画。](images/events-create.gif)
 
 3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“**是**”。
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“确定”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
+5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>攻击面减少规则事件的 XML
 
@@ -138,15 +138,15 @@ ms.locfileid: "58257650"
 
 ## <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 **Microsoft** > 应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 **Microsoft** > 服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
 
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft >** 服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
+2. 展开 **"Microsoft** >服务日志> Windows然后转到下表中的"提供程序 **/源**"下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
-   ![使用事件查看器显示动画](images/event-viewer.gif)
+   ![使用事件查看器显示动画。](images/event-viewer.gif)
 
 <br>
 

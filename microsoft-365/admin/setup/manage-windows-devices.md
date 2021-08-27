@@ -25,16 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何启用 Microsoft 365只需几个步骤，Windows 10加入 Active-Directory 的设备。
-ms.openlocfilehash: 9dfc54f334fe8a6eb636bc0d120af479239d41a0
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 2a60437bafc7aae1928d73342555c030a71689cd
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360225"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595500"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>允许加入域Windows 10设备由用户Microsoft 365 商业高级版
 
-如果你的组织在本地Windows Server Active Directory，你可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保留对需要本地身份验证的本地资源的访问权限。
+如果你的组织在本地Windows Server Active Directory，你可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。
 若要设置此保护，你可以实现加入 **混合 Azure AD 的设备**。 这些设备已加入到本地 Active Directory 和 Azure Active Directory。
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>观看：配置混合Azure Active Directory加入
@@ -53,14 +53,14 @@ ms.locfileid: "58360225"
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. 在 Intune 中验证 MDM 颁发机构
 
-转到 ["Endpoint Manager"，](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)在"Microsoft Intune"页面上，选择"设备注册"，然后在"概述"页面上，确保 MDM **颁发** 机构为 **Intune**。
+转到 ["Endpoint Manager"，](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)在"Microsoft Intune"页面上，选择"设备注册"，然后在"概述"页面上，确保 **MDM 颁发机构** 为 **Intune。**
 
 - 如果 **MDM 颁发机构** 为 **"无**"，请单击 **MDM 颁发机构** ，以将它设置为 **Intune**。
 - 如果 **MDM** 颁发机构Microsoft Office 365，请转到设备注册设备并使用右侧添加 MDM 颁发机构对话框添加 Intune MDM 颁发机构 (只有在 MDM 颁发机构设置为 Microsoft Office 365) 时，"添加 MDM 颁发机构  >  "对话框才可用。
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. 验证 Azure AD 是否已启用以加入计算机
 
-- 转到管理中心，然后选择"Azure Active Directory (如果"管理中心"列表中Azure Active Directory") "全部 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> **显示"。**  
+- 转到管理中心，然后选择"Azure Active Directory ("中心"列表中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Azure Active Directory") "全部 **显示"。**  
 - In the **Azure Active Directory admin center，** go to **Azure Active Directory** ， choose **Devices** and then **Device settings**.
 - 验证 **用户是否将设备加入 Azure AD** 已启用 
     1. 若要启用所有用户，请 **设置为全部**。
@@ -70,7 +70,7 @@ ms.locfileid: "58360225"
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. 验证 Azure AD 是否已启用 MDM
 
-- 转到管理中心，然后选择"终结点管理人员" (如果"终结点管理人员 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> "Endpoint Manager"全部显示"，) 
+- 转到管理中心，然后选择"终结点管理人员" ("如果Endpoint Manager管理员，则选择"全部 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>)   
 - In the **Microsoft Endpoint Manager admin center，** go to **Devices**  >  **Windows**  >  **Windows Enrollment** Automatic  >  **Enrollment**.
 - 验证 MDM 用户作用域是否已启用。
 
@@ -103,14 +103,14 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="5-link-the-group-policy"></a>5. 链接组策略
 
-1. 在"组策略管理控制台 (GPMC) 中，右键单击要链接策略的位置，然后从上下文菜单中选择"链接现有 *GPO..."。*
+1. 在组策略管理控制台 (GPMC) 中，右键单击要链接策略的位置，然后从上下文菜单中选择"链接现有 *GPO..."。*
 2. 选择在以上步骤中创建的策略，然后单击"确定 **"。**
 
 ## <a name="get-the-latest-administrative-templates"></a>获取最新的管理模板
 
 如果你看不到使用默认 Azure **AD** 凭据启用自动 MDM 注册的策略，这可能是因为你未为 Windows 10 版本 1803 或更高版本安装 ADMX。 若要解决此问题，请按照以下步骤操作 (注意：最新的 MDM.admx 与) ：
 
-1. 下载[：2020 年 10 月更新 (.admx) 管理模板 Windows 10 2020 (20H2 ](https://www.microsoft.com/download/102157)) 。
+1. 下载[：2020 年 10 月更新 (.admx) 2020 Windows 10 20H2 (管理模板](https://www.microsoft.com/download/102157)) 。
 2. 在域控制器上安装程序包。
 3. 根据管理模板版本导航到文件夹 **：C：\Program Files (x86) \Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**。
 4. 将上述 **路径中的"策略** 定义"文件夹重命名为 **PolicyDefinitions**。
@@ -124,4 +124,4 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 [将域用户同步Microsoft 365 (](manage-domain-users.md)文章) \
 [在管理中心创建组 (](../create-groups/create-groups.md) 文章) \
-[教程：为托管Azure Active Directory配置混合域加入 (](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)文章) 
+[教程：为托管Azure Active Directory配置混合域加入 (](/azure/active-directory/devices/hybrid-azuread-join-managed-domains)文章) 

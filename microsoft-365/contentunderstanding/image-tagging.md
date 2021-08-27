@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 SharePoint Syntex 中的图像标记
-ms.openlocfilehash: b125193b057d506bd18e2bdedcc0fafcefc41f4eae9bd8d73228d1e005bca544
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891676"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552896"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex 中的图像标记
 
@@ -54,4 +54,4 @@ ms.locfileid: "53891676"
 
 6. 单击“**保存**”。
 
-    ![图像标记控件的屏幕截图](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+    ![图像标记控件的屏幕截图。](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)

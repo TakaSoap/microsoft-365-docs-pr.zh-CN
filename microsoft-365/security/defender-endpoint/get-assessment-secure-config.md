@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb8b152bb386354dcdf5a5c95654a10e89d41c1f330c3c805faaff130aec77e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d8010cafa9ea0195e4c77298bea2098eab5c594
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869031"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607337"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>导出每个设备的安全配置评估
 
@@ -40,18 +40,18 @@ ms.locfileid: "53869031"
 
 - [导出安全配置评估 **JSON 响应**](#1-export-secure-configuration-assessment-json-response)：API 提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
+- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-使用 _JSON_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _JSON_ 响应 (通过文件收集的数据是当前状态的当前) ，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
 
-## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出 JSON 响应 (安全配置) 
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出安全配置评估 (JSON 响应) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法说明
 
@@ -87,7 +87,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 > [!NOTE]
 >
-> - 下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
+> - 下表中定义的属性按字母顺序按属性 ID 列出。 运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
 > - 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
 
 <br>
@@ -103,9 +103,9 @@ ConfigurationName|string|配置的显示名称|将设备载入到 Microsoft Defe
 ConfigurationSubcategory|string|配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。|载入设备
 DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
-IsApplicable|bool|指示配置或策略是否适用|true
-IsCompliant|bool|指示是否正确配置了配置或策略|false
-IsExpectedUserImpact|bool|指示是否将应用配置时影响用户|true
+IsApplicable|布尔值|指示配置或策略是否适用|true
+IsCompliant|布尔值|指示是否正确配置了配置或策略|false
+IsExpectedUserImpact|布尔值|指示是否将应用配置时影响用户|true
 OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RecommendationReference|string|对此软件相关建议 ID 的引用。|sca-_-scid-20000
@@ -243,7 +243,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>参数
 
-- sasValidHours：下载 URL 在最长 24 小时 (的有效小时数) 。
+- sasValidHours：下载 URL 的有效期为 (24 小时) 。
 
 ### <a name="25-properties"></a>2.5 属性
 

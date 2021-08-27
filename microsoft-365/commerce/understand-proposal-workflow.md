@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 了解帮助你购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 10d4d531acc0e4a323cde6d1034c626419a58a4b06b40be76c0d292c7679ac28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 165843edcd890f4f7fc743a2b4c4181638409ff7
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852027"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599393"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -63,7 +63,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 - 建议中是否指定人员\
     或
-- 已是[Azure Active Directory全局](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)管理员
+- 已是[Azure Active Directory全局](/azure/active-directory/roles/permissions-reference#global-administrator)管理员
 
 ## <a name="what-is-the-overall-workflow"></a>什么是总体工作流？
 
@@ -85,7 +85,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 计费帐户 | 用于管理帐户设置、发票、付款方式和产品的帐户。 |
 | 计费配置文件 | 有关你的组织的信息，可让你自定义发票中包含哪些项目，以及如何支付发票费用。 计费配置文件包括计费帐户名称、用于特定计费配置文件的付款方式、联系人信息、发票设置以及允许更改计费配置文件、支付帐单以及购买产品和服务的权限。 |
-| 现有协议 | 组织已与 Microsoft 签订的任何协议。 其中可能包括（但不限于）企业协议 Microsoft 产品&服务协议或 Microsoft 客户协议。 |
+| 现有协议 | 组织已与 Microsoft 签订的任何协议。 这包括（但不限于）企业协议 Microsoft 产品&服务协议或 Microsoft 客户协议。 |
 | Microsoft 客户协议 (MCA)  | 概述组织与 Microsoft 之间的帐户的条款和条件的协议。 |
 | Microsoft 代表 | 为你和组织准备建议的授权 Microsoft 代表。 |
 | 组织 | 使用 Microsoft 产品、技术或服务的法律实体。 |
@@ -100,7 +100,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 " **你的组织** "部分显示与之关联的计费帐户。 计费帐户信息从现有计费帐户提取，或由 Microsoft 代表创建。 如果您的组织是另一个组织的关联，则还会看到包含该组织的名称和地址的潜在客户组织部分。
 
-如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，你可以查看和更改组织的地址和联系人信息，在邮件的帐单帐户页面上Microsoft 365 管理中心。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../business-video/get-help-support.md)
+如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在"帐单"页面上查看和更改组织的地址和联系人Microsoft 365 管理中心。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>你的信息
 
@@ -127,9 +127,9 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 | 准备者 | 准备建议的 Microsoft 代表的电子邮件地址。 |
 | 摘要 | 显示与建议关联的小计。 如有必要，还将显示用于计算 (的) 汇率的汇率。 |
 | 建议行项目 | 本节包含建议中包含的所有项目的数量、单价和小计。 |
-| 下一步 | 本节指示必须执行的必要操作。 |
+| 后续步骤 | 本节指示必须执行的必要操作。 |
 
-若要对 MCA 进行签名，请选择"下一步 **"下的按钮**。 如果必须签署补充条款，一个链接将你指向 DocuSign 站点，你可以按照步骤对文档进行签名。
+若要对 MCA 进行签名，请选择"下一步 **"下的按钮**。 如果必须签署补充条款，一个链接将你指向 DocuSign 站点，你将在这里按照步骤对文档进行签名。
 
 在签署任何必要的协议或补充条款后，选择 **"转到"以签出**。
 
@@ -145,7 +145,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 ### <a name="billed-to"></a>计费到
 
-此部分显示用于确定发票中包含哪些项目的计费配置文件，以及如何支付发票。 每个计费周期，你将收到每个计费配置文件的单独发票。 使用支票或数据传输或 Azure 预付来支付发票费用。 如果你还没有计费配置文件，Microsoft 代表会创建一个。 在结帐期间，可以选择其他计费配置文件（如果有）、更改计费配置文件的名称或添加 P.O。 number。 还可以创建新的计费配置文件。
+此部分显示用于确定发票中包含哪些项目的计费配置文件，以及如何支付发票。 每个计费周期，你将收到每个计费配置文件的单独发票。 使用支票或数据传输或 Azure 预付款支付发票费用。 如果你还没有计费配置文件，Microsoft 代表会创建一个。 在结帐期间，可以选择其他计费配置文件（如果有）、更改计费配置文件的名称或添加 P.O。 number。 还可以创建新的计费配置文件。
 
 有关计费配置文件的信息，请参阅管理 [计费配置文件](billing-and-payments/manage-billing-profiles.md)。
 
@@ -156,7 +156,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 - **补充条款** MCA 的任何修正列表，其中包含组织的条款。 例如，此列表可能包括 HIPAA 或 GDPR 条款。
 - **现在购买** 在建议接受工作流结束时签出期间支付的项目列表。
 - **应用于 (费用折扣)** 作为建议一部分收到的折扣列表。
-- **包含** 包含在建议包中的项目列表，无需额外付费。 这些项目中的某些项目将来可能具有相关成本。
+- **包含** 包含在建议包中的项目列表，无需额外付费。 这些项目中的某些项目将来可能具有与其相关的成本。
 
 ### <a name="summary"></a>摘要
 
@@ -168,9 +168,9 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 ## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步骤 4：仅向 Azure (设置新的) 
 
-如果你是一名新客户，并且已购买 Azure 产品作为建议的一部分，下一步是设置新的计费帐户。 若要了解如何，请参阅 [设置 Microsoft 客户协议的计费帐户](/azure/cost-management-billing/manage/mca-setup-account)。
+如果你是一名新客户，并且已购买 Azure 产品作为建议的一部分，下一步是设置新的计费帐户。 若要了解如何，请参阅 [为 Microsoft 客户协议设置计费帐户](/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次对 MCA 进行签名，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[完成企业协议客户协议的计费帐户中的任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次签署 MCA，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[完成企业协议客户协议的计费帐户中的任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>了解发票
 

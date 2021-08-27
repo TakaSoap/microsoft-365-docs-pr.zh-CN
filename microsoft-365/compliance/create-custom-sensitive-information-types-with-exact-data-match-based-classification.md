@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f142ecb530e5b6b3a1db7c146feadbe1a02c314ecd115911e531f6cf94ebd778
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594018"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT () 敏感信息类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT (自定义) 类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -44,7 +44,7 @@ ms.locfileid: "53802514"
 - 更安全地处理敏感信息
 - 与多种 Microsoft 云服务一起使用
 
-![基于 EDM 的分类](../media/EDMClassification.png)
+![基于 EDM 的分类。](../media/EDMClassification.png)
 
 基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如[数据丢失防护策略](dlp-learn-about-dlp.md)或[Microsoft Cloud App Security 文件策略](/cloud-app-security/data-protection-policies)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53802514"
 
 |门户|全球/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 安全中心|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 合规中心|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -95,7 +95,7 @@ ms.locfileid: "53802514"
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
-1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值或以管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
+1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 该文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值，或用管道 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
 数据文件最多可包括以下内容：
    - 高达 1 亿行的敏感数据
    - 每个数据源最多 32 列（字段）
@@ -103,7 +103,7 @@ ms.locfileid: "53802514"
 
 2. 在数据库或 .tsv .csv构造敏感数据，使第一行包含用于基于 EDM 的分类的字段的名称。 在你的文件中，你可能有字段名称，如"ssn"、"birthdate"、"firstname"、"lastname"。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
 
-3. 注意敏感数据字段的格式。 特别是，如果选择了".csv"格式，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将分析为两个单独的字段。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
+3. 注意敏感数据字段的格式。 特别是，如果选择了值"Seattle，WA"，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将分析为两个单独的字段.csv格式。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
@@ -174,7 +174,7 @@ ms.locfileid: "53802514"
 
 在此示例中，如果同时使用 `caseInsensitive` 和 `ignoredDelimiters`，EDM 会将 **FOO-1234** 和 **fOo#1234** 视为完全相同，并将项目归类为患者记录敏感信息类型。
 
-1. 连接安全&安全与合规中心 PowerShell 中的过程，连接安全与合规& [PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+1. 连接安全与&中心 PowerShell 中的过程，连接安全与合规& [PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 要上传数据库架构，请逐一运行下列 cmdlet：
 
@@ -203,7 +203,7 @@ ms.locfileid: "53802514"
 
 1. 按 XML 格式创建一个规则包（采用 Unicode 编码），如下例类似。 （可复制、修改和使用我们的示例。）
 
-      设置规则包时，请确保正确引用 .csv 或 .tsv **edm.xml文件。** 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
+      设置规则包时，请确保正确引用您的 .csv 或 .tsv **edm.xml文件。** 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
       - **RulePack id & ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) 生成 GUID。
 
@@ -383,7 +383,7 @@ ms.locfileid: "53802514"
 - 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
 - 用于上传的计算机上应含有以下内容的目录：
   - EDMUploadAgent
-  - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中所示
+  - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中的内容
   - 输出哈希和 salt 文件
   - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 - 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
@@ -402,7 +402,7 @@ ms.locfileid: "53802514"
 >
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 >
-> （可选）您可以通过运行：在.csv对文件或 .tsv 文件运行验证：
+> （可选）您可以通过运行：在上载.csv对文件或 .tsv 文件运行验证：
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -448,7 +448,7 @@ ms.locfileid: "53802514"
 
    示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项指定管道分隔的文件。
+   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
    此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 6. 运行以下命令，检查“上传”状态：
@@ -488,7 +488,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    - .EdmHash
    - .EdmSalt
 
-2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv .tsv 文件 (PatientRecords) 租户。
+2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv或 .tsv 文件 (PatientRecords) 租户。
 
    若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
@@ -651,7 +651,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 10. 在“**条件**”部分的“**+ 添加条件**”列表中，选择“**内容包含敏感类型**”。
 
-      ![内容包含敏感信息类型](../media/edm-dlp-newrule-conditions.png)
+      ![内容包含敏感信息类型。](../media/edm-dlp-newrule-conditions.png)
 
 11. 搜索你在设置规则包时创建的敏感信息类型，然后选择“**+ 添加**”。
     然后选择“**完成**”。

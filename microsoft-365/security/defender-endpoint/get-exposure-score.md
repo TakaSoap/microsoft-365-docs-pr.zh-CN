@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bc7e1cc6cb19f19fcd9cdd826a6df591abb388313f6680c74a6393e13decd3be
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884795"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610983"
 ---
 # <a name="get-exposure-score"></a>获取曝光分数
 
@@ -37,7 +37,6 @@ ms.locfileid: "53884795"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 检索组织曝光分数。
@@ -46,10 +45,10 @@ ms.locfileid: "53884795"
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 | 权限 | 权限显示名称
-:---|:---|:---
-应用程序 | Score.Read.All | "读取威胁和漏洞管理分数"
-委派（工作或学校帐户） | Score.Read | "读取威胁和漏洞管理分数"
+权限类型|权限|权限显示名称
+---|---|---
+应用程序|Score.Read.All|"读取威胁和漏洞管理分数"
+委派（工作或学校帐户）|Score.Read|"读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -60,8 +59,8 @@ GET /api/exposureScore
 ## <a name="request-headers"></a>请求标头
 
 名称|类型|说明
-:---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+---|---|---
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -85,8 +84,8 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 下面是一个响应示例。
 
->[!NOTE]
->为简洁起见，可能会截断此处显示的响应列表。 
+> [!NOTE]
+> 为简洁起见，可能会截断此处显示的响应列表。
 
 ```json
 {
@@ -94,7 +93,6 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
     "time": "2019-12-03T07:23:53.280499Z",
     "score": 33.491554051195706
 }
-
 ```
 
 ## <a name="see-also"></a>另请参阅
