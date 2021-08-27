@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 00d42e237e5fbe5d0c9fd904bd51c3dc94fd3668d0a12249a46d9cd48f06adad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817841"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550162"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -39,7 +39,7 @@ ms.locfileid: "53817841"
 
 ## <a name="investigate-user-account-entities"></a>调查用户帐户实体
 
-识别在仪表板上显示为"处于风险中的用户" (最活跃警报的用户帐户) 调查凭据可能遭到入侵的情况，或在调查警报或设备时透视关联的用户帐户，以确定具有该用户帐户的设备之间可能的横向移动。
+确定在仪表板上显示为"处于风险中的用户" (最活跃警报的用户帐户) 调查凭据可能遭到入侵的情况，或在调查警报或设备时透视关联的用户帐户，以确定具有该用户帐户的设备之间可能的横向移动。
 
 您可以在以下视图中找到用户帐户信息：
 
@@ -56,11 +56,11 @@ ms.locfileid: "53817841"
 - 与此用户相关的警报
 - 在组织中观测 (登录到) 
 
-![用户帐户实体详细信息页面的图像](images/atp-user-details-view.png)
+![用户帐户实体详细信息页面的图像。](images/atp-user-details-view.png)
 
 ### <a name="user-details"></a>用户详细信息
 
-左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果你启用 Skype 企业集成，你将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
+左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果启用 Skype 企业集成，您将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
 
 >[!NOTE]
 >你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
@@ -77,7 +77,7 @@ ms.locfileid: "53817841"
 
 ### <a name="observed-in-organization"></a>在组织中观测到
 
-通过"在组织中观测到"选项卡，你可以指定一个日期范围，以查看观测到此用户登录的设备列表、其中每台设备的登录频率最多和登录频率最少的用户帐户，以及每台设备上观测到的用户总数。
+通过"在组织中观测到"选项卡，可以指定一个日期范围以查看观测到此用户登录的设备列表、其中每台设备的登录频率最多和登录频率最少的用户帐户，以及每台设备上观测到的用户总数。
 
 选择"组织中观测到的项目"表上的项目将展开该项目，显示有关设备的更多详细信息。 直接选择项目内的链接将发送给相应的页面。
 
@@ -87,7 +87,7 @@ ms.locfileid: "53817841"
 2. 在"搜索"字段中 **输入** 用户帐户。
 3. 单击搜索图标或按 **Enter。**
 
-将显示与查询文本匹配的用户列表。 你将看到用户帐户的域和名称、上次看到用户帐户的时间，以及过去 30 天内观测到它登录到的设备总数。
+将显示与查询文本匹配的用户列表。 你将看到用户帐户的域和名称、上次看到用户帐户的时间以及过去 30 天内观测到它登录到的设备总数。
 
 可以按以下时间段筛选结果：
 

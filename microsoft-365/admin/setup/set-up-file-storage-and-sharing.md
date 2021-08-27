@@ -31,12 +31,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站来Microsoft 365和Microsoft 365文件共享。
-ms.openlocfilehash: 8fac85da0b6416fe846bf5eb35ffb0761b26ad21
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 69ecb461396ef220258ce174d462ea7afda5aa8a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394728"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566888"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在文件中设置文件存储和Microsoft 365
 
@@ -50,32 +50,32 @@ ms.locfileid: "58394728"
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365文档存储和管理
 
-- OneDrive专为个人使用而设计的，偶尔共享文件。
+- OneDrive设计为供个人使用，偶尔共享文件。
 
 - 团队网站旨在定期共享和协作处理文件。 团队网站非常适合存储具有共享所有权的文件，其中多个人员拥有文件并可能协作处理这些文件。 创建 Microsoft 团队以添加团队网站。 [有关详细信息，请通过 Teams](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b)创建团队。
 
 网站OneDrive团队网站都提供你和员工的任何访问。
   
-![显示产品如何使用Microsoft 365团队OneDrive的关系图](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![此图显示Microsoft 365产品如何使用OneDrive团队网站。](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 下面是在将网站和工作组网站一OneDrive存储在每个位置的内容的建议：<br/>
 
   
 |存储位置|它有什么用|在此存储的内容|
 |:-----|:-----|:-----|
-|**OneDrive** |将内容存储在OneDrive就像在计算机上存储文件一样;其他人都无法访问它们。<br/> 有关详细信息，请参阅什么是[OneDrive for Business？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他工作组成员无需定期协作处理或访问的业务文件。<br/> |
-|**SharePoint 团队网站** <br/> |协作。 创建 Microsoft 365 组 (例如，在 Microsoft 365 管理中心、Outlook 或在 Microsoft Teams) 中创建团队时，会为该组创建 SharePoint 团队网站。 同样，当你从 SharePoint 主页SharePoint从新 SharePoint 管理中心创建新的团队网站时，它还会创建一个Microsoft 365组。 有关详细信息，请参阅什么是团队[SharePoint？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)和在 SharePoint Online 中创建[团队网站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |具有共享所有权的文件。 我们建议为组织的每个工作单元创建单独的工作组网站。 例如，若要将人员文档和财务文档保留为小型团队专用，请创建单独的团队网站。  <br/> |
+|**OneDrive** |将内容存储在OneDrive就像在计算机上存储文件一样;其他人都无法访问它们。<br/> 有关详细信息，请参阅[什么是OneDrive for Business？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他工作组成员无需定期协作处理或访问的业务文件。<br/> |
+|**SharePoint 团队网站** <br/> |协作。 创建 Microsoft 365 组 (例如，在 Microsoft 365 管理中心、Outlook 或在 Microsoft Teams) 中创建团队时，会为该组创建 SharePoint 团队网站。 同样，从 SharePoint 主页SharePoint新 SharePoint 管理中心创建新团队网站时，也会创建一个Microsoft 365组。 有关详细信息，请参阅[什么是团队SharePoint？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)和[在 SharePoint Online 中创建团队网站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |具有共享所有权的文件。 我们建议为组织的每个工作单元创建单独的工作组网站。 例如，若要将人员文档和财务文档保留为小型团队专用，请创建单独的团队网站。  <br/> |
 
 > [!NOTE]
-> SharePoint还有可用于企业的其他类型网站。 可以使用 Intranet [中的通信](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) 网站来发布供广大受众使用的信息。 此外，您还可以 [使用中心网站](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) 连接 Intranet 中的网站。
+> SharePoint还具有可用于企业的其他类型网站。 可以使用 Intranet [中的通信](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) 网站来发布供广大受众使用的信息。 此外，您还可以 [使用中心网站](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) 连接 Intranet 中的网站。
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>开始使用OneDrive团队网站
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>团队成员可以将自己的文件存储在OneDrive
 
-你的企业中分配有 Microsoft 365 许可证的每个人 (SharePoint在线) 可OneDrive云存储。 他们可以在此处存储与业务相关的文件，以从任何设备访问，并且它们仅可供该用户使用。 例如，他们可能会存储草稿提案、其会议笔记或要放映的演示的脚本。
+你的企业中分配有Microsoft 365许可证的每个人 (SharePoint在线) OneDrive云存储。 他们可以在此处存储与业务相关的文件，以从任何设备访问，并且它们仅可供该用户使用。 例如，他们可能会存储草稿提案、其会议笔记或要放映的演示的脚本。
   
-员工还可以共享OneDrive和文件夹。 如果员工离开公司或离开公司，则其他人可以访问存储在团队OneDrive (OneDrive文件夹中的共享) 。
+员工还可以共享OneDrive和文件夹。 如果员工离开公司或离开公司，则其他人可以访问存储在OneDrive (OneDrive共享文件夹中的共享) 。
   
 下面将说明团队中的每个人如何设置OneDrive共享文件。
 
@@ -85,7 +85,7 @@ ms.locfileid: "58394728"
 
 3. 在OneDrive中，团队成员可以存储自己的业务相关文件。 可以共享单个文件或整个文件夹。 选取文件或文件夹，右键单击，然后选择"共享 **"。**
 
-    ![共享文件夹](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![共享文件夹。](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. On the **Send Link** page， leave the default selection Anyone with the link can view **and edit**.
 
@@ -97,11 +97,11 @@ ms.locfileid: "58394728"
   
 5. 输入要共享的人后，请选择"发送 **"。** 该电子邮件会立即发送给受邀人员。
 
-    ![共享链接，显示名称列表](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![共享链接，显示名称列表。](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. 以下是电子邮件的外观。 
 
-    ![包含共享文件夹链接OneDrive电子邮件](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![包含共享文件夹链接OneDrive电子邮件。](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Upload文件到团队网站进行联机协作
 
@@ -111,7 +111,7 @@ ms.locfileid: "58394728"
   
 1. 在团队网站的主页上，从左侧导航菜单中选择"文档"。 执行此操作后，会进入" **文档库**"。
   
-2. 当你仍登录到 Microsoft 365时，Windows或其他位置打开"文件资源管理器"。  转到你想要向工作组网站上载的文件。
+2. 当你仍登录到 Microsoft 365时，Windows任务栏或其他位置打开"文件资源管理器"。  转到你想要向工作组网站上载的文件。
 
 3. 选择要上载到团队网站的文件，然后将其拖动到文档 **库**。
   
@@ -138,19 +138,19 @@ ms.locfileid: "58394728"
   
 2. 选择 **"同步** "以同步所有文件。 或浏览到要同步的特定文件夹。
 
-3. 如果系统提示切换应用，请选择"**是"。** OneDrive执行同步的过程。
+3. 如果系统提示切换应用，请选择"**是"。** OneDrive是执行同步的过程。
   
 4. 如果随后 **收到"设置** OneDrive提示，则使用工作或学校帐户登录。
 
-    ![OneDrive设置屏幕](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive设置屏幕。](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. 如果尚未同步你的OneDrive，你可能会看到"这是你的OneDrive **文件夹** 屏幕。 检查你的文件夹 **下OneDrive位于此处**。 如果要 **使用不同的** 路径，请选择"更改位置"，然后选择"下一步 **"。**
 
-    ![在此屏幕上更改本地文件夹](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![在此屏幕上更改本地文件夹。](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. 团队网站中的文件将显示在"文件资源管理器"的左窗格中，并按组织名称显示。 文件OneDrive将显示在"OneDrive \<Name of Organization\> -"下
 
-    ![查看本地文件夹中已同步的内容](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![查看本地文件夹中的同步内容。](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. 通过打开您计算机上团队文件夹中的文件来测试同步。 进行更改，然后选择" **保存**"。
 

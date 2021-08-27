@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c6a148c6ee332800a80e0ca9f3aea8403d2053b
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 993516c20629ddf4466325c547cd9208440dc41d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360029"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573915"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和组织适用于终结点设备的 Microsoft Defender 列表
 
@@ -50,7 +50,7 @@ ms.locfileid: "58360029"
 >[!NOTE]
 > 如果导出设备列表，它将包含组织的每台设备。 下载可能需要很长时间，具体取决于你的组织规模。 以 CSV 格式导出列表以未筛选的方式显示数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选。
 
-![包含设备列表的设备列表的图像](images/device-inventory.png)
+![包含设备列表的设备列表的图像。](images/device-inventory.png)
 
 ## <a name="sort-and-filter-the-device-list"></a>排序和筛选设备列表
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 232cb81080a8d478b57b2f87a8b98752e51b0c20
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258187"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573879"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问权限 
 
@@ -38,7 +38,7 @@ ms.locfileid: "58258187"
 
 若要实现多租户委派访问解决方案，请执行以下步骤：
 
-1. 在[Microsoft 365 Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)门户的 Defender for Endpoint 中启用基于角色的访问控制，Azure Active Directory (Azure AD) 连接。
+1. 在[Microsoft 365 Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)门户的 Defender for Endpoint 中启用基于角色的访问控制，Azure Active Directory (Azure AD) 组。
 
 2. 配置 [用于访问请求](/azure/active-directory/governance/identity-governance-overview) 和预配的治理访问包。
 
@@ -56,9 +56,9 @@ ms.locfileid: "58258187"
 
 2. 在客户 Defender for Endpoint 中的相应访问级别创建适用于终结点的 Defender Microsoft 365 Defender门户角色和组。
 
-    若要在客户门户中启用 RBAC Microsoft 365 Defender，请通过具有全局管理员或安全管理员权限的用户帐户访问>终结点角色 **&** 组>角色"。
+    若要在客户门户Microsoft 365 Defender RBAC，请通过具有全局管理员或安全管理员权限的用户帐户访问>终结点角色&组 >**角色**。
 
-    ![MSSP 访问的图像](../../media/mssp-access.png)
+    ![MSSP 访问的图像。](../../media/mssp-access.png)
 
     然后，创建 RBAC 角色以满足 MSSP SOC 层需求。 通过"分配的用户组"将这些角色链接到已创建的用户组。
 
@@ -86,7 +86,7 @@ ms.locfileid: "58258187"
 
     为此，在客户 AD 租户中，访问 Identity Governance： Catalogs，并添加新 **目录**。 在我们的示例中，我们将它称为 **MSSP Accesses**。
 
-    ![新目录的图像](../../media/goverance-catalog.png)
+    ![新目录的图像。](../../media/goverance-catalog.png)
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "58258187"
     - 只能由 MSSP SOC 租户中的用户请求
     - Access 自动在 365 天后过期
 
-    ![新访问包的图像](../../media/new-access-package.png)
+    ![新访问包的图像。](../../media/new-access-package.png)
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
@@ -109,7 +109,7 @@ ms.locfileid: "58258187"
 
     MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，等待 **MSSP 分析员审批者审批**。
 
-    ![访问属性的图像](../../media/access-properties.png)
+    ![访问属性的图像。](../../media/access-properties.png)
 
     链接位于每个访问包的概述页面上。
 
@@ -121,13 +121,13 @@ ms.locfileid: "58258187"
 
     为此，请通过使用：访问客户的 myaccess。 `https://myaccess.microsoft.com/@<Customer Domain>`
 
-    示例：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+    例如：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-     此时，已预配分析师访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：
+     此时，已设置分析员访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 
 > [!IMPORTANT]
-> Microsoft Defender for Endpoint 在 Microsoft 365 Defender 门户中的委派访问权限当前允许每个浏览器窗口访问单个租户。
+> Microsoft Defender for Endpoint 在 Microsoft 365 Defender门户中的委派访问权限当前允许每个浏览器窗口访问单个租户。

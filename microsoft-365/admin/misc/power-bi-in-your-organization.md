@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解Power BI组织的用户如何使用此业务分析服务。
-ms.openlocfilehash: d9e7aa90803dc87aece4246a369f9b4ae83bb7e867fae5790cb82ba615b8385b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823852"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566948"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -48,20 +48,20 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 有三种方案可能适用于您的组织内的用户：
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>方案 1：你的组织已有一Microsoft 365环境，注册此环境Power BI已有一个Microsoft 365帐户。
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>方案 1：你的组织已有一Microsoft 365环境，注册此环境Power BI已拥有Microsoft 365帐户。
 
 在此方案中，如果用户已经在租户（例如，contoso.com）中拥有工作或学校帐户但没有 Power BI，Microsoft 只会为该帐户激活计划，系统将自动通知用户如何使用 Power BI 服务。
   
-### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>方案 2：组织具有现有Microsoft 365环境，注册此Power BI没有Microsoft 365帐户。
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>方案 2：组织具有现有Microsoft 365环境，注册用户Power BI没有Microsoft 365帐户。
 
-在此方案中，用户在组织的域域中拥有电子邮件地址 (例如，contoso.com) 但没有 Microsoft 365 帐户。 在这种情况下，用户可以注册 Power BI，并将自动获得帐户。 这使用户能够访问 Power BI 服务。 例如，如果名为 Nancy 的员工使用她的工作电子邮件地址 (例如 Nancy@contoso.com) 注册，Microsoft 将自动将 Nancy 添加为 Contoso Microsoft 365 环境中的用户，并激活该帐户的 Power BI。
+在此方案中，用户在组织的域域中拥有电子邮件地址 (例如，contoso.com) 但没有Microsoft 365帐户。 在这种情况下，用户可以注册 Power BI，并将自动获得帐户。 这使用户能够访问 Power BI 服务。 例如，如果名为 Nancy 的员工使用工作电子邮件地址 (例如 Nancy@contoso.com) 注册，Microsoft 将自动将 Nancy 添加为 Contoso Microsoft 365 环境中的用户，并激活该帐户的 Power BI。
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>方案 3：您的组织没有连接到Microsoft 365域的邮箱环境。
 
 贵组织无需执行任何管理操作来利用Power BI。
   
 > [!IMPORTANT]
-> 如果您的组织具有多个电子邮件域，并且您喜欢所有电子邮件地址扩展名都在同一租户中，则在任何用户创建主租户之前，先将所有电子邮件地址域添加到该租户，然后再由任何用户创建主租户。 创建用户后，没有自动机制跨租户移动用户。 有关此过程详细信息，请参阅本文稍后介绍[](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)的"如果我有多个域，我能否控制用户添加到的租户？"和"将域添加到 Office 365 [Online"。](../setup/add-domain.md)
+> 如果您的组织具有多个电子邮件域，并且您喜欢所有电子邮件地址扩展名都在同一租户中，则在任何用户创建主租户之前，先将所有电子邮件地址域添加到该租户，然后再由任何用户创建主租户。 创建用户后，没有自动机制跨租户移动用户。 有关此过程详细信息，请参阅本文稍后介绍的"如果我有多个域，我能否控制用户添加到的租户[？"](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)和"将域添加到 Office 365 [Online"。](../setup/add-domain.md)
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>这将如何更改我目前管理组织中用户的身份的方式？
 
@@ -71,7 +71,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 如果您是在本地管理目录并使用 Active Directory 联合身份验证服务 (AD FS)，Microsoft 不会将用户添加到您的租户，并且任何尝试加入您的租户的用户将收到一条消息，指示他们联系其组织的管理员。
   
-如果贵组织没有连接到Microsoft 365域的邮箱环境，则管理标识方式不会发生变化。 用户将被添加到新的仅限云用户目录，您可以选择作为租户管理员接管并管理他们。
+如果你的组织没有连接到Microsoft 365域的邮箱环境，则管理标识不会发生变化。 用户将被添加到新的仅限云用户目录，您可以选择作为租户管理员接管并管理他们。
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>管理 Microsoft 为我的用户创建的租户应遵循什么过程？
 
@@ -101,7 +101,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 4. 选择左上角的应用启动器图标，然后选择“**管理员**”。
 
-    ![突出显示了管理应用的应用启动器](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![突出显示了管理应用的应用启动器。](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. 阅读成为管理员 **页面上** 的说明，然后选择是 **，我想成为管理员**。
 
@@ -117,7 +117,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 - 事先创建一个目标租户或使用现有租户，并添加希望在该租户中整合的所有现有域和子域。然后，电子邮件地址以这些域和子域结尾的所有用户在注册时将自动加入目标租户。
 
 > [!IMPORTANT]
-> 创建用户后，不提供在租户中移动用户的受支持的自动化机制。 若要了解如何向单个租户Microsoft 365域，请参阅将域[添加到Office 365。](../setup/add-domain.md)
+> 创建用户后，不提供在租户中移动用户的受支持的自动化机制。 若要了解如何将域添加到单个Microsoft 365租户，请参阅将[域添加到Office 365。](../setup/add-domain.md)
 
 > [!IMPORTANT]
 > 有关管理租户的信息和指导，请参阅什么是Power BI[管理？。](/power-bi/service-admin-administering-power-bi-in-your-organization)
@@ -126,9 +126,9 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 作为管理员，你可以采取一些步骤来防止用户加入现有租户。 如果阻止用户加入租户，则用户登录尝试将失败，并且将被定向到联系其组织的管理员。如果在 (之前已禁用自动许可证分发，则无需重复此过程Office 365 教育版学生、教职员工和教职员工) 。
   
-以下步骤需要使用 Windows PowerShell。 要开始使用 Windows PowerShell，请参阅 [PowerShell 入门指南](/powershell/scripting/overview)。
+以下步骤需要使用 Windows PowerShell。要开始使用 Windows PowerShell，请参阅 [PowerShell 入门指南](/powershell/scripting/overview)。
   
-若要执行以下步骤，必须安装最新版本的 Azure Active Directory [V2 PowerShell 模块](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
+若要执行以下步骤，必须安装最新版本的[Azure Active Directory V2 PowerShell 模块](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
   
 单击该链接后，选择 **“运行”** 以运行安装程序包。
   
@@ -139,7 +139,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 要启用新用户的自动租户加入，请执行下列操作： `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> 此阻止可防止组织中新用户注册Power BI。 在禁用组织的新Power BI注册之前注册用户仍将保留其许可证。 请参阅[如何删除Power BI用户的访问权限？，](#how-do-i-remove-power-bi-for-users-that-already-signed-up)了解如何为之前已注册服务的用户删除对 Power BI 的访问权限。
+> 此阻止可防止组织中新用户注册Power BI。 在禁用组织的新Power BI注册之前注册许可证的用户仍将保留其许可证。 请参阅[如何删除Power BI用户的访问权限？，](#how-do-i-remove-power-bi-for-users-that-already-signed-up)了解如何为之前已注册服务的用户删除对 Power BI 的访问权限。
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>如何允许用户加入我的现有租户？
 
@@ -166,7 +166,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>如何为已注册的用户删除 Power BI？
 
-如果用户注册了Power BI，但您不再希望他们有权访问 Power BI，您可以删除该用户Power BI许可证。
+如果用户注册了 Power BI，但您不再希望他们有权访问 Power BI，您可以删除该用户Power BI许可证。
   
 ::: moniker range="o365-worldwide"
 
@@ -200,7 +200,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>我应准备其他任何内容吗？
 
-您可能会遭遇密码重置请求不断增加的情形。 有关此过程的信息，请参阅[重置用户密码](../add-users/reset-passwords.md)。
+你可能会遭遇密码重置请求不断增加的情形。有关此过程的信息，请参阅[重置用户密码](../add-users/reset-passwords.md)。
   
 可以通过管理中心中的标准流程从租户中删除用户。 但是，如果用户仍使用您的组织中的活动电子邮件地址，则除非您阻止所有用户加入，否则他们仍能重新加入。
   

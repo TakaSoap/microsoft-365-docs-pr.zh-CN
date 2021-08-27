@@ -1,7 +1,7 @@
 ---
 title: Windows 中的信息保护概述
 ms.reviewer: ''
-description: 了解信息保护在Windows和保护敏感信息的工作方式
+description: 了解信息保护如何工作Windows标识和保护敏感信息
 keywords: 信息， 保护， dlp， 数据， 丢失， 防护， 保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b38cf9c56f3c518ed7dace01b174b21b280baa23a9e71edb290edd797283f40d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7c3fac607f470018b4c6c5a025b3b2ac09464cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550222"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -56,17 +56,17 @@ Defender for Endpoint 自动发现具有敏感度标签的文件和包含敏感�
 DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 - 默认值
-- 自定义警报
+- 自定义
 
 默认敏感信息类型包括诸如银行帐号、社会保险号或国家/市/市/区号等信息。 有关详细信息，请参阅 [敏感信息类型查找什么](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
 
-自定义类型是您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](/office365/securitycompliance/create-a-custom-sensitive-information-type)。
+自定义类型是一些您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](/office365/securitycompliance/create-a-custom-sensitive-information-type)。
 
 在设备上创建或编辑文件时，Windows Defender for Endpoint 会扫描内容，以评估其中是否包含敏感信息。
 
 启用 Azure 信息保护集成，以便当 Defender for Endpoint 通过标签或信息类型发现包含敏感信息的文件时，该文件会自动从设备转发到 Azure 信息保护。
 
-![使用 Azure 信息保护的设置页面的图像](images/atp-settings-aip.png)
+![使用 Azure 信息保护的设置页面的图像。](images/atp-settings-aip.png)
 
 报告的信号可以在 Azure 信息保护 - 数据发现仪表板上查看。
 
@@ -74,14 +74,14 @@ DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 此仪表板显示 Defender for Endpoint 和 Azure 信息保护发现的数据的汇总发现信息。 来自 Defender for Endpoint 的数据标记为"位置类型 - 终结点"。
 
-![Azure 信息保护的图像 - 数据发现](images/azure-data-discovery.png)
+![Azure 信息保护 - 数据发现的图像。](images/azure-data-discovery.png)
 
 请注意右侧"设备风险"列，此设备风险直接派生自 Defender for Endpoint，指示发现文件的安全设备的风险级别，基于 Defender for Endpoint 检测到的活动安全威胁。
 
 单击设备以查看在此设备上观测到的文件列表，及其敏感度标签和信息类型。
 
 > [!NOTE]
-> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映发现的文件。
+> 请允许 Azure 信息保护仪表板发现大约 15-20 分钟反映已发现的文件。
 
 ## <a name="log-analytics"></a>Log Analytics
 

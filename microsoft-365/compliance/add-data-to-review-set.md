@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将搜索结果或这些搜索结果的示例添加到Advanced eDiscovery审阅集。
-ms.openlocfilehash: dd3b04812f1284d8a95a158f1ef47317bc89c9f28b743a723fc8d21287116e48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aeb7942fc12089bd458236221dd7394a8018e780
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837045"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567080"
 ---
 # <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 
@@ -43,9 +43,9 @@ ms.locfileid: "53837045"
 
 您可以添加到现有审阅集或创建新的审阅集。  如果添加到新的审阅集，请指定名称，然后单击 **"添加"** 以显示飞出页面。
 
-![选择审阅集并配置集合选项](../media/AeD_AddToReviewSet.png)
+![选择审阅集并配置集合选项。](../media/AeD_AddToReviewSet.png)
 
-向审阅集添加数据是一个长期运行流程。 此过程包括收集 Microsoft 365 (中原始数据源中的项目（例如，从邮箱和网站) 中收集项目、将它们复制到 Azure 存储 位置 (此复制过程也称为 *ingestion*) ，然后对项目重新建立索引。 通过监视"要审阅的数据"列中的状态，可以跟踪"作业"选项卡或"搜索"**选项卡** 上的进度。 完成审阅集处理后，单击案例的"审阅集"选项卡，然后单击审阅集以开始筛选、审阅、标记和导出审阅集数据的过程。
+向审阅集添加数据是一个长期运行流程。 此过程包括从 Microsoft 365 (中的原始数据源（例如，从邮箱和网站) ）收集项目，将它们复制到 Azure 存储 位置 (此复制过程也称为 *"ingestion*) "，然后对项目重新建立索引。 您可以通过监视"要审阅的数据"列中的状态来跟踪"作业"选项卡或"搜索"**选项卡** 上的进度。 完成审阅集处理后，单击案例的"审阅集"选项卡，然后单击审阅集以开始筛选、审阅、标记和导出审阅集数据的过程。
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>定义用于确定要审阅的集合范围的选项
 
@@ -55,11 +55,11 @@ ms.locfileid: "53837045"
 
 - **对话检索选项**：为线程对话启用添加到审阅集的项目，以帮助查看来回对话上下文中的内容。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
 
-- **启用新式附件检索**：使用此选项在集合中包括新式附件或链接文件，以便进一步查看。 有关与新式附件相关的可搜索属性详细信息，请参阅文档[元数据字段Advanced eDiscovery。](document-metadata-fields-in-Advanced-eDiscovery.md)
+- **启用新式附件检索**：使用此选项在集合中包括新式附件或链接文件，以便进一步查看。 有关与新式附件相关的可搜索属性详细信息，请参阅文档[元数据Advanced eDiscovery。](document-metadata-fields-in-Advanced-eDiscovery.md)
 
 ## <a name="add-a-sample-to-a-review-set"></a>向审阅集添加示例
 
-如果您希望在将搜索结果添加到审阅集之前更彻底地验证搜索结果，您可以将搜索结果的示例添加到审阅集，而不是添加所有内容。
+如果您希望在将搜索结果添加到审阅集之前更彻底地验证搜索结果，您可以将搜索结果示例添加到审阅集，而不是添加所有内容。
 
 若要将示例添加到审阅集，请单击"搜索"选项卡上的搜索，然后单击飞出页面上的"示例"。 在" **采样参数"** 页上，选择下列选项之一：
 

@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: 9a597fd05c9b975c54518828ebbd2433bc47b835
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 72600b787f1570839b0d6ee3fefc7467af5ac08b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257431"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573831"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>创建用于攻击模拟培训的自定义负载
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以与攻击模拟培训配对。 但是，你可能希望创建更适用于你的组织的自定义有效负载。 本文介绍如何在 Microsoft Defender for Office 365 攻击模拟培训中创建负载。
+Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以与攻击模拟培训配对。 但是，你可能希望创建更适用于你的组织的自定义有效负载。 本文介绍如何在 Microsoft Defender for Office 365 攻击模拟培训中创建有效负载。
 
 可以通过在专用"有效负载"选项卡或模拟创建向导中单击"创建有效负载"[来创建有效负载](attack-simulation-training.md#selecting-a-payload)。 [  ](https://security.microsoft.com/attacksimulator?viewid=payload)
 
@@ -45,7 +45,7 @@ Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以�
 
 格式文本编辑器可用于创建有效负载。 还可以导入预先创建的电子邮件。 创建电子邮件正文时，请利用动态标记将电子邮件个性化到目标。 单击 **"网络钓鱼"** 链接，将以前选择的网络钓鱼 URL 添加到邮件正文中。
 
-![在 Microsoft Defender for Office 365 有效负载创建中突出显示的网络钓鱼链接和Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![网络钓鱼链接和动态标记在 Microsoft Defender for Office 365 有效负载创建中突出显示。](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > 为了节省时间，请切换为将电子邮件中所有链接 **替换为网络钓鱼链接 的选项**。
@@ -58,7 +58,7 @@ Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以�
 
 从下拉列表中选择一个希望使用的指示器。 此列表是为包含网络钓鱼电子邮件中最常见的线索而提供的。 选择后，请确保将指示器位置设置为 **"从电子邮件正文"，** 然后单击"选择 **文本"。** 突出显示显示此指示器的有效负载部分，然后单击"选择 **"。**
 
-![要添加到攻击模拟培训中的指示器的邮件正文中的突出显示文本](../../media/attack-sim-preview-select-text.png)
+![要添加到攻击模拟培训中的指示器的邮件正文中的突出显示文本。](../../media/attack-sim-preview-select-text.png)
 
 添加用于描述指示器的自定义说明，然后单击指示器预览框架以查看指示器预览。 完成后，单击"添加 **"。** 重复这些步骤，直到负载中涵盖所有指示器。
 

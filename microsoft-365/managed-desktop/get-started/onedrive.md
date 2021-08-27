@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 33d86ff6b63bd8b21ba233ff8b28672a3688fd0c4b20565f69cb9f11b4959426
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 892dbcccfc8f224f80a538f9736405cb012b69ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857942"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573687"
 ---
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
@@ -22,13 +22,13 @@ Microsoft 托管桌面将[OneDrive for Business](/onedrive/plan-onedrive-enterpr
 
 默认情况下，我们在 Microsoft 托管设备上自动配置这些设置：
 
-- OneDrive以静默方式使用用户帐户进行配置，并自动登录 (而无需) 登录到用于登录 Windows 的用户帐户。 有关详细信息，请参阅以无[提示方式配置用户帐户 - OneDrive](/onedrive/use-silent-account-configuration)
+- OneDrive以静默方式使用用户帐户进行配置，并自动登录 (而无需用户) 登录到用于登录 Windows 的用户帐户。 有关详细信息，请参阅以无[提示方式配置用户帐户 - OneDrive](/onedrive/use-silent-account-configuration)
 
-- 启用了"按需文件"功能，以便用户能够访问其云存储中的OneDrive而无需不必要地使用磁盘空间。 有关详细信息，请参阅使用文件[按需OneDrive节省磁盘空间Windows 10。](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e)
+- 启用了"按需文件"功能，以便用户能够访问其云存储中的OneDrive而无需不必要地使用磁盘空间。 有关详细信息，请参阅使用文件[随OneDrive保存磁盘空间Windows 10。](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e)
 
 - "已知文件夹移动"功能以静默方式启用，以在云中备份用户数据，从而使用户能够从任何设备访问其文件。 有关详细信息，请参阅使用文件[备份文档](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057)、图片和OneDrive。
 
-- 用户无法禁用已知文件夹移动功能或更改已知文件夹的位置，以确保跨设备实现Microsoft 托管桌面体验。
+- 用户无法禁用已知文件夹移动功能或更改已知文件夹的位置，以确保跨设备实现一Microsoft 托管桌面体验。
 
 ## <a name="user-experience"></a>用户体验
 
@@ -36,20 +36,20 @@ Microsoft 托管桌面将[OneDrive for Business](/onedrive/plan-onedrive-enterpr
 
 1. 系统告知用户OneDrive已配置，并且已自动登录到OneDrive。
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="通知阅读您现在正在同步OneDrive并且您可以在 OneDrive 中编辑文件。单击此处查看文件":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="通知阅读您现在正在同步OneDrive您可以编辑 OneDrive。单击此处查看文件。":::
 
-2. 系统告知用户OneDrive已配置已知文件夹移动。
+2. 系统告知用户，OneDrive已配置已知文件夹移动。
 
-:::image type="content" source="media/onedrive-folders.png" alt-text="阅读你的 IT 部门备份重要文件夹的通知。现在，这些文件夹已备份OneDrive并可从其他设备使用":::
+:::image type="content" source="media/onedrive-folders.png" alt-text="阅读你的 IT 部门备份重要文件夹的通知。现在，这些文件夹已备份OneDrive设备提供。":::
 
-3. 为了防止在重置或重置设备时在桌面上复制图标，系统会自动从 OneDrive 同步 中删除 Microsoft Edge 和 Microsoft Teams 图标，如文件资源管理器中的此视图所示。
+3. 为了防止在重置或重新映像设备时在桌面上复制图标，系统会自动从 OneDrive 同步 中删除 Microsoft Edge 和 Microsoft Teams 图标，如文件资源管理器中的此视图所示。
 
-:::image type="content" source="media/onedrive-teams.png" alt-text="文件资源管理器显示Teams列表和 Edge 列表以及已清除复选框和悬停文本（从同步中排除）。":::
+:::image type="content" source="media/onedrive-teams.png" alt-text="文件资源管理器显示Teams复选框和鼠标悬停文本从同步中排除的边缘列表和边缘列表。":::
 
 
 ## <a name="onedrive-sync-restrictions"></a>OneDrive 同步限制
 
-如果需要限制访问OneDrive 同步，建议您使用条件访问策略Azure Active Directory访问。 有关详细信息，请参阅在应用程序[应用中启用OneDrive 同步支持](/onedrive/enable-conditional-access)。
+如果需要限制访问OneDrive 同步，建议您使用条件访问策略Azure Active Directory访问。 有关详细信息，请参阅在应用[应用中启用条件OneDrive 同步支持](/onedrive/enable-conditional-access)。
 
 如果在你的组织中无法使用 Azure AD 条件访问策略，则 IT 管理员应执行以下步骤：
 

@@ -23,16 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 为团队创建一个协作空间，Microsoft Teams。
-ms.openlocfilehash: 6ca87115a55a91d1e00534556c4fa6d3b3bf72f4682f9ab4f562b772286b3fe9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567140"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>创建团队以在 Microsoft Teams
 
-Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有序并展开对话。 可以使用Microsoft Teams与组织外部的员工或来宾进行即时对话。 还可以拨打电话、主持会议和共享文件。
+Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有序并展开对话。 可以使用 Microsoft Teams 与组织外部的员工或来宾进行即时对话。 还可以拨打电话、主持会议和共享文件。
 
 ## <a name="best-practices"></a>最佳做法
 
@@ -47,15 +47,15 @@ Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有�
 1. **单个团队：** 为较小的组设置团队，以协作处理其日常工作。
 1. **外部通信团队：** 与供应商、合作伙伴或客户进行协调，而不让他们进入任何敏感内容。 为特定组设置不同的频道。
 
-![包含三Microsoft Teams团队的"安全通信和协作"窗口关系图](../media/m365-democracy-teams-business-collab.png)
+![包含三Microsoft Teams团队的"安全通信和协作"窗口的图示。](../media/m365-democracy-teams-business-collab.png)
 
 市场活动可以创建以下团队来安全地沟通和协作：
 
 1. **活动潜在客户团队：** 将此功能设置为私人团队，以便只有你的主要市场活动成员可以访问它并讨论潜在的敏感问题。
-2. **常规宣传活动团队：** 这是供所有人用于日常通信和工作。 个人、组或委员会可在此团队中设置频道以完成他们的工作。 例如，事件规划人员可以设置一个频道来聊天并协调宣传活动的后勤工作。
+2. **常规宣传活动团队：** 这是供所有人用于日常通信和工作。 个人、组或委员会可以在此团队中设置频道以完成他们的工作。 例如，事件规划人员可以设置一个频道来聊天并协调宣传活动的后勤工作。
 3. **合作伙伴团队：** 与供应商、合作伙伴或志愿者进行协调，而不让他们进入任何敏感内容。
 
-![包含三Microsoft Teams团队的"活动"窗口图示，允许在活动中实现安全通信和协作](../media/m365-democracy-teams-collab.png)
+![包含三Microsoft Teams团队的"活动"窗口图，允许在活动中进行安全通信和协作。](../media/m365-democracy-teams-collab.png)
 
 创建团队时，将创建以下其他内容：
 

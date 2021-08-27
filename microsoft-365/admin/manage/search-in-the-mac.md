@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用管理中心中的搜索功能获得更快速的结果。
-ms.openlocfilehash: 64a578f8b7ebf71fbfc162936e8efa09440834d362fcc2b359a18bb9d8c1469a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824732"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566984"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中搜索
 
-作为组织管理员，Microsoft 365搜索来查找用户、执行操作、导航到不同的设置和阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
+作为组织管理员Microsoft 365，您可以使用搜索来查找用户、执行操作、导航到不同的设置并阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot： Search bar in the Microsoft 365 管理中心":::
 
@@ -40,7 +40,7 @@ ms.locfileid: "53824732"
 
 ## <a name="users"></a>用户
 
-用户可以通过用户名、姓氏显示名称名字、用户名、主电子邮件地址或电子邮件别名来找到。 选择用户的名称编辑以编辑用户的详细信息。
+用户可以通过姓名、姓氏显示名称名字、用户名、主电子邮件地址或电子邮件别名来找到。 选择用户的名称编辑以编辑用户的详细信息。
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot： Search for a user Felix Henderson":::
 
@@ -85,7 +85,7 @@ ms.locfileid: "53824732"
 
 您可以找到指向您的域的快速链接，然后该链接将您指向该域的概述页面。
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="显示管理中心拥有域的搜索结果":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="显示管理中心拥有域的搜索结果。":::
 
 ## <a name="documentation"></a>文档
 

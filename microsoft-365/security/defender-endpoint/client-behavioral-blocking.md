@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 87e1532f126488e21d869d4f04a04d56c483f6b6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 5afa8ec7fc6d4adeef5a099a18e335b7a9e68f5b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509853"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567360"
 ---
 # <a name="client-behavioral-blocking"></a>客户端行为阻止
 
@@ -38,7 +38,7 @@ ms.locfileid: "58509853"
 
 客户端行为阻止是 Defender for Endpoint 中行为阻止 [和](behavioral-blocking-containment.md) 包含功能的一个组件。 由于在设备上检测到可疑行为 (也称为客户端或终结点) ，因此 (或应用程序等项目) 自动阻止、检查和修正。
 
-:::image type="content" alt-text="云和客户端保护" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" alt-text="云和客户端保护。" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 防病毒保护在与云保护配对时效果最佳。
 

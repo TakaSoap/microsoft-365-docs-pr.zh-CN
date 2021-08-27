@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0f7490ce1bbf1ef7666ce44f6101054d6acc7703
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: fe048005736e39623effc13751a66f195008ff96
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364549"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550258"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -45,24 +45,24 @@ IT 技术支持 | 如果支持人员在支持区域外接管用户Microsoft 托�
 
 2. 在 **"租户管理**"下，**查找**"Microsoft 托管桌面"部分，然后选择"**管理员联系人"。**
 
-3. 选择“**添加**”。
+3. 选择 **添加**。
 
 4. 选择 **一个焦点区域** ，然后输入联系人的信息。 
 
-    ![关注区域列表，例如"其他"、"应用"和"安全"](../../media/areaoffocus.png)
+    ![关注区域的列表，例如"其他"、"应用"和"安全"。](../../media/areaoffocus.png)
 
 5. 对每个焦点区域重复上述步骤。
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
 
-1. 访问 [管理门户](access-admin-portal.md)。
+1. 访问 [管理员门户](access-admin-portal.md)。
 1. 在管理门户中添加和验证管理员 (本文) 。
 1. [注册后调整设置](conditional-access.md)。
-1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
 1. [设置设备](set-up-devices.md)。
-1. 设置 [Autopilot 和注册状态页面的首次运行体验](esp-first-run.md)。
+1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
-1. [让用户准备好使用设备](get-started-devices.md)。
-1. [应用控件入门](get-started-app-control.md)。
+1. [让用户做好使用设备的准备](get-started-devices.md)。
+1. [开始使用应用控制](get-started-app-control.md)。

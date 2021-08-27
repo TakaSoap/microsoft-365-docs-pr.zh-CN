@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive）可以在多地理位置环境中返回结果。
-ms.openlocfilehash: 65f74ce9d21fd9323cd2a3421875399c3a5d8346fd55e9820398c3363e099e9b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864937"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566840"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
@@ -131,7 +131,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 
 所有搜索客户端均使用现有 SharePoint Search REST API 与搜索索引进行交互。
 
-![显示搜索SHAREPOINT REST API 如何与搜索索引交互的关系图](../media/configure-search-for-multi-geo-image1-1.png)
+![显示搜索SHAREPOINT REST API 如何与搜索索引交互的关系图。](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 搜索客户端使用查询属性 EnableMultiGeoSearch= true 来调用搜索 REST 终结点。
 2. 查询将被发送到租户中的所有地理位置。
@@ -151,11 +151,11 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 
 3. 选择要设置的类别，单击右上角的 **“设置”** 齿轮图标，然后单击 **“编辑页面”**。搜索结果页将在编辑模式下打开。
 
-   ![编辑页面中的页面设置](../media/configure-search-for-multi-geo-image2.png)
+   ![编辑页面中的页面设置。](../media/configure-search-for-multi-geo-image2.png)
 
 4. 在搜索结果 Web 部件中，将鼠标指针移动到 Web 部件的右上角，单击箭头，然后单击菜单上的“**编辑 Web 部件** ”。 搜索结果 Web 部件工具窗格在页面右上角的功能区下方打开。
 
-   ![编辑Web 部件选择](../media/configure-search-for-multi-geo-image3.png)
+   ![编辑Web 部件所选内容。](../media/configure-search-for-multi-geo-image3.png)
 
 5. 在 Web 部件工具窗格中的 **“设置”** 部分，在 **“结果控制设置”** 下，选择 **“显示多地理位置结果”**，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
 

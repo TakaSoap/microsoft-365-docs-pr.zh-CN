@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: 了解如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求和在 SharePoint Online 中加载页面所花的时间。
-ms.openlocfilehash: a7ed45dbc06f4d5cc58742ee545edac212f1ce181896907b889c41e7b3645486
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ba1e174cbb016bdf88a1d4006a0b8aafd5ec042
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858561"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567384"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online 中的缩小和捆绑
 
 本文介绍如何将缩小和捆绑技术与 Web Essentials 一同使用，以减少 HTTP 请求数并减少在 SharePoint Online 中加载页面所花的时间。
   
-当您自定义网站时，您最终可以将大量额外文件添加到服务器以支持自定义。 添加额外的 JavaScript、CSS 和图像会增加对服务器的 HTTP 请求数，进而增加显示网页的时间。 如果你有多个相同类型的文件，可以捆绑这些文件，以更快地下载这些文件。
+当您自定义网站时，您最终可以向服务器添加大量额外的文件以支持自定义。 添加额外的 JavaScript、CSS 和图像会增加对服务器的 HTTP 请求数，进而增加显示网页的时间。 如果有多个相同类型的文件，可以捆绑这些文件，以加快下载这些文件的速度。
   
 对于 JavaScript 和 CSS 文件，您还可以使用一种称为缩小的方法，通过删除不需要的空格和其他字符来减小文件的总大小。
   
@@ -51,7 +51,7 @@ Web Essentials 提供两种形式的捆绑：
     
 如果您的现有功能具有自定义母版页中引用的一些品牌元素，您可以使用 Web Essentials，例如：
   
-![自定义母版页中的品牌元素的屏幕截图](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
+![自定义母版页中的品牌元素屏幕截图。](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
  **在 Web Essentials 中创建 TE000127218 和 CSS 捆绑包**
   
@@ -59,31 +59,31 @@ Web Essentials 提供两种形式的捆绑：
     
 2. 右键单击所选文件，然后从上下文菜单中选择 **"Web Essentials** \> **创建 JavaScript** 捆绑文件"。 例如： 
     
-    ![显示 Web Essentials 菜单选项的屏幕截图](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
+    ![显示 Web Essentials 菜单选项的屏幕截图。](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
 ## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>查看绑定 JavaScript 和 CSS 文件的结果
 
 创建 JavaScript 和 CSS 捆绑包时，Web Essentials 会创建一个 XML 文件，该文件称为食谱文件，用于标识 JavaScript 和 CSS 文件以及其他一些配置信息： 
   
-![JavaScript 和 CSS 脚本文件的屏幕截图](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
+![JavaScript 和 CSS 方法文件的屏幕截图。](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
 此外，如果在捆绑方法中将缩小标志设置为 true，则文件会减小大小并捆绑在一起。 这意味着已创建可在母版页中引用的 JavaScript 文件的新缩小版本。
   
-![最小化标志设置为 true 的屏幕截图](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
+![缩小标志设置为 true 的屏幕截图。](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
   
 从网站加载页面时，可以使用 Web 浏览器（如 Internet Explorer 11）中的开发人员工具查看发送到服务器的请求数以及加载每个文件所需要时间。
   
 下图是在缩小之前加载 JavaScript 和 CSS 文件的结果。
   
-![显示正在下载的 80 项的屏幕截图](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
+![显示正在下载的 80 个项目的屏幕截图。](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
 将 CSS 和 JavaScript 文件捆绑在一起后，丢弃至 74 的请求数，每个文件仅比原始文件稍长一些，以单独下载：
   
-![显示正在下载的 74 项的屏幕截图](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
+![显示正在下载的 74 个项目的屏幕截图。](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
 捆绑后，JavaScript 捆绑文件将显著从 815KB 减少为 365KB：
   
-![显示下载大小减小的屏幕截图](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
+![显示下载大小减小的屏幕截图。](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
   
 ## <a name="bundling-images-by-creating-an-image-sprite"></a>通过创建图像子画面绑定图像
 
@@ -95,12 +95,12 @@ Web Essentials 提供两种形式的捆绑：
     
 2. 右键单击所选文件，然后从上下文菜单中选择 **"Web Essentials** \> **创建** 图像子画面"。 例如： 
     
-    ![显示如何创建图像子画面的屏幕截图](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
+    ![显示如何创建图像子画面的屏幕截图。](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   
 3. 选择保存子画面文件的位置。 .sprite 文件是描述子画面中的设置和文件的 XML 文件。 下图显示了子画面 PNG 文件及其相应的 .sprite XML 文件的示例。
     
-    ![子画面文件的屏幕截图](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
+    ![子画面文件的屏幕截图。](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
   
-    ![子画面 XML 文件的屏幕截图](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
+    ![子画面 XML 文件的屏幕截图。](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
   
 

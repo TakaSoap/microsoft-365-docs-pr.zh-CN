@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74bfa73ff9c647a0e6979eb18b06342fe2bea1ed
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 92d9a6dabc2d8f6251b46d58207170d0c460aa90
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532939"
+ms.locfileid: "58567176"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Microsoft Defender for Endpoint 设备时间线事件标志
 
@@ -47,6 +47,8 @@ Defender for Endpoint 设备时间线提供设备上观测到的事件和相关�
 ## <a name="flag-an-event"></a>标记事件
 
 1. 查找要标记的事件
+2. 单击"标志"列中的标志图标。 
+![设备时间线标志的图像。](images/device-flags.png)
 2. 单击"标志"列中的标志图标。
 
    ![设备时间线标志的图像](images/device-flags.png)
@@ -54,6 +56,9 @@ Defender for Endpoint 设备时间线提供设备上观测到的事件和相关�
 ## <a name="view-flagged-events"></a>查看标记的事件
 
 1. 在"时间线 **筛选器"** 部分，启用 **"已标记的事件"。**
+2. 单击“**应用**”。 只显示标记的事件。
+可以通过单击时间栏来应用其他筛选器。 这将只显示标记事件之前的事件。  
+![筛选打开的设备时间线标志的图像。](images/device-flag-filter.png)
 2. 单击“**应用**”。 只显示标记的事件。 可以通过单击时间栏来应用其他筛选器。 这将只显示标记事件之前的事件。
 
    ![具有筛选功能的设备时间线标志的图像](images/device-flag-filter.png)

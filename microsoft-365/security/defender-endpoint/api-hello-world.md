@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ec2057eefc5cb1e8ce59138a1f5a15b7ed0fdd01
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508210"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550282"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -59,7 +59,7 @@ ms.locfileid: "58508210"
 
 2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。**
 
-   ![应用程序注册Microsoft Azure导航的图像](images/atp-azure-new-app2.png)
+   ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
 
 3. 在注册表单中，为应用程序选择一个名称，然后单击"注册 **"。**
 
@@ -69,11 +69,11 @@ ms.locfileid: "58508210"
 
    - **注意**：WindowsDefenderATP 不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
 
-   ![API 访问和 API 选择的图像1](images/add-permission.png)
+   ![API 访问和 API 选择 1 的图像。](images/add-permission.png)
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   ![API 访问和 API 选择的图像2](images/application-permissions.png)
+   ![API 访问和 API 选择 2 的图像。](images/application-permissions.png)
 
    **重要说明**：需要选择相关权限。 "读取所有警报"只是一个示例！
 
@@ -87,7 +87,7 @@ ms.locfileid: "58508210"
 
    - **注意**：每次添加权限时，都必须单击"授予 **许可** ，让新权限生效"。
 
-   ![授予权限的图像](images/grant-consent.png)
+   ![授予权限的图像。](images/grant-consent.png)
 
 6. 向应用程序添加密码。
 
@@ -95,13 +95,13 @@ ms.locfileid: "58508210"
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
-    ![创建应用密钥的图像](images/webapp-create-key2.png)
+    ![创建应用密钥的图像。](images/webapp-create-key2.png)
 
 7. 记下应用程序 ID 和租户 ID：
 
    - 在应用程序页上，转到" **概述"** 并复制以下内容：
 
-   ![已创建应用 ID 的图像](images/app-and-tenant-ids.png)
+   ![已创建应用 ID 的图像。](images/app-and-tenant-ids.png)
 
 完成！ 已成功注册应用程序！
 
@@ -139,7 +139,7 @@ ms.locfileid: "58508210"
   - 粘贴到顶部框中。
   - 查找"角色"部分。 查找 Alert.Read.All 角色。
 
-  ![图像 jwt.ms](images/api-jwt-ms.png)
+  ![图像 jwt.ms。](images/api-jwt-ms.png)
 
 ### <a name="lets-get-the-alerts"></a>让我们获取警报！
 

@@ -25,26 +25,26 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 市场活动或其他Microsoft 365 商业高级版的安装程序概述
-ms.openlocfilehash: a31a0046bd37b7bb905f96d054ea5c9809e744fa
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567116"
 ---
 # <a name="set-up-microsoft-365"></a>设置Microsoft 365
 
-本文介绍设置Microsoft 365。 任何具有Microsoft 365 商业高级版都可以使用此指南来加强安全性。
+本文介绍设置Microsoft 365。 任何具有Microsoft 365 商业高级版都可以使用本指南来加强安全性。
 
 ## <a name="admins-set-up-microsoft-365"></a>管理员：设置Microsoft 365
 
 下图介绍了管理员如何设置Microsoft 365。
 
-![设置项目Microsoft 365](../media/M365-democracy-SetUpProcess.png)
+![设置Microsoft 365。](../media/M365-democracy-SetUpProcess.png)
 
-对于符合特殊定价资格的市场活动，请从[](https://m365forcampaigns.microsoft.com/)Microsoft 请求邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
+对于符合特殊定价资格的市场活动，请从请求[Microsoft](https://m365forcampaigns.microsoft.com/)邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
 
-对于所有其他组织，注册 Microsoft 365 商业高级版[后，](../business-video/sign-up.md)通过运行安装向导配置核心设置来完成设置[](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)。
+对于所有其他组织，注册 Microsoft 365 商业高级版[后，](../business-video/sign-up.md)通过运行安装向导配置核心设置来完成设置。 [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
 
 对于所有组织，通过：保护管理员帐户、[](m365-campaigns-protect-admin-accounts.md)保护对邮件和数据的访问[](m365-campaigns-conditional-access.md)以及增强[威胁防护来提升安全保护](m365-campaigns-increase-protection.md)。
 
@@ -52,7 +52,7 @@ ms.locfileid: "58378009"
 
 用户需要花几分钟时间设置设备以用于此环境。 对于主要 (黑客攻击的最高价值目标的用户) ，你可以设置和预配置新设备。 这有助于他们开始使用其凭据登录Microsoft 365登录。
 
-![用户设备设置过程](../media/m365-democracy-user-device-setup.png)
+![用户设备设置过程。](../media/m365-democracy-user-device-setup.png)
   
 若要设置用户设备：
 
@@ -65,4 +65,4 @@ ms.locfileid: "58378009"
 
  **如需联系支持人员：**
   
-作为Microsoft 365管理员，你可以访问我们的客户支持团队，联系商业产品支持 **[人员 - 管理员帮助](../business-video/get-help-support.md)**
+作为Microsoft 365管理员，你可以访问我们的客户支持团队，联系商业产品支持人员 **[- 管理员帮助](../business-video/get-help-support.md)**

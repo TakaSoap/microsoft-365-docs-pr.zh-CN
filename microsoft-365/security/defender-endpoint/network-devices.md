@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e3665e148cd08bfef2fd56e1d51595ed7626a57a82cc6c3b3577b8d157bb1a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b365be018fafb487fb689acb09749804f849ce3b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884558"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58550054"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "53884558"
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP (只读) 对网络设备执行经过身份验证的扫描。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
 
 需要记住两种类型的设备：
 
@@ -68,17 +68,17 @@ ms.locfileid: "53884558"
 - HPE 更新、安装交换机软件
 - Palo Alto Networks PAN-OS
 
-随着时间的推移，将基于从客户使用情况收集的数据，添加更多网络供应商和操作系统。 因此，建议配置所有网络设备，即使在此列表中未指定这些设备。
+随着时间的推移，将基于从客户使用情况收集的数据，添加更多的网络供应商和操作系统。 因此，建议配置所有网络设备，即使在此列表中未指定这些设备。
 
 ## <a name="how-to-get-started"></a>如何开始使用
 
 第一步是选择将执行经过身份验证的网络扫描的设备。
 
-1. 确定适用于终结点的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。 
+1. 确定具有与计划扫描 (网络设备的管理端口) 客户端或服务器客户端的 Defender for Endpoint 载入的设备。 
 
 2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
 
-3. 确定将针对漏洞评估哪些网络设备 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。  
+3. 确定将评估哪些网络设备的漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。  
 
 4. 确保在所有已配置的网络设备上启用 SNMP 只读，以允许 Defender for Endpoint 评估设备查询配置的网络设备。 此功能的正确功能不需要"SNMP 写入"。
 
@@ -98,23 +98,23 @@ ms.locfileid: "53884558"
     > [!NOTE]
     > 并非所有 URL 都指定在 Defender for Endpoint 记录允许的数据收集列表中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-若要配置评估作业，需要以下用户权限选项： **在安全中心中管理安全设置**。 可以通过访问角色 来设置  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
+若要配置评估作业，需要以下用户权限选项： **在安全中心管理安全设置**。 可以通过访问角色 来设置  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到 **"Microsoft 365网络设置** 下 (终结点  >    >    >  **评估**) 。
-    1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
+1. 转到Microsoft 365 **网络设置** 下 (终结点  >    >    >  **评估**) 。
+    1. 在"Microsoft 365 Defender"门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
 
     > [!div class="mx-imgBorder"]
-    > ![下载扫描程序按钮](images/assessment-jobs-download-scanner.png)
+    > ![下载扫描程序按钮。](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>网络扫描程序安装&注册
 
-登录过程可以在指定的评估设备本身或其他任何设备（例如，你的个人客户端设备 (）上) 。
+登录过程可以在指定的评估设备本身或其他任何设备（例如 (客户端设备）上) 。
 
 要完成网络扫描程序注册过程，请执行以下操作：
 
@@ -134,7 +134,7 @@ ms.locfileid: "53884558"
 若要防止网络设备清单中的设备重复，请确保跨多个评估设备仅配置每个 IP 地址一次。
 
 > [!div class="mx-imgBorder"]
-> ![添加网络评估作业按钮](images/assessment-jobs-add.png)
+> ![添加网络评估作业按钮。](images/assessment-jobs-add.png)
 
 添加网络评估作业步骤：
 
@@ -164,7 +164,7 @@ ms.locfileid: "53884558"
 新发现的设备将显示在"设备清单"页中的"新网络设备"**选项卡** 下。 添加评估作业后最多可能需要两个小时，直到设备更新。
 
 > [!div class="mx-imgBorder"]
-> !["设备清单"中的"网络设备"部分](images/assessment-jobs-device-inventory.png)
+> !["设备清单"中的"网络设备"部分。](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>疑难解答
 
@@ -172,7 +172,7 @@ ms.locfileid: "53884558"
 
 验证所需的 URL 是否添加到防火墙设置中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>未 Microsoft.com/devicelogin 网页
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Microsoft.com/devicelogin 网页未显示
 
 验证所需的 URL 是否添加到防火墙中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
 
@@ -198,7 +198,7 @@ ms.locfileid: "53884558"
 
 ### <a name="registration-process-fails-using-provided-link-in-the-command-line-in-registration-process"></a>注册过程在注册过程中使用命令行中提供的链接失败
 
-请尝试不同的浏览器，或将登录链接和代码复制到其他设备。
+尝试不同的浏览器或将登录链接和代码复制到其他设备。
 
 ### <a name="text-too-small-or-cant-copy-text-from-command-line"></a>文本过小或无法从命令行复制文本
 

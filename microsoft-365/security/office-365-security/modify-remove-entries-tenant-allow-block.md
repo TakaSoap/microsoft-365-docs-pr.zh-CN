@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何修改和删除安全门户中租户允许/阻止列表中的条目。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951468fb9b3245135356d956e488c55390e9c6f9
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573807"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>修改和删除租户允许/阻止列表中的条目
 
@@ -46,7 +46,7 @@ ms.locfileid: "58349784"
    - **Files**
    - **网络钓鱼**
 
-3. 选择要修改的条目，然后单击"编辑 ![ "图标"编辑 ](../../media/m365-cc-sc-edit-icon.png) **"。** 可以在出现的飞出控件中修改的值取决于您在上一步中所选的选项卡：
+3. 选择要修改的条目，然后单击"编辑 ![ "图标。](../../media/m365-cc-sc-edit-icon.png) **编辑**。 可以在出现的飞出控件中修改的值取决于您在上一步中所选的选项卡：
    - **发件人**
      - **永不过期** 和/或到期日期。
      - **可选注释**
@@ -58,7 +58,7 @@ ms.locfileid: "58349784"
      - **可选注释**
    - **网络钓鱼**
      - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
-4. 完成时，请单击“保存”。
+4. 完成后，单击“**保存**”。
 
 > [!NOTE]
 > 创建日期后最多只能延长 30 天。 阻止可延长最多 90 天，但与允许不同，也可以设置为永不过期。
@@ -73,7 +73,7 @@ ms.locfileid: "58349784"
    - **Files**
    - **网络钓鱼**
 
-3. 选择要删除的条目，然后单击"删除" ![ 图标"删除 ](../../media/m365-cc-sc-delete-icon.png) **"。**
+3. 选择要删除的条目，然后单击"删除 ![ 图标"。](../../media/m365-cc-sc-delete-icon.png) **删除**。
 
 4. 在出现的警告对话框中，单击"删除 **"。**
 

@@ -9,27 +9,27 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Normal
 description: 了解如何在 SharePoint Syntex 中培训模型时使用辅助功能SharePoint Syntex。
-ms.openlocfilehash: 349c9ff2fee37e4f40185c4d61592eb379d83382d373961980bfb615db7040c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795444"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573747"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint 整合辅助功能模式
 
 在[SharePoint Syntex](index.md)中，用户可以在使用示例文档时在模型 (、标签、培训和测试) 所有阶段启用辅助功能模式。 使用辅助功能模式可帮助低视力用户在文档查看器中导航和标记项目时更轻松地使用键盘辅助功能。
 
-这有助于用户使用键盘在文档查看器中浏览文本，并不仅听到所选值的旁白，还有助于听到操作 (例如标记或删除选定文本) 中的标签，或者使用其他示例文档训练模型时预测的标签值。 
+这可帮助用户使用键盘在文档查看器中浏览文本，并不仅听到所选值的旁白，还帮助用户听到 (操作（如标记或删除选定文本) 中的标签）或用其他示例文档训练模型时预测的标签值。 
 
 
-![辅助功能模式](../media/content-understanding/accessibility-mode.png)
+![辅助功能模式。](../media/content-understanding/accessibility-mode.png)
 
 ## <a name="requirements"></a>要求
 
-若要听到旁白的音频，请确保在系统上的"讲述人"设置中[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)打开"讲述人Windows 10应用。
+若要听到旁白的音频，请确保在"讲述人"系统上的"讲述[](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1)人"设置中Windows 10应用。
 
-![打开"讲述人"](../media/content-understanding/narrator-settings.png)
+![打开"讲述人"。](../media/content-understanding/narrator-settings.png)
 
 ## <a name="labeling-for-keyboard-users"></a>键盘用户标签
 
@@ -57,7 +57,7 @@ ms.locfileid: "53795444"
 - 在培训选项卡中，如果在文档查看器中选择一个仅预测的字符串，"讲述人"音频将声明该值，然后"预测"。 当培训预测文件中与用户标记的值不匹配的值时，会出现此情况。
 - 在培训选项卡中，如果在已标记和预测的文档查看器中选择一个字符串，"讲述人"音频将声明该值，然后"标记并预测"。 当培训成功且预测值与用户标签匹配时，会出现此情况。
 
-在查看器中标记字符串或删除标签后，讲述人音频将警告你退出之前保存更改。
+在查看器中标记字符串或删除标签后，讲述人音频会警告你退出之前保存更改。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: b9496ebe150839deb23823dc0a7492c849c7f076ba1934a847621eb553486016
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822057"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567164"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -66,7 +66,7 @@ ms.locfileid: "53822057"
 
 ::: moniker-end
 
-1. 选择应用启动器 ![ 应用启动器图标 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然后选择管理。
+1. 选择应用启动器 ![ 应用启动器图标 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) 。，然后选择"管理员 **"。**
    
     找不到需要的应用？ 从应用启动器中，选择 **"** 所有应用"以查看可用应用的字母列表。 可在此处搜索特定应用。 
     
@@ -78,7 +78,7 @@ ms.locfileid: "53822057"
     
 5. 为规则命名。
     
-6. 在 **"应用此规则"** 下，选择 **"[应用于所有邮件]"。**
+6. 在 **"应用此规则"下**，选择 **"[应用于所有邮件]"。**
     
     > [!TIP]
     > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但它也适用于 Microsoft 365.)  

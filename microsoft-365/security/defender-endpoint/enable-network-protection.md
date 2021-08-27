@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 480500484948beb1423cea0640c8c01a00252190
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 15cd59e2d0291a713de142f303bb9934ec1c06d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594182"
+ms.locfileid: "58550210"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -44,7 +44,7 @@ ms.locfileid: "58594182"
 
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
 
-3. 在嵌套菜单中导航到 **软件** 策略 \>  \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** \> **网络保护**
+3. 在嵌套菜单中导航到 **软件** 策略  >    >  **Microsoft**  >  **Windows Defender Windows Defender**  >  **Exploit Guard**  >  **网络保护**
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
 
@@ -60,7 +60,7 @@ ms.locfileid: "58594182"
 
 - [PowerShell](#powershell)
 - [移动设备管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
 - [组策略](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
@@ -90,7 +90,7 @@ ms.locfileid: "58594182"
 
 2. 创建或编辑 [终结点保护配置文件](/mem/intune/protect/endpoint-protection-configure)
 
-3. 在 **配置文件设置** 配置策略下，转到Microsoft Defender 攻击防护 \> **网络筛选** 网络保护 \>  \> **仅启用** 或 **审核"**
+3. 在 **配置文件设置** 配置策略"下，转到"Microsoft Defender 攻击防护  >  **网络筛选**  >  **""** 仅启用或  >  审核 **"**
 
 ### <a name="group-policy"></a>组策略
 
@@ -104,10 +104,10 @@ ms.locfileid: "58594182"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows Exploit** Guard \> **网络** \> **Microsoft Defender 防病毒Windows Defender** \> **组件**。
+3. 展开树以 **Windows Exploit** Guard  >  **网络Microsoft Defender 防病毒Windows Defender**  >    >  **组件**。
 
    > [!NOTE]
-   > 在旧版 Windows，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
     - **阻止** - 用户无法访问恶意 IP 地址和域
