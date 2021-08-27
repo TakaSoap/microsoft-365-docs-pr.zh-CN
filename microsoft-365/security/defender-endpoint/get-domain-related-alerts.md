@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1511a31dfd7c86d24f3a91ceebfca65d1ce777e3
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365065"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611143"
 ---
 # <a name="get-domain-related-alerts-api"></a>获取与域相关的警报 API
 
@@ -37,43 +37,43 @@ ms.locfileid: "58365065"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 ## <a name="api-description"></a>API 说明
+
 检索与给定 [域](alerts.md) 地址相关的警报集合。
 
-
 ## <a name="limitations"></a>限制
+
 1. 你可以根据配置的保留期查询上次更新的警报。
 2. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
-
 
 ## <a name="permissions"></a>权限
 
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
-权限类型 |   权限  |   权限显示名称
+权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序 |   Alert.Read.All |    "读取所有警报"
-应用程序 |   Alert.ReadWrite.All |   "读取和写入所有警报"
-委派（工作或学校帐户） | Alert.Read | "读取警报"
-委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
+应用程序|Alert.Read.All|"读取所有警报"
+应用程序|Alert.ReadWrite.All|"读取和写入所有警报"
+委派（工作或学校帐户）|Alert.Read|"读取警报"
+委派（工作或学校帐户）|Alert.ReadWrite|"读取和写入警报"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
->- 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
+
 ```http
 GET /api/domains/{domain}/alerts
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-| 标头        | 值  |
-|:--------------|:-------|
-| Authorization | String |
+|标头|值|
+|---|---|
+|Authorization|String|
 
 ## <a name="request-body"></a>请求正文
 

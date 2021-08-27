@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以了解如何使用隔离策略来控制用户可以对隔离邮件执行哪些操作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 581b465ddc8197e2f029b149c57d5d83aacf7a15
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b35a53973c64447fe01b3657969cc7289165538d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533467"
+ms.locfileid: "58561214"
 ---
 # <a name="quarantine-policies"></a>隔离策略
 
@@ -49,10 +49,10 @@ ms.locfileid: "58533467"
 
 |权限|无访问权限|受限访问|完全访问权限|
 |---|:---:|:---:|:---:|
-|**阻止发件人 (** _PermissionToBlockSender_) ||![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|**删除** (_PermissionToDelete_) ||![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|**预览** (_PermissionToPreview_) ||![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|**允许收件人使用** _PermissionToRelease_ (将邮件从隔离) |||![复选标记](../../media/checkmark.png)|
+|**阻止发件人 (** _PermissionToBlockSender_) ||![选中标记。](../../media/checkmark.png)|![选中标记。](../../media/checkmark.png)|
+|**删除** (_PermissionToDelete_) ||![选中标记。](../../media/checkmark.png)|![选中标记。](../../media/checkmark.png)|
+|**预览** (_PermissionToPreview_) ||![选中标记。](../../media/checkmark.png)|![选中标记。](../../media/checkmark.png)|
+|**允许收件人使用** _PermissionToRelease_ (将邮件从隔离) |||![选中标记。](../../media/checkmark.png)|
 |**允许收件人请求从隔离邮箱** 中释放 (_PermissionToRequestRelease_) ||![复选标记](../../media/checkmark.png)||
 |
 
@@ -82,7 +82,7 @@ ms.locfileid: "58533467"
 
 1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Threat \> **policies** \> **Rules** section \> **Quarantine policies** and then select Quarantine **policies**.
 
-2. 在"**隔离策略"页上**，单击" ![ 添加自定义策略"图标 ](../../media/m365-cc-sc-create-icon.png) **"添加自定义策略"。**
+2. 在" **隔离策略"** 页上，单击 ![ "添加自定义策略图标"。](../../media/m365-cc-sc-create-icon.png) **添加自定义策略**。
 
 3. 将 **打开"新建策略** "向导。 在" **策略名称"** 页上，在"策略名称"框中输入简短但 **唯一** 的名称。 你需要在即将推出的步骤中按名称标识并选择隔离策略。 完成后，请单击“**下一步**”。
 
@@ -114,7 +114,7 @@ ms.locfileid: "58533467"
 
 ### <a name="create-quarantine-policies-in-powershell"></a>在 PowerShell 中创建隔离策略
 
-如果你希望使用 PowerShell 创建隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用 **New-QuarantineTag** cmdlet。 有两种不同的方法可供选择：
+如果你希望使用 PowerShell 创建隔离策略，请Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用 **New-QuarantineTag** cmdlet。 有两种不同的方法可供选择：
 
 - [使用 _EndUserQuarantinePermissionsValue_ 参数](#use-the-enduserquarantinepermissionsvalue-parameter)。
 - [使用 _EndUserQuarantinePermissions_ 参数](#use-the-enduserquarantinepermissions-parameter)。
@@ -237,7 +237,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 ### <a name="anti-spam-policies"></a>反垃圾邮件策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration Policies** & \> **rules** \>  \> **Anti-spam** in the **Rules** section.
+1. 在 Microsoft 365 Defender 门户中，转到"规则"&电子邮件&策略""威胁策略 \>  \>  \> **""** 反垃圾邮件"。 
 
    或者，若要直接转到 **"Ant-spam policies"** 页面，请使用 <https://security.microsoft.com/antispam> 。
 
@@ -253,7 +253,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
    **注意**：创建新策略时，空白选择隔离策略值表示已使用该裁定的默认隔离策略。 稍后编辑策略时，空白值将替换为实际的默认隔离策略名称，如上表所述。
 
-   ![反垃圾邮件策略中的隔离策略选择](../../media/quarantine-tags-in-anti-spam-policies.png)
+   ![反垃圾邮件策略中的隔离策略选择。](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 有关创建和修改反垃圾邮件策略的完整说明，请参阅在 [EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -281,7 +281,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
   只有当您想要更改该特定裁定的隔离邮件上的默认最终用户功能时，才需要将默认隔离策略替换为自定义隔离策略。
 
-- PowerShell 中的新反垃圾邮件策略需要使用 **New-HostedContentFilterPolicy** cmdlet 和独占垃圾邮件筛选器规则 (设置) ，而使用 **New-HostedContentFilterRule** cmdlet 的独占垃圾邮件筛选器规则 (收件人筛选器) 。 有关说明，请参阅 [使用 PowerShell 创建反垃圾邮件策略](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies)。
+- PowerShell 中的新反垃圾邮件策略需要使用 **New-HostedContentFilterPolicy** cmdlet 和排他垃圾邮件筛选器规则 (设置) 以及使用 **New-HostedContentFilterRule** cmdlet 的独占垃圾邮件筛选器规则 (收件人筛选器) 。 有关说明，请参阅 [使用 PowerShell 创建反垃圾邮件策略](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies)。
 
 本示例将创建一个名为"Research Department"的新垃圾邮件筛选策略，并具有以下设置：
 
@@ -306,7 +306,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱智能仅在 Defender for Office 365。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
 
-1. 在 Microsoft 365 Defender 门户中，**在"规则**"&"电子邮件&策略""威胁策略 \>  \>  \> **""** 防钓鱼 **"。**
+1. 在 Microsoft 365 Defender 门户中，转到"规则"&电子邮件&策略""威胁策略 \>  \>  \> **""** 防钓鱼 **"。**
 
    或者，若要直接转到 **"Ant-spam policies"** 页面，请使用 <https://security.microsoft.com/antiphishing> 。
 
@@ -333,7 +333,7 @@ EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱
 
    **注意**：创建新策略时，空白的"应用 **隔离** 策略"值指示使用该操作的默认隔离策略。 稍后编辑策略时，空白值将替换为实际的默认隔离策略名称，如上表所述。
 
-   ![反垃圾邮件策略中的隔离策略选择](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![反垃圾邮件策略中的隔离策略选择。](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 以下主题中提供了有关创建和修改反网络钓鱼防护的完整说明：
 
@@ -342,7 +342,7 @@ EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱
 
 #### <a name="anti-phishing-policies-in-powershell"></a>PowerShell 中的防钓鱼策略
 
-如果你希望使用 PowerShell 在防钓鱼策略中分配隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，然后使用以下语法：
+如果你想要使用 PowerShell 在反网络钓鱼策略中分配隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，然后使用以下语法：
 
 ```powershell
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
@@ -358,13 +358,13 @@ EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱
   Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*Action,*QuarantineTag
   ```
 
-  有关 Standard 和 Strict 的默认操作值以及建议的操作值的信息，请参阅[EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)防钓鱼策略设置和 Microsoft Defender for Office 365 中的防钓鱼策略[中的模拟Office 365。](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+  有关 Standard 和 Strict 的默认操作值以及建议的操作值的信息，请参阅[EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)防钓鱼策略设置和 Microsoft Defender for Office 365 中的防钓鱼策略中的模拟[Office 365。](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
 - 无相应隔离策略参数的防钓鱼操作意味着使用 [该裁定的默认](#step-2-assign-a-quarantine-policy-to-supported-features) 隔离策略。
 
   只有当您想要更改该特定裁定的隔离邮件上的默认最终用户功能时，才需要将默认隔离策略替换为自定义隔离策略。
 
-- PowerShell 中的新防钓鱼策略要求使用 **New-AntiPhishPolicy** cmdlet 和排他式防钓鱼规则) 的反网络钓鱼策略 (设置 (收件人筛选器) 使用 **New-AntiPhishRule** cmdlet。 有关说明，请参阅以下主题：
+- PowerShell 中的新防钓鱼策略要求使用 **New-AntiPhishPolicy** cmdlet 的反网络钓鱼策略 (设置) 以及使用 **New-AntiPhishRule** cmdlet 的独占反网络钓鱼规则 (收件人筛选器) 。 有关说明，请参阅以下主题：
   - [使用 PowerShell 在 EOP 中配置防钓鱼策略](configure-anti-phishing-policies-eop.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
   - [使用 Exchange Online PowerShell 配置防钓鱼策略](configure-mdo-anti-phishing-policies.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
 
@@ -389,7 +389,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 
 ### <a name="anti-malware-policies"></a>反恶意软件策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"规则"&电子邮件&策略""威胁策略 \>  \>  \> **""** 反恶意软件"。 
+1. 在 Microsoft 365 Defender门户中，转到"规则"&电子邮件&策略""威胁策略""反恶意软件 \>  \>  \> "。 
 
    或者，若要直接转到 **"反恶意软件"页面，** 请使用 <https://security.microsoft.com/antimalwarev2> 。
 
@@ -407,7 +407,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 
 #### <a name="anti-malware-policies-in-powershell"></a>PowerShell 中的反恶意软件策略
 
-如果你希望使用 PowerShell 在反恶意软件策略中分配隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，然后使用以下语法：
+如果您更希望使用 PowerShell 在反恶意软件策略中分配隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用以下语法：
 
 ```powershell
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
@@ -461,11 +461,11 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
    **注意**：创建新策略时，空的 **隔离** 策略值表示已使用默认隔离策略。 以后编辑策略时，空白值将替换为上表中所述的实际默认隔离策略名称。
 
-有关创建和修改附件保险箱的完整说明，请参阅在 Microsoft Defender 中为附件保险箱[设置附件Office 365。](set-up-safe-attachments-policies.md)
+有关创建和修改附件保险箱的完整说明，请参阅在 Microsoft Defender 中为附件保险箱设置[附件Office 365。](set-up-safe-attachments-policies.md)
 
 #### <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-in-powershell"></a>保险箱PowerShell SharePoint、OneDrive 和 Microsoft Teams 附件
 
-如果更希望使用 PowerShell 为 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 分配隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，并使用以下语法：
+如果你希望使用 PowerShell 为 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件分配隔离策略，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，并使用以下语法：
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -474,7 +474,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 
 **注意**：
 
-- 只有当您想要更改由 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件隔离的文件的默认最终用户功能时，才需要将默认隔离策略替换为自定义隔离策略。
+- 只有在要更改由 保险箱 Attachments 隔离的文件的默认最终用户功能时，才需要将默认隔离策略替换为自定义隔离策略SharePoint、OneDrive 和 Microsoft Teams。
 
   若要查看重要参数值，请运行以下命令：
 
@@ -484,7 +484,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 
 - 若要为 SharePoint、OneDrive 和 Microsoft Teams 启用 保险箱 附件，请参阅打开 保险箱 Attachments [for SharePoint， OneDrive， and Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
-- PowerShell 中的新 保险箱 附件策略需要使用 **New-SafeAttachmentPolicy** cmdlet 的安全附件策略 (设置) 以及使用 **New-SafeAttachmentRule** cmdlet 的独占安全附件规则 (收件人筛选器) 。 有关说明，请参阅使用[Exchange Online PowerShell 或独立 EOP PowerShell 配置保险箱附件策略。](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)
+- PowerShell 中的新 保险箱 附件策略需要使用 **New-SafeAttachmentPolicy** cmdlet 的安全附件策略 (设置) ，以及使用 **New-SafeAttachmentRule** cmdlet 的独占安全附件规则 (收件人筛选器) 。 有关说明，请参阅使用[Exchange Online PowerShell 或独立 EOP PowerShell 配置保险箱附件策略](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)。
 
 本示例为 SharePoint、OneDrive 和 Microsoft Teams 启用"保险箱 附件"，然后创建一个名为"研究部门"的安全附件策略，该策略使用名为 NoAccess 的自定义隔离策略，该隔离策略分配"无访问权限"。
 
@@ -503,11 +503,11 @@ New-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 有关语法和参数的详细信息，请参阅 [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy)。
 
-## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>在门户中配置全局隔离Microsoft 365 Defender设置
+## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>在管理门户中配置Microsoft 365 Defender设置
 
 隔离策略的全局设置允许您自定义发送到已隔离邮件收件人的最终用户垃圾邮件通知。 有关这些通知详细信息，请参阅 [最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Threat \> **policies** \> **Rules** section \> **Quarantine policies** and then select Quarantine **policies**.
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 威胁策略"部分"隔离策略 \>  \>  \> "，然后选择"隔离 **策略"。**
 
 2. 在"**隔离策略"页上**，选择"**全局设置"。**
 
@@ -515,37 +515,37 @@ New-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
    - **显示名称**：自定义显示名称垃圾邮件通知中使用的发件人地址。
 
-     对于已添加的每种语言，选择第二种语言框中 (不要单击 X) 请在"显示名称"框中输入 **您需要的文本值** 。
+     对于已添加的每种语言，选择第二种语言框中的语言 (不要单击 X) 请在"显示名称"框中输入您需要 **的文本值。**
 
      以下屏幕截图显示了最终用户显示名称中的自定义邮件：
 
-     ![自定义发件人显示名称最终用户垃圾邮件通知中](../../media/quarantine-tags-esn-customization-display-name.png)
+     ![自定义发件人显示名称最终用户垃圾邮件通知中。](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **免责声明**：将自定义免责声明添加到最终用户垃圾邮件通知的底部。 您组织的本地化文本 **（免责声明：）** 始终先包含，后跟您指定的文本。
 
-     对于已添加的每种语言，选择第二种语言框中 (不要单击"X) "，在"免责声明"框中输入 **您需要的文本值** 。
+     对于已添加的每种语言，选择第二种语言框中的语言 (不要单击 X) 请在"免责声明"框中输入 **您需要的文本值** 。
 
      以下屏幕截图显示了最终用户垃圾邮件通知中的自定义免责声明：
 
-     ![最终用户垃圾邮件通知底部的自定义免责声明](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     ![最终用户垃圾邮件通知底部的自定义免责声明。](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **选择语言**：最终用户垃圾邮件通知已根据收件人的语言设置进行本地化。 您可以为"显示名称"和"免责声明"值指定不同语言的 **自定义** 文本。
 
      至少从第一种语言框中选择一种语言， **然后单击添加**。 可以通过单击每种语言后的 **"添加"** 来选择多种语言。 部分语言框显示你选择的所有语言：
 
-     ![隔离策略的全局隔离通知设置中第二种语言框中选定的语言](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     ![隔离策略的全局隔离通知设置中第二种语言框中选定的语言。](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **使用我的公司徽标**：选择此选项可替换最终用户垃圾邮件通知顶部使用的默认 Microsoft 徽标。 在这样做之前，你需要按照自定义组织的自定义Microsoft 365[主题](../../admin/setup/customize-your-organization-theme.md)中的说明上载自定义徽标。
 
      以下屏幕截图显示了最终用户垃圾邮件通知中的自定义徽标：
 
-     ![最终用户垃圾邮件通知中的自定义徽标](../../media/quarantine-tags-esn-customization-logo.png)
+     ![最终用户垃圾邮件通知中的自定义徽标。](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **每两天发送一次最终用户 () ：** 选择希望最终用户通知退出的频率。
+   - **每两天发送一** 次最终用户 (垃圾邮件) ：选择希望最终用户通知退出的频率。
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>在门户中查看Microsoft 365 Defender策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Threat \> **policies** \> **Rules** section \> **Quarantine policies** and then select Quarantine **policies**.
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 威胁策略"部分"隔离策略 \>  \>  \> "，然后选择"隔离 **策略"。**
 
 2. "**隔离策略**"页按名称和上次更新日期 **显示策略** 列表。
 
@@ -579,13 +579,13 @@ New-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 ## <a name="modify-quarantine-policies-in-the-microsoft-365-defender-portal"></a>修改 Microsoft 365 Defender 门户中的隔离策略
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Threat \> **policies** \> **Rules** section \> **Quarantine policies** and then select Quarantine **policies**.
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 威胁策略"部分"隔离策略 \>  \>  \> "，然后选择"隔离 **策略"。**
 
 2. 在" **隔离策略"** 页上，通过单击名称选择策略。
 
-3. 选择该策略后，单击出现的"编辑 ![ 策略"图标 ](../../media/m365-cc-sc-edit-icon.png) **"** 编辑策略图标"。
+3. 选择策略后，单击"编辑 ![ 策略"图标。](../../media/m365-cc-sc-edit-icon.png) **编辑显示** 的策略图标。
 
-4. 打开 **的"** 编辑策略"向导几乎与"新建策略"向导完全相同，如本文前面在 Microsoft 365 Defender [门户](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)创建隔离策略部分所述。
+4. 打开 **的"** 编辑策略"向导几乎与"新建策略"向导相同，如本文前面在 Microsoft 365 Defender [门户](#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)创建隔离策略部分所述。
 
    主要区别在于：无法重命名现有策略。
 
@@ -603,7 +603,7 @@ Set-QuarantineTag -Identity "<QuarantinePolicyName>" [Settings]
 
 有关语法和参数的详细信息，请参阅 [Set-QuarantineTag](/powershell/module/exchange/set-quarantinetag)。
 
-## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>在管理门户中删除Microsoft 365 Defender策略
+## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>删除 Microsoft 365 Defender 门户中的隔离策略
 
 **注意**：
 
@@ -616,11 +616,11 @@ Set-QuarantineTag -Identity "<QuarantinePolicyName>" [Settings]
 
   如果使用隔离策略， [请替换已分配的隔离策略](#step-2-assign-a-quarantine-policy-to-supported-features) ，然后再删除它。
 
-1. In the Microsoft 365 Defender portal， go to **Email & collaboration** Threat \> **policies** \> **Rules** section \> **Quarantine policies** and then select Quarantine **policies**.
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 威胁策略"部分"隔离策略 \>  \>  \> "，然后选择"隔离 **策略"。**
 
 2. 在" **隔离策略** "页上，单击名称，选择要删除的自定义隔离策略。
 
-3. 选择该策略后，单击出现的"删除策略 ![ "图标 ](../../media/m365-cc-sc-delete-icon.png) **"** 删除策略图标"。
+3. 选择策略后，单击"删除 ![ 策略"图标。](../../media/m365-cc-sc-delete-icon.png) **删除显示** 的策略图标。
 
 4. 单击 **出现的** 确认对话框中的"删除策略"。
 
@@ -656,7 +656,7 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
 
 #### <a name="no-access"></a>无访问权限
 
-如果隔离策略将"无访问权限" (管理员仅) ，用户将看不到被隔离的邮件：
+如果隔离策略为管理员分配"无访问权限 (仅访问) ，则用户将无法看到被隔离的邮件：
 
 - **隔离邮件详细信息**：最终用户视图中不会显示任何邮件。
 - **最终用户垃圾邮件通知**：不会为这些邮件发送任何通知。
@@ -672,14 +672,14 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
   - **从隔离区中删除**
   - **阻止发件人**
 
-  ![隔离策略授予用户受限访问权限时隔离邮件详细信息中的可用按钮](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  ![隔离策略授予用户受限访问权限时隔离邮件详细信息中的可用按钮。](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **最终用户垃圾邮件通知**：以下按钮可用：
   - **阻止发件人**
   - **请求释放**
   - **审阅**
 
-  ![如果隔离策略授予用户受限访问权限，最终用户垃圾邮件通知中的可用按钮](../../media/quarantine-tags-esn-limited-access.png)
+  ![如果隔离策略授予用户受限访问权限，最终用户垃圾邮件通知中的可用按钮。](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>完全访问权限
 
@@ -692,14 +692,14 @@ Remove-QuarantineTag -Identity "<QuarantinePolicyName>"
   - **从隔离区中删除**
   - **阻止发件人**
 
-  ![隔离策略授予用户完全访问权限时隔离邮件详细信息中的可用按钮](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![隔离策略授予用户完全访问权限时隔离邮件详细信息中的可用按钮。](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **最终用户垃圾邮件通知**：以下按钮可用：
   - **阻止发件人**
   - **发布**
   - **审阅**
 
-  ![如果隔离策略授予用户完全访问权限，最终用户垃圾邮件通知中的可用按钮](../../media/quarantine-tags-esn-full-access.png)
+  ![如果隔离策略授予用户完全访问权限，则最终用户垃圾邮件通知中的可用按钮。](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>个人权限
 

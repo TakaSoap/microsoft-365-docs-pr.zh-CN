@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81c64c7a73a7d298c4468f5c7735ee3e16cf55ac630e502364170b71a1b32a5e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7f884fa55d0f3514aae36761642e2589d1ea51e
+ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894211"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58666762"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ ms.locfileid: "53894211"
 
 - Defender for Endpoint 订阅和访问 Microsoft 365 Defender 门户
 - macOS 和 BASH 脚本的初学者级体验
-- 手动部署时，设备上 (管理权限) 
+- 手动部署时， (管理权限) 
 
 ### <a name="installation-instructions"></a>安装说明
 
@@ -80,14 +80,14 @@ ms.locfileid: "53894211"
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
 
 > [!IMPORTANT]
-> 截至 2021 年 2 月 15 (对) MacOS 10.13) 的支持已终止。
+> 自 2021 年 2 月 15 日起 (macOS 10.13) 已停用。
 
 - 11 (大) ，10.15 (加泰罗尼亚语) ，10.14 (Mojave) 
 - 磁盘空间：1GB
 
 不支持 macOS 的 Beta 版本。
 
-不支持具有 M1 处理器的 macOS 设备。
+目前，对具有基于 M1 芯片的处理器的 macOS 设备的支持处于预览阶段。
 
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 
@@ -109,9 +109,9 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
-|域列表电子表格|说明|
+|域列表的电子表格|说明|
 |---|---|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载[电子表格：mdatp-urls.xlsx。 ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载电子表格[：mdatp-urls.xlsx。 ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 Microsoft Defender for Endpoint 可以通过以下发现方法发现代理服务器：
 
@@ -151,7 +151,7 @@ mdatp connectivity test
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上更新 Microsoft Defender for Endpoint
 
-Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要更新 Mac 上的 Microsoft Defender for Endpoint，使用名为 Microsoft AutoUpdate (MAU) 程序。 若要了解更多信息，请参阅 [在 Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 更新。
+Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要更新 Mac 上的 Microsoft Defender for Endpoint，使用名为 Microsoft AutoUpdate (MAU) 程序。 若要了解更多信息，请参阅 [在 Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 的更新。
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>如何在 Mac 上配置 Microsoft Defender for Endpoint
 

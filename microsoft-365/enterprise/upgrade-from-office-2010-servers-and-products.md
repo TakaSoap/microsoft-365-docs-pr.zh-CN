@@ -23,18 +23,18 @@ f1.keywords:
 - NOCSH
 description: 开始规划从 Office 2010 服务器和客户端应用程序的升级，因为支持即将终止且自定义支持协议不可用。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15d70ba1a090af9c378f7a041313620703c2a667
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354172"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571911"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>帮助从 Office 2010 服务器和客户端升级的相关资源
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Office 2010 和 Exchange 2010 在 **2020 年 10 月 13** 日终止支持。
+Office 2010 Exchange 2010 年 10 月 **13** 日终止支持。
 
 SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日** 终止支持。
 
@@ -42,15 +42,15 @@ SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日** 终止�
 
 - Microsoft 365 Office 2010 服务器产品（如 Exchange Server 和 SharePoint Server）以及 Teams 和 OneDrive for Business 等基于云的服务。
 
-- Microsoft 365 企业应用版 (*Office 365 专业增强版)* E5 中包含的 Office 365 专业增强版) Microsoft 365 E3 是在本地设备上安装的 Office 客户端应用集。 它们从 Microsoft 云中定期更新新的生产力和安全功能。
+- Microsoft 365 企业应用版 (Office 365 专业增强版) ，Microsoft 365 E3和 E5 包含的 Office 是在本地设备上安装的一组 Office 客户端应用。 它们从 Microsoft 云中定期更新新的生产力和安全功能。
 
 有关 Office 2010 客户端、服务器和 Windows 7 的升级、迁移和移动到云选项的直观摘要，请参阅支持海报[结尾](../downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![停止支持 Office 2010 客户端和服务器以及 Windows 7 海报](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![停止支持 Office 2010 客户端和服务器以及 Windows 7 海报。](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-此单页海报总结了处理 Office 2010 客户端和服务器产品的各种途径，Windows 7 实现支持。 突出显示中的首选路径Microsoft 365 企业版选项支持。
+此单页海报总结了处理 2010 客户端和服务器Office和 2010 Windows 7 时可以使用的各种途径。 突出显示中的首选路径Microsoft 365 企业版选项支持。
 
-还可以下载此 [海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ，以 11 x 17 格式的信函、 (或文) 打印。
+您还可以下载此 [海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ，以 11 x 17 格式的信件、法律或 (标签) 打印。
 
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 客户端和服务器升级计划
 

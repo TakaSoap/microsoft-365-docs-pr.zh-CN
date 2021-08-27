@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 学习如何使用精确数据匹配和敏感信息类型向导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082bc5e9731a7abb0a8f1d9bd9b6f2e4e4a77dd07363dd475ec350c0c983b250
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895340"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572163"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>使用精确数据匹配架构和敏感信息类型向导
 
-[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (规则包) 文件来帮助简化此过程。
+[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (规则) 文件来帮助简化此过程。
 
 可以使用此向导而无需：
 
@@ -47,11 +47,11 @@ ms.locfileid: "53895340"
 
 2. 选择 **创建 EDM 架构** 打开架构向导配置弹出菜单t。
 
-![EDM 架构创建向导配置弹出菜单](../media/edm-schema-wizard-1.png)
+![EDM 架构创建向导配置飞出控件。](../media/edm-schema-wizard-1.png)
 
 3. 填入相应的 **名称** 和 **说明**。
 
-4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要了解有关将 EDM 配置为忽略大小写或分隔符的信息，请参阅使用基于 [EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
+4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要详细了解如何配置 EDM 以忽略大小写或分隔符，请参阅使用基于 [EDM 和 EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
 
 5. 在 **架构字段 #1** 中填入所需值，并按需要添加新字段。 
 
@@ -89,11 +89,11 @@ ms.locfileid: "53895340"
 
 使用此向导创建 EDM 架构和模式（规则包）文件后，还必须执行 [第二部分：哈希和上传敏感数据](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) 中的步骤，才能使用此 EDM 自定义敏感信息类型。
 
-确认敏感信息表已正确上载后，可以测试其是否正常工作。
+验证敏感信息表是否已正确上载后，可以测试其是否正常工作。
 
 1. 打开 **合规中心**  >  **数据分类**  >  **敏感信息类型**。
 2. 从列表中选择 EDM SIT，然后在飞 **出窗格中** 选择"测试"。 
-3. Upload包含要检测的数据的项，例如创建一个包含敏感信息表中的部分数据的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含带和不带这些分隔符的示例。
+3. Upload包含要检测的数据的项，例如创建一个包含敏感信息表中的部分数据的项。 如果在架构中使用了可配置的匹配功能来定义忽略的分隔符，请确保该项包含包含和不带这些分隔符的示例。
 4. 上传并扫描文件后，检查 EDM SIT 的匹配项。
 5. 如果 **SIT** 中的 Test 函数检测到匹配项，请检查它未进行修整或提取不正确。 例如，通过仅提取它应检测的完整字符串的子字符串，或仅选取多词字符串中的第一个单词，或在提取中添加额外的符号或字符。 有关 [正则表达式语言参考，](/dotnet/standard/base-types/regular-expression-language-quick-reference) 请参阅正则表达式语言 - 快速参考。 
 
@@ -103,5 +103,5 @@ ms.locfileid: "53895340"
 - 使用使用 [EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)工具上传敏感数据的指南中介绍的命令确认你的敏感数据已正确上载。
 - 检查在项中输入的示例是否存在于敏感信息表中，以及忽略的分隔符是否正确。
 - **测试** 在每个模式中配置主元素时所使用的 SIT。 这将确认 SIT 能够匹配项中的示例。 
-  -  如果为 EDM 类型中的主元素选择的 SIT 在项中找不到匹配项或找到的匹配项数低于预期，请检查它是否支持存在于内容中的分隔符和分隔符。 请务必在架构中包括定义的忽略分隔符。 
+  -  如果为 EDM 类型中的主元素选择的 SIT 在项中找不到匹配项或找到的匹配项数低于预期，请检查它是否支持内容中的分隔符和分隔符。 请务必在架构中包括定义的忽略分隔符。 
   -  如果 **Test** 函数完全检测不到任何内容，请检查所选的 SIT 是否包含其他关键字或其他验证的要求。 有关内置 SIT，请参阅敏感信息类型 [实体](sensitive-information-type-entity-definitions.md) 定义，以验证匹配每种类型的最低要求。

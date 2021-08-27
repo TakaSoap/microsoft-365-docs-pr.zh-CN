@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 07/22/2021
-ms.openlocfilehash: c2fafe62c5fecbc1e7ed9f7e622daf6a1b6c7faa
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 6063aed4fcbd215e4acfcc1e265df5775c3105b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510041"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561382"
 ---
 # <a name="cloud-delivered-protection-antivirus-sample-submission"></a>云提供的保护防病毒示例提交
 
@@ -75,7 +75,7 @@ Defender for Endpoint 防病毒和云保护使用以下方法自动阻止大多�
       1. **自动发送安全示例** (默认) 
          - 保险箱被视为通常不包含 PII 数据的示例，例如：.bat、.scr、.dll、.exe。
          - 如果文件可能包含 PII，用户将收到允许提交文件示例的请求。
-         - 这是 Windows macOS 和 Linux 上的默认值。
+         - 这是在 Windows macOS 和 Linux 上的默认设置。
 
       2. **始终提示**
          - 如果配置，则始终在提交文件之前提示用户征得同意
@@ -95,15 +95,15 @@ Defender for Endpoint 防病毒和云保护使用以下方法自动阻止大多�
 
 _图 1 - 发送到 Microsoft Defender 云保护的元数据示例_：
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="图 1.发送到 Microsoft Defender 云保护的元数据示例":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="图 1.发送到 Microsoft Defender 云保护的元数据示例。":::
 
 _图 2.云提供的保护流_：
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="图 2.云提供的保护流":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="图 2.云提供的保护流。":::
 
 _图 3.云提供的保护和分层机器学习_：
 
-:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="图 3.云提供的保护和分层机器学习":::
+:::image type="content" source="images/cloud-protection-detection-layered-machine-learning.png" lightbox="images/cloud-protection-detection-layered-machine-learning.png" alt-text="图 3.云提供的保护和分层机器学习。":::
 
 > [!NOTE]
 >
@@ -124,7 +124,7 @@ _图 3.云提供的保护和分层机器学习_：
 
 ### <a name="manual-file-sample-collection-by-security-admin-from-defender-for-endpoint-management-portal"></a>安全管理员从 Defender for Endpoint Management Portal 手动收集文件示例
 
-将设备载入到 Microsoft Defender for Endpoint EDR有一个设置可启用设备中的示例集合，这可能会与上面讨论的设置混淆。 当通过 Defender for Endpoint 管理门户请求时，此设置控制设备中的文件示例集合;它受已建立的角色和权限限制。 此设置可以允许或阻止终结点中的文件收集，以使用 Defender for Endpoint 门户中的深入分析等功能。 如果未配置此设置，则默认为启用示例集合。
+将设备载入到适用于终结点的 Microsoft Defender EDR有一个从设备启用示例集合的设置，该设置可能会与上面讨论的设置混淆。 当通过 Defender for Endpoint 管理门户请求时，此设置控制设备中的文件示例集合;它受已建立的角色和权限限制。 此设置可以允许或阻止终结点中的文件收集，以使用 Defender for Endpoint 门户中的深入分析等功能。 如果未配置此设置，则默认为启用示例集合。
 
 了解适用于终结点的 Defender 配置设置，请参阅：在 Defender for Endpoint 中为 Windows 10[设备载入工具和方法](configure-endpoints.md)
 

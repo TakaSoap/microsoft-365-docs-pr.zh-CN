@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 03bae05ba35b8ee332fbbb1083aa4a5763fc1cf4
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507718"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561286"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 CSP 支持字符串，包含 `<enabled/>` ：
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="自定义编辑行":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="自定义编辑行。":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>方案 2：允许使用 Intune 的特定批准的 USB 打印机
 
@@ -102,7 +102,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
 通过"ApprovedUsbPrintDevices"属性批准的 USB 打印机的云解决方案提供商支持字符串，示例 `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` ：
 
-:::image type="content" source="../../media/editrow.png" alt-text="编辑行":::
+:::image type="content" source="../../media/editrow.png" alt-text="编辑行。":::
 
 ## <a name="deploy-policy-via-group-policy"></a>通过组策略部署策略
 
@@ -118,7 +118,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
   用户配置 \> 管理模板 \> 控制面板 \> 打印机：启用设备控件打印限制
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="启用设备打印限制":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="启用设备打印限制。":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>方案 2：允许使用组策略的特定批准的 USB 打印机
 
@@ -130,7 +130,7 @@ CSP 支持字符串，包含 `<enabled/>` ：
 
   用户配置 \> 管理模板 \> 控制面板 \> 打印机：已批准 USB 连接的打印设备列表
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="批准的 USB 连接打印设备列表":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="批准的 usb 连接打印设备列表。":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>在 Microsoft Defender 终结点门户中查看设备控制打印机保护数据
 
@@ -148,7 +148,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高级搜寻":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高级搜寻。":::
  
  可以使用 PnP 事件查找组织中使用的 USB 打印机：
  

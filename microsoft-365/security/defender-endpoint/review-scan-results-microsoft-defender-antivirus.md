@@ -1,6 +1,6 @@
 ---
 title: 查看 Microsoft Defender AV 扫描的结果
-description: 使用应用、Microsoft Endpoint Configuration Manager或Microsoft Intune查看Windows 安全中心结果
+description: 使用应用、应用Microsoft Endpoint Configuration Manager、Microsoft Intune或Windows 安全中心扫描结果
 keywords: 扫描结果， 修正， 完全扫描， 快速扫描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c7860c284d82ee2fbdb9f8e2eae6299f56f6387b45b8c6f3d88eb2733ee7cd72
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799764"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561262"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
@@ -47,7 +47,7 @@ ms.locfileid: "53799764"
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell cmdlet 和输出的屏幕截图":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell cmdlet 和输出的屏幕截图。":::
 
 你可以指定 `-ThreatID` 将输出限制为只显示特定威胁的检测。
 
@@ -57,7 +57,7 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 代码":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 代码。":::
 
 请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender/) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。
 

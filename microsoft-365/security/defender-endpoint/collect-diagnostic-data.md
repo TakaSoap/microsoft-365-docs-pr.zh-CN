@@ -1,6 +1,6 @@
 ---
 title: 收集诊断数据Microsoft Defender 防病毒
-description: 使用工具收集数据以排查Microsoft Defender 防病毒
+description: 使用工具来收集数据以排查Microsoft Defender 防病毒
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender av， 组策略对象， 设置， 诊断数据
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8a016ab0e73af99ce47c30b598daade864e041eb
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510021"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561394"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 诊断数据
 
@@ -68,7 +68,7 @@ ms.locfileid: "58510021"
 > [!NOTE]
 > 如果更新合规性有问题，使用 Update <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Compliance</a>支持电子邮件模板发送电子邮件，并填写包含以下信息的模板：
 >
-> 在更新合规性中使用 Microsoft Defender 防病毒时，我遇到以下问题：
+> 我在更新合规性中Microsoft Defender 防病毒以下问题：
 >
 > 我至少在以下位置.cab 2 个支持文件：
 >
@@ -111,7 +111,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>指定创建诊断数据的位置
 
-您还可以指定使用组策略对象.cab GPO 文件创建诊断 (文件) 。
+还可以指定使用组策略.cab GPO 文件创建诊断 (文件) 。
 
 1. 打开本地组策略编辑器，并找到 SupportLogLocation GPO，位置为： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation` 。
 
@@ -121,12 +121,13 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
    ![定义日志文件设置路径的屏幕截图](images/GPO2-SupportLogLocationGPPage.png)
 
+    ![本地组策略编辑器的屏幕截图。](images/GPO1-SupportLogLocationDefender.png)  
+        
+     ![定义日志文件设置路径的屏幕截图。](images/GPO2-SupportLogLocationGPPage.png)  
 3. 在策略编辑器内，选择"已启用 **"。**
 
 4. 在"选项"字段中指定要复制支持日志文件的 **目录** 路径。
-
-   ![已启用目录路径自定义设置的屏幕截图](images/GPO3-SupportLogLocationGPPageEnabledExample.png)
-
+     ![Enabled 目录路径自定义设置的屏幕截图。](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. 选择 **"确定"** 或"**应用"。**
 
 ## <a name="see-also"></a>另请参阅

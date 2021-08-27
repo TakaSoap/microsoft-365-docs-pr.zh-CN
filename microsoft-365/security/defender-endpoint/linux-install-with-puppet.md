@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12c7b68ba6de7accd8a6f5c2ae15a48f29b23230
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 6029fbb2f00cde1346dc2661486ae494015a753f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572127"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>使用部署在 Linux 上的 Microsoft Defender for Endpoint
 
@@ -57,7 +57,7 @@ ms.locfileid: "58372432"
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft 365 Defender门户屏幕截图](images/portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender门户屏幕截图。](images/portal-onboarding-linux-2.png)
 
 4. 在命令提示符下，验证您是否具有该文件。 
 
@@ -81,7 +81,7 @@ ms.locfileid: "58372432"
 
 你需要创建一个清单，用于将 Linux 上的 Defender for Endpoint 部署到由开发工具服务器管理的设备上。 此示例使用了从 *labs中* 提供的 apt 和 *yumrepo* 模块，并假定模块已安装在了您的开发工具服务器上。
 
-在安装 *Install_mdatp模块文件夹* 下创建 *install_mdatp/文件和install_mdatp/* 清单"文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上述mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
+在安装 *Install_mdatp模块文件夹* 下 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上述mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
 
 ```bash
 pwd
@@ -227,7 +227,7 @@ mdatp health --field healthy
 > [!IMPORTANT]
 > 当产品首次启动时，它将下载最新的反恶意软件定义。 根据您的 Internet 连接，这最多可能需要几分钟。 在此期间，上述命令将返回 的值 `0` 。
 
-如果产品运行不正常， (检查退出代码) `echo $?` 问题：
+如果产品运行不正常， (检查的退出代码) `echo $?` 指示问题：
 
 - 1（如果设备尚未载入）。
 - 3（如果无法建立与守护程序的连接）。
@@ -242,7 +242,7 @@ mdatp health --field healthy
 
 ## <a name="uninstallation"></a>卸载
 
-在 *init.pp* *remove_mdatp与install_mdatp* 内容类似的模块 文件：
+创建一个 *remove_mdatp* 与 *init.pp* *install_mdatp* 以下内容类似的模块 文件：
 
 ```bash
 class remove_mdatp {

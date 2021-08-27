@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: 了解管理员如何设置&使用本机连接器将数据从 LinkedIn 公司页面导入到Microsoft 365。
-ms.openlocfilehash: 950647d1795e63763631c06a949cf05843420f34a2bc451886eacc88649ddb75
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解管理员如何设置&使用本机连接器将数据从 LinkedIn 公司页面导入Microsoft 365。
+ms.openlocfilehash: 2d34a424b11c9489d54a87bfb9f81de9a74ed5e6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861003"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571491"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>设置连接器以存档 LinkedIn 数据
 
 使用 Microsoft 365 合规中心连接器从 LinkedIn 公司页面导入和存档数据。 设置和配置连接器后，它每 24 小时连接到特定 LinkedIn 公司页面的帐户一次。 连接器会将发送到"公司"页面的邮件转换为电子邮件，然后将这些项目导入到 Microsoft 365 中的邮箱。
 
-将 LinkedIn 公司页面数据存储在邮箱中后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核和 Microsoft 365 保留策略）应用于 LinkedIn 数据。 例如，您可以使用内容搜索搜索这些项目，或将存储邮箱与托管人关联到Advanced eDiscovery案例。 创建连接器以导入 LinkedIn 数据并Microsoft 365可帮助组织遵守政府法规策略。
+将 LinkedIn 公司页面数据存储在邮箱中后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核和 Microsoft 365 保留策略）应用于 LinkedIn 数据。 例如，您可以使用内容搜索来搜索这些项目，或将存储邮箱与案例的保管人Advanced eDiscovery关联。 创建连接器以导入 LinkedIn 数据并存档 Microsoft 365可帮助组织遵守政府法规策略。
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
-- 必须为创建 LinkedIn 公司页面连接器的用户分配邮箱导入导出Exchange Online。 这是在"数据连接器"页的"数据连接器 **"页中添加** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须为创建 LinkedIn 公司页面连接器的用户分配邮箱导入导出Exchange Online。 在"数据连接器"页的"数据连接器"**页中添加连接器** Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 你必须拥有作为要存档 (LinkedIn 公司页面管理员的 LinkedIn 用户帐户) 电子邮件地址或电话号码和密码的登录凭据。 设置连接器时，使用这些凭据登录 LinkedIn。
+- 你必须拥有作为要存档的) LinkedIn 公司 (管理员的 LinkedIn 用户帐户的登录凭据 (电子邮件地址或电话号码和密码。 设置连接器时，使用这些凭据登录 LinkedIn。
 
 - LinkedIn 连接器在一天中总共可以导入 200，000 个项目。 如果一天中 LinkedIn 项目超过 200，000 个，则这些项均不会导入Microsoft 365。
 
@@ -48,17 +48,17 @@ ms.locfileid: "53861003"
 
    将显示 LinkedIn 登录页。
 
-   ![LinkedIn 登录页](../media/LinkedInSigninPage.png)
+   ![LinkedIn 登录页。](../media/LinkedInSigninPage.png)
 
 5. 在 LinkedIn 登录页面上，输入与要存档的公司页面关联的 LinkedIn 帐户的电子邮件地址 (或电话号码) 和密码，然后单击"**登录"。**
 
    将显示向导页面，其中列出了与登录帐户关联的所有 LinkedIn 公司页面。 连接器只能为一个公司页面进行配置。 如果您的组织有多个 LinkedIn 公司页面，您必须为每个页面创建一个连接器。
 
-   ![将显示包含 LinkedIn 公司页面列表的页面](../media/LinkedInSelectCompanyPage.png)
+   ![将显示包含 LinkedIn 公司页面列表的页面。](../media/LinkedInSelectCompanyPage.png)
 
 6. 选择要存档其项目的公司页面，然后单击"下一步 **"。**
 
-7. 在"**选择存储位置**"页上，在框中单击，选择 Microsoft 365 LinkedIn 项目将导入到的邮箱的电子邮件地址，然后单击"下一 **步"。** 项目将导入到此邮箱中的收件箱文件夹。
+7. 在"**选择** 存储位置"页上，在框中单击，选择 Microsoft 365 LinkedIn 项目将导入到的邮箱的电子邮件地址，然后单击"下一 **步"。** 项目将导入到此邮箱中的收件箱文件夹。
 
 8. 单击 **"下** 一步"查看连接器设置，然后单击" **完成** "以完成连接器设置。
 
@@ -66,6 +66,6 @@ ms.locfileid: "53861003"
 
 若要查看更多详细信息，请在"数据连接器"页上的列表中选择 **连接器以显示该** 飞出页。 在 **"** 状态"下，显示的日期范围指示创建连接器时选择的年龄筛选器。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 LinkedIn 项目将导入到 Microsoft 365 中存储邮箱的收件箱中的 LinkedIn 子Microsoft 365。 它们显示为电子邮件。

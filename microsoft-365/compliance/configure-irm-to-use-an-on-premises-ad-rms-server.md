@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: 了解如何在 Exchange Online 中配置信息权限 (IRM) ，以使用 Active Directory 权限管理服务 (AD RMS) 服务器。
+description: 了解如何在 Exchange Online 中 (IRM) IRM (AD RMS) Active Directory 权限管理服务。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d2685994e35f88d92ab6b6854e88607cd84f153692a22f29c966e701f8d30f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830825"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572055"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
 
@@ -42,7 +42,7 @@ ms.locfileid: "53830825"
 
 - 有关如何安装和配置 Windows PowerShell 以及连接到服务的详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange 管理中心的键盘[Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中的 Exchange[键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。
@@ -128,7 +128,7 @@ Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 
 **“不要转发”模板**
 
-将默认 TPD 从内部部署组织导入到 Exchange Online 时，会导入一个名为“不要转发”的 AD RMS 权限策略模板。 默认情况下，导入默认 TPD 时将分发此模板。 不能用 **Set-RMSTemplate** cmdlet 修改" **不要转发"** 模板。
+将默认 TPD 从内部部署组织导入到 Exchange Online 时，会导入一个名为“不要转发”的 AD RMS 权限策略模板。 默认情况下，导入默认 TPD 时将分发此模板。 使用 **Set-RMSTemplate** cmdlet 不能修改" **不要转发"** 模板。
 
 将“不要转发”模板应用于邮件时，只有邮件的收件人可读取该邮件。另外，收件人不能执行以下操作：
 
@@ -168,4 +168,4 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 - 使用 **Test-IRMConfiguration** cmdlet 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration) 中的"示例 1"。
 
-- 在"其他选项图标"Outlook 网页版扩展菜单中选择"设置权限"选项，在 Outlook 网页版 中撰写新邮件，然后使用 I (RM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif)) 。
+- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在Outlook 网页版 中撰写新邮件，然后使用 I (RM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) 进行) 。

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50abaa4033f00225cb4b456949d57618741e8016
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 528e7ed0f7655cd873a42a5b953049d078d19803
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532795"
+ms.locfileid: "58571839"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>计划 Microsoft Defender for Endpoint 部署
 
@@ -36,7 +36,7 @@ ms.locfileid: "58532795"
 
 此解决方案提供了有关如何确定环境体系结构、选择最符合您需求的部署工具类型的指导，以及如何配置功能的指南。
 
-![部署流的图像](images/deployment-guide-plan.png)
+![部署流的图像。](images/deployment-guide-plan.png)
 
 ## <a name="step-1-identify-architecture"></a>步骤 1：确定体系结构
 
@@ -46,9 +46,9 @@ ms.locfileid: "58532795"
 
 使用以下材料选择最适合贵组织的适用于终结点的 Defender 体系结构。
 
-|项目|说明|
-|---|---|
-|[![适用于终结点部署策略的 Defender 缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) <br> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) \|[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)  |体系结构资料有助于规划如下体系结构的部署： <ul><li>云-本机</li><li>协同管理</li><li>本地</li><li>评估和本地载入</li></ul>|
+| 项目 | 说明 |
+|:-----|:-----|
+|[![适用于终结点部署策略的 Defender 缩略图。](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
 
 ## <a name="step-2-select-deployment-method"></a>步骤 2：选择部署方法
 

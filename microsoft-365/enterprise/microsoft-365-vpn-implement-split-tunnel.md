@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 58c72fa0ede7b9f0fb75d1a8d8c26a4a18464aa4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9d706de846b6206a6be8a1524da1222b1c49147b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533575"
+ms.locfileid: "58571971"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -37,7 +37,7 @@ ms.locfileid: "58533575"
 
 使用强制隧道 VPN 连接到分布式且对性能敏感的云应用程序是非优化的，但一些企业为了从安全角度维持状态而接受其负面影响。 下面是此场景的一个示例图：
 
-![拆分隧道 VPN 配置](../media/vpn-split-tunneling/enterprise-network-traditional.png)
+![拆分Tunnel VPN 配置。](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 此问题多年来一直在增长，许多客户报告网络流量模式发生显著变化。 过去位于本地的流量现在连接到外部云终结点。 许多 Microsoft 客户报告，以前大约 80% 的网络流量都来自内部（上图中用虚线表示）。 到 2020 年，随着他们将主要的工作负载转移到云上，这一数字现在约为 20% 或更低，这些趋势在其他企业中并不罕见。 随着时间的推移和云历程的发展，上述模型变得愈加累赘且不可持续，这使得组织在迁移到以云为中心的世界时的敏捷度受到影响。
 
@@ -63,31 +63,31 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 这是大多数企业客户最常用的入门方案。 使用强制 VPN，这意味着 100% 的流量将定向到企业网络，无论终结点是否驻留在企业网络内。 然后， (Internet) 流量（如 Office 365 或 Internet 浏览）的任何外部流量都回发回本地安全设备（如代理）。 在当前近 100% 的用户远程工作的当前情况中，此模型对 VPN 基础结构造成高负载，并且可能会显著妨碍所有公司流量的性能，进而使企业在危机时高效运行。
 
-![VPN 强制隧道模型 1](../media/vpn-split-tunneling/vpn-model-1.png)
+![VPN 强制Tunnel模型 1。](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. VPN 强制隧道（有几个受信任的异常）
 
 此模型对于企业运行的效率明显更高，因为它允许几个负载和延迟非常高且对延迟非常敏感的受控和定义的终结点绕过 VPN 隧道并直接转到此示例中的 Office 365 服务。 这显著提高了卸载服务的性能，还减少了 VPN 基础结构上的负载，从而允许仍然需要它的元素以较低的资源争用运行。 正是此模型，本文侧重于协助过渡到 ，因为它允许快速执行简单的已定义操作，并产生大量积极结果。
 
-![拆分隧道 VPN 模型 2](../media/vpn-split-tunneling/vpn-model-2.png)
+![拆分Tunnel VPN 模型 2。](../media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. VPN 强制隧道（有多个例外）
 
 第三个模型扩大模型二的范围，而不只是直接发送一小组定义的终结点，而是直接将所有流量发送到受信任的服务（如 Office 365 和 SalesForce）。 这可进一步减少公司 VPN 基础结构的负载，并提高已定义服务的性能。 由于此模型可能需要更多时间来评估和实施是否可行，因此在成功实施模型 2 后，稍后可能会反复执行一个步骤。
 
-![拆分隧道 VPN 模型 3](../media/vpn-split-tunneling/vpn-model-3.png)
+![拆分Tunnel VPN 模型 3。](../media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. VPN 选择性隧道
 
 此模型与第三个模型相反，因为只有标识为具有公司 IP 地址的流量才通过 VPN 隧道发送，因此 Internet 路径是其他所有流量的默认路由。 此模型要求组织能够很好地适应[零信任](https://www.microsoft.com/security/zero-trust?rtc=1)路径，以便能够安全地实现此模型。 应注意的是，此模型或某些变体可能随着时间的推移而成为必要的默认模型，因为越来越多的服务将从公司网络移动到云中。 Microsoft 在内部使用此模型；有关 Microsoft 实现 VPN 拆分隧道的更多信息，请参阅[运行 VPN：Microsoft 如何让远程工作人员互联](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)。
 
-![拆分隧道 VPN 模型 4](../media/vpn-split-tunneling/vpn-model-4.png)
+![拆分Tunnel VPN 模型 4。](../media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. 无 VPN
 
 第二个型号的更高级版本，其中任何内部服务都通过现代安全方法或 SDWAN 解决方案（如 Azure AD 代理、MCAS、Zscaler ZPA 等）发布。
 
-![拆分隧道 VPN 模型 5](../media/vpn-split-tunneling/vpn-model-5.png)
+![拆分Tunnel VPN 模型 5。](../media/vpn-split-tunneling/vpn-model-5.png)
 
 ## <a name="implement-vpn-split-tunneling"></a>实现 VPN 拆分隧道
 
@@ -95,7 +95,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 下图显示了建议的 VPN 拆分隧道解决方案的工作原理：
 
-![拆分隧道 VPN 解决方案详细信息](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![拆分隧道 VPN 解决方案详细信息。](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 标识要优化的终结点
 
@@ -172,7 +172,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 添加路由后，可通过在命令提示符或 PowerShell 中运行 **route print** 来确认路由表是否正确。 输出应包含添加的路由，显示接口索引（本例为 _22_）和该接口的网关（本例为 _192.168.1.1_）：
 
-![路由打印输出](../media/vpn-split-tunneling/vpn-route-print.png)
+![路由打印输出。](../media/vpn-split-tunneling/vpn-route-print.png)
 
 若要在“优化”类别中添加 _所有_ 当前 IP 地址范围的路由，可使用以下脚本变体查询 [Office 365 IP 和 URL Web 服务](microsoft-365-ip-web-service.md)，以获取当前优化 IP 子网集合并将其添加到路由表。
 
@@ -319,15 +319,15 @@ Microsoft 安全团队发布了供安全专业人员和 [IT](https://www.microso
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>为什么需要端口 80？ 流量是否明文发送？
 
-端口 80 仅用于重定向到端口 443 会话之类的操作，不会通过端口 80 发送或访问任何客户数据。 [加密](../compliance/encryption.md)概述了传输中和静态数据对 Office 365 的加密，而流量类型概述了[](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)如何使用 SRTP 来保护Teams流量。
+端口 80 仅用于重定向到端口 443 会话之类的操作，不会通过端口 80 发送或访问任何客户数据。 [加密](../compliance/encryption.md)概述了对传输中和静态数据进行加密Office 365流量类型概述了如何使用 SRTP 来保护Teams流量。 [](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>此建议是否适用于使用 Office 365 全球实例的中国用户？
 
 **否**，不适用。 在上述建议中，要注意连接到 Office 365 全球实例的中国用户。 由于该区域会经常出现跨境网络拥挤现象，因此直接 Internet 出口性能可能会有变化。 该区域中的大多数客户都使用 VPN 将流量引入公司网络，并利用其经授权的 MPLS 专线或类似于通过优化路径的国家/地区之外的出口。 [面向中国用户的 Office 365 性能优化](microsoft-365-networking-china.md)一文对此进行了进一步的概述。
 
-### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>拆分隧道配置是否适用于Teams中运行的信息？
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>拆分隧道配置是否适用于在Teams中运行的信息？
 
-是的，它通过受支持的浏览器（在获取客户端 for [Microsoft Teams 中列出](/microsoftteams/get-clients#web-client)）。
+是的，它通过支持的浏览器（在获取客户端 for [Microsoft Teams 中列出](/microsoftteams/get-clients#web-client)）。
 
 ## <a name="related-topics"></a>相关主题
 

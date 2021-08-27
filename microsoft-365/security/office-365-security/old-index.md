@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解你拥有的属性并了解如何保护你的属性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 471817772327a761e1903d0074c41ad3a4bd5fbac1ddb501b2d8887e35d51b34
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8ef88d80a4d02a51055c9bfe338617b04162888a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571959"
 ---
 # <a name="office-365-security"></a>Office 365 安全中心
 
@@ -58,7 +58,7 @@ Office 365 安全基于 EOP 提供的核心保护创建。 EOP 可用于可找�
 
 但是在架构方面，让我们开始将每个部分视为安全的累积层，每层都强调安全性。 更多此类内容：
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
+<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic.":::-->
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP 和 Microsoft Defender for Office 365 以及与其他的关系，重点是服务，其中包括有关电子邮件身份验证的说明。":::
 

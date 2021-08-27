@@ -15,23 +15,23 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how Advanced eDiscovery in Microsoft 365 supports Chinese， Japanese， and Korean (CJK) languages， which use a double-byte character set.
-ms.openlocfilehash: 7301903effa11dbe090197f0445f572b754fb44ca267b39b8cdc18ed27459fb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解Advanced eDiscovery语言Microsoft 365支持使用双字节字符集的 CJK (CJK) 、日语和朝鲜语的语言。
+ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905879"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572031"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 语言支持Advanced eDiscovery
 
-Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，这些语言统称为 *CJK* 语言) ，用于审阅集的以下高级方案：
+Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，在审阅集的以下高级方案中统称为 *CJK* 语言) ：
 
 - 查询 [审阅集 内的数据时](review-set-search.md)。
 
 - 在审阅 [集 内标记文档时](tagging-documents.md)。
 
-- 当你 [使用近重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
+- 当你 [使用几乎重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -41,7 +41,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 我们针对所有搜索运算符和搜索条件 [](keyword-queries-and-search-conditions.md#search-operators)（包括布尔 [](keyword-queries-and-search-conditions.md#search-conditions)运算符 **AND** **、OR、NOT** 和 **NEAR）** 提供 CJK 支持。 
 
-如果您确定内容位置或项目包含 CJK 字符，但搜索不会返回任何结果，请单击查询语言-国家/地区图标 ![内容搜索中的查询语言国家/地区图标](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) 并选择相应的语言国家/地区区域性代码值进行搜索。 默认语言/区域是中性的。
+如果您确定内容位置或项目包含 CJK 字符，但搜索不会返回任何结果，请单击查询语言-国家/地区图标 ![内容搜索中的查询语言国家/地区图标。](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) 并选择相应的语言国家/地区区域性代码值进行搜索。 默认语言/区域是中性的。
 
 **能否同时搜索多种语言？**
 
@@ -63,7 +63,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 否，不能按审阅集内的文档语言进行筛选、排序或搜索。
 
-**此 CJK 版本用于审阅集方案是否会影响我的任何现有搜索和审阅集？**
+**此 CJK 版本用于审阅集方案是否将影响我的任何现有搜索和审阅集？**
 
 否，现有的搜索和审阅集不会更改。 无需对现有数据重新索引，英文文本的搜索结果将相同。
 

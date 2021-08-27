@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd3ff63482340cb69a432e73d7ca8ff258f86522
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561238"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加块
 
@@ -36,54 +36,54 @@ ms.locfileid: "58349952"
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止发件人条目
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&**规则""威胁** 策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表**"页上，验证"发件人"选项卡已选中，然后单击"阻止 ![ "图标"阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
+2. 在" **租户允许/阻止列表** "页上，验证是否选择了"发件人 **"选项卡，** 然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **阻止**。
 
 3. 在 **出现的"阻止发件人** "飞出中，配置以下设置：
    - **发件人电子邮件地址或** 域：每行 (一个发件人电子邮件地址或) ，最多 20 个。
    - **永不过期**：执行下列步骤之一：
-     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (![ 关闭。) 并使用"删除"框指定条目 ](../../media/scc-toggle-off.png) 的到期日期。 
 
        或
 
-     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
+     - 将开关移到右侧，将条目配置为永不过期： ![打开。](../../media/scc-toggle-on.png).
    - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止 URL 条目
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&**规则""威胁** 策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表**"页上，验证 **"URL"** 选项卡已选中，然后单击"阻止 ![ "图标"阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
+2. 在" **租户允许/阻止列表** "页上，验证 **"URL"** 选项卡已选中，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **阻止**。
 
 3. 在 **出现的"阻止 URL"** 飞出中，配置以下设置：
    - **添加包含通配符的 URL：** 每行输入一个 URL，最多输入 20 个。 有关 URL 条目的语法的详细信息，请参阅管理租户允许/阻止列表 中的 URL [语法部分](tenant-allow-block-list.md)。
    - **永不过期**：执行下列步骤之一：
-     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (![ 关闭。) 并使用"删除"框指定条目 ](../../media/scc-toggle-off.png) 的到期日期。 
 
        或
 
-     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
+     - 将开关移到右侧，将条目配置为永不过期： ![打开。](../../media/scc-toggle-on.png).
    - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止文件条目
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&**规则""威胁** 策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表"** 页上，选择"**文件**"选项卡，然后单击"阻止 ![ 图标阻止 ](../../media/m365-cc-sc-create-icon.png) **"。**
+2. 在" **租户允许/阻止列表"** 页上，选择" **文件** "选项卡，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **阻止**。
 
 3. 在出现的 **"阻止文件** "飞出中，配置以下设置：
    - **添加文件哈希**：每行输入一个 SHA256 哈希值，最多 20 个。
    - **永不过期**：执行下列步骤之一：
-     - 验证是否关闭该设置 (关闭) 并使用"删除"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (![ 关闭。) 并使用"删除"框指定条目 ](../../media/scc-toggle-off.png) 的到期日期。 
 
      或
 
-     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
+     - 将开关移到右侧，将条目配置为永不过期： ![打开。](../../media/scc-toggle-on.png).
    - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
@@ -97,14 +97,14 @@ ms.locfileid: "58349952"
 - 欺骗性发件人的条目永不过期。
 - 欺骗同时支持允许和阻止。 URL 仅支持允许。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&**规则""威胁** 策略规则"部分 \>  \> "租户 \> **允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"选项卡**，然后单击"阻止图标""添加 ![ ](../../media/m365-cc-sc-create-icon.png) **"。**
+2. 在" **租户允许/阻止列表"** 页上，选择" **欺骗"** 选项卡，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **添加** 。
 
 3. 在出现的 **"添加新域对** "飞出中，配置以下设置：
    - **使用通配符添加新域对**：每行输入一个域对，最多输入 20 个域对。 有关欺骗性发件人条目的语法的详细信息，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
    - **欺骗类型**：选择下列值之一：
-     - **内部**：欺骗性发件人位于你的组织所属的域中， ([接受的) 。](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+     - **内部**：欺骗性发件人位于组织所属的域中， ([接受的) 。](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **外部**：欺骗性发件人位于外部域中。
    - **操作**：选择 **"允许"** 或"**阻止"。**
 

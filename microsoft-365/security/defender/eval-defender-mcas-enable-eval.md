@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: efb6bcde04411b3409d3076d09251423d436265c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 1b5e664e6675b477ecb2507fd52588aa159bcc9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252141"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571791"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>启用评估环境Microsoft Cloud App Security
 
@@ -36,27 +36,27 @@ ms.locfileid: "58252141"
 
 本文是设置评估环境的过程中第 2 步（第 2 步，第[2](eval-defender-mcas-overview.md)步Microsoft Cloud App Security）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-mcas-overview.md)。
 
-本文将引导你完成访问云应用门户云应用安全配置收集云应用流量数据的必要集成。
+本文将指导你完成访问云应用门户云应用安全配置收集云应用流量数据所需的集成的过程。
 
 若要发现环境中使用的云应用，你可以执行以下一项或两项操作：
 
-- 与 Microsoft Defender for Endpoint 集成，快速启动并运行云发现。 通过此本机集成，你可以立即开始在 Windows 10 设备上、网络上和网络上收集云流量上的数据。
+- 与 Microsoft Defender for Endpoint 集成，快速启动并运行云发现。 通过此本机集成，你可以立即开始在 Windows 10 设备上以及网络上和网络上收集云流量上的数据。
 - 若要发现连接到网络的所有设备访问的所有云应用，云应用安全防火墙和其他代理上部署云日志收集器。 这将从终结点收集数据，并将其发送到云应用安全进行分析。 云应用安全与一些第三方代理进行本机集成，以使用更多功能。
 
 本文包括这两种方法的指南。
 
 使用以下步骤设置Microsoft Cloud App Security。
 
-![在 Microsoft Defender Microsoft Cloud App Security环境中启用 Microsoft 支持的步骤](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+![在 Microsoft Defender 评估Microsoft Cloud App Security Microsoft 支持的步骤。](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
 
 - [步骤 1.连接门户云应用安全](#step-1-connect-to-the-cloud-app-security-portal)
 - [步骤 2.与 Microsoft Defender for Endpoint 集成](#step-2-integrate-with-microsoft-defender-for-endpoint)
-- [步骤 3.将云应用安全日志收集器部署到防火墙和其他代理上](#step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies)
+- [步骤 3.在云应用安全和其他代理上部署安全日志收集器](#step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies)
 - [步骤 4.查看云发现仪表板以查看组织中使用的应用](#step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization)
 
 ## <a name="step-1-connect-to-the-cloud-app-security-portal"></a>步骤 1. 连接门户云应用安全
 
-若要验证许可并连接到 云应用安全 门户，请参阅[快速入门：开始Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security) 
+若要验证许可并连接到 云应用安全 门户，请参阅[快速入门：Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security) 
 
 如果无法立即连接到门户，可能需要将 IP 地址添加到防火墙的允许列表中。 请参阅[基本设置了解云应用安全。](/cloud-app-security/general-setup)
 
@@ -66,15 +66,15 @@ ms.locfileid: "58252141"
 
 Microsoft Cloud App Security与 Microsoft Defender for Endpoint 本地集成。 集成简化了云发现的推出，将云发现功能扩展到企业网络之外，并启用基于设备的调查。 此集成显示从 IT 托管的设备访问的云Windows 10服务。 
 
-如果你已设置 Microsoft Defender for Endpoint，则配置与 云应用安全 的集成是 Microsoft 365 Defender。 启用集成后，你可以返回到云发现云应用安全查看云发现仪表板中的丰富数据。
+如果你已设置适用于终结点的 Microsoft Defender，则配置与 云应用安全 的集成Microsoft 365 Defender。 启用集成后，你可以返回到云发现云应用安全查看云发现仪表板中的丰富数据。
 
 若要完成这些任务，请参阅[Microsoft Defender 终结点与 Microsoft Cloud App Security 集成](/cloud-app-security/mde-integration)。 
 
-## <a name="step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies"></a>步骤 3. 将云应用安全日志收集器部署到防火墙和其他代理上
+## <a name="step-3-deploy-the-cloud-app-security-log-collector-on-your-firewalls-and-other-proxies"></a>步骤 3. 在云应用安全和其他代理上部署安全日志收集器
 
 要覆盖连接到网络的所有设备，请将 云应用安全 日志收集器部署到防火墙和其他代理上，以从终结点收集数据并将其发送到 云应用安全 进行分析。 
 
-如果您使用的是 SWG 中的以下安全 Web 网关 (之) ，云应用安全无缝部署和集成：
+如果您使用的是 SWG 中的以下安全 Web 网关 (之一) ，云应用安全无缝部署和集成：
 - Zscaler
 - iboss
 - Corrata

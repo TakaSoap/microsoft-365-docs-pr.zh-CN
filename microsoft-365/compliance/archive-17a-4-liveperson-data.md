@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以将 LivePerson 对话云数据存档在 Microsoft 365
+title: 设置连接器以在云中存档 LivePerson 对话云Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,24 +12,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 LivePerson Conversational Cloud DataParser 连接器在 Microsoft 365 中导入和存档 LivePerson 对话云数据。
-ms.openlocfilehash: a06de3699c46a57074d125c74c777c4ea8a8a1e6f87aafbbc8c2364acb82c49c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22e21ea0352ff11b96819dafa0a70ee20427c7a2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808821"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571527"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>设置连接器以存档 LivePerson 对话云数据
 
-使用[LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) from 17a-4 LLC 将 LivePerson Conversational Cloud 的数据导入并存档到组织中用户Microsoft 365邮箱。 DataParser 包括一个 LivePerson 对话云连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 LivePerson Conversational Cloud DataParser 连接器将数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
+使用[LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) from 17a-4 LLC 将 LivePerson Conversational Cloud 的数据导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 LivePerson 对话云连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 LivePerson Conversational Cloud DataParser 连接器将数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 
-在用户邮箱中存储数据后，可以应用 Microsoft 365合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 LivePerson 对话云连接器在云中导入和存档Microsoft 365可帮助组织遵守政府法规策略。
+在用户邮箱中存储数据后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 LivePerson 对话云连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府及法规策略。
 
 ## <a name="overview-of-archiving-liveperson-conversational-cloud-data"></a>存档 LivePerson 对话云数据概述
 
 以下概述介绍使用数据连接器在云中存档 LivePerson 对话云数据Microsoft 365。
 
-![17a-4 的 LivePerson 对话云数据的存档工作流](../media/LiveEngageDataParserConnectorWorkflow.png)
+![17a-4 的 LivePerson 对话云数据的存档工作流。](../media/LiveEngageDataParserConnectorWorkflow.png)
 
 1. 你的组织与 17a-4 一起设置和配置 LivePerson 对话云数据Parser。
 
@@ -43,7 +43,7 @@ ms.locfileid: "53808821"
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (中创建 LivePerson 对话云数据Parser连接器，并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** 此Microsoft 365 合规中心。 默认情况下，此角色不会分配给角色组Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (中创建 LivePerson 对话云数据Parser连接器，并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加连接器，Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-a-liveperson-conversational-cloud-dataparser-connector"></a>步骤 1：设置 LivePerson 对话云 DataParser 连接器
 
@@ -65,7 +65,7 @@ ms.locfileid: "53808821"
 
 ## <a name="step-3-map-users"></a>步骤 3：映射用户
 
-LivePerson 对话云 DataParser 连接器会自动将用户映射到Microsoft 365电子邮件地址，然后再将数据导入Microsoft 365。
+LivePerson 对话云 DataParser 连接器会自动将用户映射到其 Microsoft 365 电子邮件地址，然后再将数据导入Microsoft 365。
 
 ## <a name="step-4-monitor-the-liveperson-conversational-cloud-dataparser-connector"></a>步骤 4：监视 LivePerson 对话云 DataParser 连接器
 

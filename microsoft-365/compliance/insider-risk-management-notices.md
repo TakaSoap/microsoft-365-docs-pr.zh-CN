@@ -1,6 +1,6 @@
 ---
 title: 内部风险管理通知模板
-description: 了解管理中心中的内部风险管理通知Microsoft 365
+description: 了解内部风险管理通知模板Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -12,24 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: efb44f098bb18ee25bfc39b2b1c46faa057faa5e7996b24a22af89277e135742
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 786878e827fed6318a70501e400a719ad9181835
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860676"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561442"
 ---
 # <a name="insider-risk-management-notice-templates"></a>内部风险管理通知模板
 
-通过内部风险管理通知模板，您可以在用户的活动生成策略匹配和警报时向用户发送电子邮件。 在大多数情况下，生成警报的用户操作是错误或无意活动（没有恶意意图）的结果。 通知可以让用户更加小心、提供用于刷新培训的信息或公司策略资源的链接，这一点非常简单。 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
+通过内部风险管理通知模板，您可以在用户的活动生成策略匹配和警报时向用户发送电子邮件。 在大多数情况下，生成警报的用户操作是无恶意错误或无意活动的结果。 通知可让用户更加小心、提供刷新培训信息或公司策略资源的链接， 通知可以是内部合规性培训计划的重要部分，并且有助于为具有定期风险活动的用户创建记录审核线索。
 
-如果要在问题解决过程中向用户发送策略匹配项的电子邮件提醒通知，请创建通知模板。 通知只能发送到与要审阅的特定警报关联的用户电子邮件地址。 选择要应用于策略匹配的通知模板时，可以选择接受模板中定义的字段值或根据需要覆盖这些字段。
+如果要在问题解决过程中向用户发送策略匹配项的电子邮件提醒通知，请创建通知模板。 通知只能发送到与要审阅的特定警报关联的用户电子邮件地址。 选择要应用于策略匹配项的通知模板时，可以选择接受模板中定义的字段值或根据需要覆盖这些字段。
 
 ## <a name="notice-templates-dashboard"></a>通知模板仪表板
 
 **通知模板仪表板** 显示已配置通知模板的列表，并允许你创建新的通知模板。 通知模板以相反的日期顺序列出，最新的通知模板列出在最前面。
 
-![内部风险管理通知模板仪表板](../media/insider-risk-notices-dashboard.png)
+![内部风险管理通知模板仪表板。](../media/insider-risk-notices-dashboard.png)
 
 ## <a name="html-for-notices"></a>通知的 HTML
 
@@ -59,13 +59,13 @@ ms.locfileid: "53860676"
 
 1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select the Notice **templates** tab.
 2. 选择 **"创建通知模板** "以打开通知向导。
-3. 在" **新建通知模板** "页上，填写下列字段：
+3. 在" **新建通知模板"页上** ，填写下列字段：
     - **模板名称**：为通知输入友好名称。 从案例发送通知时，此名称将显示在通知仪表板上的通知列表和通知选择列表中。
     - **发件人**：输入通知的发件人电子邮件地址。 此地址将出现在发送给用户的所有通知的 **From：** 字段中，除非在从案例发送通知时发生更改。
-    - **"抄送** "和"密件抄送"字段：从订阅的 Active Directory 选择的策略匹配通知的可选用户或组。
+    - **"抄** 送"和"密件抄送"字段：从订阅的 Active Directory 选择的策略匹配通知的可选用户或组。
     - **主题**：邮件主题行中显示的信息支持文本字符。
     - **邮件正文**：邮件正文中显示的信息支持文本或 HTML 值。
-4. 选择 **"创建** "以创建和保存通知模板， **或选择"** 取消"以关闭而不保存通知模板。
+4. 选择 **"创建** "以创建并保存通知模板， **或选择"** 取消"以关闭而不保存通知模板。
 
 ## <a name="update-a-notice-template"></a>更新通知模板
 

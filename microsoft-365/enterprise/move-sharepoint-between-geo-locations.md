@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何将网站SharePoint多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97f19b0f4ae1e00eb1d81bb20052efa158bc55cf
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400387"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571935"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -80,7 +80,7 @@ SharePoint 站点地理位置移动要求你通过站点所在的地理位置中
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint显示命令的联机命令行管理Connect-SPOService窗口](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint显示命令的"联机命令行管理Connect-SPOService窗口。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>验证环境
 
@@ -118,7 +118,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
 ```
 
-![显示 Start-SPOSiteContentMove cmdlet 的 PowerShell 窗口的屏幕截图](../media/multi-geo-sharepoint-site-move-powershell.png)
+![显示 cmdlet 的 PowerShell Start-SPOSiteContentMove屏幕截图。](../media/multi-geo-sharepoint-site-move-powershell.png)
 
 ### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>为 Microsoft 365 组连接的站点开始 SharePoint 站点地理位置移动
 

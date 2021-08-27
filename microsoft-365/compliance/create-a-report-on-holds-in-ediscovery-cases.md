@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何生成包含与电子数据展示事例关联的所有保留的信息的报告。
-ms.openlocfilehash: 2a169290743c21c947edbb600f00b64a68d8cee2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507610"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572043"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
 
@@ -49,7 +49,7 @@ ms.locfileid: "58507610"
 
 连接到安全与合规& PowerShell 后，下一步是创建并运行收集组织中电子数据展示事例相关信息的脚本。
 
-1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀 .ps1;例如，CaseHoldsReport.ps1。
+1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀.ps1;例如，CaseHoldsReport.ps1。
 
    ```powershell
    #script begin
@@ -139,7 +139,7 @@ ms.locfileid: "58507610"
    #script end
    ```
 
-2. 在Windows PowerShell 1 中打开的脚本会话中，转到保存脚本的文件夹。
+2. 在步骤 1 中打开的 Windows PowerShell 会话中，转到保存脚本的文件夹。
 
 3. 运行脚本;例如：
 
@@ -160,9 +160,9 @@ ms.locfileid: "58507610"
 
    下面是运行 CaseHoldsReport.ps1 脚本的示例。
 
-   ![运行脚本后的输出CaseHoldsReport.ps1脚本](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![运行脚本后的输出CaseHoldsReport.ps1脚本。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 在您运行本文中的脚本时创建的保留报告包含有关每个保留的以下信息。 如前所述，你必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关事例保留详细信息，请参阅 [电子数据展示事例](./get-started-core-ediscovery.md)。
 

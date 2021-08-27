@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b7a3ae0c7dcf64792f61cb183e2bee5f34f2c1a6d7009b421ea767ef44aea06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32da15254d011e67959c7ebeff42ab7024eb0895
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902866"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571827"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "53902866"
 
 - [下载安装和载入程序包](#download-installation-and-onboarding-packages)
 - [macOS (10.15 及早期版本的应用程序安装) ](#application-installation-macos-1015-and-older-versions)
-- [macOS 11 (更高版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
+- [macOS 11 (较新版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
 - [客户端配置](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
@@ -55,7 +55,7 @@ ms.locfileid: "53902866"
 3. 在页面的第 2 部分中，选择 **下载安装程序包**。 将其另存为 wdav.pkg 到本地目录。
 4. 在页面的第 2 部分中，选择 **下载载入程序包**。 将其另存WindowsDefenderATPOnboardingPackage.zip同一目录。
 
-    ![Microsoft 365 Defender门户屏幕截图](images/portal-onboarding-macos.png)
+    ![Microsoft 365 Defender门户屏幕截图。](images/portal-onboarding-macos.png)
 
 5. 在命令提示符下，验证您是否具有这两个文件。
 
@@ -65,20 +65,20 @@ ms.locfileid: "53902866"
 
 1. 导航到 Finder 中下载的 wdav.pkg 并打开它。
 
-    ![应用安装屏幕截图1](images/mdatp-28-appinstall.png)
+    ![应用安装屏幕截图 1。](images/mdatp-28-appinstall.png)
 
 2. 选择 **"继续**"，同意许可条款，在系统提示时输入密码。
 
-    ![应用安装屏幕截图2](images/mdatp-29-appinstalllogin.png)
+    ![应用安装屏幕截图2。](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
-   > 系统将提示你允许从 Microsoft 安装驱动程序， ("系统扩展被阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
+   > 系统将提示你允许从 Microsoft 安装驱动程序， ("系统扩展阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
 
-   ![应用安装屏幕截图3](images/mdatp-30-systemextension.png)
+   ![应用安装屏幕截图3。](images/mdatp-30-systemextension.png)
 
-3. 选择 **"打开安全首选项"** 或"打开系统首选项 **>安全&隐私"。** 选择 **"允许"：**
+3. 选择 **"打开安全首选项"** 或"打开系统 **首选项>安全&隐私"。** 选择 **"允许"：**
 
-    ![安全和隐私窗口屏幕截图](images/mdatp-31-securityprivacysettings.png)
+    ![安全和隐私窗口屏幕截图。](images/mdatp-31-securityprivacysettings.png)
 
    继续安装。
 
@@ -94,27 +94,27 @@ ms.locfileid: "53902866"
 
 1. 导航到 Finder 中下载的 wdav.pkg 并打开它。
 
-    ![应用安装屏幕截图4](images/big-sur-install-1.png)
+    ![应用安装屏幕截图4。](images/big-sur-install-1.png)
 
 2. 选择 **"继续**"，同意许可条款，在系统提示时输入密码。
 
 3. 在安装过程结束时，你将被提升为批准产品使用的系统扩展。 选择 **"打开安全首选项"。**
 
-    ![系统扩展审批](images/big-sur-install-2.png)
+    ![系统扩展审批。](images/big-sur-install-2.png)
 
 4. 从"**安全&隐私"** 窗口中，选择"允许 **"。**
 
-    ![系统扩展安全首选项1](images/big-sur-install-3.png)
+    ![系统扩展安全首选项 1。](images/big-sur-install-3.png)
 
 5. 对通过 Mac 上的 Microsoft Defender for Endpoint 分发的所有系统扩展重复步骤 3 & 4。
 
 6. 作为终结点检测和响应功能的一部分，Mac 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft 365 Defender 门户。 当系统提示授予 Microsoft Defender 终结点权限以筛选网络流量时，请选择"允许 **"。**
 
-    ![系统扩展安全首选项2](images/big-sur-install-4.png)
+    ![系统扩展安全首选项 2。](images/big-sur-install-4.png)
 
 7. 打开 **"系统** 首选项&隐私"并导航到"隐私"选项卡。授予 Microsoft Defender ATP 和 Microsoft Defender ATP 终结点安全扩展的"完全磁盘  >  **访问权限"。**   
 
-    ![完全磁盘访问](images/big-sur-install-5.png)
+    ![完全磁盘访问。](images/big-sur-install-5.png)
 
 ## <a name="client-configuration"></a>客户端配置
 
@@ -141,12 +141,12 @@ ms.locfileid: "53902866"
     安装后，你将在右上角的 macOS 状态栏中看到 Microsoft Defender 图标。
 
     > [!div class="mx-imgBorder"]
-    > ![状态栏中的 Microsoft Defender 图标屏幕截图](images/mdatp-icon-bar.png)
+    > ![状态栏中的 Microsoft Defender 图标屏幕截图。](images/mdatp-icon-bar.png)
 
 ## <a name="how-to-allow-full-disk-access"></a>如何：允许完全磁盘访问
 
 > [!CAUTION]
-> macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
 
 1. 若要授予同意，请打开 **系统首选项**  >  **安全&**  >  **隐私**  >  **隐私完全磁盘访问**。 单击锁定图标以在 (对话框底部进行更改) 。 选择"适用于终结点的 Microsoft Defender"。
 
@@ -179,7 +179,7 @@ ms.locfileid: "53902866"
       系统可能会提示你：
 
       > 是否要允许下载"mdatpclientanalyzer.blob.core.windows.net"？<br/>
-      > 你可以更改哪些网站可以下载网站首选项中的文件。
+      > 可以更改哪些网站可以下载网站首选项中的文件。
 
 4. 单击"**允许"。**
 

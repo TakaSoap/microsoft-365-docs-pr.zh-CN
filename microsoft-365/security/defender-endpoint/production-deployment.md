@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e2d2addf5195f52eac94c22453e8cef08a4c6cc18bd3a21b6178bca527cc8038
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894156"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571815"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -39,7 +39,7 @@ ms.locfileid: "53894156"
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
-|[![部署阶段 - 准备](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | ![部署阶段 - 设置](images/phase-diagrams/setup.png)<br>阶段 2：设置 | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：开始使用](onboarding.md)|
+|[![部署阶段 - 准备。](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | ![部署阶段 - 设置](images/phase-diagrams/setup.png)<br>阶段 2：设置 | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：开始使用](onboarding.md)|
 |---|---|---|
 ||*你在这里！*||
 
@@ -58,15 +58,15 @@ ms.locfileid: "53894156"
 
 可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
-1. 若要查看许可证，请转到 Microsoft Azure **门户** 并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
-   ![Azure 许可页面的图像](images/atp-licensing-azure-portal.png)
+   ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
 
 1. 或者，在管理中心中，导航到"**帐单**  >  **""订阅"。**
 
     在屏幕上，你将看到所有预配的许可证及其当前 **状态**。
 
-    ![帐单许可证的图像](images/atp-billing-subscriptions.png)
+    ![帐单许可证的图像。](images/atp-billing-subscriptions.png)
 
 ## <a name="cloud-service-provider-validation"></a>云服务提供商验证
 
@@ -76,13 +76,13 @@ ms.locfileid: "53894156"
 
 2. 单击"**合作伙伴门户**"链接将打开"代表管理员"选项，并授予你客户管理中心的访问权限。
 
-   ![O365 管理门户的图像](images/atp-O365-admin-portal-customer.png)
+   ![O365 管理门户的图像。](images/atp-O365-admin-portal-customer.png)
 
 ## <a name="tenant-configuration"></a>租户配置
 
 载入 Microsoft Defender for Endpoint 非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
 
-从 Web 浏览器中，导航到Microsoft 365[安全中心。](https://security.microsoft.com)
+从 Web 浏览器中，导航到Microsoft 365[安全中心"](https://security.microsoft.com)。
 
 ## <a name="network-configuration"></a>网络配置
 
@@ -106,20 +106,20 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 配置基于注册表的静态代理，以允许仅 Microsoft Defender for Endpoint 传感器报告诊断数据，并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- 管理模板Windows组件 数据收集和预览版配置连接的用户体验和遥测服务的已验证 \> \> \> 代理用法
+- 管理模板Windows组件 数据收集和预览版本配置连接的用户体验和遥测服务的已验证 \> \> \> 代理用法
 - 将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理用法**。 
+3. 编辑组策略并导航到"管理模板Windows组件数据收集和预览版配置连接的用户体验和遥测服务的已验证 **\> \> \> 代理使用情况**。 
 
-   ![组策略配置的图像](images/atp-gpo-proxy1.png)
+   ![组策略配置的图像。](images/atp-gpo-proxy1.png)
 
 4. 选择“**已启用**”。
 5. 选择 **"禁用经过身份验证的代理用法"。**
 6. 导航到 **管理模板 \> Windows组件 \> 数据收集和预览版本 \> 配置连接的用户体验和遥测**。
 
-    ![组策略配置设置的图像](images/atp-gpo-proxy2.png)
+    ![组策略配置设置的图像。](images/atp-gpo-proxy2.png)
 
 7. 选择“**已启用**”。
 8. 输入 **代理服务器名称**。
@@ -143,7 +143,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 > [!NOTE]
 >
 > - 这将影响所有应用程序，包括使用带默认代理的 WinHTTP 的 Windows 服务。
-> - 更改拓扑结构（例如 (：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
+> - 要更改拓扑结构 (例如：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
 
 1. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”。
@@ -159,11 +159,11 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 和 Windows Server 2016 Server CB 1803 之前的 Windows Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server CB 1803 之前的 Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在具有版本 1803 或更高版本的设备Windows 10 v20 的 URL 才需要。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 Windows 10版本时需要。
+仅在具有版本 1803 Windows 10更高版本的设备时，才需要包含 v20 的 URL。 例如， `us-v20.events.data.microsoft.com` 仅在设备位于版本 1803 Windows 10版本时需要。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 
@@ -173,9 +173,9 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 ****
 
-|域列表电子表格|说明|
+|域列表的电子表格|说明|
 |---|---|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 ### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint 服务后端 IP 范围
@@ -198,8 +198,8 @@ Defender for Endpoint 内置于 Azure 云中，部署在以下区域：
 > 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到基于 DNS 的规则。
 
 > [!NOTE]
-> 如果你是美国政府客户，请参阅美国政府终结点 [Defender 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
+> 如果你是美国政府客户，请参阅美国政府 Defender [for Endpoint 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
-![**阶段 3：载入**](images/onboard.png) <br> [阶段 3：载入](onboarding.md)：将设备载入服务，以便 Microsoft Defender for Endpoint 服务可以从它们获取传感器数据。
+![**阶段 3：载入**。](images/onboard.png) <br> [阶段 3：载入](onboarding.md)：将设备载入服务，以便 Microsoft Defender for Endpoint 服务可以从它们获取传感器数据。

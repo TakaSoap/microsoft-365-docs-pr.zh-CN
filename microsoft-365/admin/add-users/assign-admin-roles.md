@@ -28,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 55eaf8f37a61e12ec57b386a509dfddf2ca05ff8
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: 0eeafd8c91a9430db09713902fb55d9491dcac8d
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346996"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585662"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -107,6 +107,6 @@ ms.locfileid: "58346996"
 ## <a name="related-content"></a>相关内容
 
 [关于 Microsoft 365 管理员角色](about-admin-roles.md)（文章）\
-[本文中的管理员Azure Active Directory (](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)权限) \
+[Azure AD 内置角色 (](/azure/active-directory/roles/permissions-reference) 文章) \
 [使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) \
 [授权或删除 (](../misc/add-partner.md) 文章) 
