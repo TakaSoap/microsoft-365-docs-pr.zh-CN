@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6e99917ad535fb639edcd92a76c5e59dc0d3040c
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 01e7c83a797930ed0137aeb864f22485f1cc581d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548650"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>查看 Microsoft Defender for Endpoint 体系结构要求和关键概念
 
@@ -42,7 +42,7 @@ ms.locfileid: "58254548"
 
 下图说明了适用于终结点的 Microsoft Defender 体系结构和集成。 
 
-![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤](../../media/defender/m365-defender-endpoint-architecture.png)
+![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-endpoint-architecture.png)
 
 下表介绍了此图。
 
@@ -50,15 +50,15 @@ ms.locfileid: "58254548"
 :---|:---|
 1 | 设备通过受支持的管理工具之一进行。 
 2  | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
-3  | 托管设备已加入和/或注册Azure Active Directory。
+3  | 托管设备已加入和/或已注册Azure Active Directory。
 4  | 已加入域Windows 10设备使用 Azure Active Directory 同步到Azure Active Directory 连接。
-5  | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender 中进行管理。
+5  | Microsoft Defender for Endpoint 警报、调查和响应在 Microsoft 365 Defender。
 
 ## <a name="understand-key-concepts"></a>了解关键概念
 
 下表确定了在评估、配置和部署 Microsoft Defender for Endpoint 时必须了解的重要概念： 
 
-概念 | 说明 | 更多信息
+概念 | 说明 | 详细信息
 :---|:---|:---|
 管理门户 | Microsoft 365 Defender用于监视和协助响应潜在高级永久性威胁活动或数据泄露警报的门户。 | [Microsoft Defender for Endpoint 门户概述](/microsoft-365/security/defender-endpoint/portal-overview)
 攻击面减少 | 通过最大程度地减少组织易受网络威胁和攻击的位置，帮助减少攻击面。 | [减少攻击面概述](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)

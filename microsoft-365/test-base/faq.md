@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ff686860455279218b55fa871327a87fe1ce3e411f3aa7cab83e2ddba00978e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888221"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548626"
 ---
 # <a name="test-base-faq"></a>测试基础常见问题解答
 
@@ -31,7 +31,7 @@ ms.locfileid: "53888221"
 
 有关详细信息，请参阅载入用户指南，或联系我们的团队 <testbasepreview@microsoft.com> 获取帮助和详细信息。
 
-**问：OOB 测试 (开箱) 是什么？**
+**问：OOB 测试什么是 (开箱) 测试？**
 
 **答：** 开箱即用 OOB (测试) 标准化的默认测试运行，安装、启动和关闭应用程序包 30 (30 次) 卸载。 
 
@@ -39,7 +39,7 @@ ms.locfileid: "53888221"
 
 开箱即用 OOB (测试) 应用程序上的标准化遥测，以跨内部版本Windows比较。
 
-**问：我们能否在安装、启动、关闭、卸载测试脚本 () 外部提交测试？。**
+**问：我们能否在开箱测试之外提交测试 (安装、启动、关闭、卸载测试脚本) ？**
 
 **答：** 是的，客户还可以通过自助服务门户仪表板上载用于功能测试的应用程序包。
 **功能** 测试是使客户能够执行其脚本以在应用程序上运行自定义功能的测试。
@@ -67,7 +67,7 @@ ms.locfileid: "53888221"
 
 **答：** 我们支持所有语言和框架。 我们通过 PowerShell 调用所有脚本。 
 
-你还需要提供 (上传) 所需框架的从属二进制文件。
+你还需要提供 (的) 二进制文件的上传权限。
 
 **问：测试基础多久提供测试结果？**
 
@@ -77,21 +77,21 @@ ms.locfileid: "53888221"
 
 **答：** 是的，我们的过程支持在安装后重新启动。 在载入门户上设置任务时，请务必从"可选设置"下拉列表中选择此选项。
 
-对于开箱即用 (OOB) 测试，您可以指定安装脚本是否需要 _重新启动。_
+对于 Out-of- (OOB) 测试，可以指定安装脚本是否需要 _重新启动。_
 
-![重新启动图片](Media/reboot.png)
+![重新启动图片。](Media/reboot.png)
 
 对于功能测试，你可以指定添加的每个脚本是否需要重新启动。
 
-![如何选择功能测试](Media/functionalreboot.png)
+![如何选择功能测试。](Media/functionalreboot.png)
 
 **问：Windows支持哪些版本？**
 
-**答：** 我们目前Windows 10支持 Windows 10、Windows Server 2016、Windows Server 2016 Core 版本、Windows Server 2019 和 Windows Server 2019 Core 版本。
+**答：** 我们目前Windows 10客户端、Windows Server 2016、Windows Server 2016 Core 版本、Windows Server 2019 和 Windows Server 2019 Core 版本。
 
 **问：安全更新测试与功能更新测试之间有什么区别？**
 
-**答：** 对于安全更新测试，我们针对每月预发布 **<ins></ins>** 安全更新进行测试Windows这些更新侧重于确保我们的用户始终安全和保护。 对于功能更新测试，我们针对两年一次预发布 **<ins>功能</ins>** 更新进行测试，这些更新引入了新特性Windows。
+**答：** 对于安全更新测试，我们针对每月预发布 **<ins></ins>** 安全更新程序测试Windows侧重于确保我们的用户始终安全和保护。 对于功能更新测试，我们针对两年一次预发布 **<ins>功能</ins>** 更新进行测试，这些更新引入了新特性Windows。
 
 ## <a name="debugging-options"></a>调试选项
 
@@ -125,7 +125,7 @@ ms.locfileid: "53888221"
 
 **答：** 目前，我们侧重于桌面应用程序，但是，我们计划将来载入 Web 应用程序，但我们目前不支持移动应用程序。
 
-**问：测试基础与 SUVP 之间有什么区别？**
+**问：测试基础和 SUVP 之间有什么区别？**
 
 **答：** 测试基础与 SUVP 之间的最大差异是，我们的合作伙伴将他们的应用程序载入测试基础 Azure 环境，以针对预发布更新运行验证，而不是自行执行测试。 
 
@@ -133,7 +133,7 @@ ms.locfileid: "53888221"
 
 **问：服务是否有相关成本？**
 
-**答：** 测试基础服务将免费向用户提供，直到通用 (GA) 。 此时，我们将宣布一个成本结构，该结构将作用于所有客户。 
+**答：** 在通用通用发布或通用发布之前，测试基础服务 (免费) 。 此时，我们将宣布一个成本结构，该结构将作用于所有客户。 
 
 **问：如何提供有关测试基础的反馈？**
 

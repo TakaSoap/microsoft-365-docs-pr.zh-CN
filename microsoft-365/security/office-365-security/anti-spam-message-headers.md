@@ -18,12 +18,12 @@ description: 管理员可以了解 Exchange Online Protection (EOP) 向邮件添
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c25679e6b997756d9af1ccfd16eb5fd41565c4d4472e7ebc22fe572277997a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4e115c6bda6e2a9ac8da089f9b13f3acdddd2713
+ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56830881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58533431"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
@@ -74,7 +74,7 @@ ms.locfileid: "56830881"
 |`LANG`|邮件的编写语言，由国家/地区代码指定（例如，俄语的代码为 ru_RU）。|
 |`PTR:[ReverseDNS]`|源 IP 地址的 PTR 记录（亦称为反向 DNS 查找）。|
 |`SCL`|邮件的垃圾邮件可信度 (SCL)。 值越高，邮件是垃圾邮件的可能性就越大。 有关详细信息，请参阅[垃圾邮件可信度 (SCL)](spam-confidence-levels.md)。|
-|`SFTY`|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <ul><li>9.19：域模拟。 发送域正在尝试[模拟受保护的域](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 将向邮件添加域模拟安全提示（如果已启用）。</li><li>9.20：用户模拟。 发送用户试图模仿收件人组织中用户，或 [Microsoft Defender for Office 365 中的反钓鱼策略](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 中指定的受保护用户。 将向邮件添加用户模拟安全提示（如果已启用）。</li></ul>|
+|`SFTY`|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <ul><li>9.19：域模拟。 发送域正在尝试[模拟受保护的域](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 将向邮件添加域模拟安全提示（如果已启用）。</li><li>9.20：用户模拟。 发送用户试图模拟收件人组织中的用户，或 Microsoft Defender for Office 365 中的[反钓鱼策略中指定的受保护用户](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 将向邮件添加用户模拟安全提示（如果已启用）。</li></ul>|
 |`SFV:BLK`|邮件跳过了筛选，但被阻止，因为邮件是从用户的“阻止的发件人”列表中的地址发送的。 <p> 若要详细了解管理员如何管理用户的“阻止的发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
 |`SFV:NSPM`|邮件被垃圾邮件筛选标记为非垃圾邮件，并发送到目标收件人。|
 |`SFV:SFE`|邮件跳过了筛选，且被允许，因为邮件是从用户的“安全发件人”列表中的地址发送的。 <p> 若要详细了解管理员如何管理用户的“安全发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
