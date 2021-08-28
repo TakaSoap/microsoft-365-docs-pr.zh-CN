@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解如何查找 Microsoft Viva Topics 的资源。
-ms.openlocfilehash: ec078f1a3e1e4dd963111f0c60529173d2aedbcffcd2b61e3248a3021b5eea69
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66252f93b3c32815e3a3a13217a59bb40fa17e6
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840163"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684216"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva 简介
 
@@ -46,10 +46,9 @@ Viva 主题是一Microsoft 365服务，可帮助组织将信息转换为知识�
 |查看 Microsoft 技术社区资源中心中的资源|[Viva 主题Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-
 ## <a name="adoption"></a>采用
 
-详细了解如何在组织中使用和实施 Viva Topics 以帮助你解决业务问题： 
+详细了解如何在组织中使用和实施 Viva 主题，以帮助你解决业务问题。 
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
@@ -78,6 +77,12 @@ Viva 主题是一Microsoft 365服务，可帮助组织将信息转换为知识�
 |了解主题可能会因不同用户而不同的原因|[Viva Topics 安全性修整](topic-experiences-security-trimming.md)|
 |了解如何防止识别或查看特定主题|[限制对主题的访问权限](restrict-access-to-topics.md)|
 
+## <a name="provide-us-feedback"></a>向我们提供反馈
 
+直接向 Microsoft 提供有关 Viva 主题体验的反馈。
+
+| 如果要查找此信息： | 参考资源： |
+|:-----|:-----|
+|如何提供有关 Viva 主题的反馈|[向我们提供反馈](topic-experiences-overview.md#provide-us-feedback)|
 
 

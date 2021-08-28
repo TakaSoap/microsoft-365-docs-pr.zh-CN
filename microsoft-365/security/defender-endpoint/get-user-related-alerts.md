@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28ea0cfa3d22405d80fdf457cc60ce4627caf9de
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: a9dc5b908534cf791d8538069a8d8db9f10e0e48
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349592"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684240"
 ---
 # <a name="get-user-related-alerts-api"></a>获取与用户相关的警报 API
 
@@ -33,18 +33,17 @@ ms.locfileid: "58349592"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API 说明
+
 检索与给定用户 ID 相关的警报集合。
 
-
 ## <a name="limitations"></a>限制
-1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
+1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +60,7 @@ ms.locfileid: "58349592"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)。
->- 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
+> - 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -69,7 +68,7 @@ ms.locfileid: "58349592"
 GET /api/users/{id}/alerts
 ```
 
-**ID 不是完整的 UPN，而只是用户名。 (，若要检索有关用户 user1@contoso.com /api/users/user1/alerts)**
+**ID 不是完整的 UPN，而只是用户名。 (，若要检索用户警报，user1@contoso.com /api/users/user1/alerts)**
 
 ## <a name="request-headers"></a>请求头
 
@@ -83,7 +82,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且用户存在 - 200 正常。 如果用户不存在 - 200 正常，但集为空。 
+如果成功且用户存在 - 200 正常。 如果用户不存在 - 200 正常，但集为空。
 
 ## <a name="example"></a>示例
 

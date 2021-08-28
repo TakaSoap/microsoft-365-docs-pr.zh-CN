@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c8ef316dbd25436221a15777f992faf943c3dc6ee2783dd92afa270d4e72cfdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d5771be82c687144759fd321dfc44b8c6158d57
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863651"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684192"
 ---
-# <a name="list-software-version-distribution"></a>列出软件版本分发 
+# <a name="list-software-version-distribution"></a>列出软件版本分发
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "53863651"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-检索组织的软件版本分布列表。 
+检索组织的软件版本分布列表。
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/distributions
 
 |名称|类型|说明
 |---|---|---|
-|Authorization|字符串|Bearer {token}。**必需**。
+|Authorization|String|Bearer {token}。**必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -66,7 +66,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 OK，并返回正文中的软件分发数据列表。 
+如果成功，此方法返回 200 OK，并返回正文中的软件分发数据列表。
 
 ## <a name="example"></a>示例
 

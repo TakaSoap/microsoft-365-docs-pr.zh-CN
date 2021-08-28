@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解如何在组织中使用 Viva 主题。
-ms.openlocfilehash: d8e8de3cead0fc389212b2f3b028769d6b2850138b864c379b87bc9f00dfd8bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864054"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684122"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
-Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，将知识带到他们日常使用的 Microsoft 365 应用中，从 SharePoint 新式页面、Microsoft 搜索 和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始。
+Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，从 SharePoint 新式页面、Microsoft 搜索 和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始，向用户介绍他们日常使用的 Microsoft 365 应用中的知识。
 
 <br/>
 
@@ -52,13 +52,13 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 *主题*。 它会编译
 
 ### <a name="search-results"></a>搜索结果
 
-当您从 SharePoint[](search.md#topic-answer)起始页进行搜索、在 Office.com 上搜索或在您更改搜索范围以包含整个组织后从 SharePoint 网站进行搜索时，您可以在搜索结果中看到主题答案。 主题答案将显示在结果列表的主题中，并为您提供一组与本主题相关的简短信息。 
+当您从 SharePoint[](search.md#topic-answer)起始页进行搜索、在 Office.com 上搜索或在您更改搜索范围以包含整个组织后从 SharePoint 网站搜索时，您可以在搜索结果中看到主题答案。 主题答案将显示在结果列表的主题中，并为您提供一组与本主题相关的简短信息。 
 
    ![显示网站搜索的搜索结果SharePoint屏幕截图。](../media/knowledge-management/site-search-results.png) 
 
 ### <a name="office-application-search"></a>Office应用程序搜索
 
-当您在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或选择上下文菜单中的"搜索"）中使用搜索时，主题答案将显示在搜索结果中。
+在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或上下文菜单中的"搜索"）中使用搜索时，主题答案将显示在搜索结果中。
 
    ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
 
@@ -103,7 +103,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 - 知识经理：在主题生命周期中指导主题的用户。 知识管理员使用主题中心中的"管理主题"页确认 AI 建议的主题、删除不再相关的主题，以及编辑现有主题或创建新主题，并且这些主题是唯一有权访问它的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva Topics 管理设置为用户分配知识经理权限。 
 
-- 知识管理员：管理员设置 Viva 主题，并通过管理中心中的管理员Microsoft 365 管理中心。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
+- 知识管理员：管理员设置 Viva 主题，并通过管理员控件在 Microsoft 365 管理中心。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
 
 有关详细信息，请参阅 [Viva 主题角色](topic-experiences-roles.md)。
 
@@ -134,15 +134,31 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 有关管理员控件的详细信息，请参阅[分配用户权限](./plan-topic-experiences.md#user-permissions)、管理主题[可见性](./topic-experiences-knowledge-rules.md)[和管理主题发现](./topic-experiences-discovery.md)。
 
-## <a name="topic-curation--feedback"></a>主题策展和反馈
+## <a name="topic-curation-and-suggestions"></a>主题库和建议
 
 AI 将持续工作，以便随环境变化提供建议，以改进主题。 
 
-具有编辑或创建主题权限的用户可以直接在想要更正或添加其他信息时更新主题页面。 他们还可以添加新的 AI 无法识别的主题。 如果有足够的有关手动添加的主题的信息，并且 AI 能够识别这种类型的主题，则来自 AI 的其他建议可能会增强这些手动添加的主题。
+具有编辑或创建主题权限的用户可以直接在想要更正或添加其他信息时更新主题页面。 他们还可以添加新的 AI 无法识别的主题。 如果这些手动添加的主题有足够的信息，并且 AI 能够识别这种类型的主题，来自 AI 的其他建议可能会增强这些手动添加的主题。
 
 系统可能会询问你允许其查看日常工作主题的用户该主题是否有用。 系统会查看这些回复，使用回复来改进主题要点，并可帮助确定主题摘要和主题详细信息中显示的内容。
 
 有关详细信息，请参阅 [主题发现和库化](./topic-experiences-discovery-curation.md)。
+
+## <a name="provide-us-feedback"></a>向我们提供反馈
+
+Microsoft 非常重视客户的反馈。 你为 Viva 主题提供的反馈将用于疑难解答、修复 Bug、增强现有功能以及开发新功能。 
+
+可以直接从主题页面、管理主题和"我的主题"页面向Microsoft **发送** 反馈。 在页面的右下角查找此按钮。
+
+   ![显示"反馈"按钮的屏幕截图。](../media/knowledge-management/feedback-icon.png)
+
+在 **"向 Microsoft 发送** 反馈"页上，告诉我们您是否喜欢某些内容、您不喜欢某些内容或者您有什么建议。
+
+   ![显示"向 Microsoft 发送反馈"页面的屏幕截图。](../media/knowledge-management/feedback-page.png)
+
+当你提交反馈时，我们要求你不要包含敏感信息，例如电话号码、地址或高度个人文章。 请通过 Viva 主题提供有关你遇到的特定问题的信息，或提供有关 Viva 主题的一般体验的信息。 这将有助于我们在我们审阅时维护你的隐私，并根据你的反馈采取措施。
+
+感谢你花时间与我们分享你的想法。 你的角度帮助我们改进现有功能并开发新功能。
 
 ## <a name="see-also"></a>另请参阅
 

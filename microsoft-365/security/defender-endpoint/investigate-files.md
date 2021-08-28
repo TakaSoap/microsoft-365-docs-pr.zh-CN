@@ -1,6 +1,6 @@
 ---
 title: 调查适用于终结点的 Microsoft Defender 文件
-description: 使用调查选项获取有关与警报、行为或事件相关联的文件的详细信息。
+description: 使用调查选项获取有关与警报、行为或事件关联的文件的详细信息。
 keywords: 调查， 调查， 文件， 恶意活动， 攻击动机， 深度分析， 深度分析报告
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6b879fddc96c69727a7c5deb49ce2a926152ec326605167ac075b5d37f8ab448
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829123"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684156"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的文件
 
@@ -58,7 +58,7 @@ ms.locfileid: "53829123"
 
 在配置文件页面顶部，在文件信息卡上方。 可在此处执行的操作包括：
 
-- 停止和隔离
+- 停止和隔离文件
 - 添加/编辑指示器
 - 下载文件
 - 咨询威胁专家
@@ -72,41 +72,41 @@ ms.locfileid: "53829123"
 
 你将看到详细信息，如文件的 MD5、病毒总检测比率和 Microsoft Defender AV 检测（如果可用）以及文件的普遍程度。
 
-文件流行卡片显示文件在组织和全球的设备中的显示位置。 
+文件流行卡片显示文件在组织和全球的设备中的显示位置。
 
-> [!NOTE] 
+> [!NOTE]
 > 不同的用户可能会看到不同值在文件流行卡片的"组织单位"部分中。 这是因为卡片显示基于用户具有的 RBAC 范围的信息。 这意味着，如果用户已被授予对一组特定设备的可见性，他们只会看到这些设备上的文件组织普遍程度。
 
-![文件信息的图像](images/atp-file-information.png)
+![文件信息的图像。](images/atp-file-information.png)
 
 ## <a name="alerts"></a>警报
 
 " **警报** "选项卡提供与文件关联的警报列表。 此列表涵盖了大部分与警报队列相同的信息，但受影响的设备所属的设备组（如果有）除外。 您可以通过从列标题上方的工具栏中选择"自定义列"来选择显示的信息类型。
 
-![与文件部分相关的警报的图像](images/atp-alerts-related-to-file.png)
+![与文件部分相关的警报的图像。](images/atp-alerts-related-to-file.png)
 
 ## <a name="observed-in-organization"></a>在组织中观测到
 
 " **在组织中观测** 到"选项卡允许你指定日期范围，以查看已使用该文件观测到哪些设备。
 
->[!NOTE]
->此选项卡将显示最多 100 台设备。 To see _all_ devices with the file， export the tab to a CSV file， by selecting **Export** from the action menu above the tab's column headers.
+> [!NOTE]
+> 此选项卡将显示最多 100 台设备。 To see _all_ devices with the file， export the tab to a CSV file， by selecting **Export** from the action menu above the tab's column headers.
 
-![最新观察到的设备与文件的图像](images/atp-observed-machines.png)
+![包含文件的最近观察到设备的图像。](images/atp-observed-machines.png)
 
-使用滑块或范围选择器快速指定要检查与文件有关的事件的时间段。 可以将时间窗口指定为一天。 这样一来，你只能看到当时与该 IP 地址通信的文件，从而大大减少了不必要的滚动和搜索。
+使用滑块或范围选择器快速指定要检查的与文件有关的事件的时间段。 可以将时间窗口指定为一天。 这样一来，你只能看到当时与该 IP 地址通信的文件，从而大大减少了不必要的滚动和搜索。
 
 ## <a name="deep-analysis"></a>深度分析
 
 "**深度** 分析"选项卡允许您提交 [](respond-file-alerts.md#deep-analysis)文件进行深入分析，以发现有关文件行为的更多详细信息，以及文件在组织中的影响。 提交文件后，一旦结果可用，深入分析报告将显示在此选项卡中。 如果深度分析找不到任何内容，则报告将为空，并且结果空间将保留为空。
 
-![深入分析选项卡的图像](images/submit-file.png)
+![深入分析选项卡的图像。](images/submit-file.png)
 
 ## <a name="file-names"></a>文件名
 
 " **文件名** "选项卡列出了观测到的文件在组织中使用的所有名称。
 
-![文件名选项卡的图像](images/atp-file-names.png)
+![文件名选项卡的图像。](images/atp-file-names.png)
 
 ## <a name="related-topics"></a>相关主题
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 202fe1c38b6846f52361f3e55baf9050cae36fb5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 73c16691dc56ad478912b85cb1b712bc7b1b44a8
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550162"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684180"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -60,10 +60,10 @@ ms.locfileid: "58550162"
 
 ### <a name="user-details"></a>用户详细信息
 
-左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果启用 Skype 企业集成，您将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
+左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数量、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果你启用Skype集成，你将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
 
->[!NOTE]
->你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
+> [!NOTE]
+> 你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
 
 组织中"概述"、"警报"和"观测到"是显示有关用户帐户的各种属性的不同选项卡。
 
