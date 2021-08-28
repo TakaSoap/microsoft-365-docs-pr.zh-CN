@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 20918b3412a5534675c873fdfd9d2fb94a73ab75
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: f38bb019d3f04b4e0be19cf93062ac75005495cb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509937"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570673"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -49,7 +49,7 @@ ms.locfileid: "58509937"
 
 Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、智能、实时的保护。
 
-![Microsoft Defender AV 引擎列表](images/microsoft-defender-atp-next-generation-protection-engines.png)
+![Microsoft Defender AV 引擎列表。](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
 > 若要了解更多信息，请参阅[（博客）了解 Microsoft Defender for Endpoint 下一代保护的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
@@ -82,7 +82,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
    - **云扫描文件的时长拓展**：50
    - **在提交示例之前提示用户**：在不提示的情况下发送所有数据
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 配置首次看到时阻止":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="首次看到 Intune 配置时阻止。":::
 
 4. 保存设置。
 
@@ -107,7 +107,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
    - **云端保护等级**：高
    - **Defender 云扩展超时（秒）**：50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Endpoint Manager 中的“首次看到时阻止”":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Endpoint Manager 中的“首次看到时阻止”。":::
 
 4. 应用 Windows Defender 防病毒的用户配置到组，例如“**所有用户**”、“**所有设备**”或“**所有用户和设备**”。
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 在调查期间，可以使用"重试"按钮解决内容位置错误的内容搜索。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a67702e7c9d3c307ed44fe52c86c8b080f8d1e01e7cf9dcdc9dfb3929c638bf6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee60ab8aa5dad32360303f31924995f110ed99cc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574119"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
@@ -48,7 +48,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 重新启动搜索通常会导致不同服务器上出现类似的错误。 单击显示在搜索结果页面顶部的 **"** 重试"按钮，而不是重新启动搜索。
 
-![单击"重试"按钮可解决内容位置错误](../media/retrycontentsearch3.png)
+![单击"重试"按钮可解决内容位置错误。](../media/retrycontentsearch3.png)
 
 这将导致仅重试失败的邮箱的搜索。 重试搜索时，将保留成功返回的其他结果。
 

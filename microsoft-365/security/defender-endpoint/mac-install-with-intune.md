@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e335503c9182176b957b5b15e664a4e629f42a17a585c3fbd53ea5508b730cbd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 35ecf8639255d21266df4403b4d4b824a5982f97
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869060"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570517"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -63,13 +63,13 @@ ms.locfileid: "53869060"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从门户下载Microsoft 365 Defender包：
+从应用门户下载Microsoft 365 Defender包：
 
-1. 在Microsoft 365 Defender门户中，**转到设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
+1. In Microsoft 365 Defender portal， go to **设置**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
 
 2. 将操作系统设置为 **macOS，** 将部署方法设置为 **移动设备管理 /Microsoft Intune**。
 
-    ![载入设置屏幕截图](images/macos-install-with-intune.png)
+    ![载入设置屏幕截图。](images/macos-install-with-intune.png)
 
 3. 选择 **下载载入程序包**。 将其另 _存WindowsDefenderATPOnboardingPackage.zip_ 同一目录。
 
@@ -89,7 +89,7 @@ ms.locfileid: "53869060"
 ## <a name="create-system-configuration-profiles"></a>创建系统配置文件
 
 下一步是创建 Microsoft Defender for Endpoint 所需的系统配置文件。
-在管理 [Microsoft Endpoint Manager中，](https://endpoint.microsoft.com/)打开 **"设备**  >  **配置配置文件"。**
+在管理 [Microsoft Endpoint Manager，](https://endpoint.microsoft.com/)打开 **设备**  >  **配置文件**。
 
 ### <a name="onboarding-blob"></a>载入 blob
 
@@ -99,30 +99,30 @@ ms.locfileid: "53869060"
 1. 选择 **平台** = **macOS** **，配置文件类型** = **模板**。 **模板名称** =**自定义**。 单击“**创建**”。
 
     > [!div class="mx-imgBorder"]
-    > ![自定义配置文件创建](images/mdatp-6-systemconfigurationprofiles-1.png)
+    > ![创建自定义配置文件。](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. 为配置文件选择名称，例如"macOS 的 Defender 或终结点载入"。 单击 **下一个**。
-
-    > [!div class="mx-imgBorder"]
-    > ![自定义配置文件 - 名称](images/mdatp-6-systemconfigurationprofiles-2.png)
-
-1. 为配置文件名称选择一个名称，例如"适用于 macOS 的终结点载入的 Defender"。
-1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入程序包中提取的配置文件文件"作为配置文件。
+1. 为配置文件选择名称，例如"macOS 的 Defender 或终结点载入"。 单击“**下一步**”。
 
     > [!div class="mx-imgBorder"]
-    > ![从文件导入自定义配置文件的配置](images/mdatp-6-systemconfigurationprofiles.png)
+    > ![自定义配置文件 - 名称。](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. 单击 **下一个**。
+1. 为配置文件名称选择名称，例如"适用于 macOS 的终结点载入的 Defender"。
+1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入包中提取的配置文件作为配置文件。
+
+    > [!div class="mx-imgBorder"]
+    > ![从文件导入自定义配置文件的配置。](images/mdatp-6-systemconfigurationprofiles.png)
+
+1. 单击“**下一步**”。
 1. 在"分配"选项卡上 **分配** 设备。单击"下一 **步"。**
 
     > [!div class="mx-imgBorder"]
-    > ![自定义配置文件 - 分配](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > ![自定义配置文件 - 分配。](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. 查看 和 **创建**。
 1. 打开 **设备**  >  **配置文件 ，** 你可以在那里查看你创建的配置文件。
 
     > [!div class="mx-imgBorder"]
-    > ![自定义配置文件 - 完成](images/mdatp-6-systemconfigurationprofiles-3.png)
+    > ![自定义配置文件 - 已完成。](images/mdatp-6-systemconfigurationprofiles-3.png)
 
 ### <a name="approve-system-extensions"></a>批准系统扩展
 
@@ -139,14 +139,14 @@ MacOS 10.15 或更高版本 (macOS 10.15) 此配置文件。 它将在较旧的 
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![系统扩展设置](images/mac-system-extension-intune2.png)
+    > ![系统扩展设置。](images/mac-system-extension-intune2.png)
 
-1. 在"**分配"** 选项卡中，将此配置文件分配给"所有 **&所有用户"。**
+1. 在"**分配"** 选项卡中，将此配置文件分配给"**所有&所有用户"。**
 1. 查看并创建此配置文件。
 
 ### <a name="kernel-extensions"></a>内核扩展
 
-macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的 macOS 上被忽略。
+macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽略。
 
 > [!CAUTION]
 > Apple 芯片 (M1) 设备不支持 KEXT。 在这些设备上安装包含 KEXT 策略的配置文件将失败。
@@ -158,19 +158,19 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 1. 将 **团队标识符设置为** **UBF8T346G9，** 然后单击下一 **步**。
 
     > [!div class="mx-imgBorder"]
-    > ![内核扩展设置](images/mac-kernel-extension-intune2.png)
+    > ![内核扩展设置。](images/mac-kernel-extension-intune2.png)
 
-1. 在"**分配"** 选项卡中，将此配置文件分配给"所有 **&所有用户"。**
+1. 在"**分配"** 选项卡中，将此配置文件分配给"**所有&所有用户"。**
 1. 查看并创建此配置文件。
 
 ### <a name="full-disk-access"></a>完全磁盘访问
 
    > [!CAUTION]
-   > macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+   > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
    >
    > 此配置文件授予对 Microsoft Defender for Endpoint 的完全磁盘访问权限。 如果你之前通过 Intune 配置了适用于 Endpoint 的 Microsoft Defender，我们建议你通过此配置文件更新部署。
 
-从我们的 GitHub [存储库中下载](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [**fulldisk.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)
+从我们的 GitHub[存储库下载 fulldisk.mobileconfig。](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)
 
 按照上述载入 [blob](#onboarding-blob) 的说明操作，使用"Defender for Endpoint Full Disk Access"作为配置文件名称，并下载 **fulldisk.mobileconfig** 作为配置文件名称。
 
@@ -184,7 +184,7 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 
 ### <a name="notifications"></a>通知
 
-此配置文件用于允许 macOS 和 Microsoft 自动更新上的 Microsoft Defender for Endpoint 在 macOS 10.15 或加泰罗尼亚语或更高版本 (UI) 通知。
+此配置文件用于允许 macOS 和 Microsoft 自动更新上的 Microsoft Defender for Endpoint 在 macOS 10.15 或加泰罗尼亚语或 (UI) 通知。
 
 从我们的 GitHub[存储库中下载 notif.mobileconfig。](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)
 
@@ -195,7 +195,7 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 将 Intune 更改传播到已注册的设备后，你可以看到它们列在监视  >  **设备状态下**：
 
 > [!div class="mx-imgBorder"]
-> ![监视器中的设备状态视图](images/mdatp-7-devicestatusblade.png)
+> ![监视器中的设备状态视图。](images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>发布应用程序
 
@@ -204,29 +204,29 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 1. 在管理 [Microsoft Endpoint Manager中，打开](https://endpoint.microsoft.com/)**应用。**
 
     > [!div class="mx-imgBorder"]
-    > ![准备创建应用程序](images/mdatp-8-app-before.png)
+    > ![准备创建应用程序。](images/mdatp-8-app-before.png)
 
 1. 选择"按平台> macOS >添加"。
 1. 选择 **"应用类型** = **""macOS"，** 单击"**选择"。**
 
     > [!div class="mx-imgBorder"]
-    > ![指定应用程序类型](images/mdatp-9-app-type.png)
+    > ![指定应用程序类型。](images/mdatp-9-app-type.png)
 
 1. 保留默认值，单击"下一 **步"。**
 
     > [!div class="mx-imgBorder"]
-    > ![应用程序属性](images/mdatp-10-properties.png)
+    > ![应用程序属性。](images/mdatp-10-properties.png)
 
 1. 添加分配，单击下 **一步**。
 
     > [!div class="mx-imgBorder"]
-    > ![Intune 作业信息屏幕截图](images/mdatp-11-assignments.png)
+    > ![Intune 分配信息屏幕截图。](images/mdatp-11-assignments.png)
 
 1. 查看 和 **创建**。
 1. 你可以按 **平台**  >    >  **macOS** 访问应用，在所有应用程序列表中查看它。
 
     > [!div class="mx-imgBorder"]
-    > ![应用程序列表](images/mdatp-12-applications.png)
+    > ![应用程序列表。](images/mdatp-12-applications.png)
 
  (可以在 [Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)页面上找到 Defender 部署 .) 
 
@@ -235,43 +235,43 @@ macOS 10.15 和加泰罗尼亚语或 (版) 此配置文件。 它将在较新的
 
 ## <a name="client-device-setup"></a>客户端设备设置
 
-除了标准安装之外，你无需为 Mac 设备公司门户[预配](/intune-user-help/enroll-your-device-in-intune-macos-cp)。
+无需对 Mac 设备进行除标准安装外的任何特殊公司门户[设置](/intune-user-help/enroll-your-device-in-intune-macos-cp)。
 
 1. 确认设备管理。
 
     > [!div class="mx-imgBorder"]
-    > ![确认设备管理屏幕截图](images/mdatp-3-confirmdevicemgmt.png)
+    > ![确认设备管理屏幕截图。](images/mdatp-3-confirmdevicemgmt.png)
 
     选择 **"打开系统首选项"，** 在列表中找到"**管理配置文件**"，然后选择"批准 **..."。** 你的管理配置文件将显示为 **"已验证"：**
 
-    ![管理配置文件屏幕截图](images/mdatp-4-managementprofile.png)
+    ![管理配置文件屏幕截图。](images/mdatp-4-managementprofile.png)
 
 2. 选择 **"继续** "并完成注册。
 
-   你现在可以注册更多设备。 完成系统配置和应用程序包的预配后，还可以稍后注册它们。
+   你现在可以注册更多设备。 还可以在完成后完成系统配置和应用程序包的预配后注册它们。
 
 3. 在 Intune 中，打开 **"**  >  **管理设备**  >  **""所有设备"。** 你可以在此处查看列出的设备：
 
    > [!div class="mx-imgBorder"]
-   > ![添加设备屏幕截图](images/mdatp-5-alldevices.png)
+   > ![添加设备屏幕截图。](images/mdatp-5-alldevices.png)
 
 ## <a name="verify-client-device-state"></a>验证客户端设备状态
 
 1. 将配置文件部署到设备后，在 Mac 设备上打开系统  >  首选项配置文件。
 
     > [!div class="mx-imgBorder"]
-    > ![系统首选项屏幕截图](images/mdatp-13-systempreferences.png)
+    > ![系统首选项屏幕截图。](images/mdatp-13-systempreferences.png)
 
-    ![系统首选项配置文件屏幕截图](images/mdatp-14-systempreferencesprofiles.png)
+    ![系统首选项配置文件屏幕截图。](images/mdatp-14-systempreferencesprofiles.png)
 
 2. 确认存在并安装了以下配置文件。 管理 **配置文件** 应为 Intune 系统配置文件。 _Wdav-config_ 和 _wdav-kext_ 是在 Intune 中添加的系统配置文件：
 
-    ![配置文件屏幕截图](images/mdatp-15-managementprofileconfig.png)
+    ![配置文件屏幕截图。](images/mdatp-15-managementprofileconfig.png)
 
 3. 你还应在右上角看到"适用于终结点的 Microsoft Defender"图标：
 
     > [!div class="mx-imgBorder"]
-    > ![状态栏中的 Microsoft Defender for Endpoint 图标屏幕截图](images/mdatp-icon-bar.png)
+    > ![状态栏中的 Microsoft Defender for Endpoint 图标屏幕截图。](images/mdatp-icon-bar.png)
 
 ## <a name="troubleshooting"></a>疑难解答
 

@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解如何创建、定义和选择保管人位置和托管位置，以在Advanced eDiscovery位置。
+description: 了解如何创建、定义和选择保管人位置和托管位置，以在搜索案例Advanced eDiscovery位置。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f5eadf89d0f4eae3c206c82609f7b7d33fbe1ad15953808acab52880f00da274
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886427"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574299"
 ---
 # <a name="create-a-search"></a>创建搜索
 
 在 **案例的"** 搜索"选项卡上，可以通过单击"新建搜索"并遵循向导创建新搜索。
 
-![搜索案例中的Advanced eDiscovery向导](../media/AeDSearch1.png)
+![搜索向导在Advanced eDiscovery情况。](../media/AeDSearch1.png)
 
 ## <a name="name-the-search-and-give-it-a-description"></a>命名搜索并给出说明
 

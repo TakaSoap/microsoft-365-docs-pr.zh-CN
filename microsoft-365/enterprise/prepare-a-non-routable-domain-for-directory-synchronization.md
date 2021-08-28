@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 了解在将不可路由的域与本地用户帐户同步之前，如何Microsoft 365租户。
-ms.openlocfilehash: cecaee814d19f78b973ebd2f06c8d2c665d905de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: dd93cfd85aa6f6f5788b6ae5562c2a2def3ffaa0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356908"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574287"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>准备不可路由域以进行目录同步
 
-当你将本地目录与 Microsoft 365 同步时，你必须在 Azure AD Azure Active Directory (中拥有) 。 仅同步与 (Active Directory 域服务) AD DS (关联的用户主体名称) UPN。 但是，任何包含不可路由域的 UPN（如".local" (示例：billa@contoso.local) ）都将同步到 .onmicrosoft.com 域 (示例：billa@contoso.onmicrosoft.com) 。 
+当你将本地目录与 Microsoft 365 同步时，你必须在 Azure AD Azure Active Directory (中拥有) 。 仅同步与 (Active Directory 域服务) AD DS (关联的用户主体) UPN。 但是，任何包含不可路由域的 UPN（如".local" (示例：billa@contoso.local) ）都将同步到 .onmicrosoft.com 域 (示例：billa@contoso.onmicrosoft.com) 。 
 
 如果当前对 AD DS 中的用户帐户使用".local"域，建议将其更改为使用验证域（如 billa@contoso.com）以便与 Microsoft 365 域正确同步。
   
@@ -43,11 +43,11 @@ Azure AD 连接同步用户的 UPN 和密码，以便用户可以使用他们在
   
 ### <a name="change-your-primary-domain"></a>更改主域
 
-将主域更改为已验证的Microsoft 365，例如，contoso.com。 然后，将拥有域 contoso.local 的每个用户更新为 contoso.com。 但是，这是一个非常涉及的过程，下一节将介绍一个更简单的解决方案。
+将主域更改为已验证的域Microsoft 365例如，contoso.com。 然后，将拥有域 contoso.local 的每个用户更新为 contoso.com。 但是，这是一个非常涉及的过程，下一节将介绍一个更简单的解决方案。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>添加 UPN 后缀并更新用户
 
-您可以通过在 AD DS 中注册新的 UPN 后缀来匹配在 (中验证的域或) ".local"Microsoft 365。 注册新后缀后，更新用户 UPN 以将".local"替换为新的域名，例如，使用户帐户看起来像 billa@contoso.com。
+您可以通过在 AD DS 中注册新的 UPN 后缀来匹配在 Microsoft 365 中验证的域 (或) ".local"问题。 注册新后缀后，更新用户 UPN 以将".local"替换为新的域名，例如，使用户帐户看起来像 billa@contoso.com。
   
 更新 UPN 以使用已验证域后，即可将本地 AD DS 与 Microsoft 365。
   
@@ -63,11 +63,11 @@ Azure AD 连接同步用户的 UPN 和密码，以便用户可以使用他们在
   
 2. 在 **"Active Directory 域和信任"** 窗口中，右键单击 **"Active Directory 域和信任"，** 然后选择"属性 **"。**
     
-    ![右键单击"Active Directory 域和信任"，然后选择"属性"](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![右键单击"Active Directory 域和信任"，然后选择"属性"。](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. 在 **"UPN 后缀"** 选项卡上的"备用 **UPN** 后缀"框中，键入新的 UPN 后缀，然后选择"**添加应用** \> **"。**
     
-    ![添加新的 UPN 后缀](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
+    ![添加新的 UPN 后缀。](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     添加 **完** 后缀后，选择"确定"。 
     
@@ -77,13 +77,13 @@ Azure AD 连接同步用户的 UPN 和密码，以便用户可以使用他们在
     
     **或者，如果你没有Windows Server 2012**
     
-    按 **Windows 键 + R** 打开 **"运行**"对话框，然后键入 Dsa.msc，然后单击"确定 **"**
+    按 **Windows 键 + R** 打开"**运行**"对话框，然后键入 Dsa.msc，然后单击"确定 **"**
     
 2. 选择用户，右键单击， **然后选择属性**。
     
 3. 在"**帐户"** 选项卡上的"UPN 后缀"下拉列表中，选择新的 UPN 后缀，然后选择"确定 **"。**
     
-    ![为用户添加新 UPN 后缀](../media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![为用户添加新的 UPN 后缀。](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
 4. 为每个用户完成这些步骤。
     

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: b1c3b565ddbe3741d60f547ba45fc5891a01b406a2401e64147696aa1934b3e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a5326743bc1673facff864a562ebb0accb8d483c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901983"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575356"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4。为设备、电脑和其他终结点部署终结点管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "53901983"
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 将你可能已了解和正在使用的下列服务结合在一起，提供相关服务和工具用来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
 
-![Microsoft 365 的终结点管理组件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Microsoft 365 的终结点管理组件。](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -93,6 +93,6 @@ Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它�
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 5：部署远程工作者生产力应用和服务](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
+[![步骤 5：部署远程工作者生产力应用和服务。](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
 继续执行 [步骤 5](empower-people-to-work-remotely-teams-productivity-apps.md) ，让混合工作者使用 Microsoft Teams 等 Microsoft 365 生产力应用。

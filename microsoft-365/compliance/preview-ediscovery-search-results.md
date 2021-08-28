@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 预览 Microsoft 365 合规中心中内容搜索或核心电子数据展示搜索返回的结果示例。
-ms.openlocfilehash: fa9d69672f86cb58ef362b4b3fbaec5ba00bd50ac48778a96a0358910a35f311
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53891725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570793"
 ---
 # <a name="preview-ediscovery-search-results"></a>预览电子数据展示搜索结果
 
@@ -39,13 +39,13 @@ ms.locfileid: "53891725"
 
 3. 在飞出页的底部，单击 **审阅示例**。
 
-   ![单击飞出页面上的“审阅示例”来预览结果](../media/PreviewSearchResults1.png)
+   ![单击弹出页面上的“审阅示例”来预览结果。](../media/PreviewSearchResults1.png)
 
    将显示一个包含搜索结果示例的页面。
 
 4. 选择一个项以在阅读窗格中查看其内容。
 
-   ![在阅读窗格中预览这些项。](../media/PreviewSearchResults2.png)
+   ![在阅读窗格中预览这些项目。](../media/PreviewSearchResults2.png)
 
    在上一个屏幕截图中，请注意，预览项目时，将突出显示搜索查询中的关键字。
 

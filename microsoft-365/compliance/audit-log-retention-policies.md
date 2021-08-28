@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: aa5112eeedcfd0c46bba1d96a43e49051eb3ed9e
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5427bbfc63381ab2763c0bf74adda978f4fc6af3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503079"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574864"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -59,7 +59,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 4. 单击“**创建审核保留策略**”，然后在弹出页面上填写以下字段：
 
-   ![新审核保留策略弹出页面](../media/CreateAuditLogRetentionPolicy.png)
+   ![新审核保留策略弹出页面。](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **原则名称**：审核日志保留策略的名称。 此名称在你的组织中必须是唯一的，并且在创建策略后不能更改。
 
@@ -87,7 +87,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 审核日志保留策略列在仪表板中。 在仪表板中查看策略的一个优点是，可以单击“**优先级**”列以按它们应用的优先级列出策略。 如前所述，值越小表示优先级越高。
 
-![“审核保留策略”仪表板中的“优先级”列](../media/AuditLogRetentionDashboardPriority.png)
+![“审核保留策略”仪表板中的“优先级”列。](../media/AuditLogRetentionDashboardPriority.png)
 
 也可以选择一个策略以在浮出页面上显示其设置。
 
@@ -106,7 +106,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 ### <a name="delete-policies-in-the-dashboard"></a>在仪表板中删除策略
 
-若要删除策略，单击“**删除**”“![删除图标](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)”图标，然后确认要删除该策略。 已从仪表板中删除策略，但从组织中删除策略最长可能需要 30 分钟。
+若要删除策略，请单击 **删除** ![删除图标。](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) 图标，然后确认要删除策略。 已从仪表板中删除策略，但从组织中删除策略最长可能需要 30 分钟。
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>在 PowerShell 中创建和管理审核日志保留策略
 

@@ -19,31 +19,31 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 内容分发网络 (CDN) 快速入门
-ms.openlocfilehash: b005c670bce80d84e7d1762eb2d8b2fc57bc7b55d0f5da9e7de13ec144742169
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570529"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 内容分发网络 (CDN) 快速入门
 
-可以使用内置 Office 365 内容分发网络 (CDN) 托管静态资产 (图像、JavaScript、样式表、WOFF) ，以提升 SharePoint Online 页面的性能。 Office 365 CDN 将静态资产缓存到距离请求这些资产的浏览器更近的位置，这样可以加快下载速度并减少延迟，进而提高性能。 此外，Office 365 CDN使用 HTTP/2 协议改进压缩和 HTTP 管道传输。 Office 365 CDN 服务被归入 SharePoint Online 订阅。
+可以使用内置 Office 365 内容分发网络 (CDN) 托管静态资产 (图像、JavaScript、样式表、WOFF) ，为 SharePoint Online 页面提供更好的性能。 Office 365 CDN 将静态资产缓存到距离请求这些资产的浏览器更近的位置，这样可以加快下载速度并减少延迟，进而提高性能。 此外，Office 365 CDN使用 HTTP/2 协议改进压缩和 HTTP 管道传输。 Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
-有关更详细的信息指南，请参阅[将 Office 365 内容分发网络 (CDN) 与 SharePoint Online 一起](use-microsoft-365-cdn-with-spo.md)使用。
+有关更详细的信息指南，请参阅[将 Office 365 内容分发网络 (CDN) 与 SharePoint Online 一同使用](use-microsoft-365-cdn-with-spo.md)。
 
 >[!NOTE]
 >此Office 365 CDN仅适用于全球云中生产 (租户) 租户。 美国政府、中国德国云中的租户当前不支持Office 365 CDN。
 
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>使用页面诊断 for SharePoint 工具识别不在CDN
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>使用页面诊断 for SharePoint工具识别不在CDN
 
 您可以使用 SharePoint工具浏览器扩展的页面诊断轻松列出 SharePoint Online 页面中可添加到 CDN 资源。
 
-适用于 **SharePoint** 的页面诊断工具是新的 Microsoft Edge (和 Chrome 浏览器的浏览器扩展，可分析 SharePoint Online 新式门户和 https://www.microsoft.com/edge) 经典发布网站页面。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](./page-diagnostics-for-spo.md)。
+适用于 **SharePoint** 的页面诊断工具是新的 Microsoft Edge (和 Chrome 浏览器的浏览器扩展，可分析 SharePoint Online 新式门户和经典发布 https://www.microsoft.com/edge) 网站页面。 该工具对已分配的每个页面提供一个报告，其中显示根据一组定义的性能条件得出的页面性能情况。 要安装和了解适用于 SharePoint 的页面诊断工具，请参阅[使用适用于 SharePoint Online 的页面诊断工具](./page-diagnostics-for-spo.md)。
 
-当您在 SharePoint Online 页面上运行 SharePoint 页面诊断工具时，可以单击"诊断测试"选项卡以查看未由 CDN 托管的资产列表。 这些资产将列在标题"内容分发网络 (CDN) **检查"** 下，如下面的屏幕截图所示。
+在 SharePoint Online 页面上运行 SharePoint 页面诊断工具时，可以单击"诊断测试"选项卡以查看未由CDN 托管的资产列表。 这些资产将列在标题"内容分发网络 (CDN) **检查"** 下，如下面的屏幕截图所示。
 
-![页面诊断](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+![页面诊断。](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >页面诊断工具仅适用于 SharePoint Online，无法用于 SharePoint 系统页面。
@@ -57,12 +57,12 @@ Office 365 CDN 旨在通过在高速全局网络中分发经常访问的对象�
 - **公共 CDN** 旨在用于 JS (JavaScript) 、CSS (StyleSheets) 、Web 字体文件 (WOFF、WOFF2) 以及公司徽标等非专有图像。
 - **专用CDN** 用于 PNG (JPG、JPEG 等图像) 。
 
-你可以选择同时为组织提供公共源或专用源。 大多数组织都将选择实施这两者的组合。 公共和专用选项都提供相似的性能提升，但每个选项都有独特的属性和优点。 有关公用源和专用源CDN，请参阅选择每个源[是公共源还是私有源](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)。
+你可以选择同时为组织提供公共源或专用源。 大多数组织都将选择实施这两者的组合。 公共和专用选项都提供相似的性能提升，但每个选项都有独特的属性和优点。 有关公用和专用源CDN，请参阅选择每个源[应为公共源还是私有源](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)。
 
 ## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>如何使用默认配置CDN公用和专用服务器
 在更改租户策略设置CDN，应验证它是否符合组织的合规性、安全性和隐私策略。
 
-有关更详细的配置设置，或者如果你已启用 CDN并且想要添加其他位置 (源) ，请参阅使用[SharePoint Online](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)命令行管理程序设置和配置 Office 365 CDN 部分
+有关更详细的配置设置，或者如果你已启用 CDN并且想要添加其他位置 (origins) ，请参阅使用[SharePoint Online](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)命令行管理程序设置和配置 Office 365 CDN 部分
 
 连接命令行管理程序SharePoint租户：
 
@@ -78,7 +78,7 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 这些 cmdlet 的输出应如下所示：
 
-![输出Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
+![Set-SPOTenantCdnEnabled 的输出。](../media/O365-CDN/o365-cdn-enable-output.png)
 
 ## <a name="see-also"></a>另请参阅
 

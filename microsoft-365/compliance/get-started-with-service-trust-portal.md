@@ -15,13 +15,13 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: 了解如何访问和使用 Microsoft 服务信任门户，以帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: 38a5295d225df1ec04fba756b0e88639ab5c3dad7a67e8597456ca318f004d09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何访问和使用 Microsoft 服务信任门户来帮助实现安全性、隐私和合规性实践。
+ms.openlocfilehash: 63901d6b71be98c0474b5ede840b6914b38609b4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814052"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574215"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -29,11 +29,11 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 ## <a name="accessing-the-service-trust-portal"></a>访问服务信任门户
 
-服务信任门户包含 Microsoft 实施用于保护云服务和客户数据中心的控制和流程的详细信息。 若要访问服务信任门户上的某些资源，必须使用 Microsoft 云服务帐户（ (Azure Active Directory 组织帐户或 Microsoft 帐户) ）以经过身份验证的用户身份登录，并查看并接受 Microsoft 合规性材料保密协议。
+服务信任门户包含 Microsoft 实施用于保护云服务和客户数据中心的控制和流程的详细信息。 若要访问服务信任门户上的某些资源，必须使用 Microsoft 云服务帐户 (（Azure Active Directory 组织帐户或 Microsoft 帐户) ）以经过身份验证的用户身份登录，并查看并接受 Microsoft 合规性材料保密协议。
 
 ### <a name="existing-customers"></a>现有客户
 
-现有客户可以通过以下在线订阅之一访问服务信任门户， (<https://aka.ms/STP> 试用版或付费) ：
+现有客户可以通过以下在线订阅之一访问服务信任门户， (<https://aka.ms/STP> 或付费) ：
 
 - Microsoft 365
 - Dynamics 365
@@ -52,13 +52,13 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - 注册新的 Azure [试用帐户](https://go.microsoft.com/fwlink/?LinkId=722737)。
 
-注册免费试用版或订阅时，必须启用Azure Active Directory以支持对 STP 的访问。
+注册免费试用版或订阅时，必须启用Azure Active Directory才能支持访问 STP。
 
 ## <a name="using-the-service-trust-portal"></a>使用服务信任门户
 
 可从主菜单访问服务信任门户的功能和内容。
 
-![服务信任门户菜单](../media/STPMenus1.png)
+!["服务信任门户"菜单。](../media/STPMenus1.png)
 
 以下各节介绍主菜单中的每个项目。
 
@@ -69,7 +69,7 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 ### <a name="compliance-manager"></a>合规性管理器
 
 > [!IMPORTANT]
-> 合规性管理器已从服务信任门户移动到其[Microsoft 365 合规中心。](https://compliance.microsoft.com/) 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在 Microsoft 365 合规中心。
+> 合规性管理器已从服务信任门户移动到其新位置的 Microsoft 365 合规中心[。](https://compliance.microsoft.com/) 所有客户数据已移至新位置，因此你可以继续使用合规性管理器而不会中断。 有关设置 [信息，请参阅合规性](compliance-manager.md) 管理器文档，了解新功能。 尽管经典版本的合规性管理器仍保留在服务信任门户中，但鼓励所有用户在服务信任门户Microsoft 365 合规中心。
 
 ### <a name="trust-documents"></a>信任文档
 
@@ -91,13 +91,13 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 提供有关 Microsoft 云服务的特定于行业和地区的合规性信息。
 
-- **行业：** 目前，此页为金融服务行业提供了特定于行业的登陆页面。 其中包含合规性产品/服务、常见问题解答和成功案例等信息。 面向更多行业的资源将在未来发布，但您可以通过在 STP 中访问"信任文档和数据保护"> **找到更多** 行业的资源。
+- **行业：** 目前，此页为金融服务行业提供了特定于行业的登陆页面。 其中包含合规性产品/服务、常见问题解答和成功案例等信息。 面向更多行业的资源将在未来发布，但您可以通过访问 STP 中的"信任文档和数据保护"> **找到更多** 行业的资源。
 
 - **区域：** 提供有关 Microsoft 云服务遵守各种国家/地区法律的法律意见。 特定国家/地区包括澳大利亚、加拿大、捷克共和国、丹麦、德国、波兰、罗马尼亚、西班牙和英国。
 
 ### <a name="trust-center"></a>信任中心
 
-指向 [Microsoft 信任中心的链接](https://www.microsoft.com/trust-center)，其中提供了有关 Microsoft 云中安全性、合规性和隐私性的信息。 这包括有关 Microsoft 云服务中可用于满足 GDPR 特定要求的功能的信息、有助于 GDPR 责任的文档以及了解 Microsoft 为支持 GDPR 而采取的技术和组织措施。
+指向 [Microsoft 信任中心的链接](https://www.microsoft.com/trust-center)，提供有关 Microsoft 云中的安全性、合规性和隐私性详细信息。 这包括有关 Microsoft 云服务中可用于满足 GDPR 特定要求的功能的信息、有助于 GDPR 责任的文档以及了解 Microsoft 为支持 GDPR 而采取的技术和组织措施。
 
 ### <a name="my-library"></a>我的库
 
@@ -109,19 +109,19 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - **设置：** 此页面允许你为合规性管理器分配用户角色 (经典) 。
 
-- **用户隐私设置：** 此页面允许您导出包含合规性管理器中的行动项分配的报告， (特定) 的经典任务。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
+- **用户隐私设置：** 此页面允许您导出包含合规性管理器中的行动项分配的报告 (特定) 的经典任务。 还可以将所有行动项重新分配给其他用户，并删除指定用户分配的任何行动项。
 
 ### <a name="search"></a>搜索
 
 单击"服务信任门户"页面右上角的放大镜以展开该框，输入搜索词，然后按 **Enter。** 将显示 **"** 搜索"页，搜索词显示在搜索框中，搜索结果如下所示。
 
-![服务信任门户 - 搜索文档（应用了筛选器）](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![服务信任门户 - 搜索应用了筛选器的文档。](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 默认情况下，搜索返回文档结果。 可以使用下拉列表来优化显示的文档列表，以筛选结果。 可以使用多个筛选器来缩小文档列表。 筛选器包括特定的云服务、合规性或安全实践类别、地区和行业。 单击"文档名称"链接以下载文档。
 
-若要在合规性管理器中列出与搜索 (相关的) 评估中的控制措施，请单击"合规性 **管理器"。** 搜索结果显示评估的创建日期、评估分组的名称、适用的 Microsoft 云服务，以及控制是 Microsoft 还是客户托管。 单击该控件的名称以查看合规性管理器评估中的控件 (经典) 。
+若要在合规性管理器中列出与搜索 (评估) ，请单击"合规性管理器 **"。** 搜索结果显示评估的创建日期、评估分组的名称、适用的 Microsoft 云服务，以及控制是 Microsoft 还是客户托管。 单击该控件的名称以查看合规性管理器评估中的控件 (经典) 。
 
-![服务信任门户 - 搜索合规性管理器控制措施](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![服务信任门户 - 搜索合规性管理器控件。](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > 服务信任门户报告和文档可在发布后至少 12 个月内下载，或直到有新版本的文档可用。
@@ -142,15 +142,15 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 - **评估初学者包：** 评估后，使用此初学者包中的清单和其他指南来帮助组织评估与安全、合规性和隐私相关的风险。
 
-- **审核初学者包：** 使用此初学者包，获得有关使用审核控件和其他工具的指导，以帮助指导你实现 Microsoft 云服务，帮助降低组织的风险。
+- **审核初学者包：** 使用此初学者包，可指导你使用审核控件和其他工具，以帮助指导你实现 Microsoft 云服务，帮助降低组织的风险。
 
-若要访问这些初学者包，请转到服务信任门户 **> Industry & Regions > Industry Solutions > Financial Services。** 你可以打开或下载初学者包中的文档，或将它们保存到我的库。
+若要访问这些初学者包，请转到服务信任门户 **> Industry & Regions > Industry Solutions > Financial Services**。 你可以打开或下载初学者包中的文档，或将它们保存到我的库。
 
 ## <a name="localization-support"></a>本地化支持
 
 通过服务信任门户，可以查看不同语言的网页内容。 若要更改网页语言，只需单击网页左下角的地球图标并选择所需语言即可。
 
-![服务信任门户 - 本地化内容选项](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![服务信任门户 - 本地化的内容选项。](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>提供反馈
 
@@ -158,4 +158,4 @@ Microsoft 服务信任门户提供有关 Microsoft 安全性、隐私和合规�
 
 你的反馈对我们非常重要。 单击页面底部的"反馈"按钮，向我们发送有关您所做的或不喜欢的内容的评论，或者您可能对改进我们产品或产品功能的建议。
 
-![你拥有的反馈类型](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![你拥有的反馈类型。](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

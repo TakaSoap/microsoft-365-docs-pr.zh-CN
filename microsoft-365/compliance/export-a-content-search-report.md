@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 您可以导出搜索结果报告，而不是导出 Microsoft 365 合规中心 中的内容搜索的实际结果。 该报告包含搜索结果摘要和一个文档，其中包含有关将导出的每个项目的详细信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5307bab55f838697e63559834653b54f06c86e7
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 56a61bb1cd0fa9952f85d75ae50f42754c583ce7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503091"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570241"
 ---
 # <a name="export-a-content-search-report"></a>导出内容搜索报告
 
@@ -39,7 +39,7 @@ ms.locfileid: "58503091"
 
 - 若要导出搜索报告，您必须在 Microsoft 365 合规中心 中分配合规性搜索管理Microsoft 365 合规中心。 默认情况下，此角色分配给内置电子数据展示管理员和组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
-- 导出报告时，数据会临时存储在 Microsoft 云Azure 存储位置，然后再下载到本地计算机。 请确保你的组织可以连接到 Azure 中的终结点，即 **\* .blob.core.windows.net** (通配符表示导出服务的唯一) 。 搜索结果数据在创建后的两Azure 存储从搜索位置中删除。
+- 导出报告时，数据会临时存储在 microsoft 云Azure 存储位置，然后再下载到本地计算机。 请确保你的组织可以连接到 Azure 中的终结点，即 **\* .blob.core.windows.net** (通配符表示导出服务的唯一) 。 搜索结果数据在创建后的两Azure 存储从搜索位置删除。
 
 - 用于导出搜索结果的计算机必须满足以下系统要求：
 
@@ -57,7 +57,7 @@ ms.locfileid: "58503091"
 
   > [!NOTE]
   > <sup>1</sup> Microsoft 不会为应用程序制作第三方扩展ClickOnce加载项。 不支持使用不支持的浏览器和第三方扩展或加载项导出搜索结果。<br/>
-  > <sup>2</sup>由于最近对 Microsoft Edge 所做的更改，ClickOnce不再启用默认支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 Edge 中的电子数据展示导出[Microsoft Edge。](configure-edge-to-export-search-results.md)
+  > <sup>2</sup>由于最近对 Microsoft Edge 所做的更改，ClickOnce不再默认启用支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 Edge 中的电子数据展示[导出Microsoft Edge。](configure-edge-to-export-search-results.md)
 
 - 如果搜索返回的结果的估计总大小超过 2 TB，则导出报告将失败。 若要成功导出报告，请尝试缩小范围并重新运行搜索，以便结果的估计大小小于 2 TB。
 
@@ -73,13 +73,13 @@ ms.locfileid: "58503091"
   
 2. 在搜索 **弹出** 页底部的"操作"菜单上，单击"导出 **报告"。**
 
-   !["操作"菜单中的"导出报告"选项](../media/ActionMenuExportReport.png)
+   !["操作"菜单中的"导出报告"选项。](../media/ActionMenuExportReport.png)
 
    将显示 **"导出报告** "飞出页。 导出报告选项可用于导出有关搜索的信息取决于搜索结果位于邮箱或站点中还是两者的组合。
   
 3. 在 **"输出选项**"下，选择下列选项之一：
   
-   ![导出输出选项](../media/ExportOutputOptions.png)
+   ![导出输出选项。](../media/ExportOutputOptions.png)
 
     - **所有项目（不包括无法识别** 的格式的项目）都经过加密，或者出于其他原因未编制索引。 此选项仅导出有关索引项的信息。
   
@@ -87,7 +87,7 @@ ms.locfileid: "58503091"
   
     - **只有具有无法识别的格式**、已加密或出于其他原因未编制索引的项。 此选项仅导出有关未索引项的信息。
 
-4. 配置"**启用重复数据Exchange"选项**。
+4. 配置"**为内容启用Exchange复制"** 选项。
   
    - 如果选择此选项，导出摘要报告中 (重复数据删除前和重复) 重复邮件数。 此外，邮件的一个副本将包含在邮件manifest.xml文件中。 但导出结果报告将包含重复邮件每个副本的一行，以便您可以标识包含重复邮件副本的邮箱。 有关导出的报告详细信息，请参阅 [报告中包含的内容](#whats-included-in-the-report)。
 
@@ -107,7 +107,7 @@ ms.locfileid: "58503091"
 
 1. 在页面 **的"** 内容搜索"Microsoft 365 合规中心，选择"导出 **"** 选项卡
   
-   您可能必须 **单击"刷新** "来更新导出作业的列表，以便它显示您创建的导出作业。 导出报告作业与相应的搜索具有相同的名称，_ReportsOnly附加到搜索名称。
+   您可能必须 **单击"刷新** "来更新导出作业的列表，以便它显示您创建的导出作业。 导出报告作业的名称与相应的搜索的名称相同，_ReportsOnly搜索名称后面追加一个名称。
   
 2. 选择在步骤 1 中创建的导出作业。
 
@@ -122,7 +122,7 @@ ms.locfileid: "58503091"
 
 6. 在 **电子数据展示导出工具中**，执行以下操作：
 
-   ![电子数据展示导出工具](../media/eDiscoveryExportTool.png)
+   ![电子数据展示导出工具。](../media/eDiscoveryExportTool.png)
 
    1. 将步骤 3 中复制的导出密钥粘贴到相应的框中。
   
@@ -142,7 +142,7 @@ ms.locfileid: "58503091"
   
 - **清单：** 清单文件 (XML 格式) ，其中包含有关搜索结果中包括的每个项目的信息。 如果启用"重复数据删除"选项，则重复邮件不会包含在清单文件中。
 
-- **结果：** 一Excel包含一行的索引文档，其中包含有关将随搜索结果导出的每个索引项的信息。 对于电子邮件，结果日志包含有关每封邮件的信息，包括： 
+- **结果：** 一Excel包含一行的索引文档，其中包含有关每个将随搜索结果导出的索引项的信息。 对于电子邮件，结果日志包含有关每封邮件的信息，包括： 
 
   - 邮件在源邮箱中的位置（包括邮件位于主邮箱还是存档邮箱）。
 

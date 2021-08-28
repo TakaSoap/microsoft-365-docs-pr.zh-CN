@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: 了解如何在 Microsoft Viva Learning (管理) 配置 Teams 预览版。
-ms.openlocfilehash: 0db999306cc9cf7153d649e7ca49aca709425d6f
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483387"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570709"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>在 Microsoft Viva Learning (管理) 中Teams预览版
 
@@ -58,11 +58,11 @@ ms.locfileid: "58483387"
 
 1. 用户必须选择其个人资料图像>**关于**  >  **公共预览版**。
 
-    ![显示用户配置文件Teams应用程序上的上导航](../media/learning/learning-app-select-profile-teams.png)
+    ![显示用户配置文件Teams应用程序上的上一导航。](../media/learning/learning-app-select-profile-teams.png)
 
 2. 用户必须接受公共预览版条款和条件。
 
-    ![切换到公共预览版](../media/learning/learning-app-switch-to-public-preview.png)
+    ![切换到公共预览版。](../media/learning/learning-app-switch-to-public-preview.png)
 
 3. 用户现在可以在 Learning (应用商店) Viva Teams预览版，并开始使用它。
 
@@ -101,11 +101,11 @@ The Teams admin installs Viva Learning (Preview) and applies permission policies
 
     1. Users must select their profile image > **About** > **Public Preview**.
    
-        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+        ![Upper navigation in the Teams application showing user's profile.](../media/learning/learning-app-select-profile-teams.png)
     
     2. Users must accept the **Public preview** terms and conditions.
 
-        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+        ![Switch to public preview build.](../media/learning/learning-app-switch-to-public-preview.png)
  
 3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
 

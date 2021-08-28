@@ -1,6 +1,6 @@
 ---
 title: Microsoft SharePoint Syntex采用：入门
-description: 了解如何在组织中使用和实施SharePoint Syntex，以帮助你解决业务问题。
+description: 了解如何在组织中使用SharePoint Syntex解决方案，以帮助你解决业务问题。
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -14,19 +14,19 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: aec8eeeacb520c8ac035a099639e8f788c4cf1c96f8d42588cda8d992fb9d2f3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574744"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex采用：入门
 
 将企业提供的智能内容服务SharePoint Syntex三个部分：
 
 - **内容了解：** 创建无代码 AI 模型以对内容进行分类和提取信息，以自动应用元数据进行知识发现和重用。 了解有关内容 [理解的更多信息](document-understanding-overview.md)。
-- **内容处理：** 自动捕获、获取和分类内容，并简化使用 Power Automate 以内容为中心的Power Automate。 详细了解内容 [处理](form-processing-overview.md)。
+- **内容处理：** 自动捕获、获取和分类内容，并简化使用内容Power Automate。 详细了解内容 [处理](form-processing-overview.md)。
 - **内容合规性：** 控制和管理内容，以改进安全性和管理，并集成Microsoft 信息保护。
 
 借助新的 AI 服务和功能，你可以直接将内容理解和分类应用构建到内容管理流中，SharePoint Syntex。 有两种不同的内容理解方式。 使用的模型类型基于文件格式和用例：
@@ -44,7 +44,7 @@ ms.locfileid: "53795371"
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>确定要优化的试点业务方案
 
-要准备在SharePoint Syntex中使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方构建组织。 下面是一些文档理解方案，可帮助您的组织：
+若要准备在SharePoint Syntex中使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方来构建组织。 下面是一些文档理解可帮助您的组织的方案：
 
 - **内容处理：** 处理合同、工作声明和其他类似表单的文档。 输入表单，训练模型以了解和映射字段，然后运行表单以自动收集数据。 有关详细信息，请参阅表单 [处理概述](form-processing-overview.md)。
 - **发票分析：** 从发票中拉出相关详细信息，并确保它们符合策略或正在适当处理。
@@ -74,7 +74,7 @@ ms.locfileid: "53795371"
 |:-------|:-------|:-------|:-------|
 | AAD 角色| AAD 角色 | AAD 角色 | 支持者 |
 | 配置表单处理 | 配置用于表单处理的常见数据服务环境 | 收集用例 | 收集业务用例 |
-| 管理内容中心和权限| 购买和分配 AIB 信用额度 | 建立最佳做法并查看模型分析 | 创建和应用模型 |
+| 管理内容中心和权限| 购买和分配 AIB 信用 | 建立最佳做法并查看模型分析 | 创建和应用模型 |
 
 知识管理器、业务流程所有者和内容模型所有者在组织中创建示例模型和采用者。
 可能涉及的其他人：合规性管理员、分类管理员。
@@ -118,7 +118,7 @@ ms.locfileid: "53795371"
 
 若要准备好实现SharePoint Syntex，您需要：
 
-![内容理解的准备情况](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![内容理解的准备情况。](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. 规划结束状态
     - 文档理解模型是方法，而不是结尾。
@@ -142,7 +142,7 @@ ms.locfileid: "53795371"
 1. 开始认知和培训 – 招募冠军。
 1. 分步推出。  
 1. 收集反馈并循环。
-1. 随着使用情况的扩大，可根据需要规划任何 AI Builder 信用额度。
+1. 随着使用情况的扩大，可根据需要规划任何 AI 生成器信用额度。
 
 ## <a name="see-also"></a>另请参阅
 

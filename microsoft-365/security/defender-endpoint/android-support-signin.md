@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 9af685147ee010ec4cc6e6024df28d98475e4b15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595240"
+ms.locfileid: "58570697"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -112,7 +112,7 @@ ms.locfileid: "58595240"
 
 **原因：**
 
-在 Android 11 中，用户更改了电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
+Xiomi 更改了 Android 11 中的电池优化权限。 不允许 Defender 将此设置配置为忽略电池优化。
 
 **解决方案：**
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解如何在主题中心中管理主题Microsoft Viva主题。
-ms.openlocfilehash: 33d706a0801d8a91d22767b5b03461ba79cf8ff7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255600"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570949"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>管理主题中心中的主题Microsoft Viva主题
 
@@ -59,7 +59,7 @@ ms.locfileid: "58255600"
 > [!Note] 
 > 在 **"管理主题** "页上，每个知识经理只能查看他们有权访问连接到该主题的基础文件和页面的主题。 此权限修整将反映在"建议"选项卡、"已确认"选项卡、"**已发布**"和"已删除"选项卡 **上的主题** 列表中。  但是，主题计数会显示组织中所有权限的总计数。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要在主题中心管理主题，需要：
 - 拥有 Viva 主题许可证。
@@ -116,9 +116,9 @@ ms.locfileid: "58255600"
 
 ## <a name="published-topics"></a>已发布的主题
 
-在"**管理主题**"页上，在指定的源SharePoint发现的主题将列在"已发布"**选项卡** 上。已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
+在"**管理主题**"页上，在指定的源SharePoint中发现的主题将列在"已发布"**选项卡** 上。已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
 
-   ![管理主题](../media/knowledge-management/manage-topics-new.png)
+   ![管理主题。](../media/knowledge-management/manage-topics-new.png)
 
 ## <a name="removed-topics"></a>已删除的主题
 

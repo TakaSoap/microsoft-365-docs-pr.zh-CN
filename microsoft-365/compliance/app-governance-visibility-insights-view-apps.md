@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查看你的应用。
-ms.openlocfilehash: 9e67f5115e715f804cf91d95c24760a25fdf869c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394524"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574408"
 ---
 # <a name="view-your-apps"></a>查看你的应用
 
@@ -34,7 +34,7 @@ ms.locfileid: "58394524"
 
 有关租户中应用的摘要，请转到“**Microsoft 365 合规中心”>“应用治理”>“应用**”。
 
-![Microsoft 365 合规中心内的 MAPG 应用摘要页面](..\media\manage-app-protection-governance\mapg-cc-apps.png)
+![Microsoft 365 合规中心的 MAPG 应用摘要页面。](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
 > 若要查看应用治理数据，你的登录帐户必须具有[这些角色](app-governance-get-started.md#administrator-roles)中的一个。
@@ -67,7 +67,7 @@ ms.locfileid: "58394524"
 
 有关租户中特定应用的详细信息，请转到 **“Microsoft 365 合规中心”>“应用治理”>“应用页面”>“*应用名称”***。
 
-![Microsoft 365 合规中心内的应用治理应用详细信息窗格](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
+![Microsoft 365 合规中心的应用治理应用详细信息窗格。](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 应用详细信息窗格提供有关这些选项卡的附加信息：
 

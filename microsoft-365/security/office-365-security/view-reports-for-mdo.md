@@ -20,12 +20,12 @@ description: 管理员可以了解如何查找和使用 Defender for Office 365�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 29374b0f4248b520d1b00a597e3c693cdf9f18ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614954"
+ms.locfileid: "58574504"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在门户中Office 365 Defender for Microsoft 365 Defender报告
 
@@ -99,15 +99,15 @@ ms.locfileid: "58614954"
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-威胁 **防护状态** 报告是一个视图，将有关 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 和 Microsoft Defender for Office 365 检测并阻止的恶意内容和恶意电子邮件的信息汇集在一起。 有关详细信息，请参阅威胁 [防护状态报告](view-email-security-reports.md#threat-protection-status-report)。
+威胁 **防护状态** 报告是一个单一视图，将有关 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 和 Microsoft Defender for Office 365 检测并阻止的恶意内容和恶意电子邮件的信息汇集在一起。 有关详细信息，请参阅威胁 [防护状态报告](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
-URL **威胁防护报告提供** 检测到的威胁的摘要和趋势视图，以及作为链接的一部分对 URL 单击 [保险箱视图](safe-links.md)。 此报告不会包含应用了"链接"策略保险箱"不跟踪用户单击"选项的用户 **的单击** 数据。
+URL **威胁防护报告** 提供检测到的威胁的摘要和趋势视图，以及作为链接的一部分对 URL [单击保险箱视图](safe-links.md)。 此报告不会包含应用了"链接"策略保险箱"不跟踪用户单击"选项的用户的 **单击** 数据。
 
 若要查看报告，请打开 Microsoft 365 Defender [门户](https://security.microsoft.com)，**转到报告** \> **电子邮件&协作** \> **电子邮件&协作报告**。 在"**电子邮件&协作报告**"页上，找到 **"URL 保护"页**，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
-!["电子邮件和协作报告"& URL 保护报告小组件。](../../media/url-protection-report-widget.png)
+!["电子邮件和协作报告"页面上& URL 保护报告小组件。](../../media/url-protection-report-widget.png)
 
 以下各节介绍了 **URL 威胁防护** 报告页面上的可用视图。
 
@@ -165,7 +165,7 @@ If you click **Filters**， you can modify the report and the details table by s
 
 If you click **Filters**， you can modify the report and the details table by selecting one or more of the following values in the flyout that appears：
 
-- **UTC (utc** **) ：开始日期和****结束日期**
+- **DATE (UTC)**： **Start date** and **End date**
 - **检测**：图表中可用的应用。
 - **域**：报告结果中列出的 URL 域。
 - **收件人**
@@ -213,7 +213,7 @@ PowerShell 报告 cmdlet：
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Defender 报告需要哪些权限Office 365报告？
 
-若要查看和使用本文中所述的报告，您需要是本文门户中以下角色组之一Microsoft 365 Defender的成员：
+若要查看和使用本文中所述的报告，您需要是该门户中以下角色组之一Microsoft 365 Defender成员：
 
 - **组织管理**
 - **安全管理员**
@@ -222,14 +222,14 @@ PowerShell 报告 cmdlet：
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-**注意**：将用户添加到 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 
-如果你在 Defender for Office 365 报告中看不到数据，请仔细检查策略是否正确设置。 你的组织必须[保险箱链接](set-up-safe-links-policies.md)策略保险箱[附件](set-up-safe-attachments-policies.md)策略，以便 Defender Office 365保护就位。 另请参阅 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
+如果你在 Defender for Office 365报告中看不到数据，请仔细检查策略是否正确设置。 你的组织必须保险箱[链接](set-up-safe-links-policies.md)策略保险箱[附件](set-up-safe-attachments-policies.md)策略，以便 Defender Office 365保护就位。 另请参阅 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>相关主题
 
 [智能报表和 Microsoft 365 Defender见解](reports-and-insights-in-security-and-compliance.md)
 
-[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)
+[角色权限 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

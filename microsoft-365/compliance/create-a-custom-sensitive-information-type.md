@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b0a1a081f0eaad8be9b3afefc65f10c79eb5264cf5ce300dd454ccad6cf37fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1fcb52d99f939d686ac423c80caa0fe00cec24c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900146"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574816"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -143,11 +143,11 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 > [!NOTE]
 > 如果校验位不是校验和计算的一部分，则使用 0 作为校验位的权重。 例如，如果检查数字不用于计算检查数字，则上述情况下权重 8 将等于 0。  Modulo_operation) 。
 
-![已配置的校验和验证器的屏幕截图](../media/checksum-validator.png)
+![配置的校验和验证器的屏幕截图。](../media/checksum-validator.png)
 
 ### <a name="date-validator"></a>日期验证程序
 
-如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。
+如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序来测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，最后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。
 
 1. 定义具有此正则表达式的主元素：
 
@@ -158,15 +158,15 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 2. 然后添加日期验证程序。
 3. 选择日期格式和开始偏移。 由于日期字符串是前六个数字，因此偏移量是 `0` 。
 
-![已配置日期验证器的屏幕截图](../media/date-validator.png)
+![已配置日期验证器的屏幕截图。](../media/date-validator.png)
 
 ### <a name="functional-processors-as-validators"></a>作为验证程序的功能处理器
 
-你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar将确保您定义的自定义正则表达式传递了为"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
+你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar将确保您定义的自定义正则表达式传递了"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
 
 ### <a name="luhn-check-validator"></a>Luhn 检查验证程序
 
-如果您具有包含应传递 Luhn 算法的正则表达式的自定义敏感信息类型，您可以使用 [Luhn 检查验证程序](https://en.wikipedia.org/wiki/Luhn_algorithm)。
+如果您有一个自定义敏感信息类型，其中包括应传递 Luhn 算法的正则表达式，您可以使用 [Luhn 检查验证程序](https://en.wikipedia.org/wiki/Luhn_algorithm)。
 
 ## <a name="more-information-on-additional-checks"></a>关于其他检查的详细信息
 

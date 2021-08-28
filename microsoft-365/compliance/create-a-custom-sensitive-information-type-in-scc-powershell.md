@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 043b3b25fb311de162e3e3299413d21036e7090d1c8bf60df1229952df53bb35
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41f36354fa94da9cae8e7794dca778c1bfe8ac2e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851571"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570289"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "53851571"
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号字符 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该在字符周围添加一个附加的术语，使其具有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
+> 如果使用与号字符 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -139,7 +139,7 @@ ms.locfileid: "53851571"
 
 以下是一个最简单方案：假设你希望策略标识的内容包含采用九位数格式的组织员工 ID。因此，模式是指标识九位数的规则中包含的正则表达式。任何包含九位数的内容都符合模式。
   
-![包含一个模式的实体的关系图](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![具有一种模式的实体关系图。](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 虽然简单，但此模式可能会标识许多误报内容，因为包含任何九位数的匹配内容不一定是员工 ID。
   
@@ -149,7 +149,7 @@ ms.locfileid: "53851571"
   
 例如，若要更有胜算地标识包含员工 ID 的内容，除了九位数外，还可以定义另一种模式来标识聘用日期，并再定义一种模式来标识聘用日期和关键字（如“员工 ID”）。
   
-![包含多个模式的实体的关系图](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![具有多个模式的实体关系图。](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 对于此结构，请务必注意以下几点：
   
@@ -167,7 +167,7 @@ ms.locfileid: "53851571"
 2. 添加包含自定义实体名称（在本示例中，为“员工 ID”）的注释。稍后，将把实体名称添加到本地化字符串部分，此名称就是在创建 DLP 策略时在 UI 中看到的名称。
 3. 生成实体的 GUID。 有几种方法可生成 GUID，可在 PowerShell 中通过键入 **[guid]::NewGuid()** 轻松生成。 稍后还要将实体 GUID 添加到本地化的字符串部分。
   
-![显示 Rule 和 Entity 元素的 XML 标记](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![显示 Rules 和 Entity 元素的 XML 标记。](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>要匹配什么模式？[Pattern 元素、IdMatch 元素、Regex 元素]
 
@@ -175,11 +175,11 @@ ms.locfileid: "53851571"
   
 以下所有模式的共同点是，全都引用同一个正则表达式，以查找两边是空格 (\s) ... (\s) 的九位数 (\d{9})。此正则表达式由 IdMatch 元素引用，同时也是所有查找“员工 ID”实体的模式的通用要求。IdMatch 是模式尝试匹配的标识符，如员工 ID、信用卡号或身份证号。每个 Pattern 元素只能有一个 IdMatch 元素。
   
-![显示引用一个 Regex 元素的多个 Pattern 元素的 XML 标记](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![显示引用单个 Regex 元素的多个 Pattern 元素的 XML 标记。](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 若符合，模式返回可用于策略内条件中的计数和可信度。向策略添加用于检测敏感信息类型的条件时，可以编辑计数和可信度（如下所示）。本主题稍后将解释可信度（亦称为匹配准确度）。
   
-![“实例计数”和“匹配准确度”选项](../media/sit-confidence-level.png)
+![实例计数和匹配准确度选项。](../media/sit-confidence-level.png)
   
 创建正则表达式时，请注意一些潜在问题。例如，如果编写并上传的正则表达式标识过多内容，这可能会影响性能。若要详细了解这些潜在问题，请参阅后面的[要注意的潜在验证问题](#potential-validation-issues-to-be-aware-of)部分。
   
@@ -191,7 +191,7 @@ ms.locfileid: "53851571"
   
 可选的 minCount 特性可用于指定，必须为每个 Match 元素找到多少个匹配实例。例如，可指定至少必须找到关键字列表中的两个关键字时，才算符合模式。
   
-![显示包含 minCount 特性的 Match 元素的 XML 标记](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![显示具有 minOccurs 属性的 Match 元素的 XML 标记。](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>关键字 [Keyword、Group 和 Term 元素，matchStyle 和 caseSensitive 特性]
 
@@ -205,7 +205,7 @@ ms.locfileid: "53851571"
     
 最后，可使用 Term 元素的 caseSensitive 特性，以指定内容必须与关键字完全匹配，包括字母大小写。
   
-![显示引用关键字的 Match 元素的 XML 标记](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![显示引用关键字的 Match 元素的 XML 标记。](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>正则表达式 [Regex 元素]
 
@@ -219,7 +219,7 @@ ms.locfileid: "53851571"
   
 有关详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md)。
   
-![显示引用内置函数的 Match 元素的 XML 标记](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![显示引用内置函数的 Match 元素的 XML 标记。](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>不同证据组合 [Any 元素、minMatches 和 maxMatches 特性]
 
@@ -281,15 +281,15 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
 
 敏感信息类型要查找表示员工 ID 的模式，此模式还查找确证性证据，如“ID”等关键字。很明显，此证据越接近，模式就越有可能是实际员工 ID。可使用 Entity 元素的必需特性 patternsProximity，确定模式中的另一证据必须与实体有多接近。
   
-![显示 patternsProximity 特性的 XML 标记](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![显示 patternsProximity 属性的 XML 标记。](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 对于实体中的每种模式，patternsProximity 特性值都定义针对相应模式指定的其他所有 Match 与 IdMatch 位置的距离（以 Unicode 字符数为单位）。接近度窗口以 IdMatch 位置为关键主体，向 IdMatch 左右延伸。
   
-![接近度窗口关系图](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![邻近感应窗口的图示。](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 下面的示例展示了接近度窗口如何影响模式匹配，其中“员工 ID”自定义实体的 IdMatch 元素要求至少必须有一个关键字或日期确证性匹配。仅 ID1 匹配，因为对于 ID2 和 ID3，在接近度窗口中找不到任何确证性证据或只找到部分确证性证据。
   
-![确证性证据和接近度窗口的关系图](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![确定证据和邻近感应窗口的关系图。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 请注意，对于电子邮件，邮件正文和每个附件均被视为独立项。也就是说，接近度窗口不会超越各项末端。对于每一项（附件或正文），idMatch 和确证性证据都必须驻留在相应项中。
   
@@ -299,7 +299,7 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
   
 Pattern 元素有必需的 confidenceLevel 属性。可将 confidenceLevel 值（介于 1 和 100 之间的整数）视为实体中每个模式的唯一 ID - 实体中的模式必须具有你分配的不同的可信度。整数值是否精确并不重要 - 只需选取对合规性团队有意义的数字即可。上传自定义敏感信息类型和创建策略后，可以在所创建规则的条件中引用这些可信度。
   
-![显示包含不同 confidenceLevel 特性值的 Pattern 元素的 XML 标记](../media/sit-xml-markedup-2.png)
+![显示具有不同 confidenceLevel 属性值的 Pattern 元素的 XML 标记。](../media/sit-xml-markedup-2.png)
   
 除每个模式的 confidenceLevel 外，Entity 还有一个 recommendedConfidence 属性。 可将推荐的可信度属性视为规则的默认可信度级别。 在策略中创建规则时，如果不指定规则要使用的可信度级别，则该规则将基于推荐的实体可信度级别进行匹配。 请注意，规则包中的每个实体 ID 都必须使用 recommendedConfidence 属性，如果该属性缺失，将无法保存使用敏感信息类型的策略。 
   
@@ -307,11 +307,11 @@ Pattern 元素有必需的 confidenceLevel 属性。可将 confidenceLevel 值�
 
 如果合规性团队使用 Microsoft 365 合规中心创建不同区域设置和不同语言的策略，你可以提供自定义敏感信息类型的名称和说明的本地化版本。这样，如果合规性团队在使用 Microsoft 365 时采用你所支持的语言，就会在 UI 中看到本地化名称。
   
-![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![实例计数和匹配准确度选项。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Rule 元素必须包含 LocalizedStrings 元素，因为其中包含引用自定义实体 GUID 的 Resource 元素。相应地，每个 Resource 元素都包含一个或多个 Name 和 Description 元素，这些元素使用 langcode 特性来提供特定语言的本地化字符串。
   
-![显示 LocalizedStrings 元素内容的 XML 标记](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![显示 LocalizedStrings 元素内容的 XML 标记。](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 请注意，本地化字符串只能用于指定自定义敏感信息类型在合规中心 UI 中的显示方式。不能使用本地化字符串来提供不同本地化版本的关键字列表或正则表达式。
   
@@ -347,7 +347,7 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
 
 完成后，RulePack 元素应如下所示。
   
-![显示 RulePack 元素的 XML 标记](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![显示 RulePack 元素的 XML 标记。](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
 
 ## <a name="validators"></a>验证程序
 
@@ -379,7 +379,7 @@ Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是�
 - Func_japanese_my_number_personal
 - Func_japanese_my_number_corporate
 
-这让你能够定义自己的正则表达式并验证它们。 若要使用验证程序，请定义你自己的正则表达式，定义正则表达式时，请使用 validator 属性添加您所选择的函数处理器。 定义后，可以在 SIT 中使用此正则表达式。 
+这让你能够定义自己的正则表达式并验证它们。 若要使用验证程序，请定义自己的正则表达式，定义正则表达式时，请使用 validator 属性添加您所选择的函数处理器。 定义后，可以在 SIT 中使用此正则表达式。 
 
 在下面的示例中，正则表达式 - Regex_credit_card_AdditionalDelimiters定义为信用卡，然后使用信用卡的校验和函数将 Func_credit_card 用作验证程序进行验证。
 
@@ -397,7 +397,7 @@ Microsoft 365公开常用 SIT 的函数处理器作为验证程序。 以下是�
 </Entity>
 ```
 
-Microsoft 365两个通用验证程序
+Microsoft 365提供了两个通用验证程序
 
 ### <a name="checksum-validator"></a>校验和验证程序
 
@@ -422,7 +422,7 @@ Microsoft 365两个通用验证程序
 
 ### <a name="date-validator"></a>日期验证程序
 
-本示例为日期的正则表达式部分定义日期验证程序。
+本示例中，为日期的正则表达式部分定义日期验证程序。
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fe6e02205bd32ea9ac1e9ddf5842291611e7cb2c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507526"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574624"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>提供有关 Microsoft Defender for Endpoint 客户端分析器工具的反馈
 
@@ -36,8 +36,8 @@ ms.locfileid: "58507526"
 
 1. Microsoft Defender 终结点门户 (securitycenter.windows.com) ：
 
-    ![笑脸反馈图标的图像](images/3e2db5015cd4f47436b4765b2303f4f5.png)
+    ![笑脸反馈图标的图像。](images/3e2db5015cd4f47436b4765b2303f4f5.png)
 
 2. Microsoft 365 Defender门户 (security.microsoft.com) ：
 
-    !["提供反馈"按钮的图像](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+    ![提供反馈按钮的图像。](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)

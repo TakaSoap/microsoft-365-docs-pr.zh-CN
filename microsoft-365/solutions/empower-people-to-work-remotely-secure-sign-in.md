@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求混合工作者使用多重身份验证 (MFA) 登录。
-ms.openlocfilehash: 19a249e25aaa2db21d8b2dea4b4bdd86e673e4f9761a3adcd530b0a21b5c3bfc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805068"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575344"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1 为使用 MFA 的混合工作者提高登录安全性
 
 要提高远程工作者的登录安全性，请使用多重身份验证 (MFA)。 MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使恶意用户确定了用户帐户密码，还必须能够响应其他验证（如发送到智能手机的短信）才能获得访问权限。
 
-![正确的密码和其他验证会导致登录成功](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![正确的密码和其他验证会导致登录成功。](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 对于所有用户（包括远程工作者，特别是管理员），Microsoft 强烈建议实施 MFA。
 
@@ -119,6 +119,6 @@ Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2 许�
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 2：提供对本地应用和服务的远程访问权限](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
+[![步骤 2：提供对本地应用和服务的远程访问权限。](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
 
 继续执行[步骤 2](empower-people-to-work-remotely-remote-access.md)，提供对本地应用和服务的远程访问权限。

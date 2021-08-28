@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a099ab2241e1e2a4705fd54760a48cb3f95b421
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387004"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570589"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -34,7 +34,7 @@ Microsoft 365 审核解决方案提供集成解决方案，帮助组织有效响
 
 Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
-![基本审核和高级审核的关键功能](..\media\AuditingSolutionsComparison.png)
+![基本审核和高级审核的关键功能。](..\media\AuditingSolutionsComparison.png)
 
 ### <a name="basic-audit"></a>基本审核
 
@@ -44,7 +44,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 - **数以千计的可搜索审计事件**。 可搜索组织中大多数 Microsoft 365 服务中经审核的活动。 有关可搜索的活动的部分列表，请参阅 [经审核活动](search-the-audit-log-in-security-and-compliance.md#audited-activities)。 有关支持经审核活动的服务和功能的列表，请参阅 [审核日志记录类型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。
 - **Microsoft 365 合规中心内审核**。 使用 Microsoft 365 合规中心中的审核日志搜索工具搜索审核记录。 可以搜索特定活动、特定用户执行的活动以及按日期范围发生的活动。 下面是合规中心中审核搜索工具的屏幕截图。
 
-   ![Microsoft 365 合规中心中的审核日志搜索工具](../media/AuditLogSearchToolMCC.png)
+   ![Microsoft 365 合规中心的审核日志搜索工具。](../media/AuditLogSearchToolMCC.png)
 
 - **Search-UnifiedAuditLog cmdlet**. 您也可以在 Exchange Online PowerShell（搜索工具的基础 cmdlet）中使用 **Search-UnifiedAuditLog** cmdlet 来搜索审核事件或在脚本中使用。 有关详细信息，请参阅：
 
@@ -77,14 +77,14 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
 |功能|基本审核|高级审核|
 |:------|:-------------|:-------------|
-|默认情况下启用|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|数千个可搜索的审核事件|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|Microsoft 365 合规中心中的审核搜索工具|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|Search-UnifiedAuditLog cmdlet|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|将审核记录导出到 CSV 文件|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|通过Office 365管理活动API访问审核日志<sup>1</sup>|![受支持](../media/check-mark.png)|![支持](../media/check-mark.png)</sup>|
-|90 天审核日志保留|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|1 年审核日志保留期||![受支持](../media/check-mark.png)|
+|默认情况下启用|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|数千个可搜索的审核事件|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|Microsoft 365 合规中心的审核搜索工具|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|Search-UnifiedAuditLog cmdlet|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|将审核记录导出到 CSV 文件|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|通过 Office 365 管理活动 API <sup>1</sup> 访问审核日志|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)</sup>|
+|90 天审核日志保留|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|1 年审核日志保留期||![支持。](../media/check-mark.png)|
 |10 年审核日志保留期 <sup>2</sup>||![受支持](../media/check-mark.png)|
 |审核日志保留策略||![受支持](../media/check-mark.png)|
 |高价值的、关键事件||![受支持](../media/check-mark.png)|
@@ -131,7 +131,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
 第一步是设置基本审核，然后开始运行审核日志搜索。
 
-![设置基本审核的工作流](../media/BasicAuditingWorkflow.png)
+![设置基本审核的工作流。](../media/BasicAuditingWorkflow.png)
 
 1. 验证组织是否具有支持基本审核的订阅，以及支持高级审核的订阅（如果适用）。
 
@@ -145,7 +145,7 @@ Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
 如果组织具有支持高级审核的订阅，请执行以下步骤来设置和使用高级审核中的其他功能。
 
-![设置高级审核的工作流](../media/AdvancedAuditWorkflow.png)
+![设置高级审核的工作流。](../media/AdvancedAuditWorkflow.png)
 
 1. 为用户设置高级审核。 此步骤包括以下任务：
 

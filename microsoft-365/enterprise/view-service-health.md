@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 先查看 Microsoft 365 服务的运行状况，然后再致电支持人员，查看活动服务是否中断。
-ms.openlocfilehash: dc925a1ce1e61f2a67d258c12baabddf29dd880b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64a0d4816ce9afdd8ee4bf1c2a4522ef9fc56afc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570481"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -52,7 +52,7 @@ ms.locfileid: "58356332"
 
 3. 在 **服务运行状况** 页上，每个云服务的健康状态以表格格式显示。
 
-   ![服务运行状况中当前问题的视图](../media/shd-landing-page.png)
+   ![服务运行状况中当前问题的视图。](../media/shd-landing-page.png)
 
 “**所有服务**”选项卡（默认视图）显示所有服务、其当前运行状况以及任何活动事件或公告。 “**运行状况**”列中的图标和状态指示每个服务的状态。
 
@@ -86,7 +86,7 @@ ms.locfileid: "58356332"
 
 在“**所有服务**”视图中，选择问题标题以查看问题详细信息页面，该页面显示有关问题的更多信息，包括在处理解决方案时发布的所有消息的提要。
 
-[![显示服务公告的屏幕截图](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+[![显示服务公告的屏幕截图。](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 公告或事件摘要提供以下信息：
 
@@ -99,7 +99,7 @@ ms.locfileid: "58356332"
 - **对用户的影响** - 简要描述此问题对最终用户的影响。
 - **所有更新** - 我们会经常发布消息，说明我们在应用解决方案时取得的进展。
 
-![显示问题详细信息的屏幕截图](../media/service-health-advisory-detail.png)
+![显示问题详细信息的屏幕截图。](../media/service-health-advisory-detail.png)
 
 ### <a name="translate-service-health-details"></a>翻译服务运行状况详细信息
 
@@ -116,8 +116,8 @@ ms.locfileid: "58356332"
 
 | 图标 | 说明 |
 |:-----|:-----|
-|![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|如果服务显示公告，这意味着某问题正在影响一些用户，但该服务仍然可用。公告中通常存在针对该问题的变通方法，并且该问题可能是间歇性的，或其作用范围和对用户的影响有限。  <br/> |
-|![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|如果服务显示遇到活动事件，则说明遇到关键问题，且服务或其主要功能目前不可用。例如，用户可能无法发送和接收电子邮件，或无法登录。事件会对用户产生显著影响。对于正在进行的事件，我们会在服务运行状况仪表板中提供有关调查、缓解措施和解决方法确认的更新。  <br/> |
+|![用于公告的信息图标。](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|如果服务显示公告，这意味着某问题正在影响一些用户，但该服务仍然可用。公告中通常存在针对该问题的变通方法，并且该问题可能是间歇性的，或其作用范围和对用户的影响有限。  <br/> |
+|![事件的感叹号图标。](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|如果服务显示遇到活动事件，则说明遇到关键问题，且服务或其主要功能目前不可用。例如，用户可能无法发送和接收电子邮件，或无法登录。事件会对用户产生显著影响。对于正在进行的事件，我们会在服务运行状况仪表板中提供有关调查、缓解措施和解决方法确认的更新。  <br/> |
 
 ### <a name="status-definitions"></a>状态定义
 

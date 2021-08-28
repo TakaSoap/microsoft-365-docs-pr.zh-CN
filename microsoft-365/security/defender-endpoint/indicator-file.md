@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 793ca89925e98bfc622357e126e4f0c44893c3cd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683964"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574636"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -44,7 +44,7 @@ ms.locfileid: "58683964"
 - 通过使用文件详细信息页中的添加指示器按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
@@ -54,13 +54,13 @@ ms.locfileid: "58683964"
 
 - 在具有 Windows 10 版本 1703 或更高版本、Windows Server 2016 2019 的设备上受支持。
 
-- 若要开始阻止文件，首先需要打开"阻止或允许 ["设置。](advanced-features.md)
+- 若要开始阻止文件，首先需要打开"阻止或允许 ["](advanced-features.md)功能设置。
 
-此功能旨在防止从 web (可疑恶意软件) 潜在恶意文件。 它当前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
+此功能旨在防止从 (下载可疑的恶意软件) 或潜在的恶意文件。 它目前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 
-1. 在导航窗格中，选择"设置  **** \> **规则"** 下 (\> 终结点) 。 
+1. 在导航窗格中，选择 ****"设置"下 (终结点 \>  \> ) 。 
 
 2. 选择" **文件哈希"**   选项卡。
 
@@ -98,17 +98,20 @@ In Microsoft 365 Defender， go to 设置 > Endpoints > Indicators > add new Fil
 
 > [!IMPORTANT]
 >
-> - 通常，文件块将在几分钟内强制执行和删除，但可能需要 30 分钟以上的时间。
-> - 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义相同的文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。
-> - 在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。
-> - 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
+>- 通常，文件块将在几分钟内强制执行和删除，但可能需要 30 分钟以上的时间。
 >
-> 有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)。
+>- 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义相同的文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。
+>
+>- 在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。
+>
+>- 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
+>
+>   有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)。
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>专用预览版：高级搜寻功能
 
 > [!IMPORTANT]
-> 本节中的信息 (预览版自动调查和修正 **引擎) 预** 发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
+> 本部分的信息 (公共预览版 **自动** 调查和修正引擎) 预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 你可以提前搜寻查询响应操作活动。 下面是一个示例高级搜寻查询：
 
@@ -129,7 +132,7 @@ Timestamp > ago(30d)
 
 证书：
 
-- EUS：Win32/CustomCertEnterpriseBlock！cl
+- EUS：Win32/CustomCertEnterpriseBlock！cl  
 
 响应操作活动还可以在设备时间线中查看。
 
@@ -138,11 +141,11 @@ Timestamp > ago(30d)
 证书和文件 IoC 策略处理冲突将遵循以下顺序：
 
 - 如果应用程序控制和 AppLocker Windows Defender文件强制模式策略/策略，则 **阻止**
-- 否则，如果文件被排除Microsoft Defender 防病毒，**则** Allow
+- 否则，如果文件由用户排除Microsoft Defender 防病毒，**则** Allow
 - 否则，如果阻止或警告文件 IoC 阻止或警告文件，则 **阻止/警告**
 - 否则，如果允许文件 IoC 策略允许该文件 **，则允许**
 - 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**
-- Else **Allow** (AppLocker Windows Defender应用程序控制&，则任何 IoC 规则都不适用于它) 
+- Else **Allow** (AppLocker Windows Defender应用程序控制&，任何 IoC 规则都不适用于它) 
 
 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，则它将超过 MD5 文件哈希 IoC 策略。
 
@@ -153,18 +156,13 @@ Timestamp > ago(30d)
 
 ### <a name="examples"></a>示例
 
-<br>
-
-****
-
-|组件|组件强制|文件指示器操作|结果|
+|组件|组件强制|文件指示器操作|结果
 |---|---|---|---|
-|攻击面减少文件路径排除|允许|阻止|阻止|
-|攻击面减少规则|阻止|允许|允许|
-|Windows Defender 应用程序控制|允许|阻止|允许|
-|Windows Defender 应用程序控制|阻止|允许|阻止|
-|Microsoft Defender 防病毒排除|允许|阻止|允许|
-|
+|攻击面减少文件路径排除|允许|阻止|阻止
+|攻击面减少规则|阻止|允许|允许
+|Windows Defender 应用程序控制|允许|阻止|允许
+|Windows Defender 应用程序控制|阻止|允许|阻止
+|Microsoft Defender 防病毒排除|允许|阻止|允许
 
 ## <a name="see-also"></a>另请参阅
 

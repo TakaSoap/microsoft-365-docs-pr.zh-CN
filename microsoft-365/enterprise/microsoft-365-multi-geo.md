@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: a7bed2ddea25ccd808d0b92d6cdeb689c004d2a409ee553fb3862b539fab9c28
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b421be44711172729e228083b6682ac387473e6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864348"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575104"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -32,7 +32,7 @@ ms.locfileid: "53864348"
 
 在多地理位置环境中，Microsoft 365 租户由（最初在其中设置了 Microsoft 365 订阅）的中心位置以及一个或多个附属位置组成。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在 Azure Active Directory (Azure AD) 中进行管控。 由于系统会集中管理你的租户信息并同步到每个地理位置中，因此共享操作以及涉及到公司中任何人的体验均包含全局意识。
 
-![SharePoint 管理中心中多地理位置地图的屏幕截图](../media/multi-geo-world-map.png)
+![来自管理中心的多地理位置SharePoint屏幕截图。](../media/multi-geo-world-map.png)
 
 请注意，Microsoft 365 多地理位置旨在满足数据驻留需求，而不是优化性能。 若要了解 Microsoft 365 性能优化，请参阅 [Microsoft 365 的网络计划和性能调整](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848)，或与支持群组联系。
 
@@ -58,7 +58,7 @@ Microsoft 365对于租户中至少具有 250 Microsoft 365 席位且使用多地
 - OneDrive for Business 计划 1 或计划 2
 - SharePoint Online 计划 1 或计划 2
 
-如果将许可证分配给用户，但后来又将其删除，Teams聊天数据将排入队列以移回中心位置。 SharePoint和Exchange不移动数据。
+如果许可证已分配给用户，但后来又被删除，Teams聊天数据将排入队列以移回中心位置。 SharePoint和Exchange不移动数据。
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 多地理位置可用性
 

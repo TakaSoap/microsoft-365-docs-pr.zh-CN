@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b7b830c35443f47af72ed0d76303b96491648bc
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 1dc5a22fe23a64669c7ab89ecd2141aff1659166
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483315"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574492"
 ---
 # <a name="user-reported-message-settings"></a>用户报告的邮件设置
 
@@ -50,17 +50,17 @@ ms.locfileid: "58483315"
 
 - 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过自定义邮箱上的垃圾邮件筛选。 请参阅使用 EAC 创建邮件流规则，[该规则将邮件的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为"绕过 **垃圾邮件筛选"。**
 
-- [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)创建一个反恶意软件策略，其中包括自定义邮箱，其中对恶意软件禁用了零时差自动清除 (ZAP)  (**保护设置** 部分未选中"启用恶意软件的零时差自动清除 \> ") 。
+- [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)创建一个反恶意软件策略，其中包括自定义邮箱，其中对恶意软件禁用了零时差自动清除 (ZAP)  (**保护设置** 部分未选中"为恶意软件启用零时差自动清除 \> ") 。
 
-- [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)创建一个反垃圾邮件策略，包括自定义邮箱，其中未选择"启用零时差自动清除 ( (ZAP) "的自定义邮箱，其中"垃圾邮件的 ZAP"和"适用于网络钓鱼的 \> **ZAP"** 部分) 。
+- [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)创建一个反垃圾邮件策略，包括自定义邮箱，其中未选择"启用零时差自动清除 (ZAP) "的自定义邮箱，其中"垃圾邮件的 ZAP"和"网络钓鱼的 ZAP"被禁用 (""零时差自动清除 \> "部分) 。
 
 - 禁用自定义邮箱中的垃圾邮件规则。 使用[配置邮箱上的垃圾邮件Exchange Online禁用](configure-junk-email-settings-on-exo-mailboxes.md)垃圾邮件规则。 禁用后，EOP 无法根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
 如果你有 Microsoft Defender for Office 365，你还应配置以下内容，以便我们的高级筛选不会影响报告邮件的用户：
 
-- [Create a 保险箱 Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where 保险箱 Links scanning is turned off (**Select the action for unknown potentially malicious urls in messages section** \> **Off**) .
+- [Create a 保险箱 Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where 保险箱 Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages section** \> **Off**) .
 
-- [Create a 保险箱 Attachments policy](set-up-safe-attachments-policies.md) that includes the custom mailbox where 保险箱 Attachments scanning is turned off (保险箱 Attachments unknown malware response **section** \> **Off**) .
+- [创建一保险箱](set-up-safe-attachments-policies.md)附件策略，该策略包含自定义邮箱，其中保险箱附件扫描已关闭 **(保险箱附件未知恶意软件** 响应"部分关闭 \> ) 。
 
 验证邮箱满足所有适用的先决条件后，可以使用本文中的过程配置用户提交邮箱。
 
@@ -70,27 +70,27 @@ ms.locfileid: "58483315"
 
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
 
-  - **组织管理****或安全管理员**，在 [Microsoft 365 Defender 门户中](permissions-microsoft-365-security-center.md)。
+  - **组织管理****或安全管理员**（在 Microsoft 365 Defender [门户中的权限](permissions-microsoft-365-security-center.md)）。
 
-- 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则当您指定提交邮箱时，将收到如下所示的错误：
+- 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则指定提交邮箱时将收到如下所示的错误：
 
   > 在域中指定电子邮件地址
 
-  有关启用或禁用对 PowerShell Exchange Online访问的信息，请参阅下列主题：
+  有关启用或禁用对 PowerShell 的访问Exchange Online，请参阅下列主题：
 
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>使用Microsoft 365 Defender门户配置用户提交邮箱
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&**规则** \> **""威胁策略**""其他用户提交"中的"用户 \>  \> **报告的邮件设置"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **policies** User reported message \> **settings** in the **Others** \> **User submissions**.
 
-2. 在"**用户提交"** 页上，您看到的内容 **由"Microsoft Outlook报告消息**"按钮设置是"关闭"还是"**开"确定**：
+2. 在"**用户提交"** 页上，你看到的内容由"Microsoft Outlook **报告邮件**"按钮设置是"关闭"还是"**开"确定**：
 
-   - **Microsoft Outlook"报告消息"按钮** \>**打开** ![切换：如果使用报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页版 中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-on.png) 以下设置：
+   - **Microsoft Outlook"报告消息"按钮** \>**打开** ![打开。：如果使用报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页版 中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-on.png) 以下设置：
      - **将报告的邮件发送到**：选择下列选项之一：
        - **Microsoft：** 所有报告的邮件都转到 Microsoft (时，不会使用用户提交) 。
-       - **Microsoft 和我的组织的邮箱**：在出现的框中，输入现有邮箱Exchange Online电子邮件地址。 不允许通讯组。 用户提交将同时转到 Microsoft 进行分析，并转到自定义邮箱，供管理员或安全运营团队进行分析。
+       - **Microsoft 和我的组织的邮箱**：在出现的框中，输入现有邮箱Exchange Online地址。 不允许通讯组。 用户提交将同时转到 Microsoft 进行分析，并转到自定义邮箱，供管理员或安全运营团队进行分析。
        - **我的组织的邮箱**：在出现的框中，输入现有邮箱Exchange Online电子邮件地址。 不允许通讯组。 如果希望邮件仅转到管理员或安全运营团队进行分析，请使用此选项。 除非管理员自行转发，否则邮件不会发送到 Microsoft。
 
           > [!IMPORTANT]
@@ -119,14 +119,14 @@ ms.locfileid: "58483315"
 
           > 你的电子邮件将像现在一样提交到 Microsoft 进行分析。 某些电子邮件可能包含个人或敏感信息。
 
-   - **Microsoft Outlook"报告消息"按钮** \>**关闭** ![关闭：如果使用第三方报告工具而不是报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页版 中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-off.png) 以下设置：
+   - **Microsoft Outlook"报告消息"按钮** \>**关闭** ![关闭。：如果使用第三方报告工具而不是报告邮件外接程序、报告网络钓鱼外接程序或 Outlook 网页版 中的内置报告，请选择此选项，然后配置 ](../../media/scc-toggle-off.png) 以下设置：
      - 选择 **"使用此自定义邮箱接收用户报告的提交"。** 在出现的框中，输入可以接收电子邮件Exchange Online邮箱的电子邮件地址。
 
    完成后，单击"确认 **"。** 若要清除这些值，请单击"还原 **"**
 
 ## <a name="third-party-reporting-tools"></a>第三方报告工具
 
-可以将第三方邮件报告工具配置为将报告的邮件发送到自定义邮箱。 为此，将 **"Microsoft** Outlook 报告邮件"按钮设置设置为 **"** 关闭"，将"我的组织的邮箱"设置为Office 365邮箱。
+可以将第三方邮件报告工具配置为将报告的邮件发送到自定义邮箱。 为此，将"Microsoft Outlook **报告邮件**"按钮设置设置为 **"** 关闭"，将"我的组织的邮箱"设置为Office 365邮箱。
 
 唯一的要求是原始邮件作为 包含。EML 或 。MSG (未) 发送到自定义邮箱的邮件中的附件 (不要只将原始邮件转发到自定义邮箱) 。
 
@@ -136,7 +136,7 @@ ms.locfileid: "58483315"
 
 若要正确标识原始附加的邮件，发送到自定义邮箱的邮件需要特定格式。 如果邮件不使用此格式，则原始附加的邮件始终标识为网络钓鱼提交。
 
-如果要指定原始附加邮件的报告原因，则发送到自定义邮箱 (的邮件不修改附件) 需要从主题 (信封标题) 中的下列前缀之一开始：
+如果要指定原始附加邮件的报告原因，则发送到自定义邮箱 (的邮件不修改附件) 需要在主题 (信封标题) 中以下列前缀之一开头：
 
 - 1|或垃圾邮件：
 - 2|或非垃圾邮件

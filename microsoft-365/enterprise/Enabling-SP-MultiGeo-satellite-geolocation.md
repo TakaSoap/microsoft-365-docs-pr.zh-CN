@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 本文向全局管理员或SharePoint管理员提供有关在附属SharePoint Multi-Geo启用权限的信息。
-ms.openlocfilehash: ac6c251799471e80565260ee19f3eb99be41478a119ac049a00c77837ac0854f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 本文为全局管理员或SharePoint管理员提供有关在附属SharePoint Multi-Geo启用权限的信息。
+ms.openlocfilehash: 731c8b0125a9f53264d18de55a76f8123021e436
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570217"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>在卫星定位中启用 SharePoint 多地理位置功能
 
@@ -41,9 +41,9 @@ ms.locfileid: "53850265"
 1.    打开 SharePoint Online Management Shell 
 2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
 3.    Set-SPOMultiGeoExperience</br></br>
-![Set-SPOMultiGeoExperience](../media/Set-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience。](../media/Set-SPO-MultiGeo.jpg)
 4.    此操作通常需要约一小时，在此期间，我们会在服务中执行多种发布返回，并重新戳记你的租户。 至少 1 小时后，请执行 Get-SPOMultiGeoExperience。  这将显示此地理位置是否在 SPO 模式下。</br></br>
-![Set-SPOMultiGeoExperience](../media/Get-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience。](../media/Get-SPO-MultiGeo.jpg)
 
  
  

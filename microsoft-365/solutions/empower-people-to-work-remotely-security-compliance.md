@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务保护混合工作者的应用、数据和设备。
-ms.openlocfilehash: 7c3d57dbe1783ff487ec40fa5deea29899c54f696d6cb653f2f2320a41916aba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805104"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575308"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>步骤 3：为混合工作者部署安全性和合规性
 
@@ -41,7 +41,7 @@ ms.locfileid: "53805104"
 
 下面是为混合工作者提供安全和合规性服务的 Microsoft 365 功能。
 
-![使用这些 Microsoft 365 服务保持安全和合规](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+![使用这些 Microsoft 365 服务保持安全和合规。](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>安全性
 
@@ -95,6 +95,6 @@ ms.locfileid: "53805104"
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 4：管理设备、电脑和其他终结点](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
+[![步骤 4：管理设备、电脑和其他终结点。](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 继续执行[步骤 4](empower-people-to-work-remotely-manage-endpoints.md)，以管理你的设备、电脑和其他终结点。

@@ -15,26 +15,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用导入工具 d 快速将多个保管人及其关联的数据源添加到Advanced eDiscovery。
-ms.openlocfilehash: ccce04b5821eaff2d2ba65c846d58f3f474fb7277931da1d986f7b7ebe8beccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906096"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570301"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>将保管人导入Advanced eDiscovery案例
 
-对于Advanced eDiscovery多个保管人的情况，可以使用 CSV 文件一次导入多个保管人，该文件包含将保管人添加到事例所必需的信息。
+对于Advanced eDiscovery多个保管人的情况，可以使用 CSV 文件一次导入多个保管人，其中包含将保管人添加到事例所必需的信息。
 
 ## <a name="import-custodians"></a>导入保管人
 
-1. 打开Advanced eDiscovery，然后选择"**数据源"** 选项卡。
+1. 打开"Advanced eDiscovery"案例并选择"**数据源"** 选项卡。
 
 2. 单击 **"添加数据源**  >  **导入保管人"。**
 
 3. 在" **导入保管人** "飞出页面上，单击 **"下载空白模板** "以下载保管人模板 CSV 文件。
 
-   ![从导入保管人飞出页面下载 CSV 模板](../media/ImportCustodians1.png)
+   ![从导入保管人飞出页面下载 CSV 模板。](../media/ImportCustodians1.png)
 
 4. 将信息添加到 CSV 文件，并将其保存到本地计算机。 有关 [CSV 文件中所需](#custodian-csv-file) 属性的信息，请参阅 Custodian CSV 文件部分。
 
@@ -55,7 +55,7 @@ ms.locfileid: "53906096"
 |**OneDrive已启用** | 要包含或不包含保管人帐户的 TRUE/FALSE OneDrive for Business帐户。 |
 |**Is OnHold**        | TRUE/FALSE 值，指示是否将保管人数据源放在保留状态。 <sup>1</sup>     |
 |**Workload1 类型**         |指示要与保管人关联的数据源类型的字符串值。 可能的值包括： <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**Workload1 位置**     | 根据您的工作负荷类型，这将是数据源的位置。 例如，用户邮箱Exchange URL 或网站SharePoint URL。 |
+|**Workload1 位置**     | 根据您的工作负荷类型，这将是数据源的位置。 例如，用户邮箱Exchange或网站 URL SharePoint URL。 |
 |||
 
 > [!NOTE]
@@ -79,15 +79,15 @@ ms.locfileid: "53906096"
 
 ### <a name="custodian-validation"></a>保管人验证
 
-目前，我们仅支持导入包含在组织的 Azure AD Azure Active Directory (中的保管) 。
+目前，我们仅支持导入组织 Azure AD Azure Active Directory (中包含的保管) 。
 
-保管人导入工具使用 CSV 文件的 **Custodian contactEmail** 列中的 UPN 值查找并验证保管人。 经验证的保管人将自动添加到案例，并列在案例的" **数据源** "选项卡上。 如果无法验证保管人，将在"作业"选项卡上列出的 BulkAddCustodian 作业的错误日志中列出保管人。  未验证保管人不会添加到案例或列在"数据源 **"选项卡** 上。
+保管人导入工具使用 CSV 文件的 **Custodian contactEmail** 列中的 UPN 值查找并验证保管人。 经验证的保管人将自动添加到案例，并列在案例的"数据源 **"选项卡** 上。 如果无法验证保管人，将在"作业"选项卡上列出的 BulkAddCustodian 作业的错误日志中列出保管人。  未验证保管人不会添加到案例或列在"数据源 **"选项卡** 上。
 
 ### <a name="data-source-validation"></a>数据源验证
 
 验证保管人并添加到案例后，OneDrive添加与保管人关联的每个主邮箱和邮箱帐户。
 
-但是，如果找不到与保管人关联的任何其他数据源 (例如 SharePoint 网站、Microsoft Teams、Microsoft 365 组或 Yammer 组) ，则没有一个分配给保管人，且"未验证"值显示在"数据源"选项卡上保管人旁边的"状态"列中。   
+但是，如果找不到与保管人关联的任何其他数据源 (例如 SharePoint 网站、Microsoft Teams、Microsoft 365 组或 Yammer 组) ，则没有分配给保管人，并且"数据源"选项卡上保管人旁边的"状态"列中会显示"未验证"值。   
 
 为保管人添加经过验证的数据源：
 

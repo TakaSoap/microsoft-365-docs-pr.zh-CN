@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"非接受域"报告监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
+description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"非接受域"报告来监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 018fb5ee8e2d0532cc96f85f4ec66e146dae8eb81a8e189e8746c26fde71fe7e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b2ddbc6215ebbc3b1a2b2ccff4a5bc8ad7118c3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56790639"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574540"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心中的未接受&报告
 
@@ -30,11 +30,11 @@ ms.locfileid: "56790639"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全与合规中心内"邮件流[](mail-flow-insights-v2.md)"仪表板中的"非接受域"报告显示有关来自内部部署电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
+安全与合规中心内邮件流仪表板[](mail-flow-insights-v2.md)中的"非接受域"报告显示有关来自内部部署电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
 
 Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
 
-![安全与合规中心的"邮件流"仪表板中的"非接受&小组件](../../media/mfi-non-accepted-domain-report-widget.png)
+![安全与合规中心的"邮件流"仪表板中的"非接受&小组件。](../../media/mfi-non-accepted-domain-report-widget.png)
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>未接受域报告的报告视图
 
@@ -42,13 +42,13 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 
 默认情况下，将显示所有受影响的连接器的活动。 If you click **Show data for**， you can select a specific connector from the dropdown.
 
-如果将鼠标悬停在图表中 () 的数据点上，你将看到连接器的邮件总数。
+如果将鼠标悬停在图表中 () 的数据点上，则会看到连接器的邮件总数。
 
-![未接受域报告中的报告视图](../../media/mfi-non-accepted-domain-report-overview-view.png)
+![未接受域报告中的报告视图。](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>未接受域报告的详细信息表视图
 
-如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
+如果单击 **视图中的"** 查看详细信息"报表视图，将显示以下信息：
 
 - **日期**
 - **入站连接器名称**
@@ -68,7 +68,7 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 - **邮件计数**
 - **示例邮件**：可以单击 **"查看示例** 邮件"以查看 [受影响邮件](message-trace-scc.md) 示例的邮件跟踪结果。
 
-![在"未接受域"报告中的"详细信息"表视图中选择一行后的详细信息飞出](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+![在"未接受域"报告中的"详细信息"表视图中选择一行后，详细信息飞出。](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
 若要返回到报告视图，请单击"查看 **报告"。**
 

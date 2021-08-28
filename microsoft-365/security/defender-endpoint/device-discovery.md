@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 75b47d9d7c95bd2e1f0c2654e59c3d24e7e838fc6a4d1d543976829e9c96c149
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4c1d24119ee8f403b168d6b2f2d97b9842f89d9b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834118"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575188"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 ### <a name="basic-discovery"></a>基本发现
 
-在此模式中，终结点将被动收集网络中事件并从中提取设备信息。 基本发现使用SenseNDR.exe二进制进行被动网络数据收集，并且不会启动任何网络流量。 终结点只需从载入的设备看到的每一个网络流量中提取数据。
+在此模式中，终结点将被动收集网络中事件并从中提取设备信息。 基本发现将SenseNDR.exe二进制文件用于被动网络数据收集，并且不会启动任何网络流量。 终结点只需从载入的设备看到的每一个网络流量中提取数据。
 
 ### <a name="standard-discovery"></a>标准发现
 
@@ -90,7 +90,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 - 不支持：终结点已发现在网络中，但不受 Microsoft Defender for Endpoint 支持。
 - 信息不足：系统无法确定设备的可支持性。 在网络中更多设备上启用标准发现可以丰富发现的属性。
 
-![设备清单仪表板的图像](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![设备清单仪表板的图像。](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
 > 你始终可以应用筛选器以从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。
@@ -100,18 +100,18 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 设备上以及网络中发现的其他非托管设备的漏洞和风险是"安全 推荐"下当前 TVM 流的一部分，在门户的实体页面中表示。
 搜索与"SSH"相关的安全建议，以查找与非托管和托管设备相关的 SSH 漏洞。
 
-![安全建议仪表板的图像](images/1156c82ffadd356ce329d1cf551e806c.png)
+![安全建议仪表板的图像。](images/1156c82ffadd356ce329d1cf551e806c.png)
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>在发现的设备上使用高级搜寻
 
 可以使用高级搜寻查询了解发现的设备的可见性。
 在 DeviceInfo 表中查找有关发现的终结点的详细信息，或在 DeviceNetworkInfo 表中查找有关这些设备的网络相关信息。
 
-![高级搜寻使用的图像](images/f48ba1779eddee9872f167453c24e5c9.png)
+![高级搜寻使用的图像。](images/f48ba1779eddee9872f167453c24e5c9.png)
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表查看。
 
-新事件是基于连接的传输控制 (TCP) ，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。 
+新事件是传输控制协议 (TCP) 基于连接，并且适合当前的 DeviceNetworkEvents 方案。 从启用了非 Microsoft Defender for Endpoint 的设备进入启用终结点的 Microsoft Defender 设备的 TCP。 
 
 还添加了以下操作类型：
 
@@ -132,8 +132,8 @@ DeviceNetworkEvents
 
 1. 未载入到 Microsoft Defender 到终结点的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。
-    2. 发现的设备应显示在流式 API 查询结果中。 可以使用查询中的筛选器筛选出 `OnboardingStatus` 这些设备。
-2. 非托管设备将基于定义的条件分配到现有设备组。
+    2. 已发现的设备应显示在流式 API 查询结果中。 可以使用查询中的筛选器筛选出 `OnboardingStatus` 这些设备。
+2. 非托管设备将基于定义的条件分配给现有设备组。
 3. 在极少数情况下，标准发现可能会触发网络监视器或安全工具上的警报。 如果遇到此类事件，请提供反馈以帮助防止这些问题定期发生。 你可以明确排除特定目标或整个子网，不由标准发现主动探测。
 
 ## <a name="next-steps"></a>后续步骤

@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: 在 Microsoft Bookings 中设置员工工作时间和可用性。
-ms.openlocfilehash: 04e6d3e079fec1c75536f3ac30dbab12026dabe2207f985b87410af77a7b832f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575032"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings 中的员工工作时间
 
-设置员工工作时间可确保在客户尝试预订时准确显示其可用性。 默认情况下，每个员工的工作时间都匹配你在 Microsoft Bookings 应用中建立的工作时间。 请参阅输入业务信息 中的"设置 [营业时间"部分](enter-business-information.md#set-your-business-hours)。
+设置员工工作时间可确保在客户尝试预订时准确显示其可用性。 默认情况下，每个员工的工作时间与在 Microsoft Bookings 应用中建立的工作时间匹配。 请参阅输入业务信息 中的"设置 [营业时间"部分](enter-business-information.md#set-your-business-hours)。
 
 在" **员工** "页上，你可以自定义员工工作时间，以满足你的业务和员工的需求。
 
@@ -32,15 +32,15 @@ ms.locfileid: "53803773"
 
 1. In Microsoft 365， select the app launcher， and then select **Bookings**.
 
-1. 在导航窗格中，选择" **员工**"，然后选择要设置其小时数的员工。
+1. 在导航窗格中，选择" **员工**"，然后选择要设置其工时的员工。
 
-   ![突出显示名称的 Bookings 员工屏幕的图像](../media/bookings-staff-name-highlight.png)
+   ![突出显示名称的 Bookings 员工屏幕的图像。](../media/bookings-staff-name-highlight.png)
 
 1. 在"工作时间"下，清除 **"使用营业时间"** 复选框。
 
 1. 使用下拉列表选择每天的开始时间和结束时间。 时间以 15 分钟为增量提供。
 
-   ![Bookings 员工工作时间屏幕的图像](../media/bookings-staff-hours.png)
+   ![Bookings 员工工作时间屏幕的图像。](../media/bookings-staff-hours.png)
 
 1. 单击 **+** 添加开始时间和结束时间选择器。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53803773"
 
 1. 在工作时间屏幕上，选择 **员工** 将离开的当天旁边的 x。
 
-   ![将鼠标悬停在 x 按钮上的 Bookings 员工工作时间屏幕的图像](../media/bookings-staff-time-off.png)
+   ![将鼠标悬停在 x 按钮上的 Bookings 员工工作时间屏幕的图像。](../media/bookings-staff-time-off.png)
 
 1. 如果要安排之前标记为"休息"的一天，请选择要安排的当天旁边的 **+** 符号。
 

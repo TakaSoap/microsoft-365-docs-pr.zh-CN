@@ -17,38 +17,38 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 可Microsoft 365分类器是一种工具，你可以训练该工具，通过为实验室或策略应用程序提供要查看的正面和负面示例来识别不同类型的内容。
-ms.openlocfilehash: 25bbec395b1bb229f62122caf23845c18f5305e324a37cd0a6856e81286d1ee5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 可Microsoft 365分类器是一种工具，你可以训练该工具，通过向实验室或策略应用程序提供要查看的正面和负面示例来识别不同类型的内容。
+ms.openlocfilehash: 6b54ab2f905d77ae59ba94e15768c7664007baaa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872090"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574852"
 ---
 # <a name="learn-about-trainable-classifiers"></a>了解可训练的分类器
 
-对内容进行分类和标记，以便可以保护和正确处理内容是信息保护规范的起点。 Microsoft 365三种方法对内容进行分类。
+对内容进行分类和标记以便进行保护并正确处理内容是信息保护规范的起点。 Microsoft 365三种方法对内容进行分类。
 
 ## <a name="manually"></a>手动
 
-此方法需要人为判断和操作。 管理员可以使用预先存在的标签和敏感信息类型，也可以创建自己的标签和敏感信息类型，然后发布它们。 用户和管理员在遇到内容时将其应用于内容。 然后，您可以保护内容并管理其处置。
+此方法需要人为的判断和操作。 管理员可以使用预先存在的标签和敏感信息类型，也可以创建自己的标签和敏感信息类型，然后发布它们。 用户和管理员在遇到内容时将其应用于内容。 然后，您可以保护内容并管理其处置。
 
 ## <a name="automated-pattern-matching"></a>自动模式匹配
 
 此分类机制类别包括按以下方法查找内容：
 
 - 关键字或元数据值 (关键字查询语言) 。
-- 使用之前标识的敏感信息模式，如社会保险、信用卡或银行帐户 ([敏感信息类型实体定义) 。 ](sensitive-information-type-entity-definitions.md)
-- 识别项，因为它是模板上的变体 ([文档手指) 。 ](document-fingerprinting.md)
+- 使用之前标识的敏感信息模式（如社会保险、信用卡或银行帐号） (敏感信息类型[实体定义) 。 ](sensitive-information-type-entity-definitions.md)
+- 识别项目，因为它是模板上的变体， ([手指打印) 。 ](document-fingerprinting.md)
 - 使用存在确切字符串 ([数据完全匹配) 。 ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 然后，可以自动应用敏感度和保留标签，使内容可供在了解数据丢失防护策略[](dlp-learn-about-dlp.md)和自动应用保留) 策略中[使用](apply-retention-labels-automatically.md)。
 
 ## <a name="classifiers"></a>分类器
 
-此分类方法特别适用于无法通过手动或自动模式匹配方法轻松标识的内容。 这种分类方法更多的是训练一个分类器，以根据项目是什么来识别项目，而不是通过项目中的元素（模式匹配）。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。 首先馈送该类别中肯定属于该类别的示例。 处理这些示例后，通过提供匹配和非匹配示例的组合来测试它。 然后，分类器将预测任何给定项目是否属于你正在构建的类别。 然后确认其结果，对真正的正数、负数、误报和漏报进行排序，以帮助提高预测的准确性。 
+此分类方法特别适用于无法通过手动或自动模式匹配方法轻松标识的内容。 这种分类方法更多的是训练一个分类器，以根据项目是什么来识别项目，而不是通过项目中的元素（模式匹配）。 分类器通过查看对分类感兴趣的内容的数百个示例来了解如何识别内容类型。 首先馈送该类别中肯定属于该类别的示例。 处理这些示例后，通过向它提供匹配和非匹配示例的组合来测试它。 然后，分类器将预测任何给定项目是否属于你正在构建的类别。 然后确认其结果，对真正的误报、真负、误报和漏报进行排序，以帮助提高预测的准确性。 
 
-发布分类器时，分类器会按 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
+发布分类器时，分类器将按 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。 发布分类器后，可以继续使用与初始培训过程类似的反馈流程对分类器进行培训。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>在哪里可以使用可训练分类器
 内置分类器和可训练分类器都作为一个条件，Office敏感度标签[](apply-sensitivity-label-automatically.md)自动标记，根据条件和通信合规性自动应用保留[标签策略](communication-compliance.md)。 [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) 
@@ -68,7 +68,7 @@ ms.locfileid: "53872090"
 Microsoft 365五个预先训练的分类器：
 
 > [!CAUTION]
-> 我们弃用冒犯性 **语言** 预先训练的分类器，因为它一直产生大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改为使用 **威胁**、**亵亵和****骚扰** 预先训练的分类器。
+> 我们弃用冒犯性 **语言** 预先训练的分类器，因为它一直产生大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改为使用 **威胁**、 **亵亵** 和 **骚扰** 预先训练的分类器。
 
 - **简历**：检测是收信人个人、教育、专业资格、工作体验和其他个人识别信息的文本帐户的项目
 - **源代码 ：** 检测包含一组使用前 25 种使用计算机编程语言编写的指令和语句GitHub
@@ -107,12 +107,12 @@ Microsoft 365五个预先训练的分类器：
 > [!IMPORTANT]
 > 该可训练分类器仅作为公共预览提供给其租户Microsoft 365位于北美数据中心的客户。 To see where your Microsoft 365 tenant is homed open the Microsoft 365 管理 center and navigate to **设置**  >  **Org settings** Organizational  >  **profile**  >  **Data location**. 
 
-它们显示在数据分类 **Microsoft 365 合规中心**  >    >  **可训练分类器**"视图中，状态为 `Ready to use` 。
+它们显示在数据分类 **Microsoft 365 合规中心** 可训练  >    >  **分类** 器视图中，状态为 `Ready to use` 。
 
-![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
+![classifiers-pre-trained-classifiers。](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> 请注意，冒犯性语言、冒犯性以及威胁分类器仅适用于可搜索文本，并不包含这些领域的字词或语言的详尽或完整列表。 此外，语言和文化标准会不断改变，并且鉴于这些创新，Microsoft 保留自行决定更新这些分类器的权利。 虽然分类器可帮助组织检测这些方面，但分类器并不适合提供组织检测或解决此类语言使用的唯一方法。 贵组织（而不是 Microsoft 或其子公司）仍负责与监视、扫描、阻止、删除和保留由预先训练的分类器确定的任何内容相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
+> 请注意，冒犯性语言、冒犯性以及威胁分类器仅适用于可搜索文本，并不包含这些领域的字词或语言的详尽或完整列表。 此外，语言和文化标准会不断改变，并且鉴于这些创新，Microsoft 保留自行决定更新这些分类器的权利。 虽然分类器可帮助组织检测这些方面，但分类器并不旨在提供组织检测或解决此类语言使用的唯一方法。 贵组织（而非 Microsoft 或其子公司）仍负责与监视、扫描、阻止、删除和保留由预先训练的分类器确定的任何内容相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
 
 
 ### <a name="custom-classifiers"></a>自定义分类器
@@ -130,13 +130,13 @@ Microsoft 365五个预先训练的分类器：
 
 创建和发布分类器以用于合规性解决方案（如保留策略和通信监督）遵循此流程。 有关创建自定义可训练分类器的详细信息，请参阅 [创建自定义分类器](classifier-get-started-with.md)。
 
-![进程流自定义分类器](../media/classifier-trainable-classifier-flow.png)
+![进程流自定义分类器。](../media/classifier-trainable-classifier-flow.png)
 
 ### <a name="retraining-classifiers"></a>重新分类器
 
 通过提供有关自定义分类器及其所执行分类的准确性的反馈，可以帮助提高所有自定义分类器以及一些预先训练的分类器的准确性。 这称为重新培训并遵循此工作流。
 
-![分类器重新分类工作流](../media/classifier-retraining-workflow.png)
+![分类器重新设置工作流。](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>另请参阅
 

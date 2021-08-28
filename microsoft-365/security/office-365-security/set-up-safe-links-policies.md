@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for 保险箱 中查看、创建、修改和删除保险箱链接策略和全局Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9b07d720ed34e9a5d788bdfdfb6dff6a635b11f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: c1abe4f436f92cf64a94774df70a893a3dd2b9df
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531541"
+ms.locfileid: "58574528"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置链接策略Office 365
 
@@ -90,7 +90,7 @@ ms.locfileid: "58531541"
 
 1. 在 Microsoft 365 Defender门户中，转到"策略 **"&"** 威胁策略策略"部分 \>  \> 保险箱 \> **链接"。**
 
-2. 在 **"保险箱"** 页上，单击" ![ 创建"图标"创建 ](../../media/m365-cc-sc-create-icon.png) **"。**
+2. 在 **"保险箱"** 页上，单击" ![ 创建图标"。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
 3. "**新建保险箱链接"策略** 向导将打开。 在" **命名策略"** 页上，配置以下设置：
 
@@ -104,7 +104,7 @@ ms.locfileid: "58531541"
    - **组**：你的组织内指定的通讯组、启用邮件的安全组或 Microsoft 365 组。
    - **域**：你的组织内指定的 [接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)中的所有收件人。
 
-   单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
+   单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
    对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
 
@@ -126,7 +126,7 @@ ms.locfileid: "58531541"
 
      在框中，键入您需要的 URL 或值，然后单击"添加 **"。** 根据需要重复执行此步骤（次数不限）。
 
-     若要删除现有条目，请单击 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) 项旁边。
+     若要删除现有条目，请单击 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) 项旁边。
 
      有关条目语法，请参阅 ["不重写以下 URL"列表的条目语法](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
 
@@ -161,25 +161,25 @@ ms.locfileid: "58531541"
 
 3. 当您通过单击该名称选择策略时，策略设置将显示在一个飞出内容中。
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>使用 Microsoft 365 Defender 门户修改保险箱链接策略
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>使用 Microsoft 365 Defender门户修改保险箱链接策略
 
 1. 在 Microsoft 365 Defender门户中，转到"策略 **"&"** 威胁策略策略"部分 \>  \> 保险箱 \> **链接"。**
 
-2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。
+2. 在 **"保险箱** 链接"页上，单击该名称从列表中选择策略。
 
-3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文前面的使用 Microsoft 365 Defender[门户创建保险箱链接](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)策略部分。
+3. 在出现的策略详细信息浮出控件中，选择每个部分中的“**编辑**”以修改该部分中的设置。 有关设置详细信息，请参阅本文中的上一Microsoft 365 Defender门户[创建保险箱链接](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)策略"部分。
 
 若要启用或禁用策略或设置策略优先级顺序，请参阅以下部分。
 
 ### <a name="enable-or-disable-safe-links-policies"></a>启用或禁用保险箱链接策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略&规则威胁策略保险箱 \>  \>  \> **链接**"。
+1. 在 Microsoft 365 Defender 门户中，转到"策略"**部分** 中的"电子邮件&协作策略&规则威胁保险箱链接 \>  \>  \> " 。 
 
-2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。
+2. 在 **"保险箱** 链接"页上，单击该名称从列表中选择策略。
 
 3. 在出现的策略详细信息浮出控件顶部，你将看到以下值之一：
-   - **策略关闭**：若要打开策略，请单击![“打开”图标](../../media/m365-cc-sc-turn-on-off-icon.png)“**打开**”。
-   - **策略打开**：若要关闭策略，请单击![“关闭”图标](../../media/m365-cc-sc-turn-on-off-icon.png)“**关闭**”。
+   - **策略关闭**：若要启用策略，请单击 ![ "打开图标"。](../../media/m365-cc-sc-turn-on-off-icon.png) **打开 。**
+   - **策略打开**：若要关闭策略，请单击 ![ 关闭图标。](../../media/m365-cc-sc-turn-on-off-icon.png) **关闭 。**
 
 4. 在出现的确认对话框中，单击“**打开**”或“**关闭**”。
 
@@ -187,35 +187,35 @@ ms.locfileid: "58531541"
 
 返回主策略页面，策略的“**状态**”值将为“**打开**”或“**关闭**”。
 
-### <a name="set-the-priority-of-safe-links-policies"></a>设置链接保险箱优先级
+### <a name="set-the-priority-of-safe-links-policies"></a>设置链接策略保险箱优先级
 
-默认情况下，保险箱链接将基于它们在 (中的创建顺序获得优先级) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+默认情况下，保险箱链接将基于它们在 (中的创建顺序获得优先级，而较旧的策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
 若要更改策略的优先级，请单击策略属性中的“**提高优先级**”或“**降低优先级**”（不能直接修改 Microsoft 365 Defender 门户中的“**优先级**”数字）。 只有当你有多个策略时，更改策略的优先级才有意义。
 
 **注意**：
 
-- 在Microsoft 365 Defender门户中，创建链接策略保险箱更改策略的优先级。 在 PowerShell 中，您可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则或规则) 。
-- 保险箱按照链接策略的显示顺序处理 (优先级值为 0 时) 。  有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
+- 在Microsoft 365 Defender门户中，创建链接策略保险箱更改策略的优先级。 在 PowerShell 中，您可以在创建安全链接规则集时替代默认优先级 (该规则会影响现有规则) 。
+- 保险箱链接策略按照其显示顺序进行处理， (策略的 **优先级值为** 0 时) 。 有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略&规则威胁策略保险箱 \>  \>  \> **链接**"。
+1. 在 Microsoft 365 Defender 门户中，转到"策略"**部分** 中的"电子邮件&协作策略&规则威胁保险箱链接 \>  \>  \> " 。 
 
-2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。
+2. 在 **"保险箱** 链接"页上，单击该名称从列表中选择策略。
 
 3. 在出现的策略详细信息浮出控件顶部，你会看到“**提高优先级**”或“**降低优先级**”，具体取决于当前优先级值和自定义策略数量：
    - 优先级值为 **0** **的策略** 只有"**减少优先级"** 选项可用。
-   - 优先级值最低的策略 (例如 **，3**) 只有"增加优先级 **"** 选项可用。
+   - 优先级 **值最低的策略** (例如 **，3**) 只有"增加 **优先级"** 选项可用。
    - 如果你有三个或多个策略，则最高优先级值和最低优先级值之间的策略同时具有"增加 **优先级** "和" **减少优先级"** 选项。
 
-   单击![“提高优先级”图标](../../media/m365-cc-sc-increase-icon.png)“**提高优先级**”或![“降低优先级”图标](../../media/m365-cc-sc-decrease-icon.png)“**降低优先级**”以更改“**优先级**”值。
+   单击 ![ "增加优先级"图标。](../../media/m365-cc-sc-increase-icon.png) **"增加优先级** "或 ![ "减少优先级"图标"减少 ](../../media/m365-cc-sc-decrease-icon.png) **优先级** "以更改 **"优先级"** 值。
 
 4. 完成后，单击策略详细信息浮出控件中的“**关闭**”。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>使用 Microsoft 365 Defender 门户删除保险箱链接策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"策略"&中的"电子邮件&策略&规则威胁策略保险箱 \>  \>  \> **链接**"。
+1. 在 Microsoft 365 Defender 门户中，转到"策略"**部分** 中的"电子邮件&协作策略&规则威胁保险箱链接 \>  \>  \> " 。 
 
-2. 在 **"保险箱链接**"页上，单击该名称从列表中选择策略。 在出现的策略详细信息浮出控件顶部，单击![“更多操作”图标](../../media/m365-cc-sc-more-actions-icon.png)“**更多操作**”\> ![“删除策略”图标](../../media/m365-cc-sc-delete-icon.png)“**删除策略**”。
+2. 在 **"保险箱** 链接"页上，单击该名称从列表中选择策略。 在出现的策略详细信息飞出的顶部，单击"更多 ![ 操作"图标。](../../media/m365-cc-sc-more-actions-icon.png) **更多操作** \>![删除策略图标 ](../../media/m365-cc-sc-delete-icon.png) **删除策略**。
 
 3. 在出现的确认对话框中，单击“**是**”。
 
@@ -229,7 +229,7 @@ ms.locfileid: "58531541"
 - 在 PowerShell 中，分别修改安全链接策略和安全链接规则中的设置。
 - 从 PowerShell 中删除安全链接策略时，不会自动删除相应的安全链接规则，反之亦然。
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>使用 PowerShell 创建链接保险箱链接策略
+### <a name="use-powershell-to-create-safe-links-policies"></a>使用 PowerShell 创建链接保险箱策略
 
 在 PowerShell 保险箱链接策略的过程包含两个步骤：
 
@@ -465,15 +465,15 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 有关语法和参数的详细信息，请参阅 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
-若要验证保险箱是否正在扫描邮件，请检查可用的 Microsoft Defender Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender[门户中使用资源管理器](threat-explorer.md)。
+若要验证保险箱是否正在扫描邮件，请检查可用的 Microsoft Defender Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender[门户中的使用资源管理器](threat-explorer.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
 若要验证是否成功创建、修改或删除了链接保险箱，请执行下列任一步骤：
 
-- 在 Microsoft 365 Defender 门户中，转到"策略 **"&"威胁** 策略保险箱 \>  \> **链接"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
+- 在 Microsoft 365 Defender 门户中，转到"策略 **"&"** 威胁策略保险箱 \>  \> **链接"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
 
-- 在Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
+- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，将 替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
 
   ```PowerShell
   Get-SafeLinksPolicy -Identity "<Name>"

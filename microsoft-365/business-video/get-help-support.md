@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 你必须是企业订阅的管理员，才能在 Microsoft 365 商业高级版中获取管理员帮助或在线/电话支持。
-ms.openlocfilehash: 56aae6fc6ad966aeefb7d1fede4b86e1300babd393f51f5c28839f3220d985e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882518"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570649"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -220,7 +220,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 扫描此 QR 码在微信上关注我们，获取由世纪互联运营的 Office 365 的最新动态。
 
-![扫描 QR 码，获取由世纪互联运营的 Office 365 的最新动态](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![世纪互联运营的 Office 365 更新 QR 代码。](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

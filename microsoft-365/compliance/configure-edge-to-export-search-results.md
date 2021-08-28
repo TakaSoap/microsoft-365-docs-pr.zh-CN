@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必须启用ClickOnce支持，才能使用最新版本的 Microsoft Edge 从安全与合规中心的内容搜索和电子数据展示下载搜索结果。
-ms.openlocfilehash: ec241d36bc24d72e4c0ea3e30e622e42eb9546bfb4b548220e98a0d9ea1c0334
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830886"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574840"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>使用电子数据展示导出工具Microsoft Edge
 
@@ -30,29 +30,29 @@ ms.locfileid: "53830886"
 
 2. 如果下拉列表中现有值设置为 **"默认**"或"已禁用"，请更改为"**已启用"。**
 
-   ![从下拉列表中选择已启用](../media/ClickOnceimage1.png)
+   ![从下拉列表中选择已启用。](../media/ClickOnceimage1.png)
 
 3. 向下滚动到浏览器窗口底部，然后单击重启 **以** 重新启动 Edge。
 
-   ![单击"重新启动"](../media/ClickOnceimage2.png)
+   ![单击"重新启动"。](../media/ClickOnceimage2.png)
 
 **注意：** 组织可以使用组策略禁用ClickOnce支持。 若要检查是否有组织策略支持ClickOnce，请转到 **"edge://policy"。** 以下屏幕截图显示ClickOnce整个组织中启用此策略。 如果此策略值设置为 **false，** 你将需要联系你组织的管理员。
 
-![边缘组织策略列表](../media/ClickOnceimage3.png)
+![边缘组织策略列表。](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>安装和运行电子数据展示导出工具
 
 1. 单击 **内容搜索** 或电子数据展示案例中导出的飞出页面上的"下载结果"。
 
-   ![单击飞出页面上的"下载结果"以下载搜索结果](../media/ClickOnceExport1.png)
+   ![单击飞出页面上的"下载结果"以下载搜索结果。](../media/ClickOnceExport1.png)
 
 2. 系统将提示你确认启动该工具，单击"打开 **"。**
 
-   ![单击"打开"以启动电子数据展示导出工具](../media/ClickOnceimage4.png)
+   ![单击"打开"以启动电子数据展示导出工具。](../media/ClickOnceimage4.png)
 
    如果未安装电子数据展示导出工具，系统将提示你出现安全警告， 
 
-   ![单击安装以安装电子数据展示导出工具](../media/ClickOnceimage5.png)
+   ![单击"安装"以安装电子数据展示导出工具。](../media/ClickOnceimage5.png)
 
 3. 单击“**安装**”。 安装后，导出工具将自动启动。
 
@@ -60,4 +60,4 @@ ms.locfileid: "53830886"
 
 - [导出内容搜索结果](export-search-results.md)
 
-- [如何启用实验标记Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [如何在实验中启用实验Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

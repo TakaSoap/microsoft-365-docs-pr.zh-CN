@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用带有保留策略和保留标签策略的保存锁来帮助满足监管要求，并防范恶意管理员。
-ms.openlocfilehash: e1d0077567fdfd529e4c81f6c2ecf4c00f847f0cc5a10e2c74d80aa5d320c813
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830491"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574155"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>使用保留锁定来限制对保留策略和保留标签策略的更改
 
@@ -60,7 +60,7 @@ ms.locfileid: "53830491"
 
 2. 通过运行 [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)，找到所需锁定的策略名称。 例如：
     
-   ![PowerShell 中的保留策略列表](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![PowerShell 中的保留策略列表。](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 3. 若要在策略上放置保存锁，请运行 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet，并将策略的名称和 *RestrictiveRetention* 参数设置为 true：
     
@@ -70,11 +70,11 @@ ms.locfileid: "53830491"
     
     例如：
     
-    ![PowerShell 中的 RestrictiveRetention 参数](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    ![PowerShell 中的 RestrictiveRetention 参数。](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
      出现提示时，请阅读并通过输入 **Y** 确认这个配置随附的限制：
     
-   ![用于确认你要在 PowerShell 中锁定保留策略的提示](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![用于确认你要在 PowerShell 中锁定保留策略的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 现在策略上已经有了保留锁定。 若要确认，请再次运行 `Get-RetentionCompliancePolicy`，但需指定保留策略名称并显示策略参数：
 
@@ -84,7 +84,7 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 
 应看到 **RestrictiveRetention** 设置为 **True**。 例如：
 
-![已在 PowerShell 中显示所有参数的锁定策略](../media/retention-policy-preservation-lock-locked-policy.PNG)
+![已在 PowerShell 中显示所有参数的锁定策略。](../media/retention-policy-preservation-lock-locked-policy.PNG)
 
 ## <a name="see-also"></a>另请参阅
 

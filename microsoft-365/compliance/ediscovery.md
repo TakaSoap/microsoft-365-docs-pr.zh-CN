@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 提供了三种电子数据展示工具，可用于搜索和导出在不同位置找到的内容，如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组、Microsoft Teams 和 Skype for Business 对话。 核心电子数据展示Advanced eDiscovery提供了许多其他功能，可帮助你管理调查。
-ms.openlocfilehash: 50f2048ef3c8c2d0a333eeb93a8eeb79b63db31c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: d44c0b30bc6256f98063f33d838d2cabb6ceebf1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570565"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Microsoft 365 中的电子数据展示Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "58394548"
 
 Microsoft 365提供三种电子数据展示解决方案：内容搜索、核心电子数据展示Advanced eDiscovery。
 
-![电子数据展示Microsoft 365的关键功能](..\media\m365-ediscovery-solution-graphic.png)
+![电子数据展示Microsoft 365的关键功能。](..\media\m365-ediscovery-solution-graphic.png)
 
 - **内容搜索**。 使用内容搜索工具跨数据源搜索Microsoft 365内容，然后将搜索结果导出到本地计算机。
 
@@ -49,29 +49,29 @@ Microsoft 365提供三种电子数据展示解决方案：内容搜索、核心�
 
 |功能|内容搜索|核心电子数据展示|高级电子数据展示|
 |:------|:-------------|:-------------|:-------------|
-|搜索内容|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|关键字查询和搜索条件|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|搜索统计信息|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|导出搜索结果|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|基于角色的权限|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|案例管理||![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|将内容位置法定保留||![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|保管人管理|||![支持](../media/check-mark.png)|
-|法定保留通知|||![支持](../media/check-mark.png)|
-|高级索引|||![支持](../media/check-mark.png)|
-|错误修复|||![支持](../media/check-mark.png)|
-|审阅集|||![支持](../media/check-mark.png)|
-|支持云附件和SharePoint版本|||![支持](../media/check-mark.png)|
-|光学字符识别|||![支持](../media/check-mark.png)|
-|对话线程|||![支持](../media/check-mark.png)|
-|集合数据和报告|||![支持](../media/check-mark.png)|
-|查看集筛选|||![支持](../media/check-mark.png)|
-|标记|||![支持](../media/check-mark.png)|
-|分析|||![支持](../media/check-mark.png)|
-|预测编码模型|||![支持](../media/check-mark.png)|
-|计算的文档元数据|||![支持](../media/check-mark.png)|
-|长时间运行的作业的透明度|||![支持](../media/check-mark.png)|
-|导出到客户拥有Azure 存储位置|||![支持](../media/check-mark.png)|
+|搜索内容|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|关键字查询和搜索条件|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|搜索统计信息|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|导出搜索结果|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|基于角色的权限|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|案例管理||![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|将内容位置法定保留||![支持。](../media/check-mark.png)|![支持。](../media/check-mark.png)|
+|保管人管理|||![支持。](../media/check-mark.png)|
+|法定保留通知|||![支持。](../media/check-mark.png)|
+|高级索引|||![支持。](../media/check-mark.png)|
+|错误修复|||![支持。](../media/check-mark.png)|
+|审阅集|||![支持。](../media/check-mark.png)|
+|支持云附件和SharePoint版本|||![支持。](../media/check-mark.png)|
+|光学字符识别|||![支持。](../media/check-mark.png)|
+|对话线程|||![支持。](../media/check-mark.png)|
+|集合数据和报告|||![支持。](../media/check-mark.png)|
+|查看集筛选|||![支持。](../media/check-mark.png)|
+|标记|||![支持。](../media/check-mark.png)|
+|分析|||![支持。](../media/check-mark.png)|
+|预测编码模型|||![支持。](../media/check-mark.png)|
+|计算的文档元数据|||![支持。](../media/check-mark.png)|
+|长时间运行的作业的透明度|||![支持。](../media/check-mark.png)|
+|导出到客户拥有Azure 存储位置|||![支持。](../media/check-mark.png)|
 |||||
 
 以下是每个电子数据展示功能的说明。
@@ -114,17 +114,17 @@ Microsoft 365提供三种电子数据展示解决方案：内容搜索、核心�
 
 - **分析**。 Advanced eDiscovery提供了用于分析审阅集文档的工具，以帮助您以一致的方式组织文档并减少要审阅的文档数量。 *近重复检测* 将文本相似文档分组在一起，以帮助你提高审阅过程的效率。 *电子邮件线程* 标识提供电子邮件线程中对话的完整上下文的特定电子邮件。 *主题* 功能尝试分析审阅集文档中讨论的主题，并将主题分配给文档，以便查看具有相关主题的文档。 这些分析功能可帮助提高审阅流程的效率，以便审阅者可以审阅所收集文档的一小部分。
 
-- **预测编码模型**。 使用预测编码模型，将大量案例内容减少并剔除到一组相关项目，您可以将这些项目作为优先级进行审阅。 这是通过创建和培训自己的预测编码模型来完成的，这些模型可帮助您确定审阅集内最相关项目的优先级。 系统使用培训将预测分数应用于审阅集内的每一项。 这样，你可以根据预测分数筛选项目，这允许你首先查看最相关的 (或不相关的) 项。
+- **预测编码模型**。 使用预测编码模型，将大量案例内容减少并剔除到一组相关项目，您可以将这些项目作为优先级进行审阅。 这是通过创建和培训自己的预测编码模型来完成的，这些模型可帮助您确定审阅集内最相关项目的优先级。 系统使用培训将预测分数应用于审阅集内的每一项。 这允许你根据预测分数筛选项目，这允许你首先查看最相关的 (或与项目) 相关。
 
 - **计算的文档元数据**。 许多Advanced eDiscovery高级索引、对话线程、分析和预测编码等功能都添加了元数据属性，用于查看集文档。 此元数据包含与执行特定功能的函数有关的信息。 查看文档时，可以筛选元数据属性以显示符合筛选条件的文档。 导出审阅集文档后，此元数据可以导入到第三方审阅应用程序中。
 
-- **长时间运行的作业的透明度**。 Advanced eDiscovery中的作业通常是由用户操作触发的长时间运行的过程，例如向案例添加保管人、向审阅集添加内容、运行分析和培训预测编码模型。 如果需要将问题上报给 MS 支持人员，可以跟踪这些作业的状态并获取支持信息。
+- **长时间运行的作业的透明度**。 Advanced eDiscovery中的作业通常是由用户操作触发的长时间运行的过程，例如向案例添加保管人、向审阅集添加内容、运行分析以及培训预测编码模型。 如果需要将问题上报给 MS 支持人员，可以跟踪这些作业的状态并获取支持信息。
 
 - **导出到客户拥有Azure 存储位置**。 从审阅集导出文档时，可以选择将它们导出到Azure 存储管理的帐户。 此外，Advanced eDiscovery自定义导出的数据。 这包括导出已保存到 PDF 文件的文件元数据、本机文件、文本文件、标记和修订文档。
 
 ## <a name="ediscovery-subscription-comparison"></a>电子数据展示订阅比较
 
-以下各节显示了内容搜索、核心电子数据展示和搜索服务的最低Advanced eDiscovery。 支持核心电子数据展示的订阅还支持内容搜索。 支持搜索的Advanced eDiscovery还支持内容搜索和核心电子数据展示。
+以下各节显示了内容搜索、核心电子数据展示和搜索服务的最低Advanced eDiscovery。 支持核心电子数据展示的订阅还支持内容搜索。 支持此Advanced eDiscovery还支持内容搜索和核心电子数据展示。
 
 ### <a name="content-search"></a>内容搜索
 

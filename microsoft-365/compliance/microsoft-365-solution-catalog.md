@@ -11,36 +11,36 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解Microsoft 365目录，包括其中包含的内容、如何获取它以及您的下一步。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7ca34e9bb091d98af999b0c7e019421bbd2b023961c2b9c348c38fdd65dd6e51
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b7c7f299201a25518b187eed1bd78e7f67d678b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807768"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574948"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
-您是否正在寻找快速入门中合规性任务Microsoft 365？ 查看Microsoft 365[目录](https://compliance.microsoft.com/solutioncatalog)，以发现、学习并快速开始使用合规性和风险管理解决方案。
+您是否正在寻找快速开始使用 Microsoft 365 中合规性任务的方法？ 查看Microsoft 365[目录](https://compliance.microsoft.com/solutioncatalog)，以发现、学习并快速开始使用合规性和风险管理解决方案。
 
 Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮助您管理端到端合规性方案。 解决方案的功能和工具可能包括策略、警报、报表等的组合。
 
-阅读本文以熟悉 Microsoft 365 合规中心 中的新解决方案目录、如何获取、常见问题以及您的[下一步](#next-steps)。 [](#how-do-i-get-this) [](#frequently-asked-questions)
+阅读本文以熟悉 Microsoft 365 合规中心 中的新解决方案目录、如何获取它、常见问题以及您的[](#how-do-i-get-this)[下一步](#next-steps)。 [](#frequently-asked-questions)
 
 ## <a name="catalog-organization"></a>目录组织
 
-解决方案目录分为各部分，其中包含你的订阅中可用的每个合规性解决方案Microsoft 365卡片。 每个部分都包含针对按合规性区域分组的解决方案的卡片。
+解决方案目录分为各部分，其中包含你的订阅中可用的每个合规性解决方案Microsoft 365卡。 每个部分都包含针对按合规性区域分组的解决方案的卡片。
 
-![Microsoft 365解决方案目录主页](../media/m365-solution-catalog-home.png)
+![Microsoft 365解决方案目录主页。](../media/m365-solution-catalog-home.png)
 
 选择" **查看** 解决方案卡"时，你将看到有关合规性解决方案以及如何开始使用的详细信息。 此信息包括概述、预配置要求、学习资源、允许你将卡片固定到导航窗格的控件，以及将解决方案共享为链接、电子邮件或Microsoft Teams的选项。
 
-![Microsoft 365通信合规性解决方案](../media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365通信合规性解决方案。](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>信息保护&管理部分
 
-"**信息保护&** 治理"部分一目了然地展示了如何使用合规性Microsoft 365来保护和管理组织数据。
+信息 **保护&** 治理部分一目了然地展示了如何使用合规性Microsoft 365来保护和管理组织数据。
 
-![Microsoft 365解决方案目录信息保护和管理部分](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365"解决方案目录信息保护和管理"部分。](../media/m365-solution-catalog-information-protection-governance.png)
 
 在这里，你将看到以下解决方案的卡片：
 
@@ -53,7 +53,7 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 主页 **上的"** 内部风险管理"部分一目了然地显示了组织如何在内部风险导致危害之前识别、分析和采取措施。
 
-![Microsoft 365解决方案目录内部风险管理部分](../media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365"解决方案目录内部风险管理"部分。](../media/m365-solution-catalog-insider-risk-management.png)
 
 在这里，你将看到以下解决方案的卡片：
 
@@ -64,7 +64,7 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 主页 **上的** "发现&响应"部分一目了然地显示了组织如何快速查找、调查和响应与数据相关的合规性问题。
 
-![Microsoft 365目录发现和响应部分](../media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365目录发现和响应部分。](../media/m365-solution-catalog-discovery-response.png)
 
 在这里，你将看到以下解决方案的卡片：
 
@@ -88,12 +88,12 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 - **请访问 Microsoft 合规性管理器**，它可帮助你了解组织在遵守关键标准和法规时的状态。 它提供了建议的操作，可增强整体合规性状态，并提供工作流功能以帮助您有效执行这些操作。 若要了解更多信息，请参阅 [合规性管理器](compliance-manager.md)。
 
-- **配置内部风险管理策略以帮助** 最大程度地降低内部风险，并使您能够检测、调查和对组织中存在风险的活动采取行动。 请参阅 [预览体验成员风险管理](insider-risk-management.md)。
+- **配置内部风险管理策略以帮助** 最大程度地降低内部风险，并使您能够检测、调查和操作组织中存在风险的活动。 请参阅 [预览体验成员风险管理](insider-risk-management.md)。
 
 - **了解并创建通信合规性策略** ，以快速识别和修正公司行为准则违反策略的行为。 请参阅 [通信合规性](communication-compliance.md)。
 
 - **Microsoft 信息保护**，了解Microsoft 365解决方案如何帮助您发现、分类和保护敏感信息（无论它身在何处或出差）。
-    - **熟悉并设置Microsoft Cloud App Security。** 请参阅[快速入门：Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security)
+    - **熟悉并设置** Microsoft Cloud App Security。 请参阅[快速入门：开始Microsoft Cloud App Security。](/cloud-app-security/getting-started-with-cloud-app-security)
     - **分类器入门**。 对内容进行分类，然后标记内容以便进行保护并正确处理内容是信息保护规范的起点。 请参阅[了解可训练分类器 (预览) 。 ](classifier-learn-about.md)
 
 - **经常Microsoft 365** 您的解决方案目录，并确保查看新解决方案以帮助您满足合规性需求。 登录位置 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后选择左侧导航窗格中的"目录"。

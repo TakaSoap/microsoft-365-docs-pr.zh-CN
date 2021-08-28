@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: 2d8f2ba519bbeaaebf6ba8d0c7c91e7933b65457
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f2ee7d21c5dee96e2cbd6beccdd816da26b6ea46
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355972"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570985"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
@@ -50,7 +50,7 @@ Azure AD 密码保护会检测并阻止已知的弱密码及其变体，还会�
 
 MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使恶意用户确定了用户帐户密码，还必须能够响应其他验证（如发送到智能手机的短信）才能获得访问权限。
 
-![正确的密码和其他验证会导致登录成功](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![正确的密码加上额外验证就可以成功登录。](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 使用 MFA 的第一步是 ***对所有管理员帐户要求使用 MFA***，这些帐户也被称为特权帐户。
 

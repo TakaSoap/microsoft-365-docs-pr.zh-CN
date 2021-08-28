@@ -26,20 +26,20 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在订阅使用仅云标识Microsoft 365创建用户和组。
-ms.openlocfilehash: fa3bef4b25327b675f18b2ea0bb9dfea15b2a81a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 9b58b831f2a338e5fb79726b8de66c11bba96d0e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356092"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570757"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365仅云标识
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-借助仅云标识，所有用户、组和联系人都存储在 Azure Active Directory (订阅的) Azure AD Microsoft 365 租户中。 以下是仅云标识的基本组件。
+使用仅云标识，所有用户、组和联系人都存储在 Azure Active Directory (订阅的 Azure Active Directory (Azure AD) 租户中Microsoft 365租户。 以下是仅云标识的基本组件。
  
-![仅云标识的基本组件](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![仅云标识的基本组件。](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 可以通过多种方式对组织中用户及其用户帐户进行分类。 例如，有些是员工，并且具有永久状态。 一些是具有临时状态的供应商、承包商或合作伙伴。 有些用户没有用户帐户，但仍必须被授予访问特定服务和资源的权限以支持交互和协作。 例如：
 
@@ -53,7 +53,7 @@ ms.locfileid: "58356092"
 
 可以将 Azure AD 中的组用于多个目的，以简化云环境的管理。 例如，对于 Azure AD 组，你可以：
 
-- 使用基于组的许可，一旦添加为Microsoft 365，就会自动将用户许可证分配给用户帐户。
+- 使用基于组的许可，一旦添加为Microsoft 365，就会将用户的许可证自动分配给用户帐户。
 - 根据用户帐户属性（如部门名称）将用户帐户动态添加到特定组。
 - 自动为用户预配软件即服务 (SaaS) 应用程序，并保护使用多重身份验证 (MFA) 和其他条件访问策略访问这些应用程序。
 - 为联机团队网站设置SharePoint级别。

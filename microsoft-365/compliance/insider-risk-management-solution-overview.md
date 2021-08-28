@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: d2676c827cc6771d4a8b9a140c06365321695f9f12674c7a41a846b76f210044
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7f1f1c4a6655142401f121def17999d4f07d9f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570553"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>内部风险管理Microsoft 365
 
-越来越多的员工能够跨各种平台和服务创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因离职员工而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
+越来越多的员工能够跨各种平台和服务创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因员工离职而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
 
-Microsoft 365中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施来缓解这些风险。
+Microsoft 365中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施缓解这些风险。
 
 观看下面的视频，了解内部风险管理如何有助于组织在确定组织价值、文化及用户体验优先级时预防、检测和包含风险：
 <br>
@@ -44,12 +44,12 @@ Microsoft 365中的内部风险管理使用整个服务和第三方指标来帮�
 
 使用以下步骤为组织配置内部风险管理：
 
-![内部风险解决方案内部风险管理步骤](../media/ir-solution-ir-steps.png)
+![内部风险解决方案内部风险管理步骤。](../media/ir-solution-ir-steps.png)
 
 1. 了解[企业内部风险管理](insider-risk-management.md)Microsoft 365
 2. 规划 [内部风险管理并验证许可](insider-risk-management-plan.md)
 3. 配置 [内部风险管理设置](insider-risk-management-settings.md)
-4. 配置[连接器](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)[的权限&先决条件](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
+4. 配置[连接器](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)[的权限和&先决条件](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
 5. 创建和配置 [内部风险管理策略](insider-risk-management-configure.md#step-6-create-an-insider-risk-management-policy)
 
 ## <a name="more-information-about-insider-risk-management"></a>有关内部风险管理详细信息

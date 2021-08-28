@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附传递身份验证的先决条件。
-ms.openlocfilehash: 9df7fce98678797091c83efa01190b457221b308
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: da97f8b18105b148eb5c87fecef12335eacd8f07
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574684"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md)配置是一组配置和条件访问策略，用于保护对 Microsoft 365 中与 Azure AD Azure Active Directory (集成的所有服务) 。
+[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md)配置是一组配置和条件访问策略，用于保护对 Microsoft 365 中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
 
 本文介绍了可以如何配置 Microsoft 365 测试环境，以使其满足标识和设备访问的[传递身份验证先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)要求。
 
@@ -37,7 +37,7 @@ ms.locfileid: "58356464"
 4. 配置密码写回服务
 5. 配置自助密码重置
 6. 配置多重身份验证
-7. 启用已加入域的计算机的自动Windows注册
+7. 启用已加入域的计算机的Windows注册
 8. 配置 Azure AD 密码保护 
 9. 启用 Azure AD Identity Protection
 10. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
@@ -48,7 +48,7 @@ ms.locfileid: "58356464"
 
 下面是生成的配置。
 
-![采用传递身份验证的模拟企业测试环境](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![具有传递身份验证测试环境的模拟企业。](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>阶段 2：配置 Azure AD 无缝单一登录
 

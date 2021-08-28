@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建适用于企业的 Microsoft 365模拟企业测试环境。
-ms.openlocfilehash: c392e24b9bf3ef7c8c949ef00a6b661000156117
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354412"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575248"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
@@ -34,15 +34,15 @@ ms.locfileid: "58354412"
 - Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络上的三个虚拟机 (DC1、APP1 和 CLIENT1) 。
  
-![模拟企业基础配置](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![模拟企业基础配置。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 创建简化的测试环境包括两个阶段：
 - [第 1 阶段：创建模拟 Intranet](#phase-1-create-a-simulated-intranet)
 - [第 2 阶段：创建 Microsoft 365 E5 订阅](#phase-2-create-your-microsoft-365-e5-subscription)
 
-您可以使用生成的环境通过额外的测试实验室指南或Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版应用程序的功能。 [](m365-enterprise-test-lab-guides.md)
+您可以使用生成的环境通过额外的测试实验室指南Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版的功能。 [](m365-enterprise-test-lab-guides.md)
 
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -69,7 +69,7 @@ ms.locfileid: "58354412"
 
 模板完成后，配置如下所示：
 
-![Azure 基础结构服务中的模拟 Intranet](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Azure 基础结构服务中的模拟 Intranet。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>方法 2：使用 Azure PowerShell 构建模拟 Intranet
 
@@ -98,7 +98,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-设置 Azure 订阅。 将引号内的所有内容（包括尖括号" ("<"和">") ）替换为正确的名称。
+设置 Azure 订阅。 将引号内的所有内容（包括尖括号 ("<"和">") ）替换为正确的名称。
   
 ```powershell
 $subscr="<subscription name>"
@@ -172,7 +172,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
    - 对于 Windows 8 或 Windows 10：
     
-     在 **"Windows 安全中心"** 对话框中，选择"**更多选项**"，然后选择"**使用不同的帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
+     在 **"Windows 安全中心"** 对话框中，选择"更多 **选项**"，然后选择"**使用不同的帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
     
 4. 在 **"密码**"中，输入本地管理员帐户的密码，然后选择"确定 **"。**
     
@@ -197,7 +197,7 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重启后，重新连接到 DC1 虚拟机。
   
-1. 在 [Azure 门户中，](https://portal.azure.com)选择"资源 **组** > <你的 *资源组名称> >* **DC1**  >  **连接。**
+1. 在 [Azure 门户中](https://portal.azure.com)，**选择"资源** 组 > <你的 *资源组名称> >* **DC1**  >  **连接。**
     
 2. 运行下载的 DC1.rdp 文件，然后选择 **"连接"。**
     
@@ -236,7 +236,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 当前的配置如下所示：
   
-![模拟企业基础配置的步骤 1](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![模拟企业基础配置的步骤 1。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>步骤 2：配置 APP1
 
@@ -291,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 当前的配置如下所示：
   
-![模拟企业基础配置的步骤 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![模拟企业基础配置的步骤 2。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>步骤 3：配置 CLIENT1
 
@@ -339,7 +339,7 @@ Restart-Computer
     
 2. 在 **CLIENT1 的属性中，****选择**"IE 增强的安全 **配置"旁边的"打开"。**
     
-3. 在 **Internet Explorer增强的安全配置**"中 **，为"****管理员** 和用户"选择"关闭"，然后选择"确定 **"。**
+3. 在 **Internet Explorer安全配置"** 中，为"**管理员** 和用户"选择 **"** 关闭"，然后选择"确定 **"。** 
     
 4. 从"开始"屏幕中 **，Internet Explorer"，** 然后选择"确定 **"。**
     
@@ -355,7 +355,7 @@ Restart-Computer
     
 当前的配置如下所示：
   
-![模拟企业基础配置的步骤 3](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![模拟企业基础配置的步骤 3。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>第 2 阶段：创建 Microsoft 365 E5 订阅
 
@@ -381,11 +381,11 @@ Restart-Computer
 
 如果您只需要一Office 365测试环境，则无需阅读本文的其余部分。
 
-有关适用于 Microsoft 365 和 Office 365 的其他测试实验室Microsoft 365，请参阅企业测试[实验室指南](m365-enterprise-test-lab-guides.md)。
+有关适用于 Microsoft 365 和 Office 365 的其他测试实验室[Microsoft 365，请参阅企业测试实验室指南](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>添加 Microsoft 365 E5 试用版订阅
 
-若要添加Microsoft 365 E5订阅并配置具有许可证的用户帐户，请按照轻型基本配置测试实验室指南阶段[3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)中的说明操作。
+若要添加Microsoft 365 E5订阅并配置具有许可证的用户帐户，请执行轻型基本配置测试实验室指南阶段[3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)中的说明。
 
   
 ## <a name="results"></a>结果
@@ -398,7 +398,7 @@ Restart-Computer
     
 最终配置如下所示：
   
-![模拟企业基础配置的第 2 阶段](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![模拟企业基础配置的第 2 阶段。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 现在，你已准备好试用适用于企业的 Microsoft 365[功能](https://www.microsoft.com/microsoft-365/enterprise)。
   

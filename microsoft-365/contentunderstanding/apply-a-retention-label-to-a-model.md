@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: 了解如何将保留标签应用于 SharePoint Syntex。
-ms.openlocfilehash: afc131654a536e37834b0a01bc6c46362debeb05ea0e4a372f9f713639032f88
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 505a1a90fa1a85c6d125343d49d9a0dbd01443b7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859612"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574900"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>在 SharePoint 整合中向模型应用保留标签
 
@@ -42,7 +42,7 @@ ms.locfileid: "53859612"
 
 1. 在模型主页中，选择 **模型设置**。</br>
 2. 在 **模型设置** 的 **安全和合规** 部分，选择 **保留标签** 菜单以查看可应用于模型的保留标签列表。</br>
- ![保留标签菜单](../media/content-understanding/retention-labels-menu.png)</br> 
+ !["保留标签"菜单。](../media/content-understanding/retention-labels-menu.png)</br> 
 3. 选择要应用于模型的保留标签，然后选择 **保存**。</br>
 
 将保留标签应用于模型后，可将其应用于：
@@ -55,7 +55,7 @@ ms.locfileid: "53859612"
 
 1. 在模型主页的 **带模型的库** 部分，选择要应用保留标签更新的文档库。 </br> 
 2. 选择 **同步**。 </br>
- ![同步模型](../media/content-understanding/sync-model.png)</br> 
+ ![同步模型。](../media/content-understanding/sync-model.png)</br> 
 
 
 应用更新并将其同步到模型后，可通过执行以下操作来确认此更新已应用：
@@ -84,7 +84,7 @@ ms.locfileid: "53859612"
 2. 在 <b>高级设置</b>中，在 <b>"保留标签</b> "部分中，选择菜单，然后选择要应用到模型的保留标签。</b>
 
  
-     ![添加到新的表单处理模型](../media/content-understanding/retention-label-forms.png)</br>
+     ![添加到新的表单处理模型。](../media/content-understanding/retention-label-forms.png)</br>
 
 3.  完成其余模型设置后，请选择 <b>创建</b> 以生成模型。
 
@@ -102,11 +102,11 @@ ms.locfileid: "53859612"
 
 1. 在应用表单处理模型的文档库中，选择" <b>自动执行</b> "菜单，选择 <b>AI Builder</b>，然后选择 <b>"查看表单处理模型的详细信息</b>。
 
-   !["自动"菜单](../media/content-understanding/automate-menu.png)</br>
+   ![自动菜单。](../media/content-understanding/automate-menu.png)</br>
 
 2. 在模型详细信息的" <b>标签"</b> 部分，选择要应用保留标签。  然后选择“<b>保存</b>”。
 
-     ![添加到现有表单处理模型](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![添加到现有表单处理模型。](../media/content-understanding/retention-label-model-details.png)</br> 
 
 #### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-in-the-active-model-settings"></a>在活动模型设置中将保留标签添加到现有表单处理模型
 
@@ -114,11 +114,11 @@ ms.locfileid: "53859612"
 
 1. 在应用模型的 SharePoint 文档库中，选择 <b>查看活动模型</b> 图标，然后选择 <b>查看活动</b>。</b>
 
-   ![查看活动模型](../media/content-understanding/info-du.png)</br> 
+   ![查看活动模型。](../media/content-understanding/info-du.png)</br> 
 
 2. 在 <b>活动</b>中，选择要应用保留标签的窗体处理模型。
 
-     ![模型详细信息](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![模型详细信息。](../media/content-understanding/retention-label-model-details.png)</br> 
 
 
 3. 在模型详细信息的" <b>标签"</b> 部分，选择要应用保留标签。  然后选择“<b>保存</b>”。

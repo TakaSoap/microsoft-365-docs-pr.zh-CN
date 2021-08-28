@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34d3f7fa8c12d1509b864bc45e97717dbf01f534
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533275"
+ms.locfileid: "58574107"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -105,25 +105,25 @@ ms.locfileid: "58533275"
 
   |Microsoft 365 服务或功能|30 分钟|24 小时|
   |---|:---:|:---:|
-  |Defender for Office 365 和威胁智能|![复选标记](../media/checkmark.png)||
-  |Azure Active Directory（用户登录事件）||![复选标记](../media/checkmark.png)|
-  |Azure Active Directory（管理员事件）||![复选标记](../media/checkmark.png)|
-  |数据丢失防护|![复选标记](../media/checkmark.png)||
-  |Dynamics 365 CRM||![复选标记](../media/checkmark.png)|
-  |电子数据展示|![复选标记](../media/checkmark.png)||
-  |Exchange Online|![复选标记](../media/checkmark.png)||
-  |Microsoft Power Automate||![复选标记](../media/checkmark.png)|
-  |Microsoft Project|![复选标记](../media/checkmark.png)||
-  |Microsoft Stream|![复选标记](../media/checkmark.png)||
-  |Microsoft Teams|![复选标记](../media/checkmark.png)||
-  |Power Apps||![复选标记](../media/checkmark.png)|
-  |Power BI|![复选标记](../media/checkmark.png)||
-  |Microsoft 365 合规中心|![复选标记](../media/checkmark.png)||
-  |敏感度标签||![复选标记](../media/checkmark.png)|
-  |SharePoint Online 和 OneDrive for Business|![复选标记](../media/checkmark.png)||
-  |工作区分析|![复选标记](../media/checkmark.png)||
-  |Yammer||![复选标记](../media/checkmark.png)|
-  |Microsoft Forms|![复选标记](../media/checkmark.png)||
+  |Defender for Office 365 和威胁智能|![复选标记。](../media/checkmark.png)||
+  |Azure Active Directory（用户登录事件）||![复选标记。](../media/checkmark.png)|
+  |Azure Active Directory（管理员事件）||![复选标记。](../media/checkmark.png)|
+  |数据丢失防护|![复选标记。](../media/checkmark.png)||
+  |Dynamics 365 CRM||![复选标记。](../media/checkmark.png)|
+  |电子数据展示|![复选标记。](../media/checkmark.png)||
+  |Exchange Online|![复选标记。](../media/checkmark.png)||
+  |Microsoft Power Automate||![复选标记。](../media/checkmark.png)|
+  |Microsoft Project|![复选标记。](../media/checkmark.png)||
+  |Microsoft Stream|![复选标记。](../media/checkmark.png)||
+  |Microsoft Teams|![复选标记。](../media/checkmark.png)||
+  |Power Apps||![复选标记。](../media/checkmark.png)|
+  |Power BI|![复选标记。](../media/checkmark.png)||
+  |Microsoft 365 合规中心|![复选标记。](../media/checkmark.png)||
+  |敏感度标签||![复选标记。](../media/checkmark.png)|
+  |SharePoint Online 和 OneDrive for Business|![复选标记。](../media/checkmark.png)||
+  |工作区分析|![复选标记。](../media/checkmark.png)||
+  |Yammer||![复选标记。](../media/checkmark.png)|
+  |Microsoft Forms|![复选标记。](../media/checkmark.png)||
   |
 
 - Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 Microsoft 365 管理中心或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
@@ -151,7 +151,7 @@ ms.locfileid: "58533275"
 
     将显示“**审核**”页。
 
-    ![配置条件，然后单击“搜索”以运行报告](../media/AuditLogSearchPage1.png)
+    ![配置条件，然后单击“搜索”以运行报告。](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
     > 如果显示“**开始记录用户和管理员活动**”链接，请单击该链接以打开审核。 如果未看到此链接，则已为你的组织开启审核。
@@ -185,7 +185,7 @@ ms.locfileid: "58533275"
 
 - 可以通过单击活动名称选择要搜索的特定活动。 或者可以通过单击组名搜索该组中的所有活动（例如“**文件和文件夹活动**”）。 如果选择了活动，可以单击该活动以取消选择。 还可以使用搜索框显示包含所键入关键字的活动。
 
-  ![单击活动组名称以选择所有活动](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![单击活动组名称以选择所有活动。](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - 必须选择“**活动**”列表中的“**显示所有活动的结果**”才能显示 Exchange 管理员审核日志中的条目。 此审核日志中的事件将在结果的“**活动**”列中显示 cmdlet 名称（例如 **Set-Mailbox**）。 有关详细信息，请单击本主题中的“**已审核的活动**”选项卡，然后单击“**Exchange 管理员活动**”。
 
@@ -798,7 +798,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 如果你的组织正在使用 Microsoft Teams 中的[患者应用程序](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，你可以在审核日志中搜索与使用患者应用相关的活动。 如果你的环境配置为支持患者应用，则可在“活动”选择器列表中找到这些活动的附加活动组。
 
-![“活动”选取器列表中的 Microsoft Teams 医疗保健活动](../media/TeamsHealthcareAuditActivities.png)
+![“活动”选取器列表中的 Microsoft Teams 医疗保健活动。](../media/TeamsHealthcareAuditActivities.png)
 
 有关患者应用活动的说明，请参阅[患者应用的审核日志](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
 
@@ -1021,7 +1021,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 - 若要显示 Exchange 管理员审核日志中的事件，请筛选搜索结果并在“**活动**”筛选器框中键入 **-**（破折号）。 这将在 Exchange 管理员事件的“**活动**”列中显示 cmdlet 名称。 然后你便可按字母顺序对 cmdlet 名称进行排序。
 
-  ![在“活动”框中键入一个破折号以筛选 Exchange 管理事件](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![在“活动”框中键入一个破折号以筛选 Exchange 管理员事件。](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - 若要获取有关已运行的 cmdlet、已使用的参数和参数值以及受影响对象的信息，可以导出搜索结果并选择“**下载所有结果**”选项。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
 

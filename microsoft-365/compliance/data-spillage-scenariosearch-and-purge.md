@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: 96cb6362149fe056249e7ffe2d6858785335a00c
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508186"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570265"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -37,7 +37,7 @@ ms.locfileid: "58508186"
 
 下面将了解如何管理数据泄漏事件：
 
-![用于管理数据泄漏事件的 8 步工作流](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![用于管理数据泄漏事件的 8 步工作流。](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [ (可选) 步骤 1：管理谁可以访问案例并设置合规性边界](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [步骤 2：创建电子数据展示案例](#step-2-create-an-ediscovery-case)<br/>
@@ -87,7 +87,7 @@ ms.locfileid: "58508186"
   
 如果每个邮箱超过 1，000 个邮箱或 100 多封电子邮件要审阅，可以使用其他关键字或条件（如日期范围或发件人/收件人）将初始搜索划分为多个搜索，并单独查看每个搜索的结果。 请确保记下在步骤 7 中删除邮件时将使用的所有 [搜索查询](#step-7-permanently-delete-the-spilled-data)。
 
-如果为保管人或最终用户分配了Office 365 E5许可证，则您可以使用此许可证同时检查最多 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，并按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[快速设置了解Advanced eDiscovery。](./get-started-with-advanced-ediscovery.md)
+如果为保管人或最终用户分配了Office 365 E5许可证，则您可以使用此许可证同时检查最多 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，然后按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
 
 当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定该邮件是否与外部共享。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便可以使用邮件跟踪日志。 此过程在步骤 [5 中介绍](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)。
 
@@ -101,7 +101,7 @@ ms.locfileid: "58508186"
  
       将显示"导出报告"页。
 
-    ![选择搜索，然后单击>页上的"更多内容导出报告"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![选择搜索，然后单击>页上的"更多内容导出报告"。](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. 选择 **"所有项目"，** 包括由于其他原因已加密或未编制索引的项目，然后单击"生成 **报告"。**
 
@@ -109,9 +109,9 @@ ms.locfileid: "58508186"
 
 5. 单击导出作业，然后单击飞 **出页上** 的"下载报告"。
  
-    ![在"导出"页上，单击"导出"，然后单击"下载报告"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![在"导出"页上，单击"导出"，然后单击"下载报告"。](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-" **导出摘要** "报告包含与结果一起找到的位置数和搜索结果的大小。 您可以使用此代码与删除后生成的报告进行比较，并提供作为删除证明。 结果 **报告** 包含搜索结果的更详细的摘要，包括主题、发件人、收件人（如果已阅读电子邮件、日期和每封邮件的大小）。 如果此报告中的任何详细信息包含实际溢出的数据，请确保在调查完成后永久Results.csv文件。
+" **导出摘要** "报告包含与结果一起找到的位置数和搜索结果的大小。 您可以使用此代码与删除后生成的报告进行比较，并提供作为删除证明。 结果 **报告** 包含搜索结果的更详细的摘要，包括主题、发件人、收件人（如果已阅读电子邮件、日期和每封邮件的大小）。 如果此报告中的任何详细信息包含实际泄漏的数据，请务必在调查完成后永久Results.csv文件。
 
 有关导出报告的信息，请参阅导出 [内容搜索报告](export-a-content-search-report.md)。
     
@@ -143,7 +143,7 @@ ms.locfileid: "58508186"
     
 4. 在"**类型"** 下拉列表中，单击"**顶部位置"。**
     
-    ![在"搜索统计信息"的"首要位置"页面上获取包含搜索结果的邮箱列表](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![在"搜索统计信息"的"首要位置"页面上获取包含搜索结果的邮箱列表。](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     将显示包含搜索结果的邮箱列表。 还会显示每个邮箱中与搜索查询匹配的项目数。
     
@@ -201,7 +201,7 @@ ms.locfileid: "58508186"
 
 2. 在飞出页面上， **单击删除**。
 
-    ![选择搜索，然后单击飞出页面上的"删除"](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![选择搜索，然后单击飞出页面上的"删除"。](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据泄漏调查过程
 

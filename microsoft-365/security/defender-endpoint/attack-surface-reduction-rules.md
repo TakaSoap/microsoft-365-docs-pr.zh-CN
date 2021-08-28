@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4fecb948ff86ab5bcc7b2b76946b29677d25611d
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 1e11cdd9300b58d7cc410c43d1bd09ed095c29e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509601"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570685"
 ---
 # <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -46,23 +46,23 @@ ms.locfileid: "58509601"
 
 |规则名称|&nbsp;Windows10|&nbsp;WindowsServer 2019|&nbsp;Windows服务器|&nbsp;WindowsServer 2016|&nbsp;WindowsServer 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
-|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br> 版本 1803 (半年频道) 或更高版本|||
-|[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes)|![支持](images/checkmark.png) <br><br> 版本 1809 或更高版本|![支持](images/checkmark.png)|![支持](images/checkmark.png)  <br><br>|||
-|[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png)|![支持](images/checkmark.png) <br><br>|||
-|[阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|![支持](images/checkmark.png) <br><br> 版本 1803 或更高版本|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止来自电子邮件客户端和 Webmail 的可执行内容](#block-executable-content-from-email-client-and-webmail)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|![支持](images/checkmark.png) <br><br> 版本 1803 或更高版本|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) <br><br> \*_不支持文件和文件夹排除项。_|![支持](images/checkmark.png) <br><br> 版本 1903 (版本 18362) 或更高版本|![支持](images/checkmark.png)|![支持](images/checkmark.png) <br><br> 版本 1903 (版本 18362) 或更高版本|||
-|[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands)|![支持](images/checkmark.png) <br><br> 版本 1803 或更高版本|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware)|![支持](images/checkmark.png) <br><br> 版本 1803 或更高版本|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br>|||
-|**规则名称**|**&nbsp;Windows10**|**&nbsp;WindowsServer 2019**|**&nbsp;Windows服务器**|**&nbsp;WindowsServer 2016**|**&nbsp;WindowsServer 2012 R2**|
+|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![受支持。](images/checkmark.png) <br><br> | ![受支持。](images/checkmark.png) <br><br> | ![受支持。](images/checkmark.png) <br><br> 版本 1803 (半年频道) 或更高版本 |  |  |
+|[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | ![受支持。](images/checkmark.png) <br><br> 版本 1809 或更高版本 | ![支持](images/checkmark.png) | ![支持](images/checkmark.png)  <br><br> |  |  |
+|[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![受支持。](images/checkmark.png) <br><br> 版本 1803 或更高版本 | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止来自电子邮件客户端和 Webmail 的可执行内容](#block-executable-content-from-email-client-and-webmail) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![受支持。](images/checkmark.png) <br><br> 版本 1803 或更高版本 | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止Office代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) <br><br> \*_不支持文件和文件夹排除项。_ | ![受支持。](images/checkmark.png) <br><br> 版本 1903 (版本 18362) 或更高版本| ![支持](images/checkmark.png) | ![支持](images/checkmark.png) <br><br> 版本 1903 (版本 18362) 或更高版本 |  |  |
+|[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![受支持。](images/checkmark.png) <br><br> 版本 1803 或更高版本 | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br>  |  |  |
+|[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | ![受支持。](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+|[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | ![受支持。](images/checkmark.png) <br><br> 版本 1803 或更高版本 | ![支持](images/checkmark.png) <br><br> | ![支持](images/checkmark.png) <br><br> |  |  |
+| **规则名称** |  **&nbsp;Windows10** | **&nbsp;WindowsServer 2019** | **&nbsp;Windows服务器** | **&nbsp;WindowsServer 2016** | **&nbsp;WindowsServer 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>支持的配置管理系统
 
@@ -70,23 +70,23 @@ ms.locfileid: "58509601"
 
 |规则名称|Intune|Microsoft Endpoint Manager|Microsoft Endpoint Configuration Manager|组策略|PowerShell|
 |---|:---:|:---:|:---:|:---:|:---:|
-|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|![支持](images/checkmark.png) <br><br>|![支持](images/checkmark.png) <br><br> MEM OMA-URI|||![支持](images/checkmark.png) <br><br>|
-|[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes)|![支持](images/checkmark.png)||![支持](images/checkmark.png)|||
-|[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1710|||
-|[阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1802|||
-|[阻止来自电子邮件客户端和 Webmail 的可执行内容](#block-executable-content-from-email-client-and-webmail)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1710|![支持](images/checkmark.png)||
-|[阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1802|||
-|[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts)|![支持](images/checkmark.png)||![支持](images/checkmark.png)  <br><br> CB 1710|||
-|[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1710|||
-|[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content)|![支持](images/checkmark.png) <br><br>||![支持](images/checkmark.png) <br><br> CB 1710 <br><br>|||
-|[阻止Office将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1710|||
-|[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br>  CB 1710|||
-|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription)||||||
-|[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands)|![支持](images/checkmark.png)|||||
-|[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1802 <br><br>|||
-|[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br> CB 1710 <br><br>|||
-|[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware)|![支持](images/checkmark.png)||![支持](images/checkmark.png) <br><br>  CB 1802|||
-|**规则名称**|**Intune**|**Microsoft Endpoint Manager**|**Microsoft Endpoint Configuration Manager**|**组策略**|**PowerShell**|
+|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![受支持。](images/checkmark.png) <br><br>  |  ![支持](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![支持](images/checkmark.png) <br><br> |
+|[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | ![受支持。](images/checkmark.png) |   | ![支持](images/checkmark.png) |   |   |
+|[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes) | ![受支持。](images/checkmark.png) |   | ![支持](images/checkmark.png) <br><br> CB 1710 |   |   |
+|[阻止本地安全机构子系统Windows窃取凭据 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![受支持。](images/checkmark.png)  |   |  ![支持](images/checkmark.png) <br><br> CB 1802 |   |   |
+|[阻止来自电子邮件客户端和 Webmail 的可执行内容](#block-executable-content-from-email-client-and-webmail) | ![受支持。](images/checkmark.png) |  | ![支持](images/checkmark.png) <br><br> CB 1710 | ![支持](images/checkmark.png) |   |
+|[阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![受支持。](images/checkmark.png) |   | ![支持](images/checkmark.png) <br><br> CB 1802 |   |   |
+|[阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | ![受支持。](images/checkmark.png) |   |  ![支持](images/checkmark.png)  <br><br> CB 1710 |   |   |
+|[阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![受支持。](images/checkmark.png) |   |  ![支持](images/checkmark.png) <br><br> CB 1710 |   |   |
+|[阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | ![受支持。](images/checkmark.png) <br><br> |  | ![支持](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
+|[阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes) | ![受支持。](images/checkmark.png) |  |  ![支持](images/checkmark.png) <br><br> CB 1710 |   |   |
+|[阻止Office应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | ![受支持。](images/checkmark.png) |  | ![支持](images/checkmark.png) <br><br>  CB 1710 |   |   |
+|[通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) |  |  |  |   |   |
+|[阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![支持](images/checkmark.png) |   |   |   |   |
+|[阻止从 USB 运行的不受信任的和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![受支持。](images/checkmark.png) |   | ![支持](images/checkmark.png) <br><br> CB 1802 <br><br> |   |   |
+|[阻止从宏Office Win32 API 调用](#block-win32-api-calls-from-office-macros) | ![受支持。](images/checkmark.png) |   | ![支持](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
+|[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) | ![受支持。](images/checkmark.png) |   |  ![支持](images/checkmark.png) <br><br>  CB 1802 |   |   |
+| **规则名称** | **Intune** | **Microsoft Endpoint Manager** | **Microsoft Endpoint Configuration Manager** | **组策略** | **PowerShell** |
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
@@ -129,7 +129,7 @@ GUID：`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 此规则阻止Office创建子进程。 Office包括 Word、Excel、PowerPoint、OneNote 和 Access。
 
-创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并利用代码下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
+创建恶意子进程是常见的恶意软件策略。 滥用作为Office的恶意软件通常会运行 VBA 宏，并攻击代码以下载并尝试运行更多有效负载。 但是，某些合法的业务线应用程序也可能出于恶意目的生成子进程;例如生成命令提示符或使用 PowerShell 配置注册表设置。
 
 Intune 名称： `Office apps launching child processes`
 
@@ -139,9 +139,9 @@ GUID：`d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>阻止从本地安全Windows窃取凭据
 
-此规则通过锁定 LSASS 应用程序的本地安全颁发机构子系统服务 (凭据) 。
+此规则通过锁定 LSASS 应用程序的本地安全机构子系统服务 (凭据) 。
 
-LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows 10通常会阻止尝试从 LSASS 提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
+LSASS 对登录 Windows进行身份验证。 Microsoft Defender Credential Guard Windows 10通常会阻止尝试从 LSASS 中提取凭据。 但是，某些组织无法在所有计算机上启用 Credential Guard，因为自定义智能卡驱动程序或其他加载到本地安全机构 (LSA) 。 在这些情况下，攻击者可以使用 Mimikatz 等黑客工具从 LSASS 中清除明文密码和 NTLM 哈希。
 
 > [!NOTE]
 > 在某些应用中，该代码枚举所有正在运行的进程，并尝试以详尽的权限打开它们。 此规则拒绝应用的进程打开操作，将详细信息记录到安全事件日志中。 此规则会产生大量噪音。 如果你的应用仅枚举 LSASS，但在功能方面没有实际影响，则无需将其添加到排除列表。 此事件日志条目本身不一定表示恶意威胁。
@@ -154,10 +154,10 @@ GUID：`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>阻止来自电子邮件客户端和 Webmail 的可执行内容
 
-此规则阻止从 Microsoft Outlook 应用程序或其他热门 webmail 提供程序Outlook打开的电子邮件启动以下文件类型：
+此规则阻止从 Microsoft Outlook 应用程序、Outlook.com 和其他热门 Web 邮件提供程序内打开的电子邮件启动以下文件类型：
 
-- 可执行 (文件，例如 .exe、.dll 或 .scr) 
-- 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js文件) 
+- 可执行文件 (，如 .exe、.dll 或 .scr) 
+- 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js 文件) 
 
 Intune 名称： `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -168,7 +168,7 @@ GUID：`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 > [!NOTE]
 > 规则 **"阻止来自电子邮件客户端和 Webmail** 的可执行内容"具有以下替代说明，具体取决于你使用的应用程序：
 >
-> - Intune (Configuration Profiles) ：执行从电子邮件 (webmail/mail 客户端 (删除的可执行内容 (exe、dll、ps、js、v ) bs 等)  (，) 。
+> - Intune (Configuration Profiles) ： Execution of executable content (exe， dll， ps， js， vbs， etc.) dropped from email (webmail/mail client)  (no exceptions) .
 > - Endpoint Manager：阻止从电子邮件和 Webmail 客户端下载可执行内容。
 > - 组策略：阻止来自电子邮件客户端和 Webmail 的可执行内容。
 
@@ -221,9 +221,9 @@ GUID：`d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>阻止Office应用程序创建可执行内容
 
-此规则Office Word、Excel 和 PowerPoint 等应用阻止恶意代码写入磁盘，从而阻止这些应用创建潜在恶意可执行内容。
+此规则Office Word、Excel 和 PowerPoint 等应用阻止恶意代码写入磁盘，从而阻止其创建潜在恶意可执行内容。
 
-滥用作为Office的恶意软件可能会尝试Office恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
+滥用作为Office的恶意软件可能会尝试破坏Office，将恶意组件保存到磁盘。 这些恶意组件在计算机重新启动后将一直保留于系统。 因此，此规则可防御常见的持久性技术。
 
 Intune 名称： `Office apps/macros creating executable content`
 
@@ -231,11 +231,11 @@ SCCM 名称： `Block Office applications from creating executable content`
 
 GUID：`3b576869-a4ec-4529-8536-b80a7769e899`
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office代码注入其他进程
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>阻止Office将代码注入其他进程
 
 此规则阻止代码注入尝试Office应用注入其他进程。
 
-攻击者可能会尝试使用Office代码注入将恶意代码迁移到其他进程中，因此代码可以伪装成一个干净流程。
+攻击者可能会尝试使用Office通过代码注入将恶意代码迁移到其他进程中，因此代码可以伪装成一个干净流程。
 
 使用代码注入没有已知的合法业务用途。
 
@@ -249,9 +249,9 @@ GUID：`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>阻止Office应用程序创建子进程
 
-此规则阻止Outlook创建子进程，同时仍允许合法Outlook运行。
+此规则阻止Outlook子进程，同时仍允许合法Outlook进程。
 
-此规则可防止社会工程攻击，并防止利用代码滥用Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
+此规则可防止社会工程攻击，并防止利用代码滥用 Outlook。 它还[可Outlook用户](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/)凭据泄露时攻击者可能使用的规则和表单攻击。
 
 > [!NOTE]
 > 此规则阻止 DLP 策略提示和工具提示Outlook。 此规则仅适用于 Outlook Outlook.com。
@@ -282,7 +282,7 @@ GUID：`e6db77e5-3df2-4cf1-b95a-636979351e5b`
 此规则阻止通过 [PsExec](/sysinternals/downloads/psexec) 和 [WMI 创建](/windows/win32/wmisdk/about-wmi) 的进程运行。 PsExec 和 WMI 都可以远程执行代码，因此存在恶意软件滥用此功能以用于命令和控制目的，或在整个组织的网络中传播感染的风险。
 
 > [!WARNING]
-> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置[管理器Microsoft Endpoint Configuration Manager，](/configmgr)因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
+> 仅在使用 [Intune](/intune) 或其他 MDM 解决方案管理设备时使用此规则。 此规则与通过配置管理器Microsoft Endpoint Configuration Manager[管理不兼容](/configmgr)，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。
 
 Intune 名称： `Process creation from PSExec and WMI commands`
 

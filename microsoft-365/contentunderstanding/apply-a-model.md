@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: 了解如何将已发布的模型应用到文档SharePoint库。
-ms.openlocfilehash: 9eed1fe6c209a4d89ea3c4114856c994fa283e340880332ecaa84a9a33bdb8ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d277b959fc05318380363e1eaba14343c84af126
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53841437"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575140"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -40,37 +40,37 @@ ms.locfileid: "53841437"
 
 1. 在模型主页上，在 **“将模型应用于库”** 平铺中，选择 **“发布模型”**。 或者，你可以在 **应用了模型的库** 部分选择 **“+ 添加库”**。 </br>
 
-    ![向库添加模型](../media/content-understanding/apply-to-library.png)</br>
+    ![向库添加模型。](../media/content-understanding/apply-to-library.png)</br>
 
 2. 然后，你可以选择包含要应用模型的文档库的 SharePoint 网站。 如果该网站未显示在列表中，请使用搜索框进行查找。</br>
 
-    ![选择站点](../media/content-understanding/site-search.png)</br>
+    ![选择网站。](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
     > 你必须拥有 *管理列表* 权限，或者 *编辑* 对应用模型的文档库的权限。</br>
 
 3. 选择网站后，选择要向其应用模型的文档库。 在此示例中，从 *Contoso Case 跟踪* 网站中，选择 “*文档"* 文档库。</br>
 
-    ![选择文档库](../media/content-understanding/select-doc-library.png)</br>
+    ![选择文档库。](../media/content-understanding/select-doc-library.png)</br>
 
 4. 由于模型与内容类型相关联，因此将其应用到库时，它将添加该内容类型及其视图，其中包含作为列显示的已提取标签。 默认情况下，此视图是库的默认视图，但是你可以选择 **“高级设置”** ，然后取消选定 **“将此新视图设置为默认”**，不让其成为默认视图。</br>
 
-    ![库视图](../media/content-understanding/library-view.png)</br>
+    ![库视图。](../media/content-understanding/library-view.png)</br>
 
 5. 选择 **“添加”** 将模型应用到库中。 
 6. 在模型主页上，在 **应用了此模型库** 部分，你会看到列出的 SharePoint 网站的 URL。</br>
 
-    ![已选择 的库](../media/content-understanding/selected-library.png)</br>
+    ![选定的库。](../media/content-understanding/selected-library.png)</br>
 
 7. 转到你的文档库，并确保你处于模型的文档库视图中。 请注意，如果选择文档库名称旁的“信息”按钮，会显示一条消息，说明文档库已应用一个模型。
 
-    ![信息视图](../media/content-understanding/info-du.png)</br> 
+    ![信息视图。](../media/content-understanding/info-du.png)</br> 
 
     你可以选择 **“查看活动模型”** 来查看应用于文档库的任何模型的详细信息。
 
 8. 在 **“活动模型”** 窗格中，你可以看到应用于文档库的模型。 选择一个模型以查看关于它的更多详细信息，例如模型的描述、发布该模型的人，以及该模型是否将保留标签应用于它所分类的文件。
 
-    ![活动模型窗格](../media/content-understanding/active-models.png)</br> 
+    !["活动模型"窗格。](../media/content-understanding/active-models.png)</br> 
 
 将模型应用到文档库之后，你可以开始将文档上传到网站并查看结果。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53841437"
 2. 选择文件后，**“分类和提取”** 将在文档库功能区中显示。 选择 **“分类和提取”**。
 3. 将向队列添加所选的文件进行处理。
 
-      ![分类和提取](../media/content-understanding/extract-classify.png)</br> 
+      ![分类和提取。](../media/content-understanding/extract-classify.png)</br> 
 
 > [!NOTE]
 > 您可以将单个文件复制到库中，然后将其应用于模型，但不能应用于文件夹。
@@ -93,11 +93,11 @@ ms.locfileid: "53841437"
 
 SharePoint Syntex 文档理解模型或表单处理模型应用于文档库时，文档库架构包含一个<b>“分类日期”</b>字段。 默认情况下，此字段为空，但由模型处理和分类文档时，此字段会更新为完成日期时间戳。 
 
-   ![分类日期列](../media/content-understanding/class-date-column.png)</br> 
+   ![分类日期列。](../media/content-understanding/class-date-column.png)</br> 
 
 分类日期字段由[<b>“内容理解模型对文件进行分类时”</b>触发器](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)使用，以便在 Syntex 内容理解模型完成处理文件并更新“分类日期”字段后运行 Power Automate 流程。
 
-   ![流程触发器](../media/content-understanding/trigger.png)</br>
+   ![Flow触发器。](../media/content-understanding/trigger.png)</br>
 
 <b>“内容理解模型对文件进行分类时”</b>触发器然后可用于使用从文件中提取的任何信息启动另一个工作流。
 

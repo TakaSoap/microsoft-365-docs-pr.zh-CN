@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 63583fcdb0860bfba60d8847e9130f671d916bbf
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255258"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574131"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -78,7 +78,7 @@ Yammer 邮件不受针对 Exchange 邮箱配置的保留策略影响。 即使 Y
 
 如果保留策略为“保留后删除”：
 
-![Yammer 消息的保留流示意图](../media/yammerretentionlifecycle.png)
+![Yammer 消息的保留流示意图。](../media/yammerretentionlifecycle.png)
 
 对于图中的两条路径：
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 646a391d469470b780010e4293d1433153419b23
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 99081712f3c762f6818df1f6e390b50ae450a7a8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574143"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -81,7 +81,7 @@ Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道�
 
 如果保留策略为“保留后删除”：
 
-![Teams 聊天和频道消息的保留流关系图](../media/teamsretentionlifecycle.png)
+![Teams 聊天和频道消息的保留流关系图。](../media/teamsretentionlifecycle.png)
 
 对于图中的两条路径：
 

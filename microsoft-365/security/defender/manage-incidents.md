@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ae03aff64765647bd7a32b31fcc987b062c15173
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247113"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570409"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -39,9 +39,9 @@ ms.locfileid: "58247113"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在 Microsoft 365 Defender **>** (security.microsoft.com) 快速启动时，你可以管理事件&警报) 。 [](https://security.microsoft.com) 下面是一个示例。
+在 Microsoft 365 Defender (security.microsoft.com) 快速启动时，你可以管理事件& **>** 警报) 。 [](https://security.microsoft.com) 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
 以下是管理事件的方法：
 
@@ -54,7 +54,7 @@ ms.locfileid: "58247113"
 
 可以从事件的"管理事件 **"窗格中** 管理事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件的&quot;管理事件&quot;窗格示例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件&quot;管理事件&quot;窗格的示例。":::
 
 可以从以下位置的"管理 **事件"链接显示** 此窗格：
 

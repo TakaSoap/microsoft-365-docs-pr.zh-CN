@@ -20,26 +20,26 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: 本文介绍在 SharePoint Online 中启用了 SharePoint Publishing 的导航SharePoint网站。
-ms.openlocfilehash: 38e72811eca6487a862beb8b1d197186783d3c48
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+description: 本文介绍在 SharePoint Online 中SharePoint发布功能的导航SharePoint网站。
+ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394656"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574732"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online 的导航选项
 
-本文介绍在 SharePoint Online 中启用了 SharePoint Publishing 的导航SharePoint网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。 只有在SharePoint门户需要时，才应使用"发布网站模板"，并且发布功能应仅在特定网站上启用，并且仅在绝对需要时使用，因为它在错误使用时可能会影响性能。
+本文介绍在 SharePoint Online 中SharePoint发布功能的导航SharePoint网站。 导航的选择和配置会显著影响 SharePoint Online 中的网站的性能和可伸缩性。 只有在SharePoint门户需要时，才应使用发布网站模板，并且发布功能应仅在特定网站上启用，并且仅在绝对必要时使用，因为它在错误使用时可能会影响性能。
 
 >[!NOTE]
->如果你使用的是新式导航选项SharePoint如大型菜单、级联导航或中心导航，本文不适用于你的网站。 新式SharePoint网站体系结构利用更平展的网站层次结构和中心分支模型。 这可以实现许多不需要使用"发布"功能SharePoint方案。
+>如果你使用的是新式导航SharePoint如大型菜单、级联导航或中心导航，本文不适用于你的网站。 新式SharePoint网站体系结构利用更平和的网站层次结构和中心分支模型。 这可以实现许多不需要使用"发布"功能SharePoint方案。
 
 ## <a name="overview-of-navigation-options"></a>导航选项概述
 
-导航提供程序配置会显著影响整个网站的性能，必须仔细考虑如何选择可有效扩展的导航提供程序和配置，以SharePoint网站。 有两个开箱即用导航提供程序以及自定义导航实现。
+导航提供程序配置会显著影响整个网站的性能，必须仔细考虑如何选取可有效扩展的导航提供程序和配置，从而满足网站SharePoint要求。 有两个开箱即用导航提供程序以及自定义导航实现。
 
-如果为网站启用 [](#using-structural-navigation-in-sharepoint-online)结构导航缓存，则第一个选项"结构导航"是 SharePoint Online 中推荐用于经典 SharePoint 网站的 **导航选项**。 此导航提供程序显示当前网站下方的导航项目，也可以选择显示当前网站及其同级网站。 它提供其他功能，如安全修整和网站结构枚举。 如果禁用缓存，这将对性能和可伸缩性产生负面影响，并且可能会受到限制。
+如果为网站启用 [](#using-structural-navigation-in-sharepoint-online)结构导航缓存，则第一个选项"结构导航"是 SharePoint Online 中推荐的SharePoint **选项。** 此导航提供程序显示当前网站下方的导航项目，也可以选择显示当前网站及其同级网站。 它提供其他功能，如安全修整和网站结构枚举。 如果禁用缓存，这将对性能和可伸缩性产生负面影响，并且可能会受到限制。
 
 第二个选项 Managed [**(Metadata) 表示**](#using-managed-navigation-and-metadata-in-sharepoint-online)使用托管元数据术语集的导航项。 建议禁用安全修整，除非需要。 安全修整作为此导航提供程序的默认设置启用;但是，许多网站不需要安全修整开销，因为导航元素对于网站的所有用户通常都是一致的。 使用禁用安全修整的建议配置，此导航提供程序不需要枚举网站结构，并且可扩展性高，并且对性能产生可接受的影响。
 
@@ -65,7 +65,7 @@ ms.locfileid: "58394656"
 
 该工具将针对每个分析的页面生成一个报告，其中显示页面如何针对预定义的规则集执行，并显示测试的结果超出基线值时的详细信息。 SharePoint联机管理员和设计人员可以使用该工具解决性能问题，以确保新页面在发布之前已经过优化。
 
-**SPRequestDuration** 尤其需要一段时间SharePoint处理页面。 导航 (包括导航) 、复杂网站层次结构以及其他配置和拓扑选项等大量导航功能都可能会显著延长持续时间。
+**SPRequestDuration** 尤其需要一段时间SharePoint处理页面。 导航 (，如导航) 、复杂网站层次结构以及其他配置和拓扑选项中的页面等都可以显著延长持续时间。
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>在 SharePoint Online SharePoint导航
 
@@ -73,19 +73,19 @@ ms.locfileid: "58394656"
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>如何实现结构导航缓存
 
-在 **"设置** 外观导航"下，可以验证是否选择了全局导航或当前导航  >    >  的结构导航。 选择 **"显示** 页面"将对性能产生负面影响。
+在 **"设置** 外观导航"下，可以验证是否选择了全局导航或当前导航的结构  >    >  导航。 选择 **"显示** 页面"将对性能产生负面影响。
 
-![选择"显示子网站"的结构导航](../media/SPONavOptionsStructuredShowSubsites.png)
+![选择"显示子网站"的结构导航。](../media/SPONavOptionsStructuredShowSubsites.png)
 
-Caching网站集级别和网站级别启用或禁用网站集，并且默认情况下启用这两者。 若要在网站集级别启用，请在"网站集管理设置""网站集导航"下，选中"  >    >  **启用缓存"框**。
+Caching网站集级别和网站级别启用或禁用网站集，并且默认情况下同时启用这两者。 若要在网站集级别启用，请在"网站集设置""网站集管理""网站集导航"下，选中"  >    >  **启用缓存"框**。
 
-![在网站级别启用缓存](../media/structural-nav/structural-nav-caching-site-coll.png)
+![在网站级别启用缓存。](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 若要在网站级别启用，**请在"网站** 设置  >  **导航"下** 选中"**启用缓存"框**。
 
-![在网站级别启用缓存](../media/structural-nav/structural-nav-caching-site.png)
+![在网站级别启用缓存。](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中使用托管导航和元数据
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>在 SharePoint Online 中SharePoint导航和元数据
 
 托管导航是另一个开箱即用选项，可用于重新创建与结构导航相同的大部分功能。 托管元数据可以配置为启用或禁用安全修整。 在禁用安全修整的情况下配置后，托管导航会相当高效，因为它加载具有固定数量的服务器调用的所有导航链接。 但是，启用安全修整会否定托管导航的一些性能优势。
 
@@ -103,7 +103,7 @@ Caching网站集级别和网站级别启用或禁用网站集，并且默认情�
 
 为了实现托管导航，您可以使用与网站的导航结构对应的 URL 设置术语。 在许多情况下，甚至可以手动选择托管导航来替换结构导航。 例如：
 
-![SharePoint联机网站结构](../media/SPONavOptionsListOfSites.png))
+![SharePoint联机网站结构。](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>使用搜索驱动的客户端脚本
 
@@ -117,7 +117,7 @@ Caching网站集级别和网站级别启用或禁用网站集，并且默认情�
 
 数据提供程序的一个示例是使用 **搜索驱动的** 导航，该导航可灵活地枚举导航节点并高效处理安全修整。
 
-还有其他一些常用选项可生成 **自定义导航提供程序**。 请查看[适用于 SharePoint Online](/sharepoint/dev/solution-guidance/portal-navigation)门户的导航解决方案，获取有关构建自定义导航提供程序的进一步指导。
+还有其他一些常用选项可生成 **自定义导航提供程序**。 请查看[适用于 SharePoint Online](/sharepoint/dev/solution-guidance/portal-navigation)门户的导航解决方案，以进一步指导如何生成自定义导航提供程序。
 
 使用搜索，可以使用连续爬网利用在后台构建的索引。 搜索结果从搜索索引中拉取，并且结果经过安全修整。 当需要安全修整时，这通常比开箱即用导航提供程序快。 使用搜索结构导航（尤其是在网站结构复杂时）将极大地加快页面加载速度。 与托管导航不同，这一点的主要优点是，您受益于安全修整。
 
@@ -128,7 +128,7 @@ Caching网站集级别和网站级别启用或禁用网站集，并且默认情�
 1. 导航到"网站设置页。
 2. 通过单击"母版页"打开 **母版页样式库**。
 3. 你可以在此处浏览库并下载文件 `seattle.master` 。
-4. 使用文本编辑器编辑代码，并删除以下屏幕截图中的代码块。<br/>![删除显示的代码块](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+4. 使用文本编辑器编辑代码，并删除以下屏幕截图中的代码块。<br/>![删除显示的代码块。](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. 删除 和 标记 `<SharePoint:AjaxDelta id="DeltaTopNavigation">` `<\SharePoint:AjaxDelta>` 之间的代码，并将其替换为以下代码段：<br/>
 
 ```javascript
@@ -208,7 +208,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. 结果将分配给 self.nodes 数组，并且通过使用将输出分配给数组 self.hierarchy linq.js对象构建层次结构。 此数组是绑定到 HTML 的对象。 这是通过向 ko.applyBinding () 函数传递 self 对象在 toggleView () 函数中完成。<br/>这样，层次结构数组将绑定到以下 HTML：<br/>
+8. 结果将分配给 self.nodes 数组，并且通过使用将输出分配给数组 self.hierarchy linq.js对象构建层次结构。 此数组是绑定到 HTML 的对象。 这是在 toggleView () 中，将 self 对象传递给 ko.applyBinding () 函数。<br/>这样，层次结构数组将绑定到以下 HTML：<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
@@ -221,7 +221,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ### <a name="about-the-javascript-file"></a>关于 JavaScript 文件...
 
 >[!NOTE]
->如果使用自定义 JavaScript，请确保公用CDN已启用，并且文件位于CDN位置。
+>如果使用自定义 JavaScript，请确保已启用CDN，并且文件位于CDN位置。
 
 整个 JavaScript 文件如下所示：
 

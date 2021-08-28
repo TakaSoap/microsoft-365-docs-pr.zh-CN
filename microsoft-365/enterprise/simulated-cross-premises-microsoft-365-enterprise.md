@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为 Microsoft 365 测试环境。
-ms.openlocfilehash: 911732917b380a7668c1a04dda385446a4d20663
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 55fff394e077bf67e67e951778b927d6c892f2f2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354256"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570493"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 测试环境中的模拟跨界虚拟网络
 
@@ -30,7 +30,7 @@ ms.locfileid: "58354256"
 
 本文逐步介绍了如何使用两个 Azure 虚拟网络来创建 Microsoft Azure 模拟混合云环境。下面是生成的配置。 
   
-![第 3 阶段的模拟跨界虚拟网络测试环境，XPrem VNet 中有 DC2 虚拟机](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![第 3 阶段的模拟跨界虚拟网络测试环境，XPrem VNet 中具有 DC2 虚拟机。](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 此配置模拟 Azure IaaS 混合云生产环境，具体包括：
   
@@ -59,12 +59,12 @@ ms.locfileid: "58354256"
 > [!NOTE]
 > 此配置需要付费的 Azure 订阅。 
 
-您可以使用生成的环境通过额外的测试实验室指南或Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版应用程序的功能。 [](m365-enterprise-test-lab-guides.md)
+您可以使用生成的环境通过额外的测试实验室指南Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版的功能。 [](m365-enterprise-test-lab-guides.md)
 
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 转到[Microsoft 365 企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)，直观映射到 Microsoft 365 for enterprise Test Lab Guide 堆栈中的文章。
+> 转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)，直观映射到 Microsoft 365 for enterprise Test Lab Guide 堆栈中所有文章。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 
@@ -72,7 +72,7 @@ ms.locfileid: "58354256"
   
 当前配置如下。 
   
-![Azure 中的模拟企业基础配置](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Azure 中的模拟企业基础配置。](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## <a name="phase-2-create-the-xprem-virtual-network"></a>第 2 阶段：创建 XPrem 虚拟网络
 
@@ -129,7 +129,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 当前配置如下。 
   
-![第 2 阶段的模拟跨界虚拟网络测试环境，包含 XPrem VNet 和 VNet 对等关系](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![第 2 阶段的模拟跨界虚拟网络测试环境，具有 XPrem VNet 和 VNet 对等关系。](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>第 3 阶段：配置 DC2
 
@@ -201,7 +201,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 当前配置如下。 
   
-![第 3 阶段的模拟跨界虚拟网络测试环境，XPrem VNet 中有 DC2 虚拟机](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![第 3 阶段的模拟跨界虚拟网络测试环境，XPrem VNet 中具有 DC2 虚拟机。](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 此时，你的模拟 Azure 混合云环境就可供测试了。
   

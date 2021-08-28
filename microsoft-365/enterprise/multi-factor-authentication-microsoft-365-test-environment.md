@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
-description: 使用发送到适用于企业测试环境的 Microsoft 365 智能手机的短信配置多重身份验证。
-ms.openlocfilehash: 772fc5d5a05ca08f2fcb851f1e5399c1dd77828f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 使用发送到适用于企业测试环境的 Microsoft 365智能手机配置多重身份验证。
+ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356224"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570721"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365多重身份验证
 
 *本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
-若要为登录 Microsoft 365 或任何将 Azure AD 租户用于订阅的服务或应用程序提供额外的安全级别，可以启用 Azure AD 多重身份验证，该身份验证不仅需要用户名和密码来验证帐户。
+若要为登录 Microsoft 365 或任何将 Azure AD 租户用于订阅的服务或应用程序提供一个额外的安全级别，可以启用 Azure AD 多重身份验证，该身份验证不仅需要用户名和密码来验证帐户。
 
 使用多重身份验证，用户必须确认电话呼叫、键入短信发送的验证码，或在正确输入密码后验证智能手机上的应用是否进行身份验证。 只有在满足第二个身份验证因素后，他们才能登录。
   
@@ -38,10 +38,10 @@ ms.locfileid: "58356224"
 - [阶段 2：启用和测试 User 2 帐户的多重身份验证](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [阶段 3：使用条件访问策略启用和测试多重身份验证](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -120,7 +120,7 @@ ms.locfileid: "58356224"
 接下来，创建条件访问策略，要求 MFAUsers 组的成员进行多重身份验证。
 
 1. 在浏览器的新选项卡中，转到 [https://portal.azure.com](https://portal.azure.com) 。
-2. 选择 **Azure Active Directory**  >    >  **安全条件访问"。**
+2. 选择 **Azure Active Directory**  >  **安全**  >  **条件访问"。**
 3. 在"**条件访问 – 策略"** 窗格中，选择"**新建策略"。**
 4. 在"**新建**"窗格中，在"名称"**框中输入用户帐户的 MFA。** 
 5. 在"**分配"** 部分，选择"**用户和组"。**
