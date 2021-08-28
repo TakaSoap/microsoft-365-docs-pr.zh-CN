@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 211d8071d0b8fcf8c650acb15f2fa29ac9bed456b0c8eed8829a0c4502817d8d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a69a90db168bd58266c65c8573a233e1932e025c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817290"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568896"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>通过威胁分析跟踪和响应新出现的威胁
 
@@ -42,7 +42,7 @@ ms.locfileid: "53817290"
 - 查看抵御威胁或暴露给威胁的恢复能力
 - 确定可以采取的停止或包含威胁的操作
 
-威胁分析是一组来自专业 Microsoft 安全研究人员的报告，涉及最相关的威胁，包括：
+威胁分析是一组来自专家 Microsoft 安全研究人员的报告，涉及最相关的威胁，包括：
 
 - 活动威胁参与者及其活动
 - 热门和新的攻击技术
@@ -58,7 +58,7 @@ ms.locfileid: "53817290"
 
 ## <a name="view-the-threat-analytics-dashboard"></a>查看威胁分析仪表板
 
-威胁分析仪表板是获取与组织最相关的报告的主要起点。 它总结了以下各节中的威胁：
+威胁分析仪表板是获取与组织最相关的报告的最大起点。 它总结了以下各节中的威胁：
 
 - **最新威胁**：列出最新发布的威胁报告，以及具有活动警报和已解决警报的设备数量。
 - **高影响威胁**：列出对组织影响最大的威胁。 本部分按具有活动警报的设备数量对威胁进行排名。
@@ -66,7 +66,7 @@ ms.locfileid: "53817290"
 
 从仪表板中选择威胁以查看该威胁的报告。
 
-![威胁分析仪表板的图像](images/ta_dashboard.png)
+![威胁分析仪表板的图像。](images/ta_dashboard.png)
 
 ## <a name="view-a-threat-analytics-report"></a>查看威胁分析报告
 
@@ -76,8 +76,8 @@ ms.locfileid: "53817290"
 
 " **概述** "部分提供详细分析员报告的预览。 它还提供了突出显示威胁对组织的影响以及通过错误配置和未修补的设备暴露的图表。
 
-![威胁分析报告概述部分的图像 ](images/ta-overview.png)
- 
+![威胁分析报告的概述部分的图像。 ](images/ta-overview.png)
+_威胁分析报告的概述部分_
 
 #### <a name="assess-the-impact-to-your-organization"></a>评估对组织的影响
 
@@ -95,7 +95,7 @@ ms.locfileid: "53817290"
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析员报告：从 Microsoft 安全研究人员获取专家见解
 
-转到" **分析员报告** "部分，阅读详细的专家撰写。 大多数报告都提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的策略和技术、详细的建议列表和强大的 [威胁](advanced-hunting-overview.md) 搜寻指南。
+转到" **分析员报告** "部分，阅读详细的专家撰写。 大多数报告都提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的策略和技术、详尽的建议列表和强大的 [威胁](advanced-hunting-overview.md) 搜寻指南。
 
 [详细了解分析员报告](threat-analytics-analyst-reports.md)
 
@@ -106,13 +106,13 @@ ms.locfileid: "53817290"
 - **安全更新**：部署安全更新程序或漏洞修补程序
 - **Microsoft Defender 防病毒设置**
   - 安全智能版本
-  - 云端保护
+  - 云传递保护
   - PUA 保护 (可能不需要) 应用程序
   - 实时保护
 
-本节中的缓解信息包含来自 危险和漏洞管理[](next-gen-threat-and-vuln-mgt.md)的数据，它还提供报告中各个链接的详细深化信息。
+本节中的缓解信息包含来自 危险和漏洞管理[](next-gen-threat-and-vuln-mgt.md)的数据，它还提供报告中各个链接的详细向下钻取信息。
 
-![威胁分析报告的缓解部分的图像](images/ta-mitigations.png)
+![威胁分析报告的缓解部分的图像。](images/ta-mitigations.png)
 
 _威胁分析报告的缓解部分_
 

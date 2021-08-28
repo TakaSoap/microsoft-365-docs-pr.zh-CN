@@ -1,7 +1,7 @@
 ---
 title: 安全建议危险和漏洞管理
 description: 获取可操作的安全建议（按威胁、泄露可能性和价值危险和漏洞管理。
-keywords: 危险和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
+keywords: 危险和漏洞管理， Microsoft Defender for Endpoint tvm security recommendation， cybersecurity recommendation， actionable security recommendation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dde4eef3382c3a1c5e22a78b1965c30b46c9749dcb847c707ea418898aa7a3e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569941"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -68,9 +68,9 @@ ms.locfileid: "53863525"
 
 转到漏洞 **管理导航菜单**，然后选择"推荐"。  此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>危险和漏洞管理仪表板中危险和漏洞管理建议
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>仪表板中危险和漏洞管理建议
 
-在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与设备的[](tvm-exposure-score.md)Microsoft 安全[分数并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以更稳定地抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
+在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与你的[](tvm-exposure-score.md)[Microsoft 设备安全分数并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
 
 ![顶级安全建议卡片示例，具有四个安全建议。](images/top-security-recommendations350.png)
 
@@ -91,9 +91,9 @@ ms.locfileid: "53863525"
 
 有用的图标也会快速吸引你注意：
 
-- ![箭头命中目标](images/tvm_alert_icon.png) 可能的活动警报
-- ![红色 bug](images/tvm_bug_icon.png) 关联的公共攻击
-- ![光灯](images/tvm_insight_icon.png) 建议见解
+- ![箭头命中目标。](images/tvm_alert_icon.png) 可能的活动警报
+- ![红色 bug。](images/tvm_bug_icon.png) 关联的公共攻击
+- ![光灯。](images/tvm_insight_icon.png) 建议见解
 
 ### <a name="explore-security-recommendation-options"></a>探索安全建议选项
 
@@ -122,7 +122,7 @@ ms.locfileid: "53863525"
 
 ## <a name="request-remediation"></a>请求修正
 
-此危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
+修正危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>如何请求修正
 
@@ -134,7 +134,7 @@ ms.locfileid: "53863525"
 
 只有具有"异常处理"权限的用户才能添加异常。 [详细了解 RBAC 角色](user-roles.md)。
 
-为建议创建例外时，建议不再处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (按设备组) 。
+为建议创建例外时，建议不再处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (组设置) 。
 
 ### <a name="how-to-create-an-exception"></a>如何创建异常
 
@@ -142,7 +142,7 @@ ms.locfileid: "53863525"
 
 ![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
 
-填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞管理 [](tvm-remediation.md)"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
+填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞 [](tvm-remediation.md)管理"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

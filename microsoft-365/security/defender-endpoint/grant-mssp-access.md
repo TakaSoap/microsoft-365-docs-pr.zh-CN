@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e14188a797a99b506e3714ab3f0974e5d9f0c4578c495ae1c620db96180807f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b86df7e4b5ef5a0717e3f646726e9ef3ac4993f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890503"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570037"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP (托管安全) 访问 (预览) 
 
@@ -57,9 +57,9 @@ ms.locfileid: "53890503"
 
 2. 在 Customer Defender for Endpoint 中为相应的访问级别创建适用于终结点的 Defender 角色。
 
-    若要在客户策略中启用 RBAC Microsoft Defender 安全中心，请设置 >全局管理员或安全管理员权限的用户帐户访问 > **Permissions > Roles** 和"Turn on roles"。
+    若要在客户服务中启用 RBAC Microsoft Defender 安全中心，请设置 >全局管理员或安全管理员权限的用户帐户访问 > **Permissions > Roles** 和"Turn on roles"。
 
-    ![MSSP 访问的图像](images/mssp-access.png)
+    ![MSSP 访问的图像。](images/mssp-access.png)
 
     然后，创建 RBAC 角色以满足 MSSP SOC 层需求。 通过"分配的用户组"将这些角色链接到已创建的用户组。
 
@@ -89,7 +89,7 @@ ms.locfileid: "53890503"
 
     为此，在客户 AD 租户中，访问 Identity Governance： Catalogs，并添加新 **目录**。 在我们的示例中，我们将它称为 **MSSP Accesses**。
 
-    ![新目录的图像](images/goverance-catalog.png)
+    ![新目录的图像。](images/goverance-catalog.png)
 
     有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
@@ -105,16 +105,16 @@ ms.locfileid: "53890503"
     - Access 自动在 365 天后过期
 
     > [!div class="mx-imgBorder"]
-    > ![新访问包的图像](images/new-access-package.png)
+    > ![新访问包的图像。](images/new-access-package.png)
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
-4. **从客户 AAD 提供 MSSP 资源的访问请求链接：标识治理**
+4. **提供客户 AAD 中 MSSP 资源的访问请求链接：标识治理**
 
-    MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求会进入一个队列，等待 **MSSP 分析员审批者审批**。
+    MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，等待 **MSSP 分析员审批者审批**。
 
     > [!div class="mx-imgBorder"]
-    > ![访问属性的图像](images/access-properties.png)
+    > ![访问属性的图像。](images/access-properties.png)
 
     链接位于每个访问包的概述页面上。
 
@@ -126,7 +126,7 @@ ms.locfileid: "53890503"
 
     为此，请通过使用：访问客户的 myaccess。 `https://myaccess.microsoft.com/@<Customer Domain>`
 
-    示例：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+    例如：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 

@@ -1,7 +1,7 @@
 ---
 title: 尝试Microsoft 365 Defender环境中使用事件响应功能
 description: 在威胁检测中Microsoft 365 Defender事件响应功能，确定事件的优先级并管理事件、自动调查和使用高级搜寻。
-keywords: Microsoft 365 Defender试用版， 试用 Microsoft 365 Defender， 评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender试用版，请尝试 Microsoft 365 Defender，评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,19 +22,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 17b850cb26e9743afc807e3d72e3067eec2c7bd1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7338292b784cdad17548efc3dd148f3ea6a72b28
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256890"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568260"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>尝试Microsoft 365 Defender环境中使用事件响应功能
 
 **适用于：**
 - Microsoft 365 Defender
 
-本文是使用试验环境对事件进行调查和响应过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
+本文是使用试验环境对事件进行调查和响应的过程中第 2 步Microsoft 365 Defender [2](eval-defender-investigate-respond.md)步。 有关此过程详细信息，请参阅 [概述](eval-defender-investigate-respond.md) 文章。
 
 对模拟攻击[执行事件](eval-defender-investigate-respond-simulate-attack.md)响应后，下面是一些Microsoft 365 Defender功能：
 
@@ -48,9 +48,9 @@ ms.locfileid: "58256890"
 
 ## <a name="prioritize-incidents"></a>确定事件优先级
 
-在快速启动 Microsoft 365 Defender **>** 门户&事件&事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 & 门户>**事件** 和事件Microsoft 365 Defender事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
 " **最近的事件和警报** "部分显示过去 24 小时内收到的警报数和创建的事件数的图。
 
@@ -62,7 +62,7 @@ ms.locfileid: "58256890"
 
 从默认事件队列中，选择"**筛选器**"以查看"筛选器"窗格，可以从中指定一组特定的事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例。":::
 
 有关详细信息，请参阅确定 [事件的优先级](incident-queue.md)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "58256890"
 
 可以从事件的"管理事件 **"窗格中** 管理事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件的&quot;管理事件&quot;窗格示例":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件&quot;管理事件&quot;窗格的示例。":::
 
 可以从以下位置的"管理 **事件"链接显示** 此窗格：
 
@@ -111,11 +111,11 @@ ms.locfileid: "58256890"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心Microsoft 365 Defender":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心Microsoft 365 Defender。":::
 
 从操作中心，可以选择挂起的操作，然后在飞出窗格中批准或拒绝它们。 下面是一个示例。
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作。":::
 
 尽快 (批准或拒绝) 挂起的操作，以便自动调查可以继续并及时完成。
 
@@ -159,7 +159,7 @@ ms.locfileid: "58256890"
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（如果) ）或 Office 文档类型（如 Word 文件）。 <i> </i> <i></i>
+1. 从外部电子邮件帐户，将电子邮件发送到在搜寻环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（) ）或 Office 文档类型（如 Word 文件）。 <i> </i> <i></i>
 
 2. 打开从设备发送的电子邮件，如搜寻环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
@@ -167,7 +167,7 @@ ms.locfileid: "58256890"
 
 1. 打开Microsoft 365 Defender[门户](https://security.microsoft.com/)。
 
-2. 从导航窗格中，选择"搜寻>**高级搜寻"。**
+2. 从导航窗格中，选择"搜寻 **>高级搜寻"。**
 
 3. 构建一个查询，该查询从收集电子邮件事件开始。
 
@@ -186,7 +186,7 @@ ms.locfileid: "58256890"
       > [!NOTE]
       > 有关限制数据返回的筛选选项，请参阅下一步。
 
-      ![高级搜寻查询结果的示例](../../media/mtp/fig19.png)
+      ![高级搜寻查询结果的示例。](../../media/mtp/fig19.png)
 
         > [!NOTE]
         > 高级搜寻将查询结果显示为表格数据。 还可以选择查看其他格式类型（如图表）的数据。
@@ -200,7 +200,7 @@ ms.locfileid: "58256890"
 
    1. 单击查询中的结果行，以便可以检查记录。
 
-      ![选中高级搜寻结果时打开的检查记录侧面板示例](../../media/mtp/fig21.png)
+      ![检查记录侧面板的示例，该面板在选择高级搜寻结果时打开。](../../media/mtp/fig21.png)
 
 4. 现在，你已验证是否可以看到电子邮件，请为附件添加筛选器。 重点关注环境中具有附件的所有电子邮件。 对于此模拟，重点关注入站电子邮件，而不是从你的环境发送的电子邮件。 删除已添加的任何筛选器以查找邮件并添加"|其中 **AttachmentCount > 0** 和 **EmailDirection**  ==  **"Inbound""**
 
@@ -211,7 +211,7 @@ ms.locfileid: "58256890"
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包含有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
+5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId**。
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp**"，有助于确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 
@@ -224,7 +224,7 @@ ms.locfileid: "58256890"
 
 6. 接下来，使用 **EmailAttachmentInfo** 表中的 **SHA256** 值查找针对该哈希 (终结点上发生的 **DeviceFileEvents**) 文件操作。 此处的常用字段是附件的 SHA256 哈希。
 
-   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、 (在这种情况下已执行哪些操作、已筛选为仅包括 FileCreated) 事件和存储文件的位置。 还将包含与进程关联的帐户名称。
+   生成的表现在包含终结点 (Microsoft Defender for Endpoint) 的详细信息，例如设备名称、在这种情况下 (已执行哪些操作、已筛选为仅包括 FileCreated 事件) 以及文件存储位置。 还将包含与进程关联的帐户名称。
 
    ```console
    EmailEvents
@@ -258,40 +258,40 @@ ms.locfileid: "58256890"
 
 1. 在查询页面上，删除在"开始"搜寻说明的步骤 7 中添加的第 7 行和第 8 行，然后单击"**创建检测规则"。**
 
-   ![可在高级搜寻页面中单击创建检测规则的示例](../../media/mtp/fig22.png)
+   ![可在高级搜寻页面中单击创建检测规则的示例。](../../media/mtp/fig22.png)
 
    > [!NOTE]
    > 如果单击 **"创建检测规则** "，并且查询中出现语法错误，将不会保存检测规则。 仔细检查查询以确保没有错误。
 
 2. 使用允许安全团队了解警报的信息、生成警报的原因以及预期他们执行哪些操作，填写必填字段。
 
-   ![可在其中定义警报详细信息的创建检测规则页面示例](../../media/mtp/fig23.png)
+   ![可在其中定义警报详细信息的创建检测规则页面示例。](../../media/mtp/fig23.png)
 
    确保清楚填写字段，以帮助向下一位用户告知有关此检测规则警报的明智决定
 
 3. 选择此警报中影响的实体。 在这种情况下，请选择"**设备和** 邮箱 **"。**
 
-   ![创建检测规则页的示例，您可以在其中选择受影响实体的参数](../../media/mtp/fig24.png)
+   ![创建检测规则页的示例，您可以在其中选择受影响实体的参数。](../../media/mtp/fig24.png)
 
 4. 确定触发警报时应执行哪些操作。 在这种情况下，请运行防病毒扫描，但可能会执行其他操作。
 
-   ![创建检测规则页的示例，可在触发警报以帮助解决威胁时运行防病毒扫描](../../media/mtp/fig25.png)
+   ![创建检测规则页的示例，可在触发警报以帮助解决威胁时运行防病毒扫描。](../../media/mtp/fig25.png)
 
 5. 选择警报规则的范围。 由于此查询涉及设备，因此设备组根据 Microsoft Defender for Endpoint 上下文在此自定义检测中相关。 创建不包含设备作为受影响实体的自定义检测时，范围不适用。
 
-   ![创建检测规则页的示例，您可以在其中设置警报规则的范围，管理对你将看到的结果的预期](../../media/mtp/fig26.png)
+   ![创建检测规则页的示例，您可以在其中设置警报规则的范围，管理对你将看到的结果的预期。](../../media/mtp/fig26.png)
 
    对于此试点，你可能希望将此规则限制为生产环境中的测试设备的子集。
 
-6. 选择“**创建**”。 然后，从 **导航面板中选择** "自定义检测规则"。
+6. 选择 **“创建”**。 然后，从 **导航面板中选择** "自定义检测规则"。
 
-   ![菜单中的"自定义检测规则"选项示例](../../media/mtp/fig27a.png)
+   ![菜单中的"自定义检测规则"选项示例。](../../media/mtp/fig27a.png)
 
-   ![显示规则和执行详细信息的检测规则页面示例](../../media/mtp/fig27b.png)
+   ![显示规则和执行详细信息的检测规则页面示例。](../../media/mtp/fig27b.png)
 
    在此页中，可以选择将打开详细信息页面的检测规则。
 
-   ![电子邮件附件页的示例，您可以在其中查看规则执行的状态、触发的警报和操作、编辑检测等](../../media/mtp/fig28.png)
+   ![电子邮件附件页的示例，您可以在其中查看规则执行的状态、触发的警报和操作、编辑检测等。](../../media/mtp/fig28.png)
 
 <!--
 

@@ -1,6 +1,6 @@
 ---
 title: 第一个事件响应简介
-description: 响应事件的第一个事件的Microsoft 365 Defender。
+description: 响应事件的第一个事件的基本Microsoft 365 Defender。
 keywords: 事件， 警报， 调查， 关联， 攻击， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365， 事件响应， 网络攻击
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bec4ca87c3827c8b24fa7017c01b40a60fce80eecb636d6d91adf0ceb9b8ecf1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897768"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568812"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>第一个事件响应简介
 
@@ -46,15 +46,15 @@ ms.locfileid: "53897768"
   - 步骤 2： (控制、抑制和恢复) 
   - 步骤 3：事后评审
 
-美国国家标准和技术协会 NIST () 将安全事件定义为"实际或可能危及信息系统的机密性、完整性或可用性的事件;或系统处理、存储或传输的信息;或构成违反安全策略、安全程序或可接受使用策略的违反或即将发生的威胁。"
+美国国家标准和技术协会 NIST (NIST) 安全事件定义为"实际或可能危及信息系统的机密性、完整性或可用性的事件;或系统处理、存储或传输的信息;或构成违反安全策略、安全程序或可接受使用策略的违反或即将发生的威胁。"
 
 事件Microsoft 365 Defender是分析和事件响应的逻辑起点。 分析和修正事件通常包括安全运营团队大部分任务。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
-[![准备你的组织和Microsoft 365租户](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![准备你的组织和Microsoft 365租户。](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
-请确保你的组织和租户Microsoft 365[事件处理做好准备](first-incident-prepare.md)。
+确保你的组织和租户Microsoft 365[事件处理做好准备](first-incident-prepare.md)。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 64643873c9032af92d7093d5d75535cf3af118bc
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568344"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>检查 Microsoft Defender for Endpoint 中的传感器运行状况
 
@@ -43,7 +43,7 @@ ms.locfileid: "58509541"
 
 单击任何组将你引导到 **设备列表**，该列表根据你的选择进行筛选。
 
-![具有传感器问题的设备的屏幕截图磁贴](images/atp-devices-with-sensor-issues-tile.png)
+![具有传感器问题的设备的屏幕截图磁贴。](images/atp-devices-with-sensor-issues-tile.png)
 
 在 **"设备"** 列表上，可以按以下状态筛选运行状况列表：
 
@@ -58,7 +58,7 @@ ms.locfileid: "58509541"
 > [!NOTE]
 > 导出 CSV 格式的列表以显示未筛选的数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选，并且可能需要很长时间才能下载，具体取决于组织的大小。
 
-![设备列表页面的屏幕截图](images/atp-devices-list-page.png)
+!["设备"列表页面的屏幕截图。](images/atp-devices-list-page.png)
 
 单击错误配置或不活动的设备时，可以查看设备详细信息。
 

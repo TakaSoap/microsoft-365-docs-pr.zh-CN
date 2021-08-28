@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: fb639139e083ed613dea018131e7748cd063e37c
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 114c0809aab3dcd219b49fd015752a8dec166cee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372525"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567984"
 ---
 # <a name="step-1-create-a-test-base-account"></a>步骤 1：创建测试基础帐户
 
@@ -29,15 +29,15 @@ ms.locfileid: "58372525"
  
 1. 在 Azure **门户中搜索** "测试基础"。
 
-![创建测试基本帐户搜索图像](Media/CreateTestAccount1.png)
+![创建测试基本帐户搜索图像。](Media/CreateTestAccount1.png)
 
 2. 单击 **"添加"** 以创建测试基础帐户。
 
-![单击"添加"创建帐户](Media/CreateTestAccount2.png)
+![单击"添加"创建帐户。](Media/CreateTestAccount2.png)
 
 3.  阅读 ， ```Terms of Use``` 然后选中复选框以确认你对 的满意度 ```Terms of Use``` 。
 
-![查看使用条款](Media/CreateTestAccount3.png)
+![查看使用条款。](Media/CreateTestAccount3.png)
 
 4.  根据以下要求填写正确的信息： 
     -   订阅：资源组
@@ -45,7 +45,7 @@ ms.locfileid: "58372525"
 
 **目前，测试基础仅支持标准定价层。**
 
-![选择订阅、资源组并键入详细信息](Media/CreateTestAccount4.png)
+![选择订阅、资源组并键入详细信息。](Media/CreateTestAccount4.png)
 
 5.  最后，单击 ```Review + Create``` 以验证并启用新创建的帐户。
 

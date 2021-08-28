@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7628a46a2a6d166dcc37b551f2effcb42367084f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 145a22d0fdc37072f6f3047d3694e770bf9fb01a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533119"
+ms.locfileid: "58568332"
 ---
 # <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>使用Windows 10管理工具载入新设备
 
@@ -45,7 +45,7 @@ ms.locfileid: "58533119"
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>使用移动设备载入Microsoft Intune
 
-[![显示使用 Defender for Endpoint 的载入设备的 PDF Microsoft Intune](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
+[![显示使用 Defender for Endpoint 的载入设备的 PDF Microsoft Intune。](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
 
 请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 

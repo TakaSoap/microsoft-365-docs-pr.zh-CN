@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中管理允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6223720f6977d3c4399ad36e1ad29894feabe63d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 4ff987128047522a5f8cb20a76c81bd950c1b7cf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533683"
+ms.locfileid: "58568728"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -38,7 +38,7 @@ ms.locfileid: "58533683"
 >
 > 如果你的组织没有本文中所述的欺骗功能，请参阅使用欺骗智能策略和 EOP 中的欺骗智能见解管理欺骗发件人中的旧版欺骗 [管理体验](walkthrough-spoof-intelligence-insight.md)。
 
-在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
+在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能通过错误负 (错误) 。
 
 租户门户中的租户允许/阻止Microsoft 365 Defender提供了一种手动替代筛选裁定Microsoft 365的方法。 租户允许/阻止列表在传入邮件的邮件流 (不适用于组织内部邮件) 用户单击时。 可以指定以下类型的替代：
 
@@ -50,7 +50,7 @@ ms.locfileid: "58533683"
 - 要允许的文件。
 - 要允许的发件人电子邮件或域。
 
-本文介绍如何在 Microsoft 365 Defender 门户或 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置租户允许/阻止列表中的Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+本文介绍如何在 Microsoft 365 Defender 门户的租户允许/阻止列表中或在 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织配置条目，这些组织的邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -149,7 +149,7 @@ In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **P
    - **文件**：可以按操作 对结果 **进行分组**。
    - **欺骗：** 你可以按操作或欺骗 **类型****对结果进行分组**。
 
-   单击 **"搜索**"，输入值的全部或一部分，然后按 Enter 查找特定值。 完成后，单击"清除搜索 ![ "图标" ](../../media/m365-cc-sc-close-icon.png) **清除搜索"。**
+   单击 **"搜索**"，输入值的全部或一部分，然后按 Enter 查找特定值。 完成后，单击"清除 ![ 搜索图标"。](../../media/m365-cc-sc-close-icon.png) **清除搜索**。
 
    单击 **"筛选** "筛选结果。 显示在"筛选器 **"飞出** 控件中的可用值取决于所选的选项卡：
 
@@ -487,6 +487,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 例如，为以下域对添加允许条目：
 
 - **域**： gmail.com
-- **基础结构**： tms.mx.com
+- **基础结构**：tms.mx.com
 
-仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的发件人的邮件 tms.mx.com 反欺骗智能进行检查。
+仅允许 *来自该域* 的邮件和发送基础结构对进行欺骗。 不允许其他发件人 gmail.com 欺骗邮件。 来自来自其他域的其他域中发件人的邮件 tms.mx.com 欺骗智能进行检查。

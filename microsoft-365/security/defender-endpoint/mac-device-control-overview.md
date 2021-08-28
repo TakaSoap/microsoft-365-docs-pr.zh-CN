@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 40f783e8a99ef5bcbd3db516f65ff43812e83091fe93ace49562f5b45926afd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f24a610e82388cead88b68e33b76c6404d68ec9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868400"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570025"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -35,7 +35,7 @@ ms.locfileid: "53868400"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 macOS 的设备控件具有以下先决条件：
 
@@ -57,7 +57,7 @@ macOS 的设备控件具有以下先决条件：
 | **域** | `com.microsoft.wdav` |
 | **键** | deviceControl |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下各节。 |
 
 设备控制策略可用于：
 
@@ -68,9 +68,9 @@ macOS 的设备控件具有以下先决条件：
 
 例如，如果已就位的设备控制策略在设备上强制执行 (例如，对可移动媒体设备的访问权限受限) ，则向用户显示一条通知。
 
-![设备控制通知](images/mac-device-control-notification.png)
+![设备控制通知。](images/mac-device-control-notification.png)
 
-最终用户单击此通知时，在默认浏览器中打开一个网页。 您可以配置最终用户单击通知时打开的 URL。
+当最终用户单击此通知时，在默认浏览器中打开一个网页。 您可以配置最终用户单击通知时打开的 URL。
 
 |节|值|
 |:---|:---|
@@ -91,7 +91,7 @@ macOS 的设备控件具有以下先决条件：
 | **域** | `com.microsoft.wdav` |
 | **键** | removableMediaPolicy |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **Comments** | 有关字典内容的说明，请参阅以下各节。 |
 
 该策略的这一部分是分层的，允许实现最大灵活性并涵盖各种用例。 顶级是供应商，由供应商 ID 标识。 对于每个供应商，都有由产品 ID 标识的产品。 最后，对于每个产品，都有表示特定设备的序列号。
 
@@ -116,7 +116,7 @@ macOS 的设备控件具有以下先决条件：
 
 在可移动媒体部分下，有一个选项可以设置强制级别，它可以接受下列值之一：
 
-- `audit` - 在此强制级别下，如果对设备的访问权限受到限制，则向用户显示一条通知，但该设备仍可使用。 此强制级别可用于评估策略的有效性。
+- `audit` - 在此强制级别下，如果对设备的访问权限受到限制，则向用户显示一条通知，但是仍可以使用该设备。 此强制级别可用于评估策略的有效性。
 - `block` - 在此强制级别下，用户可以在设备上执行的操作仅限于策略中定义的操作。 此外，会向用户引发通知。 
 
 > [!NOTE] 
@@ -142,7 +142,7 @@ macOS 的设备控件具有以下先决条件：
     - `execute` - 允许对设备执行操作
 
 > [!NOTE]
-> 如果 `none` 权限级别存在 ，则忽略其他 (、 或 `read` `write` `execute`) 权限。
+> 如果 `none` 权限级别存在 ，则忽略 (、 或 `read` `write`) `execute` 权限。
 
 > [!NOTE]
 > 权限 `execute` 仅指执行 Mach-O 二进制文件。 它不包括脚本或其他类型的有效负载的执行。
@@ -150,7 +150,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **键** | 权限 |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 无 <br/> 阅读 <br/> 写入 <br/> execute |
 
@@ -160,7 +160,7 @@ macOS 的设备控件具有以下先决条件：
 
 在可移动媒体策略的顶层，可以选择在供应商级别定义更精细的限制。 
 
-字典 `vendors` 包含一个或多个条目，其中每个条目由供应商 ID 标识。
+字典 `vendors` 包含一个或多个条目，每个条目由供应商 ID 标识。
 
 |节|值|
 |:---|:---|
@@ -173,7 +173,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **键** | 权限 |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -190,7 +190,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **键** | 权限 |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -209,7 +209,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **键** | permission |
+| **键** | 权限 |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -287,19 +287,19 @@ macOS 的设备控件具有以下先决条件：
 1. 插入要查找其标识符的 USB 设备。
 1. 在 macOS 的顶级菜单中，选择"**关于此 Mac"。**
 
-    ![关于此 Mac](images/mac-device-control-lookup-1.png)
+    ![关于此 Mac。](images/mac-device-control-lookup-1.png)
 
 1. 选择 **"系统报告"。**
 
-    ![系统报告](images/mac-device-control-lookup-2.png)
+    ![系统报告。](images/mac-device-control-lookup-2.png)
 
 1. 从左侧列中，选择 **USB**。
 
-    ![所有 USB 设备的视图](images/mac-device-control-lookup-3.png)
+    ![所有 USB 设备的视图。](images/mac-device-control-lookup-3.png)
 
 1. 在 **"USB 设备树**"下，导航到插入的 USB 设备。
 
-    ![USB 设备的详细信息](images/mac-device-control-lookup-4.png)
+    ![USB 设备的详细信息。](images/mac-device-control-lookup-4.png)
 
 1. 将显示供应商 ID、产品 ID 和序列号。 将供应商 ID 和产品 ID 添加到可移动媒体策略时，必须仅在 之后添加部件 `0x` 。 例如，在下图中，供应商 ID 为 ， `1000` 产品 ID 为 `090c` 。
 
@@ -327,7 +327,7 @@ DeviceEvents
 mdatp device-control removable-media policy list
 ```
 
-此命令将输出到产品使用的设备控制策略的标准输出。 如果打印，请确保 (配置文件) 配置文件确实已从管理控制台推送到设备， (b) 它是一个有效的设备控制策略，如本文档中所述。 `Policy is empty`
+此命令将输出到产品使用的设备控制策略的标准输出。 如果打印，请确保 () 配置文件确实已从管理控制台推送到设备， (b) 它是一个有效的设备控制策略，如本文档中所述。 `Policy is empty`
 
 在策略已成功传递且插入了一个或多个设备的设备上，可以运行以下命令列出所有设备以及应用于它们的有效权限。
 

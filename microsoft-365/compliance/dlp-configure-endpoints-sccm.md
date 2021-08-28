@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用 Configuration Manager 在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: febe5148d6f4a341cd29d3950bc319d36bcfa0a6f0d4a4afe2c4ebb9038613b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569797"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
 
@@ -36,7 +36,7 @@ ms.locfileid: "53886332"
 
 3. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
 
-4. 选择 **"下载程序包**"，然后保存.zip文件。
+4. 选择 **"下载** 程序包"，然后保存.zip文件。
 
 5. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOnboardingScript.cmd 的文件*。
 
@@ -45,13 +45,13 @@ ms.locfileid: "53886332"
 7. 选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> Microsoft 365终结点数据丢失防护不支持在[OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)的"开箱即用体验" (载入) 阶段。 确保用户在运行完安装或升级Windows OOBE。
+> Microsoft 365在[OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)体验阶段，终结点数据丢失防护不支持 (载入) 载入。 确保用户在运行完安装或升级Windows OOBE。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试来验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)设备运行检测测试。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于挂起的 OOBE (或其他任何原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于挂起的 OOBE (任何其他原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
@@ -66,7 +66,7 @@ ms.locfileid: "53886332"
 
 可以在 Configuration Manager 中为配置项设置合规性规则，以更改设备上的示例共享设置。
 
-此规则应为 *修正合规性* 规则配置项，用于设置目标设备上注册表项的值，以确保它们有投诉。
+此规则应为修正 *合规性* 规则配置项，用于设置目标设备上注册表项的值以确保它们合规。
 
 通过以下注册表项设置配置：
 
@@ -117,7 +117,7 @@ Value: 0 or 1
 
 **网络保护**
 
-在审核或阻止模式下启用网络保护之前，请确保你已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
+在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
 
 **受控文件夹访问**
@@ -136,7 +136,7 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>使用当前分支Microsoft Endpoint Configuration Manager载设备
 
-如果使用 Microsoft Endpoint Configuration Manager当前分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果使用Microsoft Endpoint Configuration Manager分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
@@ -144,11 +144,11 @@ Value: 0 or 1
 
 2. 在导航窗格中，选择 **"设置**  >   **载入** >  **""载出"。**
 
-3. 选择Windows 10操作系统。
+3. 选择Windows 10作为操作系统。
 
 4. 在"**部署方法"** 字段中，选择 **"Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602"。**
 
-5. 选择 **"下载程序包**"，然后保存.zip文件。
+5. 选择 **"下载** 程序包"，然后保存.zip文件。
 
 6. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
@@ -164,11 +164,11 @@ Value: 0 or 1
 
 如果你正在使用当前分支Microsoft Endpoint Configuration Manager，请使用 Configuration Manager 控制台中的内置 Microsoft Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Microsoft Defender 高级威胁防护 - 监视](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
+如果使用 2012 R2 配置System Center，则监控由两部分组成：
 
 1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
 
-2. 检查设备是否与 Microsoft 365 Endpoint 数据丢失防护服务 (这可确保设备可以完成载入过程，并可以继续将数据报告给服务) 。
+2. 检查设备是否符合 Microsoft 365 Endpoint 数据丢失防护服务 (这可确保设备可以完成载入过程，并可以继续将数据报告给服务) 。
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>确认配置包已正确部署
 
@@ -182,7 +182,7 @@ Value: 0 or 1
 
     如果设备部署失败 (错误、不满足要求或失败状态) ，你可能需要对设备进行故障排除。  有关详细信息，请参阅 Microsoft [Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)。
 
-    ![显示成功部署（无错误）的 Configuration Manager](../media/sccm-deployment.png)
+    ![显示成功部署（无错误）的 Configuration Manager。](../media/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>检查设备是否符合 Microsoft 365 终结点数据丢失防护服务
 

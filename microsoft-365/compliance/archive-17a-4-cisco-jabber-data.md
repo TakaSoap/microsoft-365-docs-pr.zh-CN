@@ -12,24 +12,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 Cisco Jabber DataParser 连接器，以在 Microsoft 365 中导入和存档 Cisco Jabber 数据。
-ms.openlocfilehash: e008834ead87abaf28a13414fbca5668054041e7f05a7f738d57f4be73d1aae3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a8e116bde6a17c9b925d1a9fa172955eaed9248
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836216"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569185"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>设置连接器以存档 Cisco Jabber 数据
 
-使用[Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) 17a-4 LLC 将数据从 Cisco Jabber 导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 Cisco Jabber 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Cisco Jabber DataParser 连接器将 Cisco Jabber 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
+使用[Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) 17a-4 LLC 将数据从 Cisco Jabber 导入并存档到 Microsoft 365 组织的用户邮箱。 DataParser 包括一个 Cisco Jabber 连接器，配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 Cisco Jabber DataParser 连接器将 Cisco Jabber 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 
-Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Cisco Jabber 连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府法规策略。
+Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Cisco Jabber 连接器在 Microsoft 365导入和存档数据可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-cisco-jabber-data"></a>存档 Cisco Jabber 数据概述
 
-以下概述介绍了使用数据连接器在云中存档 Cisco Jabber 数据Microsoft 365。
+以下概述介绍使用数据连接器在云中存档 Cisco Jabber 数据Microsoft 365。
 
-![Cisco Jabber 17a-4 数据存档工作流](../media/CiscoJabberDataParserConnectorWorkflow.png)
+![Cisco Jabber 17a-4 数据存档工作流。](../media/CiscoJabberDataParserConnectorWorkflow.png)
 
 1. 你的组织与 17a-4 合作，以设置和配置 Cisco Jabber DataParser。
 
@@ -43,7 +43,7 @@ Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合�
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (步骤 3 中创建 Cisco Jabber DataParser 连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** 此Microsoft 365 合规中心。 默认情况下，此角色不会分配给角色组Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (步骤 1 中创建 Cisco Jabber DataParser 连接器，并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中的角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-a-cisco-jabber-dataparser-connector"></a>步骤 1：设置 Cisco Jabber DataParser 连接器
 
@@ -51,7 +51,7 @@ Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合�
 
 1. 转到 ， <https://compliance.microsoft.com> 然后单击数据连接器  >  **Cisco Jabber DataParser**。
 
-2. 在 **Cisco Jabber DataParser** 产品说明页上，单击"**添加连接器"。**
+2. 在 **Cisco Jabber DataParser** 产品说明页面上，单击"**添加连接器"。**
 
 3. 在"**服务条款"页上**，单击"接受 **"。**
 

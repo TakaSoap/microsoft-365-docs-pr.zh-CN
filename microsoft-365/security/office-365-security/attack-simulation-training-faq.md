@@ -17,35 +17,35 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解有关部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 For Office 365 Plan 2 组织中培训的常见问题。
+description: 管理员可以了解部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 计划 2 Office 365培训的常见问题。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12d00fee09ca21245812917fb00cff89c322e4112df970b25f853032344f6faf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873379"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568092"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
-攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织能够度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼有效负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
+攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
 
 有关攻击模拟培训入门的信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
-尽管整个模拟创建和计划体验设计为可自由流动且流畅，但企业规模运行的模拟通常需要规划。 本文有助于解决客户在其自己的环境中运行模拟时所看到的特定挑战。
+尽管整个模拟创建和计划体验设计为可自由流动且流畅，但企业规模运行的模拟通常需要进行规划。 本文有助于解决客户在其自己的环境中运行模拟时所看到的特定挑战。
 
 ## <a name="issues-with-end-user-experiences"></a>最终用户体验问题
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google 网页浏览阻止的网络钓鱼保险箱 URL
 
-URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
+URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前 **消息的模拟网络钓鱼 URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
 
-![Google Chrome 中的欺骗性网站提前警告](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Google Chrome 中的欺骗性网站提前警告。](../../media/attack-sim-chrome-deceptive-site-message.png)
 
 请注意，此问题不会影响Microsoft Edge。
 
-作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的本指南[](https://support.google.com/chrome/a/answer/7532419)允许访问 URL。
+作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的[](https://support.google.com/chrome/a/answer/7532419)本指南操作以允许访问 URL。
 
 有关 [攻击模拟培训当前](attack-simulation-training-get-started.md) 使用的 URL 列表，请参阅使用攻击模拟培训入门。
 
@@ -78,9 +78,9 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>攻击模拟培训报告不包含任何活动详细信息
 
-攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证 审核日志搜索是否在你的组织中打开 (是否默认启用) 。
+攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，审核日志验证你的组织中是否 (已打开该搜索（默认) ）。
 
-攻击模拟培训需要审核日志搜索，以便可以捕获、记录和重新读取事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
+攻击模拟培训需要审核日志搜索，以便可以捕获、记录和读回事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
 
 - 报告数据并非在所有报告中都可用。 报告将显示为空。
 - 由于数据不可用，因此将阻止培训作业。
@@ -98,20 +98,20 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 当模拟状态为 **计划** 时，模拟报告将大部分为空。 在此阶段，模拟引擎将解析目标用户电子邮件地址、展开通讯组、从列表中删除来宾用户等：
 
-![计划状态中的报告](../../media/attack-sim-empty-reporting.png)
+![在计划状态中报告。](../../media/attack-sim-empty-reporting.png)
 
 模拟进入正在进行阶段 **后** ，你将注意到信息开始欺骗报告：
 
-![报告为正在进行状态](../../media/attack-sim-in-progress.png)
+![报告状态为"正在进行"。](../../media/attack-sim-in-progress.png)
 
-转换到正在进行状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
+在过渡到"正在进行"状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
 
 - 前 60 分钟每 10 分钟。
 - 每隔 15 分钟，60 分钟到 2 天。
 - 每隔 2 天到 7 天每 30 分钟。
 - 每 7 天 60 分钟。
 
-"概述 **"页上** 的小部件提供组织基于模拟的安全状态在一段时间的快速快照。 由于这些小组件反映了整体安全状况和一段时间的旅程，因此在每个模拟市场活动完成后会更新它们。
+"概述 **"页上** 的小部件提供了组织基于模拟的安全状态在一段时间的快速快照。 由于这些小组件反映了整体安全状况和一段时间的旅程，因此在每个模拟市场活动完成后会更新它们。
 
 > [!NOTE]
 > 可以使用各种报告 **页面上** 的"导出"选项提取数据。
@@ -124,7 +124,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 - 放弃其凭据的用户。
 - 将邮件报告为网络钓鱼的用户。
 
-如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 该规则阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
+如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 它阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -133,7 +133,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ## <a name="other-frequently-asked-questions"></a>其他常见问题
 
-### <a name="q-what-is-the-recommended-method-to-target-users-for-simulation-campaigns"></a>问：对于模拟市场活动，建议采用什么方法面向用户？
+### <a name="q-what-is-the-recommended-method-to-target-users-for-simulation-campaigns"></a>问：对于模拟活动，建议采用什么方法面向用户？
 
 答：目标用户可以使用以下几种选项：
 
@@ -146,9 +146,9 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>问：从 CSV 导入或添加用户时，目标用户是否有限制？
 
-答：从 CSV 文件导入收件人或将单个收件人添加到模拟中的限制为 40，000。
+答：从 CSV 文件导入收件人或向模拟中添加单个收件人的限制为 40，000。
 
-收件人可以是单个用户或组。 一个组可能包含数百个或数千个收件人，因此不会对单个用户的数量设置实际限制。
+收件人可以是单个用户或组。 由于一个组可能包含数百个或数千个收件人，因此不会对单个用户的数量设置实际限制。
 
 管理大型 CSV 文件或添加多个单个收件人可能很麻烦。 使用 Azure AD 组将简化模拟的总体管理。
 
@@ -160,7 +160,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>问：如何切换到其他语言以用于我的管理门户和培训体验？
 
-答：在Microsoft 365或Office 365中，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
+答：Microsoft 365或Office 365用户帐户的语言配置是特定和集中的。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 请注意，配置更改可能需要 30 分钟才能在所有服务之间同步。
 
@@ -168,7 +168,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：可以！ 在 **向导中用于** 创建新模拟的最后一个"审阅模拟"页上，有一个 **"发送测试"选项**。 此选项将向当前登录的用户发送示例网络钓鱼模拟消息。 验证收件箱中的网络钓鱼邮件后，可以提交模拟。
 
-![在"审阅模拟"页上发送测试按钮](../../media/attack-sim-review-simulation-page.png)
+![在"审阅模拟"页上发送测试按钮。](../../media/attack-sim-review-simulation-page.png)
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>问：我能否将属于不同租户的用户作为同一模拟市场活动的一部分？
 

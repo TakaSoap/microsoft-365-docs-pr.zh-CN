@@ -24,18 +24,18 @@ ms.custom: migrationguides
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 27f1dff34e8e403afb3a8e45263d30a587952da5
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: 6fa205147dc3fa042d9bdb3a1d03c67f2b2efecb
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364477"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568872"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
 如果你正在考虑从非 Microsoft 终结点保护解决方案切换到 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) ，你的位置正确。 使用本文作为指南。
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="将终结点保护解决方案切换到 Defender for Endpoint":::
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="将终结点保护解决方案切换到 Defender for Endpoint。":::
 
 当你切换到 Defender for Endpoint 时，你首先在活动模式下使用非 Microsoft 防病毒/反恶意软件保护。 然后，在被动Microsoft Defender 防病毒配置设备，然后将设备载入 Defender for Endpoint。 接下来，配置终结点保护功能，将Microsoft Defender 防病毒设置为活动模式，并验证一切是否正常运行。 最后，删除非 Microsoft 解决方案。
 
@@ -43,7 +43,7 @@ ms.locfileid: "58364477"
 
 迁移到 Defender for Endpoint 的过程分为三个阶段，如下表所述：
 
-![MDE 迁移过程](images/phase-diagrams/migration-phases.png)
+![MDE 迁移过程。](images/phase-diagrams/migration-phases.png)
 
 |阶段 |说明 |
 |--|--|

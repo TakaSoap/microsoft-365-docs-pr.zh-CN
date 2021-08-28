@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0e64ccef09af6a8ab9ff3f798a0754a605a7f122
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 04c95cffec8f0c5bde417526d6b0cbc8dbe760ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507742"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568656"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>使用自定义报告Power BI
 
@@ -49,11 +49,11 @@ ms.locfileid: "58507742"
 
 - 单击 **"获取** \> **数据空白查询"**
 
-  ![创建空白查询的图像](images/power-bi-create-blank-query.png)
+  ![创建空白查询的图像。](images/power-bi-create-blank-query.png)
 
 - 单击 **"高级编辑器"**
 
-  ![打开的高级编辑器的图像](images/power-bi-open-advanced-editor.png)
+  ![打开的高级编辑器的图像。](images/power-bi-open-advanced-editor.png)
 
 - 复制以下内容并将其粘贴到编辑器中：
 
@@ -99,17 +99,17 @@ ms.locfileid: "58507742"
 
 - 单击 **"编辑凭据"**
 
-    ![编辑凭据的图像0](images/power-bi-edit-credentials.png)
+    ![编辑凭据 0 的图像。](images/power-bi-edit-credentials.png)
 
 - 选择 **"组织** \> **帐户""登录"**
 
-    ![集凭据的图像1](images/power-bi-set-credentials-organizational.png)
+    ![set credentials1 的图像。](images/power-bi-set-credentials-organizational.png)
 
 - 输入凭据并等待登录
 
 - 单击 **连接**
 
-    ![集凭据的图像2](images/power-bi-set-credentials-organizational-cont.png)
+    ![set credentials2 的图像。](images/power-bi-set-credentials-organizational-cont.png)
 
 - 现在，查询结果将显示为表格，你可以开始在它上面生成可视化效果！
 

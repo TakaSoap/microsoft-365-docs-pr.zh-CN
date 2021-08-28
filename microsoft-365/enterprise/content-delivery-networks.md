@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: 使用此信息可了解用户如何使用Office 365网络 (CDN) 以提高性能。
-ms.openlocfilehash: d50fc51307cdddb6e77a661ca5319d81ad1a0afc
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: a5213c1718db00cfeb49c437fc7178a527adb07f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585616"
+ms.locfileid: "58569521"
 ---
 # <a name="content-delivery-networks-cdns"></a>内容分发网络 (CDN)
 
@@ -37,7 +37,7 @@ CDN 有助于使最终用户Office 365且可靠。 云服务（Office 365 CDN）
 
 一CDN是地理上分布的网络，由数据中心中的代理服务器和文件服务器组成，这些服务器由高速主干网连接。 CDN 用于减少网站或服务中一组指定文件和对象的延迟和加载时间。 一CDN可以拥有数千个终结点，以最佳方式为来自任何位置的传入请求提供服务。
 
-CDN 通常用于为网站或服务（如 Javascript 文件、图标和图像）提供快速的通用内容下载，还可以提供对用户内容（如 SharePoint Online 文档库中的文件、流式媒体文件和自定义代码）的私有访问。
+CDN 通常用于为网站或服务（如 javascript 文件、图标和图像）提供快速的通用内容下载，还可以提供对用户内容（如 SharePoint Online 文档库中的文件、流式媒体文件和自定义代码）的私有访问。
 
 CDN 由大多数企业云服务使用。 云服务Office 365数百万客户下载混合的专有内容 (如电子邮件) 和常规内容 (如图标) 一次。 将每个人都使用的图像（如图标）尽可能靠近用户计算机会更有效。 每个云服务构建将此类通用内容存储在每个都市区，甚至全球每个主要 Internet 中心的 CDN 数据中心并不可行，因此会共享其中一些 CDN。
 
@@ -62,19 +62,19 @@ Office 365 CDN 由多个 CDN 组成，用户可以在多个位置（即 _源_）
 
 ![Office 365 CDN概念图。](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN概念图")
 
-Office 365 内的 **公共** 源中的内容可供匿名访问，并且任何具有托管资产 URL 的人员均可访问它。 由于对公用源中内容的访问是匿名的，因此只应使用它们来缓存非敏感的常规内容，如 Javascript 文件、脚本、图标和图像。 默认情况下，使用 Office 365 CDN 下载常规资源资产（如公共源中的 Office 365 客户端应用程序）。
+Office 365 内的 **公共** 源中的内容可供匿名访问，并且任何具有托管资产 URL 的人员均可访问它。 由于对公共源中内容的访问属于匿名访问，因此只能使用它们缓存非敏感的常规内容，如 javascript 文件、脚本、图标和图片。 默认情况下，使用 Office 365 CDN 下载常规资源资产（如公共源中的 Office 365 客户端应用程序）。
 
 **应用程序** 内的专用源Office 365 CDN用户内容（如 SharePoint Online 文档库、网站和专有图像）的专用访问权限。 使用动态生成的令牌保护为私有源中内容的访问提供保护，以便只有有权访问原始文档库或存储位置的用户才能访问它。 Office 365 CDN 中的私有源只能用于 SharePoint Online 内容，并且用户只能通过 SharePoint Online 租户重定向访问资产。
 
 Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
-有关如何使用 web 服务Office 365 CDN，请参阅使用 Office 365 Online SharePoint[网络](use-microsoft-365-cdn-with-spo.md)。
+有关如何使用 web 服务Office 365 CDN，请参阅使用 Office 365 Online SharePoint[内容交付网络](use-microsoft-365-cdn-with-spo.md)。
 
 若要观看一系列简短视频，这些视频提供有关使用 Office 365 CDN 的概念和 HOWTO 信息，请访问 SharePoint 开发人员模式和做法[YouTube 频道](https://aka.ms/sppnp-videos)。
 
 ## <a name="other-microsoft-cdns"></a>其他 Microsoft CDN
 
-虽然不是 Office 365 CDN 的一部分，但您可以在 Office 365 租户中使用这些 CDN 来访问 SharePoint 开发库、自定义代码和其他超出 Office 365 CDN 范围的用途。
+虽然不是 Office 365 CDN 的一部分，但您可以在 Office 365 租户中使用这些 CDN 来访问 SharePoint 开发库、自定义代码和超出 Office 365 CDN 范围的其他用途。
 
 ### <a name="azure-cdn"></a>Azure CDN
 
@@ -87,7 +87,7 @@ Office 365 CDN 服务被归入 SharePoint Online 订阅。
 
 有关如何使用 web 部件Azure CDN Web SharePoint的示例，请参阅将[SharePoint 客户端 Web](/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn)部件部署到 Azure CDN 。
 
-有关 PowerShell Azure CDN的信息，请参阅使用[PowerShell Azure CDN管理 PowerShell。](/azure/cdn/cdn-manage-powershell)
+有关 PowerShell Azure CDN的信息，请参阅[使用 PowerShell Azure CDN管理 PowerShell。](/azure/cdn/cdn-manage-powershell)
 
 ### <a name="microsoft-ajax-cdn"></a>Microsoft Ajax CDN
 
@@ -125,11 +125,11 @@ Microsoft **的 Ajax CDN** 是只读 CDN，提供许多热门开发库，包括 
 
 ## <a name="is-there-a-list-of-all-the-cdns-that-office-365-uses"></a>是否有由用户使用的所有 CDN Office 365？
 
-用户使用的 CDN Office 365随时会更改，并且在许多情况下，在一个CDN合作伙伴不可用时配置多个 CDN。 这些组使用的主要 CDN Office 365为：
+用户使用的 CDN Office 365随时更改，在许多情况下，如果一个 cdn 不可用，CDN配置多个 CDN。 这些组使用的主要 CDN Office 365为：
 
 |CDN  |Company  |使用情况  |链接  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Microsoft Azure         |公用源中的常规资产，SharePoint源中的用户内容         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Office 365 CDN     |Akamai         |公用源中的常规资产，SharePoint源中的用户内容         |[结合使用 Office 365 内容传送网络和 SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
 |Azure CDN     |Microsoft         |自定义代码、SharePoint 框架解决方案         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (只读)      |Microsoft         |Ajax、jQuery、ASP.NET、Bootstrap、Knockout.js库。         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
@@ -137,15 +137,15 @@ Microsoft **的 Ajax CDN** 是只读 CDN，提供许多热门开发库，包括 
 
 衡量直接从 Office 365 下载的数据与从特定 CDN 下载的数据之间的特定性能差异涉及许多因素，例如相对于租户和最近的 CDN 终结点的位置、CDN 在页面上提供的资产数量，以及网络延迟和带宽的暂时变化。 但是，简单的 A/B 测试有助于显示特定文件的下载时间差异。
 
-以下屏幕截图说明了 Office 365 中的本机文件位置与[Microsoft Ajax](/aspnet/ajax/cdn/overview)内容分发网络 上托管的相同文件之间的下载速度差异。 这些屏幕截图来自 11 开发人员工具Internet Explorer中的"网络"选项卡。  这些屏幕截图显示了热门库 jQuery 上的延迟。 若要显示此屏幕，请在Internet Explorer按 **F12** 并选择"网络"选项卡，其中显示一个Wi-Fi图标。
+以下屏幕截图演示了 Office 365 中的本机文件位置与[Microsoft Ajax](/aspnet/ajax/cdn/overview)内容分发网络 上托管的相同文件之间的下载速度差异。 这些屏幕截图来自 11 开发人员工具中Internet Explorer"网络"选项卡。  这些屏幕截图显示了热门库 jQuery 上的延迟。 若要显示此屏幕，Internet Explorer按 **F12** 并选择"网络"选项卡，该选项卡上会显示Wi-Fi图标。
   
 ![F12 网络的屏幕截图。](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
-此屏幕截图显示上载到 SharePoint Online 网站本身的母版页样式库。 上载库所花时间是 1.51 秒。
+此屏幕截图显示上载到联机网站本身的母版页SharePoint库。 上载库所花时间是 1.51 秒。
   
 ![加载时间 1.51 的屏幕截图。](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
-第二个屏幕截图显示由 Microsoft CDN。 这一次延迟约为 496 毫秒。 这是一项较大的改进，表明下载对象的总时间将持续一秒钟。
+第二个屏幕截图显示了 Microsoft CDN。 这一次延迟约为 496 毫秒。 这是一项较大的改进，表明下载对象的总时间将持续一秒钟。
   
 ![加载时间在 469 毫秒的屏幕截图。](../media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
 
@@ -160,7 +160,7 @@ Microsoft **的 Ajax CDN** 是只读 CDN，提供许多热门开发库，包括 
 
 有关适用于提供商的隐私和数据保护的Office 365 CDN，请访问以下内容：  
 
-- 在 Microsoft 信任Office 365了解有关保护[隐私和数据保护的信息](https://www.microsoft.com/trustcenter)
+- 在 Microsoft 信任Office 365了解有关[保护隐私和数据保护的信息](https://www.microsoft.com/trustcenter)
 - 在 Akamai 隐私信任中心了解有关[Akamai](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)隐私和数据保护的信息
 - 在 Azure 信任中心了解有关 Azure 隐私和数据保护 [的信息](https://azure.microsoft.com/overview/trusted-cloud/)
 
@@ -178,17 +178,17 @@ FQDN 列表及其利用 CDN 如何随着时间的推移而更改。 请参阅已
 
 ## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>能否使用我自己的CDN本地网络缓存内容？
 
-我们一直在寻找新方法来支持我们的客户需求，当前正在探索缓存代理解决方案和其他本地部署解决方案CDN的使用。
+我们一直在寻找新方法来支持我们的客户需求，并且目前正在探索缓存代理解决方案和其他本地部署CDN的使用。
 
-尽管这不是 Office 365 CDN 的一部分，但您也可以使用 **Azure CDN** 托管自定义 Web 部件、库和其他资源资产，从而允许您将访问键应用到 CDN 存储，并更好地控制 CDN 配置。 使用 Azure CDN不是免费的，并且需要 Azure 订阅。 若要详细了解如何配置 azure 存储Azure CDN，请参阅[快速入门：将 Azure](/azure/cdn/cdn-create-a-storage-account-with-cdn)存储帐户与 Azure CDN 集成。
+尽管这不是 Office 365 CDN 的一部分，但您也可以使用 **Azure CDN** 托管自定义 Web 部件、库和其他资源资产，这允许您将访问键应用到 CDN 存储，并更好地控制 CDN 配置。 使用 Azure CDN不是免费的，并且需要 Azure 订阅。 若要详细了解如何配置 azure 存储Azure CDN，请参阅[快速入门：将 Azure](/azure/cdn/cdn-create-a-storage-account-with-cdn)存储帐户与 Azure CDN 集成。
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>我使用 Azure ExpressRoute 进行Office 365，这是否更改了一切？
 
-[Azure ExpressRoute for Office 365](azure-expressroute.md)提供与与公共 internet 隔离的 Office 365 基础结构的专用连接。 这意味着客户端仍然需要通过非 ExpressRoute 连接进行连接，以连接到未明确包含在 ExpressRoute 支持的服务列表中的 CDN 和其他 Microsoft 基础结构。 若要详细了解如何路由特定流量，如发往 CDN 的请求，请参阅Office 365[网络流量管理。](routing-with-expressroute.md)
+[Azure ExpressRoute for Office 365](azure-expressroute.md)提供与Office 365 Internet 隔离的专用连接。 这意味着客户端仍然需要通过非 ExpressRoute 连接进行连接，以连接到未明确包含在 ExpressRoute 支持的服务列表中的 CDN 和其他 Microsoft 基础结构。 若要详细了解如何路由特定流量，如发往 CDN 的请求，请参阅Office 365[网络流量管理。](routing-with-expressroute.md)
 
 ## <a name="can-i-use-cdns-with-sharepoint-server-on-premises"></a>能否将 CDN 与本地 SharePoint服务器一起使用？
 
-使用 CDN 仅在 SharePoint Online 上下文中有意义，应避免使用 SharePoint Server。 这是因为，如果服务器位于本地或地理位置靠近，则地理位置的所有优势都不存在。 此外，如果与托管它的服务器存在网络连接，则无需 Internet 连接即可使用站点，因此无法检索CDN文件。 否则，如果CDN库和文件有一个可用且稳定的库，则应该使用资源库。
+仅在 SharePoint Online 上下文中使用 CDN 才有意义，应避免使用 SharePoint Server。 这是因为，如果服务器位于本地或地理位置靠近，则地理位置的所有优势都不存在。 此外，如果与托管它的服务器存在网络连接，则无需 Internet 连接即可使用站点，因此无法检索CDN文件。 否则，如果CDN库和文件有可用且稳定的库，则应该使用资源库。
   
 以下是可以用于返回的简短链接：[https://aka.ms/o365cdns]()
   

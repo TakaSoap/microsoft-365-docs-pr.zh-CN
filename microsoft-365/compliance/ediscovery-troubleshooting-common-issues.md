@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b4c5389ec650be18c9f65e7fc85f4166a8eef14
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b562e3d22557133630fa8c7c7d343432736b9f4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394584"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569605"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -60,7 +60,7 @@ ms.locfileid: "58394584"
 
 电子数据展示或内容搜索可能会生成以下错误： `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![搜索特定位置失败错误屏幕截图](../media/edisc-tshoot-specific-location-search-fails.png)
+![搜索特定位置失败错误屏幕截图。](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>解决方案
 
@@ -159,7 +159,7 @@ ms.locfileid: "58394584"
 
 运行电子数据展示搜索时，如果搜索不断失败，出现错误类似于"发生内部服务器错误 (500) "，可能需要仅在特定邮箱位置重新运行搜索。
 
-![内部服务器错误 500 屏幕截图](../media/edisc-tshoot-error-500.png)
+![内部服务器错误 500 屏幕截图。](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>解决方案
 
@@ -217,7 +217,7 @@ ms.locfileid: "58394584"
 
 4. 与 Microsoft 技术支持联系。
 
-## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误："不满足使用 HTTP (标头) 条件"
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误："不满足使用 HTTP 条件标头 () 条件"
 
 使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误：这是暂时性错误，通常发生在Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。
 
@@ -255,7 +255,7 @@ ms.locfileid: "58394584"
 
 运行以下脚本以发现最近七天内启动的导出作业数仍在运行。
 
-1. 连接安全[&合规中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+1. 连接安全[&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 运行以下脚本以收集有关当前导出作业正在触发限制的信息：
 

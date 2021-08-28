@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b72291e1c5b63cea65b6990a82e9de24cfc8fd5ea2ae75e31b82bc4033a0bc5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fb08635f50eedbf5fd96b8abc64ef9dfae60cbf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800111"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569689"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -34,17 +34,17 @@ ms.locfileid: "53800111"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-实时响应使安全运营团队能够即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
+实时响应使安全运营团队可以即时访问 (也称为计算机) 使用远程 shell 连接的设备。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 
-实时响应旨在增强调查，使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁并主动搜寻新出现的威胁。
+实时响应旨在通过使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁和主动搜寻新出现的威胁来增强调查。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
-使用实时响应，分析员可以执行以下所有任务：
+通过实时响应，分析员可以执行以下所有任务：
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载新 (！) 。
+- 在后台下载文件 (新的！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
@@ -54,7 +54,7 @@ ms.locfileid: "53800111"
 
 - **验证是否正在运行受支持的版本Windows。**
 
-  设备必须运行以下版本之一Windows
+  设备必须运行以下版本之一的 Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -64,8 +64,8 @@ ms.locfileid: "53800111"
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
-    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
 
 - **从高级设置页面启用实时响应**。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53800111"
 
   您将收到以下错误：
 
-  ![错误消息的图像](images/live-response-error.png)
+  ![错误消息的图像。](images/live-response-error.png)
 
 - **启用实时响应未签名脚本执行 (** 可选) 。
 
@@ -99,7 +99,7 @@ ms.locfileid: "53800111"
   只有已预配了相应权限的用户才能启动会话。 有关角色分配详细信息，请参阅 [创建和管理角色](user-roles.md)。
 
   > [!IMPORTANT]
-  > 将文件上载到库的选项仅适用于具有"管理安全性设置"权限的用户。
+  > 将文件上载到库的选项仅适用于具有"管理安全设置"权限的用户。
   > 对于仅具有委派权限的用户，按钮显示为灰色。
 
   根据已授予的角色，可以运行基本或高级实时响应命令。 用户权限由 RBAC 自定义角色控制。
@@ -129,7 +129,7 @@ ms.locfileid: "53800111"
 
 4. 使用内置命令执行调查工作。 有关详细信息，请参阅实时 [响应命令](#live-response-commands)。
 
-5. 完成调查后，选择"断开连接 **会话"，** 然后选择"确认 **"。**
+5. 完成调查后，选择断开连接 **会话**，**然后选择确认。**
 
 ## <a name="live-response-commands"></a>实时响应命令
 
@@ -150,7 +150,7 @@ ms.locfileid: "53800111"
 |`connections`|显示所有活动连接。|
 |`dir`|显示目录中的文件和子目录的列表。|
 |`drivers`|显示设备上安装的所有驱动程序。|
-|`fg <command ID>`|将指定的作业放在前台的前台，使其成为当前作业。 <br> 注意：fg 从作业（而不是 PID）获得可用的"命令 ID"|
+|`fg <command ID>`|将指定的作业放在前台的前台，使其成为当前作业。 <br> 注意：fg 从作业（而不是 PID）接受可用的"命令 ID"|
 |`fileinfo`|获取有关文件的信息。|
 |`findfile`|在设备上按给定名称查找文件。|
 |`getfile <file_path>`|下载文件。|
@@ -205,12 +205,12 @@ ms.locfileid: "53800111"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
+|`getfile "C:\windows\some_file.exe" &`|开始下载名为 *some_file.exe* 的文件。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 
 ### <a name="put-a-file-in-the-library"></a>将文件放入库中
 
-实时响应具有一个库，您可以将文件放入其中。 库存储可在 (级实时响应) 运行的文件，如脚本和脚本。
+实时响应具有一个库，您可以将文件放入其中。 库存储可在 (级实时响应) 运行的文件，例如脚本库。
 
 实时响应允许运行 PowerShell 脚本，但是必须先将文件放入库中，然后才能运行它们。
 
@@ -218,13 +218,13 @@ ms.locfileid: "53800111"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **Upload文件到库。**
+1. 单击 **Upload文件到库**。
 
 2. 单击 **"** 浏览"，然后选择文件。
 
 3. 提供简要说明。
 
-4. 指定您是否要覆盖同名的文件。
+4. 指定是否覆盖同名文件。
 
 5. 如果需要，请了解脚本需要哪些参数，请选中"脚本参数"复选框。 在文本字段中，输入示例和说明。
 
@@ -276,7 +276,7 @@ ms.locfileid: "53800111"
   <command name> -type file -id <file path> - auto
   ```
 
-  或者
+  或
 
   ```powershell
   remediate file <file path> - auto`

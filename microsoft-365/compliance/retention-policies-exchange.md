@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
-ms.openlocfilehash: f735520841531360e5fa943ebecd832ab60cfc858a61c84feec572af04eebf71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d927927aea3f27ecfb99ca68b37d89820efda006
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899905"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569557"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
@@ -61,7 +61,7 @@ ms.locfileid: "53899905"
 
 如果保留设置为“保留后删除”：
 
-![电子邮件和公用文件夹中的保留流关系图](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![电子邮件和公用文件夹的保留流关系图。](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **如果邮件在保留期限内被用户修改或永久删除**（使用 SHIFT+DELETE 或从“已删除邮件”中删除）：邮件会移动到（被编辑时会复制到）“可恢复的项目”文件夹。 因此会定期运行一个计时器作业，识别超过保留期限的邮件，并在保留期限结束后 14 天内将这些邮件永久删除。 请注意，默认设置是 14 天，但可以将其配置为最多 30 天。
 
@@ -83,7 +83,7 @@ ms.locfileid: "53899905"
 
 ## <a name="user-notification-of-expiry-date"></a>过期日期的用户通知
 
-与其他 Microsoft 365 工作负载的保留策略不同，Exchange 的保留策略会显示用户状态，方法是在每封电子邮件的顶部显示项目到期日期最短的保留策略的名称以及该项目的计算到期日期。 如果保留策略未删除项目（仅保留），则用户看不到此通知。
+与其他 Microsoft 365 工作负载的保留策略不同，Exchange 的保留策略会显示用户状态，方法是在每封电子邮件的顶部显示项目到期日期最短的保留策略的名称以及该项目的计算到期日期。如果保留策略不会删除项（仅保留），则用户不会看到此通知。
 
 如果将保留标签应用于电子邮件，则始终显示该标签的名称和相应的到期日期，并将替换应用于邮箱的任何保留策略中的名称和日期。
 

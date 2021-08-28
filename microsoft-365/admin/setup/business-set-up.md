@@ -29,13 +29,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: 了解适用于 Microsoft 365 商业高级版的安装步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: b3e15ecefd2130d1a15875128d0519b80b486eca
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+description: 了解适用于以下用户的Microsoft 365 商业高级版步骤，包括添加域和用户、设置安全策略等。
+ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377913"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568188"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
 
@@ -47,7 +47,7 @@ ms.locfileid: "58377913"
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加域、用户和设置策略
 
-当你购买Microsoft 365 商业高级版时，可以选择使用你拥有的域，也可以选择在注册期间购买[一个域](../../business-video/sign-up.md)。
+当你购买Microsoft 365 商业高级版时，可以选择使用你拥有的域，或在注册期间购买一[个](../../business-video/sign-up.md)。
 
 - 如果你在注册时购买了新域，则域已全部设置好，你可以继续[添加用户并分配许可证](#add-users-and-assign-licenses)。
 
@@ -83,9 +83,9 @@ ms.locfileid: "58377913"
 
 在向导中添加的任何用户都会自动获得Microsoft 365 商业高级版许可证。
 
-![向导中"添加新用户"页面的屏幕截图](../../media/addnewuserspage.png)
+![向导中"添加新用户"页的屏幕截图。](../../media/addnewuserspage.png)
 
-1. 如果你Microsoft 365 商业高级版订阅的现有用户 (，例如，如果你使用 Azure AD 连接) ，你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
+1. 如果你Microsoft 365 商业高级版订阅的现有用户 (，例如，如果你已使用 Azure AD 连接) ，则你现在可以选择为其分配许可证。 继续操作，并为这些用户添加许可证。
 
 2. 添加用户之后，还将显示与添加的新用户共享凭据的选项。可以选择打印、通过电子邮件发送或下载凭据。
 
@@ -109,12 +109,12 @@ ms.locfileid: "58377913"
 
 在向导中设置的策略将自动应用于名为 ["](/office365/admin/create-groups/compare-groups#security-groups) 所有用户" *的安全组*。 还可以创建其他组，以在管理中心向分配策略。
 
-1. 在 **"增强对高级** 网络威胁的保护"上，建议你接受默认设置，Office 365 [高级](../../security/office-365-security/defender-for-office-365.md)威胁防护扫描应用中的文件和Office链接。
+1. 在 **"增强对高级** 网络威胁的保护"上，建议接受默认设置，让高级威胁防护Office 365 [](../../security/office-365-security/defender-for-office-365.md)扫描应用中的文件和Office链接。
 
     !["增强保护"页面的屏幕截图。](../../media/increasetreatprotection.png)
 
 
-2. 在"防止泄露敏感数据"页上，接受默认设置以打开 Office 365 数据丢失防护 (DLP) 以跟踪 Office 应用中的敏感数据并防止在组织外部意外共享这些数据。
+2. 在"防止泄露敏感数据"页上，接受默认设置以启用 Office 365 数据丢失防护 (DLP) ，以跟踪 Office 应用中的敏感数据并防止在组织外部意外共享这些数据。
 
 3. On the **Protect data in Office for mobile** page， leave mobile app management on， expand the settings and review them， and then select Create mobile app management **policy**.
 
@@ -123,13 +123,13 @@ ms.locfileid: "58377913"
 
 ## <a name="secure-windows-10-pcs"></a>保护 Windows 10 电脑
 
-在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。 有关[完整说明，Windows 10](secure-win-10-pcs.md)保护计算机安全。
+在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **你的Windows 10计算机"。** 选择 **"视图** "开始。 请参阅[保护Windows 10计算机](secure-win-10-pcs.md)，了解完整说明。
 
 ## <a name="deploy-office-365-client-apps"></a>部署Office 365客户端应用
 
-如果选择在安装过程中自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录到 Azure AD 后，这些应用将安装在 Windows 10 设备上。
+如果选择在安装过程中自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录 Azure AD 后，这些应用将安装在 Windows 10 设备上。
 
-若要在Office iOS 或 Android 设备上安装移动设备，请参阅为 Microsoft 365 商业高级版[设置移动设备](set-up-mobile-devices.md)。
+若要在Office iOS 或 Android 设备上安装移动设备，请参阅为用户[Microsoft 365 商业高级版移动设备](set-up-mobile-devices.md)。
 
 也可以单独安装Office安装。 有关[说明Office在 PC 或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
 

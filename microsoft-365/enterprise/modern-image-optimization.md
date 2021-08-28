@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何使用 SharePoint Online 中包含的工具优化 SharePoint Online 新式网站页面中的图像。
-ms.openlocfilehash: 68e309974cca8af2280dddfc76e744234a1e17ae8b5deac465c1bbadcf4722fa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0bc9132a890c25804fa262bd494452db702d2a06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870484"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570061"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化图像
 
@@ -53,7 +53,7 @@ ms.locfileid: "53870484"
 
 如果“**检测到大图像**”结果显示在结果的“**需要注意**”部分，则可以单击结果以查看其他详细信息。
 
-![页面诊断工具结果](../media/modern-portal-optimization/pagediag-large-images.png)
+![页面诊断工具结果。](../media/modern-portal-optimization/pagediag-large-images.png)
 
 ## <a name="remediate-large-image-issues"></a>修正大图像问题
 
@@ -61,7 +61,7 @@ ms.locfileid: "53870484"
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
-![页面加载时间结果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![页面加载时间结果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >页面加载时间可能由于网络加载、具体时间和其他暂时条件等各种因素而有所不同。 应在更改前后多次测试页面加载时间，以帮助求出结果平均值。

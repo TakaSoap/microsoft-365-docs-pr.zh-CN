@@ -1,6 +1,6 @@
 ---
 title: 评估Microsoft 365 Defender标识概述，设置评估
-description: 评估标识Microsoft 365 Defender包括要求、启用或激活 eval 以及设置试点或测试的步骤。
+description: 评估标识Microsoft 365 Defender的步骤，包括要求、启用或激活 eval 以及设置试点或测试。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 50415962698802fc263ffb8766a4db3651ff6c9e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a87b890191861677db604050814dd89fb39a93fc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568836"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>评估 Microsoft Defender 标识概述
 
@@ -34,12 +34,12 @@ ms.locfileid: "58247970"
 **适用于：**
 - Microsoft 365 Defender
 
-本文概述了启用和试用 Microsoft Defender for Identity 的过程。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且你已创建了Microsoft 365 Defender[](eval-overview.md)[评估环境](eval-create-eval-environment.md)。 
+本文概述了启用和试用 Microsoft Defender for Identity 的过程。 在开始此过程之前，请确保你已查看用于评估Microsoft 365 Defender并且你已创建了Microsoft 365 Defender[](eval-overview.md)[评估环境](eval-create-eval-environment.md)。 
 <br>
 
 使用以下步骤启用和试用 Microsoft Defender for Identity。
 
-![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤](../../media/defender/m365-defender-identity-eval-steps.png)
+![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-identity-eval-steps.png)
 
 下表介绍了图中的步骤。
 

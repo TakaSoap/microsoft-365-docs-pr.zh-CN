@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
-description: 了解如何为组创建Microsoft 365策略。
-ms.openlocfilehash: 20d993ed4a799c68b33c9187c8b4b2021731e9415c6dc39726543343bec4517a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何为组创建命名Microsoft 365策略。
+ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853076"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568224"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365组命名策略
 
 可以使用组命名策略为组织中用户创建的组强制实施一致的命名策略。 命名策略可帮助你和用户识别组的功能、成员身份、地理区域或创建组的用户。 命名策略还可以帮助对通讯簿中的组进行分类。 可以使用该策略阻止在组名称和别名中使用的特定单词。
 
-命名策略应用于跨所有组工作负载创建的组 (如 Outlook、Microsoft Teams、SharePoint、Planner、Yammer 等) 。 它将应用于组名和组别名。 当用户创建组时，以及为现有组编辑组名称、别名、描述或头像时，也会应用该规则。
+命名策略应用于跨所有组工作负载创建的组 (如 Outlook、Microsoft Teams、SharePoint、Planner、Yammer 等) 。 它将应用于组名和组别名。 当用户创建组时，以及为现有组编辑组名称、别名、说明或头像时，也会应用该规则。
 
 > [!TIP]
 > A Microsoft 365 group naming policy only applies to Microsoft 365 groups. 它不适用于在 Exchange Online 中创建的通讯Exchange Online。 若要为通讯组创建命名策略，请参阅创建通讯 [组命名策略](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
@@ -79,7 +79,7 @@ ms.locfileid: "53853076"
 - 前缀和后缀可以包含在组名和组别名中支持的特殊字符。 当前缀和后缀包含组别名中不允许的特殊字符时，它们仅应用于组名称。 因此，在这种情况下，应用于组名的前缀和后缀将不同于应用于组别名的前缀和后缀。
 
   > [!NOTE]
-  > 组名称中的 (.) 或连字符 (-) ，但名称开头或结尾处除外。 在 (_) 名称中的任何位置（包括名称的开头或结尾处）都允许使用下划线字符。
+  > 组名称 (.) 或连字符 (-) ，但名称开头或结尾处除外。 在 (_) 名称中的任何位置（包括名称的开头或结尾处）都允许使用下划线字符。
 
 - 如果正在使用已Yammer Office 365组，请避免在命名策略中使用下列字符 \# ：@、、、、、。 \[ \] \<, and \> 如果这些字符在命名策略中，Yammer用户将无法创建组。
 
@@ -128,7 +128,7 @@ ms.locfileid: "53853076"
 5. 在每个 **行的属性** 和 **字符串** 之间选择，然后指定属性或字符串。
 6. 添加所需的前缀和后缀后，单击"保存 **"。**
 
-![Screenshot of the groups naming policy settings in Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Screenshot of the groups naming policy settings in Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>相关主题
 

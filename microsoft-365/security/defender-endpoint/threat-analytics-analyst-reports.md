@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 150ae09184298cf57887cfb7e9b7efe96a600445ea1a246944e5085b48d9ec0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817336"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568596"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>威胁分析中的分析员报告
 
@@ -36,13 +36,13 @@ ms.locfileid: "53817336"
 
 每个 [威胁分析报告都](threat-analytics.md) 包括动态部分和一个称为分析员报告的综合 _书面部分_。 若要访问此部分，请打开关于跟踪的威胁的报告，然后选择"分析 **员报告"** 选项卡。
 
-![威胁分析报告的分析员报告部分的图像](images/ta-analyst-report-small.png)
+![威胁分析报告的分析员报告部分的图像。](images/ta-analyst-report-small.png)
 
 _威胁分析报告的分析员报告部分_
 
 ## <a name="scan-the-analyst-report"></a>扫描分析员报告
 
-分析员报告的每个部分旨在提供可操作的信息。 尽管报告各不相同，但大多数报告包括下表中描述的部分。
+分析员报告的每个部分旨在提供可操作的信息。 虽然报告各不相同，但大多数报告包含下表中描述的部分。
 
 <br>
 
@@ -53,7 +53,7 @@ _威胁分析报告的分析员报告部分_
 |执行摘要|威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。|
 |分析|有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面|
 |MITRE ATT&观察到的 CK 技术|观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/)|
-|[缓解措施](#apply-additional-mitigations)|推荐，可以停止或帮助降低威胁的影响。 本部分还包括作为威胁分析报告的一部分未动态跟踪的缓解。|
+|[缓解措施](#apply-additional-mitigations)|推荐可以停止或帮助降低威胁影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
 |[检测详细信息](#understand-how-each-threat-can-be-detected)|Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。|
 |[高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting)|[用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。|
 |参考|Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。|
@@ -75,7 +75,7 @@ _威胁分析报告的分析员报告部分_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>了解如何检测每个威胁
 
-分析员报告还提供来自 Microsoft Defender 终结点防病毒的检测以及终结点检测和 _响应 (EDR) 功能_。
+分析员报告还提供来自 Microsoft Defender for Endpoint 防病毒的检测以及终结点 _检测和_ 响应 (EDR) 功能。
 
 ### <a name="antivirus-detections"></a>防病毒检测
 
@@ -86,7 +86,7 @@ _威胁分析报告的分析员报告部分_
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>终结点检测和响应 (EDR) 警报
 
-EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如防病毒、网络保护、防篡改保护) 用作强大的信号源。
+EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如防病毒、网络保护、防篡改保护) 用作强大的信号源。
 
 与防病毒检测列表一样，某些EDR警报旨在一般标记可能未与跟踪威胁关联的可疑行为。 在这种情况下，报告将清楚地将警报标识为"通用"，并且它并不影响报告中的任何图表。
 

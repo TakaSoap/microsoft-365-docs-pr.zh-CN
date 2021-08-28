@@ -15,26 +15,26 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: 了解组、组Microsoft 365组Teams之间的SharePoint
-ms.openlocfilehash: 7fa543764be9483a6d600d60a1e61cc2f54067e0f06a02ff330e7c2656c9889a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解组、用户和Microsoft 365之间的Teams交互SharePoint
+ms.openlocfilehash: 391ee9dcf5837f149a592511d1e189549a340236
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853016"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568212"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 组、Teams 和 SharePoint 之间的设置交互
 
-Microsoft 365 Microsoft 365中的Microsoft 365组、Microsoft Teams 和 SharePoint 的一些设置（尤其是与共享和组/团队SharePoint网站创建相关）相互重叠。 本文提供了这些交互的说明，以及如何使用这些设置的最佳实践。
+Microsoft 365 Microsoft 365中的Microsoft 365组、Microsoft Teams 和 SharePoint 的一些设置，尤其是与共享和组/团队SharePoint网站创建相关的设置相互重叠。 本文提供了这些交互的说明，以及如何使用这些设置的最佳实践。
 
-![维恩图SharePoint、Teams和组功能](../media/teams-groups-sharepoint-venn.png)
+![维恩图SharePoint、Teams和组功能。](../media/teams-groups-sharepoint-venn.png)
 
-## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>设置对SharePoint和团队的影响
+## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>自定义设置SharePoint组和团队的影响
 
 |SharePoint设置|说明|对组Microsoft 365的影响Teams|建议|
 |:-----------------|:----------|:---------------------------------------|:-------------|
-|组织和网站的外部共享|确定是否可以与组织外部人员共享网站、文件和文件夹。|如果SharePoint、组和Teams设置不匹配，团队中的来宾可能会被阻止访问网站，或者可能会发生意外的外部访问。|更改共享设置时，请检查组设置Teams组设置SharePoint组连接的团队网站的网站设置。<br><br> 请参阅 [与团队中的来宾协作](./collaborate-as-team.md)|
-|域允许/阻止|允许或阻止与指定域共享内容。|组和Teams无法识别SharePoint列表或阻止列表。 域中的用户不允许SharePoint可以通过团队SharePoint访问网站或内容。|管理 Azure AD 的域允许/阻止列表，SharePoint一起。 创建组织范围的管理流程以允许和阻止域。<br><br>请参阅[SharePoint域设置和](/sharepoint/restricted-domains-sharing)Azure [AD 域设置](/azure/active-directory/b2b/allow-deny-list)|
+|组织和网站的外部共享|确定是否可以与组织外部人员共享网站、文件和文件夹。|如果SharePoint、组和Teams设置不匹配，团队中的来宾可能会被阻止访问网站，或者可能会发生意外的外部访问。|更改共享设置时，请检查组设置Teams组设置，SharePoint组连接的团队网站的网站设置。<br><br> 请参阅 [与团队中的来宾协作](./collaborate-as-team.md)|
+|域允许/阻止|允许或阻止与指定域共享内容。|组和Teams无法识别SharePoint列表或阻止列表。 域中不允许的用户SharePoint可以通过团队SharePoint访问网站或内容。|管理 Azure AD 的域允许/阻止列表，SharePoint一起。 创建组织范围的管理流程以允许和阻止域。<br><br>请参阅[SharePoint域设置和](/sharepoint/restricted-domains-sharing)Azure [AD 域设置](/azure/active-directory/b2b/allow-deny-list)|
 |仅允许特定安全组中的用户在外部共享|指定可在外部共享SharePoint、文件夹和文件的安全组。|此设置不会阻止团队所有者在外部共享团队。 团队来宾有权访问关联的SharePoint网站。||
 |SharePoint网站共享设置|确定谁可以直接在团队成员身份之外共享网站。 这由团队或网站所有者配置。|此设置不会直接影响团队，但可以允许用户添加到网站，并且无法访问团队本身或其他Teams资源|请考虑使用此设置来限制直接共享网站并通过团队管理网站访问。|
 |让用户从网站起始页SharePoint网站OneDrive|指定用户能否创建新的SharePoint网站。|如果关闭此设置，用户仍可通过创建团队来创建与组连接的团队网站。||

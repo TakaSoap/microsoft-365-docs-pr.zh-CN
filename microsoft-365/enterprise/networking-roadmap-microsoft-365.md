@@ -15,22 +15,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 实现网络Microsoft 365路线图。
-ms.openlocfilehash: 7c8c67305ef67e9e7a20b2d341f339b8bdbab4090426861e37b5b5277bb249e7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800975"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570049"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365
 
 Microsoft 365包括协作和生产力云服务、Microsoft Intune以及许多企业标识和安全服务Microsoft Azure。 所有这些基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
 
-载入时Microsoft 365一个关键部分是确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云与针对到内部部署数据中心的流量和中央 Internet 连接进行了优化的传统网络不同。 
+载入时Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到内部部署数据中心和中央 Internet 连接的流量进行优化的传统网络。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
-## <a name="plan"></a>计划
+## <a name="plan"></a>套餐
 
 在网络实施的规划阶段：
 
@@ -46,7 +46,7 @@ Microsoft 365包括协作和生产力云服务、Microsoft Intune以及许多企
 
 - [确保企业网络已针对连接Microsoft 365优化](set-up-network-for-microsoft-365.md)
 - [为组织添加 DNS 域](../admin/setup/add-domain.md)
-- [优化与终结点Microsoft 365连接](microsoft-365-ip-web-service.md)
+- [优化与 Microsoft 365 的连接](microsoft-365-ip-web-service.md)
 - [优化远程工作者的连接](microsoft-365-vpn-split-tunnel.md)
 - 如果需要， [请配置 ExpressRoute](azure-expressroute.md)
 
@@ -54,7 +54,7 @@ Microsoft 365包括协作和生产力云服务、Microsoft Intune以及许多企
 
 在网络实现的管理阶段：
 
-- [确保你的网络设备使用的是最新的 Office 365 终结点](microsoft-365-endpoints.md)
+- [确保你的网络设备使用最新的 Office 365 终结点](microsoft-365-endpoints.md)
 - [监视和调整网络性能](network-planning-and-performance.md)
 - [监视 ExpressRoute 连接](managing-expressroute-for-connectivity.md)
 
@@ -66,7 +66,7 @@ Microsoft 365包括协作和生产力云服务、Microsoft Intune以及许多企
 
 了解 Contoso Corporation（有代表性的虚构跨国企业）如何针对 Microsoft 365 云服务[优化自己的网络设备和 Internet 连接](contoso-networking.md)。
 
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+![Contoso Corporation。](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>后续步骤
 

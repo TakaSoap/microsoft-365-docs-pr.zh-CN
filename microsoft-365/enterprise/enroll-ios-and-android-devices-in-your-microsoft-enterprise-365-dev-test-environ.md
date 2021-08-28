@@ -14,14 +14,14 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在测试环境中注册Microsoft 365并远程管理设备。
-ms.openlocfilehash: ee7933a5e111b33ac7d3b17c0de2ef14483f9714
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356740"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568380"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试环境的 Microsoft 365注册 iOS 和 Android 设备
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试Microsoft 365注册 iOS 和 Android 设备
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
@@ -32,10 +32,10 @@ ms.locfileid: "58356740"
 - [阶段 2：注册 iOS/iPadOS 和 Android 设备](#phase-2-enroll-your-ios-and-android-devices)
 - [第 3 阶段：远程管理 iOS/iPadOS 和 Android 设备](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -44,7 +44,7 @@ ms.locfileid: "58356740"
 如果要在模拟的企业中注册 iOS/iPadOS 和 Android 设备，请按照传递 [身份验证 中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并且可以在代表典型组织的环境中试验它。
+> 测试自动许可和组成员身份不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并且可以在代表典型组织的环境中试验它。
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>阶段 2：注册 iOS 和 Android 设备
 

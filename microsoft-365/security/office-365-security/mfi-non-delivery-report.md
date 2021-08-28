@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告 (也称为"未送达报告"中最常遇到的错误代码或从组织的发件人退回邮件) 。
+description: 管理员可以了解如何使用安全 & 合规中心内的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告 (也称为"未送达报告"中最常遇到的错误代码或退回组织中发件人的邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2ac4d55557165c3f6cf327bcff529edc3dc16ad1fc08eb2a5a30828b7a57661
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e49fa403789f7c923bfbdd86b4b1555400a8a99
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56739703"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568740"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>安全与合规中心&未送达报告
 
@@ -30,9 +30,9 @@ ms.locfileid: "56739703"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 & 合规中心的邮件[](mail-flow-insights-v2.md)流仪表板中的未送达[](https://protection.office.com)报告显示未送达报告 (也称为"未送达"或退回邮件) （对于组织用户）中遇到的错误代码。  此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
+安全与合规中心内"邮件[](mail-flow-insights-v2.md)流"仪表板中的"未送达报告"显示未送达报告 (（也称为"未送达报告"或退回邮件) ）中遇到次数最多的错误代码。 [&](https://protection.office.com) 此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
 
-![安全与合规中心内"邮件流"仪表板中的"未送达&小组件](../../media/mfi-non-delivery-report-widget.png)
+![安全与合规中心的"邮件流"仪表板中的"未送达&小组件。](../../media/mfi-non-delivery-report-widget.png)
 
 ## <a name="report-view-for-the-non-delivery-report"></a>未送达报告的报告视图
 
@@ -42,7 +42,7 @@ ms.locfileid: "56739703"
 
 如果将鼠标悬停在图表中 (特定) 显示的错误代码上，你将看到该错误的消息总数。
 
-![未接受域报告中的报告视图](../../media/mfi-non-delivery-report-overview-view.png)
+![未接受域报告中的报告视图。](../../media/mfi-non-delivery-report-overview-view.png)
 
 ## <a name="details-table-view-for-the-non-delivery-report"></a>未送达报告的详细信息表视图
 
@@ -64,8 +64,8 @@ ms.locfileid: "56739703"
 - **Count**
 - **示例邮件**：可以单击 **"查看示例** 邮件"以查看 [受影响邮件](message-trace-scc.md) 示例的邮件跟踪结果。
 
-![在未送达报告中的"详细信息"表视图中选择行后的详细信息飞出](../../media/mfi-non-delivery-report-details-flyout.png)
+![在未送达报告中的"详细信息"表视图中选择一行后，详细信息飞出。](../../media/mfi-non-delivery-report-details-flyout.png)
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。

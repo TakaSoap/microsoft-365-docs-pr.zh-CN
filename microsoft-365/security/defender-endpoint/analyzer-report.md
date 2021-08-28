@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4027d31cd66a783b6bb83742912f94a3a017c74a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 735b2a0331e399fa7bf3444ff8e5326898c038b4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508066"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569389"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>了解客户端分析器 HTML 报告
 
@@ -38,7 +38,7 @@ ms.locfileid: "58508066"
 
  在载入到过期组织 ID 且无法到达所需的 Microsoft Defender 终结点 URL 之一的计算机上，分析器的输出示例：
 
-![客户端分析器结果的图像](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
+![客户端分析器结果的图像。](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
 - 顶部列出了脚本版本和脚本运行时，仅供参考
 - " **设备信息** "部分提供用于唯一标识运行分析器的设备的基本操作系统和设备标识符。
@@ -46,14 +46,19 @@ ms.locfileid: "58508066"
 
   ![客户端分析器详细结果的图像](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
-- On **Check Results Summary** you will have an aggregated count for error， warning， or informational events detected by the analyzer.
-- On the **Detailed Results** you will see a list (sorted by severity) with the results and the guidance based on the observations made by the analyzer.
+-   终结点 **安全详细信息** 提供有关与终结点相关的进程的 Microsoft Defender 的常规信息，Microsoft Defender 防病毒和传感器进程。 如果重要进程未如预期联机，则颜色将更改为红色。
+
+![客户端分析器详细结果的图像。](images/85f56004dc6bd1679c3d2c063e36cb80.png)
+
+-   On **Check Results Summary** you will have an aggregated count for error， warning， or informational events detected by the analyzer.
+
+-   On the **Detailed Results** you will see a list (sorted by severity) with the results and the guidance based on the observations made by the analyzer.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>向 Microsoft 打开支持票证并包括分析工具结果
 
 若要在打开支持 [票证时](contact-support.md#open-a-service-request)包含分析器结果文件，请确保使用"附件 **"部分并** 包括 `MDEClientAnalyzerResult.zip` 文件：
 
-![附件提示的图像](images/508c189656c3deb3b239daf811e33741.png)
+![附件提示的图像。](images/508c189656c3deb3b239daf811e33741.png)
 
 > [!NOTE]
 > 如果文件大小大于 25 MB，分配给您的案例的支持工程师将提供一个专用安全工作区来上载大文件进行分析。

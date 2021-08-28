@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: cfcbe9f330940f32ffff605bf4c2aa17689611e8af26e8f41b8ce10915c6a8d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 719b754e8e3486c281b23f4c38c7e33f548b118c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805270"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569857"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允许来宾访问和 B2B 外部用户访问的策略
 
@@ -32,39 +32,39 @@ ms.locfileid: "53805270"
 
 这些建议旨在应用于保护 **的基线** 层。 但是，也可以根据敏感和高度管控保护的特定需求 **调整建议**。 
 
-为 B2B 帐户提供向 Azure AD 租户进行身份验证的路径不会向这些帐户授予访问整个环境的访问权限。 B2B 用户及其帐户有权访问通过条件访问策略与它们共享的服务和资源（如文件）。
+为 B2B 帐户提供向 Azure AD 租户进行身份验证的路径不会向这些帐户授予访问整个环境的访问权限。 B2B 用户及其帐户具有通过条件访问策略与它们共享的服务和资源（如文件）的访问权限。
 
 ## <a name="updating-the-common-policies-to-allow-and-protect-guests-and-external-user-access"></a>更新常用策略以允许和保护来宾和外部用户访问
 
 此图显示了在 B2B 来宾和外部用户访问的常见标识和设备访问策略中添加或更新的策略。
 
-[![用于保护来宾访问的策略更新摘要](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+[![用于保护来宾访问的策略更新摘要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 下表列出了创建和更新所需的策略。 常见策略链接到常见标识和设备访问策略文章中的关联 [配置说明](identity-access-policies.md) 。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |---|---|---|
-|**Baseline**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **">包括** 的用户和组>，选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">** 条件">"登录"，保留所有选项未选中状态，以始终在 MFA (多重) 。</li></ul>|
+|**Baseline**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **"分配>包括** 的用户和>，选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">条件**>登录"，取消选中所有选项，以始终对 MFA (多重) 。</li></ul>|
 ||[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此策略以排除来宾和外部用户。|
 ||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|修改此策略以排除来宾和外部用户。|
 
 若要在条件访问策略中包括或排除来宾和外部用户，>用户和组>**包括** 或排除"，请检查"所有来宾和 **外部用户"。**
 
-![用于排除来宾和外部用户的控件的屏幕捕获](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![用于排除来宾和外部用户的控件的屏幕捕获。](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>来宾和外部用户访问Microsoft Teams
 
 Microsoft Teams定义以下用户：
 
-- **来宾访问** 使用 Azure AD B2B 帐户，该帐户可添加为团队成员，并且有权访问团队的通信和资源。
+- **来宾访问** 使用 Azure AD B2B 帐户，该帐户可添加为团队成员，并有权访问团队的通信和资源。
 
 - **外部** 访问适用于没有 B2B 帐户的外部用户。 外部用户访问包括邀请、通话、聊天和会议，但不包括团队成员身份和团队资源的访问权限。
 
 有关详细信息，请参阅 teams [的来宾和外部用户访问之间的比较](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
-有关保护用户标识和设备访问策略Teams，请参阅用于保护用户Teams、组和[文件的策略建议](teams-access-policies.md)。
+有关保护用户标识和设备访问策略Teams，请参阅用于保护聊天Teams组和文件[的策略建议](teams-access-policies.md)。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>始终对来宾用户和外部用户要求 MFA
 
@@ -80,9 +80,9 @@ Microsoft Teams定义以下用户：
 
 只有一个组织可以管理设备。 如果未将来宾和外部用户从要求设备符合性的策略中排除，这些策略将阻止这些用户。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
-![步骤 4：云应用Microsoft 365策略Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![步骤 4：Microsoft 365云应用和Microsoft Cloud App Security。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 为：配置条件访问策略：
 

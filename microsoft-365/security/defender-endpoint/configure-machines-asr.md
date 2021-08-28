@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1563d44aded4c018a659b70d16800decf4bcd46f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: a1f51fcf497db0ca36a06fdcb5554e5cdc2861d7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533395"
+ms.locfileid: "58569725"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>优化 ASR 规则部署和检测
 
@@ -36,7 +36,7 @@ ms.locfileid: "58533395"
 [攻击面减少 (ASR) 识别](./attack-surface-reduction.md) 并阻止典型的恶意软件攻击。 它们控制何时以及如何运行潜在的恶意代码。 例如，它们可以防止 JavaScript 或 VBScript 启动下载的可执行文件、阻止从 Office 宏调用 Win32 API 以及阻止从 USB 驱动器运行的进程。
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻击面管理卡":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="攻击面管理卡。":::
 <br>
 *攻击面管理卡*
 
@@ -48,13 +48,13 @@ ms.locfileid: "58533395"
 
 选择 **转到攻击面管理** \> **报告** \> **攻击面减少规则** \> **添加排除** 项。 然后，你可以导航到安全中心Microsoft 365分区。
 
-![在安全中心的"攻击面减少规则"Microsoft 365排除项"选项卡](images/secconmgmt_asr_m365exlusions.png)<br>
+![在安全中心的"攻击面减少规则"页中添加Microsoft 365排除项"选项卡。](images/secconmgmt_asr_m365exlusions.png)<br>
 安全 ***中心的"攻击** 面减少规则"页中的"添加排除Microsoft 365选项卡*
 
 > [!NOTE]
-> 若要访问Microsoft 365中心，您需要一个 Microsoft 365 E3 E5 许可证和一个在安全中心上具有特定Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> 若要访问Microsoft 365中心，您需要一个 Microsoft 365 E3 或 E5 许可证以及一个在安全中心上具有特定Azure Active Directory。 [阅读所需的许可证和权限](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-有关在安全中心内部署 ASR 规则Microsoft 365，请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+有关安全中心中 ASR 规则部署Microsoft 365，请参阅监视和管理[ASR 规则部署和检测](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **相关主题**
 

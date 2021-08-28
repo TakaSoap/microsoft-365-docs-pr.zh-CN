@@ -12,12 +12,12 @@ ms.assetid: ''
 description: 管理员可以了解如何使用安全与合规中心中的"新用户转发电子邮件见解&调查其组织中用户何时将邮件转发到新域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1791f8663e7ffa0e9d0fb0b55f625f73f1482cf4f61e5f4ce03cdf1e1e525552
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d517b5f9a7146d7256b89ae4e4d4d5f4aa6fc14f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56790844"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568464"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心转发&见解
 
@@ -30,17 +30,17 @@ ms.locfileid: "56790844"
 
 当组织中新的用户帐户突然开始将电子邮件转发到外部域时，这是可疑的。
 
-当 **组织中新** 创建的用户将邮件 [转发到](https://protection.office.com) 外部域时，安全与合规中心&转发的新域将通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果您怀疑帐户已被泄露，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
+安全 **与合规** 中心内 [&](https://protection.office.com) 转发的新域电子邮件见解在组织中新创建的用户将邮件转发到外部域时通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果您怀疑帐户已被泄露，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
 此见解仅在检测到问题时显示，并且显示在"转发 [报告"页上](view-mail-flow-reports.md#forwarding-report) 。
 
-![新用户转发电子邮件见解](../../media/mfi-new-users-forwarding-email.png)
+![新用户转发电子邮件见解。](../../media/mfi-new-users-forwarding-email.png)
 
 单击小部件时，将出现一个飞出控件，您可以在其中找到有关转发邮件的更多详细信息，包括指向本文稍后所述的转发修改报告[](#forwarding-modifications-report)的链接。
 
-![单击"新用户转发电子邮件见解"后显示的详细信息飞出](../../media/mfi-new-users-forwarding-email-details.png)
+![详细信息 在单击"新用户转发电子邮件见解"后出现的飞出图。](../../media/mfi-new-users-forwarding-email-details.png)
 
-单击报表仪表板或仪表板上"热门见解"&建议区域中的"查看全部"后，选择见解后， (**访问** 此 \>  <https://protection.office.com/insightdashboard> 详细信息) 。
+单击"报告仪表板"或"仪表板"上的"热门见解"&建议"区域中的"查看全部"后，选择见解后， (**访问** 此 \>  <https://protection.office.com/insightdashboard> 详细信息) 。
 
 可以单击" **查看与见解关联的** 报告"链接转到"转发修改" **报告，如下** 一节中所述。
 
@@ -66,11 +66,11 @@ ms.locfileid: "56790844"
 
 - **显示数据：新转发用户**：
 
-  ![转发修改报告中的新转发用户视图](../../media/forwarding-modifications-report-new-forwarding-users.png)
+  ![转发修改报告中的新转发用户视图。](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **显示数据：新转发域**：
 
-  ![转发修改报告中的新转发域视图](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+  ![转发修改报告中的新转发域视图。](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 如果 **单击筛选器中的** 报表视图，可以指定开始日期和 **结束日期的日期范围**。 
 
@@ -108,7 +108,7 @@ ms.locfileid: "56790844"
 - **开始日期**
 - **建议**：你可以从此处单击链接来管理用户Microsoft 365 管理中心。
 
-!["转发修改"报告中"新建转发用户"视图的详细信息表中的"详细信息"飞出](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+!["转发修改"报告中"新建转发用户"视图的详细信息表中的"详细信息"飞出。](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
 若要返回到报告视图，请单击"查看 **报告"。**
 

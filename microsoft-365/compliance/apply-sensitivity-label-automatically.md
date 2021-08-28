@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: ea7c0bcfdefddaa1c44019f3752e5d00c5323bcc
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: ddbb07d28520ed5c35c7af132d96d202f6ec822b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483411"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569221"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -120,25 +120,25 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 [创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置。 请确保为标签的范围选择了 **“文件和电子邮件”**：
 
-![文件和电子邮件的敏感度标签范围选项](../media/filesandemails-scope-options-sensitivity-label.png)
+![文件和电子邮件的敏感度标签范围选项。](../media/filesandemails-scope-options-sensitivity-label.png)
 
 在向导中移动时，你将看到 Office 应用的 **自动标记** 页面，可在其中选择敏感信息类型或可训练的分类器列表：
 
-![Office 应用中的自动标签的标签条件](../media/sensitivity-labels-conditions.png)
+![Office 应用程序中自动标记的标签条件。](../media/sensitivity-labels-conditions.png)
 
 当自动应用此敏感度标签时，用户会在其 Office 应用中看到通知。例如：
 
-![指出文档自动应用了标签的通知](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![文档已自动应用标签的通知。](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>配置标签的敏感信息类型
 
 当你选择“**敏感信息类型**”选项时，可看到与创建数据丢失防护 (DLP) 策略时相同的敏感信息类型列表。 例如，你可以将“高度机密”标签自动应用到任何包含客户个人信息的内容（如信用卡号、社会保险号码或护照号码）：
 
-![Office 应用中的自动标签的敏感信息类型](../media/sensitivity-labels-sensitive-info-types.png)
+![Office 应用中的自动标记的敏感信息类型。](../media/sensitivity-labels-sensitive-info-types.png)
 
 与配置 DLP 策略时类似，你可以通过更改实例计数和匹配准确度来优化条件。例如：
 
-![匹配准确度和实例计数选项](../media/sit-confidence-level.png)
+![匹配准确度和实例计数选项。](../media/sit-confidence-level.png)
 
 可通过以下 DLP 文档了解有关这些配置选项的详细信息：[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
 
@@ -159,7 +159,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 当你选择“**可训练分类器**”选项时，请从 Microsoft 中选择一个或多个内置的可训练分类器。 如果你创建了自己的自定义可训练分类器，也可以选择：
 
-![可训练分类器和敏感度标签选项](../media/sensitivity-labels-classifers.png)
+![可训练分类器和敏感度标签选项。](../media/sensitivity-labels-classifers.png)
 
 有关这些分类器的详细信息，请参阅 [了解可训练分类器（预览版）](classifier-learn-about.md)。
 
@@ -167,11 +167,11 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 如果愿意，可建议你的用户应用此标签。通过此选项，你的用户可接受分类及任何相关保护，也可在标签不适合其内容时关闭建议。
 
-![用于向用户建议敏感度标签的选项](../media/Sensitivity-labels-Recommended-label-option.png)
+![用于向用户建议敏感度标签的选项。](../media/Sensitivity-labels-Recommended-label-option.png)
 
 下面的示例展示了 Azure 信息保护统一标记客户端在你配置条件以将标签作为建议操作应用时提供的提示，以及自定义策略提示。可以选择在策略提示中显示什么文本。
 
-![关于应用建议标签的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
+![关于应用建议标签的提示。](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>何时应用自动标签或建议标签
 
@@ -254,14 +254,14 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 2. 选择“**自动标记**”选项卡：
 
-    ![“自动标记”选项卡](../media/auto-labeling-tab.png)
+    ![“自动标记”选项卡。](../media/auto-labeling-tab.png)
 
     > [!NOTE]
     > 如果看不到“**自动标记**”选项卡，则此功能当前在你的区域中不可用。
 
 3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略向导”：
 
-    ![用于实现自动标记的“新建策略向导”](../media/auto-labeling-wizard.png)
+    ![用于实现自动标记的“新建策略向导”。](../media/auto-labeling-wizard.png)
 
 4. 对于“**选择要将此标签应用于的信息**”页面：选择其中一个模板，如“**财务**”或“**隐私**”。 可使用“**显示选项**”下拉列表来优化搜索。 或者，如果模板无法满足你的要求，请选择“**自定义策略**”。 选择“**下一步**”。
 
@@ -269,7 +269,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 和 OneDrive 的位置。 如果不想保留所选位置的默认“**全部**”，请选择特定实例的链接。 然后选择“**下一步**”。
 
-    ![选择位置页面自动标记向导](../media/locations-auto-labeling-wizard.png)
+    ![选择位置页面自动标记向导。](../media/locations-auto-labeling-wizard.png)
     
     若要指定个人 OneDrive 账户: 用户 OneDrive 帐户的 URL 采用以下格式:`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -312,7 +312,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 12. 对于“**决定是立即还是以后测试策略**”页面：如果现在已准备好运行自动标记策略，请在模拟模式中选择“**在模拟模式下运行策略**”。 否则，请选择“**保持策略关闭**”。 选择“**下一步**”：
 
-    ![测试策略自动标记向导](../media/simulation-mode-auto-labeling-wizard.png)
+    ![测试策略自动标记向导。](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. 对于“摘要”页：审阅自动标记策略的配置，并进行所需的任何更改，然后完成向导。
 
@@ -324,7 +324,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 - 对于“**模拟**”部分中的策略，从以下任一选项卡中，选择页面顶部的“**编辑** 策略”选项：
 
-    ![启用自动标记策略选项](../media/auto-labeling-edit.png)
+    ![编辑自动标记策略选项。](../media/auto-labeling-edit.png)
 
     如果你已准备好运行策略而不进行模拟，请选择“**启用策略**”选项。
 
@@ -405,7 +405,7 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 
 当租户拥有新的增强功能时，会在 **自动标记** 标签上看到以下通知:
 
-![确认租户拥有新的增强功能通知横幅](../media/auto-labeling-updatedbanner.png)
+![确认租户拥有新的增强功能的通知横幅。](../media/auto-labeling-updatedbanner.png)
 
 > [!NOTE]
 > 如果租户收到新的增强功能时，有任何处于模拟模式的自动标记策略，则必须重新运行模拟。 如果此方案适用于你，则在查看模拟时，系统会提示选择 **“重启模拟”**。 如果不重新启动模拟，则无法完成。

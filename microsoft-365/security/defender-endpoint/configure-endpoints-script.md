@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc709de74135dfbee58b98dd0133b1e43c3c14ad
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533107"
+ms.locfileid: "58569377"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>使用Windows 10脚本载入新设备
 
@@ -40,7 +40,7 @@ ms.locfileid: "58533107"
 
 ## <a name="onboard-devices"></a>载入设备
 
-[![显示各种部署路径的 PDF 图像](images/onboard-script.png)](images/onboard-script.png#lightbox)
+[![显示各种部署路径的 PDF 的图像。](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
 请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
@@ -56,11 +56,11 @@ ms.locfileid: "58533107"
    1. 转到“**开始**”并键入“**cmd**”。
    2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-     ![指向"开始"菜单以管理员角色运行"的窗口](images/run-as-admin.png)
+    ![指向"开始"菜单以管理员角色运行"的窗口。](images/run-as-admin.png)
 
-4. 键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
+4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
-5. 按 **Enter 键** 或单击"确定 **"。**
+5.  按 **Enter 键** 或单击"确定 **"。**
 
 若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅 Microsoft [Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)。
 
@@ -111,7 +111,7 @@ Value: 0 or 1
    1. 转到“**开始**”并键入“**cmd**”。
    2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-      ![指向"开始"菜单以管理员角色运行"的窗口](images/run-as-admin.png)
+        ![指向"开始"菜单以管理员角色运行"的窗口。](images/run-as-admin.png)
 
 4. 键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

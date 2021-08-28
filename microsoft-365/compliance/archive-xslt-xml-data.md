@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器，以从 Microsoft 365 中导入和存档来自 Its 的 XSLT/XML Microsoft 365。 此连接器允许您在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 76b7ebf77806812e69c5ed31edc82c7c9f0fbe0cd8983ee78500f991e18bc192
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f2cd501334718f7b2e056d96d5b07392459b441e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880894"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570145"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>设置连接器以存档 XSLT/XML 数据
 
-使用 Web 部件中的 Microsoft 365 合规中心 将网页源的数据导入并存档到组织中用户Microsoft 365邮箱。 对于使用 XSLT (可扩展样式表语言转换) 创建的文件，通过[XSLT/XML](https://globanet.com/xslt-xml)连接器，您可以快速开发这些文件 (如 HTML 或文本) ，这些格式可以导入 Microsoft 365。 连接器将项目的内容从 XSLT/XML 源转换为电子邮件格式，然后将转换的项目导入到Microsoft 365邮箱。
+使用 Microsoft 365 合规中心 连接器将数据从网页源导入并存档到组织的用户Microsoft 365邮箱。 对于使用 XSLT (可扩展样式表语言转换) 创建的文件，通过[XSLT/XML](https://globanet.com/xslt-xml)连接器，您可以快速开发这些文件 (如 HTML 或文本) ，这些格式可以导入 Microsoft 365。 连接器将项目的内容从 XSLT/XML 源转换为电子邮件格式，然后将转换的项目导入到Microsoft 365邮箱。
 
 XSLT/XML 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签。 使用 XSLT/XML 连接器在 Microsoft 365导入和存档数据可帮助组织遵守政府及法规策略。
 
@@ -29,13 +29,13 @@ XSLT/XML 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规�
 
 以下概述介绍使用连接器在数据记录中存档 XSLT/XML 源数据Microsoft 365。
 
-![XSLT/XML 数据的存档工作流](../media/XSLT-XMLConnectorWorkflow.png)
+![XSLT/XML 数据的存档工作流。](../media/XSLT-XMLConnectorWorkflow.png)
 
 1. 您的组织使用 XSLT/XML 源来设置和配置 XSLT/XML 网站。
 
-2. 每 24 小时发送一次，来自 XSLT/XML 源的聊天消息将复制到"完成"合并 1 网站。 连接器还会将内容转换为电子邮件格式。
+2. 每 24 小时发送一次，来自 XSLT/XML 源的聊天消息将复制到"改进并合并 1"网站。 连接器还会将内容转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心 创建的 XSLT/XML 连接器每天连接到一个 Microsoft 云中的安全 Azure 存储 位置。
+3. 在 Microsoft 365 合规中心 创建的 XSLT/XML 连接器每天连接到一个 Microsoft 云中的一个安全 Azure 存储 位置。
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换后的邮件项目导入特定用户的邮箱，如步骤 3 中所述。 在用户邮箱中创建名为 **XSLT/XML** 的收件箱文件夹中的新子文件夹，邮件项目将导入该文件夹。 连接器使用 *Email* 属性的值实现此操作。 每封邮件都包含此属性，该属性填充了邮件每个参与者的电子邮件地址。
 
@@ -43,7 +43,7 @@ XSLT/XML 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规�
 
 - 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。 若要创建此帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，将登录到此帐户。
 
-- 必须在步骤 1 中创建 XSLT/XML 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加 **连接器，需要** 此Microsoft 365 合规中心。 默认情况下，此角色不会分配给角色组Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 中创建 XSLT/XML 连接器 (并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-an-xsltxml-connector"></a>步骤 1：设置 XSLT/XML 连接器
 
@@ -61,9 +61,9 @@ XSLT/XML 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规�
 
 ## <a name="step-2-configure-an-xsltxml-connector"></a>步骤 2：配置 XSLT/XML 连接器
 
-第二步是在 Merge1 网站上配置 XSLT/XML 连接器。 若要了解如何在"一线合并 1"网站上配置 XSLT/XML 连接器，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf)。
+第二步是在 Merge1 网站上配置 XSLT/XML 连接器。 若要了解如何在"一线合并 1"网站上配置 XSLT/XML 连接器，请参阅 [Merge1 第](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf)三方连接器用户指南。
 
-单击"保存 **&完成****"后**，将显示连接器向导中的"用户Microsoft 365 合规中心页。
+单击"保存&**完成**"后，将显示连接器向导中的"用户Microsoft 365 合规中心页。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步骤 3：映射用户并完成连接器设置
 

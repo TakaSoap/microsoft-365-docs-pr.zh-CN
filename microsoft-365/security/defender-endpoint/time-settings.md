@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e2ba8b02bc6be4001e7083677fc69824c98ec7a2bc0ca61a6beadcd1199c9de
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817217"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569965"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender时区设置
 
@@ -33,31 +33,31 @@ ms.locfileid: "53817217"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)。
 
-使用 **时区菜单** ![ 时区设置图标 1 ](images/atp-time-zone.png) 配置时区和查看许可证信息。
+使用时区 **菜单时区** ![ 设置图标 1。](images/atp-time-zone.png) 配置时区并查看许可证信息。
 
 ## <a name="time-zone-settings"></a>时区设置
 
 时间方面对于评估和分析感知的和实际的网络攻击非常重要。
 
-网络forensic调查通常依赖时间戳来拼贴事件序列。 系统反映正确的时区设置非常重要。
+网络forensic调查通常依赖时间戳来拼贴事件序列。 系统反映正确的时区设置很重要。
 
 Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间。
 
 你的当前时区设置显示在 Microsoft Defender for Endpoint 菜单中。 可以在"时区"菜单中更改显示的 **时区** 。
 
-![时区设置图标 2](images/atp-time-zone-menu.png).
+![时区设置 icon2。](images/atp-time-zone-menu.png).
 
 ### <a name="utc-time-zone"></a>UTC 时区
 
 默认情况下，Microsoft Defender for Endpoint 使用 UTC 时间。
 
-将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式的系统时间戳。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
+将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式的时间戳。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
 
 ### <a name="local-time-zone"></a>本地时区
 
 你可以选择让 Microsoft Defender for Endpoint 使用本地时区设置。 所有警报和事件都将使用本地时区显示。
 
-本地时区取自设备的区域设置。 如果你更改你的区域设置，Microsoft Defender 终结点时区也将更改。 选择此设置意味着 Microsoft Defender for Endpoint 中显示的时间戳将针对所有 Microsoft Defender for Endpoint 用户与本地时间保持一致。 位于不同全球地点的分析师现在将看到 Microsoft Defender for Endpoint 警报，其区域设置也不同。
+本地时区取自设备的区域设置。 如果你更改你的区域设置，Microsoft Defender 终结点时区也将更改。 选择此设置意味着 Microsoft Defender for Endpoint 中显示的时间戳将针对所有 Microsoft Defender for Endpoint 用户与本地时间保持一致。 位于不同全球地点的分析师现在将看到 Microsoft Defender for Endpoint 警报，其区域设置也有所不同。
 
 如果分析师位于单个位置，则选择使用本地时间可能会很有用。 在这种情况下，将事件与本地时间关联可能更容易，例如，当本地用户单击可疑电子邮件链接时。
 
@@ -67,7 +67,7 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 设置时区：
 
-1. 单击时区 **菜单时区** ![ 设置图标 3 ](images/atp-time-zone.png) 。
+1. 单击时区 **菜单时区** ![ 设置图标 3。 ](images/atp-time-zone.png)
 2. 选择 **时区 UTC** 指示器。
 3. 选择 **时区 UTC** 或本地时区，例如 -7：00。
 
@@ -77,7 +77,7 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 #### <a name="internet-explorer-ie-and-microsoft-edge"></a>Internet Explorer (IE) 和 Microsoft Edge
 
-IE 和 Microsoft Edge使用"控制面板"中"时钟、**语言** 和地区"选项中配置的"区域"设置。 
+IE 和 Microsoft Edge使用"控制面板"中"时钟、语言和地区"选项中配置的"区域"设置。 
 
 #### <a name="known-issues-with-regional-formats"></a>区域格式的已知问题
 

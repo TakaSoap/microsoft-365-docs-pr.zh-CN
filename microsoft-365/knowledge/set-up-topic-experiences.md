@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何设置Microsoft Viva主题
-ms.openlocfilehash: fedf5efd6021dc425dcd7c26666edb66b1b780d6
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502767"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568692"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置Microsoft Viva主题
 
@@ -53,7 +53,7 @@ ms.locfileid: "58502767"
 4. 在 **"应用"** 下 **，Graph"索引连接器搜索 ("Viva** 主题) "和 **"Viva** 主题"。
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva主题许可证Microsoft 365 管理中心](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva主题主题许可证Microsoft 365 管理中心。](../media/topic-experiences-licenses.png)
 
 5. 单击“**保存更改**”。
 
@@ -68,11 +68,11 @@ ms.locfileid: "58502767"
 1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，选择 **"设置"，** 然后查看"**文件和内容"** 部分。
 2. 在"**文件和内容"** 部分，单击连接 **人员了解知识"。**
 
-    ![连接人员了解知识](../media/admin-org-knowledge-options.png) 
+    ![连接了解知识。](../media/admin-org-knowledge-options.png) 
 
 3. 在 **"连接人员到知识"页上**，单击"开始"以完成设置过程。
 
-    ![入门](../media/k-get-started.png) 
+    ![入门。](../media/k-get-started.png) 
 
 4. 在" **选择 Viva 主题如何查找** 主题"页上，您将配置主题发现。 在"**选择SharePoint** 源"部分，选择将在发现SharePoint哪些网站作为主题源进行爬网。 从以下项中进行选择：
     - **所有网站**：组织内的所有 SharePoint 网站。 这其中包括当前和未来的网站。
@@ -80,13 +80,13 @@ ms.locfileid: "58502767"
     - **仅选定网站**：键入要包含的网站的名称。 您还可以上载网站列表。 将不包含未来创建的网站作为发现源。
     - **无网站**：不包含任何 SharePoint 网站。
 
-    ![选择如何查找主题](../media/ksetup1.png) 
+    ![选择如何查找主题。](../media/ksetup1.png) 
    
 5. 在" **按名称排除** 主题"部分，可以添加要从主题发现中排除的主题的名称。 使用此设置可防止敏感信息作为主题包含在内。 选项包括：
     - **不排除任何主题** 
     - **按名称排除主题**
 
-    ![排除主题](../media/topics-excluded-by-name.png) 
+    ![排除主题。](../media/topics-excluded-by-name.png) 
 
      (管理员还可以在发现之后排除主题中心) 
 
@@ -94,7 +94,7 @@ ms.locfileid: "58502767"
 
     如果需要排除主题，在选择"按名称排除主题"后，下载 .csv 模板，然后使用要从发现结果中排除的主题列表更新该模板。
 
-    ![排除 CSV 模板中的主题](../media/exclude-topics-csv.png) 
+    ![排除 CSV 模板中的主题。](../media/exclude-topics-csv.png) 
 
     在 CSV 模板中，输入与要排除的主题相关的以下信息：
 
@@ -108,28 +108,28 @@ ms.locfileid: "58502767"
     
     选择“**下一步**”。
 
-6. 在 **Who主题及其** 可在什么位置查看主题页面，您将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
+6. 在 **Who主题及其** 可在何处看到这些主题页面，您将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
     - **没人**
 
-    ![Who主题](../media/ksetup2.png)  
+    ![Who主题。](../media/ksetup2.png)  
 
     > [!Note] 
     > 虽然此设置允许你选择组织的任何用户，但只有分配了主题体验许可证的用户才能查看主题。
 
-7. 在" **主题管理的权限** "页中，选择能够创建、编辑或管理主题的用户。 在Who **和编辑主题"** 部分中，可以选择：
+7. 在" **主题管理的权限** "页中，选择能够创建、编辑或管理主题的用户。 在 **"Who主题"部分**，可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
     - **没人**
 
-    ![主题管理权限，可以创建和编辑主题](../media/ksetup3.png) 
+    ![主题管理权限，可以创建和编辑主题。](../media/ksetup3.png) 
 
-8. 在 **"Who主题"部分中**，可以选择：
+8. 在 **"Who主题"部分**，可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
 
-    ![主题管理的权限](../media/km-setup-create-edit-topics.png) 
+    ![主题管理的权限。](../media/km-setup-create-edit-topics.png) 
 
     选择“**下一步**”。
 
@@ -140,7 +140,7 @@ ms.locfileid: "58502767"
 
    选择“**下一步**”。
 
-   ![创建知识中心](../media/ksetup4.png)  
+   ![创建知识中心。](../media/ksetup4.png)  
 
 10. 在 **审查并完成** 页面上，可查看所选设置并选择进行更改。 如果对你的选择感到满意，请选择 **激活**。
 
@@ -148,7 +148,7 @@ ms.locfileid: "58502767"
 
 12. 你将返回到你的连接 **人员到知识** 页面。 在此页面中，可选择 **管理**，对配置设置进行任何更改。 
 
-    ![设置应用](../media/ksetup7.png)    
+    ![设置应用。](../media/ksetup7.png)    
 
 ## <a name="manage-topic-experiences"></a>管理主题体验
 
@@ -157,7 +157,7 @@ ms.locfileid: "58502767"
 - [管理主题主题Microsoft Viva主题](topic-experiences-discovery.md)
 - [管理主题主题Microsoft Viva可见性](topic-experiences-knowledge-rules.md)
 - [管理主题主题Microsoft Viva主题](topic-experiences-user-permissions.md)
-- [在"主题"中更改Microsoft Viva中心的名称](topic-experiences-administration.md)
+- [在"主题"中更改Microsoft Viva的名称](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>另请参阅
 

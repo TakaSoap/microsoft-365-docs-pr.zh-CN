@@ -1,6 +1,6 @@
 ---
 title: 在 Jamf 中设置设备Pro
-description: 了解如何在 macOS 上的 Microsoft Defender for Endpoint 的 Jamf Pro 中设置设备组
+description: 了解如何在 macOS 上为 Microsoft Defender for Endpoint 在 Jamf Pro设置设备组
 keywords: device， group， microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7994ac207f6f066b5cfe69de75ddfb608ddd40fa53105492a5076aced01de5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a9c3a567bed4ac337e804e53807570c53304027
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833698"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568140"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf 设备组中设置 macOS 设备组的 Microsoft Defender for endpoint Pro
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf 设备组中设置 macOS 设备组的 Microsoft Defender Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,15 +41,15 @@ ms.locfileid: "53833698"
 
 2. 选择"**新建"。** 
 
-    ![Jamf Pro1 的图像](images/jamf-pro-static-group.png)
+    ![Jamf Pro1 的图像。](images/jamf-pro-static-group.png)
 
-3. 提供显示名称， **然后选择保存**。
+3. 提供显示名称 **并选择保存。**
 
-    ![Jamf Pro2 的图像](images/jamfpro-machine-group.png)
+    ![Jamf Pro2 的图像。](images/jamfpro-machine-group.png)
 
 4. 现在，你将在静态 **计算机组下看到 Contoso** **的计算机组**。
 
-    ![Jamf Pro3 的图像](images/contoso-machine-group.png)
+    ![Jamf Pro3 的图像。](images/contoso-machine-group.png)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 - [在 Jamf 中设置 macOS 策略上的 Microsoft Defender for Endpoint Pro](mac-jamfpro-policies.md)

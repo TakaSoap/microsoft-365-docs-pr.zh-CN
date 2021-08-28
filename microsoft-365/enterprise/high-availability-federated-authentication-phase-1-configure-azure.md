@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 摘要：配置 Microsoft Azure 基础结构，以承载 Microsoft 365 的高可用性联合身份验证。
-ms.openlocfilehash: 759b6f72a0d86a090c0db265abd23feea6aa1543
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 摘要：配置 Microsoft Azure 基础结构，以承载 Microsoft 365。
+ms.openlocfilehash: 6f9e06f74b2ce635b05faa0da6cb2eae3d430c31
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569437"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
-在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些资源组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
+在此阶段中，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这将在阶段 2、阶段 3 和阶段 4 中托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
 必须使用以下基本组件预配 Azure：
   
@@ -41,32 +41,32 @@ ms.locfileid: "58354268"
   
 |**项目**|**配置设置**|**说明**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 实例的名称 (FedAuthNet) 。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名称  <br/> |要分配给 VNet 实例的名称 (FedAuthNet) 。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet 位置  <br/> |将包含虚拟网络的区域 Azure 数据中心。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN 设备 IP 地址  <br/> |Internet 上 VPN 设备接口的公共 IPv4 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet 地址空间  <br/> |虚拟网络的地址空间。与 IT 部门协作，以确定该地址空间。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共享的密钥  <br/> |一组 32 位字符的随机字母数字字符串，用于对站点间 VPN 连接的两端进行身份验证。与 IT 或安全部门协作来确定此密钥值。或者，请参阅[创建 IPsec 预共享密钥的随机字符串](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
    
  **表 V：跨部署虚拟网络配置**
   
 接下来，填写针对此解决方案的子网的表 S。所有地址空间应为无类别域际路由选择 (CIDR) 格式，也称为网络前缀格式。例如，10.24.64.0/20。
   
-对于前三个子网，根据虚拟网络地址空间指定名称和单个 IP 地址空间。 对于网关子网，请确定具有 /27 (长度为 /27 的 27 位地址空间) Azure 网关子网的前缀长度为以下值：
+对于前三个子网，根据虚拟网络地址空间指定名称和单个 IP 地址空间。 对于网关子网，请确定具有 /27 前缀 (Azure 网关子网的 27 位地址空间) 前缀长度为 27，如下所示：
   
 1. 将 VNet 地址空间的可变位设置为 1，直到用于网关子网的位，然后将剩余位设置为 0。
     
 2. 将生成位转换为十进制并表示为一个地址空间，其中将前缀长度设置为网关子网的大小。
     
-请参阅 [Azure 网关子网的地址](address-space-calculator-for-azure-gateway-subnets.md) 空间计算器，了解 PowerShell 命令块C#执行此计算的 PowerShell 或 Python 控制台应用程序。
+有关 [执行此计算的](address-space-calculator-for-azure-gateway-subnets.md) PowerShell 命令块和 C# Python 控制台应用程序，请参阅 Azure 网关子网的地址空间计算器。
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   
 |**项**|**子网名称**|**子网地址空间**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务使用的子网 (AD DS) 域控制器和目录同步服务器虚拟机 (VM) 。  <br/> |
-|2.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
-|3.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Active Directory 域服务使用的子网 (AD DS) 域控制器和目录同步服务器虚拟机 (VM) 。  <br/> |
+|2.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |AD FS VM 使用的子网。  <br/> |
+|3.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理 VM 使用的子网。  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Azure 网关 VM 使用的子网。  <br/> |
    
  **表 S：虚拟网络中的子网**
   
@@ -74,35 +74,35 @@ ms.locfileid: "58354268"
   
 |**项目**|**用途**|**子网的 IP 地址**|**值**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |表 S 的项目 1 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |AD FS 服务器内部负载平衡器静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |第一个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |第二个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |第一个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |第二个域控制器的静态 IP 地址  <br/> |在表 S 的项目 1 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |目录同步服务器的静态 IP 地址  <br/> |表 S 的项目 1 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |AD FS 服务器内部负载平衡器静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |第一个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |第二个 AD FS 服务器的静态 IP 地址  <br/> |在表 S 的项目 2 中定义的子网地址空间的第六个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |第一个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第四个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |第二个 Web 应用程序代理服务器的静态 IP 地址  <br/> |在表 S 的项目 3 中定义的子网地址空间的第五个可能的 IP 地址。  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
    
  **表 I：虚拟网络中的静态 IP 地址**
   
-对于本地网络中最初设置域控制器时想要使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门合作以确定此列表。
+对于在最初在虚拟网络中设置域控制器时要在本地网络中使用的两个域名系统 (DNS) 服务器，请填写表 D。与 IT 部门合作以确定此列表。
   
 |**项**|**DNS 服务器的友好名称**|**DNS 服务器的 IP 地址**|
 |:-----|:-----|:-----|
-|1.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
    
  **表 D：本地 DNS 服务器**
   
-若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，必须使用本地网络配置虚拟网络，该本地网络在 CIDR 表示法) 中具有地址空间 (的列表，这些地址空间位于组织本地网络的所有可到达位置。 定义本地网络的地址空间列表必须是唯一的，并且不能与其他虚拟网络或其他本地网络所使用的地址空间重叠。
+若要通过站点到站点 VPN 连接将数据包从跨界网络路由到组织网络，必须使用本地网络配置虚拟网络，该本地网络在 CIDR 表示法) 中具有地址空间 (列表，适用于组织本地网络的所有可到达位置。 定义本地网络的地址空间列表必须是唯一的，并且不能与其他虚拟网络或其他本地网络所使用的地址空间重叠。
   
 对于本地网络地址空间集，请填写表 L。请注意已列出三个空白条目，但通常需要更多。与 IT 部门协作，以确定该地址空间列表。
   
 |**项**|**本地网络地址空间**|
 |:-----|:-----|
-|1.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
    
  **表 L：本地网络的地址前缀**
   
@@ -149,10 +149,10 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 |**项目**|**资源组名称**|**用途**|
 |:-----|:-----|:-----|
-|1.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
-|2.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
-|3.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理服务器  <br/> |
-|4.  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |基础结构元素  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |域控制器  <br/> |
+|2.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |AD FS 服务器  <br/> |
+|3.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |Web 应用程序代理服务器  <br/> |
+|4.  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |基础结构元素  <br/> |
    
  **表 R：资源组**
   
@@ -275,9 +275,9 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 |**项目**|**用途**|**可用性集的名称**|
 |:-----|:-----|:-----|
-|1.  <br/> |域控制器  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS 服务器  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Web 应用程序代理服务器  <br/> |![线条](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |域控制器  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS 服务器  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Web 应用程序代理服务器  <br/> |![行。](../media/Common-Images/TableLine.png)  <br/> |
    
  **表 A：可用性集**
   
@@ -302,7 +302,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 **第 1 阶段：用于高可用性联合身份验证的 Azure 基础结构Microsoft 365**
 
-![Azure 中的高可用性和联合Microsoft 365 Azure 基础结构的第 1 阶段](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![第 1 阶段的高可用性Microsoft 365 Azure 中的联合身份验证和 Azure 基础结构。](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -312,7 +312,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 

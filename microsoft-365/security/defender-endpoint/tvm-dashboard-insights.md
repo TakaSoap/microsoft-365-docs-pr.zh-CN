@@ -1,7 +1,7 @@
 ---
 title: 仪表板见解 - 危险和漏洞管理
 description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建其组织的安全恢复能力。
-keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， 适用于设备的 Microsoft 安全分数， 曝光分数
+keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， Microsoft 设备安全分数， 曝光分数
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: abadce38582408ec7105bdfcec7181210a775e85af2354be08bb33aca3b5764e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfc770e22f0fb4fc6dbb7e7d24bc1a8690d44032
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853760"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569953"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
@@ -51,7 +51,7 @@ ms.locfileid: "53853760"
 - 选择例外选项并跟踪活动异常
 
 > [!NOTE]
-> 过去 30 天内未处于活动状态的设备不会在反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据中考虑。
+> 过去 30 天内未处于活动状态的设备不会在反映组织的曝光分数和 Microsoft 设备安全危险和漏洞管理的数据中考虑。
 
 观看此视频，快速概览仪表板危险和漏洞管理内容。
 
@@ -59,14 +59,14 @@ ms.locfileid: "53853760"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="设备的威胁和漏洞管理仪表板":::
+:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="设备的威胁和漏洞管理仪表板。":::
 
-区域|说明
+领域|说明
 :---|:---
 **所选设备组 (#/#)**|按危险和漏洞管理组筛选想要在仪表板和卡片中查看的数据。 在筛选器中选择的内容将应用于整个危险和漏洞管理页。
 [**风险评分**](tvm-exposure-score.md)|查看组织设备面临的威胁和漏洞的当前状态。 有几个因素会影响组织的曝光评分：在设备中发现的缺点、设备被泄露的可能性、设备对组织的价值，以及设备发现的相关警报。 目标是降低组织的曝光分数，以更安全。 若要降低分数，需要修正安全建议中列出的相关安全配置问题。
 [**设备的 Microsoft 安全功能分数**](tvm-microsoft-secure-score-devices.md)|查看组织的操作系统、应用程序、网络、帐户和安全控制的安全状态。 目标是修正相关的安全配置问题，以增加设备的分数。 选择条形将你访问" **安全建议"** 页。
-**设备曝光分布**|查看基于其曝光级别公开的设备数。 选择圆环图中的某个部分，以转到"设备"列表页并查看受影响的设备名称、曝光级别、风险级别和其他详细信息，如域、操作系统平台、其运行状况、上次查看时间及其标记。
+**设备曝光分布**|查看基于其曝光级别公开的设备数。 选择圆环图中的某个部分以转到"设备"列表页，并查看受影响的设备名称、曝光级别、风险级别和其他详细信息，如域、操作系统平台、其运行状况、上次查看时间及其标记。
 **首要安全建议**|请参阅已排序的安全建议，这些建议根据组织的风险暴露及其需要的紧急程度进行排序和确定优先级。 选择 **"显示** 更多"以查看列表中的其余安全建议。 对于 **具有例外** 的建议列表，选择"显示例外"。
 **最易受攻击的软件**|使用在网络设备上安装的易受攻击的软件的堆栈排名列表，以及这些软件如何影响组织曝光分数，实时了解组织的软件清单。 选择一个项目了解详细信息或 **显示详细信息** ，以查看软件清单页中的其余易受 **攻击的软件** 列表。
 **首要修正活动**|跟踪根据安全建议生成的修正活动。 可以选择列表中的每个项目以查看"修正"页中的详细信息，或选择"显示更多"以查看其余修正活动和活动异常。

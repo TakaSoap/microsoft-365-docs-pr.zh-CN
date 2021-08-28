@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 428211e890bcff816209b003566fc76072749bda
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377997"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570073"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -68,7 +68,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 - Microsoft 新式工作场所的关键组件（Microsoft 365 企业版支持这些组件）。
 - [Microsoft 365 生产力库](https://www.microsoft.com/microsoft-365/success/)和适用于某些常见组织部门的代表方案。
 
-[![Microsoft 365 企业版海报图像](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
+[![Microsoft 365 企业版海报图像。](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
 也可[下载海报的副本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf)。
 
@@ -77,7 +77,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 若要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[转换海报](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)。
 
-[![转换到 Microsoft 365 海报的图像](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![转换到 Microsoft 365 海报的图像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 通过这份两页的海报可以快速清点现有基础结构。 它可以帮助你查找指南，并转到 Microsoft 365 企业版中的相应产品或服务。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
@@ -94,7 +94,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 有关这些产品的升级、迁移和移动到云选项的直观摘要，请参阅[停止提供支持海报](../downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![终止对 Office 2010 客户端和服务器及 Windows 7 的支持海报图像](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![终止对 Office 2010 客户端和服务器以及 Windows 7 支持的海报图像。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 此海报包含一页内容，可帮助快速了解用于避免 Office 2010 客户端和服务器产品及 Windows 7 的支持终止的各种方式，突出显示了 Microsoft 365 企业版中的首选方式和支持。
 
@@ -143,16 +143,16 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 下面是企业组织的示例。
 
-![具有 Microsoft 365、Surface 设备和 Microsoft Edge 浏览器的企业组织](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+![使用 Microsoft 365、Surface 设备和 Microsoft Edge 浏览器的企业组织。](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
 
-有关中小型企业和教育机构的详细信息和配置示例，请下载 [最佳组合海报](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)。
+有关中小型企业和教育机构的详细信息和配置示例，请下载[最佳组合海报](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)。
 
-[![Surface 和 Microsoft Edge 浏览器最佳组合海报图像](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+[![Surface 和 Microsoft Edge 浏览器最佳组合海报的图像。](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 培训
 
-![Microsoft 365 基础知识培训](../media/microsoft-365-overview/m365-fundamentals.svg)
+![Microsoft 365 基础知识培训。](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 若要了解有关 Microsoft 365 的更多信息并努力获得 Microsoft 365 认证，可以从 [Microsoft 365认证：基础知识](/learn/paths/m365-fundamentals/)开始。
 

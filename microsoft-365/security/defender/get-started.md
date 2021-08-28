@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8d479a5cacc5db8961084135eb2b155c4b3af509cc06adecc9b3c2c42688f7d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b111fe66e35bcd87898eefa2d336b8031651098
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828520"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568800"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Defender Microsoft 365入门
 
@@ -35,9 +35,9 @@ ms.locfileid: "53828520"
 
 Microsoft 365 Defender是一种统一的体验，可在其中监视和管理整个企业的安全性。 通过跨标识、终结点、数据、应用、电子邮件和协作工具的集成警报， 调查和响应威胁现在发生在中心位置。 
 
-无论你是不熟悉 Microsoft 安全产品套件还是熟悉单个工作流，本主题都将指导你完成开始使用安全Microsoft 365 Defender。
+无论你是不熟悉 Microsoft 安全产品套件还是熟悉单个工作流，本主题都将指导你完成开始使用 Microsoft 365 Defender 所需的简单步骤。
 
-![开始执行步骤Microsoft 365 Defender的图像](../../media/mtp/get-started-m365d.png)
+![开始执行步骤Microsoft 365 Defender图像。](../../media/mtp/get-started-m365d.png)
 
 一般情况下，需要执行以下步骤才能开始：
 
@@ -47,7 +47,7 @@ Microsoft 365 Defender是一种统一的体验，可在其中监视和管理整�
     然后，你将浏览一些简单的设置，然后确认服务已打开。
 
 - **[步骤 2：部署支持的服务](deploy-supported-services.md)** <br>
-    完成初始步骤后，你需要部署支持的服务以及Microsoft 365 Defender。 有效地部署服务可提升你在整个网络中对来自资产的信号的可见性。
+    完成初始步骤后，你需要部署支持的服务，这些服务将随Microsoft 365 Defender。 有效地部署服务可提升你在整个网络中对来自资产的信号的可见性。
 
 
 ## <a name="key-capabilities"></a>关键功能
@@ -57,7 +57,7 @@ Microsoft 365 Defender是一种统一的体验，可在其中监视和管理整�
 | 功能 | 说明 |
 | ------ | ------ |
 | Microsoft Defender for Endpoint | 围绕强大的行为传感器、云分析和威胁智能构建的终结点保护套件 |
-|Microsoft Defender for Office 365 | 对应用中的应用和数据的高级Office 365，包括电子邮件和其他协作工具 |
+|Microsoft Defender for Office 365 | 对应用中的应用和数据的高级保护Office 365包括电子邮件和其他协作工具 |
 | Microsoft Defender for Identity | 使用关联的 Active Directory 信号防御高级威胁、泄露的标识和恶意预览体验成员 |
 | Microsoft Cloud App Security | 识别并防御 Microsoft 和第三方云服务中的网络威胁 |
 

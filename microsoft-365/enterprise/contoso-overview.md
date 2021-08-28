@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 的业务及其全球办事处的分层结构。
-ms.openlocfilehash: 0690f942a72dedbd1247fcff9d6705ec638e189e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569461"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation 概述
 
@@ -29,7 +29,7 @@ Contoso Corporation 是一家跨国公司，总部位于巴黎。 公司是一�
 
 图 1 显示了巴黎总部办事处以及区域中心以及各个洲的附属办事处。
 
-![全球的 Contoso 办事处](../media/contoso-overview/contoso-overview-fig1.png)
+![全球的 Contoso 办事处。](../media/contoso-overview/contoso-overview-fig1.png)
 
 **图 1：全球的 Contoso 办事处**
  
@@ -55,9 +55,9 @@ Contoso 有三层办公室：
 
 大约 25% 的 Contoso 员工是仅移动设备。 区域中心和附属办事处工作人员所占的百分比更高。 为仅移动工作人员提供有力的支持是 Contoso 的重要业务目标。
 
-## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>企业版Microsoft 365设计注意事项
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365设计注意事项
 
-Contoso IT 架构师确定了以下用于为企业部署Microsoft 365要求因素：
+Contoso IT 架构师确定了以下用于为企业部署 Microsoft 365的要求因素：
 
 - 具有本地管理法规和合规性要求的多个地理位置
 - 总部办公室的中央 Intranet 数据中心和承载内部业务线应用程序的区域应用程序服务器

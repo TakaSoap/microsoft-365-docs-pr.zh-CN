@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在批处理计算后使用"测试"Advanced eDiscovery测试、比较和验证总体处理质量。
-ms.openlocfilehash: 97adafae8cc6113fbc2f34a1c9a95276439fc834e14ef0b45b345e1deb577ca9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在批处理计算后使用Advanced eDiscovery测试、比较和验证总体处理质量。
+ms.openlocfilehash: 16f8004afb5a0731f684c0d35e55ebf2d06f91f0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865237"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569533"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>测试数据中的相关性Advanced eDiscovery
   
-利用该Advanced eDiscovery中的"测试"选项卡，您可以测试、比较和验证总体处理质量。 这些测试在批计算后执行。 通过标记集合中的文件，专家可以最终判断每个标记的文件是否与案例相关。
+利用"测试Advanced eDiscovery，您可以测试、比较和验证总体处理质量。 这些测试在批计算后执行。 通过标记集合中的文件，专家可以最终判断每个标记的文件是否与案例相关。
   
 在单问题和多问题方案中，测试通常按问题执行。 可以在每个测试之后查看结果，并且可以使用指定的示例测试文件对测试结果进行重新修改。
   
 ## <a name="testing-the-rest"></a>测试其余部分
 
-例如，"测试其余内容"测试用于验证剔除决策，以根据最终结果仅查看特定相关性截止分数Advanced eDiscovery文件。 专家查看选定截止分数下的文件示例，以评估该集合中相关文件的数量。
+例如，"测试其余内容"测试用于验证剔除决策，以便根据最终结果仅查看高于特定相关性截止分数Advanced eDiscovery文件。 专家查看选定截止分数下的文件示例，以评估该集合中相关文件的数量。
   
 此测试提供"审阅集"和"测试 Rest"总体之间的统计信息和比较。 审阅集的结果由培训期间相关性计算的结果。 结果包括基于设置和输入参数的计算，例如：
   
@@ -46,7 +46,7 @@ ms.locfileid: "53865237"
 
 2. 在"**测试"** 选项卡中，单击"**新建测试"。** 将显示 **"** 创建测试"对话框，如以下示例所示。
 
-    ![相关性测试其余结果](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![相关性 测试 Rest 结果。](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. 在 **"测试名称**"和" **说明**"中，键入名称和说明。
 
@@ -66,7 +66,7 @@ ms.locfileid: "53865237"
 
 11. 在"测试"选项卡中，可以单击 **"** 查看结果"以查看测试结果。 以下屏幕截图中显示了一个示例。
 
-    ![测试其余结果](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![测试其余结果。](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 在上一张屏幕截图中，表的 **"示例** 参数"部分包含有关专家标记的示例中文件数以及该示例中找到的相关文件数的详细信息。
   
@@ -84,7 +84,7 @@ ms.locfileid: "53865237"
 
 ## <a name="testing-the-slice"></a>测试切片
 
-"测试切片"测试执行的测试类似于"测试 Rest"测试，但执行到相关性读取 %指定的文件段。
+"测试切片"测试执行的测试与"测试 Rest"测试类似，但执行的测试与相关性读取 %指定的文件段类似。
 
 若要运行"测试切片"测试：
   

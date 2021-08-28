@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级审核，以便可以在用户帐户泄露时执行取证调查或调查其他与安全相关的事件。
-ms.openlocfilehash: e23f5c9ce4212e4974de97977bb2e0785bad69ed
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 0df68516795c094aa33d048e77b5ca2d1b396ed7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569749"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
 如果组织具有支持高级审核的订阅和最终用户许可，请执行以下步骤来设置和使用高级审核中的附加功能。
 
-![设置高级审核的工作流](../media/AdvancedAuditWorkflow.png)
+![设置高级审核的工作流。](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step-1-set-up-advanced-audit-for-users"></a>步骤 1：为用户设置高级审核
 
@@ -54,7 +54,7 @@ ms.locfileid: "58386956"
 
 ## <a name="step-2-enable-advanced-audit-events"></a>步骤 2：启用高级审核事件
 
-当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请为在 PowerShell 中 (每个用户) 以下[Exchange Online命令](/powershell/exchange/connect-to-exchange-online-powershell)：
+当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请为 ([PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的) 运行Exchange Online命令：
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -74,4 +74,4 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 ## <a name="step-4-search-for-advanced-audit-events"></a>步骤 4：搜索高级审核事件
 
-现在，你已为组织设置了高级审核，可以在执行取证调查时搜索关键的高级审核事件和其他活动。 完成步骤 1 和步骤 2 后，可以在调查遭到入侵的帐户和其他类型的安全或合规性调查期间，在 审核日志 中搜索高级审核事件和其他活动。 有关使用 MailItemsAccessed 高级审核事件对遭到入侵的用户帐户进行取证调查详细信息，请参阅使用高级审核调查遭到入侵 [的帐户](mailitemsaccessed-forensics-investigations.md)。
+现在，你已为组织设置了高级审核，可以在执行取证调查时搜索关键的高级审核事件和其他活动。 完成步骤 1 和步骤 2 后，可以在 审核日志 中搜索"高级审核"事件和其他活动，以在调查遭到入侵的帐户和其他类型的安全或合规性调查期间执行。 有关使用 MailItemsAccessed 高级审核事件对遭到入侵的用户帐户进行取证调查详细信息，请参阅使用高级审核调查遭到入侵 [的帐户](mailitemsaccessed-forensics-investigations.md)。

@@ -14,26 +14,26 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 4c721dfcc95a2e07cdbfc04de3d3b6df872e036d639e86c5330db942267fa3e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96a27d562bdde03d5d94d8a39ecf45d64ec9bf18
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567960"
 ---
 # <a name="step-4-the-tasks-tab"></a>步骤 4："任务"选项卡
 
 在"任务"选项卡上，应提供测试脚本的路径，这些脚本位于"二进制文件"选项卡下上载的 zip 文件夹中。
 
   - **开箱式测试脚本：** 键入安装、启动、关闭和卸载脚本的相对路径。 还可以选择安装脚本的其他设置。
-  - **功能测试脚本：** 键入上载的每个功能测试脚本的相对路径。 可以使用 按钮添加其他功能测试 ```Add Script``` 脚本。 至少需要一个 1 (1) 脚本，并且可以在 8 个 (8 个) 脚本。 
+  - **功能测试脚本：** 键入上载的每个功能测试脚本的相对路径。 可以使用 按钮添加其他功能测试 ```Add Script``` 脚本。 至少需要一个 1 (1) 脚本，并且可以在 8 个 (8) 8 个脚本。 
   
     脚本按上载顺序运行，特定脚本中的失败将停止后续脚本的执行。
     还可以选择为提供的每个脚本选择其他设置。
 
 ## <a name="set-script-path"></a>设置脚本路径
 
-![测试任务的图像](Media/testtask.png)
+![测试任务的图像。](Media/testtask.png)
 
 下面是如何在文件夹结构上提供相对路径的示例：
 
@@ -49,7 +49,7 @@ _**Zip_file_uploaded**_
 
 │   ├── script.ps1
 ~~~
-  - **ScriptX.ps1** 将具有。 _ScriptX.ps1_ 作为相对路径。
+  - **ScriptX.ps1** 一个。 _ScriptX.ps1_ 作为相对路径。
   - **Script.ps1** 将 _folder1/script.ps1_ 作为相对路径。
 
 
@@ -57,4 +57,4 @@ _**Zip_file_uploaded**_
 
 查看下一篇文章中的"测试选项"选项卡的详细信息 
 > [!div class="nextstepaction"]
-> [下一步](testoptions.md)
+> [后续步骤](testoptions.md)

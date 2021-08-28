@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fb3ee5abfb2f6d8f86832967ed6f88386421c9e
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 1e8b5745e67741535f0c521fc6c6dc1f83868b3c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607097"
+ms.locfileid: "58568788"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -85,15 +85,15 @@ Microsoft 365 Defender独特的跨产品层增强各个套件组件，以：
 
 
 Microsoft 365 Defender跨产品功能包括： 
-- **跨产品单** 一窗格的"透明"- 有关检测、受影响资产、自动操作以及单个队列和单个窗格中的相关证据 [security.microsoft.com。](https://security.microsoft.com) 
+- **跨产品单** 一窗格的"工具"- 集中查看检测、受影响资产、自动执行的操作以及单个队列和单个窗格中的相关证据 [security.microsoft.com。](https://security.microsoft.com) 
 - **联合事件队列** - 通过确保完整攻击范围、受影响的资产和自动修正操作组合在一起并及时出现，帮助安全专业人员重点关注关键问题。 
-- **威胁自动响应**- 关键威胁信息在 Microsoft 365 Defender 产品之间实时共享，以帮助阻止攻击进度。 例如，如果在受 Microsoft Defender for Endpoint 保护的终结点上检测到恶意文件，它将指示 defender for Office 365 扫描该文件并从所有电子邮件中删除该文件。 整个安全套件都会在看到文件时Microsoft 365文件。
-- **对损坏** 的设备、用户标识和邮箱进行自我修复 - Microsoft 365 Defender 使用 AI 支持的自动操作和操作手册将受影响的资产修正回安全状态。 Microsoft 365 Defender套件产品的自动修正功能，以确保在可能的情况下自动修正与事件相关的所有受影响资产。
+- **威胁自动响应**- 关键威胁信息在 Microsoft 365 Defender 产品之间实时共享，以帮助阻止攻击的进展。 例如，如果在受 Microsoft Defender for Endpoint 保护的终结点上检测到恶意文件，它将指示 Defender for Office 365 扫描该文件并从所有电子邮件中删除该文件。 整个安全套件都会在看到文件时Microsoft 365文件。
+- **对损坏** 的设备、用户标识和邮箱进行自我修复 - Microsoft 365 Defender 使用 AI 支持的自动操作和手册将受影响的资产修正回安全状态。 Microsoft 365 Defender套件产品的自动修正功能，以确保在可能的情况下自动修正与事件相关的所有受影响资产。
 - **跨产品威胁搜寻** - 安全团队可以利用其独特的组织知识，通过针对各种保护产品收集的原始数据创建自己的自定义查询来搜寻泄露的迹象。 Microsoft 365 Defender提供对终结点和 Microsoft Defender 之间 30 天的历史原始信号和警报数据的基于查询的访问，以Office 365数据。 
 
 
 ## <a name="get-started"></a>入门
-Microsoft 365 Defender许可要求，然后才能在 security.microsoft.com 的 Microsoft 365 Defender 门户中[启用该服务](https://security.microsoft.com)。 有关详细信息，请阅读：
+Microsoft 365 Defender许可要求，然后才能在 security.microsoft.com 的 Microsoft 365 Defender 门户[中启用该服务](https://security.microsoft.com)。 有关详细信息，请阅读：
 - [许可要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 365 Defender](m365d-enable.md)
 

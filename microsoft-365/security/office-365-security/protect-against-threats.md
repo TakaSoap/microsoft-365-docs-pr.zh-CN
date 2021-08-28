@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06f87213131f8fccdd9cfd83d7bdf4ead10c0667
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 69f36a26792d37f66fca46ec7905be89483c61f6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594312"
+ms.locfileid: "58568068"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -50,7 +50,7 @@ ms.locfileid: "58594312"
 威胁防护功能含在 *所有* Microsoft 或 Office 365 订阅中；然而，一些订阅有高级功能。 下面的表格列出了包含在此文章中的防护功能，以及最低订阅要求。
 
 > [!TIP]
-> 请注意，除了启用审核的说明之外，步骤还启动反恶意软件、反网络钓鱼和反垃圾邮件，这些操作标记为 **EOP** Office 365 Exchange Online Protection (的一) 。 在你记住 (**Defender for Office 365**) 包含内容、基础、EOP 之前，这可能在 Defender for Office 365 的文章里看起来很奇怪。
+> 请注意，除了启用审核的说明之外，步骤还启动反恶意软件、反网络钓鱼和反垃圾邮件，它们标记为 **EOP** Office 365 Exchange Online Protection (的一) 。 在你记住 (**Defender for Office 365**) 包含内容、基础、EOP 之前，这可能在 Defender for Office 365 的文章里看起来很奇怪。
 
 <br>
 
@@ -62,7 +62,7 @@ ms.locfileid: "58594312"
 |反恶意软件保护|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |防钓鱼保护|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |反垃圾邮件保护|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|保护电子邮件和附件文档中的恶意 URL 和文件Office链接 (保险箱附件保险箱文件) |[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|保护电子邮件和附件文档中的恶意 URL 和Office (保险箱链接保险箱附件) |[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
@@ -75,7 +75,7 @@ ms.locfileid: "58594312"
 |角色或角色组|在哪里了解更多信息|
 |---|---|
 |全局管理员|[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)|
-|安全管理员|[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference#security-administrator)
+|安全管理员|[Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 组织管理|[Exchange Online 中的权限](/exchange/permissions-exo/permissions-exo)|
 |
 
@@ -89,14 +89,14 @@ ms.locfileid: "58594312"
 
 有关反恶意软件的建议设置详细信息，请参阅 [EOP 反恶意软件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
-1. 打开 **网站门户中的**"反恶意软件"Microsoft 365 Defender页面 <https://security.microsoft.com/antimalwarev2> 。
+1. 打开 **网站门户中的**"反恶意软件"Microsoft 365 Defender位于 <https://security.microsoft.com/antimalwarev2> 。
 
-2. 在 **"反恶意软件"** 页上，单击该名称 **("** 默认) 选择"默认"策略。
+2. 在 **"反恶意软件"** 页上，单击该名称 **("** 默认) "策略。
 
 3. 在打开的策略详细信息飞出控件中，单击" **编辑保护设置"，** 然后配置以下设置：
    - **保护设置** 部分：
      - **启用常用附件筛选器**：选择 (启用) 。 单击 **"自定义文件类型** "以添加更多文件类型。
-     - **启用恶意软件的零时差自动清除**：验证此设置是否被选中。 有关恶意软件的 ZAP 详细信息，请参阅适用于恶意软件的零时 ([ZAP](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)) 清除。
+     - **启用恶意软件的零时差自动清除**：验证此设置是否被选中。 有关恶意软件的 ZAP 详细信息，请参阅恶意软件的零时 ([ZAP](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)) 清除。
    - **通知** 部分：验证是否未选择任何通知设置。
 
    完成时，请单击“保存”。
@@ -109,23 +109,23 @@ ms.locfileid: "58594312"
 
 [反钓鱼软件防护](anti-phishing-protection.md)在包含 [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 的订阅中可用。 高级反钓鱼保护在 [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 中可用。
 
-有关反网络钓鱼策略的建议设置详细信息，请参阅[EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)和 Microsoft Defender for Office 365 中的反钓鱼[策略设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
+有关反网络钓鱼策略的建议设置详细信息，请参阅[EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)和 Microsoft Defender for Office 365 中的反网络钓鱼[策略设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
 以下过程介绍如何配置默认的防钓鱼策略。 设置 Defender for Office 365的已明确标记。
 
-1. 打开 **网站门户中的**"防钓鱼Microsoft 365 Defender页面，位置为 <https://security.microsoft.com/antiphishing> 。
+1. 打开 **网站门户** 中的"防钓鱼"Microsoft 365 Defender页面，位置为 <https://security.microsoft.com/antiphishing> 。
 
 2. 在 **"防钓鱼"** 页面上，单击该名称，选择名为 **"Office365** 反钓鱼默认 (默认) "策略。
 
 3. 在出现的策略详细信息飞出中，配置以下设置：
    - **网络钓鱼阈值&保护** 部分：单击"编辑保护设置"，然后配置打开的飞出控件中的以下设置：
-     - **网络钓鱼电子邮件阈值**：选择 <sup>\*</sup> **2 - (** 标准) 或 **3 -** 更主动 (严格) 。
+     - **网络钓鱼电子邮件阈值**：选择 <sup>\*</sup> **2 -** (标准) **或 3 -** 更主动 (严格) 。
      - **模拟** 部分 <sup>\*</sup> ：配置以下值：
-       - 选择"允许用户保护"，单击出现的"管理 (nn) 发件人 **() "** 链接，然后添加内部和外部发件人，防止模拟，例如组织的新成员、CEO、CFO 和其他高级领导。
+       - 选择"允许用户保护"，单击出现的"管理 **(nn)** 发件人 () "链接，然后添加内部和外部发件人，防止模拟，例如组织的新成员、CEO、CFO 和其他高级领导。
        - 选择 **"启用域以保护"，** 然后配置出现的以下设置：
-         - 选择 **"包含我拥有域**"以保护接受域中的内部发件人 (通过单击"查看我的域) 进行模拟"。
-         - 若要保护其他域中的发件人，请选择"包括自定义域"，单击出现的"管理 (nn) 自定义域 **() "** 链接，然后添加其他域以阻止模拟。
-     - 添加受信任发件人和域部分：单击"管理 (nn) 受信任发件人 (s) 和域 <sup>\*</sup> (**) "** 以根据需要将发件人和发件人域例外配置为模拟保护。
+         - 选择 **"包括我拥有域**"，以保护接受域中的内部发件人 (通过单击"查看我的域) 进行模拟"。
+         - 若要保护其他域中的发件人，请选择"包括自定义域"，单击出现的"管理 (nn) 自定义域 **() "** 链接，然后添加防止模拟的其他域。
+     - 添加受信任发件人和域部分：单击"管理 (nn) 受信任发件人 () 和域 <sup>\*</sup> (**) "** 以根据需要将发件人和发件人域例外配置为模拟保护。
      - 邮箱智能设置 <sup>\*</sup> ：验证是否 **选择了"启用邮箱智能****"和"启用模拟保护智能**"。
      - **欺骗** 部分：验证 **是否选择了"启用欺骗** 智能"。
 
@@ -135,9 +135,9 @@ ms.locfileid: "58594312"
      - **"邮件** 操作"部分：配置以下设置：
        - **如果邮件被检测为模拟用户** <sup>\*</sup> ：请选择 **"隔离邮件"。**
        - **如果邮件被检测为模拟域** <sup>\*</sup> ：选择 **隔离邮件**。
-       - **如果邮箱智能检测到模拟** 用户：选择"将邮件移动到收件人的垃圾邮件文件夹" (Standard) 或"隔离" (<sup>\*</sup> 严格) 。 
-       - **如果邮件被检测为欺骗** 邮件：选择"将邮件移动到收件人的垃圾邮件文件夹 (标准 **) "或**"隔离 (严格) "。
-     - **安全&"部分** ：配置以下设置：
+       - **如果邮箱智能检测到模拟** 用户：选择"将邮件移动到收件人的垃圾邮件文件夹" (标准) 或"隔离" (<sup>\*</sup> 严格) 。  
+       - **如果邮件被检测为欺骗** 邮件：选择"将邮件移动到收件人的垃圾邮件文件夹" ("标准) "或"隔离 (严格) "。
+     - **安全提示&** 指示器部分：配置以下设置：
        - **显示第一个联系人安全提示：** 选择 (打开) 。
        - **显示用户模拟安全提示：** <sup>\*</sup> 选择 (启用) 。
        - **显示域模拟安全提示：** <sup>\*</sup> 选择 (启用) 。
@@ -218,13 +218,13 @@ ms.locfileid: "58594312"
 
 3. 返回到"附件 **保险箱页上**，单击" ![ 创建图标 ](../../media/m365-cc-sc-create-icon.png) "。
 
-4. 在打开 **的"保险箱** 附件"策略向导中，配置以下设置：
+4. 在打开 **的保险箱** 附件策略向导中，配置以下设置：
    - **命名策略** 页面：
      - **名称**：输入唯一且描述性的名称。
      - **说明**：输入可选说明。
    - **用户和域** 页面：因为这是你的第一个策略，你可能想要最大化覆盖范围，请考虑在"域"[](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)框中 **输入接受的** 域。 否则，可以使用"用户 **"** 和" **组"** 框进行更精细的控制。 可以通过选择"排除这些用户、组和域"并输入值 **来指定例外** 。
-   - **设置** 页面：
-     - **保险箱附件未知恶意软件响应：** 选择"阻止 **"。**
+   - **设置** 页：
+     - **保险箱未知恶意软件响应：选择**"阻止 **"。**
      - **重定向包含检测到的附件的** 附件： **启用** 重定向：打开此设置 (选择) 并输入电子邮件地址以接收检测到的邮件。
      - **如果扫描保险箱超时** 或错误 (应用附件检测响应：) 是否选中此设置。
 
@@ -236,7 +236,7 @@ ms.locfileid: "58594312"
 
 7. 预留至多 30 分钟以让更改传播到所有 Microsoft 365 数据中心。
 
-有关配置附件保险箱和附件的全局设置的保险箱，请参阅下列主题：
+有关为附件配置 保险箱 附件策略和全局设置的保险箱，请参阅下列主题：
 
 - [在 Microsoft Defender 保险箱设置附件策略Office 365](set-up-safe-attachments-policies.md)
 - [为 SharePoint、OneDrive 和 Microsoft Teams 启用安全附件](turn-on-mdo-for-spo-odb-and-teams.md)
@@ -244,41 +244,41 @@ ms.locfileid: "58594312"
 
 ### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Defender for Office 365 中设置安全链接策略
 
-有关链接的建议设置保险箱，请参阅保险箱[链接设置。](recommended-settings-for-eop-and-office365.md#safe-links-settings)
+有关链接的建议设置保险箱，请参阅保险箱[链接设置](recommended-settings-for-eop-and-office365.md#safe-links-settings)。
 
-1. 打开 保险箱 **门户** 中的"Microsoft 365 Defender链接"页 <https://security.microsoft.com/safelinksv2> 。
+1. 在 保险箱 **门户** 中打开"Microsoft 365 Defender链接"页 <https://security.microsoft.com/safelinksv2> 。
 
 2. On the **保险箱 Links** page， click **Global settings**， and then configure the following settings on the flyout that appears：
    - **设置支持的应用部分中的内容Office 365应用**：
      - **Use 保险箱 Links in Office 365 apps**： Verify this setting is turned on (Toggle ![ on. ](../../media/scc-toggle-on.png)) .
      - **Do not track when users click protected links in Office 365 apps**： Turn this setting off (Toggle ![ off. ](../../media/scc-toggle-off.png)) .
-     - **请勿让用户单击浏览** 到 Office 365 应用中的原始 URL：验证此设置 (![ 打开 ](../../media/scc-toggle-on.png) 。) 。
+     - **不允许用户单击浏览** 到 Office 365 应用中的原始 URL：验证此设置 (![ 打开 ](../../media/scc-toggle-on.png) 。) 。
 
    完成后，单击"保存 **"**
 
 3. 返回到 **"保险箱"页上**，单击" ![ 创建图标 ](../../media/m365-cc-sc-create-icon.png) "。
 
-4. 在打开 **的** 保险箱链接策略向导中，配置以下设置：
+4. 在打开 **的保险箱** 链接策略向导中，配置以下设置：
    - **命名策略** 页面：
      - **名称**：输入唯一且描述性的名称。
      - **说明**：输入可选说明。
    - **用户和域** 页面：因为这是你的第一个策略，你可能想要最大化覆盖范围，请考虑在"域"[](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)框中 **输入接受的** 域。 否则，可以使用"用户 **"** 和" **组"** 框进行更精细的控制。 可以通过选择"排除这些用户、组和域"并输入值 **来指定例外** 。
    - **"保护设置"** 页：
      - **选择邮件中未知潜在恶意 URL 的操作**：打开 **此设置**。
-     - **Select the action for unknown or potentially malicious urls within Microsoft Teams**： Turn this setting **On**. 自 2020 年 3 月起，此设置为预览版，仅对 Microsoft Teams Technology Adoption Program (TAP) 。
+     - **Select the action for unknown or potentially malicious URLS within Microsoft Teams**： Turn this setting **On**. 自 2020 年 3 月起，此设置在预览版中提供，并且仅适用于 Microsoft Teams Technology Adoption Program (TAP) 。
      - **对指向文件的可疑链接应用实时 URL** 扫描：选择此设置 (打开) 。
        - **等待 URL 扫描完成，然后再传递邮件**：选择此设置 (打开) 。
      - **Apply 保险箱 Links to email messages sent within the organization**： Select this setting (turn on) .
      - **Do not track user clicks**： Verify this setting is not selected (off) .
      - **不允许用户单击访问原始 URL：** 验证此设置是否 (启用) 。
      - 在通知和警告页面上显示组织品牌：选择此设置 (将其打开) 只有在按照自定义[组织的 Microsoft 365](../../admin/setup/customize-your-organization-theme.md)主题中的说明上载公司徽标后，此设置才有意义。
-     - **不要重写以下 URL：** 我们对此设置没有具体的建议。 有关详细信息，请参阅链接策略中的"不重写[保险箱 URL"](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)列表。
+     - **不要重写以下 URL：** 我们对此设置没有具体的建议。 有关详细信息，请参阅链接策略中的"不重写[保险箱 URL"列表](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)。
    - **通知** 页面：
      - **如何通知用户？** section：（可选）可以选择"使用 **自定义通知文本** "输入要使用自定义的通知文本。 还可以选择"使用 **Microsoft 翻译工具进行自动本地化**"，将自定义通知文本翻译为用户语言。 否则，保留 **"使用默认通知文本"** 为选中状态。
 
 5. 完成后，单击"提交 **"，** 然后单击"完成 **"。**
 
-有关为链接配置 保险箱 链接策略和全局设置的保险箱，请参阅下列主题：
+有关为链接配置 保险箱 策略和全局设置的保险箱，请参阅下列主题：
 
 - [在 Microsoft Defender 保险箱设置链接策略Office 365](set-up-safe-links-policies.md)
 - [在 Microsoft Defender for 保险箱 中配置链接的全局Office 365](configure-global-settings-for-safe-links.md)
@@ -287,7 +287,7 @@ ms.locfileid: "58594312"
 
 若要在 SharePoint Online 或 OneDrive for Business文件被标识为恶意文件时收到通知，可以设置警报，如本节中所述。
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Email & **collaboration** \> **Polices & rules** Alert \> **policy**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> ， go to Email & **collaboration** \> **Policys & alert** \> **policy**.
 
 2. 在"**警报策略"** 页上，单击"**新建警报策略"。**
 
@@ -306,7 +306,7 @@ ms.locfileid: "58594312"
    完成后，单击"下一 **步"**
 
 5. 在 **"设置收件人"** 页上，配置以下设置：
-   - **发送电子邮件通知**：验证此设置是否被选中。
+   - **发送电子邮件通知**：验证此设置是否已选择。
    - **电子邮件收件人**：选择一个或多个全局管理员、安全管理员或安全读者，他们应在检测到恶意文件时收到通知。
    - **每日通知限制**：验证 **未选择** 限制。
 

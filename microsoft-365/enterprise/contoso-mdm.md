@@ -13,13 +13,13 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备以及在其上运行的应用。
-ms.openlocfilehash: 7c7a3a40867e15059c527edb0069ff639d68ae7c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 了解 Contoso 如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备和在其上运行的应用。
+ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354892"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569473"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
@@ -44,7 +44,7 @@ Contoso 不使用 Intune 来：
 
 以下是 Contoso 设置其移动设备管理基础结构的方式：
 
-- 将 Intune 设置为移动设备管理 (MDM) 颁发机构，并使用 Azure 上的 Intune 管理内容和管理设备
+- 将 Intune 设置为 MDM (移动设备) ，并使用 Azure 上的 Intune 管理内容和管理设备
 - 为设备Azure Active Directory (Azure AD) 组创建，用于 Intune 设置和基于设备的条件访问策略
 
   有关详细信息，请参阅 [Contoso 条件访问策略](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
@@ -66,11 +66,11 @@ Contoso 通过将已部署的电脑和公司拥有的智能手机和平板电脑
 
 下面是 Contoso 移动设备管理部署体系结构。
 
-![Contoso 移动设备管理部署基础结构](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Contoso 移动设备管理部署基础结构。](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>后续步骤
 
-了解 Contoso 如何使用[](contoso-info-protect.md)企业Microsoft 365信息保护功能来分类、标识和保护整个组织的重要数字资产。
+了解 Contoso 如何使用[](contoso-info-protect.md)企业Microsoft 365信息保护功能来分类、标识和保护整个组织的关键数字资产。
 
 ## <a name="see-also"></a>另请参阅
 

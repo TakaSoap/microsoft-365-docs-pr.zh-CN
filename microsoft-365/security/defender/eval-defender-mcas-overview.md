@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 386a7efcc5cb47df835e8465c323e5cdfdf486c7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 43792367d4ec1cd31c2122badd74a32bc7ae8a19
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247576"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569293"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>评估Microsoft Cloud App Security
 
@@ -34,19 +34,19 @@ ms.locfileid: "58247576"
 - Microsoft 365 Defender
 
 
-本文概述了启用和试用 Microsoft Cloud App Security 和Microsoft 365 Defender。 在开始此过程之前，请确保你已查看评估项目Microsoft 365 Defender并且你已创建了Microsoft 365 Defender[](eval-overview.md)[评估环境](eval-create-eval-environment.md)。 
+本文概述了启用和试用 Microsoft Cloud App Security 和Microsoft 365 Defender。 在开始此过程之前，请确保你已查看用于评估Microsoft 365 Defender并且你已创建了Microsoft 365 Defender[](eval-overview.md)[评估环境](eval-create-eval-environment.md)。 
 <br>
 
 使用以下步骤启用和试用 Microsoft 云应用安全。
 
-![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤](../../media/defender/m365-defender-office-eval-steps.png)
+![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-office-eval-steps.png)
 
 
 
 |步骤  |说明  |
 |---------|---------|
 |[查看体系结构要求和关键概念](eval-defender-mcas-architecture.md)    | 了解 云应用安全 体系结构及其如何与 Microsoft 365 Defender、Microsoft Defender for Endpoint 和 Azure Active Directory。        |
-|[启用评估环境](eval-defender-mcas-enable-eval.md)     | 连接，配置与 Defender for Identity 和/或组织的网络设备的集成，并开始查看和管理云应用。         |
+|[启用评估环境](eval-defender-mcas-enable-eval.md)     | 连接门户，配置与 Defender for Identity 和/或组织的网络设备的集成，并开始查看和管理云应用。         |
 |[设置试点 ](eval-defender-mcas-pilot.md)    | 将部署范围设定为某些用户组，配置条件访问应用控制，并尝试教程来保护你的环境。       |
 
 

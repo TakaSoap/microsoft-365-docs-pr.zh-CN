@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03843707ebffc6798b3d73526a2e95b884047b13
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594018"
+ms.locfileid: "58570133"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -73,7 +73,7 @@ ms.locfileid: "58594018"
 
 |门户|全球/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 安全中心|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 合规中心|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -203,7 +203,7 @@ ms.locfileid: "58594018"
 
 1. 按 XML 格式创建一个规则包（采用 Unicode 编码），如下例类似。 （可复制、修改和使用我们的示例。）
 
-      设置规则包时，请确保正确引用您的 .csv 或 .tsv **edm.xml文件。** 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
+      设置规则包时，请确保正确引用 .csv 或 .tsv **edm.xml文件。** 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
       - **RulePack id & ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) 生成 GUID。
 
@@ -402,7 +402,7 @@ ms.locfileid: "58594018"
 >
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 >
-> （可选）您可以通过运行：在上载.csv对文件或 .tsv 文件运行验证：
+> （可选）您可以通过运行：在上载之前.csv对文件或 .tsv 文件运行验证：
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >

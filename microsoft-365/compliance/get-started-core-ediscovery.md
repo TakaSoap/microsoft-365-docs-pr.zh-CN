@@ -1,5 +1,5 @@
 ---
-title: 在企业版中开始使用核心电子数据展示Microsoft 365
+title: 开始在 Microsoft 365 中处理核心电子数据Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍如何开始使用 Microsoft 365 中的核心电子数据Microsoft 365。 分配电子数据展示权限并创建案例后，可以添加成员、创建电子数据展示保留，然后搜索和导出与调查相关的内容。
-ms.openlocfilehash: 9662045a77b1af69de68729697972821a7a7a589
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: d1a9e68bedc77f3b74b13f438e73dcbcb83b4c8c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508030"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569581"
 ---
-# <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>开始在 Microsoft 365 中的核心电子数据Microsoft 365
+# <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Microsoft 365 中的核心电子数据展示入门
 
-Microsoft 365中的核心电子数据展示提供了一个基本电子数据展示工具，组织可以使用该工具搜索和导出 Microsoft 365 和 Office 365。 您还可以使用核心电子数据展示将电子数据展示保留置于内容位置，例如 Exchange 邮箱、SharePoint 网站、OneDrive帐户Microsoft Teams。 部署核心电子数据展示不需要任何内容，但在您的组织开始使用核心电子数据展示搜索、导出和保留内容之前，IT 管理员和电子数据展示管理员必须完成一些先决条件任务。
+Microsoft 365中的核心电子数据展示提供了一个基本电子数据展示工具，组织可以使用该工具搜索和导出 Microsoft 365 和 Office 365。 您还可以使用核心电子数据展示将电子数据展示保留置于内容位置，如 Exchange 邮箱、SharePoint 网站、OneDrive帐户Microsoft Teams。 部署核心电子数据展示不需要任何内容，但在您的组织开始使用核心电子数据展示搜索、导出和保留内容之前，IT 管理员和电子数据展示管理员必须完成一些先决条件任务。
 
 本文讨论设置核心电子数据展示所需的步骤。 这包括确保访问核心电子数据展示所需的适当许可，并将电子数据展示保留放在内容位置，以及向 IT、法律和调查团队分配权限，以便他们可以访问和管理事例。 本文还简要概述了使用事例搜索和导出内容的情况。
 
@@ -34,7 +34,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 核心电子数据展示的许可需要相应的组织订阅和每用户许可。
 
-- **组织订阅：** 若要访问 Microsoft 365 合规中心中的核心电子数据展示并使用保留和导出功能，你的组织必须拥有 Microsoft 365 E3 或 Office 365 E3 订阅或更高版本。
+- **组织订阅：** 若要访问 Microsoft 365 合规中心中的核心电子数据展示并使用保留和导出功能，你的组织必须具有 Microsoft 365 E3 或 Office 365 E3 订阅或更高版本。
 
 - **每用户许可：** 若要将电子数据展示保留置于邮箱和网站上，必须为用户分配以下许可证之一，具体取决于您的组织订阅：
 
@@ -42,7 +42,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
    或
 
-  - Office 365 E1计划 2 Exchange Online或附加Exchange Online Archiving许可证的许可证
+  - Office 365 E1计划 2 Exchange Online加载项许可证Exchange Online Archiving许可证
 
   AND
 
@@ -62,7 +62,7 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 完成以下步骤以将用户添加到电子数据展示管理员角色组：
 
-1. 转到 <https://compliance.microsoft.com/permissions> ，然后使用组织中管理员帐户的凭据Microsoft 365 Office 365登录。
+1. 转到 ，然后使用组织中管理员帐户的凭据 <https://compliance.microsoft.com/permissions> Microsoft 365 Office 365登录。
 
 2. 在" **权限"** 页上，选择 **电子数据展示管理员角色** 组。
 
@@ -130,9 +130,9 @@ Microsoft 365中的核心电子数据展示提供了一个基本电子数据展�
 
 为了让你开始使用核心电子数据展示，下面是一个简单的工作流，该工作流为感兴趣的用户创建电子数据展示保留，搜索与调查相关的内容，然后导出该数据以进一步查看。 在每个步骤中，我们还将重点介绍一些你可以浏览的扩展核心电子数据展示功能。
 
-![核心电子数据展示工作流](../media/CoreEdiscoveryWorkflow.png)
+![核心电子数据展示工作流。](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[创建电子数据展示保留](create-ediscovery-holds.md)**。 创建案例后的第一步是 (调查关注人员) 内容位置的"电子数据展示保留"功能。 内容位置包括Exchange、SharePoint网站、OneDrive帐户以及与组和组关联的Microsoft Teams Office 365网站。 虽然此步骤是可选的，但创建电子数据展示保留会保留调查期间可能与案例相关的内容。 创建电子数据展示保留时，可以保留特定内容位置中的内容，也可以创建基于查询的保留以仅保留与保留查询匹配的内容。 除了保留内容之外，创建电子数据展示保留的另一个理由就是快速搜索保留的内容位置 (而不必在下一步创建和运行搜索时选择每个位置来搜索) 。 完成调查后，可以解除所创建的任何保留。
+1. **[创建电子数据展示保留](create-ediscovery-holds.md)**。 创建案例后的第一步是 (调查关注人员) 内容位置的"电子数据展示保留"功能。 内容位置包括Exchange邮箱、SharePoint网站OneDrive帐户，以及与组和组关联的Microsoft Teams Office 365网站。 虽然此步骤是可选的，但创建电子数据展示保留会保留调查期间可能与案例相关的内容。 创建电子数据展示保留时，可以保留特定内容位置中的内容，也可以创建基于查询的保留以仅保留与保留查询匹配的内容。 除了保留内容之外，创建电子数据展示保留的另一个很好的理由就是快速搜索保留的内容位置 (而不必在下一步创建和运行搜索时选择每个位置来搜索) 。 完成调查后，可以解除所创建的任何保留。
 
 2. **[搜索内容](search-for-content-in-core-ediscovery.md)**。 创建电子数据展示保留后，使用内置搜索工具搜索保留的内容位置。 您还可以搜索其他内容位置，查找可能与案例相关的数据。 您可以创建和运行与案例关联的不同搜索。 您可以使用关键字、属性和条件来构建搜索查询[](keyword-queries-and-search-conditions.md)，这些查询使用与案例最相关的数据返回搜索结果。 还可以执行以下操作：
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9039b02e34b57e2a594b0db1c4b16e59a962e1d3
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 8f8bdfed9075f2ebc8d189874c6854c4d4a0e50a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603225"
+ms.locfileid: "58568248"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for (AIR) 自动调查和响应Office 365
 
@@ -116,8 +116,8 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 
 |任务|需要 (角色) 角色|
 |---|---|
-|设置 AIR 功能|下列角色之一： <ul><li>全局管理员</li><li>安全管理员</li></ul> <p> 这些角色可以在 Azure Active Directory[或](/azure/active-directory/roles/permissions-reference)Microsoft 365 Defender[门户中分配](permissions-microsoft-365-security-center.md)。|
-|启动自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|以下角色之一，在 Azure Active Directory[或](/azure/active-directory/roles/permissions-reference)Microsoft 365 Defender[门户中分配](permissions-microsoft-365-security-center.md)： <ul><li>全局管理员</li><li>安全管理员</li><li>安全操作员</li><li>安全信息读取者 <br> --- 和 --- </li><li>搜索和清除 (此角色仅在 Microsoft 365 Defender[门户中分配](permissions-microsoft-365-security-center.md)。 你可能需要创建一个新的"电子邮件 **"&协作** 角色组，然后向该新角色组添加"搜索和清除"角色。</li></ul>|
+|设置 AIR 功能|下列角色之一： <ul><li>全局管理员</li><li>安全管理员</li></ul> <p> 这些角色可以在 Azure Active Directory[或](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Microsoft 365 Defender[门户中分配](permissions-microsoft-365-security-center.md)。|
+|启动自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|以下角色之一，在 Azure Active Directory[或](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Microsoft 365 Defender[门户中分配](permissions-microsoft-365-security-center.md)： <ul><li>全局管理员</li><li>安全管理员</li><li>安全操作员</li><li>安全信息读取者 <br> --- 和 --- </li><li>搜索和 (此角色仅在 Microsoft 365 Defender[门户中分配](permissions-microsoft-365-security-center.md)。 你可能需要创建一个新的"电子邮件 **"&协作** 角色组，然后向该新角色组添加"搜索和清除"角色。</li></ul>|
 
 ## <a name="required-licenses"></a>所需的许可证
 
@@ -129,7 +129,7 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>即将在门户中Microsoft 365 Defender更改
 
-如果你已在 Microsoft Defender 中为 Office 365 使用 AIR 功能，你将在改进的 Microsoft 365 Defender[门户中看到一些更改](../defender/overview-security-center.md)。
+如果你已在 Microsoft Defender for Office 365 中使用 AIR 功能，你将在改进的 Microsoft 365 Defender[门户中看到一些更改](../defender/overview-security-center.md)。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心。":::
 
@@ -160,7 +160,7 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 |**"操作"** 选项卡|更新后的 **"操作** "选项卡现在包括" **挂起的操作** "选项卡和" **操作历史记录"** 选项卡。可以在选择挂起 (时) 侧窗格中批准或拒绝操作。|
 |**"证据"** 选项卡|新的 **"证据** "选项卡显示与操作相关的主要实体发现。 与每条证据相关的操作可以在选择 (操作时) 侧窗格中批准或拒绝。|
 |**操作中心**|更新的操作 **中心** () 跨电子邮件、设备和标识将挂起和已完成的操作 <https://security.microsoft.com/action-center> 汇集在一起。 若要了解更多信息，请参阅操作中心。  (若要了解更多信息，请参阅操作 [中心](../defender/m365d-action-center.md).) |
-|**"事件"** 页|现在 **，"** 事件"页面将多个调查关联在一起，以提供更好的综合调查视图。  ([了解有关事件 .) ](../defender/incidents-overview.md)|
+|**"事件"** 页|现在 **，"** 事件"页面将多个调查关联在一起，以提供更好的综合调查视图。  ([了解有关事件](../defender/incidents-overview.md).) |
 |
 
 ## <a name="next-steps"></a>后续步骤

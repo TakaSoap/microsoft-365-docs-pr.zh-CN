@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 613ed8427f5068ab9a2709b68e5a6bf5586676a9f9fb36383b772458f16f3332
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d0e872390fbcc80a7427c28b2a7cdf5382ac839c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845036"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58570001"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -45,7 +45,7 @@ ms.locfileid: "53845036"
 
 1. 以 * [Microsoft Defender 安全中心](https://securitycenter.windows.com)**_** 或 _*_安全_ 管理员 **登录安全帐户。
 
-2. 转到"数据[导出设置"页上Microsoft Defender 安全中心。](https://securitycenter.windows.com/interoperability/dataexport)
+2. 转到"数据[导出设置"页上的](https://securitycenter.windows.com/interoperability/dataexport)"Microsoft Defender 安全中心"。
 
 3. 单击"**添加数据导出设置"。**
 
@@ -57,7 +57,7 @@ ms.locfileid: "53845036"
 
    若要获取事件中心资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/) > 属性选项卡上的 Azure 事件中心命名空间页面，复制资源 \> ID **下的文本**：
 
-   ![事件中心资源 Id1 的图像](images/event-hub-resource-id.png)
+   ![事件中心资源 Id1 的图像。](images/event-hub-resource-id.png)
 
 7. 选择要流式传输的事件，然后单击"保存 **"。**
 
@@ -81,7 +81,7 @@ ms.locfileid: "53845036"
 
 - 每条记录都包含事件名称、Microsoft Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
 
-- 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
+- 有关 Microsoft Defender for Endpoint 事件的架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 有关详细信息 [，请参阅](machine-groups.md) 设备组。
 
@@ -101,7 +101,7 @@ ms.locfileid: "53845036"
 
 - 下面是设备信息事件的示例：
 
-  ![事件中心资源 Id2 的图像](images/machine-info-datatype-example.png)
+  ![事件中心资源 Id2 的图像。](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>相关主题
 

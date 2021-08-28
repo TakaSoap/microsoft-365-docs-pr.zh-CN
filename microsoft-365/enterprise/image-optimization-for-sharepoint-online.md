@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: 了解如何使用再现和子画面来提高 SharePoint Online 经典发布网站上的图像性能。
-ms.openlocfilehash: d3bc078bd462e6695afd74d36712757d291215a7b9bbdb6158c1862c034f8158
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864699"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568368"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint经典发布网站的图像优化
 
@@ -35,16 +35,16 @@ ms.locfileid: "53864699"
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>使用子画面加快图像加载速度
 
-![spcommon 的屏幕截图](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+![spcommon 的屏幕截图。](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
 
-图像子画面包含许多较小的图像。 使用 CSS 可以选择复合图像的一部分，以在具有绝对定位的页面的特定部分上显示。 基本上，你可以将单个图像围绕页面移动，而不是加载多个图像，并通过一个小窗口（其中向最终用户显示子画面图像必需的部分）使该图像的一小部分可见。 SharePointOnline 使用子画面在子画面和子画面文件中spcommon.png图标。
+图像子画面包含许多较小的图像。 使用 CSS，可以选择要显示在页面特定部分（具有绝对定位）的复合图像的一部分。 基本上，你可以将单个图像围绕页面移动，而不是加载多个图像，并通过一个小窗口使该图像的一小部分可见，其中向最终用户显示子画面图像必需的部分。 SharePointOnline 使用子画面在子画面和子画面文件中spcommon.png图标。
 
 此处涵盖的内容：
 - 图像压缩
 - 图像优化
 - SharePoint图像再现
    
-这可提高性能，因为只下载一个映像而不是多个映像，然后缓存并重复使用该映像。 即使图像不保持缓存状态，通过具有单个图像而不是多个图像，此方法也会减少对服务器的 HTTP 请求总数，这将减少页面加载时间。 这确实是一种图像绑定形式。 如果图像未频繁更改（例如图标）（如上述示例所示SharePoint非常有用。 您可以使用 Web [Essentials（](https://vswebessentials.com/)一个基于社区的第三方开放源代码项目）轻松地在 Microsoft Visual Studio。 有关详细信息，请参阅[Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)。
+这可提高性能，因为只下载一个映像而不是多个映像，然后缓存并重复使用该映像。 即使图像未保持缓存状态，通过具有单个图像而不是多个图像，此方法也会减少对服务器的 HTTP 请求总数，这将减少页面加载时间。 这确实是一种图像绑定形式。 如果图像未频繁更改（例如图标）（如上面提供的示例所示，SharePoint非常有用。 您可以使用 Web [Essentials（](https://vswebessentials.com/)一个基于社区的第三方开放源代码项目）轻松地在 Microsoft Visual Studio。 有关详细信息，请参阅[Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md)。
   
 ## <a name="using-image-compression-and-optimization-to-speed-up-page-loading"></a>使用图像压缩和优化来加快页面加载速度
 
@@ -57,11 +57,11 @@ ms.locfileid: "53864699"
 图像再现是 SharePoint Online 中的一项功能，允许你根据预定义的图像尺寸提供不同版本的图像。 当存在用户生成的图像内容或网站中的 CSS 修复图像尺寸（如宽度和高度）时，这一点尤其重要。 即使图像由 CSS 修复，仍然会加载全分辨率图像。 在这种情况下，可以使用图像再现来减小文件大小。
   
 > [!NOTE]
-> 当启用发布功能时，SharePoint才可用。 可以在"管理网站 \> 设置"下 \> 设置"管理网站功能SharePoint \> 服务器发布"。 此选项不会以其他方式显示。
+> 当启用发布功能时，SharePoint才可用。 可以在"管理网站 \> "设置"设置" \> 服务器SharePoint \> 网站功能"下进行发布。 此选项不会以其他方式显示。
   
-图像重设大小的工作原理是采用你定义最小的尺寸（宽度或高度）然后调整图像大小，以便根据锁定的纵横比自动调整其他尺寸的大小。 默认情况下，它将按其余尺寸从中心裁剪图像。 例如，如果定义 100px 宽、高 50px 的再现，并且原始图像宽 1000px、高 800px，则大小将调整为 800px，以便 800px 尺寸现在为 50px，并且 1000px 尺寸 (现在为 62.5px) 从图像中心裁剪。
+图像重设大小调整的工作方式是采用你定义最小的尺寸（宽度或高度）然后调整图像大小，以便根据锁定的纵横比自动调整其他尺寸的大小。 默认情况下，它将按其余尺寸从中心裁剪图像。 例如，如果定义 100px 宽、高 50px 的再现，并且原始图像宽 1000px、高 800px，则大小将调整为 800px，以便 800px 尺寸现在为 50px，并且 1000px 尺寸 (现在为 62.5px) 从图像中心裁剪。
   
-这些步骤相对简单，但对于图像使用再现，在添加图像之前，SharePoint位于网站中。 此外，还需要启用 SharePoint Server Publishing Infrastructure (Site Collection Level) 和 SharePoint Server Publishing (Site Level) 功能。
+这些步骤相对简单，但对于图像使用再现，在添加图像之前，SharePoint位于网站中。 此外，您还需要启用 SharePoint Server 发布基础结构 (网站集级别) 和 SharePoint Server Publishing (网站) 功能。
   
 ### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>添加图像再现以加快页面加载速度
   
@@ -75,18 +75,18 @@ ms.locfileid: "53864699"
 
     可以使用开箱即用格式副本，或选择"图像 **再现** "新建一个。
 
-    ![图像再现的屏幕截图](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
+    ![图像再现的屏幕截图。](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. 在“图像呈现形式”页上，选择“添加新项”。
 
-    ![添加新项目的屏幕截图](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
+    ![添加新项的屏幕截图。](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
   
 6. 在"新建图像呈现形式"页上的"名称"框中，为呈现形式输入名称。
 
 7. 在"宽度"和"高度"文本框中，输入呈现形式的宽度和高度（以像素为单位），然后选择"保存"。
 
-    ![图像再现名称的屏幕截图](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
+    ![图像再现名称的屏幕截图。](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
   
 ## <a name="custom-cropping-with-image-renditions"></a>使用图像再现的自定义裁剪
 
-默认情况下，图像呈现形式在图像中心生成。 您可以调整单个图像的图像呈现形式，具体方法是裁剪要使用的图像部分。 可以基于每个再现单独裁剪图像。 裁剪图像通过使用 blob 缓存为每个SharePoint创建图像版本来加快页面加载速度。 这样一来，服务器负载将减少，因为图像仅调整一次大小，然后就可以为最终用户多次提供服务。 若要详细了解如何裁剪图像再现形式，请参阅裁剪[图像再现。](/sharepoint/dev/general-development/sharepoint-design-manager-device-channels)
+默认情况下，图像呈现形式在图像中心生成。 您可以调整单个图像的图像呈现形式，具体方法是裁剪要使用的图像部分。 可以基于每个再现单独裁剪图像。 裁剪图像通过使用 blob 缓存为每个SharePoint创建图像版本来加快页面加载速度。 这样一来，服务器负载将减少，因为图像仅调整一次大小，然后就可以为最终用户多次提供服务。 若要详细了解如何裁剪图像再现，请参阅裁剪[图像再现。](/sharepoint/dev/general-development/sharepoint-design-manager-device-channels)

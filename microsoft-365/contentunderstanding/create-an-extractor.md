@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: c2eb18d6cce471dda73cefee65dfd024b81a815988e015ccc42fd891841b37b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 645ecafc1ebad3031dc7ca3b70f5ceb95e72af39
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865302"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569737"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
@@ -54,7 +54,7 @@ ms.locfileid: "53865302"
 2. 选择“**下一个文件**”可自动保存并打开查看器列表中的下一个文件。 或选择“**保存**”，然后从“**已标记的示例**”列表中中选择另一个文件。
 3. 在查看器中，重复第 1 步和第 2 步，然后重复执行，直到将标签保存到所有五个文件中。
 
-    ![高级设置](../media/content-understanding/select-service-start-date.png) 
+    ![高级设置。](../media/content-understanding/select-service-start-date.png) 
 
  
 标记了五个文件后，将显示一条通知横幅，告知你移动到培训。 你可以选择更多标签，更多文档或前进到培训。 

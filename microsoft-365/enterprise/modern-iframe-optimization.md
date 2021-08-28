@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何优化 iFrame 在SharePoint Online 新式发布网页和经典发布网页中的性能。
-ms.openlocfilehash: cd7d6a09581e716b0b1179bb251d24d927b0c03e06552d381d809f54887238b5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f50b6582a0a65cd29a91f450642e5d38b346d77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848860"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569413"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化 iFrame
 
@@ -50,7 +50,7 @@ iFrame 非常适合用于预览视频或其他媒体等丰富的内容。 但是
 
 如果结果的“**改进机会**”或“**需要注意**”部分显示了“**检测到使用 iFrame 的 Web 部件**”结果，可单击该结果，查看包含 iFrame 的 Web 部件。
 
-![页面诊断工具结果](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
+![页面诊断工具结果。](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
 
 ## <a name="remediate-iframe-performance-issues"></a>修正 iFrame 性能问题
 
@@ -69,7 +69,7 @@ iFrame 天生缓慢，这是因为它们会加载包含 javascript、CSS 和框�
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
-![页面加载时间结果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![页面加载时间结果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >页面加载时间可能由于网络加载、具体时间和其他暂时条件等各种因素而有所不同。 应在更改前后多次测试页面加载时间，以帮助求出结果平均值。

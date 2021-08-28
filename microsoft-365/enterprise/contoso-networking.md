@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构，以及公司如何使用 SD-WAN 技术实现最佳网络性能，Microsoft 365企业云服务。
-ms.openlocfilehash: ad7bac187a81564c3d222069bce06756dd176a58
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354316"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569485"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
@@ -35,7 +35,7 @@ ms.locfileid: "58354316"
 
 - 本地直接 Internet 访问Microsoft 365流量
 
-  每个办事处都有一个软件定义的 WAN (SD-WAN) 设备，该设备具有一个或多个本地 Internet ISP 网络线路，通过代理服务器有自己的 Internet 连接。 这通常实现为指向同时提供公共 IP 地址和本地 DNS 服务器的本地 ISP 的 WAN 链接。
+  每个办事处都有一个软件定义的 WAN (SD-WAN) 设备，该设备具有一个或多个本地 Internet ISP 网络线路，并通过代理服务器连接自己的 Internet。 这通常实现为指向同时提供公共 IP 地址和本地 DNS 服务器的本地 ISP 的 WAN 链接。
 
 - Internet 网站
 
@@ -43,7 +43,7 @@ ms.locfileid: "58354316"
 
 图 1 显示了 Contoso 网络基础结构及其与 Internet 的连接。
 
-![Contoso 网络](../media/contoso-networking/contoso-networking-fig1.png)
+![Contoso 网络。](../media/contoso-networking/contoso-networking-fig1.png)
  
 **图 1：Contoso 网络**
 
@@ -62,7 +62,7 @@ Contoso 决定：
 
 - 对"优化"和"允许"类别流量使用直接 Internet 出口，将所有"默认"类别流量转发到巴黎的中央 Internet 连接。
 
-- 在每个办事处部署 SD-WAN 设备是遵循这些原则并实现基于云的服务的最佳网络Microsoft 365的一种简单方法。
+- 在每个办公室部署 SD-WAN 设备是遵循这些原则并实现基于云的服务的最佳网络Microsoft 365一种方法。
 
   SD-WAN 设备具有一个用于本地办事处网络的 LAN 端口和多个 WAN 端口。 一个 WAN 端口连接到其 MPLS 网络。 另一个连接到本地 ISP 线路。 SD-WAN 设备通过 ISP 链接路由“优化”和“允许”类别的网络流量。
 
@@ -76,7 +76,7 @@ Contoso 针对以下内容构建了业务线应用程序和服务器 Intranet �
 
 图 2 显示通过 Contoso Intranet 访问服务器时所使用的网络流量容量百分比。
 
-![内部应用程序的 Contoso 基础结构](../media/contoso-networking/contoso-networking-fig2.png)
+![内部应用程序的 Contoso 基础结构。](../media/contoso-networking/contoso-networking-fig2.png)
  
 **图 2：内部应用程序的 Contoso 基础结构**
 
@@ -84,7 +84,7 @@ Contoso 针对以下内容构建了业务线应用程序和服务器 Intranet �
 
 ## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>企业版网络分析和Microsoft 365准备
 
-Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接到 Microsoft 云服务的高度可用和高效连接。 Contoso 执行以下步骤来规划和实施与企业云服务Microsoft 365优化的连接：
+Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接到 Microsoft 云服务的高度可用和高效连接。 Contoso 执行以下步骤来计划和实现与企业云服务Microsoft 365优化的连接：
 
 1. 创建公司 WAN 网络图，帮助进行规划
 
@@ -100,7 +100,7 @@ Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接�
 
 4. 优化 Microsoft 网络服务的性能
 
-   Contoso 确定了一组Office 365、Intune 和 Azure 终结点，并配置了 Internet 路径中的防火墙、安全设备和其他系统以实现最佳性能。 "Office 365"和"允许"类别流量的终结点已配置为 SD-WAN 设备，以便通过 ISP 电路进行路由。
+   Contoso 确定了一组 Office 365、Intune 和 Azure 终结点，并配置了 Internet 路径中的防火墙、安全设备和其他系统以实现最佳性能。 "优化Office 365允许"类别流量的终结点已配置为 SD-WAN 设备，以便通过 ISP 电路进行路由。
 
 5. 配置内部 DNS
 
@@ -120,7 +120,7 @@ Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接�
 
 ## <a name="see-also"></a>另请参阅
 
-[网络路线图Microsoft 365](networking-roadmap-microsoft-365.md)
+[Microsoft 365](networking-roadmap-microsoft-365.md)
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 
