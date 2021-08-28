@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: a5d050bfe61af9754b7cb1dd45c46a419314f5220a36630c8b1a528d694dc9c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ca0c033a92f7607db2b1ad6e00f13cd33ad9c8f9
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818703"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589542"
 ---
 # <a name="get-kb-collection-api"></a>获取 KB 集合 API
 
@@ -36,10 +36,10 @@ ms.locfileid: "53818703"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 检索 RBAC 设备组的集合。
 
 ## <a name="permissions"></a>权限
+
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,7 +50,7 @@ GET /testwdatppreview/machinegroups
 
 ## <a name="request-headers"></a>请求标头
 
-标头 | 值 
+标头|值
 :---|:---
 Authorization | Bearer {token}。 **必需**。
 内容类型 | application/json
@@ -77,9 +77,10 @@ Content-type: application/json
 ### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
-字段 ID 包含设备组 **ID，** 并且等于设备信息中的字段 **rbacGroupId。** 只有 **对于尚未** 分配到任何组的所有设备的一个组，取消分组的字段才为 true。 像往常一样，此组的名称为"UnassignedGroup"。
+字段 ID 包含设备组 **ID，** 并且等于设备信息中的字段 **rbacGroupId。**
+只有 **对于尚未** 分配到任何组的所有设备的一个组，取消分组的字段才为 true。 像往常一样，此组的名称为"UnassignedGroup"。
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {

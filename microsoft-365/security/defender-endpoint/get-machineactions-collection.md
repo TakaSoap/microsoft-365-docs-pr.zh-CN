@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 28eb524645ecbc3867a342bea1fa34a717a3dde5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 68583eeb7daaf755f3e095ef80e0a221f54f0766
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349796"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589364"
 ---
 # <a name="list-machineactions-api"></a>列出 MachineActions API
 
@@ -43,15 +43,17 @@ ms.locfileid: "58349796"
 支持 [OData V4 查询](https://www.odata.org/documentation/)。
 
 OData 的 `$filter` 查询在以下项上受 `id` 支持 `status` ：、、、、、 `machineId` `type` `requestor` 和 `creationDateTimeUtc` 属性。
-<br>```$stop``` 最大值为 10，000
-<br>```$skip```
+
+`$stop` 最大值为 10，000
+
+`$skip`
 
 请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)
 
 ## <a name="limitations"></a>限制
 
 1. 最大页面大小为 10，000。
-2. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。 
+2. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
 
 ## <a name="permissions"></a>权限
 
@@ -67,7 +69,7 @@ OData 的 `$filter` 查询在以下项上受 `id` 支持 `status` ：、、、�
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+> 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

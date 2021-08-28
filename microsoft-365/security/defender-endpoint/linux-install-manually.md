@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24659a1e928143c79b3ab7324114d5c8b0fa1f43
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: aeafcec8c3ee3e557ac8ac429530a35cd8f7561e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550138"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683572"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ ms.locfileid: "58550138"
 
 ## <a name="configure-the-linux-software-repository"></a>配置 Linux 软件存储库
 
-Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
+可以从以下频道之一部署 Linux 上的 Defender for Endpoint (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
@@ -74,14 +74,20 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
     ```bash
     sudo yum install yum-utils
     ```
+
 - 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
 
-    使用下表可帮助指导你找到程序包： 
+    使用下表可帮助指导你找到程序包：
 
-    |     发布&版本    |     程序包    |
+    <br>
+
+    ****
+
+    |发布&版本|程序包|
     |---|---|
-    |     对于 RHEL 8.0-8.5    |     https://packages.microsoft.com/config/rhel/8/prod/    |
-    |     对于 RHEL 7.2-7.9    |     https://packages.microsoft.com/config/rhel/7/prod/    |
+    |对于 RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |对于 RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     在下列命令中，将 *[version]* *和 [channel]* 替换为已识别的信息：
 
@@ -118,7 +124,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
 
 ### <a name="sles-and-variants"></a>SLES 和变量
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
+- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
 
     在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -279,7 +285,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从应用门户下载Microsoft 365 Defender包：
+从门户下载Microsoft 365 Defender包：
 
 1. 在 Microsoft 365 Defender 门户中，转到"设置 >终结点 **>">载入"。**
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。

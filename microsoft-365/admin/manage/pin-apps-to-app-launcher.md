@@ -14,16 +14,16 @@ ms.service: o365-administration
 ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: 作为全局管理员，你最多可以将三个应用固定到用户的应用启动器。
-ms.openlocfilehash: b26f77d819f41517add59be14f26931f14001c65
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394464"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589224"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>将应用固定到用户的应用启动器
 
-可以使用 Azure Active Directory 门户中的控件将最多三个应用固定到 Office.com，以及组织中所有用户的应用启动器。 还可以组织应用程序组。 你添加的任何应用稍后都可以由用户随时取消固定。 若要为用户固定应用，你必须是云应用程序管理员、Azure Active Directory中的应用程序管理员或 Office 365。 有关管理员角色详细信息[，请参阅](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)Azure Active Directory 中的[管理员](../add-users/about-admin-roles.md)角色Microsoft 365。 
+可以使用 Azure Active Directory 门户中的控件将最多三个应用固定到 Office.com，以及组织中所有用户的应用启动器。 还可以组织应用程序组。 你添加的任何应用稍后都可以由用户随时取消固定。 若要为用户固定应用，你必须是云应用程序管理员、Azure Active Directory中的应用程序管理员或 Office 365。 有关管理员角色详细信息，请参阅[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)和 Microsoft 365 中的[管理员角色](../add-users/about-admin-roles.md)。 
 
 有关应用启动器和 Office.com 的信息，请参阅了解应用启动[](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)器和 office.com 和 Office 365[应用启动器](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503)博客文章。
 
@@ -47,7 +47,7 @@ ms.locfileid: "58394464"
 3. 键入应用程序的名称，然后在"用户和组"选项卡 **中分配** 用户。
 4. 使用" **属性** "选项卡上载应用的图标。
 5. 若要向应用分配 URL，请在"单一登录 **"选项卡中选择** "链接 **"，然后** 输入 URL。
-6. 选择 **保存**。
+6. 选择“**保存**”。
 
 ## <a name="create-application-collections"></a>创建应用程序集合
 

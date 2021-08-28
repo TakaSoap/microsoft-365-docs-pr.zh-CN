@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: 了解如何将策略提示添加到 DLP (策略) 数据丢失防护，以通知用户他们处理的内容与 DLP 策略冲突。
-ms.openlocfilehash: 0eb30101dc42ab25eef5625f2fa952cac8f8bda89e6c72a5f7f46186ac96f652
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何将策略提示添加到 DLP () 策略中，以通知用户他们处理的内容与 DLP 策略冲突。
+ms.openlocfilehash: 5dba275d274ebc97ec934f6b43d8a913b80c8d84
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859866"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589430"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -33,21 +33,15 @@ ms.locfileid: "53859866"
 
 ![消息栏在 Excel 2016 中显示策略提示](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-策略提示是某人使用与 DLP 策略冲突的内容（例如 OneDrive for Business 网站上包含个人身份信息 (PII) 且与外部用户共享的 Excel 工作簿等内容）时出现的通知或警告。
-
-可以使用电子邮件通知和策略提示提高意识，并帮助用户了解组织策略。 您还可以为用户提供覆盖策略的选项，以便他们在有有效的业务需求或策略检测到误报时不会被阻止。
-
 在合规中心内，创建 DLP 策略时，可以将用户通知配置为：
 
 - 向选择描述该问题的人发送电子邮件通知。
-> [!NOTE]
-> 通知电子邮件不受保护的发送。
 
 - 显示与 DLP 策略冲突的内容的策略提示：
 
   - 对于 Outlook 网页版 和 Outlook 2013 及更高版本中的电子邮件，策略提示显示在撰写邮件时收件人上方的邮件顶部。
 
-  - 对于 OneDrive for Business 或 SharePoint Online 网站中的文档，策略提示由项目上出现的警告图标指示。 若要查看详细信息，您可以选择一个项目，然后选择页面右上角的信息信息窗格图标以 ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 打开详细信息窗格。
+  - 对于 OneDrive for Business 或 SharePoint Online 网站中的文档，策略提示由项目上出现的警告图标指示。 若要查看详细信息，可以选择一个项目，然后选择"信息 **"** ![ 窗格图标。](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 在页面的右上角打开详细信息窗格。
 
   - 对于存储在 DLP 策略中包含的 OneDrive for Business 站点或 SharePoint Online 站点上的 Excel、PowerPoint 和 Word 文档，策略提示将显示在消息栏和 Backstage 视图 (文件菜单"信息 \> ") 上。
 
@@ -61,7 +55,7 @@ ms.locfileid: "53859866"
 
 3. 在安全 &amp; 与合规中心 \> 左侧导航 \> **中，数据丢失防护** \> **策略** \> **+ 创建策略**。
 
-    ![创建策略按钮](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![创建策略按钮。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
 4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
 
@@ -75,20 +69,20 @@ ms.locfileid: "53859866"
 
    - Choose **Let me choose specific locations** \> **Next**.
 
-   若要包含或排除整个位置（如所有Exchange或所有OneDrive帐户），请打开或关闭该位置的"状态"。
+   若要包含或排除整个位置，如Exchange或所有OneDrive帐户，请打开或关闭该位置的"状态"。 
 
-   若要仅包含SharePoint或OneDrive帐户，请切换到"状态"打开，然后单击"包含"下的链接以选择特定网站或帐户。 
+   若要仅包含SharePoint或OneDrive帐户，请切换到"状态"，然后单击"包含"下的链接以选择特定网站或帐户。 
 
 7. 选择 **"使用高级设置""** \> **下一步"。**
 
 8. 选择“**+ 新建规则**”。
 
-9. 在规则编辑器的"用户 **通知"下**，打开状态。
+9. 在规则编辑器中的"用户 **通知"下**，打开状态。
 
-    ![规则编辑器的用户通知部分](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
+    ![规则编辑器的用户通知部分。](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
 > [!NOTE]
-> DLP 策略应用于与策略匹配的所有文档，无论这些文档是新文档还是现有文档。 但是，仅在新内容与现有 DLP 策略匹配时生成电子邮件通知。 现有内容受保护，但不会通过电子邮件生成用户通知。
+> 通知电子邮件不受保护的发送。
 
 ## <a name="options-for-configuring-email-notifications"></a>用于配置电子邮件通知的选项
 
@@ -101,13 +95,13 @@ ms.locfileid: "53859866"
 > [!NOTE]
 >  电子邮件通知只能发送给各个收件人，不能发送给组或通讯组列表。 只有新内容才会触发电子邮件通知。 编辑现有内容将触发策略提示，但不能触发电子邮件通知。
 
-![电子邮件通知选项](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![电子邮件通知选项。](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
 ### <a name="default-email-notification"></a>默认电子邮件通知
 
-通知的"主题"行以所采取操作开头，例如，电子邮件的"通知"、"邮件被阻止"或文档的"访问被阻止"。 如果通知与文档有关，则通知邮件正文包含一个链接，该链接将你指向存储该文档的网站，并打开文档的策略提示，可在其中解决任何问题 (请参阅以下有关策略提示) 的部分。 如果通知与邮件有关，则通知会作为附件包含与 DLP 策略匹配的邮件。
+通知的"主题"行以所采取操作开头，例如，电子邮件的"通知"、"邮件被阻止"或文档的"访问被阻止"。 如果通知与文档有关，则通知邮件正文包含一个链接，该链接将你指向存储文档的网站，并打开文档的策略提示，可在其中解决任何问题 (请参阅以下有关策略提示) 的部分。 如果通知与邮件有关，则通知会作为附件包含与 DLP 策略匹配的邮件。
 
-![消息通知](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
+![通知邮件。](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
 
 默认情况下，通知显示类似于网站上以下项的文本。通知文本针对每个规则单独配置，因此根据匹配的规则，显示的文本有所不同。
 
@@ -129,7 +123,7 @@ ms.locfileid: "53859866"
 |%%ContentURL%%  <br/> |SharePoint Online 或 OneDrive for Business 上的文档的 URL。  <br/> |
 |%%MatchedConditions%%  <br/> |与内容匹配的条件。 使用此令牌向用户通知内容可能出现的问题。  <br/> |
 
-![显示标记显示位置的通知消息](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
+![显示标记显示位置的通知消息。](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
 
 ## <a name="options-for-configuring-policy-tips"></a>用于配置策略提示的选项
 
@@ -143,9 +137,9 @@ ms.locfileid: "53859866"
 
   - 允许用户报告误报并替换 DLP 策略。此信息还被记录下来用于报告，以便您可以使用误报来微调您的规则。
 
-![策略提示选项](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
+![策略提示选项。](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
 
-例如，您可能将 DLP 策略应用于检测到个人身份OneDrive for Business个人身份信息的网站 (PII) ，并且此策略有三个规则：
+例如，您可能将 DLP 策略应用于OneDrive for Business个人身份信息的网站，这些网站 (PII) ，并且此策略有三个规则：
 
 1. 第一个规则：如果在文档中检测到包含此敏感信息的实例少于五个，并且该文档与组织内部的人员共享，则“发送通知”操作将显示策略提示。对于策略提示，无需提供任何替换选项，因为此规则只是通知相关人员，但不会阻止访问。
 
@@ -155,11 +149,12 @@ ms.locfileid: "53859866"
 
 以下几点有助于您对使用策略提示替换规则的理解：
 
-- 覆盖选项是按规则进行，它将覆盖规则规则 (发送通知除外，通知在规则中) 。
+- 替代选项是按规则进行，它覆盖规则规则 (发送通知除外，通知不能) 。
 
 - 内容可以匹配 DLP 策略中的多个规则，但只会显示限制最严格、优先级最高的规则中的策略提示。 例如，阻止访问内容的规则所提供的策略提示比起只是发送通知的规则所提供的策略提示，前者的显示优先级高于后者。 这会让用户看不到策略提示的级联方式。
 
 - 如果限制最严格的规则中的策略提示允许用户替换规则，那么替换此规则还会替换与此内容相匹配的所有其他规则。
+
 
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>OneDrive for Business 网站或 SharePoint Online 网站上的策略提示
 
@@ -169,15 +164,15 @@ ms.locfileid: "53859866"
 
 2. 如果该规则阻止访问该文档，则会显示阻止图标。
 
-   ![文档策略提示图标OneDrive帐户](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![用户帐户中文档的策略OneDrive图标。](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
 
-若要对文档采取措施，可以选择一个项目，选择页面右上角的信息信息窗格图标，以打开详细信息窗格 \>  ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **查看策略提示**。
+若要对文档采取措施，可以选择一个项目，选择"信息 \> **信息** ![ "窗格图标。](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 在页面右上角打开详细信息窗格查看策略 \> **提示**。
 
 策略提示会列出问题及其内容，如果对策略提示配置了这些选项，则您可以选择“解决”，然后选择“替换”策略提示或“报告”误报。
 
-![显示策略提示的信息窗格](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
+![显示策略提示的信息窗格。](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
 
-![具有重写选项的策略提示](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
+![具有替代选项的策略提示。](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
 
 将 DLP 策略同步到网站，并定期以异步方式根据这些策略对内容进行评估，因此，您创建 DLP 策略的时间与开始看到策略提示的时间之间可能出现短暂的延迟。类似延迟还有可能出现在从您解决或替换策略提示到网站的文档上的图标消失的这段时间里。
 
@@ -193,29 +188,29 @@ ms.locfileid: "53859866"
 
 ### <a name="custom-text-for-policy-tips-on-sites"></a>有关网站上策略提示的自定义文本
 
-你可以将策略提示的文本与电子邮件通知分开自定义。 与上述部分 (电子邮件通知的自定义文本) ，策略提示的自定义文本不接受 HTML 或令牌。 相反，策略提示的自定义文本是纯文本，只有 256 个字符的限制。
+你可以将策略提示的文本与电子邮件通知分开自定义。 与上述部分 (电子邮件通知的自定义文本) ，策略提示的自定义文本不接受 HTML 或令牌。 相反，策略提示的自定义文本是纯文本，限制为 256 个字符。
 
 ## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Outlook 网页版 2013 Outlook及更高版本中的策略提示
 
 在 Outlook 网页版 和 Outlook 2013 及更高版本中撰写新电子邮件时，如果添加的内容与 DLP 策略中的规则匹配，并且该规则使用策略提示，则会看到策略提示。 撰写邮件时，策略提示显示在邮件顶部的收件人上方。
 
-![正在撰写的邮件顶部的策略提示](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
+![正在撰写的邮件顶部的策略提示。](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
 
 无论敏感信息出现在邮件正文、主题行中，还是邮件附件中，策略提示都正常工作，如下所示。
 
-![显示附件与 DLP 策略冲突的策略提示](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
+![显示附件与 DLP 策略冲突的策略提示。](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
 
 如果策略提示配置为允许覆盖，可以选择"显示详细信息替代"输入业务理由 \>  \> 或报告误报 \> **替代**。
 
-![邮件中的策略提示展开以显示替代选项](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
+![邮件中的策略提示展开以显示替代选项。](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
 
-![策略提示对话框，可在其中覆盖策略提示](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
+![策略提示对话框，可在其中覆盖策略提示。](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
 请注意，向电子邮件添加敏感信息时，添加敏感信息和显示策略提示之间可能有延迟。
 
 ### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 及更高版本仅支持显示某些条件的策略提示
 
-目前，Outlook 2013 及更高版本仅支持针对这些条件显示策略提示：
+目前，Outlook 2013 及更高版本仅支持针对以下条件显示策略提示：
 
 - 内容包含
 - 共享内容
@@ -224,9 +219,9 @@ ms.locfileid: "53859866"
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>安全Exchange中心与安全与合规中心 &amp; 中的策略提示
 
-策略提示既可以与在管理中心中创建的 DLP 策略和邮件流规则一Exchange，也可以与在安全与合规中心中创建的 DLP 策略一起使用，但不能同时 &amp; 使用。 这是因为这些策略存储在不同位置，但策略提示只能从单个位置绘制。
+策略提示既可以与在管理中心中创建的 DLP 策略和邮件流规则一Exchange，也可以与在安全与合规中心创建的 DLP 策略一起使用，但不能同时 &amp; 使用。 这是因为这些策略存储在不同位置，但策略提示只能从单个位置绘制。
 
-如果在 Exchange 管理中心中配置了策略提示，那么在 Outlook 网页版 和 Outlook 2013 及更高版本中，在 Exchange 管理中心中关闭这些提示之前，不会向 Outlook 网页版 和 Outlook 2013 中的用户显示任何策略提示。 &amp; 这可确保当前Exchange邮件流规则 (传输规则) ，直到您选择切换到安全与合规 &amp; 中心。
+如果在 Exchange 管理中心配置了策略提示，那么在 Outlook 网页版 和 Outlook 2013 及更高版本中，在 Exchange 管理中心中关闭这些提示之前，不会向 Outlook 网页版 和 Outlook 2013 中的用户显示任何策略提示。 &amp; 这可确保当前Exchange邮件流规则 (也称为传输规则) ，直到您选择切换到安全与合规 &amp; 中心。
 
 请注意，虽然策略提示只能从单个位置进行绘制，但始终会发送电子邮件通知，即使您同时在安全与合规中心和 Exchange使用 DLP &amp; 策略。
 
@@ -248,26 +243,26 @@ ms.locfileid: "53859866"
 
 - 该网站包含在配置为使用策略提示的 DLP 策略中。
 
-Office桌面程序自动直接从 Office 365 同步 DLP 策略，然后扫描文档以确保它们不会与 DLP 策略发生冲突，并实时显示策略提示。
+Office桌面程序直接从 Office 365 自动同步 DLP 策略，然后扫描文档以确保它们不会与 DLP 策略发生冲突，并实时显示策略提示。
 
 > [!NOTE]
-> Office桌面应用自行扫描文档，确定是否应显示 DLP 策略提示;它们不会显示联机SharePoint或OneDrive for Business确定应在文件上显示的策略提示。 因此，你可能并不总是在桌面应用中看到 DLP 策略提示，你将在 SharePoint Online 网站或OneDrive for Business看到该提示。 相比之下，Office应用程序只显示 DLP 策略提示，SharePoint或OneDrive for Business确定应显示的 DLP 策略提示。
+> Office应用程序扫描文档本身以确定是否应显示 DLP 策略提示;它们不会显示联机SharePoint或OneDrive for Business确定应在文件上显示的策略提示。 因此，您可能并不总是在桌面应用中看到 DLP 策略提示，而您可以在 SharePoint Online 网站或OneDrive for Business看到该提示。 相比之下，Office应用程序只显示 DLP 策略提示，SharePoint或OneDrive for Business确定应显示的 DLP 策略提示。
 
 根据您在 DLP 策略中对策略提示的配置方式，用户可以选择忽略策略提示、使用或不使用业务理由替换策略或报告误报。
 
 在消息栏上显示策略提示。
 
-![消息栏在 Excel 2016 中显示策略提示](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![消息栏显示策略提示Excel 2016。](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 策略提示也显示在 Backstage 视图（“文件”选项卡上）中。
 
-![Backstage 在 Excel 2016 中显示策略提示](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
+![Backstage 显示策略提示Excel 2016。](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
 
 如果对 DLP 策略中的策略提示配置了这些选项，您可以选择“解决”以“替换”策略提示或“报告”误报。
 
-![Excel 2016 Backstage 中的策略提示选项](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
+![有关 Backstage 中策略提示的选项Excel 2016。](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
 
-在每个桌面Office中，用户可以选择关闭策略提示。 如果已关闭，则只是简单通知的策略提示将不会显示在消息栏或 Backstage 视图（“文件”选项卡上）上。 但是，仍会显示有关阻止和替换的策略提示，并且仍将收到电子邮件通知。 此外，关闭策略提示并不会将文档从任何已对其应用的 DLP 策略中予以免除。
+在每个桌面Office，用户可以选择关闭策略提示。 如果已关闭，则只是简单通知的策略提示将不会显示在消息栏或 Backstage 视图（“文件”选项卡上）上。 但是，仍会显示有关阻止和替换的策略提示，并且仍将收到电子邮件通知。 此外，关闭策略提示并不会将文档从任何已对其应用的 DLP 策略中予以免除。
 
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的策略提示的默认文本
 
@@ -279,9 +274,9 @@ Office桌面程序自动直接从 Office 365 同步 DLP 策略，然后扫描文
 |阻止访问，发送通知，并允许重写  <br/> |此文件与您的组织中的策略相冲突。 如果不解决此冲突，则可能无法访问此文件。 有关详细信息， **请转到"文件** "菜单。  <br/> |
 |阻止访问，并向发送通知  <br/> |此文件与您的组织中的策略相冲突。 如果不解决此冲突，则可能无法访问此文件。 有关详细信息， **请转到"文件** "菜单。  <br/> |
 
-### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>自定义策略提示的文本，包括 Excel、PowerPoint 和 Word
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>自定义策略提示的文本Excel、PowerPoint和 Word 中的策略提示
 
-你可以将策略提示的文本与电子邮件通知分开自定义。 与上述部分 (电子邮件通知的自定义文本) ，策略提示的自定义文本不接受 HTML 或令牌。 相反，策略提示的自定义文本是纯文本，只有 256 个字符的限制。
+你可以将策略提示的文本与电子邮件通知分开自定义。 与上述部分 (电子邮件通知的自定义文本) ，策略提示的自定义文本不接受 HTML 或令牌。 相反，策略提示的自定义文本是纯文本，限制为 256 个字符。
 
 ## <a name="more-information"></a>更多信息
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bdd3e822403b6ad48989723626ce5a6d2d4a8bc3a18ca01c3c1d9915aabfa03d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811238"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684096"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修正活动方法和属性
 
@@ -40,7 +40,7 @@ ms.locfileid: "53811238"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-API 响应包含 [& 漏洞管理](next-gen-threat-and-vuln-mgt.md)   租户中创建的威胁和修正活动。  
+API 响应包含 [& 漏洞管理](next-gen-threat-and-vuln-mgt.md)   租户中创建的威胁和修正活动。
 
 ## <a name="methods"></a>方法
 
@@ -57,29 +57,29 @@ API 响应包含 [& 漏洞管理](next-gen-threat-and-vuln-mgt.md)   租户�
 属性 ID|数据类型|说明
 :---|:---|:---
 “类别”|String|软件/安全配置 (修正活动的) 
-completerEmail|String|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件
-completerId|String|如果修正活动是由某人手动完成的，则此列包含其对象 ID
-completionMethod|String|如果由 (选择"标记为已完成") 或"手动"修补所有设备，则修正活动可以"自动"完成。
-createdOn|日期时间|创建此修正活动的时间
+completerEmail|字符串|如果修正活动是由某人手动完成的，此列将包含他们的电子邮件
+completerId|字符串|如果修正活动是由某人手动完成的，则此列包含其对象 ID
+completionMethod|字符串|如果所有 (设备都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。
+createdOn|日期/时间|创建此修正活动的时间
 说明|String|此修正活动的说明
-dueOn|日期时间|此修正活动的创建者设置的截止日期
+dueOn|日期/时间|此修正活动的创建者设置的截止日期
 fixedDevices||已修复的设备数量
 id|String|此修正活动的 ID
 nameId|String|相关产品名称
-priority|String|为此修正活动设置的创建者设置的优先级 (高\中\低) 
-productId|String|相关产品 ID
+priority|String|针对此修正活动的创建者设置的优先级 (高\中\低) 
+productId|字符串|相关产品 ID
 productivityImpactRemediationType|String|只能请求对没有用户影响的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。
 rbacGroupNames|String|相关设备组名称
-recommendedProgram|String|要升级到的推荐程序
-recommendedVendor|String|建议升级到的供应商
+recommendedProgram|字符串|要升级到的推荐程序
+recommendedVendor|字符串|建议升级到的供应商
 recommendedVersion|String|要更新/升级到的建议版本
-relatedComponent|String|此修正活动的相关组件 (安全建议计划的相关组件) 
-requesterEmail|String|创建者电子邮件地址
-requesterId|String|Creator 对象 ID
+relatedComponent|字符串|此修正活动的相关组件 (安全建议服务的相关组件) 
+requesterEmail|字符串|创建者电子邮件地址
+requesterId|字符串|Creator 对象 ID
 requesterNotes|String|注释 (此) 活动的创建者添加的自定义文本
-scid|String|相关安全建议 SCID
-status|String|修正活动状态 (/已完成) 
-statusLastModifiedOn|日期时间|更新状态字段的日期
+scid|字符串|相关安全建议 SCID
+状态|String|修正活动状态 (/已完成) 
+statusLastModifiedOn|日期/时间|更新状态字段的日期
 targetDevices|长型|此修正适用于的公开设备数量
 title|String|此修正活动的标题
 type|String|修正类型

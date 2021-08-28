@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16a0222b1d72099cf1d6f9cba23f599ad722804fc1d0b04c9953e94aa3ab1d80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e3484d07263063c9fab04a056cd09ac9b5d67a5
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811178"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684048"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>使用 Linux 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
@@ -35,7 +35,7 @@ ms.locfileid: "53811178"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-Linux 上的 Defender for Endpoint (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
+Linux (上的 Defender for Endpoint) PUA 保护功能中可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
 
 这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能会对终结点执行对性能或使用产生不利影响的操作。 PUA 还可以指信誉不佳的应用程序。
 
@@ -55,8 +55,8 @@ Linux 上的 Defender for Endpoint 可以检测和报告 PUA 文件。 在阻止
 - **审核**：PUA 文件在产品日志中报告，但不在Microsoft 365 Defender。 威胁历史记录中未存储任何感染记录，产品不采取措施。
 - **Block**：PUA 文件在产品日志中和产品日志中Microsoft 365 Defender。 感染的记录存储在威胁历史记录中，产品会采取措施。
 
->[!WARNING]
->默认情况下，PUA 保护在 **审核模式下配置** 。
+> [!WARNING]
+> 默认情况下，PUA 保护在 **审核模式下配置** 。
 
 你可以配置从命令行或管理控制台处理 PUA 文件的方式。
 

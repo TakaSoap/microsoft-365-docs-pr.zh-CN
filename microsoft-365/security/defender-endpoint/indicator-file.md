@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2f0475d6adc1f97255665e3a32fe05e7d88c41b5
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 6b0655f0a4e6a0d00ab93409367b4e98e57b059e
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400172"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683964"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -44,7 +44,7 @@ ms.locfileid: "58400172"
 - 通过使用文件详细信息页中的添加指示器按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
@@ -94,19 +94,16 @@ In Microsoft 365 Defender， go to 设置 > Endpoints > Indicators > add new Fil
 - 说明
 - 建议的操作
 
-![文件指示器的警报设置](images/indicators-generate-alert.png)
+![文件指示器的警报设置。](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >
->- 通常，文件块将在几分钟内强制执行和删除，但可能需要 30 分钟以上的时间。
+> - 通常，文件块将在几分钟内强制执行和删除，但可能需要 30 分钟以上的时间。
+> - 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义相同的文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。
+> - 在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。
+> - 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
 >
->- 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，将应用更安全哈希的策略。 SHA-256 文件哈希 IoC 策略将超过 SHA-1 文件哈希 IoC 策略，如果哈希类型定义相同的文件，该策略将超过 MD5 文件哈希 IoC 策略。 无论设备组如何，这始终为 true。
->
->- 在所有其他情况下，如果具有相同强制目标的冲突文件 IoC 策略应用于所有设备和设备组，那么对于设备，设备组的策略将获胜。
->
->- 如果禁用 EnableFileHashComputation 组策略，则文件 IoC 的阻止准确度将降低。 但是，启用 `EnableFileHashComputation` 可能会影响设备性能。 例如，将大文件从网络共享复制到本地设备（尤其是通过 VPN 连接）可能会影响设备性能。
->
->   有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)。
+> 有关 EnableFileHashComputation 组策略详细信息，请参阅 [Defender CSP](/windows/client-management/mdm/defender-csp)。
 
 ## <a name="private-preview-advanced-hunting-capabilities"></a>专用预览版：高级搜寻功能
 
@@ -132,7 +129,7 @@ Timestamp > ago(30d)
 
 证书：
 
-- EUS：Win32/CustomCertEnterpriseBlock！cl  
+- EUS：Win32/CustomCertEnterpriseBlock！cl
 
 响应操作活动还可以在设备时间线中查看。
 
@@ -156,13 +153,18 @@ Timestamp > ago(30d)
 
 ### <a name="examples"></a>示例
 
-|组件|组件强制|文件指示器操作|结果
+<br>
+
+****
+
+|组件|组件强制|文件指示器操作|结果|
 |---|---|---|---|
-|攻击面减少文件路径排除|允许|阻止|阻止
-|攻击面减少规则|阻止|允许|允许
-|Windows Defender 应用程序控制|允许|阻止|允许
-|Windows Defender 应用程序控制|阻止|允许|阻止
-|Microsoft Defender 防病毒排除|允许|阻止|允许
+|攻击面减少文件路径排除|允许|阻止|阻止|
+|攻击面减少规则|阻止|允许|允许|
+|Windows Defender 应用程序控制|允许|阻止|允许|
+|Windows Defender 应用程序控制|阻止|允许|阻止|
+|Microsoft Defender 防病毒排除|允许|阻止|允许|
+|
 
 ## <a name="see-also"></a>另请参阅
 

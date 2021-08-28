@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 本文概述了敏感信息类型及其检测敏感信息（如社会保险、信用卡或银行帐号）以识别敏感项目
-ms.openlocfilehash: 76812349bc6916483d1e8f56f9c3eaca381d373690a375a3ba1e34a98ee30afc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac293eea8b81125b124265d2546d562393a81f8f
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842037"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684000"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
-标识和分类组织控制下的敏感项目是信息保护规范的第一 [步](./information-protection.md)。  Microsoft 365提供了三种标识项目的方法，以便对这些项目进行分类：
+标识和分类组织控制下的敏感项目是信息保护规范的第一 [步](./information-protection.md)。  Microsoft 365提供了三种标识项目的方法，以便可以将其分类：
 
 - 用户手动执行
 - 自动模式识别，如敏感信息类型
@@ -51,11 +51,11 @@ ms.locfileid: "53842037"
 - description：描述敏感信息类型正在查找的内容
 - pattern：模式定义敏感信息类型检测到的信息。 它由以下组件组成
     - Primary 元素 – 敏感信息类型要查找的主元素。 它可以 **是包含或** 不带校验和验证、关键字列表 **、关键字词典** 或函数的 **正则表达式**。
-    - Supporting 元素 – 用作支持性证据的元素，有助于提高匹配可信度。 例如，与 SSN 号码接近的关键字"SSN"。 它可以是包含或不带校验和验证、关键字列表、关键字词典的正则表达式。
+    - Supporting 元素 – 充当支持性证据的元素，可帮助提高匹配可信度。 例如，与 SSN 号码接近的关键字"SSN"。 它可以是包含或不带校验和验证、关键字列表、关键字词典的正则表达式。
     - 可信度 - 高 (、中、低) 可信度反映与主要元素一起检测到的支持性证据量。 项目包含的支持性证据越充分，匹配项包含所查找敏感信息的置信度越高。
     - 邻近度 – 主要元素和支持元素之间的字符数
 
-![确证性证据和接近度窗口的关系图](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![确定证据和邻近感应窗口的关系图。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 在此视频中了解有关可信度级别更多信息
 
@@ -65,7 +65,7 @@ ms.locfileid: "53842037"
 ### <a name="example-sensitive-information-type"></a>敏感信息类型示例
 
 
-## <a name="argentina-national-identity-dni-number"></a>阿根廷国家/ (DNI) 号码
+#### <a name="argentina-national-identity-dni-number"></a>阿根廷国家/ (DNI) 号码
 
 ### <a name="format"></a>格式
 
@@ -116,18 +116,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="more-on-confidence-levels"></a>有关可信度的更多
 
-在敏感信息类型实体定义中，可信度反映除了主要元素之外检测到的支持性证据的多少。 项目包含的支持性证据越充分，匹配项包含所查找敏感信息的置信度越高。 例如，高可信度的匹配将包含与主要元素接近的更多支持性证据，而低可信度的匹配将包含几乎或没有任何接近度的支持性证据。 
+在敏感信息类型实体定义中，可信度反映除了主要元素之外检测到的支持性证据的多少。 项目包含的支持性证据越充分，匹配项包含所查找敏感信息的置信度越高。 例如，高可信度的匹配将包含与主要元素接近的更多支持证据，而低可信度的匹配将包含很少或没有任何接近度的支持性证据。 
 
 高可信度返回最小的误报，但可能会导致更多的误报。 低或中等可信度返回更多的误报，但漏报很少。
 
 - **低可信度**：值 65，匹配项将包含最小的漏报，但误报最多。 低可信度返回所有低、中和高可信度匹配。
 - **中等可信度**：值为 75，匹配项将包含误报和漏报的平均数量。 中置信度返回所有中高可信度匹配。  
-- **高** 可信度：值为 85 时，匹配的项将包含最小的误报，但包含最多的漏报。 高可信度仅返回高可信度匹配。  
+- **高** 可信度：值为 85，匹配的项将包含最小的误报，但包含漏报数。 高可信度仅返回高可信度匹配。  
 
-你应该将高可信度模式与较低的计数（如 5 到 10）和低可信度模式（如 20 个或多个）一同使用。
+你应该将高可信度模式与较低的计数（如 5 到 10）和低可信度模式（如 20 个或多个）一起用于较高的计数。
 
 > [!NOTE]
-> 如果你有现有的策略或自定义敏感信息类型 (SIT) 使用基于数字的可信度 (也知道为准确性) ，则它们将自动映射到三个离散可信度;整个安全 @ 合规中心 UI 中的低可信度、中等可信度和高可信度。
+> 如果你有使用基于数字的可信度) 定义的现有策略或自定义敏感信息类型 (SIT (还知道其准确性) ，它们将自动映射到三个离散可信度;整个安全 @ 合规中心 UI 中的低可信度、中等可信度和高可信度。
 > - 置信度在 76 和 100 之间的最低准确度或自定义 SIT 模式的所有策略都将映射到高可信度。 
 > - 置信度在 66 和 75 之间的最低准确度或自定义 SIT 模式的所有策略都将映射到中等可信度。
 > - 置信度低于或等于 65 的所有策略或自定义 SIT 模式都将映射到低可信度。 
@@ -169,6 +169,6 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
 - [在 PowerShell 中创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-若要了解如何使用敏感信息类型来遵守数据隐私法规，请参阅使用 Microsoft 365 (aka.ms/m365dataprivacy) 为数据隐私[法规部署](../solutions/information-protection-deploy.md)信息保护。
+若要了解如何使用敏感信息类型来遵守数据隐私法规，请参阅使用 Microsoft 365 (aka.ms/m365dataprivacy) 部署数据隐私[法规](../solutions/information-protection-deploy.md)的信息保护。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

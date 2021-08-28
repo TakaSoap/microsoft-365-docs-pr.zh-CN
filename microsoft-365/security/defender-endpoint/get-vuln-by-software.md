@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f70cba0d749238b9602f88b27d96aec87a5139b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 98852db88f2b586d8e69a529a838e785dc22654c
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502839"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683988"
 ---
 # <a name="list-vulnerabilities-by-software"></a>按软件列出漏洞
 
@@ -37,10 +37,9 @@ ms.locfileid: "58502839"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-检索已安装软件中的漏洞列表。 
+检索已安装软件中的漏洞列表。
 
 ## <a name="permissions"></a>权限
 
@@ -69,7 +68,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 OK，并列出指定软件公开的漏洞。 
+如果成功，此方法返回 200 OK，并列出指定软件公开的漏洞。
 
 ## <a name="example"></a>示例
 
@@ -78,7 +77,7 @@ Empty
 下面是一个请求示例。
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities 
+GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities
 ```
 
 ### <a name="response-example"></a>响应示例
