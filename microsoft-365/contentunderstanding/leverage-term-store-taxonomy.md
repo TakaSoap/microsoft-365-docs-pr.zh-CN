@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 使用 Microsoft SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
-ms.openlocfilehash: 56286014a1d5067e5d2c365eaf0470711e78e27dc86177e0596af116d361b819
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97ceace09ed4c8b1a8ea8daf6d562d8013533cea
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573723"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序时利用术语库分类
 
@@ -32,23 +32,23 @@ ms.locfileid: "53871205"
 
 例如，你的模型标识并分类上传到文档库的所有 **合同** 文档。  此外，该模型还会提取每个合同中的 **合同服务** 值，并将其显示在库视图中的一列中。 在合同中的各种合同服务值之间，有一些你的公司不再使用且已重命名了的旧值。 例如，对术语 *Design*、*Graphics* 或 *Topography* 合同服务的所有引用现在都应称为 *创意*。 每当你的模型提取合同文档中的某个过时字词时，你都希望它在你的库视图中显示当前术语“Creative ”。 在下面的示例中，对模型进行训练时，我们看到的是一个示例文档，其中包含已过时的 *Design* 条款。
 
-   ![术语库](../media/content-understanding/design.png)</br>
+   ![术语库。](../media/content-understanding/design.png)</br>
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>在提取器使用托管元数据列
 
 在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中，“*合同服务*”[术语集](/sharepoint/managed-metadata#term-set)被配置为包含多个术语，包括“*创意*”。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
 
-   ![术语集](../media/content-understanding/term-store.png)</br>
+   ![术语集。](../media/content-understanding/term-store.png)</br>
 
 在术语集中使用同义词的原因可能有很多。 例如，组织部门的命名中可能存在已过时的术语、已重命名的术语或差异。
 
 若要确保在模型中创建提取器时托管元数据字段可供选择，需要[将其添加为托管元数据网站列](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)。 添加该网站列后，便可以在为模型创建提取器时选择该字段。
 
-   ![合同服务](../media/content-understanding/contract-services.png)</br>
+   ![合同服务。](../media/content-understanding/contract-services.png)</br>
 
 将模型应用到文档库之后，将文档上传到库中时，当提取器发现任意同义词值（*Design*、*Graphics* 和 *Topography*）时，*创意服务* 列将显示首选术语（*创意*）。
 
-   ![合同服务列](../media/content-understanding/creative.png)</br>
+   ![合同服务列。](../media/content-understanding/creative.png)</br>
 
 
 ## <a name="see-also"></a>另请参阅

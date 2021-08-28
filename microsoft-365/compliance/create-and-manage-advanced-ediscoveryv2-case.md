@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍如何创建和管理Advanced eDiscovery案例。 第一步是创建案例并开始使用Advanced eDiscovery功能。
-ms.openlocfilehash: 31b19f48ba6deabe3d4150544ce16c3669d18efe1607652d8224a2ebb1f81bb2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 本文介绍如何创建和管理Advanced eDiscovery案例。 第一步是创建案例并开始Advanced eDiscovery特性和功能。
+ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886452"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573243"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>创建和管理Advanced eDiscovery案例
 
-在设置Advanced eDiscovery并将权限分配给将[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)管理事例的组织中电子数据展示管理员之后，下一步是创建和管理事例。
+在设置Advanced eDiscovery并将权限分配给将管理[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)事例的组织中电子数据展示管理员之后，下一步是创建和管理事例。
 
-本文还简要概述了法律案件或其他类型的调查Advanced eDiscovery案例管理工作流。
+本文还简要概述了法律案件或其他类型的调查Advanced eDiscovery管理事例工作流。
 
 ## <a name="create-a-case"></a>创建案例
 
@@ -48,9 +48,9 @@ ms.locfileid: "53886452"
 
    将新建一个 **case，设置** 显示新案例的"新建"选项卡。
 
-6. 在 **"&"选项卡** 上的"设置权限 **"** 磁贴中，单击"选择 **"。**
+6. 在 **"&"选项卡** 上的"访问 **设置权限"** 磁贴中，单击"选择 **"。**
 
-7. 在" **管理此案例** "飞出页面上的"管理成员 **"下**，单击 **"添加** "将成员添加到案例。
+7. 在" **管理此案例** "飞出页面的" **管理成员"下**，单击 **"添加** "将成员添加到案例。
 
 8. 在人员列表中，选中要添加到案例的用户名旁边的复选框。 如前所述，请确保你添加到案例的人已分配有适当的电子数据展示权限。
 
@@ -62,9 +62,9 @@ ms.locfileid: "53886452"
 
 ## <a name="manage-the-workflow"></a>管理工作流
 
-为了让你开始使用Advanced eDiscovery，下面是一个符合常见电子数据展示做法[的基本工作流](advanced-ediscovery-edrm.md)。 在每个步骤中，我们还将重点介绍一些Advanced eDiscovery扩展的功能。
+为了让你开始使用Advanced eDiscovery，下面是一个符合常见电子数据展示做法的基本[工作流](advanced-ediscovery-edrm.md)。 在每个步骤中，我们还将重点介绍一些Advanced eDiscovery扩展的功能。
 
-![Advanced eDiscovery工作流](../media/AeDWorkflow.png)
+![Advanced eDiscovery工作流。](../media/AeDWorkflow.png)
 
 1. **[将保管](add-custodians-to-case.md)[人和非托管数据源添加到](non-custodial-data-sources.md)案例**。 创建案例后的第一步是添加保管人。 保管 *人* 是具有与案例相关的文档或电子文件的管理控制权限的人。 此外，还可以添加不与特定用户关联但可能与案例相关的数据源。
 
@@ -76,7 +76,7 @@ ms.locfileid: "53886452"
   
    - 你可以将保管人数据保留。 这将保留调查期间可能与案例相关的数据。
   
-   - 您可以将其他数据源与保管人 (例如，您可以将 SharePoint 站点或 Microsoft 365 组与保管人) 关联，以便可以重新索引、保留和搜索此数据，就像保管人邮箱或 OneDrive 帐户中的数据一样。
+   - 可以将其他数据源与保管人 (例如，可以将 SharePoint 站点或 Microsoft 365 组与保管人) 以便可以重新索引、保留和搜索此数据，就像保管人邮箱或 OneDrive 帐户中的数据一样。
 
    - 您可以使用安全[中心中的](managing-custodian-communications.md)通信Advanced eDiscovery向保管人发送法定保留通知。
 
@@ -90,27 +90,27 @@ ms.locfileid: "53886452"
 
 3. **[将集合提交到审阅集](commit-draft-collection.md)**。 配置并验证搜索返回所需数据后，下一步是将搜索结果添加到审阅集。 向审阅集添加数据时，项目会从原始位置复制到安全Azure 存储位置。 再次对数据进行索引索引，以在审阅和分析审阅集内的项目时优化数据，以便进行全面而快速的搜索。 此外，您还可以[将非Office 365数据添加到审阅集](load-non-office-365-data-into-a-review-set.md)。
 
-   还有一种特殊类型的审阅集，你可以将数据添加到 ，称为对话 *审阅集*。 这些类型的评论集提供了对话重建功能，可以重新构造、审阅和导出线程对话，如 Microsoft Teams。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
+   还有一种特殊类型的审阅集，你可以将数据添加到 ，称为对话 *审阅集*。 这些类型的评论集提供了对话重建功能，可以重新构造、审阅和导出线程对话，如Microsoft Teams。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
 
 4. **查看和分析审阅集内的数据**。 现在数据已位于审阅集内，您可以使用各种工具和功能来查看和分析案例数据，目的是将数据集减少为与正在调查的案例最相关的数据。 以下是您可以在此过程期间使用的一些工具和功能的列表。
 
    - [查看文档](view-documents-in-review-set.md)。 这包括查看审阅集内每个文档的元数据，以及查看其本机版本或文本版本的文档。
 
-   - [创建查询和筛选器](review-set-search.md)。 您可以使用各种搜索条件创建搜索查询 (包括搜索所有文件元数据属性 [) ](document-metadata-fields-in-advanced-ediscovery.md) 以进一步优化案例数据，以及将案例数据剔除到与案例最相关的内容。 您还可以使用审阅集筛选器将其他条件快速应用于搜索查询的结果，以进一步优化这些结果。 
+   - [创建查询和筛选器](review-set-search.md)。 使用各种搜索条件创建搜索查询 (包括搜索所有文件元数据属性 [) ](document-metadata-fields-in-advanced-ediscovery.md) 以进一步优化和剔除与案例最相关的案例数据。 您还可以使用审阅集筛选器将其他条件快速应用于搜索查询的结果，以进一步优化这些结果。 
 
-   - [创建和使用标记](tagging-documents.md)。 可以将标记应用于审阅集内的文档，以确定哪些文档是响应 (还是对案例) 无响应，然后在创建搜索查询以包含或排除带标记的文档时使用这些标记。 您还可以标记以确定要导出的文档。
+   - [创建和使用标记](tagging-documents.md)。 可以将标记应用于审阅集内的文档，以确定哪些文档是响应式 (还是对) 没有响应，然后在创建搜索查询以包含或排除带标记的文档时使用这些标记。 您还可以标记以确定要导出的文档。
 
-   - [批注和修订文档](view-documents-in-review-set.md#annotate-view)。 可以在评论中使用该批注工具为文档添加批注，将文档中的内容修订为工作产品。 我们在审阅期间生成批注或修订文档的 PDF 版本，以减少导出未修改的本机版本文档的风险。
+   - [批注和修订文档](view-documents-in-review-set.md#annotate-view)。 可以在评论中使用该批注工具为文档添加批注，将文档中的内容修订为工作产品。 在审阅期间，我们生成批注或修订文档的 PDF 版本，以减少导出未修改的本机版本文档的风险。
 
-   - [分析案例数据](analyzing-data-in-review-set.md)。 Advanced eDiscovery中的分析功能很强大。 对审阅集内的数据运行分析后，我们执行分析，如接近重复检测、电子邮件线程和主题，可帮助减少必须查看的文档量。 我们还生成了一个分析报告，汇总了运行分析的结果。 如前所述，运行分析还会运行 [律师-客户特权检测模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
+   - [分析案例数据](analyzing-data-in-review-set.md)。 应用程序分析功能Advanced eDiscovery功能。 对审阅集内的数据运行分析后，我们执行分析，如接近重复检测、电子邮件线程和主题，可帮助减少必须查看的文档量。 我们还生成了一个分析报告，汇总了运行分析的结果。 如前所述，运行分析还会运行 [律师-客户特权检测模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
-5. **导出和下载案例数据**。 收集、审阅和分析案件集数据后的最后一步是，将Advanced eDiscovery导出到外部审查中，或供调查团队外部人员审阅。 导出数据的过程包含两个步骤。 第一步是将数据从[](export-documents-from-review-set.md)审阅集中导出，并复制到其他 Azure 存储 位置 (Microsoft 提供的位置或由组织管理的位置) 。 然后，Azure 存储资源管理器[将数据](download-export-jobs.md)下载到本地计算机。 除了导出的数据文件之外，导出包的 包含还包含导出报告、摘要报表和错误报告。
+5. **导出和下载案例数据**。 收集、审阅和分析案件集数据后，最后一步是从 Advanced eDiscovery 导出数据进行外部审阅或供调查团队外部人员审阅。 导出数据的过程包含两个步骤。 第一步是将数据从[](export-documents-from-review-set.md)审阅集中导出，并复制到其他 Azure 存储 位置 (Microsoft 提供的位置或由组织管理的位置) 。 然后，Azure 存储资源管理器[将数据](download-export-jobs.md)下载到本地计算机。 除了导出的数据文件之外，导出包的 包含还包含导出报告、摘要报表和错误报告。
 
 ## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery体系结构
 
 下面的体系结构图显示了单地理位置环境和多地理位置环境中 Advanced eDiscovery 端到端工作流，以及与电子发现参考模型一致的端到端[数据流](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)。
 
-[![模型海报：Advanced eDiscovery体系结构Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![模型海报：Advanced eDiscovery体系结构Microsoft 365。](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [以图像视图](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

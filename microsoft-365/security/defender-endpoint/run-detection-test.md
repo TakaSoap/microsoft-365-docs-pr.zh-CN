@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ae3f6cfbdf1452b47f1bd91029c6a481eff5761
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d3430dc7765dfb7d84110a3a0cbae9f53e89b379
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256909"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573471"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试 
 
@@ -55,7 +55,7 @@ ms.locfileid: "58256909"
 
    1. 右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。
 
-      ![指向"开始"菜单以管理员角色运行"的窗口](images/run-as-admin.png)
+      ![指向"开始"菜单以管理员角色运行"的窗口。](images/run-as-admin.png)
 
 3. 在提示符下，复制并运行以下命令：
 

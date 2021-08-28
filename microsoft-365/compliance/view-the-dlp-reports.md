@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: 使用 DLP 报告中Office 365查看 DLP 策略匹配项、替代或误报的数量，并查看它们是否随着时间的推移呈上升或下降趋势。
-ms.openlocfilehash: 936c8aaba7d50cbb775c98babe751b357738e617d55ea8a8517a86c4f7cdb188
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 使用 dlp 报告Office 365查看 DLP 策略匹配项、替代或误报的数量，并查看它们是否随着时间的推移呈上升或下降趋势。
+ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574059"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>查看数据丢失防护报告
 
@@ -46,9 +46,9 @@ ms.locfileid: "53795481"
     
 - **DLP 事件** 此报告还会显示一段时间的策略匹配，如策略匹配报告。 但是，策略匹配报告在规则级别显示匹配项;例如，如果电子邮件匹配三个不同的规则，则策略匹配报告显示三个不同的行项目。 相比之下，事件报告在项目级别显示匹配项;例如，如果电子邮件与三个不同的规则匹配，则事件报告将显示该内容的单个行项。 
     
-  由于报告计数的聚合方式不同，因此策略匹配报告更适用于标识特定规则的匹配项并微调 DLP 策略。 事件报告更适合于识别对 DLP 策略有问题的特定内容片段。
+  因为报告计数的聚合方式不同，所以策略匹配报告更适用于标识特定规则的匹配项并微调 DLP 策略。 事件报告更适合于识别对 DLP 策略有问题的特定内容片段。
     
-- **DLP 误报和重写** 如果您的 DLP 策略允许用户覆盖该策略或报告误报，则此报告显示随着时间的推移此类实例的计数。 你可以按日期、位置或策略筛选报表。 您可以使用此报表实现以下目的： 
+- **DLP 误报和重写** 如果您的 DLP 策略允许用户覆盖该策略或报告误报，则此报告显示一段时间之后此类实例的计数。 你可以按日期、位置或策略筛选报表。 您可以使用此报表实现以下目的： 
     
   - 通过查看哪个策略造成更多的误报来微调或优化你的 DLP 策略。
     
@@ -60,19 +60,19 @@ ms.locfileid: "53795481"
   
 可以在安全与合规中心报告仪表板 &amp; \> **中查找** \> **这些报告**。
   
-![DLP 策略匹配报告](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP 策略匹配报告。](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>查看用户提交的替代理由
 
 如果 DLP 策略允许用户重写，则可使用误报和重写报告来查看用户在策略提示中提交的文本。
   
-![DLP 误报和重写报告详细信息的"理由"字段](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![DLP 误报和重写报告详细信息的"理由"字段。](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>对见解和建议采取措施
 
 报告可以显示见解和建议，你可以单击红色警告图标查看有关潜在问题的详细信息并采取可能的补救措施。
   
-![单击见解图标以查看详细信息和要采取的操作](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![单击见解图标以查看详细信息和要采取的操作。](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>DLP 报告的权限
 

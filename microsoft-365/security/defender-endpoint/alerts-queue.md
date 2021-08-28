@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: a9b483230cbd2406d11709844a62c150bce48731
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 42d8662ade476e23e3a7e8d8af31bf782f6ccf6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508102"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573987"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看并组织 Microsoft Defender for Endpoint 警报队列
 
@@ -48,7 +48,7 @@ ms.locfileid: "58508102"
 - 在页面之间导航
 - 应用筛选器
 
-![警报队列的图像](images/alerts-queue-list.png)
+![警报队列的图像。](images/alerts-queue-list.png)
 
 ## <a name="sort-filter-and-group-the-alerts-queue"></a>对警报队列进行排序、筛选和分组
 
@@ -59,7 +59,7 @@ ms.locfileid: "58508102"
 警报严重性|说明
 ---|---
 高 <br>  (红色) |通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
-Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
+Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些行为可能是 APT 高级永久性威胁 (一) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
 低 <br>  (黄色) |与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
 信息 <br>  (灰色) |可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
 
@@ -67,7 +67,7 @@ Medium <br>  (橙色) |终结点检测和响应泄露后行为的警报，这些
 
 Microsoft Defender 防病毒 (Microsoft Defender AV) 和 Defender for Endpoint 警报严重性是不同的，因为它们表示不同的范围。
 
-Microsoft Defender AV 威胁严重性表示检测到的威胁 (恶意软件) 的绝对严重性，如果受感染，则根据单个设备的潜在风险进行分配。
+Microsoft Defender AV 威胁严重性表示检测到的威胁的绝对严重性 (恶意软件) ，并基于单个设备的潜在风险（如果受感染）进行分配。
 
 Defender for Endpoint 警报严重性表示检测到的行为的严重性，即设备的实际风险，但更重要的是对组织带来潜在风险。
 
@@ -101,7 +101,7 @@ Defender for Endpoint 警报严重性表示检测到的行为的严重性，即�
 |特权提升|PrivilegeEscalation|在特权进程或帐户上下文中运行代码，以获取更高的代码权限级别。|
 |勒索软件|勒索软件|加密文件和扩展付款以还原访问权限的恶意软件。|
 |可疑活动|SuspiciousActivity|可能是恶意软件活动或攻击一部分的非典型活动。|
-|不需要的软件|UnwantedSoftware|影响工作效率和用户体验的低信誉应用和应用;检测为 PUA (可能不需要) 。|
+|不需要的软件|UnwantedSoftware|影响工作效率和用户体验的低信誉应用和应用;检测到 PUA (可能不需要) 。|
 
 ### <a name="status"></a>状态
 

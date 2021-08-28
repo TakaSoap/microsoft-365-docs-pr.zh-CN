@@ -16,26 +16,26 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 使用 (Online (DLP) SharePoint发现整个租户中包含敏感数据的文档。
-ms.openlocfilehash: cd92fafe5a04de0339c0afb5f5b7cc2b4cc1772fc46dabe6477dd23aa981af23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 在 (Online (DLP) SharePoint数据丢失防护，以发现整个租户中包含敏感数据的文档。
+ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573219"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
-用户经常将敏感数据（如信用卡号、社会保险号或个人）存储在其网站上，随着时间的推移，这可能会使组织面临重大数据丢失风险。 存储在网站中的文档（OneDrive for Business网站）可以与组织外部不应有权访问信息的人共享。 通过 (Online) DLP SharePoint数据丢失防护，可以发现整个租户中包含敏感数据的文档。 发现文档后，您可以与文档所有者一起保护数据。 本主题可帮助您形成查询来搜索敏感数据。
+用户经常将敏感数据（如信用卡号、社会保险号或个人）存储在其网站上，随着时间的推移，这可能会使组织面临重大数据丢失风险。 存储在网站中的文档（包括OneDrive for Business网站）可以与组织外部不应具有信息访问权限的人共享。 通过 (Online (DLP) ，SharePoint发现整个租户中包含敏感数据的文档。 发现文档后，您可以与文档所有者一起保护数据。 本主题可帮助您形成查询来搜索敏感数据。
 
 > [!NOTE]
-> 电子数据展示（即电子数据展示）和 DLP 是高级功能，SharePoint [Online 计划 2。](https://go.microsoft.com/fwlink/?LinkId=510080)
+> 电子数据展示或电子数据展示和 DLP 是高级功能，SharePoint [Online 计划 2。](https://go.microsoft.com/fwlink/?LinkId=510080)
 
 ## <a name="forming-a-basic-dlp-query"></a>创建一个基本的 DLP 查询
 
 基本的 DLP 查询包括三个部分：SensitiveType、计数范围和置信区间。 如下图所示 **，SensitiveType：" \<type\>** 是必需的，并且 和 **|\<count range\>** **|\<confidence range\>** 都是可选的。
 
-![示例查询分为必需和可选两种](../media/DLP-query-example-text.png)
+![示例查询分为必需和可选。](../media/DLP-query-example-text.png)
 
 ### <a name="sensitive-type---required"></a>敏感类型 - 必填
 
@@ -45,18 +45,18 @@ ms.locfileid: "53905568"
 
 接下来的两个部分都是范围，因此让我们快速检查一下范围的外观。 在SharePoint DLP 查询中，基本范围由两个数字表示，由两个句点分隔，如下所示 `[number]..[number]` ：。 例如，如果使用  `10..20` ，该范围将捕获 10 到 20 的数字。 有许多不同的范围组合，本主题将阐释其中的几个。
 
-让我们向查询添加计数范围。 可以使用计数范围来定义文档在包含在查询结果中之前需要包含的敏感信息的发生次数。 例如，如果希望查询仅返回正好包含五个信用卡号的文档，请使用  `SensitiveType:"Credit Card Number|5"` ：。 计数范围还可以帮助您辨别存在高风险的文档。 例如，您的组织可能认为含有五个或更多信用卡号的文档存在高风险。 若要查找符合此条件的文档，请使用此查询  `SensitiveType:"Credit Card Number|5.."` ：。 或者，您可以使用此查询查找信用卡号少于或五个以下的文档  `SensitiveType:"Credit Card Number|..5"` ：。
+让我们向查询添加计数范围。 您可以使用计数范围来定义文档在包含在查询结果中之前需要包含的敏感信息出现次数。 例如，如果希望查询仅返回正好包含五个信用卡号的文档，请使用  `SensitiveType:"Credit Card Number|5"` ：。 计数范围还可以帮助您辨别存在高风险的文档。 例如，您的组织可能认为含有五个或更多信用卡号的文档存在高风险。 若要查找符合此条件的文档，请使用此查询  `SensitiveType:"Credit Card Number|5.."` ：。 或者，您可以使用此查询查找信用卡号少于或五个以下的文档  `SensitiveType:"Credit Card Number|..5"` ：。
 
 #### <a name="confidence-range"></a>置信区间
 
 最后，置信区间是指已检测到敏感类型实际匹配的置信水平。 置信区间的值与计数范围使用的原理相似。 您可以创建一个不包括计数范围的查询。 例如，要搜索具有任意数目的信用卡号的文档（只要置信区间为 85% 或更高）就会使用此查询  `SensitiveType:"Credit Card Number|*|85.."` ：。
 
 > [!IMPORTANT]
-> 星号字符 `*` () 是一个通配符，表示任何值都有效。 可以在计数范围或置信区间 () ，但不能在敏感类型中，使用通配符 `*` 。
+> 星号字符 `*` () 通配符，表示任何值都有效。 可以在计数范围或置信区间 () ，但不能在敏感类型中，使用通配符。 `*`
 
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>电子数据展示中心可用的其他查询属性和搜索运算符
 
-dlp in SharePoint also introduces the LastSensitiveContentScan property， which can help you search for files scanned within a specific timeframe. 有关属性的查询示例，请参阅下一节中的S examples `LastSensitiveContentScan` of complex [queries。](#examples-of-complex-queries)
+DLP in SharePoint还引入了 LastSensitiveContentScan 属性，该属性可帮助您搜索特定时间范围内扫描的文件。 有关属性的查询示例，请参阅下一节中的S examples `LastSensitiveContentScan` of complex [queries。](#examples-of-complex-queries)
 
 您不仅可以使用特定于 DLP 的属性来创建查询，还可以使用标准 SharePoint电子数据展示搜索属性（如 `Author` 或 `FileExtension` ）。 您可以使用运算符来构建复杂的查询。 有关可用属性和运算符的列表，请参阅将搜索属性和运算符与 [电子数据展示一同](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 使用博客文章。
 
@@ -79,16 +79,16 @@ dlp in SharePoint also introduces the LastSensitiveContentScan property， which
 
 ## <a name="examples-of-queries-to-avoid"></a>示例
 
-并非所有查询都一样。 下表提供了与 DLP 不一样的示例，SharePoint原因。
+并非所有查询都一样。 下表提供了与 DLP 不一起运行的查询示例，SharePoint原因。
 
 <br>
 
 ****
 
-|不支持的查询|Reason|
+|不支持的查询|原因|
 |---|---|
 |`SensitiveType:"Credit Card Number|.."`|必须至少添加一个数值。|
-|`SensitiveType:"NotARule"`|"NotARule"不是有效的敏感类型名称。 DLP 查询 [中仅包含敏感信息](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) 类型清单中的名称。|
+|`SensitiveType:"NotARule"`|"NotARule"不是有效的敏感类型名称。 DLP 查询 [中仅包含](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) 敏感信息类型清单中的名称。|
 |`SensitiveType:"Credit Card Number|0"`|零对范围中的最小值或最大值无效。|
 |`SensitiveType:"Credit Card Number"`|虽然很难看到，但"信用卡"和"卡"之间还有额外的空格，导致查询无效。 使用敏感信息类型清单中 [的确切敏感类型名称](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help)。|
 |`SensitiveType:"Credit Card Number|1. .3"`|两个周期部分不应用空格分隔。|

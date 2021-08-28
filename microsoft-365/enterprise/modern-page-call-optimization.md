@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何通过限制到 SharePoint Online 服务终结点的调用数量来优化 SharePoint Online 中的新式和经典发布网页。
-ms.openlocfilehash: f06ec4027737f03d44c6a95a7faa74ff48d94548
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7c3872e0860b089f52d9597a06bced71ea6eb523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394668"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573591"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化页面调用
 
@@ -54,11 +54,11 @@ SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 C
 
 如果“**需要注意**”部分中显示“**对 SharePoint 的请求**”，可单击结果了解详细信息，例如页面上调用总数和 URL 列表。
 
-![对 SharePoint 的请求结果](../media/modern-portal-optimization/pagediag-requests.png)
+![请求SharePoint结果。](../media/modern-portal-optimization/pagediag-requests.png)
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>修正与页面上调用过多相关的性能问题
 
-如果页面包含的调用过多，可以使用"请求 **SharePoint"结果中的** URL 列表来确定是否有重复的调用、应批处理的调用或返回应缓存数据的调用。
+如果页面包含的调用过多，可以使用"请求 **SharePoint"** 结果中的 URL 列表来确定是否有重复的调用、应批处理的调用或返回应缓存数据的调用。
 
 “**批处理 REST 调用**”可帮助减少性能开销。 要详细了解 API 调用批处理，请参阅[使用 REST API 进行批处理请求](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)。
 
@@ -66,7 +66,7 @@ SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 C
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
-![页面加载时间结果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![页面加载时间结果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >页面加载时间可能由于网络加载、具体时间和其他暂时条件等各种因素而有所不同。 应在更改前后多次测试页面加载时间，以帮助求出结果平均值。

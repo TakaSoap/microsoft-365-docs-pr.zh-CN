@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 37db4eaaf6c6cd8c6c173d52f68c23c16cfb1f3c7cccfc1eb35e610f679dff9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777790"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575428"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -81,7 +81,7 @@ ms.locfileid: "53777790"
 2. 导航到“[使用条款](https://aka.ms/catou)”。
 3. 单击“**新建条款**”。
 
-   ![Azure AD 新使用条款设置的屏幕截图](../media/azure-ad-guest-terms-of-use.png)
+   ![Azure AD 新使用条款设置的屏幕截图。](../media/azure-ad-guest-terms-of-use.png)
 
 4. 键入“**名称**”和“**显示名称**”。
 6. 对于“**使用条款文档**”，浏览至你创建的 pdf 文件并选择它。
@@ -132,11 +132,11 @@ ms.locfileid: "53777790"
 9. 选择开始日期与持续时间。
 10. 在“**结束**”处，选择“**从不**”，然后单击“**下一步：设置**”。
 
-    ![Azure AD 访问评审选项卡的屏幕截图](../media/azure-ad-create-access-review.png)
+    ![Azure AD 访问“审阅”选项卡的屏幕截图。](../media/azure-ad-create-access-review.png)
 
-11. 在“**设置**”选项卡中，查看设置是否符合你的商业规则。
+11. 在“**设置**”选项卡中，查看设置是否符合你的业务规则。
 
-    ![Azure AD 访问评审设置选项卡截图](../media/azure-ad-create-access-review-settings.png)
+    ![Azure AD 访问审阅设置选项卡的屏幕截图。](../media/azure-ad-create-access-review-settings.png)
 
 12. 单击“**下一步: 评审+创建**”。
 13. 键入“**评审姓名**”然后查看设置。
@@ -170,7 +170,7 @@ ms.locfileid: "53777790"
 10. 在“**条件**”边栏选项卡上，单击“**客户端应用**”。
 11. 在“**客户端应用**”边栏选项卡上，为“**配置**”单击“**是**”，然后选择“**移动应用和桌面客户端**”、“**Exchange ActiveSync 客户端**”和“**其他客户端**”设置。 清除“**浏览器**”复选框。
 
-    ![Azure AD 条件访问客户端应用设置的屏幕截图](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Azure AD 条件访问客户端应用设置的屏幕截图。](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. 单击“**完成**”。
 13. 在“**访问控制**”下，单击“**授予**”。
@@ -276,7 +276,7 @@ ms.locfileid: "53777790"
 10. 在“**操作**”下，单击“**添加操作**”，然后选择“**限制访问或对 Microsoft 365 位置中的内容进行加密**”。
 11. 选中“**限制访问或对 Microsoft 365 位置中的内容进行加密**”复选框，然后选择“**仅限组织外部人员**”选项。
 
-      ![DLP 规则操作选项屏幕截图](../media/dlp-remove-guest-access-sensitive-files.png)
+      ![DLP 规则操作选项的屏幕截图。](../media/dlp-remove-guest-access-sensitive-files.png)
 
 12. 单击“**保存**”，然后单击“**下一步**”。
 13. 选择测试选项，然后单击“**下一步**”。

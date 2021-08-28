@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5b1cee16f4eccaa8f6fd36d8764b1305cba3131f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 142ce23d87c1f793a0192270e6d041b33d9bc126
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611279"
+ms.locfileid: "58573963"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的许可证问题
 
@@ -38,7 +38,7 @@ ms.locfileid: "58611279"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-当你在 [macOS](microsoft-defender-endpoint-mac.md) 上完成 Microsoft Defender for Endpoint 和 [手动](mac-install-manually.md) 部署测试或概念证明 (PoC) 时，你可能会收到以下错误：
+当你在 [macOS](microsoft-defender-endpoint-mac.md) 上通过 Microsoft Defender for Endpoint 和 [手动](mac-install-manually.md) 部署测试或概念证明 (PoC) 时，你可能会收到以下错误：
 
 ![许可证错误的图像。](images/no-license-found.png)
 
@@ -46,13 +46,13 @@ ms.locfileid: "58611279"
 
 未找到许可证
 
-看起来你的组织没有订阅Microsoft 365 企业版许可证。
+看起来你的组织没有用于订阅Microsoft 365 企业版许可证。
 
 请与管理员联系以寻求帮助。
 
 **原因：** 
 
-你已部署和/或安装了适用于 macOS 的 Microsoft Defender 终结点程序包 ("下载安装程序包") ，但你可能尚未运行配置脚本 ("下载载入程序包") ，或者你尚未向用户分配许可证。
+你已部署和/或安装了适用于 macOS 的 Microsoft Defender for Endpoint 程序包 ("下载安装程序包") ，但你可能已经运行了配置脚本 ("下载载入程序包") ，或者你尚未向用户分配许可证。
 
 **解决方案：**
 

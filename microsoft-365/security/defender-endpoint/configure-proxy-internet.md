@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1386732325b831d176c662d821a2bb13d5e96739
-ms.sourcegitcommit: 87d994407fb69a747239b8589ad11ddf9b47e527
+ms.openlocfilehash: 7665fbd52e45636988b375e4b811e3f93d8f3981
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "53595854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573999"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -71,19 +71,19 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- **管理模板> Windows数据收集>预览>配置连接的用户体验和遥测服务的已验证代理使用情况**
+- **管理模板> Windows数据收集>预览>配置连接的用户体验和遥测服务的已验证代理用法**
 
   将其设置为"**已启用"，** 然后选择 **"禁用经过身份验证的代理用法"。**
 
-  ![组策略设置的图像1](images/atp-gpo-proxy1.png)
+  ![组策略设置 1 的图像。](images/atp-gpo-proxy1.png)
 
-- **配置连接> Windows遥测>数据收集** 和预览>管理模板和组件：
+- **配置> Windows** 用户体验>预览版中的管理模板>组件：
 
   配置代理
 
-  ![组策略设置 2 的图像](images/atp-gpo-proxy2.png)
+  ![组策略设置 2 的图像。](images/atp-gpo-proxy2.png)
 
-  该策略在注册表项 下REG_SZ `TelemetryProxyServer` `DisableEnterpriseAuthProxy` 和 REG_DWORD两个注册表值 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 。
+  该策略在注册表项 下设置两REG_SZ `TelemetryProxyServer` 和 REG_DWORD `DisableEnterpriseAuthProxy` 设置两个注册表值 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 。
 
   注册表值 `TelemetryProxyServer` 采用以下字符串格式：
 
@@ -102,7 +102,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 > [!NOTE]
 >
 > - 这将影响所有应用程序，包括使用带默认代理的 WinHTTP 的 Windows 服务。</br>
-> - 更改拓扑结构（例如 (：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
+> - 要更改拓扑结构 (例如：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
 
 1. 打开提升的命令行：
    1. 转到“**开始**”并键入“**cmd**”。
@@ -133,23 +133,24 @@ netsh winhttp reset proxy
 <br>
 
 **** 
-|域列表电子表格|说明|
+|域列表的电子表格|说明|
 |---|---|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 如果代理或防火墙启用了 HTTPS 扫描（SSL 检查），则从 HTTPS 扫描中排除上表中列出的域。
+在防火墙中，打开地理位置列为 WW 的所有 URL。 对于地理位置列不是 WW 的行，打开特定数据位置的 URL。 若要验证数据位置设置，请参阅验证 [数据存储位置并更新 Microsoft Defender for Endpoint 的数据保留设置](/microsoft-365/security/defender-endpoint/data-retention-settings)。
 
 > [!NOTE]
 > settings-win.data.microsoft.com 运行版本 1803 或Windows 10的设备时，才需要此配置。<br>
 >
-> 仅在运行版本 1803 或更高版本的设备Windows 10包含 v20 的 URL 才需要。 例如，运行版本 1803 或Windows 10并载入到美国数据安全中心区域的设备 `us-v20.events.data.microsoft.com` 存储。
+> 仅在运行版本 1803 或更高版本的设备Windows 10包含 v20 的 URL 才需要。 例如，对于运行版本 1803 或Windows 10并载入到美国数据安全中心区域的设备 `us-v20.events.data.microsoft.com` ，存储。
 >
 > 如果你正在Microsoft Defender 防病毒，请参阅配置与 Microsoft Defender 防病毒[云服务的网络连接](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
 
 如果代理或防火墙阻止匿名流量，因为 Defender for Endpoint 传感器从系统上下文连接，请确保允许匿名流量位于前面列出的 URL 中。
 
-### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) Windows - 旧版客户端或 Windows 服务器的代理和防火墙要求
+### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) - 旧版客户端或 Windows 服务器的代理和防火墙Windows要求
 
 以下信息列出了与 Log Analytics 代理通信所需的代理和防火墙配置信息 (对于早期版本的 Windows（如 Windows 7 SP1、Windows 8.1、Windows Server 2008 R2、Windows Server 2012 R2 和 Windows Server 2016）通常称为 Microsoft Monitoring Agent) 。
 
@@ -169,32 +170,32 @@ netsh winhttp reset proxy
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>确认Microsoft Monitoring Agent (MMA) 服务 URL 要求 
 
-请参阅以下指南，在将 Microsoft Monitoring Agent (MMA) 用于早期版本的 Windows 时，为特定环境消除通配符 (*) 要求。
+请参阅以下指南，在将 Microsoft Monitoring Agent (MMA) 用于早期版本的 Windows 时，消除特定环境的通配符 (*) 要求Windows。
 
 1. 有关使用 Microsoft Monitoring Agent (MMA) 的以前操作系统载入到 Defender for Endpoint (中有关详细信息，请参阅在[Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326)上载入以前版本的 Windows 和[载入 Windows 服务器](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)。
 
 2. 确保计算机已成功报告到 Microsoft 365 Defender 门户。
 
-3. 从"C：\Program Files\Microsoft Monitoring Agent\Agent"运行 TestCloudConnection.exe 工具，以验证连接并查看特定工作区所需的 URL。
+3. 从"C：\Program Files\Microsoft Monitoring Agent\Agent"运行 TestCloudConnection.exe 工具，以验证连接性并查看特定工作区所需的 URL。
 
 4. 请查看 Microsoft Defender 终结点 URL 列表，了解你的地区要求的完整 (请参阅服务 URL[电子表格) 。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
-    ![网站中的管理员Windows PowerShell](images/admin-powershell.png)
+    ![管理员在Windows PowerShell。](images/admin-powershell.png)
 
-. () .ods.opinsights.azure.com、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net URL 终结点中使用的通配符可以替换为 \* \* \* \* 特定的工作区 ID。 工作区 ID 特定于你的环境和工作区，可在租户门户内的"载入"Microsoft 365 Defender部分。
+. () .ods.opinsights.azure.com、.oms.opinsights.azure.com 和 .agentsvc.azure-automation.net URL 终结点中使用的通配符可以替换为 \* \* \* \* 特定的工作区 ID。 工作区 ID 特定于环境和工作区，可在租户门户内的"载入"Microsoft 365 Defender部分。
 
-.blob.core.windows.net URL 终结点可以替换为测试结果的"防火墙规则 \* ： \* .blob.core.windows.net"部分中显示的 URL。
+可以将 .blob.core.windows.net URL 终结点替换为测试结果的"防火墙规则 \* ： \* .blob.core.windows.net"部分中显示的 URL。
 
 > [!NOTE]
-> 如果通过 Azure Defender 载入，可能使用多个工作区。 你需要在每个工作区 (的已载入计算机上执行上述 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
+> 如果通过 Azure Defender 载入，可能使用多个工作区。 您需要在每个工作区 (的已载入计算机上执行上述 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接
 
 验证代理配置是否成功完成，WinHTTP 是否可以在你的环境中发现代理服务器并通过代理服务器进行通信，以及代理服务器是否允许到 Defender for Endpoint 服务 URL 的通信。
 
-1. 将 [MDATP 客户端分析器工具](https://aka.ms/mdatpanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
+1. 将 [Microsoft Defender for Endpoint Client Analyzer 工具](https://aka.ms/mdeanalyzer) 下载到运行 Defender for Endpoint 传感器的电脑。
 
-2. 提取设备上 MDATPClientAnalyzer.zip 的内容。
+2. 提取设备上MDEClientAnalyzer.zip内容。
 
 3. 打开提升的命令行：
    1. 转到“**开始**”并键入“**cmd**”。
@@ -203,20 +204,20 @@ netsh winhttp reset proxy
 4. 输入以下命令，再按 **Enter**：
 
     ```PowerShell
-    HardDrivePath\MDATPClientAnalyzer.cmd
+    HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    将 *HardDrivePath* 替换为下载 MDATPClientAnalyzer 工具的路径，例如：
+    将 *HardDrivePath* 替换为下载 MDEClientAnalyzer 工具的路径，例如：
 
     ```PowerShell
-    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
+    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. 提取 *MDATPClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中创建的文件。
+5. 解压缩 *MDEClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中的工具创建的文件。
 
-6. 打开 *MDATPClientAnalyzerResult.txt* 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。
+6. 打开 *MDEClientAnalyzerResult.txt* 并验证是否执行了代理配置步骤，以启用服务器发现和访问服务 URL。
 
-   该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它将结果打印到每个可能用于与 Defender for Endpoint 服务进行通信的 URL 的 *MDATPClientAnalyzerResult.txt* 文件中。 例如：
+   该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它会将每个 URL的结果输出到MDEClientAnalyzerResult.txt文件中，这些 URL 可能用于与 Defender for Endpoint 服务进行通信。 例如：
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -232,7 +233,7 @@ netsh winhttp reset proxy
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后，可以使用在代理服务器 中启用对 Defender [for Endpoint 服务 URL](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)的访问中显示的表中的 URL。 将使用的 URL 取决于在载入过程中选择的区域。
 
 > [!NOTE]
-> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
+> 连接分析器工具云连接检查与攻击面减少规则阻止源自 [PSExec](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建不兼容。 需要暂时禁用此规则才能运行连接工具。 或者，可以在运行分析器时临时添加 [ASR](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) 排除项。
 >
 > 当在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到直接。
 

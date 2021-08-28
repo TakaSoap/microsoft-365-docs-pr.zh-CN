@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何管理核心电子数据展示事例。 这包括关闭案例、重新打开已关闭的案例和删除案例。
-ms.openlocfilehash: 407956540e8881f34244e920fe9e49e6fe48ca7f417d084dcbd1845a2c53c4f6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573291"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>关闭、重新打开和删除核心电子数据展示案例
 
@@ -32,9 +32,9 @@ ms.locfileid: "53906123"
 
 完成核心电子数据展示案例支持的法律案件或调查后，可以关闭该案例。 下面是关闭案例时发生的情况：
   
-- 如果案件集包含任何电子数据展示保留，将关闭它们。 关闭保留后，称为延迟保留 (30 天的宽限期) 将应用于已保留的内容位置。 这有助于防止立即删除内容，并且使管理员有机会在延迟保留期到期后永久删除内容之前搜索和还原内容。 有关详细信息，请参阅从电子数据展示保留 [中删除内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
+- 如果案件集包含任何电子数据展示保留，将关闭它们。 关闭保留后，称为延迟保留 (30 天的 *宽限期) 保留* 的内容位置应用。 这有助于防止立即删除内容，并且使管理员有机会在延迟保留期到期后永久删除内容之前搜索和还原内容。 有关详细信息，请参阅从电子数据展示保留 [中删除内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
-- 关闭案例仅关闭与该案例相关联的保留。 如果其他保留设置在内容位置上 (如诉讼保留、保留策略或不同核心电子数据展示案例的保留) 仍将保留这些保留。
+- 关闭案例仅关闭与该案例相关联的保留。 如果其他保留设置在内容位置 (如诉讼保留、保留策略或其他核心电子数据展示案例的保留) 仍将保留这些保留。
 
 - 该案例仍在"核心电子数据展示"页面上Microsoft 365 合规中心。 将保留已关闭案例的详细信息、保留、搜索和成员。
 
@@ -46,7 +46,7 @@ ms.locfileid: "53906123"
 
 2. 单击要关闭的案例的名称。
 
-   ![案例主页上的关闭案例](../media/eDiscoveryCaseHomePage.png)
+   ![案例主页上的关闭案例。](../media/eDiscoveryCaseHomePage.png)
 
 3. 在主页上的"状态"**下**，单击"**关闭大小写"。**
 
@@ -68,7 +68,7 @@ ms.locfileid: "53906123"
 
 2. 单击要重新打开的案例的名称。
 
-   ![重新打开已关闭的案例](../media/eDiscoveryCaseHomePageReopen.png)
+   ![重新打开已关闭的案例。](../media/eDiscoveryCaseHomePageReopen.png)
 
 3. 在主页上的"状态"**下**，单击"**重新打开案例"。**
 
@@ -82,11 +82,11 @@ ms.locfileid: "53906123"
 
     该过程完成后，在核心电子数据展示页面上将案例的状态更改为"活动 **"。**
 
-6.  (可选) 若要启用与重新打开的案例关联的任何保留项，请转到保留选项卡，选择保留，然后选择保留项飞出页面上的"状态"下的复选框。 
+6.  (可选) 打开与重新打开的案例相关联的任何保留项，请转到保留选项卡，选择保留，然后选择保留项飞出页面上的状态下的复选框。 
   
 ## <a name="delete-a-case"></a>删除案例
 
-还可以删除主动和已关闭的核心电子数据展示事例。 删除事例时，将删除事例的所有搜索和导出，并且从事例"核心电子数据展示"页上的事例Microsoft 365 合规中心。  不能重新打开已删除的大小写。
+还可以删除主动和已关闭的核心电子数据展示事例。 删除事例时，将删除事例内的所有搜索和导出，并且从事例"核心电子数据展示"页上的事例列表中Microsoft 365 合规中心。  不能重新打开已删除的大小写。
 
 必须先删除与 (相关联的所有电子数据展示保留) ，然后才能删除案例。  这包括删除状态为"关"的 **保留**。 
 
@@ -98,7 +98,7 @@ ms.locfileid: "53906123"
 
 3. 在飞出页面上， **单击删除**。
 
-      ![删除电子数据展示保留](../media/DeleteeDiscoveryHold.png)
+      ![删除电子数据展示保留。](../media/DeleteeDiscoveryHold.png)
 
 删除案件：
 
@@ -108,6 +108,6 @@ ms.locfileid: "53906123"
 
 3. 在案例主页上的"状态"**下**，单击"**删除大小写"。**
 
-      ![删除案例](../media/eDiscoveryCaseHomePageDelete.png)
+      ![删除案例。](../media/eDiscoveryCaseHomePageDelete.png)
 
 如果你尝试删除的案例仍包含电子数据展示保留，你将收到错误消息。 您必须删除与案例关联的所有保留，然后重试以删除该案例。

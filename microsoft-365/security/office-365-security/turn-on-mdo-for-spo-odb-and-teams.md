@@ -20,12 +20,12 @@ description: 管理员可以了解如何为 保险箱、SharePoint 和 Microsoft
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: f149aef4da4d85d8495f536ff95499cc143d2c71
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585568"
+ms.locfileid: "58573399"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>为 SharePoint、OneDrive 和 Microsoft Teams 启用安全附件
 
@@ -45,7 +45,7 @@ Microsoft Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams 
 
 - 若要保险箱 SharePoint、OneDrive 和 Microsoft Teams 的"附件"，你需要是 Microsoft 365 Defender 门户中组织管理或安全管理员角色组的成员。  有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-- 若要SharePoint Online PowerShell 阻止用户下载恶意文件，你需要是 Azure AD 中全局管理员[](/azure/active-directory/roles/permissions-reference#global-administrator)或 SharePoint[管理员](/azure/active-directory/roles/permissions-reference#sharepoint-administrator)角色的成员。
+- 若要SharePoint Online PowerShell 阻止用户下载恶意文件，你需要是 Azure AD 中全局管理员[](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)或 SharePoint[管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator)角色的成员。
 
 - 验证是否为组织启用了审核日志记录。 有关详细信息，请参阅 [打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
@@ -65,7 +65,7 @@ Microsoft Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams 
 
 ### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 为保险箱、SharePoint、OneDrive和Microsoft Teams
 
-如果你希望使用 PowerShell 打开 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams，请连接到[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)并运行以下命令：
+如果更希望使用 PowerShell 打开 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams，请连接到[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)并运行以下命令：
 
 ```powershell
 Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
@@ -94,7 +94,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>步骤 3 (推荐) 使用 Microsoft 365 Defender 门户为检测到的文件创建警报策略
 
-你可以创建一个警报策略，当 保险箱、OneDrive 和 Microsoft Teams 附件检测到恶意文件时SharePoint通知你和其他管理员。 若要了解有关警报的更多信息，请参阅 [警报策略](../../compliance/alert-policies.md)。
+你可以创建一个警报策略，当保险箱附件SharePoint、OneDrive Microsoft Teams恶意文件时通知你和其他管理员。 若要了解有关警报的更多信息，请参阅 [警报策略](../../compliance/alert-policies.md)。
 
 1. 在 Microsoft 365 Defender 门户中，转到策略 **&** \> **规则 警报策略或** 打开 <https://security.microsoft.com/alertpolicies> 。
 
@@ -128,7 +128,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 ### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>使用安全&合规性 PowerShell 为检测到的文件创建警报策略
 
-如果更希望使用 PowerShell 创建与上一部分所述的相同警报策略，请连接到安全&合规中心 [PowerShell](/powershell/exchange/connect-to-scc-powershell) 并运行以下命令：
+如果您更希望使用 PowerShell 创建与上一部分中描述的相同的警报策略，请连接到安全&合规中心 [PowerShell](/powershell/exchange/connect-to-scc-powershell) 并运行以下命令：
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
@@ -140,7 +140,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
-- 若要验证是否成功为 保险箱、SharePoint、OneDrive 和 Microsoft Teams 启用Microsoft Teams，请执行下列任一步骤：
+- 若要验证您是否已成功打开 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams，请使用以下步骤之一：
 
   - 在 Microsoft 365 Defender 门户中，转到策略 **& 规则** 威胁策略部分 保险箱 附件，选择全局设置，并验证启用 \>  \> Office 365 \> for  **SharePoint、OneDrive** 和 Microsoft Teams 设置的 Defender 的值。
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找和使用文档理解模型的使用情况分析。
-ms.openlocfilehash: 9ea408485a7cf1ff935192775eab2325e0e268aad927a72dedf237f0e81a3e0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d39b2417a90716200d33831bfef7e9cb2ff1d523
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871134"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574035"
 ---
 # <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的文档理解模型使用情况分析
 
@@ -35,7 +35,7 @@ SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有�
 - 按库分类
 - 模型使用情况 
 
- ![模型分析](../media/content-understanding/model-analytics.png) </br>
+ ![模型分析。](../media/content-understanding/model-analytics.png) </br>
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>在默认内容中心汇总模型使用数据
 
@@ -49,7 +49,7 @@ SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有�
 
 ## <a name="classification-by-model"></a>按模型分类
 
-   ![总模型百分比](../media/content-understanding/total-model-percentage.png) </br>
+   ![总模型百分比。](../media/content-understanding/total-model-percentage.png) </br>
 
 **按模型分类** 饼图显示已对大多数文件进行分类的模型。 它将每个已发布模型显示为内容中心中所有已发布模型处理的总文件的百分比。
 
@@ -57,7 +57,7 @@ SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有�
 
 ## <a name="classification-by-library"></a>按库分类
 
-   ![处理的文件](../media/content-understanding/files-processed-over-time.png) </br>
+   ![已处理文件。](../media/content-understanding/files-processed-over-time.png) </br>
 
 **按库分类** 条形图可帮助确定组织中内容理解的有效性。  条形图不仅显示每个模型一段时间内处理的文件数，通过选择图标中的列，还会显示应用模型的文档库。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3be00729d96c7c46189348bf517e40e08f226fa08ad494aa93d14b3cb4b725e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7b1607a6e83db969807c0d0ce369b161cb88f1e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898153"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573523"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 
@@ -40,9 +40,9 @@ ms.locfileid: "53898153"
 
 本主题提供了一些常规步骤，可用于缩小与 macOS 上的 Microsoft Defender for Endpoint 相关的性能问题。
 
-RTP (实时) 是 macOS 上的 Microsoft Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
-根据你正在运行的应用程序和设备特征，在 macOS 上运行 Microsoft Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 macOS 上的 Microsoft Defender for Endpoint 中的性能问题。
+根据正在运行的应用程序和设备特征，在 macOS 上运行 Microsoft Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 macOS 上的 Microsoft Defender for Endpoint 中的性能问题。
 
 以下步骤可用于排查并缓解这些问题：
 
@@ -52,7 +52,7 @@ RTP (实时) 是 macOS 上的 Microsoft Defender for Endpoint 的一项功能，
 
     - 从用户界面。 在 macOS 上打开 Microsoft Defender for Endpoint 并导航到"**管理设置"。**
 
-      ![管理实时保护屏幕截图](images/mdatp-36-rtp.png)
+      ![管理实时保护屏幕截图。](images/mdatp-36-rtp.png)
 
     - 从终端。 出于安全目的，此操作需要提升权限。
 

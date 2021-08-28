@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d64b3998aabf7ff6435ea9cf32518eb4f827dd833fd05a650339ec3a96d25ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53868324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573519"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -42,9 +42,9 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 
 若要更新 macOS 上的 Microsoft Defender for Endpoint，使用名为 Microsoft AutoUpdate (MAU) 程序。 默认情况下，MAU 每天自动检查更新，但你可以将更新更改为每周、每月或手动。
 
-![MAU 屏幕截图](images/MDATP-34-MAU.png)
+![MAU 屏幕截图。](images/MDATP-34-MAU.png)
 
-如果决定使用软件分发工具部署更新，应配置 MAU 以手动检查软件更新。 你可以部署首选项，以配置 MAU 检查组织中 Mac 的更新方式和时间。
+如果决定使用软件分发工具部署更新，应配置 MAU 以手动检查软件更新。 你可以部署首选项，以配置 MAU 检查组织中 Mac 更新方式和检查时间。
 
 ## <a name="use-msupdate"></a>使用 msupdate
 
@@ -69,7 +69,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 被命名为 `InsiderFast` (Insider Fast) 
+> - `Beta` 被命名为 `InsiderFast` (预览体验成员 Fast) 
 > - `Preview` 被命名为 `External` (Insider Slow) 
 > - `Current` 已命名 `Production`
 
@@ -81,11 +81,11 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|ChannelName|
 |**数据类型**|String|
-|**可能的值**|Beta 版本 <p> 预览 <p> Current|
+|**可能的值**|Beta <p> 预览 <p> Current|
 |||
 
 >[!WARNING]
->此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS 上的 Microsoft Defender for Endpoint 更改通道，请用所需通道替换后执行 `[channel-name]` 以下命令：
+>此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS 上的 Microsoft Defender for Endpoint 更改通道，在将 替换为所需通道后执行 `[channel-name]` 以下命令：
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -123,7 +123,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|EnableCheckForUpdatesButton|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|为 (默认值)  <p> 错误|
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
@@ -134,7 +134,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|DisableInsiderCheckbox|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|False (默认值)  <p> 正确|
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>限制从 MAU 发送的遥测
@@ -145,7 +145,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|SendAllTelemetryEnabled|
-|**数据类型**|Boolean|
+|**数据类型**|布尔值|
 |**可能的值**|为 (默认值)  <p> 错误|
 
 ## <a name="example-configuration-profile"></a>配置文件示例

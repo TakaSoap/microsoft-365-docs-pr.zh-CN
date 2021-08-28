@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Microsoft 365 配置高可用性联合身份验证。
-ms.openlocfilehash: 2bbd802a3ed3e7cc553d95e346d6b793b59f3533
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 22715f55a733b963a9b9f9c26c910adba1012ed7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356812"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574023"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>在 Azure 中为 Microsoft 365 部署高可用性联合身份验证
 
@@ -40,9 +40,9 @@ ms.locfileid: "58356812"
     
 下面是包含每个服务器的占位符名称的配置。
   
-**Azure 中用于基础结构Microsoft 365高可用性联合身份验证**
+**Azure 中用于 Microsoft 365 基础结构的高可用性联合身份验证**
 
-![Azure 中高可用性和联合Microsoft 365基础结构的最终配置](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure 中的高可用性和联合Microsoft 365基础结构的最终配置。](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 所有虚拟机都位于一个跨界 Azure 虚拟网络 (VNet) 中。 
   
@@ -96,15 +96,15 @@ ms.locfileid: "58356812"
     
 - [阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。创建和配置两个 Web 应用程序代理服务器。
     
-- [第 5 阶段：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365 配置联合身份验证。 为订阅配置Microsoft 365身份验证。
+- [阶段 5：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 为订阅配置Microsoft 365身份验证。
     
-这些文章为预定义体系结构提供了说明性分阶段指南，以在 Azure 基础结构服务中为 Microsoft 365 创建功能、高可用性联合身份验证。 请注意下列事项：
+这些文章提供了预定义体系结构的规范性分阶段指南，以在 Azure 基础结构服务中为 Microsoft 365 创建功能、高可用性联合身份验证。 请注意下列事项：
   
 - 如果你是有经验的 AD FS 实施者，则可以自由调整第 3 阶段和第 4 阶段的说明，构建最符合你需求的服务器集。
     
 - 如果你已经拥有现有的 Azure 混合云部署以及现有的跨界虚拟网络，则可以随意调整或跳过第 1 阶段和第 2 阶段中的说明，并将 AD FS 和 Web 应用程序代理服务器置于相应的子网上。
     
-若要构建开发/测试环境或此配置的概念证明，请参阅联合标识[Microsoft 365开发/测试环境](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
+若要构建开发/测试环境或此配置的概念证明，请参阅适用于你的开发/测试Microsoft 365[联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
   
 ## <a name="next-step"></a>后续步骤
 

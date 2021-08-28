@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 81400dd6cad1caa83bb5dcfa3fc530f6db38796bd0ed4e28d908c3041b87a902
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820037"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573267"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -54,7 +54,7 @@ ms.locfileid: "53820037"
 
 如果“**记录管理**”未显示在导航窗格中，请首先向下滚动并选择“**全部显示**”。
 
-![文件计划页面](../media/compliance-file-plan.png)
+![文件计划页面。](../media/compliance-file-plan.png)
 
 ## <a name="navigating-your-file-plan"></a>浏览文件计划
 
@@ -107,11 +107,11 @@ ms.locfileid: "53820037"
 
 创建或编辑保留标签时的文件计划描述符示例：
 
-![创建或编辑保留标签时的文件计划描述符](../media/file-plan-descriptors.png)
+![创建或编辑保留标签时的文件计划描述符。](../media/file-plan-descriptors.png)
 
 当为这些可选描述符中的每个描述符选择“**选择**”时，可以选择其中一个现成值，也可以创建自己的值，然后选择它。 例如： 
 
-![创建用于预配/引文的新文件计划描述符](../media/file-plan-descriptors-create.png)
+![创建用于预配/引文的新文件计划描述符。](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>导出所有保留标签以分析或启用脱机评审
 
@@ -119,11 +119,11 @@ ms.locfileid: "53820037"
 
 要导出所有保留标签：在“**文件计划**”页上，单击“**导出**”：
 
-![文件计划导出选项](../media/compliance-file-plan-export-labels.png)
+![文件计划导出选项。](../media/compliance-file-plan-export-labels.png)
 
-将打开包含所有现有保留标签的 *.csv 文件，例如:
+将打开包含所有现有保留标签的 *.csv 文件，例如：
 
-![包含所有保留标签的 CSV 文件](../media/file-plan-csv-file.png)
+![显示所有保留标签的 CSV 文件。](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>向文件计划导入保留标签
 
@@ -131,13 +131,13 @@ ms.locfileid: "53820037"
 
 1. 在“**文件计划**”页面上，单击“**导入**”，以使用“**填写并导入文件计划**” 页面：
 
-   ![文件计划导入选项](../media/compliance-file-plan-import-labels.png)
+   ![文件计划导入选项。](../media/compliance-file-plan-import-labels.png)
 
-   ![空白文件计划模板下载选项](../media/file-plan-blank-template-option.png)
+   ![空白文件计划模板下载选项。](../media/file-plan-blank-template-option.png)
 
 2. 按照说明下载空白模板:
 
-   ![在 Excel 中打开空白文件计划模板](../media/file-plan-blank-template.png)
+   ![在 Excel 中打开空白文件计划模板。](../media/file-plan-blank-template.png)
 
 3. 使用以下信息填写模板，这些信息描述了每个属性的属性和有效值。对于导入，一些值具有最大长度:
     
@@ -170,13 +170,13 @@ ms.locfileid: "53820037"
 
    下面是包含有关保留标签的信息的模板示例。
 
-   ![填写了信息的文件计划模板](../media/file-plan-filled-out-template.png)
+   ![填写了信息的文件计划模板。](../media/file-plan-filled-out-template.png)
 
 4. 在 **填写并导入文件计划** 页面中的第 3 步下，点击 **浏览文件** 以上传填写的模板，然后选择 **下一步**。
 
    文件计划会上传文件并验证条目，显示导入统计信息。
 
-   ![文件计划导入统计信息](../media/file-plan-import-statistics.png)
+   ![文件计划导入统计信息。](../media/file-plan-import-statistics.png)
 
 5. 具体取决于验证结果:
     

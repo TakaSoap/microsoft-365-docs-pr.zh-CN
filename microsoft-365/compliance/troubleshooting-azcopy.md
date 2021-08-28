@@ -15,32 +15,32 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 解决 Azure AzCopy 在加载非 Office 365 数据时的错误，以在 Advanced eDiscovery。
+description: 在加载非托管数据时 Azure AzCopy Office 365错误排查，以在 Advanced eDiscovery。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: f8f8ea4cfcd38aa3680fc1aeef3317a6a16a90b909530061beb6c03a95a45f89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87f4e62f05e29147213d70b28e1778ea9e3ea683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885420"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573183"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>AzCopy in Advanced eDiscovery
 
 在 Advanced eDiscovery 中加载非 Microsoft 365 数据或文档进行错误修正时，用户界面会提供 Azure AzCopy 命令，该命令包含参数，其中包含要上载的文件的存储位置和文件将上载到的 Azure 存储位置的参数。 若要上载文档，请复制此命令，然后在本地计算机的命令提示符中运行它。  以下屏幕截图显示了 AzCopy 命令的示例：
 
-![Upload非Microsoft 365文件](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Upload非Microsoft 365文件。](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 通常，所提供的命令在运行时有效。 但是，在某些情况下，显示的命令可能无法成功运行。 以下是一些可能的原因。
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>本地计算机上未安装受支持的 AzCopy 版本
 
-此时，必须使用 AzCopy v8.1 在 Microsoft 365 中加载Advanced eDiscovery。 如果未使用 AzCopy v8.1，则显示在上一屏幕截图中显示的 **Upload** 文件页上的 AzCopy 命令将返回错误。 若要安装此版本，请参阅使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输Windows。
+此时，必须使用 AzCopy v8.1 在 Advanced eDiscovery 中加载Microsoft 365数据。 如果未使用 AzCopy v8.1，则显示在上一屏幕截图中显示的 **Upload** 文件页上的 AzCopy 命令将返回错误。 若要安装此版本，请参阅使用[AzCopy v8.1](/previous-versions/azure/storage/storage-use-azcopy)传输Windows。
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy 未安装在本地计算机上，或者未安装在默认位置
 
-如果未安装 AzCopy 或安装在默认安装位置 (（即) ）的位置，则运行 AzCopy 命令时可能会收到以下 `%ProgramFiles(x86)%` 错误：
+如果未安装 AzCopy 或安装在默认安装位置 (（) ）的位置，则运行 AzCopy 命令时可能会收到以下 `%ProgramFiles(x86)%` 错误：
 
 > 系统找不到指定的路径。
 

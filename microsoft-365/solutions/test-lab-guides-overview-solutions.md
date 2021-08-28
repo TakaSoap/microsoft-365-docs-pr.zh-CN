@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: 使用测试实验室指南构建Microsoft 365/测试环境中的解决方案和方案。
-ms.openlocfilehash: 2e7544c7d1b39e8cba198b0fce6bbf2814e7332d0af00bdeca748b4b660f8a1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d380c77d9a94b5c08fe97b9874d15e0272711653
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573351"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>用于解决方案和方案的测试实验室指南
 
@@ -32,8 +32,8 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 还可以使用 TLG 创建用于开发和测试应用程序的代表性环境，也称为开发/测试环境。
   
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-尝试 [此测试实验室指南](team-security-isolation-dev-test.md) 以设置具有安全隔离的团队。
+请尝试 [此测试实验室指南](team-security-isolation-dev-test.md) 来设置具有安全隔离的团队。
 
-有关这些功能和Microsoft 365的其他指南，请参阅 Microsoft 365[企业测试实验室指南](../enterprise/m365-enterprise-test-lab-guides.md)。
+有关这些功能和Microsoft 365的其他指南，请参阅Microsoft 365[企业测试实验室指南](../enterprise/m365-enterprise-test-lab-guides.md)。

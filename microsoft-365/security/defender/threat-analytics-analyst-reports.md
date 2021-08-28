@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a939bd03f983904f438aaa2efe8e3be18c6831cd
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 5e8f6d2c79a0eeac6db20ff5791a25264d1b6767
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533551"
+ms.locfileid: "58573447"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>了解威胁分析中的分析员Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "58533551"
 
 每个 [威胁分析报告都](threat-analytics.md) 包括动态部分和一个称为分析员报告的综合 _书面部分_。 若要访问此部分，请打开关于跟踪的威胁的报告，然后选择"分析 **员报告"** 选项卡。
 
-![威胁分析报告的分析员报告部分的图像](../../media/threat-analytics/ta_analystreport_mtp.png)
+![威胁分析报告的分析员报告部分的图像。](../../media/threat-analytics/ta_analystreport_mtp.png)
 
 _威胁分析报告的分析员报告部分_
 

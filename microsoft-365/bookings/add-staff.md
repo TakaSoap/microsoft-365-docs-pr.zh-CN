@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: fca6ac7d76c4ce680209eba297894b582a824355b3a9c6f736c861dc9559fe82
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900829"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573339"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
@@ -21,7 +21,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
 ## <a name="before-you-begin"></a>准备工作
 
-尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
+尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
 ## <a name="watch-add-your-staff-to-bookings"></a>观看：将员工添加到 Bookings
 
@@ -49,16 +49,16 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
 6. 选择 **"创建或更改分配给** 员工的预订时通过电子邮件通知所有员工"以启用员工电子邮件。 下面是一个示例电子邮件：
 
-    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="来自 Bookings 的通知电子邮件":::
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="来自 Bookings 的通知电子邮件。":::
 
 7. 如果希望 **员工日历中的Office 365/** 忙信息通过 Bookings 影响预订服务的可用性，请选择"日历上的事件会影响可用性"。
 
     例如，如果员工有安排在星期三下午 3 点召开团队会议或个人约会，则 Bookings 将显示该员工无法在这一时间段预订。 该时间将在 Bookings 日历视图中显示为忙碌或暂定，如以下示例所示。
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings 日历视图":::
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings 日历的视图。":::
 
 > [!IMPORTANT]
-> 我们强烈建议将此设置保留为 (默认情况下启用此设置) 以避免双重预订并优化员工成员的可用性。
+> 我们强烈建议将此设置 (默认设置为启用，) 避免双重预订并优化员工成员的可用性。
 
 8. 选择 **"使用营业时间**"将员工的所有可预订时间设置为仅在"业务信息"页上的"营业时间"部分中设置的营业时间内。
 
@@ -74,7 +74,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 > [!NOTE]
 > 这些步骤仅在所添加的用户尚未在 Bookings 中 **分配查看者** 角色时运行。
 
-1. [连接 PowerShell Microsoft 365 。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [连接 PowerShell Microsoft 365。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 2. 使用 PowerShell，通过以下命令分配完全访问权限：
 

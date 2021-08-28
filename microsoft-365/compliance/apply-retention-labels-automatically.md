@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 55fa863dca2caf3a88c7127993c392c510953af8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506450"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572247"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -48,7 +48,7 @@ ms.locfileid: "58506450"
 
 将基于以下条件自动应用保留标签的流程：
 
-![自动应用标签的角色和任务关系图](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![自动应用标签的角色和任务关系图。](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
 按照以下说明进行两个管理步骤。
 
@@ -154,7 +154,7 @@ ms.locfileid: "58506450"
 
 为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 在下面的示例中，敏感信息类型来自" **隐私信息** "类别， **美国个人身份信息 （PII） 数据** 模板：
 
-![包含敏感信息类型的策略模板](../media/sensitive-info-configuration.png)
+![包含敏感信息类型的策略模板。](../media/sensitive-info-configuration.png)
 
 若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)”。 目前[此方案](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)[完全匹配](document-fingerprinting.md)和文档指纹信息。
 
@@ -174,7 +174,7 @@ ms.locfileid: "58506450"
 
 可使用包含特定字词、短语或可搜索属性值的查询对内容自动应用标签。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
 
-![查询编辑器](../media/new-retention-query-editor.png)
+![查询编辑器。](../media/new-retention-query-editor.png)
 
 有关使用关键字查询语言 (KQL) 的详细信息，请参阅[关键字查询语言 (KQL) 语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
@@ -259,7 +259,7 @@ ProgID:Media AND ProgID:Meeting
 
 选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含 **简历**、**源代码**、**有针对性的骚扰**、**侮辱** 和 **威胁**：
 
-![选择可训练分类器](../media/retention-label-classifers.png)
+![选择可训练分类器。](../media/retention-label-classifers.png)
 
 > [!CAUTION]
 > 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用 **针对性的骚扰**、**侮辱** 和 **猥亵** 内置分类器。
@@ -279,7 +279,7 @@ ProgID:Media AND ProgID:Meeting
 
 自动应用保留标签时，可能需要等待长达 7 天，才能将保留标签应用于与条件匹配的所有现有内容。
   
-![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![自动应用标签生效时间关系图。](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
 如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
 

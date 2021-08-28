@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: 9138e0743e5194e98213ab2d2c2bfe457500b0de
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353788"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574047"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -31,7 +31,7 @@ Contoso 将单个 Active Directory 域服务 (AD DS) 林用于具有七个子域
 
 下面是 Contoso 林，其中包含包含区域中心的世界不同区域的区域域。
 
-![全球的 Contoso 林和域](../media/contoso-identity/contoso-identity-fig1.png)
+![全球的 Contoso 林和域。](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso 决定使用 contoso com 林中的帐户和组来验证和授权其Microsoft 365 \. 工作负载和服务。
 
@@ -44,7 +44,7 @@ Contoso 允许：
 
 下面是 Contoso DMZ，其中包含公共网站、合作伙伴 Extranet 和一组 Active Directory 联合身份验证服务 (AD FS) 服务器。 DMZ 连接到包含客户、合作伙伴和 Internet 服务的 Internet。
 
-![针对客户和合作伙伴的联合身份验证的 Contoso 支持](../media/contoso-identity/contoso-identity-fig2.png)
+![Contoso 支持客户和合作伙伴的联合身份验证。](../media/contoso-identity/contoso-identity-fig2.png)
  
 DMZ 中的 AD FS 服务器便于其标识提供程序验证客户凭据，以便访问公共网站，使用合作伙伴凭据访问合作伙伴 Extranet。
 
@@ -56,11 +56,11 @@ Contoso 想要使用其本地 AD DS 林进行身份验证，以Microsoft 365云�
 
 PHS 将本地 AD DS 林与 Microsoft 365 的 Azure AD 租户同步，以用于企业订阅、复制用户和组帐户以及哈希版本的用户帐户密码。
 
-为执行目录同步，Contoso 在其巴黎数据中心的连接部署了 Azure AD 连接工具。
+为了执行目录同步，Contoso 在其巴黎数据中心的连接部署了 Azure AD 连接工具。
 
 下面是运行 Azure AD 的服务器，连接 Contoso AD DS 林中查看更改，然后将这些更改与 Azure AD 租户同步。
 
-![Contoso PHS 目录同步基础结构](../media/contoso-identity/contoso-identity-fig4.png)
+![Contoso PHS 目录同步基础结构。](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>针对标识和设备访问的条件访问策略
 
@@ -72,7 +72,7 @@ Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件�
 
 下面是生成的 Contoso 标识和设备条件访问策略集。
 
-![Contoso 的标识和设备条件访问策略](../media/contoso-identity/contoso-identity-fig5.png)
+![Contoso 的标识和设备条件访问策略。](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>后续步骤
 

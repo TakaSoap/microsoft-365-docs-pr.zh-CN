@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 2adc733247ddfe9570b02c197e18b02bcf500921
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 9415b7aa8e258264095de41a7f820751d3794a13
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387040"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571983"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -166,7 +166,7 @@ ms.locfileid: "58387040"
   
 例如，可以创建并应用名为“稍后评审”且不含任何操作的保留标签，稍后使用此标签来查找相应内容。
   
-![将设置标记为仅分类](../media/retention-label-retentionoff.png)
+![将设置标记为仅分类。](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>将保留标签用作 DLP 策略中的条件
 
@@ -182,7 +182,7 @@ ms.locfileid: "58387040"
 
 2. 保留标签策略指定了保留标签的发布位置。 同一位置可包含在多个保留标签策略中。
 
-![如何将保留标签添加到为其指定位置的标签策略](../media/retention-labels-and-policies.png)
+![如何将保留标签添加到为其指定位置的标签策略。](../media/retention-labels-and-policies.png)
 
 你还可以创建一个或多个 **自动应用保留标签策略**，其中每个策略都有一个保留标签。 如果使用此策略，当满足你在策略中指定的条件时，保留标签就会自动应用。
 
@@ -238,7 +238,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 创建内容搜索时，选择“**保留标签**”条件，然后输入完整的保留标签名称或标签名称的一部分，并使用通配符。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
-![保留标签条件](../media/retention-label-condition.png)
+![保留标签条件。](../media/retention-label-condition.png)
 
 
 ## <a name="compare-capabilities-for-retention-policies-and-retention-labels"></a>比较保留策略和保留标签的功能
@@ -295,7 +295,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 > [!IMPORTANT]
 > 如果使用保留标签：在应用此原则确定同一项目上多个保留设置的结果之前，请确保你了解 [应用了哪个保留标签](#only-one-retention-label-at-a-time)。
 
-![保留原则关系图](../media/principles-of-retention.png)
+![保留原则关系图。](../media/principles-of-retention.png)
 
 在更详细地解释每个原则之前，请务必了解项目保留期与保留策略或保留标签中指定的保留期之间的差异。 这是因为虽然默认配置是在创建项目时开始保留期，以便项目的保留期结束时间是固定的，但文件也支持配置从上次修改文件时开始保留期。 使用此备用配置时，每次修改文件，都会重置保留期的开始时间，这会延长项目的保留期结束时间。 保留标签还支持在标记时和事件开始时开始保留期。
 

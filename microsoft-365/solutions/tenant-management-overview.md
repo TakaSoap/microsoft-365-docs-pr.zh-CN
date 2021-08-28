@@ -15,13 +15,13 @@ ms.collection:
 - tenant-management
 ms.custom:
 - Ent_Solutions
-description: 规划、部署和持续操作应用程序租户的Microsoft 365概述。
-ms.openlocfilehash: 18a4f4f39b2c3fd530aecb9202032a2b571a9c7f4cf38fec489dfa88a81a2a98
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 有关规划、部署和持续操作您的 Microsoft 365概述。
+ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883214"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573375"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户管理
 
@@ -41,13 +41,13 @@ ms.locfileid: "53883214"
 
 ## <a name="a-microsoft-365-tenant-defined"></a>定义的Microsoft 365租户
 
-Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储的组织数据的专用服务实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
+Microsoft 365租户是特定默认位置（如欧洲或北美）中存储Microsoft 365服务的专用实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
 
-你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户各不相同、唯一，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
+你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户都是唯一的，独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
 
 下面是一个示例：
 
-![具有 Azure AD Microsoft 365租户的租户示例](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![一个Microsoft 365 Azure AD 租户的示例。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *租户管理* 是租户租户的规划、部署和Microsoft 365操作。
 
@@ -59,38 +59,38 @@ Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储
 
 - 你拥有一组正确的产品 (订阅和) 许可证。
   - 一组产品符合你的业务、IT 和安全需求。
-  - 为工作人员提供足够数量的许可证以及人员配备的预期变化。
+  - 为工作人员提供足够数量的许可证和预期的人员配备变化。
 - 对于网络：
   - 已配置正确的 DNS 域名。
   - 对于企业网络，已针对现场工作人员优化了到 Microsoft 网络的网络流量。
   - 你已针对使用 VPN 客户端的远程工作人员优化了网络流量。
 - 已同步 Active Directory 域服务 (AD DS) 帐户、组和其他对象。
-  - 你的 Azure AD 租户帐户将映射到Exchange Online DNS 域正确的电子邮件地址邮箱。
-  - 你的用户帐户已分配有正确的许可证，这些许可证来自正确的已购买 (产品，Microsoft 365 E3或 E5) 。
+  - 你的 Azure AD 租户帐户将映射到Exchange Online正确的 DNS 域用于电子邮件地址的邮箱。
+  - 你的用户帐户已分配有正确购买产品的正确许可证 (如 Microsoft 365 E3 或 E5) 。
 - 已配置强标识和访问管理。
-  - 你需要使用无密码身份验证或多重身份验证和 MFA (安全) 。
+  - 你需要使用无密码身份验证或多重身份验证安全的用户登录 (MFA) 。
   - 您具有条件访问策略，这些策略强制实施登录要求和针对较高安全级别的限制。
 - 本地Office服务器及其数据已迁移到云应用或正在混合配置中使用。
-- 你使用内置于设备的 Intune 或基本移动性和安全性进行Microsoft 365。
+- 你使用内置于设备的 Intune 或基本移动性和安全性Microsoft 365。
   - 组织拥有的设备已注册和管理。
   - 管理个人设备的应用。
 
 下面是一个包含Microsoft 365元素的租户示例。
 
-![租户Microsoft 365示例](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![租户Microsoft 365示例。](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
 在此图中，Microsoft 365租户包括：
 
-- 适用于 Microsoft 365 E3 和 E5 的产品和许可证。
+- 适用于 Microsoft 365 E3 E5 的产品和许可证。
 - Microsoft 365工作效率应用。
 - Intune，具有已注册的设备以及设备和应用程序策略。
-- 在组、域和条件访问策略中 (用户帐户和其他目录对象的 Azure AD) 不会显示。
+- 已同步用户帐户的 Azure AD 租户 (组和其他目录对象不会显示在) 、域和条件访问策略中。
 
 ## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户功能
 
 以下各节和表列出了此解决方案中步骤的关键功能和许可。
 
-### <a name="tenant"></a>Tenant
+### <a name="tenant"></a>租户
 
 |功能或特性|说明|许可|
 |---|---|---|
@@ -105,7 +105,7 @@ Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储
 |功能或特性|说明|许可|
 |---|---|---|
 |网络Insights|从租户中收集的网络Microsoft 365指标，有助于设计办公地点的网络外围。|Microsoft 365 E3 或 E5|
-|自动化终结点更新|自动执行客户端 PAC 文件和网络设备Microsoft 365终结点的配置和持续更新。|Microsoft 365 E3 或 E5|
+|自动化终结点更新|自动执行客户端 PAC 文件、网络设备Microsoft 365中终结点的配置和持续更新。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="identity"></a>标识
@@ -146,7 +146,7 @@ Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储
 4. [迁移本地部署Office服务器和数据](tenant-management-migration.md)
 5. [部署设备和应用管理](tenant-management-device-management.md)
 
-[![部署和管理租户Microsoft 365步骤](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![部署和管理租户Microsoft 365步骤。](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 每个步骤描述部署选项、总结结果和正在进行的维护任务。
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用 Microsoft 365 中的电子数据展示工具在 Exchange 混合部署中搜索和导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa90f79faa20d930a9740c852767663f843cba51
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 1dfd3ebe278f704cc878beaa1711f117d57551bc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574780"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -48,7 +48,7 @@ ms.locfileid: "58507838"
   
 下图显示了搜索、预览和导出本地用户的 Teams 聊天数据的工作流。
   
-![Microsoft Teams 中的本地用户基于云的存储空间](../media/EHAMShard1.png)
+![Microsoft Teams 中的本地用户基于云的存储空间。](../media/EHAMShard1.png)
   
 除了此功能之外，你还可以使用电子数据展示工具在基于云的 SharePoint 网站和与每个 Microsoft Team 关联的 Exchange 邮箱中搜索、预览和导出 Teams 内容，以及在基于云的用户的 Exchange Online 邮箱中搜索、预览和导出 1xN Teams 聊天数据。
 

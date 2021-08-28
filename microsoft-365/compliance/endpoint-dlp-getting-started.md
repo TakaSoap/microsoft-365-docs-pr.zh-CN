@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 85880fd9f64df1bd3807bc36d12c4bd7a5c2e4754ad1ac07ffe3e68f7f07a99d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53054e32803bb3722674c043a84eb7f410a77d06
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865936"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573627"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
@@ -127,7 +127,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 2. 打开合规中心设置页面，然后选择“**载入设备**”。
 
    > [!div class="mx-imgBorder"]
-   > ![启用设备管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   > ![启用设备管理。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
@@ -139,7 +139,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后 **下载程序包**。
 
    > [!div class="mx-imgBorder"]
-   > ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > ![部署方法。](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
 6. 按照[适用于 Windows 10 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
 
@@ -165,7 +165,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 3. 选择“**设备管理**”，以打开“**设备**”列表。 你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。
 
    > [!div class="mx-imgBorder"]
-   > ![设备管理](../media/endpoint-dlp-getting-started-2-device-management.png)
+   > ![设备管理。](../media/endpoint-dlp-getting-started-2-device-management.png)
 
 4. 如果需要载入附加设备，请选择“**载入**”。
 
@@ -196,7 +196,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 2. 请参考[活动资源管理器入门](data-classification-activity-explorer.md)中的程序，以访问和筛选终结点设备的所有数据。
 
    > [!div class="mx-imgBorder"]
-   > ![终结点设备的活动资源管理器筛选器](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![终结点设备的活动资源管理器筛选器。](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -23,14 +23,14 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关提高企业防护级别的Microsoft 365
-ms.openlocfilehash: 840c9ba2db5408d539722db45528a3db728698b311e55a7c3803cee32468aafa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96aee5716374fda43c0258c55ab22d425001b8b5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887635"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573363"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-subscription"></a>增强针对 Microsoft 365 的威胁防护
+# <a name="increase-threat-protection-for-microsoft-365-subscription"></a>提高订阅的威胁Microsoft 365保护
 
 本文可帮助你增强对 Microsoft 365 订阅的保护，以抵御网络钓鱼、恶意软件和其他威胁。 这些建议适用于对安全性需求不断增加的组织，如政治宣传活动、法律办公室和医疗保健部门。
 
@@ -64,9 +64,9 @@ ms.locfileid: "53887635"
 
 勒索软件通过加密文件或锁定计算机屏幕来限制对数据的访问。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"Itin"）来从犯罪中勒索资金，以交换对数据的访问权限。
 
-您可以通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名 (这些扩展名已添加到邮件步骤) 中提高恶意软件防护级别，或警告通过电子邮件接收[](#raise-the-level-of-protection-against-malware-in-mail)这些附件的用户。
+您可以通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名 (这些扩展名已添加到邮件步骤) 中提高恶意软件防护级别，或警告接收[](#raise-the-level-of-protection-against-malware-in-mail)电子邮件附件的用户。
 
-除了在上一步中阻止的文件之外，在打开包含宏的 Office 文件附件之前创建一个警告用户的规则也是一个不错的做法。 勒索软件可以隐藏在宏内，因此警告用户不要向他们不知道的人打开这些文件。
+除了在上一步中阻止的文件之外，在打开包含宏的 Office 文件附件之前创建警告用户也是一个不错的做法。 勒索软件可以隐藏在宏内，因此警告用户不要向他们不知道的人打开这些文件。
 
 创建邮件传输规则：
 
@@ -80,7 +80,7 @@ ms.locfileid: "53887635"
 
 5. 为规则应用下表中的设置。 保留其余设置为默认设置，除非您要更改它们。
 
-6. 单击 **保存**。
+6. 单击“保存”。
 
 |设置|在打开文件附件之前Office警告|
 |---|---|
@@ -102,7 +102,7 @@ ms.locfileid: "53887635"
 
 若要创建邮件传输规则，请观看此 [简短视频](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) 或执行以下步骤：
 
-1. 在"Microsoft 365 管理中心"中，单击"**管理中心** \> **Exchange"。**
+1. 在"Microsoft 365 管理中心中，单击"管理 **中心** \> **Exchange"。**
 
 2. 在"**邮件流"** 类别中，单击"规则 **"。**
 
@@ -112,7 +112,7 @@ ms.locfileid: "53887635"
 
 5. 应用下表中的设置。 保留其余设置为默认设置，除非您要更改它们。
 
-6. 单击 **保存**。
+6. 单击“保存”。
 
 |设置|在打开文件附件之前Office警告|
 |---|---|
@@ -120,7 +120,7 @@ ms.locfileid: "53887635"
 |如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
 |添加条件|邮件属性 。 . . 包括邮件类型 。 . . 自动转发|
 |执行以下操作...|阻止邮件 。 . . 拒绝邮件并给出说明。|
-|提供消息文本|出于安全考虑，将阻止在此组织外自动转发电子邮件。|
+|提供消息文本|出于安全考虑，阻止在此组织外自动转发电子邮件。|
 
 ## <a name="protect-your-email-from-phishing-attacks"></a>保护电子邮件免受网络钓鱼攻击
 
@@ -128,7 +128,7 @@ ms.locfileid: "53887635"
 
 我们建议你通过创建一个策略来保护最重要的用户和自定义域来开始使用此保护。
 
-若要在 Defender for Office 365 创建防钓鱼策略，请观看此[](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)简短培训视频，或完成以下步骤：
+若要在 Defender for Office 365 创建防钓鱼策略，请观看[](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)此简短培训视频，或完成以下步骤：
 
 1. 转到 <https://protection.office.com>。
 
@@ -138,7 +138,7 @@ ms.locfileid: "53887635"
 
 4. 在"**防钓鱼"页面上**，选择 **"+ 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关详细信息，请参阅了解 Microsoft Defender 中的反网络钓鱼策略[Office 365选项](../security/office-365-security/set-up-anti-phishing-policies.md)。
+5. 指定策略的名称、说明和设置，如下图所示。 有关详细信息，请参阅了解[Microsoft Defender](../security/office-365-security/set-up-anti-phishing-policies.md)for Office 365 策略。
 
 6. 查看设置后，选择"创建此策略" **或** " **保存**"（如果适用）。
 
@@ -147,11 +147,11 @@ ms.locfileid: "53887635"
 |名称|域和最有价值的员工|
 |说明|确保不会模拟最重要的员工和域。|
 |添加要保护的用户|选择 **+ 添加条件，收件人是**。 键入用户名或输入业务所有者、合作伙伴或候选人、经理和其他重要员工成员的电子邮件地址。 您最多可以添加 20 个要防止模拟的内部和外部地址。|
-|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果定义了自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
-|选择操作|如果电子邮件是由模拟用户发送的：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如 *，Alice <span> <span> @contoso.com*。 <br/> 如果电子邮件是由模拟域发送的：请选择“隔离邮件”。|
+|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果已定义自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
+|选择操作|如果电子邮件由模拟用户发送：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如 *，Alice <span> <span> @contoso.com*。 <br/> 如果电子邮件是由模拟域发送的：请选择“隔离邮件”。|
 |邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
 |添加受信任的发件人和域|可以在此处添加您自己的域，或任何其他受信任域。|
-|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如 *contoso。 <span> <span>com*，在列表中，**然后选择添加**。 选择“完成”。|
+|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如 *contoso。 <span> <span>com*，在列表中，**然后选择添加**。 选择“**完成**”。|
 
 有关详细信息，请参阅在 Defender for [Office 365 中设置防钓鱼Office 365。](../security/office-365-security/set-up-anti-phishing-policies.md)
 
@@ -163,7 +163,7 @@ ms.locfileid: "53887635"
 
    ![打开新的管理中心预览。](../media/previewon.png)
 
-如果尚未在租户中看到带卡的"安装"页面，请参阅安全与合规中心&这些步骤。 请参阅[在安全保险箱](#set-up-safe-attachments-in-the-security--compliance-center)合规&设置附件和在安全与合规保险箱[设置&链接](#set-up-safe-links-in-the-security--compliance-center)。
+如果尚未在租户中看到带卡的"安装"页面，请参阅安全与合规中心&这些步骤。 请参阅[在安全保险箱](#set-up-safe-attachments-in-the-security--compliance-center)合规&设置附件和在安全与保险箱中心中设置&[链接](#set-up-safe-links-in-the-security--compliance-center)。
 
 1. 在左侧导航中，选择"设置 **"。**
 2. 在" **设置"** 页上， **选择"** 从高级威胁 **卡增强保护"上的"查看** "。
@@ -175,13 +175,13 @@ ms.locfileid: "53887635"
 
    在 **"电子邮件中的链接和附件"** 下，键入"所有用户"或要扫描其电子邮件的特定用户。
 
-   ![在"增强对高级威胁的保护"中选中所有复选框。](../media/setatp.png)
+   ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)
 
 5. 选择 **"创建策略**"以打开保险箱和保险箱链接"。
 
 ### <a name="set-up-safe-attachments-in-the-security--compliance-center"></a>在安全保险箱合规中心&附件
 
-人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams。
+人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
 
 若要创建保险箱附件策略，请观看此[简短](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)视频，或完成以下步骤：
 
@@ -189,7 +189,7 @@ ms.locfileid: "53887635"
 
 2. 在安全&合规中心的左侧导航窗格中，在"威胁管理"**下，选择**"策略 **"。**
 
-3. 在"策略"页上，选择 **"保险箱附件"。**
+3. 在"策略"页面上，选择 **"保险箱附件"。**
 
 4. On the 保险箱 attachments page， apply this protection broadly by selecting the **Turn on ATP for SharePoint， OneDrive， and Microsoft Teams** check box.
 
@@ -209,9 +209,9 @@ ms.locfileid: "53887635"
 
 有关详细信息，请参阅在 Defender for [Office 365 中设置防钓鱼Office 365。](../security/office-365-security/set-up-anti-phishing-policies.md)
 
-### <a name="set-up-safe-links-in-the-security--compliance-center"></a>在安全保险箱合规中心设置&链接
+### <a name="set-up-safe-links-in-the-security--compliance-center"></a>在安全保险箱合规中心中&链接
 
-黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，可通过提供电子邮件和文档内 Web 地址 (URL) 点击时间验证，帮助Office组织。 保护通过链接保险箱定义。
+黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，可提供电子邮件和文档内 Web 地址 (URL 的单击) 验证，帮助Office组织。 保护通过链接保险箱定义。
 
 我们建议您执行以下操作：
 
@@ -233,20 +233,20 @@ ms.locfileid: "53887635"
 
 2. 在 **设置适用于** 电子邮件以外的内容"下，选择 **"Microsoft 365 企业应用版、Office for iOS 和 Android"。**
 
-3. 单击 **保存**。
+3. 单击“保存”。
 
-要创建面向域中所有收件人的新策略，请执行：
+若要创建面向域中所有收件人的新策略：
 
-1. 在"保险箱链接"页上，在"适用于整个组织的策略"**下**，单击 **+** 以创建新策略。
+1. 在"保险箱链接"页上的"适用于整个组织的策略"**下**，单击 **+** 以创建新策略。
 
 2. 应用下表中列出的设置。
 
-3. 单击 **保存**。
+3. 单击“**保存**”。
 
 |设置或选项|推荐设置|
 |---|---|
 |名称|保险箱域中所有收件人的链接策略|
-|选择邮件中未知潜在恶意 URL 的操作|选择打开 - 当用户单击链接时，URL 将被重写，并针对 **已知恶意链接列表进行检查**。|
+|为邮件中的未知潜在恶意 URL 选择操作|选择打开 - 当用户单击链接时，URL 将被重写，并针对 **已知恶意链接列表进行检查**。|
 |使用保险箱附件扫描可下载内容|选中此框。|
 |应用于|收件人域为 。 . . 选择你的域。|
 
@@ -254,43 +254,43 @@ ms.locfileid: "53887635"
 
 ## <a name="turn-on-the-unified-audit-log"></a>打开统一审核日志
 
-在安全与审核日志中心启用 & 搜索后，可以在日志中保留管理员和其他用户活动并搜索它。
+在安全与审核日志中心启用 & 搜索后，可以在日志中保留管理员和其他用户活动并搜索。
 
-必须分配有"审核日志"角色Exchange Online在 审核日志订阅中打开或Microsoft 365搜索。 默认情况下，此角色分配给管理中心中"权限"页上的"合规性管理"和"组织Exchange组。 默认情况下，Microsoft 365中的全局管理员是此组的成员。
+必须分配有"审核日志"角色Exchange Online，审核日志订阅中打开或关闭Microsoft 365搜索。 默认情况下，此角色分配给管理中心中"权限"页上的"合规性管理"Exchange组。 默认情况下，Microsoft 365中的全局管理员是此组的成员。
 
-1. 若要打开"审核日志"，请转到 的管理中心 ，然后选择左侧导航中"管理中心" <https://admin.microsoft.com> 下的"安全性"。 
+1. 若要打开"审核日志"，请转到 管理中心 ，然后选择左侧导航中"管理中心" <https://admin.microsoft.com> 下的"安全性"。 
 2. On the **Microsoft 365 Security** page， choose **More resources**， and then **Open** on the Office 365 Security & **Compliance Center** card.
 
-    ![在安全与合规&选择"打开"。](../media/gotosecandcomp.png)
+    ![在安全与合规汽车&"打开"。](../media/gotosecandcomp.png)
 3. 在"安全性和合规性"页上，选择"**搜索"，** 然后选择"**审核日志搜索"。**
 4. 在"审核日志搜索"页 **的顶部**，选择 **"启用审核"。**
 
 启用该功能后，你可以搜索文件、文件夹和许多活动。 有关详细信息，请参阅[搜索审核日志。](../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>为文件和文件夹调整SharePoint OneDrive匿名共享设置
+## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>针对文件和文件夹调整SharePoint OneDrive匿名共享设置
 
  (默认匿名链接过期时间更改为 14 天，将默认共享类型更改为"特定人员") 若要更改 OneDrive 和 SharePoint：
 
 1. 转到 管理中心 ，然后选择左侧导航SharePoint <https://admin.microsoft.com> 管理 **中心** 下选择" 管理中心"。 
 2. In the SharePoint admin center， go to **Policies** \> **Sharing**.
-3. 在"共享"页面上的"文件和文件夹链接"下，选择"特定人员"，在"任何人"链接的高级设置下，选择"这些链接必须在此天数内过期"，然后键入 14 (或您希望将链接生存期限制为) 的另一天数。 
+3. 在"共享"页面上的"文件和文件夹链接"下，选择"特定人员"，在"任何人"链接的高级设置下，选择"这些链接必须在这几天内过期"，然后键入 14 (或您希望将链接生存期限制为) 的另一天数。 
 
    ![选择"特定人员"，将链接过期时间设置为 14 天。](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>活动警报
 
-可以使用活动警报跟踪管理员和用户活动，并检测组织中恶意软件和数据丢失防护事件。 你的订阅包括一组默认策略，但你也可以创建自定义策略。 有关详细信息，请参阅警报 [策略](../compliance/alert-policies.md)。 例如，如果您将一个重要文件存储在 SharePoint不希望任何人在外部共享，您可以创建一条通知，提醒您是否有人共享它。
+可以使用活动警报跟踪管理员和用户活动，并检测组织中恶意软件和数据丢失防护事件。 你的订阅包括一组默认策略，但你也可以创建自定义策略。 有关详细信息，请参阅警报 [策略](../compliance/alert-policies.md)。 例如，如果您将一个重要文件存储在 SharePoint您不希望任何人在外部共享，您可以创建一条通知，提醒您是否有人共享它。
 
 下图显示了此策略中包含的默认Microsoft 365。
 
-![默认警报策略包含在Microsoft 365](../media/alertpolicies.png)
+![默认警报策略包含在Microsoft 365。](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>禁用或管理日历共享
 
 您可以阻止组织成员共享其日历，也可以管理他们可以共享的信息。 例如，您可以将共享限制为仅忙/闲时间。
 
 1. 转到 管理中心 ， <https://admin.microsoft.com> 然后选择设置 \> **Org 设置**。
-2. 在"**服务**"页上，选择"日历"，并选择组织成员是否可以与外部拥有日历Office 365 Exchange或与任何人共享日历。
+2. 在"**服务**"页上，选择"日历"，并选择您的组织中的人员是否可以与外部拥有日历Office 365 Exchange或与任何人共享其日历。
 
    如果选择"与任何人共享"选项，还可以决定仅共享忙/闲信息。
 

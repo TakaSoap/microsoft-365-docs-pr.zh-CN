@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb8df2eba816a5d70804bf47190c094ac9790073
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507622"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573435"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -66,7 +66,7 @@ ms.locfileid: "58507622"
 
 1. 在Microsoft 365 Defender门户中，转到"电子邮件 **&协作** \> **提交"。**
 
-2. 在"**提交"** 页上，验证"**已提交进行分析**"选项卡已选中，然后单击广告图标"提交到 ![ Microsoft ](../../media/m365-cc-sc-create-icon.png) **进行分析"。**
+2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡，然后单击 ![ "广告图标"。](../../media/m365-cc-sc-create-icon.png) **提交到 Microsoft 进行分析**。
 
 3. 使用 **"提交到 Microsoft 查看** "飞出页面来提交邮件、URL 或电子邮件附件，如以下各节所述。
 
@@ -93,7 +93,7 @@ ms.locfileid: "58507622"
 5. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
-> ![新 URL 提交示例](../../media/submission-flyout-email.png)
+> ![新 URL 提交示例。](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
@@ -108,7 +108,7 @@ ms.locfileid: "58507622"
 4. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
-> ![新电子邮件提交示例](../../media/submission-url-flyout.png)
+> ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>向 Microsoft 提交可疑的电子邮件附件
 
@@ -123,7 +123,7 @@ ms.locfileid: "58507622"
 4. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
-> ![新附件提交示例](../../media/submission-file-flyout.png)
+> ![新附件提交示例。](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>查看向 Microsoft 提交的管理员
 
@@ -164,7 +164,7 @@ ms.locfileid: "58507622"
      完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
-     > ![管理员提交的新筛选器选项](../../media/admin-submission-filters.png)
+     > ![管理员提交的新筛选器选项。](../../media/admin-submission-filters.png)
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
@@ -190,7 +190,7 @@ ms.locfileid: "58507622"
 
 如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在Microsoft 365 Defender门户中，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在" **提交"** 页上，选择" **用户报告的邮件"** 选项卡。
 
@@ -224,7 +224,7 @@ ms.locfileid: "58507622"
      完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
-     > ![用户提交的新筛选器选项](../../media/admin-submission-reported-messages.png)
+     > ![用户提交的新筛选器选项。](../../media/admin-submission-reported-messages.png)
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
@@ -256,4 +256,4 @@ ms.locfileid: "58507622"
 - **触发调查**
 
 > [!div class="mx-imgBorder"]
-> !["操作"按钮上的"新建选项"](../../media/admin-submission-main-action-button.png)
+> !["操作"按钮上的"新建选项"。](../../media/admin-submission-main-action-button.png)

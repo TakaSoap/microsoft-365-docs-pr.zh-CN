@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 通过示例模型了解文档理解模型。
-ms.openlocfilehash: 52b66a30bb9b28dabde0a9af092e942522db58150acaacc48a23bc105fcb1dce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e89c0723b978b4d5a206119e10b5a712668b406a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795378"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573735"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>通过示例模型了解文档理解模型
 
@@ -31,11 +31,11 @@ Microsoft SharePoint Syntex 为你提供了可用于检查的示例模型，让�
 1. 从内容中心中，选择“**模型**”来查看你的模型列表。</br>
 2. 在“**模型**”页面上，选择“**导入示例模型**”。</br>
 
-    ![导入示例模型](../media/content-understanding/import-sample-model.png) </br>
+    ![导入示例模型。](../media/content-understanding/import-sample-model.png) </br>
 
 3. 导入完成后，将打开 **BenefitsChangeNotice** 模型主页。 如果以后需要打开示例模型，可从内容中心的模型列表中打开它。 </br>
 
-     ![示例主页](../media/content-understanding/sample-home-page.png)</br>
+     ![示例主页。](../media/content-understanding/sample-home-page.png)</br>
 
 你不仅可以浏览分析示例模型，从而更好地理解模型的构建方式，你还可以随着工作模型的发展，进一步执行以下操作：
 

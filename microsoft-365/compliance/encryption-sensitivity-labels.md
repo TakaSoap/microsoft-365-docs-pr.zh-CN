@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21864ec94b4b7cd9ef19d23bb5c141d6458d63544361c52b023b6eaeafee6444
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886135"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573639"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -57,11 +57,11 @@ ms.locfileid: "53886135"
 
 1. 请遵循一般说明 [创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择 **“文件和电子邮件”**： 
     
-    ![文件和电子邮件的敏感度标签作用域选项](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![文件和电子邮件的敏感度标签范围选项。](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. 然后，在 **选择文件和电子邮件的保护设置** 页面上，确保选择 **“加密文件和电子邮件”**
+2. 然后，在“**选择文件和电子邮件的保护设置**”页面上，确保选择“**加密文件和电子邮件**”
     
-    ![文件和电子邮件的敏感度标签保护选项](../media/protection-options-sensitivity-label.png)
+    ![文件和电子邮件的敏感度标签保护选项。](../media/protection-options-sensitivity-label.png)
 
 4.  对于向导的 **加密** 页面，选择下列选项之一：
     
@@ -71,7 +71,7 @@ ms.locfileid: "53886135"
     
     - **配置加密设置**：启用加密，并使加密设置可见：
         
-        ![用于加密的敏感度标签选项](../media/encrytion-options-sensitivity-label.png)
+        ![用于加密的敏感度标签选项。](../media/encrytion-options-sensitivity-label.png)
         
         有关这些设置的说明，请参阅以下[配置加密设置](#configure-encryption-settings) 部分。
 
@@ -125,7 +125,7 @@ ms.locfileid: "53886135"
 
 选择是要立即分配权限还是允许用户分配权限：
 
-![用于添加用户或管理员定义的权限的选项](../media/sensitivity-label-user-or-admin-defined-permissions.png)
+![添加用户或管理员定义的权限的选项。](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 ## <a name="assign-permissions-now"></a>立即分配权限
 
@@ -137,7 +137,7 @@ ms.locfileid: "53886135"
 
 加密内容的访问控制设置：
 
-![有关管理员定义的权限的设置](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![管理员定义权限的设置。](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>针对脱机访问的 Rights Management 使用许可证
 
@@ -159,7 +159,7 @@ ms.locfileid: "53886135"
 
 分配权限：
 
-![向用户分配权限的选项](../media/Sensitivity-Assign-permissions-settings.png)
+![向用户分配权限的选项。](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>添加用户或组
 
@@ -208,7 +208,7 @@ ms.locfileid: "53886135"
 
 为此，添加用户或组、向其分配权限并保存这些设置。然后重复这些步骤，添加用户并向其分配权限、每次保存设置。可以根据需要经常重复此配置，以便为不同用户定义不同权限。
 
-![具有不同权限的不同用户](../media/Sensitivity-Multiple-users-permissions.png)
+![具有不同权限的不同用户。](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 颁发者（应用敏感度标签的用户）始终具有完全控制
 
@@ -263,13 +263,13 @@ ms.locfileid: "53886135"
 
 配置用户分配的权限：
 
-![有关用户定义的权限的加密设置](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![有关用户定义的权限的加密设置。](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Outlook 限制
 
 在 Outlook 中，当用户应用一个让他们为邮件分配权限的敏感标签时，可以选择 **“不转发”选项** 或 **“只加密”**。 用户将在邮件顶部看到标签名称和说明，这表示正在保护该内容。 与 Word、PowerPoint 和 Excel 不同（详见[下一部分](#word-powerpoint-and-excel-permissions)），系统不会提示用户选择特定权限。
 
-![应用于 Outlook 中的邮件的敏感度标签](../media/sensitivity-label-outlook-protection-applied.png)
+![应用于 Outlook 中的邮件的敏感度标签。](../media/sensitivity-label-outlook-protection-applied.png)
 
 当这些选项中的任何一个应用于电子邮件时，都会加密电子邮件且收件人必须经过身份验证。然后，收件人自动拥有受限制的使用权限:
 
@@ -293,7 +293,7 @@ ms.locfileid: "53886135"
 - 选择用户、组或组织。 这可包括你所在组织内部或外部的人员。
 - 设置到期日期，所选用户在该日期后不可访问内容。 有关详细信息，请参阅上一部分：[针对脱机访问的 Rights Management 使用许可证](#rights-management-use-license-for-offline-access)。
 
-![供用户通过自定义权限进行保护的选项](../media/sensitivity-aip-custom-permissions-dialog.png)
+![用户使用自定义权限保护的选项。](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 对于内置标签，用户在选择以下项时也会看到此对话框：
 
@@ -305,7 +305,7 @@ ms.locfileid: "53886135"
 
 对于后面的每个示例，请在选择 **配置加密设置** 时通过向导的 **加密** 页面进行配置：
 
-![应用敏感度标签向导中的加密选项](../media/apply-encryption-option.png)
+![应用敏感度标签向导中的加密选项。](../media/apply-encryption-option.png)
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>示例 1：应用“请勿转发”以将加密的电子邮件发送至 Gmail 帐户的标签
 

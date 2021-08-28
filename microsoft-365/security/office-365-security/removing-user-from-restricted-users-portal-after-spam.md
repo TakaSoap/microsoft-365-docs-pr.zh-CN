@@ -20,12 +20,12 @@ description: 管理员可以了解如何在 Microsoft 365 Defender 门户中从�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b06cf477ab8d713e0684c0d62567199c6c57cb32
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258211"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572391"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>在 Microsoft 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -97,10 +97,10 @@ ms.locfileid: "58258211"
 2. 在“**警报策略**”页面上，查找并选择名为“**被限制发送电子邮件的用户**”的警报。 你可以按名称对策略进行排序，或使用“**搜索框**”查找策略。
 
 3. 在显示的“**被限制发送电子邮件的用户**”浮出控件中，验证或配置下列设置：
-   - **状态**：验证此警报是否已启用 ![开关打开](../../media/scc-toggle-on.png)。
+   - **状态**：验证此警报是否已启用![切换打开](../../media/scc-toggle-on.png)。
    - **电子邮件收件人**：单击“编辑”，然后在随即显示的“编辑收件人”浮出控件中验证或配置下列设置：
      - **发送电子邮件通知**：验证此项是否已选中（“**开**”）。
-     - **电子邮件收件人**：默认值为“TenantAdmins”（表示“全局管理员”成员）。 若要添加其他收件人，请单击此框的空白区域。 此时，收件人列表会显示，你可以键入名称来筛选并选择收件人。 若要从此框中删除现有收件人，请单击其名称旁边的 ![“删除”图标](../../media/m365-cc-sc-remove-selection-icon.png)可。
+     - **电子邮件收件人**：默认值为“TenantAdmins”（表示“全局管理员”成员）。 若要添加其他收件人，请单击此框的空白区域。 此时，收件人列表会显示，你可以键入名称来筛选并选择收件人。 可以通过单击现有收件人姓名旁边的![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) 从框中删除现有收件人。
      - **每日通知限制**：默认值为“无限制”，但你可以选择每日通知数上限。
 
      完成时，请单击“保存”。

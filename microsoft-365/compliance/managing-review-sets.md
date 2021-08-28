@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何管理审阅集，以便分析、查询、查看、标记和导出 Advanced eDiscovery数据。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 164c172dd4c4ad5de6b24d25466afcb8a016715fdbe1f1958616afe823aeb487
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 51362fa23af1c0a8b232fe5fc026ac1a87803c3a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573615"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>管理审阅Advanced eDiscovery
 
@@ -42,15 +42,15 @@ ms.locfileid: "53865862"
 
 可以在"审阅集"选项卡上单击 **"+ 添加审阅集"创建审阅集**。
 
-![添加审阅集](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![添加审阅集。](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-在"**添加审阅集**"飞出页面上，键入评价集的名称，然后单击"保存 **"。** 新审阅集显示在"审阅集"选项卡 **上的** 列表中。
+在"**添加审阅集**"飞出页上，键入评价集的名称，然后单击"保存 **"。** 新审阅集显示在"审阅集"选项卡 **上的** 列表中。
 
-!["审阅集"选项卡上列出的新审阅集](../media/AeDnewreviewset.png)
+!["审阅集"选项卡上列出的新审阅集。](../media/AeDnewreviewset.png)
 
 有三种不同的方法可以将数据添加到审阅集的Advanced eDiscovery案例。
 
-![三种添加到审阅集的方法](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![三种添加到审阅集的方法。](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [将搜索结果添加到审阅集](add-data-to-review-set.md)
 

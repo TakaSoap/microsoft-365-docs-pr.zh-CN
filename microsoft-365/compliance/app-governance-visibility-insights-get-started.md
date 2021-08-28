@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用可见性和见解。
-ms.openlocfilehash: 63b55b6c943d1ccd274477aff9b3327f58aade5da9e6fd4b89db2c73c21d809c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30871804c9e8cf4e548698ecb326917baef36c37
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887052"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569653"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>开始使用可见性和见解
 
@@ -27,7 +27,7 @@ ms.locfileid: "53887052"
 
 首先从 [https://aka.ms/appgovernance](https://aka.ms/appgovernance) 上的应用治理仪表板开始。 请注意，要查看应用治理数据，你的登录帐户必须具有[这些应用治理管理员角色](app-governance-get-started.md#administrator-roles)之一。
 
-![Microsoft 365 合规中心内的应用治理概述页面](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![Microsoft 365 合规中心内的应用治理概述页面。](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 你还可以从“**Office 365”>“Microsoft 365 合规中心”>“应用治理”>“概述**”页访问应用治理仪表板。
 

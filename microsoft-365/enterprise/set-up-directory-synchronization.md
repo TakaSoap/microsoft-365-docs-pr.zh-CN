@@ -22,24 +22,24 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何在用户和本地 active Directory Microsoft 365目录同步。
-ms.openlocfilehash: db6fc46eb4659b0c41f46b2828044af3bdaf02e2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: f6537e1c813e564b728891ffb13f644c3850a07e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356188"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574011"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>为用户设置目录Microsoft 365
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Microsoft 365 Azure AD Azure Active Directory (租户存储和管理) 身份进行身份验证和访问基于云的资源的权限。 
+Microsoft 365 Azure AD Azure Active Directory (Azure AD) 存储和管理标识进行身份验证和访问基于云的资源的权限。 
 
 如果你有本地 Active Directory 域服务 (AD DS) 域或林，可以将 AD DS 用户帐户、组和联系人与 Microsoft 365 订阅的 Azure AD 租户同步。 这是混合标识Microsoft 365。 下面是其组件。
 
-![用于数据库的目录同步Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
+![用于数据库的目录同步Microsoft 365。](../media/about-microsoft-365-identity/hybrid-identity.png)
 
-Azure AD 连接在本地服务器上运行，将 AD DS 与 Azure AD 租户同步。 除了目录同步，还可以指定以下身份验证选项：
+Azure AD 连接在本地服务器上运行，并且将 AD DS 与 Azure AD 租户同步。 除了目录同步，还可以指定以下身份验证选项：
 
 - PHS (密码哈希) 
 
@@ -74,7 +74,7 @@ Azure AD 连接在本地服务器上运行，将 AD DS 与 Azure AD 租户同步
 
 有关 Azure AD [Azure Active Directory 连接](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)的硬件、软件、帐户和权限要求、SSL 证书要求和对象限制的详细信息，请参阅系统连接。
   
-还可以查看 Azure AD 连接[版本发布历史记录](/azure/active-directory/hybrid/reference-connect-version-history)，查看每个版本中包含和修复了哪些内容。
+还可以查看 Azure AD 连接[版本发布历史记录](/azure/active-directory/hybrid/reference-connect-version-history)，以查看每个版本中包含和修复了哪些内容。
 
 ## <a name="2-install-azure-ad-connect-and-configure-directory-synchronization"></a>2. 安装 Azure AD 连接并配置目录同步
 
@@ -87,10 +87,10 @@ Azure AD 连接在本地服务器上运行，将 AD DS 与 Azure AD 租户同步
 
 请按以下步骤操作：
 
-1. 登录到"活动 [Microsoft 365 管理中心 (](https://admin.microsoft.com)左侧导航栏中选择 https://admin.microsoft.com) "用户 \> **""** 活动用户"。
+1. 登录到"用户 [Microsoft 365 管理中心 (](https://admin.microsoft.com)左侧导航栏中选择"用户 https://admin.microsoft.com)  \> **""** 活动用户"。
 2. 在"**活动用户"** 页面上，**选择" (** 三个点) \> **目录同步"。**
   
-3. 在 **"Azure Active Directory准备**"页上，选择"转到下载中心 **"，获取 Azure AD 连接工具** 链接以开始操作。 
+3. 在 **"Azure Active Directory准备**"页面上，选择"转到下载中心 **"，获取 Azure AD 连接工具** 链接以开始操作。 
 4. 按照 Azure [AD 连接 和 Azure AD 连接运行状况安装路线图 中的步骤操作](/azure/active-directory/hybrid/how-to-connect-install-roadmap)。
 
 ## <a name="3-finish-setting-up-domains"></a>3. 完成域设置

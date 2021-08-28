@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: be5dfaa0549d96c93befc5c59947651391acf6e9f0b029d4745f717d87c7cccb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573387"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 
@@ -46,7 +46,7 @@ ms.locfileid: "53804671"
 1. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 2. 将 SharePoint 外部共享设置设为 **“新来宾和现有来宾”**。
 
-   ![组织级 SharePoint 网站外部共享设置的屏幕截图](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![组织级 SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. 单击 **“保存”**。
 
@@ -56,7 +56,7 @@ ms.locfileid: "53804671"
 3. 在功能区中，单击 **“共享”**。
 4. 确保将共享设置为 **“新来宾和现有来宾”**。
 
-   ![网站级 SharePoint 网站外部共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings.png)
+   ![网站级 SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
 5. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -76,7 +76,7 @@ ms.locfileid: "53804671"
 3. 单击 **“添加域”**。
 4. 选择是否要阻止域，键入域，然后单击 **“确定”**。
 
-   ![SharePoint 按域限制外部共享设置的屏幕截图](../media/sharepoint-sharing-block-domain.png)
+   ![SharePoint 按域限制外部共享设置的屏幕截图。](../media/sharepoint-sharing-block-domain.png)
 
 5. 单击 **“保存”**。
 
@@ -92,7 +92,7 @@ ms.locfileid: "53804671"
 
 3. 选择“**仅允许特定安全组中的用户外部共享**”，然后选择“**管理安全组**”。
 
-    ![“管理安全组”窗格屏幕截图](/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![“管理安全组”窗格屏幕截图。](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. 在“**添加安全组**”框中，输入安全组的名称。 安全组框出现。
 

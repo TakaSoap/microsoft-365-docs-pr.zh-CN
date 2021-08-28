@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: b8b8b8481dca5074d2db6c3022d65e160cdf7b04
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58418009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573819"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -42,7 +42,7 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 
 **导航：**[Azure Active Directory 管理中心](https://aad.portal.azure.com) > Azure Active Directory > 外部标识 > 外部协作设置
 
-![Azure Active Directory 组织关系设置页面的屏幕截图](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory 组织关系设置页面的屏幕截图。](../media/azure-ad-organizational-relationships-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -63,7 +63,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 组织设置 >“安全和隐私”选项卡 > 共享
 
-![Microsoft 365 管理中心中的安全和隐私来宾共享设置的屏幕截图](../media/sharepoint-security-privacy-sharing-setting.png)
+![Microsoft 365 管理中心中的安全和隐私来宾共享设置的屏幕截图。](../media/sharepoint-security-privacy-sharing-setting.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -73,7 +73,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 > Microsoft 365 组
 
-![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图。](../media/office-365-groups-guest-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -92,7 +92,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
 
-![Teams 来宾访问切换的屏幕截图](../media/teams-guest-access-toggle.png)
+![Teams 来宾访问切换的屏幕截图。](../media/teams-guest-access-toggle.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -102,7 +102,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
 
-![Teams 来宾呼叫选项的屏幕截图](../media/teams-guest-calling-setting.png)
+![Teams 来宾呼叫选项的屏幕截图。](../media/teams-guest-calling-setting.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -112,7 +112,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
 
-![Teams 来宾会议设置的屏幕截图](../media/teams-guest-meeting-settings.png)
+![Teams 来宾会议设置的屏幕截图。](../media/teams-guest-meeting-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -124,7 +124,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：**[Teams 管理中心](https://admin.teams.microsoft.com) > 组织范围的设置 > 来宾访问
 
-![Teams 来宾消息传递设置的屏幕截图](../media/teams-guest-messaging-settings.png)
+![Teams 来宾消息传递设置的屏幕截图。](../media/teams-guest-messaging-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -149,7 +149,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 共享
 
-![SharePoint 组织级别共享设置的屏幕截图](../media/external-sharing.png)
+![SharePoint 组织级别共享设置的屏幕截图。](../media/external-sharing.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -160,7 +160,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 共享
 
-![SharePoint 组织级别的其他共享设置的屏幕截图](../media/external-sharing.png)
+![SharePoint 组织级别的其他共享设置的屏幕截图。](../media/external-sharing.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 共享
 
-![SharePoint 组织级别文件和文件夹共享设置的屏幕截图](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint 组织级别文件和文件夹共享设置的屏幕截图。](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -200,7 +200,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
 
-![SharePoint 网站外部共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings.png)
+![SharePoint 网站外部共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
@@ -212,7 +212,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 **导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
 
-![SharePoint 网站级别链接共享设置的屏幕截图](../media/sharepoint-site-link-sharing-settings.png)
+![SharePoint 网站级别链接共享设置的屏幕截图。](../media/sharepoint-site-link-sharing-settings.png)
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|

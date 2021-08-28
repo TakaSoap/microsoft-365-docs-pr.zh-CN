@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 localization_priority: Normal
 description: 了解如何在"主题"中编辑Microsoft Viva主题。
-ms.openlocfilehash: 748b626dcdf6d118794872d5865a06678293d90da95d7e74057f019df749a1c6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fb3089d0ce701477542fec7710db5de17638469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573603"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>编辑现有主题中的Microsoft Viva主题 
 
@@ -34,18 +34,18 @@ ms.locfileid: "53840324"
 > [!Note] 
 > 虽然 AI 收集的主题信息经过安全修整，[](topic-experiences-security-trimming.md)但有权查看主题的所有用户都可以看到在编辑现有主题时手动添加的主题说明和人员信息。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要编辑现有主题，您需要：
 - 拥有 Viva 主题许可证。
 - 具有创建 [或编辑主题的权限](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 > [!Note] 
-> 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
+> 具有主题中心主题管理权限的用户 (知识经理) 创建和编辑主题的权限。
 
 ## <a name="how-to-edit-a-topic-page"></a>如何编辑主题页面
 
-具有 *此权限Who* 可以创建或编辑主题权限的用户可以通过从主题突出显示中打开主题页面，然后选择主题页面右上方的"编辑"按钮来编辑主题。 还可以从主题中心主页打开主题页面，您可以在其中找到已连接到的所有主题。
+具有 *"Who或* 编辑主题"权限的用户可以通过从主题突出显示中打开主题页面，然后选择主题页面右上方的"编辑"按钮来编辑主题。  还可以从主题中心主页打开主题页面，您可以在其中找到已连接到的所有主题。
 
    ![显示"编辑"按钮的屏幕截图。](../media/knowledge-management/edit-button.png) </br> 
 
@@ -80,7 +80,7 @@ ms.locfileid: "53840324"
 
    ![显示"固定的文件和页面"部分屏幕截图。](../media/knowledge-management/pinned-files-and-pages.png)
  
-    若要添加新文件，请选择"添加"，从"常用SharePoint"或"关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
+    若要添加新文件，请选择"添加"，从SharePoint"或"关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
 
     还可使用“**来自链接**”选项，以通过提供 URL 来添加文件或页面。 
 
@@ -103,9 +103,9 @@ ms.locfileid: "53840324"
 
 8. " **建议的网站** "部分显示 AI 建议与主题关联的网站。 
 
-   !["建议的网站"部分屏幕截图](../media/knowledge-management/suggested-sites-section.png)  
+   !["建议的网站"部分屏幕截图。](../media/knowledge-management/suggested-sites-section.png)  
 
-    可以通过选择固定的图标将建议的网站更改为固定的网站。
+    可以通过选择固定图标将建议的网站更改为固定的网站。
 
 9. 您还可以通过选择画布图标（可在简短说明下方找到）将静态项目（如文本、图像或链接）添加到页面。 选择它将打开SharePoint工具箱，您可以从中选择要添加到页面的项。
 
