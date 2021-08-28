@@ -1,6 +1,6 @@
 ---
-title: 在 defender 中处理高级搜寻Microsoft 365结果
-description: 在 Defender 中充分利用高级搜寻返回的Microsoft 365结果
+title: 在任务中处理高级搜寻Microsoft 365 Defender
+description: 充分利用高级搜寻在查询中返回的查询Microsoft 365 Defender
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 可视化， 图表， 筛选器， 深化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eccf93b019baa240a46260a28f3f0bc109345dd4
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952592"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563518"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -71,11 +71,11 @@ AlertInfo
 ```
 呈现结果时，柱形图将每个严重性值显示为单独的列：
 
-![以柱形图显示的高级搜寻查询结果的图像 按严重性显示 ](../../media/advanced-hunting-column-chart.jpg)
- *为柱形图的警报查询结果*
+![以柱形图显示的高级搜寻查询结果的图像。 ](../../media/advanced-hunting-column-chart.jpg)
+*按严重性显示为柱形图的警报查询结果*
 
 #### <a name="alert-severity-by-operating-system"></a>按操作系统警报严重性
-您还可以使用 运算符 `summarize` 为来自多个字段的图表值准备结果。 例如，你可能想要了解警报严重性如何在操作系统和操作系统之间 (分布) 。 
+您还可以使用 运算符 `summarize` 为来自多个字段的图表值准备结果。 例如，你可能想要了解警报严重性如何分布在操作系统和操作系统 (操作系统) 。 
 
 下面的查询使用运算符从表中拉取操作系统信息，然后使用 计算 `join` `DeviceInfo` 和 `summarize` 列中 `OSPlatform` `Severity` 的值：
 
@@ -87,8 +87,8 @@ AlertInfo
 ```
 使用堆积柱形图可以最好地可视化这些结果：
 
-![以堆叠图表显示的高级搜寻查询结果的图像 按操作系统和严重性显示的警报查询结果显示为 ](../../media/advanced-hunting-stacked-chart.jpg)
- *堆积图表*
+![显示为堆积图表的高级搜寻查询结果的图像。 ](../../media/advanced-hunting-stacked-chart.jpg)
+*按操作系统显示的警报和严重性的查询结果显示为堆积图表*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>十大发件人域中的网络钓鱼电子邮件
 如果处理的值列表并不有限，可以使用 运算符仅绘制具有最多实例 `Top` 的值的图表。 例如，若要获取钓鱼电子邮件最多的前十个发件人域，请使用以下查询：
@@ -99,10 +99,10 @@ EmailEvents
 | summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
-使用饼图视图可有效地显示顶部域的分布：
+使用饼图视图可有效显示顶部域的分布：
 
-![以饼图饼图显示的高级搜寻查询结果的图像，显示钓鱼电子邮件在顶部 ](../../media/advanced-hunting-pie-chart.jpg)
- *发件人域的分布*
+![以饼图显示的高级搜寻查询结果的图像。 ](../../media/advanced-hunting-pie-chart.jpg)
+*显示钓鱼电子邮件在顶部发件人域分布的饼图*
 
 #### <a name="file-activities-over-time"></a>一段时间的文件活动
 将 `summarize` 运算符与 `bin()` 函数一同使用，可以检查一段时间内是否涉及特定指示器的事件。 下面的查询以 30 分钟的间隔对涉及文件的事件进行计数，以显示与该文件 `invoice.doc` 相关的活动峰值：
@@ -115,8 +115,8 @@ AppFileEvents
 ```
 下面的图表清楚地突出显示了具有更多活动涉及的时间段 `invoice.doc` ： 
 
-![高级搜寻查询结果的图像，显示为显示一段时间涉及文件的事件数的线形图 ](../../media/advanced-hunting-line-chart.jpg)
- *的线形图*
+![以线形图显示的高级搜寻查询结果的图像。 ](../../media/advanced-hunting-line-chart.jpg)
+*显示一段时间内涉及文件的事件数的图表*
 
 
 ## <a name="export-tables-and-charts"></a>导出表格和图表
@@ -132,7 +132,7 @@ AppFileEvents
 - **进程树** - 为包含进程信息的记录生成，并且使用可用的上下文信息进行扩充;通常，返回更多列的查询可产生更丰富的进程树。
 - **所有详细信息** - 记录中列的所有值  
 
-![包含用于检查记录的面板的选定记录的图像](../../media/mtp-ah/inspect-record.png)
+![包含用于检查记录的面板的选定记录的图像。](../../media/mtp-ah/inspect-record.png)
 
 若要查看有关查询结果中的特定实体（如计算机、文件、用户、IP 地址或 URL）的详细信息，请选择实体标识符以打开该实体的详细配置文件页。
 
@@ -143,19 +143,19 @@ AppFileEvents
 - 从查询中排除选定值 (`!=`)
 - 获取用于将值添加到查询的更高级运算符，如 `contains`、`starts with` 和 `ends with` 
 
-![高级搜寻设备结果集](../../media/advanced-hunting-results-filter.png)
+![高级搜寻结果集。](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>筛选查询结果
 右侧显示的筛选器提供结果集的摘要。 每列都有其自己的部分，其中列出了该列找到的非重复值和实例数。
 
 优化查询，在要包含或排除的值上选择 或 按钮，然后选择 `+` `-` "运行 **查询"。**
 
-![高级搜寻筛选器的图像](../../media/advanced-hunting-filter.png)
+![高级搜寻筛选器的图像。](../../media/advanced-hunting-filter.png)
 
 应用筛选器以修改查询并运行查询后，将相应更新结果。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

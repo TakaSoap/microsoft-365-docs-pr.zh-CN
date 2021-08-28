@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07d810f1588de01e4ee53294b39cc6b09b372046
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 12a796765e21e674ef46334dbd03478e843ef663
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594524"
+ms.locfileid: "58563566"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 客户服务
 
@@ -47,7 +47,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 至少必须具有服务支持管理员 **或支持管理员** 角色。
 
-有关哪些角色具有权限详细信息，请参阅 [安全管理员权限](/azure/active-directory/roles/permissions-reference#security-administrator)。 包含操作的角色 `microsoft.office365.supportTickets/allEntities/allTasks` 可以提交案例。
+有关哪些角色具有权限详细信息，请参阅 [安全管理员权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions)。 包含操作的角色 `microsoft.office365.supportTickets/allEntities/allTasks` 可以提交案例。
 
 有关管理员角色的常规信息，请参阅关于 [管理员角色](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)。
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 部署最新版本的组织如何使用 Windows 10 和 Microsoft 365 应用的频道。
-ms.openlocfilehash: 71fd3e752cf4ab48c3a8ece49b8263fd5f3d01d2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 025f6976fd578af4bf0c9a0c268f046f72ef6901
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356788"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561082"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新版本的广泛部署示例
 
@@ -103,7 +103,7 @@ ms.locfileid: "58356788"
 
 这些是此示例组织使用的产品、频道和部署组。 
 
-![为最新版本的广泛部署部署组](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![用于广泛部署最新版本的部署组。](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>另请参阅
 

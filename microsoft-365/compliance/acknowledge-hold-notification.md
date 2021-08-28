@@ -17,23 +17,23 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何使用 Advanced eDiscovery通过电子邮件发送和跟踪合法保留通知，以及监视义务状态。
-ms.openlocfilehash: 1826d6376dffc6717909accc7d4c3844cdf6b8a1206cdfad1dc655d7dee5b508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何使用Advanced eDiscovery电子邮件发送和跟踪合法保留通知，以及监视义务状态。
+ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837188"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563280"
 ---
 # <a name="acknowledge-a-hold-notification"></a>确认保留通知
 
-在响应法规请求或调查时，您可能需要通知保管人他们保留电子存储的信息 (ESI) 以及可能与活动或即将发生的法律事务相关的任何材料。 发送后，法律团队必须知道每个保管人已收到、阅读、理解并同意遵循给定的说明。
+在响应监管请求或调查时，您可能需要通知保管人其保留电子存储的信息 (ESI) 以及可能与活动或即将发生的法律事务相关的任何材料。 发送后，法律团队必须知道每个保管人已收到、阅读、理解并同意遵循给定的说明。
 
 为了帮助减少跟进保管人的时间、成本和工作量，Advanced eDiscovery通过电子邮件发送和跟踪合法保留通知。 除了电子邮件通知之外，每个保管人将有权访问个性化合规性门户，从而让保管人随时了解其义务状态的变化。
 
 ## <a name="email-notifications"></a>电子邮件通知
 
-在颁发法定保留通知后，每个保管人将收到一封唯一的个性化电子邮件，其中包含定义的法定保留通知并添加了说明。 
+在颁发法定保留通知后，每个保管人将收到一封唯一的个性化电子邮件，其中包含定义的法定保留通知和添加的说明。 
 
 > [!TIP]
 > 了解如何使用内置通信编辑器，以允许保管[](using-communications-editor.md)人确认通知或直接从电子邮件访问其合规性门户。
@@ -44,7 +44,7 @@ ms.locfileid: "53837188"
 
 - **提醒通知：** 如果启用，将基于指定的频率和间隔向保管人发送提醒通知。 提醒将继续发送，直到保管人确认其通知或提醒次数用完为止。
 
-- **升级通知：** 如果启用，提醒通知用尽后，会向保管人及其经理发送上报通知。 系统将自动发送升级通知，直到完成指定的升级次数或直到保管人确认其保留通知为止。
+- **升级通知：** 如果启用，提醒通知用尽后，会向保管人及其经理发送上报通知。 系统将自动发送上报通知，直到完成指定的升级次数或直到保管人确认其保留通知为止。
 
 - **Reissue 通知：** 在调查过程中，如果更新了保留通知的内容，则更新的通知将自动发送给保管人。
 
@@ -54,4 +54,4 @@ ms.locfileid: "53837188"
 
 除了电子邮件通知之外，每个保管人将有权访问唯一的合规性门户。 通过门户，每个保管人可以查看、访问并确认其主动保留通知。
 
-![保管人合规性门户](../media/CustodianPortal.jpg)
+![保管人合规性门户。](../media/CustodianPortal.jpg)

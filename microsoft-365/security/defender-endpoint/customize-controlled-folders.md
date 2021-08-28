@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 24e144b6134c4d32b15220ed3b3608b3b4a1c1df
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e104a8180ad9099e795a014060921387de642668
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533083"
+ms.locfileid: "58560902"
 ---
 # <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问
 
@@ -45,7 +45,7 @@ ms.locfileid: "58533083"
 
 受控文件夹访问权限适用于许多系统文件夹和默认位置，包括 **文档、****图片** 和 **电影等文件夹**。 可以添加要保护的其他文件夹，但不能删除默认列表中的默认文件夹。
 
-当你不将文件存储在默认 Windows 库中，或者你已更改库的默认位置时，向受控文件夹访问权限添加其他文件夹可能会很有帮助。
+当你不将文件存储在默认 Windows 库中，或者你已更改库的默认位置时，向受控文件夹访问权限添加其他文件夹可能很有用。
 
 还可以指定网络共享和映射驱动器。 支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "58533083"
 
 3. 在组 **策略管理编辑器中**，转到计算机 **配置** \> **策略** \> **管理模板**。
 
-4. 展开树以 **Windows攻击** \> **Microsoft Defender 防病毒Windows Defender** \> **受控** \> **文件夹访问权限的组件**。 <br/>**注意**：在早期版本的 Windows 中，你可能会看到 Windows Defender 防病毒 **而不是****Microsoft Defender 防病毒**。
+4. 展开树以 **Windows攻击** \> **Microsoft Defender 防病毒Windows Defender** \> **受控** \> **文件夹访问权限的组件**。 <br/>**注意**：在早期版本的 Windows，**你可能会看到** Windows Defender 防病毒 而不是 **Microsoft Defender 防病毒**。
 
 5. 双击"**已配置的受保护文件夹"，** 然后将该选项设置为"**已启用"。** 选择 **"** 显示"，并指定要保护的每个文件夹。
 
@@ -81,16 +81,16 @@ ms.locfileid: "58533083"
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>使用 PowerShell 保护其他文件夹
 
-1. 在"管理""开始"菜单键入 **PowerShell，** 右键单击 **"Windows PowerShell并选择"** 以 **管理员角色运行"**
+1. 在"管理"中"开始"菜单 **PowerShell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 
-2. 键入以下 PowerShell cmdlet，将 替换为文件夹的路径 `<the folder to be protected>` ， (例如 `"c:\apps\"`) ：
+2. 键入以下 PowerShell cmdlet，将 替换为文件夹的路径 `<the folder to be protected>` (例如 `"c:\apps\"`) ：
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
     ```
 3. 对要保护的每个文件夹重复步骤 2。 受保护的文件夹在应用Windows 安全中心显示。
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="显示 cmdlet 的 PowerShell 窗口":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="显示 cmdlet 的 PowerShell 窗口。":::
 
 > [!IMPORTANT]
 > 用于 `Add-MpPreference` 向列表追加或添加应用，而不是 `Set-MpPreference` 。 使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
@@ -120,7 +120,7 @@ ms.locfileid: "58533083"
 
 4. 选择 **添加允许的应用** 并按照提示添加应用。
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="添加允许的应用按钮":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="添加允许的应用按钮。":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>使用组策略允许特定应用
 
@@ -134,7 +134,7 @@ ms.locfileid: "58533083"
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>使用 PowerShell 允许特定应用
 
-1. 在"管理""开始"菜单键入 **PowerShell，** 右键单击 **"Windows PowerShell并选择"** 以 **管理员角色运行"**
+1. 在"管理"中"开始"菜单 **PowerShell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -149,7 +149,7 @@ ms.locfileid: "58533083"
 
    继续使用 向 `Add-MpPreference -ControlledFolderAccessAllowedApplications` 列表中添加更多应用。 使用此 cmdlet 添加的应用将显示在Windows 安全中心应用中。
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允许应用的 PowerShell cmdlet":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允许应用的 PowerShell cmdlet。":::
 
 > [!IMPORTANT]
 > 用于 `Add-MpPreference` 向列表中追加或添加应用。 使用 `Set-MpPreference` cmdlet 将覆盖现有列表。

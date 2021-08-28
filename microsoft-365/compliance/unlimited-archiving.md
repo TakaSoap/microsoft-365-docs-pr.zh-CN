@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自动扩展存档，它为邮箱提供无限制Exchange Online存储。
-ms.openlocfilehash: 3473145231a70942311b5855036220fa247f0716
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: be6fc33879a43d01dfde1312d7144994ff18fd18
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372672"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561178"
 ---
 # <a name="overview-of-unlimited-archiving"></a>无限制存档概述
 
 在Office 365中，存档邮箱为用户提供了额外的邮箱存储空间。 启用用户的存档邮箱后，最多 100 GB 的额外存储空间可用。 过去，当达到 100 GB 存储配额时，组织必须联系 Microsoft 以请求为存档邮箱提供额外的存储空间。 这不再如此。
 
-在名为自动扩展存档Microsoft 365 (*中*，) 无限制的存档功能在存档邮箱中提供额外的存储。 当达到存档邮箱中的存储配额时，Microsoft 365 会自动增加存档的大小，这意味着用户不会用完邮箱存储空间，管理员也无需为存档邮箱请求额外存储空间。
+存档邮箱中的无限制存档Microsoft 365 (*自动* 扩展存档) 在存档邮箱中提供额外的存储。 当达到存档邮箱中的存储配额时，Microsoft 365 会自动增加存档的大小，这意味着用户不会用完邮箱存储空间，并且管理员也无需为存档邮箱请求额外存储空间。
 
 有关启用自动扩展存档的分步说明，请参阅启用 [无限制存档](enable-unlimited-archiving.md)。
 
 > [!NOTE]
-> 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档，需要Exchange Online计划 2 许可证Exchange Online计划 1 Exchange Online Archiving许可证。
+> 自动扩展存档还支持共享邮箱。 若要为共享邮箱启用存档，需要Exchange Online计划 2 许可证Exchange Online计划 1 许可证Exchange Online Archiving许可证。
 
 ## <a name="how-auto-expanding-archiving-works"></a>自动扩展存档的工作原理
 
@@ -41,11 +41,11 @@ ms.locfileid: "58372672"
 
 以下是此过程的快速概述。
 
-![自动扩展存档过程概述](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![自动扩展存档过程的概述。](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. 为用户邮箱或共享邮箱启用存档。 创建存储空间为 100 GB 的存档邮箱，存档邮箱的警告配额设置为 90 GB。
 
-2. 管理员为邮箱启用自动扩展存档。 当存档邮箱 ("可恢复的项目"文件夹) 达到 90 GB 时，它将转换为自动展开存档，Microsoft 365向存档添加存储空间。 预配额外存储空间可能需要 30 天。
+2. 管理员为邮箱启用自动扩展存档。 当存档邮箱 ("可恢复的项目"文件夹) 达到 90 GB 时，它将转换为自动展开的存档，Microsoft 365存储空间添加到存档。 预配额外存储空间可能需要 30 天。
 
    > [!NOTE]
    > 如果邮箱处于保留状态或分配到保留策略，则当启用自动扩展存档时，存档邮箱的存储配额将增加到 110 GB。 同样，存档警告配额增加到 100 GB。
@@ -53,11 +53,11 @@ ms.locfileid: "58372672"
 3. Microsoft 365时自动增加更多存储空间。
 
 > [!IMPORTANT]
-> 自动扩展存档仅支持用于单个用户的邮箱 (或共享邮箱) 增长速率不超过每天 1 GB。 用户的存档邮箱只供该用户使用。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱。 Microsoft 保留拒绝在用户的存档邮箱用于存储其他用户的存档数据或其他不当使用情况下的无限制存档的权利。
+> 自动扩展存档仅支持用于单个用户的邮箱 (或共享邮箱) 其增长速率不会超过每天 1 GB。 用户的存档邮箱只供该用户使用。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱。 Microsoft 保留拒绝在用户的存档邮箱用于存储其他用户的存档数据或其他不当使用情况下的无限制存档的权利。
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>将哪些内容移动到其他存档存储空间？
 
-若要充分利用自动扩展存档存储，文件夹可能会移动。 Microsoft 365在向存档中添加额外存储空间时，确定要移动的文件夹。 有时，当移动文件夹时，会自动创建一个或多个子文件夹，同时将原始文件夹中的项目分发到这些文件夹，以便于移动过程。 查看文件夹中的文件夹列表的存档部分Outlook，这些子文件夹将显示在原始文件夹下。  用于命名这些子Microsoft 365的命名约定是在 **\<folder name\> mmm dd _yyyy (yyyy** h_mm) 上创建的，其中：
+若要充分利用自动扩展存档存储，文件夹可能会移动。 Microsoft 365在向存档中添加额外存储空间时，确定要移动的文件夹。 有时，当移动文件夹时，会自动创建一个或多个子文件夹，同时将原始文件夹中的项目分发到这些文件夹，以便于移动过程。 当在文件夹中查看文件夹列表的存档Outlook，这些子文件夹将显示在原始文件夹下。  用于命名这些Microsoft 365的命名约定是在 **\<folder name\> mmm dd _yyyy (yyyy** h_mm) 上创建的，其中：
 
 - **yyyy** 是文件夹中收到邮件的年份。
 
@@ -67,11 +67,11 @@ ms.locfileid: "58372672"
 
  **添加额外存储空间之前**
 
-![预配自动扩展存档之前存档邮箱的文件夹列表](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![预配自动扩展存档之前存档邮箱的文件夹列表。](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **添加额外存储空间后**
 
-![预配自动扩展存档后存档邮箱的文件夹列表](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![设置自动扩展存档后存档邮箱的文件夹列表。](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > 如前所述，Microsoft 365将项目移动到子文件夹 (并按上述命名约定命名) 以帮助将内容分发到辅助存档。 但是，将项目移动到子文件夹可能并不总是如此。 有时，整个文件夹可能会移到辅助存档中。 在这种情况下，文件夹将保留其原始名称。  在文件夹列表中的文件夹列表中，Outlook文件夹已移动到辅助存档。
@@ -112,6 +112,6 @@ ms.locfileid: "58372672"
 
 - **导入服务：** 可以使用 Office 365 导入服务将 PST 文件导入到用户的自动展开存档。 您最多可以将 100 GB 的数据从 PST 文件导入用户的存档邮箱。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 有关自动扩展存档的更多技术详细信息，请参阅[Microsoft 365： Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)。

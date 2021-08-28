@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1188f1310ce06c2d3e695294f2212df1f5a9c60
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532819"
+ms.locfileid: "58563554"
 ---
 # <a name="deployment-phases"></a>部署阶段
 
@@ -41,9 +41,10 @@ ms.locfileid: "58532819"
 
 每个部分对应于此解决方案中的一篇单独的文章。
 
-![包含表中详细信息的部署阶段的图像](images/deployment-guide-phases.png)
+![包含表中详细信息的部署阶段的图像。](images/deployment-guide-phases.png)
 
-![部署阶段摘要：准备、设置、载入](images/phase-diagrams/deployment-phases.png)
+
+![部署阶段摘要：准备、设置、载入。](images/phase-diagrams/deployment-phases.png)
 
 <br>
 

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: cc09593c7a8ceef04d0a61cc9bd7d5624943b28f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d8e83cfd877266bac6247246c078dbdc811368e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247126"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563506"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "58247126"
 
 事件调查的一部分可能包括用户帐户。 从"事件 **"** 和"用户"事件 **&"事件***>">***开始**。 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。":::
 
 若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。 下面是一个示例。
 
@@ -47,7 +47,7 @@ ms.locfileid: "58247126"
 
 在此飞出页面中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
 
-此外，你可以直接在 Microsoft 365 Defender 门户中采取措施来解决受到威胁的用户，确认用户受到威胁或要求他们重新登录。
+此外，你可以直接在 Microsoft 365 Defender 门户中采取措施来解决受损用户的问题，确认用户受到威胁或要求他们重新登录。
 
 从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
 
@@ -70,7 +70,7 @@ Microsoft 365 Defender门户用户页面合并来自 Microsoft Defender for Endp
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="事件门户中事件用户帐户Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="针对用户门户中事件的用户帐户Microsoft 365 Defender示例":::
 
 
 <!--

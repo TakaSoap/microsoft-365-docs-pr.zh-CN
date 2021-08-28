@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23f6b23d958a51bd84498c08ef95672ec62ff6e5
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6c3adb8b07de50ca655c27a2d70f7868efd32332
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532759"
+ms.locfileid: "58561034"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -85,7 +85,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 - 安装 [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本) [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > 如果使用 SCCM 管理 Windows Server 2008 R2 SP1，SCCM 客户端代理将安装 .Net Framework 4.5.2。 因此，无需安装 .NET framework 4.5 (或更高版本) 。
+    > 如果使用 SCCM 管理 Windows Server 2008 R2 SP1，SCCM 客户端代理将安装 .Net Framework 4.5.2。 因此，无需安装 .NET framework 4.5 (更高版本) 。
 
 For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
@@ -98,7 +98,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 2. 使用在上一过程中获取的 Workspace ID 和 Workspace 密钥，选择以下任一安装方法将代理安装在Windows服务器上：
     - [使用安装程序 手动安装代理](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。
-    在"**代理设置选项**"页上 **，连接代理设置为 Azure Log Analytics (OMS) 。**
+    在"**代理设置选项**"页上 **，连接代理设置为"Azure Log Analytics (OMS) "。**
     - [使用命令行 安装代理](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
     - [使用脚本 配置代理](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
 
@@ -118,7 +118,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>选项 2：Windows Azure 安全中心载入服务器
 
-在"Microsoft 365 Defender导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
+在"Microsoft 365 Defender"导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
 
 1. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统。
 
@@ -175,7 +175,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
     1. 确认找到包含被动模式事件的最近事件：
 
-       ![被动模式验证结果的图像](images/atp-verify-passive-mode.png)
+       ![被动模式验证结果的图像。](images/atp-verify-passive-mode.png)
 
 3. 运行以下命令检查是否安装了 Microsoft Defender AV：
 
@@ -185,7 +185,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
     如果结果是"指定服务作为已安装服务不存在"，则需要安装 Microsoft Defender AV。 有关详细信息，请参阅 Microsoft Defender 防病毒[中的Windows 10。](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-    有关如何使用组策略配置和管理 Microsoft Defender 防病毒 服务器上Windows组策略的信息，请参阅使用组策略设置配置[和管理](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)Microsoft Defender 防病毒。
+    有关如何使用组策略配置和管理 Microsoft Defender 防病毒 服务器上Windows的信息，[请参阅使用组](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)策略设置配置和管理Microsoft Defender 防病毒。
 
 ## <a name="integration-with-azure-defender"></a>与 Azure Defender 集成
 
@@ -196,15 +196,15 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的Window
 - 自动载入 - 在载入到 Azure Defender 的 Windows 自动启用 Defender for Endpoint 传感器。 有关 Azure Defender 载入详细信息，请参阅使用集成的 [Microsoft Defender for Endpoint 许可证](/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
-    > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展，以支持[Windows Server 2019 和 Windows Virtual Desktop (WVD) ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
+    > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持[Windows Server 2019 和 Windows Virtual Desktop (WVD) 。 ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows Azure Defender 监视的服务器也将在 Defender for Endpoint 中可用 - Azure Defender 无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。 此外，适用于终结点的 Defender 警报将在 Azure Defender 控制台中提供。
+- Windows受 Azure Defender 监视的服务器也将在 Defender for Endpoint 中可用 - Azure Defender 无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。 此外，适用于终结点的 Defender 警报将在 Azure Defender 控制台中提供。
 
 - 服务器调查 - Azure Defender 客户可以访问Microsoft 365 Defender执行详细调查，以发现潜在泄露的范围。
 
 > [!IMPORTANT]
 >
-> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (、欧盟为欧洲用户和英国用户创建 Defender for Endpoint) 。
+> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲和英国用户创建 Defender for Endpoint) 。
 Defender for Endpoint 收集的数据存储在预配期间标识的租户地理位置中。
 > - 如果在使用 Azure Defender 之前使用 Defender for Endpoint，数据将存储在创建租户时指定的位置，即使以后与 Azure Defender 集成。
 > - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。
@@ -213,11 +213,11 @@ Defender for Endpoint 收集的数据存储在预配期间标识的租户地理�
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>配置和更新System Center Endpoint Protection客户端
 
-Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提供了恶意软件检测的可见性，并禁止潜在恶意文件或可疑恶意软件，从而停止攻击在组织中传播。
+Defender for Endpoint 与 System Center Endpoint Protection。 集成提供了恶意软件检测的可见性，并禁止潜在恶意文件或可疑恶意软件，从而停止攻击在组织中传播。
 
 若要启用此集成，需要执行以下步骤：
 
-- 为客户端[安装 2017 年 1 月Endpoint Protection更新](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)。
+- 为客户端[安装 2017](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)年 1 月Endpoint Protection更新。
 
 - [将 SCEP 客户端云保护服务成员身份配置为](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)**高级** 设置。
 
@@ -227,14 +227,14 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 
 ## <a name="offboard-windows-servers"></a>载出Windows服务器
 
-您可以使用适用于 Windows 10 客户端设备的相同方法从 Windows Server (SAC) 、Windows Server 2019 和 Windows Server 2019 Core 版本上离开。
+可以使用适用于 Windows 10 客户端设备的相同方法从 Windows Server (SAC) 、Windows Server 2019 和 Windows Server 2019 Core 版本上离开。
 
 - [使用组策略的载出](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [使用 Configuration Manager 的载出设备](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
 - [使用移动设备管理工具离开并监视设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
-对于其他Windows版本，有两个选项Windows从服务中离开服务器：
+对于其他Windows版本，有两个选项可以Windows服务器：
 
 - 卸载 MMA 代理
 - 删除 Defender for Endpoint 工作区配置
@@ -244,12 +244,12 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 
 ### <a name="uninstall-windows-servers-by-uninstalling-the-mma-agent"></a>通过Windows MMA 代理卸载服务器
 
-若要卸载Windows，你可以从服务器卸载 MMA Windows或将其从报告分离到 Defender for Endpoint 工作区。 在离开代理后，Windows服务器将不再将传感器数据发送到 Defender for Endpoint。
+若要卸载Windows服务器，你可以从 Windows 服务器卸载 MMA 代理，或将其从报告分离到 Defender for Endpoint 工作区。 从代理上离开后，Windows服务器将不再将传感器数据发送到 Defender for Endpoint。
 有关详细信息，请参阅禁用 [代理](/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent)。
 
 ### <a name="remove-the-defender-for-endpoint-workspace-configuration"></a>删除 Defender for Endpoint 工作区配置
 
-若要从Windows服务器，可以使用下列方法之一：
+若要将Windows服务器，可以使用下列方法之一：
 
 - 从 MMA 代理中删除 Defender for Endpoint 工作区配置
 - 运行 PowerShell 命令以删除配置
@@ -260,17 +260,17 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 
 2. 选择"适用于终结点的 Defender"工作区，然后单击"删除 **"。**
 
-    ![属性Microsoft Monitoring Agent图像](images/atp-mma.png)
+    ![属性Microsoft Monitoring Agent的图像。](images/atp-mma.png)
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>运行 PowerShell 命令以删除配置
 
 1. 获取工作区 ID：
 
-   1. 在"Microsoft 365 Defender导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
+   1. 在"Microsoft 365 Defender"导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
 
    1. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统并获取工作区 ID：
 
-      ![服务器Windows映像](images/atp-server-offboarding-workspaceid.png)
+      ![服务器Windows映像。](images/atp-server-offboarding-workspaceid.png)
 
 2. 打开提升的 PowerShell 并运行以下命令。 使用你获取的工作区 ID 并替换 `WorkspaceID` ：
 
@@ -301,9 +301,9 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
     [For Windows 2012 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=94cf6d85-017a-4c4c-afca-7d00721b500f)
 
     > [!NOTE]
-    > 本文假定你正在使用基于 x64 的服务器 (MMA 代理.exe x64 [新 SHA-2](https://go.microsoft.com/fwlink/?LinkId=828603) 兼容版本) 
+    > 本文假定你正在使用基于 x64 的服务器 (MMA 代理.exe x64 [新 SHA-2](https://go.microsoft.com/fwlink/?LinkId=828603) 兼容) 
 
-**步骤 2：使用记事本工具 (DeployMMA.cmd**) 将以下行添加到 cmd 文件。 请注意，你将需要工作区 ID 和密钥。
+**步骤 2：使用记事本工具创建 (DeployMMA.cmd)** 将以下行添加到 cmd 文件。 请注意，你将需要工作区 ID 和密钥。
 
 ```dos
 @echo off
@@ -325,28 +325,28 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 - 创建名为"c：\windows\MMA"的组策略文件夹
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="文件夹。":::
 
     **这将在应用 GPO 的每台服务器上添加新文件夹（称为 MMA）并存储在 c：\windows 中。这将包含 MMA 的安装文件、必备组件和安装脚本。**
 
 - 为存储在 Net 登录中的每个文件创建组策略文件首选项。
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="组策略图像 1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="组策略图像 1。":::
 
 它将文件从 DOMAIN\NETLOGON\MMA\filename 复制到 C：\windows\MMA\filename ，因此安装文件是服务器 **的本地文件**：
 
-:::image type="content" source="images/deploymma.png" alt-text="部署 mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="部署 mma cmd。":::
 
 对于两个 KB (一个针对 Windows Server 2008R2/Windows 7，另一个针对 Windows Server 2012 R2) 重复此过程，但在"COMMON"选项卡上创建项目级别目标，因此文件仅复制到作用域中的相应平台/操作系统版本：
 
-:::image type="content" source="images/targeteditor.png" alt-text="目标编辑器":::
+:::image type="content" source="images/targeteditor.png" alt-text="目标编辑器。":::
 
 - 对于 Windows Server 2008 R2，你需要 (并且它将仅向下复制) Windows6.1-BJ3080149-x64.msu
 - For Windows Server 2012 R2 you need (and it will only copy down) Windows8.1-BJ3080149-x64.msu
 
 完成此操作后，你需要创建启动脚本策略：
 
-:::image type="content" source="images/startupprops.png" alt-text="启动属性":::
+:::image type="content" source="images/startupprops.png" alt-text="启动属性。":::
 
 要在此处运行的文件的名称为 c：\windows\MMA\DeployMMA.cmd。
 在启动过程中重新启动服务器后，它将安装客户体验更新和诊断遥测 KB，然后安装 MMA 代理，同时设置工作区 ID 和密钥，并且将载入服务器。
@@ -356,13 +356,13 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 由于脚本具有退出方法，并且如果安装了 MMA，则将不会重新运行，因此，您还可以使用每日计划任务来实现相同的结果。 与 Configuration Manager 合规性策略类似，它每天都会检查以确保 MMA 存在。
 
-:::image type="content" source="images/schtask.png" alt-text="计划任务":::
+:::image type="content" source="images/schtask.png" alt-text="计划任务。":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="新任务属性":::
+:::image type="content" source="images/newtaskprops.png" alt-text="新任务属性。":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="部署 mma 下载属性":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="部署 mma 下载属性。":::
 
-:::image type="content" source="images/tasksch.png" alt-text="任务计划程序":::
+:::image type="content" source="images/tasksch.png" alt-text="任务计划程序。":::
 
 如 Server 的载入文档中提及，特别是围绕 Server 2008 R2，请参阅以下内容：
 
@@ -372,7 +372,7 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 - 安装 [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本) [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-在载入 Windows Server 2008 R2 之前，请检查这些 KB 是否存在 此过程允许你在没有配置管理器管理服务器时载入所有服务器。
+在载入 Windows Server 2008 R2 之前，请检查这些 KB 是否存在：如果您没有配置管理器管理服务器，则此过程允许你载入所有服务器。
 
 ## <a name="related-topics"></a>相关主题
 

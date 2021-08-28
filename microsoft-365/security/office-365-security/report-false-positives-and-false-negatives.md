@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何使用"报告邮件"功能在Outlook报告误报和漏报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0e69b16167ff796b68a2eea492a4dea180a4fb7
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 34afd8d8e15bc301f42850763d39e1846a66e6d4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400363"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563482"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>在 Outlook 中报告误报和漏报
 
@@ -30,7 +30,7 @@ ms.locfileid: "58400363"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是具有邮箱的 Microsoft 365 组织的管理员Exchange Online，我们建议你使用 Microsoft 365 Defender 门户中的提交页面。  有关详细信息，请参阅使用提交门户将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有邮箱的 Microsoft 365 组织的管理员Exchange Online，我们建议使用 Microsoft 365 Defender 门户中的"提交"页面。  有关详细信息，请参阅使用提交门户将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 在 Microsoft 365 组织中，邮箱位于 Exchange Online 或本地邮箱使用混合新式身份验证，你可以提交误报 (被阻止或发送到垃圾邮件文件夹) 的误报 (以及传递到) Exchange Online Protection (EOP) 的不需要的电子邮件或网络钓鱼。
 
@@ -41,7 +41,7 @@ ms.locfileid: "58400363"
   > [!IMPORTANT]
   > 报告垃圾邮件或网络钓鱼的内置体验Outlook用户提交[策略](./user-submission.md)。 我们建议改为使用报告邮件外接程序或报告网络钓鱼外接程序。
 
-- 报告邮件外接程序和 Report Phishing 外接程序适用于 Outlook、iOS、Android 和桌面 (Outlook 网页版平台中的) 。
+- 报告邮件外接程序和报告网络钓鱼外接程序适用于所有平台 Outlook、iOS、Android 和桌面 (Outlook 网页版、) 。
 
 - 如果你是具有邮箱的组织的管理员，Exchange Online门户中的提交Microsoft 365 Defender门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
@@ -59,9 +59,9 @@ ms.locfileid: "58400363"
 
 1. 选择 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中选择"报告邮件"，然后选择"**垃圾邮件**"或"网络钓鱼 **"。**
 
-   ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
+   ![报告邮件 - 更多操作。](../../media/report-message-more-actions.png)
 
-   ![报告邮件 - 垃圾邮件和网络钓鱼](../../media/report-message-junk-phishing.png)
+   ![报告邮件 - 垃圾邮件和网络钓鱼。](../../media/report-message-junk-phishing.png)
 
 2. 选定的邮件将发送给 Microsoft 进行分析，并：
    - 如果报告为垃圾邮件，则移动到"垃圾邮件"文件夹。
@@ -71,9 +71,9 @@ ms.locfileid: "58400363"
 
 1. 选择 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中选择"报告邮件"，然后选择"非 **垃圾邮件"。**
 
-   ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
+   ![报告邮件 - 更多操作。](../../media/report-message-more-actions.png)
 
-   ![报告邮件 - 非垃圾邮件](../../media/report-message-not-junk.png)
+   ![报告邮件 - 非垃圾邮件。](../../media/report-message-not-junk.png)
 
 2. 选定的邮件将被发送到 Microsoft 进行分析，并移动到收件箱或其他任何指定的文件夹。
 

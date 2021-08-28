@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd56ab7daef91fb06aca8bc9d60213877b9696b8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: f9fbeb7d0fbaee05e86c89749ffc62695e8ff9e9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507754"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563590"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -104,11 +104,11 @@ PUA (可能不需要的应用程序) 是一类软件，可能会导致你的计�
 
 若要打开 **"允许"或"阻止** 文件"：：
 
-1. 在导航窗格中，**选择"设置** \>  \> **终结点""常规** \> **高级功能** \> **""允许"或"阻止文件"。**
+1. 在导航窗格中，选择"设置 \>  \> **终结点""常规** \> **高级功能** \> **""允许"或"阻止文件"。**
 
 1. 切换开和 **关****之间的设置**。
-
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="阻止文件功能的高级设置的图像":::
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="阻止文件功能的高级设置的图像。":::
 
 1. 选择 **页面底部的** "保存首选项"。
 
@@ -146,10 +146,10 @@ PUA (可能不需要的应用程序) 是一类软件，可能会导致你的计�
 
 ## <a name="skype-for-business-integration"></a>Skype for Business 集成
 
-启用Skype for Business集成后，你能够使用 Skype for Business、电子邮件或电话与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
+通过启用Skype for Business集成，可以使用电子邮件、Skype for Business或电话与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
 
 > [!NOTE]
-> 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许用户在断开与网络的连接时与其通信。 此设置适用于设备在Skype Outlook时的通信和通信。
+> 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许在用户与网络断开连接时与用户通信。 此设置适用于设备在Skype Outlook时的通信和通信。
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity 集成
 
@@ -160,7 +160,7 @@ PUA (可能不需要的应用程序) 是一类软件，可能会导致你的计�
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365威胁智能连接
 
-此功能仅在你拥有活动加载项或威胁Office 365 E5时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
+此功能仅在你具有活动状态Office 365 E5或威胁智能加载项时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页。
 
 启用此功能后，你将能够将 Microsoft Defender for Office 365 数据合并到 Microsoft 365 Defender 中，以便跨 Office 365 邮箱和 Windows 设备进行全面安全调查。
 
@@ -174,14 +174,14 @@ PUA (可能不需要的应用程序) 是一类软件，可能会导致你的计�
 在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 如果你已申请预览，并且你的应用程序已获得批准，你只能使用专家按需功能。 可以通过 Defender for Endpoint 门户的警报仪表板Microsoft 威胁专家接收来自你的终结点门户的定向攻击通知（如果已配置的话）。
 
 > [!NOTE]
-> Defender Microsoft 威胁专家 终结点中的 企业移动性 + 安全性 功能随 E5[许可证一起企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Defender for Endpoint Microsoft 威胁专家 的 Microsoft 威胁专家 功能随适用于 企业移动性 + 安全性 的 E5[许可证一企业移动性 + 安全性。](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 启用此设置将 Defender for Endpoint 信号转发到Microsoft Cloud App Security深入了解云应用程序使用情况。 转发数据的存储和处理位置与转发数据云应用安全位置。
 
 > [!NOTE]
-> 此功能将在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（KB4493441 版本 16299.1085）的设备上随 企业移动性 + 安全性 一起) 。 Windows 10，版本 1803 (OS 内部版本 17134.704（带[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10 版本 1809 (OS 内部版本 17763.379 [KB4489899](https://support.microsoft.com/help/4489899)) 或更高版本 Windows 10）。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) [](https://support.microsoft.com/help/4493441)
+> 在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上，此功能将随 企业移动性 + 安全性 的 E5 许可证一) 。 Windows 10，版本 1803 (OS 内部版本 17134.704（带[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10 版本 1809 (OS 内部版本 17763.379，KB4489899) 或更高版本Windows 10）。 [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) [](https://support.microsoft.com/help/4489899)
 
 ## <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -219,7 +219,7 @@ Defender for Endpoint 可以[](/intune/what-is-intune)与 Microsoft Intune[集�
 
 此功能仅在具有以下功能时可用：
 
-- 适用于 E5 企业移动性 + 安全性 E3或 Windows E5 (或 Microsoft 365 企业版 的许可) 
+- 许可租户，适用于 企业移动性 + 安全性 E3 E5 Windows E5 (或 Microsoft 365 企业版 E5) 
 - 一个Microsoft Intune环境，与已加入 Azure AD Windows 10 [Intune 托管的设备](/azure/active-directory/devices/concept-azure-ad-join/)。
 
 ### <a name="conditional-access-policy"></a>条件访问策略
