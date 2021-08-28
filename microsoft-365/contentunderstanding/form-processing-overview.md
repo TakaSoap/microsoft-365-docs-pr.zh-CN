@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表单处理。
-ms.openlocfilehash: 6914cf4a8427f505bf39e2b157beb0dbfee0336d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7a411a4150f09d62ae539ca35dee05df201e707c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399715"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58561166"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的表单处理概述
 
- ![AI 生成器](../media/content-understanding/ai-builder.png)</br>
+ ![AI 生成器。](../media/content-understanding/ai-builder.png)</br>
 
 Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builder/overview) 表单处理在 SharePoint 文档库中创建模型。
 
@@ -35,7 +35,7 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builde
 
 例如，可以创建一个表单处理模型来标识上传到文档库的所有采购订单文档。 可从每个采购订单提取并显示对你非常重要的特定数据，如 *PO 编号*、 *日期* 或 *总成本*。
 
-![文档库视图](../media/content-understanding/doc-lib-done.png)</br>  
+![文档库视图。](../media/content-understanding/doc-lib-done.png)</br>  
 
 你可以使用示例文件来训练模型，并定义将从表单提取的信息。 文档的布局通过培训你的模型获知。 只需 5 个表单文档即可开始操作。 AI 生成器将分析示例文件中的键 - 值对，你也可以手动识别可能没有检测到的键 - 值对。  可通过 AI 生成器测试示例文件的模型准确性。
 

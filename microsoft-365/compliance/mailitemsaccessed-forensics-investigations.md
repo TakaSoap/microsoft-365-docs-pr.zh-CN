@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: b168cc25afc1a21044d00eb2dece1cee4da5f9cb6b7c70ecea05874ad6fcefd4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b0fac6e4ac5d6cc4bb20b6853cb67cf301c6295a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565992"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -194,7 +194,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 例如，在下面的屏幕截图中显示的审计记录中，尽管我们同时访问来自 EWSEditor 和 OWA 的邮件，但根据访问发生的上下文，在不同的审核记录中整理访问活动。在这种情况中，上下文通过 ClientInfoString 属性的不同值确定。
 
-![基于上下文的不同审核记录](../media/MailItemsAccessed4.png)
+![基于上下文的不同审核记录。](../media/MailItemsAccessed4.png)
 
 下面是上一屏幕截图中所显示的命令语法：
 

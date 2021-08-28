@@ -20,12 +20,12 @@ ms.custom: ''
 localization_priority: Priority
 recommendations: false
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: fbbf5630938c89d71a0b09c21cb1f1b2360faa510109796b44b354daa4b878cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba7bd7796e0c70b91f7f1c5073e8f51cd5d778be
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827890"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569269"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -71,7 +71,7 @@ ms.locfileid: "53827890"
 3. 取消选中“**允许组织外部的组成员访问组内容**”和“**允许组所有者将组织外部的人员添加到组**”复选框。
 4. 单击“**保存更改**”。
 
-    ![Microsoft 365 管理中心中内的 Microsoft 365 组共享设置的屏幕截图](../media/office-365-groups-guest-settings-off.png)
+    ![Microsoft 365 管理中心中内 Microsoft 365 组共享设置的屏幕截图。](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > 如果想要阻止特定组或团队的来宾共享，可使用 [Microsoft PowerShell](per-group-guest-access.md) 或[敏感性标签](../compliance/sensitivity-labels-teams-groups-sites.md)来执行此操作。
@@ -84,7 +84,7 @@ ms.locfileid: "53827890"
 3. 在“**协作限制**”下，选择“**拒绝向指定域发出邀请**”或“**仅允许向指定域发出邀请**”，然后键入要使用的域。
 4. 单击“**保存**”。
 
-    ![Azure Active Directory 中的协作限制设置的屏幕截图](../media/azure-ad-allow-only-specified-domains.png)
+    ![Azure Active Directory 中的协作限制设置的屏幕截图。](../media/azure-ad-allow-only-specified-domains.png)
 
 ## <a name="sharepoint-site"></a>SharePoint 网站
 
@@ -96,7 +96,7 @@ ms.locfileid: "53827890"
 3. 选择“**网站所有者和成员以及拥有编辑权限的人员可共享文件和文件夹，但只有网站所有者才可共享网站**”。
 4. 单击“**保存**”。
 
-    ![SharePoint 网站中共享权限设置的屏幕截图](../media/sharepoint-site-sharing-permissions-level-two.png)
+    ![SharePoint 网站中共享权限设置的屏幕截图。](../media/sharepoint-site-sharing-permissions-level-two.png)
 
 可通过关闭访问请求来阻止不是网站成员的用户请求访问。
 
@@ -115,7 +115,7 @@ ms.locfileid: "53827890"
 5. 添加你想要允许或阻止的域，然后单击“**保存**”。
 6. 单击“**保存**”。
 
-    ![允许的域网站级别设置的屏幕截图](../media/limit-site-sharing-by-domain.png)
+    ![允许的域网站级别设置的屏幕截图。](../media/limit-site-sharing-by-domain.png)
 
 ### <a name="block-access-to-a-site"></a>阻止访问网站
 
@@ -135,7 +135,7 @@ ms.locfileid: "53827890"
 3. 选择“**只有站点所有者可共享文件、文件夹和站点**”。
 4. 单击“**保存**”。
 
-    ![将 SharePoint 网站中共享权限设置设为仅限所有者的屏幕截图](../media/sharepoint-site-only-site-owners-can-share.png)
+    ![将 SharePoint 网站中共享权限设置设为仅限所有者的屏幕截图。](../media/sharepoint-site-only-site-owners-can-share.png)
 
 ## <a name="sharepoint-guest-sharing"></a>SharePoint 来宾共享
 
@@ -146,7 +146,7 @@ ms.locfileid: "53827890"
 2. 在“**外部共享**”下，将 SharePoint 滑块向下拖动到“**仅限组织中的人员**”。
 3. 单击“**保存**”。
 
-    ![将 SharePoint 组织级别共享设置设为面向所有人的屏幕截图](../media/sharepoint-tenant-sharing-off.png)
+    ![将 SharePoint 组织级别共享设置设为面向所有人的屏幕截图。](../media/sharepoint-tenant-sharing-off.png)
 
 
 针对网站关闭来宾共享
@@ -155,7 +155,7 @@ ms.locfileid: "53827890"
 3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 4. 在“**外部共享**”下，选择“**仅限组织中的人员**”，然后单击“**保存**”。
 
-    ![将 SharePoint 网站级别共享设置设为仅面向组织中的人员的屏幕截图](../media/sharepoint-site-external-sharing-settings-off.png)
+    ![将 SharePoint 网站级别共享设置设为仅面向组织中的人员的屏幕截图。](../media/sharepoint-site-external-sharing-settings-off.png)
 
 你可以单击 Microsoft 365 管理中心中的用户，然后选择 **OneDrive** 选项卡上的 **管理外部共享** 来关闭个人 OneDrive 的来宾共享。
 
@@ -166,7 +166,7 @@ ms.locfileid: "53827890"
 2. 在“**外部共享**”下，将 SharePoint 滑块向下拖动到“**新来宾和现有来宾**”。
 3. 单击“**保存**”。
 
-    ![将 SharePoint 组织级别共享设置设为面向新来宾和现有来宾的屏幕截图](../media/sharepoint-guest-sharing-new-existing-guests.png)
+    ![将 SharePoint 组织级别共享设置设为面向新来宾和现有来宾的屏幕截图。](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 关闭站点的 *“任何人”* 链接
 1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
@@ -174,7 +174,7 @@ ms.locfileid: "53827890"
 3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 4. 在“**外部共享**”下，选择“**新来宾和现有来宾**”，然后单击“**保存**”。
 
-    ![将 SharePoint 网站级别共享设置设为面向新设置和现有设置的屏幕截图](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
+    ![将 SharePoint 网站级别共享设置设为面向新设置和现有设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
 ## <a name="people-in-your-organization-sharing-links"></a>*你组织中的人员* 共享链接
 

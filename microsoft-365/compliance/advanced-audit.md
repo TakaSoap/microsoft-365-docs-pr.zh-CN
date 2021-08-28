@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 7671bcc99a0f1ab205312fe0aa6930255ae6cfa1
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
+ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565502"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -90,7 +90,7 @@ MailItemsAccessed 邮箱操作替代 Exchange Online 邮箱审核日志中的 Me
 
 若要搜索 MailItemsAccessed 审核记录，可以在 Microsoft 365 合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“Exchange 邮箱活动”** 下拉列表中，搜索 **“访问的邮箱项目”** 活动。
 
-![在审核日志搜索工具中搜索 MailItemsAccessed 操作](../media/AdvAudit_MailItemsAccessed.png)
+![在审核日志搜索工具中搜索 MailItemsAccessed 操作。](../media/AdvAudit_MailItemsAccessed.png)
 
 此外，还可在 Exchange Online PowerShell 中运行 [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) 命令。
 
@@ -108,7 +108,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 若要搜索 Send 审核记录，可到 Microsoft 365 合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“Exchange 邮箱活动”** 下拉列表中，搜索 **“已发送邮件”** 活动。
 
-![在审核日志搜索工具中搜索“已发送邮件”操作](../media/AdvAudit_SentMessage.png)
+![在审核日志搜索工具中搜索“已发送邮件”操作。](../media/AdvAudit_SentMessage.png)
 
 此外，还可在 Exchange Online PowerShell 中运行 [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) 命令。
 
@@ -130,7 +130,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 若要搜索 SearchQueryInitiatedExchange 审核记录，可到合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的电子邮件搜索”** 活动。
 
-![在审核日志搜索工具中搜索“已执行的电子邮件搜索”操作](../media/AdvAudit_SearchExchange.png)
+![在审核日志搜索工具中搜索“已执行的电子邮件搜索”操作。](../media/AdvAudit_SearchExchange.png)
 
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog)。
 
@@ -153,7 +153,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 若要搜索 SearchQueryInitiatedSharePoint 审核记录，可到合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的 SharePoint 搜索”** 活动。
 
-![在审核日志搜索工具中搜索“已执行的 SharePoint 搜索”操作](../media/AdvAudit_SearchSharePoint.png)
+![在审核日志搜索工具中搜索“已执行的 SharePoint 搜索”操作。](../media/AdvAudit_SearchSharePoint.png)
 
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 

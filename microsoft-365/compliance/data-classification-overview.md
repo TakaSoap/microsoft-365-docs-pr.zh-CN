@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 367b37493b22074ca4d8006c8d8f8067c2b3d29b
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 41dda8573b66fa217fb92b0ee179de2cad9bc861
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450112"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567468"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -73,14 +73,14 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 敏感信息类型卡片显示了在整个组织中找到并标记的最常用敏感信息类型。
 
-![最常用敏感信息类型](../media/data-classification-sens-info-types-card.png)
+![最常用敏感信息类型。](../media/data-classification-sens-info-types-card.png)
 
-若要了解任何给定分类类别中的项目数量，请将鼠标悬停在该类别的栏上。
+要了解任何给定分类类别中的项目数量，请将鼠标悬停在该类别的栏上。
 
-![最常用敏感信息类型悬停详细信息](../media/data-classification-sens-info-types-hover.png)
+![最常用敏感信息类型悬停详细信息。](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> 如果卡片显示消息“找不到包含敏感信息的数据”，则表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。 要开始使用标签，请参阅：
+> 如果卡片显示消息“找不到包含敏感信息的数据”，则表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。要开始使用标签，请参阅：
 >- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)
 >- [开始使用保留策略和保留标签](get-started-with-retention.md)
 >- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
@@ -98,7 +98,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 敏感度标签卡片按敏感度级别显示项目（电子邮件或文档）的数量。
 
-![按敏感度标签分类占位符屏幕快照对内容进行细分](../media/data-classification-top-sensitivity-labels-applied.png)
+![按敏感度标签分类占位符屏幕快照对内容进行细分。](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。若要开始使用敏感度标签，请参阅：
@@ -110,7 +110,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 “应用最多的保留标签”卡片显示具有给定保留标签的项目数量。
 
-![应用最多的保留标签占位符屏幕快照](../media/data-classification-top-retention-labels-applied.png)
+![应用最多的保留标签占位符屏幕截图。](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > 如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。要开始使用保留标签，请参阅：

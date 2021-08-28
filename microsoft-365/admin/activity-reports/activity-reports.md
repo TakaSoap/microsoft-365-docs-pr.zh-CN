@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 91800483b5a40e028eb71a03d190fd262f4ce3c1cd71d262ca31dcbd8867d833
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798230"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565192"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -59,7 +59,7 @@ ms.locfileid: "53798230"
 
 ::: moniker-end
 
-2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)。 
 
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
@@ -159,7 +159,7 @@ ms.locfileid: "53798230"
   
 你的用户列表将如下所示：
   
-![报告 - 匿名用户列表](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![报告 - 匿名用户列表。](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 这些更改将在几分钟之后在报表仪表板中的报表上生效。此设置也适用于报表 API。
   

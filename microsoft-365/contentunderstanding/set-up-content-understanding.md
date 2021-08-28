@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 设置 SharePoint Syntex
-ms.openlocfilehash: b856cafb7c2be292ed912fc94329ae6f3f23bb5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257101"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58552884"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -64,7 +64,7 @@ ms.locfileid: "58257101"
 3. 在 **自动理解内容** 页面上，单击 **开始**， 以逐步完成设置流程。 <br/>
 
     > [!div class="mx-imgBorder"]
-    > ![开始设置](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > ![开始设置。](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. 在 **配置表单处理** 页面上，可选择是否希望用户能够在特定的 SharePoint 文档库中创建表单处理模型。 在文档库功能区中存在一个菜单选项，以便在已启用该功能的SharePoint文档库中 **创建表单处理模型**。
  
@@ -74,14 +74,14 @@ ms.locfileid: "58257101"
       - 如果不希望对任何网站提供 **SharePoint 库**，则不需要SharePoint库（可在设置后更改）。
 
    > [!div class="mx-imgBorder"]
-   > ![配置表单处理网站选项](../media/content-understanding/admin-configforms.png)
+   > ![配置表单处理网站选项。](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 在收录一个站点后，删除该站点不会影响应用于该站点中的库的现有模型，也不会影响将文档理解模型应用于库的能力。 
     
     如果配置了多个 Power Platform 环境，可以选择希望使用哪一个进行表单处理。 （如果只有一个环境，则将不显示此选项。）
 
-    ![配置表单处理 Power Platform 选项](../media/content-understanding/setup-power-platform-env.png)
+    ![配置表单处理 Power Platform 选项。](../media/content-understanding/setup-power-platform-env.png)
 
     对于 **Power Platform 环境**，可以选择：
     - **使用默认环境** 以使用默认 Power Platform 环境。
@@ -96,7 +96,7 @@ ms.locfileid: "58257101"
     1. **站点地址** 将显示站点的 URL，具体取决于所选择的站点名称。 若想改变它，请点击 **编辑**。
 
        > [!div class="mx-imgBorder"]
-       > ![创建内容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
+       > ![创建内容中心。](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        选择 **下一步**。
 
@@ -121,7 +121,7 @@ ms.locfileid: "58257101"
 4. 选择“**显示 SharePoint Syntex 相关应用**”。 在“**应用**”下，确保“**面向 SharePoint Syntex 的 Common Data Service**”、“**SharePoint Syntex**”和“**SharePoint Syntex - SPO 类型**”都已选中。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 管理中心的 SharePoint Syntex 许可证](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![Microsoft 365 管理中心的 SharePoint Syntex 许可证。](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. 单击 **保存更改**。
 

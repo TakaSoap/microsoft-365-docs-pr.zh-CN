@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 修正应用威胁。
-ms.openlocfilehash: 3b84594aa990516b6ecb340d6b8ffbd8d6d1a544c9c1e3dddeb691044e221424
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 103616c9bee47455b75e0750194d876fc7a13600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53836421"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564226"
 ---
 # <a name="remediate-app-threats"></a>修正应用威胁
 
@@ -27,11 +27,11 @@ ms.locfileid: "53836421"
 
 你可以通过 Microsoft 365 合规中心 Microsoft 应用治理部分的“**警报**”页面修正对 Microsoft 365 租户的应用威胁。
 
-![Microsoft 365 合规中心内的应用治理警报摘要页面](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Microsoft 365 合规中心内的应用治理警报摘要页面。](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 默认情况下，“**警报**”页面会列出由应用治理生成的新威胁警报以及由活动应用策略生成的基于策略的警报。 你可以选择特定警报来查看其详细信息，这会打开一个警报窗格，其中包含附加警报信息，并且可以更改警报的状态。
 
-![Microsoft 365 合规中心内的应用治理警报详细信息页面](..\media\manage-app-protection-governance\mapg-cc-alerts-alert.png)
+![Microsoft 365 合规中心内的应用治理警报详细信息页面。](..\media\manage-app-protection-governance\mapg-cc-alerts-alert.png)
 
 在此窗格中，你可以获得以下附加信息：
 

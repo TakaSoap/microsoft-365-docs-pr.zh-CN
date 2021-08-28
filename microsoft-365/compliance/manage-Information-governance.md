@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
-ms.openlocfilehash: 75407c8633698d59cf571edcee7e5ed581729bc8a218f5bc45decfe3ac66d307
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7bbeefc07da1f620f8b22484ad399f87bb45f74e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569773"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息治理
 
@@ -28,7 +28,7 @@ ms.locfileid: "53801432"
 
 使用 Microsoft 信息管理（有时缩写为 MIG）功能来管理数据，以满足合规性或监管要求。
 
-![管理数据 - 信息治理和记录管理](../media/information-governance-records-management.png)
+![管理数据 - 信息治理和记录管理。](../media/information-governance-records-management.png)
 
 需要保护数据？ 请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
 

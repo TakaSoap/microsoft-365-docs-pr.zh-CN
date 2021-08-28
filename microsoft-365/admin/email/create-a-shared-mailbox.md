@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 05bb73269d78c08de3345ab001d12892960e30bf35c7ef43772212fc200ff435
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826255"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566312"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -95,11 +95,11 @@ ms.locfileid: "53826255"
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>使用 EAC 编辑共享邮箱委派
 
-1. 在 EAC 中，转到 **共享** \> **的**。 选择共享邮箱，然后选择" **编辑** ![图标或](../../media/ITPro-EAC-EditIcon.png)。
+1. 在 EAC 中，转到 **共享** \> **的**。 选择共享邮箱，然后选择“**编辑**”“![编辑图标](../../media/ITPro-EAC-EditIcon.png)”。
 
-2. 选择 **委派**。
+2. 选择“**邮箱委派**”。
 
-3. 若要授予或删除"完全访问"和"发送为"权限，请选择 **"添加** ![添加图标](../../media/ITPro-EAC-AddIcon.png) 或 **删除** ![删除图标](../../media/ITPro-EAC-RemoveIcon.gif) ，然后选择要授予权限的用户。
+3. 要授予或删除完全访问和发送为权限，请选择“**添加**”“![添加图标](../../media/ITPro-EAC-AddIcon.png)”或“**删除**”“![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)”，然后选择要授予权限的用户。
 
    > [!NOTE]
    > “完全访问”权限允许用户打开邮箱，以及创建和修改其中的项目。“代理发送”权限允许除邮箱所有者以外的任何人从该共享邮箱发送电子邮件。这两个权限是成功操作共享邮箱所必需的。
@@ -132,7 +132,7 @@ ms.locfileid: "53826255"
 
 1. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
 
-1. 选择该用户以打开其属性窗格，然后 选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图](../../media/block-user-icon.png)。
+1. 选择该用户以打开其属性窗格，然后选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图。](../../media/block-user-icon.png)。
 
    **注意**：如果已阻止该帐户，则将在顶部显示“**已阻止登录**”，并且图标将显示“**取消阻止此用户**”。
 

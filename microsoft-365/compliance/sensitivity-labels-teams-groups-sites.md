@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 8c78cf0f8ff49d2b81533e064a16089d8fe75d15
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400399"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58569029"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -50,11 +50,11 @@ ms.locfileid: "58400399"
 
 在你为容器启用敏感度标签并为新设置配置敏感度标签之前，用户可在其应用中查看和应用敏感度标签。例如，从 Word 应用中：
 
-![Word 桌面应用中显示的敏感度标签](../media/sensitivity-label-word.png)
+![Word 桌面应用程序中显示的敏感度标签。](../media/sensitivity-label-word.png)
 
 为容器启用并配置敏感度标签后，用户还可查看敏感度标签并将其应用于 Microsoft 团队网站、Microsoft 365 组和 SharePoint 网站。 例如，在从 SharePoint 创建新的团队网站时：
 
-![从 SharePoint 中创建团队网站时使用的敏感度标签](../media/sensitivity-labels-new-team-site.png)
+![从 SharePoint 中创建团队网站时使用的敏感度标签。](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>如何为容器启用敏感度标签和同步标签
 
@@ -78,7 +78,7 @@ ms.locfileid: "58400399"
 
 1. 请遵循一般说明来 [创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择“**组和网站**”： 
     
-    ![文件和电子邮件的敏感度标签作用域选项](../media/groupsandsites-scope-options-sensitivity-label.png)
+    ![文件和电子邮件的敏感度标签范围选项。](../media/groupsandsites-scope-options-sensitivity-label.png)
     
     如果仅为标签选择此范围，则该标签将不会在支持敏感度标签的 Office 应用中显示，也无法应用于文件和电子邮件。 分隔标签对于用户和管理员都将有所帮助，但也会增加标签部署的复杂性。
     
@@ -241,11 +241,11 @@ ms.locfileid: "58400399"
 
 [了解有关 Teams 的敏感度标签的详细信息](/microsoftteams/sensitivity-labels)
 
-![创建新团队时使用的隐私设置](../media/privacy-setting-new-team.png)
+![创建新团队时使用的隐私设置。](../media/privacy-setting-new-team.png)
 
 创建团队后，敏感度标签将显示在所有频道的右上角。
 
-![敏感度标签将显示在团队上](../media/privacy-setting-teams.png)
+![敏感度标签将显示在团队上。](../media/privacy-setting-teams.png)
 
 该服务会自动将相同的敏感度标签应用于 Microsoft 365 组和连接的 SharePoint 团队网站。
 
@@ -253,19 +253,19 @@ ms.locfileid: "58400399"
 
 在 Outlook 网页版中，创建新组时可选择或更改已发布的标签的“**敏感度**”选项：
 
-![创建组并选择“敏感度”下的选项](../media/sensitivity-label-new-group.png)
+![创建组并选择“敏感度”下的选项。](../media/sensitivity-label-new-group.png)
 
 ### <a name="apply-a-sensitivity-label-to-a-new-site"></a>为新网站应用敏感度标签
 
 管理员和最终用户可以在[创建新式团队网站和通信网站时](/sharepoint/create-site-collection)选择敏感度标签，并展开“高级设置”：
 
-![创建网站并在“敏感度”下选择一个选项](../media/sensitivity-label-new-communication-site.png)
+![创建网站并选择“敏感度”下的选项。](../media/sensitivity-label-new-communication-site.png)
 
 下拉列表框显示选择的标签名称，帮助图标显示所有标签名称及其工具提示，这可帮助用户确定要应用的正确标签。
 
 在标签应用后，当用户浏览网站时，可以看到标签名称和所应用的策略。 例如，此网站标记为“机密”，且隐私设置设为“私有”：
 
-![已应用敏感度标签的网站](../media/sensitivity-label-site.png)
+![已应用敏感度标签的网站。](../media/sensitivity-label-site.png)
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>使用 PowerShell 将敏感度标签应用于多个网站
 
@@ -305,7 +305,7 @@ ms.locfileid: "58400399"
 
 若要查看、排序和搜索已应用的敏感度标签，请使用新 SharePoint 管理中心中的“**活动网站**”页面。 可能需要先添加“**敏感度**”列：
 
-![“活动网站”页面上的“敏感度”列](../media/manage-site-sensitivity-labels.png)
+![“活动网站”页面上的“敏感度”列。](../media/manage-site-sensitivity-labels.png)
 
 有关从“活动网站”页面管理网站（包括如何添加列）的详细信息，请参阅[管理新 SharePoint 管理中心中的网站](/sharepoint/manage-sites-in-new-admin-center)。
 

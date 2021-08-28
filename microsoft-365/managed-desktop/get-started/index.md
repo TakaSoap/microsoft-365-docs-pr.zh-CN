@@ -8,12 +8,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 2a817f863102df09c457d759151bfa516f6b2da4
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.openlocfilehash: c8d0c712a0d2e9c575f55041b3182e3c77b2c687
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365114"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575224"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门
 
@@ -24,7 +24,7 @@ ms.locfileid: "58365114"
 
 注册完成后，请按照以下步骤配置服务。 这是推荐的执行顺序，但你也可以进行一些灵活调整。
 
-![本文中列出的建议的入门步骤序列](../../media/mmd-getstarted-sequence.png) 
+![本文中列出的建议的入门步骤序列。](../../media/mmd-getstarted-sequence.png) 
 
 1. 访问 [管理员门户](access-admin-portal.md)。
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。

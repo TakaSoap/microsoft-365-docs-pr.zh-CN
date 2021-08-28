@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: 8a223a49e0fe648dee3bb8c47449538b8f0bfa5614066f4bfecc76e622e1ae65
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567936"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -106,18 +106,18 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 管理员可以在“**概览**”选项卡中查看所有挂起的处置的概述。审阅者只会看到其项目挂起的处置。 例如：
 
-![记录管理概述中的待处置](../media/dispositions-overview.png)
+![记录管理概述中的待处置项](../media/dispositions-overview.png)
 
 选择 **查看所有待处置** 后，则转到 **处置** 页面。 例如：
 
-![Microsoft 365 合规中心内的策略页面](../media/disposition-tab.png)
+![Microsoft 365 合规中心内的处置页面。](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>处置评审的工作流
 
 下图显示了发布保留标签后再由用户手动应用时处置评审的基本工作流。 此外，为处置评审配置的保留标签可自动应用于内容。
   
-![图表显示处置的工作流程](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![显示处置工作流程的图表。](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
 ### <a name="how-to-configure-a-retention-label-for-disposition-review"></a>如何配置处置评审的保留标签
 
@@ -125,11 +125,11 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 来自 **定义保留标签的保留设置** 页面：
 
-![标签的保留设置](../media/disposition-review-option.png)
+![标签的保留设置。](../media/disposition-review-option.png)
  
 选择此“**触发处置评审**”选项后，在向导的下一页上，指定所需的处置连续阶段数以及每个阶段的处置评审：
 
-![指定处置审阅者](../media/disposition-reviewers.png) 
+![指定处置审阅者。](../media/disposition-reviewers.png) 
 
 选择“**添加阶段**”，并对阶段进行命名以方便识别。 然后指定该阶段的审阅者。
 
@@ -144,7 +144,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 在配置阶段，对于指定的每个阶段，可以通过选择阶段操作选项 (**...**) 来对其重命名、重新排序或将其删除： 
 
-![处置评审的阶段操作](../media/stage-actions-disposition-review.png)
+![处置评审的阶段操作。](../media/stage-actions-disposition-review.png)
 
 但是，在创建保留标签后，你无法重新排序或删除阶段。
 
@@ -154,13 +154,13 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 发送给审阅者的默认电子邮件通知示例：
 
-![项目准备好进行处置审阅时包含默认文本的电子邮件通知示例](../media/disposition-review-email.png)
+![项目准备好进行处置审阅时包含默认文本的电子邮件通知示例。](../media/disposition-review-email.png)
 
 另外在预览阶段，你还可以自定义发送给处置审阅者的电子邮件，以用于初始通知和提醒。
 
 从合规中心的任意处置页面中，选择“**记录管理设置**”：  
 
-![记录管理设置](../media/record-management-settings.png)
+![记录管理设置。](../media/record-management-settings.png)
 
 然后选择“**处置通知**”选项卡，并指定是仅使用默认电子邮件模板，还是将你自己的文本添加到默认模板。 你的自定义文本将添加到保留标签相关信息之后和后续步骤说明之前的电子邮件说明中。
 
@@ -178,11 +178,11 @@ If you need additional information, visit the helpdesk website (https://support.
 
 通过电子邮件通知审阅者已准备好需评审的内容，他们将单击邮件中的链接，转到 Microsoft 365 合规中心内“**记录管理**”中的“**处置**”页面。 在这个页面中，审阅者可以查看每个保留标签有多少个项目正在等待处置，“**类型**”显示为“**挂起的处置**”。 然后，他们选择一个保留标签并 **在新窗口中打开** 以查看带有该标签的所有内容：
 
-![在新窗口中打开以进行处置评审](../media/open-in-new-window.png)
+![在新窗口中打开以进行处置评审。](../media/open-in-new-window.png)
 
 在“**挂起的处置**”页面上，他们会看到该标签的所有挂起的处置。 选择一个或多个项目后，他们可以使用迷你预览窗格以及“**来源**”、“**详细信息**”和“**历史记录**”选项卡来检查内容，然后再对其执行操作：
 
-![处置选项](../media/retention-disposition-options.png)
+![处置选项。](../media/retention-disposition-options.png)
 
 如果你使用水平滚动条，或关闭迷你审阅窗格，则会看到更多列，其包括到期日期和处置评审阶段的名称。
 
@@ -214,7 +214,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 这些项目在 **类型** 列中的 **已处置记录** 里显示。 例如：
 
-![未经处置评审即被处置的项目](../media/records-disposed2.png)
+![未经处置评审即被处置的项目。](../media/records-disposed2.png)
 
 > [!NOTE]
 > 此功能使用 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要允许审核以使其 [启动且可搜索](turn-audit-log-search-on-or-off.md)，以便捕获相应的事件。

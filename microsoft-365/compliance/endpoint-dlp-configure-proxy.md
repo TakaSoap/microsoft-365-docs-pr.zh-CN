@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何为 Endpoint DLP 配置设备代理和 Internet 连接设置。
-ms.openlocfilehash: a05afb4ac8d5c66e1bbcbba0e8cd8e13b3d8a6d46c73899ea40e5205898036e4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0de08bd27f2222589343fe66715198645fbeb29
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886021"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567456"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>为 Endpoint DLP 配置设备代理和 Internet 连接设置
 
@@ -55,13 +55,13 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 2. 将其设置为“**已启用**”，然后选择 **禁止使用经验证的代理**：
 
-   ![组策略设置 1 的图像](../media/atp-gpo-proxy1.png)
+   ![组策略设置 1 的图像。](../media/atp-gpo-proxy1.png)
 
 3. 打开 **“管理模板” > “Windows 组件” > “数据收集和预览版” > “配置连接的用户体验和遥测”**：
 
    配置代理
 
-   ![组策略设置 2 的图像](../media/atp-gpo-proxy2.png)
+   ![组策略设置 2 的图像。](../media/atp-gpo-proxy2.png)
 
    策略将注册表项 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 下的两个注册表值 `TelemetryProxyServer` 设置为 REG\u SZ，`DisableEnterpriseAuthProxy` 设置为 REG\u DWORD。
 

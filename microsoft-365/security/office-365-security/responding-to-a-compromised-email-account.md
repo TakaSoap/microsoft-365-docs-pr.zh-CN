@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc34894998fda5ec28db6752f50c9122d3a2b416c5e5d7bd443e756681ce50b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56790255"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563338"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -171,7 +171,7 @@ ms.locfileid: "56790255"
    1. 选择“**角色**”\>“**管理员角色**”。
    2. 在 **管理员角色** 页面上，手动选择每个角色组，然后在详细信息窗格中，选择“**已分配**”选项卡以验证用户帐户。 如果角色组包含该用户帐户，请执行以下步骤：
       1. 选择用户帐户。
-      2. 单击 ![删除图标](../../media/m365-cc-sc-delete-icon.png).
+      2. 单击 ![删除图标。](../../media/m365-cc-sc-delete-icon.png).
 
          完成后，单击“**保存**”。
 
