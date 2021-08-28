@@ -16,16 +16,16 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 组服务交互
-ms.openlocfilehash: 3cf68b0abcf15515ebe724fe795b9b31c5ebd2b6f8b3dd6c9ca76b7b706c8508
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853063"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563702"
 ---
 # <a name="groups-services-interactions"></a>组服务交互
 
-Microsoft 365组为 Microsoft 365 平台中的大量服务和工作负载提供了一个通用结构，以便为最终用户提供连接体验。 核心是，存在Microsoft 365组以提供：
+Microsoft 365组为 Microsoft 365 平台中的许多服务和工作负载提供了一个通用结构，以便为最终用户提供连接体验。 核心是，存在Microsoft 365组以提供：
 
 - 管理 Azure AD (成员身份) 
 - 一个在邮箱、邮箱、邮箱 (Exchange进行Microsoft Teams对话Yammer) 
@@ -40,12 +40,12 @@ Microsoft 365组为 Microsoft 365 平台中的大量服务和工作负载提供�
 - Microsoft Stream (共享视频) 
 - 共享表单和表单 (区域) 
 
-跨 Microsoft 365，其他服务能够与 Microsoft 365 组交互，以向组的成员提供其他特性和功能。
+跨Microsoft 365，其他服务能够与 Microsoft 365 组交互，以向组成员提供其他特性和功能。
 例如：
 
 - Power Apps应用
 - Power Automate工作流的工作流
-- Project网站和基于瀑布的项目管理路线图
+- Project和基于瀑布的项目管理路线图
 - Teams频道对话的会话
 - Yammer关注社区
 
@@ -55,7 +55,7 @@ Microsoft 365管理员和最终用户都可以从各种界面创建和管理组�
 
 ### <a name="administrative-experiences"></a>管理体验
 
-管理员可以从多个工作负载管理中心、支持脚本的命令行界面以及与 Graph API 交互的自定义生成应用创建和管理 Graph 组。 Microsoft 365 唯一的例外情况是Yammer组 ，必须从 Web 界面Yammer组。
+管理员可以从多个工作负载管理中心、支持脚本的命令行界面以及与 Graph API 交互的自定义生成应用创建和管理 Graph 组。 Microsoft 365 唯一的例外是Yammer组 ，必须从 Web 界面Yammer组。
 
 **相关设置**
 
@@ -67,13 +67,13 @@ Microsoft 365管理员和最终用户都可以从各种界面创建和管理组�
 
 **Azure AD 管理中心**
 
-Azure AD 管理中心控制用户是否可以在 Azure 门户创建组或分配所有者，以及过期和命名策略设置。
+Azure AD 管理中心可控制用户是否可以在 Azure 门户创建组或分配所有者，以及过期和命名策略设置。
 
-管理中心还提供了一些除以下功能之外的来宾邀请控制措施Microsoft 365 管理中心，例如限制非所有者是否可以同时邀请来宾
+管理中心还提供了一些除用户邀请外Microsoft 365 管理中心的来宾邀请控制措施，例如限制非所有者是否还可以邀请来宾
 
 **SharePoint**
 
-SharePoint所有者、成员和访问者安全组创建网站，前两个安全组最多与组对应Microsoft 365匹配。 虽然联机SharePoint的成员身份通常由关联的组Microsoft 365，但它不是双向关系。 对 Microsoft 365 组级别的成员身份的任何更改都反映在 SharePoint 中，但如果 SharePoint 组中更改了成员身份，则此更改不会反映在 Microsoft 365 组中。
+SharePoint使用所有者、成员和访问者安全组创建网站，前两个安全组最多与组对应Microsoft 365匹配。 虽然联机SharePoint的成员身份通常由关联的组Microsoft 365，但它不是双向关系。 对 Microsoft 365 组级别的成员身份的任何更改都反映在 SharePoint 中，但如果 SharePoint 组中的成员身份发生更改，则此更改不会反映在 Microsoft 365 组中。
 
 ### <a name="user-experiences"></a>用户体验
 
@@ -99,7 +99,7 @@ SharePoint所有者、成员和访问者安全组创建网站，前两个安全�
 |---|---|
 |Outlook|**"新建组** "选项已从"人员"页面的"新建"菜单中删除|
 |Planner|**新** 计划说明组创建已关闭，并提供将计划添加到现有组|
-|Project Web 和路线图|**"创建组** "菜单说明组创建受到限制，并建议使用现有组。|
+|Project和路线图|**"创建组** "菜单说明组创建受到限制，并建议使用现有组。|
 |SharePoint|仍然能够创建未连接到组的工作组网站。|
 |Stream|**"** 组"选项不会显示在"创建" **菜单下**。|
 |Teams|用户不能使用新组创建团队，但仍可以创建利用现有组的团队。<br><br>**"创建团队"** 按钮将替换为"**从组创建团队"。**|
@@ -107,9 +107,9 @@ SharePoint所有者、成员和访问者安全组创建网站，前两个安全�
 
 ## <a name="services-interactions-with-groups"></a>服务与组的交互
 
-有关不同类型的Microsoft 365、如何创建和管理这些组以及一些治理建议的信息，请参阅"组"海报中的组。
+请参阅"Microsoft 365中的组"海报，了解不同类型的组、如何创建和管理这些组，以及一些治理建议。
 
-[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
+[![组信息图的缩略图。](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
 
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
 
@@ -119,21 +119,21 @@ SharePoint所有者、成员和访问者安全组创建网站，前两个安全�
 |---|---|---|---|---|
 |Azure AD|成员身份、组控件、来宾|是|是|是|
 |Exchange|日历、邮箱|是|是|是|
-|表单|表单|是|否|否|
+|Forms|表单|是|否|否|
 |OneNote|笔记本|是|否|否|
 |Planner|任务板|否|是|是|
 |Power Apps应用|应用|是|否|否|
 |Power Automate|工作流|是|否|否|
-|Power BI (经典) |Workspace|否|是|是|
-|Power BI (新) |Workspace|是|否|是|
+|Power BI (经典) |工作区|否|是|是|
+|Power BI (新) |工作区|是|否|是|
 |Project 网页版|Project计划|是|是|否|
 |路线图|路线图|是|是|否|
-|SharePoint|Site|是|是|是|
+|SharePoint|网站|是|是|是|
 |Stream|频道、视频|是|是|是|
 |Teams|团队|否|是|是|
 |Yammer|组|是|是|是|
 
-虽然上表提供了组与 Microsoft 365 服务交互的简要概述，但您应该了解许多细微差别和细微差别。 以下各节将深入探讨特定的工作负荷及其与组的交互。
+虽然上表简要概述了组与 Microsoft 365 服务之间的交互，但您应该了解许多细微差别和细微差别。 以下各节将深入探讨特定的工作负荷及其与组的交互。
 
 ## <a name="azure-ad"></a>Azure AD
 
@@ -173,9 +173,9 @@ Azure AD 跨组织提供基础标识Microsoft 365。
 
 ## <a name="teams"></a>Teams
 
-Teams是一个以聊天为中心的工作区，旨在通过提供与各种 Microsoft 和第三方服务交互的单数界面来增强协作。
+Teams是一个以聊天为中心的工作区，旨在通过提供单数界面来与各种 Microsoft 和第三方服务进行交互来增强协作。
 
-默认情况下，创建团队时，与 Microsoft 365 组关联的邮箱和日历在 Exchange 中的全局地址列表中Outlook。 如果用户希望在同一组上同时使用 Outlook 和 Teams，则管理员可以Microsoft 365重写此方法。
+默认情况下，创建团队时，与 Microsoft 365 组关联的邮箱和日历在 Exchange 中的全局地址列表中Outlook。 如果用户希望在同一组上同时使用 Outlook 和 Teams，则管理员Microsoft 365重写此方法。
 
 **向组提供的关键功能**
 
@@ -219,9 +219,9 @@ Exchange Online提供消息传递、日历、联系人和关联功能。 在组�
 
 **能否Exchange组？**
 
-是的，从管理中心以及管理中心Exchange Online组Outlook。 您还可以将通讯Exchange列表转换为Microsoft 365组。
+是的，从管理中心以及管理中心Exchange Online组Outlook。 您还可以将通讯Exchange转换为Microsoft 365组。
 
-**是否存在Exchange组？**
+**没有Exchange组是否存在？**
 
 是的，Exchange Online提供了许多服务，包括共享邮箱和日历，没有任何组关联。
 
@@ -235,13 +235,13 @@ Exchange Online提供消息传递、日历、联系人和关联功能。 在组�
 
 **邮箱Exchange日历是否与组关联会发生变化？**
 
-否，不能将邮箱和日历更改为其他组。 但是，可以使用第三方工具将内容从一个邮箱Outlook另一个邮箱。
+否，不能将邮箱和日历更改为其他组。 但是，内容可以从一个邮箱移动到另一个邮箱Outlook或通过使用第三方工具。
 
 **删除邮箱是否删除该组？**
 
 可以，删除邮箱Exchange将删除组以及组关联的服务和内容。
 
-## <a name="forms"></a>表单
+## <a name="forms"></a>Forms
 
 表单提供基于 Web 的调查和测验。
 
@@ -267,7 +267,7 @@ Exchange Online提供消息传递、日历、联系人和关联功能。 在组�
 
 **表单与组的关联能否更改？**
 
-否，一旦表单与直接在内部 (组关联，或者从单个组传输的所有权) 无法移动到另一个组。
+否，一旦表单与组关联 (直接在内部创建，或者从单个组传输的所有权) 无法将其移动到另一个组。
 
 **删除表单是否将删除该组？**
 
@@ -279,19 +279,19 @@ OneNote是数字笔记本应用程序。 使用OneNote创建的笔记本是关�
 
 **向组提供的关键功能**
 
-- 共享笔记本 (组关联的SharePoint库) 
+- 共享笔记本 (组关联的库SharePoint库) 
 
 **能否OneNote组？**
 
 否，OneNote无法创建组。
 
-**笔记本OneNote没有组吗？**
+**是否存在OneNote没有组的笔记本？**
 
 可以，笔记本可以直接在OneDrive或其他共享位置创建。
 
 **每个组能否OneNote笔记本？**
 
-是，默认情况下会创建一个笔记本，并且可添加其他笔记本，但是从组关联的OneNote指向笔记本的任何链接将始终转到默认笔记本。
+是，默认情况下会创建笔记本，可以添加其他笔记本，但是从组关联的OneNote的任何指向笔记本的链接将始终转到默认笔记本。
 
 **一个OneNote笔记本能否与多个组关联？**
 
@@ -299,7 +299,7 @@ OneNote是数字笔记本应用程序。 使用OneNote创建的笔记本是关�
 
 **笔记本与组关联能否更改？**
 
-否，笔记本本身与组关联，并且可以从其他已连接组的服务直接访问，但是内容可以从一个笔记本移动到另一个笔记本，OneNote应用程序。
+否，笔记本本身与组关联，并且可以从其他已连接组的服务直接访问，但内容可以从一个笔记本移动到 OneNote 应用程序中。
 
 **删除笔记本是否删除该组？**
 
@@ -354,7 +354,7 @@ Power Apps提供一个画布，用于应用开发，而无需使用代码。
 
 **是否存在Power Apps组？**
 
-是，可以在网站中创建应用Power Apps并驻留在创建者帐户内，直到共享或发布。
+可以，可以在网站中创建应用Power Apps并驻留在创建者帐户内，直到共享或发布。
 
 **每个组能否有多个应用？**
 
@@ -362,11 +362,11 @@ Power Apps提供一个画布，用于应用开发，而无需使用代码。
 
 **应用能否与多个组关联？**
 
-是，可以与多个组共享应用。
+可以，可以与多个组共享应用。
 
 **应用与组关联能否发生变化？**
 
-是，由于 Power Apps 组Microsoft 365仅共享 ， 应用仍与创建者一起驻留。
+可以，由于 Power Apps 组Microsoft 365仅共享 ， 应用仍与创建者一起驻留。
 
 > [!IMPORTANT]
 > [必须先启用安全组，然后才能与组共享应用](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)。
@@ -385,7 +385,7 @@ Power Automate (以前称为Microsoft Flow) 工作流和自动化服务。
 
 **能否Power Automate组？**
 
-否，Power Automate无法在Microsoft 365关联的上下文中创建一个组。
+否Power Automate，无法在Microsoft 365关联的上下文中创建一个组。
 
 但是，可以创建执行各种操作（如创建 Azure AD 安全组或更新组成员身份）Microsoft 365流。
 
@@ -403,7 +403,7 @@ Power Automate (以前称为Microsoft Flow) 工作流和自动化服务。
 
 **流与组关联能否更改？**
 
-可以，由于Power Automate组Microsoft 365仅共享， 流仍与创建者一起驻留。
+可以，由于Power Automate组Microsoft 365仅共享， 流仍驻留在创建者的一起。
 
 **删除流是否删除组？**
 
@@ -435,7 +435,7 @@ Power BI提供交互式数据驱动的仪表板和报表。
 
 **工作区与组关联能否更改？**
 
-否，经典工作区本身与组相关联，但内容可以从 Power BI 接口内的一个工作区移动到另一个工作区，或者通过本地导出内容。
+否，经典工作区本身与组关联，但内容可以从 Power BI 接口内的一个工作区移动到另一个工作区，或者通过本地导出内容。
 
 **删除工作区是否删除该组？**
 
@@ -445,7 +445,7 @@ Power BI提供交互式数据驱动的仪表板和报表。
 
 Power BI提供交互式数据驱动的仪表板和报表。
 
-虽然在 Power BI 中创建新工作区不会创建 Microsoft 365 组，但通过任何其他方式创建组 (在 Power BI 中创建新的) 工作区。
+虽然在 Power BI 中创建新工作区不会创建 Microsoft 365 组，但通过任何其他方式创建组 (在 Power BI 中创建新的 (而不是) 工作区。
 
 **向组提供的关键功能**
 
@@ -453,15 +453,15 @@ Power BI提供交互式数据驱动的仪表板和报表。
 
 **能否Power BI组？**
 
-否，无法从新的 Microsoft 365 接口创建Power BI组。
+否，无法从新的 Microsoft 365接口创建Power BI组。
 
-**新工作区是否存在Power BI没有组？**
+**没有组Power BI新工作区是否存在？**
 
-可以，在网站中创建报表和工作区Power BI与组Microsoft 365关联。
+可以，在未与组关联的Power BI中创建报表和Microsoft 365。
 
 **每个组能否有多个工作区？**
 
-可以[，由 Power BI 创建的多个工作区可以与单个组共享](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace)。
+是的[，由 Power BI创建的多个工作区可以与单个组共享](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace)。
 
 **工作区能否与多个组关联？**
 
@@ -520,7 +520,7 @@ Project Web 支持创建项目计划、甘特图和路线图。
 
 **路线图是否存在没有组？**
 
-可以，无需与组关联即可Microsoft 365路线图，但共享路线图需要组关联。
+可以，路线图可以在不与组关联的情况下Microsoft 365，但共享路线图需要组关联。
 
 **每个组能否有多个路线图？**
 
@@ -554,7 +554,7 @@ SharePoint是一个基于 Web 的内容管理平台，它为许多服务提供�
 
 **是否存在SharePoint组的网站？**
 
-可以，SharePoint许多非组关联的服务和网站，例如通信和中心网站。 
+是的，SharePoint许多非组关联的服务和网站，例如通信和中心网站。 
 
 **每个组能否有多个网站？**
 
@@ -566,7 +566,7 @@ SharePoint是一个基于 Web 的内容管理平台，它为许多服务提供�
 
 **网站与组关联能否更改？**
 
-否，网站本身与组相关联，但内容可以通过在本地导出内容或通过使用第三方工具从 SharePoint 界面中的一个网站移动到另一个网站。
+否，网站本身与组关联，但内容可以通过在本地导出内容或通过使用第三方工具从 SharePoint 界面中的一个网站移动到另一个网站。
 
 **删除网站是否删除组？**
 
@@ -610,7 +610,7 @@ Microsoft Stream 是一个视频托管和共享平台。
 
 Yammer是一个企业社交平台，旨在促进组织内部和组织之间的社区参与。
 
-在邮箱 (之前称为"组") 创建Yammer会创建一个邮箱，但目前尚未使用。
+在邮箱 (以前称为"组") 创建Yammer会创建一个邮箱，但目前尚未使用。
 
 与Microsoft 365关联的组Yammer组不能与Microsoft Teams。
 
@@ -622,7 +622,7 @@ Yammer是一个企业社交平台，旨在促进组织内部和组织之间的�
 
 是，如果在 Yammer中创建新组，Microsoft 365如果平台已连接且用户能够创建组，则创建新组。
 
-无法在Yammer接口或服务中创建Microsoft 365组关联的组，而在其他接口Yammer组。
+不能Yammer接口或服务中创建Microsoft 365组关联的组，而在其他接口或服务中Yammer组。
 
 **没有Yammer组，是否存在Microsoft 365组？**
 
@@ -632,13 +632,13 @@ Yammer是一个企业社交平台，旨在促进组织内部和组织之间的�
 
 **每个组能否Yammer多个Microsoft 365组？**
 
-否，组和Yammer之间的关系Microsoft 365为 1：1。
+否，Yammer组与Microsoft 365之间的关系是 1：1。
 
 **一个Yammer组能否与多个组Microsoft 365关联？**
 
 否，Yammer组只能与单个组Microsoft 365关联。 可以与其他用户共享帖子或将帖子移动到其他Yammer组。
 
-**一个Yammer组与一个组Microsoft 365的关联吗？**
+**用户Yammer组与组关联Microsoft 365更改？**
 
 否，Yammer组只能与最初关联的Microsoft 365组相关联。
 
