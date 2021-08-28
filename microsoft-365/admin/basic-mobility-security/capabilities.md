@@ -19,16 +19,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可帮助您保护和管理移动设备。
-ms.openlocfilehash: cfd29178bfa6ea235bc26cf8ca1efa3b80e39915
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.openlocfilehash: bd400f81b3d125b6d6100ecf2ed06f536106d1f0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346948"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564522"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本移动性和安全性的功能
 
-基本移动性和安全性可帮助你保护和管理组织中许可的 Microsoft 365 用户使用的移动设备，如 iPhone、iPad、Android 和 Windows Phones。 可以使用设置创建移动设备管理策略，这些设置可帮助控制对受支持的移动设备Microsoft 365电子邮件和文档的访问。 如果设备丢失或被盗，你可以远程擦除设备以删除敏感的组织信息。
+基本移动性和安全性可帮助你保护和管理组织中许可的 Microsoft 365 用户使用的移动设备，如 iPhone、iPad、Android 和 Windows 电话。 可以使用设置创建移动设备管理策略，这些设置可帮助控制对受支持的移动设备Microsoft 365电子邮件和文档的访问。 如果设备丢失或被盗，你可以远程擦除设备以删除敏感的组织信息。
 
 ## <a name="supported-devices"></a>支持的设备
 
@@ -55,11 +55,11 @@ ms.locfileid: "58346948"
 > [!NOTE]
 > 已注册较早操作系统版本的设备仍可以继续运行，尽管这些功能可能会在不另行通知的情况下更改。
 
-如果组织成员使用的移动设备不受基本移动性和安全性支持，你可能希望阻止 Exchange ActiveSync 应用访问这些设备的 Microsoft 365 电子邮件，以帮助提高组织数据的安全性。 有关阻止访问Exchange ActiveSync，请参阅基本移动性和安全性中的管理[设备访问设置](manage-device-access-settings.md)。
+如果组织成员使用的移动设备不受基本移动性和安全性支持，你可能希望阻止 Exchange ActiveSync 应用访问这些设备的 Microsoft 365 电子邮件，以帮助使组织的数据更安全。 有关阻止访问Exchange ActiveSync，请参阅基本移动性和安全性中的管理[设备访问设置](manage-device-access-settings.md)。
 
 ## <a name="access-control-for-microsoft-365-email-and-documents"></a>电子邮件和Microsoft 365访问控制
 
-下表中支持的不同类型的移动设备的应用提示用户注册基本移动性和安全性，其中存在适用于用户设备且用户之前尚未注册该设备的新移动设备管理策略。 如果用户的设备不符合策略，则根据策略的设置方式，可能会阻止用户访问这些应用中的 Microsoft 365 资源，或者他们可能具有访问权限，但 Microsoft 365 报告违反策略。
+下表中支持的不同类型的移动设备的应用提示用户注册基本移动性和安全性，其中存在适用于用户设备且用户之前尚未注册该设备的新移动设备管理策略。 如果用户的设备不符合策略，具体取决于策略的设置方式，可能会阻止用户访问这些应用中的 Microsoft 365 资源，或者他们可能具有访问权限，但 Microsoft 365 报告违反策略。
 
 |**Product**|**iOS 10.0 或更高版本**|**Android 5.0 或更高版本**|
 |:-----|:-----|:-----|
@@ -69,15 +69,15 @@ ms.locfileid: "58346948"
 > [!NOTE]
 >
 > - 对 iOS 10.0 和更高版本的支持包括iPhone和iPad设备。
-> - 基本安全性和移动性不支持管理 BlackBerry 操作系统设备。 使用 BlackBerry 商业云服务 (BBCS) 管理 BlackBerry 操作系统设备。 运行 Android 操作系统的 Blackberry 设备作为标准 Android 设备受到支持
+> - 基本安全性和移动性不支持管理 BlackBerry 操作系统设备。 使用 BlackBerry 商业云服务 (BBCS) BlackBerry 管理 BlackBerry 操作系统设备。 运行 Android 操作系统的 Blackberry 设备作为标准 Android 设备受到支持
 > - 如果用户使用移动浏览器访问 Microsoft 365 SharePoint 网站、Office Online 中的文档或 Outlook Web App 中的电子邮件，将不会提示用户注册，也不会被阻止或报告违反策略。
 
-下图显示了当具有新设备的用户登录支持具有基本移动性和安全性的访问控制的应用时会发生什么情况。 在用户注册设备之前，Microsoft 365访问应用中的资源。
+下图显示了当具有新设备的用户登录支持具有基本移动性和安全性的访问控制的应用时会发生什么情况。 阻止用户访问应用中Microsoft 365资源，直到用户注册其设备。
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本移动性和安全性访问控制":::
+:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本移动性和安全性访问控制。":::
 
 > [!NOTE]
-> 在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则将Exchange ActiveSync管理中心中创建的移动设备邮箱策略和设备Exchange规则。 在基本移动性和安全性 for Microsoft 365 商业标准版 注册设备后，Exchange ActiveSync应用于该设备的任何移动设备邮箱策略或设备访问规则都将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync [中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> 在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则将Exchange ActiveSync在 Exchange 管理中心中创建的移动设备邮箱策略和设备访问规则。 在基本移动性和安全性 for Microsoft 365 商业标准版 注册设备后，Exchange ActiveSync应用于该设备的任何移动设备邮箱策略或设备访问规则都将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync [中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="policy-settings-for-mobile-devices"></a>移动设备的策略设置
 
@@ -95,7 +95,7 @@ ms.locfileid: "58346948"
 
 例如，下图显示了当已注册设备的用户不符合适用于其设备的移动设备管理策略中的安全设置时会发生什么情况。 用户登录支持具有基本移动性和安全性的访问控制的应用。 在设备符合Microsoft 365之前，将阻止他们访问应用中的 Microsoft 365 资源。
 
-:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="基本移动性和安全性合规性消息":::
+:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="基本移动性和安全性合规性消息。":::
 
 以下各节列出了可用于帮助保护和管理连接到组织资源的移动设备Microsoft 365设置。
 
@@ -128,7 +128,7 @@ ms.locfileid: "58346948"
 
 ## <a name="managed-email-profile-option"></a>托管电子邮件配置文件选项
 
-如果用户使用手动创建的电子邮件配置文件Microsoft 365以下选项可以阻止用户访问他们的电子邮件。 iOS 设备上的用户必须先删除手动创建的电子邮件配置文件，然后才能访问电子邮件。 删除配置文件后，将在设备上自动创建一个新配置文件。 有关最终用户如何合规的说明，请参阅已找到现有 [电子邮件帐户](/intune-user-help/existing-company-email-account-found)。
+以下选项可以阻止用户使用手动创建的电子邮件Microsoft 365访问其电子邮件。 iOS 设备上的用户必须先删除手动创建的电子邮件配置文件，然后才能访问电子邮件。 删除配置文件后，将在设备上自动创建一个新配置文件。 有关最终用户如何合规的说明，请参阅已找到现有 [电子邮件帐户](/intune-user-help/existing-company-email-account-found)。
 
 |**设置名称**|**iOS 7.1 及更高版本**|**Android 5 及更高版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ ms.locfileid: "58346948"
 
 ## <a name="additional-settings"></a>其他设置
 
-您可以使用安全与合规中心 PowerShell cmdlet &其他策略设置。 有关详细信息，请参阅安全与 [&中心 PowerShell。](/powershell/exchange/scc-powershell)
+可以使用安全与合规中心 PowerShell cmdlet &其他策略设置。 有关详细信息，请参阅安全与 [&中心 PowerShell。](/powershell/exchange/scc-powershell)
 
 |**设置名称**|**iOS 7.1 及更高版本**|**Android 5 及更高版本**|
 |:-----|:-----|:-----|
@@ -236,11 +236,11 @@ ms.locfileid: "58346948"
 
 ## <a name="remotely-wipe-a-mobile-device"></a>远程擦除移动设备
 
-如果设备丢失或被盗，可以通过从安全与合规中心 > 数据丢失防护设备管理 执行擦除来删除敏感的组织数据，并帮助阻止访问 Microsoft 365 & 组织  >  **资源**。 你可以执行选择性擦除以仅删除组织数据，也可以执行完全擦除来删除设备中的全部信息，并还原到其出厂设置。
+**如果设备** 丢失或被盗，可以通过从安全与合规中心 > 数据丢失防护设备管理 执行擦除来删除敏感的组织数据，并帮助阻止访问 Microsoft 365 & 组织  >  **资源**。 你可以执行选择性擦除以仅删除组织数据，也可以执行完全擦除来删除设备中的全部信息，并还原到其出厂设置。
 
 有关详细信息，请参阅 [Basic Mobility and Security](wipe-mobile-device.md)中的擦除移动设备。
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365 (](overview.md) Overview of Basic Mobility and Security for) \
+[) \](overview.md)文章 Microsoft 365 (Basic Mobility and Security for) \
 [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article) 

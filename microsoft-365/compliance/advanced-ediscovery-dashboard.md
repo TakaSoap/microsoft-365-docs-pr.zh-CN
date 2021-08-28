@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用Advanced eDiscovery仪表板查看集来快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。
-ms.openlocfilehash: 14baa47a73ac3cc4917d6e2f04614a80960ef085
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502971"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565514"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery审阅集的仪表板
 
@@ -29,7 +29,7 @@ ms.locfileid: "58502971"
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>步骤 1：在审阅集仪表板上创建小组件
 
-1. 在Microsoft 365 合规中心中，转到"**电子** 数据> Advanced eDiscovery，以显示组织中事例的列表。
+1. 在Microsoft 365 合规中心中，转到"**电子数据展示**> Advanced eDiscovery以显示组织中事例的列表。
   
 2. 选择现有案例。
   
@@ -37,15 +37,15 @@ ms.locfileid: "58502971"
   
 4. 在“**单独的结果**”下拉列表中，单击“**搜索配置文件**”。 
 
-   ![DashbordPivot](../media/dashboardpivot.png)
+   ![DashbordPivot。](../media/dashboardpivot.png)
 
    将显示 **"搜索配置文件视图** "页;第一次显示此页面时，将显示三个默认小组件。
 
-   ![仪表板](../media/dashboardonly.png)
+   ![仪表板。](../media/dashboardonly.png)
   
 5. 单击" **新建"小** 组件，然后选择下列项目之一：
 
-   !["新建小组件"下拉列表](../media/NewWidgetDropdownBox.png)
+   !["新建小组件"下拉列表。](../media/NewWidgetDropdownBox.png)
 
    - **从库中选择：** 显示小部件的默认库。 单击小组件，然后单击 **"添加"** 将其添加到"搜索配置文件视图"页上 **的小部件** 。
   
@@ -53,7 +53,7 @@ ms.locfileid: "58502971"
 
 6. 若要创建自定义小组件，在"添加小组件"飞出 **页面上** 执行以下操作：
 
-   ![创建小组件](../media/addwidget.png)
+   ![创建小组件。](../media/addwidget.png)
 
     a. 键入小部件的名称，该名称将显示在小组件标题栏中。 命名小组件是必需的，但有助于标识小组件数据。
 
@@ -67,17 +67,17 @@ ms.locfileid: "58502971"
 
 1. 单击 **小** 组件标题栏中的"..."，然后单击"**应用条件"。**
 
-   ![仪表板](../media/searchprofilehome.png)
+   ![仪表板。](../media/searchprofilehome.png)
 
 2. 在飞出页面上，单击小组件键或小组件图表上的元素以创建筛选器。
 
-   ![CreateFilter](../media/applyconditionfilter.png)
+   ![CreateFilter。](../media/applyconditionfilter.png)
 
 3. 对其他小组件多个小组件重复步骤 1-2。 
 
 4. 完成后，单击"另存为 **查询** "，将条件另存为审阅集的新搜索查询。
 
-   ![查询](../media/savequery.png)
+   ![查询。](../media/savequery.png)
 
 5. 关闭 **搜索配置文件视图** 以返回到搜索结果视图。
 

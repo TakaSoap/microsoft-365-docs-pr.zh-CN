@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解适用于企业Microsoft 365保护设备安全Windows 10设置。
-ms.openlocfilehash: 1d3f3f3516431e08b00f83bf2b8beb4bebecb0f5
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360297"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566390"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>编辑或创建电脑的设备Windows 10设置
 
@@ -38,7 +38,7 @@ ms.locfileid: "58360297"
 
 ## <a name="create-protection-settings-for-windows-10-devices"></a>为设备创建Windows 10设置
 
-观看一个视频，了解如何使用Windows 10保护Microsoft 365 商业高级版：
+观看有关如何使用安全Windows 10保护设备Microsoft 365 商业高级版：
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -50,7 +50,7 @@ ms.locfileid: "58360297"
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
-    ![Add policy pane with Windows 10 Device configuration selected](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
+    ![添加策略窗格，Windows 10"设备配置"。](../../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
 7. 最后，选择" **完成**"以保存该策略，并将其分配到设备。 

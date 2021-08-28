@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可帮助您保护和管理组织的移动设备。
-ms.openlocfilehash: b532d8c189598db941f3ced4095b910cfc6f0668
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 3cb5b34d869ae16faa89ced45d54537fbb07a5e2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394320"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564437"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>管理在移动设备管理中注册的设备Microsoft 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "58394320"
 
 2. 在搜索字段中键入"移动设备管理"，然后从结果列表中选择"移动设备   管理"。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="移动设备管理选项":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="移动设备管理选项。":::
 
 3. 选择  **让我们开始吧**。
 

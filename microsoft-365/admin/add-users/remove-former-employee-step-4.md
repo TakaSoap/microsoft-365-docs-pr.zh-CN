@@ -25,21 +25,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: c9d9858d030e54884a4defc9b06afe67e8951fca37e36f10d0e9979e5d282920
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 按照本文中的步骤为另一名员工授予对前员工的数据OneDrive Outlook访问权限。
+ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827456"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564718"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
-当员工离开组织时，你将希望访问其 OneDrive 并Outlook数据，备份数据，并选择是否将该数据授予其他员工。
+当员工离开组织时，你将希望访问其OneDrive Outlook数据，备份数据，并选择是否将该数据授予其他员工。
   
 ## <a name="access-a-former-users-onedrive-documents"></a>访问以前用户的OneDrive文档
 
-如果您删除用户的许可证但不删除帐户，您可以为自己授予访问用户许可证中的内容OneDrive。 如果删除用户帐户，则默认情况下你有 30 天的时间访问前用户OneDrive数据。 [了解如何为已删除OneDrive设置保留时间](/onedrive/set-retention)。 如果您在此时间内[没有还原用户帐户，则](/office365/admin/add-users/restore-user)其OneDrive内容将被删除。
+如果您删除用户的许可证但不删除帐户，您可以授予自己访问用户许可证中的内容OneDrive。 如果删除用户帐户，则默认情况下你有 30 天的时间访问前用户OneDrive数据。 [了解如何为已删除OneDrive设置保留时间](/onedrive/set-retention)。 如果您在此时间内[没有还原用户帐户，则](/office365/admin/add-users/restore-user)其OneDrive内容将被删除。
 
 若要保留以前用户OneDrive文件，请首先向自己授予OneDrive访问权限，然后移动要保留的文件。
 
@@ -49,7 +49,7 @@ ms.locfileid: "53827456"
 
 3. 在右侧窗格中，选择 **"OneDrive"。** 在 **"获取对文件的访问权限"下**，**选择"创建指向文件的链接"。**
 
-4. 选择链接以打开文件位置。 将文件下载到计算机，或选择"移动到"或"复制"以将这些文件移动或复制到您自己的OneDrive或复制到共享库。
+4. 选择链接以打开文件位置。 将文件下载到计算机，或选择"移动到"或"复制"以将这些文件移动或复制到您自己的OneDrive或共享库。
 
 > [!NOTE]
 > 一次可以移动或复制多达 500 MB 的文件和文件夹。<br/>
@@ -57,7 +57,7 @@ ms.locfileid: "53827456"
 
 还可以向其他用户授予访问以前员工OneDrive。
 
-1. 以全局<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员或管理员</a>管理员SharePoint管理中心。
+1. 以全局<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员或</a>管理员管理员SharePoint管理中心。
 
     如果您收到一条消息，指出您无权访问管理中心，则表明您组织中没有管理员权限。
 
@@ -77,13 +77,13 @@ ms.locfileid: "53827456"
 
 9. 将用户添加到 **网站集管理员，然后选择****确定。**
 
-10. 现在，用户将能够使用 OneDrive URL 访问OneDrive服务器。 
+10. 用户现在将能够使用 OneDrive URL 访问前OneDrive服务器。 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>撤销管理员对用户权限OneDrive
 
-您可以向自己授予对用户网站中OneDrive的访问权限，但您可能想要在不再需要该内容时删除您的访问权限。
+您可以向自己授予对用户网站中OneDrive的访问权限，但当您不再需要该访问权限时，您可能想要删除该访问权限。
 
-1. 以全局<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员或管理员</a>管理员SharePoint管理中心。
+1. 以全局<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员或</a>管理员管理员SharePoint管理中心。
 
     如果您收到一条消息，指出您无权访问管理中心，则表明您组织中没有管理员权限。
 
@@ -105,9 +105,9 @@ ms.locfileid: "53827456"
 
 ## <a name="access-the-outlook-data-of-a-former-user"></a>访问Outlook用户的数据
 
-若要保存以前员工的电子邮件、日历、任务和联系人，将信息导出到 Outlook 数据文件 (.pst) 。
+若要保存前员工的电子邮件、日历、任务和联系人，将信息导出到 Outlook 数据文件 (.pst) 。
   
-1. [将前员工的电子邮件添加到](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)你的邮箱Outlook (如果你重置用户密码，你可以将其[](reset-passwords.md)设置为仅你知道) 
+1. [将前员工的电子邮件添加到](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)你的Outlook (如果你重置用户密码，你可以将其设置为[](reset-passwords.md)仅你知道) 
 
 2. 在Outlook中，选择"文件 **"。**
 
@@ -115,37 +115,37 @@ ms.locfileid: "53827456"
   
 3. 选择 **"打开 &amp; 导出** \> **导入/导出"。**
 
-    ![导入/导出 Backstage 视图中运行命令](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![导入/导出 Backstage 视图中运行命令。](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. 选择 **"导出到文件"，** 然后选择"下一 **步"。**
 
-    ![导入和导出向导中的"导出到文件"选项](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![导出到导入和导出向导中的文件选项。](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. 选择 **Outlook数据文件 (.pst) "，** 然后选择"下一 **步"。**
 
-6. 通过选择名称或电子邮件地址（如 Mailbox - Anne Weiler 或 anne@contoso.com）选择要导出的帐户。 如果要导出帐户中的所有内容，包括邮件、日历、联系人、任务和备注，请确保选中"包括子文件夹"复选框。 
+6. 通过选择名称或电子邮件地址（如 Mailbox - Anne Weiler 或 anne@contoso.com）选择要导出的帐户。 如果要导出帐户中的所有内容，包括邮件、日历、联系人、任务和便笺，请确保选中了" **包括** 子文件夹"复选框。
 
     > [!NOTE]
     > 可以一次导出一个帐户。 如果要导出多个帐户，在导出一个帐户后，重复这些步骤。
   
-    ![导出Outlook"数据文件"对话框，其中选中了顶部文件夹并选中了"包含子文件夹"](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![导出Outlook"数据文件"对话框，其中选中了顶部文件夹，并且选中了"包含子文件夹"。](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 选择 **下一步**。
+7. 选择“**下一步**”。
 
-8. 选择 **"浏览**"选择保存Outlook文件 (.pst) 。 键入  *文件名，* 然后选择" **确定"** 继续。
+8. 选择 **"浏览**"以选择保存Outlook文件 (.pst) 。 键入  *文件名，* 然后选择" **确定"** 继续。
 
     > [!NOTE]
     > 如果之前使用过导出，则显示上一个文件夹位置和文件名。 在选择  *"确定"之前，*  键入其他 **文件名**。
   
 9. 如果要导出到现有 Outlook 数据文件 (.pst)，请在" **选项**"下指定文件中已存在导出项目时要执行的操作。
 
-10. 选择 **“完成”**。
+10. 选择“完成”。
 
-Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保护的文件，否则将立即开始导出。
+Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保护的文件，否则立即开始导出。
   
-- 如果要创建一个Outlook.pst (.pst) ，则可选密码可以帮助保护文件。 当出现 **"Outlook数据文件**"对话框时，在"密码"和"验证密码"框中键入密码，然后选择"确定 **"。** 在 **"Outlook数据文件密码**"对话框中，键入 *密码*，然后选择"确定 **"。**
+- 如果要创建一个Outlook.pst (.pst) ，则可选密码可以帮助保护文件。 当"**创建Outlook文件**"对话框出现时，在"密码"和"验证密码"框中键入密码，然后选择"确定 **"。** 在 **"Outlook数据文件密码**"对话框中，键入 *密码*，然后选择"确定 **"。**
 
-- 如果要导出到受密码保护的现有 Outlook 数据文件 (.pst) ，请在 **"Outlook** 数据文件密码"对话框中，键入密码，然后选择"确定 **"。** 
+- 如果要导出到受密码保护的现有 Outlook 数据文件 (.pst) ，请在 **"Outlook 数据文件** 密码"对话框中，键入密码，然后选择"确定 **"。**
 
 请参阅如何在 Outlook 2010 中将电子邮件、联系人和日历导出或备份到 Outlook [.pst](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)文件。
 
@@ -165,7 +165,7 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 2. 选择 **"从另一个程序或文件导入**"，然后选择"下一 **步"。**
 
-    ![导入和导出向导](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![导入和导出向导。](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. 选择 **Outlook数据文件 (.pst) "，** 然后选择"下一 **步"。**
 
@@ -173,23 +173,23 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 5. 在 **"选项**"下，选择如何处理重复项
 
-6. 选择 **下一步**。
+6. 选择“**下一步**”。
 
-7. 如果将密码分配给 Outlook.pst (.pst) ，请输入密码，然后选择"确定 **"。**
+7. 如果密码已分配给 Outlook Data File (.pst) ，请输入密码，然后选择"确定 **"。**
 
 8. 设置用于导入项目的选项。 默认设置通常不需要更改。
 
-9. 选择 **“完成”**。
+9. 选择“完成”。
 
 > [!NOTE]
-> 访问现有用户的邮箱和电子邮件数据的步骤OneDrive相同。
+> 对于访问现有用户的邮箱和电子邮件数据，步骤OneDrive相同。
 
 > [!TIP]
-> 如果希望仅导入或还原 Outlook Data File (.pst) 中的几个项目，可以打开 Outlook 数据文件。 然后，在导航窗格中，将项目从Outlook数据文件文件夹拖动到现有Outlook文件夹中。
+> 如果希望仅从 Outlook 数据文件 (.pst) 导入或还原几个项目，可以打开 Outlook 数据文件。 然后，在导航窗格中，将"数据Outlook文件夹中的项目拖动到现有Outlook文件夹中。
 
 ## <a name="related-content"></a>相关内容
 
-[在帐户帐户上添加OneDrive (管理员) ](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+[在管理员帐户上添加OneDrive (管理员) ](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
 
 [Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article) 
 

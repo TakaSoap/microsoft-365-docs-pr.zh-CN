@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: 配置Advanced eDiscovery适用于案例的所有审阅集的审核设置。 这包括用于分析和光学字符识别的设置。
-ms.openlocfilehash: fd1d71a7f617ad836b5c8d2cdcc2beea4b37fdc5aeb14031c80984ca2676db5b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892351"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565412"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>配置搜索和分析Advanced eDiscovery
 
-您可以配置每个用例Advanced eDiscovery，以控制以下功能。
+可以配置每个用例Advanced eDiscovery，以控制以下功能。
 
 - 近似重复和电子邮件线程
 
@@ -46,7 +46,7 @@ ms.locfileid: "53892351"
 
    将显示"大小写设置"页。 在一种情况下，这些设置将应用于所有审阅集。
 
-   ![为事件配置分析和搜索Advanced eDiscovery设置](../media/AeDCaseSettings.png)
+   ![为案例配置分析和搜索Advanced eDiscovery设置。](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>近似重复和电子邮件线程
 
@@ -66,15 +66,15 @@ ms.locfileid: "53892351"
 
 - **最大主题数：** 指定对审阅集内的数据运行分析时可生成的主题的最大数量。
 
-- **在主题中包括数字：** 如果打开，则 (主题) 时将包含标识主题主题的数字。 
+- **在主题中包括数字：** 打开后，将 (主题) 时包含标识主题主题的数字。 
 
 - **动态调整最大主题数：** 在某些情况下，审阅集可能没有足够的文档来生成所需数量的主题。 启用此设置时，高级电子数据展示会动态调整最大主题数，而不是尝试强制实施最大主题数。
 
 ## <a name="review-set-query"></a>审阅集查询
 
-如果选中"分析后 **自动创建审阅保存** 的搜索"复选框，Advanced eDiscovery名为"审阅"的审阅集 **查询。** 
+如果选中"分析后 **自动创建** 用于审阅保存的搜索"复选框，Advanced eDiscovery自动生成名为"评价"的审阅集 **查询。** 
 
-![用于审阅自动生成的查询](../media/AeDForReviewQuery.png)
+![用于审阅自动生成的查询。](../media/AeDForReviewQuery.png)
 
 此查询基本上从审阅集筛选出重复项。 这样，你可以查看审阅集内的唯一项目。 本查询仅会对案例的审阅集运行分析时创建。 有关审阅集查询详细信息，请参阅查询 [审阅集内的数据](review-set-search.md)。
 
@@ -86,9 +86,9 @@ ms.locfileid: "53892351"
 
 打开此设置后，OCR 处理将在图像文件上运行。 OCR 处理在下列情况下运行：
 
-- 将保管 [人和非保管人数据源](non-custodial-data-sources.md) 添加到案例时。 将 OCR 应用于图像文件时，将在集合期间搜索这些文件中的文本。 OCR 处理在高级 [索引过程中](indexing-custodian-data.md) 执行。 OCR 仅对在高级索引期间处理的项目运行。 例如，如果在高级索引过程中处理了部分索引或其他索引错误的大型 PDF 文件，则该文件也将应用 OCR。 换句话说，OCR 处理仅发生在高级索引过程中重新编制索引的文件上。 这意味着在某些情况下，保管人会添加到案例，但某些电子邮件附件不会针对 OCR 进行处理，因为在高级索引期间不会处理这些文件。
+- 将保管 [人和非保管人数据源](non-custodial-data-sources.md) 添加到案例时。 将 OCR 应用于图像文件时，将在集合期间搜索这些文件中的文本。 OCR 处理在高级 [索引过程中](indexing-custodian-data.md) 执行。 OCR 仅在高级索引期间处理的项上运行。 例如，如果在高级索引过程中处理了部分索引或其他索引错误的大型 PDF 文件，则该文件也将应用 OCR。 换句话说，OCR 处理仅发生在高级索引过程中重新编制索引的文件上。 这意味着在某些情况下，保管人可能会添加到案例，但某些电子邮件附件不会针对 OCR 进行处理，因为在高级索引期间不会处理这些文件。
 
-- 当来自其他数据源 (未与保管人关联且添加到非托管数据源中的案例的内容添加到) 审阅集时。
+- 如果来自其他数据源 (未与保管人关联且已添加到非托管数据源中的案例的内容，) 添加到审阅集。
 
 将数据添加到审阅集后，可以审阅、搜索、标记和分析图像文本。 可以在审阅集内所选图像文件的文本查看器中查看提取的文本。 有关详细信息，请参阅：
 

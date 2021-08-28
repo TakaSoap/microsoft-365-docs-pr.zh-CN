@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 通过将自定义磁贴添加到应用启动器，创建指向SharePoint、文档、应用、网站、外部网站和其他资源的快速链接。
-ms.openlocfilehash: c7b1b36ce38c1d1abc2197b78d3fd70396484b7229db6ba1356dc67003420e6f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 通过将自定义磁贴添加到应用启动器，创建指向电子邮件、文档、应用、SharePoint网站、外部网站和其他资源的快速链接。
+ms.openlocfilehash: d13be7d4bb89a8d1cebd2d59026f58bdc62c4a15
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825473"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566278"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
@@ -37,11 +37,11 @@ ms.locfileid: "53825473"
   
 可将自己的自定义磁贴添加到应用启动器，这些磁贴指向 SharePoint 网站、外部网站、旧版应用等。自定义磁贴显示在应用启动器的" **全部**"应用下，可将其固定到" **主页**"应用，并指示用户执行相同操作。这样做便于查找相关网站、应用和资源来完成工作。 在以下示例中，名为"Contoso 门户"的自定义磁贴用于访问组织的主要 SharePoint 网站。 
   
-![应用启动器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![应用启动器。](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
-1. 以全局管理员模式登录管理中心，转到"设置  >  **组织** 设置"，然后选择"组织 **配置文件"** 选项卡。
+1. 以全局管理员模式登录管理中心，转到"组织设置"设置"，然后选择"组织  >  **配置文件****"** 选项卡。
     
 2. 在"**组织配置文件"** 选项卡上，选择 **"自定义应用启动器磁贴"。**
   
@@ -82,7 +82,7 @@ ms.locfileid: "53825473"
   
 ## <a name="next-steps"></a>后续步骤
 
-除了向应用启动器添加磁贴外，还可以将应用启动器磁贴添加到导航 ([了解) 。](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) 若要自定义组织品牌Microsoft 365外观，请参阅自定义自定义Microsoft 365[主题](../setup/customize-your-organization-theme.md)。
+除了将磁贴添加到应用启动器之外，还可以将应用启动器磁贴添加到导航栏 ([了解) 。](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) 若要自定义组织品牌Microsoft 365外观，请参阅自定义自定义Microsoft 365[主题](../setup/customize-your-organization-theme.md)。
 
 ## <a name="related-content"></a>相关内容
 

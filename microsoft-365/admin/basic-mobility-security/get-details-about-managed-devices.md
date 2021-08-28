@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
-ms.openlocfilehash: 1d34f1b1dbb96227affffd31d794b7d0244298e25e3080ea08dcd3380399db4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826804"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564461"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 
@@ -33,23 +33,23 @@ ms.locfileid: "53826804"
 
 |**详细信息**|**在 PowerShell 中查找什么**|
 |:----------------|:------------------------------------------------------------------------------|
-|设备已注册基本移动性和安全性。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)| *isManaged 参数*   的值为：<br/>**True**= 设备已注册。<br/>**False**= 设备未注册。 |
+|设备已注册基本移动性和安全性。 有关详细信息，请参阅使用基本移动性和安全性 [注册移动设备](enroll-your-mobile-device.md)| *isManaged 参数*   的值为：<br/>**True**= 设备已注册。<br/>**False**= 设备未注册。 |
 |设备符合设备安全策略。 有关详细信息，请参阅 [创建设备安全策略](create-device-security-policies.md)| *isCompliant* 参数   的值为：<br/>**True**  = 设备符合策略。<br/>**False**  = 设备不符合策略。|
 
-:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本移动性和安全性 PowerShell 参数":::
+:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本移动性和安全性 PowerShell 参数。":::
 
 > [!NOTE]
 > 本文中的命令和脚本还返回有关由 Microsoft Intune 管理 [的任何设备的详细信息](https://www.microsoft.com/cloud-platform/microsoft-intune)。
 
 ## <a name="before-you-begin"></a>准备工作
 
-需要设置一些操作以运行本文中所述的命令和脚本。
+需要设置一些操作来运行本文中所述的命令和脚本。
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步骤 1：下载并安装Azure Active Directory模块Windows PowerShell
 
 有关这些步骤详细信息，请参阅 连接 [Microsoft 365 PowerShell。](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. 转到"Microsoft Online Services Sign-In IT 专业人员 [RTWl"，](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)然后选择   "下载 **Microsoft Online Services登录助手"。**
+1. 转到 ["Microsoft Online Services Sign-In IT](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)专业人员 RTWl 的助理"，   然后选择"下载 **Microsoft Online Services登录助手"。**
 
 2. 安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，具体步骤如下：
 
@@ -71,7 +71,7 @@ ms.locfileid: "53826804"
    $UserCredential = Get-Credential
    ```
 
-2. 在"Windows PowerShell凭据请求"对话框中，键入您的全局管理员帐户Microsoft 365用户名和密码，然后选择"确定 **"。**
+2. 在"Windows PowerShell凭据请求"对话框中，键入你的全局管理员帐户Microsoft 365用户名和密码，然后选择"确定 **"。**
 
 3. 运行以下命令：
 
@@ -175,7 +175,7 @@ ms.locfileid: "53826804"
    }
    ```
 
-2. 使用文件扩展Windows PowerShell文件，将其另存为脚本.ps1;例如，Get-MsolUserDeviceComplianceStatus.ps1。
+2. 使用文件扩展名Windows PowerShell另存为脚本.ps1;例如，Get-MsolUserDeviceComplianceStatus.ps1。
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>运行脚本获取单个用户帐户的设备信息
 

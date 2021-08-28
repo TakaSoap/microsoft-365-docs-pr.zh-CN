@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 选择在视图视图中查看内容Advanced eDiscovery，如文本、批注、转换或本机视图。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0cbb720ee935b9c6046eb2d7b78b1bcf8a06e9284bc01133145eb6c8ed0820ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aab4f5e2f5674392fd5577afdb12865b9405380
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865372"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565274"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>查看审阅集内的文档Advanced eDiscovery
 
@@ -53,17 +53,17 @@ ms.locfileid: "53865372"
 - 搜索词突出显示，突出显示文档中的术语以及滚动条
 - Diff 视图提供了一个比较视图，该比较视图在查看"近重复文档"时突出显示文本差异
 
-![文本视图](../media/Reviewimage4.png)
+![文本视图。](../media/Reviewimage4.png)
 
-![差异视图](../media/Reviewimage5.png)
+![差异视图。](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>批注视图
 
 注释视图提供允许用户对文档应用标记的功能，包括：
 
-- 区域修订 – 用户可以在文档上绘制一个框以隐藏敏感内容
+- 区域修订 – 用户可以在文档中绘制一个框以隐藏敏感内容
 - 铅笔 – 用户可以在文档上自由绘制，以便引起对文档某些部分的注意
-- 选择批注 - 用户可以选择文档中的批注以删除
+- 选择批注 - 用户可以选择文档中的批注以便删除
 - 切换批注透明度 – 使批注半透明，以便查看批注背后的内容
 - 上一页 – 导航到上一页
 - 下一页 – 导航到下一页
@@ -72,7 +72,7 @@ ms.locfileid: "53865372"
 - 旋转 – 用户可以顺时针旋转文档
 - 搜索 – 用户可以在文档中搜索并导航到文档中的各种点击
 
-  ![批注视图](../media/Reviewimage1.png)
+  ![批注视图。](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>仪表板视图
 

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用内置的"基本移动性和安全性"从已注册的设备中删除信息。
-ms.openlocfilehash: d9c31a037dfce1ad2a13cce8b384ebdbcc5164b9
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394308"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564413"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本移动性和安全性中擦除移动设备
 
@@ -38,7 +38,7 @@ ms.locfileid: "58394308"
 
 - **删除公司数据**：仅删除组织数据，并保留用户的移动设备上已安装的应用程序、照片和个人信息。
 
-- **在恢复出厂 (** 或删除公司数据) 擦除设备时，设备将从托管设备列表中删除。
+- **在恢复出厂 (** 或删除公司) 擦除设备时，设备将从托管设备列表中删除。
     
 - **自动重置设备**：可以设置基本移动性和安全策略，在用户尝试输入设备密码特定次数失败后自动恢复设备出厂设置。 为此，请按照创建基本移动性和安全性中的设备 [安全策略中的步骤操作](create-device-security-policies.md)。
     
@@ -50,7 +50,7 @@ ms.locfileid: "58394308"
 
 2. 在搜索字段中键入"移动设备管理"，然后从结果列表中选择"移动设备管理"。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="基本移动性和安全移动设备管理选项":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="基本移动性和安全移动设备管理选项。":::
 
 3. 选择 **"管理设备"。**
 
@@ -84,7 +84,7 @@ ms.locfileid: "58394308"
 
 |**内容影响**|**iOS 10 及更高版本**|**Android 5 及更高版本**|
 |:-----|:-----|:-----|
-|Microsoft 365受 Intune 应用保护策略保护，则擦除应用数据。 不会删除这些应用。 对于不受移动应用程序管理保护的设备 (MAM) 策略，Outlook OneDrive不会删除缓存的数据。<br/>**注意** 要应用 Intune 应用保护策略，你必须拥有 Intune 许可证。|是|是|
+|Microsoft 365受 Intune 应用保护策略保护，则擦除应用数据。 不会删除这些应用。 对于不受移动应用程序管理保护的设备 (MAM) 策略，Outlook OneDrive不会删除缓存数据。<br/>**注意** 要应用 Intune 应用保护策略，你必须拥有 Intune 许可证。|是|是|
 |不再强制执行基本移动性和安全性应用于设备的策略设置;用户可以更改设置。|是|是|
 |将删除由基本移动性和安全性创建的电子邮件配置文件，并删除设备上缓存的电子邮件。|是|不适用|
 

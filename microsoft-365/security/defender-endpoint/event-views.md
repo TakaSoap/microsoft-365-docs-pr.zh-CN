@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607213"
+ms.locfileid: "58567840"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -57,7 +57,7 @@ ms.locfileid: "58607213"
 
 2. 在 **事件查看器** 中键入"开始"菜单，然后打开 **事件查看器**。
 
-3. 选择 **操作** \> **导入自定义视图...**
+3. 选择 **操作**  >  **导入自定义视图...**
 
    > [!div class="mx-imgBorder"]
    > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画。](images/events-import.gif)
@@ -70,7 +70,7 @@ ms.locfileid: "58607213"
 
 ### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件查看器** 中键入"开始"菜单，然后打开Windows **事件查看器。**
+1. 在 **事件查看器** 中键入"开始"菜单，然后Windows **事件查看器。**
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
@@ -138,7 +138,7 @@ ms.locfileid: "58607213"
 
 ## <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 **Microsoft** > 服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 Microsoft > 应用程序和服务日志> Windows文件夹或提供程序下 **，** 如下表所列。
 
 可以在事件查看器中Windows这些事件：
 

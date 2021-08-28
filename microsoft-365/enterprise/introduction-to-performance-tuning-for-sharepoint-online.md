@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: 本文介绍了在 SharePoint Online 中设计页面时需要考虑的特定方面。
-ms.openlocfilehash: 248600582fe7fea550fc401bdbd25c68ba5c97e2c76321aaf835cbdb7e6c5d50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53849053"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567876"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online 性能优化简介
 
@@ -34,7 +34,7 @@ ms.locfileid: "53849053"
   
 - 页面加载速度
     
-- 每页需要多少个往返行程
+- 每个页面需要多少个往返行程
     
 - 服务问题
     
@@ -56,7 +56,7 @@ ms.locfileid: "53849053"
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>检查性能时使用标准用户帐户
 
-网站集管理员、网站所有者、编辑者或参与者属于其他安全组，具有其他权限，因此具有可SharePoint加载的其他元素。
+网站集管理员、网站所有者、编辑者或参与者属于其他安全组，具有其他权限，因此具有其他元素SharePoint加载在页面上。
   
 这适用于本地SharePoint和 SharePoint Online，但在本地方案中，差异不会像 SharePoint Online 中一样容易注意到。
   
@@ -92,13 +92,13 @@ ms.locfileid: "53849053"
   
 SharePoint服务器本地
   
-![内部部署服务器的屏幕截图](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![本地服务器的屏幕截图。](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![联机服务器的屏幕截图](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![联机服务器的屏幕截图。](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-使用 SharePoint Online，某些页面请求可能最终调用多个服务器。 最终，您可以为单个请求在服务器之间创建一个请求矩阵。 从页面加载的角度来看，这些交互成本很高，并且会使情况变慢。
+使用 SharePoint Online，某些页面请求实际上可能会结束调用多个服务器。 最终，您可以为单个请求在服务器之间创建一个请求矩阵。 从页面加载的角度来看，这些交互成本很高，并且会使情况变慢。
   
 这些服务器与服务器交互的示例包括：
   
@@ -120,7 +120,7 @@ SharePoint Online
     
 - The ISP
     
-无论使用哪个SharePoint (以及) 网络，通常会导致网络繁忙的事情包括：
+无论使用哪个SharePoint (以及) ，通常会导致网络繁忙的事情包括：
   
 - 大型负载
     
@@ -128,7 +128,7 @@ SharePoint Online
     
 - 与服务器的物理距离较大
     
-Microsoft SharePoint Online 中可以利用的一CDN (内容分发网络) 。 一CDN基本上是跨多个数据中心部署的服务器的分布式集合。 使用 CDN，即使客户端与原始 SharePoint 服务器距离非常远，页面上的内容也可以托管在靠近客户端的服务器上。 Microsoft 将在将来使用此功能来存储无法自定义的页面的本地实例，例如 SharePoint Online 管理员主页。 有关 CDN 的信息，请参阅内容 [交付网络](content-delivery-networks.md)。
+Microsoft SharePoint Online 中可以利用的一CDN (内容分发网络) 。 一CDN基本上是跨多个数据中心部署的服务器的分布式集合。 使用CDN，即使客户端与原始服务器距离原始服务器SharePoint，页面上的内容也可以托管在靠近客户端的服务器上。 Microsoft 将在将来使用此功能来存储无法自定义的页面的本地实例，例如 SharePoint Online 管理员主页。 有关 CDN 详细信息，请参阅内容 [交付网络](content-delivery-networks.md)。
   
 需要注意但可能无法执行很多工作的是 ISP 的连接速度。 简单的速度测试工具将告知你连接速度。
   
@@ -136,7 +136,7 @@ Microsoft SharePoint Online 中可以利用的一CDN (内容分发网络) 。 �
 
 从性能角度考虑 Web 浏览器有几个因素。
   
-访问复杂页面会影响性能。 大多数浏览器只有一个小型缓存 (大约 90 MB) ，而平均网页通常约为 1.6 MB。 这不会花很长时间就用不上。
+访问复杂页面会影响性能。 大多数浏览器仅具有大约 90 MB (小型缓存) ，而平均网页通常约为 1.6 MB。 这不会花很长时间就用不上。
   
 带宽也可能成为问题。 例如，如果用户在另一个会话中观看视频，这将影响你的SharePoint性能。 虽然无法阻止用户流式传输媒体，但可以控制页面加载用户的方式。
   

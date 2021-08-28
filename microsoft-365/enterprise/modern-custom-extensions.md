@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化自定义扩展的性能。
-ms.openlocfilehash: c0944742ca375856a17f8777e22ee358fb88c070e27b57f26106a4f2d7080934
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22129cb831cc1346f428aadd7d1308f63b7e3112
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864288"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565918"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化自定义扩展的性能
 
@@ -47,7 +47,7 @@ ms.locfileid: "53864288"
 
 如果扩展影响页面加载时间或页面上的扩展过多，则结果将显示在结果的" **需要注意** "部分。 单击结果，以查看有关哪个扩展正在缓慢加载的详细信息或已突出显示太多扩展。 适用于 SharePoint 的页面诊断工具的未来更新可能包括更新分析规则，因此请确保始终拥有该工具的最新版本。
 
-![页面加载时间结果](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![页面加载时间结果。](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 结果中的可用信息包括：
 
@@ -105,7 +105,7 @@ ms.locfileid: "53864288"
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
-![页面加载时间结果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![页面加载时间结果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >页面加载时间可能由于网络加载、具体时间和其他暂时条件等各种因素而有所不同。 应在更改前后多次测试页面加载时间，以帮助求出结果平均值。

@@ -1,5 +1,5 @@
 ---
-title: 基本移动性和安全性概述Microsoft 365
+title: 基本移动性和安全性Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性设置设备安全策略和访问规则。
-ms.openlocfilehash: 6ae42b9d7515e027e826fe7735a63b23ffd0eff04cb37995d28c60c9dddfada1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a5fe6c4d6350871a2c7013d1de3df8b2911ceca1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826840"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565620"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本移动性和安全性概述Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本移动性和安全性Microsoft 365
 
 当移动设备连接到您的组织时，您可以使用基本移动性和安全性Microsoft 365移动设备的安全。 用于访问工作电子邮件、日历、联系人及文档的移动设备（如智能手机和平板电脑）在确保员工随时随地完成工作方面起着非常重要的作用。 因此，在用户使用设备时，帮助保护组织的信息至关重要。 您可以使用基本移动性和安全性设置设备安全策略和访问规则，以及擦除丢失或被盗的移动设备。
 
-:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="基本移动和安装程序":::
+:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="基本移动和安装程序。":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>您可以管理哪些类型的设备？
 
@@ -42,7 +42,7 @@ ms.locfileid: "53826840"
 
 全局Microsoft 365管理员必须完成以下步骤才能激活和设置基本移动性和安全性。 有关详细步骤，请按照设置基本 [移动性和安全性中的指导操作](set-up.md)。 
 
-以下是步骤摘要：
+以下是步骤的摘要：
 
 **步骤 1：** 按照设置基本移动性和安全性 中的步骤激活  [基本移动性和安全性](set-up.md)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "53826840"
 
 **步骤 3：** 创建设备策略，并应用于用户组。 当你这样做时，你的用户会在你的设备上收到注册消息，当他们完成注册后，他们的设备将受限于你为它们设置的策略。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本安全和移动策略设置":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本安全和移动策略设置。":::
 
 ## <a name="device-management-tasks"></a>设备管理任务
 
@@ -58,11 +58,11 @@ ms.locfileid: "53826840"
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>管理设备和应用的其他方法
 
-如果你只需使用 MAM (移动应用) ，也许对于在其自己的设备上更新工作项目的人，Intune 提供了除注册和管理设备之外的另一个选项。 Intune 订阅允许你使用 Azure 门户设置 MAM 策略，即使用户的设备未在 Intune 中注册。 有关详细信息，请参阅应用 [保护策略概述](/mem/intune/apps/app-protection-policy)。
+如果你只需使用 MAM (移动应用) ，也许对于在其自己的设备上更新工作项目的人，Intune 除了注册和管理设备外，还提供另一个选项。 Intune 订阅允许你使用 Azure 门户设置 MAM 策略，即使用户的设备未在 Intune 中注册。 有关详细信息，请参阅应用 [保护策略概述](/mem/intune/apps/app-protection-policy)。
 
 ## <a name="related-content"></a>相关内容
 
 [Set up Basic Mobility and Security](set-up.md) (article) \
 [使用基本移动性和安全性功能](enroll-your-mobile-device.md) 注册移动设备 (文章) \
 [管理在移动设备管理中注册的设备Microsoft 365 (](manage-enrolled-devices.md)文章) \
-[获取有关由基本移动性和安全性服务管理](get-details-about-managed-devices.md) 的设备 (文章) 
+[有关由基本移动性和安全性管理的设备的详细信息， (](get-details-about-managed-devices.md) 文章) 

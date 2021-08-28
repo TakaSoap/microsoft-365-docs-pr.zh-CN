@@ -14,22 +14,22 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: Advanced eDiscovery中的相关性模块将于 2021 年 3 月 10 日停用。 本文介绍在停用相关性之前要执行哪些工作。 具体而言，通过运行批计算完成任何未完成的模型，以便可以保留模型中的元数据。
-ms.openlocfilehash: c64a0e1f42fc1904c91c4ac30a74cecb975b1b18c0a3426e63bd5ca2aac45feb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1005c7a1c065adba039f6f07197dbca758d20ea4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871450"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565400"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>停用中的相关性模块Advanced eDiscovery
 
-2021 年 3 月 10 日，我们将于 2021 年 3 月 10 日停用 Advanced eDiscovery。 此停用意味着组织将不再能够访问相关性模块 (通过访问 Advanced eDiscovery 案例的"管理审阅集相关性") 或能够访问任何现有相关性  >  模型。 即将停用的当前相关性模块将在 2021 年第 2 季度替换为新的预测编码解决方案。 这一新功能将允许组织在更轻松、更直观的工作流中构建自己的预测编码模型。
+2021 年 3 月 10 日，我们将于 2021 年 3 月 10 日停用 Advanced eDiscovery。 此停用意味着组织将无法再访问相关性模块 (，方法为在 Advanced eDiscovery 案例中管理审阅集相关性) 或能够访问任何现有相关性  >  模型。 即将停用的当前相关性模块将在 2021 年第 2 季度替换为新的预测编码解决方案。 这一新功能将允许组织在更轻松、更直观的工作流中构建自己的预测编码模型。
 
 若要准备即将停用，我们建议使用相关性模块的组织通过运行所有现有模型的批处理计算，在停用日期之前导出其模型的输出。 模型的所有相关性分数将永久存储在相应的审阅集内，在导出文档时可访问。 相关性分数也会作为元数据保留在加载文件中。 此外，您仍能够基于相关性分数筛选审阅集内的内容，并有权访问相关性模型生成的所有元数据。
 
 ## <a name="complete-unfinished-models"></a>完成未完成的模型
 
-对于任何未完成的相关性模型，请完成评估、培训和批量计算，以便可以将模型应用到审阅集内的文档。 完成批计算将在相关性模块停用日期后保留信息。
+对于任何未完成的相关性模型，请完成评估、培训和批量计算，以便可以将模型应用到审阅集内的文档。 完成批处理计算将在相关性模块停用日期后保留信息。
 
 以下是完成任何未完成模型的步骤：
 
@@ -37,7 +37,7 @@ ms.locfileid: "53871450"
 
    以下屏幕截图显示了一个可供批量计算的模块。 请注意，评估和培训已完成，下一步是运行批量计算。
 
-   ![准备好进行批量计算的模型的屏幕截图](../media/ReadyForBatchCalculation.png)
+   ![准备好进行批量计算的模型的屏幕截图。](../media/ReadyForBatchCalculation.png)
 
 2. 运行批处理计算。 请参阅 [执行批处理计算](track-relevance-analysis-in-advanced-ediscovery.md#performing-batch-calculation)。
 

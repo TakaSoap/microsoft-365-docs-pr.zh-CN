@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在工作流中使用内置保管人Advanced eDiscovery协调工作流，并识别相关数据源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3fc08eb6602331ef12cba45ed5106cf692272a8f80537a2cd73fc6bd357efd2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837214"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564238"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>将保管人添加到Advanced eDiscovery案例
 
-使用 Advanced eDiscovery 中的内置保管人管理工具协调您的工作流，以管理保管人并识别与案例相关的监管数据源。 添加保管人时，系统可自动识别并保留其邮箱Exchange帐户OneDrive for Business保留。 在调查的发现过程中，您还可以确定保管人访问 (参与的其他数据源，如Teams) 邮箱、网站或网站。 在这种情况下，可以使用保管人管理工具将那些数据源关联为特定保管人。 将保管人添加到案例并将其他数据源与它们关联后，您可以快速保留数据并搜索监管数据。
+使用 Advanced eDiscovery 中的内置保管人管理工具协调工作流，以管理保管人并确定与案例关联的相关、监管数据源。 添加保管人时，系统可自动识别并保留其邮箱Exchange帐户OneDrive for Business保留。 在调查的发现过程中，您还可以确定保管人访问 (参与的其他数据源，如Teams) 邮箱、网站或网站。 在这种情况下，可以使用保管人管理工具将那些数据源关联为特定保管人。 将保管人添加到案例并将其他数据源与它们关联后，您可以快速保留数据并搜索监管数据。
 
-您可以在以下四个步骤中添加和管理Advanced eDiscovery保管人：
+可以在以下四个步骤中添加和管理Advanced eDiscovery保管人：
 
 1. 确定保管人。
 
@@ -38,7 +38,7 @@ ms.locfileid: "53837214"
 
 4. 查看保管人并完成此过程。
 
-   [!["源"选项卡Advanced eDiscovery大小写 ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [!["源"选项卡Advanced eDiscovery大小写。 ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>确保您具有必要的权限
 
@@ -58,23 +58,23 @@ ms.locfileid: "53837214"
 
 ## <a name="step-2-choose-custodian-data-locations"></a>步骤 2：选择保管人数据位置
 
-选择保管人后，系统会自动尝试标识并验证这些用户及其数据源。 将保管人添加到列表中后，该工具将自动包含每个保管人的主OneDrive帐户。 在向案例添加保管人时，可以选择不包括这些数据源。
+选择保管人后，系统会自动尝试标识并验证这些用户及其数据源。 向列表中添加保管人后，该工具会自动包含每个保管人的主OneDrive和托管帐户。 在向案例添加保管人时，可以选择不包括这些数据源。
 
-除了保管人邮箱和 OneDrive 帐户，您还可以将其他数据位置关联到保管人，例如 SharePoint 站点或保管人是其中一个成员的 Microsoft Team。 这允许您保留、收集、分析和查看与案例保管人关联的其他数据源中的内容。
+除了保管人邮箱和 OneDrive 帐户之外，您还可以将其他数据位置关联到保管人，例如 SharePoint 站点或保管人是其中一个成员的 Microsoft Team。 这允许您保留、收集、分析和查看与案例保管人关联的其他数据源中的内容。
 
 若要取消选择保管人的主邮箱OneDrive帐户，
 
 1. 展开保管人以查看已自动与每个保管人关联的主数据位置。
 
-2. 选择 **"****邮箱或** OneDrive"旁边的"清除"，将保管人邮箱或OneDrive帐户作为此保管人的数据位置相关联。
+2. 选择 **"****邮箱或** OneDrive"旁边的"清除"，OneDrive保管人邮箱或帐户作为此保管人的数据位置进行关联。
 
-   ![配置要与保管人关联的位置](../media/ConfigureCustodianLocations.png)
+   ![配置要与保管人关联的位置。](../media/ConfigureCustodianLocations.png)
 
 若要将其他邮箱、站点、Teams或Yammer组关联到特定保管人：
 
 1. 展开保管人以显示以下服务以将数据位置与保管人关联。 单击 **服务** 旁边的"编辑"以添加数据位置。
 
-   - **Exchange：** 用于将其他邮箱与保管人关联。 在搜索框中键入用户邮箱或 (组的名称或别名) 至少包含三个字符。 选择要分配给保管人的邮箱，然后单击"添加 **"。**
+   - **Exchange：** 用于将其他邮箱与保管人关联。 在搜索框中键入用户邮箱或通讯 (名称或别名) 至少包含三个字符。 选择要分配给保管人的邮箱，然后单击"添加 **"。**
 
    - **SharePoint：** 用于将SharePoint网站与保管人关联。 在列表中选择网站，或在搜索框中键入 URL 来搜索网站。 选择要分配给保管人的网站，然后单击"添加 **"。**
 
@@ -83,7 +83,7 @@ ms.locfileid: "53837214"
    - **Yammer：** 用于分配Yammer保管人当前是其中一个成员的组。 选择要分配给保管人的组，然后单击"添加 **"。** 添加团队后，系统会自动标识并找到SharePoint组关联的网站和组邮箱，并将其分配给保管人。
 
    > [!NOTE]
-   > 可以使用 Exchange和 SharePoint 位置选取器将 (不是保管人成员的其他团队或 Yammer 组) 保管人。 为此，您必须添加与每个团队或组关联的邮箱和Yammer网站。
+   > 您可以使用 Exchange和 **SharePoint** 位置选取器将其他团队或 Yammer 组 (保管人不是保管人) 的成员。 为此，您必须添加与每个团队或组关联的邮箱和Yammer网站。
 
 2. 通过展开表中的每个保管人，可以查看分配给每个保管Teams的邮箱、站点、Yammer组总数。 在最终确定每个保管人分配的数据位置后，这些关联将在托管工作流中的收集、处理和审阅阶段Advanced eDiscovery使用。
 
@@ -102,16 +102,16 @@ ms.locfileid: "53837214"
 2. 验证保管人保留选择，然后单击下一 **步**。
 
    > [!NOTE]
-   > 如果您没有将保管人保留，则保管人及其关联的数据源将添加到案例，但与该案例关联的保留不会保留这些数据源中的内容。
+   > 如果未将保管人保留，则保管人及其关联的数据源将添加到案例，但与该案例关联的保留不会保留这些数据源中的内容。
 
 ## <a name="step-4-review-the-custodians-and-complete-the-process"></a>步骤 4：检查保管人并完成此过程
 
 在将保管人实际添加到案例之前，你可以查看保管人列表、分配给保管人的数据位置以及保留设置。
 
-1. 验证并查看与表中每个保管人关联的所有数据源计数和保留设置。 如有必要，请返回到"识别 **保管人** "或" **保留设置"** 页以做出任何更改。
+1. 验证并查看与表中的每个保管人关联的所有数据源计数和保留设置。 如有必要，请返回到"识别 **保管人** "或" **保留设置"** 页以做出任何更改。
 
 2. 单击 **"** 提交"将保管人及其数据位置添加到案例，并应用所有托管保留设置。
 
    新保管人将添加到案例，并显示在" **数据源"** 选项卡上。
 
-   [!["数据源"选项卡上列出的保管人 ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [!["数据源"选项卡上列出的保管人。 ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)

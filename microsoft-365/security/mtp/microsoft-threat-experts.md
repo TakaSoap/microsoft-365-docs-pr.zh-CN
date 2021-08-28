@@ -1,7 +1,7 @@
 ---
-title: Microsoft 威胁专家 Defender Microsoft 365概述
+title: Microsoft 威胁专家概述Microsoft 365 Defender
 ms.reviewer: ''
-description: Microsoft 威胁专家为 Defender 提供额外的专业技能Microsoft 365层。
+description: Microsoft 威胁专家为组织提供额外一层Microsoft 365 Defender。
 keywords: 托管威胁搜寻服务、托管威胁搜寻、托管检测和响应 (MDR) 服务、MTE、Microsoft 威胁专家
 search.product: Windows 10
 search.appverid: met150
@@ -15,12 +15,12 @@ localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: a545794e0ca5739f0b65513edce0c61bb649ad82
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764419"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565668"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 威胁专家概述Microsoft 365
 
@@ -41,9 +41,9 @@ Microsoft 威胁专家 – 按需专家可让你获取有关组织面临的威�
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知的资格要求。
 
-如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，则可以通过 Microsoft 威胁专家 Defender 门户申请Microsoft 365攻击通知。 转到设置 >**终结点>常规**>高级> Microsoft 威胁专家 - 目标攻击通知"，然后选择"应用 **"。** 请参阅[配置Microsoft 威胁专家](./configure-microsoft-threat-experts.md)功能了解完整说明。
+如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，可以通过其Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。 转到 **"设置 >终结点>常规**>高级> Microsoft 威胁专家 - 目标攻击通知"，然后选择"应用 **"。** 请参阅[配置Microsoft 威胁专家](./configure-microsoft-threat-experts.md)功能了解完整说明。
 
-![MTE 应用程序页的屏幕截图](../../media/mte/mte-collaboratewithmte.png)
+![MTE 应用程序页面的屏幕截图。](../../media/mte/mte-collaboratewithmte.png)
 
 应用程序获得批准后，每当威胁专家检测到环境威胁时，你都会开始接收目标攻击通知。
 
@@ -58,7 +58,7 @@ the Microsoft 威胁专家 – Targeted Attack Notification capability provides 
 - 威胁监视和分析，减少停留时间并降低业务风险
 - 经过专业培训的人工智能，可发现已知攻击和新兴威胁并针对它们
 - 确定最相关的风险，帮助 SOC 最大限度地提高其有效性
-- 帮助确定泄露范围并提供尽可能快的上下文，以启用快速 SOC 响应。
+- 帮助确定泄露范围并提供尽可能快的上下文，以实现快速 SOC 响应。
 
 ## <a name="collaborate-with-experts-on-demand"></a>按需与专家协作
 
@@ -71,19 +71,19 @@ the Microsoft 威胁专家 – Targeted Attack Notification capability provides 
 可在整个 **门户中的** 多个位置选择"咨询威胁专家"：
 
 - <i>**设备页面操作菜单**</i><BR>
-!["设备"页面操作菜单中 MTE-EOD 菜单选项的屏幕截图](../../media/mte/device-actions-mte-highlighted.png)
+!["设备"页面操作菜单中 MTE-EOD 菜单选项的屏幕截图。](../../media/mte/device-actions-mte-highlighted.png)
 
 - <i>**设备清单页面弹出菜单**</i><BR>
-![设备清单页面上 MTE-EOD 菜单选项的屏幕截图](../../media/mte/device-inventory-mte-highlighted.png)
+![设备清单页面上 MTE-EOD 菜单选项的屏幕截图。](../../media/mte/device-inventory-mte-highlighted.png)
 
 - <i>**警报页面弹出菜单**</i><BR>
-![警报页面上 MTE-EOD 菜单选项的屏幕截图](../../media/mte/alerts-actions-mte-highlighted.png)
+![警报页面上 MTE-EOD 菜单选项的屏幕截图。](../../media/mte/alerts-actions-mte-highlighted.png)
 
 - <i>**事件页面操作菜单**</i><BR>
-![事件页面上 MTE-EOD 菜单选项的屏幕截图](../../media/mte/incidents-action-mte-highlighted.png)
+![事件页面上 MTE-EOD 菜单选项的屏幕截图。](../../media/mte/incidents-action-mte-highlighted.png)
 
 - <i>**事件清单页**</i><BR>
-![事件清单页面上 MTE-EOD 菜单选项的屏幕截图](../../media/mte/incidents-inventory-mte-highlighted.png)
+![事件清单页面上 MTE-EOD 菜单选项的屏幕截图。](../../media/mte/incidents-inventory-mte-highlighted.png)
 
 > [!NOTE]
 > 如果你拥有映射到 Microsoft Defender for Office 365 许可证的顶级支持订阅，可以通过 Microsoft 服务中心跟踪专家按需案例的状态。

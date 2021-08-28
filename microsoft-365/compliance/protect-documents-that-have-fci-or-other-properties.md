@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 DLP () 数据丢失防护策略来保护具有来自第三方系统的属性的文档。
-ms.openlocfilehash: a3dc0cd9d73382c1c0c1df47b346dd13c9563b66088a9eef592069e46a751596
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be0ca4901b8f32aca4c50daa45c059388561832f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801623"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567660"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
@@ -34,15 +34,15 @@ Microsoft 365 DLP 策略 (数据丢失) 可以使用分类属性或项目属性�
 - SharePoint文档属性
 - 第三方系统文档属性
 
-![显示 Office 365 和外部分类系统的图表](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![显示外部Office 365和外部分类系统的图表。](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-例如，您的组织可能使用 Windows Server FCI 来标识具有个人数据（如社会保险号）的项目，然后根据文档中找到的个人数据的类型和发生次数，将"个人身份信息"属性设置为"高、中等、**低**、公开"或"非 **PII"，** 对文档进行分类。 
+例如，您的组织可能使用 Windows Server FCI 来标识具有个人数据的项目（如社会保险号），然后根据文档中找到的个人数据的类型和发生次数，将个人身份信息属性设置为 **"** 高、中等、低、公开"或"非 **PII"，** 对文档进行分类。 
 
-在Microsoft 365中，您可以创建一个 DLP 策略，用于标识将该属性设置为特定值（如 **High** 和 **Medium）** 的文档，然后执行阻止访问这些文件等操作。 如果将属性设置为“低”，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 这样，DLP 与 Windows Server FCI 集成，并可帮助保护上载Office文档或从基于服务器Microsoft 365 Windows共享的文档。
+在Microsoft 365中，您可以创建一个 DLP 策略，用于标识将该属性设置为特定值（如 **High** 和 **Medium）** 的文档，然后执行阻止访问这些文件等操作。 如果将属性设置为“低”，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 这样，DLP 与 Windows Server FCI 集成，并可帮助保护上载Office或共享到 Microsoft 365 的文档Windows基于服务器的文件服务器。
 
 DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。 例如，SharePoint 网站集可能使用名为“行程报告”的内容类型，包含名为“客户”的必填字段。 只要有人创建行程报告，就必须输入客户名称。 此属性名称/值对也可在 DLP 策略中使用，例如，如果您希望在"客户"字段包含 **Contoso** 时阻止来宾访问文档的规则。
 
-如果要将 DLP 策略应用于具有特定标签Microsoft 365的内容，则不应按照此处的步骤操作。 相反，了解如何 [使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
+如果要将 DLP 策略应用于具有特定标签Microsoft 365，则不应按照此处的步骤操作。 相反，了解如何 [使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
 
 ## <a name="before-you-create-the-dlp-policy"></a>在创建 DLP 策略之前
 
@@ -63,17 +63,17 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 ### <a name="step-2-create-a-managed-property"></a>步骤 2：创建托管属性
 
-1. 登录 Microsoft 365 管理中心。
+1. 登录到 Microsoft 365 管理中心。
 
-2. 在左侧导航栏中，选择"管理 **中心** \> **SharePoint"。** You're now in the SharePoint admin center.
+2. 在左侧导航栏中，选择"**管理中心** \> **SharePoint"。** You're now in the SharePoint admin center.
 
-3. 在左侧导航栏中，在"**搜索管理"** \> 页上选择"搜索 **""** \> **管理搜索架构"。**
+3. 在左侧导航栏中，**在"搜索管理"** \> 页上选择"搜索 **""** \> **管理搜索架构"。**
 
-   ![SharePoint 管理中心内的搜索管理页面](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+   ![管理中心中的SharePoint页。](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
 
 4. 在" **托管属性"** 页上的 \> **"新建托管属性"上**。
 
-   ![突出显示“新建托管属性”按钮的“托管属性”页面](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
+   ![突出显示"新建托管属性"按钮的"托管属性"页。](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
 
 5. 输入属性的名称和说明。此名称将显示在您的 DLP 策略中。
 
@@ -81,11 +81,11 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 7. 在“主要特征”下，选择“可查询”和“可检索”。
 
-8. 在 **"到已爬网属性的映射"** \> **下，添加映射**。
+8. 在 **"到已爬网属性的映射"** \> **下添加映射**。
 
-9. 在"**已爬网属性** 选择"对话框中，查找并选择与 Windows Server FCI 属性或将在 DLP 策略 OK 中使用的其他属性相对应的已爬网 \> \> **属性**。
+9. 在"**已爬网属性** 选择"对话框中，查找并选择与 Windows Server FCI 属性或将在 DLP 策略中使用的其他属性 OK 相对应的已爬网 \> \> **属性**。
 
-   ![已爬网属性选择对话框](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+   ![已爬网属性选择对话框。](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
 10. 在页面底部确定 \> 。
 
@@ -95,7 +95,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 首先，它们按照上述步骤在 SharePoint Online 中创建托管属性，该属性映射到从 FCI 属性自动创建的已爬网属性。
 
-接下来，它们使用两个规则创建 DLP 策略，这两个规则都使用条件 **"文档属性包含以下任一值"：**
+接下来，他们创建一个 DLP 策略，其中包含两个规则，这两个规则都使用条件 **"文档属性包含以下任一值"：**
 
 - **FCI PII 内容 - 高、中等** 如果 FCI 分类属性"个人身份信息"等于"高"或"中等"，并且文档与组织外部人员共享，则第一个规则将限制对文档的访问。 
 
@@ -125,13 +125,13 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows服务器 FCI 包括许多内置属性，包括此示例 **中使用的** 个人身份信息。 每个属性的可能值对于每个组织可能不同。 此处 **使用的** **High、Moderate** 和 **Low** 值只是一个示例。 对于组织，可以在基于Windows服务器的文件服务器上查看服务器资源管理器中的 Windows Server FCI 分类属性及其可能值。 有关详细信息，请参阅创建 [分类属性](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
+   Windows服务器 FCI 包括许多内置属性，包括此示例 **中使用的** 个人身份信息。 每个属性的可能值对于每个组织可能不同。 此处 **使用的** **High、Moderate** 和 **Low** 值只是一个示例。 对于组织，可以在基于 Windows Server 的文件服务器的"服务器资源管理器"文件中查看 Windows Server FCI 分类属性及其可能值。 有关详细信息，请参阅创建 [分类属性](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11))。
 
 完成后，您的策略应具有两个新规则，这两个规则都使用 **Document 属性包含这些值中的任意一个** 条件。 此条件不会显示在 UI 中，但将显示其他条件、操作和设置。
 
 一个规则阻止访问其中“个人身份信息”属性等于“高”或“中等”的内容。 第二个规则会发送有关“个人身份信息”属性等于“低”的内容的通知。
 
-![显示刚创建的两条规则的“新建 DLP 策略”对话框](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![显示刚创建的两个规则的"新建 DLP 策略"对话框。](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
 
 ## <a name="after-you-create-the-dlp-policy"></a>创建 DLP 策略之后
 

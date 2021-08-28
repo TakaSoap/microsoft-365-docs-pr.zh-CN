@@ -1,7 +1,7 @@
 ---
 title: 曝光分数（以危险和漏洞管理
-description: 公开危险和漏洞管理分数反映了组织对网络安全威胁的易受攻击程度。
-keywords: 曝光分数， 适用于终结点曝光分数的 Microsoft Defender， 适用于终结点电视曝光分数的 Microsoft Defender， 组织曝光分数， 电视组织曝光分数， 危险和漏洞管理， 适用于终结点的 Microsoft Defender
+description: 公开危险和漏洞管理分数反映了你的组织对网络安全威胁的易受攻击程度。
+keywords: 曝光分数， Microsoft Defender 终结点曝光分数， Microsoft Defender 终结点电视曝光分数， 组织曝光分数， 电视组织曝光分数， 危险和漏洞管理， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0daf8c36a4b216cd79d43e6832816350f554b8d9e7a307649552a6bf9c97e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565818"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
@@ -37,7 +37,7 @@ ms.locfileid: "53853568"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-你的曝光分数显示在 Microsoft 365 Defender[门户的威胁漏洞管理](tvm-dashboard-insights.md)仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
+你的曝光分数显示在威胁和威胁漏洞管理[门户](tvm-dashboard-insights.md)的Microsoft 365 Defender仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
 
 - 快速了解和识别有关组织中安全状态的高层次要点。
 - 检测和响应需要调查或操作以改进当前状态的区域。
@@ -45,7 +45,7 @@ ms.locfileid: "53853568"
 
 卡片可让你高级查看一段时间的曝光分数趋势。 图表中的任何峰值都直观地指示高网络安全威胁暴露，你可以进一步调查。
 
-![曝光分数卡](images/tvm_exp_score.png)
+![曝光分数卡。](images/tvm_exp_score.png)
 
 ## <a name="how-it-works"></a>运作方式
 

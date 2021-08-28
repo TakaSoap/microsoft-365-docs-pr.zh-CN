@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: e3e8ff4f94b0295b4ce42e20175a3547cfb4ae23
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58359868"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566682"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Defender for Identity 实体标记Microsoft 365 Defender
 
@@ -30,13 +30,13 @@ ms.locfileid: "58359868"
 
 在Microsoft 365 Defender中，你可以设置三种类型的 Defender for Identity 实体标记：**敏感** 标记 **、Honeytoken** 标记和Exchange **服务器标记**。
 
-若要设置这些标记 [，Microsoft 365 Defender，请转到](https://security.microsoft.com/)"设置"和"**标识"。**
+若要设置这些标记 [，Microsoft 365 Defender，](https://security.microsoft.com/)请转到"设置"和"**标识"。**
 
-![转到"设置"，然后转到"标识"](../../media/defender-identity/settings-identities.png)
+![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
 标记设置将显示在实体标记 **下**。
 
-![标记设置类型](../../media/defender-identity/tag-settings.png)
+![标记设置类型。](../../media/defender-identity/tag-settings.png)
 
 若要设置每种类型的标记，请按照下面的说明操作。
 
@@ -48,15 +48,15 @@ Sensitive **标记** 用于标识高价值资产。 横向移动路径还依赖�
 
 1. 选择 **敏感**。 然后，你将看到现有的敏感 **用户****、设备和****组**。
 
-    ![敏感实体](../../media/defender-identity/sensitive-entities.png)
+    ![敏感实体。](../../media/defender-identity/sensitive-entities.png)
 
 1. 在每个类别下，选择 **"标记..."** 以标记该类型的实体。 例如，在"组 **"下**，选择 **"标记组"。** 将打开一个窗格，包含您可以选择标记的组。 若要搜索组，请在搜索框中输入组的名称。
 
-    ![添加组](../../media/defender-identity/add-groups.png)
+    ![添加组。](../../media/defender-identity/add-groups.png)
 
 1. 选择你的组，然后单击添加 **选择。**
 
-    ![添加选择](../../media/defender-identity/add-selection.png)
+    ![添加选择。](../../media/defender-identity/add-selection.png)
 
 ## <a name="honeytoken-tags"></a>Honeytoken 标记
 
@@ -66,15 +66,15 @@ Honeytoken 实体用作恶意主角的陷阱。 与这些 honeytoken 实体关�
 
 1. 选择 **Honeytoken**。 然后，你将看到现有的 honeytoken **用户****和设备**。
 
-    ![Honeytoken 实体](../../media/defender-identity/honeytoken-entities.png)
+    ![Honeytoken 实体。](../../media/defender-identity/honeytoken-entities.png)
 
 1. 在每个类别下，选择 **"标记..."** 以标记该类型的实体。 例如，在"用户 **"下**，选择 **"标记用户"。** 将打开一个窗格，包含您可以选择标记的组。 若要搜索组，请在搜索框中输入组的名称。
 
-    ![添加用户](../../media/defender-identity/add-users.png)
+    ![添加用户。](../../media/defender-identity/add-users.png)
 
 1. 选择你的用户，然后单击添加 **选择。**
 
-    ![添加选定用户](../../media/defender-identity/add-selected-user.png)
+    ![添加所选用户。](../../media/defender-identity/add-selected-user.png)
 
 ## <a name="exchange-server-tags"></a>Exchange服务器标记
 
@@ -82,15 +82,15 @@ Defender for Identity Exchange服务器视为高价值资产，并自动将其�
 
 1. 选择 **Exchange服务器"。** 然后，你将看到标有 Exchange **服务器标记的现有** 设备。
 
-    ![Exchange服务器](../../media/defender-identity/exchange-servers.png)
+    ![Exchange服务器。](../../media/defender-identity/exchange-servers.png)
 
 1. 若要将设备标记为Exchange服务器，请选择"**标记设备"。**  将打开一个窗格，并包含可选择标记的设备。 若要搜索设备，请在搜索框中输入其名称。
 
-    ![添加设备](../../media/defender-identity/add-devices.png)
+    ![添加设备。](../../media/defender-identity/add-devices.png)
 
 1. 选择你的设备，然后单击添加 **选择。**
 
-    ![选择设备](../../media/defender-identity/select-device.png)
+    ![选择设备。](../../media/defender-identity/select-device.png)
 
 ## <a name="see-also"></a>另请参阅
 

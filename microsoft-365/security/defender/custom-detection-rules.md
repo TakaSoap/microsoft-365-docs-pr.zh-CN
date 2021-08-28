@@ -1,5 +1,5 @@
 ---
-title: 在网站中创建自定义检测规则Microsoft 365 Defender
+title: 在网站中创建自定义检测Microsoft 365 Defender
 description: 了解如何创建和管理基于高级搜寻查询的自定义检测规则
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 规则， 架构， kusto， RBAC， 权限， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1d0095860242492dc8dd5e370f8583aaed7cff4
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 69775e57bda2c49af2fe4c0b2c81ba86394073a5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594216"
+ms.locfileid: "58565722"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -42,15 +42,15 @@ ms.locfileid: "58594216"
 
 若要管理自定义检测，需要分配有以下角色之一：
 
-- **安全管理员**- 具有 [此Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-administrator)角色的用户可以管理 Microsoft 365 Defender 门户和其他门户和服务中的安全设置。
+- **安全管理员**- 具有 [此](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)Azure Active Directory 角色的用户可以管理 Microsoft 365 Defender 门户和其他门户和服务中的安全设置。
 
-- **安全** 操作员 - 具有 [](/azure/active-directory/roles/permissions-reference#security-operator)此 Azure Active Directory 角色的用户可以管理警报，并且对安全相关功能（包括 Microsoft 365 Defender 门户中所有信息）具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
+- **安全** 操作员 - 具有 [此](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)Azure Active Directory 角色的用户可以管理警报，并且对安全相关功能（包括 Microsoft 365 Defender 门户中所有信息）具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
 
-如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有针对Microsoft 365 Defender的Office，您可以使用表而不是表创建自定义 `Email` `Identity` 检测。  
+如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有针对Microsoft 365 Defender的Office，可以使用表而不是表创建自定义 `Email` `Identity` 检测。  
 
 若要管理所需的权限，全局 **管理员可以** ：
 
-- 在角色 **安全** 管理员 **下分配** 安全管理员Microsoft 365 管理中心 [](https://admin.microsoft.com/)  >  **安全操作员角色**。
+- 在角色 **安全** 管理员下 **分配** 安全管理员Microsoft 365 管理中心 [](https://admin.microsoft.com/)  >  **安全操作员角色**。
 - Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender 安全中心](https://securitycenter.windows.com/)under **设置**  >  **Permissions**  >  **Roles**. 选择相应的角色以分配 **管理安全设置** 权限。
 
 > [!NOTE]
@@ -223,7 +223,7 @@ DeviceEvents
 - 运行触发高级搜寻警报的查询
 
 ### <a name="review-actions"></a>查看操作
-在规则详细信息屏幕 (搜寻自定义检测  >    >  **[规则名称]**) ，转到触发的操作，其中列出了基于规则匹配项采取的操作。
+在规则详细信息屏幕中 (搜索自定义检测  >    >  **[规则名称]**) ，转到"触发的操作"，其中列出了根据规则匹配采取的操作。
 
 >[!TIP]
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。

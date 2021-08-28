@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 摘要：为 web 应用程序中的 web 应用程序代理服务器配置高可用性Microsoft 365联合Microsoft Azure。
-ms.openlocfilehash: 9c67aa4b2c3583fe4e370fdc750a49d7088e0db2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 摘要：为 web 应用程序代理服务器配置高可用性联合身份验证，Microsoft 365 Microsoft Azure。
+ms.openlocfilehash: 17efeb414208afac9ce9dcb0b7136a4c962a0268
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354460"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565216"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
-在部署 Azure 基础结构服务Microsoft 365高可用性的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
+在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
 必须先完成此阶段，然后才能进入阶段[5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365 配置联合身份验证。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -64,13 +64,13 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
-|**名称**|**类型**|**TTL**|**Value**|
+|**名称**|**类型**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |联合身份验证服务 FDQN  <br/> |A  <br/> |3600  <br/> |面向 Internet 的 Azure 负载均衡器的公用 IP 地址（通过上一节中的 **Write-Host** 命令显示) <br/> |
    
 下面是一个示例：
   
-|**名称**|**类型**|**TTL**|**Value**|
+|**名称**|**类型**|**TTL**|**值**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -156,11 +156,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 **阶段 4：Azure 中用于高可用性联合身份验证基础结构的面向 Internet 的负载均衡器和 Web 应用程序代理服务器**
 
-![Azure 中的高可用性基础结构的第 4 阶段Microsoft 365 Web 应用程序代理服务器部署联合身份验证基础结构](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![第 4 阶段的高可用性Microsoft 365 Web 应用程序代理服务器部署 Azure 中的联合身份验证基础结构。](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>后续步骤
 
-使用[阶段 5：为用户配置联合身份验证Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)继续配置此工作负载。
+使用[阶段 5：为](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)Microsoft 365配置联合身份验证以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 

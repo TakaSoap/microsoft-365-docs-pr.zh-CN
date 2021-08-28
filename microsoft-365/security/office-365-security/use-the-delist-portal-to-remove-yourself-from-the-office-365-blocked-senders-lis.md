@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 本文将了解如何使用除名门户将自己从阻止的Microsoft 365名单中删除。
+description: 本文将了解如何使用除名门户将自己从阻止的Microsoft 365列表中。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7beee058a85d7ab44a6a4a94b362fa669537f573754de8558d713332d897843f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1c4c09af11829d2b4d902211baff9fb8e6cfb11
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56831006"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566498"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人名单中删除
 
@@ -40,7 +40,7 @@ ms.locfileid: "56831006"
 
 ## <a name="what-is-the-blocked-senders-list"></a>阻止的发件人名单是什么？
 
-Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、欺诈和网络钓鱼网站的攻击。 您的邮件服务器的 IP 地址（即邮件服务器在 Internet 上用于标识自身的地址）被标记为对邮件Microsoft 365威胁，原因有多种。 当Microsoft 365 IP 地址添加到列表中时，它会阻止该 IP 地址与任何客户通过我们的数据中心进行进一步的通信。
+Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、欺诈和网络钓鱼网站的攻击。 您的邮件服务器的 IP 地址（即您的邮件服务器在 Internet 上用于标识自己的地址）被标记为对邮件Microsoft 365威胁，原因有多种。 当Microsoft 365 IP 地址添加到列表中时，它会阻止该 IP 地址与任何客户通过我们的数据中心进行进一步的通信。
 
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
 
@@ -56,7 +56,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 3. Click **Submit**.
 
-    门户会向您提供的电子邮件地址发送电子邮件。 电子邮件将如下所示：通过除名门户提交请求时收到 ![ 的电子邮件的屏幕截图](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    门户会向您提供的电子邮件地址发送电子邮件。 电子邮件将如下所示：通过除名门户提交请求时收到的电子邮件 ![ 的屏幕截图。](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. 单击除名门户发送给您的电子邮件中的确认链接。
 

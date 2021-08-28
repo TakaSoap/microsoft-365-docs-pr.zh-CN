@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13e89f64a0b86249d69e3c36e52dc445b2d4c70438d3f16f62bc8758fa6b5b4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894453"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567864"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -41,7 +41,7 @@ ms.locfileid: "53894453"
 
 单击 **导航菜单中** 的"配置管理"以打开"设备配置管理"页。
 
-![安全配置管理页](images/secconmgmt_main.png)
+![安全配置管理页。](images/secconmgmt_main.png)
 
 *设备配置管理页*
 
@@ -51,14 +51,14 @@ ms.locfileid: "53894453"
 
 - 设备上事件的全面可见性
 - 用于处理原始事件和识别泄露活动和威胁指示器的强大威胁情报和强大的设备学习技术
-- 配置为有效停止安装恶意攻击、劫持系统文件和进程、数据外脏及其他威胁活动的完整安全功能堆栈
+- 配置为有效停止安装恶意攻击、劫持系统文件和进程、数据溢出和其他威胁活动的完整安全功能堆栈
 - 优化了攻击面缓解，最大程度地提高了威胁活动的战略防御能力，同时最大限度地减少了对工作效率的影响
 
 ## <a name="enroll-devices-to-intune-management"></a>将设备注册到 Intune 管理
 
 设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows 10问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备Windows[注册的信息](/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备设置Windows的信息](/intune/windows-enroll)。
 
 > [!NOTE]
 > 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](/intune/licenses-assign)。
@@ -70,14 +70,14 @@ ms.locfileid: "53894453"
 
 默认情况下，只有已分配有 Azure AD 上的全局管理员或 Intune 服务管理员角色的用户才能管理和分配载入设备和部署安全基线所需的设备配置文件。
 
-如果已分配有其他角色，请确保你拥有必要的权限：
+如果已分配其他角色，请确保你拥有必要的权限：
 
 - 设备配置的完整权限
 - 对安全基线的完全权限
 - 读取设备合规性策略的权限
 - 读取对组织的权限
 
-![intune 上所需的权限](images/secconmgmt_intune_permissions.png)
+![intune 上所需的权限。](images/secconmgmt_intune_permissions.png)
 
 *Intune 上的设备配置权限*
 

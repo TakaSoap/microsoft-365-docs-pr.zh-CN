@@ -1,6 +1,6 @@
 ---
 title: 内部风险管理设置
-description: 了解管理中心中的内部风险管理Microsoft 365
+description: 了解企业内部风险管理Microsoft 365
 keywords: Microsoft 365- 预览体验计划风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2d9914dec5abcf87885404adbc5092605402a045
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 6629672ec43b157c2ce1c70d383d6772e5671260
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599163"
+ms.locfileid: "58564018"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -30,7 +30,7 @@ ms.locfileid: "58599163"
 - 指示器
 - 策略日程表
 - 智能检测
-- 导出警报 (预览) 
+- 导出预览 (警报) 
 - 预览版 (用户组) 
 - 预览版 (优先) 
 - Power Automate预览 (流) 
@@ -48,7 +48,7 @@ ms.locfileid: "58599163"
     >[!IMPORTANT]
     >若要为在 Microsoft 365 或其他系统中具有内部风险警报或案例的用户维护参照完整性，不会为导出的警报保留用户名的匿名化。 导出的警报将显示每个警报的用户名。
 
-- **不显示用户名的** 匿名版本：针对警报和事例显示所有当前和过去的策略匹配项的用户名。 用户配置文件信息 (所有内部风险管理警报和案例) 名称、职务、别名以及组织或部门信息。
+- **不显示用户名的** 匿名版本：针对警报和事例显示所有当前和过去的策略匹配项的用户名。 用户配置文件信息 (所有内部风险管理警报和事例) 名称、职务、别名以及组织或部门名称。
 
 ![内部风险管理隐私设置。](../media/insider-risk-settings-privacy.png)
 
@@ -64,10 +64,10 @@ ms.locfileid: "58599163"
 策略指示器分为以下几个区域。 在创建内部风险策略时，你可以选择指示器来激活和自定义每个指示器级别的指示器事件限制：
 
 - **Office指示器**：其中包括网站、SharePoint和Microsoft Teams策略指示器。
-- **设备指示器**：其中包括用于活动（例如，通过网络共享文件或与设备共享文件）的策略指示器。 指示器包括涉及所有文件类型的活动，不包括可执行 (.exe) 和动态链接库 (.dll) 文件活动。 如果选择"**设备指示器**"，则仅针对Windows 10版本 1809 或更高版本的设备处理活动，并且必须先将设备载入合规中心。 设备指示器还包括浏览器信号检测，可帮助你的组织检测和处理在 Microsoft Edge 和 Google Chrome 中查看、复制、共享或打印的非可执行文件的过滤信号。 有关配置设备以与内部风险集成的信息，请参阅本文中的以下启用设备指示器[](insider-risk-management-settings.md#OnboardDevices)和载入设备部分。 有关浏览器信号检测的详细信息，请参阅了解和配置预览版中的内部[风险管理 (信号) 。 ](insider-risk-management-browser-support.md)
-- **安全策略违反指示器 (预览**) ：其中包括 Microsoft Defender for Endpoint 中与未批准或恶意软件安装或绕过安全控制相关的指示器。 若要在内部风险管理中接收警报，必须启用有效的 Defender for Endpoint 许可证和内部风险集成。 有关为终结点配置 Defender 进行内部风险管理集成的信息，请参阅在 [Microsoft Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+- **设备指示器**：其中包括用于活动（例如，通过网络共享文件或与设备共享文件）的策略指示器。 指示器包括涉及所有文件类型的活动，不包括可执行 (.exe) 和动态链接库 (.dll) 文件活动。 如果选择"**设备指示器**"，则仅针对Windows 10版本 1809 或更高版本的设备处理活动，并且必须先将设备载入合规中心。 设备指示器还包括浏览器信号检测，可帮助你的组织检测和处理在 Microsoft Edge 和 Google Chrome 中查看、复制、共享或打印的非可执行文件的过滤信号。 有关配置设备以与内部风险集成的信息，请参阅本文中的以下启用设备指示器[](insider-risk-management-settings.md#OnboardDevices)和载入设备部分。 有关浏览器信号检测的详细信息，请参阅了解和配置预览版中的[内部风险管理 (信号) 。 ](insider-risk-management-browser-support.md)
+- **安全策略违反指示器 (预览) ：** 其中包括 Microsoft Defender for Endpoint 中与未批准或恶意软件安装或绕过安全控制相关的指示器。 若要在内部风险管理中接收警报，必须启用有效的 Defender for Endpoint 许可证和内部风险集成。 有关为终结点配置 Defender 进行内部风险管理集成的信息，请参阅在 [Microsoft Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **物理访问指示器 (预览) ：** 其中包括对敏感资产进行物理访问的策略指示器。 例如，尝试访问物理保护系统日志中的受限区域可以与内部风险管理策略共享。 若要在内部风险管理中接收这些类型的警报，必须在内部风险管理中启用优先物理资产，并配置物理保护 [数据](import-physical-badging-data.md) 连接器。 若要详细了解如何配置物理访问，请参阅本文 [的优先级物理](#priority-physical-assets-preview) 访问部分。
-- **Microsoft Cloud App Security预览 (：)** 共享警报的策略云应用安全。 自动启用异常检测云应用安全立即开始检测和整理结果，以针对用户以及连接到网络的计算机和设备中的大量行为异常。 若要将这些活动包括在内部风险管理策略警报中，请选择本部分中的一个或多个指示器。 若要详细了解云应用安全异常检测，请参阅获取[行为分析和异常检测](/cloud-app-security/anomaly-detection-policy)。
+- **Microsoft Cloud App Security预览 (策略**) ：其中包括来自共享警报的策略云应用安全。 自动启用异常检测云应用安全立即开始检测和整理结果，以针对用户以及连接到网络的计算机和设备中的大量行为异常。 若要将这些活动包括在内部风险管理策略警报中，请选择本部分中的一个或多个指示器。 若要详细了解云应用安全异常检测，请参阅获取[行为分析和异常检测](/cloud-app-security/anomaly-detection-policy)。
 - **风险评分承担** 者：这包括提高异常活动或过去违反策略的风险评分。 启用风险评分分数将增加风险评分以及针对这些类型的活动发出警报的可能性。 对于异常活动，如果检测到的活动偏离用户的典型行为，分数将提高。 例如，每日文件下载量显著增加。 异常活动以百分比增加 (例如，"比常规活动高 100%") 并且根据活动对风险评分的影响将有所不同。 对于之前违反策略的用户，如果用户之前将多个案例解析为已确认的策略违反，则分数会提高。 只有在选择了一个或多个指标时，才能选择风险评分分数。
 
 在某些情况下，你可能希望限制应用于组织中内部风险策略的内部风险策略指标。 可以通过禁用特定区域的所有内部风险策略来禁用这些策略指示器。 无法针对内部风险策略模板修改触发事件。
@@ -86,8 +86,8 @@ ms.locfileid: "58599163"
 
 确保计划在内部Windows 10中报告的设备满足这些要求。
 
-1. 必须运行 Windows 10 x64 版本 1809 或更高版本，并且必须已安装从 2020 年 2 月 20 日起的 Windows 10 更新 (OS 内部版本[17763.1075) 。](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-2. 用于登录到 Windows 10 设备的用户帐户必须是 AAD Azure Active Directory (活动) 帐户。 设备Windows 10 [AAD、](/azure/active-directory/devices/concept-azure-ad-join)混合 AAD 或已注册 Active Directory 或 AAD。
+1. 必须运行 Windows 10 x64 版本 1809 或更高版本，并且必须已安装[Windows 10 update (OS Build 17763.1075) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20， 2020。
+2. 用于登录到 Windows 10 设备的用户帐户必须是 AAD Azure Active Directory (活动) 帐户。 设备Windows 10 [AAD、](/azure/active-directory/devices/concept-azure-ad-join)混合 AAD、已加入 Active Directory 或已注册 AAD。
 3. 在Chromium设备上安装 Microsoft Chromium Edge 浏览器，以监视云上传活动的操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 #### <a name="step-2-onboarding-devices"></a>步骤 2：载入设备
@@ -117,7 +117,7 @@ ms.locfileid: "58599163"
     - 使用本地脚本载入 Windows 10 计算机
     - 载入非持久性虚拟桌面基础结构 (VDI) 计算机。
 
-完成操作并载入终结点后，它应显示在设备列表中，并且终结点将开始向内部风险管理报告审核活动日志。
+完成操作并载入终结点后，它应显示在设备列表中，终结点将开始向内部风险管理报告审核活动日志。
 
 > [!NOTE]
 > 此体验根据许可证强制实施。 如果没有所需的许可证，数据将不可见或不可访问。
@@ -155,7 +155,7 @@ ms.locfileid: "58599163"
 对于第一个每日事件级别，将阈值设置为每天 *10* 次或更多的事件，以降低事件的风险评分、每天 *20* 次或更多的事件（中等影响为事件的风险评分）以及 *每天 30* 次或更多的事件，这一点对事件的风险分数影响更大。 这些设置实际上意味着：
 
 - 如果触发事件后SharePoint 1-9 个事件，风险评分会受最小影响，并且不会生成警报。
-- 如果触发事件后SharePoint发生 10-19 个事件，则风险评分本身较低，警报严重性级别通常较低。
+- 如果在触发事件后SharePoint 10-19 个事件，则风险评分本身较低，警报严重性级别往往较低。
 - 如果在触发后SharePoint 20-29 个事件，则风险评分本身会更高，警报严重性级别通常处于中等级别。
 - 如果在触发后SharePoint 30 个或多个事件，则风险评分本身会更高，警报严重性级别通常较高。
 
@@ -182,7 +182,7 @@ ms.locfileid: "58599163"
 
 ### <a name="alert-volume"></a>警报量
 
-为内部风险策略检测到的用户活动分配一个特定的风险评分，该分数反过来确定警报严重性 (低、中、高) 。 默认情况下，我们将生成一定数量的低、中和高严重性警报，但你可以增加或减少量以满足你的需求。 若要调整所有内部风险管理策略的警报量，请选择以下设置之一：
+为内部风险策略检测到的用户活动分配一个特定的风险分数，该分数反过来确定低、 (、中等、高) 。 默认情况下，我们将生成一定数量的低、中和高严重性警报，但你可以增加或减少量以满足你的需求。 若要调整所有内部风险管理策略的警报量，请选择以下设置之一：
 
 - **更少的警报**：你将看到所有高严重性警报、更少的中等严重性警报和低严重性警报。 此设置级别意味着你可能错过一些真正的误报。
 - **默认卷**：你将看到所有高严重性警报以及中等和低严重性警报的平衡量。
@@ -221,9 +221,9 @@ ms.locfileid: "58599163"
     - 与外部域共享的文件、文件夹、网站
     - 使用浏览器浏览器 (上载Microsoft Edge外部) 
 
-    通过指定设置中的允许域，将处理具有这些域的此活动，这类似于处理内部组织活动的方式。 例如，此处添加的域映射到活动可能涉及与组织外部的某个人共享内容 (例如向具有电子邮件地址 gmail.com 人员发送电子邮件) 。
+    通过指定设置中的允许域，将处理具有这些域的此活动，这类似于处理内部组织活动的方式。 例如，此处添加的域映射到活动可能涉及与组织外部的某人共享内容 (例如向具有电子邮件地址 gmail.com 人员) 。
 
-- **第三方域：** 如果你的组织将第三方域用于商业目的 (如云存储) ，请在此处包括它们，以便你可以接收与设备指示器使用浏览器从第三方网站下载内容相关的活动的 *警报。*
+- **第三方域：** 如果你的组织将第三方域用于商业目的 (如云存储) ，请在此处包括它们，以便你可以接收与设备指示器相关的活动的警报 使用浏览器从第三方网站下载 *内容*。
 
 ## <a name="export-alerts-preview"></a>导出预览 (警报) 
 
@@ -234,7 +234,7 @@ ms.locfileid: "58599163"
 
 若要使用 API 查看内部风险警报信息：
 
-1. Enable Office 365 Management Activity API support in **Insider risk management**  >  **设置**  >  **Export alerts**. 默认情况下，为组织禁用Microsoft 365设置。
+1. 在Office 365导出警报中 **启用预览** 体验管理设置  >    >  **活动 API 支持**。 默认情况下，为组织禁用Microsoft 365设置。
 2. 按 *SecurityComplianceAlerts* Office 365常见审核活动。
 3. 按 *InsiderRiskManagement* 类别筛选 *SecurityComplianceAlerts。*
 
@@ -242,20 +242,20 @@ ms.locfileid: "58599163"
 
 警报信息包含来自安全与合规性警报架构以及安全Office 365活动 API 通用架构的信息。
 
-针对安全与合规警报架构的内部风险管理警报导出&值：
+针对安全与合规警报架构的内部风险管理警报导出&和值：
 
 | **Alert 参数** | **说明** |
 |:------------------|:----------------|
 | AlertType | 警报的类型为 *"自定义"。*  |
 | AlertId | 警报的 GUID。 内部风险管理警报是可变的。 当警报状态更改时，将生成一个同一 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
 | 类别 | 警报的类别为 *InsiderRiskManagement*。 此类别可用于区分这些警报与其他安全与&警报。 |
-| 评论 | 警报的默认注释。 值为"*新建* (警报"，当警报) 更新 (警报更新时，会记录警报更新) 。 使用 AlertID 关联警报的更新。 |
+| 评论 | 警报的默认注释。 值为"*新建* (警报"和"已) 警报更新 (（当警报更新更新时记录）记录的新警报) 。 使用 AlertID 关联警报的更新。 |
 | 数据 | 警报的数据包括唯一用户 ID、用户主体名称以及将用户触发到策略 (UTC) 日期和时间。 |
 | 名称 | 生成警报的内部风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内部风险管理策略的 GUID。 |
 | 严重性 | 警报的严重性。 值为 *High、Medium* 或 *Low。*  |
-| 源 | 警报的来源。 该值为Office 365 *安全&合规性。* |
-| 状态 | 警报的状态。 值为"内部风险) 中的活动 (需要评审"、调查 *(* 在内部风险中确认的) 、在内部风险) 中解决的 *(、* 在内部风险 (中消除) 。   |
+| 源 | 警报的来源。 该值为 *"Office 365安全&合规性"。* |
+| 状态 | 警报的状态。 值为"内部风险) 中的活动 (需要评审"、"调查 *(* 在内部风险中确认) 、在内部风险中解决 ( 已解决) 、在内部风险中 (已消除) 。  |
 | 版本 | 安全性和合规性警报架构的版本。 |
 
 导出以下字段和值，以针对管理活动 API 常见架构 的Office 365[风险管理警报](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)。
@@ -277,7 +277,7 @@ ms.locfileid: "58599163"
 
 优先级用户组可能还需要将审阅活动限制为特定用户或内部风险角色组，而不是所有分析师和研究人员都进行审核。 可以选择分配单个用户和角色组，以便查看每个优先级用户组的用户、警报、案例和报告。 优先级用户组可以拥有分配给内置内部风险管理、内部风险管理分析师和内部风险管理研究人员角色组、这些角色组中的一个或多个角色组或用户自定义选择的审阅权限。 
 
-例如，您需要防止高度机密项目的数据泄露，其中用户有权访问敏感信息。 您 *选择为Project* 此项目的组织中用户创建"用户优先级"用户组。 此外，此优先级用户组不应使与组关联的用户、警报、案例和报告对所有默认的内部风险管理管理员、分析师和研究人员可见。 在 **设置** 中，创建"机密 *Project用户优先级* 用户"组，并分配两个用户作为审阅者来查看与组相关的数据。 使用策略向导和"按优先级用户泄露数据"策略模板，您可以创建一个新策略，并将"机密Project *用户* 优先级用户"组分配给该策略。 策略检查的针对机密 *Project 用户* 优先级用户组成员的活动对风险更为敏感，这些用户的活动更有可能生成警报，并且具有严重性级别更高的警报。
+例如，您需要防止高度机密项目的数据泄露，其中用户有权访问敏感信息。 选择为组织中 *Project* 此项目的用户创建"用户优先级"用户组。 此外，此优先级用户组不应使与组关联的用户、警报、案例和报告对所有默认的内部风险管理管理员、分析师和研究人员可见。 在 **设置** 中，创建"机密Project *用户* 优先级用户"组，并分配两个用户作为审阅者来查看与组相关的数据。 使用策略向导和"按优先级用户泄露数据"策略模板，您可以创建一个新策略，并将"机密Project *用户* 优先级用户"组分配给该策略。 策略针对机密 *Project 用户* 优先级用户组的成员检查的活动对风险更为敏感，这些用户的活动更有可能生成警报，并且具有严重性级别更高的警报。
 
 ### <a name="create-a-priority-user-group"></a>创建优先级用户组
 
@@ -287,9 +287,9 @@ ms.locfileid: "58599163"
 
 1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk **settings**.
 2. 选择" **优先级用户组 (预览)** 选项卡。
-3. 在" **预览 (** 用户组) ， **选择"创建** 优先级用户组"以启动组创建向导。
+3. On the **Priority user groups (preview)** tab， select Create priority user **group** to start the group creation wizard.
 4. 在" **名称和描述"** 页上，填写以下字段：
-    - **名称 (必) ：** 输入优先级用户组的友好名称。 完成向导后，你无法更改优先级用户组的名称。
+    - **Name (必)**：输入优先级用户组的友好名称。 完成向导后，你无法更改优先级用户组的名称。
     - **说明 (可选) ：** 输入优先级用户组的说明。
 5. 选择“**下一步**”以继续。
 6. 在 **"选择成员**"页上，选择"选择要搜索的成员"，然后选择组中包含哪些已启用邮件的用户帐户，或选中"全选"复选框以将组织中所有用户添加到组中。 选择 **"添加** "继续，或 **选择"取消** "以关闭而不向组添加任何用户。
@@ -317,7 +317,7 @@ ms.locfileid: "58599163"
 
 ### <a name="delete-a-priority-user-group"></a>删除优先级用户组
 
-若要删除现有的优先级用户组，你将使用"预览体验成员风险管理"解决方案中的设置Microsoft 365 合规中心。 若要删除优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
+若要删除现有的优先级用户组，你将使用预览体验成员风险管理解决方案中的设置Microsoft 365 合规中心。  若要删除优先级用户组，您必须是 *Insider Risk Management* 或 Insider *Risk Management Admin* 角色组的成员。
 
 > [!IMPORTANT]
 > 删除优先级用户组会将其从分配到的任何活动策略中删除。 如果删除分配给活动策略的优先级用户组，该策略将不包含任何范围内用户，并且实际上处于空闲状态，并且不会创建警报。
@@ -374,40 +374,42 @@ ms.locfileid: "58599163"
 
 ## <a name="power-automate-flows-preview"></a>Power Automate预览 (流) 
 
-[Microsoft Power Automate](/power-automate/getting-started)是一种工作流服务，可自动执行应用程序和服务之间的操作。 通过使用来自模板的流或手动创建的流，可以自动执行与这些应用程序和服务关联的常见任务。 启用内部Power Automate流时，可以自动执行事例和用户的重要任务。 你可以配置Power Automate流来检索用户、警报和案例信息，并与利益干系人和其他应用程序共享此信息，以及自动执行内部风险管理中的操作，如发布到案例备注。 Power Automate流适用于策略范围内的情况和任何用户。
+[Microsoft Power Automate](/power-automate/getting-started)是一种工作流服务，可自动执行应用程序和服务之间的操作。 通过使用来自模板的流或手动创建的流，可以自动执行与这些应用程序和服务关联的常见任务。 启用内部Power Automate流时，可以自动执行事例和用户的重要任务。 你可以配置Power Automate流来检索用户、警报和案例信息，并与利益干系人和其他应用程序共享此信息，以及自动执行内部风险管理中的操作，例如发布到案例备注。 Power Automate流适用于策略范围内的情况和任何用户。
 
-具有包括Microsoft 365风险管理的订阅的客户不需要额外的 Power Automate 许可证，就可使用建议的内部风险管理模板Power Automate模板。 可以自定义这些模板以支持你的组织并涵盖核心内部风险管理方案。 如果您选择使用这些模板中的高级 Power Automate 功能、使用 Microsoft 365 合规性连接器创建自定义模板或使用 Microsoft 365 中其他合规性领域的 Power Automate 模板，您可能需要更多 Power Automate 许可证。
+拥有包括Microsoft 365风险管理的订阅的客户不需要额外的 Power Automate 许可证，就可使用建议的内部风险管理Power Automate模板。 可以自定义这些模板以支持你的组织并涵盖核心内部风险管理方案。 如果您选择使用这些模板中的高级 Power Automate 功能、使用 Microsoft 365 合规性连接器创建自定义模板或使用 Microsoft 365 中其他合规性领域的 Power Automate 模板，您可能需要更多 Power Automate 许可证。
 
 以下Power Automate模板提供给客户，以支持内部风险管理用户和事例的过程自动化：
 
-- **将用户添加到** 内部风险策略时通知用户：此模板适用于具有内部策略、隐私或法规要求的组织，在用户受内部风险管理策略的约束时，必须通知他们。 在"用户"页中为用户配置和选择此流时，当用户添加到内部风险管理策略时，会向用户及其经理发送电子邮件。 此模板还支持更新 SharePoint 网站上承载的SharePoint列表，以帮助跟踪通知邮件详细信息，如日期/时间和邮件收件人。 如果你已选择在"隐私设置"中匿名处理用户，则从此模板创建的流将不会如预期方式工作，以维持用户隐私。 Power Automate此模板的流在用户仪表板 **上可用**。
-- 向 HR 或 **业务** 请求有关内部风险案例用户的信息：当对案例采取行动时，内部风险分析员和调查人员可能需要咨询 HR 或其他利益干系人，以了解案例活动的上下文。 为案例配置和选择此流后，分析员和研究人员会向为此流程配置的 HR 和业务利益干系人发送电子邮件。 向每个收件人发送一封邮件，其中包含预配置或可自定义的响应选项。 当收件人选择响应选项时，该响应将记录为案例注释，并包括收件人和日期/时间信息。 如果你已选择在"隐私设置"中匿名处理用户，则从此模板创建的流将不会如预期方式工作，以维持用户隐私。 Power Automate模板的流在案例仪表板 **上提供**。
+- **将用户添加到** 内部风险策略时通知用户：此模板适用于具有内部策略、隐私或法规要求的组织，在用户受内部风险管理策略的约束时，必须通知他们。 在"用户"页中为用户配置和选择此流时，当用户添加到内部风险管理策略时，会向用户及其经理发送电子邮件。 此模板还支持更新 SharePoint 网站上承载的SharePoint列表，以帮助跟踪通知邮件详细信息，如日期/时间和邮件收件人。 如果你已选择在"隐私设置"中匿名处理用户，则从此模板创建的流将不会如预期方式工作，以维持用户隐私。 Power Automate模板的流在用户仪表板 **上可用**。
+- 向 HR 或 **业务** 请求有关内部风险案例用户的信息：当对案例采取行动时，内部风险分析员和调查人员可能需要咨询 HR 或其他利益干系人，以了解案例活动的上下文。 为案例配置和选择此流后，分析员和研究人员会向为此流程配置的 HR 和业务利益干系人发送电子邮件。 向每个收件人发送一封邮件，其中包含预配置或可自定义的响应选项。 当收件人选择响应选项时，该响应将记录为案例注释，并包括收件人和日期/时间信息。 如果你已选择在"隐私设置"中匿名处理用户，则从此模板创建的流将不会如预期方式工作，以维持用户隐私。 Power Automate此模板的流在案例仪表板 **上可用**。
 - **当用户有内部风险警报** 时通知经理：当用户具有内部风险管理警报时，某些组织可能需要立即发送管理通知。 配置和选择此流后，会向案例用户的经理发送一封电子邮件，包含有关所有案例警报的以下信息：
     - 警报的适用策略
     - 警报的日期/时间
     - 警报的严重性级别
 
-    该流自动更新案例，提示消息已发送且流已激活。 如果你已选择在"隐私设置"中匿名处理用户，则从此模板创建的流将不会如预期方式工作，以维持用户隐私。 Power Automate此模板的流在案例仪表板 **上提供**。
-- **在 ServiceNow 中为内部** 风险案例创建记录：此模板适用于想要使用其 ServiceNow 解决方案跟踪内部风险管理案例的组织。  在这种情况下，内部风险分析师和研究人员可以在 ServiceNow 中为案例创建记录。 您可以自定义此模板，以根据组织的要求填充 ServiceNow 中的选定字段。 Power Automate此模板的流在案例仪表板 **上提供**。 有关可用 ServiceNow 字段的信息，请参阅 [ServiceNow 连接器参考](/connectors/service-now/) 文章。
+    该流自动更新案例，提示消息已发送且流已激活。 如果你已选择在"隐私设置"中匿名处理用户，则从此模板创建的流将不会如预期方式工作，以维持用户隐私。 Power Automate此模板的流在案例仪表板 **上可用**。
+- **在 ServiceNow 中为内部** 风险案例创建记录：此模板适用于想要使用其 ServiceNow 解决方案跟踪内部风险管理案例的组织。  在这种情况下，内部风险分析师和研究人员可以在 ServiceNow 中为案例创建记录。 您可以自定义此模板，以根据组织的要求填充 ServiceNow 中的选定字段。 Power Automate此模板的流在案例仪表板 **上可用**。 有关可用 ServiceNow 字段的信息，请参阅 [ServiceNow 连接器参考](/connectors/service-now/) 文章。
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>从内部Power Automate模板创建一个流
 
 若要从建议的内部风险管理模板创建 Power Automate 流，你将使用 Microsoft 365 合规中心 中预览体验成员风险管理解决方案中的设置控件，或者当直接在案例或用户仪表板中操作时自动控制中的"管理 **Power Automate** 流"选项。   
 
-若要在Power Automate区域创建管理流，您必须是 *Insider Risk Management* 或 Insider Risk *Management Admin* 角色组的成员。 若要使用"Power Automate流"选项创建Power Automate流，您必须至少是一个内部风险管理角色组的成员。
+若要在Power Automate区域创建内部风险管理流，您必须是 *Insider Risk Management* 或 Insider Risk *Management Admin 角色* 组的成员。 若要使用"Power Automate流"选项创建Power Automate流，您必须至少是一个内部风险管理角色组的成员。
 
 完成以下步骤以从建议的Power Automate内风险管理模板创建一个流：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com/)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从案例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com/)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，**方法为选择** 自动管理Power Automate  >  **流**。
 2. 在 **"Power Automate流**"页上，从页面上的"预览体验成员风险管理模板"部分选择推荐的模板。
 3. 该流列出流所需的嵌入连接，并记录连接状态是否可用。 如果需要，请更新任何未显示为可用的连接。 选择 **继续**。
-4. 默认情况下，推荐流预配置了建议的内部风险管理Microsoft 365完成流的分配任务所需的服务数据字段。 如果需要，使用"显示高级选项"控件并配置流组件的可用属性来自定义流组件。
+4. 默认情况下，推荐流预配置了建议的内部风险管理，Microsoft 365为流完成分配的任务所需的服务数据字段。 如果需要，使用"显示高级选项"控件并配置流组件的可用属性来自定义流组件。
 5. 如果需要，通过选择"新建步骤"按钮将任何其他步骤 **添加到** 流中。 在大多数情况下，建议的默认模板不需要这样做。
 6. 选择 **"保存草稿** "保存流以进一步配置，或选择" **保存** "以完成流的配置。
-7. 选择 **"** 关闭"以返回到 **"Power Automate流"** 页。 当为用户创建流程处理内部风险管理案例时，新模板将作为流列在"我的流"选项卡上，并自动从"自动"下拉列表控件中提供。
+7. 选择 **"** 关闭"返回到 **"Power Automate"** 页面。 当为用户创建流程处理内部风险管理案例时，新模板将作为流列在"我的流"选项卡上，并自动从"自动"下拉列表控件中提供。
 
 > [!IMPORTANT]
 > 如果组织中其他用户需要访问流，则必须共享该流。
+
+![内部风险管理功能自动化流程。](../media/insider-risk-settings-power-automate-flows.png)
 
 ### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>创建自定义管理Power Automate内部风险管理流程
 
@@ -417,7 +419,7 @@ ms.locfileid: "58599163"
 
 1. **检查你的Power Automate** 流许可证：若要Power Automate使用内部风险管理触发器的自定义流，你将需要一个Power Automate许可证。 建议的内部风险管理流模板不需要额外的许可，并作为内部风险管理许可证的一部分包含在内。
 2. **创建自动化流**：创建在内部风险管理事件触发后执行一个或多个任务的流。 若要详细了解如何创建自动化流，请参阅在[Power Automate。](/power-automate/get-started-logic-flow)
-3. **选择"Microsoft 365** 合规性连接器：搜索并选择"Microsoft 365连接器"。 此连接器支持内部风险管理触发器和操作。 有关连接器详细信息，请参阅连接器 [参考概述](/connectors/connector-reference/) 文章。
+3. **选择"Microsoft 365合规性** 连接器："搜索并选择"Microsoft 365连接器"。 此连接器支持内部风险管理触发器和操作。 有关连接器详细信息，请参阅连接器 [参考概述](/connectors/connector-reference/) 文章。
 4. **为流选择内部风险管理** 触发器：内部风险管理有两个触发器可用于自定义Power Automate流：
     - **对于所选的内部风险管理案例**：可以从内部风险管理案例仪表板页面选择具有此触发器的流。
     - **对于选定的内部风险管理用户**：可以从内部风险管理用户仪表板页面选择具有此触发器的流。
@@ -430,13 +432,13 @@ ms.locfileid: "58599163"
 
 ### <a name="share-a-power-automate-flow"></a>共享Power Automate流
 
-默认情况下，Power Automate创建的流仅对该用户可用。 若要使其他内部风险管理用户能够访问和使用流，该流必须由流创建者共享。 若要共享流，当直接在"事例"或"用户"仪表板页面中操作时，将使用 Microsoft 365 合规中心 中的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流"**选项。** 共享流后，已共享流的每个人都可以在"案例"和"用户"仪表板的"自动化"控件下拉列表中访问 **该流**。 
+默认情况下，Power Automate创建的流仅对该用户可用。 若要使其他内部风险管理用户能够访问和使用流，该流必须由流创建者共享。 若要共享流，当直接在"事例"或"用户"仪表板页面中操作时，你将使用 Microsoft 365 合规中心 中的预览体验成员风险管理解决方案中的设置控件或自动执行控件中的"管理 **Power Automate** 流 **"选项。**  共享流后，已共享流的每个人都可以在"案例"和"用户"仪表板的"自动化"控件下拉列表中访问 **该流**。 
 
-若要在Power Automate共享管理流，您必须是 *Insider Risk Management* 或 Insider Risk Management *Admin* 角色组的成员。 若要使用"Power Automate流"选项共享Power Automate流，您必须至少是一个内部风险管理角色组的成员。
+若要在Power Automate共享管理流，你必须是 *内部* 风险管理或内部风险管理 *管理员角色* 组的成员。 若要使用"Power Automate流"选项共享Power Automate流，您必须至少是一个内部风险管理角色组的成员。
 
 完成以下步骤以共享Power Automate流：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从案例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，**方法为选择** 自动管理Power Automate  >  **流**。
 2. 在 **"Power Automate"** 页上，选择"**我的** 流"或"**团队流"** 选项卡。
 3. 选择要共享的流 **，然后从** "流选项"菜单中选择"共享"。
 4. 在"流共享"页上，输入要添加为流所有者的用户或组的名称。
@@ -450,7 +452,7 @@ ms.locfileid: "58599163"
 
 完成以下步骤以编辑Power Automate流：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从案例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，**方法为选择** 自动管理Power Automate  >  **流**。
 2. 在 **"Power Automate** 流"页上，选择要编辑的流，然后从"流控制"菜单中选择"编辑"。
 3. 选择省略 **号**  >  **设置** 更改流组件设置或省略 **号**  >  **删除** 流组件。
 4. 选择 **"保存****"，** 然后选择"关闭"以完成流的编辑。
@@ -463,7 +465,7 @@ ms.locfileid: "58599163"
 
 完成以下步骤以删除Power Automate流：
 
-1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从案例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. In the [Microsoft 365 合规中心，](https://compliance.microsoft.com)go to **Insider risk management** and select Insider risk settings **Power Automate**  >  **flows**. 您还可以从事例或用户仪表板页面访问，**方法为选择** 自动管理Power Automate  >  **流**。
 2. 在 **"Power Automate** 流"页上，选择要删除的流，然后从"流控制"菜单中选择"删除"。
 3. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
@@ -535,14 +537,14 @@ ms.locfileid: "58599163"
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>查看分析见解并创建新策略
 
-为组织完成第一次分析扫描后，您可以查看用户对可能存在风险的活动的见解和建议。 除非你为组织关闭分析，否则每日扫描将继续进行。 若要查看组织的潜在风险，请转到"概述"选项卡并选择预览版卡片上的预览版 Insider **risk analytics (查看)** 结果。 如果组织的扫描未完成，你将看到一条消息，表明扫描仍处于活动状态。
+为组织完成第一次分析扫描后，您可以查看用户对可能存在风险的活动的见解和建议。 除非你为组织关闭分析，否则每日扫描将继续进行。 若要查看组织的潜在风险，请转到"概述"选项卡，然后选择预览版卡片上的预览版 Insider **risk analytics (查看)** 结果。 如果组织的扫描未完成，你将看到一条消息，表明扫描仍处于活动状态。
 
 ![内部风险管理分析报告就绪卡片。](../media/insider-risk-analytics-ready-card.png)
 
 对于已完成的扫描，你将看到在组织中发现的潜在风险，以及解决这些风险的见解和建议。 已识别的风险和特定见解包含在按区域分组的报告、具有已识别风险的用户总数、具有潜在风险活动的这些用户的百分比，以及可帮助缓解这些风险的建议内部风险策略中。 报告包括：
 
 - **数据泄露见解**：所有用户的活动，这些活动可能包括在组织外意外泄露信息或用户恶意泄露数据。
-- **数据盗窃见解**：针对已删除 Azure Active Directory 帐户的离职用户的活动，这些帐户可能包括在组织外部共享信息的风险或用户恶意窃取数据。
+- **数据盗窃见解**：针对已删除 Azure Active Directory 帐户的离职用户的活动，这些活动可能包括在组织外部共享信息的风险或用户恶意窃取数据。
 - **热门筛选见解**：可能包含在组织外部共享数据的所有用户的活动。
 
 ![内部风险管理分析概述报告。](../media/insider-risk-analytics-overview.png)

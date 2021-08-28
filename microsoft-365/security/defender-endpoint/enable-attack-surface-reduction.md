@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 7682192c3afd181667845fc2202120c481968356
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595664"
+ms.locfileid: "58567612"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -33,11 +33,11 @@ ms.locfileid: "58595664"
 > [!TIP]
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-[攻击面减少](attack-surface-reduction.md) 规则 (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。
+[攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。
 
 ## <a name="requirements"></a>要求
 
-跨多个版本的攻击Windows功能
+跨版本的攻击面Windows功能
 
 你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
@@ -62,12 +62,12 @@ ms.locfileid: "58595664"
 - **警告**：启用 ASR 规则，但允许最终用户绕过阻止
 
 > [!IMPORTANT]
-> 目前，在 MEM 中配置 ASR 规则时，三个 ASR 规则Microsoft Endpoint Manager (警告) 。 若要了解更多信息，请参阅 [不支持警告模式的情况](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
+> 目前，在 MEM 中配置 ASR 规则时，三个 ASR 规则不支持Microsoft Endpoint Manager (模式) 。 若要了解更多信息，请参阅 [不支持警告模式的情况](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
 强烈建议将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的[Microsoft Defender](microsoft-defender-endpoint.md)中提供的高级监视和报告功能。 但是，如果您具有不包含高级监视和报告功能的另一个许可证（如 Windows Professional 或 Windows E3），您可以在触发 ASR 规则时在每个终结点生成的事件（例如，事件转发 () ）上开发自己的监视和报告工具。
 
 > [!TIP]
-> 若要了解有关许可Windows，请参阅Windows 10[许可并](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)获取适用于 Windows 10 的[批量许可Windows 10。](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+> 若要了解有关许可Windows，请参阅 Windows 10 [Licensing and](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
 
 可以使用以下任一方法启用攻击面减少规则：
 
@@ -97,7 +97,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 ## <a name="intune"></a>Intune
 
-1. 选择 **设备配置文件** \> 。 选择现有的终结点保护配置文件或创建新的终结点保护配置文件。 若要创建新的配置文件，请选择" **创建配置文件** "并为此配置文件输入信息。 对于 **"配置文件类型"，** 选择"**终结点保护"。** 如果已选择现有配置文件，请选择 **"属性**"，然后选择 **"设置"。**
+1. 选择 **设备配置文件**  >  。 选择现有的终结点保护配置文件或创建新的终结点保护配置文件。 若要创建新的配置文件，请选择" **创建配置文件** "并为此配置文件输入信息。 对于 **"配置文件类型"，** 选择"**终结点保护"。** 如果已选择现有配置文件，请选择 **"属性**"，然后选择 **"设置"。**
 
 2. 在终结点 **保护窗格中，** 选择Windows Defender **攻击防护"，** 然后选择"**攻击面减少"。** 选择每个 ASR 规则所需的设置。
 
@@ -180,7 +180,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
     > [!NOTE]
     > 规则处于活动状态，且数分钟内有效。
 
-> [!NOTE]
+>[!NOTE]
 > 冲突处理：
 >
 > 如果为设备分配了两个不同的 ASR 策略，则处理冲突的方式为分配了不同状态的规则，没有实施冲突管理，因此会出现错误。
@@ -217,9 +217,9 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
 
-2. 选择 **"主页** \> **创建攻击防护策略"。**
+2. 选择 **"主页**  >  **创建攻击防护策略"。**
 
 3. 输入名称和说明，选择攻击 **面** 减少，然后选择下一 **步**。
 
@@ -238,7 +238,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以Windows **攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
+3. 展开树以Windows **攻击**  >    >  **Microsoft Defender 防病毒Microsoft Defender 攻击防护**  >  **减少的组件**。
 
 4. 选择 **配置攻击面减少规则，** 然后选择 **已启用。** 然后，您可以为选项部分的每个规则设置单个状态。
 
@@ -322,5 +322,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 ## <a name="related-articles"></a>相关文章
 
 - [攻击面减少规则](attack-surface-reduction-rules.md)
+
 - [评估攻击面减少](evaluate-attack-surface-reduction.md)
+
 - [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

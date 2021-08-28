@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: None
 description: 了解如何使用安全性查看 Viva 主题中的主题。
-ms.openlocfilehash: 3dd6e25fffe0a395bf41814309574c67507d280b29ee3848e676c66cadfb2463
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 25acd5ea96cb07a5974e10ec9763d1f20351d021
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563970"
 ---
 # <a name="security-trimming-in-microsoft-viva-topics"></a>安全修整Microsoft Viva主题
 
@@ -29,11 +29,11 @@ Viva 主题用户无法查看主题中他们现有的Office 365权限阻止他�
   
 例如，当用户 1 查看 Neptune 主题页面时，他们可能会看到该主题页面的此视图。
 
-![用户 1 的 Neptune 主题](../media/knowledge-management/user2-topic-view.png) </br> 
+![用户 1 的 Neptune 主题。](../media/knowledge-management/user2-topic-view.png) </br> 
 
 但是，当用户 2 查看同一 Neptune 主题页时，其视图与用户 1 不同。  用户 2 可以在主题页面的"固定的文件和页面"部分查看 *DG-2000 产品* 概述文件，该文件不会为用户 1 显示。  
 
-![用户 2 的 Neptune 主题](../media/knowledge-management/user1-topic-view.png) </br> 
+![用户 2 的 Neptune 主题。](../media/knowledge-management/user1-topic-view.png) </br> 
 
 用户可以在同一主题上看到的内容的区别在于，用户可能Office 365查看相关站点或文件的权限。  Viva 主题遵守对主题中的项目设置的权限，并且无法更改对它们的访问权限。 在我们的示例中，用户 1 无法查看 Neptune 的主题页中的 *DG-2000 产品* 概述文件，因为用户 1 Office 365查看该文件的权限。
 

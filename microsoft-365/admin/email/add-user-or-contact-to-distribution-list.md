@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 了解如何将用户Microsoft 365联系人（如员工、合作伙伴或供应商）添加到电子邮件通讯组。
-ms.openlocfilehash: a5cce43d37eb67b40f284b732aa8cb997c14bc30e9c7f359247170195073e9cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: af7581a7541835185a7cc8df12dcc58b779243ca
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566324"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 
-作为组织的管理员，您可能需要将一个用户或联系人添加到通讯组[ (请参阅在](../setup/create-distribution-lists.md)通讯组中Microsoft 365) 。 例如，您可以将员工、外部合作伙伴或供应商添加到电子邮件通讯组。
+作为组织的管理员，您可能需要将一个用户或联系人添加到通讯组[ (请参阅在](../setup/create-distribution-lists.md)Microsoft 365) 。 例如，您可以将员工、外部合作伙伴或供应商添加到电子邮件通讯组。
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>向通讯组添加用户或联系人
 
@@ -43,7 +43,7 @@ ms.locfileid: "53832784"
 
 4. 在"**查看成员"** 页上，选择"添加成员"，然后选择要添加到通讯组的用户或联系人。 
     
-    ![向通讯组添加成员](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![向通讯组添加成员。](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. 选择 **"保存"，** 然后选择"**关闭"。**
 

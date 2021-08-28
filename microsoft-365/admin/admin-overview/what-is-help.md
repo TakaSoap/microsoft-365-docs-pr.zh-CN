@@ -22,13 +22,13 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: 了解使用工具获取帮助的所有Microsoft 365 管理中心。
-ms.openlocfilehash: c011b68e07843956a558d26e42d0c0cd9a328451
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+description: 了解使用 Microsoft 365 管理中心 获取帮助的所有方法。
+ms.openlocfilehash: 873f8fb6d016a7ac7a5468154d2c79285ea064ec
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564534"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -46,7 +46,7 @@ ms.locfileid: "58394344"
 
 帮助已在整个 <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">管理中心内集成</a>，因此，当你需要它时，它就位于那里。 在很多页面的顶部，你将找到内联帮助文本，该文本提供当前任务的信息概述，以及指向文章的链接，这些文章可让你快速找到官方文档，进行更深入的学习。
 
-![显示内联帮助和文章链接的组页面](../../media/integrated-help.png)
+![显示内联帮助和文章链接的"组"页面。](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>由 AI 提供现代自助功能
 
@@ -54,7 +54,7 @@ ms.locfileid: "58394344"
 
 或者，对于你不太知道如何在你的特定情况下完成某些操作的情况，请使用支持助理。 目前，此体验仅提供英语版本。 若要打开支持助理，只需使用"需要帮助" **窗格顶部的开关** 。 支持助理提供了一个对话界面来帮助你。 输入查询后，聊天机器人会询问阐明问题，以针对您的特定情况获得正确的答案。 将它视为发现解决方案和完成任务的虚拟帮助程序。
 
-![新式自助](../../media/help-options.png)
+![新式自助。](../../media/help-options.png)
 
 当然，有时问题最好由人回答。 如果我们的新式自助没有答案，你始终可以选择联系我们的支持代理。
 

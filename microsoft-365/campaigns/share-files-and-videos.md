@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 在市场活动中与用户共享文件和Microsoft Teams SharePoint。
-ms.openlocfilehash: 90f99f42db7dbfba3d0b7276da8591623cc6a32b588acb212694953a29735d1d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 与用户和用户共享市场活动Microsoft Teams SharePoint。
+ms.openlocfilehash: 20e232f1ca8a8392efa236d21b26259f47382148
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861433"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567576"
 ---
 # <a name="share-files-and-videos"></a>共享文件和视频
 
 当需要控制可以查看文件的用户和可编辑文件的用户时，您需要将文件存储在一个安全的位置，您可以在其中确保正确应用权限。 可以使用Microsoft Teams存储文件，然后使用 Microsoft Teams 或发送链接，在公司、实践或市场活动内外共享SharePoint文件。 发送链接而不是电子邮件附件意味着你知道谁正在查看和修改文件，未经你的允许，无法查看或修改这些文件。
 
-![菜单上的Microsoft Teams图表，显示"文件"选项卡和"获取"链接](../media/m365-democracy-teams-sharefiles.png)
+![菜单窗口Microsoft Teams图表，显示"文件"选项卡和菜单上的"获取"链接。](../media/m365-democracy-teams-sharefiles.png)
 
-使用文件和Microsoft Teams SharePoint，还可以一起处理文件并查看对方的更改。 使用 Microsoft Teams 在公司、实践或市场活动内共享文件。 如果需要与组织外部人员进行外部共享，可以将他们作为来宾添加到团队，或向他们发送一个安全SharePoint链接。
+使用文件和Microsoft Teams SharePoint，还可以一起处理文件并查看对方的更改。 使用Microsoft Teams在公司、业务或市场活动内共享文件。 如果需要与组织外部人员进行外部共享，可以将他们作为来宾添加到团队，或向他们发送一个安全SharePoint链接。
 
 您还可以使用 Microsoft Stream 在内部存储和共享视频。 这些视频不向公众显示，因此非常适合内部宣传活动消息传送。
 
@@ -66,6 +66,6 @@ ms.locfileid: "53861433"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-下载 PDF 或[](https://go.microsoft.com/fwlink/?linkid=2079435)PowerPoint信息[图，](https://go.microsoft.com/fwlink/?linkid=2079438)以快速概览共享文件的方法。
+下载 PDF 或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079435)信息[](https://go.microsoft.com/fwlink/?linkid=2079438)图，以快速概览共享文件的方法。
 
-[![插图：与不同用户共享文件](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![插图：与不同用户共享文件。](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

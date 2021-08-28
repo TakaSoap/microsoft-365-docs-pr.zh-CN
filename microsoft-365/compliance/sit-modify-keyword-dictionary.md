@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在合规性中心内修改Microsoft 365词典。
-ms.openlocfilehash: 17dafeb6302207ded8653f17f7bf40dfaa8a9e2ef07d7eb38a485488f2346eaa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e060b09f271615f98fe43002029144b119013439
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855452"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565366"
 ---
 # <a name="modify-a-keyword-dictionary"></a>修改关键字词典
 
@@ -37,7 +37,7 @@ ms.locfileid: "53855452"
 2. 找到要更新的关键字词典并选择"编辑"。 
 3.  每行使用一个关键字进行编辑。
 
-![屏幕截图编辑关键字](../media/edit-keyword-dictionary.png)
+![屏幕截图编辑关键字。](../media/edit-keyword-dictionary.png)
 
 4. 选择 `Done` 。
 

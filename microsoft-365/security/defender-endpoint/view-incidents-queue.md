@@ -1,7 +1,7 @@
 ---
 title: 查看和组织事件队列
 ms.reviewer: ''
-description: 查看事件列表，了解如何应用筛选器来限制列表并获取更集中的视图。
+description: 查看事件列表，并了解如何应用筛选器来限制列表并获取更集中的视图。
 keywords: 视图， 组织， 事件， 聚合， 调查， 队列， ttp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f709d0929b12d6f19121c6ca6c653f6484bab6c2ba2d3df52fda446b675deca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806169"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565806"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看并组织 Microsoft Defender for Endpoint 事件队列
 
@@ -48,7 +48,7 @@ ms.locfileid: "53806169"
 - 在页面之间导航
 - 应用筛选器
 
-![事件队列的图像](images/atp-incident-queue.png)
+![事件队列的图像。](images/atp-incident-queue.png)
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>对事件队列进行排序和筛选
 可以应用以下筛选器来限制事件列表，并获取更集中的视图。
@@ -57,8 +57,8 @@ ms.locfileid: "53806169"
 
 事件严重性 | 说明
 :---|:---
-High </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
-中 </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
+高 </br> (红色)  | 通常与 APT 高级永久性威胁 (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
+Medium </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
 低 </br> (黄色)  | 与流行恶意软件和黑客工具关联的威胁，这些威胁不一定表示针对组织的高级威胁。
 信息 </br> (灰色)  | 信息事件可能被视为对网络没有危害，但可以跟踪。
 
@@ -76,7 +76,7 @@ High </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这
 
 ## <a name="incident-naming"></a>事件命名
 
-为了一目了然地了解事件的范围，事件名称会基于警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。
+为了一目了然地了解事件的范围，事件名称根据警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。
 
 例如： *多个源报告的多个终结点上的多阶段事件。*
 

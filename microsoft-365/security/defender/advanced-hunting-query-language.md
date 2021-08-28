@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 815b962d56ca75dbd864579d7f26e24a587b74df
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256536"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565744"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -40,7 +40,7 @@ ms.locfileid: "58256536"
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在Microsoft 365 Defender门户中，转到"**搜寻**"以运行你的第一个查询。 使用以下示例：
+在Microsoft 365 Defender门户中，转到 **"搜寻**"以运行你的第一个查询。 使用以下示例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -71,7 +71,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 // Finds PowerShell execution events that could involve a download
 ```
 
-查询本身通常以表名称开始，后跟几个以管道连接 `|` () 。 此示例首先创建两个表和 的联合，  `DeviceProcessEvents` `DeviceNetworkEvents` 并根据需要添加管道元素。
+查询本身通常以表名称开始，后跟几个以管道管道 `|` () 。 此示例首先创建两个表和 的联合，  `DeviceProcessEvents` `DeviceNetworkEvents` 并根据需要添加管道元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -117,7 +117,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 选择 **"运行查询** "以查看结果。 使用查询编辑器右上角的展开图标专注于搜寻查询和结果。 
 
-![高级搜寻查询编辑器中的"展开"控件的图像](../../media/advanced-hunting-expand.png)
+![高级搜寻查询编辑器中的"展开"控件的图像。](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
 >您可以将查询结果作为图表进行查看并快速调整筛选器。 有关指导 [，请阅读关于使用查询结果](advanced-hunting-query-results.md)
@@ -167,13 +167,13 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - 使用空行分隔每个查询。
 - 将光标放在查询的任何部分，以在运行该查询之前选择该查询。 这将仅运行选定的查询。 若要运行另一个查询，请相应地移动游标并选择"**运行查询"。**
 
-![包含多个查询的查询编辑器的图像](../../media/mtp-ah/ah-multi-query.png)
+![包含多个查询的查询编辑器的图像。](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>使用示例查询
 
 **入门** 部分提供了使用常用运算符的几个简单查询。 请尝试运行这些查询，并对其进行细微修改。
 
-![高级搜寻窗口的图像](../../media/advanced-hunting-get-started.png)
+![高级搜寻窗口的图像。](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或查询存储库的GitHub[查询](https://aka.ms/hunting-queries)。
@@ -183,7 +183,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 有关 Kusto 查询语言和受支持运算符的详细信息，请参阅 [Kusto 查询语言文档](/azure/kusto/query/)。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

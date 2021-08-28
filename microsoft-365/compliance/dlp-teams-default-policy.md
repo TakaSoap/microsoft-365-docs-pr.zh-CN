@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解默认数据丢失防护策略Microsoft Teams
-ms.openlocfilehash: 6358ec692142aa5f2c47007133cb99ec080621f8452234f1260a65e5cd7f9c21
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8f021031bd1dc3672a7aa7123ce01d4c6536fe77
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567732"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
 
 [数据丢失防护](dlp-learn-about-dlp.md)功能已扩展为包括Microsoft Teams消息，包括私人频道消息。 作为此版本的一部分，我们为首次Microsoft Teams客户创建了默认 DLP 策略。
 
-## <a name="applies-to"></a>适用对象
+## <a name="applies-to"></a>适用于
 
 通过以下一个或多个许可证获得许可并拥有活动许可证Teams租户
  
@@ -41,13 +41,13 @@ ms.locfileid: "53814240"
 
 ## <a name="what-does-the-default-policy-do"></a>默认策略有什么功能？
 
-用户的默认 DLP 策略Teams在组织内部和外部共享的所有信用卡号。 默认情况下，租户的所有用户都启用此策略。 它不会为最终用户生成任何策略提示，但会生成警报事件，还会触发低严重性电子邮件给管理员 (添加到策略策略) 。 管理员可以通过登录到合规中心查看活动并编辑策略详细信息。
+用户的默认 DLP 策略Teams在组织内部和外部共享的所有信用卡号。 默认情况下，租户的所有用户都启用此策略。 它不会为最终用户生成任何策略提示，但会生成警报事件，还会触发向管理员发送低严重性 (添加到策略策略) 。 管理员可以通过登录到合规中心查看活动并编辑策略详细信息。
 
-管理员可以在合规中心查看此策略>[](https://compliance.microsoft.com/compliancesettings)数据丢失防护策略"页面。
+管理员可以在合规中心查看此策略>[](https://compliance.microsoft.com/compliancesettings)数据丢失防护策略"页。
 
 
 > [!div class="mx-imgBorder"]
-> ![默认Teams DLP 策略](../media/default-teams-dlp-policy.png)
+> ![默认Teams DLP 策略。](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>编辑或删除默认策略
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
-ms.openlocfilehash: 9b5df749d71ac3c7b6004f2c44e5d0015595a935a749061eb74b581ae44951cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892120"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566046"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -32,7 +32,7 @@ ms.locfileid: "53892120"
 > [!IMPORTANT]
 > 此脚本已优化为在最多 10 台设备上使用。
 >
-> 若要大规模部署，请使用 [其他部署选项](dlp-configure-endpoints.md)。 例如，可以使用在使用组策略载入 Windows 10 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](dlp-configure-endpoints-gp.md)。
+> 若要大规模部署，请使用 [其他部署选项](dlp-configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 10 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](dlp-configure-endpoints-gp.md)。
 
 ## <a name="onboard-devices"></a>载入设备
  
@@ -52,7 +52,7 @@ ms.locfileid: "53892120"
 
 8.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-    ![指向"开始"菜单以管理员角色运行"的窗口](../media/dlp-run-as-admin.png)
+    ![指向"开始"菜单以管理员角色运行"的窗口。](../media/dlp-run-as-admin.png)
 
 9.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
@@ -74,7 +74,7 @@ ms.locfileid: "53892120"
 
 4. 单击 **下载程序包** 并保存.zip文件。
 
-5. 将文件.zip到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
+5. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 6.  在设备上打开提升的命令行提示符并运行脚本：
 
@@ -82,7 +82,7 @@ ms.locfileid: "53892120"
 
 8.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-    ![指向"开始"菜单以管理员角色运行"的窗口](../media/dlp-run-as-admin.png)
+    ![指向"开始"菜单以管理员角色运行"的窗口。](../media/dlp-run-as-admin.png)
 
 9.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -98,16 +98,16 @@ ms.locfileid: "53892120"
 也可以直接在门户上或使用不同的部署工具进行监视。
 
 ### <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
-1. 转到Microsoft 365[合规中心。](https://compliance.microsoft.com)
+1. 转到["Microsoft 365合规中心"。](https://compliance.microsoft.com)
 
-2. 选择 **设置**  >  **设备**  >  **载入设备"。**
+2. 选择 **设置**  >  **载入**  >  **设备"。**
 
 3. 验证设备是否显示。
 
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)
-- [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)

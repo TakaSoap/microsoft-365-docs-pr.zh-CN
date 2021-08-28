@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: 使用全局管理员凭据登录企业Microsoft 365查看设备策略和操作。
-ms.openlocfilehash: 060a2bf099fdf0347517be55b56846cbcb98cca4
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360282"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566378"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>查看和管理策略和设备
 
@@ -41,7 +41,7 @@ ms.locfileid: "58360282"
 
     在此页面上，可以创建、编辑、更改目标组或删除策略。
 
-    ![Screenshot of the Policies page](../../media/devicepolicies.png)
+    !["策略"页面的屏幕截图。](../../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>查看和管理设备
 
@@ -49,5 +49,5 @@ ms.locfileid: "58360282"
     
     在此页面上，可以选择一个或多个设备并删除公司数据。 对于设置了设备保护设置的 Windows 10 设备，还可以选择将设备重置为出厂设置。
   
-   !["管理设备"页](../../media/devicesmanage.png)
+   !["管理设备"页。](../../media/devicesmanage.png)
 

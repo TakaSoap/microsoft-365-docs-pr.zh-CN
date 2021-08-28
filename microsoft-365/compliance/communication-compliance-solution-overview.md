@@ -16,22 +16,22 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 7c5b30abcf755ff43f746e4a7a299ae1aece0f8688612274ebc2ce9e547f3eaa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 46ddc7584b0299a7098b3fbe0758bdd9d4ee914c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866496"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564154"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
-保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 通信合规性Microsoft 365帮助您快速检测、捕获电子邮件和邮件通信并执行修正操作，从而Microsoft Teams风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
+保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 电子邮件中的Microsoft 365合规性可帮助您快速检测、捕获电子邮件和邮件通信并执行修正操作，从而Microsoft Teams风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
 
 ## <a name="configure-communication-compliance-for-microsoft-365"></a>配置用户的通信Microsoft 365
 
 使用以下步骤为组织配置通信合规性：
 
-![内部风险解决方案通信合规性步骤](../media/ir-solution-cc-steps.png)
+![内部风险解决方案通信合规性步骤。](../media/ir-solution-cc-steps.png)
 
 1. 了解[通信合规性](communication-compliance.md)Microsoft 365
 2. 规划[通信合规性](communication-compliance-plan.md)[并验证许可](communication-compliance-configure.md#subscriptions-and-licensing)
@@ -42,4 +42,4 @@ ms.locfileid: "53866496"
 ## <a name="more-information-about-communication-compliance"></a>有关通信合规性详细信息
 
 - [调查和修正警报](communication-compliance-investigate-remediate.md)
-- [案例研究 - Contoso 快速配置冒犯性语言策略，用于Microsoft Teams、Exchange Yammer通信](communication-compliance-case-study.md)
+- [案例研究 - Contoso 快速配置冒犯性语言策略，Microsoft Teams、Exchange和Yammer通信](communication-compliance-case-study.md)

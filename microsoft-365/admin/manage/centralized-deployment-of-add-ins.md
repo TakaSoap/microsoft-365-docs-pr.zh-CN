@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
-ms.openlocfilehash: 98496ce57c57cbce10178cc2be99079d8733a0ca
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372504"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564389"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -47,7 +47,7 @@ ms.locfileid: "58372504"
 
 ## <a name="before-you-begin"></a>准备工作
 
-外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUs：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录到 Office，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 你的订阅目录必须位于 中，或联合到 Azure Active Directory。
+外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或业务 SK：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录到 Office，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 你的订阅目录必须位于 中，或联合到 Azure Active Directory。
 可以查看以下版本和Office Exchange，或使用集中[部署兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
@@ -68,9 +68,9 @@ ms.locfileid: "58372504"
 
 - 对于Outlook，用户必须使用下列方法之一：
   - SKUS 的版本 1701 或Microsoft 365 企业版：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版。
-  - 2019 年 Office 专业增强版 2019 Office Standard版本 1808 或更高版本。
-  - MSI 版本 16.0.4494.1000 或更高版本OFFICE 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) \*
-  - MSI 2013 或 OFFICE PROFESSIONAL PLUS 2013 版本 15.0.4937.1000 (MSI) 或 Office Standard 2013 () \*
+  - 2019 年 Office 专业增强版 2019 Office Standard 版本 1808 或更高版本。
+  - MSI 版本 16.0.4494.1000 或更高版本Office 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) \*
+  - MS) I 2013 (2013 或 Office Standard 2013 Office Professional Plus 2013 版本 15.0.4937.1000 () \*
   - 版本 16.0.9318.1000 或更高版本Office 2016 for Mac
 - 适用于 iOS 的 Outlook 2.75.0 版或更高版本
 - Android 移动版 2.2.145 Outlook更高版本
@@ -86,7 +86,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中部署兼容性检查器
 
-使用集中部署兼容性检查器，可以验证租户上的用户是否设置为使用 Word、Excel 和 PowerPoint 的集中部署。 Outlook 支持不需要兼容性检查器。 下载 [兼容性检查器](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)。
+使用集中部署兼容性检查器，可以验证租户上的用户是否设置为使用 Word、Excel 和 PowerPoint。 Outlook 支持不需要兼容性检查器。 下载 [兼容性检查器](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)。
 
 #### <a name="run-the-compatibility-checker"></a>运行兼容性检查器
 
@@ -103,7 +103,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   此命令会提示您输入  *_TenantDomain_* (例如 *TailspinToysIncorporated.onmicrosoft。 </span>com*)  *_和 TenantAdmin_* (使用全局管理员凭据) ，然后请求同意。
+   此命令会提示您输入  *_TenantDomain_* (例如 *TailspinToysIncorporated.onmicrosoft。 </span>com*) 和  *_TenantAdmin_* (使用全局管理员凭据) ，然后请求同意。
 
    > [!NOTE]
    > 检查器可能需要数分钟或数小时时间来完成检查，具体取决于租户中的用户数。 
@@ -136,34 +136,34 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 请查看以下示例，在这里，柏隼、康霓以及销售部门组被分配了加载项。由于西海岸销售部门是嵌套组，赵强和熊飞未被分配加载项。
 
-![销售部门的关系图](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![销售部门的关系图。](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>找出一个组是否包含嵌套组
 
 若要找出一个组是否包含嵌套组，最简单的方法是查看 Outlook 内的组联系人卡片。 如果在电子邮件的"到"字段中输入组名称，然后在解析时选择组名称，它将显示该组是否包含用户或嵌套组。 在以下示例中，测试组 Outlook 联系人卡片的" **成员**"选项卡显示没有用户且只有两个子组。
 
-![联系人卡片Outlook成员"选项卡](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![联系人卡片Outlook"成员"选项卡。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。在以下示例中，可以在 Outlook 联系人卡片的" **成员身份**"选项卡下看到子组 1 是测试组的成员。
 
-![联系人卡片Outlook选项卡](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![联系人卡片Outlook选项卡。](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 或者，可以使用 Azure Active Directory 图形 API 运行查询，查找组内的组列表。有关详细信息，请参阅 [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations)（组操作 | 图形 API 参考）。
 
 ### <a name="contacting-microsoft-for-support"></a>联系 Microsoft 以获取支持
 
-如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解如何) 。 [](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的以下信息。
+如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解如何) 。 [](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的信息。
 
 | 平台 | 调式信息 |
 |:-----|:-----|
-|办公室 | Charles/Fiddler 日志  <br/>  租户 ID ([了解如何) ](/onedrive/find-your-office-365-tenant-id)  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|丰富的客户端（Windows、Mac） | Charles/Fiddler 日志  <br/>  客户端应用内部版本号 (最好作为"文件 **/** 帐户"或"帐户")  |
+|Office | Charles/Fiddler 日志  <br/>  租户 ID ([了解如何) ](/onedrive/find-your-office-365-tenant-id)  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|丰富的客户端（Windows、Mac） | Charles/Fiddler 日志  <br/>  最好将客户端应用 (生成号作为"文件 **/** 帐户"或"帐户")  |
 
 ## <a name="related-content"></a>相关内容
 
 [在管理中心部署外接程序 (](../manage/manage-deployment-of-add-ins.md) 文章) \
 [管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) \
 [集中部署常见问题 (](../manage/centralized-deployment-faq.yml) 文章) \
-[将业务Microsoft 365升级到](../setup/upgrade-users-to-latest-office-client.md)最新 Office 客户端 (文章) 
+[将Microsoft 365用户升级至](../setup/upgrade-users-to-latest-office-client.md)最新 Office 客户端 (文章) 
  

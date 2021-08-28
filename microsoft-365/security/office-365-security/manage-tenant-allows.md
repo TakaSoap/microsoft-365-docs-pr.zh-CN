@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9b682307c9891aab8e73496916205368734b369ecea2f6e43d73f2c2640fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56830680"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58563762"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加允许
 
@@ -36,15 +36,15 @@ ms.locfileid: "56830680"
 
 ## <a name="add-allows-using-the-submissions-portal"></a>添加允许使用提交门户 
 
-允许文件的提交部分中的文件、URL 和Microsoft 365 Defender。 
+允许文件的提交部分的文件、URL 和Microsoft 365 Defender。 
 
 1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
-2. 在"**提交"** 页上，验证"**已提交进行分析**"选项卡已选中，然后单击广告图标"提交到 ![ Microsoft ](../../media/m365-cc-sc-create-icon.png) **进行分析"。**
+2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡，然后单击 ![ "广告图标"。](../../media/m365-cc-sc-create-icon.png) **提交到 Microsoft 进行分析**。
 
 3. 使用 **"提交给 Microsoft 审阅** "飞出页面将发件人、文件或 URL 标记为误报。 
 
-4. 在"**选择提交** 到 Microsoft 的原因"部分，选择"不应已被阻止 (**误报) "。** 
+4. 在"**选择提交** 到 Microsoft 的原因"部分，选择"不应被阻止 (**误报) 。** 
 
 5. 启用" **允许类似此选项的邮件** "。 
 
@@ -53,7 +53,7 @@ ms.locfileid: "56830680"
 7. 完成后，单击"提交 **"** 按钮。
 
 > [!div class="mx-imgBorder"]
-> ![误报提交示例](../../media/admin-submission-allow-messages.png)
+> ![误报提交示例。](../../media/admin-submission-allow-messages.png)
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>使用邮件创建欺骗性发件人允许Microsoft 365 Defender
 
@@ -64,9 +64,9 @@ ms.locfileid: "56830680"
 - 欺骗性发件人的条目永不过期。
 - 欺骗同时支持允许和阻止。 URL 仅支持允许。
 
-1. 在Microsoft 365 Defender门户中，转到"策略 **"&规则** \> **""威胁** 策略规则" \> 部分" \> **租户允许/阻止列表"。**
+1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. 在"**租户允许/阻止列表"** 页上，选择"**欺骗"选项卡**，然后单击"阻止图标""添加 ![ ](../../media/m365-cc-sc-create-icon.png) **"。**
+2. 在" **租户允许/阻止列表"** 页上，选择" **欺骗"** 选项卡，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **添加** 。
 
 3. 在出现的 **"添加新域对** "飞出中，配置以下设置：
    - **使用通配符添加新域对**：每行输入一个域对，最多输入 20 个域对。 有关欺骗性发件人条目的语法的详细信息，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。

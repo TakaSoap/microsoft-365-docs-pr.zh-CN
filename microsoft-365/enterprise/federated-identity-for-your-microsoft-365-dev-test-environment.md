@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: dea2c5fe85ffb30f6195e4f76765422fb22f20b4
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356752"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567408"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
@@ -35,11 +35,11 @@ Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户�
   
 本文介绍如何为测试环境配置Microsoft 365身份验证，从而产生以下结果：
 
-![Microsoft 365 测试环境的联合身份验证](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![用于测试环境Microsoft 365身份验证。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 此配置包括：
   
-- 试用Microsoft 365 E5生产订阅。
+- 试用Microsoft 365 E5或生产订阅。
     
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络 (DC1、APP1、CLIENT1、ADFS1 和 PROXY1) 子网中的五个虚拟机组成。 Azure AD 连接 APP1 上运行，以将 Active Directory 域服务域中的帐户列表同步到Microsoft 365。 PROXY1 接收传入的身份验证请求。 ADFS1 使用 DC1 验证凭据并颁发安全令牌。
     
@@ -57,7 +57,7 @@ Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户�
 
 按照密码哈希[同步中的说明操作Microsoft 365。](password-hash-sync-m365-ent-test-environment.md) 生成的配置如下所示：
   
-![使用密码哈希同步测试环境的模拟企业配置](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
+![密码哈希同步测试环境的模拟企业。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
 此配置包括：
   
@@ -106,7 +106,7 @@ Restart-Computer
 
 生成的配置如下所示：
   
-![添加到用于 Microsoft 365 测试环境的 DirSync 的 AD FS 服务器](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
+![添加到 DirSync 的 AD FS 服务器Microsoft 365测试环境。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>阶段 3：创建 Web 代理服务器
 
@@ -173,7 +173,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateA
   
 生成的配置如下所示：
   
-![添加到用于 Microsoft 365 测试环境的 DirSync 的 Web 应用程序代理服务器](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![添加到 DirSync 的 Web 应用程序代理服务器Microsoft 365测试环境。](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>阶段 4：创建自签名证书并配置 ADFS1 和 PROXY1
 
@@ -259,7 +259,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
 8. 在 **"选择用户或服务帐户"中**，输入 **ADFS-Service，** 选择 **"检查** 名称"，然后选择"确定 **"。**
     
-9. 在 **"帐户密码**"中，输入帐户ADFS-Service密码，然后选择"下一 **步"。**
+9. 在 **"帐户密码**"中，输入帐户ADFS-Service密码，然后选择"下一步 **"。**
     
 10. 在"**指定配置数据库"页上**，选择"下一 **步"。**
     

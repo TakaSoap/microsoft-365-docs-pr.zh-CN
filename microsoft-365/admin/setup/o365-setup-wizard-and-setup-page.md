@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 了解安装向导和"设置"页的区别。
-ms.openlocfilehash: 18dd1e6cd2aae0c1222bc0a63025c413946dbd8619231c307ec5a938c97a1bef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解安装向导和"安装"页的区别。
+ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821686"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565586"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安装向导和"安装"页的区别
 
@@ -40,13 +40,13 @@ Microsoft 365两种设置体验：
 
 若要设置帐户，请转到管理中心，选择 [](https://go.microsoft.com/fwlink/p/?linkid=2024339)左侧导航窗格中的"设置"，然后在"设置"页上选择"引导 **式设置**"。
 
-![启动Microsoft 365 商业应用版安装向导](../../media/o365b-guided-setup.png)
+![启动Microsoft 365 商业应用版安装向导。](../../media/o365b-guided-setup.png)
 
 安装向导将指导您完成以下步骤：
 
 1. 在Microsoft 365安装应用。
 
-2. 选择并验证域，例如 contoso.com。
+2. 选择并验证您的域，例如 contoso.com。
 
 3. 添加新用户并为其分配许可证，以便他们可以下载和安装Microsoft 365应用。
 
@@ -54,18 +54,18 @@ Microsoft 365两种设置体验：
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用"安装"页完成和管理配置
 
-若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 根据你已购买的产品、你设置的功能以及你的管理员角色，你在此处Microsoft 365任务和相关信息。
+若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 根据你已购买的产品，你设置的功能以及你的管理员角色、任务和相关信息Microsoft 365此处显示。
 
 你将看到按逻辑类别排列的安装任务的完整列表，包括你在安装向导中完成的任务。
 
-![Microsoft 365企业设置"页](../../media/o365b-setup-page.png)
+![Microsoft 365企业设置"页。](../../media/o365b-setup-page.png)
 
 选择 **"查看** "查看任何任务，获取概览信息，如任务说明、用户影响、先决条件、实现努力以及安全性和采用统计信息，以帮助你在继续之前了解后果和影响。
 
-You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务，在几天内处理任务，或者有多个管理员在执行任务，可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
+You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务、在几天内处理任务，或者有多个管理员在执行任务，则可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
 
-若要访问有关要设置的功能的综合文章，请选择任何"了解更多 **"链接。** 任务集合始终位于此处，因此您随时都可以返回到"设置"页以进一步浏览资源。
+若要访问有关要设置的功能的综合文章，请选择任何"了解更多" **链接** 。 任务集合始终位于此处，因此您随时都可以返回到"设置"页以进一步浏览资源。
 
-准备好完成任务后，选择"开始"以演练配置过程。 完成任务后，"开始"按钮将更改为"管理"按钮，从而允许您根据需要管理任务。
+准备好完成任务后，选择"开始"以完成配置过程。 完成任务后，"开始"按钮将更改为"管理"按钮，从而允许您根据需要管理任务。
 
-![显示概览信息的任务视图](../../media/o365b-at-a-glance.png)
+![显示概览信息的任务视图。](../../media/o365b-at-a-glance.png)

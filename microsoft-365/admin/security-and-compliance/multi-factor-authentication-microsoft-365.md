@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: MFA (多重身份验证) 密码（应该很强）和其他验证方法。
-ms.openlocfilehash: 56a72a7232abc5f0eb7a46beb27984425648a6db
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: d0f88043ecaa4d2dd990f74661e904351db97524
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394620"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566092"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>用于身份验证的多重Microsoft 365
 
@@ -59,7 +59,7 @@ ms.locfileid: "58394620"
 
 这些方法基于你的Microsoft 365计划。
 
-|计划|建议|客户类型|
+|套餐|建议|客户类型|
 |---|---|---|
 |所有Microsoft 365计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
 |Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级版 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户进行 MFA。|小型企业到企业|
@@ -97,7 +97,7 @@ ms.locfileid: "58394620"
 
 在 Azure 门户的Azure AD 安全窗格中配置条件访问策略。
 
-![条件访问的菜单选项的图片](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![条件访问的菜单选项的图片。](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 可以将条件访问策略与：
 
@@ -140,11 +140,11 @@ ms.locfileid: "58394620"
 
 ### <a name="legacy-per-user-mfa-not-recommended"></a>不建议使用旧版每 (MFA) 
 
-你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用其中任何一个，Microsoft 强烈建议为具有管理员角色的用户帐户进行 MFA，全局管理员角色大小订阅使用 MFA。
+你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用其中任何一个，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是 全局管理员角色）执行 MFA。
 
 从"活动用户"窗格的"活动用户<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>"窗格中为单个用户帐户Microsoft 365 管理中心。
 
-!["活动用户"页面上多重身份验证选项的图片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+!["活动用户"页面上多重身份验证选项的图片。](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 启用后，用户下次登录时，系统将提示他们注册 MFA，并选择并测试其他验证方法。
 

@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: 999709558a468d53bc809662dbcc270fa8a9945b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356500"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565874"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -38,7 +38,7 @@ ms.locfileid: "58356500"
 - [阶段 2：启用密码写回](#phase-2-enable-password-writeback)
 - [第 3 阶段：配置和测试密码重置](#phase-3-configure-and-test-password-reset)
     
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -49,7 +49,7 @@ ms.locfileid: "58356500"
 
 生成的配置如下所示：
   
-![使用密码哈希同步测试环境的模拟企业配置](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![密码哈希同步测试环境的模拟企业。](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 此配置包括：
   

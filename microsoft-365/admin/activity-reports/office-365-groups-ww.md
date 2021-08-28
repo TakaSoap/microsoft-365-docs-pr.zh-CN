@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取Microsoft 365组报告，了解组及其活动。
-ms.openlocfilehash: f899b742cb4d7098c1b8bcf7b51563e009dcd0217c74fb71f6bc98944650c681
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c96d0bdbc42e4cebec47bde532afd6288d29613
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816365"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564926"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365管理中心中的报告 - Microsoft 365组
 
-"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在Microsoft 365组中，可以深入了解组织中组的活动，并查看创建和使用的组数。
+"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在Microsoft 365组中，你可以深入了解组织中组的活动，并查看创建和使用的组数。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
   
 ## <a name="how-to-get-to-the-groups-report"></a>如何访问组报告
 
@@ -49,7 +49,7 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 
 选择 **"选择要在** 报表中添加或删除列的列"。
 
-:::image type="content" alt-text="Office 365组活动报表 - 选择列" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
+:::image type="content" alt-text="Office 365组活动报表 - 选择列。" source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
 
@@ -60,15 +60,15 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 |组所有者 |组所有者的名称。 |
 |上次活动日期 (UTC)  |组收到邮件的最近日期。 - 这是电子邮件对话、电子邮件或网站中Yammer发生的最新日期。 |
 |类型 |组的类型。 可以是私有组，也可以是公用组。 |
-|收到的电子邮件Exchange |组接收的邮件数。|
+|在邮件中收到Exchange |组接收的邮件数。|
 |电子邮件总数Exchange ()  |组邮箱中的项目总数。 |
 |用于存储 EXCHANGE (MB)  |组邮箱使用的存储。 |
-|SharePoint文件 (总数)  |组网站中存储SharePoint的数量。 |
+|SharePoint文件 (总数)  |组网站中存储SharePoint数量。 |
 |SharePoint活动 (文件)  |报告期间对 SharePoint 组网站中 (查看或修改、同步、在内部或外部共享) 文件数。 |
-|用于存储的站点总SharePoint (MB)  |报告期间使用的存储量（以 MB 为单位）。 |
-|邮件Yammer (中)  |报告期间在报告组中Yammer的邮件数。 |
-|邮件Yammer (阅读)  |报告期间在报告Yammer组中读取的对话数。 |
-|邮件Yammer (中)  |报告期间"组"Yammer的消息数。 |
+|用于网站总存储SharePoint (MB)  |报告期间使用的存储量（以 MB 为单位）。 |
+|已发布Yammer (中的)  |报告期间在报告组中Yammer的邮件数。 |
+|邮件Yammer (读取)  |报告期间在报告Yammer组中读取的对话数。 |
+|邮件Yammer (喜欢)  |报告期间在组Yammer的消息数。 |
 |成员 |组中成员的数量。 |
 |外部成员 |组中外部用户的数量。|
 
@@ -77,5 +77,5 @@ You can view the activations in the Office 365 by choosing the **Groups activity
 
 [Microsoft 365管理中心中的报表 (](activity-reports.md)文章) \
 [安全与合规中心&报告](../../compliance/reports-in-security-and-compliance.md) (文章) \
-[Microsoft 365中心中的报表 - 活动](../../admin/activity-reports/active-users-ww.md)用户 (文章) 
+[Microsoft 365中心中的](../../admin/activity-reports/active-users-ww.md)报告 - 活动用户 (文章) 
 

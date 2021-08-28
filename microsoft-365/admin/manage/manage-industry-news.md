@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用新闻服务为组织启用自定义新闻源，为用户提供行业最新新闻标题和来自组织的信息。
-ms.openlocfilehash: 42a65543ef37d2433d84432a7436dabaaa9ce345
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 9577081bcf8d8c2b7b47bc820529f2e66cc86924
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394224"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566254"
 ---
 # <a name="manage-industry-news"></a>管理行业新闻
 
@@ -34,13 +34,13 @@ ms.locfileid: "58394224"
  
 转到主页的登录必应在组织的个性化信息下看到你的行业新闻源。 
  
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="包含来自 Web 的行业新闻的图像视频的屏幕截图":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="包含来自 Web 的行业新闻的图像视频的屏幕截图。":::
 
-:::image type="content" source="../../media/industry-updates-new.png" alt-text="包含日期和标题的行业更新页面":::
+:::image type="content" source="../../media/industry-updates-new.png" alt-text="行业更新页面，包含日期和标题。":::
 
 他们还可以在新建选项卡页上查看公司、行业和内部新闻或Microsoft Edge工作信息。 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="新闻主页中的 Microsoft":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="新闻主页中的 Microsoft。":::
 
 ## <a name="news-settings"></a>新闻设置
 
@@ -54,9 +54,9 @@ ms.locfileid: "58394224"
 
 1. 在" **主题** "字段中，输入您希望查看有关新闻文章的主题。 用户不能更改这些主题。 
 
-1. 您可以阻止在"排除内容"字段中包含 **关键字** 的文章。 例如，为了避免包含关键字"bake"的文章显示在新闻源中，在"排除内容"字段中添加关键字"bake"。  避免包括有关 (等的一般) ;他们可以阻止相关内容显示在企业新闻源中。 
+1. 您可以阻止在"排除内容"字段中包含 **关键字** 的文章。 例如，为了避免包含关键字"bake"的文章显示在新闻源中，在"排除内容"字段中添加关键字"bake"。  避免将常规术语 () 、it 等术语;他们可以阻止相关内容显示在企业新闻源中。 
 
-1. 选择“**保存**”。 可能需要 24 小时才能显示更改。 
+1. 选择 **保存**。 可能需要 24 小时才能显示更改。 
 
 ## <a name="industry-updates-in-email"></a>电子邮件中的行业更新 
 
@@ -81,11 +81,11 @@ ms.locfileid: "58394224"
     行业新闻显示在 必应.com 上的组织个性化信息下。 
 
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge选项卡页 
-当用户使用有效的工作或学校帐户Microsoft Edge (版本 87 或更高版本) 时，他们可以看到为组织定制的新闻。
+当用户使用有效的工作或学校帐户Microsoft Edge (版本 87 或更高版本) 时，他们可以看到专为组织定制的新闻。
 
 1. In the Microsoft 365 管理中心， go to **设置**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. 在"**新闻"** 面板中，Microsoft Edge **新选项卡页"。**
-3. 选择 **"Office 365选项卡页上的"允许显示内容"。** 启用后，用户可以自定义其新选项卡以显示来自Office 365的信息，包括推荐文件和最近使用的文件，以及SharePoint网站和其他信息。
+3. 选择 **"Office 365选项卡页上的"允许显示内容"。** 启用后，用户可以自定义其新选项卡以显示来自Office 365的信息，包括推荐文件和最近使用的文件，以及常用的SharePoint网站和其他信息。
 4. 选择 **"显示新选项卡页上的公司信息和行业新闻"。** 对于选择查看新选项卡上的文章的用户，将显示有关组织和行业的新闻文章。
 
 ## <a name="related-articles"></a>相关文章

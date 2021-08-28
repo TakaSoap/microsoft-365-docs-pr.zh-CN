@@ -13,13 +13,13 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 摘要：配置域控制器和目录同步服务器，实现 Microsoft 365 中的高可用性Microsoft Azure。
-ms.openlocfilehash: 1454d68fc9a2d305e52355ba07c6d1674a68a59f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 摘要：配置域控制器和目录同步服务器，以在 Microsoft Azure 中实现Microsoft 365联合身份验证。
+ms.openlocfilehash: f5d68f75a281ed8e04b8a41d7b748e056e081b52
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353728"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565228"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性联合身份验证阶段 2：配置域控制器
 
@@ -36,13 +36,13 @@ ms.locfileid: "58353728"
   
 |**项**|**虚拟机名称**|**库图像**|**存储类型**|**最小大小**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![线条](../media/Common-Images/TableLine.png) （第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![线条](../media/Common-Images/TableLine.png) （第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![线条](../media/Common-Images/TableLine.png)  (目录同步服务器，例如 DS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![线条](../media/Common-Images/TableLine.png)  (一个 AD FS 服务器，例如 ADFS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![线条](../media/Common-Images/TableLine.png)  (个 AD FS 服务器，例如 ADFS2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![线条](../media/Common-Images/TableLine.png)  (第一个 Web 应用程序代理服务器，示例 WEB1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![线条](../media/Common-Images/TableLine.png)  (第二个 Web 应用程序代理服务器，例如 WEB2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![行。](../media/Common-Images/TableLine.png) （第一个域控制器，例如 DC1）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![行。](../media/Common-Images/TableLine.png) （第二个域控制器，例如 DC2）  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![行。](../media/Common-Images/TableLine.png)  (目录同步服务器，示例 DS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![行。](../media/Common-Images/TableLine.png)  (一个 AD FS 服务器，例如 ADFS1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![行。](../media/Common-Images/TableLine.png)  (AD FS 服务器，例如 ADFS2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![行。](../media/Common-Images/TableLine.png)  (第一个 Web 应用程序代理服务器，例如 WEB1)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![行。](../media/Common-Images/TableLine.png)  (第二个 Web 应用程序代理服务器，例如 WEB2)   <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M - Azure 中用于高可用性联合身份验证的Microsoft 365虚拟机**
   
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 使用你选择的远程桌面客户端并创建到第一个域控制器虚拟机的远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-接下来，通过以下命令将额外的数据磁盘添加到第一个域控制器Windows PowerShell第一个域控制器虚拟机上的命令 **提示符中**：
+接下来，通过以下命令将额外的数据磁盘添加到第一个域控制器Windows PowerShell第一个域控制器虚拟机上的命令 **提示符中：**
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +175,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 使用你选择的远程桌面客户端并创建到第二个域控制器虚拟机的远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-接下来，您需要使用此命令从第二个域控制器虚拟机上的 Windows PowerShell 命令提示符向第二个域控制器 **添加额外的数据磁盘**：
+接下来，您需要使用此命令从第二个域控制器虚拟机上的 Windows PowerShell 命令提示符向第二个域控制器添加 **额外的数据磁盘**：
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -245,7 +245,7 @@ Restart-Computer
   
 **阶段 2：Azure 中高可用性联合身份验证基础结构的域控制器和目录同步服务器**
 
-![Azure 中具有域控制器Microsoft 365身份验证基础结构的第 2 阶段](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![使用域控制器在 Azure 中Microsoft 365身份验证基础结构的第 2 阶段。](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -255,6 +255,6 @@ Restart-Computer
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)

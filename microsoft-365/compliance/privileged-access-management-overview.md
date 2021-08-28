@@ -20,24 +20,24 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: 02cc7298afe202ae004a1fff84ea6961535c5b2e2972d08da6527946d7253fae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e66f9133959ce7f09915361e7583ae809e33647e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567672"
 ---
 # <a name="learn-about-privileged-access-management"></a>了解特权访问管理
 
-特权访问管理允许在 Office 365 中对特权管理任务进行精细的访问控制。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。 特权访问管理要求用户通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成提升和特权任务。 此配置授予用户适当的访问权限，以执行手头任务，而不会冒暴露敏感数据或关键配置设置的风险。 在 Microsoft 365 中启用特权访问管理，使组织能够使用零长期特权运行，并针对长期管理访问漏洞提供一个防御层。
+特权访问管理可以对 Office 365 中的特权管理任务进行粒度访问控制。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。 特权访问管理要求用户通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成提升和特权任务。 此配置授予用户适当的访问权限，以执行手头任务，而不会冒暴露敏感数据或关键配置设置的风险。 在组织中启用特权访问Microsoft 365使组织能够使用零长期特权运行，并针对长期管理访问漏洞提供一个防御层。
 
 有关集成的客户密码箱和特权访问管理工作流的快速概述，请参阅此客户密码箱 [和特权访问管理视频](https://go.microsoft.com/fwlink/?linkid=2066800)。
 
 ## <a name="layers-of-protection"></a>保护层
 
-特权访问管理补充了 Microsoft 365 安全中心体系结构中的其他数据和访问功能保护。 将特权访问管理作为集成的分层安全方法的一部分提供了一个安全模型，可以最大限度地保护敏感信息和 Microsoft 365 配置设置。 如图所示，特权访问管理建立在 Microsoft 365 数据本机加密提供的保护和 Microsoft 365 服务基于角色的访问控制安全模型的基础上。 当与[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)一起使用时，这两个功能提供访问控制，在不同范围内提供实时访问。
+特权访问管理补充了 Microsoft 365 安全中心体系结构中的其他数据和访问功能保护。 将特权访问管理作为集成的分层安全方法的一部分提供了一个安全模型，可以最大限度地保护敏感信息和 Microsoft 365 配置设置。 如图所示，特权访问管理建立在 Microsoft 365 数据本机加密提供的保护和 Microsoft 365 服务基于角色的访问控制安全模型的基础上。 与[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)一Privileged Identity Management，这两个功能提供访问控制，在不同范围内提供实时访问。
 
-![分层保护Microsoft 365](../media/pam-layered-protection.png)
+![分层保护Microsoft 365。](../media/pam-layered-protection.png)
 
 特权访问管理在任务级别定义和作用域，而Azure AD Privileged Identity Management在角色级别应用保护，能够执行多个任务。 Azure AD Privileged Identity Management 主要允许管理 AD 角色和角色组的访问，而 Microsoft 365 中的特权访问管理仅应用于任务级别。
 
@@ -51,37 +51,37 @@ ms.locfileid: "53899992"
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>步骤 1：配置特权访问策略
 
-在使用[Microsoft 365 管理中心](https://admin.microsoft.com)或 Exchange Management PowerShell 配置特权访问策略时，需要定义策略和特权访问功能进程以及 Microsoft 365 元素中的策略属性。 这些活动记录在安全与合规 &amp; 中心。 该策略现在已启用并可以处理传入的审批请求。
+在使用[Microsoft 365 管理中心](https://admin.microsoft.com)或 Exchange Management PowerShell 配置特权访问策略时，需要定义策略和特权访问功能进程以及 Microsoft 365 属性。 这些活动记录在安全与合规 &amp; 中心。 该策略现在已启用并可以处理传入的审批请求。
 
-![步骤 1：策略创建](../media/pam-step1-policy-creation.jpg)
+![步骤 1：创建策略。](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>第 2 步：访问请求
 
 在[Microsoft 365 管理中心](https://admin.microsoft.com)或 Exchange PowerShell 中，用户可以请求对提升或特权任务的访问权限。 特权访问功能将请求发送到Microsoft 365配置的权限访问策略进行处理，并将活动记录在安全与合规中心 &amp; 日志中。
 
-![第 2 步：访问请求](../media/pam-step2-access-request.jpg)
+![步骤 2：访问请求。](../media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>步骤 3：访问审批
 
 将生成批准请求，并通过电子邮件将待处理请求通知发送给审批者。 如果通过审批，特权访问请求将作为审批进行处理，并且可以完成任务。 如果遭到拒绝，任务将被阻止，请求者无法获得权限。 请求者通过电子邮件收到请求批准或拒绝的通知。
 
-![步骤 3：访问审批](../media/pam-step3-access-approval.jpg)
+![步骤 3：访问审批。](../media/pam-step3-access-approval.jpg)
 
 ### <a name="step-4-access-processing"></a>第 4 步：访问处理
 
 对于已批准的请求，任务由 Exchange 管理运行空间处理。 根据特权访问策略检查审批，并由 Microsoft 365 基底处理。 任务的所有活动都记录在安全与合规 &amp; 中心。
 
-![第 4 步：访问处理](../media/pam-step4-access-processing.jpg)
+![步骤 4：访问处理。](../media/pam-step4-access-processing.jpg)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>哪些 SK 可以在应用程序内使用特权Office 365？
 
-特权访问管理可供客户进行各种选择，Microsoft 365 Office 365订阅和加载项。 有关详细信息 [，请参阅特权访问管理](privileged-access-management-configuration.md) 入门。
+客户可以使用特权访问管理进行各种Microsoft 365和Office 365订阅和加载项。 有关详细信息 [，请参阅特权访问管理](privileged-access-management-configuration.md) 入门。
 
-### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>特权访问何时支持Office 365 Exchange工作负载？。
+### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>特权访问何时支持Office 365 Exchange工作负载？
 
-特权访问管理将很快在其他 Office 365工作负载中提供。 有关详细信息[，Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)路线图。
+Privileged access management will be available in other Office 365 workloads soon. 有关详细信息[，Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)路线图。
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>我的组织需要 30 多个特权访问策略，是否增加此限制？
 
@@ -95,7 +95,7 @@ ms.locfileid: "53899992"
 
 [当 Microsoft](/office365/admin/manage/customer-lockbox-requests) 访问数据时，客户密码箱允许组织进行一级访问控制。 特权访问管理允许对组织中所有特权任务进行Microsoft 365访问控制。
 
-## <a name="ready-to-get-started"></a>准备好开始了吗?
+## <a name="ready-to-get-started"></a>准备好开始了吗？
 
 开始 [为组织配置特权访问管理](privileged-access-management-configuration.md)。
 

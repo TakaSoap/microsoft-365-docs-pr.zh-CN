@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 了解如何使用 Microsoft 365 中的"报表"仪表板获取 Microsoft Forms Microsoft 365 管理中心。
-ms.openlocfilehash: 312a1abe940d75a04760c757ed787f4e6d1a6e2fad6668753fc76d89d8247a09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何使用 Microsoft 365 仪表板获取 Microsoft Forms 活动Microsoft 365 管理中心。
+ms.openlocfilehash: 59c7233a1622d0bf3ceaebd9adafb5c243d7008d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53798096"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565044"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理中心中的报表 - 表单活动
 
@@ -34,7 +34,7 @@ ms.locfileid: "53798096"
 例如，可以通过查看每个授权使用 Microsoft Forms 的用户与表单的交互来了解他们的活动。 它还通过查看用户所回复的表单和表单的数量，帮助您了解进行协作的级别。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
  
 ## <a name="how-to-get-to-the-forms-activity-report"></a>如何访问 Forms 活动报表
 
@@ -45,11 +45,11 @@ ms.locfileid: "53798096"
 
 You can view the activities in the Forms report by choosing the **Activity** tab.<br/>![Microsoft 365报表 - Microsoft Forms 活动报表。](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
-选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![表单活动报表 - 选择列](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
+选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![表单活动报表 - 选择列。](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |在 Microsoft Forms 上执行活动的用户的电子邮件地址。  <br/> |

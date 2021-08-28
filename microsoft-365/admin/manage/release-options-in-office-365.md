@@ -23,18 +23,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: 了解如何设置新版本和功能更新的发布选项，Microsoft 365 管理中心。
-ms.openlocfilehash: c9a3478c15ad5505bae73b6821fc8ed9511f9b3e
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+description: 了解如何设置新版本和新功能更新的发布选项，Microsoft 365 管理中心。
+ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58346780"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566242"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或定向发布选项
 
 > [!IMPORTANT]
-> 本文Microsoft 365的更新适用于 Microsoft 365、SharePoint Online 和 Exchange Online。 这些发布选项是发布对 Microsoft 365 更改的有针对性的最佳方法，但不能保证在所有时间或所有更新中都可用。 它们不适用于Microsoft 365 应用版、Skype for Business Microsoft Teams服务。 有关适用于 Microsoft 365 应用版 版本选项的信息，请参阅适用于 Microsoft 365 应用版[的更新频道概述](/deployoffice/overview-update-channels)。
+> 本文Microsoft 365更新适用于 Microsoft 365、SharePoint Online 和 Exchange Online。 这些发布选项是发布对 Microsoft 365 更改的有针对性的最佳方法，但不能保证在所有时间或所有更新中都可用。 它们不适用于Microsoft 365 应用版、Skype for Business Microsoft Teams服务。 有关适用于 Microsoft 365 应用版 版本选项的信息，请参阅 Microsoft 365 应用版 更新[频道概述](/deployoffice/overview-update-channels)。
 
 使用 Microsoft 365，您可以在新产品更新和功能可用时收到它们，而不是每隔几年进行一次代价高昂的更新。 你可以管理组织接收这些更新的方式。 例如，你可以注册抢先体验新发布版本，保证组织能够第一时间接收到更新。 你可以指定只有某几个人接收更新。 或者，你可以保留默认的发布计划，稍后接收更新。 本文介绍了不同的发布选项以及如何为组织使用它们。
 
@@ -42,7 +42,7 @@ ms.locfileid: "58346780"
 
 任何新版本首先由功能团队进行测试和验证，然后由整个Microsoft 365团队进行测试和验证，然后由所有 Microsoft 进行测试和验证。 内部测试和验证后，下一步是向选择加入的客户" **定向发布**"（以前称为首次发布）。 在每个发布环节，Microsoft 都会收集反馈，通过监视关键的使用情况指标验证质量。 采取逐步进行的一系列验证，确保全球范围内发布的版本尽可能的稳定。 发布环节如下图所示。 
   
-![发布 Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![发布适用于 Microsoft 365 的验证Microsoft 365。](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 对于重大更新，客户最初会通过 Microsoft 365[通知](https://products.office.com/business/office-365-roadmap)。 随着更新的推出越来越接近，它将通过你的Microsoft 365[中心进行通信](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)。
 
@@ -90,12 +90,12 @@ ms.locfileid: "58346780"
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>在管理中心设置发布选项
 
-你可以按照以下步骤更改组织接收Microsoft 365更新。 你必须是全局管理员Microsoft 365才能选择加入。
+通过执行以下步骤，可以更改Microsoft 365接收更新。 你必须是全局管理员才能Microsoft 365加入。
   
 > [!IMPORTANT]
-> 以下更改最多可能需要 24 小时才能在Microsoft 365。 如果你在启用定向发布之后选择退出，你的用户可能无法再次访问那些尚未进入发布计划的功能。 
+> 以下更改可能需要 24 小时才能在 Microsoft 365。 如果你在启用定向发布之后选择退出，你的用户可能无法再次访问那些尚未进入发布计划的功能。 
   
-1. 在管理中心中，转到"设置组织设置"，在"**组织配置文件"** 选项卡下，选择  >  "**发布首选项"。** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>
+1. 在管理中心中，转到"设置组织设置"，**在"组织配置文件"** 选项卡下，选择  >  "<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>**发布首选项"。**
 
 5. 若要禁用定向发布，请选择"**标准发布"，** 然后选择"**保存更改"。** 
     

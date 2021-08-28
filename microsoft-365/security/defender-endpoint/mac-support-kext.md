@@ -1,6 +1,6 @@
 ---
 title: 在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
-description: 在 macOS 上的 Microsoft Defender for Endpoint 中解决与内核扩展相关的问题。
+description: 解决 macOS 上的 Microsoft Defender for Endpoint 中与内核扩展相关的问题。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 内核， 扩展
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 555e5964c5fe846f6fb07b426ae55b6dd603691ccb8cd14fda57701071b47290
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833543"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565204"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
 
@@ -44,7 +44,7 @@ ms.locfileid: "53833543"
 
 如果在 macOS 上部署/安装 Microsoft Defender for Endpoint 期间未批准内核扩展，应用程序将显示横幅提示你启用它：
 
-   ![RTP 已禁用屏幕截图](images/mdatp-32-main-app-fix.png)
+   ![RTP 已禁用屏幕截图。](images/mdatp-32-main-app-fix.png)
 
 还可以运行 ```mdatp health``` 。 它报告实时保护是否已启用，但不可用。 这表示未批准在设备上运行内核扩展。
 
@@ -73,7 +73,7 @@ real_time_protection_available              : true
 
 如果未看到此提示，则意味着 30 分钟或更长的时间已过，并且内核扩展尚未获得批准，无法在你的设备上运行：
 
-![提示过期屏幕截图后的安全和隐私窗口](images/mdatp-33-securityprivacysettings-noprompt.png)
+![提示过期屏幕截图后的安全和隐私窗口。](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 在这种情况下，您需要执行以下步骤以再次触发审批流程。
 
@@ -89,7 +89,7 @@ real_time_protection_available              : true
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. 从 **菜单中打开** 系统  >  **首选项&隐私**"。  (，请首先关闭它。) 
+2. 从 **菜单中打开**"  >  **系统&安全** 选项""隐私"。  (，请首先关闭它。) 
 
 3. **允许** 来自开发人员"Microsoft Corporation"的系统软件
 
