@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何集成 PIM，以便向用户授予即时、限时访问权限以在 Microsoft Defender for Office 365 中执行已提升特权任务，从而降低数据风险。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a894f1c4652dbea4a0c5ab9a7df9027f4d42c75c
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.openlocfilehash: 4d1333963f841a9d9263f44263ad43d20ec75057
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483928"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615036"
 ---
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) 以及将其与 Microsoft Defender for Office 365 配合使用的原因
 
@@ -62,7 +62,7 @@ Privileged Identity Management (PIM) 为 Azure 功能，设置后，用户便可
 
 ***步骤 2***。 为其他任务创建所需的第二个(已提升)权限组并分配资格。
 
-现在，使用 [Privileged Access 组])https://docs.microsoft.com/zh-CN/azure/active-directory/privileged-identity-management/groups-features) 可以创建自己的自定义组，并在需要满足组织做法和需求时合并权限或增加粒度。
+使用[特权访问组](/azure/active-directory/privileged-identity-management/groups-features)，我们现在可以创建自己的自定义组并在需要时合并权限或增加粒度以满足组织做法和需求。
 
 ### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>创建需要所需权限的角色组。
 

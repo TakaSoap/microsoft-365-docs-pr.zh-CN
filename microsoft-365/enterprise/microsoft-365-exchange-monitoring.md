@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 使用 Exchange Online 监视获取有关 Microsoft 365 中电子邮件事件或通报信息。
-ms.openlocfilehash: a06640ee6114dac4ee5a9a899ba1dd8e2e744d78
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
+ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575608"
+ms.locfileid: "58602994"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>用于 Microsoft 365 的 Exchange Online 监视
 
@@ -32,21 +32,17 @@ ms.locfileid: "58575608"
 
 下面是 Microsoft 365 管理中心中" **服务运行状况** "页的示例，可从组织方案的 **运行状况>服务运行状况** 获取。
 
-![Microsoft 365 管理中心中的服务运行状况页面。](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+![Microsoft 365 管理中心中的“服务运行状况”页面](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-**组织级别的监视** 将识别并使用贵组织的问题。
-
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png" alt-text=" Microsoft 365 管理中心中的“服务运行状况”页面":::
+**组织中的问题** 将由组织级别监视识别和使用。
 
 "**您组织中的问题**"下的"**运行状况**"列的值指示组织的基础结构或第三方软件是否影响组织的用户使用 Exchange Online。 公告或事件需要 *你的* 操作才能解决。
 
 **Microsoft 服务运行状况** 下的"**运行状况**"列的值指示服务运行正常，或者有基于 Microsoft 维护云服务的公告或事件。
 
-![Microsoft 365 管理中心中的 Exchange Online 监视页面。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
-
 下面是 Microsoft 365 管理中心中的Exchange Online 监视页面的示例， 可通过 **“运行状况” > “服务运行状况” > “Exchange Online”** 显示组织级别方案d运行状况。
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png" alt-text="Microsoft 365 管理中心中的 Exchange Online 监视页面":::
+![Microsoft 365 管理中心中的 Exchange Online 监视页面](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
 使用 **Exchange Online** 监视页面，可查看 Exchange Online 服务是否运行正常，以及是否存在任何关联的事件或通报。 使用 Exchange Online 监视，可查看特定电子邮件方案的服务运行状况，查看接近的实时信号，确定组织级别方案产生的影响。
 
@@ -86,7 +82,7 @@ ms.locfileid: "58575608"
 
 - **邮件流**：邮件连接到 Microsoft 365 网络后，在不延迟的情况下成功传送到邮箱的邮件数。
 
-  ![用于在邮件传递中监视 Exchange 运行状况的示例。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+  ![用于在邮件传递中监视 Exchange 运行状况的示例](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 在所有这些情况下，关键数字是主仪表板中最后 30 分钟的数字。 上述每种情况的详细视图将显示与前一周相比，7 天累计 30 分钟的近实时趋势。  
 
@@ -98,7 +94,7 @@ ms.locfileid: "58575608"
 
 - 使用 **这篇文章是否有用？** 链接提交特定事件或通报的反馈。
 
-![这篇文章是否有用？ 链接提交特定事件或通报的反馈。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  ![这篇文章是否有用？ 特定事件或公告的链接。](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -130,7 +126,7 @@ Microsoft 已直接在 Microsoft 365 管理中心中的 **服务运行状况** �
 
 #### <a name="5-is-this-a-free-included-or-paid-extra-feature"></a>5. 这是免费的（含）还是付费的（额外）功能？ 
 
-这是一项免费功能，处于预览状态，仅适用于在问题 1 中满足相关要求的客户。没有用于接收此内容的付费选项。
+这是一项处于预览阶段的免费功能，仅适用于满足问题 1 中要求的客户。没有接收此内容的付费选项。
 
 #### <a name="6-how-do-i-provide-feedback"></a>6. 如何提供反馈？
 
