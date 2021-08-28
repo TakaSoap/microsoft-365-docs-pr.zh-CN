@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
-ms.openlocfilehash: b763560d48f4e07a01fdd3baaf7286327c78cca508984c65f88aff1c73ee47b6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895743"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556392"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -47,9 +47,9 @@ ms.locfileid: "53895743"
 
 - 基于风险的合规性分数，通过衡量完成改进操作的进度，帮助你了解合规性状态。
 
-合规性管理器仪表板显示当前的合规性分数，帮助你查看需要关注的问题，并指导你执行关键改进操作。 下面是合规性管理器仪表板外观的示例：
+合规性管理器仪表板显示当前的合规性分数，帮助你查看需要关注哪些内容，并指导你执行关键改进操作。 下面是合规性管理器仪表板外观的示例：
 
-![合规性管理器 - 仪表板](../media/compliance-manager-dashboard.png "合规性管理器仪表板")
+![合规性管理器 - 仪表板。](../media/compliance-manager-dashboard.png "合规性管理器仪表板")
 
 ## <a name="understanding-your-compliance-score"></a>了解合规性分数
 
@@ -65,7 +65,7 @@ ms.locfileid: "53895743"
 
 ## <a name="key-elements-controls-assessments-templates-improvement-actions"></a>关键要素：控制措施、评估、模板、改进操作
 
-合规性管理器使用多个数据元素来帮助管理合规性活动。 使用合规性管理器分配、测试和监视合规性活动时，对关键要素有基本的了解会有所帮助：控制措施、评估、模板和改进操作。
+合规性管理器使用多个数据元素来帮助管理合规性活动。 使用合规性管理器分配、测试和监视合规性活动时，对关键要素有基本的了解会很有帮助：控制、评估、模板和改进操作。
 
 ### <a name="controls"></a>控件
 
@@ -85,7 +85,7 @@ ms.locfileid: "53895743"
 
 ### <a name="assessments"></a>评估
 
-评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，你可能有一项评估，其中的所有操作完成后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
+评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，你可能有一项评估，在完成其中的所有操作后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
 
 评估包括几个组件：
 
@@ -95,7 +95,7 @@ ms.locfileid: "53895743"
 - **共享控件**：这些是您的组织和 Microsoft 共同负责实现的控制
 - **评估分数**：显示你在从由组织和 Microsoft 管理的评估内的操作获得可能的总分数方面的进度
 
-创建评估时，你将将其分配给组。 您可以使用对组织最符合逻辑的任何方式配置组。 例如，你可以按审核年份、区域、解决方案、贵组织中团队或其他某种方式对评估进行分组。 创建组后，可以 [筛选合规性管理器](compliance-manager-setup.md#filtering-your-dashboard-view) 仪表板，以便按一个或多个组查看分数。
+创建评估时，需要将其分配给组。 您可以使用对组织最符合逻辑的任何方式配置组。 例如，你可以按审核年份、区域、解决方案、贵组织中团队或其他某种方式对评估进行分组。 创建组后，可以 [筛选合规性管理器](compliance-manager-setup.md#filtering-your-dashboard-view) 仪表板，以便按一个或多个组查看分数。
 
 ##### <a name="learn-more"></a>了解详细信息
 

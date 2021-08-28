@@ -1,7 +1,7 @@
 ---
 title: '如何使用 Microsoft Defender for Endpoint (Linux) '
 description: 了解如何为 Microsoft Defender for Endpoint (Linux) 安排自动扫描时间，以更好地保护组织的资产。
-keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， 适用于终结点的 microsoft defender (linux) '
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bf04b6bedf1169a2b892873517793010653b8bfd
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d1f6f004738dc50238b0941f7c7182400117fb50
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256753"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58559006"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
 
 若要运行 Linux 扫描，请参阅支持 [的命令](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
 
-Linux (和 Unix) 具有一个称为 **crontab** (的工具，) 任务计划程序工具可用于运行计划任务。
+Linux (和 Unix) 具有一个称为 **"crontab" (** 类似于任务计划程序) 运行计划任务的工具。
 
 ## <a name="pre-requisite"></a>先决条件
 
@@ -82,7 +82,7 @@ CRON_TZ=America/Los_Angeles
 ```
 
 > [!NOTE]
-> 本示例中，我们设置为 00 分钟，即 2 a.m。  (24 小时制的 24 小时制) 、月中的任意一天、任何一个月的星期六。 这意味着它将于星期六的上午 2：00 运行。 太平洋 (UTC -8) 。
+> 本示例中，我们设置为 00 分钟，即 2 a.m。  (24 小时制的) 、每月的任何一天、任何一个月的星期六。 这意味着它将于星期六的上午 2：00 运行。 太平洋 (UTC -8) 。
 
 按"Esc"
 
@@ -93,7 +93,7 @@ CRON_TZ=America/Los_Angeles
 
 若要查看 cron 作业，请键入 `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp。":::
 
 #### <a name="to-inspect-cron-job-runs"></a>检查 cron 作业运行
 

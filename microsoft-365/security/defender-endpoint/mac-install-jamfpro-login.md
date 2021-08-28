@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b439976ea0d3b0d79f98cba1a719d1210c7eb2f165d989983661aad878f978b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1179259934dc77b29e68a8adcf49323d93bc93da
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889686"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58559054"
 ---
 # <a name="log-in-to-jamf-pro"></a>登录到 Jamf Pro
 
@@ -37,17 +37,17 @@ ms.locfileid: "53889686"
 
 1. 输入你的凭据。
 
-    ![Jamf 仪表板Pro图像1](images/jamf-pro-portal1.png)
+    ![Jamf Pro dashboard1 的图像。](images/jamf-pro-portal1.png)
 
 2. 选择 **计算机**。
 
-    ![Jamf 仪表板Pro 2 的图像](images/jamf-pro-dashboard.png)
+    ![Jamf Pro dashboard2 的图像。](images/jamf-pro-dashboard.png)
 
 3. 你将看到可用的设置。
 
-     ![Jamf 仪表板Pro图像3](images/jamfpro-settings.png)
+     ![Jamf Pro dashboard3 的图像。](images/jamfpro-settings.png)
 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 [在 Jamf 中设置设备Pro](mac-jamfpro-device-groups.md)
 

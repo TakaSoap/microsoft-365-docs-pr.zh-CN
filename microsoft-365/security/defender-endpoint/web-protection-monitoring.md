@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d0cb507f0d221916e73bfa7261df59d33529639f8197f70fdf88c87b708131f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884485"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58558958"
 ---
 # <a name="monitor-web-browsing-security"></a>监视 Web 浏览安全性
 
@@ -35,16 +35,16 @@ ms.locfileid: "53884485"
 
 通过 Web 保护，可以通过报告门户中"报告 web > **Web** 保护"下的报告监视Microsoft 365 Defender安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
 
-- **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示在所选时间段（"最近 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
+- **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示在所选时间段（"过去 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
 
-  :::image type="content" alt-text="显示一段时间的 Web 威胁防护检测的卡片图像" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" alt-text="显示一段时间的 Web 威胁防护检测的卡片的图像。" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Web 威胁防护摘要** - 此卡片显示过去 30 天内的 Web 威胁检测总数，显示不同类型的 Web 威胁的分布情况。 选择切片将打开通过恶意或不需要的网站找到的域列表。
 
-  :::image type="content" alt-text="显示 Web 威胁防护摘要的卡片图像" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" alt-text="显示 Web 威胁防护摘要的卡片的图像。" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
-> 阻止可能最多需要 12 个小时才能反映在卡或域列表中。
+> 阻止可能最多需要 12 小时才能反映在卡或域列表中。
 
 ## <a name="types-of-web-threats"></a>Web 威胁的类型
 
@@ -52,7 +52,7 @@ Web 保护将恶意和不需要的网站分类为：
 
 - **网络钓鱼** - 包含欺骗性 Web 表单和其他网络钓鱼机制的网站，旨在欺骗用户泄露凭据和其他敏感信息
 - **恶意** - 托管恶意软件和攻击代码的网站
-- **自定义指示器** - 已添加到用于阻止的自定义指示器列表的 URL [或](manage-indicators.md) 域的网站
+- **自定义指示器**- 已添加到自定义指示器列表以阻止的 URL [或域的网站](manage-indicators.md)
 
 ## <a name="view-the-domain-list"></a>查看域列表
 

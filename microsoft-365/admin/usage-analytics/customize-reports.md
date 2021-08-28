@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和 web 浏览器中自定义Power BI Desktop。
-ms.openlocfilehash: 0b9b9f7c107b6c59bbbc07c0e956457e354926a23b97fbcd5de63c10b5e185d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5dcdee05fbb413c7f1925f5e81c7e6596da111e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861969"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556488"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义使用情况Microsoft 365中的报告
 
@@ -39,23 +39,23 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 ### <a name="modify-an-existing-visual"></a>修改现有视觉对象
 
-本示例演示如何修改"激活/许可 **"****报告中的"激活"选项卡**。
+此示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
 
 1. 在" **激活/许可"** 报告中，选择" **激活"** 选项卡。
 
-2. 通过选择顶部的"编辑"按钮，通过"编辑页面"按钮进入编辑Power BI ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。
+2. 通过选择页面上的"编辑 **"** 按钮，进入编辑模式，方法为单击"更多页面" ![ 按钮Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。
 
-    ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![单击右上方导航栏上的"编辑报表"。](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
 
 3. 在右上方，选择"**复制此页面"。**
 
-    ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![选择"复制此页"。](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
 
 4. 在右下角，选择显示基于操作系统（如 Android、iOS、Mac 等）激活的用户数的任何条形图。
 
-5. 在 **右侧"可视化"** 区域中，若要从视觉对象中删除 **Mac Count，** 请选择其旁边的 **X。**
+5. 在 **右侧"可视化"** 区域中，若要从视觉对象中删除 **Mac Count，** 请选择它旁边的 **X。**
 
-    ![删除 Mac 计数](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
+    ![删除 Mac 计数。](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)
 
 ### <a name="create-a-new-visual"></a>创建新的视觉对象
 
@@ -63,13 +63,13 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 1. 使用左侧 **导航导航** 转到"产品使用情况"报告，**然后选择"Yammer** 选项卡。
 
-2. 通过选择"编辑"和"编辑"中的" ![ 更多页面"Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 编辑 **模式**。
+2. 通过选择"编辑模式"中的 ![ "更多页面"按钮切换到Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 和编辑。
 
-3. 在页面底部，选择 ![外接程序中的"添加页面"Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
+3. 在页面底部，选择 ![页面中的"添加页面"Power BI。](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
 
 4. 在右侧 **"可视化"** 区域中，选择顶部 (的堆积条形图，从左到左) 。
 
-    ![选择条形图](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![选择"条形图"。](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
 
 5. 选择可视化效果的右下角，并拖动使其变大。
 
@@ -77,7 +77,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 7. 将" **MonthName**"拖动到字段区域，该区域位于" **可视化效果**"区域中" **坐标轴**"标题的正下方。
 
-    ![拖动月份名称](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![拖动"月份名称"。](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
 
 8. 在右侧的" **字段**"区域中，展开" **TenantProductUsage**"表。
 
@@ -87,9 +87,9 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 11. 在出现的" **筛选器类型**"区域中，选中" **Yammer**"复选框。
 
-    ![选中Yammer复选框](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![选中Yammer复选框。](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
 
-12. 在可视化效果列表正下方，选择 Visualizaions 中的"格式"图标 ![ Power BI图标 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
+12. 在可视化效果列表正下方，选择 Visualizaions 中的"格式"Power BI ![ 图标 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。。
 
 13. 展开标题并将" **标题文本**"值更改为" **每月首次使用 Yammer 的用户**"。
 
@@ -109,13 +109,13 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 1. 转到" **获取数据**"\>" **其他**"\>" **ODATA 源**"\>" **连接**"。
 
-2. 在"URL"窗口中，输入 <i></i> "https:// \<tenantid\> reports.office.com/pbi/v1.0/"
+2. 在"URL"窗口中，输入 <i></i> "https:// reports.office.com/pbi/v1.0/" \<tenantid\>
 
     **注意：** 报告 API 为预览版，在进入生产阶段之前可能会更改。
 
-    ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![桌面版 OData Power BI URL。](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
-3. 输入你的Microsoft 365 (或学校) 管理员凭据，以在Microsoft 365时进行身份验证。
+3. 在系统Microsoft 365 (输入你的) 或学校管理员凭据，Microsoft 365进行身份验证。
 
     有关[允许](usage-analytics.md#faq)谁访问应用采用模板应用报告Microsoft 365常见问题解答。
 
@@ -125,7 +125,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
     这会将数据下载到 Power BI Desktop。保存该文件，然后可以开始创建所需报表。
 
-    ![报告 API 中可用的 ODATA 值](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![报告 API 中提供的 ODATA 值。](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
 
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用Microsoft 365分析模板
 
@@ -137,11 +137,11 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 2. 在对话框中输入租户 ID 值。
 
-    ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![输入租户 ID 以打开 pbit 文件。](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
 
 3. 输入管理员凭据以在系统Microsoft 365进行身份验证。
 
-     有关允许谁访问使用率分析报告Microsoft 365详细信息。
+     有关允许谁访问使用情况分析Microsoft 365详细信息。
 
     获得授权后，将刷新 Power BI 文件中的数据。
 

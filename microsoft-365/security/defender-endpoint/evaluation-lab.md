@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 67229e22a3efbb24cd733d07a4ae78e257fd9d71
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595408"
+ms.locfileid: "58559138"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 还可以安装威胁模拟器。 Defender for Endpoint 已与行业领先的威胁模拟平台合作，帮助你测试 Defender for Endpoint 功能，而无需离开门户。
 
-安装首选模拟器，在评估实验室内运行方案，并立即查看平台的运行方式-所有这些操作都很方便，无需额外付费。 还可以方便地访问广泛的模拟数组，你可以从模拟目录访问和运行这些模拟。
+ 安装首选模拟器，在评估实验室内运行方案，并立即查看平台的运行方式-所有这些操作都很方便，无需额外付费。 还可以方便地访问广泛的模拟数组，你可以从模拟目录访问和运行这些模拟。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 ## <a name="setup-the-evaluation-lab"></a>设置评估实验室
 
-1. 在导航窗格中，选择"评估&**评估实验室"教程**， \> 然后选择"**设置实验室"。**
+1. 在导航窗格中，选择评估 **&评估实验室"教程**，  >  然后选择"**设置实验室"。**
 
     :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="评估实验室欢迎页面的图像。":::
 
@@ -93,8 +93,8 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
     ![安装模拟器代理的图像。](images/install-agent.png)
 
-   > [!IMPORTANT]
-   > 首先需要接受并同意条款和信息共享声明。
+    >[!IMPORTANT]
+    >首先需要接受并同意条款和信息共享声明。
 
 4. 选择你要使用的威胁模拟代理并输入详细信息。 还可以选择稍后安装威胁模拟器。 如果你选择在实验室设置期间安装威胁模拟代理，你将享受在添加的设备上方便地安装这些代理的好处。
 
@@ -112,7 +112,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 如果你在实验室设置期间选择添加威胁模拟器，所有设备都将在添加的设备上安装威胁模拟器代理。
 
-设备将自动载入到你的租户，同时Windows启用推荐的安全组件，并进入审核模式，无需任何努力。
+设备将自动载入到你的租户，同时Windows启用推荐的安全组件，并进入审核模式， 无需任何努力。
 
 在测试设备中预配置以下安全组件：
 
@@ -139,13 +139,13 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="使用设备选项的实验室设置。":::
 
-   > [!NOTE]
-   > 如果设备创建过程出现问题，你将收到通知，并且需要提交新请求。 如果设备创建失败，将不会计入允许的总体配额。
+    > [!NOTE]
+    > 如果设备创建过程出现问题，你将收到通知，并且需要提交新请求。 如果设备创建失败，将不会计入允许的总体配额。
 
 3. 将显示连接详细信息。 选择 **"** 复制"保存设备的密码。
 
-   > [!NOTE]
-   > 密码只显示一次。 请务必保存它供以后使用。
+    > [!NOTE]
+    > 密码只显示一次。 请务必保存它供以后使用。
 
     :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="添加有连接详细信息的设备的图像。":::
 
@@ -155,8 +155,8 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
     !["设备"选项卡的图像。](images/machines-tab.png)
 
-   > [!TIP]
-   > 在 **模拟器状态** 列中，你可以将鼠标悬停在信息图标上，了解代理的安装状态。
+    > [!TIP]
+    > 在 **模拟器状态** 列中，你可以将鼠标悬停在信息图标上，了解代理的安装状态。
 
 ## <a name="request-for-more-devices"></a>请求更多设备
 
@@ -202,15 +202,12 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
     ![测试设备的连接按钮的图像。](images/test-machine-table.png)
 
-2. 保存 RDP 文件，然后通过选择 **"连接"。**
+2. 保存 RDP 文件，然后通过选择 **"连接"启动它**。
 
     ![远程桌面连接的图像。](images/remote-connection.png)
 
-    > [!NOTE]
-    > 如果在初始设置期间没有保存密码的副本，则可以通过从菜单中选择"重置密码 **"来重置** 密码：
-    >
-    > ![重置密码的图像。](images/reset-password-test-machine.png)
-    >
+    >[!NOTE]
+    >如果在初始设置期间没有保存密码的副本，则可以通过从"重置密码的图像"菜单中选择"重置密码"来 ![ 重置密码。](images/reset-password-test-machine.png)<br>
     > 设备会更改其状态为"正在执行密码重置"，然后你将在数分钟内看到新密码。
 
 3. 输入在设备创建步骤期间显示的密码。
@@ -242,7 +239,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
     你可以从以下方法访问模拟库：
     - 模拟概述 **磁贴或**
-    - 通过导航从导航窗格 **评估和教程** \> **模拟&教程，** 然后选择 **模拟目录**。
+    - 通过导航从导航窗格 **评估和教程**  >  **模拟&教程，** 然后选择 **模拟目录**。
 
 4. 选择要运行模拟的设备。
 
@@ -260,7 +257,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 Microsoft Defender for Endpoint 已与各种威胁模拟平台合作，让你可以方便地从门户内测试平台的功能。
 
-通过从菜单访问模拟和教程模拟 \> **目录，查看** 所有可用的模拟。
+通过从菜单访问模拟和教程模拟  >  **目录，查看** 所有可用的模拟。
 
 列出了受支持的第三方威胁模拟代理的列表，并且目录上提供了特定类型的模拟以及详细说明。
 
