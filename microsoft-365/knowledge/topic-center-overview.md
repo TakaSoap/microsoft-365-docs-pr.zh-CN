@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 在"主题"中了解Microsoft Viva中心。
-ms.openlocfilehash: 5373fbf35bd068228aed653535288ada4eb532c52122f01b12a317d3a98713a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840179"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572631"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题主题中的主题Microsoft Viva概述
 
-在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
+在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，充当组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
 
 主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。
 
@@ -36,11 +36,11 @@ ms.locfileid: "53840179"
 1. In the Microsoft 365 管理中心， select **设置**， and then select **Org settings**.
 2. 在"**服务"** 选项卡上，选择"**主题体验"。**
 
-    ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png)
+    ![连接了解知识。](../media/admin-org-knowledge-options-completed.png)
 
 3. 选择" **主题中心"** 选项卡。在 **"网站地址** "下是指向主题中心的链接。
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png)
+    ![knowledge-network-settings。](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>主页
 
@@ -54,17 +54,17 @@ ms.locfileid: "53840179"
 
 - 建议的连接 - 你将看到"我们已在这些主题中列出你 **"下列出的主题。我们做对了吗？** 在这些主题中，你通过 AI 建议了与主题的连接。 例如，您可能是相关文件或网站的作者。 系统要求你确认你应作为主题的相关人员继续列出。
 
-   ![建议的连接](../media/knowledge-management/my-topics.png)
+   ![建议的连接。](../media/knowledge-management/my-topics.png)
 
 - 已确认连接 - 这些是你固定在主题页面上或已确认与主题的建议连接的主题。 当您确认建议的连接时，主题将从建议移至已确认部分。
 
-   ![已确认主题](../media/knowledge-management/my-topics-confirmed.png)
+   ![已确认的主题。](../media/knowledge-management/my-topics-confirmed.png)
 
 一旦用户确认其与主题的连接，用户就可以对主题页面进行编辑以修改其连接。 例如，他们可以提供有关其与主题的连接的详细信息。
 
 ## <a name="manage-topics-page"></a>"管理主题"页
 
-若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在[Viva](set-up-topic-experiences.md)主题设置期间向用户分配这些权限，或者管理员随后可以通过用户[](topic-experiences-knowledge-rules.md)策略添加Microsoft 365 管理中心。
+若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 在[Viva](set-up-topic-experiences.md)主题设置过程中，管理员可以向用户分配这些权限，或者管理员随后可以通过[](topic-experiences-knowledge-rules.md)用户向导添加Microsoft 365 管理中心。
 
 在 **"管理主题** "页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。 每个主题将显示主题的发现日期。 分配了管理主题权限的用户可以查看未确认的主题，并选择：
 
@@ -82,7 +82,7 @@ ms.locfileid: "53840179"
 
 - [编辑现有主题](edit-a-topic.md)：您可以更改通过发现创建的现有主题页面。
 
-- [创建新主题](create-a-topic.md)：你可以为发现时找不到的主题或 AI 工具找不到足够证据来创建主题。
+- [创建新主题](create-a-topic.md)：你可以为未通过发现找到的主题创建新主题，或者如果 AI 工具找不到足够证据来创建主题。
 
 ## <a name="see-also"></a>另请参阅
 

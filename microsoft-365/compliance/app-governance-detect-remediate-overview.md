@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解应用威胁检测和修正。
-ms.openlocfilehash: 9d4a4b9f6ed7b10cb6e0626625f334063289a5905488325895be6e6ed6aa5a3f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0812615a8a0ed78f0649a59a0f884f1c37a9e368
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842648"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571539"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>了解应用威胁检测和修正
 
@@ -58,7 +58,7 @@ ms.locfileid: "53842648"
 
 以下是该集成的摘要。
 
-![应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成](..\media\manage-app-protection-governance\mapg-integration.png)
+![应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成。](..\media\manage-app-protection-governance\mapg-integration.png)
 
 此外，应用治理会将其警报作为信号发送给 Microsoft Cloud App Security 和 Microsoft 365 Defender，以便对基于应用的安全事件进行更详细的分析。
 

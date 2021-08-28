@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解如何从一个审阅集选择文档，并分别在一个审阅案例的另一个审阅Advanced eDiscovery文档。
+description: 了解如何从一个审阅集选择文档，并分别在一个审阅集的另一个审阅Advanced eDiscovery文档。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: b307f538d40a0c1be1a3355f26fdfcae3dc061a29a242cfcedff51f4c7471ee3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 830f107a3935db23f771e2691fe6e83a5d8d2eff
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837117"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571157"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>从另一审阅集将数据添加到审阅集
 
@@ -40,12 +40,12 @@ ms.locfileid: "53837117"
 
 通过在源审阅集中选择特定文档，或者通过选择由审阅集查询返回的所有项目，可以将一个审阅集中的内容添加到另一个审阅集。 如果要添加选定项目，请选择项目，选择"**操作**"，然后选择"**添加到另一审阅集"。**
 
-![添加到"操作"菜单中的另一审阅集](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
+![添加到"操作"菜单中的另一审阅集。](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>步骤 2：指定用于添加到另一审阅集的选项
 
-在" **添加到其他审阅集选项** "飞出页中，选择要将项目添加到的审阅集。 选择是添加"**所有搜索结果"还是**"**所选项目"。**  其他信息提供了一些选项，用于包含项目的所有元数据，以及是否在将文档添加到新审阅集时从源审阅集选中) 标签"复选框来包括标记 (。  
+在" **添加到其他审阅集选项** "飞出页中，选择要将项目添加到的审阅集。 选择是添加"**所有搜索结果"还是**"**所选项目"。**  其他信息提供了一些选项，用于包含项目的所有元数据，以及是否包含标记 (，方法为在将文档添加到新审阅集时从源审阅集选中) 标签复选框。  
 
-![将数据添加到另一审阅集的选项](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
+![用于将数据添加到另一审阅集的选项。](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
 单击"**确定"** 后， (一个名为"将数据添加到另一审阅) ，以将内容添加到另一审阅集。 您可以转到"作业 **"** 选项卡并监视此作业的进度。 有关详细信息，请参阅管理 [作业](managing-jobs-ediscovery20.md)。

@@ -21,12 +21,12 @@ ms.custom:
 description: 了解 Microsoft Defender for Office 365 计划中的威胁调查和响应功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: a3af6aec423fd77dc04954974be05d3e299279e2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589286"
+ms.locfileid: "58572847"
 ---
 # <a name="threat-investigation-and-response"></a>威胁调查和响应
 
@@ -36,10 +36,10 @@ ms.locfileid: "58589286"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
 
-[Microsoft Defender](defender-for-office-365.md) for Office 365威胁调查和响应功能，可帮助安全分析员和管理员通过执行Microsoft 365来保护其组织的业务数据：
+[Microsoft Defender](defender-for-office-365.md) for Office 365威胁调查和响应功能可帮助安全分析员和管理员通过执行Microsoft 365来保护其组织的业务数据：
 
 - 轻松识别、监视和了解网络攻击
-- 帮助快速解决 Exchange Online、SharePoint Online、OneDrive for Business Microsoft Teams
+- 帮助快速解决 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft Teams
 - 提供见解和知识以帮助安全操作防止针对其组织的网络攻击
 - 针对[基于电子邮件的关键威胁Office 365](automated-investigation-response-office.md)自动调查和响应
 
@@ -47,7 +47,7 @@ ms.locfileid: "58589286"
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>熟悉威胁调查和响应工具
 
-威胁调查和响应功能作为一组工具和响应工作流Microsoft 365 Defender门户中显示，其中包括：
+威胁调查和响应功能作为一组工具和响应工作流Microsoft 365 Defender门户中出现，其中包括：
 
 - [资源管理器](#explorer)
 - [事件](#incidents)
@@ -80,7 +80,7 @@ ms.locfileid: "58589286"
 
 ### <a name="automated-investigation-and-response"></a>自动调查和响应
 
-使用 AIR (自动调查和) 功能，以节省将内容、设备和组织中面临威胁的人关联在一起所投入的时间和精力。 只要触发某些警报，或者由安全运营团队启动，AIR 进程就可以开始。 若要了解更多信息，请参阅 Office 365 中的自动[调查和Office 365。](automated-investigation-response-office.md)
+使用 AIR (自动调查和) 功能，以节省将内容、设备和组织中面临威胁的人关联在一起所投入的时间和精力。 只要触发某些警报，或者由安全运营团队启动，AIR 进程就可以开始。 若要了解更多信息，请参阅 Office 365 中的[自动调查和Office 365。](automated-investigation-response-office.md)
 
 ## <a name="threat-intelligence-widgets"></a>威胁智能小组件
 
@@ -100,7 +100,7 @@ Microsoft Defender for Office 365使用基于角色的访问控制。 权限通�
 > 尽管某些角色（如安全管理员）可以在 Microsoft 365 Defender门户中分配，但请考虑使用 Microsoft 365 管理中心 或 Azure Active Directory。 有关角色、角色组和权限的信息，请参阅以下资源：
 >
 > - [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)
-> - [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)
+> - [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 <br>
 

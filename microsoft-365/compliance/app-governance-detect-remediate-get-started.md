@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用威胁检测和修正。
-ms.openlocfilehash: 085c6f7404555494a18645ab9680f44a6ba93557aff1d1fcd953cfec3256a2b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a57d888d2494fdcdc52e69b3738edba198b6363f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842672"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571117"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>开始使用应用威胁检测和修正
 
@@ -29,7 +29,7 @@ Microsoft 应用治理会收集基于恶意应用活动的内置应用治理检�
 
 首先从位于 [https://aka.ms/appgovernance](https://aka.ms/appgovernance) 的应用治理仪表板查看应用警报。
 
-![Microsoft 365 合规中心内的应用治理概述页面，其中突出显示了“检测和策略警报”部分](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
+![Microsoft 365 合规中心内的应用治理概述页面，其中突出显示了“检测和策略警报”部分。](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
 此概述页面的“**检测和策略警报**”部分会列出最新的警报。 你可以使用它来快速查看租户的当前应用警报活动。
 
@@ -39,7 +39,7 @@ Microsoft 应用治理会收集基于恶意应用活动的内置应用治理检�
 
 “**警报**”页面会列出针对租户的所有基于应用治理的警报。
 
-![Microsoft 365 合规中心内的应用治理警报摘要页面](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
+![Microsoft 365 合规中心内的应用治理警报摘要页面。](..\media\manage-app-protection-governance\mapg-cc-alerts.png)
 
 列出的每个警报都包含以下信息：
 

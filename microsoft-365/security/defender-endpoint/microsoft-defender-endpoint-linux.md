@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4d3d1d913dd08a48fb70419133c0c484b3248f8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 087636fe340939321459be3b2085a363d2629c4f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589418"
+ms.locfileid: "58575524"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -51,8 +51,8 @@ ms.locfileid: "58589418"
 - 手动部署时， (管理权限) 
 
 > [!NOTE]
-> Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
->
+>  Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
+> 
 > Linux 上的 Microsoft Defender for Endpoint 尚未集成到 Azure 安全中心。
 
 ### <a name="installation-instructions"></a>安装说明
@@ -69,8 +69,10 @@ ms.locfileid: "58589418"
     - [使用配置管理工具进行部署](linux-install-with-puppet.md)
     - [使用可配置管理工具进行部署](linux-install-with-ansible.md)
     - [使用部署配置管理工具进行部署](linux-deploy-defender-for-endpoint-with-chef.md)
-
+    
 如果遇到任何安装失败，请参阅 Linux 上的 Microsoft Defender for Endpoint 中的安装 [失败疑难解答](linux-support-install.md)。
+
+
 
 ### <a name="system-requirements"></a>系统要求
 
@@ -85,6 +87,7 @@ ms.locfileid: "58589418"
 
     > [!NOTE]
     > 未明确列出的分发和版本不受支持 (即使它们派生自正式支持的分发) 。
+
 
 - 最低内核版本 3.10.0-327
 
@@ -126,7 +129,6 @@ ms.locfileid: "58589418"
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 
 - 必须 `auditd` () 审核框架。
-
   > [!NOTE]
   > 添加到 的规则捕获的系统事件将添加到 (，) 并可能影响主机审核和上游 `/etc/audit/rules.d/` `audit.log` 收集。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
@@ -134,20 +136,14 @@ ms.locfileid: "58589418"
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则。 如果有，可能需要专门为 *他们创建允许* 规则。
 
-<br>
-
-****
-
-|域列表的电子表格|说明|
-|---|---|
-|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载 [电子表格](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
-|||
+| 域列表的电子表格 | 说明 |
+|:-----|:-----|
+|![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图。](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
 > 有关更具体的 URL 列表，请参阅 [配置代理和 Internet 连接设置](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
 
 Defender for Endpoint 可以使用以下发现方法发现代理服务器：
-
 - 透明代理
 - 手动静态代理配置
 

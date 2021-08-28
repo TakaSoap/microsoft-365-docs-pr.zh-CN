@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 5570cecdf3b7e6b6959bb20ca2c2fcdd0ad2e6ebd6b579f7caf7a018049beaeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53886405"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571395"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
 通过[数据分类概述](data-classification-overview.md)[和内容](data-classification-content-explorer.md)资源管理器选项卡，您可以了解已发现和标记的内容以及该内容位于何处。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供已标记内容上活动的历史视图。 活动信息收集自活动Microsoft 365统一审核日志，在活动资源管理器 UI 中转换和提供。 
 
-![占位符屏幕截图概述活动资源管理器](../media/data-classification-activity-explorer-1.png)
+![占位符屏幕截图概述活动资源管理器。](../media/data-classification-activity-explorer-1.png)
 
 有 30 多种不同筛选器可供使用，其中有：
 
@@ -79,7 +79,7 @@ ms.locfileid: "53886405"
 
 活动资源管理器从多个活动源的审核日志中收集活动信息。 有关哪些标签活动可用于活动资源管理器的更多详细信息，请参阅活动资源管理器中可用的标签 [事件](data-classification-activity-explorer-available-events.md)。
 
- Office 本机应用程序、Azure 信息保护外接程序、SharePoint Online 中的敏感度标签活动和保留标签活动Exchange Online (仅) 和 OneDrive。  示例如下：
+ Office 本机应用程序、Azure 信息保护外接程序、SharePoint Online 和 Exchange Online (敏感度标签中的敏感度标签活动和) 保留OneDrive。  示例如下：
 
 - 已应用的标签
 - 已更改（已升级、已降级或已删除）的标签

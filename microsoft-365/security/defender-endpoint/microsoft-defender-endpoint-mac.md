@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7f884fa55d0f3514aae36761642e2589d1ea51e
-ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
+ms.openlocfilehash: baff7ea6f32233cc05291dd3de124e964751192e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58666762"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571285"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ ms.locfileid: "58666762"
 
 - Defender for Endpoint 订阅和访问 Microsoft 365 Defender 门户
 - macOS 和 BASH 脚本的初学者级体验
-- 手动部署时， (管理权限) 
+- 手动部署时，设备上 (管理权限) 
 
 ### <a name="installation-instructions"></a>安装说明
 
@@ -87,7 +87,7 @@ ms.locfileid: "58666762"
 
 不支持 macOS 的 Beta 版本。
 
-目前，对具有基于 M1 芯片的处理器的 macOS 设备的支持处于预览阶段。
+不支持具有 M1 处理器的 macOS 设备。
 
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 

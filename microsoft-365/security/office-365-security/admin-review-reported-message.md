@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何查看报告的消息，并为用户提供反馈。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8f278d94235f4fc36e2c05c1cfe8724843f9ff3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258228"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572463"
 ---
 # <a name="admin-review-for-reported-messages"></a>管理员审阅报告邮件
 
@@ -43,9 +43,9 @@ ms.locfileid: "58258228"
 
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
   - 组织管理或安全管理员[。Microsoft 365 Defender门户。](permissions-microsoft-365-security-center.md)
-  - 中的组织[Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
+  - 组织管理中的[Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
 
-- 你还需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到一条错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online访问的信息，请参阅下列主题：
+- 你还需要访问 PowerShell Exchange Online权限。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到一条错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell 的访问Exchange Online，请参阅下列主题：
   - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
@@ -58,13 +58,13 @@ ms.locfileid: "58258228"
 3. 选择"**标记为并通知**"下拉列表，然后选择"**未找到威胁**"、"网络钓鱼 **"** 或"**垃圾邮件"。**
 
    > [!div class="mx-imgBorder"]
-   > ![从门户发送邮件](../../media/admin-review-send-message-from-portal.png)
+   > ![从门户发送邮件。](../../media/admin-review-send-message-from-portal.png)
 
 报告的邮件将被标记为误报或漏报，并且系统会自动从门户内发送电子邮件，通知报告邮件的用户。
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>自定义用于通知用户的消息
 
-1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略"&规则""威胁策略""其他人"部分中的"用户 \>  \>  \> 报告 **的邮件设置**"。
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件&**协作** 策略 \> **"&"** 规则 \> **""威胁策略**""其他人"部分中的"用户 \> 报告 **的邮件设置**"。
 
 2. 在"用户提交"页上，如果要指定发件人 显示名称，请选中"管理员审阅结果的电子邮件通知"部分下的"指定要用作发件人的 **Office 365** 电子邮件地址"框，然后输入想要使用的名称。 将在电子邮件中显示的电子邮件地址Outlook所有答复将转到该地址。
 
@@ -76,6 +76,6 @@ ms.locfileid: "58258228"
     - 页脚
 
     > [!div class="mx-imgBorder"]
-    > ![自定义发送给用户的邮件](../../media/admin-review-customize-message.png)
+    > ![自定义发送给用户的邮件。](../../media/admin-review-customize-message.png)
 
 4. 完成后，单击“**保存**”。 若要清除这些值，请单击" **用户提交** "页面上的"放弃"。

@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9f425f94843f2e37026a87a5eab2c8743acc494
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533263"
+ms.locfileid: "58575476"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -75,7 +75,7 @@ DKIM 允许你在邮件头中为出站电子邮件添加数字签名。配置 DK
 
 SPF 将信息添加到邮件信封中，但 DKIM 是在邮件头中 *加密* 签名。 当你转发邮件时，转发服务器可能会截除邮件信封部分。 由于数字签名作为电子邮件头的一部分与电子邮件同时存在，因此即使当邮件进行了转发，DKIM 也仍在运行，如以下示例所示。
 
-![关系图显示转发邮件在 SPF 检查失败的情况下传递 DKIM 身份验证](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![关系图显示转发邮件在 SPF 检查失败的情况下传递 DKIM 身份验证。](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 在此示例中，如果您只发布了域的一条 SPF TXT 记录，收件人的邮件服务器可能已将您的电子邮件标记为垃圾邮件，并生成一个误报结果。**在这种情况下，添加 DKIM 可以减少 *误报* 垃圾邮件** 报告。由于 DKIM 依赖于公钥加密（而不仅仅对 IP 地址加密）进行身份验证，DKIM 被认为是比 SPF 更强大的身份验证形式。建议在部署中同时使用 SPF、DKIM 以及 DMARC。
 
@@ -89,15 +89,15 @@ SPF 将信息添加到邮件信封中，但 DKIM 是在邮件头中 *加密* 签
 
 步骤 1：单击希望在 DKIM 页上配置 DKIM 的域（https://security.microsoft.com/dkimv2 或 https://protection.office.com/dkimv2)。
 
-![已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+![已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面。](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
 步骤 2：单击“创建 DKIM 密钥”。
 
-![带有“创建 DKIM 密钥”按钮的域详细信息浮出控件](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![带有“创建 DKIM 密钥”按钮的域详细信息浮出控件。](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
 
 步骤 3：复制弹出窗口中显示的 CNAMES
 
-![“发布 CNAME”弹出窗口，其中包含要复制的两条 CNAME 记录](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+![“发布 CNAME”弹出窗口，其中包含要复制的两条 CNAME 记录。](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 步骤 4：将复制的 CNAME 记录发布到 DNS 服务提供程序。
 
@@ -112,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 步骤 5：返回到 DKIM 页以启用 DKIM。
 
-![将开关滑动到“已启用”以启用 DKIM](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+![将开关滑动到“已启用”以启用 DKIM。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 如果看到 CNAME 记录不存在错误，则可能是由于：
 
@@ -241,7 +241,7 @@ TTL:                3600
 
 3. 在 **DKIM** 页面，通过点击名称选择域。
 
-4. 在出现的详细信息浮出控件中，将 **使用 DKIM 签名为该域签名消息** 设置更改为 **已启用**（![切换打开](../../media/scc-toggle-on.png)）
+4. 在出现的详细信息浮出控件中，将 **使用 DKIM 签名为该域签名消息** 设置更改为 **已启用**（![切换打开。](../../media/scc-toggle-on.png)）
 
    完成后，请点击 **轮换 DKIM 密钥**。
 

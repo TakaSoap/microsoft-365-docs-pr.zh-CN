@@ -1,6 +1,6 @@
 ---
 title: 隐藏Microsoft Defender 防病毒接口
-description: 可以在应用内隐藏病毒和威胁Windows 安全中心磁贴。
+description: 可以在应用内隐藏病毒和威胁防护Windows 安全中心磁贴。
 keywords: ui 锁定， 无头模式， 隐藏应用， 隐藏设置， 隐藏界面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66f9f571411c61bd8944ceb01a13f237ecd1d483
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255778"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575776"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与用户界面Microsoft Defender 防病毒交互
 
@@ -36,15 +36,15 @@ ms.locfileid: "58255778"
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>隐藏Microsoft Defender 防病毒接口
 
-在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并阻止病毒 & 威胁防护磁贴显示在 Windows 安全中心 应用中。
+在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并防止病毒&威胁防护磁贴显示在 Windows 安全中心 应用中。
 
 将设置设置为"**已启用"：**
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="无防护Windows 安全中心病毒和威胁防护部分的内容屏幕截图。":::
 
 将设置设置为"已 **禁用"** 或未配置：
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分的内容屏幕截图":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="具有防护Windows 安全中心和威胁防护部分进行保护的屏幕截图。":::
 
 >[!NOTE]
 >隐藏界面还会阻止Microsoft Defender 防病毒在终结点上显示通知。 Microsoft Defender for Endpoint 通知仍将显示。 还可以单独 [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
@@ -72,7 +72,7 @@ ms.locfileid: "58255778"
 你可以阻止用户暂停扫描，这有助于确保计划扫描或按需扫描不会被用户中断。
 
 > [!NOTE]
-> 此设置在系统上不受Windows 10。
+> 此设置在系统上Windows 10。
 
 ### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>使用组策略阻止用户暂停扫描
 

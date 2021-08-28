@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f45de173b8f316c93d8a65f1c20dbd523038c8855c2c0524770eed3334edee2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571261"
 ---
 # <a name="web-protection"></a>Web 保护
 
@@ -38,9 +38,9 @@ ms.locfileid: "53884404"
 
 ## <a name="about-web-protection"></a>关于 Web 保护
 
-Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 您可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
+Microsoft Defender for Endpoint 中的 Web 保护功能由[Web 威胁防护、Web](web-threat-protection.md)[内容筛选](web-content-filtering.md)和自定义[指示器构成](manage-indicators.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 可以在 Web 门户中查找 Web Microsoft 365 Defender报告，> **Web 保护**。
 
-:::image type="content" alt-text="所有 Web 保护卡的图像" source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" alt-text="所有 Web 保护卡的图像。" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ### <a name="web-threat-protection"></a>Web 威胁防护功能
 
@@ -62,7 +62,7 @@ Web 威胁防护包括：
 
 自定义指示器包括：
 
-- 能够创建基于 IP 和 URL 的泄露指示器，以保护你的组织免受威胁。
+- 能够创建基于 IP 和 URL 的泄露指示器，以保护组织免受威胁。
 
 - 调查与自定义 IP/URL 配置文件和访问这些 URL 的设备相关的活动的功能。
 
@@ -78,7 +78,7 @@ Web 内容筛选包括：
 
 - 阻止用户访问被阻止类别的网站，无论他们是在内部浏览还是离开。
 
-- 可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，方便地将各种策略 [部署到各种用户集](/microsoft-365/security/defender-endpoint/rbac)。
+- 可以使用 Microsoft Defender for Endpoint 基于角色的访问控制设置中定义的设备组，便捷地将各种策略 [部署到各种用户集](/microsoft-365/security/defender-endpoint/rbac)。
 
 - 可以在相同的中心位置访问 Web 报表，并查看实际块和 Web 使用情况。
 
@@ -86,7 +86,7 @@ Web 内容筛选包括：
 
 ## <a name="order-of-precedence"></a>优先顺序
 
-Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
+Web 保护由以下组件组成，按优先顺序列出。 其中每个组件由 Microsoft Edge 中的 SmartScreen 客户端和所有其他浏览器和进程中的网络保护客户端强制执行。
 
 - 自定义指示器 (IP/URL、MICROSOFT CLOUD APP SECURITY (MCAS) 策略) 
 
@@ -120,7 +120,7 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 |允许|允许|阻止|阻止|允许 (WCF 异常) |
 |Warn|阻止|阻止|阻止|警告 (覆盖) |
 
-自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止 CSP Microsoft Edge恶意软件/网络钓鱼 (时，也可以禁用绕过) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
+自定义指示器不支持内部 IP 地址。 对于最终用户绕过的警告策略，默认情况下，该用户的站点将取消阻止 24 小时。 此时间范围由管理员修改，并通过 SmartScreen 云服务向下传递。 此外，在使用 Web 威胁阻止 CSP Microsoft Edge恶意软件/网络钓鱼 (时，也可以禁用绕过警告) 。 有关详细信息，请参阅 SmartScreen Microsoft Edge [SmartScreen 设置。](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)
 
 ## <a name="protect-browsers"></a>保护浏览器
 
@@ -130,9 +130,9 @@ Web 保护由以下组件组成，按优先顺序列出。 其中每个组件都
 
 ## <a name="troubleshoot-endpoint-blocks"></a>终结点块疑难解答
 
-来自 SmartScreen 云的响应是标准化的。 Fiddler 等工具可用于检查云服务的响应，这有助于确定阻止的来源。 
+来自 SmartScreen 云的响应是标准化的。 可以使用 Fiddler 等工具检查云服务的响应，这有助于确定阻止的来源。 
 
-当 SmartScreen 云服务响应允许、阻止或警告响应时，响应类别和服务器上下文将中继回客户端。 在Microsoft Edge中，响应类别用于确定相应的阻止页面，以显示 (恶意、网络钓鱼、组织策略) 。
+当 SmartScreen 云服务响应允许、阻止或警告响应时，响应类别和服务器上下文将中继回客户端。 在Microsoft Edge中，响应类别用于确定相应的阻止页面，以显示 (、网络钓鱼、组织策略) 。
 
 下表显示了响应及其关联功能。  
 
@@ -177,17 +177,17 @@ DeviceEvents 
 如果用户访问具有恶意软件、网络钓鱼或其他 Web 威胁风险的网页，Microsoft Edge 将触发一个阻止页面，其中显示"此网站已被报告为不安全"以及与威胁有关的信息。
 
 > [!div class="mx-imgBorder"]
-> ![被用户阻止Microsoft Edge](../../media/web-protection-malicious-block.png)
+> ![页面被阻止Microsoft Edge。](../../media/web-protection-malicious-block.png)
 
 如果 WCF 或自定义指示器阻止，Microsoft Edge阻止页显示，告知用户此网站被组织阻止。
 
 > [!div class="mx-imgBorder"]
-> ![组织阻止的页面](../../media/web-protection-indicator-blockpage.png)
+> ![组织阻止的页面。](../../media/web-protection-indicator-blockpage.png)
 
 在任何情况下，第三方浏览器中都未显示阻止页，并且用户将看到"安全连接失败"页以及 Toast 通知。 根据负责阻止的策略，用户将在 Toast 通知中看到不同的消息。 例如，Web 内容筛选将显示消息"此内容被阻止"。 
 
 > [!div class="mx-imgBorder"]
-> ![WCF 阻止的页面](../../media/web-protection-np-block.png)
+> ![WCF 阻止的页面。](../../media/web-protection-np-block.png)
 
 ## <a name="report-false-positives"></a>报告误报
 

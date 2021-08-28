@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cddf687c4d269772b264711b7359bc338958164c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 125e622b39b6ec868cb6dffaf30eb8d64a346759
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392099"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571431"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -33,7 +33,7 @@ ms.locfileid: "58392099"
 
 调查策略检测到的问题的第一步是查看策略中的通信合规性Microsoft 365 合规中心。 通信合规性解决方案区域中有几个区域可帮助您快速调查警报，具体取决于您更希望查看警报分组的情况：
 
-- **通信合规性策略页面**：登录使用 Microsoft 365 组织中管理员帐户的凭据时，选择" [https://compliance.microsoft.com](https://compliance.microsoft.com) 通信合规性"以显示通信合规性 **策略** 页。 此页面显示为组织配置的通信合规性策略Microsoft 365策略模板的链接。 列出的每个策略包括需要检查的警报计数、已升级和已解决项目的数量、策略的状态以及上次策略扫描的日期和时间。 选择策略将显示与策略匹配的所有待定警报，选择特定警报以打开策略详细信息页面并开始修正操作。
+- **通信合规性策略页**：登录使用组织中管理员帐户的 [https://compliance.microsoft.com](https://compliance.microsoft.com) Microsoft 365，选择"通信合规性"以显示通信合规性 **策略** 页面。  此页面显示为组织配置的通信合规性策略Microsoft 365策略模板的链接。 列出的每个策略包括需要检查的警报计数、已升级和已解决项目的数量、策略的状态以及上次策略扫描的日期和时间。 选择策略将显示与策略匹配的所有待定警报，选择特定警报以打开策略详细信息页面并开始修正操作。
 - **警报：** 导航到"**通信** 合规性警报"，以显示过去 30 天按策略匹配  >  分组的警报。 此视图可以让你快速看到哪个通信合规性策略生成最多警报，并按严重性排序。 若要启动修正操作，请选择与警报关联的策略以启动" **策略详细信息"** 页。 从 **"策略详细信息**"页中，你可以查看"概述"页上的活动摘要，查看并处理"挂起"页上的警报消息，或在"已解决"页上查看已关闭警报 **的** 历史记录。
 - **报告**：导航到 **"通信合规性**  >  **报告**"以显示通信合规性报告小组件。 每个小组件提供通信合规性活动和状态的概述，包括访问有关策略匹配和修正操作更深入的见解。
 
@@ -61,7 +61,7 @@ ms.locfileid: "58392099"
 
 8. 如果要将所选筛选器另存为筛选器查询，请在配置了至少一个筛选器值后选择"保存查询控件"。 输入筛选器查询的名称，然后选择"保存 **"。** 此筛选器仅可用于此策略，并列在"筛选器详细信息"页的"保存的筛选器 **查询"部分**。
 
-    ![通信合规性筛选器详细信息控件](../media/communication-compliance-filter-detail-controls.png)
+    ![通信合规性筛选器详细信息控件。](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>使用接近和完全重复的分析
 
@@ -85,7 +85,7 @@ ms.locfileid: "58392099"
 
 8. 对 **邮件** 完成修正操作后，选择"关闭"。
 
-    ![通信合规性完全重复控制](../media/communication-compliance-duplicates-controls.png)
+    ![通信合规性完全重复控制。](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>修正警报
 
@@ -95,7 +95,7 @@ ms.locfileid: "58392099"
 
  有时，从源或主题很明显，邮件可以立即修正。 可能是邮件有误或与策略有误，应作为错误分类进行解析。 选择 **"报告为错误分类** "控件以与 Microsoft 共享错误分类内容，立即解决警报并从挂起的警报队列中删除。 从源或发件人信息中，您可能已经知道在这些情况下邮件应被如何传递或处理。 请考虑使用 “**标记为**” 或 “**上报**” 控件为适用邮件指定标记或向指定审阅者发送邮件。
 
-![通信合规性修正控制](../media/communication-compliance-remediation-controls.png)
+![通信合规性修正控制。](../media/communication-compliance-remediation-controls.png)
 
 ### <a name="step-2-examine-the-message-details"></a>步骤 2：检查邮件详细信息
 
@@ -123,7 +123,7 @@ ms.locfileid: "58392099"
 - **上报进行调查**：使用 **升级进行** 调查控制，你可以为Advanced eDiscovery [或](overview-ediscovery-20.md)多条消息创建新的升级案例。 你将提供新案例的名称和注释，并且发送与策略匹配的邮件的用户将自动分配为案例保管人。 管理案例不需要任何其他权限。 创建案例不会解析邮件或为邮件创建新标记。 在修正过程中创建一个事件Advanced eDiscovery总共可以选择 100 条消息。 支持通过通信合规性监视的所有通信频道中的消息。 例如，为用户打开新的Microsoft Teams案例时，可以选择 50 Microsoft Teams聊天、25 Exchange Online 电子邮件和 25 Yammer 25 封Advanced eDiscovery消息。
 - 删除 **Teams** 中的消息：使用 Teams 中的"删除消息 **"** 控件，可以阻止来自 Microsoft Teams 频道和 1：1 和群聊的警报中标识的不当消息和内容。 已删除的消息和内容将替换为说明其被阻止的策略提示以及应用于从视图中删除的策略。 在策略提示中为收件人提供了链接，以了解有关适用策略和审阅过程的信息。 发件人会收到阻止的邮件和内容的策略提示，但可以查看阻止邮件的详细信息和内容，了解删除的上下文。
 
-    ![从邮件中删除Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
+    ![从邮件中删除Microsoft Teams。](../media/communication-compliance-remove-teams-message.png)
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>步骤 4：确定是否应在通信合规性之外存档邮件详细信息
 

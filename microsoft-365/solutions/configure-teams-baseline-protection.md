@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: e6caa9fb493c84331ea164b8a3f0f0ec2122fd5fb86e113253cd243644bbced8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862369"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575692"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -46,7 +46,7 @@ ms.locfileid: "53862369"
 
 在每层中，我们都可以选择与组织外部人员共享。 对于敏感和高度敏感层，我们可以选择使用敏感度标签在团队级别关闭来宾共享。 但必须启用“组织级别的来宾共享设置”，以使来宾共享在 Teams 中均可正常工作。
 
-![Teams 来宾访问切换的屏幕截图](../media/teams-guest-access-toggle-on.png)
+![Teams 来宾访问切换的屏幕截图。](../media/teams-guest-access-toggle-on.png)
 
 设定 Teams 来宾访问设置
 

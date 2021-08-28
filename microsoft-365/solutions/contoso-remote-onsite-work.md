@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 如何响应 COVID-19 病毒，并针对混合工作设计其软件安装和更新基础结构。
-ms.openlocfilehash: e40e655801cb8a980dcde4e9be2167b81f12f74cccd2bd43878c66a5aeac5ca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816689"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575440"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 的 COVID-19 响应和支持混合工作
 
-Contoso 始终支持远程工作者，这些工作者通过巴黎总部的中央 VPN 服务器访问本地资源。 Contoso 已颁发给所有远程工作者托管的笔记本电脑。 本地工作人员混合使用台式计算机和笔记本电脑。
+Contoso 始终支持远程工作者，这些工作者通过巴黎总部的中央 VPN 服务器访问本地资源。 Contoso 向所有远程工作者颁发了托管笔记本电脑。 本地工作人员混合使用台式计算机和笔记本电脑。
 
 ## <a name="contosos-response-to-covid-19"></a>Contoso 对 COVID-19 的响应
 
@@ -35,7 +35,7 @@ Contoso 还更新了安装在笔记本电脑、平板电脑和智能手机上的
 
 下面是在巴黎总部和每个附属办事处安装了 VPN 设备的配置结果。 
 
-![Contoso 的 VPN 基础结构](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
+![Contoso 的 VPN 基础结构。](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
 安装了 VPN 客户端的远程工作者使用 DNS 查找区域最近的办公室并连接到安装在那里的 VPN 设备。 使用拆分隧道，Microsoft 365 Optimize 终结点的流量将直接发送到区域最近的Microsoft 365网络位置。 所有其他流量通过 VPN 连接发送到 VPN 设备。
 
@@ -59,15 +59,15 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 ### <a name="roaming"></a>漫游
 
-漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员、所有远程工作人员以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
+漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员以及所有远程工作者以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
 
 由于这些设备可以在任何给定时间连接到 Internet，因此它们使用 Intune 或其他基于云的服务来安装和更新 Windows 10、Microsoft 365 企业应用版 和 Edge。 它们不使用现有的本地 Configuration Manager 分发点。
 
-这意味着漫游设备的一些安装和更新将在漫游设备位于本地并连接到 Intranet 时通过 Internet 完成。 但 Contoso IT 架构师认为，配置简单性比优化 Intranet 带宽到 Internet 更重要，尤其是当大多数远程工作人员很少连接到 Intranet 时。
+这意味着漫游设备的一些安装和更新将在漫游设备位于本地并连接到 Intranet 时通过 Internet 完成。 但 Contoso IT 架构师认为，配置简单性比优化 Intranet 带宽到 Internet 更重要，尤其是当大多数远程工作者很少连接到 Intranet 时。
 
 下面是生成的基础结构。
 
-![Contoso 的安装和更新基础结构](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![Contoso 的安装和更新基础结构。](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
 安装和更新行为由使设备的计算机帐户成为以下组之一的成员来确定：
 
@@ -81,10 +81,10 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 ## <a name="new-onboarding-process"></a>新的载入过程
 
-对于颁发给新工作者或数据中心中新服务器的新的专用本地设备，当工作者登录时，基于设备在 OnPremDevices 组的成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
+对于颁发给新工作者或数据中心中新服务器的新的专用本地设备，当工作者登录时，基于 OnPremDevices 组中设备成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
 
 对于颁发给新工作者的新远程设备，当工作者登录时，该设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，远程设备即可使用，并使用已安装的 VPN 客户端访问本地资源，并使用 Microsoft 365网络进行持续更新。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 [在组织中设置混合工作的](empower-people-to-work-remotely.md) 基础结构。

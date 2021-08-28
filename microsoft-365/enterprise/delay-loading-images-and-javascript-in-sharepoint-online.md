@@ -20,21 +20,21 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: 了解如何通过使用 JavaScript 延迟加载图像和非必需 JavaScript 来减少 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: 0b0129f691018caf414ebd249e905a97d5560145dc648a073d8000402d11217d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何通过使用 JavaScript 延迟加载图像和非必要的 JavaScript 来减少 SharePoint Online 页面的加载时间。
+ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813280"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573135"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
 本文介绍如何通过使用 JavaScript 延迟加载图像，以及等到页面加载后加载非必要的 JavaScript 来减少 SharePoint Online 页面的加载时间。
   
-图像可能会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数现代 Internet 浏览器在加载 HTML 页面时预取图像。 如果图像在屏幕上不可见，直到用户向下滚动，这可能会导致页面加载速度不必要地变慢。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以先使用 JavaScript 跳过加载图像。 此外，加载非必要的 JavaScript 也会减慢页面下载SharePoint速度。 本主题介绍一些可用于在 SharePoint Online 中通过 JavaScript 改进页面加载SharePoint的方法。
+图像可能会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数现代 Internet 浏览器在加载 HTML 页面时预取图像。 如果图像在屏幕上不可见，直到用户向下滚动，这可能会导致页面加载速度不必要地变慢。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以先使用 JavaScript 跳过加载图像。 此外，加载非必要的 JavaScript 也会减慢页面下载SharePoint速度。 本主题介绍一些可用于在 SharePoint Online 中通过 JavaScript 改进页面加载时间的方法。
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>通过使用 JavaScript 延迟 SharePoint Online 页面中的图像加载，改进页面加载时间
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>通过使用 JavaScript 在 SharePoint Online 页面中延迟图像加载，改进页面加载时间
 
 可以使用 JavaScript 阻止 Web 浏览器预取图像。 这将加快文档呈现的总体速度。 为此，请从 标记中删除 src 属性的值，并将其替换为数据属性中文件的路径，例如 \<img\> ：data-src。 例如：
   
@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-接下来，在 **loadItemsInView ()** 函数中，使用 **isElementInViewport ()** 对象。 **loadItemsInView ()** 函数将加载具有 data-src 属性的值的所有图像（如果它们位于用户可见的浏览器部分）。 将以下函数添加到文本文件：
+接下来，在 **loadItemsInView** () 函数中，使用 **isElementInViewport ()** 对象。 **loadItemsInView ()** 函数将加载具有 data-src 属性的值的所有图像（如果它们位于用户可见的浏览器部分）。 将以下函数添加到文本文件：
   
 ```javascript
 function loadItemsInView() {
@@ -99,7 +99,7 @@ $('#s4-workspace').on("scroll", function () {
 
 将文本文件另存为扩展名为 .js JavaScript 文件，delayLoadImages.js。
   
-编写完文件delayLoadImages.js，您可以将文件内容添加到 SharePoint Online 中的母版页。 为此，在母版页中添加指向页眉的脚本链接。 在母版页中发布后，JavaScript 将应用于 SharePoint Online 网站中使用该母版页布局的所有页面。 或者，如果你希望仅在网站的一个页面上使用它，请使用脚本编辑器Web 部件 JavaScript 嵌入页面。 有关详细信息，请参阅以下主题：
+编写完文件delayLoadImages.js，您可以将文件内容添加到 SharePoint Online 中的母版页。 为此，在母版页中添加指向页眉的脚本链接。 进入母版页后，JavaScript 将应用于 SharePoint Online 网站中使用该母版页布局的所有页面。 或者，如果你希望仅在网站的一个页面上使用它，请使用脚本编辑器Web 部件 JavaScript 嵌入页面。 有关详细信息，请参阅以下主题：
   
 - [如何：向 SharePoint 2013 中的网站应用母版页](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
@@ -107,15 +107,15 @@ $('#s4-workspace').on("scroll", function () {
 
 ### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>示例：从 delayLoadImages.js Online 中的母版页引用 JavaScript SharePoint文件
   
-为此，还需要在母版页中引用 jQuery。 在下面的示例中，在初始页面加载中，可以看到仅加载了一个图像，但页面上还有多个图像。
+为此，还需要在母版页中引用 jQuery。 在下面的示例中，可以看到在初始页面加载中，仅加载了一个图像，但页面上还有多个图像。
   
-![显示在页面上加载一个图像的屏幕截图](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
+![显示页面上加载的一个图像的屏幕截图。](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
 以下屏幕截图显示了滚动到视图后下载的其余图像。
   
-![显示在页面上加载多个图像的屏幕截图](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
+![显示页面上加载的几个图像的屏幕截图。](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-使用 JavaScript 延迟图像加载是提高性能的有效技术;但是，如果技术应用于公共网站，则搜索引擎将无法按对常规格式的图像进行爬网的方式来爬网图像。 这可能会影响搜索引擎的排名，因为图像本身的元数据在页面加载之前并不存在。 搜索引擎爬网程序仅读取 HTML，因此不会将图像视为页面上的内容。 图像是用于在搜索结果中对页面进行排名的因素之一。 解决此问题的方法之一是为图像使用介绍性文本。
+使用 JavaScript 延迟图像加载是提高性能的有效技术;但是，如果该技术应用于公共网站，则搜索引擎无法按对常规格式的图像进行爬网的方式来爬网图像。 这可能会影响搜索引擎的排名，因为图像本身的元数据在页面加载之前并不存在。 搜索引擎爬网程序仅读取 HTML，因此不会将图像视为页面上的内容。 图像是用于在搜索结果中对页面进行排名的因素之一。 解决此问题的方法之一是为图像使用介绍性文本。
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub示例：注入 JavaScript 以提高性能
 

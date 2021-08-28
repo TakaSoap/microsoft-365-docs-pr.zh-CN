@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 17e75cd8e12cf83a3581118dbe453314e659760b10c5960f6529d40c38deb303
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b91773a5cfa411c762aba939ba53d8f35be16f7a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902808"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573039"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -34,13 +34,13 @@ ms.locfileid: "53902808"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
-Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，并且可以访问警报 **队列中的所有警报**。
+Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，你可以访问警报 **队列中的所有警报**。
 
 可以通过在警报队列中选择警报或单个设备的设备页面的警报选项卡来管理警报。 
 
 在任一位置选择警报将打开警报 **管理窗格**。
 
-![警报管理窗格和警报队列的图像](images/atp-alerts-selected.png)
+![警报管理窗格和警报队列的图像。](images/atp-alerts-selected.png)
 
 ## <a name="link-to-another-incident"></a>链接到其他事件
 你可以从警报创建新事件或链接到现有事件。 
@@ -94,7 +94,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 5. 输入规则名称和注释。
 
-6. 单击 **保存**。
+6. 单击“保存”。
 
 #### <a name="view-the-list-of-suppression-rules"></a>查看抑制规则列表
 
@@ -110,7 +110,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自与安全管理员) 无关的设备（例如属于安全管理员 () 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。
+或者，如果团队领导知道警报是无害的、来自与安全管理员) 无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给"已解决"队列。 (
 
 
 

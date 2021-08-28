@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7863cc2f6ee11f5736fca8077d766a9c1b5ba39819623a3a91bb853bfe09257d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863603"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575992"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>载入至 Microsoft Defender for Endpoint 服务
 
@@ -39,7 +39,7 @@ ms.locfileid: "53863603"
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
-|[![部署阶段 - 准备](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [阶段 1：准备](prepare-deployment.md)|[![部署阶段 - 设置](images/phase-diagrams/setup.png)](production-deployment.md) <br> [阶段 2：设置](production-deployment.md)|![部署阶段 - 载入](images/phase-diagrams/onboard.png) <br> 阶段 3：开始使用|
+|[![部署阶段 - 准备。](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [阶段 1：准备](prepare-deployment.md)|[![部署阶段 - 设置](images/phase-diagrams/setup.png)](production-deployment.md) <br> [阶段 2：设置](production-deployment.md)|![部署阶段 - 载入](images/phase-diagrams/onboard.png) <br> 阶段 3：开始使用|
 |---|---|---|
 |||*你在这里！*|
 
@@ -52,7 +52,7 @@ ms.locfileid: "53863603"
 
 ## <a name="step-1-onboard-endpoints-using-any-of-the-supported-management-tools"></a>步骤 1：使用任何受支持的管理工具载入终结点
 
-规划 [部署](deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的常规步骤。
+规划 [部署](deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的一般步骤。
 
 观看此视频，快速概览载入过程并了解可用的工具和方法。
 

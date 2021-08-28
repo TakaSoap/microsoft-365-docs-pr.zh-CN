@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 管理中心 或 Windows PowerShell 删除 Bookings 日历。
-ms.openlocfilehash: 5dd04033cc5a7485d606503f5cd2c72c5fabbe83d10102e118b0ef1451ec136e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc5975e25fa3b1f2d2aab991cc7aac8038181f3f
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882721"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572751"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>删除 Bookings 中的预订日历
 
-本文介绍如何删除不需要的预订日历。 可以在日历中删除预订日历Microsoft 365 管理中心或使用 PowerShell。 Bookings 日历是 Exchange Online，因此删除相应的用户帐户以删除预订日历。
+本文介绍如何删除不需要的预订日历。 可以在日历中删除预订日历Microsoft 365 管理中心或使用 PowerShell。 Bookings 日历是一个Exchange Online，因此删除相应的用户帐户以删除预订日历。
 
 > [!IMPORTANT]
 > 必须使用本主题中的 PowerShell 说明删除在 2017 年或之前创建的所有预订日历。 在 2018 年或之后创建的所有预订日历都可以在日历Microsoft 365 管理中心。
@@ -30,7 +30,7 @@ ms.locfileid: "53882721"
 - 创建预订日历后添加到预订日历的所有预订和请假约会。
 
 > [!WARNING]
-> 一旦删除了预订日历，此其他信息也会永久删除且无法恢复。
+> 一旦删除了预订日历，此其他信息也会永久删除，并且无法恢复。
 
 ## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>删除预订日历Microsoft 365 管理中心
 
@@ -38,11 +38,11 @@ ms.locfileid: "53882721"
 
 1. 在管理中心，选择" **用户** "。
 
-   ![用户 UI 在Microsoft 365 管理中心](../media/bookings-admin-center-users.png)
+   ![用户 UI 在Microsoft 365 管理中心。](../media/bookings-admin-center-users.png)
 
 1. 在" **活动用户**"页面上，选择要删除的用户的姓名，然后选择" **删除用户**"。
 
-   ![删除用户 UI 的图像Microsoft 365 管理中心](../media/bookings-delete-user.png)
+   ![删除用户 UI 的图像Microsoft 365 管理中心。](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>使用 PowerShell 删除Exchange Online日历
 

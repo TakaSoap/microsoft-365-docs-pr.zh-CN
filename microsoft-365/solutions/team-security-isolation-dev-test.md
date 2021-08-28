@@ -16,18 +16,18 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 配置安全性和基础结构，使你的员工能够随时随地远程工作。
-ms.openlocfilehash: 5b2c47dff19b07a5ca2a207785891ebfb6777459ea9c5254680079f4458e8f84
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804645"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572775"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在开发/测试环境中配置具有安全隔离的团队
 
 本文提供了在开发/测试环境中创建[具有安全隔离的团队](secure-teams-security-isolation.md)的分步式说明。
 
-![公司战略隔离团队的配置](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![公司战略隔离团队的配置。](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 在生产中部署此类团队前，可使用此开发/测试环境试验和微调设置以满足你的特定需求。
 
@@ -202,7 +202,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 下面是公司战略团队的配置结果。
 
-![公司战略隔离团队的配置](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![公司战略隔离团队的配置。](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 ## <a name="next-step"></a>后续步骤
 

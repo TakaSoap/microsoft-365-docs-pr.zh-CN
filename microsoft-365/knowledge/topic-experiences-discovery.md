@@ -10,31 +10,31 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何在"主题"中管理Microsoft Viva发现。
-ms.openlocfilehash: 39ecd7ab79267d560b614e981f1ef7ad14fd807db94c64a9483b1603d0e2733a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870084"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575560"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>管理主题主题Microsoft Viva主题
 
-可以在管理主题发现设置[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
+可以在管理中管理主题发现[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
 
 ## <a name="to-access-topics-management-settings"></a>要访问主题管理设置，请执行以下操作：
 
-1. 在"Microsoft 365 管理中心中，单击"设置"，**然后单击"****组织设置"。**
+1. 在"Microsoft 365 管理中心中，单击"设置"，**然后单击**"**组织设置"。**
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
-    ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
+    ![连接了解知识。](../media/admin-org-knowledge-options-completed.png) 
 
-3. 选择" **主题发现"** 选项卡。有关每个设置的信息，请参阅以下各节。
+3. 选择" **主题发现"** 选项卡。有关每个设置的信息，请参阅以下部分。
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
+    ![knowledge-network-settings。](../media/knowledge-network-settings-topic-discovery.png) 
 
 ## <a name="select-sharepoint-topic-sources"></a>选择SharePoint主题源
 
-您可以更改SharePoint主题的爬网网站。
+可以更改组织中SharePoint主题爬网的网站。
 
 如果要包含或排除特定的网站列表，可以使用以下.csv模板：
 
@@ -53,9 +53,9 @@ Site name,URL
     - **仅选定网站**：键入要包含的网站的名称。 您还可以上载网站列表。 将不包含未来创建的网站作为发现源。
     - **无网站**：主题不会自动生成或更新SharePoint内容。 现有主题保留在主题中心。
 
-    ![主题SharePoint用户界面的屏幕截图](../media/k-manage-select-topic-source.png)
+    ![有关SharePoint源用户界面的屏幕截图。](../media/k-manage-select-topic-source.png)
    
-3. 单击 **保存**。
+3. 单击“保存”。
 
 ## <a name="exclude-topics-by-name"></a>按名称排除主题
 
@@ -63,10 +63,10 @@ Site name,URL
 
 1. 在“**主题**”选项卡上，“**排除主题**”下方，选择“**编辑**”。
 2. 单击 **"按名称排除主题"。**
-3. 如果需要创建列表，请下载 .csv 模板并添加要排除 (请参阅下面的使用 .csv *模板*) 。 文件准备就绪后，单击" **浏览** "并上载该文件。 如果存在现有列表，可以下载包含.csv的列表。
-4. 单击 **保存**。
+3. 如果需要创建列表，请下载 .csv 模板并添加要排除的主题 (请参阅下面的使用 .csv *模板*) 。 文件准备就绪后，单击" **浏览** "并上载文件。 如果存在现有列表，可以下载包含.csv列表的列表。
+4. 单击“保存”。
 
-    ![排除主题用户界面的屏幕截图](../media/km-manage-exclude-topics.png)
+    ![排除主题用户界面的屏幕截图。](../media/km-manage-exclude-topics.png)
 
 ### <a name="working-with-the-csv-template"></a>使用.csv模板
 
@@ -84,12 +84,12 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 - **代表 (可选**) ：如果要排除首字母缩写词，请键入首字母缩写词代表的单词。
 - **MatchType-Exact/Partial**：键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
 
-    ![排除 CSV 模板中的主题](../media/exclude-topics-csv.png) 
+    ![排除 CSV 模板中的主题。](../media/exclude-topics-csv.png) 
 
 ## <a name="see-also"></a>另请参阅
 
 [管理主题在Microsoft 365](topic-experiences-knowledge-rules.md)
 
-[管理主题权限Microsoft 365](topic-experiences-user-permissions.md)
+[在管理中管理主题Microsoft 365](topic-experiences-user-permissions.md)
 
 [更改主题中心的名称Microsoft 365](topic-experiences-administration.md)

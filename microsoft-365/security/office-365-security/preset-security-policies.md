@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cfabb6a33c2d107e4f4822ed57e6e9ff1f8cc718
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 50558ef4ff9c4f05f0e7833ef8a1697330c35362
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258200"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572835"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -66,7 +66,7 @@ ms.locfileid: "58258200"
 
 预设安全策略使用来自 EOP 和 Microsoft Defender for Office 365 中各种保护功能的相应策略。 这些策略是在 _将"标准保护"_ 或"严格 **保护**"预设安全策略分配给用户后创建的。  不能修改这些策略。
 
-- **Exchange Online Protection (EOP)** 策略：这包括Microsoft 365邮箱的 Exchange Online 组织，以及没有邮箱Exchange Online独立 EOP 组织：
+- **Exchange Online Protection (EOP)** 策略：这包括具有 Microsoft 365 邮箱的 Exchange Online 组织，以及没有邮箱Exchange Online EOP 组织：
 
   - [名为"标准预设安全策略](configure-your-spam-filter-policies.md)"**和"****严格预设安全策略"的反垃圾邮件策略**。
   - [名为"标准预设安全策略](configure-anti-malware-policies.md)"**和"****严格预设安全策略"的反恶意软件策略**。
@@ -74,15 +74,15 @@ ms.locfileid: "58258200"
 
 - **Microsoft Defender for Office 365** 策略：这包括具有 Microsoft 365 E5 或 Defender for Office 365 加载项订阅的组织：
 
-  - Microsoft Defender 中名为"标准预设安全策略Office 365 **严格** 预设安全策略"的反网络钓鱼策略，其中包括：
+  - Microsoft Defender 中的防钓鱼策略Office 365 **标准** 预设安全策略和 **严格预设** 安全策略，其中包括：
 
     - EOP [防钓鱼](set-up-anti-phishing-policies.md#spoof-settings) 策略中可用的相同欺骗设置。
     - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [保险箱名为](set-up-safe-links-policies.md)**"标准** 预设安全策略"和"**严格预设安全策略"的链接策略**。
+  - [保险箱"标准预设](set-up-safe-links-policies.md)**安全策略"** 和"**严格预设安全策略"的链接策略**。
 
-  - [保险箱"](set-up-safe-attachments-policies.md)**标准** 预设安全策略"和"**严格预设安全策略"的附件策略**。
+  - [保险箱"标准预设](set-up-safe-attachments-policies.md)安全策略"和"**严格预设安全策略"的附件策略**。
 
 请注意，你可以将 EOP 保护应用于与 Microsoft Defender 不同的用户，Office 365保护。
 
@@ -117,20 +117,20 @@ ms.locfileid: "58258200"
 
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：将用户添加到 Azure Active Directory 中的相应角色Microsoft 365 管理中心为用户授予对 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  **注意**：将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 为用户提供了对 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用Microsoft 365 Defender向用户分配预设安全策略
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>使用 Microsoft 365 Defender门户向用户分配预设安全策略
 
-1. 在 Microsoft 365 Defender 门户中，转到"**模板** 策略"&中的"电子邮件&协作策略"&"预设安全策略 \>  \>  \> **"** 部分。
+1. 在 Microsoft 365 Defender 门户中，转到"模板&"部分中的"电子邮件&协作策略"&"预设安全策略 \>  \>  \> **"。**
 
 2. 在 **"标准保护"** 或 **"严格保护"下，** 单击"**编辑"。**
 
 3. 将 **启动"应用标准保护** " **或"应用严格保护** "向导。 在 **"适用于 EOP** 保护"页上，标识 [EOP](#policies-in-preset-security-policies) 保护应用于以下收件人条件 (内部) ：
-   - **Users**
+   - **用户**
    - **组**
    - **域**
 
-   单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
+   单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标。](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
    对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
 
@@ -142,7 +142,7 @@ ms.locfileid: "58258200"
 
    设置和行为与适用于页面 **的 EOP 保护完全相同** 。
 
-   完成后，单击“**下一步**”。
+   完成后，请单击“**下一步**”。
 
 5. 在"**查看并确认更改"** 页上，验证您的选择，然后单击"确认 **"。**
 
@@ -150,12 +150,12 @@ ms.locfileid: "58258200"
 
 修改标准保护或严格保护安全策略分配的步骤与最初向用户分配预设安全策略[时的步骤相同](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)。
 
-若要禁用 **标准保护** 或 **严格** 保护安全策略，同时仍保留现有条件和例外，将开关滑动到 **禁用切换** ![ 关闭 ](../../media/scc-toggle-off.png) 。 若要启用策略，将切换开关滑动到 **启用切换** ![ 打开 ](../../media/scc-toggle-on.png) 。
+若要禁用 **标准保护****或严格** 保护安全策略，同时仍保留现有条件和例外，将开关滑动到 **禁用切换** ![ 关闭 ](../../media/scc-toggle-off.png) 。 若要启用策略，将切换开关滑动到 **启用切换** ![ 打开 ](../../media/scc-toggle-on.png) 。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
 若要验证是否成功向用户分配了标准保护或严格保护安全策略，请使用默认值不同于"标准"保护设置（与"严格保护"设置不同）的保护设置。 
 
-例如，对于被检测为垃圾邮件 (高可信度垃圾邮件) 验证邮件是否传递到 **标准** 保护用户的"垃圾邮件"文件夹，并隔离"严格保护"用户。 
+例如，对于被检测为垃圾邮件 (高可信度垃圾邮件) 验证邮件是否传递到 **标准** 保护用户的"垃圾邮件"文件夹，并隔离" **严格** 保护"用户。
 
 或者，对于 [](bulk-complaint-level-values.md)批量邮件，验证 BCL 值 6 或更高值是否将邮件发送到 **标准** 保护用户的垃圾邮件文件夹，BCL 值 4 或更高值会隔离严格保护 **用户的邮件。**

@@ -1,5 +1,5 @@
 ---
-title: 使用Microsoft 搜索查找"主题"Microsoft Viva主题
+title: 使用 Microsoft 搜索 查找主题Microsoft Viva主题
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,21 +9,21 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
-description: 了解如何搜索"主题"Microsoft Viva主题。
-ms.openlocfilehash: c73cfba29aaa95463e75e46b81bcfc464ae9a64782d5fb7a7fc76dd6c9144393
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在主题中搜索Microsoft Viva主题。
+ms.openlocfilehash: 525ec03621d28c26ecdc717648b3e9d6dcf51024
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573075"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用Microsoft 搜索查找"主题"Microsoft Viva主题
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜索 查找主题Microsoft Viva主题
 
-Viva 主题用户可以通过其网站中的主题SharePoint查找主题，也可以通过主题Microsoft 搜索。 
+Viva 主题用户可以通过其网站中的主题SharePoint查找主题，但用户也可以通过网站Microsoft 搜索。 
 
 ## <a name="topic-answer"></a>主题答案
 
-当您从 SharePoint 起始页、Office.com 或组织范围的 SharePoint 网站搜索特定主题时，如果主题存在且找到，它将以主题应答建议格式显示结果。
+当您从 SharePoint 起始页、Office.com 或已范围为您的组织的 SharePoint 网站搜索特定主题时，如果主题存在且找到，它将以主题答案建议格式显示结果。
 
 主题答案将显示：
 
@@ -33,9 +33,9 @@ Viva 主题用户可以通过其网站中的主题SharePoint查找主题，也�
 - 建议或固定的人：AI 建议或用户固定到主题的人
 - 建议或固定的资源：AI 建议的文件、页面或网站，或用户固定到主题的文件、页面或网站。 
 
-   ![搜索中的主题](../media/knowledge-management/search-topic-answer.png) 
+   ![搜索中的主题。](../media/knowledge-management/search-topic-answer.png) 
 
-主题页面可以显示在搜索结果中，即使主题答案卡未显示。
+主题页面可以显示在搜索结果中，即使主题答案卡片未显示。
 
 Word、PowerPoint、Outlook 和 Excel 中的搜索结果还将在找到主题答案时显示。
 
@@ -47,13 +47,13 @@ Word、PowerPoint、Outlook 和 Excel 中的搜索结果还将在找到主题答
 
 ## <a name="bookmarks-and-topics"></a>书签和主题
 
-[](/microsoftsearch/manage-bookmarks)书签是一项Microsoft 搜索功能，它可以帮助用户通过搜索工具快速查找重要网站和工具 (例如，在 Microsoft 365 租户外部的外部网站上使用旅行预订) 。 它们由搜索管理员在搜索Microsoft 365 管理中心。 
+[](/microsoftsearch/manage-bookmarks)书签是一项Microsoft 搜索功能，它可以帮助用户通过搜索工具快速查找重要网站和工具 (例如，在 Microsoft 365 租户外部的外部网站上预订) 。 它们由搜索管理员在搜索Microsoft 365 管理中心。 
 
 对于要查找有关预订出差信息的用户：
 
 - 如果某些用户知道旅行工具 (例如，"Concur") ，则创建书签以直接转到外部网站会更容易。
 
-- 对于通常搜索"旅行"的用户，在"旅行"上创建一个主题，该主题包含他们希望看到的信息。 请考虑在主题的说明中添加指向 Concur 外部站点的链接。 如果链接改为指向托管在 Microsoft 365 租户上的内部旅行预订网站，你可以将其添加到"固定资源"。
+- 对于通常搜索"旅行"的用户，在"旅行"上创建一个主题，该主题包含他们希望看到的信息。 请考虑在主题的说明中添加指向 Concur 外部站点的链接。 如果链接改为指向托管在租户上的内部旅行预订Microsoft 365，你可以将其添加到"固定的资源"。
  
 ### <a name="search-results-priority"></a>搜索结果优先级 
 

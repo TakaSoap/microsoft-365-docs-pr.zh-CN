@@ -1,6 +1,6 @@
 ---
 title: 启用 Microsoft Defender 终结点评估
-description: 启用Microsoft 365 Defender试用实验室或试验环境，包括检查许可证状态和载入体验
+description: 启用Microsoft 365 Defender试用实验室或试验环境，包括检查许可证状态和载入安装
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af66b41af4d4d427988bf46d266329777d3a908c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: fb8e77a11b3844d78c99b56863bdb9ea424c48f9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394692"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572967"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -39,7 +39,7 @@ ms.locfileid: "58394692"
 
 使用以下步骤启用 Microsoft Defender for Endpoint 评估。
 
-![在 Microsoft Defender 评估环境中启用 Microsoft Defender for Endpoint 的步骤](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+![在 Microsoft Defender 评估环境中启用 Microsoft Defender for Endpoint 的步骤。](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
 
 - [步骤 1.检查许可证状态](#step-1-check-license-state)
 - [步骤 2.载入终结点](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -47,18 +47,18 @@ ms.locfileid: "58394692"
 
 ## <a name="step-1-check-license-state"></a>步骤 1. 检查许可证状态
 
-首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理中心门户 **Microsoft Azure此操作**。
+首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
 
 
 1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
-   ![Azure 许可页面的图像](../../media/defender/atp-licensing-azure-portal.png)
+   ![Azure 许可页面的图像。](../../media/defender/atp-licensing-azure-portal.png)
 
 1. 或者，在管理中心中，导航到"**帐单**  >  **""订阅"。**
 
     在屏幕上，你将看到所有预配的许可证及其当前 **状态**。
 
-    ![帐单许可证的图像](../../media/defender/atp-billing-subscriptions.png)
+    ![帐单许可证的图像。](../../media/defender/atp-billing-subscriptions.png)
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>步骤 2. 使用任何受支持的管理工具载入终结点
 

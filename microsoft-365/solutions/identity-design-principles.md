@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365资源规划 - 安全体系结构
+title: Microsoft 365企业资源规划 - 安全体系结构
 description: 从 Microsoft 技术主体架构师 Alex Shteynberg 了解有关 Microsoft Enterprise体系结构的顶级设计策略。
 ms.author: bcarter
 author: brendacarter
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 6d0599d11dd5892b032bda1285b92fbc8a09354b
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 02038b627acdd084eda34f13d7bbb5cf0658fb95
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595158"
+ms.locfileid: "58572367"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -35,7 +35,7 @@ Microsoft 首席技术架构师[Alex Shteynberg](https://www.linkedin.com/in/ale
 
 以我的角色，我专注于帮助客户找到最佳的技术解决方案，以解决他们独特的业务目标集。 正式上，我重点介绍标识、安全性、隐私和合规性。 我喜欢这样一个事实，即这些触摸我们所做的一切。 它使我有机会参与大多数项目。 这可使我非常忙碌并享受此角色。
 
-我居住在纽约市 (最佳！) 真正享受其文化、食物和人们的多样性， (交通) 。 我喜欢在可以时旅行，并且希望在我的一生看到大部分世界。 我目前正在研究到非洲的旅行，以了解动物。
+我居住在纽约市 (最好的！) 真正享受其文化、食物和人们的多样性， (交通) 。 我喜欢在可以时旅行，并且希望在我的一生看到大部分世界。 我目前正在研究到非洲的旅行，以了解动物。
 
 ## <a name="guiding-principles"></a>指导原则
 
@@ -59,17 +59,17 @@ Microsoft 首席技术架构师[Alex Shteynberg](https://www.linkedin.com/in/ale
 本图示内容：
 
 - Tenant = Azure AD 的实例。 它位于层次结构的"顶部"或图表中的级别 1。 我们可以认为这是 Azure [AD B2B](/azure/active-directory/b2b/what-is-b2b) (一切发生的"边界"，) 。[](/azure/active-directory/users-groups-roles/licensing-directory-independence) 所有 Microsoft 企业云服务都是这些租户之一的一部分。 使用者服务是独立的。 文档中的"租户"Office 365租户、Azure 租户、WVD 租户等。 我通常发现这些变体导致客户混淆。
-- 服务/订阅（图中的级别 2）仅属于一个租户。 大多数 SaaS 服务都是一对一，如果不迁移，则不能移动。 Azure 不同，你可以将 [计费和](/azure/cost-management-billing/manage/billing-subscription-transfer) /或 [订阅移动到](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) 另一个租户。 有许多客户需要移动 Azure 订阅。 这有各种含义。 订阅之外的对象不会移动 (例如，基于角色的访问控制或 Azure RBAC，以及 Azure AD 对象（包括组、应用、策略等) ）。 此外，某些服务 (Azure Key Vault、Data Vault 等) 。 如果没有良好的业务需求，请不要迁移服务。 一些有助于迁移的脚本在 GitHub 上[共享](https://github.com/lwajswaj/azure-tenant-migration)。
+- 服务/订阅（图中的级别 2）仅属于一个租户。 大多数 SaaS 服务都是一对一，如果不迁移，则不能移动。 Azure 不同，你可以将 [计费和](/azure/cost-management-billing/manage/billing-subscription-transfer) /或 [订阅移动到](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) 另一个租户。 有许多客户需要移动 Azure 订阅。 这有各种含义。 订阅之外的对象不会移动 (例如，基于角色的访问控制或 Azure RBAC，以及 Azure AD 对象（包括组、应用、策略等) ）。 此外，某些服务 (Azure Key Vault、Data Vaults 等) 。 如果没有良好的业务需求，请不要迁移服务。 一些有助于迁移的脚本在 GitHub 上[共享](https://github.com/lwajswaj/azure-tenant-migration)。
 - 给定服务通常具有某种"子级别"边界，或级别 3 (L3) 。 了解这一点对于分离安全性、策略、治理等非常有用。 遗憾的是，我并没有知道的统一名称。 L3 的一些示例名称如下：Azure Subscription = [resource](/azure/azure-resource-manager/management/manage-resources-portal);Dynamics 365 CE = [instance](/dynamics365/admin/new-instance-management);Power BI = [workspace](/power-bi/service-create-the-new-workspaces);Power Apps = [environment](/power-platform/admin/environments-overview);等。
 - 级别 4 是实际数据所位于的地方。 此"数据平面"是一个复杂的主题。 某些服务将 Azure AD 用于 RBAC，而其他服务则没有。 在介绍委派主题时，我将进行一些讨论。
 
-我找到许多客户 (和 Microsoft) 对以下内容感到困惑或有疑问的其他概念：
+我找到许多客户 (一些概念，) 对以下内容感到困惑或有疑问：
 
-- 任何人都可以 [创建](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 多个租户 [，无需任何费用](https://azure.microsoft.com/pricing/details/active-directory/)。 不需要其中设置服务。 我拥有数十个。 每个租户名称在 Microsoft 的全球云服务中都是唯一 (也就是说，两个租户之间不能具有相同的) 。 它们全部采用 TenantName.onmicrosoft.com。 还有一些进程会自动创建租户 ([非托管租户](/azure/active-directory/users-groups-roles/directory-self-service-signup)) 。 例如，当用户使用任何其他租户中不存在的电子邮件域注册企业服务时，可能会发生这种情况。
+- 任何人都可以 [创建](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 多个租户 [，无需任何费用](https://azure.microsoft.com/pricing/details/active-directory/)。 不需要其中设置服务。 我拥有数十个。 每个租户名称在 Microsoft 的全球云服务中都是唯一 (也就是说，两个租户之间不能具有相同的) 。 它们全部采用 TenantName.onmicrosoft.com。 还有一些进程会自动创建租户 ([非托管租户) 。](/azure/active-directory/users-groups-roles/directory-self-service-signup) 例如，当用户使用任何其他租户中不存在的电子邮件域注册企业服务时，可能会发生这种情况。
 - 在托管租户中， [可以在其中注册](/azure/active-directory/fundamentals/add-custom-domain) 多个 DNS 域。 这不会更改原始租户名称。 除了迁移项目外，当前 (重命名租户) 。 尽管租户名称从技术上来说这些天不是关键，但一些用户可能会发现这有限制。
-- 即使尚未计划部署任何服务，也应为组织保留租户名称。 否则，有人可以从你那里接受它，并且没有简单的过程可以像 DNS 名称 (一样，将它) 。 我经常会从客户听到这样的声音。 租户名称应该是一个讨论主题。
+- 即使尚未计划部署任何服务，也应为组织保留租户名称。 否则，有人可以从你那里接受它，而且没有简单的过程可以像 DNS 名称 (一样，将它) 。 我经常会从客户听到这样的声音。 租户名称应该是一个讨论主题。
 - 如果你拥有 DNS 命名空间 () ，你应该将所有这些内容添加到租户 (租户) 。 否则， [可以创建具有此](/azure/active-directory/users-groups-roles/directory-self-service-signup) 名称的非托管租户，这会导致中断， [使其进行管理](/azure/active-directory/users-groups-roles/domains-admin-takeover)。
-- DNS 命名空间 (（如 contoso.com) ）只能属于一个租户。 这对各种方案都有一些 (，例如，合并或收购期间共享电子邮件域等) 。 有一种方法可以注册 DNS 子 (，例如 div.contoso.com) 租户中的 DNS 子服务器，但应避免这样操作。 通过注册顶级域名，假定所有子域属于同一租户。 在多租户方案中 (请参阅) 我通常建议使用另一个顶级域名 (如 contoso.ch 或 ch-contoso.com) 。
+- DNS 命名空间 (，例如 contoso.com) 只能属于一个租户。 这适用于各种方案，例如 (合并或收购期间共享电子邮件域等) 。 有一种方法可以注册 DNS 子 (，例如 div.contoso.com) 租户中的 DNS 子服务器，但应避免这样操作。 通过注册顶级域名，假定所有子域属于同一租户。 在多租户方案中 (请参阅) 我通常建议使用其他顶级域名 (如 contoso.ch 或 ch-contoso.com) 。
 - Who"拥有"租户？ 我通常看到不知道当前拥有其租户的客户。 这是一个大的红色标志。 致电 Microsoft 支持 ASAP。 与问题一样，当服务所有者 (指定Exchange管理员) 管理租户时。 租户将包含将来可能需要的所有服务。 租户所有者应是一个组，可以决定启用组织的所有云服务。 另一个问题就是当要求租户所有者组管理所有服务时。 这不能针对大型组织进行扩展。
 - 没有子/超级租户的概念。 出于某种原因，此等待器会不断重复自身。 这也适用于 [Azure AD B2C](/azure/active-directory-b2c/) 租户。 我听到过多次"我的 B2C 环境在我的 XYZ 租户中"或"如何将 Azure 租户移入我的 Office 365 租户？"
 - 本文档主要侧重于商业全球云，因为大多数客户正在使用此云。 了解独立云有时 [很有用](/azure/active-directory/develop/authentication-national-cloud)。 独立云具有其他含义，可讨论哪些内容超出了此讨论的范围。
@@ -150,7 +150,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 ## <a name="theres-no-exchange"></a>没有Exchange
 
-请勿担心！ 这并不意味着Exchange或 (SharePoint，等等) 。 它仍然是一项核心服务。 我指的是，在相当长一段时间以来，技术提供商一直在将用户体验 (UX) ，以包含多个服务的组件。 在Microsoft 365中，一个简单的示例[是"新式](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)附件"，其中电子邮件的附件存储在 SharePoint Online 或 OneDrive for Business。
+请勿担心！ 这并不意味着Exchange或 (SharePoint等) 。 它仍然是一项核心服务。 我指的是，在相当长一段时间以来，技术提供商一直在将用户体验 (UX) 包含多个服务的组件。 在Microsoft 365中，一个简单的示例是"新式附件[](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)"，其中电子邮件的附件存储在 SharePoint Online 或 OneDrive for Business。
 
 ![将文件附加到电子邮件。](../media/solutions-architecture-center/modern-attachments.png)
 
@@ -162,7 +162,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 总的来说，在 Microsoft 云中的云中，Office 365服务之间画一条清晰的直线越来越困难。 我将它视为客户的一大好处，因为他们可以从我们所做的所有事情的总创新中获益，即使他们使用一个组件。 相当酷，对很多客户具有广泛的影响。
 
-如今，我发现许多客户 IT 组都是围绕"产品"构建的。 对于本地环境来说，这是逻辑上的，因为每个特定产品都需要专家。 但是，我完全满意地看到，当这些服务移动到云时，我不必再次调试 Active Directory 或 Exchange 数据库。 自动化 (哪种云类型) 可删除某些重复的手动 (查看工厂) 。 但是，为了理解跨服务交互、影响、业务需求等，这些要求被替换为更复杂的要求。 如果你愿意学习 [，](/learn/)云转换将带来巨大的机遇。 在跳转到技术之前，我经常与客户讨论管理 IT 技能和团队结构的变化。
+如今，我发现许多客户 IT 组都是围绕"产品"构建的。 对于本地环境来说，这是逻辑上的，因为每个特定产品都需要专家。 但是，我完全满意地看到，随着这些服务移动到云，我不必再次调试 Active Directory 或 Exchange 数据库。 自动化 (哪种云类型) 删除某些重复的手动作业 (查看工厂) 。 但是，为了理解跨服务交互、影响、业务需求等，这些要求被替换为更复杂的要求。 如果你愿意学习 [，](/learn/)云转换将带来巨大的机遇。 在跳转到技术之前，我经常与客户讨论管理 IT 技能和团队结构的变化。
 
 对于所有SharePoint和开发人员，请停止询问"如何在线执行 XYZ SharePoint？ 对于[Power Automate (](/power-automate/)或Flow) ，它是一个更强大的平台。 使用 [Azure Bot Framework](/azure/bot-service/) 为 500 K 项列表创建更好的 UX。 开始使用[Microsoft Graph](https://developer.microsoft.com/graph/)而不是 CSOM。 [Microsoft Teams](/MicrosoftTeams/Teams-overview)包括SharePoint，但世界更多。 我还可以列出许多其他示例。 有一个巨大而出色的企业。 打开门并开始 [探索]()。
 
@@ -199,11 +199,11 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 ## <a name="delegation-of-administration"></a>管理委派
 
-在大多数大型组织中，将职责和基于角色的访问控制 (RBAC) 是必要的现实。 我将提前表示抱歉。 这不是某些客户希望的那么简单。 客户、法律、合规性和其他要求各不相同，并且有时会全球存在冲突。 简单性和灵活性通常相互冲突。 不要让我出错，我们可以在这一方面做更好的工作。 随着时间的推移， (和) 重大改进。 请访问本地 [Microsoft 技术中心](https://www.microsoft.com/mtc) ，以找出符合业务需求的模型，而无需阅读 379230 文档！ 在这里，我将着重讨论你应当思考的问题，而不是为何如此。 以下是五个不同的计划区域以及我遇到的一些常见问题。
+在大多数大型组织中，将职责和基于角色的访问控制 (RBAC) 是必要的现实。 我将提前表示抱歉。 这不是某些客户希望的那么简单。 客户、法律、合规性和其他要求各不相同，并且有时会全球存在冲突。 简单性和灵活性通常相互冲突。 不要让我出错，我们可以在这一方面做更好的工作。 一直 (，随着时间的推移) 重大改进。 请访问本地 [Microsoft 技术中心](https://www.microsoft.com/mtc) ，以找出符合业务需求的模型，而无需阅读 379230 文档！ 在这里，我将着重讨论你应当思考的问题，而不是为何如此。 以下是五个不同的计划区域以及我遇到的一些常见问题。
 
 ### <a name="azure-ad-and-microsoft-365-admin-centers"></a>Azure AD 和 Microsoft 365 管理中心
 
-内置角色列表长且 [增长](/azure/active-directory/roles/permissions-reference)。 每个角色由分组在一起以允许执行特定操作的角色权限列表组成。 您可以在每个角色内的"说明"选项卡中查看这些权限。 或者，可以在中心内查看更人工可读Microsoft 365 管理版本。 无法修改内置角色的定义。 我通常按以下三种类别进行分组：
+内置角色列表长且 [增长](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 每个角色由分组在一起以允许执行特定操作的角色权限列表组成。 您可以在每个角色内的"说明"选项卡中查看这些权限。 或者，可以在中心内查看更人工可读Microsoft 365 管理版本。 无法修改内置角色的定义。 我通常按以下三种类别进行分组：
 
 - **全局管理员**：此"所有强大"角色应受到 [](../enterprise/protect-your-global-administrator-accounts.md)高度保护，就像在其他系统中一样。 典型建议包括：无永久分配和使用 Azure AD Privileged Identity Management (PIM) ;强身份验证;等。 有趣的是，默认情况下，此角色不会授予你访问所有内容的访问权限。 通常，我可以看到有关合规性访问和 Azure 访问的混淆，稍后将讨论。 但是，此角色始终可以分配对租户中其他服务的访问权限。
 - **特定服务管理员**：某些服务 (Exchange、SharePoint、Power BI等) Azure AD 使用高级管理角色。 这在所有服务中并不一致，稍后将讨论更多特定于服务的角色。
@@ -288,7 +288,7 @@ Office 365具有统[一审核日志。](../compliance/search-the-audit-log-in-se
 
 首先确定安全与合规计划所需的所有日志源非常重要。 另请注意，不同的日志具有不同的在线保留限制。
 
-从管理员委派的角度来看，Microsoft 365活动日志没有内置的 RBAC 模型。 如果您有权查看日志，则可以看到日志中的所有内容。 客户要求的一个常见示例是："我希望仅能够查询欧盟用户的活动" (或其他维度) 。 为了实现此要求，我们需要将日志转移到其他服务。 在 Microsoft 云中，我们建议将其传输到 [Azure Sentinel 或](/azure/sentinel/overview) Log [Analytics](/azure/azure-monitor/learn/quick-create-workspace)。
+从管理员委派的角度来看，Microsoft 365活动日志没有内置的 RBAC 模型。 如果您有权查看日志，则可以看到日志中的所有内容。 客户要求的一个常见示例是："我希望仅能够查询欧盟用户的活动"， (其他维度) 。 为了实现此要求，我们需要将日志转移到其他服务。 在 Microsoft 云中，我们建议将其传输到 [Azure Sentinel 或](/azure/sentinel/overview) Log [Analytics](/azure/azure-monitor/learn/quick-create-workspace)。
 
 高级图表：
 
@@ -300,19 +300,19 @@ Office 365具有统[一审核日志。](../compliance/search-the-audit-log-in-se
 
 日志不需要仅定向到一处。 此外，将日志与Office 365[或](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)自定义 RBAC Microsoft Cloud App Security集成可能[也Power BI。](../admin/usage-analytics/usage-analytics.md) 不同的存储库具有不同的优势和受众。
 
-值得一提的是，在名为 Microsoft 365 Defender 的服务中，有一个非常丰富的内置分析系统，用于安全、威胁、漏洞[等](../security/defender/microsoft-365-defender.md)。
+值得一提的是，在名为 Microsoft 365 Defender 的服务中，有一个非常丰富的内置分析系统用于安全、威胁、漏洞[等](../security/defender/microsoft-365-defender.md)。
 
-许多大型客户希望将此日志数据传输给第三方系统 (例如 SIEM) 。 虽然存在不同的方法，但一般的[Azure](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)事件中心[Graph是不错的](/graph/security-integration)起点。
+许多大型客户希望将此日志数据传输给第三方系统 (例如 SIEM) 。 虽然存在不同的方法，但通常[Azure](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs)事件中心[Graph是不错的](/graph/security-integration)起点。
 
 ### <a name="azure"></a>Azure
 
-我通常会询问是否有方法在 Azure AD、Azure 和 SaaS (（例如：Azure Office 365全局管理员）之间分离高特权) 。  没有。  如果需要完全管理分离，需要多租户体系结构，但这会增加 (复杂性，) 。 [](https://aka.ms/multi-tenant-user) 所有这些服务都是相同安全/标识边界的一 (查看上述层次结构) 。
+我通常会询问是否有方法在 Azure AD、Azure 和 SaaS (（例如：Azure Office 365全局管理员）之间分离高特权) 。  没有。  如果需要完全管理分离，需要多租户体系结构，但这会增加 (的复杂性，) 。 [](https://aka.ms/multi-tenant-user) 所有这些服务都是相同安全/标识边界的一 (查看上述层次结构模型) 。
 
-了解同一租户中各种服务之间的关系非常重要。 我与许多正在构建跨 Azure、Office 365 和 Power Platform (且通常还支持本地和第三方云服务) 的客户合作。 一个常见示例：
+了解同一租户中各种服务之间的关系非常重要。 我与许多正在构建跨 Azure、Office 365 和 Power Platform (并且通常还支持本地和第三方云服务解决方案的业务解决方案的客户) 。 一个常见示例：
 
 1. 我希望协作处理一组文档/图像/等 (Office 365) 
 2. 通过 Power Platform (审批流程发送每个) 
-3. 批准所有组件后，通过 Azure (API ()  (统一可交付) [Microsoft Graph API](/azure/active-directory/develop/microsoft-graph-intro)是这些组件的最佳好友。  设计跨多个租户的解决方案并非不可能，但要复杂 [得多](/azure/active-directory/develop/single-and-multi-tenant-apps)。
+3. 批准所有组件后，通过 Azure ()  (Microsoft Graph API) [可](/azure/active-directory/develop/microsoft-graph-intro)交付结果集合是这些组件的最佳好友。  设计跨多个租户的解决方案并非不可能，但要复杂 [得多](/azure/active-directory/develop/single-and-multi-tenant-apps)。
 
 Azure Role-Based访问控制 (RBAC) 为 Azure 启用精细的访问管理。 使用 RBAC，您可以通过向用户授予执行其作业所需的最小权限来管理对资源的访问权限。 详细信息不在此文档的范围之内，但有关 RBAC 的详细信息，请参阅什么是 Azure 中基于角色的访问控制 ([RBAC) ？](/azure/role-based-access-control/overview) RBAC 很重要，但只是 Azure 管理注意事项的一部分。 [云采用框架](/azure/cloud-adoption-framework/govern/) 是了解更多信息的一个很好的起点。 我想要在我的好友 [Andres Ravinet](https://www.linkedin.com/in/andres-ravinet/)中逐步引导客户通过各种组件来决定方法。 各种元素高级视图 (获取实际客户模型的过程) 如下所示：
 

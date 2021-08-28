@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: 4b37aeecabdeaef3afebb7144330a5c9df811729
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508114"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571419"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -54,14 +54,14 @@ ms.locfileid: "58508114"
 
     例如，从 Microsoft 365 合规中心：
 
-    ![创建敏感度标签](../media/create-sensitivity-label-full.png)
+    ![创建敏感度标签。](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
     > 默认情况下，租户没有任何标签，并且必须由你创建。 示例图片中的标签显示 [从 Azure 信息保护迁移](/azure/information-protection/configure-policy-migrate-labels)的默认标签。
 
 3. 在 **定义此标签的范围** 页面上，选择的选项将确定可以配置的设置的标签范围以及它们发布后的可见位置：
 
-    ![敏感度标签的范围](../media/sensitivity-labels-scopes.png)
+    ![敏感度标签的范围。](../media/sensitivity-labels-scopes.png)
 
     - 如果已选中 **“文件和 电子邮件”**，则可以在此向导中配置适用于支持敏感度标签的应用（如 Office Word 和 Outlook）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在这些应用中选择标签。
 
@@ -79,7 +79,7 @@ ms.locfileid: "58508114"
 
 若要编辑现有标签，请将其选中，然后选择“**编辑标签**”按钮：
 
-![编辑标签按钮以便编辑敏感度标签](../media/edit-sensitivity-label-full.png)
+![编辑标签按钮以编辑敏感度标签。](../media/edit-sensitivity-label-full.png)
 
 此按钮将启动“**编辑敏感度标签**”向导，可用于更改步骤 4 中的所有标签设置。
 
@@ -147,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     例如，从 Microsoft 365 合规中心：
 
-    ![发布标签](../media/publish-sensitivity-labels-full.png)
+    ![发布标签。](../media/publish-sensitivity-labels-full.png)
 
     > [!NOTE]
     > 默认情况下，租户没有任何标签策略，且必须由你创建。 
@@ -175,7 +175,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 若要编辑现有标签策略，请将其选中，然后选择“**编辑策略**”按钮： 
 
-![编辑敏感度标签](../media/edit-sensitivity-label-policy-full.png)
+![编辑敏感度标签。](../media/edit-sensitivity-label-policy-full.png)
 
 此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
 

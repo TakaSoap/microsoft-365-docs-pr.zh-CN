@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解 Microsoft Defender for Office 365
-ms.openlocfilehash: 0164d7f5017ebf3b2076bf7231da4ca30a36427500c6782602e6e50812f914df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a11528df6960293ba4b5a3f6e4d287989049556a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817000"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572487"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
-Microsoft Defender for Office 365保护你的组织免受电子邮件、链接和 URL) 和协作工具 (恶意威胁。 Defender for Office 365 包括：
+Microsoft Defender for Office 365保护你的组织免受电子邮件、链接和 URL (和协作工具 () 恶意威胁。 Defender for Office 365 包括：
 
 - **威胁防护策略**：定义威胁防护策略，为组织设置适当级别的保护。
 - **报告**：查看实时报告，以监视 Defender Office 365性能。
@@ -63,11 +63,11 @@ Defender for Office 365试用版的可用时间为 90 天，并且可针对所�
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>设置 Defender for Office 365 试用版
 
-试用使组织可以轻松设置和配置 Defender Office 365功能。 在设置过程中，使用预设安全策略的标准模板应用专用于 Office 365 (的[](safe-attachments.md)Defender 的策略，特别是保险箱 附件[、保险箱](safe-links.md)链接和反垃圾邮件策略[) ](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)中的模拟[保护。](preset-security-policies.md)
+试用允许组织轻松设置和配置 Defender Office 365功能。 在设置过程中，使用预设安全策略的标准模板应用专用于 Office 365 (的[](safe-attachments.md)Defender 的策略，特别是保险箱 附件[、保险箱](safe-links.md)链接和反垃圾邮件策略[) ](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)中的模拟[保护。](preset-security-policies.md)
 
 默认情况下，这些策略的范围为组织中所有用户，但管理员可以在设置期间或之后自定义策略，以便它们仅适用于特定用户。
 
-在设置期间，Office 365 Defender (P2 的 Defender Office 365 或等效) 也会为整个组织设置。 无需策略范围。
+在设置过程中，Office 365 Defender (在 Defender for Office 365 P2 或等效) 中为整个组织设置响应功能。 无需策略范围。
 
 ## <a name="licensing"></a>授权
 
@@ -85,7 +85,7 @@ Defender for Office 365试用版的可用时间为 90 天，并且可针对所�
 
 ## <a name="availability"></a>可用性
 
-Defender for Office 365 试用版将逐步向满足特定条件的现有客户推出 (包括地理位置) 以及其订阅中或作为加载项) 不包含现有 Defender for Office 365 计划 1 或计划 2 许可证 (的客户。
+Defender for Office 365 试用版将逐步向满足特定条件的现有客户推出 (包括地理位置) 以及其订阅中或作为加载项) 中不包含现有 Defender for Office 365 计划 1 或计划 2 许可证 (。
 
 ## <a name="learn-more-about-defender-for-office-365"></a>了解有关 Defender for Office 365
 
@@ -93,7 +93,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 
 还可以在此交互式指南中了解有关 defender for Office 365[内容。](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
-![Microsoft Defender for Office 365概念图](../../media/microsoft-defender-for-office-365.png)
+![Microsoft Defender for Office 365概念图。](../../media/microsoft-defender-for-office-365.png)
 
 ### <a name="prevention"></a>保护
 
@@ -105,9 +105,9 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 
 ### <a name="detection"></a>检测
 
-业界领先的 AI 可检测恶意和可疑内容，并关联攻击模式，以识别旨在规避保护的活动。
+行业领先的 AI 可检测恶意和可疑内容，并关联攻击模式，以识别旨在规避保护的活动。
 
-- [Microsoft Defender for Office 365 中的市场活动视图](campaigns.md)
+- [Microsoft Defender for Office 365 中的市场活动Office 365](campaigns.md)
 
 ### <a name="investigation-and-hunting"></a>调查和搜寻
 

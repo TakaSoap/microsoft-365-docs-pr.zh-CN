@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 682b7729bbfe49a0889065b9cabcae980e031881
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: a8efc37b3ae5177540242bca5fdbeab5f4e613ba
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247370"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576172"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>试用 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "58247370"
 
 使用以下步骤为 Microsoft Defender for Endpoint 设置和配置试点。 
 
-![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - 步骤 1. 验证试点组
 - 步骤 2. 试用功能
@@ -59,7 +59,7 @@ ms.locfileid: "58247370"
 设备清单是你将看到网络中终结点、网络设备和 IoT 设备列表的地方。 它不仅为你提供了网络中设备的视图，还为你提供了关于这些设备的深入信息，例如域、风险级别、操作系统平台和其他详细信息，以便轻松识别风险最大的设备。
 
 ### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>查看威胁和漏洞管理仪表板 
-威胁漏洞管理可帮助你专注于对组织构成最紧急和最高风险的漏洞。 从仪表板中，获取组织曝光分数、设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。 
+威胁漏洞管理可帮助你专注于对组织构成最紧急且风险最高的漏洞。 从仪表板中，获取组织曝光分数、设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。 
 
 ### <a name="run-a-simulation"></a>运行模拟
 Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.windows.com/tutorials) 试点设备上运行的"自己执行"攻击方案。  每个文档都包括操作系统和应用程序要求，以及特定于攻击方案的详细说明。 这些脚本安全、有记录且易于使用。 这些方案将反映 Defender for Endpoint 功能，并演练调查体验。
@@ -76,7 +76,7 @@ Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.window
 
 2. 下载并阅读所选方案提供的相应演练文档。
 
-3. 下载模拟文件或复制模拟脚本，方法为导航到帮助模拟  >  **&教程**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
+3. 下载模拟文件或通过导航到帮助模拟和教程复制  >  **&脚本**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
 
 4. 根据演练文档中的指示，在测试设备上运行模拟文件或脚本。
 

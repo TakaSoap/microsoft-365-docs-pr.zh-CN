@@ -18,18 +18,18 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: 了解设置Microsoft 365来宾协作的 SharePoint 网站所需的配置步骤。
-ms.openlocfilehash: 054de924b2cf5041694ca12dcf2fb4137242d16fb53060421aedb51aed9668a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810160"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572799"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
-如果需要跨文档、数据和列表与来宾进行协作，可以使用SharePoint网站。 新式SharePoint网站连接到Microsoft 365组，可以管理网站成员身份并提供其他协作工具，如共享邮箱和日历。
+如果需要跨文档、数据和列表与来宾进行协作，可以使用SharePoint网站。 新式SharePoint网站连接到 Microsoft 365 组，可以管理网站成员身份并提供其他协作工具，如共享邮箱和日历。
 
-本文将介绍设置与来宾Microsoft 365网站所需的SharePoint配置步骤。
+本文将介绍设置与来宾Microsoft 365网站所需的 SharePoint 配置步骤。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -43,7 +43,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 检查 B2B 外部协作设置，确保不会阻止与来宾共享。
 
-!["外部Azure Active Directory协作设置屏幕截图](../media/azure-ad-organizational-relationships-settings.png)
+!["外部Azure Active Directory协作设置屏幕截图。](../media/azure-ad-organizational-relationships-settings.png)
 
 设置外部协作设置
 
@@ -60,9 +60,9 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 
-新式SharePoint网站使用Microsoft 365组来控制网站访问。 必须Microsoft 365组来宾设置，才能在网站中访问SharePoint来宾访问。
+新式SharePoint网站使用Microsoft 365组来控制网站访问。 必须Microsoft 365组来宾设置，来宾访问才能SharePoint网站。
 
-![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
+![用户Microsoft 365中的组来宾设置的Microsoft 365 管理中心。](../media/office-365-groups-guest-settings.png)
 
 设置 Microsoft 365 组来宾设置
 
@@ -80,7 +80,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 如果要允许未经身份验证的文件和文件夹共享，请选择"任何人 **"。** 如果希望确保组织外部的所有人员均必须进行身份验证，请选择"**新来宾和现有来宾"。** 选择组织中任何网站所需的最宽松设置。
 
-![SharePoint 组织级别共享设置的屏幕截图](../media/sharepoint-organization-external-sharing-controls.png)
+![组织SharePoint设置的屏幕截图。](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 设置 SharePoint 组织级共享设置
@@ -98,7 +98,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
 2. 单击“**创建**”。
 3. 单击 **"团队网站"。**
-4. 键入网站名称，然后输入组所有者名称 (网站所有者) 。
+4. 键入网站名称，并输入组所有者 (网站所有者) 。
 5. 在 **"高级设置**"下，选择是希望此网站是公共网站还是专用网站。
 6. 单击"下一步"。
 7. 单击“完成”。
@@ -109,11 +109,11 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 检查网站级别的共享设置，以确保这些设置允许您希望用于此网站的访问类型。 例如，如果将组织级别设置设置为"任何人"，但希望所有来宾对此网站进行身份验证，请确保网站级别共享设置设置为"新来宾和现有来宾 **"。**
 
-请注意，该网站无法与"任何人"设置 (未经身份验证) ，但单个文件和文件夹可以共享。
+请注意，该网站无法与"任何人"设置 (未经身份验证 **) ，** 但单个文件和文件夹可以共享。
 
 您还可以使用[敏感度标签来控制网站的外部SharePoint设置](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
-![SharePoint 网站外部共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings.png)
+![网站SharePoint共享设置的屏幕截图。](../media/sharepoint-site-external-sharing-settings.png)
 
 设置网站级别共享设置
 1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“站点”**，然后单击 **“活动站点”**。
@@ -136,7 +136,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 邀请来宾加入组
 1. 在 **"** 组"下，单击要邀请来宾的组。
-2. 打开组联系人卡片，单击右上角的"成员"链接 (表示成员计数) 。
+2. 打开组联系人卡片，单击右上角的"成员" (表示成员计数) 。
 3. 单击 **"添加成员"。**
 4. 键入要邀请的来宾的电子邮件地址，然后单击"添加 **"。**
 5. 单击“关闭”。

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: 242f17fc2f8241e5a17078286e6e23d4920ca99d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 5fc29acce595cab33086ea868d927b93b9281167
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357085"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573123"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
@@ -45,7 +45,7 @@ ms.locfileid: "58357085"
 按照[轻量级基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明操作。
 下面是生成的配置。
 
-![轻量级 Microsoft 365 企业版测试环境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![轻型 Microsoft 3656 Enterprise测试环境。](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 ## <a name="phase-2-configure-named-locations"></a>阶段 2：配置命名位置
 
@@ -79,7 +79,7 @@ ms.locfileid: "58357085"
 
 ## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 5：启用已加入域的计算机的Windows注册 
 
-按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
+按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用自动注册加入域的计算机Windows注册。
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>阶段 6：配置 Azure AD 密码保护 
 

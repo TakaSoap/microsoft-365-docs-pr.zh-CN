@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 518194e3cbf185da415104991e1d7186f5912953
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 83f6853217112741168876d92b9440869e29a5c1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250573"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575500"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
 
@@ -47,15 +47,15 @@ ms.locfileid: "58250573"
 
 3. 选择 **Upload文件到库"**。
 
-    ![上传文件的图像](images/upload-file.png)
+    ![上载文件的图像。](images/upload-file.png)
 
 4. 选择 **"选择文件"。**
 
-    ![选择文件按钮 1 的图像](images/choose-file.png)
+    ![选择文件 button1 的图像。](images/choose-file.png)
 
 5. 选择下载的名为 MDELiveAnalyzer.ps1 文件，然后单击"确认 **"**
 
-   ![选择文件按钮 2 的图像](images/analyzer-file.png)
+   ![选择文件 button2 的图像。](images/analyzer-file.png)
 
 6. 仍在 LiveResponse 会话中时，请使用下面的命令运行分析器并收集结果文件：
 
@@ -64,7 +64,7 @@ ms.locfileid: "58250573"
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![命令图像](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![命令的图像。](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >
@@ -85,9 +85,9 @@ ms.locfileid: "58250573"
 
 ## <a name="see-also"></a>另请参阅
 - [客户端分析器概述](overview-client-analyzer.md)
-- [下载并运行客户端分析器](download-client-analyzer.md)
-- [在客户端上运行Windows](run-analyzer-windows.md)
+- [下载并运行分析器](download-client-analyzer.md)
+- [在 Windows 上运行客户端分析器](run-analyzer-windows.md)
 - [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
-- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)
-- [了解分析器 HTML 报告](analyzer-report.md)
+- [用于在 Windows 上进行高级故障排除的数据收集](data-collection-analyzer.md)
+- [了解分析器 HTML 报表](analyzer-report.md)
 

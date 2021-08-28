@@ -23,17 +23,17 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: '了解如何从电子表格或其他 CSV 格式Microsoft 365列表中的用户添加到企业版。 观看 YouTube 上的一个介绍如何将帐户添加到 Microsoft 365。 在此过程结束时，拥有帐户的每个用户都将拥有一Microsoft 365邮箱。 '
-ms.openlocfilehash: bb0ed6212cde61693024bcd2fdca9f1d6c3f42dbb063f67324be3d87219f46cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: '了解如何从电子表格或其他 CSV 格式Microsoft 365列表向企业添加多个用户。 观看 YouTube 上的一个视频，介绍如何将帐户添加到Microsoft 365。 在此过程结束时，拥有帐户的每个用户都将拥有一Microsoft 365邮箱。 '
+ms.openlocfilehash: 5df43af8d01dce11c063b3d29fb2323b997580bf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835401"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572691"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同时添加多个用户以Microsoft 365管理员帮助
 
-团队中的每个人都需要一个用户帐户，然后才能登录和访问Microsoft 365服务，如电子邮件和Office。 如果有很多用户，可以从 CSV 格式保存的电子表格或其他Excel一次添加其帐户。 [不确定 CSV 格式是什么](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)？
+团队中的每个人都需要一个用户帐户，然后才能登录和访问 Microsoft 365 服务，如电子邮件和Office。 如果有很多用户，可以从 CSV 格式保存的电子表格或其他Excel一次添加其帐户。 [不确定 CSV 格式是什么](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)？
   
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
@@ -48,9 +48,9 @@ ms.locfileid: "53835401"
 
 4. 在" **导入多个用户** "面板上，可以选择下载包含或不填充示例数据的示例 CSV 文件。
 
-    电子表格需要包含与示例一完全相同的列标题 (用户名、名字等) 。 如果使用模板，请用文本编辑工具（如 记事本）打开它，并考虑单独保留第 1 行的所有数据，并仅输入第 2 行及以下行的数据。
+    电子表格需要包含与示例列标题完全相同的列标题 (用户名、名字等) 。 如果使用模板，请用文本编辑工具（如 记事本）打开它，并考虑单独保留第 1 行的所有数据，并仅输入第 2 行及以下行的数据。
 
-    电子表格还需要包括用户名值 (如 bob@contoso.com) 和 显示名称 (Bob Kelly) 等值。
+    电子表格还需要包含用户名值（如 (bob@contoso.com) 和 显示名称 (Bob Kelly) For each user）。
 
   ```
   User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Address,City,State or Province,ZIP or Postal Code,Country or Region
@@ -74,7 +74,7 @@ ms.locfileid: "53835401"
 
 - 现在，这些用户已拥有帐户，他们需要在电脑或 Mac Microsoft 365或 Office [2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)上下载和安装或重新安装。 团队的每个人都可以在最多 5 台Microsoft 365 Mac 上安装此设备。
 
-- 每个人还可以在[移动设备（Office](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) 5 台平板电脑和 5 部手机，如 iPhone、iPad 和 Android 手机和平板电脑）上设置 Office 应用和电子邮件。 这样，他们就可以从Office编辑文件。
+- 每个人还可以在Office 5 台平板电脑和 5[部](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)手机（如 iPhone、iPad 和 Android 手机和平板电脑）上设置移动应用和电子邮件。 这样，他们就可以从Office编辑文件。
 
     有关[安装Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)的端到端列表，请参阅设置适用于企业的业务。
 
@@ -84,25 +84,25 @@ ms.locfileid: "53835401"
 
 CSV 文件是包含逗号分隔值的文件。 可以使用任何文本编辑器或电子表格程序（如文本编辑器或电子表格程序）创建或编辑Excel。
   
-您可以下载 [此示例电子表格](https://www.microsoft.com/download/details.aspx?id=45485) 作为起点。 请记住，Microsoft 365第一行中需要列标题，因此不要将它们替换为其他内容。 
+您可以下载 [此示例电子表格](https://www.microsoft.com/download/details.aspx?id=45485) 作为起点。 请记住Microsoft 365第一行中需要列标题，因此不要将它们替换为其他内容。 
   
 使用新名称保存文件，并指定 CSV 格式。
   
-![如何将文件保存为 CSV 格式Excel图像](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![如何将文件保存为 CSV 格式Excel图像。](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
-保存文件时，可能会看到提示，如果以 CSV 格式保存文件，工作簿中的某些功能将会丢失。 这没有问题。 单击" **是**"即可继续。
+保存文件时，可能会收到提示，提示如果以 CSV 格式保存文件，工作簿中的某些功能将会丢失。 这没有问题。 单击" **是**"即可继续。
   
-![你可能收到提示的图片Excel询问您是否确实要将文件保存为 CSV 格式](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![你可能收到提示的图片Excel询问您是否确实要将文件保存为 CSV 格式。](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>使用技巧设置电子表格格式的模板
 
-- **是否需要与示例电子表格中相同的列标题？** 能。 示例电子表格包含第一行中的列标题。 这些标题是必需的。 对于要添加到"用户"Microsoft 365，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365可能无法从文件中的信息创建用户。
+- **是否需要与示例电子表格中相同的列标题？** 是。 示例电子表格包含第一行中的列标题。 这些标题是必需的。 对于要添加到"用户"Microsoft 365，在标题下创建一行。 如果添加、更改或删除任何列标题，Microsoft 365可能无法从文件中的信息创建用户。
 
-- **如果我没有每个用户所需的全部信息，应该怎么做？** 用户名和显示名称是必需的，如果没有此信息，就无法添加新用户。 如果没有其他一些信息（如传真），可以使用空格加逗号指示字段应保留为空。
+- **如果我没有每个用户所需的全部信息，应该怎么做？** 用户名和显示名称是必需的，如果没有此信息，则不能添加新用户。 如果没有其他一些信息（如传真），可以使用空格加逗号指示字段应保留为空。
 
 - **电子表格可以有多小或多大？** 电子表格必须至少包含两行。 一个标题用于用户 (列标签) 列标题，另一个列标题用于用户。 行数不能超过 251 行。 如果需要导入超过 250 个用户，可以创建多个电子表格。
 
-- **我可以使用哪些语言？** 创建电子表格时，可以使用任何语言或字符输入用户数据列标签，但不得更改标签的顺序，如示例中所示。 然后，可以使用任何语言或字符输入字段，以 Unicode 或 UTF-8 格式保存文件。
+- **我可以使用哪些语言？** 创建电子表格时，可以使用任何语言或字符输入用户数据列标签，但不得更改标签的顺序，如示例中所示。 然后，可以使用任何语言或字符在字段中输入条目，以 Unicode 或 UTF-8 格式保存文件。
 
 - **如果我添加来自不同国家/地区的用户，应怎么做？** 为每个区域创建单独的电子表格。 你需要逐步完成批量添加用户向导，其中每个电子表格都提供你正在处理的文件中包含的所有用户的单个位置。
 
@@ -130,7 +130,7 @@ CSV 文件是包含逗号分隔值的文件。 可以使用任何文本编辑器
 
 - **仔细检查电子表格的格式是否正确。** 检查列标题以确保它们与示例文件中的标题匹配。 确保遵循字符长度规则，并且每个字段用逗号分隔。
 
-- **如果无法看到新用户Microsoft 365，请稍等几分钟。** 更改可能需要一点时间才能跨 Microsoft 365。 
+- **如果无法看到新用户Microsoft 365，请稍等几分钟。** 更改可能需要一点时间才能在服务中Microsoft 365。 
 
 ## <a name="related-articles"></a>相关文章
 

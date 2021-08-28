@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将 dlp 策略用于非 Microsoft 云应用。
-ms.openlocfilehash: 10e5f8e78b57932c18acfe18631ae8b08d543dd5
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: 5817bad8e02e0aeee6aab88ca1a4cabe45822b51
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502815"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571370"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>对非 Microsoft 云应用使用数据丢失防护策略
 
@@ -75,17 +75,17 @@ ms.locfileid: "58502815"
 - 若要选择特定应用或实例，请选择"**选择实例"。**
 - 如果未选择实例，该策略将使用你的租户中所有Microsoft Cloud App Security应用。
 
-   ![要应用策略的位置](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
+   ![要应用策略的位置。](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 
-   ![Box-US 和 Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
+   ![Box-US 和 Box-General。](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
 你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每个应用，可能的操作 (取决于云应用 API) 。
 
-![创建规则](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
+![创建规则。](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
 在 DLP 策略中创建规则时，可以选择针对非 Microsoft 云应用的操作。 若要限制第三方应用，请选择"**限制第三方应用"。**
 
-![限制第三方应用](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+![限制第三方应用。](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
 > 应用于非 Microsoft 应用的 DLP 策略使用Microsoft Cloud App Security。 创建非 Microsoft 应用的 DLP 策略时，将自动在应用中创建Microsoft Cloud App Security。

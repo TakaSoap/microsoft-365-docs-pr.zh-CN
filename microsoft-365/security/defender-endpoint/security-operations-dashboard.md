@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a011d3cf8879b9f4b82d055693edfea98dbeb83a829c153b20e579b015fc80e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897920"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572547"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全操作仪表板
 
@@ -33,7 +33,7 @@ ms.locfileid: "53897920"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
-安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供了发现检测位置的简要概述，并突出显示了需要响应操作的地方。
+安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供发现检测位置的简要概述，并突出显示需要响应操作的地方。
 
 仪表板显示以下项的快照：
 
@@ -47,7 +47,7 @@ ms.locfileid: "53897920"
 - 处于风险之中的用户
 - 可疑活动
 
-![安全操作仪表板的图像](images/atp-sec-ops-dashboard.png)
+![安全操作仪表板的图像。](images/atp-sec-ops-dashboard.png)
 
 你可以浏览和调查警报和设备，以快速确定网络中是否、何处以及何时发生可疑活动，以帮助你了解它们出现的上下文。
 
@@ -59,7 +59,7 @@ ms.locfileid: "53897920"
 
 你可以从磁贴查看最近 30 天内网络的活动警报的个数。 警报分为"**新建"和**"**正在进行"。**
 
-![单击每个切片或严重性以查看过去 30 天内的警报列表](images/active-alerts-tile.png)
+![单击每个切片或严重性以查看过去 30 天内的警报列表。](images/active-alerts-tile.png)
 
 每个组进一步细分为相应的警报严重性级别。 单击每个警报圈内的警报数，以查看该类别的队列的已排序视图 **("** 新建"或"正在进行) "。 
 
@@ -69,9 +69,9 @@ ms.locfileid: "53897920"
 
 ## <a name="devices-at-risk"></a>处于风险之中的设备
 
-此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数在设备名称旁的圆圈中显示，然后按严重级别进一步分类到磁贴 (悬停在每个严重性栏的末尾以查看其标签) 。
+此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数显示在设备名称旁边的圆圈中，然后按严重级别进一步分类磁贴 (将鼠标悬停在每个严重性栏上以查看其标签) 。
 
-!["处于风险中的设备"图块显示警报数最高的设备列表，以及警报严重性的细目](images/devices-at-risk-tile.png)
+!["处于风险中的设备"图块显示警报数最高的设备列表，以及警报严重性的细目。](images/devices-at-risk-tile.png)
 
 单击设备名称以查看有关该设备的详细信息。 有关详细信息，请参阅调查 [Microsoft Defender 终结点设备列表中的设备](investigate-machines.md)。
 
@@ -79,9 +79,9 @@ ms.locfileid: "53897920"
 
 ## <a name="devices-with-sensor-issues"></a>具有传感器问题的设备
 
-" **具有传感器问题的设备** "图块提供有关单个设备向 Microsoft Defender for Endpoint 服务提供传感器数据的能力的信息。 它报告需要关注的设备数，并帮助你识别有问题的设备。
+" **具有传感器问题的设备** "磁贴提供有关单个设备向 Microsoft Defender for Endpoint 服务提供传感器数据的能力的信息。 它报告需要关注的设备数，并帮助你识别有问题的设备。
 
-![具有传感器问题的设备图块](images/atp-tile-sensor-health.png)
+![具有传感器问题的设备图块。](images/atp-tile-sensor-health.png)
 
 有两个状态指示器提供有关未正确报告给服务的设备数量的信息：
 
@@ -94,7 +94,7 @@ ms.locfileid: "53897920"
 
 服务 **运行状况** 磁贴会通知服务是否处于活动状态或是否有问题。
 
-!["服务运行状况"磁贴显示服务的整体指示器](images/status-tile.png)
+!["服务运行状况"磁贴显示服务的整体指示器。](images/status-tile.png)
 
 有关服务运行状况详细信息，请参阅 [检查 Microsoft Defender 终结点服务运行状况](service-status.md)。
 
@@ -102,27 +102,27 @@ ms.locfileid: "53897920"
 
 " **每日设备报告** "磁贴显示一个条形图，表示过去 30 天内每天报告的设备数。 将鼠标悬停在图形上的个别条形上，查看每天报告的具体设备数。
 
-![每日设备报告磁贴的图像](images/atp-daily-devices-reporting.png)
+![每日设备报告磁贴的图像。](images/atp-daily-devices-reporting.png)
 
 ## <a name="active-automated-investigations"></a>主动自动调查
 
-你可以从"活动自动调查"磁贴中查看最近 30 天内网络中自动 **调查的个数** 。 调查分为"挂起 **操作"、"****等待设备"** 和"正在运行 **"。**
+你可以从"活动自动调查"磁贴查看最近 30 天内网络中自动 **调查的个数** 。 调查分为"挂起 **操作"、"****等待设备"** 和"**正在运行"。**
 
-![活动自动调查的一系列信息](images/atp-active-investigations-tile.png)
+![活动自动调查的一些信息。](images/atp-active-investigations-tile.png)
 
 ## <a name="automated-investigations-statistics"></a>自动调查统计信息
 
 此图块显示最近七天内与自动调查相关的统计信息。 它显示完成的调查数、成功修正调查的数量、启动调查所花费的平均待定时间、修正警报的平均时间、调查的警报数以及从典型手动调查保存的自动化小时数。 
 
-![自动调查统计信息的图像](images/atp-automated-investigations-statistics.png)
+![自动调查统计信息的图像。](images/atp-automated-investigations-statistics.png)
 
-你可以单击自动 **调查**、**修正** 调查和调查的警报，以导航到按相应类别筛选的"调查"页面。 这样，你可以查看上下文中调查的详细说明。
+你可以单击自动 **调查**、**修正** 调查和调查的警报以导航到按相应类别筛选的"调查"页面。 这样，你可以查看上下文中调查的详细说明。
 
 ## <a name="users-at-risk"></a>处于风险之中的用户
 
 磁贴显示具有最活跃警报的用户帐户列表，以及在高、中或低警报上看到的警报数。 
 
-![处于风险中的用户帐户图块显示具有最高警报数的用户帐户列表和警报严重性的细目](images/atp-users-at-risk.png)
+![处于风险中的用户帐户图块显示警报数最高的用户帐户列表以及警报严重性的细目。](images/atp-users-at-risk.png)
 
 单击用户帐户以查看有关用户帐户的详细信息。 有关详细信息，请参阅 [调查用户帐户](investigate-user.md)。
 

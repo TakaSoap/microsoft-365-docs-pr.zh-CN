@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 8c701dc0fb038e573b39067dd40f75e9394b4083
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 6d4c63bbf13ec4149a9250b3b4240926ece0d2c4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532999"
+ms.locfileid: "58571322"
 ---
-# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用Windows 10管理器载入新设备
+# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>使用配置Windows 10载入新设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,16 +55,17 @@ ms.locfileid: "58532999"
   - Windows Server 2019
 
 > [!NOTE]
-> 若要详细了解如何载入 Windows Server 2012 R2、Windows Server 2016 和 Windows Server 2019，请参阅载入[Windows 服务器](configure-server-endpoints.md)。
+> 若要详细了解如何载入 Windows Server 2012 R2、Windows Server 2016 和 Windows Server 2019，请参阅载入 Windows[服务器](configure-server-endpoints.md)。
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>使用移动设备载入System Center Configuration Manager
 
-[![显示各种部署路径的 PDF 图像](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
-请查看[PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Microsoft Defender for Endpoint 的各种路径。
+[![显示各种部署路径的 PDF 的图像。](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
-1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
-    1. 在导航窗格中，选择 **"设置** \>  \> **终结点设备管理** \> **载入"。**
+请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Microsoft Defender for Endpoint 的各种路径。
+
+1. 打开 Configuration Manager 配置.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
+    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
     2. 选择Windows 10作为操作系统。
     3. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
     4. 选择 **"下载** 程序包"，然后保存.zip文件。
@@ -76,18 +77,18 @@ ms.locfileid: "58532999"
    选择要将程序包部署到的预定义设备集合。
 
 > [!NOTE]
-> 在 OOBE 体验阶段，Defender for Endpoint[不支持 (载入) 。](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 确保用户在运行完安装或升级Windows OOBE。
+> 在 [OOBE ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 体验阶段，Defender for Endpoint 不支持 (载入) 加入。 确保用户在运行完安装或升级后Windows OOBE。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于挂起的 OOBE (任何其他原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于挂起的 OOBE (或其他任何原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
-> 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
+> 可通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
 有关详细信息，请参阅[Configure Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 提交文件进行深入分析时是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时是否可以从设备收集示例。
 
 > [!NOTE]
 > 这些配置设置通常通过 Configuration Manager 完成。
@@ -168,7 +169,7 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>使用当前分支Microsoft Endpoint Manager载设备
 
-如果使用 Microsoft Endpoint Manager当前分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果使用Microsoft Endpoint Manager分支，请参阅创建[载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
@@ -209,7 +210,7 @@ Value: 0 or 1
 
     如果设备部署失败 (错误、不满足要求或失败状态) ，你可能需要对设备进行故障排除。  有关详细信息，请参阅 Microsoft [Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)。
 
-    ![显示成功部署（无错误）的 Configuration Manager](images/sccm-deployment.png)
+    ![显示成功部署（无错误）的 Configuration Manager。](images/sccm-deployment.png)
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>检查设备是否符合 Microsoft Defender for Endpoint 服务
 

@@ -14,18 +14,18 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 91fcbdfeeec0a4127f0e1642049fd421a30df00ed4bd757a89d582015d477fc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576028"
 ---
 # <a name="windows-feature-update-validation"></a>Windows功能更新验证
 
-是否需要深入了解应用程序在下次发布 Windows 10 或 Windows 11 时将如何执行，而无需维护环境来验证新的Windows功能？ 
+是否需要深入了解应用程序在下次发布 Windows 10 或 Windows 11 时将如何执行，而无需维护环境来验证新的 Windows 功能？ 
 
-是否要针对 Azure 环境中预览体验计划Windows内部版本运行验证测试？
+是否要针对 Azure 环境中预览体验Windows内部版本运行验证测试？
 
 **M365** 测试基础上的功能更新验证可以帮助你实现所有这些目标以及更多功能！
 
@@ -37,26 +37,26 @@ ms.locfileid: "53888265"
 
 1. 选择 **"功能更新** "作为操作系统更新类型：
 
-![功能更新验证操作系统类型](Media/Feature-update-validation-01.png)
+![功能更新验证操作系统类型。](Media/Feature-update-validation-01.png)
 
 2. 选择Windows验证应用程序的预览体验成员频道。  
 
-![功能更新验证。 选择预览体验成员测试版频道](Media/Feature-update-validation-02.png)
+![功能更新验证。 选择预览体验成员 beta 渠道。](Media/Feature-update-validation-02.png)
 
-3. 选择 Windows 10 或 Windows 11 的市场内版本作为测试 (的基线和生成的见解！) 并提供成功载入程序包所需的其他详细信息。
+3. 选择 Windows 10 或 Windows 11 的市场内版本作为测试 (和生成的见解！) 并提供成功载入程序包所需的其他详细信息。
 
-![使用已发布版本和 Windows 10 11 Windows验证](Media/Feature-update-validation-03.png)
+![使用 11 和 Windows 10 11 Windows更新验证。](Media/Feature-update-validation-03.png)
 
-4. 若要查看针对预发布功能更新验证应用程序的结果Windows 10，请访问 ```Feature Updates Test Results``` 。
+4. 若要查看针对预发布功能更新验证应用程序Windows 10的结果，请访问 ```Feature Updates Test Results``` 。
 
-![通过功能更新验证，可以快速查看结果](Media/Feature-update-validation-04.png)
+![通过功能更新验证，可以快速查看结果。](Media/Feature-update-validation-04.png)
 
 
 ## <a name="next-steps"></a>后续步骤
 
 前进到下一篇文章，开始了解内存回归分析。
 > [!div class="nextstepaction"]
-> [下一步](memory.md)
+> [后续步骤](memory.md)
 
 <!---
 Add button for next page

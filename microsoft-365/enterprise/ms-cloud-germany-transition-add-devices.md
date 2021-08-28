@@ -17,22 +17,22 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务时有关服务的其他设备信息。
-ms.openlocfilehash: 49db57e49a7f3bc603b6d6b88368569ee2b326d6e3f568961eab028faa7e28c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务的其他设备信息。
+ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795084"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573087"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
 连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 Azure AD 关系。
 
 ## <a name="azure-ad-joined-windows-10-devices"></a>加入 Azure AD Windows 10设备
-如果Windows 10已加入 Azure AD，则它必须与 Azure AD 断开连接，并且必须再次连接。
+如果Windows 10已加入 Azure AD，则必须与 Azure AD 断开连接，并且必须再次连接。
 
-[![Azure AD 设备Re-Join Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD 设备Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
 如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后通过三个步骤重新加入该设备。
@@ -40,7 +40,7 @@ ms.locfileid: "53795084"
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>步骤 1：确定设备是否加入 Azure ID
 
 1. 使用你的工作帐户登录。
-2. 转到帐户 **设置**  >    >  **访问工作或学校**。
+2. 转到设置  >    >  **帐户访问工作或学校**。
 3. 在列表中查找连接到 **[...]的帐户s Azure AD**.
 4. 如果存在已连接的帐户，请继续执行步骤 2。
 
@@ -54,7 +54,7 @@ ms.locfileid: "53795084"
 ### <a name="step-3-join-the-device-to-azure-ad"></a>步骤 3：将设备加入 Azure AD
 
 1. 使用本地管理员的凭据登录。
-2. 转到帐户 **设置**  >    >  **访问工作或学校**。
+2. 转到设置  >    >  **帐户访问工作或学校**。
 3. 单击“**连接**”。
 4. **重要** 提示：单击 **加入 Azure AD**。
 5. 输入工作帐户的电子邮件地址和密码。 设备已连接。
@@ -74,12 +74,12 @@ ms.locfileid: "53795084"
 
 如果Windows 10已注册 Azure AD，需要从 Azure AD 断开连接，然后重新连接。
 
-[![Azure AD 设备Re-Registration Flow ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD 设备Re-Registration Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>步骤 1：确定设备是否注册了 Azure ID
 
 1. 使用你的用户登录。
-2. 转到帐户 **设置**  >    >  **访问工作或学校**。
+2. 转到设置  >    >  **帐户访问工作或学校**。
 3. 在列表中发现你的工作帐户并检查它是否 **连接到 [...]'s Azure AD**.
 
     如果你的工作帐户在列表中，但没有连接到 Azure AD，请继续执行步骤 2。
@@ -103,34 +103,34 @@ ms.locfileid: "53795084"
 
 对于 Android，用户需要注销并重新注册其设备。 这可以通过 Microsoft Authenticator 或 公司门户 应用完成。
 
-- 从Microsoft Authenticator应用，用户可以转到设置 >**注册"。** 在这里，用户可以注销和重新注册其设备。
+- 从Microsoft Authenticator应用，用户可以转到"设置 >**注册"。** 在这里，用户可以注销和重新注册其设备。
 
 - 从公司门户，用户可以转到"**设备**"选项卡并删除设备。 此后，使用"配置"公司门户。
 
 - 用户还可以从帐户设置页中删除帐户，然后重新添加工作帐户，从而注销和重新注册。
 
-若要在 Android 上注销和重新注册设备，请运行Microsoft Authenticator应用：
+若要使用 Android 应用注销和重新注册设备，Microsoft Authenticator应用：
 
-1. 打开 Microsoft Authenticator 应用，**然后转到** 设置 。
+1. 打开Microsoft Authenticator应用，然后转到 **"设置"。**
 2. 选择 **"设备注册"。**
 3. 通过选择"注销"取消 **注册设备**。
 4. 对于 **设备注册**，请通过键入你的电子邮件地址重新注册设备，**然后选择注册。**
 
-若要注销 Android 设备并重新注册 Android 设置页面：
+若要注销 Android 设备，然后重新注册 Android 设置页面：
 
 1. 打开 **设备设置****转到帐户**。
 2. 选择要重新注册的工作帐户，然后选择"删除 **帐户"。**
 3. 删除帐户后，从"帐户"**页面** 选择"添加帐户>**工作帐户"。**
 4. 对于 **Workplace Join，** 键入你的电子邮件地址，然后选择 **加入** 以完成设备注册。
 
-若要在 Android 上注销并重新注册设备，请公司门户：
+若要从 Android 上注销并重新注册设备，公司门户：
 
-1. 启动公司门户并转到 **设备** 选项卡。
+1. 启动公司门户并转到 **"设备"** 选项卡。
 2. 选择设备以查看设备详细信息。
 3. From theellipses (three dots) menu， select **Remove Device**， and complete the removal by confirming in the dialog.
 4. 你现在应该已注销公司门户应用。 选择 **"登录** "以重新注册设备。
 
-有关此工作负载的迁移阶段需要执行的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中有关 Azure Active Directory (Azure AD) 的信息。
+有关此工作负载的迁移阶段所需的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中有关 Azure Active Directory (Azure AD) 的信息。
 
 ## <a name="ios"></a>iOS
 
@@ -151,13 +151,13 @@ ms.locfileid: "53795084"
 
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>步骤 3：如有必要从个别应用注销
 
-用户可以转到单个应用，Outlook、Teams和OneDrive，并从这些应用中删除帐户。
+用户可以转到单个应用（如 Outlook、Teams 和 OneDrive）并从这些应用中删除帐户。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
 **如何判断我的组织是否受到影响？**
 
-管理员应检查 `https://portal.microsoftazure.de` 以确定他们是否有已注册 Azure AD 或加入 Azure AD 的设备。 如果你的组织已注册 Azure AD 或加入 Azure AD 的设备，则你的组织必须遵循此页面上的说明。
+管理员应检查 `https://portal.microsoftazure.de` 以确定他们是否有已注册的 Azure AD 或加入 Azure AD 的设备。 如果你的组织已注册 Azure AD 或加入 Azure AD 的设备，则你的组织必须遵循此页面上的说明。
 
 **我的用户何时重新注册其设备？**
 
@@ -174,17 +174,17 @@ ms.locfileid: "53795084"
 ## <a name="additional-considerations"></a>其他注意事项
 
 > [!IMPORTANT]
-> Intune 服务主体将在迁移过程的第 [3](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer)阶段之后启用，这意味着将激活 Azure AD 设备注册。 如果在迁移之前阻止了 Azure AD 设备注册，则必须使用 PowerShell 禁用 Intune 服务主体，以再次禁用 Azure AD 门户的 Azure AD 设备注册。 可以使用 PowerShell for Azure Active Directory 模块中的此命令禁用 Intune Graph主体。
+> Intune 服务主体将在迁移过程的第 [3](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer)阶段之后启用，这意味着激活 Azure AD 设备注册。 如果在迁移之前阻止了 Azure AD 设备注册，则必须使用 PowerShell 禁用 Intune 服务主体，以再次禁用 Azure AD 门户的 Azure AD 设备注册。 可以使用 PowerShell for Azure Active Directory 模块中的此命令禁用 Intune Graph主体。
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 
-- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域提供服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 - [迁移期间客户体验](ms-cloud-germany-transition-experience.md)

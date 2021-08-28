@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38fccc89b7fa3717bd000a23a61b1cf6b69e10488756678d862598f290cf1832
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4662b036ebc92f69e4cba1c1a7b6c8d8231a4b2c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56788274"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575716"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 

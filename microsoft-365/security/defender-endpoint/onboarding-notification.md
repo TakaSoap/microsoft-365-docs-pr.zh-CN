@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c4fa624d6c0fb6ea299834fd4b57f37dd5f8f7c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531559"
+ms.locfileid: "58572559"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -54,18 +54,18 @@ ms.locfileid: "58531559"
 
 2. 导航到 **"我的流>新>计划 - 从空白。**
 
-    ![流的图像](images/new-flow.png)
+    ![流的图像。](images/new-flow.png)
 
 3. 构建计划流。
    1. 输入流名称。
    2. 指定开始时间和时间。
    3. 指定频率。 例如，每 5 分钟。
 
-    ![通知流的图像](images/build-flow.png)
+    ![通知流的图像。](images/build-flow.png)
 
-4. 选择" +"按钮以添加新操作。 新操作将是对 Defender for Endpoint 安全中心设备请求的 HTTP (API) API。 还可以将其替换为开箱即用"WDATP 连接器" (操作："计算机 - 获取计算机列表") 。
+4. 选择" +"按钮以添加新操作。 新操作将是向 Defender for Endpoint 安全中心设备发送的 HTTP (API) API。 还可以将其替换为开箱即用"WDATP 连接器" (操作："计算机 - 获取计算机列表") 。
 
-    ![重复和添加操作的图像](images/recurrence-add.png)
+    ![定期和添加操作的图像。](images/recurrence-add.png)
 
 5. 输入以下 HTTP 字段：
 
@@ -78,19 +78,19 @@ ms.locfileid: "58531559"
    - 凭据类型：选择"机密"。
    - 密码：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
 
-    ![HTTP 条件的图像](images/http-conditions.png)
+    ![HTTP 条件的图像。](images/http-conditions.png)
 
 6. 通过选择"添加新操作"，然后 **搜索"数据** 操作"并选择"**分析 JSON"添加新步骤**。 
 
-    ![数据操作的图像](images/data-operations.png)
+    ![数据操作的图像。](images/data-operations.png)
 
 7. 在"内容" **字段中添加** 正文。
 
-    ![分析 JSON 的图像](images/parse-json.png)
+    ![分析 JSON 的图像。](images/parse-json.png)
 
 8. 选择" **使用示例有效负载生成架构"** 链接。
 
-    ![使用有效负载分析 json 的图像](images/parse-json-schema.png)
+    ![使用有效负载分析 json 的图像。](images/parse-json-schema.png)
 
 9. 复制并粘贴以下 JSON 代码段：
 
@@ -174,27 +174,27 @@ ms.locfileid: "58531559"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入 (设备) /是否已在 SharePoint 列表注册，例如：
+10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册为示例：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在 (注册) 新载入SharePoint，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在) 列表中注册新的已载入 (设备SharePoint，并且会向 Defender for Endpoint 管理员发送通知
 
-    ![适用于每个图像的图像](images/flow-apply.png)
+    ![适用于每个图像的图像。](images/flow-apply.png)
 
-    ![适用于每个具有 get 项的图像](images/apply-to-each.png)
+    ![适用于每个具有 get 项的图像。](images/apply-to-each.png)
 
-11. 在 **"条件**"下，添加以下表达式："length (body ('Get_items') ？['value']) "，将条件设置为等于 0。
+11. 在 **"条件**"下，添加以下表达式："length (body ('Get_items'') ？['value']) "，将条件设置为等于 0。
 
-    ![应用于每个条件的图像条件 ](images/apply-to-each-value.png)
-     ![ 1 ](images/conditions-2.png)
-     ![ 条件的图像2 ](images/condition3.png)
-     ![ 发送电子邮件的图像](images/send-email.png)
+    ![适用于每个条件的图像。 ](images/apply-to-each-value.png)
+     ![condition1 的图像。 ](images/conditions-2.png)
+     ![condition2 的图像。 ](images/condition3.png)
+     ![发送电子邮件的图像。](images/send-email.png)
 
 ## <a name="alert-notification"></a>警报通知
 
 下图是电子邮件通知的一个示例。
 
-![电子邮件通知的图像](images/alert-notification.png)
+![电子邮件通知的图像。](images/alert-notification.png)
 
 ## <a name="tips"></a>提示
 
@@ -203,7 +203,7 @@ ms.locfileid: "58531559"
     - 使用过去 7 天内最后看到的所有设备。
 
 - 对于每个设备：
-  - 如果最后一次看到属性的时间间隔为 [-7 天，-7 天 + 60 分钟 ] ->发生载出可能性的警报。
+  - 如果上次看到的属性的时间间隔为 [-7 天， -7days + 60 分钟 ] ->警报可能的时间间隔。
   - 如果第一次看到是过去一小时 ->载入警报。
 
 在此解决方案中，你将没有重复的警报：存在具有大量设备的租户。 获取所有这些设备可能非常昂贵，并且可能需要分页。
@@ -211,4 +211,4 @@ ms.locfileid: "58531559"
 您可以拆分为两个查询：
 
 1. 对于"出载"，仅使用此间隔使用 OData $filter，并且仅在满足条件时通知。
-2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须位于) 。
+2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须太) 。

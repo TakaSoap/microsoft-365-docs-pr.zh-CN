@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender for Endpoint 中启用预览体验
+title: 在 Microsoft Defender for Endpoint 中打开预览体验
 description: 在 Microsoft Defender for Endpoint 中打开预览体验，以试用即将推出的功能。
 keywords: 高级功能， 设置， 阻止文件
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 742a95bd9ad2cfb798244301cf3cb1ef86994f7926e25fa336c84df2ac52e5bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e064b537b11fe54304a2bb26ce65299f0b23876a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793283"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575752"
 ---
-# <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中启用预览体验
+# <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中打开预览体验
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "53793283"
 
 1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **高级功能"。**
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="设置和预览体验图像":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="设置和预览体验图像。":::
 
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。

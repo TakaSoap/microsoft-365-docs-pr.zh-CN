@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61735abbce8445d4c3293085c320c9d253c745dcef66ace90fbfb8ba73ebe89b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56831016"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576100"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -48,7 +48,7 @@ EOP 中提供了以下反欺骗技术：
 
   EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
 
-  ![EOP 反欺骗检查](../../media/eop-anti-spoofing-protection.png)
+  ![EOP 反欺骗检查。](../../media/eop-anti-spoofing-protection.png)
 
 - **欺骗智能见解**：审查最近 7 天内来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 EOP 中配置欺骗智能见解](learn-about-spoof-intelligence.md)。
 
@@ -75,13 +75,13 @@ EOP 中提供了以下反欺骗技术：
 
   以下是一封具有伪造发件人 msoutlook94@service.outlook.com 的网络钓鱼邮件示例：
 
-  ![冒充 service.outlook.com 的网络钓鱼邮件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  ![冒充 service.outlook.com 的网络钓鱼邮件。](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
   此邮件并非来自 service.outlook.com，而是攻击者伪造“**发件人**”标头字段，使它看起来像是这样。 这种做法试图欺骗收件人单击“**更改密码**”链接并放弃使用其凭据。
 
   以下邮件是使用欺骗电子邮件域 contoso.com 的 BEC 示例：
 
-  ![网络钓鱼邮件 - 商务电子邮件入侵](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  ![网络钓鱼邮件 - 企业电子邮件入侵。](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
   该邮件看似合法，但发件人其实是伪造的。
 
@@ -89,7 +89,7 @@ EOP 中提供了以下反欺骗技术：
 
   例如，以下是来自 Microsoft 安全帐户部门的真实密码重置邮件的示例：
 
-  ![Microsoft 合法密码重置](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  ![Microsoft 合法密码重置。](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
   邮件确实来自 Microsoft，但用户已经习惯于持怀疑态度。因为难以区分真正的密码重置邮件和伪造的邮件，用户可能会忽略该消息，而将其报告为垃圾邮件，或者不必要地将该消息作为网络钓鱼报告给 Microsoft。
 

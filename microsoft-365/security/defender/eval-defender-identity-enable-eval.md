@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 93c3b15dc9ee47c076d4f17a60530d6660dea112
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 6a89c0e9d9b8b66048ddd50ab967520987a152a9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247182"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572511"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>启用 Microsoft Defender 标识评估环境
 
@@ -37,7 +37,7 @@ ms.locfileid: "58247182"
 
 使用以下步骤设置 Microsoft Defender for Identity 环境。 
 
-![在 Microsoft Defender 评估环境中启用 Microsoft Defender 标识的步骤](../../media/defender/m365-defender-identity-eval-enable-steps.png)
+![在 Microsoft Defender 评估环境中启用 Microsoft Defender 标识的步骤。](../../media/defender/m365-defender-identity-eval-enable-steps.png)
 
 - [步骤 1.设置 Defender for Identity 实例](#step-1-set-up-the-defender-for-identity-instance)
 - [步骤 2.安装和配置传感器](#step-2-install-and-configure-the-sensor)
@@ -48,17 +48,17 @@ ms.locfileid: "58247182"
 
 登录到 Defender for Identity 门户以创建实例，然后将此实例连接到 Active Directory 环境。 
 
-|  |步骤     |更多信息  |
+|  |步骤     |详细信息  |
 |---------|---------|---------|
 |1      | 创建 Defender for Identity 实例        | [快速入门：创建 Microsoft Defender for Identity 实例](/defender-for-identity/install-step1)        |
-|2      | 连接 Active Directory 林创建 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
+|2      | 连接 Active Directory 林中设置 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
 | | |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>步骤 2. 安装和配置传感器
 
 接下来，在本地环境的域控制器和 AD FS 服务器上下载、安装和配置 Defender for Identity 传感器。
 
-|  |步骤     |更多信息  |
+|  |步骤     |详细信息  |
 |---------|---------|---------|
 |1      | 确定你需要多少个 Microsoft Defender for Identity 传感器。        | [规划 Microsoft Defender 标识容量](/defender-for-identity/capacity-planning)   |
 |2      | 下载传感器安装程序包  |  [快速入门：下载 Microsoft Defender for Identity 传感器安装程序包](/defender-for-identity/install-step3)   |
@@ -70,7 +70,7 @@ ms.locfileid: "58247182"
 
 在安装了传感器的计算机上安装，Windows事件日志集合和 Internet 代理设置以启用和增强检测功能。
 
-|  |步骤     |更多信息  |
+|  |步骤     |详细信息  |
 |---------|---------|---------|
 |1      | 配置Windows事件日志集合         | [配置 Windows 事件集合](/defender-for-identity/configure-windows-event-collection)        |
 |2      | 配置 Internet 代理设置        | [为 Microsoft Defender for Identity Sensor 配置终结点代理和 Internet 连接设置](/defender-for-identity/configure-proxy)        |
@@ -80,7 +80,7 @@ ms.locfileid: "58247182"
 
 Microsoft Defender for Identity 横向移动路径检测依赖于标识特定计算机上本地管理员的查询。 这些查询通过 SAM-R 协议使用 Defender for Identity Service 帐户执行。 
 
-为了确保Windows和服务器允许 Defender for Identity 帐户执行 SAM-R，除了网络访问策略中列出的配置帐户之外，还必须修改组策略以添加 Defender for Identity 服务帐户。 请确保将组策略应用于除 **域控制器 之外的所有计算机**。
+为了确保 Windows 客户端和服务器允许 Defender for Identity 帐户执行 SAM-R，除了网络访问策略中列出的配置帐户之外，还必须修改组策略以添加 Defender for Identity 服务帐户。 请确保将组策略应用于除 **域控制器 之外的所有计算机**。
 
 有关如何执行此操作的说明，请参阅配置 [Microsoft Defender for Identity 以对 SAM 进行远程调用](/defender-for-identity/install-step8-samr)。 
 

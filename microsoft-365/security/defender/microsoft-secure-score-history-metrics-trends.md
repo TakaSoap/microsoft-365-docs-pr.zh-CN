@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b5fbfae845c320e0d38293cff0d859165217a385
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255156"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575908"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>跟踪 Microsoft 安全分数历史记录并实现目标
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft 安全](microsoft-secure-score.md) 分数是组织安全状况的度量，较高的数字表示采取更多改进措施。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](overview-security-center.md)。
+[Microsoft 安全](microsoft-secure-score.md) 分数是组织安全状况的度量，较高的数字表示采取更多改进措施。 可以在门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](overview-security-center.md)。
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>深入了解影响分数的活动
 
@@ -40,17 +40,17 @@ ms.locfileid: "58255156"
 
 下图列出了选定时间范围内执行的所有操作及其属性，如生成的点和类别。 您可以自定义日期范围并按类别进行筛选。
 
-![活动历史记录](../../media/secure-score/secure-score-history-activity.png)
+![活动历史记录。](../../media/secure-score/secure-score-history-activity.png)
 
 如果您选择与活动关联的改进操作，则将显示"完全改进操作"飞出。
 
 若要查看该特定改进操作的所有历史记录，请在飞出视图中选择历史记录链接。
 
-![改进操作历史记录](../../media/secure-score/secure-score-history-flyout.png)
+![改进操作历史记录。](../../media/secure-score/secure-score-history-flyout.png)
 
 ## <a name="discover-trends-and-set-goals"></a>发现趋势并设定目标
 
-在 **"指标&** 趋势"选项卡中，提供多个图表和图表，可让你进一步查看趋势和设置目标。 你可以为整个可视化页面设置日期范围。 可视化效果包括：
+在 **"指标&** 趋势"选项卡中，可以使用多个图形和图表来进一步查看趋势和设定目标。 你可以为整个可视化页面设置日期范围。 可视化效果包括：
 
 * **安全分数区域** - 根据组织目标和良好、正常和错误分数范围的定义进行自定义。
 * **回归趋势** - 由于配置、用户或设备更改而已回归的点的时间线。  
@@ -66,9 +66,9 @@ ms.locfileid: "58255156"
 
 比较条形图是"概述 **"** 选项卡。将鼠标悬停在图表上可查看得分和得分机会。 对比较数据进行匿名处理，因此我们不确切知道哪些其他租户位于混合中。
 
-![相似组织分数的条形图](../../media/secure-score/secure-score-comparison-bar.png)
+![相似组织的分数的条形图。](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **类似你的** 组织：如果我们至少有五个或五 (个租户来比较符合以下条件) 租户的平均得分，
+- **组织喜欢你的** 组织：如果我们至少有五 (个租户要比较符合以下条件) 租户的平均得分，我们会评估这些租户的平均得分：
     1. 同一行业
     2. 组织规模相同
     3. 所有区域
@@ -76,7 +76,7 @@ ms.locfileid: "58255156"
     5. 机会 (租户 20% 范围内的当前许可证) 可获取的最大分数
 
 - **自定义比较**：需要根据以下条件选择"管理比较"进行设置：
-    1. 所选行业 (行业) 
+    1. 所选行业 (产品) 
     2. 所选组织规模 (组织) 
     3. 所选区域 (区域) 
     4. 所选许可证 (许可证) 
@@ -89,7 +89,7 @@ ms.locfileid: "58255156"
 
 在 **"指标&** 趋势"选项卡中，查看组织的安全分数在一段时间与其他人的对比。
 
-![一段时间后相似组织的分数的直线图](../../media/secure-score/secure-score-comparison-trend.png)
+![一段时间后相似组织的分数的直线图。](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 

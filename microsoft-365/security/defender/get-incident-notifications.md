@@ -1,6 +1,6 @@
 ---
 title: 通过电子邮件获取事件通知Microsoft 365 Defender
-description: 了解如何创建规则，以针对事件发送电子邮件通知Microsoft 365 Defender
+description: 了解如何创建规则，以在电子邮件中获取事件Microsoft 365 Defender
 keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33de1e3adc004e05a8c383c8277c358d769bf520528c4c7332e23c5d05635051
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838928"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572955"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 
@@ -45,7 +45,7 @@ ms.locfileid: "53838928"
 
 电子邮件通知包含有关事件的重要详细信息，如事件名称、严重性和类别等。 您还可以直接转到事件并立即开始分析。 有关详细信息，请参阅调查 [事件](investigate-incidents.md)。
 
-可以在电子邮件通知中添加或删除收件人。 新收件人在添加事件后会收到事件通知。 
+可以在电子邮件通知中添加或删除收件人。 新收件人在添加事件后会收到通知。 
 
 >[!NOTE]
 >您需要"管理安全设置"权限才能配置电子邮件通知设置。 如果选择使用基本权限管理，则具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。 <br> <br>
@@ -60,15 +60,15 @@ ms.locfileid: "53838928"
 3. 在"**基本信息"** 页上，键入规则名称和说明，然后选择"下一步 **"。**
 4. 在" **通知设置"** 页上，配置：
     - **警报严重性** - 选择将触发事件通知的警报严重性。 例如，如果你只想获得有关高严重性事件的通知，请选择"高 **"。**
-    - **设备组** 作用域 - 你可以指定所有设备组，也可以从租户中的设备组列表中选择。
+    - **设备组** 作用域 - 可以指定所有设备组，也可以从租户中的设备组列表中选择。
     - **仅在发生每个事件时通知** - 选择是否仅希望通知与其他选择匹配的第一个警报。 以后与事件相关的更新或警报不会发送其他通知。
     - **在电子邮件中包括组织名称** - 选择是否要在电子邮件通知中显示您的组织名称。
-    - **包含特定于租户的门户链接**- 选择是否要在电子邮件通知中添加包含租户 ID 的链接，以访问特定租户Microsoft 365租户。
+    - **包含特定于租户的门户链接**- 选择是否要在电子邮件通知中添加包含租户 ID 的链接，以访问Microsoft 365租户。
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件电子邮件通知的通知设置":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件电子邮件通知的通知设置。":::
 
-5. 选择 **下一步**。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择"**发送测试电子邮件"。** 
-6. 选择 **下一步**。 在"**复查规则**"页上，查看规则的设置，然后选择"创建 **规则"。** 收件人将开始根据设置通过电子邮件接收事件通知。
+5. 选择“**下一步**”。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择"**发送测试电子邮件"。** 
+6. 选择“**下一步**”。 在"**复查规则**"页上，查看规则的设置，然后选择"创建 **规则"。** 收件人将开始根据设置通过电子邮件接收事件通知。
 
 若要编辑现有规则，请从规则列表中选择它。 在具有规则名称的窗格中，选择"编辑规则"，在"基本"、通知 **设置** 和"**收件人"页上进行更改**。 
 

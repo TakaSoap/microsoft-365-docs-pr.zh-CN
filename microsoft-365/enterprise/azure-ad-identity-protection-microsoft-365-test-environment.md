@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 配置 Azure AD Identity Protection 并分析企业测试Microsoft 365中的当前帐户。
-ms.openlocfilehash: 68b77803b4a2955efe58f742e27cb4fa6cfbb58c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 446462215069c0bcc72e36c7c62260de0694f600
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356308"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572667"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境的 Microsoft 365 Azure AD Identity Protection
 
@@ -33,7 +33,7 @@ ms.locfileid: "58356308"
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [阶段 2：使用 Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
-![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
@@ -45,17 +45,17 @@ ms.locfileid: "58356308"
 如果要在模拟的企业中测试 Azure AD Identity Protection，请按照传递身份验证 [中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试 Azure AD Identity Protection 不需要模拟的企业测试环境，该环境包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试 Azure AD Identity Protection，在代表典型组织的环境中试验它。
+> 测试 Azure AD Identity Protection 不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 的目录同步。 它在此处作为一个选项提供，以便你可以测试 Azure AD Identity Protection，在代表典型组织的环境中试验它。
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>阶段 2：使用 Azure AD Identity Protection
 
-1. 打开浏览器的专用实例，然后使用适用于企业测试Microsoft 365全局管理员帐户登录到 Azure [https://portal.azure.com](https://portal.azure.com) 门户 。
+1. 打开浏览器的专用实例，然后使用适用于企业测试环境的 Microsoft 365 的全局管理员帐户 [https://portal.azure.com](https://portal.azure.com) 登录到 Azure 门户。
 2. 在 Azure 门户中， **在搜索框中** 键入标识保护，然后选择 **Azure AD Identity Protection**。
 3. 在 **"Identity Protection - 概述"** 边栏选项卡中，选择每个报告以查看报告内容。
 4. 在 **"通知"** 下 **，选择"处于风险中检测到警报的用户"。**
 5. 在"**存在风险的用户检测到警报"窗格中**，选择"中等 **"。**
 6. For **Emails are sent to the following users，** select **Included** and verify that your global admin account is in the list of selected members.
-7. 选择“**保存**”。
+7. 选择 **保存**。
 
 在 **"保护**"下，选择各种策略以查看如何配置策略。 如果创建并激活策略，请确保它不会阻止所有用户的访问，否则可能无法登录。 若要阻止这种情况发生，请排除特定用户帐户，例如全局管理员。
 

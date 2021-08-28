@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6fdf9509d6d951ed500462a6fc95e1db6c9e9cb8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: cc642d06d6f2cb253140e902114f4c2840a58036
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507958"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573003"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>在 macOS 或 Linux 上运行客户端分析器
 
@@ -65,7 +65,7 @@ ms.locfileid: "58507958"
 
 示例：
 
-![命令行示例的图像](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+![命令行示例的图像。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 其他语法帮助：
 

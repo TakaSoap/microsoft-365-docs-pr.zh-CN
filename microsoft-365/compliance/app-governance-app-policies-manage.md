@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理应用治理策略。
-ms.openlocfilehash: 7da710675ab76a9bdbbf81b0186e4364ce77b84b4c6d2d6ae910ba33ea26a8a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 270315e15a79b97b55aa729d4b7e9b39930ee82c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820720"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571141"
 ---
 # <a name="manage-app-policies"></a>管理应用策略
 
@@ -43,7 +43,7 @@ ms.locfileid: "53820720"
 1. 如果该行为不是预期行为，请返回到步骤 1。
 1. 如果该行为是预期行为，请编辑策略并将其状态更改为“活动”（如果需要）。
 
-![管理应用策略工作流](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
+![管理应用策略工作流。](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## <a name="editing-an-app-policy-configuration"></a>编辑应用策略配置
 

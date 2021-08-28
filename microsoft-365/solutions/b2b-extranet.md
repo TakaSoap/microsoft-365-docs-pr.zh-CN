@@ -17,12 +17,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何使用合作伙伴组织的托管来宾创建 B2B Extranet 站点或团队。
-ms.openlocfilehash: ab88ba8b12c6eb53bc3c0b3c4b22cb09919ce38256b68fa65256e64d7ff81bdd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883769"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572379"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>创建有托管来宾的 B2B 外网
 
@@ -30,7 +30,7 @@ ms.locfileid: "53883769"
 
 通过这种共享协作资源的方法，合作伙伴组织可以帮助维护和批准来宾，从而减少 IT 部门的负担，并允许最熟悉协作协议的人管理用户访问。
 
-本文逐步介绍了创建资源包的步骤 (在这种情况下，创建一个站点或工作组) 可通过自助服务访问注册模型与合作伙伴组织共享。 
+本文逐步介绍了创建资源包的步骤 (在这种情况下，创建一个站点或工作组) ，您可以通过自助服务访问注册模型与合作伙伴组织共享这些资源包。 
 
 在开始之前，创建要与合作伙伴组织共享的站点或团队，并启用它进行来宾共享。 有关详细信息 [，请参阅在网站](collaborate-in-site.md) 中与来宾协作或与 [团队中的](collaborate-as-team.md) 来宾协作。 我们还建议您 [查看创建安全的](create-secure-guest-sharing-environment.md) 来宾共享环境，了解可用于在与来宾协作时维护治理策略的安全与合规性功能。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53883769"
 10. 单击“**下一步: 评审+创建**”。
 11. 查看已选择的设置，然后单击"创建 **"。**
 
-    ![已连接组织页面的屏幕截图Azure Active Directory](../media/identity-governance-connected-organizations.png)
+    ![已连接组织页面的屏幕截图Azure Active Directory。](../media/identity-governance-connected-organizations.png)
 
 ## <a name="choose-the-resources-to-share"></a>选择要共享的资源
 
@@ -75,7 +75,7 @@ ms.locfileid: "53883769"
 4. 键入目录的名称和说明，并确保为外部用户启用和启用 **两者** 都设置为 **是**。
 5. 单击“**创建**”。
 
-   ![Identity Governance 中的目录页面Azure Active Directory屏幕截图](../media/identity-governance-catalogs.png)
+   ![Identity Governance 中的目录页面Azure Active Directory屏幕截图。](../media/identity-governance-catalogs.png)
 
 创建目录后，添加SharePoint要与合作伙伴组织共享的网站或团队。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53883769"
 2. 单击 **"资源**"，然后单击"**添加资源"。**
 3. 选择要包括在 extranet SharePoint团队或网站，然后单击"添加 **"。**
 
-   ![Identity Governance 中的目录资源Azure Active Directory屏幕截图](../media/identity-governance-catalog-resource.png)
+   ![Identity Governance 中的目录资源Azure Active Directory屏幕截图。](../media/identity-governance-catalog-resource.png)
 
 定义要共享的资源后，下一步是创建访问包，该包定义授予合作伙伴用户的访问权限类型以及请求访问的新合作伙伴用户的审批过程。
 
@@ -96,7 +96,7 @@ ms.locfileid: "53883769"
 5. 对于每个资源，在" **角色** "列中，选择要授予使用 Extranet 的来宾的用户角色。
 6. 单击 **"下一步：请求"。**
 7. 在 **"可以请求访问的用户"下**，**选择"对于不在目录中的用户"。**
-8. 确保选中"**特定连接的组织**"选项，然后单击"添加 **目录"。**
+8. 确保已选择 **"特定连接的组织**"选项，然后单击"添加 **目录"。**
 9. 选择之前添加的已连接组织，然后单击"选择 **"**
 10. 在 **"审批"** 下，**为"需要****审批"选择"是"。**
 11. 在 **"第一个审批者**"下，选择之前添加的发起人之一或选择特定用户。
@@ -106,7 +106,7 @@ ms.locfileid: "53883769"
 15. Choose the expiration and access review settings that you want to use， and then click **Next： Review + Create**.
 16. 查看设置，然后单击"创建 **"。**
 
-    ![用户标识管理中的访问包屏幕Azure Active Directory屏幕截图](../media/identity-governance-access-packages.png)
+    ![Identity Governance 中的访问包屏幕Azure Active Directory屏幕截图。](../media/identity-governance-access-packages.png)
 
 如果你正在与大型组织合作，你可能想要隐藏访问包。 如果包处于隐藏状态，则合作伙伴组织的用户将不会在"我的访问"门户 *上看到该* 包。 相反，必须发送直接链接以注册程序包。 隐藏访问包可以减少不恰当的访问请求数，还有助于保留在合作伙伴组织的门户中组织的可用访问包。
 
@@ -115,7 +115,7 @@ ms.locfileid: "53883769"
 2. 在"**概述"页上**，单击"编辑 **"。**
 3. 在 **"属性"** 下，**为"隐藏**"**选择**"是"，然后单击"保存 **"。**
 
-   ![编辑访问包属性屏幕的屏幕截图](../media/identity-governance-access-package-hidden.png)
+   ![编辑访问包属性屏幕的屏幕截图。](../media/identity-governance-access-package-hidden.png)
 
 ## <a name="invite-partner-users"></a>邀请合作伙伴用户
 
@@ -125,9 +125,9 @@ ms.locfileid: "53883769"
 1. 在 Azure AD Identity Governance 中，单击 **"访问程序包"，** 然后单击访问包。
 2. 在" **概述"** 页上，单击"我的访问门户"链接 **的** "复制到 **剪贴板"链接**。
 
-   ![包含访问门户链接的访问包属性的屏幕截图](../media/identity-governance-access-portal-link.png)
+   ![包含访问门户链接的访问包属性的屏幕截图。](../media/identity-governance-access-portal-link.png)
 
-复制链接后，你可以将其与合作伙伴组织的联系人共享，他们可以将其发送给协作团队中的用户。
+复制链接后，你可以将其与合作伙伴组织的联系人共享，并且他们可以将其发送给协作团队中的用户。
 
 ## <a name="see-also"></a>另请参阅
 

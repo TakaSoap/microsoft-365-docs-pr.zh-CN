@@ -19,12 +19,12 @@ description: 摘要：通过用户和组创建适用于政治宣传活动开发/
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d96d91d264911343bac32baee5eee7da08064f5546ac787730ad62a80c441cac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f39a898a6926938790b7adb3d18ec66641224bd9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56790755"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575728"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
@@ -194,11 +194,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 记录此开发/测试环境的这些值以用于 Office 365 和 EMS 试用订阅：
 
-- 试用订阅组织名称： ![下划线](../../media/Common-Images/TableLine.png)
+- 试用订阅组织名称： ![下划线。](../../media/Common-Images/TableLine.png)
 
   例如，对于 contoso.onmicrosoft.com 的试用订阅域名，组织名称是“contoso”。
 
-- 全局管理员名称： ![下划线](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- 全局管理员名称： ![下划线。](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   在安全位置记录此帐户的密码和其他用户帐户的常用初始密码。
 

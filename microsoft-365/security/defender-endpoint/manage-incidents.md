@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49d5dcf70a2bf9f94233ad7274faab5f697e790276d4347933ab51174e707c8c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9deece85ec5a310cea652af1dd1da39cea386848
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806326"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571297"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>管理 Microsoft Defender 终结点事件
 
@@ -42,7 +42,7 @@ ms.locfileid: "53806326"
 从事件队列中 **选择事件将** 打开"事件管理"窗格，您可以在其中打开事件页面了解详细信息。
 
 
-![事件管理窗格的图像](images/atp-incidents-mgt-pane-updated.png)
+![事件管理窗格的图像。](images/atp-incidents-mgt-pane-updated.png)
 
 你可以为自己分配事件、更改状态和分类、重命名或注释它们以跟踪其进度。
 
@@ -55,7 +55,7 @@ ms.locfileid: "53806326"
 >
 
 
-![事件详细信息页面的图像](images/atp-incident-details-updated.png)
+![事件详细信息页面的图像。](images/atp-incident-details-updated.png)
 
 ## <a name="assign-incidents"></a>分配事件
 如果尚未分配事件，可以选择"分配给 **我** "将事件分配给自己。 执行此操作时，假定所有权不仅限于事件，而且还针对与之关联的所有警报。

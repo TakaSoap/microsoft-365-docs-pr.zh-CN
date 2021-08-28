@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ab6115ba08e18c8240868e14561db821b4a00b3f439c8e06aeca5bb8ec142e1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37960ef9b7ff1431a2d1344e6a234b0106782100
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799429"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575956"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -40,7 +40,7 @@ ms.locfileid: "53799429"
 
 可以与同一个组织内的用户共享[高级搜寻](advanced-hunting-overview.md)查询。 还可以查找在 GitHub 上公开共享的查询。 借助这些查询，你可以快速追寻特定威胁搜寻方案，而无需从头开始编写查询。
 
-![共享查询的图像](../../media/advanced-hunting-shared-queries.png)
+![共享查询的图像。](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>保存、修改和共享查询
 可以保存新的或已有的查询，以便只有你可以访问它，或将它与组织内的其他用户共享。 
@@ -51,7 +51,7 @@ ms.locfileid: "53799429"
     
 3. 输入查询的名称。 
 
-   ![保存查询的图像](../../media/advanced-hunting-save-query.png)
+   ![保存查询的图像。](../../media/advanced-hunting-save-query.png)
 
 4. 选择要将查询保存到的文件夹。
     - **共享查询** — 与组织内的所有用户共享
@@ -62,7 +62,7 @@ ms.locfileid: "53799429"
 ## <a name="delete-or-rename-a-query"></a>删除或重命名查询
 1. 右键单击要重命名或删除的查询。
 
-    ![删除查询的图像](../../media/advanced_hunting_delete_rename.png)
+    ![删除查询的图像。](../../media/advanced_hunting_delete_rename.png)
 
 2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
@@ -76,7 +76,7 @@ Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://
 >此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender，](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到[Microsoft 365 Defender。](advanced-hunting-migrate-from-mde.md)
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender"](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤Microsoft 365 Defender Microsoft Defender for Endpoint 中的步骤将高级搜寻工作流从[Microsoft Defender for Endpoint 移动到其他位置](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

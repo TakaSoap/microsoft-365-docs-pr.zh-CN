@@ -17,17 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 一Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
-ms.openlocfilehash: 25052b461aee3a9ba823c203ebb2f8bddebd3196312e9697574fcd2efba2af50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 分类Microsoft 365器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
+ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872162"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571105"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>可训练的分类器入门
 
-可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
+可Microsoft 365分类器是一种工具，通过向可训练分类器提供示例进行查看，可以识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
 
 首先，创建自定义可训练分类器涉及为分类器提供人工选取且与类别积极匹配的示例。 然后，处理完这些样本后，通过向分类器提供正样本和负样本的组合来测试分类器预测的能力。 本文介绍了如何创建和训练自定义分类器，以及如何在自定义可训练分类器及其生存期内通过重新培训提高这些分类器的性能。
 
@@ -46,7 +46,7 @@ ms.locfileid: "53872162"
 
 分类器是Microsoft 365 E5 E5 合规性功能。 你必须拥有其中一个订阅，以使用这些订阅。
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>权限
 
 若要访问 UI 中的分类器：： 
 
@@ -70,7 +70,7 @@ ms.locfileid: "53872162"
 
 此时间线反映了可训练分类器的示例部署。
 
-![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
+![trainable-classifier-timeline。](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > 可训练分类器首次需要选择加入。 完成组织内容的Microsoft 365评估需要 12 天。 请与全局管理员联系以启动选择加入过程。
@@ -88,25 +88,25 @@ ms.locfileid: "53872162"
 
 ### <a name="testing-content"></a>测试内容
 
-一旦可训练分类器处理了足够的正样本以构建预测模型，则需要测试它进行预测，以查看分类器能否正确区分与类别匹配的项和不匹配的项。 为此，选择另一组人工选取的内容（希望更大一些）包含应属于类别的样本和不应包含的示例。 你应该使用与首次提供的初始种子数据不同的数据进行测试。 处理这些错误后，你手动浏览结果并验证每个预测是否正确，或者你不确定。 可训练分类器使用此反馈来改进其预测模型。
+一旦可训练分类器处理了足够的正样本以构建预测模型，则需要测试预测结果，以查看分类器能否正确区分与类别匹配的项和不匹配的项。 为此，选择另一组人工选取的内容（希望更大一些）包含应属于类别的样本和不应包含的示例。 你应该使用与首次提供的初始种子数据不同的数据进行测试。 处理这些错误后，你手动浏览结果并验证每个预测是否正确，或者你不确定。 可训练分类器使用此反馈来改进其预测模型。
 
 > [!TIP]
 > 为了获得最佳结果，在测试示例集内至少具有 200 个项目，并均匀分布正匹配和负匹配。
 
 ## <a name="how-to-create-a-trainable-classifier"></a>如何创建可训练分类器
 
-1. 收集 50-500 个种子内容项。 这些必须只是强烈表示您希望可训练分类器积极标识为分类类别的内容类型的示例。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认已爬网文件扩展名和分析文件类型。
+1. 收集 50-500 个种子内容项。 这些必须只是强烈表示您希望可训练分类器积极标识为分类类别的内容类型的示例。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认爬网文件扩展名和分析文件类型。
 
    > [!IMPORTANT]
    > 种子和测试示例项不得加密，并且必须为英语。
 
    > [!IMPORTANT]
-   > 请确保种子集内的项目是 **类别的** 强示例。 可训练分类器最初基于你为它设定种子的模型构建模型。 分类器假定所有种子样本都是强正数，并且无法知道样本是该类别的弱匹配还是负匹配。
+   > 请确保种子集内的项目是 **类别的** 强示例。 可训练分类器最初基于你为该模型设定种子的模型。 分类器假定所有种子样本都是强正数，并且无法知道样本是该类别的弱匹配还是负匹配。
 
-2. 将种子内容放在专用于SharePoint种子内容的联机 *文件夹中*。 记下网站、库和文件夹 URL。
+2. 将种子内容放在专用于SharePoint种子内容的 *联机文件夹中*。 记下网站、库和文件夹 URL。
 
    > [!TIP]
-   > 如果为种子数据创建新的站点和文件夹，请至少允许一小时对位置编制索引，然后再创建使用该种子数据的可训练分类器。
+   > 如果为种子数据创建新的站点和文件夹，请至少允许一小时对位置编制索引，然后再创建将使用该种子数据的可训练分类器。
 
 3. 登录以使用Microsoft 365 合规中心管理员或安全管理员角色访问权限登录，然后打开Microsoft 365 合规中心或Microsoft 365 **安全中心**  >  **数据分类"**。
 
@@ -125,9 +125,9 @@ ms.locfileid: "53872162"
 10. 现在，可以通过选择分类器来查看详细信息页面。
 
     > [!div class="mx-imgBorder"]
-    > ![可供测试的可训练分类器](../media/classifier-trainable-ready-to-test-detail.png)
+    > ![可供测试的可训练分类器。](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. 收集至少 200 个最大 (10，000) 测试内容项，以获得最佳结果。 它们应该是强正值、强负和一些本质上不太明显的项目的组合。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认已爬网文件扩展名和分析文件类型。
+11. 收集至少 200 个测试内容 (最大为 10，000) 以获得最佳结果。 它们应该是强正值、强负和一些本质上不太明显的项目的组合。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认爬网文件扩展名和分析文件类型。
 
     > [!IMPORTANT]
     > 示例项目不得加密，并且必须为英语。
@@ -146,19 +146,19 @@ ms.locfileid: "53872162"
 16. 当可训练分类器处理完测试文件时，详细信息页面上的状态将更改为 `Ready to review` 。 如果需要增加测试样本大小，请选择并允许可训练分类器 `Add items to test` 处理其他项目。
 
     > [!div class="mx-imgBorder"]
-    > ![准备查看屏幕截图](../media/classifier-trainable-ready-to-review-detail.png)
+    > ![准备查看屏幕截图。](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. 选择 `Tested items to review` 选项卡查看项目。
 
 18. Microsoft 365一次显示 30 个项目。 查看它们，在 `We predict this item is "Relevant". Do you agree?` 框中选择 或 `Yes` `No` 或 `Not sure, skip to next item` 。 模型准确性每 30 个项目自动更新一次。
 
     > [!div class="mx-imgBorder"]
-    > !["审阅项目"框](../media/classifier-trainable-review-detail.png)
+    > !["审阅项目"框。](../media/classifier-trainable-review-detail.png)
 
 19. 查看 *至少* 200 个项目。 一旦精度分数稳定下来， **发布选项将** 变为可用，分类器状态将显示 `Ready to use` 。
 
     > [!div class="mx-imgBorder"]
-    > ![精度分数和准备发布](../media/classifier-trainable-review-ready-to-publish.png)
+    > ![精度分数和准备发布。](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. 发布分类器。
 

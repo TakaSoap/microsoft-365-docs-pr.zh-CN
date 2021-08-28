@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何使用页面诊断工具优化 SharePoint Online 新式网站页面中的页面权重。
-ms.openlocfilehash: 95a8a978d0451c36416fbe22ae3135962d34bf22a3dae68688a9dafe59be52c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848801"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573099"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网页上优化页面权重
 
@@ -53,7 +53,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 如果“**需要注意**”部分中显示“**页面权重小于 500KB**”结果，则可单击结果了解详细信息。
 
-![SharePoint 结果请求](../media/modern-portal-optimization/pagediag-page-weight.png)
+![请求SharePoint结果。](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## <a name="remediate-page-weight-issues"></a>修正页面权重问题
 
@@ -72,7 +72,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
-![页面加载时间结果](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![页面加载时间结果。](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >页面加载时间可能由于网络加载、具体时间和其他暂时条件等各种因素而有所不同。 应在更改前后多次测试页面加载时间，以帮助求出结果平均值。

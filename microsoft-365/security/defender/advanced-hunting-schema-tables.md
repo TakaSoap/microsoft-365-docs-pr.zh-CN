@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 4dcbb7051325483a220c39fdebaae53aba9c37f4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53225984"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575968"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -50,7 +50,7 @@ ms.locfileid: "53225984"
 ### <a name="access-the-schema-reference"></a>访问架构引用
 若要快速访问架构引用，请选择架构表示中表名称旁边的"查看引用"操作。 还可以选择" **架构引用** "来搜索表。
 
-![显示如何访问门户内架构参考的图像](../../media/mtp-ah/ah-reference.png)
+![显示如何访问门户内架构参考的图像。](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>了解架构表
 以下引用列出了架构中的所有表。 每个表名称链接到描述该表的列名称的页面。 表和列名称还将在安全中心列出，作为高级搜寻屏幕上的架构表示的一部分。
@@ -77,7 +77,7 @@ ms.locfileid: "53225984"
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 公开披露的漏洞的知识库，包括攻击代码是否已公开 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有关附加到电子邮件的文件的信息 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365电子邮件事件，包括电子邮件传递和阻止事件 |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 邮件送达后发生的安全事件Microsoft 365将电子邮件传递到收件人邮箱之后 |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 在将电子邮件传递到收件人邮箱Microsoft 365之后发生的安全事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关电子邮件 URL 的信息 |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory 和 AD (本地域控制器) 。 此表涵盖域控制器上一系列与标识相关的事件和系统事件。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源的帐户信息，包括Azure Active Directory |

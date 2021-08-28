@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a82b88683eaf1e7033115ce98773abf810602264dda8e48f5004d4ee5bf1cdc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 327217a9682e8a50c41c2696292d1a453fbd8cf9
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817264"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575980"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威胁防护报告
 
@@ -39,20 +39,20 @@ ms.locfileid: "53817264"
 
 仪表板分为两个部分：
 
-![威胁防护报告的图像](images/threat-protection-reports.png)
+![威胁防护报告的图像。](images/threat-protection-reports.png)
 
 节 | 说明 
 :---|:---
 1 | 警报趋势
-2 | 警报摘要
+2  | 警报摘要
 
 ## <a name="alert-trends"></a>警报趋势
-默认情况下，警报趋势显示以最后一整天结尾的 30 天时段的警报信息。 为了更好地了解组织中发生的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
+默认情况下，警报趋势显示以最后一整天结尾的 30 天时段的警报信息。 为了更好地了解组织中出现的趋势，您可以通过调整所显示的时间段来微调报告期间。 若要调整时间段，请从下拉列表选项中选择一个时间范围：
 
 - 30 天
 - 3 个月
 - 6 个月
-- 自定义警报
+- 自定义
 
 >[!NOTE]
 >这些筛选器仅适用于警报趋势部分。 它不会影响警报摘要部分。
@@ -76,7 +76,7 @@ ms.locfileid: "53817264"
 
 - **严重性**：显示警报的严重性级别，指示威胁对组织的潜在共同影响以及解决这些威胁所需的响应级别。
 
-- **状态**：显示警报的解析状态，指示手动警报响应的效率以及自动修正 (（如果启用) ）。 
+- **状态**：显示警报的解决状态，指示手动警报响应的效率以及自动修正 (（如果启用) ）。 
 
 - 分类 **&** 确定：显示如何在解决时对警报进行分类，是将它们分类为实际威胁 (真正的警报) 还是错误检测 (错误警报) 。 这些卡片还显示已解决警报的确定，提供其他见解，如找到的实际威胁类型或错误检测到的合法活动。
 
@@ -91,7 +91,7 @@ ms.locfileid: "53817264"
 
 1. 在 **"事件&警报** 筛选器  >    >  **">严重性"下，** 选择"高 **"。**
 2. 确保已取消选择"严重性 **"下的** 所有其他选项。
-3. 选择“**应用**”。
+3. 选择 **应用**。
 
 ## <a name="related-topic"></a>相关主题
 - [设备运行状况和合规性报告](machine-reports.md)

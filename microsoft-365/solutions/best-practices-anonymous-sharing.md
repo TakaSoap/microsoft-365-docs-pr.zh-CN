@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 6aba41705f519e973447653b2a4c9b32b97e43bc44864374b142955c45c17d11
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 19791a532b6ea9a7167ac85dfe1eb1b58b9f8f1b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857114"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575668"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -45,7 +45,7 @@ ms.locfileid: "53857114"
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
 2. 在左侧导航中，展开“**策略**”，然后单击“**共享**”。
 3. 在 **“任何人链接的选择到期和权限”** 下，选中 **“这些链接必须在这些天数内过期”** 复选框。</br>
-   ![SharePoint 组织级别的“任何人”链接到期设置的屏幕截图](../media/sharepoint-organization-anyone-link-expiration.png)
+   ![SharePoint 组织级别的“任何人”链接到期设置的屏幕截图。](../media/sharepoint-organization-anyone-link-expiration.png)
 4. 在输入框中键入天数，然后单击“**保存**”。
 
 设置特定站点“任何人”链接的到期日期
@@ -54,7 +54,7 @@ ms.locfileid: "53857114"
 2. 在左侧导航中，展开“**站点**”，然后单击“**活动站点**”。
 3. 选择要更改的站点，然后单击“**共享**”。
 4. 在“**“任何人”链接的高级设置**” 的“**”任何人“链接到期**”下，取消选中“**与组织级设置相同**”复选框。</br>
-   ![SharePoint 网站级别的“任何人”链接到期设置的屏幕截图](../media/sharepoint-organization-anyone-link-expiration-site.png)
+   ![SharePoint 网站级别的“任何人”链接到期设置的屏幕截图。](../media/sharepoint-organization-anyone-link-expiration-site.png)
 5. 选择“**这些链接必须在该天数内过期**”选项，然后再框中输入天数。
 6. 单击“**保存**”。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53857114"
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
 2. 在左侧导航中，单击“**共享**”。
 3. 在“**‘任何人’链接的高级设置**”下，选择要使用的文件和文件夹权限。</br>
-   ![SharePoint 组织级别的“任何人”链接权限设置的屏幕截图](../media/sharepoint-organization-anyone-link-permissions.png)
+   ![SharePoint 组织级别的“任何人”链接权限设置的屏幕截图。](../media/sharepoint-organization-anyone-link-permissions.png)
 
 “*任何人*”链接设置为“**查看**”后，用户仍可与来宾共享文件和文件夹，并可使用 *特定人员* 链接为其提供编辑权限。 这些链接要求组织外人员作为来宾进行身份验证，并且你可以跟踪和审核使用这些链接共享的文件和文件夹上的来宾活动。
 
@@ -88,7 +88,7 @@ ms.locfileid: "53857114"
 2. 在左侧导航中，单击“**共享**”。
 3. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
 
-   ![SharePoint 默认链接类型设置的屏幕截图](../media/sharepoint-default-sharing-link-company-link.png)
+   ![SharePoint 默认链接类型设置的屏幕截图。](../media/sharepoint-default-sharing-link-company-link.png)
 
 4. 单击“**保存**”
 
@@ -98,7 +98,7 @@ ms.locfileid: "53857114"
 3. 选择要更改的站点，然后单击“**共享**”。
 4. 在“**默认共享链接类型**”下，清除“**与组织级别设置相同**”复选框。
 
-   ![SharePoint 网站级默认链接类型设置的屏幕快照](../media/sharepoint-organization-anyone-link-permissions-site.png)
+   ![SharePoint 网站级默认链接类型设置的屏幕快照。](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
 5. 选择“**仅限组织中的人员**”选项，然后单击“**保存**”。
 
@@ -122,7 +122,7 @@ ms.locfileid: "53857114"
 10. 在“**操作**”下，单击“**添加操作**”，然后选择“**限制访问或对 Microsoft 365 位置中的内容进行加密**”。
 11. 选中“**限制访问或对 Microsoft 365 位置中的内容进行加密**”复选框，然后选择“**仅限通过“使用此链接的任何人”选项提供内容访问权限的人员**”选项。
 
-      ![DLP 规则操作选项屏幕截图](../media/limit-accidental-exposure-dlp-anyone-links.png)
+      ![DLP 规则操作选项屏幕截图。](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
 12. 单击“**保存**”，然后单击“**下一步**”。
 13. 选择测试选项，然后单击“**下一步**”。
@@ -137,7 +137,7 @@ ms.locfileid: "53857114"
 2. 单击“**全局设置**”。
 3. 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP。
 
-   ![安全与合规中心的安全附件设置的屏幕截图](../media/safe-attachments-setting.png)
+   ![安全与合规中心的安全附件设置的屏幕截图。](../media/safe-attachments-setting.png)
 
 4. 也可以选择打开安全文档，然后单击“**保存**”
 
@@ -155,7 +155,7 @@ ms.locfileid: "53857114"
 4. 单击“**下一步**”以进入“**内容标记**”选项卡，然后“**启用**”内容标记。
 5. 选中要添加的文本类型的复选框，然后单击“**自定义文本**”。
 6. 键入要添加到文档中的文本，选择所需的文本选项，然后单击“**保存**”。</br>
-   ![灵敏度标签的内容标记设置的屏幕截图](../media/content-marking-for-anonymous-sharing.png)
+   ![灵敏度标签的内容标记设置的屏幕截图。](../media/content-marking-for-anonymous-sharing.png)
 7. 单击“**下一步**”以到达向导的结尾，然后单击“**保存标签**”。
 
 为标签启用内容标记后，用户应用该标签时，你指定的文本将添加到 Office 文档。

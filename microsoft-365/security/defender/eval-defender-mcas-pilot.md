@@ -1,6 +1,6 @@
 ---
 title: 试用Microsoft Cloud App Security Microsoft 365 Defender
-description: 设置你的Microsoft 365 Defender试验实验室或试验环境，以测试并体验旨在保护设备、标识、数据和应用程序的安全解决方案。
+description: 将测试Microsoft 365 Defender或试验环境设置为测试并体验旨在保护设备、标识、数据和应用程序的安全解决方案。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 255aa361badf79e3ea4e4b0fe208ea22bb7a26db
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249373"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575920"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>试用Microsoft Cloud App Security Microsoft 365 Defender
 
@@ -34,12 +34,12 @@ ms.locfileid: "58249373"
 **适用于：**
 - Microsoft 365 Defender
 
-本文是设置环境评估环境的第 3 步（第[3](eval-defender-mcas-overview.md)步Microsoft Cloud App Security）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-mcas-overview.md)。
+本文是设置评估环境的过程中第 3 步（第 3 步，第[3](eval-defender-mcas-overview.md)步Microsoft Cloud App Security）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-mcas-overview.md)。
 
-使用以下步骤为用户设置和配置Microsoft Cloud App Security。
+使用以下步骤设置和配置 Microsoft Cloud App Security。
 
 
-![试点计划Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-pilot-steps.png)
+![试点计划Microsoft Cloud App Security。](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
 - 步骤 1. [创建试点组 — 将试点部署的范围缩小到某些用户组](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
 - [步骤 2.配置保护 — 条件访问应用控制](#step-2-configure-protection--conditional-access-app-control)
@@ -48,7 +48,7 @@ ms.locfileid: "58249373"
 
 ## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>步骤 1. 创建试点组 — 将试点部署的范围缩小到某些用户组
 
-Microsoft Cloud App Security允许您确定部署的范围。 通过作用域，可以选择要监视的应用或排除在监视之外的某些用户组。 可以包含或排除用户组。 若要确定试点部署的范围，请参阅 [作用域部署](/cloud-app-security/scoped-deployment)。
+Microsoft Cloud App Security设置部署范围。 通过作用域，可以选择要监视的应用或排除在监视之外的某些用户组。 可以包含或排除用户组。 若要确定试点部署的范围，请参阅 [作用域部署](/cloud-app-security/scoped-deployment)。
 
 
 ## <a name="step-2-configure-protection--conditional-access-app-control"></a>步骤 2. 配置保护 — 条件访问应用控制

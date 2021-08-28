@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 064d157fb59e8f8dba3e268b4658f8f6b8fa674925bf6287bdf10eea39a441bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6453ce0607ed7dee66622b64705d88e91cd67bf4
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839700"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58575812"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的事件
 
@@ -48,7 +48,7 @@ ms.locfileid: "53839700"
 
 单击事件以查看"事件 **"窗格**。 选择 **"打开事件页面** "，查看事件详细信息和相关信息 (警报、设备、调查、证据、图形) 。
 
-![事件详细信息的图像1](images/atp-incident-details.png)
+![事件详细信息的图像1。](images/atp-incident-details.png)
 
 ### <a name="alerts"></a>警报
 
@@ -61,21 +61,21 @@ ms.locfileid: "53839700"
 - 同一文件 - 与警报关联的文件完全相同
 - 同一 URL - 触发警报的 URL 完全相同
 
-![警报选项卡图像，包含事件详细信息页面，显示警报在事件中链接在一起的原因](images/atp-incidents-alerts-reason.png)
+![警报选项卡的图像，包含事件详细信息页面，显示警报在事件中链接在一起的原因。](images/atp-incidents-alerts-reason.png)
 
 还可以管理警报并查看警报元数据以及其他信息。 有关详细信息，请参阅调查 [警报](investigate-alerts.md)。
 
 ### <a name="devices"></a>设备
 
-还可以调查属于给定事件或与给定事件相关的设备。 有关详细信息，请参阅 [调查设备](investigate-machines.md)。
+还可以调查属于给定事件或与给定事件相关的设备。 有关详细信息，请参阅调查 [设备](investigate-machines.md)。
 
-![事件详细信息页中的"设备"选项卡图像](images/atp-incident-device-tab.png)
+![事件详细信息页中的"设备"选项卡的图像。](images/atp-incident-device-tab.png)
 
 ### <a name="investigations"></a>调查
 
 选择 **"** 调查"以查看系统为响应事件警报而启动的所有自动调查。
 
-![事件详细信息页面中"调查"选项卡的图像](images/atp-incident-investigations-tab.png)
+![事件详细信息页面中"调查"选项卡的图像。](images/atp-incident-investigations-tab.png)
 
 ## <a name="going-through-the-evidence"></a>浏览证据
 
@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint 自动调查警报中所有事件支持的事件
 
 分析的每个实体将被标记为已感染、已修复或可疑。
 
-![事件详细信息页中证据选项卡的图像](images/atp-incident-evidence-tab.png)
+![事件详细信息页中证据选项卡的图像。](images/atp-incident-evidence-tab.png)
 
 ## <a name="visualizing-associated-cybersecurity-threats"></a>可视化关联的网络安全威胁
 
@@ -91,13 +91,13 @@ Microsoft Defender for Endpoint 将威胁信息聚合到事件中，以便你可
 
 ### <a name="incident-graph"></a>事件图
 
-此 **Graph** 将介绍网络安全攻击的情景。 例如，它显示入口点是什么，哪个指示在哪个设备上观察到了泄露或活动。 等。
+此 **Graph** 将介绍网络安全攻击的情景。 例如，它显示入口点是什么，哪个指示符在哪个设备上观察到了泄露或活动。 等。
 
-![事件图的图像](images/atp-incident-graph-tab.png)
+![事件图的图像。](images/atp-incident-graph-tab.png)
 
 你可以单击事件图上的圆圈来查看恶意文件的详细信息、关联的文件检测、全球有多少实例，以及在你的组织中是否观测到它，如果是，则查看实例数。
 
-![事件详细信息的图像](images/atp-incident-graph-details.png)
+![事件详细信息的图像。](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>相关主题
 

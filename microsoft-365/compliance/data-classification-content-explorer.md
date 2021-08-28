@@ -18,20 +18,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 5cebf4f53a331712df6a480a6d813da7232b5858
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502911"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58571382"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
 数据分类内容资源管理器可以在本机查看“概述”页上汇总的项目。
 
-![内容资源管理器折叠的屏幕截图](../media/data-classification-content-explorer-1.png)
+![内容资源管理器折叠的屏幕截图。](../media/data-classification-content-explorer-1.png)
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：
 
@@ -111,14 +111,14 @@ ms.locfileid: "58502911"
 ### <a name="export"></a>导出
 **导出** 控件将创建一个 .csv 文件，其中包含“**所有位置**”窗格中显示的所有内容的列表。
 
-![数据分类导出控件](../media/data_classification_export_control.png)
+![数据分类导出控件。](../media/data_classification_export_control.png)
 
 
 ### <a name="search"></a>搜索
 
 向下钻取到某个位置（例如 Exchange 文件夹，或者 SharePoint 或 OneDrive 网站）时，将显示 **搜索** 工具。
 
-![内容浏览器搜索工具](../media/data_classification_search_tool.png)
+![内容资源管理器搜索工具。](../media/data_classification_search_tool.png)
 
 
 搜索工具的范围是“**所有位置**”窗格中显示的内容和可搜索的内容，具体取决于所选位置。 

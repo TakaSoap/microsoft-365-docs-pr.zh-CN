@@ -10,22 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解企业门户中的攻击Microsoft 365 Defender培训如何影响员工，并可以从模拟和培训结果中获得见解。
+description: 管理员可以了解该门户中的攻击模拟Microsoft 365 Defender如何影响员工，并可以从模拟和培训结果中获得见解。
 ms.technology: mdo
-ms.openlocfilehash: 7df504bb5f94a5c14792e278c03776ff45df7e8cdf788720c717e83b28baeb96
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862515"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576088"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>通过攻击模拟培训获得见解
 
 **适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-在攻击模拟培训中，Microsoft 根据员工经过的模拟和培训结果提供见解。 这些见解将帮助你随时了解员工的威胁准备进度，并推荐下一步，让员工和环境更好地做好应对攻击的准备。
+在攻击模拟培训中，Microsoft 根据员工经过的模拟和培训结果提供见解。 这些见解将有助于你随时了解员工的威胁准备进度，并推荐下一步，让员工和环境更好地做好应对攻击的准备。
 
-我们正在不断扩展可供你获取的见解。 行为影响和推荐操作目前可用。 若要开始，请前往客户门户[中的攻击Microsoft 365 Defender培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
+我们正在不断扩展可供你获取的见解。 行为影响和推荐操作目前可用。 若要开始，请前往客户门户 中的[攻击Microsoft 365 Defender培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>行为对泄露率的影响
 
@@ -33,13 +33,13 @@ ms.locfileid: "53862515"
 
 在图中，你可以看到：
 
-- **预测的泄露率**，反映了使用攻击模拟培训的其他 Microsoft 365 租户之间使用相同负载的模拟的平均入侵率。
+- **预测的泄露率**，反映了使用攻击模拟培训的其他 Microsoft 365租户中使用相同有效负载的模拟的平均入侵率。
 - **实际泄露** 率反映了为模拟而牺牲的员工百分比。
 
 此外，还反映了受攻击危害的实际员工数与预测的入侵率 `<number> less susceptible to phishing` 之间的差值。 此员工数量不太可能在将来受到类似攻击的攻击，同时指示员工的整体行为与预测的泄露率 `<percent%> better than predicted rate` 的对比。
 
 > [!div class="mx-imgBorder"]
-> ![攻击模拟培训概述中的行为影响卡片](../../media/attack-sim-preview-behavior-impact-card.png)
+> ![攻击模拟培训概述中的行为影响卡片。](../../media/attack-sim-preview-behavior-impact-card.png)
 
 若要查看更详细的报告，请单击查看 **模拟和培训的报表**。 此报告提供了来自模拟本身的其他上下文的相同信息 (例如，模拟技术和目标用户总数) 。
 
@@ -50,7 +50,7 @@ ms.locfileid: "53862515"
 建议的操作部分详细介绍了 Microsoft 安全分数 [中提供的建议](../defender/microsoft-secure-score.md)。 这些建议基于模拟中使用的有效负载，有助于保护员工和环境。 单击每个改进操作将让你了解其详细信息。
 
 > [!div class="mx-imgBorder"]
-> ![攻击模拟培训的建议操作部分](../../media/attack-sim-preview-recommended-actions.png)
+> ![攻击模拟培训的建议操作部分。](../../media/attack-sim-preview-recommended-actions.png)
 
 ## <a name="related-links"></a>相关链接
 
