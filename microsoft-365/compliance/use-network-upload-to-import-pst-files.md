@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42a877188d8c385fa3ff1a24057d89ff694e5a8a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
+ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552980"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58684012"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -59,12 +59,12 @@ ms.locfileid: "58552980"
 
   - 必须是你组织中的全局管理员。
 
-  > [!TIP]
+    > [!TIP]
     > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于导入 PST 文件。若要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
   
 - 唯一受支持的将 PST 文件导入到 Microsoft 365 的方法是使用 AzCopy 工具，如本主题中所述。 无法使用 Azure 存储资源管理器将 PST 文件直接上传到 Azure 存储区域。
-
-- 需要将要导入到 Microsoft 365 中的 PST 文件存储在组织中的文件服务器或共享文件夹中。在步骤 2 中，将运行 AzCopy 工具，以将存储此文件服务器或共享文件夹上的 PST 文件上传到 Microsoft 365 中。
+ 
+- 需要将要导入到 Microsoft 365 中的 PST 文件存储在组织中的文件服务器或共享文件夹中。 目前不支持将 PST 文件从组织的 Azure 存储帐户复制到 Microsoft 365 导入服务使用的 Azure 存储位置。 在步骤 2 中，你将运行 AzCopy 工具，以便将存储在文件服务器或共享文件夹中的 PST 文件上传到 Microsoft 云。
 
 - 大型 PST 文件可能会影响 PST 导入过程的性能。 因此，我们建议你在步骤 2 中上传到 Azure 存储位置的每个 PST 文件不应大于 20 GB。
 
