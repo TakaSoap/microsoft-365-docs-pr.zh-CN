@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 924e363b55b3832a1882e68242c46f5466bd5f6fb900e8b8345fc45eab301d89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84d96eb53094fe99cc6942db1d4dc61f1c884ec3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56825644"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566532"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -52,7 +52,7 @@ ms.locfileid: "56825644"
 
 3. 在 Microsoft 365 合规中心的 **主页** 页面上，转到“**解决方案**”部分 \>“**信息保护**”。 要直接转到“**信息保护**”页面，请使用 <https://compliance.microsoft.com//informationprotection>。
 
-4. 在“**信息保护**”页上，验证是否已选择“**标签**”标记，然后单击“![创建标签图标](../../media/m365-cc-sc-create-icon.png)”“**创建标签**”。
+4. 在“**信息保护**”页上，验证是否已选择“**标签**”标记，然后单击“![创建标签图标](../../media/m365-cc-sc-create-icon.png)”以 **创建标签**。
 
 5. 将打开 **新敏感度标签** 向导。 在 **名称和说明** 步骤中，输入以下值：
    - **名称**：类型 **内部**。

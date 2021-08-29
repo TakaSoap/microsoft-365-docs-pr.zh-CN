@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建应用策略。
-ms.openlocfilehash: 22836d5eff088d8bf76a418f6713a9ae84d0cb5e85d2065fcd64faec62131c26
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b5f4bda7855f79e8a0e731cd6c26793ac9c6927
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842697"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572259"
 ---
 # <a name="create-app-policies"></a>创建应用策略
 
@@ -169,7 +169,7 @@ Publish metadata-based policies
 
 现在，应用策略已经创建，你应在 **策略** 页面中进行监视，以确保在测试期间其注册的活动警报数和警报总数符合预期。
 
-![Microsoft 365 合规中心中的 MAPG 策略摘要页面，其中突出显示了某项策略](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
+![Microsoft 365 合规中心中的 MAPG 策略摘要页面，其中突出显示了某项策略。](..\media\manage-app-protection-governance\mapg-cc-policies-policy.png)
 
 如果警报数为预期之外的低值，请编辑应用策略的设置，以确保在设置其状态之前进行正确配置。
 
@@ -180,7 +180,7 @@ Publish metadata-based policies
 3. 如果行为不符合预期，请根据需要编辑策略应用、条件以及操作设置，并返回步骤 2。
 4. 如果行为符合预期，请编辑策略并将其状态更改为 **活动**。
 
-![创建应用策略工作流](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
+![创建应用策略工作流。](../media/manage-app-protection-governance/mapg-create-new-policy-process.png)
 
 ## <a name="next-step"></a>下一步
 

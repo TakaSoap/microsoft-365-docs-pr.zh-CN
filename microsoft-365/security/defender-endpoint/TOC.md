@@ -377,6 +377,7 @@
 ##### [调查事件](investigate-incidents.md)
 
 #### [警报队列]()
+##### [Microsoft 365 Defender 中的警报队列](alerts-queue-endpoint-detection-response.md)
 ##### [查看和组织警报队列](alerts-queue.md)
 ##### [查看警报](review-alerts.md)
 ##### [管理警报](manage-alerts.md)
@@ -485,7 +486,7 @@
 ####### [获取通知相关 IP 信息](get-alert-related-ip-info.md)
 ####### [获取警报相关设备信息](get-alert-related-machine-info.md)
 ####### [获取警报相关用户信息](get-alert-related-user-info.md)
-####### [Microsoft 365 Defender 中的警报队列](alerts-queue-endpoint-detection-response.md)
+
 
 ###### [漏洞和安全配置评估]()
 ####### [导出评估方法和属性](get-assessment-methods-properties.md)

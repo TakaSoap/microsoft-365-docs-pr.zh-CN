@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: f32b066d2816919687924a775b7e261ca03cb7b0253ebb9ceea2422071ec5a59
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ca2d190643b7d2bf557fcf87b4319ba4e3adc99
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833040"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566462"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -38,7 +38,7 @@ ms.locfileid: "53833040"
 
 Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
-![使用 Microsoft 365 助力混合工作者](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![使用 Microsoft 365 助力混合工作者。](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 > [!NOTE]
 > 如果你第一次使用 Microsoft 365，请参阅 [的](https://www.microsoft.com/microsoft-365)。
@@ -78,7 +78,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
 
-![面向使用 Microsoft 365 的混合工作者的基本基础结构](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![面向使用 Microsoft 365 的混合工作者的基本基础结构。](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 要为混合工作者启用 Microsoft 365 的功能，请使用以下 Microsoft 365 功能。
 
@@ -104,7 +104,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 
 <a name="poster"></a> 有关此解决方案的两页摘要，请参阅 [“助力混合工作者”海报](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)。
 
-[![“助力混合工作者”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
+[![助力混合工作者海报。](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
 你还可以以 [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) 格式下载海报，并将其打印在信件、法律文件或小报(11 x 17)大小的纸张上。
 
@@ -127,6 +127,6 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 5. [部署混合工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [培训员工并处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![设置使用 Microsoft 365 实现混合工作的基础结构的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![设置使用 Microsoft 365 实现混合工作的基础结构的步骤。](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 要了解虚构但具代表性的跨国组织如何为混合工作设置其基础设施，请参阅[Contoso 的 COVID-19 响应措施及混合工作的基础设施](contoso-remote-onsite-work.md)。

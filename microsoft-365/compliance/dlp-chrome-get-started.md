@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: a7f33edb71695af1328dd62d488d86a9216cf91a357bbbc7049068d262f3837c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895667"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564030"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -254,7 +254,7 @@ ms.locfileid: "53895667"
 2. 请参考[活动资源管理器入门](data-classification-activity-explorer.md)中的程序，以访问和筛选终结点设备的所有数据。
 
    > [!div class="mx-imgBorder"]
-   > ![终结点设备的活动资源管理器筛选器](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![终结点设备的活动资源管理器筛选器。](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### <a name="known-issues-and-limitations"></a>已知问题和限制
 

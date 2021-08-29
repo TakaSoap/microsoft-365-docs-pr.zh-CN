@@ -19,12 +19,12 @@ description: 管理员可以了解如何在 Microsoft 365 Defender 门户中管�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9f417bbb784a328970c32602d52a76f5c855016f325b316af53ed0a4ff137db1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56790209"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58576064"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的权限
 
@@ -54,7 +54,7 @@ Microsoft 365 Defender 门户中的权限以基于角色的访问控制 (RBAC) �
 
 Microsoft 365 Defender 门户包括你需要分配的最常见任务和功能的默认角色组。 通常，我们建议你只需将单个用户作为 **成员** 添加到默认角色组。
 
-![显示角色组与角色和成员之间关系的图表](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![显示角色组与角色和成员之间关系的图表。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的角色和角色组
 
@@ -64,7 +64,7 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 
 - **电子邮件和协作角色**：这些角色组与安全与合规中心中可用的角色组相同，但可以直接在 Microsoft 365 Defender 门户中管理它们。 在此处分配的权限特定于 Microsoft 365 Defender 门户、Microsoft 365 合规中心和安全与合规性中心，不包括其他 Microsoft 365 工作负载所需的所有权限。
 
-![Microsoft 365 Defender 门户中的权限和角色页面](../../media/m365-sc-permissions-and-roles-page.png)
+![Microsoft 365 Defender 门户中的权限和角色页面。](../../media/m365-sc-permissions-and-roles-page.png)
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的 Azure AD 角色
 
@@ -72,7 +72,7 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 
 选择某个角色时，会显示一个包含角色说明和用户分配的详细信息飞出。 但是要管理这些分配，您需要在详细信息弹出按钮中单击 **管理 Azure AD 中的成员**。
 
-![链接以管理 Azure Active Directory 中的权限](../../media/permissions-manage-in-azure-ad-link.png)
+![链接以管理 Azure Active Directory 中的权限。](../../media/permissions-manage-in-azure-ad-link.png)
 
 有关详细信息，请参阅[查看和分配 Azure Active Directory 中的管理员角色](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)。
 
@@ -103,7 +103,7 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 
 1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作角色**”\>“**权限和角色**”\>“**电子邮件和协作角色**”\>“**角色**”。
 
-2. 在打开的 **权限** 页面中，从列表中选择要修改的角色组。 你可以单击列标题 **名称** 以按名称对列表进行排序，也可以单击 **搜索** ![搜索"图标](../../media/m365-cc-sc-search-icon.png) 以查找角色组。
+2. 在打开的 **权限** 页面中，从列表中选择要修改的角色组。 你可以单击列标题“**名称**”以按名称对列表进行排序，也可以单击“**搜索**”![搜索图标](../../media/m365-cc-sc-search-icon.png)。 以查找角色组。
 
 3. 在显示的角色组详细信息飞出中，单击 **成员** 部分中的 **编辑**。
 
@@ -113,11 +113,11 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 
 5. 在出现的 **“选择成员”** 弹出按钮中，执行以下步骤之一：
 
-   - 单击“**添加**”。 在显示的用户列表中，选择一个或多个用户。 或者，可以单击 **搜索** ![搜索图标](../../media/m365-cc-sc-search-icon.png) 查找和选择用户。
+   - 单击“**添加**”。 在显示的用户列表中，选择一个或多个用户。 或者，可以单击“**搜索**”![搜索图标](../../media/m365-cc-sc-search-icon.png)。 以查找并选择用户。
 
      选中要添加的用户后，单击 **"添加"**。
 
-   - 单击 **“移除”**。 选择一个或多个现有成员。 或者，可以单击 **搜索** ![搜索图标](../../media/m365-cc-sc-search-icon.png) 查找和选择用户。
+   - 单击 **“移除”**。 选择一个或多个现有成员。 或者，可以单击“**搜索**”![搜索图标](../../media/m365-cc-sc-search-icon.png)。 以查找并选择成员。
 
      选中要删除的用户后，单击 **"删除"**。
 

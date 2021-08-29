@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: 288eb91c383e1ecd8e6e332438004b3ed8c4a2729829286ab4be8a2803657ec1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa9b936f7c40227245d0ffd9fbbc951e51c49321
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892097"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567744"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 策略中使用敏感度标签作为条件
 
@@ -39,7 +39,7 @@ ms.locfileid: "53892097"
 敏感度标签作为一个选项出现在 **内容包含** 列表中。
 
 > [!div class="mx-imgBorder"]
-> ![使用敏感度标签作为条件](../media/dlp-sensitivity-label-as-a-condition.png)
+> ![使用敏感度标签作为条件。](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
 > 如果选择 **Teams 聊天和频道消息** 作为应用 DLP 策略的位置，则作为条件的 **灵敏度标签** 将不可用。

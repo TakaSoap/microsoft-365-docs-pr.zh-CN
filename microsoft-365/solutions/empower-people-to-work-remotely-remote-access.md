@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: 2097507c79d9c2f1738e0fee45464e90e7887551836fd8895c99cfb22de1d094
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52711e0c43f4121728968a0d2ddcc0e0c9b25e3d
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816738"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566486"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2：提供对本地应用和服务的远程访问权限
 
@@ -39,7 +39,7 @@ ms.locfileid: "53816738"
 
 请参阅此流程图，了解本文中讨论的远程访问配置选项。
 
-![远程访问配置流程图](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
+![远程访问配置流程图。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 借助远程访问连接，还可以使用[远程桌面](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop)将用户连接到本地电脑。 例如，远程工作者可使用远程桌面从其 Windows、iOS 或 Android 设备连接到其办公室的电脑。 远程连接后，他们可以像坐在电脑前一样使用它。
 
@@ -49,7 +49,7 @@ ms.locfileid: "53816738"
 
 如果没有拆分隧道，所有远程工作通信都将通过 VPN 连接发送。在这种情况下，必须将其转发到组织的边缘设备、进行处理，然后在 Internet 上发送。
 
-![来自无隧道的 VPN 客户端的网络流量](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![来自无隧道的 VPN 客户端的网络流量。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 Microsoft 365 通信必须通过你的组织获取间接路由，该路由可以转发到远离 VPN 客户端物理位置的 Microsoft 网络入口点。此间接路径会增加网络流量的延迟，并降低整体性能。
 
@@ -59,7 +59,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，该路由可以
 
 下面是生成的流量流，其中流入 Microsoft 365 云应用的大多数流量都绕过 VPN 连接。
 
-![来自有隧道的 VPN 客户端的网络流量](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![来自有隧道的 VPN 客户端的网络流量。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 这允许 VPN 客户端直接通过 Internet 发送和接收重要的 Microsoft 365 云服务流量并发送到 Microsoft 网络最近的入口点。
 
@@ -71,7 +71,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，该路由可以
 
 下面是 Azure AD 应用程序代理的组件。
 
-![Azure AD 应用程序代理的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
+![Azure AD 应用程序代理的组件。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
 有关详细信息，请参阅此 [Azure AD 应用程序代理概述](/azure/active-directory/manage-apps/application-proxy)。
 
@@ -84,7 +84,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，该路由可以
 
 P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组织网络的安全连接。
 
-![Azure P2S VPN 的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
+![Azure P2S VPN 的组件。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 有关详细信息，请参阅此 [P2S VPN 概述](/azure/vpn-gateway/point-to-site-about)。
 
@@ -95,7 +95,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 中的 Windows 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。虚拟电脑可以像连接到组织网络的电脑一样操作。
 
-![Azure Windows 虚拟桌面的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Azure Windows 虚拟桌面的组件。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
 有关详细信息，请参阅此 [Windows 虚拟桌面概述](/azure/virtual-desktop/overview)。
 
@@ -106,7 +106,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 如果使用远程桌面服务 (RDS) 来允许员工连接到本地网络上基于 Windows 的计算机，则应在边缘网络中使用 Microsoft 远程桌面服务网关。 网关使用传输层安全性 （TLS） 加密通信流，并阻止托管 RDS 本地计算机直接向 Internet 公开。
 
-![带远程桌面服务网关的远程桌面服务连接](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+![带远程桌面服务网关的远程桌面服务连接。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
 请参阅[这篇文章](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/)，了解详细信息。
 
@@ -130,6 +130,6 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 3：部署 Microsoft 365 安全和合规性服务](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+[![步骤 3：部署 Microsoft 365 安全和合规性服务。](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 继续[步骤 3](empower-people-to-work-remotely-security-compliance.md)，部署 Microsoft 365 安全和合规性服务，以保护你的应用、数据和设备。

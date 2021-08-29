@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: 0d2614709c22347c3a2a9f2bedf952cd5d70508f54fd8e6edcdae0dec3e7791b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 53db42de769600de3a6190ee4b7f0de2d9e5505e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842361"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574239"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
@@ -59,7 +59,7 @@ ms.locfileid: "53842361"
 
 例如：
 
-![配置保留标签，将内容标记为记录或合规性](../media/recordversioning6.png)
+![配置保留标签，将内容标记为记录或合规性。](../media/recordversioning6.png)
 
 根据需要，将保留标签应用于 SharePoint 或 OneDrive 文档和 Exchange 电子邮件。
 
@@ -79,7 +79,7 @@ ms.locfileid: "53842361"
 
 使用保留标签标记为记录的文档示例：
 
-![标记为记录的文档的详细信息窗格](../media/recordversioning7.png)
+![标记为记录的文档的详细信息窗格。](../media/recordversioning7.png)
 
 ## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>搜索审核日志以查找已声明记录的标签项
 

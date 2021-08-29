@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供了有关安全优化 Microsoft 365 网络连接的最新指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba808cb8bb4f71c22638950d22af6ede8170275ffaa8d84c00d8d2c54f383d43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7aebf4e210c3e4feb94ec3c6deb6523e5742152c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864402"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568356"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 网络连接原则
 
@@ -63,7 +63,7 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
 <a name="BKMK_P1"> </a>
 ### <a name="identify-and-differentiate-microsoft-365-traffic"></a>识别并区分 Microsoft 365 流量
 
-![识别 Microsoft 365 流量](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
+![识别 Microsoft 365 流量。](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
 若要从普通的 Internet 绑定网络流量中区分 Microsoft 365 网络流量，第一步需要先识别。 可通过采用网络路由优化、防火墙规则、浏览器代理设置，以及免验证特定终结点的网络检测设备，来优化 Microsoft 365 连接。
   
@@ -76,7 +76,7 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
 <a name="BKMK_P2"> </a>
 ### <a name="egress-network-connections-locally"></a>实现本地连接出口
 
-![实现本地连接出口](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![实现本地连接出口。](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 本地 DNS 和 Internet 出口对于降低连接延迟和确保将用户连接到 Microsoft 365 服务的最接近进入点至关重要。 在复杂的网络拓扑中，请务必同时实现本地 DNS 和本地 Internet 出口。 有关 Microsoft 365 如何将客户端连接路由到最近的入口点的详细信息，请参阅文章[客户端连接](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)。
   
@@ -86,11 +86,11 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
   
 企业广域网通常设计为将网络流量回程到企业总部（通常通过一个或多个代理服务器），以便在流出到 Internet前进行检查。下图描绘了这样的网络拓扑图。
   
-![传统的企业网络模型](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
+![传统的企业网络模型。](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
   
 由于 Microsoft 全球网络（包括世界各地的前端服务器）均在 Microsoft 365 上运行，因此通常会有靠近用户位置的前端服务器。 通过提供本地 Internet 出口，以及通过配置内部 DNS 服务器为 Microsoft 365 终结点提供本地名称解析，发往 Microsoft 365 的网络流量可连接到与用户尽可能近的 Microsoft 365 前端服务器。 下图显示了一个网络拓扑示例。该示例中，用户可以从主办公室、分支机构和远程位置，以最短路径连接到最近的 Microsoft 365 入口点。
   
-![带有区域出口点的广域网网络模型](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
+![带有区域出口点的广域网网络模型。](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
 通过这种方式缩短 Microsoft 365 入口点的网络路径，可提高连接性能和 Microsoft 365 的最终用户体验，还能帮助减少未来对网络体系结构的更改对 Microsoft 365 性能和可靠性的影响。
   
@@ -98,7 +98,7 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
   
 虽然区域出口可供 Microsoft 365 正常工作，但最佳连接模型始终是提供用户所在位置的网络出口，无论这是在公司网络上还是在家、旅馆、咖啡店和机场等远程位置。下图所示为所述的本地直接出口模型。
   
-![本地出口网络体系结构](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![本地出口网络体系结构。](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
 已采用 Microsoft 365 的企业可通过确保用户连接到 Microsoft 365 采用尽可能最短的路线，连接到最近的 Microsoft 全球网络入口点，从而充分利用 Microsoft 全球网络分布式服务前门体系结构的优势。 本地出口网络体系结构实现此效果的方式为：无论用户在什么位置，都允许通过最近的出口来路由 Microsoft 365 流量。
   
@@ -111,9 +111,9 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
 <a name="BKMK_P3"> </a>
 ### <a name="avoid-network-hairpins"></a>避免网络回流
 
-![避免回流](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
+![避免回流。](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-一般来说，用户与最近的 Microsoft 365 终点之间的最短和最佳线路可提供最佳性能。 当绑定到特定目标的广域网或 VPN 通信首次定向到另一个中间位置（例如，基于云的 web 网关的安全堆栈、云访问代理）时，会出现网络回流，导致延迟以及潜在重定向到地理位置较远的终结点。 路由/对等互连效率低下或次优的（远程）DNS 查找也会导致网络回流。
+一般来说，用户与最近的 Microsoft 365 终点之间的最短和最佳线路可提供最佳性能。 当绑定到特定目标的广域网或 VPN 通信首次定向到另一个中间位置（例如，安全堆栈、云访问代理、基于云的 web 网关的）时，会出现网络回流，导致延迟以及潜在重定向到地理位置较远的终结点。 路由/对等互连效率低下或次优的（远程）DNS 查找也会导致网络回流。
   
 要确保 Microsoft 365 连接不受网络回流的影响（即使是本地出口情况下），请检查用于为用户提供 Internet 出口的 ISP 是否与靠近该位置的 Microsoft 全球网络具有直接对等连接关系。 你还可能想要配置出口路由以直接发送受信任的 Microsoft 365 流量，而不是通过处理 Internet 绑定流量的第三方云或基于云的网络安全供应商进行代理或隧道传输。 Microsoft 365 终结点的本地 DNS 名称解析有助于确保除直接路由外，最近的 Microsoft 365 入口点用于用户连接。
   
@@ -124,7 +124,7 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
 <a name="BKMK_P4"> </a>
 ### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>评估跳过代理、流量检查设备以及重复安全技术
 
-![跳过代理、流量检查设备以及重复安全技术](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![跳过代理、流量检查设备以及重复安全技术。](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
 企业客户应查看其网络安全性和风险降低方法，尤其是针对 Microsoft 365 绑定流量，并使用 Microsoft 365 安全功能来降低对 Microsoft 365 网络流量的侵入性、性能影响和昂贵网络安全技术的依赖性。
   

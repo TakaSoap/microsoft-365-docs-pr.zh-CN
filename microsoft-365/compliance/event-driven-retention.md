@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: 9f5ca3c0941d2f7c72d72da34d1a840ecf42c68e
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: e5be01ed75468d97c0cadf229512bce2f90efea5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531523"
+ms.locfileid: "58567044"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -56,9 +56,9 @@ ms.locfileid: "58531523"
 
 为了成功使用基于事件的保留，请务必了解事件类型、保留标签、事件和资产 ID 之间的关系，如下图以及随后的说明所示： 
   
-![图 1 （共 2 张图）：事件类型、标签、事件和资产 ID 的关系图](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![图 1（共 2 张图）：事件类型、标签、事件和资产 ID 的关系图。](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![图 2 （共 2 张图）：事件类型、标签、事件和资产 ID 的关系图](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![图 2（共 2 张图）：事件类型、标签、事件和资产 ID 的关系图。](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. 为不同类型的内容创建保留标签，然后将它们与事件类型相关联。例如，不同类型的产品文件和记录的保留标签与名为“产品生命周期”的事件类型相关联，因为必须将这些记录自产品生命周期结束起保留 10 年。
     
@@ -82,7 +82,7 @@ ms.locfileid: "58531523"
 
 事件驱动保留的工作流概览：
   
-![事件驱动保留的设置工作流的关系图](../media/event-based-retention-process.png)
+![事件驱动保留的设置工作流的关系图。](../media/event-based-retention-process.png)
   
 > [!TIP]
 > 有关使用 SharePont 中的托管属性来自动应用保留标签并实现事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)。
@@ -91,7 +91,7 @@ ms.locfileid: "58531523"
 
 若要创建和配置保留标签，请参阅 [创建保留标签](./create-apply-retention-labels.md#step-1-create-retention-labels) 的说明。 但是特定于基于事件的保留，在“创建保留标签向导”的“**定义保留设置**”页面上，在“**启动保留期，基于：**”后，从下拉列表中选择一个默认事件类型，或选择“**创建新事件类型**”来自行创建：
 
-![为保留标签创建新事件类型](../media/SPRetention6.png)
+![为保留标签创建新事件类型。](../media/SPRetention6.png)
 
 事件类型就是对要将标签与之相关联的事件的一般说明。
 
@@ -135,13 +135,13 @@ ms.locfileid: "58531523"
     
 资产 ID 只是 SharePoint 和 OneDrive 中提供的另一种文档属性。 你的组织可能已经使用其他文档属性和 ID 来分类内容。 如果是这样，还可以在创建事件时使用这些属性和值（请参见后面的第 6 步）。 请务必注意，必须在文档属性中使用某种 *属性:值* 组合，将相应项与事件类型相关联。
   
-![用于输入资产 ID 的文本框](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![用于输入资产 ID 的文本框。](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>第 5 步：创建事件
 
 当相应事件类型的特定实例（例如，产品的生存期结束）发生时，请转到 Microsoft 365 合规中心内的“**记录管理**” > “**事件**”页，并选择 “**+ 创建**”来创建事件。 可通过创建事件来手动触发事件，就在这里。
 
-![创建事件以便为基于事件的保留标签启动保留](../media/create-event-records-management.png)
+![创建事件以便为基于事件的保留标签启动保留。](../media/create-event-records-management.png)
 
 每个租户支持多达一百万个事件。
 
@@ -149,7 +149,7 @@ ms.locfileid: "58531523"
 
 创建事件时，请选择第 2 步中的保留标签设置所指定的相同事件类型。 例如，如果你选择了“**产品生命周期**”作为标签设置的事件类型，请在创建事件时选择“**产品生命周期**”。 只有具有相应事件类型的保留标签的内容，才会触发保留期。
 
-![“事件设置”中用于选择事件类型的选项](../media/choose-event-type-records-management.png)
+![“事件设置”中用于选择事件类型的选项。](../media/choose-event-type-records-management.png)
 
 或者，如果需要为具有不同事件类型的多个保留标签创建事件，请选择“**选择现有标签**”选项。 然后，选择想要与此事件相关联的事件类型所配置的标签。
 
@@ -167,7 +167,7 @@ ms.locfileid: "58531523"
 
 最后，选择事件发生的日期；此日期用作保留期的开始日期。创建事件后，该事件日期将同步到具有该事件类型、资产 ID 和关键字或查询的保留标签的所有内容。与任何保留标签一样，此同步可能需要长达七天的时间。
   
-![“事件设置”页](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![“事件设置”页。](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
 创建事件后，保留设置将对已标记和索引的内容生效。 如果创建事件后将保留标签添加到新内容，则必须创建具有相同详细信息的新事件。
 
@@ -226,9 +226,9 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 使用 Microsoft 365 REST API 创建用于创建事件的流：
 
-![使用Power Automate创建事件](../media/automate-event-driven-retention-flow-1.png)
+![使用流创建事件。](../media/automate-event-driven-retention-flow-1.png)
 
-![使用Power Automate调用REST API](../media/automate-event-driven-retention-flow-2.png)
+![使用流调用 REST API。](../media/automate-event-driven-retention-flow-2.png)
 
 #### <a name="create-an-event"></a>创建事件
 

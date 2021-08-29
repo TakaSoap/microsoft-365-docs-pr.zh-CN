@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 88eee1b57e7203a0407238c55e9b0c5307bf0bcb20ace02f00429b77d2402639
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7f53adddf19b3b09794c65d5157aeb1f8338008e
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895365"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566864"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -46,7 +46,7 @@ ms.locfileid: "53895365"
 
 部署和应用敏感度标签的基本流程如下：
 
-![敏感度标签工作流关系图](../media/Sensitivity-label-flow.png)
+![敏感度标签工作流关系图。](../media/Sensitivity-label-flow.png)
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>灵敏度标签的订阅和许可要求
 
@@ -71,7 +71,7 @@ ms.locfileid: "53895365"
 
 建议使用下一节中的表，确定映射到最有影响的业务需求的前一两个场景。 部署这些场景后，返回到列表，确定下一个或两个部署的优先级。
 
-可以在可下载的数据丢失保护和 Microsoft 信息保护部署加速指南中找到其他常规部署指南。 有关详细信息，请参阅博客文章，[Microsoft 365 信息保护与合规性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404)。
+你将在 [Microsoft 信息保护和数据丢失防护的部署加速指南](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/)中找到有关其他常规部署的指南，这是来自[客户加速团队 (CAT)](https://microsoft.github.io/ComplianceCxE/) 站点的资源之一。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度标签的常见场景
 

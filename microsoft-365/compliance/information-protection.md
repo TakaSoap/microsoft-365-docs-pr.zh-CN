@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: 76e2da01dd9fbcbb7d053b61b515aeb998d86c5147893a822dfa2695e43f58a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8b576ca7f6fd3914d160592c0d1e34d20c3bdcc1
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567432"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -33,7 +33,7 @@ ms.locfileid: "53860773"
 
 MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-your-data)、[保护数据](#protect-your-data)和[防止数据丢失](#prevent-data-loss)的工具。
 
-![有关 MIP 如何帮助你发现、分类和保护敏感数据的图像](../media/powered-by-intelligent-platform.png)
+![有关 MIP 如何帮助你发现、分类和保护敏感数据的图像。](../media/powered-by-intelligent-platform.png)
 
 有关管理数据的信息，请参阅 [Microsoft 365 中的 Microsoft 信息管理](manage-Information-governance.md)。
 

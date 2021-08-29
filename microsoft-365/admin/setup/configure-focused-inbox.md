@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 如果你负责配置为企业中的每个人配置电子邮件设置，本文介绍了如何为用户配置重点收件箱。
-ms.openlocfilehash: 3e296bbfd45955cf7ba97a90e565be3ec6d4412f
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 6bc33211af5ee0cd064b63f95e720f19cee196e5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394536"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567804"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 
@@ -122,13 +122,13 @@ ms.locfileid: "58394536"
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 
-2. 导航到 **邮件流** \> **规则**。 选择“![EAC 添加图标](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)”，然后选择“**新建规则...**”。 
+2. 导航到 **邮件流** \> **规则**。 选择 ![EAC 添加图标。](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) 然后选择“**创建新规则...**”。 
 
 3. 创建新规则完成后，选择 **“保存”** 启动该规则。
 
     下图介绍了一个示例，其中来自"工资单管理部门"的所有邮件均被定向到了重点收件箱。
 
-    ![Focusedinbox 工资单](../../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox 工资单。](../../media/focusedinbox-transport-rule.PNG)
 
     > [!NOTE]
     > 此示例中的邮件头值文本为 **X-MS-Exchange-Organization-BypassFocusedInbox**。

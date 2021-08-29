@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用流程图确定项具有多个保留策略或保留标签和保留策略时的结果
-ms.openlocfilehash: d41f213c003da1b6a1fdacd464d052446e63845e
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.openlocfilehash: 45d67b3df71dc3be17bd545be77ce99afdff56b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372660"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567648"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>用于确定何时保留或永久删除项的流程图
 
@@ -40,7 +40,7 @@ ms.locfileid: "58372660"
 如果不熟悉此流程图中使用的任何术语，请参阅 [了解保留策略和保留标签](retention.md)。
 
 
-   ![用于确定何时保留或永久删除项的流程图](../media/retention-flowchart.svg)
+   ![用于确定何时保留或永久删除项的流程图。](../media/retention-flowchart.svg)
 
 > [!NOTE]
 > 请务必区分项的最长保留期与保留策略或标签中指定的最长指定期。 同样，务必区分项的最短过期日期与保留策略中的最短指定期。

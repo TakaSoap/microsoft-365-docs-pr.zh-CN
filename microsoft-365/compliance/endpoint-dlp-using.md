@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: c33677d483eadca4526d2c7f977ad91de6c7340c
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450124"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58556296"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -41,7 +41,7 @@ ms.locfileid: "58450124"
 - 如果要从监视中排除杂乱的文件路径
 
   > [!div class="mx-imgBorder"]
-  > ![DLP 设置](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > ![DLP 设置。](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>文件路径排除
 
@@ -191,7 +191,7 @@ ms.locfileid: "58450124"
 5. 向下滚动到“**事件报告**”部分，然后将“**在规则匹配出现时向管理员发送警报**”设置为“**开**”。 系统会将电子邮件警报自动发送给管理员，以及你添加到收件人列表的任何其他人员。 
 
    > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   > ![turn-on-incident-reports。](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. 出于本方案的目的，请选择“**每次活动与规则匹配时选择发送警报**”。
 
@@ -216,7 +216,7 @@ ms.locfileid: "58450124"
 5. 向下滚动到“**审核或限制 Windows 设备上的活动**”部分，并对每个活动将相应的操作设置为“**阻止但允许覆盖**”。
 
    > [!div class="mx-imgBorder"]
-   > ![设置阻止但允许覆盖操作](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   > ![设置阻止但允许覆盖操作。](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. 选择“**保存**”。
 
@@ -229,7 +229,7 @@ ms.locfileid: "58450124"
    客户端设备上将显示如下所示的弹出窗口：
 
    > [!div class="mx-imgBorder"]
-   > ![终结点 DLP 客户端阻止覆盖通知](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > ![终结点 DLP 客户端阻止覆盖通知。](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. 检查活动资源管理器中的事件。
 
@@ -263,7 +263,7 @@ ms.locfileid: "58450124"
 
 6. 为不允许的应用启用 **自动隔离**。
 
-7. 输入要将原始敏感文件移动到本地计算机上文件夹的路径。 例如:
+7. 输入要将原始敏感文件移动到本地计算机上文件夹的路径。例如：
    
 **用户名的"%homedrive%%%homepath%\Microsoft DLP\Quarantine"***Isaiah langer* 会将移动的项目放在 
 
@@ -318,7 +318,7 @@ ms.locfileid: "58450124"
 
 1. 使用你在[中指定的用户帐户登录到Windows 10 计算机。配置策略以阻止使用敏感度标签"高度机密"文件的 OneDrive 同步](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential)步骤 5。
 
-2. 创建内容不会同步到 OneDrive 的文件夹。 例如:
+2. 创建内容不会同步到 OneDrive 的文件夹。例如：
 
     *C：\auto-quarantine 源文件夹*
 
@@ -326,7 +326,7 @@ ms.locfileid: "58450124"
 
 4. 将刚创建的文件复制到 OneDrive 同步文件夹。 应显示用户通知词，告知你不允许执行该操作，并且该文件将被隔离。 例如，对于用户名 *Isaiah Langer*，以及标题为 *自动隔离文档 1.docx*，你将看到以下消息：
 
-![数据丢失防护用户通知弹出窗口，指出指定文件不允许 OneDrive 同步操作，并且文件将被隔离](../media/auto-quarantine-user-notification-toast.png)
+![数据丢失防护用户通知弹出窗口，指出指定文件不允许 OneDrive 同步操作，并且文件将被隔离。](../media/auto-quarantine-user-notification-toast.png)
 
 消息将读取：
 

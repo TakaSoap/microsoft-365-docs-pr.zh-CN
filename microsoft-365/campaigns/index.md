@@ -25,19 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 适用于小型企业（包括小型公司、惯例和政治活动）的 Microsoft 365 商业高级版安全和协作建议。
-ms.openlocfilehash: bf795b0e5a89532a0b0d30f1c9436eb73739b7cc0d28dbe227dcc52ef5c76c06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e1da206a23a58d568d6e0e4a9efe04cef510a85
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861508"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58573783"
 ---
 # <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>面向小型企业和活动的Microsoft 365
 
 如有 Microsoft 365 商业高级版，则此库中的指南是设置安全并开始安全协作的最快方法。 在当今世界，保持数据和通信安全是优先事项，特别是对于医疗和法律实践、政治活动和许多其他小型企业。 该解决方案提供了一系列建议，旨在帮助保护你和你的数据。 无论何种企业类型，此库包括有关设置和使用此推荐环境的帮助。
 
 
-![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识。](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 此配置包括以下用于保护业务生产力、协作、文件存储、电子邮件、设备和身份的指南：
 
@@ -83,15 +83,15 @@ ms.locfileid: "53861508"
 
 | 创建协作团队 | 设置联机会议 |
 | ------------- | ------------- |
-| ![SharePoint 通信网站](../media/sm-m365-democracy-teams-collab.png) | ![联机会议](../media/m365-democracy-teams-meetings.png) |
+| ![SharePoint 通信网站。](../media/sm-m365-democracy-teams-collab.png) | ![联机会议](../media/m365-democracy-teams-meetings.png) |
 | 使用 Teams 与关键员工、所有员工和合作伙伴或供应商进行协作。<br>[创建团队](create-teams-for-collaboration.md) | 使用 Microsoft Teams 安排会议（包括音频、视频和共享）。<br>[设置会议](set-up-meetings.md) |
 
 | 加密或标记敏感电子邮件 | 创建通信网站 |
 | ------------- | ------------- |
-| ![已加密和标记的电子邮件](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint 通信网站](../media/sm-m365-democracy-comms-site.png) |
+| ![已加密和标记的电子邮件。](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint 通信网站](../media/sm-m365-democracy-comms-site.png) |
 | 使用加密和敏感度标签来保护包含机密或敏感信息的电子邮件。<br>[发送加密电子邮件](send-encrypted-email.md) | 在使用 SharePoint 创建的内部通信网站中与你的团队共享事件、邮件、图像等内容。<br>[创建网站](create-communications-site.md) |
 
 | 共享文件和视频 |
 | ------------- |
-| ![在 Microsoft Teams 中共享文件](../media/m365-democracy-teams-sharefiles.png) |
+| ![在 Microsoft Teams 中共享文件。](../media/m365-democracy-teams-sharefiles.png) |
 | 将文件和视频保存到云端，以便于使用 <br>给所有合适的人。<br>[开始共享](share-files-and-videos.md) |

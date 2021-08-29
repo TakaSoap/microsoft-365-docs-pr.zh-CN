@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 88aa46e08a450953e940d625e7f35cf9732d668d
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400267"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567996"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -53,7 +53,7 @@ ms.locfileid: "58400267"
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>英语：[以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> 2020 年 11 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
+|[![模型海报：Microsoft 365 信息保护和合规性功能。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>英语：[以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> 2020 年 11 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
 
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>使用 Microsoft 365 和 Teams 来提高组织和员工的工作效率
@@ -75,7 +75,7 @@ Teams 可提供一个协作空间来安全地存储敏感的客户端数据，�
 
 另一种常见的方案是将 Teams 用作“虚拟数据室”来安全地协作，包括存储和管理文档。 投资银行、资产管理或私募股权公司内的团队成员和财团可安全地进行交易或投资协作。 跨职能团队通常会参与规划和完成此类交易，并且能够安全地共享数据和执行对话是一项核心要求。 与外部投资者安全共享相关文档也是关键要求。 Teams 提供安全且完全可审核的位置，可从中集中存储、保护和共享投资数据。
 
-![一群办公室职员在会议上讨论大屏幕上的图像](../media/m365cO19-ent-dell-latitude13-5951.jpg)
+![一群办公室职员在会议上讨论大屏幕上的图像。](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams：改进协作并降低合规性风险
 
@@ -165,7 +165,7 @@ Identity Protection 工具使组织可以完成以下三项关键任务：
 
 Identity Protection 通过利用 Microsoft 生态系统中基于启发、用户和实体行为分析 (UEBA) 以及机器学习 (ML) 的高级检测支持的云智能，帮助组织自动防止标识泄露。
 
-![五名信息工作者观看另一名工作者做演示](../media/win17-15021-00-n9.jpg)
+![一位信息工作者做演示时，会有另外五位工作者观看。](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>识别敏感数据并防止数据丢失
 Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的敏感数据，包括：
@@ -187,7 +187,7 @@ Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的
 
 Identity Protection 通过利用 Microsoft 生态系统中基于启发、用户和实体行为分析以及机器学习的高级检测支持的云智能，帮助组织自动防止标识泄露。
 
-![一名信息工作者在一大排显示屏前做演示](../media/clo1718-portrait-006.jpg)
+![信息工作者显示在大型监视器数组前面。](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>堡垒防守
 
@@ -328,7 +328,7 @@ Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视
 
 Microsoft 365 提供的租户[限制](/azure/active-directory/manage-apps/tenant-restrictions)可以解决此问题。 可通过配置租户限制来限制员工使用未经授权的身份（不属于公司目录的身份）访问外部 Office 365 企业租户。 目前，租户限制适用于租户，仅允许访问配置列表中出现的租户。 Microsoft 将继续开发此解决方案，以提高控制粒度并增强其提供的保护。
 
-![图形](../media/clo1717-corporate-office-001.jpg)
+![图形。](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>结束语
 

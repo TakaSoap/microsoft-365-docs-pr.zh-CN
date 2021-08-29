@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始了解应用策略。
-ms.openlocfilehash: fae9afa65c4bef1d7288493e92c8b78c6fb9d08fa4426c1087622856b4cec921
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2f22e56195b94f07a6b8499bd69c60d65f37cce8
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861300"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58572235"
 ---
 # <a name="get-started-with-app-policies"></a>开始使用应用策略
 
@@ -29,7 +29,7 @@ Microsoft 应用治理的应用策略是实施更主动或被动的条件，以�
 
 要查看当前应用策略的列表，请转到“**Microsoft 365 合规中心”>“应用治理”>“策略**”。
 
-![Microsoft 365 合规中心内的 MAPG 策略摘要页面](..\media\manage-app-protection-governance\mapg-cc-policies.png)
+![Microsoft 365 合规中心内的 MAPG 策略摘要页面。](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## <a name="whats-available-on-the-app-policies-dashboard"></a>应用策略仪表板上提供的内容
 

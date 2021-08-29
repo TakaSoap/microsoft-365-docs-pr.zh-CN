@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过使用 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 7a26d89e04d9739434208c4b3c4a536be5c5c5075a00dabdc06b8c4abd318838
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 034f0c3d4127ed75db8ba9a7cbe628a2502d192c
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53777749"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566474"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>步骤 5：部署混合工作者生产力应用和服务
 
@@ -36,7 +36,7 @@ ms.locfileid: "53777749"
 | 桌面和移动设备 Office 应用程序 | Microsoft 365 应用版 | 使用本地计算机上安装的 Word、PowerPoint、Excel 和 Outlook 版本创建新内容或协作处理现有内容，并接收持续的功能和安全更新。 |
 ||||
 
-![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 应用保持高效工作](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 应用版保持高效工作。](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>通过 Microsoft Teams 让人们保持联系
 
@@ -105,6 +105,6 @@ Microsoft 365 应用版是适用于企业的最高效、最安全的 Office 体�
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 6：培训用户并监督他们是否成功](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
+[![步骤 6：培训用户并监督他们是否成功。](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 继续执行[步骤 6](empower-people-to-work-remotely-train-monitor-usage.md) 以培训用户并监视用户是否成功。

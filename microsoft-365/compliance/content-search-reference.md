@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: e3c764dd1fb79906061b9b9b4c1408d83c8dbe0c
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: f6c720973f91ae9a202b232d821c33c7f487b76a
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502071"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58574444"
 ---
 # <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
 
@@ -45,21 +45,21 @@ ms.locfileid: "58502071"
 
     **错误**
 
-    ![设置关键字列表格式的不正确方式（通过将列表粘贴至关键字框）](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![设置关键字列表格式的不正确方式（通过将列表粘贴至关键字框）。](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
 
     **正确**
 
-    ![设置关键字列表格式的正确方式（在选中复选框后粘贴列表）](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![设置关键字列表格式的正确方式（在选中复选框后粘贴列表）。](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
 
 - 还可以在 Excel 文件或纯文本文件中准备关键字或关键字短语列表，然后将你的列表复制粘贴至关键字列表。 若要执行此操作，你必须选中“**显示关键字列表**”复选框。 然后，单击关键字列表中的第一行并粘贴你的列表。 Excel 或文本文件中的每一行均会粘贴至关键字列表中的单独行中。
 
 - 使用关键字列表创建查询后，最好验证搜索查询语法，确保搜索查询适合你的需求。 在详细信息窗格的“**查询**”下显示的搜索查询中，关键字将以文本 **(c:s)** 分隔。 这表示关键字由功能类似于 **OR** 运算符的逻辑运算符连接。 同样，如果搜索查询中包含条件，则关键字和条件将以 **(c:c)** 分隔。 这表示关键字由功能类似于 **AND** 运算符的逻辑运算符连接到条件。 以下是使用关键字列表和条件时创建的搜索查询（显示在详细信息窗格中）示例。
 
-    ![使用关键字列表和条件时创建的查询示例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![使用关键字列表和条件时创建的查询示例。](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
 
 - 运行内容搜索时，Microsoft 365 将会自动检查搜索查询中是否存在不受支持的字符以及未大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
 
-- 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。
+- 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“来 ![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)。 并为搜索选择语言国家/地区区域性代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。
 
 ## <a name="partially-indexed-items"></a>部分索引项
 
@@ -133,7 +133,7 @@ ms.locfileid: "58502071"
 
   在搜索结果中，会议摘要在“**类型字段**”将标识为“**会议**”，呼叫摘要将标识为“**呼叫**”。 此外，属于 Teams 渠道和 1xN 聊天的对话在“**类型**”字段将标识为 **IM**。
 
-  ![Teams 会议、呼叫和 1xN 聊天将在“类型”字段中标识](../media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams 会议、呼叫和 1xN 聊天将在类型字段中标识。](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    有关详细信息，请参阅 [Microsoft Teams 针对通话和会议推出电子数据展示](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947)。
 
@@ -147,11 +147,11 @@ ms.locfileid: "58502071"
 
   **Teams 中的卡片内容**
 
-  ![Teams 频道消息中的卡片内容](../media/CardContentTeams.png)
+  ![Teams 频道消息中的卡片内容。](../media/CardContentTeams.png)
 
   **搜索结果中的卡片内容**
 
-  ![内容搜索结果中相同的卡片内容](../media/CardContentEdiscoverySearchResults.png)
+  ![内容搜索结果中相同的卡片内容。](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
   > 若要显示此时搜索结果中卡片内容的图像（如上一个屏幕截图中的复选标记），必须登录 Teams（在用于查看搜索结果的同一浏览器会话中另一选项卡的 https://teams.microsoft.com) 处。 否则，将显示图像占位符。
@@ -160,7 +160,7 @@ ms.locfileid: "58502071"
 
   - 若要将“**类型**”属性用作关键字搜索查询的一部分，请在搜索查询的“**关键字**”框中键入 `kind:microsoftteams`。
 
-    ![在“关键字”框中使用 kind:microsoftteams](../media/O365-ContentSearch-Teams-Keywords.png)
+    ![在“关键字”框中使用 kind:microsoftteams。](../media/O365-ContentSearch-Teams-Keywords.png)
 
   - 若要使用搜索条件，请添加“**邮件类型**”条件并使用值 `microsoftteams`。
 
@@ -181,15 +181,15 @@ ms.locfileid: "58502071"
 
     例如，可以使用下面的搜索查询来返回 Yammer 消息和 Yammer 表扬项：
 
-    ![使用 ItemClass 属性搜索 Yammer 项](../media/YammerContentSearch1.png)
+    ![使用 ItemClass 属性搜索 Yammer 项。](../media/YammerContentSearch1.png)
 
   - 也可以使用 **Type** 电子邮件条件，并选择“Yammer 消息”，以返回 Yammer 项。 例如，下面的搜索查询返回所有包含关键字“保密”的 Yammer 对话项。
 
-    ![使用 Type 条件卡搜索 Yammer 对话项](../media/YammerContentSearch2.png)
+    ![使用 Type 条件卡搜索 Yammer 对话项。](../media/YammerContentSearch2.png)
 
 ## <a name="searching-inactive-mailboxes"></a>搜索非活动邮箱
 
-可以在内容搜索中搜索非活动邮箱。 若要获取组织中的非活动邮箱列表，请在 Exchange Online PowerShell 中运行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，你可以转至 Microsoft 365 合规中心中的“**信息管理**”\>“**保留**”，然后单击“**更多**”![导航栏省略号](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>“**非活动邮箱**”。
+可以在内容搜索中搜索非活动邮箱。 若要获取组织中的非活动邮箱列表，请在 Exchange Online PowerShell 中运行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，你可以转至安全与合规中心中的“**信息管理**”\>“**保留**”，然后单击“**更多**”，即 ![导航栏省略号](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)。 \>**非活动邮箱**。
 
 以下是在搜索非活动邮箱时应记住的一些事项。
 

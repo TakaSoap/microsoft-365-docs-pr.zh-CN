@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: 0d99321c02c4604219e5c6fcb247666f88cf4a08
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502851"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58567492"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
@@ -60,7 +60,7 @@ ms.locfileid: "58502851"
 
 5. 在“**位置**”页面上，选择你希望搜索的内容位置。 可以搜索邮箱、站点和公用文件夹。
 
-    ![选择将其置于保留状态的内容位置](../media/ContentSearchLocations.png)
+    ![选择将其置于保留状态的内容位置。](../media/ContentSearchLocations.png)
   
    1. **Exchange 邮箱**：将切换设置为“**打开**”，然后单击“**选择用户、组或团队**”，以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（将组成员的邮箱置于保留状态）以置于保留状态。 可以搜索与 Microsoft Team（适用于频道消息）、Office 365 组和 Yammer 组关联的邮箱。 有关存储在邮箱中的应用程序数据的详细信息，请参阅 [存储在邮箱中的电子数据展示内容](what-is-stored-in-exo-mailbox.md)。
 
@@ -72,7 +72,7 @@ ms.locfileid: "58502851"
 
 6. 在“**定义搜索条件**”页面上，键入关键字查询，并在必要时将条件添加到搜索查询。
 
-   ![配置搜索查询](../media/ContentSearchQuery.png)
+   ![配置搜索查询。](../media/ContentSearchQuery.png)
 
    1. 指定关键字、邮件属性（例如发送和接收日期）或文档属性（例如文件名或上次更改文档的日期）。 可以使用采用布尔运算符的更复杂查询，例如 **AND**、**OR**、**NOT** 和 **NEAR**。 如果将关键字框留空，则指定内容位置中的所有内容都将包括在搜索结果中。 有关详细信息，请参阅[适用于电子数据展示的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
 

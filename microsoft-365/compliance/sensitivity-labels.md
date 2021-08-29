@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5604a6021150a7de4b287d91064c60f55be92500
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.openlocfilehash: ff26c2f6f219db066b4be00e6d97e8d4e4e4babc
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360091"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58568981"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -44,7 +44,7 @@ ms.locfileid: "58360091"
 
 示例显示了 Excel 中功能区 **Home** 选项卡上可用的灵敏度标签。 在此示例中，状态栏上将显示已应用的标签：
 
-![Excel 功能区和状态栏上的敏感度标签](../media/Sensitivity-label-in-Excel.png)
+![Excel 功能区和状态栏上的敏感度标签。](../media/Sensitivity-label-in-Excel.png)
 
 若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
 
@@ -90,7 +90,7 @@ ms.locfileid: "58360091"
 支持敏感度标签的每个项目都可以应用单一敏感度标签。 文档和电子邮件可同时具有敏感度标签和[保留标签](retention.md#retention-labels)应用。
 
 > [!div class="mx-imgBorder"]
-> ![应用于电子邮件的敏感度标签](../media/Sensitivity-label-on-email.png)
+> ![应用于电子邮件的敏感度标签。](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>敏感度标签有何用途
 
@@ -102,7 +102,7 @@ ms.locfileid: "58360091"
 
 - 使用 Office 应用时 **对内容进行标记**：方法是向已应用标签的电子邮件或文档添加水印、页眉或页脚。 水印可应用于文档，但不能用于电子邮件。 页眉和水印示例：
     
-    ![应用于文档的水印和页眉](../media/Sensitivity-label-watermark-header.png)
+    ![应用于文档的水印和页眉。](../media/Sensitivity-label-watermark-header.png)
     
     需要检查何时应用内容标记？ 请参阅 [Office 应用何时应用内容标记和加密](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)。
     
@@ -116,7 +116,7 @@ ms.locfileid: "58360091"
 
 - **在文件和电子邮件中自动应用标签，或推荐标签。** 选择如何识别要标记的敏感信息，系统可以自动应用标签，或者你可以提示用户应用你推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
-    ![提示分配所需的标签](../media/Sensitivity-label-Prompt-for-required-label.png)
+    ![提示分配所需的标签。](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     有关创建或编辑敏感度标签时的“**文件和电子邮件的自动标记**”设置的详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（对于 Office 应用）和 [在 Azure Purview 中自动标记数据](/azure/purview/create-sensitivity-label)。
 
@@ -128,7 +128,7 @@ ms.locfileid: "58360091"
 
 此范围配置使你可以拥有仅适用于文档和电子邮件但不能选择用于容器的敏感度标签。 同样地，仅适用于容器的敏感度标签则不能选择用于文件和电子邮件。 新的和当前处于预览版中，您还可以选择 Azure 权限资产的范围：
 
-![敏感度标签的范围选项](../media/sensitivity-labels-scopes.png)
+![敏感度标签的范围选项。](../media/sensitivity-labels-scopes.png)
 
 默认情况下，始终选择 **"文件和电子邮件"** 范围。 默认情况下，当为租户启用功能时，会选择其他作用域：
 
@@ -138,7 +138,7 @@ ms.locfileid: "58360091"
 
 如果更改默认值，以便未选择所有作用域，则会看到尚未选择的范围的配置设置的第一页，但无法配置这些设置。 例如，如果未选中“文件和电子邮件”的范围，则不能选择下一页上的选项：
 
-![敏感度标签的不可用选项](../media/sensitivity-labels-unavailable-settings.png)
+![敏感度标签的不可用选项。](../media/sensitivity-labels-unavailable-settings.png)
 
 对于具有不可用选项的这些页面，选择 **“下一步”** 继续。 或者，选择 **“返回”** 更改标签的范围。
 
@@ -150,7 +150,7 @@ ms.locfileid: "58360091"
 
 子标签的排序与[自动标签](apply-sensitivity-label-automatically.md)结合使用。 将标签配置为自动应用或推荐时，多个匹配项可能会导致出现多个标签。 要确定要应用或推荐的标签，请使用标签排序：选择最不敏感的标签，如果适用，选择最后一个子标签。
 
-![子标签创建选项](../media/Sensitivity-label-sublabel-options.png)
+![用于创建子标签的选项。](../media/Sensitivity-label-sublabel-options.png)
 
 ### <a name="sublabels-grouping-labels"></a>子标签（对标签进行分组）
 
@@ -162,7 +162,7 @@ ms.locfileid: "58360091"
 
 子标签如何向用户显示的示例：
 
-![功能区上的已分组子标签](../media/Sensitivity-label-grouped-labels2.png)
+![功能区上的已分组子标签。](../media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>编辑或删除敏感度标签
 
@@ -189,13 +189,13 @@ ms.locfileid: "58360091"
 
 - **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 对于 Office 应用，当使用内置标签时，每个应用会话都会触发该理由提示，而当使用 Azure 信息保护的统一标签客户端时，每个文件则都会触发。 管理员可以阅读活动资源管理器或网站中的 [更改](data-classification-activity-explorer.md)。
 
-    ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
+    ![提示用户输入理由的位置。](../media/Sensitivity-label-justification-required.png)
 
 - **要求用户将标签应用** 于文档和电子邮件、仅文档、容器及 Power BI 内容。 也称为强制标记，这些选项确保在用户保存文档、发送电子邮件、创建新的组或网站之前，以及当他们为 Power BI 使用未标记的内容时必须应用标签。
     
     该标签可由用户手动分配，由于您配置的条件或默认分配的条件（如上所述的 "默认标签" 选项）而自动分配。当用户需要分配标签时，以下为示例提示：
 
-    ![在 Outlook 中要求用户应用所需标签的提示](../media/sensitivity-labels-mandatory-prompt-outlook.png)
+    ![在 Outlook 中要求用户应用所需标签的提示。](../media/sensitivity-labels-mandatory-prompt-outlook.png)
     
     有关文档和电子邮件的强制标签的详细信息，请参阅[要求用户应用标签到他们的电子邮件和文档](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。
     
@@ -207,7 +207,7 @@ ms.locfileid: "58360091"
 
 - **提供指向自定义帮助页的帮助链接。** 如果用户不确定敏感度标签的含义或应如何使用标签，你可以提供在 Office 应用中 **敏感度标签** 菜单底部显示的“了解更多”URL：
 
-    ![功能区上“敏感度”按钮中的“了解更多”链接](../media/Sensitivity-label-learn-more.png)
+    ![功能区上“敏感度”按钮中的“了解更多”链接。](../media/Sensitivity-label-learn-more.png)
 
 创建为用户和组分配新敏感度标签的标签策略后，用户可在其 Office 应用中看到这些标签。 请留出长达 24 小时的时间将最新更改复制到整个组织内。
 
@@ -227,7 +227,7 @@ ms.locfileid: "58360091"
 
 如果看不到你希望用于用户或组的标签或标签策略设置行为，请检查敏感度标签策略的顺序。 可能需要向下移动该策略。 若要重新排序标签策略，请选择某个敏感度标签策略 > 选择右侧的省略号 >“**下移**”或“**上移**”。
 
-![敏感度标签策略页上的移动选项](../media/sensitivity-label-policy-priority.png)
+![敏感度标签策略页上的“移动”选项。](../media/sensitivity-label-policy-priority.png)
 
 > [!NOTE]
 > 请记住：如果分配了多个策略的用户的设置发生冲突，将应用优先级最高 (最低位置) 策略中的设置。

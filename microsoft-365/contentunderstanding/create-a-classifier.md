@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建分类器。
-ms.openlocfilehash: 7694337e28a1d18ddf1eed3bddc0d4d8c9e2ebaee4f5c575cb057b1d4ef58af7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9c8a08fe3583f4692edcc4649854a26950eb717
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850380"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58565262"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建分类器
 
@@ -31,7 +31,7 @@ ms.locfileid: "53850380"
 
 分类器是一种模型类型，可用于自动化文档类型的标识和分类。 例如，可能想要标识所有添加到文档库中的“*合同续订*”文档，如下图所示。
 
-![“合同续订”文档](../media/content-understanding/contract-renewal.png)
+![“合同续订”文档。](../media/content-understanding/contract-renewal.png)
 
 创建分类器使你能够创建将与模型关联的新 [SharePoint 内容类型](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview)。
 
@@ -143,7 +143,7 @@ ms.locfileid: "53850380"
 1. 在模型主页中，选择“**测试**”选项卡。这将在未标记的示例文件上运行模型。
 2. 在“**测试文件**”列表中，将列出并显示示例文件（如果模型将其预测为正例或反例的话）。 使用此信息以帮助确定分类器在文档识别中的有效性。
 
-    ![未标记文件的测试](../media/content-understanding/test-on-files.png) 
+    ![未标记文件的测试。](../media/content-understanding/test-on-files.png) 
 
 ## <a name="see-also"></a>另请参阅
 [创建提取程序](create-an-extractor.md)

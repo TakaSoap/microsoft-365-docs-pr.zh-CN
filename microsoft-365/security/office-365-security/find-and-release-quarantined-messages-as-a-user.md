@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efd82e5fc321b9a9c7a586b75e2b96ae44cc38c1
-ms.sourcegitcommit: d792743bc21eec87693ebca51d7307a506d0bc43
+ms.openlocfilehash: d8aab84cd406366182650e6fbf6c39aee9810ce3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58450196"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58548698"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -46,9 +46,9 @@ ms.locfileid: "58450196"
 
 |隔离原因：|查看|发布|删除|
 |---|:---:|:---:|:---:|
-|批量邮件|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|垃圾邮件|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|钓鱼(非高可信度钓鱼)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|批量邮件|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|垃圾邮件|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|钓鱼(非高可信度钓鱼)|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
 |
 
 你可以在“Microsoft 365 Defender 门户”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
@@ -113,7 +113,7 @@ ms.locfileid: "58450196"
      - **反钓鱼策略**
      - **反垃圾邮件策略**
 
-   完成后，单击“**应用**”。 要清除筛选器，请单击“![清除筛选器图标](../../media/m365-cc-sc-clear-filters-icon.png)”**清除筛选器**。
+   完成后，单击“**应用**”。 要清除筛选器，请单击“![清除筛选器”图标](../../media/m365-cc-sc-clear-filters-icon.png)。 **清除筛选器**
 
 4. 使用“**搜索**”框和相应的值来查找特定邮件。 不支持通配符。 可以按下面的值搜索：
    - 邮件 ID
@@ -130,7 +130,7 @@ ms.locfileid: "58450196"
 
 从列表中选择已隔离邮件时，所显示的详细信息浮出控件中提供了以下信息。
 
-![已隔离邮件的详细信息浮出控件](../../media/quarantine-user-message-details.png)
+![已隔离邮件的详细信息浮出控件。](../../media/quarantine-user-message-details.png)
 
 选择列表中的电子邮件后，可以在“详细信息”浮出控件窗格中看到以下邮件详细信息：
 
@@ -149,31 +149,31 @@ ms.locfileid: "58450196"
 > [!NOTE]
 > 要保留在详细信息浮出控件中，但更改正在查看的已隔离邮件，请使用浮出控件顶部的向上和向下箭头。
 >
-> ![已隔离邮件详细信息浮出控件中的向上和向下箭头](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> ![已隔离邮件详细信息浮出控件中的向上和向下箭头。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
 
 从列表中选择隔离邮件后，详细信息浮出控件中将提供以下操作：
 
-![隔离邮件详细信息浮出控件中的可用操作](../../media/quarantine-user-message-details-flyout-actions.png)
+![隔离邮件详细信息浮出控件中的可用操作。](../../media/quarantine-user-message-details-flyout-actions.png)
 
-- ![释放电子邮件图标](../../media/m365-cc-sc-check-mark-icon.png) **释放电子邮件**<sup>\*</sup>：将邮件传递到收件箱。
+- ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放电子邮件**<sup>\*</sup>：将邮件传递到收件箱。
 
-- ![查看邮件头图标](../../media/m365-cc-sc-eye-icon.png) **查看邮件头**：选择此链接以查看邮件头文本。 **邮件头** 浮出控件随以下链接一起显示：
+- ![查看邮件头图标。](../../media/m365-cc-sc-eye-icon.png) **查看邮件头**：选择此链接可查看邮件头文本。 **邮件头** 浮出控件随以下链接一起显示：
 - **复制邮件头**：单击此链接可将邮件头（所有标题字段）复制到剪贴板。
 - **Microsoft 邮件头分析器**：要深入分析标头字段和值，请单击此链接以转到邮件头分析器。 将邮件头粘贴到 **插入要分析的邮件头** 部分（CTRL+V 或右键单击并选择“**粘贴**”），然后单击“**分析邮件头**”。
 
 单击“![更多操作图标](../../media/m365-cc-sc-more-actions-icon.png)”**更多操作** 后，可以执行以下操作：
 
-- ![预览消息图标](../../media/m365-cc-sc-eye-icon.png) **预览消息**：在显示的浮出控件中，选择下列选项卡之一：
+- ![预览消息图标。](../../media/m365-cc-sc-eye-icon.png) **预览消息**：在显示的浮出控件中，选择下列选项卡之一：
   - “**源**”：显示禁用所有链接的 HTML 版邮件正文。
   - “**纯文本**”：以纯文本格式显示邮件正文。
 
-- “![从隔离区中删除图标](../../media/m365-cc-sc-delete-icon.png)”**从隔离区中删除**：在所显示的警告中单击“**是**”后，将立即删除该邮件，而不会发送给原始收件人。
+- ![从隔离区中删除图标](../../media/m365-cc-sc-delete-icon.png) **从隔离区中删除**：在所显示的警告中单击“**是**”后，将立即删除该邮件，而不会发送给原始收件人。
 
-- ![下载电子邮件图标](../../media/m365-cc-sc-download-icon.png) **下载电子邮件**：在所显示的浮出控件中选择“**我了解下载此邮件所带来的风险**”，然后单击“**下载**”可使用 .eml 格式保存邮件的本地副本。
+- ![下载电子邮件图标。](../../media/m365-cc-sc-download-icon.png) **下载电子邮件**：在所显示的浮出控件中选择“**我了解下载此邮件所带来的风险**”，然后单击“**下载**”可使用 .eml 格式保存邮件的本地副本。
 
-- ![阻止发件人图标](../../media/m365-cc-sc-block-sender-icon.png) **阻止发件人**：将发件人添加到 **你的** 邮箱中的阻止发件人列表。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- ![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png) **阻止发件人**：将发件人添加到 **你的** 邮箱中的阻止发件人列表中。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 <sup>\*</sup> 此选项不适用于已经释放的邮件（**已释放状态** 值为 **已释放**）。
 
@@ -182,23 +182,23 @@ ms.locfileid: "58450196"
 > [!NOTE]
 > 在移动设备上，说明文本在操作图标上不可用。
 >
-> ![已隔离邮件的详细信息，其中突出显示了可用操作](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> ![已隔离邮件的详细信息，其中突出显示了可用操作。](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
 >
 > 下表汇总了按顺序排列的图标及其相应的说明：
 >
 > |图标|说明|
 > |---:|---|
-> |![释放电子邮件图标](../../media/m365-cc-sc-check-mark-icon.png)|**释放电子邮件**|
-> |![查看邮件头图标](../../media/m365-cc-sc-eye-icon.png)|**查看邮件头**|
-> |![预览邮件图标](../../media/m365-cc-sc-eye-icon.png)|**预览邮件**|
-> |![从隔离区中删除图标](../../media/m365-cc-sc-delete-icon.png)|**从隔离区中删除**|
-> |![阻止发件人图标](../../media/m365-cc-sc-block-sender-icon.png)|**阻止发件人**|
+> |![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png)|**释放电子邮件**|
+> |![查看邮件头图标。](../../media/m365-cc-sc-eye-icon.png)|**查看邮件头**|
+> |![预览邮件图标。](../../media/m365-cc-sc-eye-icon.png)|**预览邮件**|
+> |![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png)|**从隔离区中删除**|
+> |![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png)|**阻止发件人**|
 
 #### <a name="take-action-on-multiple-quarantined-email-messages"></a>对多封已隔离电子邮件执行操作
 
 当通过单击第一列左侧空白区域来选择列表中的多个已隔离邮件（最多 100 条）时，将显示“**批量操作**”下拉列表，你可以在其中执行以下操作：
 
-![隔离区中邮件的批量操作下拉列表](../../media/quarantine-user-message-bulk-actions.png)
+![隔离区中邮件的批量操作下拉列表。](../../media/quarantine-user-message-bulk-actions.png)
 
-- ![释放电子邮件图标](../../media/m365-cc-sc-check-mark-icon.png) **释放邮件**：将邮件传递到收件箱。
-- ![从隔离区中删除图标](../../media/m365-cc-sc-delete-icon.png) **删除邮件**：在所显示警告中单击“**是**”后，将立即从隔离区中删除该邮件，而不会发送给原始收件人。
+- ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放邮件**：将邮件传递到收件箱。
+- ![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png) **删除邮件**：在所显示警告中单击“**是**”后，将立即从隔离区中删除该邮件，而不会发送给原始收件人。

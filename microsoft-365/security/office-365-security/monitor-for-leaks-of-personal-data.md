@@ -19,12 +19,12 @@ search.appverid:
 description: 了解可用于监视个人数据泄露的三种工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1711ce8154afb976ce89ac7760f5bec9afca7292
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: 9c40078626948e51c0e43f06dd567967f3cff516
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532567"
+ms.locfileid: "58565644"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -33,7 +33,7 @@ ms.locfileid: "58532567"
 
 有许多工具可用于监视个人数据的使用和传输。本主题介绍了三种十分有用的工具。
 
-![用于监视个人数据的使用和传输的工具](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+![用于监视个人数据的使用和传输的工具。](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 在此图中：
 
@@ -62,7 +62,7 @@ DLP 报表位于Microsoft 365 合规中心中。转到 **报表**\>**组织数�
 
 有关详细信息，请参阅[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)。
 
-![显示 DLP 策略匹配项的报告](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+![显示 DLP 策略匹配项的报告。](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="audit-log-and-alert-policies"></a>审核日志和警报策略
 
@@ -98,7 +98,7 @@ Microsoft Cloud App Security 是一项可为云应用提供深层可见性、细
 
 例如，下图说明了有助于符合 GDPR 的两个 Cloud App Security 策略。
 
-![示例 Cloud App Security 策略](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+![示例 Cloud App Security 策略。](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 如果选择的文件包含预定义的 PII 属性或自定义表达式，并且从选择的 SaaS 应用组织外部共享，那么第一个策略发出警报。
 
@@ -116,7 +116,7 @@ Microsoft Cloud App Security 是一项可为云应用提供深层可见性、细
 > [!NOTE]
 > 开始使用 Cloud App Security 时或在分配标签前，请务必启用“自动扫描文件中是否有 Azure 信息保护分类标签”（位于“常规”设置中）。设置后，Cloud App Security 不会再次扫描现有文件，除非它们遭到修改。
 
-![显示有关警报信息的仪表板](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+![显示有关警报信息的仪表板。](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 详细信息：
 

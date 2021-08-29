@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 68fa947467948a788b5902ef50b7b9d574101a3a
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.openlocfilehash: ce6de37a792c81e9d43b3d7c716629e386fca7b3
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417971"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58566014"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -86,7 +86,7 @@ ms.locfileid: "58417971"
 设备管理是一项功能，可从设备收集遥测并将其纳入 Microsoft 365 合规解决方案，如终结点 DLP 和[内部风险管理](insider-risk-management.md)。 你需要载入所有要用作 DLP 策略中位置的设备。
 
 > [!div class="mx-imgBorder"]
-> ![启用设备管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![启用设备管理。](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 载入和载出通过你从设备管理中心下载的脚本来处理。 中心为每种部署方法提供了自定义脚本：
 
@@ -97,31 +97,31 @@ ms.locfileid: "58417971"
 - 非持久性计算机的 VDI 载入脚本
 
 > [!div class="mx-imgBorder"]
-> ![设备加入页面](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> ![设备加入页面。](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  使用 [Microsoft 365 终结点 DLP入门](endpoint-dlp-getting-started.md)中的程序载入设备。
 
 如果你已通过 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 加入设备，则这些设备将自动显示在设备列表中。
 
 > [!div class="mx-imgBorder"]
-> ![托管设备列表](../media/endpoint-dlp-learn-about-2-device-list.png)
+> ![托管设备列表](../media/endpoint-dlp-learn-about-2-device-list.png)。
 
 ### <a name="viewing-endpoint-dlp-data"></a>查看终结点 DLP 数据
 
 可通过进入 [DLP 警报管理仪表板](dlp-configure-view-alerts-policies.md)查看与在端点设备上强制实施的 DLP 策略有关的警报。
 
 > [!div class="mx-imgBorder"]
-> ![警报信息](../media/Alert-info-1.png)
+> ![警报信息](../media/Alert-info-1.png)。
 
 你还可以在同一仪表板中查看关联事件的详细信息以及丰富元数据
 
 > [!div class="mx-imgBorder"]
-> ![事件信息](../media/Event-info-1.png)
+> ![事件信息](../media/Event-info-1.png)。
 
 设备一旦载入，有关已审核活动的信息就会流入活动资源管理器，即使在配置和部署将设备作为位置的任何 DLP 策略之前也不例外。
 
 > [!div class="mx-imgBorder"]
-> ![活动资源管理器中的终结点 DLP 事件](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![活动资源管理器中的终结点 DLP 事件](../media/endpoint-dlp-learn-about-4-activity-explorer.png)。
 
 终结点 DLP 会收集有关已审核活动的大量信息。
 
@@ -153,7 +153,7 @@ ms.locfileid: "58417971"
 - 可移动媒体设备序列号
 
 > [!div class="mx-imgBorder"]
-> ![复制到 USB 活动属性](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> ![复制到 USB 活动属性](../media/endpoint-dlp-learn-about-5-activity-attributes.png)。
 
 ## <a name="next-steps"></a>后续步骤
 

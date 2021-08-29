@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: 我们将为 Microsoft Defender for Office 365 发布新的警报策略。 我们还将停用已由新策略替换的两个现有警报策略。
-ms.openlocfilehash: 5c4edbb59d3328bb933825ab6a85ab561db93741
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
+ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255355"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58564006"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中新的警报策略
 
@@ -85,17 +85,17 @@ Microsoft Defender for Office 365 引入了与传递检测相关的新增和改�
 
   - **送达后，删除含恶意软件的电子邮件** AND **删除包含恶意文件的电子邮件**
 
-  ![新的和现有警报的警报对](../media/DefenderAlerts.png)
+  ![新的和现有警报的警报对。](../media/DefenderAlerts.png)
 
    有关管理这些警报对详细信息，请参阅 [更改准备操作"部分](#what-you-need-to-do-to-prepare-for-these-changes) 操作。
 
 - **AIR Investigations**：警报将关联到单个 AIR Investigation 中，其中一个警报按"触发"分类，另一个警报归类为"重复"。
 
-  ![AIR Investigations 中的警报对](../media/AIRAlerts.png)
+  ![AIR Investigations 中的警报对。](../media/AIRAlerts.png)
 
 - **事件**：两种警报将关联到同一事件
 
-  ![事件中的警报对](../media/IncidentsAlerts.png)
+  ![事件中的警报对。](../media/IncidentsAlerts.png)
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>为这些更改做好准备
 
