@@ -175,7 +175,7 @@ ms.locfileid: "53802918"
 > - [Liechtenstein（列支敦士登）](../pay/liechtenstein.md)
 > - [Lithuania（立陶宛）](../pay/lithuania.md)
 > - [卢森堡](../pay/luxembourg.md)
-> - [Macao（中国澳门）](../pay/macao.md)
+> - [澳门特别行政区](../pay/macao.md)
 > - [前南斯拉夫马其顿共和国](../pay/macedonia.md)
 > - [马来西亚](../pay/malaysia.md)
 > - [马耳他](../pay/malta.md)

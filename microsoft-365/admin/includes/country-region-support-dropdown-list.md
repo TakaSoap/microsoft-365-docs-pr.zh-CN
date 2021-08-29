@@ -129,7 +129,7 @@
 > - [Lithuania（立陶宛）](../support/lithuania.md)
 > - [卢森堡](../support/luxembourg.md)
 > - [中国澳门特别行政区](../support/macau-sar.md)
-> - [马其顿](../support/macedonia.md)
+> - [北马其顿](../support/macedonia.md)
 > - [马达加斯加](../support/madagascar.md)
 > - [马拉维](../support/malawi.md)
 > - [马来西亚](../support/malaysia.md)

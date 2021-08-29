@@ -33,7 +33,7 @@ ms.locfileid: "58570373"
 - [NERC CIP 标准和云计算](https://aka.ms/AzureNERC)
 - [关于 NERC 审计的云实施指南](https://aka.ms/AzureNERCGuide)
 
-能源组织建议考虑的监管标准包括 FedRAMP（美国联邦风险和授权管理计划），该计划基于并扩充了 NIST SP 800-53 修订版 4 标准（美国国家标准技术研究院）。 
+能源组织建议考虑的监管标准包括 FedRAMP（美国联邦风险和授权管理计划），该计划以 NIST SP 800-53 Rev 4 标准（美国国家标准与技术研究所）为基础，并对其进行了扩充。 
 - Microsoft Office 365 和 Office 365 美国政府版已被授予中等影响级别的 FedRAMP ATO（授权运营）。 
 - Azure 和 Azure 政府版均被授予 FedRAMP 高 P-ATO（临时授权运营），后者代表最高级别的 FedRAMP 授权。 
 
