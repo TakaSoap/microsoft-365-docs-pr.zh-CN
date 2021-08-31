@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8eab3ee1244a56c41ad2eea806c8933e9224e47
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f582ff83a790d56b936c93f3e40aac76c7e5df1b
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58559078"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823704"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -148,7 +148,7 @@ ms.locfileid: "58559078"
 
 ## <a name="download-or-collect-file"></a>下载或收集文件
 
-从 **响应** 操作中选择"下载文件"，可下载包含.zip受密码保护的本地文件存档。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
+从 **响应** 操作中选择"下载文件"，可下载包含文件的本地受密码保护.zip文件存档。 将出现一个飞出图，可在其中记录下载文件的原因并设置密码。
 
 默认情况下，您应该能够下载隔离的文件。
 
@@ -156,7 +156,7 @@ ms.locfileid: "58559078"
 
 ### <a name="download-quarantined-files"></a>下载隔离文件
 
-已由安全Microsoft Defender 防病毒安全团队隔离的文件将按照你的提交配置示例以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
+已由安全Microsoft Defender 防病毒安全团队隔离的文件将按照你的示例提交配置以合规[方式保存](enable-cloud-protection-microsoft-defender-antivirus.md)。 安全团队可以通过"下载文件"按钮直接从文件的详细信息页面下载文件。 **默认情况下，此预览功能为"开"。**
 
 位置取决于组织的地理位置设置 (欧盟、英国或美国) 。 每个组织仅收集一次隔离文件。 若要详细了解 Microsoft 数据保护，请通过 服务信任门户了解 https://aka.ms/STP 。
 
@@ -170,7 +170,7 @@ ms.locfileid: "58559078"
 
 >[!IMPORTANT]
 >下载隔离文件要求：
->- 你的组织在Microsoft Defender 防病毒模式下使用用户 
+>- 你的组织在Microsoft Defender 防病毒使用活动模式 
 >- 防病毒引擎版本为 1.1.17300.4 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 >- 启用基于云的保护。 请参阅 [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)
 >- 示例提交已打开
@@ -191,7 +191,7 @@ ms.locfileid: "58559078"
 > - 如果你的组织使用云保护并启用Microsoft Defender 防病毒，此功能可用。 有关详细信息，请参阅管理 [云提供的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 >
 > - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
-> - 此功能旨在防止从 (下载可疑的恶意软件) 潜在的恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括_.exe和 _.dll_ 文件。 覆盖范围将随着时间的推移而延长。
+> - 此功能旨在防止从 (下载可疑的恶意软件) 或潜在的恶意文件。 它当前支持可移植的可执行 (PE) _文件，包括__.exe和.dll_ 文件。 覆盖范围将随着时间的推移而延长。
 > - 此响应操作适用于 Windows 10 版本 1703 或更高版本上的设备。
 > - 如果在允许或阻止操作之前文件分类存在于设备的缓存中，则不能对文件执行允许或阻止功能。
 
@@ -214,11 +214,11 @@ ms.locfileid: "58559078"
 
 若要停止阻止文件，请删除指示器。 您可以通过文件配置文件页上 **的"编辑** 指示器"操作来这样做。 在添加指示器之前，此操作将在与 **添加指示器操作** 相同的位置可见。
 
-还可以在"规则指示器 **"下的****"设置"页面**  >  **编辑指示器**。 此区域中的指示器按其文件的哈希列出。
+还可以在"规则指示器"下的"设置"**页面**  >  **编辑指示器**。 此区域中的指示器按其文件的哈希列出。
 
 ## <a name="consult-a-threat-expert"></a>咨询威胁专家
 
-有关可能受到威胁的设备或已受到威胁的设备的更多见解，请咨询 Microsoft 威胁专家。 Microsoft 威胁专家直接在 Microsoft 365 Defender 门户中参与，以及时准确地做出响应。 专家提供有关可能受到威胁的设备的见解，并帮助你了解复杂的威胁和目标攻击通知。 它们还可以提供有关你在门户仪表板上看到的警报或威胁智能上下文的信息。
+有关可能受到威胁的设备或已受到威胁的设备的更多见解，请咨询 Microsoft 威胁专家。 Microsoft 威胁专家门户中直接参与Microsoft 365 Defender及时准确的响应。 专家提供有关可能受到威胁的设备的见解，并帮助你了解复杂的威胁和目标攻击通知。 它们还可以提供有关你在门户仪表板上看到的警报或威胁智能上下文的信息。
 
 有关详细信息 [，请参阅咨询 Microsoft 威胁](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
 
@@ -257,9 +257,9 @@ ms.locfileid: "58559078"
 **当文件在** Defender for Endpoint 后端示例集合中可用时，或在支持提交到深入分析的 Windows 10 设备上观察到该文件时，将启用提交进行深度分析。
 
 > [!NOTE]
-> 只有来自Windows 10的文件可以自动收集。
+> 只能自动收集Windows 10文件。
 
-如果文件未在 Windows 10 设备上观测到，您还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx)安全中心门户提交示例，并等待"提交"**进行** 深入分析按钮变为可用。
+如果文件未在 Windows 10 设备上观测到，还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx)安全中心门户提交示例，并等待"提交"**进行深入分析** 按钮变为可用。
 
 > [!NOTE]
 > 由于 Microsoft 安全中心门户中的后端处理流，文件提交和 Defender for Endpoint 中深入分析功能的可用性之间最多存在 10 分钟的延迟。
@@ -304,7 +304,7 @@ ms.locfileid: "58559078"
 
 如果在尝试提交文件时遇到问题，请尝试以下每个疑难解答步骤。
 
-1. 确保该文件是 PE 文件。 PE 文件 _通常具有.exe_ 或.dll可执行 _(_ 应用程序的扩展) 。
+1. 确保该文件是 PE 文件。 PE 文件 _通常.exe可执行_.dll或 _(_ 应用程序的扩展名或) 。
 
 2. 确保服务具有对文件的访问权限，它仍然存在，并且尚未损坏或修改。
 
@@ -329,3 +329,4 @@ ms.locfileid: "58559078"
 
 - [在设备上执行响应操作](respond-machine-alerts.md)
 - [调查文件](investigate-files.md)
+- [Microsoft Defender for Endpoint Plan 1 中的手动响应操作 (预览) ](defender-endpoint-plan-1.md#manual-response-actions)

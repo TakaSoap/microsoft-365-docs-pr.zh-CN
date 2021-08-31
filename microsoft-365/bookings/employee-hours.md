@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: 在 Microsoft Bookings 中设置员工工作时间和可用性。
-ms.openlocfilehash: 9fffee6addd5f2d816fc7639661f2e03f53a96de
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 854110217f31b69d54783484aa1800332763af3e
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575032"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823644"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings 中的员工工作时间
 
-设置员工工作时间可确保在客户尝试预订时准确显示其可用性。 默认情况下，每个员工的工作时间与在 Microsoft Bookings 应用中建立的工作时间匹配。 请参阅输入业务信息 中的"设置 [营业时间"部分](enter-business-information.md#set-your-business-hours)。
+设置员工工作时间可确保在客户尝试预订时准确显示其可用性。 默认情况下，每个员工的工作时间与在 Microsoft Bookings 应用中建立的工作时间匹配。 请参阅输入业务信息 中的"设置 [营业时间"部分](enter-business-information.md)。
 
 在" **员工** "页上，你可以自定义员工工作时间，以满足你的业务和员工的需求。
 

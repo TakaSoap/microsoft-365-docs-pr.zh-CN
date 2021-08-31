@@ -16,12 +16,12 @@ ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 08/11/2021
-ms.openlocfilehash: 71e5be7a030d2079df9fb3965c46262e6d05fb41
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: be816488ebe930da2f757ed192a12d81c0a222ef
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247214"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823752"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender 防病毒安全产品的兼容性
 
@@ -38,52 +38,60 @@ Microsoft Defender 防病毒自动安装在运行以下版本的 Windows：
 - Windows服务器、版本 1803 或更高版本
 - Windows Server 2019
 
-当使用另一个非 Microsoft 防病毒/反恶意软件解决方案时，会发生什么情况？ 能否将Microsoft Defender 防病毒防病毒产品一起运行？ 答案取决于多种因素，例如操作系统以及是否将 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) 与防病毒保护一起使用。 
+当使用另一个非 Microsoft 防病毒/反恶意软件解决方案时，会发生什么情况？ 能否将Microsoft Defender 防病毒防病毒产品一起运行？ 答案取决于多个因素，例如操作系统以及你是否将 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) 与防病毒保护一起使用。
 
-本文介绍使用或不带 Defender for Endpoint Microsoft Defender 防病毒和非 Microsoft 防病毒/反恶意软件解决方案会发生什么情况。
+本文介绍了在具有或没有 Defender for Endpoint 的情况下Microsoft Defender 防病毒和非 Microsoft 防病毒/反恶意软件解决方案会发生什么情况。
 
 ## <a name="antivirus-protection-without-defender-for-endpoint"></a>没有适用于终结点的 Defender 的防病毒保护
 
-本部分介绍未载入Microsoft Defender 防病毒 Defender for Endpoint 的终结点上的非 Microsoft 防病毒/反恶意软件产品会发生什么情况。 下表总结了预期内容： <br/>
+本部分介绍未载入Microsoft Defender 防病毒 Defender for Endpoint 的终结点上的非 Microsoft 防病毒/反恶意软件产品会发生什么情况。 下表总结了预期内容：
 
-| Windows 版本   | 主防病毒/反恶意软件解决方案  | Microsoft Defender 防病毒状态 |
-|------|------|-------|-------|
-| Windows 10  | Microsoft Defender 防病毒  | 主动模式 |
-| Windows 10  | 非 Microsoft 防病毒/反恶意软件解决方案 | 禁用模式 (自动)     |
-| Windows Server 2016 <br/> Windows服务器、版本 1803 或更高版本 <br/> Windows Server 2019 | Microsoft Defender 防病毒  | 主动模式 |
-| Windows Server 2016 <br/> Windows服务器、版本 1803 或更高版本 <br/> Windows Server 2019 | 非 Microsoft 防病毒/反恶意软件解决方案 | 禁用 (设置) <sup> [[1](#fn1)]<sup></sup>  |
+<br>
 
- (<a id="fn1">1</a>) 在 Windows 服务器上，如果运行的是非 Microsoft 防病毒产品，可以使用组策略禁用 Microsoft Defender 防病毒，或者使用[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项禁用 Microsoft Defender 防病毒。 若要使用注册表项，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` ，并设置或创建名为 的 DWORD 项 `DisableAntiSpyware` 。 将其值设置为 (将注册表项的值设置为 true) ，然后选择 `1` **十** 六进制作为其基础。 
+****
+
+|Windows 版本|主防病毒/反恶意软件解决方案|Microsoft Defender 防病毒状态|
+|---|---|---|---|
+|Windows 10|Microsoft Defender 防病毒|主动模式|
+|Windows 10|非 Microsoft 防病毒/反恶意软件解决方案|禁用模式 (自动) |
+|Windows Server 2016 <p> Windows服务器、版本 1803 或更高版本 <p> Windows Server 2019|Microsoft Defender 防病毒|主动模式|
+|Windows Server 2016 <p> Windows服务器、版本 1803 或更高版本 <p> Windows Server 2019|非 Microsoft 防病毒/反恶意软件解决方案|禁用 (手动设置) <sup> [[1](#fn1)]<sup></sup>|
+
+ (<a id="fn1">1</a>) 在 Windows 服务器上，如果运行的是非 Microsoft 防病毒产品，可以使用组策略禁用 Microsoft Defender 防病毒 以关闭 Microsoft Defender 防病毒，或者使用[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项禁用。 若要使用注册表项，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` ，并设置或创建名为 的 DWORD 项 `DisableAntiSpyware` 。 将其值设置为 (将注册表项的值设置为 true) ，然后选择 `1` **十** 六进制作为其基础。
 
 > [!TIP]
 > 有关[Microsoft Defender 防病毒 Server Windows](microsoft-defender-antivirus-on-windows-server.md)的关键差异和管理选项，请参阅 Windows Server。 在Windows Server 2016上，*你可能会看到Windows Defender 防病毒* 而不是 *Microsoft Defender 防病毒。*
 
 ## <a name="antivirus-protection-with-defender-for-endpoint"></a>使用 Defender for Endpoint 进行防病毒保护
 
-如果你的组织将非 Microsoft 防病毒/反恶意软件解决方案与 Defender for Endpoint 一起Microsoft Defender 防病毒，则根据你的操作系统，它可以在被动模式下运行。 <br/>
+如果你的组织将非 Microsoft 防病毒/反恶意软件解决方案与 Defender for Endpoint 一起Microsoft Defender 防病毒，根据你的操作系统，它可以在被动模式下运行。
 
-| Windows 版本   | 主防病毒/反恶意软件解决方案  | Microsoft Defender 防病毒状态 |
-|------|------|-------|-------|
-| Windows 10或更高版本 | Microsoft Defender 防病毒 | 主动模式 |
-| Windows 10或更高版本 | 非 Microsoft 防病毒/反恶意软件解决方案 | 被动模式 (自动)  |
-| Windows Server 2016 <br/> Windows服务器、版本 1803 或更高版本 <br/> Windows Server 2019 | Microsoft Defender 防病毒  | 主动模式 |
-| Windows服务器、版本 1803 或更高版本 <br/> Windows Server 2019 | 非 Microsoft 防病毒/反恶意软件解决方案 | 被动模式 (手动设置) <sup> [[2](#fn2)]<sup></sup>  |
-| Windows Server 2016 | 非 Microsoft 防病毒/反恶意软件解决方案 | 禁用 (设置) <sup> [[3](#fn3)]<sup> |
+<br>
 
- (<a id="fn2">2</a>) 安装非 Microsoft 防病毒产品时，在 Windows Server、版本 1803 或更高版本或 Windows Server 2019 上，手动将 Microsoft Defender 防病毒 设置为被动模式。 可以使用 **ForceDefenderPassiveMode** 注册表项执行此任务。 若要使用注册表项，请导航到 `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` ，并设置或创建名为 的 DWORD 项 `ForceDefenderPassiveMode` 。 将其值设置为 (将注册表项的值设置为 true) ，然后选择 `1` **十** 六进制作为其基础。 有关详细信息，请参阅被动[模式和Windows服务器](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
+****
 
- (<a id="fn3">3</a>) 在 Windows Server 2016 上，可以使用组策略禁用 Microsoft Defender 防病毒 以禁用 Windows Defender 防病毒，或者使用[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项。 若要使用注册表项，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` ，并设置或创建名为 的 DWORD 项 `DisableAntiSpyware` 。 将其值设置为 (将注册表项的值设置为 true) ，然后选择 `1` **十** 六进制作为其基础。 
+|Windows 版本|主防病毒/反恶意软件解决方案|Microsoft Defender 防病毒状态|
+|---|---|---|---|
+|Windows 10或更高版本|Microsoft Defender 防病毒|主动模式|
+|Windows 10或更高版本|非 Microsoft 防病毒/反恶意软件解决方案|被动模式 (自动) |
+|Windows Server 2016 <p> Windows服务器、版本 1803 或更高版本 <p> Windows Server 2019|Microsoft Defender 防病毒|主动模式|
+|Windows服务器、版本 1803 或更高版本 <p> Windows Server 2019|非 Microsoft 防病毒/反恶意软件解决方案|被动模式 (手动设置) <sup> [[2](#fn2)]<sup></sup>|
+|Windows Server 2016|非 Microsoft 防病毒/反恶意软件解决方案|已禁用 (手动设置) <sup> [[3](#fn3)]<sup>|
+
+ (<a id="fn2">2</a>) 在 Windows Server 版本 1803 或更高版本或 Windows Server 2019 上安装非 Microsoft 防病毒产品时，手动将 Microsoft Defender 防病毒 设置为被动模式。 可以使用 **ForceDefenderPassiveMode** 注册表项执行此任务。 若要使用注册表项，请导航到 `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` ，并设置或创建名为 的 DWORD 项 `ForceDefenderPassiveMode` 。 将其值设置为 (将注册表项的值设置为 true) ，然后选择 `1` **十** 六进制作为其基础。 有关详细信息，请参阅被动[模式和Windows服务器](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server)。
+
+ (<a id="fn3">3</a>) 在 Windows Server 2016 上，可以使用组策略禁用 Microsoft Defender 防病毒 以禁用 Windows Defender 防病毒，或者使用[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项。 若要使用注册表项，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` ，并设置或创建名为 的 DWORD 项 `DisableAntiSpyware` 。 将其值设置为 (将注册表项的值设置为 true) ，然后选择 `1` **十** 六进制作为其基础。
 
 > [!TIP]
 > 有关[Microsoft Defender 防病毒 Server Windows](microsoft-defender-antivirus-on-windows-server.md)的关键差异和管理选项，请参阅 Windows Server。 在Windows Server 2016上，*你可能会看到Windows Defender 防病毒* 而不是 *Microsoft Defender 防病毒。*
 
 ### <a name="why-run-microsoft-defender-antivirus-in-passive-mode"></a>为什么在被动Microsoft Defender 防病毒运行服务器？
 
-Defender for Endpoint 包括进一步扩展安装在终结点上的防病毒保护的功能。 您可以与另一Microsoft Defender 防病毒解决方案一起运行防病毒解决方案。 
+Defender for Endpoint 包括进一步扩展安装在终结点上的防病毒保护的功能。 通过同时运行其他Microsoft Defender 防病毒，您可以获益。
 
 例如，在阻止[模式下 (EDR) ](edr-in-block-mode.md)终结点检测和响应功能可提供对恶意项目的更多保护，即使Microsoft Defender 防病毒不是主要的防病毒产品。 这些功能要求Microsoft Defender 防病毒被动模式或主动模式进行安装和运行。
 
-### <a name="requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode"></a>在被动Microsoft Defender 防病毒运行要求
+### <a name="requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode"></a>要求Microsoft Defender 防病毒被动模式下运行
 
 为了使Microsoft Defender 防病毒模式运行，终结点必须满足以下要求：
 
@@ -92,58 +100,72 @@ Defender for Endpoint 包括进一步扩展安装在终结点上的防病毒保�
 - 必须安装另一个非 Microsoft 防病毒/反恶意软件产品，并用作主要的防病毒解决方案
 - 终结点必须载入到适用于终结点的 Defender
 
-## <a name="how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality"></a>更改Microsoft Defender 防病毒 Defender for Endpoint 功能的影响
+## <a name="how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality"></a>Microsoft Defender 防病毒对 Defender for Endpoint 功能有何影响
 
-Defender for Endpoint 影响 Microsoft Defender 防病毒是否可以在被动模式下运行。 Microsoft Defender 防病毒影响 Defender for Endpoint 中的某些功能。 例如，实时保护在 Microsoft Defender 防病毒处于主动或被动模式时有效，Microsoft Defender 防病毒或卸载时则不能。 
+Defender for Endpoint 影响Microsoft Defender 防病毒在被动模式下运行。 Microsoft Defender 防病毒 Defender for Endpoint 中的某些功能。 例如，实时保护在 Microsoft Defender 防病毒处于主动或被动模式时有效，Microsoft Defender 防病毒或卸载时则不能。
 
-本节中的表总结了根据 Microsoft Defender 防病毒 处于主动模式、被动模式还是禁用/卸载状态而主动运行的特性和功能。 
+本节中的表总结了根据 Microsoft Defender 防病毒 处于主动模式、被动模式还是禁用/卸载状态而主动运行的特性和功能。
 
 > [!IMPORTANT]
-> 下表设计为仅供参考。 如果你在被动模式下使用 Microsoft Defender 防病毒 或在阻止模式下使用[EDR，](edr-in-block-mode.md)请不要关闭功能，例如实时保护、云提供的保护或有限的定期扫描，这将在后台检测和修正在泄露后检测到的恶意项目。 
-<br/>
+> 下表设计为仅供参考。 如果你在被动模式下使用 Microsoft Defender 防病毒 或在阻止模式下使用[EDR，](edr-in-block-mode.md)请不要关闭功能，例如实时保护、云提供的保护或有限定期扫描，这将在后台检测和修正在泄露后检测到的恶意项目。
 
-| Protection | Microsoft Defender 防病毒 <br/> 主动模式 | Microsoft Defender 防病毒 <br/> 被动模式 |  Microsoft Defender 防病毒 <br/> 已禁用或卸载 | [块模式下的 EDR](edr-in-block-mode.md) |
-|:---|:---|:---|:---|:---|
-| [实时保护和](configure-real-time-protection-microsoft-defender-antivirus.md)[云保护](enable-cloud-protection-microsoft-defender-antivirus.md) | 是 | 否 <sup> [[5](#fn5)]<sup> | 否 | 否 |
-| [有限定期扫描可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | 否 | 否 | 是 | 否 |
-| [文件扫描和检测信息](review-scan-results-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 |
-|  [威胁修正](configure-remediation-microsoft-defender-antivirus.md) | 是 | 请参阅注释 <sup> [[6](#fn6)]<sup> | 否 | 是 |
-| [安全智能更新](manage-updates-baselines-microsoft-defender-antivirus.md) | 是 | 是 | 否 | 是 |
+<br>
 
- (<a id="fn5">5</a>) 通常，当 Microsoft Defender 防病毒 处于被动模式时，实时保护不会提供任何阻止或强制，即使处于启用状态且处于被动模式。 
+****
 
- (<a id="fn6">6</a>) 当 Microsoft Defender 防病毒 处于被动模式时，威胁修正功能仅在计划扫描或按需扫描期间处于活动状态。
+|Protection|Microsoft Defender 防病毒 <p> 主动模式|Microsoft Defender 防病毒 <p> 被动模式|Microsoft Defender 防病毒 <p> 已禁用或卸载|[块模式下的 EDR](edr-in-block-mode.md)|
+|---|---|---|---|---|
+|[实时保护和](configure-real-time-protection-microsoft-defender-antivirus.md)[云保护](enable-cloud-protection-microsoft-defender-antivirus.md)|是|否 <sup> [[5](#fn5)]<sup>|否|否|
+|[有限定期扫描可用性](limited-periodic-scanning-microsoft-defender-antivirus.md)|否|否|是|否|
+|[文件扫描和检测信息](review-scan-results-microsoft-defender-antivirus.md)|是|是|否|是|
+|[威胁修正](configure-remediation-microsoft-defender-antivirus.md)|是|请参阅注释 <sup> [[6](#fn6)]<sup>|否|是|
+|[安全智能更新](manage-updates-baselines-microsoft-defender-antivirus.md)|是|是|否|是|
+||||||
+
+ (<a id="fn5">5</a>) 通常，当 Microsoft Defender 防病毒 处于被动模式时，实时保护不会提供任何阻止或强制，即使处于启用状态且处于被动模式。
+
+ (<a id="fn6">6</a>) 当Microsoft Defender 防病毒处于被动模式时，威胁修正功能仅在计划扫描或按需扫描期间处于活动状态。
 
 > [!NOTE]
-> [Microsoft 365处于](/microsoft-365/compliance/endpoint-dlp-learn-about)主动或被动模式时，终结点数据丢失防护Microsoft Defender 防病毒正常运行。
+> [Microsoft 365终结点数据丢失](/microsoft-365/compliance/endpoint-dlp-learn-about)防护在处于主动或被动Microsoft Defender 防病毒时可继续正常运行。
 
 ## <a name="important-notes"></a>重要说明
 
-- 不要禁用、停止或修改由 Microsoft Defender 防病毒、Defender for Endpoint 或 Windows 安全中心 使用的任何关联服务。 此建议包括 wscsvc、SecurityHealthService、MsSense、Sense、WinDefend 或 *MsMpEng* 服务和进程。     手动修改这些服务可能会导致设备严重不稳定，并且可能会使网络易受攻击。 在使用非 Microsoft 防病毒解决方案时，禁用、停止或修改这些服务也可能导致问题，以及它们的信息在 Windows 安全中心[应用程序中的显示方式](microsoft-defender-security-center-antivirus.md)。
+- 不要禁用、停止或修改由 Microsoft Defender 防病毒 Defender for Endpoint 或 Windows 安全中心 应用使用的任何关联服务。 此建议包括 wscsvc、SecurityHealthService、MsSense、Sense、WinDefend 或 *MsMpEng* 服务和进程。     手动修改这些服务可能会导致设备严重不稳定，并且可能会使网络易受攻击。 在使用非 Microsoft 防病毒解决方案时，禁用、停止或修改这些服务也可能导致问题，以及它们的信息在 Windows 安全中心[应用程序中的显示方式](microsoft-defender-security-center-antivirus.md)。
 
 - 在 Defender for Endpoint 中，EDR以阻止模式打开，即使Microsoft Defender 防病毒不是你的主要防病毒解决方案。 EDR阻止模式下，检测并修正在设备中发现的恶意项目， (泄露后) 。 若要了解更多信息，请参阅EDR[阻止模式。](edr-in-block-mode.md)
 
 ## <a name="how-to-confirm-the-state-of-microsoft-defender-antivirus"></a>如何确认Microsoft Defender 防病毒
 
-可以使用多种方法之一确认Microsoft Defender 防病毒状态，如下表所述：
+可以使用几种方法之一来确认Microsoft Defender 防病毒状态，如下表所述：
 
-| 方法 | Procedure |
-|:---|:---|
-| Windows 安全中心应用 | 1. 在Windows上，打开Windows 安全中心应用。 <br/>2. 选择 **病毒&威胁防护。**<br/>3. **Who保护我？选择** 管理 **提供程序**。 <br/>4. 在"**安全提供程序**"页上的"**防病毒**"下 **，Microsoft Defender 防病毒"打开"。** |
-| 任务管理器 | 1. 在Windows上，打开"任务管理器"应用。 <br/>2. 选择" **详细信息"** 选项卡。<br/>3. 在 **MsMpEng.exe** 查找列表。 |
-| Windows PowerShell <br/>  (确认Microsoft Defender 防病毒运行)  | 1. 在Windows设备上，打开Windows PowerShell。<br/>2. 运行以下 PowerShell cmdlet：。 `Get-Process`<br/>3. 查看结果。 如果 **启用** MsMpEng.exe，Microsoft Defender 防病毒看到" 已禁用"。 |
-| Windows PowerShell <br/>  (确认防病毒保护已)  | 可以使用 [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus)。<br/>1. 在Windows设备上，打开Windows PowerShell。<br/>2. 运行以下 PowerShell cmdlet：。 `Get-MpComputerStatus | select AMRunningMode`<br/>3. 查看结果。 如果在终结点上 **启用了**"常规 **"或** Microsoft Defender 防病毒，则应该会看到"正常"或"被动"。 |
-| 命令提示符     | 1. 在 Windows上，打开命令提示符。 <br/> 2. 键入 `sc query windefend` ，然后按 Enter。<br/> 3. 查看结果，确认Microsoft Defender 防病毒处于被动模式。         |
+<br>
+
+****
+
+|方法|Procedure|
+|---|---|
+|Windows 安全中心应用|<ol><li>在 Windows 设备上，打开Windows 安全中心应用。</li><li>选择“**病毒和威胁防护**”。</li><li>在 **Who保护我？"下，选择**"**管理提供程序"。**</li><li>在"**安全提供程序"** 页上的 **"防病毒**"下，Microsoft Defender 防病毒"**已打开"。**</li></ol>|
+|任务管理器|<ol><li>在 Windows设备上，打开"任务管理器"应用。</li><li>选择" **详细信息"** 选项卡。</li><li>在 **MsMpEng.exe** 查找列表。</li></ol>|
+|Windows PowerShell <p>  (确认Microsoft Defender 防病毒运行) |<ol><li>在 Windows 设备上，打开Windows PowerShell</li><li>运行以下 PowerShell cmdlet：。 `Get-Process`</li><li>查看结果。 如果启用 **MsMpEng.exe，Microsoft Defender 防病毒** 看到" 设置"。</li></ol>|
+|Windows PowerShell <p>  (确认防病毒保护已就位) |可以使用 [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus)。 <ol><li>在 Windows 设备上，打开Windows PowerShell。</li><li>运行以下 PowerShell cmdlet：。 `Get-MpComputerStatus|select AMRunningMode`</li><li>查看结果。 如果在 **终结点上启用了** 常规或 **被动** Microsoft Defender 防病毒，则应该会看到"正常"或"被动"。</li></ol>|
+|命令提示符|<ol><li>在 Windows设备上，打开命令提示符。</li><li>键入 `sc query windefend` ，然后按 Enter。</li><li>查看结果以确认Microsoft Defender 防病毒被动模式运行。</li></ol>|
+|||
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>有关状态Microsoft Defender 防病毒详细信息
 
-本节中的表介绍了使用"列表"可能会看到的各种Microsoft Defender 防病毒。 <br/>
+本节中的表介绍了使用"列表"可能Microsoft Defender 防病毒。
 
-| Microsoft Defender 防病毒状态  | 发生的情况  |
-|---------|---------|
-| 主动模式  | 在活动模式下，Microsoft Defender 防病毒用作计算机上防病毒应用。 设置配置管理器、组策略、Microsoft Intune或其他管理产品配置的策略。 在配置工具中扫描文件、修正威胁，并报告检测信息 (如配置管理器或终结点本身上的 Microsoft Defender 防病毒 应用) 。   |
-| 被动模式  | 在被动模式下，Microsoft Defender 防病毒不用作防病毒应用，威胁 *不会* 由 Microsoft Defender 防病毒。 但是，威胁可通过终结点[检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)进行修正。<br/><br/> 将扫描文件，并针对与 Defender for Endpoint 服务共享的威胁检测提供报告。 你可能会在安全中心看到警报，Microsoft Defender 防病毒作为源，即使Microsoft Defender 防病毒处于被动模式。 [](microsoft-defender-security-center.md) <br/>当Microsoft Defender 防病毒处于被动模式时，你仍可以[管理](manage-updates-baselines-microsoft-defender-antivirus.md)Microsoft Defender 防病毒;但是，如果你的设备具有可提供实时恶意软件Microsoft Defender 防病毒非 Microsoft 防病毒产品，则你无法将其移动到活动模式。 <br/><br/>为了获得最佳安全分层防御和检测检测，请确保获取防病毒和反恶意软件更新，即使 Microsoft Defender 防病毒处于被动模式。 请参阅[管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。 <br/><br/>**注意**：被动模式在用户上Windows Server 2016。 |
-| 禁用 <br/>或<br/>已卸载    | 禁用或卸载后，Microsoft Defender 防病毒应用不会用作防病毒应用。 不扫描文件，不修正威胁。<br/><br/> 通常不建议禁用Microsoft Defender 防病毒卸载应用程序;如果可能，Microsoft Defender 防病毒非 Microsoft 反恶意软件/防病毒解决方案，请保持处于被动模式。<br/><br/>如果 Microsoft Defender 防病毒被自动禁用，当非 Microsoft 防病毒/反恶意软件产品过期或停止提供实时保护免受病毒、恶意软件或其他威胁时，可自动重新启用它。 自动重新启用Microsoft Defender 防病毒有助于确保在终结点上保持防病毒保护。<br/><br/>如果你[使用的是非](limited-periodic-scanning-microsoft-defender-antivirus.md)Microsoft 防病毒应用，则你可能还使用有限定期扫描Microsoft Defender 防病毒引擎定期检查威胁。   |
+<br>
+
+****
+
+|Microsoft Defender 防病毒状态|发生的情况|
+|---|---|
+|主动模式|在活动模式下，Microsoft Defender 防病毒计算机用作防病毒应用。 设置配置管理器、组策略、Microsoft Intune或其他管理产品配置的策略。 在配置工具中扫描文件、修正威胁，并报告检测信息 (如终结点本身的配置管理器或 Microsoft Defender 防病毒 应用) 。|
+|被动模式|在被动模式下，Microsoft Defender 防病毒不会用作防病毒应用，并且威胁 *不会* 由 Microsoft Defender 防病毒。 但是，威胁可通过终结点[检测和响应 (EDR) 阻止模式下](edr-in-block-mode.md)进行修正。 <p> 将扫描文件，并针对与 Defender for Endpoint 服务共享的威胁检测提供报告。 你可能会在安全中心看到警报，Microsoft Defender 防病毒作为源，即使Microsoft Defender 防病毒处于被动模式。 [](microsoft-defender-security-center.md) <p> 当Microsoft Defender 防病毒处于被动模式时，你仍然可以[管理](manage-updates-baselines-microsoft-defender-antivirus.md)Microsoft Defender 防病毒;但是，如果你的设备具有可提供实时恶意软件Microsoft Defender 防病毒非 Microsoft 防病毒产品，则你无法将其移动到活动模式。 <p> 为获得最佳安全分层防御和检测，请确保获取防病毒和反恶意软件更新，即使 Microsoft Defender 防病毒处于被动模式。 请参阅[管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。 <p> **注意**：被动模式在用户上Windows Server 2016。|
+|禁用 <p> 或 <p> 已卸载|禁用或卸载时，Microsoft Defender 防病毒不用作防病毒应用。 不扫描文件，不修正威胁。 <p> 通常不建议禁用Microsoft Defender 防病毒卸载应用程序;如果可能，Microsoft Defender 防病毒非 Microsoft 反恶意软件/防病毒解决方案，请保持处于被动模式。 <p> 如果自动Microsoft Defender 防病毒，当非 Microsoft 防病毒/反恶意软件产品过期或停止提供实时保护免受病毒、恶意软件或其他威胁时，可自动重新启用它。 自动重新启用Microsoft Defender 防病毒有助于确保在终结点上维护防病毒保护。 <p> 如果你使用的是[非](limited-periodic-scanning-microsoft-defender-antivirus.md)Microsoft 防病毒应用，则你可能还使用有限定期扫描Microsoft Defender 防病毒引擎定期检查威胁。|
+|||
 
 ## <a name="see-also"></a>另请参阅
 

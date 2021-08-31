@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 了解如何查看 Bookings 活动的 4 个月视图
-ms.openlocfilehash: 8fc8a41a982135550ae711e435905c9bd39460994b1f6757b633aea49a7a48a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838197"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823849"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings 的报告信息
 
@@ -24,17 +24,17 @@ ms.locfileid: "53838197"
 
 ## <a name="see-four-months-of-booking-activity"></a>查看四个月的 Booking 活动
 
-1. 在 Bookings 日历仪表板上，选择 **"将更多数据导出为 TSV"。**
+1. In Microsoft 365， select the App launcher， and then select **Bookings**.
 
-:::image type="content" source="../media/bookings-activities.png" alt-text="Screenshot： 4 months of Bookings activity":::
+1. 在 Bookings 主页上，选择"导出 **"。**
+
+1. 在"**导出最近使用的数据"页上**，选择日期范围并选择"导出 **"。**
 
 1. 使用新名称保存文件，并指定.xls xlsx 格式。
 
 1. 打开 文件以查看 Bookings 日历的四个月视图。
 
 1. 选择报告的日期，然后选择"导出 **"。**
-
-:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="Screenshot： Pick a time range and export data to TSV file.":::
 
 1. 除了现有字段之外，下载的报告还包含一组新的字段。
 
@@ -47,7 +47,7 @@ ms.locfileid: "53838197"
 - **客户地址**
 - **竖线**
 - **服务**
-- **位置**
+- **Location**
 - **持续时间 (分钟)**
 - **事件类型**
 
@@ -60,4 +60,4 @@ ms.locfileid: "53838197"
 - **已注册与会者计数**   有多少客户预订了组预订服务。
 - **启用文本通知**   客户是否可以接收短信相关通知。
 - **自定义域**   与单个预订相关的所有问题和答案都组合在此字段中。
-- **预订 ID**   这有助于确定相同的组服务预订。
+- **预订 ID**   这有助于确定组服务的相同预订。

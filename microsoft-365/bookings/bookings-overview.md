@@ -9,18 +9,21 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Microsoft Bookings 应用的概述，其中包括基于 Web 的预订日历，并且与 Outlook 集成，以优化员工的日历并让客户灵活地预订约会。
-ms.openlocfilehash: 339c8c2457b340dd863b5c9f8e0382b84ef43c08
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256123"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823728"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-Microsoft Bookings 使安排和管理约会成为一种希望。 Bookings 包括基于 Web 的预订日历，Outlook以优化员工的日历，并让客户灵活地预订最适合他们的时间。 自动通知电子邮件可减少无显示并增强客户满意度，并且组织通过减少重复的计划任务节省时间。 通过内置灵活性和自定义功能，Bookings 可以设计为符合组织许多不同的部分的情况和需求。 Bookings 日历是邮件中的Exchange Online。
+Microsoft Bookings 使安排和管理约会成为一种希望。 Bookings 包括基于 Web 的预订日历，Outlook以优化员工的日历，并让客户灵活地预订最适合他们的时间。 电子邮件和短信通知可以减少未显示，并提高客户满意度 组织通过减少重复计划任务来节省时间。 通过内置灵活性和自定义功能，Bookings 可以设计为符合组织许多不同的部分的情况和需求。
 
-通过预订，可以通过联机会议和联机会议使[Microsoft Teams Skype for Business。](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) 作为联机会议预订的每个约会将创建一个发送给与会者的唯一会议链接，以便他们可以通过 Web 浏览器、电话拨入或 Skype 或 Teams 应用加入。 Bookings 还作为 Teams 中的应用提供，这允许你创建 Bookings 日历、分配员工，以及计划新约会和管理现有约会，而无需离开Teams。
+> [!NOTE]
+> Bookings 日历是 Exchange Online。
+
+使用 Bookings 通过 Microsoft Teams 和 Skype for Business 使组织的[](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)会议虚拟。 作为联机会议预订的每个约会将创建一个发送给与会者的唯一会议链接，以便他们可以通过 Web 浏览器、电话拨入或 Skype 或 Teams 应用加入。 Bookings 还作为 Teams 中的应用提供，这允许你创建 Bookings 日历、分配员工以及计划新约会和管理现有约会，而无需离开Teams。
 
 Bookings 有三个主要组成部分：
 
@@ -35,14 +38,8 @@ Bookings 有三个主要组成部分：
 以下订阅中提供了 Microsoft Bookings：
 
 - Office 365：A3、A5、E3、E5、F1、F3
-- Microsoft 365：A3、A5、E3、E5、F1、F3、Business 高级版
+- Microsoft 365：A3、A5、E3、E5、F1、F3、Business Standard、Business 高级版
 
 ## <a name="get-started-using-bookings"></a>开始使用 Bookings
-
-准备好开始了吗？
-
-观看此视频或按照以下步骤设置 Bookings。
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
 
 若要开始，请参阅 [获取对 Microsoft Bookings 的访问权限](get-access.md)。 若要打开或关闭 Bookings，请参阅[为组织打开或关闭 Bookings。](turn-bookings-on-or-off.md)

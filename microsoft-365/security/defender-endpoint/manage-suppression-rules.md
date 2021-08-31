@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 938c8b8764961930e80de562bdf9fc82f622da5d5b5793ca35c9e5a40a37ea09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806282"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823970"
 ---
 # <a name="manage-suppression-rules"></a>管理点规则
 
@@ -40,7 +40,7 @@ ms.locfileid: "53806282"
 可以查看所有抑制规则的列表，并可在一个地方管理它们。 还可以打开或关闭警报抑制规则。
 
 
-1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **规则**  >  **警报抑制"。** 将显示组织中用户创建的抑制规则列表。
+1. 在导航窗格中，**选择"设置** \> **终结点** \> **规则** \> **警报抑制"。** 将显示组织中用户创建的抑制规则列表。
 
 2. 通过单击规则名称旁边的复选框选择规则。
 
@@ -49,9 +49,9 @@ ms.locfileid: "53806282"
 
 ## <a name="view-details-of-a-suppression-rule"></a>查看抑制规则的详细信息
 
-1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **规则**  >  **警报抑制"。** 将显示组织中用户创建的抑制规则列表。
+1. 在导航窗格中，**选择"设置** \> **终结点** \> **规则** \> **警报抑制"。** 将显示组织中用户创建的抑制规则列表。
 
-2. 单击规则名称。 将显示规则的详细信息。 你将看到规则详细信息，如状态、范围、操作、匹配警报数、创建时间以及创建规则的日期。 您还可以查看关联的警报和规则条件。
+2. 单击规则名称。 将显示规则的详细信息。 你将看到规则详细信息，如状态、范围、操作、匹配警报数、创建时间以及规则创建日期。 您还可以查看关联的警报和规则条件。
 
 ## <a name="related-topics"></a>相关主题
 

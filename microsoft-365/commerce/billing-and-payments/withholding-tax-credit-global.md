@@ -1,11 +1,11 @@
 ---
-title: '向全球客户申请预扣税 (预扣) '
+title: '向全球客户申请预扣税 (申请) '
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: martinl, melmar
+ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,20 +20,20 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
-ms.openlocfilehash: c5e239968fb7048f6bd7a52c3b893ee3292aee1f1a6d93d4bde25689b27b5fca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 530345c7f9234e50ec33de23847c14e1b948df8c
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881443"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823716"
 ---
-# <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>向全球客户申请预扣税 (预扣) 
+# <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>向全球客户申请预扣税 (申请) 
 
 > [!NOTE]
 >
-> 如果你的组织位于印度，请参阅请求你的帐户预扣税的信用 [ (印度 ](withholding-tax-credit-india.md)客户) 。
+> 如果你的组织位于印度，请参阅向印度客户申请预扣税 [ (一 ](withholding-tax-credit-india.md)) 。
 
-某些客户通过 Azure (Web Direct Microsoft 365) 由位于该国家/地区中的 Microsoft 实体计费的发票。 如果你的组织向该实体进行跨边界付款，则你国家/地区税务机构可能会要求你预扣部分跨边界付款作为预扣税 (WHT) 。 如果在向 Microsoft 汇寄付款时预扣了税务机构所需的税款，本文将说明申请预扣税款的信用的过程。
+一些客户 (Azure Microsoft 365) Microsoft 实体计费的 Web Direct 发票。 如果你的组织向该实体进行跨边界付款，则你国家/地区税务机构可能需要你预扣部分跨边界付款作为预扣税 (WHT) 。 如果在向 Microsoft 汇寄付款时预扣了税务机构所需的税款，本文将说明申请预扣税款的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
@@ -63,7 +63,7 @@ ms.locfileid: "53881443"
 > - 预扣税信用表上的发票金额必须与预扣税证书或收据中标识的发票金额相匹配。 如果两个窗体之间的发票金额不同，则必须在预扣税额度表单中指定差异的原因。 审查团队会检查此信息，他们可能会提出明确的问题（如果需要）。
 > - 预扣税证书或收据文件必须采用以下文件格式之一：.PDF或图像 (。JPEG、.PNG 或 .GIF) 。 此外，文件名不得包含空格或特殊字符。 文件大小不能超过 1 MB。
 
-提交请求后，请求将进入审批流程，审批过程要么批准完成，要么发送回给你进行更正。
+提交请求后，它将进入审批流程，审批过程要么批准完成，要么发送回你进行更正。
 
 如果请求有问题，审阅团队可能需要更正预扣金额或替换证书或收据。 必须先重新提交请求，然后才能批准该请求。 审阅团队将批准请求或请求进行更多更改。
 

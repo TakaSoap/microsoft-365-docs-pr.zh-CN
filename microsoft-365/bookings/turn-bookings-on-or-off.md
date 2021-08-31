@@ -9,19 +9,19 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 了解如何在 Microsoft 365 中访问 Microsoft Bookings。
-ms.openlocfilehash: bcd7581a456ec570bacae64ca5bd1b96c23eddf95b0aa110530f156d3db6e9a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc0352166bf7cd20cfa10542d57da9fbd5b160f7
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861887"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823813"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>打开或关闭 Microsoft Bookings
 
 可以针对整个组织或特定用户打开或关闭预订。 当你为用户打开 Bookings 时，他们可以创建 Bookings 页面、创建日历并允许其他人预订时间。
 
 > [!NOTE]
-> 这些部分中所述的管理控制措施不适用于由世纪Office 365中国 (运营) 客户。
+> 这些部分中所述的管理控制不适用于由世纪Office 365中国 (运营) 客户。
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>使用"设置"功能为组织打开或关闭Microsoft 365 管理中心
 
@@ -60,26 +60,22 @@ ms.locfileid: "53861887"
 
 启用此设置后，在预订日历中作为员工添加的员工将在他们收到的电子邮件通知中查找"批准/拒绝"链接。
 
-此功能将逐步向全球Microsoft 365推出。 如果在"管理"中看不到此选项，Microsoft 365 管理中心检查。
-
 ## <a name="block-social-sharing-options"></a>阻止社交共享选项
 
 管理员可以控制如何在社交网络上共享预订页面。 此设置在 Bookings Microsoft 365 管理中心下 \> **设置设置** \> **可用**。
 
-此功能将逐步向全球Microsoft 365推出。 如果在"管理"中看不到此选项，Microsoft 365 管理中心检查。
-
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>仅允许所选用户创建 Bookings 日历
 
-通过使用策略限制，您可以限制许可用户创建 Bookings 日历。 必须先为整个组织启用 Bookings。 你组织中所有用户都将拥有 Bookings 许可证，但只有策略中包含的用户才能创建 Bookings 日历，并完全控制谁可以访问他们创建的日历。
+通过使用策略限制，你可以限制许可用户创建 Bookings 日历。 必须先为整个组织启用 Bookings。 你组织中所有用户都将拥有 Bookings 许可证，但只有策略中包含的用户才能创建 Bookings 日历，并完全控制谁可以访问他们创建的日历。
 
 此策略中包含的用户可以创建新的 Bookings 日历，并可以添加为任何容量的用户 (包括管理员角色) 现有 Bookings 日历。 未包含在此策略中的用户将无法创建新的 Bookings 日历，并且如果他们尝试这样做，将收到错误消息。
 
-你需要使用 PowerShell 运行Exchange Online命令。 有关运行 cmdlet Exchange Online，请参阅 连接[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+你需要使用 PowerShell 运行以下Exchange Online。 有关运行 cmdlet Exchange Online，请参阅 连接 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 > [!IMPORTANT]
 > 以下步骤假定尚未在组织中Outlook Web App (其他) OWA 邮箱策略。
 
-1. 为应允许其创建 Bookings 日历的用户创建新的邮箱策略。  (新邮箱策略默认允许创建 Bookings 日历) 
+1. 为应允许其创建 Bookings 日历的用户创建新的邮箱策略。  (新邮箱策略默认情况下允许创建 Bookings 日历。) 
 
    ```PowerShell
    New-OwaMailboxPolicy -Name "BookingsCreators"

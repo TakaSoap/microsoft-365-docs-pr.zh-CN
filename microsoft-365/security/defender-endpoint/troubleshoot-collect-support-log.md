@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 83f6853217112741168876d92b9440869e29a5c1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 347b999dd289f00e2493f2cf5d8c003e0dc24f1a
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575500"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823934"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
 
@@ -81,6 +81,11 @@ ms.locfileid: "58575500"
 >   ```
 >
 > - 有关在计算机本地收集数据（如果计算机未与适用于 Endpoint 云服务的 Microsoft Defender 通信，或未按预期显示在 Microsoft Defender for Endpoint 门户中）上的数据详细信息，请参阅验证与 [Microsoft Defender for Endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)服务 URL 的客户端连接。
+> 
+> - 如 [实时响应命令示例中](live-response-command-examples.md)所述，你可能想要在命令末尾使用"&"符号来收集日志作为后台操作：
+>   ```console
+>   Run MDELiveAnalyzer.ps1&
+>   ```
 
 
 ## <a name="see-also"></a>另请参阅

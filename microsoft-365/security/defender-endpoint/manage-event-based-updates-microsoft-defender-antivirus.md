@@ -1,5 +1,5 @@
 ---
-title: 在特定Microsoft Defender 防病毒后应用更新
+title: 在某些Microsoft Defender 防病毒之后应用更新
 description: 管理Microsoft Defender 防病毒启动或接收云提供的检测报告后应用安全智能更新的方式。
 keywords: 更新， 保护， 强制更新， 事件， 启动， 检查最新， 通知
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0fc7b51988f67c0f2e570e23bdb58e1aa32d35fe55347d1ace550de80f4d6fb6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806720"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823837"
 ---
 # <a name="manage-event-based-forced-updates"></a>管理基于事件的强制更新
 
@@ -32,7 +32,7 @@ ms.locfileid: "53806720"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒允许你确定更新是应该 (，还是不应) 发生在某些事件之后，例如启动时还是从云提供的保护服务接收特定报告之后。
+Microsoft Defender 防病毒允许你确定更新是应 (，还是不应) 在某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>在运行扫描之前检查保护更新
 
@@ -40,11 +40,11 @@ Microsoft Defender 防病毒允许你确定更新是应该 (，还是不应) 发
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 Configuration Manager 检查保护更新
 
-1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)   >    >  
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述Endpoint Protection \>  \> **反** 恶意软件策略) 
 
-2. 转到计划 **扫描** 部分，将运行扫描之前检查最新的安全 **智能更新** 设置为 **是**。
+2. 转到计划 **扫描** 部分，将运行扫描之前检查最新的 **安全智能更新** 设置为 **是**。
 
-3. 单击“**确定**”。
+3. 单击“确定”。
 
 4. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -56,11 +56,11 @@ Microsoft Defender 防病毒允许你确定更新是应该 (，还是不应) 发
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **扫描**  >  **Microsoft Defender 防病毒**  >  **组件**。
+4. 展开树以Windows **扫描** \> **Microsoft Defender 防病毒** \> **组件**。
 
 5. 在运行计划 **扫描之前** ，双击检查最新的病毒和间谍软件定义，将选项设置为 **已启用**。
 
-6. 单击“**确定**”。
+6. 单击“确定”。
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 PowerShell cmdlet 检查保护更新
 
@@ -74,7 +74,7 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>使用 Windows Management Instruction (WMI) 在运行扫描之前检查保护更新
 
-对 [**下列** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 CheckForSignaturesBeforeRunningScan
@@ -92,11 +92,11 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows安全** Microsoft Defender 防病毒  >    >  **更新的组件**。
+4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
 
-5. 双击启动时 **检查最新的病毒和** 间谍软件定义，将选项设置为 **已启用**。 
+5. 双击启动时 **检查最新的病毒和** 间谍软件定义，将选项设置为 **已启用**。
 
-6. 单击“**确定**”。
+6. 单击“确定”。
 
 您还可以使用组策略、PowerShell 或 WMI 配置Microsoft Defender 防病毒启动时检查更新，即使更新未运行。
 
@@ -108,11 +108,11 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows安全** Microsoft Defender 防病毒  >    >  **更新的组件**。
+4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
 
 5. 双击启动时 **启动安全智能更新** ，将选项设置为 **已启用**。
 
-6. 单击“**确定**”。
+6. 单击“确定”。
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>当不存在更新时，使用 PowerShell cmdlet Microsoft Defender 防病毒下载更新
 
@@ -126,7 +126,7 @@ Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 
 ### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在 Microsoft Defender 防病毒 不存在时下载更新
 
-对 [**下列** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 SignatureDisableUpdateOnStartupWithoutEngine
@@ -150,12 +150,12 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows安全** Microsoft Defender 防病毒  >    >  **更新的组件**。
+4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
 
 5. 双击允许基于 Microsoft **MAPS** 报告进行实时安全智能更新，将选项设置为 **已启用**。 单击" **确定**"。
 
 6. **允许通知禁用 Microsoft MAPS 的基于** 定义的报告，将选项设置为 **已启用**。 单击" **确定**"。
-    
+
 > [!NOTE]
 > **允许通知以禁用基于定义的报告** 使 Microsoft MAPS 可以禁用已知导致误报报告的定义。 必须配置计算机以加入 Microsoft MAPS，此函数正常运行。
 

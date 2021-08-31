@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender 防病毒应用程序中Windows 安全中心
+title: Microsoft Defender 防病毒应用中Windows 安全中心
 description: 现在Microsoft Defender 防病毒应用程序中包含的Windows 安全中心，你可以查看、比较和执行常见任务。
 keywords: wdav， 防病毒， 防火墙， 安全， windows
 search.product: eADQiWindows 10XVcnh
@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a247aac370ba65e4ede48b0232ded1d93f6e8b99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568884"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823764"
 ---
-# <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender 防病毒应用程序中Windows 安全中心
+# <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender 防病毒应用中Windows 安全中心
 
 **适用于：**
 
@@ -41,26 +41,26 @@ ms.locfileid: "58568884"
 
 有关[可在Windows 安全中心](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)监视的其他 Windows 安全功能，请参阅本文。
 
-the Windows 安全中心 app is a client interface on Windows 10， version 1703 and later. 这不是用于Microsoft Defender 安全中心 Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)的 Web 门户。
+Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户端接口。 不是用于Microsoft Defender 安全中心 Microsoft [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)的 Web 门户。
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>查看应用程序应用中的病毒和威胁Windows 安全中心设置
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="病毒和威胁防护应用中Windows 安全中心设置。":::
 
-1. 通过单击Windows 安全中心中的防护图标或搜索 Defender 的开始菜单打开 **应用。**
+1. 通过Windows 安全中心任务栏中的防护图标或搜索 Defender 的"开始"菜单打开"开始 **"菜单。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
-   
-以下各节介绍如何在查看或交互由 Windows 安全中心 应用中的 Microsoft Defender 防病毒 所提供的威胁防护时执行一些最常见的任务。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
+
+以下各节介绍如何在查看或交互由 Microsoft Defender 防病毒 应用中提供的威胁防护时执行一些Windows 安全中心任务。
 
 > [!NOTE]
 > 如果使用组策略配置和部署这些设置，本部分中所述的设置将灰出，并且无法用于各个终结点。 通过组策略对象进行的更改必须先部署到个别终结点，然后 Windows 设置中的相关设置才会更新。 Configure [end-user interaction with Microsoft Defender 防病毒](configure-end-user-interaction-microsoft-defender-antivirus.md)主题介绍了如何配置本地策略覆盖设置。
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>使用应用运行Windows 安全中心扫描
 
-1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
+1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 选择 **快速扫描**。 或者，若要运行完全扫描，请选择"扫描选项"，然后选择一个选项，例如"**完全扫描"。**
 
@@ -68,19 +68,19 @@ the Windows 安全中心 app is a client interface on Windows 10， version 1703
 
 :::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="安全智能版本号。":::
 
-1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
+1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
-3. 选择 **病毒&威胁防护更新**。 将显示当前安装的版本以及一些有关下载时间的信息。 你可以根据可手动下载的最新版本检查当前版本，或查看该版本的更改日志。 请参阅[安全智能更新，Microsoft Defender 防病毒 Microsoft 反恶意软件](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
+3. 选择 **病毒&威胁防护更新**。 将显示当前安装的版本以及一些有关下载时间的信息。 你可以根据可手动下载的最新版本检查当前版本，或查看该版本的更改日志。 请参阅[安全智能更新，Microsoft Defender 防病毒 Microsoft 反恶意软件](https://www.microsoft.com/wdsi/defenderupdates)。
 
 4. 选择 **"检查更新"，** 以下载 (保护更新（如果有) ）。
 
-## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>确保在Microsoft Defender 防病毒应用中启用Windows 安全中心功能
+## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>确保Microsoft Defender 防病毒应用中启用了Windows 安全中心功能
 
-1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
+1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 选择 **病毒&威胁防护设置。**
 
@@ -88,46 +88,51 @@ the Windows 安全中心 app is a client interface on Windows 10， version 1703
 
     > [!NOTE]
     > 如果关闭 **实时保护，** 它将在短暂延迟后自动重新启用。 这是为了确保你免受恶意软件和威胁的侵害。
-    > 如果安装另一个防病毒产品，Microsoft Defender 防病毒自动禁用自身，并会在 Windows 安全中心 应用中指示。 将显示一个设置，允许你启用 [有限定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)。
+    > 如果安装另一个防病毒产品，Microsoft Defender 防病毒自动禁用自身，并指示在 Windows 安全中心 应用中。 将显示一个设置，允许你启用 [有限定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)。
 
-## <a name="add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app"></a>在应用Microsoft Defender 防病毒添加Windows 安全中心项
+## <a name="add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app"></a>在应用程序Microsoft Defender 防病毒添加Windows 安全中心排除项
 
-1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
+1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 在"**管理设置"下**，选择 **"病毒&威胁防护设置"。**
 
-4. 在"**排除项"** 设置下，选择 **"添加或删除排除项"。** 
+4. 在"**排除项"** 设置下，选择 **"添加或删除排除项"。**
 
-5. Select the plus icon (**+**) to choose the type and set the options for each exclusion. 
+5. Select the plus icon (**+**) to choose the type and set the options for each exclusion.
 
 下表汇总了排除类型以及发生的情况：
 
-|排除类型  |定义者  |发生的情况  |
-|---------|---------|---------|
-|**文件** |位置 <br/>例如：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
-|**Folder**    |位置 <br/>例如：`c:\test\sample`       |指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。         |
-|**文件类型**   |文件扩展名 <br/>例如：`.test` |设备上任意位置具有扩展名的所有文件都将被用户跳过 `.test` Microsoft Defender 防病毒。         |
-|**进程**     |可执行文件路径 <br>例如：`c:\test\process.exe`         |特定进程以及该流程打开的任何文件将被用户跳过Microsoft Defender 防病毒。         |
+<br>
+
+****
+|排除类型|定义者|发生的情况|
+|---|---|---|
+|**文件**|位置 <br/>例如：`c:\sample\sample.test`|特定文件将被用户跳过Microsoft Defender 防病毒。|
+|**Folder**|位置 <br/>例如：`c:\test\sample`|指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。|
+|**文件类型**|文件扩展名 <br/>例如：`.test`|设备上任意位置 `.test` 具有扩展名的所有文件都将被用户跳过Microsoft Defender 防病毒。|
+|**进程**|可执行文件路径 <br>例如：`c:\test\process.exe`|特定进程以及该流程打开的任何文件将被用户跳过Microsoft Defender 防病毒。|
+|
 
 若要了解详细信息，请参阅以下资源：
-- [根据文件扩展名和文件夹位置配置和验证排除项](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
+
+- [根据文件扩展名和文件夹位置配置和验证排除项](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [为进程打开的文件配置排除项](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="review-threat-detection-history-in-the-windows-defender-security-center-app"></a>查看安全中心应用中Windows Defender检测历史记录
 
-1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
+1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 选择 **"保护历史记录"。** 将列出任何最近的项目。
 
 ## <a name="set-ransomware-protection-and-recovery-options"></a>设置勒索软件保护和恢复选项
 
-1. 打开"Windows 安全中心"应用，搜索"安全"的"开始"菜单，然后选择 **"Windows 安全中心"。**
+1. 通过Windows 安全中心"安全"的"开始"菜单，然后选择"开始"菜单，打开 **"Windows 安全中心"。**
 
-2. 选择病毒 **&威胁防护** 磁贴 (左侧菜单栏上的防护) 。
+2. 选择病毒 **&威胁** 防护磁贴 (左侧菜单栏上的防护) 。
 
 3. 在 **勒索软件保护下**，选择 **管理勒索软件保护**。
 
@@ -136,4 +141,5 @@ the Windows 安全中心 app is a client interface on Windows 10， version 1703
 5. 若要设置勒索软件恢复选项，请选择勒索软件数据恢复下的"设置"，并按照链接或设置 OneDrive 帐户的说明操作，以便你可以轻松从勒索软件攻击中恢复。
 
 ## <a name="see-also"></a>另请参阅
+
 - [Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

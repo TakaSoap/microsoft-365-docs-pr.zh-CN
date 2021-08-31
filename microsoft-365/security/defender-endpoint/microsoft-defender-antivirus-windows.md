@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: c3ec44716cd466b3bfe4440c6cdf63fe00376f75
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: d28b27dc13f57f70a6e7d13af760c553ede545b8
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255194"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823994"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows 10 中的 Microsoft Defender 防病毒
 
@@ -28,7 +28,7 @@ ms.locfileid: "58255194"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保护的主要组件。 此保护结合了机器学习、大数据分析、深度威胁抵御研究和 Microsoft 云基础结构来保护组织中的设备（或终结点）。 Microsoft Defender 防病毒内置于 Windows 中，与 Microsoft Defender for Endpoint 一起在设备上和云中提供保护。 
+Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保护的主要组件。 此保护结合了机器学习、大数据分析、深度威胁抵御研究和 Microsoft 云基础结构来保护组织中的设备（或终结点）。 Microsoft Defender 防病毒内置于 Windows 中，与 Microsoft Defender for Endpoint 一起在设备上和云中提供保护。
 
 ## <a name="compatibility-with-other-antivirus-products"></a>与其他防病毒软件产品的兼容性
 
@@ -38,11 +38,16 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 
 下表介绍了 Microsoft Defender 防病毒处于主动模式、被动模式或已禁用模式下应发生的情况。
 
-| 模式  | 发生的情况  |
-|---------|---------|
-| 主动模式 | 在主动模式下，Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，修正威胁，并将检测到的威胁列在组织的安全报告中和 Windows 安全中心应用中。 |
-| 被动模式 | 在被动模式下，不将 Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，并报告检测到的威胁，但 Microsoft Defender 防病毒不会修正威胁。 <br/><br/>**重要**： Microsoft Defender 防病毒只能在载入到 Microsoft Defender for Endpoint 的终结点上以被动模式运行。 请参阅 [在被动模式](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)中运行Microsoft Defender 防病毒的要求。  |
-| 已禁用或卸载  | 在已禁用或卸载时，不使用 Microsoft Defender 防病毒。 不会扫描文件，并且不会修正威胁。 通常，我们不建议禁用或卸载 Microsoft Defender 防病毒。  |
+<br>
+
+****
+
+|模式|发生的情况|
+|---|---|
+|主动模式|在主动模式下，Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，修正威胁，并将检测到的威胁列在组织的安全报告中和 Windows 安全中心应用中。|
+|被动模式|在被动模式下，不将 Microsoft Defender 防病毒用作设备上的主防病毒应用。 将扫描文件，并报告检测到的威胁，但 Microsoft Defender 防病毒不会修正威胁。 <p> **重要**： Microsoft Defender 防病毒只能在载入到 Microsoft Defender for Endpoint 的终结点上以被动模式运行。 请参阅 [在被动模式](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode)中运行Microsoft Defender 防病毒的要求。|
+|已禁用或卸载|在已禁用或卸载时，不使用 Microsoft Defender 防病毒。 不会扫描文件，并且不会修正威胁。 通常，我们不建议禁用或卸载 Microsoft Defender 防病毒。|
+|
 
 要了解详细信息，请参阅 [Microsoft Defender 防病毒](microsoft-defender-antivirus-compatibility.md)。
 
@@ -81,7 +86,7 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>获取防病毒/反恶意软件平台更新
 
-请务必确保 Microsoft Defender 防病毒或任何防病毒/反恶意软件解决方案保持最新。 Microsoft 定期发布更新，以帮助确保你的设备具有最新技术来防范新的恶意软件和攻击技术。 要了解详细信息，请参阅 [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。 
+请务必确保 Microsoft Defender 防病毒或任何防病毒/反恶意软件解决方案保持最新。 Microsoft 定期发布更新，以帮助确保你的设备具有最新技术来防范新的恶意软件和攻击技术。 要了解详细信息，请参阅 [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
 ## <a name="see-also"></a>另请参阅
 

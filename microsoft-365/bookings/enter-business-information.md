@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 按照以下说明创建"关于我们"页面，包括 Microsoft Bookings 中的公司名称、地址、电话号码、网站 URL、徽标和营业时间。
-ms.openlocfilehash: fdf96347a080d24cfb06353c96622484ed54c683
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0c0b33f38cd92b9d99114d2b896c0e86eb92f2ee
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571563"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823549"
 ---
 # <a name="enter-your-business-information"></a>输入商业信息
 
@@ -31,29 +31,29 @@ ms.locfileid: "58571563"
 
 1. In Microsoft 365， select the App launcher， and then select **Bookings**.
 
-1. 在导航窗格中，选择"业务 **信息"。**
+1. 在导航窗格中，选择 **"设置**  ->  **业务信息"。**
 
-1. 输入要用于 Bookings 日历的相关名称、地址和电话号码。
+1. 在" **基本详细信息** "部分，输入要用于 Bookings 日历的业务名称、地址和电话号码。
 
-1. 在 **"将客户答复** 发送到"中，键入首选电子邮件地址，其中应转发对预订确认和提醒的电子邮件答复。
+:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot： Page to enter your basic business information":::
 
-1. 在 **"网站 URL"** 字段中，输入企业主页的 URL。
+在 **"将客户答复** 发送到"中，键入首选电子邮件地址，其中应转发对预订确认和提醒的电子邮件答复。
 
-1. 输入 **隐私策略和****条件&** URL。
+在 **"网站 URL"** 字段中，输入企业主页的 URL。
 
-1. 选择 **保存**。
+输入 **隐私策略和****条件&** URL。
 
-## <a name="set-your-business-hours"></a>设置营业时间
+1. 在 **"业务徽标** "部分，如果尚未将业务徽标上载到 Bookings 应用，请添加业务徽标。
+
+1. 在" **设置营业时间"部分** ，将工作时间设置为您的营业时间。 这些时段是限制所有预订的时间。 可以针对每项服务以及"服务和员工"页面中的每个员工设置有关何时预订约会 **的其他** 时间限制。 
+
+在"业务信息"页上的"营业时间"下，使用下拉列表选择每天的开始时间和结束时间。 单击 **+** 添加开始时间和结束时间选择器。
 
 默认情况下，Bookings 应用中的工作时间设置为 8 a.m。 从星期一到星期五的下午 5 点到下午 5 点。 时间以 15 分钟为增量提供。 Bookings 应用使用 12 小时制。
 
-将 **工作时间设置为** 您的营业时间。 这些时段是限制所有预订的时间。 可以分别针对每个服务和"员工"页中的每项服务和每个员工设置有关何时预订约会的其他时间限制。
+1. 选择“**保存**”。
 
-1. 在"业务信息"页上的"营业时间"下，使用下拉列表选择每天的开始时间和结束时间。
-
-1. 单击 **+** 添加开始时间和结束时间选择器。
-
-## <a name="how-to-set-hours-for-a-split-shift"></a>如何设置拆分班次的小时数
+### <a name="how-to-set-hours-for-a-split-shift"></a>如何设置拆分班次的小时数
 
 你可能需要每天或每周的一部分时间阻止员工会议、更新清单或处理其他节奏的业务详细信息。 Bookings 应用允许你将客户约会限制为指定的时间段。
 
@@ -79,7 +79,7 @@ ms.locfileid: "58571563"
 
 1. 在"业务信息"页上的"Upload徽标"下，选择"更改 **"。**
 
-1. 选择 **Upload照片"**。
+1. 选择 **"Upload照片"。**
 
    ![上载照片按钮的图像。](../media/bookings-upload-photo.png)
 

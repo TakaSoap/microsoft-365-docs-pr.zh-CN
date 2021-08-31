@@ -9,26 +9,26 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: 在 Microsoft Bookings 应用中更改预订页面的颜色主题。
-ms.openlocfilehash: d1cd08d33d90424fa091f6dcce3a9878bb662dfe
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5faf769eeee8a34989e1fc3f1d5859c9770f85a3
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570349"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822732"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>定制并发布预订页面
 
-预订页面是设置面向外部客户的预订页面的外观的地方。 自定义并发布预订页面后，客户将使用它来预订约会。
+预订页面是设置面向外部的预订页面的外观的地方。 自定义并发布预订页面后，用户就会使用它来预订约会。
 
-若要自定义你的预订页面，请登录到 [Office.com，](https://office.com)然后转到 **Bookings** \> **Booking 页面**。 可以使用以下选项自定义预订页面。 设置预订页面后，你可以发布它，以便客户可以开始预订约会。
+若要自定义你的预订页面，请登录到 [Office.com，](https://office.com)然后转到 **Bookings** \> **Booking 页面**。 可以使用以下选项自定义预订页面。 设置预订页面后，你可以发布它，以便用户可以开始预订约会。
 
 1. In Microsoft 365， select the app launcher， and then select **Bookings**.
 
-2. 在导航窗格中，选择"预订 **页面"。**
+2. 在导航窗格中，选择 **"设置**  ->  **预订"页面**。
 
 以下部分提供有关设置预订页面以及如何发布页面的信息。
 
-- **预订页面状态** 实时发布日历，使服务可预订。 你可以选择通过电子邮件和 Twitter 共享日历链接，以及将"立即预订"按钮添加到Facebook 页面。 还可将链接嵌入到组织的网站中。
+- **配置预订页面** 实时发布日历，使服务可预订。 你可以选择通过电子邮件和 Twitter 共享日历链接，以及将"立即预订"按钮添加到Facebook 页面。 还可将链接嵌入到组织的网站中。
 
     内部预订页面如下所示：
 
@@ -44,9 +44,9 @@ ms.locfileid: "58570349"
 
 - **可用性** 此选项可设置服务的特定时间和日期范围的可用性。 否则，Bookings 将默认为营业时间。 你可以在此处 **对假日** 或延长时间等方案使用可用性选项。
 
-- **自定义页面** 选择页面页面上显示的颜色Self-Service徽标，例如，确保品牌一致性。
+- **自定义页面** 选择显示在页面上的颜色和Self-Service，例如，确保品牌一致性。
 
-- **区域设置和时区设置** 你可以在此处为"开始"页面设置时区和Self-Service首选项。 我们建议设置本地时区。 对于您的 Self-Service 页面的访问者，Bookings 会自动检测其本地时区，并会在自己的时区中向用户显示可用性。 例如，如果约会在 PST 下午 1：00 可用，则 CST 中的人员将看到可用时间显示为 3：00pm CST。
+- **区域设置和时区设置** 你可以在此处为"会议"页面设置时区和Self-Service首选项。 我们建议设置本地时区。 对于您的 Self-Service 页面的访问者，Bookings 会自动检测其本地时区，并会在自己的时区显示其可用性。 例如，如果约会在 PST 下午 1：00 可用，则 CST 中的人员将看到可用时间显示为 3：00pm CST。
 
 发布预订页面后，客户将看到预订页面，他们可以在这里与自己预订约会。 面向客户的预订页面如下所示：
 

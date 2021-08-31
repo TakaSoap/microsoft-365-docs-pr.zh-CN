@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e469bc9d9ce3de8cd1425231f4b4b90247da2317a6ffc90ded86f5e4880563cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ecd6371a75ec4a9156f7d6bccf59045f0700490
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806744"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822768"
 ---
-# <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除 
+# <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,34 +34,24 @@ ms.locfileid: "53806744"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)。
 
-自动文件夹排除项允许你指定自动调查将跳过的文件夹。 
+自动文件夹排除项允许你指定自动调查将跳过的文件夹。
 
 可以控制要跳过的文件夹的以下属性：
-- Folders 
-- 文件的扩展名
-- 文件名
 
+- **文件夹**：可以指定要跳过的文件夹及其子文件夹。
 
-**Folders**<br>
-可以指定要跳过的文件夹及其子文件夹。 
+  > [!NOTE]
+  > 目前尚不支持使用通配符作为排除目录下的文件的方法。
 
+- **文件的扩展名**：可以指定要排除在特定目录中的扩展名。 扩展是阻止攻击者使用排除文件夹隐藏攻击的一种方法。 扩展明确定义要忽略的文件。
 
->[!NOTE]
->目前尚不支持使用通配符作为排除目录下的文件的方法。 
-
-
-**Extensions**<br>
-可以指定要排除在特定目录中的扩展。 扩展是阻止攻击者使用排除文件夹隐藏攻击的一种方法。 扩展明确定义要忽略的文件。 
-
-**文件名**<br>
-可以指定要排除在特定目录中的文件名。 名称是阻止攻击者使用排除文件夹隐藏攻击的一种方法。 名称明确定义要忽略的文件。 
-
-
+- **文件名**：可以指定要排除在特定目录中的文件名。 名称是阻止攻击者使用排除文件夹隐藏攻击的一种方法。 名称明确定义要忽略的文件。
 
 ## <a name="add-an-automation-folder-exclusion"></a>添加自动化文件夹排除
-1. 在导航窗格中，**选择"设置**  >    >  **终结点规则**  >  **自动化文件夹排除项"。**  
 
-2. 单击 **"新建文件夹排除"。**  
+1. 在导航窗格中，**选择"设置** \>  \> **终结点规则** \> **自动化文件夹排除项"。**
+
+2. 单击 **"新建文件夹排除"。**
 
 3. 输入文件夹详细信息：
 
@@ -70,23 +60,23 @@ ms.locfileid: "53806744"
     - 文件名
     - 说明
 
-4. 单击 **保存**。
+4. 单击“**保存**”。
 
->[!NOTE]
+> [!NOTE]
 > 用于收集或检查已排除文件的 Live Response 命令将失败，并出现错误："已排除文件"。 此外，自动调查将忽略排除的项目。
 
-## <a name="edit-an-automation-folder-exclusion"></a>编辑自动化文件夹排除 
-1. 在导航窗格中，**选择"设置**  >    >  **终结点规则**  >  **自动化文件夹排除项"。** 
+## <a name="edit-an-automation-folder-exclusion"></a>编辑自动化文件夹排除
 
-2. 单击 **文件夹** 排除上的"编辑"。  
-
+1. 在导航窗格中，**选择"设置** \>  \> **终结点规则** \> **自动化文件夹排除项"。**
+2. 单击 **文件夹** 排除上的"编辑"。
 3. 更新规则的详细信息，**然后单击保存。**
 
-## <a name="remove-an-automation-folder-exclusion"></a>删除自动化文件夹排除 
-1. 在导航窗格中，**选择"设置**  >    >  **终结点规则**  >  **自动化文件夹排除项"。**  
-2. 单击 **"删除排除"。** 
+## <a name="remove-an-automation-folder-exclusion"></a>删除自动化文件夹排除
 
+1. 在导航窗格中，**选择"设置** \>  \> **终结点规则** \> **自动化文件夹排除项"。**
+2. 单击 **"删除排除"。**
 
 ## <a name="related-topics"></a>相关主题
+
 - [管理允许/阻止的自动化列表](manage-indicators.md)
 - [管理自动化文件上载](manage-automation-file-uploads.md)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: martinl, melmar
+ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,20 +21,20 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b588f95309fcaa16bcee1ad71eaaf21ef053eadcd897bc0955eb58c2fc950b9e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1856f9b7d56f39dbc4326c9175c2e70fc8c7c0c7
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809084"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823692"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
 
 > [!NOTE]
 >
-> 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球 ](withholding-tax-credit-global.md)客户) 。
+> 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球客户 ](withholding-tax-credit-global.md)) 。
 
-印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行交叉付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
+印度客户收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
@@ -42,7 +42,7 @@ ms.locfileid: "53809084"
 
 您的 WHT 请求必须包含以下项：
 
-- 客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
+- 由客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
 - 经数字签名的 TDS (16A) 由由客户税务部门 (颁发的 16A) 
 
 通过通过 Microsoft 支持打开票证来提交 WHT 请求。
@@ -53,7 +53,7 @@ ms.locfileid: "53809084"
 
 您的 WHT 请求必须包含以下项：
 
-- 客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
+- 由客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
 - 经数字签名的 TDS (16A) 由由客户税务部门 (颁发的 16A) 
 
 通过通过 Microsoft 支持打开票证提交 WHT 请求
@@ -62,7 +62,7 @@ ms.locfileid: "53809084"
 
 下表显示了在每个季度提交经过数字签名的 TDS 证书的截止日期 (16A) 表单。
 
-| 季度 | Period | TDS 证书发布截止日期 (16A)  | 提交表单 16A 与预扣税信用表的延长日程表 |
+| 季度 | Period | TDS 证书颁发截止日期 (16A)  | 提交表单 16A 与预扣税信用表的延长日程表 |
 |-|-|-|-|
 | 1 | 4 月 - 6 月 | 8 月 15 日 | 8 月 31 日 |
 | 2 | 7 月 - 9 月 | 15-Nov | 30-Nov |
@@ -75,7 +75,7 @@ ms.locfileid: "53809084"
 > - 预扣税信用表上的发票金额必须与 TDS 证书中标识的发票金额相匹配。 如果两个窗体之间的发票金额不同，则必须在预扣税额度表单中指定差异的原因。 审查团队会检查此信息，他们可能会提出明确的问题（如果需要）。
 > - TDS 证书文件必须采用以下文件格式之一：.PDF或仅 Image (。JPEG、.PNG 或 .GIF) 。 此外，文件名不得包含空格或特殊字符。 文件大小不能超过 1 MB。
 
-提交请求后，请求将进入审批流程，审批过程要么批准完成，要么发送回给你进行更正。
+提交请求后，它将进入审批流程，审批过程要么批准完成，要么发送回你进行更正。
 
 如果请求有问题，审阅团队可能需要更正预扣金额或替换 TDS 证书。 必须先重新提交请求，然后才能批准该请求。 审阅团队将批准请求或请求进行更多更改。
 

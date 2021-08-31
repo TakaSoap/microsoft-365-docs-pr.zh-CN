@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: badf2f18f85b2f8776dec4b119e58ad3839c9074db17f24083ca648c8c24e730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d00c4a541951ee1c241a52a19b8ec27301b793a1
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884543"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823789"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移动设备和虚拟机 （VM） 的更新
 
@@ -45,9 +45,9 @@ ms.locfileid: "53884543"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>选择在没有 WSUS 连接的情况下在移动计算机上加入 Microsoft 更新
 
-当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。 
+当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。
 
-这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新 (Microsoft 更新) 保护更新也可以传递到设备。
+这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新， (Microsoft 更新) 保护更新也可以传递到设备。
 
 可以通过以下方法之一选择在移动设备上使用 Microsoft 更新：
 
@@ -63,10 +63,9 @@ ms.locfileid: "53884543"
 
 3. 选择 **"策略****"，然后选择"管理模板"。**
 
-4. 展开树以Windows **签名Microsoft Defender 防病毒**  >    >  **组件**。
+4. 展开树以 **Windows签名Microsoft Defender 防病毒** \>  \> **组件**。
 
 5. 将 **"允许安全智能更新从 Microsoft 更新"设置为****"已启用"，** 然后选择"确定 **"。**
-
 
 ### <a name="use-a-vbscript-to-opt-in-to-microsoft-update"></a>使用 VBScript 选择加入 Microsoft 更新
 
@@ -76,25 +75,25 @@ ms.locfileid: "53884543"
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>手动选择加入 Microsoft 更新
 
-1. 在 **Windows选择** 加入 **&** 更新"中打开"更新""安全设置"。
+1. 在 **Windows选择** 加入 **&** 更新"中打开"更新"和"安全设置"。
 
 2. 选择 **"高级选项** "。
 
-3. 选中"更新 Microsoft 产品 **时为** 我提供其他 Microsoft 产品的更新Windows。
+3. 选中"更新 Microsoft 产品时为我提供 **其他 Microsoft** 产品的更新Windows。
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>使用电池电源运行时阻止安全智能更新
 
-你可以将Microsoft Defender 防病毒配置为仅在电脑连接到有线电源时下载保护更新。 
+你可以将Microsoft Defender 防病毒配置为仅在电脑连接到有线电源时下载保护更新。
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>使用组策略阻止使用电池电源进行安全智能更新
 
-1.  在组策略管理计算机上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，选择要配置的组策略对象，然后打开它进行编辑。
+1. 在组策略管理计算机上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，选择要配置的组策略对象，然后打开它进行编辑。
 
-2.  在组 **策略管理编辑器中** ，转到计算机 **配置**。
+2. 在组 **策略管理编辑器中** ，转到计算机 **配置**。
 
-3.  选择 **"策略****"，然后选择"管理模板"。**
+3. 选择 **"策略****"，然后选择"管理模板"。**
 
-4.  展开树以Windows **签名** Microsoft Defender 防病毒的组件，然后将使用电池电源运行时允许安全智能更新设置为  >    >  **已禁用**。  然后，选择“**确定**”。 
+4. 展开树以Windows **签名** Microsoft Defender 防病毒的组件，然后将使用电池电源运行时允许安全智能更新设置为 \>  \> **已禁用**。  然后，选择“**确定**”。
 
 此操作可防止在电脑使用电池电源时下载保护更新。
 

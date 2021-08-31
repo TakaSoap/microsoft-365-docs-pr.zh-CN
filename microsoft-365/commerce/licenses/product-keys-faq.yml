@@ -8,192 +8,192 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
+  ms.service: o365-administration
+  ms.custom: commerce_vl
   localization_priority: Normal
   description: 产品密钥常见问题
-  ms.openlocfilehash: f50bd78e745e19cf97a4e6138d3d677fc30f5e16
-  ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+  ms.openlocfilehash: ff8547935d82224d41b02131440679e0f63b32fb
+  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "58247059"
+  ms.lasthandoff: 08/31/2021
+  ms.locfileid: "58823608"
 title: 产品密钥常见问题
 summary: ''
 sections:
 - name: 概要
   questions:
   - question: >
-      What are product keys?
+      什么是产品密钥？
     answer: >
-      A product key allows you to use a software product you have licensed under a specific volume licensing program. The product keys listed in the Microsoft 365 admin center should be used only with volume license products and are intended for use only by your organization.
+      产品密钥允许你使用你根据特定批量许可计划许可的软件产品。 产品密钥中列出的Microsoft 365 管理中心应仅用于批量许可产品，并且仅供您的组织使用。
 
 
-      An Online Service Activation (OSA) key is a single-use product key used to activate Microsoft Online Services subscriptions.
+      Online Service Activation (OSA) 密钥是一种用于激活订阅订阅的Microsoft Online Services密钥。
 
 
-      For more information, see [Online Service Activation for Open programs FAQ](/licensing/online-service-activation-faq).
+      有关详细信息，请参阅 [开放程序联机服务激活常见问题](/licensing/online-service-activation-faq)解答。
   - question: >
-      How do I find product keys in the Microsoft 365 admin center?
-    answer: "1. Sign into the Microsoft 365 admin center. \n2. Go to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys** > hover on product and select **View keys**.\n\nYou’ll find product key information for each product, the type of licensing (Volume Licensing Key, Key Management Service (KMS), and Multiple Activation Key (MAK)) and the number of used and available MAK activations.\n\nSelect **Download all product keys** to download the keys displayed for a license to a local drive.\n"
+      如何在产品密钥中查找Microsoft 365 管理中心？
+    answer: "1. 登录到Microsoft 365 管理中心。 \n2. 转到计费  >  **你的产品**  >  **批量许可** 下载  >  **&将**>悬停在产品上，然后选择查看 **密钥**。\n\n你将找到每个产品的产品密钥信息、许可类型 (批量许可密钥、密钥管理服务 (KMS) 和多次激活密钥 (MAK) ) 以及已使用和可用的 MAK 激活数。\n\n选择 **\"下载所有产品密钥** \"，将许可证显示的密钥下载到本地驱动器。\n"
   - question: >
-      How do I find SQL Server product keys?
+      如何查找产品SQL Server密钥？
     answer: >
-      The SQL license key is embedded in the software’s activation wizard rather than displayed in the admin center and is detected automatically during installation. For more information, see [The SQL Server Installation Guide] (/sql/database-engine/install-windows/install-sql-server).
+      the SQL license key is embedded in the software's activation wizard rather than displayed in the admin center and is detected automatically during installation. 有关详细信息，请参阅 [SQL Server 安装指南] (/sql/database-engine/install-windows/install-sql-server) 。
 
 
-      You can also find the key by downloading the SQL ISO file from the admin center > ..\x64 folder > DefaultSetup.ini file. Make sure to back up any existing version before installing or upgrading SQL editions. If you need help troubleshooting technical issues during product installation or online service activation, contact Microsoft Technical Support by submitting a [Technical Support request](https://support.microsoft.com/oas).
+      您还可以从管理中心下载 iso SQL文件来查找密钥>。\x64 folder > DefaultSetup.ini file. 在安装或升级现有版本之前，请确保SQL版本。 如果在产品安装或联机服务激活期间需要解决技术问题的帮助，请通过提交技术支持请求联系 Microsoft [技术支持](https://support.microsoft.com/oas)。
   - question: >
-      How do I find a product key for Volume Licensing purchase?
-    answer: "If your agreement authorizes access to a product that requires a key, you can find those keys by going to **Billing** > **Your products** > **Volume licensing** > **Downloads & keys**. \n\nHowever, some products don’t require a product key. This information is listed in the product description in the Downloads and Keys catalog.\n\nTo determine if your product requires a key, go to [Product activation and key information](https://licensingapps.microsoft.com/product-activation). Under Find Products, choose a product or search for your product name.\n"
+      如何查找批量许可购买的产品密钥？
+    answer: "如果你的协议授权访问需要密钥的产品，你可以找到这些密钥，只需访问\"帐单\"\"产品批量许可\"\"下载&  >    >    >  **密钥\"。** \n\n但是，某些产品不需要产品密钥。 此信息在\"下载和密钥\"目录的产品说明中列出。\n\n若要确定你的产品是否要求密钥，请转到产品 [激活和密钥信息](https://licensingapps.microsoft.com/product-activation)。 在\"查找产品\"下，选择产品或搜索产品名称。\n"
   - question: >
-      What is a setup key?
+      什么是设置密钥？
     answer: >
-      A setup key is used for each product/version combination to unlock the product by bypassing activation. You can get a setup key in one of two ways:
+      设置密钥用于每个产品/版本组合，以通过绕过激活来解锁产品。 可以通过两种方式之一获取安装密钥：
 
-        - **Physical fulfillment** For products acquired through physical fulfillment, the setup key is printed on the media sleeve.
-        - **Download fulfillment** For products acquired by download from the admin center, the setup key is displayed on the download screen and could be accompanied by the following text: Some products available for download require setup keys. Note the setup key as it's' needed during product installation. For more on setup keys, see [KMS client setup keys](/windows-server/get-started/kmsclientkeys).
+        - **实际实施** 对于通过实际实施获得的产品，安装密钥将打印在媒体标签上。
+        - **下载实施** 对于从管理中心下载获取的产品，安装密钥显示在下载屏幕上，并可以附带以下文本：某些可供下载的产品需要安装密钥。 记下产品安装过程中所需的安装密钥。 有关安装密钥的更多信息，请参阅KMS[客户端安装密钥](/windows-server/get-started/kmsclientkeys)。
   - question: >
-      What determines which product keys are associated with my agreements?
+      哪些因素决定了哪些产品密钥与我的协议相关联？
     answer: >
-      Volume License product keys are provided for each Licensing ID listed in your [Microsoft Relationship Summary](/licensing/license-faq). This Relationship Summary is on the Volume Licensing Service Center. For more information, see [What is a Licensing ID](/licensing/license-faq#what-is-a-licensing-id). You could have several Licensing IDs:
+      批量许可产品密钥针对 Microsoft 关系摘要中列出的每个许可 [ID 提供](/licensing/license-faq)。 此关系摘要位于批量许可服务中心。 有关详细信息，请参阅[什么是许可 ID。](/licensing/license-faq#what-is-a-licensing-id) 你可以拥有多个许可 ID：
 
-        - Enterprise Agreement (EA) and Select Plus customers receive product keys per product pool (Systems, Servers, and Applications).
-        - Select Agreement customers receive product keys per product pool (Systems, Servers, and Applications) based on their purchasing forecasts.
-        - Open License customers and Open Value customers receive applicable product keys based on their license purchases.
+        - 企业协议 (EA) 和 Select Plus 客户接收每个产品池的产品密钥 (系统、服务器和应用程序) 。
+        - Select Agreement customers receive product keys per product pool (Systems， Servers， and Applications) based on their purchasing forecasts.
+        - 打开许可证客户和开放式价值客户基于其许可证购买接收适用的产品密钥。
 
-      For more information, see the [License Summary FAQ](/licensing/license-faq).
+      有关详细信息，请参阅许可证 [摘要常见问题解答](/licensing/license-faq)。
 
 
-      **Note** All customers have the right to use product keys for re-imaging and downgrade purposes. Select Plus, Enterprise Agreement (EA), and Select customers have limited evaluation rights for training and back-up. For more information, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+      **注意** 所有客户都有权使用产品密钥进行重新映像处理和降级。 选择"加企业协议 (EA) "和"选择客户具有有限的培训和备份评估权限"。 有关详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
 - name: 批量激活
   questions:
   - question: >
-      What is volume activation?
+      什么是批量激活？
     answer: >
-      Volume activation is a configurable solution that helps automate and manage the product activation process on computers running Windows operating systems licensed under a volume licensing program. Volume activation is also used with other software from Microsoft, including the Office suites, sold under volume licensing agreements and that support volume activation. For more information, see:
-        - [Tools to manage volume activation of Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
-        - [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
+      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件，并支持批量激活。 有关更多信息，请参阅：
+        - [用于管理批量激活Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
+        - [批量激活Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
-      Volume activation applies only to systems covered under a Volume Licensing program and is used strictly as a tool for activation. It’s not tied to license invoicing or billing.
+      批量激活仅适用于批量许可计划涵盖的系统，并严格用作激活工具。 它并不与许可证开票或计费关联。
 
 
-      Volume activation provides two ways to complete volume activations. Either or both key types can be used by customers to activate systems in their organization:
-        - Key Management Service (KMS) allows organizations to activate systems within their own network.
-        - Multiple Activation Key (MAK) activates systems on a one-time basis, using Microsoft hosted activation services.
+      批量激活提供了两种完成批量激活的方法。 客户可以使用这两种关键类型中的任一种或两种来激活其组织的系统：
+        - 密钥管理服务 (KMS) 允许组织在其自己的网络中激活系统。
+        - MAK (激活密钥) 使用 Microsoft 托管激活服务一次激活系统。
   - question: >
-      What is the Key Management Service (KMS)?
+      什么是密钥管理服务 (KMS) ？
     answer: >
-      KMS is an activation service that allows organizations to activate systems within their own network by eliminating the need for individual computers to connect to Microsoft for product activation. It doesn’t require a dedicated system and can be co-hosted on a system that provides other services.
+      KMS是一项激活服务，通过该服务，组织无需连接到 Microsoft 进行产品激活，即可激活其自己的网络内的系统。 它不需要专用系统，并且可在提供其他服务的系统上共同托管。
 
 
-      KMS requires a minimum number of either physical or virtual computers in a network environment. These minimums, called activation thresholds, are set so that they are easily met by Enterprise customers.
+      KMS网络环境中需要最少数量的物理或虚拟计算机。 这些最小值（称为激活阈值）已设置，以便客户可以轻松满足Enterprise要求。
 
-        - Activation thresholds for Windows
-          - Your organization must have at least 5 computers to activate servers running Windows Server.
-          - Your organization must have at least 25 computers to activate client systems running Windows.
-        - Activation thresholds for Office
-          - Your organization must have at least 5 computers running an edition of Office to activate installed Office products using KMS.
+        - 激活阈值Windows
+          - 您的组织必须至少具有 5 台计算机才能激活运行 Windows 服务器。
+          - 您的组织必须至少具有 25 台计算机才能激活运行 Windows。
+        - 激活阈值Office
+          - 你的组织必须至少拥有 5 台运行版本 Office才能使用 Office 激活已安装的KMS。
 
-      For more information about activation thresholds, see the [Volume Activation Planning Guide](/windows/deployment/volume-activation/volume-activation-windows-10).
+      有关激活阈值详细信息，请参阅批量 [激活规划指南](/windows/deployment/volume-activation/volume-activation-windows-10)。
   - question: >
-      What is a KMS host key?
+      什么是KMS密钥？
     answer: >
-      A KMS key is used to activate the KMS host computer with a Microsoft activation server and can activate up to 6 KMS hosts with 10 activations per host. Each KMS host can activate an unlimited number of computers.
+      A KMS key is used to activate the KMS host computer with a Microsoft activation server and can activate up to 6 KMS hosts with 10 activations per host. 每台KMS主机可以激活无限数量的计算机。
   - question: >
-      Why is no KMS key displayed on Microsoft 365 admin center for Open License customers?
-    answer: "KMS keys are no longer pre-assigned to Open agreements as use of Multiple Activation Key (MAK) is the preferred method for activation.\n\nKSM keys can be assigned, by exception, to Open customers who meet the minimum KMS activation threshold for Windows Server, OS, and Office. To request an exception, submit a web form request to Microsoft Support.\n\nTo request an exception, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:\n  \n  - Agreement / Enrollment Number or License ID and Authorization.\n  - Product Name (including version and edition).\n  - Last 5 characters of the product key.\n  - The number of host activations required.\n  - Business justification or reason for deployment.\n"
+      为什么开放KMS客户未Microsoft 365 管理中心密钥？
+    answer: "KMS密钥不再预分配给开放式协议，因为使用多次激活密钥 (MAK) 是首选激活方法。\n\nKSM KMS 密钥可以例外分配给满足 Windows Server、OS 和 Windows 激活阈值的 Open Office。 若要请求例外，请向 Microsoft 支持人员提交 Web 表单请求。\n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
-      What if I need additional KMS hosts?
-    answer: "If you require additional KMS activations for activating more than 6 KMS hosts, submit a web form request to Microsoft 365 admin center support. \n\nTo request an exception, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:\n  \n  - Agreement / Enrollment Number or License ID and Authorization.\n  - Product Name (including version and edition).\n  - Last 5 characters of the product key.\n  - The number of host activations required.\n  - Business justification or reason for deployment.\n"
+      如果我需要其他主机KMS呢？
+    answer: "如果您需要其他 KMS激活超过 6 台 KMS 主机，请提交 Web 表单请求Microsoft 365 管理中心支持。 \n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
-      What is a Multiple Activation Key (MAK)?
+      什么是 MAK 密钥 (多次) ？
     answer: >
-      A Multiple Activation Key (MAK) activates systems on a one-time basis, using Microsoft hosted activation services that require connection with a Microsoft activation server. Once computers are activated, no further communication with Microsoft is required.
+      MAK (多次激活密钥) 使用需要与 Microsoft 激活服务器连接的 Microsoft 托管激活服务一次激活系统。 激活计算机后，不再需要与 Microsoft 进行通信。
 
 
-      **Important** The number of allowed MAK activations is based on your Volume Licensing agreement.
+      **重要** 允许的 MAK 激活数基于批量许可协议。
   - question: >
-      Why doesn’t the number of MAK activations provided match the number of licenses we purchased?
+      为什么提供的 MAK 激活数与所购买的许可证数不匹配？
     answer: >
-      We recommend customers use KMS to activate Multiple Activation Keys (MAK). KMS is the preferred activation method for large scale deployments. Many factors determine the number of activations associated with each MAK, including licenses purchased, the customer purchase pricing level, and their Volume Licensing program.
+      我们建议客户使用 KMS 激活 MAK (多次) 。 KMS是大型部署的首选激活方法。 许多因素决定了与每个 MAK 关联的激活数，包括购买的许可证、客户购买定价级别及其批量许可计划。
 
 
-      The number of activations available for a product won’t always match the number of licenses purchased. Usually, you receive a more activations in case you need to reinstall and activate some of your products. Check the Licensing Summary section of your agreement to view the number of licenses.
+      产品可用的激活次数并不总是与购买的许可证数匹配。 通常，如果需要重新安装和激活某些产品，将收到更多激活。 查看协议的许可摘要部分以查看许可证数量。
   - question: >
-      How do I request an increase to MAK activation limits?
-    answer: "Increases to MAK activation quantity can be requested via web form and are granted by exception. For Canada and the United States, submit [Volume Licensing Support Requests](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f). For all other countries, submit a [Support Web Form](/licensing/contact-us). \n\nTo request a MAK activation limit, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:\n\n  - Agreement/Enrollment Number or License ID and Authorization.\n  - Product Name (including version and edition).\n  - Last 5 characters of the product key.\n  - The number of host activations required.\n  - Business justification or reason for deployment.\n"
+      如何请求提高 MAK 激活限制？
+    answer: "可通过 Web 表单请求增加 MAK 激活数量，并按例外情况授予。 对于加拿大和美国，提交 [批量许可支持请求](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f)。 对于所有其他国家/地区，提交支持 [Web 表单](/licensing/contact-us)。 \n\n若要请求 MAK 激活限制，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n\n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
-      How do I activate licenses using a Multiple Activation Key (MAK)?
+      如何使用 MAK 密钥激活多次激活密钥 (许可证) ？
     answer: >
-      You can activate licenses in one of two ways using MAK:
+      可以使用 MAK 通过两种方式之一激活许可证：
 
-        - MAK Independent Activation Each computer individually connects to Microsoft by using the web or telephone to complete activation.
-        - MAK Proxy Activation One centralized activation request is made on behalf of multiple computers with a single connection to Microsoft online or by telephone. This method uses the Volume Activation Management Tool (VAMT), which is a part of the Windows Automated Installation Kit (WAIK). VAMT enables IT Professionals to automate and centrally manage the Volume Activation process using MAK and includes a check on the number of activations on the MAK.
+        - MAK 独立激活 每台计算机使用 Web 或电话分别连接到 Microsoft 以完成激活。
+        - MAK 代理激活 一个集中激活请求代表多台计算机在线或通过电话连接到 Microsoft。 此方法使用 批量激活管理工具 (VAMT) ，它是使用WINDOWS安装工具包 (的一) 。 VAMT使 IT 专业人员能够使用 MAK 自动执行并集中管理批量激活过程，并检查 MAK 上的激活次数。
   - question: >
-      What is the Volume Activation Management Tool (VAMT)?
+      什么是批量激活管理工具 (VAMT) ？
     answer: >
-      The Volume Activation Management Tool (VAMT) is a tool that allows network administrators and other IT professionals to automate and centrally manage the volume- and retail-activation process for Windows, Microsoft Office, and select other Microsoft products. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0.
+      批量激活管理工具 (VAMT) 是一种工具，使网络管理员和其他 IT 专业人员可以自动执行并集中管理 Windows、Microsoft Office 的批量激活和零售激活过程，并选择其他 Microsoft 产品。 VAMT使用多个激活密钥管理批量激活 (或) 或Windows 密钥管理服务 (KMS) 。 VAMT是一个标准的 Microsoft 管理控制台 (MMC) 管理单元，要求使用 Microsoft Management Console (MMC) 3.0。
 
 
-      For information on VAMT, see:
+      有关此VAMT的信息，请参阅：
 
-        - [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool)
-        - [Managing Activation Using the Volume Activation Management Tool (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
-        - Download [Volume Activation Management Tool (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
+        - [批量激活管理工具 (VAMT) 技术参考](/windows/deployment/volume-activation/volume-activation-management-tool)
+        - [使用"管理"批量激活管理工具 (VAMT) ](/previous-versions/tn-archive/ff686876(v=technet.10))
+        - 下载[批量激活管理工具 (VAMT) ](https://www.microsoft.com/download/details.aspx?id=11936)
   - question: >
-      What should I know about using Windows Server as the KMS host to activate Windows clients?
-    answer: "If you deploy Windows using Key Management Service (KMS) as the activation method, note that:\n  \n  - Windows Server is not supported as a KMS host to activate Windows.\n  - A Windows Server KMS key is required to get a patch to allow activation of Windows client machines. For the latest patch, see [Configure a KMS host computer to activate volume licensed versions of Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office). \n\nIf you’re using Windows Server as a KMS host, you can:\n  \n  - Upgrade the KMS host machine to Windows Server.\n  - Downgrade the machine to Windows Server 2003.\n  - Run the KMS host on a Windows volume edition machine.\n  - Run a Windows Server virtual machine.\n"
+      关于将 Windows Server 用作 KMS 主机来激活客户端，我Windows什么？
+    answer: "如果使用 Windows 方法密钥管理服务 (KMS) 部署活动，请注意：\n  \n  - Windows服务器不支持作为KMS激活Windows。\n  - 需要Windows Server KMS 密钥才能获取修补程序，以允许激活Windows客户端计算机。 有关最新修补程序，请参阅[配置 KMS 主计算机以激活批量许可版本的 Office。](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office) \n\n如果要将 Windows Server 用作KMS主机，您可以：\n  \n  - 将 KMS 主机升级到 Windows Server。\n  - 将计算机降级到 Windows Server 2003。\n  - 在KMS版计算机上运行Windows主机。\n  - 运行 Windows Server 虚拟机。\n"
   - question: >
-      What should I know about Volume Activation for Office, Project, and Visio?
+      我应了解哪些有关 Office、Project 和 Visio？
     answer: >
-      The following Volume Activation changes are related to Office, Project and Visio:
-        - Office KMS Host activates any Office suite or application.
-        - Only one Office KMS key should be installed and used for activation.
+      以下批量激活更改与Office、Project Visio：
+        - Office KMS主机激活任何Office或应用程序。
+        - 只能Office KMS一个密钥并用于激活。
 
-      If you deploy Office using Key Management Service (KMS) as the activation method, note that:
-        - You can’t activate Office using KMS if you use Windows Server as the KMS host.
-        - A patch is not available to allow activation of Office clients.
+      如果部署Office激活密钥管理服务 (KMS) 激活方法，请注意：
+        - 如果使用 Office Server 作为KMS服务器Windows，则不能KMS服务器。
+        - 修补程序不能用于允许激活Office客户端。
 
-      If you’re using Windows Server 2008 as a KMS host, you can:
-        - Upgrade the KMS host machine to Windows Server.
-        - Downgrade the machine to an older version of Windows Server.
-        - Run the KMS host on a Windows PC.
-        - Run a Windows Server virtual machine on a newer version of Windows Server.
+      如果要将 Windows Server 2008 用作KMS主机，您可以：
+        - 将 KMS 主机升级到 Windows Server。
+        - 将计算机降级到较旧版本的 Windows Server。
+        - 在KMS电脑上运行Windows主机。
+        - 在较Windows版本的 Windows Server 中运行 Windows 虚拟机。
   - question: >
-      How do I activate Windows Terminal Server and Remote Desktop Service (RDS)?
+      如何在 RDS Windows 终端激活 (Server 和远程桌面) ？
     answer: >
-      After you download your server media from the VLSC you can activate it by using the product activation wizard. You don’t need to locate a volume license key or product set up key in the VLSC. Completing all the activation wizard steps prompts the Server to connect with the Microsoft Clearing House via the internet to validate the data. Alternatively, for offline servers the activation wizard offers phone or web activation.
+      从 VLSC 下载服务器媒体后，可以使用产品激活向导激活它。 无需在 VLSC 中查找批量许可证密钥或产品设置密钥。 完成所有激活向导步骤会提示服务器通过 Internet 与 Microsoft 交换所连接以验证数据。 或者，对于脱机服务器，激活向导提供电话或 Web 激活。
 
 
-      To begin, assign a Remote Desktop Licensing role for the server, (**Start** > **Administrative Tools** > **Server Manager**) and then activate the RDS Service from your Remote Desktop License Manager. Select **Start** > **Administrative Tools** > **Remote Desktop Services**, and then select **Remote Desktop/Terminal License Manager**.
+      首先，为服务器分配远程桌面许可角色， (启动管理工具服务器管理器) 然后从远程桌面许可证管理器激活  >    >  RDS 服务。 选择 **"**  >  **启动管理工具**  >  **远程桌面服务"，** 然后选择"**远程桌面/终端许可证管理器"。**
 
 
-      During activation, you’re asked to select the License Program and Agreement Number. For Open License customers, enter your Authorization Number. For MPSA, enter your Purchase Account Number (not the MPSA Agreement number). If you’re unsure of the program type for the License ID used to purchase your CAL licenses, go to the **VLSC Relationship Summary** and refer to the **Parent Program** column.
+      激活期间，会要求您选择"许可协议"和"协议编号"。 对于"开放许可证"客户，输入授权号码。 对于 MPSA，输入你的购买 (号码，而不是 MPSA 协议) 。 如果你不确定用于购买 CAL 许可证的许可证 ID 的程序类型，请转到 **VLSC 关系** 摘要并参考父 **计划** 列。
 
 
-      For information about licensing Terminal Server, see [Terminal Server licensing](/troubleshoot/windows-server/remote/terminal-server-licensing). For information on how to install the remote desktop licensing role and activate the license server, see [Activate the Remote Desktop Services license server](/windows-server/remote/remote-desktop-services/rds-activate-license-server) and  [Cannot connect to RDS because no RD Licensing servers are available](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server).
+      有关授权终端服务器的信息，请参阅 [终端服务器许可](/troubleshoot/windows-server/remote/terminal-server-licensing)。 若要了解如何安装远程桌面许可角色并激活许可证服务器，请参阅激活 [远程桌面服务许可证](/windows-server/remote/remote-desktop-services/rds-activate-license-server) 服务器和无法连接到  [RDS，因为没有可用的 RD 许可服务器](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server)。
   - question: >
-      Can organizations within the same ownership structure use the same key to deploy a product?
+      同一所有权结构内的组织能否使用相同的密钥来部署产品？
     answer: >
-      License compliance and asset management are independent of key activation. Customers don’t have to use the keys provided under a specific Licensing ID (agreement, enrollment, affiliate, or license). If a parent organization has an individual agreement, it can use the same key to deploy a product across parent and child organizations. This flexibility allows customers to centrally manage their deployment image by using either keys specific to agreements/licenses or one set of keys for all.
+      许可证合规性和资产管理独立于密钥激活。 客户不必使用特定许可 ID 下提供的密钥， (、注册、关联或许可证) 。 如果父组织有单独的协议，它可以使用同一密钥跨父和子组织部署产品。 这种灵活性使客户能够使用特定于协议/许可证的密钥或一组密钥集中管理部署映像。
   - question: >
-      Can I use my Volume License Keys to exercise my re-imaging rights?
+      我能否使用批量许可证密钥来行使我的重新映像权限？
     answer: >
-      Yes. Re-imaging rights are granted to all Microsoft Volume Licensing customers. Under these rights, customers can re-image Original Equipment Manufacturer (OEM) or Full Packaged Product (FPP) licensed copies by using media provided under their agreement if the copies made from the Volume Licensing media are identical to the original licensed product. As a Volume Licensing customer, you can find the Volume License Keys on the product key page or request your keys through a [Microsoft Activation Center](https://licensingapps.microsoft.com/product-activation).
+      能。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，客户可以使用根据其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本（如果从批量许可介质制作的副本与原始许可产品相同）。 作为批量许可客户，可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心 [请求密钥](https://licensingapps.microsoft.com/product-activation)。
 
 
-      **Note** If you’re an Open License customer, you must purchase at least one unit of the product that you want to re-image to obtain access to the product media and receive a product key.
+      **注意** 如果你是开放许可客户，则必须购买至少一个要重新映像的产品单元，以获取对产品媒体的访问权限并接收产品密钥。
 
 
-      For more information on re-imaging rights, see [Product licensing briefs](/licensing/learn-more/volume-licensing-briefs).
+      有关重新映像权限详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
   - question: >
-      How do I download my keys to a local file?
-    answer: "The Microsoft 365 admin center offers an option to download product keys to a local file for later use. When you download product keys from the Downloads and Keys page, the file contains all Volume License Keys associated with agreements in your admin center profile. However, if you download keys from the Licensing ID view on the Relationship Summary page, the file contains only the keys associated with the Licensing ID you’re viewing.\n\nA downloadable product key file is in a tab-delimited format and can be opened in Excel or a text editor to sort and view keys. These are the columns included in the file: **License ID**, **Parent Program**, **Organization**, **Product**, **Product Key**, **Type**, and **MAK Activations-Used/Available, Seats and OSA Status**. \n\nTo open a downloaded file in Excel, complete these steps:\n  1. Open Microsoft Excel.\n  2. Select **File** > **Open**, and then select the downloaded CSV file.\n  3. Select **Delimited** (the default), and then select **Tab-separated** (to prevent the display of all data in a single column).\n  4. Select **Finish**. \n\nThe .CSV file opens in Excel and the data is displayed in separate columns.\n"
+      如何将密钥下载到本地文件？
+    answer: "The Microsoft 365 管理中心 offers an option to download product keys to a local file for later use. 从\"下载和密钥\"页下载产品密钥时，该文件包含与管理中心配置文件中的协议相关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的\"许可 ID\"视图中下载密钥，文件将仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可以在Excel或文本编辑器中打开，以便排序和查看密钥。 其中包括文件中包含的列：**许可证 ID、****父** 计划、**组织**、**产品**、**产品** 密钥、**类型和** **MAK Activations-Used/Available、Seats 和 OSA Status**。 \n\n若要在文件包中打开Excel，请完成以下步骤：\n  1. 打开 Microsoft Excel。\n  2. 选择 **\"**  >  **文件** 打开\"，然后选择下载的 CSV 文件。\n  3. 选择 **\"** 以 (分隔) \"，然后选择\"以制表符分隔 (以阻止在单个列中显示所有) 。\n  4. 选择“完成”。 \n\nthe .CSV file opens in Excel and the data is displayed in separate columns.\n"
 - name: 支持
   questions:
   - question: >
-      How do I contact support?
+      如何联系支持人员？
     answer: >
-      Microsoft 365 admin center customers can contact support by phone or by web form. Microsoft responds to web form submissions within 24 hours. To contact support, see [Contact Us](/licensing/contact-us).
-additionalContent: "\n## Additional resources\n\n- [Downloads FAQ](downloads-faq.yml)\n\n- [Online service activation for Open programs FAQ](online-service-activation-faq.yml)"
+      Microsoft 365 管理中心客户可以通过电话或 Web 表单联系支持人员。 Microsoft 在 24 小时内响应 Web 表单提交。 若要联系支持人员，请参阅 [联系我们](/licensing/contact-us)。
+additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [下载常见问题解答](downloads-faq.yml)\n\n- [开放计划联机服务激活常见问题解答](online-service-activation-faq.yml)"
