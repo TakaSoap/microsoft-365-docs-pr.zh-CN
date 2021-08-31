@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 12c1b74986429be8c2681725286a3e07b7ae1d86
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393408"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831833"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
@@ -57,7 +57,7 @@ ms.locfileid: "58393408"
   
 使用管理中心创建组时，默认情况下，用户不会收到发送到收件箱的组电子邮件副本，但用户会获得发送到其收件箱的组会议邀请的副本。 他们需要转到组以查看对话。 可以在管理中心更改此设置。
 
-启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
+启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和会议Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
 
 通过选择停止跟踪电子邮件中的组，组成员可以选择不接收Outlook。
 
@@ -65,7 +65,7 @@ ms.locfileid: "58393408"
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 如果您希望 **设置** 收件箱中的组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
+3. 如果您希望 **设置** 自己的收件箱中接收组邮件和日历项目的副本，请在"设置"选项卡上，选择"将组对话和事件的副本发送给组成员"。
 
 4. 选择“**保存**”。
 
@@ -77,7 +77,7 @@ ms.locfileid: "58393408"
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"允许外部发件人向此组发送电子邮件 **"。**
+3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"允许 **外部** 发件人向 **此组发送电子邮件"。**
     
 4. 选择“**保存**”。
 
@@ -86,7 +86,7 @@ ms.locfileid: "58393408"
 有时，你可能想要永久清除组，而无需等待 30 天的软删除期到期。 若要执行此操作，启动 PowerShell 并运行此命令，获取组的对象 ID：
  
  ```powershell
-`Get-AzureADMSDeletedGroup`
+Get-AzureADMSDeletedGroup
 ```
 
 记下要永久删除的一个或多个组的对象 ID。
@@ -97,7 +97,7 @@ ms.locfileid: "58393408"
 若要清除组，请在 PowerShell 中运行此命令：
 
 ```powershell
-`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
 若要确认是否成功清除该组，请再次运行  *Get-AzureADMSDeletedGroup*  cmdlet 以确认该组不再出现在软删除的组列表中。某些情况下，要永久删除该组及其所有数据可能需要长达 24 小时。 

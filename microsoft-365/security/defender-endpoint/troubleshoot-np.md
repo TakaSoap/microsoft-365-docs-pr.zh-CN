@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 981e7962db35429e5f7bf02ee4a6f57fd19655d4
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: d10399c3064697ab383133cd17cc14dc7dd43cc4
+ms.sourcegitcommit: dda742d2b044fa56f4edef57d74d18f52fafc149
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509889"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58829264"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
@@ -42,7 +42,7 @@ ms.locfileid: "58509889"
 
 1. 确认先决条件
 2. 使用审核模式测试规则
-3. 为指定规则添加排除 (用于误报) 
+3. 为指定规则添加针对误报 (排除项) 
 4. 提交支持日志
 
 ## <a name="confirm-prerequisites"></a>确认先决条件
@@ -83,9 +83,13 @@ ms.locfileid: "58509889"
 
 请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
 
-## <a name="exclude-website-from-network-protection-scope"></a>从网络保护范围排除网站
+## <a name="add-exclusions"></a>添加排除项
+当前排除选项包括：
 
-若要允许被阻止的网站 (误报) ，请将其 URL 添加到 [受信任网站列表中](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/)。 此列表中的 Web 资源绕过网络保护检查。
+1.  设置自定义允许指示器。
+2.  使用 IP 排除项： `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+3.  排除整个过程。 有关详细信息，请参阅Microsoft Defender 防病毒[排除项](configure-exclusions-microsoft-defender-antivirus.md)。 
+
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集文件提交的诊断数据
 
@@ -119,7 +123,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-可以使用 PowerShell、注册表项或组策略Microsoft Endpoint Manager注册表项。 以下是一些可帮助的资源：
+可以使用 PowerShell、Microsoft Endpoint Manager或组策略配置注册表项。 以下是一些可帮助的资源：
 
 - [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
 - [配置自定义客户端设置Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)

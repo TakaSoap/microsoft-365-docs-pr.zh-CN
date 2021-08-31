@@ -14,12 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3138d1c0a4b4d2b5726b87e6e86897091d237854
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.date: 08/27/2021
+ms.openlocfilehash: 822241ed8010338b21f61ef39e3df1d310ced2ce
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568636"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58832010"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根据文件扩展名和文件夹位置配置和验证排除项
 
@@ -28,22 +29,22 @@ ms.locfileid: "58568636"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-你可以定义适用于Microsoft Defender 防病毒扫描、按需扫描以及始终打开、实时[](schedule-antivirus-scans.md)保护和监视的扫描[](run-scan-microsoft-defender-antivirus.md)的[排除项](configure-real-time-protection-microsoft-defender-antivirus.md)。 **通常，你无需应用排除项**。 如果需要应用排除项，可以从多种不同类型的选项中选择：
+你可以定义适用于Microsoft Defender 防病毒扫描、按需扫描以及始终打开、实时[](schedule-antivirus-scans.md)保护和监视[的扫描的排除项](configure-real-time-protection-microsoft-defender-antivirus.md)。 [](run-scan-microsoft-defender-antivirus.md) **通常，你无需应用排除项**。 如果需要应用排除项，可以从多种不同类型的选项中选择：
 
-- 本文介绍的基于文件扩展名和 (位置的排除) 
+- 本文介绍的基于文件扩展名和文件夹 (排除项) 
 - [进程打开的文件排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括终结点检测和响应[ (EDR) 、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻击面减少 ([ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction)规则和受控文件夹访问权限[。](/microsoft-365/security/defender-endpoint/controlled-folders) 使用本文中介绍的方法排除的文件仍可以触发EDR检测。
+> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括终结点检测和响应[ (EDR) 、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻击面减少 ([ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction)规则以及受控文件夹[访问权限。](/microsoft-365/security/defender-endpoint/controlled-folders) 使用本文中所述的方法排除的文件仍可以触发EDR检测。
 > 若要广泛排除文件，请将它们添加到 Microsoft Defender for Endpoint [自定义指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 ## <a name="before-you-begin"></a>开始之前...
 
-请参阅[推荐列表之前定义](configure-exclusions-microsoft-defender-antivirus.md)排除项。
+请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md)项，然后再定义排除列表。
 
 ## <a name="exclusion-lists"></a>排除列表
 
-若要从扫描中排除Microsoft Defender 防病毒文件，请修改排除列表。 Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（例如，在企业管理、数据库管理和其他企业方案和情况中使用的那些文件）的自动排除项。
+若要从扫描中排除Microsoft Defender 防病毒，请修改排除列表。 Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件（例如，在企业管理、数据库管理和其他企业方案和情况中使用的那些文件）的自动排除项。
 
 > [!NOTE]
 > 排除项也适用于可能不需要 (PUA) 检测。
@@ -62,7 +63,6 @@ ms.locfileid: "58568636"
 |特定文件夹下的任何文件|文件夹下的所有 `c:\test\sample` 文件|文件和文件夹排除项|
 |特定文件夹中的特定文件|仅 `c:\sample\sample.test` 文件|文件和文件夹排除项|
 |特定过程|可执行文件 `c:\test\process.exe`|文件和文件夹排除项|
-|
 
 ## <a name="characteristics-of-exclusion-lists"></a>排除列表的特征
 
@@ -75,7 +75,7 @@ ms.locfileid: "58568636"
 
 - 不要排除映射的网络驱动器。 指定实际网络路径。
 
-- 不包括在启动 Microsoft Defender 防病毒 服务后创建的、已添加到排除列表中的重新分析点的文件夹。 重新启动服务 (重新启动Windows) 可识别为有效排除目标的新重新分析点。
+- 不包括在启动 Microsoft Defender 防病毒 服务后创建的、已添加到排除列表中的重新分析点的文件夹。 重新启动服务 (重新启动Windows) 新的重新分析点，以识别为有效的排除目标。
 
 - 排除项适用于 [计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、按需 [扫描](run-scan-microsoft-defender-antivirus.md)和实时 [保护](configure-real-time-protection-microsoft-defender-antivirus.md)，但不能跨 Defender for Endpoint。 若要定义跨 Defender for Endpoint 的排除项，请使用 [自定义指示器](manage-indicators.md)。
 
@@ -85,7 +85,7 @@ ms.locfileid: "58568636"
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>根据文件夹名称或文件扩展名配置排除项列表
 
-可以从多种方法中选择，以定义Microsoft Defender 防病毒。
+可以从多种方法中选择来定义用于Microsoft Defender 防病毒。
 
 ### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Intune 配置文件名、文件夹或文件扩展名排除项
 
@@ -96,7 +96,7 @@ ms.locfileid: "58568636"
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Configuration Manager 配置文件名、文件夹或文件扩展名排除项
 
-请参阅[如何创建和部署反恶意软件策略：](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)排除设置，详细了解如何Microsoft Endpoint Manager (当前分支) 。
+请参阅[如何创建和部署反恶意软件策略：排除](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)设置，了解有关配置当前分支Microsoft Endpoint Manager (的详细信息) 。
 
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>使用组策略配置文件夹或文件扩展名排除项
 
@@ -140,31 +140,25 @@ cmdlet 的格式如下：
 
 <br>
 
-****
-
 |配置操作|PowerShell cmdlet|
 |:---|:---|
 |创建或覆盖列表|`Set-MpPreference`|
 |添加到列表|`Add-MpPreference`|
 |从列表中删除项目|`Remove-MpPreference`|
-|
 
 下表列出了可在 `<exclusion list>` PowerShell cmdlet 部分使用的值：
 
 <br>
 
-****
-
 |排除类型|PowerShell 参数|
 |---|---|
 |具有指定文件扩展名的所有文件|`-ExclusionExtension`|
 |文件夹下的所有文件 (包括子目录中的文件) 或特定文件|`-ExclusionPath`|
-|
 
 > [!IMPORTANT]
 > 如果已使用 或 创建列表， `Set-MpPreference` `Add-MpPreference` 则再次使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
 
-例如，以下代码段将导致Microsoft Defender 防病毒扫描排除文件扩展 `.test` 名的任何文件：
+例如，以下代码段将导致Microsoft Defender 防病毒扫描排除具有文件扩展 `.test` 名的任何文件：
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -197,7 +191,7 @@ ExclusionPath
 
 ## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>在文件名和文件夹路径或扩展名排除列表中使用通配符
 
-在文件名或文件夹路径排除列表中定义项目时 (星号、问号或环境变量（如 `*` `?` `%ALLUSERSPROFILE%`) ）用作通配符。 解释这些通配符的方式与其他应用和语言中的常用用法不同。 请务必阅读本节以了解其特定限制。
+在文件名或文件夹路径排除列表中定义项目时 (星号、问号或环境变量 (例如) 作为 `*` `?` `%ALLUSERSPROFILE%` 通配符。 解释这些通配符的方式与其他应用和语言中的常用用法不同。 请务必阅读本节以了解其特定限制。
 
 > [!IMPORTANT]
 > 这些通配符存在一些关键限制和使用方案：
@@ -205,19 +199,17 @@ ExclusionPath
 > - 环境变量的使用仅限于计算机变量和那些适用于作为 NT AUTHORITY\SYSTEM 帐户运行的进程。
 > - 不能使用通配符来表示驱动器号。
 > - 文件夹排除中的 `*` 星号代表单个文件夹。 使用多个实例指示具有未指定 `\*\` 名称的多个嵌套文件夹。
-
+> - 目前，Microsoft Endpoint Configuration Manager不支持通配符 (如 `*` 或 `?`) 。
+    
 下表介绍了如何使用通配符，并提供了一些示例。
 
 <br>
-
-****
 
 |通配符|示例|
 |---|---|
 |`*` (星号)  <p> 在 **文件名和文件** 扩展名包含中，星号将替换任意数目的字符，并且仅适用于参数中定义的最后一个文件夹中的文件。 <p> 在 **文件夹排除** 中，星号将替换单个文件夹。 将 multiple `*` 与文件夹斜杠 `\` 一同使用，以指示多个嵌套文件夹。 匹配通配符和命名文件夹的数量后，还将包含所有子文件夹。|`C:\MyData\*.txt` 包括 `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` 包括 及其 `C:\somepath\Archives\Data` 子文件夹及其 `C:\somepath\Authorized\Data` 子文件夹内的任何文件 <p> `C:\Serv\*\*\Backup` 包括 及其 `C:\Serv\Primary\Denied\Backup` 子文件夹及其 `C:\Serv\Secondary\Allowed\Backup` 子文件夹内的任何文件|
 |`?` (问号)   <p> 在 **文件名和文件扩展名包含** 中，问号将替换单个字符，并且仅适用于参数中定义的最后一个文件夹中的文件。 <p> 在 **文件夹排除** 中，问号替换文件夹名称中的单个字符。 匹配通配符和命名文件夹的数量后，还将包含所有子文件夹。|`C:\MyData\my?.zip` 包括 `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` 包括 及其 `C:\somepath\P\Data` 子文件夹内的任何文件  <p> `C:\somepath\test0?\Data` 将包含 及其 `C:\somepath\test01\Data` 子文件夹内的任何文件|
 |环境变量 <p> 在计算排除时，定义的变量将填充为路径。|`%ALLUSERSPROFILE%\CustomLogFiles` 将包括 `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
-|
 
 > [!IMPORTANT]
 > 如果将文件排除参数与文件夹排除参数混合，则规则将在匹配文件夹中的 file 参数匹配时停止，并且不会在任何子文件夹中查找文件匹配项。
@@ -233,9 +225,7 @@ ExclusionPath
 下表列出并描述了系统帐户环境变量。
 
 <br>
-
-****
-
+    
 |此系统环境变量...|重定向到此|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -298,7 +288,6 @@ ExclusionPath
 |`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
 |`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
 |`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>查看排除项列表
 
@@ -311,9 +300,9 @@ ExclusionPath
 - [Windows 安全中心应用](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> 使用组策略进行排除列表 **更改将在**"组策略"Windows 安全中心 [列表中。](microsoft-defender-security-center-antivirus.md)
+> 使用组策略进行排除列表 **更改将显示在** Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。
 >
-> 在组Windows 安全中心 **中所做的更改将不会显示在** 组策略列表中。
+> 在组策略Windows 安全中心 **更改将不会显示在** 组策略列表中。
 
 如果使用 PowerShell，可以通过两种方式检索列表：
 
@@ -332,9 +321,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> 检查 MpCmdRun 的排除项Microsoft Defender 防病毒 2018 年 12 月 (或更高版本发布的 CAMP) 4.18.1812.3。
+> 检查 MpCmdRun 的排除项需要 Microsoft Defender 防病毒 CAMP 版本 4.18.1812.3 (于 2018 年 12 月) 或更高版本。
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他Microsoft Defender 防病毒首选项的列表
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他首选项Microsoft Defender 防病毒列表
 
 使用以下 cmdlet：
 
