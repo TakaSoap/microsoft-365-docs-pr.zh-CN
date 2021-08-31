@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 摘要：配置 Azure AD 连接，以在 Microsoft Azure 中Microsoft 365高可用性联合身份验证。
-ms.openlocfilehash: 8d8636c10947562037093991fa3a3cee5a867af3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: 摘要：配置 Azure AD 连接，以在 Microsoft Azure 中为 Microsoft 365 进行高可用性联合身份验证。
+ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561406"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745801"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>高可用性联合身份验证阶段 5：为用户配置Microsoft 365
 
-在 Azure 基础结构服务中为 Microsoft 365 部署高可用性联合身份验证的最后阶段，获取并安装由公共证书颁发机构颁发的证书，验证配置，然后在目录同步服务器上安装并运行 Azure AD 连接。 Azure AD 连接配置 Microsoft 365 订阅和 Active Directory 联合身份验证服务 (AD FS) 和 Web 应用程序代理服务器进行联合身份验证。
+在 Azure 基础结构服务中为 Microsoft 365 部署高可用性联合身份验证的最后阶段，获取并安装公共证书颁发机构颁发的证书，验证配置，然后在目录同步服务器上安装并运行 Azure AD 连接。 Azure AD 连接配置 Microsoft 365 订阅和 Active Directory 联合身份验证服务 (AD FS) 和 Web 应用程序代理服务器进行联合身份验证。
   
 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
@@ -47,9 +47,9 @@ ms.locfileid: "58561406"
 
 现在，你应该已准备好配置 Azure AD 连接和联合身份验证Microsoft 365。 为确保已就绪，请检查以下清单：
   
-- 组织的公共域将添加到你的Microsoft 365订阅。
+- 组织的公共域已添加到你的Microsoft 365订阅。
     
-- 组织的 Microsoft 365 用户帐户配置为组织的公共域名，可以成功登录。
+- 组织的 Microsoft 365用户帐户配置为组织的公用域名，可以成功登录。
     
 - 已基于公共域名确定联合身份验证服务 FQDN。
     
@@ -69,7 +69,7 @@ ms.locfileid: "58561406"
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>运行 Azure AD Connect 以配置联合身份验证
 
-Azure AD 连接工具通过以下步骤配置 AD FS 服务器、Web 应用程序代理服务器Microsoft 365联合身份验证：
+Azure AD 连接通过以下步骤配置 AD FS 服务器、Web 应用程序代理服务器Microsoft 365联合身份验证：
   
 1. 使用具有本地管理员权限的域帐户创建到目录同步服务器的远程桌面连接。
     
@@ -85,7 +85,7 @@ Azure AD 连接工具通过以下步骤配置 AD FS 服务器、Web 应用程序
     
 7. 在"用户登录"页上，依次单击"使用 AD FS 进行联合身份验证"和"下一步"。
     
-8. 在 **"连接 Azure AD"** 页上，键入你的 Microsoft 365 订阅的全局管理员帐户的名称和密码，然后单击"下一 **步"。**
+8. 在"连接 Azure **AD"** 页面上，键入 **Azure AD DC** 管理员或 Microsoft 365 订阅的全局管理员帐户的名称和密码，然后单击"下一 **步"。**
     
 9. 在 **"连接** 目录"页上，确保在"林"中选择了本地 Active Directory 域服务 (AD DS) 林，键入域管理员帐户的名称和密码，单击"添加 **目录**"，然后单击"下一步 **"。**
     
@@ -147,4 +147,4 @@ Azure 中适用于租户的高可用性Microsoft 365身份验证基础结构已�
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 
-[联合身份验证Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[联合身份Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)

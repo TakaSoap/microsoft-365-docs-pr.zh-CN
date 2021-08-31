@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edc1caef21714d76cf06dd065b4963bdc4a7ea7b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 207c1334f91ecd22385ce281b3f10763afe57810
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573543"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747371"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,6 @@ ms.locfileid: "58573543"
 - [方法 2：Prestage 注册](#enrollment-method-2-prestage-enrollments)
 
 有关完整列表，请参阅关于 [计算机注册](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)。
-
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>注册方法 1：注册邀请
 
@@ -80,7 +79,7 @@ ms.locfileid: "58573543"
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>注册方法 2：预阶段注册
 
-1. 在 Jamf Pro仪表板中，导航到 **Prestage 注册**。
+1. 在 Jamf Pro仪表板中，导航到 **"Prestage 注册"。**
 
     ![配置设置9 的图像。](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -92,7 +91,7 @@ ms.locfileid: "58573543"
 
     ![Jamf Pro enrollment1 的图像。](images/jamfpro-ca-certificate.png)
 
-2. 安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。 
+2. 安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。
 
     ![Jamf Pro enrollment2 的图像。](images/jamfpro-install-mdm-profile.png)
 
@@ -100,14 +99,14 @@ ms.locfileid: "58573543"
 
     ![Jamf Pro enrollment3 的图像。](images/jamfpro-download.png)
 
-4. 选择 **"** 继续"继续安装 MDM 配置文件。 
+4. 选择 **"** 继续"继续安装 MDM 配置文件。
 
     ![Jamf Pro注册4 的图像。](images/jamfpro-install-mdm.png)
 
 5. 选择 **"继续** "以安装 MDM 配置文件。
 
-    ![Jamf Pro 5 的图像。](images/jamfpro-mdm-unverified.png)
+    ![Jamf Pro注册5 的图像。](images/jamfpro-mdm-unverified.png)
 
-6. 选择 **"继续**  "以完成配置。 
+6. 选择 **"继续**  "以完成配置。
 
     ![Jamf Pro注册6 的图像。](images/jamfpro-mdm-profile.png)

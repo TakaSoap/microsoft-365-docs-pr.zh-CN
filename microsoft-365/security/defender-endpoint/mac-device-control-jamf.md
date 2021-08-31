@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f4a5771cc78f1872d57fb8301cdfb1d7d47ae27c64a4aa6f1ab2e0333ba5548f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e85a3728213af4fdb47dbfb47e40af8894a0effc
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863591"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747527"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 的设备控制策略示例
 
@@ -42,23 +42,23 @@ ms.locfileid: "53863591"
 以下示例限制访问所有可移动媒体。 请注意 `none` 在策略的顶层应用的权限，这意味着将禁止所有文件操作。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
-                <string>none</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
+                <string>none</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -67,23 +67,23 @@ ms.locfileid: "53863591"
 以下示例将所有可移动媒体配置为只读。 请注意在策略的顶层应用的权限，这意味着将不允许执行所有 `read` 写入和执行操作。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
-                <string>read</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
+                <string>read</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -92,24 +92,24 @@ ms.locfileid: "53863591"
 以下示例演示如何禁止从可移动媒体执行程序。 记下 `read` `write` 在策略的顶级应用的 和 权限。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
-                <string>write</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+                <string>write</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -118,43 +118,43 @@ ms.locfileid: "53863591"
 以下示例限制来自特定供应商的所有设备， (标识和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
                 <string>write</string>
-                <string>execute</string> 
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>fff0</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array> 
-                        <string>none</string> 
-                    </array> 
-                </dict> 
-                <key>4525</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array>                         
-                        <string>none</string> 
-                    </array> 
-                </dict> 
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+                <string>execute</string>
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>fff0</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>none</string>
+                    </array>
+                </dict>
+                <key>4525</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>none</string>
+                    </array>
+                </dict>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>限制由供应商 ID、产品 ID 和序列号标识的特定设备
@@ -162,61 +162,61 @@ ms.locfileid: "53863591"
 以下示例限制由供应商 ID、产品 ID 和序列号标识的两个 `fff0` `1000` 特定 `04ZSSMHI2O7WBVOA` 设备 `04ZSSMHI2O7WBVOB` 。 在策略的所有其他级别，权限包括所有可能的值 (读取、写入和执行) ，这意味着所有其他设备将不受限制。
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
                 <string>write</string>
                 <string>execute</string>
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>fff0</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array> 
-                        <string>read</string> 
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>fff0</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>read</string>
                         <string>write</string>
-                        <string>execute</string> 
-                    </array> 
-                    <key>products</key> 
-                    <dict> 
-                        <key>1000</key> 
-                        <dict> 
-                            <key>permission</key> 
-                            <array> 
-                                <string>read</string> 
+                        <string>execute</string>
+                    </array>
+                    <key>products</key>
+                    <dict>
+                        <key>1000</key>
+                        <dict>
+                            <key>permission</key>
+                            <array>
+                                <string>read</string>
                                 <string>write</string>
                                 <string>execute</string>
-                            </array> 
-                            <key>serialNumbers</key> 
-                            <dict> 
-                                <key>04ZSSMHI2O7WBVOA</key> 
-                                <array> 
-                                  <string>none</string> 
-                                </array> 
+                            </array>
+                            <key>serialNumbers</key>
+                            <dict>
+                                <key>04ZSSMHI2O7WBVOA</key>
+                                <array>
+                                  <string>none</string>
+                                </array>
                                 <key>04ZSSMHI2O7WBVOB</key>
-                                <array> 
-                                  <string>none</string> 
-                                </array> 
-                            </dict> 
-                        </dict> 
-                    </dict> 
+                                <array>
+                                  <string>none</string>
+                                </array>
+                            </dict>
+                        </dict>
+                    </dict>
                 </dict>
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 ## <a name="related-topics"></a>相关主题

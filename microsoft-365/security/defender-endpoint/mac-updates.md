@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dd299db1f8894851cb6d26d82756014b942c8240
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573519"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747319"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -69,12 +69,16 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 被命名为 `InsiderFast` (预览体验成员 Fast) 
+> - `Beta` 已 (`InsiderFast` 预览体验成员 Fast) 
 > - `Preview` 被命名为 `External` (Insider Slow) 
 > - `Current` 已命名 `Production`
 
->[!TIP]
->为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
+> [!TIP]
+> 为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
+
+<br>
+
+****
 
 |节|值|
 |---|---|
@@ -84,8 +88,8 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |**可能的值**|Beta <p> 预览 <p> Current|
 |||
 
->[!WARNING]
->此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS 上的 Microsoft Defender for Endpoint 更改通道，在将 替换为所需通道后执行 `[channel-name]` 以下命令：
+> [!WARNING]
+> 此设置更改通过 Microsoft AutoUpdate 更新的所有应用程序的通道。 若要仅为 macOS 上的 Microsoft Defender for Endpoint 更改通道，在将 替换为所需通道后执行 `[channel-name]` 以下命令：
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -95,6 +99,10 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 更改 MAU 搜索更新频繁。
 
+<br>
+
+****
+
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
@@ -102,10 +110,15 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |**数据类型**|整数|
 |**默认值**|720 (分钟) |
 |**Comment**|此值以分钟数设置。|
+|||
 
 ### <a name="change-how-mau-interacts-with-updates"></a>更改 MAU 与更新的交互方式
 
 更改 MAU 搜索更新时如何。
+
+<br>
+
+****
 
 |节|值|
 |---|---|
@@ -114,39 +127,55 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |**数据类型**|String|
 |**可能的值**|手动 <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|请注意，如果可能，AutomaticDownload 将执行下载并静默安装。|
+|||
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>更改"检查更新"按钮是否已启用
 
 更改本地用户是否可以单击 Microsoft AutoUpdate 用户界面中的"检查更新"选项。
 
+<br>
+
+****
+
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|EnableCheckForUpdatesButton|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|为 (默认值)  <p> 错误|
+|||
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
 
 设置为 true 将"加入 Office预览体验计划..."。复选框不可用/灰度为用户。
 
+<br>
+
+****
+
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|DisableInsiderCheckbox|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|False (默认值)  <p> 正确|
+|||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>限制从 MAU 发送的遥测
 
 设置为 false 可发送最小检测信号数据、无应用程序使用情况和无环境详细信息。
 
+<br>
+
+****
+
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
 |**键**|SendAllTelemetryEnabled|
-|**数据类型**|布尔值|
+|**数据类型**|Boolean|
 |**可能的值**|为 (默认值)  <p> 错误|
+|||
 
 ## <a name="example-configuration-profile"></a>配置文件示例
 

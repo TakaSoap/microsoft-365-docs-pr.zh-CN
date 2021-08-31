@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de6925bcfc70285516bf12c07540b9c74caec9ea8210850cc1a3cc44f6a1ed92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853867"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747395"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -52,7 +52,7 @@ ms.locfileid: "53853867"
 
 2. 重现问题
 
-3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在一个.zip中。 此命令还会在操作成功后输出备份的文件路径。
+3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在存档.zip中。 此命令还会在操作成功后输出备份的文件路径。
 
    > [!TIP]
    > 默认情况下，诊断日志将保存到 `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 若要更改保存诊断日志的目录，请传递给以下命令， `--path [directory]` `[directory]` 将 替换为所需的目录。
@@ -91,37 +91,37 @@ ms.locfileid: "53853867"
 
 ### <a name="from-the-command-line"></a>从命令行
 
-- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
+- `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
 ## <a name="configuring-from-the-command-line"></a>从命令行配置
 
 可以通过命令行完成重要任务，如控制产品设置和触发按需扫描：
 
-|Group        |应用场景                                   |命令                                                                           |
-|-------------|-------------------------------------------|----------------------------------------------------------------------------------|
-|配置|打开/关闭实时保护           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
-|配置|打开/关闭云保护               |`mdatp config cloud --value [enabled/disabled]`                                   |
-|配置|打开/关闭产品诊断            |`mdatp config cloud-diagnostic --value [enabled/disabled]`                        |
-|配置|打开/关闭自动提交示例    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
-|配置|向允许列表添加威胁名称      |`mdatp threat allowed add --name [threat-name]`                                   |
-|配置|从允许列表中删除威胁名称 |`mdatp threat allowed remove --name [threat-name]`                                |
-|配置|列出所有允许的威胁名称              |`mdatp threat allowed list`                                                       |
-|配置|打开 PUA 保护                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
-|配置|关闭 PUA 保护                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
-|配置|打开 PUA 保护的审核模式      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
-|配置|打开/关闭 passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|诊断  |更改日志级别                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|诊断  |生成诊断日志                   |`mdatp diagnostic create --path [directory]`                                      |
-|健康       |检查产品的运行状况                 |`mdatp health`                                                                    |
-|健康       |检查spefic产品属性       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
-|保护   |扫描路径                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
-|保护   |执行快速扫描                            |`mdatp scan quick`                                                                |
-|保护   |执行完全扫描                             |`mdatp scan full`                                                                 |
-|保护   |取消正在进行的按需扫描           |`mdatp scan cancel`                                                               |
-|保护   |请求安全智能更新     |`mdatp definitions update`                                                        |
-|EDR          |将组标记添加到设备。 EDR标记用于管理设备组。 有关详细信息，请访问 /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
-|EDR          |从设备中删除组标记               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |添加组 ID                               |`mdatp edr group-ids --group-id [group]`                                          |
+|组|方案|命令|
+|---|---|---|
+|配置|打开/关闭实时保护|`mdatp config real-time-protection --value [enabled/disabled]`|
+|配置|打开/关闭云保护|`mdatp config cloud --value [enabled/disabled]`|
+|配置|打开/关闭产品诊断|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
+|配置|打开/关闭自动提交示例|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|配置|向允许列表添加威胁名称|`mdatp threat allowed add --name [threat-name]`|
+|配置|从允许列表中删除威胁名称|`mdatp threat allowed remove --name [threat-name]`|
+|配置|列出所有允许的威胁名称|`mdatp threat allowed list`|
+|配置|打开 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
+|配置|关闭 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
+|配置|打开 PUA 保护的审核模式|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
+|配置|打开/关闭 passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|诊断|更改日志级别|`mdatp log level set --level [error/warning/info/verbose]`|
+|诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
+|健康|检查产品的运行状况|`mdatp health`|
+|健康|检查spefic产品属性|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|Protection|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protection|执行快速扫描|`mdatp scan quick`|
+|Protection|执行完全扫描|`mdatp scan full`|
+|Protection|取消正在进行的按需扫描|`mdatp scan cancel`|
+|Protection|请求安全智能更新|`mdatp definitions update`|
+|EDR|将组标记添加到设备。 EDR标记用于管理设备组。 有关详细信息，请访问 /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|从设备中删除组标记|`mdatp edr tag remove --tag-name [name]`|
+|EDR|添加组 ID|`mdatp edr group-ids --group-id [group]`|
 
 ### <a name="how-to-enable-autocompletion"></a>如何启用自动完成
 
@@ -149,8 +149,7 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
-   ```
-   ```zsh
+
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
@@ -160,4 +159,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的一些功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的新功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。

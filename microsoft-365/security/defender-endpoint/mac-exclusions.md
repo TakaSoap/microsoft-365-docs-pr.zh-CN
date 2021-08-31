@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9047c6e5b91ebd2d7e0a4e953ca907b31cb476f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573051"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745021"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -57,17 +57,17 @@ ms.locfileid: "58573051"
 文件扩展名|计算机上任意位置具有扩展名的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
-流程|特定进程 (的完整路径或文件名指定，) 它打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
+流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
 
 文件、文件夹和进程排除项支持以下通配符：
 
 通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
->[!NOTE]
->产品在评估排除项时尝试解析固定链接。 当排除项包含通配符或目标文件 (卷上不存在时，) `Data` 解析不起作用。
+> [!NOTE]
+> 产品在评估排除项时尝试解析固定链接。 当排除项包含通配符或目标文件 (卷上不存在时，) `Data` 解析不起作用。
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>如何配置排除项列表
 
@@ -77,7 +77,7 @@ Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
 
 ### <a name="from-the-user-interface"></a>从用户界面
 
-打开 Defender for Endpoint 应用程序并导航到"管理 **设置**  >  **""** 添加或删除排除..."，如以下屏幕截图所示：
+打开 Defender for Endpoint 应用程序并导航到"管理 **设置** \> **""** 添加或删除排除..."，如以下屏幕截图所示：
 
 ![管理排除项屏幕截图。](images/mdatp-37-exclusions.png)
 

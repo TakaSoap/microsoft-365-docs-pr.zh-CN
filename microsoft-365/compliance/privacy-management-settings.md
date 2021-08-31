@@ -16,18 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解隐私管理的全局设置选项。
-ms.openlocfilehash: b656070c5470ae651bb3b361cfc8481dd9b09212
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254766"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747061"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>管理隐私管理设置 (预览) 
 
-本文内容：了解 **隐私** 管理的设置选项。
-
-隐私管理的全局设置选项位于主页右上角的齿轮图标下。 这些选项允许你设置高级首选项和自定义关键属性。 此页概述了主要类别设置类别。
+隐私管理的全局设置选项位于主页右上角的齿轮图标下。 这些选项允许你设置高级首选项和自定义关键属性。 此页面概述了主要类别设置类别。
 
 ## <a name="anonymization"></a>匿名化
 
@@ -47,7 +45,7 @@ ms.locfileid: "58254766"
 
 ## <a name="data-matching"></a>数据匹配  
 
-使用此部分可上载描述数据主体的属性的数据架构，这有助于在数据环境中搜索个人数据时识别正确的Microsoft 365主体。 以 XML 格式创建和上载架构和规则包。 在"个人数据上载"下，还可以提交与提供的架构匹配的个人数据。 你可以创建和上传你自己的文件，也可以选择从 Azure 上传个人数据。 若要了解有关主题权限请求的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
+使用此部分可上载描述数据主体的属性的数据架构，这有助于在用户环境中搜索个人数据时识别正确的Microsoft 365主体。 以 XML 格式创建和上载架构和规则包。 在"个人数据上载"下，还可以提交与提供的架构匹配的个人数据。 你可以创建和上传你自己的文件，也可以选择从 Azure 上传个人数据。 若要了解有关主题权限请求的信息，请参阅 [管理主题权限请求](privacy-management-subject-rights-requests.md)。
 
 ## <a name="data-retention-periods"></a>数据保留期  
 

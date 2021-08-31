@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 993516c20629ddf4466325c547cd9208440dc41d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b449dbf22511e3a53a852c7a6f235a70fb401ce6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573915"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745009"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和组织适用于终结点设备的 Microsoft Defender 列表
 
@@ -34,7 +34,7 @@ ms.locfileid: "58573915"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)。
 
-**"设备"** 列表显示网络中生成警报的设备列表。 默认情况下，队列显示最近 30 天内看到的设备。  
+**"设备"** 列表显示网络中生成警报的设备列表。 默认情况下，队列显示最近 30 天内看到的设备。
 
 一目了然地，你将看到域、风险级别、操作系统平台和其他详细信息，以轻松识别风险最大的设备。
 
@@ -47,7 +47,7 @@ ms.locfileid: "58573915"
 
 在载入过程中， **设备列表** 将随着设备开始报告传感器数据而逐渐填充。 使用此视图在已载入终结点联机时跟踪它们，或下载完整终结点列表作为 CSV 文件进行脱机分析。
 
->[!NOTE]
+> [!NOTE]
 > 如果导出设备列表，它将包含组织的每台设备。 下载可能需要很长时间，具体取决于你的组织规模。 以 CSV 格式导出列表以未筛选的方式显示数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选。
 
 ![包含设备列表的设备列表的图像。](images/device-inventory.png)

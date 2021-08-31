@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05a2c4e29b56d973f0a0a924390fa5b4209f346a6cdf390fa480e88764860f2f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8787a6bd5818eda5f5302fe149fd7b56db296abd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793357"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745849"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 
@@ -41,7 +41,7 @@ ms.locfileid: "53793357"
 安装错误可能导致包管理器产生有意义的错误消息，也可能没有意义。 若要验证安装是否成功，请运行以下方法获取并检查安装日志：
 
 ```bash
- sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
+ sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -60,15 +60,20 @@ ms.locfileid: "53793357"
 
 请注意，要安装的程序包与主机分发和版本匹配。
 
-| package                       | distribution                             |
-|-------------------------------|------------------------------------------|
-| mdatp-rhel8。Linux.x86_64.rpm  | Oracle、RHEL 和 CentOS 8.x              |
-| mdatp-sles12。Linux.x86_64.rpm | SuSE Linux Enterprise Server 12.x        |
-| mdatp-sles15。Linux.x86_64.rpm | SuSE Linux Enterprise Server 15.x        |
-| mdatp.Linux.x86_64.rpm        | Oracle、RHEL 和 CentOS 7.x              |
-| mdatp.Linux.x86_64.deb        | Debian 和 Ubuntu 16.04、18.04 和 20.04 |
+<br>
 
-对于 [手动部署](linux-install-manually.md)，请确保已选择正确的 distro 和版本。
+****
+
+|package|distribution|
+|---|---|
+|mdatp-rhel8。Linux.x86_64.rpm|Oracle、RHEL 和 CentOS 8.x|
+|mdatp-sles12。Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
+|mdatp-sles15。Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
+|mdatp.Linux.x86_64.rpm|Oracle、RHEL 和 CentOS 7.x|
+|mdatp.Linux.x86_64.deb|Debian 和 Ubuntu 16.04、18.04 和 20.04|
+|
+
+对于 [手动部署](linux-install-manually.md)，请确保已选择正确的发布和版本。
 
 ## <a name="installation-failed"></a>安装失败
 
@@ -123,7 +128,7 @@ systemctl status mdatp
     其中 `<systemd_path>` 用于 `/lib/systemd/system` Ubuntu 和 Debian 分发， `/usr/lib/systemd/system` 适用于 Rhel、CentOS、Oracle 和 SLES。
    然后重新运行步骤 2。
 
-4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是，请尝试将此设置设置为 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
+4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是这样，请尝试将它设置为允许 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
 现在，请尝试使用步骤 2 重新启动 mdatp 服务。 在尝试配置更改并重新启动后，出于安全考虑，立即还原配置更改。
 
 5. 如果 `/opt` 目录是符号链接，请为 创建绑定装载 `/opt/microsoft` 。

@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何为组织设置隐私管理、设置角色和权限以及配置重要设置。
-ms.openlocfilehash: 8f45e779cc6ce8deaf20a5f49b597f4ad6139a08
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507694"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745961"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>隐私管理与预览 (入门) 
 
-本文内容：了解如何为组织设置对隐私管理的访问权限、如何开始评估数据以及如何处理重要 **设置**。
+隐私管理目前适用于公共预览版。 了解如何为组织设置访问权限并开始评估数据。
 
 ## <a name="who-can-access-privacy-management"></a>Who可以访问隐私管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "58507694"
 有关详细的许可指南，请参阅 [适用于安全性与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 > [!Note]
-> 美国政府隐私管理的公共预览版不适用于美国政府Community (GCC) 中等GCC或国防部 (DoD) 客户。
+> 美国政府隐私管理的公共预览版不适用于美国政府 Community (GCC) 、GCC 高或国防部 (DoD) 预览版。
 
 ## <a name="set-up-privacy-management"></a>设置隐私管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "58507694"
 
 获取订阅后，最多允许激活 30 分钟。 然后返回到合规中心中的隐私管理以开始。
 
-首次打开隐私管理时，将要求您确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#where-privacy-management-identifies-personal-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
+首次打开隐私管理时，系统要求你确认你同意条款和个人数据评估过程， ([了解) 。](privacy-management.md#where-privacy-management-identifies-personal-data) 可以完整查看提供的链接，然后再继续。 一旦同意，隐私管理可能需要最多 24 小时才能开始提供有关组织数据的见解。
 
 如果你没有获得订阅或同意使用隐私管理条款所需的角色，系统将提示你联系全局管理员寻求帮助。
 

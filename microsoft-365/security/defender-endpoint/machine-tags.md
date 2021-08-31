@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02368ff4c8f122b3bca2deac22b3fa994e6bf82d38fce4e44ff40ba12c882730
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53874002"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745633"
 ---
 # <a name="create-and-manage-device-tags"></a>创建和管理设备标签
 
@@ -41,7 +41,7 @@ ms.locfileid: "53874002"
 - 设置注册表项值
 
 > [!NOTE]
-> 将标记添加到设备的时间与标记在设备列表和设备页面中的可用性之间可能有一些延迟。  
+> 将标记添加到设备的时间与标记在设备列表和设备页面中的可用性之间可能有一些延迟。
 
 若要使用 API 添加设备标记，请参阅 [添加或删除设备标记 API](add-or-remove-machine-tags.md)。
 
@@ -66,8 +66,9 @@ ms.locfileid: "53874002"
 
 标记将添加到设备视图，并且也会反映在 **"设备"列表** 视图中。 然后，可以使用 **标记** 筛选器查看相关设备列表。
 
->[!NOTE]
-> 筛选可能对包含括号的标记名称不起作用。<br>
+> [!NOTE]
+> 筛选可能对包含括号的标记名称不起作用。
+>
 > 创建新标记时，将显示现有标记的列表。 该列表只显示通过门户创建的标记。 不会显示从客户端设备创建的现有标记。
 
 您还可以从此视图中删除标记。
@@ -76,17 +77,18 @@ ms.locfileid: "53874002"
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>通过设置注册表项值添加设备标记
 
->[!NOTE]
+> [!NOTE]
 > 仅适用于以下设备：
->- Windows 10版本 1709 或更高版本
->- Windows服务器版本 1803 或更高版本
->- Windows Server 2016
->- Windows Server 2012 R2
->- Windows Server 2008 R2 SP1
->- Windows 8.1
->- Windows 7 SP1
+>
+> - Windows 10版本 1709 或更高版本
+> - Windows服务器版本 1803 或更高版本
+> - Windows Server 2016
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
+> - Windows 8.1
+> - Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > 标记中可以设置的最大字符数为 200。
 
 当你需要对特定设备列表应用上下文操作时，具有类似标记的设备可能很方便。
@@ -97,7 +99,7 @@ ms.locfileid: "53874002"
 - 注册表项值 (REG_SZ) ： `Group`
 - 注册表项数据： `Name of the tag you want to set`
 
->[!NOTE]
->设备标记是每天生成的设备信息报告的一部分。 或者，你可以选择重新启动将传输新设备信息报告的终结点。
-> 
+> [!NOTE]
+> 设备标记是每天生成的设备信息报告的一部分。 或者，你可以选择重新启动将传输新设备信息报告的终结点。
+>
 > 如果需要删除使用上述注册表项添加的标记，请清除注册表项数据的内容，而不是删除"Group"项。

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d8e83cfd877266bac6247246c078dbdc811368e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d7decb3e566f8bb0abf4a3aec12e2e3a43ae3511
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563506"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58746431"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "58563506"
 
 - Microsoft 365 Defender
 
-事件调查的一部分可能包括用户帐户。 从"事件 **"** 和"用户"事件 **&"事件***>">***开始**。 
+事件调查的一部分可能包括用户帐户。 从事件 **和** 警报事件 _ _ 用户 **&事件的用户** 选项卡 \> ***\>* 开始**。
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。":::
 
@@ -55,30 +55,47 @@ ms.locfileid: "58563506"
 
 您还可以通过从"用户"页上的列表中选择用户帐户的名称来 **查看此页面。**
 
-Microsoft 365 Defender门户用户页面合并来自 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (的信息，具体取决于你拥有哪些) 。 
+通过选择"组"下的号码，可以看到用户的组 **成员身份**。
+
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="用户门户中用户的组成员身份Microsoft 365 Defender示例":::
+
+通过选择"经理 **"** 下的图标，可以看到用户位于组织树中。
+
+"Microsoft 365 Defender门户用户页面将 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (信息组合在一起，具体取决于你拥有哪些) 。
 
 此页面显示特定于用户帐户安全风险的信息。 这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。
 
-在此页中，你可以执行以下附加操作： 
+在此页中，你可以执行以下附加操作：
 
 - 将用户帐户标记为已泄露
 - 要求用户重新登录
 - 暂停用户帐户
 - 请参阅Azure Active Directory (Azure AD) 用户帐户设置
 - 查看用户帐户拥有的文件
-- 查看与该用户共享的文件。 
+- 查看与该用户共享的文件。
 
 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="针对用户门户中事件的用户帐户Microsoft 365 Defender示例":::
-
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
 
 Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
 
---> 
+-->
+
+## <a name="view-lateral-movement-paths"></a>查看横向移动路径
+
+通过选择"横向移动路径"选项卡，你可以查看完全动态且可单击的地图，该地图可直观呈现此用户之间可用于访问和访问网络的横向移动路径。
+
+该地图提供了攻击者在计算机或用户之间为入侵敏感帐户而必须在这两个用户之间拥有多少跃点的列表，如果用户具有敏感帐户，则可以看到直接连接的资源和帐户数。
+
+如果在过去两天内未检测到实体的潜在横向移动路径，则图形不显示。 使用"查看其他日期"选择其他日期，以查看为此实体发现的以前的横向移动路径图。 横向移动路径报告始终可用于提供有关发现的可能的横向移动路径的信息，并可以按时间进行自定义。
+
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="用户门户中用户的横向移动Microsoft 365 Defender示例":::
+
+有关详细信息，请参阅横向 [移动路径](/defender-for-identity/use-case-lateral-movement-path)。
 
 ## <a name="next-steps"></a>后续步骤
 

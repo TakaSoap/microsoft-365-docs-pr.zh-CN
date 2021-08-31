@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 246ba885795c4317d4cab0dca82e2cc84456366a44cfe567859919d15c3d9cce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 935826d3a89abeef20e1ebb17f964137fdbfccaf
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857443"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745813"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "53857443"
 
 本文提供了一些常规步骤，可用于缩小与 Linux 上的 Defender for Endpoint 相关的性能问题。
 
-RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
 根据你正在运行的应用程序和设备特征，在 Linux 上运行 Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 Linux 上的 Defender for Endpoint 中的性能问题。
 
@@ -51,6 +51,7 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -65,6 +66,7 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
     > 此功能在版本 100.90.70 或更高版本中可用。
 
     默认情况下，在 和 频道上 `Dogfood` 启用 `InsiderFast` 此功能。 如果使用的是其他更新通道，可以通过命令行启用此功能：
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
@@ -80,6 +82,7 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -100,6 +103,7 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     此命令的输出应类似于以下内容：
 
     ```Output
@@ -142,7 +146,7 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
 
     若要提高 Linux 上 Defender for Endpoint 的性能，请在行下找到编号最高的一个， `Total files scanned` 并添加排除项。 有关详细信息，请参阅在 Linux 上配置并验证 [Defender for Endpoint 的排除项](linux-exclusions.md)。
 
-    >[!NOTE]
+    > [!NOTE]
     > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。
 
 5. 在 Linux 上配置 Microsoft Defender for Endpoint，排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
@@ -150,4 +154,5 @@ RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续
     有关详细信息，请参阅 [并验证 Microsoft Defender for Endpoint 在Linux上的排除](linux-exclusions.md)。
 
 ## <a name="see-also"></a>另请参阅
+
 - [调查代理运行状况问题](health-status.md)

@@ -13,13 +13,13 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 本地 IT 基础结构的基本结构，以及企业内部部署基础结构如何满足Microsoft 365业务需求。
-ms.openlocfilehash: 36fec158926bfa4530c0dfa6a862e877204be0cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: 了解 Contoso 本地 IT 基础结构的基本结构，以及企业内部部署基础结构如何满足Microsoft 365需求。
+ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569497"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745973"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 
@@ -101,17 +101,17 @@ Contoso 业务需求分为五个主要类别：
 
 - 遵守区域法规要求
 
-  确保遵守有关数据存储、加密、数据隐私和个人数据法规的行业和区域法规，例如欧盟一般数据保护条例 (GDPR) 。
+  确保遵守针对数据存储、加密、数据隐私和个人数据法规的行业和区域法规，例如欧盟一般数据保护条例 (GDPR) 。
 
 **管理**
 
 - 减少在客户端电脑和设备上运行的管理软件的 IT 开销
 
-  自动安装整个组织中Windows操作系统Microsoft 365 企业应用版更新。
+  自动安装整个组织中 Windows操作系统Microsoft 365 企业应用版更新。
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>将 Contoso 业务需求映射到Microsoft 365企业
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>映射 Contoso 业务需求Microsoft 365企业版
 
-Contoso IT 部门在部署之前确定了以下业务需求Microsoft 365 E5功能：
+Contoso IT 部门确定了以下业务需求映射，Microsoft 365 E5部署之前使用这些功能：
 
 
 | 类别 | 业务需求 | Microsoft 365企业产品或功能 |
@@ -121,7 +121,7 @@ Contoso IT 部门在部署之前确定了以下业务需求Microsoft 365 E5功�
 |  | 提高远程和移动工作者的工作效率 | Microsoft 365 工作负载和基于云的数据 |
 |  | 提高创造力和革新能力 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 标识和访问管理 | 使用 Azure AD 多重身份验证的专用全局管理员帐户 (MFA) Azure AD Privileged Identity Management (PIM)  <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 标识和访问管理 | 使用 Azure AD 多重身份验证的专用全局管理员帐户 (MFA) Azure AD Privileged Identity Management (PIM)  <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> 安全信息读取者 <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365威胁调查和响应 <BR> |
 |  | 信息保护 | Azure 信息保护 <BR> 数据丢失防护 (DLP) <BR> Windows 信息保护 (WIP) <BR> Microsoft 云应用安全 <BR> Microsoft Intune |
 |  | 安全管理 | Azure Defender  <BR> Windows Defender 安全中心 |

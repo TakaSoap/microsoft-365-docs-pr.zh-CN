@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec7b4a5a5edc542e305e876141e501e3c0e4b2bc35d096a48b4b6d36fe3e804d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ab92335e2f5befcead81765954477c6e70dac492
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817798"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747615"
 ---
 # <a name="live-response-command-examples"></a>实时响应命令示例
 
@@ -36,7 +36,7 @@ ms.locfileid: "53817798"
 
 了解实时响应中使用的常用命令，并查看常用命令使用方法的示例。
 
-根据已授予的角色，可以运行基本或高级实时响应命令。 有关基本命令和高级命令详细信息，请参阅使用实时响应 [调查设备上的实体](live-response.md)。
+根据已授予的角色，可以运行基本或高级实时响应命令。 有关基本命令和高级命令详细信息，请参阅使用实时响应调查 [设备上的实体](live-response.md)。
 
 ## <a name="analyze"></a>analyze
 
@@ -105,7 +105,7 @@ getfile c:\Users\user\Desktop\work.txt
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > 无法使用此命令 **从** 实时响应中下载以下文件类型：
 >
@@ -211,7 +211,7 @@ run script.ps1
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > 对于长时间运行的命令（如 **"run"** 或 **"getfile"，** 您可能需要在命令末尾使用""符号在后台 **&** 执行该操作。
 > 这将允许你在使用 **'fg'** 基本命令完成时继续调查计算机并返回到 [后台命令](live-response.md#basic-commands)。

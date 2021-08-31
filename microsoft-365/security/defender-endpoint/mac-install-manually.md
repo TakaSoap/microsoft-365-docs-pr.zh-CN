@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32da15254d011e67959c7ebeff42ab7024eb0895
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6cf8777a5dd3614cb5649eb4c95f6d69d14540fd
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571827"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747049"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "58571827"
 
 - [下载安装和载入程序包](#download-installation-and-onboarding-packages)
 - [macOS (10.15 及早期版本的应用程序安装) ](#application-installation-macos-1015-and-older-versions)
-- [macOS 11 (较新版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
+- [macOS 11 (更高版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
 - [客户端配置](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
@@ -72,11 +72,11 @@ ms.locfileid: "58571827"
     ![应用安装屏幕截图2。](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
-   > 系统将提示你允许从 Microsoft 安装驱动程序， ("系统扩展阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
+   > 系统将提示你允许从 Microsoft 安装驱动程序， ("系统扩展被阻止"或"安装已保留"或两者同时安装。 必须允许安装驱动程序。
 
    ![应用安装屏幕截图3。](images/mdatp-30-systemextension.png)
 
-3. 选择 **"打开安全首选项"** 或"打开系统 **首选项>安全&隐私"。** 选择 **"允许"：**
+3. 选择 **"打开安全首选项"** 或"打开系统首选项 **>安全&隐私"。** 选择 **"允许"：**
 
     ![安全和隐私窗口屏幕截图。](images/mdatp-31-securityprivacysettings.png)
 
@@ -102,7 +102,7 @@ ms.locfileid: "58571827"
 
     ![系统扩展审批。](images/big-sur-install-2.png)
 
-4. 从"**安全&隐私"** 窗口中，选择"允许 **"。**
+4. 从"**安全&隐私"** 窗口中，选择"**允许"。**
 
     ![系统扩展安全首选项 1。](images/big-sur-install-3.png)
 
@@ -112,7 +112,7 @@ ms.locfileid: "58571827"
 
     ![系统扩展安全首选项 2。](images/big-sur-install-4.png)
 
-7. 打开 **"系统** 首选项&隐私"并导航到"隐私"选项卡。授予 Microsoft Defender ATP 和 Microsoft Defender ATP 终结点安全扩展的"完全磁盘  >  **访问权限"。**   
+7. 打开 **"系统** 首选项&隐私"并导航到"隐私"选项卡。向 \> Microsoft **Defender ATP** 和 Microsoft Defender ATP 终结点安全扩展授予"完全磁盘 **访问权限"。**  
 
     ![完全磁盘访问。](images/big-sur-install-5.png)
 
@@ -146,9 +146,9 @@ ms.locfileid: "58571827"
 ## <a name="how-to-allow-full-disk-access"></a>如何：允许完全磁盘访问
 
 > [!CAUTION]
-> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意的情况下 (访问磁盘上的某些位置，如) 下载、桌面等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+> macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
 
-1. 若要授予同意，请打开 **系统首选项**  >  **安全&**  >  **隐私**  >  **隐私完全磁盘访问**。 单击锁定图标以在 (对话框底部进行更改) 。 选择"适用于终结点的 Microsoft Defender"。
+1. 若要授予同意，请打开 **系统首选项** \> **安全&** \> **隐私隐私** \> **完全磁盘访问**。 单击锁定图标以在 (对话框底部进行更改) 。 选择"适用于终结点的 Microsoft Defender"。
 
 2. 运行 AV 检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
@@ -218,7 +218,7 @@ ms.locfileid: "58571827"
 
 12. 转到警报队列。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS 示例EDR显示严重性、类别、检测源和折叠的操作菜单的测试警报。":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS 示例EDR显示严重性、类别、检测源和折叠操作菜单的测试警报。":::
 
     查看警报详细信息和设备时间线，并执行常规调查步骤。
 

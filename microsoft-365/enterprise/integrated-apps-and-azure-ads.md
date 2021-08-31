@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: 了解如何在 Azure AD Office 365和管理集成应用，从而允许在全局管理员级别进行应用授权。
-ms.openlocfilehash: f604260646aa4e6793540003346c9e83d7a6b269
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 了解如何在 Azure AD Office 365和管理集成应用，从而允许 **Azure AD DC** 管理员或 **全局管理员级别的** 应用授权。
+ms.openlocfilehash: ccf1e16e7e0307499e515eb3691c865d49801412
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354220"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747307"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>适用于管理员的集成应用Microsoft 365 Azure AD
 
-管理集成应用不仅仅是管理用户 [对应用的同意](../admin/misc/user-consent.md)。 随着 REST API Microsoft 365出现，用户可以向应用授予对 Microsoft 365 数据（如邮件、日历、联系人、用户、组、文件和文件夹）的访问权限。 默认情况下，用户需要单独向每个应用授予权限。 
+管理集成应用不仅仅是管理用户 [对应用的同意](../admin/misc/user-consent.md)。 随着 REST API 的出现Microsoft 365，用户可以向应用授予对 Microsoft 365 数据（如邮件、日历、联系人、用户、组、文件和文件夹）的访问权限。 默认情况下，用户需要单独向每个应用授予权限。 
 
-但是，如果你想要在全局管理员级别对应用授权一次，并通过应用启动器将应用推出到整个组织，这不会很好地扩展。 为此，必须在 Azure AD Azure Active Directory (中注册) 。 在 Azure AD 中注册应用之前，需要执行一些步骤，以及一些应了解的有助于在 Microsoft 365 组织中管理应用的后台信息。
+但是，如果你想要在 **Azure AD DC** 管理员或全局管理员级别对应用授权一次，并通过应用启动器将应用推出到整个组织，这不会很好地扩展。 为此，必须在 Azure AD Azure Active Directory (注册) 。 在 Azure AD 中注册应用之前，需要执行一些步骤，以及一些你应了解的有助于在 Microsoft 365 组织中管理应用的后台信息。
   
 ## <a name="azure-ad-resources-for-microsoft-365-admins"></a>适用于管理员的 Azure AD Microsoft 365
 
@@ -45,11 +45,11 @@ ms.locfileid: "58354220"
   
 |文章|Comments|
 |:-----|:-----|
-|[满足Microsoft 365启动器](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |如果你是应用启动器的新用户，你可能想知道它是什么以及如何使用它。 应用启动器旨在帮助你从任何位置访问Microsoft 365。  <br/> |
-|[Office 365 API 概述](/office/office-365-management-api/office-365-management-apis-overview) <br/> |利用 Microsoft 365 管理 API，您可以访问 Microsoft 365 数据，包括他们最关心的内容—邮件、日历、联系人、用户和组、文件和文件夹。 <br/> |
+|[满足 Microsoft 365 应用启动器](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |如果你是应用启动器的新用户，你可能想知道它是什么以及如何使用它。 应用启动器旨在帮助你从任何位置访问Microsoft 365。  <br/> |
+|[Office 365 API 概述](/office/office-365-management-api/office-365-management-apis-overview) <br/> |通过Microsoft 365 API，您可以访问 Microsoft 365 数据，包括他们最关心的内容，即邮件、日历、联系人、用户和组、文件和文件夹。 <br/> |
 |[在 Azure AD 中集成应用程序](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | 了解与 Azure AD 集成的应用程序，以及如何注册应用程序，了解已注册应用程序背后的概念，并了解多租户应用程序的品牌准则。  <br/> |
-|[将自定义磁贴添加到应用启动器](/office365/admin/manage/customize-the-app-launcher)  <br/> |应用中的应用启动Microsoft 365使用户可以更轻松地查找和访问其应用。 本文介绍作为开发人员，你可获取应用在用户的应用启动器中显示的方式，并为用户提供使用 Microsoft 365 凭据的单一登录 (SSO) 体验。  <br/> |
+|[将自定义磁贴添加到应用启动器](/office365/admin/manage/customize-the-app-launcher)  <br/> |应用中的应用启动Microsoft 365使用户可以更轻松地查找和访问其应用。 本文介绍你作为开发人员，可以获取应用在用户的应用启动器中显示的方式，并为用户提供使用 (SSO) 单一登录 Microsoft 365 体验。  <br/> |
 |[Azure AD 集成教程](/azure/active-directory/saas-apps/tutorial-list) <br/> |这些教程的目的是展示如何为第三方 SaaS 应用程序配置 Azure AD SSO。  <br/> |
 |[Azure AD 的身份验证场景](/azure/active-directory/develop/authentication-vs-authorization) <br/> |Azure AD 通过提供标识即服务、支持行业标准协议（如 OAuth 2.0 和 OpenID 连接）以及适用于不同平台的开放源代码库来帮助你快速开始编码，从而简化了开发人员的身份验证。 本文档可帮助你了解 Azure AD 支持的各种方案，并展示如何开始使用。  <br/> |
-|[应用程序访问](/azure/active-directory/manage-apps/what-is-access-management) <br/> |借助 Azure AD (，可以轻松集成到 SaaS) 应用程序的许多热门软件即服务。 它提供标识和访问管理，并为用户提供访问面板，用户可以在访问面板中发现他们拥有哪些应用程序访问权限，以及在何处使用 SSO 访问其应用程序。 本文提供了指向相关资源的链接，可让你了解有关 Azure AD 的应用程序访问增强功能以及如何参与这些增强功能的信息。  <br/> |
-|[个性化设置Office 365体验](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |可以通过在应用启动器中添加或删除应用来快速访问Microsoft 365应用。  <br/> |
+|[应用程序访问](/azure/active-directory/manage-apps/what-is-access-management) <br/> |借助 Azure AD，可以轻松集成到 SaaS (应用程序的许多) 软件。 它提供标识和访问管理，并为用户提供访问面板，用户可以在访问面板中发现他们拥有哪些应用程序访问权限，以及在何处使用 SSO 访问其应用程序。 本文提供了指向相关资源的链接，可让你了解有关 Azure AD 的应用程序访问增强功能以及如何参与这些增强功能的信息。  <br/> |
+|[个性化设置Office 365体验](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |可以通过在应用启动器中添加或删除应用，快速访问Microsoft 365应用。  <br/> |

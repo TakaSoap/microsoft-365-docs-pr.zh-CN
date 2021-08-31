@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 11b17f8e1013403796887ed57c6d29ab2cf52ffc7dab5d8a92b4b6d2c34d1ee1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9680e2ae9dda7ece2f042124f23f5639cf469c00
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853879"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744961"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
 
@@ -35,8 +35,7 @@ ms.locfileid: "53853879"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-
-macOS 上的 Microsoft Defender for Endpoint (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
+macOS 上的 Microsoft Defender (PUA) 保护功能中可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。
 
 这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能会对终结点执行对性能或使用产生不利影响的操作。 PUA 还可以指信誉不佳的应用程序。
 
@@ -56,8 +55,8 @@ macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。
 - **审核**：PUA 文件在产品日志中报告，但不在Microsoft 365 Defender中。 不会向用户显示任何通知，产品不会采取任何操作。
 - **阻止**：PUA 文件在产品日志和发布门户中Microsoft 365 Defender报告。 用户会收到通知，产品会采取操作。
 
->[!WARNING]
->默认情况下，PUA 保护在 **审核模式下配置** 。
+> [!WARNING]
+> 默认情况下，PUA 保护在 **审核模式下配置** 。
 
 你可以配置从命令行或管理控制台处理 PUA 文件的方式。
 
@@ -71,7 +70,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>使用管理控制台配置 PUA 保护：
 
-在你的企业中，你可以从管理控制台（如 JAMF 或 Intune）配置 PUA 保护，类似于配置其他产品设置的方式。 有关详细信息，请参阅在 macOS 上设置 Microsoft Defender for Endpoint 的首选项主题[中的威胁类型](mac-preferences.md)设置部分。 [](mac-preferences.md#threat-type-settings)
+在企业中，你可以从管理控制台（如 JAMF 或 Intune）配置 PUA 保护，这类似于配置其他产品设置的方式。 有关详细信息，请参阅在 macOS 上设置 Microsoft Defender for Endpoint 的首选项主题[中的威胁类型](mac-preferences.md)设置部分。 [](mac-preferences.md#threat-type-settings)
 
 ## <a name="related-topics"></a>相关主题
 

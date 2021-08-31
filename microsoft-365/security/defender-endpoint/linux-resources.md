@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ec48f75765dfafac81fa82f578b956180378fab1aa380c4f9750ec997105e2d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811161"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747659"
 ---
 # <a name="resources"></a>资源
 
@@ -53,7 +53,7 @@ ms.locfileid: "53811161"
 
 2. 重现问题。
 
-3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip内部。
+3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip内。
 
    ```bash
    sudo mdatp diagnostic create
@@ -88,7 +88,7 @@ ms.locfileid: "53811161"
 
 ### <a name="manual-uninstallation"></a>手动卸载
 
-- `sudo yum remove mdatp` For RHEL and variants (CentOS and Oracle Linux) .
+- `sudo yum remove mdatp` 用于 CentOS 和 Oracle Linux (RHEL 和) 。
 - `sudo zypper remove mdatp` 用于 SLES 和变量。
 - `sudo apt-get purge mdatp` 用于 Ubuntu 和 Debian 系统。
 
@@ -104,51 +104,56 @@ ms.locfileid: "53811161"
 
 下表列出了一些最常见方案的命令。 从 `mdatp help` 终端运行以查看受支持命令的完整列表。
 
-|组                 |应用场景                                                |命令                                                                |
-|----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
-|配置         |打开/关闭实时保护                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|配置         |打开/关闭行为监视                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
-|配置         |打开/关闭云保护                            |`mdatp config cloud --value [enabled\|disabled]`                       |
-|配置         |打开/关闭产品诊断                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
-|配置         |打开/关闭自动提交示例                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |
-|配置         |打开/关闭 AV 被动模式                             |`mdatp config passive-mode --value [enabled\|disabled]`                |
-|配置         |添加/删除文件扩展名的防病毒排除项  |`mdatp exclusion extension [add\|remove] --name [extension]`           |
-|配置         |添加/删除文件的防病毒排除项            |`mdatp exclusion file [add\|remove] --path [path-to-file]`             |
-|配置         |添加/删除目录的防病毒排除项       |`mdatp exclusion folder [add\|remove] --path [path-to-directory]`      |
-|配置         |添加/删除某个进程的防病毒排除项         |`mdatp exclusion process [add\|remove] --path [path-to-process]`<br/>`mdatp exclusion process [add\|remove] --name [process-name]` |
-|配置         |列出所有防病毒排除项                           |`mdatp exclusion list`                                                 |
-|配置         |向允许列表添加威胁名称                   |`mdatp threat allowed add --name [threat-name]`                        |
-|配置         |从允许列表中删除威胁名称              |`mdatp threat allowed remove --name [threat-name]`                     |
-|配置         |列出所有允许的威胁名称                           |`mdatp threat allowed list`                                            |
-|配置         |打开 PUA 保护                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
-|配置         |关闭 PUA 保护                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
-|配置         |打开 PUA 保护的审核模式                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|诊断           |更改日志级别                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|诊断           |生成诊断日志                                |`mdatp diagnostic create --path [directory]`                           |
-|健康                |检查产品的运行状况                              |`mdatp health`                                                         |
-|保护            |扫描路径                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
-|保护            |执行快速扫描                                         |`mdatp scan quick`                                                     |
-|保护            |执行完全扫描                                          |`mdatp scan full`                                                      |
-|保护            |取消正在进行的按需扫描                        |`mdatp scan cancel`                                                    |
-|保护            |请求安全智能更新                  |`mdatp definitions update`                                             |
-|保护历史记录    |打印完整保护历史记录                       |`mdatp threat list`                                                    |
-|保护历史记录    |获取威胁详细信息                                      |`mdatp threat get --id [threat-id]`                                    |
-|隔离管理 |列出所有隔离的文件                              |`mdatp threat quarantine list`                                         |
-|隔离管理 |从隔离区中删除所有文件                    |`mdatp threat quarantine remove-all`                                   |
-|隔离管理 |将检测为威胁的文件添加到隔离区       |`mdatp threat quarantine add --id [threat-id]`                         |
-|隔离管理 |从隔离区中删除检测为威胁的文件  |`mdatp threat quarantine remove --id [threat-id]`                      |
-|隔离管理 |从隔离区还原文件                      |`mdatp threat quarantine restore --id [threat-id]`                     |
-|终结点检测和响应 |设置早期预览 (未使用的)                     |`mdatp edr early-preview [enable|disable]`                             |
-|终结点检测和响应 |设置 group-id                                  |`mdatp edr group-ids --group-id [group-id]`                            |
-|终结点检测和响应 |Set/Remove 标记，仅 `GROUP` 受支持        |`mdatp edr tag set --name GROUP --value [tag]`                         |
-|终结点检测和响应 |根 (列表)                         |`mdatp edr exclusion list [processes|paths|extensions|all]`            |
+<br>
+
+****
+
+|组|方案|命令|
+|---|---|---|
+|配置|打开/关闭实时保护|`mdatp config real-time-protection --value [enabled\|disabled]`|
+|配置|打开/关闭行为监视|`mdatp config behavior-monitoring --value [enabled\|disabled]`
+|配置|打开/关闭云保护|`mdatp config cloud --value [enabled\|disabled]`|
+|配置|打开/关闭产品诊断|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
+|配置|打开/关闭自动提交示例|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|配置|打开/关闭 AV 被动模式|`mdatp config passive-mode --value [enabled\|disabled]`|
+|配置|添加/删除文件扩展名的防病毒排除项|`mdatp exclusion extension [add\|remove] --name [extension]`|
+|配置|添加/删除文件的防病毒排除项|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
+|配置|添加/删除目录的防病毒排除项|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
+|配置|添加/删除某个进程的防病毒排除项|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
+|配置|列出所有防病毒排除项|`mdatp exclusion list`|
+|配置|向允许列表添加威胁名称|`mdatp threat allowed add --name [threat-name]`|
+|配置|从允许列表中删除威胁名称|`mdatp threat allowed remove --name [threat-name]`|
+|配置|列出所有允许的威胁名称|`mdatp threat allowed list`|
+|配置|打开 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application --action block`|
+|配置|关闭 PUA 保护|`mdatp threat policy set --type potentially_unwanted_application --action off`|
+|配置|打开 PUA 保护的审核模式|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|诊断|更改日志级别|`mdatp log level set --level verbose [error|warning|info|verbose]`|
+|诊断|生成诊断日志|`mdatp diagnostic create --path [directory]`|
+|健康|检查产品的运行状况|`mdatp health`|
+|Protection|扫描路径|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protection|执行快速扫描|`mdatp scan quick`|
+|Protection|执行完全扫描|`mdatp scan full`|
+|Protection|取消正在进行的按需扫描|`mdatp scan cancel`|
+|Protection|请求安全智能更新|`mdatp definitions update`|
+|保护历史记录|打印完整保护历史记录|`mdatp threat list`|
+|保护历史记录|获取威胁详细信息|`mdatp threat get --id [threat-id]`|
+|隔离管理|列出所有隔离的文件|`mdatp threat quarantine list`|
+|隔离管理|从隔离区中删除所有文件|`mdatp threat quarantine remove-all`|
+|隔离管理|将检测为威胁的文件添加到隔离区|`mdatp threat quarantine add --id [threat-id]`|
+|隔离管理|从隔离区中删除检测为威胁的文件|`mdatp threat quarantine remove --id [threat-id]`|
+|隔离管理|从隔离区还原文件|`mdatp threat quarantine restore --id [threat-id]`|
+|终结点检测和响应|设置未使用的 (预览) |`mdatp edr early-preview [enable|disable]`|
+|终结点检测和响应|设置 group-id|`mdatp edr group-ids --group-id [group-id]`|
+|终结点检测和响应|Set/Remove 标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|
+|终结点检测和响应|根目录 (列表) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
 在 Defender for Endpoint 门户中，你将看到两类信息：
 
 - 防病毒警报，包括：
-  - 严重性
+  - Severity
   - 扫描类型
   - 设备信息 (主机名、设备标识符、租户标识符、应用版本和操作系统类型) 
   - 文件信息 (名称、路径、大小和哈希) 
@@ -166,7 +171,7 @@ ms.locfileid: "53811161"
 
 ### <a name="known-issues"></a>已知问题
 
-- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft 365 Defender，即使产品正在正常工作。 我们正在解决此问题。
+- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft 365 Defender，即使产品运行正常。 我们正在解决此问题。
 - 登录的用户不会显示在Microsoft 365 Defender门户中。
 - 在 SUSE 分发中，如果 *libatomic1* 安装失败，应验证操作系统是否注册：
 

@@ -15,21 +15,21 @@ f1.keywords:
 - NOCSH
 description: 本文包含有关使用精简弹出窗口来提高邮件下载性能Outlook 网页版。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 612774478f5b649901d6eae9dccf332299fa53d38331c6ced847ea8d05be104e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f2f30f4a725add062ff6d800a9cb3953dfeb078
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840763"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745681"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>使用斜弹出式弹出窗口减少阅读邮件时所使用的内存
 
-本文包含用于提高邮件下载性能Outlook 网页版。 本文是 Network [planning and performance tuning for Office 365项目的一](./network-planning-and-performance.md)部分。
+本文包含用于提高邮件下载性能Outlook 网页版。 本文是 Network [planning and performance tuning for Office 365的一](./network-planning-and-performance.md)部分。
   
-作为全局Office 365管理员，你可以将 Outlook 网页版 配置为在电子邮件或电子邮件中传递精简弹出窗口，即较小的、内存占用较少的Microsoft Edge Internet Explorer。 当为用户配置斜弹出Outlook 网页版，将加载服务器端呈现的组件以优化性能。
+作为Office 365管理员、全局管理员或用户管理员，你可以将Outlook 网页版 配置为在 Microsoft Edge 或 Internet Explorer 中传递精简弹出窗口，即较小的、内存占用较少的特定电子邮件版本。  当为用户配置斜弹出Outlook 网页版，将加载服务器端呈现的组件以优化性能。
   
 > [!NOTE]
-> 截至 2018 年 3 月，精简弹出窗口不适用于指定使用权限限制的邮件，例如信息权限管理 (IRM) 。
+> 自 2018 年 3 月起，精简弹出窗口不适用于指定使用权限限制的邮件，例如信息权限管理 (IRM) 。
   
 这些功能将继续在主窗口中工作，但在精简弹出窗口中不可用：
   

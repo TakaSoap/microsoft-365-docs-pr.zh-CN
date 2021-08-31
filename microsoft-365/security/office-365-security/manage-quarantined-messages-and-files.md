@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在 EOP) 中查看和管理所有用户的隔离Exchange Online Protection (邮件。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
+description: 管理员可以了解如何在 EOP 管理中心中查看和管理所有用户Exchange Online Protection () 。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e0fbedffeb5fc45e41e7a767bf8e87758e08fb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 921d3e897dea70180a1338ea27e4ef1bc29db41e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561298"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747295"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -39,9 +39,9 @@ ms.locfileid: "58561298"
 
 管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。 只有管理员才能管理被隔离为恶意软件、高可信度网络钓鱼的邮件，或由于邮件流规则 (也称为传输规则) 。 管理员还可以向 Microsoft 报告误报。
 
-使用 Microsoft Defender for Office 365 的组织的管理员还可以管理由[保险箱 Attachments](mdo-for-spo-odb-and-teams.md)隔离的文件，SharePoint、OneDrive 和 Microsoft Teams 。
+使用 Microsoft Defender for Office 365 的组织的管理员还可以管理由[保险箱 Attachments](mdo-for-spo-odb-and-teams.md)隔离的文件SharePoint、OneDrive 和 Microsoft Teams 。
 
-在 Microsoft 365 Defender 门户或 PowerShell 中查看和管理隔离邮件 (Exchange Online PowerShell，Microsoft 365邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
+您可以在 Microsoft 365 Defender 门户或 PowerShell 中查看和管理隔离邮件， (Exchange Online PowerShell Microsoft 365邮箱在 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -59,16 +59,16 @@ ms.locfileid: "58561298"
 
   - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
-  - <sup>\*</sup>隔离管理员 **角色** 组的成员还必须是 Exchange Online 中清洁管理角色组的成员，才能在 [](/Exchange/permissions-exo/permissions-exo#role-groups)PowerShell 中执行Exchange Online过程。
+  - <sup>\*</sup>[Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)门户中电子邮件 &协作角色中的隔离管理员角色组的成员还需要是 Exchange Online 中清洁管理角色组的成员，才能在[Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) PowerShell 中执行隔离过程。
 
 - 隔离邮件在被自动删除之前将保留一段默认时间：
-  - 30 天内，由反垃圾邮件策略隔离的邮件 (垃圾邮件、网络钓鱼和批量电子邮件) 。 这是默认值和最大值。 若要配置 (此值) ，请参阅配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+  - 由反垃圾邮件策略隔离的邮件的 30 (垃圾邮件、网络钓鱼和批量电子邮件) 。 这是默认值和最大值。 若要配置 (此值) ，请参阅配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
   - 包含恶意软件的邮件的 15 天。
-  - 对于在 Defender for 保险箱 中SharePoint、OneDrive 和 Microsoft Teams 附件隔离Office 365 15 天。
+  - 对于在 Defender for SharePoint 中保险箱附件SharePoint、OneDrive和Microsoft Teams的文件的 15 Office 365。
 
   当邮件从隔离区过期时，你无法恢复它。
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>使用 Microsoft 365 Defender 门户管理隔离的电子邮件
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>使用Microsoft 365 Defender管理隔离电子邮件
 
 ### <a name="view-quarantined-email"></a>查看隔离电子邮件
 
@@ -113,7 +113,7 @@ ms.locfileid: "58561298"
      - **大量邮件**
      - **垃圾邮件**
      - **恶意软件**
-     - 网络钓鱼：垃圾邮件筛选器裁定是"网络钓鱼"或"防钓鱼保护"隔离了邮件 ([欺骗](set-up-anti-phishing-policies.md#spoof-settings)设置或[模拟保护] (设置-反网络钓鱼策略。
+     - 网络钓鱼：垃圾邮件筛选器裁定是网络钓鱼或防钓鱼保护隔离了邮件 ([欺骗](set-up-anti-phishing-policies.md#spoof-settings)设置或[模拟保护] (设置-防钓鱼策略。
      - **高可信度网络钓鱼**
    - **收件人**：**所有用户或****只有我**。 最终用户只能管理发送给他们的隔离邮件。
    - **释放状态**：以下任何值：
@@ -129,7 +129,7 @@ ms.locfileid: "58561298"
      - **反垃圾邮件策略**
      - **传输规则**（邮件流规则）
 
-   完成后，单击“**应用**”。 若要清除筛选器，请单击" ![ 清除筛选器"图标。](../../media/m365-cc-sc-clear-filters-icon.png) **清除筛选器**。
+   完成后，单击“**应用**”。 要清除筛选器，请单击“![清除筛选器”图标](../../media/m365-cc-sc-clear-filters-icon.png)。 **清除筛选器**
 
 5. 使用“**搜索**”框和相应的值来查找特定邮件。 不支持通配符。 可以按下面的值搜索：
    - 邮件 ID
@@ -146,7 +146,7 @@ ms.locfileid: "58561298"
 
 从列表中选择已隔离邮件时，所显示的详细信息浮出控件中提供了以下信息。
 
-![隔离邮件的详细信息飞出。](../../media/quarantine-message-details-flyout.png)
+![已隔离邮件的详细信息浮出控件。](../../media/quarantine-message-details-flyout.png)
 
 - **邮件 ID**：邮件的全局唯一标识符。 在邮件 **头的 Message-ID** 头字段中可用。
 - **发件人地址**
@@ -157,7 +157,7 @@ ms.locfileid: "58561298"
 - **策略名称**
 - **收件人计数**
 - **收件人**：如果邮件有多个收件人，需要单击“预览邮件”或“查看邮件头”，以查看完整的收件人列表。
-- **收件人标记**：有关详细信息，请参阅 Microsoft Defender for Office 365 中的 [用户标记](user-tags.md)。
+- **收件人标记**：有关详细信息，请参阅 [Microsoft Defender for Office 365 中的用户标记](user-tags.md)。
 - **到期时间**：邮件自动从隔离中永久删除的日期/时间。
 - **已释放到的位置**：邮件已释放到的所有电子邮件地址（若有）。
 - **尚未释放到的位置**：邮件尚未释放到的所有电子邮件地址（若有）。
@@ -167,13 +167,13 @@ ms.locfileid: "58561298"
 > [!NOTE]
 > 要保留在详细信息浮出控件中，但更改正在查看的已隔离邮件，请使用浮出控件顶部的向上和向下箭头。
 >
-> ![隔离邮件的详细信息飞出中的向上和向下箭头。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> ![已隔离邮件详细信息浮出控件中的向上和向下箭头。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
 
 从列表中选择隔离邮件后，详细信息浮出控件中将提供以下操作：
 
-![隔离邮件的详细信息飞出区中的可用操作。](../../media/quarantine-message-details-flyout-actions.png)
+![隔离邮件详细信息浮出控件中的可用操作。](../../media/quarantine-message-details-flyout-actions.png)
 
 - ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放电子邮件** <sup>\*</sup> ：在出现的飞出窗格中，配置以下选项：
   - **将发件人添加到组织的允许列表**：选择此选项可阻止隔离来自发件人的邮件。
@@ -183,11 +183,11 @@ ms.locfileid: "58561298"
   - **向其他收件人发送** 此邮件的副本：选择此选项，在出现的&quot;收件人&quot;框中输入收件人电子邮件地址。 
 
     > [!NOTE]
-    > 若要将邮件副本发送给其他收件人，还必须将至少一个原始收件人释放 (选择&quot;释放给所有收件人&quot;或&quot;释放给特定收件人") 。  
+    > 若要将邮件副本发送给其他收件人，还必须将至少一个原始收件人释放 (选择&quot;释放给所有收件人&quot;或&quot;释放给特定收件人") 。 
 
-  - **将邮件提交给 Microsoft** 以改进检测 (误报) ：此选项默认选中，将错误隔离的邮件报告给 Microsoft 作为误报。 如果邮件被隔离为垃圾邮件、批量邮件、网络钓鱼邮件或包含恶意软件，也会将邮件报告给 Microsoft 垃圾邮件分析团队。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件筛选规则以允许邮件通过。
+  - **将邮件提交给 Microsoft** 以改进检测 (误报) ：此选项在默认情况下选中，并且将错误隔离的邮件报告给 Microsoft 作为误报。 如果邮件被隔离为垃圾邮件、批量邮件、网络钓鱼邮件或包含恶意软件，也会将邮件报告给 Microsoft 垃圾邮件分析团队。 根据分析结果的不同，可能会调整服务范围内的垃圾邮件筛选规则以允许邮件通过。
 
-  - **允许如下所示的邮件**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开" (打开") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
+  - **允许如下所示的邮件**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开"打开 (") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
     - **删除时间**：选择您希望允许类似以下邮件的多久。 选择 **"1 天到** **30 天"。** 默认值为 30。
     - **可选说明**：输入允许的有用说明。
 
@@ -202,27 +202,27 @@ ms.locfileid: "58561298"
 - **复制邮件头**：单击此链接可将邮件头（所有标题字段）复制到剪贴板。
 - **Microsoft 邮件头分析器**：要深入分析标头字段和值，请单击此链接以转到邮件头分析器。 将邮件头粘贴到 **插入要分析的邮件头** 部分（CTRL+V 或右键单击并选择“**粘贴**”），然后单击“**分析邮件头**”。
 
-单击"更多操作"图标后， ![ 下列操作可用。](../../media/m365-cc-sc-more-actions-icon.png) **更多操作**：
+单击“![更多操作图标](../../media/m365-cc-sc-more-actions-icon.png)”**更多操作** 后，可以执行以下操作：
 
-- ![预览邮件图标。](../../media/m365-cc-sc-eye-icon.png) **预览消息**：在出现的标注中，选择以下选项卡之一：
+- ![预览消息图标。](../../media/m365-cc-sc-eye-icon.png) **预览消息**：在显示的浮出控件中，选择下列选项卡之一：
   - “**源**”：显示禁用所有链接的 HTML 版邮件正文。
   - “**纯文本**”：以纯文本格式显示邮件正文。
 
-- ![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png) **从隔离** 区删除 ：在出现的警告中单击"是"后，邮件将立即删除，而不会发送给原始收件人。
+- ![从隔离区中删除图标](../../media/m365-cc-sc-delete-icon.png) **从隔离区中删除**：在所显示的警告中单击“**是**”后，将立即删除该邮件，而不会发送给原始收件人。
 
-- ![下载电子邮件图标。](../../media/m365-cc-sc-download-icon.png) **下载电子邮件**：在出现的飞出页面，选择"我了解下载此邮件的风险"，然后单击"下载"以以 .eml 格式保存邮件的本地副本。
+- ![下载电子邮件图标。](../../media/m365-cc-sc-download-icon.png) **下载电子邮件**：在所显示的浮出控件中选择“**我了解下载此邮件所带来的风险**”，然后单击“**下载**”可使用 .eml 格式保存邮件的本地副本。
 
-- ![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png) **阻止发件人**：将发件人添加到邮箱中的" **阻止的发件人** "列表。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- ![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png) **阻止发件人**：将发件人添加到 **你的** 邮箱中的阻止发件人列表中。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - ![仅提交图标。](../../media/m365-cc-sc-create-icon.png) **仅提交**：将邮件报告给 Microsoft 进行分析。 在出现的"飞出"中，选择以下选项：
   - **选择提交类型**： **电子邮件** (默认 **) 、URL** 或 **文件**。
   - **添加网络消息 ID 或上载电子邮件文件**：选择下列选项之一：
-    - **将电子邮件网络邮件 ID (** 默认值，框中会显示相应的) 
+    - **将电子邮件网络邮件 ID** (默认值，框中会显示相应的) 
     - **Upload电子邮件文件 (.msg 或 eml) ：单击"浏览文件"** 查找并选择要提交的 .msg 或 .eml 邮件文件。
-  - **选择具有问题的** 收件人：选择 (首选) 或邮件的一个或多个原始收件人，以分析应用于他们的策略。
+  - **选择具有问题的** 收件人：选择一 (首选) 或邮件的一个或多个原始收件人，以分析应用于他们的策略。
   - **选择提交到 Microsoft 的原因**：选择以下选项之一：
     - **不应阻止误报 (误报)  (** 默认) ：以下选项可用：
-      - **允许如下所示的邮件**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开" (打开") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
+      - **允许如下所示的邮件**：此选项默认处于关闭状态 (![ 关闭 ](../../media/scc-toggle-off.png) 。) 。 打开"打开 (") 以暂时阻止隔离具有类似 ![ ](../../media/scc-toggle-on.png) URL、附件和其他属性的邮件。 打开此选项时，可以使用以下选项：
         - **删除时间**：选择您希望允许类似以下邮件的多久。 选择 **"1 天到** **30 天"。** 默认值为 30。
         - **可选说明**：输入允许的有用说明。
     - **应已被阻止 (漏报) 。**
@@ -236,7 +236,7 @@ ms.locfileid: "58561298"
 > [!NOTE]
 > 在移动设备上，说明文本在操作图标上不可用。
 >
-> ![突出显示可用操作的隔离邮件的详细信息。](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> ![已隔离邮件的详细信息，其中突出显示了可用操作。](../../media/quarantine-message-details-flyout-mobile-actions.png)
 >
 > 下表汇总了按顺序排列的图标及其相应的说明：
 >
@@ -245,7 +245,7 @@ ms.locfileid: "58561298"
 > |![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png)|**释放电子邮件**|
 > |![查看邮件头图标。](../../media/m365-cc-sc-eye-icon.png)|**查看邮件头**|
 > |![预览邮件图标。](../../media/m365-cc-sc-eye-icon.png)|**预览邮件**|
-> |![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png)|**从隔离区中删除**|
+> |![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png)|**从隔离区中删除**|
 > |![下载电子邮件图标。](../../media/m365-cc-sc-download-icon.png)|**下载电子邮件**|
 > |![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png)|**阻止发件人**|
 > |![仅提交图标。](../../media/m365-cc-sc-create-icon.png)|**仅提交**|
@@ -254,7 +254,7 @@ ms.locfileid: "58561298"
 
 当通过单击第一列左侧空白区域来选择列表中的多个已隔离邮件（最多 100 条）时，将显示“**批量操作**”下拉列表，你可以在其中执行以下操作：
 
-![隔离邮件的批量操作下拉列表。](../../media/quarantine-message-bulk-actions.png)
+![隔离区中邮件的批量操作下拉列表。](../../media/quarantine-message-bulk-actions.png)
 
 - ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放邮件**：将邮件释放到所有收件人。 在出现的"飞出"中，可以选择以下选项，这些选项与释放单个邮件时的选项相同：
   - **将发件人添加到组织的允许列表**
@@ -269,7 +269,7 @@ ms.locfileid: "58561298"
   > [!NOTE]
   > 请考虑以下方案：john@gmail.com 向用户发送 faith@contoso.com john@subsidiary.contoso.com。 Gmail 将此邮件分为两个副本，在 Microsoft 中都作为网络钓鱼路由到隔离邮箱。 管理员将这两条消息释放到 admin@contoso.com。 将传递到达管理员邮箱的第一个释放的邮件。 第二个释放的邮件被标识为重复传递并跳过。 如果邮件具有相同的邮件 ID 和接收时间，则邮件被标识为重复项。
 
-- ![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png) **删除邮件**：在出现的警告中单击"是"后，邮件将立即从隔离区中删除，而不会发送给原始收件人。
+- ![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png) **删除邮件**：在所显示警告中单击“**是**”后，将立即从隔离区中删除该邮件，而不会发送给原始收件人。
 - ![下载电子邮件图标。](../../media/m365-cc-sc-download-icon.png) **下载邮件**
 - ![仅提交图标。](../../media/m365-cc-sc-create-icon.png) **仅提交**
 
@@ -278,7 +278,7 @@ ms.locfileid: "58561298"
 > [!NOTE]
 > 本部分中隔离文件的过程仅适用于 Microsoft Defender for Office 365计划 1 或计划 2 订阅者。
 
-在具有 Defender for Office 365 的组织中，管理员可以管理由 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中的 保险箱 附件隔离的文件。 若要启用对这些文件的保护，请参阅打开 保险箱[Attachments for SharePoint， OneDrive， and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)。
+在具有 Defender for Office 365 的组织中，管理员可以管理由 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中的 保险箱 附件隔离的文件。 若要启用对这些文件的保护，请参阅打开保险箱[附件SharePoint、OneDrive和Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
 ### <a name="view-quarantined-files"></a>查看隔离文件
 
@@ -343,21 +343,21 @@ ms.locfileid: "58561298"
 
 - ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png) **发布文件**：在出现的飞出窗格中，打开或关闭向 Microsoft 报告文件进行分析， <sup>\*</sup> 然后单击"发布 **"。** 
 - ![下载文件图标。](../../media/m365-cc-sc-download-icon.png) **下载文件**：在出现的飞出文件中，选择"我了解 **下载** 此文件的风险"，然后单击"下载"以保存文件的本地副本。
-- ![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png) **从隔离区** 删除：在出现的 **警告中** 单击"是"后，将立即删除文件。
-- ![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png) **阻止发件人**：将发件人添加到邮箱中的" **阻止的发件人** "列表。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- ![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png) **从隔离区** 删除：在出现的 **警告中** 单击"是"后，将立即删除文件。
+- ![阻止发件人图标。](../../media/m365-cc-sc-block-sender-icon.png) **阻止发件人**：将发件人添加到 **你的** 邮箱中的阻止发件人列表中。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 <sup>\*</sup>此选项不适用于已发布的文件， (状态值为 **Released** **) 。**
 
-如果未释放或删除文件，则默认隔离保留期到期后将 (如"过期"列中所示) 。 
+如果未释放或删除文件，则默认隔离保留期过期后将 (如"过期"列中所示) 。 
 
 #### <a name="take-action-on-multiple-quarantined-files"></a>对多个隔离文件采取措施
 
-当您通过单击"主题"列左侧的空白区域选择列表中的多个隔离文件 (最多 100) 时，将显示"批量操作"下拉列表，您可以在其中执行以下操作： 
+当您通过单击"主题"列左侧的空白区域选择列表中的多个隔离文件 (最多 100) "时，将显示"批量操作"下拉列表，您可以在其中执行以下操作： 
 
 ![隔离中的文件的批量操作下拉列表。](../../media/quarantine-file-bulk-actions.png)
 
 - ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png) **发布文件**：在出现的飞出窗格中，打开或关闭向 **Microsoft** 报告文件进行分析，然后单击"发布 **"。**
-- ![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png) **从隔离区** 删除：在出现的 **警告中** 单击"是"后，将立即删除文件。
+- ![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png) **从隔离区** 删除：在出现的 **警告中** 单击"是"后，将立即删除文件。
 - ![下载文件图标。](../../media/m365-cc-sc-download-icon.png) **下载文件**：在出现的飞出文件中，选择"我了解 **下载** 此文件的风险"，然后单击"下载"以保存文件的本地副本。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 查看和管理隔离的邮件和文件
@@ -367,7 +367,7 @@ ms.locfileid: "58561298"
 - [Delete-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-- [Preview-QuarantineMessage：](/powershell/module/exchange/preview-quarantinemessage)请注意，此 cmdlet 仅适用于邮件，而不是来自 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 的隔离Microsoft Teams。
+- [Preview-QuarantineMessage：](/powershell/module/exchange/preview-quarantinemessage)请注意，此 cmdlet 仅适用于邮件，而不是 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件中的隔离Microsoft Teams。
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
 
 ## <a name="for-more-information"></a>详细信息

@@ -19,17 +19,17 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: 使用集中部署 PowerShell cmdlet 可帮助你为 Office 部署和管理 Microsoft 365 外接程序。
-ms.openlocfilehash: 8f84c3222fa8a9eefcdda90fa6daf1c453dd73236fd6be61d2c57b63c7feceea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 使用集中部署 PowerShell cmdlet 可帮助你为 Office 组织部署和管理Microsoft 365外接程序。
+ms.openlocfilehash: 37a60ffe7d17f09ecbdb70c80c880b2c7bd51645
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830151"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745837"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过 Office部署加载项Microsoft 365 管理中心，您还可以使用 Microsoft PowerShell。 安装[O365 集中Add-In部署模块Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过 Office部署加载项Microsoft 365 管理中心，您还可以使用 Microsoft PowerShell。 安装[适用于 Add-In 的 O365 集中部署Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
 下载模块后，打开常规Windows PowerShell窗口并运行以下 cmdlet：
 
@@ -49,7 +49,7 @@ ms.locfileid: "53830151"
   Connect-OrganizationAddInService
   ```
 
-3. 在"**输入凭据"** 页中，Microsoft 365全局管理员凭据。 或者，你可以直接在 cmdlet 中输入凭据。 
+3. 在"**输入凭据"** 页中 **，Microsoft 365"用户管理员"** 或 **"全局管理员凭据**"。 或者，你可以直接在 cmdlet 中输入凭据。 
     
     运行以下 cmdlet，将公司管理员凭据指定为 PSCredential 对象。
     
@@ -60,11 +60,11 @@ ms.locfileid: "53830151"
   ```
 
 > [!NOTE]
-> 有关使用 PowerShell 的信息，请参阅连接[Microsoft 365 PowerShell。](./connect-to-microsoft-365-powershell.md) 
+> 有关使用 PowerShell 的信息，请参阅[连接Microsoft 365 PowerShell 进行设置](./connect-to-microsoft-365-powershell.md)。 
   
 ## <a name="upload-an-add-in-manifest"></a>Upload加载项清单
 
-运行 **New-OrganizationAdd-In** cmdlet，从路径（可以是文件位置或 URL）上载外接程序清单。 以下示例显示  _ManifestPath_ 参数值的文件位置。 
+运行 **New-OrganizationAdd-In** cmdlet 以从路径（可以是文件位置或 URL）上载外接程序清单。 以下示例显示  _ManifestPath_ 参数值的文件位置。 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
@@ -78,7 +78,7 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 
 ## <a name="upload-an-add-in-from-the-office-store"></a>Upload应用商店中Office加载项
 
-运行 **New-OrganizationAddIn** cmdlet 从应用商店Office清单。
+运行 **New-OrganizationAddIn** cmdlet 以从应用商店Office清单。
   
 在下面的示例中 **，New-OrganizationAddIn** cmdlet 指定适用于美国位置和内容市场的外接程序的 AssetId。
   
@@ -86,9 +86,9 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-若要确定 _AssetId_ 参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以"WA"开头，后跟数字。 例如，在上一示例中，WA104099688 的 AssetId 值源是外接程序的 Office Store 网页 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) URL：。
+若要确定 _AssetId_ 参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以"WA"开头，后跟数字。 例如，在上一示例中，AssetId 值 WA104099688 的源是外接程序的 Office Store 网页 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) URL：。
   
-_Locale_ 参数和 _ContentMarket_ 参数的值相同，指示您尝试安装外接程序的国家/地区。 格式为 en-US、fr-FR。 等等。 
+_Locale_ 参数和 _ContentMarket_ 参数的值相同，表示您尝试安装外接程序的国家/地区。 格式为 en-US、fr-FR。 等等。 
   
 > [!NOTE]
 > 从 Office 应用商店上载的外接程序将在 Office 应用商店提供的最新更新后几天自动更新。 
@@ -107,7 +107,7 @@ Get-OrganizationAddIn
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-若要获取所有外接程序以及分配的用户和组的完整详细信息，请通过管道将 **Get-OrganizationAddIn** cmdlet 的输出通过管道输出到 Format-List cmdlet，如以下示例所示。
+若要获取所有加载项以及分配的用户和组的完整详细信息，请通过管道将 **Get-OrganizationAddIn** cmdlet 的输出通过管道输出到 Format-List cmdlet，如以下示例所示。
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
@@ -272,7 +272,7 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>获取每个 cmdlet 的详细帮助
 
-可以使用 Get-help cmdlet 查看每个 cmdlet 的详细帮助。 例如，以下 cmdlet 提供有关 Remove-OrganizationAddIn cmdlet 的详细信息。
+您可以使用 Get-help cmdlet 查看每个 cmdlet 的详细帮助。 例如，以下 cmdlet 提供有关 Remove-OrganizationAddIn cmdlet 的详细信息。
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full

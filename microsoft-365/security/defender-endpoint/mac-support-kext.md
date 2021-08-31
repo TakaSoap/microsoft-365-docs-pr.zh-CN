@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f730f590b9ba604596dc9230fc22c451e99630e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 9ca412a54fb94fd9835b30d6b9b6092dc4e79015
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565204"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744973"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
 
@@ -69,7 +69,7 @@ real_time_protection_available              : true
 
 ## <a name="manual-deployment"></a>手动部署
 
-如果安装产品后不到 30 分钟，请导航到"系统首选项安全性 & 隐私"，其中您必须允许开发人员  >  "Microsoft  Corporation"提供系统软件。
+如果安装产品后不到 30 分钟，请导航到"系统首选项安全性 & 隐私"，其中您必须允许开发人员 \> "Microsoft  Corporation"提供系统软件。
 
 如果未看到此提示，则意味着 30 分钟或更长的时间已过，并且内核扩展尚未获得批准，无法在你的设备上运行：
 
@@ -82,14 +82,14 @@ real_time_protection_available              : true
     ```bash
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
-    
+
     ```Output
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. 从 **菜单中打开**"  >  **系统&安全** 选项""隐私"。  (，请首先关闭它。) 
+2. 从 **菜单中打开**" \> **系统&安全** 选项""隐私"。  (，请首先关闭它。) 
 
 3. **允许** 来自开发人员"Microsoft Corporation"的系统软件
 

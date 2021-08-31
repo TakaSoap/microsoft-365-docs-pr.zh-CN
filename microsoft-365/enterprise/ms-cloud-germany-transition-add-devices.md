@@ -17,20 +17,20 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务的其他设备信息。
-ms.openlocfilehash: 79234b1398e26af5a2848002ea606d97137e3053
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365有关服务的其他设备信息。
+ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573087"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58745693"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
 连接到德国 Microsoft 云的已加入和注册的 Azure AD 设备必须在第 9 阶段之后和阶段 10 之前进行迁移。 设备的迁移取决于设备类型、操作系统和 Azure AD 关系。
 
 ## <a name="azure-ad-joined-windows-10-devices"></a>加入 Azure AD Windows 10设备
-如果Windows 10已加入 Azure AD，则必须与 Azure AD 断开连接，并且必须再次连接。
+如果 Windows 10设备已加入 Azure AD，则必须与 Azure AD 断开连接，并且必须再次连接。
 
 [![Azure AD 设备Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
@@ -61,11 +61,13 @@ ms.locfileid: "58573087"
 6. 重新启动设备。
 7. 使用你的工作帐户的电子邮件地址和密码登录。
 
-如果用户不是设备的管理员，Azure AD 全局管理员可以按照此配置路径在设备上创建本地管理员帐户，并取消加入设备：
+如果用户不是设备的管理员 **，Azure AD DC** 管理员、云 **应用程序** 管理员或 **全局** 管理员可以按照此配置路径在设备上创建本地管理员帐户，并取消加入设备：
 
-*设置 >帐户>其他帐户>凭据未知> Microsoft 帐户添加用户*
+*设置 >帐户>其他>凭据未知> Microsoft 帐户添加用户*
 
-对于重新加入，此步骤中可以使用来自组织的任何工作帐户的凭据。
+有关详细信息，请参阅 [关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles?)。
+
+对于重新加入，此步骤中可以使用组织的任何工作帐户的凭据。
 
 请考虑用于加入设备的工作帐户将自动提升为设备的管理员。
 组织中的其他任何工作帐户都可以登录到设备，但没有管理员权限。
@@ -105,9 +107,9 @@ ms.locfileid: "58573087"
 
 - 从Microsoft Authenticator应用，用户可以转到"设置 >**注册"。** 在这里，用户可以注销和重新注册其设备。
 
-- 从公司门户，用户可以转到"**设备**"选项卡并删除设备。 此后，使用"配置"公司门户。
+- 从公司门户，用户可以转到"**设备**"选项卡并删除设备。 此后，使用 公司门户。
 
-- 用户还可以从帐户设置页中删除帐户，然后重新添加工作帐户，从而注销和重新注册。
+- 用户还可以注销和重新注册，从帐户设置页删除帐户，然后读取工作帐户。
 
 若要使用 Android 应用注销和重新注册设备，Microsoft Authenticator应用：
 
@@ -123,14 +125,14 @@ ms.locfileid: "58573087"
 3. 删除帐户后，从"帐户"**页面** 选择"添加帐户>**工作帐户"。**
 4. 对于 **Workplace Join，** 键入你的电子邮件地址，然后选择 **加入** 以完成设备注册。
 
-若要从 Android 上注销并重新注册设备，公司门户：
+若要从 Android 上注销和重新注册设备，公司门户：
 
-1. 启动公司门户并转到 **"设备"** 选项卡。
+1. 启动公司门户并转到 **设备** 选项卡。
 2. 选择设备以查看设备详细信息。
 3. From theellipses (three dots) menu， select **Remove Device**， and complete the removal by confirming in the dialog.
 4. 你现在应该已注销公司门户应用。 选择 **"登录** "以重新注册设备。
 
-有关此工作负载的迁移阶段所需的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中有关 Azure Active Directory (Azure AD) 的信息。
+有关此工作负载的迁移阶段需要执行的任何操作或对管理或使用情况的影响，请参阅从德国 Microsoft 云迁移的其他[Azure AD](ms-cloud-germany-transition-azure-ad.md)信息中的 Azure Active Directory (Azure AD) 。
 
 ## <a name="ios"></a>iOS
 
@@ -138,7 +140,7 @@ ms.locfileid: "58573087"
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>步骤 1：如果存在，请从应用中删除Microsoft Authenticator帐户
 
-1. 点击"管理"应用中Microsoft Authenticator帐户。
+1. 点击"登录"应用中Microsoft Authenticator帐户。
 2. 点击 **设置** 右上角的"页面"图标。 如果未看到"设置"图标，则可能不会使用最新版本的 Microsoft Authenticator。
 3. 点击" **删除帐户"** 按钮。
 4. 点击 **此设备上的所有应用**。
@@ -151,7 +153,7 @@ ms.locfileid: "58573087"
 
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>步骤 3：如有必要从个别应用注销
 
-用户可以转到单个应用（如 Outlook、Teams 和 OneDrive）并从这些应用中删除帐户。
+用户可以转到单个应用（如 Outlook、Teams 和 OneDrive，并从这些应用中删除帐户。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -167,7 +169,7 @@ ms.locfileid: "58573087"
 
 若要检查你的设备是否已在公有云中注册，你应该将设备列表从 Azure AD 门户导出并下载到 Excel 电子表格。 然后，使用 _registeredTime_ 列 (在组织通过迁移过程的第 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)阶段) 注册的设备。
 
-**是否仍需要按照使用基于 DNS 的 DNS 为 Microsoft 创建 DNS 记录Windows [DNS 名称](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)？**
+**是否仍需要按照使用基于 DNS 的 DNS 为 Microsoft 创建 DNS 记录Windows [DNS 名称](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)？**
 
 重新注册设备不再需要此 DNS 条目。 
 
@@ -180,7 +182,7 @@ ms.locfileid: "58573087"
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 
