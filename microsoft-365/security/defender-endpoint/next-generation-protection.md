@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 4d61e285166bafe2ddc52d76362e4b13e7aae8ea113bb3d7ec0acc93f4367bd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9382df161e1601547addcd68fb33570854c10a82
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889623"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58823584"
 ---
 # <a name="next-generation-protection-overview"></a>下一代保护概述
 
@@ -29,6 +29,9 @@ Microsoft Defender for Endpoint 包括加强网络安全外围的下一代保护
 - [基于行为、启发式和实时防病毒保护](configure-protection-features-microsoft-defender-antivirus.md)，包括使用文件、进程行为监视和其他启发式（也称为 *实时保护*）始终进行的扫描。 它还包括检测和阻止被视为不安全、但可能不会被检测为恶意软件的应用。
 - [云提供的保护](cloud-protection-microsoft-defender-antivirus.md)，包括对新兴威胁近乎即时的检测和阻止。
 - [专用保护和产品更新](manage-updates-baselines-microsoft-defender-antivirus.md)，包括与保持 Microsoft Defender 防病毒最新相关的更新。
+
+> [!TIP]
+> 下一代保护包括在 Microsoft Defender for Endpoint 计划 1（预览版）和计划 2 中。 [详细了解 Defender for Endpoint Plan 1（预览版）和计划 2](defender-endpoint-plan-1-2.md)
 
 ## <a name="try-a-demo"></a>尝试演示！
 

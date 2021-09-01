@@ -2,14 +2,21 @@
 
 ## [概述]()
 ### [什么是 Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+### [Compare Defender for Endpoint Plan 1 到计划 2](defender-endpoint-plan-1-2.md)
 ### [最低要求](minimum-requirements.md)
 ### [Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)
 ### [预览功能](preview.md)
 ### [数据存储和隐私](data-storage-privacy.md)
 ### [Microsoft Defender 安全中心概述](use.md)
 ### [门户概述](portal-overview.md)
+### [ Endpoint 计划 1（预览版）的定义程序]()
+#### [概述](defender-endpoint-plan-1.md)
+#### [安装和配置](mde-p1-setup-configuration.md)
+#### [入门](mde-plan1-getting-started.md)
+#### [维护和操作](mde-p1-maintenance-operations.md)
 ### [面向美国政府客户的Microsoft Defender for Endpoint](gov.md)
 ### [非 Windows 平台上的 Microsoft Defender for Endpoint](non-windows.md)
+
 
 ## [评估功能](evaluation-lab.md)
 
@@ -27,18 +34,15 @@
 #### [载入支持的设备](onboard-configure.md)
 
 ## [迁移指南](migration-guides.md)
-### [从非 Microsoft 终结点保护切换到 Defender for Endpoint]()
-#### [迁移概述](switch-to-microsoft-defender-migration.md)
+### [从非 Microsoft 终结点保护切换到 Defender for Endpoint](switch-to-microsoft-defender-migration.md)
 #### [阶段 1：准备](switch-to-microsoft-defender-prepare.md)
 #### [阶段 2：设置](switch-to-microsoft-defender-setup.md)
 #### [阶段 3：开始使用](switch-to-microsoft-defender-onboard.md)
-### [完成迁移后管理 Defender for Endpoint]()
-#### [Microsoft Defender for Endpoint 管理概述](manage-atp-post-migration.md)
-#### [Intune（推荐）](manage-atp-post-migration-intune.md)
-#### [配置管理器](manage-atp-post-migration-configuration-manager.md)
-#### [组策略对象](manage-atp-post-migration-group-policy-objects.md)
-#### [PowerShell、WMI 和 MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
-
+### [完成迁移后管理 Defender for Endpoint](manage-atp-post-migration.md)
+#### [使用 Intune（推荐）](manage-atp-post-migration-intune.md)
+#### [使用配置服务器](manage-atp-post-migration-configuration-manager.md)
+#### [使用组策略](manage-atp-post-migration-group-policy-objects.md)
+#### [使用 PowerShell、WMI 或 MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
 ## [配置和载入设备]()
 ### [Windows 和 Windows Server 上的 Microsoft Defender for Endpoint]()

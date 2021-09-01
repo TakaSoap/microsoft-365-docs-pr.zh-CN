@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8aab84cd406366182650e6fbf6c39aee9810ce3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
+ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548698"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58831941"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -38,7 +38,7 @@ ms.locfileid: "58548698"
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。有关详细信息，请参与 [在 EOP 中隔离](quarantine-email-messages.md)。
 
-如下表所述，普通用户（不是管理员）作为隔离邮件的收件人可以对邮件执行以下操作：
+如下表所述，普通用户（不是管理员）作为隔离邮件的收件人可对邮件执行以下操作：
 
 <br>
 
@@ -46,9 +46,9 @@ ms.locfileid: "58548698"
 
 |隔离原因：|查看|发布|删除|
 |---|:---:|:---:|:---:|
-|批量邮件|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|垃圾邮件|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
-|钓鱼(非高可信度钓鱼)|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|批量邮件|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|垃圾邮件|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
+|钓鱼(非高可信度钓鱼)|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
 |
 
 你可以在“Microsoft 365 Defender 门户”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。

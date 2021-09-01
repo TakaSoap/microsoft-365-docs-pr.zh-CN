@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
-ms.openlocfilehash: 6a3d922ca9670e8f15a1ea6ec1a814d160edb0e6
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: dd9c8cd96813fcffd826c4a9416a0a54e8c32a50
+ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394452"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822720"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -63,7 +63,7 @@ ms.locfileid: "58394452"
 6. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
 
 > [!NOTE]
-> Office 365 门户或除 Outlook 以外的任何 Office 应用不再支持密码过期通知。
+> 使用基本身份验证时，Office 365 门户或除 Outlook 以外的任何 Office 应用不再支持密码过期通知。 具有新式身份验证的 Outlook 不支持密码过期通知。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>密码到期功能重要事项须知
   
