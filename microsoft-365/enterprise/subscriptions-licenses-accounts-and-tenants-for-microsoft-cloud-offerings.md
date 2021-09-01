@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解 Microsoft 云服务的组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: a7120404eafd51714ac19805c088921ad6625ae2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354232"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747407"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -136,11 +136,11 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Microsoft 365
 |:-----|:-----|:-----|:-----|:-----|
 |**Microsoft 365** <br/> |不适用  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |从 Microsoft 365 管理中心向你的组织添加 Dynamics 365 订阅。  <br/> |
 |**Azure** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |不适用  <br/> |向你的组织添加 Dynamics 365 订阅。  <br/> |
-|**Dynamics 365** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |NA  <br/> |
+|**Dynamics 365** <br/> |向你的组织添加 Microsoft 365 订阅。  <br/> |从 Azure 门户向你的组织添加 Azure 订阅。  <br/> |不适用  <br/> |
    
 为组织添加基于 Microsoft SaaS 的服务订阅的简便方法是通过管理中心来完成：
   
-1. 使用全局管理员帐户登录 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
+1. ，使用你的 **用户管理员** 或 **全局管理员** 账户登录 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)）。
     
 2. 从“管理中心”主页的左侧导航栏，依次单击“帐单”和“购买服务”。
     
@@ -150,7 +150,7 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。Microsoft 365
   
 使用与你的 Microsoft 365 订阅相同的组织和 Azure AD 租户添加 Azure 订阅：
   
-1. 使用 Microsoft 365 全局管理员帐户登录到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
+1. 使用你的 Microsoft 365 **Azure AD DC 管理员** 或 **全局管理员** 账户登录 Azure 门户（[https://portal.azure.com](https://portal.azure.com)）。
     
 2. 在左侧导航栏中，单击“订阅”，然后单击“添加”。
     

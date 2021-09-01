@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: f2ee7d21c5dee96e2cbd6beccdd816da26b6ea46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570985"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744937"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
@@ -79,7 +79,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 条件访问策略是一组规则，指定评估登录和授予访问的条件。 例如，你可以创建一个条件访问策略，指明：
 
-- 如果用户帐户名是分配了 Exchange、用户、密码、安全性、SharePoint 或全局管理员角色的用户组的成员，则需要先进行 MFA，然后才能允许访问。
+- 如果用户帐户名是分配了 Exchange、用户、密码、安全性、SharePoint、**Exchange 管理员**、**SharePoint 管理员** 或 **全局管理员** 角色的用户的组成员，则需要先进行 MFA，然后才能允许访问。
 
 通过此策略，当为用户分配或取消分配了上述管理员角色时，你可以根据其组成员身份要求进行 MFA，而不是针对单个用户帐户进行 MFA 配置。
 

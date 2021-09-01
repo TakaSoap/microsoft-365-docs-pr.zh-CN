@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 调查异常检测警报。
-ms.openlocfilehash: aa0c7a285baf9fcc3505b9675d57dc37e300862570facdac7c9eb2fd9af61e5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843067"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58747383"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>调查异常检测警报
 
@@ -145,7 +145,7 @@ ms.locfileid: "53843067"
 
 本部分介绍了表明恶意行动者可能试图保持其在组织中的立足点的警报。
 
-### <a name="app-with-suspicious-oauth-scope-creates-inbox-rule"></a>具有可疑 OAuth 范围的应用创建收件箱规则  
+### <a name="app-with-suspicious-oauth-scope-made-graph-calls-to-read-email-and-created-inbox-rule"></a>具有可疑 OAuth 作用域的应用进行了图形调用以读取电子邮件并创建了收件箱规则  
 
 **严重性:** 中等
 
@@ -270,3 +270,28 @@ ms.locfileid: "53843067"
 1. 查看应用授予的范围。
 1. 查看应用创建的任何收件箱规则操作。
 1. 查看应用完成的任何电子邮件搜索活动。
+
+### <a name="appmade-onedrive--sharepoint-search-activities-and-created-inbox-rule"></a>应用进行了 OneDrive / SharePoint 搜索活动并创建了收件箱规则  
+
+**严重性:** 中等
+
+**MITRE ID 的**：T1137、T1213
+
+此检测可识别应用是否同意了高特权范围，创建了可疑收件箱规则，并通过 Graph API进行了异常的 SharePoint 或 OneDrive 搜索活动。 这可能指示对你的组织的尝试入侵，例如攻击者尝试通过 Graph API 从组织中搜索和收集 SharePoint 或 OneDrive 中的特定数据。  
+
+**TP 还是 FP？**
+
+- **TP**：如果能够确认任何特定数据来自由具有高特权范围的 OAuth 应用通过 Graph API 进行的 SharePoint 或 OneDrive 搜索和收集，并且应用是从未知源传递的。  
+
+  **建议操作**：禁用和删除应用、重置密码，并删除收件箱规则。  
+
+- **FP**：如果能够确认应用已由 OAuth 应用通过 Graph API 执行了来自 SharePoint 或 OneDrive 搜索和收集的特定数据，并且出于合法原因创建了新的或个人外部电子邮件帐户的收件箱规则。  
+
+  **建议操作**：关闭警报  
+
+**了解违规的范围**
+
+1. 查看应用完成的所有活动。  
+1. 查看应用授予的范围。  
+1. 查看应用创建的任何收件箱规则操作。  
+1. 查看应用执行的任何 SharePoint 或 OneDrive 搜索活动。

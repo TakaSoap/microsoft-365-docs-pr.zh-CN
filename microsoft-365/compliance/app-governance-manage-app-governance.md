@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
-ms.openlocfilehash: a105ba8d1e0a0127cccb772ad60bb7bd0c6c8b4c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f89214a71bc82ac7271ba3fd010258e63d39ef8a
+ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567552"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58744985"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 
@@ -79,29 +79,13 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 
 ![应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成。](..\media\manage-app-protection-governance\mapg-integration.png)
 
-此外，应用治理会将其警报作为信号发送到 Microsoft Cloud App Security 和 Microsoft 365 Defender，并且会接收来自 Microsoft Cloud App Security 的警报，以便对基于应用的安全事件进行更详细的分析。
+应用治理将其警报发送到 Microsoft Cloud App Security 和 Microsoft 365 Defender，并接收来自 Microsoft Cloud App Security 的警报，以对基于应用的安全事件进行更详细的分析。
+- 应用治理警报作为警报显示在 Microsoft 365 Defender 警报列表中，其检测源字段设为“MAPG”。
+- 应用治理警报作为警报显示在 MCAS 警报列表中，其策略字段设为以下之一
+  - Microsoft 365 OAuth 应用治理
+  - Microsoft 365 OAuth 网络钓鱼检测
+  - Microsoft 365 OAuth 应用信誉
+- MCAS 警报作为警报显示在应用治理警报列表中，其源设置为 MCAS
 
-<!--
-Integration of alerts with MCAS and M365 Defender
-Azure AD IP detections in progress to surface in M365 Defender
-
-## Integration with Azure AD
-
-**Feedback from Anand:** We should add some details on how MAPG works with M365 Defender (previously MTP). Also, we should highlight the integration with MCAS and AAD.
-
-Key cross-reference resources:
-
-- [What is application management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)
-- [Common application management scenarios for Azure Active Directory (especially scenarios 3-4)](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
-- [Azure Active Directory Identity Governance documentation](https://docs.microsoft.com/azure/active-directory/governance/)
-- [Managing access to apps using Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management)
-
-## Integration with Microsoft Cloud App Security
-
-Key cross-reference resources:
-
-- [Cloud App Security anomaly detection alerts investigation guide](https://docs.microsoft.com/cloud-app-security/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app)
-- [Monitor alerts raised in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts)
-- [Control which third-party cloud OAuth apps get permissions](https://docs.microsoft.com/cloud-app-security/manage-app-permissions)
-
--->
+> [!NOTE]
+> 警报状态当前未在应用治理和 Microsoft Cloud App Security 之间同步。
