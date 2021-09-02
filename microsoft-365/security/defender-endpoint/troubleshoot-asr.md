@@ -9,20 +9,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.date: 03/27/2019
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f3eb7e0a52187c94f3f6ed1dadada2ff59b794849d58a7c8743bddeaf1e42eda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873795"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863466"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -40,7 +40,7 @@ ms.locfileid: "53873795"
 
 - 规则阻止文件、进程或执行其他一些不应 (误报) 
 
-- 规则不能如前文所述工作，也不阻止文件或进程 (漏报) 
+- 规则不能如所述工作，或不会阻止文件或进程，它应 (漏报) 
 
 解决这些问题有四个步骤：
 
@@ -48,7 +48,7 @@ ms.locfileid: "53873795"
 
 2. [使用审核模式测试规则](#use-audit-mode-to-test-the-rule)
 
-3. [为指定的误报规则添加 (](#add-exclusions-for-a-false-positive) 排除项) 
+3. [为指定规则添加排除 (](#add-exclusions-for-a-false-positive) 用于误报) 
 
 4. [提交支持日志](#collect-diagnostic-data-for-file-submissions)
 
@@ -58,11 +58,11 @@ ms.locfileid: "53873795"
 
 - 终结点运行Windows 10 企业版版本 1709 (也称为 Fall Creators Update) 。
 
-- 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [使用任何其他防病毒应用将导致 Microsoft Defender AV 自行禁用](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [使用任何其他防病毒应用将导致Microsoft Defender 防病毒禁用自身](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 - [实时保护](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 
-- 审核模式未启用。 使用组策略将规则设置为已禁用 (值 **：0**) 启用攻击 [面减少规则中所述](enable-attack-surface-reduction.md)。
+- 审核模式未启用。 使用组策略将规则设置为已禁用 (值 **：0**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。
 
 如果满足所有先决条件，请继续执行下一步以在审核模式下测试规则。
 
@@ -70,7 +70,7 @@ ms.locfileid: "53873795"
 
 你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式（它仅启用报告规则）。
 
-按照使用演示 [工具中的以下](evaluate-attack-surface-reduction.md) 说明查看攻击面减少规则如何工作，以测试遇到问题的特定规则。
+按照使用演示 [工具中的以下说明查看攻击面](evaluate-attack-surface-reduction.md) 减少规则如何工作，以测试遇到问题的特定规则。
 
 1. 为要测试的特定规则启用审核模式。 使用组策略将规则设置为审核模式 (值 **：2**) 启用 [攻击面减少规则中所述](enable-attack-surface-reduction.md)。 审核模式允许规则报告文件或进程，但仍允许它运行。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53873795"
 
 如果你已使用演示工具和审核模式测试了规则，并且攻击面减少规则正在预配置的方案中运行，但规则未按预期工作，请根据你的情况继续执行以下任一部分：
 
-1. 如果攻击面减少规则阻止了不应阻止的攻击 (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
+1. 如果攻击面减少规则阻止了不应阻止的攻击， (也称为误报) ，你可以首先添加攻击面减少[规则排除 。](#add-exclusions-for-a-false-positive)
 
 2. 如果攻击面减少规则不会阻止应阻止 (也称为漏报) ，你可以立即继续执行最后一步，收集诊断数据，将问题提交给 [我们](#collect-diagnostic-data-for-file-submissions)。
 
@@ -100,7 +100,7 @@ ms.locfileid: "53873795"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-使用Windows Defender[安全智能基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以提供[指向任何关联警报的链接](alerts-queue.md)。
+使用Windows Defender[安全智能基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以[提供指向任何关联警报的链接](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集文件提交的诊断数据
 

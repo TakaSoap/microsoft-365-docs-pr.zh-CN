@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 15cd59e2d0291a713de142f303bb9934ec1c06d8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: e0056f4f1517962bab3dbee4f993ce28c58dfcf9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550210"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863973"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -40,13 +40,13 @@ ms.locfileid: "58550210"
 
 使用注册表编辑器检查是否在本地设备上启用了网络保护。
 
-1. 选择 **任务栏中的** "开始"按钮并键入 **regedit** 以打开注册表编辑器
+1. 选择任务栏 **中的** "开始"按钮，然后键入 **regedit** 以打开注册表编辑器。
 
-2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
+2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"。
 
-3. 在嵌套菜单中导航到 **软件** 策略  >    >  **Microsoft**  >  **Windows Defender Windows Defender**  >  **Exploit Guard**  >  **网络保护**
+3. 导航到软件策略 \>  \> **Microsoft** \>  \> **Windows Defender Windows Defender攻击防护** \> **网络保护**。
 
-4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
+4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态：
 
    - 0 或 **Off**
    - 1 或 **On**
@@ -60,12 +60,12 @@ ms.locfileid: "58550210"
 
 - [PowerShell](#powershell)
 - [移动设备管理 (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 - [组策略](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -86,11 +86,19 @@ ms.locfileid: "58550210"
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (以前为 Intune) 
 
-1. 登录到管理Microsoft Endpoint Manager中心 (https://endpoint.microsoft.com)
+1. 登录到管理Microsoft Endpoint Manager中心 https://endpoint.microsoft.com) (。
 
-2. 创建或编辑 [终结点保护配置文件](/mem/intune/protect/endpoint-protection-configure)
+2. 转到 **设备**  >  **配置文件 配置文件**  >  **创建配置文件**。
 
-3. 在 **配置文件设置** 配置策略"下，转到"Microsoft Defender 攻击防护  >  **网络筛选**  >  **""** 仅启用或  >  审核 **"**
+3. 在"**创建配置文件"** 飞出控件中，从模板列表中选择"终结点保护"，然后选择"创建 **"。**
+
+4. 转到 **"终结点保护**  >  **基础知识"，** 为配置文件提供名称，然后选择"下一 **步"。**
+
+5. 在"**配置设置"** 部分，转到 **"Microsoft Defender 攻击防护**  >    >  **网络筛选网络保护**  >  **启用或****审核"。** 选择“**下一步**”。
+
+6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
+
+7. 查看所有信息，然后选择"创建 **"。**
 
 ### <a name="group-policy"></a>组策略
 
@@ -104,14 +112,14 @@ ms.locfileid: "58550210"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows Exploit** Guard  >  **网络Microsoft Defender 防病毒Windows Defender**  >    >  **组件**。
+3. 展开树以 **Windows Exploit** Guard \> **网络** \> **Microsoft Defender 防病毒Windows Defender** \> **组件**。
 
    > [!NOTE]
-   > 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
+   > 在旧版 Windows，组策略路径可能Windows Defender 防病毒"Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
-    - **阻止** - 用户无法访问恶意 IP 地址和域
-    - **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域
+    - **阻止** - 用户无法访问恶意 IP 地址和域。
+    - **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域。
     - **审核模式**- 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
 
 > [!IMPORTANT]

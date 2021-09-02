@@ -1,6 +1,6 @@
 ---
 title: 使用Microsoft Defender 防病毒配置Microsoft Endpoint Manager
-description: 使用Microsoft Endpoint Manager和Microsoft Intune配置 Microsoft Defender AV 和 Endpoint Protection
+description: 使用 Microsoft Endpoint Manager 和 Microsoft Intune 配置Microsoft Defender 防病毒Endpoint Protection
 keywords: scep， intune， 终结点保护， 配置
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: d2380053ffcb81a939494b487e17d065bd9d67c72664145e0232d9e1fd89608c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68aad34932f63d1df183b562d87b0d539dab916b
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839179"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863793"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>使用Microsoft Endpoint Manager配置和管理Microsoft Defender 防病毒
 
@@ -33,7 +33,7 @@ ms.locfileid: "53839179"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用此[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)配置Microsoft Defender 防病毒扫描。 [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[和 Configuration Manager](/mem/configmgr/core/understand/introduction)现在属于Endpoint Manager。  
+可以使用[Microsoft Endpoint Manager配置](/mem/endpoint-manager-overview)Microsoft Defender 防病毒扫描。 [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[和 Configuration Manager](/mem/configmgr/core/understand/introduction)现在属于Endpoint Manager。  
 
 ## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>在Microsoft Defender 防病毒中配置Endpoint Manager
 

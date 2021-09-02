@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c785941529823048b55ab3590c91f365ea17a1ba
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 55ea055c1e69b3f7cecd334758d5343fadc408ee
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570133"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862793"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 你可以根据以下信息在 SIT (自定义) 类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 您根据以下信息在 SIT (自定义) 类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -73,7 +73,7 @@ ms.locfileid: "58570133"
 
 |门户|全球/GCC|GCC-High|DOD|
 |---|---|---|---|
-|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |Microsoft 365 安全中心|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 合规中心|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
@@ -95,7 +95,7 @@ ms.locfileid: "58570133"
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>以 .tsv .csv保存敏感数据
 
-1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 该文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值，或用管道 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
+1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel）中，将文件保存在文本文件中。 该文件可以保存在逗号分隔.csv (值中) .tsv (制表符分隔) 值，或用管道分隔 (|) 格式。 如果数据值可能包含逗号（如街道地址），则建议使用 .tsv 格式。
 数据文件最多可包括以下内容：
    - 高达 1 亿行的敏感数据
    - 每个数据源最多 32 列（字段）
@@ -103,7 +103,7 @@ ms.locfileid: "58570133"
 
 2. 在数据库或 .tsv .csv构造敏感数据，使第一行包含用于基于 EDM 的分类的字段的名称。 在你的文件中，你可能有字段名称，如"ssn"、"birthdate"、"firstname"、"lastname"。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
 
-3. 注意敏感数据字段的格式。 特别是，如果选择了值"Seattle，WA"，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将分析为两个单独的字段.csv格式。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
+3. 注意敏感数据字段的格式。 特别是，如果选择了".csv"格式，则分析内容中可能包含逗号的字段（例如，包含值"Seattle，WA"的街道地址）将解析为两个单独的字段。 若要避免这种情况，请使用 .tsv 格式，或在敏感数据表中用双引号将包含值的逗号括起来。 如果逗号包含的值也包含空格，则需要创建与相应格式匹配的自定义 SIT。 例如，用于检测包含逗号和空格的多词字符串的 SIT。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
@@ -383,7 +383,7 @@ ms.locfileid: "58570133"
 - 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
 - 用于上传的计算机上应含有以下内容的目录：
   - EDMUploadAgent
-  - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中的内容
+  - 您的敏感项目文件.csv .tsv 格式 **，PatientRecords.csv** 示例中所示
   - 输出哈希和 salt 文件
   - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 - 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
@@ -448,7 +448,7 @@ ms.locfileid: "58570133"
 
    示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
+   敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项指定管道分隔的文件。
    此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 6. 运行以下命令，检查“上传”状态：
@@ -488,7 +488,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    - .EdmHash
    - .EdmSalt
 
-2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv或 .tsv 文件 (PatientRecords) 租户。
+2. 以安全的方式将这些文件复制到计算机，以将敏感项目.csv .tsv 文件 (PatientRecords) 租户。
 
    若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
@@ -526,7 +526,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 1. 确定刷新敏感信息数据库的流程和频率（每天或每周）。
 
-2. 将敏感数据重新导出到应用程序（如 Microsoft Excel）并保存为 .csv .tsv 格式的文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
+2. 将敏感数据重新导出到应用程序（如 Microsoft Excel）以 .tsv .csv保存文件。 在按照[为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
 
       > [!NOTE]
       > 如果 .csv 或 .tsv 文件的结构 (字段名) ，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
@@ -628,6 +628,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - 针对 SharePoint 的 DLP（文件）
 - Microsoft Cloud App Security DLP 策略
 - 服务器端自动标记策略 - 适用于商业云客户和政府云客户
+<!-- - Client side auto-labeling policies - available for government cloud customers -->  
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 创建 DLP 策略
 

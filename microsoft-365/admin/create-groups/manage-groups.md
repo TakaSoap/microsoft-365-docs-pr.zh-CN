@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理Microsoft 365组，包括添加删除组的成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 7155bbbd6ff127525522b0a7ddf866b9d690db5a
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831833"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862721"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>管理用户中的Microsoft 365 管理中心
 
-创建组[和Microsoft 365组](create-groups.md)的成员后，可以配置组。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
+创建组[和Microsoft 365后](create-groups.md)，可以配置组。 可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以向组发送电子邮件以及是否将组对话的副本发送给成员。
 
 转到 上 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心。
 
@@ -59,13 +59,13 @@ ms.locfileid: "58831833"
 
 启用此设置后，组成员将获取发送到其"收件箱"的组电子邮件和会议Outlook副本。 他们可以阅读并删除该电子邮件的副本，不影响任何人。 在"组"收件箱中，电子邮件的副本仍然存在。
 
-通过选择停止跟踪电子邮件中的组，组成员可以选择不接收Outlook。
+组的成员可以选择不接收这些电子邮件，方法为选择停止在 Outlook。
 
 1. 在管理中心中，展开 **"组"，** 然后单击"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 如果您希望 **设置** 自己的收件箱中接收组邮件和日历项目的副本，请在"设置"选项卡上，选择"将组对话和事件的副本发送给组成员"。
+3. 如果您希望 **设置** 收件箱中的组邮件和日历项目的副本，请在"组"选项卡上，选择"将组对话和事件的副本发送给组成员"。
 
 4. 选择“**保存**”。
 
@@ -77,7 +77,7 @@ ms.locfileid: "58831833"
 
 2. 单击要管理的组的名称以打开设置窗格。
 
-3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"选项卡上，选择"允许 **外部** 发件人向 **此组发送电子邮件"。**
+3. 在管理中心组列表中，选择要更改的组的名称，然后在"设置"**选项卡** 上，选择"允许外部发件人向此组发送电子邮件 **"。**
     
 4. 选择“**保存**”。
 
@@ -106,7 +106,7 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 [创建 Microsoft 365 组](create-groups.md)
 
-[管理对 Microsoft 365 组的来宾访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[管理来宾对组Microsoft 365访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [选择创建组时Microsoft 365域](../../solutions/choose-domain-to-create-groups.md)
 

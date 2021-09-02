@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de298100e5a66e53bd34e110c35749e15e58044
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 75913a539db89bb5377386effb97c8e2a6b3beab
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568596"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863478"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>威胁分析中的分析员报告
 
@@ -53,7 +53,7 @@ _威胁分析报告的分析员报告部分_
 |执行摘要|威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。|
 |分析|有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面|
 |MITRE ATT&观察到的 CK 技术|观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/)|
-|[缓解措施](#apply-additional-mitigations)|推荐可以停止或帮助降低威胁影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
+|[缓解措施](#apply-additional-mitigations)|推荐可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
 |[检测详细信息](#understand-how-each-threat-can-be-detected)|Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。|
 |[高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting)|[用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。|
 |参考|Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。|
@@ -75,7 +75,7 @@ _威胁分析报告的分析员报告部分_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>了解如何检测每个威胁
 
-分析员报告还提供来自 Microsoft Defender for Endpoint 防病毒的检测以及终结点 _检测和_ 响应 (EDR) 功能。
+分析员报告还提供来自Microsoft Defender 防病毒 _和终结点检测和响应_ (EDR) 检测。
 
 ### <a name="antivirus-detections"></a>防病毒检测
 

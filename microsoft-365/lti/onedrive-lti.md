@@ -13,20 +13,23 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用新的 Microsoft OneDrive Learning 互操作性应用创建和评级作业、构建和选择课程内容，并实时协作处理文件。
-ms.openlocfilehash: a1a07173b756d8eb86158bb669113d7e9f7202bf1b666ebc2a086f1aed732d2e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e67e772ce8ef460075729b34bc7da86d486c51e9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830048"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863406"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>将 Microsoft OneDrive LTI 与 Canvas 集成
+
+> [!IMPORTANT]
+> 某些信息与预发行产品相关，在商业发行之前可能会对其进行重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 将 Microsoft OneDrive LTI 与 Canvas 集成的过程有两个步骤。 第一步在 Canvas Microsoft OneDrive，第二步使 Microsoft OneDrive LTI 在 Canvas 课程内可用。
 
 ## <a name="recommended-browser-settings"></a>建议的浏览器设置
 
-- 应启用 Cookie Microsoft OneDrive。
+- 应为用户启用 cookie Microsoft OneDrive。
 - 不应阻止弹出窗口进行Microsoft OneDrive。
 
 > [!NOTE]
@@ -36,7 +39,7 @@ ms.locfileid: "53830048"
 ## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>在画布Microsoft OneDrive LTI
 
 > [!IMPORTANT]
-> 执行此集成的人应是 Canvas 的管理员和 Microsoft 365 管理员。
+> 执行此集成的人应是 Canvas 的管理员和 Microsoft 365 租户的管理员。
 
 1. 登录到 Microsoft OneDrive <a href="https://onedrivelti.microsoft.com/admin" target="_blank">LTI 注册门户</a>
 1. 选择 **"管理员同意"** 按钮并接受权限。
@@ -47,7 +50,7 @@ ms.locfileid: "53830048"
 3. 选择" **新建 LTI 租户"** 按钮。 在"LTI 注册"页上，选择下拉列表中的" **画布** "，然后输入 Canvas 实例的基本 URL。
 
 > [!NOTE]
-> 例如，如果 Canvas 实例为 https://contoso.test.instructure.com ] (https://contoso.test.instructure.com) ，则应该输入完整的 URL。
+> 如果你的 Canvas 实例是 ，例如 https://contoso.test.instructure.com ] (https://contoso.test.instructure.com) ，则应该输入完整的 URL。
 
 :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="LTI 租户管理页面，包含用于选择 LTI 使用者平台的下拉列表字段和 URL 文本字段。":::
 
@@ -62,7 +65,7 @@ ms.locfileid: "53830048"
 6. On the Configure page， in the **Method** dropdown， select **Paste JSON** as the method and paste the JSON text you copied in Step 5 in the text field that appears.
 7. 保存密钥，它以 Off 状态在 Canvas **中** 可用。 打开该 **键** 并复制"详细信息"列中给定的键，以用于下一步。
 
-:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="键设置为关闭状态中的 Canvas 页面。需要将其打开，并且需要从此页面的详细信息列中复制密钥。":::
+:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="键设置为关闭状态中的&quot;画布&quot;页。需要将其打开，并且需要从此页面的详细信息列中复制密钥。":::
 
 8. 返回到"Microsoft OneDrive LTI 注册门户"，然后将密钥粘贴到 **"Canvas 客户端 ID"** 字段中。 准备就绪 **后** ，选择"下一步"。
 
@@ -93,7 +96,7 @@ Canvas 管理员可以针对所有课程Microsoft OneDrive LTI。 如果Microsof
 1. 将 **"外部协作工具** "功能设置为未启用。
 
 > [!NOTE]
-> 可以将协作分配给单个学生和学生组。 默认情况下，分配给单个学生有效。 若要能够将协作分配给学生组，请按照以下步骤操作：
+> 可以将协作分配给单个学生和学生组。 默认情况下，向单个学生分配工作。 若要能够将协作分配给学生组，请按照以下步骤操作：
 
 1. 以管理员角色登录并转到 **"开发人员密钥"** 部分。
-1. 查找值为 170000000000710的键，并设置为 **"打开"。**
+1. 查找值为 的键170000000000710设置为 **On。**

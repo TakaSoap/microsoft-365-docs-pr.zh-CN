@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft Defender AV 中还原隔离的文件
-description: 你可以还原 Microsoft Defender AV 隔离的文件和文件夹。
+title: 在 Microsoft Defender 防病毒软件中还原隔离的文件
+description: 你可以还原被用户隔离的文件和Microsoft Defender 防病毒。
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a07f43c11b1079bccb35a41c0ae913181be20d2d4f373a729e06ccf3b88a9045
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfca90f3c6c3a0ca52a92ff42aab351d5dfc8e08
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817681"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863661"
 ---
-# <a name="restore-quarantined-files-in-microsoft-defender-av"></a>在 Microsoft Defender AV 中还原隔离的文件
+# <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒软件中还原隔离的文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,8 +34,8 @@ ms.locfileid: "53817681"
 
 如果Microsoft Defender 防病毒配置为检测和修正设备上的威胁，Microsoft Defender 防病毒隔离可疑文件。 如果确定隔离文件不是威胁，可以还原它。
 
-1. 打开 **Windows 安全中心。**
-2. 选择 **病毒&威胁防护，** 然后单击保护 **历史记录**。
+1. 打开 **Windows 安全中心**。
+2. 选择 **病毒&威胁防护"，** 然后单击"保护 **历史记录"。**
 3. 在所有最近项的列表中，筛选"**隔离项目"。**
 4. 选择要保留的项，然后执行还原等操作。
 

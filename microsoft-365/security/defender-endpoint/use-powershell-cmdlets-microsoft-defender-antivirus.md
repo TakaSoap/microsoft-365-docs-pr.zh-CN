@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell cmdlet 配置和运行 Microsoft Defender AV
+title: 使用 PowerShell cmdlet 配置并运行Microsoft Defender 防病毒
 description: 在Windows 10中，可以使用 PowerShell cmdlet 运行扫描、更新安全智能以及更改 Microsoft Defender 防病毒。
 keywords: 扫描， 命令行， mpcmdrun， defender
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 820300be1a8c68dab4b000b61023819ce1b75cf800e7cc16915f2aa7a696dfd2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884431"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863949"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell cmdlet 配置和管理Microsoft Defender 防病毒
 
@@ -37,14 +37,14 @@ ms.locfileid: "53884431"
 
 有关 cmdlet 及其函数和可用参数的列表，请参阅 [Defender cmdlet 主题](/powershell/module/defender) 。
 
-PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 来配置软件。
+PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 配置软件。
 
 > [!NOTE]
-> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))[组策略 ADMX 模板）的](https://www.microsoft.com/download/101445)替换。
+> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))组策略[ADMX 模板）的替换](https://www.microsoft.com/download/101445)。
 
 使用 PowerShell 所做的更改将影响部署或进行更改的终结点上的本地设置。 这意味着，使用组策略、Microsoft Endpoint Configuration Manager或Microsoft Intune部署策略可能会覆盖使用 PowerShell 所做的更改。
 
-你可以 [配置哪些设置可以使用本地策略覆盖在本地覆盖](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
+你可以 [配置哪些设置可以使用本地策略覆盖本地覆盖](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
 
 PowerShell 通常安装在 文件夹 下 `%SystemRoot%\system32\WindowsPowerShell` 。
 

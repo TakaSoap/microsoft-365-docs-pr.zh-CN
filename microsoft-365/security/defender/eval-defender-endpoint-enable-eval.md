@@ -1,6 +1,6 @@
 ---
 title: 启用 Microsoft Defender 终结点评估
-description: 启用Microsoft 365 Defender试用实验室或试验环境，包括检查许可证状态和载入安装
+description: 启用Microsoft 365 Defender试用实验室或试验环境，包括检查许可证状态和载入终结点
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fb8e77a11b3844d78c99b56863bdb9ea424c48f9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 09785d48d2ad5efb2d33559d0580c5a0ff63c768
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572967"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864022"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -34,8 +34,8 @@ ms.locfileid: "58572967"
 本文将指导你完成使用生产设备为 Microsoft Defender for Endpoint 设置评估环境的步骤。 
 
 
->[!TIP]
->Microsoft Defender for Endpoint 还附带了产品内评估实验室，你可以添加预配置的设备并运行模拟来评估平台的功能。 实验室附带简化的设置体验，可帮助快速演示 Microsoft Defender for Enpdoint 的价值，包括高级搜寻和威胁分析等许多功能的指南。 有关详细信息，请参阅 [评估功能](/defender-endpoint/evaluation-lab.md)。 <br> 本文中提供的指南与评估实验室之间的主要区别在于评估环境使用存储设备，而评估实验室使用非生产设备。 
+> [!TIP]
+> Microsoft Defender for Endpoint 还附带了产品内评估实验室，你可以添加预配置的设备并运行模拟来评估平台的功能。 实验室附带简化的设置体验，可帮助快速演示 Microsoft Defender for Endpoint 的价值，包括针对许多功能（如高级搜寻和威胁分析）的指南。 有关详细信息，请参阅 [评估功能](../defender-endpoint/evaluation-lab.md)。 <br> 本文中提供的指南与评估实验室之间的主要区别在于评估环境使用存储设备，而评估实验室使用非生产设备。 
 
 使用以下步骤启用 Microsoft Defender for Endpoint 评估。
 
@@ -50,7 +50,7 @@ ms.locfileid: "58572967"
 首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
 
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](../../media/defender/atp-licensing-azure-portal.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "58572967"
 
 为了评估 Microsoft Defender for Endpoint，我们建议选择Windows 10一组设备进行评估。
 
-你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅配置[Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
+你可以选择使用任何受支持的管理工具，但 Intune 提供了最佳集成。 有关详细信息，请参阅在 Microsoft Intune 中[配置 Microsoft Defender for Endpoint。](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)
 
 规划 [部署](../defender-endpoint/deployment-strategy.md) 主题概述了部署 Defender for Endpoint 所需的一般步骤。  
 
@@ -80,7 +80,7 @@ ms.locfileid: "58572967"
 
 终结点 | 工具选项
 :---|:---
-**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/](../defender-endpoint/configure-endpoints-mdm.md)移动设备[](../defender-endpoint/configure-endpoints-gp.md)管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、[与 Azure Defender 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/移动设备](../defender-endpoint/configure-endpoints-mdm.md)管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、[与 Azure Defender 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)[](../defender-endpoint/configure-endpoints-gp.md)
 **macOS** | [本地脚本](../defender-endpoint/mac-install-manually.md)、 [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)、 [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[移动设备管理](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [本地脚本](../defender-endpoint/linux-install-manually.md)  [、安装](../defender-endpoint/linux-install-with-puppet.md)  [、Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [基于应用](../defender-endpoint/ios-install.md)

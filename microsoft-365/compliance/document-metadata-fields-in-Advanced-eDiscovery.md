@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: 4e5a4e60a5788c93f9ba0407616c4417c47ed46bfe20880d067ffa04a5a42dd1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842311"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863913"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
-下表列出了审阅集内文档的元数据字段（在 Advanced eDiscovery 中）。 该表提供以下信息：
+下表列出了审阅集内文档的元数据字段，其中一种情况Advanced eDiscovery。 该表提供以下信息：
 
-- **字段名称和****显示字段名称**：元数据字段的名称以及查看审阅集内选定文档的文件元数据时显示的字段名称。 查看文档的文件元数据时，不包含某些元数据字段。 这些字段用星号* (突出显示) 。
+- **字段名称和****显示字段名称**：元数据字段的名称以及查看审阅集内选定文档的文件元数据时显示的字段名称。 查看文档的文件元数据时，不包含某些元数据字段。 这些字段用星号或* (突出显示) 。
 
 - **可搜索字段名称：** 运行审阅集查询时可以搜索 [的属性的名称](review-set-search.md)。 空单元格表示无法搜索审阅集查询中的字段。
 
@@ -52,18 +52,18 @@ ms.locfileid: "53842311"
 |合规性标签|ComplianceLabels|Compliance_labels|[应用于网站](retention.md)中内容的保留Office 365。|
 |复合路径|CompoundPath|Compound_path|描述项目源的可读路径。|
 |内容*|内容||已提取项目的文本。|
-|对话正文|对话正文||项目的对话正文。|
+|对话正文|ConversationBody||项目的对话正文。|
 |对话 ID|ConversationId|Conversation_ID|邮件的对话 ID。 对于Teams一对一和群组聊天，同一对话内的所有转录文件及其系列项目共享同一对话 ID。 有关详细信息，请参阅 Advanced eDiscovery[中的内容的工作流Microsoft Teams。](teams-workflow-in-advanced-ediscovery.md)|
 |对话索引||Conversation_index|邮件的对话索引。|
 |对话名称||ConversationName|频道中频道Teams。 名称的格式取决于通道的类型： <br>Teams频道聊天和私人频道聊天：\<Name of team, name of channel\> <br>Teams一对一和群聊：所有聊天参与者的显示名称和电子邮件地址<br>Yammer社区：Community名称 + 帖子的前 120 个字符<br>Yammer私有：发件人姓名和电子邮件地址 + 邮件的前 120 个字符|
 |对话 Pdf 时间|ConversationPdfTime||创建对话的 PDF 版本的日期。|
 |对话修订消耗时间|ConversationRedactionBurnTime||为聊天创建对话的 PDF 版本的日期。|
-|对话主题|对话主题||项目的对话主题。|
-|对话类型|ConversationType|ConversationType|聊天对话的类型。 值为： <br> Teams 1：1 和群聊及所有Yammer对话：**分组** 针对<br>Teams频道和专用频道：**频道**|
+|对话主题|ConversationTopic||项目的对话主题。|
+|对话类型|ConversationType|ConversationType|聊天对话的类型。 值为： <br> Teams一对一和群组聊天及Yammer对话：**分组** 针对<br>Teams频道和专用频道：**频道**|
 |包含已编辑邮件|ContainsEditedMessage|ContainsEditedMessage|指示聊天脚本Teams脚本是否包含已编辑的消息
 |||Converted_file_path|转换后的导出文件的路径。 对于内部 Microsoft，请使用 。|
 |Custodian|Custodian|Custodian|与项目关联的保管人的名称。|
-|日期|日期|日期|Date 是依赖于文件类型的计算字段。<p>电子邮件：发送日期<br>电子邮件附件：文档的上次修改日期;如果不可用，则说明父级的发送日期<br>嵌入文档：文档的上次修改日期;如果不可用，则父项的上次修改日期<br>SPO 文档 (包括新式) ：SharePoint上次修改日期;如果不可用，则文档上次修改日期<br>非Office 365文档：上次修改日期<br>会议：会议开始日期<br>VoiceMail：发送日期<br>IM：发送日期<br>Teams：发送日期|
+|日期|日期|日期|Date 是依赖于文件类型的计算字段。<p>电子邮件：发送日期<br>电子邮件附件：文档的上次修改日期;如果不可用，则说明父级的发送日期<br>嵌入文档：文档的上次修改日期;如果不可用，则父项的上次修改日期<br>SPO 文档 (包括新式附件) ：SharePoint上次修改日期;如果不可用，则文档上次修改日期<br>非Office 365文档：上次修改日期<br>会议：会议开始日期<br>VoiceMail：发送日期<br>IM：发送日期<br>Teams：发送日期|
 |文档注释|DocComments|Doc_comments|文档元数据中的注释。|
 |文档公司||Doc_company|文档元数据中的公司。|
 |创建文档的日期|CreatedTime|Doc_date_created|从文档元数据创建日期。|
@@ -100,7 +100,7 @@ ms.locfileid: "53842311"
 |创建文件系统日期||File_system_date_created|文件系统数据的创建 (仅适用于非Office 365数据) 。|
 |修改文件系统日期||File_system_date_modified|文件系统文件的修改 (仅适用于非Office 365数据) 。|
 |文件类型|FileType||基于文件扩展名的项目的文件类型。|
-|组 ID|组 ID|Group_ID|将电子邮件和文档的所有项目分组在一起。 对于电子邮件，这包括邮件以及所有附件和提取的项目。 对于文档，这包括文档和任何嵌入项目。|
+|组 ID|GroupId|Group_ID|将电子邮件和文档的所有项目分组在一起。 对于电子邮件，这包括邮件以及所有附件和提取的项目。 对于文档，这包括文档和任何嵌入项目。|
 |具有附件|EmailHasAttachment|Email_has_attachment|指示邮件是否包含附件。|
 |有律师|HasAttorney||**如此** 当在律师列表中找到至少一个参与者;否则，值为 **False**。|
 |HasText*||Has_text|指示项目是否具有文本;可能的值是 **True** 和 **False**。|
@@ -123,22 +123,22 @@ ms.locfileid: "53842311"
 |标记为具有代表性|MarkAsRepresentative||将每组精确重复项中的一个文档标记为代表。|
 |会议结束日期|MeetingEndDate|Meeting_end_date|会议的会议结束日期。|
 |会议开始日期|MeetingStartDate|Meeting_start_date|会议的会议开始日期。|
-|邮件类型|MessageKind|Message_kind|要搜索的邮件类型。 可能的值 **<p> ：contacts <br> docs <br> email <br> externaldata <br> faxs im meetings <br> <br> <br> <br> microsoftteams** (returns items from chats， meetings， and calls in Microsoft Teams) **<br> notes <br> posts <br> rssfeeds <br> tasks <br> voicemail**|
+|邮件类型|MessageKind|Message_kind|要搜索的邮件类型。 可能的值 **<p> <br> ：contacts docs <br> email <br> externaldata <br> faxs im meetings <br> <br> <br> <br> microsoftteams** (returns items from chats， meetings， and calls in Microsoft Teams) **<br> notes <br> posts <br> rssfeeds <br> tasks <br> voicemail**|
 |新式附件父 ID||ModernAttachment_ParentId|文档的父级的不可变 ID。|
 |本机扩展|NativeExtension|Native_extension|项的本机扩展。|
 |本机文件名|NativeFileName|Native_file_name|项的本机文件名。|
 |NativeMD5||Native_MD5|MD5 哈希 (文件流) 128 位哈希值。|
 |NativeSHA256||Native_SHA_256|SHA256 哈希 (文件流中的 256) 哈希值。|
-|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|将电子邮件线程连接 (ET) 设置和 (复制) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
-|ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|将电子邮件线程连接在一 (ET) 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。 ET 集合中的每个电子邮件项目后跟相应的附件。|
+|ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|将电子邮件线程连接在一 (ET) SET 和 Near-duplicate (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
+|ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|将电子邮件线程连接在 ET (ND) 集和 (重复) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。 ET 集合中的每个电子邮件项目后跟相应的附件。|
 |近重复集||ND_set|与透视文档类似的项目共享相同的ND_set。|
 |O365 作者||O365_authors|创作自SharePoint。|
-|O365 创建者||O365_created_by|由用户SharePoint。|
+|O365 创建者||O365_created_by|由 SharePoint。|
 |O365 创建日期||O365_date_created|创建日期SharePoint。|
-|O365 修改日期||O365_date_modified|上次修改日期（SharePoint）。|
+|O365 修改日期||O365_date_modified|自上次修改日期起SharePoint。|
 |修改者 O365||O365_modified_by|修改者SharePoint。|
 |其他保管人|DedupedCustodians|Deduped_custodians|与电子邮件完全相同的文档保管人 (，基于内容;基于哈希值对文档) 。|
-|其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (列表（基于内容）;基于哈希值对文档) 。|
+|其他文件 ID|DedupedFileIds|Deduped_file_IDs|与电子邮件完全相同的文档的文件 (，基于内容;基于哈希值对文档) 。|
 |其他路径|Dedupedcompoundpath|Deduped_compound_path|与电子邮件完全相同的文档的复合路径列表 (：基于内容、文档：基于哈希) 。|
 |父 ID|ParentId|Parent_ID|项的父级的 ID。|
 |ParentNode||Parent_node|电子邮件线程中最接近的前一封电子邮件。|
@@ -159,7 +159,7 @@ ms.locfileid: "53842311"
 |相关性标记|RelevanceTag||基于相关性的文档的相关性分数。|
 |代表 ID|RepresentativeId||每组精确重复项的数字标识符。|
 |||Row_number|加载文件中项的行号。|
-|发件人|发件人|Email_sender|发件人 (邮件) 发件人"字段。 格式为 **DisplayName \<SmtpAddress>**。|
+|发件人|发件人|Email_sender|邮件 (发件人) 发件人"字段。 格式为 **DisplayName \<SmtpAddress>**。|
 |发件人/作者|SenderAuthor||计算字段，由项目的发件人或作者组成。|
 |发件人域|SenderDomain|Email_sender_domain|发件人的域。|
 |发件箱|发件箱|Email_date_sent|邮件的发送日期。<br>聊天：脚本的开始日期|
@@ -173,7 +173,7 @@ ms.locfileid: "53842311"
 |Teams频道名称|TeamsChannel|Channel_Name|频道中频道Microsoft Teams。|
 |主题列表|ThemesList|Themes_list|为分析计算的主题列表。|
 |标题|标题|Doc_title|文档元数据中的标题。 文档元数据中的标题。 对于Teams和Yammer，这是 ConversationName 属性的值。|
-|To|To|Email_to|邮件类型的收件人字段。 Format 为 **DisplayName \<SmtpAddress>**|
+|到|到|Email_to|邮件类型的收件人字段。 Format 为 **DisplayName \<SmtpAddress>**|
 |在电子邮件集内是唯一的|UniqueInEmailSet||**假** 如果电子邮件集的附件副本。|
 |版本组 ID||Version_Group_Id|将同一文档的不同版本分组在一起。|
 |已修正|WasRemediated|Was_Remediated|**如此** 如果该项已修正，否则 **为 假**。|
@@ -181,4 +181,4 @@ ms.locfileid: "53842311"
 |||||
 
 > [!NOTE]
-> 有关在收集 Advanced eDiscovery 案例的数据时Office 365搜索内容位置时可搜索属性Advanced eDiscovery请参阅关键字查询和内容搜索[的搜索条件](keyword-queries-and-search-conditions.md)。
+> 有关在收集 Advanced eDiscovery 案例的数据时Office 365搜索内容位置时可搜索的属性，请参阅关键字查询和内容搜索[的搜索条件](keyword-queries-and-search-conditions.md)。

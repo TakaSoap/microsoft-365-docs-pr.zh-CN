@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender AV 事件 ID 和错误代码
+title: Microsoft Defender 防病毒事件 ID 和错误代码
 description: 查找事件MICROSOFT DEFENDER 防病毒和错误的原因和解决方案
 keywords: 事件， 错误代码， siem， 日志记录， 疑难解答， wef， windows 事件转发
 search.product: eADQiWindows 10XVcnh
@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2c6532ca3d610d2cc0650ee8fee986b296cd54af90d62fdb71926938302635b1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867833"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862817"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题
 
@@ -31,11 +31,11 @@ ms.locfileid: "53867833"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-如果遇到与Microsoft Defender 防病毒的问题，可以搜索本主题中的表以查找匹配的问题和潜在的解决方案。
+如果遇到与Microsoft Defender 防病毒问题，可以搜索本主题中的表以查找匹配的问题和潜在的解决方案。
 
 表列表：
 
-- [Microsoft Defender 防病毒事件 (](#windows-defender-av-ids)都适用于事件Windows 10 Windows Server 2016) 
+- [Microsoft Defender 防病毒事件 (](#windows-defender-av-ids)和事件WINDOWS 10 Windows Server 2016) 
 - [Microsoft Defender 防病毒客户端错误代码](#error-codes)
 - [Microsoft Microsoft Defender 防病毒和测试 (期间使用的内部客户端错误代码) ](#internal-error-codes)
 
@@ -58,7 +58,7 @@ Microsoft Defender 防病毒事件日志中记录事件Windows。
 ## <a name="to-view-a-microsoft-defender-antivirus-event"></a>查看事件Microsoft Defender 防病毒事件
 
 1.  打开 **事件查看器**。
-2.  在控制台树中，展开"**应用程序** 和服务日志"，然后展开 **"Microsoft"，** 然后Windows"，Windows Defender"。  
+2.  在控制台树中，展开"**应用程序和服务** 日志"，然后展开 **"Microsoft"，** 然后Windows"，Windows Defender"。  
 3.  双击操作 **。**
 4.  在详细信息窗格中，查看各个事件的列表以查找事件。
 5.  单击事件以查看有关下窗格中"常规"和"详细信息"选项卡下 **的事件****的特定** 详细信息。
@@ -102,7 +102,7 @@ Microsoft Defender 防病毒事件日志中记录事件Windows。
 <li>客户扫描</li>
 </ul>
 </dt>
-<dt>扫描资源： &lt;扫描 (文件/目录/BHO) 等资源。 &gt; </dt>
+<dt>扫描资源： &lt;已 (文件/目录/BHO) 等资源。 &gt; </dt>
 <dt>用户： &lt;Domain &gt; \& lt;用户 &gt; </dt>
 </dl>
 </td>
@@ -321,7 +321,7 @@ Microsoft Defender 防病毒事件日志中记录事件Windows。
 用户操作：
 </td>
 <td >
-防病毒客户端遇到错误，并且当前扫描已停止。 扫描可能由于客户端问题而失败。 此事件记录包括扫描 ID、扫描类型 (Microsoft Defender 防病毒、反间谍软件、反恶意软件) 、扫描参数、启动扫描的用户、错误代码和错误描述。
+防病毒客户端遇到错误，并且当前扫描已停止。 扫描可能由于客户端问题而失败。 此事件记录包括扫描 ID、扫描类型 (Microsoft Defender 防病毒、反间谍软件、反恶意软件) 、扫描参数、启动扫描的用户、错误代码和错误说明。
 若要对此事件进行疑难解答：
 <ol>
 <li>再次运行扫描。</li>
@@ -360,8 +360,8 @@ Microsoft Defender 防病毒事件日志中记录事件Windows。
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -432,8 +432,8 @@ Microsoft Defender 防病毒已采取措施保护此计算机免受恶意软件�
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ： &gt; 严重性，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -477,15 +477,15 @@ Microsoft Defender 防病毒已采取措施保护此计算机免受恶意软件�
 说明:
 </td>
 <td >
-Microsoft Defender 防病毒恶意软件或其他可能不需要的软件时遇到错误。 有关详细信息，请参阅：
+Microsoft Defender 防病毒恶意软件或其他可能不需要的软件采取措施时遇到错误。 有关详细信息，请参阅：
 <dl>
 <dt>用户： &lt;Domain &gt; \& lt;用户名 &gt; </dt>
 <dt>： &lt; 威胁名称 &gt; </dt>
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ： &gt; 严重性，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -538,8 +538,8 @@ Microsoft Defender 防病毒已还原隔离项目。 有关详细信息，请参
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -580,8 +580,8 @@ Microsoft Defender 防病毒尝试从隔离区还原项目时遇到错误。 有
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -618,14 +618,14 @@ Microsoft Defender 防病毒尝试从隔离区还原项目时遇到错误。 有
 说明:
 </td>
 <td >
-Microsoft Defender 防病毒已删除隔离项目。<br/>有关详细信息，请参阅：
+Microsoft Defender 防病毒从隔离区删除项目。<br/>有关详细信息，请参阅：
 <dl>
 <dt>名称： &lt;威胁名称 &gt; </dt>
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -667,8 +667,8 @@ Microsoft Defender 防病毒尝试从隔离区删除项目时遇到错误。
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -773,8 +773,8 @@ Microsoft Defender 防病毒检测到可疑行为。<br/>有关详细信息，�
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -848,8 +848,8 @@ Microsoft Defender 防病毒检测到恶意软件或其他可能不需要的软�
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -884,8 +884,8 @@ Microsoft Defender 防病毒检测到恶意软件或其他可能不需要的软�
 </ul>反恶意软件扫描接口 (AMSI) 。 主要用于保护 PS (VBS) 脚本，尽管也可由第三方调用。
 UAC </dt> 
 <dt>用户： &lt; 域 &gt; \& lt;用户 &gt; </dt>
-<dt>进程名称 &lt; &gt; ：PID</dt>签名版本中的进程
-<dt>： &lt; 定义版本 &gt; </dt>引擎
+<dt>进程名称 &lt; ：PID &gt; </dt>签名版本中
+<dt>的进程： &lt; 定义 &gt; 版本</dt>引擎
 <dt>版本 &lt; ：反恶意软件引擎版本 &gt; </dt>
 </dl>
 </td>
@@ -927,8 +927,8 @@ Microsoft Defender 防病毒已采取措施保护此计算机免受恶意软件�
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -997,7 +997,7 @@ UAC </dt>
 客户端操作系统
 </td>
 <td>
-WindowsVista (Service Pack 1 或 Service Pack 2) 7 Windows更高版本
+WindowsVista (Service Pack 1 或 Service Pack 2) ，Windows 7 及更高版本
 </td>
 </tr>
 <tr>
@@ -1049,8 +1049,8 @@ Microsoft Defender 防病毒恶意软件或其他可能不需要的软件时遇�
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -1141,8 +1141,8 @@ Microsoft Defender 防病毒恶意软件或其他可能不需要的软件时遇�
 <dt>ID： &lt; 威胁 &gt; ID</dt> 
 <dt> 严重性 &lt; ：严重性 &gt; ，例如：<ul>
 <li>低</li>
-<li>适度</li>
-<li>High</li>
+<li>中等</li>
+<li>高</li>
 <li>严重</li>
 </ul>
 </dt>
@@ -1264,7 +1264,7 @@ UAC </dt>
 消息：
 </td>
 <td >
-<b>Microsoft Defender 防病毒威胁资源推断哈希值。</b>
+<b>Microsoft Defender 防病毒威胁资源的哈希值。</b>
 </td>
 </tr>
 <tr>
@@ -1283,7 +1283,7 @@ Microsoft Defender 防病毒客户端正常运行。
 <tr>
 <td></td>
 <td >
-<div class="alert"><b>注意：只有在设置了以下策略时，才能记录 <b>此事件：ThreatFileHashLogging 未签名</b>。</div>
+<div class="alert"><b>注意：仅在设置了以下策略时，才能记录 <b>此事件：ThreatFileHashLogging 未签名</b>。</div>
 <div> </div>
 </td>
 </tr>
@@ -1352,29 +1352,29 @@ Microsoft Defender 防病毒客户端正常运行。
 <td >
 防病毒客户端运行状况报告。
 <dl>
-<dt>平台版本： &lt;当前 &gt; 平台</dt>版本 引擎版本
+<dt>平台版本： &lt;&gt;当前平台</dt>版本 引擎版本
 <dt> &lt; ：反恶意软件引擎 版本 &gt; </dt>网络实时检查引擎版本：网络
-<dt> &lt; &gt; 实时</dt>检查引擎版本 防病毒签名
-<dt>版本 &lt; &gt; </dt>：防病毒签名版本 反
-<dt>间谍软件 &lt; &gt; </dt>签名版本：反间谍软件签名版本 网络实时检查签名
-<dt>版本：网络实时检查签名 &lt; 版本 &gt; </dt>RTP 状态：实时保护状态 (
-<dt> &lt; &gt; 已启用或</dt>禁用) 
-<dt>OA 状态： 访问状态 (已启用或禁用 &lt; &gt;) </dt>IOAV 状态
-<dt> &lt; ：IE 下载和 Outlook 快速附件状态 (已启用或禁用 &gt;) </dt>BM 状态：行为监视状态 (
-<dt> &lt; &gt; 已启用或</dt>禁用) 防病毒签名年龄：防病毒签名年龄 (天
-<dt> &lt; &gt;) </dt>反间谍软件签名年龄：反间谍软件签名年龄 (天
+<dt> &lt; 实时 &gt; </dt>检查引擎版本防病毒签名
+<dt>版本 &lt; &gt; </dt>：防病毒签名版本 反间谍软件签名
+<dt>版本 &lt; &gt; </dt>：反间谍软件签名版本 网络实时检查
+<dt>签名版本：网络实时检查签名 &lt; 版本 &gt; </dt>
+<dt>RTP 状态：实时保护状态 (&lt; &gt; 已启用或</dt>禁用) 
+<dt>OA state： On Access state (Enabled or &lt; &gt; Disabled) </dt> 
+<dt>IOAV state： &lt; IE Downloads and Outlook Express Attachments state (Enabled or &gt; Disabled) </dt> 
+<dt>BM state： Behavior Monitoring state (Enabled or &lt; &gt; Disabled) </dt> 
+<dt>Antivirus signature age： &lt; Antivirus signature age (in days &gt;) </dt>反间谍软件签名年龄：反间谍软件签名年龄 (天
 <dt> &lt; &gt;) </dt>上次快速扫描时间：上次快速扫描时间
-<dt> (天 &lt; &gt;) </dt>上次完全扫描时间：上次完全扫描时间
-<dt> &lt; &gt; (（</dt>以天) 防病毒签名创建时间表示
-<dt>）：？ &lt;防病毒签名创建时间 &gt; </dt>
+<dt> (&lt; &gt; 天) </dt>上次完全扫描时间：上次完全扫描时间 (天
+<dt> &lt; &gt;) </dt>防病毒签名创建时间
+<dt>：？ &lt;防病毒签名创建时间 &gt; </dt>
 <dt>反间谍软件签名创建时间：？ &lt;反间谍软件签名创建时间 上次 &gt; </dt>
 <dt>快速扫描开始时间：？ &lt;上次快速扫描开始时间 &gt; 上次</dt>
-<dt>快速扫描结束时间：？ &lt;上次快速 &gt; </dt>扫描结束时间 上次快速扫描源：上次快速扫描源 (0 = 扫描未
-<dt> &lt; &gt;&#39;，1 = 用户启动，2 =</dt>系统启动) 上次完全扫描
-<dt>开始时间：？ &lt;上次完全扫描开始时间 &gt; 上次</dt>
-<dt>完全扫描结束时间：？ &lt;上次完全 &gt; </dt>扫描结束时间 上次完全扫描源：上次完全扫描源 (0 = 扫描未运行
+<dt>快速扫描结束时间：？ &lt;上次快速 &gt; </dt>扫描结束时间 上次快速扫描源：上次快速扫描源 (0 = 扫描未运行
+<dt> &lt; &gt;&#39;，1 = 用户启动，2 =</dt>系统启动) 上次完全扫描开始时间
+<dt>：？ &lt;上次完全扫描开始时间 &gt; 上次</dt>
+<dt>完全扫描结束时间：？ &lt;上次完全 &gt; </dt>扫描结束时间 上次完全扫描源：上次完全扫描源 (0 = 扫描未
 <dt> &lt; &gt;&#39;，1 = 用户启动，2 =</dt>系统启动) 
-<dt> 产品状态：针对内部疑难解答
+<dt> 产品状态：对于内部疑难解答
 </dl>
 </td>
 </tr>
@@ -1453,8 +1453,8 @@ Microsoft Defender 防病毒客户端正常运行。
 <td >
 Microsoft Defender 防病毒尝试更新签名时遇到错误。
 <dl>
-<dt>新的安全智能版本： &lt;新版本编号 &gt; </dt>
-<dt>以前的安全智能版本： &lt; 上一 &gt; 版本</dt> 
+<dt>新的安全智能版本： &lt;新版本号 &gt; 以前的</dt>
+<dt>安全智能版本： &lt; 上一 &gt; 版本</dt> 
 <dt> 更新源 &lt; ：更新 &gt; 源，例如：
 <ul>
 <li>安全智能更新文件夹</li>
@@ -1530,7 +1530,7 @@ Microsoft Defender 防病毒引擎版本已更新。
 <dl>
 <dt>当前引擎版本： &lt;当前引擎版本 &gt; </dt>上一个引擎版本：
 <dt> &lt; &gt; 以前的</dt>引擎版本 引擎
-<dt>类型：引擎类型 ，反 &lt; &gt; 恶意软件引擎或网络检查系统引擎。</dt>
+<dt>类型： &lt; 引擎类型 &gt; ，反恶意软件引擎或网络检查系统引擎。</dt>
 <dt>用户： &lt;Domain &gt; \& lt;用户 &gt; </dt>
 </dl>
 </td>
@@ -1664,7 +1664,7 @@ Microsoft Defender 防病毒尝试加载签名时遇到错误，并且将尝试�
 说明:
 </td>
 <td >
-Microsoft Defender 防病毒无法加载反恶意软件引擎，因为当前平台版本不受支持。 Microsoft Defender 防病毒将还原到上一个已知良好的引擎，并尝试进行平台更新。
+Microsoft Defender 防病毒无法加载反恶意软件引擎，因为当前平台版本不受支持。 Microsoft Defender 防病毒还原到上一个已知良好的引擎，并尝试进行平台更新。
 <dl>
 <dt>当前平台版本： &lt; 当前平台版本&gt;</dt>
 </dl>
@@ -1753,7 +1753,7 @@ Microsoft Defender 防病毒需要更新的平台版本来支持反恶意软件�
 说明:
 </td>
 <td >
-Microsoft Defender 防病毒动态<i>签名服务</i>检索其他签名以帮助保护你的计算机。
+Microsoft Defender 防病毒<i>动态签名服务</i>检索其他签名以帮助保护你的计算机。
 <dl>
 <dt>当前签名版本： &lt;当前签名版本 &gt; </dt> 
 <dt> 签名类型： &lt; 签名 &gt; 类型 ，例如： <ul>
@@ -2098,7 +2098,7 @@ Microsoft Defender 防病毒尝试下载和配置脱机防病毒时遇到错误�
 说明:
 </td>
 <td >
-对操作系统的支持即将过期。 在Microsoft Defender 防病毒操作系统上运行非支持操作系统不是防止威胁的足够解决方案。
+对操作系统的支持即将过期。 在Microsoft Defender 防病毒操作系统上运行应用程序不是防止威胁的足够解决方案。
 </td>
 </tr>
 <tr>
@@ -2124,7 +2124,7 @@ Microsoft Defender 防病毒尝试下载和配置脱机防病毒时遇到错误�
 说明:
 </td>
 <td >
-对操作系统的支持已过期。 在Microsoft Defender 防病毒操作系统上运行非支持操作系统不是防止威胁的足够解决方案。
+对操作系统的支持已过期。 在Microsoft Defender 防病毒操作系统上运行应用程序不是防止威胁的足够解决方案。
 </td>
 </tr>
 <tr>
@@ -2197,8 +2197,8 @@ Microsoft Defender 防病毒 Real-Time保护功能遇到错误并失败。
 用户操作：
 </td>
 <td >
-应重新启动系统，然后运行完全扫描，&#39;系统可能一段时间未受保护。
-Microsoft Defender 防病毒客户端&#39;实时保护功能遇到错误，因为其中一个服务无法启动。 如果后跟 3007 事件 ID，则失败是临时性的，并且反恶意软件客户端从故障中恢复。 
+应重新启动系统，然后运行完整扫描，&#39;系统可能一段时间未受保护。
+客户端Microsoft Defender 防病毒&#39;实时保护功能遇到错误，因为其中一个服务无法启动。 如果后跟 3007 事件 ID，则失败是临时性的，并且反恶意软件客户端从故障中恢复。 
 </td>
 </tr>
 <tr>
@@ -2554,7 +2554,7 @@ Microsoft Defender 防病毒病毒扫描处于禁用状态。
 说明:
 </td>
 <td >
-Microsoft Defender 防病毒已进入宽限期并且即将到期。 过期后，此计划将禁用对病毒、间谍软件和其他可能不需要的软件的保护。
+Microsoft Defender 防病毒已进入宽限期并且即将过期。 过期后，此计划将禁用对病毒、间谍软件和其他可能不需要的软件的保护。
 <dl>
 <dt>过期原因：Microsoft Defender 防病毒过期的原因。</dt>
 <dt>到期日期：Microsoft Defender 防病毒到期日期。</dt>
@@ -2584,7 +2584,7 @@ Microsoft Defender 防病毒已进入宽限期并且即将到期。 过期后，
 说明:
 </td>
 <td >
-Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其他可能不需要的软件的保护处于禁用状态。
+Microsoft Defender 防病毒宽限期已到期。 对病毒、间谍软件和其他可能不需要的软件的保护处于禁用状态。
 <dl>
 <dt>过期原因：</dt>
 <dt>到期日期： </dt>
@@ -2598,7 +2598,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <a id="error-codes"></a>
 ##Microsoft Defender 防病毒客户端错误代码 如果Microsoft Defender 防病毒遇到任何问题，它通常会提供一个错误代码来帮助你解决问题。 最常见的错误意味着安装更新时出现问题。
 本节提供有关客户端错误的Microsoft Defender 防病毒信息。
--   错误代码 -   有关现在要执行哪些操作的建议 -   错误的可能原因
+-   错误代码 -   错误建议 -   现在要执行哪些操作的可能原因
 
 使用这些表中的信息帮助排查错误Microsoft Defender 防病毒错误代码。
 
@@ -2608,7 +2608,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <th colspan="2">错误代码：0x80508007</th>
 </tr>
 <tr>
-<td>消息</td>
+<td>邮件</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2634,7 +2634,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 </tr>
 <tr>
 <th colspan="2">错误代码：0x8050800C</th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2643,7 +2643,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 </tr><tr><td>解决方案</td><td>
 <ol>
 <li>更新定义。 任一：<ol>
-<li>单击"<b>更新"</b>选项卡上的"更新<b></b>定义"Microsoft Defender 防病毒。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>或者，
+<li>单击"<b>更新"选项卡</b>上的<b>"</b>更新定义"Microsoft Defender 防病毒。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>或者，
 </li>
 <li>从网站 下载Microsoft 安全智能<a href="https://aka.ms/wdsi">定义</a>。
 注意：从网站下载的定义文件的大小可能超过 60 MB，不应用作更新定义的长期解决方案。
@@ -2658,7 +2658,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 </tr>
 <tr>
 <th colspan="2">错误代码：0x80508020</th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2668,7 +2668,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x805080211
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2678,7 +2678,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508022
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2689,7 +2689,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2703,7 +2703,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508024 </th></tr>
 <tr>
-<td>消息</td>
+<td>邮件</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2717,7 +2717,7 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508025
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2728,19 +2728,19 @@ Microsoft Defender 防病毒宽限期已过期。 对病毒、间谍软件和其
 <tr>
 <th colspan="2">错误代码：0x80508026
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
 此错误指示可能不支持在容器类型内删除。 
 </td></tr><tr><td>解决方案</td><td>
-Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考虑手动删除检测到的资源。 
+Microsoft Defender 防病毒无法修正在存档中检测到的威胁。 请考虑手动删除检测到的资源。 
 </td>
 </tr>
 <tr>
 <th colspan="2">错误代码：0x80508027
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2752,7 +2752,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508029
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2764,7 +2764,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508030
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>可能的原因</td>
 <td>
@@ -2776,7 +2776,7 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 <tr>
 <th colspan="2">错误代码：0x80508031
 </th>
-</tr><tr><td>消息</td>
+</tr><tr><td>邮件</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>可能的原因</td>
 <td>

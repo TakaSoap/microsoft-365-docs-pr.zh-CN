@@ -14,19 +14,19 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: edebf145a754d58e4650492eefa6d67276127afb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 91743eb7184e340deac15c10412833f2d8060866
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574744"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863625"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex采用：入门
 
-将企业提供的智能内容服务SharePoint Syntex三个部分：
+将网站中提供的智能内容服务SharePoint Syntex三个部分：
 
 - **内容了解：** 创建无代码 AI 模型以对内容进行分类和提取信息，以自动应用元数据进行知识发现和重用。 了解有关内容 [理解的更多信息](document-understanding-overview.md)。
-- **内容处理：** 自动捕获、获取和分类内容，并简化使用内容Power Automate。 详细了解内容 [处理](form-processing-overview.md)。
+- **内容处理：** 自动捕获、获取和分类内容，并简化使用 Power Automate 以内容为中心的Power Automate。 详细了解内容 [处理](form-processing-overview.md)。
 - **内容合规性：** 控制和管理内容，以改进安全性和管理，并集成Microsoft 信息保护。
 
 借助新的 AI 服务和功能，你可以直接将内容理解和分类应用构建到内容管理流中，SharePoint Syntex。 有两种不同的内容理解方式。 使用的模型类型基于文件格式和用例：
@@ -40,16 +40,16 @@ ms.locfileid: "58574744"
 | 仅限于单个库。 | 可应用于多个库。 |
 | 培训 PDF、JPG、PNG 格式，总计 50 MB/500 pp。 | 培训 5-10 个 PDF、Office 或电子邮件文件，包括反面例子。 |
 
-有关功能的更完整比较，请参阅文档理解与 [表单处理模型的区别](difference-between-document-understanding-and-form-processing-model.md)。
+有关功能的更完整比较，请参阅文档理解与表单 [处理模型的区别](difference-between-document-understanding-and-form-processing-model.md)。
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>确定要优化的试点业务方案
 
-若要准备在SharePoint Syntex中使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方来构建组织。 下面是一些文档理解可帮助您的组织的方案：
+要准备在SharePoint Syntex中使用应用程序，首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方来构建组织。 下面是一些文档理解可帮助您的组织的方案：
 
 - **内容处理：** 处理合同、工作声明和其他类似表单的文档。 输入表单，训练模型以了解和映射字段，然后运行表单以自动收集数据。 有关详细信息，请参阅表单 [处理概述](form-processing-overview.md)。
 - **发票分析：** 从发票中拉出相关详细信息，并确保它们符合策略或正在适当处理。
 
-考虑一下SharePoint Syntex组织的方式：
+考虑一下SharePoint Syntex组织有所帮助的方法：
 
 - 自动化业务流程
 - 提高搜索准确度
@@ -73,8 +73,8 @@ ms.locfileid: "58574744"
 | SharePoint/知识管理员 | Power 平台管理员 | 知识经理 | 模型所有者 |
 |:-------|:-------|:-------|:-------|
 | AAD 角色| AAD 角色 | AAD 角色 | 支持者 |
-| 配置表单处理 | 配置用于表单处理的常见数据服务环境 | 收集用例 | 收集业务用例 |
-| 管理内容中心和权限| 购买和分配 AIB 信用 | 建立最佳做法并查看模型分析 | 创建和应用模型 |
+| 配置表单处理 | 配置 Dataverse 环境以用于表单处理 | 收集用例 | 收集业务用例 |
+| 管理内容中心和权限| 购买和分配 AIB 信用额度 | 建立最佳做法并查看模型分析 | 创建和应用模型 |
 
 知识管理器、业务流程所有者和内容模型所有者在组织中创建示例模型和采用者。
 可能涉及的其他人：合规性管理员、分类管理员。
@@ -103,16 +103,16 @@ ms.locfileid: "58574744"
 
 |角色 |责任 |部门 |
 |:-------|:-------|:--------|
-| 执行发起 (计划)    | 向公司传达高级别愿景和价值   |  行政领导   |
+| 执行发起 ()    | 向公司传达高级别愿景和价值   |  行政领导   |
 | Project潜在客户 ()  | 监督整个启动执行和推广流程 | 项目管理 |
 | 知识管理员| 创建和管理内容中心 | IT 或其他部门|
 | 内容管理者和模型所有者| 收集用例并创建和应用模型 | 任何部门|
 | 支持者 | 帮助宣传和管理异议处理 | 任何部门（员工） |
 | 租户管理员 | 配置租户级别设置 | IT 部门|
-| Power 平台管理员| 配置通用数据服务环境 | IT 部门|
+| Power 平台管理员| 配置 Dataverse 环境 | IT 部门|
 
-> [!Note]
-> 尽管我们建议在部署过程中完成其中每个角色，但你可能会发现，你无需所有角色都开始使用你确定的解决方案。
+> [!NOTE]
+> 尽管我们建议在部署过程中完成其中每个角色，但你可能会发现，你无需全部开始使用你确定的解决方案。
 
 ## <a name="readiness-checklist"></a>准备情况清单
 

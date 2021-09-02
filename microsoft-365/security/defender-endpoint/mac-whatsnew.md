@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f2b4c7fc980c0a5ad12e9a8570942c3c81044672
-ms.sourcegitcommit: 5566455f1872dba23cc571281609258740842e8e
+ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58385915"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863721"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -36,7 +36,12 @@ ms.locfileid: "58385915"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
 > [!IMPORTANT]
-> 在 macOS 11 (Big Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
+> 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
+
+## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0) 
+
+- M1 芯片本机支持
+- Bug 修复&性能改进
 
 ## <a name="1013797-20121062137970"></a>101.37.97 (20.121062.13797.0) 
 
@@ -53,7 +58,7 @@ ms.locfileid: "58385915"
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0) 
 
 - [macOS 的设备](mac-device-control-overview.md) 控件现已一般可用
-- 解决了无法从 macOS 11 上的"大 Sur"菜单 (快速扫描) 
+- 解决了无法从 macOS 11 ("大 Sur"菜单上启动快速) 
 - 其他 Bug 修复
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0) 
@@ -66,7 +71,7 @@ ms.locfileid: "58385915"
 - `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
   - `--sort`：按扫描的文件总数对输出进行降序排序
   - `--top N`：显示前 N 个 (仅在还指定了 `--sort` 值时) 
-- 性能改进 (在将一些 BUG 修复) &使用时的性能改进
+- 性能改进 (功能专门用于在 BUG 修复) &使用时
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 
@@ -75,7 +80,7 @@ ms.locfileid: "58385915"
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
 - macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 性能改进 (专为使用 XCode 模拟器应用修复错误) &的情况。
+- 性能改进 (XCode 模拟器应用用于修复错误) &的情况。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 
@@ -105,12 +110,12 @@ ms.locfileid: "58385915"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0) 
 
 - 改进了在 macOS 11 Big Sur 上运行的代理的可靠性
-- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
+- 新增了命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
 - Bug 修复&性能改进
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0) 
 
-- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大) 清单到内核内核错误时的条件
+- 删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件
 - 修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) 
 - Bug 修复
 
@@ -216,7 +221,7 @@ ms.locfileid: "58385915"
 
 ## <a name="1008373"></a>100.83.73
 
-- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止威胁操作[的控制](mac-preferences.md#disallowed-threat-actions)
+- 为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)
 - 当设备上未启用"完全磁盘访问"时，现在状态菜单中将显示一条警告
 - Bug 修复&性能改进
 
@@ -246,7 +251,7 @@ ms.locfileid: "58385915"
 
 ## <a name="1007099"></a>100.70.99
 
-- 解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。 此个别问题是由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以寻找威胁导致的，导致升级序列失败。
+- 解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。 此个别问题是由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以发现威胁导致的，导致升级序列失败。
 
 ## <a name="1006899"></a>100.68.99
 
@@ -258,7 +263,7 @@ ms.locfileid: "58385915"
 - 增加了对 macOS 加泰罗尼亚语的支持
 
   > [!CAUTION]
-  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
+  > macOS 10.15 (加泰罗尼亚语) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序在未经明确同意 (无法访问磁盘上的某些位置，如文档、下载、桌面) 等。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
   >
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >

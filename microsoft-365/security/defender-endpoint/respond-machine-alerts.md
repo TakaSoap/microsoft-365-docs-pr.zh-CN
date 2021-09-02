@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3f9fa5c6595a9a73111bb86699271cd5b930aa
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: 9d0286ec03c6cde7aa8129d030b65271e9c78677
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823680"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863370"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -57,8 +57,8 @@ ms.locfileid: "58823680"
 
 > [!IMPORTANT]
 >
-> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。
-> - 对于非Windows平台， (如设备隔离) 依赖于第三方功能。
+> - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本以及 Windows Server 2019 上的设备。
+> - 对于非Windows平台， (设备隔离) 依赖于第三方功能。
 > - 对于 Microsoft 第一方代理，请参阅每个功能下的"详细信息"链接，了解最低操作系统要求。
 
 ## <a name="manage-tags"></a>管理标签
@@ -113,19 +113,19 @@ ms.locfileid: "58823680"
 
 |Folder|说明|
 |:---|:---------|
-|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助确定攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
+|自动运行|包含一组文件，每个文件分别表示已知自动启动入口点 (ASEP) 的注册表内容，以帮助识别攻击者在设备上是否具有持久性。 <p> <div class="alert"><b>注意：</b> 如果找不到注册表项，则文件将包含以下消息："错误：系统无法找到指定的注册表项或值。"<div>|
 |已安装的程序|此.CSV文件包含已安装的程序的列表，这些程序可帮助确定设备上当前安装的内容。 有关详细信息，请参阅Win32_Product [类](https://go.microsoft.com/fwlink/?linkid=841509)。|
-|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前的地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul>|
+|网络连接|此文件夹包含一组与连接信息相关的数据点，可帮助识别与可疑 URL 的连接、攻击者的命令和控制 (C&C) 基础结构、任何横向移动或远程连接。 <ul><li>ActiveNetConnections.txt：显示协议统计信息和当前的 TCP/IP 网络连接。 提供查找进程建立可疑连接的能力。</li><li>Arp.txt：在所有接口的缓存表中 (ARP) 当前地址解析协议。 ARP 缓存可以显示网络上已受到威胁的其他主机或网络上可能用于运行内部攻击的可疑系统。</il><li>DnsCache.txt：显示 DNS 客户端解析程序缓存的内容，该缓存包括从本地 Hosts 文件预加载的条目和最近为计算机解析的名称查询获取的任何资源记录。 这有助于识别可疑连接。</li><li>IpConfig.txt：显示所有适配器的完整 TCP/IP 配置。 适配器可以表示物理接口（如已安装的网络适配器）或逻辑接口（如拨号连接）。</li><li>FirewallExecutionLog.txt和 pfirewall.log</li></ul>|
 |预取文件|Windows预取文件旨在加快应用程序启动过程。 它可用于跟踪系统中最近使用的所有文件，并查找可能已删除但仍可在预取文件列表中找到的应用程序的跟踪。 <ul><li>预取文件夹：包含 中的预取文件的副本 `%SystemRoot%\Prefetch` 。 注意：建议下载预取文件查看器以查看预取文件。</li><li>PrefetchFilesList.txt：包含所有复制文件的列表，这些文件可用于跟踪预取文件夹是否有复制失败。</li></ul>|
 |进程|包含一.CSV一个列出正在运行的进程的文件，该文件提供识别设备上运行的当前进程的能力。 在标识可疑进程及其状态时，这非常有用。|
 |计划任务|包含一.CSV列出计划任务的文件，可用于标识在所选设备上自动执行的例程，以查找已设置为自动运行的可疑代码。|
 |安全事件日志|包含安全事件日志，其中包含登录或注销活动的记录，或者由系统的审核策略指定的其他与安全相关的事件。 <p><div class="alert"><b>注意：</b> 使用事件查看器日志文件事件视图。</div>|
 |服务|包含一.CSV服务及其状态的列表文件。|
-|WindowsSMB 会话 (服务器) 块|列出对文件、打印机和串行端口的共享访问以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
+|WindowsSMB 会话 (服务器) 块|列出对文件、打印机和串行端口的共享访问，以及网络上节点之间的其他通信。 这可以帮助识别数据外排或横向移动。 <p> 包含 SMBInboundSessions 和 SMBOutboundSession 的文件。 <p> <div class="alert"><b>注意：</b> 如果入站或出站 (会话) ，您将获得一个文本文件，告知您未找到 SMB 会话。</div>|
 |系统信息|包含一SystemInformation.txt列出系统信息（如操作系统版本和网络卡）的文件。|
 |临时目录|包含一组文本文件，其中列出了系统中每个用户位于 %Temp% 中的文件。 <p> 这可以帮助跟踪攻击者可能丢弃在系统上的可疑文件。 <p> <div class="alert"><b>注意：</b> 如果文件包含以下消息："系统找不到指定的路径"，这意味着此用户没有临时目录，可能是因为用户未登录到系统。</div>|
 |用户和组|提供每个表示一个组及其成员的文件的列表。|
-|WdSupportLogs|提供MpCmdRunLog.txt和MPSupportFiles.cab  <p> <div class="alert"><b>注意：</b>只有在安装了 2020 年 2 月更新汇总Windows 10版本 1709 或更高版本上，才能创建此文件夹： <ul><li>Win10 1709 (RS3) 版本 16299.1717：KB4537816 [](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) 内部版本 17134.1345：KB4537795 [](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) 内部版本 17763.1075：KB4537818 [](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) 内部版本 18362.693 和 [18363.693：KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
+|WdSupportLogs|提供MpCmdRunLog.txt和MPSupportFiles.cab  <p> <div class="alert"><b>注意：</b>只有在安装了 2020 年 2 月更新汇总Windows 10版本 1709 或更高版本上，才能创建此文件夹： <ul><li>Win10 1709 (RS3) 内部版本 16299.1717：KB4537816 [](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) 版本 17134.1345：KB4537795 [](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) 内部版本 17763.1075：KB4537818 [](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) 内部版本 18362.693 和 [18363.693：KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|此文件是调查包集合的摘要，它包含数据点列表、用于提取数据的命令、执行状态以及失败时的错误代码。 可以使用此报告跟踪程序包是否包含所有预期数据，并确定是否有错误。|
 |
 
@@ -138,7 +138,7 @@ ms.locfileid: "58823680"
 > - 此操作适用于版本 1709 Windows 10版本上的设备。
 > - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
-选择"运行 **防病毒** 扫描"之一，选择要快速或完整 (运行的扫描类型) 在确认扫描之前添加注释。
+选择"运行 **防病毒** 扫描"之一，选择要快速或完整 (运行扫描类型，) 确认扫描前添加注释。
 
 ![用于选择快速扫描或完全扫描并添加注释的通知的图像。](images/run-antivirus.png)
 
@@ -182,9 +182,9 @@ ms.locfileid: "58823680"
 
 > [!IMPORTANT]
 >
-> - 完全隔离适用于版本 1703 Windows 10上的设备。
-> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
-> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender 终结点使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
+> - 完全隔离适用于 Windows 10 1703 和 Windows Server 2019 上的设备。
+> - 选择性隔离适用于 Windows 10 版本 1709 或更高版本以及 Windows Server 2019 的设备。
+> - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 此设备隔离功能断开受损设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接，该服务将继续监视设备。
 
@@ -198,7 +198,7 @@ ms.locfileid: "58823680"
 ![隔离设备的图像。](images/isolate-device.png)
 
 > [!NOTE]
-> 设备将保持与 Defender for Endpoint 服务连接，即使它与网络隔离。 如果你已选择启用Outlook和Skype for Business通信，则你将能够在设备隔离时与用户通信。
+> 设备将保持与 Defender for Endpoint 服务连接，即使它与网络隔离。 如果你已选择启用 Outlook 和 Skype for Business 通信，则你将能够在设备隔离时与用户通信。
 
 ### <a name="notification-on-device-user"></a>有关设备用户的通知
 

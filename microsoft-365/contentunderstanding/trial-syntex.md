@@ -14,17 +14,17 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-description: 了解如何在组织中计划和运行SharePoint Syntex试点计划。
-ms.openlocfilehash: 490952d0bf1ba4d6fb61a7199a8c08170ff4476159a8c2665c4e39638ab5865e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在组织中计划和运行SharePoint Syntex试用计划。
+ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899627"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863673"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>运行 Microsoft SharePoint Syntex
 
-本文介绍如何设置和运行试用计划，以在SharePoint Syntex部署部署。 它还建议试用的最佳实践。
+本文介绍如何设置和运行试用计划以在组织中SharePoint Syntex部署。 它还建议试用的最佳实践。
 
 ## <a name="sign-up-for-a-trial"></a>注册试用版
 
@@ -39,7 +39,7 @@ ms.locfileid: "53899627"
 
 - The [Microsoft 365 管理中心](https://admin.microsoft.com)
     1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
-    2. 转到计费  >  **购买服务**。
+    2. 转到帐单  >  **购买服务**。
     3. 向下滚动到“**加载项**”部分。
     4. 在"SharePoint Syntex磁贴上，选择"详细信息 **"。**
     5. 选择“**获取免费试用版**”。
@@ -67,10 +67,10 @@ ms.locfileid: "53899627"
 若要在生产租户上最大化试用版的价值，规划和业务参与至关重要。 您应参与一个或多个业务领域，以确定三到六个用例，这些用例可能会由 SharePoint Syntex。 这些用例应：
 
 - 包括可以通过表单处理或文档理解模型解决的方案。
-- 明确了解任何提取的元数据的用途;例如，通过使用设置视图格式或实现Power Automate。 尽管SharePoint Syntex文档分类和提取元数据，但要量化的值是此元数据所支持的值。
-- 基于定义的一组数据;例如，特定SharePoint或库。 一个SharePoint Syntex一点就是，通用模型可以应用于所有组织内容。 更准确的视图是构建模型以帮助解决目标位置的特定业务问题。
+- 明确了解任何提取的元数据的用途;例如，通过使用视图格式化或Power Automate。 尽管SharePoint Syntex文档分类和提取元数据，但要量化的值是此元数据所支持的值。
+- 基于定义的一组数据;例如，特定SharePoint或库。 一个SharePoint Syntex一点就是通用模型可以应用于所有组织内容。 更准确的视图是构建模型以帮助解决目标位置的特定业务问题。
 
-所有这些用例可能不适合SharePoint Syntex。 质量试用的目标并不证明SharePoint Syntex满足所有方案。 相反，该试用版应帮助你更好地了解产品的价值。
+所有这些用例可能不适合SharePoint Syntex。 质量试验的目标是不证明SharePoint Syntex满足所有方案。 相反，该试用版应帮助你更好地了解产品的价值。
 
 对于每个计划用例，确定作为相关内容或流程的主题专家的用户。 创建SharePoint Syntex模型侧重于内容中的域专家，而不是 IT 专业人员或开发人员资源。
 
@@ -98,7 +98,7 @@ ms.locfileid: "53899627"
 
 你可能必须估计表单处理的预期使用，并规划预期 AI 生成器信用额度。 有关帮助，请参阅 [估计适合你的 AI 生成器容量](https://powerapps.microsoft.com/ai-builder-calculator/)。
 
-### <a name="dont-proceed-to-production-use"></a>请勿继续生产使用
+### <a name="dont-proceed-to-production-use"></a>不要继续生产使用
 
 如果你在试用后不购买许可证：
 
@@ -106,7 +106,7 @@ ms.locfileid: "53899627"
 - 运行模型的库将不再自动对文件或提取模型进行分类。
 - 任何以前已分类的文件或提取的元数据都不受影响。
 - 内容中心和任何文档理解模型不会自动删除。 如果你决定将来购买许可证，这些许可证将仍然可供使用。
-- 表单处理模型将存储在默认 Power Platform 环境的 common Data Services (CDS) 实例中。 这些可以与以后许可一SharePoint Syntex Power Platform 中的 AI 生成器功能一起使用。
+- 表单处理模型将存储在 Dataverse (以前称为 Common Data Service [CDS]) 默认 Power Platform 环境的实例中。 这些可以与将来许可一SharePoint Syntex Power Platform 中的 AI 生成器功能一起使用。
 
 ## <a name="see-also"></a>另请参阅
 

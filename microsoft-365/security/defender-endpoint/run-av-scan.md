@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ae3c72387b2617bc8fe88349272d27675af16a5
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.openlocfilehash: 77cbd23197b60c3a74c97cf2030f41c943741a1c
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349208"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863649"
 ---
 # <a name="run-antivirus-scan-api"></a>运行防病毒扫描 API
 
@@ -47,8 +47,8 @@ ms.locfileid: "58349208"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
-> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，无论 Microsoft Defender AV 是否是活动的防病毒解决方案。 Microsoft Defender AV 可以处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
+> - 此操作适用于版本 1709 Windows 10或更高版本上的设备。
+> - Microsoft Defender AV Microsoft Defender 防病毒 (扫描) 可以与其他防病毒解决方案一起运行，Microsoft Defender 防病毒是活动的防病毒解决方案。 Microsoft Defender 防病毒处于被动模式。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -56,13 +56,13 @@ ms.locfileid: "58349208"
 
 权限类型|权限|权限显示名称
 :---|:---|:---
-应用程序|Machine.Scan|"扫描计算机"
+应用|Machine.Scan|"扫描计算机"
 委派（工作或学校帐户）|Machine.Scan|"扫描计算机"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："活动修正操作" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："活动修正操作" (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求

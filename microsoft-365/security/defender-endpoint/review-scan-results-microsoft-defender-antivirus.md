@@ -1,6 +1,6 @@
 ---
-title: 查看 Microsoft Defender AV 扫描的结果
-description: 使用应用、应用Microsoft Endpoint Configuration Manager、Microsoft Intune或Windows 安全中心扫描结果
+title: 查看扫描Microsoft Defender 防病毒结果
+description: 使用应用、Microsoft Endpoint Configuration Manager、Microsoft Intune或Windows 安全中心扫描结果
 keywords: 扫描结果， 修正， 完全扫描， 快速扫描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d23d2c7f0d6fc12a3365d1c4f50d37384f5ca349
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ec4505de586b042db48e579ee50d83315ee9b470
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561262"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863865"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
