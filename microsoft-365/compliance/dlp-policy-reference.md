@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: DLP 策略组件和配置参考
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: daae280fa4c08a47f74cec6a71ec11ac9739ebd6
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: 51eac7b05edeccece3cf45a8396493d84dc3e11f
+ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684108"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866663"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>数据丢失防护策略参考
 
 DLP 策略 (数据丢失) 有很多可配置的组件。 为了创建有效的策略，您需要了解每个组件的用途及其配置如何改变策略的行为。 本文提供了 DLP 策略的详细分析。
 
-### <a name="policy-templates"></a>策略模板 
+## <a name="policy-templates"></a>策略模板 
 
 DLP 策略模板分为四类：
 
@@ -39,7 +39,7 @@ DLP 策略模板分为四类：
 - 可检测和保护隐私信息 **类型的** 文件
 - **一** 个自定义模板，如果其他模板之一不满足组织需求，则可用于构建自己的策略。
 
-此表列出了所有策略模板及其涵盖的 (SIT) 类型。 
+此表列出了所有策略模板及其包含的 (SIT) 类型。 
 
 Current as of 6/23/2021
 
@@ -57,13 +57,13 @@ Current as of 6/23/2021
 |金融| 英国财务数据|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [欧盟借记卡号](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code)|
 |金融| 美国财务数据|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ABA 路由号码](sensitive-information-type-entity-definitions.md#aba-routing-number)|
 |金融| 美国联邦贸易委员会 (FTC) 消费者规则|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ABA 路由号码](sensitive-information-type-entity-definitions.md#aba-routing-number)|
-|金融| 美国格雷姆-格雷姆-拉雷法案 (GLBA) 增强版|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number) </br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number)|
-|金融| 格雷姆-里奇-比利雷法案 (GLBA)|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
+|金融| 美国格雷姆-格雷姆-格雷姆-格雷雷法案 (GLBA) 增强版|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number) </br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number)|
+|金融| 格雷姆-里奇-比利雷法案 (GLBA)|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |医疗和健康| 澳大利亚健康记录法案 (HRIP 法案) 增强 |- [澳大利亚税务文件编号](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [澳大利亚医疗帐号](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
 |医疗和健康| 澳大利亚健康记录法案（HRIP 法案）|- [澳大利亚税务文件编号](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [澳大利亚医疗帐号](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
 |医疗和健康| 加拿大健康信息法案 (HIA) |- [加拿大护照号码](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |医疗和健康| 加拿大个人健康信息法案 (法) 马尼托巴|- [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|医疗和健康| 加拿大《PHIPA (《加拿大个人) 法案》 |- [加拿大护照号码](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
+|医疗和健康| 加拿大《PHIPA 个人 (法》) On一 |- [加拿大护照号码](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [加拿大社会保险号码](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [加拿大卫生服务号码](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [加拿大个人健康标识号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |医疗和健康| 英国获取医疗报告法案|- [英国国家卫生服务号码](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [英国国家保险号码 (NINO) ](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
 |医疗和健康| 美国健康保险法案 (HIPAA) 增强|</br> - [ICD-9-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [ICD-10-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) |
 |医疗和健康| 美国健康保险法案 (HIPAA)| - [ICD-9-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [ICD-10-CM (国际) ](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
@@ -91,7 +91,7 @@ Current as of 6/23/2021
 |隐私| 英国个人信息在线行为守则 (PIOCP)|- [英国国家保险号码 (NINO) ](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [英国国家卫生服务号码](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [SWIFT 代码](sensitive-information-type-entity-definitions.md#swift-code)|
 |隐私| 增强美国爱国者法案|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |隐私| 美国爱国者法案|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|隐私| 美国个人身份信息 (PII) 数据增强|- [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
+|隐私| 美国个人身份信息 (个人身份) 增强的数据|- [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
 |隐私| 美国个人身份信息 (PII) 数据|- [ITIN 中美国个人纳税 (标识号) ](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
 |隐私| 增强的州泄露通知法律|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) </br> - [美国/英国护照号码](sensitive-information-type-entity-definitions.md#us--uk-passport-number)|
 |隐私| 美国国家违约通知法|- [信用卡号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [美国银行帐号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[美国驾驶证号码](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [SSN (美国社会保险) ](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
@@ -99,7 +99,7 @@ Current as of 6/23/2021
 
 
 
-### <a name="locations"></a>位置
+## <a name="locations"></a>位置
 
 <!--This section covers a mapping of data-at-rest, data-in-use, and data-in-motion to the locations/workloads. It introduces the idea that the options that are selected here have a direct impact on the UI that they will encounter further along in the policy creation/edit flow. It will also cover the dependencies between locations (eg. Teams chat and channel requires SharePoint and ODB). It will also include the impact of the different scope settings. eg. If you want the policy to be applied to DEF, but not HIJ, you should configure your include/exclude scopes like this......--> 
 
@@ -123,12 +123,12 @@ DLP 策略可以跨多个位置查找和保护包含敏感信息的项目。
 
 如果你选择包括或排除特定 OneDrive 帐户或组，则 DLP 策略可包含不超过 100 个用户帐户或 50 个组作为包含项或排除项。
 
-#### <a name="location-support-for-how-content-can-be-defined"></a>如何定义内容的位置支持
+### <a name="location-support-for-how-content-can-be-defined"></a>如何定义内容的位置支持
 
 DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹配来检测敏感项目。 每个位置都支持定义敏感内容的不同方法。 此外，在策略中组合位置时，定义内容方式可能会与单个位置定义内容不同。 
 
 > [!IMPORTANT]
-> 为策略选择多个位置时，内容定义类别的"否"值优先于"yes"值。 例如，当你仅选择SharePoint，该策略将支持通过一个或多个 SIT、敏感度标签或保留标签检测敏感项目。 但是，当你选择SharePoint站点 ***Teams*** 聊天和频道消息位置时，该策略将仅支持通过 SIT 检测敏感项目。 
+> 为策略选择多个位置时，内容定义类别的"否"值优先于"yes"值。 例如，当你仅选择SharePoint，该策略将支持通过一个或多个 SIT、敏感度标签或保留标签检测敏感项目。 但是，当你选择 ***SharePoint站点Teams*** 聊天和频道消息位置时，该策略将仅支持通过 SIT 检测敏感项目。 
 
 |位置|  内容可通过 SIT 定义|  内容可以定义敏感度标签|   内容可通过保留标签定义|
 |---------|---------|---------|---------|
@@ -145,7 +145,7 @@ DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹
 
 
 
-### <a name="rules"></a>规则
+## <a name="rules"></a>规则
 
 <!--This section introduces the classifications of content that, when detected, can be protected. Link out to [Learn about sensitive information types]() and [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) as well as labels (cross referenced by supporting workload). It will touch on the purpose of multiple conditions, confidence levels (link out to [more on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)) and confidence levels video. How to use the confidence level to change the behavior of a policy in conjunction with the instance count.  eg. if you want your policy to trigger when it encounters situation DEF, set your conditions like HIJ.-->
 <!--
@@ -167,7 +167,7 @@ DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹
 
  策略包含一个或多个规则。 规则按顺序执行，从每个策略中优先级最高的规则开始。
 
-#### <a name="the-priority-by-which-rules-are-processed"></a>处理规则的优先级
+### <a name="the-priority-by-which-rules-are-processed"></a>处理规则的优先级
 
 每个规则都按其创建顺序分配一个优先级，这意味着创建的规则首先具有第一个优先级，第二个创建的规则具有第二个优先级，依此类比。 
   
@@ -188,16 +188,16 @@ DLP 策略通过将其与敏感信息类型（SIT (、) 或保留标签）相匹
   
 ![图表显示了 DLP 策略包含位置和规则](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
-#### <a name="conditions"></a>条件
+### <a name="conditions"></a>条件
 
 条件包含其中，定义规则要查找的条件以及使用这些项目的上下文。 它们告知规则&#8212;当你找到如下所示且正在像这种项目一样使用的项目时&#8212;它是一个匹配项，并且应该对它执行策略中的其余操作。 你可以使用条件向不同的风险级别分配不同操作。 例如，相较与组织外部人员共享的敏感信息，可在内部共享的敏感内容的风险更低、需要执行的操作更少。
 
 > [!NOTE]
 > 在主体组织的 Active Directory 或 Azure Active Directory 租户中具有非来宾帐户的用户是否被视为该组织内部人员。 
 
-##### <a name="content-contains"></a>内容包含
+#### <a name="content-contains"></a>内容包含
 
- 所有位置均支持 **"内容包含"** 条件。 可以选择每个内容类型的多个实例，然后使用以下任一逻辑或 (或) 或以下所有 (逻辑 AND) 条件： 
+ 所有位置均支持 **"内容包含"** 条件。 可以选择每种内容类型的多个实例，然后使用以下任一逻辑或 (OR ) 或所有这些 (逻辑 AND) 条件： 
 
 - [敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [敏感度标签](sensitivity-labels.md)
@@ -209,11 +209,11 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
 
 该规则将仅查找是否存在你选取的任何 **敏感度** 标签 **和保留** 标签。 
 
-##### <a name="condition-context"></a>条件上下文
+#### <a name="condition-context"></a>条件上下文
 
 可用上下文选项根据你选择的位置而更改。 如果选择多个位置，则只有这些位置具有的条件才可用。
 
-###### <a name="conditions-exchange-supports"></a>支持Exchange条件：
+##### <a name="conditions-exchange-supports"></a>支持Exchange条件：
 
 - 内容包含
 - 内容从网站Microsoft 365
@@ -255,42 +255,42 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
 - 邮件类型为
 - 邮件重要性为
 
-###### <a name="conditions-sharepoint-supports"></a>支持SharePoint条件
+##### <a name="conditions-sharepoint-supports"></a>支持SharePoint条件
  
 - 内容包含
 - 内容从网站Microsoft 365
 - 文件扩展名为
 - 文档属性为
 
-###### <a name="conditions-onedrive-accounts-supports"></a>帐户OneDrive条件
+##### <a name="conditions-onedrive-accounts-supports"></a>帐户OneDrive条件
 
 - 内容包含
 - 内容从网站Microsoft 365
 - 文件扩展名为
 - 文档属性为
 
-###### <a name="conditions-teams-chat-and-channel-messages-support"></a>聊天Teams消息支持的条件
+##### <a name="conditions-teams-chat-and-channel-messages-support"></a>聊天Teams消息支持的条件
 
 - 内容包含
 - 内容从网站Microsoft 365
 
-###### <a name="conditions-devices-supports"></a>设备支持的条件
+##### <a name="conditions-devices-supports"></a>设备支持的条件
 
 - 内容包含
 - 请参阅 [可以监视并采取措施的终结点活动](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-###### <a name="conditions-microsoft-cloud-app-security-support"></a>支持Microsoft Cloud App Security条件
+##### <a name="conditions-microsoft-cloud-app-security-support"></a>支持Microsoft Cloud App Security条件
 
 - 内容包含
 - 内容从网站Microsoft 365
 
-###### <a name="on-premises-repositories"></a>本地存储库
+##### <a name="on-premises-repositories"></a>本地存储库
 
 - 内容包含
 - 文件扩展名为
 - 文档属性为
 
-##### <a name="condition-groups"></a>条件组
+#### <a name="condition-groups"></a>条件组
 
 有时，你需要一个规则来仅标识一个内容，如包含美国社会保险号（由单个 SIT 定义）的所有内容。 但在许多方案中，您尝试标识的项目类型更为复杂，因此难以定义，因此需要更灵活地定义条件。
 
@@ -302,7 +302,7 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
     
 - 更难以标识的内容，例如有关患者护理的通信，或者提供的医疗服务说明。 识别此内容需要匹配极庞大的关键字列表中的关键字，如国际疾病分类（ICD-9-CM 或 ICD-10-CM）。
     
-可以通过对条件进行分组，以及使用逻辑运算符在组 (AND 或 OR) 标识此类型的数据。
+可以通过对条件进行分组，以及使用逻辑运算符在组 (AND 或 OR) 标识此类数据。
     
 对于 **美国健康保险法案 (HIPPA) ，** 条件按如下所示进行分组：
 
@@ -310,9 +310,9 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
 
 第一个组包含标识和个人的 SIT，第二个组包含识别医疗诊断的 SIT。
 
-#### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>例外
 
-在规则中，例外定义用于从策略中排除项目的条件。 逻辑上，在包含条件和上下文之后评估的独占条件。 它们告知规则&#8212;当你找到如下所示且正在被用作匹配项的项时，它们告知规则规则，并且策略中的其余操作应该对它执行，除非 ***...***&#8212; 
+在规则中，例外定义用于从策略中排除项目的条件。 逻辑上，在包含条件和上下文之后评估的独占条件。 它们告知规则&#8212;当你找到如下所示且正在被用作匹配项的项目时，它们告知规则规则，并且策略中的其余操作应该对它执行，除非 ***...***&#8212; 
 
 例如，为了遵守 HIPPA 策略，我们可以修改规则以排除包含比利时驾驶证号码的任何项目，如下所示：
 
@@ -328,7 +328,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 
 - **除非内容** 包含 
 
-#### <a name="actions"></a>操作 
+### <a name="actions"></a>操作 
 
 通过包含 ***条件** _ 和独占例外筛选器 _**_ 的任何项都将具有在应用于 _**_ 它的规则中定义的任何操作。 您必须配置支持该操作所需的选项。 例如，如果您选择"Exchange限制访问"或加密"Microsoft 365 *位置** 操作，则需要从以下选项中进行选择：
 
@@ -342,7 +342,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 > [!IMPORTANT]
 > For SharePoint Online and OneDrive for Business locations documents will be proactively blocked right after detection of sensitive information， whether whether the document is shared or not， for all external users， while internal users will continue to have access to the document.
 
-##### <a name="exchange-location-actions"></a>Exchange位置操作：
+#### <a name="exchange-location-actions"></a>Exchange位置操作：
 
 - 限制对内容的访问或加密Microsoft 365位置
 - 设置标头
@@ -358,37 +358,37 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 - Prepend Email Subject
 - 添加 HTML 免责声明
 
-##### <a name="sharepoint-sites-location-actions"></a>SharePoint网站位置操作：
+#### <a name="sharepoint-sites-location-actions"></a>SharePoint网站位置操作：
 
 - 限制对内容的访问或加密Microsoft 365位置
 
-##### <a name="onedrive-account-locations"></a>OneDrive帐户位置：
+#### <a name="onedrive-account-locations"></a>OneDrive帐户位置：
 
 - 限制对内容的访问或加密Microsoft 365位置
 
-##### <a name="teams-chat-and-channel-messages"></a>Teams聊天和频道消息
+#### <a name="teams-chat-and-channel-messages"></a>Teams聊天和频道消息
 
 - 限制对内容的访问或加密Microsoft 365位置
 
-##### <a name="devices"></a>设备：
+#### <a name="devices"></a>设备：
 
-- 审核或限制设备上Windows活动
+- 审核或限制Windows活动
 
 > [!NOTE]
 > 设备提供 **审核活动、****阻止** 活动或阻止 **替代活动** 的选项。
 
 设备位置提供了许多子活动， (条件和) 操作。 若要了解更多信息，请参阅 [终结点活动，你可以监视和采取操作](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)。 
 
-##### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security：
+#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security：
 
 - 限制对内容的访问或加密Microsoft 365位置
 - 限制第三方应用
 
-##### <a name="on-premises-repositories"></a>本地存储库：
+#### <a name="on-premises-repositories"></a>本地存储库：
 
 - 限制访问或删除本地文件
 
-##### <a name="actions-available-when-you-combine-locations"></a>组合位置时可用的操作
+#### <a name="actions-available-when-you-combine-locations"></a>组合位置时可用的操作
 
 如果选择"Exchange和要应用的策略的其他任何单个位置，则
 
@@ -410,15 +410,15 @@ AND
 
 操作将可用。
 
-例如，如果选择"Exchange"和"设备"作为位置，则这些操作将可用：
+例如，如果选择"Exchange设备"作为位置，则这些操作将可用：
 
 - 限制对内容的访问或加密Microsoft 365位置
-- 审核或限制设备上Windows活动
+- 审核或限制Windows活动
 
 如果选择"设备和Microsoft Cloud App Security，这些操作将可用：
 
 - 限制对内容的访问或加密Microsoft 365位置
-- 审核或限制设备上Windows活动
+- 审核或限制Windows活动
 - 限制第三方应用
 
 操作是否生效取决于配置策略模式的方式。 你可以选择在测试模式下运行策略，也可以不显示策略提示，选择"先 **测试它"选项** 。 选择创建策略后 1 小时即可运行该策略，选择"马上启用"选项，也可以选择仅保存它，稍后通过选择"将其关闭"选项返回到该策略。  
@@ -427,7 +427,7 @@ AND
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
 
-#### <a name="user-notifications-and-policy-tips"></a>用户通知和策略提示
+### <a name="user-notifications-and-policy-tips"></a>用户通知和策略提示
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
@@ -440,7 +440,7 @@ for where they are used/expected behavior-->
 
 当用户在符合规则的条件和例外的上下文中尝试对敏感项目执行某个操作时，可以通过用户通知电子邮件和上下文策略提示弹出窗口让他们了解相关操作。 这些通知非常有用，因为它们可以提高认知度并帮助用户了解组织的 DLP 策略。 
 
-例如，Excel包含个人身份信息OneDrive for Business PII (且与外部用户共享的) 工作簿等内容。
+例如，Excel网站上包含个人身份信息OneDrive for Business PII (且与外部用户共享的) 工作簿等内容。
 
 ![消息栏在 Excel 2016 中显示策略提示](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -459,7 +459,7 @@ for where they are used/expected behavior-->
 
 
 你可以为各种 Microsoft 应用启用/禁用用户通知，请参阅数据丢失 [防护策略提示参考](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- 你可以启用/禁用 **使用策略Office 365通知服务中的用户。
+- 你可以启用/禁用 **使用策略Office 365通知用户。
     - 向已修改内容或已共享或上次修改内容的用户发送电子邮件通知
     - 通知特定人员
 
@@ -467,7 +467,7 @@ for where they are used/expected behavior-->
 
 ![用户通知和策略提示配置选项，可用于 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及 MCAS](../media/dlp-user-notification-non-devices.png)
 
-如果选择了"仅设备"，你将获得可用于 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及 MCAS 的所有相同选项，以及自定义 Windows 10 设备上显示的通知标题和内容的选项。
+如果你仅选择了"设备"，你将获得可用于 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及 MCAS 的所有相同选项，以及自定义 Windows 10 设备上显示的通知标题和内容的选项。
 
 ![适用于设备的用户通知和策略提示配置选项](../media/dlp-user-notification-devices.png)  
 
@@ -505,9 +505,9 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
-#### <a name="user-overrides"></a>用户替代
+### <a name="user-overrides"></a>用户替代
 
-用户替代的目的是为用户提供一种以理由绕过对 Exchange、SharePoint、OneDrive 或 Teams 中敏感项的 DLP 策略阻止操作的方法，以便他们可以继续工作。 只有在启用了策略提示Office 365 **通知** 服务中的用户时，用户替代才启用，因此用户覆盖与通知和策略提示一起提供。 
+用户替代的目的是为用户提供一种以理由绕过对 Exchange、SharePoint、OneDrive 或 Teams 中敏感项的 DLP 策略阻止操作的方法，以便他们可以继续工作。 只有在启用了策略提示Office 365通知服务中的用户时，用户替代才启用，因此用户替代与通知和策略提示一起提供。 
 
 ![DLP 策略的用户替代选项](../media/dlp-user-overrides.png)
 
@@ -526,7 +526,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 - [查看用户提交的替代理由](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
 
-#### <a name="incident-reports"></a>事件报告
+### <a name="incident-reports"></a>事件报告
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
@@ -536,7 +536,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 当项目与规则相匹配时，可向合规负责人（或所选的任何人员）发送包含事件详情的事件报告。 此报告中的信息包括，匹配的项目的信息、与规则匹配的实际内容以及上次修改内容的人员的姓名。 对于电子邮件，报告还将与 DLP 策略匹配的原始邮件包含为附件。
 
-DLP 将事件信息Microsoft 365其他信息保护服务，如 Microsoft 365 中的[内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)。 为了向内部风险管理获取事件信息，必须将事件报告严重性级别设置为"高 **"。**
+DLP 将事件信息Microsoft 365其他信息保护服务，如 Microsoft 365 中的内部[风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)。 为了向内部风险管理获取事件信息，必须将事件报告严重性级别设置为"高 **"。**
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
@@ -546,7 +546,7 @@ DLP 将事件信息Microsoft 365其他信息保护服务，如 Microsoft 365 中
 
 DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
 
-#### <a name="additional-options"></a>其他选项
+### <a name="additional-options"></a>其他选项
 
 如果策略中有多个规则，可以使用"其他"选项控制进一步的规则处理（如果与正在编辑的规则匹配）以及设置规则评估的优先级。
 
