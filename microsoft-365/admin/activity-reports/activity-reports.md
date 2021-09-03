@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 2c3323466d79137251be1f8d9ee764b42b643bb1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 32a423073ec00a9e13e0e3669a9fbd1412b01a50
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565192"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862781"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -59,7 +59,9 @@ ms.locfileid: "58565192"
 
 ::: moniker-end
 
-2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png)。 
+2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。
+
+   :::image type="content" alt-text="使用情况仪表板" source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::。
 
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
@@ -73,8 +75,10 @@ ms.locfileid: "58565192"
     
 - Skype for Business 管理员
 
-- 全局读取者
-    
+- 全局读者（没有用户详细信息）
+
+- 使用情况摘要报告读取者（没有用户详细信息）
+
 - 报表阅读人员
 
 - Teams 服务管理员
@@ -147,21 +151,23 @@ ms.locfileid: "58565192"
 
 在某些情况下，新用户显示为“**未知**”。 这通常是由于创建用户配置文件时偶尔出现延迟。  
   
-## <a name="hide-user-details-in-the-reports"></a>隐藏报表中的用户详细信息
+## <a name="show-user-details-in-the-reports"></a>显示报表中的用户详细信息
 
-如果在生成报表时，想要隐藏用户级的信息，可以在管理中心中快速进行此更改。
-  
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和加载项</a>页面。
-
-2. 选择“**报表**”。 
-  
-3. 在“**报表**”窗格中，选择所需的选项，然后保存所做更改。
+报告提供有关组织的使用情况数据的信息。 默认情况下，报告显示包含用户、组和网站可识别名称的信息。 从 2021 年 9 月 1 开始，我们将默认隐藏所有报告的用户信息，以持续致力于帮助公司支持其本地隐私法律。
   
 你的用户列表将如下所示：
   
 ![报告 - 匿名用户列表。](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-这些更改将在几分钟之后在报表仪表板中的报表上生效。此设置也适用于报表 API。
+全局管理员可以恢复租户的此更改，并显示可识别的用户信息（如果其组织的隐私实践允许）。 可以按照以下步骤在 Microsoft 365 管理中心中实现此目标：
+  
+1. 在管理中心，转到“**设置**”\>“**组织设置**” \>“**服务**”页面。
+
+2. 选择“**报表**”。 
+  
+3. 在“**选择如何显示用户信息**”下，选择需要的选项，然后保存更改。  
+  
+这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置也适用于报表 API。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>在用户帐户关闭后，用法数据会发生什么情况？
 
