@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
-ms.openlocfilehash: f89214a71bc82ac7271ba3fd010258e63d39ef8a
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744985"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862769"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 
@@ -80,8 +80,8 @@ The scale of ongoing cybersecurity incidents affecting large enterprises and sma
 ![应用治理与 Azure AD 和 Microsoft Cloud App Security 的集成。](..\media\manage-app-protection-governance\mapg-integration.png)
 
 应用治理将其警报发送到 Microsoft Cloud App Security 和 Microsoft 365 Defender，并接收来自 Microsoft Cloud App Security 的警报，以对基于应用的安全事件进行更详细的分析。
-- 应用治理警报作为警报显示在 Microsoft 365 Defender 警报列表中，其检测源字段设为“MAPG”。
-- 应用治理警报作为警报显示在 MCAS 警报列表中，其策略字段设为以下之一
+- 应用治理警报在 Microsoft 365 Defender 警报列表中显示为警报，其检测源字段设置为“应用治理”
+- 应用治理警报在 MCAS 警报列表中显示为警报，其策略字段设置为下列内容之一：
   - Microsoft 365 OAuth 应用治理
   - Microsoft 365 OAuth 网络钓鱼检测
   - Microsoft 365 OAuth 应用信誉

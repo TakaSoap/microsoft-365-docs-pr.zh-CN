@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 0b6bb684b2417e2a836db2d1e730f393f8381c64
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.openlocfilehash: ceea450ca55e46a5a106a5d9fd3ce9420b674d36
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683596"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863901"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -271,12 +271,12 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 和 OneDrive 的位置。 如果不想保留所选位置的默认“**全部**”，请选择特定实例的链接。 然后选择“**下一步**”。
 
     ![选择位置页面自动标记向导。](../media/locations-auto-labeling-wizard.png)
-
-    若要指定个人 OneDrive 账户: 用户 OneDrive 帐户的 URL 采用以下格式:`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-
-    例如，对于 contoso 租户中用户名为“rsimone”的用户:`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    若要验证租户的语法并标识用户的 OneDrive URL，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+    
+    若要指定个人 OneDrive 帐户，用户的 OneDrive 的 URL 通常采用以下格式。 对于用户主体名称 (UPN)，句点、逗号、空格和 at 符号 (“@”) 等任何特殊字符都将转换为下划线 (“_”): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+    
+    例如，对于 Contoso 租户中 UPN 为“rsimone@contoso.onmicrosoft.com”的用户: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。 但是，检测到冲突时可以附加数字或 GUID。
+    
+    最好始终确认用户的 OneDrive 帐户的 URL，你可使用 Microsoft 365 管理中心或 PowerShell 执行此操作。 有关详细信息，请参阅[获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果需要针对每个位置使用不同的规则，请选择“**高级规则**”。 然后选择“**下一步**”。
 
