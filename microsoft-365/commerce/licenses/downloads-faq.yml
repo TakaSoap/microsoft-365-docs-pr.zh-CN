@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   localization_priority: Normal
   description: 有关下载Microsoft 365 管理中心常见问题。
-  ms.openlocfilehash: 47d41305c5789dd421a9a55f52153727d31712d7
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.openlocfilehash: c9ac712e84fd60e96ba3fa8749cacda76aa0c354
+  ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58822924"
+  ms.lasthandoff: 09/03/2021
+  ms.locfileid: "58884644"
 title: 下载常见问题
 summary: ''
 sections:
@@ -25,7 +25,7 @@ sections:
   questions:
   - question: >
       从应用程序下载软件的要求Microsoft 365 管理中心？
-    answer: "您必须为计划下载的产品购买许可证，并有权访问有效的产品密钥，每个许可证才能完成安装。 在下载产品之前验证许可协议。\n\n你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明**。 \n\n**注意** 并非所有产品都需要产品密钥。\n"
+    answer: "您必须为计划下载的产品购买许可证，并有权访问有效的产品密钥，每个许可证才能完成安装。 在下载产品之前验证许可协议。\n\n你可以找到每个产品的系统要求，登录管理中心并进入你的产品下载页面>  >  **产品说明**。 \n\n> [!NOTE]\n> 并非所有产品都需要产品密钥。\n"
   - question: >
       可从管理中心下载哪些产品？
     answer: >
@@ -62,7 +62,7 @@ sections:
   - question: "如何下载Office for Mac？ \n"
     answer: >
       若要运行批量许可版本的 Office for Mac，必须下载并安装以下文件：
-        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列化Office for Mac程序包。
+        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列Office for Mac程序包。
         - 安装[Office for Mac包 。](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) 单个应用程序的安装程序程序包文件也可在 Microsoft 365 管理中心。 Office for Mac不需要产品密钥，因为 VL 序列化程序用于激活批量许可版本的 Office for Mac。
   - question: >
       如何在管理中心下载产品？
@@ -77,10 +77,12 @@ sections:
       2. 在 **"下载**"下，**选择"语言****和操作系统类型"。**
 
 
-      **注意** 弹出窗口阻止程序可以阻止下载。 从管理中心下载软件时，请确保已禁用弹出窗口阻止程序。
+      > [!NOTE]
+
+      > 弹出窗口阻止程序可以阻止下载。 从管理中心下载软件时，请确保已禁用弹出窗口阻止程序。
   - question: >
       什么是 EXE 和 ISO 文件？
-    answer: "从管理中心下载产品时，可以选择两种文件类型：\n  \n  - **可执行 (EXE**) 文件可以下载并安装在同一系统中，但无法创建单独的启动磁盘以安装在其他计算机上。\n  - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的确切表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。\n\n**注意** 并非所有产品都提供所有语言和格式。\n"
+    answer: "从管理中心下载产品时，可以选择两种文件类型：\n  \n  - **可执行 (EXE**) 文件可以下载并安装在同一个系统中，但无法创建单独的启动磁盘以安装在其他计算机上。\n  - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的确切表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。\n\n> [!NOTE]\n> 并非所有产品都提供所有语言和格式。\n"
   - question: >
       如何使用 ISO 映像文件软件将 ISO 映像文件下载并保存到 CD-R 或 DVD-R 磁盘？
     answer: >
@@ -94,7 +96,9 @@ sections:
       如果你的计算机上未安装 CD/DVD 刻录机，或者媒体不可用，你可以将 ISO 文件装载为虚拟驱动器。 使用此方法，计算机认为该文件是真正的磁盘驱动器，你可以从此虚拟磁盘读取文件。
 
 
-      **注意** 建议仅对安装应用程序（如Office或次要系统升级）使用这种方法。 无法通过这种方法安装操作系统，因为虚拟驱动器在安装过程中会消失。
+      > [!NOTE]
+
+      > 建议仅将此方法用于安装应用程序，Office或次要系统升级。 无法通过这种方法安装操作系统，因为虚拟驱动器在安装过程中会消失。
   - question: >
       如何获取对已下载产品的支持？
     answer: >

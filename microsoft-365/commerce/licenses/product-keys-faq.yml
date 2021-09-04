@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   localization_priority: Normal
   description: 产品密钥常见问题
-  ms.openlocfilehash: ff8547935d82224d41b02131440679e0f63b32fb
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.openlocfilehash: 9da77700bb949fb72467516f3f195d87152d91ea
+  ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58823608"
+  ms.lasthandoff: 09/03/2021
+  ms.locfileid: "58884632"
 title: 产品密钥常见问题
 summary: ''
 sections:
@@ -29,7 +29,7 @@ sections:
       产品密钥允许你使用你根据特定批量许可计划许可的软件产品。 产品密钥中列出的Microsoft 365 管理中心应仅用于批量许可产品，并且仅供您的组织使用。
 
 
-      Online Service Activation (OSA) 密钥是一种用于激活订阅订阅的Microsoft Online Services密钥。
+      Online Service Activation (OSA) key 是一种用于激活订阅订阅的Microsoft Online Services密钥。
 
 
       有关详细信息，请参阅 [开放程序联机服务激活常见问题](/licensing/online-service-activation-faq)解答。
@@ -39,20 +39,20 @@ sections:
   - question: >
       如何查找产品SQL Server密钥？
     answer: >
-      the SQL license key is embedded in the software's activation wizard rather than displayed in the admin center and is detected automatically during installation. 有关详细信息，请参阅 [SQL Server 安装指南] (/sql/database-engine/install-windows/install-sql-server) 。
+      the SQL license key is embedded in the software's activation wizard rather than displayed in the admin center and is detected automatically during installation. 有关详细信息，请参阅《SQL Server[安装指南。](/sql/database-engine/install-windows/install-sql-server)
 
 
-      您还可以从管理中心下载 iso SQL文件来查找密钥>。\x64 folder > DefaultSetup.ini file. 在安装或升级现有版本之前，请确保SQL版本。 如果在产品安装或联机服务激活期间需要解决技术问题的帮助，请通过提交技术支持请求联系 Microsoft [技术支持](https://support.microsoft.com/oas)。
+      也可以从管理中心下载 iso SQL文件，以查找密钥>。\x64 folder > DefaultSetup.ini file. 请确保先备份任何现有版本，然后再安装或升级SQL版本。 如果在产品安装或联机服务激活期间需要解决技术问题的帮助，请通过提交技术支持请求联系 Microsoft [技术支持](https://support.microsoft.com/oas)。
   - question: >
       如何查找批量许可购买的产品密钥？
-    answer: "如果你的协议授权访问需要密钥的产品，你可以找到这些密钥，只需访问\"帐单\"\"产品批量许可\"\"下载&  >    >    >  **密钥\"。** \n\n但是，某些产品不需要产品密钥。 此信息在\"下载和密钥\"目录的产品说明中列出。\n\n若要确定你的产品是否要求密钥，请转到产品 [激活和密钥信息](https://licensingapps.microsoft.com/product-activation)。 在\"查找产品\"下，选择产品或搜索产品名称。\n"
+    answer: "如果你的协议授权访问需要密钥的产品，你可以找到这些密钥，只需访问帐单你的产品批量许可 下载&  >    >    >  **密钥。** \n\n但是，某些产品不需要产品密钥。 此信息在\"下载和密钥\"目录的产品说明中列出。\n\n若要确定你的产品是否要求密钥，请转到产品 [激活和密钥信息](https://licensingapps.microsoft.com/product-activation)。 在\"查找产品\"下，选择产品或搜索产品名称。\n"
   - question: >
       什么是设置密钥？
     answer: >
       设置密钥用于每个产品/版本组合，以通过绕过激活来解锁产品。 可以通过两种方式之一获取安装密钥：
 
         - **实际实施** 对于通过实际实施获得的产品，安装密钥将打印在媒体标签上。
-        - **下载实施** 对于从管理中心下载获取的产品，安装密钥显示在下载屏幕上，并可以附带以下文本：某些可供下载的产品需要安装密钥。 记下产品安装过程中所需的安装密钥。 有关安装密钥的更多信息，请参阅KMS[客户端安装密钥](/windows-server/get-started/kmsclientkeys)。
+        - **下载实施** 对于从管理中心下载获取的产品，安装密钥显示在下载屏幕上，并可以附带以下文本：某些可供下载的产品需要安装密钥。 记下产品安装过程中所需的安装密钥。 有关安装密钥的更多信息，请参阅[KMS客户端安装密钥](/windows-server/get-started/kmsclientkeys)。
   - question: >
       哪些因素决定了哪些产品密钥与我的协议相关联？
     answer: >
@@ -65,13 +65,15 @@ sections:
       有关详细信息，请参阅许可证 [摘要常见问题解答](/licensing/license-faq)。
 
 
-      **注意** 所有客户都有权使用产品密钥进行重新映像处理和降级。 选择"加企业协议 (EA) "和"选择客户具有有限的培训和备份评估权限"。 有关详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
+      > [!NOTE]
+
+      > 所有客户都有权使用产品密钥进行重新映像处理和降级。 选择"加企业协议 (EA) "和"选择客户具有有限的培训和备份评估权限"。 有关详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
 - name: 批量激活
   questions:
   - question: >
       什么是批量激活？
     answer: >
-      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件，并支持批量激活。 有关更多信息，请参阅：
+      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件和支持批量激活的套件。 有关详细信息，请参阅：
         - [用于管理批量激活Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [批量激活Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -80,20 +82,20 @@ sections:
 
       批量激活提供了两种完成批量激活的方法。 客户可以使用这两种关键类型中的任一种或两种来激活其组织的系统：
         - 密钥管理服务 (KMS) 允许组织在其自己的网络中激活系统。
-        - MAK (激活密钥) 使用 Microsoft 托管激活服务一次激活系统。
+        - MAK (多次激活密钥) Microsoft 托管激活服务一次激活系统。
   - question: >
       什么是密钥管理服务 (KMS) ？
     answer: >
-      KMS是一项激活服务，通过该服务，组织无需连接到 Microsoft 进行产品激活，即可激活其自己的网络内的系统。 它不需要专用系统，并且可在提供其他服务的系统上共同托管。
+      KMS是一种激活服务，通过该服务，组织无需连接到 Microsoft 进行产品激活，即可激活其自己的网络内的系统。 它不需要专用系统，并且可在提供其他服务的系统上共同托管。
 
 
-      KMS网络环境中需要最少数量的物理或虚拟计算机。 这些最小值（称为激活阈值）已设置，以便客户可以轻松满足Enterprise要求。
+      KMS网络环境中需要最少数量的物理或虚拟计算机。 设置了这些最小值（称为激活阈值）以便客户可以轻松Enterprise阈值。
 
         - 激活阈值Windows
           - 您的组织必须至少具有 5 台计算机才能激活运行 Windows 服务器。
           - 您的组织必须至少具有 25 台计算机才能激活运行 Windows。
         - 激活阈值Office
-          - 你的组织必须至少拥有 5 台运行版本 Office才能使用 Office 激活已安装的KMS。
+          - 你的组织必须至少拥有 5 台运行版本 Office才能使用 Office 激活已安装KMS。
 
       有关激活阈值详细信息，请参阅批量 [激活规划指南](/windows/deployment/volume-activation/volume-activation-windows-10)。
   - question: >
@@ -101,15 +103,15 @@ sections:
     answer: >
       A KMS key is used to activate the KMS host computer with a Microsoft activation server and can activate up to 6 KMS hosts with 10 activations per host. 每台KMS主机可以激活无限数量的计算机。
   - question: >
-      为什么开放KMS客户未Microsoft 365 管理中心密钥？
-    answer: "KMS密钥不再预分配给开放式协议，因为使用多次激活密钥 (MAK) 是首选激活方法。\n\nKSM KMS 密钥可以例外分配给满足 Windows Server、OS 和 Windows 激活阈值的 Open Office。 若要请求例外，请向 Microsoft 支持人员提交 Web 表单请求。\n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
+      为什么未KMS许可证客户在Microsoft 365 管理中心上显示密钥？
+    answer: "KMS密钥不再预分配给开放式协议，因为使用多次激活密钥 (MAK) 是首选激活方法。\n\nKSM 密钥可以例外分配给满足 Windows Server、OS 和 Office 的最低 KMS 激活阈值的 Open 客户。 若要请求例外，请向 Microsoft 支持人员提交 Web 表单请求。\n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
       如果我需要其他主机KMS呢？
-    answer: "如果您需要其他 KMS激活超过 6 台 KMS 主机，请提交 Web 表单请求Microsoft 365 管理中心支持。 \n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
+    answer: "如果需要其他 KMS激活 6 台KMS，请提交 Web 表单请求Microsoft 365 管理中心支持。 \n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
       什么是 MAK 密钥 (多次) ？
     answer: >
-      MAK (多次激活密钥) 使用需要与 Microsoft 激活服务器连接的 Microsoft 托管激活服务一次激活系统。 激活计算机后，不再需要与 Microsoft 进行通信。
+      MAK (多次激活密钥) 使用需要与 Microsoft 激活服务器连接的 Microsoft 托管激活服务，一次激活系统。 激活计算机后，不再需要与 Microsoft 进行通信。
 
 
       **重要** 允许的 MAK 激活数基于批量许可协议。
@@ -133,40 +135,40 @@ sections:
   - question: >
       什么是批量激活管理工具 (VAMT) ？
     answer: >
-      批量激活管理工具 (VAMT) 是一种工具，使网络管理员和其他 IT 专业人员可以自动执行并集中管理 Windows、Microsoft Office 的批量激活和零售激活过程，并选择其他 Microsoft 产品。 VAMT使用多个激活密钥管理批量激活 (或) 或Windows 密钥管理服务 (KMS) 。 VAMT是一个标准的 Microsoft 管理控制台 (MMC) 管理单元，要求使用 Microsoft Management Console (MMC) 3.0。
+      批量激活管理工具 (VAMT) 是一种工具，使网络管理员和其他 IT 专业人员可以自动执行并集中管理 Windows、Microsoft Office 和选择其他 Microsoft 产品的批量激活和零售激活过程。 VAMT使用多个激活密钥管理批量激活 (MAK) 或 Windows 密钥管理服务 (KMS) 。 VAMT是标准的 Microsoft 管理控制台 (MMC) 管理单元，要求使用 Microsoft 管理控制台 (MMC) 3.0。
 
 
       有关此VAMT的信息，请参阅：
 
         - [批量激活管理工具 (VAMT) 技术参考](/windows/deployment/volume-activation/volume-activation-management-tool)
-        - [使用"管理"批量激活管理工具 (VAMT) ](/previous-versions/tn-archive/ff686876(v=technet.10))
+        - [使用工具管理批量激活管理工具 (VAMT) ](/previous-versions/tn-archive/ff686876(v=technet.10))
         - 下载[批量激活管理工具 (VAMT) ](https://www.microsoft.com/download/details.aspx?id=11936)
   - question: >
-      关于将 Windows Server 用作 KMS 主机来激活客户端，我Windows什么？
-    answer: "如果使用 Windows 方法密钥管理服务 (KMS) 部署活动，请注意：\n  \n  - Windows服务器不支持作为KMS激活Windows。\n  - 需要Windows Server KMS 密钥才能获取修补程序，以允许激活Windows客户端计算机。 有关最新修补程序，请参阅[配置 KMS 主计算机以激活批量许可版本的 Office。](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office) \n\n如果要将 Windows Server 用作KMS主机，您可以：\n  \n  - 将 KMS 主机升级到 Windows Server。\n  - 将计算机降级到 Windows Server 2003。\n  - 在KMS版计算机上运行Windows主机。\n  - 运行 Windows Server 虚拟机。\n"
+      关于将 Windows Server 用作 KMS 主机来激活客户端Windows什么？
+    answer: "如果使用 Windows 方法密钥管理服务 (KMS) 部署活动，请注意：\n  \n  - Windows服务器不支持作为KMS激活Windows。\n  - 需要Windows Server KMS 密钥才能获取修补程序，以允许激活Windows客户端计算机。 有关最新的修补程序，请参阅[配置KMS主计算机以激活批量许可版本的Office。](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office) \n\n如果要将 Windows Server 用作KMS主机，您可以：\n  \n  - 将 KMS 主机升级到 Windows Server。\n  - 将计算机降级到 Windows Server 2003。\n  - 在KMS版计算机上运行Windows主机。\n  - 运行 Windows Server 虚拟机。\n"
   - question: >
       我应了解哪些有关 Office、Project 和 Visio？
     answer: >
       以下批量激活更改与Office、Project Visio：
         - Office KMS主机激活任何Office或应用程序。
-        - 只能Office KMS一个密钥并用于激活。
+        - 只应Office KMS一个密钥并用于激活。
 
-      如果部署Office激活密钥管理服务 (KMS) 激活方法，请注意：
+      如果使用 Office 方法密钥管理服务 (KMS) 部署活动，请注意：
         - 如果使用 Office Server 作为KMS服务器Windows，则不能KMS服务器。
         - 修补程序不能用于允许激活Office客户端。
 
-      如果要将 Windows Server 2008 用作KMS主机，您可以：
+      如果将 Windows Server 2008 用作KMS主机，您可以：
         - 将 KMS 主机升级到 Windows Server。
         - 将计算机降级到较旧版本的 Windows Server。
         - 在KMS电脑上运行Windows主机。
         - 在较Windows版本的 Windows Server 中运行 Windows 虚拟机。
   - question: >
-      如何在 RDS Windows 终端激活 (Server 和远程桌面) ？
+      如何Windows 终端 RDS (远程桌面服务) ？
     answer: >
       从 VLSC 下载服务器媒体后，可以使用产品激活向导激活它。 无需在 VLSC 中查找批量许可证密钥或产品设置密钥。 完成所有激活向导步骤会提示服务器通过 Internet 与 Microsoft 交换所连接以验证数据。 或者，对于脱机服务器，激活向导提供电话或 Web 激活。
 
 
-      首先，为服务器分配远程桌面许可角色， (启动管理工具服务器管理器) 然后从远程桌面许可证管理器激活  >    >  RDS 服务。 选择 **"**  >  **启动管理工具**  >  **远程桌面服务"，** 然后选择"**远程桌面/终端许可证管理器"。**
+      首先，为服务器分配远程桌面许可角色 (启动管理工具服务器管理器) 然后从远程桌面许可证管理器激活  >    >  RDS 服务。 选择 **"**  >  **启动管理工具**  >  **远程桌面服务"，** 然后选择"**远程桌面/终端许可证管理器"。**
 
 
       激活期间，会要求您选择"许可协议"和"协议编号"。 对于"开放许可证"客户，输入授权号码。 对于 MPSA，输入你的购买 (号码，而不是 MPSA 协议) 。 如果你不确定用于购买 CAL 许可证的许可证 ID 的程序类型，请转到 **VLSC 关系** 摘要并参考父 **计划** 列。
@@ -176,20 +178,22 @@ sections:
   - question: >
       同一所有权结构内的组织能否使用相同的密钥来部署产品？
     answer: >
-      许可证合规性和资产管理独立于密钥激活。 客户不必使用特定许可 ID 下提供的密钥， (、注册、关联或许可证) 。 如果父组织有单独的协议，它可以使用同一密钥跨父和子组织部署产品。 这种灵活性使客户能够使用特定于协议/许可证的密钥或一组密钥集中管理部署映像。
+      许可证合规性和资产管理独立于密钥激活。 客户不必使用特定许可 ID 下提供的密钥 (、注册、关联或许可证) 。 如果父组织有单独的协议，它可以使用同一密钥跨父和子组织部署产品。 这种灵活性使客户能够使用特定于协议/许可证的密钥或一组密钥集中管理部署映像。
   - question: >
       我能否使用批量许可证密钥来行使我的重新映像权限？
     answer: >
-      能。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，客户可以使用根据其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本（如果从批量许可介质制作的副本与原始许可产品相同）。 作为批量许可客户，可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心 [请求密钥](https://licensingapps.microsoft.com/product-activation)。
+      能。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，如果从批量许可介质制作的副本与原始许可产品相同，客户可以使用其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心 [请求密钥](https://licensingapps.microsoft.com/product-activation)。
 
 
-      **注意** 如果你是开放许可客户，则必须购买至少一个要重新映像的产品单元，以获取对产品媒体的访问权限并接收产品密钥。
+      > [!NOTE]
+
+      > 如果你是开放许可客户，则必须购买至少一个要重新映像的产品单元，以获取对产品媒体的访问权限并接收产品密钥。
 
 
       有关重新映像权限详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
   - question: >
       如何将密钥下载到本地文件？
-    answer: "The Microsoft 365 管理中心 offers an option to download product keys to a local file for later use. 从\"下载和密钥\"页下载产品密钥时，该文件包含与管理中心配置文件中的协议相关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的\"许可 ID\"视图中下载密钥，文件将仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可以在Excel或文本编辑器中打开，以便排序和查看密钥。 其中包括文件中包含的列：**许可证 ID、****父** 计划、**组织**、**产品**、**产品** 密钥、**类型和** **MAK Activations-Used/Available、Seats 和 OSA Status**。 \n\n若要在文件包中打开Excel，请完成以下步骤：\n  1. 打开 Microsoft Excel。\n  2. 选择 **\"**  >  **文件** 打开\"，然后选择下载的 CSV 文件。\n  3. 选择 **\"** 以 (分隔) \"，然后选择\"以制表符分隔 (以阻止在单个列中显示所有) 。\n  4. 选择“完成”。 \n\nthe .CSV file opens in Excel and the data is displayed in separate columns.\n"
+    answer: "The Microsoft 365 管理中心 offers an option to download product keys to a local file for later use. 从\"下载和密钥\"页下载产品密钥时，该文件包含与管理中心配置文件中的协议相关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的\"许可 ID\"视图中下载密钥，文件将仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可以在Excel或文本编辑器中打开，以便排序和查看密钥。 其中包括文件中包含的列：**许可证 ID、****父** 计划、**组织**、**产品**、**产品** 密钥、**类型和** **MAK Activations-Used/Available、Seats 和 OSA Status**。 \n\n若要在文件包中打开Excel，请完成以下步骤：\n  1. 打开 Microsoft Excel。\n  2. 选择 **\"**  >  **文件** 打开\"，然后选择下载的 CSV 文件。\n  3. 选择 **\"** 以 (分隔) \"，然后选择\"以制表符分隔的 (\"以阻止在单个列中显示所有) 。\n  4. 选择“完成”。 \n\nthe .CSV file opens in Excel and the data is displayed in separate columns.\n"
 - name: 支持
   questions:
   - question: >

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: f42112761fe7899742487a79a41973a8c6cb2ab6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
+ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355000"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58863442"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -134,7 +134,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
 
 这些步骤只需在计算机上执行一次。 但可能需要定期更新软件。
   
-1.  如果您运行的不是 Windows 10，则请安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)。
+1.  如果您运行的不是 Windows 10，则请安装 32 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)。
     
 2. 请按照以下步骤，安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块：
     

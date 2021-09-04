@@ -321,6 +321,8 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP 策略条件和例外情况
               href: dlp-conditions-and-exceptions.md
+            - name: 将 Exchange Online 数据丢失防护策略迁移到合规中心(预览版)
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: 数据丢失防护策略提示参考
               href: dlp-policy-tips-reference.md
 - name: 管理信息治理
