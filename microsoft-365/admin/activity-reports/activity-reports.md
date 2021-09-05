@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: 32a423073ec00a9e13e0e3669a9fbd1412b01a50
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
+ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862781"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58884214"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -165,9 +165,9 @@ ms.locfileid: "58862781"
 
 2. 选择“**报表**”。 
   
-3. 在“**选择如何显示用户信息**”下，选择需要的选项，然后保存更改。  
+3. 取消选中 **在所有报表中，显示用户、组和网站的已取消标识的名称**，然后保存所做的更改。  
   
-这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置也适用于报表 API。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
+这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置还适用于 [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) 和 [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) 和 [ Microsoft Teams 管理中心中的使用情况报告的Microsoft 365使用情况报告](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>在用户帐户关闭后，用法数据会发生什么情况？
 

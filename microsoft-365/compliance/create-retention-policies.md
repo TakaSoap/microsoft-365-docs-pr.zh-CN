@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 5ada5a4e4c7bd65ef0be6f273548bebba6e342ea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 34f4bb10ba79e6521d785df157368cdaae89118a
+ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574323"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "58869187"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -69,7 +69,7 @@ ms.locfileid: "58574323"
 
 1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
 
-2. 选择“**新保留策略**”来开始“创建保留策略向导”，并命名新的保留策略。
+2. 选择 **新的保留策略** 以启动“创建”保留策略配置，并命名新的保留策略。
 
 3. 对于 **选择要应用策略的位置** 页面，请为 Teams 选择任何或所有位置:
     - **Teams 频道消息**: 来自标准频道聊天和标准频道会议的消息，但不包括来自具有其自己策略位置的 [私人频道](/microsoftteams/private-channels)。
@@ -81,11 +81,11 @@ ms.locfileid: "58574323"
     - 对于群组聊天信息和私人频道信息，由于信息的副本保存在每个参加聊天的用户的邮箱中，所以在 eDiscovery 结果中会继续返回未分配策略用户的信息副本。
     - 对于未分配策略的用户，已删除的邮件将返回其 Teams 搜索结果中，但不会显示邮件内容，因为从分配给用户的策略被永久删除。
 
-4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。
+4. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。
 
    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
 
-5. 完成向导以保存设置。
+5. 完成配置以保存设置。
 
 有关何时对 Teams 使用保留策略并了解最终用户体验的指南，请参阅 [管理 Microsoft Teams](/microsoftteams/retention-policies) 保留策略。
 
@@ -139,11 +139,11 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
     - 如果你保留 **“所有”** 默认值，则不包含 Azure B2B 来宾用户。 
     - 如果为 **包含** 列选择“**编辑**”，则可以向外部用户应用保留策略（如果你知道其帐户）。
 
-4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。 
+4. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。 
     
     你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
 
-5. 完成向导以保存设置。
+5. 完成配置以保存设置。
 
 有关 Yammer 的保留策略工作方式的详细信息，请参阅[了解 Yammer 的保留](retention-policies-yammer.md)。
 
@@ -171,7 +171,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
 
-2. 选择“**新保留策略**”来开始“创建保留策略向导”，并命名新的保留策略。
+2. 选择 **新的保留策略** 以启动“创建”保留策略配置，并命名新的保留策略。
 
 3. 在“**选择位置以应用策略**”页面，切换打开或关闭除 Teams 位置之外的任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](#a-policy-with-specific-inclusions-or-exclusions)”。
 
@@ -181,11 +181,11 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
     - [Microsoft 365 组](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
-4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。
+4. 对于 **决定是要保留内容、删除内容还是同时执行这两个操作** 页面，请指定用于保留和删除内容的配置选项。
 
     你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
 
-5. 完成向导以保存设置。
+5. 完成配置以保存设置。
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 电子邮件和 Exchange 公用文件夹的配置信息
 
@@ -205,15 +205,15 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 选择 **SharePoint 网站** 位置时，保留策略可以保留和删除 SharePoint 通信网站、未通过 Microsoft 365 组连接的团队网站以及经典网站中的文档。 因为此选项不支持通过 Microsoft 365 组连接的团队网站，所以请改用 **Microsoft 365 组** 位置，该位置适用于该组的邮箱、网站和文件中的内容。
 
-尽管保留策略应用于站点级别，但只有文档具有应用于其的保留设置。 有关在配置 SharePoint 和 OneDrive 的保留设置时应包含和排除哪些内容的详细信息，请参阅[保留和删除哪些内容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。 
+尽管保留策略应用于站点级别，但只有文档具有应用于其的保留设置。 有关在配置 SharePoint 和 OneDrive 的保留设置时应包含和排除哪些内容的详细信息，请参阅[保留和删除哪些内容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。
 
-如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在 **编辑位置** 页上指定 URL 时不会进行任何验证。 不过，系统会检查你指定的 SharePoint 网站是否在向导结束时存在。 如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除保留策略中的网站。
+如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在 **编辑位置** 页上指定 URL 时不会进行任何验证。 但是，系统会在配置结束时检查你指定的 SharePoint 站点是否存在。 如果此检查失败，你将看到一条消息，指出你输入的 URL 验证失败，且在验证检查通过之前，配置流程将不会创建保留策略。 如果你看到此消息，请返回配置以更改 URL 或从保留策略中删除站点。
 
-若要指定单个 OneDrive 帐户包含或排除的，URL 具有以下格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+要指定要包含或排除的个人 OneDrive 帐户，用户 OneDrive 的 URL 通常采用以下格式。 对于用户主体名称(UPN)，任何特殊字符(例如句号、逗号、空格以及 at 符号("@"))都会转换为下划线("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-例如，对于 contoso 租户中用户名为“rsimone”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+例如，对于 Contoso 租户中 UPN 为 "rsimone@contoso.onmicrosoft.com" 的用户: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。 但是，检测冲突时可以附加数字或 GUID。
 
-要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+最好确认用户 OneDrive 帐户的 URL，可以使用Microsoft 365 管理中心或 PowerShell 执行此操作。 有关详细信息，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 
