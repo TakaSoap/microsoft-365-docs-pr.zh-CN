@@ -26,7 +26,7 @@ description: 了解更多关于由世纪互联运营的，旨在满足中国对�
 monikerRange: o365-21vianet
 ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
 ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/26/2021
 ms.locfileid: "58567828"
@@ -44,7 +44,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
   
 扫描此 QR 码在微信上关注我们，获取由世纪互联运营的 Office 365 的最新动态。
   
-![扫描此 QR 代码，以在 WeChat 上关注我们。](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![请扫描此 QR 码，以在微信上关注我们。](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **关于由世纪互联运营的 Office 365服务**
   
