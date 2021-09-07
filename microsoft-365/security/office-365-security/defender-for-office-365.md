@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9096af6a99fb04a9f25e9d28f31f8eb522ecf4c
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392174"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918251"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -48,6 +48,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 - **[自动调查和响应功能](office-365-air.md)**：节省时间和精力来调查和缓解威胁。
 
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的交互式指南
+
 在此交互式指南中，你将了解如何使用 Microsoft Defender for Office 365 保护组织。 你将了解 Office 365 的 Defender 如何帮助你定义保护策略、分析组织面临的威胁以及响应攻击。
 
 [请查看交互指南](https://aka.ms/MSDO-IG)
@@ -64,7 +65,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
   - 安全链接
   - 安全附件
 - 保护工作负载（例如 SharePoint Online、OneDrive 和 Teams）
-- 通过零时差自动清除进行保护
+- 使用零时差自动清除 (ZAP) 保护。
 
 若要做中学，请[单击此链接](protect-against-threats.md)。
 

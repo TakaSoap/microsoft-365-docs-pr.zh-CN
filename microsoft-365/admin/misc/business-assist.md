@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 了解 Business Assist 计划及其如何帮助你的组织改进商业Microsoft 365使用情况。
-ms.openlocfilehash: 806f73af526b23e32740e0a1c1a8fe9d3854acd1724a030b31985faa040f2735
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解 Business Assist 计划及其如何帮助你的组织改进对Microsoft 365的使用。
+ms.openlocfilehash: fefefe5dc587674609201be13f19cd6223b80c49
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824212"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923914"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业帮助
 
-通过小型企业专家提供的专家建议，从你的订阅中取得最大价值。
+通过小型企业专家提供的专家建议，从订阅中取得最大价值。
 
-**Business Assist for Microsoft 365** is designed for businesses with the fewer than 5 users to give you and your employees access the around-the clock to small business specialists as you grow your business， from onboarding to everyday use.
+**Business Assist for Microsoft 365** is designed for small businesses to give you and your employees access to small business specialists around-the clock as your business specialists as you grow your business， from onboarding to the everyday use.
 
 ### <a name="watch-business-assist-for-microsoft-365"></a>观看：Business Assist for Microsoft 365
 
@@ -37,8 +37,8 @@ ms.locfileid: "53824212"
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|与小型企业专家合作，共同Microsoft 365保护业务并赋予其专业外观的功能。 |你的所有员工，不只是 IT 负责人都可以直接转到 Microsoft 专家，以更快地获得持续支持。 |了解未充分利用的功能，并获取有关从订阅获取更多价值的方法的建议。 |
-|**加快云迁移** <br> 获取有关将当前所有文件 (、存储、文档和通信) 移动到Microsoft 365。 |**轻松访问专家** <br> Our team will pick up the conversation where you left it last. 没有票证可跟踪，没有机器人，无需长时间等待。 |**保持最新状态** <br> 定期检查，帮助你在添加新的服务功能以及公司需求变化时保持最新状态。 |
+|与小型企业专家合作，共同Microsoft 365保护你的业务并赋予其专业外观的功能。 |你的所有员工，不只是 IT 负责人都可以直接转到 Microsoft 专家，以更快地持续提供支持。 |了解未充分利用的功能，并获取有关从订阅获取更多价值的方法的建议。 |
+|**加快云迁移** <br> 获取有关将当前所有文件 (电子邮件、存储、文档和通信) 移动到Microsoft 365。 |**轻松访问专家** <br> Our team will pick up the conversation where you left it last. 没有票证可跟踪，没有机器人，无需长时间等待。 |**保持最新状态** <br> 定期检查，帮助你在添加新的服务功能以及公司需求变化时保持最新状态。 |
 | | | |
 
 > [!div class="nextstepaction"]

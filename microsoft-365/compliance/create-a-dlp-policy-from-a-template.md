@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
@@ -19,176 +19,191 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: ea4922e05e1bcee69eff350afa9a5f4f28f01846
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 1fe14035f23443a8f8f35b5c9ac9edf69bf60ffd
+ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570277"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923926"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
-开始使用 DLP 策略的最简单、最常见方法是，使用包含在 Office 365 中的模板之一。 您可以按如下状态使用这些模板之一，或自定义规则以满足组织的特定合规性要求。
+开始使用 DLP 策略的最简单、最常见的方法是使用 Microsoft 365 中心中包含的模板之一。 您可以按如下状态使用这些模板之一，或自定义规则以满足组织的特定合规性要求。
 
-Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规和业务策略需求。 例如，提供适用于以下法规的 DLP 策略模板：
+Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规和业务策略需求。 请参阅; [完整列表](dlp-policy-reference.md#policy-templates) 的策略模板。 
 
-- 格雷姆-里奇-比利雷法案 (GLBA)
-- 支付卡行业数据安全标准 (PCI-DSS)
-- 美国个人身份信息（美国 PII）
-- 美国健康保险法案 (HIPAA)
-
-您可以通过修改任何现有的规则或添加新规则来微调模板。例如，您可以将新的敏感信息类型添加到规则中，以及修改规则中的计数以使其更难以触发或更易于触发，使用户通过提供业务理由替代规则中的操作，或更改要向其发送通知和事件报告的用户。对于许多常见的合规性方案来说，DLP 策略模板都是一个灵活的起点。
+您可以通过修改模板的任何现有规则或添加新规则来微调模板。 例如，您可以将新的敏感信息类型添加到规则中，以及修改规则中的计数以使其更难以触发或更易于触发，使用户通过提供业务理由替代规则中的操作，或更改要向其发送通知和事件报告的用户。 对于许多常见的合规性方案来说，DLP 策略模板都是一个灵活的起点。
 
 您还可以选择不带有任何默认规则的自定义模板，从头开始配置您的 DLP 策略以满足组织的特定合规性要求。
 
-## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>示例：标识所有网站中的OneDrive for Business并限制组织外部人员的访问
-
-OneDrive for Business帐户使整个组织的人可以轻松协作和共享文档。 但合规部官员的一个常见问题是，存储在OneDrive for Business的敏感信息可能会无意中与组织外部人员共享。 DLP 策略可以帮助降低此风险。
-
-本示例将创建一个标识美国 PII 数据的 DLP 策略，其中包括个人纳税标识号 (ITIN) 、社会保险号和美国护照号。 您将开始使用模板，然后修改该模板以满足组织的合规性要求，具体来说，您将：
-
-- 添加几种类型的敏感信息（美国的银行帐号和美国驾驶证号码）以便 DLP 策略保护更多敏感数据。
-
-- 使策略更为敏感，以便敏感信息出现一次就足以限制外部用户访问。
-
-- 允许用户通过提供业务理由或报告误报来替代这些操作。 这样，DLP 策略不会阻止组织成员完成工作，只要他们共享敏感信息有有效的业务原因。
-
 ### <a name="create-the-dlp-policy-from-a-template"></a>从模板创建 DLP 策略
 
-1. 转到 <https://compliance.microsoft.com>。
+1. 登录 <https://compliance.microsoft.com> 。
 
-2. 使用工作或学校帐户进行登录。 现在，你已位于安全 &amp; 与合规中心。
-
-3. 在安全 &amp; 与合规中心 \> 左侧导航 \> **中，数据丢失防护** \> **策略** \> **+ 创建策略**。
+2. In the Compliance Center \> left navigation Data loss \> **prevention** \> **Policy** \> **+ Create a policy**.
 
     ![创建策略按钮。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+          
+3. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
 
-4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
+4. 将策略名称为 \> **"下一步"。**
+ 
+<!--In this example, you'll select **Privacy** \> **U.S. Personally Identifiable Information (PII) Data** because it already includes most of the types of sensitive information that you want to protect - you'll add a couple later.
 
-    本示例将选择"隐私美国个人身份信息 \> **(PII) 数据**"，因为它已包含要保护的敏感信息大部分类型，稍后将添加几种类型的敏感信息。
+    When you select a template, you can read the description on the right to learn what types of sensitive information the template protects.
 
-    选择模板时，可以阅读右侧说明，了解模板保护的敏感信息类型。
+    ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-    ![用于选择 DLP 策略模板的页面。](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+5. 选择希望 DLP 策略保护的位置，并接受每个位置的默认范围或自定义范围。 请参阅 [作用域](dlp-policy-reference.md#locations) 选项的位置。
 
-5. 将策略名称为 \> **"下一步"。**
-
-6. 若要选择希望 DLP 策略保护的位置，请执行下列操作之一：
+6. 选择“\> **下一步**”。
+ 
+1. <!-->，请执行下列操作之一：
 
    - Choose **All locations in Office 365** \> **Next**.
    - Choose **Let me choose specific locations** \> **Next**. 对于此示例，选择此。
 
-   若要包含或排除整个位置（如所有Exchange或所有OneDrive帐户），请打开或关闭该位置的"状态"。
+   若要包含或排除整个位置，如Exchange或所有OneDrive帐户，请打开或关闭该位置的"状态"。 
 
-   若要仅包含SharePoint或OneDrive for Business帐户，请切换到"状态"打开，然后单击"包含"下的链接以选择特定网站或帐户。  将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
+   若要仅包含SharePoint或OneDrive for Business帐户，请切换到"状态"，然后单击"包含"下的链接以选择特定网站或帐户。  将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
 
    ![可以应用 DLP 策略的位置的选项。](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive **帐户** 的"状态 **"。**
+   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态 **"，** 并保留 OneDrive 帐户的"状态"> 
 
-7. 选择 **"使用高级设置""** \> **下一步"。**
+7. 选择 **"查看"，然后从模板"下一步"自定义** \> **默认设置**。
 
 8. DLP 策略模板包含预定义的规则，这些规则具有对特定敏感信息类型进行检测和操作的条件与操作。 可以编辑、删除或关闭任何现有规则，也可以添加新规则。 完成后，单击"下一 **步"。**
 
     ![在美国 PII 策略模板中扩展的规则。](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-    本示例中，美国 PII 数据模板包括两个预定义规则：
+9. 选择检测此内容何时在组织内部或组织外部共享（如果选择了以下任一位置）：
+    1. Exchange
+    1. SharePoint
+    1. OneDrive
+    1. Teams聊天和频道消息 
 
-   - **检测到美国 PII 的内容量较低** 此规则查找包含三种类型的敏感信息（ITIN、SSN 和美国护照号码 (）之间出现 1 到 10 次的文件) 其中文件与组织外部人员共享。 如果找到，该规则会向网站集主管理员、文档所有者和上次修改文档的人发送电子邮件通知。
+10. 选择“**下一步**”。
 
-   - **检测到大量美国 PII 的内容** 此规则查找包含相同三种敏感信息类型（其中文件与组织外部人员共享）出现次数为 10 次或更多的文件。 如果找到，此操作还会发送电子邮件通知，并限制对文件的访问。 对于网站OneDrive for Business中的内容，这意味着除网站集主管理员、文档所有者和上次修改文档的人之外，所有人都只能拥有对文档的权限。
+11. 如果需要 **，可以在** "保护操作"页上自定义策略提示通知和通知电子邮件。 启用 **当内容与策略条件匹配时**，向用户显示策略提示，然后告知他们电子邮件通知，然后选择自定义 **提示和电子邮件**。
+1. c
+1. 
+1. 
+1. 
+1. hoose **Next**.
 
-    为了满足组织的特定要求，您可能需要使规则更易于触发，以便敏感信息出现一次就足以阻止外部用户访问。 查看这些规则后，您了解到不需要低计数和较高的计数规则，只需一个规则，当发现出现任何敏感信息时阻止访问。
 
-    因此，您扩展了名为 **"低量检测到** 美国 PII 删除规则" \> **的规则**。
+<!--    In this example, the U.S. PII Data template includes two predefined rules:
 
-    ![删除规则按钮。](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
+   - **Low volume of content detected U.S. PII** This rule looks for files containing between 1 and 10 occurrences of each of three types of sensitive information (ITIN, SSN, and U.S. passport numbers), where the files are shared with people outside the organization. If found, the rule sends an email notification to the primary site collection administrator, document owner, and person who last modified the document.
 
-9. 现在，在此例中，你需要添加两个敏感信息类型 (.S. bank account numbers and U.S. driver's license numbers) ， allow people to override a rule， and change the count to any occurrence. 您可以通过编辑一个规则来执行所有这些操作，因此请选择"检测到大量美国 **PII** 编辑 \> **规则"。**
+   - **High volume of content detected U.S. PII** This rule looks for files containing 10 or more occurrences of each of the same three sensitive information types, where the files are shared with people outside the organization. If found, this action also sends an email notification, plus it restricts access to the file. For content in a OneDrive for Business account, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document.
 
-    ![编辑规则按钮。](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
+    To meet your organization's specific requirements, you may want to make the rules easier to trigger, so that a single occurrence of sensitive information is enough to block access for external users. After looking at these rules, you understand that you don't need low and high count rules—you need only a single rule that blocks access if any occurrence of sensitive information is found.
 
-10. 若要添加敏感信息类型，请参阅 **条件部分** \> **添加或更改类型**。 然后，在 **"添加或更改类型"下**，选择"添加"，选择"美国银行帐号"和"美国驾驶 \>  \> **证号码** 添加 \> **完成** \> **"。**
+    So you expand the rule named **Low volume of content detected U.S. PII** \> **Delete rule**.
 
-    ![用于添加或更改类型的选项。](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
+    ![Delete rule button.](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
 
-    !["添加或更改类型"窗格。](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
+9. Now, in this example, you need to add two sensitive information types (U.S. bank account numbers and U.S. driver's license numbers), allow people to override a rule, and change the count to any occurrence. You can do all of this by editing one rule, so select **High volume of content detected U.S. PII** \> **Edit rule**.
 
-11. 若要更改计数 (触发规则) 所需的敏感信息实例数，请在"实例计数"下，选择每种类型的最小值输入 \>  \> 1。 最小计数不能为空。 最大计数可以为空;将空 **的最大值** 转换为 **任意**。
+    ![Edit rule button.](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
 
-    完成后，所有敏感信息类型的最小值计数应为 **1，** 最大值计数 **应为任意**。 换句话说，任何出现此类敏感信息的情况都将满足此条件。
+10. To add a sensitive information type, in the **Conditions** section \> **Add or change types**. Then, under **Add or change types** \> choose **Add** \> select **U.S. Bank Account Number** and **U.S. Driver's License Number** \> **Add** \> **Done**.
 
-    ![敏感信息类型的实例计数。](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
+    ![Option to Add or change types.](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
 
-12. 对于最终自定义，您不希望 DLP 策略在具有有效的业务理由或遇到误报时阻止用户执行他们的工作，因此您希望用户通知包括用于替代阻止操作的选项。
+    ![Add or change types pane.](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
 
-    在 **"用户通知** "部分，可以看到默认在模板中为此规则打开电子邮件通知和策略提示。
+11. To change the count (the number of instances of sensitive information required to trigger the rule), under **Instance count** \> choose the **min** value for each type \> enter 1. The minimum count cannot be empty. The maximum count can be empty; an empty **max** value convert to **any**.
 
-    在 **"用户替代** "部分，可以看到业务理由替代已打开，但报告误报的重写未启用。 如果用户 **将规则报告为误报，则选择"自动替代规则"。**
+    When finished, the min count for all of the sensitive information types should be **1** and the max count should be **any**. In other words, any occurrence of this type of sensitive information will satisfy this condition.
 
-    !["用户通知"部分和"用户替代"部分。](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+    ![Instance counts for sensitive information types.](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
 
-13. 在规则编辑器的顶部，将此规则的名称从默认"检测到美国 **PII** 的高量内容"更改为"任何检测到使用美国 **PII** 的内容"，因为它现在由任何敏感信息类型触发。
+12. For the final customization, you don't want your DLP policies to block people from doing their work when they have a valid business justification or encounter a false positive, so you want the user notification to include options to override the blocking action.
 
-14. 在规则编辑器底部保存 \> 。
+    In the **User notifications** section, you can see that email notifications and policy tips are turned on by default for this rule in the template.
+
+    In the **User overrides** section, you can see that overrides for a business justification are turned on, but overrides to report false positives are not. Choose **Override the rule automatically if they report it as a false positive**.
+
+    ![User notifications section and User overrides section.](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+
+13. At the top of the rule editor, change the name of this rule from the default **High volume of content detected U.S. PII** to **Any content detected with U.S. PII** because it's now triggered by any occurrence of its sensitive information types.
+
+14. At the bottom of the rule editor \> **Save**.
 
 15. Review the conditions and actions for this rule \> **Next**.
 
-    在右侧，注意规则的 **Status** 开关。 如果关闭整个策略，则策略中包含的所有规则也将关闭。 但是，你可以在此处关闭特定规则，而无需关闭整个策略。 当您需要调查生成大量误报的规则时，这一功能很有用。
+    On the right, notice the **Status** switch for the rule. If you turn off an entire policy, all rules contained in the policy are also turned off. However, here you can turn off a specific rule without turning off the entire policy. This can be useful when you need to investigate a rule that is generating a large number of false positives.
 
-16. On the next page， read and understand the following， and then choose whether to turn on the rule or test it out first \> **Next**.
+16. On the next page, read and understand the following, and then choose whether to turn on the rule or test it out first \> **Next**.
 
-     在创建 DLP 策略之前，您应考虑逐步部署策略，在完全强制执行策略之前评估其影响，并测试其有效性。 例如，您不希望新的 DLP 策略无意中阻止用户访问完成工作需要的数千个文档。
+     Before you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before you fully enforce them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require to get their work done.
 
-    如果你创建的 DLP 策略具有较大的潜在影响，建议你按以下顺序执行操作：
+    If you're creating DLP policies with a large potential impact, we recommend following this sequence:
 
-17. 在不使用策略提示的情况下启动测试模式，然后使用 DLP 报告评估影响。您可以使用 DLP 报告查看匹配策略的次数、位置、类型和严重性。根据结果，您可以在需要时微调规则。在测试模式下，DLP 策略不会影响您组织内的工作人员的工作效率。
+17. Start in test mode without Policy Tips and then use the DLP reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine tune the rules as needed. In test mode, DLP policies will not impact the productivity of people working in your organization.
 
-18. 移动到使用通知和策略提示的测试模式，以便您可以开始向用户介绍合规性策略，让用户对将要应用的规则做好准备。在这一阶段，您还可以要求用户报告误报，便于您进一步优化规则。
+18. Move to Test mode with notifications and Policy Tips so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules.
 
-19. 打开这些策略，以便强制执行规则并保护内容。 继续监视 DLP 报告及任何事件报告或通知，确保结果符合预期。
+19. Turn on the policies so that the rules are enforced and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend.
 
-    ![使用测试模式和打开策略的选项。](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-20. 查看此策略的设置，选择 \> "创建 **"。**
+20. Review your settings for this policy \> choose **Create**.
 
-创建并启用 DLP 策略后，该策略将部署到它包括的任何内容源，例如 SharePoint Online 网站或 OneDrive for Business 帐户，其中该策略开始自动对这些内容强制执行其规则。
+After you create and turn on a DLP policy, it's deployed to any content sources that it includes, such as SharePoint Online sites or OneDrive for Business accounts, where the policy begins automatically enforcing its rules on that content.
 
-## <a name="view-the-status-of-a-dlp-policy"></a>查看 DLP 策略的状态
 
-您随时都可以在安全与合规中心的"数据丢失防护"部分中的"策略"页上查看DLP &amp; 策略的状态。 您可以在此处找到以下重要信息，如策略是成功启用还是成功禁用，或者策略是否处于测试模式。
+## Example: Identify sensitive information across all OneDrive for Business sites and restrict access for people outside your organization
 
-下面介绍了不同的状态及其含义。
+OneDrive for Business accounts make it easy for people across your organization to collaborate and share documents. But a common concern for compliance officers is that sensitive information stored in OneDrive for Business accounts may be inadvertently shared with people outside your organization. A DLP policy can help mitigate this risk.
+
+In this example, you'll create a DLP policy that identifies U.S. PII data, which includes Individual Taxpayer Identification Numbers (ITIN), Social Security Numbers, and U.S. passport numbers. You'll get started by using a template, and then you'll modify the template to meet your organization's compliance requirements—specifically, you'll:
+
+- Add a couple of types of sensitive information—U.S. bank account numbers and U.S. driver's license numbers—so that the DLP policy protects even more of your sensitive data.
+
+- Make the policy more sensitive, so that a single occurrence of sensitive information is enough to restrict access for external users.
+
+- Allow users to override the actions by providing a business justification or reporting a false positive. This way, your DLP policy won't prevent people in your organization from getting their work done, provided they have a valid business reason for sharing the sensitive information.
+
+
+## View the status of a DLP policy
+
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+
+Here are the different statuses and what they mean.
 
 <br>
 
 ****
 
-|状态|说明|
+|Status|Explanation|
 |---|---|
-|**正在启用...**|系统正在将策略部署到它所包含的内容源。策略尚未强制应用于所有源。|
-|**测试并发送通知**|策略处于测试模式。不会应用规则中的操作，但可以收集策略匹配项，并通过使用 DLP 报告进行查看。有关策略匹配项的通知会发送给指定的收件人。|
-|**测试但不发送通知**|策略处于测试模式。不会应用规则中的操作，但可以收集策略匹配项，并通过使用 DLP 报告进行查看。有关策略匹配项的通知不会发送给指定的收件人。|
-|**On**|策略处于活动状态并且已强制应用。策略已成功部署到它的所有内容源。|
-|**关闭...**|系统正在将策略从它包含的内容源中移除。策略可能仍处于活动状态并在某些源上强制应用。禁用策略可能需要 45 分钟。|
-|**关闭**|策略处于非活动状态且未强制应用。系统会保存策略的设置（源、关键字、持续时间等）。|
-|**删除...**|系统正在删除策略。 策略处于非活动状态且未强制应用。 删除策略通常需要一个小时。|
+|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
+|**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
+|**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|
+|**Turning off...**|The policy is being removed from the content sources that it includes. The policy may still be active and enforced on some sources. Turning off a policy may take up to 45 minutes.|
+|**Off**|The policy is not active and not enforced. The settings for the policy (sources, keywords, duration, etc) are saved.|
+|**Deleting...**|The policy is in the process of being deleted. The policy is not active and not enforced. It normally takes an hour for a policy to delete.|
 |
 
-## <a name="turn-off-a-dlp-policy"></a>禁用 DLP 策略
+## Turn off a DLP policy
 
-你随时都可以编辑或关闭 DLP 策略。 关闭策略会禁用策略中的所有规则。
+You can edit or turn off a DLP policy at any time. Turning off a policy disables all of the rules in the policy.
 
-若要编辑或关闭 DLP 策略，**请在"策略**"页面上 \> 选择策略"编辑 \> **策略"。**
+To edit or turn off a DLP policy, on the **Policy** page \> select the policy \> **Edit policy**.
 
-![编辑策略按钮。](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
+![Edit policy button.](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
 
-此外，您可以通过编辑该策略，然后切换该规则的 Status 来单独关闭每个规则，如上所述。 
+In addition, you can turn off each rule individually by editing the policy and then toggling off the **Status** of that rule, as described above.
 
-## <a name="more-information"></a>更多信息
+## More information
 
-- [了解数据丢失防护](dlp-learn-about-dlp.md)
-- [发送通知，并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
-- [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
-- [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
-- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Send notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
+- [Create a DLP policy to protect documents with FCI or other properties](protect-documents-that-have-fci-or-other-properties.md)
+- [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
