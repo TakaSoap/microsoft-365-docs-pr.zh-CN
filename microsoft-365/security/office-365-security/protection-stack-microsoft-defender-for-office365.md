@@ -10,19 +10,19 @@ ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
-description: 通过 Microsoft Defender for Office 365 中的威胁筛选堆栈跟踪传入Office 365。
+description: 通过 Microsoft Defender 中的威胁筛选堆栈跟踪传入邮件的路径，Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea7fc497f42bff24bbf9b5cb69c03144f64503eb381e530135263497486bcb24
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e5385817610100a7e29baca9b6dd98b89493de35
+ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805309"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58918263"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的威胁防护步骤
 
-Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段，如本文所介绍。 一般来说，传入邮件在传递之前会通过所有这些阶段，但电子邮件的实际路径需要受组织的 Defender 进行Office 365配置。
+Microsoft Defender for Office 365保护或筛选堆栈可以分为 4 个阶段，如本文中介绍。 一般来说，传入邮件在传递之前会通过所有这些阶段，但实际路径电子邮件采用受组织的 Defender Office 365配置。
 
 > [!TIP]
 > 请继续关注到本文末尾，了解 Defender的所有 4 个阶段的统一图形，Office 365保护！
@@ -41,19 +41,19 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 3. **域信誉** 将阻止从已知错误域发送的任何邮件。
 
-4. **基于目录的边缘筛选** 阻止通过 SMTP 获取组织的目录信息的尝试。
+4. **基于目录的边缘筛选** 阻止尝试通过 SMTP 获取组织的目录信息。
 
-5. **退退检测** 可防止组织通过无效的未送达报告 (未送达报告) 。
+5. **反散点检测** 可以防止组织受到无效的未送达报告 (NDR) 的攻击。
 
 6. **连接器的增强** 筛选功能可保留身份验证信息，即使流量在到达其他设备之前通过Office 365。 这提高了筛选堆栈的准确性，包括启发式群集、反欺骗和防钓鱼机器学习模型，即使在复杂或混合路由方案中也可以。
 
 ## <a name="phase-2---sender-intelligence"></a>阶段 2 - 发件人智能
 
-发件人智能中的功能对于捕获垃圾邮件、批量、模拟和未经授权的欺骗邮件至关重要，还会成为网络钓鱼检测的因素。 这些功能中的大多数是可单独配置的。
+发件人智能中的功能对于捕获垃圾邮件、批量、模拟和未经授权的欺骗邮件至关重要，还会成为网络钓鱼检测的因素。 其中大多数功能可单独配置。
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender for Office 365筛选的第 2 阶段是发件人智能。":::
 
-1. **帐户具有** 异常行为且与泄露一致时，会引发帐户泄露检测触发器和警报。 在某些情况下，在组织的安全运营团队解决问题之前，用户帐户将被阻止并阻止发送任何进一步的电子邮件。
+1. **帐户具有** 异常行为且与泄露一致时，会引发帐户泄露检测触发器和警报。 在某些情况下，用户帐户将被阻止并阻止发送任何进一步的电子邮件，直到组织的安全运营团队解决该问题为止。
 
 2. **电子邮件** 身份验证涉及客户配置的方法和在云中设置的方法，旨在确保发件人得到授权，是可信的邮件发送者。 这些方法可抵御欺骗。
     - **SPF** 可以拒绝基于 DNS TXT 记录的邮件，这些记录列出允许代表组织发送邮件的 IP 地址和服务器。
@@ -63,9 +63,9 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 3. 欺骗智能能够筛选允许"欺骗" (即代表其他帐户发送邮件，或从模仿组织或已知外部域的恶意发件人转发邮件列表) 。 它将合法"代表"邮件与欺骗邮件传递垃圾邮件和网络钓鱼邮件的发件人分开。
 
-    **组织内部欺骗智能** 检测并阻止来自组织内部域的欺骗尝试。
+    **组织内部欺骗智能** 检测和阻止来自组织内域的欺骗尝试。
 
-4. **跨域欺骗智能** 检测并阻止来自组织外部的域的欺骗尝试。
+4. **跨域欺骗智能** 检测和阻止来自组织外部域的欺骗尝试。
 
 5. **批量筛选** 允许管理员配置批量可信度 (BCL) 指示邮件是否从批量发件人发送。 管理员可以使用反垃圾邮件策略中的批量滑块决定要视为垃圾邮件的批量邮件的级别。
 
@@ -73,7 +73,7 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 7. **邮箱智能模拟** 基于每个用户的单个发件人映射启用或禁用增强的模拟结果。 启用后，此功能有助于识别模拟。
 
-8. **用户模拟** 允许管理员创建可能模拟的高值目标列表。 如果邮件到达发件人看起来与受保护的高值帐户相同的名称和地址，则标记该邮件。  (例如 *，tr cye@contoso.com* for *tracye@contoso.com) 。*
+8. **用户模拟** 允许管理员创建可能模拟的高值目标列表。 如果邮件到达发件人看起来与受保护的高值帐户相同的名称和地址，则标记该邮件。  (例如 *，tr→cye@contoso.com* for *tracye@contoso.com) 。*
 
 9. **域模拟** 可检测类似于收件人域且尝试看起来像内部域的域。 例如，此模拟tracye@liw re.com tracye@litware.com。 
 
@@ -85,43 +85,43 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 1. **传输** (也称为邮件流规则或 Exchange 传输规则) 当邮件满足同样广泛的条件时，管理员可采取各种操作。 根据已启用的邮件流规则/传输规则评估通过组织传递的所有邮件。
 
-2. **Microsoft Defender 防病毒** 两 *个第三方防病毒* 引擎用于检测附件中所有已知的恶意软件。
+2. **Microsoft Defender 防病毒** 和两个 *第三方防病毒引擎* 用于检测附件中的所有已知的恶意软件。
 
 3. 防病毒 (AV) 引擎也用于真正键入所有附件，以便类型阻止可以阻止管理员指定类型的所有附件。
 
 4. 每当 Microsoft Defender for Office 365检测到恶意附件时，文件的哈希及其活动内容的哈希都会添加到 EOP Exchange Online Protection (信誉) 中。 **附件信誉阻止** 将阻止该文件跨所有Office 365和终结点上通过 MSAV 云调用。
 
-5. **启发式群集** 可以基于传递启发确定文件是否可疑。 当发现可疑附件时，整个市场活动将暂停，文件将沙盒。 如果发现该文件是恶意的，将阻止整个市场活动。
+5. **启发式聚类分析** 可以根据传递启发确定文件可疑。 当发现可疑附件时，整个市场活动将暂停，文件将沙盒。 如果发现该文件是恶意的，将阻止整个市场活动。
 
-6. **机器学习模型** 作用于邮件头、正文内容和 URL，以检测网络钓鱼尝试。
+6. **机器学习模型** 作用于邮件的标头、正文内容和 URL，以检测网络钓鱼尝试。
 
 7. Microsoft 使用来自 URL 沙盒的信誉以及 URL 信誉阻止中第三方源的 **URL** 信誉来阻止任何包含已知恶意 URL 的邮件。
 
-8. **内容启发式功能** 可以使用机器学习模型，根据邮件正文中的结构和字词频率检测可疑邮件。
+8. **内容启发** 可以使用机器学习模型根据消息正文中的结构和单词频率检测出可疑消息。
 
-9. **保险箱 Defender** for Office 365 客户的每个附件添加附件沙盒，使用动态分析检测之前未发现的威胁。
+9. **保险箱附件** 沙盒中为 Office 365 客户的 Defender 添加每个附件，使用动态分析检测之前未发现的威胁。
 
-10. **链接内容触发** 将电子邮件中链接到文件的每一个 URL 视为附件，在传送时以异步方式对文件进行沙盒处理。
+10. **链接内容爆炸** 将电子邮件中链接到文件的每个 URL 作为附件处理，在发送时对文件进行异步沙盒处理。
 
-11. **当上游** 防钓鱼技术发现邮件或 URL 可疑时，会发生 URL 触发。 URL 触发在传递时对邮件中的 URL 进行沙盒化。
+11. **当上游防钓鱼技术发现消息或 URL 可疑时，会发生 URL 爆炸**。 URL 触发在传递时对邮件中的 URL 进行沙盒化。
 
 ## <a name="phase-4---post-delivery-protection"></a>第 4 阶段 - 传递后保护
 
 最后一个阶段发生在邮件或文件传递之后，对各种邮箱中的邮件以及显示在客户端（如 Microsoft Teams）中的文件和链接Microsoft Teams。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365筛选的第 4 阶段是传递后保护。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365的第 4 阶段是传递后保护。":::
 
-1. **保险箱链接** 是适用于Office 365点击时间保护的 Defender。 每封邮件中的每个 URL 都打包为指向 Microsoft 保险箱链接服务器。 单击 URL 时，将针对最新信誉检查 URL，然后用户重定向到目标网站。 URL 是异步沙盒，用于更新其信誉。
+1. **安全链接** 是 Defender for Office 365 的点击时间保护。 每封邮件中的每个 URL 都打包为指向 Microsoft 保险箱链接服务器。 单击 URL 时，将针对最新信誉检查 URL，然后用户重定向到目标网站。 URL 是异步沙盒，用于更新其信誉。
 
-2. 适用于网络钓鱼的零时差自动 **清除 (ZAP**) 可主动检测并消除已传递到 Exchange Online 邮箱的恶意网络钓鱼邮件。
+2. **针对网络钓鱼的** 零时差自动清除 (ZAP) 可主动检测并清除已传递到 Exchange Online 邮箱的恶意网络钓鱼邮件。
 
-3. **恶意软件的 ZAP** 可主动检测并中性化已传递到邮箱的恶意Exchange Online邮件。
+3. **针对恶意软件的 ZAP** 可以追溯性地检测和消除已经传递到 Exchange Online 邮箱的 恶意软件 邮件。
 
-4. **网络钓鱼的 ZAP** 可主动检测并消除已传递到其他邮箱的恶意Exchange Online邮件。
+4. **网络钓鱼的 ZAP** 可主动检测并中性化已传递到其他邮箱的恶意Exchange Online邮件。
 
-5. **与没有** 自动化的任何团队一样，市场活动视图使管理员能够更快、更完整地查看攻击的全局信息。 Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反恶意软件数据来帮助识别市场活动，然后允许管理员从头到尾调查它们，包括目标、影响和流，这些对象、影响和流也可在可下载的活动写入中提供。
+5. **与没有** 自动化的任何团队一样，市场活动视图使管理员能够更快、更完整地查看攻击的全局信息。 Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反恶意软件数据来帮助识别活动，然后允许管理员从头到尾调查它们，包括目标、影响和流，这些对象、影响和流也可在可下载的活动写入中提供。
 
-6. 通过报告邮件外接程序，用户可以轻松地向 Microsoft 报告误报 (错误标记为错误 *)* 或误报 (将错误电子邮件标记为) 以便进一步分析。 
+6. 通过报告邮件外接程序，用户可以轻松地向 Microsoft 报告误报 (错误标记为错误 *)* 或误报 (错误电子邮件标记为) ) 以便进一步分析。 
 
 7. **保险箱** Office 客户端的链接在 Office 客户端（如 Word、PowerPoint 和 Excel）内部提供相同的 保险箱 链接单击时间保护。
 
@@ -131,12 +131,12 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 ## <a name="the-filtering-stack-diagram"></a>筛选堆栈图
 
-最终图表 (图表的所有部分一样，) 随着产品的增长和开发 *而发生变化*。 为此页面添加 **书签，并使用** 你在底部找到的反馈选项（如果需要在更新后询问）。 对于记录，这是按顺序排列的所有阶段的堆栈：
+最终图表 (图表的所有部分一样，) 随着产品的增长和开发 *而更改*。 如果更新后需要 **询问** ，请为此页面添加书签，并使用底部的反馈选项。 对于记录，这是按顺序排列的所有阶段的堆栈：
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender 中筛选的所有阶段Office 365顺序为 1 到 4。":::
 
 ## <a name="more-information"></a>更多信息
 
-是否需要为 Microsoft Defender 设置 Office 365 ***now** _？ 使用此堆栈_now*，通过此 [分](protect-against-threats.md) 步操作开始保护你的组织。
+是否需要为 Microsoft Defender 设置 Office 365 ***现在** _？ 使用此堆栈_now*，通过此分步操作开始[](protect-against-threats.md)保护你的组织。
 
 *特别感谢 MSFTTracyP 和编写团队的文档向 Giulian Garruba 提供此内容*。
