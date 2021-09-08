@@ -277,6 +277,7 @@
 ##### [使用 PowerShell 计划扫描](schedule-antivirus-scans-powershell.md)
 ##### [使用 WMI 计划扫描](schedule-antivirus-scans-wmi.md)
 #### [在 Microsoft Defender 防病毒程序内使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [tune 性能Microsoft Defender 防病毒](tune-performance-defender-antivirus.md)
 #### [与其他安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
 
 #### [获取防病毒和反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)
