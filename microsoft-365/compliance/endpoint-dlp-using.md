@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 26f5723d604cb9f57000f13eb799cd0afba593e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556296"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928760"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -85,9 +85,13 @@ ms.locfileid: "58556296"
 
 阻止用户通过特定蓝牙应用传输受你的策略保护的文件。
 
-### <a name="browser-and-domain-restrictions"></a>浏览器和域限制
+### <a name="browser-and-domain-restrictions-to-sensitive-data"></a>敏感数据的浏览器和域限制
 
 限制与策略匹配的敏感文件与不受限制的云服务域共享。
+
+#### <a name="unallowed-browsers"></a>不允许的浏览器
+
+你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
 
 #### <a name="service-domains"></a>服务域
 
@@ -100,17 +104,30 @@ ms.locfileid: "58556296"
 > [!IMPORTANT]
 > 服务限制模式设置为“允许”时，在强制执行限制之前，必须至少配置一个服务域。
 
-#### <a name="unallowed-browsers"></a>不允许的浏览器
+### <a name="additional-settings-for-endpoint-dlp"></a>终结点 DLP 的其他设置
 
-你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
+#### <a name="business-justification-in-policy-tips"></a>策略提示中的业务理由
 
-### <a name="business-justification-in-policy-tips"></a>策略提示中的业务理由
+可在 DLP 策略提示通知中控制用户与业务理由选项的交互方式。 当用户执行受 DLP 策略中 **以超越阻止** 设置所保护的活动时，将出现此选项。 这是全局设置。 可从下列选项中进行选择：
 
-可在 DLP 策略提示通知中控制用户与业务理由选项的交互方式。 当用户执行受 DLP 策略中 **以超越阻止** 设置所保护的活动时，将出现此选项。 可从下列选项中进行选择：
+- **显示默认选项和自定义文本框**：默认情况下，用户可以选择内置理由，也可以输入自己的文本。
+- **仅显示默认选项**：用户只能选择内置理由。
+- **仅显示自定义文本框**：用户只能输入自己的理由。 只有文本框将显示在最终用户策略提示通知中。 
 
-- 默认情况下，用户可以选择内置理由或输入自己的文本。
-- 用户只能选择内置理由。
-- 用户只能输入自己的理由。
+##### <a name="customizing-the-options-in-the-drop-down-menu"></a>自定义下拉菜单中的选项
+
+通过选择"**自定义选项下拉菜单**"，可以创建多达五个将在用户与策略通知提示交互时显示的自定义选项。 
+
+
+|选项 |默认文本  |
+|---------|---------|
+|选项 1    | **这是已建立的业务工作流的一部分**，或者可以输入自定义文本        |
+|选项 2  |**我的经理已批准此操作**，或者可以输入自定义文本         |
+|选项 3   |**需要紧急访问;我将单独通知我的经理**，或者可以输入自定义文本          |
+|显示误报选项     |**这些文件中的信息不敏感**，或者可以输入自定义文本          |
+|选项 5    |**其他**，或者可以输入自定义文本         |
+
+<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>始终审核已载入设备的文件活动
 
@@ -341,6 +358,10 @@ ms.locfileid: "58556296"
 8. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。 如有需要，请参见[活动资源管理器（预览）入门](data-classification-activity-explorer.md)。
 
 9. 检查活动资源管理器中的事件。
+
+### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>方案 5：配置策略以使用自定义业务理由
+
+
 
 ## <a name="see-also"></a>另请参阅
 

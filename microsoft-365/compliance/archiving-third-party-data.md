@@ -22,20 +22,20 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到Microsoft 365邮箱。
-ms.openlocfilehash: 88710c9d6036effdb5f76dd4af8e4d6c24e7394e
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 70e01994c69d838693eaf453005a829d99f2cc4e
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862805"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928724"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>存档第三方数据Microsoft 365
 
-Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入和存档到组织Microsoft 365邮箱。 使用数据连接器在 Microsoft 365 中导入和存档第三方数据的一个主要好处是，您可以在导入数据后将各种 Microsoft 365 合规性解决方案应用于这些数据。 这有助于确保组织的非 Microsoft 数据符合影响组织的法规和标准。
+Microsoft 365管理员可使用数据连接器将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入和存档到组织Microsoft 365邮箱。 使用数据连接器在 Microsoft 365 中导入和存档第三方数据的一个主要好处是，您可以在导入数据后对这些数据应用各种 Microsoft 365 合规性解决方案。 这有助于确保组织的非 Microsoft 数据符合影响组织的法规和标准。
 
 ## <a name="third-party-data-connectors"></a>第三方数据连接器
 
-The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 还与以下合作伙伴合作，在 Microsoft 365 合规中心 中提供更多第三Microsoft 365 合规中心。 贵组织与这些合作伙伴一起设置存档服务，然后再在存档服务中创建Microsoft 365 合规中心。
+The Microsoft 365 合规中心 provides native third-party data connectors from Microsoft to import data from various data sources， such as LinkedIn， Instant Bloomberg， and Twitter and data connectors that support the Insider risk management solution. 除了这些数据连接器之外，Microsoft 还与以下合作伙伴合作，在 Microsoft 365 合规中心 中提供更多第三方数据Microsoft 365 合规中心。 贵组织与这些合作伙伴合作，在存档服务中创建相应的数据Microsoft 365 合规中心。
 
 - [百里达](#veritas-data-connectors)
 
@@ -51,7 +51,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 下表列出了本机第三方数据连接器，这些连接器可用于Microsoft 365 合规中心。 该表还汇总了在导入并存档第三方数据之后可应用Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-单击"第 **三** 方数据"列中的链接，转到有关为第三方数据列创建连接器的数据类型。
+单击"第 **三方数据** "列中的链接，转到有关为第三方数据列创建连接器的数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -69,7 +69,7 @@ The Microsoft 365 合规中心 provides native third-party data connectors from 
 
 本节中的表列出了与它合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在将第三方数据存档到 Microsoft 365 中之前，您必须与 Microsoft 365 一起为组织设置其名为 *Merge1* (的存档服务) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
+在您将第三方数据存档到 Microsoft 365 中之前，您必须与 Microsoft 365 一起为组织设置其名为 *Merge1* (的存档服务) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -130,7 +130,7 @@ TeleMessage 数据连接器还可用于美国政府GCC中Microsoft 365环境中�
 
 本节中的表列出了与 17a-4 LLC 合作提供的第三方数据连接器。 该表还汇总了在导入第三方数据后可应用于第三方数据的合规性Microsoft 365。 有关 [每个合规性解决方案](#overview-of-compliance-solutions-that-support-third-party-data) 及其如何支持第三方数据的详细说明，请参阅支持第三方数据的合规性解决方案概述部分。
 
-在您将第三方数据存档到 Microsoft 365 中之前，您必须与 (一起为组织设置名为 *DataParser*) 存档服务。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
+在 Microsoft 365 中存档第三方数据之前，您必须使用 17a-4 LLC 为组织设置其 (称为 *DataParser*) 。 有关详细信息，请单击"第三方数据"列中的链接，转到创建该连接器的分步说明数据类型。
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -205,9 +205,9 @@ CellTrust SL2 数据连接器还可用于美国政府GCC中Microsoft 365环境�
 
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>使用电子数据展示工具搜索第三方数据
 
-使用数据连接器导入和存档用户邮箱中的第三方数据后，可以使用 Microsoft 365 电子数据展示工具搜索第三方数据。 您还可以使用电子数据展示工具创建与核心电子数据展示相关联的基于查询的保留，Advanced eDiscovery事例以保留第三方数据。 有关电子数据展示工具的更多信息，请参阅 Microsoft 365 中的[电子数据展示解决方案](ediscovery.md)。
+使用数据连接器导入和存档用户邮箱中的第三方数据后，Microsoft 365电子数据展示工具搜索第三方数据。 您还可以使用电子数据展示工具创建与核心电子数据展示相关联的基于查询的保留，Advanced eDiscovery事例以保留第三方数据。 有关电子数据展示工具的更多信息，请参阅电子数据展示[Microsoft 365。](ediscovery.md)
 
-若要搜索 (或保留) 连接器导入到用户邮箱的任何类型的第三方数据，可以使用以下搜索查询。 请确保将搜索范围确定为用户邮箱。
+若要搜索 (或保留) 使用数据连接器导入到用户邮箱的任何类型的第三方数据，可以使用以下搜索查询。 请确保将搜索范围确定为用户邮箱。
 
 ```powershell
 kind:externaldata
@@ -283,6 +283,6 @@ subject:contoso AND itemclass:ipm.externaldata.facebook*
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>与 Microsoft 合作伙伴合作存档第三方数据
 
-导入和存档第三方数据的另一个选项是让组织与 Microsoft 合作伙伴合作。 如果 Microsoft 合规中心内提供的数据连接器不支持第三方 数据类型，你可以与合作伙伴合作，该合作伙伴可以提供自定义连接器，该连接器将配置为定期提取第三方数据源中的项目，然后通过第三方 API 连接到 Microsoft 云，然后将这些项目导入 Microsoft 365。 合作伙伴连接器还将项目的内容从第三方数据源转换为电子邮件，然后将它导入到 Microsoft 365 中的邮箱。
+导入和存档第三方数据的另一个选项是让组织与 Microsoft 合作伙伴合作。 如果 Microsoft 合规中心内提供的数据连接器不支持第三方 数据类型，你可以与合作伙伴合作，该合作伙伴可以提供自定义连接器，该连接器将配置为定期提取第三方数据源中的项目，然后通过第三方 API 连接到 Microsoft 云，然后将这些项目导入 Microsoft 365。 合作伙伴连接器还会将项目的内容从第三方数据源转换为电子邮件，然后将它导入 Microsoft 365。
 
 有关可以合作的合作伙伴列表以及此方法的分步过程，请参阅与合作伙伴协作以在 Microsoft 365[中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。

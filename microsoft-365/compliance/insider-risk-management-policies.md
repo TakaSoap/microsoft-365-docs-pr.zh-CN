@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 37918c9078231b80f1b41ddf063df92f5cd2aace
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
+ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569053"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58928736"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -189,7 +189,7 @@ ms.locfileid: "58569053"
 
 若要深入了解用户活动管理，请参阅 [预览体验计划风险管理事例：用户活动](insider-risk-management-cases.md#user-activity)。
 
-## <a name="policy-health-preview"></a>策略运行状况（预览版）
+## <a name="policy-health"></a>策略运行状况
 
 通过策略运行状况状态，可深入了解预览体验计划风险管理策略的潜在问题。 "策略"选项卡上的"状态"列可提醒你注意可能会阻止报告用户活动的策略问题或活动警报数异常的原因。 策略运行状况状态还可以确认策略运行状态，不需要注意或配置更改。
 
