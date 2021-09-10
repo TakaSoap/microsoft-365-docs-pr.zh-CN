@@ -16,18 +16,18 @@ ms.collection:
 localization_priority: None
 description: 了解如何在 Microsoft Viva Learning (管理) 配置 Teams 预览版。
 ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570709"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942581"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>在 Microsoft Viva Learning (管理) 中Teams预览版
 
 > [!NOTE]
 > 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 
 
-管理员Teams执行某些步骤，才能在租户中为Learning (用户) Viva 预览预览版。 这些步骤因租户的启用情况而异：[*公共*](set-up-teams-admin-center.md#public-preview-tenants)预览版或专用预览版 [ (Beta)](set-up-teams-admin-center.md#private-preview-tenants)。
+管理员Teams执行某些步骤才能为租户中的用户Learning (Viva) 预览版。 这些步骤因租户的启用情况而异：[*公共*](set-up-teams-admin-center.md#public-preview-tenants)预览版或专用预览版 [ (Beta)](set-up-teams-admin-center.md#private-preview-tenants)。
 
 ## <a name="public-preview-tenants"></a>公共预览版租户
 
@@ -35,7 +35,7 @@ ms.locfileid: "58570709"
 
 由于 Viva Learning (Preview) 尚未普遍可用，因此需要执行某些步骤才能启用这些功能并设置特定用户或组的权限。 
 
-1. 为 Viva Learning (Preview) 公共预览功能。
+1. 为 Viva 用户启用公共预览Learning (预览) 用户。
 
     a. 修改Teams策略以启用公共预览功能。 请参阅[Microsoft Teams公共预览版](/microsoftteams/public-preview-doc-updates)。
 
@@ -47,40 +47,40 @@ ms.locfileid: "58570709"
 
     b. 为将执行 Viva 预览版测试的用户或组Learning (应用) 策略。 请参阅 [向用户和组分配策略](/microsoftteams/assign-policies-users-and-groups)。
 
-3. 通知将测试 Viva Learning (Preview) 以将生成客户端切换到公共预览[版Teams。](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
+3. 通知将测试 Viva Learning (Preview) 将生成客户端切换到[公共预览版Teams。](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
 
 > [!IMPORTANT]
 > 对于公共预览租户，Learning (预览) 在最终产品发布之前，Teams管理中心的托管应用中不会显示Viva 预览版。 但是，启用的公共预览版用户可以在 Teams 应用商店中查找 Viva Learning (Preview) ，一旦设置了正确的策略和权限，就可以使用它。
 
 ### <a name="user-steps-for-public-preview-tenants"></a>公共预览版租户的用户步骤
 
-已启用公共预览测试（通过启用之前描述的策略）的用户需要切换到[](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants)其 Teams 客户端。 [](/microsoftteams/public-preview-doc-updates#enable-public-preview)
+已启用公共预览版测试（通过启用上述策略）的用户需要切换到[](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants)其 Teams 客户端中的[](/microsoftteams/public-preview-doc-updates#enable-public-preview)公共预览版。
 
 1. 用户必须选择其个人资料图像>**关于**  >  **公共预览版**。
 
-    ![显示用户配置文件Teams应用程序上的上一导航。](../media/learning/learning-app-select-profile-teams.png)
+    ![显示用户配置文件Teams应用程序上面的导航。](../media/learning/learning-app-select-profile-teams.png)
 
 2. 用户必须接受公共预览版条款和条件。
 
     ![切换到公共预览版。](../media/learning/learning-app-switch-to-public-preview.png)
 
-3. 用户现在可以在 Learning (应用商店) Viva Teams预览版，并开始使用它。
+3. 现在，用户可以在 Learning (应用商店) Viva Teams预览版，并开始使用它。
 
 ## <a name="private-preview-tenants"></a>专用预览版租户
 
-### <a name="administrator-steps-for-private-preview-or-beta-tenants"></a>专用预览版或 Beta (租户) 步骤
+### <a name="administrator-steps-for-private-preview-or-beta-tenants"></a>专用预览版或 Beta (租户的管理员) 步骤
 
 对于专用预览版租户，无需启用其他策略。 但是，Learning (预览) 必须可供您组织的用户使用。
 
 1. 在管理中心左侧导航Teams，转到"管理Teams  >  **应用"。**
 
-   ![管理中心左侧导航Teams显示"Teams""管理应用"部分。](../media/learning/learning-app-teams-manage-apps-nav.png)
+   ![管理中心左侧导航Teams显示"Teams和管理应用"部分。](../media/learning/learning-app-teams-manage-apps-nav.png)
 
 2. 在"**管理应用"** 页上的搜索框中，键入 *Viva Learning*，然后选择 **Viva Learning (Preview)**。
 
    ![显示搜索框Teams管理中心中的"管理应用"页面。](../media/learning/learning-app-teams-manage-apps-page.png)
 
-3. 在 **"Viva Learning (预览) "** 页上的"状态"下，选择"允许"以打开 Viva Learning (Preview) 。
+3. 在 **"Viva Learning (Preview) "** 页上的"状态"下，选择"允许"打开 Viva Learning (Preview) 。
 
    ![Learning管理中心中的Teams"状态"和"应用设置"部分。](../media/learning/learning-app-teams-learning-page.png)
 
@@ -140,4 +140,4 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 ## <a name="next-step"></a>后续步骤
 
-[为 Viva Learning (预览) 配置学习内容源Microsoft 365 管理中心](content-sources-365-admin-center.md)
+[配置 Viva Learning (预览) 中的学习内容源Microsoft 365 管理中心](content-sources-365-admin-center.md)

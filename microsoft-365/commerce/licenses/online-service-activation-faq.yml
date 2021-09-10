@@ -13,18 +13,18 @@ metadata:
   localization_priority: Normal
   description: 开放计划联机服务激活常见问题解答
   ms.openlocfilehash: b00a5a06ba4f936811426d150542761ed4c5c08b
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58823632"
+  ms.lasthandoff: 09/09/2021
+  ms.locfileid: "58951140"
 title: 开放计划联机服务激活常见问题解答
 summary: ''
 sections:
 - name: 概要
   questions:
   - question: >
-      如何激活通过开放计划购买的联机服务 (开放、开放式值和开放式价值订阅) ？
+      如何激活通过开放计划购买的联机服务 (、开放式值和开放式价值订阅) ？
     answer: >
       开放客户可以通过两种方式激活联机服务：
 
@@ -32,7 +32,7 @@ sections:
 
       或
 
-      - 从 [批量许可服务中心 (VLSC) ](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) 开放计划客户可以转到联机服务激活部分并选择要管理的许可证：
+      - 从 [批量许可服务中心 (VLSC) ](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) 开放计划客户可以转到"联机服务激活"部分并选择要管理的许可证：
 
 
       1. 选择"管理激活"链接，然后选择"开始激活"。 将打开产品激活窗口并预填充密钥。
@@ -46,7 +46,7 @@ sections:
   - question: >
       我看不到 Azure 订单。 我该怎么办？
     answer: >
-      Azure 订单通过密钥激活。 通过 VLSC 中的"下载和密钥"选项卡获取密钥，在"入门[Azure"](https://azure.microsoft.com/offers/azure-open/)页面上输入密钥。
+      Azure 订单通过密钥激活。 通过 VLSC 中的"下载和密钥"选项卡获取密钥，在"开放许可"入门[Azure"页面上输入密钥](https://azure.microsoft.com/offers/azure-open/)。
   - question: >
       什么是工作或学校帐户，为什么需要一个帐户来激活联机服务？
     answer: >

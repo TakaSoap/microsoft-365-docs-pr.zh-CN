@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft Viva Learning (预览) 配置学习内容Microsoft 365 管理中心
+title: 为预览版中的Microsoft Viva Learning (内容) 配置Microsoft 365 管理中心
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,15 +14,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 了解如何在 Microsoft 365 管理中心 中为 Microsoft Viva Learning (Preview) 配置学习内容Microsoft 365 管理中心。
+description: 了解如何在 Microsoft 365 管理中心 中为 Microsoft Viva Learning (Preview) 配置学习Microsoft 365 管理中心。
 ms.openlocfilehash: 977589a9b9500f062edbd962ada895436c9b2c96
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483375"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942579"
 ---
-# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>为 Microsoft Viva Learning (预览) 配置学习内容Microsoft 365 管理中心
+# <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>为预览版中的Microsoft Viva Learning (内容) 配置Microsoft 365 管理中心
 
 > [!NOTE]
 > 本文中的信息与在商业发行之前可能会进行重大修改的预览产品相关。 
@@ -39,7 +39,7 @@ Microsoft 365 管理中心管理员（无论是自己还是通过向组织中选
 您必须是全局Microsoft 365才能执行这些任务。
 
 > [!TIP]
-> 知识管理员应具有中等技术水平，并拥有SharePoint管理员凭据，最好是在组织的教育、学习、培训或员工体验方面表现良好的人员。
+> 知识管理员应具有中等技术水平，并且SharePoint管理员凭据，最好是在组织的教育、学习、培训或员工体验方面表现良好的人员。
 
 ### <a name="add-a-knowledge-admin"></a>添加知识管理员
 
@@ -65,9 +65,9 @@ Microsoft 365 管理中心管理员（无论是自己还是通过向组织中选
 
 2. 在"**角色"** 页上的 **"Azure AD"** 选项卡上，然后选择"**知识管理员"。**
  
-3. 在 **"知识管理员**"面板上的"**分配的** 管理员"选项卡上，选择"删除"，然后选择要从角色中删除的人。 若要确认，请选择"删除 **"。**
+3. 在 **"知识管理员**"面板上的"**分配的管理员**"选项卡上，选择"删除"，然后选择要从角色中删除的人。 若要确认，请选择"删除 **"。**
 
-     !["角色"页Microsoft 365 管理中心显示"已分配管理员"面板以删除用户。](../media/learning/learning-remove-knowledge-admin-1.png)
+     !["角色"页Microsoft 365 管理中心"分配管理员"面板以删除用户。](../media/learning/learning-remove-knowledge-admin-1.png)
 
 ## <a name="configure-settings-for-the-learning-content-sources"></a>配置学习内容源的设置
 
@@ -79,9 +79,9 @@ Microsoft 365 管理中心管理员（无论是自己还是通过向组织中选
 
 2. 在"**组织设置"** 页上的"服务 **"选项卡上**，选择 **"Viva Learning (Preview) "。**
 
-     ![设置显示列出的Microsoft 365 管理中心应用Learning页面。](../media/learning/learning-sharepoint-configure1.png)
+     ![设置页面，Microsoft 365 管理中心列出的Learning应用。](../media/learning/learning-sharepoint-configure1.png)
 
-3. 在 **"Viva Learning (预览**) 面板上，选择要为组织配置的学习内容源，然后选择"保存 **"。**
+3. 在 **Viva Learning (Preview)** 面板上，选择要为组织配置的学习内容源，然后选择"保存 **"。**
 
      ![Learning显示内容源选项Microsoft 365 管理中心面板。](../media/learning/learning-sharepoint-configure2.png)
 
@@ -99,7 +99,7 @@ Microsoft 365 管理中心管理员（无论是自己还是通过向组织中选
 
 ## <a name="third-party-content-providers"></a>第三方内容提供程序 
 
-可用的连接学习提供程序集可能随时更改。 随着计划的发展，将有更多的提供商加入。 可用提供商可能还选择停止与 Viva Learning (Preview) 。
+可用的连接学习提供程序集可能随时更改。 随着计划的发展，将有更多的提供商加入。 可用提供商还可以选择中断与 Viva Learning (Preview) 。
 
 ### <a name="skillsoft-as-a-content-source"></a>将 Skillsoft 作为内容源  
 
@@ -115,4 +115,4 @@ Microsoft 365 管理中心管理员（无论是自己还是通过向组织中选
 
 ## <a name="next-step"></a>后续步骤
 
-[配置 SharePoint 作为 Microsoft Viva Learning (Preview) 的学习内容源](configure-sharepoint-content-source.md)
+[将 SharePoint 配置为 Microsoft Viva Learning (Preview) ](configure-sharepoint-content-source.md)

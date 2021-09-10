@@ -13,13 +13,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: 了解如何查找用于预览Microsoft Viva Learning () 。
+description: 了解如何查找 Microsoft Viva Learning (Preview) 。
 ms.openlocfilehash: f868c90e0dcb280bf3bd7ca592a950d9735143de
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483339"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58942577"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>预览Microsoft Viva Learning (简介) 
 
@@ -30,7 +30,7 @@ Microsoft Viva Learning (预览) 使贵组织的团队和个人能够自然地�
 
 此页面上的资源旨在帮助你开始了解和使用 Viva Learning (Preview) 组织。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 
 本节中的资源可帮助您了解有关什么是 Viva Learning (Preview) 及其如何为组织提供帮助的详细信息。
 

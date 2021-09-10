@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d52fe03786e4fff94ca08fdc7e5c7951a0d6e33
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.openlocfilehash: 6d051666e481bcf74038dc5000ebaadbd142d429
+ms.sourcegitcommit: 095e23ba4181c86a301a25d8c898d25d1befec97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506500"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "58959778"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高级搜寻主动搜寻威胁
 
@@ -32,7 +32,7 @@ ms.locfileid: "58506500"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhunting-abovefoldlink)。
 
-高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 你可以主动检查网络中事件，以查找威胁指示器和实体。 通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。
+高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 你可以主动检查网络中的事件来找到威胁指示器和实体。 通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。
 
 观看此视频，快速概览高级搜寻，以及快速入门的简短教程。
 
@@ -41,7 +41,7 @@ ms.locfileid: "58506500"
 你可以使用相同的威胁搜寻查询来构建自定义检测规则。 这些规则将自动运行，以检查并响应可疑的泄露活动、错误配置的计算机和其他发现。
 
 > [!TIP]
-> 在[安全Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)高级搜寻，使用 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 数据搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
+> 使用 Microsoft 365 Defender中的高级[搜寻](/microsoft-365/security/defender/advanced-hunting-overview)，使用 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 数据搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
 
 在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中Microsoft 365 Defender从 Microsoft [Defender for Endpoint 移动到其他高级搜寻工作流](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
 
@@ -70,10 +70,10 @@ ms.locfileid: "58506500"
 
 ## <a name="data-freshness-and-update-frequency"></a>数据新鲜度和更新频率
 
-高级搜寻数据可以分为两个不同的类型，每种类型合并的方式不同。
+可以将高级搜寻数据分类为两种不同的类型，每种类型以不同的方式合并。
 
 - **事件或活动数据**：填充有关警报、安全事件、系统事件和常规评估的表。 高级搜寻在收集它们传感器将其成功传输到 Defender for Endpoint 后，几乎会立即收到此数据。
-- **实体数据**：使用有关用户和设备的综合信息填充表。 此数据来自相对静态的数据源和动态源，如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
+- **实体数据**：使用有关用户和设备的综合信息填充表。 此数据来自相对静态的数据源和动态源，例如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
 
 ## <a name="time-zone"></a>时区
 
@@ -87,3 +87,5 @@ ms.locfileid: "58506500"
 - [了解架构](advanced-hunting-schema-reference.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)
 - [自定义检测概述](overview-custom-detections.md)
+- [存储帐户概述](/azure/storage/common/storage-account-overview)
+- [Azure 事件中心 — 大数据流式处理平台和事件获取服务](/azure/event-hubs/event-hubs-about)
