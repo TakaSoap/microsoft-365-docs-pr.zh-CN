@@ -21,24 +21,24 @@ search.appverid:
 - MOE150
 description: 了解Microsoft 365哪个订阅适合你的组织。
 ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200742"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>选择Microsoft 365订阅
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfzL9?autoplay=false]
 
-选择正确的Microsoft 365订阅是使服务获得最大功能的关键。 下面&#39;如何比较这些选项并选择适合&#39;适合你的业务的计划。
+选择正确的Microsoft 365订阅是使服务获得最大功能的关键。 下面&#39;如何比较选项并选择适合&#39;适合你的业务的计划。
 
 ## <a name="try-it"></a>试一试！
 
 1. 在浏览器中，搜索 **"Microsoft 365 商业高级版"。**
 2. 打开 **"Microsoft 365 商业高级版"** 页面，然后选择"**查看计划和定价"。** 你可以在此处查看为小型企业定制的订阅。
 3. 向下滚动以查看每个选项可用的功能。
-4. 如果你有较大的业务或具有复杂的 IT 需求，请向下滚动并选择 **"Microsoft 365 企业版"。**
+4. 如果你有一个较大业务或具有复杂的 IT 需求，请向下滚动并选择 **"Microsoft 365 企业版"。**
 5. 选择 **"查看产品和计划**"，然后查看Enterprise及其功能。
 6. 一旦&#39;决定订阅，请选择"立即购买"，然后完成注册过程。
 
@@ -47,7 +47,7 @@ ms.locfileid: "58533179"
 | 服务区域 | 功能 | Microsoft 365 商业标准版 | Microsoft 365 商业高级版 | Office 365 企业版 E3 |
 | --- | --- | --- | --- | --- |
 | **可用的许可证** | 最大用户数 | 300 | 300 | 无限制 |
-| **Office 应用** | 在Office Word、Excel、PowerPoint、OneNote、Access) 、Office Online 的最多 (5 台电脑/Mac 上安装 Office 智能手机 | 商业版 | 商业版 | ProPlus |
+| **Office 应用** | 在 Office多达 5 台电脑/Mac 上安装 (Word、Excel、PowerPoint、OneNote、Access) 、Office Online 的最多 5 台电脑/Mac | 商业版 | 商业版 | ProPlus |
 | **电子邮件 &amp; 日历** | Outlook、Exchange Online | 50 GB | 50 GB | 100 GB |
 | **团队合作中心** | 基于聊天的工作区、联机会议等Microsoft Teams | 是 | 是 | 是 |
 | **文件存储** | OneDrive for Business | 每个用户 1 TB | 每个用户 1 TB | 无限制 |
@@ -72,4 +72,4 @@ ms.locfileid: "58533179"
 
 \*\*\* 打开自动扩展时无限制存档。
 
-若要Microsoft 365 商业高级版其他产品（包括其他Microsoft 365计划）进行比较，请参阅Microsoft 365和中型企业[的许可计划](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
+若要Microsoft 365 商业高级版其他产品（包括其他Microsoft 365计划）进行比较，请参阅[licensing Microsoft 365 for small-medium-businesses](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)。
