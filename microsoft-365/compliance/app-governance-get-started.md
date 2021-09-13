@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: 开始使用应用治理功能来治理你的应用。
-ms.openlocfilehash: 9f74e2c352ccc67adbb7f1b15632cca88c75c51e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171076"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>开始使用应用治理（预览版）
 
@@ -141,7 +142,7 @@ ms.locfileid: "58574888"
 
 如果未参与个人预览，并且希望取消应用治理试用版，则可以与 CXE 联系人通信，或使用以下步骤：
 
-1. 在 Microsoft 365 管理中心中，转到“**账单**” > “**你的产品**”。
+1. 在 Microsoft 365 管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**你的产品**</a>”。
 1. 导航到应用治理试用版，单击三个点，然后选择“**取消订阅**”。
 1. 在生成的浮出窗格中，提供取消原因、任何其他反馈，然后选择“**取消订阅**”。
 1. 在生成的弹出屏幕中选择“**取消订阅**”。 你的试用版已取消，你将失去对应用治理的访问权限，并将删除你的应用治理数据（用于创建应用治理见解和检测的日志数据 - 不会影响电子邮件或其他文件）。

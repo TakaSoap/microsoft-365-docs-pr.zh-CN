@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 开始使用可见性和见解。
-ms.openlocfilehash: 0a986bec512c665372ef2e98155533a49500c5d8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: ac99e9112dc7e0278243121a8530326c88f333dc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171072"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>开始使用可见性和见解
 
@@ -49,6 +49,27 @@ ms.locfileid: "58589396"
   - **未验证**：未获得 [发布商认证](/azure/active-directory/develop/publisher-verification-overview)的应用被视为未验证。
   - **仅应用**：[应用程序权限](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)由无需登录用户即可运行的应用使用。 有权访问整个租户内的数据的应用可能具有更高的风险。
   - **新应用**：过去 7 天内注册的新 Microsoft 365 应用。  
+
+## <a name="view-app-insights"></a>查看应用见解
+
+应用治理的主要价值点之一是能够快速查看应用警报和见解。 若要查看应用的见解，请执行以下操作：
+
+1. 在应用治理门户页面上，选择“**应用**”。
+1. 使用“**类别**”下拉列表，从以下选项中进行选择：
+    - 所有应用
+    - 高权限
+    - 特权过多
+    - 未经验证的发布者
+    - 仅限应用
+    - 新应用
+1. 选择应用名称以查看详细信息。 你可以在应用名称左侧放置复选标记来选择多个应用，以将其另存为已保存的查询。 选择应用名称将打开右侧的详细信息窗格，如下图所示。
+
+:::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="显示所选应用的详细信息窗格的图像。":::
+
+> [!NOTE]
+> 列出的应用将取决于租户中存在的应用。
+
+通过详细信息窗格，还可以查看应用在过去 30 天内的使用情况、已同意使用该应用的用户以及分配给该应用的权限。 管理员可以查看正在生成警报的应用的活动和权限，并决定是否使用“详细信息”窗格中的“**禁用应用**”按钮来禁用该应用。
 
 ## <a name="next-step"></a>后续步骤
 
