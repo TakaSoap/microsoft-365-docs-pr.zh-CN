@@ -20,15 +20,15 @@ ms.custom:
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 如何使用 PowerShell 创建单个或多个Microsoft 365用户帐户。
 ms.openlocfilehash: c096b5b4966bfde9973173b9a0a0c5bf1f0d786c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200429"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 可以使用 PowerShell for Microsoft 365创建用户帐户，包括多个帐户。
 
@@ -40,9 +40,9 @@ ms.locfileid: "58356836"
 |**UserPrincipalName** <br/> |是  <br/> |这是用于登录服务的帐户Microsoft 365名称。 例如 *，CalebS \@ contoso.onmicrosoft.com*。  <br/> |
 |**FirstName** <br/> |否  <br/> ||
 |**LastName** <br/> |否  <br/> ||
-|**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为许可证计划或 SKU) ，从其中向用户帐户分配可用许可证。 许可证定义Microsoft 365帐户可用的服务。 创建帐户时，不必向用户分配许可证，但该帐户必须具有许可证才能访问 Microsoft 365 服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
+|**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为许可证计划或 SKU) 从中向用户帐户分配可用许可证。 许可证定义Microsoft 365帐户可用的服务。 创建帐户时，不必向用户分配许可证，但该帐户必须具有许可证才能访问Microsoft 365服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
 |**密码** <br/> |否  <br/> | 如果您没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。 如果指定密码，则密码需要为 8 到 16 个以下类型的 ASCII 文本字符：小写字母、大写字母、数字和符号。<br/> |
-|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如 *，US* 代表美国 *，FR* 代表法国。 提供此值很重要，因为某些 Microsoft 365服务在某些国家/地区不可用。 无法将许可证分配给用户帐户，除非该帐户已配置此值。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
+|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如 *，US* 代表美国 *，FR* 代表法国。 提供此值非常重要，因为某些 Microsoft 365服务在某些国家/地区不可用。 无法将许可证分配给用户帐户，除非该帐户已配置此值。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。<br/> |
 
 >[!Note]
 >[了解如何使用 Microsoft 365 管理中心。](../admin/add-users/add-users.md)
@@ -118,7 +118,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
     ```
 
-   此示例从文件 *C：\My Documents\NewAccounts.csv* 创建用户帐户，并记录在名为 *C：\My Documents\NewAccountResults.csv文件中*。
+   此示例从文件 *C：\My Documents\NewAccounts.csv* 创建用户帐户，并记录在名为 *C：\My Documents\NewAccountResults.csv的文件中*。
     
     ```powershell
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"

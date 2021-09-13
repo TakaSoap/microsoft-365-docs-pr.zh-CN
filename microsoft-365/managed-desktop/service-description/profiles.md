@@ -13,11 +13,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: e1806a0a21dc5f3fc300442f31da5016ffcf99e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567372"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196657"
 ---
 # <a name="device-profiles"></a>设备配置文件
 
@@ -31,18 +31,18 @@ ms.locfileid: "58567372"
 
 :::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="显示为棱锥的设备配置。说明如下。":::
 
-从根本上说，Microsoft 托管桌面设备的基础包括标准安全基线、合规性策略、Windows更新设置和组。 若要使用Microsoft 托管桌面，每个设备必须包含所有这些元素，管理员未经请求才能更改Microsoft 托管桌面。
+从根本上说，Microsoft 托管桌面设备的基础包括标准安全基线、合规性策略、Windows更新设置和组。 若要使用Microsoft 托管桌面，每个设备必须包含所有这些元素，管理员无需请求更改这些元素Microsoft 托管桌面。
 
 设备配置文件显示在下一个较高级别。 每个Microsoft 托管桌面设备必须分配一 (一个) 配置文件。 管理员可以选择已分配设备的配置文件。
 
-更高级别的是其他 [自定义](customizing.md)项。 每台设备可以具有一个或多个自定义 (或) 自定义。 它们可以修改设备配置文件中的 (层或基础配置) ，或者是一个全新请求，在标准配置的基础上分层。
+更高级别的是其他 [自定义](customizing.md)项。 每台设备可以具有一个或多个自定义 (或) 自定义。 它们可以修改设备配置文件中的 (层或基础配置) ，或者作为一个全新请求，在标准配置的基础上分层。
 
 最上面是你自己的修改，如网络详细信息或应用程序。 设备可以有任意数目的修改，这些修改不会由设备管理或Microsoft 托管桌面。
 
 
 ## <a name="device-profile-details"></a>设备配置文件详细信息
 
-下表总结了设备配置文件配置的每个设置的设置及其默认值。  (，这些设置使用 OMA-URIs.Microsoft Endpoint Manager.) 中的自定义配置文件进行配置。
+下表总结了设备配置文件配置的每个设置的设置及其默认值。  (在后台，这些设置使用 OMA-URIs.Microsoft Endpoint Manager.) 
 
 <br>
 
@@ -64,7 +64,7 @@ ms.locfileid: "58567372"
 
 每个设备配置文件也涉及以下项：
 
-- AAD Azure Active Directory (设备组) 成员资格
+- AAD Azure Active Directory (设备) 动态成员身份
 - 静态成员资格 AAD 设备组
 - 配置Microsoft Endpoint Manager配置文件
 
@@ -73,6 +73,6 @@ ms.locfileid: "58567372"
 
 ## <a name="limitations"></a>限制
 
-你可以像对任何其他策略一样请求设备配置文件及其详细信息的例外。 请记住，你的组织只能有一个设备配置文件Azure Active Directory"租户 (租户) 。 例如，你无法请求敏感数据设备配置文件仅对部分用户禁用 AppLocker。 所有具有敏感数据配置文件的设备都必须具有相同的配置。
+你可以像对任何其他策略一样请求设备配置文件及其详细信息的例外。 请记住，你的组织只能有一个设备配置文件Azure Active Directory" (租户") 。 例如，你无法请求敏感数据设备配置文件仅对部分用户禁用 AppLocker。 所有具有敏感数据配置文件的设备都必须具有相同的配置。
 
 每台设备只能有一个配置文件。 如果给定设备由多个用户使用，则该设备上的所有用户都将具有相同的配置。

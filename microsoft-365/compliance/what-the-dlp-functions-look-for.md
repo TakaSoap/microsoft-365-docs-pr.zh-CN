@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: 了解 DLP (函数) 数据丢失防护功能。
-ms.openlocfilehash: 7dad18402b25b97097eb35729d4009d9add5533f18f3aec25e63a31015e51b32
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 787abc1e7fb4c95392a76f7514ceffd3f7f4dda0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196827"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
-DLP 策略 (数据丢失) 可以使用敏感信息类型来标识敏感项目。 信用卡号和欧盟借记卡号是敏感信息类型的示例。 敏感信息类型查找特定模式。 敏感信息类型通过查看数据的格式、校验和来验证数据，并查找相关的关键字或其他信息。 某些功能由内部函数执行。 例如，信用卡号敏感信息类型使用 函数查找格式设置为到期日期的日期。 这有助于确定数字是信用卡号。
+DLP 策略 (数据丢失) 可以使用敏感信息类型标识敏感项目。 信用卡号和欧盟借记卡号是敏感信息类型的示例。 敏感信息类型查找特定模式。 敏感信息类型通过查看数据的格式、校验和来验证数据，并查找相关的关键字或其他信息。 某些功能由内部函数执行。 例如，信用卡号敏感信息类型使用 函数查找格式设置为到期日期的日期。 这有助于确定数字是信用卡号。
 
 本文介绍这些函数查找的功能，以帮助您了解预定义敏感信息类型如何工作。 有关详细信息，请参阅 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
 
@@ -124,11 +124,11 @@ DLP 策略 (数据丢失) 可以使用敏感信息类型来标识敏感项目。
 |Func_jp_sin_pre_1997|检测日本 1997 年之前|否|
 |Func_kansas_drivers_license_number|检测用户驾驶证号码|否|
 |Func_kentucky_drivers_license_number|检测Ucksucky 驾驶证号码|否|
-|Func_kentucky_massachusetts_virginia_drivers_license_number|检测Ucksucky， Massachusetts， Driver's license number|否|
+|Func_kentucky_massachusetts_virginia_drivers_license_number|检测 Driveruckucky， Massachusetts， Driver's license number|否|
 |Func_latvia_eu_national_id_card|检测拉脱维亚个人代码|否|
 |Func_lithuania_eu_tax_file_number|检测立陶宛个人代码|否|
 |Func_louisiana_drivers_license_number|检测用户驾驶证号码|否|
-|Func_luxemburg_eu_tax_file_number|检测 (的自然人或自然人的) |否|
+|Func_luxemburg_eu_tax_file_number|检测位于该 (的) |否|
 |Func_luxemburg_eu_tax_file_number_non_natural|检测非自然人 (的百分号) |否|
 |Func_maine_drivers_license_number|检测 Maine 驾驶证号码|否|
 |Func_manitoba_drivers_license_number|检测 Manitoba 驾驶证号码|否|
@@ -205,7 +205,7 @@ DLP 策略 (数据丢失) 可以使用敏感信息类型来标识敏感项目。
 |Func_unformatted_itin|检测无格式 US ITIN|是|
 |Func_unformatted_ssn|检测非随机的无格式 US SSN|是|
 |Func_usa_uk_passport|检测美国和英国护照|是|
-|Func_utah_drivers_license_number|检测 使用驱动程序的许可证号|否|
+|Func_utah_drivers_license_number|检测 提供驱动程序的许可证号|否|
 |Func_vermont_drivers_license_number|检测 Vermont 驾驶证号码|否|
 |Func_virginia_drivers_license_number|检测 Driver's license number|否|
 |Func_washington_drivers_license_number|检测 Washington 驾驶证号码|否|
@@ -236,7 +236,7 @@ Func_us_date查找采用通用美国格式的日期。 常用格式为"month/day
 
 ## <a name="func_eu_date"></a>Func_eu_date
 
-Fund_eu_dates E.U 中查找日期 格式 (美国以外的地方，) "日/月/年"、"日-月-年"和"日月年"。 月份的名称或缩写不区分大小写。
+Fund_eu_dates E.U 中查找日期 格式 (美国及美国以外的大多数) ，例如"day/month/year"、"day-month-year"和"day month year"。 月份的名称或缩写不区分大小写。
 
 示例：
 
@@ -261,7 +261,7 @@ Fund_eu_dates E.U 中查找日期 格式 (美国以外的地方，) "日/月/年
   - janv。 févr。 mars avril mai juin juil. ao9 月。 oct. nov. déc.
 - 德语
   - jnuar、februar、mrrz、April、mai、juni augusti、August、September、oktober、November、dezember
-  - Jan./J以n。 2 月，Mrrz Apr. Mai Juni Juni Juni Augi，9 月。正常。 11 月，Dez.
+  - Jan./J以n。 2 月：Mrrz Apr. Mai Juni Juni Juni Augi，9 月。正常。 11 月，Dez.
 - 意大利语
   - gennaio， febbraio， marzo， aprile， mag一， giugno， luglio， agosto， settembre， ottobre， novembre， dicembre
   - genn。 febbr. mar. apr. 洋红色。 giugno luglio ag. sett。 ott。 nov. dic.
@@ -275,9 +275,9 @@ Fund_eu_dates E.U 中查找日期 格式 (美国以外的地方，) "日/月/年
 ## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (弃用) 
 
 > [!NOTE]
-> 此函数已弃用，因为它仅支持葡萄牙语月份名称，现在该名称包含在上面的  `Func_eu_date` 函数中。
+> 此函数已弃用，因为它仅支持葡萄牙语月份名称，现在该名称已包含在上面的  `Func_eu_date` 函数中。
 
-此函数查找葡萄牙语中常用的格式的日期。 此函数的格式与 相同，  `Func_eu_date` 仅在所使用的语言中不同。
+此函数查找在葡萄牙语中常用的格式的日期。 此函数的格式与 相同，  `Func_eu_date` 仅在所使用的语言中不同。
 
 示例：
 

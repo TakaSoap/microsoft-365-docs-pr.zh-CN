@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: 应用程序支持的文件类型Microsoft 365 Advanced eDiscovery，包括 OCR 功能支持的图像Advanced eDiscovery。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4de1051c2f7d3f3ea3d34b624aa67aa16647d85d6f604d4af1b958a6c400cf9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0a637dc0505b74a2b7f7d726ed9a731db8e68c12
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201622"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>支持的文件类型Advanced eDiscovery
 
-Advanced eDiscovery支持许多不同级别的许多文件类型。 支持文件类型在本文的下表中进行了介绍。 此列表尚未最终确定，我们将在继续验证测试时添加新的文件类型。 这些表指示文件类型是否支持文本提取 (以及图像文件) 的光学字符识别或 OCR 文本提取（在本机查看器中可查看）以及 Advanced eDiscovery 中的注释查看器中是否支持。
+Advanced eDiscovery支持许多不同级别的许多文件类型。 支持文件类型在本文的下表中进行了介绍。 此列表尚未最终确定，我们将在继续验证测试时添加新的文件类型。 这些表指示文本提取 (以及图像文件) 的光学字符识别或 OCR 文本提取是否支持文件类型，可以在本机查看器中查看，并且还支持 Advanced eDiscovery 中的注释查看器。
 
 ## <a name="archive--container"></a>存档/容器
 

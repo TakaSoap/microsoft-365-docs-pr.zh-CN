@@ -24,19 +24,19 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: 了解Microsoft 365 2013 和 2016 客户端Office新式验证功能如何以不同方式工作。
-ms.openlocfilehash: a115eec0781645c87bd799d15d4966133b4fd9de40993858912fda71cc5ab485
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解 Microsoft 365 2013 和 2016 客户端Office新式验证功能如何以不同方式工作。
+ms.openlocfilehash: 60b1729d9830fd12141d162c4fe721267e52d437
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53870519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201273"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>新式验证如何适用于 Office 2013、Office 2016 和 Office 2019 客户端应用
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-阅读本文以了解 Office 2013、Office 2016 和 Office 2019 客户端应用如何使用基于 Exchange Online、SharePoint Online 和 Skype for Business Online Microsoft 365 租户上的身份验证配置的新式身份验证功能。
+阅读本文，了解 Office 2013、Office 2016 和 Office 2019 客户端应用如何使用基于 Microsoft 365 租户上适用于 Exchange Online、SharePoint Online 和 Skype for Business Online 的身份验证配置的新式身份验证功能。
 
 > [!NOTE]
 > 旧版客户端应用（如 Office 2010 和 Office for Mac 2011）不支持新式验证，只能与基本身份验证一同使用。
@@ -69,7 +69,7 @@ Office 2013 客户端应用默认支持旧版身份验证。 旧版意味着它�
 
 Office 2016 和 Office 2019 客户端默认支持新式验证，客户端无需任何操作来使用这些新流。 但是，要使用旧版身份验证，需要显式操作。
 
-单击下面的链接以查看 Office 2013、Office 2016 和 Office 2019 客户端身份验证如何与 Microsoft 365 服务一起运行，具体取决于是否启用新式身份验证。
+单击下面的链接以查看 Office 2013、Office 2016 和 Office 2019 客户端身份验证如何与 Microsoft 365 服务一起运行，具体取决于是否启用新式验证。
 
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
 
@@ -84,11 +84,11 @@ Office 2016 和 Office 2019 客户端默认支持新式验证，客户端无需�
 
 |Office客户端应用版本****|注册表项存在？****|新式验证打开？****|为租户启用新式验证的身份验证行为 (默认) ****|为租户关闭新式验证的身份验证行为****|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 2013 Outlook 2016 或 2019 上强制使用新式验证。 <br/> [更多信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在客户端内强制Outlook身份验证。<br/> |
+|Office 2019  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 2013 Outlook 2016 或 2019 上强制使用新式验证。 <br/> [更多信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在客户端中强制Outlook身份验证。<br/> |
 |Office 2019  <br/> |否，或 EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |
 |Office 2019  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |
 |Office 2019  <br/> |是，EnableADAL=0  <br/> |否  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |
-|Office 2016  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 2013、2016 或 2019 上强制使用新式验证。 <br/> [更多信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在客户端内强制Outlook身份验证。<br/> |
+|Office 2016  <br/> |不 <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |是  <br/> |在 2013、2016 或 2019 上强制使用新式验证。 <br/> [更多信息](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|在客户端中强制Outlook身份验证。<br/> |
 |Office 2016  <br/> |否，或 EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |
 |Office 2016  <br/> |是，EnableADAL = 1  <br/> |是  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |首先尝试新式验证。 如果服务器拒绝新式验证连接，则使用基本身份验证。 未启用租户时，服务器将拒绝新式验证。  <br/> |
 |Office 2016  <br/> |是，EnableADAL=0  <br/> |否  <br/> |基本身份验证  <br/> |基本身份验证  <br/> |

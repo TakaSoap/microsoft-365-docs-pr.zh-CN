@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5352a9ce14c8223a7c008702e7ca3166a647b60a1a1024cf2a87f7e0967fab7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f2acedd03cab105c150f3f43d183b749c487d65
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201074"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 适用于危险和漏洞管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "53853555"
 开始之前，请确保满足以下操作系统或平台要求危险和漏洞管理以便正确考虑设备中的活动。
 
 > [!NOTE]
-> 支持用于终结点的危险和漏洞管理和平台可能不同于["Microsoft Defender for Endpoint](minimum-requirements.md)的最低要求"列表。
+> 支持用于测试的危险和漏洞管理和平台可能不同于 Microsoft Defender [for Endpoint](minimum-requirements.md)列表的最低要求。
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>支持的操作系统和平台 (操作系统) 功能
 
