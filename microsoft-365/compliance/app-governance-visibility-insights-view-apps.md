@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 查看你的应用。
 ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574408"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175670"
 ---
 # <a name="view-your-apps"></a>查看你的应用
 

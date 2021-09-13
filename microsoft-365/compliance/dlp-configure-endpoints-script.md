@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
+description: 使用本地脚本在设备上部署配置包，以便它们可以载入到服务。
 ms.openlocfilehash: 18e1230285df0c462000454f2b13ac5bb2245e92
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175585"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -32,7 +32,7 @@ ms.locfileid: "58566046"
 > [!IMPORTANT]
 > 此脚本已优化为在最多 10 台设备上使用。
 >
-> 若要大规模部署，请使用 [其他部署选项](dlp-configure-endpoints.md)。 例如，可以使用使用组策略 载入 Windows 10 设备中提供的脚本，将载入脚本部署到生产中的 10[多个设备](dlp-configure-endpoints-gp.md)。
+> 若要大规模部署，请使用 [其他部署选项](dlp-configure-endpoints.md)。 例如，可以使用在使用组策略的载入Windows 10中提供的脚本，将载入脚本部署到生产中的 10[多个设备](dlp-configure-endpoints-gp.md)。
 
 ## <a name="onboard-devices"></a>载入设备
  
@@ -64,7 +64,7 @@ ms.locfileid: "58566046"
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
+> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
 1. 从 Microsoft 合规性中心获取 [载出包](https://compliance.microsoft.com)
 
@@ -98,7 +98,7 @@ ms.locfileid: "58566046"
 也可以直接在门户上或使用不同的部署工具进行监视。
 
 ### <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
-1. 转到["Microsoft 365合规中心"。](https://compliance.microsoft.com)
+1. 转到Microsoft 365[合规中心。](https://compliance.microsoft.com)
 
 2. 选择 **设置**  >  **载入**  >  **设备"。**
 

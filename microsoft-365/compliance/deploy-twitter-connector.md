@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理员可以设置本机连接器，以将 Twitter 数据导入和存档到Microsoft 365。 在将数据导入Microsoft 365，您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
+description: 管理员可以设置本机连接器，以将 Twitter 数据导入和存档到Microsoft 365。 在将数据导入到 Microsoft 365后，可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的 Twitter 数据的管理。
 ms.openlocfilehash: 52f5e426aa2f5fe90d067879fcf39f97d435a2a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175633"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署连接器以存档 Twitter 数据
 
@@ -36,7 +36,7 @@ ms.locfileid: "58564142"
 
    ![转到Azure Active Directory。](../media/TCimage02.png)
 
-3. 在左侧导航窗格中，单击"应用注册 (**预览**) 然后单击"新建 **注册"。**
+3. 在左侧导航窗格中，单击"预览 (**应用**) ，然后单击"新建 **注册"。**
 
    ![创建新的应用注册。](../media/TCimage03.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "58564142"
 
    ![键入 https://portal.azure.com 重定向 URI。](../media/TCimage04.png)
 
-5. 复制 **应用程序 (客户端) ID** (Directory) **ID，** 并将其保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
+5. 复制 **应用程序 (客户端) ID (** Directory) **ID，** 并将其保存到文本文件或其他安全位置。 在稍后的步骤中使用这些 ID。
 
     ![复制并保存应用程序 ID 和目录 ID。](../media/TCimage05.png)
 
@@ -63,11 +63,11 @@ ms.locfileid: "58564142"
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步骤 2：将连接器 Web 服务从 GitHub部署到 Azure 帐户
 
-1. 转到此 [GitHub 站点，](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)然后单击 **"部署到 Azure"。**
+1. 转到此 [GitHub站点，](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)然后单击 **"部署到 Azure"。**
 
     ![转到 Azure 主页。](../media/FBCimage11.png)
 
-2. 单击" **部署到 Azure"** 后，你将重定向到包含自定义模板页面的 Azure 门户。 填写基本 **信息并****设置详细信息**，**然后单击购买。**
+2. 单击" **部署到 Azure"** 后，你将重定向到具有自定义模板页面的 Azure 门户。 填写基本 **信息并****设置详细信息**，**然后单击购买。**
 
    ![单击"创建资源并键入存储帐户"。](../media/FBCimage12.png)
 
@@ -114,7 +114,7 @@ ms.locfileid: "58564142"
 
    ![配置权限。](../media/TCimage30.png)
 
-7. 保存权限设置后，单击"应用详细信息 **"选项卡，** 然后单击"编辑>**编辑详细信息"。**
+7. 保存权限设置后，单击"应用详细信息 **"选项卡，** 然后单击"编辑>**详细信息"。**
 
    ![编辑应用详细信息。](../media/TCimage31.png)
 
@@ -138,7 +138,7 @@ Twitter 开发人员应用现在可供使用。
 
    ![单击"配置"显示登录页。](../media/FBCimage42.png)
 
-3. 在"租户 ID"框中，键入或粘贴 (步骤 2) 中获取的租户 ID。 在密码框中，键入或粘贴在步骤 2) 中获取的 APISecretKey (，然后单击"设置配置 设置"以显示配置详细信息页。
+3. 在"租户 ID"框中，键入或粘贴 (步骤 2) 中获取的租户 ID。 在密码框中，键入或粘贴在步骤 2) 中获取的 APISecretKey (，然后单击"设置配置 **设置"** 以显示配置详细信息页。
 
    ![使用租户 ID 和 API 密钥登录。](../media/TCimage35.png)
 

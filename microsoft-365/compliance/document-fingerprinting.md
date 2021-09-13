@@ -12,20 +12,20 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建文档指纹。
-ms.openlocfilehash: e82d4947cac96550c9c720a6c55ec21dca4152ba45c7ce114eb3ba07a276a223
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175525"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
-组织中的信息工作人员每天会处理大量的敏感信息。 在安全与合规中心，文档指纹通过标识整个组织使用的标准表单，使保护 &amp; 此信息变得更简单。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建文档指纹。
+组织中的信息工作人员每天会处理大量的敏感信息。 在安全与合规中心内，文档指纹通过标识整个组织使用的标准表单来更轻松地 &amp; 保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建文档指纹。
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>文档指纹的基本方案
 
-文档指纹是一项数据丢失防护 (DLP) 功能，可将标准表单转换为敏感信息类型，可在 DLP 策略的规则中使用该类型。 例如，您可以基于空白父模板来创建文档指纹，然后创建 DLP 策略，用于检测和阻止所有包含敏感内容的传出父模板。 （可选）您可以设置策略提示[](use-notifications-and-policy-tips.md)以通知发件人他们可能正在发送敏感信息，并且发件人应验证收件人是否有资格接收专利。 此过程与组织中使用的任何基于文本的表单一起使用。 您可以上载的其他表单示例包括：
+文档指纹是一项数据丢失防护 (DLP) 功能，可将标准表单转换为敏感信息类型，您可以在 DLP 策略的规则中使用该类型。 例如，您可以基于空白父模板来创建文档指纹，然后创建 DLP 策略，用于检测和阻止所有包含敏感内容的传出父模板。 （可选）您可以设置策略提示[](use-notifications-and-policy-tips.md)以通知发件人他们可能正在发送敏感信息，并且发件人应验证收件人是否有资格接收专利。 此过程与组织中使用的任何基于文本的表单一起使用。 您可以上载的其他表单示例包括：
   
 - 政府表单
 - 符合《健康保险可携性与责任法案》 (HIPAA) 的表单  
@@ -47,13 +47,13 @@ ms.locfileid: "53814216"
 
 ![文档指纹关系图。](../media/Document-Fingerprinting-diagram.png)
   
-专利模板包含空白字段"专利标题"、"专利"和"说明"以及其中每个字段的说明，即单词模式。 上载原始专利模板时，该模板是支持的文件类型之一，以纯文本格式显示。 DLP 将此单词模式转换为文档指纹，文档指纹是一个小的 Unicode XML 文件，其中包含表示原始文本的唯一哈希值，指纹在 Active Directory 中另存为数据分类。  (作为一种安全措施，原始文档本身不会存储在服务中;仅存储哈希值，并且无法从哈希值重新构造原始文档。) 然后，专利指纹将成为您可以与 DLP 策略关联的敏感信息类型。 将指纹与 DLP 策略关联后，DLP 会检测包含与专利指纹匹配的文档的任何出站电子邮件，并根据组织策略处理这些电子邮件。 
+专利模板包含空白字段"专利标题"、"专利"和"说明"以及其中每个字段的说明，即单词模式。 上载原始专利模板时，该模板为受支持的文件类型之一，以纯文本格式显示。 DLP 将此单词模式转换为文档指纹，文档指纹是一个小的 Unicode XML 文件，其中包含表示原始文本的唯一哈希值，指纹在 Active Directory 中另存为数据分类。  (作为一种安全措施，原始文档本身不会存储在服务中;仅存储哈希值，并且无法从哈希值重新构造原始文档。) 然后，专利指纹将成为您可以与 DLP 策略关联的敏感信息类型。 将指纹与 DLP 策略关联后，DLP 会检测包含与专利指纹匹配的文档的任何出站电子邮件，并根据组织策略处理这些电子邮件。 
 
 例如，您可能希望设置一个 DLP 策略，阻止普通员工发送包含专利的传出邮件。 DLP 将使用专利指纹来检测专利并阻止这些电子邮件。 或者，您可能希望让法律部门能够向其他组织发送专利，因为它具有执行此操作的业务需求。 您可以通过在 DLP 策略中为特定部门创建例外来允许特定部门发送敏感信息，也可以允许它们使用业务理由覆盖策略提示。
   
 ### <a name="supported-file-types"></a>支持的文件类型
 
-文档指纹支持与邮件流规则支持的相同文件类型 (也称为传输规则) 。 有关受支持的文件类型的列表，请参阅支持的邮件 [流规则内容检查的文件类型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 关于文件类型的一个快速说明：邮件流规则或文档指纹均支持 .dotx 文件类型，这可能会令人困惑，因为这是 Word 中的模板文件。 当您在本主题或其他文档指纹主题中看到"template"一词时，它是指您构建为标准模板的文档，而非模板文件类型。
+文档指纹支持在邮件流规则中支持的相同文件类型 (也称为传输规则) 。 有关受支持的文件类型的列表，请参阅支持的邮件 [流规则内容检查的文件类型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。 关于文件类型的一个快速说明：邮件流规则或文档指纹均支持 .dotx 文件类型，这可能会令人困惑，因为这是 Word 中的模板文件。 当您在本主题或其他文档指纹主题中看到"template"一词时，它是指您构建为标准模板的文档，而非模板文件类型。
   
 #### <a name="limitations-of-document-fingerprinting"></a>文档指纹的限制
 
@@ -91,7 +91,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-您还可以使用邮件流规则中的数据分类规则包Exchange Online，如以下示例所示。 若要运行此命令，首先需要连接[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell) 另请注意，规则包需要一段时间才能从安全与合规中心同步到Exchange &amp; 中心。
+您还可以使用邮件流规则中的数据分类规则包Exchange Online，如以下示例所示。 若要运行此命令，首先需要[连接Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell) 另请注意，规则包需要一些时间从安全与合规中心同步到Exchange &amp; 中心。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

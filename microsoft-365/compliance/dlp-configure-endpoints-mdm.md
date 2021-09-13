@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: b95ee215e63027b7d7579aebecc091c972fd26ebbc3352a43c1f4dfe69d73826
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175590"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
 
@@ -27,11 +27,11 @@ ms.locfileid: "53892071"
 
 - [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 
-可以使用移动设备管理 (MDM) 解决方案配置设备。 Microsoft 365终结点数据丢失防护通过提供创建OMA-URIs来管理设备的策略，从而支持 MDM。
+可以使用移动设备管理 (MDM) 配置设备。 Microsoft 365终结点数据丢失防护通过提供用于创建OMA-URIs管理设备的策略来支持 MDM。
 
 
-## <a name="before-you-begin"></a>准备工作
-如果你使用的是 Microsoft Intune，则必须已注册设备 MDM。 否则，设置将不会成功应用。 
+## <a name="before-you-begin"></a>开始之前
+如果你使用的是 mdm Microsoft Intune，则必须注册设备 MDM。 否则，设置将不会成功应用。 
 
 有关使用移动设备启用 MDM Microsoft Intune，请参阅设备[注册 (Microsoft Intune) 。 ](/mem/intune/enrollment/device-enrollment)
 
@@ -40,14 +40,14 @@ ms.locfileid: "53892071"
 按照 [Intune 中的说明操作](/intune/advanced-threat-protection)。
 
 > [!NOTE]
-> - 载入 **设备的运行状况策略使用** 只读属性，并且无法修正。
+> - 载入 **设备的运行状况策略** 使用只读属性，并且无法修正。
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具离开并监视设备
 
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
+> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
 1. 从 Microsoft 合规性中心获取 [载出包](https://compliance.microsoft.com/)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "53892071"
 
 ## <a name="related-topics"></a>相关主题
 - [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)
-- [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
 - [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
 - [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

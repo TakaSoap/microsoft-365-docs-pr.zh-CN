@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 了解如何使用数据丢失防护策略和工具Microsoft 365敏感信息，并浏览 DLP 生命周期。
 ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175558"
 ---
 # <a name="learn-about-data-loss-prevention"></a>了解终结点数据丢失防护
 
@@ -34,7 +34,7 @@ ms.locfileid: "58574227"
 - 非 Microsoft 云应用
 - 本地文件共享和本地SharePoint。
 
-Microsoft 365深入内容分析（而不只是通过简单的文本扫描）检测敏感项目。 内容按以下方法进行分析：关键字的主数据匹配、正则表达式评估、内部函数验证和与主要数据匹配接近的辅助数据匹配。 此外，DLP 还使用机器学习算法和其他方法来检测与 DLP 策略匹配的内容。
+Microsoft 365深入内容分析检测敏感项目，而不只是通过简单的文本扫描。 内容按以下方法进行分析：关键字的主数据匹配、正则表达式评估、内部函数验证和与主要数据匹配接近的辅助数据匹配。 此外，DLP 还使用机器学习算法和其他方法来检测与 DLP 策略匹配的内容。
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP 是大型合规性Microsoft 365的一部分
 
@@ -45,10 +45,10 @@ Microsoft 365DLP 只是一种Microsoft 365合规性工具，可用于帮助保�
 Microsoft 365DLP 策略是监视用户对其余敏感项目、传输中的敏感项或使用中的敏感项目执行的活动，并采取保护措施。 例如，当用户尝试采取禁止的操作（如将敏感项目复制到未批准的位置或在电子邮件中共享医疗信息或策略中规定的其他状况）时，DLP 可以：
 
 - 向用户显示一个弹出策略提示，警告他们可能会尝试以不当方式共享敏感项目
-- 阻止共享，并且通过策略提示允许用户替代阻止并捕获用户的理由
+- 阻止共享，并且通过策略提示允许用户覆盖阻止并捕获用户的理由
 - 在没有替代选项的情况下阻止共享
 - 对于处于其余状态的数据，敏感项目可以锁定并移动到安全隔离位置
-- 对于Teams聊天，将不会显示敏感信息
+- 对于Teams，将不会显示敏感信息
 
 默认情况下，所有 DLP 受监视的活动都记录到Microsoft 365[审核日志](search-the-audit-log-in-security-and-compliance.md)，并路由到活动[资源管理器](data-classification-activity-explorer.md)。 当用户执行符合 DLP 策略条件的操作并且配置了警报时，DLP 将在 DLP 警报管理仪表板 [中发出警报](dlp-configure-view-alerts-policies.md)。
 
@@ -73,7 +73,7 @@ Microsoft 365DLP 监视和保护对于用户每天使用的应用程序是本机
 
 **规划 DLP 的业务流程**
 
-DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏感信息。 在规划 DLP 策略时，必须确定涉及敏感项目的业务流程。 用户业务流程有助于确定应允许的适当用户行为以及应防止的不当用户行为。 应先规划策略，在测试模式下部署策略，并首先通过活动资源管理器评估[](data-classification-activity-explorer.md)其影响，然后再在更严格的模式下应用策略。
+DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏感信息。 在规划 DLP 策略时，必须确定涉及敏感项目的业务流程。 用户业务流程可帮助你识别应允许的适当用户行为以及应防止的不当用户行为。 应先规划策略，在测试模式下部署策略，并首先通过活动资源管理器评估[](data-classification-activity-explorer.md)其影响，然后再在更严格的模式下应用策略。
 
 **DLP 的组织文化规划**
 
@@ -87,7 +87,7 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 - Exchange Online电子邮件
 - SharePoint Online 站点
-- OneDrive 账户
+- OneDrive 帐户
 - Teams 聊天和通道消息
 - Microsoft Cloud App Security
 - Windows 10 设备
@@ -99,7 +99,7 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 #### <a name="design-your-policies"></a>设计策略
 
-首先定义你的控制目标，以及如何在各自的工作负载中应用这些目标。 制定实现目标的策略。 可随意从一次一个工作负荷开始，也可以跨所有工作负载开始 - 尚没有影响。
+首先定义你的控制目标，以及如何在各自的工作负载中应用这些目标。 制定实现目标的策略。 可随意从一次一个工作负荷开始，也可以跨所有工作负载开始 ，这还没有任何影响。
 
 #### <a name="implement-policy-in-test-mode"></a>在测试模式下实现策略
 
@@ -132,7 +132,7 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 1. **选择要监视的内容**- Microsoft 365许多预定义的策略模板，可帮助你入门或创建自定义策略。
     - 预定义的策略模板：财务数据、医疗健康数据、隐私数据，所有国家和地区的隐私数据。
     - 使用可用敏感信息类型、保留标签和敏感度标签的自定义策略。
-2. **选择要监视的位置** - 选择要由 DLP 监视的一个或多个位置，以查找敏感信息。 你可以监视：
+2. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. 你可以监视：
 
 位置 | 包含/排除方式|
 |---------|---------|
@@ -184,14 +184,14 @@ DLP 将大量信息报告Microsoft 365监视、策略匹配和操作以及用户
 当 DLP 对敏感项目采取操作时，可以通过可配置的警报通知您该操作。 合规性中心在 DLP 警报管理仪表板 中提供它们，而不是让这些警报在邮箱中可供你 [浏览](dlp-configure-view-alerts-policies.md)。 使用 DLP 警报仪表板配置警报、查看警报、对警报分类并跟踪 DLP 警报的解析。 下面是策略匹配和来自设备的活动生成的警报Windows 10示例。
 
 > [!div class="mx-imgBorder"]
-> ![警报信息。](../media/Alert-info-1.png)
+> ![警报信息](../media/Alert-info-1.png)。
 
 你还可以在同一仪表板中查看关联事件的详细信息以及丰富元数据
 
 > [!div class="mx-imgBorder"]
-> ![事件信息。](../media/Event-info-1.png)
+> ![事件信息](../media/Event-info-1.png)。
 
-### <a name="reports"></a>报表
+### <a name="reports"></a>报告
 
 [DLP 报告](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention)显示了一段时间的广泛趋势，并提供了以下具体见解：
 
@@ -201,7 +201,7 @@ DLP 将大量信息报告Microsoft 365监视、策略匹配和操作以及用户
 
 ### <a name="dlp-activity-explorer"></a>DLP 活动资源管理器
 
-DLP 页面上的"活动资源管理器"选项卡将" *活动* "筛选器预设为 *DLPRuleMatch*。 使用此工具查看与包含敏感信息或应用了标签的内容相关的活动，例如更改了哪些标签、修改了文件并匹配了规则。
+DLP 页面上的活动资源管理器选项卡将 *活动筛选器预设* 为 *DLPRuleMatch*。 使用此工具查看与包含敏感信息或应用了标签的内容相关的活动，例如更改了哪些标签、修改了哪些文件以及匹配了规则。
 
 ![DLPRuleMatch 范围活动资源管理器的屏幕截图。](../media/dlp-activity-explorer.png)
 

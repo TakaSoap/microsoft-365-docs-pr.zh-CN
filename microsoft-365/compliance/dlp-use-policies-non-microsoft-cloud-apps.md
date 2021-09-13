@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将 dlp 策略用于非 Microsoft 云应用。
 ms.openlocfilehash: 5817bad8e02e0aeee6aab88ca1a4cabe45822b51
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175537"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>对非 Microsoft 云应用使用数据丢失防护策略
 
@@ -79,7 +79,7 @@ ms.locfileid: "58571370"
 
    ![Box-US 和 Box-General。](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
-你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每个应用，可能的操作 (取决于云应用 API) 。
+你可以为每种受支持的非 Microsoft 云应用选择各种操作。 对于每一个应用，可能的操作 (取决于云应用 API) 。
 
 ![创建规则。](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 

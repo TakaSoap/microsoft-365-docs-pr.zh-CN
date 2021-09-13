@@ -20,16 +20,16 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: 了解如何激活、续订或向企业版订阅Microsoft 365许可证。
 ms.date: 10/21/2020
-ms.openlocfilehash: 9f928c772d2ae00b529951a2562d4fb3271b825637da561891586aba6f9e67a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175673"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>输入从 Microsoft Open 购买的产品密钥
 
-如果你从 microsoft Microsoft 365[许可证](https://go.microsoft.com/fwlink/p/?LinkID=613298)计划购买了企业版证书，本文适合你。 批量许可购买产品密钥的客户可以按照本主题激活、续订或向订阅添加许可证。
+如果您从 microsoft Microsoft 365[许可证](https://go.microsoft.com/fwlink/p/?LinkID=613298)计划购买了企业版，本文适合您。 批量许可购买产品密钥的客户可以按照本主题激活、续订或向订阅添加许可证。
   
  **立即需要帮助？** [致电 Microsoft 支持人员](..//business-video/get-help-support.md) 。 
   
@@ -37,7 +37,7 @@ ms.locfileid: "53872679"
  
  **有关家庭Microsoft 365或个人** 的帮助，请参阅将产品密钥与产品 [Office。](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
   
- **有关从零Microsoft 365 商业标准版购买的产品的帮助**，请参阅输入从零售商店购买 [的产品密钥](enter-your-product-key.md)。 
+ **有关从零Microsoft 365 商业标准版购买的产品的帮助**，请参阅输入从零售 [商店购买的产品密钥](enter-your-product-key.md)。 
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>激活、续订或添加从 Microsoft Open 购买的订阅的许可证
 
@@ -46,12 +46,12 @@ ms.locfileid: "53872679"
 1. 从合作伙伴购买密钥Microsoft 365，检查收件箱中是否包含来自 Microsoft 的包含激活链接的电子邮件。
     
     > [!TIP]
-    >  该电子邮件会发送给批量许可协议中列为联机管理员的人员。 如果你不确定指定为在线管理员的人，请咨询你的Microsoft 365合作伙伴。 
+    >  该电子邮件会发送给批量许可协议中列为联机管理员的人员。 如果你不确定谁被指定为联机管理员，请咨询你的Microsoft 365合作伙伴。 
   
 2. 通过电子邮件中的链接，使用工作或学校帐户登录，接受开放式许可协议并续订订阅。 有关分步演练，请下载 PDF 指南[Activate Online Services： Microsoft 365 Subscription，](https://go.microsoft.com/fwlink/p/?LinkId=618100)其中介绍了如何激活新订阅、续订现有订阅或向现有订阅添加许可证。
     
 > [!NOTE]
-> 批量许可客户还可以选择在批量许可服务中心中 [激活订阅](https://go.microsoft.com/fwlink/p/?LinkID=282016)。 若要了解如何操作，请下载 PDF 指南[在批量许可服务中心中激活联机服务](https://go.microsoft.com/fwlink/p/?LinkId=618096)。 
+> 批量许可客户还可以选择在批量许可服务中心 [中激活订阅](https://go.microsoft.com/fwlink/p/?LinkID=282016)。 若要了解如何操作，请下载 PDF 指南[在批量许可服务中心中激活联机服务](https://go.microsoft.com/fwlink/p/?LinkId=618096)。 
   
 ## <a name="whats-next"></a>下一步做什么？
 

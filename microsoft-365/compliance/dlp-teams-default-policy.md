@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 了解默认数据丢失防护策略Microsoft Teams
 ms.openlocfilehash: 8f021031bd1dc3672a7aa7123ce01d4c6536fe77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175541"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
 

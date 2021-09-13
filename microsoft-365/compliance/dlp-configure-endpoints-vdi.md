@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft 365 终结点数据丢失防护服务。
-ms.openlocfilehash: d86046f474ce0afe3a21354bd36f9ed433b627384aec314f129702bc43480b4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175581"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
@@ -43,7 +43,7 @@ Microsoft 365终结点数据丢失防护支持非永久性虚拟桌面基础结�
 - 即时提前载入短期会话，在实际预配之前，必须Microsoft 365终结点数据丢失防护。
 - 设备名称通常重新用于新会话。
 
-VDI 设备可以在合规性中心Microsoft 365显示为：
+VDI 设备可以在合规性Microsoft 365显示为：
 
 - 每台设备的单个条目。
 请注意，在这种情况下，创建会话时必须配置相同的设备名称，例如使用无人参与应答文件。
@@ -54,7 +54,7 @@ VDI 设备可以在合规性中心Microsoft 365显示为：
 > [!WARNING]
 > 对于资源配置较低的环境，VDI 启动过程可能会Microsoft 365终结点数据丢失防护载入。
 
-1. 打开 VDI 配置包.zip文件 *(DeviceCompliancePackage.zip)* 从服务载入向导下载的内容。
+1. 打开 VDI 配置.zip文件 *(DeviceCompliancePackage.zip)* 从服务载入向导下载的文件。
 
 2. 在导航窗格中，选择 **"设置**  >  **载入**  >  **"。**
 
@@ -118,7 +118,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 如果脱机服务不是非永久性 VDI 环境的可行选项，应执行以下步骤以确保一致性和传感器运行状况：
 
-1. 启动主映像进行联机维护或修补后，运行一个载出脚本Microsoft 365终结点数据丢失防护传感器。 有关详细信息，请参阅使用本地 [脚本的载出设备](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script)。
+1. 启动主映像进行联机维护或修补后，运行一个 offboarding脚本以Microsoft 365终结点数据丢失防护传感器。 有关详细信息，请参阅使用本地 [脚本的载出设备](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script)。
 
 2. 在 CMD 窗口中运行以下命令，确保传感器已停止：
 
@@ -128,7 +128,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能累积的网络 https://download.sysinternals.com/files/PSTools.zip) 文件夹内容：
+4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe
@@ -143,7 +143,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ## <a name="related-topics"></a>相关主题
 
 - [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)
-- [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入设备Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
 - [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
