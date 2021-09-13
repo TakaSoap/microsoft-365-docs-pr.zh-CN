@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: 46ddc7584b0299a7098b3fbe0758bdd9d4ee914c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162027"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
-保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 电子邮件中的Microsoft 365合规性可帮助您快速检测、捕获电子邮件和邮件通信并执行修正操作，从而Microsoft Teams风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
+保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 通信合规性Microsoft 365快速检测、捕获电子邮件和邮件通信并执行修正操作，帮助最大程度地降低Microsoft Teams风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
 
-## <a name="configure-communication-compliance-for-microsoft-365"></a>配置用户的通信Microsoft 365
+## <a name="configure-communication-compliance-for-microsoft-365"></a>配置客户端的通信Microsoft 365
 
 使用以下步骤为组织配置通信合规性：
 

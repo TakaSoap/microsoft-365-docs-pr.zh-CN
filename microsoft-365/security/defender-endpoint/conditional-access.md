@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ae325d2d6c776c41ef12164ba48da9240e0e628b
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161966"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>启用条件访问以更好地保护用户、设备和数据
 

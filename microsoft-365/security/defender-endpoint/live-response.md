@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161964"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -34,38 +34,38 @@ ms.locfileid: "58747439"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-实时响应使安全运营团队可以即时访问设备 (也称为计算机) 使用远程 shell 连接。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
+实时响应使安全运营团队可以即时访问 (，也称为计算机) 使用远程 shell 连接。 这让你能够执行深入调查工作，并立即采取响应操作，以实时迅速包含识别的威胁。
 
 实时响应旨在通过使安全运营团队能够收集取证数据、运行脚本、发送可疑实体进行分析、修正威胁和主动搜寻新出现的威胁来增强调查。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW]
 
-通过实时响应，分析员可以执行以下所有任务：
+使用实时响应，分析员可以执行以下所有任务：
 
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
-- 在后台下载文件 (新建！) 。
+- 在后台下载新 (！) 。
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的** Windows 版本。
 
-  设备必须运行以下版本的设备之一Windows
+  设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
     - [版本 1903](/windows/whats-new/whats-new-windows-10-version-1903) [和 KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
-    - [版本 1809 (RS 5) ](/windows/whats-new/whats-new-windows-10-version-1809) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [版本 1809 (RS 5 ](/windows/whats-new/whats-new-windows-10-version-1809)) [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [版本 1803 (RS 4) ](/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) 更高版本
-    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
+    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
 
 - **从高级设置页面启用实时响应**。
 
@@ -87,7 +87,7 @@ ms.locfileid: "58747439"
 
   ![错误消息的图像。](images/live-response-error.png)
 
-- **启用实时响应未签名脚本执行** (可选) 。
+- **启用实时响应未签名脚本执行 (** 可选) 。
 
   > [!WARNING]
   > 允许使用未签名脚本可能会增加你面临的威胁。
@@ -219,13 +219,13 @@ ms.locfileid: "58747439"
 
 |命令|功能|
 |---|---|
-|`getfile "C:\windows\some_file.exe" &`|开始在后台下载名为 *some_file.exe* 的文件。|
+|`getfile "C:\windows\some_file.exe" &`|开始下载 *在后台some_file.exe文件* 。|
 |`fg 1234`|将命令 ID 为 *1234* 的下载返回到前台。|
 |
 
 ### <a name="put-a-file-in-the-library"></a>将文件放入库中
 
-实时响应具有一个库，您可以将文件放入其中。 该库存储 (脚本) ，这些脚本可以在租户级别的实时响应会话中运行。
+实时响应具有一个库，您可以将文件放入其中。 库存储可在 (实时响应) 运行的文件，如脚本和脚本。
 
 实时响应允许运行 PowerShell 脚本，但是必须先将文件放入库中，然后才能运行它们。
 
@@ -233,7 +233,7 @@ ms.locfileid: "58747439"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **Upload文件到库"**。
+1. 单击 **Upload文件到库。**
 
 2. 单击 **"** 浏览"，然后选择文件。
 
@@ -256,7 +256,7 @@ ms.locfileid: "58747439"
 
 ## <a name="run-a-powershell-script"></a>运行 PowerShell 脚本
 
-必须先将其上载到库中，然后才能运行 PowerShell 脚本。
+在运行 PowerShell 脚本之前，必须先将其上载到库。
 
 将脚本上载到库后，使用 `run` 命令运行脚本。
 

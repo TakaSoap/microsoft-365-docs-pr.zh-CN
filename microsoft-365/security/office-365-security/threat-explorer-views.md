@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解如何使用威胁资源管理器和实时检测报告调查和响应 Microsoft 365 Defender 门户中的威胁。
+description: 了解如何使用威胁资源管理器和实时检测报告来调查和响应 Microsoft 365 Defender 门户中的威胁。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161915"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -40,7 +40,7 @@ ms.locfileid: "58548710"
 - 如果你有 Microsoft [Defender for Office 365](defender-for-office-365.md)计划 2，则你有资源管理器。
 - 如果你有 Microsoft Defender for Office 365计划 1，则你有实时检测。
 
-首次打开资源管理器 (或实时检测报告) ，默认视图会显示过去 7 天的电子邮件恶意软件检测。 此报告还可以显示 Microsoft Defender 进行Office 365检测，例如由 保险箱[链接](safe-links.md)检测到的恶意 URL，以及由"附件"保险箱[恶意文件](safe-attachments.md)。 此报告可修改为显示过去 30 天内使用 Microsoft Defender (P2 付费订阅Office 365的数据) 。 试用版订阅仅包含过去七天的数据。
+首次打开资源管理器 (或实时检测报告) ，默认视图会显示过去 7 天内的电子邮件恶意软件检测。 此报告还可以显示 Microsoft Defender 进行Office 365检测，例如由["保险箱"链接](safe-links.md)检测到的恶意 URL，以及"附件"保险箱[文件](safe-attachments.md)。 此报告可修改为显示过去 30 天内使用 Microsoft Defender (P2 付费订阅Office 365的数据) 。 试用版订阅仅包含过去七天的数据。
 
 ****
 
@@ -80,7 +80,7 @@ ms.locfileid: "58548710"
 
 ## <a name="email--phish"></a>电子邮件>钓鱼邮件
 
-若要查看此报告，在资源管理器 (或实时检测中，) 查看 \> **电子邮件** \> **钓鱼邮件**" 。 此视图显示标识为网络钓鱼尝试的电子邮件。
+若要查看此报告，在资源管理器 (或实时检测中，) **查看** \> **电子邮件** \> **钓鱼邮件**"。 此视图显示标识为网络钓鱼尝试的电子邮件。
 
 ![查看有关标识为网络钓鱼尝试的电子邮件的数据。](../../media/phish.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "58548710"
 
 ![用户报告的电子邮件。](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
-单击 **"** 发件人"打开查看选项列表。 使用此列表可查看发件人、收件人、报告类型 (用户确定电子邮件是垃圾邮件、垃圾邮件或网络钓鱼邮件等) 的信息。
+单击 **"** 发件人"打开查看选项列表。 使用此列表可查看发件人、收件人、报告 (用户确定电子邮件是垃圾邮件、非垃圾邮件或网络钓鱼邮件等) 的信息。
 
 例如，若要查看有关报告为网络钓鱼尝试的电子邮件的信息，请单击"发件人报告类型"，选择"网络钓鱼"， \> 然后单击"刷新"按钮。
 
@@ -118,12 +118,12 @@ ms.locfileid: "58548710"
 
 ## <a name="email--all-email"></a>电子邮件>所有电子邮件
 
-若要查看此报告，在资源管理器中，选择 **查看** \> **电子邮件** \> **所有邮件**。 此视图显示电子邮件活动（包括由于网络钓鱼或恶意软件而标识为恶意的电子邮件）以及所有非恶意邮件 (普通电子邮件、垃圾邮件和批量邮件) 。
+若要查看此报告，在资源管理器中，选择 **查看** \> **电子邮件** \> **所有邮件**。 此视图显示电子邮件活动的全视图，包括由于网络钓鱼或恶意软件而标识为恶意的电子邮件，以及所有非恶意 (电子邮件、垃圾邮件和批量邮件) 。
 
 > [!NOTE]
 > 如果收到读取要显示 **的数据** 过多的错误，请添加筛选器，如有必要，缩小正在查看的日期范围。
 
-若要应用筛选器，请选择" **发件人**"，选择列表中的某个项目，然后单击"刷新"按钮。 在我们的示例中， **我们将检测技术** 用作筛选器 (提供了多个可用的) 。 查看发件人、发件人的域、收件人、主题、附件文件名、恶意软件系列、Office 365) 中威胁防护功能和策略采取的保护状态 (操作、检测技术 (检测) 等。
+若要应用筛选器，请选择" **发件人**"，选择列表中的某个项目，然后单击"刷新"按钮。 在我们的示例中，我们使用了 **检测技术** 作为筛选器 (提供了多个可用的) 。 查看发件人、发件人的域、收件人、主题、附件文件名、恶意软件系列、Office 365) 中威胁防护功能和策略采取的保护状态 (操作、检测技术 (检测) 恶意软件的行为等。
 
 ![通过检测技术查看有关检测到的电子邮件的数据。](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -131,9 +131,9 @@ ms.locfileid: "58548710"
 
 ## <a name="content--malware"></a>恶意软件>内容
 
-若要查看此报告，在资源管理器 (或实时检测中，) **查看** \> **内容** \> **恶意软件"。** 此视图显示 Microsoft Defender 在[Office 365 Online、SharePoint](mdo-for-spo-odb-and-teams.md)和 OneDrive for Business 中Microsoft Teams 的文件。
+若要查看此报告，在资源管理器 (或实时检测中，) 查看 \> **内容** \> **恶意软件"。** 此视图显示 Microsoft Defender 在[Office 365 Online、SharePoint](mdo-for-spo-odb-and-teams.md)和 OneDrive for Business 中Microsoft Teams恶意Microsoft Teams。
 
-按恶意软件系列、检测技术 (恶意软件检测方法以及工作负荷) 、 (OneDrive、SharePoint或Teams) 。
+按恶意软件系列、检测技术 (检测恶意软件) ，以及工作负荷 (OneDrive、SharePoint或Teams) 。
 
 ![查看有关检测到的恶意软件的数据。](../../media/malware-family.png)
 
@@ -149,11 +149,11 @@ ms.locfileid: "58548710"
 
 ![已筛选为仅显示 Defender 的Office 365触发结果。](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-在此视图中，我们现在查看由附件 触发保险箱[数据](safe-attachments.md)。 在图表下方，我们可以看到有关附件由"附件"检测到的特定保险箱的详细信息。
+在此视图中，我们正在寻找由附件 触发保险箱[数据](safe-attachments.md)。 在图表下方，我们可以看到有关附件由"附件"检测到的特定保险箱的详细信息。
 
 ![有关带检测到附件的电子邮件的特定详细信息。](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
-选择一个或多个项目将激活"操作"菜单，该菜单提供多个选项，供用户选择 (项) 。
+选择一个或多个项目将激活"操作"菜单，该菜单提供了多个选项，可以从中选择所选项目 (选择) 。
 
 ![选择项目将激活"操作"菜单。](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
 
@@ -164,4 +164,4 @@ ms.locfileid: "58548710"
 Explorer (以及实时检测报告) 具有多个强大的筛选器和查询功能，可让你深入了解详细信息，例如首要目标用户、主要恶意软件系列、检测技术等。 每类报告都提供查看和浏览数据的各种方法。
 
 > [!IMPORTANT]
-> 请勿在资源管理器查询栏中使用通配符（如星号或问号 (或实时检测) 。 在"主题"字段中搜索电子邮件时，Explorer (或实时检测) 将执行部分匹配并产生类似于通配符搜索的结果。
+> 请勿在 Explorer 查询栏中使用通配符（如星号或问号 (或实时检测) 。 在"主题"字段中搜索电子邮件时，Explorer (或实时检测) 将执行部分匹配并产生类似于通配符搜索的结果。
