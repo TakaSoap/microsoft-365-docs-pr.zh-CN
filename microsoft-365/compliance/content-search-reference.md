@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: f6c720973f91ae9a202b232d821c33c7f487b76a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ba990ab0478e1dc525101de2d583b800e14f4342
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169675"
 ---
 # <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
 
@@ -96,7 +97,7 @@ ms.locfileid: "58574444"
 
 - 搜索用户邮箱时，不会搜索该用户作为成员的任何团队或 Microsoft 365 组。 类似地，在搜索团队或 Microsoft 365 组时，只会搜索指定的组邮箱和组网站。 不会搜索组成员的邮箱和 OneDrive for Business 帐户，除非你明确将其添加到搜索中。
 
-- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心 **主页 \> 组** 页上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
+- 若要获取团队或 Microsoft 365 组的成员列表，可以查看 Microsoft 365 管理中心 **主页** 的 \>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**组**</a>”页面上的属性。 或者，可以在 Exchange Online PowerShell 中运行以下命令：
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
