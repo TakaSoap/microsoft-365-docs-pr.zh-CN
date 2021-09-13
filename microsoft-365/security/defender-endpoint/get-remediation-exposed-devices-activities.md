@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171268"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>列出修正活动的暴露设备
 
@@ -64,7 +64,7 @@ ms.locfileid: "58683524"
 属性 (id) |数据类型|说明|示例
 :---|:---|:---|:---
 id|String|设备 ID|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|字符串|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
+computerDnsName|String|设备名称|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|String|设备操作系统|WindowsServer2012R2
 rbacGroupName|String|与此设备关联的设备组的名称|服务器
 

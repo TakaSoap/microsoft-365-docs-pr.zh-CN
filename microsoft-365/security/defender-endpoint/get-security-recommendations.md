@@ -1,7 +1,7 @@
 ---
 title: 获取安全建议
 description: 检索与给定设备 ID 相关的安全建议集合。
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 每个设备的安全建议， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 每个设备的安全建议， 威胁& 漏洞管理 api， 适用于 Endpoint tvm api 的 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9debf4c9eecdc339638373646cc54c0578c72a950a1a23d320448f3a4b285c50
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ad13ffcd36b61f3f8f38f834065ac8ea4038981
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171260"
 ---
 # <a name="get-security-recommendations"></a>获取安全建议
 
