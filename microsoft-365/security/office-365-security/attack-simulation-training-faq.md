@@ -17,19 +17,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 计划 2 Office 365培训的常见问题。
+description: 管理员可以了解有关部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 计划 2 Office 365培训的常见问题。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196504"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
-攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
+攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织能够度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼有效负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
 
 有关攻击模拟培训入门的信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -39,13 +39,13 @@ ms.locfileid: "58568092"
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google 网页浏览阻止的网络钓鱼保险箱 URL
 
-URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前 **消息的模拟网络钓鱼 URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
+URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
 
 ![Google Chrome 中的欺骗性网站提前警告。](../../media/attack-sim-chrome-deceptive-site-message.png)
 
 请注意，此问题不会影响Microsoft Edge。
 
-作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的[](https://support.google.com/chrome/a/answer/7532419)本指南操作以允许访问 URL。
+作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的本指南[](https://support.google.com/chrome/a/answer/7532419)允许访问 URL。
 
 有关 [攻击模拟培训当前](attack-simulation-training-get-started.md) 使用的 URL 列表，请参阅使用攻击模拟培训入门。
 
@@ -78,7 +78,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>攻击模拟培训报告不包含任何活动详细信息
 
-攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，审核日志验证你的组织中是否 (已打开该搜索（默认) ）。
+攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证 审核日志搜索是否在你的组织中打开 (默认情况下是否) 。
 
 攻击模拟培训需要审核日志搜索，以便可以捕获、记录和读回事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
 
@@ -104,7 +104,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ![报告状态为"正在进行"。](../../media/attack-sim-in-progress.png)
 
-在过渡到"正在进行"状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
+转换到正在进行状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
 
 - 前 60 分钟每 10 分钟。
 - 每隔 15 分钟，60 分钟到 2 天。
@@ -137,7 +137,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：目标用户可以使用以下几种选项：
 
-- 包括当前 (用户数少于 40，000 的组织可用的) 。
+- 包括当前 (用户数少于 40，000 的组织可用的所有用户) 。
 - 选择特定用户。
 - 从 CSV 文件选择用户。
 - 基于 Azure AD 组的定位。
@@ -160,7 +160,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>问：如何切换到其他语言以用于我的管理门户和培训体验？
 
-答：Microsoft 365或Office 365用户帐户的语言配置是特定和集中的。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
+答：在Microsoft 365或Office 365中，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 [for Business 中的显示语言和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 请注意，配置更改可能需要 30 分钟才能在所有服务之间同步。
 
@@ -179,7 +179,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 答：区域感知传递使用目标用户邮箱的 TimeZone 属性和"not before"逻辑来确定何时传递邮件。 例如，请考虑以下方案：
 
 - 在太平洋时区 (UTC-8) 的上午 7：00，管理员创建并计划一个活动，以在当天上午 9：00 开始。
-- UserA 位于 UTC-5 (东部时区) 。
+- UserA 位于东部时区， (UTC-5) 。
 - UserB 也位于太平洋时区。
 
 同一天上午 9：00，模拟消息将发送到 UserB。 使用区域感知传递，邮件不会在同一天发送给 UserA，因为太平洋时间上午 9：00 是东部时间晚上 12：00。 相反，邮件会于第二天东部时间上午 9：00 发送到 UserA。

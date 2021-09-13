@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 96f7693e83bf4c3f4a1f14f39d99de55f7ef1979
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196039"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -57,13 +57,13 @@ ms.locfileid: "58745021"
 文件扩展名|计算机上任意位置具有扩展名的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/` <p> `/var/*/`
-流程|由 (的完整路径或文件名指定的特定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
+流程|特定进程 (的完整路径或文件名指定) 及其打开的所有文件|`/bin/cat` <p> `cat` <p> `c?t`
 
 文件、文件夹和进程排除项支持以下通配符：
 
 通配符|说明|示例|匹配|不匹配
 ---|---|---|---|---
-\*|匹配任意数目的任何字符，包括无字符 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+\*|匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个) |`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|匹配任何单个字符|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 > [!NOTE]

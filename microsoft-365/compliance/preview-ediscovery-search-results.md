@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 预览 Microsoft 365 合规中心中内容搜索或核心电子数据展示搜索返回的结果示例。
 ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196924"
 ---
 # <a name="preview-ediscovery-search-results"></a>预览电子数据展示搜索结果
 

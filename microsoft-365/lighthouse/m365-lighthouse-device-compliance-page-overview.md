@@ -15,20 +15,20 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse设备合规性页面。
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解"设备合规性"页。
 ms.openlocfilehash: c87f808a3694c1f256a8a4787591a93444cf792f
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196102"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse设备合规性页面概述
 
 > [!NOTE]
 > 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设备合规性"页，查看有关所有客户租户 Intune 设备合规性的见解和信息。  在此页面中，你可以获取跨租户的合规性状态的概述，查看每个租户的设备列表，并获取有关合规性策略和设置的状态报告。
+Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设备合规性"页，查看所有客户租户的 Intune设备合规性相关见解和信息。 在此页面中，你可以获取跨租户的合规性状态的概述，查看每个租户的设备列表，并获取有关合规性策略和设置的状态报告。
 
 ## <a name="overview-tab"></a>"概述"选项卡  
   
@@ -36,7 +36,7 @@ Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设�
 
 若要获取特定客户租户的详细设备合规性信息，请在该租户的任何状态列下选择一个值。 这将打开"设备"选项卡，以便你可以查看所选租户的设备合规性详细信息。
 
-若要将设备合规性数据导出到Excel逗号分隔值 (.csv) 文件，请选择"导出 **"。**
+若要将设备合规性数据导出到文件Excel逗号分隔 (.csv) ，请选择"导出 **"。**
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="&quot;概述&quot;选项卡的屏幕截图。":::
 
@@ -65,7 +65,7 @@ Microsoft 365 Lighthouse通过选择左侧导航窗格中的"设备"打开"设�
 
 在"策略"选项卡上，可以使用"比较"选项查看租户中的设备合规性策略，并比较两个或三个相同平台 **类型的** 策略。
 
-若要查看特定平台上设备的策略，请使用 **"操作系统** "下拉菜单筛选列表。 若要查看一个或多个特定客户租户的策略，请使用" **租户"下拉菜单** 筛选列表。
+若要查看特定平台上设备的策略，请使用 **"操作系统** "下拉菜单筛选列表。 若要查看一个或多个特定客户租户的策略，请使用"租户"下拉菜单筛选列表。
 
 选择列表中的任意策略名称以查看有关该策略的更多详细信息。 如果需要采取措施或查看其他信息，请选择"**查看此策略Microsoft Endpoint Manager"。**
 

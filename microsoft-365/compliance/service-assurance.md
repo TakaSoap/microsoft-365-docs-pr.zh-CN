@@ -15,13 +15,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
-description: 下载第三方审核，了解 Microsoft 如何保护客户数据安全，并了解如何在使用 MICROSOFT OFFICE 365 时遵守 ISO、HIPAA、FINRA 和 FedRAMP。
+description: 下载第三方审核，了解 Microsoft 如何保护客户数据安全，并了解如何在使用 ISO、HIPAA、FINRA 和 FedRAMP 时Office 365。
 ms.openlocfilehash: a6e6de646df2048d880ce099a90c793d11aaff89
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568969"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196896"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全与合规中心内的服务保证
 
@@ -41,11 +41,11 @@ ms.locfileid: "58568969"
     
 - 联邦风险和授权管理项目 (FedRAMP)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Who服务保证Office 365，如何？
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Who服务Office 365，如何？
 
  **新客户和评估 Microsoft 联机** 服务的客户可以访问 Office 365 企业版 E3 和 E5 计划中包含的服务保证， (试用版和付费订阅) 。 如果你没有这些计划之一，并且想要试用服务保证，可以注册[E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)Office 365 企业版试用版。
   
- **默认情况下，O365** 订阅成员可以访问 Office 365 保护中心中的服务保证部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Office 365。 它还提供有关报告的独立第三方审核Office 365。
+ **默认情况下，O365** 订阅成员可以访问 Office 365保护中心中的服务保证部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Office 365。 它还提供有关报告的独立第三方审核Office 365。
  
 ## <a name="choose-your-industry-and-regional-settings"></a>选择你的行业和区域设置
 <a name="Chooseyourindustryregional"> </a>
@@ -67,7 +67,7 @@ ms.locfileid: "58568969"
 
 若要查看和下载内容，请从导航窗格中选择一个选项：
   
-- **合规性报告**，可查看对 Office 365 和其他 Microsoft 云服务的独立审核和评估，如以下屏幕截图中所示。 
+- **合规性报告**，以查看独立审核Office 365和其他 Microsoft 云服务的评估，如以下屏幕截图中所示。 
     
     ![显示服务保证页面：服务合规性报告。](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
@@ -75,7 +75,7 @@ ms.locfileid: "58568969"
     
     ![显示服务保证页面：信任 Microsoft 提供的文档。](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
-- **审核的控件**，用于查看有关Office 365如何满足安全性、合规性和隐私要求的信息，如以下屏幕截图中所示。 
+- **已审核的** 控件，用于查看有关Office 365如何满足安全性、合规性和隐私要求的信息，如以下屏幕截图中所示。 
     
     ![显示服务保证审核控制措施屏幕。](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
@@ -102,4 +102,4 @@ ms.locfileid: "58568969"
 
  **为什么我收到一个错误，指出来自服务保证的文档已损坏？**
   
-大多数服务保证文档都采用 PDF 格式。 选择 **"** 保存"以将这些文件保存到本地计算机，然后从本地计算机打开它们。
+大多数服务保证文档都采用 PDF 格式。 选择 **"** 保存"将这些文件保存到本地计算机，然后从本地计算机打开它们。

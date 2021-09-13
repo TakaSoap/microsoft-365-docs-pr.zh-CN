@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9e06ad5e7ea1db33b50ea3cc4d3fdb2d657f3503
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196045"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -41,16 +41,16 @@ ms.locfileid: "58568908"
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建易读 YAML 文件](#create-ansible-yaml-files)
 - [部署](#deployment)
-- [参考](#references)
+- [References](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
 在开始使用之前，请参阅 [Linux](microsoft-defender-endpoint-linux.md) 上的主 Defender for Endpoint 页面，了解当前软件版本的先决条件和系统要求说明。
 
-此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
+此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署操作手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
 
 - Ansible 需要至少安装在一 (Ansible 调用此控件节点) 。
-- 必须在控制节点和将在这些设备上安装了 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证进行配置。
+- 必须在控件节点和将在这些设备上安装了 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证进行配置。
 - 必须在所有托管节点上安装以下软件：
   - 一个
   - python-apt
@@ -129,11 +129,11 @@ ms.locfileid: "58568908"
 
 - 添加适用于终结点的 Defender 存储库和密钥 `add_apt_repo.yml` ：
 
-    可以从以下频道之一部署 Linux 上的 Defender for Endpoint (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
+    可以从以下频道之一部署 Linux 上的 Defender for Endpoint (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
 
     通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
-    为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-慢 *。*
+    为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
 
     > [!WARNING]
     > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。

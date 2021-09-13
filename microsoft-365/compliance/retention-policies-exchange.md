@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 了解用于 Exchange 的保留的工作原理。
 ms.openlocfilehash: d927927aea3f27ecfb99ca68b37d89820efda006
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196920"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 

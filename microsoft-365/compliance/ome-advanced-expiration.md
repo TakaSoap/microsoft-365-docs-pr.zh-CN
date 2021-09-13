@@ -17,20 +17,20 @@ ms.collection:
 - M365-security-compliance
 description: 使用 Office 365 高级邮件加密自定义品牌模板设置电子邮件的到期日期，以扩展电子邮件安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5cc669a0aae02da413b0e288be9203743d29c20e0fcd870cb99b67154fdf66e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f936ffa62f31e47f51fc1bcb2765195b0ea809af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196940"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 
-Office 365 高级邮件加密[包含在 Microsoft 365 企业版 E5、Office 365 E5、Microsoft 365 E5 (](https://www.microsoft.com/microsoft-365/enterprise/home)非营利组织员工定价) 、Office 365 企业版 E5 (非营利组织员工定价) 和 Office 365 教育版 A5 中。 如果你的组织订阅不包含 Office 365 高级邮件加密，可以使用 Microsoft 365 E3 的 Microsoft 365 E5 合规 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Microsoft 365 E3、Microsoft 365 E3 (非营利组织员工定价) 或 Office 365 SKU 的 Office 365 高级合规版 SKU 加载项购买它。
+Office 365 高级邮件加密[包含在 Microsoft 365 企业版 E5、Office 365 E5、Microsoft 365 E5 (](https://www.microsoft.com/microsoft-365/enterprise/home)非营利组织员工定价) 、Office 365 企业版 E5 (非营利组织员工定价) 和 Office 365 教育版 A5 中。 如果你的组织订阅不包含 Office 365 高级邮件加密，可以使用 Microsoft 365 E3 的 Microsoft 365 E5 合规 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Microsoft 365 E3 的 Office 365 高级合规版 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Office 365 SKU 购买它。
 
 可以在用户发送给使用 OME 门户访问加密电子邮件的外部收件人的电子邮件上使用邮件过期。 您强制收件人使用 OME 门户查看和回复由组织发送的加密电子邮件，具体使用自定义品牌模板指定 Windows PowerShell 中的到期日期。
 
-作为Office 365管理员，当你应用公司品牌自定义组织电子邮件的外观时，还可以指定这些电子邮件的过期时间。 使用 Office 365 高级邮件加密，你可以为来自组织的加密电子邮件创建多个模板。 使用模板，您可以控制收件人有权访问用户发送的邮件的多久。
+作为Office 365管理员，当你应用公司品牌来自定义组织电子邮件的外观时，还可以指定这些电子邮件的过期时间。 使用 Office 365 高级邮件加密，您可以为源自组织的加密电子邮件创建多个模板。 使用模板，您可以控制收件人有权访问用户发送的邮件的多久。
 
 当最终用户收到设置了过期日期的邮件时，用户将看到包装电子邮件中的到期日期。 如果用户尝试打开过期的邮件，OME 门户中将显示错误。
 

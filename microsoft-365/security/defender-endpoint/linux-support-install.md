@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 8787a6bd5818eda5f5302fe149fd7b56db296abd
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196612"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 
@@ -128,7 +128,7 @@ systemctl status mdatp
     其中 `<systemd_path>` 用于 `/lib/systemd/system` Ubuntu 和 Debian 分发， `/usr/lib/systemd/system` 适用于 Rhel、CentOS、Oracle 和 SLES。
    然后重新运行步骤 2。
 
-4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是这样，请尝试将它设置为允许 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
+4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是，请尝试将此设置设置为 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。
 现在，请尝试使用步骤 2 重新启动 mdatp 服务。 在尝试配置更改并重新启动后，出于安全考虑，立即还原配置更改。
 
 5. 如果 `/opt` 目录是符号链接，请为 创建绑定装载 `/opt/microsoft` 。

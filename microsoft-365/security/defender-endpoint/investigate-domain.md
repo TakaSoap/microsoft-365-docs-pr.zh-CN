@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7ce64c7e04030e64427ea44e038c402de34990ce309891f314e60b9808906e66
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0571197882c32f6cf591106de4e5221fdebaf786
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196338"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的域
 
@@ -36,7 +36,7 @@ ms.locfileid: "53894223"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatedomain-abovefoldlink)。
 
-调查域以查看企业网络中设备和服务器是否一直与已知的恶意域通信。
+调查域，以查看企业网络中设备和服务器是否一直与已知的恶意域通信。
 
 可以使用搜索功能或单击设备时间线中的域链接来调查 **域**。
 
@@ -71,7 +71,7 @@ ms.locfileid: "53894223"
 
 " **在组织中观测** 到"选项卡提供有关在 URL 上观测到的事件和关联警报按时间顺序排列的视图。 此选项卡包括时间线和可自定义的表格，其中列出了事件详细信息，如时间、设备和所发生事件的简要说明。 
 
-您可以通过在表格标题上方的文本字段中输入日期来查看不同时间段的事件。 您还可以通过选择时间线的不同区域来自定义时间范围。
+可以通过在表格标题上方的文本字段中输入日期来查看不同时间段的事件。 您还可以通过选择时间线的不同区域来自定义时间范围。
 
 **调查域：**
 

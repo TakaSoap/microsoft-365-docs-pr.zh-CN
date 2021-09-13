@@ -21,11 +21,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: de1a66fcf2b057e2f1254d64286b521928d2c560
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195920"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -33,7 +33,7 @@ ms.locfileid: "58570385"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-本文介绍如何实施推荐的标识和设备访问策略，以保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端。 本指南基于通用 [标识和设备访问](identity-access-policies.md) 策略，还包含一些其他建议。
+本文介绍如何实施推荐的标识和设备访问策略，以保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端。 本指南基于通用 [标识和设备](identity-access-policies.md) 访问策略，还包含一些其他建议。
 
 这些建议基于三种不同的安全和保护层，可基于你的需求粒度应用：**基线**、敏感和 **高度管控**。  You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
@@ -43,17 +43,17 @@ ms.locfileid: "58570385"
 
 为了保护电子邮件，下图说明了从通用标识和设备访问策略更新的策略。
 
-[![用于保护对服务及其Teams的访问的策略更新摘要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
+[![用于保护对服务及其依赖Teams的访问的策略更新摘要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
 请注意添加用于阻止 ActiveSync Exchange Online的新策略。 这将强制使用移动Outlook。
 
 如果在设置Exchange Online策略Outlook策略作用域中包含了策略和策略，则只需创建新策略以阻止 ActiveSync 客户端。 查看下表中列出的策略，并添加建议的策略，或确认已包含这些策略。 每个策略链接到常见标识和设备访问策略中的 [关联配置说明](identity-access-policies.md)。
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将Exchange Online包括在云应用的分配中|
 ||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|将Exchange Online包括在云应用的分配中|
-||[应用 APP 数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保Outlook包含在应用列表中。 请务必为 iOS、Android、 (的每个平台更新策略Windows) |
+||[应用 APP 数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保Outlook包含在应用列表中。 请务必为 iOS、Android、 (平台更新Windows) |
 ||[需要批准的应用和应用保护](identity-access-policies.md#require-approved-apps-and-app-protection)|将Exchange Online包括在云应用列表中|
 ||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|将Exchange Online包括在云应用列表中|
 ||[阻止 ActiveSync 客户端](#block-activesync-clients)|添加新策略|
@@ -66,17 +66,17 @@ ms.locfileid: "58570385"
 
 此策略阻止 ActiveSync 客户端绕过其他条件访问策略。 策略配置仅适用于 ActiveSync 客户端。 通过选择 **["需要应用保护策略"，](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** 此策略将阻止 ActiveSync 客户端。 有关创建此策略的详细信息，请参阅使用条件访问要求 [云应用访问的应用保护策略](/azure/active-directory/conditional-access/app-protection-based-conditional-access)。
 
-- 按照方案[1：Office 365](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)应用需要具有应用保护策略的已批准应用（这将阻止利用基本身份验证的 Exchange ActiveSync 客户端连接到 Exchange Online）中的"步骤 2：使用 ActiveSync (EAS) 为 Exchange Online 配置 Azure AD 条件访问策略"。
+- 按照方案[1：Office 365](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)应用需要具有应用保护策略的已批准应用中的"步骤 2：使用 ActiveSync (EAS) 为 Exchange Online 配置 Azure AD 条件访问策略"，这将阻止利用基本身份验证的 Exchange ActiveSync 客户端连接到 Exchange Online。
 
 您还可以使用身份验证策略禁用 [基本身份验证](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)，这将强制所有客户端访问请求使用新式验证。
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>限制对Exchange Online Outlook 网页版
 
-您可以限制用户在统一设备上从 Outlook 网页版下载附件的能力。 这些设备上的用户可以使用 Office Online 查看和编辑这些文件，而无需在设备上泄露和存储这些文件。 还可以阻止用户在非托管设备上查看附件。
+您可以限制用户在统一设备上从Outlook 网页版附件。 这些设备上的用户可以使用 Office Online 查看和编辑这些文件，而无需在设备上泄露和存储文件。 还可以阻止用户在非托管设备上查看附件。
 
 步骤如下：
 
-1. [连接远程 PowerShell Exchange Online 。](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. [连接远程 PowerShell Exchange Online。](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 2. 如果还没有 OWA 邮箱策略，则使用 [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) cmdlet 创建一个。
 3. 如果要允许查看附件但不允许下载，请使用以下命令：
 

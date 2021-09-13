@@ -18,20 +18,20 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 了解如何使用策略为组织创建敏感信息类型Office 365 邮件加密。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cf9432adbe2cecb889d6e744077d8807ae556089b388f321e1348199e1ee165
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196935"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用邮件加密为组织创建敏感信息类型策略
 
-您可以使用 DLP Exchange规则或数据丢失防护 (DLP) 创建包含此策略的Office 365 邮件加密。 若要创建Exchange流规则，可以使用 EAC Exchange管理 (或 PowerShell) 管理中心。
+您可以使用邮件流规则Exchange或数据丢失防护 (DLP) 创建包含此策略的敏感信息Office 365 邮件加密。 若要创建Exchange流规则，可以使用 EAC Exchange管理 (或 PowerShell) 管理中心。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的邮件流规则创建策略
 
-登录到 EAC Exchange管理 (中心) ，**然后转到"** 邮件流""规则  >  **"。** 在"规则"页上，创建一个适用于Office 365 邮件加密。 您可以基于某些条件（如邮件或附件中是否存在某些关键字或敏感信息类型）创建规则。
+登录到 EAC Exchange管理 () ，**然后转到"** 邮件流""规则  >  **"。** 在"规则"页上，创建一个适用于Office 365 邮件加密。 您可以基于某些条件（如邮件或附件中是否存在某些关键字或敏感信息类型）创建规则。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>使用 PowerShell 中的邮件流规则创建策略
 
@@ -39,7 +39,7 @@ ms.locfileid: "53879283"
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 创建的邮件流规则示例
 
-在 PowerShell 中运行以下命令，创建一个 Exchange 邮件流规则，如果电子邮件或附件包含以下敏感信息类型，则使用"仅加密"选项自动加密发送到组织外部的电子邮件：
+在 PowerShell 中运行以下命令，创建一个 Exchange 邮件流规则，如果电子邮件或附件包含以下敏感信息类型，则使用"仅加密"选项自动加密在组织外部发送的电子邮件：
 
 - ABA 路由号码
 - 信用卡号
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-有关详细信息，请参阅[Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)和[New-TransportRule。](/powershell/module/exchange/new-transportrule)
+有关详细信息，请参阅 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 和 [New-TransportRule](/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-recipients-access-attachments"></a>收件人如何访问附件
 
@@ -69,7 +69,7 @@ Microsoft 加密邮件后，收件人在访问和打开其加密电子邮件时�
 
 ## <a name="view-these-changes-in-the-audit-log"></a>在"管理"中查看审核日志
 
-Microsoft 365审核此活动，并提供给管理员使用。 操作为"New-TransportRule"，下面是安全与合规中心审核日志搜索&代码段：
+Microsoft 365审核此活动，并提供给管理员使用。 操作为"New-TransportRule"，下面是安全与合规中心的审核日志搜索&代码段：
 
 ```text
 *{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*

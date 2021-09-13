@@ -1,6 +1,6 @@
 ---
 title: 双密钥加密(DKE)
-description: 通过 DKE，你可以保护高度敏感的数据，同时保持对密钥的完全控制。
+description: DKE 使你能够保护高度敏感的数据，同时保持对密钥的完全控制。
 author: kccross
 ms.author: krowley
 manager: laurawi
@@ -13,21 +13,21 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 1489671754f26d37abbc9bfbc84f59be26099c9b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196125"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>双密钥加密Microsoft 365
 
-> *适用于：双密钥加密 [（Microsoft 365、Microsoft 365合规性、Azure](https://www.microsoft.com/microsoft-365/business/compliance-management)[信息保护](https://azure.microsoft.com/pricing/details/information-protection)）*
+> *适用于：双密钥加密Microsoft 365、Microsoft 365 [合规性、Azure](https://www.microsoft.com/microsoft-365/business/compliance-management)[信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *说明 [：Azure 信息保护统一标签客户端Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *服务说明 [：Microsoft 365合规性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-双密钥加密 (DKE) 使用两个密钥来访问受保护的内容。 Microsoft 在应用商店中Microsoft Azure一个密钥，你持有另一个密钥。 使用双密钥加密服务维护对其中一个密钥的完全控制。 使用 Azure 信息保护统一标记客户端对高度敏感的内容应用保护。
+双密钥加密 (DKE) 使用两个密钥来访问受保护的内容。 Microsoft 将一个密钥存储在Microsoft Azure中，你持有另一个密钥。 使用双密钥加密服务维护对其中一个密钥的完全控制。 使用 Azure 信息保护统一标记客户端对高度敏感的内容应用保护。
 
 双密钥加密支持云和本地部署。 这些部署有助于确保加密数据在存储受保护数据的位置都保持不透明。
 
@@ -35,7 +35,7 @@ ms.locfileid: "58570889"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>组织何时应采用 DKE
 
-双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对你的大多数数据使用其他解决方案，例如Microsoft 信息保护 Microsoft 托管密钥或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用功能最强大的Office 365服务;不能与 DKE 加密内容一同使用的服务。 例如：
+双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对你的大部分数据使用其他解决方案，例如Microsoft 信息保护 Microsoft 托管密钥或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用最强大的Office 365服务;不能与 DKE 加密内容一同使用的服务。 例如：
 
 - 需要查看附件的传输规则，包括反恶意软件和垃圾邮件
 - Microsoft Delve
@@ -47,7 +47,7 @@ ms.locfileid: "58570889"
 
 SDK Microsoft 信息保护 1.7+ 支持双密钥加密;与 SDK 集成的应用程序将能够通过足够的权限和集成来了解此数据。
 
-我们建议组织使用 Microsoft 信息保护功能 (分类和) 保护大部分敏感数据，并且仅将 DKE 用于任务关键型数据。 双密钥加密与高度管控行业（如金融服务和医疗保健）中的敏感数据相关。
+我们建议组织使用 Microsoft 信息保护功能 (分类和标记) 保护大部分敏感数据，并仅将 DKE 用于任务关键型数据。 双密钥加密与高度管控行业（如金融服务和医疗保健）中的敏感数据相关。
 
 如果你的组织有以下任一要求，可以使用 DKE 来帮助保护内容的安全：
 
@@ -105,7 +105,7 @@ DKE 敏感度标签通过桌面应用中的敏感度功能区Office最终用户�
 1. [在客户端中启用 DKE](#enable-dke-in-your-client)
 1. [将受保护的文件从 HYOK 标签迁移到 DKE 标签](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-完成后，可以使用 DKE 加密文档和文件。 有关信息，请参阅将[敏感度标签应用于](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)你的文件和电子邮件Office。
+完成后，可以使用 DKE 加密文档和文件。 有关信息，请参阅将[敏感度标签应用于你的文件和电子邮件Office。](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
 ### <a name="install-software-prerequisites-for-the-dke-service"></a>安装 DKE 服务的必备软件
 
@@ -131,9 +131,9 @@ DKE 敏感度标签通过桌面应用中的敏感度功能区Office最终用户�
 
 ### <a name="clone-the-dke-github-repository"></a>克隆 DKE GitHub存储库
 
-Microsoft 在一个 DKE 存储库中GitHub文件。 克隆存储库以在本地生成项目供组织使用。 DKE GitHub存储库位于 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) 。
+Microsoft 在数据库存储库中提供 DKE GitHub文件。 克隆存储库以在本地生成项目供组织使用。 DKE GitHub存储库位于 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) 。
 
-以下说明适用于没有经验的 git 或 Visual Studio Code 用户：
+以下说明适用于没有经验的 git 或 Visual Studio Code用户：
 
 1. 在浏览器中，转到 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) ：。
 
@@ -149,15 +149,15 @@ Microsoft 在一个 DKE 存储库中GitHub文件。 克隆存储库以在本地�
    > [!div class="mx-imgBorder"]
    > ![Visual Studio CodeGIT：Clone 选项。](../media/dke-vscode-clone.png)
 
-4. 在文本框中，粘贴从 Git 复制的 URL，然后选择"从 Git **复制GitHub"。**
+4. 在文本框中，粘贴从 Git 复制的 URL，然后选择"克隆 **GitHub"。**
 
 5. 在出现的 **"选择** 文件夹"对话框中，浏览到并选择要存储存储库的位置。 在提示符下，选择"打开 **"。**
 
-    存储库在 Visual Studio Code 中打开，并显示左下角的当前 Git 分支。 例如，分支应为 **主**。 例如：
+    存储库在 Visual Studio Code 中打开，在左下角显示当前 Git 分支。 例如，分支应为 **主**。 例如：
 
    ![显示主分支Visual Studio Code DKE 存储库的屏幕截图。](../media/dke-vscode-main-branch.jpg)
 
-6. 如果你不在主分支上，则需要选择它。 在Visual Studio Code中，选择分支 **，然后从** 显示的分支列表中选择"主"。
+6. 如果你不在主分支上，则需要选择它。 In Visual Studio Code， select the branch and choose main from the **list** of branch that displays.
 
    > [!IMPORTANT]
    > 选择主分支可确保你拥有用于生成项目的正确文件。 如果不选择正确的分支，部署将失败。
@@ -171,9 +171,9 @@ Microsoft 在一个 DKE 存储库中GitHub文件。 克隆存储库以在本地�
 - [密钥访问设置](#key-access-settings)
 - [租户和密钥设置](#tenant-and-key-settings)
 
-在"打开"文件中appsettings.js应用程序设置。 此文件位于在 DoubleKeyEncryptionService\src\customer-key-store 下本地克隆的 DoubleKeyEncryptionService 存储库。 例如，在Visual Studio Code中，您可以浏览到该文件，如下图所示。
+您可以在"打开"文件中appsettings.js应用程序设置。 此文件位于在 DoubleKeyEncryptionService\src\customer-key-store 下本地克隆的 DoubleKeyEncryptionService 存储库。 例如，在Visual Studio Code中，您可以浏览到该文件，如下图所示。
 
-![为 DKE appsettings.json 文件。](../media/dke-appsettingsjson.png)
+![找到 DKE appsettings.js上的文件。](../media/dke-appsettingsjson.png)
 
 #### <a name="key-access-settings"></a>密钥访问设置
 
@@ -201,7 +201,7 @@ Microsoft 在一个 DKE 存储库中GitHub文件。 克隆存储库以在本地�
 
 4. 找到 `AuthorizedRoles` 设置并删除整行。
 
-此 **图像显示appsettings.js** 格式正确的电子邮件授权文件。
+此 **图像显示appsettings.js** 格式正确的文件格式的电子邮件授权。
 
    ![文件appsettings.js电子邮件授权方法的附件。](../media/dke-email-accesssetting.png)
 
@@ -223,7 +223,7 @@ Microsoft 在一个 DKE 存储库中GitHub文件。 克隆存储库以在本地�
 
 4. 找到 `AuthorizedEmailAddress` 设置并删除整行。
 
-此图显示了 **appsettings.js** 角色授权正确设置格式的文件权限。
+此 **图显示了appsettings.js** 角色授权正确设置格式的文件上的名称。
 
    ![appsettings.js显示角色授权方法的文件。](../media/dke-role-accesssetting.png)
 
@@ -233,7 +233,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 ##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>为 DKE 配置租户和密钥设置
 
-1. 打开appsettings.js **on** 文件。
+1. 打开 **"appsettings.json"** 文件。
 
 2. 找到 `ValidIssuers` 设置，并 `<tenantid>` 替换为租户 ID。 可以通过访问 Azure 门户并查看租户属性 找到[租户 ID。](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 例如：
 
@@ -327,13 +327,13 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 2. From the list， choose **Tasks： Run build task**.
 
-   如果没有找到生成任务，请选择" **配置生成任务"，** 然后为 .NET core 创建一个，如下所示。
+   如果未找到生成任务，请选择" **配置生成** 任务"，然后为 .NET core 创建一个，如下所示。
 
    ![为 .NET 配置缺少的生成任务。](../media/dke-configurebuildtask.png)
 
    1. 选择 **"从tasks.js上创建模板"。**
 
-      ![从tasks.jsDKE 的模板创建文件扩展名。](../media/dke-createtasksjsonfromtemplate.png)
+      ![从tasks.jsDKE 的模板创建对文件进行创建。](../media/dke-createtasksjsonfromtemplate.png)
 
    2. 从模板类型列表中，选择 **".NET Core"。**
 
@@ -353,7 +353,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 4. 选择 **"** \> **运行开始调试** "以调试过程。 如果系统提示你选择环境，请选择 **.NET core**。
 
-   .NET 核心调试程序通常启动到 `https://localhost:5001` 。 若要查看测试密钥，请转到 并追加一个正斜杠 `https://localhost:5001` (/) 和密钥的名称。 例如：
+   .NET 核心调试程序通常启动到 `https://localhost:5001` 。 若要查看测试密钥，请转到 并追加 `https://localhost:5001` 正斜杠 (/) 和密钥的名称。 例如：
 
    ```https
    https://localhost:5001/TestKey1
@@ -361,7 +361,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
    密钥应以 JSON 格式显示。
 
-您的设置现已完成。 在发布密钥存储之前，在appsettings.js中，针对 JwtAudience 设置，确保 hostname 的值与 App Service 主机名完全匹配。 您可能已更改为 localhost，以对生成进行疑难解答。
+您的设置现已完成。 在发布密钥存储之前，在 appsettings.json 中，对于 JwtAudience 设置，请确保 hostname 的值与 App Service 主机名完全匹配。 您可能已更改为 localhost，以对生成进行疑难解答。
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>部署 DKE 服务并发布密钥存储
 
@@ -379,7 +379,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 2. 选择订阅和资源组并定义实例详细信息。
 
-   - 输入要安装 DKE 服务的计算机的主机名。 确保该名称与为 on 文件上的 JwtAudience 设置appsettings.js [**的名称**](#tenant-and-key-settings) 。 您为名称提供的值也是 WebAppInstanceName。
+   - 输入要安装 DKE 服务的计算机的主机名。 请确保其名称与在 on 文件上为 JwtAudience 设置appsettings.js [**的名称**](#tenant-and-key-settings) 。 您为名称提供的值也是 WebAppInstanceName。
 
    - 对于 **"发布"，****选择"代码**"，对于 **"运行时堆栈**"，选择 **".NET Core 3.1"。**
 
@@ -440,7 +440,7 @@ DKE 已部署，你可以浏览到已创建的测试密钥。 继续验证 [以�
 
 6. 将发布目录中的所有文件都发送到 zip 文件。 创建.zip文件时，请确保目录中的所有文件都位于文件.zip级别。
 
-7. 从 FTP 客户端，使用复制的连接信息连接到应用服务。 Upload.zip步骤中创建的 web 应用程序根目录的文件。
+7. 从 FTP 客户端，使用复制的连接信息连接到应用服务。 Upload.zip步骤中创建的 web 应用程序根目录。
 
 DKE 已部署，你可以浏览到已创建的测试密钥。 接下来， [验证部署](#validate-your-deployment)。
 
@@ -470,13 +470,13 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 注册 DKE 服务：
 
-1. 在浏览器中，打开Microsoft Azure [门户](https://ms.portal.azure.com/)，然后转到"所有 **服务** \> **标识** \> **应用注册"。**
+1. 在浏览器中，[打开Microsoft Azure门户](https://ms.portal.azure.com/)，然后转到"所有 **服务** \> **标识** \> **应用注册"。**
 
 2. 选择 **"新建注册**"，然后输入有意义的名称。
 
 3. 从显示的选项中选择帐户类型。
 
-   如果对非自定义Microsoft Azure（如 **onmicrosoft.com）** 使用帐户，请选择"仅 microsoft (- 单租户 **) "。**
+   如果对非自定义Microsoft Azure（如 **onmicrosoft.com）** 使用帐户，请选择"仅 Microsoft (- 单租户 **) "。**
 
    例如：
 
@@ -503,7 +503,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 9. 在 **"隐式授予"** 下 **，选中"ID 令牌"** 复选框。
 
-10. 选择 **保存** 以保存所做的更改。
+10. 选择“**保存**”以保存所做的更改。
 
 11. 在左窗格中，选择 **"公开 API"，** 然后在"应用程序 ID URI"旁边，选择"设置 **"。**
 
@@ -525,7 +525,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     1. 将客户端 ID 定义为 `d3590ed6-52b3-4102-aeff-aad2292ab01c` 。 此值是Microsoft Office ID，Office获取密钥存储的访问令牌。
 
-    2. 在 **"授权范围"** 下， **选择user_impersonation** 范围。
+    2. 在 **"授权范围"****下，选择** user_impersonation范围。
 
     3. 选择“添加应用程序”。
 

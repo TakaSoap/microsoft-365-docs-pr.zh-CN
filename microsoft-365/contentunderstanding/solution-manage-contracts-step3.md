@@ -1,5 +1,5 @@
 ---
-title: 第 3 步。 使用 Power Automate 创建处理合同的流程
+title: 第 3 步。 使用 Power Automate 创建流程以处理合同
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Power Automate解决方案来创建流程以处理Microsoft 365合同。
 ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195766"
 ---
-# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建处理合同的流程
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建流程以处理合同
 
-已创建合同管理通道，并附加了SharePoint文档库。 下一步是创建一个Power Automate流，以处理您的SharePoint Syntex标识和分类的合同。 可以通过在文档库中创建Power Automate[流SharePoint此步骤](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
+已创建合同管理通道，并附加了SharePoint文档库。 下一步是创建一个Power Automate流，以处理您的SharePoint Syntex标识和分类的合同。 可以通过在文档库中创建Power Automate流[SharePoint执行此步骤](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)。
 
 对于合同管理解决方案，您需要创建一个Power Automate流以执行以下操作：
 
@@ -145,7 +145,7 @@ ms.locfileid: "58533239"
 
    ![Flow状态为已批准。](../media/content-understanding/status-approved.png)
 
-- 在此解决方案中，合同数据将添加到" **付款"** 选项卡，以便可以管理付款。 可以扩展此过程，以允许流程提交第三方财务应用程序（例如，Dynamics CRM) ）付款 (。
+- 在此解决方案中，合同数据将添加到" **付款"** 选项卡，以便可以管理付款。 可以扩展此过程，以允许流程提交合同，供第三方财务应用程序（例如，Dynamics CRM (）) 。
 
    ![合同已移至"付款"。](../media/content-understanding/for-payout.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "58533239"
     | 审批日期     | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['responseTime']         |
     | 评论     | body ('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response') ？['data']['acComments']         |
     
-    下面的示例演示如何使用公式框中的 Power Automate编写表达式。
+    以下示例演示如何使用公式框中的 Power Automate编写表达式。
 
    ![显示表达式Power Automate的屏幕截图。](../media/content-understanding/expression-formula-power-automate.png)    
 
@@ -263,7 +263,7 @@ ms.locfileid: "58533239"
 
 - 在流中，签出合同文件，将状态更改为"已拒绝"，然后重新签入该文件。 
 
-   ![Flow在合同文件中拒绝状态。](../media/content-understanding/reject-flow.png)
+   ![Flow在合同文件中被拒绝。](../media/content-understanding/reject-flow.png)
 
 - 在你的流中，创建一个自适应卡片，指出合约已被拒绝。
 

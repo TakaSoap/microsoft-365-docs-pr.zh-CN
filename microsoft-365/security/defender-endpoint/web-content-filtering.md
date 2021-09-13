@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 0a8d6ea1805d4783a9326ebd0eeed269ff5fef72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196550"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -70,13 +70,13 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
-从左侧导航菜单中，选择"设置  >    >  **一般**  >  **高级功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
+从左侧导航菜单中，选择"设置  >    >  **终结点常规**  >  **高级功能"。** 向下滚动，直到您看到用于 Web 内容 **筛选的条目**。 将开关切换到 **开** 和 **保存首选项**。
 
 ### <a name="configure-web-content-filtering-policies"></a>配置 Web 内容筛选策略
 
 Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若要管理策略，请转到"设置"下 (终结点  >    >  **Web** 内容) 。 
 
-使用筛选器查找包含特定阻止类别或应用于特定设备组的策略。
+使用筛选器查找包含某些阻止类别或应用于特定设备组的策略。
 
 ### <a name="create-a-policy"></a>创建策略
 
@@ -101,7 +101,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 通过创建自定义指示器策略，可以覆盖 Web 内容筛选中阻止的类别以允许单个网站。 当自定义指示器策略应用于有关设备组时，它将取代 Web 内容筛选策略。
 
-1. 通过访问"终结点Microsoft 365 Defender URL/域设置项"，在 Microsoft 365 Defender 门户  >    >    >    >  **中创建自定义指示器**。
+1. 通过访问终结点指示器URL/域Microsoft 365 Defender，在 设置 门户中  >    >    >    >  **创建自定义指示器**。
 
 2. 输入网站的域。
 
@@ -163,7 +163,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>此预览版中的限制和已知问题
 
-- 如果你Microsoft Edge操作系统配置是 Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
+- 如果你Microsoft Edge操作系统配置是 Server (  >  **systeminfo**  >  **OS Configuration**) ，则仅支持此) 。 网络保护仅在服务器设备的检查模式下受支持，服务器设备负责保护受支持的第三方浏览器上的流量。
 
 - 未分配的设备将在报告内显示不正确的数据。 在"**报告详细信息**  >  **""** 设备组透视表"中，你可能会看到一个包含空白"设备组"字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
 

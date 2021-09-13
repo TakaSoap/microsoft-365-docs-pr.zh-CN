@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7b51a4d9e88ffd7e3b3cfec488cd750baedb0a3ef454edce4ce3784db8c9c421
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa1cb7307fddd815a2a9249c5a98739d21bd2418
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196636"
 ---
 # <a name="remove-devices"></a>删除设备
 
-可以使用管理门户Microsoft 托管桌面管理中删除设备。 此操作是永久性的，但你可以按照注册步骤Microsoft 托管桌面注册[它们。](../get-started/register-devices-self.md)
+可以使用管理门户Microsoft 托管桌面管理中删除设备。 此操作是永久性的，但你可以按照注册步骤再次Microsoft 托管桌面注册[它们](../get-started/register-devices-self.md)。
 
 删除设备时，将发生以下所有情况：
 

@@ -20,25 +20,25 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: 了解如何 Web 部件在 SharePoint Server 2013 和 SharePoint Online 中将内容查询服务Web 部件内容搜索SharePoint性能。
+description: 了解如何在 SharePoint Server 2013 和 SharePoint Online 中将内容查询Web 部件替换为内容搜索Web 部件来提高性能。
 ms.openlocfilehash: 270019b59666c3f52d67648a88c453278149fccd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195689"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>使用内容搜索Web 部件而不是内容Web 部件来改进 SharePoint Online 中的性能
 
 本文介绍如何在 SharePoint Server 2013 和 SharePoint Online 中将内容查询Web 部件替换为内容搜索Web 部件来提高性能。
   
-SharePoint Server 2013 和 SharePoint Online 最强大的新功能之一是内容搜索 Web 部件 (CSWP) 。 This Web 部件 uses the search index to quickly retrieve results which are shown to the user. 在页面中使用内容Web 部件而不是 CQWP Web 部件 (内容) ，为用户提高性能。
+SharePoint Server 2013 和 SharePoint Online 最强大的新功能之一是内容搜索 Web 部件 (CSWP) 。 This Web 部件 uses the search index to quickly retrieve results which are shown to the user. 在页面中使用内容Web 部件而不是 CQWP Web 部件 (CQWP) 来提升用户的性能。
   
 通过内容查询Web 部件内容搜索Web 部件几乎总是可以显著提高 SharePoint Online 上的页面加载性能。 有一些额外的配置可获取正确的查询，但奖励是改进性能和提高用户业绩。
   
 ## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>比较使用内容搜索功能而非内容查询Web 部件获得的性能Web 部件
 
-以下示例显示使用内容搜索服务（而不是内容查询搜索Web 部件可能会获得的相对性能Web 部件。 使用复杂的网站结构和非常广泛的内容查询，效果会更为明显。
+以下示例显示使用内容搜索服务（而不是内容查询）Web 部件时可能获得的相对性能Web 部件。 使用复杂的网站结构和非常广泛的内容查询，效果会更为明显。
   
 此示例网站具有以下特征：
   
@@ -46,7 +46,7 @@ SharePoint Server 2013 和 SharePoint Online 最强大的新功能之一是内�
     
 - 使用自定义"菜"内容类型的列表。
     
-- 在Web 部件中，内容查询很广泛，返回内容类型为"fruit"的所有项。
+- 在Web 部件中，内容查询很广泛，返回内容类型为"结果"的所有项。
     
 - 此示例在 8 个网站中仅使用 50 个项目。 对于内容更多的网站，效果将更加明显。
     
@@ -58,20 +58,20 @@ SharePoint Server 2013 和 SharePoint Online 最强大的新功能之一是内�
   
 ![显示请求持续时间为 924 的屏幕截图。](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration** 指示服务器上为准备页面而完成的工作量。 通过按查询Web 部件内容与搜索功能Web 部件可大大减少呈现页面所花的时间。 相比之下，具有等效内容搜索Web 部件返回相同数量的结果的页面的 **SPRequestDuration** 值为 106 毫秒，如以下屏幕截图中所示： 
+ **SPRequestDuration** 指示服务器上为准备页面而完成的工作量。 通过按查询Web 部件内容与搜索功能Web 部件可大大减少呈现页面的时间。 相比之下，具有等效内容搜索Web 部件返回相同数量的结果的页面的 **SPRequestDuration** 值为 106 毫秒，如以下屏幕截图中所示： 
   
 ![显示请求持续时间为 106 的屏幕截图。](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>在 Web 部件 Online SharePoint内容搜索
 
-添加内容搜索Web 部件与常规内容查询查询Web 部件。 请参阅 Configure *a Content Search Web 部件* in Web 部件 中的"添加内容搜索 [SharePoint。](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)
+添加内容搜索Web 部件与常规内容查询查询Web 部件。 请参阅 Configure *a Content Search Web 部件* in [Web 部件中的](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)"添加内容搜索SharePoint。
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>为内容搜索服务创建正确的搜索Web 部件
 
-添加内容搜索搜索Web 部件，您可以优化搜索并返回您需要的项目。 有关如何执行此操作的详细说明，请参阅在 SharePoint 中配置内容搜索 Web 部件 中的"在内容搜索 *Web 部件* 中配置高级查询来显示 [内容SharePoint。](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)
+添加内容搜索搜索Web 部件，您可以优化搜索并返回您需要的项目。 有关如何执行此操作的详细说明，请参阅在 SharePoint 中配置内容搜索服务中的"在内容搜索 *Web 部件* 中配置高级查询Web 部件内容 [SharePoint。](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)
   
 ## <a name="query-building-and-testing-tool"></a>查询生成和测试工具
 
-有关生成和测试复杂查询的工具，请参阅 Codeplex 上的 [搜索查询](https://sp2013searchtool.codeplex.com/) 工具。 
+有关生成和测试复杂查询的工具，请参阅 Codeplex 上的 [搜索](https://sp2013searchtool.codeplex.com/) 查询工具。 
   
 

@@ -19,11 +19,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 91ec2807db4a4c384dabcf20634162b3a838274e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400351"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195915"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
@@ -35,11 +35,11 @@ ms.locfileid: "58400351"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是拥有多个邮箱的Exchange Online管理员，我们建议你使用"提交"页面，Microsoft 365 Defender门户。  有关详细信息，请参阅使用提交门户将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用"提交"页面，Microsoft 365 Defender门户。  有关详细信息，请参阅使用提交门户将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 如果组织的用户在收件箱中收到垃圾邮件 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，可能很令人沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
-你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (错误邮件) 以及向 Microsoft 提交网络钓鱼邮件来帮助此过程。
+你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (允许的) 错误邮件和钓鱼邮件来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很高，我们可能无法回答所有分析请求。
@@ -56,13 +56,13 @@ ms.locfileid: "58400351"
    - **垃圾邮件**： `junk@office365.microsoft.com`
    - **网络钓鱼**： `phish@office365.microsoft.com`
 
-2. 将垃圾邮件或网络钓鱼邮件拖放到新邮件中。 这会将垃圾邮件或网络钓鱼邮件另存为新邮件中的附件。 如果我们需要原始邮件，请不要复制和粘贴邮件内容或转发 (以便检查邮件头) 。
+2. 将垃圾邮件或网络钓鱼邮件拖放到新邮件中。 这会将垃圾邮件或网络钓鱼邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容，或将邮件转发 (我们需要原始邮件，以便检查邮件头) 。
 
    > [!NOTE]
    >
    > - 可以在新邮件中附加多个邮件。 确保所有邮件类型相同：网络钓鱼邮件或垃圾邮件。
    > - 保留新的邮件正文空白。
-   > - 在附加 (Web (Outlook格式) 使用 .msg (或 .eml Outlook 默认) 格式。
+   > - 在附加 (Web (格式Outlook使用 .msg) 或 .eml (Outlook 默认) 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -78,13 +78,13 @@ ms.locfileid: "58400351"
 
 1. 创建一封作为收件人的新 `not_junk@office365.microsoft.com` 空白电子邮件。
 
-2. 将错误标识的邮件拖放到新邮件中。 这会将错误标识的邮件另存为新邮件中的附件。 如果我们需要原始邮件，请不要复制和粘贴邮件内容或转发 (以便检查邮件头) 。
+2. 将错误标识的邮件拖放到新邮件中。 这会将错误标识的邮件另存为新邮件中的附件。 请勿复制和粘贴邮件内容，或将邮件转发 (我们需要原始邮件，以便检查邮件头) 。
 
    > [!NOTE]
    >
    > - 可以在新邮件中附加多个邮件。 确保所有邮件类型相同：网络钓鱼邮件或垃圾邮件。
    > - 保留新的邮件正文空白。
-   > - 在附加 (Web (Outlook格式) 使用 .msg (或 .eml Outlook 默认) 格式。
+   > - 在附加 (Web (格式Outlook使用 .msg) 或 .eml (Outlook 默认) 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -93,7 +93,7 @@ ms.locfileid: "58400351"
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>从提交到 Microsoft 的数据存储在何处？
 
-数据位于北美数据中心Office 365合规性边界。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。
+数据位于北美数据中心Office 365合规性边界。 工程团队的分析人员会审查这些数据，以帮助提高筛选器的有效性。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>创建邮件流规则以接收报告给 Microsoft 的邮件的副本
 

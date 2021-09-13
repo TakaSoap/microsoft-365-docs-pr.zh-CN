@@ -16,18 +16,18 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 组、团队和团队的生命周期结束Yammer。
-ms.openlocfilehash: 9532fb7f7c57cf883a0c4d989c5372239eab1c9666890dabfa598cacdbb652cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171520"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和团队的生命周期结束Yammer
 
 Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团队时，连接服务中的大部分信息也会被删除。 本文介绍在删除信息之前将信息从组或团队中移动来保留信息的选项。
 
-对于不再需要的组或团队，常见做法是将文件从团队中移到其他位置（如文档库）SharePoint存档。 此做法基于旧式工作风格，其中信息存储在文件和文件夹中，并且通过电子邮件进行通信。
+对于不再需要的组或团队，常见做法是将文件从团队中移到其他位置（如文档库）SharePoint存档。 此做法基于旧式工作，其中信息存储在文件和文件夹中，并且通过电子邮件进行通信。
 
 下表概述了与组和团队关联的服务，以及每个组和团队中的内容的关键类型：
 
@@ -37,7 +37,7 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 |表单|调查结构和结果|
 |OneNote|笔记本|
 |Outlook|邮件和日历|
-|Planner|Project状态和任务信息|
+|规划器|Project状态和任务信息|
 |Power Automate|工作流|
 |Power BI|数据、报表和仪表板|
 |Project网页|Project计划|
@@ -58,15 +58,15 @@ Microsoft 365组和Microsoft Teams使用多个连接的服务。 删除组或团
 
 团队和组所有者以及 IT 管理员在删除组或团队时需要考虑三个关键方面。
 
-**内容**
+**Content**
 
 团队不再存在后，是否需要保留内容？ 是否足以依赖保留功能Microsoft 365，还是应用和服务中无法提供保留的一些内容？ 是否需要保留内容以用于记录管理、存档或将来使用和参考目的？
 
-为了避免任何潜在的数据丢失，必须先提出这些问题，然后才能存档或删除任何团队。
+为了避免任何潜在的数据丢失，必须先询问这些问题，然后才能存档或删除任何团队。
 
 **服务**
 
-内容是否需要保持其当前工作形式？ 例如，Power BI报表是否需要继续可供访问？ 窗体结果是否需要在可视摘要视图中可用？ 列表中列表是否SharePoint链接或嵌入到任何位置？
+内容是否需要保持其当前工作形式？ 例如，Power BI报告是否需要继续可访问？ 窗体结果是否需要在可视摘要视图中可用？ 列表中列表是否SharePoint链接或嵌入到任何位置？
 
 在删除基础组之前，必须提出这些问题，因为导出内容可能不够用。
 
@@ -89,11 +89,11 @@ Teams内容主要是对话形式。
 
 ### <a name="archiving-a-team"></a>存档团队
 
-存档 [团队的好处是](/microsoftteams/archive-or-delete-a-team) ，它可以像现在一样提供对团队的完全访问权限。 用户仍可浏览频道对话并打开文件，即使他们未处于活动状态。 此外，如果需要继续处理团队，可以取消存档 (例如，如果项目已) 。
+存档 [团队的好处是](/microsoftteams/archive-or-delete-a-team) ，它可以像现在一样提供对团队的完全访问权限。 用户仍可以浏览频道对话并打开文件，即使他们未处于活动状态。 此外，如果需要继续处理团队， (例如，如果项目已扩展为) 。
 
-当团队由所有者存档时，对于团队中的内容以及关联的网站（如果选中）的成员，该团队SharePoint只读。 此操作的目标是确保频道中的对话保持其现有状态，以及基于SharePoint的内容（如文件和 Wiki）。
+当所有者存档团队时，对于团队中的内容和关联的网站（如果选中）的成员，该团队SharePoint只读。 此操作的目标是确保频道中的对话保持其现有状态，以及基于SharePoint的内容（如文件和 Wiki）。
 
-在SharePoint网站中没有任何可见更改。 但是，无法更改任何文件或列表，因为SharePoint组的权限设置为Microsoft 365 **网站访问者**。 这包括团队OneNote笔记本，存储在网站内的网站资产库中SharePoint笔记本。
+在SharePoint网站中没有任何可见更改。 但是，不能更改任何文件或列表，因为 SharePoint 组的权限设置为Microsoft 365 **网站访问者**。 这包括团队OneNote笔记本，存储在网站内的网站资产库中SharePoint笔记本。
 
 存档团队后，基础 Microsoft 365 组仍受过期策略 (如果设置为) ，则所有者必须继续续订团队。
 
@@ -117,7 +117,7 @@ Teams内容主要是对话形式。
 
 **将结果导出到电子表格**
 
-如果需要保留表单响应的数据，可以通过将结果导出到电子表格中Excel[实现](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 这将仅将问题及其响应导出为数据，不包括由 Forms 创建的图形。
+如果需要保留表单响应的数据，则可以通过将结果导出到电子表格Excel[实现](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 这将仅将问题及其响应导出为数据，不包括由 Forms 创建的图形。
 
 **删除表单**
 
@@ -155,13 +155,13 @@ Teams内容主要是对话形式。
 
 管理员可以使用第三方工具在邮箱之间迁移电子邮件和日历内容，而无需任何用户干预。 一个潜在的存储位置可能是完全作为组邮箱内容的"存档"创建的共享邮箱。
 
-## <a name="planner"></a>Planner
+## <a name="planner"></a>规划器
 
 每个组或团队可以有多个计划。 在离开过程中，确保满足每个计划的保留要求非常重要。 与其他服务一样，Planner 中的内容有若干种离开的方法。
 
 **将计划导出到电子表格**
 
-如果只需要保留计划的副本以便保留记录，最简单的方法是将计划导出到一个Excel[电子表格](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a)。 这是单向操作 - 无法从电子表格导入计划。
+如果只需要保留计划副本以用于保留记录，最简单的方法是将计划导出到一个Excel[电子表格](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a)。 这是单向操作 - 无法从电子表格导入计划。
 
 > [!IMPORTANT]
 > 将计划导出Excel将在计划中获取大部分信息，但不包括注释、链接或文件。
@@ -176,7 +176,7 @@ Teams内容主要是对话形式。
 
 ## <a name="power-automate"></a>Power Automate
 
-在Power Automate创建且与组或团队关联的流不属于该组。 它们归创建者所有，仅与其他用户和组共享。 因此，如果删除组或团队，则它们不会受到影响。
+在Power Automate中创建且与组或团队关联的流不属于该组。 它们归创建者所有，仅与其他用户和组共享。 因此，如果删除组或团队，则它们不会受到影响。
 
 **更改流的所有权**
 
@@ -192,7 +192,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 **将报告复制到其他工作区**
 
-如果在删除组或工作组后需要报表，可以将报表从现有工作区复制到[Power BI。](/power-bi/connect-data/service-datasets-copy-reports)
+如果在删除组或工作组后需要报表，可以将报表从现有工作区复制到其他工作区[Power BI。](/power-bi/connect-data/service-datasets-copy-reports)
 
 **从仪表板或报表导出数据**
 
@@ -200,15 +200,15 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 ## <a name="project"></a>Project
 
-在 Web Project 中创建的项目和路线图与 Microsoft 365 组相关联，并且具有与 Power BI 类似的Power BI。
+在 Web Project 中创建的项目和路线图与 Microsoft 365 组相关联，并且具有类似于Power BI。
 
 **将项目分配给另一个组**
 
-如果需要在组或工作组的生命周期之外保持项目的功能状态，可以将其分配给其他Microsoft 365[组](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project)。 这可以使用 Dynamics 365 管理中心完成。
+如果需要在组或工作组的生命周期之外保持项目的功能状态，可以将其分配给不同的Microsoft 365[组](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project)。 这可以使用 Dynamics 365 管理中心完成。
 
 **从项目或路线图导出数据**
 
-使用 Dynamics 365 管理中心，可以导出项目中 [的用户](/project-for-the-web/export-user-data-from-project-for-the-web) 数据到电子表格。 还可将数据导出到Project文件 (。MPP) PowerShell 创建和 XML 文件格式。
+使用 Dynamics 365 管理中心，可以导出项目中的用户 [数据到电子表格](/project-for-the-web/export-user-data-from-project-for-the-web) 。 还可将数据导出到Project文件 (。MPP) PowerShell 创建和 XML 文件格式。
 
 ## <a name="sharepoint"></a>SharePoint
 
@@ -231,7 +231,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 **移动文件**
 
-此外，可以将文件移动到网站中的[SharePoint，如不同网站中的库](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc)。
+此外，可以将文件移动到网站中的[另一SharePoint如不同网站中的库](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc)。
 
 **导出列表**
 
@@ -245,7 +245,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
-与 Power Automate一样，Stream 中与组或团队关联的视频实际上并不归组所有，在删除组时不会删除。 Stream 中的视频归上传或创建视频的用户所有，即使他们添加用户或组作为所有者。 在频道中Teams会议归开始录制的人所有。
+与Power Automate一样，Stream 中与组或团队关联的视频实际上并不归组所有，在删除组时不会删除。 Stream 中的视频归上传或创建视频的用户所有，即使他们添加用户或组作为所有者。 在频道中Teams会议归开始录制的人所有。
 
 **添加其他所有者**
 
@@ -261,7 +261,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 
 **将对话移动到其他组或社区**
 
-对话可以移动到其他用户Yammer组，而不只是所有者或管理员。 这一点在经典[Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872) [和新的 Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)接口中都可行。
+对话可以通过任何用户Yammer移动到另一个组，而不只是所有者或管理员。 这一点在经典[Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872) [和新的 Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)接口中都可行。
 
 **导出网络数据**
 

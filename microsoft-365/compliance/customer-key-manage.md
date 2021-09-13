@@ -12,16 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 设置客户密钥后，了解如何通过还原 AKV 密钥、管理权限以及创建和分配数据加密策略来管理它。
-ms.openlocfilehash: cbfc93413aa7abfb37c201b8446050b1242461ac
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7fc985aaaf0cf0222a6cd02063207b2b1709ac25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196980"
 ---
 # <a name="manage-customer-key"></a>管理客户密钥
 
-为用户设置客户密钥Office 365，需要在 DEP 策略中创建和分配一个或多个 (加密) 。 分配 DESP 后，你可以管理密钥，如本文中所述。 在相关主题中了解有关客户密钥的信息。
+为用户设置客户密钥Office 365，需要在 DEP 策略中创建并分配一个或多个 (加密) 。 分配 DESP 后，你可以管理密钥，如本文中所述。 在相关主题中了解有关客户密钥的信息。
 
 ## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>创建一个 DEP 以用于所有租户用户的多个工作负载
 
@@ -29,7 +29,7 @@ ms.locfileid: "58400255"
 
 若要创建多工作负荷 DEP，请按照以下步骤操作：
   
-1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Windows PowerShell 窗口中连接到 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Exchange Online 窗口中连接到 Windows PowerShell [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 若要创建 DEP，请使用 New-M365DataAtRestEncryptionPolicy cmdlet。
 
@@ -55,7 +55,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Contoso_Global" -AzureKeyIDs "https://
 
 ### <a name="assign-multi-workload-policy"></a>分配多工作负荷策略
 
-使用 cmdlet 分配 deP Set-M365DataAtRestEncryptionPolicyAssignment cmdlet。 分配策略后，Microsoft 365 DEP 中标识的密钥加密数据。
+使用 cmdlet 分配 DEP Set-M365DataAtRestEncryptionPolicyAssignment cmdlet。 分配策略后，Microsoft 365 DEP 中标识的密钥加密数据。
 
 ```powershell
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy <PolicyName or ID>
@@ -71,17 +71,17 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 ## <a name="create-a-dep-for-use-with-exchange-online-mailboxes"></a>创建一个 DEP 以用于Exchange Online邮箱
 
-开始之前，请确保已完成设置 Azure 密钥保管库所需的任务。 有关信息，请参阅 [设置客户密钥](customer-key-set-up.md)。 通过远程连接到远程连接到使用 Exchange Online，Windows PowerShell。
+开始之前，请确保已完成设置 Azure 密钥保管库所需的任务。 有关信息，请参阅 [设置客户密钥](customer-key-set-up.md)。 通过远程连接到具有远程连接Exchange Online完成Windows PowerShell。
 
-DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您将 DEP 分配给邮箱中的Microsoft 365。 Microsoft 365将使用策略中标识的密钥来加密邮箱。 若要创建 DEP，您需要在安装期间获取的密钥保管库 URI。 有关信息，请参阅[获取每个 Azure 密钥保管库密钥的 URI。](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)
+DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您将 DEP 分配给邮箱中的Microsoft 365。 Microsoft 365将使用策略中标识的密钥加密邮箱。 若要创建 DEP，您需要在安装期间获取的密钥保管库 URI。 有关信息，请参阅[获取每个 Azure 密钥保管库密钥的 URI。](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)
 
 请记住！ 创建 DEP 时，可以在两个不同的 Azure 密钥保管库中指定两个密钥。 在两个独立的 Azure 区域创建这些密钥以确保地理位置冗余。
 
 若要创建用于邮箱的 DEP，请按照以下步骤操作：
   
-1. 在本地计算机上，使用在组织中具有全局管理员或Exchange Online管理员权限的工作或学校帐户，在 Exchange Online 窗口中连接到 Windows PowerShell [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+1. 在本地计算机上，使用在组织中具有全局管理员或 Exchange Online 管理员权限的工作或学校帐户，在 Exchange Online 窗口中连接到 Windows PowerShell [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. 若要创建 DEP，请通过New-DataEncryptionPolicy命令使用 cmdlet。
+2. 若要创建 DEP，请通过New-DataEncryptionPolicy命令来使用 cmdlet。
 
    ```powershell
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
@@ -107,7 +107,7 @@ DEP 与 Azure Key Vault 中存储的一组密钥相关联。 您将 DEP 分配�
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>将 DEP 分配给邮箱
 
-使用 cmdlet 将 DEP 分配给Set-Mailbox cmdlet。 分配策略后，Microsoft 365使用 DEP 中标识的密钥加密邮箱。
+使用 cmdlet 将 DEP Set-Mailbox邮箱。 分配策略后，Microsoft 365使用 DEP 中标识的密钥加密邮箱。
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -115,13 +115,13 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 其中 *MailboxIdParameter* 指定用户邮箱。 有关此 cmdlet Set-Mailbox，请参阅 [Set-Mailbox](/powershell/module/exchange/set-mailbox)。
 
-在混合环境中，您可以将 DEP 分配给同步到您的 Exchange Online 租户中的内部部署邮箱数据。 若要为此同步的邮箱数据分配 DEP，请使用 Set-MailUser cmdlet。 有关混合环境中邮箱数据的信息，请参阅使用混合新式验证的 Outlook [for iOS 和 Android 本地邮箱](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。
+在混合环境中，您可以将 DEP 分配给同步到您的 Exchange Online 租户中的内部部署邮箱数据。 若要为此同步的邮箱数据分配 DEP，请使用 Set-MailUser cmdlet。 有关混合环境中邮箱数据详细信息，请参阅使用混合新式验证的 Outlook [for iOS 和 Android 本地邮箱](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-其中 *，MailUserIdParameter* 指定邮件 (也称为启用邮件的用户) 。 有关此 cmdlet Set-MailUser，请参阅 [Set-MailUser](/powershell/module/exchange/set-mailuser)。
+其中 *MailUserIdParameter* 指定邮件 (也称为启用邮件的用户) 。 有关此 cmdlet Set-MailUser，请参阅 [Set-MailUser](/powershell/module/exchange/set-mailuser)。
 
 ## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>创建 DEP 以用于 SharePoint Online、OneDrive for Business 和 Teams 文件
 
@@ -167,9 +167,9 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>在将邮箱迁移到云之前分配 DEP
 
-分配 DEP 时，Microsoft 365迁移期间使用分配的 DEP 对邮箱内容进行加密。 此过程比迁移邮箱、分配 DEP，然后等待加密发生（可能需要数小时或几天时间）更有效。
+分配 DEP 时，Microsoft 365迁移期间使用分配的 DEP 对邮箱内容进行加密。 此过程比迁移邮箱、分配 DEP，然后等待加密发生（可能需要数小时或数天）更有效。
 
-若要在将 DEP 迁移到邮箱之前将其分配给Office 365，请运行 Set-MailUser PowerShell 中的 Exchange Online cmdlet：
+若要在将 DEP 迁移到邮箱之前将其分配给Office 365，Set-MailUser PowerShell 中Exchange Online cmdlet：
 
 1. 使用在组织中具有全局管理员权限的工作或学校帐户，Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
@@ -199,7 +199,7 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
    Get-DataEncryptionPolicy <GUID>
    ```
 
-   其中 GUID 是上一步中 Get-MailboxStatistics cmdlet 返回的 *GUID。*
+   其中 *GUID* 是上一步中 Get-MailboxStatistics cmdlet 返回的 GUID。
 
 ## <a name="verify-that-customer-key-has-finished-encryption"></a>确认客户密钥已完成加密
 
@@ -217,14 +217,14 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 如果邮箱已加密，则 IsEncrypted 属性返回 **true** 值;如果邮箱未加密，则返回 **false** 值。 完成邮箱移动的时间取决于第一次为其分配 DEP 的邮箱数以及邮箱的大小。 如果邮箱自分配 DEP 起一周后未加密，请与 Microsoft 联系。
 
-New-MoveRequest cmdlet 不再可用于本地邮箱移动。 有关其他 [信息，](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) 请参阅此通知。
+此New-MoveRequest cmdlet 不再可用于本地邮箱移动。 有关其他 [信息，](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) 请参阅此通知。
 
 ### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>验证加密是否SharePoint Online、OneDrive for Business和Teams文件
 
 按如下所示运行 Get-SPODataEncryptionPolicy cmdlet 检查加密状态：
 
 ```PowerShell
-   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
 ```
 
 此 cmdlet 的输出包括：
@@ -243,11 +243,13 @@ New-MoveRequest cmdlet 不再可用于本地邮箱移动。 有关其他 [信息
 
   - **滚动：** 密钥滚动正在进行中。 如果地理位置的密钥正在滚动，你还将看到有关完成密钥滚动操作的网站百分比的信息，以便你可以监视进度。
 
+- 它还将输出已载入网站的百分比。
+
 ## <a name="get-details-about-deps-you-use-with-multiple-workloads"></a>获取有关用于多个工作负载的 DEP 的详细信息
 
 若要获取有关已创建用于多个工作负荷的所有 DESP 的详细信息，请完成以下步骤：
 
-1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Windows PowerShell 窗口中连接到 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Exchange Online 窗口中连接到 Windows PowerShell [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
    - 若要返回组织中所有多工作负荷 DEP 的列表，请运行此命令。
 
@@ -255,7 +257,7 @@ New-MoveRequest cmdlet 不再可用于本地邮箱移动。 有关其他 [信息
         Get-M365DataAtRestEncryptionPolicy
      ```
 
-   - 要返回有关特定 DEP 的详细信息，请运行此命令。 此示例返回名为"Contoso_Global"的 DEP 的详细信息。
+   - 要返回有关特定 DEP 的详细信息，请运行此命令。 本示例返回名为"Contoso_Global"的 DEP 的详细信息。
 
      ```powershell
         Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
@@ -265,7 +267,7 @@ New-MoveRequest cmdlet 不再可用于本地邮箱移动。 有关其他 [信息
 
 若要了解当前分配给租户的 DEP，请按照以下步骤操作。 
 
-1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Windows PowerShell 窗口中连接到 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Exchange Online 窗口中连接到 Windows PowerShell [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 键入此命令。
 
@@ -277,7 +279,7 @@ New-MoveRequest cmdlet 不再可用于本地邮箱移动。 有关其他 [信息
 
 在禁用多工作负荷 DEP 之前，请从租户中的工作负荷中取消分配 DEP。 若要禁用用于多个工作负荷的 DEP，请完成以下步骤：
 
-1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Windows PowerShell 窗口中连接到 Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+1. 在本地计算机上，使用在组织中具有全局管理员或合规性管理员权限的工作或学校帐户，在 Exchange Online 窗口中连接到 Windows PowerShell [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. 运行 Set-M365DataAtRestEncryptionPolicy cmdlet。
   
@@ -311,7 +313,7 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
   
 ## <a name="manage-key-vault-permissions"></a>管理密钥保管库权限
 
-可以使用多个 cmdlet 查看密钥保管库权限，并在必要时删除密钥保管库权限。 例如，当员工离开团队时，可能需要删除权限。 对于其中每个任务，将使用Azure PowerShell。 有关此Azure PowerShell的信息，请参阅 overview [of Azure PowerShell](/powershell/azure/)。
+可以使用多个 cmdlet 查看密钥保管库权限，并在必要时删除密钥保管库权限。 例如，当员工离开团队时，可能需要删除权限。 对于其中每个任务，将使用Azure PowerShell。 有关此Azure PowerShell的信息，请参阅[Azure PowerShell](/powershell/azure/)概述。
 
 若要查看密钥保管库权限，请运行 Get-AzKeyVault cmdlet。
 
@@ -342,7 +344,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 如果需要还原到 Microsoft 管理的密钥，可以。 当你离开时，你的数据会使用每个工作负荷支持的默认加密重新加密。 例如，Exchange Online Microsoft 管理的密钥支持默认加密。
 
 > [!IMPORTANT]
-> 载出与数据清除不同。 数据清除会永久加密，将组织的数据从Microsoft 365，但无法进行载出。 无法对多个工作负荷策略执行数据清除。
+> 载出与数据清除不同。 数据清除会永久加密删除组织的数据，Microsoft 365，但无法进行载出。 无法对多个工作负荷策略执行数据清除。
 
 如果你决定不使用客户密钥分配多工作负荷 DEP，则需要通过从客户密钥请求"退出"来联系 Microsoft 支持人员。 让支持团队针对客户密钥Microsoft 365提出服务请求。 如果你有任何问题 m365-ck@service.microsoft.com 联系他们。
 
@@ -385,7 +387,7 @@ Microsoft 365审核并验证数据清除路径。 有关详细信息，请参阅
 
 1. 从 Azure 密钥保管库中删除"O365 Exchange Online的自动换行和取消打包权限。
 
-2. 使用在组织中具有全局管理员权限的工作或学校帐户，Exchange Online [PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
+2. 使用在组织中具有全局管理员权限的工作或学校帐户连接到[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 3. 对于包含要删除的邮箱的每个 DEP，运行 [Set-DataEncryptionPolicy](/powershell/module/exchange/set-dataencryptionpolicy) cmdlet，如下所示。
 
@@ -399,11 +401,11 @@ Microsoft 365审核并验证数据清除路径。 有关详细信息，请参阅
 
     根据你的请求，Microsoft 会向您发送一份法律文档，以确认和授权删除数据。 你组织中在载入期间以FastTrack审批者注册的人需要签署此文档。 通常，这是公司中经法律授权代表你的组织签署书面材料的公司主管或其他指定人员。
 
-5. 在代表签署法律文档后，通常 (eDoc 签名文件将该文档) 。
+5. 一旦代表对法律文档进行签名， (通常通过 eDoc 签名文件) 。
 
     Microsoft 收到法律文档后，Microsoft 将运行 cmdlet 触发数据清除，首先删除策略，将邮箱标记为永久删除，然后删除可用性密钥。 数据清除过程完成后，数据已被清除、无法访问Exchange Online且不可恢复。
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>吊销你的客户密钥和 SharePoint Online、OneDrive for Business 和 Teams 密钥
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>吊销你的客户密钥和 SharePoint Online、OneDrive for Business和Teams密钥
 
 若要启动 SharePoint Online、OneDrive for Business 和 Teams 文件的数据清除路径，请完成以下步骤：
 
@@ -415,9 +417,9 @@ Microsoft 365审核并验证数据清除路径。 有关详细信息，请参阅
 
     当你联系 Microsoft 以删除可用性密钥时，我们将向您发送一份法律文档。 你组织中在载入期间以FastTrack审批者注册的人需要签署此文档。 通常，这是公司中法律授权代表你的组织签署书面材料的公司主管或其他指定人员。
 
-3. 在代表签署法律文档后，通常 (eDoc 签名文件将该文档) 。
+3. 在代表签署法律文档后，通常通过 eDoc 签名 (将该文档返回到 Microsoft) 。
 
-   Microsoft 收到法律文档后，我们运行 cmdlet 触发数据清除，以加密方式删除租户密钥、站点密钥以及所有单独每文档密钥，从而不可撤销地破坏密钥层次结构。 数据清除 cmdlet 完成后，数据即被清除。
+   Microsoft 收到法律文档后，我们运行 cmdlet 触发数据清除，以执行租户密钥、站点密钥以及所有单独每个文档密钥的加密删除，从而不可撤销地破坏密钥层次结构。 数据清除 cmdlet 完成后，数据即被清除。
 
 ## <a name="related-articles"></a>相关文章
 

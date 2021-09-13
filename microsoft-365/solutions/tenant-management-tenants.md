@@ -15,17 +15,17 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: 部署和管理单个或Microsoft 365租户，并提供了多地理位置和移动位置的选项。
+description: 部署和管理单个或多个Microsoft 365租户，并提供了多地理位置和移动位置的选项。
 ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196227"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>步骤 1. 适用于Microsoft 365租户的租户
 
-你的第一个租户决策之一是拥有多少租户。 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 它对应的 Azure AD 租户也不同、唯一，并且独立于所有其他 Microsoft 365租户。
+你的第一个租户决策之一是拥有多少租户。 每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 它对应的 Azure AD 租户也不同、唯一，并且独立于所有其他Microsoft 365租户。
 
 ## <a name="single-tenant"></a>单个租户
 拥有一个租户可简化组织使用租户Microsoft 365。 单个租户意味着单个 Azure AD 租户具有一组帐户、组和策略。 可以通过此中央标识提供程序在组织中完成资源的权限和共享。
@@ -34,7 +34,7 @@ ms.locfileid: "58568440"
 
 下面是显示租户的默认位置和 Azure AD 租户Microsoft 365示例。
 
-![具有 Azure AD Microsoft 365单个租户。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![具有 Azure AD Microsoft 365租户的单个租户。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>多个租户
 
@@ -79,17 +79,17 @@ ms.locfileid: "58568440"
 
 ### <a name="tenant-to-tenant-migrations"></a>租户到租户迁移
 
-对于合并、收购、资产重组和其他方案，有几种体系结构方法可能会导致你将现有 Microsoft 365 租户迁移到新租户。 
+合并、收购、资产重组和其他方案有几种体系结构方法，这些方法可能会导致你将现有 Microsoft 365 租户迁移到新租户。 
 
-有关详细指导，请参阅[Microsoft 365租户到租户的迁移](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)。
+有关详细指导，请参阅[Microsoft 365到租户的迁移](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)。
 
 ## <a name="multi-geo-for-a-tenant"></a>租户的多地理位置
 
-借助 Microsoft 365 多地理位置，可以在选择满足数据驻留要求的其他数据中心地理位置中预配和存储静止数据，同时向工作人员解锁新式生产力体验的全球推广。
+借助 Microsoft 365 多地理位置，可以在选择满足数据驻留要求的其他数据中心地理位置中预配和存储静止数据，同时解锁向工作人员进行新式生产力体验的全球推广。
 
-在多地理位置环境中，Microsoft 365租户由最初创建 Microsoft 365 订阅的默认或中心位置以及一个或多个附属位置组成。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在全局 Azure AD 租户中主控的。 由于租户信息是集中管理并同步到每个地理位置的，因此公司中涉及任何人的协作体验将跨位置共享。
+在多地理位置环境中，Microsoft 365租户包含一个默认或中央位置（最初创建 Microsoft 365 订阅的位置）以及一个或多个附属位置。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在全局 Azure AD 租户中主控的。 由于租户信息是集中掌握的，并同步到每个地理位置，因此公司中涉及任何人的协作体验将跨位置共享。
 
-下面是一个组织的示例，该组织的默认位置在欧洲，而北美是附属位置。 这两个位置共享单个租户的同一全局 Azure AD Microsoft 365租户。
+下面是一个组织的示例，该组织的默认位置在欧洲，而北美是附属位置。 两个位置共享单个租户的同一全局 Azure AD Microsoft 365租户。
 
 ![多地理位置租户Microsoft 365示例。](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
@@ -97,15 +97,15 @@ ms.locfileid: "58568440"
 
 ## <a name="moving-core-data-to-a-new-datacenter-geo"></a>将核心数据移动到新的数据中心地理位置
 
-Microsoft 继续打开新的数据中心地理位置，Microsoft 365服务。 这些新数据中心地理位置增加了容量和计算资源，以支持我们的持续客户需求和使用增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。
+Microsoft 继续打开新的数据中心地理位置，Microsoft 365服务。 这些新数据中心地理位置可增加容量和计算资源，以支持我们的持续客户需求和使用增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。
 
 尽管打开新的数据中心地理位置不会影响你和存储在现有数据中心地理位置中的核心数据，但 Microsoft 允许你请求将组织的核心客户数据在静止之后提前迁移到新的数据中心地理位置。
 
-下面是一个示例，Microsoft 365 租户从欧盟 (欧盟) 数据中心地理位置移动到位于英国 (英国数据中心) 。
+下面是一个示例，Microsoft 365租户从欧盟 (欧盟) 数据中心地理位置移动到位于英国 (英国数据中心) 。
 
 ![在数据中心地理位置Microsoft 365租户的示例。](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
-有关详细信息，请参阅将[核心数据移动到Microsoft 365地理位置。](../enterprise/moving-data-to-new-datacenter-geos.md)
+有关详细信息，请参阅将[核心数据移动到Microsoft 365地理位置](../enterprise/moving-data-to-new-datacenter-geos.md)。
 
 ## <a name="products-and-licenses-for-a-tenant"></a>租户的产品和许可证
 

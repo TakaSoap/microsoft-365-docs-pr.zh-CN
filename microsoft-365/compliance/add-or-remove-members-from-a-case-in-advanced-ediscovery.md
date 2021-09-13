@@ -18,11 +18,11 @@ ms.assetid: ''
 description: 了解如何在管理案例时添加或删除可以访问Advanced eDiscovery的成员。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: d4fbd3700a74da8975f46174405c73511d16af3b
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197009"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>向事例添加成员或从事例中删除成员
 

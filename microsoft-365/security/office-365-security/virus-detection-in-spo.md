@@ -20,12 +20,12 @@ description: 了解 SharePoint Online 如何在用户上载的文件中检测到
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efdf9364a43bdc354797b71c722fd77faf4108f812a905d266aef5bd296194d6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56826028"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195903"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft Teams
 
@@ -42,7 +42,7 @@ Microsoft 365使用常见的病毒检测引擎扫描用户上传到 SharePoint O
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>如果将受感染的文件上载到 SharePoint 会发生什么情况？
 
-病毒Microsoft 365引擎以异步方式运行， (与) Online 中的文件SharePoint无关。 **不会自动扫描所有文件**。 启发式方法确定要扫描的文件。 当发现文件包含病毒时，将标记该文件。 2018 年 4 月，我们删除了扫描文件 25 MB 的限制。
+病毒Microsoft 365引擎独立于 (Online 中的文件上载) 异步SharePoint运行。 **不会自动扫描所有文件**。 启发式方法确定要扫描的文件。 当发现文件包含病毒时，将标记该文件。 2018 年 4 月，我们删除了扫描文件 25 MB 的限制。
 
 下面是发生的情况：
 
@@ -53,7 +53,7 @@ Microsoft 365使用常见的病毒检测引擎扫描用户上传到 SharePoint O
 
 ## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>当用户尝试使用浏览器下载受感染的文件时，会发生什么情况？
 
-如果文件受到感染，用户无法通过使用浏览器从 SharePoint Online 下载文件。
+如果文件受到感染，则用户无法通过使用浏览器从 SharePoint Online 下载该文件。
 
 下面是发生的情况：
 
@@ -62,20 +62,20 @@ Microsoft 365使用常见的病毒检测引擎扫描用户上传到 SharePoint O
 
 > [!NOTE]
 >
-> 管理员可以使用 SharePoint Online PowerShell 中 [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 上的 *DisallowInfectedFileDownload* 参数来阻止用户下载受感染的文件，即使在防病毒警告窗口中也可以。 有关说明，请参阅[使用 SharePoint Online PowerShell 阻止用户下载恶意文件](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
+> 管理员可以在 SharePoint Online PowerShell 中对 [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 使用 *DisallowInfectedFileDownload* 参数，以防止用户下载受感染的文件，即使在防病毒警告窗口中也可以。 有关说明，请参阅[使用 SharePoint Online PowerShell 阻止用户下载恶意文件](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
 >
 > 一旦启用 *DisallowInfectedFileDownload* 参数，用户和管理员将完全阻止访问检测到/阻止的文件。
 
-## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>当客户端尝试OneDrive 同步感染的文件时，会发生什么情况？
+## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>当客户端尝试OneDrive 同步受感染的文件时，会发生什么情况？
 
 将恶意文件上传到OneDrive，它将先同步到本地计算机，然后再被标记为恶意软件。 在将同步文件标记为恶意软件后，用户无法再从本地计算机打开同步文件。
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
-Microsoft 365 Microsoft [Defender for Office 365](defender-for-office-365.md)或作为加载项购买的组织可以启用 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 增强的报告和保护。 有关详细信息，请参阅 保险箱[Attachments for SharePoint， OneDrive， and Microsoft Teams](mdo-for-spo-odb-and-teams.md)。
+Microsoft 365 Microsoft [Defender for Office 365](defender-for-office-365.md)或作为加载项购买的组织可以启用 SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件，以实现增强的报告和保护。 有关详细信息，请参阅 保险箱[Attachments for SharePoint， OneDrive， and Microsoft Teams](mdo-for-spo-odb-and-teams.md)。
 
 ## <a name="related-articles"></a>相关文章
 
 [恶意软件和勒索软件保护Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
-有关 SharePoint Online、OneDrive 和 Microsoft Teams 中的防病毒功能详细信息，请参阅抵御威胁和启用 SharePoint、OneDrive 和 Microsoft Teams 的[保险箱 附件](turn-on-mdo-for-spo-odb-and-teams.md)。 [](protect-against-threats.md)
+有关 SharePoint Online、OneDrive 和 Microsoft Teams 中的防病毒功能详细信息，请参阅抵御威胁和启用[保险箱 Attachments for SharePoint， OneDrive， and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)。 [](protect-against-threats.md)

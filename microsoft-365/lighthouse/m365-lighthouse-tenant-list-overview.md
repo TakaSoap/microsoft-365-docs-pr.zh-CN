@@ -15,22 +15,22 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，请了解租户列表。
-ms.openlocfilehash: af76322553296d1d22bb003ddf943ae168656734
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解租户列表。
+ms.openlocfilehash: 13481ecbaaf20c5886837e03f4a606531548145e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195949"
 ---
 # <a name="microsoft-365-lighthouse-tenant-list-overview"></a>Microsoft 365 Lighthouse租户列表概述
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
-The Microsoft 365 Lighthouse tenant list provides insights into the different tenants you have a contract with， including tenant onboarding status relative to Lighthouse. 租户列表还允许你标记租户以在整个 Lighthouse 中提供不同的筛选器，并向下钻取以了解有关给定租户及其部署计划状态的信息。
+The Microsoft 365 Lighthouse tenant list provides insights to the different tenants you have a contract with， including tenant onboarding status relative to Lighthouse. 租户列表还允许你标记租户以在整个 Lighthouse 中提供不同的筛选器，并向下钻取以了解有关给定租户及其部署计划状态的信息。
 
-在租户满足 ["Lighthouse"载入](m365-lighthouse-requirements.md)要求后，其状态将在租户 **列表中** 显示为"活动"。
+在租户满足 [Lighthouse](m365-lighthouse-requirements.md)载入要求后，其状态将在租户 **列表中** 显示为"活动"。
 
 To access the tenant list in Lighthouse， select **Tenants** in the left navigation pane to open the Tenants page.
 
@@ -40,11 +40,12 @@ To access the tenant list in Lighthouse， select **Tenants** in the left naviga
 
 | 状态消息 | 说明 |
 |--|--|
-| 活动文件 | 载入和数据流已启动。 |
+| 活动 | 载入和数据流已启动。 |
 | 进程内 | 租户已发现，但尚未完全载入。 |
 | 不符合条件的 DAP | 需要 DAP (委派) 权限。 |
 | 不符合资格的用户计数 | 租户具有的用户数多于允许的用户数。 |
 | 不符合资格的许可证 | 租户没有所需的许可证。 |
+| 不符合条件、合同类型 | 需要云解决方案提供商 (CSP) 合约。 |
 | 非活动 | 租户不再处于活动状态。 |
 
 停用租户后，当 Lighthouse 完成停用过程时，你无法对租户采取措施。 停用可能需要 48 小时才能完成。

@@ -20,20 +20,20 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: 本文提供有关保护全局管理员对 Microsoft 365 订阅的访问的信息。
+description: 本文提供有关保护全局管理员对订阅Microsoft 365的信息。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 3a43c8b6ac5389be99581302c249e431853ba99b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196759"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保护你的Microsoft 365全局管理员帐户
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-Microsoft 365订阅的安全漏洞（包括信息收集攻击和网络钓鱼攻击）通常是通过损害全局管理员帐户的Microsoft 365来完成。 云中的安全是你与 Microsoft 之间的合作关系：
+Microsoft 365订阅的安全泄露（包括信息收集攻击和网络钓鱼攻击）通常是通过损害 Microsoft 365 管理员帐户的凭据而发生的。 云中的安全是你与 Microsoft 之间的合作关系：
   
 - Microsoft 云服务基于信任和安全性而构建。 Microsoft 提供了安全控件和功能，可帮助你保护数据和应用程序。
     
@@ -48,17 +48,17 @@ Microsoft 提供了可帮助保护组织的功能，但这些功能仅在你使�
 > [!Note]
 > 尽管本文侧重于全局管理员帐户，但您应考虑是否应该以相同方式保护具有访问订阅中数据的广泛权限的其他帐户，例如电子数据展示管理员帐户或安全或合规性管理员帐户。 <br > 可以在不添加任何许可证的情况下创建全局管理员帐户。
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步骤 1. 创建专用Microsoft 365全局管理员帐户，并仅在必要时使用它们
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步骤 1. 创建专用Microsoft 365全局管理员帐户，并在必要时使用它们
 
 只有相对较少的管理任务（如向用户帐户分配角色）需要全局管理员权限。 因此，不要使用已分配有全局管理员角色的日常用户帐户，而是执行以下步骤：
   
-1. 确定已分配全局管理员角色的用户帐户集。 可以在以下 Azure Active Microsoft 365 管理中心 Azure AD (Directory PowerShell for) 命令中Graph此操作：
+1. 确定已分配全局管理员角色的用户帐户集。 可以在以下 Azure Active Microsoft 365 管理中心 Azure AD (Directory PowerShell for) 命令中执行Graph操作：
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. 使用已Microsoft 365全局管理员角色的用户帐户登录你的订阅。
+2. 使用Microsoft 365全局管理员角色的用户帐户登录你的订阅。
     
 3. 最多创建四个专用全局管理员用户帐户。 **使用长于 12 个字符的强密码。** 有关详细信息 [，请参阅创建](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) 强密码。 将新帐户的密码存储在安全的位置。 
     
@@ -109,17 +109,17 @@ MFA (多重) 需要帐户名称和密码之外的其他信息。 Microsoft 365�
 >对于必须遵守美国国家标准和技术协会 (NIST) 标准的组织，限制使用电话呼叫或基于短信的其他验证方法。 单击此处 [了解](https://pages.nist.gov/800-63-FAQ/#q-b01) 详细信息。
 >
 
-如果是使用仅存储在云 (仅云标识模型) 中的用户帐户的小型企业，请设置 MFA 以使用每个专用全局管理员帐户发送到智能手机的电话呼叫或短信验证代码配置[MFA。](/office365/admin/security-and-compliance/set-up-multi-factor-authentication)
+如果你是使用仅存储在云 (仅云标识模型) 中的用户帐户的小型企业，请设置 MFA 以使用电话呼叫或发送到智能手机的短信验证代码为每个专用全局管理员帐户配置[MFA。](/office365/admin/security-and-compliance/set-up-multi-factor-authentication)
     
 如果你是使用混合标识模型Microsoft 365大型组织，则具有更多验证选项。 如果已设置安全基础结构，以使用更强大的辅助身份验证方法，请设置 [MFA，](../admin/security-and-compliance/set-up-multi-factor-authentication.md) 并为每个专用全局管理员帐户配置适当的验证方法。
   
-如果所需的更强的验证方法的安全基础结构未就位且无法用于 Microsoft 365 MFA，我们强烈建议你使用 Microsoft Authenticator 应用、电话呼叫或发送到全局管理员帐户的智能手机的短信验证代码来配置具有 MFA 的专用全局管理员帐户，作为临时安全措施。 请不要离开专用全局管理员帐户，而不使用 MFA 提供的其他保护。
+如果所需的更强的验证方法的安全基础结构未就位且无法用于 Microsoft 365 MFA，我们强烈建议你使用 Microsoft Authenticator 应用、电话呼叫或发送到智能手机的短信验证代码为全局管理员帐户配置 MFA 专用全局管理员帐户，作为临时安全措施。 请不要离开专用全局管理员帐户，而不要保留 MFA 提供的其他保护。
   
 有关详细信息，请参阅[MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)。
   
 若要通过 MFA Microsoft 365 PowerShell 连接到服务，请参阅以下文章：
 
-- [用于Microsoft 365组和许可证的 PowerShell](connect-to-microsoft-365-powershell.md)
+- [适用于用户帐户Microsoft 365组和许可证的 PowerShell](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](/microsoftteams/teams-powershell-install)
 - [Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
@@ -141,9 +141,9 @@ MFA (多重) 需要帐户名称和密码之外的其他信息。 Microsoft 365�
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-无需将全局管理员帐户永久分配给 全局管理员角色，可以使用 Azure AD Privileged Identity Management (PIM) 根据需要启用 全局管理员角色 的按需、实时分配。
+无需将全局管理员帐户永久分配给 全局管理员角色，可以使用 Azure AD Privileged Identity Management (PIM) 按需、实时分配 全局管理员角色（如果需要）。
   
-全局管理员帐户从永久管理员转到符合条件的管理员。 在全局管理员角色用户需要之前，该邮箱处于非活动状态。 然后完成激活过程，将全局管理员角色预先确定的时间添加到全局管理员帐户。 当时间到期时，PIM 会从全局管理员角色管理员帐户中删除该密码。
+全局管理员帐户从永久管理员转到符合条件的管理员。 在全局管理员角色用户需要之前，该邮箱处于非活动状态。 然后完成激活过程，将全局管理员角色预先确定的时间添加到全局管理员帐户。 当时间到期时，PIM 将全局管理员角色全局管理员帐户中删除该密码。
   
 使用 PIM 和此过程可显著减少全局管理员帐户易受恶意用户攻击和使用的时间。
 
@@ -168,7 +168,7 @@ MFA (多重) 需要帐户名称和密码之外的其他信息。 Microsoft 365�
 
 有关详细信息，请参阅[Privileged access management。](/office365/securitycompliance/privileged-access-management-overview)
 
-### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>SIEM 安全信息和事件 (SIEM) 软件进行Microsoft 365日志记录
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>SIEM 安全信息和事件 (SIEM) 用于Microsoft 365日志记录
 
 在服务器上运行的 SIEM 软件对由应用程序和网络硬件创建的安全警报和事件执行实时分析。 若要允许 SIEM 服务器在其分析和Microsoft 365功能中包括安全警报和事件，请将 Azure AD 集成到 SEIM 中。 请参阅[Azure 日志集成](/azure/security/security-azure-log-integration-overview)简介。
 

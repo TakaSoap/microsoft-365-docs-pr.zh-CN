@@ -10,15 +10,15 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: c809f341c8bcb1b1f028a8a06ed06a1beeb8c00a
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196632"
 ---
 # <a name="windows-security-updates-report"></a>Windows 安全更新报告
 
-此报告概述了给定设备Windows更新的部署Microsoft 托管桌面进度。 在每个安全更新发布周期开始时，Microsoft 托管桌面活动设备状态的所有设备拍摄快照，并设置其部署目标为该总体的95%。 此图显示与平均发布日期相比所选发布日期Microsoft 托管桌面进度。 当我们关注活动群体时，还可以透视此报表以显示你的活动 + **同步** 和 **不同步** 设备填充。 可以通过更改可用筛选器查看早期版本的部署进度，但设备级别详细信息仅适用于当前版本。 图后表中可查看的设备信息也可导出以用于脱机分析。
+此报告概述了给定设备 Windows 安全更新的部署Microsoft 托管桌面进度。 在每个安全更新发布周期开始时，Microsoft 托管桌面活动设备状态的所有设备拍摄快照，并设置其部署目标为该总体的95%。 此图显示与平均发布日期相比所选发布日期Microsoft 托管桌面进度。 当我们关注活动群体时，还可以透视此报表以显示你的活动 + **同步** 和 **不同步** 设备填充。 可以通过更改可用筛选器查看早期版本的部署进度，但设备级别详细信息仅适用于当前版本。 图后表中可查看的设备信息也可导出以用于脱机分析。
 
 :::image type="content" source="../../media/mmd-security-updates.png" alt-text="显示左上方一段时间的更新安装进度的报告、右上方的筛选器（带生成报告的按钮）以及底部报告详细信息表":::
 

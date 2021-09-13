@@ -12,23 +12,23 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 40ceb768836b7bb597620229bd30358df2977592
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365161"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196087"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>让用户做好使用设备的准备
 
 一Microsoft 托管桌面设备由用户控制后，开始使用该设备将变得快速而简单。 设备预配置了当前版本的 Windows配置和应用在用户完成设置时从云进行安装。 
  
-为了简化此操作，我们提供了指导，指导用户完成初始设置，并根据需要提供设置和供以后使用的帮助资源。 你可以自定义本指南，以包含特定于你的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 
+为简化此操作，我们提供了指导，指导用户完成初始设置，并根据需要提供设置和供以后使用的帮助资源。 你可以自定义本指南，以包含特定于你的组织的特定详细信息。 然后，将指南直接分发给用户及其设备。 
 
 ## <a name="to-prepare-the-guide"></a>准备指南
 
 1. 下载指南[：Microsoft 托管桌面 - 开始使用你的设备](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)。
 2. 使用能够打开 PDF 文件的任何应用填写与组织相关的详细信息：
-    - 用户应连接到的网络的名称，以便继续进行设置 (指南中的步骤 3) 
+    - 用户应连接到的网络的名称，以便继续安装 (指南中的步骤 3) 
     - 本指南中的步骤 4 (组织的 Azure 租户帐户) 
     - 位于第二页顶部的组织内部 IT (联系人) 
 3. 保存编辑的 PDF，然后分发给用户。 
@@ -42,16 +42,16 @@ ms.locfileid: "58365161"
 此时，你可以继续部署应用：
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
 
-1. 访问 [管理门户](access-admin-portal.md)。
-1. [在管理门户中添加并验证管理员联系人](add-admin-contacts.md)。
+1. 访问 [管理员门户](access-admin-portal.md)。
+1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。
 1. [注册后调整设置](conditional-access.md)。
-1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
 1. [设置设备](set-up-devices.md)。
-1. 设置 [Autopilot 和注册状态页面的首次运行体验](esp-first-run.md)。
+1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
 1. 让用户准备好使用本文 (设备) 。
-1. [应用控件入门](get-started-app-control.md)。
+1. [开始使用应用控制](get-started-app-control.md)。

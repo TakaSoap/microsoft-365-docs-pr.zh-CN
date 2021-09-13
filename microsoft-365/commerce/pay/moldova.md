@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 924acc1fe1ba12449701e97b3c3b8c87f42e251c7e8c9e71eec5550572778dd4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8ec5612d2f5e7f1dfcad4c2bb7a6017692996c0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195846"
 ---
 # <a name="payment-information-for-moldova"></a>摩尔多瓦的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
-**帐户号：12510049**  
+**帐号：12510049**  
 **帐户名称：** MICROSOFT

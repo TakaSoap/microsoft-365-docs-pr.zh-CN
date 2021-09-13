@@ -15,13 +15,13 @@ description: 管理员可以了解如何使用安全 & 合规中心的邮件流�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3d4c39e722ed7d9853a4fb328a8e87aac535bea9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568080"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197196"
 ---
-# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>安全与合规中心中的 SMTP 身份验证&和报表
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>安全与合规中心中的 SMTP 身份验证客户端&报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "58568080"
 
 小部件指示过去 7 天内使用 SMTP 身份验证协议的用户和服务帐户的数量。
 
-![安全与合规中心的"邮件流"仪表板中的"SMTP &小组件"。](../../media/mfi-smtp-auth-clients-report-widget.png)
+![安全与合规中心的"邮件流"仪表板中的"SMTP 身份验证&小部件。](../../media/mfi-smtp-auth-clients-report-widget.png)
 
 如果单击小部件上的消息数，则会出现 SMTP **身份验证客户端** 飞出控件。 该飞出站提供上一周 TLS 使用情况和卷的聚合视图。
 
@@ -50,7 +50,7 @@ ms.locfileid: "58568080"
 
 概述部分包含以下图表：
 
-- 查看数据 **者：** 发送卷：默认情况下，图表显示从所有域发送的 SMTP 身份验证客户端邮件数 (**显示** 数据：默认情况下，所有发件人域都) 。 可以通过单击"显示其数据"，然后从下拉列表中选择发件人域，将结果筛选到特定的发件人域。 如果在当天将特定 (点) ，将显示消息数。
+- 查看数据 **者：** 发送卷：默认情况下，图表显示从所有域发送的 SMTP 身份验证客户端邮件数 (显示数据：默认情况下，所有发件人域都) 。 可以通过单击"显示其数据"，然后从下拉列表中选择发件人域，将结果筛选到特定的发件人域。 如果在当天将特定 (点) ，将显示消息数。
 
   ![安全与合规中心内 SMTP 身份验证客户端报告中&卷视图。](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
@@ -87,7 +87,7 @@ ms.locfileid: "58568080"
 
 如果您选择一行，则类似的详细信息将显示在一个飞出内容中：
 
-![SMTP Auth 客户端报告中 TLS 使用情况视图的详细信息表的"详细信息"飞出。](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+![SMTP Auth 客户端报告中 TLS 使用视图的详细信息表的"详细信息"飞出。](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
 
 单击 **"请求** 报告"以在电子邮件中接收报告的详细版本。 可以指定接收报告的日期范围和收件人。
 
@@ -95,4 +95,4 @@ ms.locfileid: "58568080"
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

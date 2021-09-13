@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: 2f651754e4ebf3e9f088e4acc7bd9bb8f007c64ee0add5def79312ca21012db6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52c4bc8a23bdf89afb1a3f3eae3fe6348fed8009
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195716"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 多地理位置计划
 

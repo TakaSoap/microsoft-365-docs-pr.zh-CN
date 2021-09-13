@@ -17,11 +17,11 @@ description: 管理员可以了解如何在安全门户的租户允许/阻止列
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195930"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加块
 
@@ -36,12 +36,12 @@ ms.locfileid: "58561238"
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止发件人条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 在" **租户允许/阻止列表** "页上，验证是否选择了"发件人 **"选项卡，** 然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **阻止**。
 
 3. 在 **出现的"阻止发件人** "飞出中，配置以下设置：
-   - **发件人电子邮件地址或** 域：每行 (一个发件人电子邮件地址或) ，最多 20 个。
+   - **发件人电子邮件地址或域**：每行 (一个发件人电子邮件地址或域) ，最多 20 个。
    - **永不过期**：执行下列步骤之一：
      - 验证是否关闭该设置 (![ 关闭。) 并使用"删除"框指定条目 ](../../media/scc-toggle-off.png) 的到期日期。 
 
@@ -54,7 +54,7 @@ ms.locfileid: "58561238"
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止 URL 条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 在" **租户允许/阻止列表** "页上，验证 **"URL"** 选项卡已选中，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **阻止**。
 
@@ -72,7 +72,7 @@ ms.locfileid: "58561238"
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中创建阻止文件条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 在" **租户允许/阻止列表"** 页上，选择" **文件** "选项卡，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **阻止**。
 
@@ -97,7 +97,7 @@ ms.locfileid: "58561238"
 - 欺骗性发件人的条目永不过期。
 - 欺骗同时支持允许和阻止。 URL 仅支持允许。
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 在" **租户允许/阻止列表"** 页上，选择" **欺骗"** 选项卡，然后单击"阻止 ![ 图标"。](../../media/m365-cc-sc-create-icon.png) **添加** 。
 
@@ -132,7 +132,7 @@ New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattacker
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
-本示例为网站和子域添加 contoso.com URL 条目 (例如，contoso.com、www.contoso.com 和 xyz.abc.contoso.com) 。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
+此示例为 contoso.com 及其所有子域（例如， (、www.contoso.com 和 contoso.com）添加 xyz.abc.contoso.com) 。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com

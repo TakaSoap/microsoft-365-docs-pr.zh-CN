@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d41cb16636a1a35673495b9b7f8538218f4919c290fbee9896781da46acf746f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196663"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用要求
 
@@ -41,4 +41,4 @@ Microsoft 托管桌面要求我们使用特定方法管理设备，以确保设�
 
 
 
-Microsoft 托管桌面监视托管设备上运行的其他软件。 如果对设备管理、设备安全性、性能或可靠性造成负面影响，可能需要请求服务 [计划例外](customizing.md)。
+Microsoft 托管桌面可能监视托管设备上运行的其他软件。 如果对设备管理、设备安全性、性能或可靠性造成负面影响，可能需要请求服务 [计划例外](customizing.md)。

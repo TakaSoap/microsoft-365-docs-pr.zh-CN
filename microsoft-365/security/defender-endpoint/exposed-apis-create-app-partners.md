@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ceb70f8aa415c978cb6ce8e8b6fc004c3585803d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d9d5f37d9085388963898267fcc9967da6223a73
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222239"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>合作伙伴通过 Microsoft Defender 终结点 API 访问
 
@@ -37,12 +37,12 @@ ms.locfileid: "58572139"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-此页面介绍如何创建 Azure AD Azure Active Directory (应用程序) 客户以编程方式访问 Microsoft Defender for Endpoint。
-
+此页面介绍如何创建 Azure AD Azure Active Directory (应用程序) 代表客户以编程方式访问 Microsoft Defender for Endpoint。
 
 Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
+
 - 创建 **多租户** Azure AD 应用程序。
 - 获取 (授权) 客户管理员同意你的应用程序访问所需的 Defender for Endpoint 资源。
 - 使用此应用程序获取访问令牌。
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 1. 使用具有全局 [管理员](https://portal.azure.com) 角色的用户登录到 **Azure** 租户。
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册 。** 
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册 。**
 
    ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
 
@@ -68,51 +68,48 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
    ![合作伙伴Microsoft Azure注册的图像。](images/atp-api-new-app-partner.png)
 
-
 4. 允许应用程序访问 Microsoft Defender for Endpoint，并为其分配完成集成所需的最低权限集。
 
-   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 API">  >    >   **WindowsDefenderATP"，** 然后选择 **"WindowsDefenderATP"。**
+   - 在应用程序页面上，选择 **"API** 权限""添加我的组织使用的权限 API"> \>  \>  **WindowsDefenderATP"，** 然后选择 **"WindowsDefenderATP"。**
 
    - **注意***：WindowsDefenderATP* 不会显示在原始列表中。 开始在文本框中写入其名称，以查看其显示。
 
-   ![添加权限。](images/add-permission.png)
-   
-   ### <a name="request-api-permissions"></a>请求 API 权限
+     ![添加权限。](images/add-permission.png)
 
-   若要确定所需的权限，请查看 **你** 感兴趣的 API 中的权限部分。 例如：
+### <a name="request-api-permissions"></a>请求 API 权限
 
-   - 若要 [运行高级查询，请选择](run-advanced-query-api.md)"运行高级查询"权限
-   
-   - 若要 [隔离设备，](isolate-machine.md)请选择"隔离计算机"权限
+若要确定所需的权限，请查看 **你** 感兴趣的 API 中的权限部分。 例如：
 
-   在下面的示例中，我们将使用 **"读取所有警报"** 权限：
+- 若要 [运行高级查询，请选择](run-advanced-query-api.md)"运行高级查询"权限
+- 若要 [隔离设备，](isolate-machine.md)请选择"隔离计算机"权限
 
-   选择 **应用程序权限**  >  **Alert.Read.All >** 添加 **权限上选择**
+在下面的示例中，我们将使用 **"读取所有警报"** 权限：
+
+1. 选择 **应用程序权限** \> **Alert.Read.All** >添加 **权限上选择**
 
    ![应用权限。](images/application-permissions.png)
 
-
-5. 选择 **"授予同意"**
+2. 选择 **"授予同意"**
 
    - **注意**：每次添加权限时，都必须选择"授予新权限的许可"才能生效。
 
    ![授予权限的图像。](images/grant-consent.png)
 
-6. 向应用程序添加密码。
+3. 向应用程序添加密码。
 
-   - 选择 **"&** 密码"，将说明添加到密码，然后选择"添加 **"。**
+   - 选择 **"&** 密码"，将说明添加到密码，然后选择"**添加"。**
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
     ![创建应用密钥的图像。](images/webapp-create-key2.png)
 
-7. 记下应用程序 ID：
+4. 记下应用程序 ID：
 
    - 在应用程序页上，转到" **概述"** 并复制以下信息：
 
    ![已创建应用 ID 的图像。](images/app-id.png)
 
-8. 将应用程序添加到客户的租户。
+5. 将应用程序添加到客户的租户。
 
    你需要在打算使用应用程序的每个客户租户中批准你的应用程序。 这是因为应用程序代表你的客户与 Microsoft Defender for Endpoint 应用程序交互。
 
@@ -130,10 +127,9 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
    ![同意的图像。](images/app-consent-partner.png)
 
-   此外，你将需要请求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
+   此外，你将需要要求客户提供其租户 ID，并保存它供以后在获取令牌时使用。
 
-- **完成！** 已成功注册应用程序！
-- 有关令牌获取和验证，请参阅以下示例。
+6. **完成！** 已成功注册应用程序！ 有关令牌获取和验证，请参阅以下示例。
 
 ## <a name="get-an-access-token-example"></a>获取访问令牌示例
 
@@ -177,12 +173,12 @@ return $token
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- 复制/粘贴应用程序中的以下 (请不要忘记更新三个变量：、和 `tenantId` `appId` `appSecret`) 
+- 复制/粘贴应用程序中的以下代码 (请不要忘记更新三个变量：、 和 `tenantId` `appId` `appSecret`) 
 
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
 
     const string authority = "https://login.microsoftonline.com";
     const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
@@ -204,8 +200,8 @@ return $token
 
 - 打开命令窗口
 - 将CLIENT_ID设置为 Azure 应用程序 ID
-- 将CLIENT_SECRET Azure 应用程序密码
-- 将TENANT_ID设置为想要使用你的应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
+- 将CLIENT_SECRET设置为 Azure 应用程序密码
+- 将TENANT_ID设置为想要使用应用程序访问 Microsoft Defender for Endpoint 应用程序的客户的 Azure 租户 ID
 - 运行以下命令：
 
 ```curl
@@ -232,8 +228,8 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>使用令牌访问 Microsoft Defender for Endpoint API
 
 - 选择你想要使用的 API，有关详细信息，请参阅支持的 Microsoft [Defender 终结点 API](exposed-apis-list.md)
-- 将你发送的 Http 请求中的授权标头设置为"Bearer {token}" (Bearer 是授权方案) 
-- 令牌的过期时间是 1 小时 (你可以使用相同的令牌发送多个请求) 
+- 将你发送的 Http 请求中的 Authorization 标头设置为"Bearer {token}" (Bearer 是授权方案) 
+- 令牌的过期时间为 1 小时 (你可以使用相同的令牌发送多个请求) 
 
 - 发送请求以使用请求获取警报列表 **的示例C#**
 

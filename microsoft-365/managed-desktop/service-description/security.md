@@ -9,37 +9,37 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: 9f2e3b9d623f5f2b019296dc08c34c32ace2e9d6
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196653"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>安全技术Microsoft 托管桌面
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 托管桌面使用多种 Microsoft 技术来帮助保护托管设备和数据的安全。 此外，Microsoft 托管桌面安全运营中心将[各种流程与](security-operations.md)这些技术结合使用。
+Microsoft 托管桌面使用多种 Microsoft 技术来帮助保护托管设备和数据。 此外，Microsoft 托管桌面安全运营中心[将各种流程](security-operations.md)与这些技术结合使用。
 
 具体来说：
 
-- [设备安全](#device-security)– 安全和保护Microsoft 托管桌面设备上
+- [设备安全](#device-security)– 安全Microsoft 托管桌面保护
 - [标识和访问管理](#identity-and-access-management)– 通过标识服务管理Azure Active Directory使用
 - [网络安全](#network-security)– VPN 信息和Microsoft 托管桌面解决方案和设置
 - [信息安全](#information-security) – 可选可用服务以进一步保护敏感信息
 
-有关应用程序使用的数据存储、使用情况和安全Microsoft 托管桌面，请参阅 我们的白皮书 [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
+有关用户使用的数据存储、使用情况和安全Microsoft 托管桌面，请参阅 我们的白皮书 [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
 
 ## <a name="device-security"></a>设备安全性
 
-Microsoft 托管桌面确保所有托管设备都受到保护，并尽早使用下列服务检测威胁：
+Microsoft 托管桌面确保所有托管设备的安全和保护，并尽早使用下列服务检测威胁：
 
 服务 | 说明
 --- | ---
 防病毒 | Microsoft Defender 防病毒和配置<br>Microsoft Defender 防病毒定义是最新的
 全卷加密 | WindowsBitLocker 是适用于设备Microsoft 托管桌面解决方案。<br><br>将组织载入服务后，设备会使用 Windows BitLocker 和内置信任平台模块 (TPM) 进行加密，以防止在设备进入睡眠模式或关闭时对本地数据进行未经授权的访问。
-监控 | Microsoft Defender for Endpoint 用于跨所有安全Microsoft 托管桌面监视。 Defender for Endpoint 允许企业客户检测、调查和响应企业网络中高级威胁。 有关详细信息，请参阅 [Microsoft Defender for Endpoint。](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+监控 | Microsoft Defender for Endpoint 用于跨所有设备监视Microsoft 托管桌面威胁。 Defender for Endpoint 允许企业客户检测、调查和响应企业网络中高级威胁。 有关详细信息，请参阅 [Microsoft Defender for Endpoint。](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 操作系统更新 | Microsoft 托管桌面设备始终使用最新的安全更新进行保护。
 安全设备配置 | Microsoft 托管桌面 Microsoft 安全基线。 有关详细信息，请参阅Windows[基线。](/windows/security/threat-protection/windows-security-baselines)
 
@@ -47,7 +47,7 @@ Microsoft 托管桌面确保所有托管设备都受到保护，并尽早使用�
 
 ## <a name="identity-and-access-management"></a>标识和访问管理
 
-标识和访问管理可保护公司资产和业务关键型数据。 Microsoft 托管桌面配置设备，以确保安全使用 Azure AD Azure Active Directory (托管) 安全使用。 客户有责任在 Azure AD 租户中维护准确的信息。
+标识和访问管理可保护公司资产和业务关键型数据。 Microsoft 托管桌面配置设备以确保安全使用 Azure AD Azure Active Directory (托管) 安全使用。 客户有责任在 Azure AD 租户中维护准确的信息。
 
 服务 | 说明
 --- | ---
@@ -71,5 +71,5 @@ VPN | 客户拥有其 VPN 基础结构，以确保有限的公司资源可在 In
 
 服务 | 说明
 --- | ---
-数据恢复  | 存储在设备上关键文件夹中的信息将备份到OneDrive for Business。 Microsoft 托管桌面对未与数据同步的数据OneDrive for Business。
-Windows 信息保护 | 对于需要高级别信息安全的公司，我们建议Windows[信息和](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) [Azure 信息保护。](https://www.microsoft.com/cloud-platform/azure-information-protection)
+数据恢复  | 存储在设备上密钥文件夹中的信息将备份到OneDrive for Business。 Microsoft 托管桌面对未与数据同步的数据OneDrive for Business。
+Windows 信息保护 | 对于需要高级信息安全的公司，我们建议Windows[信息和](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) [Azure 信息保护。](https://www.microsoft.com/cloud-platform/azure-information-protection)

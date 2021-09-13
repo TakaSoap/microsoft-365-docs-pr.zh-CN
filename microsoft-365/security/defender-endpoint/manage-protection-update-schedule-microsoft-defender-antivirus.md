@@ -17,11 +17,11 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: bdc3ddea542a888dbcd7fcf095835f327fb19e0a
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196021"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>管理应下载和应用保护更新的时间日程安排
 
@@ -44,7 +44,7 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>使用 Configuration Manager 计划保护更新
 
-1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述Endpoint Protection \>  \> **反** 恶意软件策略) 
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)  \>  \> 
 
 2. 转到" **安全智能更新"** 部分。
 
@@ -52,7 +52,7 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
       1. 将 **"检查Endpoint Protection安全智能更新..."** 设置为 **"0"。**
       2. 将 **"每天Endpoint Protection检查安全智能更新..."** 设置为应检查更新的时间。
       3
-4. 若要持续检查并下载更新，请Endpoint Protection检查安全智能更新...设置为两次更新之间应发生的小时数。
+4. 若要持续检查和下载更新，请Endpoint Protection **检查** 安全智能更新...设置为两次更新之间应发生的小时数。
 
 5. [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
@@ -67,7 +67,7 @@ Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以 **Windows签名** Microsoft Defender 防病毒 \>  \> **更新的组件，** 并配置以下设置：
+4. 展开树以 **Windows签名** Microsoft Defender 防病毒 \>  \> **更新的组件并** 配置以下设置：
 
     1. 双击指定 **一周中的哪些天检查安全智能** 更新设置，将选项设置为 **已启用**。 输入一周中的一天以检查更新。 单击“确定”。
     2. 双击指定 **检查安全智能更新的** 间隔设置，将选项设置为 **已启用**。 输入更新之间的小时数。 单击“确定”。
@@ -87,7 +87,7 @@ Set-MpPreference -SignatureUpdateInterval
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>使用 Windows Management Instruction (WMI) 计划保护更新
 
-对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [以下属性MSFT_MpPreference类的 **Set**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))方法：
 
 ```WMI
 SignatureScheduleDay

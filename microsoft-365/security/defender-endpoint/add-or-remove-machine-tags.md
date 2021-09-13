@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1158f0bf09b45bda17521ba7e0e472c5633492d205e60c312e93c071abb5e6fc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1f303bd129bc1cea62375b56e4b535907440f191
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222419"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>添加或删除计算机标记 API
 
@@ -59,8 +59,8 @@ ms.locfileid: "53857879"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："管理安全性设置"。 有关详细信息 (请参阅 [创建和管理角色，](user-roles.md) 了解) 
-> - 用户需要具有计算机访问权限，根据计算机组设置 (请参阅创建和管理计算机组，了解[](machine-groups.md)) 
+> - 用户至少需要具有以下角色权限："管理安全性设置"。 有关详细信息， (请参阅 [创建和管理](user-roles.md) 角色，了解) 
+> - 用户需要有权访问计算机，根据计算机组设置 (请参阅创建和管理计算机组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

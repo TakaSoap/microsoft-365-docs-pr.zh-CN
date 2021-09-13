@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6ef3a110021df3f33346aed39f340d3ad7abeff6432262647d7d740f21ee38d3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 17faffc45cfd1f472dec3f423681aaa3f64944a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53805556"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196266"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -39,7 +39,7 @@ ms.locfileid: "53805556"
 >[!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-高级 `DeviceTvmSoftwareVulnerabilities` 搜寻架构中的表包含已安装 [软件&](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 漏洞的威胁和漏洞管理列表。 此表还包括操作系统信息、CVE ID 和漏洞严重性信息。 例如，您可以使用此表来搜寻涉及其软件中具有严重漏洞的设备的事件。 使用此参考来构建从该表返回信息的查询。
+高级 `DeviceTvmSoftwareVulnerabilities` 搜寻架构中的表包含已安装 [软件](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) &漏洞的威胁和漏洞管理列表。 此表还包括操作系统信息、CVE ID 和漏洞严重性信息。 例如，您可以使用此表来搜寻涉及其软件中具有严重漏洞的设备的事件。 使用此参考来构建从该表返回信息的查询。
 
 >[!NOTE]
 > 和 `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` 表已替换 `DeviceTvmSoftwareInventoryVulnerabilities` 表。 前两个表一起包含更多列，可用于帮助通知 vulnerablity 管理活动或搜寻易受攻击的设备。
@@ -59,7 +59,7 @@ ms.locfileid: "53805556"
 | `CveId` | string | 通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符 |
 | `VulnerabilitySeverityLevel` | string | 基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别 |
 | `RecommendedSecurityUpdate` | string | 软件供应商提供的用于解决漏洞的安全更新的名称或说明 |
-| `RecommendedSecurityUpdateId` | string | 相应指南或知识库的适用安全更新或标识符的标识符 (KB) 文章 |
+| `RecommendedSecurityUpdateId` | string | 相应指南或知识库文章的适用安全更新或 (标识符) 标识符 |
 
 
 

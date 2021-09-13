@@ -10,16 +10,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e0f1bc296796ed3d171bff7a26b40a669b75039fea0b341c4851536069e2ab53
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196652"
 ---
 # <a name="service-changes-and-communication"></a>服务更改和通信
 
-有时，Microsoft 可能需要更改有关其工作方式Microsoft 托管桌面的详细信息。 同样，您可能需要进行也会影响服务的更改。 我们根据这些更改的显著性以不同方式处理这些更改。 本主题定义了我们认为主要的更改，并说明了如何处理它们与其他更改。
+有时，Microsoft 可能需要更改有关其工作方式Microsoft 托管桌面的详细信息。 同样，您可能需要进行也会影响服务的更改。 我们根据这些更改的显著性以不同方式处理这些更改。 本主题定义了我们认为主要的更改，并说明了如何处理这些更改与其他更改。
 
 
 
@@ -31,7 +31,7 @@ ms.locfileid: "53863867"
 - 影响日常工作效率的更改
 - 对自定义功能和应用程序的更改
 - 可见容量增加或减少
-- 产品品牌更改，可能会导致用户混淆或在支持人员流程和参考资料或 URL 中进行更改
+- 产品品牌更改，可能会导致用户混淆或更改支持流程、参考资料或 URL
 - 需要的权限超过服务日常操作所需的权限的更改，不包括防止或修复问题的操作
 - 对数据的存储位置的更改
 - 向服务范围添加新的组件服务或应用程序
@@ -47,7 +47,7 @@ ms.locfileid: "53863867"
 - 应用于设备的安全基线更新
 - 支持的设备。 To see recommended devices， filter for Microsoft 托管桌面 on the [Shop Windows 10 专业版 business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
 
-我们将使用既定渠道传达这些更改。 如果你有关于任何更改的任何问题，请联系Microsoft 托管桌面[团队。](../working-with-managed-desktop/admin-support.md) 对服务所做的更改也会根据需要记录在更改 [历史记录中](../change-history-managed-desktop.md)。
+我们将使用已建立的渠道来传达这些更改。 如果对任何更改有任何疑问，请联系 Microsoft 托管桌面[Operations 团队](../working-with-managed-desktop/admin-support.md)。 对服务所做的更改也会根据需要记录在更改 [历史记录中](../change-history-managed-desktop.md)。
 
 Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 - [新式生命周期策略](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
@@ -55,7 +55,7 @@ Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 
 ## <a name="changes-you-make"></a>所做的更改
 
-您可能在环境中进行一些更改可能会影响Microsoft 托管桌面。 对于这些重大更改，我们要求你通过提交管理门户中的服务请求，至少提前 30 Microsoft 托管桌面通知。 有关[说明，请参阅Microsoft 托管桌面](../working-with-managed-desktop/admin-support.md)支持。 这样，我们有足够的时间来计划和准备更改，以避免中断。
+您可能在环境中进行一些更改可能会影响Microsoft 托管桌面。 对于这些重大更改，我们要求你在管理门户中提交服务请求，至少提前 30 Microsoft 托管桌面通知。 有关[说明，请参阅Microsoft 托管桌面](../working-with-managed-desktop/admin-support.md)管理员支持。 这样，我们有足够的时间来计划和准备更改，以避免中断。
 
 主要更改是可能会影响以下任一领域的更改：
 
@@ -71,5 +71,5 @@ Microsoft 托管桌面更改和通信受两个 Microsoft 策略控制：
 
 - 孤立对象清理
 - 在服务中添加或删除用户
-- 对交付项目没有重大影响的系统Microsoft 托管桌面
+- 对交付项目没有实质性影响的系统的Microsoft 托管桌面
 - 应用程序版本更新，VPN 或代理应用程序除外

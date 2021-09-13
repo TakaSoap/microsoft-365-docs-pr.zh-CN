@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 96a27d562bdde03d5d94d8a39ecf45d64ec9bf18
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196427"
 ---
 # <a name="step-4-the-tasks-tab"></a>步骤 4："任务"选项卡
 

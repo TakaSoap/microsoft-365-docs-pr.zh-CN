@@ -22,13 +22,13 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195961"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>了解 Microsoft 365 Defender 中的威胁分析中的分析Microsoft 365 Defender
+# <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>了解 Microsoft 365 Defender 中的威胁分析中的分析员Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -54,7 +54,7 @@ _威胁分析报告的分析员报告部分_
 | 执行摘要 | 威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。 |
 | 分析 | 有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面 | 
 | MITRE ATT&观测到的 CK 技术 | 观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/) | 
-| [缓解措施](#apply-additional-mitigations) | 推荐可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。 |
+| [缓解措施](#apply-additional-mitigations) | 推荐，可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。 |
 | [检测详细信息](#understand-how-each-threat-can-be-detected) | Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。 | 
 | [高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting) | [用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。 | 
 | 参考 | Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。 | 
@@ -100,7 +100,7 @@ EDR已载入[Microsoft Defender for Endpoint](/windows/security/threat-protectio
 
 
 >[!NOTE]
-> Microsoft Defender for Endpoint 中也提供 [威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 但是，它不会在 Microsoft Defender for Office和 Microsoft Defender for Endpoint（威胁分析Microsoft 365 Defender集成）。
+> Microsoft Defender for Endpoint 中也提供 [威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 但是，它在 Microsoft Defender for Office 和 Microsoft Defender for Endpoint 之间没有数据集成（Microsoft 365 Defender分析具有）。
 
 
 ## <a name="related-topics"></a>相关主题

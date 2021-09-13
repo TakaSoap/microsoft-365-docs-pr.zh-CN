@@ -13,19 +13,19 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 2f1318b2c062e3db848b60edbb9ad60e1b38723f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196697"
 ---
 # <a name="windows-10-location-service"></a>Windows 10 位置服务
 
-设备Microsoft 托管桌面 Autopilot 注册Windows设备。 通过此过程，我们Azure Active Directory和Microsoft Intune。 默认情况下，Windows 10设备首次打开时禁用定位服务，除非在"开箱即用体验"期间的隐私设置中启用了此功能。 这些设置在 Autopilot 注册期间在 Microsoft 托管桌面。 For more information about how Autopilot is set up， see [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+设备中的Microsoft 托管桌面使用 Autopilot Windows注册。 通过此过程，我们Azure Active Directory和Microsoft Intune。 默认情况下，Windows 10首次打开设备时禁用定位服务，除非在"开箱即用体验"期间的隐私设置中启用了此功能。 这些设置在 Autopilot 注册期间处于隐藏Microsoft 托管桌面。 For more information about how Autopilot is set up， see [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
 
 因此，Microsoft 托管桌面设备无法获取其设备位置，这将限制多个Windows功能（如时区）的功能。 有关定位服务Windows 10，请参阅Windows 10[定位服务和隐私](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)。
 
-你不必使用定位服务才能参与Microsoft 托管桌面，但用户体验将受到限制。 例如，当用户在不同的时区工作时，设备将不能自动确定它们所在的时区。
+你不必使用定位服务才能参与Microsoft 托管桌面，但用户体验将受到限制。 例如，当用户在不同的时区工作时，设备无法自动确定它们所在时区。
 
 ## <a name="enable-the-location-service"></a>启用定位服务
 
@@ -43,9 +43,9 @@ ms.locfileid: "58573567"
 
 如果你选择使用定位服务，我们将使用所需的最低设置，而不会影响用户的隐私。 有关详细信息，请参阅Windows 10[服务和隐私](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)。
 
-Microsoft 托管桌面将"位置 **隐私**"设置 **Windows"设置"** 允许 **访问此设备上的位置"。** 用户界面如下所示：
+Microsoft 托管桌面启用"位置 **隐私**"设置Windows **设置以****允许访问此设备上的位置**。 用户界面如下所示：
 
- :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="位置设置Windows设置。":::
+ :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="设置中Windows设置。":::
 
 > [!NOTE]
 > 如果你选择使用定位服务，这仅适用于Windows操作系统本身。 不允许应用使用位置服务。 每个用户都可以选择是否允许应用访问其位置。

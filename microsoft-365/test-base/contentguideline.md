@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 952916fe3f27a9aa8519682f88de5ee1a3838b0e97f97ece519b6f906c016dc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5aaaa0ae3c36e04a73f65df114c8927e59b6a259
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196430"
 ---
 # <a name="test-package-guidelines"></a>测试包指南
 
@@ -71,7 +71,7 @@ ms.locfileid: "53838447"
 
 ## <a name="2-script-execution"></a>2. 脚本执行
 
-**Out-of-Box 测试：** 应用程序包至少需要包含三个 PowerShell 脚本。 这些脚本将执行无人参与的安装、启动和关闭应用程序及其依赖项。 每个脚本都应检查自己的先决条件、验证自己的成功，并在必要时 (清理) 。
+**开箱后测试：** 应用程序包至少需要包含三个 PowerShell 脚本。 这些脚本将执行无人参与的安装、启动和关闭应用程序及其依赖项。 每个脚本都应检查自己的先决条件、验证自己的成功，并在必要时 (清理) 。
 
 **功能测试：** 应用程序包至少需要包含一个 PowerShell 脚本。 如果提供了多个脚本，脚本将按上载顺序运行，并且特定脚本中的失败将阻止后续脚本执行。
 
@@ -88,7 +88,7 @@ ms.locfileid: "53838447"
 > [!NOTE]
 > 脚本应在成功完成时返回"0"，如果在执行期间发生任何错误，则返回非零错误代码。
 
-每个脚本应验证其是否成功运行。 例如，安装脚本应在安装程序二进制文件执行完成后检查系统中是否存在某些二进制文件和/或注册表项。 此检查有助于确保以合理的可信度来确保安装成功。
+每个脚本应验证其是否成功运行。 例如，安装脚本应在安装程序二进制文件执行完成后检查系统上是否存在某些二进制文件和/或注册表项。 此检查有助于确保以合理的可信度来确保安装成功。
 
 为了正确诊断在测试运行期间发生错误的情况，需要进行验证。 例如，如果脚本无法成功安装应用程序，而不是无法启动它。
 
@@ -99,7 +99,7 @@ ms.locfileid: "53838447"
 
 每个脚本都应将生成的任何日志输出到名为 的文件夹中 `logs` 。 将复制目录中名为 的所有文件夹， `logs` 并呈现在页面上进行 `Test Results` 下载。
 
-例如，可能位于 **App/scripts/install** 目录) 中的安装脚本 (可以将其日志输出到 **：logs/install.log，** 这样最终日志将位于 **：Apps/scripts/install/logs/install.log**
+例如，可能位于 **App/scripts/install** 目录中的安装脚本)  (可以将其日志输出到 **：logs/install.log，** 这样最终日志将位于 **：Apps/scripts/install/logs/install.log**
 
 系统将选取文件以及其他文件夹中的其他文件， `install.log` `logs` 并整理该文件进行下载。
 
@@ -107,7 +107,7 @@ ms.locfileid: "53838447"
 
 任何二进制文件和依赖项都应包含在单个 zip 文件中。
 
-这些二进制文件应包括安装应用程序组件所需的一 (例如，应用程序安装程序) 。 如果应用程序依赖于任何框架（如 .NET Core/Standard 或 .NET Framework），则这些框架应包含在文件中，并正确引用提供的脚本。
+这些二进制文件应包括安装应用程序安装程序所需的一 (例如，应用程序安装程序) 。 如果应用程序依赖于任何框架，如 .NET Core/Standard 或 .NET Framework，则这些框架应包含在文件中，并正确引用提供的脚本。
 
 > [!NOTE]
 > 上载的 zip 文件的名称中不能包含任何空格或特殊字符
@@ -116,4 +116,4 @@ ms.locfileid: "53838447"
 
 前进到下一篇文章以查看一些常见问题 (**常见问题)**
 > [!div class="nextstepaction"]
-> [下一步](faq.md)
+> [后续步骤](faq.md)

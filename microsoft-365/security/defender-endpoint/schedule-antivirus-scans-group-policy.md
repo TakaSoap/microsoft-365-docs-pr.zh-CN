@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 413f003150b41cea0fb63e4ecd486b7ea230d1a06c2a0d4890deb8b7c209dfcc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f6018ec8b514234ab4f98e3d5416b472ff88739
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197256"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>使用组策略安排防病毒扫描
 
@@ -48,16 +48,16 @@ ms.locfileid: "53799714"
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>计划扫描的组策略设置
 
-| 位置 | 设置 | 说明 | 如果未 (默认设置)  |
+| 位置 | Setting | 说明 | 如果未配置 (，则默认设置)  |
 |:---|:---|:---|:---|
 | 扫描 | 指定用于计划扫描的扫描类型 | 快速扫描 |
-| 扫描 | 指定一周中的哪些天运行计划扫描 | 指定运行 () 或从不运行扫描的日。 | 永不 |
-| 扫描 | 指定运行计划扫描的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示上午 1 点) 。 | 2 a.m. |
-| 根 | 随机化计划任务时间 |在Microsoft Defender 防病毒中，将扫描的开始时间随机化为 0 到 4 小时之间的任意间隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，将扫描随机化为任意间隔加减 30 分钟。 这可在虚拟机或 VDI 部署中非常有用。 | 已启用 |
+| 扫描 | 指定一周中的哪些天运行计划扫描 | 指定运行 () 或从不运行扫描的日。 | 从不 |
+| 扫描 | 指定运行计划扫描的时间 | 例如，指定午夜过后的分钟数 (，输入 **60** 表示上午 1 点) 。 | 2 a.m. |
+| 根 | 随机化计划任务时间 |在Microsoft Defender 防病毒中，将扫描的开始时间随机化为 0 到 4 小时之间的任意间隔。 <p>在 [SCEP](/mem/intune/protect/certificates-scep-configure)中，将扫描随机化为任意间隔加或减 30 分钟。 这可在虚拟机或 VDI 部署中非常有用。 | 已启用 |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>计划终结点不使用时扫描的组策略设置
 
-| 位置 | 设置 | 说明 | 如果未 (默认设置)  |
+| 位置 | Setting | 说明 | 如果未配置 (，则默认设置)  |
 |:---|:---|:---|:---|
 | 扫描 | 仅在计算机打开但没有使用时启动计划扫描 | 计划的扫描将不会运行，除非计算机已打开但没有使用 | 已启用 |
 
@@ -66,21 +66,21 @@ ms.locfileid: "53799714"
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>用于计划修正所需扫描的组策略设置
 
-| 位置 | 设置 | 说明 | 如果未 (默认设置)  |
+| 位置 | Setting | 说明 | 如果未配置 (，则默认设置)  |
 |---|---|---|---|
-| 修正 | 指定一周中的哪些天运行计划的完全扫描以完成修正 | 指定运行 () 或从不运行扫描的日。 | 永不 |
+| 修正 | 指定一周中的哪些天运行计划的完全扫描以完成修正 | 指定运行 () 或从不运行扫描的日。 | 从不 |
 | 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示凌晨 1 点)  | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>用于计划每日扫描的组策略设置
 
-| 位置 | 设置 | 说明 | 如果未 (默认设置)  |
+| 位置 | Setting | 说明 | 如果未配置 (，则默认设置)  |
 |:---|:---|:---|:---|
-| 扫描 | 指定每天运行快速扫描的间隔 | 指定下一次快速扫描之前应经过的小时数。 例如，若要每两小时运行一次，请输入 **2，** 一天一次，请输入 **24**。 输入 **0** 从不运行每日快速扫描。 | 永不 |
+| 扫描 | 指定每天运行快速扫描的间隔 | 指定下一次快速扫描之前应经过的小时数。 例如，若要每两小时运行一次，请输入 **2，** 一天一次，请输入 **24**。 输入 **0** 从不运行每日快速扫描。 | 从不 |
 | 扫描 | 指定每日快速扫描的时间 | 指定午夜过后的分钟数 (例如，输入 **60** 表示凌晨 1 点)  | 2 a.m. |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>用于计划保护更新后扫描的组策略设置
 
-| 位置 | 设置 | 说明 | 如果未 (默认设置) |
+| 位置 | Setting | 说明 | 如果未配置 (，则默认设置) |
 |:---|:---|:---|:---|
 | 签名更新 | 在安全智能更新后打开扫描 | 扫描将在下载新保护更新后立即发生 | 已启用 |
 

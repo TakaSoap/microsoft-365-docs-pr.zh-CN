@@ -25,7 +25,7 @@ additionalContent:
           summary: 更改颜色主题并设置面向外部客户的预订页面的外观。
           url: customize-booking-page.md
         - title: 向 Bookings 添加员工
-          summary: 创建员工列表并管理员工详细信息，如姓名、电话号码和电子邮件地址。
+          summary: 创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
           url: add-staff.md
         - title: 安排公司关闭、休假和休假时间
           summary: 从 Bookings 日历安排办公室关闭和员工请假，以便员工在指定的时间标记为不进行预订。

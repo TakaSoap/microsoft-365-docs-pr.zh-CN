@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5476410a26ba28e6aeb8100bca79d8ce240b2bad6ab83a2820553035982b5f91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 554767c1db2d4122c7bc77c47a55772e4ddaa0a6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196614"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 
@@ -33,7 +33,7 @@ ms.locfileid: "53793381"
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
-本文提供了一些常规步骤，以减少事件门户中缺少Microsoft 365 Defender[警报](https://security.microsoft.com/)。
+本文提供了一些常规步骤，以减少事件或警报在 Microsoft 365 Defender[门户](https://security.microsoft.com/)中。
 
 在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。 可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。 本节将解决缺失某些或所有预期事件的情况。
 例如，如果缺少 _所有 CreatedFile_ 事件。
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint 利用 `audit` linux 中的框架跟踪网络和
     service auditd start
     ```
 
-**在 SLES** 系统上，默认情况下可能会禁用 中的 SYSCALL 审核，并可以说明 `auditd` 缺少事件。
+**在 SLES** 系统上，SYSCALL 审核默认情况下可能处于禁用状态，并可以说明 `auditd` 缺少事件。
 
 1. 若要验证 SYSCALL 审核是否未禁用，请列出当前的审核规则：
 

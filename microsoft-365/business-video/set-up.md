@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何设置Microsoft 365 商业高级版。
-ms.openlocfilehash: 8824755d8215af6a1459ae73d1cd9ba08f5897c574b07e8e99f6b78cfee439c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4609789f426446b554e97576643bfba7f6d50803
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196159"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>设置 Microsoft 365 商业高级版
 
@@ -33,7 +34,7 @@ ms.locfileid: "53838015"
 
 ## <a name="try-it"></a>试一试！
 
-1. 登录到"设置Microsoft 365 管理中心，然后选择"**转到设置"。** 安装向导将启动。
+1. 登录到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>"，然后选择"**转到设置"。** 安装向导将启动。
 2.  在"**安装Office应用**"页上，可以选择Office安装应用，或选择"继续 **"。**
 3.  在"**你的域是你的企业标识**"页上，输入你的企业域名，然后选择"**使用此域"。** 如果使用通用注册器（如 WordPress 或 GoDaddy），则会自动在此页面上添加记录。
 4. 在"  **验证域"**  页上，选择"  **验证** "以验证您的域的所有权，然后登录到您的域注册机构帐户。 若要让 Microsoft 添加用于帐户验证的 TXT 记录，请选择"确认 **"。**
@@ -43,7 +44,7 @@ ms.locfileid: "53838015"
 8.  在 **"添加 DNS** 记录"页上，建议保留为电子邮件、Teams和移动设备安全性启用服务。 选择 **"** 配置"，然后选择 **"连接"** 以向域注册机构确认更改。
 9.  On the **Increase protection from advanced cyber threats** page， leave Office Advanced Threat **Protection** on， review what will be scanned， and then select Create Advanced **Threat Protection****policies**.   
 10.  如果需要，可以选择在移动设备上Outlook安装程序。 选择"**继续"。**
-11. 在"**帮助用户使用** Microsoft Teams"页上，选择是否要向组织中用户发送有关Teams的信息，然后选择"继续 **"。**
+11. 在"**帮助用户Microsoft Teams"** 页上，选择是否要向组织中用户发送有关Teams的信息，然后选择"继续 **"。**
 12. On the **Protect data in Office for mobile** page， leave mobile app management on， expand the settings and review them， and then select Create mobile app management **policy**.
 13. 设置完成后，返回到 Microsoft 管理中心。 在管理中心，你可以继续在"设置"Windows 10设置策略、DLP **等** 功能。
 

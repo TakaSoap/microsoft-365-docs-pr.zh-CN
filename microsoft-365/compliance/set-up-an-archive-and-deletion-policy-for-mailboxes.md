@@ -22,11 +22,11 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何在存档和删除策略Microsoft 365自动将项目移动到用户的存档邮箱。
 ms.openlocfilehash: d84e83174d7698c4532bc082502653f25fb2981e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196893"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -38,11 +38,11 @@ ms.locfileid: "58574936"
 
 - 创建三个执行以下操作的自定义保留标记：
 
-  - 自动将 3 年的项目移动到用户的存档邮箱。 将项目移动到存档邮箱可释放用户的主邮箱中的空间。
+  - 自动将 3 年的项目移动到用户的存档邮箱。 将项目移动到存档邮箱可释放用户主邮箱中的空间。
 
   - 自动从"已删除邮件"文件夹中删除 5 年的项目。 这还可以释放用户的主邮箱中的空间。 用户将有机会在必要时恢复这些项目。 有关详细信息，请参阅 [详细信息部分](#more-information) 中的脚注。 
 
-  - 自动 (并永久) 从主邮箱和存档邮箱中删除 7 年的项目。 由于遵从性法规，某些组织需要将电子邮件保留一段时间。 在此时间段过期后，组织可能希望永久删除用户邮箱中的这些项目。
+  - 自动 (并) 从主邮箱和存档邮箱中删除 7 年的项目。 由于遵从性法规，某些组织需要将电子邮件保留一段时间。 在此时间段过期后，组织可能希望永久删除用户邮箱中的这些项目。
 
 - 创建新的保留策略，并添加新的自定义保留标记。 此外，还会将内置保留标记添加到新的保留策略中。 这包括用户可分配给其邮箱中的项目的个人标记。 您还将添加一个保留标记，用于将项目从用户主邮箱中的"可恢复的项目"文件夹移动到存档邮箱中的"可恢复的项目"文件夹。 这有助于在用户的邮箱处于保留状态时释放用户的"可恢复的项目"文件夹中的空间。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58574936"
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>步骤 1：为用户启用存档邮箱
 
-第一步是为组织中每个用户启用存档邮箱。 必须启用用户的存档邮箱，以便具有"移动到存档"保留操作中的保留标记可以在保留时间过期后移动项目。
+第一步是为组织中每个用户启用存档邮箱。 必须启用用户的存档邮箱，以便具有"移动到存档"保留操作保留的保留标记可以在保留时间过期后移动项目。
   
 > [!NOTE]
 > 您可以在此过程期间随时启用存档邮箱，只要在此过程完成之前在某些时候启用存档邮箱。 如果未启用存档邮箱，则不会对分配了存档或删除策略的任何项目执行任何操作。
@@ -92,13 +92,13 @@ ms.locfileid: "58574936"
 
 在此步骤中，将创建之前描述的三个自定义保留标记。
   
-- House 3 年移动到存档 (自定义存档策略) 
+- House 3 年后移动到存档 (自定义存档策略) 
 
-- House House 7 Year 永久删除 (自定义删除策略) 
+- House 7 Year 永久删除 (自定义删除策略) 
 
-- House Deleted Items 5 Years Delete and Allow Recovery (custom tag for the Deleted Items folder) 
+- House House Deleted Items 5 Years Delete and Allow Recovery (custom tag for the Deleted Items folder) 
 
-若要创建新的保留标记，请使用 Exchange 组织中 (EAC) 管理Exchange Online标记。 请务必使用 EAC 的经典版本。
+若要创建新的保留标记，请使用 Exchange 组织中 (EAC) 管理Exchange Online中心。 请务必使用 EAC 的经典版本。
   
 1. 转到 [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) ，然后使用凭据登录。
   
@@ -120,7 +120,7 @@ ms.locfileid: "58574936"
 
    2. **保留操作** 选择 **"移动到存档** "，在保留期到期时将项目移动到存档邮箱。
 
-   3. **保留期** 选择 **"当项目达到以下期限 (天数) ，** 然后输入保留期的持续时间。 对于此方案，项目将在 3 年后的 1095 天 (移动到存档) 。
+   3. **保留期** 选择 **"当项目达到以下期限 (天数) ，** 然后输入保留期的持续时间。 对于此方案，项目将在 1095 天后移动到存档邮箱， (3 年后) 。
 
    4. **注释** (可选) 键入说明自定义保留标记用途的注释。
 
@@ -164,9 +164,9 @@ ms.locfileid: "58574936"
 
    2. **将此标记应用于以下默认文件夹** 在下拉列表中，选择"**已删除邮件"。**
 
-   3. **保留操作** 选择 **"** 删除 (并允许恢复"以在保留期到期时删除项目，但允许用户在已删除项目的保留期（默认为 14 天）内恢复已删除) 。
+   3. **保留操作** 选择 **"** 删除并允许恢复"以在保留期过期时删除项目，但允许用户在已删除项目的保留期（默认为 14 天）内恢复已删除 (该保留期为) 。
 
-   4. **保留期** 选择 **"当项目达到以下期限 (天数) ，** 然后输入保留期的持续时间。 对于此方案，将在 1825 天后删除项目， (5 年后) 。
+   4. **保留期** 选择 **"当项目达到以下期限 (天数) ，** 然后输入保留期的持续时间。 对于此方案，项目将在 1825 天后删除， (5 年后) 。
 
    5. **注释** (可选) 键入说明自定义保留标记用途的注释。 
 
@@ -231,7 +231,7 @@ ms.locfileid: "58574936"
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a> (可选) 步骤 5：运行托管文件夹助理以应用新设置
 
-在步骤 4 中将新的保留策略应用于邮箱后，Exchange Online可能需要 7 天才能将新的保留设置应用于邮箱。 这是因为名为托管文件夹助理 *的进程至少每* 7 天处理一次邮箱。 无需等待托管文件夹助理运行，您可以通过在 PowerShell 中运行 **Start-ManagedFolderAssistant** cmdlet 来Exchange Online此操作。
+在步骤 4 中将新的保留策略应用于邮箱后，Exchange Online 可能需要 7 天才能将新的保留设置应用于邮箱。 这是因为名为托管文件夹助理 *的进程至少每* 7 天处理一次邮箱。 无需等待托管文件夹助理运行，您可以通过在 PowerShell 中运行 **Start-ManagedFolderAssistant** cmdlet 来Exchange Online此操作。
 
  **运行托管文件夹助理时会发生什么情况？** 它通过检查邮箱中的项目并确定它们是否受保留限制来应用保留策略中的设置。 然后，使用相应的保留标记标记要保留的项目，然后对已过其保留时间的项目执行指定的保留操作。
   
@@ -254,9 +254,9 @@ ms.locfileid: "58574936"
 > [!NOTE]
 > 如前所述，托管文件夹助理至少每 7 天处理一次邮箱。 因此，托管文件夹助理可以更频繁地处理邮箱。 此外，管理员无法预测托管文件夹助理下次处理邮箱的时间，这也是您可能需要手动运行邮箱的一个原因。 但是，如果要暂时阻止托管文件夹助理将新的保留设置应用于邮箱，可以运行命令来临时禁用托管文件夹助理处理 `Set-Mailbox -ElcProcessingDisabled $true` 邮箱。 若要为邮箱重新启用托管文件夹助理，请运行 `Set-Mailbox -ElcProcessingDisabled $false` 命令。 最后，如果邮箱用户具有禁用的帐户，我们不会处理该邮箱的"将项目移动到存档"操作。
   
-## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a> (可选) 步骤 6：将新的保留策略设置为组织的默认策略
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a> (可选) 步骤 6：将新保留策略设置为组织的默认策略
 
-在步骤 4 中，您必须将新的保留策略分配给现有邮箱。 但是，您可以Exchange Online策略，以便新保留策略分配给将来创建的新邮箱。 为此，Exchange Online PowerShell 更新组织的默认邮箱计划。 *邮箱计划* 是自动配置新邮箱的属性的模板。  在此可选步骤中，可以将分配给邮箱计划 (的当前保留策略（默认情况下，默认 MRM 策略) 替换为在步骤 3 中创建的保留策略）。 更新邮箱计划后，新的保留策略将分配给新邮箱。
+在步骤 4 中，您必须将新的保留策略分配给现有邮箱。 但您可以配置Exchange Online，以便新保留策略分配给将来创建的新邮箱。 为此，Exchange Online PowerShell 更新组织的默认邮箱计划。 *邮箱计划* 是自动配置新邮箱的属性的模板。  在此可选步骤中，可以将分配给邮箱计划 (的当前保留策略（默认情况下，默认 MRM 策略) 替换为在步骤 3 中创建的保留策略）。 更新邮箱计划后，新的保留策略将分配给新邮箱。
 
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -268,7 +268,7 @@ ms.locfileid: "58574936"
 
     请注意设置为默认值的邮箱计划。
 
-3. 运行以下命令，将步骤 3 中创建的新保留策略 (例如 **，House House Archive 和 Retention Policy**) 分配给默认邮箱计划。 本示例假定默认邮箱计划的名称为 **ExchangeOnlineEnterprise**。
+3. 运行以下命令，将步骤 3 中创建的新保留策略 (例如 **，House House Archive and Retention Policy**) 分配给默认邮箱计划。 本示例假定默认邮箱计划的名称为 **ExchangeOnlineEnterprise**。
 
     ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
@@ -276,7 +276,7 @@ ms.locfileid: "58574936"
 
 4. 可以重新运行步骤 2 中的命令，以验证分配给默认邮箱计划的保留策略已更改。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 如何计算保留时间？ 邮箱项目的保留时间从传递日期或项目创建日期开始计算，例如未发送但由用户创建的草稿邮件。 When the Managed Folder Assistant processes items in a mailbox, it stamps a start date and an expiration date for all items that have retention tags with the Delete and Allow Recovery or Permanently Delete retention action. 具有存档标记的项目标记有移动日期。 
 
@@ -286,14 +286,14 @@ ms.locfileid: "58574936"
     |:-----|:-----|:-----|:-----|
     |大本市 3 年移动到存档  <br/> |将 1095 天 (3 年) 移动到存档邮箱。  <br/> |自定义 (请参阅步骤 [2：](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies) 为存档和删除策略创建新的保留标记)   <br/> |默认策略标记 (存档) ;此标记将自动应用于整个邮箱。  <br/> |
     |大本市 7 年永久删除  <br/> |7 年后永久删除主邮箱或存档邮箱中的项目。  <br/> |自定义 (请参阅步骤 [2：](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies) 为存档和删除策略创建新的保留标记)   <br/> |默认策略标记 (删除) ;此标记将自动应用于整个邮箱。  <br/> |
-    |一号楼删除项目 5 年删除并允许恢复  <br/> |从"已删除邮件"文件夹中删除 5 年的项目。 删除这些项目后，用户可以在 14 天内恢复这些项目。<sup>\*</sup> <br/> |自定义 (请参阅步骤 [2：](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies) 为存档和删除策略创建新的保留标记)   <br/> |保留策略标记 (已删除邮件) ;此标记将自动应用于"已删除邮件"文件夹中的项目。  <br/> |
-    |可恢复项目 14 天移动到存档  <br/> |将"可恢复的项目"文件夹中已保留 14 天的项目移动到存档邮箱中的"可恢复的项目"文件夹。  <br/> |内置  <br/> |保留策略标记 (可恢复) ;此标记将自动应用于"可恢复的项目"文件夹中的项目。  <br/> |
+    |一号楼删除项目 5 年删除并允许恢复  <br/> |从"已删除邮件"文件夹中删除 5 年的项目。 删除这些项目后，用户可以在 14 天内恢复这些项目。<sup>\*</sup> <br/> |自定义 (请参阅步骤 [2：](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies) 为存档和删除策略创建新的保留标记)   <br/> |保留策略标记 (已删除项目) ;此标记将自动应用于"已删除邮件"文件夹中的项目。  <br/> |
+    |可恢复项目 14 天移动到存档  <br/> |将"可恢复的项目"文件夹中已保留 14 天的项目移动到存档邮箱中的"可恢复的项目"文件夹。  <br/> |内置  <br/> |保留策略标记 (可恢复的项目) ;此标记将自动应用于"可恢复的项目"文件夹中的项目。  <br/> |
     |垃圾邮件  <br/> |永久删除"垃圾邮件"文件夹中已保留 30 天的项目。 删除这些项目后，用户可以在 14 天内恢复这些项目。<sup>\*</sup> <br/> |内置  <br/> |保留策略标记 (垃圾邮件) ;此标记将自动应用于"垃圾邮件"文件夹中的项目。  <br/> |
     |1 个月后删除  <br/> |永久删除 30 天的项目。 删除这些项目后，用户可以在 14 天内恢复这些项目。<sup>\*</sup> <br/> |内置  <br/> |个人;用户可以应用此标记。  <br/> |
     |1 年后删除  <br/> |永久删除 365 天的项目。 删除这些项目后，用户可以在 14 天内恢复这些项目。<sup>\*</sup> <br/> |内置  <br/> |个人;用户可以应用此标记。  <br/> |
     |从不删除  <br/> |此标记可防止保留策略删除项目。  <br/> |内置  <br/> |个人;用户可以应用此标记。  <br/> |
     |个人 1 年后移动到存档  <br/> |1 年后将项目移动到存档邮箱。  <br/> |内置  <br/> |个人;用户可以应用此标记。  <br/> |
 
-    > <sup>\*</sup>用户可以使用 Outlook 和 Outlook 网页版 (（以前称为 Outlook Web App) ）中的"恢复已删除邮件"工具在已删除项目的保留期（默认为 Exchange Online 中的 14 天）内恢复已删除项目。 管理员可以使用Windows PowerShell将已删除项目的保留期最多增加至 30 天。 有关详细信息，请参阅[：Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)和 Change the [deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
+    > <sup>\*</sup>用户可以使用 Outlook 和 Outlook 网页版 (（以前称为 Outlook Web App) ）中的"恢复已删除邮件"工具在已删除项目的保留期（默认为 Exchange Online 中的 14 天）内恢复已删除项目。 管理员可以使用Windows PowerShell将已删除项目的保留期最长增加至 30 天。 有关详细信息，请参阅[：Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)和 Change the [deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - 使用 **"可恢复的项目 14 天** 移动到存档"保留标记有助于释放用户主邮箱中"可恢复的项目"文件夹中的存储空间。 当用户的邮箱处于保留状态时，这非常有用，这意味着不会永久删除用户邮箱。 如果不将项目移动到存档邮箱，则可能会达到主邮箱中"可恢复的项目"文件夹的存储配额。 有关此情况以及如何避免此情况的信息，请参阅增加保留邮箱的可恢复 [邮件配额](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

@@ -1,5 +1,5 @@
 ---
-title: 查看目录中的目录Microsoft 365
+title: 查看目录中的目录同步Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: 本文将了解如何在 Office 365 中检查目录同步的状态。
 ms.openlocfilehash: 0fddffc667e4fc23b2c7663e70fb5e60c49814a2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195685"
 ---
-# <a name="view-directory-synchronization-status-in-microsoft-365"></a>查看目录中的目录Microsoft 365
+# <a name="view-directory-synchronization-status-in-microsoft-365"></a>查看目录中的目录同步Microsoft 365
 
-如果通过将本地环境与 Microsoft 365 同步，将本地 Active Directory 域服务 (AD DS) 与 Azure Active Directory (Azure AD) 集成，则还可以检查同步的状态。
+如果你已经将本地 Active Directory 域服务 (AD DS) 与 Azure Active Directory (Azure AD) 通过 Microsoft 365 同步，则还可以检查同步的状态。
   
 ## <a name="view-directory-synchronization-status"></a>查看目录同步状态
 
-- 登录到 [网站Microsoft 365 管理中心主页](https://admin.microsoft.com)上的 **"DirSync** 状态"。
+- 登录到 [网站Microsoft 365 管理中心在](https://admin.microsoft.com)主页上选择 **"DirSync** 状态"。
 - 或者，你可以转到"用户 **""** 活动用户"，在"活动用户"页面上， \> 选择"**更多** \> **目录同步"。** 在"**目录同步"窗格中**，选择 **"转到目录同步管理"。**
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>"管理目录同步"页上的信息

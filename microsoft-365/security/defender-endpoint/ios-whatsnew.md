@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: reference
 ms.technology: mde
 ms.openlocfilehash: 81d9194d9e0c6677f01f34b8052efa0333270c04
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196622"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -48,7 +48,7 @@ ms.locfileid: "58863709"
 ## <a name="1115140101"></a>1.1.15140101
 
 - **越狱检测** 为预览版。 有关详细信息，请参阅基于 [设备风险信号设置条件访问策略](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)。
-- **对于通过 Intune** 应用程序注册的设备，VPN 配置文件的Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
+- **对于通过** Intune 应用程序注册的设备，VPN 配置文件的Microsoft Endpoint Manager (预览) 。 有关详细信息，请参阅为已注册的 [iOS 设备自动设置 VPN 配置文件](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)。
 - Microsoft Defender ATP 产品名称现已更新到应用商店中的 Microsoft Defender for Endpoint。
 - 改进了登录体验。
 - Bug 修复。

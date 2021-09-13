@@ -21,11 +21,11 @@ ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 本文将介绍在德国使用 Office 365的终结点。
 hideEdit: true
 ms.openlocfilehash: f022c82c41aaeeed73af13572234e7826d878158
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196778"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
@@ -34,8 +34,8 @@ ms.locfileid: "58575596"
 Office 365 要求连接到 Internet。 对于使用德国计划的客户，应Office 365 **终结点**。
 
 > [!NOTE]
-> 对于正在转换到德国新数据中心区域Microsoft 365，终结点将发生变化。
-> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域。](ms-cloud-germany-transition.md)
+> 对于正在转换到德国新数据中心Microsoft 365的客户，终结点将发生变化。
+> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域提供服务](ms-cloud-germany-transition.md)。
   
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md)  | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美国政府版 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

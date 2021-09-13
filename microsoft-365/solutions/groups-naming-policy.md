@@ -19,11 +19,11 @@ ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: 了解如何为组创建命名Microsoft 365策略。
 ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171519"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365组命名策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "58568224"
 
 组命名策略包含以下功能：
 
-- **前缀后缀命名策略**：可以使用前缀或后缀来定义组的命名约定 (例如："US \_ My Group \_ Engineering") 。 前缀/后缀可以是固定字符串或用户属性（如 [Department]），这些属性将基于创建组的用户进行替换。
+- **前缀后缀命名策略**：可以使用前缀或后缀来定义组命名约定 (例如："US \_ My Group \_ Engineering") 。 前缀/后缀可以是固定字符串或用户属性（如 [Department]），这些属性将基于创建组的用户进行替换。
 
 - **自定义阻止的词语**：可以上载一组特定于组织、将在用户创建的组中被阻止的阻止词。  (例如："CEO、Payroll、HR") 。
 
@@ -79,9 +79,9 @@ ms.locfileid: "58568224"
 - 前缀和后缀可以包含在组名和组别名中支持的特殊字符。 当前缀和后缀包含组别名中不允许的特殊字符时，它们仅应用于组名称。 因此，在这种情况下，应用于组名的前缀和后缀将不同于应用于组别名的前缀和后缀。
 
   > [!NOTE]
-  > 组名称 (.) 或连字符 (-) ，但名称开头或结尾处除外。 在 (_) 名称中的任何位置（包括名称的开头或结尾处）都允许使用下划线字符。
+  > 组名称中的 (.) 或连字符 (-) ，但名称开头或结尾处除外。 在 (_) 名称中的任何位置（包括名称的开头或结尾处）都允许使用下划线字符。
 
-- 如果正在使用已Yammer Office 365组，请避免在命名策略中使用下列字符 \# ：@、、、、、。 \[ \] \<, and \> 如果这些字符在命名策略中，Yammer用户将无法创建组。
+- 如果要在连接的Yammer Office 365，请避免在命名策略中使用下列字符 \# ：@、、、、、。 \[ \] \<, and \> 如果这些字符在命名策略中，Yammer用户将无法创建组。
 
 > [!Tip]
 > - 使用短字符串作为后缀。
@@ -91,7 +91,7 @@ ms.locfileid: "58568224"
 
 ## <a name="custom-blocked-words"></a>自定义阻止的词语
 
-可以在组名和别名中输入将阻止的被阻止单词的逗号分隔列表。
+您可以输入一个以逗号分隔的阻止词列表，这些单词将在组名称和别名中被阻止。
 
 不执行子字符串搜索;具体而言，需要用户输入的名称和自定义阻止的词语之间的完全匹配才能触发失败。
 

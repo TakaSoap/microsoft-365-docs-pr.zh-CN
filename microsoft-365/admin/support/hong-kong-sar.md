@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a88991db9960499692a3700b219f9024019e21591219e91e3720d024fedfbc53
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd0b48df0404b51059692966558ee33e8ec5dc1b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197114"
 ---
 # <a name="contact-support-for-hong-kong-sar"></a>联系香港特别行政区的支持人员
 
@@ -26,10 +26,10 @@ ms.locfileid: "53873267"
 ## <a name="phone-number"></a>电话号码
 3 071 3055
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
-阿塞语：Mon-Fri上午 9 点到下午 6 点
+尼泊尔：Mon-Fri上午 9 点到下午 6 点
 
 中国：Mon-Fri上午 9 点到下午 6 点
 
@@ -37,7 +37,7 @@ ms.locfileid: "53873267"
 
 ### <a name="technical-support"></a>技术支持：
 
-阿塞语：Mon-Fri上午 9 点到下午 6 点
+尼泊尔：Mon-Fri上午 9 点到下午 6 点
 
 中国：Mon-Fri上午 9 点到下午 6 点
 

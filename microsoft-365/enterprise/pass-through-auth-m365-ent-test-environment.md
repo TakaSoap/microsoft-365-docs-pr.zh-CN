@@ -19,15 +19,15 @@ ms.custom:
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
 ms.openlocfilehash: aa2ef24db76917917d35e7816c249334f6bdd229
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566762"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196366"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
 
 想要直接使用本地 Active Directory 域服务 (AD DS) 基础结构来进行对 Microsoft 云服务的身份验证的组织可以使用直通身份验证。 本文介绍了如何为直通身份验证配置 Microsoft 365 测试环境，生成的配置如下：
   
@@ -94,7 +94,7 @@ ms.locfileid: "58566762"
  
 此配置包括：
 
-- 使用Microsoft 365 E5测试标签试用或付费订阅。\<your domain name> 。
+- 使用Microsoft 365 E5测试标签的试用或付费订阅。\<your domain name> 。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以处理 Microsoft 365 订阅的 Azure AD 租户发出的直通身份验证请求。
 
 ## <a name="next-step"></a>后续步骤

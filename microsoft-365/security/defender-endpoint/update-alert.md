@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4bf668379edccff3e85fdeece6cfdcf7482ac8a5a9910cc5a8cf8629463db26c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00c02bad3f95d2bd8def69d5dd6ad8e1c2e857df
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884531"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196276"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -61,7 +61,7 @@ ms.locfileid: "53884531"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
 > - 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -74,7 +74,7 @@ PATCH /api/alerts/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 Content-Type|String|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文

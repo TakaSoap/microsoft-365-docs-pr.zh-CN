@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: d00c4a541951ee1c241a52a19b8ec27301b793a1
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196018"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>管理移动设备和虚拟机 （VM） 的更新
 
@@ -47,7 +47,7 @@ ms.locfileid: "58823789"
 
 当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。
 
-这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新， (Microsoft 更新) 保护更新也可以传递到设备。
+这意味着，保护更新可以通过 Microsoft 更新 (设备) 即使你已设置 WSUS 覆盖 Microsoft 更新。
 
 可以通过以下方法之一选择在移动设备上使用 Microsoft 更新：
 
@@ -63,7 +63,7 @@ ms.locfileid: "58823789"
 
 3. 选择 **"策略****"，然后选择"管理模板"。**
 
-4. 展开树以 **Windows签名Microsoft Defender 防病毒** \>  \> **组件**。
+4. 展开树以Windows **签名** \> **Microsoft Defender 防病毒** \> **组件**。
 
 5. 将 **"允许安全智能更新从 Microsoft 更新"设置为****"已启用"，** 然后选择"确定 **"。**
 
@@ -99,5 +99,5 @@ ms.locfileid: "58823789"
 
 ## <a name="related-articles"></a>相关文章
 
-- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [更新和管理Microsoft Defender 防病毒中的Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

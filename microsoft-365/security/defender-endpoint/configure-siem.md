@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 018b432ec792610c2f3d232a7ead4dfc8c75639f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196357"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>将检测拉取到 SIEM 工具
 
@@ -41,7 +41,7 @@ ms.locfileid: "58532423"
 > - [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 > -Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
-Defender for Endpoint 支持安全信息和事件管理 (SIEM) 拉取检测的工具。 Defender for Endpoint 通过 Azure 中托管的 HTTPS 终结点公开警报。 终结点可以配置为使用 OAuth 2.0 身份验证协议从 Azure Active Directory (AAD) 中的企业租户拉取检测，此协议适用于表示环境中安装的特定 SIEM 连接器的 AAD 应用程序。
+Defender for Endpoint 支持 SIEM (安全信息和事件) 拉检测。 Defender for Endpoint 通过 Azure 中托管的 HTTPS 终结点公开警报。 终结点可以配置为使用 OAuth 2.0 身份验证协议从 Azure Active Directory (AAD) 中的企业租户拉取检测，此协议适用于表示环境中安装的特定 SIEM 连接器的 AAD 应用程序。
 
 Defender for Endpoint 当前通过专用 SIEM 集成模型支持以下特定 SIEM 解决方案工具：
 

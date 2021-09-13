@@ -18,11 +18,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: a8e67bda0a33699f3d1934d943dd52db5a3354be
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196340"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>从 MSSP 客户租户提取警报
 
@@ -51,7 +51,7 @@ ms.locfileid: "58610949"
 
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>步骤 1：在 Azure AD Azure Active Directory (创建) 
 
-你需要创建一个应用程序，并授予它从客户的 Microsoft Defender 终结点租户获取警报的权限。
+你需要创建一个应用程序，并授予它从客户的适用于终结点租户的 Microsoft Defender 获取警报的权限。
 
 1. 登录到 Azure [AD 门户](https://aad.portal.azure.com/)。
 
@@ -64,15 +64,15 @@ ms.locfileid: "58610949"
     - 名称 \<Tenant_name\> ：SIEM MSSP 连接器 (将Tenant_name替换为租户显示名称) 
 
     - 支持的帐户类型：仅此组织目录中的帐户
-    - 重定向 URI：选择"Web"，然后 `https://<domain_name>/SiemMsspConnector` ("<domain_name>租户名称") 
+    - 重定向 URI：选择 `https://<domain_name>/SiemMsspConnector` "Web"， ("<domain_name>租户名称") 
 
 5. 单击“**注册**”。 应用程序显示在你拥有的应用程序列表中。
 
 6. 选择应用程序，然后单击"概述 **"。**
 
-7. 将值从应用程序客户端 **(ID) 复制到** 安全位置，下一步中将需要此值。
+7. 将值从应用程序客户端 **(ID)** 复制到安全位置，下一步中将需要此值。
 
-8. Select **Certificate & secrets** in the new application panel.
+8. 选择 **"&** 应用程序面板中的"证书"和"密码"。
 
 9. 单击 **"新建客户端密码"。**
 
@@ -83,7 +83,7 @@ ms.locfileid: "58610949"
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>步骤 2：从客户的租户获取访问和刷新令牌
 
-本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码令牌获取访问令牌和刷新Flow。
+本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码和刷新令牌Flow。
 
 提供凭据后，你需要同意应用程序，以便应用程序在客户的租户中预配。
 
@@ -94,7 +94,7 @@ ms.locfileid: "58610949"
     > [!NOTE]
     > 在行 30 中，将 `authorzationUrl` 替换为 `authorizationUrl` 。
 
-3. 创建包含以下内容的文件，并将其与文件夹中 `MsspTokensAcquisition.ps1` 的名称一起保存：
+3. 创建包含以下内容的文件，并将其与文件夹中的名称 `MsspTokensAcquisition.ps1` 一起保存：
 
     ```powershell
     param (
@@ -148,21 +148,21 @@ ms.locfileid: "58610949"
 
 6. 输入以下命令： `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - 将 \<client_id\> 替换为 **上一 ()** 应用程序客户端 ID。
+    - 将 \<client_id\> 替换为 **上一 ()** 应用程序客户端客户端 ID。
     - 将 \<app_key\> 替换为在上一步中创建的客户端密码。
     - 将 \<customer_tenant_id\> 替换为客户的租户 **ID。**
 
 7. 你将被要求提供你的凭据和同意。 忽略页面重定向。
 
-8. 在 PowerShell 窗口中，您将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。
+8. 在 PowerShell 窗口中，你将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。
 
 ### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>步骤 3：允许应用程序Microsoft 365 Defender
 
-你需要允许在应用程序中创建的应用程序Microsoft 365 Defender。
+你需要允许你在应用程序中创建的应用程序Microsoft 365 Defender。
 
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 
-1. 转到 `https://security.microsoft.com?tid=<customer_tenant_id>` (客户租户 \<customer_tenant_id\> ID 替换。
+1. 转到 `https://security.microsoft.com?tid=<customer_tenant_id>` (客户的租户 ID \<customer_tenant_id\> 替换。
 
 2. 单击 **设置** \>  \> **终结点 API** \> **SIEM"**。
 
@@ -175,7 +175,7 @@ ms.locfileid: "58610949"
 现在，你可以下载 SIEM 的相关配置文件并连接到 Defender for Endpoint API。 有关详细信息，请参阅将 [警报拉取到 SIEM 工具](configure-siem.md)。
 
 - 在 ArcSight 配置文件/Splunk 身份验证属性文件中，通过设置密码值手动编写应用程序密钥。
-- 使用上一步中的脚本获取刷新令牌，而不是在门户中获取刷新令牌 (或通过其他方法获取刷新) 。
+- 使用上一步中的脚本获取刷新令牌， (获取刷新令牌，而不是在门户中获取刷新) 。
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>使用 API 从 MSSP 客户的租户提取警报
 

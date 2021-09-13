@@ -16,11 +16,11 @@ f1.keywords:
 description: 现有Office 365客户必须在其国家/地区期限之前提交请求，Microsoft 365服务数据移动到其新地理位置。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196744"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -68,7 +68,7 @@ ms.locfileid: "58574672"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-自 2020 年 1 月起，Office 365国家/地区中的客户可以选择迁移 Microsoft Teams 聊天服务数据。  之前选择加入移动Data Residency也将Teams移动到其本地数据中心地理位置。  这些客户无需执行任何其他操作。
+截至 2020 年 1 月，Office 365国家/地区中的客户可以选择迁移Microsoft Teams聊天服务数据。  之前选择加入本地移动Data Residency还将Teams移动到其本地数据中心地理位置。  这些客户无需执行任何其他操作。
 
 ## <a name="related-topics"></a>相关主题
 

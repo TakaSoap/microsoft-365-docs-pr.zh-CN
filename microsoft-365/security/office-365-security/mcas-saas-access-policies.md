@@ -16,16 +16,16 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: 4668ecc352b9e972dcef544e87c7f29b8287cafb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195929"
 ---
-# <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>SaaS Microsoft Cloud App Security的建议策略
-Microsoft Cloud App Security基于 Azure AD 条件访问策略构建，支持使用 SaaS 应用实时监视和控制粒度操作，例如阻止下载、上传、复制和粘贴以及打印。 此功能为具有固有风险的会话添加安全性，例如，当非托管设备或来宾用户访问公司资源时。
+# <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>SaaS Microsoft Cloud App Security推荐的策略
+Microsoft Cloud App Security基于 Azure AD 条件访问策略构建，支持使用 SaaS 应用实时监视和控制具体操作，例如阻止下载、上传、复制和粘贴以及打印。 此功能为具有固有风险的会话添加安全性，例如，当非托管设备或来宾用户访问公司资源时。
 
-Microsoft Cloud App Security也与Microsoft 信息保护集成，提供实时内容检查，以根据敏感信息类型和敏感度标签查找敏感数据，并采取适当的措施。
+Microsoft Cloud App Security还与Microsoft 信息保护集成，提供实时内容检查，以根据敏感信息类型和敏感度标签查找敏感数据，并采取适当的措施。
 
 本指南包括针对以下方案的建议：
 
@@ -44,13 +44,13 @@ Microsoft Cloud App Security也与Microsoft 信息保护集成，提供实时内
 
 对 SaaS 应用的权限通常基于对应用的访问权限的业务需求。 这些权限可以是高度动态的。 使用云应用安全策略可确保保护应用数据，无论用户被分配到与基线、敏感或高度管控保护相关联的 Azure AD 组。
 
-为了跨 SaaS 应用集合保护数据，下图说明了必要的 Azure AD 条件访问策略以及可在 云应用安全 创建的建议策略。 此示例中，在 云应用安全 创建的策略将应用于你正在管理的所有 SaaS 应用。 这些控件旨在根据设备是否受管理以及已应用于文件的敏感度标签来应用适当的控件。
+为了跨 SaaS 应用集合保护数据，下图说明了必要的 Azure AD 条件访问策略，以及可在 云应用安全 创建的建议策略。 此示例中，在 云应用安全 创建的策略将应用于你正在管理的所有 SaaS 应用。 这些控件旨在根据设备是否受管理以及已应用于文件的敏感度标签来应用适当的控件。
 
 ![用于管理 SaaS 应用中云应用安全。](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
 
 下表列出了必须在 Azure AD 中创建的新条件访问策略。
 
-|保护级别|Policy|详细信息|
+|保护级别|Policy|更多信息|
 |---|---|---|
 |所有保护级别|[在应用程序中使用条件访问云应用安全](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|这将配置你的 IdP (Azure AD) 以使用 云应用安全。|
 ||||
@@ -61,7 +61,7 @@ Microsoft Cloud App Security也与Microsoft 信息保护集成，提供实时内
 |---|---|
 |基线|监视来自非托管设备的流量 <p> 向从非托管设备下载文件添加保护|
 |敏感|阻止从非托管设备下载标记为敏感或分类的文件 (这将仅提供浏览器) |
-|高度管控|阻止从所有设备下载标记为已分类 (这将提供仅浏览器) |
+|高度管控|阻止从所有设备下载标记为已分类 (这将提供浏览器仅) |
 |||
 
 有关设置条件访问应用控件的端到端说明，请参阅为特色应用部署条件 [访问应用控制](/cloud-app-security/proxy-deployment-aad)。 本文将引导你完成在 Azure AD 中创建必要的条件访问策略和测试 SaaS 应用的过程。
@@ -87,21 +87,21 @@ Microsoft Cloud App Security也与Microsoft 信息保护集成，提供实时内
 
 这些就是示例。 定期添加其他策略模板。 有关如何将其他保护应用于特定应用的示例，请参阅 [保护已连接的应用](/cloud-app-security/protect-connected-apps)。
 
-[帮助云应用安全 Box](/cloud-app-security/protect-box)环境如何演示可帮助你在 Box 和其他应用（包含敏感数据）中保护业务数据的控件类型。
+[如何云应用安全](/cloud-app-security/protect-box)Box 环境的保护演示了可帮助你在 Box 和其他应用（包含敏感数据）中保护业务数据的控件类型。
 
 ## <a name="configure-data-loss-prevention-dlp-to-help-comply-with-data-protection-regulations"></a>配置 DLP (数据丢失) 以帮助遵守数据保护法规
 
 云应用安全配置合规性法规保护的有用工具。 在这种情况下，您可以创建特定策略来查找法规适用的特定数据，并配置每个策略以采取相应措施。
 
-下图和表格提供了一些策略示例，可配置这些策略以帮助遵守 GDPR 一般 (条例) 。 在这些示例中，策略查找特定数据。 根据数据的敏感度，每个策略都配置为采取相应的操作。
+下图和表格提供了一些策略示例，可配置这些策略以帮助遵守 GDPR 一般数据保护条例 (规定) 。 在这些示例中，策略查找特定数据。 根据数据的敏感度，每个策略都配置为采取相应的操作。
 
 ![数据丢失云应用安全策略示例。](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
 
 |保护级别|示例策略|
 |---|---|
 |基线|当包含此敏感信息类型的文件 ("信用卡号") 组织外部共享时发出警报 <p> >阻止将包含此敏感信息类型的文件 ("信用卡号") 非托管设备|
-|敏感|保护包含此敏感信息类型的文件下载 ("信用卡号") 托管设备 <p> 阻止将包含此敏感信息类型的文件 ("信用卡号") 非托管设备 <p> 当包含这些标签的文件上载到 OneDrive for Business 或 Box (客户数据、人力资源：工资数据、人力资源、员工数据) |
-|高度管控|当具有此标签的文件 ("高度分类"的文件) 托管设备时发出警报 <p> 阻止下载具有此标签的文件 ("高度) 非托管设备|
+|敏感|保护包含此敏感信息类型的文件下载 ("信用卡号") 托管设备 <p> 阻止下载包含此敏感信息类型的文件 ("信用卡号") 非托管设备 <p> 当包含这些标签的文件上载到 OneDrive for Business 或 Box (客户数据、人力资源：工资数据、人力资源、员工数据) |
+|高度管控|当具有此标签的文件 ("高度分类") 下载到托管设备时发出警报 <p> 阻止下载具有此标签的文件 ("高度分类") 非托管设备|
 |||
 
 ## <a name="next-steps"></a>后续步骤

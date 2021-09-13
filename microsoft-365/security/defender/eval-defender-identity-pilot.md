@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: ae54134f681568a193b7a99c166aa025d6358eec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197242"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>试用 Microsoft Defender for Identity
 
@@ -36,7 +36,7 @@ ms.locfileid: "58561226"
 
 本文是设置 Microsoft Defender for Identity 评估环境过程中的第 3 步（第 [3](eval-defender-identity-overview.md) 步）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-identity-overview.md)。
 
-使用以下步骤为 Microsoft Defender 的标识设置和配置试点。 请注意，建议不包括设置试点组。 最佳做法是继续操作，在运行 Active Directory 域服务 (AD DS) 和 Active Directory 联合服务 (AD FS) 的所有服务器上安装传感器。
+使用以下步骤为 Microsoft Defender 的标识设置和配置试点。 请注意，建议不包括设置试点组。 最佳做法是在运行 Active Directory 域服务 (AD DS) 和 Active Directory 联合服务 (AD FS) 的所有服务器上安装传感器。
 
 ![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-identity-pilot-steps.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "58561226"
 
 Microsoft 为使用 Microsoft 云服务的客户提供安全基准建议。 [Azure 安全](/security/benchmark/azure/overview) (ASB) 提供了说明性最佳做法和建议，以帮助提高 Azure 上的工作负载、数据和服务的安全性。
 
-这些基准建议包括 Microsoft Defender 标识 的 [Azure 安全基线](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 实施这些建议可能需要一些时间来计划和实现。 虽然这将大大提高标识环境的安全性，但不应阻止你继续评估和实现 Microsoft Defender for Identity。 此处提供了这些功能，以用于你的感知。
+这些基准建议包括 Microsoft Defender 标识 的 [Azure 安全基线](/security/benchmark/azure/baselines/defender-for-identity-security-baseline)。 实施这些建议可能需要一些时间来计划和实现。 虽然这将大大提高标识环境的安全性，但不应阻止你继续评估和实现 Microsoft Defender for Identity。 此处提供了这些信息，以用于你的了解。
 
 ## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>步骤 2. 试用功能 - 演练用于识别和修正不同攻击类型的教程
 

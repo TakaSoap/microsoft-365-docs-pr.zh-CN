@@ -1,7 +1,7 @@
 ---
 title: Windows 中的信息保护概述
 ms.reviewer: ''
-description: 了解信息保护如何工作Windows标识和保护敏感信息
+description: 了解信息保护如何Windows标识和保护敏感信息
 keywords: 信息， 保护， dlp， 数据， 丢失， 防护， 保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196056"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -36,14 +36,14 @@ ms.locfileid: "58683512"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-信息保护是 Microsoft 365 企业版的一部分，可提供智能保护，以确保敏感数据的安全，同时在工作场所中提高工作效率。
+信息保护是 Microsoft 365 企业版的一部分，可提供智能保护以保持敏感数据安全，同时在工作场所中提高工作效率。
 
 > [!TIP]
-> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint Microsoft 信息保护集成，以发现、保护和监视Windows[敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint 与 Microsoft 信息保护集成，以发现、保护和监视Windows[敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint 应用以下方法来发现、分类和保护数据：
 
-- **数据发现**- 识别Windows的敏感数据
+- **数据发现**- 识别Windows的设备的敏感数据
 - **数据分类**- 根据安全与合规中心Microsoft 信息保护 (管理) MIP 策略Office 365数据&分类。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
 
 ## <a name="data-discovery-and-data-classification"></a>数据发现和数据分类
@@ -52,14 +52,14 @@ Defender for Endpoint 自动发现具有敏感度标签的文件和包含敏感�
 
 敏感度标签分类并帮助保护敏感内容。
 
-DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
+DLP 策略实现中的Office 365数据丢失防护 () 分为两类：
 
 - 默认值
-- 自定义
+- 自定义警报
 
 默认敏感信息类型包括诸如银行帐号、社会保险号或国家/市/市/区号等信息。 有关详细信息，请参阅 [敏感信息类型查找什么](/office365/securitycompliance/what-the-sensitive-information-types-look-for)。
 
-自定义类型是一些您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](/office365/securitycompliance/create-a-custom-sensitive-information-type)。
+自定义类型是您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](/office365/securitycompliance/create-a-custom-sensitive-information-type)。
 
 在设备上创建或编辑文件时，Windows Defender for Endpoint 会扫描内容，以评估其中是否包含敏感信息。
 
@@ -88,7 +88,7 @@ Azure Log [Analytics](/azure/log-analytics/log-analytics-overview)中也提供�
 
 有关 Azure 信息保护分析详细信息，请参阅 [Azure 信息保护的中央报告](/azure/information-protection/reports-aip)。
 
-在 Azure 门户中打开 Azure Log Analytics，然后打开标准 (或经典查询) 。
+在 Azure 门户中打开 Azure Log Analytics，然后打开 (或经典查询) 。
 
 若要查看 Defender for Endpoint 数据，请执行包含以下项的查询：
 

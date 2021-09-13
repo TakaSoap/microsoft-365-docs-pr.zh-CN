@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196616"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
@@ -67,7 +67,7 @@ Microsoft Defender for Endpoint 可以使用环境变量发现 `HTTPS_PROXY` 代
 
 在 `HTTPS_PROXY` 卸载过程中，环境变量可能同样定义。
 
-请注意，如果需要代理但不配置代理，安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
+请注意，如果需要代理但不配置代理，则安装和卸载不一定失败。 但是，将不会提交遥测，由于网络超时，操作可能需要更长时间。
 
 ## <a name="post-installation-configuration"></a>安装后配置
 

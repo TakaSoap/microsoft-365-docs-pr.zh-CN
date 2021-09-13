@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 18c3c86588cde02b699736e2239f052707cc8a625d7de570bbe5504e6de81a7a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ff07f662cbcc6ed9f9bbe38bd4496652702e27d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197077"
 ---
 # <a name="contact-support-for-saint-vincent-and-the-grenadines"></a>请联系圣文特和格林纳西斯的支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "53804236"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5145
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

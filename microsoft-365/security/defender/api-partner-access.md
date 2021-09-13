@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 7ccd05a2848b673d511a89c93cdbfed81f26c3d3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195989"
 ---
-# <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>创建具有合作伙伴对 API Microsoft 365 Defender的应用
+# <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>创建具有合作伙伴对 api Microsoft 365 Defender访问权限的应用
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "58568572"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-此页面介绍如何创建一个Azure Active Directory应用程序，该应用可代表多个租户中的Microsoft 365 Defender以编程方式访问应用程序。 多租户应用可用于为大型用户组服务。
+此页面介绍如何创建一个Azure Active Directory应用程序，该应用可代表多个租户中的用户Microsoft 365 Defender访问应用程序。 多租户应用可用于为大型用户组服务。
 
-如果需要以编程方式Microsoft 365 Defender单个用户访问，请参阅创建应用以代表用户Microsoft 365 Defender [API。](api-create-app-user-context.md) 如果需要在没有用户明确定义的 (的情况下访问，例如，如果要编写后台应用或守护程序) ，请参阅创建应用以在没有用户[Microsoft 365 Defender](api-create-app-web.md)访问。 如果你不确定需要哪种类型的访问，请参阅 [入门](api-access.md)。
+如果需要以编程方式Microsoft 365 Defender单个用户进行访问，请参阅创建应用以代表用户Microsoft 365 Defender [API。](api-create-app-user-context.md) 如果需要在没有用户明确定义的 (的情况下访问，例如，如果要编写后台应用或守护程序) ，请参阅创建应用以在没有用户[Microsoft 365 Defender](api-create-app-web.md)访问。 如果你不确定需要哪种类型的访问，请参阅 [入门](api-access.md)。
 
 Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作。 这些 API 可帮助您自动化工作流，并充分利用Microsoft 365 Defender功能。 此 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
@@ -64,7 +64,7 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 通常，你将需要执行以下步骤来使用 API：
 
 - 创建 **多租户** Azure AD 应用程序。
-- 获取 (同意) 管理员同意应用程序访问其所需的Microsoft 365 Defender资源。
+- 获取 (同意) 管理员同意应用程序访问所需的Microsoft 365 Defender资源。
 - 使用此应用程序获取访问令牌。
 - 使用令牌访问 Microsoft 365 Defender API。
 
@@ -74,14 +74,14 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 
 1. 以具有全局管理员角色的用户 **登录** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册。**
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。**
 
    ![应用程序注册Microsoft Azure导航的图像。](../../media/atp-azure-new-app2.png)
 
 3. 在注册表单中：
 
    - 为应用程序选择一个名称。
-   - 从 **支持的帐户类型中**，选择任何组织目录中的帐户 **(任何 Azure AD 目录) - 多租户**。
+   - 从 **"支持的帐户类型"中**，选择"任何组织目录中的帐户 **(任何 Azure AD 目录) - 多租户"**。
    - 填写重定向 **URI** 部分。 选择类型 **"Web"，** 将重定向 URI 作为 **https://portal.azure.com** 提供。
 
    填写完表单后，选择"注册 **"。**
@@ -192,7 +192,7 @@ return $token
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-1. 将以下代码复制并粘贴到应用中 (请不要忘记更新三个变量 `tenantId` `clientId` `appSecret` ：、、) ：
+1. 将以下代码复制并粘贴到应用中 (不要忘记更新三个变量 `tenantId` `clientId` `appSecret` ：、、) ：
 
     ```C#
     string tenantId = ""; // Paste your directory (tenant) ID here
@@ -269,7 +269,7 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用令牌访问 Microsoft 365 Defender API
 
-1. 选择要用于事件或高级 (的 API) 。 有关详细信息，请参阅受支持的[Microsoft 365 Defender API。](api-supported.md)
+1. 选择要用于事件或高级 (API) 。 有关详细信息，请参阅受支持的[Microsoft 365 Defender API。](api-supported.md)
 2. 在即将发送的 http 请求中，将授权标头设置为 `"Bearer" <token>` *，Bearer* 为授权方案， *令牌* 为经过验证的令牌。
 3. 令牌将在一小时内过期。 在此期间，可以使用同一令牌发送多个请求。
 
@@ -289,8 +289,8 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 - [Microsoft 365 DefenderAPI 概述](api-overview.md)
 - [访问Microsoft 365 Defender API](api-access.md)
 - [创建"Hello world"应用程序](api-hello-world.md)
-- [创建应用以在没有用户Microsoft 365 Defender访问应用程序](api-create-app-web.md)
-- [创建应用以Microsoft 365 Defender访问 API](api-create-app-user-context.md)
+- [创建应用以在没有Microsoft 365 Defender的情况下访问用户](api-create-app-web.md)
+- [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)

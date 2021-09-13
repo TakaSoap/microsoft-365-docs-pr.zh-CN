@@ -10,18 +10,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: 04b65c6abbdaa2233bdfb25a7f7af8644d60d435
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364981"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196701"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>在Intune 公司门户安装设备
 
-Microsoft 托管桌面 IT 管理员需要使用 Intune 公司门户 为用户安装 Microsoft 托管桌面 服务。 以下是组织的一些好处：
+Microsoft 托管桌面要求 IT 管理员使用 Intune 公司门户 为用户安装Microsoft 托管桌面服务器。 以下是组织的一些好处：
 - 用户有一个浏览和安装可用应用程序的位置。 
 - IT 管理员可以按用户类别组织应用程序。  
-- 某些应用程序 (如 Microsoft Project 和 Microsoft Visio) 公司门户部署需要Microsoft 托管桌面。
+- 某些应用程序 (如 Microsoft Project 和 Microsoft Visio) 要求公司门户部署Microsoft 托管桌面。
 - IT 管理员可以为公司门户自定义自定义策略。 这包括品牌映像、添加本地支持联系人等。 有关详细信息，请参阅[如何配置Microsoft Intune 公司门户应用](/intune/company-portal-app)。   
 
 本主题介绍向用户Intune 公司门户部署Microsoft 托管桌面过程。 整个过程如下所示：
@@ -38,23 +38,23 @@ Microsoft 托管桌面 IT 管理员需要使用 Intune 公司门户 为用户安
 - 验证 Intune 和 Intune 之间的活动适用于企业的 Microsoft Store 
 
 ## <a name="step-2---assign-company-portal-to-your-users"></a>步骤 2 - 公司门户分配给用户
-注册 Microsoft 托管桌面 后，公司门户部署到租户，并在你的组织的 Microsoft 托管桌面 设备上安装应用。
+注册后Microsoft 托管桌面，公司门户部署到租户，并在你的组织的 Microsoft 托管桌面 设备上安装应用。
 
 ## <a name="step-3---communicate-change-to-your-users"></a>步骤 3 - 将更改传达给用户
 作为组织的 IT 管理员，让用户了解如何在组织中使用 公司门户很重要。 Microsoft 托管桌面建议：
 - 从应用程序安装应用程序公司门户。 有关详细信息，请参阅在设备上 [安装和共享应用](/intune-user-help/install-apps-cpapp-windows)。
 - 如何向 IT 管理员发送当前不可用的应用程序的请求。 有关详细信息，请参阅请求 [工作或学校应用](/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school)。  
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
 
-1. 访问 [管理门户](access-admin-portal.md)。
-1. [在管理门户中添加并验证管理员联系人](add-admin-contacts.md)。
+1. 访问 [管理员门户](access-admin-portal.md)。
+1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。
 1. [注册后调整设置](conditional-access.md)。
 1. 部署和分配Intune 公司门户 (本文) 。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
 1. [设置设备](set-up-devices.md)
-1. 设置 [Autopilot 和注册状态页面的首次运行体验](esp-first-run.md)。
+1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
-1. [让用户准备好使用设备](get-started-devices.md)。
-1. [应用控件入门](get-started-app-control.md)。
+1. [让用户做好使用设备的准备](get-started-devices.md)。
+1. [开始使用应用控制](get-started-app-control.md)。

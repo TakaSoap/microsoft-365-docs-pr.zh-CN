@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
-description: 如果需要在客户在线预订约会时询问客户问题，可以将自定义问题和必填问题添加到预订页面。
+description: 如果你需要在客户在线预订约会时询问客户问题，你可以将自定义问题和必填问题添加到预订页面。
 ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196179"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>向预订页面添加自定义和必需的问题
 
@@ -31,7 +31,7 @@ Bookings 允许你创建问题，以在客户预订约会时询问客户。 它�
 
 ## <a name="add-custom-questions-to-your-services"></a>向服务添加自定义问题
 
-1. 登录以Microsoft 365然后转到 **Bookings**。
+1. 登录以Microsoft 365并转到 **Bookings**。
 
 1. 转到"**服务**"，然后编辑现有服务或 **"添加服务"。**
 

@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: 98df694002d31e330fff1b5d53618044bc6c5dae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197249"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Defender for Identity security alerts in Microsoft 365 Defender
 
@@ -23,11 +23,11 @@ ms.locfileid: "58566660"
 
 本文介绍了如何使用 Microsoft [Defender for Identity](/defender-for-identity)安全警报的基础知识，Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
 
-Defender for Identity 警报在本机集成到具有[Microsoft 365 Defender标识警报](https://security.microsoft.com)页面格式的页面中。 这标记了将完整的 Microsoft Defender for Identity 体验引入到 Microsoft 365 Defender[的旅程的第一步](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)。
+Defender for Identity 警报在本机集成到具有[Microsoft 365 Defender标识警报](https://security.microsoft.com)页面格式的页面中。 这标记了将完整的 Microsoft Defender for Identity 体验引入到 Microsoft 365 Defender 的[旅程的第一步](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)。
 
 新的标识警报页面为 Microsoft Defender for Identity 客户提供更好的跨域信号扩充和新自动标识响应功能。 它可确保您保持安全，并有助于提高安全操作的效率。
 
-通过 Microsoft 365 Defender 调查警报的一个好处[](/microsoft-365/security/defender/microsoft-365-defender)是，Microsoft Defender for Identity 警报与从套件中的所有其他产品获取的信息进一步关联。 这些增强警报与源自[Microsoft Defender for Microsoft 365 Defender 和 Microsoft Defender for](/microsoft-365/security/office-365-security) Endpoint 的其他增强Office 365[一致](/microsoft-365/security/defender-endpoint)。 新页面实际上无需导航到其他产品门户来调查与标识相关的警报。
+通过 Microsoft 365 Defender 调查警报的一个好处[](/microsoft-365/security/defender/microsoft-365-defender)是，Microsoft Defender for Identity 警报与从套件中的所有其他产品获取的信息进一步关联。 这些增强警报与源自[Microsoft Defender for Microsoft 365 Defender](/microsoft-365/security/office-365-security)和 Microsoft Defender for Endpoint 的其他增强Office 365[一致](/microsoft-365/security/defender-endpoint)。 新页面实际上无需导航到其他产品门户来调查与标识相关的警报。
 
 源自 Defender for Identity 的警报现在可以触发 Microsoft 365 Defender 自动调查和响应[ (AIR) ](/microsoft-365/security/defender/m365d-autoir)功能，包括自动修正警报以及缓解可能参与可疑活动的工具和流程。
 
@@ -81,12 +81,12 @@ To see alerts from Defender for Identity， on the top-right select **Filter**�
   - **分类**- 可以选择"真 **警报"或**"**假警报"。**
   - **注释** - 可以添加有关警报的注释。
 
-    如果选择"管理警报"旁边的三个点，可以咨询威胁专家、将警报导出到Excel 文件或 **链接到其他事件**。 
+    如果选择"管理警报"旁边的三个点，可以咨询威胁专家、将警报导出到Excel文件或链接到其他 **事件**。 
 
     ![管理警报。](../../media/defender-identity/manage-alert.png)
 
     > [!NOTE]
-    > 在 Excel 文件中，你现在有两个链接可用：在 **Microsoft Defender 中查看标识** 和在 Microsoft 365 Defender 中 **查看**。 每个链接将你带到相关门户，并提供有关警报的信息。
+    > 在 Excel 文件中，现在有两个链接可用：在 **Microsoft Defender 中** 查看标识和在 Microsoft 365 Defender 中 **查看**。 每个链接将你带到相关门户，并提供有关警报的信息。
 
 ## <a name="see-also"></a>另请参阅
 

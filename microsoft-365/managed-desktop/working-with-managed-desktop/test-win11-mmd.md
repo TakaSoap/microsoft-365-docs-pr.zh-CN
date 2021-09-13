@@ -9,26 +9,26 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 33fe1a2ada8091945906cc58ab1a0d3ccee2d90ebf34ea8b3e64cab27ccdc57c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de608fa58d0267050b510ef8308d716b608f8e37
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196626"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>使用 Microsoft 托管桌面预览和测试 Windows 11
 
- 如何注册并参与Windows 11 兼容性测试Microsoft 托管桌面计划。 有关通常Windows 11 Microsoft 托管桌面，请参阅 Windows [11 和 Microsoft 托管桌面。](../intro/win11-overview.md) 
+ 如何注册并参与Windows 11 兼容性测试Microsoft 托管桌面计划。 有关 11 Windows 11 和 Microsoft 托管桌面，请参阅 Windows [11 和 Microsoft 托管桌面。](../intro/win11-overview.md) 
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>将设备添加到 Windows 11 测试组
 
-根据请求，我们将创建 (**Modern Workplace - Windows 11** 预发行测试) 设备组，以测试Windows 11。 此组中设备在可用时Windows 11 版本Microsoft 托管桌面配置，并监视其可靠性问题。
+根据请求，我们将创建 (**Workplace - Windows 11** 预发行测试) 设备组，以测试Windows 11。 此组中设备在可用时Windows 11 版本Microsoft 托管桌面配置，并监视其可靠性问题。
 
 你可以选择任何现有设备或新设备进行 Windows 11 测试，但由于预发布版本中缺陷或兼容性问题的风险增加，不应在此组中注册存储设备。 分配至此组时，将删除以前的设备组分配。
 
 若要在预发布测试组中注册设备，请执行以下操作：
 
-1. 与服务工程团队Microsoft 托管桌面新服务请求。
+1. 使用服务工程团队打开Microsoft 托管桌面请求。
 2. 对字段使用这些值：
     - 标题：Windows 11 兼容性注册
     - 请求类型：更改请求
@@ -38,9 +38,9 @@ ms.locfileid: "53807141"
 
 ## <a name="prioritize-applications-to-submit-to-test-base"></a>确定要提交到测试库的应用程序的优先级
 
-在关闭的 11 环境中，业务关键型应用程序Windows最佳候选。 我们可以帮助你根据使用情况和可靠性数据Windows 11 测试的应用的优先级。 若要请求我们的建议，请按照以下步骤操作：
+在关闭的 11 环境中，业务关键型应用程序Windows最佳候选项。 我们可以帮助你根据使用情况和可靠性数据确定应用Windows 11 测试的优先级。 若要请求我们的建议，请按照以下步骤操作：
 
-1. 与服务工程团队Microsoft 托管桌面新服务请求。 如果你需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
+1. 使用服务工程团队打开Microsoft 托管桌面请求。 如果你需要更多有关如何提交请求的信息，请参阅 [管理员支持](admin-support.md)。
 2. 对字段使用这些值：
     - 标题：Windows 11 个测试基准候选项
     - 请求类型：信息请求
@@ -51,7 +51,7 @@ ms.locfileid: "53807141"
 
 如果你在业务Windows或应用遇到 11 Microsoft 365兼容性问题，请将其报告给我们，以进行调查和修正。 若要报告问题，请按照以下步骤操作：
 
-1. 与服务工程团队Microsoft 托管桌面新服务请求。
+1. 使用服务工程团队打开Microsoft 托管桌面请求。
 2. 对字段使用这些值：
     - 标题：Windows 11 兼容性测试
     - 请求类型：事件
@@ -59,4 +59,4 @@ ms.locfileid: "53807141"
     - 子类别：Windows/更新
 3. 描述该行为以及它在生产环境中对业务的影响。
 
-Microsoft 托管桌面根据对工作效率的影响，对预发布内部版本问题进行分类和处理。 虽然我们的服务说明未涵盖预发布版本的问题，但我们会与客户管理员协商，以确保在任意给定租户中开始迁移之前解决阻止用户工作效率的问题。
+Microsoft 托管桌面根据对工作效率的影响，对预发布版本问题进行分类和处理。 虽然我们的服务说明未涵盖预发布版本的问题，但我们会与客户管理员协商，以确保在任意给定租户中开始迁移之前解决阻止用户工作效率的问题。

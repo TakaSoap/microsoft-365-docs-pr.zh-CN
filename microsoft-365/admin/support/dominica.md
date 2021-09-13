@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bdb516041f5b3f3b5576ba0b814c4637b61015ac8b46114df0dba8830945f62a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8ddc3f5d9184b7800610b28f03c813cdc7c5faf6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197141"
 ---
 # <a name="contact-support-for-dominica"></a>联系 Dominica 支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53901811"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5150
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 西班牙语：Mon-Fri 11 AM-7 PM

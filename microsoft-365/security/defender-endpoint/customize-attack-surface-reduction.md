@@ -15,11 +15,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: bfdfd2badce75294376d6406ba3d3078f26a9857
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222273"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
@@ -33,7 +33,7 @@ ms.locfileid: "58533071"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[攻击面减少规则](enable-attack-surface-reduction.md) 有助于防止经常滥用以损害设备或网络的软件行为。 例如，攻击者可能会尝试从 USB 驱动器运行未签名的脚本，或者让 Office 文档中的宏直接调用 Win32 API。 攻击面减少规则可以限制这些类型的风险行为，并改进组织的防御状态。
+[攻击面减少规则](enable-attack-surface-reduction.md) 有助于防止经常滥用以损害设备或网络的软件行为。 例如，攻击者可能尝试从 USB 驱动器运行未签名的脚本，或者让 Office 文档中的宏直接调用 Win32 API。 攻击面减少规则可以限制这些类型的风险行为，并改进组织的防御状态。
 
 了解如何通过排除文件和文件夹或向用户计算机上[](#exclude-files-and-folders)显示的通知警报添加自定义文本[](#customize-the-notification)来自定义攻击面减少规则。
 
@@ -88,7 +88,7 @@ ms.locfileid: "58533071"
 |通过 WMI 事件订阅阻止持久性|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
 |阻止源自 PSExec 和 WMI 命令的进程创建|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
 |阻止从 USB 运行的不受信任的和未签名的进程|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
-|阻止从宏调用 win32 API Office宏|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
+|阻止来自宏的 Win32 API Office调用|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
 |使用高级防护抵御勒索软件|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
 |
 
@@ -100,7 +100,7 @@ ms.locfileid: "58533071"
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 展开树以Windows **攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **的组件**。
+3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **减少的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 

@@ -9,22 +9,22 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: aaec101b6e7046aaf64fac3a5e0bf52e6ee8dd1159b653feac63135fdb3446d9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196656"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>安全中心中的Microsoft 托管桌面
 
 安全Microsoft 托管桌面中心 (SOC) 信息安全人员，以确保桌面环境安全。 我们团队通过专家分析接收和响应托管设备上的所有安全警报，并根据需要推动安全事件响应活动。 有关使用 SOC 的信息，请查看管理门户中的操作文档。
 
-SOC 提供 Microsoft 全职员工 24/7/365 的覆盖范围，这些员工具有当前和新出现的威胁环境方面的专业知识，包括通过软件、网络或人为对手的常见攻击方法。
+SOC 提供 Microsoft 全职员工 24/7/365 的覆盖范围，这些员工具有当前和新出现的威胁形势方面的专业知识，包括通过软件、网络或人为对手的常见攻击方法。
 
 SOC 提供以下服务：
 - 对检测到的事件做出快速准确的响应，并分析数据以确定对设备或环境的影响并评估总体风险
-- 用于保护你的环境免受已知或可疑泄露的设备管理和隔离操作，通过防止传播来降低风险
+- 用于保护你的环境免受已知或可疑泄露的设备管理和隔离操作，通过阻止传播来降低风险
 - 推动安全事件响应流程，确保与安全团队及时准确地沟通
 - 基于威胁和漏洞数据的分析和建议，以在被利用之前识别和解决风险
 - 跨托管设备的高级搜寻，用于标识已知威胁和潜在威胁的指示器和实体
@@ -32,8 +32,8 @@ SOC 提供以下服务：
 ## <a name="processes"></a>进程
 
 - Microsoft 托管桌面安全操作由与 Microsoft 网络防御操作中心合作的全职 Microsoft 员工[配备](https://www.microsoft.com/msrc/cdoc)。 
-- 我们的 SOC 使用来自整个公司（包括内部和外部）共同信号来保护你的设备，甚至防止我们尚未在 Microsoft 托管桌面 中看到Microsoft 托管桌面。
-- Microsoft 安全解决方案符合许多网络安全保护标准。 SOC 操作基于美国国家标准和技术协会计算机安全事件响应处理指南 (NIST 800-61 r2) 。
+- 我们的 SOC 使用来自整个公司（内部和外部）共同信号来保护你的设备，甚至防止我们尚未在 Microsoft 托管桌面 中看到Microsoft 托管桌面。
+- Microsoft 安全解决方案符合许多网络安全保护标准。 SOC 操作基于美国国家标准和技术协会 NIST 800-61 r2 事件处理指南 (NIST 800-61 r2) 。
 - 此过程允许正确收集信息和证据，以进行分析和记录，以及恢复后见解，以通过以下阶段更好地保护环境：
     - 准备、检测和分析
     - 遏制

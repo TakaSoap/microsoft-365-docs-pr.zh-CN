@@ -10,20 +10,20 @@ localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Microsoft Bookings 应用的概述，其中包括基于 Web 的预订日历，并且与 Outlook 集成，以优化员工的日历并让客户灵活地预订约会。
 ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196182"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
 Microsoft Bookings 使安排和管理约会成为一种希望。 Bookings 包括基于 Web 的预订日历，Outlook以优化员工的日历，并让客户灵活地预订最适合他们的时间。 电子邮件和短信通知可以减少未显示，并提高客户满意度 组织通过减少重复计划任务来节省时间。 通过内置灵活性和自定义功能，Bookings 可以设计为符合组织许多不同的部分的情况和需求。
 
 > [!NOTE]
-> Bookings 日历是 Exchange Online。
+> Bookings 日历是一个位于 Exchange Online。
 
-使用 Bookings 通过 Microsoft Teams 和 Skype for Business 使组织的[](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)会议虚拟。 作为联机会议预订的每个约会将创建一个发送给与会者的唯一会议链接，以便他们可以通过 Web 浏览器、电话拨入或 Skype 或 Teams 应用加入。 Bookings 还作为 Teams 中的应用提供，这允许你创建 Bookings 日历、分配员工以及计划新约会和管理现有约会，而无需离开Teams。
+使用 Bookings 通过联机会议和联机会议虚拟[Microsoft Teams Skype for Business。](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) 作为联机会议预订的每个约会将创建一个发送给与会者的唯一会议链接，以便他们可以通过 Web 浏览器、电话拨入或 Skype 或 Teams 应用加入。 Bookings 还作为 Teams 中的应用提供，这允许你创建 Bookings 日历、分配员工以及计划新约会和管理现有约会，而无需离开Teams。
 
 Bookings 有三个主要组成部分：
 
@@ -33,7 +33,7 @@ Bookings 有三个主要组成部分：
 
 - 一个面向企业的移动应用，在该应用中，预订日历所有者和管理员可以查看其所有预约，访问客户列表和联系信息，以及在旅途中进行手动预订。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 以下订阅中提供了 Microsoft Bookings：
 

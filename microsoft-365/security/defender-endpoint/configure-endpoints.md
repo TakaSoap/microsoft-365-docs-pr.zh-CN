@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: eb71cc8ee014c1e96f4e57fb58785e0c15b4602a
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222378"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices-in-defender-for-endpoint"></a>适用于 Defender for Endpoint 中 Windows 10设备的载入工具和方法
 
@@ -43,7 +43,7 @@ ms.locfileid: "58256595"
 主题|说明
 :---|:---
 [使用组策略载入设备](configure-endpoints-gp.md)|使用组策略在设备上部署配置包。
-[使用 Microsoft Endpoint Configuration Manager 载入设备](configure-endpoints-sccm.md)|可以使用 Microsoft Endpoint Manager () 版本 1606 或 Microsoft Endpoint Manager (current branch) 版本 1602 或更早版本在设备上部署配置包。
+[使用 Microsoft Endpoint Configuration Manager 载入设备](configure-endpoints-sccm.md)|可以使用 Microsoft Endpoint Manager (当前分支) 版本 1606 或 Microsoft Endpoint Manager (当前分支) 版本 1602 或更早版本在设备上部署配置包。
 [使用移动设备管理工具载入设备](configure-endpoints-mdm.md)|使用移动设备管理工具或Microsoft Intune在设备上部署配置包。
 [使用本地脚本载入设备](configure-endpoints-script.md)|了解如何使用本地脚本在终结点上部署配置包。
 [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)|了解如何使用配置包配置 VDI 设备。

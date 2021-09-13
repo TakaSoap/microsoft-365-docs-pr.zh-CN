@@ -22,20 +22,20 @@ ms.custom:
 search.appverid: MET150
 description: 如果订阅过期、被禁用或取消，或者如果你在订阅期中间取消，管理员可以重新激活订阅。
 ms.date: 04/07/2021
-ms.openlocfilehash: a33cf6b0500dedabfde1de8f78417148a9e870e9867d530d6fb8e6346f37f21d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196399"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
 如果订阅已过期、Microsoft 已禁用或在订阅期中间取消订阅，可以在管理中心重新激活订阅。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员或帐单管理员才能重新激活订阅。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能重新激活订阅。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 **不是管理员？** 请与你的管理部门联系以重新激活你的订阅。
 

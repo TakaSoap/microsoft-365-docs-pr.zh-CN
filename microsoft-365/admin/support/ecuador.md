@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: de4376d18e44d1b7e074097e0d7bc5660dfc76ca7e4375f92afca45379a9b135
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c60296176044ed4736e355d7a42ef645d47bd98
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197139"
 ---
 # <a name="contact-support-for-ecuador"></a>联系厄瓜多尔支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53838267"
 
 877 663 5075
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 西班牙语：Mon-Fri上午 9 点到下午 5 点

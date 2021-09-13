@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 本文详细介绍了如何Microsoft 365基于证书的身份验证的客户端应用支持。
+description: 本文详细介绍了如何Microsoft 365基于证书的身份验证提供客户端应用支持。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cef2cc9084b44e568afd1df7291a21dce8c4ae3dd7a3feb8dcba31f20d5a31b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196795"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365客户端应用支持：基于证书的身份验证
 
@@ -32,15 +32,15 @@ ms.locfileid: "53855045"
 - **身份验证方法**：多重身份验证;基于客户端证书的身份验证。
 - **授权方法**：Microsoft 的 Open Authorization (OAuth) 。
 
-使用身份验证库启用新式验证，如 Active Directory 身份验证库 (ADAL) 或 Microsoft 身份验证库 (MSAL) 。 新式验证是客户端用于验证和授权访问 Microsoft 365资源。 新式验证使用 OAuth，并提供一种安全机制，使客户端无需访问Microsoft 365即可访问服务。 登录时，用户直接使用 Azure Active Directory进行身份验证，并接收访问/刷新令牌对。 访问令牌授予客户端对租户中相应资源Microsoft 365权限。 刷新令牌用于在当前访问令牌过期时获取新的访问令牌或刷新令牌对。
+使用身份验证库启用新式验证，如 Active Directory 身份验证库 (ADAL) 或 Microsoft 身份验证库 (MSAL) 。 新式验证是客户端用于验证和授权访问 Microsoft 365资源。 新式验证使用 OAuth，并提供安全机制，使客户端无需访问Microsoft 365即可访问服务。 登录时，用户直接使用 Azure Active Directory进行身份验证，并接收访问/刷新令牌对。 访问令牌向客户端授予对租户中相应资源Microsoft 365权限。 刷新令牌用于在当前访问令牌过期时获取新的访问令牌或刷新令牌对。
 
-新式身份验证支持不同的身份验证机制，如基于证书的身份验证。 Windows、Android 或 iOS 设备上的客户端可以使用基于证书的身份验证 (CBA) ，Azure Active Directory设备上的客户端证书向 Azure Active Directory 进行身份验证。 证书不是典型的用户名/密码，而是用于从用户获取访问/刷新Azure Active Directory。
+新式身份验证支持不同的身份验证机制，如基于证书的身份验证。 Windows、Android 或 iOS 设备上的客户端可以使用基于证书的身份验证 (CBA) 使用设备上的客户端证书Azure Active Directory对 Azure Active Directory 进行身份验证。 证书不是典型的用户名/密码，而是用于从用户获取访问/刷新Azure Active Directory。
 
 详细了解基于 [证书的身份验证](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
 
 ## <a name="supported-clients--platforms"></a>受支持的客户端&平台
 
-在客户端 (中登录 Azure Active Directory 帐户时，以下客户端和平台的最新版本支持基于证书的身份验证) 。 有关应用程序平台支持Microsoft 365，请参阅 system [requirements for Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)。
+当登录客户端 (中的 Azure Active Directory 帐户时，以下客户端和平台的最新版本支持基于证书的身份验证) 。 有关应用程序平台支持Microsoft 365，请参阅 system [requirements for Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)。
 <br>
 <br>
 

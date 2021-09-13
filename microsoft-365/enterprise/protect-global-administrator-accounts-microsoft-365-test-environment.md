@@ -16,19 +16,19 @@ ms.custom:
 - Ent_TLGs
 description: 使用这些步骤来保护企业测试环境中Microsoft 365管理员帐户。
 ms.openlocfilehash: d9de3cb42a7473167c5e8c6dda5489aca2241909
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196101"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>针对企业测试环境Microsoft 365全局管理员帐户
 
-*本测试实验室指南只能用于Microsoft 365测试环境。*
+*本测试实验室指南仅适用于企业Microsoft 365测试环境。*
 
 您可以通过确保管理员帐户尽可能安全来防止对组织的数字攻击。 
 
-本文介绍如何使用 Azure AD Azure Active Directory (条件) 策略来保护全局管理员帐户。
+本文介绍如何使用 Azure AD Azure Active Directory (条件) 保护全局管理员帐户。
 
 在企业测试环境中Microsoft 365全局管理员帐户包括两个阶段：
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -52,7 +52,7 @@ ms.locfileid: "58573699"
 
 首先，创建一个新的用户帐户作为专用全局管理员。
 
-1. 在单独的选项卡上[，打开Microsoft 365 管理中心](https://admin.microsoft.com/)。
+1. 在单独的选项卡上[，打开](https://admin.microsoft.com/)Microsoft 365 管理中心。
 2. 选择 **"用户**  >  **""** 活动用户"，然后选择"**添加用户"。**
 3. 在"**添加用户"** 窗格中，在"名字"、"显示名称"和"用户名"框中输入 **DedicatedAdmin。** 
 4. 选择 **"密码****"，选择"允许我创建密码**"，然后输入强密码。 在安全位置记录此新帐户的密码。
@@ -79,7 +79,7 @@ ms.locfileid: "58573699"
 1. 在浏览器的新选项卡中，转到 [https://portal.azure.com](https://portal.azure.com) 。
 2. 单击 **Azure Active Directory**  >    >  **安全条件访问"。**
 3. 在"**条件访问 – 策略"** 窗格中，选择"**基线策略： 要求管理员使用 MFA (预览) "。**
-4. 在"**基线策略"** 窗格中，选择"立即 **使用策略>保存"。**
+4. 在基线 **策略窗格中**，选择立即 **使用策略>保存。**
 
 当登录风险为中或高时，第二个策略将阻止访问全局管理员帐户身份验证。
 

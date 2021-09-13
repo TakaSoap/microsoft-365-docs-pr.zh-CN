@@ -1,5 +1,5 @@
 ---
-title: '取消 Google Workspace (并保留你的域) '
+title: '取消 Google Workspace (并保留你的) '
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何取消 Google Workspace 订阅，但保留你的域。
-ms.openlocfilehash: 48ceac56e0fa0af8bd15a4a3e98db51958aec83fbd50bf83ac2241b7562677a1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f4cbb09907da399ab3fed07e7826c0a217b494f0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195859"
 ---
 # <a name="cancel-google-workspace-subscription"></a>取消 Google Workspace 订阅
 

@@ -9,15 +9,15 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: 管理员可以在安全与合规中心的"邮件流"仪表板中了解"自动转发&报告。
+description: 管理员可以在安全与合规中心的邮件流仪表板中了解自动转发&报告。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 94700aa4fc08d0c462aa186a0f0847d73151a82a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574564"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196471"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>安全与合规中心中的自动转发&见解
 
@@ -28,7 +28,7 @@ ms.locfileid: "58574564"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 &**与** 合规中心的"邮件流 [](mail-flow-insights-v2.md)["](https://protection.office.com)仪表板中的"自动转发邮件"见解显示有关从组织自动转发给外部域中收件人的邮件的信息。
+安全 &**与** 合规中心内"邮件 [](mail-flow-insights-v2.md)流 ["](https://protection.office.com)仪表板中的"自动转发邮件"见解显示有关从组织自动转发给外部域中收件人的邮件的信息。
 
 ![安全与合规中心中的"自动转发&小组件。](../../media/mfi-auto-forwarded-messages.png)
 
@@ -51,7 +51,7 @@ ms.locfileid: "58574564"
   - **上周 (新用户)**
   - 有关更多详细信息 [，请参阅转发修改](mfi-new-users-forwarding-email.md#forwarding-modifications-report) 报告的链接。
 
-![安全与合规中心内"自动转发的邮件"报告&出。](../../media/mfi-auto-forwarded-messages-details.png)
+![安全与合规中心内自动转发的邮件报告&标注。](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>见解
 
@@ -62,4 +62,4 @@ ms.locfileid: "58574564"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 38e04568be362639f69bf1d01682341e37b732eef7405a307dda39e5885b17f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4762942ee7340eead0f1e025de7ace61aa00cfca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196222"
 ---
 # <a name="contact-support-for-azerbaijan"></a>联系阿塞拜疆支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53862318"
 
 按 1 Microsoft 365
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 俄语：Mon-Fri上午 10 点到下午 7 点

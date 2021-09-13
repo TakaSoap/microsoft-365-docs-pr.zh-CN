@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 114c0809aab3dcd219b49fd015752a8dec166cee
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195946"
 ---
 # <a name="step-1-create-a-test-base-account"></a>步骤 1：创建测试基础帐户
 

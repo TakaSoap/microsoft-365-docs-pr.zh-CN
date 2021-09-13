@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 9deece85ec5a310cea652af1dd1da39cea386848
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196594"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>管理 Microsoft Defender 终结点事件
 
@@ -47,7 +47,7 @@ ms.locfileid: "58571297"
 你可以为自己分配事件、更改状态和分类、重命名或注释它们以跟踪其进度。
 
 > [!TIP]
-> 为了一目了然，事件名称会基于警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。 这使您可以快速了解事件的范围。
+> 为了一目了然，事件名称会基于警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。 借助此功能，可以快速了解事件的范围。
 >
 > 例如： *多个源报告的多个终结点上的多阶段事件。*
 >

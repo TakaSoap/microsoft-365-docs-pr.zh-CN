@@ -1,5 +1,5 @@
 ---
-title: Office 365安全，包括 Microsoft Defender for Office 365 和 Exchange Online Protection
+title: Office 365安全性，包括 Microsoft Defender for Office 365 和 Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 622ee49dc0fed1f094496e0e25b2f52466b281a242638d484f13ab8a905c09f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b9db76654e19309816b29e5cfe607c064b8d364
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888507"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171528"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365安全概述
 
@@ -29,7 +29,7 @@ ms.locfileid: "53888507"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
-本文将向你介绍新的 Microsoft Defender for Office 365 云中的安全属性。 无论你是安全运营中心的一员，还是该领域的新手，还是想要复习一下，让我们开始吧。
+本文将向你介绍新的 Microsoft Defender for Office 365云中的安全属性。 无论你是安全运营中心的一员，还是该领域的新手，还是想要复习一下，让我们开始吧。
 
 > [!CAUTION]
 > 如果你使用的是 **Outlook.com**、**Microsoft 365 家庭版** 或 **Microsoft 365 个人版**，并且需要 *安全链接* 或 *安全附件* 信息，***单击此链接***：[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。

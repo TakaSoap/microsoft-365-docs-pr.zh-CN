@@ -1,6 +1,6 @@
 ---
 title: 通过Windows 10将设备载入 Microsoft Defender for Endpoint
-description: 使用组策略将配置包部署到 Windows 10 设备上，以便它们可以载入到服务。
+description: 使用组策略在 Windows 10部署配置包，以便它们可以载入到服务。
 keywords: 使用组策略配置设备， 设备管理， 为终结点设备配置 Microsoft Defender， 载入适用于终结点设备的 Microsoft Defender， 组策略
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,13 +18,13 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196066"
 ---
-# <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用组Windows 10载入新设备
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>使用Windows 10载入新设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,21 +47,21 @@ ms.locfileid: "58570661"
 
 请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
-1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取[Microsoft 365 Defender包](https://security.microsoft.com/)：
+1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
     1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**  
     2. 选择Windows 10作为操作系统。
     3. 在"**部署方法"** 字段中，选择"**组策略"。**
     4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *WindowsDefenderATPOnboardingScript.cmd*。
+2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和 *文件 WindowsDefenderATPOnboardingScript.cmd*。
 
-3. 若要创建新的 GPO，请打开 [](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC (组策略管理) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"。**
+3. 若要创建新的 GPO，请打开组策略管理控制台 [ (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC) ，右键单击要配置的组策略对象，**然后单击新建。** 在显示的对话框中输入新 GPO 的名称，然后单击"确定 **"。**
 
 4. 打开组 [策略](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
 5. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后转到"**首选项**"，然后转到"**控制面板设置"。**
 
-6. 右键单击 **计划任务**，指向新建 **，然后单击** 即时任务 (**至少Windows 7)**。
+6. 右键单击 **计划任务**，指向 **新建**，然后单击即时任务 (**至少Windows 7) 。**
 
 7. 在打开 **的任务** 窗口中，转到常规 **选项卡**。在 **"安全选项"** 下，单击 **"更改用户或组**"，然后键入"系统"，然后单击"**检查名称**"，然后单击"确定 **"。** NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
@@ -73,7 +73,7 @@ ms.locfileid: "58570661"
 
 11. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
-12. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择"链接 **现有 GPO"。** 在显示的对话框中，选择要链接的组策略对象。 单击“**确定**”。
+12. 若要将 GPO 链接到组织单位 (OU) ，请右键单击并选择"链接现有 **GPO"。** 在显示的对话框中，选择要链接的组策略对象。 单击“确定”。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的适用于终结点 [设备的 Defender](run-detection-test.md)运行检测测试。
@@ -104,7 +104,7 @@ ms.locfileid: "58570661"
 
 4. 单击 **"策略**"，然后单击 **"管理模板"。**
 
-5. 单击 **Windows组件**"，然后单击 **Windows Defender ATP"。**
+5. 单击 **Windows组件"，** 然后单击Windows Defender **ATP"。**
 
 6. 选择从设备启用或禁用示例共享。
 
@@ -121,7 +121,7 @@ ms.locfileid: "58570661"
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-Policy|设置
+Policy|Setting
 ---|---
 Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集合"
 
@@ -129,7 +129,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒
 
-Policy|设置
+Policy|Setting
 ---|---
 配置对可能不需要的应用程序的检测|已启用、阻止
 
@@ -137,7 +137,7 @@ Policy|设置
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
-Policy|设置
+Policy|Setting
 ---|---
 加入 Microsoft MAPS|已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -146,9 +146,9 @@ Policy|设置
 
 **策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
-Policy|设置
+Policy|Setting
 ---|---
-关闭实时保护|Disabled
+关闭实时保护|禁用
 打开行为监视|已启用
 扫描所有下载的文件和附件|已启用
 监视您的计算机上的文件和程序活动|已启用
@@ -159,7 +159,7 @@ Policy|设置
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy|设置
+Policy|Setting
 ---|---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -181,7 +181,7 @@ Policy|设置
 
    ![攻击面减少配置的图像。](images/asr-guid.png)
 
-Policy|设置
+Policy|Setting
 ---|---
 配置受控文件夹访问权限| 已启用，审核模式
 
@@ -194,7 +194,7 @@ Policy|设置
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
 > [!NOTE]
-> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
+> 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
 1. 从门户获取Microsoft 365 Defender[包](https://security.microsoft.com/)：
     1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **""载出"。**
@@ -216,7 +216,7 @@ Policy|设置
 
 8. 在"名称"字段中，键入计划任务策略的适当名称 (例如，Defender for Endpoint Deployment) 。
 
-9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* 文件的文件服务器的完全限定域名 (FQDN) 输入 UNC 路径。
+9. 转到"操作 **"** 选项卡，然后选择"新建 **..."。** 确保在 **"操作"** 字段中选择了"启动 **程序** "。 使用共享 *(-MM-DD.cmd* 文件的文件服务器的完全限定域名) FQDN WindowsDefenderATPOffboardingScript_valid_until_YYYY输入 UNC 路径。
 
 10. 选择 **"确定** "并关闭任何打开的 GPMC 窗口。
 
@@ -261,17 +261,17 @@ Policy|设置
 
 ### <a name="configure-windows-defender-smart-screen-settings"></a>配置Windows Defender屏幕设置
 
-1. 浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows SmartScreen** Windows Defender \> **组件** \> 。
+1. 浏览到 **SmartScreen** \> **资源管理器** \> **中的** 计算机Windows \> **配置Windows Defender** \> **管理** \> **模板**。
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器。":::
  
-2. 浏览到 **计算机配置**  >  **策略**  >  **管理模板**  >  **Windows组件 Windows Defender**  >  **SmartScreen**  >  **Microsoft Edge**。
+2. 浏览到 **计算机配置**  >  **策略**  >  **管理模板**  >  **Windows**  >  **SmartScreen Windows Defender组件**  >  **Microsoft Edge。**
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕边缘。":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>配置可能不需要的应用程序
 
-浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒**。
+浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒。**
 
 :::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="配置可能不需要的应用。":::
 
@@ -299,7 +299,7 @@ Policy|设置
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>配置云提供超时和保护级别
 
-浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒** \> **MpEngine**。
+浏览到 **计算机配置** \> **策略** 管理模板 \>  \> **Windows组件** \> **Microsoft Defender 防病毒** \> **MpEngine**。
 将云保护级别策略配置为默认Microsoft Defender 防病毒 **阻止策略时**，将禁用该策略。 这是将保护级别设置为 Windows 默认值所需的操作。
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="配置扩展云检查。":::

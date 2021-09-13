@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7e6de89ab2d94d983fd62c18aab71a98805e76634294326332bf0df7c8cf789d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 625553a91aa8cb6d962da7826c230e48c85591a9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197121"
 ---
 # <a name="contact-support-for-guernsey"></a>联系根西岛支持人员
 
@@ -26,10 +26,10 @@ ms.locfileid: "53821255"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
-英语：Mon-Fri 10 AM-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 

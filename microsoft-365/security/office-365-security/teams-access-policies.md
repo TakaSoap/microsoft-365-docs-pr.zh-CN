@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: b135c6dd691607dd128bfd83e0d2b484bb3a97ae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196256"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>用于保护聊天Teams组和文件的策略建议
 
-本文介绍如何实施推荐的标识和设备访问策略来保护聊天Microsoft Teams组以及文件和日历等内容。 本指南基于[通用标识和设备访问](identity-access-policies.md)策略，并包含特定于Teams信息。 由于Teams产品集成，因此另请参阅用于保护网站和SharePoint[的策略](sharepoint-file-access-policies.md)建议和用于保护电子邮件[的策略建议](secure-email-recommended-policies.md)。
+本文介绍如何实施推荐的标识和设备访问策略来保护聊天Microsoft Teams组以及文件和日历等内容。 本指南基于[通用标识和设备访问](identity-access-policies.md)策略，并包含特定于Teams信息。 由于Teams集成了其他产品，因此另请参阅有关保护 SharePoint[网站](sharepoint-file-access-policies.md)和文件的策略建议和用于保护电子邮件[的策略建议](secure-email-recommended-policies.md)。
 
-这些建议基于三种不同的安全和保护层，Teams根据需求粒度应用这些层：基线、敏感和高度管控。 可以在标识和设备访问配置中了解有关这些安全层以及这些建议所引用 [的建议策略的更多信息](microsoft-365-policies-configurations.md)。
+这些建议基于三种不同的安全和保护层Teams，可基于你的需求粒度应用这些层：基线、敏感和高度管控。 可以在标识和设备访问配置中了解有关这些安全层以及这些建议所引用 [的建议策略的更多信息](microsoft-365-policies-configurations.md)。
 
-本文包含特定于 Teams部署的建议，以涵盖特定身份验证情况，包括针对组织外部的用户。 你将需要遵循本指南，获得完整的安全体验。
+本文包含特定于 Teams部署的建议，以涵盖特定身份验证环境，包括针对组织外部的用户。 你需要遵循本指南，获得完整的安全体验。
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>在其他相关Teams服务之前开始使用
 
@@ -43,15 +43,15 @@ ms.locfileid: "58568056"
 - SharePoint 团队网站
 - OneDrive for Business
 - Exchange 邮箱
-- 如果启用了这些服务， (流视频和 Planner 计划) 
+- Stream videos and Planner plans (if these services are enabled) 
 
 ## <a name="updating-common-policies-to-include-teams"></a>更新常见策略以包括Teams
 
 为了保护用户中的聊天、组Teams，下图说明了从通用标识和设备访问策略更新的策略。 对于要更新的每个策略，请确保Teams和依赖服务包含在云应用的分配中。
 
-[![用于保护对服务及其Teams的访问的策略更新摘要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+[![用于保护对服务及其依赖Teams的访问的策略更新摘要。](../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
-这些服务是分配云应用时要包括的Teams：
+这些服务是分配云应用时要包含的依赖服务Teams：
 
 - Microsoft Teams
 - Sharepoint 和 OneDrive for Business
@@ -60,19 +60,19 @@ ms.locfileid: "58568056"
 - Microsoft Stream (会议录制) 
 - Microsoft Planner (Planner 任务和规划数据) 
 
-此表列出了需要重新访问的策略以及常见标识和设备访问策略中每个策略的链接，[](identity-access-policies.md)这些策略具有针对所有 Office 应用程序设置的更广泛的策略。
+此表列出了需要重新访问的策略以及指向通用标识和设备访问策略中每个策略的链接[](identity-access-policies.md)，这些策略具有针对所有 Office 应用程序设置的更广泛的策略。
 
 |保护级别|策略|有关实现Teams信息|
 |---|---|---|
-|**Baseline**|[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|请确保Teams服务及其从属服务包含在应用列表中。 Teams需要考虑来宾访问和外部访问规则，您将在本文的稍后部分了解有关这些规则的更多内容。|
-||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|在Teams分配云应用时包括相关服务和相关服务。|
+|**Baseline**|[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|请确保Teams服务及其从属服务包含在应用列表中。 Teams还应考虑来宾访问和外部访问规则，您将在本文的稍后部分了解有关这些规则的更多内容。|
+||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|在Teams应用分配中包括相关服务和相关服务。|
 ||[高风险用户必须更改密码](identity-access-policies.md#high-risk-users-must-change-password)|强制Teams在登录时更改其密码（如果检测到其帐户存在高风险活动）。 请确保Teams服务及其从属服务包含在应用列表中。|
 ||[应用 APP 数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保Teams服务及其从属服务包含在应用列表中。 针对 iOS、Android、 (的每个平台更新Windows) 。|
-||[定义设备合规性策略](identity-access-policies.md#define-device-compliance-policies)|在此策略Teams服务及其依赖服务。|
-||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此策略Teams服务及其依赖服务。|
-|**敏感**|[登录风险低、中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams需要考虑来宾访问和外部访问规则，您将在本文的稍后部分了解有关这些规则的更多内容。 在此策略Teams服务及其依赖服务。|
-||[要求兼容电脑 *和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此策略Teams服务及其依赖服务。|
-|**高度管控**|[*始终* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|无论用户身份如何，组织都将使用 MFA。 在此策略Teams服务及其依赖服务。 |
+||[定义设备合规性策略](identity-access-policies.md#define-device-compliance-policies)|在此Teams包括服务及其依赖服务。|
+||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此Teams包括服务及其依赖服务。|
+|**敏感**|[登录风险低、中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams还应考虑来宾访问和外部访问规则，您将在本文的稍后部分了解有关这些规则的更多内容。 在此Teams包括服务及其依赖服务。|
+||[要求兼容电脑 *和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此Teams包括服务及其依赖服务。|
+|**高度管控**|[*始终* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|无论用户身份如何，组织都将使用 MFA。 在此Teams包括服务及其依赖服务。 |
 |
 
 ## <a name="teams-dependent-services-architecture"></a>Teams服务体系结构
@@ -91,7 +91,7 @@ Microsoft Teams定义以下访问类型：
 
 - **外部访问** 适用于没有 Azure AD B2B 帐户的外部用户。 外部访问可以包括邀请和参与通话、聊天和会议，但不包括团队成员身份和访问团队资源。
 
-条件访问策略仅适用于 Teams，因为存在相应的 Azure AD B2B 帐户。
+条件访问策略仅适用于 Teams中的来宾访问，因为存在相应的 Azure AD B2B 帐户。
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
@@ -118,17 +118,17 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 ## <a name="teams-policies"></a>Teams策略
 
-除了上面列出的常见策略外，Teams特定策略，这些策略可以且应该配置为管理各种Teams功能。
+除了上面列出的常见策略之外，Teams特定策略，这些策略可以且应该配置为管理各种Teams功能。
 
 ### <a name="teams-and-channels-policies"></a>Teams和频道策略
 
-Teams 频道和频道是 Microsoft Teams 中常用的两个元素，您可以使用一些策略来控制用户在使用团队和频道时可以执行和不能执行哪些操作。 虽然可以创建一个全局团队，但如果贵组织的用户数小于或小于 5000，则可能会发现，与组织需求一起，让较小的团队和频道用于特定用途会很有帮助。
+Teams 频道和频道是 Microsoft Teams 中常用的两个元素，您可以使用一些策略来控制用户在使用团队和频道时可以执行和不能执行哪些操作。 虽然可以创建一个全局团队，但如果贵组织的用户数小于或小于 5000，则可能会发现，与组织需求一起，将较小的团队和频道用于特定用途可能会很有帮助。
 
 建议更改默认策略或创建自定义策略，你可以在此链接中了解有关管理策略[Microsoft Teams。](/microsoftteams/teams-policies)
 
 ### <a name="messaging-policies"></a>消息传递策略
 
-消息或聊天也可通过默认全局策略或自定义策略进行管理，这可帮助用户以适合贵组织的方式相互通信。 可以在管理邮件策略中[查看](/microsoftteams/messaging-policies-in-teams)此信息Teams。
+消息或聊天也可通过默认全局策略或自定义策略进行管理，这可帮助用户以适合贵组织的方式相互通信。 可以在管理邮件策略中查看此信息[Teams。](/microsoftteams/messaging-policies-in-teams)
 
 ### <a name="meeting-policies"></a>会议策略
 

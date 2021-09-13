@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4e52906cda48314967e40039caabfd81e38514c1
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195671"
 ---
 # <a name="get-live-response-results"></a>获取实时响应结果
 
@@ -55,9 +55,9 @@ ms.locfileid: "58611119"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的 Windows。**
 
-  设备必须运行以下版本之一的 Windows
+  设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本
@@ -68,7 +68,7 @@ ms.locfileid: "58611119"
 
   - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) 版本) 更高版本
-    - 版本 1809 ([KB4537818) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - 版本 1809 ([KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)) 
 
 ## <a name="permissions"></a>权限
 

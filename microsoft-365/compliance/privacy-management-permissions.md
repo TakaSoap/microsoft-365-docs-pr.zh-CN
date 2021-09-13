@@ -1,5 +1,5 @@
 ---
-title: '设置用户权限并分配隐私管理 (预览) '
+title: '在隐私管理中设置用户权限和分配角色 (预览) '
 f1.keywords:
 - CSH
 ms.author: v-jgriffee
@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何设置隐私管理权限并将用户分配给角色组。
+description: 了解如何设置隐私管理权限并将用户分配到角色组。
 ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196922"
 ---
-# <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>设置用户权限并分配隐私管理 (预览) 
+# <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>在隐私管理中设置用户权限和分配角色 (预览) 
 
 若要向组织成员授予使用隐私管理的权限，请将其分配给组织中相应的Microsoft 365 合规中心。 请注意，特定于隐私管理的角色不会显示在Azure Active Directory。
 

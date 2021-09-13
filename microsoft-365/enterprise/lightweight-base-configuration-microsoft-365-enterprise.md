@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建轻型测试环境，以Microsoft 365企业版。
-ms.openlocfilehash: 818b013d8d18a7686e88e99eff2f0be2fb12b8d9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195750"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
 
 本文介绍如何创建具有 Microsoft 365 E5 订阅和运行 Windows 10 企业版 的计算机的简化Windows 10 企业版。
 
@@ -45,7 +46,7 @@ ms.locfileid: "58566786"
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请参阅 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请参阅 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 >[!NOTE]
 >不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。 可以轻松地将该订阅的试用期再延长 30 天。 对于永久性测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。
@@ -155,19 +156,19 @@ for($i=2;$i -le 4; $i++) {
   
 首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个新的 Microsoft 365 许可证。
   
-1. 在 Internet 浏览器专用窗口中，使用全局管理员帐户凭据登录到 Microsoft 365 管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
+1. 在 Internet 浏览器专用窗口中，使用全局管理员帐户凭据登录到 Microsoft 365 管理中心 位置 [https://admin.microsoft.com](https://admin.microsoft.com) 。
     
-2. On the **Microsoft 365 管理中心** page， in the left navigation， select **Billing > Purchase services**.
+2. On the **Microsoft 365 管理中心** page， in the left navigation， select **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a>.
     
 3. 在"**购买服务**"页上 **，Microsoft 365 E5"，** 然后选择"**获取免费试用版"。**
 
-4. 在 **"Microsoft 365 E5试用版**"页面上，决定接收短信或电话呼叫，输入电话号码，然后选择"**给我** 发短信"或"**呼叫我"。** 执行验证。
+4. 在 **"Microsoft 365 E5试用版**"页上，决定接收短信或电话呼叫，输入电话号码，然后选择"给我发短信"或"**呼叫我"。** 执行验证。
 
 5. 在"**确认订单"页上**，选择"**立即试用"。**
 
 6. 在"**订单收据"** 页上，选择"继续 **"。**
 
-7. In the Microsoft 365 管理中心， select **Users > Active users**.
+7. 在"Microsoft 365 管理中心中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 
 8. 在 **"活动用户"** 中，选择管理员帐户。
 
@@ -187,7 +188,7 @@ for($i=2;$i -le 4; $i++) {
 - Microsoft 365 E5 试用版订阅。
 - 所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。
     
-生成的配置将添加Microsoft 365 E5，如下所示：
+生成的配置（可添加Microsoft 365 E5配置）如下所示：
   
 ![Microsoft 3656 测试环境的第 3 Enterprise阶段。](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -197,11 +198,11 @@ for($i=2;$i -le 4; $i++) {
   
 ### <a name="physical-computer"></a>物理计算机
 
-在个人计算机上，安装Windows 10 企业版。 你可以在此处下载Windows 10 企业版[试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。
+在个人计算机上，安装Windows 10 企业版。 你可以在此处下载[Windows 10 企业版试用版。](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
   
 ### <a name="virtual-machine"></a>虚拟机
 
-使用你选择的虚拟机监控程序创建虚拟机，然后Windows 10 企业版虚拟机。 你可以在此处下载Windows 10 企业版[试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。
+使用你选择的虚拟机监控程序创建虚拟机，然后Windows 10 企业版虚拟机。 你可以在此处下载[Windows 10 企业版试用版。](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
   
 ### <a name="virtual-machine-in-azure"></a>Azure 中的虚拟机
 
@@ -276,15 +277,15 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 接下来，将 WIN10 计算机联接到 Microsoft 365 E5 订阅的 Azure AD 租户中。
   
-1. 在 WIN10 计算机的桌面上，选择"开始> 设置 >帐户>**访问工作或学校> 连接。**
+1. 在 WIN10 计算机的桌面上，选择"开始> 设置 >帐户>**访问工作或学校> 连接"**。
     
 2. 在 **"设置工作或学校帐户**"对话框中，选择 **"加入此设备以Azure Active Directory"。**
     
-3. 在 **"工作或学校帐户**"中，输入你的 Microsoft 365 E5 全局管理员帐户名称，然后选择"下一步 **"。**
+3. 在 **工作或学校帐户中**，输入你的订阅的全局管理员Microsoft 365 E5名称，然后选择下一 **步**。
     
 4. 在 **"输入密码**"中，输入全局管理员帐户的密码，然后选择"**登录"。**
     
-5. 当系统提示确保这是您的组织时，请选择"**加入**"，然后选择"完成 **"。**
+5. 当系统提示确保这是您的组织时，选择"**加入"，** 然后选择"完成 **"。**
     
 6. 关闭“设置”窗口。
     
@@ -292,7 +293,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 1. 打开 Microsoft Edge 浏览器，然后使用全局[Microsoft 365 管理中心帐户凭据](https://admin.microsoft.com)登录该浏览器。
     
-2. 在 **"Microsoft Office"选项卡** 上，选择"**安装Office"。**
+2. 在 **"Microsoft Office主页"** 选项卡上，选择"**安装Office"。**
     
 3. 当系统提示要执行哪些操作时，请选择"**运行**"，然后 **为"用户帐户** 控制 **"选择"是"。**
     

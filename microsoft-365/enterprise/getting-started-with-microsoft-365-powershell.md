@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 摘要：了解 PowerShell for Microsoft 365 的价值、如何连接到 Microsoft 365 租户以及在何处获取帮助。
+description: 摘要：了解 PowerShell for Microsoft 365 的价值、如何连接到 Microsoft 365 租户以及获取帮助的地方。
 ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196815"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>PowerShell for Microsoft 365 入门
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以在 PowerShell for Microsoft 365中使用命令和脚本Microsoft 365并简化日常工作。 使用以下信息了解 powerShell for Microsoft 365 对管理 Microsoft 365 至关重要的原因、如何连接到 Microsoft 365 订阅和创建报告，以及在何处从 Microsoft 365 社区获取详细信息。
+可以在 PowerShell for Microsoft 365中使用命令和脚本Microsoft 365并简化日常工作。 使用以下信息了解 PowerShell for Microsoft 365 对管理 Microsoft 365 至关重要的原因、如何连接到 Microsoft 365 订阅和创建报告，以及在何处从 Microsoft 365 社区获取详细信息。
   
 从以下主题中选择：
   
@@ -38,7 +38,7 @@ ms.locfileid: "58356716"
     
 - [**使用 PowerShell 连接 Microsoft 365**](connect-to-microsoft-365-powershell.md)
     
-    使用 PowerShell for Microsoft 365从此处开始连接到 Microsoft 365 订阅，然后从命令行执行管理任务。
+    使用 PowerShell for Microsoft 365从此处开始连接到 Microsoft 365，然后从命令行执行管理任务。
     
 - [**在单个 PowerShell 窗口中连接所有 Microsoft 365 服务**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
     

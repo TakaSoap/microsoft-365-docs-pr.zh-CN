@@ -13,18 +13,18 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e4888bfd83f70170bfd360275777845c1049ac96c4bd93b7a52d251f326fdd95
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62664e77cfb8a2f6b4bf4411f010745796a3371a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196141"
 ---
 # <a name="payment-information-for-kyrgyzstan"></a>乌兹别克斯坦的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in USD only and reference invoice number (s) on your payment invoice.
+Please pay in USD only and reference invoice number (s) on your payment payment payment.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

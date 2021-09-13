@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何设置新的企业电子邮件地址。
-ms.openlocfilehash: a263a04f88880d4043b8a32dd2c7afdb557f11a6025d2f6ab5523f430124e2ac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196163"
 ---
 # <a name="set-up-a-new-business-email-address"></a>设置新的企业电子邮件地址
 
@@ -45,7 +45,7 @@ ms.locfileid: "53906847"
 ## <a name="try-it"></a>试一试！
  
 1. 通过提供新域名的联系人信息、选择付款方式，然后下订单，为电子邮件地址购买新域名。
-1. 更改地址的第一部分 (@ 符号) 或保留其为 。 
+1. 将地址的第一部分 (@ 符号) 或保留为 。 
 1. 注销Microsoft 365，然后使用新的电子邮件地址重新登录。 使用新域更新员工电子邮件地址。 
 1. 通过导出列表与员工共享新电子邮件地址。 
 

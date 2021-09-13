@@ -16,11 +16,11 @@ description: 管理员可以了解如何使用安全 & 合规中心中的"修复
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 76fdfd7595fc3a7c760eadd51498883d8d7a63fe
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197197"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>修复安全与合规中心中的&流规则见解
 
@@ -35,7 +35,7 @@ ms.locfileid: "58572415"
 
 - 对于大型 **组，使用 Is** 成员的条件。
 - 使用复杂正则表达式的条件 (正则表达式) 模式匹配。
-- 使用附件中的内容检查的条件。
+- 使用附件内容检查的条件。
 
 安全 &**与** 合规中心内"邮件流"仪表板的"建议 [](mail-flow-insights-v2.md)你"区域中的"修复慢邮件流规则"见解 [在](https://protection.office.com)邮件流规则完成时间过长时通知您。
 
@@ -47,7 +47,7 @@ ms.locfileid: "58572415"
 
 单击小 **组件上的** "查看详细信息"时，将显示一个包含详细信息的飞出控件：
 
-- **规则**：您可以将鼠标悬停在摘要上方，以查看规则的所有条件、例外和操作。 You can click on the summary to edit the rule in the Exchange center (EAC) .
+- **规则**：您可以将鼠标悬停在摘要上方，以查看规则的所有条件、例外和操作。 You can click on the summary to edit the rule in the Exchange admin center (EAC) .
 - **评估的邮件数**：可以单击"查看示例邮件"以查看受规则影响 [](message-trace-scc.md)的邮件示例的邮件跟踪结果。
 - **每封邮件所花费的平均时间**
 - **在邮件上花费的中值时间**：将上半部分与上半部分时间数据分开的中间值。
@@ -58,4 +58,4 @@ ms.locfileid: "58572415"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

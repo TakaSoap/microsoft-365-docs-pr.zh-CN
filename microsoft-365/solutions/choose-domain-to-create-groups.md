@@ -1,5 +1,5 @@
 ---
-title: 选择在创建组时Microsoft 365域
+title: 选择创建组时Microsoft 365域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,20 +18,20 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: 了解如何使用 PowerShell 配置电子邮件地址策略，选择Microsoft 365组时使用的域。
-ms.openlocfilehash: c63542e707322040df379f3620ab893d23f6243656f787e9b72c6491b7b52232
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197180"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择在创建组时Microsoft 365域
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建组时Microsoft 365域
 
-一些组织使用单独的电子邮件域，以区分不同的业务部分。 可以指定在用户创建组时应该Microsoft 365域。
+一些组织使用单独的电子邮件域，以区分不同的业务部分。 可以指定在用户创建用户组时，应该Microsoft 365域。
   
-如果你的组织需要用户在企业的默认接受域外的其他域中创建其组，则可以通过使用 PowerShell 为 EAP (电子邮件地址策略) 允许此操作。
+如果您的组织需要用户在企业的默认接受域外的其他域中创建其组，您可以通过使用 PowerShell 为 EAP (电子邮件地址策略) 允许此操作。
 
-在运行 PowerShell cmdlet 之前，请下载并安装一个模块，该模块可让你与组织交谈。 请查看连接[powerShell Exchange Online进行远程访问](/powershell/exchange/connect-to-exchange-online-powershell)。
+在运行 PowerShell cmdlet 之前，请下载并安装一个模块，该模块可让你与组织交谈。 请查看连接[远程Exchange Online PowerShell 进行远程访问](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="example-scenarios"></a>示例场景
 
@@ -43,14 +43,14 @@ ms.locfileid: "53893575"
     
 - faculty.contoso.com 教职员工
     
-以下两种方案说明了如何完成此操作。
+以下两种方案说明了如何做到这一点。
 
 > [!NOTE]
-> 当你拥有多个 EAP 时，将按优先级顺序评估它们。 值 1 表示最高优先级。 EAP 匹配后，不会进一步计算 EAP，并且按匹配的 EAP 在组上标记的地址。 > 如果没有符合指定条件的 EAP，则组将设置在组织的默认接受域中。 请参阅管理[域中的接受Exchange Online，](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)详细了解如何添加接受域。
+> 当你拥有多个 EAP 时，将按优先级顺序评估它们。 值 1 表示最高优先级。 EAP 匹配后，不会进一步计算 EAP，并且按匹配的 EAP 在组上标记的地址。 > 如果没有符合指定条件的 EAP，则组将设置在组织的默认接受域中。 若要详细了解[如何添加接受](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Exchange Online，请参阅管理域中的接受域。
   
 ### <a name="scenario-1"></a>方案 1
 
-以下示例演示如何在 groups.contoso.com 域中设置组织Microsoft 365组。
+以下示例演示如何在 Microsoft 365 域中设置组织的所有 groups.contoso.com 组。
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -72,7 +72,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- 由任何其他用户创建的组在 groups.contoso.com 域中创建。 请使用此命令：
+- 由任何其他用户创建的组在 groups.contoso.com 中创建。 请使用此命令：
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
@@ -111,7 +111,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 - 管理员和用户还可以在创建组时修改域。
     
-- 用户组是使用标准查询来确定 (用户) 可用属性。 查看 [-RecipientFilter](/powershell/exchange/recipientfilter-properties) 参数的可筛选属性，了解受支持的可筛选属性。 
+- 用户组是使用标准查询来确定 (用户) 可用的用户属性。 查看 [-RecipientFilter](/powershell/exchange/recipientfilter-properties) 参数的可筛选属性，了解受支持的可筛选属性。 
     
 - 如果未为组配置任何 EAP，则选择默认接受域以创建组。
     
@@ -125,4 +125,4 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
 
 [Create your collaboration governance plan (](collaboration-governance-first.md) article) 
 
-[在管理Microsoft 365中心创建一个](../admin/create-groups/create-groups.md) (组) 
+[在管理Microsoft 365中心创建一个 (](../admin/create-groups/create-groups.md)组) 

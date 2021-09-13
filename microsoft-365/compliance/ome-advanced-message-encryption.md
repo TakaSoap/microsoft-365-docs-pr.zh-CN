@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 description: 高级邮件加密使管理员能够使用受保护的邮件执行更多操作，帮助组织履行合规性义务。
 ms.openlocfilehash: dbd19c2028a3453d43dc2ce9082955a5ec1165db
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196939"
 ---
 # <a name="advanced-message-encryption"></a>高级邮件加密
 
-Office 365 高级邮件加密[包含在 Microsoft 365 企业版 E5、Office 365 E5、Microsoft 365 E5 (](https://www.microsoft.com/microsoft-365/enterprise/home)非营利组织员工定价) 、Office 365 企业版 E5 (非营利组织员工定价) 和 Office 365 教育版 A5 中。 如果你的组织订阅不包含 Office 365 高级邮件加密，可以使用 Microsoft 365 E3 的 Microsoft 365 E5 合规 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Microsoft 365 E3 的 Office 365 高级合规版 SKU 加载项、Microsoft 365 E3 (非营利组织版员工定价) 、Office 365 SKU 或 Microsoft 365 A3/E3 的 Microsoft 365 E5/A5 信息保护和管理 SKU 加载项购买它。
+Office 365 高级邮件加密[包含在 Microsoft 365 企业版 E5、Office 365 E5、Microsoft 365 E5 (](https://www.microsoft.com/microsoft-365/enterprise/home)非营利组织员工定价) 、Office 365 企业版 E5 (非营利组织员工定价) 和 Office 365 教育版 A5 中。 如果你的组织订阅不包含Office 365 高级邮件加密， 可以使用 Microsoft 365 E3 的 Microsoft 365 E5 合规 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 或 Microsoft 365 E3 的 Office 365 高级合规版 SKU 加载项、Microsoft 365 E3 (非营利组织员工定价) 、Office 365 SKU 或 Microsoft 365 A3/E3 的 Microsoft 365 E5/A5 信息保护和管理 SKU 加载项购买。
 
-高级邮件加密可帮助客户履行合规性义务，这些义务要求对外部收件人及其对加密电子邮件的访问进行更灵活的控制。 使用 Office 365 中的高级邮件加密，您可以使用自动策略控制在组织外部共享的敏感电子邮件。 您可以配置这些策略以标识敏感信息类型，如 PII、财务或运行状况标识，或者您可以使用关键字来增强保护。 配置策略后，将策略与自定义品牌电子邮件模板配对，然后添加过期日期，以对符合策略的电子邮件进行额外控制。 此外，管理员还可以随时撤销对邮件的访问，以进一步控制通过安全 Web 门户从外部访问的加密电子邮件。
+高级邮件加密可帮助客户履行合规性义务，这些义务要求对外部收件人及其对加密电子邮件的访问进行更灵活的控制。 使用 Office 365 中的高级邮件加密，可以使用自动策略控制在组织外部共享的敏感电子邮件。 您可以配置这些策略以标识敏感信息类型，如 PII、财务或运行状况标识，或者您可以使用关键字来增强保护。 配置策略后，将策略与自定义品牌电子邮件模板配对，然后添加过期日期，以对符合策略的电子邮件进行额外控制。 此外，管理员还可以随时撤销对邮件的访问，以进一步控制通过安全 Web 门户从外部访问的加密电子邮件。
 
 只能撤消和设置发送给外部收件人的电子邮件的到期日期。
 

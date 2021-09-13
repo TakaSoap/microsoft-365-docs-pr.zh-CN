@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197243"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -24,7 +24,7 @@ ms.locfileid: "58570445"
 本文介绍了如何使用 Microsoft [Defender for Identity](/defender-for-identity)通知在[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
 
 > [!IMPORTANT]
-> 作为融合的一Microsoft 365 Defender，一些选项和详细信息从它们的位置更改为 Defender for Identity 门户。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
+> 作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
 
 ## <a name="health-issues-notifications"></a>运行状况问题通知
 
@@ -49,7 +49,7 @@ ms.locfileid: "58570445"
 
 ## <a name="alert-notifications"></a>警报通知
 
-在Microsoft 365 Defender中，您可以为检测到的警报的电子邮件通知添加收件人。
+在Microsoft 365 Defender中，您可以为检测到的通知的电子邮件通知添加收件人。
 
 1. In [Microsoft 365 Defender，](https://security.microsoft.com/)go to **设置** and then **Identities**.
 
@@ -88,7 +88,7 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 
 1. 选择 **"发送测试 SIEM 通知** "，然后验证消息是否在你的 Syslog 基础结构解决方案中收到。
 
-1. 选择 **保存**。
+1. 选择“**保存**”。
 
 1. 配置 Syslog 服务后，可以选择向 **Syslog** 服务器发送 (警报或) 运行状况问题。
 

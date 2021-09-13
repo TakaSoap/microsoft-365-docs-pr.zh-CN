@@ -17,20 +17,20 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 了解用户Office 365 BitLocker 加密，从而减少由于计算机和磁盘丢失或被盗而发生数据盗窃的可能性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71aeef37b2b9683acdb6fad0b26a0d567aea4f269e5f820f73cf772b9c88efd9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196948"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>用于加密的 BitLocker 和 Distributed Key Manager (DKM)
 
-Microsoft 服务器使用 BitLocker 在卷级别加密包含客户数据的其余磁盘驱动器。 BitLocker 加密是内置于 Windows。 BitLocker 是一种技术，当其他过程或控制 (（例如访问控制或硬件) 的回收）存在故障时，用于防范威胁，这可能会导致某人获得对包含客户数据的磁盘的物理访问权限。 在这种情况下，BitLocker 消除了由于丢失、被盗或不当停用计算机和磁盘而发生数据盗窃或泄露的可能性。
+Microsoft 服务器使用 BitLocker 在卷级别对包含客户数据的其余磁盘驱动器进行加密。 BitLocker 加密是内置于 Windows。 BitLocker 是一种技术，当其他过程或控制 (（例如访问控制或硬件) 的回收）出现故障时，用于防范威胁，这可能会导致某人获得对包含客户数据的磁盘的物理访问权限。 在这种情况下，BitLocker 消除了由于丢失、被盗或不当停用计算机和磁盘而发生数据盗窃或泄露的可能性。
 
-BitLocker 在包含 Exchange Online、SharePoint Online 和 Skype for Business 中客户数据的磁盘上使用高级加密标准 (AES) 256 位加密进行部署。 磁盘扇区使用全卷加密密钥 (FVEK) 进行加密，该密钥使用卷主密钥 (VMK) 进行加密，而卷主密钥又绑定到服务器中的受信任平台模块 (TPM) 。 VMK 直接保护 FVEK，因此，保护 VMK 变得至关重要。 下图举例说明了给定服务器服务器的 BitLocker 密钥保护链 (，即使用 Exchange Online 服务器) 。
+BitLocker 在包含 Exchange Online、SharePoint Online 和 Skype for Business 中客户数据的磁盘上使用高级加密标准 (AES) 256 位加密进行部署。 磁盘扇区使用全卷加密密钥 (FVEK) 进行加密，该密钥使用卷主密钥 (VMK) 进行加密，而卷主密钥又绑定到服务器中的受信任平台模块 (TPM) 。 VMK 直接保护 FVEK，因此，保护 VMK 变得至关重要。 下图演示了给定服务器服务器的 BitLocker 密钥保护链示例， (使用 Exchange Online 服务器) 。
 
-下表介绍了给定服务器服务器的 BitLocker 密钥保护链 (，即Exchange Online服务器) 。
+下表描述了给定服务器服务器的 BitLocker 密钥保护链 (，即Exchange Online服务器) 。
 
 | 密钥保护程序 | GRANULARITY | 如何生成？ | 存储在何处？ | 保护 |
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|

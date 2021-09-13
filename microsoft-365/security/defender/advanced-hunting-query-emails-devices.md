@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 237d665f14a34d990ec514735ad5a2dbc9020d92
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196536"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨设备、电子邮件、应用和标识搜索威胁
 
@@ -40,7 +40,7 @@ ms.locfileid: "58253219"
 - 由用户处理Microsoft 365
 - 由 Microsoft Defender 和 Microsoft Defender for Identity 跟踪的云应用Microsoft Cloud App Security、身份验证事件和域控制器活动
 
-借助此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 的复杂的入侵、提升本地特权、获取特权域凭据以及横向移动到整个设备。 
+通过此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 的复杂的入侵、提升本地特权、获取特权域凭据，以及横向移动到整个设备。 
 
 下面是基于各种搜寻方案的常规技术和示例查询，可帮助你探索在搜寻此类复杂威胁时如何构造查询。
 
@@ -83,7 +83,7 @@ Department, City, Country
 ```
 
 ### <a name="get-device-information"></a>获取设备信息
-高级 [搜寻架构](advanced-hunting-schema-tables.md) 在各种表中提供广泛的设备信息。 例如 [，DeviceInfo 表](advanced-hunting-deviceinfo-table.md) 基于定期聚合的事件数据提供全面的设备信息。 此查询使用表检查可能受到威胁的用户 () 登录到任何设备，然后列出在这些设备上触发的 `DeviceInfo` `<account-name>` 警报。
+高级 [搜寻架构](advanced-hunting-schema-tables.md) 在各种表中提供广泛的设备信息。 例如 [，DeviceInfo 表](advanced-hunting-deviceinfo-table.md) 基于定期聚合的事件数据提供全面的设备信息。 此查询使用表检查可能受到威胁的用户 () 登录到任何设备，然后列出在这些设备上触发 `DeviceInfo` `<account-name>` 的警报。
 
 >[!Tip]
 > 此查询 `kind=inner` 用于指定 [一个内部联接](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以防止对 的左侧值进行重复 `DeviceId` 。
@@ -188,7 +188,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>搜寻方案
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>列出收到未成功删除的电子邮件的用户的登录活动
-[零时差自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 收到恶意电子邮件后进行地址。 如果 ZAP 失败，恶意代码最终可能在设备上运行，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
+[零时差自动清除 (ZAP ](../office-365-security/zero-hour-auto-purge.md)) 收到恶意电子邮件后进行地址清除。 如果 ZAP 失败，恶意代码可能会最终在设备上运行，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -205,7 +205,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>获取凭据盗窃所针对的域帐户的登录尝试
-此查询首先标识表中的所有凭据访问 `AlertInfo` 警报。 然后，它合并或联接表，该表将分析目标帐户的名称，并仅筛选 `AlertEvidence` 加入域的帐户。 最后，它检查 `IdentityLogonEvents` 表，获取已加入域的目标帐户的所有登录活动。
+此查询首先标识表中的所有凭据访问 `AlertInfo` 警报。 然后，它合并或联接表，该表将分析目标帐户的名称，并仅筛选 `AlertEvidence` 加入域的帐户。 最后，它检查表，获取已加入域的目标帐户的所有 `IdentityLogonEvents` 登录活动。
 
 ```kusto
 AlertInfo
@@ -225,7 +225,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>检查你的设备上是否包含来自已知恶意发件人的文件
-假设您知道发送恶意文件的电子邮件地址 () ，您可以运行此查询来确定此发件人的文件是否存在 `MaliciousSender@example.com` 于您的设备上。 例如，您可以使用此查询来标识受恶意软件分发活动影响的设备。
+假设您知道向用户发送恶意文件 () ，您可以运行此查询来确定此发件人的文件是否存在 `MaliciousSender@example.com` 于您的设备上。 例如，您可以使用此查询来标识受恶意软件分发活动影响的设备。
 
 ```kusto
 EmailAttachmentInfo

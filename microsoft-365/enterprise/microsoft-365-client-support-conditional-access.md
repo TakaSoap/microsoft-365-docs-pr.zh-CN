@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: 本文将了解哪些平台、客户端和 PowerShell 模块支持条件Microsoft 365 专属 Access。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3548e692d81dc426fa03b4001db2b27b16d4a474dd9f8f531000ca6d57dab803
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 763380429b8643c5dd01971117fccb040a9a0210
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196793"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365客户端应用支持：条件访问
 
 在现代工作场所中，用户可以从任何位置使用各种设备和应用访问组织的资源。 因此，只关注谁可以访问资源已不够用。 您的组织还必须支持在访问控制基础结构中访问资源以及如何访问资源。
 
-使用Azure Active Directory、位置和基于多重身份验证的条件访问，你可以满足此新要求。 条件访问是一项Azure Active Directory，它使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从一个中心位置进行管理。
+通过Azure Active Directory设备、位置和基于多重身份验证的条件访问，你可以满足这一新要求。 条件访问是一项Azure Active Directory，它使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从一个中心位置进行管理。
 
 详细了解条件Azure Active Directory[访问](/azure/active-directory/conditional-access/)。
 

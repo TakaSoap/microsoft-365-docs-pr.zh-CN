@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196566"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -56,7 +56,7 @@ ms.locfileid: "58571815"
 
 ## <a name="check-license-state"></a>检查许可证状态
 
-可通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
+可以通过管理中心或管理门户检查许可证状态及其是否Microsoft Azure **设置**。
 
 1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
@@ -72,7 +72,7 @@ ms.locfileid: "58571815"
 
 若要获取向公司预配哪些许可证的访问权限，并检查许可证的状态，请转到管理中心。
 
-1. 在合作伙伴 **门户中，** 选择"**管理服务> Office 365"。**
+1. 从合作伙伴 **门户中，** 选择"**管理服务> Office 365"。**
 
 2. 单击"**合作伙伴门户**"链接将打开"代表管理员"选项，并授予你客户管理中心的访问权限。
 
@@ -106,7 +106,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 配置基于注册表的静态代理，以允许仅 Microsoft Defender for Endpoint 传感器报告诊断数据，并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- 管理模板Windows组件 数据收集和预览版本配置连接的用户体验和遥测服务的已验证 \> \> \> 代理用法
+- 管理模板Windows组件 数据收集和预览版本配置连接的用户体验和遥测服务的已验证 \> \> \> 代理使用情况
 - 将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**
 
 1. 打开组策略管理控制台。
@@ -159,7 +159,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server CB 1803 之前的 Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 和 Windows Server 2016 Server CB 1803 之前的 Windows Windows Server 2016 版本。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
@@ -198,7 +198,7 @@ Defender for Endpoint 内置于 Azure 云中，部署在以下区域：
 > 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到基于 DNS 的规则。
 
 > [!NOTE]
-> 如果你是美国政府客户，请参阅美国政府 Defender [for Endpoint 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
+> 如果你是美国政府客户，请参阅美国政府终结点 [Defender 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
 
 ## <a name="next-step"></a>后续步骤
 

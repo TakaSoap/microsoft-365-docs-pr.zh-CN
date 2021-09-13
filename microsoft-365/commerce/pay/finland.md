@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2869797fa6eeed3f81353e8667332fd4531f74530f1cf1675ad45e2081b2539f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 046c6e75253d1ad51fb6fb4a8fb55c694473f7ea
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195851"
 ---
 # <a name="payment-information-for-finland"></a>芬兰的付款信息
 
@@ -33,7 +33,7 @@ ms.locfileid: "53887255"
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB31CITI18500812207591  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft Oy** 计费的订单和消耗的发票，请使用此银行信息：
@@ -41,7 +41,7 @@ ms.locfileid: "53887255"
 **Bank：** Bank Europe plc  
 **SWIFT 代码：** 一台或多张  
 **IBAN 代码：** IE97CITI99005170000127  
-**帐号：70000127**  
+**帐户编号：70000127**  
 **帐户名称：** MICROSOFT
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

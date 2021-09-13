@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: c079718ea7c8dab8c8c6423fcc5877e14a1dc078
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196618"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒程序内使用有限的定期扫描
 
@@ -39,7 +39,7 @@ ms.locfileid: "58571803"
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>如何启用有限定期扫描
 
-默认情况下，Microsoft Defender 防病毒如果尚未安装其他防病毒产品，或者其他产品过期、过期或无法正常工作，Windows 10设备自行启用。
+默认情况下，Microsoft Defender 防病毒如果尚未安装其他防病毒产品，或者其他产品已过期、过期或无法正常工作，Windows 10 设备上自行启用。
 
 如果Microsoft Defender 防病毒，将显示常用选项以在该设备上配置它：
 

@@ -18,11 +18,11 @@ ms.assetid: ''
 description: 了解如何在审阅集内创建和运行查询，以组织内容，以在Advanced eDiscovery审阅。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 4e4d2603cc9f26925b65ebeb654ad366d245e8e8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195783"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>查询和筛选审阅集中的内容
 
@@ -54,7 +54,7 @@ ms.locfileid: "58570781"
 
 - **搜索**：提供不同搜索功能的筛选器。
 
-- **分析&** 编码：运行文档分析作业或使用预测编码模型时生成& **添加到** 文档的属性筛选器。
+- **分析&** 编码：运行文档分析作业或使用预测编码模型&生成和添加到文档的属性筛选器。 
 
 - **ID：** 用于筛选文档的所有 ID 属性。
 
@@ -77,7 +77,7 @@ ms.locfileid: "58570781"
 
 - **Date**：日期筛选器用于"上次修改日期"等日期字段。
 
-- **搜索选项**：搜索选项筛选器提供可能值列表 (每个值都显示一个复选框，你可以为审阅中的特定字段) 复选框。 此筛选器用于审阅集可能值有限数量的字段，例如"发件人"。
+- **搜索选项**：搜索选项筛选器提供一个可能值列表 (每个值都显示一个复选框，你可以为审阅中的特定字段) 复选框。 此筛选器用于审阅集可能值有限数量的字段，例如"发件人"。
 
 - **关键字**：关键字条件是可用于搜索词的 freetext 条件的特定实例。 您还可以在此类型的筛选器中使用类似 KQL 的查询语言。 有关详细信息，请参阅本主题中的查询语言和高级查询生成器部分。
 

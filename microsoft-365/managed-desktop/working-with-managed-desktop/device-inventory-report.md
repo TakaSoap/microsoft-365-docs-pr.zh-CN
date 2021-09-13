@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3b0909e0537c0090ef1bcb8c0803e6f0c7dd5e46435c0980268ee3f2cf810291
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196643"
 ---
 # <a name="device-inventory-report"></a>设备清点报告
 
@@ -38,7 +38,7 @@ ms.locfileid: "53890836"
 - 已分配用户
 - 状态
 - 年龄 (月) 
-- 个人资料
+- 配置文件
 - 已登录用户
 - TPM 版本
 - 启用安全启动

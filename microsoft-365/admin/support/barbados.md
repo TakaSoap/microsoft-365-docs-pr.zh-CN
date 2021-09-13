@@ -12,12 +12,12 @@ ms.collection: ''
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a5a5dbc6e37f97a02f0216acd57560ad779c7e9ebb4850a09b03b1e9556edbf2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 661f871f0e33e1e82077993ac207ffdbc75ff624
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197161"
 ---
 # <a name="contact-support-for-barbados"></a>联系针对伯利兹的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53867459"
 ## <a name="phone-number"></a>电话号码
 1 877 639 0597
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

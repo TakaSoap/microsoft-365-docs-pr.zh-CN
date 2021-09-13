@@ -18,12 +18,12 @@ ms.custom:
 description: 大致了解 SIEM 中的安全信息和事件 (SIEM) 与 Microsoft 365 云服务和应用程序集成
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b4f0275ed9f63aaf3e5717a3511caa28055f0bf0e469c1c17a46e17e4a25a56
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56902088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195916"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM 安全信息和事件 (SIEM) 与 Microsoft 365 服务和应用程序的服务器集成
 
@@ -36,7 +36,7 @@ ms.locfileid: "56902088"
 
 ## <a name="summary"></a>摘要
 
-你的组织是使用还是计划从 SIEM 服务器 (安全) 管理？ 你可能想知道它如何与Microsoft 365或Office 365。 本文提供了可用于将 SIEM 服务器与服务和应用程序Microsoft 365列表。
+你的组织是使用还是计划从 SIEM 服务器 (安全) 事件管理？ 你可能想知道它如何与Microsoft 365或Office 365。 本文提供了可用于将 SIEM 服务器与 Microsoft 365 应用程序集成的资源列表。
 
 > [!TIP]
 > 如果你还没有 SIEM 服务器，并且正在探索你的选项，请考虑Microsoft Azure **[Sentinel。](/azure/sentinel/overview)**
@@ -64,7 +64,7 @@ SIEM 服务器可以从各种服务和应用程序Microsoft 365数据。 下表�
 |
 
 > [!TIP]
-> 查看 Azure [Sentinel](/azure/sentinel/overview)。 Azure Sentinel 附带适用于 Microsoft 解决方案的连接器。 这些连接器"开箱即用"可用，可提供实时集成。 可以将 Azure Sentinel 与 Microsoft 365 Defender 解决方案和 Microsoft 365 服务一同使用，包括 Office 365、Azure AD、Microsoft Defender for Identity、Microsoft Cloud App Security等。
+> 查看 Azure [Sentinel](/azure/sentinel/overview)。 Azure Sentinel 附带适用于 Microsoft 解决方案的连接器。 这些连接器"开箱即用"可用，可提供实时集成。 可以将 Azure Sentinel 与 Microsoft 365 Defender 解决方案和 Microsoft 365 服务一同使用，包括 Office 365、Azure AD、Microsoft Defender for Identity Microsoft Cloud App Security等。
 
 ### <a name="audit-logging-must-be-turned-on"></a>审核日志记录必须打开
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b8381fe58e7b86d1140beef6bb2de8ed8cdf23d41d8d8932ec456a7b36144723
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5e47b95390cf2235be1af8e75db6d0841dde780
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197080"
 ---
 # <a name="contact-support-for-saint-martin"></a>联系圣文达文的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53804260"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 4 点到中午 4 点

@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 5d0a24afb895afbce800b29b0f235c4a67e598f130de930c0e31b2909c077dcb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195802"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 
@@ -43,15 +43,15 @@ ms.locfileid: "53885971"
 
 使用此过程可编辑用于划分用户的属性。 例如，如果您使用的是 Department 属性，并且一个或多个用户帐户当前没有为"部门"列出任何值，则必须编辑这些用户帐户以包含部门信息。 用户帐户属性用于定义分段，以便可以分配信息屏障策略。
 
-1. 若要查看特定用户帐户的详细信息（如属性值和分配段 () ），请使用带 Identity 参数的 **Get-InformationBarrierRecipientStatus** cmdlet。
+1. 若要查看特定用户帐户的详细信息（如属性值和分配给 () ），请使用带 Identity 参数的 **Get-InformationBarrierRecipientStatus** cmdlet。
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* for *Megan* 和 *alexw* for *Alex*。 |
 
 2. 确定要编辑用户帐户配置文件的属性 () 。 有关详细信息，请参阅 [信息屏障策略的属性](information-barriers-attributes.md)。 
 
-3. 编辑一个或多个用户帐户以包含你在上一步中所选的属性的值。 若要执行此操作，请使用以下过程之一：
+3. 编辑一个或多个用户帐户，以包含在上一步中所选的属性的值。 若要执行此操作，请使用以下过程之一：
 
     - 若要编辑单个帐户，请参阅使用帐户添加或更新[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
@@ -59,7 +59,7 @@ ms.locfileid: "53885971"
 
 ## <a name="edit-a-segment"></a>编辑区段
 
-使用此过程可编辑用户区段的定义。 例如，您可以更改线段的名称，或更改用于确定该线段中包括哪些人使用的筛选器。
+使用此过程可编辑用户区段的定义。 例如，您可以更改线段的名称，或者更改用于确定该线段中包括哪些人使用的筛选器。
 
 1. 若要查看所有现有分段，请使用 **Get-OrganizationSegment** cmdlet。
 
@@ -92,9 +92,9 @@ ms.locfileid: "53885971"
 
     假设我们想要更改它，以便 *"* 研究"部门中的人员只能与 *人力资源部门中的* 人员通信。 若要进行此更改，我们使用此 cmdlet： `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
-    本示例中，我们将"SegmentsBlocked"更改为"SegmentsAllowed"，并指定 *HR* 段。
+    本示例将"SegmentsBlocked"更改为"SegmentsAllowed"，并指定 *HR* 段。
 
-3. 编辑完策略后，请确保应用更改。  (应用 [信息屏障策略](information-barriers-policies.md#part-3-apply-information-barrier-policies).) 
+3. 编辑完策略后，请确保应用更改。  (请参阅 [应用信息屏障策略](information-barriers-policies.md#part-3-apply-information-barrier-policies).) 
 
 ## <a name="set-a-policy-to-inactive-status"></a>将策略设置为非活动状态
 

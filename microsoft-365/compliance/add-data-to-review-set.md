@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将搜索结果或这些搜索结果的示例添加到Advanced eDiscovery审阅集。
 ms.openlocfilehash: aeb7942fc12089bd458236221dd7394a8018e780
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567080"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197014"
 ---
 # <a name="add-search-results-to-a-review-set"></a>将搜索结果添加到审阅集
 
@@ -33,9 +33,9 @@ ms.locfileid: "58567080"
 
 - 再次运行搜索。 这意味着复制到审阅集的实际搜索结果可能不同于上次运行搜索时返回的估计结果。
 
-- 搜索结果中的所有项目都从实时服务中的原始数据源复制，并复制到 Microsoft 云中的Azure 存储安全位置。
+- 搜索结果中的所有项目都从实时服务中的原始数据源复制，并复制到 Microsoft 云中的Azure 存储位置。
 
-- 所有 (包括内容和元数据) 重新建立索引，以便审阅集内的所有数据在审阅案例数据期间完全可搜索。 当您在案例调查期间搜索审阅集内的数据时，对数据重新建立索引会导致全面而快速的搜索。
+- 所有 (包括内容和元数据) 都重新建立索引，以便审阅集内的所有数据在审阅案例数据期间完全可搜索。 当您在案例调查期间搜索审阅集内的数据时，对数据重新建立索引会导致全面而快速的搜索。
 
 - 使用 [Microsoft](encryption.md) 加密技术加密并附加到搜索结果中返回的电子邮件的文件在将电子邮件和附加文件添加到审阅集时将解密。 可以在审阅集内查看和查询解密的文件。 您必须分配有 RMS 解密角色，以将解密的电子邮件附件添加到审阅集。 有关详细信息，请参阅解密[Microsoft 365电子数据展示工具。](ediscovery-decryption.md)
 
@@ -55,7 +55,7 @@ ms.locfileid: "58567080"
 
 - **对话检索选项**：为线程对话启用添加到审阅集的项目，以帮助查看来回对话上下文中的内容。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
 
-- **启用新式附件检索**：使用此选项在集合中包括新式附件或链接文件，以便进一步查看。 有关与新式附件相关的可搜索属性详细信息，请参阅文档[元数据Advanced eDiscovery。](document-metadata-fields-in-Advanced-eDiscovery.md)
+- **启用新式附件检索**：使用此选项在集合中包括新式附件或链接文件，以便进一步查看。 有关与新式附件相关的可搜索属性详细信息，请参阅文档[元数据字段Advanced eDiscovery。](document-metadata-fields-in-Advanced-eDiscovery.md)
 
 ## <a name="add-a-sample-to-a-review-set"></a>向审阅集添加示例
 
@@ -71,6 +71,6 @@ ms.locfileid: "58567080"
 
 ## <a name="optical-character-recognition"></a>光学字符识别
 
-将搜索结果添加到审阅集时，Advanced eDiscovery 中的光学字符识别 (OCR) 功能会自动从图像中提取文本，并包括图像文本以及已添加到审阅集的数据。 可以在审阅集内所选图像文件的文本查看器中查看提取的文本。 通过此功能，你可以对图像中的文本进行进一步审阅和分析。 OCR 支持松散文件、电子邮件附件和嵌入图像。 有关 OCR 支持的图像文件格式列表，请参阅[高级电子数据展示中受支持的文件类型](supported-filetypes-ediscovery20.md#image)。
+向审阅集添加搜索结果时，Advanced eDiscovery 中的光学字符识别 (OCR) 功能会自动从图像中提取文本，并包括图像文本以及已添加到审阅集的数据。 可以在审阅集内所选图像文件的文本查看器中查看提取的文本。 通过此功能，你可以对图像中的文本进行进一步审阅和分析。 OCR 支持松散文件、电子邮件附件和嵌入图像。 有关 OCR 支持的图像文件格式列表，请参阅[高级电子数据展示中受支持的文件类型](supported-filetypes-ediscovery20.md#image)。
 
 必须针对在高级电子数据展示中创建的每个案例启用 OCR 功能。 有关详细信息，请参阅配置 [搜索和分析设置](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr)。

@@ -15,11 +15,11 @@ description: 管理员可以 &了解如何使用安全与合规中心内"邮件�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9c0c0eed3cffaadd76f18b9b446ac14873712f6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195928"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全与合规中心内热门域&状态见解
 
@@ -30,7 +30,7 @@ ms.locfileid: "58574552"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全 **与合规中心的**"邮件流"仪表板 [](mail-flow-insights-v2.md)中的"热门域邮件流状态"&[可](https://protection.office.com)为你提供组织的当前邮件流状态。
+安全 **与合规** 中心内"邮件流"[](mail-flow-insights-v2.md)仪表板中的"热门域邮件流状态"&[可](https://protection.office.com)为你提供组织的当前邮件流状态。
 
 此见解可帮助您识别和排查遇到邮件 ***流问题的域*** 。 例如，域无法接收外部电子邮件，因为该域已过期或域的 MX 记录不正确。
 
@@ -42,7 +42,7 @@ ms.locfileid: "58574552"
 - **以前的 MX 记录**
 - **当前 MX 记录**
 - **电子邮件接收状态**
-- 域状态：绿色选中标记表示单击小组件) 时当前的 MX 记录 (匹配我们记录的值，并且域在过去两小时内收到了电子邮件。
+- 域状态：绿色选中标记表示单击小组件) 时当前的 MX 记录 (与记录中的值匹配，并且域在过去两小时内收到了电子邮件。
 
   红色 X 表示 MX 记录已更改，并且域在过去 6 小时内未收到任何电子邮件。 这很可能表示您的域已过期，或者 MX 记录更新不正确。 请与域注册机构或 DNS 托管服务核实，以查看域是否已过期，或者域的 MX 记录不正确。
 
@@ -52,4 +52,4 @@ ms.locfileid: "58574552"
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

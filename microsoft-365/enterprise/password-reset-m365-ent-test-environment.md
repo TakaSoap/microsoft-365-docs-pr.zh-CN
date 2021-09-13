@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
 ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196364"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
@@ -74,7 +74,7 @@ ms.locfileid: "58565874"
 3. 将“**组类型**”设置为“**安全**”，将“**组名称**”设置为“**PWReset**”，将“**成员身份类型**”设置为“**已分配**”。
 4. 选择 **"成员**"，查找并选择 **"用户 3"，** 选择 **"选择**"，然后选择"创建 **"。**
 5. 关闭“**组**”窗格。
-6. 在Azure Active Directory窗格中，选择左侧导航 **中的"** 密码重置"。
+6. 在"Azure Active Directory"窗格中，选择左侧导航 **中的**"密码重置"。
 7. 在“**密码重置属性**”窗格的“**已启用自助式密码重置**”选项下，选中“**已选择**”。
 8. 选择 **"选择组"，** 选择 **"PWReset"** 组，然后选择"**保存**  >  **"。**
 9. 关闭专用浏览器实例。

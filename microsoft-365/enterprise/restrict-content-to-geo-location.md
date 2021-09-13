@@ -12,13 +12,13 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: 本文将了解如何将网站SharePoint多地理位置环境中指定地理位置。
-ms.openlocfilehash: 1a10ebe8042f2385fa1fa6d3ff3329bb7c066c424b0cb4135f0a29a186f23dc2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 本文将了解如何将网站SharePoint多地理位置环境中指定的地理位置。
+ms.openlocfilehash: 74255db19b2ecf9b333d33208c63da260b2bd747
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196745"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>将 SharePoint 网站内容限制到某个地理位置
 

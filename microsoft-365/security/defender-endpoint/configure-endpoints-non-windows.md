@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 2c3350cd45eedb590016e3456274b4e04dda1c51
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222382"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -38,7 +38,7 @@ ms.locfileid: "58533299"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-nonwindows-abovefoldlink)。
 
-Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种受支持操作系统 (操作系统或操作系统) 警报Microsoft 365 Defender更好地保护组织的网络。
+Defender for Endpoint 为非安全Windows提供了集中式安全Windows体验。 你将能够查看来自各种支持的操作系统和操作系统警报 (操作系统) Microsoft 365 Defender更好地保护组织的网络。
 
 你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关详细信息，请参阅：
 

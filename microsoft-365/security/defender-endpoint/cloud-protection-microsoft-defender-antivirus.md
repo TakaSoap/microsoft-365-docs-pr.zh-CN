@@ -1,5 +1,5 @@
 ---
-title: 云保护和Microsoft Defender 防病毒
+title: 云保护和 Microsoft Defender 防病毒软件
 description: 了解云保护和Microsoft Defender 防病毒
 keywords: Microsoft Defender 防病毒， 下一代技术， 下一代 av， 机器学习， 反恶意软件， 安全性， defender， 云， 云保护
 search.product: eADQiWindows 10XVcnh
@@ -16,23 +16,23 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/26/2021
 ms.openlocfilehash: 661e368d76fcdc7a3a62523aa0c92c57790bed60
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196361"
 ---
-# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>云保护和Microsoft Defender 防病毒
+# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>云保护和 Microsoft Defender 防病毒软件
 
 **适用于：**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender 防病毒
 
-新一代技术Microsoft Defender 防病毒提供近乎即时的自动化保护，以抵御新出现的威胁。 为了动态识别新威胁，下一代技术使用 Microsoft Intelligent Security Graph 中大型互连数据集和由高级机器学习模型驱动的强大人工智能 (AI) 系统。 云保护与Microsoft Defender 防病毒一起提供准确、实时和智能的保护。 
+新一代技术Microsoft Defender 防病毒提供近乎即时的自动化保护，以抵御新出现的威胁。 为了动态识别新威胁，下一代技术可处理 Microsoft Intelligent Security Graph 中大型互连数据集和由高级机器学习模型驱动的强大人工智能 (AI) 系统。 云保护与Microsoft Defender 防病毒一起提供准确、实时和智能的保护。 
 
 > [!TIP]
-> 我们建议保持启用云保护。 若要了解更多信息，请参阅[为什么应为云保护启用Microsoft Defender 防病毒。](why-cloud-protection-should-be-on-mdav.md) 
+> 我们建议保持启用云保护。 若要了解更多信息，请参阅[为什么应为](why-cloud-protection-should-be-on-mdav.md)用户启用云Microsoft Defender 防病毒。 
 
 ## <a name="how-cloud-protection-works"></a>云保护的工作原理
 
@@ -54,13 +54,13 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 
 > [!NOTE]
-> 云Microsoft Defender 防病毒是一种向网络和终结点提供更新保护的机制。 作为云服务，它不仅仅是对存储在云中的文件的保护;相反，云服务使用分布式资源和机器学习以比传统安全智能更新快得多的速度为终结点提供保护。
+> Microsoft Defender 防病毒云服务是一种向网络和终结点提供更新保护的机制。 作为云服务，它不仅仅是对存储在云中的文件的保护;相反，云服务使用分布式资源和机器学习以比传统安全智能更新快得多的速度为终结点提供保护。
 
 ## <a name="how-to-get-cloud-protection"></a>如何获取云保护 
 
 云保护默认启用。 但是，如果已作为以前的组织策略的一部分禁用，可能需要重新启用它。 若要了解更多信息，请参阅 [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)。
 
-如果你的订阅包括Windows 10 E5，你可以利用紧急动态智能更新，这些更新可提供近实时保护，防止新出现的威胁。 当你打开云保护时，恶意软件问题的修复可以在数分钟内通过云提供，而不是等待下一次更新。 请参阅配置Microsoft Defender 防病毒，以根据云服务中的报告自动[接收新的保护更新](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)。
+如果你的订阅包括 Windows 10 E5，你可以利用紧急动态智能更新，这些更新可提供对新兴威胁的近实时保护。 当你打开云保护时，恶意软件问题的修复可以在数分钟内通过云提供，而不是等待下一次更新。 请参阅[Configure Microsoft Defender 防病毒 to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)。
 
 ## <a name="next-steps"></a>后续步骤
 

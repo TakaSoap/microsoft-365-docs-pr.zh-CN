@@ -9,19 +9,19 @@ ms.service: bookings
 localization_priority: Normal
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
 ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196186"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（如姓名、电话号码和电子邮件地址）的地方。 您还可以在此处为每位员工设置工作时间。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
+尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
 ## <a name="watch-add-your-staff-to-bookings"></a>观看：将员工添加到 Bookings
 
@@ -58,11 +58,11 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
     :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings 日历的视图。":::
 
 > [!IMPORTANT]
-> 我们强烈建议将此设置 (默认设置为启用，) 避免双重预订并优化员工成员的可用性。
+> 我们强烈建议将此设置保留为 (默认情况下启用此设置) 以避免双重预订并优化员工成员的可用性。
 
 8. 选择 **"使用营业时间**"将员工的所有可预订时间设置为仅在"业务信息"页上的"营业时间"部分中设置的营业时间内。
 
-    通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工可能只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
+    通过取消选中此框，可以给员工提供自定义小时数，以进一步限制可以预订的时间。 这适用于以下情形：员工只能在星期二和星期三开会，或者将上午专用于一种类型的约会，以及安排其他类型的约会。
 
     > [!NOTE]
     > 在向服务分配员工时，只会显示添加到员工页面的前 31 名员工。

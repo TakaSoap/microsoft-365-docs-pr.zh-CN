@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：了解数据在Microsoft Office 365。
-ms.openlocfilehash: 290debbcbb58c7ded884a2443a7c4f31a4b2f92c396500ff1d63f3fcc7221942
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196941"
 ---
 # <a name="service-encryption"></a>服务加密
 
@@ -39,9 +39,9 @@ Microsoft 管理所有加密密钥，包括用于服务加密的根密钥。 此
 
 - 包括一个"客户密钥"选项，该选项允许多租户服务提供每租户密钥管理。
 
-- 增强用户Microsoft 365满足对加密有特定合规性要求的客户的需求的能力。
+- 增强用户Microsoft 365满足对加密有特定合规性要求的客户的需求。
 
-使用客户密钥，可以使用本地硬件服务模块 (HSM) 或 Azure Key Vault (AKV) 。 无论您如何生成密钥，都可使用 AKV 来控制和管理由 Office 365。 一旦密钥存储在 AKV 中，就可以用作加密邮箱数据或文件的密钥链之一的根。
+使用客户密钥，可以使用本地硬件服务模块 (HSM) 或 Azure Key Vault (AKV) 生成自己的加密密钥。 无论您如何生成密钥，您都可使用 AKV 来控制和管理由 Office 365。 一旦密钥存储在 AKV 中，就可以用作加密邮箱数据或文件的密钥链之一的根。
 
 客户密钥的另一个好处是，你可以控制 Microsoft 处理数据的能力。 如果你想要从 Office 365 中删除数据，例如如果你想要终止 Microsoft 服务或删除存储在云中的部分数据，你可以这样做，并使用客户密钥作为技术控制。 删除数据可确保包括 Microsoft 在内的任何人都无法访问或处理数据。 客户密钥是对用于控制 Microsoft 人员访问数据的客户密码箱的补充。
 

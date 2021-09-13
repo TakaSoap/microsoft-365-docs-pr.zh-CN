@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e3fb91a47b23b49f71c9b835f262f1c68aa6847b3cd8accee9e94f4e405755c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c25ba7fc49d5b26dd2e95262e9ef87a02a93308
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195881"
 ---
 # <a name="contact-support-for-cape-verde-cabo-verde"></a>联系佛得角和佛得角 (支持) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "53893393"
 ## <a name="phone-number"></a>电话号码
 +351 21 366 5030
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 8 点到下午 4 点

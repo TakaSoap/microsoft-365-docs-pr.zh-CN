@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 9a8b87a7cee3bb03a0946773012ed6f18bbd75b9
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196562"
 ---
 # <a name="score-resource-type"></a>分数资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "58350000"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 方法|返回类型|说明
 :---|:---|:---
@@ -53,6 +53,6 @@ ms.locfileid: "58350000"
 属性|类型|说明
 :---|:---|:---
 得分|双精度|当前分数。
-时间|日期/时间|调用此 API 的日期和时间。
+时间|日期时间|调用此 API 的日期和时间。
 RbacGroupName|String|设备组名称。
 RbacGroupId|String|设备组 ID。

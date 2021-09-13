@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: ca654a4fd06e43645f2e38fcf23e4e6de9b483de
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196036"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -112,7 +112,7 @@ ms.locfileid: "58745789"
     > ![自定义配置文件 - 名称。](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. 为配置文件名称选择名称，例如"适用于 macOS 的终结点载入的 Defender"。
-1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入程序包中提取的配置文件文件"作为配置文件。
+1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入程序包中提取的内容作为配置文件文件。
 
     > [!div class="mx-imgBorder"]
     > ![从文件导入自定义配置文件的配置。](images/mdatp-6-systemconfigurationprofiles.png)
@@ -131,7 +131,7 @@ ms.locfileid: "58745789"
 
 ### <a name="approve-system-extensions"></a>批准系统扩展
 
-MacOS 10.15 或更高版本 (macOS 10.15) 此配置文件。 它将在较旧的 macOS 上被忽略。
+macOS 10.15 或更高版本 (macOS 10.15) 此配置文件。 它将在较旧的 macOS 上被忽略。
 
 1. 选择 **"配置文件"下的****"创建配置文件"。**
 1. 选择 **平台** = **macOS** **，配置文件类型** = **模板**。 **模板名称** =**扩展**。 单击“**创建**”。
@@ -151,10 +151,10 @@ MacOS 10.15 或更高版本 (macOS 10.15) 此配置文件。 它将在较旧的 
 
 ### <a name="kernel-extensions"></a>内核扩展
 
-macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽略。
+macOS 10.15 和加泰罗尼亚语或 (需要此) 配置文件。 它将在较新的 macOS 上被忽略。
 
 > [!CAUTION]
-> Apple 芯片 (M1) 不支持 KEXT。 在这些设备上安装包含 KEXT 策略的配置文件将失败。
+> Apple 芯片 (M1) 设备不支持 KEXT。 在这些设备上安装包含 KEXT 策略的配置文件将失败。
 
 1. 选择 **"配置文件"下的****"创建配置文件"。**
 1. 选择 **平台** = **macOS** **，配置文件类型** = **模板**。 **模板名称** =**扩展**。 单击“**创建**”。
@@ -175,7 +175,7 @@ macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽�
    >
    > 此配置文件授予对 Microsoft Defender for Endpoint 的完全磁盘访问权限。 如果你之前通过 Intune 配置了适用于 Endpoint 的 Microsoft Defender，我们建议你通过此配置文件更新部署。
 
-从我们的 GitHub[存储库下载 fulldisk.mobileconfig。](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)
+从我们的 GitHub [存储库中下载](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [**fulldisk.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)
 
 按照上述载入 [blob](#onboarding-blob) 的说明操作，使用"Defender for Endpoint Full Disk Access"作为配置文件名称，并下载 **fulldisk.mobileconfig** 作为配置文件名称。
 
@@ -183,7 +183,7 @@ macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽�
 
 作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft 365 Defender 门户。 以下策略允许网络扩展执行此功能。
 
-从我们的 GitHub 存储库下载 [**netfilter.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) [](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+从我们的 GitHub 存储库中下载 [**netfilter.mobileconfig。**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) [](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 按照上述载入 [blob](#onboarding-blob) 的说明操作，使用"Defender for Endpoint Network Filter"作为配置文件名称，将下载的 **netfilter.mobileconfig** 用作配置文件名称。
 
@@ -240,7 +240,7 @@ macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽�
 
 ## <a name="client-device-setup"></a>客户端设备设置
 
-除了标准安装之外，不需要为 Mac 设备公司门户[预配](/intune-user-help/enroll-your-device-in-intune-macos-cp)。
+除了标准安装之外，不需要为 Mac 设备进行任何特殊[公司门户设置](/intune-user-help/enroll-your-device-in-intune-macos-cp)。
 
 1. 确认设备管理。
 

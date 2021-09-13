@@ -9,16 +9,16 @@ audience: ITPro
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: 管理员可以了解安全与合规中心内邮件流仪表板中提供的见解&报告。
+description: 管理员可以了解安全与合规中心内"邮件流"仪表板中提供的见解&报告。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6c960b34933c6a90dcf4a1675ced63dd43f00c07
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195938"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -67,16 +67,16 @@ ms.locfileid: "58607065"
 
 邮件流仪表板可供以下角色组的成员使用：
 
-- **安全与** 合规中心&管理 (全局管理员) 。
+- **安全与** 合规中心&组织 (全局管理员) 。
 
 - **[Exchange管理员](/azure/active-directory/roles/permissions-reference#exchange-administrator)** Azure Active Directory。
 
-- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange组的成员，请考虑以下问题：
+- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange的成员，请考虑以下问题：
   - 用户必须直接登录到安全&合规中心 <https://protection.office.com> 。
   - 用户仅对邮件流仪表板具有只读权限。
   - 用户无法访问Microsoft 365 管理中心。
 
-有关权限详细信息，请参阅安全与合规中心& [权限](permissions-in-the-security-and-compliance-center.md) 和向用户授予对安全与合规& [的访问权限](grant-access-to-the-security-and-compliance-center.md)。
+有关权限详细信息，请参阅安全与合规& [中](permissions-in-the-security-and-compliance-center.md) 的权限和向用户授予对安全与合规& [的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在哪里可以找到邮件流仪表板
 

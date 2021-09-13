@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e12af874a3615f7325b41252fc0cecaf7993868fe3a0d41545f3c45cadb0267
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26c7e53a6dd28264374d19acb68fd27e27507b0f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196026"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用不同的移动设备管理 (MDM) 系统部署 Microsoft Defender for Endpoint
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上为 Microsoft Defender for Endpoint (MDM) 部署不同的移动设备管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "53857323"
 
 > 目前，Microsoft 正式仅支持 Intune 和 JAMF 在 macOS 上部署和管理 Microsoft Defender for Endpoint。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
 
-如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
+如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
 
 macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应商的功能。 它可以与支持以下功能的任何 MDM 解决方案一同使用：
 
@@ -68,7 +68,7 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 ### <a name="package"></a>程序包
 
-配置所需应用程序[包的](mac-install-with-jamf.md)部署，安装包 (wdav.pkg) 从 Microsoft 365 Defender[下载](mac-install-with-jamf.md)。
+配置所需应用程序[包的](mac-install-with-jamf.md)部署，安装包 (wdav.pkg) 从 Microsoft 365 Defender[门户下载](mac-install-with-jamf.md)。
 
 若要将程序包部署到企业，请使用与 MDM 解决方案关联的说明。
 
@@ -83,14 +83,14 @@ MDM 解决方案可能称其为"自定义设置配置文件"，因为 macOS 上�
 或者，可能需要先将属性列表转换为其他格式。
 
 通常，自定义配置文件具有 ID、名称或域属性。 必须完全使用"com.microsoft.wdav.atp"作为此值。
-MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Preferences/com.microsoft.wdav.atp.plist，Defender** 使用此文件加载载入信息。
+MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Preferences/com.microsoft.wdav.atp.plist，** 而 Defender 使用此文件加载载入信息。
 
 ### <a name="kernel-extension-policy"></a>内核扩展策略
 
 设置 KEXT 或内核扩展策略。 使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。
 
 > [!CAUTION]
-> 如果您的环境由 Apple 芯片 (M1) ，则这些计算机不应接收包含 KEXT 策略的配置文件。
+> 如果您的环境由 Apple 芯片 (M1) 组成，则这些计算机不应接收包含 KEXT 策略的配置文件。
 > Apple 在这些计算机上不支持 KEXT，在 M1 计算机上部署此类配置文件将失败。
 
 ### <a name="system-extension-policy"></a>系统扩展策略

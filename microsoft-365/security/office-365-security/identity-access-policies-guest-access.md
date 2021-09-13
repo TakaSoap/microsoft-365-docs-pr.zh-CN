@@ -20,11 +20,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: 719b754e8e3486c281b23f4c38c7e33f548b118c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196477"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允许来宾访问和 B2B 外部用户访问的策略
 
@@ -42,17 +42,17 @@ ms.locfileid: "58569857"
 
 下表列出了创建和更新所需的策略。 常见策略链接到常见标识和设备访问策略文章中的关联 [配置说明](identity-access-policies.md) 。
 
-|保护级别|策略|详细信息|
+|保护级别|策略|更多信息|
 |---|---|---|
-|**Baseline**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **"分配>包括** 的用户和>，选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">条件**>登录"，取消选中所有选项，以始终对 MFA (多重) 。</li></ul>|
+|**Baseline**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **"分配>包括的用户和** 组>，选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">** 条件>登录"，保留所有选项未选中状态，以始终对 MFA (多重) 。</li></ul>|
 ||[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此策略以排除来宾和外部用户。|
 ||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|修改此策略以排除来宾和外部用户。|
 
-若要在条件访问策略中包括或排除来宾和外部用户，>用户和组>**包括** 或排除"，请检查"所有来宾和 **外部用户"。**
+若要在条件访问策略中包括或排除来宾和外部用户，>用户和组>包括或排除"，请检查"**所有** 来宾和 **外部用户"。**
 
 ![用于排除来宾和外部用户的控件的屏幕捕获。](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>来宾和外部用户访问Microsoft Teams
 
@@ -64,7 +64,7 @@ Microsoft Teams定义以下用户：
 
 有关详细信息，请参阅 teams [的来宾和外部用户访问之间的比较](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
-有关保护用户标识和设备访问策略Teams，请参阅用于保护聊天Teams组和文件[的策略建议](teams-access-policies.md)。
+有关保护用户标识和设备访问策略Teams，请参阅用于保护Teams、组和文件[的策略建议](teams-access-policies.md)。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>始终对来宾用户和外部用户要求 MFA
 
@@ -82,7 +82,7 @@ Microsoft Teams定义以下用户：
 
 ## <a name="next-step"></a>后续步骤
 
-![步骤 4：Microsoft 365云应用和Microsoft Cloud App Security。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![步骤 4：云应用Microsoft 365策略Microsoft Cloud App Security。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 为：配置条件访问策略：
 

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 6029fbb2f00cde1346dc2661486ae494015a753f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196041"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>使用部署在 Linux 上的 Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "58572127"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)。
 
-本文介绍了如何使用部署在 Linux 上部署适用于 Endpoint 的 Defender。 成功的部署需要完成以下所有任务：
+本文介绍如何使用部署在 Linux 上使用部署适用于终结点的 Defender。 成功的部署需要完成以下所有任务：
 
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建清单](#create-a-puppet-manifest)
@@ -81,7 +81,7 @@ ms.locfileid: "58572127"
 
 你需要创建一个清单，用于将 Linux 上的 Defender for Endpoint 部署到由开发工具服务器管理的设备上。 此示例使用了从 *labs中* 提供的 apt 和 *yumrepo* 模块，并假定模块已安装在了您的开发工具服务器上。
 
-在安装 *Install_mdatp模块文件夹* 下 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将上述mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
+在安装 *Install_mdatp模块文件夹* 下 *install_mdatp/* 文件和清单文件夹。 此文件夹通常位于安装服务器 */etc/moduleslabs/code/environments/production/modules* 中。 将mdatp_onboard.js上的文件复制到 *"install_mdatp/files"* 文件夹。 创建 *init.pp* 包含部署说明的文件：
 
 ```bash
 pwd
@@ -103,11 +103,11 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>`install_mdatp/manifests/init.pp` 的内容
 
-可以从以下频道之一部署 Linux 上的 Defender for Endpoint (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
+可以从以下频道之一部署 Linux 上的 Defender for Endpoint (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-慢 *。*
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
 
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
@@ -227,7 +227,7 @@ mdatp health --field healthy
 > [!IMPORTANT]
 > 当产品首次启动时，它将下载最新的反恶意软件定义。 根据您的 Internet 连接，这最多可能需要几分钟。 在此期间，上述命令将返回 的值 `0` 。
 
-如果产品运行不正常， (检查的退出代码) `echo $?` 指示问题：
+如果产品运行不正常， (检查退出代码) `echo $?` 问题：
 
 - 1（如果设备尚未载入）。
 - 3（如果无法建立与守护程序的连接）。
@@ -242,7 +242,7 @@ mdatp health --field healthy
 
 ## <a name="uninstallation"></a>卸载
 
-创建一个 *remove_mdatp* 与 *init.pp* *install_mdatp* 以下内容类似的模块 文件：
+在 *init.pp* remove_mdatp与install_mdatp内容类似的模块 文件：
 
 ```bash
 class remove_mdatp {

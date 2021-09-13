@@ -1,5 +1,5 @@
 ---
-title: 针对百里达的支持信息
+title: 支持信息：为都巴岛
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 39043cfa5b127ece6c6a855c4b3d7d9d5d9e03f30e0518f1f45abc54f76739b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0965d6aa73aa9749e129e929922e549744e080f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196418"
 ---
 # <a name="contact-support-for-anguilla"></a>联系支持人员，该技术支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53843823"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5145
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

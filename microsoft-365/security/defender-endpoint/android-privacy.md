@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 6079c0d4a92f17c9c00fc3b3f060fec6858cb996
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222414"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
@@ -45,10 +45,10 @@ Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，�
 
 ### <a name="app-information"></a>应用信息
 
-有关设备上 **恶意** Android (程序包) API 的信息，包括
+有关设备上 **恶意** Android 应用程序包 (API) 的信息，包括
 
 - 安装源
-- 存储 APK (文件) 位置
+- 存储 APK (文件路径) 位置
 - 安装时间、APK 大小和权限
 
 ### <a name="web-page--network-information"></a>网页/网络信息
@@ -62,12 +62,12 @@ Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，�
 - 设备信息，如&时间、Android 版本、OEM 型号、CPU 信息和设备标识符。
 - 设备标识符是以下项之一：
   - Wi-Fi适配器 MAC 地址
-  - [Android ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (由 Android 在首次启动设备时) 。
+  - [Android ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID) (由 Android 在首次启动设备时生成) 。
   - 随机生成的全局唯一标识符 (GUID) 。
 
 - 租户、设备和用户信息
   - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID：唯一标识设备，分别在 Azure Active directory 中标识用户。
-  - Azure 租户 ID：标识组织内部Azure Active Directory。
+  - Azure 租户 ID：用于标识组织中组织的 GUID Azure Active Directory。
   - Microsoft Defender for Endpoint 组织 ID：与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。
   - 用户主体名称：用户的电子邮件 ID
 
@@ -92,4 +92,4 @@ Android 上的 Defender for Endpoint 从配置的 Android 设备收集信息，�
 **反馈 通过** 用户提供的应用内反馈收集数据
 
 - 用户的电子邮件地址（如果他们选择提供它）。
-- 反馈类型 (、笑脸、) 以及用户提交的任何反馈评论。
+- 反馈类型 (、笑脸、想法) 以及用户提交的任何反馈评论。

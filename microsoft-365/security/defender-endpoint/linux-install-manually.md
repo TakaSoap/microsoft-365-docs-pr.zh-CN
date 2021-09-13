@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9194196ab34e5e95b986ecbaba9be855969dec20
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196047"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -58,11 +58,11 @@ ms.locfileid: "58831929"
 
 ## <a name="configure-the-linux-software-repository"></a>配置 Linux 软件存储库
 
-Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
+可以从以下频道之一部署 Linux 上的 Defender for Endpoint (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员-慢 *。*
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
 
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
@@ -75,7 +75,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
     sudo yum install yum-utils
     ```
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
+- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/rhel/` 。
 
     使用下表可帮助指导你找到程序包：
 
@@ -124,7 +124,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
 
 ### <a name="sles-and-variants"></a>SLES 和变量
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
+- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/sles/` 。
 
     在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -158,7 +158,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
     sudo apt-get install libplist-utils
     ```
 
-- 记下你的分发和版本，并确定最近的条目 (按主要版本，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
+- 记下你的分发和版本，并按主要 (条目，然后在 下) 次要条目 `https://packages.microsoft.com/config/[distro]/` 。
 
     在下面的命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息：
 
@@ -285,7 +285,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从应用门户下载Microsoft 365 Defender包：
+从门户下载Microsoft 365 Defender包：
 
 1. 在Microsoft 365 Defender门户中，转到"设置 >终结点 **>">载入"。**
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
@@ -356,7 +356,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (如�
 
 5. 运行检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-    - 确保实时保护 (由运行以下命令或命令的结果 `1`) ：
+    - 确保启用实时保护 (运行以下命令或命令的结果 `1`) ：
 
         ```bash
         mdatp health --field real_time_protection_enabled
@@ -419,7 +419,7 @@ Options:
 
 将操作系统升级到新的主要版本时，必须先卸载 Linux 上的 Defender for Endpoint，安装升级，最后在设备上重新配置 Linux 上的 Defender for Endpoint。
 
-## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast到生产渠道
 
 1. 在 Linux 上卸载 Defender for Endpoint 的"Insiders-Fast channel"版本。
 
@@ -427,7 +427,7 @@ Options:
     sudo yum remove mdatp
     ```
 
-1. 在 Linux 客户端上禁用 Defender for Endpoint Insiders-Fast存储库
+1. 在 Linux 上禁用 Defender for Endpoint Insiders-Fast存储库
 
     ```bash
     sudo yum repolist

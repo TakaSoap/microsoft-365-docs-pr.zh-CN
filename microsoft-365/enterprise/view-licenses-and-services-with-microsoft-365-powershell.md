@@ -21,21 +21,21 @@ ms.custom:
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: 介绍如何使用 PowerShell 查看有关你的组织可用的许可计划、服务和许可证Microsoft 365的信息。
 ms.openlocfilehash: 920bc00dcfa774f7cf157be4a543bf30e18f406e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195680"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>使用 PowerShell Microsoft 365许可证和服务
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 每个Microsoft 365订阅都由以下元素组成：
 
-- **许可计划** 这些也称为许可证计划或Microsoft 365计划。 许可计划Microsoft 365为用户提供的服务。 你的Microsoft 365订阅可能包含多个许可计划。 例如，许可计划Microsoft 365 E3。
+- **许可计划** 这些也称为许可证计划或Microsoft 365计划。 许可计划定义Microsoft 365可用的服务。 你的Microsoft 365订阅可能包含多个许可计划。 例如，许可计划Microsoft 365 E3。
     
-- **服务** 这些也称为服务计划。 服务是Microsoft 365许可计划中提供的主要产品、特性和功能，例如Exchange Online和Microsoft 365 企业应用版 (名称Office 365 专业增强版) 。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
+- **服务** 这些也称为服务计划。 服务是Microsoft 365许可计划中提供的主要产品、特性和功能，例如，Exchange Online和Microsoft 365 企业应用版 (之前Office 365 专业增强版) 。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
     
 - **许可证** 每个许可计划都包含你购买的许可证数量。 你向用户分配许可证，以便Microsoft 365许可计划定义的服务。 每个用户帐户至少需要一个许可计划中的一个许可证，以便他们可以登录到Microsoft 365并使用服务。
     
@@ -106,7 +106,7 @@ ENTERPRISEPREMIUM 是第三行。 因此，索引值是 (3 - 1) 2。
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 >[!Note]
->PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用组织Microsoft 365服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
+>PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用 Microsoft 365 中的服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
 >
     
 若要查看有关当前许可计划以及每个计划的可用许可证的摘要信息，请运行以下命令：
@@ -121,7 +121,7 @@ Get-MsolAccountSku
 
 结果包含以下信息：
   
-- **AccountSkuId：** 使用 语法 显示组织的可用许可计划 `<CompanyName>:<LicensingPlan>` 。  _\<CompanyName>_ 是当你在组织中注册时Microsoft 365的值，并且对于你的组织是唯一的。 _\<LicensingPlan>_ 该值对于每个人都是相同的。 例如，在值 中，公司名称是 ，许可计划名称 `litwareinc:ENTERPRISEPACK` `litwareinc` 是 `ENTERPRISEPACK` E3 Office 365 企业版名称。
+- **AccountSkuId：** 使用 语法 显示组织的可用许可计划 `<CompanyName>:<LicensingPlan>` 。  _\<CompanyName>_ 是当你在组织中注册时Microsoft 365的值，并且对于你的组织是唯一的。 _\<LicensingPlan>_ 该值对于每个人都是相同的。 例如，在值 中，公司名称是 ，许可计划名称 是 `litwareinc:ENTERPRISEPACK` `litwareinc` E3 Office 365 企业版 `ENTERPRISEPACK` 名称。
     
 - **ActiveUnits：** 你为特定许可计划购买的许可证数量。
     
@@ -129,13 +129,13 @@ Get-MsolAccountSku
     
 - **ConsumedUnits：** 从特定许可计划向用户分配的许可证数。
     
-若要查看有关所有许可证Microsoft 365可用的服务的详细信息，请运行以下命令：
+若要查看有关所有许可证Microsoft 365中可用的服务的详细信息，请运行以下命令：
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-下表显示了最常见Microsoft 365的服务计划及其友好名称。 服务计划列表可能会有所不同。 
+下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。 
   
 |**服务计划**|**说明**|
 |:-----|:-----|

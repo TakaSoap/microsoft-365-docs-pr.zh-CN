@@ -20,11 +20,11 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.technology: mde
 ms.openlocfilehash: 7d9dad6b2f2f1b37525faf0a4a90d143650c49d1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196077"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
@@ -36,7 +36,7 @@ ms.locfileid: "58570361"
 
 ## <a name="overview"></a>概述
 
-如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在受到威胁的设备上找到的内容的人为攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能（如行为阻止和抑制）包含在[Defender for Endpoint 中](/windows/security)。
+如今的威胁形势被无文件恶意软件所溢出[](/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能，如行为阻止和抑制，包含在[Defender for Endpoint 中](/windows/security)。
 
 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。
 
@@ -48,7 +48,7 @@ ms.locfileid: "58570361"
 
 - [终结点检测和响应 (EDR) ](overview-endpoint-detection-response.md)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报聚合到事件中，这便于安全运营团队调查和响应。
 
-- [Defender for Endpoint](overview-endpoint-detection-response.md)具有各种跨标识、电子邮件、数据和应用的光学系统，以及通过 EDR 接收的网络、终结点和内核行为信号。 适用于终结点[Microsoft 365 Defender](../defender/microsoft-365-defender.md)Defender 处理和关联这些信号、引发检测警报以及连接事件中的相关警报的组件。
+- [Defender for Endpoint](overview-endpoint-detection-response.md)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 适用于终结点[Microsoft 365 Defender](../defender/microsoft-365-defender.md)Defender 处理和关联这些信号、引发检测警报以及连接事件中的相关警报的组件。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。
 
@@ -58,15 +58,15 @@ ms.locfileid: "58570361"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft 365 Defender 门户中 () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在管理门户 中配置[Microsoft 365 Defender策略](microsoft-defender-security-center.md)。
+- **客户端上策略驱动的 [攻击面减少规则](attack-surface-reduction.md)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft 365 Defender门户中 () [https://security.microsoft.com](https://security.microsoft.com) 信息警报。 默认情况下不会启用攻击面减少规则;在策略门户 中Microsoft 365 Defender[策略](microsoft-defender-security-center.md)。
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。) 
 
-- **[反馈循环 (](feedback-loop-blocking.md)** 也称为快速保护，) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
+- **[反馈循环阻止](feedback-loop-blocking.md)** (也称为快速保护) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。) 
 
 - **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下运行，默认情况下不启用;在 Microsoft 365 Defender.) 
 
-随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
+随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在计划并推出哪些功能，请访问 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>操作中的行为阻止和包含的示例
 
@@ -93,7 +93,7 @@ ms.locfileid: "58570361"
 Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两个点捕获并停止了攻击者的技术：
 
 - 第一个保护层检测到攻击行为。 云中的设备学习分类器正确地将威胁标识为 并立即指示客户端设备阻止攻击。
-- 第二个保护层，帮助阻止攻击通过第一层、检测到进程正在攻击、停止了该进程并删除了相应的文件 (如 Lokibot) 。
+- 第二个保护层，帮助阻止攻击通过第一层、检测到进程正在攻击、停止该进程并删除相应的文件 (如 Lokibot) 。
 
 在检测到并停止攻击时，警报（如"初始访问警报）"被触发并出现在 Microsoft 365 Defender[门户中](microsoft-defender-security-center.md)。
 
@@ -107,7 +107,7 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 :::image type="content" alt-text="Juicy Malware 恶意软件的 NTLM 警报。" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
-威胁已变成恶意软件;它是名为 Juicy 为的黑客工具的一个之前未发现的新变体，攻击者使用该工具在设备上获取特权提升。
+威胁已变成恶意软件;它是名为 Juicy 为的黑客攻击工具的一个新、之前未见的变体，攻击者使用该工具在设备上获取特权提升。
 
 警报触发后的几分钟内，将分析文件并确认为恶意文件。 其进程已停止和阻止，如下图所示：
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 Management Instrumentation 计划Windows扫描
+title: 使用 Management Instrumentation 安排Windows扫描
 description: 使用 WMI 计划防病毒扫描
 keywords: 快速扫描， 完全扫描， WMI， 计划， 防病毒
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b2f7b9ff7997719b42e55676f082efc05a81b875e9fe2c9df9ca03b06222e85e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1aa174f4601fb57eebbc4fb7c78e1809b9f072c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197253"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI) 安排防病毒扫描
 
@@ -33,7 +33,7 @@ ms.locfileid: "53839479"
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>使用 Windows Management Instruction (WMI) 计划扫描
 
-对 [**下列** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 ScanParameters
@@ -60,7 +60,7 @@ ScanOnlyIfIdleEnabled
 
 ## <a name="wmi-for-scheduling-scans-to-complete-remediation"></a>用于计划扫描以完成修正的 WMI
 
-对 [**下列** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 RemediationScheduleDay
@@ -71,7 +71,7 @@ RemediationScheduleTime
 
 ## <a name="wmi-for-scheduling-daily-scans"></a>用于计划每日扫描的 WMI
 
-对 [**下列** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
 
 ```WMI
 ScanScheduleQuickScanTime

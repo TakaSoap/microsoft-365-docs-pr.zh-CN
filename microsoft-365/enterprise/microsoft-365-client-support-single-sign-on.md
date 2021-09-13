@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365客户端应用支持：单一Sign-On
+title: Microsoft 365客户端应用支持：单Sign-On
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: 本文将了解哪些平台、客户端和 PowerShell 模块支持单一登录Microsoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0edf3e9954fb481e83d40e4af0befd9c7ca9967a7354be1969d226e08f52cb2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 560196694e1c2aaf924e02a882e0c8a3454bf667
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196784"
 ---
-# <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365客户端应用支持：单一Sign-On
+# <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365客户端应用支持：单Sign-On
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 

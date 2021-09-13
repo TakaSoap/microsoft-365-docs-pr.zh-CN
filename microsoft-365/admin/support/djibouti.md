@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c6448a75deb018011f387d719bce4aeb145e1fef6c8279f8e013e3814ea1627a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09820fbf6bc636f4312ba26daa85570f36ef1d2d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197142"
 ---
 # <a name="contact-support-for-djibouti"></a>联系针对埃塞俄比亚的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53907099"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri 11 AM-7 PM

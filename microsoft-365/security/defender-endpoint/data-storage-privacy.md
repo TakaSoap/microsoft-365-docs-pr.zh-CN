@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6cbd3af84d5bb0758ebbcbe22e6a570b3d04492b0eea0e89b047087ab0bf245f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ad4dd1bacb301ad50b5a6aa52e6a49eacb647f1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195672"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -36,7 +36,7 @@ ms.locfileid: "53854059"
 本部分涵盖有关 Defender for Endpoint 的隐私和数据处理的一些最常见的问题。
 
 > [!NOTE]
-> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关 Defender for Endpoint 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows 10）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows 10隐私](https://go.microsoft.com/fwlink/?linkid=827577)常见问题解答。
+> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows 10）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows 10](https://go.microsoft.com/fwlink/?linkid=827577)隐私常见问题解答。
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint 会收集哪些数据？
 
@@ -44,11 +44,11 @@ Microsoft Defender for Endpoint 将在特定于服务的客户专用和隔离租
 
 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据 (主机 IP 和端口) 以及设备详细信息 (例如设备标识符、名称和操作系统版本) 。
 
-Microsoft 安全地存储此数据Microsoft Azure根据 Microsoft 隐私实践和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
+Microsoft 安全地存储此数据Microsoft Azure Microsoft 隐私实践和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
 
 此数据使 Defender for Endpoint 能够：
 
-- 主动识别组织中 IA (攻击) IA
+- 主动识别组织中 IA (IA) 攻击指标
 - 如果检测到可能的攻击，生成警报
 - 为安全操作提供与来自网络的威胁信号相关的设备、文件和 URL 的视图，使你可以调查和探索网络上是否存在安全威胁。
 
@@ -58,7 +58,7 @@ Microsoft 不会将你的数据用于广告。
 
 Defender for Endpoint 服务利用基于安全基础结构的Microsoft Azure技术。
 
-我们的服务需要处理与数据保护相关的各个方面。 加密是最关键之一，它包括静态数据加密、进行中的加密和密钥保管库的密钥管理。 有关 Defender for Endpoint 服务使用的其他技术详细信息，请参阅 [Azure 加密概述](/azure/security/security-azure-encryption-overview)。
+我们的服务需要处理与数据保护相关的各个方面。 加密是最关键之一，它包括静态数据加密、进行中的加密以及密钥保管库的密钥管理。 有关 Defender for Endpoint 服务使用的其他技术详细信息，请参阅 [Azure 加密概述](/azure/security/security-azure-encryption-overview)。
 
 在所有方案中，至少使用 256 位 [AES 加密对数据进行](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 加密。
 
@@ -84,7 +84,7 @@ Defender for Endpoint 在Microsoft Azure、英国或美国的数据中心运行�
 
 此外，Microsoft 对某些操作人员执行后台验证检查，并限制根据后台验证级别对应用程序、系统和网络基础结构的访问。 当运营人员在履行职责时需要访问客户的帐户或相关信息时，他们会遵循正式的流程。
 
-对 Microsoft Azure 政府数据中心中部署的服务的数据的访问权限仅授予经过筛选和批准以处理符合某些政府法规和要求（如 FedRAMP、NIST 800.171 (DIB) 、ITAR、IRS 1075、DoD L4 和 CJIS）的操作人员。
+对 Microsoft Azure 政府数据中心中部署的服务的数据的访问仅授予经过筛选和批准以处理符合某些政府法规和要求（如 FedRAMP、NIST 800.171 (DIB) 、ITAR、IRS 1075、DoD L4 和 CJIS）的操作人员。
 
 ## <a name="is-data-shared-with-other-customers"></a>数据是否与其他客户共享？
 
@@ -98,7 +98,7 @@ Defender for Endpoint 在Microsoft Azure、英国或美国的数据中心运行�
 
 ### <a name="at-contract-termination-or-expiration"></a>在合同终止或到期时
 
-当许可证在宽限期或暂停模式下时，你的数据将保留，并且将可供你使用。 在此期限结束时，该数据将从 Microsoft 系统中清除，使其不可恢复，不得晚于合同终止或到期的 180 天。
+当许可证在宽限期或暂停模式下时，你的数据将保留，并且将可供你使用。 在此期限结束时，该数据将从 Microsoft 系统擦除，使其不可恢复，不得晚于合同终止或到期的 180 天。
 
 ### <a name="advanced-hunting-data"></a>高级搜寻数据
 

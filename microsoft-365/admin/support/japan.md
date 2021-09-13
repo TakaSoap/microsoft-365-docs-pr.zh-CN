@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 71a55ac413b57a28f285d9eaaad6647537339baea36582c14188ebbfd9095a13
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ccc39d25b4aa8fee662b4710f2560f4ad3dfd30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197091"
 ---
 # <a name="contact-support-for-japan"></a>联系日本支持人员
 
@@ -26,9 +26,9 @@ ms.locfileid: "53873291"
 ## <a name="phone-number"></a>电话号码
 0120 996 680 (Office 365 企业版) 
 
-0120 628 860 (其他计划) 
+0120 628 860 (计划) 
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 日语：Mon-Fri 9：00-17：00
@@ -51,7 +51,7 @@ ms.locfileid: "53873291"
 
 工作日的 9：00-17：30 提供电话技术支持。 对于高严重性问题，技术支持每周 7 天、每天 24 小时提供。
 
-备用电话编号：
+备用电话数：
 
 本地呼叫费用适用
 

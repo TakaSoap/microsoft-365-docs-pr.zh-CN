@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196535"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -40,7 +40,7 @@ ms.locfileid: "58565744"
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在Microsoft 365 Defender门户中，转到 **"搜寻**"以运行你的第一个查询。 使用以下示例：
+在Microsoft 365 Defender门户中，转到"**搜寻**"以运行你的第一个查询。 使用以下示例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -65,7 +65,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[在高级搜寻中运行此查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>描述查询并指定要搜索的表
-在查询的开头添加了一个简短注释，用于描述查询内容。 如果您稍后决定保存查询并将其与组织其他人共享，此注释将有所帮助。 
+在查询的开头添加了一个简短注释，用于描述查询内容。 如果你以后决定要保存查询并与组织中的其他人共享，这将很有用。 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -77,7 +77,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>设置时间范围
-第一个通过管道的元素是一个范围为前七天的时间筛选器。 限制时间范围有助于确保查询运行良好、返回可管理的结果，并且不会因此而省时。
+第一个通过管道的元素是一个范围为前七天的时间筛选器。 限制时间范围有助于确保查询运行良好、返回可管理的结果，并且不会超时。
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -107,7 +107,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>自定义结果列和长度 
-现在，您的查询清楚地标识了要查找的数据，您可以定义结果的外观。 `project` 返回特定列 `top` ，并限制结果数。 这些运算符有助于确保结果的格式正确，并且相当大且易于处理。
+现在，你的查询清楚地标识了要查找的数据，你可以定义结果外观。 `project` 返回特定列 `top` ，并限制结果数。 这些运算符有助于确保结果的格式正确，并且相当大且易于处理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -124,7 +124,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="learn-common-query-operators"></a>了解常见查询运算符
 
-您刚刚运行了第一个查询，对它的组件有一个一般性了解。 现在应该稍微后退一下，了解一些基础知识。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
+您刚刚运行了第一个查询，并且对它的组件有一个一般性了解。 现在应该稍微后退一下，了解一些基础知识。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
 
 | 运算符 | 说明和用法 |
 |--|--|
@@ -148,8 +148,8 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | 数据类型 | 说明和查询含义 |
 |--|--|
 | `datetime` | 通常表示事件时间戳的数据和时间信息。 [查看受支持的日期时间格式](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | UTF-8 中的字符串，括在单引号 () `'` 或双引号 `"` () 。 [阅读有关字符串的更多信息](/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | 此数据类型 `true` 支持或 `false` 状态。 [查看受支持的文字和运算符](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `string` | UTF-8 中的字符串用单引号 (`'`) 或双引号 (`"`) 括起来。 [阅读有关字符串的更多信息](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | 此数据类型支持 `true` 或 `false` 状态。 [查看受支持的文字和运算符](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | 32 位整数  |
 | `long` | 64 位整数 |
 
@@ -176,7 +176,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![高级搜寻窗口的图像。](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或查询存储库的GitHub[查询](https://aka.ms/hunting-queries)。
+>除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧的共享查询，或浏览GitHub[查询存储库。](https://aka.ms/hunting-queries)
 
 ## <a name="access-query-language-documentation"></a>访问查询语言文档
 

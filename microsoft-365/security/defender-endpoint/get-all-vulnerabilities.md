@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196339"
 ---
 # <a name="list-vulnerabilities"></a>列出漏洞
 
@@ -76,7 +76,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在正文中返回 200 OK 和漏洞列表。
+如果成功，此方法返回 200 OK，并返回正文中的漏洞列表。
 
 ## <a name="example"></a>示例
 

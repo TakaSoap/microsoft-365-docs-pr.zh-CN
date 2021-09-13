@@ -19,11 +19,11 @@ ms.custom:
 ROBOTS: noindex,nofollow
 description: 我们将为 Microsoft Defender for Office 365 发布新的警报策略。 我们还将停用已由新策略替换的两个现有警报策略。
 ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195791"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中新的警报策略
 

@@ -20,11 +20,11 @@ ms.custom:
 recommendations: false
 description: 了解如何部署具有基线保护级别的团队。
 ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196449"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 

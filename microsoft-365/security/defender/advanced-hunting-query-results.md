@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196531"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -75,7 +75,7 @@ AlertInfo
 *按严重性显示为柱形图的警报查询结果*
 
 #### <a name="alert-severity-by-operating-system"></a>按操作系统警报严重性
-您还可以使用 运算符 `summarize` 为来自多个字段的图表值准备结果。 例如，你可能想要了解警报严重性如何分布在操作系统和操作系统 (操作系统) 。 
+您还可以使用 运算符 `summarize` 为来自多个字段的图表值准备结果。 例如，你可能想要了解警报严重性如何在操作系统和操作系统之间 (操作系统) 。 
 
 下面的查询使用运算符从表中拉取操作系统信息，然后使用 计算 `join` `DeviceInfo` 和 `summarize` 列中 `OSPlatform` `Severity` 的值：
 

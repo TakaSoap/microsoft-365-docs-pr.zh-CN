@@ -15,30 +15,30 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
 ms.openlocfilehash: 66fff530d67e6211183ea5f9489dcc8497d4fb07
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195793"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧版电子数据展示搜索和保留迁移到Microsoft 365 合规中心
 
-Microsoft 365 合规中心 为电子数据展示的使用提供了改进的体验，包括：更高的可靠性、更好的性能以及针对电子数据展示工作流定制的许多功能，包括按重要情况组织内容的情况、审阅集以审阅内容和分析以帮助剔除数据进行审阅，例如近重复分组、电子邮件线程、主题分析和预测编码。
+Microsoft 365 合规中心 为电子数据展示的使用提供了改进的体验，包括：更高的可靠性、更好的性能以及针对电子数据展示工作流定制的许多功能，包括按重要方式组织内容的情况、审阅集以审阅内容和分析以帮助剔除数据进行审阅，例如近重复分组、电子邮件线程、主题分析和预测编码。
 
 为了帮助客户利用新增和改进的功能，本文提供了有关如何将 In-Place 电子数据展示搜索和保留从 Exchange 管理中心迁移到 Microsoft 365 合规中心 的基本指南。
 
 > [!NOTE]
-> 由于存在许多不同的方案，因此本文提供了转换搜索和保留搜索的常规指南，以在 Microsoft 365 合规中心。 使用电子数据展示事例并非始终必需，但是它们通过分配权限来控制谁有权访问组织中电子数据展示事例添加了额外的安全层。
+> 由于存在许多不同的方案，因此本文提供了一般指南，以将搜索和保留转换为 Microsoft 365 合规中心 中的核心电子数据展示案例。 使用电子数据展示事例并非始终必需，但是它们通过分配权限来控制谁有权访问组织中电子数据展示事例添加了额外的安全层。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-- 您必须是电子数据展示管理员角色组的成员Microsoft 365 合规中心运行本文中所述的 PowerShell 命令。 还必须是管理中心发现管理角色Exchange的成员。
+- 您必须是电子数据展示管理员角色组的成员，Microsoft 365 合规中心运行本文中所述的 PowerShell 命令。 还必须是管理中心发现管理角色Exchange的成员。
 
 - 本文提供有关如何创建电子数据展示保留的指南。 保留策略将应用于通过异步进程的邮箱。 创建电子数据展示保留时，必须同时创建 CaseHoldPolicy 和 CaseHoldRule，否则将不会创建保留，并且不会将内容位置置于保留状态。
 
 ## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>步骤 1：连接 PowerShell Exchange Online安全&合规中心 PowerShell
 
-第一步是连接到 Exchange Online 安全与&中心 PowerShell。 你可以复制以下脚本，将其粘贴到 PowerShell 窗口中，然后运行它。 系统将提示您输入要连接到的组织凭据。 
+第一步是连接到 Exchange Online PowerShell 和安全&中心 PowerShell。 你可以复制以下脚本，将其粘贴到 PowerShell 窗口中，然后运行它。 系统将提示您输入要连接到的组织凭据。 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -108,7 +108,7 @@ New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>步骤 6：验证电子数据展示保留
 
-若要确保创建保留时没有问题，请务必检查保留分配状态是否成功。 分发意味着保留已应用于上一步 *中 ExchangeLocation* 参数中指定的所有内容位置。 为此，可以运行 **Get-CaseHoldPolicy** cmdlet。 由于保存到变量$policy步骤中创建的属性不会自动更新到变量中，因此您需要重新运行 cmdlet 来验证分发是否成功。 可能需要 5 分钟到 24 小时才能成功分发案例保留策略。
+若要确保创建保留时没有问题，请务必检查保留分配状态是否成功。 分发意味着保留已应用于上一步 *中 ExchangeLocation* 参数中指定的所有内容位置。 为此，可以运行 **Get-CaseHoldPolicy** cmdlet。 由于保存到上一$policy中创建的变量的属性不会自动更新到变量中，因此您需要重新运行 cmdlet 来验证分发是否成功。 可能需要 5 分钟到 24 小时才能成功分发案例保留策略。
 
 运行以下命令以验证电子数据展示保留已成功分发。
 
@@ -130,13 +130,13 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell New-ComplianceSearch示例。](../media/MigrateLegacyeDiscovery6.png)
 
-## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤 8：在查询中验证大小写、保留和Microsoft 365 合规中心
+## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤 8：验证案例、保留和搜索Microsoft 365 合规中心
 
-若要确保所有设置正确，请转到 上显示 [https://compliance.microsoft.com](https://compliance.microsoft.com) Microsoft 365 合规中心，然后单击"电子数据展示>**核心"。**
+若要确保所有内容都正确设置，请转到 上Microsoft 365 合规中心，然后单击"电子数据展示> [https://compliance.microsoft.com](https://compliance.microsoft.com) **核心"。**
 
 ![Microsoft 365合规中心电子数据展示。](../media/MigrateLegacyeDiscovery7.png)
 
-在步骤 3 中创建的案例在核心电子 **数据** 展示页面上列出。 打开案例，然后注意你在"保留"选项卡上列出的步骤 4 中创建 **的** 保留。您可以选择保留以查看飞出页面上的详细信息，包括应用保留的邮箱数和分发状态。
+在步骤 3 中创建的案例在核心电子 **数据** 展示页面上列出。 打开案例，然后注意你在"保留"选项卡上列出的步骤 4 **中创建的** 保留。您可以选择保留以查看飞出页面上的详细信息，包括应用保留的邮箱数和分发状态。
 
 ![电子数据展示保留Microsoft 365 合规中心。](../media/MigrateLegacyeDiscovery8.png)
 
@@ -146,7 +146,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 如果迁移In-Place电子数据展示搜索，但不将其与电子数据展示案例关联，它将在"内容搜索"页上Microsoft 365 合规中心。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 有关管理中心In-Place电子数据&保留Exchange，请参阅：
   
@@ -170,4 +170,4 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- 有关此Microsoft 365 合规中心，请参阅概述[Microsoft 365 合规中心。](microsoft-365-compliance-center.md)
+- 有关此Microsoft 365 合规中心，请参阅概述[Microsoft 365 合规中心](microsoft-365-compliance-center.md)。

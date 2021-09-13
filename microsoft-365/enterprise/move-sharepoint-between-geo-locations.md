@@ -16,11 +16,11 @@ f1.keywords:
 description: 了解如何将网站SharePoint多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196104"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -80,7 +80,7 @@ SharePoint 站点地理位置移动要求你通过站点所在的地理位置中
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint显示命令的"联机命令行管理Connect-SPOService窗口。](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint显示命令的联机命令行管理Connect-SPOService窗口。](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>验证环境
 

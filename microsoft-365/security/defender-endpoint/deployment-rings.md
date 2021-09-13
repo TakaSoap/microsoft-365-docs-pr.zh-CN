@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 55b1e33483b4ba9d3480b1e1c1c8dc2f37557039
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222271"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -46,7 +46,7 @@ ms.locfileid: "58571851"
 
 ![部署圈的图像。](images/deployment-rings.png)
 
-基于圈的方法用于标识一组要载入的终结点，并验证是否满足特定条件，然后再继续将服务部署到更大的设备集。 你可以定义每个圈的退出条件，并确保它们满足，然后再移动到下一个圈。
+基于圈的方法用于标识要载入的一组终结点，并验证是否满足特定条件，然后再继续将服务部署到更大的设备集。 你可以定义每个圈的退出条件，并确保它们满足，然后再移动到下一个圈。
 
 采用基于圈的部署有助于减少推出服务时可能出现的潜在问题。 通过先试用一定数量的设备，你可以识别潜在问题并减少可能出现的潜在风险。
 
@@ -90,7 +90,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 |终结点|部署工具|
 |---|---|
-|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> **注意**：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。 <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <p> **注意**：如果要在生产环境中部署 10 台以上设备，请改为使用组策略方法或下面列出的其他支持的工具。 <p> [组策略](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI 脚本](configure-endpoints-vdi.md) <p> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[本地脚本](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [移动设备管理](mac-install-with-other-mdm.md)|
 |**Linux Server**|[本地脚本](linux-install-manually.md) <p> [百分百](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[基于应用](ios-install.md)|
@@ -103,7 +103,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 使用以下材料选择最适合贵组织的适用于终结点的 Microsoft Defender 体系结构。
 
-|**项目**|**说明**|
+|**Item**|**说明**|
 |:-----|:-----|
 |[![适用于终结点部署策略的 Microsoft Defender 缩略图。](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>
 
@@ -111,7 +111,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 ### <a name="windows-endpoints"></a>Windows终结点
 
-对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划 ( (**SUVP**) 在修补) 星期二之前，选择要提前测试几台计算机。
+对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划或 SUVP) ) 在修补 (之前选择多台计算机进行 **(测试**。
 
 有关详细信息，请参阅：
 

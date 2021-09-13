@@ -16,18 +16,18 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解管理组、Microsoft 365和Teams中的SharePoint。
-ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196444"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 组、Teams 和 SharePoint
 
 有许多控件使您能够控制用户如何访问组、团队和团队中的SharePoint。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
 
-下表提供了一个快速参考，这些访问控制可用于Microsoft 365。 以下各节提供了进一步的信息。
+下表提供了一个快速参考，该参考可用于Microsoft 365。 以下各节提供了进一步的信息。
 
 |类别|说明|参考|
 |:-------|:----------|:--------|
@@ -53,7 +53,7 @@ ms.locfileid: "53853003"
 |用户管理|||
 ||定期查看团队和组成员身份。|[什么是 Azure AD 访问评审？](/azure/active-directory/governance/access-reviews-overview)|
 ||自动管理对组和团队的访问。|[什么是 Azure AD 权利管理？](/azure/active-directory/governance/entitlement-management-overview)|
-||允许或阻止用户创建专用频道Teams。|[管理频道中私人频道的Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
+||允许或阻止用户创建专用频道Teams。|[管理专用频道在Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>成员身份
 
@@ -61,7 +61,7 @@ ms.locfileid: "53853003"
 
 - [在部署中管理私人团队Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
-你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用你在Azure Active Directory定义的元数据来控制哪些用户是该组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
+你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用你在 Azure Active Directory定义的元数据来控制哪些用户是该组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
 
 - [在动态组中创建或更新Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
@@ -96,7 +96,7 @@ SharePoint网站提供除组或团队成员身份外添加所有者、成员和�
 
 ## <a name="guest-access"></a>来宾访问权限
 
-你可以根据来宾的电子邮件地址的域来限制来宾。 SharePoint组织范围内和特定于站点的域限制设置。 组和Teams Azure AD 中的域允许和拒绝列表。 请确保配置这两个设置以避免不必要的共享，并确保一致的用户体验：
+你可以根据来宾的电子邮件地址的域来限制来宾。 SharePoint组织范围的域限制设置和特定于站点的域限制设置。 组和Teams Azure AD 中的域允许列表和拒绝列表。 请确保配置这两个设置以避免不必要的共享，并确保一致的用户体验：
 
 - [按域限制 SharePoint 和 OneDrive 内容的共享](/sharepoint/restricted-domains-sharing)
 
@@ -110,15 +110,15 @@ Microsoft 365任何人共享链接允许匿名 *共享文件和文件夹*。 *�
 
 - [设置“任何人”链接的到期日期](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)
 
-共享文件或文件夹时，用户可以从多个链接类型中选择。 若要降低意外不当共享的风险，可以更改共享时向用户显示的默认链接类型。 例如，将默认值从"任何人"链接（允许匿名访问）更改到"组织人员"链接可降低不需要的外部共享敏感信息的风险：
+共享文件或文件夹时，用户可以从多个链接类型中选择。 若要降低意外不恰当的共享风险，可以更改在用户共享时显示的默认链接类型。 例如，将默认值从"任何人"链接（允许匿名访问）更改到"组织人员"链接可降低不需要的外部共享敏感信息的风险：
 
 - [更改网站的默认链接类型](/sharepoint/change-default-sharing-link)
 
-如果组织具有需要与来宾共享的敏感数据，但担心共享不当，可以将文件和文件夹的外部共享限制为指定安全组的成员。 这样，您可以将外部共享限制为特定人员组，或要求用户在将适当的外部共享添加到安全组之前接受有关相应外部共享的培训：
+如果组织具有需要与来宾共享的敏感数据，但担心共享不当，可以将文件和文件夹的外部共享限制为指定安全组的成员。 这样，您可以将外部共享限制为特定组人员，或要求用户在将适当的外部共享添加到安全组之前接受有关相应外部共享的培训：
 
 - [将外部共享限制为指定安全组](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-组和Teams具有允许或拒绝来宾访问的组织级别设置。 虽然可以使用 [Microsoft PowerShell](per-group-guest-access.md)限制对特定团队或组的来宾访问，但我们建议通过敏感度标签执行此操作。 使用敏感度标签，你可以根据应用的标签自动允许或拒绝来宾访问：
+组和Teams具有允许或拒绝来宾访问的组织级别设置。 虽然可以使用 [Microsoft PowerShell](per-group-guest-access.md)限制来宾访问特定团队或组，但我们建议通过敏感度标签执行此操作。 使用敏感度标签，你可以根据应用的标签自动允许或拒绝来宾访问：
 
 - [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -148,7 +148,7 @@ Microsoft 365提供了许多不同的信息共享方法。 如果你有敏感信
 
 - [什么是 Azure AD 访问评审？](/azure/active-directory/governance/access-reviews-overview)
 
-许多组织与其他组织或重要供应商建立了业务合作关系，他们与之深度协作。 在这些情况下，管理用户和访问资源可能充满挑战。 请考虑自动执行一些用户管理任务，甚至将其中一些任务转换到合作伙伴组织：
+许多组织与其他组织或重要供应商建立了业务合作关系，他们与之深度协作。 在这些情况下，管理用户和访问资源可能会面临挑战。 请考虑自动执行一些用户管理任务，甚至将其中一些任务转换到合作伙伴组织：
 
 - [什么是 Azure AD 权利管理？](/azure/active-directory/governance/entitlement-management-overview)
 

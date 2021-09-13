@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b13c8553f942f4b6932361fd91e78e528d255cee7db5e5cb91e47aa9cd294259
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0f167e1634071eefe6a5563bc1ed0fe92cfcc2d6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196219"
 ---
 # <a name="contact-support-for-singapore"></a>联系新加坡支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53901139"
 ## <a name="phone-number"></a>电话号码
 1 800 622 1856
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 6 点

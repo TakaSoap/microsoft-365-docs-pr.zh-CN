@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222386"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -35,13 +35,13 @@ ms.locfileid: "58532915"
 
 本节指导您完成正确实现条件访问需要执行的所有步骤。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 > [!WARNING]
 > 需要注意的是，此方案不支持已注册 Azure AD 的设备。</br>
 > 仅支持 Intune 注册的设备。
 
-你需要确保所有设备都注册到 Intune 中。 可以使用以下任一选项在 Intune 中注册设备：
+你需要确保你的所有设备都注册到 Intune 中。 可以使用以下任一选项在 Intune 中注册设备：
 
 - IT 管理员：若要详细了解如何启用自动注册，请参阅Windows[注册](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 - 最终用户：若要详细了解如何在 Intune 中注册 Windows 10 设备，请参阅在[Intune 中](/intune/quickstart-enroll-windows-device)注册 Windows 10 设备
@@ -51,7 +51,7 @@ ms.locfileid: "58532915"
 
 请注意访问这些门户和实现条件访问所需的角色：
 
-- **Microsoft 365 Defender** - 你需要使用一个帐户登录门户全局管理员角色启用集成。
+- **Microsoft 365 Defender** - 你需要使用一个 全局管理员角色 登录门户以打开集成。
 - **Intune** - 你需要使用具有管理权限的安全管理员权限登录门户。
 - **Azure AD 门户** - 你需要以全局管理员、安全管理员或条件访问管理员登录。
 
@@ -76,15 +76,15 @@ ms.locfileid: "58532915"
 
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择 **设备合规性** \> **Microsoft Defender ATP**。
-3. 将 **连接 Windows 10.0.15063+** 设备设置为打开 Microsoft Defender 高级威胁 **防护**。
-4. 单击“保存”。
+3. 将 **连接 Windows 10.0.15063+** 设备设置为 **"** 打开"。。
+4. 单击“**保存**”。
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步骤 3：在 Intune 中创建合规性策略
 
 1. 在 [Azure 门户中](https://portal.azure.com)，选择 **"所有服务"，** 筛选 **Intune，** 然后选择"Microsoft Intune"。 
 2. 选择 **"设备合规性** \> **策略** \> **""创建策略"。**
 3. 输入"**名称"** 和"**说明"。**
-4. 在 **平台** 中，选择 **Windows 10和更高版本**。
+4. 在 **"平台**"中 **，Windows 10和更高版本。**
 5. 在 **"设备运行状况** "设置中，将"要求设备位于设备威胁级别或以下设备威胁级别 **"设置为首选** 级别：
 
    - **Secured：** 此级别是最安全级别。 设备无法具有任何现有威胁，并且仍访问公司资源。 如果发现任何威胁，则评估设备不相容。
@@ -92,12 +92,12 @@ ms.locfileid: "58532915"
    - **中**：如果设备上发现的威胁较低或中等，则设备合规。 如果检测到高级威胁，则设备被确定为不符合要求。
    - **高**：此级别最不安全，允许所有威胁级别。 因此，具有高、中或低威胁级别的设备被视为兼容设备。
 
-6. 选择 **"确定**"，然后 **"** 创建"保存 (并创建策略) 。
+6. 选择 **"确定**"和" **创建** "以保存 (并创建策略) 。
 
 ### <a name="step-4-assign-the-policy"></a>步骤 4：分配策略
 
 1. 在 [Azure 门户中](https://portal.azure.com)，选择 **"所有服务"，** 筛选 **Intune，** 然后选择"Microsoft Intune"。 
-2. 选择 **设备合规性** \> **策略**>选择你的 Microsoft Defender 终结点合规性策略。
+2. 选择 **设备合规性** \> **策略**>选择适用于终结点的 Microsoft Defender 合规性策略。
 3. 选择“**分配**”。
 4. 包括或排除 Azure AD 组，以为其分配策略。
 5. 若要将策略部署到组，请选择"保存 **"。** 针对策略的目标用户设备进行评估是否符合合规性。
@@ -106,7 +106,7 @@ ms.locfileid: "58532915"
 
 1. 在 [Azure 门户中，](https://portal.azure.com)打开 **Azure Active Directory** \> **条件访问** \> **新策略"。**
 2. 输入策略"**名称"，** 然后选择"**用户和组"。** 使用包含或排除选项为策略添加组，**然后选择完成。**
-3. 选择 **"云** 应用"，然后选择要保护的应用。 例如，选择 **"选择应用"，** 然后选择 **"Office 365 SharePoint Online"，** 然后选择 **"Office 365 Exchange Online"。** 选择“**完成**”以保存更改。
+3. 选择 **"云** 应用"，然后选择要保护的应用。 例如，选择 **选择应用，** 然后选择Office 365 SharePoint **在线****和Office 365 Exchange Online。** 选择“**完成**”以保存更改。
 
 4. 选择 \> **条件 客户端应用**，将策略应用于应用和浏览器。 例如，选择"**是"，** 然后启用 **"浏览器** 和 **移动应用和桌面客户端"。** 选择“**完成**”以保存更改。
 
@@ -114,6 +114,6 @@ ms.locfileid: "58532915"
 
 6. 选择 **"启用策略**"，然后选择" **创建** "保存更改。
 
-有关详细信息，请参阅在 [Intune](/intune/advanced-threat-protection)中通过条件访问强制 Microsoft Defender for Endpoint 的合规性。
+有关详细信息，请参阅在 Intune 中强制执行 [Microsoft Defender for Endpoint 的合规性和条件访问](/intune/advanced-threat-protection)。
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)。

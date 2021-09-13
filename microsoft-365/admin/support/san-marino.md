@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 99577a508f4040e891f34dbde0dba73088197436865358d0381537ff469351f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: debafb5031183f4650131807228d743a9a84debd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197074"
 ---
 # <a name="contact-support-for-san-marino"></a>联系圣地亚哥的支持人员
 
@@ -26,16 +26,16 @@ ms.locfileid: "53901307"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5154
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 意大利语：Mon-Fri上午 10 点到下午 6 点
 
-英语：Mon-Fri 10 AM-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 
-意大利语：Mon-Fri上午 9 点到晚上 10 点
+意大利语：Mon-Fri上午 9 点到下午 10 点
 
 英语：全天候
 

@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: 了解如何在 PowerShell 中使用不同的模块来删除Microsoft 365用户帐户。
 ms.openlocfilehash: 30d69fa8a65207b7eb73bfc36d36733789fcb72f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195754"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
@@ -93,7 +93,7 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 >PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 从 Windows PowerShell 运行这些 cmdlet。
 >
 
-本示例删除用户帐户 *BelindaN@litwareinc.com。*
+此示例删除用户帐户 *BelindaN@litwareinc.com。*
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com

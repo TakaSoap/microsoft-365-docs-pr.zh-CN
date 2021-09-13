@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 了解适用于 Yammer 的保留策略。
 ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196915"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 

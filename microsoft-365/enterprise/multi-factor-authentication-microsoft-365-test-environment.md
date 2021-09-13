@@ -15,19 +15,20 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
-description: 使用发送到适用于企业测试环境的 Microsoft 365智能手机配置多重身份验证。
-ms.openlocfilehash: 92c60819c2e32661b4af9cfba76553c59b784519
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+- admindeeplinkMAC
+description: 使用发送到适用于企业测试环境的 Microsoft 365 智能手机配置多重身份验证。
+ms.openlocfilehash: 1c04729c65df455a05e37fe8d0ec6477ba251627
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195748"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365多重身份验证
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
 
-若要为登录 Microsoft 365 或任何将 Azure AD 租户用于订阅的服务或应用程序提供一个额外的安全级别，可以启用 Azure AD 多重身份验证，该身份验证不仅需要用户名和密码来验证帐户。
+若要为登录 Microsoft 365 或任何将 Azure AD 租户用于订阅的服务或应用程序提供额外安全级别，可以启用 Azure AD 多重身份验证，这不仅仅是需要用户名和密码来验证帐户。
 
 使用多重身份验证，用户必须确认电话呼叫、键入短信发送的验证码，或在正确输入密码后验证智能手机上的应用是否进行身份验证。 只有在满足第二个身份验证因素后，他们才能登录。
   
@@ -41,7 +42,7 @@ ms.locfileid: "58570721"
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -56,9 +57,9 @@ ms.locfileid: "58570721"
 
 通过以下步骤为 User 2 帐户启用多重身份验证：
   
-1. 打开浏览器的单独专用实例，转到 Microsoft 365 管理中心 () ，然后使用全局管理员 [https://portal.microsoft.com](https://portal.microsoft.com) 帐户登录。
+1. 打开浏览器的单独专用实例，转到Microsoft 365 管理中心 () ，然后 [https://portal.microsoft.com](https://portal.microsoft.com) 使用全局管理员帐户登录。
     
-2. 在左侧导航栏中，选择"**用户**  >  **""活动用户"。**
+2. 在左侧导航栏中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
     
 3. 在"活动用户"窗格中，选择 **"多重身份验证"。**
     
@@ -98,7 +99,7 @@ ms.locfileid: "58570721"
     
 8. 如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。 输入原始密码和新密码两次，然后选择更新 **密码并登录**。 将新密码记录在安全位置。
     
-    你应该在浏览器Office主页"选项卡上看到用户 2  Microsoft Office门户。
+    你应该在浏览器的Office主页"选项卡上看到用户 2  Microsoft Office门户。
 
 ## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>阶段 3：使用条件访问策略启用和测试多重身份验证
 
@@ -108,7 +109,7 @@ ms.locfileid: "58570721"
 
 接下来，创建一个名为 MFAUsers 的新组，并添加 User 3 帐户。
 
-1. 在 **"Microsoft 365 管理中心"** 选项卡上，选择左侧导航中的"组"，然后选择"组 **"。**
+1. 在 **"Microsoft 365 管理中心"** 选项卡上，选择左侧导航中的"组"，然后选择"组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"。**</a>
 2. 选择 **"添加组"。**
 3. 在"**选择组类型"窗格中**，选择"**安全性"，** 然后选择"下一 **步"。**
 4. 在"**设置基础知识"窗格中**，选择"**创建组**"，然后选择"关闭 **"。**
@@ -120,7 +121,7 @@ ms.locfileid: "58570721"
 接下来，创建条件访问策略，要求 MFAUsers 组的成员进行多重身份验证。
 
 1. 在浏览器的新选项卡中，转到 [https://portal.azure.com](https://portal.azure.com) 。
-2. 选择 **Azure Active Directory**  >  **安全**  >  **条件访问"。**
+2. 选择 **Azure Active Directory**  >    >  **安全条件访问"。**
 3. 在"**条件访问 – 策略"** 窗格中，选择"**新建策略"。**
 4. 在"**新建**"窗格中，在"名称"**框中输入用户帐户的 MFA。** 
 5. 在"**分配"** 部分，选择"**用户和组"。**

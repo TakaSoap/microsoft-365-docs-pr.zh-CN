@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 564afed2c10d232076bf6875e035bcf03ea7712ada2b430729f4a936a675b8bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b59ff2a32ef5a067576c43b9b0a394590e30b666
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196542"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>通过高级搜寻主动搜寻Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "53833191"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-高级搜寻是基于查询的威胁搜寻工具，允许你浏览最多 30 天的原始数据。 你可以主动检查网络中事件，以查找威胁指示器和实体。 通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。
+高级搜寻是基于查询的威胁搜寻工具，允许你浏览最多 30 天的原始数据。 你可以主动检查网络中的事件来找到威胁指示器和实体。 通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。
 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
@@ -77,10 +77,10 @@ ms.locfileid: "53833191"
 
 
 ## <a name="data-freshness-and-update-frequency"></a>数据新鲜度和更新频率
-高级搜寻数据可以分为两种不同的类型，每种类型合并的方式不同。
+可以将高级搜寻数据分类为两种不同的类型，每种类型以不同的方式合并。
 
-- **事件或活动数据**- 填充有关警报、安全事件、系统事件和例程评估的表。 高级搜寻在收集它们传感器将其成功传输到相应的云服务后，几乎会立即收到此数据。 例如，在 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 上提供事件数据后，你几乎可以在工作站或域控制器上立即查询来自正常传感器的事件数据。
-- **实体** 数据 - 使用有关用户和设备的信息填充表。 此数据来自相对静态数据源和动态源，如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
+- **事件或活动数据**- 填充有关警报、安全事件、系统事件和常规评估的表。 高级搜寻几乎会在成功收集这些数据的传感器之后立刻将这些数据传输到相应的云服务。 例如，在 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 上提供事件数据后，你几乎可以在工作站或域控制器上立即查询来自正常传感器的事件数据。
+- **实体** 数据 - 使用有关用户和设备的信息填充表。 此数据来自相对静态的数据源和动态源，例如 Active Directory 条目和事件日志。 为了提供最新数据，表格每 15 分钟更新一次任何新信息，并添加可能未完全填充的行。 每 24 小时合并一次数据，以插入包含有关每个实体的最新、最全面的数据集的记录。
 
 ## <a name="time-zone"></a>时区
 高级搜寻中的时间信息采用 UTC 时区。

@@ -17,13 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195962"
 ---
-# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置Microsoft 365 Defender以将高级搜寻事件流式传输存储帐户
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置Microsoft 365 Defender将高级搜寻事件流式传输存储帐户
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,24 +33,24 @@ ms.locfileid: "58563798"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 1. 在[租户存储](/azure/storage/common/storage-account-overview)帐户。
 
-2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>资源>注册到 **Microsoft.Insights。**
+2. 登录到 Azure 租户 [，](https://ms.portal.azure.com/)转到订阅>**你的订阅>资源>注册到 Microsoft.Insights。**
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
-1. 以 * 全局Microsoft 365 Defender () _* 安全管理员 **登录 <https://security.microsoft.com> 安全门户。
+1. 以 * 全局Microsoft 365 Defender () _* 安全管理员 **登录到 <https://security.microsoft.com> 安全门户。
 
-2. 转到 **"设置Microsoft 365 Defender** \>  \> **流式处理 API"。** 若要直接转到流 **式处理 API** 页面，请使用 <https://security.microsoft.com/settings/mtp_settings/raw_data_export> 。
+2. 转到 \> **设置Microsoft 365 Defender** \> **流式处理 API。** 若要直接转到流 **式处理 API** 页面，请使用 <https://security.microsoft.com/settings/mtp_settings/raw_data_export> 。
 
 3. 单击“**添加**”。
 
 4. 在出现的 **"添加新的流式 API** 设置"飞出中，配置以下设置：
    1. **名称**：选择新设置的名称。
    2. 选择 **转发事件以Azure 存储。**
-   3. 在出现的 **存储帐户资源 ID"** 框中，存储 **帐户资源 ID"。** 若要获取存储 **帐户资源 ID，** 请在 中打开 Azure 门户，单击"存储帐户"转到"属性"选项卡，复制"帐户存储 <https://portal.azure.com>  \> \> **ID"下的文本**。
+   3. 在出现的 **存储帐户资源 ID"** 框中，存储 **帐户资源 ID"。** To get your **存储 Account Resource ID，** open the Azure portal at <https://portal.azure.com> ， click 存储 **accounts** go to the properties tab copy the text under \> 存储 Account Resource \> **ID**.
 
       ![事件中心资源 ID1 的图像。](../defender-endpoint/images/storage-account-resource-id.png)
 
@@ -79,13 +79,13 @@ ms.locfileid: "58563798"
 
 - 每行都包含事件名称、Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为"properties"的属性。
 
-- 有关事件架构Microsoft 365 Defender，请参阅[高级搜寻概述](../defender/advanced-hunting-overview.md)。
+- 有关事件架构Microsoft 365 Defender，请参阅高级搜寻[概述](../defender/advanced-hunting-overview.md)。
 
 ## <a name="data-types-mapping"></a>数据类型映射
 
 为了获取事件属性的数据类型，请执行下列操作：
 
-1. 登录到搜索Microsoft 365 Defender门户 <https://security.microsoft.com> () 转到搜寻 \> **高级搜寻**。 若要直接转到高级 **搜寻页面** ，请使用<security.microsoft.com/advanced-hunting>。
+1. 登录到搜索Microsoft 365 Defender门户 <https://security.microsoft.com> () 转到搜寻 \> **高级搜寻**。 若要直接转到高级 **搜寻** 页面，请使用<security.microsoft.com/advanced-hunting>。
 
 2. 在" **查询** "选项卡上，运行以下查询，获取每个事件的数据类型映射：
 

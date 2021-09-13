@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222276"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -82,9 +82,9 @@ Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供以下值 (所有请求) ：
+在请求正文中，提供以下值 (所有项) ：
 
-属性 | 类型 | 说明
+属性 | 类型 | 描述
 :---|:---|:---
 eventTime | DateTime (UTC)  | 事件作为字符串的精确时间，从高级搜寻获取。 例如， ```2018-08-03T16:45:21.7115183Z``` **必需**。
 reportId | String | 事件的 reportId，从高级搜寻获取。 **必需**。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6540fc02d90fda1aa63710eecc1f886f14c7d37bfe70a95d5c66dcf907018292
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a49295700ca31bca2deddb5c8a940213884657ff
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843811"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197171"
 ---
 # <a name="contact-support-for-antigua-and-barbuda"></a>联系适用于百里达和百里达的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53843811"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5145
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

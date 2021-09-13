@@ -11,19 +11,19 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: feba220d4e31443c85e600a7ab367a5f3c970e16
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196716"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备打印资源
 
-当你准备好注册打印Microsoft 托管桌面，你应该评估打印要求并确定适合你的环境的方法。 有三个选项：
+当你准备好注册Microsoft 托管桌面，你应该评估打印要求并确定适合你的环境的方法。 有三个选项：
 
 - 部署 Microsoft 通用打印解决方案，使设备Microsoft 托管桌面发现打印机。 有关详细信息，请参阅 [什么是通用打印](/universal-print/fundamentals/universal-print-whatis)。
 - 使用自定义 PowerShell 脚本直接部署打印机。 按照设置本地打印机 [部分中的步骤](#set-up-local-printers) 操作。
-- 使用与加入域的 Windows 10 兼容的非 Microsoft 云打印Azure Active Directory解决方案。 解决方案必须满足软件要求，Microsoft 托管桌面。 有关详细信息，请参阅Microsoft 托管桌面[应用要求](../service-description/mmd-app-requirements.md)。
+- 使用与加入域的 Windows 10 兼容的非 Microsoft 云打印Azure Active Directory解决方案。 解决方案必须满足软件要求，Microsoft 托管桌面。 有关详细信息，请参阅应用[Microsoft 托管桌面要求](../service-description/mmd-app-requirements.md)。
  
 在所有情况下，如果打印机驱动程序在 Microsoft 更新或 Microsoft Store 中不可用，你必须自己获取它们，然后将它们打包，以使用 Microsoft Intune 部署到 Microsoft 托管桌面 设备。 有关详细信息，请参阅 [Intune 独立 - Win32 应用管理](/mem/intune/apps/apps-win32-app-management)
 
@@ -43,7 +43,7 @@ ms.locfileid: "58364909"
 
 1. 查看 [托管桌面应用](prerequisites.md)。
 2. 运行 [准备情况评估工具](readiness-assessment-tool.md)。
-1. 购买[公司门户](../get-started/company-portal.md)。
+1. 购买 [公司门户](../get-started/company-portal.md)。
 1. 查看 [来宾帐户的先决条件](guest-accounts.md)。
 1. 检查 [网络配置](network.md)。
 1. [准备证书和网络配置文件](certs-wifi-lan.md)。

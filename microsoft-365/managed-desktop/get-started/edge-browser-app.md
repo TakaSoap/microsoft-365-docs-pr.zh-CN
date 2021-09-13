@@ -1,6 +1,6 @@
 ---
 title: 新版 Microsoft Edge
-description: 介绍如何部署和更新新的 Edge 浏览器
+description: 说明如何部署和更新新的 Edge 浏览器
 keywords: 浏览器， Microsoft 托管桌面， Microsoft 365， 服务， 文档
 ms.service: m365-md
 author: jaimeo
@@ -10,22 +10,22 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8ba59668f0f2571a2ce03fcbbb6eac68fb8f63f77416585d021c6fcf22387795
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196694"
 ---
 # <a name="new-microsoft-edge-app"></a>新建Microsoft Edge应用
 
-新[Microsoft Edge浏览器](https://www.microsoft.com/edge)提供了世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 Microsoft 托管桌面提供环境中新边缘浏览器部署的公共预览版。
+浏览器[Microsoft Edge浏览器](https://www.microsoft.com/edge)提供了世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 Microsoft 托管桌面提供环境中新边缘浏览器部署的公共预览版。
 
 ## <a name="initial-deployment"></a>初始部署
 
 若要将 Microsoft 托管桌面 设备迁移到新的 Microsoft Edge 浏览器，请通过 Microsoft 托管桌面 门户提交 IT 支持票证。 当你提交票证时，我们会将 Edge Stable 渠道部署到测试组，然后每 24 小时在每个后续部署组中部署它。 若要暂停部署，请提出另一个请求操作保留的票证。
 
-还可 [根据](/deployedge/microsoft-edge-channels#beta-channel) 请求在组织中进行代表性验证，使用 Beta 渠道。 Microsoft 托管桌面测试组和第一组部署应用程序，以便所有这些用户除了具有稳定渠道之外，还具有 Beta 渠道。 对于需要访问 Beta 渠道的任何其他用户，将其添加到"新式工作区 **- Edge Beta** 用户"组，并让他们从 公司门户
+还可 [根据](/deployedge/microsoft-edge-channels#beta-channel) 请求在组织中进行代表性验证，使用 Beta 渠道。 Microsoft 托管桌面将应用部署到测试和第一组，以便所有这些用户除了具有稳定渠道之外，还具有 Beta 渠道。 对于需要访问 Beta 渠道的任何其他用户，将其添加到"新式工作区 **- Edge Beta** 用户"组，并让他们从 公司门户
 
 ## <a name="updates-to-microsoft-edge"></a>更新Microsoft Edge
 
@@ -48,7 +48,7 @@ Microsoft 托管桌面创建了一组默认策略，Microsoft Edge保护浏览�
 #### <a name="extension-installation-blocklist"></a>扩展安装阻止列表
 **默认值：** 全部
 
-Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 与扩展模型相关的已知风险Chromium包括数据丢失保护、隐私和其他可能损害设备的风险。 
+Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在与扩展Chromium相关的已知风险，包括数据丢失保护、隐私和其他可能损害设备的风险。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许在没有管理员权限的情况下安装 (级本机消息传递) 
 
@@ -88,7 +88,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 **默认值：** 已启用
 
-建议不要禁用此设置，因为这样将允许用户忽略警告并完成未经验证的下载。
+建议不要禁用此设置，因为这将允许用户忽略警告和完成未经验证的下载。
 
 ### <a name="adobe-flash"></a>Adobe Flash
 
@@ -107,7 +107,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 默认情况下，密码管理器处于禁用状态。 如果你希望启用此功能，请提出支持请求，我们的服务工程师可以在你的环境中启用该设置。 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer模式Microsoft Edge
-Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并且对不依赖 IE 功能或依赖 IE 功能的网站使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎。 [了解详细信息](/DeployEdge/edge-ie-mode) 
+Microsoft Edge 上的 IE 模式使你能够轻松地在单一浏览器中使用组织所需的所有网站。 它使用与 Chromium 呈现引擎兼容的网站的集成 Chromium 引擎，并使用 Internet Explorer 11 (IE11) 中的 Trident MSHTML 引擎来访问不依赖于 IE 功能或依赖 IE 功能的网站。 [了解详细信息](/DeployEdge/edge-ie-mode) 
 
 Microsoft 托管桌面为Internet Explorer启用设备模式 
 
@@ -117,7 +117,7 @@ Microsoft 托管桌面为Internet Explorer启用设备模式
 默认情况下，设备设置为使用Internet Explorer模式，但你可以将其设置为改为在独立 Internet Explorer 11 窗口中打开网站。 若要更改此行为，请提出支持请求。
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>将站点添加到Enterprise站点列表
-若要在网站模式下Internet Explorer，您必须将它们包括在"网站Enterprise[列表中](/DeployEdge/edge-ie-mode-sitelist)。 维护和部署网站Enterprise由你负责。 有关详细信息，请参阅[使用配置模式站点Enterprise配置](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+若要在网站模式下Internet Explorer，必须将它们包括在"网站Enterprise[列表中](/DeployEdge/edge-ie-mode-sitelist)。 维护和部署网站Enterprise由你负责。 有关详细信息，请参阅[使用配置模式站点Enterprise配置](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>其他设置
 
@@ -137,20 +137,20 @@ Microsoft 托管桌面基本身份验证或摘要式身份验证方案。
 
 **默认值：** 自动从默认浏览器导入所有受支持的数据类型和设置 
 
-应用此策略后，首次运行体验将跳过导入部分，从而最大限度地减少用户交互。 来自旧版浏览器的浏览器数据Microsoft Edge在首次运行时始终以静默方式迁移，无论此设置如何。 
+应用此策略后，首次运行体验将跳过导入部分，从而最大限度地减少用户交互。 来自早期版本的 Microsoft Edge的浏览器数据将始终在首次运行时以静默方式迁移，无论此设置如何。 
 
 
 ## <a name="settings-you-manage"></a>设置管理
 
-可以使用管理模板Microsoft Edge部署之前未介绍的任何Microsoft Intune。 有关详细信息，请参阅 Configure [Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)。 如果你想要评估当前未包含在 Intune Microsoft Edge 管理模板中的策略，可以在 Intune 中为 Windows 10 设备使用自定义设置。
+可以使用管理模板配置文件部署Microsoft Edge之前未介绍的任何Microsoft Intune。 有关详细信息，请参阅 Configure [Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)。 如果你想要评估当前未包含在 Intune Microsoft Edge 管理模板中的策略，可以在 Intune 中为 Windows 10 设备使用自定义设置。
 
 ### <a name="enabling-specific-chrome-extensions"></a>启用特定 Chrome 扩展
 
-管理模板提供了一个设置，用于部署特定 Chrome Microsoft Intune。 可以在计算机配置> Microsoft Edge >扩展>允许安装特定 **扩展）中查找它**。
+管理模板提供了一个设置，用于部署特定 Chrome Microsoft Intune。 可以在计算机配置> Microsoft Edge >**扩展>允许安装特定扩展）中查找。**
 
 ### <a name="install-extensions-silently"></a>以静默方式安装扩展
 
-您还可以使用管理模板来设置Microsoft Edge安装扩展而不通知用户。 可以在计算机配置> Microsoft Edge >**扩展>控制以** 静默方式安装哪些扩展。
+您还可以使用管理模板来设置Microsoft Edge安装扩展而不通知用户。 可以在计算机配置> Microsoft Edge >**扩展>控制** 以静默方式安装哪些扩展。
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge更新策略
 若要确保正确Microsoft Edge，请不要修改更新Microsoft Edge[策略](/deployedge/microsoft-edge-update-policies)。

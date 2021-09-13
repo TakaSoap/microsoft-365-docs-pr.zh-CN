@@ -19,15 +19,15 @@ localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: 利用 OneDrive Online 中的多地理位置功能将 Microsoft 365 的触及范围扩展到多个地理区域。
 ms.openlocfilehash: 544ca44308b8a51bae19df6b54a522469ae0de3c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195740"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 和 SharePoint Online 中的多地理位置功能
 
-OneDrive 和 SharePoint Online 中的多地理位置功能支持控制共享资源，如 SharePoint 团队网站Microsoft 365存储在指定地理位置中的其余组邮箱。
+OneDrive 和 SharePoint Online 中的多地理位置功能支持控制共享资源，如 SharePoint 团队网站和存储在指定地理位置的其余 Microsoft 365 组邮箱。
 
 每个用户、组邮箱和 SharePoint 站点都有一个首选数据位置 (PDL)，表示要在其中存储相关数据的地理位置。 可将用户的个人数据（Exchange 邮箱和 OneDrive）以及用户创建的任何 Microsoft 365 组或 SharePoint 站点存储在指定地理位置，以满足数据驻留要求。 你可以[为每个地理位置指定不同的管理员](add-a-sharepoint-geo-admin.md)。
 
@@ -43,7 +43,7 @@ OneDrive 和 SharePoint Online 中的多地理位置功能支持控制共享资�
 
 当用户在多地理环境中创建与 SharePoint 组连接的网站时，他们的 PDL 将用于确定网站及其关联的组邮箱的创建地理位置。 （如果尚未设置用户的 PDL 值，或已将其设置为未配置为附属位置的地理位置，则会在中心位置创建站点和邮箱。）
 
-Microsoft 365、Exchange、OneDrive、SharePoint 和 Teams 服务不是多地理位置服务。 但是Microsoft 365创建的所有组都将使用创建者的 PDL 及其 Exchange 组邮箱进行配置，SharePoint站点将在相应的地理位置进行预配。 
+Microsoft 365、Exchange、OneDrive、SharePoint 和 Teams 服务不是多地理位置服务。 但是Microsoft 365创建的所有组都将使用创建者的 PDL 及其 Exchange 组邮箱进行配置，SharePoint 站点将在相应的地理位置中设置。 
 
 ## <a name="managing-the-multi-geo-environment"></a>管理多地理位置环境
 

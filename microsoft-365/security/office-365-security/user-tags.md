@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365警报、报告和调查之间使用标签筛选，以快速识别标记的用户。
+description: 管理员可以了解如何在 Microsoft Defender for Office 365计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365警报、报告和调查之间使用标签筛选，以快速识别带标记的用户。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d224718502725e760c6a844f3bfd289bf3dd179c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195910"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "58568044"
 - **系统标记**：目前 [，优先级帐户](../../admin/setup/priority-accounts.md) 是唯一类型的系统标记。
 - **自定义标记**：你可自己创建这些用户标记。
 
-如果你的组织拥有适用于 Office 365 计划 2 (的 Defender 或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
+如果你的组织拥有适用于 Office 365 计划 2 的 Defender (或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
 
 > [!NOTE]
 > 目前，只能将用户标记应用于邮箱用户。
@@ -47,7 +47,7 @@ ms.locfileid: "58568044"
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
 - [管理员和用户提交](admin-submission.md)
-- 对于优先级帐户，可以使用 EAC [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Exchange管理中心中的 (优先帐户) 。
+- 对于优先级帐户，可以使用 EAC [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Exchange管理中心中的"优先级帐户 (电子邮件) 。
 
 本文介绍如何在应用程序门户中配置Microsoft 365 Defender标记。 管理门户中没有任何 cmdlet Microsoft 365 Defender管理用户标记。
 
@@ -66,13 +66,13 @@ ms.locfileid: "58568044"
 
   > [!NOTE]
   >
-  > - 将用户添加到 Azure Active Directory 中的相应 Microsoft 365 管理中心 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - 用户标记管理由 Tag **Reader** 和 **Tag Manager 角色** 控制。
 
 - 还可以在安全管理中管理和监视Microsoft 365 管理中心。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
-- 有关保护管理员帐户 (_帐户_) 的信息，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
+- 有关保护 _管理员帐户 (_ 帐户) ，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>使用Microsoft 365 Defender门户创建用户标记
 
@@ -84,7 +84,7 @@ ms.locfileid: "58568044"
    - **名称**：输入标记的唯一描述性名称。 这是你将看到并使用的值。 请注意，创建标记后无法重命名它。
    - **说明**：输入标记的可选说明。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 4. 在 **"分配成员"** 页上，执行以下步骤之一：
    - 单击 ![ "添加成员"图标。](../../media/m365-cc-sc-create-icon.png) **添加成员**。 在出现的"飞出"中，执行以下任一步骤以添加单个用户或组：
@@ -100,7 +100,7 @@ ms.locfileid: "58568044"
 
    - 单击 **"** 导入"选择一个包含用户或组的电子邮件地址的文本文件。 确保文本文件每行包含一个条目。
 
-   完成后，请单击“**下一步**”。
+   完成后，单击“**下一步**”。
 
 5. 在出现的 **"审阅标记** "页上，查看设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，可以单击“**返回**”或选择向导中的特定页面。
 

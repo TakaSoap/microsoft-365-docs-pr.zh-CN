@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: 3e91a329799528eebf9de53b197c7439644b98fb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196642"
 ---
 # <a name="device-status-report"></a>设备状态报告
 
@@ -25,7 +25,7 @@ ms.locfileid: "58357394"
 我们使用这些标签报告设备状态： 
 
 - **Ready for user**： 已在服务中成功注册并准备向用户提供的设备 
-- **活动**：当前使用且已满足活动条件的设备 (六个小时，两个连续) 用于最新的安全更新版本，并且在过去五天内至少已使用 Microsoft Intune 签入一次。 
+- **活动**：当前使用且已满足活动条件的设备 (六个小时，两个连续) 用于最新的安全更新版本，并且在过去五天内至少使用 Microsoft Intune 签入一次。 
 - **已同步**：过去 28 天内使用和已使用 Intune 签入的设备 
 - **不同步**：过去 28 天内使用但尚未使用 Intune 签入的设备 
 - **其他**：类别聚合一些通常发生在设备注册期间的错误状态。 有关更多详细信息，请参阅 [设备注册疑难解答](../get-started/register-devices-self.md#troubleshooting-device-registration)。

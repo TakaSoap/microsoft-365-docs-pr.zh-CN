@@ -16,17 +16,17 @@ ms.custom:
 - Ent_TLGs
 description: 在企业测试环境中配置基于组的许可和Microsoft 365组成员身份。
 ms.openlocfilehash: 7d754b937296fbd852904022c45492b6890f2f04
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196819"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>针对企业测试环境自动Microsoft 365和组成员身份
 
 *本测试实验室指南只能用于Microsoft 365测试环境。*
 
-基于组的许可根据组成员身份自动分配或删除用户帐户的许可证。 动态组成员身份基于用户帐户属性（如部门或国家/地区）向组添加或删除 **成员**。  本文将分步演示在企业测试环境中Microsoft 365和删除组的成员。
+基于组的许可根据组成员身份自动分配或删除用户帐户的许可证。 动态组成员身份基于用户帐户属性（如部门或国家/地区）向组添加或删除 **成员**。  本文将分步演示在企业测试环境中在 Microsoft 365 中添加和删除组成员。
 
 在适用于企业测试环境的 Microsoft 365设置自动许可和动态组成员身份包括两个阶段：
 
@@ -36,7 +36,7 @@ ms.locfileid: "58572679"
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -63,18 +63,18 @@ ms.locfileid: "58572679"
    - 选择 **部门** 属性。
    - 选择 **"等于"** 运算符。
    - 在"**值"** 框中，输入 **"销售"。**
-10. 选择 **保存**。
-11. 选择 **“创建”**。
+10. 选择“**保存**”。
+11. 选择“**创建**”。
 
 接下来，配置"销售"组，以便自动为成员分配Microsoft 365 E5许可证。
 
 1. 选择"**销售"** 组，然后选择"许可证 **"。**
-2. 在"**更新许可证分配**"窗格中，**选择**"Microsoft 365 E5"，然后选择"保存 **"。**
+2. 在"**更新许可证分配"** 窗格中，选择 **"Microsoft 365 E5"，** 然后选择"保存 **"。**
 3. 在浏览器中，关闭 Azure 门户选项卡。
 
 接下来，在 User 4 帐户上测试动态组成员身份和自动许可：
 
-1. 在浏览器 **Microsoft Office主页**"选项卡中，选择"管理员 **"。**
+1. 从浏览器 **Microsoft Office** 主页"选项卡中，选择"**管理员"。**
 2. 从 **"Microsoft 365 管理中心"** 选项卡中，选择"**活动用户"。**
 3. 在" **活动用户"** 页上，选择 **"用户 4"** 帐户。
 4. 在"**用户 4"** 窗格中，为 **"产品许可证****"选择"编辑"。**

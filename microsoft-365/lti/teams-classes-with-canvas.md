@@ -14,11 +14,11 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 将Microsoft Teams与 Canvas 集成
 ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196098"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>将Microsoft Teams与 Canvas 一同使用
 
@@ -30,7 +30,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 > 当前的 Class Teams LTI 仅支持将 Canvas 用户与 Microsoft Azure Active Directory (AAD) 在有限范围内同步。 
 > - 你的租户必须具有 Microsoft 教育版许可证。
 > - 只有一个 Microsoft 租户可用于在 Canvas 和 Microsoft 之间映射用户。
-> - 在使用 Class Teams LTI 之前学校数据同步 (SDS) ，以避免重复组。
+> - 在使用 Class) LTI 之前，学校数据同步 (SDS Teams，以避免组重复。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理员
 
@@ -40,7 +40,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
 2. 选择全局 **导航** 中的"管理员"链接，然后选择您的帐户。
 
-3. 在管理导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。
+3. 在管理员导航中 **，选择**"设置"链接，然后选择"**集成"** 选项卡。
 
 4. 通过Microsoft Teams启用"同步"。
    
@@ -53,7 +53,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
    * 后缀字段是可选的，当 Canvas 属性和 Microsoft AAD 字段之间没有精确映射时，你可以指定域。 例如，如果你的 Canvas 电子邮件是"name@example.edu"，而 Microsoft AAD 中的 UPN 是"name"，则可以通过在后缀字段中输入"example.edu"来匹配用户。
    * Active Directory Lookup 属性是 Microsoft 端与 Canvas 属性匹配的字段。 在 UPN、主电子邮件地址或电子邮件别名之间选择。
 
-6. 选择 **"完成设置** 更新"。
+6. 选择 **"更新设置** 完成后更新"。
 
 7. 若要批准 Canvas 的 **Microsoft-Teams-Sync-for-Canvas** Azure 应用的访问权限，请选择"授予 **租户访问权限"** 链接。 你将被重定向到 Microsoft 标识平台管理员同意终结点。
 
@@ -81,7 +81,7 @@ Microsoft Teams课程是 Learning Tools Interoperability (LTI) 应用，可帮�
 
 4. 输入提供的客户端 ID，然后选择"提交 **"。**
 
-   你将注意到客户端 ID Microsoft Teams LTI 应用名称的类别进行确认。
+   你将注意到客户端 ID 的Microsoft Teams LTI 应用名称，用于确认。
 
 5. 选择“安装”。
 

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: ae8909f2533394e347a1885f2fb1354f6ce4cfae
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196597"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -69,7 +69,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 已 (`InsiderFast` 预览体验成员 Fast) 
+> - `Beta` 已 (`InsiderFast` Insider Fast) 
 > - `Preview` 被命名为 `External` (Insider Slow) 
 > - `Current` 已命名 `Production`
 
@@ -83,7 +83,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|ChannelName|
+|**Key**|ChannelName|
 |**数据类型**|String|
 |**可能的值**|Beta <p> 预览 <p> Current|
 |||
@@ -106,7 +106,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|UpdateCheckFrequency|
+|**Key**|UpdateCheckFrequency|
 |**数据类型**|整数|
 |**默认值**|720 (分钟) |
 |**Comment**|此值以分钟数设置。|
@@ -123,7 +123,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|HowToCheck|
+|**Key**|HowToCheck|
 |**数据类型**|String|
 |**可能的值**|手动 <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|请注意，如果可能，AutomaticDownload 将执行下载并静默安装。|
@@ -140,9 +140,9 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|EnableCheckForUpdatesButton|
+|**Key**|EnableCheckForUpdatesButton|
 |**数据类型**|Boolean|
-|**可能的值**|为 (默认值)  <p> 错误|
+|**可能的值**|为 (默认值)  <p> False|
 |||
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
@@ -156,9 +156,9 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|DisableInsiderCheckbox|
+|**Key**|DisableInsiderCheckbox|
 |**数据类型**|Boolean|
-|**可能的值**|False (默认值)  <p> 正确|
+|**可能的值**|False (默认值)  <p> True|
 |||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>限制从 MAU 发送的遥测
@@ -172,9 +172,9 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|SendAllTelemetryEnabled|
+|**Key**|SendAllTelemetryEnabled|
 |**数据类型**|Boolean|
-|**可能的值**|为 (默认值)  <p> 错误|
+|**可能的值**|为 (默认值)  <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>配置文件示例

@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: fea2a3dc971e7abbd2371bd5b62f39bb374aea24
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196358"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>配置发送给 MSSP 的警报通知
 
@@ -43,7 +43,7 @@ ms.locfileid: "58533347"
 必须选中以下复选框：
 
 - **包含组织** 名称 - 客户名称将添加到电子邮件通知中
-- **包含租户特定的门户链接** - 警报链接 URL 将具有租户特定参数 (tid=target_tenant_id) ，以允许直接访问目标租户门户
+- **包含特定于租户的门户链接** - 警报链接 URL 将具有租户特定参数 (tid=target_tenant_id) 允许直接访问目标租户门户
 
 ## <a name="related-topics"></a>相关主题
 

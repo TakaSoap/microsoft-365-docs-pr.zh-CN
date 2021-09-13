@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: 本文提供了用于规划部署部署的清单Microsoft 365 企业版其他资源。
+description: 本文提供了清单和其他资源，用于规划您的Microsoft 365 企业版部署。
 ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196816"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>规划Microsoft 365 企业版
 
@@ -35,7 +35,7 @@ ms.locfileid: "58356728"
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>规划Microsoft 365 FastTrack
 
-[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)是从 Microsoft 获取有关规划部署部署帮助Microsoft 365方法。 FastTrack可以帮助你解决最常见的设计注意事项，并可以回答一直的问题。 
+[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)是从 Microsoft 获取规划部署部署帮助Microsoft 365方法。 FastTrack可以帮助你解决最常见的设计注意事项，并可以回答一直的问题。 
 
 >[!Note]
 >还可以从 Microsoft 合作伙伴 [获取帮助](https://www.microsoft.com/solution-providers/home)。
@@ -43,7 +43,7 @@ ms.locfileid: "58356728"
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>自己规划Microsoft 365
 
-若要自行Microsoft 365规划，请逐步完成这些领域的规划和设计决策：
+若要自行Microsoft 365规划，请逐步完成以下领域的规划和设计决策：
 
 - 你的 Microsoft 365 租户
 

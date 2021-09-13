@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196362"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -43,12 +43,12 @@ Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已�
 Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有三个选项可获取此信息：
 
 - 请你的 OEM 供应商提供 AutoPilot 注册文件，该文件将包含硬件哈希。
-- 在每个[Windows PowerShell](#powershell-script-method)运行一个脚本，并收集文件中的结果。
+- 在每个[Windows PowerShell运行](#powershell-script-method)一个脚本，并收集文件中的结果。
 - 启动每台设备（但不完成Windows安装体验）并收集可移动闪存[驱动器上的哈希](#flash-drive-method)。
 
 #### <a name="powershell-script-method"></a>PowerShell 脚本方法
 
-可以在 PowerShell [ 库Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅向[Autopilot](/mem/autopilot/add-devices#device-identification)Windows设备。
+可以在 PowerShell [ 库网站上 ](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)Get-WindowsAutoPilotInfo.ps1PowerShell 脚本。 有关设备标识和硬件哈希的信息，请参阅向[Autopilot](/mem/autopilot/add-devices#device-identification)Windows设备。
 
 1. 使用管理权限打开 PowerShell 提示符。
 2. 运行 `Install-Script -Name Get-WindowsAutoPilotInfo`
@@ -77,7 +77,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 > [!NOTE]
-> 不支持其他列。 不支持引号。 只有 ANSI 格式的文本文件才能 (Unicode) 。 标头区分大小写。 由于这些要求，Excel文件并另存为 CSV 文件不会生成可用文件。 请确保在设备序列号中保留任何前导零。
+> 不支持其他列。 不支持引号。 只有 ANSI 格式的文本文件才能用于 unicode (Unicode) 。 标头区分大小写。 由于这些要求，Excel文件并另存为 CSV 文件不会生成可用文件。 请确保在设备序列号中保留任何前导零。
 
 ### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
@@ -94,7 +94,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 3. 选择 **注册设备**。 系统将设备添加到设备上设备列表，标记为注册 **挂起。**  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
 > [!NOTE]
-> 如果你手动更改Azure Active Directory (AAD) 组成员身份，它将自动重新分配到组，用于其设备配置文件，并删除任何冲突组。
+> 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统会自动将其重新分配给设备配置文件的组，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 
@@ -103,7 +103,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 | Registration Pending | 注册尚未完成。 请稍后再查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息 [，请参阅设备](#troubleshooting-device-registration) 注册疑难解答。 |
 | 为用户准备就绪 | 注册成功，设备现在已准备好传递给用户。 Microsoft 托管桌面指导用户完成首次设置，因此无需执行任何进一步准备。 |
-| 活动文件 | 设备已传递给用户，并且他们已在租户中注册。 此状态还指示他们定期使用设备。 |
+| 活动 | 设备已传递给用户，并且他们已在租户中注册。 此状态还指示他们定期使用设备。 |
 | 非活动 | 设备已传递给用户，并且他们已在租户中注册。 但是，他们在最近 7 天内 (使用过该设备) 。  | 
 
 #### <a name="troubleshooting-device-registration"></a>设备注册疑难解答

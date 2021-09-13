@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 28ebd44a44a252e21ea409942614aa106945ee63c36899b1cdf8f14735fdb37a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b4c260f301a32078b618899ff0164f75cc8f0c3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804308"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197082"
 ---
 # <a name="contact-support-for-kazakhstan"></a>联系哈萨克斯坦支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53804308"
 ## <a name="phone-number"></a>电话号码
 +8 800 555 1349
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 俄语：Mon-Fri上午 10 点到下午 7 点

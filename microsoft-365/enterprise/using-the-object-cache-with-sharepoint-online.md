@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: 本文介绍了在 SharePoint Server 2013 本地部署和 SharePoint Online 中使用对象缓存的区别。
 ms.openlocfilehash: 40863ccf375620cf4b38d231fa0a86336c4826cc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195687"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>在 SharePoint Online 中使用对象缓存
 
@@ -44,7 +44,7 @@ ms.locfileid: "58566718"
   
 在下图中，每个点表示用户正在请求的页面及其缓存位置。 不同的颜色表示共享使用 SaaS 基础结构的不同客户。
   
-![显示 SharePoint Online 中的对象缓存结果。](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
+![显示 SharePoint Online 中对象缓存的结果。](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
 从图中可以看到，任何给定用户使用其页面的缓存版本命中服务器的可能性是一种希望。 此外，由于吞吐量较大，并且服务器在许多网站之间共享，缓存不会持续很长时间，因为缓存的空间不足，
   
@@ -52,7 +52,7 @@ ms.locfileid: "58566718"
   
 ## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>如果无法依赖对象缓存来提高 SharePoint Online 中的性能，我们改为使用什么？
 
-由于不应依赖 SharePoint Online 中的缓存，因此，应该评估使用对象缓存SharePoint自定义项的替代设计方法。 这意味着使用不依赖于对象缓存的性能问题的方法，以便为用户提供良好的结果。 本系列的一些其他文章中对此进行了介绍，其中包括：
+由于不应依赖 SharePoint Online 中的缓存，因此应该评估使用对象缓存SharePoint自定义项的替代设计方法。 这意味着使用不依赖于对象缓存的性能问题的方法，以便为用户提供良好的结果。 本系列的一些其他文章中对此进行了介绍，其中包括：
   
 - [SharePoint Online 的导航选项](navigation-options-for-sharepoint-online.md)
     

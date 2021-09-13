@@ -22,11 +22,11 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196262"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -36,7 +36,7 @@ ms.locfileid: "58565656"
 **适用于：**
 - Microsoft 365 Defender
 
-威胁防护功能Microsoft 365 Defender会导致某些修正操作。 下面是一些示例：
+威胁防护功能Microsoft 365 Defender某些修正操作。 下面是一些示例：
 
 - [自动调查](m365d-autoir.md) 可能会导致自动执行修正操作或等待您的批准。
 - 防病毒、反恶意软件和其他威胁防护功能可能会导致修正操作，例如阻止文件、URL 或进程，或将项目发送到隔离区。
@@ -73,7 +73,7 @@ ms.locfileid: "58565656"
 
 ### <a name="undo-one-remediation-action"></a>撤消一个修正操作
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
 
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 
@@ -89,7 +89,7 @@ ms.locfileid: "58565656"
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离中删除文件 
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
 
 2. 在" **历史记录** "选项卡上，选择具有隔离文件操作 **类型的** 文件。
 

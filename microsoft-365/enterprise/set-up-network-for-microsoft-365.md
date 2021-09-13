@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: 查找指向文章的链接，其中的信息可帮助你设置Microsoft 365，包括网络连接概述和终结点列表。
+description: 查找指向文章的链接，这些文章包含可帮助您为 Microsoft 365设置网络的信息，包括网络连接概述和终结点列表。
 ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196737"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>为用户设置Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到内部部署数据中心和中央 Internet 连接的流量进行优化的传统网络。 
+载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到内部部署数据中心的流量和中央 Internet 连接进行优化的传统网络。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 

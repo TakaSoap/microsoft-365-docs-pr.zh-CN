@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 摘要：在 Microsoft Azure 中为 Microsoft 365 配置高可用性联合身份验证。
+description: 摘要：在 Microsoft Azure 中为 Microsoft 365 配置高可用性联合Microsoft Azure。
 ms.openlocfilehash: 22715f55a733b963a9b9f9c26c910adba1012ed7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196119"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>在 Azure 中为 Microsoft 365 部署高可用性联合身份验证
 
@@ -104,7 +104,7 @@ ms.locfileid: "58574023"
     
 - 如果你已经拥有现有的 Azure 混合云部署以及现有的跨界虚拟网络，则可以随意调整或跳过第 1 阶段和第 2 阶段中的说明，并将 AD FS 和 Web 应用程序代理服务器置于相应的子网上。
     
-若要构建开发/测试环境或此配置的概念证明，请参阅适用于你的开发/测试Microsoft 365[联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
+若要构建开发/测试环境或此配置的概念证明，请参阅联合标识[，Microsoft 365开发/测试环境](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
   
 ## <a name="next-step"></a>后续步骤
 

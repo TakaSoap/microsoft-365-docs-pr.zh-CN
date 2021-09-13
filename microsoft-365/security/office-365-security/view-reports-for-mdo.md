@@ -16,16 +16,16 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解如何查找和使用 Defender for Office 365门户中提供Microsoft 365 Defender报告。
+description: 管理员可以了解如何查找和使用 Defender for Office 365报告，这些报告在 Microsoft 365 Defender 门户中提供。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29374b0f4248b520d1b00a597e3c693cdf9f18ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5cc6c39c9d18e1fcc206f1d8cb81451201541e61
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195904"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在门户中Office 365 Defender for Microsoft 365 Defender报告
 
@@ -35,15 +35,15 @@ ms.locfileid: "58574504"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-适用于 Office 365 组织的 Microsoft Defender (例如，Microsoft 365 E5 订阅或 Microsoft Defender for Office 365 计划 1 或 Microsoft Defender for Office 365 计划 2 加载项) 包含各种与安全相关的报告。 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，可以在 Microsoft 365 Defender 门户中查看这些报告，方式为"报告电子邮件& \> **协作** 电子邮件& \> **协作报告"。** 若要直接转到"电子邮件 **&协作报告"** 页面，请打开 <https://security.microsoft.com/emailandcollabreport> 。
+Microsoft Defender for Office 365 organizations (for example， Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，可以在 Microsoft 365 Defender 门户中查看这些报告，& \> **电子邮件**& \> **协作报告。** 若要直接转到"电子邮件& **协作报告"** 页，请打开 <https://security.microsoft.com/emailandcollabreport> 。
 
-![电子邮件&门户中的"协作报告Microsoft 365 Defender页面。](../../media/email-collaboration-reports.png)
+![电子邮件&门户中的"电子邮件Microsoft 365 Defender报告"页面。](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
 > 不需要 Defender for Office 365的电子邮件安全报告在 Microsoft 365 Defender[门户中进行了介绍](view-email-security-reports.md)。
 >
-> 与邮件流相关的报告现在位于 EAC Exchange管理 () 。 有关这些报告详细信息，请参阅新管理中心中的Exchange[报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
+> 与邮件流相关的报告现在位于 EAC Exchange管理 (中心) 。 有关这些报告详细信息，请参阅新管理中心中的Exchange[报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)。
 
 ## <a name="safe-attachments-file-types-report"></a>保险箱附件文件类型报告
 
@@ -61,7 +61,7 @@ ms.locfileid: "58574504"
 
 不包括客户端和网络延迟。
 
-若要查看报告，请打开 Microsoft 365 Defender [门户](https://security.microsoft.com)，**转到报告** \> **电子邮件&协作** \> **电子邮件&协作报告**。 在"**电子邮件&协作报告**"页上，找到 **"邮件延迟** 报告"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/mailLatencyReport> 。
+若要查看报告，请打开Microsoft 365 Defender [门户](https://security.microsoft.com)，**转到报告** \> **电子邮件&协作** \> **电子邮件&协作报告**。 在"**电子邮件&协作报告**"页上，找到 **"邮件延迟** 报告"，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/mailLatencyReport> 。
 
 !["电子邮件和协作报告"页上的邮件&小组件。](../../media/mail-latency-report-widget.png)
 
@@ -82,13 +82,13 @@ ms.locfileid: "58574504"
 
 如果单击 **"筛选器**"，可以按以下值筛选图表和详细信息表：
 
-- **DATE (UTC)**： **Start date** and **End date**
+- **UTC (日期) ：****开始日期和****结束日期**
 - **消息视图**：下列值之一：
   - **所有邮件**
   - **包含附件或 URL 的邮件**
   - **触发的邮件**
 
-配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 在图表下面的详细信息表中，提供了以下信息：
 
@@ -103,11 +103,11 @@ ms.locfileid: "58574504"
 
 ## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
-URL **威胁防护报告** 提供检测到的威胁的摘要和趋势视图，以及作为链接的一部分对 URL [单击保险箱视图](safe-links.md)。 此报告不会包含应用了"链接"策略保险箱"不跟踪用户单击"选项的用户的 **单击** 数据。
+URL **威胁防护报告提供有关** 检测到的威胁和在 URL 单击上采取的操作（作为链接的一部分）的保险箱 [视图](safe-links.md)。 此报告不会包含应用了"链接"策略保险箱"不跟踪用户单击"选项的用户的 **单击** 数据。
 
-若要查看报告，请打开 Microsoft 365 Defender [门户](https://security.microsoft.com)，**转到报告** \> **电子邮件&协作** \> **电子邮件&协作报告**。 在"**电子邮件&协作报告**"页上，找到 **"URL 保护"页**，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
+若要查看报告，请打开Microsoft 365 Defender [门户](https://security.microsoft.com)，**转到报告** \> **电子邮件&协作** \> **电子邮件&协作报告**。 在"**电子邮件&协作报告**"页上，找到 **"URL 保护"页**，然后单击"**查看详细信息"。** 若要直接转到报告，请打开 <https://security.microsoft.com/reports/URLProtectionActionReport> 。
 
-!["电子邮件和协作报告"页面上& URL 保护报告小组件。](../../media/url-protection-report-widget.png)
+!["电子邮件和协作报告"页上& URL 保护报告小组件。](../../media/url-protection-report-widget.png)
 
 以下各节介绍了 **URL 威胁防护** 报告页面上的可用视图。
 
@@ -125,11 +125,11 @@ URL **威胁防护报告** 提供检测到的威胁的摘要和趋势视图，�
 - **阻止并单击：** 用户已选择继续导航到 URL。
 - **在扫描过程中单击** 完成：用户已单击链接，扫描完成之前。
 
-单击表示用户已单击"阻止"页面访问恶意网站 (管理员可以在"链接策略" (禁用保险箱点击) 。
+单击指示用户已单击通过阻止页面访问恶意网站 (管理员可以在"链接策略"保险箱禁用) 。
 
 If you click **Filters**， you can modify the report and the details table by selecting one or more of the following values in the flyout that appears：
 
-- **DATE (UTC)**： **Start date** and **End date**
+- **UTC (日期) ：****开始日期和****结束日期**
 - **检测**：
   - **允许**
   - **已阻止**
@@ -138,7 +138,7 @@ If you click **Filters**， you can modify the report and the details table by s
 - **域**：报告结果中列出的 URL 域。
 - **收件人**
 
-配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 图表下面的详细信息表提供了最近 7 天内组织中发生的所有单击的以下近实时视图：
 
@@ -165,12 +165,12 @@ If you click **Filters**， you can modify the report and the details table by s
 
 If you click **Filters**， you can modify the report and the details table by selecting one or more of the following values in the flyout that appears：
 
-- **DATE (UTC)**： **Start date** and **End date**
+- **UTC () ：****开始日期和****结束日期**
 - **检测**：图表中可用的应用。
 - **域**：报告结果中列出的 URL 域。
 - **收件人**
 
-配置完筛选器后，请单击"应用"、"**取消**"或"**清除筛选器"。**
+配置完筛选器后，请单击"应用"、"**取消**"或"清除 **筛选器"。**
 
 图表下面的详细信息表提供了最近 7 天内组织中发生的所有单击的以下近实时视图：
 
@@ -211,25 +211,25 @@ PowerShell 报告 cmdlet：
 |邮件流状态|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Defender 报告需要哪些权限Office 365报告？
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Defender for Office 365报告需要哪些权限？
 
-若要查看和使用本文中所述的报告，您需要是该门户中以下角色组之一Microsoft 365 Defender成员：
+若要查看和使用本文中所述的报告，您需要是本文门户中以下角色组之一Microsoft 365 Defender成员：
 
 - **组织管理**
 - **安全管理员**
-- **安全信息读取者**
+- **安全读取者**
 - **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
-**注意**：向 Microsoft 365 管理中心 中的相应 Azure Active Directory 角色添加用户会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+**注意**：将用户添加到 Microsoft 365 管理中心 中对应的 Azure Active Directory 角色会为用户提供 Microsoft 365 Defender 门户中所需的权限以及 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 
-如果你在 Defender for Office 365报告中看不到数据，请仔细检查策略是否正确设置。 你的组织必须保险箱[链接](set-up-safe-links-policies.md)策略保险箱[附件](set-up-safe-attachments-policies.md)策略，以便 Defender Office 365保护就位。 另请参阅 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
+如果在 Defender for Office 365报告中看不到数据，请仔细检查策略是否正确设置。 你的组织必须[保险箱](set-up-safe-links-policies.md)链接策略保险箱[附件](set-up-safe-attachments-policies.md)策略，以便 Defender Office 365保护就位。 另请参阅 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>相关主题
 
 [智能报表和 Microsoft 365 Defender见解](reports-and-insights-in-security-and-compliance.md)
 
-[角色权限 (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)

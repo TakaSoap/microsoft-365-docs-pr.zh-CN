@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4e76a0639a4f71649a5844b7f91e5de0e951373082ed47ba504983c86e987ca5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f908a4a6f3f64564a0c40f7b0b28b0308d726725
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195832"
 ---
 # <a name="payment-information-for-sweden"></a>瑞典的付款信息
 
@@ -33,7 +33,7 @@ ms.locfileid: "53880959"
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB22CITI18500812207656  
-**帐户编号：12207656**  
+**帐号：12207656**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 开始 **由 Microsoft AB** 针对订单和消耗计费的发票，请使用此银行信息：

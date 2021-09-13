@@ -15,17 +15,17 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 7db257ddd1645c5a2ba8ecd992a65d08962660c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196429"
 ---
 # <a name="windows-server-application-testing"></a>Windows服务器应用程序测试
 
-现在，通过 Microsoft 365 Base for Windows Server 2016，你可以针对 2019（包括服务器核心）验证应用程序！
+现在，通过 Microsoft 365 Base for Microsoft 365，可以针对 2019 和 2019 Windows Server 2016应用程序，包括服务器核心！
 
-若要开始针对 Windows Server 2016 和 Microsoft 365 测试基上的 2019 操作系统的预发布更新验证上载的应用程序，请遵循以下步骤：
+若要开始针对 Microsoft 365 测试基上的 Windows Server 2016 和 2019 操作系统的预发布更新验证上载的应用程序，请遵循以下步骤：
 
 1. 登录到我们的自助服务载入门户。 从左侧导航菜单中，选择 `Upload new package` "下" `Package catalogue` 并填写"测试详细信息"。
 

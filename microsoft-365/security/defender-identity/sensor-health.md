@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: 9d57272626c6f6c5d0e44052522cb73b9b675fd8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569317"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197241"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity 传感器运行状况和Microsoft 365 Defender
 
@@ -21,10 +21,10 @@ ms.locfileid: "58569317"
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍如何在 Microsoft 365 Defender 中配置和监视[Microsoft Defender for Identity](/defender-for-identity) [Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
+本文介绍如何配置和监视[Microsoft Defender for Identity](/defender-for-identity)传感器。Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
 
 >[!IMPORTANT]
->作为融合的一Microsoft 365 Defender，一些选项和详细信息从它们的位置更改为 Defender for Identity 门户。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
+>作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>查看 Defender for Identity 传感器设置和状态
 
@@ -59,7 +59,7 @@ ms.locfileid: "58569317"
 
     ![配置传感器详细信息。](../../media/defender-identity/configure-sensor-details.png)
 
-1. 在 **"传感器"** 页中，可以通过选择"导出"将传感器列表导出到.csv **文件。**
+1. 在 **"传感器"** 页中，可以通过选择"导出"将传感器列表导出.csv **文件。**
 
     ![导出传感器列表。](../../media/defender-identity/export-sensors.png)
 

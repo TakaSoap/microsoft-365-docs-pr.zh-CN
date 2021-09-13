@@ -16,11 +16,11 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置环境中的 SharePoint、OneDrive 和 Exchange 用户体验。
 ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195733"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -40,15 +40,15 @@ SharePoint 中心网站增强了员工的内容发现和参与能力，同时还
 
 ## <a name="office-applications"></a>Office 应用程序
 
-Office Word、Excel 和 PowerPoint 等应用程序将自动检测OneDrive登录时每个用户的正确地理位置。 用户无需输入 OneDrive 或 SharePoint 网站的地理位置专用 URL。
+Office Word、Excel 和 PowerPoint 等应用程序将自动检测每个用户登录OneDrive的正确地理位置。 用户无需输入 OneDrive 或 SharePoint 网站的地理位置专用 URL。
 
 ## <a name="onedrive-sync-app"></a>OneDrive 同步应用
 
-OneDrive 同步应用 (版本 17.3.6943.0625 及更高版本) 将自动检测用户OneDrive正确的地理位置。 同步应用支持包括同步基于组的网站（无论其地理位置如何）的能力。 请注意，多地理位置不支持 Groove 同步客户端。 
+OneDrive 同步应用 (版本 17.3.6943.0625 及更高版本) 将自动为用户检测正确的 OneDrive 地理位置。 同步应用支持包括同步基于组的网站（无论其地理位置如何）的能力。 请注意，多地理位置不支持 Groove 同步客户端。 
 
 ## <a name="onedrive-location"></a>OneDrive位置
 
-用户将在首选OneDrive预配其数据。 如果用户导航到包含错误地理位置 (的 OneDrive URL（如上一地理位置) 中的书签）时，他们将自动重定向到相应地理位置中的 OneDrive。
+用户将拥有在OneDrive数据位置预配的数据。 如果用户导航到包含错误地理位置 (的 OneDrive URL（如上一地理位置) 中的书签）时，他们会自动重定向到相应地理位置中的 OneDrive。
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS 和 Android 
 
@@ -78,7 +78,7 @@ OneDrive 移动客户端可感知多地理位置，并显示来自所有地理�
 
 ## <a name="sharepoint-home"></a>SharePoint 主页 
 
-此外SharePoint Multi-Geo你的SharePoint托管在用户驻留的位置，由用户所在的位置OneDrive位置。 例如，如果用户拥有在欧洲附属OneDrive托管的用户，则其SharePoint主页将呈现自欧洲。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
+In SharePoint Multi-Geo your SharePoint your SharePoint hosted in the location where the user resides as determined by their OneDrive location. 例如：如果用户拥有在欧洲附属OneDrive托管的用户，则其SharePoint主页将呈现自欧洲。 SharePoint 主页包括与用户相关的所有内容，无论它们的地理位置如何。 
 
 **关注的网站、网站新闻、最近访问的网站、经常访问的网站和推荐网站**
 

@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 2a0dfd562416ba4501104f9c015bb60d75140d28
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196302"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 - Microsoft Defender for Endpoint for Server (覆盖的服务器服务器一) 
 
 > [!NOTE]
-> 如果 (对于以下一个或多个用户许可证，客户至少可以获取 50 个许可证，每个覆盖的服务器操作系统环境 (OSE) ) （对于适用于服务器的终结点）一个服务器许可证：
+> 对于适用于服务器的 Microsoft Defender (，客户可以针对以下一个或多个用户许可证至少获得至少 50 个许可证，每个覆盖的服务器操作系统环境 (OSE) ) 可以获取一个服务器许可证：
 >
 > * Microsoft Defender for Endpoint
 > * WindowsE5/A5
@@ -93,7 +93,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 ### <a name="supported-windows-versions"></a>支持的 Windows 版本
 
 - Windows 7 SP1 Enterprise ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
-- Windows 7 SP1 Pro (需要[ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
+- Windows 7 SP1 Pro ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
 - Windows 8.1 企业版
 - Windows 8.1 专业版
 - Windows 10 企业版
@@ -114,9 +114,9 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 对于受支持的版本，设备上 Defender for Endpoint 的硬件要求相同。
 
 > [!NOTE]
-> 不支持运行移动版本的 Windows (（如 Windows CE 和 Windows 10 移动版) ）。
+> 不支持运行移动版本的 Windows (（Windows CE 和 Windows 10 移动版) ） 的计算机。
 >
-> 如果在非 Microsoft 虚拟化Windows 10 企业版 2016 长期服务版运行，则运行该虚拟机的虚拟机可能会遇到性能问题。
+> 如果虚拟机Windows 10 企业版 2016 长期服务版非 Microsoft 虚拟化平台上运行，则运行虚拟机可能会遇到性能问题。
 >
 > 对于虚拟环境，建议使用 Windows 10 企业版 LTSC 2019 或更高版本。
 
@@ -150,7 +150,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 确保在你的组织的所有设备上启用了诊断数据服务。
 默认情况下，此服务已启用。 最佳做法是检查以确保从它们获取传感器数据。
 
-**使用命令行检查诊断Windows 10服务启动类型**：
+**使用命令行检查诊断数据Windows 10启动类型**：
 
 1. 在设备上打开提升的命令行提示符：
 
@@ -169,7 +169,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
    ![diagtrack 的 sc 查询命令的结果。](images/windefatp-sc-qc-diagtrack.png)
 
 
-如果服务未设置为 START_TYPE，则需要将服务设置为 **AUTO_START。** 
+如果服务未设置为 START_TYPE，则需要将服务设置为自动 **AUTO_START。** 
 
 
 **使用命令行将 Windows 10数据服务设置为自动启动：**
@@ -206,13 +206,13 @@ Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender 防病毒配置要求
 
-Defender for Endpoint 代理依赖于用户Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
+Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
 
-在 Defender for Endpoint 设备上配置安全智能更新Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
+在 Defender for Endpoint 设备上配置安全智能更新Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理Microsoft Defender 防病毒[更新和应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
 如果Microsoft Defender 防病毒在你的组织中不是主动反恶意软件，并且你使用 Defender for Endpoint 服务，Microsoft Defender 防病毒被动模式。
 
-如果组织已通过组策略Microsoft Defender 防病毒关闭已载入的设备，则必须从该组策略中排除已载入的设备。
+如果组织已通过组策略Microsoft Defender 防病毒其他方法关闭已载入的设备，则必须从该组策略中排除已载入的设备。
 
 如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
 
@@ -224,10 +224,10 @@ Defender for Endpoint 代理依赖于用户Microsoft Defender 防病毒扫描文
 
 如果你正在设备上Microsoft Defender 防病毒作为主要的反恶意软件产品，则 Defender for Endpoint 代理将成功载入。
 
-如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保已启用 Microsoft Defender 防病毒 ELAM 驱动程序。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
+如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 
 ## <a name="related-topics"></a>相关主题
 
-- [设置 Microsoft Defender for Endpoint 部署](production-deployment.md)
+- [设置适用于终结点的 Microsoft Defender 部署](production-deployment.md)
 - [载入设备](onboard-configure.md)

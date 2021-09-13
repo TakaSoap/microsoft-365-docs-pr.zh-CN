@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 本文介绍如何使用 Azure 为本地服务器场创建灾难恢复SharePoint环境。
 ms.openlocfilehash: 87bbbf143fe831537ddbc08e6d43b4013fe1e379
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196738"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
@@ -114,7 +114,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
   
 **表：解决方案恢复目标**
 
-|**项目**|**说明**|
+|**项**|**说明**|
 |:-----|:-----|
 |网站和内容  <br/> |网站和内容在恢复环境中可用。  <br/> |
 |新的搜索实例  <br/> |在此温备用解决方案中，不会从搜索数据库还原搜索。恢复场中的搜索组件尽可能配置得与生产服务器场类似。网站和内容还原后，会启动完全爬网以重建搜索索引。你不需要等待爬网完成，即可使网站和内容可用。  <br/> |
@@ -124,7 +124,7 @@ SQL Server 日志传送与分布式文件系统复制 (DFSR) 用于将数据库�
   
 **表：可以由 MCS 或合作伙伴解决的其他项目**
 
-|**项目**|**说明**|
+|**Item**|**说明**|
 |:-----|:-----|
 |正在同步的自定义场解决方案  <br/> |理想情况下，恢复场的配置与生产服务器场相同。你可以与顾问或合作伙伴合作，评估是否复制了自定义服务器场解决方案，以及是否制定了将两个环境保持同步的流程。  <br/> |
 |到内部部署数据源的连接  <br/> |将连接复制到后端数据系统可能并不实用，例如备份域控制器 (BDC) 连接和搜索内容源。  <br/> |
@@ -232,7 +232,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>阶段 1：设计灾难恢复环境
 
-使用 [SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)中的指导设计灾难恢复环境，包括 SharePoint 恢复场。 可以使用 Azure SharePoint[灾难恢复](https://go.microsoft.com/fwlink/p/?LinkId=392554)解决方案Visio中的图形开始设计过程。 我们建议你先设计整个环境，然后开始在 Azure 环境中执行任何工作。
+使用 [SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)中的指导设计灾难恢复环境，包括 SharePoint 恢复场。 可以使用 Azure SharePoint 灾难恢复[](https://go.microsoft.com/fwlink/p/?LinkId=392554)解决方案 Visio 中的图形开始设计过程。 我们建议你先设计整个环境，然后开始在 Azure 环境中执行任何工作。
   
 除了 [SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)中提供的虚拟网络、VPN 连接、Active Directory 和 SharePoint 服务器场设计指导外，请务必将文件共享角色添加到 Azure 环境。
   
@@ -452,7 +452,7 @@ restore database WSS_Content with recovery
   
 通常情况下，当你设置网络负载平衡时，将向群集分配单个 IP 地址。然后你在 DNS 提供程序中为指向群集的网络创建 DNS 主机。（在此项目中，我们将 DNS 服务器放置在 Azure 中，确保在出现内部部署数据中心故障时能够恢复。）例如，你可以在 DNS 管理器的 Active Directory 中创建指向负载平衡群集的 IP 地址的 DNS 记录（例如，称为  `https://sharepoint.contoso.com`）。
   
-对于对 SharePoint 服务器场的外部访问，您可以在外部 DNS 服务器上创建一个主机记录，其 URL 与客户端在 Intranet (上使用的 URL 相同 (例如) ，它指向防火墙中的外部 `https://sharepoint.contoso.com` IP 地址。  (使用此示例的最佳实践是设置拆分 DNS，以便内部 DNS 服务器具有权威性，将请求直接路由到 SharePoint 场群集，而不是将 DNS 请求路由到外部 DNS 服务器。) 然后，可以将外部 IP 地址映射到内部部署群集的内部 IP 地址，以便客户端找到所需的资源。 `contoso.com`
+对于对 SharePoint 服务器场的外部访问，您可以在外部 DNS 服务器上创建一个主机记录，该记录与客户端在 Intranet (上使用的 URL 相同) 例如，指向防火墙中的外部 IP 地址的 `https://sharepoint.contoso.com`) 。  (此示例的最佳实践是设置拆分 DNS，以便内部 DNS 服务器对 DNS 服务器具有权威性，将请求直接路由到 SharePoint 场群集，而不是将 DNS 请求路由到外部 DNS 服务器。) 然后，可以将外部 IP 地址映射到内部部署群集的内部 IP 地址，以便客户端找到所需的资源。 `contoso.com`
   
 接下来，将介绍几种不同的灾难恢复应用场景：
   
@@ -460,7 +460,7 @@ restore database WSS_Content with recovery
   
  **示例场景：内部部署数据中心会完全中断。** 此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，你可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
   
-如果您使用的是以主机命名的网站集，如以主机命名的网站集体系结构和部署[ (SharePoint 2013) ](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)中的建议，则 SharePoint 服务器场中可能由同一 Web 应用程序承载多个网站集，其中唯一 DNS 名称为 (，) 。 `https://sales.contoso.com` `https://marketing.contoso.com` 在这种情况下，你可以为每个网站集创建指向群集 IP 地址的 DNS 记录。 请求到达 SharePoint Web 前端服务器之后，它们会将每个请求路由到相应的网站集。
+如果您使用的是以主机命名的网站集，如以主机命名的网站集体系结构和部署[ (SharePoint 2013) ](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)中的建议，则 SharePoint 服务器场中的同一 Web 应用程序可能承载多个网站集，其中唯一 DNS 名称为 (，) 。 `https://sales.contoso.com` `https://marketing.contoso.com` 在这种情况下，你可以为每个网站集创建指向群集 IP 地址的 DNS 记录。 请求到达 SharePoint Web 前端服务器之后，它们会将每个请求路由到相应的网站集。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 概念证明环境
 

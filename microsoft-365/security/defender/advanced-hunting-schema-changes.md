@@ -1,5 +1,5 @@
 ---
-title: 高级搜寻架构中Microsoft 365 Defender更改
+title: 高级搜寻架构Microsoft 365 Defender中的命名更改
 description: 跟踪并查看高级搜寻架构中的命名更改表和列
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 数据， 命名更改， 重命名
 search.product: eADQiWindows 10XVcnh
@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196532"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高级搜寻架构 - 命名更改
 
@@ -37,7 +37,7 @@ ms.locfileid: "53289489"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-高级 [搜寻架构](advanced-hunting-schema-tables.md) 会定期更新，以添加新表和列。 在某些情况下，重命名或替换现有列名称以改进用户体验。 请参阅本文，查看可能会影响查询的命名更改。
+高级 [搜寻架构](advanced-hunting-schema-tables.md) 会定期更新以添加新表和列。 在某些情况下，重命名或替换现有列名称以改进用户体验。 请参阅本文，查看可能会影响查询的命名更改。
 
 命名更改将自动应用于保存在安全中心的查询，包括自定义检测规则使用的查询。 无需手动更新这些查询。 但是，您需要更新以下查询：
 - 使用 API 运行的查询

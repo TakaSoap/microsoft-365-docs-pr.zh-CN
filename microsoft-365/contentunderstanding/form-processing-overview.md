@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表单处理。
 ms.openlocfilehash: 7a411a4150f09d62ae539ca35dee05df201e707c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195775"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的表单处理概述
 

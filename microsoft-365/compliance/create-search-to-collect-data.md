@@ -18,17 +18,17 @@ ms.assetid: ''
 description: 了解如何创建、定义和选择保管人位置和托管位置，以在搜索案例Advanced eDiscovery位置。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196388"
 ---
 # <a name="create-a-search"></a>创建搜索
 
 在 **案例的"** 搜索"选项卡上，可以通过单击"新建搜索"并遵循向导创建新搜索。
 
-![搜索向导在Advanced eDiscovery情况。](../media/AeDSearch1.png)
+![搜索向导（在Advanced eDiscovery中）。](../media/AeDSearch1.png)
 
 ## <a name="name-the-search-and-give-it-a-description"></a>命名搜索并给出说明
 
@@ -40,7 +40,7 @@ ms.locfileid: "58574299"
 
 ## <a name="choose-non-custodial-locations"></a>选择非地理位置
 
-在某些情况下，您可能需要搜索不与保管人关联的数据源。 在这种情况下，您可以指定要搜索的位置，或选择搜索特定 Microsoft 服务 (（如搜索所有 Exchange 邮箱或所有 SharePoint 网站和 OneDrive 帐户）) 。
+在某些情况下，您可能需要搜索不与保管人关联的数据源。 在这种情况下，您可以指定要搜索的位置，或选择搜索特定 Microsoft 服务应用程序的所有内容位置 (如搜索所有 Exchange 邮箱或所有 SharePoint 网站和 OneDrive 帐户) 。
 
 ## <a name="define-the-search-query-and-conditions"></a>定义搜索查询和条件
 

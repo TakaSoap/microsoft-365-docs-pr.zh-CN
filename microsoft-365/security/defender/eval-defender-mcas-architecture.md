@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197238"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>查看体系结构要求和解决方案的关键Microsoft Cloud App Security
 
@@ -35,7 +35,7 @@ ms.locfileid: "58569305"
 
 - Microsoft 365 Defender
 
-本文是设置环境评估环境过程中的步骤[1/3](eval-defender-mcas-overview.md) Microsoft Cloud App Security Microsoft 365 Defender。 有关此过程详细信息，请参阅 [概述文章](eval-defender-identity-overview.md)。
+本文是设置环境评估环境的第 1 步（第[3](eval-defender-mcas-overview.md)步）Microsoft Cloud App Security一Microsoft 365 Defender。 有关此过程详细信息，请参阅 [概述文章](eval-defender-identity-overview.md)。
 
 在启用Microsoft Cloud App Security，请确保您了解体系结构并满足要求。 
 
@@ -53,7 +53,7 @@ Microsoft Cloud App Security CASB (云访问安全代理) 。 CASB 充当网关�
 
 #### <a name="discovering-cloud-apps"></a>发现云应用
 
-管理云应用使用的第一步是发现组织使用哪些云应用。 下图说明了云发现如何与云应用安全。
+管理云应用使用的第一步是发现组织使用哪些云应用。 下图说明了云发现如何与 云应用安全。
 
 ![云Microsoft Cloud App Security体系结构 - 云发现。](../../media/defender/m365-defender-mcas-architecture-b.png)
 
@@ -89,11 +89,11 @@ Microsoft Cloud App Security充当反向代理，提供对批准的云应用的�
 
 你可能已经将 SaaS 应用添加到 Azure AD 租户以强制执行多重身份验证和其他条件访问策略。 Microsoft Cloud App Security Azure AD 进行本机集成。 你只需在 Azure AD 中配置策略，以使用 Azure AD 中的条件访问应用云应用安全。 这将通过作为代理的 云应用安全路由这些托管 SaaS 应用的网络流量，这云应用安全监视此流量并应用会话控件。 
 
-![适用于 Microsoft Cloud App Security 体系结构 - SaaS 应用。](../../media/defender/m365-defender-mcas-architecture-e.png)
+![适用于 Microsoft Cloud App Security 的体系结构 - SaaS 应用。](../../media/defender/m365-defender-mcas-architecture-e.png)
 
 在此图中：
 - SaaS 应用与 Azure AD 租户集成。 这允许 Azure AD 强制执行条件访问策略，包括多重身份验证。
-- 策略将添加到 Azure Active Directory，以将 SaaS 应用的流量直接云应用安全。 策略指定要应用此策略的 SaaS 应用。 因此，在 Azure AD 强制执行适用于这些 SaaS 应用的任何条件访问策略后，Azure AD 随后会通过 () 代理云应用安全。
+- 策略将添加到 Azure Active Directory，以将 SaaS 应用的流量直接云应用安全。 策略指定要应用此策略的 SaaS 应用。 因此，在 Azure AD 强制执行适用于这些 SaaS 应用的任何条件访问策略后，Azure AD 会通过 () 代理云应用安全。
 - 云应用安全监视此流量，并应用管理员配置的任何会话控制策略。 
 
 你可能已使用尚未添加到 Azure AD 云应用安全发现和批准的云应用。 通过将这些云应用添加到 Azure AD 租户和条件访问规则的范围，可以利用条件访问应用控制。
@@ -113,7 +113,7 @@ Microsoft Cloud App Security充当反向代理，提供对批准的云应用的�
 下表确定了在评估、配置和部署Microsoft Cloud App Security。
 
 
-|概念  |说明 |详细信息  |
+|概念  |说明 |更多信息  |
 |---------|---------|---------|
 | 云应用安全仪表板 | 概述了有关组织的最重要的信息，并提供了深入调查的链接。        | [使用仪表板 ](/cloud-app-security/daily-activities-to-protect-your-cloud-environment)       |
 | 条件访问应用控制    | 与 Identity Provider 和 IdP (反向代理体系结构) Azure AD 条件访问策略，并选择性地强制执行会话控制。        |  [使用条件访问Microsoft Cloud App Security控制保护应用](/cloud-app-security/proxy-intro-aad)       |
@@ -128,8 +128,8 @@ Microsoft Cloud App Security充当反向代理，提供对批准的云应用的�
 
 若要发现环境中使用的云应用，你可以执行以下一项或两项操作：
 
-- 与 Microsoft Defender for Endpoint 集成，快速启动并运行云发现。 通过此本机集成，你可以立即开始在 Windows 10 设备上以及网络上和网络上收集云流量上的数据。
-- 若要发现连接到网络的所有设备访问的所有云应用，云应用安全防火墙和其他代理上部署云日志收集器。 这将从终结点收集数据，并将其发送到云应用安全进行分析。 云应用安全与一些第三方代理进行本机集成，以使用更多功能。
+- 与 Microsoft Defender for Endpoint 集成，快速启动并运行云发现。 通过此本机集成，你可以立即开始在 Windows 10 设备上、网络上和网络上收集云流量上的数据。
+- 若要发现连接到网络的所有设备访问的所有云应用，云应用安全防火墙和其他代理上部署安全日志收集器。 这将从终结点收集数据，并将其发送到云应用安全进行分析。 云应用安全与一些第三方代理进行本机集成，以使用更多功能。
 
 这些选项包含在步骤 [2 中。启用评估环境](eval-defender-mcas-enable-eval.md)。 
 

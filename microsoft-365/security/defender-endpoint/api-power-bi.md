@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint API 与 Power BI
+title: Microsoft Defender for Endpoint API 到 Power BI
 ms.reviewer: ''
-description: 在 Microsoft Defender for Endpoint API (BI) 报告。
+description: 在适用于终结点 API 的 Microsoft Defender (BI) 报告。
 keywords: api， 受支持的 api， Power BI， 报告
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,11 +18,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 04c95cffec8f0c5bde417526d6b0cbc8dbe760ee
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222402"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>使用自定义报告Power BI
 

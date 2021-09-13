@@ -1,6 +1,6 @@
 ---
 title: 获取 MachineAction 对象 API
-description: 了解如何使用 Get MachineAction API 按特定计算机操作在 Microsoft Defender for Endpoint 中的 ID 检索它。
+description: 了解如何使用 Get MachineAction API 在 Microsoft Defender for Endpoint 中按其 ID 检索特定计算机操作。
 keywords: api， 图形 api， 受支持的 api， machineaction 对象
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a1dedd7170e5ee6fbc2be3e01a0a4598f4caeddad6abf28321517629f51a7b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c5acecaecd4121eeb6f7ad13731f2cfd036fe39
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195656"
 ---
 # <a name="get-machineaction-api"></a>获取 machineAction API
 

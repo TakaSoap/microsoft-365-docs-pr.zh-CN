@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 按照以下说明创建"关于我们"页面，包括 Microsoft Bookings 中的公司名称、地址、电话号码、网站 URL、徽标和营业时间。
 ms.openlocfilehash: 0c0b33f38cd92b9d99114d2b896c0e86eb92f2ee
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196183"
 ---
 # <a name="enter-your-business-information"></a>输入商业信息
 

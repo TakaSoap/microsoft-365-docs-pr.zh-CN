@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 托管桌面
+title: 在应用中管理Microsoft 托管桌面
 description: 了解如何更新部署到其他设备的业务线Microsoft 托管桌面的信息
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -12,25 +12,25 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ffa1d96e1a700049fcfad47f9be15376fa3bd8ee566be08707a2b559e66b8c9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196637"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>在 Microsoft 托管桌面中管理业务线应用
 
 <!--Application management -->
 
-有两种方法可以管理已载入应用并部署到Microsoft 托管桌面设备的应用Microsoft 托管桌面更新。 可以在应用门户或 Intune Microsoft 托管桌面应用更新。 
+有两种方法可以管理已载入应用并部署到 Microsoft 托管桌面 设备的应用Microsoft 托管桌面更新。 可以在应用门户或 Intune Microsoft 托管桌面应用更新。 
 
 <span id="update-app-mmd" />
 
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>更新 Microsoft 托管桌面 中的业务线Microsoft 托管桌面
 
 **在企业门户中更新业务线Microsoft 托管桌面应用**
-1. 登录到管理[Microsoft 托管桌面 。](https://aka.ms/mmdportal)
+1. 登录到管理[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。
 2. 在 **"清单"** 下，选择 **"应用"。**  
 3. 选择要更新的应用，然后选择"编辑 **"。**
 4. 在 **"管理"** 下，选择"**属性"。** 
@@ -39,7 +39,7 @@ ms.locfileid: "53904259"
 7. 选择文件夹图标并浏览到更新后的应用文件的位置。 选择 **“打开”**。 使用程序包信息更新应用信息。
 8. 验证 **应用版本是否** 反映了更新的应用包。 
 
-更新的应用将部署到用户的设备。
+更新后的应用将部署到用户设备。
 
 <span id="update-app-intune" />
 
@@ -59,11 +59,11 @@ ms.locfileid: "53904259"
 
 ## <a name="roll-back-an-app-to-a-previous-version"></a>将应用回滚到以前版本
 
-如果在部署应用的新版本时发现错误，你可以回滚到以前的版本。 此处概述的过程适用于类型列为 **Windows MSI** 业务线应用的应用或 **win 32** 商业版 Windows (应用 -) 预览版
+如果在部署应用的新版本时发现错误，你可以回滚到以前的版本。 此处概述的过程适用于类型列为 **Windows MSI** 业务线应用或 **Windows Win 32** (应用 - 预览) 的应用
 
 **将业务线应用回滚到以前版本**
 
-1. 登录到管理[Microsoft 托管桌面 。](https://aka.ms/mmdportal)
+1. 登录到管理[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。
 2. 在 **"清单"** 下，选择 **"应用"。**  
 3. 选择需要回滚的应用，然后选择"编辑 **"。**
 4. 在 **"管理"** 下，选择"**属性"。** 

@@ -6,6 +6,7 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -13,12 +14,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 SharePoint Syntex 中的图像标记
-ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e0f3e9dea8ca7d640db906715a39448eb024b2b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195772"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex 中的图像标记
 
@@ -42,7 +43,7 @@ ms.locfileid: "58552896"
 
 打开或关闭图像标记
 
-1. 在 Microsoft 365 管理员中心中，单击 **“设置”**。
+1. 在"Microsoft 365 管理中心中，选择"设置 <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**"。**</a>
 
 2. 在 **组织知识** 下，单击 **“自动化内容理解”**。
 

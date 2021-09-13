@@ -10,18 +10,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: fe048005736e39623effc13751a66f195008ff96
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196704"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
 有多种方式可以Microsoft 托管桌面与客户进行通信。 为了简化通信并确保我们正在与合适的人员联系，你需要提供一组管理员联系人。 Microsoft 托管桌面IT 运营部门将联系这些人员，帮助解决租户的问题。
 
 > [!IMPORTANT]
-> 你可能已经在管理门户中添加了这些联系人。 如果是，请立即仔细检查联系人列表是否准确，因为Microsoft 托管桌面发生严重事件时必须能够联系他们。 
+> 你可能已经在管理门户中添加了这些联系人。 如果是这样，请立即仔细检查联系人列表是否准确，因为Microsoft 托管桌面发生严重事件时必须能够联系他们。 
 
 ## <a name="admin-contact-areas-of-focus"></a>管理员重点关注的联系人区域
 
@@ -32,10 +32,10 @@ ms.locfileid: "58550258"
 应用打包 | 应用打包疑难解答
 设备 | 设备运行状况，Microsoft 托管桌面疑难解答
 安全性 | 解决设备Microsoft 托管桌面安全问题
-IT 技术支持 | 如果支持人员在支持区域外接管用户Microsoft 托管桌面票证 
+IT 技术支持 | 如果支持人员在支持区域外Microsoft 托管桌面票证 
 其他 | 对于其他方面未涵盖的问题
 
-**无论为这些联系人选择谁，都需要有知识和权威来为Microsoft 托管桌面决策。** 当你载入Microsoft 托管桌面环境时，系统将提示你为本地支持人员和安全添加联系人。 
+**无论为这些联系人选择谁，都需要有知识和权威来针对您的Microsoft 托管桌面决策。** 当你载入Microsoft 托管桌面环境时，系统将提示你为本地支持人员和安全添加联系人。 
 
 提交支持请求时 [需要管理员联系人](../service-description/support.md)。 你需要有一个管理员联系人来联系支持请求的重点关注区域。
 
@@ -53,7 +53,7 @@ IT 技术支持 | 如果支持人员在支持区域外接管用户Microsoft 托�
 
 5. 对每个焦点区域重复上述步骤。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
 
 1. 访问 [管理员门户](access-admin-portal.md)。
 1. 在管理门户中添加和验证管理员 (本文) 。

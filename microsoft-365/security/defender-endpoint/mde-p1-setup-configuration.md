@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: e5f62a59b66db83b5c9d191d2f7496b280abbc18
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58824035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196337"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>为终结点计划 1 设置和配置 Microsoft Defender (预览) 
 
@@ -41,7 +41,7 @@ ms.locfileid: "58824035"
 | 3 | [设置租户环境](#set-up-your-tenant-environment) | 列出设置租户环境的任务 |
 | 4  | [分配角色和权限](#assign-roles-and-permissions) | 列出要考虑的安全团队的角色和权限 <br/><br/>**提示**：分配角色和权限后，安全团队就可以开始使用 Microsoft 365 Defender 门户。 若要了解更多信息，请参阅 [入门](mde-plan1-getting-started.md)。 |
 | 5  | [载入到适用于终结点的 Defender](#onboard-to-defender-for-endpoint) | 列出操作系统载入 Defender for Endpoint Plan 1 的几种方法，并包括指向每个方法的更多详细信息的链接  |
-| 6  | [配置下一代保护](#configure-next-generation-protection) | 介绍如何在环境中配置下一代保护Microsoft Endpoint Manager  |
+| 6  | [配置下一代保护](#configure-next-generation-protection) | 介绍如何在部署中配置下一代保护Microsoft Endpoint Manager  |
 | 7  | [配置攻击面减少功能](#configure-your-attack-surface-reduction-capabilities)        | 列出你可以配置的攻击面减少功能类型，并包括包含指向更多资源的链接的过程  |
 
 > [!IMPORTANT]
@@ -51,9 +51,9 @@ ms.locfileid: "58824035"
 
 下表列出了 Defender for Endpoint Plan 1 (预览版) ：<br/><br/>
 
-| 要求 | Description |
+| 要求 | 说明 |
 |:---|:---|
-| 许可要求 | Defender for Endpoint Plan 1 (preview)  <br/><br/>*如果已Microsoft 365 E3，可以加入预览计划。* |
+| 许可要求 |  Endpoint 计划 1（预览版）的定义程序 <br/><br/>*如果已Microsoft 365 E3，可以加入预览计划。* |
 | 浏览器要求 | Microsoft Edge <br/> Internet Explorer版本 11 <br/> Google Chrome |
 | 操作系统 | Windows 10版本 1709 或更高版本 <br/>macOS：11.5 (Big Sur) 、10.15.7 (加泰罗尼亚语) 或 10.14.6 (Mojave)  <br/>iOS <br/>Android OS  |
 | 数据中心版 | 以下数据中心位置之一： <br/>- 欧盟 <br/>- 英国 <br/>- 美国 |
@@ -66,7 +66,7 @@ ms.locfileid: "58824035"
 | 方法 | 说明 |
 |:---|:---|
 | [Microsoft Intune (](/mem/intune/fundamentals/what-is-intune)包含在Microsoft Endpoint Manager)  | 使用 Intune 在云本机环境中管理终结点 |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和 Configuration [Manager](/mem/configmgr/core/understand/introduction) (包含在 Microsoft Endpoint Manager)  | 使用 Intune 和 Configuration Manager 管理跨本地和云环境的终结点和工作负载 |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)中包含的 (和 Configuration [Manager](/mem/configmgr/core/understand/introduction) Microsoft Endpoint Manager)  | 使用 Intune 和 Configuration Manager 管理跨本地和云环境的终结点和工作负载 |
 | [配置管理器](/mem/configmgr/core/understand/introduction) | 使用 Configuration Manager 通过 Defender for Endpoint 的基于云的功能保护本地终结点 |
 | 从门户下载的本地Microsoft 365 Defender脚本 | 在终结点上使用本地脚本运行试点或载入几台设备 |
 
@@ -92,9 +92,9 @@ ms.locfileid: "58824035"
 
 ## <a name="assign-roles-and-permissions"></a>分配角色和权限
 
-若要访问安全Microsoft 365 Defender、配置 Defender for Endpoint 的设置或执行任务，例如对检测到的威胁采取响应操作，必须分配适当的权限。 Defender for Endpoint 使用[Azure Active Directory 中的内置角色](/azure/active-directory/roles/permissions-reference)。 
+若要访问安全Microsoft 365 Defender、配置 Defender for Endpoint 的设置或执行任务（如对检测到的威胁采取响应操作）必须分配适当的权限。 Defender for Endpoint[使用 Azure Active Directory 中的内置角色](/azure/active-directory/roles/permissions-reference)。 
 
-Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以使用基本权限管理或基于角色的访问控制来分配权限， ([](rbac.md) RBAC) 。 
+Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过使用基本权限管理，或者通过使用基于角色的访问控制或 RBAC [](rbac.md) (分配) 。 
 
 - 通过基本权限管理，全局管理员和安全管理员具有完全访问权限，而安全读者则具有只读访问权限。
 - 使用 RBAC，可以通过更多角色设置更精细的权限。 例如，你可以拥有安全读者、安全操作员、安全管理员、终结点管理员等。
@@ -104,14 +104,14 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 | Role | 说明 |
 |:---|:---|
-| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，注册你的公司Microsoft 365 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有管理门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  <br/>- Microsoft Endpoint Manager管理中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ()   |
+| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，为公司注册 Microsoft 365或 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 ()  <br/>- Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) ()  <br/>- Microsoft Endpoint Manager管理中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ()   |
 | 安全管理员 (也称为安全管理员)  | 安全管理员可以执行安全操作员任务以及以下任务： <br/>- 监视与安全相关的策略 <br/>- 管理安全威胁和警报 <br/>- 查看报告 |
 | 安全操作员 | 安全操作员可以执行安全读者任务以及以下任务： <br/>- 查看有关检测到的威胁的信息 <br/>- 调查和响应检测到的威胁  |
 | 安全读者 | 安全读者可以执行以下任务： <br/>- 查看跨服务的安全Microsoft 365策略 <br/>- 查看安全威胁和警报 <br/>- 查看报告  |
 
 
 > [!TIP]
-> 若要了解有关用户角色Azure Active Directory，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给具有Azure Active Directory。 有关 Defender for Endpoint 的角色详细信息，请参阅 [基于角色的访问控制](prepare-deployment.md#role-based-access-control)。
+> 若要了解有关用户角色Azure Active Directory，请参阅向具有此权限的用户分配管理员[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关 Defender for Endpoint 的角色详细信息，请参阅 [基于角色的访问控制](prepare-deployment.md#role-based-access-control)。
 
 ## <a name="onboard-to-defender-for-endpoint"></a>载入到适用于终结点的 Defender
 
@@ -119,7 +119,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 |终结点操作系统 | 载入方法|
 |---|---|
-| Windows 10 | [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md)  |
+| Windows 10 | [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md)  |
 | macOS | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
 | iOS |[基于应用](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
@@ -134,7 +134,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 若要在部署中配置下一代Microsoft Endpoint Manager，请按照以下步骤操作：
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。
 
 2. 选择 **"终结点**  >  **安全防病毒"，** 然后选择现有策略。  (如果没有现有策略，请创建新策略。) 
 
@@ -149,7 +149,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 攻击面减少就是减少组织开放攻击的位置和方式。 Defender for Endpoint Plan 1 (preview) 包括多个特性和功能，可帮助你减少跨终结点的攻击面。 下表列出了这些功能： <br/><br/>
 
-| 功能 | Description |
+| 功能 | 说明 |
 |:---|:---|
 | [攻击面减少规则](#attack-surface-reduction-rules) | 配置攻击面减少规则，以限制基于软件的风险行为并帮助确保组织安全。 攻击面减少规则针对某些软件行为，例如<br/>- 启动尝试下载或运行文件的可执行文件和脚本 <br/>- 运行模糊处理或其他可疑脚本 <br/>- 执行应用在正常日常工作期间通常不启动的行为 <br/><br/>此类软件行为有时在合法应用程序中可见。 但是，这些行为通常被视为有风险，因为它们通常被攻击者通过恶意软件滥用。  |
 | [勒索软件缓解](#ransomware-mitigation) | 通过配置受控文件夹访问权限来设置勒索软件缓解功能，这有助于保护组织有价值的数据免受恶意应用和威胁（如勒索软件）的侵害。 | 
@@ -165,7 +165,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="攻击面减少规则Microsoft Endpoint Manager":::
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。
 
 2. 选择 **终结点安全**  >  **攻击面减少**  >  **+ 创建策略**。
 
@@ -201,7 +201,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Microsoft Endpoint Manager 中的 ASR 策略":::
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。 
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。 
 
 2. 选择 **"终结点安全性**"，然后选择"**攻击面减少"。**
 
@@ -229,11 +229,11 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 ### <a name="device-control"></a>设备控件
 
-你可以将 Defender for Endpoint 配置为阻止或允许可移动设备上可移动设备和文件。 我们建议使用Microsoft Endpoint Manager配置设备控件设置。
+你可以将 Defender for Endpoint 配置为阻止或允许可移动设备上可移动设备和文件。 我们建议使用Microsoft Endpoint Manager配置设备控制设置。
 
 :::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager管理模板":::
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。 
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。 
 
 2. 选择 **"设备**  >  **配置文件""**  >  **创建配置文件"。**
 
@@ -262,11 +262,11 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 ### <a name="network-protection"></a>网络保护
 
-借助网络保护，可帮助保护组织免受在 Internet 上承载网络钓鱼欺诈、攻击和其他恶意内容危险域的攻击。 我们建议使用Microsoft Endpoint Manager启用网络保护。
+借助网络保护，可帮助保护组织免受可能承载 Internet 上欺诈邮件、攻击和其他恶意内容危险域的攻击。 我们建议使用Microsoft Endpoint Manager启用网络保护。
 
 :::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="终结点保护配置文件Microsoft Endpoint Manager":::
 
-1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 登录。 
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () 并登录。 
 
 2. 选择 **"设备**  >  **配置文件""**  >  **创建配置文件"。**
 
@@ -278,7 +278,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 5. 在"**配置设置"** 选项卡上，展开 **"Microsoft Defender 攻击防护"，** 然后展开"网络 **筛选"。**
 
-   将 **"网络保护"** 设置为 **"启用"。**  (可以选择"审核"，首先查看网络保护在环境中) 
+   将 **"网络保护"** 设置为 **"启用"。**  (可以选择"审核"，以查看网络保护最初在环境中) 
 
    然后选择“**下一步**”。
 
@@ -297,7 +297,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 ### <a name="web-protection"></a>Web 保护
 
-借助 Web 保护，你可以保护组织设备免受 Web 威胁和不需要的内容。 Web 保护包括 [Web 威胁防护](#configure-web-threat-protection) 和 [Web 内容筛选 (](#configure-web-content-filtering) 预览) 。 配置这两组功能。 我们建议使用 Microsoft Endpoint Manager配置 Web 保护设置。
+借助 Web 保护，你可以保护组织设备免受 Web 威胁和不需要的内容。 Web 保护包括 [Web 威胁防护和](#configure-web-threat-protection) [Web 内容筛选](#configure-web-content-filtering) (预览) 。 配置这两组功能。 我们建议使用 Microsoft Endpoint Manager 配置 Web 保护设置。
 
 #### <a name="configure-web-threat-protection"></a>配置 Web 威胁防护
 
@@ -363,7 +363,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 2. 选择 **"终结点安全**  >  **防火墙"，** 然后选择 **"+ 创建策略"。**
 
-3. 选择平台（如 Windows 10 **及** 更高版本）选择 **Microsoft Defender 防火墙** 配置文件，然后选择"创建 **"。** 
+3. 选择平台（如 Windows 10 **及更高版本**）选择 **Microsoft Defender 防火墙** 配置文件，然后选择"创建 **"。** 
 
 4. 在"**基本信息"** 选项卡上，指定名称和说明，然后选择"下一步 **"。**
 
@@ -392,7 +392,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 可以
 
 ### <a name="application-control"></a>应用程序控制
 
-Windows Defender应用程序控制 (WDAC) 仅允许受信任的应用程序和进程运行，帮助保护 Windows 终结点。 大多数组织都使用 WDAC 的分阶段部署。 也就是说，大多数组织最初不会跨所有 Windows推出 WDAC。 实际上，根据组织的 Windows 终结点是完全托管、轻型管理还是"自带设备"终结点，你可以在所有或某些终结点上部署 WDAC。
+Windows Defender应用程序控制 (WDAC) 仅允许受信任的应用程序和进程运行，帮助保护 Windows 终结点。 大多数组织都使用 WDAC 的分阶段部署。 也就是说，大多数组织最初不会在所有 Windows推出 WDAC。 实际上，根据组织的 Windows 终结点是完全托管、轻型托管还是"自带设备"终结点，你可以在所有或某些终结点上部署 WDAC。
 
 若要帮助规划 WDAC 部署，请参阅以下资源：
 

@@ -13,13 +13,13 @@ description: 管理员可以了解如何使用安全与合规中心中的"新用
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d517b5f9a7146d7256b89ae4e4d4d5f4aa6fc14f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197201"
 ---
-# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心转发&见解
+# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心&电子邮件见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "58568464"
 
 当组织中新的用户帐户突然开始将电子邮件转发到外部域时，这是可疑的。
 
-安全 **与合规** 中心内 [&](https://protection.office.com) 转发的新域电子邮件见解在组织中新创建的用户将邮件转发到外部域时通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果您怀疑帐户已被泄露，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
+安全 **与合规** 中心内 [&](https://protection.office.com) 转发的电子邮件见解的新域在组织中新创建的用户将邮件转发到外部域时通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果您怀疑帐户已被泄露，请参阅响应遭到入侵 [的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
 此见解仅在检测到问题时显示，并且显示在"转发 [报告"页上](view-mail-flow-reports.md#forwarding-report) 。
 
@@ -40,7 +40,7 @@ ms.locfileid: "58568464"
 
 ![详细信息 在单击"新用户转发电子邮件见解"后出现的飞出图。](../../media/mfi-new-users-forwarding-email-details.png)
 
-单击"报告仪表板"或"仪表板"上的"热门见解"&建议"区域中的"查看全部"后，选择见解后， (**访问** 此 \>  <https://protection.office.com/insightdashboard> 详细信息) 。
+单击报表仪表板或仪表板上"热门见解"&建议"区域中的"查看全部"后，选择见解后， (**访问** 此详细信息 \>  <https://protection.office.com/insightdashboard>) 。
 
 可以单击" **查看与见解关联的** 报告"链接转到"转发修改" **报告，如下** 一节中所述。
 
@@ -83,7 +83,7 @@ ms.locfileid: "58568464"
   - **名称**：发件人的电子邮件地址。
   - **转发类型**
   - **收件人地址**
-  - **Details**
+  - **详细信息**
   - **Count**
   - **第一个转发日期**
 
@@ -92,7 +92,7 @@ ms.locfileid: "58568464"
   - **名称**：发件人的电子邮件域。
   - **转发类型**
   - **收件人地址**
-  - **Details**
+  - **详细信息**
   - **Count**
   - **第一个转发日期**
 
@@ -100,10 +100,10 @@ ms.locfileid: "58568464"
 
 如果从表中选择一行，将显示"详细信息"飞出，并包含以下信息：
 
-- 名称：这是发件人的电子邮件地址 ("显示数据"中的"新建转发用户"视图) 或发件人的电子邮件域 (from **Show data for： New forwarding domains** view) 。
+- 名称：这是发件人的电子邮件地址 ("显示数据：新建转发用户查看) "或发件人的电子邮件域 (from **Show data for： New forwarding domains** view) 。 
 - **转发类型**
 - **收件人**
-- **Details**
+- **详细信息**
 - **Count**
 - **开始日期**
 - **建议**：你可以从此处单击链接来管理用户Microsoft 365 管理中心。
@@ -114,4 +114,4 @@ ms.locfileid: "58568464"
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

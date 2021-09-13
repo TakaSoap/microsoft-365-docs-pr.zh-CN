@@ -12,21 +12,21 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e67cf54e18209c71693621db1d6df30717f03500db8d1bf3ddc292609256c0b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6df569c2919e9941bc5c7c6ee92970fa694af225
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856747"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196402"
 ---
-# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>联系有关赫德岛和 Mc在都纳群岛的支持
+# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>联系有关赫德岛和 Mc一岛的支持人员
 
 [查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

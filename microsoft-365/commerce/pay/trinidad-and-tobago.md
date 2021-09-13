@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cc11e5368f74c3b5b19fd736775c53026b7f76f2603ae1f19639ca74b9784823
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87803ce852e9124918feeb332bcb107532da8587
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195819"
 ---
 # <a name="payment-information-for-trinidad-and-tobago"></a>特立尼达和多巴哥的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
-**帐户号：12510049**  
+**帐号：12510049**  
 **帐户名称：** MICROSOFT

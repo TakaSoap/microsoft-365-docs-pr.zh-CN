@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何将电子邮件、联系人和日历从 Google Workspace 迁移到 Microsoft 365 for business。
-ms.openlocfilehash: 26ed00be3241f07d564fd7823c44610cf34d6ffd96cc4becb36d907439f23629
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195856"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>从 Google Workspace 迁移业务电子邮件和日历
 
@@ -40,7 +41,7 @@ ms.locfileid: "53896555"
 
 ### <a name="create-a-google-service-account"></a>创建 Google 服务帐户
 
-1. 使用 Chrome 浏览器，登录到 Google Workspace 管理控制台[，admin.google.com。](https://admin.google.com) 
+1. 使用 Chrome 浏览器，登录到 Google Workspace 管理[](https://admin.google.com)控制台，admin.google.com。 
 1. In a new tab or window， navigate to the [Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) page. 
 1. 选择 **"创建项目"，** 将项目命名，然后选择"创建 **"。** 
 1. 选择 **"创建服务帐户**"，输入名称，选择 **"创建"，** 然后选择"完成 **"。** 
@@ -71,7 +72,7 @@ ms.locfileid: "53896555"
 1. 选择 **"安全性**"，向下滚动并打开 **API 控件**。 
 1. 向下滚动并选择"**管理域范围的委派"。**
 1. 选择 **"添加新** "，然后输入之前记下的客户端 ID。
-1. 然后输入 Google API 的 OAuth 范围。 可在步骤 5 [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) 以下产品：：
+1. 然后输入 Google API 的 OAuth 范围。 可在步骤 5 [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) 以下选项获得这些选项：
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
@@ -87,7 +88,7 @@ ms.locfileid: "53896555"
     域验证通常只需几分钟，但最多可能需要 48 小时。
 
 1. 转到["Microsoft 365 管理中心"。](https://admin.microsoft.com)
-1. In the **Microsoft 365 管理中心**， in the left nav， select **Show all**，**设置**， **Domains**， and then **Add domain**. 
+1. In the Microsoft 365 管理中心， in the left nav， select **Show all**  >  **设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains，**</a>and then **Add domain**. 
 1. 输入之前创建的子域，然后选择"**使用此域"。** 
 1. 若要连接域，请选择"继续 **"。** 
 1. 向下滚动并记下 MX 记录、CNAME 记录和 TXT 记录。 
@@ -99,7 +100,7 @@ ms.locfileid: "53896555"
 
     可能需要一些时间，这些更改生效。  
 
-1. 返回到在活动状态 **中Microsoft 365 管理中心，****然后选择继续。** 
+1. 返回到在"开始"按钮中Microsoft 365 管理中心，然后选择"继续 **"。** 
 
 您的域现已设置。  
 
@@ -118,8 +119,8 @@ ms.locfileid: "53896555"
 
 完成后，即可进行迁移。 
 
-1. 在"管理中心"的Microsoft 365 管理中心中，向下滚动到"管理中心 **"，然后选择"Exchange"。** 
-1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建****"，Exchange Online"** 迁移"，选择 **"G Suite 迁移**"，然后选择"下一 **步"。** 
+1. 在"管理中心"的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>Microsoft 365 管理中心，向下滚动到"管理 **中心****"，然后选择"Exchange"。** 
+1. 在 **"收件人"** 下，选择 **"迁移**"，选择"**新建**"，Exchange Online"迁移"，选择 **"G Suite 迁移****"，** 然后选择"下一 **步"。** 
 1. 创建包含要迁移的邮箱列表的 CSV 文件。 确保文件遵循以下格式： 
 
     ```CSV
@@ -132,7 +133,7 @@ ms.locfileid: "53896555"
 
 1. 选择 **"选择文件**"，导航到 CSV 文件，选择它，选择"**打开**"，然后选择"下一 **步"。** 
 1. 验证要用于测试的管理员电子邮件地址。 
-1. 选择 **"文件**"，导航到之前创建的 JSON 文件 (通常位于计算机上"下载"文件夹中) ，选择"打开"，然后选择"下一 **步"。**  
+1. 选择 **"选择文件**"，导航到之前创建的 JSON 文件 (通常位于计算机上"下载"文件夹中) ，选择"打开"，然后选择"下一 **步"。**  
 1. 在"新建迁移批处理 **名称"字段中输入名称**。
 1. 在"目标传递域"字段中输入创建的 **子域，** 选择"下一步 **"，然后选择**"新建 **"。** 
 1. 保存信息后，选择"确定 **"。** 
@@ -144,5 +145,5 @@ ms.locfileid: "53896555"
 1. 该过程完成后，状态将更改为"**已完成"。** 
 1. 如果需要，可以选择" **查看详细信息** "，了解有关迁移的详细信息。 
 1. 选择“**关闭**”。 
-1. 打开Outlook验证来自 Google Workspace 的所有电子邮件已成功迁移。
+1. 打开Outlook验证来自 Google Workspace 的所有电子邮件是否都已成功迁移。
 也可以对日历项目和联系人重复此操作。

@@ -9,22 +9,22 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04de03e22e270099c647a0dd1ac6d3bb9826ccf87014031bb13ed77b0b580870
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196665"
 ---
 # <a name="diagnostic-logs"></a>诊断日志
 
-当我们在由 Microsoft 托管桌面 管理的设备上解决问题时，无论你已报告问题还是由服务识别的问题，我们可能需要从设备中收集某些诊断日志，而无需用户干预。 我们不会从用户目录中收集任何用户生成的内容或信息。 我们仅收集与设备运行状况和状态有关诊断和日志数据。
+当我们对由 Microsoft 托管桌面 管理的设备上的问题进行故障排除时，无论你已报告问题还是由服务识别的问题，我们可能需要从设备中收集某些诊断日志，而无需用户干预。 我们不会从用户目录中收集任何用户生成的内容或信息。 我们仅收集与设备运行状况和状态有关诊断和日志数据。
 
 我们将收集的任何日志存储 28 天，然后将其删除。 我们将按照数据处理标准处理从设备 [收集的任何日志](privacy-personal-data.md)。
 
 ## <a name="data-collected"></a>收集的数据
 
-此列表包括所有文件夹、事件日志、可执行文件或注册表位置，Microsoft 托管桌面收集诊断日志。 收集的实际数据将是此列表的子集，具体取决于已识别的问题。
+此列表包括所有文件夹、事件日志、可执行文件或注册表Microsoft 托管桌面可能会从其中收集诊断日志。 收集的实际数据将是此列表的子集，具体取决于已识别的问题。
 
 ### <a name="registry-keys"></a>注册表项
 
@@ -36,7 +36,7 @@ ms.locfileid: "53840115"
 - HKLM \\ 软件 Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
 - HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
 - HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
-- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ \\ CurrentVersion AppModel
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ AppModel
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ 控件 \\ FirmwareResources
 - HKLM \\ SOFTWARE \\ Microsoft \\ WindowsSelfhost
 - HKLM \\ SOFTWARE \\ Microsoft \\ WindowsUpdate
@@ -45,7 +45,7 @@ ms.locfileid: "53840115"
 - HKLM \\ 系统 \\ 设置
 - HKLM \\ 软件 \\ Microsoft \\ IntuneManagementExtension
 - HKLM \\ 软件 \\ Microsoft \\ SystemCertificates \\ AuthRoot
-- HKLM \\ SOFTWARE Microsoft Windows \\ \\ 高级威胁防护
+- HKLM \\ SOFTWARE \\ Microsoft \\ Windows高级威胁防护
 - HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion Authentication \\ \\ LogonUI
 - HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion Internet \\ 设置
 - HKLM \\ 软件 Microsoft Windows \\ \\ \\ CurrentVersion \\ 卸载
@@ -99,14 +99,14 @@ ms.locfileid: "53840115"
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
-- 设置
+- 安装
 - 系统警报
 
 ### <a name="files"></a>文件
 
 - %ProgramData% \\ Microsoft \\ DiagnosticLogCSP \\ Collectors \\ \* .etl
 - %ProgramData% \\ Microsoft \\ IntuneManagementExtension \\ Logs \\ \* .\*
-- %ProgramData% \\ Microsoft Windows Defender Support \\ \\ \\MpSupportFiles.cab
+- %ProgramData% \\ Microsoft \\ Windows Defender \\ 支持 \\MpSupportFiles.cab
 - %ProgramData% \\ Microsoft \\ Windows \\ WlanReport \\wlan-report-latest.html
 - %ProgramData% \\ Microsoft \\ Windows \\ WlanReport -SourceFileName wlan-report-latest.html
 - %windir% \\ ccm \\ logs \* .log
@@ -115,8 +115,8 @@ ms.locfileid: "53840115"
 - %windir% \\ logs \\ measuredboot \* .\*
 - %windir% \\ Logs \\ WindowsUpdate \* .etl
 - %windir% \\ inf \\ \* .log
-- %windir% \\ \\ 服务会话 \\ActionList.xml
-- %windir% \\ \\ 服务会话 \\Sessions.xml
+- %windir% \\ \\ 服务 \\ 会话ActionList.xml
+- %windir% \\ \\ 服务 \\ 会话Sessions.xml
 - %windir% \\ SoftwareDistribution \\ DataStore \\ Logs \\ edb.log
 - %windir% \\ SoftwareDistribution \\ DataStore \\ DataStore.edb
 - %windir% \\ logs \\ dism \\ dism.log

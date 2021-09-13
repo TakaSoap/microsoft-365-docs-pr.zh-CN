@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 4bc846927524bd80adf512107e1d072c7969d58f
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195969"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender先决条件
 
@@ -35,10 +35,10 @@ ms.locfileid: "58614922"
 **适用于：**
 - Microsoft 365 Defender
 
-了解有关预配和使用 Microsoft 365 Defender[的许可和其他要求](microsoft-365-defender.md)。
+了解预配和使用应用程序的许可[和其他Microsoft 365 Defender。](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>许可要求
-通过以下任一许可证，Microsoft 365 Defender门户中的Microsoft 365 Defender功能，而无需额外付费：
+通过这些许可证中的任一许可证，Microsoft 365 Defender门户中的Microsoft 365 Defender功能，而无需额外付费：
 
 - Microsoft 365 E5 或 A5
 - Microsoft 365 E3加载项Microsoft 365 E5 安全性加载项
@@ -62,12 +62,12 @@ ms.locfileid: "58614922"
 > 你需要分配有[Azure AD](/azure/active-directory/roles/permissions-reference)中的帐单管理员或全局读者角色，才能看到许可证信息。  如果遇到访问问题，请联系全局管理员。
 
 ## <a name="required-permissions"></a>所需权限
-您必须是 **全局管理员** 或安全 **管理员Azure Active Directory才能** 启用Microsoft 365 Defender。 有关使用管理角色Microsoft 365 Defender以及如何控制数据访问的信息，请阅读有关管理对 Microsoft 365 Defender[的访问](m365d-permissions.md)。
+您必须是 **全局管理员** 或安全管理员Azure Active Directory才能启用Microsoft 365 Defender。 有关使用管理角色Microsoft 365 Defender以及如何控制数据访问的信息，请阅读有关管理对 Microsoft 365 Defender[的访问](m365d-permissions.md)。
 
 ## <a name="browser-requirements"></a>浏览器要求
-使用 Microsoft 365 Defender、Microsoft 365 Defender 11 Microsoft Edge Internet Explorer 11 或任何符合 HTML 5 的 Web 浏览器访问 Microsoft 365 Defender 门户中的网站。
+使用 Microsoft 365 Defender、Microsoft 365 Defender 11 Microsoft Edge或任何符合 HTML 5 的 Web Internet Explorer访问网站门户中的网站。
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>是否向美国政府GCC、GCC高及其他美国政府机构提供
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>是否向美国GCC、GCC High 以及其他美国政府机构提供
 目前，Microsoft 365 Defender *不适用于：*
 - 美国政府社区云 (GCC) 
 - 美国政府社区云高 (GCC高) 
@@ -82,7 +82,7 @@ ms.locfileid: "58614922"
 - 挪威 
 - 新加坡 
 - 南非
-- 瑞士 
+- Switzerland（瑞士） 
 - 阿拉伯联合酋长国 
 
 

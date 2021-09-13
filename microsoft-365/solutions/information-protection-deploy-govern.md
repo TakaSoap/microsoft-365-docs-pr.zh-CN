@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用Microsoft 365保留标签和策略来管理你的Microsoft 365中的个人数据。
-ms.openlocfilehash: 06d3c19918d7e2963bffbb0f663971bbbbb209891f62ee9c83ebcc59b74e16d1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171509"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私条例约束的信息
 
@@ -58,7 +58,7 @@ ms.locfileid: "53843871"
 
 - 在 5 年不活动后对使用者帐户进行注销，并且要求在此后删除或匿名处理帐户数据，这要求系统在存储数据与与通知和其他自动化相关的工作流之间协调工作。
 - 配置与 GDPR 相关的策略和过程在被取代后保留三年的规则，这符合组织的策略和程序的保留计划。
-- 维护单独的订阅，以通过其支持组织与消费者进行通信。 所有电子邮件通信在两周后保留和删除，以减少系统内的任何隐私债务增加。
+- 维护单独的订阅，通过支持组织与消费者进行通信。 所有电子邮件通信在两周后保留和删除，以减少系统内的任何隐私债务增加。
 
 要回答的一个关键问题是： 
 
@@ -68,7 +68,7 @@ ms.locfileid: "53843871"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>管理信息治理Microsoft 365
 
-首先，请参阅管理[信息治理](../compliance/manage-information-governance.md)和数据保留、删除和销毁[Microsoft 365。](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
+首先，请参阅管理[信息治理](../compliance/manage-information-governance.md)和数据[保留、删除和销毁Microsoft 365。](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>制定容器、电子邮件和内容的数据保留计划
 
@@ -80,7 +80,7 @@ ms.locfileid: "53843871"
 
 - 建立此类型的有效数据管理策略的关键是重点关注需要更正式的管理的最高优先级业务功能和信息类型。 示例包括法律合同、财务报表和监管合规性文档。 尝试避免对每种信息类型使用单独的保留计划。 尽量利用常规类别，例如，常规业务内容的保留计划为 7 年。
 
-- 在更好地了解环境中的个人信息类型后，为此类内容制定保留和删除计划，并调整信息体系结构，以便更轻松地管理此类信息。 例如，将个人信息隔离在具有受控访问权限的单独网站、库或文件夹中。
+- 一旦更好地了解环境中的个人信息类型，请为此类内容制定保留和删除计划，并调整信息体系结构，以便更轻松地管理此类信息。 例如，将个人信息隔离在具有受控访问权限的单独网站、库或文件夹中。
 
 ### <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
@@ -88,6 +88,6 @@ ms.locfileid: "53843871"
 
 ### <a name="records-management"></a>记录管理
 
-使用声明内容记录的保留标签，为记录中数据[](../compliance/records-management.md)实现Microsoft 365。
+使用声明内容记录的保留标签[，为记录](../compliance/records-management.md)中数据实现Microsoft 365。
 
-对于数据隐私， (部门收到的) DSR 的数据主体请求将被声明为记录，并可以无限期存储或经过证明处理，以遵守法规活动保留规范。
+对于数据隐私， (部门) DSR) 的数据主体请求将被声明为记录，并可以无限期存储或经过证明处理，以遵守法规活动保留规范。

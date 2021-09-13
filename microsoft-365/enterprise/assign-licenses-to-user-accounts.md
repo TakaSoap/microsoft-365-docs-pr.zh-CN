@@ -25,21 +25,21 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: 介绍如何将Microsoft 365或基于组成员身份分配给用户帐户。
+description: 介绍如何将Microsoft 365许可证分配给用户帐户，无论是单独分配还是基于组成员身份。
 ms.openlocfilehash: 2d2afe7b9989ef7b82920a45e3dacd574cd51b5c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196378"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>将Microsoft 365许可证分配给用户帐户
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-对于仅云标识模型，Microsoft 365用户帐户创建时分配这些许可证，具体取决于创建方式。
+对于仅云标识模型，可以在Microsoft 365用户帐户时，根据用户帐户的创建方式分配这些许可证。
 
-对于混合标识模型，当 Active Directory 域服务 (AD DS) 用户帐户首次同步时，不会自动为它们分配位置或 Microsoft 365 许可证。 **在分配许可证之前或之前，必须使用用户位置配置每个用户帐户。**
+对于混合标识模型，当 Active Directory 域服务 (AD DS) 用户帐户首次同步时，不会自动为其分配位置或 Microsoft 365 许可证。 **在分配许可证之前或之前，必须使用用户位置配置每个用户帐户。**
 
 在任一情况下，都必须向用户帐户分配许可证，以便Microsoft 365访问电子邮件和Microsoft Teams。
 
@@ -68,6 +68,6 @@ ms.locfileid: "58356930"
 使用已分配许可证的一组适当的用户帐户，你现在可以：
 
 - [实现安全性](../security/office-365-security/security-roadmap.md)
-- [部署客户端软件，如Microsoft 365 应用版](/DeployOffice/deployment-guide-microsoft-365-apps)
+- [部署客户端软件，例如Microsoft 365 应用版](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [设置设备管理](device-management-roadmap-microsoft-365.md)
 - [配置服务和应用程序](configure-services-and-applications.md)

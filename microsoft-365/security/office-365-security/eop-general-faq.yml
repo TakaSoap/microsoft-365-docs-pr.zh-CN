@@ -16,12 +16,12 @@ metadata:
   description: 获取有关使用云托管的电子邮件筛选服务Exchange Online Protection (EOP) 常见问题的解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c46f918b644fdfb85b9290a09a8dea03571840b69d8c9d8508d3be5c9d7d428f
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "56790050"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59197213"
 title: EOP 一般常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -57,11 +57,11 @@ sections:
   - question: >
       什么是 EOP？
     answer: >
-      EOP 是一种云托管的电子邮件筛选服务，用于保护客户免受垃圾邮件和恶意软件的攻击，并实施自定义策略规则。 EOP 包含在任何包含Microsoft 365邮箱的任何Exchange Online订阅中。 EOP 还作为独立产品/服务提供，以帮助保护本地电子邮件环境。
+      EOP 是一种云托管的电子邮件筛选服务，用于保护客户免受垃圾邮件和恶意软件的攻击，并实施自定义策略规则。 EOP 包含在任何包含Microsoft 365邮箱的任何Exchange Online订阅中。 EOP 也作为独立产品/服务提供，以帮助保护本地电子邮件环境。
   - question: >
       如何注册 EOP 试用版或购买 EOP？
     answer: >
-      在主页 上注册 EOP 试用版或通过 web Exchange Online Protection [EOP。](https://products.office.com/exchange/exchange-email-security-spam-protection) 请注意，试用版购买的功能与付费订阅的功能相同，但还包括[Exchange Enterprise CAL with Services 订阅计划中提供](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview)的其他功能。
+      注册 EOP 试用版或通过 Web 购买 EOP，Exchange Online Protection[主页 。](https://products.office.com/exchange/exchange-email-security-spam-protection) 请注意，试用版购买的功能与付费订阅的功能相同，但还包括[Exchange Enterprise CAL with Services 订阅计划提供](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview)的其他功能。
   - question: >
       EOP 如何定价？
     answer: >
@@ -81,12 +81,12 @@ sections:
   - question: >
       EOP 是否具有可在其中了解已知问题和预期解决方案的通信门户？ 新功能如何？
     answer: >
-      该Microsoft 365 管理中心将包含此信息中的一部分。 如果受服务级别事件影响，则应该会看到通信警报 (登录服务后，通常会) 一个铃声Microsoft 365 管理中心。 我们建议你阅读所有项的信息，然后酌情进行处理。
+      该Microsoft 365 管理中心将包含此信息中的一部分。 如果受到服务级别事件的影响，则应该会看到通信警报 (在登录服务后) 一个铃声Microsoft 365 管理中心。 我们建议你阅读所有项的信息，然后酌情进行处理。
 
 
-      关于新的 EOP 功能，Microsoft 365[业务](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)路线图是一个很好的资源，用于查找有关即将推出的新功能的信息。 我们还将在博客网站上发布有关新功能的[Microsoft 365文章。](https://www.microsoft.com/microsoft-365/blog/)
+      关于新的 EOP 功能[，Microsoft 365业务](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)路线图是一个很好的资源，用于查找有关即将推出的新功能的信息。 我们还将在博客网站上发布有关新功能的[Microsoft 365文章。](https://www.microsoft.com/microsoft-365/blog/)
   - question: >
-      该服务是否与旧版 Exchange（如 (2010 Exchange Server 2010) 和非 Exchange环境）一起运行？
+      该服务是否与旧版 Exchange（如 (2010 Exchange Server 和非) 环境Exchange？
     answer: >
       是，该服务与服务器无关，可用于任何 SMTP 邮件传输代理。
   - question: >
@@ -96,7 +96,7 @@ sections:
   - question: >
       设置 EOP 需要什么权限？
     answer: >
-      若要配置 EOP，您必须 Exchange是全局管理员或组织管理角色 (组 (公司管理员) 。
+      若要配置 EOP，您必须是全局管理员或组织管理角色Exchange组 (公司管理员) 。
   - question: >
       如何知道数据和私人信息是安全的？
     answer: >
@@ -104,7 +104,7 @@ sections:
   - question: >
       我是否应注意任何限制，例如邮件大小限制？
     answer: >
-      是的。 有关 EOP 中限制的信息，请参阅Exchange Online Protection[限制。](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+      能。 有关 EOP 中限制的信息，请参阅Exchange Online Protection[限制。](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
   - question: >
       EOP 是否支持 PowerShell？
     answer: 是，可通过 PowerShell 使用完整的 EOP 功能：Exchange Online邮箱的组织使用 Exchange Online PowerShell;独立 EOP 组织的 EOP PowerShell。 有关详细信息，请参阅 Exchange Online [PowerShell](/powershell/exchange/exchange-online-powershell)和[Exchange Online Protection PowerShell。](/powershell/exchange/exchange-online-protection-powershell)

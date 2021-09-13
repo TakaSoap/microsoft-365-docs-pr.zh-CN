@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: f7f1f1c4a6655142401f121def17999d4f07d9f9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196122"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>内部风险管理Microsoft 365
 
 越来越多的员工能够跨各种平台和服务创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因员工离职而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
 
-Microsoft 365中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施缓解这些风险。
+Microsoft 365中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以识别风险指标并采取措施缓解这些风险。
 
 观看下面的视频，了解内部风险管理如何有助于组织在确定组织价值、文化及用户体验优先级时预防、检测和包含风险：
 <br>

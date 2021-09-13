@@ -13,11 +13,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: cf9b1e1a485000bee7bf672690af5979767fb34b
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196717"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -30,7 +30,7 @@ Microsoft 托管桌面云托管服务。 有一组终结点Microsoft 托管桌�
 
 客户可以通过直接通过防火墙或代理Microsoft 365所有受信任的网络请求、绕过身份验证和所有其他数据包级检查或处理来优化其网络。 这样可减少延迟和外围容量要求。 
 
-此外，为了优化Microsoft 托管桌面基于云的服务，这些终结点需要客户客户端浏览器及其边缘网络中设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
+此外，为了Microsoft 托管桌面基于云的服务的性能，这些终结点需要客户客户端浏览器及其边缘网络中设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
 
 ### <a name="proxy-requirement"></a>代理要求
 
@@ -38,7 +38,7 @@ Microsoft 托管桌面云托管服务。 有一组终结点Microsoft 托管桌�
 
 ### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>允许的终结点是Microsoft 托管桌面
 
-Microsoft 托管桌面 Azure 门户托管其 Web 控制台。 以下 URL 必须位于代理和防火墙的允许列表中，以便Microsoft 托管桌面与 Microsoft 服务通信。  
+Microsoft 托管桌面 Azure 门户托管其 Web 控制台。 以下 URL 必须位于代理和防火墙的允许列表中，以便Microsoft 托管桌面 Microsoft 服务进行通信。  
 
 the Microsoft 托管桌面 URL is used for anything our service runs on the customer API. 必须确保此 URL 始终可在公司网络上访问。
 
@@ -56,7 +56,7 @@ Microsoft 支持和恢复助手 | \*.apibasic.diagnostics.office.com  <br>\*.api
 
 Microsoft 服务 | 文档
 --- | ---
-Windows 10 企业版包括Windows企业更新 | [管理版本 1803 Windows 10连接终结点](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理连接终结点Windows 10 版本 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本 1903 的连接终结点](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 2004 Windows 10连接终结点](/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 企业版包括Windows更新 for Business | [管理版本 1803 Windows 10连接终结点](/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理连接终结点Windows 10 版本 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理版本 1903 Windows 10连接终结点](/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本 2004 的连接终结点](/windows/privacy/manage-windows-2004-endpoints)
 传递优化 | [配置传递优化以Windows 10更新](/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365URL 和 IP 地址范围](../../enterprise/urls-and-ip-address-ranges.md)
 Azure Active Directory | [混合标识所需的端口和协议](/azure/active-directory/hybrid/reference-connect-ports) 以及 [Active Directory 和 Active Directory 域服务端口要求](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 
@@ -66,7 +66,7 @@ Windows Autopilot | [WindowsAutopilot 网络要求](/windows/deployment/windows-
 
 Microsoft 服务  | 允许列表所需的 URL | 文档源
 --- | --- | ---
-Windows适用于企业更新 (WUfB)  | update.microsoft.com<br>\*.update.microsoft.com<br>download.windowsupdate.com<br>\*.download.windowsupdate.com<br>download.microsoft.com<br>\*.download.microsoft.com<br>windowsupdate.com<br>\*.windowsupdate.com<br>ntservicepack.microsoft.com<br>wustat.windows.com<br>login.live.com <br>mp.microsoft.com<br>\*.mp.microsoft.com | [Windows针对业务防火墙和代理要求的更新](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
+WindowsWUfB ()  | update.microsoft.com<br>\*.update.microsoft.com<br>download.windowsupdate.com<br>\*.download.windowsupdate.com<br>download.microsoft.com<br>\*.download.microsoft.com<br>windowsupdate.com<br>\*.windowsupdate.com<br>ntservicepack.microsoft.com<br>wustat.windows.com<br>login.live.com <br>mp.microsoft.com<br>\*.mp.microsoft.com | [Windows针对业务防火墙和代理要求的更新](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 传递优化 | \*.do.dsp.mp.microsoft.com<br>\*.dl.delivery.mp.microsoft.com <br>\*.emdl.ws.microsoft.com<br>\*.download.windowsupdate.com <br>\*.windowsupdate.com   | [Windows更新代理要求](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 适用于企业的 Microsoft Store | login.live.com <br>account.live.com <br>clientconfig.passport.net <br>wustat.windows.com <br>\*.windowsupdate.com <br>\*.wns.windows.com <br>\*.hotmail.com <br>\*.outlook.com <br>\*.microsoft.com <br>\*.msftncsi.com/ncsi.txt   | [Microsoft Store允许列表](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
 Microsoft 365 | \*.office365.com<br>\*.office.com<br>\*.office.net<br>\*.live.com<br>\*.portal.cloudappsecurity.com<br>\*.portal.cloudappsecurity.com<br>\*.us.portal.cloudappsecurity.com<br>\*.eu.portal.cloudappsecurity.com<br>\*.us2.portal.cloudappsecurity.com<br><tenant>.onmicrosoft.com<br>account.office.net<br>agent.office.net<br>apc.delve.office.com<br>aus.delve.office.com<br>can.delve.office.com<br>delve.office.com<br>eur.delve.office.com<br>gbr.delve.office.com<br>home.office.com<br>ind.delve.office.com<br>jpn.delve.office.com<br>kor.delve.office.com<br>lam.delve.office.com<br>nam.delve.office.com<br>admin.microsoft.com<br>outlook.office365.com<br>suite.office.net<br>webshell.suite.office.com<br>www.office.com<br>\*.aria.microsoft.com<br>browser.pipe.aria.microsoft.com<br>mobile.pipe.aria.microsoft.com<br>portal.microsoftonline.com<br>clientlog.admin.microsoft.com<br>nexus.officeapps.live.com<br>nexusrules.officeapps.live.com<br>amp.azure.net<br>\*.o365weve.com<br>auth.gfx.ms<br>appsforoffice.microsoft.com<br>assets.onestore.ms<br>az826701.vo.msecnd.net<br>c.microsoft.com<br>c1.microsoft.com<br>client.hip.live.com<br>contentstorage.osi.office.net<br>dgps.support.microsoft.com<br>docs.microsoft.com<br>groupsapi-<br>rod.outlookgroups.ms<br>groupsapi2-prod.outlookgroups.ms<br>groupsapi3-prod.outlookgroups.ms<br>groupsapi4-prod.outlookgroups.ms<br>msdn.microsoft.com<br>platform.linkedin.com<br>products.office.com<br>prod.msocdn.com<br>r1.res.office365.com<br>r4.res.office365.com<br>res.delve.office.com<br>shellprod.msocdn.com<br>support.content.office.net<br>support.microsoft.com<br>support.office.com<br>technet.microsoft.com<br>templates.office.com<br>video.osi.office.net<br>videocontent.osi.office.net<br>videoplayercdn.osi.office.net<br>\*.manage.office.com<br>\*.protection.office.com<br>manage.office.com<br>Protection.office.com<br>diagnostics.office.com | [Microsoft 365URL 和 IP 地址范围](../../enterprise/urls-and-ip-address-ranges.md)
@@ -79,16 +79,16 @@ Microsoft Defender 高级威胁防护 (ATP) | \ *.oms.opinsights.azure.com <br>\
 SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [Office 365 URL 和 IP 地址范围](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 OneDrive for Business | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [Office 365 URL 和 IP 地址范围](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [Office 365 URL 和 IP 地址范围](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI & Express 路由](/power-bi/service-admin-power-bi-expressroute) 
+Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI &快速路由](/power-bi/service-admin-power-bi-expressroute) 
 OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Office 365 URL 和 IP 地址范围](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>准备使用Microsoft 托管桌面
 
 1. 查看 [托管桌面应用](prerequisites.md)。
 2. 运行 [准备情况评估工具](readiness-assessment-tool.md)。
-1. 购买[公司门户](../get-started/company-portal.md)。
+1. 购买 [公司门户](../get-started/company-portal.md)。
 1. 查看 [来宾帐户的先决条件](guest-accounts.md)。
-1. 检查网络配置 (本文) 。
+1. 查看本文 (网络配置) 。
 1. [准备证书和网络配置文件](certs-wifi-lan.md)。
 1. [准备用户对数据的访问权限](authentication.md)。
 1. [准备应用](apps.md)。

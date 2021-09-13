@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509613"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222390"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>使用基本权限访问门户
 
@@ -50,14 +50,14 @@ ms.locfileid: "58509613"
 - 可读写 (完全访问权限) 
 - 只读访问
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 
 - 安装 Azure PowerShell。 有关详细信息，请参阅如何安装和配置[Azure PowerShell。](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)
 
   > [!NOTE]
   > 需要在提升的命令行中运行 PowerShell cmdlet。
 
-- 连接你的Azure Active Directory。 有关详细信息，请参阅[连接-MsolService](/powershell/module/msonline/connect-msolservice)。
+- 连接到Azure Active Directory。 有关详细信息，请参阅[连接-MsolService。](/powershell/module/msonline/connect-msolservice)
 
   - **完全访问权限**：具有完全访问权限的用户可以登录、查看所有系统信息并解决警报、提交文件进行深入分析以及下载载入程序包。 分配完全访问权限需要将用户添加到"安全管理员"或"全局管理员"AAD 内置角色。
   - **只读访问**：具有只读访问权限的用户可以登录、查看所有警报和相关信息。
@@ -84,7 +84,7 @@ ms.locfileid: "58509613"
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>使用 Azure 门户分配用户访问权限
 
-有关详细信息，请参阅将[管理员和非管理员角色分配给具有Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+有关详细信息，请参阅 Assign [administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
 
 ## <a name="related-topic"></a>相关主题
 

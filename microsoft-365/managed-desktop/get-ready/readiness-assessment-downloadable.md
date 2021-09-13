@@ -11,15 +11,15 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533359"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196714"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>可下载的准备情况评估检查器
 
-若要很好地使用Microsoft 托管桌面，设备必须满足硬件和设置的某些要求。 此外，每台设备必须能够到达关键终结点。 下载并运行此工具以获取 HTML 报告、查看结果，然后采取措施。 你需要下载该工具和支持文件，然后在你想要在设备上注册的每台设备上手动Microsoft 托管桌面。
+若要很好地使用Microsoft 托管桌面，设备必须满足硬件和设置的某些要求。 此外，每台设备必须能够到达关键终结点。 下载并运行此工具以获取 HTML 报告、查看结果，然后采取措施。 你需要下载该工具和支持文件，然后在你想要在设备上注册的每个设备上手动Microsoft 托管桌面。
 
 对于每个检查，该工具将报告三个可能的结果之一：
 
@@ -59,7 +59,7 @@ ms.locfileid: "58533359"
 
 ### <a name="network-endpoints"></a>网络终结点
 
-设备能够访问多个[关键终结点，](network.md)以使用Microsoft 托管桌面。
+设备能够访问多个关键[终结点，](network.md)以使用Microsoft 托管桌面。
 
 如果工具报告 **"未** 准备好"结果，请参阅详细报告，了解哪些终结点不可访问。 然后调整防火墙或其他网络设置，以确保可以到达这些终结点。
 

@@ -1,6 +1,6 @@
 ---
 title: 将应用部署到设备
-description: 有关在设备上添加和部署应用Microsoft 托管桌面的信息。
+description: 有关向设备中添加和部署应用Microsoft 托管桌面的信息。
 keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、应用、业务线应用、LOB 应用
 ms.service: m365-md
 author: jaimeo
@@ -10,18 +10,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: bcb1c85e533ae691c34d41bd6694e58c49617738
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196699"
 ---
 # <a name="deploy-apps-to-devices"></a>将应用部署到设备
 加入应用Microsoft 托管桌面包括向用户设备添加和部署应用。 使用应用门户Microsoft 托管桌面，可以添加和部署应用。 
 
 整个过程如下所示：
-1. 向 Microsoft 托管桌面 门户添加应用[-](#1)这可以是现有业务线 (LOB) 应用或 适用于企业的 Microsoft Store 中已与 Intune 同步的应用。 
-2. [创建Azure Active Directory (分配) AD](#2)组 - 你将使用这些组管理应用分配。
+1. [向 Microsoft 托管桌面](#1)门户添加应用 - 这可以是现有业务线 (LOB) 应用，或者是你已与 Intune 适用于企业的 Microsoft Store同步的应用。 
+2. [创建Azure Active Directory (分配) AD 组](#2)- 你将使用这些组管理应用分配。
 3. [将应用分配给用户](#3)
 
 <span id="1" />
@@ -31,7 +31,7 @@ ms.locfileid: "58365173"
 
 <span id="lob-apps">
 
-###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 或 Windows基于 MSI 的应用Microsoft 托管桌面
+###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>将基于Windows MSI 的 Win32 或 Microsoft 托管桌面
 
 你可以向企业门户添加业务线 (LOB) 应用Microsoft 托管桌面应用。 有关在设备上安装的应用Microsoft 托管桌面的信息，请参阅Microsoft 托管桌面[要求](../service-description/mmd-app-requirements.md)。
 
@@ -39,19 +39,19 @@ ms.locfileid: "58365173"
 
 **将 LOB 应用或Windows添加到Microsoft 托管桌面门户**
 
-你可以登录到 Microsoft 托管桌面 门户，或登录到 Intune，然后搜索Microsoft 托管桌面。 我们将展示如何登录Microsoft 托管桌面门户。 
+你可以登录到 Microsoft 托管桌面 门户，或登录到 Intune，然后搜索Microsoft 托管桌面。 我们将展示如何登录 Microsoft 托管桌面 门户。 
 
-1.    登录到管理[Microsoft 托管桌面 。](https://aka.ms/mmdportal) 
+1.    登录到管理[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。 
 2.    在 **"清单"** 下，选择 **"应用"。**
 3.    在应用工作负载中 **，选择添加**。
 4.    在 **"添加应用**"**中，** 选择"业务线应用"或 **Windows Win32 (应用) 。**
     - 如果你选择了 **业务线** 应用，请参阅将 Windows 业务线应用添加到 [Microsoft Intune，](/intune/lob-apps-windows)了解如何添加和配置业务线应用。
-    - 如果你已选择 **Windows Win32** (，请参阅 [Win32](/intune/apps-win32-app-management)应用) 了解有关添加和配置Windows说明。
+    - 如果你已选择 **Windows Win32** (应用) ，请参阅 [Win32](/intune/apps-win32-app-management)应用管理，了解有关添加和配置Windows说明。
 
 <span id="msfb-apps">
 
 ### <a name="microsoft-store-for-business-apps"></a>适用于企业的 Microsoft Store应用
-如果你尚未注册适用于企业的 Microsoft Store，可以在购买应用时注册。 拥有应用后，你可以将其与Microsoft 托管桌面。 
+如果你尚未注册应用适用于企业的 Microsoft Store，可以在购买应用时注册。 拥有应用后，你可以将其与Microsoft 托管桌面。 
 
 **从应用商店购买适用于企业的 Microsoft Store**
 
@@ -62,7 +62,7 @@ ms.locfileid: "58365173"
 
 **强制在 Intune 和 适用于企业的 Microsoft Store**
 1. 登录到管理[Microsoft Endpoint Manager中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择 **"租户**  >  **管理连接器和令牌**  >  **适用于企业的 Microsoft Store"。**
+2. 选择 **"**  >  **租户管理连接器和令牌**  >  **适用于企业的 Microsoft Store"。**
 3. 选择 **"** 同步"，获取从 Intune Microsoft Store购买的应用。
 
 **验证 Intune 和 适用于企业的 Microsoft Store同步是否处于活动状态**
@@ -91,26 +91,26 @@ ms.locfileid: "58365173"
 
 **将应用分配给用户**
 
-1. 登录到管理[Microsoft 托管桌面 。](https://aka.ms/mmdportal)
+1. 登录到管理[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。
 2. 在"托管桌面"窗格中，选择"**应用"。**
 3. 在"应用工作负载"中，选择要为其分配用户的应用，然后选择"**分配用户组"。**
 4. 对于特定应用，选择分配类型 (可用、必需、卸载) 分配相应的组。
 5. 在"分配应用"窗格中，选择"确定 **"。**
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
 
-1. 访问 [管理门户](access-admin-portal.md)。
-1. [在管理门户中添加并验证管理员联系人](add-admin-contacts.md)。
+1. 访问 [管理员门户](access-admin-portal.md)。
+1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。
 1. [注册后调整设置](conditional-access.md)。
-1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. 本文 (部署) 。
 1. [设置设备](set-up-devices.md)。
-1. 设置 [Autopilot 和注册状态页面的首次运行体验](esp-first-run.md)。
+1. 设置 [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)。
 1. [启用用户支持功能](enable-support.md)。
-1. [让用户准备好使用设备](get-started-devices.md)。
-1. [应用控件入门](get-started-app-control.md)。
+1. [让用户做好使用设备的准备](get-started-devices.md)。
+1. [开始使用应用控制](get-started-app-control.md)。
 
 
 <!--# Preparing apps for Microsoft Managed Desktop

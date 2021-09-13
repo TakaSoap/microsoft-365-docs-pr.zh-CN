@@ -16,24 +16,24 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何阻止将来宾添加到特定组
-ms.openlocfilehash: ad83ab0b0ec739691721627b09924e1e0ab8ee1d07513634606525f2371d0f6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196237"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来宾添加到特定组或Microsoft 365组Microsoft Teams组
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止将来宾添加到特定组Microsoft 365或Microsoft Teams团队
 
-如果要允许对大多数组和团队进行来宾访问，但希望阻止某些组和团队访问来宾，可以阻止单个组和团队的来宾访问。  (通过阻止来宾访问关联组来阻止来宾访问团队。) 这将阻止添加新来宾，但不删除已加入组或团队的来宾。
+如果要允许对大多数组和团队进行来宾访问，但希望阻止某些组和团队访问来宾，可以阻止单个组和团队的来宾访问。  (通过阻止来宾访问关联组来阻止来宾访问团队。) 这将阻止添加新来宾，但不删除已位于组或团队中的来宾。
 
-如果你在你的组织中使用敏感度标签，我们建议使用它们以按组控制来宾访问。 若要了解如何进行此操作，请使用敏感度标签来保护网站Microsoft Teams、Microsoft 365[组SharePoint内容](../compliance/sensitivity-labels-teams-groups-sites.md)。 这是建议的方法。
+如果你在你的组织中使用敏感度标签，我们建议使用它们以按组控制来宾访问。 若要了解如何执行此操作，请使用敏感度标签来保护网站Microsoft Teams、Microsoft 365[组SharePoint内容](../compliance/sensitivity-labels-teams-groups-sites.md)。 这是建议的方法。
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 更改组设置
 
-您还可以使用 PowerShell 阻止向各个组添加新来宾。  (请记住，团队的关联网站SharePoint单独的[来宾](/sharepoint/change-external-sharing-site)共享控件 。) 
+您还可以使用 PowerShell 阻止向各个组添加新来宾。  (请记住，团队的关联网站SharePoint单独的[来宾共享控件](/sharepoint/change-external-sharing-site)。) 
 
-你必须使用 Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2)的预览版Graph (**AzureADPreview**) 更改组级别的来宾访问设置：
+必须使用 Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2)的预览版Graph (**AzureADPreview**) 更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 

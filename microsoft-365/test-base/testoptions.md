@@ -15,15 +15,15 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 4a0c6944387def430ef0091239b5111ec533dcd6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196428"
 ---
 # <a name="step-5-choose-your-test-options"></a>步骤 5：选择测试选项。 
 
-该选项卡适用于希望执行功能测试以指示应在何时应用 Windows Update 修补程序以执行其功能测试脚本 ```Test Options``` 的用户。
+该选项卡适用于希望执行功能测试以指示应何时应用 Windows Update 修补程序以执行其功能测试脚本 ```Test Options``` 的用户。
 
 ![测试选项的图像。 开箱即用或功能测试。](Media/testoptions.png)
 

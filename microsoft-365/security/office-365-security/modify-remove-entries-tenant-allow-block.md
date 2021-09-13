@@ -17,11 +17,11 @@ description: 管理员可以了解如何修改和删除安全门户中租户允�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171529"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>修改和删除租户允许/阻止列表中的条目
 
@@ -38,7 +38,7 @@ ms.locfileid: "58573807"
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>修改租户允许/阻止列表中的条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要修改的条目类型的选项卡：
    - **发件人) 
@@ -58,14 +58,14 @@ ms.locfileid: "58573807"
      - **可选注释**
    - **网络钓鱼**
      - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
-4. 完成后，单击“**保存**”。
+4. 完成后，单击“保存”。
 
 > [!NOTE]
 > 创建日期后最多只能延长 30 天。 阻止可延长最多 90 天，但与允许不同，也可以设置为永不过期。
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>从租户允许/阻止列表中删除条目
 
-1. In the Microsoft 365 Defender portal， go to **Policies & rules** Threat \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal， go to **Policies & rules Threat** \> **Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. 选择包含要删除的条目类型的选项卡：
    - **发件人**

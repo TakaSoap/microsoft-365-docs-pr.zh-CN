@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解通信治理协作方案。
-ms.openlocfilehash: a85a88c79d9a08750c6ca2e9c16028c6a0407aeec68c8eb205f7f8132735d807
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196439"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>协作方案的通信治理
 
@@ -32,7 +32,7 @@ Microsoft 365提供了许多控件，可帮助你管理组织的通信，包括�
 |类别|说明|参考|
 |:-------|:----------|:--------|
 |消息传递|||
-||管理用户在邮件处理中可以Teams。|[在 Teams 中管理消息传递策略](/microsoftteams/messaging-policies-in-teams)|
+||管理用户在邮件传送功能中可以Teams。|[在 Teams 中管理消息传递策略](/microsoftteams/messaging-policies-in-teams)|
 ||控制谁可以启动和回复频道中的帖子。|[在频道中设置和管理Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
 |会议|||
 ||管理会议参与者可以执行哪些工作。|[管理 Teams 中的会议策略](/microsoftteams/meeting-policies-in-teams)|
@@ -52,11 +52,11 @@ Microsoft 365提供了许多控件，可帮助你管理组织的通信，包括�
 
 ## <a name="meetings"></a>会议
 
-您可以控制可供会议参与者Teams的功能，包括计划、内容共享、参与者以及音频和视频策略。
+您可以控制可供会议参与者Teams的功能，包括安排、内容共享、参与者以及音频和视频策略。
 
 [管理 Teams 中的会议策略](/microsoftteams/meeting-policies-in-teams)
 
-你可以控制匿名加入Teams会议，从而允许具有指向会议的链接的任何人加入会议。
+你可以控制匿名加入Teams会议，这允许具有指向会议的链接的任何人加入会议。
 
 [允许匿名用户加入会议](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 

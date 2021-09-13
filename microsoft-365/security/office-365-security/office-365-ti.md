@@ -21,12 +21,12 @@ ms.custom:
 description: 了解 Microsoft Defender for Office 365 计划中的威胁调查和响应功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3af6aec423fd77dc04954974be05d3e299279e2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e6a237295a979797cd8884d07d1afe8e284cace
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196468"
 ---
 # <a name="threat-investigation-and-response"></a>威胁调查和响应
 
@@ -36,10 +36,10 @@ ms.locfileid: "58572847"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
 
-[Microsoft Defender](defender-for-office-365.md) for Office 365威胁调查和响应功能可帮助安全分析员和管理员通过执行Microsoft 365来保护其组织的业务数据：
+[Microsoft Defender](defender-for-office-365.md)中的威胁调查和响应功能Office 365 Microsoft 365安全分析员和管理员通过：
 
 - 轻松识别、监视和了解网络攻击
-- 帮助快速解决 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft Teams
+- 帮助快速解决 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft Teams 中Microsoft Teams
 - 提供见解和知识以帮助安全操作防止针对其组织的网络攻击
 - 针对[基于电子邮件的关键威胁Office 365](automated-investigation-response-office.md)自动调查和响应
 
@@ -80,11 +80,11 @@ ms.locfileid: "58572847"
 
 ### <a name="automated-investigation-and-response"></a>自动调查和响应
 
-使用 AIR (自动调查和) 功能，以节省将内容、设备和组织中面临威胁的人关联在一起所投入的时间和精力。 只要触发某些警报，或者由安全运营团队启动，AIR 进程就可以开始。 若要了解更多信息，请参阅 Office 365 中的[自动调查和Office 365。](automated-investigation-response-office.md)
+使用自动调查和响应 (AIR) 功能，节省将内容、设备和组织中面临威胁的人关联在一起所投入的时间和精力。 只要触发某些警报，或者由安全运营团队启动，AIR 进程就可以开始。 若要了解更多信息，请参阅 Office 365 中的[自动调查和Office 365。](automated-investigation-response-office.md)
 
 ## <a name="threat-intelligence-widgets"></a>威胁智能小组件
 
-作为 Microsoft Defender for Office 365计划 2 产品/服务一部分，安全分析师可以审阅有关已知威胁的详细信息。 这可用于确定是否可采取其他预防措施/步骤来保证用户安全。
+作为 Microsoft Defender for Office 365 2 产品/服务一部分，安全分析师可以审阅有关已知威胁的详细信息。 这可用于确定是否可以采取其他预防措施/步骤来保证用户安全。
 
 ![显示有关最近威胁的信息的安全趋势。](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
 
@@ -94,13 +94,13 @@ Microsoft 365威胁调查和响应功能包含在 Microsoft Defender for Office 
 
 ## <a name="required-roles-and-permissions"></a>所需角色和权限
 
-Microsoft Defender for Office 365使用基于角色的访问控制。 权限通过 Azure Active Directory、Microsoft 365 管理中心 或 Microsoft 365 Defender 门户中的特定角色分配。
+Microsoft Defender for Office 365使用基于角色的访问控制。 权限通过网站门户、Azure Active Directory门户Microsoft 365 管理中心中的Microsoft 365 Defender分配。
 
 > [!TIP]
-> 尽管某些角色（如安全管理员）可以在 Microsoft 365 Defender门户中分配，但请考虑使用 Microsoft 365 管理中心 或 Azure Active Directory。 有关角色、角色组和权限的信息，请参阅以下资源：
+> 尽管某些角色（如安全管理员）可以在 Microsoft 365 Defender中分配，但请考虑使用 Microsoft 365 管理中心 或 Azure Active Directory。 有关角色、角色组和权限的信息，请参阅以下资源：
 >
 > - [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)
-> - [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> - [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)
 
 <br>
 
@@ -108,11 +108,11 @@ Microsoft Defender for Office 365使用基于角色的访问控制。 权限通�
 
 |活动|角色和权限|
 |---|---|
-|使用威胁&漏洞管理仪表板 (或新的[安全仪表板) ](security-dashboard.md) <p> 查看有关最近威胁或当前威胁的信息|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全信息读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。|
-|使用 [资源管理器 (实时检测功能) ](threat-explorer.md) 分析威胁|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全信息读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。|
-|查看事件 (也称为调查)  <p> 向事件添加电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全信息读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。|
-|在事件中触发电子邮件操作 <p> 查找并删除可疑电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员** 以及 **搜索和清除** 角色</li></ul> <p> 全局 **管理员****和安全管理员** 角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。 <p> 搜索 **和清除** 角色必须在 Microsoft 36  Defender 门户 & 电子邮件和协作角色中 <https://security.microsoft.com> () 。|
-|将 Microsoft Defender for Office 365 计划 2 与 Microsoft Defender for Endpoint 集成 <p> 将 Microsoft Defender for Office 365 计划 2 与 SIEM 服务器集成|全局 **管理员或** 安全管理员角色在 Azure Active Directory () 或 Microsoft 365 管理中心 (<https://portal.azure.com> <https://admin.microsoft.com>) 。 <p> --- **加号** --- <p> 在其他应用程序（如 (或 SIEM Microsoft Defender 安全中心）[](/windows/security/threat-protection/microsoft-defender-atp/user-roles)中分配的适当) 。|
+|使用威胁&漏洞管理仪表板 (或新的 [安全](security-dashboard.md) 仪表板)  <p> 查看有关最近威胁或当前威胁的信息|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。|
+|使用 [资源管理器 (实时检测功能) ](threat-explorer.md) 分析威胁|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。|
+|查看事件 (也称为调查)  <p> 向事件添加电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或 <https://admin.microsoft.com> Microsoft 365 管理中心 () 。|
+|在事件中触发电子邮件操作 <p> 查找并删除可疑电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员** 以及 **搜索和清除** 角色</li></ul> <p> 全局 **管理员****和安全管理员** 角色可以分配给 Azure Active Directory () 或 Microsoft 365 管理中心 (<https://portal.azure.com> <https://admin.microsoft.com>) 。 <p> 搜索 **和清除** 角色必须在 Microsoft 36  Defender 门户 &电子邮件和协作角色中 <https://security.microsoft.com> () 。|
+|将 Microsoft Defender for Office 365 计划 2 与 Microsoft Defender for Endpoint 集成 <p> 将 Microsoft Defender for Office 365 计划 2 与 SIEM 服务器集成|全局 **管理员或** 安全管理员角色在 Azure Active Directory () 或 Microsoft 365 管理中心 (<https://portal.azure.com> <https://admin.microsoft.com>) 。 <p> --- **加号** --- <p> 在其他应用程序（如 (或 SIEM Microsoft Defender 安全中心）中分配的适当) 。 [](/windows/security/threat-protection/microsoft-defender-atp/user-roles)|
 |
 
 ## <a name="next-steps"></a>后续步骤

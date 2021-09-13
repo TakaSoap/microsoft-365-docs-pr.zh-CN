@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在手机上设置多重身份验证（有时也称为双重身份验证）。
-ms.openlocfilehash: e2cafa926f730d092debd1fde767bc74854658513dcb79cbefa64f13a5a39446
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906751"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196161"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>在手机上设置多重身份验证
 
@@ -38,7 +38,7 @@ ms.locfileid: "53906751"
 
 ## <a name="try-it"></a>试一试！
 
-1. 登录 时 [https://office.com](https://office.com) ，你将看到"需要 **更多信息"** 提示。 选择“下一步”。
+1. 登录 时 [https://office.com](https://office.com) ，你将看到"需要 **更多信息"** 提示。 选择 **下一步**。
 1. 在 **"步骤 1"****下，** 从"身份验证电话 **"** 下拉列表中选择"移动应用"。
 1. 在"希望如何使用移动应用？"下，选择要用于登录的方法：
     - 选择 **"接收验证通知"，** 直接从移动应用进行身份验证，其中可能包括指纹身份验证。
@@ -49,6 +49,6 @@ ms.locfileid: "53906751"
 1. 在Authenticator中，按照提示完成向导，然后选择加号 (+) 添加帐户。
 1. 选择 **"工作或** 学校帐户"，在系统提示授予拍摄图片和录制视频的权限时选择"允许"，然后按照说明扫描计算机上打开窗口中的 QR 代码。 
 1. 添加帐户后，选择"**获得它"。**
-1. 在计算机上，选择"下一 **步"，** 然后再次选择" **下一步** "。
+1. 在计算机上，选择"下 **一步"，** 然后再次选择" **下一步** "。
 1. 记下移动设备上显示的代码，在步骤 **2** 下的框中输入您计算机上代码，然后选择"验证 **"。**
 1. 在"步骤 **3"下的** 框中，输入备份电话号码，如办公室号码，选择"下一步"，然后选择"完成 **"。**

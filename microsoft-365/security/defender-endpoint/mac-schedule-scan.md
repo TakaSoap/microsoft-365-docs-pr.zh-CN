@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b432f7ba7887176168e482f745be77d431da4f4a7b201025263015c7a6179407
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9ec708ee24d33765203730412ddfc7eea5cc2e37
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53810998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196020"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
 
@@ -41,11 +41,11 @@ ms.locfileid: "53810998"
 
 可以在 macOS 设备上使用启动 *的守护程序* 创建扫描计划。
 
-有关此处使用的 *.plist* 文件格式详细信息，请参阅官方 Apple 开发人员网站的关于 [信息属性](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) 列表文件。
+有关此处使用的 *.plist* 文件格式详细信息，请参阅官方 Apple 开发人员网站的关于信息 [属性](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) 列表文件。
 
 ### <a name="schedule-a-quick-scan"></a>计划快速扫描
 
-以下代码显示计划快速扫描所需的架构。 
+以下代码显示了计划快速扫描所需的架构。 
 
 1. 打开文本编辑器，并使用此示例作为你自己的计划扫描文件的指南。
 
@@ -144,6 +144,6 @@ ms.locfileid: "53810998"
 
 ## <a name="schedule-a-scan-with-intune"></a>使用 Intune 计划扫描
 
-还可以计划使用扫描Microsoft Intune。 当 [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式恢复时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
+此外，还可以计划使用 Microsoft Intune。 当 [设备 runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
 
 有关如何 [在企业中使用此脚本](/mem/intune/apps/macos-shell-scripts) 的详细说明，请参阅在 Intune 中使用 macOS 设备的 shell 脚本。

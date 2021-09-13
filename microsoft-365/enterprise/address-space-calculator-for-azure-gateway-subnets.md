@@ -17,20 +17,20 @@ ms.custom:
 - seo-marvel-apr2020
 description: 摘要：使用 C3、Python 或 PowerShell 计算 Azure 网关子网的地址空间。
 ms.openlocfilehash: bd6caaec5e3873403b3b3ed5a1b6cf16a730d688
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195761"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure 网关子网的地址空间计算器
 
 连接到其他 (Azure) 服务中的 VNet 虚拟网络必须具有网关子网。 定义网关子网的最佳实践是：
 
-- 网关子网的前缀长度最大长度为 29 (例如，10.119.255.248/29) ，但当前建议使用前缀长度 27 (例如 10.119.255.224/27) 。
+- 网关子网的前缀长度最大长度为 29 (例如，10.119.255.248/29) ，但当前建议使用前缀长度 27 (例如，10.119.255.224/27) 。
 - 定义网关子网的地址空间时，请使用 VNet 地址空间的最后一部分。
 
-对于第二个建议，可以通过将网关子网使用的位设置为 0，将 VNet 地址空间中的其余位设置为 1 来确定网关子网的地址空间。 若要快速计算网关子网地址空间，而无需转换为二进制和回十进制，可以使用用 C# 或 Python 编写的控制台应用程序或 PowerShell 命令块。
+对于第二个建议，您可以通过将网关子网使用的位设置为 0，将 VNet 地址空间中的其余位设置为 1 来确定网关子网的地址空间。 若要快速计算网关子网地址空间，而无需转换为二进制和回十进制，可以使用用 C# 或 Python 编写的控制台应用程序或 PowerShell 命令块。
 
 本文包含 C#、Python 和 PowerShell 代码块，这些代码块根据 VNet 地址前缀和网关子网前缀长度的 w.x.y.z/n 值计算网关子网地址空间。
 

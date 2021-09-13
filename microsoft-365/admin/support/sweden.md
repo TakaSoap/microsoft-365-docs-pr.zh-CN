@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79c191d2e330629029c01efd28df8e3ff1d16f9cb4944e60de8239ec8b714ef2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c570e6d6dba2f823ac007fe2e6b5bbadcc5eb89b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197061"
 ---
 # <a name="contact-support-for-sweden"></a>联系瑞典支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53856627"
 ## <a name="phone-number"></a>电话号码
 020 160 5899
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

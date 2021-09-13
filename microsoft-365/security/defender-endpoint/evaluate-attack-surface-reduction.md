@@ -15,11 +15,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: a2f8d935caf3578ced6261d461eb5b18fa9bb070
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59222245"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
 
@@ -34,7 +34,7 @@ ms.locfileid: "58247998"
 
 攻击面减少规则有助于防止恶意软件通常用来危害设备或网络的操作。 攻击面减少规则有助于关闭恶意软件和勒索软件使用的许多常见入口点。
 
-为运行以下任一版本和版本攻击的设备的攻击面减少规则Windows：
+为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
 - Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
 - Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
@@ -42,12 +42,12 @@ ms.locfileid: "58247998"
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
-> 在客户端上启用攻击服务Windows Server 2016可能会导致意外结果，并影响服务器性能。 建议不要启用攻击面减少规则或将攻击面减少规则部署到不受支持的平台。
+> 在客户端上启用攻击Windows Server 2016规则可能会导致意外结果，并影响服务器性能。 建议不要启用攻击面减少规则或将攻击面减少规则部署到不受支持的平台。
 
 了解如何通过启用审核模式直接在你的组织中测试[](audit-windows-defender.md)功能来评估攻击面减少规则。
 
 > [!TIP]
-> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 以确认功能是否正常工作并查看其工作方式。
+> 还可以访问 Microsoft Defender for Endpoint 演示方案[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认功能是否正常工作并查看其工作方式。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>使用审核模式衡量影响
 
@@ -68,9 +68,9 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 ```
 
 > [!TIP]
-> 如果你想要完全审核攻击面减少规则在组织中如何工作，你将需要使用管理工具将此设置部署到网络或 (设备) 。
+> 如果你想要完全审核攻击面减少规则在组织中如何工作，你将需要使用管理工具将此设置部署到网络中设备 () 。
 
-您还可以使用组策略、Intune 或移动设备管理 (MDM) 配置服务提供程序 (CSP) 配置和部署设置。 在主要的攻击 [面减少规则文章中了解更多信息](attack-surface-reduction.md) 。
+您还可以使用组策略、Intune 或移动设备管理 (MDM) 配置服务提供程序 () 配置和部署设置。 在主要的攻击 [面减少规则文章中了解更多信息](attack-surface-reduction.md) 。
 
 ## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>查看事件查看器中的攻击Windows减少事件
 

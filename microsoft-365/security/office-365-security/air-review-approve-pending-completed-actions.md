@@ -15,23 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能中的修正操作。
+description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应Office 365操作。
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 91b1af53f69cc464726bb6040f6d9af2bb11566804898db85dedc658704e8a4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195959"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可能包括：
+由于自动调查电子邮件&协作内容会导致裁定（如 *恶意* 或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365中，修正操作可能包括：
 
 - 软删除电子邮件或群集
 - 关闭外部邮件转发
@@ -85,7 +85,7 @@ ms.locfileid: "53828339"
 有两种不同的方法可以重新考虑提交的操作：
 
 - 通过统 [一操作中心](https://security.microsoft.com/action-center)。
-- 但是[，Office操作中心](https://security.microsoft.com/threatincidents)。
+- 但是[，Office操作中心 。](https://security.microsoft.com/threatincidents)
 
 ## <a name="change-or-undo-through-the-unified-action-center"></a>通过统一操作中心更改或撤消
 
@@ -95,7 +95,7 @@ ms.locfileid: "53828339"
 
 ## <a name="change-or-undo-through-the-office-action-center"></a>通过操作中心Office或撤消
 
-1. 转到Office[中心并](https://security.microsoft.com/threatincidents)登录。
+1. 转到Office[中心](https://security.microsoft.com/threatincidents)并登录。
 2. 选择适当的修正。
 3. 在侧窗格中，单击邮件提交条目并等待列表加载。
 4. 等待顶部的"操作"按钮启用并选择"操作"按钮以更改操作类型。

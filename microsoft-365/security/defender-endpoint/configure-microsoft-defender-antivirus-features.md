@@ -17,11 +17,11 @@ ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: 361d807cb60d5e820a0b732bbe20fa49f954d47c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196063"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>配置 Microsoft Defender 防病毒软件功能
 
@@ -44,7 +44,7 @@ ms.locfileid: "58533671"
 - 始终提供实时保护，包括行为保护、启发式保护以及基于机器学习的保护。 请参阅 [配置行为、启发式和实时保护](configure-protection-features-microsoft-defender-antivirus.md)。
 
 - 最终用户如何与各个终结点上的客户端交互。 参阅以下资源：
-  - [阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [阻止用户查看或Microsoft Defender 防病毒用户界面](prevent-end-user-interaction-microsoft-defender-antivirus.md)
   - [阻止或允许用户在本地修改Microsoft Defender 防病毒策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]

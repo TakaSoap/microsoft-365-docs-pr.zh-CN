@@ -15,16 +15,17 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级审核，以便可以在用户帐户泄露时执行取证调查或调查其他与安全相关的事件。
-ms.openlocfilehash: 0df68516795c094aa33d048e77b5ca2d1b396ed7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 45eef36cd0577708869846308c88f2dd0926d43e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196894"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>在"管理"中设置Microsoft 365
 
@@ -36,7 +37,7 @@ ms.locfileid: "58569749"
 
 “高级审核”功能，如记录重要事件（如 MailItemsAccessed 和 Send）功能，需要为用户分配适当的 E5 许可证。 此外，必须为这些用户启用“高级审核”应用程序/服务计划。 要验证“高级审核”应用程序是否已分配给用户，请对每个用户执行以下步骤：
 
-1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal)中，转到“**用户**” > “**活动用户**”，然后选择用户。
+1. In the Microsoft 365 管理中心， go to **Users**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>， and select a user.
 
 2. 在用户属性浮出页面上，单击“**许可证和应用**”。
 
@@ -54,7 +55,7 @@ ms.locfileid: "58569749"
 
 ## <a name="step-2-enable-advanced-audit-events"></a>步骤 2：启用高级审核事件
 
-当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 两个高级审核事件。 ( 若要为用户审核这两个事件，请为 ([PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的) 运行Exchange Online命令：
+当用户在 Exchange Online 和 SharePoint Online 中执行搜索时，必须启用 SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint) 中的两个高级审核事件。 ( 若要为用户审核这两个事件，请为在 PowerShell 中 (每个用户) 以下[Exchange Online命令](/powershell/exchange/connect-to-exchange-online-powershell)：
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -74,4 +75,4 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 ## <a name="step-4-search-for-advanced-audit-events"></a>步骤 4：搜索高级审核事件
 
-现在，你已为组织设置了高级审核，可以在执行取证调查时搜索关键的高级审核事件和其他活动。 完成步骤 1 和步骤 2 后，可以在 审核日志 中搜索"高级审核"事件和其他活动，以在调查遭到入侵的帐户和其他类型的安全或合规性调查期间执行。 有关使用 MailItemsAccessed 高级审核事件对遭到入侵的用户帐户进行取证调查详细信息，请参阅使用高级审核调查遭到入侵 [的帐户](mailitemsaccessed-forensics-investigations.md)。
+现在，你已为组织设置了高级审核，可以在执行取证调查时搜索关键的高级审核事件和其他活动。 完成步骤 1 和步骤 2 后，可以在调查遭到入侵的帐户和其他类型的安全或合规性调查期间，在 审核日志 中搜索高级审核事件和其他活动。 有关使用 MailItemsAccessed 高级审核事件对遭到入侵的用户帐户进行取证调查详细信息，请参阅使用高级审核调查遭到入侵 [的帐户](mailitemsaccessed-forensics-investigations.md)。

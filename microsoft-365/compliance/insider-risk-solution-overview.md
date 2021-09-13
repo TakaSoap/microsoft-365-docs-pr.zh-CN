@@ -1,6 +1,6 @@
 ---
 title: 内部风险解决方案
-description: 了解如何通过组织中内部风险解决方案帮助最大程度地降低组织Microsoft 365。
+description: 了解如何使用 Microsoft 365 中的内部风险解决方案帮助最大程度地降低Microsoft 365。
 keywords: Microsoft 365、内部风险、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -17,11 +17,11 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-overview
 ms.openlocfilehash: 40d1076f9c6706b9a24c1a6af23a32b02809c7ba
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196968"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -48,7 +48,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 内部风险解决方案
 
-若要帮助组织抵御内部风险，请使用Microsoft 365和特性。
+若要帮助组织抵御内部风险，请使用Microsoft 365功能。
 
 ### <a name="communication-compliance"></a>通信合规性
 
@@ -102,7 +102,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 ### <a name="privileged-access-management"></a>特权访问管理
 
-Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
+利用特权访问管理，可以精细地控制特权Exchange Online管理任务Office 365。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
 
 特权访问管理在下列订阅中可用：
 
@@ -117,7 +117,7 @@ Privileged access management allows granular access control over privileged Exch
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署Microsoft 365内部风险解决方案
 
-为了帮助保护组织免受内部风险，请设置和部署以下Microsoft 365解决方案：
+若要帮助组织抵御内部风险，请设置和部署以下Microsoft 365解决方案：
 
 ![内部风险解决方案深度防御。](../media/ir-solution-defense-in-depth.png)
 
@@ -128,17 +128,17 @@ Privileged access management allows granular access control over privileged Exch
 
 ## <a name="illustrations-with-examples"></a>包含示例的图示
 
-为帮助你规划实施内部风险Microsoft 365集成策略，请下载Microsoft 365 *信息* 保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构图示第 5-7 页。 可随时根据自己的使用情况来修改这些插图。
+为了帮助你规划实施内部风险Microsoft 365集成策略，请下载Microsoft 365 *信息* 保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构图示第 5-7 页。 可随时根据自己的使用情况来修改这些插图。
 
 | 项目 | 说明 |
 |:-----|:------------|
-|[![模型海报：Microsoft 365信息和合规性功能。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 更新时间：2020年 10 月|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险管理</li><li>第三方数据摄取</li>|
+|[![模型海报：Microsoft 365 信息保护和合规性功能。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 更新时间：2020年 10 月|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险管理</li><li>第三方数据摄取</li>|
 
 ## <a name="training"></a>培训
 
 针对每个内部风险解决方案对管理员和合规性团队进行基础知识培训可帮助组织更快速地开始部署和实施工作。 
 
-Microsoft 365提供了以下资源来帮助通知并培训贵组织中这些用户：
+Microsoft 365提供了以下资源，以帮助通知并培训贵组织中这些用户：
 
 | 解决方案/区域 | 资源 |
 |:------------------|:--------------|

@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
 ms.openlocfilehash: 99081712f3c762f6818df1f6e390b50ae450a7a8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196916"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
