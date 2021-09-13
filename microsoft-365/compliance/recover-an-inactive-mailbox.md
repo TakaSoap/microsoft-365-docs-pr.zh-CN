@@ -17,20 +17,20 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 了解如何通过将其转换为包含非活动邮箱内容的新邮箱Office 365恢复非活动邮箱的内容。
-ms.openlocfilehash: 62b3412b0c6152ea0ceb3d902218654f6559c198c680743021bb18f0dcc9e0c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170118"
 ---
 # <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
 非活动邮箱（一种软删除的邮箱）用于在之前员工离开您的组织后保留他/她的电子邮件。 如果该员工回到您的组织，或者如果另一名员工承担以前员工的工作职责，则有两种方法可以使非活动邮箱的内容可供用户使用：
 
-- **恢复非活动邮箱。** 如果以前的员工回到您的组织，或者如果聘用了一位新员工承担以前员工的工作职责，您可以恢复非活动邮箱的内容。 此方法将非活动邮箱转换为包含非活动邮箱内容的新活动邮箱。 恢复后，非活动邮箱不再存在。 本主题中的过程描述了此方法。
+- **恢复非活动邮箱。** 如果以前的员工回到您的组织，或者如果聘用了一位新员工来承担前员工的工作职责，您可以恢复非活动邮箱的内容。 此方法将非活动邮箱转换为包含非活动邮箱内容的新活动邮箱。 恢复后，非活动邮箱不再存在。 本主题中的过程描述了此方法。
 
-- **还原非活动邮箱。** 如果另一名员工承担前员工的工作职责，或者另一个用户需要访问非活动邮箱的内容，您可以还原 (或将) 非活动邮箱的内容合并到现有邮箱。 您还可以从非活动邮箱还原存档。 有关此方法的过程，请参阅 Restore [an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)。
+- **还原非活动邮箱。** 如果另一名员工承担以前员工的工作职责，或者另一个用户需要访问非活动邮箱的内容，您可以还原 (或将) 非活动邮箱的内容合并到现有邮箱。 您还可以从非活动邮箱还原存档。 有关此方法的过程，请参阅 Restore [an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)。
 
 有关恢复和还原非活动邮箱之间的差异的详细信息，以及恢复非活动邮箱后所发生情况的描述，请参阅[详细信息](#more-information)部分。
 
@@ -73,7 +73,7 @@ ms.locfileid: "53855643"
 
    恢复的非活动邮箱的主 SMTP 地址的值与  *MicrosoftOnlineServicesID*  参数指定的值相同。
 
-恢复非活动邮箱后，还会创建一个新的用户帐户。 您需要通过分配许可证来激活此用户帐户。 若要在许可证分配Microsoft 365 管理中心，请参阅同时[添加用户和分配许可证](../admin/add-users/add-users.md)。
+恢复非活动邮箱后，还会创建一个新的用户帐户。 您需要通过分配许可证来激活此用户帐户。 若要在许可证分配[Microsoft 365 管理中心，请参阅同时添加用户和分配许可证](../admin/add-users/add-users.md)。
 
 ## <a name="more-information"></a>详细信息
 
@@ -87,13 +87,13 @@ ms.locfileid: "53855643"
 
     - **就地保留** In-Place从恢复的邮箱中删除保留。 这意味着恢复的邮箱将从任何保留或电子数据展示In-Place中删除In-Place源邮箱。
 
-    - **Microsoft 365保留锁定保留策略。** 如果非活动邮箱已分配给保留锁定策略 (保留策略 *) ，* 则恢复的邮箱将分配到同一锁定保留策略。 有关锁定的保留策略详细信息，请参阅 [使用保留锁定来限制对保留策略[和保留标签策略的更改](retention-preservation-lock.md)。
+    - **Microsoft 365保留锁定保留策略。** 如果非活动邮箱已分配给保留锁定策略 (保留策略 *) ，* 则恢复的邮箱将分配到相同的锁定保留策略。 有关锁定的保留策略详细信息，请参阅 [使用保留锁定来限制对保留策略[和保留标签策略的更改](retention-preservation-lock.md)。
 
-    - **Microsoft 365保留策略，而不使用保留锁定。** 非活动邮箱将从任何已Microsoft 365的未锁定邮箱中删除。 但是，恢复的邮箱上启用了诉讼保留，以防止基于删除超过特定期限的内容的任何组织范围的保留策略删除邮箱内容。 您可以保留诉讼保留或删除诉讼保留。 有关详细信息，请参阅创建 [诉讼保留](create-a-litigation-hold.md)。
+    - **Microsoft 365保留策略，而不使用保留锁定。** 非活动邮箱将从任何已Microsoft 365的保留策略中删除。 但是，恢复的邮箱上启用了诉讼保留，以防止基于删除超过特定期限的内容的任何组织范围的保留策略删除邮箱内容。 您可以保留诉讼保留或删除诉讼保留。 有关详细信息，请参阅创建 [诉讼保留](create-a-litigation-hold.md)。
 
   - 单个项目恢复期间（由 **RetainDeletedItemsFor** 邮箱属性定义）设置为 30 天。通常情况下，在 Exchange Online 中创建新邮箱时，此保留期设置为 14 天。将此值设置为最大值 30 天，可留出更多时间从非活动邮箱中恢复任何已永久删除（或清除）的数据。您也可以禁用单个项目恢复，或将单个项目恢复期设置为默认的 14 天。有关详细信息，请参阅 [Enable or disable single item recovery for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)。
 
-  - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略以及任何组织范围或 Exchange Microsoft 365 保留策略将不会在 30 天内得到处理。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Microsoft 365 保留策略可能会删除旧邮箱项目 (或将项目移动到存档邮箱（如果已启用) ，根据为 Exchange 或 Microsoft 365 保留策略配置的设置已过期）。 30 天后，保留过期 **，RetentionHoldEnabled** 邮箱属性设置为 **False，** 托管文件夹助理开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
+  - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略以及任何组织范围内或 Exchange 范围的 Microsoft 365 保留策略将不会在 30 天内得到处理。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Microsoft 365 保留策略可能会删除旧邮箱项目 (或将项目移动到存档邮箱（如果已启用) ，根据为 Exchange 或 Microsoft 365 保留策略配置的设置已过期）。 30 天后，保留过期 **，RetentionHoldEnabled** 邮箱属性设置为 **False，** 托管文件夹助理开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
 - **如果您需要保留非活动邮箱的原始状态，请将恢复的邮箱置于保留状态。** 若要防止新邮箱所有者或保留策略永久删除恢复的非活动邮箱的任何邮件，可以将邮箱置于诉讼保留状态。 有关详细信息，请参阅创建 [诉讼保留](./create-a-litigation-hold.md)。
 

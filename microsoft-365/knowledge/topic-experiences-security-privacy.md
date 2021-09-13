@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划安全Microsoft Viva主题的安全和隐私
-ms.openlocfilehash: cf7e631970196b2995891ef302f9af33dd2ab0388b95a54ea04b4a3a24d0a838
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170555"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva安全和隐私主题
 
-主题使用组织中现有的内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
+主题使用现有内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
 
 设置主题不会修改组织中对于内容的任何现有访问控制。 用户将只能查看有权访问的内容。
 
-本文介绍了主题从安全角度的工作方式，以及知识管理员和知识管理员控制主题可见性时必须选择的选项。 阅读本文作为规划主题 [的一部分](plan-topic-experiences.md)。
+本文介绍主题从安全角度的工作方式，以及知识管理员和知识管理员控制主题可见性时必须选择的选项。 阅读本文作为规划主题 [的一部分](plan-topic-experiences.md)。
 
 在阅读[本文之前，](topic-experiences-overview.md)您应熟悉什么是主题、[](topic-center-overview.md)主题中心，以及如何使用主题[](manage-topics.md)中心中的主题。
 
@@ -45,7 +45,7 @@ ms.locfileid: "53864035"
 - 主题中由 AI 添加的信息仅对具有对该源内容访问权限的人员可见。
 - 主题参与者或知识管理员手动添加或编辑的文本对可以看到该主题的每个人可见。
 
-主题查看者和参与者可以在主题中心查看已确认和已发布主题的列表，但给定人员可以看到的主题详细信息取决于他们对源材料的权限以及主题是否已手动编辑。
+主题查看者和参与者可以在主题中心查看已确认和已发布主题的列表，但给定人员可以看到的主题详细信息取决于他们对源材料拥有的权限以及主题是否已手动编辑。
 
 下表介绍了哪些用户（主题查看者、参与者和知识管理员）可以基于其权限在给定主题中查看。
 
@@ -62,7 +62,7 @@ ms.locfileid: "53864035"
 
 Viva 主题仅发现您SharePoint网站中的主题。 不包括用户的个人存储，例如OneDrive邮件或邮件。
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳实践
 
 主题根据用户现有的内容权限向用户显示信息。 Microsoft 365提供了多种方式来确保敏感内容仅限于适当的用户。 除了标准团队或网站权限之外，您还可以使用敏感度标签或数据丢失防护[](../compliance/dlp-learn-about-dlp.md)来限制对内容和访问评审的访问，以[](/azure/active-directory/governance/access-reviews-overview)定期检查用户对敏感信息的访问。 [](../compliance/sensitivity-labels.md)
 
@@ -74,13 +74,13 @@ Viva 主题仅发现您SharePoint网站中的主题。 不包括用户的个人�
 
 - [按名称排除主题](topic-experiences-discovery.md#exclude-topics-by-name)。 明确排除的主题将不会出现在主题体验中。
 
-- 使知识经理删除主题中心中的主题。
+- 使知识管理员删除主题中心中的主题。
 
 此外，我们建议采用以下最佳做法：
 
 - 从组织的不同区域招聘知识经理。 让具有各种专业知识的知识管理人员（以及访问 AI 使用的基础内容）可以帮助你为用户选择最有用的知识，并删除敏感信息（如果找到）。
 
-- 设置用于请求更改的工作流。 知识经理、工作组或网站所有者应具有一个流程，当在组织中启动新项目或当他们发现内容具有不适当的权限设置时，他们可以请求排除主题或网站。
+- 设置用于请求更改的工作流。 知识经理、团队或网站所有者应具有一个流程，当在组织中启动新项目或当他们发现内容具有不适当的权限设置时，他们可以请求排除主题或网站。
 
 - 在创建主题描述时要注意受众和信息的敏感度。 这些描述可能对没有权限访问该主题源内容的用户可见。
 

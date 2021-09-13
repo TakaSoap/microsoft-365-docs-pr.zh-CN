@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 实施 Microsoft 应用治理功能来治理你的应用。
 ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171074"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Microsoft Cloud App Security（预览版）的应用治理加载项
 

@@ -15,21 +15,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 了解如何开始使用 Advanced eDiscovery 中的预测编码模块。 本文将引导你完成使用预测编码来标识与调查最相关的审阅集内容的端到端过程。
 ms.openlocfilehash: 0ca9e4ff8b42ced962b68fff9073e892d8ea5d4e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170137"
 ---
-# <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>快速入门：预览Advanced eDiscovery (预测) 
+# <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>快速入门：Advanced eDiscovery (预览) 
 
-本文提供在 Advanced eDiscovery 中使用预测编码的快速入门。 Advanced eDiscovery中的预测编码模块使用 Advanced eDiscovery 中的智能机器学习功能，以帮助你减少要审阅的内容量。 预测编码可帮助你减少大量案例内容并将其剔除到一组相关项目，你可以优先查看这些项目。 这是通过创建和培训自己的预测编码模型来完成的，这些模型可帮助您确定审阅集内最相关项目的优先级。
+本文介绍在 Advanced eDiscovery 中使用预测编码的快速入门。 Advanced eDiscovery中的预测编码模块使用 Advanced eDiscovery 中的智能机器学习功能，以帮助你减少要审阅的内容量。 预测编码可帮助你减少大量案例内容并将其剔除到一组相关项目，你可以优先查看这些项目。 这是通过创建和培训自己的预测编码模型来完成的，这些模型可帮助您确定审阅集内最相关项目的优先级。
 
 以下是预测编码过程的快速概述：
 
 ![预测编码的快速启动过程。](..\media\PredictiveCodingQuickStartProcess.png)
 
-To get started， you create a model， label as few as 50 items as relevant or not relevant. 然后，系统使用此培训将预测分数应用于审阅集内的每一项。 这允许你根据预测分数筛选项目，这允许你首先查看最相关的 (或与项目) 相关。 如果你想要使用更高的功能和调用率对模型进行培训，可以在后续培训轮中继续标记项目，直到模型稳定下来。 一旦模型稳定下来，你可以应用最终预测筛选器来设置要审阅项目的优先级。
+To get started， you create a model， label as few as 50 items as relevant or not relevant. 然后，系统使用此培训将预测分数应用于审阅集内的每一项。 这允许你根据预测分数筛选项目，这允许你首先查看最相关的 (或不相关的) 项。 如果你想要使用更高的功能和调用率对模型进行培训，可以在后续培训轮中继续标记项目，直到模型稳定下来。 一旦模型稳定下来，你可以应用最终预测筛选器来设置要审阅项目的优先级。
 
 有关预测编码的详细概述，请参阅了解预测[编码在](predictive-coding-overview.md)Advanced eDiscovery。
 
@@ -39,7 +39,7 @@ To get started， you create a model， label as few as 50 items as relevant or 
 
 1. In the Microsoft 365 合规中心， open an Advanced eDiscovery case and then select the **Review sets** tab.
 
-2. 打开审阅集，然后单击分析管理预测编码  >  **(预览) 。**
+2. 打开审阅集，然后单击分析 **管理** 预测  >  **编码 (预览) 。**
 
    ![单击审阅集的"分析"下拉菜单以转到预测编码页面。](..\media\ManagePredictiveCoding.png)
 
@@ -57,9 +57,9 @@ To get started， you create a model， label as few as 50 items as relevant or 
 
 创建模型后，下一步是通过标记相关项或不相关项来完成第一轮培训。
 
-1. 打开评论集，然后单击分析管理预测编码  >  **(预览) 。**
+1. 打开审阅集，然后单击分析管理预测编码  >  **(预览) 。**
 
-2. 在预测 **编码模型 (预览)** 页面上，选择要训练的模型。
+2. 在" **预测编码模型 (预览)** 页面上，选择要训练的模型。
 
 3. 在"**概述"** 选项卡上的"**第 1 轮"下**，单击"**开始下一个培训轮"。**
 
@@ -91,7 +91,7 @@ To get started， you create a model， label as few as 50 items as relevant or 
 
       ![分析与预测编码部分&分数筛选器。](..\media\PredictionScoreFilter1.png)
 
-   预测分数筛选器的命名约定是预测 **(模型名称) 。** 例如，名为 Model A 的模型预测分数筛选器名称为 Model **A** 模型预测 (**预测) 。**
+   预测分数筛选器的命名约定是预测 **分数 (模型名称) 。** 例如，名为模型 **A** 的模型预测分数筛选器名称是模型 **A** 预测 (预测) 。
 
 4. 选择想要使用预测分数筛选器，然后单击"完成 **"。**
 

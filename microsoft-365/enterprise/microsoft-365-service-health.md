@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Microsoft 365 服务运行状况状态
-ms.openlocfilehash: a8e91f3f7a5c5454413a57e8e57749ccb918d9af630b1065522fee677c4c867c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82b5a666d4cc707981ea6da72a53bbd8d67c505d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162345"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 网络运行状况状态
 
@@ -31,7 +32,7 @@ ms.locfileid: "53813134"
 
 _此页面的更新中可能出现延迟。我们将在生成自动化的解决方案时手动更新。_
 
-我们在 Microsoft 的全球网络内或客户与 Microsoft 网络之间的 Internet 连接检测到重大问题时，我们将在此处发布该信息。 建议客户继续使用 Microsoft 365 管理中心服务运行状况仪表板，了解对租户有影响的任何重大网络问题，我们在那里提供了更详细，更有针对性的信息。
+我们在 Microsoft 的全球网络内或客户与 Microsoft 网络之间的 Internet 连接检测到重大问题时，我们将在此处发布该信息。 建议客户继续使用 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服务运行状况仪表板</a>，了解对租户有影响的任何重大网络问题，我们在那里提供了更详细，更有针对性的信息。
 
 ## <a name="current-network-issues"></a>当前网络问题
 

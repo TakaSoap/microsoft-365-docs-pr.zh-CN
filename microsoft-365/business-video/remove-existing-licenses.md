@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: '如有必要，你可以减少每月订阅的许可证数量。 '
-ms.openlocfilehash: 853046c0af843ea7b30e485e2ec18c8487628622aeae745594bd99ab68483a18
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9f72b9448fe1f844cc216baec9ba8249d387c71
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171169"
 ---
 # <a name="remove-existing-licenses"></a>删除现有许可证
 
@@ -36,7 +36,7 @@ ms.locfileid: "53838039"
 
 ## <a name="try-it"></a>试一试！
  
-1. 在管理 [中心中](https://admin.microsoft.com)，选择"**计费**  >  **""你的产品**"，然后选择你的订阅。
+1. 在管理 [中心中](https://admin.microsoft.com)，选择"**帐单**  >  **""你的产品**"，然后选择你的订阅。
 1. 选择 **"删除许可证"。**
 1. 使用向下箭头减少许可证数量。
 1. 选择 **"保存**"，然后关闭窗口。

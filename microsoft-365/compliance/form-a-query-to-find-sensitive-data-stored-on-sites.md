@@ -16,20 +16,20 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 在 (Online (DLP) SharePoint数据丢失防护，以发现整个租户中包含敏感数据的文档。
+description: 在 (Online) DLP SharePoint数据丢失防护，以发现整个租户中包含敏感数据的文档。
 ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171367"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
-用户经常将敏感数据（如信用卡号、社会保险号或个人）存储在其网站上，随着时间的推移，这可能会使组织面临重大数据丢失风险。 存储在网站中的文档（包括OneDrive for Business网站）可以与组织外部不应具有信息访问权限的人共享。 通过 (Online (DLP) ，SharePoint发现整个租户中包含敏感数据的文档。 发现文档后，您可以与文档所有者一起保护数据。 本主题可帮助您形成查询来搜索敏感数据。
+用户经常将敏感数据（如信用卡号、社会保险号或个人）存储在其网站上，随着时间的推移，这可能会使组织面临重大数据丢失风险。 存储在网站中的文档（OneDrive for Business网站）可以与组织外部不应有权访问信息的人共享。 通过 (Online) DLP SharePoint数据丢失防护，可以发现整个租户中包含敏感数据的文档。 发现文档后，您可以与文档所有者一起保护数据。 本主题可帮助您形成查询来搜索敏感数据。
 
 > [!NOTE]
-> 电子数据展示或电子数据展示和 DLP 是高级功能，SharePoint [Online 计划 2。](https://go.microsoft.com/fwlink/?LinkId=510080)
+> 电子数据展示（或电子数据展示）和 DLP 是高级功能，SharePoint [Online 计划 2。](https://go.microsoft.com/fwlink/?LinkId=510080)
 
 ## <a name="forming-a-basic-dlp-query"></a>创建一个基本的 DLP 查询
 
@@ -56,9 +56,9 @@ ms.locfileid: "58573219"
 
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>电子数据展示中心可用的其他查询属性和搜索运算符
 
-DLP in SharePoint还引入了 LastSensitiveContentScan 属性，该属性可帮助您搜索特定时间范围内扫描的文件。 有关属性的查询示例，请参阅下一节中的S examples `LastSensitiveContentScan` of complex [queries。](#examples-of-complex-queries)
+dlp in SharePoint还引入了 LastSensitiveContentScan 属性，该属性可帮助您搜索特定时间范围内扫描的文件。 有关属性的查询示例，请参阅下一节中的S examples `LastSensitiveContentScan` of complex [queries。](#examples-of-complex-queries)
 
-您不仅可以使用特定于 DLP 的属性来创建查询，还可以使用标准 SharePoint电子数据展示搜索属性（如 `Author` 或 `FileExtension` ）。 您可以使用运算符来构建复杂的查询。 有关可用属性和运算符的列表，请参阅将搜索属性和运算符与 [电子数据展示一同](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 使用博客文章。
+您不仅可以使用特定于 DLP 的属性来创建查询，还可使用标准 SharePoint电子数据展示搜索属性（如 `Author` 或 `FileExtension` ）。 您可以使用运算符来构建复杂的查询。 有关可用属性和运算符的列表，请参阅将搜索属性和运算符与 [电子数据展示一同](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery) 使用博客文章。
 
 ## <a name="examples-of-complex-queries"></a>示例
 
@@ -85,7 +85,7 @@ DLP in SharePoint还引入了 LastSensitiveContentScan 属性，该属性可帮�
 
 ****
 
-|不支持的查询|原因|
+|不支持的查询|Reason|
 |---|---|
 |`SensitiveType:"Credit Card Number|.."`|必须至少添加一个数值。|
 |`SensitiveType:"NotARule"`|"NotARule"不是有效的敏感类型名称。 DLP 查询 [中仅包含](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) 敏感信息类型清单中的名称。|

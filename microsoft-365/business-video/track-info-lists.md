@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 列表跟踪业务信息
+title: 使用Microsoft Lists跟踪业务信息
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,21 +15,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: 了解 Microsoft 列表。 借助 Microsoft 列表，你可以跟踪客户详细信息，如客户类型、订单履行和订单进度。
-ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解Microsoft Lists。 使用Microsoft Lists，你可以跟踪客户详细信息，如客户类型、订单履行和订单进度。
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170812"
 ---
-# <a name="use-microsoft-lists-to-track-business-info"></a>使用 Microsoft 列表跟踪业务信息
+# <a name="use-microsoft-lists-to-track-business-info"></a>使用Microsoft Lists跟踪业务信息
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MnGM?autoplay=false]
 
 ## <a name="try-it"></a>试用
 
-使用 Microsoft 列表跟踪信息和组织工作。 从零开始、从Excel、从现有列表或模板创建列表。 可以从 Microsoft 365、Microsoft Teams 或 SharePoint 开始。
+跟踪信息并组织使用Microsoft Lists。 从零开始、从Excel、从现有列表或模板创建列表。 可以从 Microsoft 365、Microsoft Teams 或 SharePoint 开始。
 
 ### <a name="add-an-item-to-the-list"></a>向列表中添加项
 
@@ -56,7 +56,7 @@ ms.locfileid: "53900579"
 1. 在列表上方，选择"自动化 **"。**
 1. 选择 **"创建规则"。**
 1. 选择适当的条件以触发要创建的规则。
-1. 使用所需的特定信息（如更新列表时要通知的人的姓名）自定义规则。
+1. 使用你需要的特定信息（如更新列表时要通知的人的姓名）自定义规则。
 1. 选择 **"创建** "以保存规则。
 
 ### <a name="sort-and-group-list-items"></a>对列表项进行排序和分组

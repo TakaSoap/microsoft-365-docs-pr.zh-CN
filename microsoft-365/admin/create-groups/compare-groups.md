@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
 ms.openlocfilehash: 0b622f791de7615e45e49faec47558b0e67067f2
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169863"
 ---
 # <a name="compare-groups"></a>比较组
 

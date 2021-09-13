@@ -1,6 +1,6 @@
 ---
 title: 流Microsoft 365 Defender事件
-description: 了解如何配置 Microsoft 365 Defender 以将高级搜寻事件流式传输至事件中心或 Azure 存储帐户
+description: 了解如何配置Microsoft 365 Defender以将高级搜寻事件流式传输至事件中心或 Azure 存储帐户
 keywords: 原始数据导出， 流式 API， API， 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d350dc66306bd46b37723743043e03ba0e7e3f53e7651b9c6def265b6d374ce5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170907"
 ---
 # <a name="streaming-api"></a>Streaming API
 
@@ -34,15 +34,15 @@ ms.locfileid: "53838591"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>将高级搜寻事件流式传输至事件中心和/或 Azure 存储帐户。
 
-Microsoft 365 Defender通过高级搜寻流式处理事件[到](../defender/advanced-hunting-overview.md)[事件](/azure/event-hubs/)中心和/或[Azure 存储帐户](/azure/event-hubs/)。
+Microsoft 365 Defender通过高级搜寻流式处理[事件到](../defender/advanced-hunting-overview.md)[事件](/azure/event-hubs/)中心和/或[Azure 存储帐户](/azure/event-hubs/)。
 
-有关流式处理 API Microsoft 365 Defender，请参阅[视频](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga)。
+有关流式Microsoft 365 Defender API 的信息，请参阅[视频](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga)。
 
 ## <a name="in-this-section"></a>本节内容
 
 主题 | 说明
 :---|:---
-[将事件流式处理到 Azure 事件中心](streaming-api-event-hub.md)| 了解如何在租户中启用流式处理 API，Microsoft 365 Defender将[高级](../defender/advanced-hunting-overview.md)搜寻流式传输至事件中心。
+[将事件流式处理到 Azure 事件中心](streaming-api-event-hub.md)| 了解如何在租户中启用流式处理 API，并配置Microsoft 365 Defender[将高级](../defender/advanced-hunting-overview.md)搜寻流式传输至事件中心。
 [将事件流式处理到 Azure 存储帐户](streaming-api-storage.md)| 了解如何在租户中启用流式处理 API，Microsoft 365 Defender将[高级](advanced-hunting-overview.md)搜寻流式传输至 Azure 存储帐户。
 
 

@@ -26,16 +26,16 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: 了解各种类型的组以及如何将它们与各种协作功能一Microsoft 365。
-ms.openlocfilehash: 8edbd9cea5e6dcfe775ada42d164e9df81436ec7f7d461d9035a3fb1e98fd0a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb5eca7ae7ad01488c13222984eee349e5554d26
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169794"
 ---
 # <a name="email-collaboration"></a>电子邮件协作
 
-Microsoft 365通过 Outlook 中的组、通讯 (组、共享) 和公用文件夹进行协作。 上述每个选项都有不同的用途、用户体验和功能集。 应使用哪个选项要取决于用户需要执行的操作，以及您的组织提供的工具。
+Microsoft 365通过 Outlook 中的组、通讯组列表 (通讯组) 、共享邮箱和公用文件夹进行协作。 上述每个选项都有不同的用途、用户体验和功能集。 应使用哪个选项要取决于用户需要执行的操作，以及您的组织提供的工具。
   
 ## <a name="summary-of-collaboration-options"></a>协作选项摘要
 <a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
@@ -46,7 +46,7 @@ Microsoft 365通过 Outlook 中的组、通讯 (组、共享) 和公用文件夹
 
 |**协作工具**|**说明**|
 |:-----|:-----|
-|Outlook  <br/> |一个跨所有应用程序工作的共享Microsoft 365。 包括共享收件箱、日历和用于存储文件的 OneDrive for Business 网站。 用户可以从电子邮件或日历Outlook、查找和加入组。 具有新订阅或 Exchange Online 订阅Microsoft 365新用户和现有Outlook。  <br/> |
+|Outlook  <br/> |跨应用程序的所有应用程序工作的共享Microsoft 365。 包括共享收件箱、日历和用于存储文件的 OneDrive for Business 网站。 用户可以从电子邮件或日历Outlook、查找和加入组。 具有新订阅或 Exchange Online 订阅Microsoft 365新用户和现有Outlook。  <br/> |
 |共享邮箱  <br/> |供选定用户阅读和发送电子邮件以及共享公用日历的邮箱。共享邮箱还可以充当客户可用于咨询贵公司相关信息的常规电子邮件地址（如 info@contoso.com 或 sales@contoso.com）。在共享邮箱上启用"发送方式"权限时，从邮箱中发送的电子邮件将使用这个常规地址（例如 sales@contoso.com )。  <br/> |
 |通讯列表（也称为通讯组）  <br/> |用于同时将电子邮件分发给两个或更多个用户。通讯组也称为启用邮件的通讯组。通讯组的一种变体（称为动态通讯组）是指启用邮件的 Active Directory 组对象，用于向一组数量众多且动态多变的收件人发送电子邮件。确切收件人由您指定的筛选器和条件确定，例如特定区域设置的所有成员或所有全职员工。<br/><br/> Microsoft 365与通讯Outlook组一样，Outlook组提供更强大的协作解决方案。 若要了解更多信息，请参阅[为什么应该](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)将通讯组列表升级到 Outlook 中的组和将通讯组列表Microsoft 365[组。](../manage/upgrade-distribution-lists.md)  <br/> |
 |公用文件夹  <br/> |公用文件夹专为共享访问设计，提供了一种简单有效的方法，用于收集、组织和与组织其他人共享信息。 公用文件夹按易于浏览并且在 Outlook 文件夹视图中始终可见的深入层次结构组织内容。 公用文件夹可以启用邮件并添加为通讯组的成员。 发送到通讯组的电子邮件将自动添加到公用文件夹以便存档或以后参考。 当您没有 SharePoint Online 订阅时，公用文件夹还提供简单的文档共享。  <br/> |
@@ -54,7 +54,7 @@ Microsoft 365通过 Outlook 中的组、通讯 (组、共享) 和公用文件夹
 ## <a name="which-collaboration-tool-to-use"></a>应该使用哪种协作工具？
 <a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
 
-下表快速概览了各种类型的组，并说明了何时以及如何将其与各种协作功能一同使用。
+下表快速浏览了各种类型的组，并说明了何时以及如何将其与各种协作功能一同使用。
   
 
 ||**Outlook**|**通讯组列表**|**共享邮箱**|**公用文件夹**|

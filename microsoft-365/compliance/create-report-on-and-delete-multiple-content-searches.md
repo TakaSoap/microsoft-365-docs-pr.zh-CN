@@ -20,21 +20,21 @@ ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何自动执行内容搜索任务，如使用安全与合规中心 PowerShell &和运行报告。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171384"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
- 快速创建和报告发现搜索通常是当您尝试了解基础数据以及搜索的丰富和质量时，电子数据展示和调查的重要步骤。 为帮助您完成此操作，安全&中心 PowerShell 提供了一组 cmdlet 来自动执行耗时的内容搜索任务。 这些脚本提供了一种快速而简单的方式来创建多个搜索，然后运行估计搜索结果报告，可帮助您确定相关数据的数量。 您还可以使用脚本创建不同版本的搜索，以比较每个版本的结果。 这些脚本可帮助你快速高效地标识和剔除数据。
+ 快速创建和报告发现搜索通常是当您尝试了解基础数据以及搜索的丰富和质量时，电子数据展示和调查的重要步骤。 为帮助您完成此操作，安全与&中心 PowerShell 提供了一组 cmdlet 来自动执行耗时的内容搜索任务。 这些脚本提供了一种快速而简单的方式来创建多个搜索，然后运行估计搜索结果报告，可帮助您确定相关数据的数量。 您还可以使用脚本创建不同版本的搜索，以比较每个版本的结果。 这些脚本可帮助你快速高效地标识和剔除数据。
 
 ## <a name="before-you-create-a-content-search"></a>创建内容搜索之前
 
 - 您必须是 Microsoft 365 合规中心 中电子数据展示管理员角色组的成员，以运行本主题中介绍的脚本。
 
-- 若要收集组织中可添加到 CSV 文件的 OneDrive for Business 网站的 URL 列表，请参阅在步骤 1 中创建组织中所有 OneDrive 位置[的列表](/onedrive/list-onedrive-urls)。
+- 若要收集组织中可添加到 CSV 文件的步骤 1 中的 OneDrive for Business 网站的 URL 列表，请参阅创建组织中所有 OneDrive[位置的列表](/onedrive/list-onedrive-urls)。
 
 - 请务必将本主题创建的所有文件保存到同一文件夹中。 这样更易于运行脚本。
 
@@ -44,7 +44,7 @@ ms.locfileid: "58574335"
 
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步骤 1：创建一个 CSV 文件，其中包含有关要运行的搜索的信息
 
-在此步骤 (CSV) 文件的逗号分隔值包含要搜索的每个用户的行。 可以搜索用户的邮箱Exchange Online邮箱 (存档邮箱（如果已启用存档) 及其OneDrive for Business邮箱）。 或者，您可以只搜索邮箱或OneDrive for Business网站。 您还可以搜索 SharePoint Online 组织的任何网站。 在步骤 3 中运行的脚本将为 CSV 文件的每一行创建单独的搜索。
+在此步骤 (CSV) 文件的逗号分隔值包含要搜索的每个用户的行。 可以搜索用户的邮箱Exchange Online邮箱 (存档邮箱（如果已启用存档) 及其OneDrive for Business邮箱）。 或者，您可以只搜索邮箱或OneDrive for Business网站。 还可以搜索 SharePoint Online 组织的任何网站。 在步骤 3 中运行的脚本将为 CSV 文件的每一行创建单独的搜索。
 
 1. 使用记事本将以下文本复制并.txt文件。 将此文件保存到本地计算机的文件夹中。 你还会将其他脚本保存到此文件夹。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58574335"
    ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
    ```
 
-   文件的第一行（即标题行）列出了 **New-ComplianceSearch** cmdlet cmdlet (在步骤 3) 中创建新的内容搜索中使用的参数。 每个参数名称都用逗号分隔开。 确保标题行中没有任何空格。 标题行下的每一行表示每个搜索的参数值。 请务必将 CSV 文件的占位符数据替换为实际数据。
+   文件的第一行（即标题行）列出了 **New-ComplianceSearch** cmdlet (在步骤 3) 中创建新的内容搜索中使用的参数。 每个参数名称都用逗号分隔开。 确保标题行中没有任何空格。 标题行下的每一行表示每个搜索的参数值。 请务必将 CSV 文件的占位符数据替换为实际数据。
 
 2. 在.txt中打开Excel文件，然后使用下表中的信息编辑包含每个搜索的信息的文件。
 
@@ -67,7 +67,7 @@ ms.locfileid: "58574335"
    |参数|说明|
    |---|---|
    |`ExchangeLocation`|用户邮箱的 SMTP 地址。|
-   |`SharePointLocation`|用户网站或OneDrive for Business网站的 URL。 对于网站OneDrive for Business URL，请使用以下格式 ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` ：。 例如，`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。|
+   |`SharePointLocation`|用户的网站的 URL OneDrive for Business或组织中任何网站的 URL。 对于网站OneDrive for Business URL，请使用以下格式 ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` ：。 例如，`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。|
    |`ContentMatchQuery`|搜索的搜索查询。 有关创建搜索查询的信息，请参阅内容搜索的关键字 [查询和搜索条件](keyword-queries-and-search-conditions.md)。|
    |`StartDate`|对于电子邮件，收件人接收或发送自邮件的日期。 对于文档SharePoint或OneDrive for Business，上次修改文档的日期或之后的日期。|
    |`EndDate`|对于电子邮件，由用户发送的邮件的发送日期或之前的日期。 对于文档SharePoint或OneDrive for Business，上次修改文档的日期或之前的日期。|
@@ -83,9 +83,9 @@ ms.locfileid: "58574335"
 
 此步骤中的脚本将为在步骤 1 中创建的 CSV 文件的每一行创建单独的内容搜索。 运行此脚本时，系统将提示您输入两个值：
 
-- **搜索组 ID** - 此名称提供了组织从 CSV 文件创建的搜索的简便方法。 创建的每个搜索都使用搜索组 ID 命名，然后向搜索名称追加一个数字。 例如，如果输入 **ContosoCase** 作为搜索组 ID，则搜索将命名为 **ContosoCase_1、ContosoCase_2、ContosoCase_3** 等。  请注意，键入的名称区分大小写。 当您使用步骤 4 和步骤 5 中的搜索组 ID 时，您必须使用与创建它时相同的大小写。
+- **搜索组 ID** - 此名称提供了组织从 CSV 文件创建的搜索的简便方法。 创建的每个搜索都使用搜索组 ID 命名，然后向搜索名称追加一个数字。 例如，如果为搜索组 ID 输入 **ContosoCase，** 则搜索将命名为 **ContosoCase_1、ContosoCase_2、ContosoCase_3** 等。  请注意，键入的名称区分大小写。 当您使用步骤 4 和步骤 5 中的搜索组 ID 时，您必须使用与创建它时相同的大小写。
 
-- **CSV 文件** - 在步骤 1 中创建的 CSV 文件的名称。 请确保包含使用完整文件名，包括.csv扩展名;例如，  `ContosoCase.csv` 。
+- **CSV 文件** - 在步骤 1 中创建的 CSV 文件的名称。 请务必包括使用完整文件名，包括.csv扩展名;例如，  `ContosoCase.csv` 。
 
 若要运行该脚本，请执行下列操作：
 
@@ -258,7 +258,7 @@ ms.locfileid: "58574335"
    ![运行搜索报告以显示搜索组的估计值。](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
-> 如果将同一邮箱或网站指定为搜索组中多个搜索中的内容位置，则报告中估计的项目数和总大小 (的总结果) 可能包含相同项目的结果。 这是因为，如果同一封电子邮件或文档与搜索组中不同搜索的查询匹配，则同一电子邮件或文档将被计算多次。
+> 如果将同一邮箱或网站指定为搜索组中多个搜索中的内容位置，则报告中估计的项目数和总大小 (的总结果) 可能包括相同项目的结果。 这是因为，如果同一封电子邮件或文档与搜索组中不同搜索的查询匹配，则同一电子邮件或文档将被计算多次。
 
 ## <a name="step-5-run-the-script-to-delete-the-searches"></a>步骤 5：运行脚本以删除搜索
 

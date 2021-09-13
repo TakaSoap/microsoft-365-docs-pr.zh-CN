@@ -13,15 +13,15 @@ localization_priority: None
 ROBOTS: ''
 description: 了解如何使用SharePoint Syntex解决方案识别合同文件并提取Microsoft 365数据。
 ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171015"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用SharePoint Syntex标识合同文件并提取数据
 
-贵组织需要一种方法从您收到的许多文件中标识所有合同文档并对这些文档进行分类。 您还需要能够快速查看每个识别为 (合同文件中的几个关键元素，例如，Client、Contract 和 Fee  *amount*) 。  为此，可以使用 SharePoint Syntex创建[](index.md)文档理解模型，并应用到文档库。
+贵组织需要一种方法从您收到的许多文件中标识所有合同文档并对这些文档进行分类。 此外，还希望快速查看每个识别为 (合同文件中的几个关键元素，例如，客户、承包商和费用) 。    为此，可以使用 SharePoint Syntex创建[](index.md)文档理解模型，并应用到文档库。
 
 ## <a name="overview-of-the-process"></a>过程概述
 
@@ -31,9 +31,9 @@ ms.locfileid: "58561418"
 
 1. 首先，您需要查找至少五个示例文件，以便对模型进行"训练"，以搜索特定于您尝试识别合同内容类型 (的特征) 。 
 
-2. 通过使用SharePoint Syntex，创建新的文档理解模型。 使用示例文件，需要 [创建分类器](create-a-classifier.md)。 通过使用示例文件对分类器进行培训，可以指导它搜索特定于公司合同内容的特征。 例如，[创建一个"解释"，](create-a-classifier.md#create-an-explanation)搜索您的合同（如服务协议、协议条款和补偿）中的特定 *字符串*。  你甚至可以训练你的解释，以在文档的特定部分中查找这些字符串，或者位于其他字符串旁边。 如果您认为已使用分类器所需的信息对分类器进行培训，您可以对示例文件集测试模型，以查看其效率。 测试后，如果需要，可以选择更改说明，使其更高效。 
+2. 使用SharePoint Syntex，创建新的文档理解模型。 使用示例文件，需要 [创建分类器](create-a-classifier.md)。 通过使用示例文件对分类器进行培训，可以指导它搜索特定于公司合同内容的特征。 例如，[创建一个"说明"，](create-a-classifier.md#create-an-explanation)搜索您的合同（如服务协议、协议条款和补偿）中的特定 *字符串*。  你甚至可以训练你的解释，以在文档的特定部分中查找这些字符串，或者位于其他字符串旁边。 如果您认为已使用分类器所需的信息对分类器进行培训，您可以对示例文件集测试模型，以查看其效率。 测试后，如果需要，可以选择更改说明，使其更高效。 
 
-3. 在你的模型中，可以创建 [提取程序](create-an-extractor.md) 以从每个合约中提取特定部分的数据。 例如，对于每个合同，您最关心的信息是客户是谁、承包商的名称和总成本。
+3. 在你的模型中，你可以 [创建提取程序](create-an-extractor.md) 以从每个合约中提取特定部分数据。 例如，对于每个合同，您最关心的信息是客户是谁、承包商的名称和总成本。
 
 4. 成功创建模型后，[请应用于SharePoint库](apply-a-model.md)。 当您将文档上载到文档库时，您的文档理解模型将运行，并识别与模型中定义的合同内容类型匹配的所有文件，并对这些文件进行分类。 归类为合同的所有文件都将在自定义库视图中显示。 这些文件还将显示在提取程序中定义的每个合约的值。
 
@@ -63,13 +63,13 @@ ms.locfileid: "58561418"
 
 #### <a name="add-example-files-for-your-model"></a>为模型添加示例文件
 
-您需要添加至少五个示例文件作为合同文档，以及一个不是合同文档的示例文件 (例如，工作) 。 
+您需要添加至少五个作为合同文档的示例文件，以及一个不是合同文档的示例文件 (例如，工作) 。 
 
-1. 在"**模型>合同**"页上的"**关键操作**  >  **""添加示例文件"下**，选择"**添加文件"。**
+1. 在"**模型>合约**"页上的"**关键操作**  >  **""添加示例文件"下**，选择"**添加文件"。**
 
    ![显示突出显示"添加示例文件"选项的"合同"页面的屏幕截图。](../media/content-understanding/key-actions-add-example-files.png)
 
-2. 在"**为模型选择示例** 文件"页上，打开"合同"文件夹，选择想要使用的文件，然后选择"添加 **"。** 如果没有示例文件，请选择"Upload **添加它们**"。
+2. 在"**为模型选择示例** 文件"页上，打开"合同"文件夹，选择想要使用的文件，然后选择"添加 **"。** 如果没有示例文件，请选择 **Upload添加它们**。
 
 #### <a name="label-the-files-as-positive-or-negative-examples"></a>将文件标记为正或负示例
 
@@ -85,7 +85,7 @@ ms.locfileid: "58561418"
 
 #### <a name="add-at-least-one-explanation-to-train-the-classifier&quot;></a>至少添加一个解释来训练分类器 
 
-1. 在&quot; **模型>合同>分类器** &quot;页上，选择&quot; **训练&quot;** 选项卡。
+1. 在&quot; **合同>分类>&quot;** 页上，选择&quot; **训练&quot;** 选项卡。
 
 2. 在 **&quot;训练文件** &quot;部分，你将看到之前标记的示例文件列表。 从列表中选择一个正文件，以在查看器中显示。
 
@@ -107,7 +107,7 @@ ms.locfileid: "58561418"
 
 你可以对之前未看到的示例文件测试合同模型。 这是可选的，但它可能是一种有用的最佳做法。
 
-1. 在" **合同>分类>"** 页上，选择"测试 **"** 选项卡。这将对未标记的示例文件运行模型。
+1. 在" **模型>合同>分类** 器"页上，选择"测试 **"** 选项卡。这将对未标记的示例文件运行模型。
 
 2. 在 **"测试文件** "列表中，示例文件显示并显示模型是否预测它们为正数或负数。 使用此信息以帮助确定分类器在文档识别中的有效性。
 
@@ -180,9 +180,9 @@ ms.locfileid: "58561418"
 
 ### <a name="apply-your-model-to-a-document-library"></a>将模型应用到文档库
 
-若要将模型应用到SharePoint库：
+若要将模型应用到文档SharePoint：
 
-1. 在"**模型>"** 页上，在"关键 **操作**  >  **""将模型应用到库"下**，选择"**应用模型"。**
+1. 在"**模型>"** 页上的"关键 **操作** 将模型应用到  >  **库"下**，选择"**应用模型"。**
 
    ![Screenshot showing the Contracts page with Apply model to libraries option highlighted.](../media/content-understanding/key-actions-apply-model.png)
 
@@ -197,7 +197,7 @@ ms.locfileid: "58561418"
 
 5. 选择 **“添加”** 将模型应用到库中。
 
-6. 在 **"模型>合同**"页上的"具有此模型的库"部分，你将看到列出的SharePoint URL。
+6. 在 **"模型>合约**"页上的"具有此模型的库"部分，你将看到列出的SharePoint URL。
 
     ![显示"具有此模型的库"部分合同主页的屏幕截图。](../media/content-understanding/contract-libraries-with-this-model.png)
 
@@ -210,4 +210,4 @@ ms.locfileid: "58561418"
 
 ## <a name="next-step"></a>后续步骤
 
-[步骤 2.使用Microsoft Teams创建合同管理通道](solution-manage-contracts-step2.md)
+[步骤 2.使用 Microsoft Teams 创建合同管理通道](solution-manage-contracts-step2.md)

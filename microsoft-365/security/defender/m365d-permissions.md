@@ -1,7 +1,7 @@
 ---
-title: 管理对 Microsoft 365 Defender 门户中数据Microsoft 365 Defender的访问
+title: 管理对Microsoft 365 Defender门户中数据Microsoft 365 Defender的访问
 description: 了解如何管理对数据中数据Microsoft 365 Defender
-keywords: 访问， 权限， Microsoft 365 Defender， M365， 安全性， MCAS， 云应用安全， Microsoft Defender for Endpoint， 作用域， 范围， RBAC
+keywords: 访问， 权限， Microsoft 365 Defender， M365， 安全性， MCAS， 云应用安全， 适用于终结点的 Microsoft Defender， 范围， 作用域， RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 7a4176e5b375c32edb1e1fae3ab74f0760f28366
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170912"
 ---
-# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>使用全局角色Microsoft 365 Defender对 Azure Active Directory 的访问权限
+# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>使用全局角色Microsoft 365 Defender对Azure Active Directory的访问权限
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -60,12 +60,12 @@ ms.locfileid: "58595146"
 [自动调查和修复](m365d-autoir-actions.md)可以针对电子邮件、转发规则、文件、持久性机制和调查过程中找到的其他项目执行操作。 若要批准或拒绝需要显式审批的挂起操作，必须在 Microsoft 365 中分配特定角色。 若要了解详细信息，请参阅[操作中心权限](m365d-action-center.md#required-permissions-for-action-center-tasks)。
 
 ## <a name="access-to-data"></a>对数据的访问
-可以使用Microsoft 365 Defender Microsoft Defender 中为基于终结点角色的访问控制的用户组分配的作用域控制对 (数据的访问权限) 。 如果你的访问范围尚未确定为 Defender for Endpoint 中的一组特定设备，你将具有对 defender for Endpoint 中数据的完全Microsoft 365 Defender。 但是，在限定帐户范围后，你将只看到有关范围内的设备的数据。
+可以使用Microsoft 365 Defender Microsoft Defender 中为基于终结点角色的访问控制的用户组分配的作用域控制对 (数据) 。 如果你的访问范围尚未确定为 Defender for Endpoint 中的一组特定设备，你将具有对 defender for Endpoint 中数据的完全Microsoft 365 Defender。 但是，在限定帐户范围后，你将只看到有关范围内的设备的数据。
 
 例如，如果你仅属于具有 Microsoft Defender for Endpoint 角色的一个用户组，并且该用户组只获得对销售设备的访问权限，你将只看到有关 Microsoft 365 Defender 中销售设备的数据。 [详细了解 Microsoft Defender for Endpoint 中的 RBAC 设置](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Microsoft Cloud App Security 访问控制
-在预览过程中，Microsoft 365 Defender不根据用户设置强制执行云应用安全控制。 对Microsoft 365 Defender数据的访问不受这些设置的影响。
+在预览期间，Microsoft 365 Defender不根据用户设置强制执行云应用安全控制。 这些设置Microsoft 365 Defender访问数据不受影响。
 
 ## <a name="related-topics"></a>相关主题
 - [基于角色的访问控制中的自定义角色Microsoft 365 Defender](custom-roles.md)

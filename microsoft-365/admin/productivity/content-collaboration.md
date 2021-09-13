@@ -20,15 +20,15 @@ search.appverid:
 - MOE150
 description: 内容协作的详细信息 - 人员体验生产力分数。
 ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170345"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作 – 人员体验
 
-生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 内容协作类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
+生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 内容协作类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -44,18 +44,18 @@ ms.locfileid: "58566924"
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>为什么组织&#39;协作分数很重要
 
-数字转型的一个关键方面是人们如何协作处理文件。 使用内容Microsoft 365，用户能够访问、创建、修改内容以及与来自任何位置的其他人协作处理内容。 研究表明，当用户使用联机文件进行协作时，每个人每周平均节省 100 分钟。
+数字转型的一个关键方面是人们如何协作处理文件。 使用内容Microsoft 365，人员可以随时随地访问、创建、修改和协作处理内容。 研究表明，当用户使用联机文件进行协作时，每个人每周平均节省 100 分钟。
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>如何计算内容协作分数
 
 我们提供主要见解，其中包含组织中内容协作的关键指标。 然后，下面详述的评分框架将用于这些指标来计算组织的分数。
 
 > [!NOTE]
-> 2021 年 4 月 22 日，我们更改了协作者指标的计算方式。 这会影响主要[见解、](#primary-insight)[文件协作见解](#number-of-files-collaborated-on)以及内容协作分数的度量方式。 此更改有助于减少来自来自 Microsoft (或其他第三) 应用程序的非人工代理或自动程序的数据的干扰，从而获得更准确且可操作的分数。
+> 2021 年 4 月 22 日，我们更改了协作者指标的计算方式。 这会影响主要[见解、](#primary-insight)[文件协作见解](#number-of-files-collaborated-on)以及内容协作分数的度量方式。 此更改有助于减少来自非人工代理 (Microsoft) 其他第三方应用程序的机器人）的数据的干扰，从而获得更准确且可操作的分数。
 
 ### <a name="primary-insight"></a>主要见解
 
-Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用程序在 Microsoft 365 中轻松创建、读取和发现其个人内容和共享内容。 它们还允许用户安全地共享和协作处理内容。 主要见解包含来自所有能够使用 OneDrive for Business 和 SharePoint。 此外，它还详细说明了有多少人阅读、创建和协作处理存储在OneDrive for Business SharePoint。
+Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用程序在 Microsoft 365 中轻松创建、读取和发现其个人内容和共享内容。 它们还允许用户安全地共享和协作处理内容。 主要见解包含所有能够使用 OneDrive for Business 和 SharePoint。 此外，它还详细说明了有多少人阅读、创建和协作处理存储在 OneDrive for Business 和 SharePoint。
 
 :::image type="content" source="../../media/collabscore_primary.jpg" alt-text="通信协作分数的主要见解。":::
 
@@ -69,13 +69,13 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
         定义如下：</br>
         **读者：** 访问或下载联机文件OneDrive或SharePoint。</br>
-        **创建者：** 创建、修改、上传、同步、签入、复制或移动联机或OneDrive或SharePoint人员。</br>
-        **协作者：** 使用联机文件或联机文件进行OneDrive SharePoint。 如果其中一个人在 28 天时段内Office 应用或在其创建或修改后读取或编辑联机文档或 PDF，则两个人是协作者。
+        **创建者：** 创建、修改、上载、同步、签入、复制或移动联机或OneDrive或SharePoint人员。</br>
+        **协作者：** 使用联机文件或联机文件进行OneDrive SharePoint。 如果其中一个人在 28 天内创建或修改联机 Office 应用或 PDF 后读取或编辑联机文档或 PDF，则两个人是协作者。
 
         > [!NOTE]
         > 可视化中考虑的文件为 Word、Excel、PowerPoint、OneNote 或 PDF 文件，它们联机并保存到 OneDrive 或 SharePoint。 
 
-    - 突出显示 (分数的) /分母值用于计算以每个水平线表示的百分比。
+    - 突出显示 (用分数的) /分母来计算以每个水平线表示的百分比。
     
       - **读者：**</br>
           - 数字：过去 28 天内在 OneDrive 或 SharePoint 中访问或下载联机文件的人数</br>
@@ -87,20 +87,20 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
         - 数字：过去 28 天内在 OneDrive 或 SharePoint 中协作处理联机文件的人数</br>
         - 分母：过去 28 天内OneDrive或SharePoint至少 1 次访问次数
 
-    - 每个读者、创建者和协作者的对等基准值也显示为百分比。 换句话说，创建者数量的值显示为有权访问或设置OneDrive用户数SharePoint。
+    - 每个读者、创建者和协作者的对等基准值也显示为百分比。 换句话说，创建者数量的值以有权访问创作者或创作者OneDrive百分比SharePoint。
     
 1. **指向资源的链接：** 选择此链接可查看整理的视频和其他相关帮助内容。
 
 
 #### <a name="trend-visualization-of-primary-insight"></a>主要见解的趋势可视化
 
-趋势可视化图显示了过去 180 天内读者、创建者和协作者的主要见解关键指标的趋势线。 图表上的每个数据点都是最近 28 天的活动聚合。 每个创建者数据点都提供过去 28 天内在 x 轴上每个日期标记为创建者的所有人员计数。
+趋势可视化图显示了过去 180 天内读者、创建者和协作者的主要见解关键指标的趋势线。 图表上的每个数据点都是最近 28 天的活动聚合。 每个创建者数据点都提供过去 28 天内在 x 轴上的每个日期标记为创建者的所有人员计数。
 
 :::image type="content" source="../../media/trendvisualization.jpg" alt-text="包含协作主要见解趋势的图表。":::
 
 ### <a name="scoring-framework"></a>记分框架
 
-组织的内容协作分数以 (组织) 聚合级别衡量，无论用户是否一致地阅读、创建或协作联机 Office 文件（如 Word、Excel、PowerPoint、OneNote 或 PDF，或者 OneDrive 或 SharePoint 中）。
+组织的内容协作分数以 (组织) 聚合级别衡量，无论用户是否一致地阅读、创建或协作联机 Office 文件（如 Word、Excel、PowerPoint、OneNote 或 PDF，或在 OneDrive 或 SharePoint 中）。
 
 未在单个用户级别提供分数。
 
@@ -112,14 +112,14 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="此图表显示以用户或用户OneDrive文件SharePoint。":::
 
-1. **标头：** 突出显示在应用程序上或Microsoft 365 Office创建文件的活动OneDrive SharePoint。
+1. **标头：** 突出显示在应用程序上处于活动状态Microsoft 365 Office或OneDrive文件SharePoint。
 2. **正文：** 提供有关在网站和网站中创建内容OneDrive SharePoint。
 3. **可视化：** 可视化中的细分表示使用 Microsoft Office 应用在 OneDrive 和 SharePoint 创建文件的程度，如下所示：
-      - **OneDrive：** 蓝色 (条) 部分，而条形上的分数表示活动在 Office 应用程序上创建内容OneDrive的百分比，如下所示：
+      - **OneDrive：** 蓝色 (条的) 部分，而条形上的分数表示活动在 Office 应用程序上创建内容OneDrive的百分比，如下所示：
         - 数字：过去 28 天内在 OneDrive 内创建、修改、上载、同步、签入、复制或移动联机 Office 文件的人数。</br>
-        - 分母：过去 28 天内OneDrive或SharePoint访问办公室文件的数量。
-      - **SharePoint：** 蓝色 (条的) 部分，而条形上的分数表示活跃在 Office 应用程序上并按如下SharePoint内容的百分比：</br>
-         - 数字：最近 28 天内在 SharePoint 上创建、修改、上载、同步、签入、复制或移动联机 Office 文件 (Microsoft Word、Excel、PowerPoint 或 OneNote 文件) 的数量。</br>
+        - 分母：过去 28 天内OneDrive或SharePoint访问办公室文件。
+      - **SharePoint：** 蓝色 (条的) 部分，而条形上的分数表示在 Office 应用程序上处于活动状态并创建内容SharePoint的百分比：</br>
+         - 数字：过去 28 天内在 SharePoint 上创建、修改、上载、同步、签入、复制或移动联机 Office 文件 (Microsoft Word、Excel、PowerPoint 或 OneNote 文件) 的数量。</br>
         - 分母：过去 28 天内OneDrive或SharePoint访问Office文件的数量。
 
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
@@ -138,22 +138,22 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
         - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或两者的人的数量。
       - **指向联机文件的链接：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示使用附件并将链接附加到电子邮件中的文件的百分比。
         - 数字：过去 28 天内向电子邮件附加联机文件链接的人数。
-        - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或两者的人的数量。
+        - 分母：过去 28 天内Exchange和OneDrive、SharePoint或同时访问这两者的人的数量。
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
 
 ### <a name="sharing-of-online-files"></a>共享联机文件
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="显示在线共享文件人数的图表。":::
 
-1. **标头：** 突出显示具有外部共享文件访问权限OneDrive SharePoint用户百分比。
+1. **标头：** 突出显示具有外部共享文件访问权限OneDrive SharePoint用户数的百分比。
 2. **正文：** 提供有关管理员的信息&#39;更改组织中文件共享设置以启用最适合贵组织的协作级别。
-3. **可视化：** 表示有权访问外部或外部共享OneDrive SharePoint共享文件的程度：
-      - **外部：** 蓝色 (条的) 部分，而条形上的分数 (numerator/分母) 表示有权访问 OneDrive 或 SharePoint 且正在外部共享文件的人的百分比。
+3. **可视化：** 表示有权访问内部或外部共享OneDrive SharePoint共享文件的程度：
+      - **外部：** 蓝色 (条的) 部分和条形上的分数 (numerator/denominator) 表示有权访问 OneDrive 或 SharePoint 且正在外部共享文件的人的百分比。
         -  数字：过去 28 天内与外部共享文件的人数
-        - 分母：过去 28 天内OneDrive或SharePoint至少 1 天拥有访问权限的总数。
-      - **仅内部：** 蓝色 (条的) 部分和条形上的分数 (numerator/denominator) 表示有权访问 OneDrive 或 SharePoint 且仅内部共享文件的人的百分比。
+        - 分母：过去 28 天内OneDrive或SharePoint至少 1 个用户。
+      - **仅内部：** 蓝色 (条的) 部分和条形上的分数 (numerator/denominator) 表示有权访问 OneDrive 或 SharePoint 且仅在内部共享文件的人的百分比。
         - Numerator：过去 28 天内仅在内部共享文件的人数
-        - 分母：过去 28 天内OneDrive或SharePoint至少 1 天拥有访问权限的总数。
+        - 分母：过去 28 天内OneDrive或SharePoint至少 1 个用户。
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
 
 ### <a name="number-of-files-collaborated-on"></a>协作处理的文件数
@@ -184,11 +184,11 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 1. **标头：** 突出显示所有经过测试的设备中与 OneDrive 和 SharePoint 的网络连接不佳的设备百分比。 
 2. **正文：** 提供有关网络连接性能为什么对协作很重要的信息。 
-3. **可视化：** 显示与移动设备和移动设备相关的网络连接性能级别不同的OneDrive SharePoint：
-      - **81-100 (最佳) ：** 条形 (深绿色) 部分表示性能最佳的设备的百分比。
-      - **61-80： (** 颜色) 表示网络性能分数在 60-80 之间的设备的百分比。 
-      - **41-60： (** 的橙色颜色) 表示网络性能分数在 40-60 之间的设备的百分比。 
-      - **21-40： (** 的红色) 表示网络性能分数介于 20 到 40 之间的设备的百分比。 
+3. **可视化：** 显示具有与移动设备和移动设备相关的不同网络连接性能级别的OneDrive SharePoint：
+      - **81-100 (最佳) ：** 条形图的深绿色 (颜色) 部分表示性能最佳的设备的百分比。
+      - **61-80：** 条形 (绿色) 表示网络性能分数在 60-80 之间的设备的百分比。 
+      - **41-60： (** 的橙色) 表示网络性能分数在 40-60 之间的设备的百分比。 
+      - **21-40： (** 的红色) 表示网络性能分数在 20-40 之间的设备的百分比。 
       - **0-20：** 条形 (深红色) 表示网络性能分数在 0 到 20 之间最差的设备百分比。 
 
 ## <a name="related-content"></a>相关内容

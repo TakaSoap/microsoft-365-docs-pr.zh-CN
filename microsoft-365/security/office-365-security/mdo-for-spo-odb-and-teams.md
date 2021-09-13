@@ -20,15 +20,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: 了解适用于 Office 365 Online、SharePoint、OneDrive for Business 和 Microsoft Teams 中的文件的 Microsoft Defender。
+description: 了解 Microsoft Defender for Office 365 Online、SharePoint 和 OneDrive for Business 中的Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f9ab3c10292aed5f6f39a8534680cb8e9c5d3551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170888"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
 
@@ -38,13 +38,13 @@ ms.locfileid: "58572427"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-保险箱[Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md)中的 SharePoint、OneDrive 和 Microsoft Teams 附件为已由 Microsoft 365 中的常见病毒检测引擎异步扫描的文件提供了一层额外的[保护](virus-detection-in-spo.md)。 保险箱SharePoint、OneDrive 和 Microsoft Teams 的附件可帮助检测和阻止在团队网站和文档库中标识为恶意的现有文件。
+保险箱[Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md)中的 SharePoint、OneDrive 和 Microsoft Teams 的附件为已由 Microsoft 365 中的常见病毒检测引擎异步扫描的文件提供了额外的[保护](virus-detection-in-spo.md)层。 保险箱网站SharePoint、OneDrive和Microsoft Teams附件有助于检测并阻止在团队网站和文档库中被标识为恶意的现有文件。
 
-保险箱默认情况下，SharePoint、OneDrive 和 Microsoft Teams 的附件不会启用。 若要打开它，请参阅打开保险箱[附件SharePoint、OneDrive和Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
+保险箱默认情况下，SharePoint、OneDrive和Microsoft Teams的附件。 若要打开它，请参阅打开保险箱[附件SharePoint、OneDrive和Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
-## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>保险箱、SharePoint、OneDrive和Microsoft Teams附件的工作原理
+## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>保险箱附件SharePoint、OneDrive和Microsoft Teams的工作原理
 
-当保险箱文件SharePoint、OneDrive和Microsoft Teams附件，并且将文件标识为恶意文件时，文件会使用与文件存储的直接集成进行锁定。 以下图像显示了库中检测到的恶意文件示例。
+当保险箱文件SharePoint、OneDrive和Microsoft Teams附件，并且将文件标识为恶意文件时，会使用与文件存储的直接集成锁定该文件。 以下图像显示了库中检测到的恶意文件示例。
 
 ![文件在OneDrive for Business中，其中一个文件被检测为恶意文件。](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
@@ -64,14 +64,14 @@ SharePoint联机管理员可以阻止用户下载恶意文件。 有关说明，
 
 ## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>查看有关附件中检测到的恶意保险箱文件SharePoint、OneDrive和Microsoft Teams
 
-SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件标识为恶意的文件将显示在[Microsoft Defender for Office 365](view-reports-for-mdo.md)的报告和资源管理器 (以及实时检测) [中](threat-explorer.md)。
+SharePoint、OneDrive 和 Microsoft Teams 的 保险箱 附件标识为恶意的文件将显示在[Microsoft Defender for Office 365](view-reports-for-mdo.md)报告以及资源管理器 (和实时检测) [中](threat-explorer.md)。
 
-自 2018 年 5 月起，当 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 识别为恶意文件时，该文件也可隔离。 有关详细信息，请参阅在 Defender for [Office 365 中管理隔离Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+从 2018 年 5 月开始，当 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 将文件标识为恶意文件时，该文件也可隔离。 有关详细信息，请参阅在 Defender for [Office 365 中管理隔离Office 365。](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 
 ## <a name="keep-these-points-in-mind"></a>请记住以下几点
 
-- Defender for Office 365不会扫描 SharePoint Online、OneDrive for Business 或 Microsoft Teams 中的每个Microsoft Teams。 这是设计使然的。 以异步方式扫描文件。 此过程使用共享和来宾活动事件以及智能启发和威胁信号来识别恶意文件。
+- Defender for Office 365不会扫描 SharePoint Online、OneDrive for Business 或 Microsoft Teams。 这是设计使然的。 以异步方式扫描文件。 此过程使用共享和来宾活动事件以及智能启发和威胁信号来识别恶意文件。
 
-- 请确保你的SharePoint网站配置为使用新式[体验](/sharepoint/guide-to-sharepoint-modern-experience)。 Defender for Office 365保护适用于是否使用新式体验或经典视图;但是，文件被阻止的视觉指示器仅在新式体验中可用。
+- 请确保你的SharePoint网站配置为使用新式[体验](/sharepoint/guide-to-sharepoint-modern-experience)。 Defender for Office 365 保护适用于是否使用新式体验或经典视图;但是，文件被阻止的视觉指示器仅在新式体验中可用。
 
-- 保险箱SharePoint、OneDrive 和 Microsoft Teams 的附件是组织的整体威胁防护策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾邮件和反恶意软件保护，以及 microsoft Defender for Office 365 中的 保险箱 链接和 保险箱 附件。 若要了解更多信息，请参阅防止 Office 365 中[的威胁](protect-against-threats.md)。
+- 保险箱SharePoint、OneDrive 和 Microsoft Teams 的附件是组织的整体威胁防护策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾邮件和反恶意软件保护，以及 microsoft Defender for Office 365 中的 保险箱 链接和 保险箱 附件。 若要了解更多信息，请参阅防止[威胁Office 365。](protect-against-threats.md)

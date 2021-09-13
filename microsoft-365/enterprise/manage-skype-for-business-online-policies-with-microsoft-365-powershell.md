@@ -15,21 +15,21 @@ ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell 通过策略Skype for Business Online 用户帐户属性。
 ms.openlocfilehash: aea57c836403918e4c236f766ed211a31ea2ceec
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58357037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170994"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online 策略
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将其指定为策略Microsoft 365。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-使用这些说明设置以运行命令 (跳过已完成) ：
+使用这些说明进行设置以运行命令 (跳过已完成) ：
 
   > [!Note]
   > Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
@@ -72,7 +72,7 @@ EnableOutsideAccess               : True
     
 - **EnablePublicCloudAccess** 指示用户是否可以与 Windows Live 用户通信。
     
-因此，不要直接更改用户帐户上与联合身份验证相关的属性 (例如 **Set-CsUser -EnableFederationAccess** $True) 。 而是为帐户分配一个预配置了所需属性值的外部访问策略。 如果我们希望用户能够与联盟用户和 Windows Live 用户通信，则必须为用户帐户分配允许这些类型的通信的策略。
+因此，不要直接更改用户帐户上与联盟相关的属性 (例如 **Set-CsUser -EnableFederationAccess $True) 。** 而是为帐户分配一个预配置了所需属性值的外部访问策略。 如果我们希望用户能够与联盟用户和 Windows Live 用户通信，则必须为用户帐户分配允许这些类型的通信的策略。
   
 如果您想了解某人是否可以与组织外部的用户通信，您必须：
   
@@ -98,7 +98,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 
 > [!NOTE]
-> Skype for Business Online 拨号计划是除名称以外的每个方面的策略。 选择名称"拨号计划"，而不是"拨号策略"，以提供与 Office Communications Server 和 Exchange 的向后兼容性。 
+> Skype for Business Online 拨号计划是除名称以外的每个方面的策略。 选择了名称"拨号计划"，而不是"拨号策略"，以提供与 Office Communications Server 和 Exchange 的向后Exchange。 
   
 例如，若要查看所有可供使用的语音策略，请运行以下命令：
   

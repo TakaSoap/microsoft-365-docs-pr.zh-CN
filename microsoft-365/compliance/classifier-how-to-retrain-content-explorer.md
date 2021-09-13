@@ -16,15 +16,15 @@ search.appverid:
 - MET150
 description: 了解如何在内容资源管理器中向可训练分类器提供反馈。
 ms.openlocfilehash: 7c021a1fb7a79e335f53fd99b162c9062c4f43a0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162055"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
-可Microsoft 365分类器是一种工具，通过向可训练分类器提供示例进行查看，可以识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
+可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
 
 本文介绍了如何通过提供其他反馈来提高自定义可训练分类器以及一些预先训练的分类器的性能。
 
@@ -50,7 +50,7 @@ ms.locfileid: "58571081"
 ## <a name="overall-workflow"></a>总体工作流
 
 > [!IMPORTANT]
-> 您可以在内容资源管理器中提供反馈，以自动应用保留标签策略Exchange项并使用分类器作为条件。 **如果你没有将保留标签自动应用于项目并使用分类Exchange分类器作为条件的保留策略，请在此处停止。**
+> 您可以在内容资源管理器中提供反馈，以自动应用保留标签策略Exchange项并使用分类器作为条件。 **如果你没有自动将保留标签应用于项目并使用分类Exchange分类器作为条件的保留策略，请在此处停止。**
 
 使用分类器时，可能需要提高分类器所分类的精度。 为此，可评估对已标识为匹配项或不匹配项进行的分类质量。 对分类器进行 30 次评估后，它将接受该反馈并自动自我重新培训。
 
@@ -61,7 +61,7 @@ ms.locfileid: "58571081"
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>如何重新训练内容资源管理器中的分类器
 
-1. 登录以使用Microsoft 365 合规中心管理员或安全管理员角色访问权限登录，**然后打开Microsoft 365 合规中心**  >  **数据分类**  >  **内容资源管理器"。** 
+1. Sign in to Microsoft 365 合规中心 with compliance admin or security admin role access and open **Microsoft 365 合规中心**  >  **Data classification** Content  >  **explorer**. 
 2. 在"**筛选标签、信息类型** 或类别"列表下，展开 **"可训练分类器"。**
 
 > [!IMPORTANT]

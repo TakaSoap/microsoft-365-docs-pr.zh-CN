@@ -16,11 +16,11 @@ search.appverid:
 recommendations: false
 description: 实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
 ms.openlocfilehash: 7bbeefc07da1f620f8b22484ad399f87bb45f74e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170161"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息治理
 

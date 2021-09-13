@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 登录你的 Microsoft 365 管理员帐户，使用密码将一些个人用户密码设置为永不Windows PowerShell。
-ms.openlocfilehash: c56a4787390e18443bdd006e2f898ef931812b706d5f743bf0649dfd7c294e73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 29d0ebcbb3f9fb197e574731e23aaa64c2fa7894
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169909"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>设置单个用户的密码永不过期
 
@@ -40,7 +40,7 @@ ms.locfileid: "53827307"
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
-Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerShell Graph](/powershell/azure/active-directory/install-adv2)设置特定用户的密码永不过期。 您还可以使用 [AzureAD](/powershell/module/Azuread) cmdlet 删除永不过期的配置或查看将哪些用户密码设置为永不过期。
+Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerShell for Graph](/powershell/azure/active-directory/install-adv2)为特定用户设置密码永不过期。 您还可以使用 [AzureAD](/powershell/module/Azuread) cmdlet 删除永不过期的配置或查看将哪些用户密码设置为永不过期。
 
 本指南适用于其他提供程序，如 Intune 和 Microsoft 365，这些提供程序还依赖 Azure AD 提供标识和目录服务。 密码过期是策略中唯一可以更改的部分。
 
@@ -51,7 +51,7 @@ Microsoft 云服务的全局管理员可以使用 Azure Active Directory [PowerS
 
 运行下列命令之一：
 
-- 若要了解单个用户的密码是否设置为永不过期，请通过使用 UPN (例如 *user@contoso.onmicrosoft.com*) 或要检查的用户 ID 运行以下 cmdlet：
+- 若要了解单个用户的密码是否设置为永不过期，请通过使用 UPN (例如 *，user@contoso.onmicrosoft.com*) 或要检查的用户的用户 ID 运行以下 cmdlet：
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -129,4 +129,4 @@ Run one of the following commands:
 
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 [重置密码](../add-users/reset-passwords.md)（文章）\
-[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 
+[设置组织的密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 

@@ -1,5 +1,5 @@
 ---
-title: 将Windows载入到 Microsoft Defender for Endpoint 服务
+title: 将Windows载入 Microsoft Defender for Endpoint 服务
 description: 载入Windows服务器，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器。
 keywords: 载入服务器， 服务器， 2012r2， 2016， 2019， 服务器载入， 设备管理， 配置适用于终结点服务器的 Microsoft Defender， 载入适用于终结点服务器的 Microsoft Defender， 载入适用于终结点服务器的 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
@@ -17,13 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170507"
 ---
-# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入到 Microsoft Defender for Endpoint 服务
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "58745753"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)。
 
-Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过安全中心控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。
+Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 此支持通过 Microsoft 365 Defender 控制台无缝提供高级攻击检测和Microsoft 365 Defender功能。
 
 有关许可和基础结构需要满足的实际指导，请参阅使用 Defender for Endpoint [Windows服务器](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)。
 
@@ -46,7 +46,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 
 ## <a name="windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016"></a>WindowsServer 2008 R2 SP1、Windows Server 2012 R2 和 Windows Server 2016
 
-可以使用以下任一Windows将 Windows Server 2008 R2 SP1、Windows Server 2012 R2 和 Windows Server 2016 载入 Defender for Endpoint：
+可以使用以下任Windows将 Windows Server 2008 R2 SP1、Windows Server 2012 R2 和 Windows Server 2016 载入 Defender for Endpoint：
 
 - **选项 1：**[通过安装和配置 MMA Microsoft Monitoring Agent (载入)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
 - **选项 2：**[通过 Azure 安全中心载入](#option-2-onboard-windows-servers-through-azure-security-center)
@@ -55,7 +55,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 使用提供的任一选项完成载入步骤后，你需要配置和更新System Center Endpoint Protection[客户端](#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
-> 每个节点需要 Defender for Endpoint 独立服务器许可证，才能通过 Microsoft Monitoring Agent (选项 1) 或 Microsoft Endpoint Manager (选项 3) 载入 Windows。 或者，每个节点都需要 Azure Defender for Servers 许可证，才能通过 Azure 安全中心 (选项 2) 载入 Windows 服务器。 有关详细信息，请参阅 Azure [Defender 中支持的功能](/azure/security-center/security-center-services)。 与用户许可证不同，这些许可证不分配给任何用户或对象。 它们必须符合要求，才能在租户中。
+> 需要每个节点 Windows的 Defender for Endpoint 独立服务器许可证，才能通过 Microsoft Monitoring Agent (选项 1) 或 Microsoft Endpoint Manager (选项 3) 载入) 。 或者，每个节点都需要 Azure Defender for Servers 许可证，才能通过 Azure 安全中心 (选项 2) 载入 Windows 服务器。 有关详细信息，请参阅 Azure [Defender 中支持的功能](/azure/security-center/security-center-services)。 与用户许可证不同，这些许可证不分配给任何用户或对象。 它们必须符合要求，才能在租户中。
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>选项 1：通过安装和配置 MMA Microsoft Monitoring Agent (载入) 
 
@@ -71,7 +71,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
   4. 配置和更新System Center Endpoint Protection客户端。
 
 
-#### <a name="before-you-begin"></a>准备工作
+#### <a name="before-you-begin"></a>开始之前
 
 执行以下步骤以满足载入要求：
 
@@ -85,7 +85,7 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 - 安装 [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本) [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > 如果使用 SCCM 管理 Windows Server 2008 R2 SP1，SCCM 客户端代理将安装 .Net Framework 4.5.2。 因此，无需安装 .NET framework 4.5 (更高版本) 。
+    > 如果使用 SCCM 管理 Windows Server 2008 R2 SP1，SCCM 客户端代理将安装 .Net Framework 4.5.2。 因此，无需安装 .NET framework 4.5 (或更高版本) 。
 
 For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
@@ -118,7 +118,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>选项 2：Windows Azure 安全中心载入服务器
 
-在"Microsoft 365 Defender"导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
+在"Microsoft 365 Defender导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
 
 1. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统。
 
@@ -152,8 +152,8 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
 > [!NOTE]
 >
-> - Windows Server 2019 到 Microsoft Endpoint Manager的载入包当前附带了一个脚本。 若要详细了解如何在 Configuration Manager 中部署脚本，请参阅 Configuration [Manager 中的程序包和程序](/configmgr/apps/deploy-use/packages-and-programs)。
-> - 本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略或Microsoft Endpoint Configuration Manager。
+> - Windows Server 2019 到 Microsoft Endpoint Manager的载入包当前附带了脚本。 若要详细了解如何在 Configuration Manager 中部署脚本，请参阅 Configuration [Manager 中的程序包和程序](/configmgr/apps/deploy-use/packages-and-programs)。
+> - 本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略，或Microsoft Endpoint Configuration Manager。
 
 对 Windows Server 的支持可更深入地了解服务器活动、内核和内存攻击检测的范围，并启用响应操作。
 
@@ -185,7 +185,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2： [Configure and upda
 
     如果结果是"指定服务作为已安装服务不存在"，则需要安装 Microsoft Defender AV。 有关详细信息，请参阅 Microsoft Defender 防病毒[中的Windows 10。](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-    有关如何使用组策略配置和管理 Microsoft Defender 防病毒 服务器上 Windows 的信息，[请参阅使用组](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)策略设置配置和管理Microsoft Defender 防病毒。
+    有关如何使用组策略在 Windows 服务器上配置和管理 Microsoft Defender 防病毒 的信息，[请参阅使用组](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)策略设置配置和管理Microsoft Defender 防病毒。
 
 ## <a name="integration-with-azure-defender"></a>与 Azure Defender 集成
 
@@ -193,7 +193,7 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的Window
 
 此集成中包含以下功能：
 
-- 自动载入 - 在已载入 Azure Defender 的 Windows 自动启用 Defender for Endpoint 传感器。 有关 Azure Defender 载入详细信息，请参阅使用集成的 [Microsoft Defender for Endpoint 许可证](/azure/security-center/security-center-wdatp)。
+- 自动载入 - 在载入到 Azure Defender 的 Windows 自动启用 Defender for Endpoint 传感器。 有关 Azure Defender 载入详细信息，请参阅使用集成的 [Microsoft Defender for Endpoint 许可证](/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
     > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展，以支持[Windows Server 2019 和 Windows Virtual Desktop (WVD) ](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)。
@@ -204,12 +204,12 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的Window
 
 > [!IMPORTANT]
 >
-> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲和英国用户创建 Defender for Endpoint) 。
+> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国用户 (，在欧盟为欧洲和英国用户创建 Defender) 。
 Defender for Endpoint 收集的数据存储在预配期间标识的租户地理位置中。
-> - 如果在使用 Azure Defender 之前使用 Defender for Endpoint，数据将存储在创建租户时指定的位置，即使以后与 Azure Defender 集成。
+> - 如果在使用 Azure Defender 之前使用 Defender for Endpoint，则数据将存储在创建租户时指定的位置，即使以后与 Azure Defender 集成。
 > - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。
 >
-已针对客户禁用利用此集成的服务器Office 365 GCC监视。
+已针对客户禁用利用此集成的服务器终结点Office 365 GCC监视。
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>配置和更新System Center Endpoint Protection客户端
 
@@ -217,7 +217,7 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 
 若要启用此集成，需要执行以下步骤：
 
-- 为[客户端安装 2017](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)年 1 月Endpoint Protection更新。
+- 为客户端[安装 2017 年 1](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)月Endpoint Protection更新。
 
 - [将 SCEP 客户端云保护服务成员身份配置为](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)**高级** 设置。
 
@@ -234,17 +234,17 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 - [使用移动设备管理工具离开并监视设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
-对于其他Windows版本，有两个选项Windows从服务中离开服务器：
+对于其他 Windows服务器版本，有两个选项Windows从服务中离开服务器：
 
 - 卸载 MMA 代理
 - 删除 Defender for Endpoint 工作区配置
 
 > [!NOTE]
-> 载出会导致 Windows 服务器停止向门户发送传感器数据，但来自 Windows 服务器的数据（包括对已发送的任何警报的引用）最多保留 6 个月。
+> 载出会导致 Windows 服务器停止向门户发送传感器数据，但来自 Windows 服务器的数据（包括对已具有的任何警报的引用）最多保留 6 个月。
 
 ### <a name="uninstall-windows-servers-by-uninstalling-the-mma-agent"></a>通过Windows MMA 代理卸载服务器
 
-若要卸载Windows，你可以从服务器卸载 MMA Windows或将其从报告分离到 Defender for Endpoint 工作区。 从代理上离开后，Windows服务器将不再将传感器数据发送到 Defender for Endpoint。
+若要卸载Windows，你可以从 Windows 服务器卸载 MMA 代理，或将其从报告分离到 Defender for Endpoint 工作区。 从代理上载后，Windows服务器将不再将传感器数据发送到 Defender for Endpoint。
 有关详细信息，请参阅禁用 [代理](/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent)。
 
 ### <a name="remove-the-defender-for-endpoint-workspace-configuration"></a>删除 Defender for Endpoint 工作区配置
@@ -260,13 +260,13 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成。 集成提�
 
 2. 选择"适用于终结点的 Defender"工作区，然后单击"删除 **"。**
 
-    ![属性Microsoft Monitoring Agent图像。](images/atp-mma.png)
+    ![属性Microsoft Monitoring Agent的图像。](images/atp-mma.png)
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>运行 PowerShell 命令以删除配置
 
 1. 获取工作区 ID：
 
-   1. 在"Microsoft 365 Defender"导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
+   1. 在"Microsoft 365 Defender导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **载入"。**
 
    1. 选择 **Windows Server 2008 R2 SP1、2012 R2 和 2016** 作为操作系统并获取工作区 ID：
 
@@ -364,7 +364,7 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 :::image type="content" source="images/tasksch.png" alt-text="任务计划程序。":::
 
-如 Server 的载入文档中提及，特别是围绕 Server 2008 R2，请参阅以下内容：
+如 Server 的载入文档特别围绕 Server 2008 R2 所述，请参阅以下内容：
 
 对于 Windows Server 2008 R2 PS1，请确保满足以下要求：
 
@@ -372,7 +372,7 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 - 安装 [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本) [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-在载入 Windows Server 2008 R2 之前，请检查这些 KB 是否存在 此过程允许你在没有配置管理器管理服务器时载入所有服务器。
+在载入 Windows Server 2008 R2 之前，请检查这些 KB 是否存在：如果你还没有配置管理器管理服务器，此过程允许你载入所有服务器。
 
 ## <a name="related-topics"></a>相关主题
 

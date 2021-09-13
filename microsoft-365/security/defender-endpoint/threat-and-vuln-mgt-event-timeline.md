@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162265"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -48,12 +48,12 @@ ms.locfileid: "58614880"
 还有三个入口点来自 危险和漏洞管理[仪表板](tvm-dashboard-insights.md)：
 
 - **组织曝光分数卡**：将鼠标悬停在"时间曝光分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示软件漏洞。
-- **Microsoft 设备安全分数**：将鼠标悬停在"设备一段时间的分数"图中的事件点上，然后选择"查看这一天的所有事件"。 这些事件表示新的配置评估。
-- **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括影响事件。
+- **Microsoft 设备安全分数**：将鼠标悬停在"你的设备时间分数"图中的事件点上，然后选择"查看当天的所有事件"。 这些事件表示新的配置评估。
+- **Top events card**： Select "Show more" at the bottom of the top events table. 卡片显示最近 7 天内影响最大的三个事件。 如果事件影响大量设备，或者它是一个关键漏洞，则可包括有影响的事件。
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>设备曝光分数和 Microsoft 安全分数图
 
-在危险和漏洞管理仪表板中，将鼠标悬停在曝光分数图上，以查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
+在危险和漏洞管理仪表板中，将鼠标悬停在曝光分数图上，查看当天影响设备的顶部软件漏洞事件。 将鼠标悬停在 Microsoft 设备安全分数图上可查看影响分数的新安全配置评估。
 
 如果没有影响你的设备或你的设备分数的事件，则不会显示任何事件。
 
@@ -84,7 +84,7 @@ ms.locfileid: "58614880"
 
 ![事件时间线页面。](images/tvm-event-timeline-overview-mixed-type.png)
 
-### <a name="columns"></a>列数
+### <a name="columns"></a>列
 
 - **日期**：月、日、年
 - **事件**：影响的事件，包括组件、类型和受影响设备的数量

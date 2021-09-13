@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 110b86974badde65450f4264daf9373f46f8993d
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171254"
 ---
 # <a name="list-software-inventory-api"></a>列出软件清单 API
 
@@ -40,7 +40,7 @@ ms.locfileid: "58350024"
 检索组织软件清单。
 <br>支持 [OData V4 查询](https://www.odata.org/documentation/)。
 <br>OData 支持的运算符：
-<br>```$filter``` on：  ```id``` ```name``` 、 和 ```vendor``` 属性。
+<br>```$filter``` on：  ```id``` ```name``` 、 和 ```vendor``` properties。
 <br>```$top``` 最大值为 10，000。
 <br>```$skip```.
 <br>请参阅 Microsoft [Defender for Endpoint 的 OData 查询示例](exposed-apis-odata-samples.md)。
@@ -64,7 +64,7 @@ GET /api/Software
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

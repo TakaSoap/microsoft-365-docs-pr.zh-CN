@@ -14,11 +14,11 @@ localization_priority: Priority
 description: Microsoft 365 可帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性。
 ms.custom: seo-marvel-jun2020
 ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170877"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 ![使用云的各种行业的全局视图的图示比拟。](../media/solution-arch-center/MSC17_global_016.png)

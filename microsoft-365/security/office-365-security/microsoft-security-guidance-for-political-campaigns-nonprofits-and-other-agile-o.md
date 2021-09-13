@@ -23,11 +23,11 @@ description: 摘要：针对发展迅速且配置文件威胁不断增加的组�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 8053714fe705735cff43b2aa85a726e8511f57b6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162195"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南
 

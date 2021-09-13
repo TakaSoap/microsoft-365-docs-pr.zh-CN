@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170943"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看并组织 Microsoft Defender for Endpoint 事件队列
 
@@ -53,7 +53,7 @@ ms.locfileid: "58565806"
 ## <a name="sort-and-filter-the-incidents-queue"></a>对事件队列进行排序和筛选
 可以应用以下筛选器来限制事件列表，并获取更集中的视图。
 
-### <a name="severity"></a>严重性
+### <a name="severity"></a>Severity
 
 事件严重性 | 说明
 :---|:---
@@ -76,7 +76,7 @@ Medium </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注�
 
 ## <a name="incident-naming"></a>事件命名
 
-为了一目了然地了解事件的范围，事件名称根据警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。
+为了一目了然地了解事件的范围，事件名称将基于警报属性自动生成，如受影响的终结点数量、受影响的用户、检测源或类别。
 
 例如： *多个源报告的多个终结点上的多阶段事件。*
 

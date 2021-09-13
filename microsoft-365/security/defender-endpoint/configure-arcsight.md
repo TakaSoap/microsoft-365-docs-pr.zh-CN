@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170097"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>配置 Micro Focus ArcSight 以拉取 Defender 进行终结点检测
 
@@ -41,7 +41,7 @@ ms.locfileid: "58509529"
 > - [Defender for Endpoint Alert](alerts.md) 由一个或多个检测组成
 > - [Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 配置微型焦点 ArcSight 连接器工具需要多个配置文件，以从 AAD Azure Active Directory (分析) 检测。
 
@@ -59,7 +59,7 @@ ms.locfileid: "58509529"
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你已保存了包含这两个文件的配置文件。
+    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你将保存一个包含这两个文件的配置文件。
 
 - 请确保生成以下令牌并准备好：
   - 访问令牌
@@ -118,7 +118,7 @@ ms.locfileid: "58509529"
 
 8. 返回到 Micro Focus ArcSight 连接器设置窗口，继续进行连接器设置。
 
-9. Select the **ArcSight Manager (encrypted)** as the destination and click **Next**.
+9. 选择 **ArcSight 管理器 (加密)** 作为目标，然后单击下一 **步**。
 
 10. 在管理器主机名中键入目标 IP/主机名，在参数表单中键入凭据。  表单中的所有其他值都应保留为默认值。 单击“**下一步**”。
 

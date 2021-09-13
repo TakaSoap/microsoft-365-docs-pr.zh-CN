@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: 在 Microsoft Bookings 应用中更改预订页面的颜色主题。
 ms.openlocfilehash: 5faf769eeee8a34989e1fc3f1d5859c9770f85a3
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171190"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>定制并发布预订页面
 
@@ -38,15 +38,15 @@ ms.locfileid: "58822732"
 
 - **预订页面访问控制：禁用预定页面的直接搜索引擎索引** 此设置阻止你的页面显示在 Google、必应或其他搜索引擎的搜索结果中。 选中此框将确保对页面的访问权限仅限于生成的页面链接。
 
-- **客户数据使用许可** 选中后，请求用户或客户同意你的组织使用其数据的文本将显示在Self-Service页面上。 用户必须选中该框才能完成预订。
+- **客户数据使用许可** 选中后，请求用户或客户同意你的组织使用其数据的文本将显示在"Self-Service页上。 用户必须选中该框才能完成预订。
 
 - **计划策略**、 **电子邮件通知** 和员工 **所有这些设置** 都类似于"服务"选项卡上每个服务的可用设置。
 
 - **可用性** 此选项可设置服务的特定时间和日期范围的可用性。 否则，Bookings 将默认为营业时间。 你可以在此处 **对假日** 或延长时间等方案使用可用性选项。
 
-- **自定义页面** 选择显示在页面上的颜色和Self-Service，例如，确保品牌一致性。
+- **自定义页面** 选择页面页面上显示的颜色Self-Service徽标，例如，确保品牌一致性。
 
-- **区域设置和时区设置** 你可以在此处为"会议"页面设置时区和Self-Service首选项。 我们建议设置本地时区。 对于您的 Self-Service 页面的访问者，Bookings 会自动检测其本地时区，并会在自己的时区显示其可用性。 例如，如果约会在 PST 下午 1：00 可用，则 CST 中的人员将看到可用时间显示为 3：00pm CST。
+- **区域设置和时区设置** 你可以在此处为"会议"页面设置时区和Self-Service首选项。 我们建议设置本地时区。 对于您的 Self-Service页面的访问者，Bookings 会自动检测其本地时区，并会在各自的时区向用户显示可用性。 例如，如果约会在 PST 下午 1：00 可用，则 CST 中的人员将看到可用时间显示为 3：00pm CST。
 
 发布预订页面后，客户将看到预订页面，他们可以在这里与自己预订约会。 面向客户的预订页面如下所示：
 
@@ -60,7 +60,7 @@ ms.locfileid: "58822732"
 
 1. In Microsoft 365， select the app launcher， and then select **Bookings**.
 
-1. 在导航窗格中，选择"预订 **页面"。**
+1. 在导航窗格中，选择"**预订页面"。**
 
 1. 验证计划策略是否正确。 有关详细信息 [，请参阅设置](set-scheduling-policies.md) 日程安排策略。
 

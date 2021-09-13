@@ -1,5 +1,5 @@
 ---
-title: 在企业测试环境中注册 iOS/iPadOS Microsoft 365 Android 设备
+title: 在适用于企业测试环境的 Microsoft 365 注册 iOS/iPadOS 和 Android 设备
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -15,15 +15,15 @@ ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在测试环境中注册Microsoft 365并远程管理设备。
 ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170995"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在适用于企业测试Microsoft 365注册 iOS 和 Android 设备
 
-*本测试实验室指南只能用于Microsoft 365测试环境。*
+*本测试实验室指南仅适用于企业Microsoft 365测试环境。*
 
 本文介绍如何在适用于企业测试环境的 Microsoft 365 注册和测试 iOS/iPadOS 和 Android 设备的基本移动设备管理功能。
 
@@ -35,7 +35,7 @@ ms.locfileid: "58568380"
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -59,7 +59,7 @@ ms.locfileid: "58568380"
 
 - [设备管理概述](/mem/intune/fundamentals/what-is-device-management)
 - [教程：演练 Intune Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
-- [部署指南：安装或移动到Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
+- [部署指南：设置或移动到Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>第 3 阶段：远程管理 iOS 和 Android 设备
 

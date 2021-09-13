@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
 ms.openlocfilehash: d00ca7a39b05e5364a49a6300ef9ee24c3dd0bd1
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162346"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 

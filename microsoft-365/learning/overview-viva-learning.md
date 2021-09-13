@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: 了解Microsoft Viva Learning (环境中) 预览Microsoft 365预览版。
 ms.openlocfilehash: e08be19d9277a31401b62be71f1e180859ba29bb
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942578"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171301"
 ---
 # <a name="overview-of-microsoft-viva-learning-preview"></a>预览Microsoft Viva Learning (概述)  
 
@@ -65,7 +65,7 @@ Viva Learning (预览) 使学习融入你的一天变得容易。 在 Microsoft 
 
 知识管理员应具有中等技术水平，并且SharePoint管理员凭据。 知识管理员应很好地了解组织的教育、学习、培训或员工体验部分。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 
 准备好在自定义环境中设置和配置 Viva Learning (Preview) 时Microsoft 365：
 

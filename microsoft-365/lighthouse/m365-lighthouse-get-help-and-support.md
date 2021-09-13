@@ -17,16 +17,16 @@ ms.custom:
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，了解如何获取帮助和支持。
 ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170554"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>获取有关帮助和支持Microsoft 365 Lighthouse 
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 如果您需要帮助，可以使用多个选项。 首先检查客户租户服务的当前运行状况：
 
@@ -37,7 +37,7 @@ ms.locfileid: "58506426"
 
 1. 转到 上 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Microsoft 365 管理中心。
 2. 在左侧导航窗格中，选择"**运行状况**  >  **服务运行状况"。**
-3. 在服务列表中，找到 **"Microsoft 365套件**"，然后展开它以显示套件中的所有服务。
+3. 在服务列表中，找到 **"Microsoft 365"，** 然后展开它以显示套件中的所有服务。
 4. 查找 **Microsoft 365 Lighthouse** 并检查运行状况。
 
 如果遇到未在任一服务运行状况仪表板中列出的问题，请按照本文中的说明查看自助选项或创建服务请求。
@@ -45,11 +45,11 @@ ms.locfileid: "58506426"
 > [!NOTE]
 > 当 Lighthouse 在预览版中时，支持仅限于英语。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 若要创建和管理服务请求，必须至少有一个 Azure Active Directory (Azure AD) 角色分配有以下属性集 **：microsoft.office365.supportTickets/allEntities/allTasks**。 有关 Azure AD 角色的列表，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。 若要了解如何分配角色，请参阅向用户分配 [Azure AD 角色](/azure/active-directory/roles/manage-roles-portal)。
 
-- 如果需要创建服务请求，请收集与问题有关的详细信息（如诊断日志、租户 ID 和用户 ID (如果特定用户受到影响) ）。
+- 如果需要创建服务请求，请收集与问题有关的详细信息（如诊断日志、租户 ID 和用户 ID (如果特定用户受到影响) 。
 
 ## <a name="access-help-and-support"></a>访问帮助和支持
 

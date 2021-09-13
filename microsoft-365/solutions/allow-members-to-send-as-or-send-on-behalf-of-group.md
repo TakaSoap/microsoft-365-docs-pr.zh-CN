@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
-description: 了解如何允许组的成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
+description: 了解如何允许团队成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
 ms.openlocfilehash: f2147e49c66e4ad8b4504c00cbd7902dd482cdfc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170440"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员以组的名义发送或代表组发送
 
@@ -39,7 +39,7 @@ ms.locfileid: "58568020"
 > 您可以为 **给定用户配置****"** 代理发送"或"代表发送"，但不能同时配置这两者。 如果同时配置这两者，它将默认 **为"发送为"。**
 
 > [!TIP]
-> 请参阅[从](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)组或代表Microsoft 365发送电子邮件，了解如何使用 Outlook 和 Outlook Web 从组发送电子邮件。
+> 请参阅[从组](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)或代表Microsoft 365发送电子邮件，了解如何使用 Outlook 和 Outlook Web 从组发送电子邮件。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组发送电子邮件
 

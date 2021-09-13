@@ -28,11 +28,11 @@ search.appverid:
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建 AutoPilot 配置文件，并应用到设备，以及编辑或删除配置文件或者从设备中删除配置文件。
 ms.openlocfilehash: 4f54b4baac1cd9364d852116115f07fae021b823
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169838"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 
@@ -54,7 +54,7 @@ ms.locfileid: "58360301"
   
 1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡。 
     
-2. 选中设备名称旁边的复选框，在"设备"面板中，从"已分配配置文件"下拉列表"保存"中选择 \> **配置文件**。
+2. 选中设备名称旁边的复选框，在"设备"面板中，从"分配配置文件"下拉列表"保存"中选择 \> **配置文件**。
     
     ![In the Device panel, select an Assigned profile to apply it.](../../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   

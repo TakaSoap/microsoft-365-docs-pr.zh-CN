@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1d5771be82c687144759fd321dfc44b8c6158d57
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171256"
 ---
 # <a name="list-software-version-distribution"></a>列出软件版本分发
 

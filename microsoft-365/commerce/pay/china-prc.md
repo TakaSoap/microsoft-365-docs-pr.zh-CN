@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eb8387ea5e18ce438b901fcc4159868fb3e41cbdb91ed1ccf68434f70e9aac0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba47c83a81797f30c956ca16023b299e167566e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170753"
 ---
 # <a name="payment-information-for-china-prc"></a>中国 (付款) 
 
@@ -32,6 +32,6 @@ Please pay in CNY and reference your company name and invoice number (s) on the 
 **分支：** 香港特别行政区  
 **SWIFT 代码：** 进行分列  
 **CNAP 代码：989584000600**  
-**帐户号：1199527009**  
+**帐号：1199527009**  
 **帐户名称：** MICROSOFT REGIONAL SALES CORP  
 **备注：通过 HK 中的"通过，通过"RTGS"频道付款。**

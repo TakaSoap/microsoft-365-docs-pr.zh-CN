@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 69685dd4b2dfd28d6d1b7e06cbd551ed2c090ce1e8b831e527f0d74a90dfa100
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 98bfea4fb7665a2cee22f704b2f73a9c49ef4a2f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170861"
 ---
 # <a name="contact-support-for-switzerland"></a>联系瑞士支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53797274"
 ## <a name="phone-number"></a>电话号码
 0800 000 300
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 9 点到下午 5 点

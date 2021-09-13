@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 47fe5cda2732bcbaf994f0c4adcc5c475193a5a4
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162294"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -36,7 +36,7 @@ ms.locfileid: "58745645"
 
 在企业方案中，通常会为安全运营团队分配一组设备。 这些设备根据一组属性（如域、计算机名称或指定标记）分组在一起。
 
-在 Microsoft Defender for Endpoint 中，你可以创建设备组，并使用它们：
+在 Microsoft Defender for Endpoint 中，你可以创建设备组并使用它们：
 
 - 将相关警报和数据的访问权限限制为具有已分配[RBAC](rbac.md)角色的特定 Azure AD 用户组
 - 为不同的设备集配置不同的自动修正设置
@@ -60,7 +60,7 @@ ms.locfileid: "58745645"
 
 ## <a name="create-a-device-group"></a>创建设备组
 
-1. 在导航窗格中，**选择"设置** \>  \> **终结点权限设备** \> **组"。**
+1. 在导航窗格中，选择 **"设置** \>  \> **终结点权限设备** \> **组"。**
 
 2. 单击 **"添加设备组"。**
 
@@ -87,7 +87,7 @@ ms.locfileid: "58745645"
 
 默认情况下，具有门户访问权限的所有用户均可访问设备组。 可以通过将 Azure AD 用户组分配给设备组来更改默认行为。
 
-不匹配任何组的设备将添加到未分组设备 (默认) 组。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
+不匹配任何组的设备将添加到未分组的设备 (默认) 组。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
 
 > [!NOTE]
 > 将更改应用于设备组配置可能需要几分钟。
@@ -103,7 +103,7 @@ ms.locfileid: "58745645"
 > [!TIP]
 > 在同一条件类型的行之间使用"OR"运算符，这允许每个属性具有多个值。
 >
-> 您最多可以添加 10 行 (每个) 类型的值 - 标记、设备名称、域。
+> 您最多可以添加 10 (值) 属性类型 - 标记、设备名称、域。
 
 有关链接到设备组定义的信息，请参阅设备[组 -](https://sip.security.microsoft.com/homepage)Microsoft 365安全。
 
@@ -111,4 +111,4 @@ ms.locfileid: "58745645"
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
 - [创建和管理设备标签](machine-tags.md)
-- [使用租户 API 获取租户设备Graph列表](/graph/api/device-list-memberof)
+- [使用 api 获取租户设备Graph列表](/graph/api/device-list-memberof)

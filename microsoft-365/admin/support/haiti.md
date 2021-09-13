@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fbc912033aa5839723725c5b4b8e55642ffdb26010c85aa549ec266b400b62da
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c574c9346470da65852499bbde88af27ee576fe9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162140"
 ---
 # <a name="contact-support-for-haiti"></a>联系针对海地的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53887967"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 3 点到上午 11 点

@@ -13,17 +13,17 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 17a-4 ServiceNow DataParser 连接器在 Microsoft 365 中导入和存档 ServiceNow 数据。
 ms.openlocfilehash: e2727a0146d5519310a9707e0d59a7560984305f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170179"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>设置连接器以从 ServiceNow 存档数据
 
 使用 17a-4 LLC 中的[ServiceNow DataParser](https://www.17a-4.com/dataparser/)将数据从 ServiceNow 导入并存档到 Microsoft 365 组织中。 DataParser 包括一个 ServiceNow 连接器，该连接器配置为捕获来自第三方数据源的项目，以及将这些项目导入Microsoft 365。 ServiceNow DataParser 连接器将 ServiceNow 数据转换为电子邮件格式，然后将这些项目导入 Microsoft 365。
 
-将 ServiceNow 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 ServiceNow 连接器导入数据并存档数据Microsoft 365有助于组织遵守政府法规策略。
+将 ServiceNow 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 ServiceNow 连接器在 Microsoft 365导入和存档数据可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-servicenow-data"></a>存档 ServiceNow 数据概述
 
@@ -37,13 +37,13 @@ ms.locfileid: "58574396"
 
 3. 在 Microsoft 365 合规中心 创建的 ServiceNow DataParser 连接器连接到 DataParser，将邮件传输至 Microsoft 云中的安全 Azure 存储 位置。
 
-4. 在用户邮箱中创建名为 **ServiceNow DataParser** 的收件箱文件夹中的子文件夹，并且 ServiceNow 项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 ServiceNow 项都包含此属性，该属性填充了每个参与者的电子邮件地址。
+4. 在用户邮箱中创建名为 **ServiceNow DataParser** 的收件箱文件夹中的子文件夹，并且 ServiceNow 项目将导入到该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 ServiceNow 项都包含此属性，该属性填充了每个参与者的电子邮件地址。
 
 ## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
 - 为 Microsoft 连接器创建 DataParser 帐户。 为此，请联系 [17a-4 LLC](https://www.17a-4.com/contact/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 必须在步骤 1 (步骤 1 中创建 ServiceNow DataParser 连接器并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页的"数据连接器"页上添加连接器，Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 (中创建 ServiceNow DataParser 连接器，并将其在步骤 3) 中完成的用户分配给 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向角色组分配此角色Exchange Online。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-a-servicenow-dataparser-connector"></a>步骤 1：设置 ServiceNow DataParser 连接器
 
@@ -69,7 +69,7 @@ ServiceNow DataParser 连接器会自动将用户映射到Microsoft 365电子邮
 
 ## <a name="step-4-monitor-the-servicenow-dataparser-connector"></a>步骤 4：监视 ServiceNow DataParser 连接器
 
-创建 ServiceNow DataParser 连接器后，可以查看连接器在 Microsoft 365 合规中心。
+创建 ServiceNow DataParser 连接器后，可以查看该连接器在Microsoft 365 合规中心。
 
 1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

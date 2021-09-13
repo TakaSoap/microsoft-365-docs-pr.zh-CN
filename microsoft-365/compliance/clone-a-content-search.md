@@ -19,15 +19,15 @@ ms.custom:
 - seo-marvel-apr2020
 description: 使用本文中的 PowerShell 脚本快速克隆合规性中心中的现有内容搜索，Office 365或Microsoft 365。
 ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162050"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 
-在 Office 365 或 Microsoft 365 合规中心内创建内容搜索SharePoint OneDrive for Business网站可能需要一段时间。 如果键入的 URL 错误，指定要搜索的网站也容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有内容搜索。 克隆搜索时，会创建一 (名称为) 的新搜索，其中包含与原始搜索相同的属性 (如内容位置和搜索查询) 。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行它。
+在 Office 365 或 Microsoft 365 合规性中心创建内容搜索SharePoint OneDrive for Business网站可能需要一段时间。 如果键入的 URL 错误，指定要搜索的网站也容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有内容搜索。 克隆搜索时，会创建一 (名称为) 的新搜索，其中包含与原始搜索相同的属性 (如内容位置和搜索) 搜索查询。 然后，可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行它。
   
 为什么要克隆内容搜索？
   
@@ -39,7 +39,7 @@ ms.locfileid: "58503199"
   
 ## <a name="script-information"></a>脚本信息
 
-- 您必须是 Microsoft 365 合规中心 电子数据展示管理员角色组的成员，以运行本主题中介绍的脚本。
+- 您必须是本主题中电子数据展示管理员角色组Microsoft 365 合规中心，以运行本主题中所述的脚本。
     
 - 该脚本包括最少的错误处理。 该脚本的主要目的是快速克隆内容搜索。
     
@@ -53,7 +53,7 @@ ms.locfileid: "58503199"
 
 此步骤中的脚本通过克隆现有内容搜索来创建新的内容搜索。 运行此脚本时，系统将提示您输入以下信息：
   
-- **你的用户凭据** - 脚本将使用你的凭据连接到安全&中心 PowerShell。 如前所述，您必须是安全中心电子数据展示管理员角色&的成员，以运行脚本。 
+- **用户凭据** - 脚本将使用凭据连接到安全与合规& PowerShell。 如前所述，你必须是安全中心电子数据展示管理员角色组&运行脚本。 
     
 - **现有搜索的名称** - 这是要克隆的内容搜索。 
     
@@ -137,7 +137,7 @@ ms.locfileid: "58503199"
     
     - 新搜索的名称。
     
-    该脚本将创建新的内容搜索，但不启动它。 这样，您有机会在下一步中编辑和运行搜索。 可以通过运行 **Get-ComplianceSearch** cmdlet 或进入合规性中心的内容搜索或电子 **数据** 展示页面来查看新搜索的属性，具体取决于新搜索是否与案例关联。 
+    该脚本将创建新的内容搜索，但不启动它。 这样，您有机会在下一步中编辑和运行搜索。 可以通过运行 **Get-ComplianceSearch** cmdlet 或进入合规性中心的内容搜索或电子数据展示页面来查看新搜索的属性，具体取决于新搜索是否与案例关联。 
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>步骤 2：在合规中心编辑并运行克隆的搜索
 

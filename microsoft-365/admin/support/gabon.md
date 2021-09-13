@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c19ef5a1bbb6347bca74f7467c9cd9f6982c5eaeb665df13e359bf325ed10765
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1f5a290d5c6911208f63880c6343a53069571dd7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171479"
 ---
 # <a name="contact-support-for-gabon"></a>联系支持人员以使用百年
 
@@ -26,7 +26,7 @@ ms.locfileid: "53838255"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 9 点到下午 5 点

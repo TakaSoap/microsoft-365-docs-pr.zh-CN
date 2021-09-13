@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解在适用于企业Microsoft 365存储文件的位置。
-ms.openlocfilehash: 9354e5512b8271849b25ea2f4a7253abbddedbf5b03287df6bbd78ebd297662d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d1f0a35c3b9b253b8f847ae8578e26a7deec18bb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838051"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170814"
 ---
 # <a name="where-to-store-files"></a>文件存储位置
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX?autoplay=false]
 
-在Microsoft 365中，您可以将工作存储在OneDrive for Business或SharePoint中。 组织中的每个人都有自己的OneDrive for Business库来存储个人工作文件。 创建文件并将其保存到 OneDrive 文件夹时，这些文件会同步到云中，以便可以从任何位置（Web 浏览器、计算机或移动设备）访问这些文件。 对于共享文件存储和团队协作，请使用SharePoint网站。 SharePoint网站还会同步到云，便于从任何位置访问。
+在Microsoft 365中，您可以将工作存储在OneDrive for Business或SharePoint中。 组织中的每个人都有自己的工作OneDrive for Business存储个人工作文件。 创建文件并将其保存到 OneDrive 文件夹时，这些文件会同步到云中，以便可以从任何位置（Web 浏览器、计算机或移动设备）访问这些文件。 对于共享文件存储和团队协作，请使用SharePoint网站。 SharePoint网站还会同步到云，便于从任何位置访问。
 
 ## <a name="try-it"></a>试一试！
 
@@ -43,6 +43,6 @@ ms.locfileid: "53838051"
 ### <a name="collaborate-with-a-sharepoint-site"></a>与网站SharePoint协作
 
 1. 从 [Office 365](https://www.office.com/)**中，SharePoint** 应用启动器打开"团队网站"，然后选择"团队网站"。
-2. 将文件添加到默认文档位置，或创建更多文档位置（称为库）。
+2. 将文件添加到默认"文档"位置，或创建更多文档位置，称为"库"。
 
-您可以通过为特定SharePoint、团队或客户创建子网站来自定义网站。 您还可以添加公司名称、徽标和外观，将网站转变为业务 Intranet。 [了解详细信息](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。
+您可以通过为特定项目SharePoint团队或客户创建子网站来自定义网站。 您还可以添加公司名称、徽标和外观，将网站转变为业务 Intranet。 [了解详细信息](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。

@@ -17,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: 更新组织的联系人信息，然后选择Microsoft 365接收的产品相关通信的信息。
-ms.openlocfilehash: 5d8bcfefe85f125d6efb05bf8ac9e5259f17d76883d484c2ba2e7735d845367a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169752"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>针对来自 Microsoft 的通信更改联系人首选项
 
@@ -45,7 +45,7 @@ ms.locfileid: "53825459"
 
 5. 选择“**保存**”。
   
-对于 Office 365 企业版、Microsoft 365 商业标准版 和 Microsoft 365 商业基础版，当您首次注册为 Microsoft 365 的管理员时，您的用户可能会自动注册以接收与产品相关的通信，具体取决于您组织中用户的国家/地区。
+对于 Office 365 企业版、Microsoft 365 商业标准版 和 Microsoft 365 商业基础版，首次注册为 Microsoft 365 的管理员时，你的用户可能会自动注册以接收与产品相关的通信，具体取决于你组织中用户的国家/地区。
   
 有关账单问题的解答，请参阅：
   

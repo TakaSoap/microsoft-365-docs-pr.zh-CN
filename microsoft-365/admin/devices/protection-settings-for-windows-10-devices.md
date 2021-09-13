@@ -30,13 +30,13 @@ search.appverid:
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何创建或编辑应用管理策略，并保护用户的个人Windows 10文件。
 ms.openlocfilehash: 66ddde8321742d7bcaf6294e905fdd9601482c0a
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169830"
 ---
-# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>设置或编辑设备的应用程序Windows 10设置
+# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>为设备设置或编辑Windows 10保护设置
 
 本文适用于Microsoft 365 商业高级版。
 

@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: 了解如何使用页面诊断优化 SharePoint Online 新式网站页面中的 Web 部件性能。
 ms.openlocfilehash: 93d92f6aecaa2b791823d689e53e57b92f8ed043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171329"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
 
@@ -65,7 +65,7 @@ SharePoint Online 新式网站页面包含可能影响整个页面加载时间�
 
   它是异步调用，init 时间是返回的承诺解析时 onInit 函数的时间计算。
 
-- **Render** 显示一旦模块加载和 (Init) 用户界面呈现 UI 所花时间。
+- **呈现** 显示一旦模块加载和 (Init) 用户界面呈现 UI 所花时间。
 
   将 DOM 装载到文档库的 JavaScript 执行 (页面) 。
   异步资源（例如图像）的呈现可能需要额外的时间才能完成。
@@ -86,7 +86,7 @@ Web 部件性能较差的原因有三类。 使用以下信息确定哪些问题
   - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_ 等框架。 有关详细信息，请参阅 [SharePoint 框架概述](/sharepoint/dev/spfx/sharepoint-framework-overview)。
   - 确保你使用的是最新版本的 SharePoint 框架，并在新版本推出时进行升级。
 - 数据提取/缓存
-  - 如果 Web 部件依赖额外的服务器调用来提取数据进行显示，请确保这些服务器 API 速度很快和/或实现客户端缓存 (例如，将 _localStorage_ 或 _IndexedDB_ 用于较大的) 。
+  - 如果 Web 部件依赖额外的服务器调用来提取数据进行显示，请确保这些服务器 API 快速且/或实现客户端缓存 (例如，对较大的集使用 _localStorage_ 或 _IndexedDB_) 。
   - 如果需要多次调用来呈现关键数据，请考虑在服务器上进行批处理或将请求合并到单个调用的其他方法。
   - 或者，如果某些数据元素需要较慢的 API，但对初始呈现并不重要，请将这些元素与在呈现关键数据后执行的单独调用进行分离。
   - 如果多个部件使用相同的数据，请使用公用数据层以避免重复调用。

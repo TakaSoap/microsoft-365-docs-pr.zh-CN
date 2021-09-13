@@ -13,30 +13,30 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79247ad0018f8bfb08e58254870fd510ca6fb0ad291a72b2bee4d16b9113ac4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169627"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>信息屏障策略的属性
 
-网站中的某些Azure Active Directory可用于划分用户。 定义段后，这些线段可以用作信息屏障策略的筛选器。 例如，可以使用部门按组织内部的部门定义用户细分 (假定没有单个员工同时为两个部门工作) 。
+用户可以使用Azure Active Directory中的某些属性来划分用户。 定义段后，这些线段可以用作信息屏障策略的筛选器。 例如，可以使用部门按组织内部的部门定义用户细分 (假定没有一名员工同时为两个部门工作) 。
 
 本文介绍如何将属性与信息障碍一同使用，并提供了可以使用的属性列表。 若要了解有关信息屏障详细信息，请参阅以下资源：
 
 - [信息屏障](information-barriers.md)
-- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
+- [定义信息屏障的策略Microsoft Teams](information-barriers-policies.md)
 - [编辑（删除）信息屏障策略](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在信息屏障策略中使用属性
 
 本文中列出的属性可用于定义或编辑用户细分。 已定义的分段用作 (策略中) *UserGroupFilter* [值的参数](information-barriers-policies.md)。
 
-1. 确定要用于定义线段的属性。  (请参阅本文 [中的](#reference) 参考部分。) 
+1. 确定要用于定义线段的属性。  ([请参阅本文中的](#reference) 参考部分。) 
 
-2. 确保用户帐户已针对在步骤 1 中 (属性) 填充值。 查看用户帐户详细信息，如有必要，编辑用户帐户以包括属性值。 
+2. 确保用户帐户已针对你在步骤 1 中 () 属性填充了值。 查看用户帐户详细信息，如有必要，编辑用户帐户以包含属性值。 
 
     - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅 Configure user account [properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "53795850"
 |**Azure Active Directory LDAP (<br/> 属性显示名称)**|**Exchange属性名称**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| 公司 | 公司 |
+| Company | 公司 |
 | Department | Department |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
@@ -82,7 +82,7 @@ ms.locfileid: "53795850"
 | MSExchExtensionCustomAttribute3 | ExtensionCustomAttribute3 |
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
-| MailNickname | Alias |
+| MailNickname | 别名 |
 | PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
 | ProxyAddresses | EmailAddresses |
@@ -96,6 +96,6 @@ ms.locfileid: "53795850"
 
 ## <a name="resources"></a>资源
 
-- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
+- [定义信息屏障的策略Microsoft Teams](information-barriers-policies.md)
 - [信息屏障疑难解答](information-barriers-troubleshooting.md)
 - [信息屏障](information-barriers.md)

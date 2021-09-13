@@ -22,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: 了解如何使用 Power BI 中的"使用情况分析"模板Microsoft 365开始收集租户Power BI。
+description: 了解如何使用 Microsoft 365 中的"使用情况分析"模板应用开始收集Power BI。
 ms.openlocfilehash: a05ea19915af96720c3aeaf4a4d01fbe879fbc27
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170851"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
-若要在美国Microsoft 365租户中启用Microsoft 365使用情况政府社区云 (GCC) ，请参阅连接Microsoft 365 政府社区云 (GCC) [使用情况分析](connect-to-gcc-data-with-usage-analytics.md)。
+若要在美国Microsoft 365租户中启用Microsoft 365使用情况政府社区云 (GCC) ，请参阅连接Microsoft 365 政府社区云 (GCC) [使用情况分析](connect-to-gcc-data-with-usage-analytics.md)来查看数据。
 
 ## <a name="before-you-begin"></a>开始之前
 
-若要开始使用Microsoft 365分析，必须先使数据在 Microsoft 365 管理中心 中可用，然后在 Power BI 中<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>启动模板Power BI。
+若要开始使用Microsoft 365分析，必须先在 Microsoft 365 管理中心 中提供数据，然后在 Power BI 中启动<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>模板Power BI。
 
 ## <a name="get-power-bi"></a>获取 Power BI
 
@@ -48,7 +48,7 @@ ms.locfileid: "58884656"
 > [!NOTE]
 > 你需要一个Power BI Pro许可证来安装、自定义和分发模板应用。 有关详细信息，请参阅 [先决条件](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)。
 
-若要共享数据，你和共享数据的人都需要 Power BI Pro 许可证，或者内容需要在 Power BI 高级服务[中工作](/power-bi/service-premium-what-is)。
+若要共享数据，你和共享数据的人都需要 Power BI Pro 许可证，或者内容需要在 Power BI [Premium Service 的工作区中](/power-bi/service-premium-what-is)。
 
 ## <a name="enable-the-template-app"></a>启用模板应用
 
@@ -60,15 +60,15 @@ ms.locfileid: "58884656"
 
 2. 在"**服务"选项卡** 上，选择"报告 **"。**
 
-3. 在打开的"报告"面板上，将"报告数据可供Microsoft 365 **使用情况分析"Power BI"****保存** \> **"。**
+3. 在打开的"报告"面板上，将"报告数据可供Microsoft 365 **使用情况分析"Power BI"保存** \> **"。**
 
 数据收集过程将在 2 到 48 小时内完成，具体取决于租户的大小。 数据收集 **完成后Power BI"** 转到 ("按钮) 不再灰显。
 
 ## <a name="start-the-template-app"></a>启动模板应用
 
-若要启动模板应用，你必须是全局管理员、报告读取者、Exchange管理员、Skype for Business管理员SharePoint **管理员**。 
+若要启动模板应用，你必须是全局管理员、报告读取者、Exchange管理员、Skype for Business **管理员** SharePoint **管理员**。
 
-1. 复制租户 ID，然后选择 **"转到Power BI"。**
+1. 复制租户 ID，然后选择"**转到Power BI"。**
 
 2. 转到 Power BI 后，请进行登录。 然后 **从** -> **导航菜单中选择"应用**""获取应用"。
 
@@ -80,7 +80,7 @@ ms.locfileid: "58884656"
 
 5. 选择 **"浏览** 应用"以查看包含示例数据的应用。 选择 **连接** 以将应用连接到组织的数据。
 
-6. 选择 **"连接"，** 在连接Microsoft 365使用情况分析"屏幕上，键入租户 ID (（不带短划线) 在步骤 (1) 中复制）并选择"下一步"。  
+6. 选择 **"连接"，** 在"连接 到 **Microsoft 365** 使用情况分析"屏幕上，键入在步骤 (1) 中复制的租户 ID (不带短划线) ) ，然后选择"下一步"。
 
 7. 下一个屏幕上，选择 **"OAuth2"****作为"身份验证方法** \> **""登录"。** 如果选择任何其他身份验证方法，则与模板应用的连接将失败。
 
@@ -100,12 +100,12 @@ ms.locfileid: "58884656"
 
 2. 选择“**报表**”。 
   
-3. 取消选中语句 **在所有报告中，显示用户**、组和网站的已取消标识名称，然后保存更改。  
+3. 取消选中 **在所有报表中，显示用户、组和网站的已取消标识的名称**，然后保存所做的更改。  
   
 这些更改需要几分钟才能生效。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
 
 ## <a name="related-content"></a>相关内容
 
 [关于使用情况分析](usage-analytics.md) (文章) \
-[Get the latest version of usage analytics](get-the-latest-version-of-usage-analytics.md) (article) \
+[获取使用情况分析的最新版本 (](get-the-latest-version-of-usage-analytics.md) 文章) \
 [浏览和利用Microsoft 365使用情况 (](navigate-and-utilize-reports.md)中的) 

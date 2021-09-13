@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
 ms.openlocfilehash: bc8b5d2229dac85ff5029c3f40bb0581a66b3343
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170080"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
@@ -94,8 +94,8 @@ ms.locfileid: "58253542"
 ## <a name="see-also"></a>另请参阅
 - [检查 Microsoft Defender for Endpoint 中的传感器运行状况](check-sensor-status.md)
 - [客户端分析器概述](overview-client-analyzer.md)
-- [下载并运行客户端分析器](download-client-analyzer.md)
-- [在客户端上运行Windows](run-analyzer-windows.md)
+- [下载并运行分析器](download-client-analyzer.md)
+- [在 Windows 上运行客户端分析器](run-analyzer-windows.md)
 - [在 macOS 或 Linux 上运行客户端分析器](run-analyzer-macos-linux.md)
-- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)
+- [用于在 Windows 上进行高级故障排除的数据收集](data-collection-analyzer.md)
 

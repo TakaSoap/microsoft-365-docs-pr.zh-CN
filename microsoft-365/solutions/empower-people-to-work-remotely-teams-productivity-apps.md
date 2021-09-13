@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: 使用户可通过使用 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
 ms.openlocfilehash: 034f0c3d4127ed75db8ba9a7cbe628a2502d192c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170431"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>步骤 5：部署混合工作者生产力应用和服务
 

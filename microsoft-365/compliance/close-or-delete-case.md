@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解在关闭或删除受调查案例支持的调查Advanced eDiscovery法律案件时会发生什么情况。
+description: 了解在关闭或删除案例支持的调查或法律Advanced eDiscovery会发生什么情况。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162049"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>关闭或删除Advanced eDiscovery案例
 
@@ -32,7 +32,7 @@ ms.locfileid: "58569629"
 
 下面是关闭事件案例时Advanced eDiscovery情况：
 
-- 如果案例包含任何保留内容位置，这些保留将被关闭。 关闭保留后，称为 (保留的 30) 将应用于已保留的内容位置。  这有助于防止立即删除内容，并给予管理员搜索或恢复将在延迟保留期过期后永久删除的内容的机会。 有关详细信息，请参阅从电子数据展示保留 [中删除内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
+- 如果案例包含任何保留内容位置，这些保留将被关闭。 关闭保留后，称为延迟保留 (30 天的 *宽限期) 保留* 的内容位置应用。 这有助于防止立即删除内容，并给予管理员搜索或恢复将在延迟保留期过期后永久删除的内容的机会。 有关详细信息，请参阅从电子数据展示保留 [中删除内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
 - 关闭案例仅关闭与该案例相关联的保留。 如果其他保留位于内容位置 (如诉讼保留、核心电子数据展示保留或其他 Advanced eDiscovery 案例的保留) 仍将保留这些保留。
 
@@ -54,7 +54,7 @@ ms.locfileid: "58569629"
 
 ## <a name="reopen-a-closed-case"></a>重新打开已关闭的案例
 
-重新打开一个Advanced eDiscovery案例时，关闭案例时已就位的任何保留不会自动恢复。 重新打开案例后，你必须转到保留选项卡并打开以前的保留。  要打开保留，请选择它以显示弹出页面，然后将 **状态** 开关设置为 **“开”**。
+重新打开Advanced eDiscovery案例时，关闭案例时已就位的任何保留不会自动恢复。 重新打开案例后，必须转到"保留"选项卡并打开以前的保留项。 要打开保留，请选择它以显示弹出页面，然后将 **状态** 开关设置为 **“开”**。
 
 重新打开已关闭案例：
 
@@ -68,16 +68,16 @@ ms.locfileid: "58569629"
 
 ## <a name="delete-a-case"></a>删除案例
 
-可以删除活动事例和已关闭Advanced eDiscovery事例。 删除案例时，与该案例关联的所有组件（例如保管人列表、通信、搜索、审阅集和导出作业）都将被删除。 该事例将从文档页面的 **Advanced eDiscovery事例列表中** Microsoft 365 合规中心。 无法恢复或重新打开已删除的案例。
+可以同时删除活动事例和已关闭Advanced eDiscovery事例。 删除案例时，与该案例关联的所有组件（例如保管人列表、通信、搜索、审阅集和导出作业）都将被删除。 该事例已从文档页面的 **Advanced eDiscovery事例列表中** Microsoft 365 合规中心。 无法恢复或重新打开已删除的案例。
 
 > [!NOTE]
 > 在数据泄漏方案中，删除审阅集内项目的唯一方法就是删除Advanced eDiscovery案例。 其他"搜索和清除"方法不会从审阅集中删除项目。
 
-在删除案例之前 (是处于活动状态还是已关闭) ，您必须先删除与该案例关联的所有保留。  这包括删除状态为"关"的 **保留**。
+在删除案例之前 (是活动还是关闭) ，您必须先删除与该案例关联的所有保留。  这包括删除状态为"关"的 **保留**。
 
 删除与案例相关联的保留项：
 
-1. Go the **Holds** tab in the Advanced eDiscovery case that you want to delete.
+1. 转到要 **删除** 的Advanced eDiscovery保留项"选项卡。
 
 2. 单击要删除的保留。
 

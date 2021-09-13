@@ -1,5 +1,5 @@
 ---
-title: 步骤 2. 使用Microsoft Teams创建合同管理通道
+title: 步骤 2. 使用 Microsoft Teams 创建合同管理通道
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,25 +13,25 @@ localization_priority: None
 ROBOTS: ''
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
 ms.openlocfilehash: bafce28689e4340c3ff73694d150bac294a95b5a
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171014"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用 Microsoft Teams 创建合同管理通道
 
 当组织设置合同管理解决方案时，您需要一个中央位置，利益干系人可在其中审阅和管理合同。 为此，可以使用Microsoft Teams设置Teams通道[](/microsoftteams/)，并使用 Teams 中的功能：
 
-- **为利益干系人创建一个位置，以轻松查看需要操作的所有合同。** 例如，在Teams可以在"合同管理"频道中创建"合同"选项卡，成员可以在其中查看需要审批的所有合同的有用磁贴视图。 还可以配置视图，以便每个"卡"列出你关注的重要数据 (如客户、承包商和费用金额) 。   
+- **为利益干系人创建一个位置，以轻松查看需要操作的所有合同。** 例如，在"Teams"中，您可以在"合同管理"频道创建"合同"选项卡，成员可以在其中查看需要审批的所有合同的有用磁贴视图。 您还可以配置视图，以便每个"卡"列出你关注的重要数据 (如客户、承包商和费用金额) 。   
 
      !["合同"选项卡。](../media/content-understanding/tile-view.png)
 
-- **为成员提供相互交互并查看重要事件的位置。** 例如，在Teams中，"帖子"选项卡可用于进行对话、获取更新以及查看 (，例如拒绝合同) 。 当发生某些 (如提交审批的新合同) ，"帖子"选项卡不仅可用于声明它，还可用于记录它。 如果成员订阅通知，则每当有更新时，他们将收到通知。
+- **为成员提供相互交互并查看重要事件的位置。** 例如，在Teams中，"帖子"选项卡可用于进行对话、获取更新以及查看 (，例如拒绝合同) 。 当发生 (，例如提交审批的新合同) ，"帖子"选项卡不仅可用于声明它，还可用于记录它。 如果成员订阅通知，则每当有更新时，他们将收到通知。
 
      !["帖子"选项卡。](../media/content-understanding/posts.png)
 
-- **为成员提供查看已批准合同的位置，了解何时可以提交这些合同进行付款。** 在SharePoint中，你需要创建"付款"列表，并包括"客户端、承包商"和"费用"金额的列，选择"单行 **文本**"作为列类型。  你需要将"付款"列表添加为"合同管理"Teams中的"付款"选项卡，类似于你将对"合同"选项卡 [执行哪些操作](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab)。"**付款**"选项卡将列出需要提交付款的所有合同。 您可以轻松扩展此解决方案，将此信息直接写入第三方财务应用程序 (例如 Dynamics CRM) 。 
+- **为成员提供查看已批准合同的位置，了解何时可以提交这些合同进行付款。** 在SharePoint中，你需要创建一个"付款"列表，并包括"客户端、承包商"和"费用"金额的列，选择"单行 **文本**"作为列类型。  你需要将"付款"列表添加为"合同管理"Teams中的"付款"选项卡，这类似于你将对"合同"选项卡 [执行哪些操作。](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab)"**付款**"选项卡将列出需要提交付款的所有合同。 可以轻松扩展此解决方案，将此信息直接写入第三方财务应用程序 (例如 Dynamics CRM) 。 
 
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>将SharePoint文档库附加到"合同"选项卡
@@ -47,11 +47,11 @@ ms.locfileid: "58532867"
 > [!NOTE]
 > 本节引用合同管理解决方案资产存储库中包含的ContractTileFormatting.js[ on](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 文件中包含的代码 [示例](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)。
 
-当你Teams磁贴视图中查看你的合同时，你可能希望对其进行自定义以查看想要在合同卡中可见的合同数据。 例如，对于" **合同** "选项卡，成员在合同卡上查看客户、承包商和费用金额非常重要。 所有这些字段都是通过应用于文档库的 SharePoint Syntex 模型从每个协定中提取的。 你还希望能够针对每个状态将磁贴标题栏更改为不同的颜色，以便成员可以轻松查看合同在审批过程中的情况。 例如，所有批准的合同都将有一个蓝色标题栏。
+尽管Teams允许你在磁贴视图中查看合同，但你可能希望对其进行自定义以查看想要在合同卡中可见的合同数据。 例如，对于" **合同** "选项卡，成员在合同卡上查看客户、承包商和费用金额非常重要。 所有这些字段都是通过应用到文档库的 SharePoint Syntex 模型从每个协定中提取的。 你还希望能够针对每个状态将磁贴标题栏更改为不同的颜色，以便成员可以轻松查看合同在审批过程中的情况。 例如，所有批准的合同都将有一个蓝色标题栏。
 
    ![库的SharePoint视图。](../media/content-understanding/tile.png)
 
-你使用的自定义磁贴视图要求你更改用于设置当前磁贴视图格式的 JSON 文件。 你可以参考 JSON 文件，该文件用于创建卡片视图，方法为查看ContractTileFormatting.js[ 文件](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 。 在下列部分中，你将看到代码的特定部分，这些代码适用于合同卡中的功能。
+你使用的自定义磁贴视图要求你更改用于设置当前磁贴视图格式的 JSON 文件。 通过查看 on 文件上的设置，可以引用用于创建卡片视图 [ContractTileFormatting.jsJSON](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 文件。 在下列部分中，你将看到代码的特定部分，这些代码适用于合同卡中的功能。
 
 如果要在 Teams 频道中查看或更改视图的 JSON 代码，请在 Teams 频道中，选择视图下拉菜单，然后选择"设置当前视图的格式 **"。**
 
@@ -106,11 +106,11 @@ In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/
 
 ## <a name="extracted-fields"></a>提取的字段
 
-每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和费用) 。   此外，您还需要显示文件由用于标识文件的 SharePoint Syntex分类的时间/日期。
+每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和 *费用) 。*  此外，您还需要显示文件由用于标识文件的 SharePoint Syntex分类的时间/日期。
 
 在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，以下各节定义了其中每一部分。
 
-### <a name="client"></a>客户端
+### <a name="client"></a>Client
 
 此部分定义"客户端"在卡片上的显示方式，并使用特定合约的值。
 

@@ -20,17 +20,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
+- admindeeplinkMAC
 description: 了解Office 365管理员如何将组织的品牌应用于加密电子邮件&加密门户的内容。
-ms.openlocfilehash: 761cf2b85d13db34a0150e1ca21996ad0742e4bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 87f6ffe0eed66e6cac329e71ad923355233eb657
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567564"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171392"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>向企业邮件加密加密邮件Microsoft 365组织品牌
 
-你可以应用公司品牌来自定义组织的电子邮件和加密门户的外观。 你需要将全局管理员权限应用于工作或学校帐户，然后才能开始操作。 拥有这些权限后，使用 Get-OMEConfiguration Set-OMEConfiguration Windows PowerShell cmdlet 自定义加密电子邮件的以下部分：
+你可以应用公司品牌来自定义组织的电子邮件和加密门户的外观。 你需要将全局管理员权限应用于工作或学校帐户，然后才能开始操作。 拥有这些权限后，使用 Get-OMEConfiguration 和 Set-OMEConfiguration Windows PowerShell cmdlet 自定义加密电子邮件的以下部分：
   
 - 介绍性文本
 
@@ -58,11 +59,11 @@ ms.locfileid: "58567564"
 
 - 是否希望发送给外部收件人的电子邮件在指定的天数后过期。
 
-创建模板后，可以使用自定义邮件流规则将它们应用于加密Exchange电子邮件。 如果已Office 365 高级邮件加密，可以撤消使用这些模板打造品牌的任何电子邮件。
+创建模板后，可以使用自定义邮件流规则将其应用于加密Exchange电子邮件。 如果已Office 365 高级邮件加密，可以撤销使用这些模板打造品牌的任何电子邮件。
 
 ## <a name="work-with-ome-branding-templates"></a>使用 OME 品牌模板
 
-可以在品牌模板中修改多个功能。 可以修改但不能删除默认模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。 使用Windows PowerShell一次处理一个品牌模板。
+可以在品牌模板中修改多个功能。 可以修改但不能删除默认模板。 如果您具有高级邮件加密，则还可以创建、修改和删除自定义模板。 使用Windows PowerShell一次使用一个品牌模板。
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) - 修改默认品牌模板或您创建的自定义品牌模板。
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) - 创建新的品牌模板，仅高级邮件加密。
@@ -91,7 +92,7 @@ ms.locfileid: "58567564"
 |为此自定义模板启用或禁用一次传递代码的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用一次密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> 为此自定义模板禁用一次密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |为此自定义模板启用或禁用 Microsoft、Google 或 Yahoo 标识的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> 为此自定义模板禁用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>使用高级邮件加密 (OME 品牌模板) 
+## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>使用高级邮件加密功能创建 OME (模板) 
 
 如果已Office 365 高级邮件加密，可以使用[New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet 为组织创建自定义品牌模板。 创建模板后，使用 Set-OMEConfiguration cmdlet 修改模板，如修改 [OME 品牌模板 中所述](#modify-an-ome-branding-template)。 可以创建多个模板。
 
@@ -158,19 +159,19 @@ ms.locfileid: "58567564"
 
 修改默认模板或创建新的品牌模板后，可以创建 Exchange 邮件流规则，以根据特定条件应用自定义品牌。 在下列情况下，此类规则将应用自定义品牌：
 
-- 如果电子邮件由最终用户使用 Outlook 或 Outlook 网页版手动加密，则Outlook Web App
+- 如果电子邮件是由最终用户使用 Outlook 或 Outlook 网页版手动加密的，则Outlook Web App
 
 - 如果电子邮件是由邮件流规则或数据丢失Exchange自动加密的
 
-若要了解如何创建应用加密Exchange邮件流规则，请参阅定义邮件流规则以加密电子邮件[Office 365。](define-mail-flow-rules-to-encrypt-email.md)
+若要了解如何创建应用加密Exchange邮件流规则，请参阅 Define [mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md)。
 
 1. 在 Web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户登录[Office 365。](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
 
 2. 选择" **管理"** 磁贴。
 
-3. In the Microsoft 365 管理中心， choose **Admin centers** \> **Exchange**.
+3. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>中，选择"**管理中心** \> **Exchange"。**
 
-4. 在 EAC 中，**转到"邮件** 流 \> ""规则"，然后选择 **"新建"** ![ 图标。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**创建新规则**。 有关使用 EAC 的信息，请参阅Exchange[管理中心Exchange Online。](/exchange/exchange-admin-center)
+4. 在 EAC 中，**转到"邮件** 流 \> ""规则"，然后选择 **"新建"** ![ 图标。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**创建新规则**。 有关使用 EAC 的信息，请参阅 Exchange[中的管理Exchange Online。](/exchange/exchange-admin-center)
 
 5. 在 **"** 名称"中，键入规则的名称，例如销售部门的品牌。
 

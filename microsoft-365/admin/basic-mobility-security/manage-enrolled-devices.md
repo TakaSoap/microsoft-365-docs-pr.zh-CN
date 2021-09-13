@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 description: 基本移动性和安全性可帮助您保护和管理组织的移动设备。
 ms.openlocfilehash: 3cb5b34d869ae16faa89ced45d54537fbb07a5e2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169878"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>管理在移动设备管理中注册的设备Microsoft 365
 
-内置的移动设备管理Microsoft 365可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 第一步是登录到 Microsoft 365并设置基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
+内置移动设备管理适用于 Microsoft 365 可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。 第一步是登录到 Microsoft 365并设置基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
 
 设置后，组织人员必须在服务中注册其设备。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。然后，可以使用基本移动性和安全性来帮助管理贵组织的设备。 例如，可以使用设备安全策略来帮助限制电子邮件访问或其他服务、查看设备报告以及远程擦除设备。 通常，你将转到安全与&中心执行这些任务。 有关详细信息，[请参阅Microsoft 365 合规中心。](../../compliance/microsoft-365-compliance-center.md)
 
@@ -54,7 +54,7 @@ ms.locfileid: "58564437"
 |阻止不受支持的设备使用 Exchange ActiveSync 访问 Exchange 电子邮件 |在"设备管理"面板中，选择"阻止  **"。** |
 |设置设备策略，如密码要求和安全设置 |在设备管理面板中，选择 **设备安全策略**   >  **添加 +**。 有关详细信息，请参阅在基本移动性和安全性中 [创建设备安全策略](create-device-security-policies.md)。|
 |查看阻止的设备列表  |在"设备管理"面板的"  **选择视图"下，选择**   "  **已阻止"。** |
-|解除阻止单个用户或一组用户的不相容或不受支持的设备  |选择下列方法之一以取消阻止设备：<br/>- 从已应用策略的安全组中删除一个或多个用户。 转到"Microsoft 365 管理中心 >组 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**"，**</a>然后选择组名称。 选择 **"编辑成员和管理员"。**<br/>- 从设备策略中删除用户是成员的安全组。 转到安全&合规> **安全策略 设备**   >  **安全策略**。 选择设备策略名称，然后选择"编辑 **部署**  >  **"。**<br/>- 取消阻止设备策略的所有不相容设备。 转到安全&合规> **安全策略 设备**   >  **安全策略**。 选择设备策略名称，然后选择"**编辑**  >  **访问要求"。** 选择 **"允许访问并报告冲突"。**<br/>- 若要取消阻止用户或用户组的不合规或不受支持的设备，请转到安全 & 合规中心 > **安全策略** 设备管理 管理   >  ****   >  **设备访问设置**。 添加包含要排除的成员的安全组，以阻止其访问Microsoft 365。 有关详细信息，请参阅创建、编辑或删除安全组[Microsoft 365 管理中心。](../../admin/email/create-edit-or-delete-a-security-group.md)|
-|删除用户，以便其设备不再由基本移动性和安全性管理 |若要删除用户，请编辑具有基本移动性和安全性的设备管理策略的安全组。 有关详细信息，请参阅创建、编辑或删除安全组  [Microsoft 365 管理中心。](../../admin/email/create-edit-or-delete-a-security-group.md)<br/>若要从所有用户中删除基本移动性和安全性Microsoft 365，请参阅关闭[基本移动性和安全性](turn-off.md)。|
+|解除阻止单个用户或一组用户的不相容或不受支持的设备  |选取以下项之一以取消阻止设备：<br/>- 从已应用策略的安全组中删除一个或多个用户。 转到"Microsoft 365 管理中心 >组"，<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>然后选择组名称。 选择 **"编辑成员和管理员"。**<br/>- 从设备策略中删除用户是成员的安全组。 转到安全&合规中心> **安全策略 设备**   >  **安全策略**。 选择设备策略名称，然后选择"编辑 **部署**  >  **"。**<br/>- 取消阻止设备策略的所有不相容设备。 转到安全&合规中心> **安全策略 设备**   >  **安全策略**。 选择设备策略名称，然后选择"**编辑**  >  **访问要求"。** 选择 **"允许访问并报告冲突"。**<br/>- 若要取消阻止用户或用户组的不兼容或不受支持的设备，请转到安全 & 合规中心 > **安全策略** 设备管理 管理   >  ****   >  **设备访问设置**。 添加包含要排除的成员的安全组，以阻止其访问Microsoft 365。 有关详细信息，请参阅创建[、编辑或删除](../../admin/email/create-edit-or-delete-a-security-group.md)安全Microsoft 365 管理中心。|
+|删除用户，以便其设备不再由基本移动性和安全性管理 |若要删除用户，请编辑具有基本移动性和安全性的设备管理策略的安全组。 有关详细信息，请参阅创建  [、编辑或删除](../../admin/email/create-edit-or-delete-a-security-group.md)安全Microsoft 365 管理中心。<br/>若要从所有用户中删除基本移动性和安全性Microsoft 365，请参阅关闭[基本移动性和安全性](turn-off.md)。|
 
-live (v14) 
+v14 (live) 

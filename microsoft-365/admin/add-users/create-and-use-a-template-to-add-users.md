@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以在添加多个用户时创建并使用模板来节省时间和标准化设置。
-ms.openlocfilehash: ff111850cf0dabda464653bc7503622d92e8468a430eb27a3dd2843f6ec5ade5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815835"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169941"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
 
-您可以在添加多个用户时创建并使用模板来节省时间和标准化设置。 如果你的用户共享许多常见属性，例如那些角色相同且在同一位置工作的用户和需要相同软件的用户，则模板尤其有用。 例如，您可能有一个支持工程师团队在同一个办公室工作。  
+您可以在添加多个用户时创建并使用模板来节省时间和标准化设置。 如果你的用户拥有共享许多常见属性的用户，例如那些角色相同且在同一位置工作的用户和需要相同软件的用户，则模板尤其有用。 例如，您可能有一个支持工程师团队在同一个办公室工作。  
 
 ## <a name="create-a-template"></a>创建模板
 
@@ -43,8 +43,8 @@ ms.locfileid: "53815835"
 - 许可证位置
 - 许可证选择
 - 应用程序选择
-- 角色
-- 大多数个人资料信息，例如作业 **配置文件**、**部门****、Office、Office****电话** 和 **街道地址** 
+- Role
+- 大多数配置文件信息，例如作业 **配置文件**、**部门****、Office、Office****电话** 和 **街道地址** 
 
 以下信息特定于用户，不会保存在模板中：
 
@@ -64,7 +64,7 @@ ms.locfileid: "53815835"
 
 1. 在管理中心中，选择"**用户**  >  **""活动用户"。**
 
-2. 选择 **"用户模板**"，然后从下拉列表中选择模板。  (列表将仅包含你创建的模板，而不包含由其他管理员创建的) 
+2. 选择 **"用户模板**"，然后从下拉列表中选择模板。  (列表将仅包含您创建的模板，不包含由其他管理员创建的模板。) 
 
    > [!NOTE]
    > You can also use a template to add a user by selecting **User templates** Manage  >  **templates，** selecting a template， and then selecting **Use template**.
@@ -91,5 +91,5 @@ ms.locfileid: "53815835"
 
 [同时添加用户和分配许可证](add-users.md)
 
-[从公司中删除以前的Microsoft 365](remove-former-employee.md)
+[从员工中删除以前的Microsoft 365](remove-former-employee.md)
   

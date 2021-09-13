@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Microsoft 365 商业高级版管理 Windows 10 专业版设备策略。
-ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38ed4cac88d500cec6ad4c4fe96a4fb701f1ad5b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171159"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>管理 Windows 10 专业版设备策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "53873107"
 
 ## <a name="try-it"></a>试一试！
 
-1. 登录到 Microsoft 365 管理中心。
+1. 登录到 1。 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"。</a>
 1. 在“**策略**”下方，选择“添加策略”。
 1. 在“**添加策略**”窗格的“**策略名称**”下方输入名称，然后在“**策略类型**”下选择“**Windows 10 设备配置**”。
 1. 选择“**保护 Windows 10 设备**”即可查看子选项。

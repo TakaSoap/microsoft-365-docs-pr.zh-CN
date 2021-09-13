@@ -16,11 +16,11 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162205"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 威胁专家概述Microsoft 365
 
@@ -41,7 +41,7 @@ Microsoft 威胁专家 – 按需专家可让你获取有关组织面临的威�
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知的资格要求。
 
-如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，可以通过其Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。 转到 **"设置 >终结点>常规**>高级> Microsoft 威胁专家 - 目标攻击通知"，然后选择"应用 **"。** 请参阅[配置Microsoft 威胁专家](./configure-microsoft-threat-experts.md)功能了解完整说明。
+如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，可以通过其Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。 转到设置 >**终结点>常规>** 高级> Microsoft 威胁专家目标攻击通知"，**然后选择应用**。 请参阅[配置Microsoft 威胁专家](./configure-microsoft-threat-experts.md)功能了解完整说明。
 
 ![MTE 应用程序页面的屏幕截图。](../../media/mte/mte-collaboratewithmte.png)
 

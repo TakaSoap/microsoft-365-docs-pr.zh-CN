@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以将 ServiceNow 数据存档到Microsoft 365
+title: 设置连接器以将 ServiceNow 数据存档在Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,17 +13,17 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器以将 ServiceNow 数据从 Its 导入和存档到Microsoft 365。 通过此连接器，可以在 Microsoft 365 中存档来自第三方数据源Microsoft 365。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
 ms.openlocfilehash: ed86c9a7dd7bd7922af3576313720a71400207a6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169695"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>设置连接器以存档 ServiceNow 数据
 
 使用 Microsoft 365 合规中心 中的一个 Microsoft 365 合规中心 将数据从 ServiceNow 平台导入并存档到组织的用户Microsoft 365邮箱。 该连接器提供[一个 ServiceNow](https://globanet.com/servicenow/)连接器，用于捕获第三方数据源中的项目，并导入这些项Microsoft 365。 连接器将内容（如实时邮件、附件和公告）从 ServiceNow 转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 
-将 ServiceNow 数据存储在用户邮箱中后，Microsoft 365诉讼保留、电子数据展示、保留策略和保留标签等合规性功能。 使用 ServiceNow 连接器在 Microsoft 365导入和存档数据可帮助组织遵守政府及法规策略。
+将 ServiceNow 数据存储在用户邮箱中后，Microsoft 365诉讼保留、电子数据展示、保留策略和保留标签等合规性功能。 使用 ServiceNow 连接器在 Microsoft 365导入和存档数据可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-servicenow-data"></a>存档 ServiceNow 数据概述
 
@@ -39,17 +39,17 @@ ms.locfileid: "58573651"
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换的项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **ServiceNow** 的收件箱文件夹中的子文件夹，项目将导入到该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 ServiceNow 项都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，需要登录此帐户。
 
 - 创建 ServiceNow 应用程序以从 ServiceNow 帐户提取数据。 有关创建应用程序的分步说明，请参阅[Merge1 Third-Party Connectors User Guide。](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)
 
-- 必须在步骤 1 中创建 ServiceNow 连接器 (在步骤 3) 中完成该连接器的用户必须分配至 Exchange Online 中的邮箱导入导出角色。 若要在"数据连接器"页上添加连接器，需要此Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到"邮箱管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中的角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 1 中创建 ServiceNow 连接器 (在步骤 3) 中完成该连接器的用户必须分配至 Exchange Online 中的邮箱导入导出角色。 需要此角色才能在数据连接器页的"数据连接器"页上添加Microsoft 365 合规中心。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到邮箱管理角色组Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-the-servicenow-connector"></a>步骤 1：设置 ServiceNow 连接器
 
-第一步是访问数据连接器页，Microsoft 365 合规中心 ServiceNow 数据创建连接器。 
+第一步是访问数据连接器页，Microsoft 365 合规中心 ServiceNow 数据的连接器。 
 
 1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com/) 然后单击数据 **连接器**  >  **服务Now**。
 
@@ -77,13 +77,13 @@ ms.locfileid: "58573651"
 
 ## <a name="step-4-monitor-the-servicenow-connector"></a>步骤 4：监视 ServiceNow 连接器
 
-创建 ServiceNow 连接器后，可以查看该连接器在Microsoft 365 合规中心。
+创建 ServiceNow 连接器后，可以在"服务"视图中查看Microsoft 365 合规中心。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
 2. 单击 **"连接器"** 选项卡，然后选择 **ServiceNow** 连接器以显示包含连接器的属性和信息的飞出页。
 
-3. 在 **"源的连接器状态"** 下，单击"下载日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 **"源的连接器状态"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

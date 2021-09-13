@@ -17,19 +17,19 @@ search.appverid:
 ms.assetid: ''
 description: 使用Advanced eDiscovery仪表板查看集来快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。
 ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565514"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171388"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery审阅集的仪表板
 
-在某些情况下，Advanced eDiscovery，可能需要查看大量文档和电子邮件。 在开始审阅过程之前，您可能需要快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。 为此，可以使用审阅集Advanced eDiscovery仪表板来快速分析文档集。
+在某些情况下，Advanced eDiscovery可能需要查看大量文档和电子邮件。 在开始审阅过程之前，您可能需要快速分析文档集，以确定将帮助您制定审阅策略的趋势或关键统计信息。 为此，可以使用审阅集Advanced eDiscovery仪表板来快速分析文档集。
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>步骤 1：在审阅集仪表板上创建小组件
 
-1. 在Microsoft 365 合规中心中，转到"**电子数据展示**> Advanced eDiscovery以显示组织中事例的列表。
+1. 在Microsoft 365 合规中心中，转到 **"电子数据展示**> Advanced eDiscovery以显示组织中事例的列表。
   
 2. 选择现有案例。
   

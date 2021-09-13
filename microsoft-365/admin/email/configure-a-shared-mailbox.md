@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 创建共享邮箱并配置其用户的一些设置，例如电子邮件转发和自动答复。
-ms.openlocfilehash: dafc63bd09cb50501503ab74086b9b51f73e8e7ea1b72d420e610eb58681072c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169809"
 ---
 # <a name="configure-shared-mailbox-settings"></a>配置共享邮箱设置
 
@@ -37,7 +37,7 @@ ms.locfileid: "53826215"
 
 1. 在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。
 
-2. 选择要编辑的共享邮箱，然后选择"名称、电子邮件、电子邮件别名"旁边的"**编辑"。**
+2. 选择要编辑的共享邮箱，然后选择"名称、电子邮件、电子邮件别名"旁边的 **"编辑"。**
 
 3. 输入新名称，或添加其他别名。 如果要更改主电子邮件地址，邮箱必须拥有多个电子邮件别名。
 

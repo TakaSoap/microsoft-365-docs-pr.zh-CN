@@ -27,13 +27,13 @@ search.appverid:
 - MOE150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: 了解如何配置任何设备在登录工作或学校帐户Windows 10接收的默认设备策略的设置。
+description: 了解如何配置设备登录工作或学校帐户Windows 10接收的默认设备策略的设置。
 ms.openlocfilehash: b4460f8f5e40ee6f0e121b128f17e27db7aa4979
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170358"
 ---
 # <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 
@@ -47,7 +47,7 @@ ms.locfileid: "58378177"
   
 
 
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |:-----|:-----|
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |

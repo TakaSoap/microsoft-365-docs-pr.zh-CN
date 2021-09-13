@@ -24,13 +24,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 了解如何启用 Microsoft 365只需几个步骤，Windows 10加入 Active-Directory 的设备。
+description: 了解如何通过几个Microsoft 365启用本地 Active-Directory Windows 10设备。
 ms.openlocfilehash: 2a60437bafc7aae1928d73342555c030a71689cd
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595500"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169723"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>允许加入域Windows 10设备由用户Microsoft 365 商业高级版
 
@@ -43,7 +43,7 @@ ms.locfileid: "58595500"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 将用户与 Azure AD 同步到 Azure AD 连接。
 - 完成 Azure AD 连接组织单位 (OU) 同步。
@@ -53,14 +53,14 @@ ms.locfileid: "58595500"
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. 在 Intune 中验证 MDM 颁发机构
 
-转到 ["Endpoint Manager"，](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)在"Microsoft Intune"页面上，选择"设备注册"，然后在"概述"页面上，确保 **MDM 颁发机构** 为 **Intune。**
+转到 ["Endpoint Manager"，](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)在"Microsoft Intune"页面上，选择"设备注册"，然后在"概述"页面上，确保 **MDM 颁发机构** 为 **Intune**。
 
 - 如果 **MDM 颁发机构** 为 **"无**"，请单击 **MDM 颁发机构** ，以将它设置为 **Intune**。
-- 如果 **MDM** 颁发机构Microsoft Office 365，请转到设备注册设备并使用右侧添加 MDM 颁发机构对话框添加 Intune MDM 颁发机构 (只有在 MDM 颁发机构设置为 Microsoft Office 365) 时，"添加 MDM 颁发机构  >  "对话框才可用。
+- 如果 **MDM** 颁发机构 **Microsoft Office 365，请转到** 设备注册设备，并使用右侧添加 MDM 颁发机构对话框添加 Intune MDM 颁发机构 (只有在 MDM 颁发机构设置为 Microsoft Office 365) 时，"添加  >  **MDM** 颁发机构"对话框才可用。
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. 验证 Azure AD 是否已启用以加入计算机
 
-- 转到管理中心，然后选择"Azure Active Directory ("中心"列表中 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Azure Active Directory") "全部 **显示"。**  
+- 转到管理中心，然后选择"Azure Active Directory ("管理中心"列表中Azure Active Directory") <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 全部 **显示"。**  
 - In the **Azure Active Directory admin center，** go to **Azure Active Directory** ， choose **Devices** and then **Device settings**.
 - 验证 **用户是否将设备加入 Azure AD** 已启用 
     1. 若要启用所有用户，请 **设置为全部**。
@@ -70,7 +70,7 @@ ms.locfileid: "58595500"
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. 验证 Azure AD 是否已启用 MDM
 
-- 转到管理中心，然后选择"终结点管理人员" ("如果Endpoint Manager管理员，则选择"全部 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>)   
+- 转到管理中心，然后选择"终结点管理人员" (如果"终结点管理人员 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> "Endpoint Manager"全部显示"，) 
 - In the **Microsoft Endpoint Manager admin center，** go to **Devices**  >  **Windows**  >  **Windows Enrollment** Automatic  >  **Enrollment**.
 - 验证 MDM 用户作用域是否已启用。
 
@@ -110,7 +110,7 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 如果你看不到使用默认 Azure **AD** 凭据启用自动 MDM 注册的策略，这可能是因为你未为 Windows 10 版本 1803 或更高版本安装 ADMX。 若要解决此问题，请按照以下步骤操作 (注意：最新的 MDM.admx 与) ：
 
-1. 下载[：2020 年 10 月更新 (.admx) 2020 Windows 10 20H2 (管理模板](https://www.microsoft.com/download/102157)) 。
+1. 下载[：2020 年 10 月更新 (.admx) Windows 10 2020 年 10 月 (模板) 。 ](https://www.microsoft.com/download/102157)
 2. 在域控制器上安装程序包。
 3. 根据管理模板版本导航到文件夹 **：C：\Program Files (x86) \Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**。
 4. 将上述 **路径中的"策略** 定义"文件夹重命名为 **PolicyDefinitions**。

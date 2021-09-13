@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: 本文将介绍适用于 EOP 管理员的 Microsoft Exchange Online Protection (和) 工具。
+description: 本文将介绍适用于 Microsoft Exchange Online Protection (EOP) 的报告和疑难解答工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8131fcd655d423438f80d3f2b4b5cbaf9acc32be056ef2b7a62e6647dd67ee70
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56831010"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170456"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -35,10 +35,10 @@ ms.locfileid: "56831010"
 
 ## <a name="usage-reports"></a>使用率报告
 
-- **Microsoft 365组活动**：查看有关已创建Microsoft 365组数的信息。 有关详细信息，请参阅管理Microsoft 365中的报告 - Microsoft 365[组](../../admin/activity-reports/office-365-groups.md)。
+- **Microsoft 365组活动**：查看有关已创建Microsoft 365组数的信息。 有关详细信息，请参阅管理[Microsoft 365中的](../../admin/activity-reports/office-365-groups.md)报告 - Microsoft 365组。
 - **电子邮件** 活动：查看有关整个组织中以及特定用户发送、接收和阅读的邮件数的信息。 有关详细信息，请参阅Microsoft 365中心[中的报表 - 电子邮件活动](../../admin/activity-reports/email-activity.md)。
 - **电子邮件应用** 使用情况：查看有关使用的电子邮件应用的信息。 这包括每个应用的连接总数，以及连接Outlook版本。 有关详细信息，请参阅Microsoft 365中心[中的报告 - 电子邮件应用使用情况](../../admin/activity-reports/email-apps-usage.md)。
-- **邮箱使用情况**：查看有关邮箱发送或读取 (使用的存储、配额消耗、项目计数和) 活动的信息。 有关详细信息，请参阅Microsoft 365中心[中的报告 - 邮箱使用情况](../../admin/activity-reports/mailbox-usage.md)。
+- **邮箱使用情况**：查看有关邮箱发送或阅读 (使用的存储、配额消耗、项目计数和) 活动的信息。 有关详细信息，请参阅Microsoft 365中心[中的报告 - 邮箱使用情况](../../admin/activity-reports/mailbox-usage.md)。
 
 ## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的安全报告
 
@@ -49,7 +49,7 @@ ms.locfileid: "56831010"
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph
 
-使用 Microsoft Graph 以编程方式创建可在管理中心Graph。 有关详细信息，请参阅[Microsoft](/graph/overview) Graph 概述和在 Microsoft Office 365 中处理[Graph。](/graph/api/resources/report)
+使用 Microsoft Graph 以编程方式创建可在管理中心Graph。 有关详细信息，请参阅[Microsoft](/graph/overview) Graph 概述Office 365 Microsoft [Graph。](/graph/api/resources/report)
 
 ## <a name="message-trace"></a>邮件跟踪
 

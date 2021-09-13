@@ -1,7 +1,7 @@
 ---
 title: 分配设备值 - 危险和漏洞管理
 description: 了解如何为设备分配低、普通或高值，以帮助区分资产优先级。
-keywords: Microsoft Defender for Endpoint 设备值、危险和漏洞管理值、高价值设备、设备值曝光分数
+keywords: 适用于终结点的 Microsoft Defender 设备值、危险和漏洞管理设备值、高价值设备、设备值曝光分数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 687b125b0b48a6f2adbaaaff9019c7202e1b2228b043160e2d13a6d91a3eeb14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15ab851cfe59d92663fc484b5bb0364c25af4f30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162245"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>分配设备值 - 危险和漏洞管理
 
@@ -47,7 +47,7 @@ ms.locfileid: "53894045"
 
 - 低
 - 标准（默认）
-- High
+- 高
 
 应分配高值的设备示例：
 

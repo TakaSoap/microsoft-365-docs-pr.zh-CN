@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
-ms.openlocfilehash: 885feab2d9696f33e4cc2b50cfc51d3ff57c41e4e58b78c96cee3d0390a3e240
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bf722e665950be87ed652f4df7fa7e5b2298959c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170368"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 

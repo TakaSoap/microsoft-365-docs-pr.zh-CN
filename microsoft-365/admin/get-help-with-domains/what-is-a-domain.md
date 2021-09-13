@@ -24,12 +24,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7de7c2d96a07988c87309768a12ddfac38f745047b5d654d5ffe38960cd8d938
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 949bce3c287c9b7764562586e28bc031fd0d56b6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169767"
 ---
 # <a name="what-is-a-domain"></a>什么是域？
 
@@ -43,7 +43,7 @@ ms.locfileid: "53825651"
 
  **购买新域：**
   
-使用 Microsoft 365购买新域 - 我们将进行一切设置。 [了解更多信息。](buy-a-domain-name.md)
+使用 Microsoft 365 购买新域 - 我们将进行一切设置。 [了解更多信息。](buy-a-domain-name.md)
   
  **使用你已拥有的域：**
   
@@ -58,7 +58,7 @@ ms.locfileid: "53825651"
   
 ## <a name="feeling-stuck"></a>遇到阻碍？
 
-致电 Microsoft 支持人员 - [获取有关设置域的帮助](../../business-video/get-help-support.md)
+致电 Microsoft 支持人员 - [获取有关域设置的帮助](../../business-video/get-help-support.md)
 
 ## <a name="related-content"></a>相关内容
 

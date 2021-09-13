@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 使用流程图确定项具有多个保留策略或保留标签和保留策略时的结果
 ms.openlocfilehash: 45d67b3df71dc3be17bd545be77ce99afdff56b3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171331"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>用于确定何时保留或永久删除项的流程图
 

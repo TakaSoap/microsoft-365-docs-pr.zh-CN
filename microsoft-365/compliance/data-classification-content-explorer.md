@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
 ms.openlocfilehash: e1cae053c7b13ceec9c7f3274122cf004c7277e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169668"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 

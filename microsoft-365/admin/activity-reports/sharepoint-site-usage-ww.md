@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: 获取SharePoint使用率报告，了解用户存储在 SharePoint 网站中的文件数、当前使用的文件数以及使用的总存储量。
 ms.openlocfilehash: a55f76fe1ca53129af27647b42ca44ce267a626c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169965"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365管理中心中的报告 - SharePoint网站使用情况
 
@@ -40,17 +40,17 @@ Microsoft 365高租户和 DoD 租户GCC管理中心中的报告。
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>如何访问 SharePoint 网站使用情况报表
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
-2. 在仪表板主页上，单击仪表板卡片上的"查看更多SharePoint按钮。
+2. 在仪表板主页上，单击"浏览 **"** 卡片上的"查看更多SharePoint按钮。
   
 ## <a name="interpret-the-sharepoint-site-usage-report"></a>解释SharePoint使用率报告
 
-您可以通过选择"网站使用率"选项卡SharePoint **网站使用率报告。**<br/>![Microsoft 365报告 - Microsoft SharePoint网站使用率报告。](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
+You can view the site usage in the SharePoint by choosing the **Site usage** tab.<br/>![Microsoft 365报告 - Microsoft SharePoint网站使用率报告。](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![SharePoint使用率报告 - 选择列。](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |网站 URL  <br/> |网站的完整 URL。 <br/> |
@@ -69,7 +69,7 @@ Microsoft 365高租户和 DoD 租户GCC管理中心中的报告。
 |页面视图  <br/> |在网站中查看页面次数。  <br/>|
 |访问的页面  <br/> |访问网站上的唯一页面数。  <br/>|
 |匿名链接计数  <br/> |网站上使用"具有链接的任何人"共享文档或文件夹次数。  <br/>|
-|公司链接计数  <br/> |网站上使用"组织中的人员及链接"共享文档或文件夹次数。  <br/>|
+|公司链接计数  <br/> |使用网站上"组织中的人员及链接"共享文档或文件夹次数。  <br/>|
 |来宾计数的安全链接  <br/> |使用网站上"特定人员"共享文档或文件夹次数。  <br/>|
 |成员计数的安全链接  <br/> |使用网站上"特定人员"共享文档或文件夹次数。  <br/>|
 |根网站模板  <br/> |用于创建网站的模板。  <br/> 注意：如果要按不同的网站类型筛选数据，请导出数据并使用"根 Web 模板"列。 |

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70c80c2a3eaa5f6abd55b4ffd45fa98534308768dbd88cf6e2de71517dc3bd40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8da92008caaa9539fd1ad17adab519e32e18ac40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896187"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162095"
 ---
 # <a name="payment-information-for-russia"></a>俄罗斯的付款信息
 
@@ -33,6 +33,6 @@ Please pay in RUB only and reference invoice number (s) on your payment invoice.
 **旅行：044525202**  
 **INN：7731420476**  
 **KPP：773101001**  
-**帐户号：40702810000702700004**  
+**帐户编号：40702810000702700004**  
 **相应的帐户：30101810300000000202** 俄罗斯 OPERU Moskovsky GTU Bank  
 **帐户名称：** Microsoft 付款（俄罗斯）LLC

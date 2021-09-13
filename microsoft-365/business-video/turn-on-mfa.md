@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何启用多重身份验证（有时称为双因素身份验证）。
-ms.openlocfilehash: 7c53417cc4ba8591a5b928c25ee4f0152b4b4fd946657b368ce7aa2a4618824e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec9edd8664f35d3731f1f3c90ff2c60e8b2d2e3d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170810"
 ---
 # <a name="turn-on-multifactor-authentication"></a>启用多重身份验证
 
@@ -46,4 +46,4 @@ ms.locfileid: "53809458"
 > [!NOTE]
 > 对于新订阅，安全默认值将自动打开。
 
-下次选定员工登录时，将要求他们在手机上设置 Microsoft Authenticator 应用进行第二种形式的身份验证。
+下次选定员工登录时，将要求他们在手机上Microsoft Authenticator应用进行第二种形式的身份验证。

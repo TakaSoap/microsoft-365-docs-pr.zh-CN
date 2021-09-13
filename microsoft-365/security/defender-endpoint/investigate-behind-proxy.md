@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78ec7662b050a9dafcae798fa8aeb2685deb8a68
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 86a447ba3a5dca129d1044e5df83dd2ab81cbe74
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162307"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -36,17 +36,18 @@ ms.locfileid: "58569329"
 
 Defender for Endpoint 支持来自不同级别的网络堆栈的网络连接监视。 一个难题是，当网络使用转发代理作为 Internet 网关时。
 
-代理的作用就像它是目标终结点一样。  在这些情况下，简单的网络连接监视器将审核与代理的连接，该代理是正确的，但调查值较低。 
+代理的作用就像它是目标终结点一样。 在这些情况下，简单的网络连接监视器将审核与代理的连接，该代理是正确的，但调查值较低。
 
 Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开后，将显示新的事件类型，以公开真实目标域名。
 
 ## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>使用网络保护监视防火墙后的网络连接
-由于源自网络保护的其他网络事件，可以监视转发代理后面的网络连接。 若要在设备时间线上查看它们，请至少 (在审核模式下打开网络) 。 
+
+由于源自网络保护的其他网络事件，可以监视转发代理后面的网络连接。 若要在设备时间线上查看它们，请至少 (在审核模式下打开网络) 。
 
 可以使用以下模式控制网络保护：
 
-- **阻止** <br> 将阻止用户或应用连接到危险域。 你将能够在"活动"中查看此Microsoft Defender 安全中心。
-- **审核** <br> 不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
+- **阻止**：将阻止用户或应用连接到危险域。 你将能够在活动中心内看到此Microsoft Defender 安全中心。
+- **审核**：不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
 
 
 如果关闭网络保护，将不会阻止用户或应用连接到危险域。 你将不会在 Microsoft Defender 安全中心 中看到任何网络Microsoft Defender 安全中心。
@@ -56,6 +57,7 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 有关详细信息，请参阅启用 [网络保护](enable-network-protection.md)。
 
 ## <a name="investigation-impact"></a>调查影响
+
 当网络保护打开时，你将看到，在设备的时间线上，IP 地址将一直表示代理，而真实目标地址将显示。
 
 ![设备时间线上的网络事件的图像。](images/atp-proxy-investigation.png)
@@ -66,32 +68,30 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 
 ![单个网络事件的图像。](images/atp-proxy-investigation-event.png)
 
+## <a name="hunt-for-connection-events-using-advanced-hunting"></a>使用高级搜寻搜寻连接事件
 
-
-## <a name="hunt-for-connection-events-using-advanced-hunting"></a>使用高级搜寻搜寻连接事件 
 所有新的连接事件都可供你通过高级搜寻进行搜寻。 由于这些事件是连接事件，因此可在操作类型下的 DeviceNetworkEvents 表 `ConnecionSuccess` 下找到它们。
 
 使用此简单查询将显示所有相关事件：
 
-```
+```console
 DeviceNetworkEvents
-| where ActionType == "ConnectionSuccess" 
+| where ActionType == "ConnectionSuccess"
 | take 10
 ```
 
 ![高级搜寻查询的图像。](images/atp-proxy-investigation-ah.png)
 
-还可以筛选掉与与代理本身连接相关的事件。 
+还可以筛选掉与与代理本身连接相关的事件。
 
 使用以下查询筛选出与代理的连接：
 
-```
+```console
 DeviceNetworkEvents
-| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
+| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"
 | take 10
 ```
 
-
-
 ## <a name="related-topics"></a>相关主题
+
 - [通过 GP 应用网络保护 - 策略 CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

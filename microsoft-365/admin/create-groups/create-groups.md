@@ -23,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: 了解如何创建和删除Microsoft 365组、添加和删除组成员，以及自定义组的工作方式。
+description: 了解如何创建和删除Microsoft 365组、添加和删除组的成员，以及自定义组的工作方式。
 ms.openlocfilehash: 76131f434b3c4210578fe44ff7dd4e435f1fbe6b
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169861"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在"管理"中Microsoft 365 管理中心
   
 尽管用户可以从Microsoft 365或其他应用中创建Outlook组，但作为管理员，你可能需要创建或删除组、添加或删除成员以及自定义其工作。 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">是</a>进行此操作的位置。 
 
 > [!TIP]
-> Microsoft 365连接Yammer组必须在Yammer中创建，但可以像管理其他组Microsoft 365 管理中心一样Microsoft 365组。 若要了解更多信息，请参阅Yammer[组Microsoft 365组。](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
+> Microsoft 365连接Yammer组必须在Yammer中创建，但可以在其他Microsoft 365 管理中心组中管理Microsoft 365组。 若要了解更多信息，请参阅Yammer[组Microsoft 365组。](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
 
 ## <a name="create-a-microsoft-365-group"></a>创建 Microsoft 365 组
 
@@ -88,6 +88,6 @@ ms.locfileid: "58394380"
 
 ## <a name="related-content"></a>相关内容
 
-[管理来宾对 Microsoft 365 组](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (文章) \
+[管理来宾对 Microsoft 365 组的访问权限](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (文章) \
 [选择创建组时Microsoft 365域 (](../../solutions/choose-domain-to-create-groups.md)文章) \
 [将通讯组列表Microsoft 365文章 (](../manage/upgrade-distribution-lists.md)组) 

@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在 Microsoft Teams 中创建具有来宾的团队。
-ms.openlocfilehash: 4a4736c993c54064d1711f2a350ee0cdef5b835b639d65e0e529f4784d547ee1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在 Microsoft Teams 创建具有来宾的团队。
+ms.openlocfilehash: a6d30684bed3a750a11e311f4e47d88940adbd0f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170813"
 ---
 # <a name="create-a-team-with-guests"></a>以来宾身份创建团队
 
@@ -33,7 +33,7 @@ ms.locfileid: "53893288"
 
 ## <a name="try-it"></a>试一试！
 
-可以使用Microsoft Teams与员工和业务外人员（如客户端）协作处理项目。
+可以使用Microsoft Teams与员工和业务外部人员（如客户端）协作处理项目。
 
 1. In Teams， choose **Teams** in the left navigation， and then choose **Create team**.
 2. 在"**创建团队"** 框中，输入团队名称、提供简短说明、选择隐私设置，然后选择"下一步 **"。**

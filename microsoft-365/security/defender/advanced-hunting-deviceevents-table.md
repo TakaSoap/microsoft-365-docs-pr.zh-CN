@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3a55e5647299e5c093c631ea10504e1a63698ea5d6b729caa25980d21a527f45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170938"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -74,13 +74,13 @@ ms.locfileid: "53817095"
 | `LocalPort` | int | 通信过程中使用的本地计算机上 TCP 端口 |
 | `FileOriginUrl` | string | 下载文件的 URL |
 | `FileOriginIP` | string | 从其中下载文件的 IP 地址 |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像) 的 SHA-1 |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像文件) SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
+| `InitiatingProcessMD5` | string | 启动事件的进程和 (文件的 MD5) 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
-| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
+| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
@@ -89,10 +89,10 @@ ms.locfileid: "53817095"
 | `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
 | `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
-| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 进程版本信息中的产品名称 (负责) 文件 |
 | `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
-|` InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 进程版本信息中的内部文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 负责事件的进程版本信息 (文件) 文件的原始文件名 |
 | `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |

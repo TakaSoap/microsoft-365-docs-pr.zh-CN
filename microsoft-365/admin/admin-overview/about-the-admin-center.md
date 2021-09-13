@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理员权限登录到 Microsoft 365 管理中心在云中设置组织，并管理用户和管理订阅。
 ms.openlocfilehash: 2e7495b4c5fc039720d3e58cacebf1e86dcaaff2
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169904"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 

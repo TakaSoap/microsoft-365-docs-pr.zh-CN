@@ -17,21 +17,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 查看根证书和证书颁发机构的完整 (CA) Microsoft 365。
-ms.openlocfilehash: a462b5912bc27cc8ed6ef529df63fd96c25969a494253e4133324c031d2475d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ab4ca6f92407659b96e177161e0fd0c2847a890c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170163"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365加密链
 
-Microsoft 365利用许多不同的证书提供程序。 下面介绍了客户在访问 Microsoft 365 时可能遇到的已知根证书的完整Microsoft 365。 有关可能需要在您自己的基础结构中安装的证书的信息，请参阅 Plan for [third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)。 以下证书信息适用于所有全球和地区云Microsoft 365。
+Microsoft 365利用大量不同的证书提供程序。 下面介绍了客户在访问 Microsoft 365 时可能遇到的已知根证书的完整Microsoft 365。 有关可能需要在您自己的基础结构中安装的证书的信息，请参阅 Plan for [third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)。 以下证书信息适用于所有全球和地区云Microsoft 365。
 
 Last updated： **10/16/2020**
 
 > [!NOTE]
-> 有关适用于 **DOD** 和 GCC 客户的证书信息，请参阅Microsoft 365加密链 [- DOD 和](encryption-office-365-certificate-chains-itar.md)GCC High。
+> 有关适用于 **DOD** 和 GCC 高客户的证书信息，请参阅Microsoft 365加密链 [- DOD 和](encryption-office-365-certificate-chains-itar.md)GCC High。
 
 | **证书类型** | **P7b 下载** | **CRL 终结点** | **OCSP 终结点** | **AIA 终结点** |
 | --- | --- | --- | --- | --- |
@@ -56,7 +56,7 @@ Last updated： **10/16/2020**
 | **SHA-256 (指纹)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
 | **固定 (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
 
-### <a name="cnnic-root"></a>**省/市/区根目录**
+### <a name="cnnic-root"></a>**四分网根**
 
 | **主题** | CN=CN=CNIC ROOT<br>O=$A0-10<br>C=CN |
 | --- | --- |
@@ -90,7 +90,7 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=DigiCert 全局根 G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 03：3A：F1：E6：A7：11：A9：A0：BB：28：64：B1：1D：09：FA：E5 |
 | **公钥长度** | RSA 2048 位 |
 | **签名算法** | sha256RSA |
@@ -129,7 +129,7 @@ Last updated： **10/16/2020**
 | **SHA-1 (指纹)** | 58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0 |
 | **SHA-256 (指纹)** | 49E7A442ACF0EA6287050054B52564B650E4F49E42E348D6AA38E039E957B1C1 |
 | **固定 (SHA-256)** | 7KDxgUAs56hlKzG00DbfJH46MLf0GlDZOpenT5CwBrQ6E= |
-| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009，O=D-Trust%20GmbH，C=DE？certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
+| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-TRUST 根类 3 CA 2 EV 2009**
 
@@ -144,7 +144,7 @@ Last updated： **10/16/2020**
 | **SHA-1 (指纹)** | 96C91B0B95B4109842FAD0D82279FE60FAB91683 |
 | **SHA-256 (指纹)** | EEC5496B988CE98625B934092EEC2908BED0B0F316C2D4730C84EAF1F3D34881 |
 | **固定 (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
-| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009，O=D-Trust%20GmbH，C=DE？certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
+| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
 ### <a name="dst-root-ca-x3"></a>**DST 根 CA X3**
 
@@ -168,7 +168,7 @@ Last updated： **10/16/2020**
 | **公钥长度** | RSA 2048 bits (e 65537)  |
 | **签名算法** | sha256RSA |
 | **Validity Not Before** | 07 年 7 月 17：25：54 2009 UTC |
-| **Validity Not After** | 07 12 月 7 日 17：55：54 2030 UTC |
+| **Validity Not After** | 07.12.17：55：54 2030 UTC |
 | **主题密钥标识符** | 6a：72：26：7a：d0：1e：ef：7d：e7：3b：69：51：d4：6c：8d：9f：90：12：66：ab |
 | **SHA-1 (指纹)** | 8CF427FD790C3AD166068DE81E57EFBB932272D4 |
 | **SHA-256 (指纹)** | 43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339 |
@@ -263,7 +263,7 @@ Last updated： **10/16/2020**
 | **SHA-256 (指纹)** | FA8B9F99DBB94E7B772AA9190846E777047C15C7A3BF4A1AF9C0CA984A689511 |
 | **固定 (SHA-256)** | dKZRcLDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk= |
 | **AIA URL** | http://www.cnnic.cn/download/cert/CNNICROOT.cer |
-| **CRL URL** | ldap:///CN=crl1，%20OU=crl，%20O=CNIC，%20C=CN？certificateRevocationList;binary，authorityRevocationList;binary，deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
+| **CRL URL** | ldap:///CN=crl1,%20OU=crl,%20O=CNNIC,%20C=CN?certificateRevocationList;binary,authorityRevocationList;binary,deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
 | **OCSP URL** | <http://ocspcnnicroot.cnnic.cn> |
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL Class 3 CA 1 2009**
@@ -282,7 +282,7 @@ Last updated： **10/16/2020**
 | **SHA-1 (指纹)** | 2FC5DE6528CDBE50A14C382FC1DE524FAABF95FC |
 | **SHA-256 (指纹)** | 6AC159B4C2BC8E729F3B84642EF1286BCC80D775FE278C740ADA468D59439025 |
 | **固定 (SHA-256)** | 9w0QP9HzLXkfs+4zENaUFq2XKcQON1oyksoJ+Gg2AZE= |
-| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009，O=D-Trust%20GmbH，C=DE？certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
+| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
 | **OCSP URL** | http://root-c3-ca2-2009.ocsp.d-trust.net |
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL Class 3 CA 1 EV 2009**
@@ -301,7 +301,7 @@ Last updated： **10/16/2020**
 | **SHA-1 (指纹)** | 1069423D308D0FC54575059638560FC7556E32B3 |
 | **SHA-256 (指纹)** | B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4 |
 | **固定 (SHA-256)** | lv5BNZ5aWd27ooolULDolFTwIaaWjHvG4yyH3rss4X8= |
-| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009，O=D-Trust%20GmbH，C=DE？certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
+| **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 | **OCSP URL** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
 
 ### <a name="digicert-basic-rsa-cn-ca-g2"></a>**DigiCert Basic RSA CN CA G2**
@@ -312,7 +312,7 @@ Last updated： **10/16/2020**
 | **序列号** | 02：F7：E1：F9：82：BA：D0：09：AF：F4：7D：C9：57：41：B2：F6 |
 | **公钥长度** | RSA 2048 位 |
 | **签名算法** | sha256RSA |
-| **Validity Not Before** | 2020 年 3 月 4 日，星期三 4：04 AM |
+| **Validity Not Before** | 2020 年 3 月 4 日，星期三，上午 4：04 |
 | **有效期直到** | 2030 年 3 月 4 日，星期一，上午 4：04 |
 | **主题密钥标识符** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
 | **颁发机构密钥标识符** | KeyID：03：de：50：35：56：d1：4c：bb：66：f0：a3：e2：1b：1b：c3：97：b2：3d：d1：55 |
@@ -516,7 +516,7 @@ Last updated： **10/16/2020**
 | **CRL URL** | http://crl.globalsign.com/root-r3.crl |
 | **OCSP URL** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2-older"></a>**GlobalSign 组织验证 CA - SHA256 - G2 (** 旧) 
+### <a name="globalsign-organization-validation-ca---sha256---g2-older"></a>**GlobalSign 组织验证 CA - SHA256 - G2** (旧) 
 
 | **主题** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
@@ -543,7 +543,7 @@ Last updated： **10/16/2020**
 | **公钥长度** | RSA 2048 bits (e 65537)  |
 | **签名算法** | sha256RSA |
 | **Validity Not Before** | 2014 年 2 月 20 日 10：00：00 UTC |
-| **Validity Not After** | 20.20 10：00：00 2024 UTC |
+| **Validity Not After** | 2020 年 2 月 10：00：00 2024 UTC |
 | **主题密钥标识符** | 96：de：61：f1：bd：1c：16：29：53：1c：c0：cc：7d：3b：83：00：40：e6：1a：7c |
 | **颁发机构密钥标识符** | keyid：60：7b：66：1a：45：0d：97：ca：89：50：2f：7d：04：cd：34：a8：ff：fc：fd：4b |
 | **SHA-1 (指纹)** | 902EF2DEEB3C5B13EA4C3D5193629309E231AE55 |
@@ -609,11 +609,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0A：AF：A6：C5：CA：63：C4：51：41：EA：3B：E1：F7：C7：53：17 |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |
@@ -626,11 +626,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0C：6A：E9：7C：CE：D5：99：83：86：90：A0：0A：9E：A5：32：14 |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | 00AB91FC216226979AA8791B61419060A96267FD |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |
@@ -643,11 +643,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0D：7B：ED：E9：7D：82：09：96：7A：52：63：1B：8B：DD：18：BD |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |
@@ -660,11 +660,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 02：E7：91：71：FB：80：21：E9：3F：E2：D9：83：83：4C：50：C0 |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |

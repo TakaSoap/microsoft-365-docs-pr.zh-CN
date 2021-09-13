@@ -1,5 +1,5 @@
 ---
-title: 创建有托管来宾的 B2B 外网
+title: 创建托管有来宾的 B2B 外联网
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,19 +18,19 @@ f1.keywords: NOCSH
 recommendations: false
 description: 了解如何使用合作伙伴组织的托管来宾创建 B2B Extranet 站点或团队。
 ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169997"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>创建有托管来宾的 B2B 外网
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
 
 可以使用["Azure Active Directory](/azure/active-directory/governance/entitlement-management-overview)管理"创建 B2B Extranet，以与使用"授权管理"Azure Active Directory。 这允许用户在 Extranet 网站或团队中自行注册，并可以通过审批工作流接收访问权限。
 
 通过这种共享协作资源的方法，合作伙伴组织可以帮助维护和批准来宾，从而减少 IT 部门的负担，并允许最熟悉协作协议的人管理用户访问。
 
-本文逐步介绍了创建资源包的步骤 (在这种情况下，创建一个站点或工作组) ，您可以通过自助服务访问注册模型与合作伙伴组织共享这些资源包。 
+本文逐步介绍了创建资源包的步骤 (在这种情况下，创建一个站点或团队) ，您可以通过自助服务访问注册模型与合作伙伴组织共享这些资源包。 
 
 在开始之前，创建要与合作伙伴组织共享的站点或团队，并启用它进行来宾共享。 有关详细信息 [，请参阅在网站](collaborate-in-site.md) 中与来宾协作或与 [团队中的](collaborate-as-team.md) 来宾协作。 我们还建议您 [查看创建安全的](create-secure-guest-sharing-environment.md) 来宾共享环境，了解可用于在与来宾协作时维护治理策略的安全与合规性功能。
 
@@ -48,7 +48,7 @@ ms.locfileid: "58572379"
 
 ## <a name="connect-the-partner-organization"></a>连接合作伙伴组织
 
-为了邀请来自合作伙伴组织的来宾，你需要将合作伙伴的域添加为 Azure Active Directory 中的连接组织。
+若要邀请合作伙伴组织的来宾，你需要将合作伙伴的域添加为 Azure Active Directory 中的连接组织。
 
 添加已连接的组织
 1. 在 ["Azure Active Directory"](https://aad.portal.azure.com)中，单击 **"标识治理"。**

@@ -15,29 +15,30 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在适用于企业Microsoft 365重置用户密码。
-ms.openlocfilehash: db89626096f151f9ebc446e08ff970a8f02c4aa2a966f6c882a7012745b96f07
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何重置企业用户Microsoft 365密码。
+ms.openlocfilehash: 593c4718fb2edcdf14bf65b6a38b55fef0962381
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896507"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171166"
 ---
 # <a name="reset-passwords-for-your-users"></a>重置用户密码
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP?autoplay=false]
 
-在Microsoft 365中，您可以重置用户的密码。 还可以让员工重置自己的密码。 有关详细信息 [，请参阅设置自助服务](set-up-self-serve-password-reset.md) 密码重置。
+在Microsoft 365中，可以重置用户的密码。 还可以让员工重置自己的密码。 有关详细信息 [，请参阅设置自助服务](set-up-self-serve-password-reset.md) 密码重置。
 
 ## <a name="try-it"></a>试一试！
 
 1. 当用户请求新密码时，你将收到电子邮件中的密码重置请求。 若要重置密码，请打开应用启动器并选择"管理员 **"。**
-1. In the Microsoft 365 管理中心， select **Users**， **Active users**， and then select the key icon next to the user who requested the reset.
+1. In the Microsoft 365 管理中心， select **Users**， <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>， and then select the key icon next to the user who requested the reset.
 1. 选择 **"自动生成密码** "以自动创建随机密码。
 1. 选择"**重置"。**
 1. 选中" **通过电子邮件发送密码"** 复选框。

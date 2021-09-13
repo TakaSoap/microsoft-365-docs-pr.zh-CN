@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 移动性的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: d3ea6e4803a1aa5d12084d626b60c058dd578832d8707e8269419683a0ed223d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170342"
 ---
 # <a name="mobility--people-experiences"></a>移动性 – 人员体验
 
-生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 移动类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
+生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 移动类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要开始使用移动见解，需要获得组织中人员的许可：
 
@@ -47,7 +47,7 @@ ms.locfileid: "53823016"
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>为什么组织&#39;移动分数很重要
 
-组织工作效率的一个基本支柱是人们无论身在何处都能灵活工作。 通过Microsoft 365，用户可以与Outlook、Microsoft Teams和Yammer。 用户还可以从任何位置和平台使用 Word、Excel、PowerPoint 和 OneNote 对内容进行无缝协作。
+组织工作效率的一个基本支柱是人们无论身在何处都能灵活工作。 借助Microsoft 365，用户可以与Outlook、Microsoft Teams和Yammer。 用户还可以从任何位置和平台使用 Word、Excel、PowerPoint 和 OneNote 对内容进行无缝协作。
 
 ## <a name="how-we-calculate-the-score"></a>如何计算分数
 
@@ -59,13 +59,13 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="显示移动性的主要见解的图表 - 人员体验生产力分数。":::
 
-1. **标头：** 显示你组织中的有权访问任何应用程序Microsoft 365 应用版，并且至少在这些应用程序中的一个平台上处于活动状态的人百分比。
+1. **标头：** 显示您组织中的有权访问任何应用程序Microsoft 365 应用版，并且至少在这些应用程序中的一个平台上处于活动状态的人的百分比。
 2. **正文：** 提供有关在多个平台上使用这些应用程序如何提高效率和满意度的信息。
 3. **可视化 (当前状态) ：** 显示有多少人在桌面、移动和 Web 上跨桌面、移动和 Web 使用至少一个Microsoft 365 (列表，) 如下所示：
-    - **蓝色线条** 部分 (颜色) 表示标题中表示的百分比的水平栏。
+    - **蓝色水平** 条形图 (颜色) 表示标题中表示的百分比。
     - **条形** 上的分数突出显示 (数字/分母) 计算页眉中的百分比。
         - 数字：过去 28 天内，在桌面、Web 和移动多个平台上使用 Microsoft Outlook、Word、Excel、PowerPoint、OneNote 和 Microsoft Teams、Yammer 和 Skype 中任意应用程序的人数。
-        - 分母：至少过去 28 天内Microsoft 365 应用版、Exchange、Yammer、Microsoft Teams 或 Skype 许可的人数。
+        - 分母：至少过去 28 天内Microsoft 365 应用版、Exchange、Yammer、Microsoft Teams 或 Skype 许可的用户数量。
     - 关键 **指标** 的对等基准值也显示为百分比。
 4. **查看移动资源：** 选择此链接可查看帮助内容。
 
@@ -73,17 +73,17 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 
 :::image type="content" source="../../media/mobility-primary.png" alt-text="显示使用多个平台与时间数的图表。":::
 
-此图显示趋势线，其中分子是过去 180 天内使用应用的人数。 图表上的每个数据点都是最近 28 天的活动聚合。 对于 x 轴上的每个日期，每个数据点都提供过去 28 天内至少跨两个平台使用应用程序的所有组织中的人员计数。
+此图显示趋势线，其中分子是过去 180 天内使用应用的人数。 图表上的每个数据点都是最近 28 天的活动聚合。 对于 x 轴上的每个日期，每个数据点都提供过去 28 天内使用至少两个平台的应用程序的组织中的全部人员计数。
 
 ### <a name="scoring-framework"></a>记分框架
 
-组织的移动分数在组织 (聚合) 级别衡量，无论用户是否在不同平台（桌面、Web 和移动）使用 Microsoft 365 应用版 -Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer 和 Skype。
+组织的移动分数在组织 (聚合) 级别衡量，无论用户是否在不同平台（桌面、Web 和移动）使用 Microsoft 365 应用版 - Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer 和 Skype。
 
 各个用户级别未提供分数。
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>探索组织跨平台和位置的工作方式
 
-我们还为您提供了可帮助您了解组织中人员跨平台工作的信息。 这些额外指标不会直接影响工作效率分数，但有助于创建作为数字化转型一部分的行动计划。  
+我们还为您提供了可帮助您了解组织中人员跨平台工作的信息。 这些额外的指标不会直接影响工作效率分数，但有助于创建作为数字转型一部分的行动计划。  
 
 ### <a name="use-of-outlook-across-platforms"></a>跨平台Outlook库
 
@@ -93,36 +93,36 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 2. **正文：** 提供有关在移动设备上使用 Outlook以帮助从任何位置通过电子邮件保持连接的价值的信息。
 3. **可视化：** 显示使用一个或多个平台Outlook活跃用户百分比：
       - **多个平台：**
-        - Numerator：过去 28 天内Outlook桌面、移动或 Web 上至少两个平台上的已用用户数。
+        - 数字：过去 28 天内Outlook桌面、移动或 Web 上至少两个平台上使用数据的人数。
         - 分母：过去 28 天内Outlook至少使用过一次。
       - **仅桌面：**
-        - 数字：过去 28 天内Outlook桌面平台上使用云解决方案的数量。
+        - 数字：过去 28 天内Outlook桌面平台上使用用户的数量。
         - 分母：过去 28 天内Outlook至少使用过一次
       - **仅 Web：**
-        - Numerator：过去 28 天内Outlook仅访问 Web 平台。
+        - 数字：过去 28 天内Outlook在 Web 平台上使用用户的数量。
         - 分母：过去 28 天内Outlook至少使用过一次。
       - **仅移动：**
         - Numerator：过去 28 天内Outlook仅在移动平台上使用用户数。
-        - *Denominator：过去 28 天内至少Outlook一次已使用项目数。
+        - *Denominator：过去 28 天内Outlook至少使用过一次。
 
 ### <a name="use-of-teams-across-platforms"></a>跨平台Teams库
 
 :::image type="content" source="../../media/teams-across-platforms.png" alt-text="显示有多少人在一个或多个平台上Teams的图表。":::
 
 1. **标头：** 显示活跃在Microsoft Teams在多个平台上使用它的百分比。
-2. **正文：** 提供有关在移动设备上使用 Teams，以帮助用户从任何位置工作时了解邮件最新值的信息。
+2. **正文：** 提供有关在移动设备上使用 Teams，以帮助用户从任何位置工作时随时了解消息最新价值的信息。
 3. **可视化：** 显示在一个平台Microsoft Teams或多个平台上使用它的活跃用户百分比： 
     - **多个平台：**
-        - Numerator：过去 28 天Teams以下两个或多个平台（桌面、移动或 Web）使用数字。
+        - 数字：过去 28 天Teams以下 2 个或多个平台（桌面、移动或 Web）使用数字。
         - 分母：过去 28 天内Microsoft Teams至少使用过一次。
     - **仅桌面：**
         - 分子：过去 28 天内仅在桌面Microsoft Teams使用数字
         - 分母：过去 28 天内Teams至少使用过一次
     - **仅 Web：**
-        - 分子：过去 28 天内仅在 web Microsoft Teams使用过数字
+        - 分子：过去 28 天内仅在Microsoft Teams在 Web 平台上使用过的号码的数量
         - 分母：过去 28 天内Microsoft Teams至少使用过一次
     - **仅移动：**
-        - 数字：过去 28 天内Microsoft Teams仅在移动平台上使用用户的数量
+        - 分子：过去 28 天内Microsoft Teams仅在移动平台上使用用户的数量
         - 分母：过去 28 天内Teams至少使用过一次
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>跨平台Microsoft 365 应用版库
@@ -134,7 +134,7 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 3. **可视化：** 分组的垂直表示跨一个或多个平台使用 Word、Excel、PowerPoint 和 OneNote 考虑的每个应用的数量。 对于其中每个应用程序，条形表示以下内容：
       - **多个平台：** 最近 28 天内至少跨两个平台在应用上处于活动状态的用户数。
       - **仅桌面：** 过去 28 天内仅在桌面平台上使用应用的用户数。
-      - **仅 Web：** 最近 28 天内仅在 Web 平台上使用应用的用户数。
+      - **仅 Web：** 最近 28 天内仅在 Web 平台上的应用中处于活动状态的用户数量。
       - **仅移动：** 最近 28 天内仅在移动平台上使用应用的用户数。
 
 ### <a name="remote-work"></a>远程工作
@@ -147,7 +147,7 @@ Microsoft 365可让用户跨应用灵活工作，包括 Microsoft Outlook、Word
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365应用运行状况 – 技术 (](apps-health.md)文章) \
+[Microsoft 365应用运行状况 – 技术体验](apps-health.md) (文章) \
 [通信 – 人员体验](communication.md) (文章) \
 [内容协作 – 人员体验](content-collaboration.md) (文章) \
 [会议 – 人员体验](meetings.md) (文章) \

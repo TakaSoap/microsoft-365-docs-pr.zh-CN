@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 - AdminTemplateSet
-description: 了解如何购买和管理适用于企业订阅的 Microsoft 365 加载项。
+description: 了解如何购买和管理适用于企业Microsoft 365加载项。
 ms.date: 04/02/2021
-ms.openlocfilehash: 59abcbed4ee051d59d6b5fdd2091d0cb6164396269171a157fd447ce2e6f1b16
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171148"
 ---
 # <a name="buy-or-manage-add-ons"></a>购买或管理加载项
 
@@ -52,7 +52,7 @@ ms.locfileid: "53856291"
 3. 在产品详细信息页面上，选择下一 **步**。
 4. 如果需要，请完成任何其他订单信息。 此信息可能包括选择加载项所针对的订阅。 完成后，选择"现在 **签出"。**
 5. 如果需要，请查看订单和定价信息，然后选择下一 **步**。
-6. 选择付款方式，或添加新付款方式，然后选择下订单  >  **转到管理员主页**。
+6. 选择付款方式，或添加新付款方式，然后选择下 **订单**  >  **转到管理员主页**。
 
 ## <a name="manage-an-add-on"></a>管理加载项
 

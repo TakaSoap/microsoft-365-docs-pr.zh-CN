@@ -16,21 +16,21 @@ ms.collection:
 ms.custom: ''
 description: 实现网络Microsoft 365路线图。
 ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170103"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365
 
-Microsoft 365包括协作和生产力云服务、Microsoft Intune以及许多企业标识和安全服务Microsoft Azure。 所有这些基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
+Microsoft 365企业版包括协作和生产力云服务、Microsoft Intune以及许多企业标识和安全Microsoft Azure。 所有这些基于云的服务都依赖于来自客户端设备通过 Internet 或专用电路的连接的安全性、性能和可靠性。 为了托管这些服务并将其提供给世界各地的客户，Microsoft 设计了一个强调性能和集成的网络基础架构。 
 
-载入时Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到内部部署数据中心和中央 Internet 连接的流量进行优化的传统网络。 
+载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到内部部署数据中心和中央 Internet 连接的流量进行优化的传统网络。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
-## <a name="plan"></a>套餐
+## <a name="plan"></a>计划
 
 在网络实施的规划阶段：
 
@@ -54,7 +54,7 @@ Microsoft 365包括协作和生产力云服务、Microsoft Intune以及许多企
 
 在网络实现的管理阶段：
 
-- [确保你的网络设备使用最新的 Office 365 终结点](microsoft-365-endpoints.md)
+- [确保你的网络设备使用的是最新的 Office 365 终结点](microsoft-365-endpoints.md)
 - [监视和调整网络性能](network-planning-and-performance.md)
 - [监视 ExpressRoute 连接](managing-expressroute-for-connectivity.md)
 

@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 了解在分配有电子数据展示权限的用户执行内容搜索、核心电子数据展示Advanced eDiscovery任务时记录哪些Microsoft 365 合规中心。
+description: 了解在用户分配了电子数据展示权限的用户执行内容搜索、核心电子数据展示和任务Advanced eDiscovery记录哪些Microsoft 365 合规中心。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 637785a86e7fa28c0c058e9f729fcf2c1604a6f3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169611"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在审核日志中搜索电子数据展示活动
 
-Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的核心电子数据展示和 Advanced eDiscovery) 的内容搜索 (电子数据展示相关活动记录在 审核日志 中。 当管理员或电子数据展示管理员 (或分配有电子数据展示权限的任何用户) 在服务器中执行以下内容搜索和核心电子数据展示任务时，将记录Microsoft 365 合规中心：
+Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet (核心电子数据展示和 Advanced eDiscovery) 执行的内容搜索和与电子数据展示相关的活动记录在 审核日志 中。 当管理员或电子数据展示管理员 (或分配有电子数据展示权限的任何用户) 在服务器中执行以下内容搜索和核心电子数据展示任务时，将记录Microsoft 365 合规中心：
   
-- 创建和管理核心Advanced eDiscovery案例
+- 创建和管理核心和Advanced eDiscovery案例
 
 - 创建、启动和编辑内容搜索
 
@@ -40,7 +40,7 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 
 - 管理电子数据展示管理员角色
   
-有关搜索搜索列表审核日志所需的权限以及导出搜索结果的信息，请参阅在搜索审核日志[搜索](search-the-audit-log-in-security-and-compliance.md)Microsoft 365 合规中心。
+有关搜索搜索列表审核日志所需的权限以及导出搜索结果的信息，请参阅在搜索审核日志搜索[Microsoft 365 合规中心。](search-the-audit-log-in-security-and-compliance.md)
   
 ## <a name="how-to-search-for-and-view-ediscovery-activities"></a>如何搜索和查看电子数据展示活动
 
@@ -50,7 +50,7 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 
 2. 在页面的左侧导航窗格中，Microsoft 365 合规中心审核 **"。**
 
-3. 在"**活动**"下拉列表中的"**电子数据** 展示活动或Advanced eDiscovery **活动"** 下，单击要搜索的一个或多个活动。
+3. 在 **"活动**"下拉列表中的"**电子数据** 展示活动或Advanced eDiscovery **活动"下**，单击要搜索的一个或多个活动。
 
     > [!NOTE]
     > " **活动** "下拉列表还包括一组名为 **"电子数据展示 cmdlet** 活动"的活动，这些活动将返回 cmdlet 审核日志。
@@ -67,16 +67,16 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 
     将显示 **"** 详细信息"飞出页面，其中包含事件记录的详细属性。 若要显示其他详细信息，请单击 **"详细信息"。** 有关这些属性的说明，请参阅电子数据 [展示活动的详细属性部分](#detailed-properties-for-ediscovery-activities) 。
 
-9. 如果需要，可以将审核日志导出到 CSV 文件，然后使用 Excel Power Query 功能格式化和筛选这些记录。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
+9. 如果需要，可以将搜索审核日志导出到 CSV 文件，然后使用 Excel Power Query 功能格式化和筛选这些记录。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
 
 ## <a name="ediscovery-activities"></a>电子数据展示活动
 
-下表介绍了管理员或电子数据展示管理员使用电子数据展示管理员执行与电子数据展示相关的活动时记录的内容搜索和核心电子数据Microsoft 365 合规中心。 当您搜索此列表中的Advanced eDiscovery，可能会返回在活动列表中执行某些活动。
+下表介绍了管理员或电子数据展示管理员使用电子数据展示管理员执行与电子数据展示相关的活动时记录的内容搜索和核心电子数据Microsoft 365 合规中心。 搜索此列表中的Advanced eDiscovery，可能会返回在活动列表中执行某些活动。
   
 > [!NOTE]
-> 本节中介绍的电子数据展示活动提供的信息与下一节中描述的电子数据展示 cmdlet 活动相似。 建议您使用本节中描述的电子数据展示活动，因为它们将在 30 分钟内审核日志搜索结果中显示。 电子数据展示 cmdlet 活动可能需要 24 小时才能显示在审核日志搜索结果中。
+> 本节中介绍的电子数据展示活动提供的信息与下一节中描述的电子数据展示 cmdlet 活动相似。 建议您使用本节中所述的电子数据展示活动，因为它们将在 30 分钟内审核日志搜索结果中显示。 电子数据展示 cmdlet 活动可能需要 24 小时才能显示在审核日志搜索结果中。
   
-|**友好名称**|**操作**|**相应的 cmdlet**|**Description**|
+|**友好名称**|**操作**|**相应的 cmdlet**|**说明**|
 |:-----|:-----|:-----|:-----|
 |向电子数据展示案例添加了成员  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |用户已添加为电子数据展示案例的成员。 作为案例的成员，用户可以执行各种与案例相关的任务，具体取决于是否已为其分配必要的权限。  <br/> |
 |已更改内容搜索  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |已更改现有内容搜索。 更改可能包括添加或删除内容位置或编辑搜索查询。  <br/> |
@@ -85,7 +85,7 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 |更改了电子数据展示案例成员身份  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |更改了电子数据展示案例的成员身份列表。 当所有成员替换为一组新用户时，将记录此活动。 如果添加或删除单个成员，将记录 CaseMemberAdded 或 CaseMemberRemoved 操作。  <br/> |
 |已更改搜索权限筛选器  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |已更改搜索权限筛选器。  <br/> |
 |更改了电子数据展示案例保留的搜索查询  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |已更改与电子数据展示案例关联的基于查询的保留。 可能的更改包括编辑基于查询的保留的查询或日期范围。  <br/> |
-|下载的内容搜索预览项  <br/> |PreviewItemDownloaded  <br/> |不适用  <br/> |用户通过单击预览搜索结果时 (下载原始项目) 下载项目到其本地计算机。  <br/> |
+|下载的内容搜索预览项  <br/> |PreviewItemDownloaded  <br/> |不适用  <br/> |用户通过单击"下载原始项目"链接 (预览搜索结果时单击"下载原始) 下载项目到其本地计算机。  <br/> |
 |列出的内容搜索预览项  <br/> |PreviewItemListed  <br/> |不适用  <br/> |用户单击" **预览搜索结果** "可显示预览搜索结果页面，其中最多列出搜索结果中的 1，000 个项目。  <br/> |
 |查看的内容搜索预览项  <br/> |PreviewItemRendered  <br/> |不适用  <br/> |电子数据展示管理员在预览搜索结果时通过单击某个项目来查看该项目。  <br/> |
 |已创建内容搜索  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |已创建一个新的内容搜索。  <br/> |
@@ -101,7 +101,7 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 |下载的内容搜索导出  <br/> |SearchExportDownloaded  <br/> |不适用  <br/> |用户将内容搜索的结果下载到其本地计算机。 内容 **搜索活动的** "开始"导出必须启动，然后才能下载搜索结果。  <br/> |
 |内容搜索的预览结果  <br/> |SearchPreviewed  <br/> |不适用  <br/> |用户预览了内容搜索的结果。  <br/> |
 |内容搜索的清除结果  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |用户通过运行 **New-ComplianceSearchAction -Purge** 命令清除内容搜索结果。  <br/> |
-|删除了内容搜索分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |内容搜索准备 (为已删除的内容准备Advanced eDiscovery) 搜索结果。 如果准备操作不到两周，则为准备的Advanced eDiscovery将从存储区域Microsoft Azure搜索结果。 如果准备操作超过 2 周，则此事件指示仅删除了相应的准备操作。  <br/> |
+|删除了内容搜索分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |内容搜索准备 (操作，以准备已删除Advanced eDiscovery) 搜索结果。 如果准备操作不到两周，则为准备的Advanced eDiscovery将从存储区域Microsoft Azure搜索结果。 如果准备操作超过 2 周，则此事件指示仅删除了相应的准备操作。  <br/> |
 |删除了内容搜索的导出  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |已删除内容搜索导出操作。 如果导出操作少于两周，则上载到存储Microsoft Azure搜索结果已删除。 如果导出操作超过 2 周，则此事件指示仅删除了相应的导出操作。  <br/> |
 |从电子数据展示案例中删除成员  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |已删除用户作为电子数据展示案例的成员。  <br/> |
 |删除了内容搜索的预览结果  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |已删除内容搜索预览操作。  <br/> |
@@ -151,16 +151,16 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 
 ## <a name="ediscovery-cmdlet-activities"></a>电子数据展示 cmdlet 活动
 
-下表列出了管理员或审核日志使用合规中心或在安全与合规中心 PowerShell 中运行相应 cmdlet 执行电子数据展示相关活动时记录的 cmd & let 记录。 对于此表中列出的 cmdlet 活动和上一节中所述的电子数据展示活动，审核日志记录中的详细信息有所不同。
+下表列出了管理员或审核日志使用合规中心或在安全与合规中心 PowerShell 中运行相应 cmdlet 执行电子数据展示相关活动时记录的 cmd & let 记录。 此表中列出的 cmdlet 审核日志记录中的详细信息与上一节中描述的电子数据展示活动不同。
   
 如前所述，电子数据展示 cmdlet 活动最多可能需要 24 小时才能显示在审核日志搜索结果中。
   
 > [!TIP]
 > 下表中"操作"列中的cmdlet 链接到 TechNet 上的相应 cmdlet 帮助主题。 转到 cmdlet 帮助主题，了解每个 cmdlet 的可用参数的说明。 与 cmdlet 一起使用的参数和参数值包含在记录的每个审核日志电子数据展示 cmdlet 活动的 审核日志 条目中。 
   
-|**友好名称**|**操作 (cmdlet)**|**Description**|
+|**友好名称**|**操作 (cmdlet)**|**说明**|
 |:-----|:-----|:-----|
-|在电子数据展示案例中创建的保留  <br/> |[New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy) <br/> |为电子数据展示案例创建了保留。 可以使用或不指定内容源创建保留。 如果指定了内容源，将在"内容源"条目中审核日志标识。  <br/> |
+|在电子数据展示案例中创建的保留  <br/> |[New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy) <br/> |为电子数据展示案例创建了保留。 可以使用或不指定内容源创建保留。 如果指定了内容源，将在"内容源"条目审核日志标识。  <br/> |
 |从电子数据展示案例中删除的保留  <br/> |[Remove-CaseHoldPolicy](/powershell/module/exchange/remove-caseholdpolicy) <br/> |已删除与电子数据展示案例关联的保留。 删除保留将解除保留中所有内容位置。 删除保留还会导致删除与保留关联的案例保留规则 (请参阅下面的 **Remove-CaseHoldRule**) 。  <br/> |
 |更改了电子数据展示案例中的保留  <br/> |[Set-CaseHoldPolicy](/powershell/module/exchange/set-caseholdpolicy) <br/> |与电子数据展示关联的保留已更改。 可能的更改包括添加或删除内容位置，或者关闭 (保留) 功能。  <br/> |
 |为电子数据展示案例保留创建了搜索查询  <br/> |[New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule) <br/> |已创建与电子数据展示案例关联的基于查询的保留。  <br/> |
@@ -187,15 +187,15 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 |更改了电子数据展示管理员成员身份  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |您组织中电子数据展示管理员的列表已更改。 当电子数据展示管理员列表替换为一组新用户时，将记录此活动。 如果添加或删除单个用户，将记录 **Add-eDiscoveryCaseAdmin** 或 **Remove-eDiscoveryCaseAdmin** 操作。  <br/> |
 |(无)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|当用户查看核心电子数据展示或电子数据展示事例列表时，Advanced eDiscovery活动。 当用户在核心电子数据展示中查看特定案例时，也会记录此活动。 当用户查看特定案例时，审核记录将包含已查看案例的标识。 如果用户仅查看事例列表，则审核记录不包含事例标识。|
 |(无)|[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)|当用户查看了与核心电子数据展示案例关联的内容搜索或搜索列表时，将记录此活动。 当用户查看特定内容搜索或查看与核心电子数据展示案例关联的特定搜索时，也会记录此活动。 当用户查看特定搜索时，审核记录包括已查看的搜索的标识。 如果用户仅查看了搜索列表，则审核记录不包含搜索标识。
-|(无)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|当用户查看合规性搜索操作列表时将记录此活动 (如导出、预览或清除) 核心电子数据展示案例相关的操作）。 当用户查看特定合规性搜索操作（如导出 (或查看与核心电子数据展示案例关联的特定操作) 也会记录此活动。 当用户查看搜索操作时，审核记录包括已查看的搜索操作的身份。 如果用户仅查看了操作列表，则审核记录不包含操作标识。|
+|(无)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|当用户查看合规性搜索操作列表时，将记录此活动 (如导出、预览或清除) 核心电子数据展示案例相关的操作）。 当用户查看特定合规性搜索操作（如导出 (或查看与核心电子数据展示案例关联的特定操作) 也会记录此活动。 当用户查看搜索操作时，审核记录包括已查看的搜索操作的身份。 如果用户仅查看了操作列表，则审核记录不包含操作标识。|
 ||||
 
 ## <a name="detailed-properties-for-ediscovery-activities"></a>电子数据展示活动的详细属性
 
-下表介绍了搜索结果中列出的电子数据展示活动的飞出页面上包含的属性。 导出搜索结果时，CSV 文件中也会包含审核日志这些属性。 电子审核日志活动的详细记录不包括下面列出的每个详细属性。
+下表介绍了搜索结果中列出的电子数据展示活动的飞出页面上包含的属性。 导出搜索结果时，CSV 文件中也会包含审核日志属性。 电子审核日志活动的详细记录不包括下面列出的每个详细属性。
   
 > [!TIP]
-> 导出搜索结果时，CSV 文件包含一个名为 **AudtiData** 的列，其中包含下表中多值属性中描述的详细属性。 您可以使用 Power Query 功能将Excel拆分为多个列，以便每个属性都有其自己的列。 这将允许对其中一个或多个属性进行排序和筛选。 有关详细信息，请参阅 Search the search the 审核日志 中的"将搜索结果导出到 [文件"部分](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file)。 
+> 导出搜索结果时，CSV 文件包含一个名为 **AudtiData** 的列，其中包含下表中多值属性中描述的详细属性。 您可以使用 Power Query 功能将Excel拆分为多个列，以便每个属性都有其自己的列。 这将允许对其中一个或多个属性进行排序和筛选。 有关详细信息，请参阅 Search the 审核日志 中的"将搜索结果导出 [到文件"部分](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file)。 
   
 |**属性**|**说明**|
 |:-----|:-----|
@@ -214,7 +214,7 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 |ObjectId  <br/> |对象的 GUID 或名称 (例如，由 Operation 属性中列出的活动创建、访问、更改或删除的内容搜索或核心电子数据展示案例) 。 此对象还标识在搜索结果的"审核日志列中。  <br/> |
 |ObjectType  <br/> |用户创建、删除或修改的 eDiscovery 对象的类型;例如，内容搜索操作 (预览、导出或清除) 、电子数据展示案例或内容搜索。  <br/> |
 |Operation  <br/> |与所执行电子数据展示活动对应的操作的名称。  <br/> |
-|OrganizationId  <br/> |组织组织的 GUID Microsoft 365 GUID。  <br/> |
+|OrganizationId  <br/> |您的组织的 GUID Microsoft 365 GUID。  <br/> |
 |参数  <br/> |用于相应 cmdlet 的参数的名称和值。  <br/> |
 |PublicFolderLocations  <br/> |内容搜索中包含的Exchange Online或置于电子数据展示案例中的保留状态中的公用文件夹位置。  <br/> |
 |查询  <br/> |与活动关联的搜索查询，如内容搜索或基于查询的保留。  <br/> |
@@ -223,9 +223,9 @@ Microsoft 365 合规中心 中通过运行相应的 PowerShell cmdlet 执行的�
 |SecurityComplianceCenterEventType  <br/> |指示活动是合规中心事件。 对于此属性，所有电子数据展示活动的值为 **0。**  <br/> |
 |SharepointLocations  <br/> |The SharePoint Online sites that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
 |StartTime  <br/> |启动电子数据展示活动时 (协调世界时) UTC 时间。  <br/> |
-|UserID  <br/> |执行活动的用户 (Operation 属性) 记录的结果。 由系统帐户（如 NT AUTHORITY\SYSTEM (）执行电子数据展示) 也包含在记录审核日志。  <br/> |
+|UserID  <br/> |执行活动的用户 (Operation 属性) 记录的结果。 由系统帐户执行电子数据展示活动 (如 NT AUTHORITY\SYSTEM) 也包含在审核日志。  <br/> |
 |UserKey  <br/> |UserID 属性中标识的用户的备选 ID。 对于电子数据展示活动，此属性的值通常与 UserId 属性相同。  <br/> |
 |UserServicePlan  <br/> |组织使用的订阅。 对于电子数据展示活动，此属性通常为空。  <br/> |
 |UserType  <br/> |执行操作的用户类型。 以下值指示用户类型。  <br/> 0 常规用户。 2 您的组织中的管理员。 3 Microsoft 数据中心管理员或数据中心系统帐户。 4 系统帐户。 5 应用程序。 6 服务主体。 |
-|Version  <br/> |指示由记录的 Operation (标识的活动) 版本号。  <br/> |
+|版本  <br/> |指示由记录的 Operation (标识的活动) 版本号。  <br/> |
 |Workload  <br/> |发生活动的服务。 对于电子数据展示活动，值为 **SecurityComplianceCenter**。  <br/> |

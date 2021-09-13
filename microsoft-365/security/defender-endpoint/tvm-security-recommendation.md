@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162230"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -44,7 +44,7 @@ ms.locfileid: "58569941"
 > [!TIP]
 > 若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 组织的每台设备都基于三个重要因素进行评分，以帮助客户在正确的时间专注于正确的内容。
 
@@ -68,9 +68,9 @@ ms.locfileid: "58569941"
 
 转到漏洞 **管理导航菜单**，然后选择"推荐"。  此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>仪表板中危险和漏洞管理建议
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>危险和漏洞管理中危险和漏洞管理建议
 
-在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与你的[](tvm-exposure-score.md)[Microsoft 设备安全分数并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
+在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，并排查看你的曝光分数[](tvm-exposure-score.md)和[Microsoft 设备安全分数](tvm-microsoft-secure-score-devices.md)。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
 
 ![顶级安全建议卡片示例，具有四个安全建议。](images/top-security-recommendations350.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "58569941"
 
 - **打开软件页** - 打开软件页，获取有关软件及其分发方式的更多上下文。 这些信息可能包括威胁上下文、相关建议、发现的漏洞、公开的设备数量、发现的漏洞、已安装软件的设备的名称和详细信息以及版本分发。
 
-- [**修正选项**](tvm-remediation.md)- 提交修正请求以在 Microsoft Intune中打开票证，让 IT 管理员进行选取和解决。 在"修正"页中跟踪修正活动。
+- [**修正选项**](tvm-remediation.md)- 提交修正请求以在 Microsoft Intune中打开票证，让 IT 管理员选取并处理。 在"修正"页中跟踪修正活动。
 
 - [**例外选项**](tvm-exception.md) - 提交异常、提供理由以及设置异常持续时间（如果尚无法修正问题）。
 
@@ -122,7 +122,7 @@ ms.locfileid: "58569941"
 
 ## <a name="request-remediation"></a>请求修正
 
-修正危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
+此危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>如何请求修正
 
@@ -142,7 +142,7 @@ ms.locfileid: "58569941"
 
 ![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
 
-填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞 [](tvm-remediation.md)管理"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
+填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞管理 [](tvm-remediation.md)"菜单下的"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

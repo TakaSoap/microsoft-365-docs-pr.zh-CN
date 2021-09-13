@@ -17,24 +17,25 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: 了解计费帐户及其如何用于管理帐户设置、发票、付款方式和购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 0e88a1aa7a690b61744339f9b7e7dc931ed3ab85eb240868b3d66eabcf3c4b4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 551165a9ddcde03f96b6a2d03e5b1f5cd6e93eec
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171125"
 ---
 # <a name="understand-billing-accounts"></a>了解计费帐户
 
 注册以试用或购买 Microsoft 产品时，会创建一个计费帐户。 使用计费帐户管理帐户设置、发票、付款方式和购买。 你可以访问多个计费帐户。 例如，你直接Microsoft 365注册，或者你有权访问组织的 企业协议、Microsoft 产品&服务协议或 Microsoft 客户协议。 对于其中每个方案，你将有一个单独的计费帐户。
 
-当前Microsoft 365 管理中心支持以下类型的计费帐户：
+当前<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>支持以下类型的计费帐户：
 
 - Microsoft Online Services计划：此计费帐户是在你直接注册订阅时Microsoft 365帐户。
-- Microsoft &服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
+- Microsoft 产品&服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
 - Microsoft 客户协议：当你的组织与 Microsoft 代表、授权的合作伙伴合作或单独购买时，将创建此计费帐户。
 
 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">计费帐户</a> "页提供 Microsoft 商业帐户的视图。 默认情况下，你的组织至少具有一个与在直接购买时或通过批量许可安排接受的协议相关联的计费帐户。
@@ -52,7 +53,7 @@ ms.locfileid: "53893135"
 | 帐户状态 | 一个只读字段，用于指定 Microsoft 商业帐户的状态。 |
 | 税务 ID | 如果你在美国以外，则必须提供 VAT 或本地等效项。 有关详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。 |
 | 协议 | 当通过直接购买或批量许可安排创建计费帐户时，组织会接受或签署一份概述帐户&条款的协议。 如果适用，此视图将列出协议历史记录。 如果需要接受更新后的条款，将显示"批准 **协议"** 链接。 |
-| 计费配置文件 | 帐单配置文件定义发票的属性，如谁收到帐单、帐单的交付方式、付款期限和 PO 编号。 若要在整个组织中分配计费，可以创建多个计费配置文件，在购买时确定相应的计费配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的计费选项的详细信息，请参阅 [了解计费配置文件](billing-and-payments/manage-billing-profiles.md)。 |
+| 计费配置文件 | 帐单配置文件定义发票的属性，如谁收到帐单、帐单的交付方式、付款期限和 PO 编号。 若要在整个组织中分配计费，可以创建多个计费配置文件，在购买时标识相应的计费配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的计费选项的详细信息，请参阅 [了解计费配置文件](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
 > 如果需要更改"售达 **"** 名称或地址，但看不到"编辑"链接，则必须联系支持 [人员以更改](../business-video/get-help-support.md)它。 对"售 **达名称** "更改的请求将需要核实信用。 填写 [此表单](https://www.microsoft.com/download/details.aspx?id=102732)，并准备好在联系支持人员时与 Microsoft 共享以下文档之一：
@@ -60,7 +61,7 @@ ms.locfileid: "53893135"
 > - 政府颁发的文档或注册信
 > - 打印出本地公司的注册表
 >
-> 如果仅更改客户名称，但实体保持不变，则支持可帮助更改名称和地址。 提供的文档应清楚地显示只有实体的名称发生了更改。 如果更改是交易的结果，包括出售业务、更改控制措施，或者客户联盟的收购或"出售"，请联系你的 Microsoft 卖家。
+> 如果仅更改客户名称，但实体保持不变，则支持可帮助更改名称和地址。 提供的文档应清楚地显示仅实体的名称已更改。 如果更改是交易的结果，包括出售业务、更改控制措施，或者客户联盟的资产出售或"出售"，请联系你的 Microsoft 卖家。
 
 ## <a name="shipping-addresses"></a>发货地址
 
@@ -68,7 +69,7 @@ ms.locfileid: "53893135"
 
 ## <a name="understand-access-to-billing-accounts"></a>了解对计费帐户的访问权限
 
-可以通过角色和权限为其他人提供对 Microsoft 365 管理中心帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
+可以通过角色和权限为其他人提供对<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心帐户的访问权限</a>。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
 
 - **计费帐户所有者** &mdash; 可以分配权限、编辑帐户、签署协议和查看帐户。
 - **计费帐户参与者** &mdash; 可以编辑帐户、签署协议和查看帐户。

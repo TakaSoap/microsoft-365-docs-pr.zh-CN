@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4a083f4d891ef51b3156c2ad407a55de597cd6a754fa77d9d96fe5d6e3cffe4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170041"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -76,7 +76,7 @@ Content-Type|String|application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的字段的值。 请求正文中未包含的现有属性将保留其值，除非由于相关值更改而必须重新计算它们。 为获得最佳性能，应省略尚未更改的现有值。
+在请求正文中，提供应更新的字段的值。 请求正文中不包含的现有属性将保留其值，除非由于相关值更改而必须重新计算它们。 为获得最佳性能，应省略尚未更改的现有值。
 
 属性|类型|说明
 ---|---|---
@@ -84,12 +84,12 @@ Content-Type|String|application/json. **必需**。
 assignedTo|string|事件的所有者。
 classification|枚举|事件的规范。 可取值为：`Unknown`、`FalsePositive`、`TruePositive`。
 确定|枚举|指定事件的确定。 可取值为：`NotAvailable`、`Apt`、`Malware`、`SecurityPersonnel`、`SecurityTesting`、`UnwantedSoftware` 或 `Other`。
-tags|字符串列表|事件标记列表。
+标记|字符串列表|事件标记列表。
 comment|string|要添加到事件的注释。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 。 响应正文将包含具有更新属性的事件实体。 如果未找到具有指定 ID 的事件，该方法将返回 `404 Not Found` 。
+如果成功，此方法返回 `200 OK` 。 响应正文将包含具有更新属性的事件实体。 如果找不到具有指定 ID 的事件，该方法将返回 `404 Not Found` 。
 
 ## <a name="example"></a>示例
 

@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 市场活动或其他Microsoft 365 商业高级版的安装程序概述
 ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170233"
 ---
 # <a name="set-up-microsoft-365"></a>设置Microsoft 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "58567116"
 
 下图介绍了管理员如何设置Microsoft 365。
 
-![设置Microsoft 365。](../media/M365-democracy-SetUpProcess.png)
+![设置项目Microsoft 365。](../media/M365-democracy-SetUpProcess.png)
 
 对于符合特殊定价资格的市场活动，请从请求[Microsoft](https://m365forcampaigns.microsoft.com/)邀请开始，然后注册Microsoft 365[活动。](m365-campaigns-sign-up.md) 若要完成设置 [，请运行安装向导](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以配置核心设置。
 

@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365 管理中心将域添加到域中。
-ms.openlocfilehash: 73da36729b88c5cb6394983b7577fb793205c6e144c44daea3346c12721e1df6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caec9951fa80d19467623922dffa8551d0b4ad0d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169734"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -69,7 +69,7 @@ ms.locfileid: "53822231"
     
 5. 选择您希望如何验证您是否拥有该域。
     
-    1. 如果你的域注册机构[](#domain-connect-registrars-integrating-with-microsoft-365)使用域连接，Microsoft 会[](../get-help-with-domains/domain-connect.md)通过登录你的注册机构并确认连接到你的注册机构来自动Microsoft 365。 你将返回到管理中心，然后 Microsoft 将自动验证你的域。
+    1. 如果域[注册机构使用](#domain-connect-registrars-integrating-with-microsoft-365)域连接，Microsoft 会[](../get-help-with-domains/domain-connect.md)通过登录注册机构并确认与注册机构的连接来自动Microsoft 365。 你将返回到管理中心，然后 Microsoft 将自动验证你的域。
     2. 可使用 TXT 记录验证域。 选择此选项并选择" **下一** 步"以查看有关如何将此 DNS 记录添加到注册机构网站的说明。 添加记录后，最多可能需要 30 分钟进行验证。 
     3. 你可以将文本文件添加到你的域的网站。 从安装向导.txt下载文件，然后将该文件上载到网站的顶级文件夹。 文件的路径应类似于 `http://mydomain.com/ms39978200.txt` ：。 我们将通过在网站上查找文件来确认你拥有该域。
     
@@ -78,7 +78,7 @@ ms.locfileid: "53822231"
     1. 如果你 **的** 注册机构支持域 [连接，](#domain-connect-registrars-integrating-with-microsoft-365)请选择"为我添加 DNS 记录"，Microsoft [](../get-help-with-domains/domain-connect.md)会通过登录注册机构并确认与注册机构的连接来自动Microsoft 365。
     2. Choose **I'll add the DNS records自己** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **如果确切了解执行内容，请选择此选项。**
 
-7. 如果选择自己添加 *DNS* 记录，请选择"下一步"，你将看到一个包含要添加到注册机构网站以设置域的所有记录的页面。 
+7. 如果选择自己添加 *DNS* 记录，请选择"下一步"，你将看到一个页面，包含需要添加到注册机构网站以设置域的所有记录。 
 
     如果门户无法识别你的注册机构，你可以[按照以下常规说明操作。](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
@@ -122,7 +122,7 @@ ms.locfileid: "53822231"
 - [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains (使用 SecureServer DNS 托管客户端的 GoDaddy) 
+- SecureServer 或 WildWestDomains (使用 SecureServer DNS 托管服务与 GoDaddy 经销商) 
     - 示例：
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
         - [DomainRightNow](https://www.domainrightnow.com/)

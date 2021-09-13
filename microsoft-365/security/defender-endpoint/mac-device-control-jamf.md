@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: e85a3728213af4fdb47dbfb47e40af8894a0effc
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170482"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>JAMF 的设备控制策略示例
 
@@ -115,7 +115,7 @@ ms.locfileid: "58747527"
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>限制来自特定供应商的所有设备
 
-以下示例限制来自特定供应商的所有设备， (标识和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
+以下示例将限制来自特定供应商的所有设备， (由 和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略的顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

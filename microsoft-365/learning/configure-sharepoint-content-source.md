@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: 了解如何配置 SharePoint 作为 Microsoft Viva Learning (Preview) 的学习内容源。
 ms.openlocfilehash: 96dc12f8c69281f420b339198222f9f918ebc5b4
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171311"
 ---
 # <a name="configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>将 SharePoint 配置为 Microsoft Viva Learning (Preview) 
 

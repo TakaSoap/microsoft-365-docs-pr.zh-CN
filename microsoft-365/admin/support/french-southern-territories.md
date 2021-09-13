@@ -12,21 +12,21 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3afefc809fc2a8160340706ebadc8f5a0950746ab667e285dccdf2762aff0ba6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9485364997c6ef824516e4a8fa1b576c33bbbee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162142"
 ---
-# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>请联系法属南部领地 (法属) 
+# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>联系法属南部领地和 (陆地) 
 
 [查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri 1 PM-9 PM

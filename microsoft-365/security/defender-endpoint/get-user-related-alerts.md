@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: a9dc5b908534cf791d8538069a8d8db9f10e0e48
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684240"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170064"
 ---
 # <a name="get-user-related-alerts-api"></a>获取与用户相关的警报 API
 
@@ -60,7 +60,7 @@ ms.locfileid: "58684240"
 > 使用用户凭据获取令牌时：
 >
 > - 用户至少需要具有以下角色权限："查看数据"。 有关详细信息，请参阅创建 [和管理角色](user-roles.md)。
-> - 根据设备组设置，响应将仅包含与设备关联的警报 (有关详细信息，请参阅创建和管理设备) [](machine-groups.md)
+> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -68,9 +68,9 @@ ms.locfileid: "58684240"
 GET /api/users/{id}/alerts
 ```
 
-**ID 不是完整的 UPN，而只是用户名。 (，若要检索用户警报，user1@contoso.com /api/users/user1/alerts)**
+**ID 不是完整的 UPN，而只是用户名。 (，例如，若要检索用户 user1@contoso.com /api/users/user1/alerts)**
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 名称|类型|说明
 :---|:---|:---

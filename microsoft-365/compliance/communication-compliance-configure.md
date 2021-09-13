@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e46141ea879013ef7f21b1e29c1ac98b2bcef809e3cb9c87bf7ec5941aa7a5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162037"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -202,7 +202,7 @@ ms.locfileid: "53814695"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     > [!NOTE]
-    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
+    > 如果要启用光学字符识别[ (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或手写文本"进行评估  >  。 
 
     如果选择使用策略向导创建自定义策略，将需要：
 

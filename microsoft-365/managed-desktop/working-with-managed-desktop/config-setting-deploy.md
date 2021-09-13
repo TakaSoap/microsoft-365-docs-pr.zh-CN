@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 093697e0a8c491dbd0baf5f2966e08d989416e2496cf7972be35ba2377160e09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aad4995f9c329b0fd8fcbcc8b1d13379453c2a76
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854359"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171276"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置设置 - Microsoft 托管桌面
 
@@ -29,7 +29,7 @@ ms.locfileid: "53854359"
 部署 | 您的更改正在等待部署到此组。
 正在进行 | 更改将应用于此组的活动设备。
 完成 | 此组中所有活动设备上完成更改。
-已失败 | 更改在组中 10% 的活动设备上失败，因此部署已停止。<br><br> 将自动打开支持请求，Microsoft 托管桌面操作对部署进行疑难解答。
+已失败 | 更改在组中 10% 的活动设备上失败，因此部署已停止。<br><br> 将自动打开支持请求，Microsoft 托管桌面操作解决部署问题。
 已还原 | 更改已还原为已成功部署到所有部署组的最后一个更改。
 
 ## <a name="deploy-changes"></a>部署更改
@@ -38,7 +38,7 @@ ms.locfileid: "53854359"
 
 **部署更改**
 
-1. 登录 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到 **"设备"** 菜单
+1. 登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到 **"设备"** 菜单
 2. 查找"Microsoft 托管桌面部分，选择 **"设置"。**
 3. 在 **"部署** 状态工作区"中，选择要部署的设置，然后选择要部署的分步部署。
 4. 选择 **"** 部署"将更改部署到其中一个部署组。
@@ -62,7 +62,7 @@ ms.locfileid: "53854359"
 
 **还原更改**
 
-1. 登录 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到 **"设备"** 菜单
+1. 登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到 **"设备"** 菜单
 2. 查找"Microsoft 托管桌面部分，选择 **"设置"。**
 3. 在 **"部署** 状态工作区"中，选择要还原的设置，然后选择要还原的分步部署。
 4. 在 **"需要还原此更改？"下，** 选择"**还原部署"。**

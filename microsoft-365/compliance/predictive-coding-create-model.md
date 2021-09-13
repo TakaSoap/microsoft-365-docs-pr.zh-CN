@@ -1,5 +1,5 @@
 ---
-title: 在模型中创建预测编码Advanced eDiscovery
+title: 在 Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 了解如何在 Advanced eDiscovery 中创建预测编码Advanced eDiscovery。 这是使用 Advanced eDiscovery 中的机器学习功能来帮助你在审阅集内标识相关和非相关内容的第一步。
+description: 了解如何在 Advanced eDiscovery 中创建预测编码Advanced eDiscovery。 这是使用 Advanced eDiscovery 中的机器学习功能来帮助你确定审阅集内的相关和非相关内容的第一步。
 ms.openlocfilehash: ed5092f2730ade5e349cec77e5c264e67d957927
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58555684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170142"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>创建预测编码模型 (预览) 
 
-在模型中使用预测编码的机器学习功能的第一Advanced eDiscovery是创建预测编码模型。 创建模型后，可以训练它确定审阅集内的相关和非相关内容。
+在 Advanced eDiscovery 中使用预测编码的机器学习功能的第一步是创建预测编码模型。 创建模型后，可以训练它确定审阅集内的相关和非相关内容。
 
 若要查看预测编码工作流，请参阅[了解预测编码Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
@@ -39,7 +39,7 @@ ms.locfileid: "58555684"
 
 1. In the Microsoft 365 合规中心， open an Advanced eDiscovery case and then select the **Review sets** tab.
 
-2. 打开审阅集，然后单击分析管理预测编码  >  **(预览) 。**
+2. 打开审阅集，然后单击分析 **管理** 预测  >  **编码 (预览) 。**
 
    ![单击审阅集的"分析"下拉菜单以转到预测编码页面。](..\media\ManagePredictiveCoding.png)
 
@@ -63,4 +63,4 @@ ms.locfileid: "58555684"
 
 ## <a name="next-steps"></a>后续步骤
 
-为审阅集创建模型后，下一步是执行培训轮以"教学"模型，以确定与调查相关的内容。 有关详细信息，请参阅 [训练预测编码模型](predictive-coding-train-model.md)。
+为审阅集创建模型后，下一步是执行培训轮以"教"模型，以确定与调查相关的内容。 有关详细信息，请参阅 [训练预测编码模型](predictive-coding-train-model.md)。

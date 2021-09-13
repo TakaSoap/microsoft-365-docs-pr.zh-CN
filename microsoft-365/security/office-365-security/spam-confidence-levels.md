@@ -20,11 +20,11 @@ description: 管理员可以了解应用于 EOP (中的) 邮件的垃圾邮件�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3d45de527400088a180f5de8f8a836f5e4596395
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162192"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP 中的垃圾邮件 (SCL) 级别
 
@@ -35,7 +35,7 @@ ms.locfileid: "58573411"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-在 Microsoft 365 组织中，在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，入站邮件通过 EOP 中的垃圾邮件筛选，并分配有垃圾邮件得分。 该分数映射到添加到 X 标头中的 (SCL) 单个垃圾邮件可信度。 SCL 越高，邮件就越有可能是垃圾邮件。 EOP 根据 SCL 对邮件采取操作。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中，没有 Exchange Online 邮箱的入站邮件通过 EOP 中的垃圾邮件筛选，并为其分配垃圾邮件得分。 该分数映射到添加到 X 标头中的 (SCL) 单个垃圾邮件可信度。 SCL 越高，邮件就越有可能是垃圾邮件。 EOP 根据 SCL 对邮件采取操作。
 
 下表介绍了 SCL 的含义以及对邮件执行的默认操作。 有关可以基于垃圾邮件筛选裁定对邮件采取的操作详细信息，请参阅在 [EOP](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略。
 
@@ -51,9 +51,9 @@ ms.locfileid: "58573411"
 
 你会注意到，垃圾邮件筛选不会使用 SCL 2、3、4、7 和 8。
 
-您可以使用邮件流规则 (传输规则) 标记邮件上的 SCL。 如果使用邮件流规则设置 SCL，则值 5 或 6 将触发 **垃圾邮件** 的垃圾邮件筛选操作，值 7、8 或 9 将触发高可信度垃圾邮件的垃圾邮件筛选 **操作**。 有关详细信息，请参阅使用邮件流规则设置邮件中的 ([SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)) 级别。
+您可以使用邮件流规则 (传输规则) 标记邮件上的 SCL。 如果使用邮件流规则设置 SCL，则值 5 或 6 将触发 **垃圾邮件** 的垃圾邮件筛选操作，值 7、8 或 9 将触发高可信度垃圾邮件的垃圾邮件筛选 **操作**。 有关详细信息，请参阅使用邮件 [流规则设置](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)邮件中的 (SCL) 级别。
 
-与 SCL 类似，BCL 中的批量投诉级别 (BCL) 识别错误批量 (也称为灰色 _邮件) 。_ BCL 越高，大量邮件产生投诉的可能性就越大（因此更有可能是垃圾邮件）。 您可以在反垃圾邮件策略中配置 BCL 阈值。 有关详细信息，请参阅在[EOP](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略、批量投诉级别[ (BCL) in EOP) ](bulk-complaint-level-values.md)和 垃圾邮件和批量电子邮件之间有什么[区别？。](what-s-the-difference-between-junk-email-and-bulk-email.md)
+与 SCL 类似，BCL 中的批量投诉级别 (BCL) 识别错误批量 (也称为 _灰色_ 邮件) 。 BCL 越高，大量邮件产生投诉的可能性就越大（因此更有可能是垃圾邮件）。 您可以在反垃圾邮件策略中配置 BCL 阈值。 有关详细信息，请参阅在[EOP](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略[、EOP ](bulk-complaint-level-values.md)) 中的批量投诉级别 (BCL) 和 垃圾邮件和批量电子邮件之间有什么[区别？。](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 ****
 

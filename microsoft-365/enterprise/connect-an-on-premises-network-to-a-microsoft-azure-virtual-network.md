@@ -21,17 +21,17 @@ ms.custom:
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
 ms.openlocfilehash: de8488df370b4ede9fef5ad6698d37bca6c99ac8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171006"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
 Azure 跨界虚拟网络连接到本地网络，从而可扩展网络以包含在 Azure 基础结构服务中托管的子网和虚拟机。上述连接可让本地网络中的计算机直接访问 Azure 中的虚拟机，反之亦然。 
 
-例如，在 Azure 虚拟机上运行的目录同步服务器需要查询本地域控制器以查询帐户更改，以及将这些更改与 Microsoft 365 订阅同步。 本文演示如何使用准备好托管 Azure 虚拟机的站点间虚拟专用网络 (VPN) 连接设置跨界 Azure 虚拟网络。
+例如，在 Azure 虚拟机上运行的目录同步服务器需要查询本地域控制器以查询帐户更改，以及将这些更改与 Microsoft 365 订阅同步。 本文介绍了如何使用准备托管 Azure 虚拟机的站点间虚拟专用网络 (VPN) 连接设置跨界 Azure 虚拟网络。
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>配置跨界 Azure 虚拟网络
 
@@ -128,7 +128,7 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
   
 |**所需的虚拟机数量**|**所需的主机位数**|**子网大小**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3   <br/> |/29  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
 |4-11  <br/> |4   <br/> |/28  <br/> |
 |12-27  <br/> |5   <br/> |/27  <br/> |
 |28-59  <br/> |6   <br/> |/26  <br/> |
@@ -336,4 +336,4 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 ## <a name="next-step"></a>后续步骤
   
-[在Microsoft 365部署目录Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[在Microsoft 365中部署目录Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

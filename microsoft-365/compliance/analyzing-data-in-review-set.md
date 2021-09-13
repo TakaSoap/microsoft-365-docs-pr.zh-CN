@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解分析文档集时可用于组织文档集Advanced eDiscovery的信息。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 332c467ed6d178d6d8252cdd337a9b23384d88790729e3923eb0cafae981cd82
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171102"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>分析审阅集内Advanced eDiscovery
 
@@ -46,7 +46,7 @@ ms.locfileid: "53843103"
 
 您可以在案例的"作业"选项卡 **上** 检查分析进度。
 
- 分析完成后，可以查看分析报告，对分析的输出运行审阅集内的查询 (请参阅在审阅集 [) ](review-set-search.md) 中查询，并查看给定文档的相关文档 (请参阅审阅审阅集 [) ](reviewing-data-in-review-set.md) 中的数据。
+ 分析完成后，可以查看分析报告，对分析的输出运行审阅集内的查询 (请参阅查看集 [) ](review-set-search.md) 中的查询，并查看给定文档的相关文档 (请参阅审阅集 [) ](reviewing-data-in-review-set.md) 中的数据。
 
 ## <a name="analytics-report"></a>分析报告
 

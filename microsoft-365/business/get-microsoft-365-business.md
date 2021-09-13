@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 发现你用于购买Microsoft 365 商业高级版和从 Microsoft 合作伙伴中心购买它的分步说明。
-ms.openlocfilehash: 3e75e1e31789882ef41abf4b30c7af3886bb4821fe5c288ceda5af684ea8f854
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9e88229f22bdfbfc0b363b5bf56ed2def4db9b8c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170807"
 ---
 # <a name="get-microsoft-365-business-premium"></a>获取 Microsoft 365 商业高级版
 
@@ -42,11 +42,11 @@ ms.locfileid: "53831503"
 
 还可以前往一[个Microsoft Store购买](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)Microsoft 365 商业高级版并获取设置帮助。
   
-## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>从 Microsoft Microsoft 365 商业高级版中心获取产品
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>从 Microsoft Microsoft 365 商业高级版中心获取产品/服务
 
 1. 通过使用注册参加云服务提供商 (CSP) 计划时创建的凭据，登录 [Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/p/?linkid=849910)。 
     
-2. 在合作伙伴仪表板上，**选择** 客户 ，然后选择你的客户或添加新客户，然后你才能Microsoft 365 商业高级版。
+2. 在合作伙伴仪表板上，**选择** 客户 ，然后选择你的客户或添加新客户，然后Microsoft 365 商业高级版。
     
     ![在 Microsoft 合作伙伴中心，添加客户。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   

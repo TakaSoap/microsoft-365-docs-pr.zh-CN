@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: 从 Bookings 日历安排办公室关闭和员工请假，以便员工在指定的时间标记为不进行预订。
 ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171184"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>安排公司关闭、休假和休假时间
 
@@ -38,7 +38,7 @@ ms.locfileid: "58567588"
 
 1. 选择所有员工。
 
-1. 选择 **保存**。
+1. 选择“**保存**”。
 
 当客户尝试在办公室关闭的一天安排服务时，他们将在预订页面上看到一条消息。
 

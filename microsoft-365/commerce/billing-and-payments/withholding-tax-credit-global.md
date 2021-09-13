@@ -1,5 +1,5 @@
 ---
-title: '向全球客户申请预扣税 (申请) '
+title: '向全球客户申请预扣税 (预扣) '
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,19 +21,19 @@ ms.custom:
 monikerRange: o365-worldwide
 ms.date: 05/27/2021
 ms.openlocfilehash: 530345c7f9234e50ec33de23847c14e1b948df8c
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171150"
 ---
-# <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>向全球客户申请预扣税 (申请) 
+# <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>向全球客户申请预扣税 (预扣) 
 
 > [!NOTE]
 >
-> 如果你的组织位于印度，请参阅向印度客户申请预扣税 [ (一 ](withholding-tax-credit-india.md)) 。
+> 如果你的组织位于印度，请参阅向印度客户申请预扣税 ([申请 ](withholding-tax-credit-india.md)) 。
 
-一些客户 (Azure Microsoft 365) Microsoft 实体计费的 Web Direct 发票。 如果你的组织向该实体进行跨边界付款，则你国家/地区税务机构可能需要你预扣部分跨边界付款作为预扣税 (WHT) 。 如果在向 Microsoft 汇寄付款时预扣了税务机构所需的税款，本文将说明申请预扣税款的信用的过程。
+一些客户 (Azure 和 Microsoft 365) Microsoft 实体计费的 Web Direct 发票。 如果你的组织向该实体进行跨边界付款，则你国家/地区的税务机构可能要求你预扣部分跨边界付款作为预扣税 (WHT) 。 如果在向 Microsoft 汇寄付款时预扣了税务机构所需的税款，本文将说明申请预扣税款的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
@@ -48,7 +48,7 @@ ms.locfileid: "58823716"
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>对于通过信用卡支付的客户
 
-如果你的付款方式是信用卡，并且你向 Microsoft 进行了完整付款，并且还向相关税务机构支付 WHT，则必须提交 WHT 请求以申请退款的税款金额。
+如果你的付款方式是信用卡，并且你向 Microsoft 进行了完整付款，并且还向相关的税务机构支付 WHT，则必须提交 WHT 请求以申请退款的税款金额。
 
 您的 WHT 请求必须包含以下项：
 

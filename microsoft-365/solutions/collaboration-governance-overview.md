@@ -16,13 +16,13 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: 了解如何管理组、组 Microsoft 365、Teams、SharePoint和Yammer中的相关Yammer。
+description: 了解如何管理组、Microsoft 365、Teams、SharePoint和Yammer 中的相关Yammer。
 ms.openlocfilehash: fefda518d9864984d7fb8ee6f82e57ad14ff7b6e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170437"
 ---
 # <a name="what-is-collaboration-governance"></a>什么是协作管理？
 
@@ -40,7 +40,7 @@ ms.locfileid: "58563314"
 
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>设置安全协作与Microsoft 365
 
-有许多选项可以部署 Microsoft 365 组Teams，以确保组织的安全协作。 我们建议您在设置安全协作与[Microsoft 365及其关联](setup-secure-collaboration-with-teams.md)文章一起使用此管理内容，为组织创建最佳协作解决方案。
+有许多选项用于部署Microsoft 365组Teams，以确保组织的安全协作。 我们建议您在设置安全协作与[Microsoft 365及其关联](setup-secure-collaboration-with-teams.md)文章一起使用此管理内容，以为组织创建最佳协作解决方案。
 
 ### <a name="data-residency"></a>数据驻留
 
@@ -48,9 +48,9 @@ ms.locfileid: "58563314"
 
 ## <a name="why-microsoft-365-groups-are-important"></a>为什么Microsoft 365组很重要
 
-Microsoft 365组，可以选择一组要与之协作的人，并轻松设置供这些人员共享的资源集合。 向组添加成员会自动向组提供的所有资产授予所需的权限。 用户Teams Yammer组Microsoft 365管理其成员身份。
+Microsoft 365组允许您选择要与之协作的一组人员，并轻松设置供这些人员共享的资源集合。 向组添加成员会自动向组提供的所有资产授予所需的权限。 用户Teams Yammer组Microsoft 365管理其成员身份。
 
-Microsoft 365组包括一套链接资源，用户可使用这些资源进行通信和协作。 组始终包括SharePoint、Planner、Power BI工作区、邮箱和日历以及 Stream。 根据组的创建方式，可以选择添加其他服务，如Teams、Yammer和Project。
+Microsoft 365组包括一套链接资源，用户可使用这些资源进行通信和协作。 组始终包括SharePoint网站、Planner、Power BI工作区、邮箱和日历以及 Stream。 根据组的创建方式，可以选择添加其他服务，如Teams、Yammer和Project。
 
 ![显示组Microsoft 365相关服务的图表。](../media/microsoft-365-groups-hub-spoke.png)
 
@@ -67,7 +67,7 @@ Microsoft 365组包括一套链接资源，用户可使用这些资源进行通�
 |[Teams](https://support.microsoft.com/teams)|聊天室中基于聊天的Microsoft 365|
 |[Yammer组](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|进行对话和共享信息的常见位置|
 
-Microsoft 365组包括各种管理控制，包括过期策略、命名约定和阻止的词语策略，可帮助您管理贵组织的组。 由于组控制成员身份和对此资源套件的访问权限，因此管理组是管理 Microsoft 365。
+Microsoft 365组包括各种管理控制，包括过期策略、命名约定和阻止的词语策略，可帮助您管理贵组织的组。 由于组控制成员身份和对此资源套件的访问权限，因此管理组是管理组织协作Microsoft 365。
 
 ## <a name="define-a-collaboration-strategy-for-your-organization"></a>为组织定义协作策略
 
@@ -95,13 +95,13 @@ Microsoft 365组包括各种管理控制，包括过期策略、命名约定和�
   - 用于与一组人员进行有针对性的通信
   - 与其他组成员的会议的共享日历
  
-当您确定您希望如何在 Microsoft 365中使用这些协作功能时，请考虑这些通信方法以及您的用户可能在不同的方案中使用的方法。
+当您确定要如何使用协作功能在 Microsoft 365时，请考虑这些通信方法以及您的用户可能在不同的方案中使用的方法。
 
 > [!NOTE]
 > 通过 Yammer 或 Teams 创建新的 Office 365 组时，该组在 Outlook 或通讯簿中不可见，因为这些用户之间的主要通信发生在各自的客户端中。 Yammer组无法连接到Teams。
 
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳实践
 
 开始管理规划过程时，请牢记以下最佳做法：
 
@@ -118,7 +118,7 @@ Microsoft 365组包括各种管理控制，包括过期策略、命名约定和�
 
 - **使用分阶段方法** - 首先向一小组用户推出协作功能。 从他们处获取反馈，观看技术支持票证，并更新任何所需的设置或流程，然后再进入更大的组。
 
-- **通过培训增强**- 调整解决方案 [](/office365/customlearning)Microsoft 365学习途径，以确保通过 Microsoft 提供的培训强化组织特定的预期。
+- **通过培训增强**- 调整解决方案 [](/office365/customlearning)Microsoft 365学习途径，以确保 Microsoft 提供的培训强化了组织特定的期望。
 
 - **制定在组织中传达** 治理策略和指南的策略 - 在Microsoft 365网站创建一个SharePoint采用中心，以传达策略和过程。
 
@@ -132,8 +132,8 @@ Microsoft 365组包括各种管理控制，包括过期策略、命名约定和�
 
 由于可以通过多种方式创建组和团队，因此建议培训用户以使用最适合贵组织的方法：
 
-- 如果组织使用电子邮件执行大部分通信，请指示用户在 Outlook。
-- 如果组织大量SharePoint内部部署SharePoint迁移，请指示用户创建SharePoint网站进行协作。
+- 如果组织使用电子邮件执行大部分通信，请指示用户以电子邮件Outlook。
+- 如果组织大量使用SharePoint或正在本地SharePoint迁移，请指示用户创建SharePoint网站进行协作。
 - 如果组织已部署Teams，请指示用户创建一个团队，以在他们需要协作空间时创建。
 
 如果用户不熟悉组与相关服务之间如何关联，这有助于避免混淆。 若要详细了解如何与用户讨论组，请参阅向Microsoft 365[组解释](../admin/create-groups/explain-groups-knowledge-worker.md)。
@@ -148,9 +148,9 @@ Microsoft 365组包括各种管理控制，包括过期策略、命名约定和�
 |域允许/阻止|将与组织外部人员共享限制为来自特定域的用户。|Microsoft 365 E5 或 E3|
 |自助式网站创建|允许或阻止用户创建自己的SharePoint网站。|Microsoft 365 E5 或 E3|
 |受限制的网站和文件共享|将网站、文件和文件夹共享限制为特定安全组的成员。|Microsoft 365 E5 或 E3|
-|受限制的组创建|将团队和组创建限制为特定安全组的成员。|Microsoft 365 E5或 E3 Azure AD Premium Azure AD 基本 EDU 许可证|
-|组命名策略|对组和团队名称强制实施前缀或后缀。|Microsoft 365 E5或 E3 Azure AD Premium Azure AD 基本 EDU 许可证|
-|组过期策略|将非活动组和团队设置为过期，并指定时间段后删除。|Microsoft 365 E5许可证的 E3 Azure AD Premium E3|
+|受限制的组创建|将团队和组创建限制为特定安全组的成员。|Microsoft 365 E5或 E3 Azure AD Premium或 Azure AD Basic EDU 许可证|
+|组命名策略|对组和团队名称强制实施前缀或后缀。|Microsoft 365 E5或 E3 Azure AD Premium或 Azure AD Basic EDU 许可证|
+|组过期策略|将非活动组和团队设置为在指定的时间段后过期和删除。|Microsoft 365 E5许可证的 E3 Azure AD Premium E3|
 |按组的来宾访问|允许或阻止每个组与组织外部人员共享团队和组。|Microsoft 365 E5 或 E3|
 
 ## <a name="collaboration-governance-planning-step-by-step"></a>协作治理规划分步规划
@@ -159,8 +159,8 @@ Microsoft 365组包括各种管理控制，包括过期策略、命名约定和�
 
 1. 考虑关键业务目标和流程 - [创建管理计划](collaboration-governance-first.md) 以满足业务需求。
 2. 了解服务中的设置 -[组中设置](groups-sharepoint-governance.md)SharePoint交互，就像组、SharePoint、Teams和其他服务[](groups-sharepoint-teams-governance.md)[中的设置一样](groups-services-interactions.md)。 在规划管理策略时，请务必了解这些交互。
-3. 规划管理用户访问 - 规划要向组、用户和用户授予SharePoint[级别Teams。](groups-teams-access-governance.md)
-4. 计划管理合规性设置 - 查看适用于组、Microsoft 365和Teams的SharePoint[选项](groups-teams-compliance-governance.md)。
+3. 规划管理用户访问 - 规划要向组、用户和用户授予SharePoint[的访问Teams。](groups-teams-access-governance.md)
+4. 计划管理合规性设置 - 查看适用于Microsoft 365组、Teams和SharePoint[合规性选项](groups-teams-compliance-governance.md)。
 5. 规划管理通信 - 查看协作 [方案的可用通信管理选项](groups-teams-communication-governance.md)。
 6. 规划组织和生命周期管理 - 选择要用于组和团队创建、命名、过期 [和存档的策略](plan-organization-lifecycle-governance.md)。 此外，了解[组、团队和团队的生命周期结束Yammer](end-life-cycle-groups-teams-sites-yammer.md)
 
@@ -224,7 +224,7 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：Microsoft 365信息和合规性功能。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 2020 年 11 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
+|[![模型海报：Microsoft 365 信息保护和合规性功能。](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 2020 年 11 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
 
 ## <a name="conference-sessions"></a>会议会话
 
@@ -240,13 +240,13 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 
 了解如何设置组过期生命周期、命名策略、分类标签、与外部来宾的协作以及管理组创建权限。
 
-- [使用组转换协作和Office 365 IT](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
+- [使用组转换协作和Office 365影子 IT](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **客户示例**
 
 请参阅后台示例，了解 Microsoft 365 组、SharePoint、Teams 和 Yammer 如何协同工作以提供全局协作平台。
 
-- [通过组织组、Office 365、SharePoint、Teams和Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [通过组、Office 365、SharePoint、Teams 和 Yammer 找到您的协作Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>另请参阅
 

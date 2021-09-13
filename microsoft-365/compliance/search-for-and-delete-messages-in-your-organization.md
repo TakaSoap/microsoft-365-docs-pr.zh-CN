@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Microsoft 365 合规中心中的搜索和清除功能搜索和删除组织中所有邮箱的电子邮件。
 ms.openlocfilehash: f543a3239b7390e2cd449c0209a512735df2f52e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169618"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 

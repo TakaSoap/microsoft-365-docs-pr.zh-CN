@@ -22,24 +22,24 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: 242d390ba35ef63911d2bab9750e039e81a793787ec1a465847455e1ef5802ce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: caf3935b1ffb36989b2884c6811111531a061098
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169802"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
 将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 稍后，可以将共享邮箱转换回专用 (用户) 邮箱。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 **以下是您需要了解的一些非常重要的事情：**
 
 - 要转换的用户邮箱需要分配有许可证，然后才能将其转换为共享邮箱。 否则，将看不到用于转换邮箱的选项。 如果已删除许可证，请重新添加它，以便转换邮箱。 将邮箱转换为共享邮箱后，可以从用户帐户中删除许可证。
 
-- 共享邮箱可具有多达 50 GB 的数据，无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要从共享邮箱中删除一 (大电子邮件，例如) 附件的电子邮件，以便你可以删除许可证。
+- 共享邮箱可以具有多达 50 GB 的数据，而无需为其分配许可证。 要保留的数据超过此限制，需要为其分配许可证。 你可能需要从共享邮箱中删除一 (，例如带有附件) 缩小共享邮箱，以便你可以删除许可证。
 
 - 不要删除旧用户帐户。 这是定位共享邮箱所需的。 如果已删除用户帐户，请参阅转换已删除 [用户的邮箱](#convert-the-mailbox-of-a-deleted-user)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53826155"
 
 1. [还原用户帐户](../add-users/restore-user.md)。
 
-2. 请确保分配Microsoft 365许可证。
+2. 请确保已Microsoft 365许可证。
 
 3. 重置用户密码。
     
@@ -81,7 +81,7 @@ ms.locfileid: "53826155"
     
 7. 将成员添加到共享邮箱。
 
-## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 () 邮箱
+## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 (邮箱) 邮箱
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
    
@@ -98,7 +98,7 @@ ms.locfileid: "53826155"
 有关将用户邮箱转换为混合环境中共享邮箱Exchange，请参阅：
 
  - [在内部部署部署环境中创建或修改远程共享邮箱Exchange Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [在混合部署中运行目录同步后，共享邮箱Exchange转换为用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [在混合部署中运行目录同步后，共享邮箱意外Exchange用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]

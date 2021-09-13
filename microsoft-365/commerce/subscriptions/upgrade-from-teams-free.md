@@ -21,19 +21,19 @@ search.appverid: MET150
 description: 了解如何从免费Microsoft Teams升级到新的 Microsoft 365 商业版订阅。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea80492344f76ead19aa5db1e504c2c52a9746c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892251"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167547"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>从免费Microsoft Teams升级到Microsoft 365企业版
 
 > [!IMPORTANT]
 > 本文仅适用于印度Microsoft Teams免费组织。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你必须是免费Microsoft Teams才能升级免费Microsoft Teams组织。 如果你创建了免费组织，则Microsoft Teams管理员。
 
@@ -50,13 +50,13 @@ ms.locfileid: "53892251"
 拥有免费组织的基本工作或学校帐户Microsoft Teams，必须重置该帐户的密码。
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"。</a> 当系统提示登录时，选择"**忘记密码"。**
-2. 使用以 . (结尾的基础工作或学校帐户完成密码重置 *onmicrosoft.com) 。*
+2. 使用以 *. (* 结尾的基础工作或学校帐户完成密码重置 onmicrosoft.com) 。
 3. 完成验证步骤。 你将收到一封包含用于设置新密码的代码的电子邮件。
 4. 输入代码以完成验证过程。
 
 ## <a name="step-3-buy-your-new-subscription"></a>步骤 3：购买新订阅
 
-使用已恢复的基础工作或学校帐户以及新的管理员密码购买新的Microsoft 365商业版订阅。
+使用已恢复的基础工作或学校帐户和新的管理员密码购买新的Microsoft 365商业版订阅。
 
 1. 在 Microsoft 365 管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>”。
 2. 查找Microsoft 365要购买的适用于企业产品的产品。
@@ -68,10 +68,10 @@ ms.locfileid: "53892251"
 
 现在，你已经拥有新的 Microsoft 365 商业版订阅，你可以将许可证分配给你的免费组织中Microsoft Teams用户。
 
-1. 在管理中心中，转到"用户 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户"。</a>
+1. 在管理中心中，转到"用户 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户"。**</a>
 2. 选择要为其分配商业Microsoft 365的用户，然后选择"管理 **产品许可证"。**
 3. 在"**管理产品许可证"窗格中**，选择 **"替换现有许可证分配"。**
-4. 在 **"替换现有产品**"窗格中，Microsoft 365购买的业务产品选项，将开关切换到 **"开"。**
+4. 在 **"替换现有产品**"窗格中，找到Microsoft 365购买的业务产品选项，将开关切换到 **"开"。**
 5. 选择 **"替换**"，然后选择"**关闭"。**
 
 ## <a name="related-content"></a>相关内容

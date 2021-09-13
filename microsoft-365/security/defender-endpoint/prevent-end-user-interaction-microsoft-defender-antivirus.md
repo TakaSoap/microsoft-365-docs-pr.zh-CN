@@ -1,6 +1,6 @@
 ---
 title: 隐藏Microsoft Defender 防病毒接口
-description: 可以在应用内隐藏病毒和威胁防护Windows 安全中心磁贴。
+description: 可以在应用内隐藏病毒和威胁Windows 安全中心磁贴。
 keywords: ui 锁定， 无头模式， 隐藏应用， 隐藏设置， 隐藏界面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,13 +17,13 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170475"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与用户界面Microsoft Defender 防病毒交互
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>阻止用户查看或与 Microsoft Defender 防病毒交互
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,11 +32,11 @@ ms.locfileid: "58575776"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-可以使用组策略阻止终结点上的用户看到Microsoft Defender 防病毒界面。 还可以阻止他们暂停扫描。
+可以使用组策略阻止终结点上的用户看到 Microsoft Defender 防病毒 界面。 还可以阻止他们暂停扫描。
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>隐藏Microsoft Defender 防病毒接口
 
-在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并防止病毒&威胁防护磁贴显示在 Windows 安全中心 应用中。
+在 Windows 10 版本 1703 中，隐藏界面将隐藏 Microsoft Defender 防病毒 通知，并防止病毒 & 威胁防护磁贴显示在 Windows 安全中心 应用中。
 
 将设置设置为"**已启用"：**
 
@@ -63,7 +63,7 @@ ms.locfileid: "58575776"
 
 4. 展开树以Windows **客户端> Microsoft Defender 防病毒 >组件**。
 
-5. 双击启用 **无头 UI 模式** 设置，将选项设置为 **已启用**。 单击“**确定**”。 
+5. 双击启用 **无头 UI 模式** 设置，将选项设置为 **已启用**。 单击“确定”。 
 
 有关 [阻止用户修改其电脑保护](configure-local-policy-overrides-microsoft-defender-antivirus.md) 的更多选项，请参阅防止用户在本地修改策略设置。
 
@@ -72,7 +72,7 @@ ms.locfileid: "58575776"
 你可以阻止用户暂停扫描，这有助于确保计划扫描或按需扫描不会被用户中断。
 
 > [!NOTE]
-> 此设置在系统上Windows 10。
+> 此设置在系统上不受Windows 10。
 
 ### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>使用组策略阻止用户暂停扫描
 
@@ -84,7 +84,7 @@ ms.locfileid: "58575776"
 
 4. 展开树以Windows **扫描**  >  **Microsoft Defender 防病毒**  >  **组件**。
 
-5. 双击允许用户暂停 **扫描设置** ，将选项设置为 **已禁用**。 单击“**确定**”。 
+5. 双击允许用户暂停 **扫描设置** ，将选项设置为 **已禁用**。 单击“确定”。 
 
 ## <a name="related-articles"></a>相关文章
 

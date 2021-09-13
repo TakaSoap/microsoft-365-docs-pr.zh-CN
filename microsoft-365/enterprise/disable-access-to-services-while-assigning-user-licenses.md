@@ -19,15 +19,15 @@ ms.custom:
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: 了解如何使用 PowerShell for Microsoft 365 同时向用户帐户分配许可证和禁用特定服务Microsoft 365。
 ms.openlocfilehash: cf3ae327000f2f0bdb93dfdad8429c741a52c30f
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162380"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>在分配用户Microsoft 365禁用对服务的访问权限
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 Microsoft 365订阅随单个服务的服务计划一起提供。 Microsoft 365向用户分配许可证时，管理员通常需要禁用某些计划。 按照本文中的说明，您可以分配一个Microsoft 365许可证，同时使用 PowerShell 为单个用户帐户或多个用户帐户禁用特定服务计划。
 
@@ -89,7 +89,7 @@ Get-MsolAccountSku
 
 - **ConsumedUnits** 是已分配给订阅用户的许可证数。
 
-请注意包含要许可的用户Microsoft 365订阅的 AccountSkuId。 此外，请确保有足够的许可证来分配从 **ActiveUnits** (**ConsumedUnits) 。**
+请注意包含要许可的用户Microsoft 365订阅的 AccountSkuId。 此外，请确保有足够的许可证可分配 (**ActiveUnits** 值减去 **ConsumedUnits) 。**
 
 接下来，运行此命令以查看有关所有Microsoft 365中可用的服务计划的详细信息：
 
@@ -101,7 +101,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 以下是服务计划及其相应服务Microsoft 365列表。
 
-下表显示了最常见Microsoft 365的服务计划及其友好名称。 服务计划列表可能会有所不同。
+下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。
 
 |**服务计划**|**说明**|
 |:-----|:-----|
@@ -133,7 +133,7 @@ Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 ```
 
-下面是名为 belindan@contoso.com 的帐户、contoso：ENTERPRISEPACK 许可证以及要禁用的服务计划的示例命令块RMS_S_ENTERPRISE、SWAY、INTUNE_O365 和 YAMMER_ENTERPRISE：
+下面是针对 contoso：ENTERPRISEPACK 许可证的名为 belindan@contoso.com 的帐户的示例命令块，要禁用的服务计划包括 RMS_S_ENTERPRISE、SWAY、INTUNE_O365 和 YAMMER_ENTERPRISE：
 
 ```powershell
 $userUPN="belindan@contoso.com"
@@ -147,7 +147,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 
 ### <a name="for-multiple-users"></a>对于多个用户
 
-若要为多个用户执行此管理任务，请创建包含 UserPrincipalName 和 UsageLocation (CSV) 文本文件的逗号分隔值。 下面是一个示例：
+若要为多个用户执行此管理任务，请为包含 UserPrincipalName 和 UsageLocation (CSV) 文本文件创建一个逗号分隔值。 下面是一个示例：
 
 ```powershell
 UserPrincipalName,UsageLocation

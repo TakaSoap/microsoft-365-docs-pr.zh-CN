@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: 了解如何在适用于企业的业务中为 AutoPilot Microsoft 365 CSV 文件。
+description: 了解如何在适用于企业Microsoft 365 AutoPilot 创建 CSV 文件。
 ms.openlocfilehash: d3785d85654c1e055d0f1b36dad50485d4e82fd9
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170375"
 ---
 # <a name="device-list-csv-file"></a>设备列表 CSV 文件
 

@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170917"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查警报Microsoft 365 Defender
 
@@ -40,13 +40,13 @@ ms.locfileid: "58572499"
 
 在Microsoft 365 Defender中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 Defender (**>** security.microsoft.com) 时，你可以从事件&警报和警报) 警报 [。](https://security.microsoft.com)
+警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 Defender ( security.microsoft.com) 时，你可以从事件&警报>警报["进入](https://security.microsoft.com)警报队列。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警报队列的示例。":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报将在此处显示。
 
-默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，Microsoft 365 Defender门户中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
@@ -54,12 +54,12 @@ ms.locfileid: "58572499"
 
 你可以根据以下条件筛选警报：
 
-- 严重性
+- Severity
 - 状态
 - 类别
 - 检测源
 - 标记
-- Policy
+- 策略
 - 影响的资产
 
 ## <a name="analyze-an-alert"></a>分析警报
@@ -75,10 +75,10 @@ ms.locfileid: "58572499"
 - 警报情景，它是与此警报相关的事件和警报链（按时间顺序）
 - 摘要详细信息
 
-在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
+在整个警报页面中，可以选择任意实体 (**...)** 的省略号以查看可用操作，例如打开警报页面或将警报链接到其他事件。
 
 ### <a name="alert-sources"></a>警报源
-Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+Microsoft 365 Defender警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security 等解决方案。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
 
 > [!NOTE]
 > - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。<br>

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 848d422828a4c0a8c8e5c7aa63c31f0727ea12f4
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162228"
 ---
 # <a name="release-device-from-isolation-api"></a>从隔离 API 中释放设备
 
@@ -49,7 +49,7 @@ ms.locfileid: "58349928"
 
 > [!IMPORTANT]
 >
-> - 完全隔离适用于版本 1703 Windows 10上的设备。
+> - 完全隔离适用于 Windows 10 版本 1703 上的设备。
 > - 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
 > - 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议为 Microsoft Defender for Endpoint 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 

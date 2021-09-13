@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"非接受域"报告来监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
+description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"非接受域"报告监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3b2ddbc6215ebbc3b1a2b2ccff4a5bc8ad7118c3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574540"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170889"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心中的未接受&报告
 
@@ -48,9 +48,9 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>未接受域报告的详细信息表视图
 
-如果单击 **视图中的"** 查看详细信息"报表视图，将显示以下信息：
+如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **日期**
+- **Date**
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**
@@ -74,4 +74,4 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心内& [见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

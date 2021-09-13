@@ -18,20 +18,20 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 摘要：介绍用于连接到数据库的网络容量、WAN 加速器和负载平衡Office 365。
-ms.openlocfilehash: bda9fc9e9005530e97bc0033fc13813fceeb77d84e39f44726d259fd8847e8e8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170596"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>有关连接到 Office 365 服务的网络设备的计划
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
   
-某些网络硬件可能限制支持的并发会话数。 对于拥有 2，000 多个用户的组织，我们建议他们监视其网络设备，以确保他们能够处理额外的 Office 365 流量。 SNMP (简单网络管理) 可帮助您实现此目标。
+某些网络硬件可能限制支持的并发会话数。 对于拥有 2，000 多个用户的组织，我们建议他们监视其网络设备，以确保他们能够处理额外的Office 365流量。 SNMP (SNMP) 简单网络管理协议可以帮助您实现此目标。
 
-本文是 Network [planning and performance tuning for Office 365 的一Office 365。](./network-planning-and-performance.md)
+本文是网络规划和性能[优化的一部分，Office 365。](./network-planning-and-performance.md)
 
 本地传出 Internet 代理设置还会影响与客户端Office 365服务的连接。 还必须配置网络代理设备，以允许连接 Microsoft 云服务 URL 和应用程序。 每个组织各不相同。 若要了解 Microsoft 如何管理此过程以及我们预配的带宽量， [请阅读案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)。
   
@@ -56,7 +56,7 @@ ms.locfileid: "53894895"
 
 如果你的组织使用广域网 (WAN) 加速代理设备，你在访问 Office 365 服务时可能会遇到问题。 你可能需要优化你的网络设备，以确保你的用户在访问网络时拥有一致的Office 365。 例如，Office 365加密某些Office 365和 TCP 标头。 你的设备可能无法处理此类流量。
   
-阅读我们的支持声明，[了解将 WAN 优化控制器或流量/](https://support.microsoft.com/kb/2690045)检查设备与 Office 365。
+阅读我们的支持声明，[有关将 WAN 优化控制器或流量/检查设备](https://support.microsoft.com/kb/2690045)与 Office 365。
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>硬件和软件负载平衡设备
 

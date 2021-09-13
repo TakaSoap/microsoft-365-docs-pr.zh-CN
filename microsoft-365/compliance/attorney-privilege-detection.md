@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 在审查案例内容时，使用律师-客户特权检测模型使用基于机器学习的特权Advanced eDiscovery检测。
 ms.openlocfilehash: babf0088b7880e614234c0eea0432b0a7fa22db0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162078"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>在服务中设置律师-客户Advanced eDiscovery
 
@@ -41,9 +41,9 @@ ms.locfileid: "58569125"
 
 - **HasAttorney：** 如果律师列表中列出了其中一个文档参与者，则此属性设置为 **true;** 否则值为 **false**。 如果你的组织未上传代理列表，则此值设置为 **false**。
 
-- **IsPrivilege：** 如果 **"AttorneyClientPrivilegeScore"** 的值超过阈值或文档具有律师参与者，则此属性设置为 **true;** 否则，值设置为 **false**。
+- **IsPrivilege：** 如果 **"AttorneyClientPrivilegeScore"** 的值超过阈值或文档具有律师参与者，则此属性设置为 **true;** 否则，该值设置为 **false**。
 
-这些属性 (相应的值) 添加到审阅集内文档的文件元数据中，如以下屏幕截图所示：
+这些属性 (及其对应的值) 添加到审阅集内文档的文件元数据中，如以下屏幕截图所示：
 
 ![文件元数据中显示的律师-客户特权属性。](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "58569125"
 
 ### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>步骤 1：启用律师-客户特权检测
 
-作为您组织中电子数据展示管理员 (电子数据展示管理员角色组) 中的电子数据展示管理员子组的成员必须在 Advanced eDiscovery 事例中提供该模型。
+作为您组织中电子数据展示管理员 (电子数据展示管理员角色组) 中的电子数据展示管理员子组的成员必须在 Advanced eDiscovery 事例中提供模型。
 
 1. In the Microsoft 365 合规中心， go to **eDiscovery > Advanced**.
 
@@ -81,7 +81,7 @@ ms.locfileid: "58569125"
 
    ![律师-客户特权飞出页。](../media/AeDUploadAttorneyList.png)
 
-3. 选择 **"** 浏览"，然后查找并选择.csv 1 中创建的配置文件。
+3. 选择 **"** 浏览"，然后查找并选择在步骤 1 .csv创建的文件。
 
 4. 选择 **"保存** "上载律师列表。
 
@@ -91,7 +91,7 @@ ms.locfileid: "58569125"
 
 ### <a name="step-1-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>步骤 1：使用律师-客户特权检测模型创建智能标记组
 
-在审核过程中查看律师-客户特权检测结果的主要方法之一是使用智能标记组。 智能标记组指示律师-客户特权检测的结果，并在智能标记组中的标记旁边在线显示结果。 这样，您可以在文档审阅期间快速识别潜在的特权文档。 此外，您还可以使用智能标记组的标记来标记具有特权或非特权的文档。 有关智能标记的信息，请参阅在智能标记[Advanced eDiscovery。](smart-tags.md)
+在审核过程中查看律师-客户特权检测结果的主要方法之一是使用智能标记组。 智能标记组指示律师-客户特权检测的结果，并在智能标记组中的标记旁边在线显示结果。 这样，您可以在文档审阅期间快速识别潜在的特权文档。 此外，您还可以使用智能标记组的标记来标记具有特权或非特权的文档。 有关智能标记的信息，请参阅在智能标记[中设置Advanced eDiscovery。](smart-tags.md)
 
 1. 在包含步骤 1 中分析的文档的审阅集内，选择"管理 **审阅** 集"，然后选择"**管理标记"。**
  
@@ -109,15 +109,15 @@ ms.locfileid: "58569125"
 
 ### <a name="step-2-analyze-a-review-set"></a>步骤 2：分析审阅集
 
-在分析审阅集内的文档时，律师-客户特权检测模型也将运行，并且会向审阅集的每一个文档添加 (如何工作 [？中所述的相应](#how-does-it-work) 属性。 有关分析审阅集内的数据详细信息，请参阅分析审阅集内[Advanced eDiscovery。](analyzing-data-in-review-set.md)
+分析审阅集内的文档时，律师-客户特权检测模型也将运行，并且将 (如何工作 [？](#how-does-it-work) 中所述的相应属性添加到审阅集内的所有文档。 有关分析审阅集内的数据详细信息，请参阅分析审阅集内[Advanced eDiscovery。](analyzing-data-in-review-set.md)
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>步骤 3：使用智能标记组查看特权内容
 
 分析审阅集并设置智能标记后，下一步是查看文档。 如果模型已确定文档可能具有特权，则标记面板中的相应智能标记将指示律师-客户特权检测生成的以下结果：
 
-- 如果文档的内容在本质上可能是合法的，则标签"法律内容"显示在相应的智能标记 (在此例中为默认 **"正**") 。
+- 如果文档的内容在本质上可能是合法内容，则标签"法律内容"显示在相应的智能标记 (在这种情况下，该智能标记是默认的 **"正**") 。
 
-- 如果文档中有一个在贵组织律师列表中找到的参与者，则相应的智能标记旁边会显示"律师"标签 (该智能标记在此例中也是默认的 **"** 正") 。
+- 如果文档中有一个在组织律师列表中找到的参与者，则标签"律师"显示在相应的智能标记旁边 (在此例中，该标签也是默认的 **"** 正") 。
 
 - 如果文档的内容在本质上可能是合法的，并且律师列表中有参与者，则同时显示法律内容和律师标签。   
 

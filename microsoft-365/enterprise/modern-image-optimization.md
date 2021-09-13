@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: 了解如何使用 SharePoint Online 中包含的工具优化 SharePoint Online 新式网站页面中的图像。
 ms.openlocfilehash: 0bc9132a890c25804fa262bd494452db702d2a06
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170989"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化图像
 

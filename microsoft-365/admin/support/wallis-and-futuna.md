@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4abf2b9c8170d2d206fe1e34a32a6d451ec371f6f59e28753d102e5cd1e36774
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ae5bf729ebfd4cde6886fe0ef627d6a40dedca5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170253"
 ---
 # <a name="contact-support-for-wallis-and-futuna"></a>联系瓦利斯和富图纳的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53803914"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Sun-Fri 8 PM-4 AM

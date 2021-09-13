@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 020c9fb0223ed7deb5ddffa5150655d5fc41935432f4a8354ee8de6de69a5e80
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 66dba0402a83e6375c64f965464973139bd4ea9a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170749"
 ---
 # <a name="payment-information-for-cyprus"></a>塞浦路斯的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "53861383"
 **SWIFT/BIC 代码：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT

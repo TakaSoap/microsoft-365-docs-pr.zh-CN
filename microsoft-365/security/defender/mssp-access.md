@@ -1,7 +1,7 @@
 ---
 title: 提供托管安全服务提供程序 (MSSP) 访问权限
 description: 了解从 Microsoft Defender 安全中心 到 Microsoft 365 Defender 门户的更改
-keywords: 入门：Microsoft 365 Defender门户、适用于 Office 365 的 Microsoft Defender、适用于终结点的 Microsoft Defender、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
+keywords: 入门：Microsoft 365 Defender门户、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,11 +19,11 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161925"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问权限 
 
@@ -48,7 +48,7 @@ ms.locfileid: "58573879"
 
 1. **为客户 AAD 中的 MSSP 资源创建访问组：组**
 
-    这些组将链接到你在安全门户的 Defender for Endpoint Microsoft 365 Defender角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
+    这些组将链接到在安全门户的 Defender for Endpoint Microsoft 365 Defender角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
 
     - 第 1 层分析员
     - 第 2 层分析员
@@ -56,7 +56,7 @@ ms.locfileid: "58573879"
 
 2. 在客户 Defender for Endpoint 中的相应访问级别创建适用于终结点的 Defender Microsoft 365 Defender门户角色和组。
 
-    若要在客户门户Microsoft 365 Defender RBAC，请通过具有全局管理员或安全管理员权限的用户帐户访问>终结点角色&组 >**角色**。
+    若要在客户门户Microsoft 365 Defender RBAC，>具有全局管理员或安全管理员 **权限** 的用户帐户&组>终结点角色"和"角色"。
 
     ![MSSP 访问的图像。](../../media/mssp-access.png)
 
@@ -125,7 +125,7 @@ ms.locfileid: "58573879"
 
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-     此时，已设置分析员访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：
+     此时，已预配分析师访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 

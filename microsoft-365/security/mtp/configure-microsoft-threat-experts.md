@@ -15,11 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162206"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>通过管理Microsoft 威胁专家配置和管理Microsoft 365 Defender
 
@@ -32,24 +32,24 @@ ms.locfileid: "58576124"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知托管威胁搜寻服务的资格要求。
 
-若要接收目标攻击通知，你需要已Microsoft 365 Defender部署目标攻击通知。 然后，通过 M365 门户提交应用程序，Microsoft 威胁专家 - 目标攻击通知。
+若要接收目标攻击通知，你需要已Microsoft 365 Defender部署攻击通知。 然后，通过 M365 门户提交应用程序，Microsoft 威胁专家 - 目标攻击通知。
 
-联系你的帐户团队或 Microsoft 代表，以订阅 Microsoft 威胁专家 - 专家按需。 按需专家让你可以咨询我们的威胁专家，了解如何保护你的组织免受相关检测和攻击。
+联系你的帐户团队或 Microsoft 代表，订阅 Microsoft 威胁专家专家按需订阅。 按需专家让你可以咨询我们的威胁专家，了解如何保护你的组织免受相关检测和攻击。
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>适用于 Microsoft 威胁专家 - 目标攻击通知服务
 
 如果你已拥有适用于终结点的 Microsoft Defender 和 Microsoft 365 Defender，可以通过其Microsoft 威胁专家应用目标攻击Microsoft 365 Defender通知。  目标攻击通知可让你获得特殊的见解和分析，以帮助识别组织面临的最关键威胁，以便你可以快速响应它们。
 
-1. 从导航窗格中，转到"设置 >终结点">"高级> - > Microsoft 威胁专家 **攻击通知"。**
+1. 从导航窗格中，转到设置 >终结点>常规>高级> Microsoft 威胁专家 - 目标 **攻击通知。**
 
-2. 选择 **应用**。
+2. 选择“**应用**”。
 
-    ![设置Microsoft 威胁专家图像。](../../media/mte/mte-collaboratewithmte.png)
+    ![图像Microsoft 威胁专家设置。](../../media/mte/mte-collaboratewithmte.png)
 
 3. 输入你的姓名和电子邮件地址，以便 Microsoft 可以就你的应用程序联系你。
 
@@ -61,11 +61,11 @@ ms.locfileid: "58576124"
 
 5. 收到欢迎电子邮件后，将自动开始接收目标攻击通知。
 
-6. 可以通过访问"常规"和"高级设置 >**终结点>验证>状态**。 获得批准后，Microsoft 威胁专家 - 目标 **攻击** 通知切换将可见，并切换 **为打开**。
+6. 可以通过访问"常规"和"高级 **"设置 >终结点>验证>状态**。 获得批准后，Microsoft 威胁专家 - 目标 **攻击** 通知切换将可见并切换 **为打开**。
 
 ## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>你将在什么位置看到来自你的目标攻击Microsoft 威胁专家
 
-可以通过以下媒体从Microsoft 威胁专家目标攻击通知：
+可以通过以下媒体从 Microsoft 威胁专家接收目标攻击通知：
 
 - Microsoft 365 Defender门户 **的事件** 页面
 - Microsoft 365 Defender门户 **的警报** 仪表板
@@ -85,9 +85,9 @@ ms.locfileid: "58576124"
 
 2. 从 **"警报"** 页面，选择与在电子邮件中收到的警报主题相同的警报主题，以查看详细信息。
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅 Microsoft 威胁专家 - 专家按需
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅Microsoft 威胁专家 - 专家按需
 
-如果你已经是适用于 Endpoint 的 Microsoft Defender 客户，你可以联系你的 Microsoft 代表来订阅 Microsoft 威胁专家 - 专家按需。
+如果你已经是适用于 Endpoint 的 Microsoft Defender 客户，你可以联系你的 Microsoft 代表，以订阅 Microsoft 威胁专家 - 专家按需。
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>咨询 Microsoft 威胁专家，了解组织中可疑的网络安全活动
 
@@ -102,7 +102,7 @@ ms.locfileid: "58576124"
 
 2. 从顶部菜单中， **选择？咨询威胁专家**。
 
-    ![菜单Microsoft 威胁专家专家按需提供的图像。](../../media/mte/incidents-action-mte-highlighted.png)
+    ![菜单中Microsoft 威胁专家专家按需提供的图像。](../../media/mte/incidents-action-mte-highlighted.png)
 
     将打开一个飞出屏幕。
 

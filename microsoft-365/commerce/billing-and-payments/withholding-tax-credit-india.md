@@ -22,19 +22,19 @@ ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
 ms.openlocfilehash: 1856f9b7d56f39dbc4326c9175c2e70fc8c7c0c7
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171149"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
 
 > [!NOTE]
 >
-> 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球客户 ](withholding-tax-credit-global.md)) 。
+> 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球 ](withholding-tax-credit-global.md)客户) 。
 
-印度客户收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
+印度客户收到由 Microsoft Regional Sales Pte Ltd. 新加坡 (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行跨边界付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
@@ -42,7 +42,7 @@ ms.locfileid: "58823692"
 
 您的 WHT 请求必须包含以下项：
 
-- 由客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
+- 客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
 - 经数字签名的 TDS (16A) 由由客户税务部门 (颁发的 16A) 
 
 通过通过 Microsoft 支持打开票证来提交 WHT 请求。
@@ -53,7 +53,7 @@ ms.locfileid: "58823692"
 
 您的 WHT 请求必须包含以下项：
 
-- 由客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
+- 客户客户填写的预扣 [税 (表单](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) 的已完成) 
 - 经数字签名的 TDS (16A) 由由客户税务部门 (颁发的 16A) 
 
 通过通过 Microsoft 支持打开票证提交 WHT 请求

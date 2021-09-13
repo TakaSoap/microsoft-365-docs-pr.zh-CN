@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
 ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171051"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -85,7 +85,7 @@ ms.locfileid: "58556392"
 
 ### <a name="assessments"></a>评估
 
-评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，你可能有一项评估，在完成其中的所有操作后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
+评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，您可能有一项评估，其中的所有操作完成后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
 
 评估包括几个组件：
 
@@ -125,7 +125,7 @@ ms.locfileid: "58556392"
 
 合规性管理器提供以下语言版本：
 
-- 英语
+- English
 - 印度尼西亚语
 - 马来语
 - 中文（简体）

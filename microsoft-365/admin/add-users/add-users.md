@@ -21,11 +21,11 @@ search.appverid:
 description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
 ms.openlocfilehash: b7fa0842812a83e510d7e200ebef3db4507d4b9d
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169951"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 

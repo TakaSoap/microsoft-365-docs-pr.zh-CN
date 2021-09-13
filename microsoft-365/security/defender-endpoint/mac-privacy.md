@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 087a5e416ce4f56f3cf4b8f96cc2e0109fe7ca49
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170478"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
@@ -115,7 +115,7 @@ The privacy controls for the various types of data described in the preceding se
 |---|---|
 |correlation_id|与安装关联的唯一标识符。|
 |version|程序包的版本。|
-|severity|邮件严重性，例如 (信息性) 。|
+|severity|邮件严重性，例如 (信息) 。|
 |code|描述操作的代码。|
 |text|与产品安装相关的其他信息。|
 
@@ -149,14 +149,14 @@ The privacy controls for the various types of data described in the preceding se
 |---|---|
 |from_version|原始安全智能版本。|
 |to_version|新的安全智能版本。|
-|状态|指示成功或失败的更新的状态。|
+|status|指示成功或失败的更新的状态。|
 |using_proxy|更新是否通过代理完成。|
 |error|更新失败时的错误代码。|
 |reason|如果更新的存档，则显示错误消息。|
 
 #### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>必需诊断数据的产品或服务性能数据事件
 
-**应用程序意外退出 (崩溃) ：**
+**意外的应用程序退出 (崩溃) ：**
 
 在应用程序意外退出时收集系统信息和应用程序的状态。
 
@@ -247,7 +247,7 @@ The privacy controls for the various types of data described in the preceding se
 |---|---|
 |sha256|支持日志的 SHA256 标识符。|
 |大小|支持日志的大小。|
-|original_path|始终在 */library/ (/Microsoft/Defender/wdavdiag/)* 下的支持日志路径。|
+|original_path|支持日志路径始终 (*/Library/Application Support/Microsoft/Defender/wdavdiag/) 。*|
 |format|支持日志的格式。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>诊断日志上载已完成报告

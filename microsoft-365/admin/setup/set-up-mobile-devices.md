@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 Office 或 Android 手机上iPhone你的工作文件，Office中的工作文件将受适用于Microsoft 365保护。
 ms.openlocfilehash: 86bc749c30d5e3dfd731193d5ef1b56f1e33e443
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162162"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>为商业用户设置Microsoft 365移动设备
 
@@ -59,9 +59,9 @@ ms.locfileid: "58567624"
   
 安装完成后，点击" **打开**"按钮打开 Outlook，然后点击" **开始使用**"。
   
-![具有"Outlook"按钮入门屏幕截图。](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
+![按钮Outlook按钮入门屏幕截图。](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-在"添加电子邮件帐户"屏幕"添加帐户"上输入你的工作电子邮件地址， \> 然后Microsoft 365你的企业凭据 \> **"登录"。**
+在"添加电子邮件帐户"屏幕"添加帐户"上输入你的工作电子邮件地址， \> 然后输入Microsoft 365企业凭据" \> **登录"。**
   
 ![登录到你的工作帐户。](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -75,7 +75,7 @@ ms.locfileid: "58567624"
   
 ## <a name="android"></a>[Android](#tab/Android)
   
-观看有关在 Android 设备上Outlook Office和安装视频。<br><br>
+观看有关在 Android 设备上Outlook Office和配置的视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
@@ -85,11 +85,11 @@ ms.locfileid: "58567624"
   
 ![在 Android 主屏幕上，点击"Play Store"。](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-在"Outlook搜索"框中输入"Microsoft 搜索"，然后点击"安装 **"。** 完成Outlook后，点击"打开 **"。**
+Enter Microsoft Outlook in the Google Play search box and tap **Install**. 完成Outlook后，点击"打开 **"。**
   
 ![点击"打开"打开Outlook应用。](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-在 Outlook 应用中，点击"入门"，然后添加Microsoft 365企业电子邮件帐户"继续"， \> 然后使用组织凭据登录。
+在 Outlook 应用中，点击"入门"，然后添加Microsoft 365企业电子邮件帐户""继续"， \> 然后使用组织凭据登录。
   
 ![登录组织帐户Outlook。](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   

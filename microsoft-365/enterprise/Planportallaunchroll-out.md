@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 description: 本文介绍了如何在 SharePoint Online 中规划门户启动，以及成功启动要执行的步骤
 ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170613"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动推出计划
 
 门户是 Intranet 上的SharePoint网站，具有许多使用网站上内容的网站查看者。 大型组织可能有几个门户。 例如，公司门户和 HR 门户。 通常，门户创建和创作网站及其内容的人员相对较少。 门户的大多数访问者仅读取和使用内容。
 
-本文介绍如何规划部署和推出计划以使用 SharePoint Online。 它还提供了遵循的方法，因为联机版上不允许传统SharePoint测试。 SharePoint联机是一种云服务，负载功能、运行状况和总体负载平衡由 Microsoft 管理。
+本文介绍如何规划部署和推出计划以使用 SharePoint Online。 它还提供了遵循的方法，因为系统不允许在 SharePoint Online 上执行传统负载测试。 SharePoint联机是一项云服务，负载功能、运行状况和总体负载平衡由 Microsoft 管理。
 
 为了帮助创建成功的门户，请遵循创建、启动和维护正常运行的门户中详述的指导原则、实践 [和建议](/sharepoint/portal-health) 
 
@@ -47,10 +47,10 @@ ms.locfileid: "58552872"
 
 成功启动的关键部分是下面详述的"wave"或"阶段性推出"方法。 
 
-## <a name="can-i-load-test-sharepoint-online"></a>能否加载测试SharePoint Online？
+## <a name="can-i-load-test-sharepoint-online"></a>能否在线加载SharePoint测试？
 SharePoint联机是一种共享的多租户环境，它跨服务器场进行平衡，并定期调整规模。 负载测试环境（如 SharePoint Online）的扩展会不断更改，不仅会获得意外结果，而且不允许进行。 
 
-了解更多信息：[联机测试容量SharePoint负载测试](capacity-planning-and-load-testing-sharepoint-online.md)
+了解更多信息[：Capacity planning and load testing SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>按照建议的准则优化页面
 本地部署中的页面不应简单地被移动，因为它们位于 SharePoint Online 上，而不根据针对 SharePoint Online 的建议准则进行查看。 最佳方法是始终为 SharePoint 中任何网站或门户优化任何主页，因为这是组织中大多数用户将作为网站网站 (的起点) 。
@@ -60,8 +60,8 @@ SharePoint联机是一种共享的多租户环境，它跨服务器场进行平�
 - 对于用于云使用的任何页面/功能/自定义，应针对更高的延迟和用户的分布式位置进行优化，以便不同区域或区域的用户拥有更加一致的体验。 云提供内容交付网络 (CDN) 等优化，以针对分布式用户群和新式 SharePoint 进行优化，我们的开箱即用 (OOTB) Web 部件利用上一个已知的良好 (LKG) 。
 
 ### <a name="what-to-do"></a>要执行哪些工作：
- - 对于 SharePoint Online 中的所有网站页面，[](./page-diagnostics-for-spo.md)请使用页面诊断工具，该工具是Chromium分析和提供指导的扩展。 网站所有者、编辑者、管理员和开发人员可以使用此功能，因为它旨在作为分析和优化的起点。
- - 开发人员还应在新式页面上的浏览器中使用 F12 浏览器开发人员工具和 CTRL-F12 等开发工具。 [Fiddler](https://www.telerik.com/download/fiddler) 还可用于查看大小权重 (查看页面的大小（以兆字节) 为单位）以及影响整个页面负载的调用和元素数。 
+ - 对于 SharePoint Online 中所有网站页面，请使用[](./page-diagnostics-for-spo.md)页面诊断工具，该工具是Chromium分析和提供指导的扩展。 网站所有者、编辑者、管理员和开发人员可以使用此功能，因为它旨在作为分析和优化的起点。
+ - 开发人员还应在新式页面上的浏览器中使用 F12 浏览器开发人员工具和 CTRL-F12 等开发工具。 [Fiddler](https://www.telerik.com/download/fiddler) 还可用于查看大小权重 (查看页面的大小（以 MB 为单位）) 以及影响整个页面负载的调用和元素数。 
 
 本节是优化页面的简短摘要。  若要了解更多信息，请参阅：  [创建、启动和维护正常运行的门户](/sharepoint/portal-health)。
 

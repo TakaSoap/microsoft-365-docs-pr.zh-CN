@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移电子数据展示迁移步骤。
-ms.openlocfilehash: d73a0bccf870999e63f9d05eaff796e7066a90240c45c7b93208fd715a0d2baa
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171316"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移期间电子数据展示体验的信息
-以下各节提供有关从德国 Microsoft 云 (德国 microsoft 云迁移到新的德国数据中心) Office 365服务时电子数据展示体验的其他信息。
+以下各节提供有关从德国 Microsoft 云 (德国 microsoft 云迁移到新的德国数据中心) Office 365 服务时电子数据展示体验的其他信息。
 
 ## <a name="ediscovery-administration-until-phase-4"></a>第 4 阶段前电子数据展示管理
 在第 4 阶段之前，安全与合规中心将完全可用。 所有内容仍保留在德国 Microsoft 云中，并且由德国 Microsoft 云安全与合规中心 https://protection.office.de/) (。
@@ -35,7 +35,7 @@ ms.locfileid: "53795070"
 从阶段 4 开始到阶段 9 完成，电子数据展示搜索将失败或返回已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的 0 个结果。
 
 > [!NOTE]
-> 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例、保留、 [搜索](/microsoft-365/compliance/manage-legal-investigations)和 [导出](/microsoft-365/compliance/search-for-content)。 但是，针对 SharePoint Online、OneDrive for Business 和Exchange Online迁移的位置的搜索将返回 0 个结果或产生错误。
+> 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例、保留、 [搜索](/microsoft-365/compliance/manage-legal-investigations)和 [导出](/microsoft-365/compliance/search-for-content)。 但是，针对 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的搜索将返回 0 个结果或产生错误。
 
 如果搜索在迁移过程中返回零结果或错误，请对 SharePoint Online 执行以下操作：
 
@@ -50,9 +50,9 @@ ms.locfileid: "53795070"
 **适用于：** 使用电子数据展示的所有客户
 
 在第 9 阶段，将完成移动到新的德国数据中心区域的最后步骤。 在此阶段，将迁移其余的所有服务组件。
-在第 9 阶段之后，不再支持使用德国 Microsoft 云 (protection.office.de) 合规中心。 请改为使用新的[安全中心](https://security.microsoft.com/)[或合规中心](https://compliance.microsoft.com/)。 所有数据已迁移到新的管理门户。
+在第 9 阶段之后，不再支持使用德国 Microsoft 云 (protection.office.de) 安全与合规中心。 请改为使用新的[安全中心](https://security.microsoft.com/)[或合规中心](https://compliance.microsoft.com/)。 所有数据已迁移到新的管理门户。
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 ()  | 说明 | 影响 |
 |:-------|:-------|:-------|
 |  所有 SharePoint Online、OneDrive for Business 和 Exchange Online 位置已随安全与合规中心 (SCC) 一起迁移。 | 所有电子数据展示活动都应从全球租户运行。 搜索现在将 100% 成功。 任何失败或错误应遵循正常支持渠道。 | 无 |
 ||||
@@ -60,7 +60,7 @@ ms.locfileid: "53795070"
 ### <a name="ediscovery-retention-policy"></a>电子数据展示保留策略
 **适用于：**  作为迁移前步骤的一部分应用保留策略的所有客户
 
-| 步骤 (步骤)  | 说明 | 影响 |
+| 步骤 ()  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 删除在迁移前步骤期间创建的组织范围内的保留策略 | 客户可以删除在客户迁移前工作期间创建的组织范围的保留策略。 | 无 |
 ||||

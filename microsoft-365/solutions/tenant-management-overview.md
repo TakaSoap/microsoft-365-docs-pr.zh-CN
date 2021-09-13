@@ -15,19 +15,19 @@ ms.collection:
 - tenant-management
 ms.custom:
 - Ent_Solutions
-description: 有关规划、部署和持续操作您的 Microsoft 365概述。
+description: 规划、部署和持续操作应用程序租户的Microsoft 365概述。
 ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161632"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户管理
 
 通过云计算创建组织数字化转型的路径需要一个稳固的基础，员工可以依靠这些基础来提高工作效率、协作、性能、隐私、合规性和安全性。
 
-正确配置租户Microsoft 365提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。
+正确配置Microsoft 365租户提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。
 
 此解决方案将按照以下步骤完成该基础的配置：
 
@@ -41,15 +41,15 @@ ms.locfileid: "58573375"
 
 ## <a name="a-microsoft-365-tenant-defined"></a>定义的Microsoft 365租户
 
-Microsoft 365租户是特定默认位置（如欧洲或北美）中存储Microsoft 365服务的专用实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
+Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储的组织数据的专用服务实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
 
-你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户都是唯一的，独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
+你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户各不相同、唯一，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。
 
 下面是一个示例：
 
-![一个Microsoft 365 Azure AD 租户的示例。](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![具有 azure AD Microsoft 365租户的租户示例。](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
-*租户管理* 是租户租户的规划、部署和Microsoft 365操作。
+*租户管理* 是规划、部署和持续操作 Microsoft 365租户。
 
 ## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>设计良好且运行良好的租户的属性
 
@@ -65,17 +65,17 @@ Microsoft 365租户是特定默认位置（如欧洲或北美）中存储Microso
   - 对于企业网络，已针对现场工作人员优化了到 Microsoft 网络的网络流量。
   - 你已针对使用 VPN 客户端的远程工作人员优化了网络流量。
 - 已同步 Active Directory 域服务 (AD DS) 帐户、组和其他对象。
-  - 你的 Azure AD 租户帐户将映射到Exchange Online正确的 DNS 域用于电子邮件地址的邮箱。
-  - 你的用户帐户已分配有正确购买产品的正确许可证 (如 Microsoft 365 E3 或 E5) 。
+  - Azure AD 租户帐户将映射到Exchange Online DNS 域正确的邮箱。
+  - 你的用户帐户已分配有正确的许可证，这些许可证来自正确的已购买 (产品，Microsoft 365 E3 E5) 。
 - 已配置强标识和访问管理。
   - 你需要使用无密码身份验证或多重身份验证安全的用户登录 (MFA) 。
   - 您具有条件访问策略，这些策略强制实施登录要求和针对较高安全级别的限制。
 - 本地Office服务器及其数据已迁移到云应用或正在混合配置中使用。
-- 你使用内置于设备的 Intune 或基本移动性和安全性Microsoft 365。
+- 使用内置于设备的 Intune 或基本移动性和安全性进行设备Microsoft 365。
   - 组织拥有的设备已注册和管理。
   - 管理个人设备的应用。
 
-下面是一个包含Microsoft 365元素的租户示例。
+下面是一个包含所有这些Microsoft 365的租户示例。
 
 ![租户Microsoft 365示例。](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
@@ -90,11 +90,11 @@ Microsoft 365租户是特定默认位置（如欧洲或北美）中存储Microso
 
 以下各节和表列出了此解决方案中步骤的关键功能和许可。
 
-### <a name="tenant"></a>租户
+### <a name="tenant"></a>Tenant
 
 |功能或特性|说明|许可|
 |---|---|---|
-|多个租户|每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 对于多个租户，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。|Microsoft 365 E3 或 E5|
+|多个租户|每个Microsoft 365租户都是唯一的，并且独立于所有其他Microsoft 365租户。 对于多个租户，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。|Microsoft 365 E3 或 E5|
 |交叉租户邮箱迁移|租户管理员可以在本地系统中以最少的基础结构依赖项在租户之间移动邮箱。 这将无需离开和载入邮箱。|Microsoft 365 E3 或 E5|
 |多地理位置|租户可以在选择满足数据驻留要求的其他数据中心地理位置中存储静止数据。|Microsoft 365 E3 或 E5|
 |将核心数据移动到新的数据中心地理位置|随着 Microsoft 添加新的数据中心地理位置来增加容量和计算资源，你可以请求为核心客户数据的地理位置内数据驻留进行数据中心异地移动。|Microsoft 365 E3 或 E5|
@@ -105,7 +105,7 @@ Microsoft 365租户是特定默认位置（如欧洲或北美）中存储Microso
 |功能或特性|说明|许可|
 |---|---|---|
 |网络Insights|从租户中收集的网络Microsoft 365指标，有助于设计办公地点的网络外围。|Microsoft 365 E3 或 E5|
-|自动化终结点更新|自动执行客户端 PAC 文件、网络设备Microsoft 365中终结点的配置和持续更新。|Microsoft 365 E3 或 E5|
+|自动化终结点更新|自动执行客户端 PAC 文件和网络设备Microsoft 365终结点的配置和持续更新。|Microsoft 365 E3 或 E5|
 ||||
 
 ### <a name="identity"></a>标识
@@ -124,7 +124,7 @@ Microsoft 365租户是特定默认位置（如欧洲或北美）中存储Microso
 |功能或特性|说明|许可|
 |---|---|---|
 |迁移到 Windows 10|将运行 Windows 7 或 Windows 8.1 的设备Windows 10 企业版。|Windows 10 企业版或 E5 Microsoft 365 E3许可证|
-|迁移到Microsoft 365 企业应用版|将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云中安装且已更新新功能的版本。|Microsoft 365 E3 或 E5|
+|迁移到Microsoft 365 企业应用版|将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云安装的、使用新功能更新的版本。|Microsoft 365 E3 或 E5|
 |将本地服务器和数据迁移到Microsoft 365|将Exchange邮箱、SharePoint网站和 Skype for Business Online Microsoft 365云服务。|Microsoft 365 E3 或 E5|
 ||||
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a5b021adccf83ee37ea6f823a6a0f5084a655b787045e4d63f7acd44570a79e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44681fc2496bd67d71056c692772c906cdbd6859
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171219"
 ---
 # <a name="contact-support-for-cte-divoire"></a>联系科特迪瓦支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53832567"
 
 输入代码 7703
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 8 点到下午 4 点

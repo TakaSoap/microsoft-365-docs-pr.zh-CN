@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何设置Microsoft 365以便准备好从 Google Workspace 进行迁移。
-ms.openlocfilehash: 231847c9d3a0b34e4422a8e2f8fb93bc59e0c39f3e01be42b0c0c71ea8963a2a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec8813f62febbd1c4ee2afa6877e4be505a75a81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170833"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>设置Microsoft 365 Google Workspace 迁移
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
-若要从 Google Workspace 迁移电子邮件、日历和联系人，你需要Microsoft 365 商业高级版域设置一个临时域，直到你的业务域准备好用于你的订阅。
+若要从 Google Workspace 迁移电子邮件、日历和联系人，你需要使用Microsoft 365 商业高级版域设置电子邮件、日历和联系人，直到你的业务域准备好用于你的订阅。
 
 ## <a name="try-it"></a>试一试！ 
 

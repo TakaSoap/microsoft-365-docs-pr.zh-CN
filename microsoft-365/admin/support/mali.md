@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 51a9427e51e7dfe8a6259a555bf9750005e913407282e5a82ee15327447e9d64
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4c0e3a80eb4233501a57206c761bb4285dc851a8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162117"
 ---
 # <a name="contact-support-for-mali"></a>联系马里支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53832447"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 8 点到下午 4 点
@@ -35,7 +35,7 @@ ms.locfileid: "53832447"
 
 ### <a name="technical-support"></a>技术支持：
 
-法语：Mon-Fri 7AM-8 PM
+法语：Mon-Fri上午 7 点到下午 8 点
 
 英语：全天候
 

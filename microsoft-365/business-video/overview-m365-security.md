@@ -22,24 +22,24 @@ search.appverid:
 - MOE150
 description: 了解适用于企业Microsoft 365安全功能。
 ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171179"
 ---
 # <a name="overview-of-security"></a>安全性概述
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-Microsoft 365 商业高级版提供了威胁防护、数据保护和设备管理功能，可帮助你保护你的公司免受联机威胁和未经授权的访问，以及保护和管理手机、平板电脑和计算机上的公司数据。
+Microsoft 365 商业高级版提供了威胁防护、数据保护和设备管理功能，可帮助你保护公司免受联机威胁和未经授权的访问，以及保护和管理手机、平板电脑和计算机上的公司数据。
 
 |![威胁防护。](../media/m365-business-security-threat-protection.png)<br/>[威胁防护](#threat-protection)|![与客户端协作](../media/m365-business-security-data-protection.png) <br/>[数据保护](#data-protection) | ![设备管理](../media/m365-business-security-device-management.png) <br/>[设备管理](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>威胁防护
 
-Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe-links.md)这是一种基于云的电子邮件筛选服务，可保护你免受恶意软件、勒索软件、有害的链接等的攻击。 ATP 保险箱 链接可保护你免受电子邮件或文档Office URL 的攻击。 ATP 保险箱 附件可保护您免受附加到邮件或文档的恶意软件和病毒的侵害。
+Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe-links.md)这是一种基于云的电子邮件筛选服务，可保护你免受恶意软件、勒索软件、有害的链接等的攻击。 ATP 保险箱 链接可保护你免受电子邮件或文档内容中恶意OFFICE URL。 ATP 保险箱 附件可保护您免受附加到邮件或文档的恶意软件和病毒的侵害。
 
 [多重身份验证 (MFA ](turn-on-mfa.md)) 或两步验证，要求你提供第二种形式的身份验证（如验证码）以确认身份，然后才能访问资源。
 
@@ -49,7 +49,7 @@ Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe
 
 数据保护功能Microsoft 365 商业高级版确保重要数据保持安全，并且只有授权人员才能访问这些数据。
 
-您可以使用 DLP [ (数据丢失 ](set-up-dlp.md)) 识别和管理敏感信息，如社会保险或信用卡号，以便不会错误地共享。
+您可以使用 [DLP (数据丢失 ](set-up-dlp.md)) 识别和管理敏感信息，如社会保险或信用卡号，以便不会错误地共享。
 
 [Office 365 邮件加密](/microsoft-365/compliance/ome)加密和访问权限功能，以帮助确保只有预期收件人才能查看邮件内容。 Office 365 邮件加密适用于 Outlook.com、Yahoo！和 Gmail 以及其他电子邮件服务。
 
@@ -57,11 +57,11 @@ Microsoft 365 商业高级版包括[Office 365高级威胁防护 (ATP) ，](safe
 
 ## <a name="device-management"></a>设备管理
 
-Microsoft 365 商业高级版高级设备管理功能，可监视和控制用户可以使用已注册设备执行哪些操作。 这些功能包括条件访问、移动设备管理 (MDM) 、BitLocker 和自动更新。 [ ](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)
+Microsoft 365 商业高级版高级设备管理功能，可监视和控制用户可以使用已注册设备执行哪些操作。 这些功能包括条件访问、移动设备管理 [ (MDM) 、BitLocker ](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)和自动更新。
 
 可以使用条件访问策略对某些用户和任务要求额外的安全措施。 例如，你可以要求使用 [MFA ](/microsoft-365/business-video/turn-on-mfa) (多重) 或阻止不支持条件访问的客户端。
 
-借助 MDM，可帮助保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows手机。 你可以创建和管理设备安全策略、远程擦除设备以删除所有公司数据、将设备重置为出厂设置以及查看详细的设备报告。
+借助 MDM，可帮助保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 你可以创建和管理设备安全策略、远程擦除设备以删除所有公司数据、将设备重置为出厂设置以及查看详细的设备报告。
 
 你可以启用 BitLocker 加密以帮助保护设备丢失或被盗时的数据，并启用 Windows 攻击防护，以针对勒索软件提供高级保护。
 

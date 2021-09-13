@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: 了解如何在网站中设置安全Teams，以基于数据的敏感度来保护数据。
 ms.openlocfilehash: 07f8f1193043b31c53346221791529b5b6162c30
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171502"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>设置与 Microsoft 365 和 Microsoft Teams
 
@@ -33,13 +33,13 @@ ms.locfileid: "58572787"
 - 为Microsoft Teams部署具有正确保护级别的项目
 - 使用每个项目的适当安全设置配置外部共享
 
-![使用Teams部署外部共享，并配置具有相应安全设置的外部共享。](..\media\solutions-architecture-center\secure-collaboration-overview.png)
+![部署Teams适当的保护，并配置具有相应安全设置的外部共享。](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 如果通用且易于使用的内容协作工具不可用，用户通常会通过电子邮件进行协作。 这是一种繁琐且容易出错的协作方法，会增加信息共享不当的风险。 如果用户发现共享信息过于困难，他们可能会恢复为使用不受 IT 监管的消费者产品。 这会带来更大的风险。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
-使用 Microsoft 365，Teams各种配置部署解决方案，这些配置有助于：
+通过Microsoft 365，你可以部署Teams各种配置，帮助：
 
 - 保护知识产权
 - 实现轻松协作
@@ -77,7 +77,7 @@ ms.locfileid: "58572787"
 
 Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建议您将此部署内容与协作管理内容 [一起用于](collaboration-governance-overview.md) 为组织创建最佳协作解决方案。
 
-### <a name="using-teams-for-all-kinds-of-data"></a>将Teams用于所有类型的数据
+### <a name="using-teams-for-all-kinds-of-data"></a>对Teams使用数据
 
 为了管理对不同敏感信息的访问，我们开发了三种不同保护层[，](configure-teams-three-tiers-protection.md)用于Teams。 您可以自定义这些层中的任一层，以更好地满足需求或业务。
 
@@ -97,7 +97,7 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 
 配置这些层涉及：
 
-- 配置来宾Teams私人频道的设置
+- 配置来宾访问Teams私人频道的设置
 - 为内部和来宾共享、访问请求和共享链接SharePoint团队关联的网站中的设置
 - 对于 *敏感和**高度敏感的* 层，配置敏感度标签以对团队进行分类，并控制来宾共享和从非托管设备访问
 - 对于 *高度敏感的* 层，配置敏感度标签以加密应用它的文档
@@ -112,7 +112,7 @@ Microsoft 365提供了许多用于管理协作解决方案的选项。 我们建
 
 ### <a name="sharing-with-people-outside-your-organization"></a>与组织外部人员共享
 
-你可能需要 [与组织外部人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)。 这包括与单个人员共享单个文档，到与大型合作伙伴组织或世界各地的供应商就主要项目进行协作。 在Microsoft 365中，这一外部共享范围可以轻松完成，并提供适当的安全措施来帮助保护敏感信息。
+你可能需要 [与组织外部人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)。 这包括与单个人员共享单个文档，到与大型合作伙伴组织或世界各地的供应商就主要项目进行协作。 在Microsoft 365中，可以轻松完成此范围的外部共享，并提供适当的安全措施来帮助保护敏感信息。
 
 这些资源将帮助您开始设置环境以与组织外部人员进行协作：
 
@@ -154,7 +154,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 
 |培训：|使用 Microsoft 365 保护企业信息|
 |---|---|
-|![Teams信息保护培训图标。](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备认证Microsoft 365：安全管理员关联Microsoft 365认证：Enterprise专家认证。<p>1 小时 - Learning 路径 - 5 个模块|
+|![Teams信息保护培训图标。](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备Microsoft 365认证：安全管理员关联Microsoft 365认证：Enterprise专家认证。<p>1 小时 - Learning 路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
 > [开始>](/learn/modules/m365-security-info-overview/introduction/)
@@ -175,7 +175,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Teams 和 SharePoint 
 |Teams|SharePoint|
 |---|---|
 |![设置和自定义团队培训图标。](../media/set-up-customize-team-training.png)<br>**[设置和自定义团队](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint共享和同步培训图标](../media/sharepoint-share-sync-training.png)<br>**[共享和同步](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Teams上传和查找文件培训图标。](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Teams上载和查找文件培训图标。](../media/smc-teams-upload-find-files-training.png)<br>**[Upload并查找文件](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![在团队和频道中协作图标。](../media/teams-collaborate-channels-training.png)<br>**[在团队和频道中协作](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>插图

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8acb59c220bd400894aba2be17d5b2ac3216d7591fae5f5928b4670e0c4d2b5e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161956"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -53,9 +53,9 @@ ms.locfileid: "53817023"
 | `ConfigurationSubcategory` | string | 配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。 |
 | `ConfigurationImpact` | string | 配置对总体配置评分的影响程度 (1-10) |
 | `IsCompliant` | boolean | 指示是否正确配置了配置或策略 |
-| `IsApplicable` | boolean | 指示配置或策略是否适用于设备 |
+| `IsApplicable` | 布尔 | 指示配置或策略是否适用于设备 |
 | `Context` | string | 有关配置或策略的其他上下文信息 |
-| `IsExpectedUserImpact` | boolean | 指示应用配置或策略时是否将影响用户 |
+| `IsExpectedUserImpact` | 布尔 | 指示应用配置或策略时是否会影响用户 |
 
 ## <a name="related-topics"></a>相关主题
 

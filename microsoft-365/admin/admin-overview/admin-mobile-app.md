@@ -25,36 +25,36 @@ search.appverid:
 - MOE150
 description: 获取Microsoft 365 管理，并了解如何从手机或平板电脑管理联机组织。
 ms.openlocfilehash: 7e503b70f6263e0bf5e949c7ca18ccfe0eb31ffb
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169902"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于Microsoft 365移动应用
 
-你是经常在外访问的管理员吗？ 即使您不是，有时可能也需要从手机或平板电脑Microsoft 365设备。 查看免费Microsoft 365 管理[应用，](https://go.microsoft.com/fwlink/?LinkID=627216)这是基于 Web 的 web 应用Microsoft 365 管理中心。 你可以从 Apple App [Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)和 Google Play 应用商店下载 [应用](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
+你是经常在外访问的管理员吗？ 即使您不是，有时可能需要从手机或平板电脑Microsoft 365移动设备。 查看免费Microsoft 365 管理[应用](https://go.microsoft.com/fwlink/?LinkID=627216)，这是基于 Web 的 web 应用程序Microsoft 365 管理中心。 你可以从 Apple App [Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)和 Google Play 应用商店下载 [应用](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot： Admin mobile app's home page， displaying search， Message center， health， and quick links":::
 
-管理应用具有许多功能，当你无法访问计算机时，Microsoft 365移动设备或平板电脑设备管理设备。 以下是你可以从应用执行一些任务的列表：
+管理应用具有许多功能，当你无法到达计算机时，Microsoft 365从你的移动或平板电脑设备管理设备。 下面是你可以从应用执行一些任务的列表：
 
 - **管理用户和设备** 添加或编辑用户、重置用户密码、分配角色、阻止用户、删除用户、管理别名、分配许可证、擦除设备数据等。
 - **管理组** 添加组、在组中添加或删除用户。
 - **许可证管理和计费** 查看已购买和分配的许可证的列表、向用户分配许可证、购买或删除许可证以及查看和下载发票。
-- **支持** 创建新的服务请求，并跟踪在离开时与服务请求相关的所有更新。
-- **消息中心** 随时了解即将进行的所有更改、计划维护或与更新相关的Microsoft 365
-- **服务运行状况** 通过查看服务的当前状态和有关服务中断的详细信息来监视所有服务的运行状况。
+- **支持** 创建新的服务请求，并跟踪你在外时与服务请求相关的所有更新。
+- **消息中心** 随时了解所有即将进行的更改、计划的维护或与更新相关的Microsoft 365
+- **服务运行状况** 通过查看服务的当前状态和有关服务中断的详细信息，监视所有服务的运行状况。
 - **通知** 通过推送通知了解与消息中心帖子、服务运行状况和计费相关的所有重要信息和更新。 你甚至可以自定义要通知哪些信息。
 
 如果你是管理员并且负责多个组织Microsoft 365，可以登录到多个组织并快速切换。 应用支持深色主题，有 39 种语言版本。
   
 > [!IMPORTANT]
-> 如果在 iOS 或 Android 上使用管理移动应用 [时遇到](mailto:feedback365@microsoft.com) 问题，请通过电子邮件 feedback365@microsoft.com 告知我们。
+> 如果在 iOS 或 Android 上使用管理移动应用 [时](mailto:feedback365@microsoft.com) 遇到问题，请通过电子邮件 feedback365@microsoft.com 告知我们。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-必须是组织管理员Microsoft 365才能使用管理员移动应用。
+您必须是组织管理员Microsoft 365才能使用管理员移动应用。
   
 ## <a name="download-the-admin-mobile-app"></a>下载移动管理应用
 
@@ -90,11 +90,11 @@ ms.locfileid: "58394356"
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>如果我的组织启用了目录同步，是否可使用该应用？
 
-是，但功能已缩减。 你可以登录并查看服务信息，但大多数用户管理功能都是只读的。 无法添加、编辑或删除用户。 但是，你将能够将许可证分配给贵组织的用户并获取通知。
+是，但功能已缩减。 你将能够登录和查看服务信息，但大多数用户管理功能都是只读的。 无法添加、编辑或删除用户。 但是，你将能够将许可证分配给贵组织的用户并获取通知。
   
 ### <a name="what-languages-are-supported-by-the-app"></a>该应用支持什么语言？
 
-该应用支持基于 Web 的应用程序支持的所有 39 Microsoft 365 管理中心语言。 若要更改语言，请在管理中心的左侧导航菜单中，转到"设置语言"或选择管理移动应用主页的"快速链接"部分中的"语言  >  "图标。  
+该应用支持基于 Web 的应用程序支持的所有 39 Microsoft 365 管理中心语言。 若要更改语言，请在管理中心的左侧导航菜单中，转到"设置语言"或选择管理移动应用主页的"快速 **链接**"部分中的"语言  >  "图标。  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>我如何与组织的其余用户共享服务事件和邮件？
 

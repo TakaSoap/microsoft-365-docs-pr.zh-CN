@@ -18,11 +18,11 @@ ms.assetid: ''
 description: 了解如何从演示文稿或外部Advanced eDiscovery审阅集选择和导出内容。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171382"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>从审阅集导出文档Advanced eDiscovery
 
@@ -63,11 +63,11 @@ ms.locfileid: "58570853"
   
   - 仅报告：仅创建摘要和加载文件。
   
-  - 如果可能 (，会向 PST 添加松散文件和 PTS) ：文件导出的格式类似于用户在本机应用程序中看到的原始目录结构。  有关详细信息，请参阅 Loose [files and PST export structure部分](#loose-files-and-pst-export-structure) 。
+  - 如果可能 (，将松散文件和 PTS 添加到 PST) ：文件以类似于用户本机应用程序中看到的原始目录结构的格式导出。  有关详细信息，请参阅 Loose [files and PST export structure部分](#loose-files-and-pst-export-structure) 。
   
   - 压缩目录结构：导出文件并包含在下载中。
   
-  - 导出到您的帐户的压缩目录Azure 存储：文件将导出到您组织的 Azure 存储 帐户。 对于此选项，你必须为要导出文件的 Azure 存储 帐户中的容器提供 URL。 此外，还必须为帐户的 SAS () 共享Azure 存储签名。 有关详细信息，请参阅将审阅集[内的文档导出到Azure 存储帐户。](download-export-jobs.md)
+  - 导出到您的 Azure 存储 帐户的压缩目录结构：文件将导出到您组织的 Azure 存储 帐户。 对于此选项，你必须提供要将文件导出到的 Azure 存储 帐户中的容器的 URL。 此外，还必须为帐户提供共享访问签名 (SAS) 令牌Azure 存储令牌。 有关详细信息，请参阅将审阅集[内的文档导出到Azure 存储帐户。](download-export-jobs.md)
 
 - **Include**
   
@@ -75,7 +75,7 @@ ms.locfileid: "58570853"
   
   - 文本文件：此选项包括导出中的本机文件的提取文本版本。
   
-  - 将修订的本机替换为转换后的 PDF：如果在审阅过程中生成了修订的 PDF 文件，则这些文件可供导出。 可以选择不选择此选项 (导出已修订的本机文件) 也可以选择此选项以导出包含实际修订的 PDF 文件。
+  - 将修订的本机替换为转换后的 PDF：如果在审阅过程中生成了修订的 PDF 文件，则这些文件可供导出。 可以选择仅导出已修订的本机文件 (不选择此选项) 也可以选择此选项以导出包含实际修订的 PDF 文件。
 
   - 对话 PDF 而不是单个聊天消息：选中此复选框以导出 PDF 文件中聊天对话。 同一对话的所有聊天消息都在同一 PDF 文件中导出。 如果保留此复选框为未选中状态，则聊天对话中每个唯一的消息都导出为独立项目。 以与邮箱中相同的格式导出文件。 对于特定对话，您将收到多个 .msg 文件。
 
@@ -89,13 +89,13 @@ ms.locfileid: "58570853"
 
 - 根文件夹：此文件夹的名称为 [Export Name] x，z.zip每个 ZIP 文件分区重复此文件夹。
   
-  - Export_load_file_xz.csv元数据文件。
+  - Export_load_file_xz.csv：元数据文件。
   
   - 警告和错误 x z.csv：此文件包含有关尝试从审阅集导出时遇到的错误的信息。
   
   - Exchange：此文件夹包含 PST Exchange中存储的所有内容。 此选项不能包含修订的 PDF 文件。 如果在审阅集内选择了附件，将导出附加附件的父电子邮件。
   
-  - SharePoint：此文件夹包含来自本地SharePoint以本机文件格式提供的所有本机内容。 此选项不能包含修订的 PDF 文件。
+  - SharePoint：此文件夹包含本地SharePoint的所有本机内容。 此选项不能包含修订的 PDF 文件。
 
 ### <a name="condensed-directory-structure"></a>压缩目录结构
 
@@ -103,13 +103,13 @@ ms.locfileid: "58570853"
 
 - 根文件夹：此文件夹的名称为 [Export Name] x，z.zip每个 ZIP 文件分区重复此文件夹。
   
-  - Export_load_file_xz.csv：元数据文件，还包括 ZIP 文件中存储的每个文件的位置。
+  - Export_load_file_xz.csv：元数据文件，还包括存储在 ZIP 文件中每个文件的位置。
   
   - 警告和错误 x z.csv：此文件包含有关尝试从审阅集导出时遇到的错误的信息。
 
   - NativeFiles：此文件夹包含已导出的所有本机文件。 如果选择了"将已修订的本机替换为转换后的 PDF"选项，本机文件将 *替换为修订的 PDF。*
   
-  - Error_files：此文件夹包含具有提取或其他处理错误的文件。 这些文件将放置在单独的文件夹中，包括 ExtractionError 或 ProcessingError。 这些文件在加载文件中列出。
+  - Error_files：此文件夹包含具有提取错误或其他处理错误的文件。 这些文件将放置在单独的文件夹中，包括 ExtractionError 或 ProcessingError。 这些文件在加载文件中列出。
 
   - Extracted_text_files：此文件夹包含处理过程中生成的所有提取的文本文件。
 

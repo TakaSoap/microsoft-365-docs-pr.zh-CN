@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何通过创建邮件流规则来停止自动转发电子邮件，以避免窃取专有信息。
-ms.openlocfilehash: b3118fed41408ef83ba007ff9530b49b6072f8c51e9ca6cc07fc3526309decb5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c13e43f29b6d49b13daf4eb0aa6e3d6fd8275ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893311"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170815"
 ---
 # <a name="stop-email-auto-forward"></a>停止电子邮件自动转发
 
@@ -39,13 +40,13 @@ ms.locfileid: "53893311"
 
 ## <a name="try-it"></a>试一试！
 
-1. From the Microsoft 365 管理中心， select **Exchange**， **mail flow**， and on the **rules** tab， select the plus sign and choose create a **new rule**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>， select **Exchange**， **mail flow**， and on the **rules** tab， select the plus sign and choose create a **new rule**.
 1. 选择“其他选项”。 命名新规则。
-1. 然后打开下拉以应用此规则 **if**，选择发件人 **，然后****是外部内部**。
+1. 然后打开下拉以在 中应用 **此规则，选择** 发件人 **，然后****是外部内部**。
 1. 选择 **"组织内部"，** 然后选择"确定 **"。**
 1. 选择 **"添加** 条件"，打开下拉列表，选择 **"邮件属性**"， **然后包含邮件类型**。
 1. 打开"**选择邮件类型**"下拉列表，选择"**自动转发"，** 然后选择"确定 **"。**
-1. 打开" **执行以下操作"** 下拉列表，选择" **阻止** 邮件"，然后拒绝 **邮件并包含说明**。
+1. 打开" **执行以下操作"** 下拉列表，选择" **阻止** 邮件"， **然后拒绝邮件并包含说明**。
 1. 输入说明的消息文本，然后选择"确定 **"。**
 1. 滚动到底部，**然后选择保存。**
 

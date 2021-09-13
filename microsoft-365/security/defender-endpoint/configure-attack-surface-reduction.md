@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/11/2021
 ms.openlocfilehash: 79129d25c730f7948269c4291e53e3fc953af329
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170094"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>配置攻击面减少功能
 
@@ -42,7 +42,7 @@ Defender for Endpoint 包括多种攻击面减少功能。 若要了解更多信
 
    1. 查看 Windows 中的基本策略。 请参阅 [示例基本策略](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
    2. 请参阅Windows Defender[控件设计指南](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
-   3. 请参阅使用[WDAC Windows Defender部署 (应用程序) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+   3. 请参阅[部署 WDAC Windows Defender应用程序 (控制) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
 
 3. [启用受控文件夹访问权限](enable-controlled-folders.md)。
 
@@ -56,7 +56,7 @@ Defender for Endpoint 包括多种攻击面减少功能。 若要了解更多信
 
    1. 获取高级安全[Windows Defender防火墙的概述](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
    2. 使用[Windows Defender防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)设计指南决定您希望如何设计防火墙策略。
-   3. 使用[Windows Defender 防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)部署指南设置组织的高级安全防火墙。
+   3. 使用[Windows Defender防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)部署指南设置组织的高级安全防火墙。
 
 > [!TIP]
 > 在大多数情况下，配置攻击面减少功能时，可以从以下几种方法中选择：

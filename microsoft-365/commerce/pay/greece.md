@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0625db97a30b3232e6bf0df556c42b4229477443ef6d46de4b12161e52450963
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c873131098320253dbf3558c6213168cfca3b6e9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171424"
 ---
 # <a name="payment-information-for-greece"></a>希腊的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "53852387"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT

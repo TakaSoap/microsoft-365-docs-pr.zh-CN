@@ -1,5 +1,5 @@
 ---
-title: 配置 Microsoft 365 企业版 服务和应用程序
+title: 配置Microsoft 365 企业版和应用程序
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,17 +20,17 @@ f1.keywords:
 description: 配置Microsoft 365 企业版服务和应用程序，如 SharePoint、Exchange 和 Skype for Business。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: f1253f5d36621c252a0fd37b35a73cdf6269ebd5
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170599"
 ---
-# <a name="configure-microsoft-365-enterprise-services-and-applications"></a>配置 Microsoft 365 企业版 服务和应用程序
+# <a name="configure-microsoft-365-enterprise-services-and-applications"></a>配置Microsoft 365 企业版和应用程序
 
 我们[的基本设置说明](../admin/setup/setup.md)可帮助你尽可能Microsoft 365使用你的服务和应用程序。 有时，最好在每个人都开始使用之前配置内容。 例如，如果要配置邮件路由、文件存储或共享策略。 
   
-如果您需要有关设置Microsoft 365的帮助，请使用 FastTrack 或 Microsoft 365 **[](https://www.microsoft.com/fasttrack/microsoft-365)** 和 Office 365 [指南](setup-guides-for-microsoft-365.md)。
+如果您需要有关设置Microsoft 365的帮助，FastTrack [或安装程序指南](setup-guides-for-microsoft-365.md)获取Microsoft 365和 **[](https://www.microsoft.com/fasttrack/microsoft-365)** Office 365指南。
   
 |**服务和应用程序**|**资源**|
 |:-----|:-----|

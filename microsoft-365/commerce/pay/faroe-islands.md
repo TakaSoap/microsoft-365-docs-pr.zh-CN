@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e0bab73601f9c30b13ceec23dacd711eafd20e9c4fb3a87f2efd42059911f81
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4d2db1ce27d6da9ba32baa2f646ea0872c2636f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170729"
 ---
 # <a name="payment-information-for-faroe-islands"></a>法罗群岛的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "53852447"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT

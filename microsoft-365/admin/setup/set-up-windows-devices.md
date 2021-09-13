@@ -27,19 +27,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 为Windows设置运行Windows 10 专业版的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
+description: 为Windows用户设置运行Windows 10 专业版的设备Microsoft 365 商业高级版，从而实现集中式管理和安全控制。
 ms.openlocfilehash: 4b390b1217cd3af7b5f2cc49dc2fb3507a7fe04c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162158"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为Windows用户设置Microsoft 365 商业高级版设备
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-在你可以为 Microsoft 365 商业高级版 用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 版本 1703 (创意者更新) 。 Windows 10 专业版是部署 Windows 10 商业版 的先决条件，这是一组云服务和设备管理功能，可补充 Windows 10 专业版 并启用对 Microsoft 365 商业高级版 的集中管理和安全Microsoft 365 商业高级版。
+在你可以为 Microsoft 365 商业高级版 用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版 版本 1703 (Creators Update) 。 Windows 10 专业版部署 Windows 10 商业版 的先决条件，这是一组云服务和设备管理功能，可补充 Windows 10 专业版 并启用 Microsoft 365 商业高级版 的集中管理和安全控制。
   
 如果你有Windows运行 Windows 7 Pro、Windows 8 专业版 或 Windows 8.1 专业版 的设备，Microsoft 365 商业高级版 订阅将授权你进行 Windows 10 升级。
   
@@ -55,7 +55,7 @@ ms.locfileid: "58570169"
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
 
-当Windows设备已升级到 Windows 10 专业版 创意者更新或已在运行 Windows 10 专业版 创意者更新时，你可以将这些设备加入到组织的 Azure Active Directory。 设备加入后，将自动升级到 Windows 10 商业版，这是你的 Microsoft 365 商业高级版 订阅的一部分。
+当Windows设备已升级到 Windows 10 专业版 创意者更新或已在运行 Windows 10 专业版 创意者更新时，你可以将这些设备加入到组织的 Azure Active Directory。 加入设备后，它们将自动升级到 Windows 10 商业版，这是你的 Microsoft 365 商业高级版 订阅的一部分。
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>全新或新升级的 Windows 10 专业版设备
 
@@ -89,7 +89,7 @@ ms.locfileid: "58570169"
   
 4. 4.在" **设置工作或学校帐户**"对话框的" **备用操作**"下，选择" **将此设备加入 Azure Active Directory**"。
   
-   ![单击"加入此设备"以Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![单击"加入此设备"Azure Active Directory。](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
@@ -107,7 +107,7 @@ ms.locfileid: "58570169"
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
-若要验证同步状态，请在"访问工作或学校"设置，选择 **"连接到** _  "区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
+若要验证同步状态，请在"访问工作或学校"页面上设置，选择 **"连接到** _  "区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
   
 在" **同步状态"** 页面上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。
   

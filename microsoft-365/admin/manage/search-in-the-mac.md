@@ -18,15 +18,15 @@ search.appverid:
 - MOE150
 description: 了解如何使用管理中心中的搜索功能获得更快速的结果。
 ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170398"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中搜索
 
-作为组织管理员Microsoft 365，您可以使用搜索来查找用户、执行操作、导航到不同的设置并阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
+作为组织管理员Microsoft 365，您可以使用搜索来查找用户、执行操作、导航到不同的设置和阅读文档。 借助新的搜索功能，搜索速度已提高，现在可以从管理中心的每一页进行搜索。 搜索框已移动到管理中心顶部的横幅区域。 可以使用 **Alt+S 快捷方式从** 任何页面使用搜索。
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot： Search bar in the Microsoft 365 管理中心":::
 
@@ -34,17 +34,17 @@ ms.locfileid: "58566984"
 
 以下各节介绍管理中心中可搜索的不同区域和类别。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你需要是管理员才能在管理中心进行搜索。 搜索结果的范围为登录用户具有的管理员权限。 例如，SharePoint管理员在管理中心中看不到区域或类别，他们将不会在搜索中看到它。
 
 ## <a name="users"></a>用户
 
-用户可以通过姓名、姓氏显示名称名字、用户名、主电子邮件地址或电子邮件别名来找到。 选择用户的名称编辑以编辑用户的详细信息。
+用户可以通过用户名、姓氏显示名称名字、用户名、主电子邮件地址或电子邮件别名来找到。 选择用户的名称编辑以编辑用户的详细信息。
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot： Search for a user Felix Henderson":::
 
-如果选择其名称旁边的三个点 (其他) 菜单，可以重置其密码。
+如果您选择三个点 (名称) 菜单上的更多操作，可以重置其密码。
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot： User search with the option to reset password from search result":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "58566984"
 
 ## <a name="actions"></a>操作
 
-您可以在 M365 管理中心中搜索"操作"类别包含经常使用的操作。 将操作视为系统中的动作。 例如，您还可以从任何页面搜索"重置密码"，然后为用户重置一个或多个密码。 可以搜索"删除用户"，然后从"删除用户"页删除该用户。
+您可以在 M365 管理中心中搜索"操作"类别包含经常使用的操作。 将操作视为系统中的动作。 例如，您还可以从任何页面搜索"重置密码"，然后为用户重置一个或多个密码。 可以搜索"删除用户"，然后从"删除用户"页中删除该用户。
 
 :::image type="content" source="../../media/search-for-actions-mac.png" alt-text="Screenshot： Search results showing actions you can perform in the admin center":::
 

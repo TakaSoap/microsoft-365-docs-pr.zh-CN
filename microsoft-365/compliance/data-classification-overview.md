@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
 ms.openlocfilehash: 41dda8573b66fa217fb92b0ee179de2cad9bc861
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567468"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169667"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 

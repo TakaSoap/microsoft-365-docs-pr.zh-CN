@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 17b0bdacfe745788fc4da24d1622142b2e4bb91519947a859dee43b0677ec5c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1b799e976e5c2b5a7d500fdf69d996671c29ea38
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171215"
 ---
 # <a name="contact-support-for-curacao"></a>联系库拉索的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53821267"
 ## <a name="phone-number"></a>电话号码
 +1 377 302 1308
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

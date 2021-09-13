@@ -17,11 +17,11 @@ f1.keywords:
 description: 数据移动是 Microsoft 将租户的服务和关联数据移动到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170997"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -30,7 +30,7 @@ ms.locfileid: "58394392"
 > [!NOTE]
 > 对于每个服务，移动在不同的时间发生。 因此，你将在不同时间看到描述的每个服务的缩减功能。 
   
-观看Microsoft 365消息中心，确认每个聊天服务、Exchange Online、SharePoint Online 和Teams移动完成。 如下表所示，注册期结束后最多可能需要 24 个月才能完成将核心客户数据移动到新的数据中心地理位置。   
+观看Microsoft 365消息中心确认每个聊天服务、Exchange Online、SharePoint Online 和Teams移动完成。 如下表所示，注册期结束后最多可能需要 24 个月才能完成将核心客户数据移动到新的数据中心地理位置。   
 
 |**具有注册国家/地区的客户**|**完成的所有移动**|
 |:-----|:-----|
@@ -54,12 +54,12 @@ ms.locfileid: "58394392"
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>在 Web Access 中打开Outlook文件夹"
 
-某些用户从另一个邮箱打开共享邮件文件夹 (该邮箱具有使用"共享文件夹"功能在 Outlook Web Access 中对) 的读取或写入权限。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
+某些用户从另一个邮箱打开共享邮件文件夹 (该邮箱具有对) Web Access 中的 Outlook 的读取或写入权限（使用"共享文件夹"功能）。 下表介绍了在邮箱移动过程中对共享文件夹的访问权限的工作方式。 请注意，对共享邮箱具有完全权限的用户可以在移动过程中使用 Outlook Web Access 打开邮箱。 
   
 |**配置**|**说明**|
 |:-----|:-----|
 |用户对另一个邮箱具有邮箱文件夹权限  <br/> |可能有限。  <br/> 如果用户 A 和邮箱 B 在租户移动过程中不在同一地理位置，则如果用户 A 仅对邮箱 B 中的特定文件夹具有权限，则用户 A 无法打开 Outlook Web Access 中的邮箱 B 文件夹。  <br/> 若要添加共享文件夹，请在左侧导航面板中右键单击用户名，然后选择"**添加共享文件夹"。**  <br/> |
-|对另一个邮箱具有完全邮箱权限的用户  <br/> |完全支持。  <br/> 如果用户 A 具有对邮箱 B 的"完全访问"权限，则用户 A 可以单击 Outlook Web Access 中左侧导航面板中的共享文件夹，打开一个显示邮箱 B 的窗口。 用户可以在移动过程中使用 Outlook Web Access 打开共享邮箱，而不会造成任何负面影响。 此限制仅适用于邮箱中的文件夹级共享。           |
+|对另一个邮箱具有完全邮箱权限的用户  <br/> |完全支持。  <br/> 如果用户 A 具有对邮箱 B 的"完全访问"权限，则用户 A 可以单击 Outlook Web Access 中左侧导航面板中的共享文件夹，打开一个显示邮箱 B 的窗口。 用户可以在移动过程中使用 Outlook Web Access 打开共享邮箱，而没有任何负面影响。 此限制仅适用于邮箱中的文件夹级共享。           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -81,13 +81,13 @@ ms.locfileid: "58394392"
 
 - 视频数据移动所花的时间比在 SharePoint Online 中移动内容的时间长。
     
-- 移动 SharePoint Online 内容后，将会有一个无法播放视频的时间框架。
+- 移动 SharePoint Online 内容后，将存在一个无法播放视频的时间框架。
     
 - 我们将从以前的数据中心删除转换代码的副本，并再次将其转码到新数据中心。
     
 ### <a name="search"></a>搜索
 
-在移动 SharePoint Online 数据的过程中，我们会将搜索索引和搜索设置迁移到新位置。 在 **我们将你的** SharePoint Online 数据移动完成之前，我们将继续从原始位置的索引为用户提供服务。 在新位置中，搜索将在我们移动完你的联机数据后自动开始SharePoint爬网。 从现在起，我们将从迁移的索引中为用户提供服务。 迁移后对内容所做的更改不会包含在迁移索引中，直到爬网选取它们。 大多数客户不会注意到，完成移动 SharePoint Online 数据后，结果新鲜度较低，但一些客户在前 24-48 小时内体验的新鲜度可能会降低 
+在移动 SharePoint Online 数据的过程中，我们会将搜索索引和搜索设置迁移到新位置。 完成你的联机 **数据** 移动SharePoint，我们将继续从原始位置的索引为用户提供服务。 在新位置中，搜索将在我们移动完你的联机数据后自动开始SharePoint爬网。 从现在起，我们将从迁移的索引中为用户提供服务。 迁移后对内容所做的更改不会包含在迁移索引中，直到爬网选取它们。 大多数客户不会注意到，完成移动 SharePoint Online 数据后，结果新鲜度较低，但一些客户在前 24-48 小时内体验的新鲜度可能会降低 
   
 以下搜索功能受到影响：
   
@@ -112,11 +112,11 @@ ms.locfileid: "58394392"
 - Teams聊天消息，包括私人消息和频道消息。
 - Teams聊天中使用的图像。
 
-Teams文件存储在 SharePoint Online 中Teams聊天OneDrive for Business。 语音邮件、日历、聊天历史记录和联系人存储在Exchange Online。 在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for Business 已由本地数据中心地理位置的客户使用，并且也是符合条件的客户国家/地区 Microsoft 365 迁移计划的一部分。
+Teams文件存储在 SharePoint Online 中，Teams聊天文件存储在 OneDrive for Business。 语音邮件、日历、聊天历史记录和联系人存储在Exchange Online。 在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for Business 已由本地数据中心地理位置的客户使用，并且也是符合条件的客户国家/地区 Microsoft 365 迁移计划的一部分。
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business移动不再可用。  [Skype for Business Online 将于](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日停用。 此后，服务将无法再访问。 
+Skype for Business移动不再可用。  [Skype for Business Online 将于](/lifecycle/announcements/skype-for-business-online-retirement)2021 年 7 月 31 日停用。 在此之后，将无法再访问该服务。 
   
 ## <a name="related-topics"></a>相关主题 
  

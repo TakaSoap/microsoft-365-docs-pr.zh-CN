@@ -24,30 +24,30 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 按照以下步骤从以前的员工Microsoft 365许可证。
-ms.openlocfilehash: 6ce4a3f72dac806e2b5587234a8e7cfb0fb24a2ca0dcf95df608bdd5ce23c6fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 按照以下步骤删除Microsoft 365员工授予的许可证。
+ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169919"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>步骤 6 - 删除Microsoft 365员工的许可证
 
 如果某人离开组织后不想支付许可证费用，则需要删除其Microsoft 365许可证，然后从订阅中删除。 如果不删除许可证，可以将许可证分配给其他用户。
   
-删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档将从 Microsoft 365 中永久删除，并且无法恢复。
+删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档除外）将从 Microsoft 365 中永久删除，且无法恢复。
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要阻止的员工的姓名，然后选择"许可证 **和应用"** 选项卡。
 3. 清除要删除 (许可证) 复选框，然后选择"保存 **更改"。**
 
-**若要在聘用** 其他人之前减少你支付的许可证数量，请执行以下步骤：
+**若要在聘用其他人** 之前减少你支付的许可证数量，请执行以下步骤：
 
 1. 在管理中心，转到" **帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">""产品"页面</a> ，然后选择" **产品"** 选项卡。
 2. 选择要从中删除许可证的订阅。
 3. 在详细信息页面上，选择删除 **许可证**。
-4. 在"**删除许可证"** 窗格中的"新数量"下的"许可证总数"框中，输入此订阅的许可证总数。 例如，如果你有 25 个许可证，并且想要删除其中一个许可证，请输入 24。
+4. 在"**删除许可证"** 窗格中的"新数量"下的"许可证总数"框中，输入此订阅的许可证总数。 例如，如果你有 25 个许可证，并且你想要删除其中一个许可证，请输入 24。
 5. 选择“**保存**”。
 
 向 [企业添加其他人](add-users.md) 时，系统会提示你同时购买许可证，只需一个步骤！

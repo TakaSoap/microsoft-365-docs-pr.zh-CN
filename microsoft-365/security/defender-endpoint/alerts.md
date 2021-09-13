@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508246"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170517"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "58508246"
 |[获取警报](get-alert-info-by-id.md)|[提醒](alerts.md)|获取单个 [alert](alerts.md) 对象。|
 |[列出警报](get-alerts.md)|[警报](alerts.md) 集合|列出 [警报](alerts.md) 集合。|
 |[更新警报](update-alert.md)|[提醒](alerts.md)|更新特定 [警报](alerts.md)。|
-|[批更新通知](batch-update-alerts.md)||更新一批 [警报](alerts.md)。|
+|[批量更新警报](batch-update-alerts.md)||更新一批 [警报](alerts.md)。|
 |[创建警报](create-alert-by-reference.md)|[提醒](alerts.md)|根据从高级搜寻 获取的事件数据 [创建警报](run-advanced-query-api.md)。|
 |[列出相关域](get-alert-related-domain-info.md)|域集合|列出与警报关联的 URL。|
 |[列出相关文件](get-alert-related-files-info.md)|[文件](files.md) 集合|列出 [与](files.md) 警报关联的文件 [实体](alerts.md)。|
@@ -80,7 +80,7 @@ ms.locfileid: "58508246"
 |mitreTechniques|String|Mitre Enterprise技术 ID。|
 |relatedUser|String|与特定警报相关的用户的详细信息。|
 |severity|枚举|警报的严重性。 可能的值包括："UnSpecified"、"Informational"、"Low"、"Medium"和"High"。|
-|状态|枚举|指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。|
+|status|枚举|指定警报的当前状态。 可能的值包括："Unknown"、"New"、"InProgress"和"Resolved"。|
 |classification|Nullable Enum|警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。|
 |确定|Nullable Enum|指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。|
 |“类别”|String|警报的类别。|

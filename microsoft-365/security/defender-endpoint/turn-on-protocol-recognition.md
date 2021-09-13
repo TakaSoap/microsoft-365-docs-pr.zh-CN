@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 1b5e85e61ce9335e730c7b8b5bc3406c1b9d40e8be2b591434e7b06661444238
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 890303a15618a0318db0421c9c80f270583e19bf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162247"
 ---
 # <a name="turn-on-protocol-recognition"></a>打开协议识别 
 
@@ -37,7 +37,7 @@ ms.locfileid: "53889060"
 
 1. 在组策略管理终结点上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. 转到计算机 **配置**  >  **管理模板**  >  **Windows组件**  >  **Microsoft Defender 防病毒**  >  **网络检查系统 。** 
+2. 转到计算机 **配置**  >  **网络检查系统**  >  **Windows管理Microsoft Defender 防病毒**  >    >  **组件**。 
 
 3. 选择 **协议识别**。 默认情况下，启用此策略。 如果设置为 **"未配置"，** 则启用定义停用。 
 
@@ -48,7 +48,7 @@ ms.locfileid: "53889060"
 6. 部署更新的组策略对象。 请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。 
+> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用](/mem/intune/configuration/group-policy-analytics)组策略分析分析Microsoft Endpoint Manager组策略对象。 
   
 ## <a name="related-articles"></a>相关文章
 

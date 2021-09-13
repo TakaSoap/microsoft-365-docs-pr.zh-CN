@@ -20,11 +20,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ed8d433cd997166ed7fd96034f91eb117b9309cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170892"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365 Microsoft Defender for Endpoint 一起使用
 
@@ -33,7 +33,7 @@ ms.locfileid: "58558574"
 
 [Microsoft Defender for Office 365](defender-for-office-365.md)可以配置为与[Microsoft Defender for Endpoint 一起运行](/windows/security/threat-protection)。
 
-将 Microsoft Defender for Office 365 Microsoft Defender for Endpoint 可帮助你的安全操作团队在用户设备存在风险时快速监视和采取措施。 例如，启用集成后，安全运营团队将能够看到受检测到的电子邮件潜在影响的设备，以及 Microsoft Defender for Endpoint 中为这些设备生成的最近警报数。
+将 Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 集成可帮助你的安全操作团队在用户设备存在风险时快速监视和采取措施。 例如，启用集成后，安全运营团队将能够看到受检测到的电子邮件潜在影响的设备，以及 Microsoft Defender for Endpoint 中为这些设备生成的最近警报数。
 
 下图描述了启用 Microsoft Defender  for Endpoint 集成后"设备"选项卡的外观：
 
@@ -42,7 +42,7 @@ ms.locfileid: "58558574"
 在此例中，可以看到检测到的电子邮件的收件人有四个设备，一个设备具有警报。 单击设备的链接将在之前 Microsoft Defender[](../defender-endpoint/microsoft-defender-security-center.md)安全Microsoft 365 Defender门户 (打开其) 。
 
 > [!TIP]
-> the Microsoft 365 Defender portal replaces the Microsoft Defender 安全中心. 请参阅[Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)。
+> Microsoft 365 Defender门户将替换Microsoft Defender 安全中心。 请参阅[Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)。
 
 ## <a name="requirements"></a>要求
 
@@ -58,11 +58,11 @@ ms.locfileid: "58558574"
 
 1. 转到"Microsoft 365 Defender门户 [https://security.microsoft.com](https://security.microsoft.com) () 并登录。
 
-2. 转到"**电子邮件&协作** \> **资源管理器"。** 
+2. 转到电子邮件 **&协作** \> **资源管理器。** 
 
 3. 在 **"资源管理器**"页上的屏幕右上角，选择 **"MDE 设置"。**
 
-3. 在出现的 **Microsoft Defender 终结点** 连接飞出区中，连接"适用于终结点的 Microsoft **Defender** (切换"。) ，然后选择"关闭 ![ ](../../media/scc-toggle-on.png) **"。**
+3. 在出现的 **Microsoft Defender for Endpoint** 连接飞出区中，连接 Microsoft Defender for **Endpoint** (切换"打开。) 然后选择"关闭 ![ ](../../media/scc-toggle-on.png) **"。**
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE 连接。":::
 
@@ -70,7 +70,7 @@ ms.locfileid: "58558574"
 
 5. 在打开 **的"终结点**"页上，选择"**高级功能"。**
 
-6. 向下滚动到 **"Office 365** 智能"连接，然后打开 ![ " ("。) 。 ](../../media/scc-toggle-on.png)
+6. 向下滚动到Office 365 **智能** 连接，然后打开 ![ " ("。) 。 ](../../media/scc-toggle-on.png)
 
    完成后，选择保存 **首选项**。
 

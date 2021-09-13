@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: 要求混合工作者使用多重身份验证 (MFA) 登录。
 ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170879"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1 为使用 MFA 的混合工作者提高登录安全性
 

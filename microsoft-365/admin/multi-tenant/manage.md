@@ -22,15 +22,15 @@ search.appverid:
 - MOE150
 description: 了解如何使用租户切换器视图和多租户视图，这让你能够从单个位置管理租户。
 ms.openlocfilehash: 6dbad8dbfaa84d490983cd5eccaf5ecf5d6979e5
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170353"
 ---
 # <a name="multi-tenant-management"></a>多租户管理
 
-多租户管理提供了统一的管理形式，使Microsoft 365管理员能够从一个位置管理他们管理的所有租户。 如果你是管理多个租户的合作伙伴，你可以：
+多租户管理提供了统一的管理形式，允许Microsoft 365管理员从一个位置管理他们管理的所有租户。 如果你是管理多个租户的合作伙伴，你可以：
 
 - 在管理租户之间快速移动。
 - 跨多个租户评估服务运行状况、产品和计费。
@@ -38,7 +38,7 @@ ms.locfileid: "58393432"
 
 ## <a name="move-between-tenants"></a>在租户之间移动
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>中，选择组织名称。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心</a>中，选择"组织名称"。
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="多租户切换器。":::
 
@@ -48,7 +48,7 @@ ms.locfileid: "58393432"
 
 ## <a name="view-all-tenants-page"></a>查看所有租户页面
 
-1. 在Microsoft 365 管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">中</a>，在左侧导航中，选择"**所有租户"。**
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"</a>左侧导航中，选择"**所有租户"。**
 - 在 **"所有租户"** 页面上，可以
   - 评估服务运行状况
   - 查看许可证使用情况

@@ -24,16 +24,16 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: 在通讯组中创建通讯组或Microsoft 365 管理中心以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
-ms.openlocfilehash: 2aa7ded4fe29a43d2b1f0d3282467e8eaba6484d2ab40df99bd81f4bbe348bb6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822147"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170300"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在通讯组中Microsoft 365 管理中心
   
-当您希望向一组人员发送电子邮件而无需键入每个收件人的姓名时，通讯组 (通讯组) 按特定讨论主题 (例如"Marketing") 或按共享需要他们经常通信的常见工作的用户组织。 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
+在您希望向一组人员发送电子邮件而无需键入每个收件人的姓名时，通讯组 (通讯组) 按特定讨论主题 (例如"Marketing") 或按共享需要他们经常通信的常见工作的用户组织。 通讯组列表还提供一种自动向多个电子邮件地址转发电子邮件的方式。
 
 通讯组有时称为通讯组列表。
   
@@ -61,7 +61,7 @@ ms.locfileid: "53822147"
     
     找不到需要的应用？ 从应用启动器中，选择 **"** 所有应用"以查看可用应用的字母列表。 可在此处搜索特定应用。 
     
-2. 在 **左侧** \> **导航窗格中** 选择"组组"，然后选择"**添加组"。** 
+2. 选择 **左侧** \> **导航** 窗格中的"组组"，然后选择"**添加组"。** 
       
 3. 在"**选择组类型"字段中**，选择"**分发"，** 然后选择"下一 **步"。**
   
@@ -78,5 +78,5 @@ ms.locfileid: "53822147"
 ## <a name="related-content"></a>相关内容
 
 [用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) \
-[创建、编辑或删除](../email/create-edit-or-delete-a-security-group.md)安全组，Microsoft 365 管理中心 (文章) \
+[Create， edit， or delete a security group in the Microsoft 365 管理中心](../email/create-edit-or-delete-a-security-group.md) (article) \
 [创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）

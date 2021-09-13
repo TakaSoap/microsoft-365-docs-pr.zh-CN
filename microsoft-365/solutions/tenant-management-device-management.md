@@ -17,15 +17,15 @@ ms.custom:
 - Ent_Solutions
 description: 为租户部署正确的设备和应用管理Microsoft 365选项。
 ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171498"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 5. 适用于企业租户Microsoft 365应用的设备和应用管理
 
-Microsoft 365企业版包括以下功能：使用移动设备管理 (MDM) 和移动应用程序管理 (MAM) 帮助管理设备以及组织中这些设备上的) 。 你可以管理 iOS、Android、macOS 和 Windows设备，以保护对组织资源（包括数据）的访问。 例如，可以阻止向组织外部人员发送电子邮件，或将组织数据与工作者的个人设备中的个人数据隔离。
+Microsoft 365企业版包括以下功能：使用移动设备管理 (MDM) 和移动应用程序管理 (MAM) 帮助管理设备以及在这些设备上使用应用。 你可以管理 iOS、Android、macOS 和 Windows设备，以保护对组织资源（包括数据）的访问。 例如，可以阻止向组织外部人员发送电子邮件，或将组织数据与工作者的个人设备中的个人数据隔离。
 
 下面是验证和管理用户及其设备，以及他们使用本地和云生产力应用（如 Microsoft Teams） 的示例。
 
@@ -34,7 +34,7 @@ Microsoft 365企业版包括以下功能：使用移动设备管理 (MDM) 和移
 为了帮助你保护组织的资源，Microsoft 365企业版包括可帮助管理设备及其对应用的访问权限的功能。 设备管理有两个选项：
 
 - Microsoft Intune，它是一款全面的企业设备和应用管理解决方案。
-- 基本移动性和安全性，它是所有用于管理组织中设备的 Microsoft 365 产品中包含的 Intune 服务的子集。 有关详细信息，请参阅[Capabilities of Basic Mobility and Security。](../admin/basic-mobility-security/capabilities.md)
+- 基本移动性和安全性，这是所有用于管理组织中设备的 Microsoft 365 产品中包含的 Intune 服务的子集。 有关详细信息，请参阅[Capabilities of Basic Mobility and Security。](../admin/basic-mobility-security/capabilities.md)
 
 如果已Microsoft 365 E3 E5，则应该使用 Intune。
 
@@ -42,7 +42,7 @@ Microsoft 365企业版包括以下功能：使用移动设备管理 (MDM) 和移
 
 使用[Microsoft Intune](/mem/intune/fundamentals/planning-guide) MDM 或 MAM 管理对组织的访问权限。 MDM 是用户在 Intune 中"注册"其设备时。 注册设备后，该设备即为托管设备，可接收组织的策略、规则和设置。 例如，你可以安装特定应用、创建密码策略、安装 VPN 连接等。
 
-具有其自己的个人设备的用户可能不希望注册其设备或由 Intune 和组织的策略进行管理。 但仍需要保护组织的资源和数据。 在此方案中，可以使用 MAM 保护应用。 例如，可以使用 MAM 策略，该策略要求用户在访问设备上SharePoint PIN。
+具有其自己的个人设备的用户可能不希望注册其设备或由 Intune 和组织的策略进行管理。 但仍需要保护组织的资源和数据。 在此方案中，可以使用 MAM 保护应用。 例如，可以使用 MAM 策略，要求用户在访问设备上SharePoint PIN。
 
 你还将确定如何管理个人设备和组织拥有的设备。 你可能希望以不同方式处理设备，具体取决于设备的用途。
 
@@ -66,7 +66,7 @@ Microsoft 提供了一组用于标识 [和设备访问的配置](../security/off
 
 ## <a name="results-of-step-5"></a>步骤 5 的结果
 
-对于 Microsoft 365 租户的设备和应用管理，你已确定 Intune 设置和策略，以验证和限制用户、其设备以及本地和云生产力应用的使用。
+对于 Microsoft 365 租户的设备和应用管理，你已确定 Intune 设置和策略，以验证和限制用户及其设备，以及用户对本地和云工作效率应用的使用。
 
 下面是一个租户示例，其中突出显示了新元素的 Intune 设备和应用管理。
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 469e01c26cd5a9a895abb0e4ea1f386fc374db67416479f147536050d32787e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c67a12be31a137acffed98bb38d6d1e7ab7fe648
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170767"
 ---
 # <a name="payment-information-for-cameroon"></a>喀麦隆的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
-**帐户号：12510049**  
+**帐号：12510049**  
 **帐户名称：** MICROSOFT

@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 使用威胁资源管理器或 Microsoft 365 Defender门户中的实时检测来有效调查和响应威胁。
+description: 在威胁门户中，使用威胁资源管理器Microsoft 365 Defender实时检测，以有效地调查和响应威胁。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: de652c8a93e1b51e5184f6de2d1076885de5d4f7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162182"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 威胁资源管理器中的威胁搜寻
 
@@ -33,16 +33,16 @@ ms.locfileid: "58563350"
 - [威胁搜寻体验改进](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> 这是威胁资源管理器 (**资源管理器) 、** 电子邮件安全性、资源管理器和实时检测基础知识的 **3** 篇文章系列中的一部分 **(如** 工具之间的差异以及操作它们所需的权限) 。 本系列中的其他两篇文章 [是使用威胁](email-security-in-microsoft-defender.md) 资源管理器和威胁资源管理器的电子邮件安全性以及实时检测 [基础知识](real-time-detections.md)。
+> 这是威胁资源管理器 (**资源管理器) 、** 电子邮件安全、资源管理器和实时检测基础知识的 **3** 篇文章系列的一 **部分 (如** 工具之间的差异以及操作它们所需的权限) 。 本系列中的其他两篇文章 [是使用威胁](email-security-in-microsoft-defender.md) 资源管理器和威胁资源管理器的电子邮件安全性以及实时检测 [基础知识](real-time-detections.md)。
 
 
 **适用对象**
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果你的组织拥有适用于 Office 365 的[Microsoft Defender，](defender-for-office-365.md)并且你[](#required-licenses-and-permissions)拥有权限，可以使用资源管理器或实时检测来检测和修正威胁。 
+如果你的组织拥有适用于 Office 365 的[Microsoft Defender，](defender-for-office-365.md)并且你拥有[](#required-licenses-and-permissions)权限，可以使用资源管理器或实时检测来检测和修正威胁。 
 
-在Microsoft 365 Defender门户 () ，转到"电子邮件&协作"，然后选择" <https://security.microsoft.com> **资源管理器**"或"**实时检测"。** 若要直接对页面执行，请使用 <https://security.microsoft.com/threatexplorer> 或 <https://security.microsoft.com/realtimereports>
+在Microsoft 365 Defender门户 () ，转到"电子邮件& <https://security.microsoft.com> **协作**"，然后选择"**资源管理器**"或 **"实时检测"。** 若要直接对页面执行，请使用 <https://security.microsoft.com/threatexplorer> 或 <https://security.microsoft.com/realtimereports>
 
 使用这些工具，你可以：
 
@@ -57,7 +57,7 @@ ms.locfileid: "58563350"
 
 在 Microsoft Defender for Office 365，有两个订阅计划：计划 1 和计划 2。 手动操作的威胁搜寻工具存在于两个计划中，名称不同，功能不同。
 
-Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理器 *(的* 子集，在计划 2 中也称为 *资源管理器) 搜寻* 工具。 在本系列文章中，大多数示例都是使用完整的威胁资源管理器创建的。 管理员应在实时检测中测试任何步骤，以查看其应用位置。
+Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理器 *(* 的子集，在计划 2 中也称为 *资源管理器*) 搜寻工具。 在本系列文章中，大多数示例都是使用完整的威胁资源管理器创建的。 管理员应在实时检测中测试任何步骤，以查看其应用位置。
 
 转到资源管理器 **后，** 默认情况下，你将到达恶意软件页面，但使用视图下拉列表来熟悉你的选项。  如果你搜寻网络钓鱼，或进入威胁活动，请选择这些视图。
 
@@ -72,14 +72,14 @@ Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理�
 可以在层中考虑在资源管理器中精简焦点或实时检测。 第 **一个视图**。 第二个可以视为已 *筛选的焦点*。 例如，可以通过记录类似以下的决策来重新跟踪查找威胁时所执行的步骤：为了在资源管理器中查找问题，我选择了"具有收件人筛选器焦点的 **恶意软件视图"。** 这样一来，可以更轻松地重新跟踪步骤。
 
 > [!TIP]
-> 如果 Sec Ops 使用 **标记** 来标记他们认为高价值目标的帐户，他们可以做出选择，如具有标记筛选器焦点的网络钓鱼 (包括日期范围（ *如果使用*) ）。 这将显示在一个时间范围内针对其高价值用户目标的任何网络钓鱼 (例如，当某些网络钓鱼攻击针对其行业组织发生很多事件时) 。
+> 如果 Sec Ops 使用 **标记** 来标记他们认为高价值目标的帐户，他们可以做出选择，如具有标记 *筛选器焦点* 的网络钓鱼 (包括日期范围（如果使用) ）。 这会显示在一个时间范围内针对其高价值用户目标的任何网络钓鱼 (例如，当某些网络钓鱼攻击针对其行业组织发生很多事件时) 。
 
 可以使用日期范围控件对日期范围进行精简。 你可以在此处查看"恶意软件"视图中 **的** 资源管理器，具有 **检测技术** 筛选器焦点。 但高级筛选器按钮可让Sec Ops 团队深入了解。
 
 > [!div class="mx-imgBorder"]
 > ![威胁资源管理器中的高级筛选器。](../../media/advanced-filter.png)
 
-单击 **"高级** "筛选器将弹出一个面板，该面板允许 Sec Ops 执行者自己生成查询，允许他们包含或排除他们需要查看的信息。 "资源管理器"页上的图表和表格都将反映其结果。
+单击 **"高级** "筛选器将弹出一个面板，该面板允许 Sec Ops 执行者自己生成查询，允许他们包含或排除他们需要查看的信息。 资源管理器页面上的图表和表格都将反映其结果。
 
 > [!div class="mx-imgBorder"]
 > ![查询的结果。](../../media/threat-explorer-chart-table.png)
@@ -95,7 +95,7 @@ Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理�
 在同一方面，请确保测试你的显示选项。 不同的访问群体将很好地响应相同数据的不同演示文稿。 对于一些查看者，电子邮件来源地图可以显示威胁是普遍出现还是比它旁边的"宣传活动显示"选项更快速。 Sec 操作可充分利用这些显示，以最好地突出安全性和保护需求，或用于稍后比较，以演示其操作的有效性。
 
 > [!div class="mx-imgBorder"]
-> ![电子邮件来源映射。](../../media/threat-explorer-email-origin-map.png)
+> ![电子邮件源映射。](../../media/threat-explorer-email-origin-map.png)
 
 > [!div class="mx-imgBorder"]
 > ![市场活动显示选项。](../../media/threat-explorer-campaign-display.png)
@@ -104,7 +104,7 @@ Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理�
 
 当看到可疑电子邮件时，单击该名称以展开右侧飞出。 此处提供了允许 Sec Ops 查看 [电子邮件实体页面的](mdo-email-entity-page.md) 横幅。
 
-电子邮件实体页面将可以在详细信息、附件、**设备** 下找到的内容汇集在一起，但包含组织性较详细的数据。 这包括 DMARC 结果、带有复制选项的电子邮件头的纯文本显示、安全触发的附件裁定信息以及丢弃的 (的文件等内容，包括已联系的 IP 地址以及页面或文件的屏幕截图) 。 还将列出 URL 及其裁定，并报告类似的详细信息。
+电子邮件实体页面将可以在详细信息、附件、**设备** 下找到的内容汇集在一起，但包含组织性较详细的数据。 这包括 DMARC 结果、带复制选项的电子邮件头的纯文本显示、安全触发的附件裁定信息以及丢弃 (的文件等内容，包括已联系的 IP 地址以及页面或文件) 的屏幕截图。 还将列出 URL 及其裁定，并报告类似的详细信息。
 
 当您进入此阶段时，电子邮件实体页面将对于最后一步（修正）*至关重要*。
 
@@ -112,7 +112,7 @@ Defender for Office 365 Plan 1 *使用实时* 检测，它是威胁资源管理�
 > ![电子邮件实体页面。](../../media/threat-explorer-email-entity-page.png)
 
 > [!TIP]
-> 若要了解有关"分析"选项卡 ("分析"选项卡) （包括触发的附件的结果、包含的 URL 的结果和安全电子邮件预览）的详细信息，[请单击此处。](mdo-email-entity-page.md)
+> 若要了解有关"分析"选项卡)  (中显示的内容丰富的电子邮件实体页面的详细信息，包括触发的附件的结果、包含的 URL 的结果和安全的电子邮件预览，[请单击此处。](mdo-email-entity-page.md)
 
 > [!div class="mx-imgBorder"]
 > ![电子邮件实体页面的"分析"选项卡。](../../media/threat-explorer-analysis-tab.png)
@@ -124,7 +124,7 @@ Sec Ops 人员确定电子邮件是威胁后，下一个资源管理器或实时
 > [!div class="mx-imgBorder"]
 > ![威胁资源管理器中的"操作"按钮。](../../media/threat-explorer-email-actions-button.png)
 
-在此，分析员可以执行将邮件报告为垃圾邮件、网络钓鱼或恶意软件、联系收件人等操作，或执行进一步调查，包括触发自动调查和响应 (或 AIR) playbook (（如果你有计划 2) ）。 或者，也可以将邮件报告为干净。
+在此，分析员可以执行将邮件报告为垃圾邮件、网络钓鱼或恶意软件、联系收件人等操作，或者执行进一步调查，包括触发自动调查和响应 (或 AIR) playbook (（如果你有计划 2) ）。 或者，也可以将邮件报告为干净。
 
 > [!div class="mx-imgBorder"]
 > !["操作"下拉列表。](../../media/threat-explorer-email-actions-drop-down.png)
@@ -145,18 +145,18 @@ Sec Ops 人员确定电子邮件是威胁后，下一个资源管理器或实时
 
 ### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>扩展资源管理器 (和实时检测) 试用租户的数据保留和搜索限制
 
-作为此更改的一部分，分析员将能够搜索和筛选电子邮件数据，从 (威胁资源管理器中的) 天增加的 30 天，以及针对 Office P1 和 P2 试用租户的 Defender 实时检测。 这不会影响 P1 和 P2 E5 客户的任何生产租户，其中保留默认值已是 30 天。
+作为此更改的一部分，分析员将能够搜索和筛选 (在威胁资源管理器中为) 增加的 30 天的电子邮件数据，以及针对 Office P1 和 P2 试用租户的 Defender 实时检测。 这不会影响 P1 和 P2 E5 客户的任何生产租户，其中保留默认值已是 30 天。
 
 ### <a name="updated-export-limit"></a>已更新的导出限制
 
-现在可以从威胁资源管理器导出的电子邮件记录数为 200，000， (9990) 。 可导出的列集保持不变。
+现在可以从威胁资源管理器导出的电子邮件记录数为 200，000， (为 9990) 。 可导出的列集保持不变。
 
 ### <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
 
 > [!NOTE]
 > 用户标记功能在预览版中，可能并非对所有人都可用。 此外，预览可能会更改。 有关发布计划的信息，请查看Microsoft 365路线图。
 
-用户标记标识 Microsoft Defender for Office 365 中的特定Office 365。 有关标记（包括许可和配置）的信息，请参阅 [用户标记](user-tags.md)。
+用户标记标识 Microsoft Defender for Office 365 中的特定用户组。 有关标记（包括许可和配置）的信息，请参阅 [用户标记](user-tags.md)。
 
 在威胁资源管理器中，可以在以下体验中查看有关用户标记的信息。
 
@@ -183,7 +183,7 @@ Sec Ops 人员确定电子邮件是威胁后，下一个资源管理器或实时
 > [!div class="mx-imgBorder"]
 > ![电子邮件详细信息标记。](../../media/tags-flyout.png)
 
-URL 单击飞出也显示标记信息。 若要查看，请转到"网络钓鱼"或"所有电子邮件"视图> **URL** 或 **URL 单击** "选项卡。选择单个 URL 飞出，以查看有关该 URL 的单击的其他详细信息，包括与该单击关联的任何标记。
+URL 单击飞出也显示标记信息。 若要查看它，请转到钓鱼邮件或所有电子邮件视图> **URL** 或 **URL** 单击选项卡。选择单个 URL 飞出以查看有关该 URL 的单击的其他详细信息，包括与该单击关联的任何标记。
 
 ### <a name="updated-timeline-view"></a>更新的时间线视图
 
@@ -205,7 +205,7 @@ URL 单击飞出也显示标记信息。 若要查看，请转到"网络钓鱼"�
 
 ### <a name="exchange-transport-rules"></a>Exchange传输规则
 
-安全运营团队将能够在"电子邮件"网格Exchange查看 (邮件流规则) 邮件流规则。 选择 **网格中的**"列"选项，然后 **Exchange"添加** 传输规则"。 the Exchange transport rules option is also visible on the **Details** flyout in the email.
+安全运营团队将能够在"电子邮件"网格Exchange查看 (邮件流规则) 邮件流规则。 选择 **网格中的** 列选项，然后Exchange **添加** 传输规则。 the Exchange transport rules option is also visible on the **Details** flyout in the email.
 
 将显示应用于邮件的传输规则的名称和 GUID。 分析员将能够使用传输规则的名称搜索邮件。 这是 CONTAINS 搜索，这意味着您也可以执行部分搜索。
 
@@ -219,7 +219,7 @@ URL 单击飞出也显示标记信息。 若要查看，请转到"网络钓鱼"�
 > - Exchange Online仅 - 传输规则：全部
 > - Exchange Online仅 - View-Only配置：全部
 >
-> 在电子邮件网格、详细信息飞出控件和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
+> 在电子邮件网格、"详细信息"飞出控件和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
 >
 > > [!div class="mx-imgBorder"]
 > > ![Exchange传输规则。](../../media/ETR_Details.png)
@@ -235,7 +235,7 @@ URL 单击飞出也显示标记信息。 若要查看，请转到"网络钓鱼"�
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-必须具有[Microsoft Defender for Office 365](defender-for-office-365.md)使用资源管理器或实时检测。
+你必须拥有[Microsoft Defender Office 365](defender-for-office-365.md)使用资源管理器或实时检测。
 
 - 资源管理器包含在计划 2 Office 365 Defender 中。
 - 实时检测报告包含在计划 1 的 Defender Office 365中。
@@ -245,9 +245,9 @@ URL 单击飞出也显示标记信息。 若要查看，请转到"网络钓鱼"�
 
 - 对于 Microsoft 365 Defender 门户：
   - 组织管理
-  - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
-  - 安全信息读取者
-- 对于Exchange Online：
+  - 安全 (可以在管理中心管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
+  - 安全读取者
+- 例如Exchange Online：
   - 组织管理
   - 仅查看组织管理
   - 仅查看收件人
@@ -259,7 +259,7 @@ URL 单击飞出也显示标记信息。 若要查看，请转到"网络钓鱼"�
 - [Exchange Online 中的功能权限](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams 中检测到的恶意Microsoft Teams](mdo-for-spo-odb-and-teams.md)

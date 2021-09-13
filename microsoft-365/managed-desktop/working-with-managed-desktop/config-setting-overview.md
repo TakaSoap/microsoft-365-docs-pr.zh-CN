@@ -1,5 +1,5 @@
 ---
-title: 可配置的Microsoft 托管桌面
+title: 可配置Microsoft 托管桌面
 description: 有关可配置设置的信息Microsoft 托管桌面
 keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、设置、可配置设置
 ms.service: m365-md
@@ -9,26 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d10b64e357b1cabb0d0d999c14f38ede6d6e99b5740849475055e8d66435554
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171275"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>可配置的设置 - Microsoft 托管桌面
 
 Microsoft 托管桌面部署应用于由设备管理的所有设备的设置Microsoft 托管桌面。 有关详细信息，请参阅设备 [配置](../service-description/device-policies.md)。
 
-it 中的可配置Microsoft 托管桌面为 IT 管理员提供了一种自定义和部署其组织和业务需求所特有的设置的方法。 这些设置是设备配置设置和策略之外，由 Microsoft 托管桌面。  
+it admins Microsoft 托管桌面 settings in it admins to customize and deploy settings that are unique to their organization and business needs. 这些设置是设备配置设置和策略之外，由 Microsoft 托管桌面。  
 
 可配置的设置更改在云中进行，并应用于Microsoft 托管桌面部署组内的设备。 此过程类似于管理Microsoft 托管桌面定义和管理的设备配置设置和策略的更改的方式。 通过使用与部署更改Microsoft 托管桌面相同的过程，您可以使用现代 IT 管理实践继续推进组织。
 
 ## <a name="when-to-use-configurable-settings"></a>何时使用可配置设置？
 
-可以使用可配置设置几次。 
+有几次可以使用可配置设置。 
 
-载入过程 **–** Microsoft 托管桌面建议你在载入 Microsoft 托管桌面 服务时，或在载入大量设备（ (20 台或更多的设备）时自定义可配置) 。 在管理门户中配置Microsoft 托管桌面类别。 载入并有权访问管理门户后，可以决定要为组织自定义哪些设置类别，进行更改，部署阶段，然后部署更改。
+载入过程 **–** Microsoft 托管桌面建议你在载入 Microsoft 托管桌面 服务时或当你在 (20 台或更多的设备上载入大量设备时自定义可配置) 。 在管理门户中配置Microsoft 托管桌面类别。 载入并有权访问管理门户后，可以决定要为组织自定义哪些设置类别，进行更改，部署阶段，然后部署更改。
 
 **维护设置** - 定期查看设置并进行所需更新。 你可能需要进行更改以支持业务中的更改。   
 
@@ -36,8 +36,8 @@ it 中的可配置Microsoft 托管桌面为 IT 管理员提供了一种自定义
 
 你可以自定义以下可配置设置类别：
 - [桌面背景图片](config-setting-ref.md#desktop-background-picture)– 自定义桌面设备Microsoft 托管桌面图片。 
-- [浏览器起始页](config-setting-ref.md#browser-start-pages)– 添加要与浏览器Microsoft Edge。 请参阅浏览器起始页
-- [Enterprise站点列表](config-setting-ref.md#enterprise-mode-site-list-location)- 添加站点及其兼容性模式。 该列表上的网站将在 Internet Explorer。 
+- [浏览器起始页](config-setting-ref.md#browser-start-pages)- 添加要用于浏览器Microsoft Edge。 请参阅浏览器起始页
+- [Enterprise模式站点列表](config-setting-ref.md#enterprise-mode-site-list-location)– 添加站点及其兼容性模式。 该列表上的网站将在Internet Explorer。 
 - [受信任的站点](config-setting-ref.md#trusted-sites) – 添加受信任的站点并设置每个站点的安全区域。 
 - [代理站点例外](config-setting-ref.md#proxy) – 设置代理服务器地址号和端口号，并添加代理站点例外。
 
@@ -65,7 +65,7 @@ Microsoft 托管桌面利用组织的可配置设置时，建议遵循以下类�
 
 **步骤 5 - 跟踪更改** - 跟踪部署状态更改的进度。 对于每个设置，你可以：
 - **跟踪进度** – 部署更改后跟踪状态。 状态将更改为"正在进行 **"，** 然后是 **"完成"** 或"失败 **"。** 如果部署失败，将自动打开支持请求，Microsoft 托管桌面操作调查问题。  
-- **请参阅部署的版本** – 每个部署的更改都有一个版本号。
+- **请参阅部署的版本** - 每个部署的更改都有一个版本号。
 - **还原更改** – 还原更改将停止当前部署，并恢复所有组为部署到所有组的最后更改。 你将回滚到上一个已知良好的设置值。
 - **验证更改** - 部署完成后，验证更改已如预期应用。  
 

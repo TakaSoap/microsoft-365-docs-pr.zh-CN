@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 19016d254dbdcd169a83034f3b7f1d814a665b8108a67d09349ff7809a7ffc0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8aeebe64a5a9f95093e5433f72203e92451d4e94
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171195"
 ---
 # <a name="contact-support-for-lebanon"></a>联系黎巴嫩支持人员
 
@@ -32,7 +32,7 @@ ms.locfileid: "53896819"
 
 输入代码 7702
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 阿拉伯语：Sun-Thu 10 AM-6 PM

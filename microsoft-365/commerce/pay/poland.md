@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 43989baf0d6bcd66e6f332bce325e2c19d4ca42c638d2f596e6fc8e47e4bc7c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf8f08dc3932c60c18a0af724c7a186df06d247e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162105"
 ---
 # <a name="payment-information-for-poland"></a>波兰的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "53820791"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT

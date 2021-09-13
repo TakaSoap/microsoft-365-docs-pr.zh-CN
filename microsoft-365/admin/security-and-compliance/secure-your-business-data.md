@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 如何保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
 ms.openlocfilehash: 301aa152d462dc7fc712d4b6aa56f4a521463690
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170322"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务Microsoft 365的十大方法
 
@@ -39,9 +39,9 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 
 |*Number*|任务|Microsoft 365 商业标准版|Microsoft 365 商业高级版|
 |---|---|---|---|
-|1 |[设置多重身份验证](secure-your-business-data.md#setup)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[培训用户](secure-your-business-data.md#train)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[使用专用管理员帐户](secure-your-business-data.md#admin)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[设置多重身份验证](secure-your-business-data.md#setup)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[培训用户](secure-your-business-data.md#train)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[使用专用管理员帐户](secure-your-business-data.md#admin)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[提高邮件中恶意软件防护级别](secure-your-business-data.md#malware)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[防范勒索软件](secure-your-business-data.md#ransomware)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[停止电子邮件的自动转发](secure-your-business-data.md#forwarding)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -52,7 +52,7 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 
 如有 Microsoft 商业高级版，设置安全性并开始安全协作的最快方法是遵循此库中的指南：[面向小型企业和活动的 Microsoft 365](../../campaigns/index.md)。 此指南是与 Microsoft Defending Democracy 团队合作制定的，旨在保护所有小型企业客户免受老练黑客发起的网络威胁。
 
-开始之前，[请在安全中心](../../security/defender/microsoft-secure-score.md)Microsoft 365安全Microsoft 365安全分数。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
+开始之前，[请在安全中心](../../security/defender/microsoft-secure-score.md)Microsoft 365安全Microsoft 365安全分数。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 你可以获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
 
 ![Microsoft 安全分数的屏幕截图。](../../media/secure-score.png)
 
@@ -78,7 +78,7 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 4. 在页面底部，选择“**管理安全性默认值**”。
 5. 选择“**是**”启用安全性默认值，或选择“**否**”禁用安全性默认值，然后选择“**保存**”。
 
-为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅设置[两步验证以验证Microsoft 365。](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅设置两步验证[以验证Microsoft 365。](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 有关完整详细信息和完整建议，请参阅为用户设置 [多重身份验证](set-up-multi-factor-authentication.md)。
 
@@ -104,7 +104,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 ## <a name="3-use-dedicated-admin-accounts"></a>3：使用专用管理员帐户
 <a name="admin"> </a>
 
-用于管理管理环境的管理帐户Microsoft 365提升的权限。 这些是黑客和网络犯罪有价值的目标。 仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。 其他建议：
+用于管理你的管理环境的管理帐户Microsoft 365提升的权限。 这些是黑客和网络犯罪有价值的目标。 仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。 其他建议：
 
 - 请确保管理员帐户还针对多重身份验证进行设置。
 
@@ -115,7 +115,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4：提高邮件中恶意软件防护的级别
 <a name="malware"> </a>
 
-你的Microsoft 365环境包括恶意软件防护，但您可以通过阻止包含通常用于恶意软件的文件类型的附件来增强这种保护。 若要在电子邮件中加强恶意软件保护，请观看简短的 [培训视频](../../business-video/anti-malware.md)，或完成以下步骤：
+你的Microsoft 365环境包括恶意软件防护，但您可以通过阻止包含通常用于恶意软件的文件类型的附件来增强此保护。 若要在电子邮件中加强恶意软件保护，请观看简短的 [培训视频](../../business-video/anti-malware.md)，或完成以下步骤：
 
 1. 转到 <https://protection.office.com> ，然后使用管理员帐户凭据登录。
 
@@ -138,7 +138,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 您可以通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名，或警告通过电子邮件接收这些附件的用户，从而防范勒索软件。 一个很好的起点是创建两个规则：
 
-- 在打开包含Office的文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此我们将警告用户不要从他们不知道的人打开这些文件。
+- 在打开包含宏Office文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此我们将警告用户不要从他们不知道的人打开这些文件。
 
 - 阻止可能包含勒索软件或其他恶意代码的文件类型。 我们将从下表中列出的可执行文件 (一个公用) 。 如果你的组织使用这些可执行类型中的任意一种，并且你预期通过电子邮件发送它们，请将其添加到上一规则 (警告用户) 。
 
@@ -154,9 +154,9 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 5. 针对每个规则应用下表中的设置。 将其余设置保留为默认值，除非您要更改这些设置。
 
-6. 选择 **保存**。
+6. 选择“**保存**”。
     
-| 设置 | 在打开文件附件之前Office警告 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
+| Setting | 在打开文件附件之前Office警告 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
 |名称  <br/> |反勒索软件规则：警告用户  <br/> |反勒索软件规则：阻止文件类型  <br/> |
 |在 中应用此规则。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |
@@ -176,7 +176,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 ## <a name="6-stop-auto-forwarding-for-email"></a>6：停止电子邮件的自动转发
 <a name="forwarding"> </a>
 
-通过配置邮箱以自动转发电子邮件，获取用户邮箱访问权限的黑客可能会窃取邮件。 即使没有用户感知，也可能发生此情况。 您可以通过配置邮件流规则来防止发生这种情况。
+通过配置邮箱以自动转发电子邮件，获得用户邮箱访问权限的黑客可能会窃取邮件。 即使没有用户感知，也可能发生此情况。 您可以通过配置邮件流规则来防止发生这种情况。
 
 创建邮件传输规则：
 
@@ -190,9 +190,9 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要更改这些设置。
 
-6. 选择 **保存**。
+6. 选择“**保存**”。
 
-|设置|拒绝自动将电子邮件转发到外部域|
+|Setting|拒绝自动将电子邮件转发到外部域|
 |---|---|
 |名称|阻止电子邮件自动转发到外部域|
 |如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
@@ -204,7 +204,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 ## <a name="7-use-office-message-encryption"></a>7：使用Office邮件加密
 <a name="encryption"> </a>
 
-Office邮件加密包含在Microsoft 365。 已设置。 使用Office加密，组织可以在组织内外人员之间发送和接收加密的电子邮件。 Office 365 邮件加密可与 Outlook.com、Yahoo!、Gmail 和其他电子邮件服务搭配使用。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
+Office邮件加密包含在邮件Microsoft 365。 已设置。 使用Office加密，组织可以在组织内外人员之间发送和接收加密的电子邮件。 Office 365 邮件加密可与 Outlook.com、Yahoo!、Gmail 和其他电子邮件服务搭配使用。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
 
 Office邮件加密在发送邮件时提供两种保护选项：
 
@@ -216,7 +216,7 @@ Office邮件加密在发送邮件时提供两种保护选项：
 
 ### <a name="to-send-protected-email"></a>发送受保护的电子邮件
 
-In Outlook for PC， select **Options** in the email， and then choose **Permissions**.
+在Outlook电脑"中 **，选择电子邮件** 中的"选项"，然后选择"**权限"。**
 
 ![电子邮件加密Outlook。](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
@@ -230,7 +230,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 如果收件人使用的是其他电子邮件客户端或电子邮件帐户（如 Gmail 或 Yahoo），他们将看到一个链接，允许他们登录阅读电子邮件或请求一次密码以在 Web 浏览器中查看邮件。 如果用户未收到电子邮件，请让他们检查其"垃圾邮件"或"垃圾邮件"文件夹。
 
-有关详细信息，请参阅在适用于电脑的 Outlook 中发送、查看[和回复加密邮件](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)。
+有关详细信息，请参阅在适用于电脑的 Outlook 中发送[、查看和回复加密邮件](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)。
 
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. 保护您的电子邮件免受网络钓鱼攻击
 <a name="phishing"> </a>
@@ -251,7 +251,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 4. 在"防钓鱼"页面上，选择 **"+ 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关[更多详细信息，请参阅了解 Microsoft Defender 中的反网络钓鱼Office 365选项](../../security/office-365-security/set-up-anti-phishing-policies.md)。
+5. 指定策略的名称、说明和设置，如下图所示。 有关[更多详细信息，](../../security/office-365-security/set-up-anti-phishing-policies.md)请参阅了解 Microsoft Defender 中的反网络钓鱼Office 365选项。
 
 6. 查看设置后，选择"创建 **此策略"或** " **保存**"（如果适用）。
 
@@ -260,11 +260,11 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 |名称|域和最有价值的宣传活动人员|
 |说明|确保不会模拟最重要的员工和域。|
 |添加要保护的用户|选择 **+ 添加条件，收件人是**。 键入用户名或输入候选人、市场活动经理和其他重要员工成员的电子邮件地址。 您最多可以添加 20 个要防止模拟的内部和外部地址。|
-|添加要保护的域|选择 **+ 添加条件，收件人域为**。 输入与订阅关联的自定义Microsoft 365（如果已定义）。 可以输入多个域。|
+|添加要保护的域|选择 **+ 添加条件，收件人域为**。 如果定义了自定义域，请输入Microsoft 365订阅关联的自定义域。 可以输入多个域。|
 |选择操作|如果电子邮件是由模拟用户发送的：选择"将邮件重定向到其他电子邮件地址"，然后键入安全管理员的电子邮件地址;例如，securityadmin@contoso.com。 <br/> 如果电子邮件是由模拟域发送的：请选择"隔离 **邮件"。**|
 |邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
 |添加受信任的发件人和域|在此示例中，不要定义任何替代项。|
-|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如，contoso.com，在列表中， **然后选择添加**。 选择“**完成**”。|
+|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如，contoso.com，再选择"添加 **"。** 选择“**完成**”。|
 |
 
 有关详细信息，请参阅在 Defender for [Office 365 中设置防钓鱼Office 365。](../../security/office-365-security/configure-atp-anti-phishing-policies.md)
@@ -272,7 +272,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防范恶意附件和带附件保险箱文件
 <a name="atp"> </a>
 
-人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams 中的文件。
+人们定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 通过查看电子邮件来判断附件是安全还是恶意并不总是那么容易。 Microsoft Defender for Office 365包括保险箱附件保护，但默认情况下不会启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护扩展到 SharePoint、OneDrive 和 Microsoft Teams。
 
 若要创建保险箱策略，请观看简短的[培训视频](../../business-video/safe-attachments.md)，或完成以下步骤：
 
@@ -282,7 +282,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 3. 在"策略"页上，选择 **"保险箱附件"。**
 
-4. On the 保险箱 attachments page， apply this protection broadly by selecting the **Turn on ATP for SharePoint， OneDrive， and Microsoft Teams** check box.
+4. 在"保险箱附件"页上，通过选中"为 SharePoint、OneDrive 和 Microsoft Teams 启用 **ATP"** 复选框来广泛应用此保护。
 
 5. 选择 **+** 以创建新策略。
 
@@ -295,16 +295,16 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 |名称|使用检测到的恶意软件阻止当前和将来的电子邮件。|
 |说明|使用检测到的恶意软件阻止当前和未来的电子邮件和附件。|
 |保存附件未知恶意软件响应|选择 **"阻止 - 阻止当前和将来的电子邮件和带检测到的恶意软件的附件"。**|
-|检测时重定向附件|启用重定向 (选中此框)  <br/> 输入管理员帐户或邮箱设置以隔离。 <br/> 如果恶意软件扫描附件出现时间过或出现错误，请应用 (选中此框) 。|
+|检测时重定向附件|启用重定向 (选中此框)  <br/> 输入管理员帐户或邮箱设置以隔离。 <br/> 如果恶意软件扫描附件时间过或出现错误，请应用 (选中此框) 。|
 |应用于|收件人域为 。 . . 选择你的域。|
 |
 
 有关详细信息，请参阅在 Defender for [Office 365 中设置防钓鱼Office 365。](../../security/office-365-security/configure-atp-anti-phishing-policies.md)
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：使用链接抵御网络钓鱼保险箱攻击
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：通过链接抵御网络钓鱼保险箱攻击
 <a name="phishingatp"> </a>
 
-黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，可提供电子邮件和文档内 Web 地址 (URL 的单击) 验证，帮助Office组织。 保护通过链接保险箱定义。
+黑客有时会在电子邮件或其他文件中的链接中隐藏恶意网站。 保险箱链接是 Microsoft Defender for Office 365 的一部分，可通过提供电子邮件和 Office 文档中的 Web 地址和 URL 的单击时验证 (帮助) 组织。 保护通过链接保险箱定义。
 
 我们建议您执行以下操作：
 
@@ -322,13 +322,13 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 修改默认策略：
 
-1. 在"保险箱链接"页上的"适用于整个组织的策略"**下**，双击"默认 **策略**"。
+1. 在"保险箱链接"页上，在"适用于整个组织的策略"**下**，双击"默认 **策略**"。
 
 2. 在 **设置应用于** 跨 Office 365 内容的 URL 下，输入要阻止的 URL（如 example.com _）并选择_ **+** 。
 
-3. 在 **设置** 适用于电子邮件以外的内容"下，选择"Office 365 **应用程序**"、"不跟踪用户单击安全链接时"和"不允许用户单击到原始 **URL 的安全链接"。**
+3. 在 **设置** 适用于电子邮件之外的内容"下，选择"Office 365 **应用程序**"、"不跟踪用户单击安全链接时"和"不允许用户通过安全链接单击原始 **URL"。**
 
-4. 选择 **保存**。
+4. 选择“**保存**”。
 
 若要创建面向域中所有收件人的新策略：
 
@@ -336,7 +336,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 2. 应用下表中列出的设置。
 
-3. 选择 **保存**。
+3. 选择“**保存**”。
 
 |设置或选项|推荐设置|
 |---|---|
@@ -346,10 +346,10 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 |应用于|收件人域为 。 . . 选择你的域。|
 |
 
-有关详细信息，请参阅 Microsoft [Defender for 保险箱 中的链接Office 365。](../../security/office-365-security/atp-safe-links.md)
+有关详细信息，请参阅 microsoft [Defender for 保险箱 中的链接Office 365。](../../security/office-365-security/atp-safe-links.md)
 
 ## <a name="related-content"></a>相关内容
 
-[本文介绍Microsoft 365 (](multi-factor-authentication-microsoft-365.md)多重) \
-[管理和监视优先级帐户 (](../setup/priority-accounts.md) 文章) \
+[Microsoft 365 (](multi-factor-authentication-microsoft-365.md)多重身份验证) \
+[管理并监视优先级帐户](../setup/priority-accounts.md) (文章) \
 [Microsoft 365中心中的报告 (](../activity-reports/activity-reports.md)视频) 

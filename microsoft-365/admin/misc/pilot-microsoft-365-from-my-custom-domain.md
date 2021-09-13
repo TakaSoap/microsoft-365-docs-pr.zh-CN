@@ -19,11 +19,11 @@ search.appverid:
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
 ms.openlocfilehash: 6980480893e3e544a912edbe7d7da0993e781df2
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170364"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170490"
 ---
 # <a name="resources"></a>资源
 
@@ -88,7 +88,7 @@ ms.locfileid: "58747659"
 
 ### <a name="manual-uninstallation"></a>手动卸载
 
-- `sudo yum remove mdatp` 用于 CentOS 和 Oracle Linux (RHEL 和) 。
+- `sudo yum remove mdatp` For RHEL and variants (CentOS and Oracle Linux) .
 - `sudo zypper remove mdatp` 用于 SLES 和变量。
 - `sudo apt-get purge mdatp` 用于 Ubuntu 和 Debian 系统。
 
@@ -145,7 +145,7 @@ ms.locfileid: "58747659"
 |终结点检测和响应|设置未使用的 (预览) |`mdatp edr early-preview [enable|disable]`|
 |终结点检测和响应|设置 group-id|`mdatp edr group-ids --group-id [group-id]`|
 |终结点检测和响应|Set/Remove 标记，仅 `GROUP` 受支持|`mdatp edr tag set --name GROUP --value [tag]`|
-|终结点检测和响应|根目录 (列表) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|终结点检测和响应|根 (列表) |`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息

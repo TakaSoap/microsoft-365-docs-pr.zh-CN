@@ -13,23 +13,23 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd8dc9fc3e7a14308540e3a167a0a66fc8966d56e6d91ca7621a2af7fe752253
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 88d4b371f8a5aa7db299f9a327a0621f838a02ab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171405"
 ---
 # <a name="payment-information-for-mongolia"></a>蒙古的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in USD only and reference invoice number (s) on your payment invoice.
+Please pay in USD only and reference invoice number (s) on your payment payment payment.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
 **Bank：** 年，伦敦  
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
-**帐户号：12510049**  
+**帐号：12510049**  
 **帐户名称：** MICROSOFT

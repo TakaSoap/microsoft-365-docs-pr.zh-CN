@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 description: 了解如何获取Microsoft Teams活动报告，并深入了解Teams活动。
 ms.openlocfilehash: 6f75b3547af25f06858eb72ab1956e787f6e6bc5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169978"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理中心中的 Microsoft 365 报表 - Microsoft Teams 用户活动
 
@@ -36,7 +36,7 @@ ms.locfileid: "58564972"
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>如何获取 Microsoft Teams 用户活动报表
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
-2. 在仪表板主页上，单击 **活动卡上的**"查看更多Microsoft Teams按钮。
+2. 在仪表板主页上，单击 **活动卡片上的**"查看更多Microsoft Teams按钮。
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>解读 Microsoft Teams 用户活动报表
 
@@ -46,11 +46,11 @@ You can view the user activity in the Teams by choosing the **User activity** ta
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 音频时间 **、视频时间和** 屏幕共享时间导出的格式 **遵循** ISO8601 持续时间格式。
 
-可查看" **Microsoft Teams 用户活动**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
+可查看" **Microsoft Teams 用户活动**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您在报告中选择特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
 
 为了确保数据质量，我们将对过去三天执行每日数据有效性检查，并且将填补检测到的任何缺陷。 您可能会注意到过程中历史数据的差异。
 
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。   <br/> |
@@ -68,6 +68,6 @@ You can view the user activity in the Teams by choosing the **User activity** ta
 |安排的会议一次参与  <br/> |用户在指定时段参与的一次计划会议的数量。  <br/> |
 |已参与的计划定期会议  <br/> |用户指定的时间段参与的定期会议数。  <br/> |
 |已授权  <br/> |如果用户已获得使用许可证，则选择Teams。 <br/>|
-|其他活动  <br/>|用户处于活动状态，但执行了除报告中提供的公开操作类型外的其他活动 (发送或回复频道消息和聊天消息、安排或参与一对一通话和会议) 。 示例操作包括用户更改Teams状态或Teams消息，或打开频道消息帖子但不回复的情况。  <br/>|
+|其他活动  <br/>|用户处于活动状态，但执行了其他活动，而不是报告中提供的公开操作类型 (发送或回复频道消息和聊天消息、安排或参与一对一通话和会议) 。 示例操作包括用户更改Teams状态或Teams打开频道消息帖子但不回复的情况。  <br/>|
 |未分类会议 <br/>|不能分类为计划、定期或临时的。 这些数量短，由于篡改的遥测信息，大多数无法识别。 |
 |||

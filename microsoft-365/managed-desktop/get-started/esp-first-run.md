@@ -11,15 +11,15 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170545"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和注册状态页的首次运行体验
 
-Microsoft 托管桌面使用 Windows [Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)和 Microsoft Intune 的注册状态页面[ (ESP) ](/windows/deployment/windows-autopilot/enrollment-status)为用户提供可能的最佳首次运行体验。
+Microsoft 托管桌面使用[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)和 Microsoft Intune 的注册状态页面 ([ESP) ](/windows/deployment/windows-autopilot/enrollment-status)为用户提供可能的最佳首次运行体验。
 
 ## <a name="initial-deployment"></a>初始部署
 
@@ -39,7 +39,7 @@ Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用�
 |部署模式|用户驱动|
 |作为 加入 Azure AD|已加入 Azure AD|
 |语言 (区域) |用户选择|
-|自动配置键盘|否|
+|自动配置键盘|不支持|
 |Microsoft 软件许可条款|隐藏|
 |隐私设置|隐藏|
 |隐藏更改帐户选项|Show|
@@ -61,9 +61,9 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 |---|---|
 |显示应用和配置文件配置进度|是|
 |当安装时间超过指定分钟数时显示错误|60|
-|在出现时间限制错误时显示自定义消息|否|
+|在出现时间限制错误时显示自定义消息|不支持|
 |允许用户收集有关安装错误的日志|是|
-|仅在 OOBE 设备上显示由开箱 (预配) |是|
+|仅在 OOBE 设备上通过开箱使用体验预配 (页面) |是|
 |在安装所有应用和配置文件之前阻止设备使用|是|
 |允许用户在出现安装错误时重置设备|是|
 |发生安装错误时允许用户使用设备|是|
@@ -76,7 +76,7 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 
 1. Autopilot 体验将启动，并且用户输入其凭据。
 2. 设备打开注册状态页，然后继续执行设备准备和设备设置阶段。 帐户 (配置) 跳过第三步Microsoft 托管桌面用户 ESP已禁用。 设备重新启动。
-3. 重新启动后，设备将打开Windows其他用户登录 **页面**。
+3. 重新启动后，设备将打开Windows其他用户的登录 **页面**。
 4. 用户再次输入其凭据，桌面将打开。
 
 > [!NOTE]
@@ -90,15 +90,15 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 - 设备必须具有有线网络连接。
 - 如果你有在 2020 年 8 月之前使用 Microsoft 托管桌面 门户注册的设备，请取消注册并再次注册它们。
 - 设备必须具有包含 2020 年 11 月累积更新[19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3)或[20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e)的出厂映像（如果已安装）或必须用最新的 Microsoft 托管桌面 映像进行重新映像。
-- 物理设备必须支持 TPM 2.0 和设备证明。 不支持虚拟机。 预配过程使用 autopilot Windows部署功能，因此需要 TPM 2.0。 TPM 证明过程还要求访问每个 TPM 提供程序唯一的一组 HTTPS URL。 有关详细信息，请参阅 Autopilot 自部署模式条目和 Autopilot 网络要求中的 Autopilot Windows[预配部署](/mem/autopilot/networking-requirements#tpm)。
+- 物理设备必须支持 TPM 2.0 和设备证明。 不支持虚拟机。 预配过程使用 autopilot Windows部署功能，因此需要 TPM 2.0。 TPM 证明过程还要求访问每个 TPM 提供程序唯一的一组 HTTPS URL。 有关详细信息，请参阅 Autopilot 自部署模式条目和 Autopilot 网络要求中的 Autopilot Windows[预配部署。](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>用于预预配部署的 Autopilot 中的事件序列
 
 1. IT 管理员根据需要重置设备映像或重置设备。
-2. IT 管理员启动设备，获得开箱即用体验，然后按 Windows键五次。
+2. IT 管理员启动设备、获得开箱即用体验，然后按 Windows键五次。
 3. IT 管理员选择Windows Autopilot 预配"，然后选择"继续 **"。** 在Windows Autopilot 配置屏幕上，将显示有关设备的信息。
 4. IT 管理员选择 **预配** 以开始预配过程。
-5. 设备启动 ESP 并完成设备准备和设置阶段。 在设备设置阶段，你将看到显示 x 的应用安装 **x， (** ESP 配置文件设置的准确) 。
+5. 设备启动 ESP 并完成设备准备和设置阶段。 在设备设置阶段，你将看到显示 x 的应用安装 **x， (** ESP 配置文件配置) 。
 6. 帐户设置步骤当前已跳过Microsoft 托管桌面配置中，因为我们禁用了用户 ESP。
 7. 设备重新启动。
 
@@ -133,16 +133,16 @@ Microsoft 托管桌面注册状态页面体验使用这些设置：
 - 理想情况下，应用不应有任何依赖关系。 如果你有 *必须具有依赖项* 的应用，请确保在 ESP 评估中配置、测试和验证它们。
 - Microsoft Teams包含在 ESP 中。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用 Microsoft 托管桌面
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>开始使用Microsoft 托管桌面
 
-1. 访问 [管理门户](access-admin-portal.md)。
-1. [在管理门户中添加并验证管理员联系人](add-admin-contacts.md)。
+1. 访问 [管理员门户](access-admin-portal.md)。
+1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)。
 1. [注册后调整设置](conditional-access.md)。
-1. 部署和分配[Intune 公司门户。](company-portal.md)
+1. 部署并分配 [Intune 公司门户](company-portal.md)。
 1. [分配许可证](assign-licenses.md)。
 1. [部署应用](deploy-apps.md)。
 1. [设置设备](set-up-devices.md)。
 1. 使用 Autopilot 和注册状态页设置首次运行体验 (本文) 。
 1. [启用用户支持功能](enable-support.md)。
-1. [让用户准备好使用设备](get-started-devices.md)。
-1. [应用控件入门](get-started-app-control.md)。
+1. [让用户做好使用设备的准备](get-started-devices.md)。
+1. [开始使用应用控制](get-started-app-control.md)。

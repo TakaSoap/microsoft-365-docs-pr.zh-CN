@@ -18,19 +18,19 @@ ms.custom:
 f1.keywords: NOCSH
 description: 了解如何为组织选择和部署Teams语音解决方案。
 ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161635"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>计划和部署 Teams 语音解决方案
 
-使用Teams语音解决方案，组织内部和外部人员均可以拨打电话。 完整的语音解决方案包括Teams、Microsoft 电话系统以及用于连接到公用电话交换网和 PSTN (选项) 。
+通过Teams语音解决方案，组织内部和外部人员可以发出呼叫。 完整的语音解决方案包括Teams、Microsoft 电话系统以及用于连接到 PSTN 公用电话交换网 (选项) 。
 
 ![Teams语音解决方案概述。](..\media\solutions-architecture-center\voice-concepts.png)
 
-电话系统为组织提供Exchange (专用交换机 PBX) 功能。 您组织中用户之间的呼叫（无论其地理位置如何）均在内部电话系统因此可消除这些内部呼叫的长途成本。  
+电话系统为组织提供完整的专用Exchange (PBX) 功能。 组织中用户之间的呼叫（无论其地理位置如何）均在内部电话系统因此可消除这些内部呼叫的长途成本。  
 
 通过将 电话系统连接到公用电话交换 (PSTN) ，Teams用户还可以在组织外部拨打电话。
 

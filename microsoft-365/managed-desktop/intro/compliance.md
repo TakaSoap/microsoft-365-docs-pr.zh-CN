@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4b619ff72aa1f4bdd62cd760df0857912d7a3cb3afb3959283e4b15a6dca8ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf17b631f8c9f4b6c332fe147ca14d126b8c0146
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162324"
 ---
 # <a name="compliance"></a>合规性
 
@@ -37,7 +37,7 @@ Microsoft 托管桌面已获得以下认证：
 - [信息安全注册评估员计划 (IRAP) ](/compliance/regulatory/offering-ccsl-irap-australia)
 - [支付卡行业 (PCI) 数据安全标准 (DSS)](/compliance/regulatory/offering-PCI-DSS)
 - [《健康保险可移植性和责任法》 (HIPAA) ](/compliance/regulatory/offering-hipaa-hitech)
-- [健康信息信任联盟 (HITRUST) Common Security Framework (CSF) ](/compliance/regulatory/offering-hitrust)
+- [健康信息信任联盟 (HITRUST) CSF (Common Security Framework) ](/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>审核员报告和合规性证书
@@ -45,7 +45,7 @@ Microsoft 托管桌面已获得以下认证：
 您可以在服务信任门户[ (STP ](https://servicetrust.microsoft.com/)) （有关产品/服务的此类信息的中央存储库）中查找相关信息，包括Microsoft Cloud Service要求。 可以从 STP 的审核报告部分下载审核员报告[](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)、合规性证书等。
 
 > [!NOTE]
-> 由于Microsoft 托管桌面 Azure 上运行，因此相关文档通常具有"Microsoft Azure、Dynamics 365 和其他联机服务"等文件名。 在这些文档中，通常可以找到Microsoft 托管桌面"Microsoft Online Services"监控 + 管理"下的文档。
+> 由于Microsoft 托管桌面 Azure 上运行，因此相关文档通常具有"Microsoft Azure、Dynamics 365 和其他联机服务"等文件名。 在这些文档中，通常可以找到Microsoft 托管桌面"Microsoft Online Services"或"监控 + 管理"下的文档。
 
 ## <a name="shared-responsibility"></a>共同责任
 

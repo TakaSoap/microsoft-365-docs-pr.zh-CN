@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81b3227582f783cd9d98ab08aed0c4416f26b7930fa64f22fe6f7a89c1c03f48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97e92fb1c09515d83f0af8fda6d9c8e02835dcd0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170953"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Microsoft Defender for Endpoint 合作伙伴机会和方案
 
@@ -52,7 +52,7 @@ Defender for Endpoint 以以下形式添加对此方案的支持：
 
 - 生成警报后，信号将在整个企业中受 Defender for Endpoint 保护的终结点之间共享。 Defender for Endpoint 立即自动响应或接线员协助响应，以响应警报。
 
-## <a name="scenario-2-security-orchestration-and-automation-response-soar-integration"></a>方案 2：安全业务流程和自动化响应 (SOAR) 集成
+## <a name="scenario-2-security-orchestration-and-automation-response-soar-integration"></a>方案 2：SOAR (集成的安全业务流程) 响应
 业务流程解决方案可帮助构建操作手册，并集成 Defender for Endpoint API 公开用于协调响应的丰富数据模型和操作，例如查询设备数据、触发设备隔离、阻止/允许、解决警报和其他操作。
 
 ## <a name="scenario-3-indicators-matching"></a>方案 3：指示器匹配 

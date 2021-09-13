@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤将前员工的电子邮件转发给其他员工或转换为共享邮箱。
-ms.openlocfilehash: 07973e47dd7f79ad4adc9121c9a2f6d368bb699e22d6d2cbacb91d3b8fce4fbf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827355"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169925"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱
 
@@ -38,7 +38,7 @@ ms.locfileid: "53827355"
 
 ## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>将以前员工的邮箱转换为共享邮箱
 
-将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 如果需要，可以在以后将共享 (转换为) 邮箱中的用户。
+将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 如果需要，可以在以后 (共享) 将共享邮箱转换回专用邮箱。
 
 - 创建共享邮箱是一种较为便宜的方法，因为 **只要邮箱小于 50 GB** ，就不必支付许可证费用。如果超过 50 GB 就需向其分配许可证。
 - 如果将邮箱转换为共享邮箱，则所有的旧电子邮件也仍然可用。这会占用大量空间。
@@ -51,7 +51,7 @@ ms.locfileid: "53827355"
  > [!IMPORTANT]
  > 如果要设置电子邮件转发或共享邮箱，则最后不要删除以前员工的帐户。 需要保留该帐户以定位电子邮件转发或共享邮箱。
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要阻止的员工的姓名，然后选择"邮件 **"** 选项卡。
 3. 在 **"电子邮件转发"下**，选择 **"管理电子邮件转发"。**
 4. 启用" **转发发至此邮箱的所有电子邮件** "。 在 **"转发地址** "框中，键入要获取电子邮件的当前员工的电子邮件地址。

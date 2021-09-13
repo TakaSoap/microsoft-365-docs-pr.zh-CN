@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 016ee07b9f57117b313b65ea89773fb84a08e99d
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162263"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -60,7 +60,7 @@ Microsoft Cloud App Security Microsoft Defender for Endpoint 信号，以允许�
 [Defender for Office 365](/office365/securitycompliance/office-365-atp)通过 保险箱 链接、保险箱 附件、高级防钓鱼和欺骗智能功能帮助保护你的组织免受电子邮件或文件中恶意软件的攻击。 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 之间的集成使安全分析师能够前往上游调查攻击的入口点。 通过威胁情报共享，可以包含和阻止攻击。 
 
 >[!NOTE]
-> Defender for Office 365最近 30 天内的事件显示数据。 对于警报，Defender for Office 365基于第一次活动时间显示数据。 此后，数据将不再在 Defender for Office 365。
+> Defender for Office 365显示最近 30 天内的事件数据。 对于警报，defender for Office 365基于第一次活动时间显示数据。 此后，数据将不再在 Defender for Office 365。
 
 ### <a name="skype-for-business"></a>Skype for Business
 通过Skype for Business集成，分析人员可以通过门户中的简单按钮与可能受到威胁的用户或设备所有者进行通信。

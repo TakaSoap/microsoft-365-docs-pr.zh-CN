@@ -20,20 +20,20 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：DoD Office 365 DNS 记录
 hideEdit: true
-ms.openlocfilehash: 23d342719e8b488fccab925a6db9574ca3f06fa8115b8b29920c038570cdfa2b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 656fb5aff3365dfb5f975f7d3ad1c222b36e1e56
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171003"
 ---
 # <a name="dns-records-for-office-365-dod"></a>Office 365 DoD DNS 记录
 
-*本文适用于 doD Office 365 doD Microsoft 365 DoD*
+*本文适用于 doD Office 365 DoD Microsoft 365 DoD*
 
 作为加入 DoD Office 365的一部分，您需要将 SMTP 和 SIP 域添加到联机服务租户。  你将使用 Azure AD PowerShell 中的 New-MsolDomain cmdlet 完成此操作，或使用 [Azure](https://portal.azure.us) 政府门户启动添加域和证明所有权的过程。
 
-将域添加到租户并进行验证后，请使用以下指南为以下服务添加相应的 DNS 记录。  您可能需要修改下表，以满足组织对入站 MX 记录 (s) 以及您已有的任何现有 Exchange 自动发现 () 的需求。  我们强烈建议与邮件团队协调这些 DNS 记录，以避免电子邮件出现任何中断或错误传递。
+将域添加到租户并进行验证后，请使用以下指南为以下服务添加相应的 DNS 记录。  您可能需要修改下表，以满足贵组织对入站 MX 记录 () 以及您已有的任何现有 Exchange 自动发现 () 的需求。  我们强烈建议与邮件团队协调这些 DNS 记录，以避免电子邮件出现任何中断或错误传递。
 
 ## <a name="exchange-online"></a>Exchange Online
 

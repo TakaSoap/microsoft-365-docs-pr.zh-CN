@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: 接受加入组织Microsoft 365 商业标准版邀请
 ms.openlocfilehash: cdb77b7f0263aaeabad972dc5a005e42ce0d6deb
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170275"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>接受用户或用户Microsoft 365 商业标准版 (电子邮件) 
 
@@ -30,7 +30,7 @@ ms.locfileid: "58866794"
 如果你是组织管理员，其中的用户仍在使用 Gmail、Outlook、Yahoo 或类似的电子邮件地址，并且你正在了解如何设置品牌电子邮件，请改为查看这些步骤：将域添加到[Microsoft 365](../setup/add-domain.md)以及使用电子邮件和云存储设置你的组织。 [](../setup/setup-business-standard.md#finish-setting-up)
 
 > [!IMPORTANT]
-> 如果你是管理员，并且正在查找如何向用户发送 Microsoft 365 商业标准版 订阅邀请的步骤，请查看邀请用户Microsoft 365 商业标准版 ([管理员) 。 ](admin-invite-business-standard.md)
+> 如果你是管理员，并且正在查找如何向用户发送 Microsoft 365 商业标准版 订阅邀请的步骤，请查看邀请用户Microsoft 365 商业标准版 ([管理员](admin-invite-business-standard.md)) 。
 
 ## <a name="join-a-business-microsoft-365-business-standard-organization"></a>加入企业Microsoft 365 商业标准版组织
 
@@ -44,11 +44,11 @@ ms.locfileid: "58866794"
 
 4. 在"**如何登录"页上，** 了解新帐户并选择"下一步 **"。**
 
-5. 在"**将新帐户** 添加到桌面应用"页上，打开Microsoft 365应用，选择你的配置文件，然后使用新的用户名和临时密码登录。 选择 **下一步**。
+5. 在"**将新帐户添加到** 桌面应用"页上，打开Microsoft 365应用，选择你的配置文件，然后使用新的用户名和临时密码登录。 选择 **下一步**。
 
-6. 按照"向 **帐户添加新帐户** Outlook页上的步骤设置Outlook。 选择“**下一步**”。
+6. 按照"将 **新帐户添加到** 帐户Outlook页上的步骤设置Outlook。 选择“**下一步**”。
 
-7. 按照"**将文件移动到** OneDrive for Business"页上的步骤设置OneDrive。 选择“**下一步**”。
+7. 按照"**将文件移动到** 文件OneDrive for Business页上的步骤设置OneDrive。 选择“**下一步**”。
 
 8. 在"**添加新帐户Microsoft Teams** 页上，按照步骤设置Teams。 完成后 **，选择** "我已完成"。
 
@@ -64,11 +64,11 @@ ms.locfileid: "58866794"
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>我没有收到升级电子邮件？
 
-检查垃圾邮件文件夹。 如果不存在，请与管理员或企业所有者联系，让他们重新发送电子邮件。
+检查垃圾邮件文件夹。 如果不存在，请联系管理员或企业所有者，让他们重新发送电子邮件。
 
 ### <a name="i-have-a-question-about-upgrading-my-account-who-can-i-talk-to"></a>我对升级我的帐户有一个问题，我可以与谁交谈？
 
-联系我们的小型企业支持专家，他们可以帮助你升级Microsoft 365订阅。 有关详细信息，请 [获取支持](../../business-video/get-help-support.md)。
+联系我们的小型企业支持专家，他们可以帮助你升级你的Microsoft 365订阅。 有关详细信息，请 [获取支持](../../business-video/get-help-support.md)。
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>升级时，我的数据和帐户会发生什么情况？
 
@@ -81,7 +81,7 @@ ms.locfileid: "58866794"
 
 ### <a name="why-does-it-say-my-admin-now-handles-my-data"></a>为什么它说我的管理员现在处理我的数据？
 
-使用升级的 Microsoft 365 商业版帐户时，Microsoft Office (内部和 Microsoft 365 商业标准版) 中其他应用内创建的文档、电子邮件和数据归您组织的技术管理员所有。 例如，发送给你的邀请电子邮件的人或你的企业所有者。
+使用升级的 Microsoft 365 Business 帐户时，Microsoft Office (以及 Microsoft 365 商业标准版) 中其他应用内创建的文档、电子邮件和数据归您组织的技术管理员所有。 例如，发送给你的邀请电子邮件的人或你的企业所有者。
 
 ### <a name="how-do-i-get-started-with-my-new-account"></a>如何开始使用新帐户？
 

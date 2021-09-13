@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2cfd80ad1c0493912c87437485b8e6aa418624f33ee3bc19f4bf80a409f43a85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 653cd5901923fe4b2b10abd50462acc4d1090bc4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832603"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171245"
 ---
 # <a name="contact-support-for-chad"></a>联系支持人员，
 
@@ -26,7 +26,7 @@ ms.locfileid: "53832603"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 9 点到下午 5 点

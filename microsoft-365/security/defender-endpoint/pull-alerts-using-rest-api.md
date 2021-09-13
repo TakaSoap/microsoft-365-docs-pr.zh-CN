@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162269"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -39,7 +39,7 @@ ms.locfileid: "53845023"
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 >[!Note]
->- [Microsoft Defender for Endpoint Alert](alerts.md) 由一个或多个检测组成。
+>- [Microsoft Defender 终结点警报](alerts.md) 由一个或多个检测组成。
 >- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 >-Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流�
 >[!NOTE]
 >Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 - 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 AAD Azure Active Directory (启用 SIEM) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 请记下 Azure 应用程序注册过程中的下列值。需要使用这些值在服务或守护程序应用中配置 OAuth 流：
@@ -101,7 +101,7 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
-你现在可以在对 Defender for Endpoint API 的请求 *access_token* 字段的值。
+现在，可以在对 Defender for Endpoint API 的请求 *access_token* 字段的值。
 
 ## <a name="request"></a>请求
 借助访问令牌，你的应用可以向 Microsoft Defender for Endpoint API 提出经过身份验证的请求。 您的应用必须将访问令牌附加到各个请求的授权头中。
@@ -114,7 +114,7 @@ GET| 使用适用于你地区的 URI。 <br><br> **对于欧盟**： `https://wd
 ### <a name="request-header"></a>请求标头
 标头 | 类型 | 说明|
 :--|:--|:--
-Authorization | string | 必填。 Azure AD 访问令牌，格式为 **Bearer** &lt; *token* &gt; 。 |
+Authorization | string | 必需。 Azure AD 访问令牌，格式为 **Bearer** &lt; *token* &gt; 。 |
 
 ### <a name="request-parameters"></a>请求参数
 

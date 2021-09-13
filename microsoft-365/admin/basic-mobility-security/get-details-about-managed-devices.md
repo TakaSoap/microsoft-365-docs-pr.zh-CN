@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
 ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564461"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169883"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 
@@ -41,15 +41,15 @@ ms.locfileid: "58564461"
 > [!NOTE]
 > 本文中的命令和脚本还返回有关由 Microsoft Intune 管理 [的任何设备的详细信息](https://www.microsoft.com/cloud-platform/microsoft-intune)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 需要设置一些操作来运行本文中所述的命令和脚本。
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步骤 1：下载并安装Azure Active Directory模块Windows PowerShell
 
-有关这些步骤详细信息，请参阅 连接 [Microsoft 365 PowerShell。](/office365/enterprise/powershell/connect-to-office-365-powershell)
+有关这些步骤详细信息，请参阅 [连接Microsoft 365 PowerShell 进行更新](/office365/enterprise/powershell/connect-to-office-365-powershell)。
 
-1. 转到 ["Microsoft Online Services Sign-In IT](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)专业人员 RTWl 的助理"，   然后选择"下载 **Microsoft Online Services登录助手"。**
+1. 转到 IT [Microsoft Online Services Sign-In RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)的"Microsoft Online Services   助手"，然后选择"Microsoft Online Services **助手"。**
 
 2. 安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，具体步骤如下：
 
@@ -71,9 +71,9 @@ ms.locfileid: "58564461"
    $UserCredential = Get-Credential
    ```
 
-2. 在"Windows PowerShell凭据请求"对话框中，键入你的全局管理员帐户Microsoft 365用户名和密码，然后选择"确定 **"。**
+2. 在"Windows PowerShell凭据请求"对话框中，键入您的 Microsoft 365 全局管理员帐户的用户名和密码，然后选择"确定 **"。**
 
-3. 运行以下命令：
+3. 运行以下命令。
 
    ```powershell
    Connect-MsolService -Credential $UserCredential
@@ -88,7 +88,7 @@ ms.locfileid: "58564461"
 
 1. From your Windows Desktop， select **Start**， and then type Windows PowerShell. 右键单击"Windows PowerShell"，然后选择"以 **管理员角色运行"。**
 
-2. 运行以下命令：
+2. 运行以下命令。
 
    ```powershell
    Set-ExecutionPolicy  RemoteSigned
@@ -100,7 +100,7 @@ ms.locfileid: "58564461"
 
 1. 打开用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
 
-2. 运行以下命令：
+2. 运行以下命令。
 
    ```powershell
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}

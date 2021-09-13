@@ -21,11 +21,11 @@ search.appverid:
 - BEA160
 description: 了解安装向导和"安装"页的区别。
 ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565586"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169718"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安装向导和"安装"页的区别
 
@@ -48,13 +48,13 @@ Microsoft 365两种设置体验：
 
 2. 选择并验证您的域，例如 contoso.com。
 
-3. 添加新用户并为其分配许可证，以便他们可以下载和安装Microsoft 365应用。
+3. 添加新用户并为其分配许可证，以便他们可以下载并安装Microsoft 365应用程序。
 
 4. 连接域。
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用"安装"页完成和管理配置
 
-若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 根据你已购买的产品，你设置的功能以及你的管理员角色、任务和相关信息Microsoft 365此处显示。
+若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 根据你已购买的产品、你设置的功能以及你的管理员角色，你在此处Microsoft 365任务和相关信息。
 
 你将看到按逻辑类别排列的安装任务的完整列表，包括你在安装向导中完成的任务。
 
@@ -62,7 +62,7 @@ Microsoft 365两种设置体验：
 
 选择 **"查看** "查看任何任务，获取概览信息，如任务说明、用户影响、先决条件、实现努力以及安全性和采用统计信息，以帮助你在继续之前了解后果和影响。
 
-You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务、在几天内处理任务，或者有多个管理员在执行任务，则可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
+You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务，在几天内处理任务，或者有多个管理员在执行任务，可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
 
 若要访问有关要设置的功能的综合文章，请选择任何"了解更多" **链接** 。 任务集合始终位于此处，因此您随时都可以返回到"设置"页以进一步浏览资源。
 

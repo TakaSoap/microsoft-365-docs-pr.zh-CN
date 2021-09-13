@@ -25,11 +25,11 @@ search.appverid:
 - BEA160
 description: 了解如何设置 Microsoft 365 商业应用版订阅。
 ms.openlocfilehash: 2010bc13f28d88d9589a53b3f84dd266549356c1
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169715"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>设置 Microsoft 365 商业应用版
 

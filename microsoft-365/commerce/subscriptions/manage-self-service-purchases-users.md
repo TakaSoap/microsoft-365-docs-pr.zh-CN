@@ -16,18 +16,18 @@ ms.custom:
 - commerce_ssp
 search.appverid:
 - MET150
-description: 用户可以了解如何管理其自助购买。
+description: 用户可以了解如何管理自助购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: 581a142eb18e64bfec237e6108564d68d715e21ca20b74e39337afbb7ac86491
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171397"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
-作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心 中的 admin.microsoft.com 管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
+作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心 中管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
 
 你的管理员具有你购买的任何订阅的只读视图。 他们可以看到所购买的每个订阅的产品、购买者名称、购买的订阅、到期日期、购买价格以及分配的用户。
 
@@ -160,14 +160,14 @@ ms.locfileid: "53852195"
 
 ### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
-1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
+1. 在管理中心中，转到"帐单 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单&付款</a>"页面。
 2. 在" **付款方式"** 选项卡上，从列表中选择现有的付款方式。
 3. 在右侧窗格中，选择"编辑 **"。** 你可以更改安全代码、到期日期、卡片上的名称和地址。
 4. 进行任何所需的更改，然后选择"保存 **"。**
 
 ### <a name="add-a-new-payment-method"></a>添加新的付款方式
 
-1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
+1. 在管理中心中，转到"帐单 **""**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单&付款</a>"页面。
 2. 在"**付款方式"** 选项卡上，选择 **"添加付款方式"。**
 3. 在 **"添加付款方式"** 窗格中，输入新付款方式的信息，然后选择"添加 **"。**
 

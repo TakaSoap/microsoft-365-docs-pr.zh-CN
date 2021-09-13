@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d05c541b0e267f5d323029dc93ea0949744e9a7594ff5000e677249b422078f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c5cfb89da148b140840b664856f516fff144e4a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170267"
 ---
 # <a name="contact-support-for-uzbekistan"></a>联系乌兹别克斯坦支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53907027"
 
 877 867 5369
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>帐单支持
 
 俄语：Mon-Fri上午 10 点到下午 7 点

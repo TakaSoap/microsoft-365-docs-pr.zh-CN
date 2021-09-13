@@ -21,19 +21,19 @@ ms.custom:
 description: 了解如何下载通过云解决方案提供商计划云解决方案提供商计划云解决方案提供商 (软件) 密钥。
 ms.date: 01/27/2021
 ms.openlocfilehash: 5dd2e17685746859768a14d61537871a75fe6698
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170295"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>下载永久软件和产品许可证密钥
 
-本文介绍如何下载通过云解决方案提供商计划云解决方案提供商计划云解决方案提供商 (软件) 密钥。
+本文介绍如何下载通过云解决方案提供商计划购买永久软件的软件云解决方案提供商 (产品) 密钥。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员才能执行本文中的步骤。 有关详细信息，请参阅 [关于管理员角色](../add-users/about-admin-roles.md)。
+你必须是全局管理员才能执行本文中的步骤。 有关详细信息，请参阅[关于管理员角色](../add-users/about-admin-roles.md)。
 
 ## <a name="download-software-and-product-license-keys"></a>下载软件和产品许可证密钥
 

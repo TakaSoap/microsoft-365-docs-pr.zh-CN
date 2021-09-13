@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a15cdd443a712ef7eeef33eeaf30e1c1f374e530b7e4a8d28f145e7408a9ff9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 21b896565050edec92740e2d49d2d816431770aa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162146"
 ---
 # <a name="contact-support-for-french-polynesia"></a>联系法属波利尼西亚的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53815631"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Sun-Fri 10 PM-6 AM

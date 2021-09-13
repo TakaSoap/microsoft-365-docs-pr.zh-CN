@@ -14,11 +14,11 @@ f1.keywords:
 - NOCSH
 description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive）可以在多地理位置环境中返回结果。
 ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170604"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
@@ -66,7 +66,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <thead>
 <tr class="header">
 <th align="left">功能</th>
-<th align="left">运作方式</th>
+<th align="left">如何工作</th>
 <th align="left">解决方法</th>
 </tr>
 </thead>
@@ -112,7 +112,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <thead>
 <tr class="header">
 <th align="left">搜索功能</th>
-<th align="left">注释</th>
+<th align="left">注意</th>
 </tr>
 </thead>
 <tbody>
@@ -155,7 +155,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 
 4. 在搜索结果 Web 部件中，将鼠标指针移动到 Web 部件的右上角，单击箭头，然后单击菜单上的“**编辑 Web 部件** ”。 搜索结果 Web 部件工具窗格在页面右上角的功能区下方打开。
 
-   ![编辑Web 部件所选内容。](../media/configure-search-for-multi-geo-image3.png)
+   ![编辑Web 部件选定内容。](../media/configure-search-for-multi-geo-image3.png)
 
 5. 在 Web 部件工具窗格中的 **“设置”** 部分，在 **“结果控制设置”** 下，选择 **“显示多地理位置结果”**，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
 

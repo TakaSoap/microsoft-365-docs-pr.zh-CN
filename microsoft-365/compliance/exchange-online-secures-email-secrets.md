@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
-description: 除了为 Office 365 Microsoft 365 提供安全、隐私和合规性信息的 Office 365 信任中心外，您可能还想知道 Microsoft 如何帮助保护存储在其数据中心中的机密。 我们使用名为分布式密钥管理器技术 (DKM) 。
-ms.openlocfilehash: fe049f600f9ffef496febae2e1c773d562e5693c2ab66fdc37ee377cb66f01e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 除了为 Microsoft 365 提供安全、隐私和合规性Office 365信任中心外，你可能还想知道 Microsoft 如何帮助保护存储在其数据中心中的机密。 我们使用名为分布式密钥管理器技术 (DKM) 。
+ms.openlocfilehash: 2f6e51b7fe9cd75cbd265c3135050a08130f34d8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169645"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online 如何进行电子邮件保密
 
@@ -29,11 +29,11 @@ ms.locfileid: "53795862"
   
 ## <a name="how-do-we-secure-secret-information-provided-by-you"></a>我们如何保护你提供的机密信息？
 
-除了为[Office 365](./get-started-with-service-trust-portal.md)提供安全、隐私和合规性信息的 Office 365 信任中心外，你可能还想知道 Microsoft 如何帮助保护你在数据中心中提供机密。 我们使用名为分布式密钥管理器技术 (DKM) 。
+除了为[Office 365](./get-started-with-service-trust-portal.md)提供安全、隐私和合规性信息的 Office 365 信任中心外，你可能还想知道 Microsoft 如何帮助保护你在数据中心提供机密。 我们使用名为分布式密钥管理器技术 (DKM) 。
   
-[分布式密钥](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) 是一项客户端功能，它使用一组密钥加密和解密信息。 只有 Active Directory 域服务中特定安全组的成员可以访问这些密钥，以便解密由 DKM 加密的数据。 在Exchange Online中，只有运行 Exchange 进程的某些服务帐户是该安全组的一部分。 作为数据中心中标准操作过程一部分，不会向人员提供属于此安全组的凭据，因此，人员无法访问可解密这些密钥的密钥。
+[分布式密钥](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM) 是一项客户端功能，它使用一组密钥来加密和解密信息。 只有 Active Directory 域服务中特定安全组的成员可以访问这些密钥，以便解密由 DKM 加密的数据。 在Exchange Online中，只有运行 Exchange 进程的某些服务帐户是该安全组的一部分。 作为数据中心中标准操作过程一部分，不会向人员提供属于此安全组的凭据，因此，人员无法访问可解密这些密钥的密钥。
   
-为了进行调试、故障排除或审核，数据中心管理员必须请求提升的访问权限，以获得属于安全组的临时凭据。 此过程需要多个级别的法律审批。 如果授予访问权限，将记录并审核所有活动。 此外，仅在一组时间间隔内授予访问权限，在此时间间隔后，该时间间隔将自动过期。
+为了进行调试、故障排除或审核，数据中心管理员必须请求提升的访问权限，才能获取属于安全组的临时凭据。 此过程需要多个级别的法律审批。 如果授予访问权限，将记录并审核所有活动。 此外，仅在一组时间间隔内授予访问权限，在此时间间隔后，该时间间隔将自动过期。
   
 为了提供额外的保护，DKM 技术包括自动密钥滚动和存档。 这还可确保您可以继续访问旧内容，而无需无限期地依赖同一密钥。
   

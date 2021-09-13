@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 84bb8267a39c2a9232df6f6f369b98014f3cdc978cf90d8499e2fb1e36975397
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 07f23961062632fab132610b7b103652f7fcf546
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162134"
 ---
 # <a name="contact-support-for-liechtenstein"></a>联系列支敦士登支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53856723"
 ## <a name="phone-number"></a>电话号码
 +41 800 000 300
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 德语：Mon-Fri上午 9 点到下午 5 点

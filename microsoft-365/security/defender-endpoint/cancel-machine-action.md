@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170098"
 ---
 # <a name="cancel-machine-action-api"></a>取消计算机操作 API
 
@@ -57,8 +57,8 @@ ms.locfileid: "58509949"
 
 |权限类型|权限|权限显示名称|
 |---|---|---|
-|应用程序|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  载出计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
-|委派（工作或学校帐户）|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|收集取证<br> 隔离计算机<br>  限制代码执行<br> 扫描计算机<br>载出计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
+|应用程序|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|收集取证 <br>隔离计算机<br>限制代码执行<br>  扫描计算机<br>  卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
+|委派（工作或学校帐户）|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|收集取证<br> 隔离计算机<br>  限制代码执行<br> 扫描计算机<br>卸载计算机<br> 停止和隔离<br> 在特定的计算机上运行实时响应|
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: 帮助员工了解如何设置Office使用应用获取Microsoft 365 商业高级版。
 ms.openlocfilehash: 7c7f28a13438d2cd5974d212d56c6885d8d4850c
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171180"
 ---
 # <a name="employee-quick-setup"></a>员工快速设置
 
@@ -66,10 +66,10 @@ ms.locfileid: "58377759"
 
 - 或将文件从桌面或文档复制到" **OneDrive**"。
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何从&quot;文档&quot;OneDrive文件夹保存的图像。":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何保存以从OneDrive文件夹保存的图像。":::
 
     > [!TIP]
-    > 您还可以将文件存储在网站[中的](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)Microsoft 365。
+    > 您还可以将文件存储在网站[中的Microsoft 365。](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)
 
 ## <a name="5-share-documents"></a>5. 共享文档
 

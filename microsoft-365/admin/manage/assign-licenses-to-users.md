@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
 ms.date: 04/26/2021
-ms.openlocfilehash: 03e5a5ef9524e51c6d3ff4bb982e24fd3df26b089985a8602e01cf5e520e0d45
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 987572ae15ffdf6d2042c6e54eba586cd39ebcb9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169760"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -118,7 +118,7 @@ ms.locfileid: "53825591"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ ms.locfileid: "53825591"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: 调查适用于终结点的 Microsoft Defender 文件
-description: 使用调查选项获取有关与警报、行为或事件相关联的文件的详细信息。
+description: 使用调查选项获取有关与警报、行为或事件关联的文件的详细信息。
 keywords: 调查， 调查， 文件， 恶意活动， 攻击动机， 深度分析， 深度分析报告
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6328d9879bf816e69c44007e7e85a30cfee086bc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162306"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的文件
 
@@ -58,7 +58,7 @@ ms.locfileid: "58572595"
 
 在配置文件页面顶部，在文件信息卡上方。 可在此处执行的操作包括：
 
-- 停止和隔离文件
+- 停止和隔离
 - 添加/编辑指示器
 - 下载文件
 - 咨询威胁专家
@@ -72,9 +72,9 @@ ms.locfileid: "58572595"
 
 你将看到详细信息，如文件的 MD5、病毒总检测比率和 Microsoft Defender AV 检测（如果可用）以及文件的普遍程度。
 
-文件流行卡片显示文件在组织和全球的设备中的显示位置。 
+文件流行卡片显示文件在组织和全球的设备中的显示位置。
 
-> [!NOTE] 
+> [!NOTE]
 > 不同的用户可能会看到不同值在文件流行卡片的"组织单位"部分中。 这是因为卡片显示基于用户具有的 RBAC 范围的信息。 这意味着，如果用户已被授予对一组特定设备的可见性，他们只会看到这些设备上的文件组织普遍程度。
 
 ![文件信息的图像。](images/atp-file-information.png)
@@ -89,8 +89,8 @@ ms.locfileid: "58572595"
 
 " **在组织中观测** 到"选项卡允许你指定日期范围，以查看已使用该文件观测到哪些设备。
 
->[!NOTE]
->此选项卡将显示最多 100 台设备。 To see _all_ devices with the file， export the tab to a CSV file， by selecting **Export** from the action menu above the tab's column headers.
+> [!NOTE]
+> 此选项卡将显示最多 100 台设备。 To see _all_ devices with the file， export the tab to a CSV file， by selecting **Export** from the action menu above the tab's column headers.
 
 ![包含文件的最近观察到设备的图像。](images/atp-observed-machines.png)
 

@@ -20,15 +20,15 @@ ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用此报告在 DLP 策略中优化组织 (数据丢失) 防护。
 ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171356"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>开始使用默认 DLP 策略
 
-在通过 DLP 策略创建第一 (数据丢失防护) ，DLP 会使用默认策略帮助保护敏感信息。 此默认策略及其建议 (在) 与组织外部人员共享包含信用卡号的电子邮件或文档时通知你，以帮助保护敏感内容的安全。 你将在安全与合规中心 **主页** 上看到 &amp; 此建议。 
+在通过 DLP 策略创建第一 (数据丢失防护) ，DLP 会使用默认策略帮助保护敏感信息。 此默认策略及其 (如下所示) 当包含信用卡号的电子邮件或文档与组织外部人员共享时通知你，以帮助保护敏感内容的安全。 你将在安全与合规中心 **主页** 上看到 &amp; 此建议。 
   
 您可以使用此小组件快速查看共享敏感信息的共享时间及内容，然后只需单击一次或两次即可优化默认 DLP 策略。 您还可以随时编辑默认 DLP 策略，因为它可完全自定义。 请注意，如果一开始看不到建议，请尝试在"建议你"部分底部单击 **"+更多**"。 
   
@@ -42,11 +42,11 @@ ms.locfileid: "58569569"
   
 为了帮助保护敏感信息，默认 DLP 策略：
   
-- 检测何时Exchange、SharePoint和OneDrive包含至少一个信用卡号的内容与组织外部人员共享。
+- 检测何时将Exchange、SharePoint和OneDrive包含至少一个信用卡号的内容与组织外部人员共享。
     
 - 显示策略提示，当用户尝试与组织外部人员共享此敏感信息时，会向用户发送电子邮件通知。 有关这些选项的详细信息，请参阅发送电子邮件 [通知和显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)。
     
-- 生成详细的活动报告，以便你可以跟踪与组织外部人员共享内容的人以及他们何时共享内容等内容。 可以使用 DLP [](view-the-dlp-reports.md)报告和审核日志 [数据](search-the-audit-log-in-security-and-compliance.md) (**活动**  =  **DLP**) 查看此信息。
+- 生成详细的活动报告，以便你可以跟踪与组织外部人员共享内容的人以及他们何时共享内容等内容。 您可以使用 DLP [](view-the-dlp-reports.md)报告和审核日志 [数据](search-the-audit-log-in-security-and-compliance.md) (**活动**  =  **DLP**) 查看此信息。
     
 若要快速优化默认 DLP 策略，可以选择具有：
   
@@ -76,7 +76,7 @@ ms.locfileid: "58569569"
   
 此小组件仅在：
   
-- 安全与合规中心或管理中心内没有数据丢失 &amp; Exchange策略。 此小组件旨在帮助您开始使用 DLP，因此如果您已经拥有 DLP 策略，它不会出现。
+- 安全与合规中心或管理中心内没有数据丢失 &amp; Exchange策略。 此小组件旨在帮助您开始使用 DLP，因此如果您已有 DLP 策略，它不会出现。
     
 - 在过去 30 天内，包含至少一张信用卡的内容已与组织外部的某人共享。
     

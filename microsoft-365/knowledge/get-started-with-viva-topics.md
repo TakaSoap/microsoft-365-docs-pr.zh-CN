@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
-description: 了解在"主题"中发现和浏览Microsoft Viva方式。
-ms.openlocfilehash: 07b12ab191ec3222deb3e01f4b039f7b15dc8a5bed64047d144af35a9159a611
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解发现和浏览主题中信息的新Microsoft Viva方法。
+ms.openlocfilehash: 65084663db1b9cdee4a179831a98c297c83d30d7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170571"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Microsoft Viva 主题入门
 
@@ -32,11 +32,11 @@ Viva 主题使你可以：
 
 在阅读存储在 Microsoft 365中的内容时，主题将内联突出显示。 将鼠标悬停在主题名称上时，你将看到主题卡片中显示的详细信息。 你可能会看到一条提供有关主题卡和主题页面反馈的提示。 在提供有关主题的反馈时，可改进你自己和他人的体验。 
 
-主题将在整个服务中逐步引入主题要点。 首先，你将在新闻和页面中SharePoint突出显示内容。
+主题将在整个服务中逐步引入主题要点。 首先，你将在新闻和页面中SharePoint突出显示。
 
 ## <a name="find-people-and-content-connected-to-important-topics"></a>查找与重要主题相关的人员及内容 
 
-主题卡片提供有关主题信息的摘要。 显示的描述、人员和资源可能已被自动标识。 选择主题名称以查看有关该主题的完整信息，包括关联的人员和资源。  
+主题卡片提供有关主题信息的摘要。 显示的说明、人员和资源可能已被自动标识。 选择主题名称以查看有关该主题的完整信息，包括关联的人员和资源。  
 
 只显示已与您共享的资源。 其他人可能会看到不同的摘要，或者如果未与它们共享资源，则可能不会看到突出显示的主题。 
 

@@ -1,5 +1,5 @@
 ---
-title: 对搜索服务中的高级搜寻查询结果Microsoft 365 Defender
+title: 对中高级搜寻查询结果Microsoft 365 Defender
 description: 在高级搜寻查询结果中快速解决威胁和受影响的资产
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 采取行动
 search.product: eADQiWindows 10XVcnh
@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: b708fa898d1f84efdb5e885b786619e481099ac0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161938"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>对高级搜寻查询结果采取措施
 
@@ -38,7 +38,7 @@ ms.locfileid: "58572991"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-使用强大而全面的操作选项，可以快速包含威胁或解决在高级[](advanced-hunting-overview.md)搜寻中发现的威胁资产。 通过这些选项，您可以：
+可以使用强大而全面的操作选项快速包含威胁或解决在高级搜寻[](advanced-hunting-overview.md)中发现的威胁资产。 通过这些选项，您可以：
 
 - 在设备上执行各种操作
 - 隔离文件
@@ -46,7 +46,7 @@ ms.locfileid: "58572991"
 ## <a name="required-permissions"></a>所需权限
 若要能够通过高级搜寻采取行动，你需要具有在设备上提交修正操作的权限的 Microsoft Defender for Endpoint [角色](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 如果无法采取措施，请与全局管理员联系，获取以下权限：
 
-*威胁和>活动漏洞管理操作 - 修正处理*
+*威胁和>活动漏洞管理 - 修正处理*
 
 ## <a name="take-various-actions-on-devices"></a>在设备上执行各种操作
 可以在查询结果中的列标识的 `DeviceId` 设备上执行以下操作：

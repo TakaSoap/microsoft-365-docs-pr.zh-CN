@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的警报队列
 ms.reviewer: ''
-description: 查看和管理警报中显示Microsoft 365 Defender
+description: 查看和管理警报中Microsoft 365 Defender
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,11 +19,11 @@ ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
 ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170522"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的警报队列
 

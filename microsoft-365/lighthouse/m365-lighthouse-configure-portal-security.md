@@ -17,30 +17,30 @@ ms.custom:
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何配置门户安全性。
 ms.openlocfilehash: 9701ecc002144f791be6caad1e93230be5a83bf0
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171299"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>配置Microsoft 365 Lighthouse门户安全性
 
 > [!NOTE]
-> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有Microsoft 365 Lighthouse，请参阅注册[Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
+> 本文中所述的功能在预览版中，可能会更改，并且仅对满足要求 [的合作伙伴可用](m365-lighthouse-requirements.md)。 如果你的组织没有此Microsoft 365 Lighthouse，请参阅[注册Microsoft 365 Lighthouse。](m365-lighthouse-sign-up.md)
 
 当 Managed Service Provider (MSP) 其租户具有委派访问权限时，保护客户数据的访问是网络安全的优先级。 Microsoft 365 Lighthouse具有必需和可选功能，可帮助你配置 Lighthouse 门户安全性。
 
-## <a name="set-up-multifactor-authentication-mfa"></a>在 MFA (设置多重) 
+## <a name="set-up-multifactor-authentication-mfa"></a>在 MFA 中设置 (身份验证) 
 
-如博客文章 [Pa$$word并不重要](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984)：
+如博客文章 [Pa$$word一样并不重要](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984)：
 
 > "你的密码无关紧要，但 MFA 会这样做。 根据我们的研究，如果使用 MFA，你的帐户泄露的可能性将超过 99.9%。"
 
-当用户首次访问 Lighthouse 时，如果用户的 Microsoft 365 帐户尚未配置 MFA，系统将提示他们设置 MFA。 在所需的 MFA 设置步骤完成之前，用户无法访问 Lighthouse。 若要了解有关身份验证方法的更多信息，请参阅[设置Microsoft 365登录进行多重身份验证](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
+当用户第一次访问 Lighthouse 时，如果其 Microsoft 365 帐户尚未配置 MFA，系统将提示他们设置 MFA。 在所需的 MFA 设置步骤完成之前，用户无法访问 Lighthouse。 若要了解有关身份验证方法的更多信息，请参阅[设置Microsoft 365登录进行多重身份验证](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
 
 ## <a name="set-up-roles-to-manage-customer-tenants"></a>设置角色以管理客户租户
 
-对 Lighthouse 中的客户租户数据和设置的访问权限仅限于云解决方案提供商云解决方案提供商计划云解决方案提供商计划 (支持) 角色。
+对 Lighthouse 中的客户租户数据和设置的访问权限仅限于云解决方案提供商 csp) 计划中的管理员代理和技术支持 (角色。
 
 可以通过查看 [Azure AD](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) – 所有组页面上的安全组成员身份来检查合作伙伴租户中哪些用户具有管理员代理和技术支持代理角色。 若要了解如何向用户分配云解决方案提供商计划角色和其他权限，请参阅向用户分配 [角色和权限](/partner-center/permissions-overview)。 作为 MSP，如果尚未将访问权限委派给客户租户，请通过获取客户服务或订阅的权限一文了解如何 [获取权限](/partner-center/customers-revoke-admin-privileges)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "58508078"
 > [!NOTE]
 > 目前，若要执行表中标记为 * 的操作，用户还需要在合作伙伴租户中具有以下属性集的 Azure AD 角色 **：microsoft.office365.serviceHealth/allEntities/allTasks**。 有关 Azure AD 角色的列表，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。
 
-鉴于与管理员代理角色相关的广泛权限，我们建议在将合作伙伴租户用户指定为管理员代理而非支持代理[](/azure/active-directory/develop/secure-least-privileged-access)时遵循最小特权访问原则。 为此，一个方法就是将支持代理角色分配给所需的合作伙伴租户用户。 这样，他们可以查看客户数据和设置，但不能进行广泛更改。 然后，如果需要，使用 Azure AD Privileged Identity Management (PIM) 实时访问审批功能为用户提供时间范围的管理员代理角色。
+鉴于与管理员代理角色相关的广泛权限，我们建议在将合作伙伴租户用户指定为管理员代理而非支持代理[](/azure/active-directory/develop/secure-least-privileged-access)时遵循最小特权访问原则。 为此，一个方法就是将支持代理角色分配给所需的合作伙伴租户用户。 这样，他们可以查看客户数据和设置，但不能进行广泛更改。 然后，根据需要，使用 Azure AD Privileged Identity Management (PIM) 实时访问审批功能，为用户提供时间范围的管理员代理角色。
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>设置 Azure AD Privileged Identity Management (PIM) 
 
@@ -84,7 +84,7 @@ ms.locfileid: "58508078"
 
 | 合作伙伴租户角色 | 合作伙伴租户内的权限 |
 |--|--|
-| 合作伙伴租户的全局管理员 | <ul><li>在企业中心注册Microsoft 365 管理中心。</li><li>在首次运行体验期间接受合作伙伴合同修正。</li><li>在"租户"页上查看客户租户。\*</li><li>激活和停用租户。\*</li><li>更新客户联系人和网站。\*</li><li>创建、更新和删除标记。\*</li><li>分配和删除客户租户中的标记。\*</li></ul> |
+| 合作伙伴租户的全局管理员 | <ul><li>在"2013"中注册Microsoft 365 管理中心。</li><li>在首次运行体验期间接受合作伙伴合同修正。</li><li>在"租户"页上查看客户租户。\*</li><li>激活和停用租户。\*</li><li>更新客户联系人和网站。\*</li><li>创建、更新和删除标记。\*</li><li>分配和删除客户租户中的标记。\*</li></ul> |
 | 至少具有一个合作伙伴租户的合作伙伴租户管理员<br> 分配了以下属性集的 Azure AD 角色：<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br>  (有关 Azure AD 角色的列表，请参阅 [Azure AD 内置角色](/azure/active-directory/roles/permissions-reference).)  | <ul><li>创建 Lighthouse 服务请求。</li></ul> |
 
 > [!NOTE]

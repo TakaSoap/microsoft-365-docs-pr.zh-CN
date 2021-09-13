@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
 ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170597"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 

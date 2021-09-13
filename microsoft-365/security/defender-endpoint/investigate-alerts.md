@@ -20,11 +20,11 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 45bf3204a092bac6597c4e43f4ca29dbc06cd631
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569341"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162308"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的警报
 
@@ -46,7 +46,7 @@ ms.locfileid: "58569341"
 
 警报情景详细介绍了触发警报的原因、之前和之后发生的相关事件以及其他相关实体。
 
-实体是可单击的，并且每个不是警报的实体都可用该实体卡片右侧展开图标进行扩展。 焦点中的实体将用该实体卡片左侧的蓝色条带指示，标题中的警报首先处于焦点。
+实体是可单击的，并且每个不是警报的实体都可用该实体卡片右侧展开图标进行扩展。 焦点中的实体将用该实体卡片左侧的蓝色条带指示，标题中的警报首先处于焦点状态。
 
 展开实体，一目了然地查看详细信息。 选择实体将详细信息窗格的上下文切换到此实体，并允许您查看详细信息以及管理该实体。 选择 *实体* 卡片右侧"..."将显示该实体的所有可用操作。 当实体具有焦点时，这些相同的操作将显示在详细信息窗格中。
 

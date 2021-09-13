@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d7031bb9cad876776a364f7d48d0fc0b44b2ff83593aaedd4df1e27ae475cbec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a0a5119fd0ff3ea12774513e3fad3bd8c91a514
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171465"
 ---
 # <a name="contact-support-for-oman"></a>联系阿曼支持人员
 
@@ -32,12 +32,12 @@ ms.locfileid: "53831727"
 
 输入代码 7702
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 阿拉伯语：Sun-Thu 10 AM-6 PM
 
-英语：Mon-Fri 10 AM-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 

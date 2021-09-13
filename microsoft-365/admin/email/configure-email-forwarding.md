@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 电子邮件转发允许您将发送到用户邮箱Microsoft 365电子邮件转发到组织内部或外部的另一个邮箱。
-ms.openlocfilehash: f6219b957c3444ea68d6e8036c2ad2ea6529571b90cb301bfead983a9c9176b7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77f374623244708c0b2bf1ecdae1af0cbebc9812
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169807"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>配置电子邮件转发Microsoft 365
 
@@ -48,7 +48,7 @@ ms.locfileid: "53826167"
 
 - 电子邮件转发要求 from  *帐户*  具有许可证。 如果由于用户已离开组织而设置电子邮件转发，另一个选项是将其邮箱 [转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)。 这样一来，多个人员就可以访问它。 但是，共享邮箱不能超过 50GB。
 
-您必须是管理员Exchange全局管理员Microsoft 365才能执行这些步骤。 有关详细信息，请参阅关于 [管理员角色的主题](../add-users/about-admin-roles.md)。
+您必须是 Exchange 管理员或全局管理员Microsoft 365才能执行这些步骤。 有关详细信息，请参阅关于 [管理员角色的主题](../add-users/about-admin-roles.md)。
 
 ::: moniker range="o365-worldwide"
 
@@ -62,7 +62,7 @@ ms.locfileid: "53826167"
 
     **若要转发到多个电子邮件地址**，可以要求用户在邮箱中设置Outlook转发到地址。 
     
-    1.  打开 **Outlook** > **主页** > **规则**>选择"管理&**通知"**  
+    1.  打开 **Outlook** > **主页** > **规则**>选择 **"管理&通知"**  
     1. 选择 **"新建** > **规则" 选择"** 在列表底部附近收到的邮件上应用规则"，然后单击"下一步 **"。**
     1. 当 **系统** 询问"是"时，单击"是"：此规则将应用于你收到的每封邮件。 
     1. On the next list select the actions **redirect it to people or public group** and stop processing more **rules**
@@ -117,4 +117,5 @@ ms.locfileid: "53826167"
 
 [Create a shared mailbox (](../email/create-a-shared-mailbox.md) article) \
 [从不同地址发送电子邮件， (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 文章) \
-[更改用户名称和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 文章) 
+[控制自动外部电子邮件转发Microsoft 365 (](/security/office-365-security/external-email-forwarding?view=o365-worldwide)文章) \
+[Change a user name and email address (](../add-users/change-a-user-name-and-email-address.md) article) 

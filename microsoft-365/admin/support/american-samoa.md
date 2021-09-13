@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37ffe5fbf2e6901ee29bf40d44dd399003e9d709f2dbcab71a148515e95ed13f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f9917c9abe131ceb745dc173ce8ce4219c73dcaa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170867"
 ---
 # <a name="contact-support-for-american-samoa"></a>联系美属萨摩亚的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53838375"
 ## <a name="phone-number"></a>电话号码
 800-865-9408
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 6 点到下午 2 点

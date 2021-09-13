@@ -20,11 +20,11 @@ description: 来自 Microsoft 网络安全团队的有关实施安全性功能�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: dc401f20a7f7425e619fc057dbe481341db993ff
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170450"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>安全路线图 - 前 30 天、前 90 天及以后的首要任务
 
@@ -78,10 +78,10 @@ ms.locfileid: "58503223"
 
 |领域|任务|
 |---|---|
-|安全管理|<ul><li>检查安全分数，了解针对环境安全 <https://security.microsoft.com/securescore> () 。</li><li>继续定期查看 Microsoft 365 Defender 门户、云应用安全 和 SIEM 工具中的仪表板和报告。</li><li>查找并实施软件更新。</li><li>使用[ (](attack-simulation-training.md) Office 365 威胁智能中心中提供的攻击模拟培训，执行攻击模拟，以模拟网络网络钓鱼、密码加密) 。 [](office-365-ti.md)</li><li>查看"调查"选项卡上的"调查"选项卡上的云应用安全 (报告来查找) 。</li><li>检查 [合规性管理器](../../compliance/compliance-manager.md) ，查看适用于组织法规的状态 (如 GDPR、NIST 800-171) 。</li></ul>|
-|威胁防护|为管理员帐户实施增强保护： <ul><li>配置 [Privileged Access Workstations](/security/compass/privileged-access-devices) (PAW) 管理员活动。</li><li>配置[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)。</li><li>使用 SIEM) 工具配置安全信息和事件 (，以收集 Office 365、云应用安全 和其他服务（包括 AD FS）中的日志记录数据。 该审核日志仅存储 90 天的数据。 通过在 SIEM 工具中捕获此数据，你可以将数据存储更长时间。</li></ul>|
+|安全管理|<ul><li>检查安全分数，了解针对环境安全 <https://security.microsoft.com/securescore> () 。</li><li>继续定期查看 Microsoft 365 Defender 门户、云应用安全 和 SIEM 工具中的仪表板和报告。</li><li>查找并实施软件更新。</li><li>使用威胁智能中心中包含的攻击模拟 (攻击模拟技术，对pear-phishing、password-simulation和暴力[](attack-simulation-training.md)密码攻击Office 365[攻击](office-365-ti.md)) 。</li><li>查看"调查"选项卡上的"调查"选项卡上的云应用安全 (报告来查找) 。</li><li>检查 [合规性管理器](../../compliance/compliance-manager.md) ，查看适用于组织法规的状态 (如 GDPR、NIST 800-171) 。</li></ul>|
+|威胁防护|为管理员帐户实施增强保护： <ul><li>配置 [Privileged Access Workstations](/security/compass/privileged-access-devices) (PAW) 管理员活动。</li><li>配置[Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)。</li><li>使用 SIEM (配置安全信息和事件) ，以收集 Office 365、云应用安全 和其他服务（包括 AD FS）中的日志记录数据。 该审核日志数据存储 90 天。 通过在 SIEM 工具中捕获此数据，你可以将数据存储更长时间。</li></ul>|
 |标识和访问管理|<ul><li>为所有用户启用和强制执行 MFA。</li><li>实现一组 [条件访问和相关策略](microsoft-365-policies-configurations.md)。</li></ul>|
-|信息保护| 调整并实施信息保护策略。 这些资源包括示例： <ul><li>[针对 GDPR 的 Office 365 信息保护](/compliance/regulatory/gdpr)</li><li>[配置具有三层保护的 Teams](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> 使用数据丢失防护策略和监视工具Microsoft 365中存储的数据Microsoft 365 (而不是云应用安全) 。 <p> 将 云应用安全与 Microsoft 365 一起用于除数据丢失防护 (其他高级) 。|
+|信息保护| 调整并实施信息保护策略。 这些资源包括示例： <ul><li>[针对 GDPR 的 Office 365 信息保护](/compliance/regulatory/gdpr)</li><li>[配置具有三层保护的 Teams](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> 使用数据丢失防护策略和监视工具Microsoft 365中存储的数据Microsoft 365 (而不是云应用安全) 。 <p> 将云应用安全与Microsoft 365一起用于除数据丢失防护 (其他高级警报) 。|
 |
 
 ## <a name="beyond"></a>超出
@@ -94,9 +94,9 @@ ms.locfileid: "58503223"
 |领域|任务|
 |---|---|
 |安全管理|<ul><li>通过使用安全分数和密码继续规划 <https://security.microsoft.com/securescore> () 。</li><li>继续定期查看 Microsoft 365 Defender 门户、云应用安全 和 SIEM 工具中的仪表板和报告。</li><li>继续查找和实施软件更新。</li><li>将电子数据展示集成到法律和威胁响应流程中。</li></ul>|
-|威胁防护|<ul><li>为[](/windows-server/identity/securing-privileged-access/securing-privileged-access)AD、AD (FS) 本地标识组件 (安全特权访问) 。</li><li>使用云应用安全监视内部威胁。</li><li>使用卷影服务发现卷影 IT SaaS 云应用安全。</li></ul>|
+|威胁防护|<ul><li>为[](/windows-server/identity/securing-privileged-access/securing-privileged-access)AD、AD (FS) 内部部署标识组件 (安全特权访问) SPA) 。</li><li>使用云应用安全监视内部威胁。</li><li>使用卷影服务发现卷影 IT SaaS 云应用安全。</li></ul>|
 |标识和访问管理|<ul><li>优化策略和运营过程。</li><li>使用 Azure AD Identity Protection 识别内部威胁。</li></ul>|
-|信息保护|优化信息保护策略： <ul><li>Microsoft 365 DLP Office 365 或 Azure 信息保护 (和数据丢失防护) 和敏感度标签。</li><li>云应用安全策略和警报。</li></ul>|
+|信息保护|优化信息保护策略： <ul><li>Microsoft 365 DLP Office 365 或 Azure 信息保护 (和) 敏感度标签和数据丢失防护。</li><li>云应用安全策略和警报。</li></ul>|
 |
 
 另请参阅[：如何缓解快速网络攻击，例如，"Pbya"和"WannaCrypt"。](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/)

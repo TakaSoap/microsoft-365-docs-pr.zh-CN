@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170974"
 ---
 # <a name="list-machines-api"></a>列出计算机 API
 
@@ -63,8 +63,8 @@ OData 的查询在 上受支持 `$filter` `computerDnsName` `id` `version` `devi
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 响应将仅包括用户有权访问的设备，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 

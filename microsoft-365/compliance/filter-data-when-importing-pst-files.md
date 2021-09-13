@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: 了解如何在将 PST 文件导入到 Microsoft 365 时，使用 Microsoft 365 导入服务中的智能导入功能筛选Microsoft 365。
+description: 了解如何在将 PST 文件导入数据库时，使用 Microsoft 365 导入服务中的智能导入功能筛选Microsoft 365。
 ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171368"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>导入 PST 文件时筛选数据
 
@@ -58,7 +58,7 @@ ms.locfileid: "58569065"
     
 - 使用网络上载创建导入作业后，安全 & 合规中心的"导入"页上的导入作业的状态将设置为"正在分析"，这意味着 Microsoft 365正在分析您上载的 PST 文件的数据。 单击 **"刷新** ![ 刷新"。](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) 更新导入作业的状态。 
     
-- 对于驱动器寄送导入作业，Microsoft 数据中心工作人员收到Microsoft 365，将 PST 文件上载到组织的 Azure 存储区域后，系统将会分析数据。
+- 对于驱动器寄送导入作业，Microsoft 数据中心工作人员收到Microsoft 365，将 PST 文件上传到组织的 Azure 存储区域后，系统将会分析这些数据。
   
 ## <a name="filter-data-that-gets-imported-to-mailboxes"></a>筛选导入到邮箱的数据
 
@@ -98,7 +98,7 @@ ms.locfileid: "58569065"
   
     可以配置以下筛选器：
   
-      - **Age** - 选择一个年数，以便仅导入比指定年龄更新的项目。 请参阅 [详细信息部分](#more-information)，了解有关如何Microsoft 365年龄筛选器的年龄 **存储桶** 的说明。 
+      - **Age** - 选择一个年数，以便仅导入比指定年龄更新的项目。 请参阅 [详细信息部分](#more-information)，了解有关如何确定Microsoft 365年龄筛选器的年龄 **存储桶的说明**。 
   
       - **类型** - 此部分显示在导入作业的 PST 文件中找到的所有邮件类型。 可以取消选中要排除的邮件类型旁边的框。 不能排除其他邮件类型。 有关 [其他类别](#more-information) 中包含的邮箱项目列表，请参阅详细信息部分。
   
@@ -123,13 +123,13 @@ ms.locfileid: "58569065"
   
     a. 单击 **"否，我希望导入所有** 内容以将 PST 文件内的所有数据导入Office 365，然后单击"下一步 **"。**
   
-    b. 在"**导入数据Office 365** 页上，单击 **"导入数据**"以开始导入。 将显示将导入的数据总量。 
+    b. 在"**将数据导入Office 365** 页上，单击 **"导入数据**"以开始导入。 将显示将导入的数据总量。 
   
-6. 在"导入 **"选项卡** 上，单击" **刷新刷新** ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) "。。 导入作业的状态显示在"状态 **"** 列中。
+6. 在"导入 **"选项卡** 上，单击" **刷新刷新** ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) "。 导入作业的状态显示在"状态 **"** 列中。
   
 7. 单击导入作业可显示更详细的信息，例如每个 PST 文件的状态和配置的筛选器设置。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 如何Microsoft 365年龄筛选器的增量？ 当Microsoft 365 PST 文件时，它会查看每个项目的已发送或已接收时间戳 (如果某个项目同时具有已发送和已接收时间戳，则选择) 。 然后Microsoft 365该时间戳的年值，并将其与当前日期进行比较以确定项目的年龄。 然后，这些年龄用作"年龄"筛选器的下拉列表 **中的** 值。 例如，如果 PST 文件包含来自 2016、2015 和 2014 的邮件，则 **Age** 筛选器中的值为 **1 年****、2** 年和 **3 年**。
   

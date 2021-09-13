@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在手机上Microsoft 365 管理移动应用。
-ms.openlocfilehash: 591a5440d3257afad9728b75013737daebad73694322774db19e8eacb0700abb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861863"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170836"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>将Microsoft 365 管理移动应用安装在手机上
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-可以使用移动Microsoft 365 管理管理用户、监视服务运行状况以及从手机执行其他管理任务。
+可以使用 Microsoft 365 管理移动应用管理用户、监视服务运行状况以及从手机执行其他管理任务。
 
 ## <a name="try-it"></a>试一试！
 

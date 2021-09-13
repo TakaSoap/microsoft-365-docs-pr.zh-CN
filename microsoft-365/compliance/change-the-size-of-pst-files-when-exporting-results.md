@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 导出电子数据展示搜索结果时，可以更改下载到计算机中的 PST 文件的默认大小。
 ms.openlocfilehash: 7c77edc4e565a76be41b274aac597c56780395d4
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58501963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162060"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>导出电子数据展示搜索结果时更改 PST 文件的大小
 
@@ -33,7 +33,7 @@ ms.locfileid: "58501963"
 
 在您将用于导出电子数据展示搜索结果的计算机上执行以下过程。
   
-1. 关闭电子数据展示导出工具（如果已打开）。 
+1. 如果电子数据展示导出工具已打开，请关闭该工具。 
     
 2. 使用文件名后缀 .reg 将以下文本保存到 Window 注册表文件中;例如，PstExportSize.reg。 
     

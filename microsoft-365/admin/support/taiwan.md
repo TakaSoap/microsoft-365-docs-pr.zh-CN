@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ea6a80fd11222fdc355f7826f75a5a1f63bc26535f2ca0261a403e6d6b874ab2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 76536a2977da404c50ed75980d80683842429f9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170859"
 ---
 # <a name="contact-support-for-taiwan"></a>联系台湾支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53861935"
 ## <a name="phone-number"></a>电话号码
 0800 666 802
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 中文 (国) ：Mon-Fri上午 9 点到下午 6 点

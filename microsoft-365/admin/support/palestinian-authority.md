@@ -12,14 +12,14 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eaf5c51ec14a4affa4d1404f31dd5f0d46c3e2a974b1dce684da7c95befd6ad9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bf725852c84759ef96a03c0e8f78d2772727469a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171466"
 ---
-# <a name="contact-support-for-palestinian-authority"></a>联系支持机构
+# <a name="contact-support-for-palestinian-authority"></a>联系支持人员
 
 [查找另一个国家/地区](../../business-video/get-help-support.md)。
 
@@ -32,12 +32,12 @@ ms.locfileid: "53831703"
 
 输入代码 7702
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 阿拉伯语：Sun-Thu 10 AM-6 PM
 
-英语：Mon-Fri 10 AM-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 

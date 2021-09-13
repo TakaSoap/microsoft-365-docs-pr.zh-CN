@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 本文提供有关将电子邮件发送到收件箱的问题的疑难解答信息，Microsoft 365 &客户进行批量邮件Microsoft 365最佳实践。
+description: 本文提供有关将电子邮件发送到收件箱的问题疑难解答信息，Microsoft 365 &客户进行批量邮件Microsoft 365最佳实践。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 751202d21e55f6a3e3f4ea2116e4a24f1ed10a044311573f3c1f0123e3e8cb00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56826110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170001"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>有关发送到 Microsoft 365 的邮件的疑难解答
 
@@ -38,7 +38,7 @@ ms.locfileid: "56826110"
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和域的发送信誉？
 
-EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsoft 产品（如 Exchange Server）。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
+EOP 筛选技术旨在为用户和其他 Microsoft 产品（如 Microsoft 365）提供反垃圾邮件Exchange Server。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>您是否正从新的 IP 地址发送电子邮件？
 
@@ -62,7 +62,7 @@ EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsof
 
 出现一些传送问题是因为发件人的 IP 地址被 Microsoft 阻止或用户账户由于以前的垃圾邮件活动被标识为已禁止的发件人。如果您认为您错误地收到了 NDR，首先按照在 NDR 邮件中解决此问题的说明进行操作。
 
-有关你收到的错误的详细信息，请参阅电子邮件未送达报告中的错误代码[列表](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)Exchange Online。
+有关你收到的错误的详细信息，请参阅电子邮件未送达报告中的错误代码列表[Exchange Online。](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
  例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止：
 
@@ -82,13 +82,13 @@ EOP 筛选技术旨在提供反垃圾邮件保护，Microsoft 365其他 Microsof
 
 您收到了 NDR，因为从 IP 地址检测出可疑活动，且该地址在接受进一步评估时已暂时受限。如果通过评估后该怀疑被解除，则该限制将很快取消。
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我无法接收来自邮件中发件人Microsoft 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我无法从邮件中的发件人Microsoft 365
 
  为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息，请参阅Exchange Online Protection [IP 地址](../../enterprise/urls-and-ip-address-ranges.md)。
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>向用户发送批量电子邮件Microsoft 365最佳实践
 
-如果你经常向用户发起批量电子邮件Microsoft 365，并且希望确保你的电子邮件以安全且及时的方式到达，请按照本部分中的提示操作。
+如果你经常向用户Microsoft 365电子邮件活动，并且希望确保你的电子邮件以安全且及时的方式到达，请按照本部分中的提示操作。
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保"发送者"名称反映发送邮件的人
 

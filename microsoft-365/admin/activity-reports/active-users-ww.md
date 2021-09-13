@@ -1,5 +1,5 @@
 ---
-title: 评估Microsoft 365活动用户报告
+title: 评估Microsoft 365用户报告
 ms.author: pebaum
 author: pebaum
 manager: scotv
@@ -23,20 +23,20 @@ search.appverid:
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: 了解如何使用 Microsoft 365 报告仪表板获取活动Microsoft 365 管理中心并了解使用的产品许可证数量。
 ms.openlocfilehash: 456d561246a1c2073b571fa5c48ed97cc9f71849
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162169"
 ---
-# <a name="assess-the-microsoft-365-active-users-report"></a>评估Microsoft 365活动用户报告
+# <a name="assess-the-microsoft-365-active-users-report"></a>评估Microsoft 365用户报告
 
-the Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，可使用" **活动用户**"报表来了解组织中个人正在使用的产品许可证数量，并深入了解哪些用户正在使用哪些许可证。此报表可帮助管理员确定未被充分利用的产品或是可能需要其他培训或信息的用户。 
   
 > [!NOTE]
-> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读取者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>如何获取活动用户报表
 
@@ -45,9 +45,9 @@ the Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 ## <a name="interpret-the-active-users-report"></a>解读活动用户报表
 
-You can view active users in the Office 365 by choosing the **Active users** tab.<br/>![Microsoft 365报告 - Microsoft Office 365活动用户。](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
+You can view active users in the Office 365 by choosing the **Active users** tab.<br/>![Microsoft 365报表 - Microsoft Office 365活动用户。](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
-- 可以查看" 活动用户"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您在报告中查看特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
+- 可以查看" 活动用户"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您查看报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
 
 - 每个报告中的数据通常涵盖过去 24 至 48 小时的数据。
 
@@ -68,4 +68,4 @@ You can view active users in the Office 365 by choosing the **Active users** tab
 
 
 
-如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。 请查看活动报告中的活动报告中的如何隐藏用户 **级别**[Microsoft 365 管理中心。](activity-reports.md)  
+如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。 请查看活动报告中的活动报告中 **的** 如何隐藏用户级别 [Microsoft 365 管理中心。](activity-reports.md)  

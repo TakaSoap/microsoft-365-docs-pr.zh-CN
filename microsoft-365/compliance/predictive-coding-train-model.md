@@ -1,5 +1,5 @@
 ---
-title: 在 Advanced eDiscovery 中训练预测编码Advanced eDiscovery
+title: 在 Advanced eDiscovery 中训练预测Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: ''
 ms.openlocfilehash: 94351858da196edfd719d7b07ab6f125abf9d658
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170136"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>训练预测编码模型 (预览) 
 
@@ -35,9 +35,9 @@ ms.locfileid: "58570229"
 
 1. In the Microsoft 365 合规中心， open an Advanced eDiscovery case and then select the **Review sets** tab.
 
-2. 打开审阅集，然后单击分析 **管理** 预测  >  **编码 (预览) 。**
+2. 打开审阅集，然后单击分析 **管理** 预测编码  >  **(预览) 。**
 
-3. 在预测 **编码模型 (预览)** 页面上，选择要训练的模型。
+3. 在" **预测编码模型 (预览)** 页面上，选择要训练的模型。
 
 4. 在"**概述"** 选项卡上的"**第 1 轮"下**，单击"**开始下一个培训轮"。**
 
@@ -49,13 +49,13 @@ ms.locfileid: "58570229"
 
 6. 标记完所有 50 个项目后，单击"完成 **"。**
 
-    系统需要几分钟时间从你的标签"学习"并更新模型。 此过程完成后，将在"预测编码模型和预览模型"页上为 (**状态)** 状态。
+    系统需要几分钟时间从你的标签"学习"并更新模型。 此过程完成后，将在"预测编码模型和预览模型"页上为模型 **(就绪)** 状态。
 
 ## <a name="perform-additional-training-rounds"></a>执行其他培训轮
 
 执行第一轮培训后，可以按照上一部分中的步骤执行后续培训轮。 唯一的区别是，将在"模型概述"选项卡上更新培训 **轮** 的数量。例如，执行第一轮培训后，可以单击"开始 **下** 一个培训轮"开始第二轮培训。 等等。
 
-每轮培训 (进行中和已完成) 都将显示在模型的"培训"选项卡上。  选择培训轮时，将显示一个包含该轮的信息和指标的飞出页。
+每组培训 (进行中和已完成) 都将显示在模型的"培训"选项卡上。  选择培训轮时，将显示一个包含该轮的信息和指标的飞出页。
 
 ## <a name="what-happens-after-you-perform-a-training-round"></a>执行培训轮后会发生什么情况
 
@@ -63,7 +63,7 @@ ms.locfileid: "58570229"
 
 - 根据你在培训集内标记 40 个项目时如何，模型会从你的标签中学习并更新自身，以变得更准确。
 
-- 然后，模型将处理整个审阅集内的每一项，并分配一个介于 0 和 **1** 之间（与 () 不相关）和 1 (相关的 **) 。**
+- 然后，该模型将处理整个审阅集的每个项目，并分配一个介于 **0** 和 1 之间（ (不相关的) **和 1** (相关的) ）。
 
 - 模型为在培训轮中标记的控件集的 10 个项目分配预测分数。 模型会将这 10 个项目的预测分数与在培训轮中分配给该项目的实际标签进行比较。 基于此比较，模型标识以下分类 (控件集混淆矩阵) 评估模型预测性能：
 

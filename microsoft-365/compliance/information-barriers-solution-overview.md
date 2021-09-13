@@ -17,11 +17,11 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171346"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>信息障碍Microsoft 365
 
@@ -34,7 +34,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - 具有商业机密材料的内部团队不应在线呼叫或与组织中某些组的人聊天
 - 研究团队只能与产品开发团队在线通话或聊天
 
-## <a name="configure-information-barriers-for-microsoft-365"></a>配置信息屏障Microsoft 365
+## <a name="configure-information-barriers-for-microsoft-365"></a>为用户配置Microsoft 365
 
 使用以下步骤为组织配置信息屏障：
 

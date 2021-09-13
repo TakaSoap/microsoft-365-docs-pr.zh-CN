@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8b4c886984696f2d6223ea84ae5c4e2572c72a9e1487679d6cdd4d015b2c6695
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b42ff09f1e363f115ecc06c361c8386b328b0bcb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161946"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "53863423"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `IdentityDirectoryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含涉及运行 Active Directory 和 AD (本地域控制器) 。 此表捕获各种与标识相关的事件，如密码更改、密码过期和用户主体名称 (UPN) 更改。 它还捕获域控制器上的系统事件，如计划任务和 PowerShell 活动。 使用此参考来构建从此表返回信息的查询。
+高级 `IdentityDirectoryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含涉及运行 Active Directory 本地域控制器的事件 (AD) 。 此表捕获各种与标识相关的事件，如密码更改、密码过期和 UPN (用户) 名称。 它还捕获域控制器上的系统事件，如计划任务和 PowerShell 活动。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
@@ -49,7 +49,7 @@ ms.locfileid: "53863423"
 | `Application` | string | 执行录制的操作的应用程序 |
 | `TargetAccountUpn` | string | 用户主体 (UPN) 记录操作应用于的帐户的名称 |
 | `TargetAccountDisplayName` | string | 已记录操作应用于的帐户的显示名称 |
-| `TargetDeviceName` | string | 已记录 (的) 的设备的完全限定域名和 FQDN |
+| `TargetDeviceName` | string | 已记录 () 的设备的完全限定域名和 FQDN |
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
 | `DestinationPort` | string | 活动的目标端口 |

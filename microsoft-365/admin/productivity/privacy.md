@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何使用工作效率分数保护隐私。
-ms.openlocfilehash: 928dfc8677cc452fb3c6309d6a42e4390a238d52b7dffa0217a4b4507c8d72a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170338"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>工作效率分数的隐私控件
 
-生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。  你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 有关详细信息，请参阅生产力 [分数概述](productivity-score.md)。
+生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。  你的组织的分数反映了人员和技术体验指标，可以与类似你组织的基准进行比较。 有关详细信息，请参阅生产力 [分数概述](productivity-score.md)。
 
-你的隐私对 Microsoft 非常重要。 若要了解如何保护你的隐私，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。 生产力分数使作为组织的 IT 管理员可以访问隐私设置，以帮助确保你查看的任何工作效率分数信息都是可操作的信息，同时不会损害组织在 Microsoft 中的信任。
+你的隐私对 Microsoft 非常重要。 若要了解如何保护你的隐私，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。 工作效率分数使作为组织的 IT 管理员可以访问隐私设置，以帮助确保你查看的任何工作效率分数信息都是可操作的信息，同时不会损害组织在 Microsoft 中的信任。
 
 在人员体验区域中，指标仅在组织级别可用。 此区域通过查看内容Microsoft 365、移动性、会议、团队合作和通信类别来了解用户如何使用网站。 我们支持多个级别的控制，以帮助你满足内部隐私策略需求。
 这些控件可让你：
 
-- 灵活的管理员角色，可控制谁可以在"工作效率分数"中查看信息。
+- 灵活的管理员角色，可控制谁可以看到 Productivity Score 中的信息。
 - 选择退出人员体验区域的功能。
 
 ## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>灵活的管理员角色，可控制谁可以看到 Productivity Score 中的信息
@@ -51,9 +51,9 @@ ms.locfileid: "53822904"
 - 报告读取者
 - 使用情况摘要报告阅读器
 
-将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不一定是 IT 管理员。 通过此角色，他们可以访问管理中心内Microsoft 365分数体验。
+将"报告读取者"或"使用率摘要报告读取者"角色分配给负责变更管理和采用的任何人员，但不必是 IT 管理员。 通过此角色，他们可以访问管理中心内Microsoft 365分数体验。
 
-"使用率摘要报告读取者"角色必须通过 PowerShell cmdlet 分配，直到它在 2020 年Microsoft 365 管理中心分配。
+"使用率摘要报告读取者"角色必须经过 PowerShell cmdlet 分配，直到它在 2020 年Microsoft 365 管理中心分配。
 
 若要使用 PowerShell 分配使用情况摘要报告读取者角色：
 

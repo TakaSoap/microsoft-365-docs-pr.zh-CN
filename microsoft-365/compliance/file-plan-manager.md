@@ -18,11 +18,11 @@ ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
 ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573267"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171371"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 

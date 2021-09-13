@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: 使用全局管理员凭据登录企业Microsoft 365查看设备策略和操作。
 ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169822"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>查看和管理策略和设备
 

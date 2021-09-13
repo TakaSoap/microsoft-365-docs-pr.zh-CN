@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169650"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -358,10 +358,6 @@ ms.locfileid: "58928760"
 8. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。 如有需要，请参见[活动资源管理器（预览）入门](data-classification-activity-explorer.md)。
 
 9. 检查活动资源管理器中的事件。
-
-### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>方案 5：配置策略以使用自定义业务理由
-
-
 
 ## <a name="see-also"></a>另请参阅
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 19e15393714a62e070ba7854854ab29f0e804bd45e275e4c620488076504b0cd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 205b24ac09bd49201daa9ee7b6243159e77bbad4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800290"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171259"
 ---
 # <a name="get-software-by-id"></a>按 ID 获取软件
 

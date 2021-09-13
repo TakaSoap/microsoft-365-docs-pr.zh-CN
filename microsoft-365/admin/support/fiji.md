@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 103565ad88b136cf47daeb89e0a4c218f2633a5ed0d584960b8bc7e809069f7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bc87301a1012f74f34d2854ce3d35496a20dd639
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162152"
 ---
 # <a name="contact-support-for-fiji"></a>联系斐济支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53862211"
 
 877 860 4596
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

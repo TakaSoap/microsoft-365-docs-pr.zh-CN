@@ -24,11 +24,11 @@ ms.topic: article
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.openlocfilehash: 6dd5befd3dc0ef39d4a8659e6d4dcad9b372002f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162267"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切换到 Microsoft Defender for Endpoint - 阶段 3：载入
 
@@ -73,7 +73,7 @@ ms.locfileid: "58572535"
 | Windows 8.1 企业版 <br/>Windows 8.1 专业版 <br/>Windows 7 SP1 Enterprise <br/>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<br/><br/>**注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent)。        |
 | WindowsServer 2019 及更高版本 <br/>WindowsServer 2019 核心版本 <br/>Windows服务器版本 1803 及更高版本 | [本地脚本](configure-endpoints-script.md) <br/>[组策略](configure-endpoints-gp.md) <br/>[配置管理器](configure-endpoints-sccm.md) <br/>[System Center Configuration Manager](configure-endpoints-sccm.md) <br/>[用于非永久性设备的 VDI 载入脚本](configure-endpoints-vdi.md) <br/><br/>**注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，我们建议使用组策略、Microsoft Endpoint Configuration Manager或 Intune。    |
 | Windows Server 2016 <br/>Windows Server 2012 R2 <br/>Windows Server 2008 R2 SP1  | [Microsoft 365 Defender 门户](configure-server-endpoints.md)<br/>[Azure Defender](/azure/security-center/security-center-wdatp) |
-| macOS：11.3.1 (大 Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave)  | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
+| macOS：11.3.1 (Big Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave)  | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
 | iOS | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
 | Linux：RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 或更高版本 LTS;SLES 12+;Debian 9+;Oracle Linux 7.2 | [载入非 Windows 设备](configure-endpoints-non-windows.md)  |
 
@@ -83,26 +83,26 @@ ms.locfileid: "58572535"
 
 |操作系统  |指南  |
 |---------|---------|
-| Windows 10 <br/> Windows Server 2019<br/> Windows服务器、版本 1803 或更高版本<br/> Windows Server 2016<br/> Windows Server 2012 R2  | 请参阅 [运行检测测试](run-detection-test.md)。 <br/><br/>访问 Defender for Endpoint 演示方案站点 [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) () 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。    |
-| macOS：11.3.1 (大 Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave)     | 从 下载并使用 DIY 应用 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>有关详细信息，请参阅[macOS 上的 Defender for Endpoint。](microsoft-defender-endpoint-mac.md)        |
+| Windows 10 <br/> Windows Server 2019<br/> Windows服务器、版本 1803 或更高版本<br/> Windows Server 2016<br/> Windows Server 2012 R2  | 请参阅 [运行检测测试](run-detection-test.md)。 <br/><br/>访问 Defender for Endpoint 演示方案站点 () [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。    |
+| macOS：11.3.1 (Big Sur) ;10.15 (加泰罗尼亚语) ;10.14 (Mojave)     | 从 下载并使用 DIY 应用 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>有关详细信息，请参阅[macOS 上的 Defender for Endpoint。](microsoft-defender-endpoint-mac.md)        |
 | Linux：RHEL 7.2+;CentOS Linux 7.2+;Ubuntu 16 LTS 或更高版本 LTS;SLES 12+;Debian 9+;Oracle Linux 7.2 | 1. 运行以下命令，并查找 **结果 1：** <br/>`mdatp health --field real_time_protection_enabled`. <br/> 2. 打开"终端"窗口，并运行以下命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/> 3. 运行以下命令以列出任何检测到的威胁： <br/>`mdatp threat list`. <br/><br/>有关详细信息，请参阅[Linux 上的 Defender for Endpoint。](microsoft-defender-endpoint-linux.md) |
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>确认Microsoft Defender 防病毒终结点处于被动模式
 
-现在终结点已载入到 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒被动模式运行。 您可以使用多种方法之一，如下表所述：
+现在终结点已载入 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒处于被动模式。 您可以使用多种方法之一，如下表所述：
 
 | 方法  | 需执行的操作  |
 |:-------|:-------|
-|命令提示符     | 1. 在Windows上，打开命令提示符。 <br/> 2. 键入 `sc query windefend` ，然后按 Enter。 <br/> 3. 查看结果以确认Microsoft Defender 防病毒处于被动模式。         |
+|命令提示符     | 1. 在 Windows上，打开命令提示符。 <br/> 2. 键入 `sc query windefend` ，然后按 Enter。 <br/> 3. 查看结果，确认Microsoft Defender 防病毒处于被动模式。         |
 | PowerShell     | 1. 在Windows上，以Windows PowerShell打开"登录"。 <br/> 2. 运行以下 PowerShell cmdlet：。 `Get-MpComputerStatus | select AMRunningMode` <br/> 查看结果。 你应该会看到被动 **模式**。  |
-| Windows 安全中心应用 | 1. 在Windows上，打开Windows 安全中心应用。 <br/>2. 选择 **病毒&威胁防护。**<br/>3. **Who保护我？选择** 管理 **提供程序**。 <br/>4. 在"**安全提供程序"** 页上的"**防病毒**"下 **，Microsoft Defender 防病毒"打开"。** |
+| Windows 安全中心应用 | 1.在Windows上，打开Windows 安全中心应用。 <br/>2. 选择 **病毒&威胁防护。**<br/>3. **Who保护我？选择** 管理 **提供程序**。 <br/>4. 在"**安全提供程序"** 页上的"**防病毒**"下，应该会看到Microsoft Defender 防病毒 **打开。** |
 | 任务管理器 | 1. 在Windows上，打开"任务管理器"应用。 <br/>2. 选择" **详细信息"** 选项卡。<br/>3. 在 **MsMpEng.exe** 查找列表。 |
 
 > [!NOTE]
-> 你可能会在 *Windows Defender 防病毒* 版本中 *Microsoft Defender 防病毒* 看到 Windows。
+> 你可能会在 *Windows Defender 防病毒* 版本中 *看到* Microsoft Defender 防病毒，而不是Windows。
 > 若要了解有关被动模式和主动模式的详细信息，请参阅有关被动Microsoft Defender 防病毒[的详细信息](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)。
 
-### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>手动Microsoft Defender 防病毒 Windows服务器设置为被动模式
+### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>手动Microsoft Defender 防病毒 Windows将 Windows 设置为被动模式
 
 若要在 Microsoft Defender 防病毒 Server、版本 1803 或更高版本或 Windows Server 2019 上将 Windows 设置为被动模式，请按照以下步骤操作：
 
@@ -121,11 +121,11 @@ ms.locfileid: "58572535"
 
 ### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>从Microsoft Defender 防病毒开始Windows Server 2016
 
-如果要使用Windows Server 2016，可能需要手动启动Microsoft Defender 防病毒。 可以在设备上使用 PowerShell cmdlet `mpcmdrun.exe -wdenable` 执行此任务。
+如果使用 Windows Server 2016，可能需要手动Microsoft Defender 防病毒启动。 可以在设备上使用 PowerShell cmdlet `mpcmdrun.exe -wdenable` 执行此任务。
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>获取更新Microsoft Defender 防病毒
 
-确保Microsoft Defender 防病毒保持最新状态至关重要，可确保你的设备具有防止新的恶意软件和攻击技术所需的最新技术和功能，即使 Microsoft Defender 防病毒 处于被动模式。  (请参阅[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md).) 
+使Microsoft Defender 防病毒保持最新状态至关重要，可确保你的设备具有防止新的恶意软件和攻击技术所需的最新技术和功能，即使 Microsoft Defender 防病毒 处于被动模式。  (请参阅[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md).) 
 
 有两种类型的更新与使Microsoft Defender 防病毒保持最新有关：
 
@@ -149,7 +149,7 @@ ms.locfileid: "58572535"
 
 现在，你已载入 Defender for Endpoint，并且已卸载以前的非 Microsoft 解决方案，下一步是确保 Defender for Endpoint 正常工作。 执行此任务的一个好方法就是访问 Defender for Endpoint 演示方案站点 [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) () 。 尝试该页面上的一个或多个演示方案，包括以下方案：
 
-- 云传递保护
+- 云端保护
 - PUA (可能不需要) 
 - 网络保护 (NP) 
 

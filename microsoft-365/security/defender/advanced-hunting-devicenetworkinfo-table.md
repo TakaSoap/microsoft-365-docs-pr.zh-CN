@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 478ea1b605c4aeda5b1a6b5aec26b6abb57723ff7f82e5684a42af742afee3d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162212"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 

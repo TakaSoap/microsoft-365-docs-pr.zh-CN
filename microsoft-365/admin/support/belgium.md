@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 87f82863311183582f34d43d4d562662026b5a2de87ab296e5a527618761ef89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96b1a495217bfdbd84397d1f6f027c5427f82ee0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171485"
 ---
 # <a name="contact-support-for-belgium"></a>联系比利时支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53797634"
 ## <a name="phone-number"></a>电话号码
 0800 81174
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 荷兰语：Mon-Fri上午 9 点到下午 5 点

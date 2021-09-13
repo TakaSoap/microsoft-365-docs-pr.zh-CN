@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 了解如何将数据转移到新的业务标识。
-ms.openlocfilehash: 69953736003fb6d19be37baafb0715bc1468843fd2ed81b94b593c6e56a68ae7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170369"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到Microsoft 365 商业标准版
 
@@ -38,19 +38,19 @@ ms.locfileid: "53823899"
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **复制 OneDrive 数据**
-1. 在硬盘驱动器上创建一个临时文件夹，临时存储要迁移到企业Microsoft 365文件。
+1. 在硬盘驱动器上创建一个临时文件夹，临时存储要迁移到企业Microsoft 365的文件。
     
 2. 转到 [https://onedrive.live.com/](https://onedrive.live.com/) 并使用用于访问你的订阅的 Microsoft 帐户Microsoft 365 家庭版登录。 
     
 3. 将要用于企业Microsoft 365复制到在步骤 1 中创建的本地文件夹。
     
- **将OneDrive文件导入Microsoft 365企业**
+ **将OneDrive文件导入Microsoft 365 for business**
 1. 转到[admin.microsoft.com，](https://go.microsoft.com/fwlink/?LinkId=816877)然后使用你的Microsoft 365 商业应用版用户名和密码登录。 
     
 2. 在左上角选择" **应用启动器**"图标，然后选择" **OneDrive**"。
   
     > [!TIP]
-    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果发生这种情况，请在"欢迎使用 **OneDrive for Business，** 选择"下一 **步"。** 设置OneDrive后，选择 **"OneDrive准备就绪"。** 
+    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果发生这种情况，请在"欢迎使用 **OneDrive for Business** 页上，选择"下一 **步"。** 设置OneDrive后，选择 **"OneDrive就绪"。** 
   
 3. 你将转到一个空的 OneDrive 文件夹。 如果要创建子文件夹，请选择"新建 **文件夹** \> **"。**
 
@@ -72,7 +72,7 @@ ms.locfileid: "53823899"
 2. 让每位用户将其电子邮件帐户添加到 Outlook。若要了解如何操作，请参阅[在 Outlook (for Windows) 中设置电子邮件](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)或[在 Outlook for Mac 2011 中设置电子邮件](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54)。
     
  **从 Outlook 数据文件导入信息**
-1. 这会将 PST 文件中存储的电子邮件、日历、任务和联系人合并到Microsoft 365企业电子邮件帐户。
+1. 这会将 PST 文件中存储的电子邮件、日历、任务和联系人合并到Microsoft 365商业电子邮件帐户。
     
 2. 若要将 PST 文件中存储的信息导入 Microsoft 365 for business 电子邮件帐户，请让每个用户完成从 Outlook .pst 文件导入电子邮件、联系人[和日历中的步骤](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
     

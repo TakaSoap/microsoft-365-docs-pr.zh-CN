@@ -18,22 +18,22 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：与从德国 Microsoft 云迁移相关的云解决方案提供商的其他信息。
-ms.openlocfilehash: af437995566332679a06cf21803d2a5cb1e98008e49d6c7ff6927cf106abb2a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53848611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171324"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>云解决方案提供商的其他信息
 
-云解决方案 (支持) 的云解决方案提供商需要执行其他步骤，从德国 Microsoft 云迁移到新的德国数据中心区域。
+云解决方案提供商 (CSP) 支持客户需要在从德国 Microsoft 云迁移到新的德国数据中心区域期间执行其他步骤。
 
 ## <a name="partner-tenant-migration"></a>合作伙伴租户迁移
 
 不会迁移德国 Microsoft 云合作伙伴租户。 相反，将为新的德国Office 365区域的每个 Microsoft 合作伙伴创建一个新的服务租户。
 
-云解决方案提供商客户租户将迁移到新的德国数据中心区域，并链接到同一合作伙伴的新 Office 365 服务租户。 在客户转换后，合作伙伴可以使用德国数据中心区域的新 Office 365 服务租户管理客户。
+云解决方案提供商客户租户将迁移到新的德国数据中心区域，并链接到同一合作伙伴Office 365服务租户。 在客户转换后，合作伙伴可以使用德国数据中心区域的新 Office 365 服务租户管理客户。
 
 ## <a name="missing-subscriptions-in-azure"></a>Azure 中缺少订阅
 

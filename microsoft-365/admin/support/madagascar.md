@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d73a6999d8512d0c0796d32cff0c469a0e8257101999aef6bc69ce693ee3c914
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: da5f609b6f5a4e8bab42a58ec45128ca8ae697c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162124"
 ---
 # <a name="contact-support-for-madagascar"></a>联系针对百里达的支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "53862151"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri 11 AM-7 PM

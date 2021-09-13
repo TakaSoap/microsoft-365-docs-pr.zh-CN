@@ -28,21 +28,21 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到 Microsoft 365。
+description: 了解如何从 Gmail 或其他电子邮件提供商导入联系人、日历和电子邮件，并迁移到Microsoft 365。
 ms.openlocfilehash: adf36aea78019a98f8b5b49e316eeb64b3f05cbc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170290"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
-将电子邮件从 Gmail 或其他电子邮件提供商导入或迁移到Microsoft 365。
+将电子邮件从 Gmail 或其他电子邮件提供商导入或迁移到 Microsoft 365。
   
- **需要有关此的帮助？**  [请联系Microsoft 365商业支持人员](../../business-video/get-help-support.md)。 
+ **需要有关此的帮助？**  [联系Microsoft 365联系商业支持人员](../../business-video/get-help-support.md)。 
   
-对于此任务，你需要Outlook安装在桌面上的客户端版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+对于此任务，你需要Outlook桌面安装的版本。 Outlook大多数计划都包含Microsoft 365[计划](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
   
 ### <a name="migrate-gmail-to-microsoft-365"></a>将 Gmail 迁移到 Microsoft 365
 
@@ -78,13 +78,13 @@ ms.locfileid: "58556464"
   
 ## <a name="see-other-email-accounts-in-outlook"></a>请参阅电子邮件中的其他Outlook
 
-只想查看来自其他提供商的电子邮件， (Gmail、Yahoo 或 Live.com) Outlook？ 无需导入或迁移。 你可以设置Outlook或Outlook Web App，以便你可以从 Microsoft 365 邮箱的同一位置访问其他帐户，并发送、接收和阅读发送到这些帐户的电子邮件。
+只想查看来自其他提供商的电子邮件， (Gmail、Yahoo 或 Live.com) Outlook？ 无需导入或迁移。 你可以设置Outlook或Outlook Web App，以便你可以从 Microsoft 365 邮箱相同的位置访问其他帐户，并发送、接收和阅读发送到这些帐户的电子邮件。
   
 ### <a name="outlook-desktop"></a>Outlook (桌面) 
 
 将帐户（如专用 Gmail 帐户）添加到Outlook。
   
-- 打开Outlook"，然后转到"文件 \> **""添加帐户"。**
+- 打开Outlook"，然后转到"**文件** \> **""添加帐户"。**
     
 是否需要更详细的步骤？ 请参阅 [添加帐户](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   

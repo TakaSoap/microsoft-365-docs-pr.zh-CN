@@ -23,17 +23,17 @@ search.appverid:
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: 邮件中心帖子仅提供英语版本，但可以使用您为邮件中心指定的语言自动Microsoft 365。
 ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169746"
 ---
 # <a name="language-translation-for-message-center-posts"></a>翻译消息中心的帖子
 
 由于我们发布信息的时效性，消息中心的帖子只用英文书写，但可以自动以在Microsoft 365的个人语言设置中指定的语言显示。 如果将首选语言设置为除英语之外的其他语言，还可在消息中心看到一个用于自动翻译帖子的选项。 邮件是机器翻译为首选语言，这意味着计算机已进行翻译。 此选项可控制默认视图，但也可以使用下拉菜单将帖子翻译为任何支持翻译的语言，并以该语言显示。 如果选择英语，则会将消息恢复为原始的英语版本。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
   
 > [!IMPORTANT]
 > 在选择消息中心的语言设置之前，必须设置首选语言。 如果将语言设置为英语，则不会显示任何翻译选项。 不能为他人指定首选语言，每位用户必须自行更改此设置。 

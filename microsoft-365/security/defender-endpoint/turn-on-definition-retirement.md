@@ -1,5 +1,5 @@
 ---
-title: 打开定义停用功能Microsoft Defender 防病毒
+title: 打开定义停用以用于Microsoft Defender 防病毒
 description: 打开定义停用以用于Microsoft Defender 防病毒。
 keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 定义停用
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ab5eec813e27653269c4ca48e22066cdaaee1f1f31ca5f3ff59d3b09334c11db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162248"
 ---
 # <a name="turn-on-definition-retirement"></a>启用定义停用
 
@@ -37,7 +37,7 @@ ms.locfileid: "53889061"
 
 1. 在组策略管理终结点上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. 转到计算机 **配置**  >  **管理模板**  >  **Windows组件**  >  **Microsoft Defender 防病毒**  >  **网络检查系统 。** 
+2. 转到计算机 **配置**  >  **网络检查系统**  >  **Windows管理Microsoft Defender 防病毒**  >    >  **组件**。 
 
 3. 选择 **启用定义停用**。 默认情况下，启用此策略。 如果设置为 **"未配置"，** 则启用定义停用。 
 
@@ -48,5 +48,5 @@ ms.locfileid: "53889061"
 6. 部署更新的组策略对象。 请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。 
+> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用](/mem/intune/configuration/group-policy-analytics)组策略分析分析Microsoft Endpoint Manager组策略对象。 
   

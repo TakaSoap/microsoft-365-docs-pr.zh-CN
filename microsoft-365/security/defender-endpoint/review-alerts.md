@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
 ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170470"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>查看 Microsoft Defender for Endpoint 中的警报
 
@@ -36,7 +36,7 @@ ms.locfileid: "58571273"
 
 Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相关的攻击信号和警报，为警报提供完整的上下文，以构建详细的警报情景。
 
-对影响组织的警报快速会审、调查和采取有效操作。 了解触发它们的原因，及其从一个位置的影响。 有关详细信息，请在此概述中了解。
+对影响组织的警报快速会审、调查和采取有效措施。 了解触发它们的原因，及其从一个位置的影响。 有关详细信息，请在此概述中了解。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yiO5]
 

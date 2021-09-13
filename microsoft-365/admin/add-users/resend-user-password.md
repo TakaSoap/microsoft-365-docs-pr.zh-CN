@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 了解如何重置密码并将电子邮件发送给新的Microsoft 365用户。
-ms.openlocfilehash: edf6adb8c0485e094d13c2ec0cde3b9ae1f537fb91f0b86cd5d8b213ecb6bd62
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 916ac2f92f8cd6a7236525c733d4b5061368b0ef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827367"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169913"
 ---
 # <a name="resend-a-users-password---admin-help"></a>重新发送用户密码 - 管理员帮助
 
@@ -39,7 +39,7 @@ ms.locfileid: "53827367"
 
 ## <a name="resend-user-password"></a>重新发送用户密码
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 

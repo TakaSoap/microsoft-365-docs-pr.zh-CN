@@ -17,11 +17,11 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170048"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -50,7 +50,7 @@ ms.locfileid: "58863637"
 
 如果您能够轻松识别影响系统性能的软件，请转到软件供应商的知识库或支持中心。 如果他们对防病毒排除项有建议，请进行搜索。 如果供应商的网站没有支持票证，可以打开支持票证，并要求他们发布一个支持票证。
 
-我们建议软件供应商遵循与行业合作中的各种准则，尽量减少 [误报](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)。 供应商可以通过[MDSI (Microsoft Defender 安全智能门户) 。 ](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)
+我们建议软件供应商遵循与行业合作中的各种准则，尽量减少 [误报](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/)。 供应商可以通过 MICROSOFT Defender 安全智能门户或[MDSI (提交) 。 ](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)
 
 ## <a name="analyze-the-microsoft-protection-log"></a>分析 Microsoft 保护日志
 
@@ -69,7 +69,7 @@ ms.locfileid: "58863637"
 
 如果性能影响很大，请尝试按照配置并验证应用扫描的排除项中的步骤将进程添加到Microsoft Defender 防病毒[排除项](collect-diagnostic-data.md)。
 
-如果上一步无法解决问题，您可以通过以下部分中的进程监视器或Windows[记录器](#capture-performance-logs-using-windows-performance-recorder)来收集[](#capture-process-logs-using-process-monitor)更多信息。
+如果上一步不能解决问题，可以通过以下部分中的进程监视器或Windows[记录器](#capture-performance-logs-using-windows-performance-recorder)来收集[](#capture-process-logs-using-process-monitor)更多信息。
 
 ## <a name="capture-process-logs-using-process-monitor"></a>使用进程监视器捕获进程日志
 
@@ -78,7 +78,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 1. 将 [进程监视器 v3.60](/sysinternals/downloads/procmon) 下载到类似 的文件夹 `C:\temp` 。
 
 2. 若要删除文件的 Web 标记，请进行以下操作：
-    1. 右键单击 **"ProcessMonitor.zip"，** 然后选择"**属性"。**
+    1. 右键单击 **"ProcessMonitor.zip** 并选择"属性 **"。**
     1. 在"*常规"选项卡* 下，查找"安全性 *"。*
     1. 选中"取消阻止 **"旁边的框**。
     1. 选择“**应用**”。
@@ -134,7 +134,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 
 10. 在高 CPU 使用率条件期间具有两到四分钟的进程活动后，通过选择放大镜图标停止捕获。
 
-11. 若要使用唯一的名称和 .pml 格式保存捕获，请选择"文件 **"，然后选择** "保存 **..."。** 确保选择单选按钮"所有 **事件** "和"本机进程监视器格式 **(PML) "**。
+11. 若要使用唯一的名称和 .pml 格式保存捕获，请选择"文件 **"，然后选择** "保存 **..."。** 确保选择单选按钮"所有 **事件** "和"本机进程监视器格式 (**PML) "**。
 
     ![保存设置。](images/procmon-savesettings1.png)
 
@@ -152,11 +152,11 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 
 可以使用 WPR Windows记录器 (WPR) 向 Microsoft 支持人员提交其他信息。 WPR 是一款功能强大的录制工具，可创建记录Windows跟踪。
 
-WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可以从下载并安装[Windows ADK 下载](/windows-hardware/get-started/adk-install)。 您还可以下载它作为 Windows 10 SDK 中 Windows 10软件开发[工具包的一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
+WPR 是 Windows ADK (Windows部署工具包的一) ，可以从下载并安装 Windows [ADK 下载](/windows-hardware/get-started/adk-install)。 也可以下载它作为 Windows 10 Sdk 中软件开发工具包Windows 10[一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
 
 可以按照使用 WPR UI 捕获性能日志中的步骤使用 [WPR 用户界面](#capture-performance-logs-using-the-wpr-ui)。
 
-或者，您也可以使用命令行工具 *wpr.exe*，该工具在 Windows 8 和更高版本中可用，具体方法为按照使用 WPR CLI 捕获性能 [日志中的步骤操作](#capture-performance-logs-using-the-wpr-cli)。
+或者，也可以按照使用 [WPR CLI](#capture-performance-logs-using-the-wpr-cli)捕获性能日志中的步骤，使用 Windows 8 和更高版本中提供的命令行工具 *wpr.exe*。
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>使用 WPR UI 捕获性能日志
 
@@ -202,7 +202,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
     > [!IMPORTANT]
     > 如果用户可以直接 *重现* 性能问题，则应该选择"文件"以使用文件日志记录模式。 大多数问题属于此类别。 但是，如果用户无法直接重现问题，但在出现问题后很容易注意到该问题，则用户应选择"内存"以使用内存日志记录模式。 这可确保跟踪日志不会由于长时间运行而过度增长。
 
-9. 现在，你已准备好收集数据了。 退出与重现性能问题不相关的所有应用程序。 可以选择" **隐藏选项** "，将 WPR 窗口所占用的空间保持较小。
+9. 现在，你已准备好收集数据。 退出与重现性能问题不相关的所有应用程序。 可以选择隐藏 **选项** ，使 WPR 窗口所占用的空间保持较小。
 
     ![隐藏选项。](images/wpr-08.png)
 
@@ -222,11 +222,11 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
     ![选择"保存"。](images/wpr-10.png)
 
-13. 填写 **问题的详细说明类型** ：包含问题相关信息以及问题重现方法。
+13. 填写 **问题的详细描述类型** ：包含问题相关信息以及问题重现方法。
 
     ![填写详细信息。](images/wpr-12.png)
 
-    1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，1.is 另存为 `%user%\Documents\WPR Files\` 。
+    1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，它 1.is 另存为 `%user%\Documents\WPR Files\` 。
     1. 选择“**保存**”。
 
 14. 在合并跟踪时等待。
@@ -237,7 +237,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
     ![已保存 WPR 跟踪。](images/wpr-14.png)
 
-    在提交到 Microsoft 支持人员时同时包括 文件和 文件夹。
+    在提交到 Microsoft 支持人员时，同时包括 文件和 文件夹。
 
     ![文件和文件夹。](images/wpr-15.png)
 
@@ -247,7 +247,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
 1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `MDAV.wprp` `C:\traces` 。
 
-2. 右键单击"**开始**"菜单图标并选择"管理员Windows PowerShell (或命令 **) " (") "** 管理员"命令提示符窗口。
+2. 右键单击"**开始"** 菜单图标并选择"Windows PowerShell (") "命令提示符 **(") "** 管理员"命令提示符窗口。
 
 3. 当出现"用户帐户控制"对话框时，选择"**是"。**
 
@@ -273,7 +273,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
 7. 等待跟踪合并。
 
-8. 在提交到 Microsoft 支持人员时同时包括 文件和 文件夹。
+8. 在提交到 Microsoft 支持人员时，同时包括 文件和 文件夹。
 
 ## <a name="see-also"></a>另请参阅
 

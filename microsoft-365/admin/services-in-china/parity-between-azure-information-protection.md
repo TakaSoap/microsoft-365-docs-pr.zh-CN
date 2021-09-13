@@ -21,11 +21,11 @@ search.appverid:
 description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
 monikerRange: o365-21vianet
 ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
-ms.translationtype: HT
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170310"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 
@@ -199,7 +199,7 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
 
     1. 在 Windows Server 计算机上，如果扫描程序服务帐户已被授予安装的“**在本机登录**”权限，请使用此帐户登录并启动 PowerShell 会话。 
     
-        如果扫描程序服务帐户无法获得安装的“**在本机登录**”权限，请配合使用 *OnBehalfOf* 参数和 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，如[如何为 Azure 信息保护以非交互方式标记文件](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)中所述。
+        如果扫描程序服务帐户无法获得安装的“**在本机登录**”权限，请配合使用 *OnBehalfOf* 参数和 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，如 [如何为 Azure 信息保护以非交互方式标记文件](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)中所述。
 
     1. 运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，指定从 Azure AD 应用程序复制的值：
 

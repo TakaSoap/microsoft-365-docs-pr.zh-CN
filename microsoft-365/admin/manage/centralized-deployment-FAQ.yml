@@ -21,11 +21,11 @@ metadata:
   - MOE150
   description: 查看有关集中部署的常见问题的解答，Microsoft 365 管理中心。
   ms.openlocfilehash: e2b4717fb2e1d5e82d22ce5288c40187722495df
-  ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "58501999"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59169755"
 title: 集中部署常见问题解答
 summary: 建议 Office 365 管理员通过集中部署将 Office 加载项 (Word、Excel、PowerPoint 和 Outlook) 部署到组织内部的用户和组，只要组织满足本文所述使用集中部署的所有要求。
 sections:
@@ -33,10 +33,10 @@ sections:
   questions:
   - question: >
       我如何知道我的组织是否设置为集中部署？
-    answer: "外接程序的集中部署要求用户使用 Microsoft 365 企业应用版 (，并且使用其组织登录凭据登录 Office 并且) 具有Exchange Online邮箱。 订阅目录必须位于订阅目录中，或已联合Azure Active Directory。 \n \n仅联机邮箱支持集中部署。 它不支持部署到内部部署Exchange邮箱。\n\n可以使用集中[部署兼容性检查器](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   来确定你的订阅是否符合条件。 \n  \n"
+    answer: "外接程序的集中部署要求用户使用 Microsoft 365 企业应用版 (，并且使用组织的登录凭据登录 Office 并拥有) 邮箱Exchange Online登录。 订阅目录必须位于订阅目录中，或已联合Azure Active Directory。 \n \n仅联机邮箱支持集中部署。 它不支持部署到内部部署Exchange邮箱。\n\n可以使用集中[部署兼容性检查器](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   来确定你的订阅是否符合条件。 \n  \n"
   - question: >
       如何使用集中部署将外接程序用户分配作为目标？
-    answer: "集中部署支持向租户中的单个用户、组和每个人分配工作。 集中部署可用于顶级组或没有父组的组的用户，但不能用于嵌套组或具有父组的组的用户。 集中部署也是大多数组Azure Active Directory的一Office 365组、通讯组列表和安全组。 \n\n为了便于管理，最好使用组分配而不是单个用户分配。\n \n有关详细信息，请参阅用户 [和组分配](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。\n \n"
+    answer: "集中部署支持向租户中的单个用户、组和每个人分配工作。 集中部署可用于顶级组或没有父组的组的用户，但不能用于嵌套组或具有父组的组的用户。 集中部署也是大多数组Azure Active Directory的一部分，Office 365组、通讯组列表和安全组。 \n\n为了便于管理，最好使用组分配而不是单个用户分配。\n \n有关详细信息，请参阅用户 [和组分配](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)。\n \n"
   - question: "加载项向所有用户显示需要多久？ \n"
     answer: "外接程序最多可能需要 24 小时才能显示给所有用户。 外接程序更新、打开或关闭的更改或者外接程序删除可能需要相同的时间。 \n"
   - question: >
@@ -46,22 +46,22 @@ sections:
 
 
       有关管理用户访问权的信息，请参阅：
-       - [通过在所有客户端上关闭 Office Store 来阻止外接程序 (应用商店Outlook) ](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+       - [通过在所有客户端上关闭 Office Store 来阻止外接程序 (除Outlook) ](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
        - [指定可安装和管理 Outlook 加载项的管理员和用户](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
-  - question: "集中部署是否使管理员能够灵活地选择用于Outlook部署方法？ \n"
-    answer: "是的。 集中部署使管理员能够灵活地选择以下两种部署方法之一Outlook外接程序部署期间部署外接程序：\n         \n**可用** 用户可以通过选择\"主页\"Outlook\"从管理员管理的\">\"获取>**外接程序\"来安装外接程序**。\n \n**可选** 外接程序将自动部署到分配的用户，但他们可以选择将其删除。\n    \n"
+  - question: "集中部署是否使管理员能够灵活地选择外接程序Outlook方法？ \n"
+    answer: "能。 集中部署使管理员能够灵活地选择以下两种部署方法之一Outlook外接程序部署期间部署外接程序：\n         \n**可用** 用户可以通过选择\"主页\"Outlook管理员管理的\">\"获取>外接程序 **\"来安装外接程序**。\n \n**可选** 外接程序将自动部署到分配的用户，但他们可以选择将其删除。\n    \n"
   - question: "管理员能否将业务线 (LOB) 加载项？ \n"
-    answer: "是的。 管理员可以上载新的清单文件以支持管理员部署的 LOB 加载项的元数据更改。加载项在应用程序下次启动时Office更新。 Web 应用程序可以随时更改。\n \n有关详细信息，请参阅 [业务线加载项](./manage-addins-in-the-admin-center.md)。  \n"
+    answer: "能。 管理员可以上载新的清单文件以支持管理员部署的 LOB 加载项的元数据更改。加载项在应用程序下次启动时Office更新。 Web 应用程序可以随时更改。\n \n有关详细信息，请参阅 [业务线加载项](./manage-addins-in-the-admin-center.md)。  \n"
   - question: "管理员可以关闭加载项吗？ \n"
     answer: >
-      是的。 管理员可以从 Microsoft 管理中心为所有用户打开或关闭他们部署的外接程序。
+      能。 管理员可以从 Microsoft 管理中心为所有用户打开或关闭他们部署的外接程序。
 
 
       有关详细信息，请参阅 [加载项状态](./manage-addins-in-the-admin-center.md#add-in-states)。
   - question: >
       管理员能否删除或删除加载项？
-    answer: "是的。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。\n\n有关详细信息，请参阅 [删除加载项](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 \n  \n"
+    answer: "能。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。\n\n有关详细信息，请参阅 [删除加载项](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 \n  \n"
   - question: "管理员能否使用集中部署从 Office 应用商店部署付费加载项？ \n"
-    answer: "不正确。 目前，你无法使用集中部署从 Office 应用商店部署付费加载项。 \n \n我们建议向 ISV 开发人员联系付费加载项，以请求清单文件或 URL。 然后，租户管理员可以使用集中部署将加载项部署为 LOB 加载项。\n   \n"
+    answer: "否。 目前，你无法使用集中部署从 Office 应用商店部署付费加载项。 \n \n我们建议向 ISV 开发人员联系付费加载项，以请求清单文件或 URL。 然后，租户管理员可以使用集中部署将加载项部署为 LOB 加载项。\n   \n"
   - question: "我需要哪个管理员角色来管理我的组织的外接程序？ \n"
     answer: "全局管理员是建议的角色，具有对加载项管理生命周期的完全访问权限。 如果你是购买了企业版订阅Microsoft 365，则你是全局管理员。\n\n订阅附带一组管理员角色，你可以将其分配给组织中其他用户。 每个管理员角色映射到常见的业务功能，并授予组织成员在组织中执行特定Microsoft 365 管理中心。  \n \n有关详细信息，请参阅分配 [管理员角色](../add-users/assign-admin-roles.md?view=o365-worldwide)。"

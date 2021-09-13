@@ -1,6 +1,6 @@
 ---
 title: 通过电子邮件获取事件通知Microsoft 365 Defender
-description: 了解如何创建规则，以在电子邮件中获取事件Microsoft 365 Defender
+description: 了解如何创建规则，以针对事件发送电子邮件通知Microsoft 365 Defender
 keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170916"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 
@@ -59,11 +59,11 @@ ms.locfileid: "58572955"
 2. 选择 **"添加项目"。**
 3. 在"**基本信息"** 页上，键入规则名称和说明，然后选择"下一步 **"。**
 4. 在" **通知设置"** 页上，配置：
-    - **警报严重性** - 选择将触发事件通知的警报严重性。 例如，如果你只想获得有关高严重性事件的通知，请选择"高 **"。**
-    - **设备组** 作用域 - 可以指定所有设备组，也可以从租户中的设备组列表中选择。
-    - **仅在发生每个事件时通知** - 选择是否仅希望通知与其他选择匹配的第一个警报。 以后与事件相关的更新或警报不会发送其他通知。
-    - **在电子邮件中包括组织名称** - 选择是否要在电子邮件通知中显示您的组织名称。
-    - **包含特定于租户的门户链接**- 选择是否要在电子邮件通知中添加包含租户 ID 的链接，以访问Microsoft 365租户。
+    - **警报严重程度** - 选择将触发事件通知的警报严重程度。 例如，如果你只想获得有关高严重性事件的通知，请选择"高 **"。**
+    - **设备组范围** - 可以指定所有设备组或从租户中的设备组列表中进行选择。
+    - **仅在每个事件第一次发生时进行通知** - 选择是否仅需要对与其他所选内容相匹配的第一个警报进行通知。 与事件相关的后续更新或警报不会发送额外通知。
+    - **在电子邮件中包含组织名称** - 选择是否希望组织名称显示在电子邮件通知中。
+    - **包括特定于租户的门户链接** - 选择是否要在电子邮件通知中添加包含租户 ID 的链接，以便访问特定的 Microsoft 365 租户。
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件电子邮件通知的通知设置。":::
 

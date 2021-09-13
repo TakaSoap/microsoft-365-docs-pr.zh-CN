@@ -1,6 +1,6 @@
 ---
 title: 适用于终结点资源的有用 Microsoft Defender
-description: 访问有用的资源，例如指向博客的链接和与 Microsoft Defender for Endpoint 相关的其他资源
+description: 访问有用资源，例如指向博客的链接和与 Microsoft Defender for Endpoint 相关的其他资源
 keywords: Microsoft Defender 安全中心、产品简介、简短、功能、许可
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 860aafbdccc9edd00ac351f6cba08d9df3de3f81b7fb0916eed9515fac792700
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b9b90cd953499733aa2afe30c7407a4527d5cd1b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171248"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>适用于终结点资源的有用 Microsoft Defender
 

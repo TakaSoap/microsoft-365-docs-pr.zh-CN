@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: a9a0bd7bcb45e4ddf2a36cefb8906e1e5c5dd75d
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170485"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune 的设备控制策略示例
 
@@ -39,7 +39,7 @@ ms.locfileid: "58747559"
 
 ## <a name="restrict-access-to-all-removable-media"></a>限制访问所有可移动媒体
 
-以下示例限制访问所有可移动媒体。 请注意在策略的顶级应用的权限，这意味着将禁止所有 `none` 文件操作。
+以下示例限制访问所有可移动媒体。 请注意在策略的顶层应用的权限，这意味着将禁止所有 `none` 文件操作。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -238,7 +238,7 @@ ms.locfileid: "58747559"
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>限制来自特定供应商的所有设备
 
-以下示例将限制来自特定供应商的所有设备， (由 和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
+以下示例将限制来自特定供应商的所有设备， (由 和 `fff0` `4525`) 。 所有其他设备将不受限制，因为策略的顶级定义的权限列出了所有可能的权限 (读取、写入和执行) 。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

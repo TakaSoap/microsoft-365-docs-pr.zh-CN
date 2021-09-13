@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 完成设置 OME Office 365 邮件加密 (OME) ，了解如何以多种方式自定义部署。
-ms.openlocfilehash: 73862bd08ba393d7ccc24a2b665cb3ac83df99a9018b3c9945ce3cae691e78a5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170635"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -56,15 +56,15 @@ ms.locfileid: "53855991"
    Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
    ```
 
-## <a name="manage-the-use-of-one-time-pass-codes-for-the-office-365-message-encryption-portal"></a>管理对应用门户的一Office 365 邮件加密代码的使用
+## <a name="manage-the-use-of-one-time-pass-codes-for-the-office-365-message-encryption-portal"></a>管理应用门户的一Office 365 邮件加密代码的使用
 
-如果由 OME 加密的邮件的收件人不使用 Outlook，则无论收件人使用的帐户是什么，收件人都会收到一个允许他们阅读邮件的有限时间 Web 视图链接。 此链接包括一次传递代码。 作为管理员，你可以决定收件人能否使用一次传递代码登录 OME 门户。
+如果由 OME 加密的邮件的收件人不使用 Outlook，则无论收件人使用的帐户是什么，收件人都会收到一个限时 Web 视图链接，允许他们阅读邮件。 此链接包括一次传递代码。 作为管理员，你可以决定收件人能否使用一次传递代码登录 OME 门户。
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>管理 OME 是否生成一次通过代码
   
 1. 使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 运行Set-OMEConfiguration OTPEnabled 参数的 cmdlet：
+2. 使用 OTPEnabled Set-OMEConfiguration运行 Set-OMEConfiguration cmdlet：
 
    ```powershell
    Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -OTPEnabled <$true|$false>
@@ -110,13 +110,13 @@ ms.locfileid: "53855991"
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>为 iOS 邮件应用程序用户启用电子邮件的服务器端解密
 
-iOS 邮件应用程序无法解密受邮件安全Office 365 邮件加密。 作为Microsoft 365管理员，您可以对传递到 iOS 邮件应用程序的邮件应用服务器端解密。 当你选择使用服务器端解密时，该服务会向 iOS 设备发送邮件的解密副本。 客户端设备存储邮件的解密副本。 即使 iOS 邮件应用程序不向用户应用客户端使用权限，邮件也会保留有关使用权限的信息。 即使用户最初没有权限复制或打印邮件，也可以复制或打印邮件。 但是，如果用户尝试完成需要 Microsoft 365 邮件服务器的操作（如转发邮件）时，如果用户最初没有使用权限，则服务器将不允许此操作。 但是，最终用户可以通过从 iOS 邮件应用程序内的不同帐户转发邮件来绕开"不要转发"使用限制。 无论你是否设置邮件的服务器端解密，在 iOS 邮件应用程序中均无法查看加密邮件的附件和受权限保护的邮件。
+iOS 邮件应用程序无法解密受邮件安全Office 365 邮件加密。 作为Microsoft 365管理员，您可以对传递到 iOS 邮件应用程序的邮件应用服务器端解密。 当你选择使用服务器端解密时，该服务会向 iOS 设备发送邮件的解密副本。 客户端设备存储邮件的解密副本。 即使 iOS 邮件应用程序不向用户应用客户端使用权限，邮件也会保留有关使用权限的信息。 即使用户最初没有权限复制或打印邮件，也可以复制或打印邮件。 但是，如果用户尝试完成需要 Microsoft 365 邮件服务器的操作（如转发邮件）时，如果用户最初没有使用权限，则服务器将不允许该操作。 但是，最终用户可以通过从 iOS 邮件应用程序内的不同帐户转发邮件来绕开"不要转发"使用限制。 无论你是否设置邮件的服务器端解密，在 iOS 邮件应用程序中均无法查看加密邮件的附件和受权限保护的邮件。
   
 如果选择不允许将解密的邮件发送给 iOS 邮件应用程序用户，则用户会收到一条消息，指出他们没有查看邮件的权利。 默认情况下，不启用电子邮件的服务器端解密。
   
 有关详细信息，以及客户端体验的视图，请参阅在客户端或客户端上查看[iPhone iPad。](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)
   
-### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>管理 iOS 邮件应用程序用户是否可以查看受邮件Office 365 邮件加密
+### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>管理 iOS 邮件应用程序用户能否查看受邮件Office 365 邮件加密
   
 1. 使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -132,26 +132,26 @@ iOS 邮件应用程序无法解密受邮件安全Office 365 邮件加密。 作�
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
    ```
 
-   或者，若要将服务配置为不将解密的邮件发送到非轻型应用：：
+   或者，若要将服务配置为不将解密的邮件发送到非轻型应用：
 
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
    ```
 
 > [!NOTE]
-> OWA/ActiveSync) 中的单个邮箱策略 (OWA/ActiveSync (将覆盖这些设置，即，如果在各自的 OWA 邮箱策略或 ActiveSync 邮箱策略中将 -IRMEnabled 设置为 False，则这些配置将不会应用于) 。
+> OWA/ActiveSync (中的单个邮箱策略) 替代这些设置 (即，如果在各自的 OWA 邮箱策略或 ActiveSync 邮箱策略中将 -IRMEnabled 设置为 False，则这些配置将不会应用) 。
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>为 Web 浏览器邮件客户端启用电子邮件附件的服务器端解密
 
 通常，在使用邮件加密Office 365，附件会自动加密。 作为管理员，您可以为用户从 Web 浏览器下载的电子邮件附件应用服务器端解密。
   
-使用服务器端解密时，该服务会向设备发送文件的解密副本。 邮件仍加密。 即使浏览器不向用户应用客户端使用权限，电子邮件附件也会保留有关使用权限的信息。 用户可以复制或打印电子邮件附件，即使他们最初没有权限这样做。 但是，如果用户尝试完成需要 Microsoft 365 邮件服务器的操作（如转发附件），则如果用户最初没有使用权限，则服务器将不允许该操作。
+使用服务器端解密时，服务会向设备发送文件的解密副本。 邮件仍加密。 即使浏览器不向用户应用客户端使用权限，电子邮件附件也会保留有关使用权限的信息。 用户可以复制或打印电子邮件附件，即使他们最初没有权限这样做。 但是，如果用户尝试完成需要 Microsoft 365 邮件服务器的操作（如转发附件）时，如果用户最初没有使用权限，则服务器将不允许该操作。
   
-无论是否设置附件的服务器端解密，用户均无法查看 iOS 邮件应用程序中加密和权限保护邮件的任何附件。
+无论您是否设置附件的服务器端解密，用户均无法查看 iOS 邮件应用程序中加密和权限保护的邮件的任何附件。
   
-如果选择不允许解密的电子邮件附件（这是默认设置），用户将收到一条消息，指出他们没有查看附件的权利。
+如果选择不允许解密的电子邮件附件（这是默认设置），则用户会收到一条消息，指出他们没有查看附件的权利。
   
-有关如何使用"Microsoft 365"选项为电子邮件和电子邮件附件实现加密Encrypt-Only，请参阅电子邮件的"仅加密["选项。](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+有关如何使用"Microsoft 365"选项对电子邮件和电子邮件附件Encrypt-Only加密，请参阅电子邮件的"仅加密["选项。](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>管理从 Web 浏览器下载电子邮件附件时是否解密
   

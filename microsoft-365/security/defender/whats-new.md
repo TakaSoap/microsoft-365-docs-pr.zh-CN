@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 的新增功能
-description: 列出 Microsoft 365 Defender 中的新增Microsoft 365 Defender
+description: 列出新特性和功能Microsoft 365 Defender
 keywords: what's new in Microsoft 365 Defender， ga， generally available， capabilities， available， new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bc00b3849e0fb6ce3749ff0e6280108c0cc41bd6
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 5c63da586affc23bea26e416479fa2e3e7a26d73
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170022"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -32,22 +32,39 @@ ms.locfileid: "58863853"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-以下功能在最新版本的 (GA) 中Microsoft 365 Defender。
+以下功能在最新版本的 GA (预览版) 或Microsoft 365 Defender。
 
 RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中：
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+有关其他 Microsoft Defender 安全产品的新增功能详细信息，请参阅：
+
+- [Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [Microsoft Defender for Endpoint 中的新增功能](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [Microsoft Defender 标识的新增功能](/defender-for-identity/whats-new)
+- [Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+
+
+
 ## <a name="august-2021"></a>2021 年 8 月
 -  (预览) Microsoft Defender Office 365高级搜寻中提供的数据
 <br>电子邮件表中的新列可以更深入地了解基于电子邮件的威胁，以便使用高级搜寻进行更全面的调查。 现在可以在 `AuthenticationDetails` EmailEvents、EmailAttachmentInfo 和[](./advanced-hunting-emailevents-table.md) `FileSize` [](./advanced-hunting-emailattachmentinfo-table.md) `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md)表中包含该列。 
 
--  (预览) 事件图
-
-  事件 **Graph"** 摘要"选项卡上的新"列表"选项卡显示攻击的完整范围、攻击如何随着时间的推移网络分布、开始位置以及攻击者已攻击多远。
+-  (预览) 事件图 <br>  事件 **Graph"** 摘要"选项卡上的新"开始"选项卡显示攻击的完整范围、攻击如何随着时间的推移分布于网络、开始位置以及攻击者已攻击多远。
 
 ## <a name="july-2021"></a>2021 年 7 月
 - [Professional服务目录](https://sip.security.microsoft.com/interoperability/professional_services)<br>通过受支持的合作伙伴连接增强平台的检测、调查和威胁智能功能。
+
+## <a name="june-2021"></a>2021 年 6 月
+-  (预览) [每个威胁标记查看报告](threat-analytics.md#view-reports-per-threat-tags)<br> 威胁标记可帮助你专注于特定威胁类别并查看最相关的报告。
+-  (预览) [流式处理 API](../defender-endpoint/raw-data-export.md)<br> Microsoft 365 Defender通过高级搜寻提供的所有事件流式处理到事件中心和/或 Azure 存储帐户。
+-  (预览) [高级搜寻中采取措施](advanced-hunting-take-action.md)<br> 快速包含威胁或解决你在高级搜寻中发现的威胁 [资产](advanced-hunting-overview.md)。
+-  (预览) [门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> 直接在安全中心获取有关高级搜寻架构表的信息。 除了表和列说明之外，此参考还包括受支持的事件类型 (`ActionType` 查询) 查询的值。
+-  (Preview) [DeviceFromIP () 函数](advanced-hunting-devicefromip-function.md)<br> 获取有关在给定时间范围内为哪些设备分配了特定 IP 地址或地址的信息。
     
 
 ## <a name="may-2021"></a>2021 年 5 月
@@ -57,39 +74,13 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 
 ## <a name="april-2021"></a>2021 年 4 月
-- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 这一新体验将 Defender for Endpoint、Defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
+- Microsoft 365 Defender<br> 改进的[Microsoft 365 Defender](https://security.microsoft.com)门户现已可用。 此新体验将 Defender for Endpoint、Defender for Office 365、Defender for Identity 等集成到单个门户中。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
 
 - [Microsoft 365 Defender威胁分析报告](threat-analytics.md)<br>
- 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以降低进一步暴露的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于适用于终结点的 Microsoft Defender 和适用于 Office E5 许可证持有者的 Microsoft Defender。
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解解决方案阻止的攻击尝试Microsoft 365 Defender采取预防措施，以缓解进一步暴露的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关组织涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
+- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关应用程序涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
--  (预览) 增强Microsoft 365 Defender[门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在可用于公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365引入中心。 [了解有关更改的详细信息](./overview-security-center.md)。
-
-## <a name="september-2020"></a>2020 年 9 
-- [IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md) <br> 查找涉及本地域控制器的事件，该域控制器运行 Active Directory (AD) 。 此 [高级搜寻](advanced-hunting-overview.md) 架构表涵盖域控制器上一系列与标识相关的事件和系统事件。
-- [AssignedIPAddresses () 函数](advanced-hunting-assignedipaddresses-function.md) <br> 在高级搜寻查询中使用此函数可快速获取分配给设备的最新 IP 地址或特定时间的最新 IP 地址。
-
-## <a name="july-2020"></a>2020 年 7 月
-- [FileProfile () 函数](advanced-hunting-fileprofile-function.md) <br> 在高级搜寻查询中使用此函数，通过综合文件信息丰富结果。
-- [标识表和应用表](advanced-hunting-schema-tables.md)<br> 通过高级搜寻架构中的[IdentityLogonEvents、IdentityQueryEvents](advanced-hunting-identitylogonevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表，了解身份验证事件、Active [Directory](advanced-hunting-identityqueryevents-table.md)查询和与应用相关的活动。
-- [转到查寻](advanced-hunting-go-hunt.md)<br> 快速透视从调查事件到检查特定事件、用户、设备或高级搜寻上的其他实体类型。
-
-## <a name="june-2020"></a>2020 年 6 月
-- Twitter 源 <br> 直接在仪表板内获取最新的安全研究、威胁情报、产品新闻等。
-- [EmailPostDeliveryEvents 架构表](advanced-hunting-emailpostdeliveryevents-table.md) <br> 在高级搜寻查询中纳入有关对电子邮件执行传递后操作的信息。
-- [检查高级搜寻中的记录](advanced-hunting-query-results.md#drill-down-from-query-results) <br> 使用新的详细信息面板快速检查查询结果中的记录。
-
-## <a name="may-2020"></a>2020 年 5 月
-- [自定义检测](custom-detections-overview.md) <br> 使用高级搜寻查询创建自定义检测规则，以自动监视和响应安全事件和系统状态。
-
-## <a name="february-2020"></a>2020 年 2 月
-- [事件](incidents-overview.md) <br> 准确了解攻击的开始位置和其他详细信息，以帮助你查看攻击的范围。
-- [自动调查和响应](m365d-autoir.md) <br> AIR 使你的安全运营团队能够极大地提高组织处理安全警报和事件的能力。
-- [高级搜寻增强功能](advanced-hunting-overview.md) <br> 使用 Kusto 查询语言和安全优化架构，在新式工作区中主动搜寻威胁。
-
-## <a name="march-2019"></a>2019 年 3 月
-- 高级搜寻 <br> 各种搜寻功能的登陆页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
-- [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织安全状况的度量，较高的数字表示采取更多改进措施。 按照安全功能分数建议可保护你的组织免遭威胁。 
-- [报表](overview-security-center.md) <br>  功能一系列卡片，涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。
+-  (预览) 增强[Microsoft 365 Defender门户 (https://security.microsoft.com) ](https://security.microsoft.com)现在提供公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365引入中心。 [了解有关更改的详细信息](./overview-security-center.md)。
+- **[ (预览) Microsoft 365 Defender API](api-overview.md)** - 顶级 Microsoft 365 Defender API 将使您能够基于共享事件和高级搜寻表自动执行工作流。 

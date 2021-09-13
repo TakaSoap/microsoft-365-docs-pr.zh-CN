@@ -1,5 +1,5 @@
 ---
-title: 适用于终结点的 Microsoft Defender 预览功能
+title: Microsoft Defender for Endpoint 预览功能
 description: 了解如何访问适用于终结点预览功能的 Microsoft Defender。
 keywords: 预览， 预览体验， 适用于终结点的 Microsoft Defender， 功能， 更新
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed7926c0fbb9e0eb10f7826e66ca5b96691e8e318e17f2b5d53a0cae8ba6d4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3049d77ef7f934a254da54a63560e33fe2603e3b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867891"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170476"
 ---
-# <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
+# <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint 预览功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 使用公共预览版中的功能时，这些功能：
 
 - 功能可能受限或受限。 例如，此功能可能仅适用于一个平台。
-- 通常先完成功能更改，然后再在 GA (正式) 。
+- 通常先完成功能更改，然后再正式 (GA) 。
 - 完全受 Microsoft 支持。
 - 可能仅在选定的地理区域或云环境中可用。 例如，此功能可能不存在于政府云中。
 - 预览版中的单个功能可能具有更多用法和支持限制。 如果是这样，此信息通常会记录在功能文档中。
@@ -64,18 +64,6 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 1. 在导航窗格中，**选择"设置**  >  **终结点**  >  **高级功能**  >  **预览功能"。**
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
-
-## <a name="preview-features"></a>预览功能
-
-预览版中包含以下功能：
-
-- [Web 内容筛选](web-content-filtering.md)
-
-  Web 内容筛选是 Microsoft Defender for Endpoint 中的 Web 保护功能的一部分。 它使组织能够根据网站的内容类别跟踪和监管对网站的访问。 许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。
-
-- [设备运行状况和合规性报告](machine-reports.md)
-
-  设备运行状况和合规性报告提供有关组织中设备的高级别信息。
 
 > [!TIP]
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)。  

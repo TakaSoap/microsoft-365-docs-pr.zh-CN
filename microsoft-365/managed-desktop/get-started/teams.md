@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 71fa0c380dd6e7d5d348cffb4f1113032b3ee27bdf8711191b3d12903e6b1789
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 01a3adc7829bbb94f36649f69ba6ef15dbe6b3c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162328"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -23,7 +23,7 @@ ms.locfileid: "53890931"
 
 ## <a name="initial-deployment"></a>初始部署
 
-大多数硬件供应商尚未将 Teams作为映像的一部分，Microsoft 托管桌面使用 Teams 部署到Microsoft Intune。 所有托管设备都[安装了Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)程序包，从而确保登录到设备的所有用户Microsoft Teams都可供使用。 当程序包首次完成安装时，Teams自动启动并将快捷方式添加到桌面。
+大多数硬件供应商尚未将 Teams用作映像的一部分，Microsoft 托管桌面使用 Teams 将 Microsoft Intune。 所有托管设备都[Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works)程序包，确保登录到设备的所有用户都Microsoft Teams使用。 当程序包首次完成安装时，Teams自动启动并将快捷方式添加到桌面。
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune更改
 
@@ -34,9 +34,9 @@ Microsoft 托管桌面向 Azure AD 组织添加两个应用程序，Microsoft Te
 
 ## <a name="updates"></a>更新
 
-Teams一个单独的更新路径，Microsoft 365 企业应用版桌面客户端将自动更新。 Teams每隔几个小时检查一次更新，下载更新，然后等待计算机处于空闲状态，然后再以无提示方式安装更新。  
+Teams一个单独的更新路径，Microsoft 365 企业应用版桌面客户端自动进行更新。 Teams每隔几小时检查一次更新，下载这些更新，然后等待计算机处于空闲状态，然后再以静默方式安装更新。  
 
-the Teams product group doesn't allow admins to control updates， so Microsoft 托管桌面 uses the [standard automatic update channel](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
+由于Teams组不允许管理员控制更新，因此Microsoft 托管桌面使用[标准自动更新频道](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)。
 
 ### <a name="manually-updating-teams"></a>手动更新Teams
 
@@ -44,4 +44,4 @@ the Teams product group doesn't allow admins to control updates， so Microsoft 
 
 ## <a name="delivery-optimization-of-updates"></a>更新的传递优化
 
-默认情况下，Teams更新的传递优化已打开，无需管理员或用户的任何操作。
+默认情况下，Teams更新的传递优化已打开，不需要管理员或用户的操作。

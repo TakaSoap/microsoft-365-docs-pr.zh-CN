@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
 ms.openlocfilehash: 7795f4d7f02a9b60e0bbd58fb97608733385dc9c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563578"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170530"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>了解 Microsoft Defender for Endpoint 中的高级搜寻架构
 
@@ -64,7 +64,7 @@ ms.locfileid: "58563578"
 
 |表名|说明|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|警报Microsoft Defender 安全中心|
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|有关警报Microsoft Defender 安全中心|
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|设备信息，包括操作系统信息|
 |**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|设备的网络属性，包括适配器、IP 和 MAC 地址，以及连接的网络和域|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|过程创建和相关事件|
@@ -75,15 +75,15 @@ ms.locfileid: "58563578"
 |**[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)**|DLL 加载事件|
 |**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|多个事件类型，包括由安全控件触发的事件，Microsoft Defender 防病毒和 Exploit Protection|
 |**[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)**|从终结点上的证书验证事件获取的已签名文件的证书信息|
-|**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|设备上安装的软件清单，包括其版本信息和停止支持状态|
-|**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|在设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表|
+|**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|设备上安装的软件清单，包括其版本信息和终止支持状态|
+|**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|在设备上找到的软件漏洞以及解决每个漏洞的可用安全更新列表|
 |**[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)**|公开披露的漏洞的知识库，包括攻击代码是否已公开|
 |**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|威胁和漏洞管理评估事件，指示设备上的各种安全配置的状态|
 |**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|威胁和漏洞管理用于评估设备的各种安全配置的知识库；包括各种标准和基准的映射|
 |
 
 > [!TIP]
-> 使用 Microsoft 365 Defender 中的高级[搜寻](/microsoft-365/security/defender/advanced-hunting-overview)，通过 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 来搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
+> 使用[Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview)中的高级搜寻，通过 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 来搜寻威胁。 [打开"Microsoft 365 Defender"。](/microsoft-365/security/defender/m365d-enable)
 
 若要详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender从[Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)迁移高级搜寻查询。
 

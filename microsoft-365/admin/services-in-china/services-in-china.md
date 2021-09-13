@@ -25,11 +25,11 @@ ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
 ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
-ms.translationtype: HT
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170308"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 

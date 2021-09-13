@@ -14,9 +14,9 @@ metadata:
   localization_priority: Priority
 productDirectory:
   items:
-    - title: 入门
+    - title: 开始行动
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 规划向Microsoft 365迁移。
+      summary: 规划移动到Microsoft 365企业。
       url: what-is-microsoft-365.md
     - title: 设置 Microsoft 365 商业版
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'

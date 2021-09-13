@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 06ef042be99145c5126d8800d04a7a1b92c8adf3107874dfb96951bf695baa61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f82684ebb10b72ff83a6789c010f5ec9fa099e7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161955"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -40,7 +40,7 @@ ms.locfileid: "53839167"
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
 
-高级 `DeviceTvmSoftwareInventory` 搜寻架构中的表包含&网络中设备上[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)当前安装的软件的威胁和漏洞管理清单，包括停止提供支持信息。 例如，可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。
+高级 `DeviceTvmSoftwareInventory` 搜寻架构中的表包含&设备上当前[](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)安装的软件的威胁和漏洞管理清单，包括停止提供支持信息。 例如，可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。
 
 >[!NOTE]
 > 和 `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` 表已替换 `DeviceTvmSoftwareInventoryVulnerabilities` 表。 前两个表一起包含更多列，可用于帮助通知 vulnerablity 管理活动或搜寻易受攻击的设备。
@@ -58,7 +58,7 @@ ms.locfileid: "53839167"
 | `SoftwareName` | string | 软件产品的名称 |
 | `SoftwareVersion` | string | 软件产品版本号 |
 | `EndOfSupportStatus` | string | 指示软件产品的生命周期阶段（相对于其指定的 EOS (停止) 或生命周期结束 (EOL) 日期 |
-| `EndOfSupportDate` | string | 在软件产品 (EOS) 或生命周期结束 (EOL) 终止支持 |
+| `EndOfSupportDate` | string | 软件产品 (EOS) 或生命周期结束 (EOL) 结束日期 |
 
 
 

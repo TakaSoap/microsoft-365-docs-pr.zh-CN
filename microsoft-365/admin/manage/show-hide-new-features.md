@@ -20,23 +20,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用 Microsoft 365 管理中心 中的"Office 中的新增功能"，确定当用户在 Windows 上的 Office 应用 中选择帮助 >"新增功能"时要显示或隐藏的 Microsoft 365 管理中心 功能。 Office
+description: 使用 Microsoft 365 管理中心 中的"Office 中的新增功能"，确定当用户在 Windows 上的 Office 应用 中选择"帮助">"新增功能"时要显示或隐藏的 Office 功能。 Office
 ms.openlocfilehash: 31506f05054d6ee98eae0e1f075618d866d3934c
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170390"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理Office功能显示在新增功能中
 
-当发布Office功能时，当用户在 Windows 上选择"帮助""功能""Office 应用"新增 \> 功能"时Windows。
+发布重要Office功能后，当用户在"开始"功能上选择"帮助""Office 应用"新增功能 \> Windows。
 
-您可以通过使用用户管理中心中的新增功能控制显示哪些 **Office功能** Microsoft 365 管理中心。 如果您决定向用户隐藏功能消息，则始终可以稍后返回，并决定向用户显示它。
+您可以使用用户管理中心中的新增功能控制显示哪些 **Office功能** Microsoft 365 管理中心。 如果您决定向用户隐藏功能消息，则始终可以稍后返回，并决定向用户显示它。
 
 > [!NOTE]
 >
-> - 向用户隐藏功能消息不会在邮件中禁用Office 应用。
+> - 向用户隐藏功能消息不会在功能策略中Office 应用。
 > - 必须分配有全局管理员角色或 Office 应用管理员角色，才能使用"Office **新增功能**。
 
 ## <a name="show-or-hide-new-features"></a>显示或隐藏新功能
@@ -53,13 +53,13 @@ ms.locfileid: "58394440"
 
 > [!NOTE]
 >
-> - 如果一个功能在多个应用Office，将该功能设置为隐藏隐藏所有这些应用中的功能Office消息。
+> - 如果一个功能在多个应用Office，将该功能设置为隐藏隐藏所有应用中的功能Office消息。
 > - 默认情况下，所有功能消息都向用户显示。 这是所有功能的默认状态，只有选择隐藏或显示功能消息时，状态才发生更改。
 > - 还可以从管理中心Office"管理中心"Microsoft 365 应用版"新增功能 <https://config.office.com> () 。 此功能位于自定义  >  **新增管理下**。
 
 ## <a name="list-of-features"></a>功能列表
 
-可以筛选"管理哪些功能 **"Office"新增功能"页上显示** 的功能。 可以按频道、应用程序或状态或它们的组合进行筛选。
+可以筛选"管理哪些功能Office **功能显示在"新增功能"页上**。 可以按频道、应用程序或状态或它们的组合进行筛选。
 
 根据以下计划在页面上显示新功能：
 
@@ -79,9 +79,9 @@ ms.locfileid: "58394440"
 
 ## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>将"Office中的新增功能"卡片添加到管理中心主页
 
-1. On the Microsoft 365 admin page， choose **Add card** on the top of the page
+1. 在"Microsoft 365"页面上 **，选择页面** 顶部的"添加卡片"
 2. 找到 **"管理Office功能显示在"新增** 功能"列表中，然后选择它。
-3. 卡片显示在主页上后，可以选择"Office"中的新增功能，以显示[或隐藏组织](#show-or-hide-new-features)的功能。
+3. 卡片位于主页上后，可以选择"Office中的新增功能"来显示[或隐藏组织](#show-or-hide-new-features)的功能。
 
 ## <a name="related-articles"></a>相关文章
 

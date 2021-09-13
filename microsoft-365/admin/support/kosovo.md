@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 700c24b35bb1915839b023139927a02fc6680f34eecdabbac1c60129ba0969ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c37ff8a7cc364a3633ced5439f03df0bfba3dcaa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171209"
 ---
 # <a name="contact-support-for-kosovo"></a>联系支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53873221"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri 11 AM-7 PM

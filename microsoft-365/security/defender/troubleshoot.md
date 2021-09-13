@@ -1,5 +1,5 @@
 ---
-title: 解决Microsoft 365 Defender问题
+title: 解决Microsoft 365 Defender服务问题
 description: 查找已知问题的解决方案Microsoft 365 Defender解决方法
 keywords: 疑Microsoft 365 Defender， 疑难解答， Microsoft Defender for Identity， 问题， 加载项， 设置页面
 search.product: eADQiWindows 10XVcnh
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: c4bbc9cd47d3ceb8110a6a2f0e3136a364458abc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170900"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>解决Microsoft 365 Defender问题
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>解决Microsoft 365 Defender服务问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -45,13 +45,13 @@ ms.locfileid: "58255876"
 
 ## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender 标识警报未显示在事件Microsoft 365 Defender中
 
-如果你的环境中已部署 Microsoft Defender for Identity，但没有在 Microsoft 365 Defender 事件中看到 Defender for Identity 警报，则需要确保启用 Microsoft Cloud App Security 和 Defender for Identity 集成。
+如果你的环境中已部署 Microsoft Defender for Identity，但没有在 Microsoft 365 Defender 事件中看到 Defender for Identity 警报，则需要确保已启用 Microsoft Cloud App Security 和 Defender for Identity 集成。
 
 有关详细信息，请参阅 [Microsoft Defender 的标识集成](/cloud-app-security/mdi-integration)。
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>用于打开服务的设置页在哪里？
 
-若要打开Microsoft 365 Defender，设置门户中的导航窗格中访问Microsoft 365 Defender菜单。 只有拥有必备权限和许可证时，此 [导航项才可见](m365d-enable.md#check-license-eligibility-and-required-permissions)。
+若要打开Microsoft 365 Defender，设置门户中的导航窗格中访问Microsoft 365 Defender按钮。 只有在你拥有必备权限和许可证时，此 [导航项才可见](m365d-enable.md#check-license-eligibility-and-required-permissions)。
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>如何为文件/URL 创建异常？
 

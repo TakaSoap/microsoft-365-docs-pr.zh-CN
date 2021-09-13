@@ -18,11 +18,11 @@ ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: a49c4993e6d81c90139e043683193f2ee6e532bf
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58506498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170099"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>访问 Microsoft Defender for Endpoint API
 

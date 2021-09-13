@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: 49adbcf8b25f4a88be14b22508fbe4b97a26bbfa527844fb435c1d7892fb4779
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162077"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 

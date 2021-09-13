@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: 6a9317e1ca61711020dfa8d1521c1082b2a7682f8e12a2976dc20f5af374dd4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170297"
 ---
-# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为Microsoft 365自定义主题
 
 作为组织的管理员，你可以为组织成员创建多个主题，并选择哪些主题适用于组织的不同成员。 组织主题是显示在组织中人员的顶部导航栏中的主题。
 
@@ -38,7 +38,7 @@ ms.locfileid: "53822102"
   
 ## <a name="add-or-update-your-organizations-theme"></a>添加或更新组织的主题
 
-1. 在管理中心中，转到"设置 \> **组织** 设置"页面，然后选择"组织 **配置文件"** 选项卡。
+1. In the admin center， go to the **设置** \> **Org 设置** page， and then choose the Organization **profile** tab.
 
 2. 在"**组织配置文件"** 选项卡上，选择"**自定义主题"。**
 
@@ -46,7 +46,7 @@ ms.locfileid: "53822102"
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
-|[常规](#general-modify-a-theme) <br/> |修改主题名称，并分配最多五个组 (（如果适用) ）。  <br/> |
+|[常规](#general-modify-a-theme) <br/> |修改主题名称，并分配最多五个组 (如果适用) 。  <br/> |
 |[徽标](#logos-specify-your-theme-logos) <br/> |添加组织徽标，包括深色主题的备用徽标。  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |通过指定导航栏、强调文字和图标颜色自定义配色方案。 <br/> |
 
@@ -58,9 +58,9 @@ ms.locfileid: "53822102"
 
 默认主题是显示的第一个主题。  
 
-1. 如果以前为组织自定义了主题，请选择"默认主题"并使用保存的自定义项之一，或者选择"**添加主题"。**
+1. 如果以前为组织自定义了主题，请选择"默认主题"，然后使用保存的自定义项之一，或者选择"**添加主题"。**
 2. 在 **"常规** "页上，可以阻止用户覆盖其主题，并显示用户显示名称。
-3. 选择 **保存** 以保存所做的更改。  
+3. 选择“**保存**”以保存所做的更改。  
 
 > [!IMPORTANT]
 > 默认主题是唯一的，不能重命名，并且适用于组织内部的每个人。 若要删除默认主题，您必须首先删除所有其他主题。
@@ -71,9 +71,9 @@ ms.locfileid: "53822102"
 
 你最多可以创建四个其他组主题。
 
-1. 在 **"常规** "页上，输入新主题的名称。
+1. 在 **"常规** "页面上，输入新主题的名称。
 
-2. 在 **"** 组"下，你最多可以选择 5 Microsoft 365查看你的组主题的组，而不是使用默认主题。 您还可以阻止用户覆盖其主题和显示用户显示名称。
+2. 在 **"** 组"下，Microsoft 365查看你的组主题的最多 5 个组，而不是使用默认主题。 您还可以阻止用户覆盖其主题和显示用户显示名称。
 
 3. 选择“**保存**”。
 
@@ -85,9 +85,9 @@ ms.locfileid: "53822102"
 
 - **默认徽标**：添加指向徽标的 URL 位置。 确保 URL 使用 HTTPS。 添加允许匿名访问且不需要身份验证的 HTTPS 图像 URL。 对于默认主题，还可以选择上传小于 10kb 的徽标图像。 默认徽标可以是 JPG、PNG、GIF 或 SVG 格式。 对于 SVG 图像，它们的大小将调整为垂直调整为 24 像素。 JPG、PNG、GIF 图像将缩放为 200 x 48 像素。 徽标纵横比将始终保留。
 - **备用徽标**：添加指向徽标的 URL 位置。 应优化备用徽标，以用于Office主题。 与默认徽标的要求相同。
-- **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。 如果未选择徽标的 URL 位置，它将默认为Office主页。
+- **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。 如果未选择徽标的 URL 位置，它将默认为 Office主页。
 
-选择 **保存** 以保存所做的更改。
+选择“**保存**”以保存所做的更改。
 
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot： Logos tab showing the logo options":::
 
@@ -127,7 +127,7 @@ ms.locfileid: "53822102"
 
 ### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>能否手动分配独立于组Microsoft 365主题？  
 
-否，必须将新组主题映射到一个或多个Microsoft 365组。 作为组Microsoft 365用户将获取应用于其组的主题。 通过[进入管理中心中的](../create-groups/create-groups.md)"Microsoft 365组"，可以创建新成员并将其添加到设置 ****   >  **** 组。
+否，必须将新的组主题映射到一个或多个Microsoft 365组。 作为组Microsoft 365用户将获取应用于其组的主题。 通过[进入管理中心中的](../create-groups/create-groups.md)"Microsoft 365组"，设置"组"并 ****   >  **** 添加新成员。
 
 ### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>如果将用户分配给多个组主题，会发生什么情况？  
 
@@ -145,11 +145,11 @@ ms.locfileid: "53822102"
 
 文本、图标或按钮颜色与背景色之间的建议对比率为 4.5：1。 你可以替代此建议，但仍保存主题，因为这不是一项要求。
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定义主题，那么Microsoft 365使用哪个位置？
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定义一个主题，将在Microsoft 365哪个位置？
 
-任何主题都作为套件标题的一部分显示在组织的顶部导航Microsoft 365中。  
+作为套件标题的一部分，组织的顶部导航栏中将显示所有Microsoft 365主题。  
   
 ## <a name="related-content"></a>相关内容
 
-[将自定义磁贴添加到我的应用页面和应用](../manage/customize-the-app-launcher.md) 启动器 (文章) \
-[管理员Microsoft 365组](../create-groups/office-365-groups.md)概述 (文章) 
+[向"我的应用"页面](../manage/customize-the-app-launcher.md) 和应用启动器添加自定义磁贴 (文章) \
+[管理员Microsoft 365组概述 (](../create-groups/office-365-groups.md)文章) 

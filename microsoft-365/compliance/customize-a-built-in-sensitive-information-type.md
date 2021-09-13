@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何创建自定义敏感信息类型，以允许使用满足组织需求的规则。
-ms.openlocfilehash: e84a1b3617ba8c391469b2d93af2514aec7719c484f3a66f99fa88bbcc7ffdb7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: da79c525a268ff686c2edaf777cedf447335ed27
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53820179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169671"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 

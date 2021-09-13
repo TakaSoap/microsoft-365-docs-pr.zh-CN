@@ -23,15 +23,15 @@ search.appverid:
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
 ms.openlocfilehash: 5e5aff344326874cef426e7a1a40656766564e7e
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170317"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且可帮助你保护你和客户敏感信息的安全。
+你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且有助于保护你和客户敏感信息的安全。
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 
@@ -69,7 +69,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
 
 若要手动安装 AIP 客户端，请执行以下操作：
 
-1. 从 **AzinfoProtection_UL.exe**[下载中心下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
+1. 从 **microsoftAzinfoProtection_UL.exe**[下载中心 下载文件](https://www.microsoft.com/download/details.aspx?id=53018)。
  
 2. 您可以通过查看 Word 文档并确保"开始"选项卡上提供"敏感度"选项来验证安装 **是否** 有效。
 <br/>![Word 文档中的"保护"选项卡下拉列表。](../../media/word-sensitivity.png)

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bfa1dd7966bbe3695cc99d33d47765e192ab867023c8316bb37ab0bd5ef2ef51
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 71f165611f59c45dd2c6d8fa5a5980264c03ba21
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171432"
 ---
 # <a name="payment-information-for-france"></a>法国的付款信息
 
@@ -34,7 +34,7 @@ ms.locfileid: "53852411"
 **SWIFT 代码：** 一百万  
 **IBAN 代码：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT
 
 如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft 法国 SAS** 计费的订单和消耗的发票，请使用此银行信息：

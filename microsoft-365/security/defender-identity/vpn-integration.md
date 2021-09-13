@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Identity VPN 集成Microsoft 365 Defender
-description: 了解如何通过集成 Microsoft Defender for Identity 的 VPN 来收集会计Microsoft 365 Defender
+description: 了解如何通过集成 Microsoft Defender for Identity 中的 VPN 收集会计Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
 author: dcurwin
@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: e6b8015cc8b6ac073c689bde3b15a411c859cada
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170044"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender for Identity VPN integration in Microsoft 365 Defender
 
@@ -21,14 +21,14 @@ ms.locfileid: "58561274"
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍如何将 VPN 与 Microsoft [Defender for Identity](/defender-for-identity) [集成Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
+本文介绍如何将 VPN 与 Microsoft Defender for Identity[](/microsoft-365/security/defender/overview-security-center)集成[Microsoft 365 Defender。](/defender-for-identity)
 
 >[!IMPORTANT]
 >作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
 
 [!INCLUDE [Product long](includes/product-long.md)] 可以从 VPN 解决方案收集会计信息。 配置后，用户的配置文件页将包含来自 VPN 连接的信息，例如 IP 地址和建立连接的位置。 这通过提供有关用户活动的其他信息和异常 VPN 连接的新检测来补充调查过程。 将外部 IP 地址解析为位置的调用是匿名的。 此调用中不会发送任何个人标识符。
 
-[!INCLUDE [Product short](includes/product-short.md)] 通过侦听转发到传感器的 RADIUS 会计事件，与 VPN [!INCLUDE [Product short](includes/product-short.md)] 解决方案集成。 此机制基于 [RFC 2866](https://tools.ietf.org/html/rfc2866) (标准 RADIUS accounting) ，并且支持以下 VPN 供应商：
+[!INCLUDE [Product short](includes/product-short.md)] 通过侦听转发到传感器的 RADIUS 会计事件，与 VPN [!INCLUDE [Product short](includes/product-short.md)] 解决方案集成。 此机制基于 [RFC 2866](https://tools.ietf.org/html/rfc2866) (标准 RADIUS Accounting) ，并且支持以下 VPN 供应商：
 
 - Microsoft
 - F5
@@ -43,10 +43,10 @@ ms.locfileid: "58561274"
 
 > [!NOTE]
 >
-> - 通过启用 **Radius Accounting，** 传感器将启用预先预配的名为 Windows 的防火墙策略，以允许端口 [!INCLUDE [Product short](includes/product-short.md)] UDP 1813 上的传入 RADIUS Accounting。 **[!INCLUDE [Product long](includes/product-long.md)]**
-> - 在遵守联邦信息处理标准或 FIPS 协议的环境中 (VPN) 
+> - 通过启用 **Radius Accounting，** 传感器将启用名为 Sensor 的预Windows设置的策略，以允许端口 [!INCLUDE [Product short](includes/product-short.md)] UDP 1813 上的传入 RADIUS Accounting。 **[!INCLUDE [Product long](includes/product-long.md)]**
+> - 在遵守联邦信息处理标准或 FIPS 协议的环境中不支持 VPN () 
 
-以下示例使用 Microsoft 路由和远程访问服务器 (RRAS) 描述 VPN 配置过程。
+下面的示例使用 Microsoft 路由和远程访问服务器 (RRAS) 描述 VPN 配置过程。
 
 如果你使用的是第三方 VPN 解决方案，请参阅他们的文档，了解如何启用 RADIUS Accounting。
 

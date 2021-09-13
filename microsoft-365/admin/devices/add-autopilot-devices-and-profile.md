@@ -27,15 +27,15 @@ search.appverid:
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为Windows 10设置新设备，以便员工可以使用这些设备。
 ms.openlocfilehash: 1a2350e836a84870a9eb304196d6c72831f52d60
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169847"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
-可以使用 Windows AutoPilot 为Windows 10设置新的设备，以便当你将这些设备授予员工时，这些设备可供使用。
+可以使用 Windows AutoPilot 为Windows 10设置新的设备，以便当你将这些设备供员工使用时，这些设备可供使用。
   
 ## <a name="device-requirements"></a>设备要求
 
@@ -43,7 +43,7 @@ ms.locfileid: "58360305"
   
 - Windows 10版本 1703 或更高版本
     
-- 未体验全新体验Windows全新体验的新设备
+- 尚未体验全新体验Windows全新体验的新设备
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
@@ -92,7 +92,7 @@ ms.locfileid: "58360305"
     
     选择" **下一步**"。
     
-6. **你已完成指示** 你创建的配置文件 (选择) 将应用于通过上传设备列表创建的设备组。 设置将在设备用户下次登录时生效。 选择“关闭”。
+6. **你已完成指示** 你创建 (或选择) 的配置文件将应用到通过上传设备列表创建的设备组。 设置将在设备用户下次登录时生效。 选择“关闭”。
 
 ## <a name="related-content"></a>相关内容
 

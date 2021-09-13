@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Microsoft planner 规划事件。
-ms.openlocfilehash: 22a0970e586e3240da20e8fa21ce20bbc15b69c6bfe3a0378c6ba6d636c33658
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171174"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>使用 Microsoft Planner 规划事件
 
@@ -59,9 +59,9 @@ ms.locfileid: "53856579"
 
 ### <a name="keep-track-of-tasks"></a>跟踪任务
 
-使用  **图表**  和  **板视图**  可监视每个工作组成员和整个项目的进度，或者对任务进行排序和组织。
+使用  **图表**  和  **板**  视图可监视每个团队成员和整个项目的进度，或者对任务进行排序和组织。
 
 - 选择  **"图表"，** 然后选择" **分组者**"，最后 **选择"截止日期**  "以查看下一步到期的任务。
-- 选择  **"板**"，然后选择" **分组方式**"，最后选择 **"进度"**  以按进度对任务进行排序。
+- 选择  **"板**"，然后选择" **分组方式**"，最后选择 **"进度**  "以按进度对任务进行排序。
 
 **注意：** 任务按 **"未启动、** 正在进行"和"**已完成**"进行组织，以便你了解何时准备好启动产品。

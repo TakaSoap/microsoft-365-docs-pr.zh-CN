@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c0337c83419e2584c779abdd1bc88b75e6c1a63a5c7cc38fe1a719a6d6908029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170063"
 ---
 # <a name="get-user-related-machines-api"></a>获取与用户相关的计算机 API
 
@@ -68,9 +68,9 @@ ms.locfileid: "53894379"
 GET /api/users/{id}/machines
 ```
 
-**ID 不是完整的 UPN，而只是用户名。 (，若要检索供用户 user1@contoso.com /api/users/user1/machines)**
+**ID 不是完整的 UPN，而只是用户名。 (，若要检索要检索的计算机 user1@contoso.com /api/users/user1/machines)**
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 名称|类型|说明
 :---|:---|:---
@@ -82,7 +82,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且用户存在 - 200 正常[](machine.md)，正文中包含计算机实体列表。 如果用户不存在 - 404 未找到。
+如果成功且用户存在 - 200 正常[](machine.md)，正文中包含计算机实体列表。 如果用户不存在 - 200 确定，但具有空集。
 
 ## <a name="example"></a>示例
 

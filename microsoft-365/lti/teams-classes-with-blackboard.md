@@ -1,5 +1,5 @@
 ---
-title: 将Microsoft Teams类与使用具有管理学习的超
+title: 将Microsoft Teams类与具有"Learn 超"的类一同使用
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,22 +12,22 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: 将Microsoft Teams类与使用具有管理学习的超
+description: 将Microsoft Teams类与具有"Learn 超"的类一同使用
 ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575080"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162339"
 ---
-# <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>将Microsoft Teams类与使用具有管理学习的超
+# <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>将Microsoft Teams类与具有"Learn 超"的类一同使用
 
-团队合作是每个现代组织的核心。 通过促进协作，这是每个成功机构的定义特征。 通过将它们与一些类配对，可以增强功能与Microsoft Teams功能。
+团队合作是每个现代组织的核心。 通过促进协作，这是每个成功机构的定义特征。 通过将它们与一些类配对，可以增强一切 Capabiliting Learn 超Microsoft Teams功能。
 
 你的课程可能包括实时对话、视频会议或异步交互。 可以在一个地方为学生添加文件共享和共同创建体验。 Microsoft Teams超学习课程重新定义了教学的动态性以及有效的学习方式。
 
 > [!IMPORTANT]
-> 确保已成功在学生信息系统和[SIS](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning) (机构电子邮件) 
+> 确保你已成功在学生信息系统和 SIS 中设置 ([电子邮件) ](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
 >the Microsoft Teams classes integration relies on the institution email field in your SIS to map to the correct Microsoft Azure Active Directory's (AAD) [User Principle Name (UPN) ](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes). 如果未设置机构电子邮件，这将默认为现有电子邮件。 建议为每个用户设置此字段，以确保其数据正确同步，并且 AAD 和用户学习超之间的电子邮件数据没有冲突。
 >
@@ -39,9 +39,9 @@ ms.locfileid: "58575080"
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>机构电子邮件意味着什么，它支持什么？
 
-" **机构电子邮件** "字段允许在客户端的外部支持的数据源和用户学习超之间的自定义字段映射。 如果数据源是云提供商（如 Microsoft），则用户原则名称 (UPN) 是每个用户的主要唯一标识符，其中包括 UPN 前缀 (以及用户的帐户名称) 和 UPN 后缀 (DNS 域名) 与 @ 符号联接在一起。 这将为用户内每个特定用户创建一个唯一Microsoft Azure Active Directory。
+" **机构电子邮件** "字段允许在客户端的外部支持的数据源和用户学习超之间的自定义字段映射。 如果数据源是云提供商（如 Microsoft），则用户原则名称 (UPN) 是每个用户的主要唯一标识符，其中包括 UPN 前缀 (用户的帐户名称) 和 UPN 后缀 (DNS 域名) 与 @ 符号联接在一起。 这将为用户内每个特定用户创建一个唯一Microsoft Azure Active Directory。
 
-若要确保数据准确无误，并且正确实现在"完成学习超"和 Microsoft Teams 类之间的注册或成员身份，用户的电子邮件地址必须在这两个系统之间匹配。 在"完成学习"中，用户可以在用户界面中更改或替代其现有电子邮件地址，这可能会导致发生同步错误，并且用户未正确添加到课堂团队。 机构 **电子邮件** 字段映射可确保正确管理此级别的安全和验证检查，而无论用户是否更改了在将用户的电子邮件发送到了一台具有该级别"Learn 超"功能的电子邮件。
+若要确保数据准确无误，并且正确实现在"需要学习的超"和 Microsoft Teams 类之间的注册或成员身份，用户的电子邮件地址必须在这两个系统之间匹配。 在"完成学习"中，用户可以在用户界面中更改或替代其现有电子邮件地址，这可能会导致发生同步错误，并且用户未正确添加到课堂团队。 机构 **电子邮件** 字段映射可确保正确管理此级别的安全和验证检查，而无论用户是否更改了在将用户的电子邮件发送到了一台具有该级别"Learn 超"功能的电子邮件。
 
  当两个电子邮件地址不同时，可以是：
 
@@ -52,7 +52,7 @@ ms.locfileid: "58575080"
 机构 **电子邮件** 字段映射现在可用于高级配置和用户了解对象类型字段映射设置所有现有 SIS  >    >  **集成类型**。
 
 > [!NOTE]
-> 值得注意的是，默认情况下，机构电子邮件设置为所有 SIS格式的"个人电子邮件"，并且对于每个人必须是唯一的。  设置并运行的所有现有集成都将具有此数据映射，因为如果用户的电子邮件被复制，SIS 将无法导入用户。 如果机构需要能够将机构电子邮件更改为自定义，他们将需要通过 SIS 中的高级配置设置管理。 
+> 值得注意的是，默认情况下，机构电子邮件设置为所有 SIS格式的"个人电子邮件"，并且对于每个人必须是唯一的。  设置并运行的所有现有集成都将具有此数据映射，因为如果用户的电子邮件被复制，SIS 将无法导入用户。 如果机构需要能够将机构电子邮件更改为自定义，他们将需要通过 SIS 中的高级配置设置管理此配置。
 
 ## <a name="requirements"></a>要求
 
@@ -72,7 +72,7 @@ ms.locfileid: "58575080"
 
 - 必须配置 LTI
 
-- 添加一名Teams级 LTI 集成
+- 添加具有超强Teams课程 LTI 集成
 
 - 添加Microsoft Teams类 LTI 1.3 工具
 
@@ -146,7 +146,7 @@ ms.locfileid: "58575080"
 
 ## <a name="configure-and-approve-microsoft-teams-classes-integration"></a>配置和批准Microsoft Teams类集成
 
-若要成功将你的"Microsoft Teams"类集成，你将需要确保批准使用"完成"功能访问"Microsoft Azure应用程序。 这一过程将需要由你的机构的全局管理员Microsoft 365完成。
+若要成功将你的"你的Microsoft Teams超"实例与一些类集成，你将需要确保批准在 Microsoft Azure 租户中访问的"完成"Learn 超应用程序。 这一过程将需要由你的机构的全局管理员Microsoft 365完成。
 
 此过程可以在你在你的"你的"学习超实例"中配置 LTI 应用程序之前或之后完成。
 
@@ -157,15 +157,15 @@ ms.locfileid: "58575080"
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
 > [!NOTE]
-> 将 **{Tenant}** 替换为特定的机构Microsoft Azure租户 ID。
+> 将 **{Tenant}** 替换为特定机构Microsoft Azure租户 ID。
 
-你将看到一个权限窗口，该窗口说明你正在向用户授予访问 Microsoft Teams。
+你将看到一个权限窗口，说明你正在向用户授予访问 Microsoft Teams。
 
 ![Microsoft 和 Microsoft 的"权限"窗口。](media/permissions1.png)
 
 ### <a name="after-configuring-the-lti-applications"></a>配置 LTI 应用程序后
 
-1. 在"**管理员面板"上**，导航到"**工具和** 实用程序 **"，然后选择"Microsoft Teams集成管理员"。**
+1. 在管理员 **面板上**，导航到"**工具和** 实用程序"，然后选择"Microsoft Teams **集成管理员"。**
 
 2. 选择 **"启用Microsoft Teams"。**
 

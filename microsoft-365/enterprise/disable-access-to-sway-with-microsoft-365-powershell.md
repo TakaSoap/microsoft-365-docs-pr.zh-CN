@@ -19,17 +19,17 @@ ms.custom:
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
 description: 了解在何处下载 ManageSway.ps1 PowerShell 脚本，该脚本允许你在组织中禁用对 Sway Microsoft 365访问。
 ms.openlocfilehash: c441e3087ce85e2f41b200ce0a76f5f6196ea4cf
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162375"
 ---
 # <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>使用 PowerShell for Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-使用 ManageSway.ps1 PowerShell 脚本，可以查看和禁用 Microsoft 365 中的服务，包括 Sway。 此脚本可以自动执行以下主题中描述的过程：
+使用 ManageSway.ps1 PowerShell 脚本可以查看和禁用 Microsoft 365 中的服务，包括 Sway。 此脚本可以自动执行以下主题中描述的过程：
   
 - [使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)
     

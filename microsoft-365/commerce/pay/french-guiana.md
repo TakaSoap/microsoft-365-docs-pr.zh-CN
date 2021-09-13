@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba73ea8704301829ce11869a6a37b0a6955192b86a09fa793304a0e457f4bcf7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a25a0f6f7e1604d9652350606310e856d93ee5a8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171429"
 ---
 # <a name="payment-information-for-french-guiana"></a>法属 Guiana 的付款信息
 
@@ -31,5 +31,5 @@ Please pay in USD only and reference your invoice number (s) on your invoice inv
 **Bank：** 美洲银行  
 **分支** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐户编号：4426587954**  
+**帐号：4426587954**  
 **帐户名称：** Microsoft

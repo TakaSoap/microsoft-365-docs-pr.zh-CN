@@ -21,11 +21,11 @@ ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 本文将介绍使用美国政府高级计划Office 365客户GCC终结点。
 hideEdit: true
 ms.openlocfilehash: c29ea7c69528b734f3083138501224e071848c1d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162342"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 美国政府 GCC High 终结点
 
@@ -33,7 +33,7 @@ ms.locfileid: "58567396"
 
 Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美国政府高级Office 365计划GCC客户。
   
- **Office 365终结点**：全球 ([包括 GCC) 由世纪](urls-and-ip-address-ranges.md)Office 365 \| [Office 365德国 Office 365 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365](microsoft-365-germany-endpoints.md) DoD Office 365美国政府 \| [doD](microsoft-365-u-s-government-dod-endpoints.md) \|  GCC GCC
+ **Office 365** 终结点：全球 (包括 Office 365 [由](urls-and-ip-address-ranges.md) \| [21 Vianet](urls-and-ip-address-ranges-21vianet.md) Office 365 Germany Office 365 美国政府 doD Office 365 \| [](microsoft-365-germany-endpoints.md) \| [DoD](microsoft-365-u-s-government-dod-endpoints.md) GCC \| *运营* 的 GCC) GCC
 
 <br>
 
@@ -56,7 +56,7 @@ Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美�
 
 - **类别**：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
 
-- **ER：** 如果终结点 **集通过** 具有路由前缀的 Azure ExpressRoute Office 365是。 包含显示的路由前缀的 BGP 社区与列出的服务区域一致。 当 ER 为 **否** 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定没有为 ER 为 No 的终结点集播发 **路由**。 如果你计划使用 Azure AD 连接，请阅读特殊的注意事项部分[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)，以确保你拥有适当的 Azure AD 连接配置。
+- **ER：** 如果终结点 **集通过** 具有路由前缀的 Azure ExpressRoute 受支持，Office 365是。 包含显示的路由前缀的 BGP 社区与列出的服务区域一致。 当 ER 为 **否** 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定没有为 ER 为 No 的终结点集播发 **路由**。 如果你计划使用 Azure AD 连接，请阅读特殊的注意事项部分[](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)，以确保你拥有适当的 Azure AD 连接配置。
 
 - **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
 
@@ -66,6 +66,6 @@ Office 365 要求连接到 Internet。 以下终结点应仅适用于使用美�
 
 关于此表的注释：
 
-- SCC 安全与 (中心) Azure ExpressRoute for Office 365。 这同样适用于通过 SCC 公开的许多功能，如报告、审核、Advanced eDiscovery、统一 DLP 和数据管理。 PST 导入和电子数据展示导出这两个特定功能当前不支持仅具有 Office 365 路由筛选器的 Azure ExpressRoute，因为它们依赖于 Azure Blob 存储。 若要使用这些功能，你需要使用任何可存储 Azure 连接选项（包括 Internet 连接或带 Azure 公共路由筛选器的 Azure ExpressRoute）单独连接到 Azure Blob 服务。 您必须评估为这两个功能建立此类连接。 Office 365信息保护团队已注意到此限制，并积极致力于支持 Azure ExpressRoute for Office 365，但仅限于这两Office 365功能的 Office 365 路由筛选器。
+- 安全与合规中心 (SCC) 为 Azure ExpressRoute for Office 365。 这同样适用于通过 SCC 公开的许多功能，如报告、审核、Advanced eDiscovery、统一 DLP 和数据管理。 PST 导入和电子数据展示导出这两个特定功能当前不支持仅具有 Office 365 路由筛选器的 Azure ExpressRoute，因为它们依赖于 Azure Blob 存储。 若要使用这些功能，你需要使用任何可存储 Azure 连接选项（包括 Internet 连接或具有 Azure 公共路由筛选器的 Azure ExpressRoute）单独连接到 Azure Blob 服务器。 您必须评估为这两个功能建立此类连接。 Office 365信息保护团队已注意到此限制，并积极致力于支持 Azure ExpressRoute for Office 365，但仅限于针对这两Office 365功能的 Office 365 路由筛选器。
 
 - 还有一些附加的可选终结点Microsoft 365 企业应用版未列出，并且用户不需要这些终结点Microsoft 365 企业应用版应用程序和编辑文档。 可选终结点托管在 Microsoft 数据中心中，不处理、传输或存储客户数据。 建议将用户与这些终结点的连接定向到默认 Internet 出口外围。

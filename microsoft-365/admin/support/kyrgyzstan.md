@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2b1ba075ad597e7b8fee4a44bec5ad5ef1c9feb7b7d8f312f9db2ef9772be488
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3153e04b2c34dc9769125d6e56703af7308c0c78
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821195"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171203"
 ---
 # <a name="contact-support-for-kyrgyzstan"></a>联系针对哈萨克斯坦的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53821195"
 ## <a name="phone-number"></a>电话号码
 +7 499 922 86 23
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 俄语：Mon-Fri上午 10 点到下午 7 点

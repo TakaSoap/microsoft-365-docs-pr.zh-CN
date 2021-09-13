@@ -13,15 +13,15 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ccf211172016b4e732f101971c4e623701e6097e5fb4e466dafe4f904db12b02
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c20e24062dc8808b878ae2b18a5874f8e3ab952
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170770"
 ---
 # <a name="payment-information-for-brazil"></a>巴西的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please follow payment instruction on your invoice and reference invoice number () on the payment invoice.
+Please follow payment instruction on your invoice and reference invoice number (s) on the payment invoice.

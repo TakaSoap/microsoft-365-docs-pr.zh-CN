@@ -1,6 +1,6 @@
 ---
 title: 试用Microsoft Cloud App Security Microsoft 365 Defender
-description: 将测试Microsoft 365 Defender或试验环境设置为测试并体验旨在保护设备、标识、数据和应用程序的安全解决方案。
+description: 设置你的Microsoft 365 Defender试验实验室或试验环境，以测试并体验旨在保护设备、标识、数据和应用程序的安全解决方案。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170921"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>试用Microsoft Cloud App Security Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "58575920"
 
 本文是设置评估环境的过程中第 3 步（第 3 步，第[3](eval-defender-mcas-overview.md)步Microsoft Cloud App Security）。 有关此过程详细信息，请参阅 [概述文章](eval-defender-mcas-overview.md)。
 
-使用以下步骤设置和配置 Microsoft Cloud App Security。
+使用以下步骤为用户设置和配置Microsoft Cloud App Security。
 
 
 ![试点计划Microsoft Cloud App Security。](../../media/defender/m365-defender-mcas-pilot-steps.png)
@@ -48,7 +48,7 @@ ms.locfileid: "58575920"
 
 ## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>步骤 1. 创建试点组 — 将试点部署的范围缩小到某些用户组
 
-Microsoft Cloud App Security设置部署范围。 通过作用域，可以选择要监视的应用或排除在监视之外的某些用户组。 可以包含或排除用户组。 若要确定试点部署的范围，请参阅 [作用域部署](/cloud-app-security/scoped-deployment)。
+Microsoft Cloud App Security允许您确定部署的范围。 通过作用域，可以选择要监视的应用或排除在监视之外的某些用户组。 可以包含或排除用户组。 若要确定试点部署的范围，请参阅 [作用域部署](/cloud-app-security/scoped-deployment)。
 
 
 ## <a name="step-2-configure-protection--conditional-access-app-control"></a>步骤 2. 配置保护 — 条件访问应用控制
@@ -64,7 +64,7 @@ Microsoft Cloud App Security设置部署范围。 通过作用域，可以选择
 
 有关详细信息，包括受支持的应用和客户端，请参阅使用条件访问应用Microsoft Cloud App Security[保护应用](/cloud-app-security/proxy-intro-aad)。 
 
-有关示例策略，请参阅[适用于 SaaS Microsoft Cloud App Security推荐策略](../office-365-security/mcas-saas-access-policies.md)。 这些策略基于一组 [常见标识](../office-365-security/microsoft-365-policies-configurations.md) 和设备访问策略，这些策略建议作为所有客户的起点。 
+有关示例策略，请参阅[适用于 SaaS Microsoft Cloud App Security推荐的策略](../office-365-security/mcas-saas-access-policies.md)。 这些策略基于一组 [常见标识](../office-365-security/microsoft-365-policies-configurations.md) 和设备访问策略，这些策略建议作为所有客户的起点。 
 
 ## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>步骤 3. 试用功能 - 演练用于保护环境的教程 
 

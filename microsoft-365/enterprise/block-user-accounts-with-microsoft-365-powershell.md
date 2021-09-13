@@ -1,5 +1,5 @@
 ---
-title: 使用 powerShell Microsoft 365用户帐户
+title: 使用 PowerShell Microsoft 365用户帐户
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,17 +20,17 @@ ms.custom:
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: 如何使用 PowerShell 阻止和取消阻止对帐户Microsoft 365访问。
 ms.openlocfilehash: fd9eba96b09a73b2fb6e87b30096dbf8186caceb
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171009"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-当您阻止访问 Microsoft 365 帐户时，可以防止任何人使用该帐户登录并访问组织中服务和Microsoft 365数据。 可以使用 PowerShell 阻止对单个或多个用户帐户的访问。
+阻止访问 Microsoft 365 帐户时，可防止任何人使用该帐户登录并访问组织中Microsoft 365和数据。 可以使用 PowerShell 阻止对单个或多个用户帐户的访问。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 

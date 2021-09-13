@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da5a98342fedf780f4897d0eb1b731c41faf87e9b820b5ced0347e3ab0757b43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3749b51a25570045fe381db6d9136fa0e8d1b2fa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171194"
 ---
 # <a name="contact-support-for-lesotho"></a>联系支持人员，支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53838159"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri 10 AM-6 PM

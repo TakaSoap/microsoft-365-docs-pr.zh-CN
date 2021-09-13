@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 在删除用户帐户后的 30 天内，可以还原该帐户以及所有数据，并且用户可以使用同一帐户登录。
-ms.openlocfilehash: 7b030d3e6792b168977b63f1ca686e8870ea103dd86eec3312f4c0760154ecab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 删除用户帐户后 30 天内，可以还原该帐户以及所有数据，并且用户可以使用同一帐户登录。
+ms.openlocfilehash: e37f913bcc6a54bdcc1e0f52168fe1aab0c8afdd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169911"
 ---
 # <a name="restore-a-user"></a>还原用户
    
@@ -39,13 +39,13 @@ ms.locfileid: "53832927"
   
 - 确保许可证可用于分配给帐户。
     
-- 如果您的企业使用 Active Directory，有关还原用户帐户的提示，请参阅如何在 Office 365 中排除已删除[的Office 365。](/office365/troubleshoot/active-directory/restore-deleted-user-accounts) 
+- 如果你的企业使用 Active Directory，有关还原用户帐户的提示，请参阅如何在 Office 365 中排除已删除[的Office 365。](/office365/troubleshoot/active-directory/restore-deleted-user-accounts) 
     
 ## <a name="restore-one-or-more-user-accounts"></a>还原一个或多个用户帐户
 
 你必须是全局Microsoft 365管理员或用户管理管理员才能执行这些步骤。 
 
-1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
+1. 在管理中心，转到"用户 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a>页面。
 
 2. 在 **"已删除用户"** 页上，选择要还原的用户的名称，然后选择"还原 **"。**
     
@@ -61,7 +61,7 @@ ms.locfileid: "53832927"
   
 若要解决此问题，可以将活动的用户帐户替换为要还原的用户帐户，或者为要还原的帐户分配不同的用户名，这样就不会有两个用户名相同的帐户。步骤如下。
 
-1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
+1. 在管理中心，转到"用户 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a>页面。
   
 2. 在 **"已删除用户"** 页上，选择要还原的用户的名称，然后选择"还原 **"。**
     
@@ -84,16 +84,16 @@ ms.locfileid: "53832927"
   
 为此，[你必须拥有](about-admin-roles.md)Microsoft 365权限。 
 
-1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
+1. 在管理中心，转到"用户 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a>页面。
 
 2. 在" **已删除的用户**"页上，选择要还原的用户，然后选择" **还原**"。 
     
-3. 在"**还原**"页上，按照说明设置密码，然后选择"还原 **"。** 将从要还原的用户自动删除任何冲突的代理地址。
+3. 在"**还原**"页上，按照说明设置密码并选择"还原 **"。** 将从要还原的用户自动删除任何冲突的代理地址。
     
 4. 查看结果，然后选择" **关闭**"。
 
 ## <a name="related-content"></a>相关内容
 
 [删除用户 (](delete-a-user.md) 文章) \
-[将管理员角色](assign-admin-roles.md) (视频) \
+[将管理员角色 (](assign-admin-roles.md) 视频) \
 [向用户分配许可证](../manage/assign-licenses-to-users.md) (本文) 

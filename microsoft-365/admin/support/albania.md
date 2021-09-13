@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0eb5e588d368f36a4e216a5c3bcf4332a5f83da06666df4f474e847532ba168b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4826aea7355a3d37f93d1803c5b7696a7756092f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170869"
 ---
 # <a name="contact-support-for-albania"></a>联系阿尔巴尼亚支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53832639"
 
 输入代码 7700
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d38fe9f7c3bb19c946f97d00720cd8bf60c18f4c
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162252"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -42,36 +42,41 @@ ms.locfileid: "58918361"
 
 1. 运行性能分析器以收集终结点上Microsoft Defender 防病毒事件的性能记录。
 
-> [!NOTE]
-> **Microsoft Microsoft Defender 防病毒-Antimalware-Engine** 类型的事件的性能通过性能分析器进行记录。
+   > [!NOTE]
+   > **Microsoft-antimalware-Engine** 类型的 Microsoft Defender 防病毒 事件的性能通过性能分析器进行记录。
 
 2. 使用不同的录制报告分析扫描结果。
 
 ## <a name="using-performance-analyzer"></a>使用性能分析器
 
-若要开始录制系统事件，请以管理模式打开 Powershell 并执行以下步骤：
+若要开始录制系统事件，请以管理模式打开 PowerShell 并执行以下步骤：
 
 1. 运行以下命令以开始录制：
 
-`New-MpPerformanceRecording -RecordTo <recording.etl>`
+   `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
- 其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅 [Defender](/powershell/module/defender)。
+    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅 [Defender](/powershell/module/defender)。
 
 2. 如果认为进程或服务会影响性能，请通过执行相关任务重现这种情况。
+
 3. 按 **Enter** 停止并保存录制，或 **按 Ctrl+C** 取消录制。
+
 4. 使用性能分析器的参数分析结果 `Get-MpPerformanceReport` 。 例如，在执行命令时，会向用户提供影响性能的前 3 个文件前 10 次 `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` 扫描的列表。 
 
 有关命令行参数和选项的详细信息，请参阅 [New-MpPerformanceRecording](#new-mpperformancerecording) 和 [Get-MpPerformanceReport](#get-mpperformancereport)。
 
+> [!NOTE]
+> 运行录制时，如果收到错误"由于 Windows Performance Recorder 已在录制，无法启动性能录制"，请运行以下命令以使用新命令停止现有跟踪 **：wpr -cancel -instancename** MSFT_MpPerformanceRecording
+
 ### <a name="performance-tuning-data-and-information"></a>性能优化数据和信息
 
-根据查询，用户将能够查看扫描计数、持续时间 (总/分钟/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
+基于查询，用户将能够查看扫描计数、持续时间 (总/分钟/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
 
 :::image type="content" source="images/example-output.png" alt-text="基本 TopFiles 查询的示例输出":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>其他功能：导出并转换为 CSV 和 JSON
 
-还可以导出 perfomance 分析器的结果，并转换为 CSV 或 JSON 文件。
+还可以导出性能分析器的结果，并转换为 CSV 或 JSON 文件。
 有关描述通过示例代码"导出"和"转换"过程的示例，请参阅下文。
 
 #### <a name="for-csv"></a>对于 CSV
@@ -150,7 +155,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-下一节介绍 Get-MpPerformanceReport PowerShell cmdlet。 分析和报告 MDAV Microsoft Defender 防病毒 (性能) 记录。
+下一节介绍 Get-MpPerformanceReport PowerShell cmdlet。 分析和报告 MDAV Microsoft Defender 防病毒 (记录) 记录。
 
 #### <a name="syntax-get-mpperformancereport"></a>语法：Get-MpPerformanceReport
 

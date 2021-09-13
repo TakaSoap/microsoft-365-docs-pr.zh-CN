@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 description: 创建并访问草稿集合后，可以提交到审阅集。 提交草稿集合时，收集的项目将添加到案例的审阅集中。 收集的项目在审阅集内后，可以分析、审阅和导出它们。
 ms.openlocfilehash: 9b63117a90f6373e485f74e2edccfa0992ca2ded
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162039"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>将草稿集合提交到审阅集中Advanced eDiscovery
 
-如果你对在草稿集合中收集的项目感到满意，并且已准备好分析、标记和审阅这些项目，可以在这种情况中向审阅集添加集合。 将草稿集合提交到审阅集时，收集的项目会从项目集中的原始内容Microsoft 365复制到审阅集。 审阅集是 Microsoft 提供的安全Azure 存储 Microsoft 云中的位置。
+如果你对在草稿集合中收集的项目感到满意，并且已准备好分析、标记和审阅这些项目，可以在这种情况中向审阅集添加集合。 将草稿集合提交到审阅集时，收集的项目会从项目的原始内容位置复制到Microsoft 365审阅集。 审阅集是 Microsoft 提供的安全Azure 存储 Microsoft 云中的位置。
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>将草稿集合提交到审阅集中
 
-1. 在Microsoft 365 合规中心中，打开"Advanced eDiscovery"案例，然后选择"集合"选项卡以显示该情况下集合的列表。
+1. 在Microsoft 365 合规中心中，打开 Advanced eDiscovery case，然后选择"集合"选项卡以显示该情况中集合的列表。
 
    ![一种情况下的集合列表。](../media/CommitDraftCollections1.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "58567504"
 
    3. 配置其他集合设置：
 
-       - **Teams和Yammer** 消息：选择此选项可以将对话线程添加到集合中，该集合包含搜索查询在集合中返回的聊天项目。 这意味着将重新构造包含与搜索条件匹配的项目的聊天对话。 这允许你在来回对话的上下文中查看聊天项目。 有关详细信息，请参阅对话[线程中的Advanced eDiscovery。](conversation-review-sets.md)
+       - **Teams和Yammer** 消息：选择此选项可以将对话线程添加到集合，该集合包含搜索查询在集合中返回的聊天项目。 这意味着将重新构造包含与搜索条件匹配的项目的聊天对话。 这允许你在来回对话的上下文中查看聊天项目。 有关详细信息，请参阅对话[线程Advanced eDiscovery。](conversation-review-sets.md)
 
        - **云附件**：选择此选项以在将集合结果添加到审阅集时包含新式附件或链接文件。 这意味着新式附件或链接文件的目标文件将添加到审阅集。
 
@@ -82,7 +82,7 @@ ms.locfileid: "58567504"
 
 - 所有项目 (包括不在保管人或非保管人数据源中的内容和元数据 *)* 在名为深度索引) 的过程中对 (重新编制索引，以便审阅集内的所有数据在审查案例数据期间完全可搜索。 当您在案例调查期间搜索或筛选审阅集中的内容时，对集合中的内容重新建立索引会导致全面而快速的搜索。
 
-- 当您SharePoint审阅 OneDrive集时，SharePoint和加密文件以及搜索结果中返回的附加了加密文件的文档和加密文件将被解密。 可以在审阅集内查看和查询解密的文件。 有关详细信息，请参阅解密[Microsoft 365电子数据展示工具。](ediscovery-decryption.md)
+- 将SharePoint审阅OneDrive集合时，将解密在搜索结果中返回的加密文档和加密文件以及附加电子邮件的文档和加密文件。 可以在审阅集内查看和查询解密的文件。 有关详细信息，请参阅解密[电子数据Microsoft 365中的解密](ediscovery-decryption.md)。
 
 - 光学字符识别 (OCR) 功能从图像中提取文本，并包括图像文本以及已添加到审阅集的内容。 有关详细信息，请参阅本文 [中的光学](#optical-character-recognition) 字符识别部分。
 
@@ -90,6 +90,6 @@ ms.locfileid: "58567504"
 
 ## <a name="optical-character-recognition"></a>光学字符识别
 
-将集合提交到审阅集时，Advanced eDiscovery 中的光学字符识别 (OCR) 功能会自动从图像中提取文本，并包括图像文本以及已添加到审阅集中的内容。 可以在审阅集内所选图像文件的文本查看器中查看提取的文本。 通过此功能，你可以对图像中的文本进行进一步审阅和分析。 OCR 支持松散文件、电子邮件附件和嵌入图像。 有关 OCR 支持的图像文件格式列表，请参阅[高级电子数据展示中受支持的文件类型](supported-filetypes-ediscovery20.md#image)。
+将集合提交到审阅集时，Advanced eDiscovery 中的光学字符识别 (OCR) 功能会自动从图像中提取文本，并包括图像文本以及添加到审阅集中的内容。 可以在审阅集内所选图像文件的文本查看器中查看提取的文本。 通过此功能，你可以对图像中的文本进行进一步审阅和分析。 OCR 支持松散文件、电子邮件附件和嵌入图像。 有关 OCR 支持的图像文件格式列表，请参阅[高级电子数据展示中受支持的文件类型](supported-filetypes-ediscovery20.md#image)。
 
 必须针对在高级电子数据展示中创建的每个案例启用 OCR 功能。 有关详细信息，请参阅配置 [搜索和分析设置](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr)。

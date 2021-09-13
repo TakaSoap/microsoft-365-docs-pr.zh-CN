@@ -24,30 +24,30 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 阻止以前的员工登录并阻止访问Microsoft 365服务。
-ms.openlocfilehash: a97c77dd20421c808e850b544f0921d12f7ddf9584f413654d74bf10be016239
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 阻止以前的员工登录并阻止访问 Microsoft 365 服务。
+ms.openlocfilehash: da1ad9236a8380dd3ce5bdebb86675b7c6e09cbd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169931"
 ---
-# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止对 Microsoft 365 服务的访问
+# <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>步骤 1 - 阻止以前的员工登录并阻止Microsoft 365访问
 
 如果需要立即阻止用户的登录访问，应重置其密码。 在此步骤中，强制注销用户Microsoft 365。
 
 > [!NOTE]
 > 你需要是全局管理员才能启动其他管理员的注销。 对于非管理员用户，可以使用用户管理员或支持管理员用户执行此操作。 [详细了解管理员角色](about-admin-roles.md)
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择用户名旁边的框，然后选择重置 **密码**。
 3. 输入新密码，然后选择"重置 **"。**  (不要将其发送给他们。) 
 4. 选择要转到其属性窗格的用户名称，在"帐户"选项卡上，选择"**注销所有会话"。**
 
-在一小时内（或离开当前Microsoft 365页面后）将提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所剩的时间，以及他们是否导航到当前网页。
+在一小时内或离开当前Microsoft 365页面后，系统会提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所剩的时间，以及他们是否导航到当前网页。
   
 > [!IMPORTANT]
-> 如果用户在邮箱Outlook 网页版，只需单击其邮箱中的四处，可能不会立即将其启动。 当他们选择其他磁贴（如OneDrive或刷新浏览器）时，即会启动注销。
+> 如果用户在邮箱Outlook 网页版，只需单击其邮箱中的四处，可能不会立即退出。 当他们选择其他磁贴（如OneDrive或刷新浏览器）时，即会启动注销。
   
 若要使用 PowerShell 立即注销用户，请参阅 [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken) cmdlet。
   
@@ -64,11 +64,11 @@ ms.locfileid: "53815619"
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>阻止以前的员工访问电子邮件 (Exchange Online)
 
-如果你有电子邮件作为你的 Microsoft 365订阅的一部分，请登录到 Exchange 管理中心，并按照以下步骤阻止以前的员工访问他们的电子邮件。
+如果你有电子邮件作为你的 Microsoft 365 订阅的一部分，请登录到 Exchange 管理中心并按照以下步骤阻止以前的员工访问他们的电子邮件。
   
 1. 转到 <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
-3. 从列表中选择用户邮箱，然后在右侧"详细信息窗格" (，选择"电子邮件) "下的"管理 **电子邮件** 应用 **设置"。**  关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
+3. 从列表中选择用户邮箱，然后在右侧"详细信息窗格" (，选择"电子邮件) "下的"管理 **电子邮件** 应用程序 **设置"。**  关闭 **所有** 选项的滑块;**移动****(Exchange ActiveSync) 、Outlook 网页版、Outlook****桌面 (MAPI) 、Exchange** **Web 服务****、POP3** 和 **IMAP。**
 4. 选择“**保存**”。
 
 ## <a name="related-content"></a>相关内容

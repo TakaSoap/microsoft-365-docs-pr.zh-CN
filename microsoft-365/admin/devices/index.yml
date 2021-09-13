@@ -11,12 +11,12 @@ metadata:
   ms.date: 09/09/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: e5d1fc360c2043191f437f4439cfad1373c6002a5abf451ca366aa0f08796df5
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 3e3186631a460a588cc2ebe2f15abf579a191ac8
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53826191"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59169837"
 landingContent:
 - title: 不同的 MDM 和 MAM 方法
   linkLists:
@@ -46,15 +46,15 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: 从设备中删除公司数据
       url: ../../business/remove-company-data.md
-    - text: 将Windows重置为出厂设置
+    - text: 将Windows设备重置为出厂设置
       url: ../../business/reset-devices-to-factory-settings.md
-- title: 使用企业应用版管理Microsoft 365应用数据
+- title: 使用适用于企业的 Microsoft 365 管理设备和应用数据
   linkLists:
   - linkListType: overview
     links:
     - text: 企业Microsoft 365概述
       url: ../../enterprise/microsoft-365-overview.md
-    - text: 适用于企业的 Microsoft 365的设备管理路线图
+    - text: 适用于企业的设备管理Microsoft 365路线图
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
 - title: 使用基本移动性和安全性管理设备和应用数据
   linkLists:

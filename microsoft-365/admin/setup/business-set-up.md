@@ -29,13 +29,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: 了解适用于以下用户的Microsoft 365 商业高级版步骤，包括添加域和用户、设置安全策略等。
+description: 了解适用于 Microsoft 365 商业高级版 的安装步骤，包括添加域和用户、设置安全策略等。
 ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170304"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
 
@@ -47,7 +47,7 @@ ms.locfileid: "58568188"
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加域、用户和设置策略
 
-当你购买Microsoft 365 商业高级版时，可以选择使用你拥有的域，或在注册期间购买一[个](../../business-video/sign-up.md)。
+当你购买Microsoft 365 商业高级版时，可以选择使用你拥有的域，或在注册期间购买[一个](../../business-video/sign-up.md)域。
 
 - 如果你在注册时购买了新域，则域已全部设置好，你可以继续[添加用户并分配许可证](#add-users-and-assign-licenses)。
 
@@ -111,7 +111,7 @@ ms.locfileid: "58568188"
 
 1. 在 **"增强对高级** 网络威胁的保护"上，建议接受默认设置，让高级威胁防护Office 365 [](../../security/office-365-security/defender-for-office-365.md)扫描应用中的文件和Office链接。
 
-    !["增强保护"页面的屏幕截图。](../../media/increasetreatprotection.png)
+    !["增加保护"页面的屏幕截图。](../../media/increasetreatprotection.png)
 
 
 2. 在"防止泄露敏感数据"页上，接受默认设置以启用 Office 365 数据丢失防护 (DLP) ，以跟踪 Office 应用中的敏感数据并防止在组织外部意外共享这些数据。
@@ -123,15 +123,15 @@ ms.locfileid: "58568188"
 
 ## <a name="secure-windows-10-pcs"></a>保护 Windows 10 电脑
 
-在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **你的Windows 10计算机"。** 选择 **"视图** "开始。 请参阅[保护Windows 10计算机](secure-win-10-pcs.md)，了解完整说明。
+在左侧导航上，选择"**设置**"，然后在"登录和安全"下，选择"保护 **Windows 10计算机"。** 选择 **"视图** "开始。 有关[完整说明，Windows 10](secure-win-10-pcs.md)保护计算机安全。
 
 ## <a name="deploy-office-365-client-apps"></a>部署Office 365客户端应用
 
-如果选择在安装过程中自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录 Azure AD 后，这些应用将安装在 Windows 10 设备上。
+如果你选择在安装期间自动安装 Office 应用，则当用户使用工作凭据从 Windows 设备登录到 Azure AD 后，这些应用将安装在 Windows 10 设备上。
 
-若要在Office iOS 或 Android 设备上安装移动设备，请参阅为用户[Microsoft 365 商业高级版移动设备](set-up-mobile-devices.md)。
+若要在Office iOS 或 Android 设备上安装移动设备，请参阅为 Microsoft 365 商业高级版[设置移动设备](set-up-mobile-devices.md)。
 
-也可以单独安装Office安装。 有关[说明Office在 PC 或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
+也可以单独安装Office安装。 有关[说明Office在电脑或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
 
 ## <a name="related-content"></a>相关内容
 

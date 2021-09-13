@@ -19,26 +19,26 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: 本文将了解如何使用 PowerShell 为用户禁用对 Microsoft 365 服务的访问权限。
+description: 本文中，了解如何使用 PowerShell 为用户Microsoft 365访问服务。
 ms.openlocfilehash: 7caab5fc6bc4522f210d788d0293c4594997f13d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162378"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>使用 PowerShell Microsoft 365访问服务
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-当Microsoft 365从许可计划分配许可证时，Microsoft 365该许可证会向用户提供所有服务。 但是，您可以控制Microsoft 365访问的服务。 例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。 可以使用 PowerShell 为特定许可计划禁用对任意数目的服务的访问：
+当Microsoft 365从许可计划分配许可证时，Microsoft 365该许可证会为用户提供所有服务。 但是，您可以控制Microsoft 365访问的服务。 例如，即使许可证允许访问 SharePoint Online 服务，也可以禁用对它的访问。 可以使用 PowerShell 为特定许可计划禁用对任意数目的服务的访问：
 
 - 单个帐户。
 - 一组帐户。
 - 组织中的所有帐户。
 
 >[!Note]
->存在Microsoft 365服务依赖项，当其他服务依赖指定服务时，它们可能会阻止您禁用它。
+>存在Microsoft 365服务依赖项，当其他服务依赖指定服务时，可能会阻止您禁用它。
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
@@ -59,12 +59,12 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
 若要查看本主题中过程之前和之后的结果，请参阅使用 PowerShell 查看帐户 [许可证和服务详细信息](view-account-license-and-service-details-with-microsoft-365-powershell.md)。
     
-PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用组织Microsoft 365服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
+PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用 Microsoft 365 中的服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
     
     
 ### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>为特定Microsoft 365计划禁用特定用户的特定服务
   
-若要为特定许可Microsoft 365禁用一组特定的服务，请执行以下步骤：
+若要为用户禁用一组Microsoft 365特定许可计划的服务，请执行以下步骤：
   
 #### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>步骤 1：使用下面的语法标识许可计划中不需要的服务：
     
@@ -72,7 +72,7 @@ PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，�
 $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
 ```
 
-以下示例创建一个 **LicenseOptions** 对象，该对象禁用名为 Office SharePoint E3 (Office 365 企业版 的许可计划中 `litwareinc:ENTERPRISEPACK`) 。
+下面的示例创建一个 **LicenseOptions** 对象，该对象禁用名为 Office SharePoint E3 (Office 365 企业版 的许可计划中 `litwareinc:ENTERPRISEPACK`) 。
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -159,7 +159,7 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 - 用户帐户已分配有许可计划。
 - 许可计划中提供了要禁用的服务。
 
-若要在Microsoft 365用户许可证时禁用服务，请参阅在分配用户许可证时禁用[对服务的访问权限](disable-access-to-services-while-assigning-user-licenses.md)。
+若要在Microsoft 365许可计划时为用户禁用服务，请参阅在分配用户许可证时禁用[对服务的访问权限](disable-access-to-services-while-assigning-user-licenses.md)。
 
 ### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>将许可计划中的所有服务分配给用户帐户
 

@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解用户对应用的同意，以及如何启用它们以允许第三方应用访问用户Microsoft 365信息。
-ms.openlocfilehash: 83f48549532b5bf901c9de1416cf5bbe9e6374d23bf2da9c7a4900c847bdf160
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 629e64494c6d72a13c3b155370a8f47505e9fa20
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170355"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户对应用程序中应用Microsoft 365
 
-此设置控制用户是否可以同意使用 OpenID 连接和 OAuth 2.0 进行登录和请求访问数据的应用。 可以从你自己的组织创建应用，也可以来自另一Office 365组织或第三方。
+此设置控制用户是否可以同意使用 OpenID 连接和 OAuth 2.0 进行登录和请求访问数据的应用。 应用可以从你自己的组织内部创建，也可以来自另一Office 365组织或第三方。
 
-如果启用此设置，这些应用将要求用户授予访问组织数据的权限，用户可以选择是否允许。 如果关闭此设置，则管理员必须先同意这些应用，用户才能使用它们。 在这种情况下，请考虑在 Azure 门户中设置管理员同意工作流，以便用户可以发送管理员批准请求以使用任何阻止的应用。
+如果启用此设置，这些应用将要求用户授予访问组织数据的权限，用户可以选择是否允许。 如果关闭此设置，则管理员必须先同意这些应用，然后用户才能使用它们。 在这种情况下，请考虑在 Azure 门户中设置管理员同意工作流，以便用户可以发送管理员批准请求以使用任何阻止的应用。
 
 用户可以仅向其拥有的、访问其 Office 365 信息的应用授予访问权限。 他们无法向应用授予对任何其他用户的信息的访问权限。
 
@@ -47,5 +47,5 @@ ms.locfileid: "53823527"
 
 ## <a name="related-content"></a>相关内容 
 
-[配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (文章) \
+[配置管理员同意工作流 (](/azure/active-directory/manage-apps/configure-admin-consent-workflow) 文章) \
 [管理对应用程序的同意并评估](/azure/active-directory/manage-apps/manage-consent-requests) 同意请求 (文章) 

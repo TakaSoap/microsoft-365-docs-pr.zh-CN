@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: c9964ce7abdae004b33fb7317740b30b46b72d95
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170068"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>导出每个设备的软件漏洞评估
 
@@ -40,21 +40,21 @@ ms.locfileid: "58603287"
 
 1. [导出软件漏洞评估 **JSON 响应**](#1-export-software-vulnerabilities-assessment-json-response)  API 将提取组织的所有数据作为 Json 响应。 此方法最适合使用少于 _100 K_ 设备的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-2. [通过文件导出软件 **漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 多台设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：
+2. [通过文件导出 **软件漏洞评估**](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 对于拥有 100 K 多台设备的大型组织，建议使用 Via-files。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，可以从以下Azure 存储下载所有数据：
    - 调用 API 获取包含所有组织数据的下载 URL 列表。
    - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 3. [Delta 导出软件漏洞评估 **JSON 响应**](#3-delta-export-software-vulnerabilities-assessment-json-response)  返回一个表，其中每个唯一组合都有一个条目：DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 和 EventTimestamp。
 API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
 
-   与完整的"软件漏洞评估 (JSON 响应) "不同（用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用仅用于获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
+   与完整的"软件漏洞评估 (JSON 响应) "不同（用于按设备获取组织的软件漏洞评估的完整快照）不同，增量导出 API 调用用于仅提取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
 
    由于针对软件漏洞的 Delta 导出 JSON 响应 API 调用仅返回目标日期范围的数据，因此不被视为完全 _导出_。
 
 使用 _Json_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
 
 ## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. 导出 JSON 响应 (软件漏洞) 
 
@@ -85,7 +85,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 ### <a name="14-parameters"></a>1.4 参数
 
 - pageSize (默认值 = 50，000) ：响应中的结果数。
-- $top：要返回的结果 (不返回 @odata.nextLink，因此不会拉取所有) 。
+- $top：返回 (的结果数不会返回 @odata.nextLink，因此不会拉取所有) 。
 
 ### <a name="15-properties"></a>1.5 属性
 
@@ -101,7 +101,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-CveId|string|分配给 CVE 安全机制中常见漏洞和曝光下 (漏洞) 标识符。|CVE-2020-15992
+CveId|string|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992
 CvssScore|string|CVE 的 CVSS 分数。|6.2
 DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
@@ -114,7 +114,7 @@ OSPlatform|string|在设备上运行的操作系统的平台。 此属性指示�
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
 RecommendationReference|string|对此软件相关建议 ID 的引用。|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (可选) |string|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新
-RecommendedSecurityUpdateId (可选) |string|适用安全更新的标识符或相应指南或知识库 (KB) 标识符|4550961
+RecommendedSecurityUpdateId (可选) |string|相应指南或知识库文章的适用安全更新或 (标识符) 标识符|4550961
 RegistryPaths|数组 \[ 字符串\]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SoftwareName|string|软件产品的名称。|chrome
 SoftwareVendor|string|软件供应商的名称。|google
@@ -289,13 +289,13 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 ### <a name="24-parameters"></a>2.4 参数
 
-- sasValidHours：下载 URL 的有效期为 (24 小时) 。
+- sasValidHours：下载 URL 有效期为 24 小时 (24 小时) 。
 
 ### <a name="25-properties"></a>2.5 属性
 
 > [!NOTE]
 >
-> - 文件是 gzip 压缩文件& Json 格式。
+> - 这些文件是 gzip 压缩文件& Json 格式。
 > - 下载 URL 的有效期仅为 3 小时;否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 >
@@ -338,10 +338,10 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 
 ### <a name="31-api-method-description"></a>3.1 API 方法说明
 
-返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取你组织的数据作为 Json 响应。 响应会分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应)  (它用于获取设备) 组织的软件漏洞评估的完整快照) 增量导出 JSON 响应 API 调用仅用于获取所选日期和当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
+返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 拉取你组织的数据作为 Json 响应。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。 与完整的软件漏洞评估 (JSON 响应)  (它用于获取设备) 组织的软件漏洞评估的完整快照) 增量导出 JSON 响应 API 调用用于仅获取所选日期与当前日期之间发生的更改 ("delta"API 调用) 。 您不会每次获取包含大量数据的完全导出，而只会获取有关新的、已修复和更新的漏洞的特定信息。 Delta 导出 JSON 响应 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞？" 或"向我的组织添加了多少个新漏洞？"
 
 > [!NOTE]
-> 强烈建议你至少每周使用一次通过设备 API 调用进行的完整导出软件漏洞评估，并且此额外的导出软件漏洞会通过设备 (delta) API 调用更改一周中的所有其他日期。 与其他评估 JSON 响应 API 不同，"增量导出"不是完全导出。 增量导出仅包括所选日期与当前日期之间发生的更改 ("delta"API 调用) 。
+> 强烈建议你至少每周使用一次设备 API 调用评估的完整导出软件漏洞，并且此额外的导出软件漏洞会通过设备 (delta) API 调用在一周中的所有其他天进行更改。 与其他评估 JSON 响应 API 不同，"增量导出"不是完全导出。 增量导出仅包括所选日期与当前日期之间发生的更改 ("delta"API 调用) 。
 
 #### <a name="311-limitations"></a>3.1.1 限制
 
@@ -385,7 +385,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 属性 (ID) |数据类型|说明|返回值的示例
 :---|:---|:---|:---
-CveId |string|分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。|CVE-2020-15992  
+CveId |string|分配给 CVE 安全与系统"常见漏洞和曝光"下 (漏洞) 标识符。|CVE-2020-15992  
 CvssScore|string|CVE 的 CVSS 分数。|6.2  
 DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
 DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com  
@@ -399,12 +399,12 @@ OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定�
 RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器  
 RecommendationReference|string|对此软件相关建议 ID 的引用。|va--microsoft--silverlight  
 RecommendedSecurityUpdate |string|软件供应商提供的用于解决漏洞的安全更新的名称或说明。|2020 年 4 月安全更新  
-RecommendedSecurityUpdateId |string|适用安全更新的标识符或相应指南或知识库 (KB) 标识符|4550961  
+RecommendedSecurityUpdateId |string|适用安全更新的标识符或相应指南或知识库的标识符 (KB) 文章|4550961  
 RegistryPaths |Array[string]|注册表证据，表明产品已安装在设备中。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
 SoftwareName|string|软件产品的名称。|chrome  
 SoftwareVendor|string|软件供应商的名称。|google  
 SoftwareVersion|string|软件产品的版本号。|81.0.4044.138  
-状态|String|**新建**   (如果设备上不再存在此漏洞，)  (1) **修复** (上引入的新漏洞，这意味着已  ) 。  (2)  **更新** (如果设备上漏洞   已更改。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。 |Fixed
+状态|String|**新建**   (如果设备上不再存在此漏洞（这意味着已修复此漏洞) ，则针对设备)  (1) **Fixed** (引入的新漏洞进行修复。    (2)  **更新**   (如果设备上漏洞已更改。 可能的更改包括：CVSS 分数、攻击性级别、严重性级别、DiskPaths、RegistryPaths、RecommendedSecurityUpdate) 。 |Fixed
 VulnerabilitySeverityLevel|string|根据 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别。|Medium
 |
 
@@ -414,7 +414,7 @@ VulnerabilitySeverityLevel|string|根据 CVSS 分数和受威胁环境影响的�
    1. 修复：1.0 版上的 CVE-A 已修复。
    1. 新增：已添加版本 2.0 上的 CVE-A。
 
-- 如果特定漏洞 (例如，CVE-A) 在 (特定时间首次看到，例如，) 年 1 月 10 日针对版本 1.0 的软件，而该软件在几天后更新到版本 2.0（也向同一 CVE-A 公开）时，您将收到以下两个分离事件：
+- 如果特定漏洞 (例如，CVE-A) 在 (（例如，) 年 1 月 10 日针对版本 1.0 的软件上）首次看到，而该软件在几天后更新到版本 2.0（也向同一 CVE-A 公开）时，您将收到以下两个分开的事件：
    1. 修复：CVE-X、FirstSeenTimestamp 1 月 10 日版本 1，0。
    1. 新增：CVE-X、FirstSeenTimestamp 1 月 10 日版本 2.0。
 

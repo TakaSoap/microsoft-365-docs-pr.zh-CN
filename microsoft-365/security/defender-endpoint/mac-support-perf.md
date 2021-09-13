@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 259abe6753224e55c937962bd0af19d2f6ba0a9f
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161960"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 
@@ -40,7 +40,7 @@ ms.locfileid: "58745657"
 
 本主题提供了一些常规步骤，可用于缩小与 macOS 上的 Microsoft Defender for Endpoint 相关的性能问题。
 
-RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP 实时 (RTP) 是 macOS 上的 Microsoft Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
 根据正在运行的应用程序和设备特征，在 macOS 上运行 Microsoft Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 macOS 上的 Microsoft Defender for Endpoint 中的性能问题。
 
@@ -82,7 +82,7 @@ RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持
       mdatp health --field real_time_protection_enabled
       ```
 
-    验证是否 **real_time_protection_enabled** 条目为 true。 否则，请运行以下命令以启用它：
+    确认 **real_time_protection_enabled条目** 为 true。 否则，请运行以下命令以启用它：
 
       ```bash
       mdatp config real-time-protection --value enabled
@@ -99,7 +99,7 @@ RTP (RTP) 是 macOS 上 Microsoft Defender for Endpoint 的一项功能，可持
       ```
 
       > [!NOTE]
-      > 使用 **--output json** (请注意双划线) 确保输出格式已准备好进行分析。
+      > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
       此命令的输出将显示所有进程及其关联的扫描活动。
 
 4. 在 Mac 系统上，使用 命令下载 python high_cpu_parser.py 示例：

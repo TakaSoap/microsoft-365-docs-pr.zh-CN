@@ -11,22 +11,22 @@ search.appverid: MET150
 localization_priority: Normal
 description: 了解如何设置Microsoft Viva主题
 ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170984"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置Microsoft Viva主题
 
-可以使用自定义Microsoft 365 管理中心设置和配置[主题](topic-experiences-overview.md)。 
+可以使用此Microsoft 365 管理中心设置和配置[主题](topic-experiences-overview.md)。 
 
-规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中[的过程Microsoft Viva，](plan-topic-experiences.md)请务必阅读 Plan for Microsoft Viva Topics。
+规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中[的过程之前，请务必](plan-topic-experiences.md)阅读规划Microsoft Viva主题。
 
 您必须订阅[Viva 主题](https://www.microsoft.com/microsoft-viva/topics)，并且必须是全局管理员或 SharePoint管理员才能访问Microsoft 365 管理中心设置主题。
 
 > [!IMPORTANT]
-> 如果你已配置SharePoint托管设备，则必须从托管[](/sharepoint/control-access-from-unmanaged-devices)设备设置主题。
+> 如果你已配置SharePoint托管[设备](/sharepoint/control-access-from-unmanaged-devices)，则必须从托管设备设置主题。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -50,10 +50,10 @@ ms.locfileid: "58568692"
 
 3. 在 **"许可证"** 下，**选择"Viva 主题"。**
 
-4. 在 **"应用"** 下 **，Graph"索引连接器搜索 ("Viva** 主题) "和 **"Viva** 主题"。
+4. 在 **"应用"****下，确保Graph** 索引连接器搜索 (Viva 主题) 和 **Viva** 主题。
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva主题主题许可证Microsoft 365 管理中心。](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva中的主题许可证Microsoft 365 管理中心。](../media/topic-experiences-licenses.png)
 
 5. 单击“**保存更改**”。
 
@@ -65,7 +65,7 @@ ms.locfileid: "58568692"
 > 首次启用主题发现时，可能需要两周才能在"管理主题"视图中显示所有建议的主题。 主题发现将在新内容或内容更新时继续。 当 Viva Topics 评估新信息时，组织中建议主题数量出现波动是正常现象。
 
 设置主题
-1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，选择 **"设置"，** 然后查看"**文件和内容"** 部分。
+1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，选择 **"设置**"，然后查看"**文件和内容"** 部分。
 2. 在"**文件和内容"** 部分，单击连接 **人员了解知识"。**
 
     ![连接了解知识。](../media/admin-org-knowledge-options.png) 
@@ -74,7 +74,7 @@ ms.locfileid: "58568692"
 
     ![入门。](../media/k-get-started.png) 
 
-4. 在" **选择 Viva 主题如何查找** 主题"页上，您将配置主题发现。 在"**选择SharePoint** 源"部分，选择将在发现SharePoint哪些网站作为主题源进行爬网。 从以下项中进行选择：
+4. 在" **选择 Viva 主题如何查找** 主题"页上，您将配置主题发现。 在"**选择SharePoint** 源"部分，选择将在发现SharePoint哪些网站作为主题的源进行爬网。 从以下项中进行选择：
     - **所有网站**：组织内的所有 SharePoint 网站。 这其中包括当前和未来的网站。
     - **全部，所选网站除外**：键入要排除的网站的名称。  还可以上载想要从发现中退出的网站列表。 将来创建的网站将包含为主题发现源。 
     - **仅选定网站**：键入要包含的网站的名称。 您还可以上载网站列表。 将不包含未来创建的网站作为发现源。
@@ -108,7 +108,7 @@ ms.locfileid: "58568692"
     
     选择“**下一步**”。
 
-6. 在 **Who主题及其** 可在何处看到这些主题页面，您将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
+6. 在Who **查看** 主题，以及他们在哪里可以看到主题页面，你将配置主题可见性。 在Who **主题** 设置中，可以选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
     - **没人**
@@ -125,7 +125,7 @@ ms.locfileid: "58568692"
 
     ![主题管理权限，可以创建和编辑主题。](../media/ksetup3.png) 
 
-8. 在 **"Who主题"部分**，可以选择：
+8. 在 **"Who主题"部分中**，可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
 
@@ -133,7 +133,7 @@ ms.locfileid: "58568692"
 
     选择“**下一步**”。
 
-9. 在 **"创建主题中心** "页上，您可以创建主题中心网站，可在其中查看主题页面并管理主题。 在" **网站名称"** 框中，键入主题中心的名称。 如果要更改 URL，可以单击铅笔图标。 （可选）在"说明"框中键入 **简短** 说明。 
+9. 在 **"创建主题中心** "页上，可以创建主题中心网站，可在其中查看主题页面并管理主题。 在" **网站名称"** 框中，键入主题中心的名称。 如果要更改 URL，可以单击铅笔图标。 （可选）在"说明"框中键入 **简短** 说明。 
 
    > [!Important]
    > 您可以稍后更改网站名称，但在完成向导后不能更改 URL。
@@ -155,8 +155,8 @@ ms.locfileid: "58568692"
 设置主题后，可以在"设置"中更改在设置[过程中Microsoft 365 管理中心。](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) 请参阅以下参考：
 
 - [管理主题主题Microsoft Viva主题](topic-experiences-discovery.md)
-- [管理主题主题Microsoft Viva可见性](topic-experiences-knowledge-rules.md)
-- [管理主题主题Microsoft Viva主题](topic-experiences-user-permissions.md)
+- [管理主题主题Microsoft Viva主题](topic-experiences-knowledge-rules.md)
+- [管理主题主题Microsoft Viva主题权限](topic-experiences-user-permissions.md)
 - [在"主题"中更改Microsoft Viva的名称](topic-experiences-administration.md)
 
 ## <a name="see-also"></a>另请参阅

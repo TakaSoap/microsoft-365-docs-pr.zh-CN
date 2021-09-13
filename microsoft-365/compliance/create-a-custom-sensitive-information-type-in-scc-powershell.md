@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
 ms.openlocfilehash: 41f36354fa94da9cae8e7794dca778c1bfe8ac2e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171047"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "58570289"
 有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。
 
 > [!NOTE]
-> 如果使用与号字符 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该添加一个附加术语，该字符周围有空格，以确保正确标识该字符，例如 L & P _而不是_ L&P。
+> 如果使用与号字符 (&) 自定义敏感信息类型中关键字的一部分，请注意存在一个已知问题。 您应该在字符周围添加一个附加术语，并添加空格以确保正确标识字符，例如 L & P _而不是_ L&P。
 
 ## <a name="sample-xml-of-a-rule-package"></a>规则包 XML 示例
 
@@ -422,7 +422,7 @@ Microsoft 365提供了两个通用验证程序
 
 ### <a name="date-validator"></a>日期验证程序
 
-本示例中，为日期的正则表达式部分定义日期验证程序。
+本示例为日期的正则表达式部分定义日期验证程序。
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>

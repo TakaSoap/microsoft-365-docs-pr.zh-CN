@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 了解如何生成包含与电子数据展示事例关联的所有保留的信息的报告。
 ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171035"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
 
@@ -154,7 +154,7 @@ ms.locfileid: "58572043"
    > [!TIP]
    > 若要将报告保存在脚本所在的同一文件夹中，请键入一个 ("。") 目标文件夹时显示。 若要将报表保存在脚本所在的文件夹的子文件夹中，只需键入子文件夹的名称。
 
-   脚本开始收集有关组织中所有电子数据展示事例的信息。 脚本运行时，请勿访问报告文件。 脚本完成后，将在会话会话中Windows PowerShell消息。 显示此消息后，可以访问在步骤 4 中指定的文件夹中的报告。 报告的文件名为 `CaseHoldsReport<DateTimeStamp>.csv` 。
+   脚本开始收集有关组织中所有电子数据展示事例的信息。 脚本运行时，请勿访问报告文件。 脚本完成后，在脚本会话中将显示一条Windows PowerShell消息。 显示此消息后，可以访问在步骤 4 中指定的文件夹中的报告。 报告的文件名为 `CaseHoldsReport<DateTimeStamp>.csv` 。
 
    此外，脚本还会创建一个包含没有任何保留案例列表的报告。 此报告的文件名为 `CaseswithNoHolds<DateTimeStamp>.csv` 。
 
@@ -162,7 +162,7 @@ ms.locfileid: "58572043"
 
    ![运行脚本后的输出CaseHoldsReport.ps1脚本。](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 在您运行本文中的脚本时创建的保留报告包含有关每个保留的以下信息。 如前所述，你必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关事例保留详细信息，请参阅 [电子数据展示事例](./get-started-core-ediscovery.md)。
 

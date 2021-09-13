@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在此处查找将域从 Microsoft 转移到另一个注册机构的步骤。 '
-ms.openlocfilehash: dfe774644295083c606ad52371ca0e8701fa773f5ff737f40fbcdf16e98077ea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825675"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169766"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>将域从 Microsoft 转移到其他主机
 
@@ -40,13 +40,13 @@ ms.locfileid: "53825675"
 
 ## <a name="transfer-a-domain"></a>转移域
 
-1. 在管理中心，  **转到"设置**   >  **域"。**
+1. 在管理中心中，转到   **"设置**   >  **域"。**
 
 2. On the **Domains** page， select the Microsoft 365 domain that you want to transfer to another domain registrar， and then select **Check health**.
 
 3. 在页面顶部，选择"转移 **域"。**
 
-4. 在"**选择域的传输位置**"页上，选择 **"其他注册机构"，** 然后单击"下一 **步"。**
+4. 在"**选择域的传输位置**"页上，选择 **"其他注册机构"，** 然后单击"下一步 **"。**
 
 5. 在解锁 **域传输页面上**，选择解锁 **传输<_你的域，_ >** 然后选择下一 **步**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "53825675"
 
 9. 传输完成后，你将在新的域注册机构续订域。
 
-10. 若要完成此过程，请返回到管理中心中的"域"页面，然后选择"完成  **域传输"。** 这会将域标记为不再从 Microsoft 365 购买，并禁用域订阅。 它将不会从租户中删除域，并且不会影响域中的现有用户和邮箱。
+10. 若要完成此过程，请返回到管理中心中的"域"页面，然后选择"完成  **域传输"。** 这会将域标记为不再从 Microsoft 365购买，并禁用域订阅。 它将不会从租户中删除域，并且不会影响域中的现有用户和邮箱。
 
 > [!NOTE]
 > Microsoft 365购买的域不符合名称服务器更改或在组织之间传输Microsoft 365资格。 如果其中任一项是必需的，则必须将域注册转移到另一个注册机构。

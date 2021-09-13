@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何通过关闭或打开定期计费来续订大多数 Microsoft 365 商业版订阅。
 ms.date: 05/04/2021
-ms.openlocfilehash: 2a208ef2879c7c3a216b43653a6f2302ff1e1bce03a3d2d631058db9644beec0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee39c45529c4dbfa54ff0a12fcfe19d29bdef025
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170709"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 

@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: 关闭 Microsoft 帐户时，将删除与帐户相关的所有信息，包括许可证、用户和用户数据。
 ms.date: 04/02/2021
-ms.openlocfilehash: 0693f592c36e39687b78587b384a193fde7cd6879a69628c1818bafed7420ef5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893147"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171144"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 开始此过程之前，请确保备份要保留的所有数据。
 
@@ -52,7 +52,7 @@ ms.locfileid: "53893147"
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤 2：取消所有活动订阅
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
 2. 在" **产品"** 选项卡上，查找活动订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
 3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
 4. 选择“**保存**”。
@@ -60,9 +60,9 @@ ms.locfileid: "53893147"
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步骤 3：删除所有已禁用的订阅
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
 2. 在" **产品"** 选项卡上，选择已禁用的订阅。
-3. On the subscription details page， in the **Subscription and payment settings section，** select Delete **subscription**.
+3. 在订阅详细信息页面上的 **订阅和付款** 设置部分中，选择删除 **订阅**。
 4. 在"**删除订阅"窗格中**，选择"**删除订阅"。**
 5. 在"**删除订阅**"对话框中，选择"**是"。**
 6. 对于每个已禁用的订阅，重复步骤 3 至 5，直到删除所有订阅。

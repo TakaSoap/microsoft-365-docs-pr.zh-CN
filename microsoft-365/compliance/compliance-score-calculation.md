@@ -16,11 +16,11 @@ search.appverid:
 description: 了解 Microsoft 合规性管理器如何根据为应对风险和改进合规性状态而采取的操作计算个性化分数。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569089"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169688"
 ---
 # <a name="compliance-score-calculation"></a>合规性分数计算
 
@@ -49,9 +49,9 @@ ms.locfileid: "58569089"
   
 合规性管理器根据数据保护基线提供Microsoft 365分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。 此基线主要来自 NIST CSF (国家标准和技术网络安全协会) 和 ISO (国际标准化组织) ，以及 FedRAMP (联邦风险和授权管理计划) 以及欧盟) 的 GDPR (一般数据保护条例。
 
-根据提供给所有组织的默认数据保护基线评估计算初始分数。 首次访问时，合规性管理器已收集来自你的解决方案Microsoft 365信号。 你可以一目了然地查看组织相对于关键数据保护标准和法规的表现，并查看要采取的建议改进措施。
+根据提供给所有组织的默认数据保护基线评估计算初始分数。 首次访问时，合规性管理器已在收集来自你的解决方案Microsoft 365信号。 你可以一目了然地查看组织相对于关键数据保护标准和法规的表现，并查看要采取的建议改进措施。
 
-由于每个组织都有特定需求，因此合规性管理器依赖你设置和管理评估，以帮助尽可能全面减少和减少风险。
+由于每个组织都有特定的需求，合规性管理器将依赖你设置和管理评估，以帮助尽可能全面减少和减少风险。
 
 ## <a name="how-compliance-manager-continuously-assesses-controls"></a>合规性管理器如何持续评估控制措施
 
@@ -59,7 +59,7 @@ ms.locfileid: "58569089"
 
 你的操作状态每 24 小时在仪表板上更新一次。 按照建议实现控件后，通常会看到第二天更新了控件状态。
 
-例如，如果你在 Azure AD 门户中 (MFA) 多重身份验证，合规性管理器将检测该设置，并反映在控制访问解决方案详细信息中。 相反，如果未打开 MFA，合规性管理器会将其标记为建议的操作。
+例如，如果你在 Azure AD 门户 (MFA) 多重身份验证，合规性管理器将检测该设置，并反映在控制访问解决方案详细信息中。 相反，如果未打开 MFA，合规性管理器会将其标记为建议的操作。
 
 详细了解安全 [分数及其工作方式](../security/defender/microsoft-secure-score.md)。
   
@@ -114,9 +114,9 @@ ms.locfileid: "58569089"
 |:-----|:-----|
 | 预防性强制 | 27 |
 | 预防自主型 | 9  |
-| 检测强制 | 3  |
-| 检测随意 | 1  |
-| 纠正强制型 | 3  |
-| 更正随意 | 1  |
+| 检测强制 | 3 |
+| 检测随意 | 1 |
+| 纠正强制型 | 3 |
+| 更正随意 | 1 |
   
 ![合规性管理器操作点值。](../media/compliance-score-action-scoring.png "合规性管理器操作点值")

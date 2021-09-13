@@ -15,15 +15,15 @@ ms.collection:
 localization_priority: None
 description: 了解如何在组织中使用 Viva 主题。
 ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170978"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
 
-Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，从 SharePoint 新式页面、Microsoft 搜索 和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始，向用户介绍他们日常使用的 Microsoft 365 应用中的知识。
+Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，将知识带到他们日常使用的 Microsoft 365 应用中，从 SharePoint 新式页面、Microsoft 搜索 和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始。
 
 <br/>
 
@@ -52,13 +52,13 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 *主题*。 它会编译
 
 ### <a name="search-results"></a>搜索结果
 
-当您从 SharePoint[](search.md#topic-answer)起始页进行搜索、在 Office.com 上搜索或在您更改搜索范围以包含整个组织后从 SharePoint 网站搜索时，您可以在搜索结果中看到主题答案。 主题答案将显示在结果列表的主题中，并为您提供一组与本主题相关的简短信息。 
+当您从 SharePoint[](search.md#topic-answer)起始页搜索、在 Office.com 上搜索或在您更改搜索范围以包含整个组织后从 SharePoint 网站搜索时，您可以在搜索结果中看到主题答案。 主题答案将显示在结果列表的主题中，并为您提供一组与本主题相关的简短信息。 
 
    ![显示网站搜索的搜索结果SharePoint屏幕截图。](../media/knowledge-management/site-search-results.png) 
 
 ### <a name="office-application-search"></a>Office应用程序搜索
 
-在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或上下文菜单中的"搜索"）中使用搜索时，主题答案将显示在搜索结果中。
+当您在 Office 应用（如 Word、PowerPoint、Outlook 或 Excel）（通过搜索框或选择上下文菜单中的"搜索"）中使用搜索时，将在搜索结果中显示主题答案。
 
    ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
 
@@ -103,7 +103,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 - 知识经理：在主题生命周期中指导主题的用户。 知识管理员使用主题中心中的"管理主题"页确认 AI 建议的主题、删除不再相关的主题，以及编辑现有主题或创建新主题，并且这些主题是唯一有权访问它的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva Topics 管理设置为用户分配知识经理权限。 
 
-- 知识管理员：管理员设置 Viva 主题，并通过管理员控件在 Microsoft 365 管理中心。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
+- 知识管理员：管理员设置 Viva 主题，并通过管理中心中的管理员Microsoft 365 管理中心。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
 
 有关详细信息，请参阅 [Viva 主题角色](topic-experiences-roles.md)。
 
@@ -111,7 +111,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 *主�
 
 主题管理在组织 **主题中心的"** 管理主题" *页中完成*。 主题中心在设置过程中创建，并充当组织的知识中心。 
 
-虽然所有许可用户都可以在主题中心查看他们连接的主题，但只有具有管理主题权限 (知识经理) 才能查看和使用"管理主题 **"页。**
+虽然所有许可用户都可以在主题中心查看他们连接的主题，但只有具有管理主题权限 (知识管理员) 才能查看和使用"管理主题 **"页。**
 
 知识经理可以：
 

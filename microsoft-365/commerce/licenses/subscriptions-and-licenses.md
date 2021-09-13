@@ -20,14 +20,14 @@ ms.custom:
 - commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
-description: 您收到的应用程序和服务取决于您购买Microsoft 365产品，例如Microsoft 365 商业应用版。
+description: 您收到的应用程序和服务取决于您Microsoft 365购买的产品，例如Microsoft 365 商业应用版。
 ms.date: 07/01/2020
-ms.openlocfilehash: 133c7d56b92f76b1ce16ba5d83444a6e07a91bed247d06ce94b9c1070b2b126a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171127"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解企业版Microsoft 365订阅和许可证
 
@@ -35,11 +35,11 @@ ms.locfileid: "53815035"
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织成员创建帐户，然后为每个人分配许可证。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
 
-如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户分配给所有 Microsoft 365 应用程序和服务，作为订阅的一Microsoft 365 商业标准版部分。 您还可以通过单独的订阅将一部分Visio分配给 Visio Online。
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户作为订阅的一Microsoft 365分配给所有 Microsoft 365 商业标准版 应用程序和服务。 您还可以通过单独的订阅分配一部分 Visio Online Visio订阅。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
-如果你的订阅包括以下任一产品，则每个人Office五台电脑或 Mac、五台平板电脑和五部手机上进行安装。
+如果你的订阅包括以下任一产品，则每个人Office五台电脑或 Mac、五台平板电脑和五部手机上安装。
 
 :::row:::
    :::column span="":::
@@ -56,7 +56,7 @@ ms.locfileid: "53815035"
   
 |**如果订阅中有此服务**|**将会自动发生该情况**|
 |:-----|:-----|
-|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解有关要完成此任务的 SLA，请参阅["设置..."。邮件中的Microsoft 365 管理中心。](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解要完成此任务的 SLA，请参阅["设置..."。邮件中的Microsoft 365 管理中心。](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |将为该人员分配默认 SharePoint Online 团队网站的编辑权限。  <br/> |
 |Skype for Business Online  <br/> |用户有权访问与许可证关联的功能。  <br/> |
 |Microsoft 365 企业应用版  <br/> |用户可以在最多Office台 Mac 或 PC、五台平板电脑和五台智能手机上下载这些应用。  <br/> |

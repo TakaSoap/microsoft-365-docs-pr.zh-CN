@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 必须启用ClickOnce支持，才能使用最新版本的 Microsoft Edge 从安全与合规中心的内容搜索和电子数据展示下载搜索结果。
 ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169686"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>使用电子数据展示导出工具Microsoft Edge
 
@@ -36,7 +36,7 @@ ms.locfileid: "58574840"
 
    ![单击"重新启动"。](../media/ClickOnceimage2.png)
 
-**注意：** 组织可以使用组策略禁用ClickOnce支持。 若要检查是否有组织策略支持ClickOnce，请转到 **"edge://policy"。** 以下屏幕截图显示ClickOnce整个组织中启用此策略。 如果此策略值设置为 **false，** 你将需要联系你组织的管理员。
+**注意：** 组织可以使用组策略禁用ClickOnce支持。 若要检查是否有组织策略支持ClickOnce，请转到 **"edge://policy"。** 以下屏幕截图显示ClickOnce整个组织启用此功能。 如果此策略值设置为 **false，** 你将需要联系你组织的管理员。
 
 ![边缘组织策略列表。](../media/ClickOnceimage3.png)
 

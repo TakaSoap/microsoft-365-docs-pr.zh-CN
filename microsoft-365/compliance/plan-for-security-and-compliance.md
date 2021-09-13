@@ -17,26 +17,26 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页提供了安全与合规中心中的链接和Office 365。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03e722baa51f0e91b59bc61f30ce004ff38ed9a051a110d7e11ba49a9efb25dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871701"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170146"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
-管理安全性和合规性是一种合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 会积极Microsoft 365服务。 可以将 Microsoft 365 和 企业移动性 + 安全性 (EMS) ，以帮助你为组织实现适当级别的保护。
+管理安全性和合规性是一种合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 会积极Microsoft 365服务。 你可以将 Microsoft 365 和 企业移动性 + 安全性 (EMS) 一起，以帮助你为组织实现适当级别的保护。
   
 ## <a name="step-1-review-capabilities"></a>步骤 1：查看功能
 
-引导自己了解信息保护海报中Office 365功能。 
+引导自己熟悉信息保护海报中的信息Office 365功能。 
   
-[为数据隐私法规部署信息保护与Microsoft 365](../solutions/information-protection-deploy.md)
+[为数据隐私法规部署信息保护Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>步骤 2：检查安全分数
 
-设置你的Microsoft 365订阅后，记下你的起始分数。 安全分数提供了可用于增加分数的配置建议。 目标是了解您可以利用的一些机会来保护环境，这些机会不会对用户的工作效率产生负面影响。
+设置你的 Microsoft 365 订阅后，记下你的起始分数。 安全分数提供了可用于增加分数的配置建议。 目标是了解您可以利用的一些机会来保护环境，这些机会不会对用户的工作效率产生负面影响。
   
 - [安全分数Office 365](../security/defender/microsoft-secure-score.md)
     
@@ -58,7 +58,7 @@ ms.locfileid: "53871701"
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步骤 5：利用Microsoft 365 &amp; 安全与合规中心
 
-安全与合规中心为你提供了用于管理安全范围（包括威胁管理、数据管理以及搜索和调查）Microsoft 365控制的单一 &amp; 视图。 
+安全与合规中心为你提供了用于管理安全范围（包括威胁Microsoft 365、数据管理以及搜索和调查）的控制措施 &amp; 的单一视图。 
   
 - [转到安全 &amp; 与合规中心](./microsoft-365-compliance-center.md)
     

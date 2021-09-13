@@ -1,6 +1,6 @@
 ---
 title: Microsoft 云体系结构模型 - 企业资源规划
-description: 这些 Microsoft 云体系结构海报提供有关 Microsoft 云服务（如 Azure 和 Office 365）的信息。
+description: 这些 Microsoft 云体系结构海报提供有关 Microsoft 云服务（如 Azure 和 Office 365） 的信息。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ms.openlocfilehash: de016e9ef29265fb89799eadebe54c973dac80d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169996"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>适用于 IT 架构师的 Microsoft 云插图
 
@@ -66,7 +66,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft 云租户到租户迁移的体系结构方法 
 本系列主题阐述了合并、收购、剥离和其他可能会导致你迁移到新云租户的方案的几种体系结构方法。 这些主题提供有关企业资源规划的起始指导。 
 
-| 项目 | 说明 |
+| Item | 说明 |
 |:-----|:-----|
 |[![Microsoft 云租户到租户迁移的缩略图。](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| 2021 年 2 月更新    |此模型包含： <ul><li>商业方案到体系结构方法的映射</li><li>设计注意事项</li><li>单个事件迁移流示例</li><li>分阶段迁移流示例</li><li>租户移动或拆分流示例</li></ul>|
 

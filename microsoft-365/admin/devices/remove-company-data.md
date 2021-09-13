@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 了解如何使用 Microsoft 365 企业应用删除用户设备或电脑Windows数据。
 ms.openlocfilehash: f249af524dcdc00601357428425c57da3b3f738c
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169828"
 ---
 # <a name="remove-company-data-from-devices"></a>从设备中删除公司数据
 

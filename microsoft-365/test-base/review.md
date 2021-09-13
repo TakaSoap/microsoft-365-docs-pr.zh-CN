@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: fa046aa0a488b11f172d9ac7182b67e705aad69b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162172"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>步骤 6：查看选择以创建程序包。
 

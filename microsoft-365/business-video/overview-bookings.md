@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft Bookings，这是一款适用于小型企业的联机和移动应用，可为客户提供约会预订。
-ms.openlocfilehash: 80c9abb5efa6b21b8491977ae3cbab15832c8eef2c092e8302a1ac5c0f26ad6e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170830"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings 概述
 

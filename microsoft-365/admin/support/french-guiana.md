@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 76557d14dbd75b0a2a181b56be27ae672de1bc7939d8e86e70c843fb236296c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 788641b549119229307a179dbfebed09b2a4c0b0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162148"
 ---
 # <a name="contact-support-for-french-guiana"></a>联系法语（法属 Guiana）支持人员
 
@@ -26,12 +26,12 @@ ms.locfileid: "53887991"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
-法语：Mon-Fri 5 AM -1 PM
+法语：Mon-Fri上午 5 点到下午 1 点
 
-英语：Mon-Fri上午 5 点到下午 1 点
+英语：Mon-Fri 5 AM-1 PM
 
 ### <a name="technical-support"></a>技术支持：
 

@@ -18,22 +18,22 @@ ms.custom:
 - commerce_licensing
 search.appverid:
 - MET150
-description: 了解如何管理独立软件供应商 (ISV) 应用中的Microsoft 365 管理中心。
+description: 了解如何管理独立软件供应商 (ISV) 应用程序中的Microsoft 365 管理中心。
 ms.date: 06/15/2021
-ms.openlocfilehash: 360b1a954d8b34fbc91b086fdab532685438b7874f998ef4ddb8b7b07732d15a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171130"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>管理应用程序中的 ISV Microsoft 365 管理中心
 
-ISV 应用 (独立) 供应商是一款从除 Microsoft 外的软件供应商购买的应用。
+ISV 应用程序 (独立软件) 是一款从除 Microsoft 外的软件供应商购买的应用。
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>向用户或组分配 ISV 应用程序许可证
 
@@ -43,7 +43,7 @@ ISV 应用 (独立) 供应商是一款从除 Microsoft 外的软件供应商购�
 4. 在 **"分配许可证"** 窗格中，开始键入用户或组的名称，然后从结果中选择它以将其添加到列表中。
 5. 完成后，选择“分配”，然后选择“关闭”。
 
-## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>取消分配用户或组的 ISV 应用许可证
+## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>取消分配用户或组的 ISV 应用程序许可证
 
 1. In the admin center， **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. 选择要取消分配许可证的应用。

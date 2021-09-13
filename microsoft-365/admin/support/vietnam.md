@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c422e702a58260e6884eeb9493b9b1ad4484b08b043fd2a7aa7d5dcc2d702c0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5228e3b65ab2f7cef88167934bd748900c395423
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170255"
 ---
 # <a name="contact-support-for-vietnam"></a>联系越南支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53843715"
 ## <a name="phone-number"></a>电话号码
 120 852 137
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

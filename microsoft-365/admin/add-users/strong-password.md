@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Windows PowerShell 为用户设置强密码Windows PowerShell。
-ms.openlocfilehash: 665bd671e3e7be5c65f67f45bc4d78e3e2466e5ead61811f9925b6dd6af3ed3b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f1384704435307c8ba872a5d59dc8841bb761444
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169905"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>为用户关闭强密码要求
 
 本文介绍如何为用户关闭强密码要求。 默认情况下，在适用于企业组织的 Microsoft 365启用强密码要求。 您的组织可能要求禁用强密码。 请按照以下步骤关闭强密码要求。 您必须使用 PowerShell 完成这些步骤。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 本文适用于管理企业、学校或非营利组织的密码策略的用户。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](/microsoft-365/business-video/admin-center-overview) 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -40,7 +40,7 @@ ms.locfileid: "53827271"
 
 ## <a name="set-strong-passwords"></a>设置强密码
 
-1. [连接 PowerShell Microsoft 365 。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [连接 PowerShell Microsoft 365。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 2. 使用 PowerShell，可以使用以下命令关闭所有用户的强密码要求：
 

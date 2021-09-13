@@ -13,23 +13,23 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce9687f75f7c3d599bf7d6189bbe355bd65850d056897b6fa1add789bd52d8ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec5fdc978b8303d832509ce253f110a15b1e7caf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170713"
 ---
 # <a name="payment-information-for-indonesia"></a>印度尼西亚的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in IDR only and reference invoice number (s) on your payment invoice.
+Please pay in IDR only and reference invoice number (s) on your payment payment) .
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
 **Bank：** 印度尼西亚，印度尼西亚，印度尼西亚  
 **分支：** Ja一  
 **SWIFT 代码：** 一台或多张  
-**帐户号：104468055**  
+**帐户编号：104468055**  
 **帐户名称：** PT Microsoft（印度尼西亚）

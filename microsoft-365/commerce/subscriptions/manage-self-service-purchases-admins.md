@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
 ms.date: 03/26/2021
-ms.openlocfilehash: 3ab07fac52a55518f2d8259b35f1de808bb544685ef4c463ac9c5e9d3706a973
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171398"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
-作为管理员，你可以查看组织中人员购买的自助服务。 你会看到产品名称、购买者名称、购买的订阅、到期日期、购买价格以及每个自助购买的已分配用户。 如果组织要求，可以通过 PowerShell 关闭按产品进行自助购买。 对于通过自助购买或集中购买的产品，您具有相同的数据管理和访问策略。
+作为管理员，你可以查看组织中人员购买的自助服务。 你会看到产品名称、购买者名称、购买的订阅、到期日期、购买价格以及每个自助购买的已分配用户。 如果组织要求，可以通过 PowerShell 关闭按产品进行自助购买。 对于通过自助购买或集中购买的产品，具有相同的数据管理和访问策略。
 
 还可以控制贵组织的用户是否可以进行自助购买。 有关详细信息，请参阅将 [AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
 
@@ -88,12 +88,12 @@ ms.locfileid: "53852231"
 
 ## <a name="disable-or-enable-self-service-purchases"></a>禁用或启用自助服务购买
 
-您可以禁用或启用组织中用户的自助购买。 **MSCommerce** PowerShell 模块包括 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，可用于控制组织中用户是否可以进行自助购买以及针对哪些产品进行购买。
+您可以禁用或启用组织中用户的自助购买。 **MSCommerce** PowerShell 模块包括 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，可用于控制组织中用户是否可以进行自助服务购买以及针对哪些产品进行购买。
 
 您可以使用 **MSCommerce** PowerShell 模块：
 
 - 查看 **AllowSelfServicePurchase** 参数值的默认状态 — 是按产品启用还是禁用
-- 查看适用产品的列表，以及自助服务购买是启用还是禁用
+- 查看适用产品的列表以及自助服务购买是启用还是禁用
 - 查看或修改特定产品的当前设置以启用或禁用它
 
 有关详细信息，请参阅将 [AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
@@ -148,19 +148,19 @@ ms.locfileid: "53852231"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
 
 ::: moniker-end
 
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 3. 选择要接管的订阅。
-4. On the subscription details page， in the **Subscriptions and settings** section， select **Take control of this subscription**.
+4. 在订阅详细信息页面上的订阅 **和** 设置部分中，选择 **控制此订阅**。
 5. 在右侧窗格中，选择"**移动用户"。**
 6. 选择要将用户移动到的产品，然后选择"**移动用户"。**
 7. 在"**将用户移动到"** 框中，选择"**移动用户"。** 移动过程可能需要几分钟。 不要在进程运行时关闭浏览器。
@@ -179,22 +179,22 @@ ms.locfileid: "53852231"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""你的产品"** 页面。
 
 ::: moniker-end
 
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 3. 选择想要取消的订阅。
-4. On the subscription details page， in the **Subscriptions and settings** section， select **Take control of this subscription**.
+4. 在订阅详细信息页面上的订阅 **和** 设置部分中，选择 **控制此订阅**。
 5. 在右侧窗格中，选择"取消 **订阅"。**
 6. 从下拉列表中选择取消原因，然后选择取消 **订阅**。
-7. 在 **"确定要取消吗？"框中**，选择"取消 **订阅"。**
+7. 在 **"确定要取消？"框中，** 选择"取消 **订阅"。**
 8. 关闭右窗格。
 9. 在订阅详细信息页面上， **订阅状态** 将显示为 **已删除**。
 

@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162327"
 ---
 # <a name="validate-new-devices"></a>验证新设备
 
@@ -29,13 +29,13 @@ ms.locfileid: "58372828"
     - [本地化用户体验](localization.md)
     - [使用 Autopilot 和注册状态页的首次运行体验](esp-first-run.md)
     - [Windows 10 位置服务](device-location.md)
-    - [开始使用应用程序控制](get-started-app-control.md)
+    - [应用控件入门](get-started-app-control.md)
     - [将应用部署到设备](deploy-apps.md)
 2. 验证以下体验是否正常工作，而不出现任何失败、错误或提示：
     - 加入网络和用户登录后的 Autopilot 体验
     - 如果已启用"注册 [状态"页，](esp-first-run.md)它将正常工作。
     - 用户可以登录到 Office 应用程序
-    - OneDrive文件夹同步，Windows桌面、文档和图片
+    - OneDrive文件夹同步，包括Windows桌面、文档和图片
     - 设备接收更新、策略和业务线应用程序
 3. 查看"设备清单"报告中报告的设备和硬件 [要求](../working-with-managed-desktop/device-inventory-report.md) ，以检查它们是否与预期匹配。
 

@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: a975daa6b73f39722b077cda307aa5ea806b1e1b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170957"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>适用于非 Windows 平台的 Microsoft Defender for Endpoint
 
@@ -35,15 +35,15 @@ ms.locfileid: "58256996"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Microsoft 一直在向 macOS、Linux、Android 和 iOS 扩展除 Windows 和 Windows Server 以外的业界领先的终结点安全功能。
+Microsoft 一直在向 macOS、Linux、Android 和 iOS 扩展除 Windows 和 Windows Server 以外的业界领先的终结点安全性。
 
 组织面临各种平台和设备的威胁。 Our teams have committed to building security solutions not just *for* Microsoft， and also *from* Microsoft to enable our customers to protect and secure their heterogenous environments. 我们期待聆听客户反馈，并与客户密切合作，以构建满足其需求的解决方案。
 
-借助 Microsoft Defender for Endpoint，客户可以跨 Windows 和非 Windows 平台从 Microsoft Defender 安全中心 中所有威胁和警报的统一视图中获益，从而全面了解环境中发生的情况，从而帮助他们更快评估和响应威胁。
+借助 Microsoft Defender for Endpoint，客户可以跨 Windows 和非 Windows 平台从 Microsoft Defender 安全中心 中所有威胁和警报的统一视图中获益，从而全面了解环境中发生的情况，从而帮助他们更快速地评估和响应威胁。
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 
 
-macOS 上的 Microsoft Defender for Endpoint 为三个最新发布的 macOS (EDR) 和响应漏洞管理、终结点检测和响应功能。 客户可以通过 Microsoft Endpoint Manager 和 Jamf 部署和管理解决方案。 与 macOS Microsoft Office一样，Microsoft 自动更新用于管理 Mac 上的 Microsoft Defender for Endpoint 更新。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
+macOS 上的 Microsoft Defender for Endpoint 为三个最新发布的 macOS 版本 (EDR) 防病毒、终结点检测和响应漏洞管理和 漏洞管理 功能。 客户可以通过 Microsoft Endpoint Manager 和 Jamf 部署和管理解决方案。 与 macOS Microsoft Office一样，Microsoft 自动更新用于管理 Mac 上的 Microsoft Defender for Endpoint 更新。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)。
 
 若要详细了解如何开始使用，请访问 macOS 上的 Defender for Endpoint [文档](microsoft-defender-endpoint-mac.md)。
 
@@ -55,7 +55,7 @@ macOS 上的 Microsoft Defender for Endpoint 为三个最新发布的 macOS (EDR
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
-Linux 上的 Microsoft Defender for Endpoint 为 Linux (AV) 、终结点检测和响应 (EDR) 以及 漏洞管理 功能。 这包括配置和管理代理、启动扫描和管理威胁的完整命令行体验。 我们支持六个最常见的 Linux Server 分发的最新版本：RHEL 7.2+、CentOS Linux 7.2+、Ubuntu 16 LTS 或更高版本 LTS、SLES 12+、Debian 9+和 Oracle Linux 7.2。 可以使用部署和配置 Linux 上的 Microsoft Defender for Endpoint、Ansible 或现有的 Linux 配置管理工具进行部署和配置。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
+Linux 上的 Microsoft Defender for Endpoint 为 Linux (AV) 、终结点检测和响应 (EDR) ，漏洞管理 Linux 服务器提供预防性功能。 这包括配置和管理代理、启动扫描和管理威胁的完整命令行体验。 我们支持六个最常见的 Linux Server 分发的最新版本：RHEL 7.2+、CentOS Linux 7.2+、Ubuntu 16 LTS 或更高版本 LTS、SLES 12+、Debian 9+和 Oracle Linux 7.2。 可以使用部署和配置 Linux 上的 Microsoft Defender for Endpoint、Ansible 或现有的 Linux 配置管理工具进行部署和配置。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
 
 若要详细了解如何开始使用，请访问 Linux 上的 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-linux.md)。
 
@@ -69,13 +69,13 @@ Linux 上的 Microsoft Defender for Endpoint 为 Linux (AV) 、终结点检测�
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
-Android 版 Microsoft Defender for Endpoint 是适用于运行 Android 6.0 及更高版本的设备的移动威胁防护解决方案。 Android Enterprise (工作配置文件) 和设备管理员模式均受支持。 在 Android 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接以及设置自定义指示器。 此解决方案扫描 PUA (恶意软件和可能不需要的应用程序) 通过与 MICROSOFT ENDPOINT MANAGER 和条件访问集成，提供其他泄露防护功能。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
+Android 版 Microsoft Defender for Endpoint 是适用于运行 Android 6.0 及更高版本的设备的移动威胁防护解决方案。 Android Enterprise (工作配置文件) 和设备管理员模式均受支持。 在 Android 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接以及设置自定义指示器。 解决方案扫描 PUA (恶意软件和可能不需要的应用程序) 通过与 Microsoft Endpoint Manager 和条件访问集成，提供其他泄露防护功能。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)。
 
 若要详细了解如何开始使用，请访问 Android 版 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-android.md)。
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
-iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高版本的设备的移动威胁防护解决方案。 支持在客户的租户中注册 (注册或注销) 注册的设备。 受监督注册的设备和未监管注册设备均受支持。 在 iOS 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接和设置自定义指示器以及越狱检测。 有关主要功能和优点详细信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
+iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高版本的设备的移动威胁防护解决方案。 支持在客户的租户中注册的设备 (注册或注销) 注册。 受监督注册的设备和未监管注册设备均受支持。 在 iOS 上，我们提供 Web 保护，包括防钓鱼、阻止不安全连接和设置自定义指示器以及越狱检测。 有关主要功能和优点详细信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。 
 
 若要详细了解如何开始使用，请访问 iOS 上的 Microsoft Defender for Endpoint [文档](microsoft-defender-endpoint-ios.md)。
 
@@ -83,7 +83,7 @@ iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高
 
 符合条件的许可用户可以在最多五台并发设备上使用 Microsoft Defender for Endpoint。 Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (购买) 。
 
-客户可以通过独立 Microsoft Defender for Endpoint 许可证（作为 Microsoft 365 A5/E5 或 Microsoft 365 安全部分）在 macOS 上获取 Microsoft Defender for Endpoint。
+客户可以通过独立 Microsoft Defender for Endpoint 许可证（作为 Microsoft 365 A5/E5 的一部分）或 Microsoft 365 MacOS 上的 Microsoft Defender for Endpoint。
 
 上述产品/服务中包含了 Android 和 iOS 上最近宣布的适用于终结点的 Microsoft Defender 功能，这些功能是适用于合格许可用户的五个合格设备的一部分。
 

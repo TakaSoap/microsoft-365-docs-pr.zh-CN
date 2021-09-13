@@ -21,11 +21,11 @@ ms.custom:
 - Ent_Architecture
 description: 了解 Microsoft 云服务的组织、订阅、许可证、用户帐户和租户的关系。
 ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747407"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170584"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 

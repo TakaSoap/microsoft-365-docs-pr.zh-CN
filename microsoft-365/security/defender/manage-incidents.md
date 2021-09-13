@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570409"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170042"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>管理事件Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "58570409"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在 Microsoft 365 Defender (security.microsoft.com) 快速启动时，你可以管理事件& **>** 警报) 。 [](https://security.microsoft.com) 下面是一个示例。
+在 Microsoft 365 Defender **>** (security.microsoft.com Microsoft 365 Defender security.microsoft.com) 快速启动时，可以管理事件&警报) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -48,11 +48,11 @@ ms.locfileid: "58570409"
 - [编辑事件名称](#edit-the-incident-name)
 - [添加事件标记](#add-incident-tags)
 - [将事件分配给自己](#assign-incidents)
-- [解决它们](#resolve-an-incident)
-- [设置其分类和确定](#set-the-classification-and-determination)
-- [添加备注](#add-comments)
+- [解决这些事件](#resolve-an-incident)
+- [设置其分类并确定](#set-the-classification-and-determination)
+- [添加注释](#add-comments)
 
-可以从事件的"管理事件 **"窗格中** 管理事件。 下面是一个示例。
+可以从事件的“**管理事件**”窗格管理事件。 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件&quot;管理事件&quot;窗格的示例。":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "58570409"
 
 ## <a name="edit-the-incident-name"></a>编辑事件名称
 
-Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动分配名称。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
+Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动分配名称。 借助此功能，可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
 
 可以从"管理事件"窗格上的" **事件名称** "字段中 **编辑事件** 名称。
 
@@ -74,7 +74,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 ## <a name="add-incident-tags"></a>添加事件标记
 
-可以将自定义标记添加到事件，例如，标记一组具有共同特征的事件。 稍后可以筛选包含特定标记的所有事件的事件队列。
+可以向事件添加自定义标记，例如，标记一组具有共同特征的事件。 以后可以对包含特定标记的所有事件的事件队列进行筛选。
 
 开始键入时，您可以选择从所选标记列表进行选择。
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 通过筛选事件队列，您可以获取分配给您的事件列表。 
 
 1. 从事件队列中，选择"筛选器 **"。**
-2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择"**分配给我"。**
+2. 在"**事件分配"** 部分，清除 **"全选**"，然后选择 **"分配给我"。**
 3. 选择 **"应用**"，然后关闭" **筛选器"** 窗格。
 
 然后，您可以将生成的 URL 保存为书签，以快速查看分配给您的事件列表。
@@ -100,11 +100,11 @@ Microsoft 365 Defender根据警报属性（如受影响的终结点数、受影�
 
 事件分类是真正的警报还是假警报，从"分类"字段 **进行** 配置。 
 
-如果这是真正的警报，则还应使用"确定"字段指定 **威胁的类型。** 指定威胁类型可帮助安全团队查看威胁模式，并采取行动保护组织抵御威胁模式。 
+如果这是真正的警报，则还应使用"确定"字段指定 **威胁的类型。** 指定威胁类型可帮助安全团队查看威胁模式，并采取措施以保护组织免受威胁。 
 
 ## <a name="add-comments"></a>添加备注
 
-可以使用"注释"字段向事件添加 **多个** 注释。 每个注释将添加到事件的历史事件中。 You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
+可以使用"注释"字段向事件添加 **多个** 注释。 每个备注都会添加到事件的历史事件中。 You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
 ## <a name="next-steps"></a>后续步骤
 

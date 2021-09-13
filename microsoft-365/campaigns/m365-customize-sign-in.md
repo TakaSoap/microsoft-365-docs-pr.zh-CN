@@ -21,17 +21,17 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 使用隐私和同意通知自定义登录页面，以Microsoft 365。
-ms.openlocfilehash: 4aad621567b678ec62abcd829beb7bf34b1ec3a5bbed94393ab8ac449498c0db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 使用隐私和同意声明为用户自定义登录Microsoft 365。
+ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170232"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>使用隐私和同意通知自定义登录页面
 
-通过向登录页添加隐私和同意通知，你的企业或活动可以更轻松地让执法机构向在线犯罪人士提出法律费用。
+通过向登录页添加隐私和同意通知，你的企业或活动可以更轻松地让执法机构向在线犯罪提出法律费用。
 
 可以使用品牌自定义登录页。 还可以添加文本来帮助用户登录，或指出获取对资源的访问权限的法律要求Microsoft 365限制。
 

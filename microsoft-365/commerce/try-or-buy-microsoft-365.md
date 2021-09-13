@@ -17,22 +17,23 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: GEA150
 description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: 794b278be829a30bbea4833253ef45d75f1f1048add2ce493b2b65c1093b5de4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3fc29097268ad4213f7a46d0a58d9eb24073924d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170695"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 
 Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
 
 > [!NOTE]
-> 注册免费试用版时，必须使用信用卡。 在免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
+> 注册免费试用版时，必须使用信用卡。 免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
 
 ::: moniker range="o365-21vianet"
 
@@ -44,9 +45,9 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
@@ -68,16 +69,16 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 3. 在"**许可证"** 部分，选择"**购买订阅"。**
 4. 选择订阅的每月承诺或年度承诺，然后选择"签出 **"。**
 5. On the next page， verify the subscription， and select **Checkout**.
-6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到** 信息"**和"项目"。** 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
-7. 完成后， \' 选择接受 **协议&下订单**。
+6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到信息"** 和"**项目"。** 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
+7. 完成后， \' 选择接受 **协议&下订单。**
 
 ## <a name="extend-your-trial"></a>延长试用期
 
-在购买之前，是否需要更多时间来试用适用于Microsoft 365的功能？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
+在购买之前，是否需要Microsoft 365试用适用于Microsoft 365的功能？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在 **"产品** "选项卡上，选择要扩展的试用订阅。
-3. On the subscription details page， in the **Subscriptions and payment settings section，** select **Extend end date**.
+3. On the subscription details page， in the **Subscriptions and payment settings** section， select **Extend end date**.
 4. 在 **"扩展结束日期"** 窗格中，查看扩展信息，如有必要，选择付款方式。 完成后，选择延长 **试用期**。
 
 准备好购买时，请参阅 [购买试用版](#buy-a-subscription-from-your-free-trial)。
@@ -90,7 +91,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 如果你已有适用于Microsoft 365订阅，可以使用 Microsoft 365 管理中心尝试其他订阅。
 
-当你通过 Microsoft 365 管理中心 添加订阅时，新订阅与与现有 (命名空间) 同一组织。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
+当你通过 Microsoft 365 管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">]</a>添加订阅时，新订阅将关联到与现有 (命名空间) 同一组织。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. 在 **"购买服务** "页上，可以看到可供组织使用的计划。 选择Microsoft 365尝试的计划。
@@ -104,7 +105,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 如果你已有适用于Microsoft 365订阅，可以浏览Microsoft 365 管理中心为组织购买其他订阅。
 
-通过管理中心购买另一个订阅时，新订阅将 (现有订阅) 域名空间。 这使在订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
+通过 Microsoft 365 管理中心 购买另一<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>个订阅时，新订阅将 (现有订阅) 域名空间。 这使在订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. 在"**购买服务**"页上，选择要购买的计划，选择"详细信息"，然后选择"购买 **"。**
@@ -136,7 +137,7 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 如果你有一个新帐户并且正在设置你的第一个订阅，可以使用引导式设置文章帮助你入门。
 
 - [设置 Microsoft 365 小型企业版](../admin/setup/setup-business-basic.md)
-- [设置 Microsoft 365 商业标准版](../admin/setup/setup-business-standard.md)
+- [安装 Microsoft 365 商业标准版](../admin/setup/setup-business-standard.md)
 - [设置 Microsoft 365 商业高级版](../business/set-up.md)
 - [Microsoft 365 商业应用版](../admin/setup/setup-apps-for-business.md)
 

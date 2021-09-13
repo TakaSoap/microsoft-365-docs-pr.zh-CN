@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，并保护 Android 或 iOS 设备上的工作文件。
 ms.openlocfilehash: 1ab7c57e1a9da1a68c07535c2550f0762f7c8141
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169848"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
@@ -46,7 +46,7 @@ ms.locfileid: "58564401"
     
 4. 在 **"策略类型**"下，选择 **"Android** 应用程序管理"或" **适用于 iOS** 的应用程序管理"，具体取决于要创建的策略集。 
     
-5. 展开 **"在设备丢失或** 被盗时保护工作文件"和"管理用户Office **访问移动设备上的文件。** 配置您喜欢的设置。 **管理用户在移动设备上Office** 访问文件方式默认为"关闭"，但我们建议你将其打开并接受默认值。  有关详细信息，请参阅可用 [设置](#available-settings)。 
+5. 展开 **"在设备丢失或** 被盗时保护工作文件"和"管理用户如何Office **移动设备上的文件"。** 配置您喜欢的设置。 **管理用户在移动设备上Office** 访问文件方式默认为"关闭"，但我们建议你将其打开并接受默认值。  有关详细信息，请参阅可用 [设置](#available-settings)。 
     
     始终可使用" **重置默认设置**"链接返回到默认设置。 
     
@@ -83,10 +83,10 @@ ms.locfileid: "58564401"
 如果用户的设备丢失或被盗，以下设置可用于保护工作文件：
 
 
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |:-----|:-----|
 |在以下天数后，从非活动的设备删除工作文件  <br/> |如果设备不用于你在此处指定的天数，则将自动删除设备上存储的任何工作文件。  <br/> |
-|强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开"，** 则工作文件的唯一可用保存OneDrive for Business。  <br/> |
+|强制要求用户将所有的工作文件保存到 OneDrive for Business  <br/> |如果此设置为 **"打开"，** 则工作文件的唯一可用保存位置OneDrive for Business。  <br/> |
 |对工作文件进行加密  <br/> |将此设置保持为" **打开**"，可通过加密保护工作文件。 即使设备丢失或被盗，也没有人可以读取你的公司数据。  <br/> |
    
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>用于控制用户如何在移动设备上访问 Office 文件的设置
@@ -94,7 +94,7 @@ ms.locfileid: "58564401"
 以下设置可用于管理用户访问 Office 工作文件的方式：
 
 
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |:-----|:-----|
 |需要 PIN 或指纹才能访问 Office 应用  <br/> |如果此设置为 **"打开**"，则除了用户名和密码之外，用户还必须提供另一种形式的身份验证，然后才能在移动设备上Office应用。<br/> |
 |登录失败以下次数后重置 PIN  <br/> |若要防止未经授权的用户随机猜测 PIN，PIN 将在达到指定的错误输入次数后重置。  <br/> |

@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: bd0d9dda9edeb27a472474f071cf67ff1463f23b4c82577b9c902b1ec84eecce
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2c1cbc82d0fe1604622b1eb2f9f3583f0125c69
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162303"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>调查与 Microsoft Defender for Endpoint 警报关联的 IP 地址
 
@@ -76,12 +76,12 @@ ms.locfileid: "53839587"
 2. 在"搜索"字段中 **输入** IP 地址。
 3. 单击搜索图标或按 **Enter。**
 
-将显示有关 IP 地址的详细信息，包括：注册详细信息 (（如果) 可用、反向 IP (例如域) 、在可选择的时间段) 内与此 IP 地址 (通信的组织中设备的普遍程度，以及组织中观测到与此 IP 地址通信的设备。
+将显示有关 IP 地址的详细信息，包括：注册详细信息 (（如果可用) 、反向 IP (例如，域) 、在可选择的时间段) 内与此 IP 地址 (通信的组织中设备的普遍程度，以及组织中观测到与此 IP 地址通信的设备。
 
 > [!NOTE]
 > 将仅返回与组织中设备通信时观察到的 IP 地址的搜索结果。
 
-使用搜索筛选器定义搜索条件。 您还可以使用时间线搜索框筛选组织中观测到与 IP 地址通信的所有设备的显示结果、与通信关联的文件和上次观测到的日期。
+使用搜索筛选器定义搜索条件。 您还可以使用时间线搜索框筛选组织中观测到与 IP 地址通信的所有设备的显示结果、与通信关联的文件和上次观测日期。
 
 单击任何设备名称将进入该设备的视图，你可以继续调查报告的警报、行为和事件。
 

@@ -1,5 +1,5 @@
 ---
-title: 在"主题"中Microsoft Viva主题
+title: 在"主题"Microsoft Viva主题
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,13 +15,13 @@ search.appverid: ''
 localization_priority: Normal
 description: 了解如何在"主题"中创建新Microsoft Viva主题。
 ms.openlocfilehash: af4a56b98cd3e372cee242bb98742ba488a1f2b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170574"
 ---
-# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在"主题"中Microsoft Viva主题
+# <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在"主题"Microsoft Viva主题
 
 在 Viva 主题中，如果尚未通过索引发现一个主题，或者 AI 技术没有找到足够证据来将它确定为主题，你可以创建新主题。
 
@@ -36,17 +36,17 @@ ms.locfileid: "58572655"
 - 具有创建或 [**Who主题的权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva Topics 主题权限设置中向用户授予此权限。 
 
 > [!Note] 
-> 具有主题中心主题管理权限的用户 (知识经理) 创建和编辑主题的权限。
+> 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
 
 ## <a name="to-create-a-topic"></a>创建主题
 
 可以从两个位置创建新主题：
 
-- 主题中心主页：任何具有 **Who** 的许可用户都可以创建或编辑主题权限 (参与者) 可以通过选择"新建"菜单并选择"主题"页面，从主题中心创建新主题 **。** 
+- 主题中心主页：任何具有 **Who** 的许可用户可以创建或编辑主题权限 (参与者) 可以通过选择"新建"菜单并选择"主题"页面，从主题中心创建新 **主题。**  
 
     ![主题中心中的新主题。](../media/knowledge-management/new-topic.png)  
 
-- 管理主题页面：具有 **Who** 的任何许可用户都可以管理主题权限 (knowledge managers) 可以通过选择"新建主题"页从主题中心中的"管理主题"页创建新 **主题**。 
+- 管理主题页面：任何拥有 **Who** 的许可用户都可以管理主题权限 (knowledge managers) 可以通过选择"新建主题"页从主题中心中的"管理主题"页创建新 **主题**。 
 
     ![管理主题中的新主题。](../media/knowledge-management/new-topic-topic-center.png)  
 
@@ -66,7 +66,7 @@ ms.locfileid: "58572655"
 
     ![主题的说明。](../media/knowledge-management/description.png)
 
-4. 在 **"固定人员** "部分中，你可以"固定"一个人，以表明他们已连接到主题 (例如，已连接资源的所有者) 。 首先在“**添加新用户**”框中键入他们的姓名或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" **图标来** "取消固定"它们。 您还可以将该人员拖动到列表中的其他位置。
+4. 在 **"固定人员** "部分，你可以"固定"一个人，以将其显示与主题 (例如，已连接资源的所有者) 。 首先在“**添加新用户**”框中键入他们的姓名或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" **图标来** "取消固定"它们。 您还可以将该人员拖动到列表中的其他位置。
  
     ![固定人员。](../media/knowledge-management/pinned-people.png)
 
@@ -74,12 +74,12 @@ ms.locfileid: "58572655"
 
    ![固定的文件和页面。](../media/knowledge-management/pinned-files-and-pages.png)
  
-    若要添加新文件，请选择"添加"，从SharePoint"或"关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
+    若要添加新文件，请选择"添加"，SharePoint"常用或关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
 
     还可使用“**来自链接**”选项，以通过提供 URL 来添加文件或页面。 
 
     > [!Note] 
-    > 添加的文件和页面必须位于同一租户Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
+    > 你添加的文件和页面必须位于同一个Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
 
 
 6.  “**相关网站**”部分显示具有主题相关信息的网站。 
@@ -110,7 +110,7 @@ ms.locfileid: "58572655"
 
    ![确认删除。](../media/knowledge-management/remove-related-confirm.png) 
 
-8. 您还可以通过选择画布图标（可在简短说明下方找到 (，将静态项目添加到页面) ，如文本、图像或链接。 选择它将打开SharePoint工具箱，您可以从中选择要添加到页面的项。
+8. 您还可以通过选择画布图标（可在简短说明下方找到 (文本、图像或链接) ）向页面添加静态项目。 选择它将打开SharePoint工具箱，您可以从中选择要添加到页面的项。
 
    ![画布图标。](../media/knowledge-management/webpart-library.png) 
 

@@ -13,11 +13,11 @@ metadata:
   localization_priority: Normal
   description: 有关下载Microsoft 365 管理中心常见问题。
   ms.openlocfilehash: c9ac712e84fd60e96ba3fa8749cacda76aa0c354
-  ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/09/2021
-  ms.locfileid: "58942442"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59171140"
 title: 下载常见问题
 summary: ''
 sections:
@@ -32,7 +32,7 @@ sections:
       如果下载权限与开放式许可证、开放式价值或开放式价值订阅计划相关联，则只能下载已购买的产品。 管理中心仅显示已购买的许可证的下载。
 
 
-      Select Plus、 (Enterprise、Campus 或 School) 的其他许可计划允许你在购买许可证之前从目录中下载任何产品。
+      Select Plus (、Enterprise、Campus 或 School) 的其他许可计划允许你在购买许可证之前从目录中下载任何产品。
 
 
       如果配置文件同时链接到"开放"和其他许可计划，则可查看整个目录。
@@ -62,11 +62,11 @@ sections:
   - question: "如何下载Office for Mac？ \n"
     answer: >
       若要运行批量许可版本的 Office for Mac，必须下载并安装以下文件：
-        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中包含的序列化Office for Mac程序包。
+        - 批量[许可证 (VL) ](/deployoffice/mac/volume-license-serializer)下载文件中Office for Mac序列化程序包。
         - 安装[Office for Mac包 。](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) 单个应用程序的安装程序程序包文件也可在 Microsoft 365 管理中心。 Office for Mac不需要产品密钥，因为 VL 序列化程序用于激活批量许可版本的 Office for Mac。
   - question: >
       如何在管理中心下载产品？
-    answer: "若要在管理中心下载产品：\n1. 选择 **批量许可**，然后选择产品或 **查看下载**。\n2. 在 **\"下载**\"下，选择组件并选择下载操作或下载图标。 \n\n若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将您分配到以下角色之一来提供访问权限：\n  - 管理员\n  - 下载\n  - 软件保障管理器\n"
+    answer: "若要在管理中心下载产品：\n1. 选择 **批量许可**，然后选择产品或 **查看下载**。\n2. 在 **\"下载**\"下，选择组件并选择下载操作或下载图标。 \n\n若要访问管理中心中的下载，贵组织的 VLSC 管理员可以将你分配到以下角色之一来提供访问权限：\n  - 管理员\n  - 下载\n  - 软件保障管理器\n"
   - question: >
       如何更改下载设置？
     answer: >
@@ -82,7 +82,7 @@ sections:
       > 弹出窗口阻止程序可以阻止下载。 从管理中心下载软件时，请确保已禁用弹出窗口阻止程序。
   - question: >
       什么是 EXE 和 ISO 文件？
-    answer: "从管理中心下载产品时，可以选择两种文件类型：\n  \n  - **可执行 (EXE**) 文件可以下载并安装在同一系统中，但无法创建单独的启动磁盘以安装在其他计算机上。\n  - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的准确表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。\n\n> [!NOTE]\n> 并非所有产品都提供所有语言和格式。\n"
+    answer: "从管理中心下载产品时，可以选择两种文件类型：\n  \n  - **可执行 (EXE**) 文件可以下载并安装在同一个系统中，但无法创建单独的启动磁盘以安装在其他计算机上。\n  - **ISO (国际标准化) 图像** 文件是内容和逻辑格式的确切表示形式。 可以在用于下载程序包的计算机上安装这些文件，或将文件写入磁盘以在其他计算机上分发和安装。\n\n> [!NOTE]\n> 并非所有产品都提供所有语言和格式。\n"
   - question: >
       如何使用 ISO 映像文件软件将 ISO 映像文件下载并保存到 CD-R 或 DVD-R 磁盘？
     answer: >

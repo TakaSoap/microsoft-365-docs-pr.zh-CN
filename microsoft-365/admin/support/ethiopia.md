@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0962e24807bcc7baeeb739d3c0ca321d83e8135eb020345428d614c2fd959d4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3c75d318ea469f03fc30d84a46436ab3c18267ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162154"
 ---
 # <a name="contact-support-for-ethiopia"></a>联系埃塞俄比亚支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53862235"
 ## <a name="phone-number"></a>电话号码
 +27 21 427 3315
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri 10 AM-6 PM

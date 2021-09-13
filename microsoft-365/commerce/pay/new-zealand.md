@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21711c1e992ef5c6cee0ead839f35327f90a04fe855213913b29283637cb273c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170711"
 ---
 # <a name="payment-information-for-new-zealand"></a>新西兰的付款信息
 
@@ -28,7 +28,7 @@ ms.locfileid: "53906455"
 
 **Please pay in NZD and reference invoice number (s) on your payment invoice.**
 
-如果你有一张由 **MICROSOFT REGIONAL SALES PTE LTD** 计费的发票，请使用此银行信息：
+如果你有由 **MICROSOFT REGIONAL SALES PTE LTD** 计费的发票，请使用此银行信息：
 
 **Bank：** Bank  
 **银行代码：31**  
@@ -44,5 +44,5 @@ ms.locfileid: "53906455"
 **Bank：** Bank， N.A. 新西兰分支  
 **SWIFT 代码：** CTINZ2X  
 **BSB：312825**  
-**帐户编号：0008655083**  
+**帐号：0008655083**  
 **帐户名称：** MICROSOFT

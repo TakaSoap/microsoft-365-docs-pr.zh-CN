@@ -12,16 +12,17 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: ceea450ca55e46a5a106a5d9fd3ce9420b674d36
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170203"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -123,7 +124,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 ![文件和电子邮件的敏感度标签范围选项。](../media/filesandemails-scope-options-sensitivity-label.png)
 
-在向导中移动时，你将看到 Office 应用的 **自动标记** 页面，可在其中选择敏感信息类型或可训练的分类器列表：
+在配置中移动时，你将看到 **"文件和电子邮件的自动标记"** 页面，可在其中选择敏感信息类型或可训练的分类器列表：
 
 ![Office 应用程序中自动标记的标签条件。](../media/sensitivity-labels-conditions.png)
 
@@ -247,7 +248,7 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 ### <a name="creating-an-auto-labeling-policy"></a>创建自动标记策略
 
-1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到敏感度标签：
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>，导航到敏感度标签：
 
     - **解决方案** > **信息保护**
 
@@ -260,9 +261,9 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
     > [!NOTE]
     > 如果看不到“**自动标记**”选项卡，则此功能当前在你的区域中不可用。
 
-3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略向导”：
+3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略配置”：
 
-    ![用于实现自动标记的“新建策略向导”。](../media/auto-labeling-wizard.png)
+    ![用于自动标记的“新建策略配置”。](../media/auto-labeling-wizard.png)
 
 4. 对于“**选择要将此标签应用于的信息**”页面：选择其中一个模板，如“**财务**”或“**隐私**”。 可使用“**显示选项**”下拉列表来优化搜索。 或者，如果模板无法满足你的要求，请选择“**自定义策略**”。 选择“**下一步**”。
 
@@ -270,13 +271,20 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 和 OneDrive 的位置。 如果不想保留所选位置的默认“**全部**”，请选择特定实例的链接。 然后选择“**下一步**”。
 
-    ![选择位置页面自动标记向导。](../media/locations-auto-labeling-wizard.png)
+    ![为自动标记配置选择位置页面。](../media/locations-auto-labeling-wizard.png)
     
     若要指定个人 OneDrive 帐户，用户的 OneDrive 的 URL 通常采用以下格式。 对于用户主体名称 (UPN)，句点、逗号、空格和 at 符号 (“@”) 等任何特殊字符都将转换为下划线 (“_”): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
     
-    例如，对于 Contoso 租户中 UPN 为“rsimone@contoso.onmicrosoft.com”的用户: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。 但是，检测到冲突时可以附加数字或 GUID。
+    例如，对于 Contoso 租户中 UPN 为 "rsimone@contoso.onmicrosoft.com" 的用户: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。
     
-    最好始终确认用户的 OneDrive 帐户的 URL，你可使用 Microsoft 365 管理中心或 PowerShell 执行此操作。 有关详细信息，请参阅[获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+    或者，如果使用的是自定义域名，则 UPN 为"rsimone@contoso.com"： `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+    
+    但是，当检测到冲突时，可以将数字或 GUID 追加到 URL 中，因此最好是确认用户的 OneDrive 帐户 URL。 若要确认 URL，可以使用 Microsoft 365 管理中心 或 PowerShell。 有关详细信息，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+    
+    > [!NOTE]
+    > 指定单个 OneDrive 帐户时，请注意，除非 oneDrive 帐户 [预配](/onedrive/pre-provision-accounts)，否则在用户首次访问其 OneDrive 之前不会创建 URL。
+    > 
+    > 此外，如果用户的 UPN 发生更改，OneDrive URL 将 [自动更改](/onedrive/upn-changes) 。 例如，更改姓名事件，如结婚。 或域名更改以支持组织的重命名或业务重组。 如果 UPN 发生更改，则需要更新此处指定的 OneDrive URL。
 
 7. 对于“**设置常用或高级规则**”页面：保留“**常用规则**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果需要针对每个位置使用不同的规则，请选择“**高级规则**”。 然后选择“**下一步**”。
 
@@ -313,9 +321,9 @@ Azure 信息保护统一标记客户端支持自动标记内置和自定义敏�
 
 10. 对于“**决定是立即还是以后测试策略**”页面：如果现在已准备好运行自动标记策略，请在模拟模式中选择“**在模拟模式下运行策略**”。 否则，请选择“**保持策略关闭**”。 选择“**下一步**”：
 
-    ![测试策略自动标记向导。](../media/simulation-mode-auto-labeling-wizard.png)
+    ![测试配置的自动标记策略。](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. 对于“摘要”页：审阅自动标记策略的配置，并进行所需的任何更改，然后完成向导。
+11. 对于 **“摘要”** 页：审阅自动标记策略的配置，并进行所需的任何更改，然后完成向导。
 
 现在，在“**信息保护**” > “**自动标记**”页面上，可在“**模拟**”或“**关闭**”部分看到自动标记策略，具体哪个部分取决于是否选择在模拟模式下运行它。 选择你的策略以查看配置和状态的详细信息（例如，**策略模拟仍在运行**）， 对于模拟模式中的策略，选择“**匹配的项**”选项卡，以查看与你指定的规则匹配的电子邮件或文档。
 

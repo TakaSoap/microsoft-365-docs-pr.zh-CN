@@ -19,17 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在小型企业Microsoft Teams商业应用。
-ms.openlocfilehash: 5ba2dee81602cf6c474728879435998b699a1b5439ae751033a3511b17940361
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在小型企业Microsoft Teams企业。
+ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171448"
 ---
 # <a name="get-started-with-teams"></a>Teams 入门
 
-如果你刚刚开始将业务更改为远程工作，那么这里就对了。 借助 Microsoft 365，你可以虚拟地管理业务，并通过联机会议、聊天、文件共享和 Microsoft Teams 中的通话与员工、合作伙伴和客户[](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)保持联系。 
+如果你刚刚开始将业务更改为远程工作，那么这里就对了。 借助 Microsoft 365，你可以虚拟地管理业务，并通过联机会议、聊天、文件共享和呼叫在 Microsoft Teams 中与员工、合作伙伴[](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)和客户保持联系。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ueMh?autoplay=false]
 
@@ -43,19 +43,19 @@ ms.locfileid: "53882441"
 
 ### <a name="collaborate-with-customers-and-employees"></a>与客户和员工协作
 
-帮助组织中的每个人在Microsoft Teams安装软件。 有关详细信息，请参阅[下载Microsoft Teams。](https://aka.ms/downloadteams)
+帮助组织中的每个人在Microsoft Teams安装软件。 有关详细信息，请参阅下载[Microsoft Teams。](https://aka.ms/downloadteams)
 
 使用Microsoft Teams可以发送即时消息、共享文件和召开会议。 你可以[邀请任何人加入会议](schedule-guest-meeting.md)，即使他们没有Microsoft Teams。 为了与聊天、文档共享和通话进行实时协作，你可以邀请企业外部人员成为团队成员。
 
 ### <a name="create-and-organize-teams"></a>创建和组织团队
 
-Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在一起。 Teams基于项目的工作，例如 (产品发布) ，或基于公司的部门或办公地点持续进行。 还可以设置组织范围的团队，以包含组织中的每个人。
+Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在一起。 Teams基于项目的工作 (，即产品发布) ，或基于公司的部门或办公地点进行。 还可以设置组织范围的团队，以将组织中的每个人纳入其中。
 
 频道是团队中的专用部分，用于保持按特定主题、项目或专业组织的对话。 每个频道的对话、文件和笔记仅对该组的成员可见。
 
 ### <a name="store-and-share-files"></a>存储和共享文件
 
-当团队远程协作时，你将拥有你想要在公司内外共享和协作的文件。 Microsoft Teams可以轻松共享文件并一起处理它们。 如果您的文档是 Word，Excel或PowerPoint您的同事和客户甚至可以直接在文档内查看、编辑和协作处理Microsoft Teams。
+当团队远程协作时，你将拥有你想要在公司内外共享和协作的文件。 Microsoft Teams可以轻松共享文件并一起处理它们。 如果您的文档是 Word，Excel或PowerPoint您的同事和客户甚至可以直接在文档内查看、编辑和协作Microsoft Teams。
 
 确保公司的关键文档保存在云中，并准备好安全地与客户、客户、合作伙伴、供应商和业务中的其他人共享。 将文件保留到云中还意味着你受益于备份以及从硬盘故障、勒索软件攻击和其他错误中恢复的能力。
 
@@ -65,7 +65,7 @@ Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在�
 
 ### <a name="secure-your-business-as-it-runs-remotely"></a>在业务远程运行时保护业务
 
-高度推荐的安全功能是多重身份验证 (MFA) 。 为远程员工添加 MFA 要求他们在登录时输入文本、电话呼叫或身份验证应用Microsoft 365。 如果黑客通过网络钓鱼攻击持有某人的密码，则他们无法使用它来访问你的公司帐户和数据。 你可以从以下中心添加 MFA Microsoft 365 管理：[为移动设备设置 MFA。](set-up-mfa.md)
+高度推荐的安全功能是 MFA (多重) 。 为远程员工添加 MFA 需要他们在登录时输入文本、电话呼叫或身份验证应用Microsoft 365。 如果黑客通过网络钓鱼攻击持有某人的密码，则他们无法使用它来访问你的公司帐户和数据。 你可以从中心添加 MFA [Microsoft 365 管理：为移动设备设置 MFA。](set-up-mfa.md)
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams模板
 
@@ -73,7 +73,7 @@ Microsoft Teams团队旨在将一组紧密协作以完成工作的人汇集在�
 
 ### <a name="business-phone-system"></a>商务电话系统
 
-将产品添加到订阅，将任何电脑、Mac[或移动设备Microsoft 365 商务语音](https://aka.ms/getbusinessvoice)商务电话。 为员工提供自己的工作电话号码以拨打和接听呼叫，设置呼叫菜单系统以路由呼叫，添加音频会议，并设置企业收费和免费电话号码。 在替换成本昂贵且难以管理的传统电话提供商和内部电话系统的同时，执行所有这些工作。
+通过将产品添加到订阅，将任何电脑、Mac 或移动设备[Microsoft 365 商务语音](https://aka.ms/getbusinessvoice)商务电话。 为员工提供自己的工作电话号码以拨打和接听呼叫，设置呼叫菜单系统以路由呼叫，添加音频会议，并设置企业收费和免费电话号码。 在替换成本昂贵且难以管理的传统电话提供商和内部电话系统的同时，执行所有这些工作。
 
 ## <a name="related-content"></a>相关内容
 

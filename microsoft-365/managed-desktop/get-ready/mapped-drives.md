@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 01b26ff33e02a1b26e91bb6399a73c9b22a6ba19
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171289"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备映射的驱动器
 
@@ -25,7 +25,7 @@ ms.locfileid: "58364957"
 - 将团队用于共享文件的映射驱动器迁移到 SharePoint Online。 
 - 现代化或替换任何使用本地文件共享的应用程序，以删除该要求。
   
-现代化这些服务将能提供最佳用户体验，Microsoft 托管桌面。 Microsoft FastTrack 服务可帮助你使用 Microsoft 云服务现代化环境。 你可以检查你是否有资格使用符合条件的服务和FastTrack[服务](/fasttrack/m365-eligible-services-and-plans)，然后直接与他们联系，以准备Microsoft 托管桌面。 有关迁移或FastTrack OneDrive for Business迁移SharePoint，请参阅数据[迁移](/fasttrack/o365-data-migration)。
+现代化这些服务将能提供最佳用户体验，Microsoft 托管桌面。 Microsoft FastTrack 服务可帮助你使用 Microsoft 云服务现代化环境。 你可以检查你是否有资格使用符合条件的服务和FastTrack服务，然后直接与他们联系，[](/fasttrack/m365-eligible-services-and-plans)以准备Microsoft 托管桌面。 有关迁移或FastTrack OneDrive for Business迁移SharePoint，请参阅数据[迁移](/fasttrack/o365-data-migration)。
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>驱动器上的映射Microsoft 托管桌面
  
@@ -35,7 +35,7 @@ ms.locfileid: "58364957"
 
 - 需要为设备映射的文件共享位置的所有 UNC Microsoft 托管桌面路径 
 - 需要访问这些文件共享位置的用户组 
-- 需要分配的任何特定驱动器号 (需要) 
+- 需要分配的任何特定驱动器号 (如果需要) 
 
 例如：
 
@@ -45,11 +45,11 @@ ms.locfileid: "58364957"
 
 你完全有责任确保用户和组拥有和维护访问文件共享位置所需的正确权限，并确保本地文件服务仍然可访问。 此外，应尽快删除对此类文件共享的要求。
 
-### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>将映射的驱动器部署到 Microsoft 托管桌面
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>在服务器中部署映射Microsoft 托管桌面
  
 请确保无法避免映射的驱动器，并且你已仔细查看要求，然后再提交任何服务请求。 然后按照以下步骤操作：
 
-1. 导航到[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并选择"疑难解答 + 支持"，然后在"服务请求"部分Microsoft 托管桌面"。  
+1. 导航到[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并选择"疑难解答 + 支持"，然后在"服务请求"部分下Microsoft 托管桌面请求"。  
 2. 提交标题为"映射驱动器部署"的支持请求，并提供所有必需的文件共享详细信息。  
 3. Microsoft 托管桌面当请求完成时，IT 运营部门将通过使用支持请求更新提供建议。 最初，此配置将仅部署到"测试"部署组的设备。  
 4. 您必须测试并确认由 IT 运营部门Microsoft 托管桌面的配置是否按预期工作。 使用相同支持请求的详细信息中的"讨论"选项卡进行回复，以Microsoft 托管桌面测试完成后通知 IT 运营部门。  
@@ -59,12 +59,12 @@ ms.locfileid: "58364957"
 
 1. 查看 [托管桌面应用](prerequisites.md)。
 2. 运行 [准备情况评估工具](readiness-assessment-tool.md)。
-1. 购买[公司门户](../get-started/company-portal.md)。
+1. 购买 [公司门户](../get-started/company-portal.md)。
 1. 查看 [来宾帐户的先决条件](guest-accounts.md)。
 1. 检查 [网络配置](network.md)。
 1. [准备证书和网络配置文件](certs-wifi-lan.md)。
 1. [准备用户对数据的访问权限](authentication.md)。
 1. [准备应用](apps.md)。
-1. 本文介绍准备 (驱动器) 。
+1. 准备映射驱动器 (本文) 。
 1. [准备打印资源](printing.md)。
 1. 地址 [设备名称](address-device-names.md)。

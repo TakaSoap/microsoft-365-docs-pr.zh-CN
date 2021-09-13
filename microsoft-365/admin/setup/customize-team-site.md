@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: 了解如何使用文档库、列表和中心SharePoint、组织和管理团队网站。
-ms.openlocfilehash: 27eeed7b6826ea3ba145cbbfea367ab70173dfdefd77d0d0639dbf47f67f9188
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何使用文档库、列表和SharePoint自定义、组织和管理团队网站。
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169731"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
-如果你拥有一家具有少量员工的小型企业，则设置和推动文件共享和联机协作的最佳方法之一是同时使用 OneDrive 和SharePoint团队网站。 我们建议创建连接到组组Microsoft 365网站。 如果要使用聊天，可以通过在聊天室内创建团队来创建Microsoft Teams。 有关此内容[Teams，请参阅视频：什么是Microsoft Teams？。](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12) 如果不想使用网站Teams，可以从"开始"SharePoint网站。 
+如果您的小型企业具有一些员工，则设置和推动文件共享和联机协作的最佳方法之一是同时使用 OneDrive 和SharePoint团队网站。 我们建议创建连接到组组Microsoft 365网站。 如果要使用聊天，可以通过在聊天室内创建团队来创建Microsoft Teams。 有关此内容[Teams，请参阅视频：什么是Microsoft Teams？。](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12) 如果不想使用网站Teams，可以从"开始"SharePoint网站。 
   
 [什么是 SharePoint 团队网站？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)
   
@@ -45,9 +45,9 @@ ms.locfileid: "53822019"
  
 ## <a name="customize-your-team-site"></a>自定义您的工作组网站
 
-为了进一步查看工作组网站上的数据，你可以自定义SharePoint页面，以帮助你和员工快速获取你需要的信息。 例如，您可能有一个指向员工 OneDrive 文件夹的链接，以及指向文档、联系人、任务、日历以及存储会议议程和备注的 OneNote 笔记本的链接。
+为了进一步查看工作组网站上的数据，你可以自定义SharePoint起始页，以帮助你和员工快速获取你需要的信息。 例如，您可能有一个指向员工 OneDrive 文件夹的链接，以及指向文档、联系人、任务、日历以及存储会议议程和备注的 OneNote 笔记本的链接。
   
-有关自定义起始页的外观的信息，请参阅更改网站SharePoint[外观](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。
+有关自定义起始页的外观的信息，请参阅更改你的SharePoint[的外观](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。
   
 使用自定义网站中的导航来[改进SharePoint导航](https://support.microsoft.com/office/3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca)。
   
@@ -71,13 +71,13 @@ ms.locfileid: "53822019"
   
 ## <a name="work-with-lists-to-organize-data"></a>使用列表组织数据
 
-SharePoint可添加到网站的列表（如链接、日历、联系人或任务列表）的许多模板。
+SharePoint可添加到网站的列表（如链接列表、日历、联系人或任务列表）的许多模板。
   
 了解如何在["列表"SharePoint。](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online)
   
 有关使用更多列扩展列表的信息，请参阅在列表或库中SharePoint[列](https://support.microsoft.com/office/2b0361ae-1bd3-41a3-8329-269e5f81cfa2)。
   
-如果要在列表中存储大量数据，请参阅在列表中管理大型列表[SharePoint。](https://support.microsoft.com/office/B8588DAE-9387-48C2-9248-C24122F07C59)
+如果要在列表中存储大量数据，请参阅在列表中管理大型列表[和SharePoint。](https://support.microsoft.com/office/B8588DAE-9387-48C2-9248-C24122F07C59)
   
 查看有关将日历添加到网站的视频，请参阅 [创建共享日历](https://support.microsoft.com/office/61b96006-70e2-4535-a34f-ee4fc772f798)。
 
@@ -87,7 +87,7 @@ SharePoint可添加到网站的列表（如链接、日历、联系人或任务�
   
 中心网站让你可以添加和关联网站。 有关详细信息，请参阅[什么是SharePoint中心网站？。](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)
   
-准备好构建中心网站，请参阅在 SharePoint [Online 创建中心网站](/sharepoint/create-hub-site)。
+准备好构建中心网站，请参阅在 SharePoint [Online 中创建中心网站](/sharepoint/create-hub-site)。
   
 若要了解如何将网站添加到中心网站，请参阅将SharePoint[网站与中心网站关联](https://support.microsoft.com/office/ae0009fd-af04-4d3d-917d-88edb43efc05)。
   

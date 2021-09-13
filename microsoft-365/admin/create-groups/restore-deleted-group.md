@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 已删除的组将保留 30 天，您仍可以还原该组。 30 天后，该组及其内容将永久删除。
-ms.openlocfilehash: 555da859e88ea06e498b4197d6ffde7ec9885548ba51118bdf8b41f618deb163
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169849"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的Microsoft 365组
 
@@ -58,13 +58,13 @@ ms.locfileid: "53826431"
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-如果你是组的所有者，Microsoft 365以下步骤，可以在Outlook 网页版中自己还原组：
+如果您是组的所有者，Microsoft 365以下步骤在网站中Outlook 网页版还原组：
 
 1. 在"[已删除的组"页上](https://outlook.office.com/people/group/deleted)**，选择"** 组"节点下的"管理组"选项，然后选择"**已删除"。**
 
 2. 单击要 **还原** 的组旁边的"还原"选项卡。
 
-如果此处未显示已删除的组，请与管理员联系。
+如果已删除的组未在此处显示，请与管理员联系。
 
 # <a name="admin-center"></a>[管理中心](#tab/admin-center)
 
@@ -85,7 +85,7 @@ ms.locfileid: "53826431"
   
 ## <a name="related-content"></a>相关内容
 
-[使用 PowerShell Microsoft 365管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组 (文章) \
+[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) \
 [使用 Remove-UnifiedGroup cmdlet 删除](/powershell/module/exchange/remove-unifiedgroup) (文章) \
 [管理与组连接的团队网站设置](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (文章) \
 [删除本文Outlook (](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)中的) 

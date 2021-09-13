@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5dca5af9c4c4cd0ca32281311a0a0dc6625b731ed8ba92fb42c95d0e43ea1367
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170491"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -45,11 +45,11 @@ ms.locfileid: "53811169"
 
 ## <a name="configuration-profile-structure"></a>配置文件结构
 
-配置文件是一个 .json 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以很简单，如数字值，也可以复杂，如嵌套的首选项列表。
+配置文件是一个 .json 文件，它由键 (标识的条目表示首选项) 的名称，后跟一个值，具体取决于首选项的性质。 值可以是简单的（如数字值）或复杂值（如嵌套的首选项列表）。
 
 通常，你将使用配置管理工具在 位置推送名称 ```mdatp_managed.json``` 为 的文件 ```/etc/opt/microsoft/mdatp/managed/``` 。
 
-配置文件的顶层包括产品范围的首选项和产品子区域条目，下一节将详细介绍这些首选项和条目。
+配置文件的顶层包括产品范围的首选项和产品子区域条目，下一节将对此进行详细介绍。
 
 ### <a name="antivirus-engine-preferences"></a>防病毒引擎首选项
 
@@ -61,7 +61,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|antivirusEngine|
+|**Key**|antivirusEngine|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -76,9 +76,9 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|enableRealTimeProtection|
+|**Key**|enableRealTimeProtection|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认值)  <p> false|
+|**可能的值**|true (默认)  <p> false|
 |
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
@@ -97,7 +97,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|passiveMode|
+|**Key**|passiveMode|
 |**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。|
@@ -113,7 +113,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|exclusionsMergePolicy|
+|**Key**|exclusionsMergePolicy|
 |**数据类型**|String|
 |**可能的值**|合并 (默认)  <p> admin_only|
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
@@ -130,7 +130,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|排除项|
+|**Key**|排除项|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -145,7 +145,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|$type|
+|**Key**|$type|
 |**数据类型**|String|
 |**可能的值**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |
@@ -160,7 +160,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|path|
+|**Key**|path|
 |**数据类型**|String|
 |**可能的值**|有效路径|
 |**Comments**|仅在 *排除$type**时适用*|
@@ -176,7 +176,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|isDirectory|
+|**Key**|isDirectory|
 |**数据类型**|Boolean|
 |**可能的值**|false（默认值） <p> true|
 |**Comments**|仅在 *排除$type**时适用*|
@@ -192,7 +192,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|extension|
+|**Key**|extension|
 |**数据类型**|String|
 |**可能的值**|有效的文件扩展名|
 |**Comments**|仅在 *排除**$type FileExtension 时适用*|
@@ -200,7 +200,7 @@ ms.locfileid: "53811169"
 
 ##### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程*
 
-指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称来指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
+指定从扫描中排除所有文件活动的进程。 可以通过进程的名称或名称指定 (例如，) 或完整 (`cat` 例如 `/bin/cat` ，) 。
 
 <br>
 
@@ -208,10 +208,10 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|name|
+|**Key**|name|
 |**数据类型**|String|
 |**可能的值**|任何字符串|
-|**Comments**|仅在 *排除**$type FileName 时适用*|
+|**Comments**|仅在排除 *$type FileName 时适用*|
 |
 
 #### <a name="allowed-threats"></a>允许的威胁
@@ -224,7 +224,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|allowedThreats|
+|**Key**|allowedThreats|
 |**数据类型**|字符串数组|
 |
 
@@ -238,7 +238,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|disallowedThreatActions|
+|**Key**|disallowedThreatActions|
 |**数据类型**|字符串数组|
 |**可能的值**|允许 (限制用户允许威胁)  <p> restore (限制用户从隔离网站还原) |
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
@@ -254,7 +254,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|threatTypeSettings|
+|**Key**|threatTypeSettings|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -269,7 +269,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|注册表项|
+|**Key**|注册表项|
 |**数据类型**|String|
 |**可能的值**|potentially_unwanted_application <p> archive_bomb|
 |
@@ -288,14 +288,14 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|值|
+|**Key**|值|
 |**数据类型**|String|
 |**可能的值**|审核 (默认)  <p> block <p> off|
 |
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
-指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
+指定威胁类型设置的合并策略。 它可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
 <br>
 
@@ -303,7 +303,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|threatTypeSettingsMergePolicy|
+|**Key**|threatTypeSettingsMergePolicy|
 |**数据类型**|String|
 |**可能的值**|合并 (默认)  <p> admin_only|
 |**Comments**|适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。|
@@ -319,7 +319,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|scanResultsRetentionDays|
+|**Key**|scanResultsRetentionDays|
 |**数据类型**|String|
 |**可能的值**|90 (默认值) 。 允许的值从 1 天到 180 天。|
 |**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
@@ -335,7 +335,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|scanHistoryMaximumItems|
+|**Key**|scanHistoryMaximumItems|
 |**数据类型**|String|
 |**可能的值**|10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。|
 |**Comments**|适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。|
@@ -351,7 +351,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|cloudService|
+|**Key**|cloudService|
 |**数据类型**|字典 (嵌套首选项) |
 |**Comments**|有关字典内容的说明，请参阅以下部分。|
 |
@@ -366,9 +366,9 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|enabled|
+|**Key**|enabled|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认值)  <p> false|
+|**可能的值**|true (默认)  <p> false|
 |
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
@@ -381,17 +381,17 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|diagnosticLevel|
+|**Key**|diagnosticLevel|
 |**数据类型**|String|
 |**可能的值**|可选 (默认)  <p> 必需|
 |
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>启用/禁用自动示例提交
 
-确定是否将 (可能包含威胁的可疑) 发送到 Microsoft。 有三个级别用于控制示例提交：
+确定是否将 (可能包含威胁的可疑) 发送给 Microsoft。 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 只有不包含个人身份信息的可疑样本 (个人身份) 自动提交。 这是此设置的默认值。
+- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 <br>
@@ -400,7 +400,7 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|automaticSampleSubmissionConsent|
+|**Key**|automaticSampleSubmissionConsent|
 |**数据类型**|String|
 |**可能的值**|无 <p> 安全 (默认)  <p> all|
 |
@@ -415,9 +415,9 @@ ms.locfileid: "53811169"
 
 |说明|值|
 |---|---|
-|**键**|automaticDefinitionUpdateEnabled|
+|**Key**|automaticDefinitionUpdateEnabled|
 |**数据类型**|Boolean|
-|**可能的值**|true (默认值)  <p> false|
+|**可能的值**|true (默认)  <p> false|
 |
 
 ## <a name="recommended-configuration-profile"></a>建议的配置文件

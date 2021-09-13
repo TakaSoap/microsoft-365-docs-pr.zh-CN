@@ -27,11 +27,11 @@ search.appverid:
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，你可以选择使用自己拥有的域，也可以在注册期间购买一个域。
 ms.openlocfilehash: abb818b17ea5259b6e7015f73afb386e4515ac2f
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169712"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>使用新域或现有域设置 Microsoft 365 商业标准版
 

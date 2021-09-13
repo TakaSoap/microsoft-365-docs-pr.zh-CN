@@ -1,5 +1,5 @@
 ---
-title: 安排Teams用户召开外部会议
+title: 安排Teams用户召开会议
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何安排与外部Teams会议。
-ms.openlocfilehash: 2c6e1087cb20bad7ca799159d05d09b61c04bfdeaf146890127d10365155a2b4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896375"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171161"
 ---
-# <a name="schedule-a-teams-meeting-with-external-users"></a>安排Teams用户召开外部会议
+# <a name="schedule-a-teams-meeting-with-external-users"></a>安排Teams用户召开会议
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 

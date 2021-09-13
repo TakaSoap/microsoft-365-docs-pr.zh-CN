@@ -24,17 +24,17 @@ search.appverid:
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解适用于企业Microsoft 365保护设备安全Windows 10设置。
 ms.openlocfilehash: 29fb5c18f016bd2832c25ff66db258671b95bd6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169829"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>编辑或创建电脑的设备Windows 10设置
 
 本文适用于Microsoft 365 商业高级版。
 
-在"设置"Windows设置默认保护设置后，可以添加适用于所有用户或一组用户的新设置。 还可以编辑已创建的任何文件。
+在"设置"页上设置Windows保护设置后，可以添加适用于所有用户或一组用户的新设置。 还可以编辑已创建的任何文件。
 
 ## <a name="create-protection-settings-for-windows-10-devices"></a>为设备创建Windows 10设置
 
@@ -59,7 +59,7 @@ ms.locfileid: "58566390"
  
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。     
 2. 在左侧导航中，选择 **"设备策略** \> **"。**
-1. 选择现有设备Windows，然后选择"编辑 **"。**
+1. 选择现有设备Windows策略，然后选择"编辑 **"。**
 1. 选择 **要** 更改的设置旁边的"编辑"，然后选择"保存 **"。**
 
 ## <a name="available-settings"></a>可用设置
@@ -69,7 +69,7 @@ ms.locfileid: "58566390"
 有关详细信息，请参阅如何将保护[功能Microsoft 365 高级版映射到 Intune 设置](map-protection-features-to-intune-settings.md)。 
 
 
-|设置  <br/> |说明  <br/> |
+|Setting  <br/> |说明  <br/> |
 |:-----|:-----|
 |使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁  <br/> |需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。  <br/> |
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。  <br/> |

@@ -15,19 +15,19 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: 了解如何创建和配置 AD FS 服务器，以在 Microsoft Azure 中为 Microsoft 365 进行高可用性联合身份验证。
+description: 了解如何创建和配置 AD FS 服务器，以在 Microsoft Azure 中为Microsoft 365身份验证。
 ms.openlocfilehash: 7f6e7801c8185cebc66e653a39930ee9af120946
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569425"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162374"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
-在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段，将创建一个内部负载平衡器以及两个 AD FS 服务器。
+在部署 Azure 基础结构服务中Microsoft 365身份验证的这一阶段中，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
-必须先完成此阶段，然后才能进入阶段 [4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
+必须先完成此阶段，然后才能进入阶段 [4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 有关[所有阶段，请参阅](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)在 Azure 中为 Microsoft 365 部署高可用性联合身份验证。
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>在 Azure 中创建 AD FS 服务器虚拟机
 
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 对于每个虚拟机，请使用所选择的远程桌面客户端并创建远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-对于每个虚拟机，在 Windows PowerShell 提示符下使用这些命令 (AD DS) 相应的 Active Directory 域服务。
+对于每个虚拟机，在命令提示符下 (这些命令) AD DS Windows PowerShell域。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -158,4 +158,4 @@ Restart-Computer
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)

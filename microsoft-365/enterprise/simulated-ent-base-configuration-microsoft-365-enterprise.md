@@ -19,20 +19,20 @@ ms.custom:
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此测试实验室指南创建适用于企业的 Microsoft 365模拟企业测试环境。
 ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170593"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
 
 本文介绍如何为企业版创建简化Microsoft 365环境，其中包括：
 
 - Microsoft 365 E5 试用版或付费版订阅。
-- 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络上的三个虚拟机 (DC1、APP1 和 CLIENT1) 。
+- 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络上的三个虚拟机 (DC1、APP1 和 CLIENT1) 。
  
 ![模拟企业基础配置。](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
@@ -98,7 +98,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-设置 Azure 订阅。 将引号内的所有内容（包括尖括号 ("<"和">") ）替换为正确的名称。
+设置 Azure 订阅。 使用正确的名称替换引号内的所有内容，包括 ("<"和">") 尖括号。
   
 ```powershell
 $subscr="<subscription name>"
@@ -172,7 +172,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
    - 对于 Windows 8 或 Windows 10：
     
-     在 **"Windows 安全中心"** 对话框中，选择"更多 **选项**"，然后选择"**使用不同的帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
+     在 **"Windows 安全中心"** 对话框中，选择"**更多选项**"，然后选择"**使用不同的帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
     
 4. 在 **"密码**"中，输入本地管理员帐户的密码，然后选择"确定 **"。**
     
@@ -197,7 +197,7 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重启后，重新连接到 DC1 虚拟机。
   
-1. 在 [Azure 门户中](https://portal.azure.com)，**选择"资源** 组 > <你的 *资源组名称> >* **DC1**  >  **连接。**
+1. 在 [Azure 门户中，](https://portal.azure.com)选择"资源 **组** > <你的 *资源组名称> >* **DC1**  >  **连接。**
     
 2. 运行下载的 DC1.rdp 文件，然后选择 **"连接"。**
     
@@ -339,7 +339,7 @@ Restart-Computer
     
 2. 在 **CLIENT1 的属性中，****选择**"IE 增强的安全 **配置"旁边的"打开"。**
     
-3. 在 **Internet Explorer安全配置"** 中，为"**管理员** 和用户"选择 **"** 关闭"，然后选择"确定 **"。** 
+3. 在 **Internet Explorer增强安全配置**"中 **，为"****管理员** 和用户"选择"关闭"，然后选择"确定 **"。**
     
 4. 从"开始"屏幕中 **，Internet Explorer"，** 然后选择"确定 **"。**
     

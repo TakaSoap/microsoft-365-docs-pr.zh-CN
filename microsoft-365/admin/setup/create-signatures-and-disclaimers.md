@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
 ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169732"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -78,7 +78,7 @@ ms.locfileid: "58567164"
     
 5. 为规则命名。
     
-6. 在 **"应用此规则"下**，选择 **"[应用于所有邮件]"。**
+6. 在 **"应用此规则"** 下，选择 **"[应用于所有邮件]"。**
     
     > [!TIP]
     > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但它也适用于 Microsoft 365.)  
@@ -116,7 +116,7 @@ ms.locfileid: "58567164"
   
 ## <a name="more-resources"></a>更多资源
 
-有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、[签名](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)、页脚或 Exchange Online。
 
 ## <a name="related-content"></a>相关内容
 

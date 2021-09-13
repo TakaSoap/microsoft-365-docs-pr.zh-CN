@@ -17,13 +17,13 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负载的有用信息Microsoft Azure。
+description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负荷的有用信息的链接Microsoft Azure。
 ms.openlocfilehash: c7b3997464a6834da0471f3b879da4daafe3908d
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162364"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 
@@ -33,7 +33,7 @@ ms.locfileid: "58354448"
 
 - [使用 Azure AD 进行 SharePoint Server 身份验证](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [在Microsoft 365部署目录Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [在Microsoft 365中部署目录Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [将本地网络连接到 Microsoft Azure 虚拟网络](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     

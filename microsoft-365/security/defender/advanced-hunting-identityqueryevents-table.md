@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 49d420bcf938ab0180b3d6ddaf518d9d2f55c89b3d7bd0fc104a8e05a79c0686
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161941"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "53799414"
 高级 `IdentityQueryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关对 Active Directory 对象（如用户、组、设备和域）执行的查询的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
+> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53799414"
 | `Protocol` | string | 通信期间使用的协议 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
+| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
@@ -63,7 +63,7 @@ ms.locfileid: "53799414"
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
 | `DestinationPort` | string | 相关网络通信的目标端口 |
-| `TargetDeviceName` | string | 已记录 (的) 的设备的完全限定域名和 FQDN |
+| `TargetDeviceName` | string | 已记录 () 的设备的完全限定域名和 FQDN |
 | `TargetAccountUpn` | string | 用户主体 (UPN) 记录操作应用于的帐户的名称 |
 | `TargetAccountDisplayName` | string | 已记录操作应用于的帐户的显示名称 |
 | `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 6453ce0607ed7dee66622b64705d88e91cd67bf4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162305"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的事件
 
@@ -46,7 +46,7 @@ ms.locfileid: "58575812"
 
 ## <a name="analyze-incident-details"></a>分析事件详细信息
 
-单击事件以查看"事件 **"窗格**。 选择 **"打开事件页面** "，查看事件详细信息和相关信息 (警报、设备、调查、证据、图形) 。
+单击事件以查看"事件 **"窗格**。 选择 **"打开事件页面** "以查看事件详细信息和相关信息， (警报、设备、调查、证据、图形) 。
 
 ![事件详细信息的图像1。](images/atp-incident-details.png)
 
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint 将威胁信息聚合到事件中，以便你可
 
 ### <a name="incident-graph"></a>事件图
 
-此 **Graph** 将介绍网络安全攻击的情景。 例如，它显示入口点是什么，哪个指示符在哪个设备上观察到了泄露或活动。 等。
+此 **Graph** 网络攻击的情景。 例如，它显示入口点是什么，哪个指示符在哪个设备上观察到了泄露或活动。 等。
 
 ![事件图的图像。](images/atp-incident-graph-tab.png)
 

@@ -1,6 +1,6 @@
 ---
-title: DeviceFromIP () Defender 高级搜寻Microsoft 365函数
-description: 了解如何使用 DeviceFromIP () 函数获取已分配了特定 IP 地址的设备
+title: DeviceFromIP () 高级搜寻功能Microsoft 365 Defender
+description: 了解如何使用 DeviceFromIP () 函数获取已分配特定 IP 地址的设备
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 设备， devicefromIP， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933177"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162224"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -39,11 +39,11 @@ ms.locfileid: "51933177"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-使用高级搜寻查询中的 函数可快速获取给定时间点已分配给特定 IP 地址的设备 `DeviceFromIP()` 列表。 [](advanced-hunting-overview.md) 
+使用高级搜寻查询中的 函数可快速获取给定时间点已分配给特定 IP 地址 `DeviceFromIP()` 的设备列表。 [](advanced-hunting-overview.md) 
 
 此函数返回具有以下列的表：
 
-| Column | 数据类型 | 说明 |
+| 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `IP` | string | IP 地址  |
 | `DeviceId` | string | 服务中设备的唯一标识符 |
@@ -60,7 +60,7 @@ invoke DeviceFromIP()
 此函数作为查询的一部分调用。
 
 - **x**— 第一个参数通常已是查询中的一列。 在这种情况下，它是名为 的列 ，您希望查看已分配给它的设备列表的 `IP` IP 地址。 它应该是本地 IP 地址。 不支持外部 IP 地址。
-- **y**—第二个可选参数是 ，它指示函数从特定时间获取最新 `Timestamp` 分配的设备。 如果未指定，函数将返回最新可用记录。
+- **y**— 第二个可选参数是 ，它指示函数从特定时间获取最新 `Timestamp` 分配的设备。 如果未指定，函数将返回最新可用记录。
 
 ## <a name="example"></a>示例
 

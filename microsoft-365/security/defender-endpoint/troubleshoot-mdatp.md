@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d8ae4b902bd7544940834f3661d4461f1baebea7ba8170bd87248553dfe5cb05
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170058"
 ---
 # <a name="troubleshoot-service-issues"></a>服务疑难解答
 
@@ -42,9 +42,9 @@ ms.locfileid: "53828855"
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>门户上缺少的元素或数据
 
-如果客户端上缺少某些元素或Microsoft 365 Defender则代理设置可能会阻止它。
+如果客户端上缺少某些元素或Microsoft 365 Defender代理设置可能会阻止它。
 
-确保包括 `*.security.microsoft.com` 代理允许列表。
+请确保包括 `*.security.microsoft.com` 代理允许列表。
 
 > [!NOTE]
 > 添加以下终结点时，必须使用 HTTPS 协议。

@@ -19,15 +19,15 @@ search.appverid:
 - FRP150
 description: 了解新的订阅Microsoft 365名称。
 ms.openlocfilehash: f08e3f6395d97dd5f0f54665d247c474db2556b6
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170350"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 就是现在的 Microsoft 365
 
-我们更改了一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 2020 年<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">4</a>月 21 日Microsoft 365 管理中心帐单将自动更新。帐单将在 2020 年 4 月 21 日或之后更新。
+我们更改了一些 Office 365 和 Microsoft 365 订阅名称。 你无需执行任何操作。 你的服务、应用和功能以及订阅的价格都将保持不变。 订阅名称将在 2020 年<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">4</a>月 21 Microsoft 365 管理中心且帐单将在 2020 年 4 月 21 日或之后自动更新。
 
 - **Office 365 商业协作版** 现已 **Microsoft 365 商业基础版**
 - **Office 365 商业高级版** 现已 **Microsoft 365 商业标准版**
@@ -39,7 +39,7 @@ ms.locfileid: "58394416"
 
 ## <a name="related-content"></a>相关内容
 
-[订阅和计费链接](../commerce/index.yml) (页面) \
+[订阅和计费 (](../commerce/index.yml) 链接页) \
 [查看帐单或发票](../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）\
 [支付订阅费用](../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
-[更改帐单邮寄地址](../commerce/billing-and-payments/change-your-billing-addresses.md) (文章) 
+[更改帐单邮寄 (](../commerce/billing-and-payments/change-your-billing-addresses.md) 文章) 

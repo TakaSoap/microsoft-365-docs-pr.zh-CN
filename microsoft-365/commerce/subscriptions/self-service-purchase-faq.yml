@@ -20,15 +20,15 @@ metadata:
   - MET150
   description: 查找有关自助服务购买的常见问题的解答。
   ms.date: 09/15/2020
-  ms.openlocfilehash: 9cca88d8eb2d943d8d8d5377f4223e5a69251d6aa9048d8e0ab721373605cd4d
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53892635"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59170702"
 title: 自助服务购买常见问题解答
 summary: >
-  自助购买为用户提供了尝试新技术和开发最终使大型组织受益的解决方案的机会。 中央采购和 IT 团队对通过以下渠道购买和部署自助式购买解决方案的<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">所有用户Microsoft 365 管理中心。</a> 管理员可以通过 PowerShell 按产品关闭自助服务购买。 若要了解更多信息，请参阅 [将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
+  自助购买为用户提供了尝试新技术和开发最终使大型组织受益的解决方案的机会。 中央采购和 IT 团队对通过以下渠道购买和部署自助式购买解决方案的<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">所有用户Microsoft 365 管理中心。</a> 管理员可以通过 PowerShell 基于每个产品关闭自助服务购买。 若要了解更多信息，请参阅 [将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
 
 
   自助服务购买适用于 Power Platform (Power BI、Power Apps 和 Power Automate) 、Project 和 Visio。
@@ -36,7 +36,7 @@ summary: >
 
   > [!NOTE]
 
-  > 自助购买不适用于印度或政府或教育客户。 Project Visio和卢旺达共和国提供自助服务购买。
+  > 自助购买不适用于印度或政府或教育客户。 Project Visio以及卢旺达共和国的自助服务购买。
 sections:
 - name: 进行自助服务购买
   questions:
@@ -51,7 +51,7 @@ sections:
   - question: >
       Who自助服务购买购买？
     answer: >
-      在托管 Azure AD 租户中拥有非来宾用户帐户的任何用户都可以进行自助购买。 自助服务购买不适用于政府或教育组织的租户。 如果此操作适用于你的组织，则无需执行任何其他操作来控制自助服务购买。
+      在托管 Azure AD 租户中拥有非来宾用户帐户的任何用户都可以进行自助购买。 自助购买不适用于政府或教育组织的租户。 如果此操作适用于你的组织，则无需执行任何其他操作来控制自助服务购买。
 
 
       组织或市场中的不符合自助服务购买条件的用户会看到一条消息，要求他们联系 IT 管理员。
@@ -66,7 +66,7 @@ sections:
   - question: >
       Who自助服务购买者能否将许可证分配给他们？
     answer: >
-      自助服务购买者只能向同一 Azure AD 租户中的用户分配许可证。 购买者可以访问有限视图的许可证<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心分配许可证</a>。 购买者可以将许可证分配给通过自助购买购买的产品，并且只能向同一 Azure AD 租户中的用户分配这些许可证。
+      自助服务购买者只能向同一 Azure AD 租户中的用户分配许可证。 购买者可以访问有限视图的许可证<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>分配许可证。 购买者可以将许可证分配给通过自助购买购买的产品，并且只能向同一 Azure AD 租户中的用户分配这些许可证。
   - question: >
       自助服务购买者在哪里查看和管理他们的购买？
     answer: >
@@ -86,7 +86,7 @@ sections:
   - question: >
       管理员具有哪些自助服务购买功能？
     answer: >
-      管理员可以在管理中心中查看其组织进行的所有<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 他们可以看到产品、购买者名称、购买的订阅、到期日期、订单历史记录、购买价格以及每个自助购买的已分配用户。 在 Power Platform Admin Center 中，管理员还可以查看自助服务购买容量。 如果组织需要，管理员可以通过 PowerShell 关闭按产品进行自助购买。 对于通过自助购买或集中购买的产品，管理员具有相同的数据管理和访问策略。
+      管理员可以在"管理中心"中查看其组织<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 他们可以看到产品、购买者名称、购买的订阅、到期日期、订单历史记录、购买价格以及每个自助购买的已分配用户。 在 Power Platform Admin Center 中，管理员还可以查看自助服务购买容量。 如果组织需要，管理员可以通过 PowerShell 关闭按产品进行自助购买。 对于通过自助购买或集中购买的产品，管理员具有相同的数据管理和访问策略。
 
 
       管理员还可以控制其组织的用户是否可以进行自助购买。 有关详细信息，请参阅将 [AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块](allowselfservicepurchase-powershell.md)。
@@ -95,7 +95,7 @@ sections:
     answer: >
       管理员根据数据管理和合规性要求维持对租户中可用服务和产品的控制。 组织启用的所有数据管理和访问策略均适用于可用的自助购买服务。
   - question: >
-      Who由自助服务购买创建的产品数据？
+      Who拥有通过自助服务购买创建的产品数据？
     answer: >
       从通过自助购买购买的产品创建的数据归组织所有和控制。
   - question: >
@@ -105,7 +105,7 @@ sections:
   - question: >
       管理员在哪里看到自助服务购买？
     answer: >
-      全局管理员和帐单管理员可以在"帐单""你的产品"中查看通过自助购买  >  Microsoft 365 管理中心。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a> 他们可以筛选产品列表，以只显示通过中央采购购买的订阅，或包括通过自助购买购买的订阅。
+      全局管理员和帐单管理员可以在"帐单""你的产品"中查看通过自助购买购买的  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 他们可以筛选产品列表，以只显示通过中央采购购买的订阅，或包括通过自助购买购买的订阅。
 
 
       管理员可以查看产品、购买者名称、购买的订阅、到期日期、订单历史记录、购买价格以及分配的用户。

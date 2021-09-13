@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: 虚拟但具有代表性的全局组织如何为企业Microsoft 365企业。
+description: 虚拟但具有代表性的全球组织如何为企业Microsoft 365企业。
 ms.openlocfilehash: 90d8e0c9d0cd81d415fc8ca9751b0cecd4331623
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354328"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171005"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Contoso Corporation 的企业版
 
 Microsoft 365企业版是 Microsoft 顶级云产品/服务，它将本地和基于云的生产力应用和服务与Windows 10 企业版高级安全功能相结合。 这是一个完整的智能解决方案，使每个人都能够以创意和安全方式协同工作。
 
-Contoso Corporation 是一家虚构但具有代表性的全球大型制造企业，总部位于巴黎。 该公司部署了Microsoft 365，并解决了有关网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性的主要设计决策和实现详细信息。
+Contoso Corporation 是一家虚构但具有代表性的全球大型制造企业，总部位于巴黎。 该公司部署了 Microsoft 365 企业版，并解决了有关网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性的主要设计决策和实施详细信息。
 
 Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴、数据和流程汇集在一起，以创造客户价值并保持在数字第一世界中的竞争优势，从而加速数字化转型。
 
@@ -45,7 +45,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [标识](contoso-identity.md)
 
-  Contoso 云中的标识解决方案利用公司本地 Active Directory 域服务 (AD DS) 林。 它包括具有其现有受信任的第三方标识提供程序的联合身份验证。
+  Contoso 云中标识解决方案利用公司本地 Active Directory 域服务 (AD DS) 林。 它包括具有其现有受信任的第三方标识提供程序的联合身份验证。
 
 - [Windows 10 企业版](contoso-win10.md)
 
@@ -61,11 +61,11 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [信息保护](contoso-info-protect.md)
 
-  为了确保常见和高价值数据被标识、标记并受安全层限制，Contoso 强制执行其数据安全策略，Microsoft 365用于企业信息保护。
+  为了确保常见和高价值数据被标识、标记并受安全层限制，Contoso 使用 Microsoft 365 强制实施其数据安全策略，以用于企业信息保护。
 
 - [企业Microsoft 365摘要](contoso-security-summary.md)
 
-  Contoso 针对标识和访问Microsoft 365、威胁防护、信息保护和安全管理使用企业安全功能的完整功能。
+  Contoso 针对标识和访问Microsoft 365、威胁防护、信息保护和安全管理为企业安全功能使用各种功能。
 
 请参阅以下其他 IT 方案和配置：
 
@@ -79,7 +79,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [Teams 语音迁移](/MicrosoftTeams/voice-case-study-overview)
 
-  了解 Contoso 如何将其本地用户迁移到 Microsoft Teams实现统一通信、协作和语音。
+  了解 Contoso 如何将其本地用户迁移到 Microsoft Teams统一通信、协作和语音。
 
 - [通信合规性冒犯性语言策略](../compliance/communication-compliance-case-study.md)
 

@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: 了解如何与 Microsoft 认证的解决方案提供商 (合作伙伴) 购买和管理组织或学校的产品和服务。
 ms.date: 04/13/2021
-ms.openlocfilehash: 024f8c4154c4e646a5a72fbc0d1b0f980b8b5c8eb854e723d84dc0f5f464911c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171124"
 ---
 # <a name="manage-partner-relationships"></a>管理合作伙伴关系
 
@@ -34,13 +35,13 @@ ms.locfileid: "53809092"
 2. 合作伙伴会向客户发送电子邮件请求，以建立合作关系。
 3. 客户接受邀请，Microsoft 365 管理中心开始与合作伙伴合作。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>合作伙伴可以为我的组织或学校做什么？
 
-合作伙伴可以通过多种方式与你在一起。 根据你指出的业务需求，当他们发送与你的合作请求时，他们选择这些类型之一。
+合作伙伴可通过多种方法与你们合作。 根据你指出的业务需求，当他们发送与你的合作请求时，他们选择这些类型之一。
 
 | 合作伙伴类型 | 说明 |
 | ------ | ------------------- |
@@ -49,7 +50,7 @@ ms.locfileid: "53809092"
 | 经销商&委派管理员 | 向组织或学校销售和管理 Microsoft 产品和服务的合作伙伴。 |
 | 合作伙伴 | 在租户中为合作伙伴提供用户帐户，他们代表你Microsoft 服务其他帐户。 |
 | 顾问 | 合作伙伴可以重置密码并处理支持事件。 |
-| MPSA 合作伙伴& Microsoft &服务 (协议)  | 如果你通过 MPSA 计划与多个合作伙伴合作，你可以允许他们查看彼此进行购买。 |
+| MPSA &合作伙伴 (Microsoft 产品和服务) 协议 | 如果你通过 MPSA 计划与多个合作伙伴合作，你可以允许他们查看彼此进行购买。 |
 | LOB 业务线 (LOB) 合作伙伴 | 合作伙伴可以开发、提交和管理特定于你的组织或学校的 LOB 应用。 |
 
 ## <a name="find-a-partner"></a>查找合作伙伴
@@ -65,7 +66,7 @@ ms.locfileid: "53809092"
 
 找到合作伙伴并决定与合作伙伴合作后，他们向您发送一封电子邮件邀请。
 
-1. 在电子邮件中，选择链接以转到Microsoft 365 管理中心。
+1. 在电子邮件中，选择链接以转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">"Microsoft 365 管理中心"。</a>
 2. 在" **接受&授权合作伙伴"** 页上，选择 **Microsoft 客户协议的链接**，然后阅读文档。
 3. 选中此框以确认你已阅读该协议。
 4. 选择 **"接受&授权"。**

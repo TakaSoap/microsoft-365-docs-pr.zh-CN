@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 7682192c3afd181667845fc2202120c481968356
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4f1ec369913054e8fe119cebf3d647b42c133d34
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567612"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170085"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -50,7 +50,7 @@ ms.locfileid: "58567612"
 
 - Windows Defender 防病毒作为主 AV (实时保护) 
 - [某些规则](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 要求 (云传递保护) 
-- Windows 10 企业版E5 或 E3 许可证或 Microsoft 365 商业版许可证
+- Windows 10 企业版E5 或 E3 许可证Microsoft 365商业版许可证
 
 尽管攻击面减少规则不需要[Windows E5](/windows/deployment/deploy-enterprise-licenses)许可证，但使用 Windows E5 许可证，你可以获得高级管理功能，包括适用于终结点的 Defender 中提供的监视、分析和工作流，以及 Microsoft 365 安全中心的报告和配置功能。 这些高级功能不适用于 E3 许可证，但你仍可以使用事件查看器查看攻击面减少规则事件。
 
@@ -62,12 +62,12 @@ ms.locfileid: "58567612"
 - **警告**：启用 ASR 规则，但允许最终用户绕过阻止
 
 > [!IMPORTANT]
-> 目前，在 MEM 中配置 ASR 规则时，三个 ASR 规则不支持Microsoft Endpoint Manager (模式) 。 若要了解更多信息，请参阅 [不支持警告模式的情况](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
+> 目前，在 MEM 中配置 ASR 规则时，三个 ASR 规则Microsoft Endpoint Manager (警告) 。 若要了解更多信息，请参阅 [不支持警告模式的情况](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
-强烈建议将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的[Microsoft Defender](microsoft-defender-endpoint.md)中提供的高级监视和报告功能。 但是，如果您具有不包含高级监视和报告功能的另一个许可证（如 Windows Professional 或 Windows E3），您可以在触发 ASR 规则时在每个终结点生成的事件（例如，事件转发 () ）上开发自己的监视和报告工具。
+强烈建议将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的[Microsoft Defender](microsoft-defender-endpoint.md)中提供的高级监视和报告功能。 但是，如果您具有不包含高级监视和报告功能的另一个许可证（如 Windows Professional 或 Windows E3），您可以在触发 ASR 规则时在每个终结点生成的事件（例如 (事件转发) ）上开发自己的监视和报告工具。
 
 > [!TIP]
-> 若要了解有关许可Windows，请参阅 Windows 10 [Licensing and](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
+> 若要了解有关许可Windows，请参阅Windows 10[许可并](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)获取适用于 Windows 10[的批量许可Windows 10。](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
 
 可以使用以下任一方法启用攻击面减少规则：
 
@@ -77,7 +77,7 @@ ms.locfileid: "58567612"
 - [组策略](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise Intune 或 Microsoft Endpoint Manager等高级管理。 Enterprise级别管理将在启动时覆盖任何冲突的组策略或 PowerShell 设置。
+Enterprise Intune 或 Microsoft Endpoint Manager等级别管理。 Enterprise级别管理将在启动时覆盖任何冲突的组策略或 PowerShell 设置。
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>从 ASR 规则中排除文件和文件夹
 
@@ -97,9 +97,9 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 ## <a name="intune"></a>Intune
 
-1. 选择 **设备配置文件**  >  。 选择现有的终结点保护配置文件或创建新的终结点保护配置文件。 若要创建新的配置文件，请选择" **创建配置文件** "并为此配置文件输入信息。 对于 **"配置文件类型"，** 选择"**终结点保护"。** 如果已选择现有配置文件，请选择 **"属性**"，然后选择 **"设置"。**
+1. 选择 **设备配置文件** \> 。 选择现有的终结点保护配置文件或创建新的终结点保护配置文件。 若要创建新的配置文件，请选择" **创建配置文件** "并为此配置文件输入信息。 对于 **"配置文件类型"，** 选择"**终结点保护"。** 如果已选择现有配置文件，请选择 **"属性**"，然后选择 **"设置"。**
 
-2. 在终结点 **保护窗格中，** 选择Windows Defender **攻击防护"，** 然后选择"**攻击面减少"。** 选择每个 ASR 规则所需的设置。
+2. 在终结点 **保护窗格中，** 选择Windows Defender **攻击防护"，** 然后选择攻击 **面减少**。 选择每个 ASR 规则所需的设置。
 
 3. 在 **"攻击面减少异常"** 下，输入单个文件和文件夹。 还可以选择导入 **以** 导入 CSV 文件，其中包含要从 ASR 规则中排除的文件和文件夹。 CSV 文件的每一行的格式应如下所示：
 
@@ -111,14 +111,14 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 可以使用 OMA-URI Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。 以下过程使用规则 [阻止滥用攻击的易受攻击的已](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) 签名驱动程序作为示例。
 
-1. 打开Microsoft Endpoint Manager (MEM) 管理中心。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
+1. 打开管理Microsoft Endpoint Manager (MEM) 。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 创建配置文件。](images/mem01-create-profile.png)
 
 2. 在 **"创建配置文件"** 中的以下两个下拉列表中，选择以下选项：
 
-   - 在 **"平台**"中 **，Windows 10和更高版本"**
+   - 在 **"平台**"**中，Windows 10和更高版本"**
    - 在 **"配置文件类型"** 中， **选择"模板"**
 
    选择 **"自定义**"，然后单击"**创建"。**
@@ -131,7 +131,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM 基本属性。](images/mem03-1-basics.png)
 
-4. 单击“**下一步**”。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
+4. 单击“**下一步**”。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，单击 **添加**。 此时将显示两个选项："**添加"和**"**导出"。**
 
    > [!div class="mx-imgBorder"]
    > ![MEM 配置设置。](images/mem04-2-configuration-settings.png)
@@ -147,9 +147,9 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI 配置。](images/mem05-add-row-oma-uri.png)
 
-6. 单击“**保存**”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
+6. 单击“保存”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
 
-   - 单击 **"选择范围标记**"，选择作用域 (可选) ，然后单击"下一步 **"。**
+   - 单击 **"选择范围标记**"，选择范围标记 (可选) ，然后单击"下一步 **"。**
    - 或单击" **下一步"**
 
 7. 在步骤 **4"分配**"中，在" **包含** 的组 " - 对于您希望应用此规则的组 - 从以下选项中进行选择：
@@ -180,7 +180,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
     > [!NOTE]
     > 规则处于活动状态，且数分钟内有效。
 
->[!NOTE]
+> [!NOTE]
 > 冲突处理：
 >
 > 如果为设备分配了两个不同的 ASR 策略，则处理冲突的方式为分配了不同状态的规则，没有实施冲突管理，因此会出现错误。
@@ -197,7 +197,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 `Value: 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84=2|3b576869-a4ec-4529-8536-b80a7769e899=1|d4f940ab-401b-4efc-aadc-ad5f3c50688a=2|d3e037e1-3eb8-44c8-a917-57927947596d=1|5beb7efe-fd9a-4556-801d-275e5ffc04cc=0|be9ba2d9-53ea-4cdc-84e5-9b1eeee46550=1`
 
-在审核模式下 (阻止) 、禁用、警告或启用的值为：
+在审核模式下启用 (阻止) 、禁用、警告或启用的值包括：
 
 - 0 ：禁用 (禁用 ASR 规则) 
 - 1：阻止 (启用 ASR 规则) 
@@ -217,9 +217,9 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender Exploit \> **Guard**.
 
-2. 选择 **"主页**  >  **创建攻击防护策略"。**
+2. 选择 **"主页** \> **创建攻击防护策略"。**
 
 3. 输入名称和说明，选择攻击 **面** 减少，然后选择下一 **步**。
 
@@ -238,7 +238,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以Windows **攻击**  >    >  **Microsoft Defender 防病毒Microsoft Defender 攻击防护**  >  **减少的组件**。
+3. 展开树以 **Windows攻击** \>  \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \> **减少的组件**。
 
 4. 选择 **配置攻击面减少规则，** 然后选择 **已启用。** 然后，您可以为选项部分的每个规则设置单个状态。
 
@@ -247,7 +247,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    - 0 ：禁用 (禁用 ASR 规则) 
    - 1：阻止 (启用 ASR 规则) 
    - 2：审核 (评估 ASR 规则在启用后对组织) 
-   - 6： 警告 (启用 ASR 规则，但允许最终用户绕过阻止) 
+   - 6：警告 (启用 ASR 规则，但允许最终用户绕过阻止) 
 
    :::image type="content" source="images/asr-rules-gp.png" alt-text="组策略中的 ASR 规则。":::
 
@@ -261,7 +261,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 > [!WARNING]
 > 如果使用 Intune、Configuration Manager 或其他企业级管理平台管理计算机和设备，则管理软件将在启动时覆盖任何冲突的 PowerShell 设置。 若要允许用户使用 PowerShell 定义值，请使用管理平台中规则的"用户定义"选项。
 
-1. 在"管理"中"开始"菜单 **powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
+1. 在 **"管理"中"开始"菜单 powershell，** 右键 **单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
 2. 键入以下 cmdlet 之一。  (请参阅 [攻击面减少规则](attack-surface-reduction-rules.md) 了解更多详细信息，例如规则 ID.) 
 
@@ -322,7 +322,5 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 ## <a name="related-articles"></a>相关文章
 
 - [攻击面减少规则](attack-surface-reduction-rules.md)
-
 - [评估攻击面减少](evaluate-attack-surface-reduction.md)
-
 - [关于攻击面减少的常见问题解答](attack-surface-reduction.md)

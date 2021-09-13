@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤删除以前员工的用户帐户。
-ms.openlocfilehash: be7f46ebae50c078ab90b4eb00fd658e3dbe0c008bd1862fa88162b76c5e07cb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f1f307a7029bcf1cbf71a2ce85908b9ccb28ba5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169918"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步骤 7 - 删除以前员工的用户帐户
 
@@ -39,7 +39,7 @@ ms.locfileid: "53827343"
 > [!IMPORTANT]
 > 如果设置了电子邮件转发或将帐户转换成共享邮箱，则不要删除该帐户。这两项都需要帐户来定位转发或共享邮箱。
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要删除的员工的姓名。
 3. 在用户名称下，选择"删除 **用户"。** 选择此用户需要的选项，然后选择"删除 **用户"。** 如果已向其他用户提供访问此用户的电子邮件和OneDrive，则不必在此处再次执行。
 

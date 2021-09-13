@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况。
 ms.openlocfilehash: 53c9db06b27f0e697eb57525b563f11b819a6812
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162363"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 

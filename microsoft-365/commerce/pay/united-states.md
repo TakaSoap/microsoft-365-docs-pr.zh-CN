@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 291335b0a88de457e9deb931a148fe41635f4d05619d16763bd2c7cba6f6fd5b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f8f5cd4acb6bf8029ba3f953b2681d0619330776
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171105"
 ---
 # <a name="payment-information-for-united-states"></a>美国付款信息
 
@@ -38,5 +38,5 @@ Express Mail： Lockbox 842103， 1950 N. Stemmons Frwy， Ste. 5010，Dallas，
 **Bank：** 美洲银行  
 **SWIFT 代码：** BOFAUS3N  
 **ABA/路由号码** ：111 000 012  
-**帐户编号：4426587954**  
+**帐号：4426587954**  
 **帐户名称：** Microsoft

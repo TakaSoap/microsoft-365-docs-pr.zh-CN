@@ -20,11 +20,11 @@ ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解Power BI组织的用户如何使用此业务分析服务。
 ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170365"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -48,20 +48,20 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 有三种方案可能适用于您的组织内的用户：
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>方案 1：你的组织已有一Microsoft 365环境，注册此环境Power BI已拥有Microsoft 365帐户。
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>方案 1：你的组织已有一Microsoft 365环境，注册此环境Power BI已有一个Microsoft 365帐户。
 
 在此方案中，如果用户已经在租户（例如，contoso.com）中拥有工作或学校帐户但没有 Power BI，Microsoft 只会为该帐户激活计划，系统将自动通知用户如何使用 Power BI 服务。
   
-### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>方案 2：组织具有现有Microsoft 365环境，注册用户Power BI没有Microsoft 365帐户。
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>方案 2：组织具有现有Microsoft 365环境，注册此Power BI的用户没有Microsoft 365帐户。
 
-在此方案中，用户在组织的域域中拥有电子邮件地址 (例如，contoso.com) 但没有Microsoft 365帐户。 在这种情况下，用户可以注册 Power BI，并将自动获得帐户。 这使用户能够访问 Power BI 服务。 例如，如果名为 Nancy 的员工使用工作电子邮件地址 (例如 Nancy@contoso.com) 注册，Microsoft 将自动将 Nancy 添加为 Contoso Microsoft 365 环境中的用户，并激活该帐户的 Power BI。
+在此方案中，用户在组织的域域中具有电子邮件地址 (例如，contoso.com) 但没有 Microsoft 365 帐户。 在这种情况下，用户可以注册 Power BI，并将自动获得帐户。 这使用户能够访问 Power BI 服务。 例如，如果名为 Nancy 的员工使用她的工作电子邮件地址 (例如 Nancy@contoso.com) 注册，Microsoft 将自动将 Nancy 添加为 Contoso Microsoft 365 环境中的用户，并激活该帐户的 Power BI。
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>方案 3：您的组织没有连接到Microsoft 365域的邮箱环境。
 
 贵组织无需执行任何管理操作来利用Power BI。
   
 > [!IMPORTANT]
-> 如果您的组织具有多个电子邮件域，并且您喜欢所有电子邮件地址扩展名都在同一租户中，则在任何用户创建主租户之前，先将所有电子邮件地址域添加到该租户，然后再由任何用户创建主租户。 创建用户后，没有自动机制跨租户移动用户。 有关此过程详细信息，请参阅本文稍后介绍的"如果我有多个域，我能否控制用户添加到的租户[？"](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)和"将域添加到 Office 365 [Online"。](../setup/add-domain.md)
+> 如果您的组织具有多个电子邮件域，并且您喜欢所有电子邮件地址扩展名都在同一租户中，则在任何用户创建主租户之前，先向该租户添加所有电子邮件地址域，然后再创建主租户。 创建用户后，没有自动机制跨租户移动用户。 有关此过程详细信息，请参阅本文稍后介绍的"如果我有多个域，我能否控制用户添加到的租户[？"](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)和"将域添加到 Office 365 [Online"。](../setup/add-domain.md)
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>这将如何更改我目前管理组织中用户的身份的方式？
 
@@ -99,7 +99,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 ::: moniker-end
 
-4. 选择左上角的应用启动器图标，然后选择“**管理员**”。
+4. 选择左上角的应用启动器图标，然后选择“管理”。
 
     ![突出显示了管理应用的应用启动器。](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
@@ -124,11 +124,11 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>如何阻止用户加入我的现有租户？
 
-作为管理员，你可以采取一些步骤来防止用户加入现有租户。 如果阻止用户加入租户，则用户登录尝试将失败，并且将被定向到联系其组织的管理员。如果在 (之前已禁用自动许可证分发，则无需重复此过程Office 365 教育版学生、教职员工和教职员工) 。
+作为管理员，你可以采取一些步骤来防止用户加入现有租户。 如果阻止用户加入租户，则用户登录尝试将失败，并且将被定向到联系其组织的管理员。如果在注册之前已禁用自动许可证分发，则无需重复此过程 (例如，Office 365 教育版学生、教职员工和教职员工) 。
   
 以下步骤需要使用 Windows PowerShell。要开始使用 Windows PowerShell，请参阅 [PowerShell 入门指南](/powershell/scripting/overview)。
   
-若要执行以下步骤，必须安装最新版本的[Azure Active Directory V2 PowerShell 模块](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
+若要执行以下步骤，必须安装最新版本的 Azure Active Directory [V2 PowerShell 模块](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
   
 单击该链接后，选择 **“运行”** 以运行安装程序包。
   
@@ -139,7 +139,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 要启用新用户的自动租户加入，请执行下列操作： `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> 此阻止可防止组织中新用户注册Power BI。 在禁用组织的新Power BI注册之前注册许可证的用户仍将保留其许可证。 请参阅[如何删除Power BI用户的访问权限？，](#how-do-i-remove-power-bi-for-users-that-already-signed-up)了解如何为之前已注册服务的用户删除对 Power BI 的访问权限。
+> 此阻止可防止组织中新用户注册Power BI。 在组织禁用Power BI注册之前注册许可证的用户仍将保留其许可证。 请参阅[如何删除Power BI用户的访问权限？，](#how-do-i-remove-power-bi-for-users-that-already-signed-up)了解如何为之前已注册服务的用户删除对 Power BI 的访问权限。
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>如何允许用户加入我的现有租户？
 
@@ -151,7 +151,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ## <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>如何防止现有用户开始使用 Power BI？
 
-**禁用自动许可证分发：** 使用此 Windows PowerShell 脚本可禁用现有用户的自动许可证分发。 如果在 (之前已禁用自动许可证分发，则无需重复此过程Office 365 教育版学生、教职员工和教职员工) 。
+**禁用自动许可证分发：** 使用此 Windows PowerShell 脚本可禁用现有用户的自动许可证分发。 如果在安装前已禁用自动许可证分发，则无需重复此过程 (例如，Office 365 教育版学生、教职员工和教职员工) 。
   
 要禁用现有用户的自动许可证分发，请执行下列操作： `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
@@ -166,11 +166,11 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>如何为已注册的用户删除 Power BI？
 
-如果用户注册了 Power BI，但您不再希望他们有权访问 Power BI，您可以删除该用户Power BI许可证。
+如果用户注册了Power BI，但您不再希望他们有权访问 Power BI，您可以删除该用户Power BI许可证。
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -182,7 +182,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

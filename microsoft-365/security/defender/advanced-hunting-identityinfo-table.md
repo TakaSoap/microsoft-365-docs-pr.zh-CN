@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8586ce73f73eb7566d45f88a3e5ac93d222e33e0ec1ff1ece98c557fe221216e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161944"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -56,10 +56,10 @@ ms.locfileid: "53867735"
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
 | `EmailAddress` | string | 帐户的 SMTP 地址 |
-| `SipProxyAddress` | string | IP 语音 (VOIP) 会话初始 (SIP) 地址 |
+| `SipProxyAddress` | string | IP 语音 (VOIP) 会话初始 (SIP) 帐户地址 |
 | `City` | string | 帐户用户所在的城市 |
 | `Country` | string | 帐户用户所在的国家/地区 |
-| `IsAccountEnabled` | boolean | 指示帐户是否已启用 |
+| `IsAccountEnabled` | 布尔 | 指示帐户是否已启用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

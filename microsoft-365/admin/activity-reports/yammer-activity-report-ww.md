@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: 获取Yammer活动报告，并了解有关使用 Yammer发布、喜欢或阅读邮件的用户数量。
 ms.openlocfilehash: d938052da82c1f1a0c038813dd7a0d02bbb510e4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169964"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365管理中心中的报表 - Yammer活动报告
 
@@ -48,13 +48,13 @@ You can view the activities in the Yammer by choosing the **Activity** tab.<br/>
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。 此网格显示使用 Yammer 登录Microsoft 365或使用单一登录登录网络的用户。 <br/> |
 |显示名称  <br/> |用户的全名。 可以显示实际的电子邮件地址或采用匿名字段。  <br/> |
 |用户状态  <br/> |三个值之一：Activated、Deleted 或 Suspended。 这些报表显示已激活、已挂起和已删除用户的数据。 报表并不反映待定用户，因为待定用户无法发布、阅读或点赞消息。  <br/> |
-|UTC 时间 (状态)   <br/> |用户状态在更改日期Yammer。  <br/> |
+|状态更改日期 (UTC)   <br/> |用户状态在更改日期Yammer。  <br/> |
 |上次活动日期 (UTC)   <br/> | 用户发布、阅读或点帖消息的最后日期。  <br/> |
 |已发布  <br/> |用户指定的时间段内发布的消息数。 <br/>|
 |读取  <br/> |用户指定的时间段读取的对话数。  <br/> |

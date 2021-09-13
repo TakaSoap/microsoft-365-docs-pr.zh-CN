@@ -1,7 +1,7 @@
 ---
 title: 将 ServiceNow 票证集成到 Microsoft 365 Defender 门户和合规中心
-description: 了解如何从门户和合规中心在 ServiceNow Microsoft 365 Defender票证。
-keywords: 安全， Microsoft 365， M365， 合规性， 合规中心， 安全中心， ServiceNow， 票证， 任务， 一致性， 连接
+description: 了解如何从门户和合规中心在 ServiceNow Microsoft 365 Defender跟踪票证。
+keywords: 安全， Microsoft 365， M365， 合规性， 合规中心， 安全中心， ServiceNow， 票证， 任务， 数据量， 连接
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
 ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170021"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>将 ServiceNow 票证集成到 Microsoft 365 Defender 门户和合规中心
 

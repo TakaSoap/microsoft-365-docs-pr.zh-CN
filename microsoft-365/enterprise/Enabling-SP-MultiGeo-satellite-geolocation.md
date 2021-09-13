@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 本文为全局管理员或SharePoint管理员提供有关在附属SharePoint Multi-Geo启用权限的信息。
+description: 本文向全局管理员或SharePoint管理员提供有关在附属SharePoint Multi-Geo启用权限的信息。
 ms.openlocfilehash: 731c8b0125a9f53264d18de55a76f8123021e436
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170614"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>在卫星定位中启用 SharePoint 多地理位置功能
 

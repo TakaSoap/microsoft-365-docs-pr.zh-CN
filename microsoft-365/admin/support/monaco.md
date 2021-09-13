@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9dfaa873daadac15c0732babf4e5980897a5728ecab86812e63d0deaae18d45a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55850f4f10a6cb22997f3a5bc2aeefdd21cd70f1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171473"
 ---
 # <a name="contact-support-for-monaco"></a>联系摩纳哥支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53832207"
 ## <a name="phone-number"></a>电话号码
 +33 1 57 32 42 97
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 9 点到下午 5 点

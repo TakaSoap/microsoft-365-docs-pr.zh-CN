@@ -21,18 +21,18 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。
-ms.openlocfilehash: e4c5e437ae72e3d3baac4140200670684af73cf1080c7b80edca044389465684
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169957"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于Exchange Online管理员角色
 
 为了帮助你管理Microsoft 365，可以从管理中心向用户分配[](assign-admin-roles.md)管理组织的电子邮件[和Exchange权限](/exchange/exchange-admin-center)。 为此，可将其分配到Exchange管理员角色。
   
- **提示**：在将某人分配到 Exchange 管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
+ **提示**：将某人分配给Exchange管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心中查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
 
 下面是用户在被分配到管理员角色时可以执行Exchange任务：
   
@@ -54,7 +54,7 @@ ms.locfileid: "53816015"
 
 如果组织规模较大，Exchange管理员可能希望将用户分配给Exchange组。 当管理员向角色组添加用户时，该用户将获取执行某些业务功能的权限，只有该组的成员才能执行。
   
- 例如，Exchange管理员可能会将某人分配给发现管理角色组，以便他们可以在邮箱中搜索满足特定条件的数据。 若要了解更多信息，请参阅权限[Exchange Online](/exchange/permissions-exo/permissions-exo)[和管理角色组](/exchange/manage-role-groups-exchange-2013-help)。
+ 例如，Exchange管理员可能会将某人分配到发现管理角色组，以便他们可以搜索邮箱中满足特定条件的数据。 若要了解更多信息，请参阅权限[Exchange Online](/exchange/permissions-exo/permissions-exo)[和管理角色组](/exchange/manage-role-groups-exchange-2013-help)。
   
 ## <a name="learn-about-other-admin-roles"></a>了解其他管理员角色
 

@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: 了解如何使用 Microsoft 365 仪表板获取 Microsoft Forms 活动Microsoft 365 管理中心。
 ms.openlocfilehash: 59c7233a1622d0bf3ceaebd9adafb5c243d7008d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169986"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理中心中的报表 - 表单活动
 
@@ -49,7 +49,7 @@ You can view the activities in the Forms report by choosing the **Activity** tab
 
 您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |在 Microsoft Forms 上执行活动的用户的电子邮件地址。  <br/> |

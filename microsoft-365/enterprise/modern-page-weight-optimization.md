@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: 了解如何使用页面诊断工具优化 SharePoint Online 新式网站页面中的页面权重。
 ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170987"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网页上优化页面权重
 

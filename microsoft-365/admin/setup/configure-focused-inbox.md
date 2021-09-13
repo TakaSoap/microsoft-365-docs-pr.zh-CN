@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 如果你负责配置为企业中的每个人配置电子邮件设置，本文介绍了如何为用户配置重点收件箱。
 ms.openlocfilehash: 6bc33211af5ee0cd064b63f95e720f19cee196e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169733"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 

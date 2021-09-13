@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc138d3f4aea65cdddb2425c34c06f3fd33227e431ca4f1260ee784c46a25ccf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844999"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170945"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 危险和漏洞管理
 
@@ -45,12 +45,12 @@ ms.locfileid: "53844999"
 
   > 发布 | 安全更新 KB 编号和链接
   > :---|:---
-  > Windows 10版本 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) 和 [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10版本 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [和 KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10版本 1803 | [KB4493464](https://support.microsoft.com/help/4493464) [和 KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
   > Windows 10版本 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
   > Windows 10版本 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- 已[载入](/mem/intune/fundamentals/what-is-intune)Microsoft Intune Microsoft Endpoint Configuration Manager，以帮助修正由[](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)安全危险和漏洞管理。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
+- 已[载入Microsoft Intune Microsoft Endpoint Configuration Manager](/mem/intune/fundamentals/what-is-intune)以帮助修正由[](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)危险和漏洞管理 发现的威胁。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
 
   > [!NOTE]
   > 如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。

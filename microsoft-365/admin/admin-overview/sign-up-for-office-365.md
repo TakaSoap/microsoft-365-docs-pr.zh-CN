@@ -26,16 +26,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 了解你需要了解哪些信息，然后再完成注册Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 00745f4d936c0ee7f0a16270720fc87cb5dab2b179de4ce48b7628764152ab6a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169898"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
-注册 Microsoft 365 for business，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册 Microsoft 365 商业版，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
 
 ::: moniker range="o365-21vianet"
 
@@ -44,7 +44,7 @@ ms.locfileid: "53827103"
 > [!NOTE]
 > 这些服务受到中国法律的制约。
   
-注册由世纪Office 365运营的 Office 365，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册由世纪Office 365运营的 Excel，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 准备好注册了吗？ [选择计划](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -81,7 +81,7 @@ ms.locfileid: "53827103"
   
 如果从免费试用版开始，可以 [稍后购买](../../commerce/try-or-buy-microsoft-365.md)。 试用版中所有的用户和数据仍存在。
   
-无需取消试用版。 如果你不购买试用版订阅，它将自动在试用期结束时过期，并且所有信息都将被永久删除。
+无需取消试用版。 如果你不购买试用版订阅，它将自动在试用期结束时过期，并且所有信息将永久删除。
 
 ## <a name="watch-set-up-microsoft-365-business-premium"></a>观看：设置Microsoft 365 商业高级版
 
@@ -96,7 +96,7 @@ ms.locfileid: "53827103"
   
 如果从免费试用版开始，可以 [稍后购买](../../commerce/try-or-buy-microsoft-365.md)。 试用版中所有的用户和数据仍存在。
   
-无需取消试用版。 如果你不购买试用版订阅，它将自动在试用期结束时过期，并且所有信息都将被永久删除。
+无需取消试用版。 如果你不购买试用版订阅，它将自动在试用期结束时过期，并且所有信息将永久删除。
   
 ::: moniker-end
 
@@ -104,14 +104,14 @@ ms.locfileid: "53827103"
 
 - **您的订阅的地址和联系信息：**
 
-  - 使用服务所在的 **国家/地区**。 **你以后** 将不能更改国家/地区，即使在注册过程中;必须重新启动注册向导。
+  - 使用服务所在的 **国家/地区**。 **即使在注册过程中**，你以后也将无法更改国家/地区;必须重新启动注册向导。
 
   - **电子邮件** 和 **电话号码** ，以便我们在需要时就您的订阅联系您。例如，如果您忘记了密码，我们将使用此信息向您发送一个临时密码。我们还会向您指定的电子邮件地址发送您的计帐信息。
 
     > [!NOTE]
-    > 您在此处输入的电子邮件地址不同于Microsoft 365电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
+    > 你在此处输入的电子邮件地址不同于你的Microsoft 365电子邮件地址 (登录名，) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
   
-- **登录名 (用户 ID) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
+- **用户 ID (登录) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
 
     此用户 ID 是用于登录的电子邮件地址。 例如，如果您的企业名称是 Fourth Coffee，则您可能会选择使用 rob@fourthcoffee.onmicrosoft.com 作为用户 ID。
 

@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: 通过示例模型了解文档理解模型。
 ms.openlocfilehash: e89c0723b978b4d5a206119e10b5a712668b406a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170617"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>通过示例模型了解文档理解模型
 

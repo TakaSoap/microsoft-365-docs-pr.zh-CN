@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
 ms.openlocfilehash: 5427bbfc63381ab2763c0bf74adda978f4fc6af3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162079"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 

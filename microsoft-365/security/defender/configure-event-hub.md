@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.openlocfilehash: 29a369c2813cfe3c9c17b6b11f765d4d6162f8bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170932"
 ---
 # <a name="configure-your-event-hub"></a>配置事件中心
 
@@ -46,9 +46,9 @@ ms.locfileid: "58569929"
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>设置Azure Active Directory应用注册
 
-> ![注意]你必须具有管理员角色Azure Active Directory (AAD) 必须设置为允许非管理员注册应用。 还必须具有所有者或用户访问管理员角色才能为服务主体分配角色。 有关详细信息，请参阅 Microsoft Docs 门户中的创建[Azure AD &服务主体Microsoft 标识平台 Azure \| AD 应用](/azure/active-directory/develop/howto-create-service-principal-portal)。
+> ![注意]你必须具有管理员角色Azure Active Directory (AAD) 必须设置为允许非管理员注册应用。 还必须具有所有者或用户访问管理员角色才能为服务主体分配角色。 有关详细信息，请参阅门户中的创建 Azure AD &服务主体 - Microsoft 标识平台[ \| Microsoft Docs。](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-1. 创建新的注册 (在应用注册新注册) 服务Azure Active Directory \> **创建** \> **服务主体。**
+1. 创建新的注册 (在应用注册新注册) 服务Azure Active Directory \> **创建服务** \> **主体。**
 
 1. 只需使用"名称" (填写表单，无需重定向 URI) 。
 
@@ -67,7 +67,7 @@ ms.locfileid: "58569929"
 
 1. 创建事件中心命名空间：
 
-    转到 **事件 \>** 中心 添加并选择定价层、吞吐量单位和自动 (要求标准定价，在功能下) 适合你预期负载的功能。 有关详细信息，请参阅定价[- 事件 \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    转到 **"事件 \>** 中心"添加并选择定价层、吞吐量单位和自动 (要求标准定价，且在) 负载所需的功能下。 有关详细信息，请参阅定价[- 事件 \| 中心Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
     > 可以使用现有的事件中心，但吞吐量和缩放是在命名空间级别设置的，因此建议将事件中心放在其现有命名空间中。
@@ -78,9 +78,9 @@ ms.locfileid: "58569929"
 
     ![属性的图像。](../../media/759498162a4e93cbf17c4130d704d164.png)
 
-1. 创建事件中心命名空间后，你将需要将应用注册服务主体添加为读者、Azure 事件中心数据接收器，以及将登录到 Microsoft 365 Defender 的用户作为参与者 (还可以在资源组或订阅级别) 中这样做。
+1. 创建事件中心命名空间后，你将需要将应用注册服务主体添加为读者、Azure 事件中心数据接收器，以及将登录到 Microsoft 365 Defender 的用户作为参与者 (还可以在资源组或订阅级别) 进行此操作。
 
-    您可以在 IAM 事件中心 **命名空间** 访问控制 (\> **IAM**) \> **添加** 和验证角色分配 **下执行此步骤**：
+    您可以在 IAM 事件中心 **命名空间** 访问控制 \> **(添加) 角色分配** 下 \> **进行验证**：
 
     ![访问控制的图像。](../../media/9c9c29137b90d5858920202d87680d16.png)
 
@@ -88,13 +88,13 @@ ms.locfileid: "58569929"
 
 **选项 1：**
 
-可以在命名空间内创建事件中心，选择要导出的所有 (表) 事件类型将写入此 **事件** 中心。
+可以在命名空间内创建事件中心，选择要导出 (表) 事件类型将写入此 **事件** 中心。
 
 **选项 2：**
 
-你可以将每个表导出到事件中心内的不同事件中心，而不是将所有事件类型 () 表导出到一个事件中心中 (每个事件类型一个事件中心) 。
+无需将所有事件类型 (Tables) 导出到一个事件中心，你可以将每个表导出到事件中心命名空间内的不同事件中心 (每个事件类型一个事件中心) 。
 
-在此选项中，Microsoft 365 Defender创建事件中心。
+在此选项中，Microsoft 365 Defender将创建事件中心。
 
 > [!NOTE]
 > 如果你使用的事件中心命名空间不是事件中心群集的一部分，你最多只能选择在定义的每个导出 设置 中导出最多 10 个事件类型 (表) ，因为每个事件中心命名空间的 Azure 限制是 10 个事件中心。
@@ -111,7 +111,7 @@ ms.locfileid: "58569929"
 
 ![创建事件中心的图像。](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
 
-对于此事件中心 (命名空间) 您需要使用发送、侦听声明配置共享访问策略。 单击 **事件中心** 共享访问策略 + 添加，然后为它提供策略名称 (在任何其他位置) \>  \> 并检查 **发送** 和 **侦听**。
+对于此事件中心 (命名空间) 您需要使用发送、侦听声明配置共享访问策略。 单击 **事件中心** 共享访问策略 + 添加，然后为它提供策略名称 (其他位置) \>  \> 并检查 **发送** 和 **侦听**。
 
 ![共享访问策略的图像。](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
 
@@ -119,7 +119,7 @@ ms.locfileid: "58569929"
 
 ### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>设置Microsoft 365 Defender事件中心将电子邮件表发送到 Splunk
 
-1. 使用满足Microsoft 365 Defender所有角色要求的帐户 <https://security.microsoft.com> 登录以登录 ：
+1. 使用满足Microsoft 365 Defender角色要求的帐户 <https://security.microsoft.com> 登录登录 。：
 
     - 要导出到的事件中心的 Event Hub *命名空间* 资源级别或更高级别的参与者角色。 如果没有此权限，在尝试保存设置时将看到导出错误。
 

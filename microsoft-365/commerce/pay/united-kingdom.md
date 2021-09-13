@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c9943ff304b48bd05fa94161339bc745cb56150c5b49ecb9d854980f2f2e549
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ac549ca6509d8c1a2f8f272c0f8891a82bd6d38
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171109"
 ---
 # <a name="payment-information-for-united-kingdom"></a>英国付款信息
 
@@ -26,7 +26,7 @@ ms.locfileid: "53880847"
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Please pay in GBP and reference invoice number (s) on your payment payment payment.**
+**Please pay in GBP and reference invoice number (s) on your payment invoice.**
 
 如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：
 
@@ -42,7 +42,7 @@ ms.locfileid: "53880847"
 **Bank：** Bank Europe plc  
 **SWIFT 代码：** 一台或多张  
 **IBAN 代码：** IE65CITI99005170000121  
-**帐号：70000121**  
+**帐户编号：70000121**  
 **帐户名称：** MICROSOFT
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

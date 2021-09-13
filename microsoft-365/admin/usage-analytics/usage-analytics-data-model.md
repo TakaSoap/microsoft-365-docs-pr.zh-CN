@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
-description: '了解使用情况分析如何连接到 API 并提供各种服务使用情况的每月Microsoft 365趋势。  '
+description: '了解使用情况分析如何连接到 API 并提供各种 api 服务的每月Microsoft 365趋势。  '
 ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170252"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>数据Microsoft 365使用情况分析表
 
-Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分析Microsoft 365其数据的 API 来自各种普遍可用的Graph API。 应用程序使用情况Microsoft 365 API 的功能本身并不普遍可用。
+Microsoft 365使用情况分析连接到公开多维数据模型的 API。 使用情况分析Microsoft 365其数据的 API 来自各种通常可用的Graph API。 应用程序使用情况Microsoft 365 API 的功能本身并不普遍可用。
   
 > [!NOTE]
 > 有关详细信息，请参阅在[Microsoft Microsoft 365 中处理Graph。](/graph/api/resources/report) 
@@ -51,7 +51,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |租户 SharePoint Online 使用情况  <br/> |包含有关 SharePoint 网站（包括团队网站或组网站）的数据，如网站总数、网站上的文档数、各活动类型的文件数和已用存储。  <br/> |包含滚动的 12 个月（包括当前部分月份）的月份结束状态数据。  <br/> |
 |租户 OneDrive for Business 使用情况  <br/> |包含有关 OneDrive 帐户的数据，如帐户数、跨 OneDrive 的文档数、已用存储、各活动类型的文件数。  <br/> |包含滚动的 12 个月（包括当前部分月份）的月份结束状态数据。  <br/> |
 |租户Microsoft 365组使用情况  <br/> |包含有关Microsoft 365组使用情况的数据，包括邮箱、SharePoint和Yammer。  <br/> |包含滚动的 12 个月（包括当前部分月份）的月份结束状态数据。  <br/> |
-|租户 Office 激活  <br/> |包含有关 Office 订阅激活数、每个设备 (Android/iOS/Mac/PC) 的激活计数、按服务计划（例如，Microsoft 365 企业应用版、Visio、Project）的激活数的数据。  <br/> |包含滚动的 12 个月（包括当前部分月份）的月份结束状态数据。  <br/> |
+|租户 Office 激活  <br/> |包含有关 Office 订阅激活数、每个设备 (Android/iOS/Mac/PC) 的激活数、按服务计划（例如，Microsoft 365 企业应用版、Visio、Project）的激活数的数据。  <br/> |包含滚动的 12 个月（包括当前部分月份）的月份结束状态数据。  <br/> |
 |用户状态  <br/> |包含有关用户的元数据，包括用户显示名称、分配的产品、位置、部门、职务、公司。 此数据与在上一个完整的月份中分配许可证的用户有关。 每个用户都由用户 ID 唯一表示。  <br/> |此数据有关在刚刚结束的一个月内分配到许可证的用户。  <br/> |
 |用户活动  <br/> |包含有关授权用户执行的活动的每用户级别的信息。  <br/> 有关在此数据表中返回的产品中的活动的信息，请参阅[活动用户定义](active-user-in-usage-reports.md)。  <br/> |此数据有关刚刚结束的一个月内在任何服务中执行活动的用户。  <br/> |
    
@@ -67,7 +67,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |Timeframe  <br/> |月份值，此表包含该月份的数据。  <br/> |
 |UPN  <br/> |用户主体名称，用于唯一标识用户，使其能够与其他外部数据源联接。  <br/> |
 |DisplayName  <br/> |用户的显示名称。  <br/> |
-|IDType  <br/> |如果用户是使用其 Yammer ID 进行连接的 Yammer 用户，则 ID 类型设置为 1;如果他们使用 Microsoft 365 ID 连接到 Yammer，则 ID 类型设置为 0。  <br/> 值为 1 表示此用户使用其 Yammer ID Yammer而不是其Microsoft 365 ID  <br/> |
+|IDType  <br/> |如果用户是使用 Yammer ID 进行连接的 Yammer 用户，则 ID 类型设置为 1;如果用户使用 Microsoft 365 ID 连接到 Yammer Yammer，则设置为 0。  <br/> 值为 1 表示此用户使用其 Yammer ID Yammer而不是其Microsoft 365 ID  <br/> |
 |HasLicenseEXO  <br/> |如果用户分配有许可证，并且能够使用 Exchange，则设置为 true。  <br/> |
 |HasLicenseODB  <br/> |如果用户分配有许可证，并且能够使用 OneDrive for Business，则设置为 true。  <br/> |
 |HasLicenseSPO  <br/> |如果用户分配有许可证，并且能够使用 SharePoint Online，则设置为 true。  <br/> |
@@ -95,7 +95,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |**列名称**|**列说明**|
 |:-----|:-----|
 |UserID  <br/> |表示用户并启用与数据集内的其他数据表联接的唯一用户 ID。  <br/> |
-|IDType  <br/> |如果用户是使用 Yammer ID 进行连接的 Yammer 用户，则 ID 类型设置为 1;如果用户使用 Yammer ID 连接到 Yammer，则设置为 0 Microsoft 365。  <br/> 值为 1 表示此用户使用其 Yammer ID Yammer而不是其Microsoft 365 ID  <br/> |
+|IDType  <br/> |如果用户是使用 Yammer ID 进行连接的 Yammer 用户，则 ID 类型设置为 1;如果用户使用 Microsoft 365 ID 连接到 Yammer，则 ID 类型设置为 0。  <br/> 值为 1 表示此用户使用其 Yammer ID Yammer而不是其Microsoft 365 ID  <br/> |
 |Timeframe  <br/> |月份值，此表代表该月份的数据。  <br/> |
 |EXO_EmailSent  <br/> |发送的邮件数。  <br/> |
 |EXO_EmailReceived  <br/> |接收的邮件数。  <br/> |
@@ -107,13 +107,13 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |EXO_MeetingSent  <br/> |发送的会议数。  <br/> |
 |ODB_FileViewedModified  <br/> |此用户在任何 OneDrive for Business 上与其进行了交互（如创建、更新、删除、查看或下载）的文件数。  <br/> |
 |ODB_FileSynched  <br/> |此用户在任何 OneDrive for Business 上同步的文件数。  <br/> |
-|ODB_FileSharedInternally  <br/> |此用户从任何用户内部共享OneDrive for Business，或与组内可能包含外部用户 (组) 。  <br/> |
+|ODB_FileSharedInternally  <br/> |此用户从任何用户内部共享的文件数OneDrive for Business或与组内可能包含外部用户 (组) 。  <br/> |
 |ODB_FileSharedExternally  <br/> |此用户从任何 OneDrive for Business 进行外部共享的文件数。  <br/> |
 |ODB_AccessedByOwner  <br/> |用户与之交互的网站数，这些网站驻留在其自己的OneDrive for Business。  <br/> |
 |ODB_AccessedByOthers  <br/> |此用户与之交互的网站数，这些网站驻留在另一OneDrive for Business。  <br/> |
 |SPO_GroupFileViewedModified  <br/> |此用户在任何组网站上与之交互的文件数。  <br/> |
 |SPO_GroupFileSynched  <br/> |此用户在任何组网站上进行同步的文件数。  <br/> |
-|SPO_GroupFileSharedInternally  <br/> |已与组织内部用户或组内用户（可能包含外部用户 (共享的文件) 。  <br/> |
+|SPO_GroupFileSharedInternally  <br/> |已与组织内部用户或组内用户共享的文件 (可能包括外部用户) 。  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |此用户从任何组网站进行外部共享的文件数。  <br/> |
 |SPO_GroupAccessedByOwner  <br/> |用户与之交互的网站数，这些网站位于他们拥有的组网站上。  <br/> |
 |SPO_GroupAccessedByOthers  <br/> |用户与之交互的网站数，这些网站驻留在另一个用户拥有的组网站上。  <br/> |
@@ -135,28 +135,28 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |Teams_MeetingParticipate  <br/> |用户加入的会议数。  <br/> |
 |Teams_HasOtherAction  <br/> |如果用户在任务中执行了其他操作，则布尔Microsoft Teams。  <br/> |
 |YAM_MessagePost  <br/> |此Yammer发布的消息数。  <br/> |
-|YAM_MessageLiked  <br/> |用户Yammer的消息数。  <br/> |
+|YAM_MessageLiked  <br/> |此用户Yammer的消息数。  <br/> |
 |YAM_MessageRead  <br/> |此Yammer读取的邮件数。  <br/> |
 |SFB_P2PSummary  <br/> |此用户参与的对等会话数。  <br/> |
 |SFB_ConfOrgSummary  <br/> |此用户组织的会议会话数。  <br/> |
 |SFB_ConfPartSummary  <br/> |此用户参与的会议会话数。  <br/> |
 
 > [!NOTE]
-> Teams_HasOtherAction用户被视为活动用户，但组织的聊天消息、一对一呼叫、频道消息、会议总数和会议值为零。
+> Teams_HasOtherAction用户被视为活动用户，但对于组织的聊天消息、一对一呼叫、频道消息、会议总数和会议，其值为零。
    
 ### <a name="data-table---tenant-product-usage"></a>数据表 - 租户产品使用情况
 
-此表提供了每月的采用数据，这些数据针对每个产品的启用、活跃、返回和首次使用Microsoft 365。 这些Microsoft 365值表示任一产品中的活动使用情况。
+此表提供每月的采用数据，这些数据针对每个产品的启用、活跃、返回和首次使用Microsoft 365。 这些Microsoft 365值表示任一产品中的活动使用情况。
   
 |**列名称**|**列说明**|
 |:-----|:-----|
-|Product  <br/> |产品名称，已汇总该产品的使用情况信息。 Microsoft 365列中的值表示跨任何产品的活动  <br/> |
+|Product  <br/> |产品名称，已汇总该产品的使用情况信息。 Microsoft 365列中的值表示任何产品中的活动  <br/> |
 |Timeframe  <br/> |月份值。对于过去 12 个月（包括当月），每个产品每月对应一行。  <br/> |
-|EnabledUsers  <br/> |允许将产品用于时间框架值的用户数，如果用户在一个月内启用，则仍计入该用户。  <br/> |
+|EnabledUsers  <br/> |允许将产品用于时间范围值的用户数，如果用户在一个月的某一部分处于启用状态，则仍计入该用户。  <br/> |
 |ActiveUsers  <br/> |为时间范围值在产品中执行有意活动的用户数。  <br/> 如果某一用户在某一特定月份内在产品中执行了某一关键活动，则将该用户计为该月该产品的活动用户。 **租户产品活动** 表中列出了各项关键活动。  <br/> |
 |CumulativeActiveUsers  <br/> |允许使用产品，且自在新使用情况系统中启用数据收集起在截至时间范围月份前至少使用了一次产品的用户数。  <br/> |
 |MoMReturningUsers  <br/> |在时间范围月份内处于活动状态，且在上个月中也处于活动状态的用户数。  <br/> |
-|FirstTimeUsers  <br/> |自在新使用情况系统中启用数据收集起在时间范围内首次处于活动状态的用户数。  <br/> 如果自在此新报告系统中启用数据收集起，首次检测到某一用户的活动，该用户将被视为某一特定月份中首次使用的用户。 一旦计为第一次用户，即使此用户的活动存在较大的间隙，他们绝不会再次被计为首次使用的用户  <br/> |
+|FirstTimeUsers  <br/> |自在新使用情况系统中启用数据收集起在时间范围内首次处于活动状态的用户数。  <br/> 如果自在此新报告系统中启用数据收集起，首次检测到某一用户的活动，该用户将被视为某一特定月份中首次使用的用户。 一旦计为第一次用户，即使此用户的活动存在较大的间隙，他们绝不会再次被计为第一次用户  <br/> |
 |Content Date  <br/> |如果时间范围显示当前月，则此值表示数据可供使用的当前月的最后一天。  <br/> 如果时间范围显示上个月，则此值表示上个月的最后一天。  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>数据表 - 租户产品活动
@@ -206,7 +206,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>数据表 - 租户 SharePoint Online 使用情况
 
-此表包含有关 SharePoint Online 网站的使用情况或活动的逐月汇总数据。 这仅包含团队网站和组网站。 SharePoint Online 网站的结束状态在此列中表示，例如，如果用户创建了 5 个文档，并使用了 10 MB 的总存储，然后删除了一些文件，并添加了更多文件，因此在当月结束时，文件总数为 7，使用 5 MB 存储，则此表中表示的值是月份结束状态。 此表处于隐藏状态，以避免汇总时重复计数，并用作创建两个引用表的源。
+此表包含有关 SharePoint Online 网站的使用情况或活动的逐月汇总数据。 这仅包含团队网站和组网站。 SharePoint Online 网站的结束状态在此列中表示，例如，如果用户创建了 5 个文档，并使用了 10 MB 的总存储，然后删除了一些文件，并添加了更多文件，以便文件在当月结束时总共为 7 个使用 5 MB 存储，则此表中表示的值是月份结束状态。 此表处于隐藏状态，以避免汇总时重复计数，并用作创建两个引用表的源。
   
 |**列名称**|**列说明**|
 |:-----|:-----|
@@ -230,7 +230,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |SiteType  <br/> |值为"OneDrive"。  <br/> |
 |TotalSites  <br/> |在时间范围结束时存在的 OneDrive for Business 帐户数。  <br/> |
 |DocumentCount  <br/> |在时间范围结束时，所有 OneDrive for Business 帐户中存在的文档总数  <br/> |
-|Diplansed  <br/> |在时间范围结束时，所有OneDrive使用的总存储。  <br/> |
+|Diplansed  <br/> |在时间范围结束时，所有OneDrive帐户使用的总存储。  <br/> |
 |ActivityType  <br/> |记录文件活动的各种类型（任何/活动文件/共享 EXT/INT 的文件/同步的文件）的帐户数。  <br/> 任何表示执行任何文件活动  <br/> |
 |SitesWithOwnerActivities  <br/> |活动 OneDrive for Business 帐户数，其中帐户所有者在其自己的帐户上执行特定文件活动。  <br/> |
 |SitesWithNonOwnerActivities  <br/> |OneDrive for Business 帐户计数，其中文件活动由除帐户所有者之外的用户执行。  <br/> |
@@ -260,7 +260,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |SPO_FileAccessedActiveGroups  <br/> |具有SharePoint的活动的组数。  <br/> |
 |SPO_FileSyncedActiveGroups  <br/> |具有SharePoint活动的活动组数。  <br/> |
 |SPO_FileSharedInternallyActiveGroups  <br/> |内部SharePoint共享活动的组数，或具有可能包含外部用户 (的组) 。  <br/> |
-|SPO_FileSharedExternallyActiveGroups  <br/> |已SharePoint外部活动的组数。  <br/> |
+|SPO_FileSharedExternallyActiveGroups  <br/> |具有SharePoint活动的组数。  <br/> |
 |SPO_TotalActivities  <br/> |活动SharePoint数。  <br/> |
 |SPO_FileAccessedActivities  <br/> |文件SharePoint的活动数。  <br/> |
 |SPO_FileSyncedActivities  <br/> |文件SharePoint活动的数量。  <br/> |
@@ -272,7 +272,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 |YAM_TotalGroups  <br/> |组Yammer数。  <br/> |
 |YAM_ActiveGroups  <br/> |活动组Yammer数。  <br/> |
 |YAM_LikedActiveGroups  <br/> |具有Yammer的活动的组数。  <br/> |
-|YAM_PostedActiveGroups  <br/> |具有Yammer活动的活动组数。  <br/> |
+|YAM_PostedActiveGroups  <br/> |具有Yammer的活动的组数。  <br/> |
 |YAM_ReadActiveGroups  <br/> |具有Yammer的组数。  <br/> |
 |YAM_TotalActivities  <br/> |活动Yammer数。  <br/> |
 |YAM_LikedActivities  <br/> |喜欢的活动Yammer个数。  <br/> |
@@ -291,7 +291,7 @@ Microsoft 365分析连接到公开多维数据模型的 API。 使用情况分�
 
 ### <a name="data-table---tenant-office-activation"></a>数据表 - 租户 Office 激活
 
-该表提供有关跨服务计划Office订阅激活数的数据，例如，Microsoft 365 应用版企业版、Visio Project。 此外，它还提供了有关每个设备 (Android/iOS/Mac/PC) 的激活次数的数据。
+该表提供有关跨服务计划Office订阅激活数的数据，例如Microsoft 365 应用版企业版、Visio Project。 此外，它还提供了有关每个设备 (Android/iOS/Mac/PC) 的激活次数的数据。
   
 |**列名称**|**列说明**|
 |:-----|:-----|

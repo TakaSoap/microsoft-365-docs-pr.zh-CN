@@ -13,23 +13,23 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 51fe0507a209d8f51c386a0515392f38bae841d417810f0b2c89ea7cf7726cc7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a6fe01ddb5d601ffe75a22a408ea1241e67d402a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170755"
 ---
 # <a name="payment-information-for-cayman-islands"></a>维尔京群岛的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以美元支付，并参考你的发票 (付款) 付款金额。
+请仅以美元支付，并参考你的发票 (支付) 付款付款金额。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
 **Bank：** 美洲银行  
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐户编号：4426587954**  
+**帐户号：4426587954**  
 **帐户名称：** Microsoft

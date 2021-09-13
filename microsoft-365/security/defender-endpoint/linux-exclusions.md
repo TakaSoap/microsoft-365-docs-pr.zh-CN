@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6a77dd2ef76a93a09670f18bad649cdc0dc0e1b393313efdbc5c9d5ecdbc681
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 269f74b0df2b0c51217d44bdb0cc2001d0f8a34d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170969"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 
@@ -56,7 +56,7 @@ ms.locfileid: "53806888"
 文件扩展名|扩展名位于设备上任意位置的所有文件|`.test`
 文件|由完整路径标识的特定文件|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Folder|指定文件夹下的所有 (以递归) |`/var/log/`<br/>`/var/*/`
-流程|特定进程 (的完整路径或文件名指定，) 它打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
+流程|特定进程 (的完整路径或文件名指定) 及其打开的所有文件|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > 上述路径必须是硬链接，而不是符号链接，才能成功排除。 可以通过运行 来检查路径是否为符号链接 `file <path-name>` 。

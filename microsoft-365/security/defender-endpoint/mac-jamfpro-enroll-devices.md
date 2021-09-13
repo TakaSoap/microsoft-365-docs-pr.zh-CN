@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 207c1334f91ecd22385ce281b3f10763afe57810
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162296"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro
 
@@ -57,7 +57,7 @@ ms.locfileid: "58747371"
 
     ![自动生成的徽标描述的关闭。](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. 在 **"为邀请指定** 收件人>电子邮件地址"下，输入收件人 (电子邮件地址) 电子邮件地址。
+3. 在 **"为邀请指定** 收件人>电子邮件地址"下输入收件人 (电子邮件地址) 电子邮件地址。
 
     ![配置设置 2 的图像。](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "58747371"
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>注册方法 2：预阶段注册
 
-1. 在 Jamf Pro仪表板中，导航到 **"Prestage 注册"。**
+1. 在 Jamf Pro仪表板中，导航到 **Prestage 注册**。
 
     ![配置设置9 的图像。](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -89,7 +89,7 @@ ms.locfileid: "58747371"
 
 1. 选择 **"继续** "，然后从"系统首选项" **窗口安装 CA** 证书。
 
-    ![Jamf Pro enrollment1 的图像。](images/jamfpro-ca-certificate.png)
+    ![Jamf Pro注册1 的图像。](images/jamfpro-ca-certificate.png)
 
 2. 安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。
 
@@ -97,7 +97,7 @@ ms.locfileid: "58747371"
 
 3. 选择 **允许** 从 JAMF 下载。
 
-    ![Jamf Pro enrollment3 的图像。](images/jamfpro-download.png)
+    ![Jamf Pro注册3 的图像。](images/jamfpro-download.png)
 
 4. 选择 **"** 继续"继续安装 MDM 配置文件。
 

@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 部署最新版本的组织如何使用 Windows 10 和 Microsoft 365 应用的频道。
 ms.openlocfilehash: 025f6976fd578af4bf0c9a0c268f046f72ef6901
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162386"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新版本的广泛部署示例
 

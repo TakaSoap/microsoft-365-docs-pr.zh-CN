@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: 157ae1b8fb36e9bfb13f6e496a7bab4772e7bef851ba0c917d3cfc7e7762478a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 227ca3e58a4c6278278048deeffcf68c1d659546
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169769"
 ---
 # <a name="remove-a-domain"></a>删除域
 
@@ -89,7 +89,7 @@ ms.locfileid: "53825711"
 
 ::: moniker-end
 
-2. 转到 **"用户** \> **""活动** 用户"，然后从列表中选择你的帐户。
+2. 转到 **"用户** \> **""** 活动用户"，然后从列表中选择你的帐户。
 
 3. 在" **帐户"** 选项卡上， **选择"管理用户名**"，然后选择其他域。
 
@@ -152,11 +152,11 @@ ms.locfileid: "53825711"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果域未在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）被引用，Microsoft 365删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果域未在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）被引用，Microsoft 365删除域。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
 
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain)。
 
-## <a name="still-need-help"></a>仍然需要帮助？
+## <a name="still-need-help"></a>是否仍需要帮助？
 
 ::: moniker range="o365-worldwide"
 

@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: 了解如何在 Exchange Online 中 (IRM) IRM (AD RMS) Active Directory 权限管理服务。
+description: 了解如何在 Exchange Online 中配置信息权限管理 (IRM) ，以使用 AD RMS (Active Directory 权限管理服务) 服务器。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169684"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
 
@@ -42,7 +42,7 @@ ms.locfileid: "58572055"
 
 - 有关如何安装和配置 Windows PowerShell 以及连接到服务的详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中的 Exchange[键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange 管理中心的键盘[Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。
@@ -168,4 +168,4 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 - 使用 **Test-IRMConfiguration** cmdlet 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration) 中的"示例 1"。
 
-- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在Outlook 网页版 中撰写新邮件，然后使用 I (RM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) 进行) 。
+- 在"更多选项"图标Outlook 网页版扩展菜单中选择"设置权限"选项，在Outlook 网页版 中撰写新邮件，然后使用 I (RM 进行 ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif)) 。

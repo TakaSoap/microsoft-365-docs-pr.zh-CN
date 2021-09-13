@@ -17,11 +17,11 @@ ms.custom:
 recommendations: false
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
 ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171505"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f5ac8590969eabec06753f1614fed58a63c5991f703b085bc0fbe167acb2e497
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8a7e40b7aab787b83cf82f8c4a18f58e3101b068
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170719"
 ---
 # <a name="payment-information-for-hungary"></a>匈牙利的付款信息
 
@@ -32,5 +32,5 @@ ms.locfileid: "53802834"
 **SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码：185008**  
-**帐户号：12207591**  
+**帐户编号：12207591**  
 **帐户名称：** MICROSOFT

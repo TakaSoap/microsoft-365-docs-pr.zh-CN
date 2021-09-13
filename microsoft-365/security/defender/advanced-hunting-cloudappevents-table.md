@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32afec539e63c9ce411bb49c52a2facc7f99e9eae84bff3e0bf65f670f1b4dd0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161957"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -58,7 +58,7 @@ ms.locfileid: "53857239"
 | `OSPlatform` | string | 在设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
 | `IsAnonymousProxy` | string | 指示 IP 地址是否属于已知匿名代理 |
-| `CountryCode` | string | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码 |
+| `CountryCode` | string | 指示客户端 IP 地址已异地地理位置的两个字母的代码 |
 | `City` | string | 已异地分配客户端 IP 地址的城市 |
 | `Isp` | string | Internet 服务提供商 (ISP) IP 地址相关联 |
 | `UserAgent` | string | 来自 Web 浏览器或其他客户端应用程序的用户代理信息 |

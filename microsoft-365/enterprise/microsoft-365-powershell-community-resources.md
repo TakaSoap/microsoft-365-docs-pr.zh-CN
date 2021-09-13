@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: 本文提供社区资源以连接到你的同行，并获取有关 PowerShell for Microsoft 365。
+description: 本文提供社区资源，以连接到你的同行并获取有关 PowerShell for Microsoft 365。
 ms.openlocfilehash: 1546ac553b9ae97c8ef6ccd93d11f996f90fdaf7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162347"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>PowerShell 的 Microsoft 365 社区资源
 

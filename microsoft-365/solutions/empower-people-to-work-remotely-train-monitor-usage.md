@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 培训用户，并确保快速处理问题。
-ms.openlocfilehash: 6343a4193a78462d843d808246dcc95126661f02a3037d3c1502fa9b8ef9a33a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170430"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>步骤 6：培训员工并解决使用反馈
 

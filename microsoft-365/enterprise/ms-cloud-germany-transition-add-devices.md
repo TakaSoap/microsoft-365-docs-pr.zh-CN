@@ -17,13 +17,13 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365有关服务的其他设备信息。
+description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (Microsoft 云) Office 365服务的其他设备信息。
 ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745693"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171321"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
@@ -35,7 +35,7 @@ ms.locfileid: "58745693"
 [![Azure AD 设备Re-Join Flow。 ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-如果用户是设备管理员，Windows 10 Azure AD 取消注册设备，然后通过三个步骤重新加入该设备。
+如果用户是设备管理员，Windows 10 Azure AD 注销设备，然后通过三个步骤重新加入该设备。
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>步骤 1：确定设备是否加入 Azure ID
 
@@ -65,7 +65,7 @@ ms.locfileid: "58745693"
 
 *设置 >帐户>其他>凭据未知> Microsoft 帐户添加用户*
 
-有关详细信息，请参阅 [关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles?)。
+有关详细信息，请参阅[关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles?)。
 
 对于重新加入，此步骤中可以使用组织的任何工作帐户的凭据。
 
@@ -107,11 +107,11 @@ ms.locfileid: "58745693"
 
 - 从Microsoft Authenticator应用，用户可以转到"设置 >**注册"。** 在这里，用户可以注销和重新注册其设备。
 
-- 从公司门户，用户可以转到"**设备**"选项卡并删除设备。 此后，使用 公司门户。
+- 从公司门户，用户可以转到"**设备**"选项卡并删除设备。 此后，使用"设置"公司门户。
 
 - 用户还可以注销和重新注册，从帐户设置页删除帐户，然后读取工作帐户。
 
-若要使用 Android 应用注销和重新注册设备，Microsoft Authenticator应用：
+若要使用应用注销和重新注册 Android 上的设备，Microsoft Authenticator应用：
 
 1. 打开Microsoft Authenticator应用，然后转到 **"设置"。**
 2. 选择 **"设备注册"。**
@@ -140,7 +140,7 @@ ms.locfileid: "58745693"
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>步骤 1：如果存在，请从应用中删除Microsoft Authenticator帐户
 
-1. 点击"登录"应用中Microsoft Authenticator帐户。
+1. 点击"管理"应用中Microsoft Authenticator帐户。
 2. 点击 **设置** 右上角的"页面"图标。 如果未看到"设置"图标，则可能不会使用最新版本的 Microsoft Authenticator。
 3. 点击" **删除帐户"** 按钮。
 4. 点击 **此设备上的所有应用**。
@@ -153,7 +153,7 @@ ms.locfileid: "58745693"
 
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>步骤 3：如有必要从个别应用注销
 
-用户可以转到单个应用（如 Outlook、Teams 和 OneDrive，并从这些应用中删除帐户。
+用户可以转到单个应用（如 Outlook、Teams 和 OneDrive）并从这些应用中删除帐户。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -167,7 +167,7 @@ ms.locfileid: "58745693"
 
 **我如何知道我的所有设备都注册到公共云中？**
 
-若要检查你的设备是否已在公有云中注册，你应该将设备列表从 Azure AD 门户导出并下载到 Excel 电子表格。 然后，使用 _registeredTime_ 列 (在组织通过迁移过程的第 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)阶段) 注册的设备。
+若要检查你的设备是否已在公有云中注册，你应该将设备列表从 Azure AD 门户导出并下载到 Excel 电子表格。 然后，使用 registeredTime (在组织通过迁移过程的第 [9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)阶段) 使用 _registeredTime_ 列筛选注册的设备。
 
 **是否仍需要按照使用基于 DNS 的 DNS 为 Microsoft 创建 DNS 记录Windows [DNS 名称](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)？**
 
@@ -186,7 +186,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 入门：
 
-- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云Office 365新的德国数据中心区域部署服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 - [迁移期间客户体验](ms-cloud-germany-transition-experience.md)

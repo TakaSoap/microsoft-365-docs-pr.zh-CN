@@ -26,11 +26,11 @@ search.appverid:
 - MOE150
 description: 按照以下步骤阻止以前员工的移动设备访问。
 ms.openlocfilehash: 8c5b279bc85d6c99fd8722d1f9fd4d4b3757e793
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169922"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>步骤 5 - 擦除和阻止前员工的移动设备
 
@@ -42,7 +42,7 @@ ms.locfileid: "58564706"
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
 3. 选择用户，在"**移动设备"下**，选择"**查看详细信息"。**
 4. 在"**移动设备详细信息"** 页上 **的"移动设备**"下，选择移动设备，选择"**擦除数据** ![ 擦除设备"， ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) 然后选择"阻止 **"。**
-5. 选择 **保存**。
+5. 选择“**保存**”。
    > [!TIP]
    > 请确保从本地 Blackberry Enterprise服务中删除或禁用用户。 还应禁用该用户的所有 BlackBerry 设备。 有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。
 

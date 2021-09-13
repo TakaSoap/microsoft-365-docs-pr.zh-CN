@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: c0147071c79acd29db52f86aebdff2dfcf5762f0
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170967"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -34,7 +34,7 @@ ms.locfileid: "58745057"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
-Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，你可以访问警报 **队列中的所有警报**。
+Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，并且可以访问警报 **队列中的所有警报**。
 
 可以通过在警报队列中选择警报或单个设备的设备页面的警报选项卡来管理警报。 
 
@@ -115,7 +115,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自与安全管理员) 无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报进行处理，则他们可以将警报分配给"已解决"队列。 (
+或者，如果团队领导知道警报是无害的、来自与安全管理员 (无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。
 
 ## <a name="alert-classification"></a>警报分类
 

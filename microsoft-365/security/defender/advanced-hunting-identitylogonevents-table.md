@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7f5c40030f019f309b143db9271e62b8ba8172c83d10d479b2df60277394eca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cd0c0f371c73a515704791e829be7266d400580
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161943"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -55,7 +55,7 @@ ms.locfileid: "53799474"
 | `FailureReason` | string | 说明所记录操作失败原因的信息 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
+| `AccountUpn` | string | 帐户 (UPN) 的用户主体名称 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
@@ -67,10 +67,10 @@ ms.locfileid: "53799474"
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
 | `DestinationPort` | string | 相关网络通信的目标端口 |
-| `TargetDeviceName` | string | 已记录 (的) 的设备的完全限定域名和 FQDN |
+| `TargetDeviceName` | string | 已记录 () 的设备的完全限定域名和 FQDN |
 | `TargetAccountDisplayName` | string | 已记录操作应用于的帐户的显示名称 |
 | `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |
-| `Isp` | string | Internet 服务提供商 (ISP) 与终结点 IP 地址关联 |
+| `Isp` | string | Internet 服务提供商 (ISP) 与终结点 IP 地址相关联 |
 | `ReportId` | long | 事件的唯一标识符 |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |
 

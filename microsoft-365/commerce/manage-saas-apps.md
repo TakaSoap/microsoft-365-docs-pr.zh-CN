@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: 了解如何在应用中激活和管理第三方Microsoft 365 管理中心。
 ms.date: 04/15/2021
-ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: df3c5372396394f1b2c80bb07aca0a79d8883bf4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171122"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理组织的第三方应用订阅
 
-可以在新应用中管理第三方应用的许可证和Microsoft 365 管理中心。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
+可以在新应用中管理第三方应用的许可证和<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心。</a> 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何获取软件型服务应用
 
@@ -124,4 +125,4 @@ ms.locfileid: "53831431"
 
 1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. 查找并选择要管理的应用。
-3. 在 **"设置 &操作"** 下，选择"**取消订阅"。**
+3. 在 **设置 &操作"** 下，选择"**取消订阅"。**

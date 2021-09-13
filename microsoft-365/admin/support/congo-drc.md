@@ -1,5 +1,5 @@
 ---
-title: '刚果（金） (的支持) '
+title: '刚果（金） (支持) '
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c6b15fd31d6d801d403681df972fe86c8b0b38e721e23f706ebcb149d15803dd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 730d55b25a0e55ff87accbc77d495b2c216048a8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171230"
 ---
 # <a name="contact-support-for-congo-drc"></a>联系刚果（金） (支持) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "53797502"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 9 点到下午 5 点

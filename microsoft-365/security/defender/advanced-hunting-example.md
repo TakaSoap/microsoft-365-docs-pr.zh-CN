@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365
+title: Microsoft Defender for Office 365 高级搜寻示例
 description: 使用高级搜寻开始搜索电子邮件威胁
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 91bd008d44495e4c304b353fcbc22785915501e7cfbe000e5cc70eebe5842b7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3ac49b4afde0951e7a034c5c11114afbc52c293
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170045"
 ---
-# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
+# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 高级搜寻示例
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "53833324"
 
 1. 使用名称中的"Anti"配置所有内容。
    - 反恶意软件
-   - 防钓鱼
+   - 防网络钓鱼
    - 反垃圾邮件
 2. 设置名称中保险箱"值的所有内容。
    - 安全链接
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) 在查询面板顶部选择&quot;查询&quot;下，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="&quot;高级搜寻&quot; (在&quot;搜寻) &quot;下，其中&quot;查询&quot;处于查询面板顶部，并运行 Kusto 查询以捕获过去 7 天内的 ZAP 操作。":::
 
 来自此查询的数据将在查询自身下方的结果面板中显示。 结果包括可自定义结果集内的信息，如"DeviceName"、"AccountDisplayName"和"<3>pTime"。 也可以为记录导出结果。 如果您再次需要查询，请选择 **保存** > **“另存为”**，然后将查询添加到查询，共享或社区查询列表中。
 

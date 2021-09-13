@@ -13,13 +13,13 @@ ms.collection:
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
-description: 设置租户的Microsoft 365。
+description: 为租户设置租户Microsoft 365。
 ms.openlocfilehash: d041c87e12bfb3025592cb14cda5413c805dc880
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170582"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>租户的租户Microsoft 365
 
@@ -31,13 +31,13 @@ ms.locfileid: "58354208"
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>设置 Microsoft 365 租户
 
-在确保优化网络以允许本地和远程工作人员访问 Microsoft 365 后，下一项重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
+在确保优化网络以同时针对本地和远程工作人员访问 Microsoft 365 后，下一个重大任务是为 DNS 域名、公共服务以及支持安全用户登录的标识基础结构规划并配置 Microsoft 365 租户。
 
 ### <a name="plan"></a>计划
 
 若要规划租户实施，请执行：
 
-- [了解 Azure AD 租户Azure Active Directory (、许可证) 订阅、许可证](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [了解 Azure AD 租户Azure Active Directory (订阅、) 许可证](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [了解如何使用第三方 SSL 证书](plan-for-third-party-ssl-certificates.md)
 - [了解租户租户Microsoft 365 Azure AD 服务集成的方式](integrated-apps-and-azure-ads.md)
 - [规划客户端应用支持](microsoft-365-client-support-certificate-based-authentication.md)
@@ -55,7 +55,7 @@ ms.locfileid: "58354208"
 
 ### <a name="move-a-tenants-geographic-locations"></a>移动租户的地理位置
 
-Microsoft 继续打开新的数据中心地理位置， (地理位置) 服务Microsoft 365地理位置。 这些新数据中心地理位置增加了容量和计算资源，以支持客户需求和使用情况增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。
+Microsoft 继续打开新的数据中心地理位置 (地理位置) 服务Microsoft 365地理位置。 这些新数据中心地理位置增加了容量和计算资源，以支持客户需求和使用情况增长。 此外，新的数据中心地理位置为核心客户数据提供地理位置内数据驻留。
 
 有关详细信息，请参阅将[核心数据移动到Microsoft 365地理位置](moving-data-to-new-datacenter-geos.md)。
 

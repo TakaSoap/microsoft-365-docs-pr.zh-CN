@@ -22,12 +22,12 @@ search.appverid:
 description: 了解如何在由世纪互联运营的 Office 365 中付款后，向世纪互联发票管理系统提交发票申请。
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: b39794db35e3077021761776cafaf6ca6d6a9cdf695153e8942dfb137af248f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
-ms.translationtype: HT
+ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170313"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>申请由世纪互联运营的 Office 365 的发票
 

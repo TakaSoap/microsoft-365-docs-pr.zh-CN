@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: 配置安全性和基础结构，使你的员工能够随时随地远程工作。
 ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161631"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在开发/测试环境中配置具有安全隔离的团队
 

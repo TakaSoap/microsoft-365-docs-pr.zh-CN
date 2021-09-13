@@ -11,13 +11,13 @@ ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
-description: 了解如何在组织中规划并运行适用于Microsoft Viva主题的试用计划。
-ms.openlocfilehash: 529d201203c45a5b3f39d1c6ac0f1a3a7f691aaba23098dafc32a42911247aca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何在组织中规划并运行 Microsoft Viva 主题的试用计划。
+ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170975"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>运行试用Microsoft Viva主题
 
@@ -54,12 +54,12 @@ ms.locfileid: "53834679"
 
 规划对于有效试用 Viva 主题至关重要。 试用期有限，必须包括主题发现和探索主题质量、管理和最终用户体验。
 
-#### <a name="discovery"></a>发现
+#### <a name="discovery"></a>Discovery
 
 在试用期间，主题发现配置有两个高级策略选项：
 
 - 索引所有或大部分联机SharePoint内容。
-  - 大型租户最多可能需要两周时间才能完全编制索引。 虽然主题将在这一期间逐步生成，但完整索引可能占用试用期的一半。
+  - 大型租户最多可能需要两周时间才能完全编制索引。 虽然主题将在这一期间逐步生成，但完全索引可能占用试用期的一半。
   - 对于具有大量数据的租户，此选项可生成大量主题，可能数万个。
 
 - 标识要编制索引SharePoint网站子集。
@@ -72,7 +72,7 @@ ms.locfileid: "53834679"
 对于大多数组织，第二个策略可产生最佳结果。
 
 > [!NOTE]
-> 由于 AI 需要的文档数量，我们建议你在生产租户上运行 Viva 主题试用版。 这一期间不会影响租户的性能。 只有具有试用版许可证的用户才能访问 Viva 主题用户体验。
+> 由于 AI 需要的文档数量，我们建议你在生产租户上运行 Viva 主题试用版。 这一期间不会影响租户的性能。 只有拥有试用版许可证的用户才能访问 Viva 主题用户体验。
 
 #### <a name="roles"></a>角色
 
@@ -86,7 +86,7 @@ ms.locfileid: "53834679"
 
 #### <a name="expected-topics"></a>预期主题
 
-记录预期由 AI 生成的主题会很有用，即使这仅基于假设。 为定义的网站子集编制索引时，此任务SharePoint可以轻松地识别其 SMES。
+记录预期由 AI 生成的主题会很有用，即使这仅基于假设。 为定义子集编制索引时，此任务SharePoint可以轻松地识别其 SMES。
 
 拥有记录的列表将帮助你：
 
@@ -114,7 +114,7 @@ ms.locfileid: "53834679"
 请考虑以下因素：
 
 - 若要使 Viva 主题提供最大值，主题中的内容需要组合 AI 定义的内容和人工设置的内容。
-- 所有用户体验都经过"权限修整" (包括知识经理在"管理主题" **页上的视图**) 。 只有在用户有权查看用于生成该主题的一些资源时，他们才能看到主题。 这意味着不同的用户可能会在同一主题页面上看到不同的内容。
+- 所有用户体验都经过"权限修整" (包括知识经理在"管理主题" **页上的**) 。 只有在用户有权查看用于生成该主题的一些资源时，他们才能看到主题。 这意味着不同的用户可能会在同一主题页面上看到不同的内容。
 - 用户可能会看到多个主题在"管理主题"页 **中具有相同的** 名称。 这些主题不一定重复，但可能是由于在数据的多个上下文中使用的单个术语，例如两个不同的项目使用的项目代码名称。
 
 ## <a name="after-a-trial"></a>试用后
@@ -123,9 +123,9 @@ ms.locfileid: "53834679"
 
 ### <a name="proceed-to-production-use"></a>继续生产使用
 
-为了确保服务的连续性，必须购买所需的许可证数并将这些许可证分配给用户。 试用期结束时没有完整许可证的试用版用户将无法访问任何 Viva Topics 体验。
+为了确保服务的连续性，必须购买所需数量的许可证，并将这些许可证分配给用户。 试用期结束时没有完整许可证的试用版用户将无法访问任何 Viva Topics 体验。
 
-### <a name="dont-proceed-to-production-use"></a>请勿继续生产使用
+### <a name="dont-proceed-to-production-use"></a>不要继续生产使用
 
 如果你在试用后不购买许可证：
 
@@ -137,4 +137,4 @@ ms.locfileid: "53834679"
 
 ## <a name="see-also"></a>另请参阅
 
-[开始推动采用 Microsoft Viva 主题](topics-adoption-getstarted.md)
+[开始推动采用Microsoft Viva主题](topics-adoption-getstarted.md)

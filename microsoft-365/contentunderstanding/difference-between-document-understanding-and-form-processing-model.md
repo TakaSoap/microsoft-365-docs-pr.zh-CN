@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解文档理解模型和表单处理模型之间的主要区别。
-ms.openlocfilehash: 4927f29eecc2ee0dfa0e2207531d8f5f5616a68e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171019"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -70,11 +70,11 @@ ms.locfileid: "58400291"
 
 ## <a name="comparison-of-forms-processing-and-document-understanding"></a>表单处理和文档理解的比较
 
-使用下表了解何时使用表单处理，何时使用文档理解:
+使用下表了解何时使用表单处理以及何时使用文档理解。
 
 | 功能 | 表单处理 | 文档理解 |
 | ------- | ------- | ------- |
-| 模型类型 - 何时使用哪种模型 | 用于非结构化的文件格式，例如表单内容 (如发票或采购订单) 的 PDF，其布局和格式是相似的。  | 用于半结构化文件格式 - 例如，Office 文档在布局上存在差异但仍类似的信息需要提取。 |
+| 模型类型 - 何时使用每种模型 | 用于非结构化的文件格式，例如表单内容 (如发票或采购订单) 的 PDF，其布局和格式是相似的。  | 用于半结构化文件格式 - 例如，Office 文档在布局上存在差异但仍类似的信息需要提取。 |
 | 模型创建 | 在 AI 生成器中创建的模型，可从 SharePoint 文档库中无缝访问。| 在 SharePoint 的新站点--内容中心中创建的模型。 |
 | 分类类型| 定式分类器用于为系统提供要提取的数据的线索。| 具有使用计算机教学来分配数据提取文档位置可选提取器的可培训分类器。|
 | 位置 | 受过使用单个文档库的培训。| 可应用于多个库。|
@@ -87,9 +87,8 @@ ms.locfileid: "58400291"
 | 支持的语言| 英语 <br>2021 年的晚些时候推出：拉丁文字母语言 | 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
 
 ## <a name="see-also"></a>另请参阅
+
 [培训：使用 AI 生成器提高业务绩效](/learn/paths/improve-business-performance-ai-builder/?source=learn)
-
-
 
 [文档理解概述](document-understanding-overview.md)
 

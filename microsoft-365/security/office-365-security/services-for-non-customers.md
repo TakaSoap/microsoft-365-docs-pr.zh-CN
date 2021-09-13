@@ -18,11 +18,11 @@ description: 为了维护用户对使用电子邮件的信任，Microsoft 已出
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170005"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>非客户向邮箱发送邮件的服务Microsoft 365
 
@@ -63,7 +63,7 @@ Microsoft 为向收件人发送邮件时遇到问题的人提供了Microsoft 365
 
 ## <a name="anti-spam-ip-delist-portal"></a>反垃圾邮件 IP 除名门户
 
-这是一个自助服务门户，可用于将自己从阻止的Microsoft 365列表中。 如果您尝试向电子邮件地址位于 Microsoft 365且您认为不应发送电子邮件的收件人时收到错误消息，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+这是一个自助服务门户，可用于将自己从阻止的Microsoft 365列表中。 如果您尝试向电子邮件地址位于 Microsoft 365 且您认为不应发送电子邮件的收件人时收到错误消息，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告
 

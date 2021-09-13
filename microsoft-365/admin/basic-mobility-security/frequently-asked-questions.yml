@@ -19,27 +19,27 @@ metadata:
   search.appverid:
   - MET150
   description: 有关基本移动性和安全性的常见问题。
-  ms.openlocfilehash: f899aecd313ffd4fbc1d94d44f2a1b9c41780984a9c8eb8383a51da661d80be8
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53826755"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59169885"
 title: '基本移动性和安全性常见问题解答 (常见问题) '
-summary: 本文包含有关基本移动性和安全性的常见问题，这是一项可帮助您管理并保护移动设备在 Microsoft 365。 如果找不到问题的答案，请通过在此页面上留下评论来告诉我们，以便我们考虑将问题添加到本文。
+summary: 本文包含有关基本移动性和安全性的常见问题，这是一项可帮助您管理并保护 Microsoft 365 中的移动设备的功能。 如果找不到问题的答案，请通过在此页面上留下评论来告诉我们，以便我们考虑将问题添加到本文。
 sections:
 - name: 已忽略
   questions:
   - question: >
-      如何获取基本移动性和安全性？ 我在"管理"中Microsoft 365 管理中心
+      如何获取基本移动性和安全性？ 我在"管理"中看不到Microsoft 365 管理中心
     answer: >
-      1.  通过进入"安全与合规"Office 365"激活[&"。](https://protection.office.com/)
+      1.  通过进入"安全与合规["Office 365"&"激活基本移动性](https://protection.office.com/)和安全性。
 
 
       2.  转到"数据丢失防护">设备管理"。
   - question: >
       如何开始使用基本移动性和安全性中的设备管理？
-    answer: "基本移动性和安全性入门有四个步骤： \n\n1. 通过访问\"安全与合规\"Office 365[激活&移动性和安全性](https://protection.office.com/)。\n\n2. 转到\"数据丢失防护\">\"设备>\"策略\"。\n    \n3. 创建设备管理策略，并应用于在安全组中设置的用户组。 建议首先将策略部署到小型测试组。 有关详细信息，请参阅在基本移动性和安全性中 [创建设备安全策略](create-device-security-policies.md)。\n\n4. 如果已应用了策略的用户尝试访问数据，系统会提示他们注册Microsoft 365。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。\n\n有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。\n"
+    answer: "基本移动性和安全性入门有四个步骤： \n\n1. 通过访问\"安全与合规\"Office 365激活&[移动性和安全性](https://protection.office.com/)。\n\n2. 转到\"数据丢失防护\">设备管理>设备策略。\n    \n3. 创建设备管理策略，并应用于在安全组中设置的用户组。 建议首先将策略部署到小型测试组。 有关详细信息，请参阅在基本移动性和安全性中 [创建设备安全策略](create-device-security-policies.md)。\n\n4. 如果已应用了策略的用户尝试访问数据，系统会提示他们注册Microsoft 365。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。\n\n有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。\n"
   - question: >
       我尝试设置基本移动性和安全性，但它似乎卡住。 服务Microsoft 365运行状况已显示"设置"一段时间。 我该如何操作？
     answer: >
@@ -50,11 +50,11 @@ sections:
   - question: >
       Intune 与基本移动性和安全性之间有什么区别？
     answer: >
-      基本移动性和安全性由 Intune 服务托管。 它是 Intune 服务的一个子集，作为对 Microsoft 365 的一个附加优势，也是用于管理组织中设备的内置基于云的解决方案。 有关两种服务的并行比较，可帮助你决定使用 Intune 或 Microsoft 365 的基本移动性和安全性是否最适合你，请参阅在基本移动性安全性和[Intune](choose-between-basic-mobility-and-security-and-intune.md)之间选择。
+      基本移动性和安全性由 Intune 服务托管。 它是 Intune 服务的一个子集，是一项额外的Microsoft 365，也是一个基于云的内置解决方案，用于管理组织中设备。 有关两种服务的并行比较，可帮助你确定使用 Intune 或 Microsoft 365 的基本移动性和安全性是否最适合你，请参阅在基本移动性安全性和[Intune](choose-between-basic-mobility-and-security-and-intune.md)之间选择。
   - question: >
       策略如何适用于基本移动性和安全性？ 如何设置它们？ 禁用它们？
     answer: >
-      完成基本移动性和安全性的初始设置后，创建策略，并应用于安全与合规&组。 策略要求策略的用户在基本移动性和安全性中注册其设备，然后设备才能访问Microsoft 365数据。 您设置的策略决定了移动设备的设置，例如，必须重置密码多久或是否需要数据加密。 有关详细信息，[请参阅基本移动性](create-device-security-policies.md)和安全性中的创建设备安全策略   Microsoft 365 合规中心。 [](../../compliance/microsoft-365-compliance-center.md)
+      完成基本移动性和安全性的初始设置后，创建策略，并应用于安全与合规&组。 策略要求策略的用户在基本移动性和安全性中注册其设备，然后才能使用设备访问Microsoft 365数据。 您设置的策略决定了移动设备的设置，例如，必须重置密码多久或是否需要数据加密。 有关详细信息，[请参阅基本移动性](create-device-security-policies.md)和安全性中的创建设备安全策略   Microsoft 365 合规中心。 [](../../compliance/microsoft-365-compliance-center.md)
 
 
       有关创建和部署设备策略的分步说明，请参阅在基本移动性和安全性中创建 [设备安全策略](create-device-security-policies.md)。
@@ -62,9 +62,9 @@ sections:
 
       如果要将特定组的用户排除在不受策略影响之外，可以将组添加到排除组。
   - question: >
-      我能否从Exchange ActiveSync管理切换到基本移动性和安全性Microsoft 365？
+      我能否从Exchange ActiveSync切换到基本移动性和安全性Microsoft 365？
     answer: >
-      如果您已经使用 Exchange ActiveSync策略来管理移动设备，可以按照设置基本移动性和安全性的步骤开始使用基本移动性和安全性。 有关详细信息，请参阅保护[用户和设备访问和](../../compliance/protect-access-to-data-and-services.md)[设置基本移动性和安全性](set-up.md)。
+      如果已在使用移动Exchange ActiveSync管理移动设备，可以按照设置基本移动性和安全性的步骤开始使用基本移动性和安全性。 有关详细信息，请参阅保护[用户和设备访问和](../../compliance/protect-access-to-data-and-services.md)[设置基本移动性和安全性](set-up.md)。
 
 
       当您在基本移动性和安全性中创建的策略应用于用户组时，这些策略会覆盖 Exchange ActiveSync 移动设备邮箱策略以及之前在 Exchange 管理中心为这些用户创建的设备访问规则。

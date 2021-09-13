@@ -15,15 +15,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，以将数据从组织的物理密码系统导入Microsoft 365。 这允许你在内部风险管理策略中使用此数据，以帮助你检测特定用户对可能向组织指示可能的内部威胁的物理建筑物的访问。
 ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170655"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以在预览版中导入 () 
 
-可以在 Microsoft 365 合规中心 中设置数据连接器以导入物理密码数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部[](insider-risk-management.md)恶意活动或数据盗窃的攻击。
+可以在 Microsoft 365 合规中心 中设置数据连接器，以导入物理密码数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部[](insider-risk-management.md)恶意活动或数据盗窃的攻击。
 
 设置物理保护连接器包括以下任务：
 
@@ -39,9 +39,9 @@ ms.locfileid: "58567924"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在步骤 3 中为在步骤 3 中创建物理密码连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到组织管理角色组Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
+- 必须在步骤 3 中为在步骤 3 中创建物理密码连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到邮箱管理角色组Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"管理角色[组中的角色组](/Exchange/permissions-exo/role-groups#create-role-groups)"[](/Exchange/permissions-exo/role-groups#modify-role-groups)一文的"创建角色组"或"修改角色Exchange Online"。
 
-- 您需要确定如何每天从组织的物理密码系统 (检索或导出数据) 并创建步骤 2 中所述的 JSON 文件。 在步骤 4 中运行的脚本将 JSON 文件的数据推送到 API 终结点。
+- 您需要确定如何每天从组织的物理密码系统 (中检索或导出数据) 并创建步骤 2 中所述的 JSON 文件。 在步骤 4 中运行的脚本将 JSON 文件的数据推送到 API 终结点。
 
 - 在步骤 4 中运行的示例脚本将 JSON 文件的物理保护数据推送到连接器 API，以便内部风险管理解决方案可以使用该数据。 本示例脚本在任何 Microsoft 标准支持计划或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
 
@@ -154,7 +154,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
    状态页还包含指向脚本的链接。 请参阅此脚本，了解如何将 JSON 文件张贴到 API 终结点。
 
-7. 单击“**完成**”。
+7. 单击“完成”。
 
    新连接器显示在"连接器"选项卡 **上的** 列表中。
 
@@ -169,15 +169,15 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 > [!NOTE]
 > API 可以处理的 JSON 文件中的最大记录数为 50，000 条记录。
 
-1. 转到[此GitHub网站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)以访问示例脚本。
+1. 转到[此GitHub访问](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)示例脚本。
 
 2. 单击" **原始** "按钮以在文本视图中显示脚本
 
-3. 复制示例脚本中所有的行，然后将它们保存到文本文件中。
+3. 复制示例脚本中所有行，然后将它们保存到文本文件。
 
 4. 如有必要，修改组织的示例脚本。
 
-5. 将文本文件另存为Windows PowerShell文件名后缀的脚本.ps1;例如，PhysicalBadging.ps1。
+5. 将文本文件另存为Windows PowerShell脚本文件，使用文件名后缀.ps1;例如，PhysicalBadging.ps1。
 
 6. 在本地计算机上打开命令提示符，然后转到保存脚本的目录。
 
@@ -221,7 +221,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
    ![物理保护连接器的状态飞出页。](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. 在 **"上次导入**"下，单击"下载日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从 CSV 文件上载到 Microsoft 云时的信息。
+3. 在 **"上次导入"** 下， **单击"下载** 日志"链接 (或) 连接器的状态日志。 此日志包含有关脚本每次运行以及将数据从 CSV 文件上载到 Microsoft 云时的信息。
 
    ![物理保护连接器日志文件 JSON 文件中上传的行数。](..\media\PhysicalBadgingConnectorLogFile.png)
 
@@ -229,9 +229,9 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 如果尚未在步骤 4 中运行脚本，则"上次导入"下将显示用于下载脚本 **的链接**。 可以下载脚本，然后按照步骤 4 中的步骤运行它。
 
-## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：将脚本安排为自动运行
+## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤 6：计划脚本自动运行
 
-若要确保组织的最新物理保护数据可用于内部风险管理解决方案等工具，建议安排脚本定期自动运行，如每天运行一次。 这还要求你在类似的 (（如果不是同一) 计划）上将物理保护数据更新为 JSON 文件，以便其中包含有关离开组织的员工的最新信息。 目标是上载最新的物理保护数据，以便物理保护连接器能够将其提供给内部风险管理解决方案。
+若要确保组织的最新物理保护数据可用于内部风险管理解决方案等工具，建议安排脚本定期自动运行，如每天运行一次。 这还要求你将物理保护数据更新为类似 (（如果不是同一) 计划）上的 JSON 文件，以便其中包含有关离开组织的员工的最新信息。 目标是上载最新的物理保护数据，以便物理保护连接器能够将其提供给内部风险管理解决方案。
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
@@ -265,7 +265,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    2. 在"**程序/脚本**"框中，单击"浏览"，然后转到以下位置并选择它，以便路径显示在框中：C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
 
-   3. 在" **添加 (可选) "** 框中，粘贴在步骤 4 中运行相同的脚本命令。 例如， .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de4 1bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
+   3. 在" **添加 (可选) "** 框中，粘贴在步骤 4 中运行相同的脚本命令。 例如， .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de 41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 
    4. 在 **" (可选**) "框中，粘贴在步骤 4 中运行脚本的文件夹位置。 例如，C：\Users\contosoadmin\Desktop\Scripts。
 

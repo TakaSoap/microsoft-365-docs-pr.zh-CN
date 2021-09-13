@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: 了解如何在浏览器和 web 浏览器中自定义Power BI Desktop。
+description: 了解如何在浏览器和浏览器中自定义Power BI Desktop。
 ms.openlocfilehash: 5dcdee05fbb413c7f1925f5e81c7e6596da111e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171193"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义使用情况Microsoft 365中的报告
 
@@ -39,7 +39,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 ### <a name="modify-an-existing-visual"></a>修改现有视觉对象
 
-此示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
+本示例演示如何修改"激活/许可 **"** 报告中 **的"激活"选项卡** 。
 
 1. 在" **激活/许可"** 报告中，选择" **激活"** 选项卡。
 
@@ -63,7 +63,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 1. 使用左侧 **导航导航** 转到"产品使用情况"报告，**然后选择"Yammer** 选项卡。
 
-2. 通过选择"编辑模式"中的 ![ "更多页面"按钮切换到Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 和编辑。
+2. 通过选择编辑模式中的 ![ "更多页面"按钮切换到Power BI。](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 和编辑。
 
 3. 在页面底部，选择 ![页面中的"添加页面"Power BI。](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
 
@@ -105,19 +105,19 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 ### <a name="use-the-reporting-apis"></a>使用报告 API
 
-你可以从为这些报告提供Microsoft 365直接连接到 ODATA 报告 API。
+首先，你可以从为这些报告提供Microsoft 365直接连接到 ODATA 报告 API。
 
 1. 转到" **获取数据**"\>" **其他**"\>" **ODATA 源**"\>" **连接**"。
 
-2. 在"URL"窗口中，输入 <i></i> "https:// reports.office.com/pbi/v1.0/" \<tenantid\>
+2. 在"URL"窗口中输入 <i></i> "https:// reports.office.com/pbi/v1.0/" \<tenantid\>
 
     **注意：** 报告 API 为预览版，在进入生产阶段之前可能会更改。
 
-    ![桌面版 OData Power BI URL。](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![适用于桌面桌面的 OData Power BI URL。](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
 
-3. 在系统Microsoft 365 (输入你的) 或学校管理员凭据，Microsoft 365进行身份验证。
+3. 输入你的Microsoft 365 (或学校) 管理员凭据，以在Microsoft 365时进行身份验证。
 
-    有关[允许](usage-analytics.md#faq)谁访问应用采用模板应用报告Microsoft 365常见问题解答。
+    有关[允许](usage-analytics.md#faq)谁访问"采用"模板应用报告Microsoft 365常见问题解答。
 
 4. 授权连接后，将看到显示可连接到的数据集的"导航器"窗口。
 
@@ -127,7 +127,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
     ![报告 API 中提供的 ODATA 值。](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
 
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用Microsoft 365分析模板
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用Microsoft 365使用情况分析模板
 
 您还可以使用与Power BI使用情况分析报告相对应的Microsoft 365模板文件作为连接数据的起点。 使用 pbit 文件的优点是它已建立连接字符串。 也可以利用已创建的所有自定义度量值，在基础架构所返回数据的基础上进一步进行构建。
 
@@ -141,7 +141,7 @@ Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了�
 
 3. 输入管理员凭据以在系统Microsoft 365进行身份验证。
 
-     有关允许谁访问使用情况分析Microsoft 365详细信息。
+     有关允许谁访问使用情况分析报告Microsoft 365详细信息。
 
     获得授权后，将刷新 Power BI 文件中的数据。
 

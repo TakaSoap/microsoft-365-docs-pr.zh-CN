@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: 了解如何验证 android Microsoft 365 商业高级版 iOS 设备中的应用保护设置。
+description: 了解如何验证 Android Microsoft 365 商业高级版 iOS 设备中的应用保护设置。
 ms.openlocfilehash: 37593e499e772b3f3ed29d8c966812f60e088d1d
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170872"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>验证 Android 或 iOS 设备上的应用保护设置
 
@@ -42,9 +42,9 @@ ms.locfileid: "58360283"
   
 首先，确保该策略适用于你要验证它的应用。
   
-1. 在管理 [Microsoft 365 商业高级版，](https://admin.microsoft.com)转到"**策略""** \> **编辑策略"。**
+1. 在管理 [Microsoft 365 商业高级版，](https://admin.microsoft.com)转到"策略 **""** \> **编辑策略"。**
     
-2. 选择 **"Android 应用程序** 策略"作为你在设置时创建的设置，或你创建的另一个策略，并验证是否Outlook应用策略。 
+2. 例如 **，选择"Android** 应用程序策略"作为你在设置时创建的设置或创建的另一个策略，并验证是否Outlook应用策略。 
     
     ![Shows all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
@@ -54,7 +54,7 @@ ms.locfileid: "58360283"
   
 ![确保"需要 PIN 或指纹来访问Office"设置为"打开"。](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. 在用户的 Android 设备中，Outlook，然后使用用户的凭据Microsoft 365 商业高级版登录。
+1. 在用户的 Android 设备中，Outlook，然后使用用户的 Microsoft 365 商业高级版 凭据登录。
     
 2. 系统还会提示你输入 PIN 或使用指纹。
     
@@ -62,9 +62,9 @@ ms.locfileid: "58360283"
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>验证"超过登录失败次数限制后重置 PIN"
 
-在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户如何在移动设备上访问 **Office** 文件"，并确保"在尝试失败后重置 **PIN"** 设置为一个数字。 默认情况下为 5。 
+在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户访问 **移动设备上的 Office** 文件"，并确保"在失败尝试次数后重置 **PIN"** 设置为一个数字。 默认情况下为 5。 
   
-1. 在用户的 Android 设备中，Outlook，然后使用用户的凭据Microsoft 365 商业高级版登录。
+1. 在用户的 Android 设备中，Outlook，然后使用用户的 Microsoft 365 商业高级版 凭据登录。
     
 2. 输入错误 PIN 的次数达到策略指定次数。 你将看到一条提示，指出 **"PIN 尝试限制已到达** "以重置 PIN。 
     
@@ -93,7 +93,7 @@ ms.locfileid: "58360283"
   
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>验证"Office 应用空闲指定时间后要求用户再次登录"
 
-在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户如何访问移动设备上的 **Office** 文件"，并确保"要求用户在 **Office 应用** 空闲后重新登录"设置为几分钟。 默认情况下为 30 分钟。 
+在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户如何在移动设备上访问 **Office** 文件"，并确保将"要求用户在 Office 应用空闲后重新登录 **"** 设置为几分钟时间。 默认情况下为 30 分钟。 
   
 1. 在用户的 Android 设备上，打开Outlook，然后使用用户的 Microsoft 365 商业高级版 凭据登录，并输入 PIN（如果需要）。
     
@@ -131,9 +131,9 @@ ms.locfileid: "58360283"
   
 首先，确保该策略适用于你要验证它的应用。
   
-1. 在管理 [Microsoft 365 商业高级版，](https://admin.microsoft.com)转到"**策略""** \> **编辑策略"。**
+1. 在管理 [Microsoft 365 商业高级版，](https://admin.microsoft.com)转到"策略 **""** \> **编辑策略"。**
     
-2. 选择 **"适用于 iOS** 的应用程序策略"作为在设置时创建的设置或创建的另一个策略，并验证是否强制Outlook例如。 
+2. 选择 **"适用于 iOS** 的应用程序策略"，查看在设置时创建的设置或创建的另一个策略，并验证是否Outlook策略。 
     
     ![Shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
@@ -151,7 +151,7 @@ ms.locfileid: "58360283"
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>验证"超过登录失败次数限制后重置 PIN"
 
-在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户如何在移动设备上访问 **Office** 文件"，并确保"在尝试失败后重置 **PIN"** 设置为一个数字。 默认情况下为 5。 
+在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户访问 **移动设备上的 Office** 文件"，并确保"在失败尝试次数后重置 **PIN"** 设置为一个数字。 默认情况下为 5。 
   
 1. 在用户的 iOS 设备中，Outlook，然后使用用户的 Microsoft 365 商业高级版 凭据登录。
     
@@ -179,7 +179,7 @@ ms.locfileid: "58360283"
     
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>验证"Office 应用空闲指定时间后要求用户再次登录"
 
-在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户如何访问移动设备上的 **Office** 文件"，并确保"要求用户在 **Office 应用** 空闲后重新登录"设置为几分钟。 默认情况下为 30 分钟。 
+在"编辑策略"窗格中，选择 **"Office** 文档访问控制"旁边的"编辑"，展开"管理用户如何在移动设备上访问 **Office** 文件"，并确保将"要求用户在 Office 应用空闲后重新登录 **"** 设置为几分钟时间。 默认情况下为 30 分钟。 
   
 1. 在用户的 iOS 设备中，打开Outlook，然后使用用户的 Microsoft 365 商业高级版 凭据登录，并输入 PIN（如果需要）。
     

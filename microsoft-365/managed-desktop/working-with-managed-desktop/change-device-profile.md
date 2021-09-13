@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 576a891d683b970ff13f148b302e5c01c86901f3dd559850972522a0ae40cf71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5d8b0b95668cb46adf8d2da59939b5659e702ad6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171278"
 ---
 # <a name="reassign-profiles"></a>重新分配配置文件
 
@@ -28,7 +28,7 @@ ms.locfileid: "53877637"
 
 你选择的设备配置文件将应用于你在第一步中选择的所有设备。 若要将单独的设备移动到不同的配置文件，你需要对每个设备配置文件重复此过程。 
 
-1. In Microsoft Endpoint Manager， select **Devices**   in the left pane. 在菜单 **Microsoft 托管桌面"** 部分，选择" **设备"。**  
+1. In Microsoft Endpoint Manager， select **Devices**   in the left pane. 在Microsoft 托管桌面 **的**"设备"部分，选择  **"设备"。**  
 2. 选中要修改的设备复选框。 
 3. 选择 **"更改设备配置文件";** 将打开一个飞入。
 4. 使用下拉菜单选择新的设备配置文件。

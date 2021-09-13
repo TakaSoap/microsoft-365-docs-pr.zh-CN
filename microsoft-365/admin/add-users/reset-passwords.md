@@ -28,16 +28,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: e01e4582398fa2226aed3288dc45c0c37b0ff72f18dd289c1008b91af0bfcd8a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169912"
 ---
 # <a name="reset-passwords"></a>重置密码
 
-本文介绍如何在拥有适用于企业订阅的 Microsoft 365重置密码。
+本文介绍了当你拥有适用于企业订阅的订阅时，如何为你自己和用户Microsoft 365密码。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -69,7 +69,7 @@ ms.locfileid: "53827391"
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
+如果你忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
 
 1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
 
@@ -92,7 +92,7 @@ ms.locfileid: "53827391"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时重置组织中每个人的所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多 40 个用户重置) 。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分"批量重置密码 (最多 40 个用户一次重置) 。
   
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
@@ -100,7 +100,7 @@ ms.locfileid: "53827391"
 
 3. 选择 **"重置密码"。** 
 
-4. 按照"重置密码"**页上的说明操作**，然后选择"重置 **"。**  如果选择自动生成密码，将显示新的临时密码。
+4. 按照"重置密码"**页面上的说明操作**，然后选择"重置 **"。**  如果选择自动生成密码，将显示新的临时密码。
 
 5. 输入可以接收临时密码的电子邮件地址。 你需要通知用户他们的临时密码是什么。
   
@@ -111,7 +111,7 @@ ms.locfileid: "53827391"
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-有关概述信息，请参阅[使用 PowerShell Microsoft 365管理部署](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
+有关概述信息，请参阅[使用 PowerShell Microsoft 365管理服务](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>为企业中的所有用户强制更改密码
 

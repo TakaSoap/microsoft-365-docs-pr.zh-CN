@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 高级 eDiscovery 作业帮助跟踪与执行各种高级 eDiscovery 任务相关的长期运行进程状态。
-ms.openlocfilehash: 09b114ad39f2bbc7868a5ea6bf2871e0f3cba4a386d359316518bbf1bbe886a0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 27ac98d1f98e85800c8ca3dfc91cc5e0803ae2e8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170632"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>管理高级 eDiscovery 中的作业
 
@@ -35,7 +35,7 @@ ms.locfileid: "53871789"
 |正在比较加载集 | 用户观察审阅集中不同加载集的差别。 加载集是像审阅集添加数据的一个实例。 例如，如果将 2 次不同搜索的结果添加到同一审阅集，每一个都代表一个加载集。 |
 |对话重建|用户将搜索结果添加到对话审阅集时，服务（如 Microsoft Teams）中的即时消息对话（也称为 *线程对话*）将重建为 PDF 文件。 如果用户在审阅集中单击 **“操作”>“创建对话 PDF”** 也可触发此作业。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
 |正在将编修文档转换为 PDF|用户为审阅集中的文档添加批注并编修部分内容后，可选择将已编修文档转换为 PDF 文件。 此操作可确保如果导出文档进行演示，已编修部分将不可见。 有关详细信息，请参阅 [查看审阅集中的文档](annotating-and-redacting-documents.md)。 |
-|预估搜索结果 | 在用户创建并运行或重新运行草稿集合后，搜索工具会搜索索引中与搜索查询匹配的项目，并准备一个估计值，其中包括搜索时所有项目的数量和总大小以及搜索的数据源的数量。  有关详细信息，请参阅 [收集案例数据](collecting-data-for-ediscovery.md)。 | 
+|预估搜索结果 | 用户创建并运行或重新运行草稿集合后，搜索工具会搜索索引中与搜索查询匹配的项目，并准备一个估计值，其中包括搜索时所有项目的数量和总大小以及搜索的数据源的数量。  有关详细信息，请参阅 [收集案例数据](collecting-data-for-ediscovery.md)。 | 
 |准备导出数据 | 用户从审阅集导出文档。 导出过程完成时，可将导出数据下载到本地计算机。 有关详细信息，请参阅 [导出案例数据](exporting-data-ediscover20.md)。 | 
 |准备错误解决方案 |用户在案例的 **正在处理** 选项卡上“错误”视图中选择文件并创建新的错误修正方法时，此过程第一步需要将含有处理错误的文件上传到 Microsoft 云中的 Azure Storage 位置。 此作业跟踪上传进程的进度。 有关错误修正流程的详细信息，请参阅 [处理数据时错误修正](error-remediation-when-processing-data-in-advanced-ediscovery.md)。 | 
 |准备搜索预览 | 在用户创建并运行新的草稿集合 (或重新运行现有草稿集合) 后，搜索工具将准备与可预览的搜索查询) 匹配的项目 (的示例子集。 预览搜索结果有助于确定搜索是否有效。  有关详细信息，请参阅 [收集案例数据](collecting-data-for-ediscovery.md#view-search-results-and-statistics)。 | 

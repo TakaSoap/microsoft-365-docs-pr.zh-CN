@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 如果要重置自己的管理员密码，请更新管理中心中的管理员电话号码和电子邮件地址。
 ms.openlocfilehash: cbb969b93584503db0755675e4ea585ba401e377
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170386"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
@@ -63,5 +63,5 @@ ms.locfileid: "58394188"
 
 [将用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 视频) \
 [将新员工添加到 (](../add-users/add-new-employee.md) 视频) \
-[删除以前员工](../add-users/remove-former-employee.md) (视频) \
-[访问和备份以前用户](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 的数据 (文章) 
+[删除之前员工](../add-users/remove-former-employee.md) (视频) \
+[访问和备份以前用户的数据 (](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 文章) 

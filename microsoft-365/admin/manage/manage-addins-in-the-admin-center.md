@@ -23,15 +23,15 @@ search.appverid:
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用集中式加载项将加载项部署到组织中用户和组。
 ms.openlocfilehash: 4dd2cbc842d10770b544df014685173a8888df67
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169743"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在管理中心管理加载项
 
-Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息的方式 (请参阅开始使用 Office[外接程序](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。 
+Office加载项可帮助你个性化设置文档并简化访问 Web 上信息 (请参阅开始使用 Office[加载项](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。 
 
 管理员为组织中用户部署外接程序后，管理员可以关闭或打开外接程序、编辑、删除和管理对外接程序的访问权限。
 
@@ -39,7 +39,7 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
   
 ## <a name="add-in-states"></a>加载项状态
 
-加载项可以"开"或"关 **"** 状态。 
+加载项可以"开"或"**关"** 状态。 
   
 | 状态 | 此状态如何出现 | 影响 |
 |:-----|:-----|:-----|
@@ -56,7 +56,7 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
 1. 在管理中心，转到 **"设置**  >  **服务&外接程序"** 页面。
 
     > [!NOTE]
-    > 您还可以通过集成应用在管理中心 [部署外接程序](test-and-deploy-microsoft-365-apps.md)。 集成应用对全局管理员和Exchange可见。 如果你看不到上述步骤，请转到集中部署部分，设置  >  **集成应用。** 在"集成应用"**页面顶部**，选择"**加载项"。**
+    > 您还可以通过集成应用在管理中心 [部署外接程序](test-and-deploy-microsoft-365-apps.md)。 集成应用对全局管理员和Exchange可见。 如果看不到上述步骤，请转到"集中部署"部分，设置  >  **集成应用"。** 在"集成应用"**页面顶部**，选择"**加载项"。**
 
 2. 选择已部署的外接程序。
 
@@ -71,19 +71,19 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
 1. 在管理中心，转到 **"设置**  >  **服务&外接程序"** 页面。
 
     > [!NOTE]
-    > 您还可以通过集成应用在管理中心 [部署外接程序](test-and-deploy-microsoft-365-apps.md)。 集成应用对全局管理员和Exchange可见。 如果你看不到上述步骤，请转到集中部署部分，设置  >  **集成应用。** 在"集成应用"**页面顶部**，选择"**加载项"。**
+    > 您还可以通过集成应用在管理中心 [部署外接程序](test-and-deploy-microsoft-365-apps.md)。 集成应用对全局管理员和Exchange可见。 如果看不到上述步骤，请转到"集中部署"部分，设置  >  **集成应用"。** 在"集成应用"**页面顶部**，选择"**加载项"。**
 
 
 2. 选择已部署的外接程序。
 
-3. 单击"**拥有** 访问权限 **Who"下的"编辑"。**
+3. 单击"**具有** 访问权限 **Who"下的"编辑"。**
 
 4. 保存更改。
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>通过在所有客户端上关闭 Office Store 来阻止外接程序 (应用商店Outlook) 
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>通过在所有客户端上关闭 Office Store 来阻止外接程序下载 (除Outlook) 
 
 > [!NOTE]
-> Outlook外接程序安装由不同的[进程管理](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)。
+> Outlook加载项安装由不同的进程[管理](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)。
 
 作为组织，你可能希望阻止从 Office 应用商店下载新的 Office 外接程序。 这可与集中部署结合使用，以确保仅向组织内部的用户部署经组织核准的外接程序。
   
@@ -92,7 +92,7 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
 1. 在管理中心，转到“**设置**”\> [服务和加载项](https://go.microsoft.com/fwlink/p/?linkid=2053743)页面。
 
     > [!NOTE]
-    > 您还可以通过集成应用在管理中心 [部署外接程序](test-and-deploy-microsoft-365-apps.md)。 集成应用对全局管理员和Exchange可见。 如果你看不到上述步骤，请转到集中部署部分，设置  >  **集成应用。** 在"集成应用"**页面顶部**，选择"**加载项"。**
+    > 您还可以通过集成应用在管理中心 [部署外接程序](test-and-deploy-microsoft-365-apps.md)。 集成应用对全局管理员和Exchange可见。 如果看不到上述步骤，请转到"集中部署"部分，设置  >  **集成应用"。** 在"集成应用"**页面顶部**，选择"**加载项"。**
 
     
 3. 选择“**用户自有应用和服务**”。
@@ -112,7 +112,7 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
         
     - 加载项内Microsoft 365
         
-    尝试访问应用商店的用户将看到以下消息：抱歉，Microsoft 365已配置为阻止单独获取 Office **Store 外接程序。**
+    尝试访问应用商店的用户将看到以下消息：抱歉，Microsoft 365已配置为阻止单独获取 Office **应用商店外接程序。**
   
 以下版本Office支持关闭应用商店：
   
@@ -127,12 +127,12 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
 这不会阻止管理员使用集中部署从应用商店分配Office加载项。
 
 > [!NOTE] 
-> 加载项（如Visio可视化工具、必应地图 和人Graph）仍将显示在功能区中，即使管理员已禁用应用商店。 若要删除这些链接，管理员必须通过组策略对象或 GPO (Store) 。
+> 加载项（如 Visio 数据可视化工具、必应地图 和人Graph）仍将显示在功能区中，即使管理员已禁用应用商店。 若要删除这些链接，管理员必须通过组策略对象或 GPO (Store) 。
   
 若要防止用户使用 Microsoft 帐户登录，可以将登录限制为仅使用组织帐户。 有关详细信息，请参阅[Identity， authentication， and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office)。  
 
 > [!NOTE] 
-> 阻止用户访问 Office 商店还会阻止他们从Office旁加载外接程序以[进行测试](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
+> 阻止用户访问 Office 商店还会阻止他们从Office外接程序旁[加载以进行测试](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>有关外接程序的最终用户体验的更多内容
 
@@ -165,7 +165,7 @@ Office外接程序可帮助您个性化设置文档并简化访问 Web 上信息
 ## <a name="related-content"></a>相关内容
 
 [在管理中心部署外接程序 (](./manage-deployment-of-add-ins.md) 文章) \
-详细了解如何创建和[生成Office加载项](/office/dev/add-ins/overview/office-add-ins) (文章) \
+详细了解如何创建和生成[Office加载项](/office/dev/add-ins/overview/office-add-ins) (文章) \
 [使用集中部署 PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理外接程序 (文章) \
 [疑难解答：用户看不到外接程序](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) \
 [本文中介绍的次要Microsoft Store (](./minors-and-acquiring-addins-from-the-store.md)外接程序) 

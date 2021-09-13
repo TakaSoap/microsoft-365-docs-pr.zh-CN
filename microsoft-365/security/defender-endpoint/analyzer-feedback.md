@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170516"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>提供有关 Microsoft Defender for Endpoint 客户端分析器工具的反馈
 
@@ -34,7 +34,7 @@ ms.locfileid: "58574624"
 
 如果你有有助于我们改进 Microsoft Defender for Endpoint 客户端分析器的反馈或建议，请使用以下任一选项提交反馈：
 
-1. Microsoft Defender 终结点门户 (securitycenter.windows.com) ：
+1. Microsoft Defender for Endpoint 门户 (securitycenter.windows.com) ：
 
     ![笑脸反馈图标的图像。](images/3e2db5015cd4f47436b4765b2303f4f5.png)
 

@@ -18,15 +18,15 @@ ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: 配置Advanced eDiscovery适用于案例的所有审阅集的审核设置。 这包括用于分析和光学字符识别的设置。
 ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169681"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>配置搜索和分析Advanced eDiscovery
 
-可以配置每个用例Advanced eDiscovery，以控制以下功能。
+您可以为每个自定义Advanced eDiscovery配置设置，以控制以下功能。
 
 - 近似重复和电子邮件线程
 
@@ -56,7 +56,7 @@ ms.locfileid: "58565412"
 
 - **文档和电子邮件相似性阈值：** 如果两个文档的相似性级别高于阈值，则两个文档将放入相同的近重复集。
 
-- **最小/最大单词数：** 这些设置指定仅对至少具有最少单词数和最多单词数的文档执行近重复和电子邮件线程分析。
+- **最小/最大单词数：** 这些设置指定仅对至少具有最少单词数和最多最大单词数的文档执行近重复和电子邮件线程分析。
 
 ## <a name="themes"></a>主题
 
@@ -72,7 +72,7 @@ ms.locfileid: "58565412"
 
 ## <a name="review-set-query"></a>审阅集查询
 
-如果选中"分析后 **自动创建** 用于审阅保存的搜索"复选框，Advanced eDiscovery自动生成名为"评价"的审阅集 **查询。** 
+如果选中"分析后 **自动创建** 针对审阅保存的搜索"复选框，Advanced eDiscovery自动生成名为"评价"的审阅集 **查询。** 
 
 ![用于审阅自动生成的查询。](../media/AeDForReviewQuery.png)
 
@@ -84,11 +84,11 @@ ms.locfileid: "58565412"
 
 ## <a name="optical-character-recognition-ocr"></a>光学字符识别 (OCR)
 
-打开此设置后，OCR 处理将在图像文件上运行。 OCR 处理在下列情况下运行：
+打开此设置后，将在图像文件上运行 OCR 处理。 OCR 处理在下列情况下运行：
 
-- 将保管 [人和非保管人数据源](non-custodial-data-sources.md) 添加到案例时。 将 OCR 应用于图像文件时，将在集合期间搜索这些文件中的文本。 OCR 处理在高级 [索引过程中](indexing-custodian-data.md) 执行。 OCR 仅在高级索引期间处理的项上运行。 例如，如果在高级索引过程中处理了部分索引或其他索引错误的大型 PDF 文件，则该文件也将应用 OCR。 换句话说，OCR 处理仅发生在高级索引过程中重新编制索引的文件上。 这意味着在某些情况下，保管人可能会添加到案例，但某些电子邮件附件不会针对 OCR 进行处理，因为在高级索引期间不会处理这些文件。
+- 将保管 [人和非保管人数据源](non-custodial-data-sources.md) 添加到案例时。 将 OCR 应用于图像文件时，将在集合期间搜索这些文件中的文本。 OCR 处理在高级 [索引过程中](indexing-custodian-data.md) 执行。 OCR 仅在高级索引期间处理的项上运行。 例如，如果在高级索引过程中处理了部分索引或其他索引错误的大型 PDF 文件，则该文件也将应用 OCR。 换句话说，OCR 处理仅发生在高级索引过程中重新编制索引的文件上。 这意味着在某些情况下，保管人会添加到案例，但某些电子邮件附件不会针对 OCR 进行处理，因为在高级索引期间不会处理这些文件。
 
-- 如果来自其他数据源 (未与保管人关联且已添加到非托管数据源中的案例的内容，) 添加到审阅集。
+- 当来自其他数据源 (未与保管人关联且添加到非托管数据源中的案例的内容添加到审阅) 审阅集。
 
 将数据添加到审阅集后，可以审阅、搜索、标记和分析图像文本。 可以在审阅集内所选图像文件的文本查看器中查看提取的文本。 有关详细信息，请参阅：
 

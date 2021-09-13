@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350012"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170949"
 ---
 # <a name="restrict-app-execution-api"></a>限制应用执行 API
 
@@ -52,9 +52,9 @@ ms.locfileid: "58350012"
 
 > [!IMPORTANT]
 >
-> - 此操作适用于版本 1709 Windows 10版本上的设备。
+> - 此操作适用于 Windows 10 版本 1709 或更高版本上的设备。
 > - 如果组织使用此功能，则此功能Microsoft Defender 防病毒。
-> - 此操作需要满足Windows Defender代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
+> - 此操作需要满足Windows Defender控制代码完整性策略格式和签名要求。 有关详细信息，请参阅代码 [完整性策略格式和签名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)。
 
 ## <a name="permissions"></a>权限
 

@@ -21,31 +21,31 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 了解德国Office 365。
-ms.openlocfilehash: 4b266a0bce35da5abf73c85fb4028ac3650bd85582d4b7479a78359bbc89a3e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e08d3b72e8a87fa9cd5e5a1cc25d8178e4bd2183
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169899"
 ---
 # <a name="learn-about-office-365-germany"></a>了解 Office 365 Germany
 
 > [!NOTE]
-> Office 365德国不再接受新客户或部署新服务。 德国的新云区域（2020 年第一季度适用于 Microsoft 365 和 Office 365）将提供在德国的核心客户数据驻留，以及到 Microsoft 全球云网络的完整连接。
+> Office 365德国不再接受新客户或部署新服务。 德国的新云区域（2020 年第一季度针对 Microsoft 365 和 Office 365 提供）将提供在德国的核心客户数据驻留，以及到 Microsoft 全球云网络的完整连接。
 
-Office 365德国是提供欧洲可用服务Office 365一个区别性选项。 它帮助满足德国、欧盟 (欧盟) 和欧洲自由贸易联盟 (EFTA) 中监管最严格的客户的需求，提供来自德国数据中心、数据驻留在德国的行业领先的数字工作生产力服务，以及通过受德国法律约束的唯一数据受托人模型严格的数据访问和控制措施。
+Office 365德国是欧洲提供Office 365的一个区别选项。 它帮助满足德国、欧盟 (欧盟) 和欧洲自由贸易联盟 (EFTA) 中监管最严格的客户的需求，提供来自德国数据中心的数字工作的行业领先的生产力服务，在德国提供数据驻留，以及通过受德国法律约束的唯一数据受托人模型严格的数据访问和控制措施。
   
-数据被信任方 T-Systems International 是一家独立的德国公司，同时也是德国电信的子公司，负责控制对客户数据的物理和逻辑访问。 未经数据受托人的批准或监督，客户数据不能访问，而该数据受德国法律约束。
+数据被信任方 T-Systems International 是一家独立的德国公司，同时也是德国电信的子公司，负责控制对客户数据的物理和逻辑访问。 未经数据受托人的批准或监督，不能访问客户数据，而该数据受德国法律约束。
   
 客户需求已改变，Office 365德国的隔离限制了它处理客户所需的灵活性和一致性的能力。 自 2018 年 8 月起，我们将不再接受新客户或从当前可用的德国 Microsoft 云部署任何新服务。 有关详细信息，请参阅此博客文章：Microsoft 在 [2019](https://go.microsoft.com/fwlink/p/?linkid=839016)年从德国的新数据中心提供云服务，以满足不断变化的客户需求。
   
 ## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>在德国提供哪些 Microsoft Office 365服务？
 
-Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务保持一致。 例外包括：与 Yammer 相关的计划、即将到期的计划，以及通过非营利规划提供的计划。 Office 365 E5一般版本（德国）后，将Office 365 SPE 和其他服务。 
+Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务保持一致。 例外包括：与 Yammer 相关的计划、即将到期的计划，以及通过非营利规划提供的计划。 Office 365 E5在德国通用后，将可以使用 Office 365 服务。 
   
 某些 [Office 365 Germany 订阅计划](https://go.microsoft.com/fwlink/p/?linkid=839016)中提供以下服务和功能。此外，请参阅[联机服务条款](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
   
-- Microsoft 365 企业应用版、Office 2016 和 Office 2013<sup>1。</sup> 请注意，Office 2013[要求Office 365客户端使用新式Office身份验证](../../enterprise/modern-auth-for-office-2013-and-2016.md)。
+- Microsoft 365 企业应用版、Office 2016 和 Office 2013<sup>1。</sup> 请注意，Office 2013 [Office 365客户端使用新式Office身份验证](../../enterprise/modern-auth-for-office-2013-and-2016.md)。
     
 - Exchange Online
     
@@ -85,7 +85,7 @@ Office 365德国计划产品在此隔离环境中尽可能与全球产品/服务
     
 - Delve
     
-<sup>1</sup>Office 365 Germany 计划包括在最终用户的设备（如 ("客户端软件应用程序") ，如 Microsoft 365 企业应用版、Office 2013 和 Office 2016）上安装和运行的客户端软件应用程序。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
+<sup>1</sup>Office 365 Germany 计划包括在最终用户的设备（"客户端软件应用程序" (") ）上安装和运行的客户端软件应用程序，如 Microsoft 365 企业应用版、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
   
 ## <a name="general-information"></a>一般信息
 

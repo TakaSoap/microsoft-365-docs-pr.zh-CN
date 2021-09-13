@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccb61bb84581ce98f0cd095b39bf53426997d4308efee4666011e9c85b9100d0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d901366e74969b0b128a49a6bd65a56046049085
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162264"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>了解威胁智能概念
 
@@ -45,7 +45,7 @@ ms.locfileid: "53799702"
 警报定义是上下文属性，可用于共同识别有关可能的网络安全攻击的早期线索。 这些指示器通常是攻击者为成功实现攻击目标而执行的活动、特征和操作的组合。 监视这些属性组合对于在达到攻击者的目标之前获取攻击点并可能干扰事件链至关重要。
 
 ## <a name="indicators-of-compromise-ioc"></a>IOC (泄露) 
-IIC 是单独已知的恶意事件，指示网络或设备已被破坏。 与警报定义不同，这些指示器被视为泄露的证据。 通常，在攻击已执行且达到目标（如外向）之后，它们经常看到。 在取证调查期间，跟踪 IIC 也很重要。 尽管它可能不会提供干预攻击链的能力，但是收集这些指示器对于为可能的未来攻击创建更好的防护非常有用。
+IIC 是单独已知的恶意事件，指示网络或设备已被破坏。 与警报定义不同，这些指示器被视为泄露的证据。 通常，在攻击已发生且达到目标（例如，攻击发生）后，它们经常看到。 在取证调查期间，跟踪 IIC 也很重要。 尽管它可能不会提供干预攻击链的能力，但是收集这些指示器对于为可能的未来攻击创建更好的防护非常有用。
 
 ## <a name="relationship-between-alert-definitions-and-iocs"></a>警报定义和 ICS 之间的关系
 在 Microsoft Defender for Endpoint 的上下文中，警报定义是 IOC 的容器并定义警报，包括在进行特定 IOC 匹配时引发元数据。 各种元数据作为警报定义的一部分提供。 诸如攻击的警报定义名称、严重性和说明等元数据以及其他选项一起提供。
