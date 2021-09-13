@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 5436494d8d94097e15f67e3b568727fe510113ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175354"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -36,11 +36,11 @@ ms.locfileid: "58565710"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在产品的整个套件中具有的端到端可见性Microsoft 365 Defender仅可以标识为恶意的活动触发唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
+Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在产品的整个套件中具有的端到端可见性Microsoft 365 Defender仅可以标识为恶意的活动触发唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
 
 **事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。 
 
-在快速启动 Microsoft 365 Defender 门户&事件>**事件** (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在 &快速启动 Microsoft 365 Defender 门户 (>**事件** 和事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。":::
 
@@ -48,9 +48,9 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 
 默认情况下，事件门户中的事件Microsoft 365 Defender显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
 
-事件队列具有可自定义 (选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
+事件队列具有可自定义 (选择"选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
 
-为了一目了然，自动事件命名根据警报属性（如受影响的终结点数量、受影响的用户数、检测源或类别）生成事件名称。 这使您可以快速了解事件的范围。
+为了一目了然，自动事件命名根据警报属性（如受影响的终结点数量、受影响的用户数、检测源或类别）生成事件名称。 借助此功能，可以快速了解事件的范围。
 
 例如： *多个源报告的多个终结点上的多阶段事件。*
 
@@ -79,7 +79,7 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 | 多个服务源  | 筛选以仅查看包含来自不同来源的警报的事件 (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。 |
 | OS 平台 | 按操作系统限制事件队列视图。 |
 | 服务源 | 通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。 |
-| 严重性 | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
+| Severity | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
 | 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |
 |||
 
@@ -98,7 +98,7 @@ Microsoft 365 Defender相关分析，将不同产品的相关警报和自动调�
 - 具有特定关联威胁的事件
 - 特定主角的事件
 
-编译有用的筛选器视图列表并存储为 URL 后，就可以使用它来快速处理队列中的事件并设置其优先级，并管理这些事件以用于后续分配和分析。 [](manage-incidents.md)
+编译有用的筛选器视图列表并存储为 URL 后，就可以使用它来快速处理队列中的事件并设置其优先级，并管理它们以用于后续分配和分析。 [](manage-incidents.md)
 
 ## <a name="next-steps"></a>后续步骤
 

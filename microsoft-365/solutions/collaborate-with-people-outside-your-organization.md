@@ -19,12 +19,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何配置Microsoft 365应用程序Teams、OneDrive SharePoint组织外部人员进行协作。
-ms.openlocfilehash: 1620af867057ee771936bfc15048ce6b15968e3230c5fb324acc7bc5141af20d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196242"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部人员进行协作
 
@@ -32,18 +32,18 @@ Microsoft 365中的外部共享功能为组织内部人员提供了与合作伙�
 
 与组织外部人员协作由两个主要部分组成：
 
-- **启用共享**- 配置跨 Azure Active Directory、Teams、Microsoft 365 组和 SharePoint 的共享控件SharePoint以允许组织的共享级别。
+- **启用共享**- 跨 Azure Active Directory、Teams、Microsoft 365 组和 SharePoint 配置共享控件，以允许组织的共享级别。
 - 启用 **其他** 安全性 - 虽然基本共享功能可以配置为要求组织外部人员进行身份验证，Microsoft 365 提供了许多其他安全性和合规性功能，以帮助您在外部共享时保护数据和维护管理策略。
 
-阅读[设置安全协作与Microsoft 365和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)Microsoft Teams了解外部共享如何与整体Microsoft 365协作指南。
+阅读[设置与 Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)和 Microsoft Teams 的安全协作，了解外部共享如何与整体Microsoft 365协作指南。
 
 ## <a name="enable-sharing"></a>启用共享
 
 默认情况下，在Microsoft 365，将启用与组织外部人员共享。 许多外部共享方案无需进一步配置即可工作。 若要确认你使用的方案的设置或启用新方案，请从以下选项中进行选择：
 
-- [协作处理](collaborate-on-documents.md)文档 - 了解如何配置 Microsoft 365 以允许与组织外部人员共享和协作 (来宾和未经身份验证的用户) 文件和文件夹。
+- [协作处理](collaborate-on-documents.md)文档 - 了解如何配置Microsoft 365以允许与组织外部人员共享和协作 (来宾和未经身份验证的用户) 文件和文件夹。
 - [在网站中协作](collaborate-in-site.md)- 了解如何配置Microsoft 365以启用与SharePoint共享网站。
-- [以团队方式协作](collaborate-as-team.md)- 了解如何配置Microsoft 365以在团队中启用来宾Teams。
+- [以团队方式协作](collaborate-as-team.md)- 了解如何配置Microsoft 365以在 Teams 中启用来宾Teams。
 
 有关跨组织提供的来宾共享设置的全面Microsoft 365，请参阅Microsoft 365[来宾共享设置参考](microsoft-365-guest-settings.md)。
 
@@ -61,10 +61,10 @@ Microsoft 365中的外部共享功能为组织内部人员提供了与合作伙�
 
 ## <a name="limit-sharing"></a>限制共享
 
-如果网站中的某些共享功能Microsoft 365管理策略冲突，请参阅限制共享Microsoft 365了解限制共享[](microsoft-365-limit-sharing.md)的选项。
+如果网站中的某些共享功能Microsoft 365管理策略冲突，请参阅限制共享Microsoft 365了解限制[](microsoft-365-limit-sharing.md)共享的选项。
 
 ## <a name="related-topics"></a>相关主题
 
 [文件协作简介Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
-[在文件中规划文件SharePoint与Microsoft 365](/sharepoint/deploy-file-collaboration)
+[使用工具在SharePoint中Microsoft 365](/sharepoint/deploy-file-collaboration)

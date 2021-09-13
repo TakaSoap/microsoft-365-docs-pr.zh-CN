@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用审核和警报策略和数据主体请求来监视和响应个人数据事件。
-ms.openlocfilehash: 225c0969f932490012a6cd54cb920cc59322ea9a8cea11c214a866ad58cecfca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804728"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196240"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>监视和响应组织中数据隐私事件
 
@@ -42,7 +42,7 @@ Microsoft 365功能可帮助您在操作相关功能时监视、调查和响应�
 - LGPD 文章 48
 - GDPR 文章 (5)  (1)  (f) 
 - GDPR 文章 (15)  (1)  (e) 
-- HIPAA-HITECH (45 C.F.R. 164.308 ()  (1)  (ii)  (D) ) 
+- HIPAA-HITECH (45 C.F.R. 164.308 (1)  (1)  (ii)  (D) ) 
 - HIPAA-HITECH (45 C.F.R. 164.308 (6)  (6)  (ii) 
 - HIPAA-HITECH (45 C.F.R. 164.312 (b) ) 
 - CCPA (1798.105 (c) ) 
@@ -59,7 +59,7 @@ Microsoft 365功能可帮助您在操作相关功能时监视、调查和响应�
 为了帮助你开始使用 Microsoft 365 中针对数据隐私法规的监视和响应方案，本文列出了 Microsoft 365 中用于回答以下问题的有用功能： 
 
 - 对于不同的数据类型和源，提供了哪类日常监视、调查和报告技术？
-- 需要哪些机制来处理 DSR 请求 (DSR) 任何修正操作（如匿名化、修订和删除）。
+- 需要哪些机制来处理 DSR (数据主体) 以及任何修正操作（如匿名、修订和删除）。
 
 ## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心中的审核和警报策略
 
@@ -72,7 +72,7 @@ Microsoft 365功能可帮助您在操作相关功能时监视、调查和响应�
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
 
-有关[响应 GDPR](/compliance/regulatory/gdpr-dsr-Office365)和 CCPA 中 DSR 的信息，请参阅 GDPR 和 CCPA Microsoft 365。
+请参阅[GDPR 和 CCPA](/compliance/regulatory/gdpr-dsr-Office365)的数据主体请求，了解在 Microsoft 365 中响应 DSR 的信息。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>在 Microsoft Stream 中管理已删除的用户
 
