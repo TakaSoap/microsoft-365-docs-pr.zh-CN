@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8411f5241a8a800e10e6eb9593e71016b3623bb4b9b5dc17964c53b2db05a930
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c094ca0970d7bd8cce077c8c89b04f0ab2aa8a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195614"
 ---
 # <a name="contact-support-for-nauru"></a>联系支持人员，该技术支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53832063"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

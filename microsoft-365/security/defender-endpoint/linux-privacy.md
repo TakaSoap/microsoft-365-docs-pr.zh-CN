@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197279"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隐私
 
@@ -67,7 +67,7 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **保险箱：** 只有不包含个人身份信息或个人身份信息的可疑 (将自动) 提交。 这是此设置的默认值。
+- **保险箱：** 仅自动提交不包含个人身份信息 (个人身份) 的可疑样本。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>通过策略设置管理隐私控件
@@ -76,7 +76,7 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 
 The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
-与任何新策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
+与任何新的策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
 
 ## <a name="diagnostic-data-events"></a>诊断数据事件
 
@@ -88,13 +88,13 @@ The privacy controls for the various types of data described in the preceding se
 
 以下字段被视为通用于所有事件：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |平台|应用运行平台的广泛分类。 允许 Microsoft 确定在哪些平台上可能会发生问题，以便可以正确地确定问题的优先级。|
 |machine_guid|与设备关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
 |sense_guid|与设备关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
 |org_id|与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。|
-|hostname|不带 DNS 后缀 (本地设备) 。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
+|hostname|本地设备名称 (DNS 后缀) 。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。|
 |product_guid|产品的唯一标识符。 允许 Microsoft 区分影响不同产品风格的问题。|
 |app_version|Linux 应用程序上的 Defender for Endpoint 的版本。 允许 Microsoft 确定哪些版本的产品显示问题，以便可以正确地确定问题的优先级。|
 |sig_version|安全智能数据库的版本。 允许 Microsoft 标识显示问题的安全智能版本，以便可以正确地确定问题的优先级。|
@@ -113,7 +113,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |correlation_id|与安装关联的唯一标识符。|
 |version|程序包的版本。|
@@ -125,7 +125,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |antivirus_engine.enable_real_time_protection|是否在设备上启用实时保护。|
 |antivirus_engine.passive_mode|是否在设备上启用被动模式。|
@@ -147,11 +147,11 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |from_version|原始安全智能版本。|
 |to_version|新的安全智能版本。|
-|状态|指示成功或失败的更新的状态。|
+|status|指示成功或失败的更新的状态。|
 |using_proxy|更新是否通过代理完成。|
 |error|更新失败时的错误代码。|
 |reason|更新失败时出现错误消息。|
@@ -162,7 +162,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |version|Linux 上适用于终结点的 Defender 版本。|
 |instance_id|内核扩展启动时生成的唯一标识符。|
@@ -196,7 +196,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |connection_retry_timeout|与云通信时的连接重试时间。|
 |file_hash_cache_maximum|产品缓存的大小。|
@@ -218,7 +218,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |how_to_check|确定如何检查产品更新 (例如自动或手动) 。|
 |channel_name|更新与设备关联的通道。|
@@ -231,18 +231,18 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |sha256|支持日志的 SHA256 标识符。|
 |size|支持日志的大小。|
-|original_path|始终 (在 */var/opt/microsoft/mdatp/wdavdiag/)* 下的支持日志路径。|
+|original_path|始终在 */var/opt/microsoft/mdatp/wdavdiag/ (下* 的支持日志) 。|
 |format|支持日志的格式。|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>诊断日志上载已完成报告
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |request_id|支持日志上载请求的相关 ID。|
 |sha256|支持日志的 SHA256 标识符。|
@@ -250,7 +250,7 @@ The privacy controls for the various types of data described in the preceding se
 
 #### <a name="product-and-service-performance-data-events-for-product-service-and-usage"></a>产品服务和使用情况的产品和服务性能数据事件
 
-**应用程序意外退出 (崩溃) ：**
+**意外的应用程序退出 (崩溃) ：**
 
 应用程序意外退出以及发生这种情况时的应用程序状态。
 
@@ -258,7 +258,7 @@ The privacy controls for the various types of data described in the preceding se
 
 将会收集以下字段：
 
-|字段|说明|
+|字段|描述|
 |---|---|
 |pkt_ack_timeout|以下属性是聚合的数值，表示自内核扩展启动后发生的事件数。|
 |pkt_ack_conn_timeout||

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4259aee0be2819fc630f84aa5c08019ec1cf57f60b1b2c00030288bcb3f5092
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44aea2241c1ff1fdcaf5d5839970c1c90fa42e17
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195642"
 ---
 # <a name="contact-support-for-guatemala"></a>联系危地马拉支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53901727"
 
 输入代码 5002
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 西班牙语：Mon-Fri上午 9 点到下午 5 点

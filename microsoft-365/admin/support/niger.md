@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ae795bd52a3e7e17e6a2dde46fcfa61210fc5c6c5e3f0873c572c35370c10843
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2d3160a3131f4142f4062f57ab7ff1786d4bf0f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195602"
 ---
 # <a name="contact-support-for-niger"></a>联系针对百万的技术支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53831943"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 法语：Mon-Fri上午 9 点到下午 5 点

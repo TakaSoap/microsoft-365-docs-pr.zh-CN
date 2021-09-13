@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4ee76a3526649e44e8cb98ca0c29b88ab92c2481adaf9cd52bd1a01926c58cc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cf1a847d367f3783b47260a07d1db040336295ac
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195651"
 ---
 # <a name="contact-support-for-germany"></a>联系德国支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53821279"
 ## <a name="phone-number"></a>电话号码
 0800 589 2332
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 德语：Mon-Fri上午 9 点到下午 5 点

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 13cc004e0c089554fada5d964b9c469987958e3c2cb57ef4ddec23200a573204
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4227965a5ce13981466f31cbb19dd3401f0769d7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195647"
 ---
 # <a name="contact-support-for-gibraltar"></a>联系支持人员，帮助其获得帮助
 
@@ -26,7 +26,7 @@ ms.locfileid: "53809966"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri 11 AM-7 PM

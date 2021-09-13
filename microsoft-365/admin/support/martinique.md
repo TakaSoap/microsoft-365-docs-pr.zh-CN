@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a8d6a1aa461da6fa38e61497ba6ade9f013813ade56676080f28594f964c581a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dabfd8a901d4b4c375cf666e3fd1b2fe281db347
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195636"
 ---
 # <a name="contact-support-for-martinique"></a>联系马提尼岛支持人员
 
@@ -26,10 +26,10 @@ ms.locfileid: "53832411"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
-法语Mon-Fri上午 6 点到中午 6 点
+法语Mon-Fri上午 6 点中午 6 点
 
 英语：Mon-Fri上午 6 点到下午 1 点
 

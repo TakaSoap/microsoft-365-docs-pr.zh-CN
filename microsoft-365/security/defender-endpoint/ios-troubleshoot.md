@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197280"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查与 iOS 上的 Microsoft Defender for Endpoint 相关的问题并查找常见问题解答
 
@@ -48,7 +48,7 @@ ms.locfileid: "58573555"
 
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择按照以下步骤在设备上禁用应用中的 VPN：
 
-1. 在 iOS 设备上，打开 **"设置应用**"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
+1. 在 iOS 设备上，打开 **"设置** 应用"，单击 **或点击"** 常规"，然后单击 **"VPN"。**
 1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
 1. 关闭 **"连接按需"** 以禁用 VPN。
 
@@ -98,7 +98,7 @@ Microsoft Defender for Endpoint 可保护你免受网络钓鱼或其他基于 We
 载入后，设备需要几个小时才能显示在 Defender for Endpoint 安全控制台的设备清单中。 此外，请确保设备已正确注册Azure Active Directory并且设备具有 Internet 连接。 若要成功载入，设备必须通过 Microsoft Authenticator 或 Intune 公司门户 并且用户需要使用在 Azure AD 中注册设备的同一帐户登录。
 
 > [!NOTE]
-> 有时，设备名称与 Intune 控制台Microsoft Endpoint Manager (设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
+> 有时，设备名称与 Intune Microsoft Endpoint Manager (控制台中的设备) 一致。 Defender for Endpoint 控制台中的设备名称采用 <username_iPhone/iPad 模式>。 还可使用 Azure AD 设备 ID 在 Defender for Endpoint 控制台中标识设备。
 
 ## <a name="data-and-privacy"></a>数据和隐私
 

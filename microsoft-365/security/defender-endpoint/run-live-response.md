@@ -22,11 +22,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197258"
 ---
 #  <a name="run-live-response-commands-on-a-device"></a>在设备上运行实时响应命令
 
@@ -50,7 +50,7 @@ ms.locfileid: "58392128"
 
 ## <a name="limitations"></a>限制
 
-1.  此 API 的速率限制是每分钟 10 次 (HTTP 429 请求响应其他) 。
+1.  此 API 的速率限制是每分钟 10 次调用 (HTTP 429 请求响应其他) 。
 
 2.  25 个并发运行的 (超出限制的请求将收到"429 - 请求过多"响应) 。
 
@@ -68,7 +68,7 @@ ms.locfileid: "58392128"
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证是否正在运行受支持的 Windows** 版本。
+- **验证是否正在运行受支持的** Windows 版本。
 
   设备必须运行以下版本之一Windows
 

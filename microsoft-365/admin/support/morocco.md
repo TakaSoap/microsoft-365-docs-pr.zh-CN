@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 052d8752ce1f911944511e029f06f99eef912c42d606d734f33fc16b4404fba0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b2cde3754f06d5aa567c923eb51f5cee72bb6d92
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195622"
 ---
 # <a name="contact-support-for-morocco"></a>联系摩洛哥支持人员
 
@@ -30,7 +30,7 @@ ms.locfileid: "53832159"
 
 输入代码 7700
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 阿拉伯语：Sun-Thu上午 8 点到下午 4 点

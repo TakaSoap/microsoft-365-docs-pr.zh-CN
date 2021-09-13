@@ -353,9 +353,11 @@
 ##### [自定义受控文件夹访问](customize-controlled-folders.md)
 
 #### [设备控制]()
+
 ##### [控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)
 ##### [可移动存储保护](device-control-removable-storage-protection.md)
 ##### [可移动存储访问控制](device-control-removable-storage-access-control.md)
+##### [设备安装](mde-device-control-device-installation.md)
 ##### [设备控制打印机保护](printer-protection.md)
 ##### [设备控制报告](device-control-report.md)
 

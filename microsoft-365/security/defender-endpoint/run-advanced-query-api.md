@@ -18,11 +18,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197266"
 ---
 # <a name="advanced-hunting-api"></a>高级搜寻 API
 
@@ -51,7 +51,7 @@ ms.locfileid: "58256970"
 
 5. 429 响应表示达到配额限制（按请求数或 CPU）。 读取响应正文，了解已达到的限制。 
 
-6. 单个请求的最大查询结果大小不能超过 124 MB。 如果超出此限制，则显示消息"查询执行已超出允许的结果大小的 HTTP 400 错误请求"。 将显示"通过限制结果量并重试"来优化查询。
+6. 单个请求的最大查询结果大小不能超过 124 MB。 如果超出此限制，则显示"查询执行已超出允许的结果大小"消息的 HTTP 400 错误请求。 将显示"通过限制结果量并重试"来优化查询。
 
 ## <a name="permissions"></a>权限
 
@@ -85,7 +85,7 @@ Content-Type|application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|描述
+参数|类型|说明
 :---|:---|:---
 查询|文本|要运行的查询。 **必需**。
 

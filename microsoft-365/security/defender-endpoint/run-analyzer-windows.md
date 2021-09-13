@@ -1,5 +1,5 @@
 ---
-title: 在客户端上运行Windows
+title: 在 Windows 上运行客户端分析器
 description: 了解如何在 Windows 运行 Microsoft Defender for Endpoint Client Analyzer。
 keywords: 客户端分析器， 传感器疑难解答， 分析器， mdeanalyzer， windows
 search.product: eADQiWindows 10XVcnh
@@ -21,21 +21,21 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 754ec7b6cdd6e6c5e3c9f5765d839bd94a1d720b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197261"
 ---
-#  <a name="run-the-client-analyzer-on-windows"></a>在客户端上运行Windows
+#  <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-1.  将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查计算机。
+1.  将[MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查的客户端计算机。
 
-2.  提取计算机上MDEClientAnalyzer.zip内容。
+2.  提取计算机上MDEClientAnalyzer.zip的内容。
 
 3.  打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”。
@@ -54,7 +54,7 @@ HardDrivePath\MDEClientAnalyzer.cmd
 除上述内容外，还有一个选项使用 [实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]  
-> 在 windows 10 Windows Server 2019 或更高版本的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接 `MDEClientAnalyzer.exe` 测试。 <br> <br> 在 Windows 8.1、Windows Server 2016 或以前的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时调用用于网络数据通道 URL 的 Microsoft Monitoring Agent 连接工具。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
+> 在 windows 10 Windows Server 2019 或更高版本的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接 `MDEClientAnalyzer.exe` 测试。 <br> <br> 在 Windows 8.1、Windows Server 2016 或以前的操作系统版本上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时还调用用于网络数据通道 URL 的 Microsoft Monitoring Agent 连接工具。 `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe`
 
 ## <a name="result-package-contents-on-windows"></a>结果包内容Windows
 
@@ -65,9 +65,9 @@ HardDrivePath\MDEClientAnalyzer.cmd
 > -   如果计算机尚未EDR， (感知的启动状态将) 。
 >-   如果分析器命令使用了高级疑难解答参数。
 
-默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项。
+默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项目。
 
--   MDEClientAnalyzer.htm 这是主 HTML 输出文件，其中包含计算机上运行的分析器脚本可以 \| 生成的结果和指导。
+-   MDEClientAnalyzer.htm 这是主要的 HTML 输出文件，其中包含计算机上运行的分析器脚本可以 \| 生成的结果和指导。
 
 -   SystemInfoLogs [Folder]
 
@@ -109,6 +109,6 @@ HardDrivePath\MDEClientAnalyzer.cmd
 
 ## <a name="see-also"></a>另请参阅
 - [客户端分析器概述](overview-client-analyzer.md)
-- [下载并运行客户端分析器](download-client-analyzer.md)
-- [用于对问题进行高级疑难解答Windows](data-collection-analyzer.md)
-- [了解分析器 HTML 报告](analyzer-report.md)
+- [下载并运行分析器](download-client-analyzer.md)
+- [用于在 Windows 上进行高级故障排除的数据收集](data-collection-analyzer.md)
+- [了解分析器 HTML 报表](analyzer-report.md)

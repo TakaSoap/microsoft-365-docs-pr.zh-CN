@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 16bcba6b9ee49fbfb611f97b0a7831eb7bd678e0ee2cbd06349971e1745512c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aa1b354c7f9f55b436b234d4b7ba39e4d83ee0e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195595"
 ---
 # <a name="contact-support-for-norfolk-island"></a>联系对诺克岛的支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "53831799"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri 12 PM-8 PM
