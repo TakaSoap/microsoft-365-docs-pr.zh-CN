@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 查看 DOD 和 GCC High root 证书的完整列表， (CA) Microsoft 365。
-ms.openlocfilehash: 4e12f98e2f9949fc108807f3915c52136287bebe8894e36816d8b00ae2d64713
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200542"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365加密链 - DOD 和 GCC High
 
-Microsoft 365利用许多不同的证书提供程序。 下面介绍了 **DOD** 和 Microsoft 365高客户在访问 Microsoft 365 时可能遇到的已知 GCC 根证书的完整Microsoft 365。 有关可能需要在您自己的基础结构中安装的证书的信息，请参阅 Plan for [third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)。
+Microsoft 365利用大量不同的证书提供程序。 下面介绍了 **DOD** 和 Microsoft 365高客户在访问 Microsoft 365 时可能遇到的已知 GCC 根证书的完整Microsoft 365。 有关可能需要在您自己的基础结构中安装的证书的信息，请参阅 Plan for [third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)。
 
 以下证书信息适用于所有 **DOD 和** GCC 高客户。
 
 Last updated： **10/16/2020**
 
 > [!NOTE]
-> 有关适用于全球客户的证书信息，请参阅Microsoft 365[加密链。](encryption-office-365-certificate-chains.md)
+> 有关适用于全球客户的证书 **信息**，请参阅Microsoft 365 [加密链。](encryption-office-365-certificate-chains.md)
 
 | **证书类型** | **P7b 下载** | **CRL 终结点** | **OCSP 终结点** |
 | --- | --- | --- | --- | --- |
@@ -111,7 +111,7 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=DigiCert 全局根 G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 03：3A：F1：E6：A7：11：A9：A0：BB：28：64：B1：1D：09：FA：E5 |
 | **公钥长度** | RSA 2048 位 |
 | **签名算法** | sha256RSA |
@@ -224,7 +224,7 @@ Last updated： **10/16/2020**
 | **公钥长度** | RSA 2048 bits (e 65537)  |
 | **签名算法** | sha256RSA |
 | **Validity Not Before** | 07 年 7 月 17：25：54 2009 UTC |
-| **Validity Not After** | 07 12 月 7 日 17：55：54 2030 UTC |
+| **Validity Not After** | 07.12.17：55：54 2030 UTC |
 | **主题密钥标识符** | 6a：72：26：7a：d0：1e：ef：7d：e7：3b：69：51：d4：6c：8d：9f：90：12：66：ab |
 | **SHA-1 (指纹)** | 8CF427FD790C3AD166068DE81E57EFBB932272D4 |
 | **SHA-256 (指纹)** | 43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339 |
@@ -299,7 +299,7 @@ Last updated： **10/16/2020**
 
 ### <a name="entrust-certification-authority---l1m"></a>**代理证书颁发机构 - L1M**
 
-| **主题** | CN=Entrust Certification Authority - L1M， OU= &quot; (c) 2014 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **主题** | CN=Authorized Certification Authority - L1M， OU= &quot; (c) 2014 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **颁发者** | CN=进行根证书颁发机构 - G2<br>OU= &quot; (c) 2009 Authorized， Inc. - 仅授权使用&quot;<br>OU=请参阅 www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **序列号** | 61：A1：E7：D2：00：00：00：00：51：D3：66：A6 |
@@ -318,11 +318,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0A：AF：A6：C5：CA：63：C4：51：41：EA：3B：E1：F7：C7：53：17 |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |
@@ -335,11 +335,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0C：6A：E9：7C：CE：D5：99：83：86：90：A0：0A：9E：A5：32：14 |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | 00AB91FC216226979AA8791B61419060A96267FD |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |
@@ -352,11 +352,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 0D：7B：ED：E9：7D：82：09：96：7A：52：63：1B：8B：DD：18：BD |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |
@@ -369,11 +369,11 @@ Last updated： **10/16/2020**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **颁发者** | CN=DigiCert 全局根 G2、OU=www.digicert.com、O=DigiCert Inc、 C=US |
+| **颁发者** | CN=DigiCert Global Root G2，OU=www.digicert.com， O=DigiCert Inc， C=US |
 | **序列号** | 02：E7：91：71：FB：80：21：E9：3F：E2：D9：83：83：4C：50：C0 |
 | **公钥长度** | RSA 4096 位 |
 | **签名算法** | sha384RSA |
-| **Validity Not Before** | 2020 年 7 月 29 日，星期三，上午 5：30 |
+| **Validity Not Before** | 2020 年 7 月 29 日，星期三 5：30 AM |
 | **有效期直到** | 2024 年 6 月 27 日，星期四，下午 4：59 |
 | **主题密钥标识符** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
 | **颁发机构密钥标识符** | KeyID：4e：22：54：20：18：95：e6：e3：6e：e6：0f：fa：fa：b9：12：ed：06：17：8f：39 |

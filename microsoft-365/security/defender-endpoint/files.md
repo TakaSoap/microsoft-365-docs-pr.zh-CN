@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 373b28502fd16d8b98b5c48e0329a702c1d5dae20c0c3f95b61d56d545150e91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201190"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -50,16 +50,16 @@ ms.locfileid: "53793846"
 
 ## <a name="properties"></a>属性
 
-|属性 | 类型 | 说明 |
+|属性 | 类型 | 描述 |
 |:---|:---|:---|
 |sha1 | String | 文件内容的 Sha1 哈希 |
 |sha256 | String | 文件内容的 Sha256 哈希 |
 |globalPrevalence | Nullable long | 跨组织的文件普遍程度 |
 |globalFirstObserved | DateTimeOffset | 首次观察到文件时 |
 |globalLastObserved | DateTimeOffset | 上次观测到该文件的时间 |
-|大小 | Nullable long | 文件大小 |
+|size | Nullable long | 文件大小 |
 |fileType | String | 文件类型 |
-|isPeFile | Boolean | 如果文件是可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
+|isPeFile | Boolean | 如果文件可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
 |filePublisher | String | 文件发布者 |
 |fileProductName | String | 产品名称 |
 |signer | String | 文件签名者 |

@@ -1,7 +1,7 @@
 ---
 title: '如何计划 Microsoft Defender 的 Endpoint (Linux) '
 description: 了解如何计划 Microsoft Defender 终结点 (Linux) 以更好地保护组织的资产。
-keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， 适用于终结点的 microsoft defender (linux) '
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,17 +17,17 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 05747374e2a28331ec0742fe11ca2dbc660771c5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570013"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201174"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>计划更新 Microsoft Defender for Endpoint （Linux）
 
 若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](/microsoft-365/security/defender-endpoint/linux-updates)。
 
-Linux (和 Unix) 具有一个称为 **crontab** (的工具，) 任务计划程序工具可用于运行计划任务。
+Linux (和 Unix) 具有一种称为 **"crontab" (** 类似于任务计划程序) 运行计划任务的工具。
 
 ## <a name="pre-requisite"></a>先决条件
 
@@ -107,7 +107,7 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> 在以上示例中，我们将该时间设置为 00 分钟、上午 6 点 (小时（格式为 24 小时) 、每月的任何一天，在星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。
+> 在以上示例中，我们将它设置为 00 分钟、上午 6 点 (小时（格式为 24 小时) 、每月的任何一天，在星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。
 
 按"Esc"
 

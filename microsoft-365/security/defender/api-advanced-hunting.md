@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4064a2d4469fb842a6446c1a869de44a48f2b627cdb25ae4f7999a255c3d04f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53792910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201034"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高级搜寻 API
 
@@ -47,7 +47,7 @@ ms.locfileid: "53792910"
 1. 查询将浏览并返回过去 30 天的数据。
 2. 结果最多返回 100，000 行。
 3. 每个租户每分钟最多可以拨打 15 次呼叫。
-4. 如果租户一直达到 100%， 直到下一个 15 分钟周期之后，查询将被阻止。
+4. 如果租户已达到 100%，查询将受到阻止，直到下一个 15 分钟周期。
 5. 如果单个请求运行的时间超过 10 分钟，它将退出并返回错误。
 6. HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 阅读响应正文，了解已达到的限制。 
 
@@ -86,7 +86,7 @@ Content-Type | application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型 | 说明
+参数 | 类型 | 描述
 -|-|-
 查询 | 文本 | 要运行的查询。 **注意：必需**
 

@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0b21a95930138972ac3f7fe3c1474b0434a68e4c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6a4d548edb660838be9ea3d1a69749f23d3ac6c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201642"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
@@ -49,7 +49,7 @@ ms.locfileid: "58567840"
 
 ### <a name="import-an-existing-xml-custom-view"></a>导入现有 XML 自定义视图
 
-1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从 .txt 更改为 .xml) ：
+1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从.txt更改为.xml) ：
     - 受控文件夹访问事件自定义视图 *：cfa-events.xml*
     - Exploit Protection 事件自定义视图 *：ep-events.xml*
     - 攻击面减少事件自定义视图 *：asr-events.xml*
@@ -57,7 +57,7 @@ ms.locfileid: "58567840"
 
 2. 在 **事件查看器** 中键入"开始"菜单，然后打开 **事件查看器**。
 
-3. 选择 **操作**  >  **导入自定义视图...**
+3. 选择 **操作** \> **导入自定义视图...**
 
    > [!div class="mx-imgBorder"]
    > ![突出显示"Even viewer"窗口左侧的"导入自定义视图"的动画。](images/events-import.gif)
@@ -138,7 +138,7 @@ ms.locfileid: "58567840"
 
 ## <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 Microsoft > 应用程序和服务日志> Windows文件夹或提供程序下 **，** 如下表所列。
+所有攻击面减少事件都位于 **Microsoft** > 应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
 
 可以在事件查看器中Windows这些事件：
 
@@ -154,9 +154,9 @@ ms.locfileid: "58567840"
 
 |功能|提供程序/源|事件 ID|描述|
 |---|---|:---:|---|
-|漏洞保护|Security-Mitigations (内核模式/用户模式) |1 |ACG 审核|
-|漏洞保护|Security-Mitigations (内核模式/用户模式) |2 |ACG 强制|
-|漏洞保护|Security-Mitigations (内核模式/用户模式) |3 |不允许子进程审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |1|ACG 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |2|ACG 强制|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |3|不允许子进程审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |4 |不允许子进程阻止|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |5 |阻止低完整性图像审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |6 |阻止低完整性图像阻止|
@@ -164,9 +164,9 @@ ms.locfileid: "58567840"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |8 |阻止远程图像阻止|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |9 |禁用 win32k 系统调用审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |10 |禁用 win32k 系统调用阻止|
-|漏洞保护|Security-Mitigations (内核模式/用户模式) |11 |代码完整性防护审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |11|代码完整性防护审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |12 |代码完整性防护阻止|
-|漏洞保护|Security-Mitigations (内核模式/用户模式) |13 |EAF 审核|
+|漏洞保护|Security-Mitigations (内核模式/用户模式) |13|EAF 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |14 |EAF 强制|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |15 |EAF+ 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |16 |EAF+ 强制|

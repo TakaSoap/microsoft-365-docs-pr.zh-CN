@@ -18,15 +18,15 @@ search.appverid:
 description: 学习如何使用精确数据匹配和敏感信息类型向导。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: dbba5e0e63f473d12b40c902001332c1689e4d12
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572163"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200533"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>使用精确数据匹配架构和敏感信息类型向导
 
-[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (规则) 文件来帮助简化此过程。
+[使用基于精确数据匹配 (EDM) 分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) 包含多个步骤。  可以使用此向导创建架构和敏感信息类型， (SIT) 模式 (包) 文件，以帮助简化过程。
 
 可以使用此向导而无需：
 
@@ -39,7 +39,7 @@ ms.locfileid: "58572163"
 
 1. 通过 EDM [工作流程概览](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) 熟悉使用 EDM 创建自定义敏感信息类型的步骤。
 
-2. 执行以 .csv [.tsv 格式保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
+2. 执行以 [.tsv 或 .tsv .csv保存敏感数据中的步骤](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)。
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>使用精确数据匹配架构和敏感信息类型模式向导
 
@@ -51,7 +51,7 @@ ms.locfileid: "58572163"
 
 3. 填入相应的 **名称** 和 **说明**。
 
-4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要详细了解如何配置 EDM 以忽略大小写或分隔符，请参阅使用基于 [EDM 和 EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
+4. 如果需要 **此行为，** 请选择"忽略所有架构字段的分隔符和标点符号"。 若要了解有关将 EDM 配置为忽略大小写或分隔符的信息，请参阅使用基于 [EDM 和 EDM](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的精确数据匹配 (自定义) 类型。
 
 5. 在 **架构字段 #1** 中填入所需值，并按需要添加新字段。 
 

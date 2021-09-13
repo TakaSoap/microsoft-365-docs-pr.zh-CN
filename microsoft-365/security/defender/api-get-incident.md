@@ -1,6 +1,6 @@
 ---
 title: 获取事件 API
-description: 了解如何使用"获取事件"API 在事件Microsoft 365 Defender。
+description: 了解如何使用"获取事件"API 获取事件和事件Microsoft 365 Defender。
 keywords: api， 图形 api， 受支持的 api， 获取， 文件， 哈希
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1e50e997dd6a64ac20b06c4a2717f10716642607c815dc12a9732dd64a419c93
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6f1e59dd653ef0718797a4b71e67c3607b39824c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201010"
 ---
 # <a name="get-incident-information-api"></a>获取事件信息 API
 

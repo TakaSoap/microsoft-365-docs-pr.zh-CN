@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何查找适用于管理员的管理员Microsoft 365 商业高级版。
-ms.openlocfilehash: 4d7a5c3e1bacd81d04a32e30c7d12f264cd355c81783409500e416be1345a0c7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200722"
 ---
 # <a name="find-docs-and-training"></a>查找文档和培训
 
@@ -42,6 +42,6 @@ ms.locfileid: "53809596"
 
 ## <a name="join-the-community"></a>加入社区
 
-通过加入 Microsoft Small Business Microsoft 365开始对话、关注讨论并与其他小型企业用户[Community。](https://smallbusiness.microsoft.com/)
+通过加入 Microsoft Small [Business](https://smallbusiness.microsoft.com/)Microsoft 365开始对话、关注讨论，并与其他小型企业用户Community。
 
-如果你有关于其他产品和服务的特定问题，请发布问题，并按照相关讨论在[询问 Microsoft](https://answers.microsoft.com)Community。
+如果你有关于其他产品和服务的具体问题，请发布问题，并按照 Microsoft Community 进行[相关讨论](https://answers.microsoft.com)。

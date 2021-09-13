@@ -12,25 +12,26 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: 使用 Exchange Online 监视获取有关 Microsoft 365 中电子邮件事件或通报信息。
-ms.openlocfilehash: e7e0a39f00b4d23ed870d501a3aefbabaf362e13
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 27f2cfb952359c2ef428b7bd425f611ca9458566
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196781"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>用于 Microsoft 365 的 Exchange Online 监视
 
-可使用 Microsoft 365 管理中心中的 Exchange Online 监视来监视组织的 Microsoft 365 订阅的 Exchange 服务运行状况。 Exchange Online 监视提供了有关在以下类别中收集的事件和通报的信息：
+可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中使用 Exchange Online 监视来监视组织的Microsoft 365订阅的 Exchange 服务的运行状况。 Exchange Online 监视提供了有关在以下类别中收集的事件和通报的信息：
 
 - **基础结构**：在 Microsoft 所拥有的用于提供定期更新和解决问题的 Microsoft 365 基础结构中检测到了问题。 例如，由于 Exchange 或其他 Microsoft 365 云基础结构的问题，用户无法访问 Exchange Online。
 - **第三方基础结构**：在组织已取得相关性的第三方基础结构中检测到问题，并需要组织提供的措施来解决问题。 例如，用户身份验证事务受到阻止用户连接到 Exchange Online 的第三方安全令牌服务 (STS) 提供程序的限制。
 - **客户基础结构**：在组织基础结构中检测到问题，并要求组织执行操作以解决问题。 例如，用户无法访问 Exchange Online，因为证书已过期，他们无法获取由组织托管的 STS 提供商提供的身份验证令牌。
 
-下面是 Microsoft 365 管理中心中" **服务运行状况** "页的示例，可从组织方案的 **运行状况>服务运行状况** 获取。
+下面是Microsoft 365 管理中心中 **服务运行状况** 页的示例，适用于组织方案的 **运行状况** > [**服务运行状况**](https://go.microsoft.com/fwlink/p/?linkid=842900)。
 
 ![Microsoft 365 管理中心中的“服务运行状况”页面](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
@@ -40,7 +41,7 @@ ms.locfileid: "58602994"
 
 **Microsoft 服务运行状况** 下的"**运行状况**"列的值指示服务运行正常，或者有基于 Microsoft 维护云服务的公告或事件。
 
-下面是 Microsoft 365 管理中心中的Exchange Online 监视页面的示例， 可通过 **“运行状况” > “服务运行状况” > “Exchange Online”** 显示组织级别方案d运行状况。
+下面是Microsoft 365 管理中心中 Exchange Online 监视页的示例，其中显示了组织级别方案的运行状况，可从 **运行状况** > [**服务运行状况**](https://go.microsoft.com/fwlink/p/?linkid=842900) > **Exchange Online** 中获取。
 
 ![Microsoft 365 管理中心中的 Exchange Online 监视页面](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
@@ -48,13 +49,13 @@ ms.locfileid: "58602994"
 
 ## <a name="requirements"></a>要求
 
-对于满足这些要求的客户，将启用此预览版： 
+对于满足这些要求的客户，将启用此预览版：
 
 - 你的组织需要至少拥有 5，000 个以下产品的许可证计数：Office 365 E3、Microsoft 365 E3、Office 365 E5 Microsoft 365 E5。
 
   例如，你的组织可以具有 3,000 个 Office 365 E3 许可证，2,500 个 Microsoft 365 E5，即总计拥有 5,500 个合格产品许可证。
 
-- 你的组织需要拥有至少50 个 Exchange Online 月活跃用户。
+- 对于一个或多个核心Microsoft 365服务（包括 Microsoft Teams、OneDrive for Business、SharePoint Online、Exchange Online 和 Office 应用），组织每月至少需要有 50 个活跃用户。
 
 - 具有服务运行状况仪表板级别权限的任何角色都可以访问 Exchange Online 监控。 有关详细信息，请参阅[如何检查 Microsoft 365 服务的运行状况](view-service-health.md)。
 
@@ -100,7 +101,7 @@ ms.locfileid: "58602994"
 
 #### <a name="1-why-dont-i-see-exchange-online-monitoring-under-health-in-the-microsoft-365-admin-center"></a>1. 为什么在 Microsoft 365 管理中心中的“运行状况”下看不到“Exchange Online 监视”？ 
 
-首先，请确保已在 Microsoft 365 管理中心 **主页** 页面上启用了新管理中心。
+首先，请确保已在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>的 **主页** 页上启用了新的管理中心。
 
 然后，请确保满足以下两项要求： 
 
@@ -112,7 +113,7 @@ ms.locfileid: "58602994"
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 仪表板中每个客户端的活动用户账户计数似乎很低。 向用户分配了大量活动的许可证。 这意味着什么？
 
-监视中显示的活跃用户计数是基于 30 分钟的窗口，其中用户执行了功能中调用的活动。 这不应该与使用数字相混淆。 若要查看使用数字，请使用 Microsoft 365 管理中心中的活动报告（**“报告” > “使用情况”**）。
+监视中显示的活跃用户计数是基于 30 分钟的窗口，其中用户执行了功能中调用的活动。 这不应该与使用数字相混淆。 若要查看使用情况编号，请使用Microsoft 365 管理中心（**报表** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">**使用情况**</a>）中的活动报告。
 
 #### <a name="3-will-there-be-other-monitoring-scenarios-for-other-services-such-as-teams-and-sharepoint"></a>3. 其他服务（如 Teams 和 SharePoint）是否有其他监视方案？
 
@@ -120,7 +121,7 @@ Microsoft 在 Microsoft 365 管理中心中的服务运行状况仪表板内直�
 
 #### <a name="4-what-is-the-plan-for-general-availability-of-this-experience"></a>4. 此体验的总体可用性计划是什么？
 
-Microsoft 已直接在 Microsoft 365 管理中心中的 **服务运行状况** 仪表板上集成了 Exchange Online 监视。
+Microsoft 已将 Exchange Online 监视直接集成在Microsoft 365 管理中心中的 <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**服务运行状况** 仪表板</a>上。
 
 通过这项全新的集成体验，Microsoft 计划收集你的反馈，然后定义我们的总体可用性计划。
 

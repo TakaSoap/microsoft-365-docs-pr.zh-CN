@@ -1,7 +1,7 @@
 ---
 title: 易受攻击的设备报告 - 危险和漏洞管理
 description: 显示易受攻击的设备趋势和当前统计信息的报告。 目标是了解设备曝光的目的和范围。
-keywords: Microsoft Defender for Endpoint-tvm 易受攻击的设备， Microsoft Defender for Endpoint， tvm， reduce threat & vulnerability exposure， reduce threat and vulnerability， monitor security configuration
+keywords: 适用于 Endpoint-tvm 易受攻击的设备的 Microsoft Defender， 适用于终结点的 Microsoft Defender， tvm， &漏洞暴露， 减少威胁和漏洞， 监视安全配置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 151e8ca97b5751a7aa83488150b5d950e512c8bdbf9a524da6ecf7a1605e0675
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6118b461d615002423712dc931962c8ab21778c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201070"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻击的设备报告 - 危险和漏洞管理
 
@@ -39,11 +39,11 @@ ms.locfileid: "53889100"
 
 该报告显示包含易受攻击的设备趋势和当前统计信息的图形和条形图。 目标是了解设备曝光的目的和范围。
 
-通过访问易受攻击Microsoft 365 Defender报告门户中的>**报告**
+通过访问"报告"Microsoft 365 Defender访问报告门户中的>**易受攻击的设备**
 
 有两列：
 
-- 趋势 (随着时间的推移) 。 可以显示过去 30 天、3 个月、6 个月或自定义日期范围。
+- 趋势 (随着时间的推移而) 。 可以显示过去 30 天、3 个月、6 个月或自定义日期范围。
 - 状态 (当前信息) 
 
 **筛选器**：你可以按漏洞严重性级别、攻击可用性、漏洞年数、操作系统平台、Windows 10版本或设备组筛选数据。
@@ -76,7 +76,7 @@ ms.locfileid: "53889100"
 
 ## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>按版本图Windows 10易受攻击的设备
 
-因易受攻击的应用程序或操作系统Windows 10每个版本上的设备数量。
+因易受攻击的应用程序或操作系统Windows 10每个版本上的设备数。
 
 ![按版本显示当前易受攻击Windows 10的一个图，以及一个按版本Windows 10易受攻击的设备的图形。](images/tvm-report-version.png)lightbox="images/tvm-report-version.png"：：：
 

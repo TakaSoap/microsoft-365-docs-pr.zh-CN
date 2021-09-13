@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 907925669176135944f2327c39ac86ed823a9fd9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201565"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>提高 Microsoft Defender 终结点安全基线的合规性
 
@@ -33,9 +33,9 @@ ms.locfileid: "58568632"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
-安全基线确保安全功能根据安全专家和系统管理员和系统管理员Windows配置。 部署后，Defender for Endpoint 安全基线将设置 Defender for Endpoint 安全控件以提供最佳保护。
+安全基线确保根据安全专家和专家和系统管理员的指导Windows安全功能。 部署后，Defender for Endpoint 安全基线将设置 Defender for Endpoint 安全控件以提供最佳保护。
 
-若要了解安全基线以及如何使用配置文件在 Intune 上分配这些基线， [请阅读此常见问题解答](/intune/security-baselines#q--a)。
+若要了解安全基线以及如何使用配置文件在 Intune 上分配这些基线， [请阅读此常见问题](/intune/security-baselines#q--a)解答。
 
 在部署和跟踪安全基线的合规性之前：
 
@@ -44,7 +44,7 @@ ms.locfileid: "58568632"
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>比较 Microsoft Defender for Endpoint 和 Windows Intune 安全基线
 
-The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows， including browser settings， PowerShell settings， as well as settings for some security features like Microsoft Defender 防病毒. 相比之下，Defender for Endpoint 基线提供了优化 Defender for Endpoint 堆栈中所有安全控件的设置，包括终结点检测和响应 (EDR) 以及 Windows Intune 安全基线中的设置。 有关每个基线详细信息，请参阅：
+The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows， including browser settings， PowerShell settings， as well as settings for some security features like Microsoft Defender 防病毒. 相比之下，Defender for Endpoint 基线提供优化 Defender for Endpoint 堆栈中所有安全控件的设置，包括终结点检测和响应 (EDR) 以及 Windows Intune 安全基线中的设置。 有关每个基线详细信息，请参阅：
 
 - [Windows Intune 的安全基线设置](/intune/security-baseline-settings-windows)
 - [Intune 的 Microsoft Defender for Endpoint 基线设置](/intune/security-baseline-settings-defender-atp)
@@ -52,7 +52,7 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 理想情况下，已载入 Defender for Endpoint 的设备同时部署两个基线：最初用于保护 Windows 的 Windows Intune 安全基线，然后是分层的 Defender for Endpoint 安全基线，以以最佳方式配置 Defender for Endpoint 安全控件。 若要从风险与威胁的最新数据中获益，并随着基线的不断发展最大程度地减少冲突，请始终在发布所有产品后对所有产品应用基线的最新版本。
 
 > [!NOTE]
-> Defender for Endpoint 安全基线已针对物理设备进行了优化，当前不建议在虚拟机 (VM 或 VDI) 使用。 某些基线设置可能会影响虚拟化环境的远程交互式会话。
+> Defender for Endpoint 安全基线已针对物理设备进行了优化，当前不建议在虚拟机或 VM 或 VDI () 使用。 某些基线设置可能会影响虚拟化环境的远程交互式会话。
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>监视对 Defender for Endpoint 安全基线的合规性
 

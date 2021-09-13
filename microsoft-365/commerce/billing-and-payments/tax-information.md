@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: '了解在不同的地区购买商业版订阅Microsoft 365需要支付多少税款。 '
+description: '了解为不同地区的商业版订阅Microsoft 365需要支付多少税款。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2327e889bbe0d4101f6f92b003dbee21902e9a403ec74c2e8527227bd6074766
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200650"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -116,13 +116,13 @@ ms.locfileid: "53797118"
 
 - **你目前在爱尔兰，并拥有相关的有效 VAT 免税认证：** Microsoft Ireland Operations Ltd. 可能有权从 VAT 中免除交易。 如果没有，Microsoft Ireland Operations Ltd. 将应用当前的爱尔兰 VAT 税率，无论你是否提供 VAT ID。
 
-- **你正在亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国：** 你可以提供本地 VAT ID。 这使 Microsoft Ireland Operations Ltd. 有权对交易进行 VAT 零税率。 但是，你可能有当地 VAT 会计义务，因此如果你有任何顾虑，请咨询税务顾问。 有关说明，请参阅[添加 VAT ID。](#add-your-vat-id)
+- **你正在亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国：** 你可以提供本地 VAT ID。 这使 Microsoft Ireland Operations Ltd. 能够对交易进行 VAT 零税率。 但是，你可能有当地 VAT 会计义务，因此如果你有任何问题，请咨询税务顾问。 有关说明，请参阅[添加 VAT ID。](#add-your-vat-id)
 
 ## <a name="asia-pacific-countries-apac"></a>亚太国家/地区 (APAC)
 
 如果由 Microsoft 区域销售办公室计费，则"Microsoft Regional Sales Pte"。 Ltd." 显示在发票上，你可能需要支付任何适用的增值税、销售税或类似税款。
   
-如果从以下位置之一进行计费，则应用当前当地税款。 位置包含在 [发票上](view-your-bill-or-invoice.md)：
+如果从以下位置之一进行计费，则应用当前当地税。 位置包含在 [你的发票上](view-your-bill-or-invoice.md)：
   
 - 印度
 - 日本
@@ -134,7 +134,7 @@ ms.locfileid: "53797118"
 
 在美国、加拿大、墨西哥、智利和哥伦比亚，根据产品性质和你的位置，各种税率适用。
   
-如果你的帐单由 Microsoft Corporation (查看你的发票[) ，](view-your-bill-or-invoice.md)并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外的 Microsoft 365 注册，则通常不收取税款。
+如果你的帐单由 Microsoft Corporation (查看你的发票[) ，](view-your-bill-or-invoice.md)并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外注册了 Microsoft 365，则通常不收取税款。
 
 ## <a name="add-your-vat-id"></a>添加 VAT ID
 
@@ -162,7 +162,7 @@ ms.locfileid: "53797118"
 
 |国家/地区或区域设置 | 文档 |
 |------------------|----------------|
-| 加拿大 | 豁免证书 (授权书或同等授权)  |
+| 加拿大 | 豁免证书 (或等效授权书)  |
 | 智利 | ICO status/RUT (Registro Unico Tribu一)  |
 | 哥伦比亚 | ICO status/RUT (Registro Unico Tribu一)  |
 | 持有免税的国际标准组织 | 来自当地税务机构的认证/信函确认 |

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 20178cf1238a6dd329db0b84da5b0054d23a519845c967d66dc502f96eee4fb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200889"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 

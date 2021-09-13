@@ -21,25 +21,25 @@ ms.custom:
 - commerce_purchase
 - AdminTemplateSet
 search.appverid: MET150
-description: 在订阅中添加Microsoft 365存储。 通过额外的文件存储，可以在 SharePoint Online 和 OneDrive 中存储更多内容。
+description: 在订阅中添加Microsoft 365存储。 通过额外的文件存储，可以在 SharePoint Online 和 OneDrive。
 ms.date: 04/02/2021
 ms.openlocfilehash: 5c08b105271f3b5297c1ca7258f7b723164e1fe0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200686"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为订阅添加存储空间
 
-如果你的 SharePoint Online 网站集存储空间即将用完，并且你的计划符合条件，则可以为你的订阅增加存储空间。 如果未在可用加载项 **Office 365 额外文件存储空间，** 则意味着你的计划不符合条件。 有关详细信息，请参阅我的 [计划是否符合条件？](#is-my-plan-eligible-for-office-365-extra-file-storage)
+如果你的 SharePoint Online 网站集存储空间即将用完，并且你的计划符合条件，则可以为你的订阅增加存储空间。 如果未在可用加载项 **Office 365 额外文件存储空间** 列表，则意味着你的计划不符合条件。 有关详细信息，请参阅我的 [计划是否符合条件？](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > 如果你通过批量许可或云解决方案提供商购买了订阅，你无法直接从 **microsoft Office 365 额外文件存储空间** 你的组织购买订阅。 请联系你的代表或合作伙伴寻求帮助。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员SharePoint管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员SharePoint管理员才能执行本文中的任务。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="view-available-storage"></a>查看可用存储
 
@@ -61,7 +61,7 @@ ms.locfileid: "58574984"
 如果尚未为订阅购买额外存储空间，可以这样做。
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. 在"购买服务"**页面底部的**"加载项"部分，找到"Office 365 额外文件存储空间""详细信息 **"。**
+2. 在"购买服务"**页面底部的**"加载项"部分，找到"Office 365 额外文件存储空间"，然后选择"详细信息 **"。**
 3. 在产品详细信息页面上，选择下一 **步**。
 4. 如果需要，请选择基本订阅，然后输入要添加的存储 GB 数。
 5. 选择 **"现在签出"。**
@@ -77,7 +77,7 @@ ms.locfileid: "58574984"
 3. 在产品详细信息页面上的"加载项"部分，选择"**管理加载项"。**
 4. 在 **"管理加载项"窗格中**，从"加载项"列表中选择 **"Office 365 额外文件存储空间"。**
 5. 在 **"数量** "文本框中，输入要用于订阅的存储空间的 GB 数。
-6. 选择 **保存**。
+6. 选择“**保存**”。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的计划是否符合使用 Office 365 额外文件存储空间的条件？
 
@@ -90,7 +90,7 @@ Office 365 额外文件存储空间可以用于以下订阅：
 - Office 365 企业版 E5
 - Office 365 A3 (教职员工) 
 - Office 365 A5 (教职员工) 
-- Office 网页版 1 SharePoint计划 1
+- Office 网页版计划 SharePoint 1
 - Office 网页版计划 SharePoint 2
 - SharePoint Online 计划 1
 - SharePoint Online 计划 2
@@ -107,4 +107,4 @@ Office 365 额外文件存储空间可以用于以下订阅：
 ## <a name="related-content"></a>相关内容
 
 [管理网站存储限制](/sharepoint/manage-site-collection-storage-limits) (文章) \
-[设置用户的默认存储空间OneDrive本文](/onedrive/set-default-storage-space) (用户) 
+[在本文OneDrive设置 (](/onedrive/set-default-storage-space)的默认) 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fbdb1725249797ea87104cac5f25eaac9f5bff05967ee11cccb7ae14c349d55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201002"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender事件 API 和事件资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "53888759"
 
 HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 响应正文将包括重置达到的配额之前的时间。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 事件 API 需要针对其每个方法的不同类型的权限。 有关所需权限详细信息，请参阅相应方法的文章。
 
@@ -68,15 +68,15 @@ HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `4
 -|-|-
 incidentId | long | 事件唯一 ID。
 redirectIncidentId | nullable long | 当前事件合并到的事件 ID。
-incidentName | string | 事件的名称。
+incidentName | 字符串 | 事件的名称。
 createdTime | DateTimeOffset | 创建事件时 (UTC) 日期和时间。
 lastUpdateTime | DateTimeOffset | 上次更新事件 (UTC) 日期和时间。
-assignedTo | string | 事件的所有者。
+assignedTo | 字符串 | 事件的所有者。
 severity | 枚举 | 事件的严重性。 可能的值是 ```UnSpecified``` ```Informational``` ```Low``` ：、、、 ```Medium``` 和 ```High``` 。
 status | 枚举 | 指定事件的当前状态。 可能的值是 ```Active``` ：、 ```Resolved``` 和 ```Redirected``` 。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 确定 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
-tags | 字符串列表 | 事件标记列表。
+标记 | 字符串列表 | 事件标记列表。
 comments | 事件注释列表 | 事件注释对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
 警报 | 警报列表 | 相关警报列表。 请参阅列表事件 API [文档](api-list-incidents.md) 的示例。
 

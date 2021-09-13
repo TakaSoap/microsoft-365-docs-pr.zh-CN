@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解Advanced eDiscovery语言Microsoft 365支持使用双字节字符集的 CJK (CJK) 、日语和朝鲜语的语言。
+description: Learn how Advanced eDiscovery in Microsoft 365 supports Chinese， Japanese， and Korean (CJK) languages， which use a double-byte character set.
 ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200582"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 语言支持Advanced eDiscovery
 
-Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，在审阅集的以下高级方案中统称为 *CJK* 语言) ：
+Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，这些语言统称为 *CJK* 语言) ，用于审阅集的以下高级方案：
 
 - 查询 [审阅集 内的数据时](review-set-search.md)。
 
@@ -63,7 +63,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 否，不能按审阅集内的文档语言进行筛选、排序或搜索。
 
-**此 CJK 版本用于审阅集方案是否将影响我的任何现有搜索和审阅集？**
+**此 CJK 版本用于审阅集方案是否会影响我的任何现有搜索和审阅集？**
 
 否，现有的搜索和审阅集不会更改。 无需对现有数据重新索引，英文文本的搜索结果将相同。
 
@@ -75,7 +75,7 @@ Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体�
 
 - OCR 不支持图像文件的 CJK 字符
 
-- CJK (不支持批注视图中) *.eml 和 *.msg[](view-documents-in-review-set.md#annotate-view)等电子邮件文件。
+- CJK (在注释视图中使用 *.eml 和 *.msg [](view-documents-in-review-set.md#annotate-view)) 等电子邮件文件。
 
 - CJK 语言不支持 [在](view-documents-in-review-set.md#text-view) 文本视图中突出显示搜索词。
 

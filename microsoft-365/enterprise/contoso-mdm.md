@@ -13,13 +13,13 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备和在其上运行的应用。
+description: 了解 Contoso 如何使用 Microsoft Intune Microsoft 365 企业版来管理其设备以及在其上运行的应用。
 ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200461"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
@@ -44,8 +44,8 @@ Contoso 不使用 Intune 来：
 
 以下是 Contoso 设置其移动设备管理基础结构的方式：
 
-- 将 Intune 设置为 MDM (移动设备) ，并使用 Azure 上的 Intune 管理内容和管理设备
-- 为设备Azure Active Directory (Azure AD) 组创建，用于 Intune 设置和基于设备的条件访问策略
+- 将 Intune 设置为移动设备管理 (MDM) 颁发机构，并使用 Azure 上的 Intune 管理内容和管理设备
+- 为Azure Active Directory (和 Intune 设置和基于设备的条件访问策略的设备创建 Azure AD) 组
 
   有关详细信息，请参阅 [Contoso 条件访问策略](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
 
@@ -57,7 +57,7 @@ Contoso 不使用 Intune 来：
   - 设备加密，有助于防止未经授权的访问。
   - 六位数的 PIN 或密码。
   - 不活动超时时段。
-  - 防病毒和恶意软件保护和签名更新Windows Defender设备上Windows 10更新。
+  - 防病毒和恶意软件保护以及签名更新Windows Defender设备上Windows 10更新。
   - 在包含Windows 10安全更新的设备上自动更新。
   - 将证书推送到托管设备。
   - 商业与个人数据的明确区分。用户或管理员可以选择性地擦除设备中的公司数据，而将图片、个人电子邮件帐户和个人文件等个人数据保持不变。

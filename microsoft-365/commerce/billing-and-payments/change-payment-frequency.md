@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何更改针对你的企业订阅的计费频率。
 ms.date: 04/02/2021
-ms.openlocfilehash: 14eef03bd156987fe3aa485f8276b37849a58b9cc31e14505de712dbc5655349
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 52bf7f3eda473e241f5fef7c5d7c8e7417ab841e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200685"
 ---
 # <a name="change-your-billing-frequency"></a>更改计费频率
 
@@ -43,4 +43,4 @@ ms.locfileid: "53861419"
 [查看帐单或发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）\
 [支付订阅费用](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
 [了解如何查找和查看帐单或](view-your-bill-or-invoice.md) 发票 (文章) \
-[更改帐单邮寄地址](change-your-billing-addresses.md) (文章) 
+[更改帐单邮寄 (](change-your-billing-addresses.md) 文章) 

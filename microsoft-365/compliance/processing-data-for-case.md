@@ -18,18 +18,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 有关在表单中处理各种Advanced eDiscovery。
-ms.openlocfilehash: 46222f84e1b9436b0bc5d29c1fb10fce1d29d56363deff5f850a13f5c47a2a0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201386"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>在任务中处理Advanced eDiscovery
 
 *处理* 是文件标识、扩展嵌入文档和附件、文本提取以及图像文件的光学字符识别 (OCR) 以及后续索引该内容的过程。  
 
-当您将保管人和非保管人数据源添加到"源"选项卡上的案例时，将处理来自 Microsoft 365 的所有部分索引项，使其完全可搜索。 同样，在将内容添加到来自源和非Microsoft 365的审阅Microsoft 365，也会处理此内容。
+当您将保管人和非保管人数据源添加到"源"选项卡上的案例时，将处理来自 Microsoft 365 的所有部分索引项，使其完全可搜索。 同样，在将内容从数据源和非 Microsoft 365添加到审阅Microsoft 365，也会处理此内容。
 
 高级电子数据展示中的“**处理**”选项卡提供有关不同处理方案的高级索引编制状态的见解。
 

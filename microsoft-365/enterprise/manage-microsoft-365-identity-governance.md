@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何使用标识Microsoft 365功能。
 ms.openlocfilehash: 9b353a83b79c2b66ca224914a7d33a4854919d4e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201346"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>管理Microsoft 365身份管理
 
@@ -55,9 +55,9 @@ Azure AD 访问评审允许你查看用户的访问权限，以确保只有合�
 
 ## <a name="set-up-azure-ad-entitlement-management"></a>设置 Azure AD 权利管理
 
-Wiht Azure AD 权利管理，可以通过自动执行访问请求工作流、访问分配、审阅和过期来大规模管理标识和访问生命周期。
+Wiht Azure AD 权利管理，可以通过自动执行访问请求工作流、访问分配、审阅和过期，大规模管理标识和访问生命周期。
 
-员工需要访问各种组、应用程序和网站才能执行他们的工作。 管理此访问可能充满挑战，因为要求发生变化、添加了新应用程序，或者用户需要其他访问权限。 与其他组织协作时，您可能不知道其他组织中的哪些人员需要访问您组织的资源，外部用户将不知道您的组织正在使用哪些应用程序、组或网站。
+员工需要访问各种组、应用程序和网站才能执行他们的工作。 管理此访问可能充满挑战，因为要求发生变化、添加了新应用程序，或者用户需要其他访问权限。 与其他组织协作时，您可能不知道其他组织中的哪些人员需要访问组织的资源，外部用户将不知道组织正在使用哪些应用程序、组或网站。
 
 Azure AD 权利管理可帮助你更高效地管理对内部和外部SharePoint组、应用程序和网站的访问权限。
  

@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 8e1812d8b6df9b48377978715e3a213e66993965ad1d0e6108457150ad1d3d12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56790759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200953"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自动调查和响应功能中报告误报/负面影响
 
@@ -37,10 +37,10 @@ ms.locfileid: "56790759"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果[自动调查和响应 (AIR](automated-investigation-response-office.md)) 未Office 365检测错误内容，安全运营团队可以采取一些措施来解决此问题。 此类操作包括：
+如果[自动调查和响应 (AIR) ](automated-investigation-response-office.md)中检测到Office 365或错误检测到某些内容，则安全运营团队可以采取一些措施来解决此问题。 此类操作包括：
 
 - [向 Microsoft 报告误报/负数](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [根据需要调整 (](#adjust-an-alert-to-prevent-false-positives-from-recurring) 警报) ;和
+- [根据需要调整警报](#adjust-an-alert-to-prevent-false-positives-from-recurring) (调整) ;和
 - [撤消已采取的修正操作](#undo-a-remediation-action)。
 
 使用本文作为指南。
@@ -55,7 +55,7 @@ ms.locfileid: "56790759"
 
 如果警报是由合法使用触发的，或者该警报不准确，可以在 云应用安全[门户中管理警报](/cloud-app-security/managing-alerts)。
 
-如果你的组织除了使用 Office 365 之外还使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection)并且文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全，你可以为设备创建包含"允许"操作的自定义[指示器。](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
+如果你的组织除了使用 Office 365 之外还使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection)并且文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全，也可以为设备创建包含"允许"操作的自定义[指示器。](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)
 
 ## <a name="undo-a-remediation-action"></a>撤消修正操作
 

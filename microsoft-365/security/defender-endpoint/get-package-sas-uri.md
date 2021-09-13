@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 2a3a1817b1a56ed5c3b529179a6f5253677211de
-ms.sourcegitcommit: 008200dad00701b6d457c1af48a33448235ce1c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58392091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201445"
 ---
 # <a name="get-package-sas-uri-api"></a>获取程序包 SAS URI API
 
@@ -59,8 +59,8 @@ ms.locfileid: "58392091"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："警报调查"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 用户需要具有对设备的访问权限，根据设备组设置 (创建和管理 [设备](machine-groups.md) 组，了解详细信息) 
+> - 用户至少需要具有以下角色权限："警报调查" (请参阅创建和管理角色，了解) [](user-roles.md)
+> - 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -80,7 +80,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回"404 未找到"。
+如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。 此链接的有效时间非常短，应该立即用于将程序包下载到本地存储。 如果集合计算机操作存在，但无法完成，则返回 404 未找到。
 
 ## <a name="example"></a>示例
 

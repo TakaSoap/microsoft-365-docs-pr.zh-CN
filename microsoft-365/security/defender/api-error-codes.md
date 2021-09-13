@@ -1,6 +1,6 @@
 ---
 title: 常见Microsoft 365 Defender REST API 错误代码
-description: 了解 REST API Microsoft 365 Defender代码
+description: 了解 REST API Microsoft 365 Defender的常见代码
 keywords: api， 错误， 代码， 常见错误， Microsoft 365 Defender， api 错误代码
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b972bc1710a5edbb3d351f2a33f966c80266fe4d9f13cfbfa6f6bf320764a93c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53888867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201013"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见Microsoft 365 Defender REST API 错误代码
 
@@ -42,7 +42,7 @@ ms.locfileid: "53888867"
 
 ## <a name="error-codes"></a>错误代码
 
-错误代码 | HTTP 状态代码 | 消息
+错误代码 | HTTP 状态代码 | 邮件
 -|-|-
 BadRequest | BadRequest (400)  | 常规错误请求错误消息。
 ODataError | BadRequest (400)  | 无效的 OData URI 查询 \<the specific error is specified\> 。
@@ -56,7 +56,7 @@ MaximumBatchSizeExceeded | BadRequest (400)  | 已超出最大批次大小。 Re
 MissingRequiredParameter | BadRequest (400)  | 参数 \<the missing parameter\> 缺失。
 OsPlatformNotSupported | BadRequest (400)  | 此操作 \<the client OS Platform\> 不支持操作系统平台。
 ClientVersionNotSupported | BadRequest (400)  | \<The requested action\> 在客户端版本及 \<supported client version\> 以上版本上受支持。
-未经授权 (Unauthorized) | 未经授权 (401)  | 未经授权 (Unauthorized) <br /><br />*注意：通常是由无效或过期的授权标头导致的。*
+未经授权 (Unauthorized) | 未授权 (401)  | 未经授权 (Unauthorized) <br /><br />*注意：通常是由无效或过期的授权标头导致的。*
 禁止访问 (Forbidden) | 禁止 (403)  | 禁止访问 (Forbidden) <br /><br />*注意：有效令牌，但操作权限不足*。
 DisabledFeature | 禁止 (403)  | 未启用租户功能。
 DisallowedOperation | 禁止 (403)  | \<the disallowed operation and the reason\>.

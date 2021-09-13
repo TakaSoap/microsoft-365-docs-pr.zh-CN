@@ -15,15 +15,15 @@ ms.collection:
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
 ms.openlocfilehash: 9315e57fb08f0adda39f1a08107d8d96e1c2bc24
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200441"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
-在广泛推出 Microsoft 365 企业版之前，Contoso 具有运行混合的 Windows 7 (10%) 、Windows 8.1 (65%) 和 Windows 10 (25%) 的 Windows 兼容电脑和设备。 Contoso 希望升级其电脑Windows 10 企业版利用高级安全性并降低自动部署更新的 IT 开销。 
+在广泛推出 Microsoft 365 企业版之前，Contoso 具有与 Windows 兼容的电脑和设备，这些设备混合运行 Windows 7 (10%) 、Windows 8.1 (65%) 和 Windows 10 (25%) 。 Contoso 希望升级其电脑Windows 10 企业版利用高级安全性并降低自动部署更新的 IT 开销。 
 
 在评估其基础结构和业务需求之后，Contoso 确定了这些部署的关键要求：
 

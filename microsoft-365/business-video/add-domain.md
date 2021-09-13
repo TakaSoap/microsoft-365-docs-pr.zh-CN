@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 你的组织可能需要多个域，以便客户可以找到你。 了解如何将另一个域添加到订阅。
-ms.openlocfilehash: c127abf899985bb23cc3a9906425d4d5408a4376fde3bc88a4c3bdda1277bace
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200761"
 ---
 # <a name="add-another-domain"></a>添加其他域
 
@@ -37,19 +38,19 @@ ms.locfileid: "53882605"
 
 ## <a name="try-it"></a>试一试！
 
-1. In the Microsoft 365 管理中心， choose **Setup**.
+1. In the Microsoft 365 管理中心， choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 1. 在 **"设置自定义域"下，选择**"查看 **"。**
 1. 选择 **"管理**"，然后选择"**添加域"。**
 1. 输入要添加的新域名，然后选择"下一步 **"。**
 1. 登录域注册机构（在这种情况下为 GoDaddy），然后选择"下一步 **"。**
 1. 如果系统提示，登录注册机构，然后选择"授权 **"。**
 1. 选择 **"为我添加 DNS 记录"，** 然后选择"下一 **步"。**
-1. 选择新域的服务并清除将由其他域处理的任何服务的复选框。 例如，如果你只想将新域用于电子邮件，请选择"Exchange"，并清除"新建"和"Skype for Business Office 365 移动设备管理"。  
-1. 选择 **"下** 一 **步"，"** 授权 **"，"** 下一步"，然后选择"**完成"。** 已添加新域。
+1. 选择新域的服务并清除将由其他域处理的任何服务的复选框。 例如，如果你只想将新域用于电子邮件，请选择"Exchange"，然后清除"Skype for Business"**和****"Office 365 移动设备管理"。**
+1. 选择 **"下** 一 **步"，"授权****"，"** 下一步"，然后选择"**完成"。** 已添加新域。
 
 若要在你的新域中接收电子邮件，你需要为每个用户添加新的电子邮件别名：
 
-1. 选择 **"用户****"** 和"活动用户"，然后选择将为其分配新别名的用户。
+1. 选择 **"用户**<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**"**</a>和"活动用户"，然后选择将为其分配新别名的用户。
 1. 选择 **"管理电子邮件别名"，** 然后选择"**添加别名"。**
 1. 输入用户名，然后从下拉列表中选择新域。
 1. 选择 **"保存更改**"，然后关闭窗口。
@@ -57,7 +58,7 @@ ms.locfileid: "53882605"
 
 ## <a name="related-content"></a>相关内容
 
-[在本文Microsoft 365 (](../admin/setup/add-domain.md)域) \
+[在本文Microsoft 365 (](../admin/setup/add-domain.md)添加) \
 [添加 DNS 记录以连接域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (文章) \
 [更改名称服务器以使用任意域注册机构设置 Microsoft 365](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)（文章）\
 [域常见问题](../admin/setup/domains-faq.yml) （文章）

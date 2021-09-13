@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58246235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201474"
 ---
 # <a name="get-file-related-machines-api"></a>获取与文件相关的计算机 API
 
@@ -44,7 +44,7 @@ ms.locfileid: "58246235"
 ## <a name="limitations"></a>限制
 
 1. 此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。
-2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256 哈希) 。
+2. 只有 SHA-1 哈希函数 (MD5 或 SHA-256) 。
 
 ## <a name="permissions"></a>权限
 

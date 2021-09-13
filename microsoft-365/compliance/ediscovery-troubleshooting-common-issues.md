@@ -16,15 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解解决电子数据展示中的常见问题时可以采取的基本Office 365步骤。
+description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d71091b4c3545880b103b8d4a4111b3c63d35506
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200577"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -66,7 +66,7 @@ ms.locfileid: "58928748"
 
 如果您收到此错误，我们建议您验证搜索失败的位置，然后仅在失败的位置重新运行搜索。
 
-1. 连接安全&[合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
+1. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -80,7 +80,7 @@ ms.locfileid: "58928748"
 
 ## <a name="errorissue-file-not-found"></a>错误/问题：未找到文件
 
-当运行包括 SharePoint Online 和 OneDrive for Business 位置的电子数据展示搜索时，你可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调) 。
+当运行包括 SharePoint Online 和 OneDrive for Business 位置的电子数据展示搜索时，你可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调的) 。
 
 > 28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。 其他诊断信息：Microsoft。Office。Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从类型为 Document 的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。 相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894 ---> Microsoft。SharePoint。Client.ServerException：***未找到文件***。 位于 Microsoft。SharePoint。Client.ClientRequest.ProcessResponseStream (Microsoft) Stream responseStream。SharePoint。Client.ClientRequest.ProcessResponse () ---内部异常堆栈跟踪结束---
 
@@ -92,7 +92,7 @@ ms.locfileid: "58928748"
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>错误/问题：此文件未导出，因为它不再存在。 该文件包含在估计的搜索结果计数中，因为它仍在索引中列出。 文件最终将从索引中删除，并且将来不会引发错误。
 
-在运行包括联机和联机搜索位置等电子数据SharePoint时OneDrive for Business错误。 电子数据展示依赖 SPO 索引来标识文件位置。 如果文件已删除，但 SPO 索引尚未更新，则可能会发生此错误。
+运行包括联机搜索和联机搜索和SharePoint电子数据展示OneDrive for Business错误。 电子数据展示依赖 SPO 索引来标识文件位置。 如果文件已删除，但 SPO 索引尚未更新，则可能会发生此错误。
 
 ### <a name="resolution"></a>解决方案 
 
@@ -101,11 +101,11 @@ ms.locfileid: "58928748"
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>错误/问题：此搜索结果未下载，因为此搜索结果是一个无法自行下载的文件夹或其他项目，将下载文件夹或库内的任何项目。
 
-在运行包括联机和联机搜索位置等电子数据SharePoint时OneDrive for Business错误。 这意味着我们将尝试导出索引中报告的项目，但它却变成一个文件夹，因此未导出它。 如错误所述，我们不会导出文件夹项目，但会导出其内容。
+运行包括联机搜索和联机搜索和SharePoint电子数据展示OneDrive for Business错误。 这意味着我们将尝试导出索引中报告的项目，但它却变成一个文件夹，因此未导出它。 如错误所述，我们不会导出文件夹项目，但会导出其内容。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>错误/问题：搜索失败，因为未找到收件人
 
-电子数据展示搜索失败，出现错误 `recipient not found` 。 如果在 EOP 服务中找不到用户对象，则Exchange Online Protection (，) 对象尚未同步。
+电子数据展示搜索失败，出现错误 `recipient not found` 。 如果在 EOP 服务器中找不到用户对象，Exchange Online Protection (，) 对象尚未同步。
 
 ### <a name="resolution"></a>解决方案
 
@@ -135,7 +135,7 @@ ms.locfileid: "58928748"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接安全&[合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
+1. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -167,7 +167,7 @@ ms.locfileid: "58928748"
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>错误/问题："发生了 500 (内部) 错误"
 
-运行电子数据展示搜索时，如果搜索连续失败，出现错误类似于"发生内部服务器错误 (500) "，则您可能需要仅在特定邮箱位置重新运行搜索。
+运行电子数据展示搜索时，如果搜索不断失败，出现错误类似于"发生内部服务器错误 (500) "，可能需要仅在特定邮箱位置重新运行搜索。
 
 ![内部服务器错误 500 屏幕截图。](../media/edisc-tshoot-error-500.png)
 
@@ -175,7 +175,7 @@ ms.locfileid: "58928748"
 
 1. 将搜索分解为较小的搜索，然后再次运行搜索。  请尝试使用较小的日期范围或限制要搜索的位置数。
 
-2. 连接安全&[合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
+2. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -191,11 +191,11 @@ ms.locfileid: "58928748"
 
 电子数据展示案例保留策略同步分发错误。 错误显示为：
 
-> "资源：部署策略所花时间超过预期。 可能需要 2 小时才能更新最终部署状态，因此请在几小时后重新检查。"
+> "资源：部署策略所花时间超过预期。 更新最终部署状态可能需要另外 2 个小时，因此请在几小时后重新检查。"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下针对电子数据展示案例保留的命令：
+1. 连接安全&中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令以保留电子数据展示案例：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -209,7 +209,7 @@ ms.locfileid: "58928748"
 
 2. 检查 DistributionDetail 参数中的值，了解错误，如下所示：
 
-   > 错误：资源：部署策略所花时间超过预期。 可能需要 2 小时才能更新最终部署状态，因此请在几小时后重新检查。"
+   > 错误：资源：部署策略所花时间超过预期。 更新最终部署状态可能需要另外 2 个小时，因此请在几小时后重新检查。"
 
 3. 尝试对问题策略运行 RetryDistribution 参数：
 
@@ -265,7 +265,7 @@ ms.locfileid: "58928748"
 
 运行以下脚本以发现最近七天内启动的导出作业数仍在运行。
 
-1. 连接安全[&合规中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+1. 连接安全[与&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 运行以下脚本以收集有关当前导出作业正在触发限制的信息：
 

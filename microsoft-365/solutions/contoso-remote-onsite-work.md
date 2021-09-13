@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: 了解 Contoso Corporation 如何响应 COVID-19 病毒，并针对混合工作设计其软件安装和更新基础结构。
 ms.openlocfilehash: 06ce48969d35017da47be1e75ec3c374b9afb9a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200878"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso 的 COVID-19 响应和支持混合工作
 
@@ -59,7 +59,7 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 ### <a name="roaming"></a>漫游
 
-漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员以及所有远程工作者以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
+漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员、所有远程工作人员以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
 
 由于这些设备可以在任何给定时间连接到 Internet，因此它们使用 Intune 或其他基于云的服务来安装和更新 Windows 10、Microsoft 365 企业应用版 和 Edge。 它们不使用现有的本地 Configuration Manager 分发点。
 
@@ -81,9 +81,9 @@ Microsoft 365标识、安全性和合规性功能专为零信任设计，无论�
 
 ## <a name="new-onboarding-process"></a>新的载入过程
 
-对于颁发给新工作者或数据中心中新服务器的新的专用本地设备，当工作者登录时，基于 OnPremDevices 组中设备成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
+对于颁发给新工作者或数据中心中新服务器的新的专用本地设备，当工作者登录时，基于设备在 OnPremDevices 组的成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
 
-对于颁发给新工作者的新远程设备，当工作者登录时，该设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，远程设备即可使用，并使用已安装的 VPN 客户端访问本地资源，并使用 Microsoft 365网络进行持续更新。
+对于颁发给新工作者的新远程设备，当工作者登录时，设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版 和 Edge 的最新更新。 完成后，远程设备即可使用，并使用已安装的 VPN 客户端访问本地资源，并使用 Microsoft 365网络进行持续更新。
 
 ## <a name="next-step"></a>后续步骤
 

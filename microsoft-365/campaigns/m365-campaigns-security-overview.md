@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何通过提高安全性来保护市场活动或业务Microsoft 365。
-ms.openlocfilehash: 4c520e0557db72ea742c81c578050a87faab4c7d35729e05ed85325cb25ecc0f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何通过增强安全性来保护市场活动或业务Microsoft 365。
+ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200693"
 ---
 # <a name="bump-up-security-protection-for-your-campaign-or-business"></a>为市场活动或业务提供安全保护
 

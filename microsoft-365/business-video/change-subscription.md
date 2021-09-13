@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - commerce_subscriptions
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在需要新功能时将用户移动到其他订阅。
-ms.openlocfilehash: e3059a9e841aba348ef3b3038bb24651c11f48792c421fb25b0bc17b720b5eeb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 95d3a4d8e32fb7e0e56e7318f507a911adbc59d9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200754"
 ---
 # <a name="move-users-to-different-subscriptions"></a>将用户移动到不同的订阅
 
@@ -42,7 +43,7 @@ ms.locfileid: "53803710"
 
 ### <a name="add-a-new-subscription"></a>添加新订阅
 
-1. In the Microsoft 365 管理中心， in the left navigation pane， select **Billing**， and then **Purchase services**.
+1. In the Microsoft 365 管理中心， in the left navigation pane， select **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a>.
 1. 选择要添加的订阅，然后选择"购买 **"。**
 1. Choose how you want to pay and the number of licenses you need， and then select **Check out now**.
 1. 查看订单，然后选择"下一 **步"。**
@@ -50,13 +51,13 @@ ms.locfileid: "53803710"
 
 ### <a name="change-the-license-assigned-to-a-user"></a>更改分配给用户的许可证
 
-1. In the Microsoft 365 管理中心， in the left navigation pane， select **Users**， and then **Active users**.
+1. In the Microsoft 365 管理中心， in the left navigation pane， select **Users**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. 选择用户的名称，然后选择"许可证 **"和"应用**"。
 1. 在 **"许可证**"下，你将看到新订阅。 选中新订阅旁边的复选框，并清除旧订阅旁边的复选框。
 1. 选择“**保存更改**”。 新订阅的许可证现在分配给此用户。
 
 ### <a name="remove-an-unused-license"></a>删除未使用的许可证
 
-1. In the Microsoft 365 管理中心， select **Billing**， and then **Products & services**.
+1. In the Microsoft 365 管理中心， select **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. 选择要更改的订阅，然后选择"**添加/删除许可证"。**
 1. 使用向下箭头减少此订阅的许可证数量，然后选择提交 **更改**。 现在，你的用户的许可证数量正确。

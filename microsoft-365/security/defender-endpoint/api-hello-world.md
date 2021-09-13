@@ -18,11 +18,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201710"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -51,13 +51,13 @@ ms.locfileid: "58550282"
 
 ### <a name="do-i-need-a-permission-to-connect"></a>是否需要连接权限？
 
-对于应用程序注册阶段，你必须在 Azure  AD 租户Azure Active Directory (全局) 角色。
+对于应用程序注册阶段，你必须在 **Azure** AD 租户Azure Active Directory (全局) 角色。
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory
 
 1. 使用全局管理员 **用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory** \> **应用注册** \> **""新注册"。**
+2. 导航到 **Azure Active Directory** \> **应用注册** \> **新注册 。**
 
    ![应用程序注册Microsoft Azure导航的图像。](images/atp-azure-new-app2.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "58550282"
 
 6. 向应用程序添加密码。
 
-   - 单击 **"&密码"，** 将说明添加到密码，然后单击"添加 **"。**
+   - 单击 **"&** 密码"，将说明添加到密码，然后单击"添加 **"。**
 
     **重要** 提示：单击"添加" **后，复制生成的机密值**。 离开后将无法检索！
 
@@ -143,8 +143,8 @@ ms.locfileid: "58550282"
 
 ### <a name="lets-get-the-alerts"></a>让我们获取警报！
 
-- 下面的 **脚本将使用** Get-Token.ps1访问 API，并获取过去 48 小时的警报。
-- 在保存上一脚本的同一文件夹中保存 **此脚本** Get-Token.ps1。
+- 以下 **脚本将使用** Get-Token.ps1访问 API，并获取过去 48 小时的警报。
+- 将此脚本保存在保存上一脚本的同一文件夹中 **Get-Token.ps1。**
 - 该脚本创建两 (json 和 csv) 文件，其中数据与脚本在同一文件夹中。
 
   ```powershell

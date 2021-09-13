@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 1aa843bb1e9ca57d6264f34cbfc7c593f9590c2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573891"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201006"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -42,11 +42,11 @@ ms.locfileid: "58573891"
 
 完成此项目需要 5 到 10 分钟。 此时间估计包括注册应用程序，以及应用 PowerShell 示例脚本中的代码。
 
-### <a name="register-an-app-in-azure-active-directory"></a>在应用程序中注册Azure Active Directory
+### <a name="register-an-app-in-azure-active-directory"></a>在应用商店中注册Azure Active Directory
 
 1. 以具有全局管理员角色的用户 **登录** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册。**
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册 。**
 
    ![应用程序注册Microsoft Azure导航的图像。](../../media/atp-azure-new-app2.png)
 
@@ -82,9 +82,9 @@ ms.locfileid: "58573891"
 有关令牌Azure Active Directory，请参阅[Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
-> 尽管此演示应用中的示例鼓励你为了测试目的粘贴密码值，但不应将密码硬编码为在生产中运行的应用程序。 第三方可以使用你的密码访问资源。 通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](/azure/key-vault/general/about-keys-secrets-certificates)。 有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理 [服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)。
+> 尽管此演示应用中的示例鼓励你为了测试目的粘贴机密值，但不应将密码硬编码到生产中运行的应用程序。 第三方可以使用你的密码访问资源。 通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](/azure/key-vault/general/about-keys-secrets-certificates)。 有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理 [服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)。
 
-1. 复制下面的脚本并将其粘贴到最喜爱的文本编辑器中。 另存 **为Get-Token.ps1**。 您也可以在 PowerShell ISE 中像现在一样运行代码，但应保存它，因为我们将在下一节中使用事件提取脚本时再次运行它。
+1. 复制下面的脚本并将其粘贴到最喜爱的文本编辑器中。 另存 **为Get-Token.ps1。** 您也可以在 PowerShell ISE 中像现在一样运行代码，但应保存它，因为我们将在下一节中使用事件提取脚本时再次运行它。
 
     此脚本将生成一个令牌，并将其保存在工作文件夹中的名称下 *，Latest-token.txt。*
 
@@ -121,7 +121,7 @@ ms.locfileid: "58573891"
 
 ### <a name="get-a-list-of-recent-incidents"></a>获取最近事件的列表
 
-以下 **脚本将使用Get-Token.ps1** 访问 API。 然后，它将检索过去 48 小时内最后更新的事件列表，然后将该列表另存为 JSON 文件。
+下面的 **脚本将使用** Get-Token.ps1访问 API。 然后，它将检索过去 48 小时内最后更新的事件列表，然后将该列表另存为 JSON 文件。
 
 > [!IMPORTANT]
 > 在保存脚本的同一文件夹中保存此 **Get-Token.ps1。**
@@ -174,8 +174,8 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 - [Microsoft 365 DefenderAPI 概述](api-overview.md)
 - [访问Microsoft 365 Defender API](api-access.md)
-- [创建应用以在没有用户Microsoft 365 Defender访问应用程序](api-create-app-web.md)
-- [创建应用以Microsoft 365 Defender访问 API](api-create-app-user-context.md)
-- [创建具有对应用程序 API 的多租户Microsoft 365 Defender应用程序](api-partner-access.md)
+- [创建应用以在没有Microsoft 365 Defender的情况下访问用户](api-create-app-web.md)
+- [创建应用以Microsoft 365 Defender用户访问 API](api-create-app-user-context.md)
+- [创建具有对应用程序 API 的多租户Microsoft 365 Defender应用](api-partner-access.md)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 用户登录和 API 访问授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

@@ -11,19 +11,19 @@ search.appverid: MET150
 localization_priority: Normal
 description: 了解如何在"主题"中管理Microsoft Viva发现。
 ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200377"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>管理主题主题Microsoft Viva主题
 
-可以在管理中管理主题发现[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
+可以在管理主题发现设置[Microsoft 365 管理中心。](https://admin.microsoft.com) 您必须是全局管理员或SharePoint才能执行这些任务。
 
 ## <a name="to-access-topics-management-settings"></a>要访问主题管理设置，请执行以下操作：
 
-1. 在"Microsoft 365 管理中心中，单击"设置"，**然后单击**"**组织设置"。**
+1. In the Microsoft 365 管理中心， click **设置**， then **Org settings**.
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
     ![连接了解知识。](../media/admin-org-knowledge-options-completed.png) 
@@ -42,12 +42,12 @@ ms.locfileid: "58575560"
 Site name,URL
 ```
 
-如果使用网站选取器添加网站，这些网站将添加到现有网站列表以包含或排除。 如果上传 .csv 文件，则会覆盖任何现有列表。 如果之前已包含或排除特定网站，则以文件.csv下载列表，进行更改，并上载新列表。
+如果使用网站选取器添加网站，这些网站将添加到现有网站列表以包含或排除。 如果上传 .csv 文件，则会覆盖任何现有列表。 如果之前已包含或排除特定网站，则以文件.csv下载列表、进行更改并上载新列表。
 
 为主题发现选择站点
 
 1. 在“**主题发现**”选项卡上，“**SharePoint 主题源**”下方，选择“**编辑**”。
-2. 在"**选择SharePoint** 源"页上，选择将在发现SharePoint哪些网站作为主题源进行爬网。 这包括：
+2. 在"**选择SharePoint** 源"页上，选择SharePoint哪些网站将在发现过程中作为主题源进行爬网。 这包括：
     - **所有网站**：SharePoint网站。 这将捕获当前和将来的网站。
     - **全部，所选网站除外**：键入要排除的网站的名称。  还可以上载要选择从发现中退出的网站列表。 将包含未来创建的网站作为主题发现源。 
     - **仅选定网站**：键入要包含的网站的名称。 您还可以上载网站列表。 将不包含未来创建的网站作为发现源。
@@ -55,7 +55,7 @@ Site name,URL
 
     ![有关SharePoint源用户界面的屏幕截图。](../media/k-manage-select-topic-source.png)
    
-3. 单击“保存”。
+3. 单击“**保存**”。
 
 ## <a name="exclude-topics-by-name"></a>按名称排除主题
 
@@ -63,7 +63,7 @@ Site name,URL
 
 1. 在“**主题**”选项卡上，“**排除主题**”下方，选择“**编辑**”。
 2. 单击 **"按名称排除主题"。**
-3. 如果需要创建列表，请下载 .csv 模板并添加要排除的主题 (请参阅下面的使用 .csv *模板*) 。 文件准备就绪后，单击" **浏览** "并上载文件。 如果存在现有列表，可以下载包含.csv列表的列表。
+3. 如果需要创建列表，请下载 .csv 模板并添加要排除 (请参阅下面的使用 .csv *模板*) 。 文件准备就绪后，单击" **浏览** "并上载文件。 如果存在现有列表，可以下载包含.csv的列表。
 4. 单击“保存”。
 
     ![排除主题用户界面的屏幕截图。](../media/km-manage-exclude-topics.png)
@@ -90,6 +90,6 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 [管理主题在Microsoft 365](topic-experiences-knowledge-rules.md)
 
-[在管理中管理主题Microsoft 365](topic-experiences-user-permissions.md)
+[管理主题权限Microsoft 365](topic-experiences-user-permissions.md)
 
 [更改主题中心的名称Microsoft 365](topic-experiences-administration.md)

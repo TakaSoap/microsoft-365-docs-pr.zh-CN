@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 7712500caf2e30d6ecdb8146ecfa4173e087f154
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201497"
 ---
 # <a name="get-domain-related-alerts-api"></a>获取与域相关的警报 API
 
@@ -60,8 +60,8 @@ ms.locfileid: "58611143"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
-> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
+> - 响应将仅包含与设备关联的警报，根据设备组设置 (请参阅创建和管理设备组，了解详细信息) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 

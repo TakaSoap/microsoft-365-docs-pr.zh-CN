@@ -20,11 +20,11 @@ description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200958"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "58573435"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在Microsoft 365邮箱Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365组织中Exchange Online，管理员可以使用 Microsoft 365 Defender 门户中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件进行分析时，你将获得：
 
@@ -45,7 +45,7 @@ ms.locfileid: "58573435"
 - **成绩分析**：由人工评分人员完成审阅，以确认邮件是否是恶意邮件。
 
 > [!IMPORTANT]
-> 负载信誉/触发和成绩分析并非在所有租户中都完成。 当数据出于合规性目的不应离开租户边界时，将阻止信息进入组织外部。
+> 负载信誉/触发和成绩分析并非在所有租户中都完成。 如果出于合规性目的数据不应离开租户边界，则阻止信息进入组织外部。
 
 有关向 Microsoft 提交电子邮件、URL 和附件的其他方法，请参阅向 Microsoft 报告 [邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "58573435"
 
 ## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 报告可疑内容
 
-1. 在Microsoft 365 Defender门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在 **"提交"** 页上，确认已选择" **已提交进行分析"** 选项卡，然后单击 ![ "广告图标"。](../../media/m365-cc-sc-create-icon.png) **提交到 Microsoft 进行分析**。
 
@@ -110,7 +110,7 @@ ms.locfileid: "58573435"
 > [!div class="mx-imgBorder"]
 > ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
 
-### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>向 Microsoft 提交可疑的电子邮件附件
+### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
 
 1. 在"**选择提交类型"框中****，从下拉列表** 中选择"文件"。
 
@@ -118,7 +118,7 @@ ms.locfileid: "58573435"
 
 3. 在 **"选择提交** 到 Microsoft 的原因"部分中，选择以下选项之一：
    - **如果误报，不应 (阻止)**
-   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，" **恶意软件"是唯** 一的选择，并自动选中。
+   - **应已被阻止**：在"此 **URL 应** 已分类为出现的部分"中，恶意软件 **是唯一** 的选择，并且会自动选中。
 
 4. 完成后，单击"提交 **"** 按钮。
 
@@ -127,7 +127,7 @@ ms.locfileid: "58573435"
 
 ## <a name="view-admin-submissions-to-microsoft"></a>查看向 Microsoft 提交的管理员
 
-1. 在Microsoft 365 Defender门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在 **"提交"** 页上，确认已选中" **已提交进行分析"** 选项卡。
 
@@ -170,7 +170,7 @@ ms.locfileid: "58573435"
      - **无**
      - **类型**
      - **原因**
-     - **状态**
+     - **Status**
      - **重新扫描结果**
 
    - 若要导出条目，请单击"导出 **"。** 在出现的对话框中，保存.csv文件。
@@ -188,9 +188,9 @@ ms.locfileid: "58573435"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上查看报告的用户。 [](enable-the-report-phish-add-in.md) 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用[Outlook 网页版](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户报告的邮件"选项卡上看到报告的用户。 [](enable-the-report-phish-add-in.md) 
 
-1. 在Microsoft 365 Defender门户中，转到"电子邮件 **&协作** \> **提交"。**
+1. 在 Microsoft 365 Defender 门户中，转到"电子邮件 **&协作** \> **提交"。**
 
 2. 在" **提交"** 页上，选择" **用户报告的邮件"** 选项卡。
 

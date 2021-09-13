@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2bac78ea50d17bb3ddb9620e5c5787199465196a6d6ae80ba13f5425633984ff
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a3b034cf0d36bd200f48e87983b9b467ab40574c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200813"
 ---
 # <a name="contact-support-for-tuvalu"></a>联系支持人员，该技术支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53882801"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri上午 9 点到下午 5 点

@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Defender for Endpoint 的 OData 查询
 ms.reviewer: ''
-description: 使用这些 Open Data Protocol (OData) 查询的示例，帮助处理 Microsoft Defender for Endpoint 中的数据访问协议。
+description: 使用这些开放式数据协议 (OData) 查询的示例，帮助处理 Microsoft Defender for Endpoint 中的数据访问协议。
 keywords: api， 受支持的 api， odata， 查询
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e88371ed141b54d873193df075313d2aed9786385ac4fbc07d5fe579d7bff59f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201198"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>使用 Microsoft Defender for Endpoint 的 OData 查询
 
@@ -44,7 +44,7 @@ ms.locfileid: "53793990"
 ## <a name="properties-that-support-filter"></a>支持属性$filter
 
 - [警报](alerts.md) `alertCreationTime` `lastUpdateTime` `incidentId` `InvestigationId` ：、、、、 `status` `severity` 和 `category` 。
-- [计算机](machine.md) `ComputerDnsName` `LastSeen` ：、、、 `HealthStatus` `OsPlatform` 和 `RiskScore` `RbacGroupId` 。
+- [计算机](machine.md) `ComputerDnsName` `LastSeen` `HealthStatus` ：、、、、 `OsPlatform` `onboardingStatus` `RiskScore` 和 `RbacGroupId` 。
 - [MachineAction](machineaction.md)： `Status` 、 、 和 `MachineId` `Type` `Requestor` `CreationDateTimeUtc` 。
 - [指示器](ti-indicator.md) `indicatorValue` `indicatorType` `creationTimeDateTimeUtc` ：、、、 `createdBy` `severity` 和 `action` 。
 

@@ -22,11 +22,11 @@ description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打�
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
 ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408042"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200618"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -91,7 +91,7 @@ Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-下表列出了可用的产品及其 **ProductId。**
+下表列出了可用产品及其 **ProductId。**
 
 | 产品 | ProductId |
 |-----------------------------|--------------|

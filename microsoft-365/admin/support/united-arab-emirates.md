@@ -1,5 +1,5 @@
 ---
-title: '阿拉伯联合酋长国/ (阿拉伯联合酋长国的支持) '
+title: '阿拉伯联合酋长国/ (的支持信息) '
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,21 +12,21 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bb4ae55c82e5653654484dddbebe7116afeee3e7bdae6c5beb70a1ff7deb3ad3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4dddb33d9425bebaebc6a5e8dbb0b17e039eff1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200809"
 ---
-# <a name="contact-support-for-uae-united-arab-emirates"></a>请联系阿拉伯联合酋长国 (阿拉伯联合酋长国) 
+# <a name="contact-support-for-uae-united-arab-emirates"></a>联系阿拉伯联合酋长国 (支持) 
 
 [查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 8000 444 1578
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 阿拉伯语：Sun-Thu 10 AM-6 PM

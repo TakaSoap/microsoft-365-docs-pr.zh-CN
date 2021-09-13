@@ -18,15 +18,15 @@ ms.custom:
 - O365ITProTrain
 description: 了解如何使用 PowerShell 管理安全组。
 ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201318"
 ---
 # <a name="manage-security-groups-with-powershell"></a>使用 PowerShell 管理安全组
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 可以使用 PowerShell for Microsoft 365作为管理安全Microsoft 365 管理中心的替代方法。 
 
@@ -34,7 +34,7 @@ ms.locfileid: "58356260"
 
 当本文中的命令块要求您指定变量值时，请使用这些步骤。
 
-1. 将命令块复制到剪贴板并将其粘贴到 isE 记事本 或 PowerShell 集成脚本 (中) 。
+1. 将命令块复制到剪贴板并将其粘贴到 ISE 记事本或 PowerShell 集成脚本 (中) 。
 2. 填写变量值并删除"<"和">"字符。
 3. 在 PowerShell 窗口或 PowerShell ISE 中运行命令。
 

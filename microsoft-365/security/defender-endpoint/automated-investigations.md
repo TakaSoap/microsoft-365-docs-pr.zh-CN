@@ -22,11 +22,11 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 ms.openlocfilehash: 00cf587af9eaeb6199b8058ff231c5704ca19f78
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201677"
 ---
 # <a name="overview-of-automated-investigations"></a>自动调查概述
 
@@ -40,7 +40,7 @@ ms.locfileid: "58510057"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-自动调查中的技术使用各种检查算法，并且基于安全分析师使用的过程。 AIR 功能旨在检查警报并立即采取措施来解决违规问题。 AIR 功能可显著减少警报量，使安全操作专注于更复杂的威胁和其他高价值计划。 所有修正操作（无论是挂起操作还是已完成操作）都跟踪在 [操作中心中](auto-investigation-action-center.md)。 在操作中心中，挂起的操作 (或拒绝) ，如果需要，可以撤消已完成的操作。
+自动调查中的技术使用各种检查算法，并且基于安全分析师使用的过程。 AIR 功能旨在检查警报并立即采取措施来解决违规问题。 AIR 功能可显著减少警报量，使安全操作专注于更复杂的威胁和其他高价值计划。 所有修正操作（无论是挂起操作还是已完成操作）都跟踪在操作 [中心中](auto-investigation-action-center.md)。 在操作中心中，挂起的操作 (或拒绝) ，如果需要，可以撤消已完成的操作。
 
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
@@ -79,10 +79,10 @@ ms.locfileid: "58510057"
 
 根据为 [组织](automation-levels.md) 设置的自动化级别以及其他安全设置，修正操作可以自动执行，或仅在安全运营团队批准后执行。 可影响自动修正的其他安全设置包括 [保护来自](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) PUA (可能不需要) 。
 
-所有修正操作（无论是挂起操作还是已完成操作）都跟踪在 [操作中心中](auto-investigation-action-center.md)。 如有必要，安全运营团队可以撤消修正操作。 若要了解更多信息，请参阅 [在自动调查后审阅并批准修正操作](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
+所有修正操作（无论是挂起操作还是已完成操作）都跟踪在操作 [中心中](auto-investigation-action-center.md)。 如有必要，安全运营团队可以撤消修正操作。 若要了解更多信息，请参阅 [在自动调查后审阅并批准修正操作](/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> 查看安全中心中新的统一Microsoft 365页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 查看安全中心内新的统一Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 ## <a name="requirements-for-air"></a>AIR 的要求
 
@@ -92,7 +92,7 @@ ms.locfileid: "58510057"
 
 - Windows Server 2019
 - Windows 10版本 1709 (版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10版本 1803 (OS 内部版本 17134.704，包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本
+- Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
 - Windows 10版本[1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 
 ## <a name="next-steps"></a>后续步骤
@@ -105,4 +105,4 @@ ms.locfileid: "58510057"
 
 - [PUA 保护](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [自动调查和响应Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft 365 Defender 中的自动调查和响应](/microsoft-365/security/defender/mtp-autoir)

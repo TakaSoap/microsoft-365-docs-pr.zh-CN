@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: c89b5b676e25b23e0e5fdfb925f6894647cb41e5
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201154"
 ---
 # <a name="manage-automation-file-uploads"></a>管理自动化文件上载
 
@@ -33,7 +33,7 @@ ms.locfileid: "58823861"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationefileuploads-abovefoldlink)。
 
-启用内容分析功能，以便某些文件和电子邮件附件可以自动上载到云中，以便自动调查进行其他检查。
+启用内容分析功能，以便某些文件和电子邮件附件可以自动上载到云，以便自动调查中的附加检查。
 
 通过指定文件扩展名和电子邮件附件扩展名来标识文件和电子邮件附件。
 

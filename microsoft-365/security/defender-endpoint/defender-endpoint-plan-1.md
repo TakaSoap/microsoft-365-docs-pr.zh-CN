@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 21f9de0c92145f7029b7529a242fe58c344768a0
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201225"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>适用于 Endpoint Plan 1 的 Microsoft Defender 预览 (概述) 
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint 是一个企业终结点安全平台，旨在帮
 使用本指南可：
 
 - [大致了解 Defender for Endpoint Plan 1 (预览版) ](#defender-for-endpoint-plan-1-capabilities)
-- [比较 Defender for Endpoint Plan 1 与计划 2](defender-endpoint-plan-1-2.md)
+- [Compare Defender for Endpoint Plan 1 到计划 2](defender-endpoint-plan-1-2.md)
 - [了解如何为终结点计划 1 设置和配置 Defender](mde-p1-setup-configuration.md)
 - [开始使用 Microsoft 365 Defender 门户，可在其中查看事件和警报、管理设备和使用有关检测到的威胁的报告](mde-plan1-getting-started.md)
 - [获取维护和操作概述](mde-p1-maintenance-operations.md)
@@ -58,7 +58,7 @@ Defender for Endpoint Plan 1 (preview) 包括以下功能：
 以下各节提供有关这些功能的更多详细信息。 
 
 > [!IMPORTANT]
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本指南包括指向在线内容的链接，这些链接可能描述或描述 Defender for Endpoint Plan 1 (预览版中未) 。
+> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 本指南包含指向在线内容的链接，这些链接可能描述或描述 Defender for Endpoint Plan 1 (预览版中未包含) 。
 
 ## <a name="next-generation-protection"></a>下一代保护
 
@@ -76,9 +76,9 @@ Defender for Endpoint Plan 1 (preview) 包括以下功能：
 
 | 文件/设备 | 操作 | 说明 |
 |:---|:---|:---|
-| Device | 运行防病毒扫描 | 启动防病毒扫描。 如果在设备上检测到任何威胁，则防病毒扫描期间通常会解决这些威胁。 |
-| Device | 隔离设备 | 断开设备与组织的网络的连接，同时保留与 Defender for Endpoint 的连接。 此操作使你能够监视设备并根据需要执行进一步操作。 |
-| 文件 | 停止和隔离文件 |停止进程运行并隔离关联的文件。 |
+| 设备 | 运行防病毒扫描 | 启动防病毒扫描。 如果在设备上检测到任何威胁，则防病毒扫描期间通常会解决这些威胁。 |
+| 设备 | 隔离设备 | 断开设备与组织的网络的连接，同时保留与 Defender for Endpoint 的连接。 此操作使你能够监视设备并根据需要执行进一步操作。 |
+| 文件 | 停止和隔离 |停止进程运行并隔离关联的文件。 |
 | 文件 | 添加用于阻止或允许文件的指示器 | 阻止指示器阻止在设备上读取、写入或执行可移植可执行文件。 <p>允许指示器可防止阻止或修正文件。 |
 
 若要了解更多信息，请参阅以下文章：
@@ -94,7 +94,7 @@ Defender for Endpoint Plan 1 (preview) 包括以下功能：
 - [勒索软件缓解](#ransomware-mitigation)
 - [设备控制](#device-control)
 - [Web 保护功能](#web-protection)
-- [网络保护](#web-protection)
+- [网络保护功能](#web-protection)
 - [网络防火墙](#network-firewall)
 - [应用程序控制](#application-control)
 
@@ -153,7 +153,7 @@ Defender for Endpoint Plan 1 (preview) 包括以下功能：
 
 应用程序控件通过仅在系统核心和内核Windows中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
 
-若要了解更多信息，请参阅应用程序[控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+若要了解更多信息，请参阅[应用程序控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
 ## <a name="centralized-management"></a>集中管理
 
@@ -169,14 +169,14 @@ Defender for Endpoint Plan 1 (preview) 包括 Microsoft 365 Defender 门户，�
 
 ### <a name="reporting"></a>报告
 
-Microsoft 365 Defender门户 () 可轻松访问有关检测到 [https://security.microsoft.com](https://security.microsoft.com) 的威胁和操作的信息，以应对这些威胁。 
+通过Microsoft 365 Defender门户 () 可轻松访问有关检测到的威胁和 [https://security.microsoft.com](https://security.microsoft.com) 操作的信息，以应对这些威胁。 
 
 - **主页** 包含卡片，可一目了然地显示哪些用户或设备处于风险中、检测到的威胁数量以及创建哪些警报/事件。
 - **"事件&** 警报"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
 - 操作 **中心** 列出了已采取的修正操作。 例如，如果文件被发送到隔离区，或 URL 被阻止，每个操作都列在"历史记录"选项卡上的"操作 **中心** "中。
 - " **报告** "部分包括显示检测到的威胁及其状态的报告。 
 
-若要了解更多信息，请参阅 Microsoft Defender 终结点计划[1 (预览版) 。 ](mde-plan1-getting-started.md)
+若要了解更多信息，请参阅 Microsoft [Defender for Endpoint Plan 1 (预览版) 。 ](mde-plan1-getting-started.md)
 
 ### <a name="apis"></a>API
 

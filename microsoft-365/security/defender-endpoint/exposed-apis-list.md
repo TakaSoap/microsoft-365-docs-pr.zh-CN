@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d31cb5d11d6b998a8363c8a8056135155bbc2fa6da20c39d7583207d8de0716
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8154c144e82a38665f18ec35fdc8d49247ad75ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201202"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>支持的 Microsoft Defender for Endpoint API
 
@@ -48,7 +48,7 @@ ms.locfileid: "53869401"
 >
 > 若要使用特定版本，请使用此格式 `https://api.securitycenter.microsoft.com/api/{Version}` ：。 例如：`https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> 如果不指定任何版本 (例如) `https://api.securitycenter.microsoft.com/api/alerts` 将进入最新版本。
+> 如果不指定任何版本 (例如，) `https://api.securitycenter.microsoft.com/api/alerts` 将进入最新版本。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "53869401"
 [修正活动方法和属性](get-remediation-methods-properties.md) | 运行 API 调用（如 \- 获取所有修正任务、获取公开的设备修正任务和按 id 获取一个修正任务）。
 [分数方法和属性](score.md) | 运行 API 调用（如 \- 获取曝光分数或获取设备安全分数）。
 [软件方法和属性](software.md) | 运行 API 调用，如 \- 按软件列出漏洞。
-[用户方法](user.md) | 运行 API 调用，例如 \- 获取与用户相关的警报和与用户相关的设备。
+[用户方法](user.md) | 运行 API 调用，如 \- 获取与用户相关的警报和与用户相关的设备。
 [漏洞方法和属性](vulnerability.md) | 按漏洞运行 API 调用 \- ，如列表设备。
 
 ## <a name="see-also"></a>另请参阅

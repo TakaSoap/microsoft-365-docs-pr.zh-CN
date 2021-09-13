@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: a69a90db168bd58266c65c8573a233e1932e025c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201078"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>通过威胁分析跟踪和响应新出现的威胁
 
@@ -106,7 +106,7 @@ _威胁分析报告的概述部分_
 - **安全更新**：部署安全更新程序或漏洞修补程序
 - **Microsoft Defender 防病毒设置**
   - 安全智能版本
-  - 云传递保护
+  - 云端保护
   - PUA 保护 (可能不需要) 应用程序
   - 实时保护
 

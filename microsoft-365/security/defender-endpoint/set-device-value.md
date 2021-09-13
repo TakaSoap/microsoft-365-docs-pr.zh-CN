@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc57fd850e0cbb6165e624127462b167b53dec65e9151d6b7bbe930160bc0787
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 480ac20e3fe6ac9b3b8c7aa66b759b361a96a595
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201102"
 ---
 # <a name="set-device-value-api"></a>设置设备值 API
 
@@ -61,8 +61,8 @@ ms.locfileid: "53817668"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："管理安全性设置"。 有关详细信息 (请参阅 [创建和管理角色，](user-roles.md) 了解) 
-> - 用户需要具有计算机访问权限，根据计算机组设置 (创建和管理计算机组，了解) [](machine-groups.md)
+> - 用户至少需要具有以下角色权限："管理安全性设置"。 有关详细信息， (请参阅创建 [和管理](user-roles.md) 角色，了解) 
+> - 用户需要具有计算机访问权限，根据计算机组设置 (请参阅创建和管理计算机组，了解) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -81,7 +81,7 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 DeviceValue|枚举|设备值。 允许的值包括："Normal"、"Low"和"High"。 **必需**。
 

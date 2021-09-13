@@ -23,15 +23,15 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何管理Microsoft 365用户帐户密码。
 ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201345"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>管理Microsoft 365用户帐户密码
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 可以通过几种Microsoft 365管理用户帐户密码，具体取决于您的标识配置。 可以在 Microsoft 365 管理中心、Active Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理中心管理用户帐户。 [](../admin/add-users/index.yml)
 
@@ -68,7 +68,7 @@ ms.locfileid: "58356656"
 
 ## <a name="simplify-user-sign-in"></a>简化用户登录
 
-Azure AD 无缝单一 Sign-On (Azure AD 无缝 SSO) 可与 PHS 和 Pass-Through 身份验证 (PTA) 一起运行，以允许你的用户登录到使用 Azure AD 用户帐户的服务，而无需键入其密码，在许多情况下，也无需键入其用户名。 这可使用户更方便地访问基于云的应用程序（如 Office 365）而无需任何额外的本地组件（如联合身份验证服务器）。
+Azure AD 无缝单一 Sign-On (Azure AD 无缝 SSO) 可与 PHS 和 Pass-Through 身份验证 (PTA) 一起运行，以允许用户登录到使用 Azure AD 用户帐户的服务，而无需键入其密码，在许多情况下，也无需键入其用户名。 这可使用户更方便地访问基于云的应用程序（如 Office 365）而无需任何额外的本地组件（如联合身份验证服务器）。
 
 将使用 Azure AD Connect 工具配置 Azure AD 无缝 SSO。 请参阅[配置 Azure AD 无缝 SSO 说明](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)。
 
@@ -87,6 +87,6 @@ Azure AD 无缝单一 Sign-On (Azure AD 无缝 SSO) 可与 PHS 和 Pass-Through 
 
 ## <a name="simplify-password-resets"></a>简化密码重置
 
-SSPR (自助服务密码重置) 允许用户重置或解锁其密码或帐户。 为提醒你避免误用或滥用，可以使用详细报告，跟踪用户访问系统的时间，并进行通知。 必须先启用 [密码写回](#pw_writeback) ，然后才能部署密码重置。
+SSPR (自助服务密码重置) 用户可以重置或解锁其密码或帐户。 为提醒你避免误用或滥用，可以使用详细报告，跟踪用户访问系统的时间，并进行通知。 必须先启用 [密码写回](#pw_writeback) ，然后才能部署密码重置。
 
 请参阅[推出密码重置说明](/azure/active-directory/authentication/howto-sspr-deployment)。

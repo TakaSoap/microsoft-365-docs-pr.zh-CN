@@ -23,20 +23,20 @@ search.appverid:
 - BCS160
 - MET150
 description: 登录到 Microsoft 365。 保护你的业务、实践或市场活动免受电子邮件、数据和通信的网络安全威胁。
-ms.openlocfilehash: f5ef951bd8c0a6024ecbf9ae4ccb38a89bf327b157d672477dbd2de8aa33aac3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881693"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200690"
 ---
 # <a name="sign-in-to-microsoft-365"></a>登录Microsoft 365
 
 ## <a name="for-business-or-campaign-admins"></a>对于企业或市场活动管理员
 
-如果你注册了Microsoft 365，则你是Microsoft 365管理员。下面是如何登录的：
+如果你注册了Microsoft 365，你是Microsoft 365管理员。下面是如何登录的：
 
-1. 查找我们在注册步骤 2 中发送给我们 [的电子邮件地址的用户名和密码](m365-campaigns-sign-up.md#steps-to-sign-up)。
+1. 查找我们在注册步骤 2 中发送给我们的电子邮件地址的 [用户名和密码](m365-campaigns-sign-up.md#steps-to-sign-up)。
 2. 在浏览器中，转到 上 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Microsoft 365 管理中心。
 3. 键入用户名和密码。 选择“**登录**”。
 4. 在页面的右上方，找到 **"预览版"** 控件。 选择 **"预览"，** 以便可以使用为市场活动提供向上保护 [中所述的所有控件](m365-campaigns-security-overview.md)。

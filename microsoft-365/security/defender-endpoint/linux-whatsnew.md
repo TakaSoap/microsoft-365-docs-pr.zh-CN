@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: reference
 ms.technology: mde
 ms.openlocfilehash: 506b8103946d16c5ec85cc6d3cb449ef67f340f8
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201166"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -48,7 +48,7 @@ ms.locfileid: "58863986"
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
 - Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
-- 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用有一个使用有一个更新的系统）的系统上导致操作系统挂起的问题
+- 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用一个系统，而使用一个
 - 性能改进& Bug 修复
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0) 
@@ -63,9 +63,9 @@ ms.locfileid: "58863986"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR Linux 版本现已[普遍可用](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- 新增了命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
-- 使用 `mdatp diagnostic create` 新的参数扩展 () ，该参数允许将诊断日志 `--path [directory]` 保存到其他目录
+- EDR Linux 版本现已[发布](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- 添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () 
+- 使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录
 - Bug 修复&性能改进
 
 ## <a name="1011299"></a>101.12.99

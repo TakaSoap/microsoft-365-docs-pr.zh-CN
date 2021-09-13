@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365文档导航提示
-description: 使用技巧导航 Microsoft 365 技术文档的一些技巧 - 介绍了中心页、目录、页眉等内容，以及如何使用痕迹导航和如何使用版本筛选器。
+description: 使用技巧 Microsoft 365 技术文档的一些技巧 - 介绍了中心页、目录、页眉等内容，以及如何使用痕迹导航和如何使用版本筛选器。
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -11,11 +11,11 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201237"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365文档导航指南
 
@@ -43,9 +43,9 @@ ms.locfileid: "58575212"
 ![使用筛选框。](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>版本筛选器
-本Microsoft 365文档提供了其他产品的内容，包括 Office 365 Germany 和由世纪Office 365中国世纪 (运营的) 。 这些版本之间的功能可能会有所不同，因此，有时内容本身会有所不同。
+本Microsoft 365文档提供了其他产品的内容，包括 Office 365 Germany 和由世纪Office 365中国世纪 (运营) 。 这些版本之间的功能可能会有所不同，因此，有时内容本身会有所不同。
 
-可以使用版本筛选器确保看到适用于相应版本版本Microsoft 365：
+可以使用版本筛选器来确保看到适用于相应版本版本Microsoft 365：
 
 ![Microsoft 365版本筛选器。](media/m365-version-filter.png)
 

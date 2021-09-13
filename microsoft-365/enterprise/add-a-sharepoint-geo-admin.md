@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 description: 需要为每个地理位置配置单独的管理员？ 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d44e3e10074d93d091b3a581d8d13216e21e0ab8b10b0579bded77166c66ff18
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 32fe5e934e6a3d6f18c802c3c427974e67c1b454
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200497"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 

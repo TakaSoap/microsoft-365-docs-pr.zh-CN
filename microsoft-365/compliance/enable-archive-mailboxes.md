@@ -21,11 +21,11 @@ ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
 ms.openlocfilehash: 28af0de029deb2dc732f4e31f7f85f80db6bf081
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200566"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 

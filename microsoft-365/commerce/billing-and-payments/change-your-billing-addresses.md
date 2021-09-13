@@ -19,14 +19,14 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: 了解如何更新帐单邮寄地址或用于接收适用于Microsoft 365帐单通知的电子邮件地址。
+description: 了解如何更新帐单邮寄地址或用于接收商业Microsoft 365通知的电子邮件地址。
 ms.date: 04/07/2021
-ms.openlocfilehash: eb2b50bb5032b30961a14d38bbdb6c04a04a1105ce7000adde8edc1e10a16cb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200681"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -132,7 +132,7 @@ ms.locfileid: "53802930"
   
 4. 在"**联系人详细信息"** 框中，选择"编辑 **"。**
 
-5. 在 **"备用电子邮件**"框中，键入您想要使用的备用电子邮件地址，然后选择"保存 **"。**
+5. 在 **"备用电子邮件**"框中，键入想要使用的备用电子邮件地址，然后选择"保存 **"。**
   
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>更改其他管理员的备用电子邮件地址
 
@@ -165,4 +165,4 @@ ms.locfileid: "53802930"
 [查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
 [了解帐单或发票](understand-your-invoice2.md) (文章) \
 [支付订阅费用](pay-for-your-subscription.md) (文章) \
-[订阅和计费 - 管理员帮助](../index.yml) (链接页面) 
+[订阅和计费 - 管理员帮助](../index.yml) (链接页) 

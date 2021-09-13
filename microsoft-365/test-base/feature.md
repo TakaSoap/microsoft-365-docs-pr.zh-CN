@@ -15,17 +15,17 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576028"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200870"
 ---
 # <a name="windows-feature-update-validation"></a>Windows功能更新验证
 
 是否需要深入了解应用程序在下次发布 Windows 10 或 Windows 11 时将如何执行，而无需维护环境来验证新的 Windows 功能？ 
 
-是否要针对 Azure 环境中预览体验Windows内部版本运行验证测试？
+是否要针对 Azure 环境中预览体验计划Windows内部版本运行验证测试？
 
 **M365** 测试基础上的功能更新验证可以帮助你实现所有这些目标以及更多功能！
 
@@ -47,7 +47,7 @@ ms.locfileid: "58576028"
 
 ![使用 11 和 Windows 10 11 Windows更新验证。](Media/Feature-update-validation-03.png)
 
-4. 若要查看针对预发布功能更新验证应用程序Windows 10的结果，请访问 ```Feature Updates Test Results``` 。
+4. 若要查看针对预发布功能更新验证应用程序的结果Windows 10，请访问 ```Feature Updates Test Results``` 。
 
 ![通过功能更新验证，可以快速查看结果。](Media/Feature-update-validation-04.png)
 

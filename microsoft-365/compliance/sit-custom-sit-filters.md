@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文提供可以编码为自定义敏感信息类型的筛选器列表。
-ms.openlocfilehash: 8cf5e60aeb27ff7426837b8885597a7d03e9e868073262bed263a7f70bbb301b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6dfa562d581f14c0b1ac41c4ce803e2367a94636
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53879189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200538"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>自定义敏感信息类型筛选器参考
 
-在 Microsoft 中，可以在使用 SIT 策略创建自定义敏感信息类型时定义 (或其他) 。
+在 Microsoft 中，可以在使用 SIT 策略创建自定义敏感信息类型时定义筛选器 () 。
 
 ## <a name="list-of-supported-filters-and-use-cases"></a>支持的筛选器和用例列表
 
@@ -132,7 +132,7 @@ ms.locfileid: "53879189"
   </Keyword>
 ```
 
-例如，将以 0500、91、091、0100 结尾的数字包括在如下所示的列表中：
+例如，在类似如下的列表中包含以 0500、91、091、0100 结尾的数字：
 
 - 1234567891
 - 1234-5678-0091
@@ -149,9 +149,9 @@ ms.locfileid: "53879189"
 
 ### <a name="textmatchfilter-full"></a>TextMatchFilter Full
 
-说明：允许您禁止某些匹配，以防止它们触发规则。 例如，将4111111111111111信用卡匹配列表中排除。
+说明：允许您禁止某些匹配以防止它们触发规则。 例如，将4111111111111111信用卡匹配列表中排除。
 
-例如，要排除信用卡号，4111111111111111和3241891031113111列表，如下所示：
+例如，要排除信用卡号（如 4111111111111111）3241891031113111列表，如下所示：
 
 - 4485 3647 3952 7352
 - 4111111111111111
@@ -190,7 +190,7 @@ ms.locfileid: "53879189"
 
 说明：允许你定义应始终包含或排除的前面字符。 例如，如果信用卡号前面有"订单 ID："，则从有效匹配项中删除匹配项。
 
-例如，要排除包含电话号码的电话号码电话，在类似以下的列表中，在电话号码前的字符串下呼叫我：
+例如，要排除具有电话号码电话电话号码，并按电话号码前的字符串呼叫我，在如下所示的列表中：
 
 - 电话号码 091-8974-653278
 - 电话 45-124576532-123

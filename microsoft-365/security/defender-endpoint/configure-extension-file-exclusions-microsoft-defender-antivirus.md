@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 08/27/2021
 ms.openlocfilehash: 76508ef21b60d4376512f08a07925eca109f68e2
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201573"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根据文件扩展名和文件夹位置配置和验证排除项
 
@@ -35,7 +35,7 @@ ms.locfileid: "58866651"
 - [进程打开的文件排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括终结点检测和响应[ (EDR) 、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻击面减少[ (ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction)规则以及受控文件夹[访问权限。](/microsoft-365/security/defender-endpoint/controlled-folders) 使用本文中所述的方法排除的文件仍可以触发EDR检测。
+> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括终结点检测和响应[ (EDR) 、](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)攻击面减少[ (ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction)规则以及受控文件夹访问权限[。](/microsoft-365/security/defender-endpoint/controlled-folders) 使用本文中所述的方法排除的文件仍可以触发EDR检测。
 > 若要广泛排除文件，请将它们添加到 Microsoft Defender for Endpoint [自定义指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 ## <a name="before-you-begin"></a>开始之前...
@@ -75,11 +75,11 @@ ms.locfileid: "58866651"
 
 - 不要排除映射的网络驱动器。 指定实际网络路径。
 
-- 不包括重新分析在启动 Microsoft Defender 防病毒 服务后创建且已添加到排除列表的文件夹。 重新启动服务 (重新启动Windows) ，以将新的重新分析点识别为有效的排除目标。
+- 不包括重新分析在启动 Microsoft Defender 防病毒 服务后创建且已添加到排除列表中的文件夹。 重新启动服务 (重新启动Windows) ，以将新的重新分析点识别为有效的排除目标。
 
 - 排除项适用于 [计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、按需 [扫描](run-scan-microsoft-defender-antivirus.md)和实时 [保护](configure-real-time-protection-microsoft-defender-antivirus.md)，但不能跨 Defender for Endpoint。 若要定义跨 Defender for Endpoint 的排除项，请使用 [自定义指示器](manage-indicators.md)。
 
-- 默认情况下，具有管理员权限的用户对 (列表进行的本地更改（包括使用 PowerShell 和 WMI) 所做的更改）将与 (定义的列表合并，并按组策略、Configuration Manager 或 Intune 部署) 。 存在冲突时，组策略列表优先。 此外，使用组策略进行排除列表更改在应用[Windows 安全中心可见](microsoft-defender-security-center-antivirus.md)。
+- 默认情况下，具有管理员权限的用户对列表 (进行的本地更改（包括使用 PowerShell 和 WMI) 所做的更改）将与 (定义的列表合并，并按组策略、Configuration Manager 或 Intune 部署) 。 存在冲突时，组策略列表优先。 此外，使用组策略进行排除列表更改在应用[Windows 安全中心可见](microsoft-defender-security-center-antivirus.md)。
 
 - 若要允许本地更改覆盖托管部署设置，请配置合并本地和全局定义的 [排除列表的方式](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists)。
 
@@ -115,14 +115,14 @@ ms.locfileid: "58866651"
     3. 在"值名称"列下，在其自己的 **行中指定每个** 文件夹。
     4. 如果要指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。
 
-5. 选择"确定"。
+5. 选择“**确定**”。
 
 6. 打开 **扩展排除** 项设置进行编辑并添加排除项。
     1. 将选项设置为 **已启用**。
     2. 在"**选项"** 部分下，选择"显示 **"。**
     3. 在"值"列中的"值名称 **columnEnter** **0"** 下，在其自己的行中输入每个 **文件** 扩展名。
 
-7. 选择"确定"。
+7. 选择“**确定**”。
 
 <a id="ps"></a>
 
@@ -158,7 +158,7 @@ cmdlet 的格式如下：
 > [!IMPORTANT]
 > 如果已使用 或 创建列表， `Set-MpPreference` `Add-MpPreference` 则再次使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
 
-例如，以下代码段将导致Microsoft Defender 防病毒扫描排除具有文件扩展 `.test` 名的任何文件：
+例如，以下代码段将导致Microsoft Defender 防病毒文件扩展名排除 `.test` 任何文件：
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -191,7 +191,7 @@ ExclusionPath
 
 ## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>在文件名和文件夹路径或扩展名排除列表中使用通配符
 
-在文件名或文件夹路径排除列表中定义项目时 (星号、问号或环境变量 (例如) 作为 `*` `?` `%ALLUSERSPROFILE%` 通配符。 解释这些通配符的方式与其他应用和语言中的常用用法不同。 请务必阅读本节以了解其特定限制。
+在文件名或文件夹路径排除列表中定义项目时 (星号、问号或环境变量（如 `*` `?` `%ALLUSERSPROFILE%`) ）用作通配符。 解释这些通配符的方式与其他应用和语言中的常用用法不同。 请务必阅读本节以了解其特定限制。
 
 > [!IMPORTANT]
 > 这些通配符存在一些关键限制和使用方案：
@@ -301,7 +301,7 @@ ExclusionPath
 > [!IMPORTANT]
 > 使用组策略进行排除列表 **更改将显示在** 应用Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。
 >
-> 在组策略Windows 安全中心 **中所做的更改将不会** 显示在组策略列表中。
+> 在组Windows 安全中心 **中所做的更改将不会显示在** 组策略列表中。
 
 如果使用 PowerShell，可以通过两种方式检索列表：
 
@@ -320,7 +320,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> 检查 MpCmdRun 的排除项Microsoft Defender 防病毒 2018 年 12 月 (或更高版本发布的 CAMP) 4.18.1812.3。
+> 检查 MpCmdRun 的排除项Microsoft Defender 防病毒 2018 年 12 月或 (发布的 CAMP 版本 4.18.1812.3) 。
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看排除项列表以及所有其他Microsoft Defender 防病毒首选项
 
@@ -338,7 +338,7 @@ Get-MpPreference
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>使用 PowerShell 检索特定排除项列表
 
-使用以下代码段 (代码段作为单独的命令代码段输入) ;将 **WDAVprefs** 替换为要命名变量的任何标签：
+使用以下代码段 (代码段作为单独的命令代码段输入) ;将 **WDAVprefs** 替换为你想要为变量命名的任何标签：
 
 ```PowerShell
 $WDAVprefs = Get-MpPreference

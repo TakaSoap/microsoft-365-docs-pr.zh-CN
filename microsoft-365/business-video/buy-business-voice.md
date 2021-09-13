@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何购买Microsoft 365 商务语音加载项。
-ms.openlocfilehash: e04d88bdabc1f7e9bf6e26fb3b7d5171cd6f893321b3cacafdcb41c16ddb3ec9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201425"
 ---
 # <a name="buy-business-voice"></a>购买商务语音
 
@@ -40,12 +40,12 @@ ms.locfileid: "53821099"
 1. 向下滚动并选择"**加载项"。** 
 1. 选择 **"Microsoft 365 商务语音"。**
 
-    如果你看不到它，你需要首先购买包含该订阅Microsoft Teams。
+    如果看不到它，需要先购买包含 Microsoft Teams。
 1. 输入想要许可证的用户数，然后选择"**现在签出"。**
 1. 选择 **"自动充值** "以根据需要购买通信信用，并避免服务中断。
 
     通信信用用于国际呼叫、免费号码和其他通话分钟数。
-1. 选择 **下一步**。
+1. 选择“**下一步**”。
 1. 验证付款方式。
 1. 选择 **下订单并继续****。**
 

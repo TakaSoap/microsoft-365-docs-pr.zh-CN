@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201109"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender 安全中心安全操作仪表板
 
@@ -33,7 +33,7 @@ ms.locfileid: "58572547"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)。
 
-安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供发现检测位置的简要概述，并突出显示需要响应操作的地方。
+安全 **操作仪表板** 是显示终结点检测和响应功能的地方。 它提供了发现检测位置的简要概述，并突出显示了需要响应操作的地方。
 
 仪表板显示以下项的快照：
 
@@ -61,7 +61,7 @@ ms.locfileid: "58572547"
 
 ![单击每个切片或严重性以查看过去 30 天内的警报列表。](images/active-alerts-tile.png)
 
-每个组进一步细分为相应的警报严重性级别。 单击每个警报圈内的警报数，以查看该类别的队列的已排序视图 **("** 新建"或"正在进行) "。 
+每个组进一步细分为相应的警报严重性级别。 单击每个警报圈内的警报数，以查看该类别的队列排序视图 **("** 新建"或"正在进行) "。 
 
 有关详细信息，请参阅 [警报概述](alerts-queue.md)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "58572547"
 
 ## <a name="devices-at-risk"></a>处于风险之中的设备
 
-此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数显示在设备名称旁边的圆圈中，然后按严重级别进一步分类磁贴 (将鼠标悬停在每个严重性栏上以查看其标签) 。
+此磁贴显示活动警报数最高的设备列表。 每个设备的警报总数显示在设备名称旁边的圆圈中，然后按严重级别进一步分类到磁贴 (的远端，将鼠标悬停在每个严重性栏上以查看其标签) 。
 
 !["处于风险中的设备"图块显示警报数最高的设备列表，以及警报严重性的细目。](images/devices-at-risk-tile.png)
 

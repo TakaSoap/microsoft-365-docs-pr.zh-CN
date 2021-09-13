@@ -1,6 +1,6 @@
 ---
 title: 确保设备配置正确
-description: 正确配置设备以提升抵御威胁的整体复原能力，并增强检测和响应攻击的能力。
+description: 正确配置设备以提升抵御威胁的整体恢复能力，并增强检测和响应攻击的能力。
 keywords: 载入， Intune 管理， Microsoft Defender for Endpoint， Microsoft Defender， Windows Defender， 攻击面减少， ASR， 安全基线
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b9d00ec13a08751882e7c699a4e029083dc08bc6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201562"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -58,7 +58,7 @@ ms.locfileid: "58567864"
 
 设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows 10问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备设置Windows的信息](/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备Windows注册。](/intune/windows-enroll)
 
 > [!NOTE]
 > 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](/intune/licenses-assign)。

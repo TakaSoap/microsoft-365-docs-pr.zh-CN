@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201117"
 ---
 # <a name="recommendation-resource-type"></a>建议资源类型
 

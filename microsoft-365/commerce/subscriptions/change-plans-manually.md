@@ -1,5 +1,5 @@
 ---
-title: 手动Microsoft 365更改商业计划更新
+title: 手动Microsoft 365更改商业计划计划
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 通过购买新订阅并确保两个订阅都列出且处于活动状态，手动更改订阅。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d8a084111ce2e0869332cdfa7fe438c314295d7a9044a0c715d065ff8c49544d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201406"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -50,9 +50,9 @@ ms.locfileid: "53802582"
 
 或
 
-**购买新订阅和许可证：** 按照购买另 [一Microsoft 365商业版订阅中的步骤](../try-or-buy-microsoft-365.md)购买新订阅。
+**购买新订阅和许可证：** 按照购买另一 [Microsoft 365商业版订阅中的步骤](../try-or-buy-microsoft-365.md)购买新订阅。
 
-请确保为用户当前在同一组织购买订阅。 例如，检查要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 contoso.com，则必须购买新订阅 \@ contoso.com。
+请确保为用户当前在同一组织购买订阅。 例如，检查要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 \@ contoso.com，则必须购买新订阅 contoso.com。
 包括要移动的每个用户的许可证。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤 3：检查新订阅和许可证
@@ -70,7 +70,7 @@ ms.locfileid: "53802582"
 
 ### <a name="the-new-subscription-isnt-listed-or-isnt-active"></a>新订阅未列出或未处于活动状态
 
-- **如果您购买了两个** 订阅，但此处未列出这两个订阅，则它们可能是为不同组织购买， (用于不同域) 。 订阅不能跨越组织边界。
+- **如果购买了两个** 订阅，但此处未列出这两个订阅，则它们可能是为不同组织购买， (用于不同域) 。 订阅不能跨越组织边界。
 
 - **如果您知道您具有其他订阅**，并且此处未列出，或者它未处于活动状态， [请致电 Microsoft 支持](../../business-video/get-help-support.md)人员。
 
@@ -84,7 +84,7 @@ ms.locfileid: "53802582"
 
 ### <a name="reassign-a-license-for-one-user"></a>为一个用户重新分配许可证
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 **"活动用户** "页上，选择要为其分配许可证的用户。
 
@@ -103,7 +103,7 @@ ms.locfileid: "53802582"
 5. 将要分配给 **这些用户** 的产品的开关切换到"开"位置。
 
     > [!TIP]
-    > - 若要限制哪些服务可供用户使用，请切换到要为该用户删除的服务的"关"位置。 例如，如果希望用户能够访问除 Skype for Business Online 之外的所有可用服务，可以将 Skype for Business Online 服务的开关切换到"关 **"位置。**
+    > - 若要限制哪些服务可供用户使用，请切换到要为该用户删除的服务的"关闭"位置。 例如，如果希望用户能够访问除 Skype for Business Online 之外的所有可用服务，可以将 Skype for Business Online 服务的开关切换到"关 **"位置。**
     > - 这将删除所选用户之前的所有许可证分配。
 
 6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”。
@@ -112,7 +112,7 @@ ms.locfileid: "53802582"
 
 If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](cancel-your-subscription.md).
 
-如果仅将部分用户移动到其他订阅 [，请删除](../licenses/buy-licenses.md) 不再需要的许可证。
+如果仅将部分用户移动到其他订阅，请 [删除](../licenses/buy-licenses.md) 不再需要的许可证。
 
 ## <a name="call-support-to-help-you-change-plans"></a>致电支持人员，帮助你更改计划
 [致电 Microsoft 支持人员](../../business-video/get-help-support.md)

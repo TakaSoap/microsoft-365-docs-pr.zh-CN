@@ -1,7 +1,7 @@
 ---
 title: 获取载入到 Microsoft Defender for Endpoint 的设备
 description: 跟踪将 Intune 托管的设备载入到 Microsoft Defender for Endpoint 并增加载入率。
-keywords: onboard， Intune management， Microsoft Defender for Endpoint， Microsoft Defender， Windows Defender， 配置管理
+keywords: 载入， Intune 管理， Microsoft Defender for Endpoint， Microsoft Defender， Windows Defender， 配置管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 8c296ab7f5f01c62b7342d2027ab90a894e1e55c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201566"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>获取载入到 Microsoft Defender for Endpoint 的设备
 
@@ -33,7 +33,7 @@ ms.locfileid: "58569713"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
-每个已载入的设备都向传感器添加额外的终结点检测和 (EDR) ，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
+每个已载入设备都向传感器添加额外的终结点检测和 (EDR) ，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
 
 在你可以跟踪和管理设备的载入之前：
 
@@ -53,7 +53,7 @@ ms.locfileid: "58569713"
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>使用 Intune 配置文件载入更多设备
 
-Defender for Endpoint 为载入设备提供了Windows 10[选项](onboard-configure.md)。 但是，对于 Intune 托管的设备，你可以利用 Intune 配置文件便捷地部署 Defender for Endpoint 传感器以选择设备，从而有效地将这些设备载入服务。
+Defender for Endpoint 提供了几个便于在设备上Windows 10[选项](onboard-configure.md)。 但是，对于 Intune 托管的设备，你可以利用 Intune 配置文件便捷地部署 Defender for Endpoint 传感器以选择设备，从而有效地将这些设备载入服务。
 
 从 **载入卡中** ， **选择载入更多设备** 以在 Intune 上创建和分配配置文件。 该链接将你指向 Intune 上的设备合规性页面，该页面提供了载入状态类似的概述。
 
@@ -62,7 +62,7 @@ Defender for Endpoint 为载入设备提供了Windows 10[选项](onboard-configu
 *Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面*
 
 > [!TIP]
-> 或者，你可以从 **Microsoft Defender ATP** 的所有服务> Intune > 设备合规性>到 [Microsoft Azure](https://portal.azure.com/)门户中的 Defender for Endpoint 载入合规性页面。
+> 或者，你可以从 **Microsoft Defender ATP** 的所有服务 Microsoft Azure Intune > > 设备合规性Microsoft Azure导航到 [Microsoft Azure](https://portal.azure.com/)门户中的 Defender for > Endpoint 载入合规性页面。
 
 > [!NOTE]
 > 如果你想要查看最新的设备数据，请单击没有 **ATP 传感器的设备列表**。

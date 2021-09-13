@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将文件移动到OneDrive。
-ms.openlocfilehash: 2203aa29c9c83d6b26004220b14b15530f79a567d1ae62d3bf239567f926cb0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68d4b08fa0704279a36c32c8b6688009b08fa50f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200726"
 ---
 # <a name="move-files-to-onedrive"></a>将文件移动到OneDrive
 
@@ -43,9 +43,9 @@ ms.locfileid: "53882557"
 4. 选择 **"登录"，** 然后选择"下一 **步"。**
 5. 完成简短教程，然后选择"打开我的OneDrive **文件夹"。** 如果你还使用个人版本的 OneDrive，&#39;将在此处看到它。
 6. 在文件资源管理器中，转到要复制的文件。
-7. 选择文件，然后将其拖放到 OneDrive 文件夹中。 文件旁边的蓝色圆形箭头意味着&#39;同步到云。 当他们&#39;同步时，将显示绿色选中标记。
+7. 选择文件，然后将其拖放到 OneDrive 文件夹中。 文件旁边的蓝色圆形箭头意味着&#39;同步到云。 完成&#39;后，将显示绿色选中标记。
 
 除了在本地处理OneDrive文件，您还可以从 Web 浏览器访问这些文件：
 
-1. 在 Web 浏览器中，登录以 office.com 工作电子邮件。
+1. 在 Web 浏览器中，登录 office.com 工作电子邮件。
 2. 选择 **"OneDrive"。** 所有文件都列出，你可以从任何计算机在浏览器中处理这些文件。

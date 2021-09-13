@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 0e6e14c2933d514ac46d7c4fc06f35bd7ba314d7f23a87a1ca775f5a7837f31e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a6be4282c2388f8a3aff3cd91bb8385f712bdea3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53897719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201077"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>解决 Microsoft Defender for Endpoint 实时响应问题
 
@@ -37,7 +37,7 @@ ms.locfileid: "53897719"
 
 ## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>在实时响应会话期间无法访问文件
 
-如果在实时响应会话期间尝试采取操作时，您遇到一条错误消息，指出无法访问该文件，您需要使用以下步骤来解决此问题。
+如果在实时响应会话期间尝试采取操作时，您遇到一条错误消息，指出无法访问该文件，您需要使用以下步骤解决该问题。
 
 1. 复制以下脚本代码段并将其另存为 PS1 文件：
 
@@ -70,6 +70,6 @@ ms.locfileid: "53897719"
 
 请参阅以下文章，以完全了解 WpnService 服务行为和要求：
 
-- [Windows推送通知服务 (WNS) 概述](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [WindowsWNS (推送通知) 概述](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
 - [Enterprise支持 WNS 流量的防火墙和代理配置](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft 推送通知服务 (MPNS) 公共 IP 范围](https://www.microsoft.com/download/details.aspx?id=44535)

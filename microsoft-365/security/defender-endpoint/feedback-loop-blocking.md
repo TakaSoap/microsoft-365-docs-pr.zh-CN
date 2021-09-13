@@ -17,12 +17,12 @@ ms.custom:
 - edr
 ms.collection: ''
 ms.technology: mde
-ms.openlocfilehash: 900f85e494d7d47c58b15f6bb20e0c1bfddcf788403219443b7a60bee47cec19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7319ff5a89a20529eed7d36aa0d0b1522013abd4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53829359"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201197"
 ---
 # <a name="feedback-loop-blocking"></a>反馈循环阻止
 
@@ -38,9 +38,9 @@ ms.locfileid: "53829359"
 
 ## <a name="how-feedback-loop-blocking-works"></a>反馈循环阻止的工作原理
 
-当检测到可疑行为或文件时（如通过[Microsoft Defender 防病毒）时](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)，有关项目的信息将被发送到多个分类器。 快速保护循环引擎检查信息并将信息与其他信号关联，以决定是否阻止文件。 检查和分类项目会快速发生。 它可快速阻止已确认的恶意软件，并驱动整个生态系统的保护。 
+当检测到可疑行为或文件时（如通过[Microsoft Defender 防病毒）时](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)，有关项目的信息将被发送到多个分类器。 快速保护循环引擎检查信息并将信息与其他信号关联，以决定是否阻止文件。 检查项目并对这些项目进行分类会快速发生。 它可快速阻止已确认的恶意软件，并驱动整个生态系统的保护。 
 
-借助快速保护，攻击可以在设备、组织的其他设备和其他组织中的设备上停止，因为攻击尝试扩大其位置。
+通过快速保护，攻击可以在设备、组织的其他设备和其他组织中的设备上停止，因为攻击尝试扩大其位置。
 
 
 ## <a name="configuring-feedback-loop-blocking"></a>配置反馈循环阻止

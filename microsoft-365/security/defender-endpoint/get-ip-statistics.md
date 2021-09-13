@@ -1,6 +1,6 @@
 ---
 title: 获取 IP 统计信息 API
-description: 使用 Microsoft Defender for Endpoint 获取你的 IP 的最新统计信息。
+description: 使用 Microsoft Defender for Endpoint 获取 IP 的最新统计信息。
 keywords: api， 图形 api， 受支持的 api， 获取， ip， 统计信息， 普遍程度
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347200"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201454"
 ---
 # <a name="get-ip-statistics-api"></a>获取 IP 统计信息 API
 
@@ -55,7 +55,7 @@ ms.locfileid: "58347200"
 
 > [!NOTE]
 > 使用用户凭据获取令牌时：
-> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,7 +71,7 @@ Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称|类型|说明
+名称|类型|描述
 :---|:---|:---
 lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选。**
 

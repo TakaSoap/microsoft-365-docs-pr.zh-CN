@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 42850b4da918fddd91c34a6e62ec1ea761efcdeb1c2daa73136266295096a958
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aadda22c397839c39e95732b02dcc9d6e681e82f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201442"
 ---
 # <a name="get-recommendation-by-id"></a>按 ID 获取建议
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

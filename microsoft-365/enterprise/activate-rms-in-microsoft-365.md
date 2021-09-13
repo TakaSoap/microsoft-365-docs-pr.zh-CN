@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: 如何激活权限管理服务并使用权限Microsoft 365。
-ms.openlocfilehash: 13b3af833ed536d570f1e455891b953e59e975709db875df0fe414d824710dae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 887979e372bf4ba938b2d2570f981aee9373d485
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200502"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>在管理中心激活权限管理
 
-必须先激活 RMS (权限管理服务) ，然后才能使用 (应用程序和服务的信息权限管理) IRM Microsoft 365功能。 激活 RMS 后，组织可以开始使用 Azure RMS 保护重要文档和电子邮件。 此信息保护解决方案可以保护所有文件类型，并可以与客户端应用程序（如 Excel、Microsoft Word 和其他应用程序、Exchange Online 和 SharePoint Online 以及服务器（如 Microsoft Exchange 和 Microsoft SharePoint）集成。
+必须先激活 RMS (权限管理服务) ，然后才能使用 (应用程序和服务的信息权限管理) IRM Microsoft 365功能。 激活 RMS 后，组织可以开始使用 Azure RMS 保护重要文档和电子邮件。 此信息保护解决方案可以保护所有文件类型，并可以与客户端应用程序（如 Excel、Microsoft Word 和其他应用程序、Exchange Online 和 SharePoint Online）以及服务器（如 Microsoft Exchange 和 Microsoft SharePoint）集成。
   
 > [!TIP]
 > 如果您不确定是否需要权限管理，请检查您的组织是否有一个或多个这些 [业务问题或要求](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management)。 

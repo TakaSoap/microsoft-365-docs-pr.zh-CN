@@ -19,11 +19,11 @@ mms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 935826d3a89abeef20e1ebb17f964137fdbfccaf
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201185"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "58745813"
 
 本文提供了一些常规步骤，可用于缩小与 Linux 上的 Defender for Endpoint 相关的性能问题。
 
-RTP (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
 根据你正在运行的应用程序和设备特征，在 Linux 上运行 Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 Linux 上的 Defender for Endpoint 中的性能问题。
 

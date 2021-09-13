@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
 ms.openlocfilehash: aa9b936f7c40227245d0ffd9fbbc951e51c49321
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200605"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 策略中使用敏感度标签作为条件
 

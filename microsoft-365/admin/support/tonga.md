@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 33c45354f2db2adf518d2214afb5cccd81d1cb15db26628a7d61a7e07a21d472
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 435587d3d146178d19563e5dad45a54617b98c13
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815059"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200846"
 ---
 # <a name="contact-support-for-tonga"></a>联系汤加支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53815059"
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5148
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 英语：Mon-Fri 2 PM -10 PM

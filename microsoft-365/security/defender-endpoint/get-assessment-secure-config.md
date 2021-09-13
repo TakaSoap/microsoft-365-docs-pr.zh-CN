@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 4d8010cafa9ea0195e4c77298bea2098eab5c594
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201514"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>导出每个设备的安全配置评估
 
@@ -38,20 +38,20 @@ ms.locfileid: "58607337"
 
 不同的 API 调用用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
 
-- [导出安全配置评估 **JSON 响应**](#1-export-secure-configuration-assessment-json-response)：API 提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+- [导出安全配置评估 **JSON 响应**](#1-export-secure-configuration-assessment-json-response)：API 将提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：
+- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 通过此 API，可以从以下Azure 存储下载所有数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-使用 _JSON_ 响应 (通过文件收集的数据是当前状态的当前) ，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _JSON_ 响应 (通过文件收集的数据) 当前状态的当前快照，并且不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 > [!NOTE]
-> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出，**** 按设备 (也称为按 **_设备) 。_**
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出和 **** 按设备 (也称为按 **_设备) 。_**
 
-## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出安全配置评估 (JSON 响应) 
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. 导出 JSON 响应 (安全配置) 
 
 ### <a name="11-api-method-description"></a>1.1 API 方法说明
 
@@ -101,15 +101,15 @@ ConfigurationId|string|特定配置的唯一标识符|scid-10000
 ConfigurationImpact|string|配置对总体配置评分的影响程度 (1-10)|9 
 ConfigurationName|string|配置的显示名称|将设备载入到 Microsoft Defender for Endpoint
 ConfigurationSubcategory|string|配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。|载入设备
-DeviceId|string|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
+DeviceId|字符串|服务中设备的唯一标识符。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|字符串|设备的完全限定 (FQDN) FQDN。|johnlaptop.europe.contoso.com
 IsApplicable|布尔值|指示配置或策略是否适用|true
 IsCompliant|布尔值|指示是否正确配置了配置或策略|false
 IsExpectedUserImpact|布尔值|指示是否将应用配置时影响用户|true
-OSPlatform|string|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
-RbacGroupName|string|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
-RecommendationReference|string|对此软件相关建议 ID 的引用。|sca-_-scid-20000
-Timestamp|string|上次在设备上看到配置的时间|2020-11-03 10:13:34.8476880
+OSPlatform|字符串|在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 有关详细信息，请参阅 tvm 支持的操作系统和平台。|Windows 10
+RbacGroupName|字符串|基于角色的访问控制 (RBAC) 组。 如果此设备未分配给任何 RBAC 组，则值将为"Unassigned"。 如果组织不包含任何 RBAC 组，则值为"None"。|服务器
+RecommendationReference|字符串|对此软件相关建议 ID 的引用。|sca-_-scid-20000
+Timestamp|字符串|上次在设备上看到配置的时间|2020-11-03 10:13:34.8476880
 |
 
 ### <a name="16-examples"></a>1.6 示例
@@ -243,13 +243,13 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ### <a name="parameters"></a>参数
 
-- sasValidHours：下载 URL 的有效期为 (24 小时) 。
+- sasValidHours：下载 URL 有效期为 24 小时 (24 小时) 。
 
 ### <a name="25-properties"></a>2.5 属性
 
 > [!NOTE]
 >
-> - 文件是 gzip 压缩文件& Json 格式。
+> - 这些文件是 gzip 压缩文件& Json 格式。
 > - 下载 URL 的有效期仅为 3 小时;否则，可以使用 参数。
 > - 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 
@@ -260,7 +260,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 属性 (ID) |数据类型|说明|返回值的示例
 ---|---|---|---
 导出文件|数组 \[ 字符串\]|保存组织当前快照的文件的下载 URL 列表|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|导出的生成时间。|2021-05-20T08：00：00Z
+GeneratedTime|字符串|导出的生成时间。|2021-05-20T08：00：00Z
 |
 
 ### <a name="26-examples"></a>2.6 示例

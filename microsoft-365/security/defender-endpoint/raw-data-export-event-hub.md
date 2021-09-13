@@ -18,11 +18,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: d0e872390fbcc80a7427c28b2a7cdf5382ac839c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201130"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至 Azure 事件中心
 
@@ -35,7 +35,7 @@ ms.locfileid: "58570001"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 1. 在 [租户中创建](/azure/event-hubs/) 事件中心。
 
@@ -81,7 +81,7 @@ ms.locfileid: "58570001"
 
 - 每条记录都包含事件名称、Microsoft Defender for Endpoint 收到事件的时间、它所属的租户 (你仅从租户) 获取事件，事件采用 JSON 格式，采用名为 **"properties"** 的属性。
 
-- 有关 Microsoft Defender for Endpoint 事件的架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
+- 有关适用于终结点事件的 Microsoft Defender 架构详细信息，请参阅 [高级搜寻概述](advanced-hunting-overview.md)。
 
 - 在高级搜寻中 **，DeviceInfo** 表有一个名为 **MachineGroup** 的列，其中包含设备组。 此处还将用此列修饰每个事件。 有关详细信息 [，请参阅](machine-groups.md) 设备组。
 

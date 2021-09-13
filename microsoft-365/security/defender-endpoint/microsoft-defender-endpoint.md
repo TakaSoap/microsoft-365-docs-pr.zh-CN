@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196316"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -152,3 +152,16 @@ Defender for Endpoint 直接集成了各种 Microsoft 解决方案，包括：
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
 
 借助 Microsoft 365 Defender，Defender for Endpoint 和各种 Microsoft 安全解决方案构成了统一的违反前/违反后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
+
+
+## <a name="training-for-security-analysts"></a>针对安全分析师的培训
+
+借助Microsoft Learn的学习路径，你可以了解 Defender for Endpoint 及其如何帮助防止、检测、调查和响应组织终结点 – 中的威胁你的设备和系统。
+
+|培训：|使用 Microsoft 365 Defender 检测和响应网络攻击|
+|---|---|
+|![Microsoft 365 Defender 训练图标。](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint 是一种终结点安全解决方案，可在单个统一平台中提供漏洞管理、终结点保护、终结点检测和响应、移动威胁防御和托管服务。<p> 2 小时 25 分钟 - 学习路径 - 9 个模块|
+
+> [!div class="nextstepaction"]
+> [开始>](/learn/paths/defender-endpoint-fundamentals/)
+

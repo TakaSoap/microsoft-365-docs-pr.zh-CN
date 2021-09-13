@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
 ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200614"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 

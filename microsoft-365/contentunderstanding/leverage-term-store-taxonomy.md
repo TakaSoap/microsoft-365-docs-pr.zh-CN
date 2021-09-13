@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: 使用 Microsoft SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
 ms.openlocfilehash: 97ceace09ed4c8b1a8ea8daf6d562d8013533cea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201606"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序时利用术语库分类
 

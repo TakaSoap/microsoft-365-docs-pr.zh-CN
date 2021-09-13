@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: e1983e023a0236ea1e0ad9ac82b8d089e120cd7d
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201186"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 
@@ -54,11 +54,11 @@ iOS 上的 Defender for Endpoint 从已配置的 iOS 设备收集信息，并存
 
 ### <a name="device-and-account-information"></a>设备和帐户信息
 
-- 诸如日期、&、iOS 版本、CPU 信息和设备标识符等设备信息，其中设备标识符是以下项之一：
+- 诸如日期、&、iOS 版本、CPU 信息和设备标识符等设备信息，其中设备标识符为以下项之一：
   - Wi-Fi适配器 MAC 地址
-  - GUID 记录中随机生成的 (唯) 
+  - GUID 对象中随机生成的 (唯) 
 - 租户、设备和用户信息
-  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，即 Azure Active directory 中的用户。
+  - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，即 Azure Active Directory 中的用户。
   - Azure 租户 ID - 标识组织内部Azure Active Directory。
   - Microsoft Defender for Endpoint 组织 ID - 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定是否有影响一组选定企业的问题以及受到影响的企业数量。
   - 用户主体名称 - 用户的电子邮件 ID。
@@ -84,6 +84,6 @@ iOS 上的 Defender for Endpoint 从已配置的 iOS 设备收集信息，并存
 反馈 通过用户提供的应用内反馈收集数据。
 
 - 用户的电子邮件地址（如果他们选择提供它）。
-- 反馈类型 (、笑脸、) 以及用户提交的任何反馈评论。
+- 反馈类型 (、笑脸、想法) 以及用户提交的任何反馈评论。
 
 有关详细信息，请参阅关于 [隐私的更多信息](https://aka.ms/mdatpiosprivacystatement)。

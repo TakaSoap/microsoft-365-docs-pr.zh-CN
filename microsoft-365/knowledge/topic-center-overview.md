@@ -14,15 +14,15 @@ ms.collection:
 localization_priority: None
 description: 在"主题"中了解Microsoft Viva中心。
 ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200386"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>主题主题中的主题Microsoft Viva概述
 
-在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，充当组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
+在Microsoft Viva主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 它在[Viva 主题设置期间在](set-up-topic-experiences.md)Microsoft 365 管理中心。
 
 主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。
 
@@ -40,7 +40,7 @@ ms.locfileid: "58572631"
 
 3. 选择" **主题中心"** 选项卡。在 **"网站地址** "下是指向主题中心的链接。
 
-    ![knowledge-network-settings。](../media/knowledge-network-settings-topic-center.png)
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>主页
 
@@ -64,7 +64,7 @@ ms.locfileid: "58572631"
 
 ## <a name="manage-topics-page"></a>"管理主题"页
 
-若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 在[Viva](set-up-topic-experiences.md)主题设置过程中，管理员可以向用户分配这些权限，或者管理员随后可以通过[](topic-experiences-knowledge-rules.md)用户向导添加Microsoft 365 管理中心。
+若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在[Viva](set-up-topic-experiences.md)主题设置期间向用户分配这些权限，或者管理员随后可通过用户[](topic-experiences-knowledge-rules.md)策略添加Microsoft 365 管理中心。
 
 在 **"管理主题** "页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。 每个主题将显示主题的发现日期。 分配了管理主题权限的用户可以查看未确认的主题，并选择：
 

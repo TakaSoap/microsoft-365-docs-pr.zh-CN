@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 8298cbda4d0f9d038e6142ac7bbb858c603704501974fdae8254433d8d4745e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200653"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
@@ -65,7 +65,7 @@ ms.locfileid: "53802918"
 >
 > 如果想要的话，可通过账户间电子转账来付款。 代理和账户编号位于发表的底部。 必须在“转账标识”字段中输入账单编号。
 
-如果通过发票支付订阅，当账单可以查看时，则会收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果按发票支付订阅费用，你将在计费账单可供查看时收到电子邮件。此电子邮件不包含帐单的副本。但是你可以选择[以电子邮件方式接收帐单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。计费帐单包括支付选项和支付路径的详细信息。如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>如果我有未结余额，该怎么办？
 

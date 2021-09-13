@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: 了解如何收集 Microsoft 支持案例电子数据展示诊断信息。
 ms.openlocfilehash: e5dd4f9bd26121fd5879b2322549a801a3376be0
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200578"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>收集电子数据展示诊断信息
 
@@ -32,7 +32,7 @@ ms.locfileid: "58589342"
 
 ## <a name="collect-diagnostic-information-for-core-ediscovery"></a>收集核心电子数据展示的诊断信息
 
-收集核心电子数据展示的诊断信息基于 cmdlet，因此你必须使用安全与合规& PowerShell。 以下 PowerShell 示例将运行 cmdlet，然后将输出保存到指定的文本文件。 在大多数支持情况下，你只应运行这些命令之一。
+收集核心电子数据展示的诊断信息基于 cmdlet，因此你必须使用安全&中心 PowerShell。 以下 PowerShell 示例将运行 cmdlet，然后将输出保存到指定的文本文件。 在大多数支持情况下，你只应运行这些命令之一。
 
 若要运行以下 cmdlet，[请连接到安全&中心 </span> PowerShell。](/powershell/exchange/connect-to-scc-powershell) 连接后，运行以下一个或多个命令，并确保使用实际的对象名称替换占位符。
 
@@ -51,7 +51,7 @@ Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 
 ### <a name="collect-information-about-search-actions"></a>收集有关搜索操作的信息
 
-以下命令收集信息以调查预览、导出或清除与核心电子数据展示案例关联的内容搜索或搜索的结果时存在的问题。 可以通过单击"导出"选项卡上列出的导出来标识搜索 **操作** 的名称。若要标识预览和清除操作的名称，可以运行 **Get-ComplianceSearchAction** cmdlet 显示所有操作的列表。 搜索操作名称的格式通过追加 、 或 追加到相应搜索 `_Preview` `_Export` `_Purge` 的名称来构造。
+以下命令收集信息以调查预览、导出或清除与核心电子数据展示案例关联的内容搜索或搜索的结果时存在的问题。 可以通过单击"导出"选项卡上列出的导出来标识搜索 **操作** 的名称。若要标识预览和清除操作的名称，可以运行 **Get-ComplianceSearchAction** cmdlet 来显示所有操作的列表。 搜索操作名称的格式通过追加 、 或 追加到相应搜索 `_Preview` `_Export` `_Purge` 的名称来构造。
 
 ```powershell
 Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"
@@ -67,13 +67,13 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>收集所有案例信息
 
-有时，Microsoft 支持需要哪些信息来调查你的问题并不明显。 在这种情况下，你可以收集核心电子数据展示案例的所有诊断信息。 以下 *命令* 中的核心电子数据展示案例名称与在"核心电子数据展示"页中显示的案例名称Microsoft 365 合规中心。 
+有时，Microsoft 支持需要哪些信息来调查你的问题并不明显。 在这种情况下，你可以收集核心电子数据展示案例的所有诊断信息。 以下 *命令* 中的核心电子数据展示案例名称与在"核心电子数据展示"页上显示Microsoft 365 合规中心。 
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>收集诊断信息Advanced eDiscovery
+## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>收集诊断诊断Advanced eDiscovery
 
 使用 **设置** 中的"Advanced eDiscovery"选项卡可以快速复制该案例的诊断信息。 诊断信息将保存到剪贴板，以便你可以将其粘贴到文本文件并发送给 Microsoft 支持。
 
@@ -83,7 +83,7 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 3. 在"**案例信息"下**，单击"**选择"。**
 
-4. 在飞出页上，单击"**操作**  >  **复制支持信息**"以将信息复制到剪贴板。
+4. 在飞出页面上，单击"**操作**  >  **复制支持信息**"以将信息复制到剪贴板。
 
 5. 在文本框中 (文本文件记事本) ，然后将信息粘贴到文本文件中。
 

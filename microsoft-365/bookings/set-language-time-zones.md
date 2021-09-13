@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: 在 Microsoft Bookings 中更改语言和时区设置。 如果预定是在错误的时间创建的，则可能会为错误的时区设置 Bookings。
 ms.openlocfilehash: 2ccea0446d168476961294ba5800ad3899bd24eb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200770"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>在 Microsoft Bookings 中设置语言和时区
 
@@ -28,11 +28,11 @@ Bookings 有两个单独的语言和时区设置。 第一个设置控制预订�
 
 若要设置预订日历的语言和时区，
 
-1. 登录Microsoft 365登录页面Outlook选择登录页面上的" ("磁贴，如下面的屏幕截图) 或 Microsoft 365 App Launcher。
+1. 登录到Microsoft 365，然后选择登录Outlook页面上的" ("磁贴，如以下屏幕截图) 或 Microsoft 365 App Launcher。
 
-   ![登录页面上Outlook磁贴Microsoft 365图像。](../media/bookings-outlook-tile.png)
+   ![登录Outlook上的Microsoft 365磁贴的图像。](../media/bookings-outlook-tile.png)
 
-1. 打开Outlook后，选择屏幕右上角的齿轮图标以打开个人和帐户设置，然后在"设置面板搜索 **"框中搜索"时区"。** 面板将更新以显示此帐户的当前个人语言和时区设置。 如上所述，此设置还控制预订日历的语言和时区。
+1. 打开Outlook后，选择屏幕右上角的齿轮图标以打开个人和帐户设置，然后在"设置面板搜索"框中搜索 **"时区"。** 面板将更新以显示此帐户的当前个人语言和时区设置。 如上所述，此设置还控制预订日历的语言和时区。
 
 1. 通过在"语言"或"当前时区"框中选择下拉箭头并选择所需的设置，更改语言或时区。
 

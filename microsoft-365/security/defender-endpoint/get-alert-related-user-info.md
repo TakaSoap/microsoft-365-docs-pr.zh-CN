@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd51b218bfa31496c708f61e4469246ce3d0e0c12e5551063929f65d06337f85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0bf041210aac90a1aa5b0c360b0b5dd55d8cd8c6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201638"
 ---
 # <a name="get-alert-related-user-information-api"></a>获取与警报相关的用户信息 API
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/user
 
 名称|类型|说明
 :---|:---|:---
-Authorization|字符串|Bearer {token}。 **必需**。
+Authorization|String|Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 
@@ -80,7 +80,7 @@ Empty
 
 ## <a name="response"></a>响应
 
-如果成功且警报和用户存在 - 200 正常，正文中为用户。 如果未找到警报或用户 - 404 未找到。
+如果成功且警报和用户存在 - 200 正常，正文中为 user。 如果未找到警报或用户 - 404 未找到。
 
 ## <a name="example"></a>示例
 

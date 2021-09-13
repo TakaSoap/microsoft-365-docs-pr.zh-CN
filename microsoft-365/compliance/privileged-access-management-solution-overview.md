@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 ms.openlocfilehash: 9c6e62db4a83e238c840e7e953a78c6e8856a25a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201385"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Microsoft 365 中的特权访问管理
 
-让某些用户长期访问 Microsoft Exchange Online 中的敏感信息或关键网络配置设置是泄露帐户或内部威胁活动的潜在途径。 特权访问管理通过限制长期访问敏感数据或访问关键配置设置来帮助保护组织免受泄露，并有助于符合合规性最佳做法。 为需要提升的权限的任务实现实时访问规则，而不是管理员具有恒定访问权限。 在 Microsoft 365 中为 Exchange Online 启用特权访问管理Microsoft 365使组织可以零长期特权运行，并提供一层防御长期管理访问漏洞的防御层。
+让某些用户长期访问 Microsoft Exchange Online 中的敏感信息或关键网络配置设置是泄露帐户或内部威胁活动的潜在途径。 特权访问管理通过限制长期访问敏感数据或访问关键配置设置来帮助保护组织免受泄露，并有助于符合合规性最佳做法。 为需要提升的权限的任务实现实时访问规则，而不是管理员具有恒定访问权限。 在 Exchange Online 中为 Microsoft 365 启用特权访问管理，使组织可以零长期特权运行，并提供一层防御长期管理访问漏洞的防护。
 
 ## <a name="configure-privileged-access-management-for-microsoft-365"></a>为用户配置特权访问Microsoft 365
 

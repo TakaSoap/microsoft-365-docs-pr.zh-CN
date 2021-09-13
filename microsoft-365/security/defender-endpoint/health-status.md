@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1480e4322c59d841e4f24fecb55f2e5453471798
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201633"
 ---
 # <a name="investigate-agent-health-issues"></a>调查代理运行状况问题
 
@@ -40,8 +40,8 @@ ms.locfileid: "58684264"
 |值|说明|
 |---|---|
 |automatic_definition_update_enabled|如果启用了自动防病毒定义更新，则其参数为 True，否则为 false。|
-|cloud_automatic_sample_submission_consent|当前示例提交级别。 可以是下列值之一： <ul><li>**无**：不会向 Microsoft 提交任何可疑示例。</li><li>**保险箱：** 只有不包含个人身份信息的可疑样本 (个人身份) 自动提交。 这是此设置的默认值。</li><li>**全部**：所有可疑示例都提交到 Microsoft。</li></ul>|
-|cloud_diagnostic_enabled|如果启用可选诊断数据收集，则其参数为 True，否则为 false。 有关 Defender for Endpoint 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows 10）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。|
+|cloud_automatic_sample_submission_consent|当前示例提交级别。 可以是下列值之一： <ul><li>**无**：不会向 Microsoft 提交任何可疑示例。</li><li>**保险箱：** 只有不包含个人身份信息的可疑样本 (PII) 自动提交。 这是此设置的默认值。</li><li>**全部**：所有可疑示例都提交到 Microsoft。</li></ul>|
+|cloud_diagnostic_enabled|如果启用可选诊断数据收集，则其参数为 True，否则为 false。 有关 Defender for Endpoint 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows 10）的信息，请参阅 Microsoft[隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。|
 |cloud_enabled|如果启用云保护，则其参数为 True，否则为 false。|
 |conflicting_applications|可能与 Microsoft Defender for Endpoint 冲突的应用程序列表。 此列表包括但不限于其他安全产品和其他已知导致兼容性问题的应用程序。|
 |definitions_status|防病毒定义的状态。|
@@ -64,6 +64,6 @@ ms.locfileid: "58684264"
 |product_expiration|当前产品版本达到支持终止的日期和时间。|
 |real_time_protection_available|如果实时保护组件正常运行，则其为 True，否则为 false。|
 |real_time_protection_enabled|如果启用了实时防病毒保护，则其参数为 True，否则为 false。|
-|real_time_protection_subsystem|用于提供实时保护的子系统。 如果实时保护未如预期运行，则打印时不可用。|
+|real_time_protection_subsystem|用于提供实时保护的子系统。 如果实时保护未如期运行，则打印将不可用。|
 |release_ring|释放圈。 有关详细信息，请参阅部署 [圈](deployment-rings.md)。|
 |

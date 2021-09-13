@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 如何使用企业Microsoft 365中的信息保护功能保护云中的数字资产。
+description: 了解 Contoso 如何使用企业Microsoft 365中的信息保护功能，保护其云中的数字资产。
 ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200469"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -50,7 +50,7 @@ Contoso 对数据进行了分析，并确定了以下分类级别。
 
 ## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Contoso 信息保护与企业Microsoft 365路径
 
-Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备：
+Contoso 遵循了以下步骤，Microsoft 365企业的信息保护要求做好准备：
 
 1. 确定要保护的信息
 
@@ -74,7 +74,7 @@ Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备�
 
 ## <a name="conditional-access-policies-for-information-protection"></a>用于信息保护的条件访问策略
 
-作为推出 Exchange Online 和 SharePoint 的一SharePoint，Contoso 配置了以下一组条件访问策略，并应用于相应的组：
+作为推出 Exchange Online 和 SharePoint 的一Exchange Online，Contoso 配置了以下一组条件访问策略，并应用于相应的组：
 
 - [设备策略上的托管和非托管应用程序访问](../security/office-365-security/identity-access-policies.md)
 - [Exchange Online 访问策略](../security/office-365-security/secure-email-recommended-policies.md)
@@ -92,7 +92,7 @@ Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备�
 
 - 允许的应用以及它们可以对组织数据采取的操作由应用保护策略定义。
 - 电脑和移动设备必须兼容。
-- Exchange Online使用Office 365 OME (OME) OME Exchange Online。
+- Exchange Online) OME Office 365 OME (OME Exchange Online。
 - SharePoint应用强制执行的限制。
 - SharePoint 使用访问控制策略来实现非托管设备的仅浏览器访问或阻止其访问。
 
@@ -104,7 +104,7 @@ Contoso 按照以下步骤为企业Microsoft 365信息保护要求做好准备�
 |:-------|:-----|:-----|:-----|
 | 1 级：基准  | SharePoint 和 Exchange Online 条件访问策略 <BR> SharePoint 网站上的权限 | 敏感度标签 <BR> BitLocker <BR> Windows 信息保护 | 设备条件访问策略和移动应用管理策略 |
 | 2 级：敏感 | 1 级再加上： <BR> <BR> 敏感度标签 <BR> SharePoint 网站上的 Microsoft 365 保留标签 <BR> 用于 SharePoint 和 Exchange Online 的数据丢失防护 <BR> 独立 SharePoint 网站  | 1 级再加上： <BR> <BR> 数字资产上的敏感度标签  | 1 级 |
-| 3 级：高度管控 | 2 级再加上： <BR><BR> 将你自己的密钥 (BYOK) 加密和保护商业机密信息 <BR> Azure Key Vault，用于与服务交互的业务线Microsoft 365应用程序 | 2 级 | 1 级 |
+| 3 级：高度管控 | 2 级再加上： <BR><BR> 将你自己的密钥 (BYOK) 加密和保护商业机密信息 <BR> Azure Key Vault，用于与服务交互的业务Microsoft 365应用程序 | 2 级 | 1 级 |
 |||||
 
 下面是生成的 Contoso 信息保护配置。

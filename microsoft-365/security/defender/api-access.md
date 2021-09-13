@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7214c4ac47f5b4065d8dcf6c836804b332f13dfa9fe1380c15d6934449417cc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201037"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>访问Microsoft 365 Defender API
 
@@ -67,7 +67,7 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 
 使用此上下文代表单个用户执行操作。
 
-1. 创建Azure Active Directory应用程序。
+1. 创建Azure Active Directory本机应用程序。
 2. 向应用程序分配所需的权限。
 3. 使用应用程序的用户凭据获取安全令牌。
 4. 使用令牌访问 Microsoft 365 Defender API。
@@ -76,7 +76,7 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 
 ## <a name="partner-context"></a>合作伙伴上下文
 
-当你需要向多个租户中的许多用户提供应用时， [请使用此上下文](/azure/active-directory/develop/single-and-multi-tenant-apps)。
+当你需要向多个租户中的许多用户提供应用时，请使用 [此上下文](/azure/active-directory/develop/single-and-multi-tenant-apps)。
 
 1. 创建Azure Active Directory租户应用程序。
 2. 向应用程序分配所需的权限。
@@ -84,7 +84,7 @@ Microsoft 365 Defender通过一组编程 API 公开其大部分数据和操作�
 4. 使用基于客户的租户 ID 的用户凭据获取安全令牌。
 5. 使用令牌访问 Microsoft 365 Defender API。
 
-有关详细信息，请参阅 **[创建具有合作伙伴访问应用程序 API Microsoft 365 Defender应用](api-partner-access.md)**。
+有关详细信息，请参阅 **[创建具有合作伙伴访问应用 API Microsoft 365 Defender应用](api-partner-access.md)**。
 
 ## <a name="related-articles"></a>相关文章
 

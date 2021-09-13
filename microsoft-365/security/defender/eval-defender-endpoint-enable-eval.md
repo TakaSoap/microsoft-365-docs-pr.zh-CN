@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 09785d48d2ad5efb2d33559d0580c5a0ff63c768
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58864022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200998"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>启用 Microsoft Defender for Endpoint 评估环境
 
@@ -50,7 +50,7 @@ ms.locfileid: "58864022"
 首先需要检查许可证状态，以验证是否正确预配了许可证状态。 可以通过管理中心或管理门户Microsoft Azure **此操作**。
 
 
-1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
+1. 若要查看许可证，请转到"Microsoft Azure **门户**"并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
    ![Azure 许可页面的图像。](../../media/defender/atp-licensing-azure-portal.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "58864022"
 
 终结点 | 工具选项
 :---|:---
-**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/移动设备](../defender-endpoint/configure-endpoints-mdm.md)管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、[与 Azure Defender 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)[](../defender-endpoint/configure-endpoints-gp.md)
+**Windows** | [本地脚本 (最多 10](../defender-endpoint/configure-endpoints-script.md)台设备) 、组策略[、Microsoft Endpoint Manager/](../defender-endpoint/configure-endpoints-mdm.md)移动设备管理器[、Microsoft Endpoint Configuration Manager、VDI](../defender-endpoint/configure-endpoints-sccm.md)[脚本](../defender-endpoint/configure-endpoints-vdi.md)、[与 Azure Defender 集成](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)[](../defender-endpoint/configure-endpoints-gp.md)
 **macOS** | [本地脚本](../defender-endpoint/mac-install-manually.md)、 [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)、 [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[移动设备管理](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [本地脚本](../defender-endpoint/linux-install-manually.md)  [、安装](../defender-endpoint/linux-install-with-puppet.md)  [、Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [基于应用](../defender-endpoint/ios-install.md)

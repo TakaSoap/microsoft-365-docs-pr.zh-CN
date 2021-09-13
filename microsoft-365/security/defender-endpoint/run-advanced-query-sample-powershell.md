@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f8a25f73726eaa7f8d10c1e6b9719d38ea42dcfb5d457da2d9282d8e266e585
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e207978dbb65863764c66c5afc5c467552100461
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201113"
 ---
 # <a name="advanced-hunting-using-powershell"></a>通过 PowerShell 高级搜寻
 
@@ -40,7 +40,7 @@ ms.locfileid: "53845011"
 
 在此部分中，我们将共享 PowerShell 示例以检索令牌并使用它运行查询。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 首先需要 [创建应用](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>准备说明
@@ -76,7 +76,7 @@ $aadToken = $response.access_token
 
 其中
 - $tenantId：要代表其运行查询的租户的 ID (即，查询将针对此租户数据运行) 
-- $appId：Azure AD 应用的 ID (应用必须具有 Defender for Endpoint) 的"运行高级查询"权限
+- $appId：Azure AD 应用的 ID (应用必须具有 Defender for Endpoint) 
 - $appSecret：Azure AD 应用机密
 
 ## <a name="run-query"></a>运行查询
@@ -104,7 +104,7 @@ $schema = $response.Schema
 
 ### <a name="complex-queries"></a>复杂查询
 
-如果要运行复杂查询 (或多行查询) ，请保存文件中查询，而不是上面的示例中的第一行，运行以下命令：
+如果要运行复杂查询 (或多行查询) ，请保存文件中查询，而不是上述示例中的第一行，运行以下命令：
 
 ```
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
@@ -120,7 +120,7 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-若要将查询结果输出为 JSON 格式，file1.js以下操作：
+若要以 JSON 格式以 jSON 格式输出查询结果，file1.js以下操作：
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201585"
 ---
 # <a name="collect-investigation-package-api"></a>收集调查包 API
 
@@ -82,7 +82,7 @@ Content-Type|string|application/json. **必需**。
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数|类型|说明
+参数|类型|描述
 :---|:---|:---
 评论|字符串|要与操作关联的注释。 **必需**。
 

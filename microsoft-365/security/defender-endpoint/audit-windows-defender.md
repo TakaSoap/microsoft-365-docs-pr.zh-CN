@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.date: 06/02/2021
 ms.openlocfilehash: f6a86aff84eda3f9f0145e47387b4353555a3a40
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201685"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中测试攻击面减少
 
@@ -52,7 +52,7 @@ ms.locfileid: "58510069"
 可以使用组策略、PowerShell 和配置服务提供程序和 CSP (启用审核) 。
 
 > [!TIP]
-> 还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
+> 您还可以访问 Testground Windows Defender，demo.wd.microsoft.com 以确认这些功能[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)是否正常工作并查看它们如何工作。
 
 |审核选项|如何启用审核模式|如何查看事件|
 |---|---|---|

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 909247e914453cebbe86115561818cde7cb7c44e3ed8a4d1a8149db301b55031
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201045"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>获取高级搜寻方面的专家培训
 
@@ -50,14 +50,14 @@ ms.locfileid: "53893983"
 
 | 标题 | 说明 | Watch | 查询 | 
 |--|--|--|--|
-| 第 1 集  | 在此集中，你将了解运行高级搜寻查询的不同最佳做法。 涵盖的主题包括：如何优化查询、使用高级勒索软件搜寻、将 JSON 作为动态类型处理以及使用外部数据运算符。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56：34)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
+| 第 1 集  | 在此集中，你将了解运行高级搜寻查询的不同最佳做法。 涵盖的主题包括：如何优化查询、使用高级勒索软件搜寻、将 JSON 作为动态类型处理，以及如何使用外部数据运算符。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56：34)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | 第 2 集 | 在此剧集内，你将了解如何通过收件箱转发规则调查和响应可疑或异常登录位置和数据异常。 云安全 CxE 高级项目经理 Sebastien 一起分享了如何使用高级搜寻来调查包含Microsoft Cloud App Security事件。 | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57：07)  | [文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 
 
 ## <a name="how-to-use-the-csl-file"></a>如何使用 CSL 文件
-在启动剧集之前，访问上[相应的文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)GitHub将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注演讲者并运行查询。 
+开始剧集之前，访问[上相应的文本文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)GitHub将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注演讲者并运行查询。 
 
-以下来自包含查询的文本文件的摘录显示了一组使用 标记为注释的全面指南 `//` 。
+以下来自包含查询的文本文件的摘录显示了一组使用 标记为注释的全面指导 `//` 。
 
 ```kusto
 // DeviceLogonEvents

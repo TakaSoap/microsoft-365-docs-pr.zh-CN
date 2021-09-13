@@ -18,11 +18,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201125"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输存储帐户
 
@@ -34,11 +34,11 @@ ms.locfileid: "58569989"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 1. 在[租户存储](/azure/storage/common/storage-account-overview)帐户。
 
-2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>资源>注册到 **Microsoft.insights。**
+2. 登录到你的 [Azure 租户，](https://ms.portal.azure.com/)转到订阅>你的订阅>**资源>注册到 Microsoft.insights。**
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流
 
@@ -52,7 +52,7 @@ ms.locfileid: "58569989"
 
 5. Choose **Forward events to Azure 存储**.
 
-6. 键入你的 **存储帐户资源 ID。** 若要获取 存储 **帐户资源 ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户 > 属性选项卡上的 存储 帐户页面>复制 存储 帐户资源 ID 下 **的文本**：
+6. 键入你的 **存储帐户资源 ID。** 若要获取你的 存储 帐户资源 **ID，** 请转到 [Azure](https://ms.portal.azure.com/)门户 > 属性选项卡上的 存储 帐户页面>复制 存储 **帐户资源 ID 下的文本**：
 
    ![事件中心资源 ID1 的图像。](images/storage-account-resource-id.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell SharePoint管理服务
+title: 使用 PowerShell SharePoint管理部署
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -21,17 +21,17 @@ ms.custom:
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 了解如何使用 PowerShell for Microsoft 365管理用户、组和网站组。
 ms.openlocfilehash: 6bf6fe8a47f8a5fb8309c24836da614e95dd5bf2
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201317"
 ---
-# <a name="manage-sharepoint-with-powershell"></a>使用 PowerShell SharePoint管理服务
+# <a name="manage-sharepoint-with-powershell"></a>使用 PowerShell SharePoint管理部署
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-SharePoint管理员必须管理网站、网站组和用户。 尽管您可以在 PowerShell 中执行其中一Microsoft 365 管理中心，但其他任务在 PowerShell 中更简单。 有关详细信息，请参阅以下文章：
+SharePoint管理员必须管理网站、网站组和用户。 尽管可以在 PowerShell 中执行其中一Microsoft 365 管理中心，但其他任务在 PowerShell 中更简单。 有关详细信息，请参阅以下文章：
 
 - [SharePoint Online 命令行管理程序入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
@@ -39,7 +39,7 @@ SharePoint管理员必须管理网站、网站组和用户。 尽管您可以在
 
 - [使用 PowerShell SharePoint联机用户和组](manage-sharepoint-users-and-groups-with-powershell.md)
 
-- [使用 SharePoint PowerShell 管理联机网站组](manage-sharepoint-site-groups-with-powershell.md)
+- [使用 powerShell SharePoint联机网站组](manage-sharepoint-site-groups-with-powershell.md)
 
 ## <a name="see-also"></a>另请参阅
 

@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用使用情况报告中的信息。
-ms.openlocfilehash: 2703245899e62f89730885bfc9e78f13e24da7d1252dbcd4209f1ddd6ce15292
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200766"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>查看使用情况报告Microsoft 365
+# <a name="review-usage-reports-in-microsoft-365"></a>查看使用情况报告中Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
@@ -39,7 +39,7 @@ ms.locfileid: "53900779"
 ## <a name="try-it"></a>试一试！
 
 1. 转到"**报告"，** 然后转到"使用情况 **"。** 通过选择一个报告查找任何报告的详细信息。 "活动用户"报告显示业务中的人员使用最多的服务。
-1. 例如，让我们继续看一下 OneDrive 报告。 我们在此处可以查看有多少人拥有帐户，还可以查看总文件和活动文件数以及使用的存储空间。 若要查看所有其他报告，请转到下拉菜单。
+1. 例如，让我们来看一下 OneDrive 报告。 我们在此处可以查看有多少人拥有帐户，还可以查看总文件和活动文件数以及使用的存储空间。 若要查看所有其他报告，请转到下拉菜单。
 1. 我们在此处查看电子邮件应用使用情况报告，并查看你的员工使用最多的方法来访问他们的电子邮件。 还可以查看特定于个人的信息，但默认情况下隐藏详细信息。 To show the individual user details， go over to **设置**， and then **Services & add-ins**.
 1. 在报告面板中，我们可以打开匿名标识符。 现在，让我们关闭面板并返回到报告、**使用情况** 和 **电子邮件活动**。  我们在此处可以看到特定于个人的信息。
 

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 自 2019 年 9 月 14 日起，必须验证进行在线购买的人的身份，然后才能处理付款。"
 keywords: 付款服务指令 2，强客户身份验证，多重身份验证
 ms.date: 11/03/2020
-ms.openlocfilehash: eda3a962b638579001482c86307d8330f30882e50893904850ba6651a2acd1f4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200649"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>付款服务指令 2 和针对商业客户的强客户身份验证
 

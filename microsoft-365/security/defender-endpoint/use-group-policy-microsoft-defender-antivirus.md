@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: ff5a2277edc820ee03cb7c545595bd456aed27d86e41723347cce8d80d25af19
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53844891"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201062"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理Microsoft Defender 防病毒
 
@@ -55,11 +55,11 @@ ms.locfileid: "53844891"
 本主题中的下表列出了 Windows 10 版本 1703 中提供的组策略设置，并提供指向本文档库中相应主题的链接 (（如果适用) ）。 
 
 > [!TIP]
-> [下载组策略设置 Reference Spreadsheet for Windows 10 May 2020 Update (2004) 。 ](https://www.microsoft.com/download/101451) 此电子表格列出了 2004 年 5 月 Windows 10更新 (2004 年 5 月提供的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置对电子表格的参考。
+> [下载组策略设置 Reference Spreadsheet for Windows 10 May 2020 Update (2004) 。 ](https://www.microsoft.com/download/101451) 此电子表格列出了 2004 年 5 月 Windows 10 更新 2004 年 5 月 (中包含的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置对电子表格的参考。
 
-| 位置 | 设置 | 文章 |
+| 位置 | Setting | 文章 |
 |:---|:---|:---|
-| 客户端接口 | 启用无头 UI 模式 | [阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
+| 客户端接口 | 启用无头 UI 模式 | [阻止用户查看或与 Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | 客户端接口 | 当客户端需要执行一个操作时，向客户端显示其他文本 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) |
 | 客户端接口 | 禁止显示所有通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) |
 | 客户端接口 | 禁止重新启动通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) |
@@ -76,25 +76,25 @@ ms.locfileid: "53844891"
 | 网络检查系统 | 为网络流量检查指定其他定义集 | [为网络流量检查指定其他定义集](specify-additional-definitions-network-traffic-inspection-mdav.md) |
 | 网络检查系统 | 启用定义停用 | [配置定义停用](turn-on-definition-retirement.md)  |
 | 网络检查系统 | 打开协议识别 | [打开协议识别](turn-on-protocol-recognition.md)  |
-| 隔离 | 为从隔离文件夹中删除项目配置本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| 隔离 | 配置从隔离文件夹删除项目 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
+| Quarantine | 为从隔离文件夹中删除项目配置本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
+| Quarantine | 配置从隔离文件夹删除项目 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 实时保护 | 配置本地设置覆盖以监视您的计算机上的文件和程序活动 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 实时保护 | 配置本地设置覆盖以监视传入和传出文件活动 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 实时保护 | 配置用于扫描所有下载的文件和附件的本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 实时保护 | 配置本地设置替代以启用行为监视 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 实时保护 | 配置本地设置覆盖以启用实时保护 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| 实时保护 | 定义要扫描的已下载文件和附件的最大大小 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 监视您的计算机上的文件和程序活动 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 扫描所有下载的文件和附件 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 关闭实时保护 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 打开行为监视 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 启用实时保护时打开进程扫描 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 打开原始卷写入通知 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| 实时保护 | 配置对传入和传出文件和程序活动的监视 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 定义要扫描的已下载文件和附件的最大大小 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 监视您的计算机上的文件和程序活动 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 扫描所有下载的文件和附件 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 关闭实时保护 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 打开行为监视 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 启用实时保护时打开进程扫描 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 打开原始卷写入通知 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 实时保护 | 配置对传入和传出文件和程序活动的监视 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | 修正 | 为运行计划的完整扫描以完成修正的时间配置本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 修正 | 指定一周中的哪些天运行计划的完全扫描以完成修正 | [配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | [配置计划Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| 报表 | 关闭增强型通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
+| 报告 | 关闭增强型通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 | 根 | 关闭Microsoft Defender 防病毒 | 未 (此设置必须设置为"未配置"，以确保任何已安装的第三方防病毒应用) 
 | 根 | 定义绕过代理服务器的地址 | 未使用 |
 | 根 | 定义代理自动 (.pac) 以连接到网络 | 未使用 |
@@ -104,7 +104,7 @@ ms.locfileid: "53844891"
 | 根 | 允许反恶意软件服务始终运行 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 关闭常规修正 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 随机化计划任务时间 | [配置计划扫描以用于Microsoft Defender 防病毒](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| 扫描 | 允许用户暂停扫描 | [阻止用户查看或与](prevent-end-user-interaction-microsoft-defender-antivirus.md)Microsoft Defender 防病毒 用户界面 (不支持Windows 10)  |
+| 扫描 | 允许用户暂停扫描 | [阻止用户查看](prevent-end-user-interaction-microsoft-defender-antivirus.md)或与用户Microsoft Defender 防病毒用户界面 (不支持Windows 10)  |
 | 扫描 | 在运行计划扫描之前检查最新的病毒和间谍软件定义 | [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | 扫描 | 定义强制进行跟进扫描的天数 | [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | 扫描 | 打开"捕获完整扫描" | [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
@@ -116,7 +116,7 @@ ms.locfileid: "53844891"
 | 扫描 | 为要用于计划扫描的扫描类型配置本地设置覆盖 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 扫描 | 创建系统还原点 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 扫描 | 打开从扫描历史记录文件夹中删除项目 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
-| 扫描 | 打开启发式 | [启用和配置Microsoft Defender 防病毒始终启用的保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| 扫描 | 打开启发式 | [启用和配置Microsoft Defender 防病毒始终启用保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | 扫描 | 打开电子邮件扫描 | [配置扫描选项Microsoft Defender 防病毒](configure-advanced-scan-types-microsoft-defender-antivirus.md) |
 | 扫描 | 打开重新分析点扫描 | [配置扫描选项Microsoft Defender 防病毒](configure-advanced-scan-types-microsoft-defender-antivirus.md) |
 | 扫描 | 在映射的网络驱动器上运行完全扫描 | [配置扫描选项Microsoft Defender 防病毒](configure-advanced-scan-types-microsoft-defender-antivirus.md) |

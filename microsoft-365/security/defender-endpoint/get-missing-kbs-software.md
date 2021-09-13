@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 15c3ad6eef732f36a425a54673a694613c0f4b66
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598989"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201714"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>通过软件 ID 获取缺失的 KB
 
@@ -35,7 +35,7 @@ ms.locfileid: "58598989"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-按软件 ID (缺少的) 更新
+检索缺少的 (，) 软件 ID 更新
 
 ## <a name="permissions"></a>权限
 

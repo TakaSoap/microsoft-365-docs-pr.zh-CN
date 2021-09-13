@@ -21,17 +21,17 @@ ms.custom:
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 本文将了解如何使用 PowerShell for Microsoft 365管理 SharePoint Online 用户、组和网站。
 ms.openlocfilehash: 04eb4a0e2c7d2c309ae4bbe063102293a017bbd6
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201310"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 用户和组
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-如果你是使用SharePoint或组的大型列表的联机管理员，并且希望使用更简单的方式来管理它们，可以使用 PowerShell 进行Microsoft 365。
+如果你是使用SharePoint或组的大型列表的联机管理员，并且希望使用更简单的方式来管理它们，可以使用 PowerShell Microsoft 365。
 
 在开始之前，本主题中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[连接 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
@@ -70,7 +70,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 若要使用这些命令，请将引号内的所有内容（包括 < 和 > 字符）替换为正确的名称。
 
-例如，这组命令将 Opal Castillo (用户名 opalc) 添加到 Contoso 租赁的 ContosoTest 网站集上的网站集管理员列表中：
+例如，这组命令将 Opal Cast此操作 (用户名 opalc) 添加到 Contoso 租赁的 ContosoTest 网站集上的网站集管理员列表中：
 
 ```powershell
 $tenant = "contoso"
@@ -94,7 +94,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ```
 
-例如，让我们将 (一个用户名) 添加到 contoso 租赁中的 ContosoTest 网站集上的审核员组中：
+例如，让我们向 contoso (ContosoTest) 审核员组添加一个用户名称 (一个 Auditors 组：
 
 ```powershell
 $tenant = "contoso"
@@ -106,7 +106,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>创建网站集组
 
-您可以使用 `New-SPOSiteGroup` cmdlet 创建新的组SharePoint组并将其添加到网站集。
+可以使用 `New-SPOSiteGroup` cmdlet 创建新组SharePoint组并将其添加到网站集。
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -132,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 有时必须从某个网站甚至是所有网站删除用户。员工可能从一个部门转移到另一个部门，或离开公司。在 UI 中可以很容易地对一个员工进行这样的操作，但如果是将整个部门从一个网站移动到另一个网站，这并非易事。
 
-但是，通过使用 SharePoint 命令行管理程序 和 CSV 文件，这非常简单快捷。 在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。 然后使用 CSV 文件从不同的网站删除大量用户。
+但是，通过使用 SharePoint命令行管理程序和 CSV 文件，这非常简单快捷。 在本任务中，将使用 Windows PowerShell 将用户从一个网站集安全组删除。 然后使用 CSV 文件从不同的网站删除大量用户。
 
 我们将使用"Remove-SPOUser"cmdlet 从网站集组中删除单个 Microsoft 365 用户，以便我们可以看到命令语法。 语法如下所示：
 
@@ -144,7 +144,7 @@ $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
-例如，让我们从 contoso 租赁的 contosotest 网站集中的网站集 Auditors 组中删除一个为"一名"的"一名"用户：
+例如，让我们从 contoso 租赁的 contosotest 网站集中的网站集 Auditors 组中删除一个为"一名"的用户。
 
 ```powershell
 $tenant = "contoso"
@@ -167,7 +167,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>自动化管理大型用户和组列表
 
-若要向网站添加大量帐户SharePoint授予权限，可以使用 Microsoft 365 管理中心、单个 PowerShell 命令或 PowerShell CSV 文件。 在这些选择中，CSV 文件是自动执行此任务的最快方法。
+若要向网站添加大量帐户SharePoint授予他们权限，可以使用 Microsoft 365 管理中心、单个 PowerShell 命令或 PowerShell CSV 文件。 在这些选择中，CSV 文件是自动执行此任务的最快方法。
 
 基本过程是，创建具有与 Windows PowerShell 脚本所需的参数对应的标头（列）的 CSV 文件。 你可以轻松地在列表中创建此类Excel，然后导出为 CSV 文件。 然后使用 Windows PowerShell 脚本循环访问 CSV 文件中的记录（行），将用户添加到组，将组添加到网站。
 

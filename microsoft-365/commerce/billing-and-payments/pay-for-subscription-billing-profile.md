@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 1d820f2d44719caf254b07aee279f1b8121106009e014afddd8fc121bd5d1cc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200654"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
@@ -37,7 +37,7 @@ ms.locfileid: "53797130"
 
 默认情况下，对于使用定期计费的所有付费订阅，会自动启用定期计费。 每个计费周期，我们都会自动向与计费配置文件关联的付款方式收费，以支付使用该计费配置文件的任何订阅。 如果你的付款方式被拒绝，可以使用发票上的"现在支付"按钮为订阅进行一次付款。
 
-如果对帐单配置文件关闭定期计费，则无论哪种付款方式与计费配置文件关联，都可以使用发票上的"现在支付"按钮来支付它。 您还可以通过支票或 EFT (电子资金) 。 有关如何执行的说明包含在发票的 PDF 副本中。
+如果对帐单配置文件关闭定期计费，则无论哪种付款方式与计费配置文件关联，都可以使用发票上的"现在支付"按钮来支付它。 您还可以通过支票或电子资金 (EFT) 。 有关如何执行的说明包含在发票的 PDF 副本中。
 
 ## <a name="paying-by-invoice"></a>按发票付款
 
@@ -49,9 +49,9 @@ ms.locfileid: "53797130"
 - 订阅费用超过一定金额（此金额因服务位置而异）
 - 通过信用检查
 
-如果需要进行信用检查，在购买订阅时就会收到通知。 如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。 通常会在两个工作日内完成信用检查。
+如果需要进行信用检查，在购买订阅时就会收到通知。如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。通常会在两个工作日内完成信用检查。
 
-如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单，该编号将显示在帐单上。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 
@@ -148,7 +148,7 @@ ms.locfileid: "53797130"
 > - [Liechtenstein（列支敦士登）](../pay/liechtenstein.md)
 > - [Lithuania（立陶宛）](../pay/lithuania.md)
 > - [卢森堡](../pay/luxembourg.md)
-> - [Macao（中国澳门）](../pay/macao.md)
+> - [澳门特别行政区](../pay/macao.md)
 > - [前南斯拉夫马其顿共和国](../pay/macedonia.md)
 > - [马来西亚](../pay/malaysia.md)
 > - [马耳他](../pay/malta.md)

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201486"
 ---
 # <a name="get-domain-statistics-api"></a>获取域统计信息 API
 
@@ -58,7 +58,7 @@ ms.locfileid: "58364501"
 > [!NOTE]
 > 使用用户凭据获取令牌时：
 >
-> - 用户至少需要具有以下角色权限："查看数据"权限 (请参阅创建和管理角色，了解) [](user-roles.md)
+> - 用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -74,7 +74,7 @@ Authorization|Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
-名称|类型|说明
+名称|类型|描述
 :---|:---|:---
 lookBackHours|Int32|定义我们重新搜索以获取统计信息的小时数。 默认为 30 天。 **可选。**
 

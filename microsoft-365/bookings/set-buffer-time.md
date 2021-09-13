@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: 在 Microsoft Bookings 中的约会之前或之后设置缓冲区时间，以留出时间清理或重置设备。
 ms.openlocfilehash: 21830b0cc1ec2f14bc845937387e700fb7a2ee72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573675"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200773"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>在 Microsoft Bookings 中设置缓冲区时间
 
@@ -32,9 +32,9 @@ ms.locfileid: "58573675"
 
 ## <a name="buffer-time-and-appointment-timing"></a>缓冲区时间和约会计时
 
-为了避免客户期望何时与你们会面，Bookings 在日历上以及向相关员工的电子邮件确认和提醒中显示缓冲区时间和实际约会时间 (客户期望与) 会面的时间。 例如，下面是你在 Bookings 中看到的客户约会包含 15 分钟预约会缓冲区时间的内容。
+为了避免客户期望何时与你们会面，Bookings 在日历上以及向相关员工的电子邮件确认和提醒中显示 (客户预期与) 会面的缓冲时间和实际约会时间。 例如，下面是你在 Bookings 中看到的客户约会包含 15 分钟预约会缓冲区时间的内容。
 
-请注意，事件本身 (位于图像左侧，) 显示缓冲区时间较浅的底纹，而实际客户约会的底纹较深。 约会呼叫 (在选择事件时打开) 具体指出约会与 Katie Jordan 的上午 9：00 到上午 10：00 之间，包括约会前的 15 分钟缓冲区时间，约会后 0 分钟。 员工确认和提醒同样引用特定缓冲区和约会时间，而客户只会收到引用上午 9：00 到上午 10：00 约会时间的确认和提醒。
+请注意，事件本身 (位于图像左侧，) 显示缓冲区时间较浅的底纹，而实际客户约会的底纹较深。 约会调用 (在选择事件时打开) 具体指出约会与 Katie Jordan 的上午 9：00 到 10：00 之间，包括约会前的 15 分钟缓冲区时间以及约会后 0 分钟。 员工确认和提醒同样引用特定缓冲区和约会时间，而客户只会收到引用上午 9：00 到上午 10：00 约会时间的确认和提醒。
 
    ![显示缓冲区时间后 Bookings 约会调用的图像。](../media/bookings-buffertime-callout.png)
 

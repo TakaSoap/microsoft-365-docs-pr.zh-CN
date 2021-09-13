@@ -13,13 +13,13 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 本地 IT 基础结构的基本结构，以及企业内部部署基础结构如何满足Microsoft 365需求。
+description: 了解 Contoso 本地 IT 基础结构的基本结构，以及企业内部部署基础结构如何满足Microsoft 365业务需求。
 ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200465"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 
@@ -93,7 +93,7 @@ Contoso 业务需求分为五个主要类别：
 
   通过将经常访问的资源移动到云中，减少维护和支持成本并提高远程访问解决方案的性能。
 
-- 为 B2B 业务和 B2B 业务之间提供更好的连接 (开销) 开销
+- 为 B2B 业务和 B2B (提供更好的连接并降低) 开销
 
   使用使用联合身份验证的基于云的解决方案替换老化且成本高昂的合作伙伴 Extranet。
 
@@ -101,17 +101,17 @@ Contoso 业务需求分为五个主要类别：
 
 - 遵守区域法规要求
 
-  确保遵守针对数据存储、加密、数据隐私和个人数据法规的行业和区域法规，例如欧盟一般数据保护条例 (GDPR) 。
+  确保遵守针对数据存储、加密、数据隐私和个人数据法规的行业和区域法规，如欧盟一般数据保护条例 (GDPR) 。
 
 **管理**
 
 - 减少在客户端电脑和设备上运行的管理软件的 IT 开销
 
-  自动安装整个组织中 Windows操作系统Microsoft 365 企业应用版更新。
+  自动安装整个组织中Windows操作系统Microsoft 365 企业应用版更新。
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>映射 Contoso 业务需求Microsoft 365企业版
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>将 Contoso 业务需求映射到Microsoft 365企业
 
-Contoso IT 部门确定了以下业务需求映射，Microsoft 365 E5部署之前使用这些功能：
+Contoso IT 部门在部署之前确定了以下业务需求Microsoft 365 E5配置功能：
 
 
 | 类别 | 业务需求 | Microsoft 365企业产品或功能 |
@@ -121,7 +121,7 @@ Contoso IT 部门确定了以下业务需求映射，Microsoft 365 E5部署之�
 |  | 提高远程和移动工作者的工作效率 | Microsoft 365 工作负载和基于云的数据 |
 |  | 提高创造力和革新能力 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 标识和访问管理 | 使用 Azure AD 多重身份验证的专用全局管理员帐户 (MFA) Azure AD Privileged Identity Management (PIM)  <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> 安全信息读取者 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 标识和访问管理 | 使用 Azure AD 多重身份验证的专用全局管理员帐户 (MFA) Azure AD Privileged Identity Management (PIM)  <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> 安全读取者 <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365威胁调查和响应 <BR> |
 |  | 信息保护 | Azure 信息保护 <BR> 数据丢失防护 (DLP) <BR> Windows 信息保护 (WIP) <BR> Microsoft 云应用安全 <BR> Microsoft Intune |
 |  | 安全管理 | Azure Defender  <BR> Windows Defender 安全中心 |
@@ -137,7 +137,7 @@ Contoso IT 部门确定了以下业务需求映射，Microsoft 365 E5部署之�
 
 ## <a name="next-step"></a>后续步骤
 
-了解 Contoso [Corporation](contoso-networking.md)本地网络，以及如何针对访问和延迟优化网络以Microsoft 365基于云的资源。
+了解 Contoso [Corporation](contoso-networking.md)本地网络以及如何针对访问和延迟进行优化以Microsoft 365基于云的资源。
 
 ## <a name="see-also"></a>另请参阅
 

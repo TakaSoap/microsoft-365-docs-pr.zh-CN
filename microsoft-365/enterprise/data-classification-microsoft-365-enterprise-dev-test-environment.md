@@ -1,5 +1,5 @@
 ---
-title: 适用于企业Microsoft 365环境的数据分类
+title: 企业测试环境Microsoft 365数据分类
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -11,21 +11,23 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom:
+- Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南创建和使用企业测试环境中 Microsoft 365文档的保留标签。
-ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a39661da9436473da9e89330ff15d0a43d19db51
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200425"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业Microsoft 365环境的数据分类
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>企业测试环境Microsoft 365数据分类
 
-*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版测试环境。*
 
-本文介绍如何在企业测试环境中使用 Microsoft 365配置数据分类。
+本文介绍如何在企业测试环境中使用Microsoft 365标签配置数据分类。
 
 对测试环境中的数据进行分类分为三个阶段：
 - [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -35,7 +37,7 @@ ms.locfileid: "58552596"
 ![Microsoft 云的测试实验室指南。](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 for enterprise Test [Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365 [for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
@@ -50,8 +52,8 @@ ms.locfileid: "58552596"
 
 在此阶段，为联机文档文件夹的不同保留级别SharePoint保留标签：
 
-1. 使用全局管理员[Microsoft 365](https://security.microsoft.com/homepage)登录安全中心。
-1. 从浏览器 **的"** 主页 - Microsoft 365安全"选项卡中，选择"**分类保留**  >  **标签"。**
+1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>登录安全中心。
+1. 从浏览器 **的"主页 - Microsoft 365** 安全"选项卡中，选择"**分类**  >  **保留标签"。**
 1. 选择“**创建标签**”。
 1. 在"**命名标签"窗格中****，在"** 命名标签"中 **输入**"内部公用"，然后选择"下一步 **"。**
 1. 在"**文件计划描述符"窗格中**，选择"下一 **步"。**
@@ -74,7 +76,7 @@ ms.locfileid: "58552596"
 
 ## <a name="phase-3-apply-retention-labels-to-documents"></a>阶段 3：将保留标签应用于文档
 
-在此阶段中，您将发现 SharePoint Online 网站的"文档"文件夹中的文件的默认保留标签行为，并手动更改文档的保留标签。
+在此阶段，你将发现 SharePoint Online 网站的"文档"文件夹中的文件的默认保留标签行为，并手动更改文档的保留标签。
 
 首先，在 Online 团队网站SharePoint敏感级别：
   
@@ -85,7 +87,7 @@ ms.locfileid: "58552596"
 1. 在" **团队网站名称"** 框中，输入 **SensitiveFiles**。
 1. 在"**团队网站说明"** 框中 **，SharePoint敏感文件的网站"。**
 1. 在 **"隐私设置**"**中，选择"专用 - 只有成员可以访问此网站**"，然后选择"下一 **步"。**
-1. 在 **"Who是否要添加？"窗格中**，选择"完成 **"。**
+1. 在Who **添加？"窗格中，** 选择"完成 **"。**
     
 接下来，为敏感保留标签配置 SensitiveFiles 团队网站的 Documents 文件夹。
   
@@ -99,10 +101,10 @@ ms.locfileid: "58552596"
 1. 在"文档"文件夹中，选择"**新建**  >  **Word 文档"。**
 1. 在空白文档中输入一些文本。 等待保存文本。
 1. 在菜单栏上，选择"**共享文档"。**
-1. 在文件 **Document.docx** 旁边，选择垂直省略号， **然后选择详细信息**。
+1. 在文件 **Document.docx，** 选择垂直省略号， **然后选择详细信息**。
 1. 在右窗格的"属性"**部分，****在"** 应用保留标签"下，请注意，文档已自动应用"**敏感**"保留标签。
 1. 单击 **编辑全部**。
-1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密**"标签，然后选择"保存 **"。**
+1. 在 **"Document.docx"** 窗格中的"**应用保留** 标签"下，选择"**高度机密"** 标签，然后选择"保存 **"。**
 
 ## <a name="next-step"></a>后续步骤
 

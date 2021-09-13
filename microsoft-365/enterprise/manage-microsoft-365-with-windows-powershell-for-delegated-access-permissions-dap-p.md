@@ -16,17 +16,17 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: 联合和云解决方案云解决方案提供商 (云) 如何使用Windows PowerShell管理Microsoft 365租户。
+description: 联合和云解决方案提供商云解决方案提供商 (合作伙伴) 如何使用Windows PowerShell管理Microsoft 365租户。
 ms.openlocfilehash: be32c1c8f6a71e45c8f0176c037f7ca6f28f5c31
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201326"
 ---
-# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>如何使用委派访问权限Microsoft 365管理Windows PowerShell权限合作伙伴的代理
+# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>如何使用委派Microsoft 365合作伙伴Windows PowerShell管理权限
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 许多是网络或电信提供商。 他们Microsoft 365订阅捆绑到其服务产品/服务中。 当他们销售 Microsoft 365 订阅时，他们将自动获得代表 (AOBO) 管理客户租赁的权限，以便他们可以管理和报告这些租赁。 这些任务很难在任务Microsoft 365 管理中心。 使用 PowerShell 为用户Microsoft 365管理任务要容易得多，例如：
 - 列出所有客户 **TenantIds** 及其域 
@@ -36,7 +36,7 @@ ms.locfileid: "58354424"
 
 以下文章介绍了联合和云解决方案提供商合作伙伴如何使用 PowerShell 管理其客户租赁：
   
-- [使用Microsoft 365 DAP Windows PowerShell的委派访问权限管理 (租户) 租户](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
+- [使用Microsoft 365 DAP Windows PowerShell合作伙伴的委派访问权限 (管理) 租户](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
     
 - [使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
     

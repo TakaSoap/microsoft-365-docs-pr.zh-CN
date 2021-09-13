@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201206"
 ---
 # <a name="deployment-phases"></a>部署阶段
 
@@ -82,7 +82,7 @@ ms.locfileid: "58563554"
 
 ### <a name="in-scope"></a>在作用域内
 
-- 使用 Microsoft Endpoint Manager 和 Microsoft Endpoint Manager将终结点载入服务并配置功能
+- 使用 Microsoft Endpoint Manager Microsoft Endpoint Manager将终结点载入服务并配置功能
 - 启用 Defender 终结点检测和响应 (EDR) 功能
 - 启用适用于终结点保护平台的 Defender (EPP) 功能
   - 下一代保护

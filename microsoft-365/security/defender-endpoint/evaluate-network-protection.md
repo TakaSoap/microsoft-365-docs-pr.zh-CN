@@ -15,11 +15,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201534"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
@@ -40,7 +40,7 @@ ms.locfileid: "58507970"
 
 在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现的时间。
 
-1. 在 **"管理"中"开始"菜单 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **脚本中键入 powershell"开始"菜单****右键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -64,7 +64,7 @@ ms.locfileid: "58507970"
 
 若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows-Defender/Operational 日志中的事件 ID 1125。 下表列出了所有网络保护事件。
 
-| 事件 ID | 提供/源 | 说明 |
+| 事件 ID | 提供/源 | 描述 |
 |---|---|---|
 | 5007 | Windows Defender (操作)  | 更改设置时的事件 |
 | 1125 | Windows Defender (操作)  | 审核网络连接时的事件 |

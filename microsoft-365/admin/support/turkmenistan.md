@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 064027de063e7db82eea7e257528db6f5afa2e303e5df9db11e239577ac5f442
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 923e3ed22b00b95f751f140397c22631ba3025b5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200818"
 ---
 # <a name="contact-support-for-turkmenistan"></a>联系针对阿塞拜疆的支持人员
 
@@ -26,7 +26,7 @@ ms.locfileid: "53809810"
 ## <a name="phone-number"></a>电话号码
 +7 499 922 86 23
 
-## <a name="hours"></a>工作时间
+## <a name="hours"></a>小时
 ### <a name="billing-support"></a>计费支持：
 
 俄语：Mon-Fri上午 10 点到下午 7 点

@@ -22,26 +22,26 @@ ms.custom:
 search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
 ms.date: 04/02/2021
-ms.openlocfilehash: f5fc1e162e6471feb62e886d65755b4b434bdf4a834be59bcf7b37f76f23f129
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200669"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
-计费配置文件包含付款方式、帐单邮寄信息和其他发票设置，如采购订单编号和电子邮件发票首选项。 使用计费配置文件支付从 Microsoft 购买的产品。 当用户进行自助购买时，将自动创建计费配置文件。 每个计费配置文件都单独开票。
+计费配置文件包含付款方式、帐单邮寄信息和其他发票设置，如采购订单编号和电子邮件发票首选项。 使用计费配置文件支付从 Microsoft 购买的产品。 当用户进行自助购买时，将自动创建计费配置文件。 每个计费配置文件将单独开票。
 
 > [!NOTE]
 >
-> 计费配置文件不适用于从 Microsoft.com 购买产品和服务的客户或客户在 Microsoft 365 管理中心。 
+> 计费配置文件不适用于从 Microsoft.com 或"购买服务"页上购买产品和服务Microsoft 365 管理中心。 
 
 ## <a name="what-are-billing-profile-roles"></a>什么是计费配置文件角色？
 
 帐单配置文件上的角色具有控制购买以及查看和管理发票的权限。 向跟踪、组织和支付发票的用户分配这些角色。 例如，您组织中采购工作组的成员。
 
-| 角色                         | 说明                                                                      |
+| Role                         | 说明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | 计费配置文件所有者        | 管理计费配置文件的所有内容                                          |
 | 计费配置文件参与者  | 管理计费配置文件中的权限之外的所有内容                        |
@@ -52,7 +52,7 @@ ms.locfileid: "53797142"
 
 > [!NOTE]
 >
-> 如果按照这些步骤操作，并且计费配置文件列表为空，则意味着你没有计费配置文件，并且无法使用此功能。
+> 如果按照以下步骤操作，并且计费配置文件列表为空，则意味着你没有计费配置文件，并且无法使用此功能。
 
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
 2. 选择" **计费配置文件** "选项卡，然后从列表中选择计费配置文件。
@@ -70,11 +70,11 @@ ms.locfileid: "53797142"
 >
 > 只能将计费配置文件角色分配给贵组织的用户。
 
-## <a name="need-help-contact-support"></a>需要帮助？ 联系技术支持部门
+## <a name="need-help-contact-support"></a>需要帮助？ 联系支持人员
 
 如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
 
-如果你有问题或需要帮助，请联系支持人员Microsoft 365 管理中心[配置文件](../../business-video/get-help-support.md)。
+如果对帐单配置文件有疑问或需要帮助，请联系Microsoft 365 管理中心[支持](../../business-video/get-help-support.md)人员。
 
 ## <a name="related-content"></a>相关内容
 

@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何通过更改用户名或电子邮件地址来更改显示名称、别名或电子邮件地址。
-ms.openlocfilehash: 238d4a81853a490fcc92858480e841aeb7aaa8b7c054ae4bd39e5caee11b91d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: 了解如何通过更改用户名称或电子邮件地址来更改显示名称、别名或电子邮件地址。
+ms.openlocfilehash: af91a9597cba44762b009f3946aca889a2ab5a11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200745"
 ---
 # <a name="change-a-users-name-or-email-address"></a>更改用户名或电子邮件地址
 
@@ -35,13 +36,13 @@ ms.locfileid: "53803626"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
-有时，您可能需要更改用户名或电子邮件地址。 您可以通过更改用户地址显示名称别名或电子邮件地址来这样做。 
+有时，您可能需要更改用户名或电子邮件地址。 为此，可更改显示名称、别名或电子邮件地址。 
 
 ## <a name="try-it"></a>试一试！
 
 ### <a name="change-a-users-display-name"></a>更改用户的显示名称
 
-1. 在"Microsoft 365 管理中心"中，**选择"用户"，** 然后选择"**活动用户"。**
+1. 在"Microsoft 365 管理中心中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 1. 从活动用户列表中选择用户。
 1. 选择 **"管理联系人信息"。**
 1. 更改显示名称，然后选择保存 **更改**。
@@ -50,14 +51,14 @@ ms.locfileid: "53803626"
 
 ### <a name="add-an-email-alias"></a>添加电子邮件别名
 
-1. 在"Microsoft 365 管理中心"中，**选择"用户"，** 然后选择"**活动用户"。**
+1. 在"Microsoft 365 管理中心中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 1. 从活动用户列表中选择用户。
 1. 选择 **"管理电子邮件别名"。**
 1. 输入新别名，验证域，然后选择保存 **更改**。
 
 ### <a name="change-a-username"></a>更改用户名
 
-1. 在"Microsoft 365 管理中心"中，**选择"用户"，** 然后选择"**活动用户"。**
+1. 在"Microsoft 365 管理中心中，选择"**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**""活动用户"。**</a>
 1. 从活动用户列表中选择用户。
 1. 选择 **"管理用户名"。**
 1. 输入新用户名，验证域，然后选择保存 **更改**。

@@ -15,15 +15,15 @@ ms.collection:
 ms.custom: ''
 description: 了解 Contoso 网络基础结构，以及公司如何使用 SD-WAN 技术实现最佳网络性能，Microsoft 365企业云服务。
 ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200457"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
-为了采用包含云的基础结构，Contoso 对网络流量到云服务的传输方式进行根本转变。 它们将用户位置映射到本地 Internet 出口，将本地连接映射到 Internet 上最近的 Microsoft 365 网络位置，而不是侧重于网络连接和流量的内部中心分支模型。
+为了采用包含云的基础结构，Contoso 对网络流量到云服务的传输方式进行根本转变。 它们将用户位置映射到本地 Internet 出口，将本地连接映射到 Internet 上最近的 Microsoft 365 网络位置，而不是专注于网络连接和流量的内部中心分支模型。
 
 ## <a name="networking-infrastructure"></a>网络基础结构
 
@@ -35,7 +35,7 @@ ms.locfileid: "58569485"
 
 - 本地直接 Internet 访问Microsoft 365流量
 
-  每个办事处都有一个软件定义的 WAN (SD-WAN) 设备，该设备具有一个或多个本地 Internet ISP 网络线路，并通过代理服务器连接自己的 Internet。 这通常实现为指向同时提供公共 IP 地址和本地 DNS 服务器的本地 ISP 的 WAN 链接。
+  每个办事处都有一个软件定义的 WAN (SD-WAN) 设备，该设备具有一个或多个本地 Internet ISP 网络线路，通过代理服务器有自己的 Internet 连接。 这通常实现为指向同时提供公共 IP 地址和本地 DNS 服务器的本地 ISP 的 WAN 链接。
 
 - Internet 网站
 
@@ -92,11 +92,11 @@ Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接�
 
 2. 创建企业网络连接Microsoft 365规划
 
-   Contoso 使用[](microsoft-365-network-connectivity-principles.md)Microsoft 365网络连接原则和示例参考网络体系结构，将 SD-WAN 标识为用于实现连接Microsoft 365拓扑。
+   Contoso 使用[Microsoft 365网络连接](microsoft-365-network-connectivity-principles.md)原则和示例参考网络体系结构，将 SD-WAN 标识为用于实现连接Microsoft 365拓扑。
 
 3. 分析每个办事处的 Internet 连接利用率和 MPLS-WAN 带宽，并根据需要增加带宽
 
-   分析每个办事处的当前使用情况，并增加线路，以便预测Microsoft 365流量的平均未使用容量为 20%。
+   分析每个办事处的当前使用情况，并增加线路，以便Microsoft 365云流量的平均未使用容量为 20%。
 
 4. 优化 Microsoft 网络服务的性能
 
@@ -108,7 +108,7 @@ Contoso Microsoft 365企业服务的成功采用取决于与 Internet 或直接�
 
 6. 验证网络终结点和端口连接
 
-   Contoso 运行 Microsoft 网络连接测试工具，以验证企业云服务Microsoft 365连接性。
+   Contoso 运行了 Microsoft 网络连接测试工具，以验证企业云服务Microsoft 365连接性。
 
 7. 优化员工计算机以建立网络连接
 

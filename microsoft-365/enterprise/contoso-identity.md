@@ -15,19 +15,19 @@ ms.collection:
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
 ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59200466"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
-Microsoft 通过 Azure AD (在其云) 中提供标识即服务Azure Active Directory (IDaaS) 。 若要Microsoft 365企业版，Contoso IDaaS 解决方案必须使用其本地标识提供程序，并包括具有其现有受信任第三方标识提供程序的联合身份验证。
+Microsoft 通过 Azure AD (跨云) 提供标识即服务Azure Active Directory (IDaaS) 。 若要Microsoft 365企业版，Contoso IDaaS 解决方案必须使用其本地标识提供程序，并包括具有其现有受信任的第三方标识提供程序的联合身份验证。
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory 域服务林
 
-Contoso 将单个 Active Directory 域服务 (AD DS) 林用于具有七个子域的 contoso com，每个子域分别用于世界上的一 \. 个子域。 总部、区域中心办事处和分支办事处包含用于本地身份验证和授权的域控制器。
+Contoso 将单个 Active Directory 域服务 (AD DS) 林用于具有七个子域的 contoso com，每个子域分别用于 \. 世界上的一个子域。 总部、区域中心办事处和分支办事处包含用于本地身份验证和授权的域控制器。
 
 下面是 Contoso 林，其中包含包含区域中心的世界不同区域的区域域。
 
@@ -52,11 +52,11 @@ Contoso 决定保留此基础结构，并专用于客户和合作伙伴身份验
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>通过混合标识和密码哈希同步实现基于云的身份验证
 
-Contoso 想要使用其本地 AD DS 林进行身份验证，以Microsoft 365云资源。 它决定使用 PHS (密码哈希) 。
+Contoso 想要使用其本地 AD DS 林进行身份验证，以Microsoft 365云资源。 它决定在 PHS (密码哈希) 。
 
 PHS 将本地 AD DS 林与 Microsoft 365 的 Azure AD 租户同步，以用于企业订阅、复制用户和组帐户以及哈希版本的用户帐户密码。
 
-为了执行目录同步，Contoso 在其巴黎数据中心的连接部署了 Azure AD 连接工具。
+为执行目录同步，Contoso 在其巴黎数据中心的连接部署了 Azure AD 连接工具。
 
 下面是运行 Azure AD 的服务器，连接 Contoso AD DS 林中查看更改，然后将这些更改与 Azure AD 租户同步。
 

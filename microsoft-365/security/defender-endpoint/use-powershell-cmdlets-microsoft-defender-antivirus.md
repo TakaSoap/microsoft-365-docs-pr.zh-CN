@@ -18,11 +18,11 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201054"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell cmdlet 配置和管理Microsoft Defender 防病毒
 
@@ -40,7 +40,7 @@ ms.locfileid: "58863949"
 PowerShell cmdlet 在 Windows Server 环境中最有用，这些环境不依赖图形用户界面 (GUI) 配置软件。
 
 > [!NOTE]
-> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))组策略[ADMX 模板）的替换](https://www.microsoft.com/download/101445)。
+> PowerShell cmdlet 不应用作完整网络策略管理基础结构（如[Microsoft Endpoint Configuration Manager、](/configmgr)组策略管理控制台或 Microsoft Defender 防病毒[](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))[组策略 ADMX 模板）的替换](https://www.microsoft.com/download/101445)。
 
 使用 PowerShell 所做的更改将影响部署或进行更改的终结点上的本地设置。 这意味着，使用组策略、Microsoft Endpoint Configuration Manager或Microsoft Intune部署策略可能会覆盖使用 PowerShell 所做的更改。
 
