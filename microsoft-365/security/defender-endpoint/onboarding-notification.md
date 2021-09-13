@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572559"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175434"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -41,7 +41,7 @@ ms.locfileid: "58572559"
 
 创建通知规则，以便当使用本地载入或载出脚本时，将通知你。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你将需要具有访问权：
 
@@ -52,7 +52,7 @@ ms.locfileid: "58572559"
 
 1. 在 [flow.microsoft.com](https://flow.microsoft.com/)中。
 
-2. 导航到 **"我的流>新>计划 - 从空白。**
+2. 导航到 **"我>计划>新流 - 从空白。**
 
     ![流的图像。](images/new-flow.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "58572559"
    - 访问群体： `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - 客户端 ID：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取客户端 ID 值。
    - 凭据类型：选择"机密"。
-   - 密码：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
+   - 密码：登录并导航到Azure Active Directory > https://portal.azure.com **注册并** 获取租户 ID 值。
 
     ![HTTP 条件的图像。](images/http-conditions.png)
 
@@ -174,16 +174,16 @@ ms.locfileid: "58572559"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册为示例：
+10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册，例如：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在) 列表中注册新的已载入 (设备SharePoint，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在 SharePoint列表中 (新的已载入) 设备，并且会向 Defender for Endpoint 管理员发送通知
 
     ![适用于每个图像的图像。](images/flow-apply.png)
 
     ![适用于每个具有 get 项的图像。](images/apply-to-each.png)
 
-11. 在 **"条件**"下，添加以下表达式："length (body ('Get_items'') ？['value']) "，将条件设置为等于 0。
+11. 在 **"条件**"下，添加以下表达式："length (body ('Get_items') ？['value']) "，将条件设置为等于 0。
 
     ![适用于每个条件的图像。 ](images/apply-to-each-value.png)
      ![condition1 的图像。 ](images/conditions-2.png)
@@ -210,5 +210,5 @@ ms.locfileid: "58572559"
 
 您可以拆分为两个查询：
 
-1. 对于"出载"，仅使用此间隔使用 OData $filter，并且仅在满足条件时通知。
+1. 对于"出载"，只需使用此 OData $filter，并且仅在满足条件时通知。
 2. 查看过去一小时内最后看到的所有设备，并检查第一次看到的属性 (如果第一次看到的属性是过去一小时，则最后一次看到的设备必须太) 。

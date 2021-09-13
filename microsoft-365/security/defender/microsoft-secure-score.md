@@ -22,19 +22,19 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: de8d0a0bc1609a3dfac9d177a51ef3903b477de4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175325"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](overview-security-center.md)。
+Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在网站门户 的 Microsoft 365 Defender https://security.microsoft.com/securescore [找到它](overview-security-center.md)。
 
-执行安全功能分数建议可保护组织免遭威胁。 从企业门户中的Microsoft 365 Defender仪表板，组织可以监视并处理其Microsoft 365标识、应用和设备的安全性。
+执行安全功能分数建议可保护组织免遭威胁。 从企业门户中的Microsoft 365 Defender仪表板，组织可以监视并处理其Microsoft 365、应用和设备的安全性。
 
 安全功能分数可帮助组织：  
 
@@ -46,7 +46,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 ![安全分数主页。](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>如何工作
 
 你获得以下操作点数：
 
@@ -71,7 +71,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或启用特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置百分比表示。
 
-例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的总数为 100 个用户，因此你获得的部分分数为 5 分 (50 受保护/ 100 总分 * 10 最大 pts = 5 pts) 。
+例如，改进操作通过多重身份验证保护所有用户而获得 10 分。 你只有 50 个保护的总数为 100 个用户，因此你获得的部分分数为 5 分 (50 分/共 100 分 * 10 最大 pts = 5 pts) 。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
@@ -92,7 +92,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
-- 确保所有用户都可以在 9 个点 (多重身份验证) 
+- 确保所有用户都可以完成多重身份验证， (9 个点) 
 - 管理角色需要 MFA (10) 
 - 启用策略以阻止 7 (旧身份验证) 
 
@@ -101,7 +101,7 @@ Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](
 
 ## <a name="required-permissions"></a>所需权限
 
-要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之一Azure Active Directory。
+要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 

@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 8fd30ed5f25330a9c835df85a75058a97da2b712
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175394"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "58257232"
 高级 `EmailPostDeliveryEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关对邮件发送者处理的电子邮件执行传递后Microsoft 365。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关表支持的事件 (值) ，请使用安全中心中提供的内置架构 `ActionType` 参考。
+> 有关表支持 (事件) 类型的详细信息，请使用安全中心中提供的内置 `ActionType` 架构参考。
 
 若要获取有关各个电子邮件的信息，您还可以使用 、 和 [`EmailEvents`](advanced-hunting-emailevents-table.md) [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) 表。 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -63,7 +63,7 @@ ms.locfileid: "58257232"
 ## <a name="supported-event-types"></a>支持的事件类型
 此表捕获具有以下值 `ActionType` 的事件：
 
-- **手动修正** – 管理员在将电子邮件传递到用户邮箱后对电子邮件手动采取操作。 这包括通过威胁资源管理器手动 [采取的](../office-365-security/threat-explorer.md) 操作，或者 AIR 自动调查和响应 ([批准) 操作](m365d-autoir-actions.md)。
+- **手动** 修正 – 管理员在将电子邮件传递到用户邮箱后对电子邮件手动采取操作。 这包括通过威胁资源管理器手动 [采取的](../office-365-security/threat-explorer.md) 操作，或 AIR ([自动](m365d-autoir-actions.md)调查和) 批准。
 - **钓鱼邮件 ZAP** [– 零时差自动清除 (ZAP](../office-365-security/zero-hour-auto-purge.md)) 在传递后对网络钓鱼电子邮件采取操作。
 - **恶意软件 ZAP** – 零时差自动清除 (ZAP) 对在传递后发现包含恶意软件的电子邮件采取操作。
 

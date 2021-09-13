@@ -1,7 +1,7 @@
 ---
 title: 配置Microsoft Defender 防病毒阻止超时期限
 description: 你可以配置在Microsoft Defender 防病毒确定时阻止文件运行的时间。
-keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 超时， 块， 时间段， 秒
+keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， defender， 云， 超时， 阻止， 时间段， 秒
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,11 +17,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
 ms.openlocfilehash: 85313f279a46dbb278dbdb0014d44124a147394d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175466"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>配置云块超时时间段
 
@@ -29,7 +29,7 @@ ms.locfileid: "58533215"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-当Microsoft Defender 防病毒发现可疑文件时，它会阻止该文件在查询 Microsoft Defender 防病毒[云服务时运行](cloud-protection-microsoft-defender-antivirus.md)。
+当Microsoft Defender 防病毒发现可疑文件时，它可能会阻止该文件在查询 Microsoft Defender 防病毒[云服务时运行](cloud-protection-microsoft-defender-antivirus.md)。
 
 文件被阻止的默认 [时间段](configure-block-at-first-sight-microsoft-defender-antivirus.md) 为 10 秒。 如果您是安全管理员，您可以指定在允许文件运行之前等待的时间。 延长云阻止超时期限有助于确保有足够的时间从云云服务收到Microsoft Defender 防病毒决定。
 
@@ -41,7 +41,7 @@ ms.locfileid: "58533215"
 
 可以使用终结点安全策略指定云阻止超时[Microsoft Endpoint Manager。](/mem/intune/protect/endpoint-security-policy)
 
-1. 转到管理Endpoint Manager中心 [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) () 登录。
+1. 转到管理Endpoint Manager中心 [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) () 并登录。
 
 2. 选择 **"终结点安全性"，** 然后在"管理 **"下**，选择 **"防病毒"。**
 
@@ -49,7 +49,7 @@ ms.locfileid: "58533215"
 
 4. 在"**配置设置"** 部分，展开"**云保护"。** 然后，在 **"Defender 云扩展超时（** 秒）"框中，指定从 1 秒到 50 秒的更多时间（以秒表示）。 您指定的任何时间将添加到默认值 10 秒。
 
-5.  (此步骤是可选的) 对防病毒策略进行任何其他更改。  (需要帮助？ 请参阅[设置 .Microsoft Defender 防病毒 中的 Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)策略) 
+5.  (此步骤是可选的) 对防病毒策略进行任何其他更改。  (需要帮助？ 请参阅[设置 .Microsoft Defender 防病毒 中的Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)策略) 
 
 6. 选择 **"下** 一步"，然后完成策略配置。
 
@@ -67,7 +67,7 @@ ms.locfileid: "58533215"
 
 4. 双击配置 **扩展云检查并确保** 该选项已启用。 
 
-   指定额外的时间来阻止文件运行，同时等待云确定。 指定从 1 秒到 50 秒的额外时间（秒）。 您指定的任何时间将添加到默认值 10 秒。
+   指定额外时间，以在等待云确定时阻止文件运行。 指定从 1 秒到 50 秒的额外时间（秒）。 您指定的任何时间将添加到默认值 10 秒。
 
 5. 选择“**确定**”。
 

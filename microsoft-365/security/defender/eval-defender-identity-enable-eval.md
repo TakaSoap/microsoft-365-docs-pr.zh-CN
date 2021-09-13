@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 6a89c0e9d9b8b66048ddd50ab967520987a152a9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572511"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175377"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>启用 Microsoft Defender 标识评估环境
 
@@ -48,21 +48,21 @@ ms.locfileid: "58572511"
 
 登录到 Defender for Identity 门户以创建实例，然后将此实例连接到 Active Directory 环境。 
 
-|  |步骤     |详细信息  |
+|  |步骤     |更多信息  |
 |---------|---------|---------|
-|1      | 创建 Defender for Identity 实例        | [快速入门：创建 Microsoft Defender for Identity 实例](/defender-for-identity/install-step1)        |
-|2      | 连接 Active Directory 林中设置 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
+|1     | 创建 Defender for Identity 实例        | [快速开始：创建 Microsoft Defender for Identity 实例](/defender-for-identity/install-step1)        |
+|2     | 连接 Active Directory 林中设置 Defender for Identity 实例   | [快速入门：连接 Active Directory 林](/defender-for-identity/install-step2)  |
 | | |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>步骤 2. 安装和配置传感器
 
 接下来，在本地环境的域控制器和 AD FS 服务器上下载、安装和配置 Defender for Identity 传感器。
 
-|  |步骤     |详细信息  |
+|  |步骤     |更多信息  |
 |---------|---------|---------|
-|1      | 确定你需要多少个 Microsoft Defender for Identity 传感器。        | [规划 Microsoft Defender 标识容量](/defender-for-identity/capacity-planning)   |
-|2      | 下载传感器安装程序包  |  [快速入门：下载 Microsoft Defender for Identity 传感器安装程序包](/defender-for-identity/install-step3)   |
-|3      | 安装 Defender for Identity 传感器    |  [快速入门：安装 Microsoft Defender for Identity 传感器](/defender-for-identity/install-step4)       |
+|1     | 确定你需要多少个 Microsoft Defender for Identity 传感器。        | [为 Microsoft Defender for Identity 规划容量](/defender-for-identity/capacity-planning)   |
+|2     | 下载传感器安装程序包  |  [快速入门：下载 Microsoft Defender for Identity 传感器安装程序包](/defender-for-identity/install-step3)   |
+|3     | 安装 Defender for Identity 传感器    |  [快速入门：安装 Microsoft Defender for Identity 传感器](/defender-for-identity/install-step4)       |
 |4      | 配置传感器       |  [配置 Microsoft Defender for Identity 传感器设置 ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
@@ -70,10 +70,10 @@ ms.locfileid: "58572511"
 
 在安装了传感器的计算机上安装，Windows事件日志集合和 Internet 代理设置以启用和增强检测功能。
 
-|  |步骤     |详细信息  |
+|  |步骤     |更多信息  |
 |---------|---------|---------|
-|1      | 配置Windows事件日志集合         | [配置 Windows 事件集合](/defender-for-identity/configure-windows-event-collection)        |
-|2      | 配置 Internet 代理设置        | [为 Microsoft Defender for Identity Sensor 配置终结点代理和 Internet 连接设置](/defender-for-identity/configure-proxy)        |
+|1     | 配置Windows事件日志集合         | [配置 Windows 事件集合](/defender-for-identity/configure-windows-event-collection)        |
+|2     | 配置 Internet 代理设置        | [为 Microsoft Defender for Identity Sensor 配置终结点代理和 Internet 连接设置](/defender-for-identity/configure-proxy)        |
 |   |         |         |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>步骤 4. 允许 Defender for Identity 识别其他计算机上的本地管理员

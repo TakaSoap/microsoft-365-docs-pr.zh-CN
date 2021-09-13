@@ -14,18 +14,18 @@ ms.topic: article
 search.appverid: met150
 ms.technology: m365d
 ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175382"
 ---
 # <a name="device-profile-page"></a>设备配置文件页
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-安全Microsoft 365门户提供了设备配置文件页面，以便你可以快速评估网络上设备的运行状况和状态。
+安全Microsoft 365提供了设备配置文件页面，以便你可以快速评估网络上设备的运行状况和状态。
 
 > [!IMPORTANT]
 > 设备配置文件页面可能略有不同，具体取决于设备是注册 Microsoft Defender for Endpoint、Microsoft Defender for Identity 还是同时注册这两者。
@@ -40,9 +40,9 @@ ms.locfileid: "58563934"
 
 边栏 (1) 列出了有关设备的基本详细信息。
 
-2 (2) 主要内容区域包含选项卡，你可以切换这些选项卡以查看有关设备的不同类型的信息。
+2 (2) 包含选项卡，你可以切换这些选项卡以查看有关设备的不同类型的信息。
 
-如果设备在 Microsoft Defender for Endpoint 中注册，你还将看到第 3 步 (响应) 。 响应操作允许您执行与安全性相关的常见任务。
+如果设备在 Microsoft Defender for Endpoint 中注册，你还将看到 3 (响应) 。 响应操作允许您执行与安全性相关的常见任务。
 
 ## <a name="sidebar"></a>边栏
 
@@ -60,7 +60,7 @@ ms.locfileid: "58563934"
 
 * **设备详细信息** - 域、操作系统、首次看到设备的时间戳、IP 地址、资源。 在 Microsoft Defender for Endpoint 中注册的设备还显示运行状况状态。 在 Microsoft Defender 中注册用于标识的设备将显示 SAM 名称和首次创建设备的时间戳。
 * **网络** 活动 - 第一次和最后一次在网络中看到设备的时间戳。
-* **目录数据** (注册到 *Microsoft Defender for Identity*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) 标志 [、SNS](/windows/win32/ad/service-principal-names)和组成员身份的设备。
+* **目录数据** (*在 Microsoft Defender for Identity*) 注册的设备 - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) 标志 [、SNS](/windows/win32/ad/service-principal-names)和组成员身份。
 
 ## <a name="response-actions"></a>响应操作
 
@@ -75,10 +75,10 @@ ms.locfileid: "58563934"
 设备配置文件页上可用的操作包括：
 
 * **管理标记** - 更新已应用于此设备的自定义标记。
-* **隔离设备** - 将设备与组织的网络隔离，同时将其连接到 Microsoft Defender for Endpoint。 你可以选择允许Outlook、Teams和Skype for Business隔离时运行，以用于通信目的。
+* **隔离设备** - 将设备与组织的网络隔离，同时将其连接到 Microsoft Defender for Endpoint。 你可以选择允许Outlook、Teams和Skype for Business设备隔离时运行，以用于通信目的。
 * **操作中心** - 查看已提交操作的状态。 仅在已选择其他操作时可用。
 * **限制应用执行** - 阻止未由 Microsoft 签名的应用程序运行。
-* **运行防病毒扫描**- 更新Windows Defender 防病毒并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
+* **运行防病毒扫描**- Windows Defender 防病毒定义并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
 * **收集调查包** - 收集有关设备的信息。 调查完成后，可以下载它。
 * **启动实时响应会话** - 在设备上加载远程 Shell 进行 [深入安全调查](/microsoft-365/security/defender-endpoint/live-response)。
 * **启动自动调查** - [自动调查和修正威胁](../office-365-security/office-365-air.md)。 尽管你可以手动触发自动调查以从此页运行，但某些警报策略[](../../compliance/alert-policies.md#default-alert-policies)会自行触发自动调查。
@@ -156,7 +156,7 @@ ms.locfileid: "58563934"
 
 ### <a name="discovered-vulnerabilities-tab"></a>"发现的漏洞"选项卡
 
-" **发现的漏洞"** 选项卡列出了可能会影响设备 (的) 的常见漏洞和漏洞。
+" **发现的漏洞"** 选项卡列出了可能会影响设备的任何常见 (和) 的 CES 和攻击。
 
 ![设备配置文件的已发现漏洞选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
@@ -164,7 +164,7 @@ ms.locfileid: "58563934"
 
 与前面的选项卡一样，可以自定义显示的项目数和可见的列。
 
-从此列表选择一个项目将打开一个描述 CVE 的飞出区。
+从此列表选择一个项目将打开描述 CVE 的飞出区。
 
 ### <a name="missing-kbs"></a>缺少 KB
 

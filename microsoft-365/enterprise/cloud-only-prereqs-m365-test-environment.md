@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
 ms.openlocfilehash: 5fc29acce595cab33086ea868d927b93b9281167
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175485"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
@@ -35,7 +35,7 @@ ms.locfileid: "58573123"
 2. 配置命名位置
 3. 配置自助密码重置
 4. 配置多重身份验证
-5. 启用已加入域的计算机的自动Windows注册
+5. 启用已加入域的计算机的Windows注册
 6. 配置 Azure AD 密码保护 
 7. 启用 Azure AD Identity Protection
 8. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
@@ -79,7 +79,7 @@ ms.locfileid: "58573123"
 
 ## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 5：启用已加入域的计算机的Windows注册 
 
-按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用自动注册加入域的计算机Windows注册。
+按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>阶段 6：配置 Azure AD 密码保护 
 

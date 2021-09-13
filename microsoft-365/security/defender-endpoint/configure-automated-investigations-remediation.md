@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 4c1e3671e68d291d2f9a78f3d25a94abb82269059c8c220d9117048f0481f1cc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2415bace353e3ee5596117e37eb860c7a206c96b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53869669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175470"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置自动调查和修正功能
 
@@ -55,9 +55,9 @@ ms.locfileid: "53869669"
 2. 选择 **+ 添加设备组**。
 3. 创建至少一个设备组，如下所示：
    - 为设备组指定名称和说明。
-   - 在"**自动化级别"列表中**，选择一个级别，例如"完全 **- 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
+   - 在 **"自动化级别"列表中**，选择一个级别，例如"完全 **- 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
-   - 在 **"用户访问"**[选项卡上，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
+   - 在 **"用户访问"** 选项卡上 [，Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。
 
 ## <a name="next-steps"></a>后续步骤

@@ -11,15 +11,15 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175477"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-您的网关连接到 Microsoft 托管桌面[服务Microsoft Endpoint Manager。](https://endpoint.microsoft.com/) 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
+您的网关连接到 Microsoft 托管桌面[服务Microsoft Endpoint Manager](https://endpoint.microsoft.com/)。 如果你不熟悉此门户的设备管理功能，请参阅Microsoft Endpoint Manager[文档](/mem/)。
 
 > [!NOTE]
 > 在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)支持以下浏览器：
@@ -28,7 +28,7 @@ ms.locfileid: "58602909"
 > - Chrome (最新版本) 
 > - Firefox (最新版本) 
 
-管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。 可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 Azure Active Directory (Azure AD) 管理员角色和内置 Microsoft 托管桌面 角色可用于更精细地控制 Microsoft 托管桌面 管理门户中的不同功能。 有关角色Azure Active Directory，请参阅[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。 与应用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，内置角色特定于 Microsoft 托管桌面并且仅保证访问此服务的管理员功能。 管理员可以单独或结合 Azure AD 管理员角色向用户分配内置角色，Microsoft 托管桌面现有管理员帐户的权限。
+管理帐户将需要特定权限才能访问Microsoft 托管桌面管理Microsoft Endpoint Manager。 可以使用基于角色的访问控制在组织中管理对这些功能的管理员访问权限。 Azure Active Directory (Azure AD) 管理员角色和内置 Microsoft 托管桌面 角色可用于更精细地控制 Microsoft 托管桌面 管理门户中的不同功能。 有关角色Azure Active Directory，请参阅[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。 与应用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，内置角色特定于 Microsoft 托管桌面 并且仅保证访问此服务的管理员功能。 管理员可以单独或结合 Azure AD 管理员角色向用户分配内置角色，Microsoft 托管桌面现有管理员帐户的权限。
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory具有访问权限Microsoft 托管桌面角色
 
@@ -37,9 +37,9 @@ ms.locfileid: "58602909"
 |全局管理员     | 具有此角色的 **管理员将拥有** 对管理门户中所有功能的Microsoft 托管桌面权限。         |
 |全局读取者     | 具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。         |
 |Intune 服务管理员     |  具有此角色的 **管理员将在管理** 门户中对与安全不相关的功能Microsoft 托管桌面权限。       |
-|服务支持管理员     | 具有此角色的管理员将具有对与安全不相关的功能的只读权限，并且具有在管理门户中管理支持请求Microsoft 托管桌面写入权限。         |
-|安全管理员 | 具有此角色的管理员将拥有对管理门户中所有功能的只读权限，以及针对管理员门户中与安全Microsoft 托管桌面相关的功能的写入权限。 |
-|安全信息读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。|
+|服务支持管理员     | 具有此角色的 **管理员将具有** 对与安全不相关的功能的只读权限，并且具有在管理门户中管理支持请求Microsoft 托管桌面写入权限。         |
+|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且对管理门户中安全相关Microsoft 托管桌面写入权限。 |
+|安全读取者 |具有此角色的管理员将拥有对管理 **门户** 中所有功能的只读Microsoft 托管桌面权限。|
 
 如果需要有关分配角色Azure Active Directory帮助，请参阅[Azure AD 内置角色](/azure/active-directory/roles/permissions-reference)。
 
@@ -51,7 +51,7 @@ ms.locfileid: "58602909"
 
 |内置角色  |Microsoft 托管桌面权限  |
 |---------|---------|
-|Microsoft 托管桌面服务管理员  | 分配给用户时，此角色授予管理员对与管理门户中与安全不相关的功能的Microsoft 托管桌面权限。  |
+|Microsoft 托管桌面服务管理员  | 在分配给用户时，此角色授予管理员对管理员门户中与安全Microsoft 托管桌面权限。  |
 |Microsoft 托管桌面服务读者 | 当分配给用户时，此角色向管理员授予对管理员门户中与安全不相关的功能的只读Microsoft 托管桌面权限。 |
 |Microsoft 托管桌面安全管理器 |分配给用户时，此角色仅向管理员授予对管理门户中与安全相关的Microsoft 托管桌面权限。   |
 
@@ -60,7 +60,7 @@ ms.locfileid: "58602909"
 
 ### <a name="assigning-built-in-roles-to-user"></a>向用户分配内置角色
 
-为了轻松管理内置角色，每个自定义角色都有一个安全组，其名称为"新式工作区角色 _-_ 角色名称" (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
+为了轻松管理内置角色，每个自定义角色都有一个安全组，名称为"新式工作区角色 _-_ 角色名称" (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
 1. 转到Microsoft Endpoint Manager门户。
 2. 选择 **左侧** 的"组"。
 3. 搜索 **"现代工作区角色**"，然后选择与要分配的角色关联的组。 
@@ -69,7 +69,7 @@ ms.locfileid: "58602909"
 6. 选择 **底部的** "选择"。
 
 > [!NOTE]
-> 当前不支持嵌套角色分配组。 
+> 当前不支持嵌套角色分配安全组。 
 
 ### <a name="assigning-built-in-roles-to-groups"></a>向组分配内置角色
 

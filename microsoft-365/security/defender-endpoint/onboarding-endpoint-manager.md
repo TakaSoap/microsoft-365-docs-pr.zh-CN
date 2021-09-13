@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1e1a598f0a87a4bb0bd7882d2b402c43b276a24f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175437"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -49,7 +49,7 @@ ms.locfileid: "58563958"
 
 本主题指导用户：
 
-- 步骤 1：在 MEM 中通过创建组将设备载入服务Microsoft Endpoint Manager () 分配配置
+- 步骤 1：在 MEM 中创建组以将设备载入Microsoft Endpoint Manager (MEM) 分配配置
 - 步骤 2：使用 Microsoft Endpoint Manager
 
 本载入指南将指导你完成在使用应用时需要执行Microsoft Endpoint Manager：
@@ -88,7 +88,7 @@ ms.locfileid: "58563958"
 
 1. 打开 MEM 门户。
 
-2. 打开 **">组"。**
+2. 打开 **"组>新建组"。**
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal1 的图像。](images/66f724598d9c3319cba27f79dd4617a4.png)
@@ -102,7 +102,7 @@ ms.locfileid: "58563958"
 
 5. 从" **组>所有组"窗格中** ，打开新组。
 
-6. 选择 **"成员>添加成员"。**
+6. 选择 **"添加>的成员"。**
 
 7. 查找测试用户或设备并选择它。
 
@@ -133,7 +133,7 @@ ms.locfileid: "58563958"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal4 的图像。](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3. 在 **"平台"下，选择"Windows 10"和"更高版本"，然后选择"配置文件 - 终结点检测和响应>创建"。**
+3. 在 **"平台"下，Windows 10"和"稍后"，选择"配置文件 - 终结点检测和响应>创建"。**
 
 4. 输入名称和说明，然后选择"下一 **步"。**
 
@@ -188,7 +188,7 @@ ms.locfileid: "58563958"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal13 的图像。](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5. 在"**配置设置"页**：设置云保护Microsoft Defender 防病毒 (排除项、Real-Time保护和修正策略) 。
+5. 在"**配置设置"页**：设置云保护Microsoft Defender 防病毒 (排除项、Real-Time保护和修正) 。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal14 的图像。](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
@@ -299,10 +299,10 @@ ms.locfileid: "58563958"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager portal30 的图像。](images/45cefc8e4e474321b4d47b4626346597.png)
 
-9. 选择 **"审阅"和"创建>创建"。**
+9. 选择 **查看并创建>创建**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > ![portal31 Microsoft Endpoint Manager图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
 
 10. 查看策略。
 
@@ -401,13 +401,13 @@ ms.locfileid: "58563958"
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>确认攻击面减少 - Web 保护
 
-1. 在测试设备上，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
+1. 在测试设备上，打开 PowerShell Windows键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 2. 这应该会以 0 作为响应，如下所示。
 
     ![命令行 3 的图像。](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3. 应用该策略后，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
+3. 应用策略后，打开 PowerShell Windows并键入 `(Get-MpPreference).EnableNetworkProtection` 。
 
 4. 响应结果应为 1，如下所示。
 

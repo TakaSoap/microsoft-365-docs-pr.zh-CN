@@ -16,12 +16,12 @@ metadata:
   description: 管理员可以查看 Microsoft 合作伙伴和经销商在 Microsoft 365中有关委派管理任务的常见问题和解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b13a7378eed01cab14dc45632b240c8dfa73d590de3f1db2e1ff87a5043f635e
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "56830691"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59175302"
 title: 委派管理常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]

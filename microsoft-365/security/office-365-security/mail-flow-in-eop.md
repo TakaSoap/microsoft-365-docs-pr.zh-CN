@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以了解在 EOP 服务中配置邮件流和Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 21702d1b7c57e1d102503cc806fa5699627eedabbb0945e34be91c2c2eb1fedf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9636025796aee1ba2027edff38a16f131974134f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56830689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175301"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的邮件流
 
@@ -53,4 +53,4 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 要验证包括连接器配置在内的 EOP 安装是否正常工作，请参阅[设置 EOP 服务](/exchange/standalone-eop/set-up-your-eop-service)中的"您如何知道此任务有效？"部分。
 
-[通过验证您的邮件流Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供有关测试您的邮件流是否正确设置的说明。
+[通过验证邮件流Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供了测试邮件流是否正确设置的说明。

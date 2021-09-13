@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e5ed8830050dc2f36c6945bbe7570d2ee417ac9aa3210801eaae2f1c89c55d6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d8e509aee364c54d1231c1a58115f65777022afb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175442"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 
@@ -39,12 +39,12 @@ ms.locfileid: "53799798"
 若要在没有 Internet 访问的情况下载入设备，需要执行以下常规步骤：
 
 > [!IMPORTANT] 
-> 以下步骤仅适用于运行早期版本的设备Windows例如：Windows Server 2016及更早版本或 Windows 8.1 及更早版本。
+> 以下步骤仅适用于运行早期版本的设备Windows例如：Windows Server 2016及更早版本或Windows 8.1版本。
 
 > [!NOTE]
 > - 如果通过"TelemetryProxyServer"注册表或 GPO 配置，则 OMS 网关服务器不能用作断开连接的 Windows 10 或 Windows Server 2019 设备的代理。
 > - For Windows 10 or Windows Server 2019 - while you may use TelemetryProxyServer， it must point to a standard proxy device or appliance.
-> - 此外，Windows 10环境中Windows或 Windows Server 2019 必须能够通过内部文件或 Web 服务器脱机更新证书信任列表。
+> - 此外，Windows 10环境中Windows服务器 2019 的服务器必须能够通过内部文件或 Web 服务器脱机更新证书信任列表。
 > - 有关脱机更新 CTLS 的信息，请参阅配置文件或 [Web 服务器以下载 CTL 文件](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)。
 
 有关载入方法详细信息，请参阅以下文章：
@@ -54,7 +54,7 @@ ms.locfileid: "53799798"
 
 ## <a name="on-premises-devices"></a>本地设备
 
-- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或集线器：
+- 设置 Azure Log Analytics (以前称为 OMS Gateway) 充当代理或中心：
   - [Azure Log Analytics 代理](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
   - [安装和配置Microsoft Monitoring Agent (MMA) ](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)指向 Defender for Endpoint Workspace 密钥& ID
 

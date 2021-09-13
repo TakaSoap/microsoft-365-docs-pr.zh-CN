@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c36707aa98d0c7ff1a5cd7284ad149007c4d969ce1bfdf0aeb31cb68a4b4b549
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 23f093ba5f93bd8763ae27526dbeb77a16f3c5cd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175422"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>终结点检测和响应概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "53898043"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-Defender for Endpoint endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。
+适用于终结点的 Defender 终结点检测和响应功能提供近实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。
 
 检测到威胁时，将在系统中创建警报以供分析人员进行调查。 使用相同攻击技术或归属于同一攻击者的警报会被聚合到名为 _“事件”_ 的实体中。 以此方式聚合警报可便于分析员更轻松地综合调查和响应威胁。
 

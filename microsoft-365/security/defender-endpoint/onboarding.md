@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575992"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175433"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>载入至 Microsoft Defender for Endpoint 服务
 
@@ -35,7 +35,7 @@ ms.locfileid: "58575992"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-了解部署 Microsoft Defender for Endpoint 的各个阶段以及如何在解决方案中配置功能。
+了解部署 Microsoft Defender for Endpoint 的各个阶段，以及如何在解决方案中配置功能。
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
@@ -67,7 +67,7 @@ ms.locfileid: "58575992"
 
 |终结点|工具选项|
 |---|---|
-|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [与 Azure Defender 集成](configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md)|
 |**Linux Server**|[本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[基于应用](ios-install.md)|

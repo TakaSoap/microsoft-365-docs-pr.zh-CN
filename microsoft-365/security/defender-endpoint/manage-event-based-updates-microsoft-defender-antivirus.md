@@ -1,5 +1,5 @@
 ---
-title: 在某些Microsoft Defender 防病毒之后应用更新
+title: 在特定Microsoft Defender 防病毒后应用更新
 description: 管理Microsoft Defender 防病毒启动或接收云提供的检测报告后应用安全智能更新的方式。
 keywords: 更新， 保护， 强制更新， 事件， 启动， 检查最新， 通知
 search.product: eADQiWindows 10XVcnh
@@ -17,11 +17,11 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175457"
 ---
 # <a name="manage-event-based-forced-updates"></a>管理基于事件的强制更新
 
@@ -32,7 +32,7 @@ ms.locfileid: "58823837"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒允许你确定更新是应 (，还是不应) 在某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
+Microsoft Defender 防病毒允许你确定更新是应 (还是不应) 某些事件之后发生，例如启动时还是从云提供的保护服务接收特定报告之后。
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>在运行扫描之前检查保护更新
 
@@ -40,7 +40,7 @@ Microsoft Defender 防病毒允许你确定更新是应 (，还是不应) 在某
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>运行扫描之前，使用 Configuration Manager 检查保护更新
 
-1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"概述Endpoint Protection \>  \> **反** 恶意软件策略) 
+1. 在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)  \>  \> 
 
 2. 转到计划 **扫描** 部分，将运行扫描之前检查最新的 **安全智能更新** 设置为 **是**。
 
@@ -74,7 +74,7 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>使用 Windows Management Instruction (WMI) 在运行扫描之前检查保护更新
 
-对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [以下属性MSFT_MpPreference类的 **Set**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))方法：
 
 ```WMI
 CheckForSignaturesBeforeRunningScan
@@ -92,7 +92,7 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击启动时 **检查最新的病毒和** 间谍软件定义，将选项设置为 **已启用**。
 
@@ -108,7 +108,7 @@ CheckForSignaturesBeforeRunningScan
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击启动时 **启动安全智能更新** ，将选项设置为 **已启用**。
 
@@ -124,9 +124,9 @@ Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 
 有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒 和[Defender cmdlet，](/powershell/module/defender/index)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，以在 Microsoft Defender 防病毒 不存在时下载更新
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>使用 Windows Management Instruction (WMI) ，在 Microsoft Defender 防病毒不存在时下载更新
 
-对 [**以下** 属性MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))类的 Set 方法：
+对 [以下属性MSFT_MpPreference类的 **Set**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85))方法：
 
 ```WMI
 SignatureDisableUpdateOnStartupWithoutEngine
@@ -150,7 +150,7 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 展开树以Windows **安全** \> **Microsoft Defender 防病毒** \> **更新的组件**。
+4. 展开树以Windows **安全Microsoft Defender 防病毒** \>  \> **更新的组件**。
 
 5. 双击允许基于 Microsoft **MAPS** 报告进行实时安全智能更新，将选项设置为 **已启用**。 单击" **确定**"。
 
@@ -162,7 +162,7 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 ## <a name="see-also"></a>另请参阅
 
 - [部署Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
-- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)

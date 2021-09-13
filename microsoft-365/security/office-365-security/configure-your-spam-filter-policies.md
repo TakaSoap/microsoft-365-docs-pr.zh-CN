@@ -18,11 +18,11 @@ description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f12a416a95f55a73bd0bbd80bfb1a4fe5121aeec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175306"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
