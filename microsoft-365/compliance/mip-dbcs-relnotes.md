@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 双字节字符集支持的发行说明。
-ms.openlocfilehash: 9f56441e6ba82b1936033c6f4a810ea2afeab72cc72b6337f992eb0bb52fd231
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbcaec29de206344712749fee6bf9f358a04caa6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59195794"
 ---
-# <a name="support-for-double-byte-character-set-release-notes-preview"></a>双字节字符集支持发行说明（预览版）
+# <a name="support-for-double-byte-character-set-release-notes"></a>双字节字符集支持发行说明
 
  Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持：
 
