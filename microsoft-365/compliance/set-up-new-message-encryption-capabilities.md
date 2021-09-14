@@ -17,13 +17,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 了解新的 Office 365 邮件加密功能，可与组织内部和外部的人员实现受保护的电子邮件通信。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: 93fbd85ed75684d55ed45aec6821d86ed5e9c3f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196877"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 
@@ -123,7 +125,7 @@ ms.locfileid: "53819771"
 
 若要更新现有规则以使用新的 OME 功能，请执行以下操作：
 
-1. 在 Microsoft 365 管理中心，转到“**管理中心>Exchange**”。
+1. 在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 中，转到“**管理中心”>“Exchange**”。
 2. 在 Exchange 管理中心，转到“**邮件流>规则**”。
 3. 对于每条规则, 在 **执行下列操作** 中：
     - 选择“**修改邮件安全性**”。

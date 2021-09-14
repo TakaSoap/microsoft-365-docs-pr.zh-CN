@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59161633"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -61,7 +61,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="sharing"></a>共享
 
-**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 组织设置 >“安全和隐私”选项卡 > 共享
+**导航：** [Microsoft 365 管理中心](https://admin.microsoft.com) > **设置** > **组织设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**安全性和隐私** 选项卡</a> > **共享**。
 
 ![Microsoft 365 管理中心中的安全和隐私来宾共享设置的屏幕截图。](../media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -71,7 +71,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 > Microsoft 365 组
+**导航：** [Microsoft 365 管理中心](https://admin.microsoft.com) > **设置** > **组织设置** > Microsoft 365 组
 
 ![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图。](../media/office-365-groups-guest-settings.png)
 

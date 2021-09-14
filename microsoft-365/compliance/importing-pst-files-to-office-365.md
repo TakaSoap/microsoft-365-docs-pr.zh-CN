@@ -19,20 +19,21 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: 了解如何使用 Microsoft 365 合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: d885fbcf6f4b94ec7b1716c53f6d1fa541994434
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169635"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
 > [!NOTE]
 > 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)。
 
-可以使用 Microsoft 365 合规中心的导入服务将 PST 文件快速批量导入到组织中的 Exchange Online 邮箱中。可以通过两种方式将 PST 文件导入到 Office 365：
+可以使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a> 的导入服务将 PST 文件快速批量导入到组织的 Exchange Online 邮箱中。可以通过两种方式将 PST 文件导入到 Office 365：
 
 - **网络上传** ![云上传。](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) –通过网络将 PST 文件上传到 Microsoft 云中的临时 Azure 存储位置。 然后，使用 Office 365 导入服务将 PST 数据导入到组织的邮箱中。
 
@@ -152,7 +153,7 @@ ms.locfileid: "58574179"
 
 Using network upload to import PST files is free.
 
-这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在 Microsoft 365 管理中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
+这也意味着在将 PST 文件从 Azure 存储区域删除后，将不再显示在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 内已完成导入作业的文件列表中。 虽然导入作业可能仍然列在“**将数据导入到 Office 365**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。
 
 #### <a name="what-version-of-the-pst-file-format-is-supported-for-importing-to-office-365"></a>What version of the PST file format is supported for importing to Office 365?
 

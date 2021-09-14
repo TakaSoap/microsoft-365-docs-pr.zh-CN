@@ -18,35 +18,64 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59169609"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
-需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用 Microsoft 365 合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Microsoft 365 中搜索以下类型的[用户和管理员活动](#audited-activities)：
+需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用 Microsoft 365 合规中心中的审核日志搜索工具来搜索同统一的审核日志，以查看组织中的用户和管理员活动。 数千名 Microsoft 365 服务和解决方案中执行的用户和管理员操作被捕获、记录并保留在组织的统一审核日志中。 组织中的用户可以使用审核日志搜索工具来搜索、查看和导出（到 CSV 文件）这些操作的审核记录。
 
-- SharePoint Online 和 OneDrive for Business 中的用户活动
-- Exchange Online 中的用户活动（Exchange 邮箱审核日志记录）
-- SharePoint Online 中的管理员活动
-- Azure Active Directory 中的管理员活动（Microsoft 365 的目录服务）
-- Exchange Online 中的管理员活动（Exchange 管理员审核日志记录）
-- 安全与合规中心中的电子数据展示活动
-- Power BI 中的用户和管理员活动
-- Microsoft Teams 中的用户和管理员活动
-- Dynamics 365 中的用户和管理员活动
-- Yammer 中的用户和管理员活动
-- Microsoft Power Automate 中的用户和管理员活动
-- Microsoft Stream 中的用户和管理员活动
-- Microsoft 工作区分析中的分析员和管理员活动
-- Microsoft Power Apps 中的用户和管理员活动
-- Microsoft Forms 中的用户和管理员活动
-- 使用 SharePoint Online 或 Microsoft Teams 的网站的敏感度标签的用户和管理员活动
-- “简介电子邮件” 和 “MyAnalytics” 中的管理活动
+## <a name="microsoft-365-services-that-support-auditing"></a>支持审核的 Microsoft 365 服务
+
+为什么是统一的审核日志？ 因为可以在审核日志中搜索在不同 Microsoft 365 服务中执行的活动。 下表列出了统一审核日志支持的 Microsoft 365 服务和功能（按字母顺序排列）。
+
+| Microsoft 365 服务或功能 | 记录类型|
+|:---------|:---------|
+| Azure Active Directory|AzureActiveDirectory、AzureActiveDirectoryAccountLogon、AzureActiveDirectoryStsLogon |
+| Azure 信息保护|AipDiscover、AipSensitivityLabelAction、AipProtectionAction、AipFileDeleted、AipHeartBeat |
+| 内容资源管理器|LabelContentExplorer|
+| 数据丢失防护 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange|
+| Defender for Endpoint|DLPEndpoint|
+| Dynamics 365|CRM|
+| 电子数据展示|发现、AeD|
+| 精确数据匹配|MipExactDataMatch|
+| Exchange Online|ExchangeAdmin、ExchangeItem、ExchangeItemAggregated |
+| Forms|MicrosoftForms|
+| 信息屏障|InformationBarrierPolicyApplication|
+| Microsoft 365 Defender|MDATPAudit、AirInvestigation、AirManualInvestigation、AirAdminActionInvestigation|
+| Microsoft Teams|MicrosoftTeams|
+| MyAnalytics|MyAnalyticsSettings|
+| OneDrive for Business|OneDrive|
+| Power Apps|PowerAppsApp、PowerAppsPlan|
+| Power Automate|MicrosoftFlow|
+| Power BI|PowerBIAudit|
+| Quarantine|Quarantine|
+| 保留策略和保留标签|MIPLabel、MipAutoLabelExchangeItem、MipAutoLabelSharePointItem、MipAutoLabelSharePointPolicyLocation|
+| 敏感信息类型|DlpSensitiveInformationType|
+| 敏感度标签|MIPLabel、SensitivityLabelAction、SensitivityLabeledFileAction、SensitivityLabelPolicyMatch|
+| SharePoint Online|SharePoint、SharePointFileOperation、SharePointSharingOperation、SharePointListOperation、SharePointCommentOperation |
+| Stream|MicrosoftStream|
+| 威胁智能|ThreatIntelligence、ThreatIntelligenceUrl、ThreatFinder、ThreatIntelligenceAtpContent|
+| 工作区分析|WorkplaceAnalytics|
+|Yammer|Yammer|
+|||
+
+有关在上表中列出的每个服务中审核的操作的详细信息，请参阅本文中的 [已审核的活动](#audited-activities) 部分。
+
+上表还标识了用于在审核日志中搜索相应服务中活动的记录类型值，方法是使用 Exchange Online PowerShell 中的 **Search-UnifiedAuditLog** cmdlet，或通过使用 PowerShell 脚本来实现。 对于同一服务中不同类型的活动，某些服务具有多个记录类型。 有关审核记录类型的更完整列表，请参阅 [Office 365 管理活动 API 架构](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。
+
+ 有关使用 PowerShell 搜索审核日志的详细信息，请参阅：
+
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+
+- [使用 PowerShell 脚本搜索审核日志](audit-log-search-script.md)
 
 ## <a name="before-you-search-the-audit-log"></a>在搜索审核日志之前
 
@@ -91,7 +120,7 @@ ms.locfileid: "58574107"
 
   有关详细信息，请参阅[关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用 Microsoft 365 合规中心中的 **“审核日志搜索”** 页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
+- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用 Microsoft 365 合规中心中 **审核** 页面上的搜索工具。 必须在 Exchange Online PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
 
   有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅 [导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
@@ -99,9 +128,6 @@ ms.locfileid: "58574107"
 
 - 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Office 365 中不同服务所花费的时间。
 
-  <br>
-
-  ****
 
   |Microsoft 365 服务或功能|30 分钟|24 小时|
   |---|:---:|:---:|
@@ -113,7 +139,6 @@ ms.locfileid: "58574107"
   |电子数据展示|![复选标记。](../media/checkmark.png)||
   |Exchange Online|![复选标记。](../media/checkmark.png)||
   |Microsoft Power Automate||![复选标记。](../media/checkmark.png)|
-  |Microsoft Project|![复选标记。](../media/checkmark.png)||
   |Microsoft Stream|![复选标记。](../media/checkmark.png)||
   |Microsoft Teams|![复选标记。](../media/checkmark.png)||
   |Power Apps||![复选标记。](../media/checkmark.png)|
@@ -124,9 +149,9 @@ ms.locfileid: "58574107"
   |工作区分析|![复选标记。](../media/checkmark.png)||
   |Yammer||![复选标记。](../media/checkmark.png)|
   |Microsoft Forms|![复选标记。](../media/checkmark.png)||
-  |
+  ||||
 
-- Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 Microsoft 365 管理中心或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
+- Azure Active Directory (Azure AD) 是 Office 365 的目录服务。 统一审核日志包含用户、组、应用程序、域以及在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 或 Azure 管理门户中执行的目录活动。 有关 Azure AD 事件的完整列表，请参阅 [Azure Active Directory 审核报告事件](/azure/active-directory/reports-monitoring/concept-audit-logs)。
 
 - 默认情况下，Power BI 的审核日志记录未启用。 若要在审核日志中搜索 Power BI 活动，则必须在 Power BI 管理门户中启用审核。 有关说明，请参阅 [Power BI 管理门户](/power-bi/service-admin-portal#audit-logs)中的“审核日志”部分。
 
@@ -655,7 +680,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="user-administration-activities"></a>用户管理活动
 
-下表列出了管理员使用 Microsoft 365 管理中心或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
+下表列出了管理员使用通过使用 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
 
 > [!NOTE]
 > 下表中“**操作**” 中列出的操作名称包含一个周期 （ `.` ）。 如果在 PowerShell 命令中搜索审核日志、创建审核保留策略、创建警报策略或创建活动警报时，您必须在操作名称中包括该期限。 另请确保使用双引号 （`" "`） 来包含操作名称。
@@ -674,7 +699,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 组管理活动
 
-下表列出了管理员或用户创建或更改 Microsoft 365 组或管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](../admin/create-groups/create-groups.md)。
+下表列出了在管理员或用户创建或更改 Microsoft 365 组或在管理员通过使用 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](../admin/create-groups/create-groups.md)。
 
 > [!NOTE]
 > 下表中“**操作**” 中列出的操作名称包含一个周期 （ `.` ）。 如果在 PowerShell 命令中搜索审核日志、创建审核保留策略、创建警报策略或创建活动警报时，您必须在操作名称中包括该期限。 另请确保使用双引号 （`" "`） 来包含操作名称。
@@ -708,7 +733,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="role-administration-activities"></a>角色管理活动
 
-下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理管理员角色时记录的 Azure AD 角色管理活动。
+下表列出了管理员在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 或 Azure 管理门户中管理管理员角色时记录的 Azure AD 角色管理活动。
 
 > [!NOTE]
 > 下表中“**操作**” 中列出的操作名称包含一个周期 （ `.` ）。 如果在 PowerShell 命令中搜索审核日志、创建审核保留策略、创建警报策略或创建活动警报时，您必须在操作名称中包括该期限。 另请确保使用双引号 （`" "`） 来包含操作名称。
@@ -722,7 +747,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="directory-administration-activities"></a>目录管理活动
 
-下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理其组织时记录的与 Azure AD 目录和域相关的活动。
+下表列出了管理员在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) 或 Azure 管理门户中管理其组织时记录的与 Azure AD 目录和域相关活动。
 
 > [!NOTE]
 > 下表中“**操作**” 中列出的操作名称包含一个周期 （ `.` ）。 如果在 PowerShell 命令中搜索审核日志、创建审核保留策略、创建警报策略或创建活动警报时，您必须在操作名称中包括该期限。 另请确保使用双引号 （`" "`） 来包含操作名称。

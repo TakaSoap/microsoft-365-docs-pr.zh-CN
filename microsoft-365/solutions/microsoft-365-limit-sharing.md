@@ -16,16 +16,16 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: ''
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 recommendations: false
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: ba7bd7796e0c70b91f7f1c5073e8f51cd5d778be
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3a8bdc738507760fcb7eff02692859f07dc8d5c9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170873"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -59,15 +59,15 @@ ms.locfileid: "58569269"
 如果想要阻止 Teams 中的来宾访问，可在 Teams 管理中心内关闭来宾共享。
 
 关闭 Teams 的来宾共享
-1. 在 Teams 管理中心中，展开“**组织范围的设置**”，然后单击“**来宾访问**”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Teams 管理中心</a> 中，展开“**组织范围的设置**”，然后单击“**来宾访问**”。
 2. 关闭“**在 Teams 中允许访客访问**”。
 3. 单击“**保存**”。
 
 若要阻止 Microsoft 365 组中的来宾访问，可以在 Microsoft 365 管理中心内禁用组来宾访问设置。
 
 禁用 Microsoft 365 组中的来宾共享的具体步骤
-1. 在 Microsoft 365 管理中心，单击“**设置**”，然后单击“**组织设置**”。
-2. 在“服务”选项卡上，单击“Microsoft 365 组”。
+1. 在 Microsoft 365 管理中心中，单击“**设置**” > “**组织设置**” > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">“**服务**”选项卡</a>。
+2. 单击“**Microsoft 365 组**”。
 3. 取消选中“**允许组织外部的组成员访问组内容**”和“**允许组所有者将组织外部的人员添加到组**”复选框。
 4. 单击“**保存更改**”。
 

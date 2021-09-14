@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569029"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196897"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -315,9 +315,11 @@ ms.locfileid: "58569029"
 
 2. 选择“**策略**”选项卡，然后为“**敏感度**”设置选择“**编辑**”。
 
-3. 从“**编辑敏感度设置**”窗格中，选择要应用于该网站的敏感度标签，然后选择“**保存**”。
+3. 从“**编辑敏感度设置**”窗格中，选择要应用于该网站的敏感度标签。 与可向特定用户分配敏感度标签的用户应用不同，管理中心显示租户的所有敏感度标签。 选择标签后，选择“**保存**”。
 
-## <a name="support-for-sensitivity-labels"></a>敏感度标签支持
+## <a name="support-for-sensitivity-labels"></a>对于敏感度标签的支持
+
+使用支持敏感度标签的管理中心时，可看到租户的所有敏感度标签。 相比之下，根据发布策略筛选敏感度标签的用户应用和服务可以导致你看到这些标签的子集。
 
 以下应用和服务支持为网站和组设置配置的敏感度标签：
 
@@ -326,7 +328,7 @@ ms.locfileid: "58569029"
   - SharePoint 管理中心
   - Azure Active Directory 高级版
   - Microsoft 365 管理中心
-  - Microsoft 365 合规中心、Microsoft 365 安全中心、安全与合规中心
+  - Microsoft 365 合规中心
 
 - 用户应用和服务：
 
@@ -450,6 +452,6 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 如需有关[通过 Microsoft Teams、O365 组和 SharePoint Online 网站使用敏感度标签](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380)的信息，请参阅网络研讨会的记录和回答的问题。
 
-有关管理 Teams 连接站点和频道网站的详细信息，请参阅 [管理 Teams 连接站点和频道网站](/SharePoint/teams-connected-sites)。
-
 在录制此网络研讨会时该功能仍处于预览阶段，因此你可能会发现 UI 存在某些差异。 但是，此功能的信息仍准确无误，并且该页面记录了所有新功能。
+
+有关管理 Teams 连接站点和频道网站的详细信息，请参阅 [管理 Teams 连接站点和频道网站](/SharePoint/teams-connected-sites)。

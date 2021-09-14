@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: f0c7bbe1043116eb678df77ffe95bdc8654839f7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197179"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -98,9 +98,7 @@ ms.locfileid: "58575452"
 
 如果需要与组织外部人员进行协作，建议配置 [SharePoint 和 OneDrive 与 Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) 集成，以获得最佳的共享和管理体验。
 
-默认情况下，团队来宾共享处于关闭状态，但 Office 365 组（存储团队成员资格）和 SharePoint 的共享处于打开状态。 我们在基线层中启用 Teams共享，如果需要，可以使用敏感度标签在敏感层和高度敏感层中将其关闭。
-
-敏感度标签仅影响团队的来宾共享。关联 SharePoint 网站的来宾共享设置是单独控制的，我们让你同时调整统一敏感层和高度敏感层的两个设置。
+Teams 来宾共享默认处于打开状态，但你可以通过使用敏感度标签在敏感层和高度敏感层中根据需要将其关闭。
 
 在高度敏感层，我们将敏感度标签配置为加密应用标签的文件。 如果需要来宾访问这些文件，必须在创建标签时必须授予他们权限。
 

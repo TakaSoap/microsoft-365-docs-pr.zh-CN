@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 你必须是企业订阅的管理员，才能在 Microsoft 365 商业高级版中获取管理员帮助或在线/电话支持。
-ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d636f153e41963ada30bd10066e4211325933cbe
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197062"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -158,7 +159,7 @@ ms.locfileid: "58570649"
 
 ### <a name="open-an-online-request"></a>开启在线请求
 
-通过在线发起服务请求节省时间。在 Microsoft 365 管理中心内，选择“**支持**”\>“**新建服务请求**”。
+可通过发起在线服务请求节省时间。 在 1 中。 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>，选择“**支持**”\>“**新建服务请求**”。
 
 ### <a name="call-support"></a>致电支持人员
 

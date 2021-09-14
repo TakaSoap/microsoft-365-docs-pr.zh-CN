@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 830f068869353949927055b8859ba87c12647bcb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564030"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175601"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -130,7 +130,7 @@ ms.locfileid: "58564030"
 4. 浏览到系统提示时创建的脚本位置。
 
 5. 使用以下设置：
-    1. 使用登录凭据运行此脚本：是
+    1. 使用登录凭据运行此脚本：否
     1. 执行脚本签名检查：否
     1. 在 64 位 PowerShell 主机中运行脚本：是
 

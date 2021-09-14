@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Priority
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- admindeeplinkMAC
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -19,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: 介绍 Office 365 中目录同步问题的常见原因，并提供一些方法帮助进行故障诊断和解决这些问题。
-ms.openlocfilehash: d122fae0da8cf48336cfebf178781d84e349bd16
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 27bbe07be43c7b04b7e74f1cc600df6c1409e372
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196817"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>修复 Microsoft 365 的目录同步问题
 
@@ -38,7 +40,7 @@ ms.locfileid: "58354484"
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>如何获取 Azure Active Directory Connect 工具？
 
-在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到“**用户**”\>“**活动用户**”。 单击“**更多**”菜单（三个点），选择“**目录同步**”。 
+在 [Microsoft 365 管理中心](https://admin.microsoft.com) 中，转到“**用户**”\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">“**活动用户**”</a>。 单击“**更多**”菜单（三个点），选择“**目录同步**”。 
   
 按照[向导中的说明](set-up-directory-synchronization.md)下载 Azure AD Connect。 
   

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
 description: 逐步设置基础结构层，以便远程工作者能够安全访问本地和 Microsoft 365 资源。
-ms.openlocfilehash: 4ca2d190643b7d2bf557fcf87b4319ba4e3adc99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2bc5a4f1f6c6784413b716ce752855393bfed90f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170428"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>设置使用 Microsoft 365 实现混合工作的基础结构
 
@@ -86,7 +86,7 @@ Microsoft 365 具有助力混合工作者现场或远程工作的功能。
 |---|---|---|
 |通过安全性默认设置强制执行 MFA|通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。|Microsoft 365 E3 或 E5|
 |通过条件访问强制执行 MFA|要求基于使用条件访问策略的登录的属性进行 MFA。|Microsoft 365 E3 或 E5|
-|通过基于风险的条件访问强制执行 MFA|需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。|Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可）|
+|通过基于风险的条件访问强制执行 MFA|基于使用 Azure AD 标识保护的用户登录风险要求使用 MFA。|Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可）|
 |自助服务密码重置 (SSPR)|允许用户重置或解锁其密码或帐户。|Microsoft 365 E3 或 E5|
 |Azure AD 应用程序代理|为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。|需要单独的付费 Azure 订阅|
 |配置点到站点 VPN|通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。|需要单独的付费 Azure 订阅|

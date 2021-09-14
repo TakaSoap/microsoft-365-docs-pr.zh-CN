@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: e43a43c6b409379f9ca18c46f91e078ced46b7ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 142f8d9adf9423d1c9a2d8e59405fd4f39dfb751
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59197181"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -108,7 +109,7 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 设置 SharePoint 组织级共享设置
 
-1. 在 Microsoft 365 管理中心左侧导航窗格中的 **“管理中心”** 下，单击 **“SharePoint”**。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 内左侧导航窗格中的 **管理中心** 下，单击“**SharePoint**”。
 2. 在 SharePoint 管理中心的左侧导航窗格中，展开 **"策略"**，然后单击 **“共享”**。
 3. 确保 SharePoint 的外部共享设置为 **“任何人”** 或 **“新来宾和现有来宾”**。
 4. 如果进行了任何更改，请单击 **“保存”**。

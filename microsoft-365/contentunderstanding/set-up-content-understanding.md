@@ -10,26 +10,27 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkMAC
 search.appverid: MET150
 localization_priority: Priority
 description: 设置 SharePoint Syntex
-ms.openlocfilehash: 3b03b36e58b9f5cbb97a967be941fc43285892fd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2f77176e2bfd90b4f912379b3b2dcf15b62c7cf4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59170616"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
-管理员可使用 Microsoft 365 管理中心设置 [Microsoft SharePoint Syntex](index.md)。 
+管理员可使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 设置 [Microsoft SharePoint Syntex](index.md)。 
 
 开始之前应考虑下列建议：
 
 - 要在哪些 SharePoint 网站中启用表单处理？ 全部、部分、还是选定的站点？
 - 你会如何为默认内容中心命名？
 
-可在 Microsoft 365 管理中心内的初始设置后更改你的设置。
+可在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 内的初始设置后更改你的设置。
 
 设置之前，请确保规划在环境中设置和配置内容了解的最佳方式。例如，你需要做出以下决策：
 
@@ -41,7 +42,7 @@ ms.locfileid: "58552884"
 > [!NOTE]
 > 必须拥有全局管理员或 SharePoint 管理员权限，才能访问 Microsoft 365 管理中心并设置 SharePoint Syntex。
 
-作为管理员，你还可在设置后随时对所选择的设置进行更改，并在整个 Microsoft 365 管理中心中的内容理解管理中设置。
+作为管理员，你还可在设置后随时随时更改所选设置，并更改 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 中的内容理解管理设置。
 
 如果计划使用自定义 Power Platform 环境，必须 [在此环境中安装 *用于 Project Cortex 的 AI 生成器* 应用](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)，以及向其 [分配 AI 生成器点数](/power-platform/admin/capacity-add-on)，然后才能创建表单处理模型。
 
@@ -55,9 +56,11 @@ ms.locfileid: "58552884"
 
 若要使用表单处理，还需要 AI Builder 额度。 如果你有 300 个或更多许可用户，则每月会分配 AI 生成器额度。
 
+有关 SharePoint Syntex 许可的详细信息，请参阅 [SharePoint Syntex 许可](syntex-licensing.md)
+
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 
-1. 在 Microsoft 365 管理中心中，选择“**设置**”，然后查看“**文件和内容**”部分。
+1. 在 Microsoft 365 管理中心中，选择“<a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**设置**</a>”，然后查看 **文件和内容** 部分。
 
 2. 在“**文件和内容**”部分中，选择“**自动内容理解**”。 请注意，当前 AI 生成器点数可用性在“**概览**”部分中显示。<br/>
 
@@ -112,7 +115,7 @@ ms.locfileid: "58552884"
 
 以分配许可证：
 
-1. 在Microsoft 365 管理中心中，在 **用户** 下，点击 **活动用户**。
+1. 在 Microsoft 365 管理中心中，在 **用户** 下面，点击“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>”。
 
 2. 选择要给予许可的用户，然后选择“**管理产品许可证**”。
 

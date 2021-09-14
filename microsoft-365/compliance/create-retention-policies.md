@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 34f4bb10ba79e6521d785df157368cdaae89118a
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869187"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59196393"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -67,7 +68,7 @@ ms.locfileid: "58869187"
 
 ### <a name="retention-policy-for-teams-locations"></a>Teams 位置的保留策略
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
+1. 从 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，选择 **策略** > **保留**。
 
 2. 选择 **新的保留策略** 以启动“创建”保留策略配置，并命名新的保留策略。
 
@@ -122,7 +123,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 >
 > 若要使用此功能，Yammer 网络必须为[“本机模式”](/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
+1. 从 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，选择 **策略** > **保留**。
 
 2. 选择 **新保留策略** 创建新的保留策略。
 
@@ -169,7 +170,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 - Microsoft 365 组
 - Skype for Business
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
+1. 从 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>中，选择 **策略** > **保留**。
 
 2. 选择 **新的保留策略** 以启动“创建”保留策略配置，并命名新的保留策略。
 
@@ -211,9 +212,16 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 要指定要包含或排除的个人 OneDrive 帐户，用户 OneDrive 的 URL 通常采用以下格式。 对于用户主体名称(UPN)，任何特殊字符(例如句号、逗号、空格以及 at 符号("@"))都会转换为下划线("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-例如，对于 Contoso 租户中 UPN 为 "rsimone@contoso.onmicrosoft.com" 的用户: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`。 但是，检测冲突时可以附加数字或 GUID。
+例如，对于 Contoso 租户中 UPN 为“rsimone@contoso.onmicrosoft.com”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-最好确认用户 OneDrive 帐户的 URL，可以使用Microsoft 365 管理中心或 PowerShell 执行此操作。 有关详细信息，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+或者，如果使用的是自定义域名，则 UPN 为"rsimone@contoso.com"： `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+
+但是，当检测到冲突时，可以将数字或 GUID 追加到 URL 中，因此最好是确认用户的 OneDrive 帐户 URL。 若要确认 URL，可以使用 Microsoft 365 管理中心 或 PowerShell。 有关详细信息，请参阅 [获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
+
+> [!NOTE]
+> 指定单个 OneDrive 帐户以包括或排除时，请注意，除非 oneDrive 帐户已 [预配](/onedrive/pre-provision-accounts)，否则在用户首次访问其 OneDrive 之前将不会创建 URL。
+> 
+> 此外，如果用户的 UPN 发生更改，OneDrive URL 将 [自动更改](/onedrive/upn-changes) 。 例如，更改姓名事件，如结婚。 或域名更改以支持组织的重命名或业务重组。 如果 UPN 发生更改，则需要更新此处指定的 OneDrive URL。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 

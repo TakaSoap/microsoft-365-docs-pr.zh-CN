@@ -20,14 +20,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 - AdminTemplateSet
-description: 如果你从零Microsoft 365 商业标准版购买产品密钥，请了解如何兑换产品密钥并激活你的订阅。
+description: 如果从零售商店购买了 Microsoft 365 商业标准版，请了解如何兑换产品密钥和激活订阅。
 ms.date: 11/13/2020
 ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
-ms.sourcegitcommit: f2381c3bb3351235aaca977c57a46c654b9b0657
-ms.translationtype: MT
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58387028"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59171142"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>输入 Microsoft 365 商业版标准版的产品密钥
 
@@ -60,7 +60,7 @@ ms.locfileid: "58387028"
 
 ## <a name="next-steps"></a>后续步骤
 
-如果你没有使用 Microsoft 365 商业版，请了解如何 [Microsoft 365 商业](../admin/setup/setup.md)。
+如果未曾使用过 Microsoft 365 商业版，请了解如何 [设置 Microsoft 365](../admin/setup/setup.md)。
 
 请查看此列表中的常见错误和解决方案： [365 商业版产品密钥有问题？](product-key-errors-and-solutions.md)
   
@@ -68,6 +68,6 @@ ms.locfileid: "58387028"
 
 ## <a name="related-content"></a>相关内容
 
-[升级到其他计划 (](./subscriptions/upgrade-to-different-plan.md) 文章) \
-[Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？](./subscriptions/what-if-my-subscription-expires.md) （文章）\
-[了解适用于企业Microsoft 365中的](./licenses/subscriptions-and-licenses.md)订阅 (许可证) 
+[升级到其他计划](./subscriptions/upgrade-to-different-plan.md)（文章）\
+[Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](./subscriptions/what-if-my-subscription-expires.md) （文章）\
+[了解 Microsoft 365 商业版中的订阅和许可证](./licenses/subscriptions-and-licenses.md)（文章）

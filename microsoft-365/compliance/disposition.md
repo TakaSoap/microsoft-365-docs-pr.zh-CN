@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a905847da3a6c28d8d24d13adb193423b57d83d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175621"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -57,7 +58,7 @@ ms.locfileid: "58567936"
 
 - 处于预览阶段：默认情况下，访问“**处置**”页面的每个人只能看到分配给他们进行审阅的项目。 为使记录管理管理员能够查看分配给所有用户的所有项目以及配置用于处置评审的所有保留标签：导航到“**记录管理设置**” > “**常规**” > “**记录管理员安全组**”，选择并启用包含管理员帐户的已启用邮件的安全组。
     
-    未启用邮件的 Microsoft 365 组和安全组不支持此功能，也不会显示在列表中供选择。 如果需要创建新的启用邮件的安全组，请使用 Microsoft 365 管理中心的链接创建新组。 
+    未启用邮件的 Microsoft 365 组和安全组不支持此功能，也不会显示在列表中供选择。 如果需要创建新的启用邮件的安全组，请使用指向 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a> 的链接创建新组。 
     
     > [!IMPORTANT]
     > 启用组后，你无法在合规中心更改组。 请参阅下一部分，了解如何使用 PowerShell 启用其他组。
