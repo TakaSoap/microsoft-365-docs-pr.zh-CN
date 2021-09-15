@@ -22,7 +22,7 @@ description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 
 monikerRange: o365-21vianet
 ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
 ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/12/2021
 ms.locfileid: "59170310"
@@ -189,7 +189,7 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
 
     安装的服务命名为 **Azure 信息保护扫描程序**，并配置为使用你创建的扫描程序服务帐户运行。
 
-1. 获取用于扫描程序的 Azure 令牌。 Azure AD 令牌允许扫描程序向 Azure 信息保护服务进行身份验证，从而使扫描程序能够以非交互方式运行。 
+1. 获取用于扫描程序的 Azure 令牌。Azure AD 令牌允许扫描程序向 Azure 信息保护服务进行身份验证，从而使扫描程序能够以非交互方式运行。 
 
     1. 打开 Azure 门户并创建 Azure AD 应用程序，以指定用于身份验证的访问令牌。 有关详细信息，请参阅[如何为 Azure 信息保护以非交互方式标记文件](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)。
     
