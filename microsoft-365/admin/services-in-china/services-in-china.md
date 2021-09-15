@@ -26,7 +26,7 @@ description: 了解更多关于由世纪互联运营的，旨在满足中国对�
 monikerRange: o365-21vianet
 ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
 ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/12/2021
 ms.locfileid: "59170308"
